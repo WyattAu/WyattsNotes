@@ -1,0 +1,9 @@
+{
+    "[markdown]": {
+    },
+    "npm.autoDetect": "off",
+    "task.autoDetect": "off",
+    "grunt.autoDetect": "off",
+    "gulp.autoDetect": "off",
+    "jake.autoDetect": "off"
+}

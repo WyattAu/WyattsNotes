@@ -1,0 +1,87 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "📟 Start Dev Server",
+      "type": "npm",
+      "script": "start",
+      "group": {
+        "kind": "test",
+        //"isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true
+      },
+      "options": {
+        "statusbar": {
+          "label": "$(debug-start) Docusaurus Dev",
+          "priority": 0
+        }
+      }
+    },
+    {
+      "label": "🏗️ Build Production",
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        //"isDefault": true
+      }
+    },
+    {
+      "label": "🚀 Deploy Documentation",
+      "type": "npm",
+      "script": "deploy",
+      "problemMatcher": []
+    },
+    {
+      "label": "🌐 Extract Translations",
+      "type": "npm",
+      "script": "write-translations"
+    },
+    {
+      "label": "🆔 Add Heading IDs",
+      "type": "npm",
+      "script": "write-heading-ids"
+    },
+    {
+      "label": "🧩 Swizzle Component",
+      "type": "npm",
+      "script": "swizzle",
+      "args": ["${input:swizzleComponent}"]
+    },
+    {
+      "label": "🧪 Type Checking",
+      "type": "npm",
+      "script": "typecheck",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "👁️ Type Check (Watch Mode)",
+      "type": "shell",
+      "command": "npm run typecheck -- --watch",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true
+    },
+    {
+      "label": "💥 Clear Cache",
+      "type": "npm",
+      "script": "clear"
+    },
+    {
+      "label": "🔍 Preview Build",
+      "type": "npm",
+      "script": "serve"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "swizzleComponent",
+      "type": "promptString",
+      "description": "Component to swizzle (e.g. '@docusaurus/theme-classic Footer'):"
+    }
+  ]
+}
+

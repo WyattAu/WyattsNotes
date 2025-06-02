@@ -1,0 +1,26 @@
+/* src/theme/TOCSidebar/TOCSidebar.module.css */
+.sidebar {
+  transition: all 300ms ease-in-out;
+  max-height: 100vh;
+  border-left: 1px solid #ddd;
+  padding-left: 16px;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+}
+
+.btnToggle {
+  position: fixed;
+  top: 1rem;
+  right: 4rem;
+  z-index: 9998;
+}

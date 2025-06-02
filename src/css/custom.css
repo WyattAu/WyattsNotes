@@ -1,0 +1,260 @@
+/**
+ * Custom CSS for Docusaurus with orange/blue theme and typography best practices
+ */
+
+/* Font Imports */
+@import 'katex/dist/katex.min.css';
+@import '~@fontsource/jetbrains-mono/400.css';
+@import '~@fontsource/jetbrains-mono/700.css';
+@import '~@fontsource/inter/400.css';
+@import '~@fontsource/inter/700.css';
+@import '~@fontsource/merriweather/400-italic.css';
+
+/* Base Color Variables */
+:root {
+  /* Orange Primary Color Scheme */
+  --ifm-color-primary: #FF6B35;
+  --ifm-color-primary-dark: #E65A2B;
+  --ifm-color-primary-darker: #CC4A22;
+  --ifm-color-primary-darkest: #B33A19;
+  --ifm-color-primary-light: #FF7C45;
+  --ifm-color-primary-lighter: #FF8D55;
+  --ifm-color-primary-lightest: #FF9E65;
+
+  /* Blue Secondary Color Scheme */
+  --ifm-color-secondary: #3B82F6;
+  --ifm-color-secondary-dark: #2563EB;
+  --ifm-color-secondary-darker: #1D4ED8;
+  --ifm-color-secondary-darkest: #1E40AF;
+  --ifm-color-secondary-light: #60A5FA;
+  --ifm-color-secondary-lighter: #93C5FD;
+  --ifm-color-secondary-lightest: #BFDBFE;
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', system-ui, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
+  --ifm-font-family-quote: 'Merriweather', serif;
+  
+  /* Additional Variables */
+  --ifm-code-font-size: 95%;
+  --ifm-line-height-base: 1.75;
+  --ifm-heading-line-height: 1.3;
+  --ifm-blockquote-font-size: 1.1em;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 107, 53, 0.1);
+}
+
+/* Dark Mode Overrides */
+[data-theme='dark'] {
+  /* Adjusted Orange Primary for better contrast */
+  --ifm-color-primary: #FF8C4A;
+  --ifm-color-primary-dark: #FF7C45;
+  --ifm-color-primary-darker: #FF6B35;
+  --ifm-color-primary-darkest: #E65A2B;
+  --ifm-color-primary-light: #FF9D5F;
+  --ifm-color-primary-lighter: #FFAD73;
+  --ifm-color-primary-lightest: #FFBD87;
+
+  /* Blue Secondary for Dark Mode */
+  --ifm-color-secondary: #60A5FA;
+  --ifm-color-secondary-dark: #3B82F6;
+  --ifm-color-secondary-darker: #2563EB;
+  --ifm-color-secondary-darkest: #1D4ED8;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(255, 140, 74, 0.2);
+}
+
+/* Typography System */
+body {
+  font-family: var(--ifm-font-family-base);
+  line-height: var(--ifm-line-height-base);
+  color: var(--ifm-font-color-base);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 700;
+  line-height: var(--ifm-heading-line-height);
+  color: var(--ifm-color-primary);
+}
+
+/* Code Blocks */
+pre, code {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-code-font-size);
+  border-radius: 6px;
+}
+
+.prism-code {
+  background: var(--ifm-background-surface-color) !important;
+  padding: 1.25rem !important;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Blockquotes */
+blockquote {
+  font-family: var(--ifm-font-family-quote);
+  font-style: italic;
+  border-left: 4px solid var(--ifm-color-secondary);
+  margin: 1.5em 0;
+  padding: 0.5em 1.5em;
+  color: var(--ifm-color-secondary-darkest);
+  background-color: var(--ifm-color-secondary-lightest);
+  border-radius: 0 4px 4px 0;
+}
+
+[data-theme='dark'] blockquote {
+  color: var(--ifm-color-secondary-lightest);
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+/* Content Justification */
+.markdown:not(.container) {
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.75;
+}
+
+/* Remove justification for headings */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  text-align: left;
+  hyphens: none;
+}
+
+/* Remove justification for sidebar and navbar titles */
+.navbar__title,
+.sidebarItemTitle_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-Desktop-Content-styles-module {
+  text-align: left !important;
+}
+
+
+.markdown ul,
+.markdown ol {
+  text-align: left;
+}
+
+.markdown li {
+  text-align: justify;
+  margin-bottom: 0.5em;
+}
+
+/* Links and Interactive Elements */
+a {
+  color: var(--ifm-color-secondary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ifm-color-secondary-dark);
+}
+
+/* Accessibility Enhancements */
+:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Responsive Typography */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+
+/* Hero Section Styling */
+.hero {
+  background-color: var(--ifm-color-primary-lightest); /* Light orange in light mode */
+  padding: 4rem 0;
+  transition: background-color var(--ifm-transition-fast);
+}
+
+[data-theme='dark'] .hero {
+  background-color: var(--ifm-color-primary-darkest); /* Dark orange in dark mode */
+}
+
+/* Hero Title */
+.hero__title {
+  color: #000 !important; /* Force black in light mode */
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .hero__title {
+  color: #fff !important; /* White in dark mode */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Subtitle */
+.hero__subtitle {
+  color: #000 !important; /* Force black in light mode */
+  font-weight: 500;
+}
+
+[data-theme='dark'] .hero__subtitle {
+  color: #fff !important
+}
+
+/* Content Background Consistency */
+:root {
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+}
+
+[data-theme='dark'] {
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #2d2d2d;
+}
+
+/* Ensure content areas match theme */
+.markdown {
+  background-color: var(--ifm-background-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .markdown {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.markdown .grid {
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.markdown .grid td {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.markdown .grid tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+div.markdown table {
+    border-collapse: collapse;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #fcfcfc;
+    text-align: left;
+}
