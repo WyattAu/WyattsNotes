@@ -74,9 +74,16 @@ const remarkPluginsConfig = {
   ]
 }
 
+const katexIgnoreNewLineWarning = {
+  strict: (errorCode: string) => {
+    if (errorCode === 'newLineInDisplayMode') return 'ignore';
+    return 'warn'; // Maintain default for other errors
+  }
+};
+
 const rehypePluginConfig = {
   rehypePlugins: [
-    rehypeKatex
+    [rehypeKatex, katexIgnoreNewLineWarning],
   ]
 }
 
