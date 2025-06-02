@@ -10,24 +10,8 @@ import remarkCodeSnippets from 'remark-code-snippets';
 
 const compilationConfig = {
   staticDirectories: ['static'],
-  //webpack: {
-  //  jsLoader: (isServer) => ({
-  //    loader: require.resolve('swc-loader'),
-  //    options: {
-  //      jsc: {
-  //        parser: {
-  //          syntax: 'typescript',
-  //          tsx: true,
-  //        },
-  //        target: 'es2017',
-  //      },
-  //    },
-  //  }),
-  //},
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  //0.o2
-  // outDir: 'out/build',
 }
 
 const prjMetadataConfig = {
@@ -65,12 +49,10 @@ const admonitionsConfig = {
 const remarkPluginsConfig = {
   beforeDefaultRemarkPlugins: [   
     remarkGridTable,
-  //  remarkCodeSnippets
   ],
   remarkPlugins: [
     remarkMath,
     remarkCodeSnippets,
-    //remarkGridTable
   ]
 }
 
@@ -90,8 +72,6 @@ const rehypePluginConfig = {
 const commonDocsPluginConfig = {
   showLastUpdateTime: true,
   showLastUpdateAuthor: true,
-  //sidebarCollapsible: true,
-  //sidebarCollapsed: true,
   ...admonitionsConfig,
   ...remarkPluginsConfig,
   ...rehypePluginConfig
@@ -273,11 +253,9 @@ const config: Config = {
     prism: {
       theme: {
         ...prismThemes.gruvboxMaterialLight,
-        //fontFamily: 'JetBrains Mono, monospace',
       },
       darkTheme: {
         ...prismThemes.gruvboxMaterialDark,
-        //fontFamily: 'JetBrains Mono, monospace',
       },
       additionalLanguages: ['java'],
     },
