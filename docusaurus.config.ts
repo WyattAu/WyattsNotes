@@ -48,7 +48,7 @@ const admonitionsConfig = {
 
 const remarkPluginsConfig = {
   beforeDefaultRemarkPlugins: [   
-    remarkGridTable,
+    //remarkGridTable,
   ],
   remarkPlugins: [
     remarkMath,
@@ -111,7 +111,7 @@ const config: Config = {
           xslt: true,
         },
         editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://wyattau.github.io/WyattsNotes/blog_release-notes',
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
@@ -204,7 +204,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/WyattAu/WyattsNotes',
           label: 'GitHub',
           position: 'right',
         },
@@ -243,12 +243,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/WyattAu/WyattsNotes',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Wyatt's Notes. All rights reserved`,
+      copyright: `© ${new Date().getFullYear()} Wyatt Au. Content is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.`,
     },
     prism: {
       theme: {
