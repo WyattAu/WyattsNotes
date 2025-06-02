@@ -45,7 +45,7 @@ slug: markdown-constructs
 ```
 
 ### Math
-Using remark math, equations written in LaTeX can be rendered, however LaTeX packages cannot be included.
+Using remark math with rehype Katex, equations written in LaTeX can be rendered, however LaTeX packages cannot be included.
 
 $$
 \frac{\partial \rho}{\partial t} + \frac{\partial(\rho u_{i})}{\partial x_{i}} = 0
