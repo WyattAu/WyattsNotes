@@ -18,7 +18,7 @@ const prjMetadataConfig = {
   title: "Wyatt's Notes",
   tagline: 'Notes ordered by syllabus',
   favicon: 'img/docusaur/favicon.ico',
-  url: 'https://wyattau.github.io/WyattsNotes/',
+  url: 'https://wyattau.github.io',
   baseUrl: '/WyattsNotes/',
 
   organizationName: 'Wyatt',
