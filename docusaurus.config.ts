@@ -181,7 +181,7 @@ const config: Config = {
         media: '(prefers-color-scheme: dark)',
       },
     ],
-    image: 'img/WyattNotes/WyattsNotesSocialCard.png',
+    image: 'img/WyattNotes/WyattsNotesSocialCard.jpg',
     navbar: {
       title: "Wyatt's Notes",
       logo: {

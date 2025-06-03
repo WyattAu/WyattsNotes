@@ -4,10 +4,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-      - run: npm ci
-      - run: npm run build
-      #- run: npm run lint  # Terminate on lint errors // Temp remove ci linting
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      - name: Build project
+        run: npm run build
