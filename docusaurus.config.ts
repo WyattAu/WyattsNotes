@@ -17,7 +17,7 @@ const compilationConfig = {
 const prjMetadataConfig = {
   title: "Wyatt's Notes",
   tagline: 'Notes ordered by syllabus',
-  favicon: 'img/docusaur/favicon.ico',
+  favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
   url: 'https://wyattau.github.io',
   baseUrl: '/WyattsNotes/',
 
@@ -181,12 +181,13 @@ const config: Config = {
         media: '(prefers-color-scheme: dark)',
       },
     ],
-    image: 'img/docusaur/docusaurus-social-card.jpg',
+    image: 'img/WyattNotes/WyattsNotesSocialCard.png',
     navbar: {
       title: "Wyatt's Notes",
       logo: {
         alt: 'My Site Logo',
-        src: 'img/docusaur/logo_temp.svg',
+        src: 'img/WyattsNotes/WyattsNotesLogo.svg',
+        srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
         { to: '/blog_release-notes', label: 'Release Notes', position: 'left' },
@@ -200,6 +201,11 @@ const config: Config = {
           position: 'right',
         },
       ],
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
     footer: {
       style: 'dark',

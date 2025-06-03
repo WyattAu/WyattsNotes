@@ -3,9 +3,6 @@ import clsx from 'clsx';
 import type { ReactNode } from 'react';
 import styles from './styles.module.css';
 
-// svgs
-//import { ReactComponent as mountain} from '@site/static/img/docusaur/undraw_docusaurus_mountain.svg';
-
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
@@ -15,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Don't Assume User Retardation",
-    Svg: require('@site/static/img/docusaur/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoLeft.svg').default,
     description: (
       <>
         Explanations will only be written once, definitions for terminology should be linked. No
@@ -25,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'No Bullshit',
-    Svg: require('@site/static/img/docusaur/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoMiddle.svg').default,
     description: (
       <>
         Notes are written following the syllabus with derivations when needed. No interesting facts,
@@ -35,7 +32,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Feel Free to Correct Me',
-    Svg: require('@site/static/img/docusaur/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoLeft.svg').default,
     description: (
       <>
         Since these notes are created either during my time at the course or by request, there maybe
