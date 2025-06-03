@@ -120,17 +120,17 @@ $$
 In a case where $k = \sum_{i=0}^m n_i$, $k, n_i, m \in \mathbb{Z^+}$, the possible number of solutions ($N$) can be thought of using the stars and bars method. This method imagine a $m-1$ number of bars as separations between each share of $k$ distributed to each $n_i$, due to the discrete behavior of the separations, $k$ can be thought of as a number of stars. The total state the three bars are allowed in is therefore $k+m-1$, therefore the possible number of solutions would be the combination of the bars, hence:
 
 $$
-\begin{algined}
+\begin{aligned}
   N = \binom{k+m-1}{m-1}
-\end{algined}
+\end{aligned}
 $$
 
 <details>
 <summary>Examples</summary>
 <p>
 - $a+b+c+d = 10$
-  - There are $10$ stars : {**********}, $3$ bars to separate {|||}
-  - One possible state would be : {|*****|***|**}, equal to $a=0, b=5, c=3, d=2$
+  - There are $10$ stars : $\{**********\}$, $3$ bars to separate $\{|||\}$
+  - One possible state would be : $\{|*****|***|**\}$, equal to $a=0, b=5, c=3, d=2$
   - $N = \binom{k+m-1}{m-1} = \binom{10+4-1}{4-1} = 286$
 </p>
 </details>
