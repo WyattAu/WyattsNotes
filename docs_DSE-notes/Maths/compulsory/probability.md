@@ -50,5 +50,3 @@ $$
 - The probability of a asteroid colliding with Mars would not be affected by the occurrence of the national lottery, therefore these are independent events. 
 </p>
 </details>
-
-

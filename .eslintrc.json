@@ -81,7 +81,6 @@
     ]
   },
   "overrides": [
-    // Override for TypeScript files (adds type-aware rules/parsing)
     {
       "files": [
         "*.ts",
@@ -96,7 +95,6 @@
         ]
       }
     },
-    // Existing overrides below
     {
       "files": [
         "*.test.*",
