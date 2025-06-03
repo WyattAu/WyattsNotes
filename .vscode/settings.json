@@ -36,12 +36,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.spellcheck.enabled": false,
   "cSpell.enabled": true,
-  "cSpell.enableFiletypes": [
-    "astro"
-  ],
   "files.exclude": {
     "**/.next": true,
     "**/.out": true
-  }
+  },
+  "cSpell.diagnosticLevel": "Hint",
 }
