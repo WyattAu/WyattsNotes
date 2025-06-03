@@ -9,9 +9,9 @@ categories:
 slug: combinatorics
 ---
 
-Combinatorics is the study of counting and arrangement.
+Combinatorics is the study of enumeration and arrangement.
 
-## Counting principles
+## Counting Principles
 
 ### Sum Rule
 
@@ -32,7 +32,7 @@ $$
 
 ### Product Rule
 
-Given two [independent](./probability.md#independent) sequential choices, where the first choice has $n_1$ options and the second has $n_2$ options, the total number of compound outcomes ($N$) is $n_1 \times n_2$. This extends to $k$ independent sequential choices:
+Given two [independent](./probability.md#independent) sequential events, where the first event has $n_1$ outcomes and the second has $n_2$ outcomes, the total number of compound outcomes ($N$) is $n_1 \times n_2$. This extends to $k$ independent sequential choices:
 
 $$
 \begin{aligned}
@@ -43,7 +43,9 @@ $$
 <details>
 <summary>Examples</summary>
 <p>
-- Selecting digits on a number lock, the first digit and the second digit can be independent to each other, the number of combinations of the resulting number lock is given by the product of the number of combinations of the first and second digit
+- 4-digit PIN with $10$ options per digit yields $10^4 = 10,000$ combinations
+- A 16-input AND gate with binary inputs has $2^{16} = 65,536$ possible input
+- Restaurant offers $3$ appetizers, $4$ entrees, $2$ desserts. There are $3\cdot 4 \cdot 2 = 24$ distinct meal combinations
 </p>
 </details>
 
@@ -55,7 +57,7 @@ A permutation is an ordered arrangement of distinct objects. Since objects choic
 
 $$
 \begin{aligned}
-  n! = n(n-1)(n-2) \ldots 2 \times 1
+  n(n-1)(n-2) \ldots 2 \times 1 = \prod_{k=1}^n k = n!
 \end{aligned}
 $$
 
@@ -71,6 +73,8 @@ $$
 <summary>Examples</summary>
 <p>
 - Number of ways you can put $5$ people in a queue from a class of $30$ people, $30 \mathbf{P} 5 = 17 100 720$
+- $15$ runners distributed across gold/silver/bronze positions: $P(15,3) = 15 \times 14 \times 13 = 2,730$ arrangements
+- 7 teams assigned to 7 distinct time slots: $P(7,7) = 5,040$ distinct schedules
 </p>
 </details>
 
@@ -88,25 +92,26 @@ $$
 <details>
 <summary>Examples</summary>
 <p>
-- Number of ways you can put $5$ people in a group from a class of $30$ people, $30 \mathbf{P} 5 = 142506$
+- Number of ways you can put $5$ people in a group from a class of $30$ people, $30 \mathbf{C} 5 = 142506$
+- 5 members chosen from 20 candidates: $\binom{20}{5} = 15,504$
 </p>
 </details>
 
 ### Arrangements of Non-Distinct Objects
 
-Given a finite set containing non-distinct objects, the total permutation ($n!$) according to the size of the set can be over the unique arrangements. Since the permutation ($k_m!$) of objects in repetitive position gives the number of arrangements that leaves the arrangement of the whole trial unchanged, the total permutation divided by each permutation of repetitive objects produce the number of arrangements (N).
+Given a $n$ objects with $m$ types (type $i$ has quantity $k_i$ where $\sum_{i=1}^m k_i = n$), the total permutation ($n!$) according to the size of the finite set can be over the unique arrangements. Since the permutation ($k_i!$) of objects in repetitive position gives the number of arrangements that leaves the arrangement of the whole trial unchanged, the distinct permutations ($N$) are given by the multinomial coefficient.
 
 $$
 \begin{aligned}
-  N = \frac{n!}{k_1! \times k_2! \times \ldots \times k_m!}
+  N = \binom{n}{k_1,k_2,\ldots,k_m} = \frac{n!}{k_1! \times k_2! \times \ldots \times k_m!}
 \end{aligned}
 $$
 
 <details>
 <summary>Examples</summary>
 <p>
-- Number of unique arrangements of the letter "T" "R" "I" "G" "G" "E" "R"
-  - $n = 7, n! = 5040, k_G = 2, N = \frac{5040}{2!} = 2520$
+- Arranging "TRIGGER" (7 letters: T,R,I,G,G,E,R):  
+  $n=7$, $k_G=2$, $k_R=2$, others unique $\implies N = \frac{7!}{2! \cdot 2!} = 1260$ distinct sequences.
 </p>
 </details>
 
