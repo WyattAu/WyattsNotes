@@ -9,28 +9,28 @@
 /* Base Color Variables */
 :root {
   /* Orange Primary Color Scheme */
-  --ifm-color-primary: #FF6B35;
-  --ifm-color-primary-dark: #E65A2B;
-  --ifm-color-primary-darker: #CC4A22;
-  --ifm-color-primary-darkest: #B33A19;
-  --ifm-color-primary-light: #FF7C45;
-  --ifm-color-primary-lighter: #FF8D55;
-  --ifm-color-primary-lightest: #FF9E65;
+  --ifm-color-primary: #ff6b35;
+  --ifm-color-primary-dark: #e65a2b;
+  --ifm-color-primary-darker: #cc4a22;
+  --ifm-color-primary-darkest: #b33a19;
+  --ifm-color-primary-light: #ff7c45;
+  --ifm-color-primary-lighter: #ff8d55;
+  --ifm-color-primary-lightest: #ff9e65;
 
   /* Blue Secondary Color Scheme */
-  --ifm-color-secondary: #3B82F6;
-  --ifm-color-secondary-dark: #2563EB;
-  --ifm-color-secondary-darker: #1D4ED8;
-  --ifm-color-secondary-darkest: #1E40AF;
-  --ifm-color-secondary-light: #60A5FA;
-  --ifm-color-secondary-lighter: #93C5FD;
-  --ifm-color-secondary-lightest: #BFDBFE;
+  --ifm-color-secondary: #3b82f6;
+  --ifm-color-secondary-dark: #2563eb;
+  --ifm-color-secondary-darker: #1d4ed8;
+  --ifm-color-secondary-darkest: #1e40af;
+  --ifm-color-secondary-light: #60a5fa;
+  --ifm-color-secondary-lighter: #93c5fd;
+  --ifm-color-secondary-lightest: #bfdbfe;
 
   /* Typography */
   --ifm-font-family-base: 'Inter', system-ui, sans-serif;
   --ifm-font-family-monospace: 'JetBrains Mono', monospace;
   --ifm-font-family-quote: 'Merriweather', serif;
-  
+
   /* Additional Variables */
   --ifm-code-font-size: 95%;
   --ifm-line-height-base: 1.75;
@@ -42,20 +42,20 @@
 /* Dark Mode Overrides */
 [data-theme='dark'] {
   /* Adjusted Orange Primary for better contrast */
-  --ifm-color-primary: #FF8C4A;
-  --ifm-color-primary-dark: #FF7C45;
-  --ifm-color-primary-darker: #FF6B35;
-  --ifm-color-primary-darkest: #E65A2B;
-  --ifm-color-primary-light: #FF9D5F;
-  --ifm-color-primary-lighter: #FFAD73;
-  --ifm-color-primary-lightest: #FFBD87;
+  --ifm-color-primary: #ff8c4a;
+  --ifm-color-primary-dark: #ff7c45;
+  --ifm-color-primary-darker: #ff6b35;
+  --ifm-color-primary-darkest: #e65a2b;
+  --ifm-color-primary-light: #ff9d5f;
+  --ifm-color-primary-lighter: #ffad73;
+  --ifm-color-primary-lightest: #ffbd87;
 
   /* Blue Secondary for Dark Mode */
-  --ifm-color-secondary: #60A5FA;
-  --ifm-color-secondary-dark: #3B82F6;
-  --ifm-color-secondary-darker: #2563EB;
-  --ifm-color-secondary-darkest: #1D4ED8;
-  
+  --ifm-color-secondary: #60a5fa;
+  --ifm-color-secondary-dark: #3b82f6;
+  --ifm-color-secondary-darker: #2563eb;
+  --ifm-color-secondary-darkest: #1d4ed8;
+
   --docusaurus-highlighted-code-line-bg: rgba(255, 140, 74, 0.2);
 }
 
@@ -67,7 +67,12 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--ifm-font-family-base);
   font-weight: 700;
   line-height: var(--ifm-heading-line-height);
@@ -75,7 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Code Blocks */
-pre, code {
+pre,
+code {
   font-family: var(--ifm-font-family-monospace);
   font-size: var(--ifm-code-font-size);
   border-radius: 6px;
@@ -128,7 +134,6 @@ blockquote {
   text-align: left !important;
 }
 
-
 .markdown ul,
 .markdown ol {
   text-align: left;
@@ -168,7 +173,6 @@ a:hover {
   }
 }
 
-
 /* Hero Section Styling */
 .hero {
   background-color: var(--ifm-color-primary-lightest); /* Light orange in light mode */
@@ -199,7 +203,7 @@ a:hover {
 }
 
 [data-theme='dark'] .hero__subtitle {
-  color: #fff !important
+  color: #fff !important;
 }
 
 /* Content Background Consistency */
@@ -224,7 +228,6 @@ a:hover {
 [data-theme='dark'] .markdown {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 
 :root {
   --ifm-table-border-color: var(--ifm-color-emphasis-300);
@@ -257,5 +260,52 @@ a:hover {
 }
 
 .markdown tr:nth-child(even) {
+  background-color: var(--ifm-table-stripe-background);
+}
+
+/* ==========================================================================
+   Remark Grid Tables
+   ========================================================================== */
+
+.grid-table {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--ifm-table-border-color);
+  border-collapse: collapse;
+}
+
+.grid-row {
+  display: flex;
+  width: 100%;
+  min-width: max-content;
+}
+
+.grid-cell {
+  padding: 0.75rem 1rem;
+  flex: 1;
+  min-width: 100px;
+  border-right: 1px solid var(--ifm-table-border-color);
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.grid-row:last-child .grid-cell {
+  border-bottom: none;
+}
+
+.grid-cell:last-child {
+  border-right: none;
+}
+
+/* Header row styling */
+.grid-row:first-child {
+  background-color: var(--ifm-table-header-background);
+  font-weight: 700;
+}
+
+/* Zebra striping for data rows */
+.grid-row:nth-child(even):not(:first-child) {
   background-color: var(--ifm-table-stripe-background);
 }

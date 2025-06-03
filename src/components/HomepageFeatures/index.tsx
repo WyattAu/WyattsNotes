@@ -1,7 +1,10 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import clsx from 'clsx';
+import type { ReactNode } from 'react';
 import styles from './styles.module.css';
+
+// svgs
+//import { ReactComponent as mountain} from '@site/static/img/docusaur/undraw_docusaurus_mountain.svg';
 
 type FeatureItem = {
   title: string;
@@ -15,7 +18,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/docusaur/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-      Explanations will only be written once, definitions for terminology should be linked. No babysitting is given to people who can't navigate hyperlinks.
+        Explanations will only be written once, definitions for terminology should be linked. No
+        babysitting is given to people who can't navigate hyperlinks.
       </>
     ),
   },
@@ -24,7 +28,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/docusaur/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-      Notes are written following the syllabus with derivations when needed. No interesting facts, ads, or any useless content are included.
+        Notes are written following the syllabus with derivations when needed. No interesting facts,
+        ads, or any useless content are included.
       </>
     ),
   },
@@ -33,13 +38,14 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/docusaur/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Since these notes are created either during my time at the course or by request, there maybe incorrect or inaccurate content, feel free to contribute.
+        Since these notes are created either during my time at the course or by request, there maybe
+        incorrect or inaccurate content, feel free to contribute.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

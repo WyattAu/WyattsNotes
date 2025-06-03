@@ -4,7 +4,9 @@ sidebar_position: 1
 ---
 
 # Assessment objective
+
 ## SL
+
 | Index | Objective                                           | Paper 1 | Paper 2 | IA    | Sum |
 | ----- | --------------------------------------------------- | ------- | ------- | ----- | --- |
 | 1     | Demonstration of knowledge and understanding        | 24      | 13      | 9     | 46  |
@@ -14,6 +16,7 @@ sidebar_position: 1
 | n/a   | Weighting                                           | $0.45$  | $0.25$  | $0.3$ | 1   |
 
 ## HL
+
 | Index | Objective                                           | Paper 1 | Paper 2 | IA    | Sum |
 | ----- | --------------------------------------------------- | ------- | ------- | ----- | --- |
 | 1     | Demonstration of knowledge and understanding        | 24      | 13      | 9     | 46  |
@@ -21,4 +24,3 @@ sidebar_position: 1
 | 3     | Construction, analysis, evaluation, and formulation | 8       | 5       | 4     | 17  |
 | 4     | Skills usage                                        | n/a     | n/a     | 9     | 9   |
 | n/a   | Weighting                                           | $0.45$  | $0.25$  | $0.3$ | 1   |
-

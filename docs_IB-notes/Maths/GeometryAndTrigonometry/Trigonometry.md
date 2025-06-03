@@ -2,14 +2,16 @@
 title: Trigonometry
 date: 2025-05-14T11:42:14.853Z
 tags:
-    - maths
+  - maths
 categories:
-    - maths
+  - maths
 slug: trigonometry
 ---
 
 ## Trigonometric Functions
+
 ### Sine
+
 $$
 \begin{aligned}
     \sin \theta = \frac{\text{opposite}}{\text{hypotenuse}}
@@ -17,7 +19,9 @@ $$
 $$
 
 ## Trigonometry Identities
+
 ### Pythagorean Identities
+
 $$
 \begin{aligned}
     \sin^2{\theta}+\cos^2{\theta} = 1\\
@@ -27,6 +31,7 @@ $$
 $$
 
 ### Compound Angle Identities
+
 $$
 \begin{aligned}
     \sin(A \pm B) = \sin A \cos B \pm \cos A \sin B\\
@@ -36,6 +41,7 @@ $$
 $$
 
 ### Double Angle Identities
+
 $$
 \begin{aligned}
     \sin{2\theta} = \sin\theta \cos\theta + \sin\theta \cos\theta = 2\sin{\theta} \cos{\theta}\\
@@ -45,8 +51,9 @@ $$
 $$
 
 ### Triple Angle Identities
+
 $$
     \sin 3\theta = \sin(2\theta +\theta) = \sin 2\theta \cos \theta + \cos 2\theta \sin \theta\\
     \sin 3\theta = (2\sin \theta \cos \theta ) (\cos \theta) + (1-2\sin\theta)(\sin \theta)\\
-    \sin 3\theta = 2\sin \theta \cos^2 \theta + \sin\theta - 2\sin^2 \theta 
+    \sin 3\theta = 2\sin \theta \cos^2 \theta + \sin\theta - 2\sin^2 \theta
 $$

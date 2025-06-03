@@ -5,7 +5,9 @@ sidebar_position: 2
 ---
 
 # Prelude
+
 ## Objective of the IB computer science program
+
 - Understand the concepts of computational thinking
   - Identifying a problem
   - Accessing the feasibility of solving the problem
@@ -24,10 +26,11 @@ sidebar_position: 2
   - Ethical issues raised by innovation or proposed solution
 
 ## SL and HL distinction
+
 - Mutually consist of:
   - 4 topics
     - System Fundamentals
-    - Computer organization 
+    - Computer organization
     - Networks
     - Computational thinking
   - 1 option
@@ -42,6 +45,3 @@ sidebar_position: 2
     - Control
   - Additional content for the option chosen
   - Additional scenario to be studied
-
-
-

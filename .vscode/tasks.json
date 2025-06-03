@@ -5,44 +5,72 @@
       "label": "📟 Start Dev Server",
       "type": "npm",
       "script": "start",
-      "group": {
-        "kind": "test",
-        //"isDefault": true
-      },
       "presentation": {
         "reveal": "always",
         "panel": "dedicated",
-        "focus": true
+        "focus": true,
+        "clear": true
       },
       "options": {
         "statusbar": {
-          "label": "$(debug-start) Docusaurus Dev",
+          "label": "$(debug-start) Dev Server",
           "priority": 0
         }
-      }
+      },
+      "isBackground": true
     },
     {
       "label": "🏗️ Build Production",
       "type": "npm",
       "script": "build",
-      "group": {
-        "kind": "build",
-        //"isDefault": true
-      }
+      "group": "build"
+    },
+    {
+      "label": "🌐 Preview Build",
+      "type": "npm",
+      "script": "serve",
+      "dependsOn": "🏗️ Build Production"
     },
     {
       "label": "🚀 Deploy Documentation",
       "type": "npm",
       "script": "deploy",
-      "problemMatcher": []
+      "dependsOn": "🏗️ Build Production"
     },
     {
-      "label": "🌐 Extract Translations",
+      "label": "🧪 Type Check",
+      "type": "npm",
+      "script": "typecheck",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "👁️ Type Check (Watch)",
+      "type": "npm",
+      "script": "typecheck",
+      "args": [
+        "--watch"
+      ],
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never"
+      }
+    },
+    {
+      "label": "🧹 Clear Cache",
+      "type": "npm",
+      "script": "clear"
+    },
+    {
+      "label": "🌍 Extract Translations",
       "type": "npm",
       "script": "write-translations"
     },
     {
-      "label": "🆔 Add Heading IDs",
+      "label": "#️⃣ Add Heading IDs",
       "type": "npm",
       "script": "write-heading-ids"
     },
@@ -50,38 +78,44 @@
       "label": "🧩 Swizzle Component",
       "type": "npm",
       "script": "swizzle",
-      "args": ["${input:swizzleComponent}"]
+      "args": [
+        "${input:swizzleComponent}"
+      ]
     },
     {
-      "label": "🧪 Type Checking",
+      "label": "💅 Format Files (Prettier)",
       "type": "npm",
-      "script": "typecheck",
-      "problemMatcher": "$tsc"
+      "script": "format",
+      "problemMatcher": "$eslint-stylish",
+      "presentation": {
+        "reveal": "silent"
+      }
     },
     {
-      "label": "👁️ Type Check (Watch Mode)",
-      "type": "shell",
-      "command": "npm run typecheck -- --watch",
-      "problemMatcher": "$tsc-watch",
-      "isBackground": true
-    },
-    {
-      "label": "💥 Clear Cache",
+      "label": "🔍 Lint Project (ESLint)",
       "type": "npm",
-      "script": "clear"
+      "script": "lint",
+      "problemMatcher": "$eslint-stylish",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
     },
     {
-      "label": "🔍 Preview Build",
-      "type": "npm",
-      "script": "serve"
+      "label": "✨ Format & Lint Project",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "💅 Format Files (Prettier)",
+        "🔍 Lint Project (ESLint)"
+      ]
     }
   ],
   "inputs": [
     {
       "id": "swizzleComponent",
       "type": "promptString",
-      "description": "Component to swizzle (e.g. '@docusaurus/theme-classic Footer'):"
+      "description": "Component to swizzle (example: @docusaurus/theme-classic Footer):",
+      "default": "@docusaurus/theme-classic"
     }
   ]
 }
-

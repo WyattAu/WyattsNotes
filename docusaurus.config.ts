@@ -1,18 +1,18 @@
 // @ts-check
 
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
 import remarkGridTable from '@adobe/remark-gridtables';
+import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import rehypeKatex from 'rehype-katex';
 import remarkCodeSnippets from 'remark-code-snippets';
+import remarkMath from 'remark-math';
 
 const compilationConfig = {
   staticDirectories: ['static'],
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-}
+};
 
 const prjMetadataConfig = {
   title: "Wyatt's Notes",
@@ -24,7 +24,7 @@ const prjMetadataConfig = {
   organizationName: 'Wyatt',
   projectName: 'WyattsNotes',
   trailingSlash: false,
-}
+};
 
 const admonitionsConfig = {
   admonitions: {
@@ -41,41 +41,34 @@ const admonitionsConfig = {
       'powershell',
       'security',
       'ninja',
-      'release'
+      'release',
     ],
   },
-}
+};
 
 const remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [   
-    //remarkGridTable,
-  ],
-  remarkPlugins: [
-    remarkMath,
-    remarkCodeSnippets,
-  ]
-}
+  beforeDefaultRemarkPlugins: [remarkGridTable],
+  remarkPlugins: [remarkMath, remarkCodeSnippets],
+};
 
 const katexIgnoreNewLineWarning = {
   strict: (errorCode: string) => {
     if (errorCode === 'newLineInDisplayMode') return 'ignore';
     return 'warn'; // Maintain default for other errors
-  }
+  },
 };
 
 const rehypePluginConfig = {
-  rehypePlugins: [
-    [rehypeKatex, katexIgnoreNewLineWarning],
-  ]
-}
+  rehypePlugins: [[rehypeKatex, katexIgnoreNewLineWarning]],
+};
 
 const commonDocsPluginConfig = {
   showLastUpdateTime: true,
   showLastUpdateAuthor: true,
   ...admonitionsConfig,
   ...remarkPluginsConfig,
-  ...rehypePluginConfig
-}
+  ...rehypePluginConfig,
+};
 
 const config: Config = {
   ...prjMetadataConfig,
@@ -97,7 +90,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  plugins:[
+  plugins: [
     [
       '@docusaurus/plugin-content-blog',
       {
@@ -110,13 +103,12 @@ const config: Config = {
           type: ['rss', 'atom'],
           xslt: true,
         },
-        editUrl:
-          'https://wyattau.github.io/WyattsNotes/blog_release-notes',
+        editUrl: 'https://wyattau.github.io/WyattsNotes/blog_release-notes',
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
-        ...commonDocsPluginConfig
-      }
+        ...commonDocsPluginConfig,
+      },
     ],
     [
       '@docusaurus/plugin-content-docs',
@@ -125,7 +117,7 @@ const config: Config = {
         path: 'docs_IB-notes',
         routeBasePath: '/docs_IB-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_IB-notes.ts'),
-        ...commonDocsPluginConfig
+        ...commonDocsPluginConfig,
       },
     ],
     [
@@ -135,9 +127,9 @@ const config: Config = {
         path: 'docs_ALevel-notes',
         routeBasePath: '/docs_ALevel-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_ALevel-notes.ts'),
-        ...commonDocsPluginConfig
+        ...commonDocsPluginConfig,
       },
-    ],   
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -145,7 +137,7 @@ const config: Config = {
         path: 'docs_DSE-notes',
         routeBasePath: '/docs_DSE-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_DSE-notes.ts'),
-        ...commonDocsPluginConfig
+        ...commonDocsPluginConfig,
       },
     ],
     [
@@ -155,19 +147,18 @@ const config: Config = {
         path: 'docs_general-notes',
         routeBasePath: '/docs_general-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_general-notes.ts'),
-        ...commonDocsPluginConfig
+        ...commonDocsPluginConfig,
       },
-    ],    
-    ['docusaurus-lunr-search', // Wont work in dev mode, need to build
+    ],
+    [
+      'docusaurus-lunr-search', // Wont work in dev mode, need to build
       {
         indexDocs: true,
         indexBlog: true,
         languages: ['en'],
       },
     ],
-    [
-      'docusaurus-plugin-image-zoom',  { selector: '.markdown :not(a) > img' }
-    ],
+    ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
   ],
   markdown: {
     mermaid: true,
@@ -182,12 +173,12 @@ const config: Config = {
       {
         name: 'theme-color',
         content: '#FF6B35',
-        media: '(prefers-color-scheme: light)'
+        media: '(prefers-color-scheme: light)',
       },
       {
         name: 'theme-color',
         content: '#2d2d2d',
-        media: '(prefers-color-scheme: dark)'
+        media: '(prefers-color-scheme: dark)',
       },
     ],
     image: 'img/docusaur/docusaurus-social-card.jpg',
@@ -219,7 +210,7 @@ const config: Config = {
             {
               label: 'General Notes',
               to: '/docs_general-notes/intro',
-            },         
+            },
             {
               label: 'IB Notes',
               to: '/docs_IB-notes/intro',
@@ -227,11 +218,11 @@ const config: Config = {
             {
               label: 'A Levels Notes',
               to: '/docs_ALevel-notes/intro',
-            },         
+            },
             {
               label: 'DSE Notes',
               to: '/docs_DSE-notes/intro',
-            }
+            },
           ],
         },
         {
@@ -265,8 +256,8 @@ const config: Config = {
     zoom: {
       selector: '.markdown :not(em) > img',
       background: {
-          light: 'rgb(255, 255, 255)',
-          dark: 'rgb(50, 50, 50)'
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)',
       },
     },
   } satisfies Preset.ThemeConfig,

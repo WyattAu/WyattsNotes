@@ -2,17 +2,19 @@
 title: Markdown Constructs
 date: 2025-05-29T19:20:34.906Z
 tags:
-    - CS
+  - CS
 categories:
-    - CS
+  - CS
 slug: markdown-constructs
 ---
 
 ## Remark Common Plugins
+
 ### Remark Grid Table
 
 ~~Usage of [root remark-grid-table](https://github.com/zestedesavoir/zmarkdown/tree/HEAD/packages/remark-grid-tables#readme) is discouraged with Docusaurus, use [Adobe remark-gridtables](https://github.com/adobe/remark-gridtables) instead.~~ Remark Grid tables seems to be broken at the moment, the following does not seem to work:
-```
+
+````
 +----+----+
 | A  | B  |
 +----+----+
@@ -39,12 +41,16 @@ slug: markdown-constructs
 +========+=========:+======+
 | footer |    cells |      |
 +--------+----------+------+
-```
+````
+
 ### Code Snippets
+
 ```cpp file=./../../static/codeExample/example_codeSnippet.cpp start=start_here end=end_here
+
 ```
 
 ### Math
+
 Using remark math with rehype Katex, equations written in LaTeX can be rendered, however LaTeX packages cannot be included.
 
 $$
