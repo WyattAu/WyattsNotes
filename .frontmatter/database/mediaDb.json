@@ -1,17 +1,1 @@
-{
-  "syncfold": {
-    "filen_private": {
-      "edu": {
-        "test_ib": {
-          "ib_notes": {
-            "docs": {
-              "physics": {
-                "fields": {}
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+{"syncfold":{"filen_private":{"edu":{"test_ib":{"ib_notes":{"docs":{"physics":{"fields":{}}}}},"wyattsnotes":{"src":{"components":{}}}}}}}
