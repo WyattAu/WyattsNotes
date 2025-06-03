@@ -21,3 +21,30 @@
   align-items: center;
   justify-content: center;
 }
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .heroButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Better accessibility for button focus */
+.heroButton:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
