@@ -7,5 +7,7 @@ categories:
   - maths
 slug: Calculus
 ---
+
 ## Integration
+
 Integration is the process of finding a function using the derivative (Gradient function)

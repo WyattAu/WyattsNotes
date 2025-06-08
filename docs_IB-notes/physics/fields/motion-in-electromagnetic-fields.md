@@ -13,7 +13,7 @@ A test charge is an idealized particle where all other properties are assumed to
 
 ## Lorentz Force Law
 
-[Coulomb's Law](./ElectricAndMagneticFields.md#coulombs-law) is only valid for electrostatics, as magnetic force is also induced by moving charge. The combined force ($\bm{F}$) on the test charge ($q$) can be governed by Lorentz force law:
+[Coulomb's Law](./electric-and-magnetic-fields.md#coulombs-law) is only valid for electrostatics, as magnetic force is also induced by moving charge. The combined force ($\bm{F}$) on the test charge ($q$) can be governed by Lorentz force law:
 
 $$
 \begin{aligned}

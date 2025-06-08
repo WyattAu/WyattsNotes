@@ -45,7 +45,7 @@ slug: markdown-constructs
 
 ### Code Snippets
 
-```cpp file=./../../static/codeExample/example_codeSnippet.cpp start=start_here end=end_here
+```cpp file=./../../static/code/eg_codeSnippet.cpp start=start_here end=end_here
 
 ```
 

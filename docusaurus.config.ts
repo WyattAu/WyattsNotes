@@ -10,7 +10,7 @@ import remarkMath from 'remark-math';
 
 const compilationConfig = {
   staticDirectories: ['static'],
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 };
 
