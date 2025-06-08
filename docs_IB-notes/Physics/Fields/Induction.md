@@ -17,7 +17,7 @@ $$
 
 ### Magnetic Flux in Uniform Magnetic Field
 
-In a [uniform](./MotionInElectromagneticFields.md#uniform-fields) magnetic field, the magnetic field ($\bm{B}$) is a space invariant, where if the surface also have no curvature (such as a plane), then the magnetic flux can be expressed with the area ($\bm{A}$) of the plane:
+In a [uniform](./motion-in-electromagnetic-fields.md#uniform-fields) magnetic field, the magnetic field ($\bm{B}$) is a space invariant, where if the surface also have no curvature (such as a plane), then the magnetic flux can be expressed with the area ($\bm{A}$) of the plane:
 
 $$
 \begin{aligned}
