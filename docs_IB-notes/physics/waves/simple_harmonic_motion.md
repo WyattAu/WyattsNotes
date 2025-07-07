@@ -13,18 +13,20 @@ slug: simple-harmonic-motion
 :::info
 Standard level and higher level: 3 hours
 Students should understand:
-• conditions that lead to simple harmonic motion
-• the defining equation of simple harmonic motion as given by a = –ω^2 x
-• a particle undergoing simple harmonic motion can be described using time period T, frequency ƒ, angular frequency ω, amplitude, equilibrium position, and displacement
-• the time period in terms of frequency of oscillation and angular frequency as given by T = 1/ƒ = 2π ω
-• the time period of a mass–spring system as given by $T = 2π \sqrt{\frac mk}$
-• the time period of a simple pendulum as given by $T = 2π\sqrt{\frac lg}$
-• a qualitative approach to energy changes during one cycle of an oscillation.
-Additional higher level: 4 hours
-Students should understand:
-• that a particle undergoing simple harmonic motion can be described using phase angle
-• that problems can be solved using the equations for simple harmonic motion as given by
-$x = x_0 sin (ωt + ϕ)$ >$v = ωx_0 cos (ωt + ϕ)$ >$v = ± ω x_0 2 –x 2$ >$E_T = \frac12 mω2 x0 2$ >$E_P = \frac12 mω2 x 2 .$
+-conditions that lead to simple harmonic motion
+
+- the defining equation of simple harmonic motion as given by a = –ω^2 x
+- a particle undergoing simple harmonic motion can be described using time period T, frequency ƒ, angular frequency ω, amplitude, equilibrium position, and displacement
+- the time period in terms of frequency of oscillation and angular frequency as given by T = 1/ƒ = 2π ω
+- the time period of a mass–spring system as given by $T = 2π \sqrt{\frac mk}$
+- the time period of a simple pendulum as given by $T = 2π\sqrt{\frac lg}$
+- a qualitative approach to energy changes during one cycle of an oscillation.
+  -dditional higher level: 4 hours
+  -tudents should understand:
+- that a particle undergoing simple harmonic motion can be described using phase angle
+- that problems can be solved using the equations for simple harmonic motion as given by
+  $x = x_0 sin (ωt + ϕ)$ >$v = ωx_0 cos (ωt + ϕ)$ >$v = ± ω x_0 2 –x 2$ >$E_T = \frac12 mω2 x0 2$ >$E_P = \frac12 mω2 x 2 .$
+
 :::
 
 ## Characteristics and Conditions
