@@ -7,7 +7,9 @@ slug: setup-truenas-scale
 ---
 
 ## Home Server setup
+
 If the only hardware consist of a few HDD and a SSD, I would recommend allocating as:
+
 - A fast pool using SSD for:
   - TrueCharts apps
   - container storage
