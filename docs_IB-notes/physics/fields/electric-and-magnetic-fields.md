@@ -7,7 +7,7 @@ sidebar_position: 2
 
 A point charge is a point particle with nonzero electric charge and infinitesimal volume.
 
-## Coulomb's Law
+## Coulombs Law
 
 Also called Coulomb's inverse-square law states the magnitude of the attraction or repulsion electrostatic force ($\bm{F}$) between two charges is directly proportional to the magnitude of charges ($q$) and inversely proportional to the square of the magnitude of the separation displacement ($\bm{r}$):
 

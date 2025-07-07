@@ -39,7 +39,7 @@ jobs:
         run: |
           touch build/.nojekyll
           echo "Build version: $(git rev-parse --short HEAD) | $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > build/build-info.txt
-      
+
       - name: Validate build output
         run: |
           [ -d build ] || (echo "Build directory missing"; exit 1)

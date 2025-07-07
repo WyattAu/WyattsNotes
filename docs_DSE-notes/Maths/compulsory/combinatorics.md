@@ -184,7 +184,7 @@ $$
    </p>
    </details>
 
-5. **Question:** An exam has 3 sections with 5 questions each. How many ways can you choose 6 questions if you must pick ≥1 from each section?
+5. **Question:** An exam has $3$ sections with $5$ questions each. How many ways can you choose $6$ questions if you must pick $\lq 1$ from each section?
    <details>
    <summary>Answer</summary>
    <p>
@@ -211,7 +211,7 @@ $$
    </p>
    </details>
 
-8. **Question:** A pizza place offers 10 distinct toppings (6 meat, 4 vegetable). How many pizzas can be made with 3–5 toppings, including at least one meat and one vegetable?
+8. **Question:** A pizza place offers 10 distinct toppings (6 meat, 4 vegetable). How many pizzas can be made with 3-5 toppings, including at least one meat and one vegetable?
    <details>
    <summary>Answer</summary>
    <p>
@@ -220,7 +220,7 @@ $$
    </p>
    </details>
 
-9. **Question:** A student must choose 4 courses from 7 morning and 5 afternoon offerings, with ≥1 morning and ≥2 afternoon courses. How many ways?
+9. **Question:** A student must choose 4 courses from 7 morning and 5 afternoon offerings, with $\lq$1 morning and $\lq$2 afternoon courses. How many ways?
    <details>
    <summary>Answer</summary>
    <p>
@@ -229,7 +229,7 @@ $$
    </p>
    </details>
 
-10. **Question:** A license plate has 3 distinct letters (A–Z) followed by 3 distinct digits (0–9). How many plates exist if the number formed by the digits is even?
+10. **Question:** A license plate has 3 distinct letters (A-Z) followed by 3 distinct digits (0-9). How many plates exist if the number formed by the digits is even?
     <details>
     <summary>Answer</summary>
     <p>
@@ -273,7 +273,7 @@ $$
     <summary>Answer</summary>
     <p>
     - Represent numbers as 3-digit strings (allow leading zeros).  
-    - Nonnegative solutions to $a+b+c=10$ with $0 \leq a,b,c \leq 9$: $\binom{12}{10} - \binom{3}{1} = 66 - 3 = 63$ (subtract cases where a digit ≥10).  
+    - Nonnegative solutions to $a+b+c=10$ with $0 \leq a,b,c \leq 9$: $\binom{12}{10} - \binom{3}{1} = 66 - 3 = 63$ (subtract cases where a digit $\lq$10).  
     </p>
     </details>
 
@@ -288,7 +288,7 @@ $$
     </p>
     </details>
 
-16. **Question:** Assign 10 distinct gifts to 3 distinct children such that each gets ≥2 gifts.
+16. **Question:** Assign 10 distinct gifts to 3 distinct children such that each gets $\lq$2 gifts.
     <details>
     <summary>Answer</summary>
     <p>
@@ -309,7 +309,7 @@ $$
     </p>
     </details>
 
-18. **Question:** How many distinct 4-digit numbers can be formed from {1,2,3,4,5,6} with each digit used ≤2 times?
+18. **Question:** How many distinct 4-digit numbers can be formed from {1,2,3,4,5,6} with each digit used $\lq2$ times?
     <details>
     <summary>Answer</summary>
     <p>

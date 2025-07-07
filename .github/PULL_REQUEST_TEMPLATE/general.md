@@ -12,10 +12,10 @@
 
 ## Checklist
 
-- [ ] I’ve previewed my changes locally using `yarn build`/`npm run build`.
-- [ ] I’ve tested in light/dark mode (if applicable).
-- [ ] I’ve ensured my changes don’t break mobile responsiveness.
-- [ ] I’ve assigned a reviewer or tagged relevant team members.
+- [ ] I've previewed my changes locally using `yarn build`/`npm run build`.
+- [ ] I've tested in light/dark mode (if applicable).
+- [ ] I've ensured my changes don't break mobile responsiveness.
+- [ ] I've assigned a reviewer or tagged relevant team members.
 
 ## Screenshots/GIFs (if applicable)
 
