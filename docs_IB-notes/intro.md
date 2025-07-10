@@ -6,6 +6,6 @@ slug: /intro
 sidebar_position: 1
 ---
 
-# Abstract
+## Abstract
 
 This resource is modified by notes during my education for the IB diploma program.
