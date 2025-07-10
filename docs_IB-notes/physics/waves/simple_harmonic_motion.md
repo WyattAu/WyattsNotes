@@ -30,189 +30,177 @@ Students should understand:
 
 :::
 
-## Characteristics and Conditions
+## Fundamental Principles
 
-**Characteristics**
-**Simple Harmonic Motion** is periodic motion around a central point of equilibrium, of which there is no net force. There is a restoring force that acts on the object that is directly proportional to the displacement from equilibrium position and acts in a direction opposite to that displacement.
+Simple Harmonic Motion (SHM) is a periodic oscillation about a stable equilibrium position, characterized by a restoring force $F$ directly proportional to the displacement $x$ from equilibrium and directed oppositely to the displacement. This yields Newton's second law:
 
-**Equilibrium Position** - it's the position where the net force acting on the object is zero
+$$
+\begin{aligned}
+  F \propto x \\
+  F_{\text{net}} = -kx = m \frac{d^2x}{dt^2},
+\end{aligned}
 
-**Amplitude** - maximum displacement or distance that an oscillating object moves away from its equilibrium position
+$$
 
-**Conditions**
+where $k > 0$ is the stiffness constant (e.g., spring constant). Rearranged as the equation of motion:
 
-- In perfect SHM the oscillations always take the same time.
-- There are no resistive forces.
-- They continue oscillating indefinitely .
-- No loss of energy.
-- Constant amplitude.
-- Amplitude - the maximum displacement-of the system decreases when it transfers energy to the environment.
-- Isochronous - oscillation repeats, taking the same repetition time irrespective of its size.
-- Restoring force, $F$, is proportional to the displacement, $x$, but the force always acts back towards the equilibrium position: $F \propto -x$
-- The negative sign is important here. It shows us that the force acts in the opposite direction to the displacement: an increasing force opposes increasing displacement.
-- Restoring force is a force that acts on an object, attempting to return it to its equilibrium or rest position when it is displaced from that position.
-  Another way to put it is: $a \propto -x$ 
-- Where acceleration is proportional to the displacement, but in the opposite direction (always directed back towards the equilibrium position).
+$$
+\frac{d^2x}{dt^2} + \omega^2 x = 0, \quad \omega = \sqrt{\frac{k}{m}}. \tag{1}
+$$
 
-## Graphs
+Here, $\omega$ is the angular frequency (rad·s⁻¹), governing the system's temporal evolution.
 
-- Mass oscillating on a spring could be used with a marker pen to produce a record of the oscillation.
+Key Characteristics:
 
-- Using knowledge from, velocity of oscillating mass at any moment can be calculated by determining the gradient of the displacement-time graph at that moment.
-  $$\text{velocity}, v = \frac{\text{change\ in\  displacement}}{\text{change\  in\  time}} = \frac{\delta x}{\delta t}$$
+- Equilibrium Position: Point where net force vanishes ($F_{\text{net}} = 0$).
+- Amplitude ($A$): Maximum displacement from equilibrium ($|x|_{\text{max}} = A$).
+- Isochrony: Period $T$ is amplitude-independent for ideal SHM.
 
-- Similarly, the acceleration at any time can be calculated.
-  $$\text{acceleration}, a = \frac{\text{change\ in\ velocity}}{\text{change\ in\ time}} = \frac{\Delta v}{\Delta t}$$
-- The velocity graph has its maximum value, $v_0$ , when the displacement, $x$, is zero, and the velocity is zero when the displacement is at its maximum, $\pm x_0$ .
+Conditions for Ideal SHM:
 
-- Thus, acceleration can be shown as such.
-- As you can notice, the acceleration-time graph is simply an inverted version of the displacement-time graph.
-- This is because we had established earlier that acceleration is proportional to negative $x$.
-- Acceleration moves in the opposite direction of displacement, to put the mass back in equilibrium.
+1. Restoring force obeys Hooke’s law: $F = -kx$.
+2. Zero dissipative forces (undamped motion).
+3. Constant total mechanical energy.
 
-## The Simple Pendulum
+## Kinematic Relations
 
-**Equilibrium Position**
+The general solution to Equation (1) is:
 
-**Features**
+$$
+x(t) = A \cos(\omega t + \phi_0), \tag{2}
+$$
 
-- Consists of:
-  Small mass
-  Inextensible string
-- If left alone, the mass will hang at rest so that the string is vertical.
-- if pushed to one side, it will oscillate about its equilibrium position.
-- pendulum oscillates because there is always a force acting toward the centre
+where $\phi_0$ is the initial phase angle. Velocity $v$ and acceleration $a$ follow by differentiation:
 
-**Calculating Period**
+$$
+v(t) = \frac{dx}{dt} = -\omega A \sin(\omega t + \phi_0), \tag{3}
+$$
 
-- Period - Time of one complete cycle
-- Frequency - Cycles in one second
-- Length - distance between start of string and ball
-- Gravitational Field-Strength/Acceleration - $9.8m/s^2$
-  $$ T = 2\pi \sqrt\frac{l}{g}$$
-- As length of string increases, period $\uparrow$ increases
-- As gravitational acceleration increases, period $\downarrow$ decreases
-- The period is independent of the mass of the pendulum bob, which is a remarkable property of simple pendulums.
+$$
+a(t) = \frac{d^2x}{dt^2} = -\omega^2 A \cos(\omega t + \phi_0) = -\omega^2 x. \tag{4}
+$$
 
-**Calculating Force & Acceleration**
+Phase Relationships:
 
-- The restoring force that pulls the bob back to the equilibrium position is $-mg\space\sin(\theta) = ma = F$
-- Negative -mg because the restoring force is in the opposite direction of the angle (which is positive).
-- $m$ can be cancelled out, leaving $a = -g\sin(\theta)$
-- The magnitude of the acceleration of the body in simple harmonic motion is proportional to the displacement and the direction of the acceleration is towards the equilibrium position.
-- This can be shown in $a = -\omega^2x$
-- $x$ = displacement
-- $-w^2$ = angular frequency
-- Due to the equation for displacement at a given time, it can potentially also be written as $a = -\omega^2x_0 \cos(\omega t) = -\omega^2$
+- Displacement-Velocity: $v = \pm \omega \sqrt{A^2 - x^2}$ (from energy conservation).
+- Displacement-Acceleration: $a = -\omega^2 x$ (definitive property of SHM).
+- Extrema:
+  - $|v|_{\text{max}} = \omega A$ at $x = 0$ (equilibrium).
+  - $|a|_{\text{max}} = \omega^2 A$ at $x = \pm A$ (max displacement).
 
-## Calculating Displacement & Velocity
+Graphical Interpretation:
 
-- $x = x_0 \cos(\omega t)$ for simple harmonic motion that begins at the extremes.
-- $x = x_0 \sin(\omega t)$ for simple harmonic motion that begins at the centre.
-- $x = x_0 \sin(\omega t+\Phi)$ can be used for a different phase angle.
-- Where $x$ is displacement/amplitude and $x_0$ is initial displacement/amplitude. Therefore $x$ is a modified version of $x_0$ based on the sin/cosine function and degrees=(angular frequency x time).
-- Velocity (x unknown): $v = \omega x_0\space \cos(\omega t)$
-- Velocity (t unknown): $v = \pm \omega \sqrt {x_0^2-x^2}$
-- For where x is unknown, if velocity wants to be found at a different phase angle, the following can be used: $v=\omega x_0\space\cos(\omega t+\Phi )$
+- $x(t)$, $v(t)$, and $a(t)$ are phase-shifted sinusoids (Figure 1).
+- $a(t)$ is inverted relative to $x(t)$ due to $a \propto -x$.
 
-## Mass-Spring System
+## Energy Conservation
 
-**Features**
+Total mechanical energy $E_{\text{total}}$ is conserved:
 
-1. Mass
-2. Spring
-   **Hooke's Law**
+$$
+E_{\text{total}} = K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2. \tag{5}
+$$
 
-- The law states that the force required to extend or compress a spring by some distance is directly proportional to that distance.
-- This can be mathematically expressed as: $F = -kx$
-- $F$ = force (N)
-- $k$ = spring constant (N/m)
-- $x$ = displacement from equilibrium (m)
-  **Calculating Period**
-- Equation for period in seconds is:$ T = 2\pi \sqrt\frac{m}{k}$
-- $m$ = mass (kg)
-- $k$ = spring constant (N/m)
-  **Diagram Representation**
+Substituting Equations (2)–(4) yields:  
+Kinetic Energy ($K$):
 
-## **Describing and Calculating Energy Changes**
+$$
+K = \frac{1}{2}m \omega^2 A^2 \sin^2(\omega t + \phi_0) = \frac{1}{2}m\omega^2 (A^2 - x^2). \tag{6}
+$$
 
-**Kinetic Energy**
+Potential Energy ($U$):
 
-- The general formula for kinetic energy is:
-  $$ E_K = \frac12mv^2$$
-- And the equation for velocity is: $v = \pm\omega \sqrt {x_0^2-x^2}$
-- It can be substituted to make: $E_K = \frac{12}{m} \omega(x_0^2-x^2)$
-- Kinetic energy is a maximum at the bottom of the swing where x = 0.
-- So at the bottom of the swing: $E_K\\\space_m\\_a\\_x = \frac{1}{2}mw^2x^2_0$
-- At this point, the potential energy is zero.
-- In addition, since v can also be: $v = \omega x_0\space \cos(\omega t)$
-- Kinetic energy can be alternatively expressed as: $E_K = \frac{1}{2}mw^2x^2_0\cos^2(\omega t)$
-- This can be graphically represented as
+$$
+U = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2 x^2. \tag{7}
+$$
 
-**Total Energy**
+Total Energy:
 
-- The total energy at any moment in time is given by: $ \text{total energy} = E_T = E_K + E_P$
-- Therefore at the bottom of the swing: $E_T = \frac{1}{2}mw^2x^2_0+0 = \frac{1}{2}mw^2x^2_0$
-- Where 0 = potential energy.
-- Since no work is done on the system, according to the law of conservation of energy, the total energy must be constant.
-- So: $E_T = \frac{1}{2}mw^2x^2_0$
-- This can be graphically represented as:
+$$
+E_{\text{total}} = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2 A^2. \tag{8}
+$$
 
-**Potential Energy**
+Energy Oscillations:
 
-- Potential energy at any moment = total energy- kinetic energy
-- Therefore the two equations for potential energy can be subbed in as:
-- $E_P = (\frac{1}{2}mw^2x^2_0) - (\frac{12}{m} \omega(x_0^2-x^2))$
-- This can be further simplified as: $E_P = \frac{1}{2}mw^2 x^2$
-- This can be graphically represented as
-- WHEN U WAKE FINISH POT ENG THEN SPRING THEN MOVE TO C.2
+- $K_{\text{max}} = E_{\text{total}}$ at $x = 0$.
+- $U_{\text{max}} = E_{\text{total}}$ at $x = \pm A$.
 
-## Angular Frequency
+## Example Systems
 
-**Definition**
+### 4.1 Simple Pendulum
 
-- The rate of change of phase in a periodic waveform
-- Typically measured in radians per second (rad$-^1$)
+Description: Point mass $m$ suspended on a massless string of length $L$ in gravitational field $g$.  
+Equation of Motion:  
+For small $\theta$ ($\sin\theta \approx \theta$):
 
-**Equation**
+$$
+\frac{d^2\theta}{dt^2} + \frac{g}{L}\theta = 0. \tag{9}
+$$
 
-- $\omega$ = angular frequency $\omega = 2\pi f  = \frac{2\pi}{T}$
-- $1\space rad =\frac{180 \degree}{\pi}(= 57.3 \degree)$
+This matches Equation (1) with $\omega = \sqrt{g/L}$.  
+Period:
 
-**Examples**
-When a guitar string was plucked (once) it oscillated with a frequency of 196Hz.
+$$
+T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{L}{g}}. \tag{10}
+$$
 
-- 1. Determine the angular frequency of this oscillation.
-- 2. Suggest how you would expect the frequency and amplitude to change in the next few seconds. Explain your answer
+Properties:
 
-1. $\omega = 2\pi f$
-   Where:
+- $T \propto \sqrt{L}$; $T \propto 1/\sqrt{g}$; independent of $m$ and $A$ (for $\theta \ll 1$ rad).
 
-   - $\omega$ is the angular frequency in radians per second (rad/s).
-   - f is the frequency in hertz (Hz).
+### Mass-Spring System
 
-   In your case, the frequency (f) is given as 196 Hz. So, you can calculate $\omega$ as follows:
+Description: Mass $m$ attached to a spring of stiffness $k$.  
+Equation of Motion:  
+From Hooke’s law:
 
-   $\omega = 2\pi \times 196Hz$
-   $\omega \approx 1234.73 rad/s$
+$$
+m\frac{d^2x}{dt^2} = -kx \implies \frac{d^2x}{dt^2} + \frac{k}{m}x = 0. \tag{11}
+$$
 
-2. After being plucked, the guitar string will likely experience a gradual decrease in both frequency and amplitude.
-   The frequency will drop due to energy loss (air resistance) and damping, resulting in a softer and less sustained sound.
-   Additionally, the higher harmonics may become less audible over time.
+Period:
 
-## Phase Angle and Phase Difference
+$$
+T = 2\pi \sqrt{\frac{m}{k}}. \tag{12}
+$$
 
-**Phase Angle**
+Properties:
 
-- Represented by $\Phi$
-- Measurement of progression of the wave.
-- The angle that we start at is arbitrary, but the change stays constant relative to the size of the wave.
+- $T \propto \sqrt{m}$; $T \propto 1/\sqrt{k}$; independent of $A$.
 
-**Phase Difference**
+## Angular Frequency and Phase
 
-- Represented by $\Phi$
-- The angle between the radial lines that are tracing out the simple harmonic motion.
-- Difference between two phase angles.
-- Calculated by $\Phi  = \frac{2\pi\Delta t}{T}$
-- In the picture, the phase difference $\Phi $ is 1 rad OR $0.16\degree$
+Angular Frequency ($\omega$):
+
+$$
+\omega = 2\pi f = \frac{2\pi}{T}, \tag{13}
+$$
+
+where $f$ is linear frequency (Hz). Converts temporal periodicity to angular speed.
+
+Phase Angle ($\phi$):  
+Generalizes Equation (2):
+
+$$
+x(t) = A \cos(\omega t + \phi_0).
+$$
+
+- Phase Difference ($\Delta\phi$): Temporal shift between two SHMs:
+  $$
+  \Delta\phi = \omega \Delta t = \frac{2\pi \Delta t}{T}. \tag{14}
+  $$
+- Measured in radians (1 rad ≈ 57.3°).
+
+## Summary of Key Equations
+
+| Quantity      | Expression                                                   |
+| ----------------- | ---------------------------------------------------------------- |
+| Displacement      | $x = A \cos(\omega t + \phi_0)$                                  |
+| Velocity          | $v = -\omega A \sin(\omega t + \phi_0)$                          |
+| Acceleration      | $a = -\omega^2 x$                                                |
+| Angular Frequency | $\omega = \sqrt{k/m}$ (spring), $\omega = \sqrt{g/L}$ (pendulum) |
+| Period            | $T = 2\pi / \omega$                                              |
+| Kinetic Energy    | $K = \frac{1}{2}m\omega^2(A^2 - x^2)$                            |
+| Potential Energy  | $U = \frac{1}{2}m\omega^2 x^2$                                   |
+| Total Energy      | $E_{\text{total}} = \frac{1}{2}m\omega^2 A^2$                    |
 
