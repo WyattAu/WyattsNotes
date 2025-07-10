@@ -193,7 +193,7 @@ $$
 
 ## Summary of Key Equations
 
-| Quantity      | Expression                                                   |
+| Quantity          | Expression                                                       |
 | ----------------- | ---------------------------------------------------------------- |
 | Displacement      | $x = A \cos(\omega t + \phi_0)$                                  |
 | Velocity          | $v = -\omega A \sin(\omega t + \phi_0)$                          |
@@ -203,4 +203,3 @@ $$
 | Kinetic Energy    | $K = \frac{1}{2}m\omega^2(A^2 - x^2)$                            |
 | Potential Energy  | $U = \frac{1}{2}m\omega^2 x^2$                                   |
 | Total Energy      | $E_{\text{total}} = \frac{1}{2}m\omega^2 A^2$                    |
-
