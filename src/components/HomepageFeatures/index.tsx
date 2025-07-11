@@ -11,12 +11,11 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Assumption of Some Intelligence",
+    title: "Free and Open Source",
     Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoLeft.svg').default,
     description: (
       <>
-        Explanations will only be written once, definitions for terminology should be linked. No
-        babysitting is given to people who can't navigate hyperlinks.
+        This site will never charge any fees for information and all information is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.
       </>
     ),
   },

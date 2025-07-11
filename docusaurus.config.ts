@@ -114,8 +114,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'IB-notes',
-        path: 'docs_IB-notes',
-        routeBasePath: '/docs_IB-notes',
+        path: 'docs/docs_IB-notes',
+        routeBasePath: '/docs/docs_IB-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_IB-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -124,8 +124,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'ALevel-notes',
-        path: 'docs_ALevel-notes',
-        routeBasePath: '/docs_ALevel-notes',
+        path: 'docs/docs_ALevel-notes',
+        routeBasePath: '/docs/docs_ALevel-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_ALevel-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -134,8 +134,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'DSE-notes',
-        path: 'docs_DSE-notes',
-        routeBasePath: '/docs_DSE-notes',
+        path: 'docs/docs_DSE-notes',
+        routeBasePath: '/docs/docs_DSE-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_DSE-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -144,8 +144,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'cpp-notes',
-        path: 'docs_cpp-notes',
-        routeBasePath: '/docs_cpp-notes',
+        path: 'docs/docs_cpp-notes',
+        routeBasePath: '/docs/docs_cpp-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_cpp-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -154,8 +154,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'dart-notes',
-        path: 'docs_dart-notes',
-        routeBasePath: '/docs_dart-notes',
+        path: 'docs/docs_dart-notes',
+        routeBasePath: '/docs/docs_dart-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_dart-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -165,8 +165,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'java-notes',
-        path: 'docs_java-notes',
-        routeBasePath: '/docs_java-notes',
+        path: 'docs/docs_java-notes',
+        routeBasePath: '/docs/docs_java-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_java-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -175,8 +175,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'python-notes',
-        path: 'docs_python-notes',
-        routeBasePath: '/docs_python-notes',
+        path: 'docs/docs_python-notes',
+        routeBasePath: '/docs/docs_python-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_python-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -185,8 +185,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'git-notes',
-        path: 'docs_git-notes',
-        routeBasePath: '/docs_git-notes',
+        path: 'docs/docs_git-notes',
+        routeBasePath: '/docs/docs_git-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_git-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -195,8 +195,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'general-notes',
-        path: 'docs_general-notes',
-        routeBasePath: '/docs_general-notes',
+        path: 'docs/docs_general-notes',
+        routeBasePath: '/docs/docs_general-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_general-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -205,8 +205,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'tuning-notes',
-        path: 'docs_tuning-notes',
-        routeBasePath: '/docs_tuning-notes',
+        path: 'docs/docs_tuning-notes',
+        routeBasePath: '/docs/docs_tuning-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_tuning-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -215,8 +215,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'licensing-notes',
-        path: 'docs_licensing-notes',
-        routeBasePath: '/docs_licensing-notes',
+        path: 'docs/docs_licensing-notes',
+        routeBasePath: '/docs/docs_licensing-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_licensing-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -225,8 +225,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'truenas-notes',
-        path: 'docs_truenas-notes',
-        routeBasePath: '/docs_truenas-notes',
+        path: 'docs/docs_truenas-notes',
+        routeBasePath: '/docs/docs_truenas-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_truenas-notes.ts'),
         ...commonDocsPluginConfig,
       },
@@ -296,15 +296,15 @@ const config: Config = {
           items: [
             {
               label: 'IB ',
-              to: '/docs_IB-notes/intro',
+              to: '/docs/docs_IB-notes/intro',
             },
             {
               label: 'A Levels ',
-              to: '/docs_ALevel-notes/intro',
+              to: '/docs/docs_ALevel-notes/intro',
             },
             {
               label: 'DSE ',
-              to: '/docs_DSE-notes/intro',
+              to: '/docs/docs_DSE-notes/intro',
             },
           ],
         },
@@ -313,23 +313,23 @@ const config: Config = {
           items: [
             {
               label: 'C++ ',
-              to: '/docs_cpp-notes/intro',
+              to: '/docs/docs_cpp-notes/intro',
             },
             {
               label: 'Dart ',
-              to: '/docs_dart-notes/intro',
+              to: '/docs/docs_dart-notes/intro',
             },
             {
               label: 'Java ',
-              to: '/docs_java-notes/intro',
+              to: '/docs/docs_java-notes/intro',
             },
             {
               label: 'Python ',
-              to: '/docs_python-notes/intro',
+              to: '/docs/docs_python-notes/intro',
             },
             {
               label: 'Git ',
-              to: '/docs_git-notes/intro',
+              to: '/docs/docs_git-notes/intro',
             },
           ],
         },
@@ -338,7 +338,7 @@ const config: Config = {
           items: [
             {
               label: 'TrueNAS',
-              to: '/docs_truenas-notes/intro',
+              to: '/docs/docs_truenas-notes/intro',
             },
           ],
         },
@@ -347,11 +347,11 @@ const config: Config = {
           items: [
             {
               label: 'Tuning',
-              to: '/docs_tuning-notes/intro',
+              to: '/docs/docs_tuning-notes/intro',
             },
             {
               label: 'Licensing',
-              to: '/docs_licensing-notes/intro',
+              to: '/docs/docs_licensing-notes/intro',
             },
           ],
         },
@@ -365,6 +365,10 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/WyattAu/WyattsNotes',
+            },
+            {
+              label: 'Donate',
+              href: 'https://gravatar.com/wyattau',
             },
           ],
         },

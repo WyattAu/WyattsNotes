@@ -35,7 +35,7 @@
 
 #### File Structure Principles
 
-- **Documentation Content** (`docs_*/`):
+- **Documentation Content** (`docs/docs_*/`):
   - Ensure nesting is less than 5 levels.
   - Group related topics in folders (e.g., `maths/calculus/`)
   - Name files by topic, not section titles (e.g., `rate-limiting.md` vs `api-rate-limits.md`)

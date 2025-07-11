@@ -68,47 +68,47 @@
   "frontMatter.content.pageFolders": [
     {
       "title": "IB Notes",
-      "path": "[[workspace]]/docs_IB-notes"
+      "path": "[[workspace]]/docs/docs_IB-notes"
     },
     {
       "title": "A Levels Notes",
-      "path": "[[workspace]]/docs_ALevel-notes"
+      "path": "[[workspace]]/docs/docs_ALevel-notes"
     },
     {
       "title": "DSE Notes",
-      "path": "[[workspace]]/docs_DSE-notes"
+      "path": "[[workspace]]/docs/docs_DSE-notes"
     },
     {
       "title": "C++ Notes",
-      "path": "[[workspace]]/docs_cpp-notes"
+      "path": "[[workspace]]/docs/docs_cpp-notes"
     },
     {
       "title": "Dart Notes",
-      "path": "[[workspace]]/docs_dart-notes"
+      "path": "[[workspace]]/docs/docs_dart-notes"
     },
     {
       "title": "Java Notes",
-      "path": "[[workspace]]/docs_java-notes"
+      "path": "[[workspace]]/docs/docs_java-notes"
     },
     {
       "title": "Python Notes",
-      "path": "[[workspace]]/docs_python-notes"
+      "path": "[[workspace]]/docs/docs_python-notes"
     },
     {
       "title": "Git Notes",
-      "path": "[[workspace]]/docs_git-notes"
+      "path": "[[workspace]]/docs/docs_git-notes"
     },
     {
       "title": "Licensing Notes",
-      "path": "[[workspace]]/docs_licensing-notes"
+      "path": "[[workspace]]/docs/docs_licensing-notes"
     },
     {
       "title": "TrueNAS Notes",
-      "path": "[[workspace]]/docs_truenas-notes"
+      "path": "[[workspace]]/docs/docs_truenas-notes"
     },
     {
       "title": "General Notes",
-      "path": "[[workspace]]/docs_general-notes"
+      "path": "[[workspace]]/docs/docs_general-notes"
     }
   ]
 }
