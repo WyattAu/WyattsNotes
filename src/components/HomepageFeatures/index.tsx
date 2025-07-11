@@ -11,7 +11,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Don't Assume User Retardation",
+    title: "Assumption of Some Intelligence",
     Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoLeft.svg').default,
     description: (
       <>
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'No Bullshit',
+    title: 'No Overhead',
     Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoMiddle.svg').default,
     description: (
       <>

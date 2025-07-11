@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "📟 Start Dev Server",
+      "label": "Start Dev Server",
       "type": "npm",
       "script": "start",
       "presentation": {
@@ -17,28 +17,34 @@
           "priority": 0
         }
       },
+      "dependsOn": "Install Dependencies",
       "isBackground": true
     },
     {
-      "label": "🏗️ Build Production",
+      "label": "Install Dependencies",
+      "type": "npm",
+      "script": "install"
+    },
+    {
+      "label": "Build Production",
       "type": "npm",
       "script": "build",
       "group": "build"
     },
     {
-      "label": "🌐 Preview Build",
+      "label": "Preview Production Build",
       "type": "npm",
       "script": "serve",
-      "dependsOn": "🏗️ Build Production"
+      "dependsOn": "Build Production"
     },
     {
-      "label": "🚀 Deploy Documentation",
+      "label": "Deploy Documentation",
       "type": "npm",
       "script": "deploy",
-      "dependsOn": "🏗️ Build Production"
+      "dependsOn": "Build Production"
     },
     {
-      "label": "🧪 Type Check",
+      "label": "Type Check",
       "type": "npm",
       "script": "typecheck",
       "problemMatcher": "$tsc",
@@ -47,7 +53,7 @@
       }
     },
     {
-      "label": "👁️ Type Check (Watch)",
+      "label": "Type Check (Watch)",
       "type": "npm",
       "script": "typecheck",
       "args": [
@@ -60,22 +66,22 @@
       }
     },
     {
-      "label": "🧹 Clear Cache",
+      "label": "Clear Cache",
       "type": "npm",
       "script": "clear"
     },
     {
-      "label": "🌍 Extract Translations",
+      "label": "Extract Translations",
       "type": "npm",
       "script": "write-translations"
     },
     {
-      "label": "#️⃣ Add Heading IDs",
+      "label": "Add Heading IDs",
       "type": "npm",
       "script": "write-heading-ids"
     },
     {
-      "label": "🧩 Swizzle Component",
+      "label": "Swizzle Component",
       "type": "npm",
       "script": "swizzle",
       "args": [
@@ -83,7 +89,7 @@
       ]
     },
     {
-      "label": "💅 Format Files (Prettier)",
+      "label": "Format Files (Prettier)",
       "type": "npm",
       "script": "format",
       "problemMatcher": "$eslint-stylish",
@@ -92,7 +98,7 @@
       }
     },
     {
-      "label": "🔍 Lint Project (ESLint)",
+      "label": "Lint Project (ESLint)",
       "type": "npm",
       "script": "lint",
       "problemMatcher": "$eslint-stylish",
@@ -102,11 +108,11 @@
       }
     },
     {
-      "label": "✨ Format & Lint Project",
+      "label": "Format & Lint Project",
       "dependsOrder": "sequence",
       "dependsOn": [
-        "💅 Format Files (Prettier)",
-        "🔍 Lint Project (ESLint)"
+        "Format Files (Prettier)",
+        "Lint Project (ESLint)"
       ]
     }
   ],

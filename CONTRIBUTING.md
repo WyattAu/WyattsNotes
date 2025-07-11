@@ -3,7 +3,11 @@
 ## Setup
 
 1. Fork this repo
-2. `npm install`
+
+## Development tools
+
+- Refer to package.json for npx commands
+- Refer to tasks.json if you are using VSCode
 
 ## Guidelines
 
@@ -37,7 +41,9 @@
   - Name files by topic, not section titles (e.g., `rate-limiting.md` vs `api-rate-limits.md`)
   -
 - **Custom Code** (`src/`):
+
   - Separate components by:
+
     ```
     src/
     ├── layout/
@@ -45,6 +51,7 @@
     ├── context/
     └── theme/
     ```
+
 - **Static Assets** (`static/`):
   - Use subfolders: `/img`, `/fonts`, `/pdfs`
     \*\* For images: Prefer WebP format, use `_` for multiword names (`error_404.webp`)
@@ -53,6 +60,7 @@
 
 - Front matter:
   Use required metadata:
+
   ```yaml
   ---
   title: Combinatorics
@@ -65,4 +73,5 @@
   slug: combinatorics
   ---
   ```
+
   This can be easily managed using VSCode plugin `eliostruyf.vscode-front-matter`

@@ -14,6 +14,9 @@
         "wyattsnotes": {
           "src": {
             "components": {}
+          },
+          "blog_release-notes": {
+            "2025-03-27_resourceusage": {}
           }
         }
       }

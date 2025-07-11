@@ -16,7 +16,7 @@ const compilationConfig = {
 
 const prjMetadataConfig = {
   title: "Wyatt's Notes",
-  tagline: 'Notes ordered by syllabus',
+  tagline: 'Quality over quantity',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
   url: 'https://wyattau.github.io',
   baseUrl: '/WyattsNotes/',
@@ -143,10 +143,91 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'cpp-notes',
+        path: 'docs_cpp-notes',
+        routeBasePath: '/docs_cpp-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_cpp-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dart-notes',
+        path: 'docs_dart-notes',
+        routeBasePath: '/docs_dart-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_dart-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'java-notes',
+        path: 'docs_java-notes',
+        routeBasePath: '/docs_java-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_java-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'python-notes',
+        path: 'docs_python-notes',
+        routeBasePath: '/docs_python-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_python-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'git-notes',
+        path: 'docs_git-notes',
+        routeBasePath: '/docs_git-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_git-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'general-notes',
         path: 'docs_general-notes',
         routeBasePath: '/docs_general-notes',
         sidebarPath: require.resolve('./sidebars/sidebar_general-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'tuning-notes',
+        path: 'docs_tuning-notes',
+        routeBasePath: '/docs_tuning-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_tuning-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'licensing-notes',
+        path: 'docs_licensing-notes',
+        routeBasePath: '/docs_licensing-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_licensing-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'truenas-notes',
+        path: 'docs_truenas-notes',
+        routeBasePath: '/docs_truenas-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_truenas-notes.ts'),
         ...commonDocsPluginConfig,
       },
     ],
@@ -211,23 +292,66 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Notes',
+          title: 'Year 12-13',
           items: [
             {
-              label: 'General Notes',
-              to: '/docs_general-notes/intro',
-            },
-            {
-              label: 'IB Notes',
+              label: 'IB ',
               to: '/docs_IB-notes/intro',
             },
             {
-              label: 'A Levels Notes',
+              label: 'A Levels ',
               to: '/docs_ALevel-notes/intro',
             },
             {
-              label: 'DSE Notes',
+              label: 'DSE ',
               to: '/docs_DSE-notes/intro',
+            },
+          ],
+        },
+        {
+          title: 'Dev Tools',
+          items: [
+            {
+              label: 'C++ ',
+              to: '/docs_cpp-notes/intro',
+            },
+            {
+              label: 'Dart ',
+              to: '/docs_dart-notes/intro',
+            },
+            {
+              label: 'Java ',
+              to: '/docs_java-notes/intro',
+            },
+            {
+              label: 'Python ',
+              to: '/docs_python-notes/intro',
+            },
+            {
+              label: 'Git ',
+              to: '/docs_git-notes/intro',
+            },
+          ],
+        },
+        {
+          title: 'Operating System',
+          items: [
+            {
+              label: 'TrueNAS',
+              to: '/docs_truenas-notes/intro',
+            },
+          ],
+        },
+        {
+          title: 'others',
+          items: [
+            {
+              label: 'Tuning',
+              to: '/docs_tuning-notes/intro',
+            },
+            {
+              label: 'Licensing',
+              to: '/docs_licensing-notes/intro',
             },
           ],
         },
