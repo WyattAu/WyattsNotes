@@ -22,13 +22,13 @@
   justify-content: center;
 }
 
-.buttonGroup {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
+/*.buttonGroup {
+/*  display: flex;
+/*  flex-wrap: wrap;
+/*  justify-content: center;
+/*  gap: 1rem;
+/*  margin-top: 1.5rem;
+/*}
 
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
@@ -47,4 +47,92 @@
 .heroButton:focus {
   outline: 2px solid var(--ifm-color-primary);
   outline-offset: 2px;
+}
+/* Existing styles */
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navItemContainer {
+  position: relative;
+  display: flex;
+}
+
+.heroButton {
+  margin: 0.25rem;
+}
+
+/* New modal styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modalContainer {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  max-width: 90%;
+  width: 400px;
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-secondary-contrast-background);
+}
+
+.modalHeader h3 {
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--ifm-color-emphasis-700);
+  padding: 0 0.5rem;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
+.modalButton {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
 }
