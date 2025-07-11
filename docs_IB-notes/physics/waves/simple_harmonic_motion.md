@@ -40,6 +40,7 @@ $$
   F_{\text{net}} = -kx = m \frac{d^2x}{dt^2},
 \end{aligned}
 
+
 $$
 
 where $k > 0$ is the stiffness constant (e.g., spring constant). Rearranged as the equation of motion:
@@ -127,7 +128,7 @@ Energy Oscillations:
 
 ## Example Systems
 
-### 4.1 Simple Pendulum
+### Simple Pendulum
 
 Description: Point mass $m$ suspended on a massless string of length $L$ in gravitational field $g$.  
 Equation of Motion:  
