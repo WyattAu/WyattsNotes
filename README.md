@@ -7,6 +7,10 @@
 
 This repository aims to be a FOSS resource acting as a course companion with additional resources related to software development.
 
+## Contribution
+
+If you want to contribute to this project, please read [CONTRIBUTING.md](./CONTRIBUTING.md) before making a pull request.
+
 ## Compilation
 
 ### VSCode
