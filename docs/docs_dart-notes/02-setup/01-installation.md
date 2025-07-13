@@ -25,4 +25,4 @@ My recommended IDE for Dart is modifying the text editor VSCode with Dart and Fl
 5. Now type `flutter doctor` in the terminal and resolve any missing SDK or packages
    1. I would recommend installing android sdk from android studio
    2. I would also recommend installing Visual Studio if windows development is needed.
-   3. If the developement platform is Windows, the path may not have added correctly, include the dart sdk and flutter sdk in path.
+   3. If the developement platform is Windows, the path may not have added correctly, include the android sdk, dart sdk and flutter sdk in path.
