@@ -56,6 +56,10 @@
   - Use subfolders: `/img`, `/fonts`, `/pdfs`
     \*\* For images: Prefer WebP format, use `_` for multiword names (`error_404.webp`)
 
+#### Sidebar Ordering
+
+Inorder to be consistent with the ordering of the sidebar, documents and folder containing documents should be prefix with `01-`, where `01` should replaced by the desire index on the sidebar.
+
 #### Documentation Requirements
 
 - Front matter:
