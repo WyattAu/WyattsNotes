@@ -382,7 +382,7 @@ const config: Config = {
       darkTheme: {
         ...prismThemes.gruvboxMaterialDark,
       },
-      additionalLanguages: ['java'],
+      additionalLanguages: ['java', 'dart'],
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },

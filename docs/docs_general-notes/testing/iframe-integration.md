@@ -1,5 +1,5 @@
 ---
-title: Godbolt Integration
+title: Iframe Integration
 date: 2025-07-11T23:22:50.056Z
 tags:
   - CS
@@ -8,7 +8,7 @@ categories:
 slug: godbolt-integration
 ---
 
-## Testing iFrames
+## Godbolt
 
 <div className="godbolt-container">
   <iframe
@@ -23,3 +23,19 @@ slug: godbolt-integration
 
 - Theming is not embedded with iframe
 - Font size is embedded with iframe
+
+## Dartpad
+
+<div className="godbolt-container">
+  <iframe
+    width="100%"
+    height="800"
+    src="https://dartpad.dev/embed-inline.html?id=f6b391a0280187585c9256ef42e5d913&split=20&theme=dark"
+    title="Dartpad Embedded"
+    sandbox="allow-scripts allow-same-origin"
+    loading="lazy"
+  ></iframe>
+</div>
+
+- Gemini cannot be turned off
+- Place gist after `?id=` and before `&split`
