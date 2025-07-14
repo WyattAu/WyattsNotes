@@ -8,7 +8,13 @@ sidebar_position: 1
 
 ## Abstract
 
-This resource is created as a aggregation of best practices in Dart and Flutter listed as a tutorial. Different from other languages, the Flutter aspect is important, and GUI presentation is important, therefore compiler explorer cannot be used and Dartpad will be used.
+This resource is created as a aggregation of best practices in Dart and Flutter listed as a tutorial.
+
+:::info
+
+Different from other languages, the Flutter aspect is important, and GUI presentation is important, therefore when Dart code uses Flutter, compiler explorer cannot be used and Dartpad will be used.
+
+:::
 
 <div className="godbolt-container">
   <iframe
