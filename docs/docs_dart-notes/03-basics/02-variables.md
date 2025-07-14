@@ -167,9 +167,13 @@ Dart does not have primitive data types as all types are interfaces inherited fr
 
 Only two number types exists in Dart, `int` and `double`. `int` can represents integers up to 64 bits due to JavaScript limitation. `double` follows the IEEE 754 standard and is also 64 bits.
 
+:::info
+These numbers are inherited from the `num` class, with operations and methods such as `abs()`, `floor()`, etc. Note that `num`, `double`, `int` cannot be extended.
+:::
+
 #### String Literals
 
-Only one String type exists in Dart, `String`, which holds a sequence of characters specify in UTF-16 code. Within String declarations `""`, `${ \\ expression }` can be declared, and any expression that evaluates to String can be placed within. A raw `String` can be created with declarator `r` infront of the string:
+Only one String type exists in Dart, `String`, which holds a sequence of characters specify in UTF-16 code. Within String declarations `""`, `${ \\ expression }` can be declared, and any expression that can evaluates to String can be placed within. A raw `String` can be created with declarator `r` infront of the string:
 
 <div className="godbolt-container">
   <iframe
@@ -181,3 +185,70 @@ Only one String type exists in Dart, `String`, which holds a sequence of charact
     loading="lazy"
   ></iframe>
 </div>
+
+##### String Concatenation
+
+As with many other languages, concatenation with `+` cause a new String instance to be created, writing to a `StringBuffer` will prevent this process, therefore its recommended, an example is shown bellow.
+
+Instead of:
+
+```dart
+var text = '';
+for(var i = 0; i < 100000; ++i) {
+  text += '$i, \n';
+}
+print(text);
+
+```
+
+Using `StringBuffer`:
+
+```dart
+final text = StringBuffer();
+for(var i = 0; i < 100000; ++i) {
+  text.writeln('$i, ');
+}
+
+print(text.toString());
+```
+
+#### Booleans
+
+Dart booleans are still interfaces that inherits `Object`, and only alow `true` and `false` assignment. `1` and `0` are not allowed.
+
+#### Enums
+
+Dart `enum` are non-inheritable classes that holds a fixed number of constant values. All `enum` extends from the `Enum` class automatically when declared. Differ from enums in other languages like C++, Dart enums can hold fields, methods and const constructors. An example of enum:
+
+```dart
+enum NetworkStatus {
+  connected(200),
+  failed(404);
+
+  final int code;
+  const NetworkStatus(this.code);
+}
+```
+
+<div className="godbolt-container">
+  <iframe
+    width="100%"
+    height="500"
+    src="https://godbolt.org/e#z:OYLghAFBqd5QCxAYwPYBMCmBRdBLAF1QCcAaPECAMzwBtMA7AQwFtMQByARg9KtQYEAysib0QXAEx8BBAKoBnTAAUAHpwAMvAFYTStJg1DomxAqSX1kBPAMqN0AYVS0AriwZ6HAGTwNMAHLuAEaYxCAAHKQADqgKhLYMzm4eerHxNgK%2B/kEsoeFRlpjWiUIEpgTJ7p5cFphWmQxlFdmBIWGRFuVmVam1Ct0Erbn5kQCUFqiuxMjsHIzuANQBmAQA7iQA1s0ErgqLAKQA7ABCBxoAgouLaAz%2B1pjoEJIaGhPnV4tUTHSPEAAsGn%2BYwOAGYzpcPtcaMxaIs/AQbhhMGCIZ9bgNlqsNsRtuVdgoIAQEHgFAA6NBYEHgj7HAAitMuADdUHh0IsWD8GBAxodTlDrosmaZFgMmATDqC6Vj1lsdnsyd9fuhUQLrtFiAiIGKCdS0YLRfi9pLpStZbj5eTbvcCI9VZcDRqtTq9nq1V8SIsIMLiEKxK5MPCGDKcXjxQrhW5MAoQfyHQbBU7BN7/Zg3fHrvT3fxfSnfZGA0GQ3KjeSC9HY/qE9cFGtCMgEF7y7zjlXqwbREpixbSxSBDbHiB3e2E0mCBADpJJABPaOHKeTk7lvtYMlEMqaow89OfEfV4LETBMTb23d7zuBs2hy2Kn70dBDjN7x2b8eTyQMVDzySL5eUzBrqgG5%2BMA26ns%2B%2B6Hse4EQVg3yuLQBCPmeEGLAeR4njST4GlmT64ShtJHAylwcBMtCcAArLwngcFopCoJwdIVKKUwzIGk6gjwpBIbRpETJsIAURo%2BicP8vAsCA/xHGSQIUVwACcXAKaCclcBotQ0XRDEcLwCggMJPFaBMcCwEgmCqMUrhEGQFAQKYwAKMohj1EICCoGsNFcWgLDRHQ4qJE5/i0K57mabw3m%2BfQ4QmGYoJHKCpARb8xABKwczhagPnJQA8lZIUeZovDmcUFzEA5nBFRZyBlPgNG8PwggiGI7BcP8MiCIoKjqLxpC6LUBhGCAMXmLQeDBHpkATKg0SNHpOn0UyYSalgE08qQxCuIIeBsAAKqgLirRMCisbMegDLVgUuW5BXcLwBCHuwwlrMQTDRJwPBkZR1GFfRnDYFVVmekxZiLKCZLSaCXrA%2BYiy4IQnocVwYx3YVxlIElUXkJQGMdMNcUJTQiFhHpEDBD9wR%2BKY07vbwFPMMQ07ZcE2jFDxXmZWwgjZQwtDUz1WDBK4wCOGItBzVxWCckY4j83gh4lItc10cVyBWXMXEIvUP2jQeVPOFgP33dtNOkItxDBHEmB0pgUvAKNg28RMVAGA5ABqeCYGs2XRIwJsNcIojiFI7XyEoag/X1%2BiGMYFT6GNh30TNiRzbwqBm8t0bwEd9Ss4k9gME4LjVF4BfDO04S1OkCQCL0NQxHE1cMGXeQdP0OclAIzQ9EXfR1A0pSDM3oz9IMtdnYPfhtC3FdHSdLWfRwVGkGFv0cIs0Og%2BDZKQxAcPWfOnHI9xqMTAgR5YOEa3kRwYmkBJFGSGS8kUf8EQaBEb8AGyv/Jy8/dpul9LH0dvxCQrwRIcFBN9HqADgFGQmGbeIdh/hAA"
+    title="Compiler Explorer"
+    sandbox="allow-scripts allow-same-origin"
+    loading="lazy"
+  ></iframe>
+</div>
+
+#### Records
+
+#### Functions
+
+#### Lists
+
+#### Sets
+
+#### Maps
+
+#### Symbols
