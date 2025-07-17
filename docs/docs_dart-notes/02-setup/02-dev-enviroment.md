@@ -23,7 +23,12 @@ Android devices can be use for running builds by enabling `USB debugging` from `
 
 Now when selecting VSCode/command-palette/`Flutter: Select Device`, the identifier of the phone will appear.
 
+:::warning
+
+If running `Flutter: Select Device` does not show your physical device, try revoking the USB Debugging and disconnect the device. Then reconnect the device and check remember device when verifying.
+
+:::
+
 ## Compiling and Running
 
 With everything setup and a `Flutter: new project` created, the code can now be compiled and ran with the device selected. Now simply clicking `F5` (VSCode's debug mode) will run the command of `flutter run --debug` and a counter app will be visible on your device. This is JIT compiled, and can be hot-reloaded. If you want a release build use the `--release` flag instead, the profile mode is a bit more complex, refer to [Flutter documentation](https://docs.flutter.dev/testing/build-modes#profile) for more detail.
-
