@@ -109,3 +109,8 @@ slug: practices
 - Use doc comments (`///`) and generate docs via `dart doc`.
 - Keep `README.md` updated with project setup and architecture.
 - Use `sentry_flutter` for error tracking.
+
+## Platform specific
+
+- ndk version mismatch
+  - Set `ndkVersion` in build.gradle.kts to the specific ndk version installed
