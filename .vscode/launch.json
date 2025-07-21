@@ -1,0 +1,138 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dev Server (Debug)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "sourceMaps": true,
+      "smartStep": true,
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "docusaurus*",
+        "BROWSER": "none" // Prevent auto-opening browser
+      },
+      "console": "integratedTerminal",
+      "preLaunchTask": "Install Dependencies",
+      "presentation": {
+        "group": "development",
+        "order": 1
+      }
+    },
+    {
+      "name": "Debug Production Build",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "serve"
+      ],
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "4000"
+      },
+      "sourceMaps": true,
+      "preLaunchTask": "Build Production",
+      "console": "integratedTerminal",
+      "presentation": {
+        "group": "production",
+        "order": 1
+      }
+    },
+    {
+      "name": "Debug Jest Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "test",
+        "--",
+        "--runInBand",
+        "--watchAll=false"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "timeout": 30000,
+      "env": {
+        "NODE_ENV": "test",
+        "CI": "false"
+      },
+      "presentation": {
+        "group": "test",
+        "order": 1
+      }
+    },
+    {
+      "name": "Debug Component Playground",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000/__playground",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${webRoot}/*",
+        "webpack:///src/*": "${webRoot}/src/*",
+        "webpack:///*": "*",
+        "webpack:///./~/*": "${webRoot}/node_modules/*"
+      },
+      "preLaunchTask": "Development Server",
+      "presentation": {
+        "group": "development",
+        "order": 2
+      }
+    },
+    {
+      "name": "Attach to Docusaurus",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "restart": true,
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "sourceMaps": true,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/app", // For Docker compatibility
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ],
+      "presentation": {
+        "group": "advanced",
+        "hidden": true
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Debug Experience",
+      "configurations": [
+        "Dev Server (Debug)",
+        "Debug Component Playground"
+      ],
+      "preLaunchTask": "Development Server",
+      "presentation": {
+        "group": "development",
+        "order": 0
+      }
+    },
+    {
+      "name": "Test & Debug",
+      "configurations": [
+        "Debug Jest Tests"
+      ],
+      "preLaunchTask": "Install Dependencies"
+    }
+  ]
+}

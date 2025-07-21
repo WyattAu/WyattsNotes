@@ -42,5 +42,9 @@
     "**/.next": true,
     "**/.out": true
   },
-  "cSpell.diagnosticLevel": "Hint"
+  "cSpell.diagnosticLevel": "Hint",
+  "markdownlint.config": {
+    "MD033": false
+  }
 }
+

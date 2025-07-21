@@ -2,125 +2,180 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Start Dev Server",
-      "type": "npm",
-      "script": "start",
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "focus": true,
-        "clear": true
-      },
-      "options": {
-        "statusbar": {
-          "label": "$(debug-start) Dev Server",
-          "priority": 0
-        }
-      },
-      "dependsOn": "Install Dependencies",
-      "isBackground": true
+      "label": "Project Setup",
+      "detail": "Dependency management tasks",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Install Dependencies",
+        "Update Dependencies"
+      ],
+      "group": "test",
+      "problemMatcher": []
     },
     {
       "label": "Install Dependencies",
-      "type": "npm",
-      "script": "install"
+      "type": "shell",
+      "command": "make install-deps",
+      "detail": "Install exact package versions"
+    },
+    {
+      "label": "Update Dependencies",
+      "type": "shell",
+      "command": "make update-deps",
+      "detail": "Update to latest compatible versions"
+    },
+    {
+      "label": "Development Server",
+      "type": "shell",
+      "command": "make dev-server",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true
+      },
+      "isBackground": true,
+      "options": {
+        "statusbar": {
+          "label": "$(rocket) Dev Server",
+          "priority": 1
+        }
+      }
+    },
+    {
+      "label": "Build System",
+      "detail": "Production build workflows",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Build Production",
+        "Preview Build",
+        "Deploy Docs"
+      ],
+      "group": "build",
+      "problemMatcher": []
     },
     {
       "label": "Build Production",
-      "type": "npm",
-      "script": "build",
-      "group": "build"
+      "type": "shell",
+      "command": "make build",
+      "problemMatcher": [
+        "$tsc",
+        "$eslint-stylish"
+      ]
     },
     {
-      "label": "Preview Production Build",
-      "type": "npm",
-      "script": "serve",
+      "label": "Preview Build",
+      "type": "shell",
+      "command": "make preview",
       "dependsOn": "Build Production"
     },
     {
-      "label": "Deploy Documentation",
-      "type": "npm",
-      "script": "deploy",
+      "label": "Deploy Docs",
+      "type": "shell",
+      "command": "make deploy",
       "dependsOn": "Build Production"
+    },
+    {
+      "label": "Code Quality",
+      "detail": "Code validation tasks",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Type Check",
+        "Lint Project",
+        "Run Tests"
+      ],
+      "group": "test",
+      "problemMatcher": []
     },
     {
       "label": "Type Check",
-      "type": "npm",
-      "script": "typecheck",
-      "problemMatcher": "$tsc",
-      "presentation": {
-        "reveal": "silent"
-      }
+      "type": "shell",
+      "command": "make typecheck",
+      "problemMatcher": "$tsc"
     },
     {
       "label": "Type Check (Watch)",
-      "type": "npm",
-      "script": "typecheck",
-      "args": [
-        "--watch"
-      ],
+      "type": "shell",
+      "command": "make typecheck-watch",
       "problemMatcher": "$tsc-watch",
-      "isBackground": true,
-      "presentation": {
-        "reveal": "never"
-      }
+      "isBackground": true
+    },
+    {
+      "label": "Lint Project",
+      "type": "shell",
+      "command": "make lint",
+      "problemMatcher": "$eslint-stylish"
+    },
+    {
+      "label": "Format Code",
+      "type": "shell",
+      "command": "make format"
+    },
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "make test",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Complete Validation",
+      "type": "shell",
+      "command": "make validate",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Format Code",
+        "Lint Project",
+        "Type Check"
+      ]
+    },
+    {
+      "label": "Security Audit",
+      "type": "shell",
+      "command": "make security"
     },
     {
       "label": "Clear Cache",
-      "type": "npm",
-      "script": "clear"
+      "type": "shell",
+      "command": "make clean"
     },
     {
-      "label": "Extract Translations",
-      "type": "npm",
-      "script": "write-translations"
-    },
-    {
-      "label": "Add Heading IDs",
-      "type": "npm",
-      "script": "write-heading-ids"
+      "label": "CI Pipeline",
+      "type": "shell",
+      "command": "make ci",
+      "group": "build"
     },
     {
       "label": "Swizzle Component",
-      "type": "npm",
-      "script": "swizzle",
-      "args": [
-        "${input:swizzleComponent}"
-      ]
+      "type": "shell",
+      "command": "make swizzle COMPONENT=${input:swizzleComponent}"
     },
     {
-      "label": "Format Files (Prettier)",
-      "type": "npm",
-      "script": "format",
-      "problemMatcher": "$eslint-stylish",
-      "presentation": {
-        "reveal": "silent"
-      }
-    },
-    {
-      "label": "Lint Project (ESLint)",
-      "type": "npm",
-      "script": "lint",
-      "problemMatcher": "$eslint-stylish",
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated"
-      }
-    },
-    {
-      "label": "Format & Lint Project",
+      "label": "Documentation Tasks",
+      "detail": "Documentation management",
       "dependsOrder": "sequence",
       "dependsOn": [
-        "Format Files (Prettier)",
-        "Lint Project (ESLint)"
-      ]
+        "Extract Translations",
+        "Add Heading IDs"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Extract Translations",
+      "type": "shell",
+      "command": "make extract-translations"
+    },
+    {
+      "label": "Add Heading IDs",
+      "type": "shell",
+      "command": "make add-heading-ids"
     }
   ],
   "inputs": [
     {
       "id": "swizzleComponent",
       "type": "promptString",
-      "description": "Component to swizzle (example: @docusaurus/theme-classic Footer):",
+      "description": "Enter component name to swizzle (example: @docusaurus/theme-classic Footer):",
       "default": "@docusaurus/theme-classic"
     }
   ]
