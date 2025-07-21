@@ -8,8 +8,7 @@
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
-    "unused-imports",
-    "prettier"
+    "unused-imports"
   ],
   "extends": [
     "eslint:recommended",
@@ -21,7 +20,30 @@
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": "error",
+    // Prettier configuration moved here
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 100,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "jsxSingleQuote": false,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "bracketSameLine": false,
+        "arrowParens": "always",
+        "proseWrap": "always",
+        "htmlWhitespaceSensitivity": "css",
+        "endOfLine": "auto",
+        "quoteProps": "as-needed",
+        "plugins": [
+          "prettier-plugin-organize-imports"
+        ]
+      }
+    ],
+    // Existing ESLint rules
     "react/prop-types": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
@@ -82,6 +104,7 @@
     ]
   },
   "overrides": [
+    // TypeScript overrides
     {
       "files": [
         "*.ts",
@@ -96,6 +119,7 @@
         ]
       }
     },
+    // Test files overrides
     {
       "files": [
         "*.test.*",
@@ -103,9 +127,18 @@
       ],
       "rules": {
         "@typescript-eslint/no-non-null-assertion": "off",
-        "@typescript-eslint/unbound-method": "off"
+        "@typescript-eslint/unbound-method": "off",
+        // Prettier overrides for tests
+        "prettier/prettier": [
+          "error",
+          {
+            "printWidth": 100,
+            "proseWrap": "preserve"
+          }
+        ]
       }
     },
+    // JavaScript/CJS files
     {
       "files": [
         "*.js",
@@ -115,6 +148,7 @@
         "@typescript-eslint/no-var-requires": "off"
       }
     },
+    // Astro files
     {
       "files": [
         "*.astro"
@@ -124,6 +158,64 @@
         "parser": "@typescript-eslint/parser",
         "extraFileExtensions": [
           ".astro"
+        ]
+      },
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "parser": "astro",
+            "printWidth": 100
+          }
+        ]
+      }
+    },
+    // Markdown/MDX files
+    {
+      "files": [
+        "*.md",
+        "*.mdx"
+      ],
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "proseWrap": "preserve",
+            "printWidth": 120
+          }
+        ]
+      }
+    },
+    // YAML files
+    {
+      "files": [
+        "*.yaml",
+        "*.yml"
+      ],
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": false,
+            "tabWidth": 2
+          }
+        ]
+      }
+    },
+    // JSON files
+    {
+      "files": [
+        "*.json",
+        "*.json5",
+        "*.jsonc"
+      ],
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "tabWidth": 2,
+            "parser": "json-stringify"
+          }
         ]
       }
     }
