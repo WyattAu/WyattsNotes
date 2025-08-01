@@ -7,4 +7,3 @@ categories:
   - truenas
 slug: setup-traefik
 ---
-

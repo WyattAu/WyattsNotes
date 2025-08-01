@@ -39,4 +39,3 @@ void runApp(Widget app) {
 - The event loop will now initialize, each loop will update render objects and draw schedule frames.
 
 :::
-

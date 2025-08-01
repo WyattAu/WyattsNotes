@@ -20,4 +20,3 @@ This resource is created as a aggregation of best practices in Java. If you are 
     loading="lazy"
   ></iframe>
 </div>
-

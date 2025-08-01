@@ -41,7 +41,6 @@
   - Name files by topic, not section titles (e.g., `rate-limiting.md` vs `api-rate-limits.md`)
   -
 - **Custom Code** (`src/`):
-
   - Separate components by:
 
     ```
