@@ -1,10 +1,10 @@
 /* Font Imports */
-@import 'katex/dist/katex.min.css';
-@import '~@fontsource/jetbrains-mono/400.css';
-@import '~@fontsource/jetbrains-mono/700.css';
-@import '~@fontsource/inter/400.css';
-@import '~@fontsource/inter/700.css';
-@import '~@fontsource/merriweather/400-italic.css';
+@import "katex/dist/katex.min.css";
+@import "~@fontsource/jetbrains-mono/400.css";
+@import "~@fontsource/jetbrains-mono/700.css";
+@import "~@fontsource/inter/400.css";
+@import "~@fontsource/inter/700.css";
+@import "~@fontsource/merriweather/400-italic.css";
 
 /* Base Color Variables */
 :root {
@@ -27,9 +27,9 @@
   --ifm-color-secondary-lightest: #bfdbfe;
 
   /* Typography */
-  --ifm-font-family-base: 'Inter', system-ui, sans-serif;
-  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
-  --ifm-font-family-quote: 'Merriweather', serif;
+  --ifm-font-family-base: "Inter", system-ui, sans-serif;
+  --ifm-font-family-monospace: "JetBrains Mono", monospace;
+  --ifm-font-family-quote: "Merriweather", serif;
 
   /* Additional Variables */
   --ifm-code-font-size: 95%;
@@ -40,7 +40,7 @@
 }
 
 /* Dark Mode Overrides */
-[data-theme='dark'] {
+[data-theme="dark"] {
   /* Adjusted Orange Primary for better contrast */
   --ifm-color-primary: #ff8c4a;
   --ifm-color-primary-dark: #ff7c45;
@@ -105,7 +105,7 @@ blockquote {
   border-radius: 0 4px 4px 0;
 }
 
-[data-theme='dark'] blockquote {
+[data-theme="dark"] blockquote {
   color: var(--ifm-color-secondary-lightest);
   background-color: var(--ifm-color-secondary-darkest);
 }
@@ -175,13 +175,17 @@ a:hover {
 
 /* Hero Section Styling */
 .hero {
-  background-color: var(--ifm-color-primary-lightest); /* Light orange in light mode */
+  background-color: var(
+    --ifm-color-primary-lightest
+  ); /* Light orange in light mode */
   padding: 4rem 0;
   transition: background-color var(--ifm-transition-fast);
 }
 
-[data-theme='dark'] .hero {
-  background-color: var(--ifm-color-primary-darkest); /* Dark orange in dark mode */
+[data-theme="dark"] .hero {
+  background-color: var(
+    --ifm-color-primary-darkest
+  ); /* Dark orange in dark mode */
 }
 
 /* Hero Title */
@@ -191,7 +195,7 @@ a:hover {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-[data-theme='dark'] .hero__title {
+[data-theme="dark"] .hero__title {
   color: #fff !important; /* White in dark mode */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -202,7 +206,7 @@ a:hover {
   font-weight: 500;
 }
 
-[data-theme='dark'] .hero__subtitle {
+[data-theme="dark"] .hero__subtitle {
   color: #fff !important;
 }
 
@@ -212,7 +216,7 @@ a:hover {
   --ifm-background-surface-color: #f8f9fa;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-background-color: #1a1a1a;
   --ifm-background-surface-color: #2d2d2d;
 }
@@ -225,7 +229,7 @@ a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-[data-theme='dark'] .markdown {
+[data-theme="dark"] .markdown {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -235,7 +239,7 @@ a:hover {
   --ifm-table-header-background: var(--ifm-color-emphasis-200);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-table-border-color: var(--ifm-color-emphasis-400);
   --ifm-table-stripe-background: var(--ifm-color-emphasis-200);
   --ifm-table-header-background: var(--ifm-color-emphasis-450);
