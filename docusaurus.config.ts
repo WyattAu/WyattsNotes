@@ -16,7 +16,7 @@ const compilationConfig = {
 
 const prjMetadataConfig = {
   title: "Wyatt's Notes",
-  tagline: 'Quality over quantity',
+  tagline: 'Discard all that is unnecessary. Beauty is born of clarity.',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
   url: 'https://wyattsnotes.wyattau.com',
   baseUrl: '/',
