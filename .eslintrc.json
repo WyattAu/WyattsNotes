@@ -6,10 +6,7 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "unused-imports"
-  ],
+  "plugins": ["@typescript-eslint", "unused-imports"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -38,9 +35,7 @@
         "htmlWhitespaceSensitivity": "css",
         "endOfLine": "auto",
         "quoteProps": "as-needed",
-        "plugins": [
-          "prettier-plugin-organize-imports"
-        ]
+        "plugins": ["prettier-plugin-organize-imports"]
       }
     ],
     // Existing ESLint rules
@@ -67,10 +62,7 @@
     ],
     "prefer-const": "error",
     "no-duplicate-imports": "error",
-    "eqeqeq": [
-      "error",
-      "smart"
-    ],
+    "eqeqeq": ["error", "smart"],
     "curly": "error",
     "padding-line-between-statements": [
       "error",
@@ -81,50 +73,30 @@
       },
       {
         "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
+        "prev": ["const", "let", "var"],
         "next": "*"
       },
       {
         "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
-          "const",
-          "let",
-          "var"
-        ]
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
       }
     ]
   },
   "overrides": [
     // TypeScript overrides
     {
-      "files": [
-        "*.ts",
-        "*.tsx"
-      ],
+      "files": ["*.ts", "*.tsx"],
       "extends": [
         "plugin:@typescript-eslint/recommended-requiring-type-checking"
       ],
       "parserOptions": {
-        "project": [
-          "./tsconfig.json"
-        ]
+        "project": ["./tsconfig.json"]
       }
     },
     // Test files overrides
     {
-      "files": [
-        "*.test.*",
-        "**/__tests__/**"
-      ],
+      "files": ["*.test.*", "**/__tests__/**"],
       "rules": {
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/unbound-method": "off",
@@ -140,25 +112,18 @@
     },
     // JavaScript/CJS files
     {
-      "files": [
-        "*.js",
-        "*.cjs"
-      ],
+      "files": ["*.js", "*.cjs"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"
       }
     },
     // Astro files
     {
-      "files": [
-        "*.astro"
-      ],
+      "files": ["*.astro"],
       "parser": "astro-eslint-parser",
       "parserOptions": {
         "parser": "@typescript-eslint/parser",
-        "extraFileExtensions": [
-          ".astro"
-        ]
+        "extraFileExtensions": [".astro"]
       },
       "rules": {
         "prettier/prettier": [
@@ -172,10 +137,7 @@
     },
     // Markdown/MDX files
     {
-      "files": [
-        "*.md",
-        "*.mdx"
-      ],
+      "files": ["*.md", "*.mdx"],
       "rules": {
         "prettier/prettier": [
           "error",
@@ -188,10 +150,7 @@
     },
     // YAML files
     {
-      "files": [
-        "*.yaml",
-        "*.yml"
-      ],
+      "files": ["*.yaml", "*.yml"],
       "rules": {
         "prettier/prettier": [
           "error",
@@ -204,11 +163,7 @@
     },
     // JSON files
     {
-      "files": [
-        "*.json",
-        "*.json5",
-        "*.jsonc"
-      ],
+      "files": ["*.json", "*.json5", "*.jsonc"],
       "rules": {
         "prettier/prettier": [
           "error",

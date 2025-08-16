@@ -5,10 +5,7 @@
       "label": "Project Setup",
       "detail": "Dependency management tasks",
       "dependsOrder": "sequence",
-      "dependsOn": [
-        "Install Dependencies",
-        "Update Dependencies"
-      ],
+      "dependsOn": ["Install Dependencies", "Update Dependencies"],
       "group": "test",
       "problemMatcher": []
     },
@@ -45,11 +42,7 @@
       "label": "Build System",
       "detail": "Production build workflows",
       "dependsOrder": "sequence",
-      "dependsOn": [
-        "Build Production",
-        "Preview Build",
-        "Deploy Docs"
-      ],
+      "dependsOn": ["Build Production", "Preview Build", "Deploy Docs"],
       "group": "build",
       "problemMatcher": []
     },
@@ -57,10 +50,7 @@
       "label": "Build Production",
       "type": "shell",
       "command": "make build",
-      "problemMatcher": [
-        "$tsc",
-        "$eslint-stylish"
-      ]
+      "problemMatcher": ["$tsc", "$eslint-stylish"]
     },
     {
       "label": "Preview Build",
@@ -78,11 +68,7 @@
       "label": "Code Quality",
       "detail": "Code validation tasks",
       "dependsOrder": "parallel",
-      "dependsOn": [
-        "Type Check",
-        "Lint Project",
-        "Run Tests"
-      ],
+      "dependsOn": ["Type Check", "Lint Project", "Run Tests"],
       "group": "test",
       "problemMatcher": []
     },
@@ -122,11 +108,7 @@
       "type": "shell",
       "command": "make validate",
       "dependsOrder": "parallel",
-      "dependsOn": [
-        "Format Code",
-        "Lint Project",
-        "Type Check"
-      ]
+      "dependsOn": ["Format Code", "Lint Project", "Type Check"]
     },
     {
       "label": "Security Audit",
@@ -153,10 +135,7 @@
       "label": "Documentation Tasks",
       "detail": "Documentation management",
       "dependsOrder": "sequence",
-      "dependsOn": [
-        "Extract Translations",
-        "Add Heading IDs"
-      ],
+      "dependsOn": ["Extract Translations", "Add Heading IDs"],
       "group": "build",
       "problemMatcher": []
     },
