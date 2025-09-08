@@ -11,7 +11,7 @@ slug: crafting-ghee
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Target
+## Objective
 
 1. Deep nuttiness without bitterness (controlled Maillard reactions, not pyrolysis).
 2. Maximize conjugated linoleic acid (CLA) and butyric acid while minimizing acrylamide/advanced glycation end products (AGEs).
