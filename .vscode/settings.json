@@ -14,14 +14,19 @@
   },
   "editor.tabSize": 2,
   "files.autoSave": "afterDelay",
-  "eslint.validate": ["javascript", "typescript", "astro", "vue", "html"],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "astro",
+    "vue",
+    "html"
+  ],
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
   "eslint.run": "onSave",
   "eslint.quiet": true,
   "prettier.enable": true,
-  "prettier.configPath": ".prettierrc.json",
   "prettier.ignorePath": ".prettierignore",
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

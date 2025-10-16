@@ -6,8 +6,13 @@
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "start"],
-      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": [
+        "run",
+        "start"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "sourceMaps": true,
       "smartStep": true,
       "internalConsoleOptions": "neverOpen",
@@ -28,7 +33,10 @@
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "serve"],
+      "runtimeArgs": [
+        "run",
+        "serve"
+      ],
       "env": {
         "NODE_ENV": "production",
         "PORT": "4000"
@@ -46,7 +54,13 @@
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "test", "--", "--runInBand", "--watchAll=false"],
+      "runtimeArgs": [
+        "run",
+        "test",
+        "--",
+        "--runInBand",
+        "--watchAll=false"
+      ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "timeout": 30000,
@@ -84,7 +98,9 @@
       "request": "attach",
       "port": 9229,
       "restart": true,
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "sourceMaps": true,
       "localRoot": "${workspaceFolder}",
       "remoteRoot": "/app", // For Docker compatibility
@@ -101,7 +117,10 @@
   "compounds": [
     {
       "name": "Full Debug Experience",
-      "configurations": ["Dev Server (Debug)", "Debug Component Playground"],
+      "configurations": [
+        "Dev Server (Debug)",
+        "Debug Component Playground"
+      ],
       "preLaunchTask": "Development Server",
       "presentation": {
         "group": "development",
@@ -110,7 +129,9 @@
     },
     {
       "name": "Test & Debug",
-      "configurations": ["Debug Jest Tests"],
+      "configurations": [
+        "Debug Jest Tests"
+      ],
       "preLaunchTask": "Install Dependencies"
     }
   ]
