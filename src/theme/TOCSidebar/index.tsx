@@ -1,25 +1,30 @@
-// src/theme/TOCSidebar/index.tsx
-import React, { FC, useState, useEffect } from 'react';
-import TOCHeading from '@theme/TOCHeading';
-
 import clsx from 'clsx';
-import useTOCHighlight from '@theme/hooks/useTOCHighlight';
+import React, { useEffect, useState } from 'react';
+
+import styles from './TOCSidebar.module.css';
 
 // Import TOC interface
-import type { TOCItem } from '@docusaurus/types';
+
+interface TOCItem {
+  id: string;
+  level: number;
+  title: string;
+}
 
 interface TOCSidebarProps {
   toc: TOCItem[];
   onlyShowBottomWhenLarge?: boolean;
 }
 
-const TOCSidebar: FC<TOCSidebarProps> = ({ toc, onlyShowBottomWhenLarge = false }) => {
+const TOCSidebar: React.FC<TOCSidebarProps> = ({ toc, onlyShowBottomWhenLarge = false }) => {
+  void onlyShowBottomWhenLarge;
   const [isVisible, setVisibility] = useState<boolean>(true);
 
   useEffect(() => {
     const storedVisibility = localStorage.getItem('tocVisible');
+
     if (storedVisibility !== null) {
-      setVisibility(JSON.parse(storedVisibility));
+      setVisibility(JSON.parse(storedVisibility) as boolean);
     }
   }, []);
 
@@ -27,7 +32,7 @@ const TOCSidebar: FC<TOCSidebarProps> = ({ toc, onlyShowBottomWhenLarge = false 
     localStorage.setItem('tocVisible', JSON.stringify(isVisible));
   }, [isVisible]);
 
-  useTOCHighlight(isVisible); // Highlight active heading only if visible
+  // useTOCHighlight(isVisible); // Highlight active heading only if visible
 
   return (
     <div className={clsx('col col--3 col--offset-9')}>
@@ -44,13 +49,9 @@ const TOCSidebar: FC<TOCSidebarProps> = ({ toc, onlyShowBottomWhenLarge = false 
           {isVisible && toc.length > 0 && (
             <ul className="theme-doc-toc">
               {toc.map((heading) => (
-                <TOCHeading
-                  key={heading.id}
-                  id={heading.id}
-                  level={heading.level}
-                >
-                  {heading.title}
-                </TOCHeading>
+                <li key={heading.id}>
+                  <a href={`#${heading.id}`}>{heading.title}</a>
+                </li>
               ))}
             </ul>
           )}

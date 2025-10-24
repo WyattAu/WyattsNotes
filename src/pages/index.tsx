@@ -4,8 +4,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
-import type { ReactNode } from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import styles from './index.module.css';
 
@@ -141,7 +140,7 @@ function HomepageHeader() {
   );
 }
 
-export default function Home(): ReactNode {
+export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
 
   return (

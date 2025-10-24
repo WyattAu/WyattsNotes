@@ -2,9 +2,8 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "jsx": "react",
-    "types": ["docusaurus/module"],
     "baseUrl": "."
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "*.ts", "*.tsx", "sidebars/**/*.ts"],
   "exclude": [".docusaurus", "build"]
 }

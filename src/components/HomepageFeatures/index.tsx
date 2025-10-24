@@ -1,18 +1,21 @@
 import Heading from '@theme/Heading';
 import clsx from 'clsx';
-import type { ReactNode } from 'react';
+import React from 'react';
 import styles from './styles.module.css';
+
+import WyattsNotesLogoLeft from '@site/static/img/WyattsNotes/WyattsNotesLogoLeft.svg';
+import WyattsNotesLogoMiddle from '@site/static/img/WyattsNotes/WyattsNotesLogoMiddle.svg';
 
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
+  description: React.ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Free and Open Source',
-    Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoLeft.svg').default,
+    Svg: WyattsNotesLogoLeft,
     description: (
       <>
         This site will never charge any fees for information and all information is licensed under{' '}
@@ -25,7 +28,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'No Overhead',
-    Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoMiddle.svg').default,
+    Svg: WyattsNotesLogoMiddle,
     description: (
       <>
         Notes are written following the syllabus with derivations when needed. No interesting facts,
@@ -35,7 +38,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Feel Free to Correct Me',
-    Svg: require('@site/static/img/WyattsNotes/WyattsNotesLogoLeft.svg').default,
+    Svg: WyattsNotesLogoLeft,
     description: (
       <>
         Since these notes are created either during my time at the course or by request, there maybe
@@ -59,7 +62,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures(): React.ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
