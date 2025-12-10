@@ -376,3 +376,14 @@ a:hover {
   height: 100%;
   overflow-y: auto;
 }
+
+/* Mermaid Diagram Hover Zoom */
+.mermaid svg {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.mermaid svg:hover {
+  transform: scale(1.5);
+  transform-origin: center;
+}
