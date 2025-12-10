@@ -15,7 +15,6 @@ slug: wrap
 1. **Question (C.1 & D.1 - HL Only):** A small satellite of mass _m_ is in a circular orbit of radius _R_ around a planet of mass _M_ ($M \gg m$). A slight external impulse causes it to oscillate slightly in the radial direction around its stable circular path. By considering the effective potential energy of the system (gravitational + rotational kinetic), show that for small radial displacements _x_ from the stable orbit ($r = R+x$), the satellite undergoes simple harmonic motion. Determine the period of these small radial oscillations.
 <details>
 <summary>Answer</summary>
-<p>
 
 - **Strategy:** This is a very advanced problem that connects SHM with orbital mechanics. We need to find the total effective potential energy, find its minimum (the stable orbit), and show that the second derivative of the potential energy function (which relates to the restoring force) is positive, indicating a stable equilibrium. The "spring constant" of this effective potential well will give us the period.
 - **1. Effective Potential Energy ($U_{\text{eff}}$):**
@@ -41,11 +40,11 @@ slug: wrap
   - Notice that the orbital angular speed is $\omega_{\text{orb}} = \frac{v}{R} = \frac{\sqrt{GM/R}}{R} = \sqrt{\frac{GM}{R^3}}$.
   - The angular frequencies are identical. Therefore, the period of small radial oscillations is:
   - $T_{\text{osc}} = \frac{2\pi}{\omega_{\text{osc}}} = 2\pi\sqrt{\frac{R^3}{GM}}$. This is exactly the same as the orbital period (Kepler's Third Law).
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> The concept of effective potential energy in orbital mechanics, using calculus to find stable equilibrium points ($U'(r)=0$) and the effective spring constant ($k=U''(r)$), and the fundamental connection between the restoring force and the conditions for SHM.
-  </p>
-  </details>
+
+<p>
+<b>If you get this wrong, you should focus on:</b> The concept of effective potential energy in orbital mechanics, using calculus to find stable equilibrium points ($U'(r)=0$) and the effective spring constant ($k=U''(r)$), and the fundamental connection between the restoring force and the conditions for SHM.
+</p>
+</details>
 
 2. **Question (C.3 & C.4):** Two coherent point sources, S1 and S2, emit sound waves of wavelength 0.50 m in phase. They are separated by a distance of 1.2 m. A microphone is moved along a line parallel to the line connecting S1 and S2, at a large distance D = 10 m away. At the same time, a reflective wall is placed 0.75 m behind the sources, creating standing waves between the sources and the wall.
 a) Calculate the number of destructive interference nodes located between S1 and S2 on the line connecting them.
@@ -53,7 +52,6 @@ b) Calculate the separation between the central maximum and the first-order maxi
 c) Now consider the wall. Will the point midway between S1 and S2 on the connecting line be a displacement node or antinode for the standing wave? Justify.
 <details>
 <summary>Answer</summary>
-<p>
 
 - **Strategy:** Part (a) is a 1D interference problem. Part (b) is a standard Young's double-slit problem. Part (c) combines standing wave theory with path difference.
 - **a) Nodes between sources:**
@@ -78,11 +76,11 @@ c) Now consider the wall. Will the point midway between S1 and S2 on the connect
   - Locations from the wall: 0 m (at the wall), 0.25 m, 0.50 m, 0.75 m.
   - The sources are located 0.75 m from the wall. The point midway between S1 and S2 is also at a distance of 0.75 m from the wall.
   - Since this location is an integer multiple of $\lambda/2$ from the fixed-end reflector, it must be a **displacement node**.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> Distinguishing between interference conditions in the near-field (between sources) and far-field (screen), the small angle approximation, and the conditions for nodes/antinodes in standing waves relative to a fixed boundary.
-  </p>
-  </details>
+
+<p>
+<b>If you get this wrong, you should focus on:</b> Distinguishing between interference conditions in the near-field (between sources) and far-field (screen), the small angle approximation, and the conditions for nodes/antinodes in standing waves relative to a fixed boundary.
+</p>
+</details>
 
 3. **Question (HL Only):** A single slit of width _b_ = 1.2 μm is illuminated by light of wavelength 600 nm. The diffraction pattern is projected onto a screen. Immediately behind the first slit, a double slit with separation _d_ = 3.6 μm is placed.
 a) At what angle is the third minimum of the single-slit diffraction pattern located?
@@ -90,7 +88,6 @@ b) How many bright interference fringes from the double slit appear within the c
 c) If the amplitude of the wave from the center of the single slit is $A_0$, what is the approximate intensity of the first-order double-slit fringe relative to the central double-slit fringe?
 <details>
 <summary>Answer</summary>
-<p>
 
 - **Strategy:** This problem overlays a double-slit interference pattern on top of a single-slit diffraction envelope.
 - **a) Third Single-Slit Minimum:**
@@ -118,16 +115,15 @@ c) If the amplitude of the wave from the center of the single slit is $A_0$, wha
   - $\beta = \frac{2\pi b}{\lambda} \sin\theta = \frac{2\pi b}{\lambda} (\frac{\lambda}{d}) = \frac{2\pi b}{d} = \frac{2\pi (1.2)}{3.6} = \frac{2\pi}{3}$.
   - The intensity reduction is $\left(\frac{\sin(\beta/2)}{\beta/2}\right)^2 = \left(\frac{\sin(\pi/3)}{\pi/3}\right)^2 = \left(\frac{\sqrt{3}/2}{\pi/3}\right)^2 = \left(\frac{3\sqrt{3}}{2\pi}\right)^2 \approx (0.827)^2 \approx 0.684$.
   - The intensity of the first-order fringe is approximately **68.4%** of the central maximum's intensity.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> The concept of a diffraction envelope modulating an interference pattern, correctly applying the conditions for minima (single-slit) and maxima (double-slit), and understanding how to find the number of fringes within the central envelope. The intensity calculation is a very high-level synthesis step.
-  </p>
-  </details>
+
+<p>
+<b>If you get this wrong, you should focus on:</b> The concept of a diffraction envelope modulating an interference pattern, correctly applying the conditions for minima (single-slit) and maxima (double-slit), and understanding how to find the number of fringes within the central envelope. The intensity calculation is a very high-level synthesis step.
+</p>
+</details>
 
 4. **Question (C.5 & B.1 - HL Only):** A distant star is traveling directly away from an observer. The star's spectrum is analyzed. A spectral line for hydrogen, which has a laboratory (rest) wavelength of 486.1 nm, is measured to be 487.3 nm. The star is known to have a radius of $7.0 \times 10^8$ m and a peak emission wavelength of 500 nm. The observer is on a planet that receives a radiation intensity of $1.0 \times 10^{-8}$ W/m² from this star. Calculate the distance to the star.
 <details>
 <summary>Answer</summary>
-<p>
 
 - **Strategy:** This is a multi-step astrophysics problem. (1) Use the Doppler shift to find the star's recessional velocity. (2) Use Wien's Law to find the star's surface temperature. (3) Use the Stefan-Boltzmann law to find the star's total luminosity (power output). (4) Use the inverse square law for intensity to find the distance.
 - **1. Recessional Velocity (v):**
@@ -144,11 +140,11 @@ c) If the amplitude of the wave from the center of the single slit is $A_0$, wha
   - Rearrange to solve for d: $d = \sqrt{\frac{L}{4\pi b}}$.
   - $d = \sqrt{\frac{3.95 \times 10^{26}}{4\pi (1.0 \times 10^{-8})}} = \sqrt{3.14 \times 10^{33}} = 1.77 \times 10^{16}$ m.
   - This is approximately 1.87 light-years.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> Synthesizing the four key equations of observational astrophysics: Doppler shift, Wien's Law, Stefan-Boltzmann Law, and the inverse-square law for brightness. Each step provides a piece of information needed for the next.
-  </p>
-  </details>
+
+<p>
+<b>If you get this wrong, you should focus on:</b> Synthesizing the four key equations of observational astrophysics: Doppler shift, Wien's Law, Stefan-Boltzmann Law, and the inverse-square law for brightness. Each step provides a piece of information needed for the next.
+</p>
+</details>
 
 </p>
 </details>
