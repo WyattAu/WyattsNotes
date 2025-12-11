@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## Abstract
 
-This resource is created as a aggregation of best practices in C++. Code examples are written in godbolt and embedded to this website, this allow clarity and a intractable environment. An example as follows.
+This resource is created as a tutorial and aggregation of best practices in C++. Code examples are written in godbolt and embedded to this website, this allow clarity and a intractable environment. An example as follows.
 
 <div className="godbolt-container">
   <iframe

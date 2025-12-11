@@ -1,6 +1,6 @@
 ---
 id: intro
-title: intro
+title: Intro
 description: Test description
 slug: /intro
 sidebar_position: 1
