@@ -11,7 +11,7 @@ slug: installing-compiler
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-To develop high-performance C++23 systems, a strictly compliant toolchain is required. This module details the installation of the **LLVM/Clang** and **GCC** toolchains.
+To develop in C++, a strictly compliant toolchain is required. the following details the installation of the **LLVM/Clang** and **GCC** toolchains.
 
 The reference environment for this course is **Clang 16+** and **CMake 3.25+**.
 
