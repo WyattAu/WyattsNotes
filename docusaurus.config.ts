@@ -232,6 +232,16 @@ const config: Config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ProbabilisticML-notes',
+        path: 'docs/docs_ProbabilisticML-notes',
+        routeBasePath: '/docs/docs_ProbabilisticML-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_ProbabilisticML-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
       'docusaurus-lunr-search', // Wont work in dev mode, need to build
       {
         indexDocs: true,
