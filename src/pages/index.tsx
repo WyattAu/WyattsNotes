@@ -55,37 +55,47 @@ function HomepageHeader() {
 
   const navItems: NavigationItem[] = [
     {
-      type: 'group',
-      label: 'Year 12-13 Syllabus',
+      type: "group",
+      label: "Year 12-13 Syllabus",
       items: [
-        { label: 'IB Notes', to: '/docs/docs_IB-notes/intro' },
-        { label: 'A Level Notes', to: '/docs/docs_ALevel-notes/intro' },
-        { label: 'DSE Notes', to: '/docs/docs_DSE-notes/intro' },
+        { label: "IB Notes", to: "/docs/docs_IB-notes/intro" },
+        { label: "A Level Notes", to: "/docs/docs_ALevel-notes/intro" },
+        { label: "DSE Notes", to: "/docs/docs_DSE-notes/intro" },
       ],
     },
     {
-      type: 'group',
-      label: 'Development Tools',
+      type: "group",
+      label: "Development Tools",
       items: [
-        { label: 'C++ Notes', to: '/docs/docs_cpp-notes/intro' },
-        { label: 'Dart Notes', to: '/docs/docs_dart-notes/intro' },
-        { label: 'Java Notes', to: '/docs/docs_java-notes/intro' },
-        { label: 'Python Notes', to: '/docs/docs_python-notes/intro' },
-        { label: 'Git Notes', to: '/docs/docs_git-notes/intro' },
+        { label: "C++ Notes", to: "/docs/docs_cpp-notes/intro" },
+        { label: "Dart Notes", to: "/docs/docs_dart-notes/intro" },
+        { label: "Java Notes", to: "/docs/docs_java-notes/intro" },
+        { label: "Python Notes", to: "/docs/docs_python-notes/intro" },
+        { label: "Git Notes", to: "/docs/docs_git-notes/intro" },
       ],
     },
     {
-      type: 'group',
-      label: 'Operating System',
-      items: [{ label: 'TrueNAS', to: '/docs/docs_truenas-notes/intro' }],
+      type: "group",
+      label: "Operating System",
+      items: [{ label: "TrueNAS", to: "/docs/docs_truenas-notes/intro" }],
     },
     {
-      type: 'group',
-      label: 'Others',
+      type: "group",
+      label: "Machine Learning",
       items: [
-        { label: 'Licensing Notes', to: '/docs/docs_licensing-notes/intro' },
-        { label: 'Tuning', to: '/docs/docs_tuning-notes/intro' },
-        { label: 'Contributing Help', to: '/docs/docs_general-notes/intro' },
+        {
+          label: "Probabilistic ML",
+          to: "/docs/docs_ProbabilisticML-notes/intro",
+        },
+      ],
+    },
+    {
+      type: "group",
+      label: "Others",
+      items: [
+        { label: "Licensing Notes", to: "/docs/docs_licensing-notes/intro" },
+        { label: "Tuning", to: "/docs/docs_tuning-notes/intro" },
+        { label: "Contributing Help", to: "/docs/docs_general-notes/intro" },
       ],
     },
   ];

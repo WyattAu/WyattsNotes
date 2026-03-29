@@ -109,6 +109,10 @@
     {
       "title": "General Notes",
       "path": "[[workspace]]/docs/docs_general-notes"
-    }
+    },
+    {
+      "title": "Probabilistic ML Notes",
+      "path": "[[workspace]]/docs/docs_ProbabilisticML-notes"
+    },
   ]
 }

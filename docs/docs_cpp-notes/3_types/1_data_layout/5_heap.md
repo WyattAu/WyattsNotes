@@ -133,8 +133,6 @@ int main() {
     // 2. Huge allocation (likely mmap)
     // 1024 * 1024 * 128 bytes = 128 MB
     std::vector<char> huge_buffer(128 * 1024 * 1024);
-
-    std::cout << "Allocated" << std::endl;
     return 0;
 }
 ```
