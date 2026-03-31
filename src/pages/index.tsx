@@ -1,16 +1,20 @@
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-import Layout from '@theme/Layout';
-import clsx from 'clsx';
-import React, { useState } from 'react';
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Heading from "@theme/Heading";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
+import React, { useState } from "react";
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 type NavigationItem =
-  | { type: 'single'; label: string; to: string }
-  | { type: 'group'; label: string; items: Array<{ label: string; to: string }> };
+  | { type: "single"; label: string; to: string }
+  | {
+      type: "group";
+      label: string;
+      items: Array<{ label: string; to: string }>;
+    };
 
 interface GroupModalProps {
   title: string;
@@ -21,10 +25,17 @@ interface GroupModalProps {
 function GroupModal({ title, items, onClose }: GroupModalProps) {
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
-      <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
+      <div
+        className={styles.modalContainer}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className={styles.modalHeader}>
           <h3>{title}</h3>
-          <button className={styles.closeButton} onClick={onClose} aria-label="Close">
+          <button
+            className={styles.closeButton}
+            onClick={onClose}
+            aria-label="Close"
+          >
             ×
           </button>
         </div>
@@ -33,7 +44,7 @@ function GroupModal({ title, items, onClose }: GroupModalProps) {
             <Link
               key={index}
               className={clsx(
-                'button button--secondary button--lg shadow--md',
+                "button button--secondary button--lg shadow--md",
                 styles.heroButton,
                 styles.modalButton,
               )}
@@ -101,7 +112,7 @@ function HomepageHeader() {
   ];
 
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -111,11 +122,11 @@ function HomepageHeader() {
         <div className={styles.buttonGroup}>
           {navItems.map((item, index) => (
             <div key={index} className={styles.navItemContainer}>
-              {item.type === 'group' ? (
+              {item.type === "group" ? (
                 <>
                   <button
                     className={clsx(
-                      'button button--secondary button--lg shadow--md',
+                      "button button--secondary button--lg shadow--md",
                       styles.heroButton,
                       styles.groupButton,
                     )}
@@ -134,7 +145,7 @@ function HomepageHeader() {
               ) : (
                 <Link
                   className={clsx(
-                    'button button--secondary button--lg shadow--md',
+                    "button button--secondary button--lg shadow--md",
                     styles.heroButton,
                   )}
                   to={item.to}
@@ -154,7 +165,10 @@ export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout title={`${siteConfig.title} - Home`} description={siteConfig.tagline}>
+    <Layout
+      title={`${siteConfig.title} - Home`}
+      description={siteConfig.tagline}
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />

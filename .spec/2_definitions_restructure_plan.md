@@ -3,6 +3,7 @@
 ## 诊断总结
 
 用户提供了详细的文档审查报告，指出了四类问题：
+
 1. **结构排序问题** - 概念定义顺序违反依赖关系
 2. **准确性问题** - 数学定义不完整或有误
 3. **缺失定义** - 高级ML必需的概念未定义
@@ -104,15 +105,15 @@
 
 ### Phase 2: 准确性修正
 
-| 定义 | 问题 | 修正 |
-|------|------|------|
-| Pushforward Measure | 缺少 measurable map 定义 | 添加 T: (Ω₁, F₁) → (Ω₂, F₂) 可测映射 |
-| Cross-entropy | 定义顺序问题 | 先定义 H(P,Q) = -E[log q(x)]，再给恒等式 |
-| Diffeomorphism | 未指定可微度 | 添加 C^k 说明 |
-| Dirac Measure | typo | B(S) 而非 B(S) |
-| LLN/ERM | 概念混淆 | 添加 ULLN 区分 |
-| Lebesgue Integral | 边界情况不清 | 澄清 integrable vs defined |
-| Lipschitz | 缺少约束 | 添加 K >= 0 |
+| 定义                | 问题                     | 修正                                     |
+| ------------------- | ------------------------ | ---------------------------------------- |
+| Pushforward Measure | 缺少 measurable map 定义 | 添加 T: (Ω₁, F₁) → (Ω₂, F₂) 可测映射     |
+| Cross-entropy       | 定义顺序问题             | 先定义 H(P,Q) = -E[log q(x)]，再给恒等式 |
+| Diffeomorphism      | 未指定可微度             | 添加 C^k 说明                            |
+| Dirac Measure       | typo                     | B(S) 而非 B(S)                           |
+| LLN/ERM             | 概念混淆                 | 添加 ULLN 区分                           |
+| Lebesgue Integral   | 边界情况不清             | 澄清 integrable vs defined               |
+| Lipschitz           | 缺少约束                 | 添加 K >= 0                              |
 
 ### Phase 3: 新增定义
 
@@ -127,15 +128,16 @@
 
 ### Phase 4: 符号一致性
 
-| 问题 | 修正 |
-|------|------|
-| 范数符号 | 统一使用 \lVert \rVert |
+| 问题     | 修正                                              |
+| -------- | ------------------------------------------------- |
+| 范数符号 | 统一使用 \lVert \rVert                            |
 | 空间符号 | 明确 Ω (样本空间), S (一般可测空间), X (数据空间) |
-| 度量符号 | d(X_n(ω), X(ω)) 点态应用 |
+| 度量符号 | d(X_n(ω), X(ω)) 点态应用                          |
 
 ## 执行策略
 
 由于文件较大，采用分模块重写：
+
 1. 先重写头部和 Sets and Relations 章节
 2. 重写 Topology and Metric Spaces 章节
 3. 重写 Measure Theory 章节
