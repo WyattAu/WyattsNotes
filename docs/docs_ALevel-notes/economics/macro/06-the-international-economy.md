@@ -42,7 +42,7 @@ $$\text{OC of Cloth in terms of Wine:}$$
 - Home: $\frac{a_C}{a_W} = \frac{2}{4} = 0.5$ units of Wine per unit of Cloth
 - Foreign: $\frac{a_C}{a_W} = \frac{6}{3} = 2.0$ units of Wine per unit of Cloth
 
-Home has a **comparative advantage** in Cloth (lower OC: 0.5 < 2.0). Foreign has a comparative
+Home has a **comparative advantage** in Cloth (lower OC: 0.5 &lt; 2.0). Foreign has a comparative
 advantage in Wine.
 
 $$\text{OC of Wine in terms of Cloth:}$$
@@ -50,7 +50,7 @@ $$\text{OC of Wine in terms of Cloth:}$$
 - Home: $\frac{a_W}{a_C} = \frac{4}{2} = 2$ units of Cloth per unit of Wine
 - Foreign: $\frac{a_W}{a_C} = \frac{3}{6} = 0.5$ units of Cloth per unit of Wine
 
-Foreign has a comparative advantage in Wine (lower OC: 0.5 < 2.0).
+Foreign has a comparative advantage in Wine (lower OC: 0.5 &lt; 2.0).
 
 **Gains from trade.** Suppose each country has 1,200 units of labour.
 
@@ -111,7 +111,7 @@ $$\text{ToT} = \frac{\text{Index of Export Prices}}{\text{Index of Import Prices
 
 - **ToT > 100 (improvement)**: export prices have risen relative to import prices. A given quantity
   of exports buys more imports. This is beneficial — "favourable" terms of trade.
-- **ToT < 100 (deterioration)**: export prices have fallen relative to import prices. A given
+- **ToT &lt; 100 (deterioration)**: export prices have fallen relative to import prices. A given
   quantity of exports buys fewer imports. This is harmful — "adverse" terms of trade.
 - **ToT = 100**: no change from the base year.
 
@@ -327,8 +327,8 @@ war, reshoring) reflects these tensions.
 **Economic indicators:**
 
 - GDP per capita (PPP-adjusted for comparability)
-- GNI per capita (World Bank classification: low <$1,145, lower-middle $1,146–$4,515, upper-middle
-  $4,516–$14,005, high \gt{}$14,005)
+- GNI per capita (World Bank classification: low &lt;$1,145, lower-middle $1,146–$4,515,
+  upper-middle $4,516–$14,005, high \gt{}$14,005)
 - GDP growth rate
 - Industrial structure (share of agriculture/manufacturing/services)
 
@@ -455,7 +455,7 @@ the J-curve effect.
 
 <details>
 <summary>Hint</summary>
-(a) More dollars per pound before → now fewer dollars per pound → pound has depreciated (you get fewer dollars for each pound). (b) $|E_X| + |E_M| = 0.6 + 0.8 = 1.4 > 1$. The Marshall-Lerner condition is satisfied → in the long run, the current account improves. However, these are long-run elasticities. (c) J-curve: in the short run (first 6–12 months), elasticities are lower because contracts are fixed and consumers are slow to change habits. So initially $|E_X| + |E_M| < 1$ → CA worsens. Over time, as consumers and firms adjust, elasticities rise above 1 → CA improves. The path traces a J-shape.
+(a) More dollars per pound before → now fewer dollars per pound → pound has depreciated (you get fewer dollars for each pound). (b) $|E_X| + |E_M| = 0.6 + 0.8 = 1.4 \gt{} 1$. The Marshall-Lerner condition is satisfied → in the long run, the current account improves. However, these are long-run elasticities. (c) J-curve: in the short run (first 6–12 months), elasticities are lower because contracts are fixed and consumers are slow to change habits. So initially $|E_X| + |E_M| \lt{} 1$ → CA worsens. Over time, as consumers and firms adjust, elasticities rise above 1 → CA improves. The path traces a J-shape.
 </details>
 
 **Problem 4.** Explain the advantages and disadvantages of a fixed exchange rate system compared
