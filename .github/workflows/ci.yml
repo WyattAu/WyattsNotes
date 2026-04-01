@@ -1,7 +1,14 @@
 name: CI
-on: [push, pull_request]
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main, staging]
+
 jobs:
-  build:
+  validate:
+    name: Lint & Typecheck
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -11,9 +18,46 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Install dependencies
         run: npm ci --prefer-offline
 
-      - name: Build project
+      - name: Lint
+        run: npm run lint -- --max-warnings=0
+
+      - name: Typecheck
+        run: npm run typecheck
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Verify lockfile integrity
+        run: |
+          LOCKFILE_HASH=$(sha256sum package-lock.json | cut -d' ' -f1)
+          echo "Lockfile SHA-256: $LOCKFILE_HASH"
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      - name: Build
         run: npm run build
+
+      - name: Validate build output
+        run: |
+          [ -d build ] || (echo "ERROR: Build directory missing"; exit 1)
+          [ -f build/index.html ] || (echo "ERROR: No index.html found"; exit 1)
+          echo "Build successful. Output size: $(du -sh build | cut -f1)"

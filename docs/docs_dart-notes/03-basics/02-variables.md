@@ -234,14 +234,248 @@ Dart `enum` are non-inheritable classes that holds a fixed number of constant va
 
 #### Records
 
-Records in Dart are ordered group of named elements, similar to tuple in C++
+Records (Dart 3.0+) are an anonymous immutable aggregate type — a composite of named positional and named fields. They are value types with structural equality, similar to C++ `std::tuple` with named elements, or Kotlin data classes.
+
+```dart
+// Positional fields (accessed by position: $1, $2, etc.)
+var point = (10, 20);
+print(point.$1); // 10
+print(point.$2); // 20
+
+// Named fields
+var user = (name: 'Wyatt', age: 22);
+print(user.name); // Wyatt
+print(user.age);  // 22
+
+// Mixed positional and named
+var record = ('hello', count: 42, pi: 3.14);
+print(record.$1);    // 'hello'
+print(record.count); // 42
+
+// Typed records
+(int, String) pair = (1, 'a');
+({String name, int age}) person = (name: 'Wyatt', age: 22);
+
+// Records in function returns (replacing the need for custom classes)
+(int min, int max) getBounds(List<int> data) {
+  return (data.reduce(min), data.reduce(max));
+}
+var (lo, hi) = getBounds([3, 1, 4, 1, 5]);
+```
+
+:::info
+
+Records are **not classes** — they have no identity, only structural equality. Two records with the same fields are equal: `(1, 'a') == (1, 'a')` is `true`. They are stack-allocated (when small) and cannot be extended.
+
+:::
 
 #### Functions
 
+Functions in Dart are first-class objects — they can be assigned to variables, passed as arguments, and returned from other functions. See [Function Mechanics](./01-entrypoint.md) for the entry point discussion.
+
+```dart
+// Named function
+int add(int a, int b) => a + b;
+
+// Anonymous function (lambda / closure)
+var multiply = (int a, int b) => a * b;
+
+// Optional positional parameters (wrapped in [])
+int sum(int a, [int b = 0, int c = 0]) => a + b + c;
+print(sum(1));       // 1
+print(sum(1, 2));    // 3
+print(sum(1, 2, 3)); // 6
+
+// Named parameters (wrapped in {})
+// Use 'required' keyword for mandatory named params (Dart 2.12+)
+void configure({required String host, int port = 8080, bool secure = false}) {
+  print('Connecting to ${secure ? "https" : "http"}://$host:$port');
+}
+configure(host: 'example.com', secure: true);
+
+// Functions as parameters (higher-order functions)
+void process(List<int> data, bool Function(int) predicate) {
+  for (var item in data) {
+    if (predicate(item)) print(item);
+  }
+}
+process([1, 2, 3, 4, 5], (x) => x > 3); // prints 4, 5
+
+// Closures: functions capture variables from their enclosing scope
+Function makeCounter() {
+  int count = 0;
+  return () => ++count;
+}
+var counter = makeCounter();
+print(counter()); // 1
+print(counter()); // 2
+```
+
+:::tip
+
+Prefer named parameters with `required` for public APIs. Named parameters are self-documenting and order-independent, which reduces call-site errors and makes refactoring easier.
+
+:::
+
 #### Lists
+
+Dart `List` is an ordered, indexable collection. There are two flavors: **fixed-length** (growable: false) and **growable** (the default).
+
+```dart
+// Literals
+var empty = <int>[];
+var numbers = [1, 2, 3, 4, 5];
+
+// Typed list (recommended over var)
+List<String> names = ['Alice', 'Bob'];
+
+// Fixed-length list
+var fixed = List<int>.filled(3, 0);
+fixed[0] = 42;
+// fixed.add(99); // ❌ Unsupported operation: Cannot add to a fixed-length list
+
+// Growable list
+var growable = List<int>.empty(growable: true);
+growable.add(1);
+growable.addAll([2, 3]);
+
+// Spread operator (Dart 2.3+)
+var front = [1, 2, 3];
+var back = [6, 7, 8];
+var combined = [...front, 4, 5, ...back]; // [1, 2, 3, 4, 5, 6, 7, 8]
+
+// Null-aware spread
+List<int>? maybeList = null;
+var withNull = [0, ...?maybeList, 9]; // [0, 9]
+
+// Collection if/for
+var even = [for (var i = 0; i < 10; i++) if (i % 2 == 0) i]; // [0, 2, 4, 6, 8]
+
+// Common operations
+numbers.sort();                     // In-place sort
+numbers.sort((a, b) => b - a);     // Descending sort
+numbers.map((n) => n * 2);         // Lazy iterable: (2, 4, 6, 8, 10)
+numbers.where((n) => n > 3);       // Lazy iterable: (4, 5)
+numbers.reduce((a, b) => a + b);   // 15
+numbers.fold<int>(0, (a, b) => a + b); // 15 (with explicit type)
+numbers.any((n) => n > 4);         // true
+numbers.every((n) => n > 0);       // true
+numbers.firstWhere((n) => n > 3);  // 4
+numbers.indexOf(3);                 // 2
+numbers.sublist(1, 3);             // [2, 3]
+```
+
+:::warning
+
+`List.map()`, `List.where()`, and similar methods return `Iterable`, not `List`. If you need a `List`, wrap with `.toList()`:
+
+```dart
+var doubled = numbers.map((n) => n * 2).toList();
+```
+
+This is a deliberate design choice — lazy iterables avoid creating intermediate collections, which is critical for large data pipelines.
+
+:::
 
 #### Sets
 
+A `Set` is an unordered collection of **unique** items. Dart uses a hash-based implementation (linked hash set), providing $O(1)$ insertion, lookup, and deletion.
+
+```dart
+// Literal
+var flavors = {'vanilla', 'chocolate', 'strawberry'};
+
+// Typed set (required for non-string types)
+Set<int> primes = {2, 3, 5, 7, 11};
+
+// From a list (removes duplicates)
+var unique = <int>[1, 2, 2, 3, 3, 3].toSet(); // {1, 2, 3}
+
+// Empty set (type annotation required to disambiguate from Map)
+var empty = <String>{};
+
+// Operations
+primes.add(13);
+primes.contains(7);   // true
+primes.remove(2);
+
+// Set operations
+var a = {1, 2, 3, 4};
+var b = {3, 4, 5, 6};
+a.union(b);         // {1, 2, 3, 4, 5, 6}
+a.intersection(b);  // {3, 4}
+a.difference(b);    // {1, 2}
+```
+
 #### Maps
 
+A `Map` is a key-value store. Like `Set`, it uses hash-based lookup with $O(1)$ average complexity.
+
+```dart
+// Literal
+var scores = {'Alice': 95, 'Bob': 87};
+
+// Typed map
+Map<String, int> ages = {};
+
+// From pairs
+var pairs = Map.fromEntries(
+  [('a', 1), ('b', 2)].map((e) => MapEntry(e.$1, e.$2)),
+);
+
+// Operations
+ages['Wyatt'] = 22;
+ages['Wyatt'];        // 22
+ages['Unknown'];      // null (no KeyError — Dart maps return null for missing keys)
+ages.containsKey('Wyatt'); // true
+ages.remove('Wyatt');
+
+// Iteration
+for (var entry in ages.entries) {
+  print('${entry.key}: ${entry.value}');
+}
+for (var key in ages.keys) {
+  print(key);
+}
+for (var value in ages.values) {
+  print(value);
+}
+
+// update() — atomic read-modify-write
+ages.update('Wyatt', (v) => v + 1, ifAbsent: () => 0);
+
+// putIfAbsent — only insert if key doesn't exist
+ages.putIfAbsent('New', () => computeAge());
+
+// map() — transform values
+var doubled = ages.map((k, v) => MapEntry(k, v * 2));
+```
+
+:::tip
+
+Use `Map<String, dynamic>` sparingly — it bypasses Dart's type system. Prefer typed maps or custom classes for structured data. When you must use `Map<String, dynamic>` (e.g., JSON deserialization), validate the types at runtime.
+
+:::
+
 #### Symbols
+
+A `Symbol` represents an operator or identifier declared in a Dart program. Symbols are rarely used in application code — their primary use case is in **mirrors** (reflection):
+
+```dart
+// Symbol for an identifier
+var sym = Symbol('myFunction');
+
+// Symbols for operators
+var plus = Symbol('+');
+var equals = Symbol('==');
+
+// Usage in mirrors (requires dart:mirrors)
+import 'dart:mirrors';
+// MirrorSystem.getName(symbol) → String
+```
+
+:::info
+
+Symbols are not the same as strings. A symbol represents an **identifier in the program**, not arbitrary text. They are used internally by the Dart VM for optimization and reflection, and are exposed via the `dart:mirrors` library. Most application developers will never create symbols directly.
+
+:::

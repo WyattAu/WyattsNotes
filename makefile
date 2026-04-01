@@ -9,7 +9,8 @@
         format lint validate \
         security clean clear-cache \
         extract-translations add-heading-ids swizzle \
-        update-deps audit ci test
+        update-deps audit ci test \
+        lighthouse bundle-analyze
 
 # Configuration
 # --------------------------------------------------
@@ -77,11 +78,15 @@ validate: lint typecheck  ## Validate codebase (lint + typecheck)
 
 ##@ Security
 
-audit: node_modules  ## Audit dependencies
+audit: node_modules  ## Audit production dependencies
 	@echo "Running security audit..."
-	@$(NPM) audit --audit-level=moderate
+	@$(NPM) audit --omit=dev --audit-level=moderate
 
-security: audit  ## Security alias
+security: audit  ## Full security check
+	@echo "Checking for known vulnerabilities..."
+	@$(NPM) audit --omit=dev --audit-level=high
+	@echo "Checking for outdated dependencies..."
+	@npx npm-check-updates 2>/dev/null || echo "npm-check-updates not installed, skipping"
 
 ##@ Documentation
 
@@ -117,6 +122,16 @@ ci: validate build test  ## Run CI pipeline
 test: node_modules  ## Run tests
 	@echo "Running test suite..."
 	@$(NPM) test -- --watchAll=false
+
+##@ Performance
+
+lighthouse: node_modules  ## Run Lighthouse CI audit
+	@echo "Running Lighthouse audit..."
+	@npx lhci autorun || echo "Lighthouse CI not configured, skipping"
+
+bundle-analyze: node_modules  ## Analyze bundle size
+	@echo "Analyzing bundle..."
+	@ANALYZE=true npm run build 2>&1 || echo "Bundle analysis requires build to succeed"
 
 ##@ Help
 

@@ -35,8 +35,9 @@ $$
 $$
 
 where $B(k)$ is a binary indicator function, with condition:
+
 $$
-B(k) = 
+B(k) =
 \begin{dcases}
   1 \quad \text{if k is true}\\
   0 \quad \text{if k is false}
