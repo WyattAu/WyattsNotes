@@ -74,4 +74,4 @@ Each topic page contains:
 5. **Multi-step problem set** — questions requiring chain reasoning and evaluation
 6. **Board-specific notes** — specification differences
 
-When finished, attempt the [Diagnostic Test](/docs/docs_ALevel-notes/economics/diagnostic-test).
+When finished, attempt the [Diagnostic Test](/docs/docs_ALevel-notes/economics/economics-diagnostic-test).
