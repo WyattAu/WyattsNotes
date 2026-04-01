@@ -65,8 +65,6 @@ const rehypePluginConfig = {
 const commonDocsPluginConfig = {
   showLastUpdateTime: true,
   showLastUpdateAuthor: true,
-  onBrokenLinks: 'warn', // TODO: Fix remaining broken links across IB/DSE/C++ notes, then revert to 'throw'
-  onBrokenMarkdownLinks: 'warn', // TODO: Same as above
   ...admonitionsConfig,
   ...remarkPluginsConfig,
   ...rehypePluginConfig,
@@ -75,6 +73,9 @@ const commonDocsPluginConfig = {
 const config: Config = {
   ...prjMetadataConfig,
   ...compilationConfig,
+
+  // TODO: Fix remaining broken links across IB/DSE/C++ notes, then revert to 'throw'
+  onBrokenLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',
