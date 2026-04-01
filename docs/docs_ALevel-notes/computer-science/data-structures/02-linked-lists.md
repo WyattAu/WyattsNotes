@@ -481,6 +481,6 @@ The array implementation is preferred when the maximum size is known and memory 
 The linked list is preferred when the size is highly variable.
 
 For revision on queues, see
-[Stacks and Queues](/docs/docs_ALevel-notes/computer-science/data-structures/03-stacks-and-queues).
+[Stacks and Queues](/docs/docs_ALevel-notes/computer-science/data-structures/stacks-and-queues).
 
 </details>

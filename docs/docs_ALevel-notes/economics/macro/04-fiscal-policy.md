@@ -14,11 +14,13 @@ sidebar_position: 4
 
 ### 1.1 Definition
 
-We define **fiscal policy** as the use of government spending ($G$) and taxation ($T$) to influence the level of aggregate demand, economic activity, and the allocation of resources in the economy.
+We define **fiscal policy** as the use of government spending ($G$) and taxation ($T$) to influence
+the level of aggregate demand, economic activity, and the allocation of resources in the economy.
 
 $$\text{Fiscal policy tools: } G, T, \text{ and } (G - T)$$
 
-Fiscal policy is conducted by the government (Chancellor of the Exchequer in the UK, Secretary of the Treasury in the US) alongside the central bank's monetary policy.
+Fiscal policy is conducted by the government (Chancellor of the Exchequer in the UK, Secretary of
+the Treasury in the US) alongside the central bank's monetary policy.
 
 ### 1.2 The Government Budget
 
@@ -30,9 +32,9 @@ $$\text{Budget balance} = T - G$$
 - **Budget deficit**: $G > T$ (government spending exceeds revenue)
 - **Balanced budget**: $T = G$
 
-:::info Board-Specific Note
-CIE (9708) requires students to distinguish between the budget balance and the national debt. AQA and Edexcel may ask about the UK's fiscal rules (e.g., the fiscal mandate and supplementary target).
-:::
+:::info Board-Specific Note CIE (9708) requires students to distinguish between the budget balance
+and the national debt. AQA and Edexcel may ask about the UK's fiscal rules (e.g., the fiscal mandate
+and supplementary target). :::
 
 ## 2. Government Spending
 
@@ -52,23 +54,28 @@ CIE (9708) requires students to distinguish between the budget balance and the n
 
 $$G = G_{current} + G_{capital}$$
 
-Only $G$ in the AD equation ($AD = C + I + G + (X - M)$) represents spending on goods and services. Transfer payments are not directly part of $G$ — they affect $AD$ indirectly through their effect on disposable income and hence consumption ($C$).
+Only $G$ in the AD equation ($AD = C + I + G + (X - M)$) represents spending on goods and services.
+Transfer payments are not directly part of $G$ — they affect $AD$ indirectly through their effect on
+disposable income and hence consumption ($C$).
 
-:::warning Common Pitfall
-Transfer payments (benefits, pensions) are NOT part of $G$ in the AD formula. They are a government outlay but not a purchase of goods and services. They affect $C$, not $G$ directly. However, exam questions sometimes use "government spending" loosely — always clarify what is meant.
-:::
+:::warning Common Pitfall Transfer payments (benefits, pensions) are NOT part of $G$ in the AD
+formula. They are a government outlay but not a purchase of goods and services. They affect $C$, not
+$G$ directly. However, exam questions sometimes use "government spending" loosely — always clarify
+what is meant. :::
 
 ### 2.2 Government Spending as a Share of GDP
 
 $$\text{Government spending ratio} = \frac{G}{Y} \times 100\%$$
 
-In the UK, this ratio was approximately 45% of GDP in 2023–24, reflecting the expansionary fiscal response to COVID-19 and the energy crisis. The long-run average is closer to 40%.
+In the UK, this ratio was approximately 45% of GDP in 2023–24, reflecting the expansionary fiscal
+response to COVID-19 and the energy crisis. The long-run average is closer to 40%.
 
 ## 3. Taxation
 
 ### 3.1 Direct vs Indirect Taxation
 
-**Direct taxes** are levied on income, wealth, or profits. They are typically progressive and difficult to evade.
+**Direct taxes** are levied on income, wealth, or profits. They are typically progressive and
+difficult to evade.
 
 | Tax Type          | Description                        | Examples                     |
 | ----------------- | ---------------------------------- | ---------------------------- |
@@ -78,7 +85,8 @@ In the UK, this ratio was approximately 45% of GDP in 2023–24, reflecting the 
 | Inheritance tax   | Tax on transfer of wealth at death | 40% above £325,000 threshold |
 | Council tax       | Tax on property value (local)      | Bands A–H                    |
 
-**Indirect taxes** are levied on goods and services. They are typically regressive and easier to pass on to consumers.
+**Indirect taxes** are levied on goods and services. They are typically regressive and easier to
+pass on to consumers.
 
 | Tax Type       | Description                                    | Examples                               |
 | -------------- | ---------------------------------------------- | -------------------------------------- |
@@ -127,7 +135,8 @@ _Proportional tax_ (10% flat tax on all income):
 
 ATR constant. ✓
 
-_Regressive tax_ (VAT at 20% on all consumption, assuming lower earners spend a larger share of income):
+_Regressive tax_ (VAT at 20% on all consumption, assuming lower earners spend a larger share of
+income):
 
 - £10,000 earner spends £9,500, pays £1,900 in VAT → ATR = 19.0%
 - £30,000 earner spends £22,000, pays £4,400 in VAT → ATR = 14.7%
@@ -135,9 +144,10 @@ _Regressive tax_ (VAT at 20% on all consumption, assuming lower earners spend a 
 
 ATR falls with income because higher earners save a larger proportion of income. ✓ $\blacksquare$
 
-:::tip Exam Technique
-When asked to evaluate whether a tax is progressive or regressive, calculate the ATR at different income levels. Never just state the marginal rate — a tax can have increasing marginal rates but still be regressive in practice (e.g., if there are generous allowances for high earners).
-:::
+:::tip Exam Technique When asked to evaluate whether a tax is progressive or regressive, calculate
+the ATR at different income levels. Never just state the marginal rate — a tax can have increasing
+marginal rates but still be regressive in practice (e.g., if there are generous allowances for high
+earners). :::
 
 ### 3.3 Laffer Curve
 
@@ -145,15 +155,23 @@ The **Laffer curve** illustrates the theoretical relationship between the tax ra
 
 $$R = t \cdot Y(t)$$
 
-where $t$ is the tax rate and $Y(t)$ is the tax base (income), which depends on $t$ because higher tax rates discourage work, investment, and encourage tax evasion.
+where $t$ is the tax rate and $Y(t)$ is the tax base (income), which depends on $t$ because higher
+tax rates discourage work, investment, and encourage tax evasion.
 
-**Proposition: There exists a tax rate $t^*$ that maximises revenue, and beyond this rate, further increases reduce revenue.**
+**Proposition: There exists a tax rate $t^*$ that maximises revenue, and beyond this rate, further
+increases reduce revenue.**
 
-_Proof sketch._ At $t = 0$, revenue $R = 0$. At $t = 100\%$, no one works (all income is taxed away), so $R = 0$. Since $R$ is continuous, by the Intermediate Value Theorem there exists at least one maximum $t^*$ where $\frac{dR}{dt} = 0$. At this point, the marginal gain from a higher rate (more tax per unit of income) exactly equals the marginal loss from a smaller tax base. $\blacksquare$
+_Proof sketch._ At $t = 0$, revenue $R = 0$. At $t = 100\%$, no one works (all income is taxed
+away), so $R = 0$. Since $R$ is continuous, by the Intermediate Value Theorem there exists at least
+one maximum $t^*$ where $\frac{dR}{dt} = 0$. At this point, the marginal gain from a higher rate
+(more tax per unit of income) exactly equals the marginal loss from a smaller tax base.
+$\blacksquare$
 
 $$\frac{dR}{dt} = Y(t) + t \cdot \frac{dY}{dt} = 0 \quad \text{at } t^*$$
 
-The key debate is **where** $t^*$ lies. Supply-side economists (e.g., Arthur Laffer) argue that many economies are already to the right of $t^*$, so cutting rates would increase revenue. Empirical evidence is mixed.
+The key debate is **where** $t^*$ lies. Supply-side economists (e.g., Arthur Laffer) argue that many
+economies are already to the right of $t^*$, so cutting rates would increase revenue. Empirical
+evidence is mixed.
 
 ## 4. Budget Deficit and National Debt
 
@@ -171,11 +189,13 @@ $$D_t = D_{t-1} + (G_t - T_t)$$
 
 $$\frac{D}{Y} = \frac{D_t}{Y_t}$$
 
-This is the preferred measure of debt sustainability, since a large absolute debt is manageable if GDP is also large.
+This is the preferred measure of debt sustainability, since a large absolute debt is manageable if
+GDP is also large.
 
-:::warning Common Pitfall
-Deficit and debt are different. A country can have a large debt but a small (or zero) deficit if it is running a balanced budget. The deficit is a _flow_ (per year), while the debt is a _stock_ (accumulated). Reducing the deficit does _not_ reduce the debt — it merely slows the rate at which debt grows. Only a surplus reduces the debt.
-:::
+:::warning Common Pitfall Deficit and debt are different. A country can have a large debt but a
+small (or zero) deficit if it is running a balanced budget. The deficit is a _flow_ (per year),
+while the debt is a _stock_ (accumulated). Reducing the deficit does _not_ reduce the debt — it
+merely slows the rate at which debt grows. Only a surplus reduces the debt. :::
 
 ### 4.2 Debt Dynamics
 
@@ -185,11 +205,14 @@ $$\frac{D_{t}}{Y_{t}} = \frac{(1 + r) D_{t-1} + (G_t - T_t)}{(1 + g) Y_{t-1}}$$
 
 where $r$ is the average interest rate on government debt and $g$ is the GDP growth rate.
 
-**Key insight**: If $g > r$, the debt-to-GDP ratio can fall even with a primary deficit (before interest payments), because GDP is growing faster than the debt stock. If $r > g$, debt dynamics are unstable — the debt ratio grows unless offset by primary surpluses.
+**Key insight**: If $g > r$, the debt-to-GDP ratio can fall even with a primary deficit (before
+interest payments), because GDP is growing faster than the debt stock. If $r > g$, debt dynamics are
+unstable — the debt ratio grows unless offset by primary surpluses.
 
 ### 4.3 Sustainability
 
-A government's debt is sustainable if it can continue to service it without default. Indicators of concern:
+A government's debt is sustainable if it can continue to service it without default. Indicators of
+concern:
 
 - Debt-to-GDP ratio above 90% (Reinhart & Rogoff threshold, though contested)
 - Interest payments exceeding 10% of tax revenue
@@ -226,9 +249,12 @@ Used to reduce aggregate demand during an overheating economy (to combat inflati
 
 ### 5.3 The Balanced Budget Multiplier
 
-**Proposition: Equal increases in $G$ and $T$ increase output by exactly the amount of the increase.**
+**Proposition: Equal increases in $G$ and $T$ increase output by exactly the amount of the
+increase.**
 
-_Proof._ The increase in $G$ directly adds $\Delta G$ to AD. The increase in $T$ reduces disposable income by $\Delta T = \Delta G$, reducing consumption by $MPC \times \Delta G$. The net injection is:
+_Proof._ The increase in $G$ directly adds $\Delta G$ to AD. The increase in $T$ reduces disposable
+income by $\Delta T = \Delta G$, reducing consumption by $MPC \times \Delta G$. The net injection
+is:
 
 $$\Delta A = \Delta G - MPC \cdot \Delta G = (1 - MPC) \cdot \Delta G = MPS \cdot \Delta G$$
 
@@ -236,13 +262,15 @@ The total change in output:
 
 $$\Delta Y = k \cdot \Delta A = \frac{1}{MPS} \cdot MPS \cdot \Delta G = \Delta G$$
 
-So $\Delta Y / \Delta G = 1$ when $\Delta G = \Delta T$. The balanced budget multiplier equals 1. $\blacksquare$
+So $\Delta Y / \Delta G = 1$ when $\Delta G = \Delta T$. The balanced budget multiplier equals 1.
+$\blacksquare$
 
 ## 6. Crowding Out
 
 ### 6.1 Definition
 
-**Crowding out** refers to the reduction in private sector spending (particularly investment) that results from an increase in government spending.
+**Crowding out** refers to the reduction in private sector spending (particularly investment) that
+results from an increase in government spending.
 
 ### 6.2 Mechanism
 
@@ -254,20 +282,26 @@ This increases the demand for loanable funds, pushing up the real interest rate:
 
 $$r \uparrow \Rightarrow I \downarrow$$
 
-The rise in $r$ reduces private investment, partially (or fully) offsetting the expansionary effect of $\Delta G$ on AD.
+The rise in $r$ reduces private investment, partially (or fully) offsetting the expansionary effect
+of $\Delta G$ on AD.
 
 ### 6.3 Types of Crowding Out
 
-**Financial crowding out**: the mechanism described above — government borrowing raises interest rates, reducing private investment.
+**Financial crowding out**: the mechanism described above — government borrowing raises interest
+rates, reducing private investment.
 
 $$\Delta I = -\frac{1}{MPS} \cdot \Delta G \quad \text{(full crowding out in extreme case)}$$
 
-**Resource crowding out**: if the economy is at full employment, government spending uses resources that would otherwise be employed by the private sector. The increase in $G$ bids up wages and prices, reducing private sector profitability.
+**Resource crowding out**: if the economy is at full employment, government spending uses resources
+that would otherwise be employed by the private sector. The increase in $G$ bids up wages and
+prices, reducing private sector profitability.
 
 **Full vs partial crowding out**:
 
-- **Full crowding out**: $\Delta I = -\Delta G$ in the simple model. The increase in $G$ is exactly offset by the decrease in $I$. Output does not change (LRAS is vertical).
-- **Partial crowding out**: $\Delta I > -\Delta G$. Some private investment is displaced, but the net effect on AD is still positive.
+- **Full crowding out**: $\Delta I = -\Delta G$ in the simple model. The increase in $G$ is exactly
+  offset by the decrease in $I$. Output does not change (LRAS is vertical).
+- **Partial crowding out**: $\Delta I > -\Delta G$. Some private investment is displaced, but the
+  net effect on AD is still positive.
 
 ### 6.4 Factors Affecting the Degree of Crowding Out
 
@@ -279,15 +313,16 @@ $$\Delta I = -\frac{1}{MPS} \cdot \Delta G \quad \text{(full crowding out in ext
 | Source of financing             | Domestic borrowing             | Foreign borrowing / monetary financing    |
 | Type of spending                | Current spending (consumption) | Capital spending (productivity-enhancing) |
 
-:::tip Exam Technique
-When evaluating fiscal policy, always consider crowding out. The strongest answer recognises that crowding out is less severe in a recession (Keynesian view) and more severe at full employment (Classical view). Reference the state of the economic cycle.
-:::
+:::tip Exam Technique When evaluating fiscal policy, always consider crowding out. The strongest
+answer recognises that crowding out is less severe in a recession (Keynesian view) and more severe
+at full employment (Classical view). Reference the state of the economic cycle. :::
 
 ## 7. Automatic Stabilisers
 
 ### 7.1 Definition
 
-**Automatic stabilisers** are features of the tax and benefit system that automatically dampen fluctuations in economic activity, without any deliberate policy action.
+**Automatic stabilisers** are features of the tax and benefit system that automatically dampen
+fluctuations in economic activity, without any deliberate policy action.
 
 $$\text{Automatic stabilisers: } T(Y) \text{ and } B(Y) \text{ where } \frac{dT}{dY} > 0 \text{ and } \frac{dB}{dY} < 0$$
 
@@ -295,15 +330,18 @@ $$\text{Automatic stabilisers: } T(Y) \text{ and } B(Y) \text{ where } \frac{dT}
 
 **During a boom** ($Y \uparrow$):
 
-- More people are employed and earn higher incomes $\Rightarrow$ tax revenue rises automatically (progressive income tax)
+- More people are employed and earn higher incomes $\Rightarrow$ tax revenue rises automatically
+  (progressive income tax)
 - Fewer people claim unemployment benefits $\Rightarrow$ transfer payments fall
-- **Net effect**: disposable income rises by less than GDP $\Rightarrow$ consumption grows more slowly $\Rightarrow$ AD is dampened
+- **Net effect**: disposable income rises by less than GDP $\Rightarrow$ consumption grows more
+  slowly $\Rightarrow$ AD is dampened
 
 **During a recession** ($Y \downarrow$):
 
 - People lose jobs or earn less $\Rightarrow$ tax revenue falls automatically
 - More people claim benefits $\Rightarrow$ transfer payments rise
-- **Net effect**: disposable income falls by less than GDP $\Rightarrow$ consumption falls more slowly $\Rightarrow$ AD is supported
+- **Net effect**: disposable income falls by less than GDP $\Rightarrow$ consumption falls more
+  slowly $\Rightarrow$ AD is supported
 
 ### 7.3 Mathematical Representation
 
@@ -317,7 +355,9 @@ The **cyclical component** of the budget balance:
 
 $$BB_{cyclical} = BB(Y) - BB(Y^*)$$
 
-where $Y^*$ is potential output. During a recession ($Y < Y^*$), $BB_{cyclical} < 0$ (the deficit widens automatically). During a boom ($Y > Y^*$), $BB_{cyclical} > 0$ (the deficit narrows or a surplus emerges).
+where $Y^*$ is potential output. During a recession ($Y < Y^*$), $BB_{cyclical} < 0$ (the deficit
+widens automatically). During a boom ($Y > Y^*$), $BB_{cyclical} > 0$ (the deficit narrows or a
+surplus emerges).
 
 ### 7.4 Discretionary vs Automatic Fiscal Policy
 
@@ -334,23 +374,31 @@ where $Y^*$ is potential output. During a recession ($Y < Y^*$), $BB_{cyclical} 
 
 Fiscal policy is subject to three significant lags:
 
-1. **Recognition lag**: time taken to identify that the economy is entering a recession or overheating. Data is published with a delay and is often revised. (Typically 3–6 months)
+1. **Recognition lag**: time taken to identify that the economy is entering a recession or
+   overheating. Data is published with a delay and is often revised. (Typically 3–6 months)
 
-2. **Decision lag**: time between recognition and the political decision to act. Parliamentary processes, coalition negotiations, and political disagreements can delay action. (Typically 3–12 months)
+2. **Decision lag**: time between recognition and the political decision to act. Parliamentary
+   processes, coalition negotiations, and political disagreements can delay action. (Typically 3–12
+   months)
 
-3. **Implementation lag**: time between the decision and the actual impact on the economy. Infrastructure projects take years; tax changes are faster. (Typically 6–18 months)
+3. **Implementation lag**: time between the decision and the actual impact on the economy.
+   Infrastructure projects take years; tax changes are faster. (Typically 6–18 months)
 
 **Total lag**: potentially 12–36 months, by which time the economic cycle may have turned.
 
 ### 8.2 Political Constraints
 
-1. **Electoral cycle**: governments may pursue expansionary policy before elections and contractionary policy after, creating a political business cycle.
+1. **Electoral cycle**: governments may pursue expansionary policy before elections and
+   contractionary policy after, creating a political business cycle.
 
-2. **Voter myopia**: voters reward short-term gains (tax cuts, spending increases) and punish short-term pain (tax rises, spending cuts), biasing policy toward expansion.
+2. **Voter myopia**: voters reward short-term gains (tax cuts, spending increases) and punish
+   short-term pain (tax rises, spending cuts), biasing policy toward expansion.
 
-3. **Interest group pressure**: powerful groups (pensioners, public sector unions, business lobbies) resist changes that affect them.
+3. **Interest group pressure**: powerful groups (pensioners, public sector unions, business lobbies)
+   resist changes that affect them.
 
-4. **Institutional constraints**: EU Stability and Growth Pact (deficit < 3% of GDP, debt < 60% of GDP), UK fiscal rules.
+4. **Institutional constraints**: EU Stability and Growth Pact (deficit < 3% of GDP, debt < 60% of
+   GDP), UK fiscal rules.
 
 ### 8.3 Size of the Multiplier
 
@@ -358,16 +406,22 @@ The effectiveness of fiscal policy depends on the size of the multiplier:
 
 $$k = \frac{1}{MPS + MPT + MPM}$$
 
-- **Large multiplier**: economy in deep recession, MPC high, economy relatively closed (low MPM), interest rates at the zero lower bound (no crowding out)
-- **Small multiplier**: economy near full employment, open economy (high MPM), high interest rates (significant crowding out)
+- **Large multiplier**: economy in deep recession, MPC high, economy relatively closed (low MPM),
+  interest rates at the zero lower bound (no crowding out)
+- **Small multiplier**: economy near full employment, open economy (high MPM), high interest rates
+  (significant crowding out)
 
-IMF (2012) estimated multipliers of 0.9–1.7 for advanced economies post-2008, larger than previously assumed.
+IMF (2012) estimated multipliers of 0.9–1.7 for advanced economies post-2008, larger than previously
+assumed.
 
 ### 8.4 Ricardian Equivalence
 
-**Proposition (Barro, 1974): Tax-financed and debt-financed government spending have the same effect on AD.**
+**Proposition (Barro, 1974): Tax-financed and debt-financed government spending have the same effect
+on AD.**
 
-_Argument._ Rational, forward-looking households anticipate that current government borrowing implies future tax increases to repay the debt. They increase saving by exactly the amount of the deficit to pay the expected future taxes:
+_Argument._ Rational, forward-looking households anticipate that current government borrowing
+implies future tax increases to repay the debt. They increase saving by exactly the amount of the
+deficit to pay the expected future taxes:
 
 $$\Delta G \text{ (deficit-financed)} \Rightarrow \Delta S_{private} = \Delta G \Rightarrow \Delta C = 0$$
 
@@ -380,7 +434,9 @@ _Critique._ Ricardian equivalence requires:
 - Lump-sum taxes (not distortionary)
 - Rational expectations
 
-These assumptions are unrealistic. Empirical evidence suggests partial Ricardian effects at best — fiscal policy does affect AD, but the multiplier may be smaller than predicted by the simple Keynesian model.
+These assumptions are unrealistic. Empirical evidence suggests partial Ricardian effects at best —
+fiscal policy does affect AD, but the multiplier may be smaller than predicted by the simple
+Keynesian model.
 
 ## 9. Real-World Examples
 
@@ -392,7 +448,9 @@ In response to the Global Financial Crisis, the UK government introduced:
 - Bank recapitalisation (£500bn)
 - Increased public spending (infrastructure, education)
 
-The budget deficit rose from 2.7% of GDP (2007–08) to 10.2% (2009–10). The OBR estimated the multiplier for the VAT cut at approximately 0.3–0.5 (small, due to the open economy and temporary nature).
+The budget deficit rose from 2.7% of GDP (2007–08) to 10.2% (2009–10). The OBR estimated the
+multiplier for the VAT cut at approximately 0.3–0.5 (small, due to the open economy and temporary
+nature).
 
 ### 9.2 Austerity (2010–2018)
 
@@ -402,7 +460,8 @@ The Coalition government (2010) implemented austerity measures:
 - Welfare reforms (benefit cap, universal credit)
 - VAT increase from 17.5% to 20% (January 2011)
 
-This was contractionary fiscal policy aimed at reducing the deficit. Critics argue it prolonged the recovery; supporters argue it was necessary for market confidence and debt sustainability.
+This was contractionary fiscal policy aimed at reducing the deficit. Critics argue it prolonged the
+recovery; supporters argue it was necessary for market confidence and debt sustainability.
 
 ### 9.3 COVID-19 Response (2020–2021)
 
@@ -413,11 +472,15 @@ The largest peacetime fiscal expansion in UK history:
 - Business support grants and loans
 - Universal Credit uplift of £20/week
 
-Budget deficit peaked at 14.8% of GDP in 2020–21. The multipliers were estimated to be relatively large (1.0–1.5) because the economy was in a deep recession with the zero lower bound binding.
+Budget deficit peaked at 14.8% of GDP in 2020–21. The multipliers were estimated to be relatively
+large (1.0–1.5) because the economy was in a deep recession with the zero lower bound binding.
 
 ## 10. Problem Set
 
-**Problem 1.** An economy has MPC = 0.8, MPT = 0.2, MPM = 0.15. The government increases spending by £50 billion. (a) Calculate the multiplier. (b) Calculate the total change in GDP. (c) If the government had instead cut taxes by £50 billion, what would the change in GDP be? (d) Compare the two approaches.
+**Problem 1.** An economy has MPC = 0.8, MPT = 0.2, MPM = 0.15. The government increases spending by
+£50 billion. (a) Calculate the multiplier. (b) Calculate the total change in GDP. (c) If the
+government had instead cut taxes by £50 billion, what would the change in GDP be? (d) Compare the
+two approaches.
 
 <details>
 <summary>Hint</summary>
@@ -426,7 +489,9 @@ Budget deficit peaked at 14.8% of GDP in 2020–21. The multipliers were estimat
 </p>
 </details>
 
-**Problem 2.** A country's income tax schedule is: 0% on the first £12,570, 20% on £12,571–£50,270, 40% on £50,271–£125,140, 45% above £125,140. Calculate the average tax rate for individuals earning (a) £20,000, (b) £60,000, and (c) £150,000. Is the system progressive?
+**Problem 2.** A country's income tax schedule is: 0% on the first £12,570, 20% on £12,571–£50,270,
+40% on £50,271–£125,140, 45% above £125,140. Calculate the average tax rate for individuals earning
+(a) £20,000, (b) £60,000, and (c) £150,000. Is the system progressive?
 
 <details>
 <summary>Hint</summary>
@@ -435,7 +500,9 @@ Budget deficit peaked at 14.8% of GDP in 2020–21. The multipliers were estimat
 </p>
 </details>
 
-**Problem 3.** Explain why VAT is considered regressive despite being charged at a flat rate. Use a numerical example with two individuals earning £15,000 and £80,000, both spending 90% and 60% of their income respectively on VAT-able goods at 20%.
+**Problem 3.** Explain why VAT is considered regressive despite being charged at a flat rate. Use a
+numerical example with two individuals earning £15,000 and £80,000, both spending 90% and 60% of
+their income respectively on VAT-able goods at 20%.
 
 <details>
 <summary>Hint</summary>
@@ -444,7 +511,10 @@ Budget deficit peaked at 14.8% of GDP in 2020–21. The multipliers were estimat
 </p>
 </details>
 
-**Problem 4.** A government increases spending by £100 billion, financed entirely by borrowing. If the economy is at full employment, the MPC is 0.75, and investment is relatively interest-elastic, analyse the likely effects on (a) output in the short run and long run, (b) interest rates, (c) private investment, and (d) inflation.
+**Problem 4.** A government increases spending by £100 billion, financed entirely by borrowing. If
+the economy is at full employment, the MPC is 0.75, and investment is relatively interest-elastic,
+analyse the likely effects on (a) output in the short run and long run, (b) interest rates, (c)
+private investment, and (d) inflation.
 
 <details>
 <summary>Hint</summary>
@@ -453,16 +523,20 @@ Budget deficit peaked at 14.8% of GDP in 2020–21. The multipliers were estimat
 </p>
 </details>
 
-**Problem 5.** "Automatic stabilisers are superior to discretionary fiscal policy." Evaluate this statement.
+**Problem 5.** "Automatic stabilisers are superior to discretionary fiscal policy." Evaluate this
+statement.
 
 <details>
 <summary>Hint</summary>
 <p>
-Arguments for: (1) No time lags — operate immediately as the cycle turns. (2) No political bias — not subject to electoral manipulation. (3) Automatically reverse, avoiding pro-cyclical policy. Arguments against: (1) Limited scope — can only operate through existing tax/benefit structures. (2) Cannot target specific problems (e.g., regional unemployment, structural issues). (3) May not be sufficient for severe recessions (the 2008 crisis required discretionary stimulus). (4) The strength of automatic stabilisers varies across countries (stronger in Nordic countries with generous welfare states). Best answer: automatic stabilisers are the first line of defence; discretionary policy is needed for exceptional circumstances. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/02-aggregate-demand-and-supply).*
+Arguments for: (1) No time lags — operate immediately as the cycle turns. (2) No political bias — not subject to electoral manipulation. (3) Automatically reverse, avoiding pro-cyclical policy. Arguments against: (1) Limited scope — can only operate through existing tax/benefit structures. (2) Cannot target specific problems (e.g., regional unemployment, structural issues). (3) May not be sufficient for severe recessions (the 2008 crisis required discretionary stimulus). (4) The strength of automatic stabilisers varies across countries (stronger in Nordic countries with generous welfare states). Best answer: automatic stabilisers are the first line of defence; discretionary policy is needed for exceptional circumstances. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/aggregate-demand-and-supply).*
 </p>
 </details>
 
-**Problem 6.** The national debt is £2.7 trillion and GDP is £3.0 trillion. Interest payments on the debt are £110 billion. GDP growth is 2.5% per year. (a) Calculate the debt-to-GDP ratio. (b) If the primary deficit is £50 billion, will the debt-to-GDP ratio rise or fall next year? (c) Explain your reasoning.
+**Problem 6.** The national debt is £2.7 trillion and GDP is £3.0 trillion. Interest payments on the
+debt are £110 billion. GDP growth is 2.5% per year. (a) Calculate the debt-to-GDP ratio. (b) If the
+primary deficit is £50 billion, will the debt-to-GDP ratio rise or fall next year? (c) Explain your
+reasoning.
 
 <details>
 <summary>Hint</summary>
@@ -471,7 +545,8 @@ Arguments for: (1) No time lags — operate immediately as the cycle turns. (2) 
 </p>
 </details>
 
-**Problem 7.** Using the concept of the Laffer curve, explain why a government might increase tax revenue by cutting tax rates. Under what conditions is this most likely to be true?
+**Problem 7.** Using the concept of the Laffer curve, explain why a government might increase tax
+revenue by cutting tax rates. Under what conditions is this most likely to be true?
 
 <details>
 <summary>Hint</summary>
@@ -480,16 +555,20 @@ If the economy is to the right of $t^*$ (tax rates so high that they discourage 
 </p>
 </details>
 
-**Problem 8.** Explain the concept of Ricardian equivalence. Why do most economists believe it does not fully hold in practice?
+**Problem 8.** Explain the concept of Ricardian equivalence. Why do most economists believe it does
+not fully hold in practice?
 
 <details>
 <summary>Hint</summary>
 <p>
-Ricardian equivalence (Barro, 1974): households anticipate future tax liabilities from current government borrowing, so they save the full amount of a deficit-financed tax cut → no change in consumption → multiplier is zero. Why it fails in practice: (1) **Liquidity constraints** — poor households cannot borrow against future income, so a tax cut raises current consumption. (2) **Myopia** — households do not fully anticipate future taxes. (3) **Finite lives** — if taxpayers do not care about future generations, they will not save for taxes they won't pay. (4) **Distortionary taxes** — future taxes create deadweight loss, so the equivalence is not exact. (5) **Uncertainty** — households may not know when or how future taxes will be raised. Empirical evidence: consumption responds to tax cuts, suggesting partial but not full Ricardian equivalence. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/02-aggregate-demand-and-supply).*
+Ricardian equivalence (Barro, 1974): households anticipate future tax liabilities from current government borrowing, so they save the full amount of a deficit-financed tax cut → no change in consumption → multiplier is zero. Why it fails in practice: (1) **Liquidity constraints** — poor households cannot borrow against future income, so a tax cut raises current consumption. (2) **Myopia** — households do not fully anticipate future taxes. (3) **Finite lives** — if taxpayers do not care about future generations, they will not save for taxes they won't pay. (4) **Distortionary taxes** — future taxes create deadweight loss, so the equivalence is not exact. (5) **Uncertainty** — households may not know when or how future taxes will be raised. Empirical evidence: consumption responds to tax cuts, suggesting partial but not full Ricardian equivalence. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/aggregate-demand-and-supply).*
 </p>
 </details>
 
-**Problem 9.** The government is considering two options to stimulate the economy: (A) increase spending on infrastructure by £80 billion, or (B) cut income tax by £80 billion. The economy has MPC = 0.7, MPT = 0.15, MPM = 0.1. (a) Which option has a larger impact on GDP? (b) Which option might have greater long-run benefits? (c) Evaluate the trade-offs.
+**Problem 9.** The government is considering two options to stimulate the economy: (A) increase
+spending on infrastructure by £80 billion, or (B) cut income tax by £80 billion. The economy has MPC
+= 0.7, MPT = 0.15, MPM = 0.1. (a) Which option has a larger impact on GDP? (b) Which option might
+have greater long-run benefits? (c) Evaluate the trade-offs.
 
 <details>
 <summary>Hint</summary>
@@ -498,11 +577,12 @@ $k = 1/(0.3 + 0.15 + 0.1) = 1/0.55 = 1.82$. (a) Option A: $\Delta Y = 1.82 \time
 </p>
 </details>
 
-**Problem 10.** "Fiscal policy was ineffective during the 2008 financial crisis because of crowding out." Evaluate this statement.
+**Problem 10.** "Fiscal policy was ineffective during the 2008 financial crisis because of crowding
+out." Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
 <p>
-Partially false. Crowding out was limited during 2008–09 because: (1) The economy was in deep recession with large output gap → idle resources available. (2) Interest rates were cut to near zero (the zero lower bound) → central bank accommodated fiscal expansion by keeping $r$ low. (3) Private investment was already depressed ( pessimism) → crowding out was minimal. However: (1) The UK's high MPM (~0.3) reduced the multiplier. (2) Some financial crowding out occurred as government borrowing increased. (3) Confidence effects may have amplified or dampened the policy. The effectiveness of fiscal policy was moderate — sufficient to prevent a deeper recession but not enough to deliver a rapid recovery. *Revision: see [Macroeconomic Performance](/docs/docs_ALevel-notes/economics/macro/01-macroeconomic-performance) for data on UK GDP and unemployment post-2008.*
+Partially false. Crowding out was limited during 2008–09 because: (1) The economy was in deep recession with large output gap → idle resources available. (2) Interest rates were cut to near zero (the zero lower bound) → central bank accommodated fiscal expansion by keeping $r$ low. (3) Private investment was already depressed ( pessimism) → crowding out was minimal. However: (1) The UK's high MPM (~0.3) reduced the multiplier. (2) Some financial crowding out occurred as government borrowing increased. (3) Confidence effects may have amplified or dampened the policy. The effectiveness of fiscal policy was moderate — sufficient to prevent a deeper recession but not enough to deliver a rapid recovery. *Revision: see [Macroeconomic Performance](/docs/docs_ALevel-notes/economics/macro/macroeconomic-performance) for data on UK GDP and unemployment post-2008.*
 </p>
 </details>

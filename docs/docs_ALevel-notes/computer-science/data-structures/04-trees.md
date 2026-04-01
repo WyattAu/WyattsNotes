@@ -615,4 +615,4 @@ Parent of node 5 (index 4): parent index = $\lfloor(4-1)/2\rfloor = 1$ → value
 </details>
 
 For revision on sorting, see
-[Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/02-sorting-algorithms).
+[Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/sorting-algorithms).

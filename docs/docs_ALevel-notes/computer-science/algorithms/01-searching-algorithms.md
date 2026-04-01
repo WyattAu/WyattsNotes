@@ -372,6 +372,6 @@ correct form is `mid = low + (high - low) / 2`, which cannot overflow since `hig
 non-negative and less than `INT_MAX`.
 
 For revision on sorting, see
-[Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/02-sorting-algorithms).
+[Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/sorting-algorithms).
 
 </details>

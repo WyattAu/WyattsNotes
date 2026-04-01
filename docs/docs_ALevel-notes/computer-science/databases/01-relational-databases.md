@@ -533,6 +533,6 @@ This is a known issue: BCNF decomposition may lose dependencies. In this case, w
 coexist in a single BCNF relation, BCNF is not achievable without loss.
 
 For revision on data structures, see
-[Hash Tables](/docs/docs_ALevel-notes/computer-science/data-structures/06-hash-tables).
+[Hash Tables](/docs/docs_ALevel-notes/computer-science/data-structures/hash-tables).
 
 </details>

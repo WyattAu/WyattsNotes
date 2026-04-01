@@ -316,7 +316,7 @@ Result: `3 4 + 5 *` ✓
 ### 4.1 Breadth-First Search
 
 BFS uses a queue to explore nodes level by level (see
-[Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs)).
+[Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/graphs)).
 
 ### 4.2 Print Queue / Task Scheduling
 
@@ -581,6 +581,6 @@ operators. Each operand adds 1, each operator subtracts 1 (pops 2, pushes 1). Ne
 $n - (n - 1) = 1$. Starting from an empty stack, the final stack size is $0 + 1 = 1$. $\square$
 
 For revision on complexity analysis, see
-[Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/04-complexity-analysis).
+[Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/complexity-analysis).
 
 </details>

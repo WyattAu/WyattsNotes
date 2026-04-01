@@ -743,4 +743,4 @@ For undirected graphs, we additionally check that the back edge doesn't go to th
 </details>
 
 For revision on algorithms, see
-[Graph Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/03-graph-algorithms).
+[Graph Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/graph-algorithms).

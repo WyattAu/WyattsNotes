@@ -560,6 +560,6 @@ revolutionise computer science and mathematics, as it would imply the existence 
 model of computation.
 
 For revision on algorithms and complexity, see
-[Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/04-complexity-analysis).
+[Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/complexity-analysis).
 
 </details>

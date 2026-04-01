@@ -407,5 +407,5 @@ s = "".join(str(i) for i in range(1000))
 </details>
 
 For revision on number representation, see
-[Number Systems](/docs/docs_ALevel-notes/computer-science/fundamentals/01-number-systems) and
-[Floating Point](/docs/docs_ALevel-notes/computer-science/fundamentals/02-floating-point).
+[Number Systems](/docs/docs_ALevel-notes/computer-science/fundamentals/number-systems) and
+[Floating Point](/docs/docs_ALevel-notes/computer-science/fundamentals/floating-point).

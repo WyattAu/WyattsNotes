@@ -500,6 +500,6 @@ at Layer 3, making decisions about which network to forward packets to, enabling
 communication.
 
 For revision on network security, see
-[Network Security](/docs/docs_ALevel-notes/computer-science/networks/02-network-security).
+[Network Security](/docs/docs_ALevel-notes/computer-science/networks/network-security).
 
 </details>

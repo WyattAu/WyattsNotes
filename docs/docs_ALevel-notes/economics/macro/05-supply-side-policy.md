@@ -14,60 +14,85 @@ sidebar_position: 5
 
 ### 1.1 Definition
 
-We define **supply-side policies** as government policies designed to increase the productive capacity of the economy by shifting the long-run aggregate supply (LRAS) curve to the right.
+We define **supply-side policies** as government policies designed to increase the productive
+capacity of the economy by shifting the long-run aggregate supply (LRAS) curve to the right.
 
 $$\text{LRAS shifts right: } Y^* \uparrow \Rightarrow P \downarrow, Y \uparrow$$
 
-Unlike demand-side policies (fiscal and monetary policy), which aim to manage AD to smooth the business cycle, supply-side policies aim to raise the economy's **potential output** — improving the trade-off between inflation and unemployment in the long run.
+Unlike demand-side policies (fiscal and monetary policy), which aim to manage AD to smooth the
+business cycle, supply-side policies aim to raise the economy's **potential output** — improving the
+trade-off between inflation and unemployment in the long run.
 
 ### 1.2 Why Supply-Side Policy Matters
 
-**Proposition: Sustainable increases in living standards require increases in productive capacity, not just increases in aggregate demand.**
+**Proposition: Sustainable increases in living standards require increases in productive capacity,
+not just increases in aggregate demand.**
 
-_Proof._ Demand-side stimulus can raise output temporarily by closing a recessionary gap, but cannot raise output above potential in the long run (LRAS is vertical). Only by increasing potential output itself — through better technology, more capital, a more skilled workforce, or more efficient markets — can the economy produce more goods and services sustainably. $\blacksquare$
+_Proof._ Demand-side stimulus can raise output temporarily by closing a recessionary gap, but cannot
+raise output above potential in the long run (LRAS is vertical). Only by increasing potential output
+itself — through better technology, more capital, a more skilled workforce, or more efficient
+markets — can the economy produce more goods and services sustainably. $\blacksquare$
 
 $$\text{Long-run growth} = f(\Delta K, \Delta L, \Delta A)$$
 
 where $K$ = capital, $L$ = labour, $A$ = total factor productivity (technology and efficiency).
 
-:::info Board-Specific Note
-CIE (9708) distinguishes between market-oriented and interventionist supply-side policies and requires evaluation of both. AQA emphasises the effect of supply-side policies on the Phillips curve. Edexcel links supply-side policy to productivity and competitiveness.
-:::
+:::info Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
+supply-side policies and requires evaluation of both. AQA emphasises the effect of supply-side
+policies on the Phillips curve. Edexcel links supply-side policy to productivity and
+competitiveness. :::
 
 ## 2. Market-Oriented Supply-Side Policies
 
-These policies work through **incentives and competition**, reducing government intervention to allow markets to allocate resources more efficiently.
+These policies work through **incentives and competition**, reducing government intervention to
+allow markets to allocate resources more efficiently.
 
 ### 2.1 Tax Reform
 
 **Reduction in marginal tax rates** to incentivise work, enterprise, and investment.
 
-**The labour supply effect.** Consider an individual choosing hours of work $h$ vs leisure $\ell$, with $h + \ell = 24$. Utility is $U(C, \ell)$ where $C = w(1-t)h + V$ (after-tax labour income plus non-labour income $V$).
+**The labour supply effect.** Consider an individual choosing hours of work $h$ vs leisure $\ell$,
+with $h + \ell = 24$. Utility is $U(C, \ell)$ where $C = w(1-t)h + V$ (after-tax labour income plus
+non-labour income $V$).
 
 A cut in the income tax rate $t$ raises the after-tax wage $w(1-t)$:
 
-- **Substitution effect**: leisure becomes more expensive (higher opportunity cost) $\Rightarrow$ work more
+- **Substitution effect**: leisure becomes more expensive (higher opportunity cost) $\Rightarrow$
+  work more
 - **Income effect**: higher income allows more leisure $\Rightarrow$ work less
 
-The net effect depends on the relative strength of these effects. Empirical evidence suggests that for prime-age workers, the substitution effect dominates for secondary earners but is small for primary earners. The strongest labour supply response is at the extensive margin (whether to work at all, not how many hours).
+The net effect depends on the relative strength of these effects. Empirical evidence suggests that
+for prime-age workers, the substitution effect dominates for secondary earners but is small for
+primary earners. The strongest labour supply response is at the extensive margin (whether to work at
+all, not how many hours).
 
 **Reduction in corporation tax** to incentivise investment:
 
 $$I = I(r, \tau_c) \quad \text{where } \frac{\partial I}{\partial \tau_c} < 0$$
 
-A lower corporation tax rate $\tau_c$ increases the after-tax return on investment, encouraging firms to invest in capital. The UK reduced corporation tax from 28% (2010) to 19% (2017), partially reversed to 25% (2023).
+A lower corporation tax rate $\tau_c$ increases the after-tax return on investment, encouraging
+firms to invest in capital. The UK reduced corporation tax from 28% (2010) to 19% (2017), partially
+reversed to 25% (2023).
 
 ### 2.2 Labour Market Reform
 
-**Reducing trade union power**: If unions push wages above the equilibrium, the result is unemployment (real-wage unemployment). Reducing union power (e.g., secret ballots, restrictions on strikes) allows wages to adjust to market-clearing levels.
+**Reducing trade union power**: If unions push wages above the equilibrium, the result is
+unemployment (real-wage unemployment). Reducing union power (e.g., secret ballots, restrictions on
+strikes) allows wages to adjust to market-clearing levels.
 
 $$w > w^* \Rightarrow \text{labour demand } < \text{labour supply} \Rightarrow \text{unemployment}$$
 
-**Reducing employment protection legislation**: Making it easier to hire and fire workers reduces firms' perceived risk of taking on new employees, potentially increasing employment. However, it may also increase job insecurity and reduce worker welfare.
+**Reducing employment protection legislation**: Making it easier to hire and fire workers reduces
+firms' perceived risk of taking on new employees, potentially increasing employment. However, it may
+also increase job insecurity and reduce worker welfare.
 
-**Reforming welfare benefits**: Reducing the generosity of unemployment benefits increases the opportunity cost of not working, incentivising job search. But if benefits are too low, it may create poverty traps and reduce aggregate demand (low-income households have high MPCs).
+**Reforming welfare benefits**: Reducing the generosity of unemployment benefits increases the
+opportunity cost of not working, incentivising job search. But if benefits are too low, it may
+create poverty traps and reduce aggregate demand (low-income households have high MPCs).
 
-**Minimum wage reform**: A moderate minimum wage can increase productivity (efficiency wage theory) without significant job losses (Card & Krueger, 1994). However, a minimum wage set above the equilibrium creates real-wage unemployment for low-skilled workers.
+**Minimum wage reform**: A moderate minimum wage can increase productivity (efficiency wage theory)
+without significant job losses (Card & Krueger, 1994). However, a minimum wage set above the
+equilibrium creates real-wage unemployment for low-skilled workers.
 
 ### 2.3 Privatisation and Deregulation
 
@@ -90,14 +115,17 @@ Arguments against:
 
 $$\text{Fewer barriers} \Rightarrow \text{more firms enter} \Rightarrow \text{more competition} \Rightarrow \text{lower prices, higher quality, more innovation}$$
 
-Example: The Big Bang (1986) deregulated London's financial markets, contributing to the growth of the City as a global financial centre.
+Example: The Big Bang (1986) deregulated London's financial markets, contributing to the growth of
+the City as a global financial centre.
 
 ### 2.4 Competition Policy
 
 Laws and institutions that prevent anti-competitive behaviour:
 
-- **UK Competition and Markets Authority (CMA)**: investigates mergers, cartels, and anti-competitive practices
-- **EU Competition Commission**: enforces EU competition law (Article 101 TFEU — cartels; Article 102 TFEU — abuse of dominant position)
+- **UK Competition and Markets Authority (CMA)**: investigates mergers, cartels, and
+  anti-competitive practices
+- **EU Competition Commission**: enforces EU competition law (Article 101 TFEU — cartels; Article
+  102 TFEU — abuse of dominant position)
 
 Anti-competitive practices include:
 
@@ -110,11 +138,13 @@ $$\text{More competition} \Rightarrow P \downarrow, Q \uparrow, \text{consumer s
 
 ## 3. Interventionist Supply-Side Policies
 
-These policies involve direct government action to improve the quality and quantity of factors of production.
+These policies involve direct government action to improve the quality and quantity of factors of
+production.
 
 ### 3.1 Investment in Education and Training
 
-**Human capital theory** (Becker, 1964): education and training increase the productivity of labour, shifting the production function upward.
+**Human capital theory** (Becker, 1964): education and training increase the productivity of labour,
+shifting the production function upward.
 
 $$Y = A \cdot F(K, hL)$$
 
@@ -127,7 +157,9 @@ Policies:
 - Student loans and grants for higher education
 - Lifelong learning programmes
 
-**Returns to education**: Empirical estimates suggest an additional year of schooling raises earnings by 8–13% (Psacharopoulos & Patrinos, 2018). However, there may be credential inflation — if everyone gets more education, the relative advantage diminishes.
+**Returns to education**: Empirical estimates suggest an additional year of schooling raises
+earnings by 8–13% (Psacharopoulos & Patrinos, 2018). However, there may be credential inflation — if
+everyone gets more education, the relative advantage diminishes.
 
 ### 3.2 Investment in Infrastructure
 
@@ -135,13 +167,17 @@ Public investment in transport, broadband, energy, and communications:
 
 $$\text{Better infrastructure} \Rightarrow \text{lower transport/communication costs} \Rightarrow \text{higher productivity}$$
 
-The UK's Northern Powerhouse Rail, HS2 (now partially cancelled), and gigabit broadband rollout are examples.
+The UK's Northern Powerhouse Rail, HS2 (now partially cancelled), and gigabit broadband rollout are
+examples.
 
-**The multiplier effect of infrastructure**: Infrastructure investment has a relatively high multiplier (1.5–2.0) because it creates jobs directly (construction) and indirectly (supply chains), while also improving long-run productivity.
+**The multiplier effect of infrastructure**: Infrastructure investment has a relatively high
+multiplier (1.5–2.0) because it creates jobs directly (construction) and indirectly (supply chains),
+while also improving long-run productivity.
 
 ### 3.3 Research and Development (R&D)
 
-Government funding for basic research (which private firms underprovide due to positive externalities):
+Government funding for basic research (which private firms underprovide due to positive
+externalities):
 
 $$\text{Social return to R\&D} > \text{private return to R\&D}$$
 
@@ -156,7 +192,8 @@ Targeted government support for specific industries or technologies:
 - **Export promotion** (UK Export Finance)
 - **Special economic zones** with tax incentives
 
-**Evaluation**: Industrial policy can correct market failures (positive externalities, coordination failures) but risks government failure (picking winners, corruption, rent-seeking).
+**Evaluation**: Industrial policy can correct market failures (positive externalities, coordination
+failures) but risks government failure (picking winners, corruption, rent-seeking).
 
 ### 3.5 Regional Policy
 
@@ -189,21 +226,27 @@ Policies to reduce geographical inequality:
 | Effect on prices | Demand-pull inflation if overdone  | Deflationary (increases supply)          |
 | Phillips curve   | Moves along SRPC                   | Shifts SRPC left (lower $u^*$ and $\pi$) |
 
-**The ideal policy mix**: Use demand-side policy to stabilise the economy in the short run, and supply-side policy to raise living standards in the long run. The two are complementary, not substitutes.
+**The ideal policy mix**: Use demand-side policy to stabilise the economy in the short run, and
+supply-side policy to raise living standards in the long run. The two are complementary, not
+substitutes.
 
-:::tip Exam Technique
-The strongest evaluation answers recognise that supply-side policies take time to work. An economy in a deep recession needs immediate demand-side stimulus, not just long-run supply-side reforms. But sustained growth requires both. Always reference the time horizon.
-:::
+:::tip Exam Technique The strongest evaluation answers recognise that supply-side policies take time
+to work. An economy in a deep recession needs immediate demand-side stimulus, not just long-run
+supply-side reforms. But sustained growth requires both. Always reference the time horizon. :::
 
 ### 4.3 Supply-Side Effects on the Phillips Curve
 
-Supply-side policies that reduce the natural rate of unemployment ($u^*$) or increase productivity shift the short-run Phillips curve to the left:
+Supply-side policies that reduce the natural rate of unemployment ($u^*$) or increase productivity
+shift the short-run Phillips curve to the left:
 
 $$\pi = \pi^e - \beta(u - u^*) + \varepsilon$$
 
-If supply-side policy reduces $u^*$ from 6% to 4%, the Phillips curve shifts left. At any given inflation rate, unemployment is now lower. Alternatively, at any given unemployment rate, inflation is now lower.
+If supply-side policy reduces $u^*$ from 6% to 4%, the Phillips curve shifts left. At any given
+inflation rate, unemployment is now lower. Alternatively, at any given unemployment rate, inflation
+is now lower.
 
-**Productivity growth** (a key supply-side objective) also shifts the Phillips curve left by reducing cost-push inflation:
+**Productivity growth** (a key supply-side objective) also shifts the Phillips curve left by
+reducing cost-push inflation:
 
 $$\text{Productivity } \uparrow \Rightarrow \text{unit labour costs } \downarrow \Rightarrow \text{SRAS shifts right} \Rightarrow P \downarrow$$
 
@@ -219,11 +262,13 @@ $$\text{Labour productivity} = \frac{Y}{L} = \frac{\text{Output}}{\text{Hours wo
 
 $$\text{Total factor productivity (TFP)} = \frac{Y}{K^\alpha L^{1-\alpha}}$$
 
-TFP captures the efficiency with which capital and labour are combined — it reflects technology, institutions, and know-how. Long-run growth in living standards depends primarily on TFP growth.
+TFP captures the efficiency with which capital and labour are combined — it reflects technology,
+institutions, and know-how. Long-run growth in living standards depends primarily on TFP growth.
 
 $$g_Y = g_A + \alpha g_K + (1-\alpha) g_L$$
 
-where $g_A$ is TFP growth. In most advanced economies, $g_A$ accounts for 50–70% of long-run per capita growth (Solow residual).
+where $g_A$ is TFP growth. In most advanced economies, $g_A$ accounts for 50–70% of long-run per
+capita growth (Solow residual).
 
 ### 5.2 The UK Productivity Puzzle
 
@@ -259,24 +304,29 @@ This "productivity puzzle" has been attributed to:
 | France      | 0.7%                                   | Infrastructure, high-speed rail, nuclear energy          |
 | US          | 1.3%                                   | Technology sector, venture capital, university research  |
 
-The UK lags behind comparable economies, suggesting scope for improvement through supply-side reforms that learn from international best practice.
+The UK lags behind comparable economies, suggesting scope for improvement through supply-side
+reforms that learn from international best practice.
 
-:::tip Exam Technique
-When evaluating supply-side policies, use international comparisons. "South Korea achieved 7% annual growth for three decades by investing 5% of GDP in education" is more persuasive than abstract arguments. But always acknowledge differences in context — policies that work in one country may not transfer directly.
-:::
+:::tip Exam Technique When evaluating supply-side policies, use international comparisons. "South
+Korea achieved 7% annual growth for three decades by investing 5% of GDP in education" is more
+persuasive than abstract arguments. But always acknowledge differences in context — policies that
+work in one country may not transfer directly. :::
 
 ## 6. Problem Set
 
-**Problem 1.** Explain, using AD/AS analysis, how a successful supply-side policy would affect (a) output, (b) the price level, (c) unemployment, and (d) the government budget balance in both the short run and long run.
+**Problem 1.** Explain, using AD/AS analysis, how a successful supply-side policy would affect (a)
+output, (b) the price level, (c) unemployment, and (d) the government budget balance in both the
+short run and long run.
 
 <details>
 <summary>Hint</summary>
 <p>
-(a) LRAS shifts right → $Y^*$ increases. In the short run, SRAS also shifts right (lower costs). Output rises. (b) Price level falls (more supply at every price level). (c) Unemployment falls as firms hire more workers to produce the higher output. The natural rate $u^*$ falls. (d) Budget balance: tax revenue rises (more income, profits, consumption), and welfare spending falls (less unemployment). The budget improves, potentially creating a surplus. Long run: all effects are sustained and amplified. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/02-aggregate-demand-and-supply).*
+(a) LRAS shifts right → $Y^*$ increases. In the short run, SRAS also shifts right (lower costs). Output rises. (b) Price level falls (more supply at every price level). (c) Unemployment falls as firms hire more workers to produce the higher output. The natural rate $u^*$ falls. (d) Budget balance: tax revenue rises (more income, profits, consumption), and welfare spending falls (less unemployment). The budget improves, potentially creating a surplus. Long run: all effects are sustained and amplified. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/aggregate-demand-and-supply).*
 </p>
 </details>
 
-**Problem 2.** Evaluate the argument that reducing income tax rates will significantly increase labour supply and economic growth.
+**Problem 2.** Evaluate the argument that reducing income tax rates will significantly increase
+labour supply and economic growth.
 
 <details>
 <summary>Hint</summary>
@@ -285,7 +335,8 @@ Arguments for: (1) Higher after-tax wage increases incentive to work (substituti
 </p>
 </details>
 
-**Problem 3.** "Privatisation always improves economic efficiency." Evaluate this statement with reference to natural monopolies and the UK's experience with rail and water privatisation.
+**Problem 3.** "Privatisation always improves economic efficiency." Evaluate this statement with
+reference to natural monopolies and the UK's experience with rail and water privatisation.
 
 <details>
 <summary>Hint</summary>
@@ -294,25 +345,29 @@ False. Privatisation improves efficiency when: (1) The industry is competitive �
 </p>
 </details>
 
-**Problem 4.** Using the Phillips curve framework, explain how successful supply-side policies would change the trade-off between inflation and unemployment.
+**Problem 4.** Using the Phillips curve framework, explain how successful supply-side policies would
+change the trade-off between inflation and unemployment.
 
 <details>
 <summary>Hint</summary>
 <p>
-Supply-side policies that reduce $u^*$ shift the short-run Phillips curve left and the long-run Phillips curve left. At the new equilibrium, both inflation and unemployment can be lower simultaneously — a favourable shift in the trade-off. Additionally, productivity-enhancing supply-side policies reduce cost-push inflation pressures (lower unit labour costs), further shifting the Phillips curve left. This is the key advantage of supply-side policy over demand-side policy: demand-side policy can only move the economy along the Phillips curve (trading one objective for another), while supply-side policy can improve both objectives. *Revision: see [Macroeconomic Performance](/docs/docs_ALevel-notes/economics/macro/01-macroeconomic-performance) for the Phillips curve derivation.*
+Supply-side policies that reduce $u^*$ shift the short-run Phillips curve left and the long-run Phillips curve left. At the new equilibrium, both inflation and unemployment can be lower simultaneously — a favourable shift in the trade-off. Additionally, productivity-enhancing supply-side policies reduce cost-push inflation pressures (lower unit labour costs), further shifting the Phillips curve left. This is the key advantage of supply-side policy over demand-side policy: demand-side policy can only move the economy along the Phillips curve (trading one objective for another), while supply-side policy can improve both objectives. *Revision: see [Macroeconomic Performance](/docs/docs_ALevel-notes/economics/macro/macroeconomic-performance) for the Phillips curve derivation.*
 </p>
 </details>
 
-**Problem 5.** Compare and contrast the likely effects on the UK economy of (a) a £50 billion increase in government spending on education and training, and (b) a £50 billion cut in corporation tax. Which policy would you recommend and why?
+**Problem 5.** Compare and contrast the likely effects on the UK economy of (a) a £50 billion
+increase in government spending on education and training, and (b) a £50 billion cut in corporation
+tax. Which policy would you recommend and why?
 
 <details>
 <summary>Hint</summary>
 <p>
-Option (a) — education spending: (1) Direct AD stimulus (short-run boost). (2) LRAS shifts right in the medium to long term (more skilled workforce). (3) Progressive — benefits lower-income students. (4) Takes 5–15 years to fully materialise. (5) Adds to deficit. Option (b) — corporation tax cut: (1) Smaller AD effect (firms may not spend immediately). (2) LRAS shifts right if investment increases (more capital). (3) Regressive — benefits shareholders and high earners. (4) Faster impact if firms respond quickly. (5) Revenue loss may be partially offset by Laffer curve effects. Recommendation: depends on the time horizon and economic context. In a recession, both provide some demand stimulus. Long-term, education has higher social returns but takes longer. The best policy mix might combine both: targeted education investment with moderate tax reform. *Revision: see [Fiscal Policy](/docs/docs_ALevel-notes/economics/macro/04-fiscal-policy) for evaluation of tax changes.*
+Option (a) — education spending: (1) Direct AD stimulus (short-run boost). (2) LRAS shifts right in the medium to long term (more skilled workforce). (3) Progressive — benefits lower-income students. (4) Takes 5–15 years to fully materialise. (5) Adds to deficit. Option (b) — corporation tax cut: (1) Smaller AD effect (firms may not spend immediately). (2) LRAS shifts right if investment increases (more capital). (3) Regressive — benefits shareholders and high earners. (4) Faster impact if firms respond quickly. (5) Revenue loss may be partially offset by Laffer curve effects. Recommendation: depends on the time horizon and economic context. In a recession, both provide some demand stimulus. Long-term, education has higher social returns but takes longer. The best policy mix might combine both: targeted education investment with moderate tax reform. *Revision: see [Fiscal Policy](/docs/docs_ALevel-notes/economics/macro/fiscal-policy) for evaluation of tax changes.*
 </p>
 </details>
 
-**Problem 6.** Explain why supply-side policies are difficult to evaluate. In your answer, refer to the problems of causation, time lags, and measurement.
+**Problem 6.** Explain why supply-side policies are difficult to evaluate. In your answer, refer to
+the problems of causation, time lags, and measurement.
 
 <details>
 <summary>Hint</summary>
@@ -321,7 +376,9 @@ Three key problems: (1) **Causation**: it is hard to isolate the effect of a spe
 </p>
 </details>
 
-**Problem 7.** A government reduces unemployment benefits by 20%. Analyse the likely supply-side effects of this policy, including its impact on (a) the natural rate of unemployment, (b) the quality of job matches, and (c) income inequality.
+**Problem 7.** A government reduces unemployment benefits by 20%. Analyse the likely supply-side
+effects of this policy, including its impact on (a) the natural rate of unemployment, (b) the
+quality of job matches, and (c) income inequality.
 
 <details>
 <summary>Hint</summary>
@@ -330,7 +387,8 @@ Three key problems: (1) **Causation**: it is hard to isolate the effect of a spe
 </p>
 </details>
 
-**Problem 8.** "Supply-side policies are more important than demand-side policies for achieving sustained economic growth." Discuss.
+**Problem 8.** "Supply-side policies are more important than demand-side policies for achieving
+sustained economic growth." Discuss.
 
 <details>
 <summary>Hint</summary>
