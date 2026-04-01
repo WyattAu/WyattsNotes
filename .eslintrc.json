@@ -17,7 +17,6 @@
     "sourceType": "module"
   },
   "rules": {
-    // Prettier configuration moved here
     "prettier/prettier": [
       "error",
       {
@@ -34,11 +33,9 @@
         "proseWrap": "always",
         "htmlWhitespaceSensitivity": "css",
         "endOfLine": "auto",
-        "quoteProps": "as-needed",
-        "plugins": ["prettier-plugin-organize-imports"]
+        "quoteProps": "as-needed"
       }
     ],
-    // Existing ESLint rules
     "react/prop-types": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
@@ -84,23 +81,18 @@
     ]
   },
   "overrides": [
-    // TypeScript overrides
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": [
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
-      ],
+      "extends": ["plugin:@typescript-eslint/recommended-requiring-type-checking"],
       "parserOptions": {
         "project": ["./tsconfig.json"]
       }
     },
-    // Test files overrides
     {
       "files": ["*.test.*", "**/__tests__/**"],
       "rules": {
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/unbound-method": "off",
-        // Prettier overrides for tests
         "prettier/prettier": [
           "error",
           {
@@ -110,14 +102,12 @@
         ]
       }
     },
-    // JavaScript/CJS files
     {
       "files": ["*.js", "*.cjs"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"
       }
     },
-    // Astro files
     {
       "files": ["*.astro"],
       "parser": "astro-eslint-parser",
@@ -135,7 +125,6 @@
         ]
       }
     },
-    // Markdown/MDX files
     {
       "files": ["*.md", "*.mdx"],
       "rules": {
@@ -148,7 +137,6 @@
         ]
       }
     },
-    // YAML files
     {
       "files": ["*.yaml", "*.yml"],
       "rules": {
@@ -161,7 +149,6 @@
         ]
       }
     },
-    // JSON files
     {
       "files": ["*.json", "*.json5", "*.jsonc"],
       "rules": {

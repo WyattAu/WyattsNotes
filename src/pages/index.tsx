@@ -1,17 +1,17 @@
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Heading from "@theme/Heading";
-import Layout from "@theme/Layout";
-import clsx from "clsx";
-import React, { useState } from "react";
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Heading from '@theme/Heading';
+import Layout from '@theme/Layout';
+import clsx from 'clsx';
+import React, { useState } from 'react';
 
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
 type NavigationItem =
-  | { type: "single"; label: string; to: string }
+  | { type: 'single'; label: string; to: string }
   | {
-      type: "group";
+      type: 'group';
       label: string;
       items: Array<{ label: string; to: string }>;
     };
@@ -25,17 +25,10 @@ interface GroupModalProps {
 function GroupModal({ title, items, onClose }: GroupModalProps) {
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
-      <div
-        className={styles.modalContainer}
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalHeader}>
           <h3>{title}</h3>
-          <button
-            className={styles.closeButton}
-            onClick={onClose}
-            aria-label="Close"
-          >
+          <button className={styles.closeButton} onClick={onClose} aria-label="Close">
             ×
           </button>
         </div>
@@ -44,7 +37,7 @@ function GroupModal({ title, items, onClose }: GroupModalProps) {
             <Link
               key={index}
               className={clsx(
-                "button button--secondary button--lg shadow--md",
+                'button button--secondary button--lg shadow--md',
                 styles.heroButton,
                 styles.modalButton,
               )}
@@ -66,53 +59,53 @@ function HomepageHeader() {
 
   const navItems: NavigationItem[] = [
     {
-      type: "group",
-      label: "Year 12-13 Syllabus",
+      type: 'group',
+      label: 'Year 12-13 Syllabus',
       items: [
-        { label: "IB Notes", to: "/docs/docs_IB-notes/intro" },
-        { label: "A Level Notes", to: "/docs/docs_ALevel-notes/intro" },
-        { label: "DSE Notes", to: "/docs/docs_DSE-notes/intro" },
+        { label: 'IB Notes', to: '/docs/docs_IB-notes/intro' },
+        { label: 'A Level Notes', to: '/docs/docs_ALevel-notes/intro' },
+        { label: 'DSE Notes', to: '/docs/docs_DSE-notes/intro' },
       ],
     },
     {
-      type: "group",
-      label: "Development Tools",
+      type: 'group',
+      label: 'Development Tools',
       items: [
-        { label: "C++ Notes", to: "/docs/docs_cpp-notes/intro" },
-        { label: "Dart Notes", to: "/docs/docs_dart-notes/intro" },
-        { label: "Java Notes", to: "/docs/docs_java-notes/intro" },
-        { label: "Python Notes", to: "/docs/docs_python-notes/intro" },
-        { label: "Git Notes", to: "/docs/docs_git-notes/intro" },
+        { label: 'C++ Notes', to: '/docs/docs_cpp-notes/intro' },
+        { label: 'Dart Notes', to: '/docs/docs_dart-notes/intro' },
+        { label: 'Java Notes', to: '/docs/docs_java-notes/intro' },
+        { label: 'Python Notes', to: '/docs/docs_python-notes/intro' },
+        { label: 'Git Notes', to: '/docs/docs_git-notes/intro' },
       ],
     },
     {
-      type: "group",
-      label: "Operating System",
-      items: [{ label: "TrueNAS", to: "/docs/docs_truenas-notes/intro" }],
+      type: 'group',
+      label: 'Operating System',
+      items: [{ label: 'TrueNAS', to: '/docs/docs_truenas-notes/intro' }],
     },
     {
-      type: "group",
-      label: "Machine Learning",
+      type: 'group',
+      label: 'Machine Learning',
       items: [
         {
-          label: "Probabilistic ML",
-          to: "/docs/docs_ProbabilisticML-notes/intro",
+          label: 'Probabilistic ML',
+          to: '/docs/docs_ProbabilisticML-notes/intro',
         },
       ],
     },
     {
-      type: "group",
-      label: "Others",
+      type: 'group',
+      label: 'Others',
       items: [
-        { label: "Licensing Notes", to: "/docs/docs_licensing-notes/intro" },
-        { label: "Tuning", to: "/docs/docs_tuning-notes/intro" },
-        { label: "Contributing Help", to: "/docs/docs_general-notes/intro" },
+        { label: 'Licensing Notes', to: '/docs/docs_licensing-notes/intro' },
+        { label: 'Tuning', to: '/docs/docs_tuning-notes/intro' },
+        { label: 'Contributing Help', to: '/docs/docs_general-notes/intro' },
       ],
     },
   ];
 
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -122,11 +115,11 @@ function HomepageHeader() {
         <div className={styles.buttonGroup}>
           {navItems.map((item, index) => (
             <div key={index} className={styles.navItemContainer}>
-              {item.type === "group" ? (
+              {item.type === 'group' ? (
                 <>
                   <button
                     className={clsx(
-                      "button button--secondary button--lg shadow--md",
+                      'button button--secondary button--lg shadow--md',
                       styles.heroButton,
                       styles.groupButton,
                     )}
@@ -145,7 +138,7 @@ function HomepageHeader() {
               ) : (
                 <Link
                   className={clsx(
-                    "button button--secondary button--lg shadow--md",
+                    'button button--secondary button--lg shadow--md',
                     styles.heroButton,
                   )}
                   to={item.to}
@@ -165,10 +158,7 @@ export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout
-      title={`${siteConfig.title} - Home`}
-      description={siteConfig.tagline}
-    >
+    <Layout title={`${siteConfig.title} - Home`} description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
