@@ -75,7 +75,7 @@ const config: Config = {
   ...compilationConfig,
 
   // TODO: Fix remaining broken links across IB/DSE/C++ notes, then revert to 'throw'
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
