@@ -186,12 +186,12 @@ $|\text{PED}|$.
 
 **Classification:**
 
-| $          | \text{PED}          | $                         | Description | Interpretation            |
-| ---------- | ------------------- | ------------------------- | ----------- | ------------------------- |
+| $          | \text{PED}          | $                         | Description | Interpretation               |
+| ---------- | ------------------- | ------------------------- | ----------- | ---------------------------- |
 | $= 0$      | Perfectly inelastic | Vertical demand curve     |
-| $0 \lt{}   | \text{PED}          | \lt{} 1$                  | Inelastic   | %$\Delta Q$ < %$\Delta P$ |
+| $0 \lt{}   | \text{PED}          | \lt{} 1$                  | Inelastic   | %$\Delta Q$ &lt; %$\Delta P$ |
 | $= 1$      | Unit elastic        | %$\Delta Q$ = %$\Delta P$ |
-| $1 \lt{}   | \text{PED}          | \lt{} \infty$             | Elastic     | %$\Delta Q$ > %$\Delta P$ |
+| $1 \lt{}   | \text{PED}          | \lt{} \infty$             | Elastic     | %$\Delta Q$ &gt; %$\Delta P$ |
 | $= \infty$ | Perfectly elastic   | Horizontal demand curve   |
 
 ### 4.2 PED and Total Revenue

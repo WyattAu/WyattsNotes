@@ -75,14 +75,14 @@ class Graph:
             self.adj[v].append((u, weight))
 ```
 
-| Property          | Value              |
-| ----------------- | ------------------ | --- | --- |
-| Space             | $O(n +             | E   | )$  |
-| Add edge          | $O(1)$             |
-| Remove edge       | $O(\text{degree})$ |
-| Check adjacency   | $O(\text{degree})$ |
-| List neighbours   | $O(\text{degree})$ |
-| Iterate all edges | $O(n +             | E   | )$  |
+| Property          | Value                    |
+| ----------------- | ------------------------ |
+| Space             | $O(n + \lvert E \rvert)$ |
+| Add edge          | $O(1)$                   |
+| Remove edge       | $O(\text{degree})$       |
+| Check adjacency   | $O(\text{degree})$       |
+| List neighbours   | $O(\text{degree})$       |
+| Iterate all edges | $O(n + \lvert E \rvert)$ |
 
 **Best for:** Sparse graphs ($|E| \ll n^2$).
 

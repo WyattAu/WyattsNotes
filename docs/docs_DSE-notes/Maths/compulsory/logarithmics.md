@@ -541,123 +541,135 @@ Sketch $y = \log_2(x - 3) + 1$.
 
 ---
 
+### Wrap-up Questions
+
+**Question 1.** Solve $\log_3(x^2 - 4) - \log_3(x + 2) = 1$.
+
 <details>
-<summary>Wrap-up Questions</summary>
+<summary>Answer</summary>
 
-1. **Question:** Solve $\log_3(x^2 - 4) - \log_3(x + 2) = 1$.
+- Domain: $x^2 - 4 > 0$ and $x + 2 > 0$, so $x > 2$.
+- Quotient rule: $\log_3 \dfrac{x^2 - 4}{x + 2} = 1$.
+- Factor numerator: $\dfrac{(x-2)(x+2)}{x+2} = x - 2$ (valid since $x \neq -2$).
+- Convert: $x - 2 = 3^1 = 3$, so $x = 5$.
+- Check: $5 > 2$ is satisfied. Solution: $x = 5$.
 
-   <details>
-   <summary>Answer</summary>
-   - Domain: $x^2 - 4 > 0$ and $x + 2 > 0$, so $x > 2$.
-   - Quotient rule: $\log_3 \dfrac{x^2 - 4}{x + 2} = 1$.
-   - Factor numerator: $\dfrac{(x-2)(x+2)}{x+2} = x - 2$ (valid since $x \neq -2$).
-   - Convert: $x - 2 = 3^1 = 3$, so $x = 5$.
-   - Check: $5 > 2$ is satisfied. Solution: $x = 5$.
+</details>
 
-   </details>
+**Question 2.** Solve $2^{3x-1} = 5^{x+1}$. Give your answer in terms of logarithms.
 
-2. **Question:** Solve $2^{3x-1} = 5^{x+1}$. Give your answer in terms of logarithms.
+<details>
+<summary>Answer</summary>
 
-   <details>
-   <summary>Answer</summary>
-   - Take $\log$ of both sides: $\log(2^{3x-1}) = \log(5^{x+1})$.
-   - Power rule: $(3x - 1)\log 2 = (x + 1)\log 5$.
-   - Expand: $3x\log 2 - \log 2 = x\log 5 + \log 5$.
-   - Collect $x$ terms: $x(3\log 2 - \log 5) = \log 5 + \log 2$.
-   - $x = \dfrac{\log 5 + \log 2}{3\log 2 - \log 5} = \dfrac{\log 10}{3\log 2 - \log 5} = \dfrac{1}{3\log 2 - \log 5}$.
+- Take $\log$ of both sides: $\log(2^{3x-1}) = \log(5^{x+1})$.
+- Power rule: $(3x - 1)\log 2 = (x + 1)\log 5$.
+- Expand: $3x\log 2 - \log 2 = x\log 5 + \log 5$.
+- Collect $x$ terms: $x(3\log 2 - \log 5) = \log 5 + \log 2$.
+- $x = \dfrac{\log 5 + \log 2}{3\log 2 - \log 5} = \dfrac{\log 10}{3\log 2 - \log 5} = \dfrac{1}{3\log 2 - \log 5}$.
 
-   </details>
+</details>
 
-3. **Question:** Simplify $\dfrac{\log_8 27}{\log_8 9}$ without using a calculator.
+**Question 3.** Simplify $\dfrac{\log_8 27}{\log_8 9}$ without using a calculator.
 
-   <details>
-   <summary>Answer</summary>
-   - Let the expression equal $y$. By the change of base formula, $y = \log_9 27$.
-   - Write bases and argument as powers of 3: $y = \dfrac{\log_3 27}{\log_3 9} = \dfrac{3}{2}$.
-   - Alternatively: $\log_8 27 = \dfrac{\log 27}{\log 8} = \dfrac{3\log 3}{3\log 2}$ and $\log_8 9 = \dfrac{2\log 3}{3\log 2}$, so the ratio is $\dfrac{3\log 3 / (3\log 2)}{2\log 3 / (3\log 2)} = \dfrac{3}{2}$.
+<details>
+<summary>Answer</summary>
 
-   </details>
+- Let the expression equal $y$. By the change of base formula, $y = \log_9 27$.
+- Write bases and argument as powers of 3: $y = \dfrac{\log_3 27}{\log_3 9} = \dfrac{3}{2}$.
+- Alternatively: $\log_8 27 = \dfrac{\log 27}{\log 8} = \dfrac{3\log 3}{3\log 2}$ and
+  $\log_8 9 = \dfrac{2\log 3}{3\log 2}$, so the ratio is
+  $\dfrac{3\log 3 / (3\log 2)}{2\log 3 / (3\log 2)} = \dfrac{3}{2}$.
 
-4. **Question:** The population of a bacteria culture grows exponentially. At 12:00, the population
-   is $10,000$. At 14:00, the population is $40,000$. Find the population at 17:00.
+</details>
 
-   <details>
-   <summary>Answer</summary>
-   - Model: $P(t) = P_0 \cdot a^t$ where $t$ is in hours from 12:00.
-   - At $t = 0$: $P_0 = 10,000$.
-   - At $t = 2$: $40,000 = 10,000 \cdot a^2$, so $a^2 = 4$, giving $a = 2$.
-   - At $t = 5$ (17:00): $P(5) = 10,000 \cdot 2^5 = 320,000$.
+**Question 4.** The population of a bacteria culture grows exponentially. At 12:00, the population
+is $10,000$. At 14:00, the population is $40,000$. Find the population at 17:00.
 
-   </details>
+<details>
+<summary>Answer</summary>
 
-5. **Question:** Solve $9^x - 6 \cdot 3^x - 27 = 0$.
+- Model: $P(t) = P_0 \cdot a^t$ where $t$ is in hours from 12:00.
+- At $t = 0$: $P_0 = 10,000$.
+- At $t = 2$: $40,000 = 10,000 \cdot a^2$, so $a^2 = 4$, giving $a = 2$.
+- At $t = 5$ (17:00): $P(5) = 10,000 \cdot 2^5 = 320,000$.
 
-   <details>
-   <summary>Answer</summary>
-   - Note $9^x = (3^2)^x = 3^{2x} = (3^x)^2$. Let $u = 3^x$ ($u > 0$).
-   - Substitute: $u^2 - 6u - 27 = 0$.
-   - Factor: $(u - 9)(u + 3) = 0$, so $u = 9$ or $u = -3$.
-   - Since $u > 0$, only $u = 9$, giving $3^x = 9 = 3^2$, so $x = 2$.
+</details>
 
-   </details>
+**Question 5.** Solve $9^x - 6 \cdot 3^x - 27 = 0$.
 
-6. **Question:** A substance has a half-life of 8 years. How long does it take for 90% of the
-   substance to decay?
+<details>
+<summary>Answer</summary>
 
-   <details>
-   <summary>Answer</summary>
-   - Model: $M(t) = M_0 \cdot a^t$ where $a = 2^{-1/8}$ (since $M(8) = \frac{1}{2}M_0$).
-   - 90% decay means $M(t) = 0.1M_0$.
-   - $0.1 = a^t = \left(2^{-1/8}\right)^t = 2^{-t/8}$.
-   - Take $\log$: $\log 0.1 = -\dfrac{t}{8} \log 2$.
-   - $t = \dfrac{-8 \log 0.1}{\log 2} = \dfrac{8}{\log 2} \approx 26.6$ years.
+- Note $9^x = (3^2)^x = 3^{2x} = (3^x)^2$. Let $u = 3^x$ ($u > 0$).
+- Substitute: $u^2 - 6u - 27 = 0$.
+- Factor: $(u - 9)(u + 3) = 0$, so $u = 9$ or $u = -3$.
+- Since $u > 0$, only $u = 9$, giving $3^x = 9 = 3^2$, so $x = 2$.
 
-   </details>
+</details>
 
-7. **Question:** If $\log_2 3 = a$ and $\log_2 5 = b$, express $\log_2 7.5$ in terms of $a$ and $b$.
+**Question 6.** A substance has a half-life of 8 years. How long does it take for 90% of the
+substance to decay?
 
-   <details>
-   <summary>Answer</summary>
-   - $7.5 = \dfrac{15}{2} = \dfrac{3 \times 5}{2}$.
-   - $\log_2 7.5 = \log_2 3 + \log_2 5 - \log_2 2 = a + b - 1$.
+<details>
+<summary>Answer</summary>
 
-   </details>
+- Model: $M(t) = M_0 \cdot a^t$ where $a = 2^{-1/8}$ (since $M(8) = \frac{1}{2}M_0$).
+- 90% decay means $M(t) = 0.1M_0$.
+- $0.1 = a^t = \left(2^{-1/8}\right)^t = 2^{-t/8}$.
+- Take $\log$: $\log 0.1 = -\dfrac{t}{8} \log 2$.
+- $t = \dfrac{-8 \log 0.1}{\log 2} = \dfrac{8}{\log 2} \approx 26.6$ years.
 
-8. **Question:** Solve the inequality $\log_{0.5}(2x + 1) > \log_{0.5}(x + 4)$.
+</details>
 
-   <details>
-   <summary>Answer</summary>
-   - Domain: $2x + 1 > 0 \implies x > -\dfrac{1}{2}$, and $x + 4 > 0 \implies x > -4$. Combined: $x > -\dfrac{1}{2}$.
-   - Since the base $0.5 < 1$, the logarithmic function is strictly decreasing, so the inequality sign reverses: $2x + 1 < x + 4$.
-   - $x < 3$.
-   - Combined with the domain: $-\dfrac{1}{2} < x < 3$.
+**Question 7.** If $\log_2 3 = a$ and $\log_2 5 = b$, express $\log_2 7.5$ in terms of $a$ and $b$.
 
-   </details>
+<details>
+<summary>Answer</summary>
 
-9. **Question:** Express $2\log x - \log(x^2 - 4) + \log(x + 2)$ as a single logarithm, stating any
-   restrictions on $x$.
+- $7.5 = \dfrac{15}{2} = \dfrac{3 \times 5}{2}$.
+- $\log_2 7.5 = \log_2 3 + \log_2 5 - \log_2 2 = a + b - 1$.
 
-   <details>
-   <summary>Answer</summary>
-   - Restrictions: $x > 0$, $x^2 - 4 > 0 \implies x > 2$ or $x < -2$, and $x + 2 > 0 \implies x > -2$. Combined: $x > 2$.
-   - Combine: $2\log x + \log(x + 2) - \log(x^2 - 4) = \log(x^2) + \log(x+2) - \log(x^2 - 4)$.
-   - $= \log\dfrac{x^2(x+2)}{x^2 - 4} = \log\dfrac{x^2(x+2)}{(x-2)(x+2)} = \log\dfrac{x^2}{x-2}$.
-   - Note: the factor $(x+2)$ cancels since $x + 2 \neq 0$ under the domain $x > 2$.
+</details>
 
-   </details>
+**Question 8.** Solve the inequality $\log_{0.5}(2x + 1) > \log_{0.5}(x + 4)$.
 
-10. **Question:** An investor deposits $\$5,000$ into an account earning $4\%$ interest compounded
-    quarterly. How long (to the nearest quarter) does it take for the balance to reach $\$10,000$?
+<details>
+<summary>Answer</summary>
 
-    <details>
-    <summary>Answer</summary>
-    - $A = P\left(1 + \dfrac{r}{100n}\right)^{nt}$ with $P = 5000$, $r = 4$, $n = 4$, $A = 10000$.
-    - $10000 = 5000\left(1 + \dfrac{4}{400}\right)^{4t} = 5000(1.01)^{4t}$.
-    - $2 = (1.01)^{4t}$.
-    - Take $\log$: $\log 2 = 4t \cdot \log 1.01$.
-    - $t = \dfrac{\log 2}{4\log 1.01} \approx \dfrac{0.3010}{4 \times 0.00432} \approx 17.42$ years.
-    - To the nearest quarter: approximately 17 years and 2 quarters (17.5 years).
+- Domain: $2x + 1 > 0 \implies x > -\dfrac{1}{2}$, and $x + 4 > 0 \implies x > -4$. Combined:
+  $x > -\dfrac{1}{2}$.
+- Since the base $0.5 < 1$, the logarithmic function is strictly decreasing, so the inequality sign
+  reverses: $2x + 1 < x + 4$.
+- $x < 3$.
+- Combined with the domain: $-\dfrac{1}{2} < x < 3$.
 
-    </details>
+</details>
+
+**Question 9.** Express $2\log x - \log(x^2 - 4) + \log(x + 2)$ as a single logarithm, stating any
+restrictions on $x$.
+
+<details>
+<summary>Answer</summary>
+
+- Restrictions: $x > 0$, $x^2 - 4 > 0 \implies x > 2$ or $x < -2$, and $x + 2 > 0 \implies x > -2$.
+  Combined: $x > 2$.
+- Combine: $2\log x + \log(x + 2) - \log(x^2 - 4) = \log(x^2) + \log(x+2) - \log(x^2 - 4)$.
+- $= \log\dfrac{x^2(x+2)}{x^2 - 4} = \log\dfrac{x^2(x+2)}{(x-2)(x+2)} = \log\dfrac{x^2}{x-2}$.
+- Note: the factor $(x+2)$ cancels since $x + 2 \neq 0$ under the domain $x > 2$.
+
+</details>
+
+**Question 10.** An investor deposits $\$5,000$ into an account earning $4\%$ interest compounded
+quarterly. How long (to the nearest quarter) does it take for the balance to reach $\$10,000$?
+
+<details>
+<summary>Answer</summary>
+
+- $A = P\left(1 + \dfrac{r}{100n}\right)^{nt}$ with $P = 5000$, $r = 4$, $n = 4$, $A = 10000$.
+- $10000 = 5000\left(1 + \dfrac{4}{400}\right)^{4t} = 5000(1.01)^{4t}$.
+- $2 = (1.01)^{4t}$.
+- Take $\log$: $\log 2 = 4t \cdot \log 1.01$.
+- $t = \dfrac{\log 2}{4\log 1.01} \approx \dfrac{0.3010}{4 \times 0.00432} \approx 17.42$ years.
+- To the nearest quarter: approximately 17 years and 2 quarters (17.5 years).
 
 </details>
