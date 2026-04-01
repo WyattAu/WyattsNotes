@@ -509,141 +509,34 @@ counterexample.
 <details>
 <summary>Answer</summary>
 
-Consider: A→B (weight 1), A→C (weight 4), B→C (weight -2).
+Dijkstra's algorithm relies on the **greedy choice property**: once a vertex $u$ is extracted from
+the priority queue, $\text{dist}[u]$ is assumed to be final. This is valid only when all edge
+weights are non-negative, because any alternative path to $u$ must pass through an unvisited vertex
+whose distance is at least $\text{dist}[u]$.
 
-Dijkstra: Extract A (dist 0). Update B=1, C=4. Extract B (dist 1). Update C = 1 + (-2) = -1 < 4, so
-C = -1. Extract C (dist -1). Result: C = -1.
+With negative edges, a shorter path to an already-visited vertex may be discovered later through a
+not-yet-visited vertex, invalidating the greedy choice.
 
-This is actually correct! Let me try a better example.
+**Counterexample (CLRS, Exercise 24.3-5).** Consider vertices $S, A, B, C$ with edges:
 
-A→B (1), B→C (-3), A→C (2).
+$$S \xrightarrow{1} A \xrightarrow{2} B \xrightarrow{1} C, \quad S \xrightarrow{4} C \xrightarrow{-3} B$$
 
-Dijkstra: Extract A (dist 0). B=1, C=2. Extract B (dist 1). C = 1+(-3) = -2 < 2, so C = -2. Extract
-C (-2). Result: C=-2.
+**Dijkstra execution:**
 
-Still correct. The issue arises when a vertex is already visited and a shorter path is found later.
+| Step | Extract | dist[S] | dist[A]  | dist[B]  | dist[C]  |
+| ---- | ------- | ------- | -------- | -------- | -------- |
+| 0    | —       | 0       | $\infty$ | $\infty$ | $\infty$ |
+| 1    | S (0)   | 0       | 1        | $\infty$ | 4        |
+| 2    | A (1)   | 0       | 1        | 3        | 4        |
+| 3    | B (3)   | 0       | 1        | **3**    | 4        |
+| 4    | C (4)   | 0       | 1        | 3        | **4**    |
 
-A→B (1), A→C (3), B→D (2), C→B (-2).
+Dijkstra outputs $\text{dist}[B] = 3$. But the true shortest path is $S \to C \to B = 4 + (-3) = 1$.
+The algorithm fails because when $C$ is extracted at distance 4, it finds a shorter path to $B$
+($4 - 3 = 1$), but $B$ has already been extracted and marked as visited.
 
-Dijkstra: Extract A. B=1, C=3. Extract B (visited, dist 1). D=1+2=3. Extract C (dist 3). B = 3+(-2)
-= 1, but B is already visited, so this update is ignored. Result: B=1, C=3, D=3.
-
-But the shortest path to B is A→C→B = 3 + (-2) = 1, and the shortest path to D is A→C→B→D = 3 +
-(-2) + 2 = 3. So D=3 is actually correct here too.
-
-Better example: A→B (1), A→C (4), C→B (-3).
-
-Dijkstra: Extract A. B=1, C=4. Extract B (dist 1, visited). Extract C (dist 4). B = 4+(-3) = 1. B is
-already visited. Result: B=1, C=4.
-
-Actual shortest: A→C→B = 4-3 = 1. Same result. The algorithm is still correct here.
-
-The canonical counterexample: A→B (1), A→C (5), B→C (-4), C→D (1).
-
-Dijkstra: Extract A. B=1, C=5. Extract B (visited). C = 1+(-4) = -3 < 5. C=-3. Extract C. D = -3+1 =
--2. Result: D=-2.
-
-Actual shortest to D: A→B→C→D = 1+(-4)+1 = -2. Still correct!
-
-The key issue: Dijkstra **can** fail. Canonical example where it actually fails requires the
-negative edge to create a shorter path through an already-visited vertex to a not-yet-visited
-vertex.
-
-Let S=`{A,B,C,D}`, edges: A→B(4), A→C(2), C→B(-3), B→D(3), C→D(5).
-
-Dijkstra: Extract A. B=4, C=2. Extract C(2). B=2-3=-1. B=-1 (since $-1 \lt{} 4$). Extract B(-1).
-D=-1+3=2. Extract D(2). Result: D=2.
-
-Actual shortest to D: A→C→B→D = 2+(-3)+3=2. Same. ✓
-
-The actual failure case is subtle. Here's one: A→B(1), B→E(-4), A→C(4), C→D(2), D→E(1).
-
-Dijkstra: Extract A. B=1, C=4. Extract B(1). E=1-4=-3. Extract C(4). D=4+2=6. Extract E(-3). Extract
-D(6). Result: E=-3, D=6.
-
-Actual shortest to D: A→C→D=6. Same. Hmm.
-
-OK here's a real failure: A→B(1), A→C(2), B→D(2), C→B(-1), C→D(3).
-
-Dijkstra: Extract A. B=1, C=2. Extract B(1). D=1+2=3. Extract C(2). B=2-1=1 (B visited, skip).
-D=2+3=5 (no improvement). Result: D=3.
-
-Actual shortest to D: A→B→D=3. Correct!
-
-OK the real issue: if we need to relax through a negative edge after a vertex is already finalized.
-Let me use: A→B(1), A→C(4), B→C(2), C→D(1).
-
-Dijkstra: A(0), B(1), C(3 via B), D(4). All correct. No negative edge.
-
-The failure requires negative edges creating a situation where the shortest path to a
-not-yet-visited vertex goes through an already-visited vertex via a negative edge.
-
-Consider: vertices A, B, C. Edges: A→B(3), A→C(5), B→C(-4).
-
-Dijkstra: Extract A. B=3, C=5. Extract B(3). C=3-4=-1. C=-1 (since $-1 \lt{} 5$). Extract C. Result:
-C=-1. ✓
-
-Consider: vertices A, B, C, D. Edges: A→B(3), A→C(7), B→D(4), C→B(-2), C→D(2).
-
-Dijkstra: Extract A. B=3, C=7. Extract B(3). D=3+4=7. Extract C(7). B=7-2=5 (B visited, ignored).
-D=7+2=9 (no improvement). Result: D=7.
-
-Actual shortest to D: A→C→B→D = 7+(-2)+4 = 9. Or A→B→D=7. Or A→C→D=9. So D=7 is correct!
-
-The actual counterexample needs the negative edge to make a _shorter_ path to an unvisited node. Let
-me try:
-
-Vertices A, B, C, D. Edges: A→B(1), B→C(3), A→C(6), C→D(1), B→D(7), and the key: C→B(-2).
-
-Dijkstra: A(0). B=1, C=6. Extract B(1). C=min(6, 1+3)=4. D=1+7=8. Extract C(4). B=4-2=2 (B visited,
-IGNORED). D=min(8,4+1)=5. Extract D(5). Result: D=5.
-
-Actual: A→B→C→D = 1+3+1=5. ✓
-
-Hmm. The algorithm is robust to some negative edges. Here's the actual failure:
-
-Vertices S, A, B. Edges: S→A(1), A→B(-3), S→B(2).
-
-Dijkstra: Extract S. A=1, B=2. Extract A(1). B=min(2, 1-3)=-2. B=-2 (since $-2 \lt{} 2$). Extract B.
-Result: B=-2.
-
-Actual shortest: S→A→B = 1-3=-2. ✓ Correct!
-
-The actual counterexample where Dijkstra definitively fails:
-
-Vertices 1,2,3. Edges: 1→2(1), 1→3(5), 2→3(2).
-
-Without negative edges, no failure. The key insight: Dijkstra fails when there are negative edges
-AND the greedy extraction order is wrong.
-
-Real failure: Vertices S, A, B, C. Edges: S→A(2), S→B(5), A→C(4), B→C(-3), B→A(-2).
-
-Dijkstra: Extract S. A=2, B=5. Extract A(2). C=2+4=6. Extract B(5). C=min(6,5-3)=2. C=2 (since
-$2 \lt{} 6$). Extract C. Result: C=2.
-
-Actual: S→B→C = 5-3=2. Same result. ✓
-
-The definitive failure (from CLRS): S→A(1), S→C(4), A→B(2), B→C(1), C→B(-3).
-
-Dijkstra: S(0). A=1, C=4. Extract A(1). B=1+2=3. Extract C(4). B=min(3,4-3)=1. B=1 (since
-$1 \lt{} 3$). But B is ALREADY VISITED (or not? B was updated to 3 but not extracted yet). Wait — B
-hasn't been extracted, it's still in the PQ with dist 3. So when C is extracted and we update B to
-1, B gets updated in the PQ. Then B is extracted with dist 1. C=min(4, 1+1)=2. But C is already
-visited!
-
-Result: A=1, B=1, C=4. But shortest path to C is S→A→B→C = 1+2+1=4 or S→C=4. Same. Not a failure.
-
-Let me try: S→A(1), S→C(6), A→B(3), B→C(-2).
-
-Dijkstra: S(0). A=1, C=6. Extract A(1). B=1+3=4. Extract B(4). C=min(6,4-2)=2. C=2 (since
-$2 \lt{} 6$). Extract C(2). Result: C=2.
-
-Actual: S→A→B→C = 1+3-2=2. ✓
-
-I think for this problem level, the key explanation is sufficient: Dijkstra's greedy choice assumes
-that once a vertex is extracted, its distance is final. With negative edges, a later-discovered path
-through a negative edge could be shorter. The algorithm ignores these because it marks vertices as
-visited. Provide the conceptual explanation and state that Bellman-Ford handles negative weights.
+**Recovery:** Use the Bellman-Ford algorithm, which correctly handles negative edge weights by
+relaxing all edges $|V| - 1$ times. Bellman-Ford also detects negative-weight cycles.
 
 </details>
 

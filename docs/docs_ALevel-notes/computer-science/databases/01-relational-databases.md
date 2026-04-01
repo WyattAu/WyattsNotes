@@ -512,27 +512,32 @@ R(A, B, C) with functional dependencies: AB → C, C → B
 <details>
 <summary>Answer</summary>
 
-**Keys:** AB is a candidate key (AB → ABC). AC is also a candidate key (AC → C → B, so AC → ABC).
+**Step 1: Find candidate keys.** By the closure of AB: AB⁺ = {A, B, C}, so AB is a candidate key. By
+the closure of AC: AC → C → B (by C → B and augmentation), so AC → ABC, making AC also a candidate
+key.
 
-**BCNF violation:** C → B, but C is not a superkey (C alone does not determine A).
+**Step 2: Identify BCNF violations.** BCNF requires that for every non-trivial FD X → Y, X must be a
+superkey. The FD C → B is non-trivial, but C is not a superkey (C does not determine A). Therefore R
+is not in BCNF.
 
-**Decomposition:**
+**Step 3: Decompose.** We decompose along the violating FD C → B:
 
-- R1(C, B) with FD: C → B. Key: C. BCNF: ✓ (C is a superkey).
-- R2(A, C) with FD: AC → C (trivial). Key: AC. BCNF: ✓.
+- $R_1(C, B)$ with FD: $C \to B$. Key: $C$. BCNF: ✓ ($C$ is a superkey of $R_1$).
+- $R_2(A, C)$ with FD: $AC \to C$ (trivial). Key: $AC$. BCNF: ✓ ($AC$ is a superkey of $R_2$).
 
-Check: Join of R1 and R2 on C gives back the original relation. All dependencies are preserved? AB →
-C: in R2, A with C gives us (A, C), and joining with R1 on C gives (A, C, B) = (A, B, C). ✓
+**Step 4: Verify lossless join.** $R_1 \cap R_2 = \{C\}$, and $C \to B$ holds in $R_1$, so the join
+is lossless (by the chase test / BCNF decomposition theorem). ✓
 
-Wait, AB → C is not directly represented. But AC → B can be derived: AC gives C, and C → B in R1.
-And AB → C: AB gives B (from R1: B depends on... actually AB → C means given A and B, we can find C.
-In R2(A, C), given A, we can't find C without knowing B. So AB → C is lost.
+**Step 5: Dependency preservation.** The original FDs are $\{AB \to C,\; C \to B\}$.
 
-This is a known issue: BCNF decomposition may lose dependencies. In this case, we need to choose:
-3NF (preserves dependencies) or BCNF (eliminates all anomalies). Since AB → C and C → B cannot
-coexist in a single BCNF relation, BCNF is not achievable without loss.
+- $C \to B$ is preserved in $R_1(C, B)$. ✓
+- $AB \to C$: to check this, we need to compute $C$ from $A$ and $B$. In $R_2(A, C)$, given $A$ we
+  cannot determine $C$ without additional information. We would need to join $R_1$ and $R_2$: from
+  $(A, B)$ we cannot join because $B$ is not in $R_2$. So $AB \to C$ is **not preserved**. ✗
 
-For revision on data structures, see
-[Hash Tables](/docs/docs_ALevel-notes/computer-science/data-structures/hash-tables).
+**Conclusion.** This is a classic example where BCNF and dependency preservation are incompatible.
+We must choose: either accept 3NF (which preserves dependencies but allows redundancy) or accept
+BCNF (which eliminates redundancy but loses the FD $AB \to C$). In practice, 3NF is often preferred
+when dependency preservation is critical.
 
 </details>
