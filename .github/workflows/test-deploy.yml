@@ -35,7 +35,9 @@ jobs:
         run: pnpm run typecheck
 
       - name: Build production site
-        run: pnpm run build
+        run: NODE_OPTIONS=--max-old-space-size=4096 pnpm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
 
       - name: Validate build output
         run: |
