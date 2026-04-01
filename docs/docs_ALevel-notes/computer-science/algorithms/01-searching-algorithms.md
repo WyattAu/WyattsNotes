@@ -373,3 +373,5 @@ non-negative and less than `INT_MAX`.
 
 For revision on sorting, see
 [Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/02-sorting-algorithms).
+
+</details>

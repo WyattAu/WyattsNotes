@@ -416,3 +416,5 @@ $\square$
 For revision on specific algorithm complexities, see
 [Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/02-sorting-algorithms) and
 [Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/01-searching-algorithms).
+
+</details>

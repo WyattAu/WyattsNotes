@@ -461,3 +461,5 @@ previously working functionality has not been broken (regressed).
 
 For revision on software development, see
 [SDLC](/docs/docs_ALevel-notes/computer-science/software-engineering/01-software-development-lifecycle).
+
+</details>

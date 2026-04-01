@@ -534,3 +534,5 @@ coexist in a single BCNF relation, BCNF is not achievable without loss.
 
 For revision on data structures, see
 [Hash Tables](/docs/docs_ALevel-notes/computer-science/data-structures/06-hash-tables).
+
+</details>

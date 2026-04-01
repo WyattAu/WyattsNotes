@@ -501,3 +501,5 @@ communication.
 
 For revision on network security, see
 [Network Security](/docs/docs_ALevel-notes/computer-science/networks/02-network-security).
+
+</details>

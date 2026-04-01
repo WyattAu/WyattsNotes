@@ -263,7 +263,11 @@ Result: `1 1011 101`
 hexadecimal.
 
 <details>
-<summary>Hint</summary>Convert to binary, normalise, determine sign, exponent (with bias 127), and mantissa.</details>
+<summary>Hint</summary>
+
+Convert to binary, normalise, determine sign, exponent (with bias 127), and mantissa.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -281,7 +285,11 @@ Hex: `C1640000`
 **Problem 2.** Decode the IEEE 754 single-precision value `BF800000` (hex).
 
 <details>
-<summary>Hint</summary>Convert hex to binary, split into sign, exponent, mantissa fields.</details>
+<summary>Hint</summary>
+
+Convert hex to binary, split into sign, exponent, mantissa fields.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -298,7 +306,11 @@ Value: $-1.0 \times 2^0 = -1.0$
 zero?
 
 <details>
-<summary>Hint</summary>Check the special values table: $E = 0$, $M = 0$.</details>
+<summary>Hint</summary>
+
+Check the special values table: $E = 0$, $M = 0$.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -314,7 +326,11 @@ They compare equal in IEEE 754, but their sign bits differ.
 **Problem 4.** Encode $9.75$ in the CIE 8-bit floating-point format.
 
 <details>
-<summary>Hint</summary>Convert to binary, express as $0.MMM \times 2^{e}$ with bias 8.</details>
+<summary>Hint</summary>
+
+Convert to binary, express as $0.MMM \times 2^{e}$ with bias 8.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -330,7 +346,11 @@ Result: `0 1100 100`
 **Problem 5.** Prove that the decimal number $0.2_{10}$ has no finite binary representation.
 
 <details>
-<summary>Hint</summary>Write $0.2$ as a fraction in lowest terms. Apply the same argument used for $0.1$.</details>
+<summary>Hint</summary>
+
+Write $0.2$ as a fraction in lowest terms. Apply the same argument used for $0.1$.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -347,7 +367,11 @@ representation. $\square$
 mantissa bits. Calculate the range and approximate precision.
 
 <details>
-<summary>Hint</summary>Follow the same pattern as IEEE 754 but with different field sizes.</details>
+<summary>Hint</summary>
+
+Follow the same pattern as IEEE 754 but with different field sizes.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -366,7 +390,11 @@ Assuming hidden bit convention:
 would removing denormalised numbers be problematic?
 
 <details>
-<summary>Hint</summary>Consider what happens as values approach zero without denormalised numbers.</details>
+<summary>Hint</summary>
+
+Consider what happens as values approach zero without denormalised numbers.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -385,7 +413,11 @@ transition, maintaining relative precision longer.
 many denormalised?
 
 <details>
-<summary>Hint</summary>Count the combinations of sign, exponent, and mantissa for each category.</details>
+<summary>Hint</summary>
+
+Count the combinations of sign, exponent, and mantissa for each category.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -401,7 +433,11 @@ Denormalised: $E = 0$, $M \neq 0$. Total: $2 \times (2^{23} - 1) = 16,777,214$.
 float, then computes $a + b - a$. Explain why the result might be $0$ rather than $b$.
 
 <details>
-<summary>Hint</summary>Think about the precision of single-precision float relative to the magnitude of $a$.</details>
+<summary>Hint</summary>
+
+Think about the precision of single-precision float relative to the magnitude of $a$.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -419,7 +455,11 @@ This is an example of **cancellation error** combined with **limited precision**
 decimal places).
 
 <details>
-<summary>Hint</summary>Use the formulas for absolute and relative error with $x = 1/3$ and $\tilde{x} = 0.333333$.</details>
+<summary>Hint</summary>
+
+Use the formulas for absolute and relative error with $x = 1/3$ and $\tilde{x} = 0.333333$.
+
+</details>
 
 <details>
 <summary>Answer</summary>

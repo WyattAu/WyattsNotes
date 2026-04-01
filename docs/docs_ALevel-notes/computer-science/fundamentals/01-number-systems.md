@@ -447,15 +447,27 @@ magnitude.
 **Problem 1.** Convert $2F7_{16}$ to denary.
 
 <details>
-<summary>Hint</summary>Use the positional formula with $b = 16$. Remember $F = 15$.</details>
+<summary>Hint</summary>
+
+Use the positional formula with $b = 16$. Remember $F = 15$.
+
+</details>
 
 <details>
-<summary>Answer</summary>$2 \times 256 + 15 \times 16 + 7 = 512 + 240 + 7 = 759_{10}$</details>
+<summary>Answer</summary>
+
+$2 \times 256 + 15 \times 16 + 7 = 512 + 240 + 7 = 759_{10}$
+
+</details>
 
 **Problem 2.** Convert $314_{10}$ to binary and hexadecimal.
 
 <details>
-<summary>Hint</summary>Use repeated division by 2, then group into 4-bit nibbles for hex.</details>
+<summary>Hint</summary>
+
+Use repeated division by 2, then group into 4-bit nibbles for hex.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -470,7 +482,11 @@ Hex: Group as $0001\ 0011\ 1010 = 13A_{16}$
 the result is zero.
 
 <details>
-<summary>Hint</summary>Find the binary of 42, flip all bits, add 1.</details>
+<summary>Hint</summary>
+
+Find the binary of 42, flip all bits, add 1.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -490,7 +506,11 @@ $00000000$. ✓
 unsigned and 8-bit two's complement.
 
 <details>
-<summary>Hint</summary>Do the binary addition first. Then interpret based on the encoding scheme.</details>
+<summary>Hint</summary>
+
+Do the binary addition first. Then interpret based on the encoding scheme.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -513,7 +533,11 @@ unsigned and 8-bit two's complement.
 part. What is the range and precision? Convert $01011010.1010$ to denary.
 
 <details>
-<summary>Hint</summary>Precision is $2^{-4}$. Range depends on whether signed or unsigned.</details>
+<summary>Hint</summary>
+
+Precision is $2^{-4}$. Range depends on whether signed or unsigned.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -532,7 +556,11 @@ Value: $90.625_{10}$
 in UTF-8.
 
 <details>
-<summary>Hint</summary>Look up each character's ASCII code point.</details>
+<summary>Hint</summary>
+
+Look up each character's ASCII code point.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -550,7 +578,11 @@ encoding is identical to ASCII for these characters.
 **Problem 7.** Encode the character 'ñ' (`U+00F1`) in UTF-8. Show each step.
 
 <details>
-<summary>Hint</summary>`U+00F1` falls in the 2-byte range `U+0080`–`U+07FF`. Use the pattern `110xxxxx 10xxxxxx`.</details>
+<summary>Hint</summary>
+
+`U+00F1` falls in the 2-byte range `U+0080`–`U+07FF`. Use the pattern `110xxxxx 10xxxxxx`.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -570,7 +602,11 @@ UTF-8: `C3 B1`
 claims it represents $+13$. Who is correct? Explain.
 
 <details>
-<summary>Hint</summary>What does the MSB tell you in two's complement?</details>
+<summary>Hint</summary>
+
+What does the MSB tell you in two's complement?
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -589,7 +625,11 @@ used.
 the valid range, excluding $-2^{n-1}$).
 
 <details>
-<summary>Hint</summary>Start with $\text{TwosComp}(x) = 2^n - x$. Apply the operation again.</details>
+<summary>Hint</summary>
+
+Start with $\text{TwosComp}(x) = 2^n - x$. Apply the operation again.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -609,7 +649,11 @@ $-2^{n-1}$. So $-2^{n-1}$ is its own two's complement.
 $-15$? Does overflow occur?
 
 <details>
-<summary>Hint</summary>Range of 6-bit two's complement is $[-32, 31]$. Compute $-16 + (-15) = -31$. Is this in range?</details>
+<summary>Hint</summary>
+
+Range of 6-bit two's complement is $[-32, 31]$. Compute $-16 + (-15) = -31$. Is this in range?
+
+</details>
 
 <details>
 <summary>Answer</summary>

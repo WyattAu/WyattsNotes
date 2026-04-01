@@ -444,7 +444,12 @@ larger group, and 0 otherwise. This minimises the expression. :::
 $\overline{A \cdot B} = \bar{A} + \bar{B}$.
 
 <details>
-<summary>Hint</summary>Construct a truth table with columns for $A$, $B$, $A \cdot B$, $\overline{A \cdot B}$, $\bar{A}$, $\bar{B}$, and $\bar{A} + \bar{B}$.</details>
+<summary>Hint</summary>
+
+Construct a truth table with columns for $A$, $B$, $A \cdot B$, $\overline{A \cdot B}$, $\bar{A}$,
+$\bar{B}$, and $\bar{A} + \bar{B}$.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -464,7 +469,11 @@ Columns 4 and 7 are identical. ✓
 algebra.
 
 <details>
-<summary>Hint</summary>Factor out common terms. Use the identity $X\bar{Y} + XY = X$.</details>
+<summary>Hint</summary>
+
+Factor out common terms. Use the identity $X\bar{Y} + XY = X$.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -482,7 +491,11 @@ $= B(\bar{A} + A) = B(1) = B$
 **Problem 3.** Use a 3-variable K-map to simplify $f(A,B,C) = \sum(1, 3, 5, 7)$.
 
 <details>
-<summary>Hint</summary>Plot the minterms on a K-map and look for the largest possible rectangular groups.</details>
+<summary>Hint</summary>
+
+Plot the minterms on a K-map and look for the largest possible rectangular groups.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -517,7 +530,11 @@ $f = C$
 $f(A,B,C,D) = \sum(0, 1, 2, 4, 5, 6, 8, 9, 12, 13, 14)$.
 
 <details>
-<summary>Hint</summary>Plot on a 4-variable K-map. Look for groups of 4 and 2.</details>
+<summary>Hint</summary>
+
+Plot on a 4-variable K-map. Look for groups of 4 and 2.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -561,7 +578,11 @@ $f = \bar{C} + \bar{A}C\bar{D} + BC\bar{D}$
 table and writing the sum-of-products, then simplify.
 
 <details>
-<summary>Hint</summary>Sum is 1 for rows: (0,0,1), (0,1,0), (1,0,0), (1,1,1).</details>
+<summary>Hint</summary>
+
+Sum is 1 for rows: (0,0,1), (0,1,0), (1,0,0), (1,1,1).
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -580,7 +601,11 @@ $= A \oplus B \oplus C_{in}$
 (2, 3, 5, or 7). Simplify using a K-map.
 
 <details>
-<summary>Hint</summary>Prime minterms: $m_2, m_3, m_5, m_7$. Plot on a 3-variable K-map.</details>
+<summary>Hint</summary>
+
+Prime minterms: $m_2, m_3, m_5, m_7$. Plot on a 3-variable K-map.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -605,7 +630,11 @@ $f = BC + \bar{A}B + A\bar{B}C$
 **Problem 7.** Simplify $\overline{(\bar{A} + B)(A + \bar{B})}$ using De Morgan's laws.
 
 <details>
-<summary>Hint</summary>Apply De Morgan's to the outer bar first, then to the inner expressions.</details>
+<summary>Hint</summary>
+
+Apply De Morgan's to the outer bar first, then to the inner expressions.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -623,7 +652,11 @@ $= A \oplus B$
 **Problem 8.** Prove algebraically that $(A + B)(A + C) = A + BC$.
 
 <details>
-<summary>Hint</summary>Expand the LHS and simplify.</details>
+<summary>Hint</summary>
+
+Expand the LHS and simplify.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -636,7 +669,11 @@ $(A + B)(A + C) = AA + AC + AB + BC = A + AC + AB + BC = A(1 + C + B) + BC = A +
 of the output $Q$ on each clock pulse.
 
 <details>
-<summary>Hint</summary>Since $D = \bar{Q}$ and $Q_{next} = D$, what happens to $Q$ on each clock edge?</details>
+<summary>Hint</summary>
+
+Since $D = \bar{Q}$ and $Q_{next} = D$, what happens to $Q$ on each clock edge?
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -655,7 +692,11 @@ basis of binary counters.
 adder has a delay of 3 gate delays, and each gate delay is 2ns?
 
 <details>
-<summary>Hint</summary>The carry must ripple through all 16 stages.</details>
+<summary>Hint</summary>
+
+The carry must ripple through all 16 stages.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -671,7 +712,12 @@ $0111\ldots1 + 0000\ldots1$).
 required.
 
 <details>
-<summary>Hint</summary>First express XOR using NAND gates: $A \oplus B = \overline{\overline{A \cdot \overline{AB}} \cdot \overline{B \cdot \overline{AB}}}$.</details>
+<summary>Hint</summary>
+
+First express XOR using NAND gates:
+$A \oplus B = \overline{\overline{A \cdot \overline{AB}} \cdot \overline{B \cdot \overline{AB}}}$.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -702,7 +748,11 @@ Total: approximately 9 NAND gates.
 $f(A,B,C) = \sum(0,2,5) + d(1,4,7)$, where $d$ denotes don't-cares.
 
 <details>
-<summary>Hint</summary>Plot the 1s and Xs. Treat X as 1 only if it helps form a larger group.</details>
+<summary>Hint</summary>
+
+Plot the 1s and Xs. Treat X as 1 only if it helps form a larger group.
+
+</details>
 
 <details>
 <summary>Answer</summary>

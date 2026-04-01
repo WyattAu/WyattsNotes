@@ -69,7 +69,7 @@ _Specialisation:_
 **World output increases**: 400C → 600C (+200) and 350W → 400W (+50). Both countries gain if they
 trade at an exchange rate between the two opportunity cost ratios:
 
-$$0.5 \text{ W/C} < \text{World price } p < 2.0 \text{ W/C}$$
+$$0.5 \text{ W/C} \lt{} \text{World price } p \lt{} 2.0 \text{ W/C}$$
 
 For example, at $p = 1$ (1 unit of Wine for 1 unit of Cloth):
 
@@ -163,9 +163,9 @@ A **depreciation** of the pound means $e$ rises (more pounds per dollar — the 
 
 The central bank commits to buying and selling currency to maintain $e = \bar{e}$.
 
-$$\text{If } e > \bar{e} \text{ (depreciation pressure): central bank sells foreign reserves, buys domestic currency}$$
+$$\text{If } e \gt{} \bar{e} \text{ (depreciation pressure): central bank sells foreign reserves, buys domestic currency}$$
 
-$$\text{If } e < \bar{e} \text{ (appreciation pressure): central bank buys foreign reserves, sells domestic currency}$$
+$$\text{If } e \lt{} \bar{e} \text{ (appreciation pressure): central bank buys foreign reserves, sells domestic currency}$$
 
 Advantages: certainty for trade and investment, discipline on monetary policy (cannot inflate away
 the peg), reduces speculative volatility.
@@ -191,7 +191,7 @@ Disadvantages: volatility creates uncertainty for trade and investment, may over
 The central bank allows the market to set the exchange rate but intervenes occasionally to smooth
 excessive fluctuations or achieve policy objectives.
 
-$$\bar{e}_{\min} < e < \bar{e}_{\max}$$
+$$\bar{e}_{\min} \lt{} e \lt{} \bar{e}_{\max}$$
 
 ### 3.3 Determinants of Floating Exchange Rates
 
@@ -230,7 +230,7 @@ current account.
 **Proposition: A depreciation improves the current account if and only if the sum of the price
 elasticities of demand for exports and imports (in absolute value) exceeds unity.**
 
-$$|E_X| + |E_M| > 1$$
+$$|E_X| + |E_M| \gt{} 1$$
 
 where:
 

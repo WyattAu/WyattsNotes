@@ -381,7 +381,11 @@ internal micro-operations). :::
 memory?
 
 <details>
-<summary>Hint</summary>Each address identifies one location, and each location holds one data bus width.</details>
+<summary>Hint</summary>
+
+Each address identifies one location, and each location holds one data bus width.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -398,7 +402,11 @@ Total addressable memory: $16,777,216 \times 2 = 33,554,432$ bytes = 32 MiB.
 Include all register transfers.
 
 <details>
-<summary>Hint</summary>Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.</details>
+<summary>Hint</summary>
+
+Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -416,7 +424,11 @@ Include all register transfers.
 **Problem 3.** Explain how temporal and spatial locality contribute to cache effectiveness.
 
 <details>
-<summary>Hint</summary>Give concrete examples of code patterns that exhibit each type of locality.</details>
+<summary>Hint</summary>
+
+Give concrete examples of code patterns that exhibit each type of locality.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -435,7 +447,11 @@ are cache hits because they are in the same cache line.
 page table? What is the size of each entry if physical addresses are 36 bits?
 
 <details>
-<summary>Hint</summary>Number of virtual pages = $2^{32}/4096$. Each PTE stores a frame number and flags.</details>
+<summary>Hint</summary>
+
+Number of virtual pages = $2^{32}/4096$. Each PTE stores a frame number and flags.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -454,7 +470,11 @@ Total page table size: $1,048,576 \times 4 = 4$ MiB per process.
 100 instructions takes 104 cycles, not 500.
 
 <details>
-<summary>Hint</summary>After the pipeline fills, one instruction completes per cycle.</details>
+<summary>Hint</summary>
+
+After the pipeline fills, one instruction completes per cycle.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -472,7 +492,11 @@ Speedup: $500/104 \approx 4.81\times$ (approaching the theoretical maximum of $5
 it.
 
 <details>
-<summary>Hint</summary>Consider two consecutive instructions where the second uses the result of the first.</details>
+<summary>Hint</summary>
+
+Consider two consecutive instructions where the second uses the result of the first.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -495,7 +519,11 @@ output to the decode stage input of SUB, eliminating the stall.
 architecture used in modern CPUs?
 
 <details>
-<summary>Hint</summary>Consider bus contention and the practical need for unified main memory.</details>
+<summary>Hint</summary>
+
+Consider bus contention and the practical need for unified main memory.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -517,7 +545,11 @@ Neumann) because:
 blocks. How many bits are needed for the tag, line number, and offset fields?
 
 <details>
-<summary>Hint</summary>Offset = log₂(block size). Line = log₂(cache lines). Tag = remaining bits from block address.</details>
+<summary>Hint</summary>
+
+Offset = log₂(block size). Line = log₂(cache lines). Tag = remaining bits from block address.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -535,7 +567,11 @@ total.
 **Problem 9.** Explain the difference between a page fault and a TLB miss. Which is more expensive?
 
 <details>
-<summary>Hint</summary>One involves disk I/O; the other involves a slower but still RAM-speed lookup.</details>
+<summary>Hint</summary>
+
+One involves disk I/O; the other involves a slower but still RAM-speed lookup.
+
+</details>
 
 <details>
 <summary>Answer</summary>
@@ -556,7 +592,11 @@ encode a register operand? What is the maximum number of 3-operand instructions 
 opcode field is 8 bits?
 
 <details>
-<summary>Hint</summary>Register field size = log₂(32). Total instruction size = opcode + 3 register fields.</details>
+<summary>Hint</summary>
+
+Register field size = log₂(32). Total instruction size = opcode + 3 register fields.
+
+</details>
 
 <details>
 <summary>Answer</summary>

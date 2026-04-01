@@ -63,7 +63,7 @@ $$
 Additionally, for any base $a \gt{} 0$ with $a \neq 1$:
 
 $$
-a^{\log_a x} = x \quad (x > 0)
+a^{\log_a x} = x \quad (x \gt{} 0)
 $$
 
 $$
@@ -468,7 +468,7 @@ function, which depends on whether the base is greater than or less than 1.
 When $a > 1$, $\log_a x$ is strictly increasing, so the inequality sign is **preserved**:
 
 $$
-\log_a x > \log_a y \iff x > y
+\log_a x \gt{} \log_a y \iff x \gt{} y
 $$
 
 ### Case 2: Base $0 < a < 1$
@@ -476,7 +476,7 @@ $$
 When $0 < a < 1$, $\log_a x$ is strictly decreasing, so the inequality sign is **reversed**:
 
 $$
-\log_a x > \log_a y \iff x < y
+\log_a x \gt{} \log_a y \iff x \lt{} y
 $$
 
 <details>
