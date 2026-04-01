@@ -104,17 +104,17 @@ reallocation-triggering operation becomes **undefined behavior** if dereferenced
 
 The invalidation rules for `std::vector` [N4950 §22.3.11.5 Table 80]:
 
-| Operation                | Iterator                             | Pointer         | Reference       |
-| ------------------------ | ------------------------------------ | --------------- | --------------- |
-| `push_back` (no realloc) | valid                                | valid           | valid           |
-| `push_back` (realloc)    | **invalidated**                      | **invalidated** | **invalidated** |
-| `insert` (no realloc)    | valid if position <= insertion point | same            | same            |
-| `insert` (realloc)       | **invalidated**                      | **invalidated** | **invalidated** |
-| `erase`                  | valid if position < erased element   | same            | same            |
-| `pop_back`               | valid if not pointing to last        | same            | same            |
-| `reserve` (realloc)      | **invalidated**                      | **invalidated** | **invalidated** |
-| `resize` (grow, realloc) | **invalidated**                      | **invalidated** | **invalidated** |
-| `swap`                   | valid (refers to exchanged elements) | valid           | valid           |
+| Operation                | Iterator                                | Pointer         | Reference       |
+| ------------------------ | --------------------------------------- | --------------- | --------------- |
+| `push_back` (no realloc) | valid                                   | valid           | valid           |
+| `push_back` (realloc)    | **invalidated**                         | **invalidated** | **invalidated** |
+| `insert` (no realloc)    | valid if position &lt;= insertion point | same            | same            |
+| `insert` (realloc)       | **invalidated**                         | **invalidated** | **invalidated** |
+| `erase`                  | valid if position &lt; erased element   | same            | same            |
+| `pop_back`               | valid if not pointing to last           | same            | same            |
+| `reserve` (realloc)      | **invalidated**                         | **invalidated** | **invalidated** |
+| `resize` (grow, realloc) | **invalidated**                         | **invalidated** | **invalidated** |
+| `swap`                   | valid (refers to exchanged elements)    | valid           | valid           |
 
 ```cpp
 #include <vector>
@@ -268,16 +268,16 @@ now refer to the same elements within the destination container [N4950 §22.3.9.
 
 ### 1.6 Choosing Between Sequence Containers
 
-| Criterion             | `vector`              | `deque`                   | `list`                       |
-| --------------------- | --------------------- | ------------------------- | ---------------------------- |
-| Random access         | $O(1)$                | $O(1)$ (higher constant)  | $O(n)$                       |
-| `push_back`           | Amortized $O(1)$      | Amortized $O(1)$          | $O(1)$                       |
-| `push_front`          | $O(n)$                | Amortized $O(1)$          | $O(1)$                       |
-| Insert in middle      | $O(n)$                | $O(n)$                    | $O(1)$ with iterator         |
-| Cache locality        | Excellent             | Good                      | Poor                         |
-| Memory overhead       | Low (capacity > size) | Moderate (block pointers) | High (2-3 pointers per node) |
-| Iterator invalidation | High (on realloc)     | Moderate                  | Low (only on erase)          |
-| Stable addresses      | No                    | No                        | Yes                          |
+| Criterion             | `vector`                 | `deque`                   | `list`                       |
+| --------------------- | ------------------------ | ------------------------- | ---------------------------- |
+| Random access         | $O(1)$                   | $O(1)$ (higher constant)  | $O(n)$                       |
+| `push_back`           | Amortized $O(1)$         | Amortized $O(1)$          | $O(1)$                       |
+| `push_front`          | $O(n)$                   | Amortized $O(1)$          | $O(1)$                       |
+| Insert in middle      | $O(n)$                   | $O(n)$                    | $O(1)$ with iterator         |
+| Cache locality        | Excellent                | Good                      | Poor                         |
+| Memory overhead       | Low (capacity &gt; size) | Moderate (block pointers) | High (2-3 pointers per node) |
+| Iterator invalidation | High (on realloc)        | Moderate                  | Low (only on erase)          |
+| Stable addresses      | No                       | No                        | Yes                          |
 
 ```cpp
 #include <vector>
@@ -464,7 +464,7 @@ The hash function `H` used by `std::unordered_map` and `std::unordered_set` must
 3. If `k1 == k2`, then `H(k1) == H(k2)` must hold
 4. `H` must not throw exceptions
 
-The default hash `std::hash<T>` is specialized for all arithmetic types, `std::string`,
+The default hash `std::hash&lt;T>` is specialized for all arithmetic types, `std::string`,
 `std::string_view`, and all standard smart pointer types [N4950 §22.14.3]. For custom types, you
 must provide a specialization:
 
@@ -652,8 +652,8 @@ int main() {
 
 C++20 introduced the **sentinel** concept [N4950 §25.3.5]. A sentinel is a type that can be compared
 with an iterator to determine the end of a range, but is **not itself an iterator**. The key
-interface is `std::sentinel_for<S, I>`, which requires that `S` and `I` be comparable with `==` and
-`!=` [N4950 §25.3.5.2].
+interface is `std::sentinel_for&lt;S, I>`, which requires that `S` and `I` be comparable with `==`
+and `!=` [N4950 §25.3.5.2].
 
 ```cpp
 #include <iostream>
@@ -837,9 +837,9 @@ int main() {
 
 ### 4.1 `std::pmr::memory_resource`: The Polymorphic Allocator Interface
 
-C++17 introduced **polymorphic memory resources** (PMR) in `<memory_resource>` [N4950 §23.10]. PMR
-decouples container allocation strategy from the container type itself, enabling containers to use
-different allocation strategies without changing the container's type.
+C++17 introduced **polymorphic memory resources** (PMR) in `&lt;memory_resource>` [N4950 §23.10].
+PMR decouples container allocation strategy from the container type itself, enabling containers to
+use different allocation strategies without changing the container's type.
 
 The central abstraction is `std::pmr::memory_resource` [N4950 §23.10.2], an abstract base class with
 three virtual functions:
@@ -864,7 +864,7 @@ private:
 The public `allocate` / `deallocate` functions check alignment and size constraints before
 delegating to the private virtual functions [N4950 §23.10.2.2].
 
-`std::pmr::polymorphic_allocator<T>` [N4950 §23.10.8] is a concrete allocator class that wraps a
+`std::pmr::polymorphic_allocator&lt;T>` [N4950 §23.10.8] is a concrete allocator class that wraps a
 `memory_resource*`. Standard containers parameterized on the allocator can use
 `polymorphic_allocator` to gain polymorphic allocation:
 

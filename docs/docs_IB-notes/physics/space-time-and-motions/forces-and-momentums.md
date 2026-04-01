@@ -190,12 +190,13 @@ $$
 
 ### A.1 Kinematics & A.2 Forces and Momentum
 
-1. **Question:** A 1500 kg car is traveling on a horizontal road at a constant speed of 25.0 m/s.
-The total resistive force (air drag + friction) is 800 N. The car then begins to accelerate
-uniformly for 10.0 s, reaching a new constant speed. During the acceleration, the engine provides a
-constant driving force of 2000 N. a) Calculate the car's acceleration. b) What is the final speed of
-the car? c) At this new speed, what must the engine's driving force be to maintain it? d) What is
-the total distance covered during the 10.0 s of acceleration?
+**Problem 1.** A 1500 kg car is traveling on a horizontal road at a constant speed of 25.0 m/s. The
+total resistive force (air drag + friction) is 800 N. The car then begins to accelerate uniformly
+for 10.0 s, reaching a new constant speed. During the acceleration, the engine provides a constant
+driving force of 2000 N. a) Calculate the car's acceleration. b) What is the final speed of the car?
+c) At this new speed, what must the engine's driving force be to maintain it? d) What is the total
+distance covered during the 10.0 s of acceleration?
+
 <details>
 <summary>Answer</summary>
 
@@ -220,10 +221,11 @@ the total distance covered during the 10.0 s of acceleration?
   linking the resulting acceleration to kinematic equations.
   </details>
 
-2. **Question:** A 2.0 kg firework is launched vertically from rest. Its rocket motor provides a
+**Problem 2.** A 2.0 kg firework is launched vertically from rest. Its rocket motor provides a
 constant upward thrust of 50.0 N for 3.0 s before running out of fuel. Ignore air resistance. a)
 Calculate the maximum height the firework reaches. b) What is the total time the firework is in the
 air (from launch until it returns to the ground)?
+
 <details>
 <summary>Answer</summary>
 
@@ -254,10 +256,11 @@ air (from launch until it returns to the ground)?
   as the initial conditions for the next.
   </details>
 
-3. **Question:** A 5.0 kg object is suspended by a rope. A horizontal force is applied, pulling the
+**Problem 3.** A 5.0 kg object is suspended by a rope. A horizontal force is applied, pulling the
 object to the side until the rope makes an angle of 35° with the vertical. The object is held in
 static equilibrium. a) Draw a free-body diagram for the object. b) Calculate the magnitude of the
 applied horizontal force and the tension in the rope.
+
 <details>
 <summary>Answer</summary>
 
@@ -281,10 +284,11 @@ applied horizontal force and the tension in the rope.
   vertical and horizontal forces.
   </details>
 
-4. **Question:** A 0.20 kg ball traveling at 10 m/s collides with a stationary 0.30 kg ball. After
-the collision, the 0.20 kg ball moves at 4.0 m/s at an angle of 30° to its original path. a)
-Determine the speed and direction of the 0.30 kg ball after the collision. b) Was the collision
-elastic? Justify your answer with a calculation.
+**Problem 4.** A 0.20 kg ball traveling at 10 m/s collides with a stationary 0.30 kg ball. After the
+collision, the 0.20 kg ball moves at 4.0 m/s at an angle of 30° to its original path. a) Determine
+the speed and direction of the 0.30 kg ball after the collision. b) Was the collision elastic?
+Justify your answer with a calculation.
+
 <details>
 <summary>Answer</summary>
 
@@ -313,12 +317,13 @@ elastic? Justify your answer with a calculation.
   energy).
   </details>
 
-5. **Question:** A 1200 kg car travels at a constant speed of 15 m/s around a flat circular track of
+**Problem 5.** A 1200 kg car travels at a constant speed of 15 m/s around a flat circular track of
 radius 50 m. It then moves to a section of the track banked at an angle $\theta$. a) For the flat
 track, what is the magnitude of the frictional force required to keep the car on the track, and what
 is the minimum coefficient of static friction required? b) For the banked track, what is the ideal
 banking angle $\theta$ (the "design speed" angle) for the car to navigate the turn at 15 m/s without
 any reliance on friction?
+
 <details>
 <summary>Answer</summary>
 
@@ -347,11 +352,12 @@ any reliance on friction?
   equations.
   </details>
 
-6. **Question (HL Only):** A thin hoop of mass M and radius R ($I=MR^2$) rolls without slipping down
-an incline of angle $\theta$. a) Draw a free-body diagram for the hoop, including the force of
-static friction. b) By considering both linear and rotational dynamics, derive an expression for the
-linear acceleration, $a$, of the hoop's center of mass. c) How does this acceleration compare to
-that of a block sliding down the same incline without friction?
+**Problem 6.** **Question (HL Only):** A thin hoop of mass M and radius R ($I=MR^2$) rolls without
+slipping down an incline of angle $\theta$. a) Draw a free-body diagram for the hoop, including the
+force of static friction. b) By considering both linear and rotational dynamics, derive an
+expression for the linear acceleration, $a$, of the hoop's center of mass. c) How does this
+acceleration compare to that of a block sliding down the same incline without friction?
+
 <details>
 <summary>Answer</summary>
 
@@ -379,10 +385,11 @@ forms of Newton's second law, correctly identifying static friction as the sourc
 rolling objects, and using the no-slip condition ($a=\alpha R$) to connect the two equations.
 </details>
 
-7. **Question (HL Only):** An ice skater is spinning at an angular speed of 10.0 rad/s with her arms
-outstretched. In this position, her moment of inertia is 4.0 kg m². She then pulls her arms in,
-reducing her moment of inertia to 1.5 kg m². a) What is her new angular speed? b) Calculate the
-change in her rotational kinetic energy. c) Where does this change in energy come from?
+**Problem 7.** **Question (HL Only):** An ice skater is spinning at an angular speed of 10.0 rad/s
+with her arms outstretched. In this position, her moment of inertia is 4.0 kg m². She then pulls her
+arms in, reducing her moment of inertia to 1.5 kg m². a) What is her new angular speed? b) Calculate
+the change in her rotational kinetic energy. c) Where does this change in energy come from?
+
 <details>
 <summary>Answer</summary>
 
@@ -405,12 +412,13 @@ energy is _not_ necessarily conserved when the moment of inertia changes, and th
 to change the configuration of a rotating system.
 </details>
 
-8. **Question (HL Only):** From the perspective of an observer in a laboratory, a muon is created by
-a cosmic ray at an altitude of 10.0 km. It travels downwards at a speed of 0.995c. The proper
-half-life of a muon at rest is 1.56 μs. a) From the lab observer's perspective, what is the muon's
-half-life? b) Will the muon reach the ground before decaying, according to the lab observer? Justify
-with a calculation. c) Now, analyze the situation from the muon's reference frame. How does the muon
-"explain" its ability to reach the ground?
+**Problem 8.** **Question (HL Only):** From the perspective of an observer in a laboratory, a muon
+is created by a cosmic ray at an altitude of 10.0 km. It travels downwards at a speed of 0.995c. The
+proper half-life of a muon at rest is 1.56 μs. a) From the lab observer's perspective, what is the
+muon's half-life? b) Will the muon reach the ground before decaying, according to the lab observer?
+Justify with a calculation. c) Now, analyze the situation from the muon's reference frame. How does
+the muon "explain" its ability to reach the ground?
+
 <details>
 <summary>Answer</summary>
 

@@ -413,10 +413,10 @@ $$
 <details>
 <summary>Example</summary>
 
-$\$10{,}000$ is invested at $5\%$ per annum, compounded annually. How long does it take for the
+$\$10,000$ is invested at $5\%$ per annum, compounded annually. How long does it take for the
 investment to double?
 
-- Set $A = 2P = 20{,}000$, $P = 10{,}000$, $r = 5$, $n = 1$.
+- Set $A = 2P = 20,000$, $P = 10,000$, $r = 5$, $n = 1$.
 - $20000 = 10000(1.05)^t$, so $2 = (1.05)^t$.
 - Take $\log$: $\log 2 = t \log 1.05$.
 - $t = \dfrac{\log 2}{\log 1.05} \approx 14.2$ years.
@@ -579,14 +579,14 @@ Sketch $y = \log_2(x - 3) + 1$.
    </details>
 
 4. **Question:** The population of a bacteria culture grows exponentially. At 12:00, the population
-   is $10{,}000$. At 14:00, the population is $40{,}000$. Find the population at 17:00.
+   is $10,000$. At 14:00, the population is $40,000$. Find the population at 17:00.
 
    <details>
    <summary>Answer</summary>
    - Model: $P(t) = P_0 \cdot a^t$ where $t$ is in hours from 12:00.
-   - At $t = 0$: $P_0 = 10{,}000$.
-   - At $t = 2$: $40{,}000 = 10{,}000 \cdot a^2$, so $a^2 = 4$, giving $a = 2$.
-   - At $t = 5$ (17:00): $P(5) = 10{,}000 \cdot 2^5 = 320{,}000$.
+   - At $t = 0$: $P_0 = 10,000$.
+   - At $t = 2$: $40,000 = 10,000 \cdot a^2$, so $a^2 = 4$, giving $a = 2$.
+   - At $t = 5$ (17:00): $P(5) = 10,000 \cdot 2^5 = 320,000$.
 
    </details>
 
@@ -646,8 +646,8 @@ Sketch $y = \log_2(x - 3) + 1$.
 
    </details>
 
-10. **Question:** An investor deposits $\$5{,}000$ into an account earning $4\%$ interest compounded
-    quarterly. How long (to the nearest quarter) does it take for the balance to reach $\$10{,}000$?
+10. **Question:** An investor deposits $\$5,000$ into an account earning $4\%$ interest compounded
+    quarterly. How long (to the nearest quarter) does it take for the balance to reach $\$10,000$?
 
     <details>
     <summary>Answer</summary>
