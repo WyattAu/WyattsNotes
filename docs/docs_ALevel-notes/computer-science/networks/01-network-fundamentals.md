@@ -13,7 +13,8 @@ slug: network-fundamentals
 
 ### LAN (Local Area Network)
 
-A network connecting computers within a limited geographical area (building, campus). Characteristics:
+A network connecting computers within a limited geographical area (building, campus).
+Characteristics:
 
 - High speed (100 Mbps to 10 Gbps)
 - Low latency
@@ -22,7 +23,8 @@ A network connecting computers within a limited geographical area (building, cam
 
 ### WAN (Wide Area Network)
 
-A network spanning large geographical areas (cities, countries, continents). The internet is the largest WAN. Characteristics:
+A network spanning large geographical areas (cities, countries, continents). The internet is the
+largest WAN. Characteristics:
 
 - Lower speed than LAN
 - Higher latency
@@ -154,12 +156,10 @@ Physical:     [Bits on wire]
 | Header      | 20+ bytes                 | 8 bytes                |
 | Use cases   | Web, email, file transfer | Streaming, gaming, DNS |
 
-:::info Board-specific
-Know specific use cases for each protocol:
+:::info Board-specific Know specific use cases for each protocol:
 
 - TCP: HTTP, HTTPS, FTP, SMTP, SSH
-- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP
-  :::
+- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP :::
 
 ### TCP Three-Way Handshake
 
@@ -215,7 +215,8 @@ Subnet masks divide an IP address into **network** and **host** portions.
 | 172.16.0.0 – 172.31.255.255   | B     | Private (LAN) |
 | 192.168.0.0 – 192.168.255.255 | C     | Private (LAN) |
 
-Private addresses are not routable on the internet. **NAT** (Network Address Translation) translates private addresses to a public address at the router.
+Private addresses are not routable on the internet. **NAT** (Network Address Translation) translates
+private addresses to a public address at the router.
 
 ---
 
@@ -223,7 +224,8 @@ Private addresses are not routable on the internet. **NAT** (Network Address Tra
 
 ### Definition
 
-DNS translates human-readable domain names (e.g., `www.example.com`) into IP addresses (e.g., `93.184.216.34`).
+DNS translates human-readable domain names (e.g., `www.example.com`) into IP addresses (e.g.,
+`93.184.216.34`).
 
 ### DNS Hierarchy
 
@@ -272,9 +274,11 @@ Root DNS servers (.)
 
 ## Problem Set
 
-**Problem 1.** A company has a Class C network address `192.168.5.0/24`. They need 6 subnets. Calculate the subnet mask, number of hosts per subnet, and the network addresses of each subnet.
+**Problem 1.** A company has a Class C network address `192.168.5.0/24`. They need 6 subnets.
+Calculate the subnet mask, number of hosts per subnet, and the network addresses of each subnet.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Need 6 subnets. Borrow bits: $2^2 = 4$ (not enough), $2^3 = 8$ (enough). Borrow 3 bits.
 
@@ -295,11 +299,12 @@ Subnet addresses (increment by 32):
 
 8 subnets available (6 needed + 2 spare).
 
-</div></details>
+</details>
 
 **Problem 2.** Explain the TCP three-way handshake. Why is a two-way handshake insufficient?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Three-way handshake:**
 
@@ -307,13 +312,20 @@ Subnet addresses (increment by 32):
 2. Server sends SYN-ACK (seq = y, ack = x+1): "I acknowledge and agree"
 3. Client sends ACK (ack = y+1): "Acknowledged, connection established"
 
-**Why two-way is insufficient:** A two-way handshake cannot prevent **stale duplicate SYNs** from establishing spurious connections. If a client sends a SYN that is delayed by the network, and the client times out and sends another SYN, the first SYN may arrive later. With a two-way handshake, both SYNs would create separate connections. The third ACK in the three-way handshake allows the server to identify and discard stale connections: if the server receives an ACK for a connection it didn't establish, it rejects it.
+**Why two-way is insufficient:** A two-way handshake cannot prevent **stale duplicate SYNs** from
+establishing spurious connections. If a client sends a SYN that is delayed by the network, and the
+client times out and sends another SYN, the first SYN may arrive later. With a two-way handshake,
+both SYNs would create separate connections. The third ACK in the three-way handshake allows the
+server to identify and discard stale connections: if the server receives an ACK for a connection it
+didn't establish, it rejects it.
 
-</div></details>
+</details>
 
-**Problem 3.** A user types `https://www.cam.ac.uk` into their browser. Describe the steps that occur before the web page is displayed, including DNS resolution and the TCP handshake.
+**Problem 3.** A user types `https://www.cam.ac.uk` into their browser. Describe the steps that
+occur before the web page is displayed, including DNS resolution and the TCP handshake.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 1. **DNS Resolution:**
    - Browser checks local cache → not found
@@ -342,11 +354,13 @@ Subnet addresses (increment by 32):
 
 6. **Rendering:** Browser parses and displays the page
 
-</div></details>
+</details>
 
-**Problem 4.** Compare star and mesh topologies in terms of cost, reliability, and scalability. Which would you recommend for a hospital network? Justify.
+**Problem 4.** Compare star and mesh topologies in terms of cost, reliability, and scalability.
+Which would you recommend for a hospital network? Justify.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Star:**
 
@@ -360,20 +374,26 @@ Subnet addresses (increment by 32):
 - Reliability: High (multiple paths between any two devices)
 - Scalability: Low (adding a device requires cables to all existing devices)
 
-**Recommendation for a hospital:** A **partial mesh** or **redundant star** topology. Hospital networks require high reliability (life-critical systems cannot have downtime), but a full mesh is prohibitively expensive. A practical approach: multiple star networks connected by redundant links (partial mesh at the backbone level). Critical systems (ICU monitors) may have redundant connections.
+**Recommendation for a hospital:** A **partial mesh** or **redundant star** topology. Hospital
+networks require high reliability (life-critical systems cannot have downtime), but a full mesh is
+prohibitively expensive. A practical approach: multiple star networks connected by redundant links
+(partial mesh at the backbone level). Critical systems (ICU monitors) may have redundant
+connections.
 
-</div></details>
+</details>
 
 **Problem 5.** Explain why UDP is preferred over TCP for online gaming and video conferencing.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Online gaming:**
 
 - Low latency is critical — a delayed packet is worse than a lost packet
 - UDP's lack of retransmission means lost data is simply skipped (the game moves on)
 - TCP's retransmission and ordering cause delay and jitter
-- Games can implement their own reliability for critical data (e.g., player positions) while dropping non-critical data (e.g., cosmetic effects)
+- Games can implement their own reliability for critical data (e.g., player positions) while
+  dropping non-critical data (e.g., cosmetic effects)
 
 **Video conferencing:**
 
@@ -382,11 +402,12 @@ Subnet addresses (increment by 32):
 - Occasional packet loss manifests as brief glitches (acceptable)
 - TCP would buffer delayed packets, causing increasing lag
 
-</div></details>
+</details>
 
 **Problem 6.** Calculate the number of usable host addresses in a `/28` subnet.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 `/28` means 28 bits for the network, $32 - 28 = 4$ bits for the host.
 
@@ -394,13 +415,15 @@ Number of addresses: $2^4 = 16$
 
 Usable hosts: $16 - 2 = 14$ (subtract network address and broadcast address).
 
-</div></details>
+</details>
 
 **Problem 7.** Explain the purpose of NAT (Network Address Translation) and how it works.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Purpose:** NAT allows multiple devices on a private network to share a single public IP address for internet access. This:
+**Purpose:** NAT allows multiple devices on a private network to share a single public IP address
+for internet access. This:
 
 1. Conserves the limited IPv4 address space
 2. Hides internal network structure from external networks (security)
@@ -408,37 +431,40 @@ Usable hosts: $16 - 2 = 14$ (subtract network address and broadcast address).
 **How it works:**
 
 1. A device on the LAN (e.g., `192.168.1.10`) sends a packet to an external server
-2. The router replaces the source IP (`192.168.1.10`) with its public IP (`203.0.113.1`) and records the mapping in a NAT table
+2. The router replaces the source IP (`192.168.1.10`) with its public IP (`203.0.113.1`) and records
+   the mapping in a NAT table
 3. The router also changes the source port to a unique value (PAT — Port Address Translation)
-4. When the response arrives, the router looks up the destination port in the NAT table, replaces the destination IP with `192.168.1.10`, and forwards it
+4. When the response arrives, the router looks up the destination port in the NAT table, replaces
+   the destination IP with `192.168.1.10`, and forwards it
 
-**NAT table example:**
-| Internal IP | Internal Port | External Port | External IP |
-| --------------- | ------------- | ------------- | -------------- |
-| 192.168.1.10 | 50123 | 60001 | 203.0.113.1 |
-| 192.168.1.11 | 50124 | 60002 | 203.0.113.1 |
+**NAT table example:** | Internal IP | Internal Port | External Port | External IP | |
+--------------- | ------------- | ------------- | -------------- | | 192.168.1.10 | 50123 | 60001 |
+203.0.113.1 | | 192.168.1.11 | 50124 | 60002 | 203.0.113.1 |
 
-</div></details>
+</details>
 
 **Problem 8.** Explain what happens at each layer of the OSI model when you send an email.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Layer 7 (Application):** Email client composes the message using SMTP protocol.
-**Layer 6 (Presentation):** Data is formatted (e.g., converting to MIME format for attachments).
-**Layer 5 (Session):** A session is established with the mail server.
-**Layer 4 (Transport):** Data is segmented and wrapped in a TCP segment with port 25. TCP ensures reliable delivery.
-**Layer 3 (Network):** IP header is added with source and destination IP addresses. Routing determines the path.
-**Layer 2 (Data Link):** Ethernet frame is created with MAC addresses of the next hop.
-**Layer 1 (Physical):** Bits are transmitted as electrical/optical signals over the network cable.
+**Layer 7 (Application):** Email client composes the message using SMTP protocol. **Layer 6
+(Presentation):** Data is formatted (e.g., converting to MIME format for attachments). **Layer 5
+(Session):** A session is established with the mail server. **Layer 4 (Transport):** Data is
+segmented and wrapped in a TCP segment with port 25. TCP ensures reliable delivery. **Layer 3
+(Network):** IP header is added with source and destination IP addresses. Routing determines the
+path. **Layer 2 (Data Link):** Ethernet frame is created with MAC addresses of the next hop. **Layer
+1 (Physical):** Bits are transmitted as electrical/optical signals over the network cable.
 
 At the receiving end, each layer removes its header in reverse order (Layers 1→7).
 
-</div></details>
+</details>
 
-**Problem 9.** A network uses the IP address `172.16.5.130/25`. What is the network address, broadcast address, and range of usable host addresses?
+**Problem 9.** A network uses the IP address `172.16.5.130/25`. What is the network address,
+broadcast address, and range of usable host addresses?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 `/25` → subnet mask: `255.255.255.128`
 
@@ -452,11 +478,13 @@ Usable host range: `172.16.5.129` – `172.16.5.254`
 
 Number of usable hosts: $2^7 - 2 = 126$
 
-</div></details>
+</details>
 
-**Problem 10.** Explain the difference between a switch and a router. At which OSI layer does each operate?
+**Problem 10.** Explain the difference between a switch and a router. At which OSI layer does each
+operate?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Property   | Switch                             | Router                                  |
 | ---------- | ---------------------------------- | --------------------------------------- |
@@ -467,6 +495,9 @@ Number of usable hosts: $2^7 - 2 = 126$
 | Broadcast  | Forwards broadcasts within LAN     | Blocks broadcasts between networks      |
 | Use case   | Building/campus network            | Internet connectivity                   |
 
-A switch operates at Layer 2, forwarding frames within a single network segment. A router operates at Layer 3, making decisions about which network to forward packets to, enabling inter-network communication.
+A switch operates at Layer 2, forwarding frames within a single network segment. A router operates
+at Layer 3, making decisions about which network to forward packets to, enabling inter-network
+communication.
 
-For revision on network security, see [Network Security](/docs/docs_ALevel-notes/computer-science/networks/02-network-security).
+For revision on network security, see
+[Network Security](/docs/docs_ALevel-notes/computer-science/networks/02-network-security).

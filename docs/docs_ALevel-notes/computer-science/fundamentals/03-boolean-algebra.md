@@ -119,7 +119,8 @@ We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:
 
 Columns 4 and 7 are identical. $\square$
 
-**Algebraic proof (Law 1):** Consider $f = \overline{A+B}$. We show $f = \bar{A} \cdot \bar{B}$ by checking both complement cases:
+**Algebraic proof (Law 1):** Consider $f = \overline{A+B}$. We show $f = \bar{A} \cdot \bar{B}$ by
+checking both complement cases:
 
 $f \cdot (A + B) = \overline{A+B} \cdot (A+B) = 0$ (by complement law)
 
@@ -129,11 +130,13 @@ Now $(\bar{A} \cdot \bar{B}) \cdot (A + B) = \bar{A}\bar{B}A + \bar{A}\bar{B}B =
 
 And $(\bar{A} \cdot \bar{B}) + (A + B) = (\bar{A} + A + B)(\bar{B} + A + B) = 1 \cdot 1 = 1$
 
-Since both $f$ and $\bar{A}\cdot\bar{B}$ have the same complement relationship with $A+B$, by uniqueness of complement, $f = \bar{A}\cdot\bar{B}$. $\square$
+Since both $f$ and $\bar{A}\cdot\bar{B}$ have the same complement relationship with $A+B$, by
+uniqueness of complement, $f = \bar{A}\cdot\bar{B}$. $\square$
 
 ### XNOR Identity
 
-**Theorem.** $\overline{A \oplus B} = A \odot B$ (XNOR), where $A \odot B = A \cdot B + \bar{A} \cdot \bar{B}$.
+**Theorem.** $\overline{A \oplus B} = A \odot B$ (XNOR), where
+$A \odot B = A \cdot B + \bar{A} \cdot \bar{B}$.
 
 **Proof.** By definition, $A \oplus B = A\bar{B} + \bar{A}B$.
 
@@ -143,7 +146,9 @@ Applying De Morgan's: $= \overline{A\bar{B}} \cdot \overline{\bar{A}B}$
 
 Applying De Morgan's again: $= (\bar{A} + B) \cdot (A + \bar{B})$
 
-Expanding: $= \bar{A}A + \bar{A}\bar{B} + AB + B\bar{B} = 0 + \bar{A}\bar{B} + AB + 0 = AB + \bar{A}\bar{B} = A \odot B$. $\square$
+Expanding:
+$= \bar{A}A + \bar{A}\bar{B} + AB + B\bar{B} = 0 + \bar{A}\bar{B} + AB + 0 = AB + \bar{A}\bar{B} = A \odot B$.
+$\square$
 
 ---
 
@@ -151,7 +156,10 @@ Expanding: $= \bar{A}A + \bar{A}\bar{B} + AB + B\bar{B} = 0 + \bar{A}\bar{B} + A
 
 ### Principle
 
-A Karnaugh map is a graphical method for simplifying Boolean expressions. The key insight is that **adjacent cells in the K-map correspond to minterms that differ in exactly one variable**. By the combining theorem $AB + A\bar{B} = A(B + \bar{B}) = A$, grouping adjacent cells eliminates the variable that differs.
+A Karnaugh map is a graphical method for simplifying Boolean expressions. The key insight is that
+**adjacent cells in the K-map correspond to minterms that differ in exactly one variable**. By the
+combining theorem $AB + A\bar{B} = A(B + \bar{B}) = A$, grouping adjacent cells eliminates the
+variable that differs.
 
 ### 2-Variable K-Map
 
@@ -174,7 +182,8 @@ A=0  | m0  m1  m3  m2 |
 A=1  | m4  m5  m7  m6 |
 ```
 
-Note: columns are arranged in **Gray code** order (00, 01, 11, 10) so that adjacent columns differ by exactly one bit.
+Note: columns are arranged in **Gray code** order (00, 01, 11, 10) so that adjacent columns differ
+by exactly one bit.
 
 ### 4-Variable K-Map
 
@@ -199,17 +208,26 @@ AB=10 | m8  m9  m11 m10|
 
 ### Proof: Grouping $2^n$ Cells Eliminates $n$ Variables
 
-**Theorem.** A group of $2^n$ adjacent cells in a K-map yields a product term with $k - n$ literals, where $k$ is the total number of variables.
+**Theorem.** A group of $2^n$ adjacent cells in a K-map yields a product term with $k - n$ literals,
+where $k$ is the total number of variables.
 
 **Proof by induction on $n$.**
 
-_Base case ($n = 0$):_ A group of $1 = 2^0$ cell is a single minterm, which has all $k$ literals. $k - 0 = k$. ✓
+_Base case ($n = 0$):_ A group of $1 = 2^0$ cell is a single minterm, which has all $k$ literals.
+$k - 0 = k$. ✓
 
-_Base case ($n = 1$):_ A group of 2 adjacent cells differs in exactly 1 variable. By the combining theorem, that variable is eliminated. Result has $k - 1$ literals. ✓
+_Base case ($n = 1$):_ A group of 2 adjacent cells differs in exactly 1 variable. By the combining
+theorem, that variable is eliminated. Result has $k - 1$ literals. ✓
 
-_Inductive step:_ Assume a group of $2^n$ cells eliminates $n$ variables. Consider a group of $2^{n+1}$ cells. This can be viewed as two adjacent groups of $2^n$ cells each, which differ in exactly one additional variable (since the overall group is rectangular and contiguous in Gray code ordering). Each sub-group produces a term with $k - n$ literals, and these two sub-groups differ in one variable, so combining them eliminates one more variable, yielding $k - (n + 1)$ literals. ✓ $\square$
+_Inductive step:_ Assume a group of $2^n$ cells eliminates $n$ variables. Consider a group of
+$2^{n+1}$ cells. This can be viewed as two adjacent groups of $2^n$ cells each, which differ in
+exactly one additional variable (since the overall group is rectangular and contiguous in Gray code
+ordering). Each sub-group produces a term with $k - n$ literals, and these two sub-groups differ in
+one variable, so combining them eliminates one more variable, yielding $k - (n + 1)$ literals. ✓
+$\square$
 
-<details><summary>Example: Simplify $f(A,B,C) = \sum(0,1,2,5,6,7)$ using a K-map</summary><div>
+<details>
+<summary>Example: Simplify $f(A,B,C) = \sum(0,1,2,5,6,7)$ using a K-map</summary>
 
 ```
         BC
@@ -220,9 +238,10 @@ A=1  |  0   1   1   1 |
 
 Groups:
 
-- Cells (0,1,5,4? no, 4 is 0): Cells (0,1): $A=0, B=0, C$ varies → $\bar{A}\bar{B}$
-  Actually, let me re-map: minterm $m_i$ corresponds to binary $i$ in order $ABC$.
-  - $m_0 = 000$, $m_1 = 001$, $m_2 = 010$, $m_3 = 011$, $m_4 = 100$, $m_5 = 101$, $m_6 = 110$, $m_7 = 111$
+- Cells (0,1,5,4? no, 4 is 0): Cells (0,1): $A=0, B=0, C$ varies → $\bar{A}\bar{B}$ Actually, let me
+  re-map: minterm $m_i$ corresponds to binary $i$ in order $ABC$.
+  - $m_0 = 000$, $m_1 = 001$, $m_2 = 010$, $m_3 = 011$, $m_4 = 100$, $m_5 = 101$, $m_6 = 110$,
+    $m_7 = 111$
 
 K-map:
 
@@ -238,7 +257,8 @@ A=1  | m4  m5  m7  m6 |
 Groups:
 
 1. (m0, m1) = $(\bar{A}\bar{B})$ — $A=0, B=0, C$ varies
-2. (m1, m5) = $(\bar{B}C)$ — $B=0, C=1, A$ varies (wraps vertically? No, these are in the same column BC=01)
+2. (m1, m5) = $(\bar{B}C)$ — $B=0, C=1, A$ varies (wraps vertically? No, these are in the same
+   column BC=01)
 3. (m6, m7) = $(AB)$ — $A=1, B=1, C$ varies
 4. (m0, m2) = $(\bar{A}\bar{C})$ — $A=0, C=0, B$ varies
 
@@ -246,7 +266,8 @@ Optimal grouping:
 
 - (m0, m1): $\bar{A}\bar{B}$
 - (m6, m7): $AB$
-- (m5, m7): $AC$ (column BC=11 and BC=01 share? No. m5=101, m7=111 differ in B. These are at BC=01 and BC=11 for A=1.)
+- (m5, m7): $AC$ (column BC=11 and BC=01 share? No. m5=101, m7=111 differ in B. These are at BC=01
+  and BC=11 for A=1.)
 
 Let me redo. The groups are:
 
@@ -255,13 +276,15 @@ Let me redo. The groups are:
 - (m5, m7): adjacent in B direction → $AC$
 - (m6, m7): adjacent in C direction → $AB$
 
-Best cover: Use (m0, m2) for $\bar{A}\bar{C}$, (m5, m7) for $AC$, (m6, m7) for $AB$, (m1, m5) for $\bar{B}C$.
+Best cover: Use (m0, m2) for $\bar{A}\bar{C}$, (m5, m7) for $AC$, (m6, m7) for $AB$, (m1, m5) for
+$\bar{B}C$.
 
-Actually: optimal is $f = \bar{A}\bar{B} + AC + AB\bar{C}$... Let me just provide the standard result.
+Actually: optimal is $f = \bar{A}\bar{B} + AC + AB\bar{C}$... Let me just provide the standard
+result.
 
 $f = \bar{A}\bar{B} + \bar{B}C + AB$
 
-</div></details>
+</details>
 
 ---
 
@@ -276,14 +299,12 @@ Standard symbols:
 - **NOR gate:** OR with circle
 - **XOR gate:** OR with extra curved line on input
 
-:::tip Exam technique
-When drawing logic circuits from a Boolean expression:
+:::tip Exam technique When drawing logic circuits from a Boolean expression:
 
 1. Identify the order of operations (parentheses first)
 2. Draw inputs on the left
 3. Work rightward, one gate at a time
-4. Label all intermediate and output signals
-   :::
+4. Label all intermediate and output signals :::
 
 ---
 
@@ -356,7 +377,8 @@ Actually, in Boolean algebra: $AB + AC_{in} + BC_{in} = AB + C_{in}(A + B)$
 
 $(A \oplus B)C_{in} + AB = (A\bar{B} + \bar{A}B)C_{in} + AB$
 
-Consider all 8 cases in the truth table — both expressions yield the same $C_{out}$ column, so they are equivalent. ✓
+Consider all 8 cases in the truth table — both expressions yield the same $C_{out}$ column, so they
+are equivalent. ✓
 
 **Implementation:** 2 XOR gates + 2 AND gates + 1 OR gate (or equivalent).
 
@@ -371,15 +393,18 @@ A **ripple-carry adder** chains $n$ full adders to add two $n$-bit numbers.
    S0    S1    S2         Sn-1
 ```
 
-**Delay analysis.** The carry propagates through all $n$ stages. Each full adder has a gate delay of $\Delta$ (typically 2-3 gate delays). Total delay for the $n$-bit ripple-carry adder: $O(n)$.
+**Delay analysis.** The carry propagates through all $n$ stages. Each full adder has a gate delay of
+$\Delta$ (typically 2-3 gate delays). Total delay for the $n$-bit ripple-carry adder: $O(n)$.
 
-This is the primary disadvantage: the worst-case delay is proportional to the number of bits. Faster adders (carry-lookahead, carry-select) reduce this to $O(\log n)$.
+This is the primary disadvantage: the worst-case delay is proportional to the number of bits. Faster
+adders (carry-lookahead, carry-select) reduce this to $O(\log n)$.
 
 ---
 
 ## 6. D-Type Flip-Flop
 
-A **D-type flip-flop** (D-FF) stores one bit of data. On the rising edge of the clock signal, the output $Q$ takes the value of the input $D$.
+A **D-type flip-flop** (D-FF) stores one bit of data. On the rising edge of the clock signal, the
+output $Q$ takes the value of the input $D$.
 
 | $D$ | $Q_{next}$ (on clock edge) |
 | --- | -------------------------- |
@@ -408,19 +433,21 @@ D-type flip-flops are the fundamental building blocks of:
    - Karnaugh maps (preferred for up to 4 variables)
 4. Draw the circuit from the simplified expression
 
-:::tip Exam technique
-For K-maps with don't-care conditions (X), treat X as 1 if it helps make a larger group, and 0 otherwise. This minimises the expression.
-:::
+:::tip Exam technique For K-maps with don't-care conditions (X), treat X as 1 if it helps make a
+larger group, and 0 otherwise. This minimises the expression. :::
 
 ---
 
 ## Problem Set
 
-**Problem 1.** Using truth tables, prove De Morgan's second law: $\overline{A \cdot B} = \bar{A} + \bar{B}$.
+**Problem 1.** Using truth tables, prove De Morgan's second law:
+$\overline{A \cdot B} = \bar{A} + \bar{B}$.
 
-<details><summary>Hint</summary><div>Construct a truth table with columns for $A$, $B$, $A \cdot B$, $\overline{A \cdot B}$, $\bar{A}$, $\bar{B}$, and $\bar{A} + \bar{B}$.</div></details>
+<details>
+<summary>Hint</summary>Construct a truth table with columns for $A$, $B$, $A \cdot B$, $\overline{A \cdot B}$, $\bar{A}$, $\bar{B}$, and $\bar{A} + \bar{B}$.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | $A$ | $B$ | $A \cdot B$ | $\overline{A \cdot B}$ | $\bar{A}$ | $\bar{B}$ | $\bar{A}+\bar{B}$ |
 | --- | --- | ----------- | ---------------------- | --------- | --------- | ----------------- |
@@ -431,13 +458,16 @@ For K-maps with don't-care conditions (X), treat X as 1 if it helps make a large
 
 Columns 4 and 7 are identical. ✓
 
-</div></details>
+</details>
 
-**Problem 2.** Simplify the expression $\bar{A}B\bar{C} + \bar{A}BC + AB\bar{C} + ABC$ using Boolean algebra.
+**Problem 2.** Simplify the expression $\bar{A}B\bar{C} + \bar{A}BC + AB\bar{C} + ABC$ using Boolean
+algebra.
 
-<details><summary>Hint</summary><div>Factor out common terms. Use the identity $X\bar{Y} + XY = X$.</div></details>
+<details>
+<summary>Hint</summary>Factor out common terms. Use the identity $X\bar{Y} + XY = X$.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $\bar{A}B\bar{C} + \bar{A}BC + AB\bar{C} + ABC$
 
@@ -447,13 +477,15 @@ $= \bar{A}B(1) + AB(1)$
 
 $= B(\bar{A} + A) = B(1) = B$
 
-</div></details>
+</details>
 
 **Problem 3.** Use a 3-variable K-map to simplify $f(A,B,C) = \sum(1, 3, 5, 7)$.
 
-<details><summary>Hint</summary><div>Plot the minterms on a K-map and look for the largest possible rectangular groups.</div></details>
+<details>
+<summary>Hint</summary>Plot the minterms on a K-map and look for the largest possible rectangular groups.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```
         BC
@@ -464,7 +496,8 @@ A=1  |  0   1   1   0 |
 
 All four 1s form a single column (BC = 01 and BC = 11... wait).
 
-Let me re-map: $m_1 = 001$ (A=0, BC=01), $m_3 = 011$ (A=0, BC=11), $m_5 = 101$ (A=1, BC=01), $m_7 = 111$ (A=1, BC=11).
+Let me re-map: $m_1 = 001$ (A=0, BC=01), $m_3 = 011$ (A=0, BC=11), $m_5 = 101$ (A=1, BC=01),
+$m_7 = 111$ (A=1, BC=11).
 
 ```
         BC
@@ -473,17 +506,21 @@ A=0  |  0   1   1   0 |
 A=1  |  0   1   1   0 |
 ```
 
-Group all four: these span both rows (A varies) and columns 01, 11 (B=0 for 01, B=1 for 11, so B varies; C=1 for both). The common variable is $C = 1$.
+Group all four: these span both rows (A varies) and columns 01, 11 (B=0 for 01, B=1 for 11, so B
+varies; C=1 for both). The common variable is $C = 1$.
 
 $f = C$
 
-</div></details>
+</details>
 
-**Problem 4.** Use a 4-variable K-map to simplify $f(A,B,C,D) = \sum(0, 1, 2, 4, 5, 6, 8, 9, 12, 13, 14)$.
+**Problem 4.** Use a 4-variable K-map to simplify
+$f(A,B,C,D) = \sum(0, 1, 2, 4, 5, 6, 8, 9, 12, 13, 14)$.
 
-<details><summary>Hint</summary><div>Plot on a 4-variable K-map. Look for groups of 4 and 2.</div></details>
+<details>
+<summary>Hint</summary>Plot on a 4-variable K-map. Look for groups of 4 and 2.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```
         CD
@@ -500,34 +537,34 @@ Groups:
 2. All of CD=01 (m1, m5, m13, m9): $\bar{C}D$
 3. CD=10, AB=00 and AB=01 (m2, m6): $\bar{A}\bar{C}D$... wait.
 
-CD=10 column: m2=0010(AB=00), m6=0110(AB=01), m14=1110(AB=11). So m2, m6, m14 are 1s. That's a group of... not rectangular unless we include m10 which is 0.
+CD=10 column: m2=0010(AB=00), m6=0110(AB=01), m14=1110(AB=11). So m2, m6, m14 are 1s. That's a group
+of... not rectangular unless we include m10 which is 0.
 
 Groups:
 
 - (m0, m1, m4, m5): $\bar{A}\bar{C}$ — wait, that's not right either. Let me re-examine.
 
-AB=00, CD=00,01: $\bar{A}\bar{B}\bar{C}$
-AB=01, CD=00,01: $\bar{A}B\bar{C}$
-AB=11, CD=00,01: $AB\bar{C}$
-AB=10, CD=00,01: $A\bar{B}\bar{C}$
+AB=00, CD=00,01: $\bar{A}\bar{B}\bar{C}$ AB=01, CD=00,01: $\bar{A}B\bar{C}$ AB=11, CD=00,01:
+$AB\bar{C}$ AB=10, CD=00,01: $A\bar{B}\bar{C}$
 
 So the 8 cells in columns CD=00 and CD=01 form a group: $\bar{C}$.
 
 For CD=10: m2 (AB=00), m6 (AB=01), m14 (AB=11).
 
-Group (m2, m6): $\bar{A}C\bar{D}$
-Group (m6, m14): $BC\bar{D}$
-Group (m2, m14): Not adjacent.
+Group (m2, m6): $\bar{A}C\bar{D}$ Group (m6, m14): $BC\bar{D}$ Group (m2, m14): Not adjacent.
 
 $f = \bar{C} + \bar{A}C\bar{D} + BC\bar{D}$
 
-</div></details>
+</details>
 
-**Problem 5.** Derive the Boolean expression for a full adder's Sum output by constructing the truth table and writing the sum-of-products, then simplify.
+**Problem 5.** Derive the Boolean expression for a full adder's Sum output by constructing the truth
+table and writing the sum-of-products, then simplify.
 
-<details><summary>Hint</summary><div>Sum is 1 for rows: (0,0,1), (0,1,0), (1,0,0), (1,1,1).</div></details>
+<details>
+<summary>Hint</summary>Sum is 1 for rows: (0,0,1), (0,1,0), (1,0,0), (1,1,1).</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $\text{Sum} = \bar{A}\bar{B}C_{in} + \bar{A}B\bar{C}_{in} + A\bar{B}\bar{C}_{in} + ABC_{in}$
 
@@ -537,13 +574,16 @@ $= \bar{A}(B \oplus C_{in}) + A(\overline{B \oplus C_{in}})$
 
 $= A \oplus B \oplus C_{in}$
 
-</div></details>
+</details>
 
-**Problem 6.** Design a circuit that outputs 1 when a 3-bit binary input represents a prime number (2, 3, 5, or 7). Simplify using a K-map.
+**Problem 6.** Design a circuit that outputs 1 when a 3-bit binary input represents a prime number
+(2, 3, 5, or 7). Simplify using a K-map.
 
-<details><summary>Hint</summary><div>Prime minterms: $m_2, m_3, m_5, m_7$. Plot on a 3-variable K-map.</div></details>
+<details>
+<summary>Hint</summary>Prime minterms: $m_2, m_3, m_5, m_7$. Plot on a 3-variable K-map.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```
         BC
@@ -560,13 +600,15 @@ Groups:
 
 $f = BC + \bar{A}B + A\bar{B}C$
 
-</div></details>
+</details>
 
 **Problem 7.** Simplify $\overline{(\bar{A} + B)(A + \bar{B})}$ using De Morgan's laws.
 
-<details><summary>Hint</summary><div>Apply De Morgan's to the outer bar first, then to the inner expressions.</div></details>
+<details>
+<summary>Hint</summary>Apply De Morgan's to the outer bar first, then to the inner expressions.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $\overline{(\bar{A} + B)(A + \bar{B})}$
 
@@ -576,51 +618,67 @@ $= A\bar{B} + \bar{A}B$
 
 $= A \oplus B$
 
-</div></details>
+</details>
 
 **Problem 8.** Prove algebraically that $(A + B)(A + C) = A + BC$.
 
-<details><summary>Hint</summary><div>Expand the LHS and simplify.</div></details>
+<details>
+<summary>Hint</summary>Expand the LHS and simplify.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $(A + B)(A + C) = AA + AC + AB + BC = A + AC + AB + BC = A(1 + C + B) + BC = A + BC$
 
-</div></details>
+</details>
 
-**Problem 9.** A D-type flip-flop has its $D$ input connected to $\bar{Q}$. Describe the behaviour of the output $Q$ on each clock pulse.
+**Problem 9.** A D-type flip-flop has its $D$ input connected to $\bar{Q}$. Describe the behaviour
+of the output $Q$ on each clock pulse.
 
-<details><summary>Hint</summary><div>Since $D = \bar{Q}$ and $Q_{next} = D$, what happens to $Q$ on each clock edge?</div></details>
+<details>
+<summary>Hint</summary>Since $D = \bar{Q}$ and $Q_{next} = D$, what happens to $Q$ on each clock edge?</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $Q_{next} = D = \bar{Q}$
 
-On each rising clock edge, $Q$ toggles: if $Q = 0$, then $Q_{next} = 1$; if $Q = 1$, then $Q_{next} = 0$.
+On each rising clock edge, $Q$ toggles: if $Q = 0$, then $Q_{next} = 1$; if $Q = 1$, then
+$Q_{next} = 0$.
 
-This creates a **toggle flip-flop** (T-flip-flop), which divides the clock frequency by 2. It is the basis of binary counters.
+This creates a **toggle flip-flop** (T-flip-flop), which divides the clock frequency by 2. It is the
+basis of binary counters.
 
-</div></details>
+</details>
 
-**Problem 10.** What is the maximum propagation delay of a 16-bit ripple-carry adder if each full adder has a delay of 3 gate delays, and each gate delay is 2ns?
+**Problem 10.** What is the maximum propagation delay of a 16-bit ripple-carry adder if each full
+adder has a delay of 3 gate delays, and each gate delay is 2ns?
 
-<details><summary>Hint</summary><div>The carry must ripple through all 16 stages.</div></details>
+<details>
+<summary>Hint</summary>The carry must ripple through all 16 stages.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Total delay = $16 \times 3 \times 2\text{ns} = 96\text{ns}$
 
-The worst case is when a carry generated at bit 0 must propagate all the way to bit 15 (e.g., $0111\ldots1 + 0000\ldots1$).
+The worst case is when a carry generated at bit 0 must propagate all the way to bit 15 (e.g.,
+$0111\ldots1 + 0000\ldots1$).
 
-</div></details>
+</details>
 
-**Problem 11.** Implement a full adder using only NAND gates. State how many NAND gates are required.
+**Problem 11.** Implement a full adder using only NAND gates. State how many NAND gates are
+required.
 
-<details><summary>Hint</summary><div>First express XOR using NAND gates: $A \oplus B = \overline{\overline{A \cdot \overline{AB}} \cdot \overline{B \cdot \overline{AB}}}$.</div></details>
+<details>
+<summary>Hint</summary>First express XOR using NAND gates: $A \oplus B = \overline{\overline{A \cdot \overline{AB}} \cdot \overline{B \cdot \overline{AB}}}$.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-XOR from NAND: $A \oplus B = \overline{\overline{A \cdot \overline{AB}} \cdot \overline{B \cdot \overline{AB}}}$ — 4 NAND gates
+XOR from NAND:
+$A \oplus B = \overline{\overline{A \cdot \overline{AB}} \cdot \overline{B \cdot \overline{AB}}}$ —
+4 NAND gates
 
 NOT: $\bar{X} = \overline{X \cdot X}$ — 1 NAND gate (or use existing NAND output)
 
@@ -638,13 +696,16 @@ $C_{out} = AB + (A \oplus B)C_{in}$: AND + OR using NAND.
 
 Total: approximately 9 NAND gates.
 
-</div></details>
+</details>
 
-**Problem 12.** Use a K-map with don't-care conditions to simplify $f(A,B,C) = \sum(0,2,5) + d(1,4,7)$, where $d$ denotes don't-cares.
+**Problem 12.** Use a K-map with don't-care conditions to simplify
+$f(A,B,C) = \sum(0,2,5) + d(1,4,7)$, where $d$ denotes don't-cares.
 
-<details><summary>Hint</summary><div>Plot the 1s and Xs. Treat X as 1 only if it helps form a larger group.</div></details>
+<details>
+<summary>Hint</summary>Plot the 1s and Xs. Treat X as 1 only if it helps form a larger group.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```
         BC
@@ -655,7 +716,9 @@ A=1  |  X   1   X   0 |
 
 Grouping strategy:
 
-- (m0, m1, m4, m5): This wraps — m0(000), m1(001) in A=0; m4(100), m5(101) in A=1. These form a column BC=00 and BC=01. Treat m1 and m4 as 1. Group: $\bar{C}$ (all have C=0 or C=1... wait, BC=00 has C=0, BC=01 has C=1).
+- (m0, m1, m4, m5): This wraps — m0(000), m1(001) in A=0; m4(100), m5(101) in A=1. These form a
+  column BC=00 and BC=01. Treat m1 and m4 as 1. Group: $\bar{C}$ (all have C=0 or C=1... wait, BC=00
+  has C=0, BC=01 has C=1).
 
 Let me re-map: columns are BC values.
 
@@ -672,6 +735,7 @@ Best groups:
 
 $f = \bar{B} + \bar{A}\bar{C}$
 
-Check: $\bar{B}$ covers m0, m1, m4, m5. $\bar{A}\bar{C}$ covers m0, m2. All minterms (0, 2, 5) covered. ✓
+Check: $\bar{B}$ covers m0, m1, m4, m5. $\bar{A}\bar{C}$ covers m0, m2. All minterms (0, 2, 5)
+covered. ✓
 
-</div></details>
+</details>

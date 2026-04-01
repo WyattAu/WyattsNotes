@@ -84,7 +84,8 @@ $\square$
 
 ### Definitions
 
-For an algorithm with input size $n$, let $D_n$ be the set of all possible inputs of size $n$, and let $T(A, I)$ be the running time of algorithm $A$ on input $I$.
+For an algorithm with input size $n$, let $D_n$ be the set of all possible inputs of size $n$, and
+let $T(A, I)$ be the running time of algorithm $A$ on input $I$.
 
 - **Best case:** $T_{\text{best}}(n) = \min_{I \in D_n} T(A, I)$
 - **Worst case:** $T_{\text{worst}}(n) = \max_{I \in D_n} T(A, I)$
@@ -100,8 +101,8 @@ where $P(I)$ is the probability of input $I$.
 | Average | $O(n \log n)$ | Random inputs (expected)      |
 | Worst   | $O(n^2)$      | Already sorted, min/max pivot |
 
-:::warning Pitfall
-Average case assumes a **uniform distribution** of inputs. Real-world data may not be uniformly distributed. Always state the distribution assumption when discussing average case.
+:::warning Pitfall Average case assumes a **uniform distribution** of inputs. Real-world data may
+not be uniformly distributed. Always state the distribution assumption when discussing average case.
 :::
 
 ---
@@ -110,7 +111,7 @@ Average case assumes a **uniform distribution** of inputs. Real-world data may n
 
 ### The Master Theorem
 
-For recurrences of the form $T(n) = aT(n/b) + f(n)$ where $a \geq 1$, $b > 1$:
+For recurrences of the form $T(n) = aT(n/b) + f(n)$ where $a \geq 1$, $b \gt{} 1$:
 
 Let $c = \log_b a$. Compare $f(n)$ with $n^c$:
 
@@ -124,19 +125,23 @@ Let $c = \log_b a$. Compare $f(n)$ with $n^c$:
 
 **Example 1:** Merge sort: $T(n) = 2T(n/2) + O(n)$
 
-$a = 2, b = 2, c = \log_2 2 = 1$. $f(n) = O(n^1) = O(n^c)$. Case 2 with $k = 0$: $T(n) = \Theta(n \log n)$.
+$a = 2, b = 2, c = \log_2 2 = 1$. $f(n) = O(n^1) = O(n^c)$. Case 2 with $k = 0$:
+$T(n) = \Theta(n \log n)$.
 
 **Example 2:** Binary search: $T(n) = T(n/2) + O(1)$
 
-$a = 1, b = 2, c = \log_2 1 = 0$. $f(n) = O(1) = O(n^0) = O(n^c)$. Case 2 with $k = 0$: $T(n) = \Theta(\log n)$.
+$a = 1, b = 2, c = \log_2 1 = 0$. $f(n) = O(1) = O(n^0) = O(n^c)$. Case 2 with $k = 0$:
+$T(n) = \Theta(\log n)$.
 
 **Example 3:** $T(n) = 3T(n/2) + O(n)$
 
-$a = 3, b = 2, c = \log_2 3 \approx 1.585$. $f(n) = O(n) = O(n^{1.585 - 0.585}) = O(n^{c - \epsilon})$. Case 1: $T(n) = \Theta(n^{\log_2 3})$.
+$a = 3, b = 2, c = \log_2 3 \approx 1.585$.
+$f(n) = O(n) = O(n^{1.585 - 0.585}) = O(n^{c - \epsilon})$. Case 1: $T(n) = \Theta(n^{\log_2 3})$.
 
 **Example 4:** $T(n) = 2T(n/2) + O(n^2)$
 
-$a = 2, b = 2, c = 1$. $f(n) = O(n^2) = \Omega(n^{1+1}) = \Omega(n^{c+\epsilon})$. Check regularity: $2(n/2)^2 = n^2/2 \leq c \cdot n^2$ for $c = 1/2$. Case 3: $T(n) = \Theta(n^2)$.
+$a = 2, b = 2, c = 1$. $f(n) = O(n^2) = \Omega(n^{1+1}) = \Omega(n^{c+\epsilon})$. Check regularity:
+$2(n/2)^2 = n^2/2 \leq c \cdot n^2$ for $c = 1/2$. Case 3: $T(n) = \Theta(n^2)$.
 
 ---
 
@@ -144,7 +149,9 @@ $a = 2, b = 2, c = 1$. $f(n) = O(n^2) = \Omega(n^{1+1}) = \Omega(n^{c+\epsilon})
 
 ### Motivation
 
-Some operations are expensive in isolation but cheap on average. Amortized analysis gives the **average cost per operation over a worst-case sequence** of operations (not average over random inputs).
+Some operations are expensive in isolation but cheap on average. Amortized analysis gives the
+**average cost per operation over a worst-case sequence** of operations (not average over random
+inputs).
 
 ### Methods
 
@@ -152,17 +159,24 @@ Some operations are expensive in isolation but cheap on average. Amortized analy
 
 Compute the total cost of $n$ operations and divide by $n$.
 
-**Example: Dynamic array.** Total cost of $n$ insertions: $O(n)$ (proved in [Arrays and Records](/docs/docs_ALevel-notes/computer-science/data-structures/01-arrays-and-records)). Amortised cost per insertion: $O(1)$.
+**Example: Dynamic array.** Total cost of $n$ insertions: $O(n)$ (proved in
+[Arrays and Records](/docs/docs_ALevel-notes/computer-science/data-structures/01-arrays-and-records)).
+Amortised cost per insertion: $O(1)$.
 
 #### Accounting Method
 
-Assign an **amortised cost** to each operation. Some operations are charged more than their actual cost (creating a "credit"); others are charged less (consuming credit). The credit must always be non-negative.
+Assign an **amortised cost** to each operation. Some operations are charged more than their actual
+cost (creating a "credit"); others are charged less (consuming credit). The credit must always be
+non-negative.
 
-**Example: Dynamic array.** Charge $\$3$ per insertion: $\$1$ for the actual insert, $\$2$ saved for future resizing. When a resize of $k$ elements occurs, it costs $O(k)$, which is covered by the $2k$ credit accumulated from the $k$ insertions.
+**Example: Dynamic array.** Charge $\$3$ per insertion: $\$1$ for the actual insert, $\$2$ saved for
+future resizing. When a resize of $k$ elements occurs, it costs $O(k)$, which is covered by the $2k$
+credit accumulated from the $k$ insertions.
 
 #### Potential Method
 
-Define a **potential function** $\Phi$ mapping data structure states to non-negative real numbers. The amortised cost of operation $i$ is:
+Define a **potential function** $\Phi$ mapping data structure states to non-negative real numbers.
+The amortised cost of operation $i$ is:
 
 $$\hat{c}_i = c_i + \Phi(D_i) - \Phi(D_{i-1})$$
 
@@ -170,10 +184,13 @@ Total amortised cost: $\sum_{i=1}^{n} \hat{c}_i = \sum_{i=1}^{n} c_i + \Phi(D_n)
 
 Since $\Phi \geq 0$ and $\Phi(D_0) = 0$: $\sum \hat{c}_i \geq \sum c_i$.
 
-**Example: Dynamic array.** Let $\Phi = 2(\text{size} - \text{capacity}/2)$ when size $\geq$ capacity/2, else 0.
+**Example: Dynamic array.** Let $\Phi = 2(\text{size} - \text{capacity}/2)$ when size $\geq$
+capacity/2, else 0.
 
 - **Insert without resize:** Actual cost = 1. $\Phi$ increases by 2. Amortised cost = $1 + 2 = 3$.
-- **Insert with resize from $k$ to $2k$:** Actual cost = $k$ (copy) + 1 (insert). Before: size = $k$, capacity = $k$, $\Phi = 2(k - k/2) = k$. After: size = $k+1$, capacity = $2k$, $\Phi = 2(k+1 - k) = 2$. Change: $2 - k$. Amortised = $(k + 1) + (2 - k) = 3$.
+- **Insert with resize from $k$ to $2k$:** Actual cost = $k$ (copy) + 1 (insert). Before: size =
+  $k$, capacity = $k$, $\Phi = 2(k - k/2) = k$. After: size = $k+1$, capacity = $2k$,
+  $\Phi = 2(k+1 - k) = 2$. Change: $2 - k$. Amortised = $(k + 1) + (2 - k) = 3$.
 
 Amortised cost per operation: $O(3) = O(1)$. $\square$
 
@@ -183,7 +200,8 @@ Amortised cost per operation: $O(3) = O(1)$. $\square$
 
 ### Space-Time Tradeoffs
 
-Sometimes we can reduce time complexity by using more memory, or reduce space by accepting more time.
+Sometimes we can reduce time complexity by using more memory, or reduce space by accepting more
+time.
 
 | Tradeoff           | Example                                 |
 | ------------------ | --------------------------------------- |
@@ -193,7 +211,8 @@ Sometimes we can reduce time complexity by using more memory, or reduce space by
 
 ### Logarithmic Factors
 
-$\log n$ grows very slowly. For all practical input sizes, $O(n \log n)$ is often acceptable even when $O(n)$ is achievable with more complex algorithms.
+$\log n$ grows very slowly. For all practical input sizes, $O(n \log n)$ is often acceptable even
+when $O(n)$ is achievable with more complex algorithms.
 
 | $n$    | $\log_2 n$ | $n \log_2 n$       |
 | ------ | ---------- | ------------------ |
@@ -207,7 +226,8 @@ $\log n$ grows very slowly. For all practical input sizes, $O(n \log n)$ is ofte
 
 **Problem 1.** Prove that $3n^2 + 7n + 4 = O(n^2)$ using the formal definition.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 We need to find $c > 0$ and $n_0$ such that $3n^2 + 7n + 4 \leq c \cdot n^2$ for all $n \geq n_0$.
 
@@ -217,23 +237,28 @@ Choose $c = 14$ and $n_0 = 1$. ✓
 
 (More tightly: $c = 4, n_0 = 8$ also works.)
 
-</div></details>
+</details>
 
 **Problem 2.** Prove that $n^2 \neq O(n)$.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Proof by contradiction.** Assume $n^2 = O(n)$. Then $\exists\, c > 0, n_0$ such that $n^2 \leq cn$ for all $n \geq n_0$.
+**Proof by contradiction.** Assume $n^2 = O(n)$. Then $\exists\, c > 0, n_0$ such that $n^2 \leq cn$
+for all $n \geq n_0$.
 
-This implies $n \leq c$ for all $n \geq n_0$. But $n$ grows without bound, so this is impossible for any fixed $c$. Contradiction. $\square$
+This implies $n \leq c$ for all $n \geq n_0$. But $n$ grows without bound, so this is impossible for
+any fixed $c$. Contradiction. $\square$
 
-Equivalently: $\lim_{n \to \infty} n^2 / n = \lim_{n \to \infty} n = \infty \neq 0$, so $n^2 \neq O(n)$.
+Equivalently: $\lim_{n \to \infty} n^2 / n = \lim_{n \to \infty} n = \infty \neq 0$, so
+$n^2 \neq O(n)$.
 
-</div></details>
+</details>
 
 **Problem 3.** Use the Master Theorem to solve $T(n) = 4T(n/2) + n^2 \log n$.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $a = 4$, $b = 2$, $c = \log_2 4 = 2$.
 
@@ -241,7 +266,7 @@ $f(n) = n^2 \log n = n^c \log^1 n$.
 
 This is Case 2 with $k = 1$: $T(n) = \Theta(n^c \log^{k+1} n) = \Theta(n^2 \log^2 n)$.
 
-</div></details>
+</details>
 
 **Problem 4.** Determine the time complexity of the following function:
 
@@ -258,47 +283,64 @@ def mystery(n):
     return count
 ```
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Outer loop: $i$ takes values $1, 3, 9, 27, \ldots, 3^k < n$. Number of iterations: $\lceil \log_3 n \rceil$.
+Outer loop: $i$ takes values $1, 3, 9, 27, \ldots, 3^k \lt{} n$. Number of iterations:
+$\lceil \log_3 n \rceil$.
 
-Inner loop: $j$ takes values $1, 2, 4, 8, \ldots, 2^m < n$. Number of iterations: $\lceil \log_2 n \rceil$.
+Inner loop: $j$ takes values $1, 2, 4, 8, \ldots, 2^m \lt{} n$. Number of iterations:
+$\lceil \log_2 n \rceil$.
 
 Total: $O(\log_3 n \cdot \log_2 n) = O(\log^2 n)$.
 
-</div></details>
+</details>
 
 **Problem 5.** Show that $\log(n!) = \Theta(n \log n)$.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Upper bound:** $\log(n!) = \sum_{i=1}^{n} \log i \leq \sum_{i=1}^{n} \log n = n \log n$.
 
-**Lower bound:** $\log(n!) = \sum_{i=1}^{n} \log i \geq \sum_{i=\lceil n/2 \rceil}^{n} \log i \geq \frac{n}{2} \cdot \log(n/2) = \frac{n}{2}(\log n - 1) = \Omega(n \log n)$.
+**Lower bound:**
+$\log(n!) = \sum_{i=1}^{n} \log i \geq \sum_{i=\lceil n/2 \rceil}^{n} \log i \geq \frac{n}{2} \cdot \log(n/2) = \frac{n}{2}(\log n - 1) = \Omega(n \log n)$.
 
 Therefore: $\log(n!) = \Theta(n \log n)$. $\square$
 
-</div></details>
+</details>
 
-**Problem 6.** A student claims that an algorithm with time complexity $O(n^3)$ is always slower than one with complexity $O(n^2 \log n)$. Is this correct? Explain.
+**Problem 6.** A student claims that an algorithm with time complexity $O(n^3)$ is always slower
+than one with complexity $O(n^2 \log n)$. Is this correct? Explain.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-No. Big-O is an **asymptotic** upper bound — it describes behaviour as $n \to \infty$. For small $n$, the $O(n^3)$ algorithm might be faster due to smaller constant factors.
+No. Big-O is an **asymptotic** upper bound — it describes behaviour as $n \to \infty$. For small
+$n$, the $O(n^3)$ algorithm might be faster due to smaller constant factors.
 
-Example: Algorithm A takes $1000n^2 \log n$ operations, Algorithm B takes $n^3$ operations. For $n = 10$: A ≈ $1000 \times 100 \times 3.3 = 330,000$; B = $1000$. B is much faster.
+Example: Algorithm A takes $1000n^2 \log n$ operations, Algorithm B takes $n^3$ operations. For
+$n = 10$: A ≈ $1000 \times 100 \times 3.3 = 330,000$; B = $1000$. B is much faster.
 
-The crossover point is where $n^3 = 1000n^2 \log n$, i.e., $n = 1000\log n$, which is at $n \approx 13,000$. Below this, B is faster.
+The crossover point is where $n^3 = 1000n^2 \log n$, i.e., $n = 1000\log n$, which is at
+$n \approx 13,000$. Below this, B is faster.
 
-</div></details>
+</details>
 
-**Problem 7.** Perform amortized analysis of a stack that supports push ($O(1)$), pop ($O(1)$), and **multipop(k)** which pops $k$ elements ($O(k)$, or $O(\min(k, \text{size}))$).
+**Problem 7.** Perform amortized analysis of a stack that supports push ($O(1)$), pop ($O(1)$), and
+**multipop(k)** which pops $k$ elements ($O(k)$, or $O(\min(k, \text{size}))$).
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Aggregate method.** In a sequence of $n$ operations, each push adds one element. Each pop removes one element. Each multipop removes $k$ elements. Total elements removed $\leq$ total elements pushed $\leq n$. Total cost of all multipop and pop operations $\leq O(n)$. Total push cost: $O(n)$. Total: $O(n)$. Amortised per operation: $O(1)$.
+**Aggregate method.** In a sequence of $n$ operations, each push adds one element. Each pop removes
+one element. Each multipop removes $k$ elements. Total elements removed $\leq$ total elements pushed
+$\leq n$. Total cost of all multipop and pop operations $\leq O(n)$. Total push cost: $O(n)$. Total:
+$O(n)$. Amortised per operation: $O(1)$.
 
-**Accounting method.** Charge $\$2$ per push: $\$1$ for the push, $\$1$ credit stored with the element. Pop and multipop use the stored credit ($\$1$ each), so their amortised cost is $\$0$ (they're "free"). Total amortised per operation: $O(1)$.
+**Accounting method.** Charge $\$2$ per push: $\$1$ for the push, $\$1$ credit stored with the
+element. Pop and multipop use the stored credit ($\$1$ each), so their amortised cost is $\$0$
+(they're "free"). Total amortised per operation: $O(1)$.
 
 **Potential method.** Let $\Phi(S) = |S|$ (number of elements on the stack).
 
@@ -308,7 +350,7 @@ The crossover point is where $n^3 = 1000n^2 \log n$, i.e., $n = 1000\log n$, whi
 
 All amortised costs: $O(1)$. $\square$
 
-</div></details>
+</details>
 
 **Problem 8.** Determine the time complexity of the following recursive function:
 
@@ -319,23 +361,27 @@ def f(n):
     return f(n - 1) + f(n - 1)
 ```
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $T(n) = 2T(n-1) + O(1)$, $T(1) = O(1)$.
 
 This is **not** in Master Theorem form (requires $T(n/b)$, not $T(n-1)$).
 
-Expanding: $T(n) = 2(2T(n-2) + 1) + 1 = 4T(n-2) + 3 = 8T(n-3) + 7 = \cdots = 2^{n-1}T(1) + (2^{n-1} - 1)$.
+Expanding:
+$T(n) = 2(2T(n-2) + 1) + 1 = 4T(n-2) + 3 = 8T(n-3) + 7 = \cdots = 2^{n-1}T(1) + (2^{n-1} - 1)$.
 
 $T(n) = \Theta(2^n)$.
 
 This is the Fibonacci-like recursion without memoization, leading to exponential time.
 
-</div></details>
+</details>
 
-**Problem 9.** Rank the following functions in order of increasing growth rate: $n^{0.5}$, $\log^2 n$, $n \log n$, $2^n$, $n!$, $n^3$, $2^{\log n}$.
+**Problem 9.** Rank the following functions in order of increasing growth rate: $n^{0.5}$,
+$\log^2 n$, $n \log n$, $2^n$, $n!$, $n^3$, $2^{\log n}$.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 First simplify: $2^{\log n} = n$ (assuming $\log$ is base 2).
 
@@ -350,18 +396,23 @@ $$\log^2 n < n^{0.5} < n = 2^{\log n} < n \log n < n^3 < 2^n < n!$$
 - $n = o(n \log n)$: $\lim \frac{n}{n \log n} = 0$ ✓
 - $n^3 = o(2^n)$: $\lim \frac{n^3}{2^n} = 0$ ✓
 
-</div></details>
+</details>
 
 **Problem 10.** Prove that $O(f) + O(g) = O(\max(f, g))$.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Proof.** Let $h_1 \in O(f)$ and $h_2 \in O(g)$. Then $\exists\, c_1, c_2, n_0$ such that $h_1(n) \leq c_1 f(n)$ and $h_2(n) \leq c_2 g(n)$ for all $n \geq n_0$.
+**Proof.** Let $h_1 \in O(f)$ and $h_2 \in O(g)$. Then $\exists\, c_1, c_2, n_0$ such that
+$h_1(n) \leq c_1 f(n)$ and $h_2(n) \leq c_2 g(n)$ for all $n \geq n_0$.
 
 Then: $h_1(n) + h_2(n) \leq c_1 f(n) + c_2 g(n) \leq (c_1 + c_2) \cdot \max(f(n), g(n))$.
 
-Let $c = c_1 + c_2$. Then $h_1 + h_2 \leq c \cdot \max(f, g)$, so $h_1 + h_2 \in O(\max(f, g))$. $\square$
+Let $c = c_1 + c_2$. Then $h_1 + h_2 \leq c \cdot \max(f, g)$, so $h_1 + h_2 \in O(\max(f, g))$.
+$\square$
 
 **Corollary.** If $f = O(g)$, then $O(f + g) = O(g)$.
 
-For revision on specific algorithm complexities, see [Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/02-sorting-algorithms) and [Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/01-searching-algorithms).
+For revision on specific algorithm complexities, see
+[Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/02-sorting-algorithms) and
+[Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/01-searching-algorithms).

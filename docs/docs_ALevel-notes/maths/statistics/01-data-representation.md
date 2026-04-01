@@ -18,9 +18,8 @@ slug: data-representation
 | OCR (A)    | Paper 1 | Includes outlier detection                    |
 | CIE (9709) | P1, P6  | Data handling in P1; further statistics in P6 |
 
-:::info
-You must know when to use the sample variance formula (dividing by $n-1$) versus the population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
-:::
+:::info You must know when to use the sample variance formula (dividing by $n-1$) versus the
+population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data. :::
 
 ---
 
@@ -34,7 +33,8 @@ $$\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$$
 
 ### 1.2 The mean minimises the sum of squared deviations
 
-**Theorem.** The function $S(a) = \displaystyle\sum_{i=1}^{n}(x_i - a)^2$ is minimised when $a = \bar{x}$.
+**Theorem.** The function $S(a) = \displaystyle\sum_{i=1}^{n}(x_i - a)^2$ is minimised when
+$a = \bar{x}$.
 
 **Proof.** Expand $S(a)$:
 
@@ -44,9 +44,11 @@ $$\frac{dS}{da} = -2\sum x_i + 2na$$
 
 Setting $\dfrac{dS}{da} = 0$: $2na = 2\sum x_i \implies a = \dfrac{\sum x_i}{n} = \bar{x}$.
 
-Check: $\dfrac{d^2S}{da^2} = 2n > 0$, so this is a minimum. $\blacksquare$
+Check: $\dfrac{d^2S}{da^2} = 2n \gt{} 0$, so this is a minimum. $\blacksquare$
 
-**Intuition.** The mean is the "centre of mass" of the data. It is the single value that best represents all the data points in the sense of least squares — no other value produces a smaller total squared error. This is why the mean is the foundation of regression and estimation theory.
+**Intuition.** The mean is the "centre of mass" of the data. It is the single value that best
+represents all the data points in the sense of least squares — no other value produces a smaller
+total squared error. This is why the mean is the foundation of regression and estimation theory.
 
 ### 1.3 Median
 
@@ -57,7 +59,8 @@ The **median** is the middle value when data are arranged in order. For $n$ valu
 
 ### 1.4 Mode
 
-The **mode** is the most frequently occurring value. A dataset can be unimodal, bimodal, or have no mode.
+The **mode** is the most frequently occurring value. A dataset can be unimodal, bimodal, or have no
+mode.
 
 ### 1.5 Comparing measures
 
@@ -65,9 +68,8 @@ The **mode** is the most frequently occurring value. A dataset can be unimodal, 
 - The median is robust to outliers but ignores the magnitude of extreme values.
 - The mode is useful for categorical data.
 
-:::warning
-For skewed distributions, the median is a better measure of central tendency than the mean. A few extreme values can pull the mean far from the centre of the data.
-:::
+:::warning For skewed distributions, the median is a better measure of central tendency than the
+mean. A few extreme values can pull the mean far from the centre of the data. :::
 
 ---
 
@@ -96,9 +98,8 @@ $$
 \end{aligned}
 $$
 
-:::tip
-This formula is computationally more efficient and is the one you should use in exams. Just remember: "mean of squares minus square of mean."
-:::
+:::tip This formula is computationally more efficient and is the one you should use in exams. Just
+remember: "mean of squares minus square of mean." :::
 
 ### 2.3 Sample variance
 
@@ -106,7 +107,8 @@ For sample data, the **unbiased estimator** of the population variance is
 
 $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 = \frac{\sum x_i^2 - n\bar{x}^2}{n-1}$$
 
-The division by $n-1$ (Bessel's correction) accounts for the fact that $\bar{x}$ is estimated from the same data, losing one degree of freedom.
+The division by $n-1$ (Bessel's correction) accounts for the fact that $\bar{x}$ is estimated from
+the same data, losing one degree of freedom.
 
 ---
 
@@ -138,9 +140,8 @@ $$\text{Upper fence} = Q_3 + 1.5 \times \text{IQR}$$
 
 Values outside these fences are potential outliers.
 
-:::warning
-Different boards may define outliers differently. Always check your board's convention. Some use $1.5 \times$ IQR, others use different multipliers.
-:::
+:::warning Different boards may define outliers differently. Always check your board's convention.
+Some use $1.5 \times$ IQR, others use different multipliers. :::
 
 ---
 
@@ -148,7 +149,8 @@ Different boards may define outliers differently. Always check your board's conv
 
 ### 4.1 Linear coding
 
-**Definition.** Coding transforms data using $y = \dfrac{x - a}{c}$ where $a$ and $c$ are constants ($c \neq 0$).
+**Definition.** Coding transforms data using $y = \dfrac{x - a}{c}$ where $a$ and $c$ are constants
+($c \neq 0$).
 
 ### 4.2 Effect on summary statistics
 
@@ -164,9 +166,9 @@ $$\sigma_y^2 = \frac{1}{n}\sum(y_i - \bar{y})^2 = \frac{1}{n}\sum\left(\frac{x_i
 
 Hence $\sigma_y = \sigma_x/|c|$. $\blacksquare$
 
-:::tip
-Coding makes computation easier when data values are large. Always work with coded data to find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean but does not affect the spread.
-:::
+:::tip Coding makes computation easier when data values are large. Always work with coded data to
+find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean
+but does not affect the spread. :::
 
 ---
 
@@ -180,17 +182,20 @@ $$\bar{x} = \frac{\sum f_i x_i}{\sum f_i}, \qquad \sigma^2 = \frac{\sum f_i x_i^
 
 ### 5.2 Grouped continuous data
 
-Use the **midpoint** of each class as the representative value. This introduces an approximation since we lose information about the distribution within each class.
+Use the **midpoint** of each class as the representative value. This introduces an approximation
+since we lose information about the distribution within each class.
 
 ---
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><div>
+<details>
+<summary>Problem 1</summary>
 For the dataset $\{3, 5, 7, 2, 8, 4, 6, 5\}$, find the mean, median, and mode.
-</div></details>
+</details>
 
-<details><summary>Solution 1</summary><div>
+<details>
+<summary>Solution 1</summary>
 Ordered: $\{2, 3, 4, 5, 5, 6, 7, 8\}$. $n = 8$.
 
 Mean: $\bar{x} = (3+5+7+2+8+4+6+5)/8 = 40/8 = 5$.
@@ -199,15 +204,18 @@ Median: average of 4th and 5th values = $(5+5)/2 = 5$.
 
 Mode: 5 (appears twice).
 
-**If you get this wrong, revise:** [Measures of Central Tendency](#1-measures-of-central-tendency) — Section 1.
+**If you get this wrong, revise:** [Measures of Central Tendency](#1-measures-of-central-tendency) —
+Section 1.
 
-</div></details>
+</details>
 
-<details><summary>Problem 2</summary><div>
+<details>
+<summary>Problem 2</summary>
 Find the variance and standard deviation of $\{4, 8, 6, 5, 3, 7, 9, 2\}$ using the computational formula.
-</div></details>
+</details>
 
-<details><summary>Solution 2</summary><div>
+<details>
+<summary>Solution 2</summary>
 $\sum x = 44$, $n = 8$, $\bar{x} = 44/8 = 5.5$.
 
 $\sum x^2 = 16 + 64 + 36 + 25 + 9 + 49 + 81 + 4 = 284$.
@@ -218,30 +226,34 @@ $\sigma = \sqrt{5.25} \approx 2.29$.
 
 **If you get this wrong, revise:** [Computational Formula](#22-computational-formula) — Section 2.2.
 
-</div></details>
+</details>
 
-<details><summary>Problem 3</summary><div>
+<details>
+<summary>Problem 3</summary>
 Data is coded using $y = (x - 100)/5$. The coded data has mean 12 and variance 9. Find the original mean and standard deviation.
-</div></details>
+</details>
 
-<details><summary>Solution 3</summary><div>
+<details>
+<summary>Solution 3</summary>
 $\bar{y} = (\bar{x} - 100)/5 = 12 \implies \bar{x} - 100 = 60 \implies \bar{x} = 160$.
 
 $\sigma_y = \sigma_x/5 = 3 \implies \sigma_x = 15$.
 
 **If you get this wrong, revise:** [Coding Data](#4-coding-data) — Section 4.
 
-</div></details>
+</details>
 
-<details><summary>Problem 4</summary><div>
+<details>
+<summary>Problem 4</summary>
 For the ordered dataset $\{2, 3, 5, 7, 8, 11, 14, 18, 23\}$, find $Q_1$, $Q_2$, $Q_3$, and the IQR. Identify any outliers.
-</div></details>
+</details>
 
-<details><summary>Solution 4</summary><div>
+<details>
+<summary>Solution 4</summary>
 $n = 9$ (odd). $Q_2 = 5$th value $= 8$.
 
-Lower half: $\{2, 3, 5, 7\}$. $Q_1 = (3+5)/2 = 4$.
-Upper half: $\{11, 14, 18, 23\}$. $Q_3 = (14+18)/2 = 16$.
+Lower half: $\{2, 3, 5, 7\}$. $Q_1 = (3+5)/2 = 4$. Upper half: $\{11, 14, 18, 23\}$.
+$Q_3 = (14+18)/2 = 16$.
 
 $\text{IQR} = 16 - 4 = 12$.
 
@@ -249,11 +261,13 @@ Lower fence: $4 - 1.5(12) = -14$. Upper fence: $16 + 1.5(12) = 34$.
 
 All values are within $[-14, 34]$, so no outliers.
 
-**If you get this wrong, revise:** [Quartiles, IQR, and Box Plots](#3-quartiles-iqr-and-box-plots) — Section 3.
+**If you get this wrong, revise:** [Quartiles, IQR, and Box Plots](#3-quartiles-iqr-and-box-plots) —
+Section 3.
 
-</div></details>
+</details>
 
-<details><summary>Problem 5</summary><div>
+<details>
+<summary>Problem 5</summary>
 The following frequency table shows the number of goals scored in 20 football matches. Find the mean and variance.
 
 | Goals | Frequency |
@@ -264,9 +278,10 @@ The following frequency table shows the number of goals scored in 20 football ma
 | 3     | 3         |
 | 4     | 2         |
 
-</div></details>
+</details>
 
-<details><summary>Solution 5</summary><div>
+<details>
+<summary>Solution 5</summary>
 $\sum f = 20$.
 
 $\sum fx = 0 + 7 + 10 + 9 + 8 = 34$. $\bar{x} = 34/20 = 1.7$.
@@ -277,48 +292,57 @@ $\sigma^2 = 86/20 - 1.7^2 = 4.3 - 2.89 = 1.41$.
 
 **If you get this wrong, revise:** [Frequency Tables](#51-discrete-frequency-data) — Section 5.1.
 
-</div></details>
+</details>
 
-<details><summary>Problem 6</summary><div>
+<details>
+<summary>Problem 6</summary>
 Prove that $\displaystyle\sum_{i=1}^{n}(x_i - \bar{x}) = 0$.
-</div></details>
+</details>
 
-<details><summary>Solution 6</summary><div>
+<details>
+<summary>Solution 6</summary>
 $$\sum(x_i - \bar{x}) = \sum x_i - n\bar{x} = \sum x_i - n \cdot \frac{\sum x_i}{n} = \sum x_i - \sum x_i = 0 \quad \blacksquare$$
 
 **If you get this wrong, revise:** [Mean](#11-mean) — Section 1.1.
 
-</div></details>
+</details>
 
-<details><summary>Problem 7</summary><div>
+<details>
+<summary>Problem 7</summary>
 Two datasets A and B have the same mean but A has standard deviation 5 while B has standard deviation 2. What does this tell you about the two datasets?
-</div></details>
+</details>
 
-<details><summary>Solution 7</summary><div>
+<details>
+<summary>Solution 7</summary>
 Both datasets are centred at the same point (same mean), but dataset A is more spread out (larger standard deviation). The values in A are more dispersed from the mean, while B's values cluster more tightly around the mean.
 
-**If you get this wrong, revise:** [Variance and Standard Deviation](#2-variance-and-standard-deviation) — Section 2.
+**If you get this wrong, revise:**
+[Variance and Standard Deviation](#2-variance-and-standard-deviation) — Section 2.
 
-</div></details>
+</details>
 
-<details><summary>Problem 8</summary><div>
+<details>
+<summary>Problem 8</summary>
 Given that $\bar{x} = 20$ and $\sum(x_i - 20)^2 = 360$ for $n = 10$ observations, find $\sigma$ and the sample variance $s^2$.
-</div></details>
+</details>
 
-<details><summary>Solution 8</summary><div>
+<details>
+<summary>Solution 8</summary>
 $\sigma^2 = 360/10 = 36$, so $\sigma = 6$.
 
 $s^2 = 360/9 = 40$.
 
 **If you get this wrong, revise:** [Sample Variance](#23-sample-variance) — Section 2.3.
 
-</div></details>
+</details>
 
-<details><summary>Problem 9</summary><div>
+<details>
+<summary>Problem 9</summary>
 A dataset $\{x_i\}$ has mean 10 and standard deviation 4. A new dataset is formed by adding 5 to each value and then multiplying by 3. Find the new mean and standard deviation.
-</div></details>
+</details>
 
-<details><summary>Solution 9</summary><div>
+<details>
+<summary>Solution 9</summary>
 Adding 5 shifts mean by 5: mean becomes 15. SD unchanged at 4.
 Multiplying by 3 scales mean by 3: mean becomes 45. SD scales by 3: SD becomes 12.
 
@@ -326,15 +350,17 @@ New mean = 45, new SD = 12.
 
 **If you get this wrong, revise:** [Coding Data](#4-coding-data) — Section 4.2.
 
-</div></details>
+</details>
 
-<details><summary>Problem 10</summary><div>
+<details>
+<summary>Problem 10</summary>
 Explain why the median is preferred to the mean for measuring average income in a country.
-</div></details>
+</details>
 
-<details><summary>Solution 10</summary><div>
+<details>
+<summary>Solution 10</summary>
 Income distributions are typically right-skewed — a small number of very high earners pull the mean upward. The median, being the middle value, is unaffected by extreme values and gives a more representative "typical" income. For example, if one billionaire lives in a village of 1000 people earning $30{,}000$, the mean would be vastly inflated while the median would remain close to $30{,}000$.
 
 **If you get this wrong, revise:** [Comparing Measures](#15-comparing-measures) — Section 1.5.
 
-</div></details>
+</details>

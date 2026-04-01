@@ -13,13 +13,15 @@ slug: arrays-and-records
 
 ### Definition
 
-A **one-dimensional array** (or vector) is a finite, ordered sequence of elements of the same data type, stored in **contiguous memory locations**. Each element is accessed by an integer index.
+A **one-dimensional array** (or vector) is a finite, ordered sequence of elements of the same data
+type, stored in **contiguous memory locations**. Each element is accessed by an integer index.
 
 Formally, an array $A$ of type $T$ with $n$ elements maps indices to memory:
 
 $$A: \{0, 1, \ldots, n-1\} \to \text{Memory addresses}$$
 
-where $A[i]$ is stored at base address $b + i \times s$, and $s$ is the size (in bytes) of one element of type $T$.
+where $A[i]$ is stored at base address $b + i \times s$, and $s$ is the size (in bytes) of one
+element of type $T$.
 
 ### Memory Layout
 
@@ -31,11 +33,14 @@ where $b$ is the base address of the array, $i$ is the index, and $s$ is the ele
 
 **Theorem.** Array element access takes $O(1)$ time.
 
-**Proof.** The address of $A[i]$ is computed by a single multiplication and a single addition — both constant-time operations. No traversal is needed. $\square$
+**Proof.** The address of $A[i]$ is computed by a single multiplication and a single addition — both
+constant-time operations. No traversal is needed. $\square$
 
-<details><summary>Example: Memory layout of an integer array</summary><div>
+<details>
+<summary>Example: Memory layout of an integer array</summary>
 
-Consider `int A[5] = {10, 20, 30, 40, 50}` where each `int` is 4 bytes and the base address is $b = 1000$:
+Consider `int A[5] = {10, 20, 30, 40, 50}` where each `int` is 4 bytes and the base address is
+$b = 1000$:
 
 | Index | Value | Address   |
 | ----- | ----- | --------- |
@@ -47,7 +52,7 @@ Consider `int A[5] = {10, 20, 30, 40, 50}` where each `int` is 4 bytes and the b
 
 $A[3]$ is at $1000 + 3 \times 4 = 1012$. ✓
 
-</div></details>
+</details>
 
 ### Operations and Complexity
 
@@ -89,7 +94,8 @@ class StaticArray:
 
 ### Definition
 
-A **two-dimensional array** is an array of arrays — a matrix with $m$ rows and $n$ columns. Formally:
+A **two-dimensional array** is an array of arrays — a matrix with $m$ rows and $n$ columns.
+Formally:
 
 $$A: \{0,\ldots,m-1\} \times \{0,\ldots,n-1\} \to \text{Memory}$$
 
@@ -111,7 +117,8 @@ $$\text{addr}(A[i][j]) = b + (j \cdot m + i) \cdot s$$
 
 This is the default in Fortran, MATLAB, R, and Julia.
 
-<details><summary>Example: 3×2 array in row-major vs column-major</summary><div>
+<details>
+<summary>Example: 3×2 array in row-major vs column-major</summary>
 
 $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$
 
@@ -119,11 +126,12 @@ $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$
 
 **Column-major:** 1, 3, 5, 2, 4, 6
 
-</div></details>
+</details>
 
 **Theorem.** 2D array access takes $O(1)$ time.
 
-**Proof.** The address is computed with two multiplications and two additions: $b + (i \cdot n + j) \cdot s$. All are constant-time operations. $\square$
+**Proof.** The address is computed with two multiplications and two additions:
+$b + (i \cdot n + j) \cdot s$. All are constant-time operations. $\square$
 
 ---
 
@@ -147,7 +155,8 @@ Consider a dynamic array that starts at capacity 1 and doubles when full.
 
 **Theorem.** The amortised cost of $n$ append operations is $O(1)$ per operation.
 
-**Proof.** A resize at capacity $c$ copies $c$ elements. Resizes occur at capacities $1, 2, 4, 8, \ldots, 2^{\lfloor \log_2 n \rfloor}$. The total cost of all copies is:
+**Proof.** A resize at capacity $c$ copies $c$ elements. Resizes occur at capacities
+$1, 2, 4, 8, \ldots, 2^{\lfloor \log_2 n \rfloor}$. The total cost of all copies is:
 
 $$\sum_{k=0}^{\lfloor \log_2 n \rfloor} 2^k = 2^{\lfloor \log_2 n \rfloor + 1} - 1 \leq 2n - 1 = O(n)$$
 
@@ -193,7 +202,8 @@ class DynamicArray:
 
 ### Definition
 
-A **record** (called a `struct` in C, `record` in Pascal) is a composite data type that groups related fields of **possibly different types** under a single name.
+A **record** (called a `struct` in C, `record` in Pascal) is a composite data type that groups
+related fields of **possibly different types** under a single name.
 
 ```python
 class Student:
@@ -205,11 +215,14 @@ class Student:
 
 ### Memory Layout
 
-Fields are stored contiguously in memory, in the order declared. The size of a record is the sum of its field sizes, plus any **padding** added for alignment.
+Fields are stored contiguously in memory, in the order declared. The size of a record is the sum of
+its field sizes, plus any **padding** added for alignment.
 
-**Alignment rule:** On most architectures, an $n$-byte field must be stored at an address that is a multiple of $n$ (or the largest alignment requirement).
+**Alignment rule:** On most architectures, an $n$-byte field must be stored at an address that is a
+multiple of $n$ (or the largest alignment requirement).
 
-<details><summary>Example: Record memory layout with padding</summary><div>
+<details>
+<summary>Example: Record memory layout with padding</summary>
 
 ```c
 struct Example {
@@ -231,7 +244,7 @@ Layout (on a 32-bit system with 4-byte alignment):
 
 Total size: 12 bytes (not 7).
 
-</div></details>
+</details>
 
 ### Records vs Arrays
 
@@ -246,19 +259,22 @@ Total size: 12 bytes (not 7).
 
 ## 5. Bounds Checking
 
-**Definition.** Bounds checking verifies that an array index is within the valid range $[0, n-1]$ before accessing the element.
+**Definition.** Bounds checking verifies that an array index is within the valid range $[0, n-1]$
+before accessing the element.
 
-Without bounds checking, an out-of-bounds access reads or writes arbitrary memory — a **buffer overflow** vulnerability.
+Without bounds checking, an out-of-bounds access reads or writes arbitrary memory — a **buffer
+overflow** vulnerability.
 
-:::warning Pitfall
-In C and C++, array access is **not** bounds-checked by default. Accessing `A[-1]` or `A[n]` compiles but causes undefined behaviour. Python, Java, and C# perform automatic bounds checking.
-:::
+:::warning Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
+`A[-1]` or `A[n]` compiles but causes undefined behaviour. Python, Java, and C# perform automatic
+bounds checking. :::
 
 ---
 
 ## 6. Arrays of Records
 
-An array of records combines both structures: each element of the array is a record. This is extremely common in practice.
+An array of records combines both structures: each element of the array is a record. This is
+extremely common in practice.
 
 ```python
 students = [
@@ -271,80 +287,103 @@ def average_grade(student):
     return sum(student.grades) / len(student.grades)
 ```
 
-**Complexity.** Accessing field $f$ of record $i$ in an array: $O(1)$ — compute array offset, then add field offset.
+**Complexity.** Accessing field $f$ of record $i$ in an array: $O(1)$ — compute array offset, then
+add field offset.
 
 ---
 
 ## Problem Set
 
-**Problem 1.** An integer array `A` has base address 2000. Each integer occupies 4 bytes. What is the address of `A[7]`?
+**Problem 1.** An integer array `A` has base address 2000. Each integer occupies 4 bytes. What is
+the address of `A[7]`?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $\text{addr}(A[7]) = 2000 + 7 \times 4 = 2000 + 28 = 2028$
 
-</div></details>
+</details>
 
-**Problem 2.** A 2D array `A[4][5]` is stored in row-major order with base address 100. Each element is 2 bytes. What is the address of `A[2][3]`?
+**Problem 2.** A 2D array `A[4][5]` is stored in row-major order with base address 100. Each element
+is 2 bytes. What is the address of `A[2][3]`?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $\text{addr}(A[2][3]) = 100 + (2 \times 5 + 3) \times 2 = 100 + 13 \times 2 = 126$
 
-</div></details>
+</details>
 
-**Problem 3.** The same array `A[4][5]` is stored in column-major order. What is the address of `A[2][3]`?
+**Problem 3.** The same array `A[4][5]` is stored in column-major order. What is the address of
+`A[2][3]`?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $\text{addr}(A[2][3]) = 100 + (3 \times 4 + 2) \times 2 = 100 + 14 \times 2 = 128$
 
-</div></details>
+</details>
 
-**Problem 4.** A dynamic array starts at capacity 1 and doubles when full. After inserting 17 elements, what is the current capacity? How many total element copies have occurred due to resizing?
+**Problem 4.** A dynamic array starts at capacity 1 and doubles when full. After inserting 17
+elements, what is the current capacity? How many total element copies have occurred due to resizing?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Capacity after 17 insertions: $32$ (doubled from 16 after the 16th insertion).
 
 Total copies: at capacities $1, 2, 4, 8, 16$ → $1 + 2 + 4 + 8 + 16 = 31$ copies.
 
-</div></details>
+</details>
 
-**Problem 5.** Explain why inserting an element at the beginning of an array of $n$ elements takes $O(n)$ time.
+**Problem 5.** Explain why inserting an element at the beginning of an array of $n$ elements takes
+$O(n)$ time.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-All $n$ existing elements must be shifted one position to the right to make room at index 0. Each shift is a constant-time assignment, so the total cost is $n$ assignments = $O(n)$.
+All $n$ existing elements must be shifted one position to the right to make room at index 0. Each
+shift is a constant-time assignment, so the total cost is $n$ assignments = $O(n)$.
 
-</div></details>
+</details>
 
-**Problem 6.** A record `Person` has fields: `name` (string, 20 bytes), `age` (int, 4 bytes), `height` (float, 4 bytes). Assuming 4-byte alignment, what is the total size of the record?
+**Problem 6.** A record `Person` has fields: `name` (string, 20 bytes), `age` (int, 4 bytes),
+`height` (float, 4 bytes). Assuming 4-byte alignment, what is the total size of the record?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 - `name`: offset 0, 20 bytes
 - No padding needed before `age` (offset 20 is divisible by 4)
 - `age`: offset 20, 4 bytes
 - `height`: offset 24, 4 bytes
 
-Total: 28 bytes. (No padding needed at the end since the total is already a multiple of the largest alignment, 4.)
+Total: 28 bytes. (No padding needed at the end since the total is already a multiple of the largest
+alignment, 4.)
 
-</div></details>
+</details>
 
-**Problem 7.** Prove that searching for a value in an unsorted array of $n$ elements requires $\Omega(n)$ comparisons in the worst case.
+**Problem 7.** Prove that searching for a value in an unsorted array of $n$ elements requires
+$\Omega(n)$ comparisons in the worst case.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-In an unsorted array, there is no relationship between the values at different indices. To determine whether a target value $x$ exists in the array, any algorithm must potentially examine every element — if it skips any unchecked element, that element could be $x$. Therefore, the worst case requires $n$ comparisons, giving $\Omega(n)$.
+In an unsorted array, there is no relationship between the values at different indices. To determine
+whether a target value $x$ exists in the array, any algorithm must potentially examine every element
+— if it skips any unchecked element, that element could be $x$. Therefore, the worst case requires
+$n$ comparisons, giving $\Omega(n)$.
 
-More formally: an adversary can answer "no" to all $n-1$ comparisons. Only after checking all $n$ elements can the algorithm correctly conclude that $x$ is absent.
+More formally: an adversary can answer "no" to all $n-1$ comparisons. Only after checking all $n$
+elements can the algorithm correctly conclude that $x$ is absent.
 
-</div></details>
+</details>
 
-**Problem 8.** Given an array `A[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3}`, trace a linear search for the value 9 and count the number of comparisons made.
+**Problem 8.** Given an array `A[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3}`, trace a linear search for
+the value 9 and count the number of comparisons made.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Step | Index | A[index] | Comparison    | Count |
 | ---- | ----- | -------- | ------------- | ----- |
@@ -357,6 +396,7 @@ More formally: an adversary can answer "no" to all $n-1$ comparisons. Only after
 
 Total comparisons: 6. The value 9 is at index 5.
 
-For revision on searching, see [Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/01-searching-algorithms).
+For revision on searching, see
+[Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/01-searching-algorithms).
 
-</div></details>
+</details>

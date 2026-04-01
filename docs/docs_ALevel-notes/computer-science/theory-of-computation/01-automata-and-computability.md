@@ -52,11 +52,13 @@ Trace for "1001": S → S → A → S → A →... wait, let me retrace.
 - $\delta: Q \times \Sigma \to \mathcal{P}(Q)$ (maps to a **set** of states, not a single state)
 - All other components are the same as a DFA
 
-An NFA **accepts** a string if there exists at least one path through the machine that ends in an accepting state.
+An NFA **accepts** a string if there exists at least one path through the machine that ends in an
+accepting state.
 
 ### NFA with Epsilon Transitions (ε-NFA)
 
-An ε-NFA additionally allows transitions on the empty string ε (changing state without consuming input).
+An ε-NFA additionally allows transitions on the empty string ε (changing state without consuming
+input).
 
 $\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$
 
@@ -64,18 +66,23 @@ $\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$
 
 ## 2. DFA-NFA Equivalence
 
-**Theorem (Rabin-Scott).** For every NFA $N$, there exists a DFA $D$ such that $L(N) = L(D)$. DFAs and NFAs accept exactly the same class of languages (the **regular languages**).
+**Theorem (Rabin-Scott).** For every NFA $N$, there exists a DFA $D$ such that $L(N) = L(D)$. DFAs
+and NFAs accept exactly the same class of languages (the **regular languages**).
 
-**Proof (subset construction).** Given NFA $N = (Q_N, \Sigma, \delta_N, q_0, F_N)$, construct DFA $D = (Q_D, \Sigma, \delta_D, q_0', F_D)$:
+**Proof (subset construction).** Given NFA $N = (Q_N, \Sigma, \delta_N, q_0, F_N)$, construct DFA
+$D = (Q_D, \Sigma, \delta_D, q_0', F_D)$:
 
 1. $Q_D = \mathcal{P}(Q_N)$ (states are subsets of $Q_N$)
 2. $q_0' = \varepsilon\text{-closure}(\{q_0\})$
-3. $\delta_D(S, a) = \varepsilon\text{-closure}\left(\bigcup_{q \in S} \delta_N(q, a)\right)$ for $S \subseteq Q_N$
+3. $\delta_D(S, a) = \varepsilon\text{-closure}\left(\bigcup_{q \in S} \delta_N(q, a)\right)$ for
+   $S \subseteq Q_N$
 4. $F_D = \{S \subseteq Q_N \mid S \cap F_N \neq \emptyset\}$
 
-The DFA tracks the set of all states the NFA could be in. Since $Q_N$ is finite, $Q_D$ is finite (at most $2^{|Q_N|}$ states). The DFA accepts exactly the same strings as the NFA. $\square$
+The DFA tracks the set of all states the NFA could be in. Since $Q_N$ is finite, $Q_D$ is finite (at
+most $2^{|Q_N|}$ states). The DFA accepts exactly the same strings as the NFA. $\square$
 
-**Corollary.** The class of regular languages is closed under union, intersection, complementation, concatenation, and Kleene star.
+**Corollary.** The class of regular languages is closed under union, intersection, complementation,
+concatenation, and Kleene star.
 
 ---
 
@@ -94,7 +101,8 @@ A **regular expression** defines a regular language using operators:
 | $R \mid S$    | Alternation   | Strings from $R$ or $S$          | `R\|S` |
 | $R^*$         | Kleene star   | Zero or more repetitions of $R$  | `R*`   |
 
-**Kleene's Theorem.** A language is regular if and only if it can be described by a regular expression.
+**Kleene's Theorem.** A language is regular if and only if it can be described by a regular
+expression.
 
 ### Examples
 
@@ -109,13 +117,17 @@ A **regular expression** defines a regular language using operators:
 
 **Theorem.** The language $L = \{a^n b^n \mid n \geq 0\}$ is **not** regular.
 
-**Proof (Pumping Lemma).** The Pumping Lemma for regular languages states: if $L$ is regular, then there exists a pumping length $p$ such that any string $s \in L$ with $|s| \geq p$ can be split into $s = xyz$ where:
+**Proof (Pumping Lemma).** The Pumping Lemma for regular languages states: if $L$ is regular, then
+there exists a pumping length $p$ such that any string $s \in L$ with $|s| \geq p$ can be split into
+$s = xyz$ where:
 
 1. $|xy| \leq p$
 2. $|y| \geq 1$
 3. $xy^iz \in L$ for all $i \geq 0$
 
-Choose $s = a^p b^p$. By condition 1, $y$ consists only of $a$'s. Pumping ($i = 0$): $xz = a^{p-|y|}b^p$. Since $|y| \geq 1$, $p - |y| \neq p$, so $a^{p-|y|}b^p \notin L$. Contradiction. $\square$
+Choose $s = a^p b^p$. By condition 1, $y$ consists only of $a$'s. Pumping ($i = 0$):
+$xz = a^{p-|y|}b^p$. Since $|y| \geq 1$, $p - |y| \neq p$, so $a^{p-|y|}b^p \notin L$.
+Contradiction. $\square$
 
 ---
 
@@ -123,7 +135,8 @@ Choose $s = a^p b^p$. By condition 1, $y$ consists only of $a$'s. Pumping ($i = 
 
 ### Definition
 
-A **Turing machine (TM)** is a 7-tuple $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
+A **Turing machine (TM)** is a 7-tuple
+$M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
 
 - $Q$ is a finite set of states
 - $\Sigma$ is the input alphabet (does not include the blank symbol)
@@ -170,11 +183,14 @@ A **Turing machine (TM)** is a 7-tuple $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{
 
 ## 5. The Church-Turing Thesis
 
-**Thesis (not provable — a thesis):** Every effectively computable function is computable by a Turing machine.
+**Thesis (not provable — a thesis):** Every effectively computable function is computable by a
+Turing machine.
 
-Equivalently: any reasonable model of computation (lambda calculus, μ-recursive functions, modern programming languages) can compute exactly the same set of functions as a Turing machine.
+Equivalently: any reasonable model of computation (lambda calculus, μ-recursive functions, modern
+programming languages) can compute exactly the same set of functions as a Turing machine.
 
-This is a **thesis**, not a theorem — it cannot be proven because "effectively computable" is an informal concept. However, no counterexample has ever been found.
+This is a **thesis**, not a theorem — it cannot be proven because "effectively computable" is an
+informal concept. However, no counterexample has ever been found.
 
 ---
 
@@ -182,9 +198,11 @@ This is a **thesis**, not a theorem — it cannot be proven because "effectively
 
 ### Definition
 
-**Halting problem:** Given a description of a Turing machine $M$ and an input $w$, determine whether $M$ halts (accepts or rejects) when run on $w$.
+**Halting problem:** Given a description of a Turing machine $M$ and an input $w$, determine whether
+$M$ halts (accepts or rejects) when run on $w$.
 
-**Theorem (Turing, 1936).** The halting problem is **undecidable** — no Turing machine can solve it for all possible inputs.
+**Theorem (Turing, 1936).** The halting problem is **undecidable** — no Turing machine can solve it
+for all possible inputs.
 
 ### Proof by Contradiction
 
@@ -203,7 +221,9 @@ $$D(M) = \begin{cases} \text{loop forever} & \text{if } H(M, M) = \text{accept} 
 
 Both cases lead to contradictions, so $H$ cannot exist. $\square$
 
-**Corollary.** The halting problem is semi-decidable (recursively enumerable): we can build a machine that accepts when $M$ halts on $w$, but it cannot always reject when $M$ doesn't halt (it would have to run forever).
+**Corollary.** The halting problem is semi-decidable (recursively enumerable): we can build a
+machine that accepts when $M$ halts on $w$, but it cannot always reject when $M$ doesn't halt (it
+would have to run forever).
 
 ---
 
@@ -222,16 +242,20 @@ Both cases lead to contradictions, so $H$ cannot exist. $\square$
 
 ### Definitions
 
-- **P:** The class of decision problems solvable by a deterministic Turing machine in **polynomial time** $O(n^k)$ for some constant $k$.
-- **NP:** The class of decision problems whose **yes-instances** can be **verified** by a deterministic Turing machine in polynomial time (given a certificate).
+- **P:** The class of decision problems solvable by a deterministic Turing machine in **polynomial
+  time** $O(n^k)$ for some constant $k$.
+- **NP:** The class of decision problems whose **yes-instances** can be **verified** by a
+  deterministic Turing machine in polynomial time (given a certificate).
 
 ### Relationship
 
 $$\text{P} \subseteq \text{NP}$$
 
-Every problem in P is also in NP (if you can solve it in polynomial time, you can certainly verify a solution in polynomial time).
+Every problem in P is also in NP (if you can solve it in polynomial time, you can certainly verify a
+solution in polynomial time).
 
-**The P vs NP question:** Is $\text{P} = \text{NP}$? This is one of the seven Millennium Prize Problems. Most computer scientists believe $\text{P} \neq \text{NP}$.
+**The P vs NP question:** Is $\text{P} = \text{NP}$? This is one of the seven Millennium Prize
+Problems. Most computer scientists believe $\text{P} \neq \text{NP}$.
 
 ### NP-Complete Problems
 
@@ -273,9 +297,11 @@ A problem is **NP-complete** if:
 
 ## Problem Set
 
-**Problem 1.** Design a DFA that accepts all binary strings containing an even number of 0s. Give the formal definition and draw the transition table.
+**Problem 1.** Design a DFA that accepts all binary strings containing an even number of 0s. Give
+the formal definition and draw the transition table.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $M = (Q, \Sigma, \delta, q_0, F)$ where:
 
@@ -289,10 +315,10 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 | → $q_0$ | $q_1$ | $q_0$ |
 | $q_1$   | $q_0$ | $q_1$ |
 
-Trace "110": $q_0 \to q_0 \to q_0 \to q_0$. Accept (0 zeros, even). ✓
-Trace "101": $q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
+Trace "110": $q_0 \to q_0 \to q_0 \to q_0$. Accept (0 zeros, even). ✓ Trace "101":
+$q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
 
-</div></details>
+</details>
 
 **Problem 2.** Convert the following NFA to a DFA using the subset construction.
 
@@ -307,16 +333,16 @@ NFA: States $\{0, 1, 2\}$, alphabet $\{a, b\}$, start state 0, accepting state 2
 | 2    | a     | ∅      |
 | 2    | b     | ∅      |
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 DFA states (subsets of {0, 1, 2}):
 
 Start: $\{0\}$
 
-From $\{0\}$: a → {0, 1}, b → {0}
-From $\{0, 1\}$: a → δ(0,a) ∪ δ(1,a) = {0,1} ∪ ∅ = {0,1}; b → δ(0,b) ∪ δ(1,b) = {0} ∪ {2} = {0,2}
-From $\{0, 2\}$: a → δ(0,a) ∪ δ(2,a) = {0,1} ∪ ∅ = {0,1}; b → δ(0,b) ∪ δ(2,b) = {0} ∪ ∅ = {0}
-From ∅: a → ∅, b → ∅
+From $\{0\}$: a → {0, 1}, b → {0} From $\{0, 1\}$: a → δ(0,a) ∪ δ(1,a) = {0,1} ∪ ∅ = {0,1}; b →
+δ(0,b) ∪ δ(1,b) = {0} ∪ {2} = {0,2} From $\{0, 2\}$: a → δ(0,a) ∪ δ(2,a) = {0,1} ∪ ∅ = {0,1}; b →
+δ(0,b) ∪ δ(2,b) = {0} ∪ ∅ = {0} From ∅: a → ∅, b → ∅
 
 Accepting states: any subset containing 2 → $\{0, 2\}$.
 
@@ -327,13 +353,16 @@ Accepting states: any subset containing 2 → $\{0, 2\}$.
 | $\{0,2\}$   | $\{0,1\}$   | $\{0\}$     | Yes     |
 | $\emptyset$ | $\emptyset$ | $\emptyset$ | No      |
 
-</div></details>
+</details>
 
-**Problem 3.** Write a regular expression for the language of all binary strings that do NOT contain the substring "11".
+**Problem 3.** Write a regular expression for the language of all binary strings that do NOT contain
+the substring "11".
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Any such string is a sequence of blocks, where each block is either `0`, `10`, or `1` (but the last `1` must not be followed by another `1`).
+Any such string is a sequence of blocks, where each block is either `0`, `10`, or `1` (but the last
+`1` must not be followed by another `1`).
 
 Regular expression: `(0|10)*(1|ε)`
 
@@ -351,29 +380,39 @@ Verification:
 - "0101" → matches with "0", "10", "1"... wait: "0101" = "0" + "10" + "1". ✓
 - "11" → cannot match (no way to have two consecutive 1s). ✓
 
-</div></details>
+</details>
 
 **Problem 4.** Use the Pumping Lemma to prove that $L = \{ww \mid w \in \{0,1\}^*\}$ is not regular.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Assume $L$ is regular. Let $p$ be the pumping length. Choose $s = 0^p 1 0^p 1$ (this is $w = 0^p1$, $ww = 0^p10^p1$). Note $|s| = 2p + 2 \geq p$. ✓
+Assume $L$ is regular. Let $p$ be the pumping length. Choose $s = 0^p 1 0^p 1$ (this is $w = 0^p1$,
+$ww = 0^p10^p1$). Note $|s| = 2p + 2 \geq p$. ✓
 
 By the Pumping Lemma, $s = xyz$ with $|xy| \leq p$ and $|y| \geq 1$.
 
-Since $|xy| \leq p$, $y$ consists entirely of 0s from the first half. Say $y = 0^k$ where $1 \leq k \leq p$.
+Since $|xy| \leq p$, $y$ consists entirely of 0s from the first half. Say $y = 0^k$ where
+$1 \leq k \leq p$.
 
 Pump with $i = 0$: $xz = 0^{p-k}10^p1$.
 
-Is this in $L$? It would need to be $ww$ for some $w$. The length is $2p - k + 2$, which is odd when $k$ is odd, so it cannot be $ww$ (which always has even length). But even when $k$ is even, the first half is $0^{(p-k/2)+1}$... actually, for $xz = 0^{p-k}10^p1$ to be in $L = \{ww\}$, we need the first half to equal the second half. The total length is $2p + 2 - k$. The first half is the first $p + 1 - k/2$ characters: $0^{p-k}1$. The second half is: $0^{k/2}0^p1 = 0^{p+k/2}1$. For these to be equal, $p-k = p+k/2$, giving $k = -k/2$, so $k = 0$. But $k \geq 1$. Contradiction. ✓
+Is this in $L$? It would need to be $ww$ for some $w$. The length is $2p - k + 2$, which is odd when
+$k$ is odd, so it cannot be $ww$ (which always has even length). But even when $k$ is even, the
+first half is $0^{(p-k/2)+1}$... actually, for $xz = 0^{p-k}10^p1$ to be in $L = \{ww\}$, we need
+the first half to equal the second half. The total length is $2p + 2 - k$. The first half is the
+first $p + 1 - k/2$ characters: $0^{p-k}1$. The second half is: $0^{k/2}0^p1 = 0^{p+k/2}1$. For
+these to be equal, $p-k = p+k/2$, giving $k = -k/2$, so $k = 0$. But $k \geq 1$. Contradiction. ✓
 
 Therefore, $L$ is not regular. $\square$
 
-</div></details>
+</details>
 
-**Problem 5.** Describe a Turing machine that decides whether a binary string is a palindrome (reads the same forwards and backwards).
+**Problem 5.** Describe a Turing machine that decides whether a binary string is a palindrome (reads
+the same forwards and backwards).
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Algorithm:**
 
@@ -406,61 +445,83 @@ Therefore, $L$ is not regular. $\square$
 - $q_{return}$ reads `0`, `1`: move left
 - $q_{return}$ reads blank: move right → $q_0$
 
-This TM halts on all inputs (always reaches accept or reject), so the language of palindromes is **decidable**. ✓
+This TM halts on all inputs (always reaches accept or reject), so the language of palindromes is
+**decidable**. ✓
 
-</div></details>
+</details>
 
-**Problem 6.** Prove that if the halting problem were decidable, then every semi-decidable language would be decidable.
+**Problem 6.** Prove that if the halting problem were decidable, then every semi-decidable language
+would be decidable.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Proof.** Let $L$ be a semi-decidable language. There exists a TM $M_L$ that accepts $w$ if $w \in L$ and loops forever if $w \notin L$.
+**Proof.** Let $L$ be a semi-decidable language. There exists a TM $M_L$ that accepts $w$ if
+$w \in L$ and loops forever if $w \notin L$.
 
 If the halting problem were decidable, we could build a TM $M$ that decides $L$:
 
 1. On input $w$, run the halting decider $H$ on $(M_L, w)$
-2. If $H$ says $M_L$ halts on $w$: $M_L$ will accept (since it only halts on members of $L$), so run $M_L$ on $w$ and accept
+2. If $H$ says $M_L$ halts on $w$: $M_L$ will accept (since it only halts on members of $L$), so run
+   $M_L$ on $w$ and accept
 3. If $H$ says $M_L$ doesn't halt on $w$: reject (since $w \notin L$)
 
-This TM $M$ always halts and correctly decides $L$. Since $L$ was arbitrary, every semi-decidable language would be decidable.
+This TM $M$ always halts and correctly decides $L$. Since $L$ was arbitrary, every semi-decidable
+language would be decidable.
 
-But we know the halting problem is undecidable, so there must exist semi-decidable languages that are not decidable (e.g., the halting problem itself). $\square$
+But we know the halting problem is undecidable, so there must exist semi-decidable languages that
+are not decidable (e.g., the halting problem itself). $\square$
 
-</div></details>
+</details>
 
-**Problem 7.** Explain the difference between a decidable problem and a semi-decidable problem. Give an example of each.
+**Problem 7.** Explain the difference between a decidable problem and a semi-decidable problem. Give
+an example of each.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Decidable:** There exists a TM that halts on ALL inputs and correctly answers yes/no.
 
-- Example: "Given a DFA $M$ and a string $w$, does $M$ accept $w$?" — simulate $M$ on $w$; it always halts.
+- Example: "Given a DFA $M$ and a string $w$, does $M$ accept $w$?" — simulate $M$ on $w$; it always
+  halts.
 
-**Semi-decidable (recursively enumerable):** There exists a TM that halts and accepts on yes-instances, but may loop forever on no-instances.
+**Semi-decidable (recursively enumerable):** There exists a TM that halts and accepts on
+yes-instances, but may loop forever on no-instances.
 
-- Example: "Given a TM $M$ and input $w$, does $M$ halt on $w$?" — run $M$ on $w$; if it halts, accept. But if $M$ doesn't halt, our verifier loops forever.
+- Example: "Given a TM $M$ and input $w$, does $M$ halt on $w$?" — run $M$ on $w$; if it halts,
+  accept. But if $M$ doesn't halt, our verifier loops forever.
 
-**Key difference:** For semi-decidable problems, you can verify a "yes" answer in finite time, but you cannot always verify a "no" answer (the machine might just be taking a long time, or it might loop forever).
+**Key difference:** For semi-decidable problems, you can verify a "yes" answer in finite time, but
+you cannot always verify a "no" answer (the machine might just be taking a long time, or it might
+loop forever).
 
-</div></details>
+</details>
 
 **Problem 8.** Is the complement of the halting problem semi-decidable? Explain.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 No. The complement of the halting problem is **not** semi-decidable.
 
-**Proof.** If both a language $L$ and its complement $\overline{L}$ were semi-decidable, then $L$ would be decidable (run both semi-decidable machines in parallel; one must eventually halt, giving the answer).
+**Proof.** If both a language $L$ and its complement $\overline{L}$ were semi-decidable, then $L$
+would be decidable (run both semi-decidable machines in parallel; one must eventually halt, giving
+the answer).
 
-The halting problem is semi-decidable (run the TM and accept when it halts). If its complement were also semi-decidable, the halting problem would be decidable — but we proved it's not. Therefore, the complement of the halting problem is not semi-decidable. $\square$
+The halting problem is semi-decidable (run the TM and accept when it halts). If its complement were
+also semi-decidable, the halting problem would be decidable — but we proved it's not. Therefore, the
+complement of the halting problem is not semi-decidable. $\square$
 
-</div></details>
+</details>
 
-**Problem 9.** Explain why the Travelling Salesman Problem (decision version: "Is there a tour of length ≤ k?") is in NP.
+**Problem 9.** Explain why the Travelling Salesman Problem (decision version: "Is there a tour of
+length ≤ k?") is in NP.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-The TSP decision problem is in NP because a proposed solution (a tour) can be **verified** in polynomial time:
+The TSP decision problem is in NP because a proposed solution (a tour) can be **verified** in
+polynomial time:
 
 **Certificate:** A permutation of the $n$ cities (the proposed tour).
 
@@ -474,16 +535,29 @@ Total verification time: $O(n)$, which is polynomial. Therefore, TSP is in NP. �
 
 (Note: this does NOT mean TSP is in P. Verification is polynomial, but finding the tour may not be.)
 
-</div></details>
+</details>
 
-**Problem 10.** State the Church-Turing thesis. Explain why it is a thesis and not a theorem. What would it mean if it were false?
+**Problem 10.** State the Church-Turing thesis. Explain why it is a thesis and not a theorem. What
+would it mean if it were false?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Church-Turing Thesis:** Every function that is effectively computable (can be computed by an algorithm) is computable by a Turing machine.
+**Church-Turing Thesis:** Every function that is effectively computable (can be computed by an
+algorithm) is computable by a Turing machine.
 
-**Why it's a thesis, not a theorem:** "Effectively computable" is an informal, intuitive concept — it refers to any step-by-step procedure that a human could follow with pen and paper (or a computer could execute). Since this is not a mathematically precise definition, we cannot formally prove that Turing machines capture all of "computation." However, every reasonable model of computation proposed (lambda calculus, μ-recursive functions, register machines, modern programming languages) has been shown to be equivalent to Turing machines, providing overwhelming evidence for the thesis.
+**Why it's a thesis, not a theorem:** "Effectively computable" is an informal, intuitive concept —
+it refers to any step-by-step procedure that a human could follow with pen and paper (or a computer
+could execute). Since this is not a mathematically precise definition, we cannot formally prove that
+Turing machines capture all of "computation." However, every reasonable model of computation
+proposed (lambda calculus, μ-recursive functions, register machines, modern programming languages)
+has been shown to be equivalent to Turing machines, providing overwhelming evidence for the thesis.
 
-**If it were false:** There would exist an effectively computable function that no Turing machine could compute. This would mean our entire understanding of computation is fundamentally incomplete — there would be a type of computation that our current theoretical models cannot capture. It would revolutionise computer science and mathematics, as it would imply the existence of a "super-Turing" model of computation.
+**If it were false:** There would exist an effectively computable function that no Turing machine
+could compute. This would mean our entire understanding of computation is fundamentally incomplete —
+there would be a type of computation that our current theoretical models cannot capture. It would
+revolutionise computer science and mathematics, as it would imply the existence of a "super-Turing"
+model of computation.
 
-For revision on algorithms and complexity, see [Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/04-complexity-analysis).
+For revision on algorithms and complexity, see
+[Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/04-complexity-analysis).

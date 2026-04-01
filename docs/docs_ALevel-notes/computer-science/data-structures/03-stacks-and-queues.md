@@ -13,7 +13,8 @@ slug: stacks-and-queues
 
 ### Definition
 
-A **stack** is a linear data structure that follows the **Last In, First Out (LIFO)** principle: the most recently added element is the first to be removed.
+A **stack** is a linear data structure that follows the **Last In, First Out (LIFO)** principle: the
+most recently added element is the first to be removed.
 
 ### Abstract Data Type
 
@@ -61,7 +62,8 @@ class ArrayStack:
 
 **Theorem.** All stack operations run in $O(1)$ time with an array-based implementation.
 
-**Proof.** `push` and `pop` each perform one index update and one array access — both $O(1)$. `peek`, `isEmpty`, and `size` each inspect a single variable. $\square$
+**Proof.** `push` and `pop` each perform one index update and one array access — both $O(1)$.
+`peek`, `isEmpty`, and `size` each inspect a single variable. $\square$
 
 ### Linked List-Based Implementation
 
@@ -91,9 +93,8 @@ class LinkedListStack:
         return self._head.data
 ```
 
-:::tip Exam tip
-Stack push/pop always operate at the **head** of the linked list (not the tail) for $O(1)$ time. Pushing at the tail would require traversal.
-:::
+:::tip Exam tip Stack push/pop always operate at the **head** of the linked list (not the tail) for
+$O(1)$ time. Pushing at the tail would require traversal. :::
 
 ---
 
@@ -101,7 +102,8 @@ Stack push/pop always operate at the **head** of the linked list (not the tail) 
 
 ### Definition
 
-A **queue** is a linear data structure that follows the **First In, First Out (FIFO)** principle: the earliest added element is the first to be removed.
+A **queue** is a linear data structure that follows the **First In, First Out (FIFO)** principle:
+the earliest added element is the first to be removed.
 
 ### Abstract Data Type
 
@@ -148,7 +150,9 @@ class CircularQueue:
 
 **Theorem.** Circular array queue operations run in $O(1)$ time.
 
-**Proof.** `enqueue` writes to `_data[_rear]` and updates `_rear` with modular arithmetic — both $O(1)$. `dequeue` reads from `_data[_front]` and updates `_front` — both $O(1)$. No shifting of elements is required. $\square$
+**Proof.** `enqueue` writes to `_data[_rear]` and updates `_rear` with modular arithmetic — both
+$O(1)$. `dequeue` reads from `_data[_front]` and updates `_front` — both $O(1)$. No shifting of
+elements is required. $\square$
 
 ### Linked List Implementation
 
@@ -196,7 +200,8 @@ When the function returns, the frame is popped. This implements recursion natura
 
 ### 3.2 Expression Evaluation: Reverse Polish Notation (RPN)
 
-**Definition.** **Reverse Polish Notation (RPN)** (postfix notation) places operators after their operands. No parentheses are needed because the order of operations is unambiguous.
+**Definition.** **Reverse Polish Notation (RPN)** (postfix notation) places operators after their
+operands. No parentheses are needed because the order of operations is unambiguous.
 
 Examples: `3 4 +` (= 7), `5 1 2 + 4 * + 3 -` (= 14)
 
@@ -232,20 +237,28 @@ def evaluate_rpn(tokens):
 
 **Correctness proof.** We prove by induction on the number of tokens processed.
 
-_Invariant._ After processing $k$ tokens, the stack contains the values of all sub-expressions that have been fully read but whose results have not yet been consumed by a parent operator. The stack bottom corresponds to the leftmost unprocessed sub-expression.
+_Invariant._ After processing $k$ tokens, the stack contains the values of all sub-expressions that
+have been fully read but whose results have not yet been consumed by a parent operator. The stack
+bottom corresponds to the leftmost unprocessed sub-expression.
 
 _Base case._ $k = 0$: stack is empty. The invariant holds trivially.
 
 _Inductive step._ Assume the invariant holds after $k$ tokens.
 
-- If token $k+1$ is an operand $v$: it starts a new sub-expression. Pushing $v$ adds it as an unprocessed sub-expression. The invariant holds.
-- If token $k+1$ is an operator $\oplus$: by the definition of valid RPN, the top two stack entries are the operands $a$ and $b$ for this operator (this follows from the well-formedness of RPN expressions). Popping them, computing $a \oplus b$, and pushing the result replaces the two sub-expressions with their combined result. The invariant holds.
+- If token $k+1$ is an operand $v$: it starts a new sub-expression. Pushing $v$ adds it as an
+  unprocessed sub-expression. The invariant holds.
+- If token $k+1$ is an operator $\oplus$: by the definition of valid RPN, the top two stack entries
+  are the operands $a$ and $b$ for this operator (this follows from the well-formedness of RPN
+  expressions). Popping them, computing $a \oplus b$, and pushing the result replaces the two
+  sub-expressions with their combined result. The invariant holds.
 
-_Termination._ After processing all $n$ tokens of a valid RPN expression, exactly one value remains — the value of the entire expression. $\square$
+_Termination._ After processing all $n$ tokens of a valid RPN expression, exactly one value remains
+— the value of the entire expression. $\square$
 
 **Complexity.** Each token is processed once: $O(n)$ time, $O(n)$ space (stack depth).
 
-<details><summary>Example: Evaluate `5 1 2 + 4 * + 3 -`</summary><div>
+<details>
+<summary>Example: Evaluate `5 1 2 + 4 * + 3 -`</summary>
 
 | Token | Stack (bottom → top) | Action                      |
 | ----- | -------------------- | --------------------------- |
@@ -263,7 +276,7 @@ Result: 14 ✓
 
 Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
 
-</div></details>
+</details>
 
 ### 3.3 Infix to Postfix Conversion (Shunting-Yard Algorithm)
 
@@ -274,10 +287,12 @@ Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
    - If $t$ is an operand: enqueue to output
    - If $t$ is `(`: push to stack
    - If $t$ is `)`: pop from stack to output until `(` is found; discard `(`
-   - If $t$ is an operator $\oplus$: while stack is non-empty and top of stack is an operator $\psi$ with precedence($\psi$) $\geq$ precedence($\oplus$), pop $\psi$ to output. Then push $\oplus$.
+   - If $t$ is an operator $\oplus$: while stack is non-empty and top of stack is an operator $\psi$
+     with precedence($\psi$) $\geq$ precedence($\oplus$), pop $\psi$ to output. Then push $\oplus$.
 3. Pop all remaining operators to output
 
-<details><summary>Example: Convert `(3 + 4) * 5` to RPN</summary><div>
+<details>
+<summary>Example: Convert `(3 + 4) * 5` to RPN</summary>
 
 | Token | Output Queue   | Operator Stack | Action                        |
 | ----- | -------------- | -------------- | ----------------------------- |
@@ -292,7 +307,7 @@ Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
 
 Result: `3 4 + 5 *` ✓
 
-</div></details>
+</details>
 
 ---
 
@@ -300,7 +315,8 @@ Result: `3 4 + 5 *` ✓
 
 ### 4.1 Breadth-First Search
 
-BFS uses a queue to explore nodes level by level (see [Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs)).
+BFS uses a queue to explore nodes level by level (see
+[Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs)).
 
 ### 4.2 Print Queue / Task Scheduling
 
@@ -308,7 +324,8 @@ Operating systems use queues to manage print jobs, CPU scheduling (round-robin),
 
 ### 4.3 Buffering
 
-Queues buffer data between producers and consumers operating at different speeds (e.g., keyboard buffer, network packet buffer).
+Queues buffer data between producers and consumers operating at different speeds (e.g., keyboard
+buffer, network packet buffer).
 
 ---
 
@@ -316,7 +333,8 @@ Queues buffer data between producers and consumers operating at different speeds
 
 ### Definition
 
-A **priority queue** is a queue where each element has an associated priority, and elements are dequeued in priority order (highest first, or lowest first).
+A **priority queue** is a queue where each element has an associated priority, and elements are
+dequeued in priority order (highest first, or lowest first).
 
 ### Implementation Options
 
@@ -343,9 +361,11 @@ A **priority queue** is a queue where each element has an associated priority, a
 
 ## Problem Set
 
-**Problem 1.** A stack initially contains `[10, 20, 30]` (30 on top). After the operations `push(40)`, `pop()`, `push(50)`, `pop()`, `pop()`, what is on the stack?
+**Problem 1.** A stack initially contains `[10, 20, 30]` (30 on top). After the operations
+`push(40)`, `pop()`, `push(50)`, `pop()`, `pop()`, what is on the stack?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Initial: `[10, 20, 30]` (top = 30)
 
@@ -357,11 +377,13 @@ Initial: `[10, 20, 30]` (top = 30)
 
 Stack: `[10, 20]` (20 on top)
 
-</div></details>
+</details>
 
-**Problem 2.** A queue initially contains `[10, 20, 30]` (front = 10). After `enqueue(40)`, `dequeue()`, `enqueue(50)`, `dequeue()`, what remains?
+**Problem 2.** A queue initially contains `[10, 20, 30]` (front = 10). After `enqueue(40)`,
+`dequeue()`, `enqueue(50)`, `dequeue()`, what remains?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Initial: front → [10, 20, 30] → rear
 
@@ -372,11 +394,12 @@ Initial: front → [10, 20, 30] → rear
 
 Queue: [30, 40, 50] (front = 30)
 
-</div></details>
+</details>
 
 **Problem 3.** Evaluate the RPN expression: `2 3 1 * + 9 -`
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Token | Stack     | Action                    |
 | ----- | --------- | ------------------------- |
@@ -392,11 +415,13 @@ Result: -4 ✓
 
 Check: $2 + (3 \times 1) - 9 = 2 + 3 - 9 = -4$ ✓
 
-</div></details>
+</details>
 
-**Problem 4.** Convert the infix expression `A + B * C - D` to RPN using the shunting-yard algorithm.
+**Problem 4.** Convert the infix expression `A + B * C - D` to RPN using the shunting-yard
+algorithm.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Precedence: `*` > `+`, `-`
 
@@ -415,27 +440,38 @@ Result: `A B C * + D -` ✓
 
 Check: $(A + (B \times C)) - D$
 
-</div></details>
+</details>
 
-**Problem 5.** Prove that a stack can be used to check for balanced parentheses in a string in $O(n)$ time.
+**Problem 5.** Prove that a stack can be used to check for balanced parentheses in a string in
+$O(n)$ time.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Algorithm:** Push `(` onto the stack; for each `)`, pop and check that the stack is non-empty. At the end, the stack must be empty.
+**Algorithm:** Push `(` onto the stack; for each `)`, pop and check that the stack is non-empty. At
+the end, the stack must be empty.
 
-**Correctness proof.** We prove that the algorithm returns "balanced" if and only if the parentheses are balanced.
+**Correctness proof.** We prove that the algorithm returns "balanced" if and only if the parentheses
+are balanced.
 
-(_If_) Suppose the parentheses are balanced. Then every `)` matches a previous `(`. By the well-formedness of balanced parentheses, when we encounter a `)`, there is always a matching `(` on the stack (otherwise the prefix would have more `)` than `(`, contradicting balance). At the end, all `(` have been matched, so the stack is empty.
+(_If_) Suppose the parentheses are balanced. Then every `)` matches a previous `(`. By the
+well-formedness of balanced parentheses, when we encounter a `)`, there is always a matching `(` on
+the stack (otherwise the prefix would have more `)` than `(`, contradicting balance). At the end,
+all `(` have been matched, so the stack is empty.
 
-(_Only if_) Suppose the algorithm returns "balanced" (stack empty at end, no underflow). No underflow means every `)` matched a previous `(`. Empty stack means every `(` was matched. Hence the string is balanced. $\square$
+(_Only if_) Suppose the algorithm returns "balanced" (stack empty at end, no underflow). No
+underflow means every `)` matched a previous `(`. Empty stack means every `(` was matched. Hence the
+string is balanced. $\square$
 
 Time: $O(n)$ — one pass through the string. Space: $O(n)$ — stack depth.
 
-</div></details>
+</details>
 
-**Problem 6.** Implement a queue using two stacks. Show that `enqueue` is $O(1)$ and `dequeue` is amortised $O(1)$.
+**Problem 6.** Implement a queue using two stacks. Show that `enqueue` is $O(1)$ and `dequeue` is
+amortised $O(1)$.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```python
 class StackQueue:
@@ -455,23 +491,35 @@ class StackQueue:
 
 `enqueue`: $O(1)$ — push onto `in_stack`.
 
-`dequeue`: If `out_stack` is non-empty, $O(1)$. If empty, transfer all $n$ elements from `in_stack` to `out_stack` ($O(n)$), then pop ($O(1)$). Each element is transferred at most once per `enqueue`/`dequeue` pair, so the amortised cost per `dequeue` is $O(1)$.
+`dequeue`: If `out_stack` is non-empty, $O(1)$. If empty, transfer all $n$ elements from `in_stack`
+to `out_stack` ($O(n)$), then pop ($O(1)$). Each element is transferred at most once per
+`enqueue`/`dequeue` pair, so the amortised cost per `dequeue` is $O(1)$.
 
-**Amortised proof.** Over a sequence of $n$ operations, each element is pushed to `in_stack` once ($O(1)$), transferred to `out_stack` at most once ($O(1)$ amortised), and popped from `out_stack` once ($O(1)$). Total: $O(n)$ for $n$ operations → $O(1)$ amortised per operation. $\square$
+**Amortised proof.** Over a sequence of $n$ operations, each element is pushed to `in_stack` once
+($O(1)$), transferred to `out_stack` at most once ($O(1)$ amortised), and popped from `out_stack`
+once ($O(1)$). Total: $O(n)$ for $n$ operations → $O(1)$ amortised per operation. $\square$
 
-</div></details>
+</details>
 
-**Problem 7.** Explain why a stack is the appropriate data structure for undo functionality in a text editor.
+**Problem 7.** Explain why a stack is the appropriate data structure for undo functionality in a
+text editor.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Each action in the editor (typing, deleting, formatting) can be represented as a state change. When the user performs "undo", we need to reverse the **most recent** action — this is exactly LIFO behaviour. Pushing each action onto a stack and popping on undo naturally reverses actions in the correct order. A queue would undo the **oldest** action first, which is not the desired behaviour.
+Each action in the editor (typing, deleting, formatting) can be represented as a state change. When
+the user performs "undo", we need to reverse the **most recent** action — this is exactly LIFO
+behaviour. Pushing each action onto a stack and popping on undo naturally reverses actions in the
+correct order. A queue would undo the **oldest** action first, which is not the desired behaviour.
 
-</div></details>
+</details>
 
-**Problem 8.** A circular queue has capacity 5. Show the state of the queue (front, rear, size, and array contents) after each operation: `enqueue(1)`, `enqueue(2)`, `dequeue()`, `enqueue(3)`, `enqueue(4)`, `enqueue(5)`, `dequeue()`, `enqueue(6)`.
+**Problem 8.** A circular queue has capacity 5. Show the state of the queue (front, rear, size, and
+array contents) after each operation: `enqueue(1)`, `enqueue(2)`, `dequeue()`, `enqueue(3)`,
+`enqueue(4)`, `enqueue(5)`, `dequeue()`, `enqueue(6)`.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Operation  | front | rear | size | Array contents (indices 0-4) |
 | ---------- | ----- | ---- | ---- | ---------------------------- |
@@ -487,11 +535,12 @@ Each action in the editor (typing, deleting, formatting) can be represented as a
 
 Note: rear wraps around using `(rear + 1) % capacity`.
 
-</div></details>
+</details>
 
 **Problem 9.** Write a function that uses a stack to reverse the order of elements in a queue.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```python
 def reverse_queue(queue):
@@ -502,22 +551,36 @@ def reverse_queue(queue):
         queue.enqueue(stack.pop())
 ```
 
-**Correctness.** Dequeuing all elements and pushing them onto a stack reverses the order (LIFO). Then popping all elements and enqueuing them places them in the queue in the reversed order. Time: $O(n)$, Space: $O(n)$.
+**Correctness.** Dequeuing all elements and pushing them onto a stack reverses the order (LIFO).
+Then popping all elements and enqueuing them places them in the queue in the reversed order. Time:
+$O(n)$, Space: $O(n)$.
 
-</div></details>
+</details>
 
-**Problem 10.** Prove that any valid RPN expression with $n$ operands and $n-1$ binary operators evaluates to exactly one value (the stack has exactly one element at the end).
+**Problem 10.** Prove that any valid RPN expression with $n$ operands and $n-1$ binary operators
+evaluates to exactly one value (the stack has exactly one element at the end).
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Proof by induction on $n$ (number of operands).**
 
-_Base case._ $n = 1$: The expression is a single operand. After processing, the stack has one element. ✓
+_Base case._ $n = 1$: The expression is a single operand. After processing, the stack has one
+element. ✓
 
-_Inductive step._ Assume the claim holds for all expressions with $k$ operands ($k \geq 1$). Consider an expression with $k + 1$ operands. In a valid RPN expression, there exists a first operator $\oplus$ that, when processed, reduces the stack by one (pops 2, pushes 1). Before this operator, some prefix of the expression has evaluated to a stack with at least 2 elements. The prefix before $\oplus$ is a valid sub-expression with $m$ operands and $m - 1$ operators (for some $m \geq 2$), and by the inductive hypothesis evaluates to exactly $m$ values — but we need exactly 2 values before $\oplus$.
+_Inductive step._ Assume the claim holds for all expressions with $k$ operands ($k \geq 1$).
+Consider an expression with $k + 1$ operands. In a valid RPN expression, there exists a first
+operator $\oplus$ that, when processed, reduces the stack by one (pops 2, pushes 1). Before this
+operator, some prefix of the expression has evaluated to a stack with at least 2 elements. The
+prefix before $\oplus$ is a valid sub-expression with $m$ operands and $m - 1$ operators (for some
+$m \geq 2$), and by the inductive hypothesis evaluates to exactly $m$ values — but we need exactly 2
+values before $\oplus$.
 
-More cleanly: let $f(n)$ be the net change in stack size after processing $n$ operands and $n - 1$ operators. Each operand adds 1, each operator subtracts 1 (pops 2, pushes 1). Net: $n - (n - 1) = 1$. Starting from an empty stack, the final stack size is $0 + 1 = 1$. $\square$
+More cleanly: let $f(n)$ be the net change in stack size after processing $n$ operands and $n - 1$
+operators. Each operand adds 1, each operator subtracts 1 (pops 2, pushes 1). Net:
+$n - (n - 1) = 1$. Starting from an empty stack, the final stack size is $0 + 1 = 1$. $\square$
 
-For revision on complexity analysis, see [Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/04-complexity-analysis).
+For revision on complexity analysis, see
+[Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/04-complexity-analysis).
 
-</div></details>
+</details>

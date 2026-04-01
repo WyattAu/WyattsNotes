@@ -18,9 +18,8 @@ slug: differentiation
 | OCR (A)    | Paper 1, 2 | Includes connected rates in P2                                   |
 | CIE (9709) | P1, P2, P3 | Basic differentiation in P1; product/quotient/chain in P2/P3     |
 
-:::info
-The formula booklet lists derivatives of standard functions. You must know how to apply the product, quotient, and chain rules, and how to find stationary points.
-:::
+:::info The formula booklet lists derivatives of standard functions. You must know how to apply the
+product, quotient, and chain rules, and how to find stationary points. :::
 
 ---
 
@@ -34,11 +33,13 @@ $$f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$
 
 provided this limit exists. If it does, we say $f$ is **differentiable** at $x$.
 
-**Geometric interpretation.** The quantity $\dfrac{f(x+h)-f(x)}{h}$ is the gradient of the secant line through the points $(x, f(x))$ and $(x+h, f(x+h))$. As $h \to 0$, this secant approaches the tangent, so $f'(x)$ is the gradient of the tangent at $x$.
+**Geometric interpretation.** The quantity $\dfrac{f(x+h)-f(x)}{h}$ is the gradient of the secant
+line through the points $(x, f(x))$ and $(x+h, f(x+h))$. As $h \to 0$, this secant approaches the
+tangent, so $f'(x)$ is the gradient of the tangent at $x$.
 
-:::info
-A function is differentiable at a point if and only if it is smooth (no sharp corners) there. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$ but not differentiable.
-:::
+:::info A function is differentiable at a point if and only if it is smooth (no sharp corners)
+there. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$ but not
+differentiable. :::
 
 ---
 
@@ -62,9 +63,11 @@ Taking $h \to 0$, every term containing $h$ vanishes:
 
 $$f'(x) = \binom{n}{1}x^{n-1} = nx^{n-1} \quad \blacksquare$$
 
-This proof extends to negative and fractional powers using the limit definition with the generalised binomial theorem or logarithmic differentiation.
+This proof extends to negative and fractional powers using the limit definition with the generalised
+binomial theorem or logarithmic differentiation.
 
-**Intuition.** The power rule says: "bring the power down and reduce it by one." This works because the leading-order term in $(x+h)^n - x^n$ is $nx^{n-1}h$, and dividing by $h$ leaves $nx^{n-1}$.
+**Intuition.** The power rule says: "bring the power down and reduce it by one." This works because
+the leading-order term in $(x+h)^n - x^n$ is $nx^{n-1}h$, and dividing by $h$ leaves $nx^{n-1}$.
 
 ---
 
@@ -95,7 +98,9 @@ Since $f$ is differentiable (hence continuous), $\lim_{h\to 0}f(x+h) = f(x)$:
 
 $$= f(x) \cdot g'(x) + g(x) \cdot f'(x) \quad \blacksquare$$
 
-**Intuition.** Think of the area of a rectangle with sides $u$ and $v$. If $u$ changes by $\delta u$ and $v$ by $\delta v$, the change in area is approximately $v\,\delta u + u\,\delta v$ (the two thin strips along the edges; the corner piece $\delta u\,\delta v$ is negligible).
+**Intuition.** Think of the area of a rectangle with sides $u$ and $v$. If $u$ changes by $\delta u$
+and $v$ by $\delta v$, the change in area is approximately $v\,\delta u + u\,\delta v$ (the two thin
+strips along the edges; the corner piece $\delta u\,\delta v$ is negligible).
 
 ---
 
@@ -115,9 +120,8 @@ By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 
 $$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2} \quad \blacksquare$$
 
-:::warning
-The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this the wrong way around is one of the most common errors in A Level mathematics.
-:::
+:::warning The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
+the wrong way around is one of the most common errors in A Level mathematics. :::
 
 ---
 
@@ -131,13 +135,17 @@ where $u = g(x)$.
 
 ### 5.1 Proof (informal)
 
-If $x$ changes by $\delta x$, then $u$ changes by approximately $g'(x)\,\delta x$, and $y$ changes by approximately $f'(u) \cdot g'(x)\,\delta x$. Dividing by $\delta x$ and taking the limit:
+If $x$ changes by $\delta x$, then $u$ changes by approximately $g'(x)\,\delta x$, and $y$ changes
+by approximately $f'(u) \cdot g'(x)\,\delta x$. Dividing by $\delta x$ and taking the limit:
 
 $$\frac{dy}{dx} = f'(g(x)) \cdot g'(x)$$
 
 A fully rigorous proof uses the mean value theorem to handle the case when $g'(x) = 0$.
 
-**Intuition.** The chain rule handles composite functions: "differentiate the outer function, then multiply by the derivative of the inner function." Think of it as a gearing mechanism: a small turn in $x$ causes a turn in $u$, which causes a turn in $y$, and the overall effect is the product of the two gear ratios.
+**Intuition.** The chain rule handles composite functions: "differentiate the outer function, then
+multiply by the derivative of the inner function." Think of it as a gearing mechanism: a small turn
+in $x$ causes a turn in $u$, which causes a turn in $y$, and the overall effect is the product of
+the two gear ratios.
 
 ---
 
@@ -147,7 +155,8 @@ A fully rigorous proof uses the mean value theorem to handle the case when $g'(x
 
 **Theorem.** $\dfrac{d}{dx}\sin x = \cos x$.
 
-**Proof.** Using the limit definition and the compound angle formula $\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$:
+**Proof.** Using the limit definition and the compound angle formula
+$\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$:
 
 $$
 \begin{aligned}
@@ -157,7 +166,8 @@ $$
 \end{aligned}
 $$
 
-Using the standard limits $\displaystyle\lim_{h\to 0}\frac{\sin h}{h} = 1$ and $\displaystyle\lim_{h\to 0}\frac{\cos h - 1}{h} = 0$:
+Using the standard limits $\displaystyle\lim_{h\to 0}\frac{\sin h}{h} = 1$ and
+$\displaystyle\lim_{h\to 0}\frac{\cos h - 1}{h} = 0$:
 
 $$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x \quad \blacksquare$$
 
@@ -213,8 +223,8 @@ There are three types:
 
 | Type                | Condition                          | Shape   |
 | ------------------- | ---------------------------------- | ------- |
-| Maximum             | $f'(a) = 0$, $f''(a) < 0$          | $\cap$  |
-| Minimum             | $f'(a) = 0$, $f''(a) > 0$          | $\cup$  |
+| Maximum             | $f'(a) = 0$, $f''(a) \lt{} 0$      | $\cap$  |
+| Minimum             | $f'(a) = 0$, $f''(a) \gt{} 0$      | $\cup$  |
 | Point of inflection | $f'(a) = 0$, $f''(a) = 0$ (may be) | S-shape |
 
 ### 7.3 Proof of the second derivative test (Taylor expansion intuition)
@@ -227,13 +237,13 @@ Since $f'(a) = 0$ at a stationary point:
 
 $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 
-- If $f''(a) > 0$: $f(x) - f(a) > 0$ for $x \neq a$, so $f(a)$ is a **minimum**.
-- If $f''(a) < 0$: $f(x) - f(a) < 0$ for $x \neq a$, so $f(a)$ is a **maximum**.
+- If $f''(a) \gt{} 0$: $f(x) - f(a) \gt{} 0$ for $x \neq a$, so $f(a)$ is a **minimum**.
+- If $f''(a) \lt{} 0$: $f(x) - f(a) \lt{} 0$ for $x \neq a$, so $f(a)$ is a **maximum**.
 - If $f''(a) = 0$: the test is inconclusive; use a nature table or higher derivatives.
 
-:::warning
-The second derivative test is **sufficient but not necessary**. If $f''(a) = 0$, the point could still be a maximum, minimum, or inflection. Always use a nature table (checking the sign of $f'$ on either side) if the second derivative test is inconclusive.
-:::
+:::warning The second derivative test is **sufficient but not necessary**. If $f''(a) = 0$, the
+point could still be a maximum, minimum, or inflection. Always use a nature table (checking the sign
+of $f'$ on either side) if the second derivative test is inconclusive. :::
 
 ---
 
@@ -247,7 +257,8 @@ When two quantities are related by an equation, their rates of change are relate
 2. Differentiate both sides with respect to $t$ (time).
 3. Substitute known values and solve for the unknown rate.
 
-**Example.** The radius $r$ of a circle increases at $2\,\text{cm/s}$. Find the rate of change of the area when $r = 5$.
+**Example.** The radius $r$ of a circle increases at $2\,\text{cm/s}$. Find the rate of change of
+the area when $r = 5$.
 
 $A = \pi r^2$. Differentiating with respect to $t$:
 
@@ -264,29 +275,31 @@ $$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\text{cm}^2\text{/s}$$
 **Definition.**
 
 - $f$ is **increasing** on an interval if $f'(x) \geq 0$ for all $x$ in that interval.
-- $f$ is **strictly increasing** if $f'(x) > 0$ for all $x$.
+- $f$ is **strictly increasing** if $f'(x) \gt{} 0$ for all $x$.
 - $f$ is **decreasing** if $f'(x) \leq 0$ for all $x$.
-- $f$ is **strictly decreasing** if $f'(x) < 0$ for all $x$.
+- $f$ is **strictly decreasing** if $f'(x) \lt{} 0$ for all $x$.
 
-**Example.** Show that $f(x) = x^3 - 3x + 2$ is increasing for $x > 1$.
+**Example.** Show that $f(x) = x^3 - 3x + 2$ is increasing for $x \gt{} 1$.
 
 $f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$.
 
-For $x > 1$: $(x-1) > 0$ and $(x+1) > 0$, so $f'(x) > 0$. Hence $f$ is strictly increasing for $x > 1$.
+For $x \gt{} 1$: $(x-1) \gt{} 0$ and $(x+1) \gt{} 0$, so $f'(x) \gt{} 0$. Hence $f$ is strictly
+increasing for $x \gt{} 1$.
 
-:::tip
-When asked to "find where a function is increasing", set $f'(x) > 0$ and solve the inequality. When asked to "show that a function is increasing", verify that $f'(x) > 0$ (or $\geq 0$) on the given interval.
-:::
+:::tip When asked to "find where a function is increasing", set $f'(x) \gt{} 0$ and solve the
+inequality. When asked to "show that a function is increasing", verify that $f'(x) \gt{} 0$ (or
+$\geq 0$) on the given interval. :::
 
 ---
 
 ## 10. Points of Inflection
 
-A **point of inflection** is where the curve changes concavity (from concave up to concave down, or vice versa). This occurs where $f''(x) = 0$ and the sign of $f''(x)$ changes.
+A **point of inflection** is where the curve changes concavity (from concave up to concave down, or
+vice versa). This occurs where $f''(x) = 0$ and the sign of $f''(x)$ changes.
 
-:::warning
-A point of inflection does **not** require $f'(x) = 0$. For example, $f(x) = x^3$ has a point of inflection at $x = 0$, but $f'(0) = 0$ in this case. Consider $f(x) = x^3 + x$: $f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$.
-:::
+:::warning A point of inflection does **not** require $f'(x) = 0$. For example, $f(x) = x^3$ has a
+point of inflection at $x = 0$, but $f'(0) = 0$ in this case. Consider $f(x) = x^3 + x$:
+$f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$. :::
 
 ---
 
@@ -308,7 +321,8 @@ At $t = \pi/4$: $\dfrac{dy}{dx} = -\cot(\pi/4) = -1$.
 
 ## 12. Implicit Differentiation
 
-When $y$ is defined implicitly by an equation $F(x,y) = 0$, differentiate both sides with respect to $x$, treating $y$ as a function of $x$.
+When $y$ is defined implicitly by an equation $F(x,y) = 0$, differentiate both sides with respect to
+$x$, treating $y$ as a function of $x$.
 
 **Example.** Find $\dfrac{dy}{dx}$ where $x^2 + y^2 = 25$.
 
@@ -318,70 +332,82 @@ Differentiating: $2x + 2y\dfrac{dy}{dx} = 0$, so $\dfrac{dy}{dx} = -\dfrac{x}{y}
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><div>
+<details>
+<summary>Problem 1</summary>
 Differentiate $f(x) = \sqrt{x}$ from first principles.
-</div></details>
+</details>
 
-<details><summary>Solution 1</summary><div>
+<details>
+<summary>Solution 1</summary>
 $$f'(x) = \lim_{h\to 0}\frac{\sqrt{x+h}-\sqrt{x}}{h} \cdot \frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} = \lim_{h\to 0}\frac{(x+h)-x}{h(\sqrt{x+h}+\sqrt{x})} = \lim_{h\to 0}\frac{1}{\sqrt{x+h}+\sqrt{x}} = \frac{1}{2\sqrt{x}}$$
 
-**If you get this wrong, revise:** [The Derivative from First Principles](#1-the-derivative-from-first-principles) — Section 1.
+**If you get this wrong, revise:**
+[The Derivative from First Principles](#1-the-derivative-from-first-principles) — Section 1.
 
-</div></details>
+</details>
 
-<details><summary>Problem 2</summary><div>
+<details>
+<summary>Problem 2</summary>
 Find the stationary points of $f(x) = x^3 - 6x^2 + 9x + 1$ and determine their nature.
-</div></details>
+</details>
 
-<details><summary>Solution 2</summary><div>
+<details>
+<summary>Solution 2</summary>
 $f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3)$.
 
 Stationary points at $x = 1$ and $x = 3$.
 
-$f''(x) = 6x - 12$.
-At $x = 1$: $f''(1) = -6 < 0$, so **local maximum**. $f(1) = 1 - 6 + 9 + 1 = 5$.
-At $x = 3$: $f''(3) = 6 > 0$, so **local minimum**. $f(3) = 27 - 54 + 27 + 1 = 1$.
+$f''(x) = 6x - 12$. At $x = 1$: $f''(1) = -6 \lt{} 0$, so **local maximum**.
+$f(1) = 1 - 6 + 9 + 1 = 5$. At $x = 3$: $f''(3) = 6 \gt{} 0$, so **local minimum**.
+$f(3) = 27 - 54 + 27 + 1 = 1$.
 
-**If you get this wrong, revise:** [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
+**If you get this wrong, revise:**
+[Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
 
-</div></details>
+</details>
 
-<details><summary>Problem 3</summary><div>
+<details>
+<summary>Problem 3</summary>
 Differentiate $y = \dfrac{x^2 e^x}{\sin x}$.
-</div></details>
+</details>
 
-<details><summary>Solution 3</summary><div>
+<details>
+<summary>Solution 3</summary>
 Let $u = x^2 e^x$ and $v = \sin x$.
 
-$u' = 2xe^x + x^2 e^x = e^x(x^2 + 2x)$ (product rule).
-$v' = \cos x$.
+$u' = 2xe^x + x^2 e^x = e^x(x^2 + 2x)$ (product rule). $v' = \cos x$.
 
 $$\frac{dy}{dx} = \frac{e^x(x^2+2x)\sin x - x^2 e^x \cos x}{\sin^2 x} = \frac{xe^x[(x+2)\sin x - x\cos x]}{\sin^2 x}$$
 
-**If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and [The Product Rule](#3-the-product-rule) — Section 3.
+**If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and
+[The Product Rule](#3-the-product-rule) — Section 3.
 
-</div></details>
+</details>
 
-<details><summary>Problem 4</summary><div>
+<details>
+<summary>Problem 4</summary>
 Find $\dfrac{dy}{dx}$ where $x^3 + y^3 = 3xy$.
-</div></details>
+</details>
 
-<details><summary>Solution 4</summary><div>
+<details>
+<summary>Solution 4</summary>
 Differentiating implicitly: $3x^2 + 3y^2\dfrac{dy}{dx} = 3y + 3x\dfrac{dy}{dx}$.
 
-$$3y^2\frac{dy}{dx} - 3x\frac{dy}{dx} = 3y - 3x^2$$
-$$\frac{dy}{dx}(y^2 - x) = y - x^2$$
+$$3y^2\frac{dy}{dx} - 3x\frac{dy}{dx} = 3y - 3x^2$$ $$\frac{dy}{dx}(y^2 - x) = y - x^2$$
 $$\frac{dy}{dx} = \frac{y - x^2}{y^2 - x}$$
 
-**If you get this wrong, revise:** [Implicit Differentiation](#12-implicit-differentiation) — Section 12.
+**If you get this wrong, revise:** [Implicit Differentiation](#12-implicit-differentiation) —
+Section 12.
 
-</div></details>
+</details>
 
-<details><summary>Problem 5</summary><div>
+<details>
+<summary>Problem 5</summary>
 A spherical balloon is being inflated at a rate of $100\,\text{cm}^3\text{/s}$. Find the rate of increase of the radius when the radius is $5\,\text{cm}$.
-</div></details>
+</details>
 
-<details><summary>Solution 5</summary><div>
+<details>
+<summary>Solution 5</summary>
 $V = \dfrac{4}{3}\pi r^3$. Differentiating with respect to $t$:
 
 $$\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$$
@@ -390,93 +416,112 @@ At $r = 5$ with $\dfrac{dV}{dt} = 100$:
 
 $$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \frac{1}{\pi} \approx 0.318 \,\text{cm/s}$$
 
-**If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) — Section 8.
+**If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
+Section 8.
 
-</div></details>
+</details>
 
-<details><summary>Problem 6</summary><div>
-Show that $f(x) = e^x + e^{-x}$ is strictly increasing for $x > 0$.
-</div></details>
+<details>
+<summary>Problem 6</summary>
+Show that $f(x) = e^x + e^{-x}$ is strictly increasing for $x \gt{} 0$.
+</details>
 
-<details><summary>Solution 6</summary><div>
+<details>
+<summary>Solution 6</summary>
 $f'(x) = e^x - e^{-x}$.
 
-For $x > 0$: $e^x > 1 > e^{-x}$, so $e^x - e^{-x} > 0$. Hence $f'(x) > 0$ for all $x > 0$, so $f$ is strictly increasing on $(0, \infty)$.
+For $x \gt{} 0$: $e^x \gt{} 1 \gt{} e^{-x}$, so $e^x - e^{-x} \gt{} 0$. Hence $f'(x) \gt{} 0$ for
+all $x \gt{} 0$, so $f$ is strictly increasing on $(0, \infty)$.
 
-**If you get this wrong, revise:** [Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
+**If you get this wrong, revise:**
+[Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
 
-</div></details>
+</details>
 
-<details><summary>Problem 7</summary><div>
+<details>
+<summary>Problem 7</summary>
 Find the equation of the tangent to $y = \ln x$ at the point where $x = e$.
-</div></details>
+</details>
 
-<details><summary>Solution 7</summary><div>
+<details>
+<summary>Solution 7</summary>
 At $x = e$: $y = \ln e = 1$. The point is $(e, 1)$.
 
 $\dfrac{dy}{dx} = \dfrac{1}{x}$, so at $x = e$: gradient $m = \dfrac{1}{e}$.
 
 $$y - 1 = \frac{1}{e}(x - e) \implies y = \frac{x}{e}$$
 
-**If you get this wrong, revise:** [Derivatives of Standard Functions](#6-derivatives-of-standard-functions) — Section 6.
+**If you get this wrong, revise:**
+[Derivatives of Standard Functions](#6-derivatives-of-standard-functions) — Section 6.
 
-</div></details>
+</details>
 
-<details><summary>Problem 8</summary><div>
+<details>
+<summary>Problem 8</summary>
 Given $x = t^2 + 1$ and $y = t^3 - 3t$, find the coordinates of the stationary points and determine their nature.
-</div></details>
+</details>
 
-<details><summary>Solution 8</summary><div>
+<details>
+<summary>Solution 8</summary>
 $\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} = \dfrac{3t^2 - 3}{2t} = \dfrac{3(t^2-1)}{2t}$.
 
 Stationary when $dy/dx = 0$: $t^2 = 1 \implies t = \pm 1$.
 
-$t = 1$: $x = 2$, $y = -2$. Point $(2, -2)$.
-$t = -1$: $x = 2$, $y = 2$. Point $(2, 2)$.
+$t = 1$: $x = 2$, $y = -2$. Point $(2, -2)$. $t = -1$: $x = 2$, $y = 2$. Point $(2, 2)$.
 
 For nature, check $\dfrac{d^2y}{dx^2}$ or the sign of $\dfrac{dy}{dx}$:
 
-Near $t = 1$: for $t = 0.5$, $\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} < 0$; for $t = 2$, $\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} > 0$. So $t=1$ is a **minimum**.
+Near $t = 1$: for $t = 0.5$, $\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} \lt{} 0$; for
+$t = 2$, $\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} \gt{} 0$. So $t=1$ is a **minimum**.
 
-Near $t = -1$: for $t = -2$, $\dfrac{dy}{dx} < 0$; for $t = -0.5$, $\dfrac{dy}{dx} > 0$. So $t=-1$ is a **minimum**.
+Near $t = -1$: for $t = -2$, $\dfrac{dy}{dx} \lt{} 0$; for $t = -0.5$, $\dfrac{dy}{dx} \gt{} 0$. So
+$t=-1$ is a **minimum**.
 
-**If you get this wrong, revise:** [Differentiation of Parametric Equations](#11-differentiation-of-parametric-equations) — Section 11.
+**If you get this wrong, revise:**
+[Differentiation of Parametric Equations](#11-differentiation-of-parametric-equations) — Section 11.
 
-</div></details>
+</details>
 
-<details><summary>Problem 9</summary><div>
+<details>
+<summary>Problem 9</summary>
 Prove that $\dfrac{d}{dx}\sec x = \sec x \tan x$.
-</div></details>
+</details>
 
-<details><summary>Solution 9</summary><div>
+<details>
+<summary>Solution 9</summary>
 $\sec x = \dfrac{1}{\cos x} = (\cos x)^{-1}$.
 
 $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \tan x \quad \blacksquare$$
 
 **If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
 
-</div></details>
+</details>
 
-<details><summary>Problem 10</summary><div>
-Find the minimum value of $f(x) = x + \dfrac{4}{x}$ for $x > 0$.
-</div></details>
+<details>
+<summary>Problem 10</summary>
+Find the minimum value of $f(x) = x + \dfrac{4}{x}$ for $x \gt{} 0$.
+</details>
 
-<details><summary>Solution 10</summary><div>
-$f'(x) = 1 - \dfrac{4}{x^2} = \dfrac{x^2 - 4}{x^2} = 0 \implies x^2 = 4 \implies x = 2$ (since $x > 0$).
+<details>
+<summary>Solution 10</summary>
+$f'(x) = 1 - \dfrac{4}{x^2} = \dfrac{x^2 - 4}{x^2} = 0 \implies x^2 = 4 \implies x = 2$ (since $x \gt{} 0$).
 
-$f''(x) = \dfrac{8}{x^3}$. At $x = 2$: $f''(2) = 1 > 0$, so minimum.
+$f''(x) = \dfrac{8}{x^3}$. At $x = 2$: $f''(2) = 1 \gt{} 0$, so minimum.
 
 $f(2) = 2 + \dfrac{4}{2} = 4$.
 
-**If you get this wrong, revise:** [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
+**If you get this wrong, revise:**
+[Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
 
-</div></details>
+</details>
 
-<details><summary>Problem 11</summary><div>
+<details>
+<summary>Problem 11</summary>
 Differentiate $y = \sin^3(2x^2 + 1)$.
-</div></details>
+</details>
 
-<details><summary>Solution 11</summary><div>
+<details>
+<summary>Solution 11</summary>
 Let $u = \sin(2x^2+1)$, so $y = u^3$.
 
 $\dfrac{dy}{du} = 3u^2$, $\dfrac{du}{dx} = \cos(2x^2+1) \cdot 4x$.
@@ -485,46 +530,55 @@ $$\frac{dy}{dx} = 3\sin^2(2x^2+1) \cdot \cos(2x^2+1) \cdot 4x = 12x\sin^2(2x^2+1
 
 **If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
 
-</div></details>
+</details>
 
-<details><summary>Problem 12</summary><div>
+<details>
+<summary>Problem 12</summary>
 Find the points of inflection of $f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1$.
-</div></details>
+</details>
 
-<details><summary>Solution 12</summary><div>
+<details>
+<summary>Solution 12</summary>
 $f'(x) = 4x^3 - 12x^2 + 12x - 4$.
 $f''(x) = 12x^2 - 24x + 12 = 12(x^2 - 2x + 1) = 12(x-1)^2$.
 
-$f''(x) = 0$ when $x = 1$. But $f''(x) = 12(x-1)^2 \geq 0$ for all $x$ — the second derivative does **not** change sign at $x = 1$. So there is **no point of inflection**.
+$f''(x) = 0$ when $x = 1$. But $f''(x) = 12(x-1)^2 \geq 0$ for all $x$ — the second derivative does
+**not** change sign at $x = 1$. So there is **no point of inflection**.
 
 (Note: $f(x) = (x-1)^4$, which is concave up everywhere.)
 
 **If you get this wrong, revise:** [Points of Inflection](#10-points-of-inflection) — Section 10.
 
-</div></details>
+</details>
 
-<details><summary>Problem 13</summary><div>
+<details>
+<summary>Problem 13</summary>
 A curve has equation $y = \dfrac{2x+1}{x-3}$. Find the equations of the asymptotes and the coordinates of any stationary points.
-</div></details>
+</details>
 
-<details><summary>Solution 13</summary><div>
+<details>
+<summary>Solution 13</summary>
 Vertical asymptote: $x = 3$ (where denominator is zero).
 
 As $x \to \pm\infty$: $y \to 2$. Horizontal asymptote: $y = 2$.
 
 $y' = \dfrac{2(x-3) - (2x+1)}{(x-3)^2} = \dfrac{-7}{(x-3)^2}$.
 
-Since $y' < 0$ for all $x \neq 3$, there are **no stationary points**. The function is strictly decreasing on each branch.
+Since $y' \lt{} 0$ for all $x \neq 3$, there are **no stationary points**. The function is strictly
+decreasing on each branch.
 
-**If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and [Stationary Points](#72-stationary-points) — Section 7.2.
+**If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and
+[Stationary Points](#72-stationary-points) — Section 7.2.
 
-</div></details>
+</details>
 
-<details><summary>Problem 14</summary><div>
+<details>
+<summary>Problem 14</summary>
 Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\text{cm}^3\text{/s}$. The cone has semi-vertical angle $30°$. Find $dh/dt$ when $h = 10\,\text{cm}$.
-</div></details>
+</details>
 
-<details><summary>Solution 14</summary><div>
+<details>
+<summary>Solution 14</summary>
 With semi-vertical angle $30°$: $r = h\tan 30° = h/\sqrt{3}$.
 
 $V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = \dfrac{\pi h^3}{9}$.
@@ -535,6 +589,7 @@ At $h = 10$ with $dV/dt = 5$:
 
 $$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{100\pi} = \frac{3}{20\pi} \approx 0.0478 \,\text{cm/s}$$
 
-**If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) — Section 8.
+**If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
+Section 8.
 
-</div></details>
+</details>

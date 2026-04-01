@@ -13,7 +13,9 @@ slug: computer-architecture
 
 ### Definition
 
-The **Von Neumann architecture**, proposed by John Von Neumann in 1945, is characterised by a single unified memory space that stores both data and instructions, a single set of buses connecting memory to the CPU, and sequential execution of instructions.
+The **Von Neumann architecture**, proposed by John Von Neumann in 1945, is characterised by a single
+unified memory space that stores both data and instructions, a single set of buses connecting memory
+to the CPU, and sequential execution of instructions.
 
 ### Components
 
@@ -24,7 +26,9 @@ The **Von Neumann architecture**, proposed by John Von Neumann in 1945, is chara
 
 ### Key Property: Stored Program Concept
 
-Both instructions and data reside in the same memory. The CPU fetches instructions from memory, decodes them, and executes them. This is the **stored program concept** — the machine can modify its own instructions (though modern systems typically prevent this for security).
+Both instructions and data reside in the same memory. The CPU fetches instructions from memory,
+decodes them, and executes them. This is the **stored program concept** — the machine can modify its
+own instructions (though modern systems typically prevent this for security).
 
 ---
 
@@ -32,7 +36,8 @@ Both instructions and data reside in the same memory. The CPU fetches instructio
 
 ### Definition
 
-The **Harvard architecture** uses **separate memory spaces** for instructions and data, each with its own bus.
+The **Harvard architecture** uses **separate memory spaces** for instructions and data, each with
+its own bus.
 
 ### Comparison: Von Neumann vs Harvard
 
@@ -45,9 +50,9 @@ The **Harvard architecture** uses **separate memory spaces** for instructions an
 | Self-modifying code | Possible (in theory)      | Not possible                          |
 | Modern usage        | General-purpose computers | DSPs, microcontrollers, cache systems |
 
-:::info Board-specific
-Modern CPUs use a **modified Harvard architecture** at the cache level: L1 cache is split into instruction cache and data cache (Harvard), while main memory is unified (Von Neumann).
-:::
+:::info Board-specific Modern CPUs use a **modified Harvard architecture** at the cache level: L1
+cache is split into instruction cache and data cache (Harvard), while main memory is unified (Von
+Neumann). :::
 
 ---
 
@@ -62,7 +67,8 @@ The ALU performs:
 - **Comparison operations:** equal, less than, greater than
 - **Bitwise operations:** shift, rotate
 
-The ALU is a combinational circuit — it has no internal state. It takes inputs from registers and produces outputs that are written back to registers.
+The ALU is a combinational circuit — it has no internal state. It takes inputs from registers and
+produces outputs that are written back to registers.
 
 ### Control Unit (CU)
 
@@ -88,10 +94,10 @@ The CU orchestrates the fetch-decode-execute cycle by generating control signals
 
 - **AQA** uses: PC, MAR, MDR, ACC, CIR
 - **CIE** uses: PC, MAR, MDR, ACC, IR, B (B register as temporary)
-- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers
-  :::
+- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers :::
 
-**General Purpose Registers (GPRs):** Additional registers for temporary storage during computation. The number varies by architecture (e.g., ARM has 16, x86-64 has 16).
+**General Purpose Registers (GPRs):** Additional registers for temporary storage during computation.
+The number varies by architecture (e.g., ARM has 16, x86-64 has 16).
 
 **Special Purpose Registers:**
 
@@ -141,9 +147,12 @@ After execution, the cycle repeats from step 1.
 
 ### Timing
 
-Each step involves register transfers and bus operations. A typical fetch takes 3–4 clock cycles (one per bus operation), decode takes 1–2 cycles, and execute takes 1–5 cycles depending on the instruction.
+Each step involves register transfers and bus operations. A typical fetch takes 3–4 clock cycles
+(one per bus operation), decode takes 1–2 cycles, and execute takes 1–5 cycles depending on the
+instruction.
 
-<details><summary>Example: Trace the fetch-decode-execute cycle for ADD #5 (add immediate 5 to ACC)</summary><div>
+<details>
+<summary>Example: Trace the fetch-decode-execute cycle for ADD #5 (add immediate 5 to ACC)</summary>
 
 **Assume:** PC = 0x1000, instruction at 0x1000 is `ADD #5` (opcode: 0010, operand: 00000101)
 
@@ -161,7 +170,7 @@ Each step involves register transfers and bus operations. A typical fetch takes 
    - ACC ← ACC + 5
    - Set flags in status register (zero, negative, carry, overflow)
 
-</div></details>
+</details>
 
 ---
 
@@ -169,7 +178,8 @@ Each step involves register transfers and bus operations. A typical fetch takes 
 
 ### Definition
 
-A **bus** is a set of parallel wires that carries data, addresses, or control signals between components.
+A **bus** is a set of parallel wires that carries data, addresses, or control signals between
+components.
 
 ### Types
 
@@ -191,13 +201,16 @@ A **bus** is a set of parallel wires that carries data, addresses, or control si
 
 ### Motivation
 
-CPU speeds have increased much faster than memory speeds. **Cache memory** bridges this gap by storing frequently accessed data in fast memory close to the CPU.
+CPU speeds have increased much faster than memory speeds. **Cache memory** bridges this gap by
+storing frequently accessed data in fast memory close to the CPU.
 
 ### Locality of Reference
 
-**Temporal locality:** If a memory location is accessed, it is likely to be accessed again soon (e.g., loop variables, instruction fetch in a loop).
+**Temporal locality:** If a memory location is accessed, it is likely to be accessed again soon
+(e.g., loop variables, instruction fetch in a loop).
 
-**Spatial locality:** If a memory location is accessed, nearby locations are likely to be accessed soon (e.g., sequential array access, instruction stream).
+**Spatial locality:** If a memory location is accessed, nearby locations are likely to be accessed
+soon (e.g., sequential array access, instruction stream).
 
 ### Cache Levels
 
@@ -216,7 +229,8 @@ Each memory block maps to exactly one cache line.
 $$\text{Cache line} = \text{Block address} \bmod (\text{Number of cache lines})$$
 
 - **Advantage:** Simple, fast lookup
-- **Disadvantage:** Conflict misses — two frequently used blocks mapping to the same line evict each other
+- **Disadvantage:** Conflict misses — two frequently used blocks mapping to the same line evict each
+  other
 
 #### Fully Associative Mapping
 
@@ -227,7 +241,8 @@ A memory block can be placed in **any** cache line.
 
 #### Set-Associative Mapping
 
-The cache is divided into $s$ **sets**, each containing $k$ **ways** (lines). A block maps to a specific set, but can be placed in any line within that set.
+The cache is divided into $s$ **sets**, each containing $k$ **ways** (lines). A block maps to a
+specific set, but can be placed in any line within that set.
 
 $$\text{Set} = \text{Block address} \bmod s$$
 
@@ -247,11 +262,13 @@ $$\text{Set} = \text{Block address} \bmod s$$
 
 ### Definition
 
-**Virtual memory** gives each process the illusion of having its own private, contiguous address space, while physical memory may be fragmented and shared among processes.
+**Virtual memory** gives each process the illusion of having its own private, contiguous address
+space, while physical memory may be fragmented and shared among processes.
 
 ### Paging
 
-Memory is divided into fixed-size **pages** (typically 4 KiB). Virtual addresses are translated to physical addresses using a **page table**.
+Memory is divided into fixed-size **pages** (typically 4 KiB). Virtual addresses are translated to
+physical addresses using a **page table**.
 
 **Virtual address structure (32-bit, 4 KiB pages):**
 
@@ -266,7 +283,8 @@ Memory is divided into fixed-size **pages** (typically 4 KiB). Virtual addresses
 
 ### Translation Lookaside Buffer (TLB)
 
-The TLB is a small, fast cache of recently used page table entries. It avoids the overhead of a full page table lookup for every memory access.
+The TLB is a small, fast cache of recently used page table entries. It avoids the overhead of a full
+page table lookup for every memory access.
 
 - **TLB hit:** Translation found in TLB — fast (1–2 cycles)
 - **TLB miss:** Must consult page table — slow (10–100 cycles)
@@ -301,7 +319,8 @@ Instr 4:                    F     D     E
 
 Without pipelining, $n$ instructions take $n \times k$ cycles (where $k$ is the number of stages).
 
-With pipelining, the first instruction takes $k$ cycles, and each subsequent instruction takes 1 cycle. Total: $k + (n - 1)$ cycles.
+With pipelining, the first instruction takes $k$ cycles, and each subsequent instruction takes 1
+cycle. Total: $k + (n - 1)$ cycles.
 
 $$\text{Speedup} = \frac{nk}{k + n - 1} \xrightarrow{n \to \infty} k$$
 
@@ -309,11 +328,13 @@ A $k$-stage pipeline achieves at most $k\times$ speedup in the ideal case.
 
 ### Pipeline Hazards
 
-**Data hazard:** An instruction depends on the result of a previous instruction that has not yet completed.
+**Data hazard:** An instruction depends on the result of a previous instruction that has not yet
+completed.
 
 _Solutions:_ Forwarding (bypass), stalling, out-of-order execution.
 
-**Control hazard:** A branch instruction changes the PC, but the next instruction(s) may already be in the pipeline.
+**Control hazard:** A branch instruction changes the PC, but the next instruction(s) may already be
+in the pipeline.
 
 _Solutions:_ Branch prediction (static or dynamic), delayed branch, branch target buffer.
 
@@ -327,9 +348,11 @@ _Solutions:_ Duplicate resources, stalling.
 
 ### Definitions
 
-**RISC (Reduced Instruction Set Computer):** Few, simple instructions that execute in one clock cycle. Emphasis on software complexity.
+**RISC (Reduced Instruction Set Computer):** Few, simple instructions that execute in one clock
+cycle. Emphasis on software complexity.
 
-**CISC (Complex Instruction Set Computer):** Many, complex instructions that may take multiple cycles. Emphasis on hardware complexity.
+**CISC (Complex Instruction Set Computer):** Many, complex instructions that may take multiple
+cycles. Emphasis on hardware complexity.
 
 ### Comparison
 
@@ -346,19 +369,22 @@ _Solutions:_ Duplicate resources, stalling.
 | Code density       | Lower (more instructions) | Higher (fewer instructions)   |
 | Power consumption  | Lower                     | Higher                        |
 
-:::info Board-specific
-All A Level boards require understanding of RISC vs CISC principles. ARM (used in smartphones, Raspberry Pi) is RISC. Intel/AMD processors are CISC (but use RISC-like internal micro-operations).
-:::
+:::info Board-specific All A Level boards require understanding of RISC vs CISC principles. ARM
+(used in smartphones, Raspberry Pi) is RISC. Intel/AMD processors are CISC (but use RISC-like
+internal micro-operations). :::
 
 ---
 
 ## Problem Set
 
-**Problem 1.** A CPU has a 24-bit address bus and a 16-bit data bus. What is the maximum addressable memory?
+**Problem 1.** A CPU has a 24-bit address bus and a 16-bit data bus. What is the maximum addressable
+memory?
 
-<details><summary>Hint</summary><div>Each address identifies one location, and each location holds one data bus width.</div></details>
+<details>
+<summary>Hint</summary>Each address identifies one location, and each location holds one data bus width.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 $2^{24} = 16,777,216$ locations
 
@@ -366,38 +392,53 @@ Each location holds 16 bits = 2 bytes.
 
 Total addressable memory: $16,777,216 \times 2 = 33,554,432$ bytes = 32 MiB.
 
-</div></details>
+</details>
 
-**Problem 2.** Describe what happens during the fetch phase of the fetch-decode-execute cycle. Include all register transfers.
+**Problem 2.** Describe what happens during the fetch phase of the fetch-decode-execute cycle.
+Include all register transfers.
 
-<details><summary>Hint</summary><div>Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.</div></details>
+<details>
+<summary>Hint</summary>Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-1. The contents of the Program Counter (PC) are copied to the Memory Address Register (MAR) via the address bus.
-2. The data stored at the memory address held in the MAR is copied to the Memory Data Register (MDR) via the data bus.
+1. The contents of the Program Counter (PC) are copied to the Memory Address Register (MAR) via the
+   address bus.
+2. The data stored at the memory address held in the MAR is copied to the Memory Data Register (MDR)
+   via the data bus.
 3. The contents of the MDR are copied to the Current Instruction Register (CIR).
-4. The Program Counter is incremented by 1 (or by the instruction length, for variable-length ISAs) to point to the next instruction.
+4. The Program Counter is incremented by 1 (or by the instruction length, for variable-length ISAs)
+   to point to the next instruction.
 
-</div></details>
+</details>
 
 **Problem 3.** Explain how temporal and spatial locality contribute to cache effectiveness.
 
-<details><summary>Hint</summary><div>Give concrete examples of code patterns that exhibit each type of locality.</div></details>
+<details>
+<summary>Hint</summary>Give concrete examples of code patterns that exhibit each type of locality.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Temporal locality:** In a loop that processes an array, the loop counter variable is accessed repeatedly. After the first access loads it into cache, subsequent accesses hit the cache. Similarly, the instruction bytes of the loop body are fetched from cache after the first iteration.
+**Temporal locality:** In a loop that processes an array, the loop counter variable is accessed
+repeatedly. After the first access loads it into cache, subsequent accesses hit the cache.
+Similarly, the instruction bytes of the loop body are fetched from cache after the first iteration.
 
-**Spatial locality:** When accessing `array[i]`, the cache loads a block (cache line) containing `array[i]` and several adjacent elements. Subsequent accesses to `array[i+1]`, `array[i+2]`, etc., are cache hits because they are in the same cache line.
+**Spatial locality:** When accessing `array[i]`, the cache loads a block (cache line) containing
+`array[i]` and several adjacent elements. Subsequent accesses to `array[i+1]`, `array[i+2]`, etc.,
+are cache hits because they are in the same cache line.
 
-</div></details>
+</details>
 
-**Problem 4.** A system uses 32-bit virtual addresses with 4 KiB pages. How many entries are in the page table? What is the size of each entry if physical addresses are 36 bits?
+**Problem 4.** A system uses 32-bit virtual addresses with 4 KiB pages. How many entries are in the
+page table? What is the size of each entry if physical addresses are 36 bits?
 
-<details><summary>Hint</summary><div>Number of virtual pages = $2^{32}/4096$. Each PTE stores a frame number and flags.</div></details>
+<details>
+<summary>Hint</summary>Number of virtual pages = $2^{32}/4096$. Each PTE stores a frame number and flags.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Number of pages: $2^{32}/2^{12} = 2^{20} = 1,048,576$ entries
 
@@ -407,90 +448,118 @@ PTE size: 24 bits (frame number) + flags (typically 8–12 bits) ≈ 4 bytes per
 
 Total page table size: $1,048,576 \times 4 = 4$ MiB per process.
 
-</div></details>
+</details>
 
-**Problem 5.** Explain why a 5-stage pipeline (fetch, decode, execute, memory, writeback) processing 100 instructions takes 104 cycles, not 500.
+**Problem 5.** Explain why a 5-stage pipeline (fetch, decode, execute, memory, writeback) processing
+100 instructions takes 104 cycles, not 500.
 
-<details><summary>Hint</summary><div>After the pipeline fills, one instruction completes per cycle.</div></details>
+<details>
+<summary>Hint</summary>After the pipeline fills, one instruction completes per cycle.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-The first instruction takes 5 cycles to pass through all stages (pipeline fill). After that, one instruction completes per cycle. The last instruction finishes at cycle $5 + 99 = 104$.
+The first instruction takes 5 cycles to pass through all stages (pipeline fill). After that, one
+instruction completes per cycle. The last instruction finishes at cycle $5 + 99 = 104$.
 
 Total: $5 + (100 - 1) = 104$ cycles, compared to $100 \times 5 = 500$ without pipelining.
 
 Speedup: $500/104 \approx 4.81\times$ (approaching the theoretical maximum of $5\times$).
 
-</div></details>
+</details>
 
-**Problem 6.** Give an example of a data hazard in a pipeline and explain how forwarding can resolve it.
+**Problem 6.** Give an example of a data hazard in a pipeline and explain how forwarding can resolve
+it.
 
-<details><summary>Hint</summary><div>Consider two consecutive instructions where the second uses the result of the first.</div></details>
+<details>
+<summary>Hint</summary>Consider two consecutive instructions where the second uses the result of the first.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```
 ADD R1, R2, R3    // R1 ← R2 + R3
 SUB R4, R1, R5    // R4 ← R1 - R5  (depends on R1)
 ```
 
-The ADD instruction produces R1 in the "writeback" stage, but the SUB instruction needs R1 in its "decode" stage, which occurs before writeback. This is a data hazard.
+The ADD instruction produces R1 in the "writeback" stage, but the SUB instruction needs R1 in its
+"decode" stage, which occurs before writeback. This is a data hazard.
 
-**Forwarding solution:** The result of ADD is available after the "execute" stage (as a computed value). Instead of waiting for writeback, the result is forwarded directly from the execute stage output to the decode stage input of SUB, eliminating the stall.
+**Forwarding solution:** The result of ADD is available after the "execute" stage (as a computed
+value). Instead of waiting for writeback, the result is forwarded directly from the execute stage
+output to the decode stage input of SUB, eliminating the stall.
 
-</div></details>
+</details>
 
-**Problem 7.** Compare Von Neumann and Harvard architectures. Why is the modified Harvard architecture used in modern CPUs?
+**Problem 7.** Compare Von Neumann and Harvard architectures. Why is the modified Harvard
+architecture used in modern CPUs?
 
-<details><summary>Hint</summary><div>Consider bus contention and the practical need for unified main memory.</div></details>
+<details>
+<summary>Hint</summary>Consider bus contention and the practical need for unified main memory.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Von Neumann uses a single memory and bus for both instructions and data, causing contention. Harvard uses separate memories and buses, allowing simultaneous instruction fetch and data access.
+Von Neumann uses a single memory and bus for both instructions and data, causing contention. Harvard
+uses separate memories and buses, allowing simultaneous instruction fetch and data access.
 
-Modern CPUs use modified Harvard: L1 cache is split into instruction cache (I-cache) and data cache (D-cache), providing Harvard benefits at the fastest level. Beyond L1, memory is unified (Von Neumann) because:
+Modern CPUs use modified Harvard: L1 cache is split into instruction cache (I-cache) and data cache
+(D-cache), providing Harvard benefits at the fastest level. Beyond L1, memory is unified (Von
+Neumann) because:
 
 1. Main memory must be flexible — programs need to load data and instructions dynamically
 2. Unified memory simplifies the memory management unit (MMU) design
 3. The cost of duplicate main memory buses is not justified given cache hit rates
 
-</div></details>
+</details>
 
-**Problem 8.** A direct-mapped cache has 64 lines, each holding 16 bytes. Main memory has 65,536 blocks. How many bits are needed for the tag, line number, and offset fields?
+**Problem 8.** A direct-mapped cache has 64 lines, each holding 16 bytes. Main memory has 65,536
+blocks. How many bits are needed for the tag, line number, and offset fields?
 
-<details><summary>Hint</summary><div>Offset = log₂(block size). Line = log₂(cache lines). Tag = remaining bits from block address.</div></details>
+<details>
+<summary>Hint</summary>Offset = log₂(block size). Line = log₂(cache lines). Tag = remaining bits from block address.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Offset: $\log_2(16) = 4$ bits
-Line number: $\log_2(64) = 6$ bits
-Total block address bits: $\log_2(65536) = 16$ bits
+Offset: $\log_2(16) = 4$ bits Line number: $\log_2(64) = 6$ bits Total block address bits:
+$\log_2(65536) = 16$ bits
 
 Tag: $16 - 6 = 10$ bits
 
-Each cache line stores: 16 bytes (data) + 10 bits (tag) + 1 bit (valid) + 1 bit (dirty) ≈ 18 bytes total.
+Each cache line stores: 16 bytes (data) + 10 bits (tag) + 1 bit (valid) + 1 bit (dirty) ≈ 18 bytes
+total.
 
-</div></details>
+</details>
 
 **Problem 9.** Explain the difference between a page fault and a TLB miss. Which is more expensive?
 
-<details><summary>Hint</summary><div>One involves disk I/O; the other involves a slower but still RAM-speed lookup.</div></details>
+<details>
+<summary>Hint</summary>One involves disk I/O; the other involves a slower but still RAM-speed lookup.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**TLB miss:** The virtual-to-physical translation is not in the TLB cache. The CPU must consult the page table in main memory (a few extra memory accesses). Cost: ~10–100 cycles.
+**TLB miss:** The virtual-to-physical translation is not in the TLB cache. The CPU must consult the
+page table in main memory (a few extra memory accesses). Cost: ~10–100 cycles.
 
-**Page fault:** The required page is not in physical memory at all. The OS must read it from disk (swap space) into a free frame, update the page table, and restart the instruction. Cost: ~100,000–10,000,000 cycles (disk access is ~10ms, while a CPU cycle is ~0.3ns).
+**Page fault:** The required page is not in physical memory at all. The OS must read it from disk
+(swap space) into a free frame, update the page table, and restart the instruction. Cost:
+~100,000–10,000,000 cycles (disk access is ~10ms, while a CPU cycle is ~0.3ns).
 
 A page fault is orders of magnitude more expensive than a TLB miss.
 
-</div></details>
+</details>
 
-**Problem 10.** A RISC processor has 32 registers, each 32 bits wide. How many bits are needed to encode a register operand? What is the maximum number of 3-operand instructions possible if the opcode field is 8 bits?
+**Problem 10.** A RISC processor has 32 registers, each 32 bits wide. How many bits are needed to
+encode a register operand? What is the maximum number of 3-operand instructions possible if the
+opcode field is 8 bits?
 
-<details><summary>Hint</summary><div>Register field size = log₂(32). Total instruction size = opcode + 3 register fields.</div></details>
+<details>
+<summary>Hint</summary>Register field size = log₂(32). Total instruction size = opcode + 3 register fields.</details>
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Register operand: $\log_2(32) = 5$ bits
 
@@ -498,4 +567,4 @@ Instruction format: 8 (opcode) + 5 + 5 + 5 = 23 bits
 
 With 8-bit opcode: $2^8 = 256$ possible opcodes.
 
-</div></details>
+</details>

@@ -13,7 +13,8 @@ slug: testing
 
 ### Definition
 
-**Software testing** is the process of evaluating a program to determine whether it meets specified requirements and to identify defects.
+**Software testing** is the process of evaluating a program to determine whether it meets specified
+requirements and to identify defects.
 
 ### Why Test?
 
@@ -81,7 +82,8 @@ Types:
 
 ### 2.4 Acceptance Testing
 
-**Definition:** Testing by the customer or end-user to determine if the system meets their requirements.
+**Definition:** Testing by the customer or end-user to determine if the system meets their
+requirements.
 
 | Type                 | Description                                             |
 | -------------------- | ------------------------------------------------------- |
@@ -95,19 +97,21 @@ Types:
 
 ### Definition
 
-**Black-box testing** tests the functionality of a system without knowledge of its internal implementation. Tests are based on requirements and specifications.
+**Black-box testing** tests the functionality of a system without knowledge of its internal
+implementation. Tests are based on requirements and specifications.
 
 ### Equivalence Partitioning
 
-Divide input data into **equivalence classes** — groups of inputs that the system should treat the same way. Test one representative from each class.
+Divide input data into **equivalence classes** — groups of inputs that the system should treat the
+same way. Test one representative from each class.
 
 **Example:** A function accepts ages 0-120.
 
-| Equivalence class  | Range      | Test value |
-| ------------------ | ---------- | ---------- |
-| Valid              | $[0, 120]$ | 25         |
-| Invalid (too low)  | $< 0$      | -1         |
-| Invalid (too high) | $> 120$    | 150        |
+| Equivalence class  | Range       | Test value |
+| ------------------ | ----------- | ---------- |
+| Valid              | $[0, 120]$  | 25         |
+| Invalid (too low)  | $\lt{} 0$   | -1         |
+| Invalid (too high) | $\gt{} 120$ | 150        |
 
 ### Boundary Value Analysis
 
@@ -122,7 +126,8 @@ Test values at the **boundaries** of equivalence classes, where errors are most 
 | Lower    | -1, 0, 1      |
 | Upper    | 119, 120, 121 |
 
-**Why boundaries?** Off-by-one errors are among the most common programming mistakes. If a developer writes `age < 120` instead of `age <= 120`, boundary testing catches it immediately.
+**Why boundaries?** Off-by-one errors are among the most common programming mistakes. If a developer
+writes `age < 120` instead of `age <= 120`, boundary testing catches it immediately.
 
 ### Decision Table Testing
 
@@ -147,7 +152,8 @@ Example: A login system has states: Logged Out → Authenticating → Logged In 
 
 ### Definition
 
-**White-box (structural) testing** uses knowledge of the internal code structure to design tests. Tests are based on code paths, branches, and conditions.
+**White-box (structural) testing** uses knowledge of the internal code structure to design tests.
+Tests are based on code paths, branches, and conditions.
 
 ### Statement Coverage
 
@@ -171,7 +177,8 @@ if condition:
 x = 2
 ```
 
-A single test with `condition = True` achieves 100% statement coverage (all 2 statements executed) but only 50% branch coverage (the false branch of the if-statement is never taken). $\square$
+A single test with `condition = True` achieves 100% statement coverage (all 2 statements executed)
+but only 50% branch coverage (the false branch of the if-statement is never taken). $\square$
 
 ### Path Coverage
 
@@ -202,7 +209,8 @@ A single test with `condition = True` achieves 100% statement coverage (all 2 st
 
 ### Definition
 
-**Traceability** links requirements to test cases, ensuring every requirement is tested and every test case maps to a requirement.
+**Traceability** links requirements to test cases, ensuring every requirement is tested and every
+test case maps to a requirement.
 
 ```
 Requirement → Design → Code → Test Case → Test Result
@@ -223,36 +231,30 @@ A **traceability matrix** maps each requirement to the test cases that verify it
 
 Using equivalence partitioning and boundary value analysis, identify all test cases.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Equivalence classes:**
-| Class | Range | Test value |
-| ----- | -------- | ---------- |
-| Child | $[0, 12]$| 6 |
-| Teen | $[13, 17]$| 15 |
-| Adult | $[18, 64]$| 40 |
-| Senior| $[65, \infty)$| 70 |
-| Invalid (negative) | $< 0$ | -1 |
+**Equivalence classes:** | Class | Range | Test value | | ----- | -------- | ---------- | | Child |
+$[0, 12]$| 6 | | Teen | $[13, 17]$| 15 | | Adult | $[18, 64]$| 40 | | Senior| $[65, \infty)$| 70 | |
+Invalid (negative) | $\lt{} 0$ | -1 |
 
-**Boundary value analysis:**
-| Boundary | Values |
-| -------- | ------------ |
-| 0 | -1, 0, 1 |
-| 12/13 | 12, 13, 14 |
-| 17/18 | 17, 18, 19 |
-| 64/65 | 64, 65, 66 |
+**Boundary value analysis:** | Boundary | Values | | -------- | ------------ | | 0 | -1, 0, 1 | |
+12/13 | 12, 13, 14 | | 17/18 | 17, 18, 19 | | 64/65 | 64, 65, 66 |
 
 Total test cases: 5 (equivalence) + 12 (boundary) = 17 (some overlap).
 
-</div></details>
+</details>
 
 **Problem 2.** Explain the difference between a stub and a mock in unit testing.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-A **stub** is a simple replacement for a dependency that returns predefined responses. It provides canned answers to calls.
+A **stub** is a simple replacement for a dependency that returns predefined responses. It provides
+canned answers to calls.
 
-A **mock** is a more sophisticated replacement that **verifies** how it was called — it records the calls and can assert that specific methods were called with specific arguments.
+A **mock** is a more sophisticated replacement that **verifies** how it was called — it records the
+calls and can assert that specific methods were called with specific arguments.
 
 | Feature    | Stub                                  | Mock                                  |
 | ---------- | ------------------------------------- | ------------------------------------- |
@@ -261,9 +263,10 @@ A **mock** is a more sophisticated replacement that **verifies** how it was call
 | Complexity | Simple                                | More complex                          |
 | Example    | Fake database returning fixed records | Verify `send_email()` was called once |
 
-</div></details>
+</details>
 
-**Problem 3.** Consider the following code. What is the minimum number of test cases to achieve 100% branch coverage?
+**Problem 3.** Consider the following code. What is the minimum number of test cases to achieve 100%
+branch coverage?
 
 ```python
 def classify(x, y):
@@ -279,7 +282,8 @@ def classify(x, y):
             return "Q3"
 ```
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 There are 2 decision points, each with 2 branches → 4 branches total.
 
@@ -297,11 +301,12 @@ However, for 100% **path** coverage, we need 4 test cases (one per quadrant):
 3. (-1, -1) → Q3
 4. (1, -1) → Q4
 
-</div></details>
+</details>
 
 **Problem 4.** Write unit tests for a stack's push, pop, and peek operations. Include edge cases.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```python
 def test_stack():
@@ -334,13 +339,16 @@ def test_stack():
 
 Tests cover: push/peek, push/pop order, empty after all pops, pop from empty, peek from empty.
 
-</div></details>
+</details>
 
-**Problem 5.** Explain why 100% statement coverage does not guarantee bug-free code. Give a concrete example.
+**Problem 5.** Explain why 100% statement coverage does not guarantee bug-free code. Give a concrete
+example.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-100% statement coverage means every line of code has been executed at least once, but it does not guarantee:
+100% statement coverage means every line of code has been executed at least once, but it does not
+guarantee:
 
 1. All combinations of conditions are tested
 2. All data flows are tested
@@ -356,7 +364,9 @@ def abs(x):
     return -x
 ```
 
-Test: `abs(5)` returns 5. This achieves 100% statement coverage (both branches are technically reached... wait, only one branch is taken). Actually, test `abs(5)` only achieves 50% branch coverage.
+Test: `abs(5)` returns 5. This achieves 100% statement coverage (both branches are technically
+reached... wait, only one branch is taken). Actually, test `abs(5)` only achieves 50% branch
+coverage.
 
 Better example:
 
@@ -370,33 +380,38 @@ def process(data):
     return result
 ```
 
-Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed). But this doesn't test:
+Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed). But this doesn't
+test:
 
 - Negative items (different branch)
 - Empty list (edge case)
 - Zero (boundary)
 
-</div></details>
+</details>
 
-**Problem 6.** Describe the difference between top-down and bottom-up integration testing. What are the advantages of each?
+**Problem 6.** Describe the difference between top-down and bottom-up integration testing. What are
+the advantages of each?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Top-down integration:**
 
 - Start with the top-level module and integrate downward
 - Lower-level modules are replaced by **stubs** (simple stand-ins)
 - Advantages: High-level design flaws are found early; the system skeleton is visible early
-- Disadvantages: Stubs may not represent lower modules accurately; testing lower modules in isolation is difficult
+- Disadvantages: Stubs may not represent lower modules accurately; testing lower modules in
+  isolation is difficult
 
 **Bottom-up integration:**
 
 - Start with the lowest-level modules and integrate upward
 - Higher-level modules are replaced by **drivers** (test harnesses)
 - Advantages: Low-level modules are thoroughly tested; drivers are simpler than stubs
-- Disadvantages: The complete system is not visible until late; interface defects between high-level modules may be found late
+- Disadvantages: The complete system is not visible until late; interface defects between high-level
+  modules may be found late
 
-</div></details>
+</details>
 
 **Problem 7.** Create a decision table for a login system where a user can be:
 
@@ -404,7 +419,8 @@ Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed)
 - Have correct or incorrect password
 - Account may be locked (after 3 failed attempts)
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Rule | User    | Password  | Locked | Action                         |
 | ---- | ------- | --------- | ------ | ------------------------------ |
@@ -414,22 +430,27 @@ Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed)
 | 4    | Valid   | Incorrect | Yes    | Show "account locked"          |
 | 5    | Invalid | Any       | Any    | Show "user not found"          |
 
-Rules 3, 4, 5 could potentially be merged (locked or invalid user always shows an error), but for completeness, they're listed separately.
+Rules 3, 4, 5 could potentially be merged (locked or invalid user always shows an error), but for
+completeness, they're listed separately.
 
-</div></details>
+</details>
 
-**Problem 8.** Explain the concept of regression testing and why it is necessary in iterative development.
+**Problem 8.** Explain the concept of regression testing and why it is necessary in iterative
+development.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Regression testing** is the re-execution of existing test cases after a code change to verify that previously working functionality has not been broken (regressed).
+**Regression testing** is the re-execution of existing test cases after a code change to verify that
+previously working functionality has not been broken (regressed).
 
 **Why necessary in iterative development:**
 
 1. Each sprint modifies existing code → risk of breaking existing features
 2. New features may interact with old features in unexpected ways
 3. Refactoring (improving code structure without changing behaviour) must not introduce bugs
-4. Without regression testing, each iteration could degrade quality, making the system increasingly unstable
+4. Without regression testing, each iteration could degrade quality, making the system increasingly
+   unstable
 
 **Best practices:**
 
@@ -438,4 +459,5 @@ Rules 3, 4, 5 could potentially be merged (locked or invalid user always shows a
 - Run a subset of tests after each change (smoke tests) and the full suite nightly
 - Use version control to track which tests fail after each change
 
-For revision on software development, see [SDLC](/docs/docs_ALevel-notes/computer-science/software-engineering/01-software-development-lifecycle).
+For revision on software development, see
+[SDLC](/docs/docs_ALevel-notes/computer-science/software-engineering/01-software-development-lifecycle).

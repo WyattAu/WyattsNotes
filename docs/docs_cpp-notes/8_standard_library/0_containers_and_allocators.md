@@ -12,7 +12,10 @@ slug: containers-and-allocators
 
 ### 1.1 `std::vector`: Contiguous Memory, Capacity, and Reallocation
 
-`std::vector` is a sequence container that encapsulates dynamic-size arrays [N4950 §22.3.11]. Elements are stored contiguously, meaning that a pointer to the first element can be used as a C-style array. This layout provides $O(1)$ random access via pointer arithmetic and excellent cache locality, making `std::vector` the default choice for most use cases.
+`std::vector` is a sequence container that encapsulates dynamic-size arrays [N4950 §22.3.11].
+Elements are stored contiguously, meaning that a pointer to the first element can be used as a
+C-style array. This layout provides $O(1)$ random access via pointer arithmetic and excellent cache
+locality, making `std::vector` the default choice for most use cases.
 
 ```cpp
 #include <vector>
@@ -40,25 +43,34 @@ int main() {
 }
 ```
 
-The relationship between `size()` and `capacity()` is fundamental. `size()` returns the number of elements currently stored, while `capacity()` returns the number of elements for which space has been allocated [N4950 §22.3.11.3]. The invariant is:
+The relationship between `size()` and `capacity()` is fundamental. `size()` returns the number of
+elements currently stored, while `capacity()` returns the number of elements for which space has
+been allocated [N4950 §22.3.11.3]. The invariant is:
 
 $$
 \text{size}() \leq \text{capacity}()
 $$
 
-`shrink_to_fit()` is a **non-binding request** to reduce `capacity()` to `size()` [N4950 §22.3.11.3]. Implementations are free to ignore it.
+`shrink_to_fit()` is a **non-binding request** to reduce `capacity()` to `size()` [N4950
+§22.3.11.3]. Implementations are free to ignore it.
 
 ### 1.2 Growth Factor and Amortized O(1) push_back
 
-When `push_back` is called and `size() == capacity()`, the vector must **reallocate**: allocate a new, larger block, move or copy elements into it, and deallocate the old block. The standard does not mandate a specific growth factor [N4950 §22.3.11.5], but most major implementations (libstdc++, libc++, MSVC) use a factor of $\times 2$ (geometric growth).
+When `push_back` is called and `size() == capacity()`, the vector must **reallocate**: allocate a
+new, larger block, move or copy elements into it, and deallocate the old block. The standard does
+not mandate a specific growth factor [N4950 §22.3.11.5], but most major implementations (libstdc++,
+libc++, MSVC) use a factor of $\times 2$ (geometric growth).
 
-Geometric growth guarantees **amortized $O(1)$** insertion at the end. Consider inserting $n$ elements starting from an empty vector. If the capacity doubles each time it is exceeded, the total number of element copies across all reallocations is bounded by:
+Geometric growth guarantees **amortized $O(1)$** insertion at the end. Consider inserting $n$
+elements starting from an empty vector. If the capacity doubles each time it is exceeded, the total
+number of element copies across all reallocations is bounded by:
 
 $$
 \sum_{k=0}^{\lceil \log_2 n \rceil} 2^k = 2^{\lceil \log_2 n \rceil + 1} - 1 \leq 4n
 $$
 
-Thus the total work for $n$ insertions is $O(n)$, yielding amortized $O(1)$ per insertion [N4950 §22.3.11.5 Table 80].
+Thus the total work for $n$ insertions is $O(n)$, yielding amortized $O(1)$ per insertion [N4950
+§22.3.11.5 Table 80].
 
 ```cpp
 #include <vector>
@@ -80,13 +92,15 @@ int main() {
 }
 ```
 
-:::info
-The C++ standard guarantees amortized $O(1)$ `push_back` [N4950 §22.3.11.5 Table 80], but the exact growth factor is implementation-defined. A factor of 2 is common, and some implementations (e.g., Facebook's folly) use 1.5 to reduce peak memory usage.
-:::
+:::info The C++ standard guarantees amortized $O(1)$ `push_back` [N4950 §22.3.11.5 Table 80], but
+the exact growth factor is implementation-defined. A factor of 2 is common, and some implementations
+(e.g., Facebook's folly) use 1.5 to reduce peak memory usage. :::
 
 ### 1.3 Iterator, Pointer, and Reference Invalidation Rules
 
-Reallocation invalidates all iterators, pointers, and references to elements of the vector [N4950 §22.3.11.5]. This is a critical correctness concern: any iterator obtained before a reallocation-triggering operation becomes **undefined behavior** if dereferenced afterward.
+Reallocation invalidates all iterators, pointers, and references to elements of the vector [N4950
+§22.3.11.5]. This is a critical correctness concern: any iterator obtained before a
+reallocation-triggering operation becomes **undefined behavior** if dereferenced afterward.
 
 The invalidation rules for `std::vector` [N4950 §22.3.11.5 Table 80]:
 
@@ -144,19 +158,26 @@ int main() {
 }
 ```
 
-:::warning
-After any operation that may cause reallocation (e.g., `push_back` when `size() == capacity()`), **all** iterators, pointers, and references into the vector are invalidated. Dereferencing them is undefined behavior. Use `reserve()` proactively if you need stable iterators.
-:::
+:::warning After any operation that may cause reallocation (e.g., `push_back` when
+`size() == capacity()`), **all** iterators, pointers, and references into the vector are
+invalidated. Dereferencing them is undefined behavior. Use `reserve()` proactively if you need
+stable iterators. :::
 
 ### 1.4 `std::deque`: Segment-Based Memory, No Reallocation
 
-`std::deque` (double-ended queue) is a sequence container that supports $O(1)$ insertion and deletion at both the beginning and the end [N4950 §22.3.8]. Unlike `std::vector`, `std::deque` is not guaranteed to store elements contiguously. Typical implementations use a **map of fixed-size blocks** (segments):
+`std::deque` (double-ended queue) is a sequence container that supports $O(1)$ insertion and
+deletion at both the beginning and the end [N4950 §22.3.8]. Unlike `std::vector`, `std::deque` is
+not guaranteed to store elements contiguously. Typical implementations use a **map of fixed-size
+blocks** (segments):
 
 $$
 \text{deque} = \underbrace{[\text{block}_0][\text{block}_1] \cdots [\text{block}_{n-1}]}_{\text{fixed-size segments}}
 $$
 
-A central **map array** stores pointers to each block. Insertion at the front or back simply adds to the first or last block (allocating a new block if the current one is full). This means `push_front` and `push_back` are both amortized $O(1)$, and **no reallocation of existing elements ever occurs** [N4950 §22.3.8.4 Table 77].
+A central **map array** stores pointers to each block. Insertion at the front or back simply adds to
+the first or last block (allocating a new block if the current one is full). This means `push_front`
+and `push_back` are both amortized $O(1)$, and **no reallocation of existing elements ever occurs**
+[N4950 §22.3.8.4 Table 77].
 
 ```cpp
 #include <deque>
@@ -182,9 +203,9 @@ int main() {
 }
 ```
 
-:::tip
-Use `std::deque` when you need efficient insertion at both ends. Use `std::vector` when you only need efficient insertion at the end, as `std::vector` has better cache locality and lower memory overhead per element.
-:::
+:::tip Use `std::deque` when you need efficient insertion at both ends. Use `std::vector` when you
+only need efficient insertion at the end, as `std::vector` has better cache locality and lower
+memory overhead per element. :::
 
 Invalidation rules for `std::deque` differ from `std::vector` [N4950 §22.3.8.4 Table 77]:
 
@@ -196,18 +217,24 @@ Invalidation rules for `std::deque` differ from `std::vector` [N4950 §22.3.8.4 
 | `erase` at front/back      | only erased element invalidated              | valid   | valid     |
 | `erase` in middle          | **all invalidated**                          | valid   | valid     |
 
-Note: pointers and references to elements are **never invalidated** by insertion or erasure in `std::deque` (unless the element itself is erased), unlike iterators.
+Note: pointers and references to elements are **never invalidated** by insertion or erasure in
+`std::deque` (unless the element itself is erased), unlike iterators.
 
 ### 1.5 `std::list`: Doubly-Linked List, Stable Splice
 
-`std::list` is a doubly-linked list that supports bidirectional iteration and $O(1)$ insertion and deletion at any position, given an iterator [N4950 §22.3.9]. Each element is stored in a separate node, with forward and backward pointers to adjacent nodes. This means:
+`std::list` is a doubly-linked list that supports bidirectional iteration and $O(1)$ insertion and
+deletion at any position, given an iterator [N4950 §22.3.9]. Each element is stored in a separate
+node, with forward and backward pointers to adjacent nodes. This means:
 
 - No contiguous storage guarantee
 - No random access ($O(n)$ to access the $k$-th element)
 - $O(1)$ insertion and erasure at any position (given an iterator)
-- Stable addresses: iterators, pointers, and references to non-erased elements are never invalidated [N4950 §22.3.9.5 Table 78]
+- Stable addresses: iterators, pointers, and references to non-erased elements are never invalidated
+  [N4950 §22.3.9.5 Table 78]
 
-The most distinctive operation is `splice`, which transfers elements between lists in $O(1)$ time **without copying or moving elements** [N4950 §22.3.9.5]. This is a pointer manipulation, not a copy:
+The most distinctive operation is `splice`, which transfers elements between lists in $O(1)$ time
+**without copying or moving elements** [N4950 §22.3.9.5]. This is a pointer manipulation, not a
+copy:
 
 ```cpp
 #include <list>
@@ -235,9 +262,9 @@ int main() {
 }
 ```
 
-:::info
-`std::list::splice` is the only standard container operation that transfers ownership of nodes between containers. The spliced elements' iterators, pointers, and references remain valid and now refer to the same elements within the destination container [N4950 §22.3.9.5].
-:::
+:::info `std::list::splice` is the only standard container operation that transfers ownership of
+nodes between containers. The spliced elements' iterators, pointers, and references remain valid and
+now refer to the same elements within the destination container [N4950 §22.3.9.5]. :::
 
 ### 1.6 Choosing Between Sequence Containers
 
@@ -284,13 +311,16 @@ int main() {
 
 ### 2.1 `std::map` and `std::set`: Red-Black Tree, O(log n) Operations
 
-`std::map` and `std::set` are associative containers that store elements sorted by key using a **red-black tree** [N4950 §22.4]. The standard does not mandate red-black trees specifically, but requires:
+`std::map` and `std::set` are associative containers that store elements sorted by key using a
+**red-black tree** [N4950 §22.4]. The standard does not mandate red-black trees specifically, but
+requires:
 
 - $O(\log n)$ insertion, deletion, and lookup [N4950 §22.4.4.1 Table 83]
 - In-order traversal yields sorted keys
 - Keys are unique (`std::map`, `std::set`) or may be duplicated (`std::multimap`, `std::multiset`)
 
-A red-black tree is a self-balancing binary search tree with the following properties [N4950 §22.4.4.1]:
+A red-black tree is a self-balancing binary search tree with the following properties [N4950
+§22.4.4.1]:
 
 1. Every node is either red or black
 2. The root is black
@@ -298,7 +328,8 @@ A red-black tree is a self-balancing binary search tree with the following prope
 4. If a node is red, both children are black
 5. Every path from a node to its descendant NIL nodes passes through the same number of black nodes
 
-These constraints guarantee that the **height** of the tree is at most $2 \log_2(n + 1)$, which bounds all operations to $O(\log n)$.
+These constraints guarantee that the **height** of the tree is at most $2 \log_2(n + 1)$, which
+bounds all operations to $O(\log n)$.
 
 ```cpp
 #include <map>
@@ -342,9 +373,9 @@ int main() {
 }
 ```
 
-:::tip
-Since C++17, `std::map::try_emplace` is preferred over `operator[]` or `insert` when you want to insert only if the key is absent, avoiding unnecessary construction of the value [N4950 §22.4.4.4].
-:::
+:::tip Since C++17, `std::map::try_emplace` is preferred over `operator[]` or `insert` when you want
+to insert only if the key is absent, avoiding unnecessary construction of the value [N4950
+§22.4.4.4]. :::
 
 ```cpp
 #include <map>
@@ -379,7 +410,10 @@ int main() {
 
 ### 2.2 `std::unordered_map` and `std::unordered_set`: Hash Table, O(1) Average
 
-`std::unordered_map` and `std::unordered_set` are **unordered associative containers** that use a hash table for $O(1)$ average-case insertion, deletion, and lookup [N4950 §22.5]. The standard specifies that each bucket holds a singly-linked list of elements that hash to the same value, and rehashing occurs when the load factor exceeds `max_load_factor()` [N4950 §22.5.5].
+`std::unordered_map` and `std::unordered_set` are **unordered associative containers** that use a
+hash table for $O(1)$ average-case insertion, deletion, and lookup [N4950 §22.5]. The standard
+specifies that each bucket holds a singly-linked list of elements that hash to the same value, and
+rehashing occurs when the load factor exceeds `max_load_factor()` [N4950 §22.5.5].
 
 The **load factor** is defined as:
 
@@ -422,14 +456,17 @@ int main() {
 
 ### 2.3 Hash Function Requirements
 
-The hash function `H` used by `std::unordered_map` and `std::unordered_set` must satisfy [N4950 §22.5.3.2]:
+The hash function `H` used by `std::unordered_map` and `std::unordered_set` must satisfy [N4950
+§22.5.3.2]:
 
 1. `H` is a function object whose return type is `std::size_t`
 2. If `h1(k1) == h2(k2)` and `k1 == k2`, then `h1(k1) == h2(k2)` must hold for the same key
 3. If `k1 == k2`, then `H(k1) == H(k2)` must hold
 4. `H` must not throw exceptions
 
-The default hash `std::hash<T>` is specialized for all arithmetic types, `std::string`, `std::string_view`, and all standard smart pointer types [N4950 §22.14.3]. For custom types, you must provide a specialization:
+The default hash `std::hash<T>` is specialized for all arithmetic types, `std::string`,
+`std::string_view`, and all standard smart pointer types [N4950 §22.14.3]. For custom types, you
+must provide a specialization:
 
 ```cpp
 #include <unordered_map>
@@ -547,9 +584,9 @@ int main() {
 | Range queries         | Supported (lower_bound, upper_bound) | Not supported                     |
 | Iterator invalidation | Only on erase                        | On rehash                         |
 
-:::warning
-`std::unordered_map` lookup is $O(1)$ on average but $O(n)$ in the worst case (all keys hash to the same bucket). If adversarial inputs are a concern, consider hash functions resistant to collision attacks, or use `std::map` for guaranteed $O(\log n)$ worst-case.
-:::
+:::warning `std::unordered_map` lookup is $O(1)$ on average but $O(n)$ in the worst case (all keys
+hash to the same bucket). If adversarial inputs are a concern, consider hash functions resistant to
+collision attacks, or use `std::map` for guaranteed $O(\log n)$ worst-case. :::
 
 ## 3. Iterator Categories, Traversal, and Invalidation
 
@@ -613,7 +650,10 @@ int main() {
 
 ### 3.2 Sentinel Iterators (C++20) vs Traditional End Iterators
 
-C++20 introduced the **sentinel** concept [N4950 §25.3.5]. A sentinel is a type that can be compared with an iterator to determine the end of a range, but is **not itself an iterator**. The key interface is `std::sentinel_for<S, I>`, which requires that `S` and `I` be comparable with `==` and `!=` [N4950 §25.3.5.2].
+C++20 introduced the **sentinel** concept [N4950 §25.3.5]. A sentinel is a type that can be compared
+with an iterator to determine the end of a range, but is **not itself an iterator**. The key
+interface is `std::sentinel_for<S, I>`, which requires that `S` and `I` be comparable with `==` and
+`!=` [N4950 §25.3.5.2].
 
 ```cpp
 #include <iostream>
@@ -677,13 +717,14 @@ int main() {
 }
 ```
 
-:::info
-The standard library provides `std::default_sentinel` (used with `std::counted_iterator`) and `std::unreachable_sentinel` (a sentinel that never compares equal to any iterator, used as a hint to the optimizer that a loop will not reach it) [N4950 §25.5].
-:::
+:::info The standard library provides `std::default_sentinel` (used with `std::counted_iterator`)
+and `std::unreachable_sentinel` (a sentinel that never compares equal to any iterator, used as a
+hint to the optimizer that a loop will not reach it) [N4950 §25.5]. :::
 
 ### 3.3 Iterator Invalidation Rules Per Container Type
 
-Understanding iterator invalidation is critical for correctness. The rules vary by container type and operation [N4950 §22]:
+Understanding iterator invalidation is critical for correctness. The rules vary by container type
+and operation [N4950 §22]:
 
 | Container                       | Reallocation               | Insert (middle)            | Erase                 | push_back                        |
 | ------------------------------- | -------------------------- | -------------------------- | --------------------- | -------------------------------- |
@@ -750,7 +791,8 @@ int main() {
 
 ### 3.4 Iterator Categories Demonstrated: Algorithm Compatibility
 
-Different algorithms require different iterator categories. For example, `std::sort` requires random-access iterators, while `std::find` only requires input iterators [N4950 §25.7]:
+Different algorithms require different iterator categories. For example, `std::sort` requires
+random-access iterators, while `std::find` only requires input iterators [N4950 §25.7]:
 
 ```cpp
 #include <iostream>
@@ -795,9 +837,12 @@ int main() {
 
 ### 4.1 `std::pmr::memory_resource`: The Polymorphic Allocator Interface
 
-C++17 introduced **polymorphic memory resources** (PMR) in `<memory_resource>` [N4950 §23.10]. PMR decouples container allocation strategy from the container type itself, enabling containers to use different allocation strategies without changing the container's type.
+C++17 introduced **polymorphic memory resources** (PMR) in `<memory_resource>` [N4950 §23.10]. PMR
+decouples container allocation strategy from the container type itself, enabling containers to use
+different allocation strategies without changing the container's type.
 
-The central abstraction is `std::pmr::memory_resource` [N4950 §23.10.2], an abstract base class with three virtual functions:
+The central abstraction is `std::pmr::memory_resource` [N4950 §23.10.2], an abstract base class with
+three virtual functions:
 
 ```cpp
 class memory_resource {
@@ -816,9 +861,12 @@ private:
 };
 ```
 
-The public `allocate` / `deallocate` functions check alignment and size constraints before delegating to the private virtual functions [N4950 §23.10.2.2].
+The public `allocate` / `deallocate` functions check alignment and size constraints before
+delegating to the private virtual functions [N4950 §23.10.2.2].
 
-`std::pmr::polymorphic_allocator<T>` [N4950 §23.10.8] is a concrete allocator class that wraps a `memory_resource*`. Standard containers parameterized on the allocator can use `polymorphic_allocator` to gain polymorphic allocation:
+`std::pmr::polymorphic_allocator<T>` [N4950 §23.10.8] is a concrete allocator class that wraps a
+`memory_resource*`. Standard containers parameterized on the allocator can use
+`polymorphic_allocator` to gain polymorphic allocation:
 
 ```cpp
 #include <memory_resource>
@@ -848,7 +896,10 @@ int main() {
 
 ### 4.2 `std::pmr::monotonic_buffer_resource`: Arena Allocation
 
-`std::pmr::monotonic_buffer_resource` [N4950 §23.10.5] implements **arena allocation**: memory is allocated from an initial buffer, and when that buffer is exhausted, a new buffer is obtained from an upstream resource. Critically, **individual deallocations are no-ops** --- all memory is released when the resource itself is destroyed.
+`std::pmr::monotonic_buffer_resource` [N4950 §23.10.5] implements **arena allocation**: memory is
+allocated from an initial buffer, and when that buffer is exhausted, a new buffer is obtained from
+an upstream resource. Critically, **individual deallocations are no-ops** --- all memory is released
+when the resource itself is destroyed.
 
 This makes `monotonic_buffer_resource` ideal for scenarios with many short-lived allocations:
 
@@ -901,17 +952,20 @@ int main() {
 }
 ```
 
-:::tip
-`monotonic_buffer_resource` is perfect for parsing, JSON processing, AST construction, and any scenario where many objects are created and destroyed together. Since individual `deallocate` calls are no-ops, allocation is extremely fast.
-:::
+:::tip `monotonic_buffer_resource` is perfect for parsing, JSON processing, AST construction, and
+any scenario where many objects are created and destroyed together. Since individual `deallocate`
+calls are no-ops, allocation is extremely fast. :::
 
 ### 4.3 `std::pmr::unsynchronized_pool_resource`
 
-`std::pmr::unsynchronized_pool_resource` [N4950 §23.10.4] is a general-purpose pool allocator that manages a set of pools, one for each commonly-used allocation size. It provides:
+`std::pmr::unsynchronized_pool_resource` [N4950 §23.10.4] is a general-purpose pool allocator that
+manages a set of pools, one for each commonly-used allocation size. It provides:
 
 - **Fast allocation**: typically faster than `new` for small objects
-- **Thread-unsafe**: must not be used from multiple threads simultaneously (use `synchronized_pool_resource` for thread safety)
-- **Proper deallocation**: unlike `monotonic_buffer_resource`, individual deallocations work correctly
+- **Thread-unsafe**: must not be used from multiple threads simultaneously (use
+  `synchronized_pool_resource` for thread safety)
+- **Proper deallocation**: unlike `monotonic_buffer_resource`, individual deallocations work
+  correctly
 
 ```cpp
 #include <memory_resource>
@@ -957,7 +1011,8 @@ memory_resource (abstract base) [N4950 §23.10.2]
 └── synchronized_pool_resource [N4950 §23.10.4] — pool, thread-safe
 ```
 
-Each resource can have an **upstream resource** that it falls back to when its own resources are exhausted [N4950 §23.10.2]. The default upstream is `new_delete_resource()`.
+Each resource can have an **upstream resource** that it falls back to when its own resources are
+exhausted [N4950 §23.10.2]. The default upstream is `new_delete_resource()`.
 
 ### 4.5 Complete Example: Arena Allocation with PMR
 
@@ -1028,13 +1083,15 @@ int main() {
 }
 ```
 
-:::warning
-When using `monotonic_buffer_resource`, remember that `deallocate` is a no-op. If you create container A, then container B, and A still holds references to memory allocated from B's objects, those references may dangle if B is destroyed and its memory is recycled. Arena allocation is safest when all allocations share the same lifetime scope.
-:::
+:::warning When using `monotonic_buffer_resource`, remember that `deallocate` is a no-op. If you
+create container A, then container B, and A still holds references to memory allocated from B's
+objects, those references may dangle if B is destroyed and its memory is recycled. Arena allocation
+is safest when all allocations share the same lifetime scope. :::
 
 ### 4.6 Integration Pattern: Dependency Injection of Memory Resources
 
-A powerful PMR pattern is **dependency injection**: functions and classes accept a `memory_resource*` parameter, allowing callers to control the allocation strategy:
+A powerful PMR pattern is **dependency injection**: functions and classes accept a
+`memory_resource*` parameter, allowing callers to control the allocation strategy:
 
 ```cpp
 #include <memory_resource>
@@ -1094,4 +1151,5 @@ int main() {
 }
 ```
 
-This pattern allows the same `Parser` class to be used in different performance contexts without modification, simply by injecting a different memory resource.
+This pattern allows the same `Parser` class to be used in different performance contexts without
+modification, simply by injecting a different memory resource.

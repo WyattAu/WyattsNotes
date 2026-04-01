@@ -13,7 +13,8 @@ slug: graphs
 
 ### Definition
 
-A **graph** $G = (V, E)$ consists of a set of **vertices** (nodes) $V$ and a set of **edges** $E \subseteq V \times V$.
+A **graph** $G = (V, E)$ consists of a set of **vertices** (nodes) $V$ and a set of **edges**
+$E \subseteq V \times V$.
 
 - **Undirected graph:** Edges have no direction; $(u, v) = (v, u)$
 - **Directed graph (digraph):** Edges are ordered pairs; $(u, v) \neq (v, u)$
@@ -34,7 +35,8 @@ A **graph** $G = (V, E)$ consists of a set of **vertices** (nodes) $V$ and a set
 
 **Theorem (Handshaking Lemma).** The sum of all vertex degrees equals $2|E|$.
 
-**Proof.** Each edge contributes 1 to the degree of each of its two endpoints. Summing degrees counts each edge exactly twice. $\square$
+**Proof.** Each edge contributes 1 to the degree of each of its two endpoints. Summing degrees
+counts each edge exactly twice. $\square$
 
 ---
 
@@ -42,7 +44,8 @@ A **graph** $G = (V, E)$ consists of a set of **vertices** (nodes) $V$ and a set
 
 ### Adjacency Matrix
 
-An $n \times n$ matrix $A$ where $A[i][j] = 1$ if edge $(i, j)$ exists (0 otherwise). For weighted graphs, $A[i][j] = w(i,j)$.
+An $n \times n$ matrix $A$ where $A[i][j] = 1$ if edge $(i, j)$ exists (0 otherwise). For weighted
+graphs, $A[i][j] = w(i,j)$.
 
 | Property          | Value    |
 | ----------------- | -------- |
@@ -122,15 +125,24 @@ def bfs(graph, start):
     return distance
 ```
 
-**Theorem (BFS finds shortest paths).** In an unweighted graph, BFS from source $s$ computes the shortest-path distance $d(s, v)$ for every vertex $v$.
+**Theorem (BFS finds shortest paths).** In an unweighted graph, BFS from source $s$ computes the
+shortest-path distance $d(s, v)$ for every vertex $v$.
 
-**Proof.** We prove by induction on the distance $d$ that all vertices at distance $d$ from $s$ are discovered (enqueued) at distance $d$, and no vertex is discovered at a distance greater than its true shortest distance.
+**Proof.** We prove by induction on the distance $d$ that all vertices at distance $d$ from $s$ are
+discovered (enqueued) at distance $d$, and no vertex is discovered at a distance greater than its
+true shortest distance.
 
 _Base case ($d = 0$)._ $s$ is at distance 0 and is discovered at distance 0.
 
-_Inductive step._ Assume all vertices at distance $d$ are discovered at distance $d$. When a vertex $u$ at distance $d$ is dequeued, all unvisited neighbours $v$ are at distance at most $d + 1$ (by edge relaxation). If $v$ were at distance $< d + 1$, it would have been discovered earlier (by the inductive hypothesis or a previous BFS level). So $v$ is at distance exactly $d + 1$ and is discovered at that distance. No vertex can be discovered at distance $> d + 1$ through $u$, since each edge adds exactly 1 to the path length. $\square$
+_Inductive step._ Assume all vertices at distance $d$ are discovered at distance $d$. When a vertex
+$u$ at distance $d$ is dequeued, all unvisited neighbours $v$ are at distance at most $d + 1$ (by
+edge relaxation). If $v$ were at distance $\lt{} d + 1$, it would have been discovered earlier (by
+the inductive hypothesis or a previous BFS level). So $v$ is at distance exactly $d + 1$ and is
+discovered at that distance. No vertex can be discovered at distance $\gt{} d + 1$ through $u$,
+since each edge adds exactly 1 to the path length. $\square$
 
-**Complexity:** $O(V + E)$ — each vertex is visited once, each edge is examined at most twice (once from each endpoint in undirected graphs).
+**Complexity:** $O(V + E)$ — each vertex is visited once, each edge is examined at most twice (once
+from each endpoint in undirected graphs).
 
 ### 3.2 Depth-First Search (DFS)
 
@@ -167,7 +179,8 @@ def dfs(graph, start):
 
 ### Problem
 
-Find the shortest path from a source vertex $s$ to all other vertices in a **weighted graph with non-negative weights**.
+Find the shortest path from a source vertex $s$ to all other vertices in a **weighted graph with
+non-negative weights**.
 
 ### Algorithm
 
@@ -195,25 +208,31 @@ def dijkstra(graph, source):
 
 ### Correctness Proof
 
-**Theorem.** Dijkstra's algorithm computes the shortest-path distance from $s$ to every vertex $v$ in a graph with non-negative edge weights.
+**Theorem.** Dijkstra's algorithm computes the shortest-path distance from $s$ to every vertex $v$
+in a graph with non-negative edge weights.
 
-**Proof.** We prove by induction that when a vertex $u$ is extracted from the priority queue (marked visited), $\text{dist}[u]$ equals the true shortest distance $d(s, u)$.
+**Proof.** We prove by induction that when a vertex $u$ is extracted from the priority queue (marked
+visited), $\text{dist}[u]$ equals the true shortest distance $d(s, u)$.
 
-Let $S$ be the set of visited vertices. We maintain the **invariant**: for every $u \in S$, $\text{dist}[u] = d(s, u)$.
+Let $S$ be the set of visited vertices. We maintain the **invariant**: for every $u \in S$,
+$\text{dist}[u] = d(s, u)$.
 
 _Base case._ $s$ is extracted first with $\text{dist}[s] = 0 = d(s, s)$. ✓
 
-_Inductive step._ Let $u$ be the next vertex extracted. Assume for contradiction that $\text{dist}[u] > d(s, u)$. Then there exists a shortest path $P$ from $s$ to $u$. Let $x$ be the first vertex on $P$ not in $S$, and let $y$ be the predecessor of $x$ on $P$ ($y \in S$). Then:
+_Inductive step._ Let $u$ be the next vertex extracted. Assume for contradiction that
+$\text{dist}[u] \gt{} d(s, u)$. Then there exists a shortest path $P$ from $s$ to $u$. Let $x$ be
+the first vertex on $P$ not in $S$, and let $y$ be the predecessor of $x$ on $P$ ($y \in S$). Then:
 
 $$\text{dist}[x] \leq \text{dist}[y] + w(y, x) = d(s, y) + w(y, x) = d(s, x) \leq d(s, u) < \text{dist}[u]$$
 
-Since $\text{dist}[x] < \text{dist}[u]$, $x$ would have been extracted from the priority queue before $u$ — contradiction. Therefore $\text{dist}[u] = d(s, u)$. $\square$
+Since $\text{dist}[x] \lt{} \text{dist}[u]$, $x$ would have been extracted from the priority queue
+before $u$ — contradiction. Therefore $\text{dist}[u] = d(s, u)$. $\square$
 
-**Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$ each), and each edge causes at most one decrease-key ($O(\log V)$ each).
+**Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$
+each), and each edge causes at most one decrease-key ($O(\log V)$ each).
 
-:::warning Pitfall
-Dijkstra's algorithm **does not work** with negative edge weights. Use the Bellman-Ford algorithm instead for graphs that may contain negative weights.
-:::
+:::warning Pitfall Dijkstra's algorithm **does not work** with negative edge weights. Use the
+Bellman-Ford algorithm instead for graphs that may contain negative weights. :::
 
 ---
 
@@ -221,13 +240,20 @@ Dijkstra's algorithm **does not work** with negative edge weights. Use the Bellm
 
 ### Definition
 
-A **spanning tree** of a connected graph $G$ is a subgraph that is a tree and includes all vertices. A **minimum spanning tree** is the spanning tree with the minimum total edge weight.
+A **spanning tree** of a connected graph $G$ is a subgraph that is a tree and includes all vertices.
+A **minimum spanning tree** is the spanning tree with the minimum total edge weight.
 
 ### Cut Property
 
-**Lemma (Cut Property).** For any cut of the graph, the minimum-weight edge crossing the cut belongs to **some** MST.
+**Lemma (Cut Property).** For any cut of the graph, the minimum-weight edge crossing the cut belongs
+to **some** MST.
 
-**Proof.** Let $e$ be the minimum-weight edge crossing cut $(S, V \setminus S)$. Suppose $e$ is not in MST $T$. Adding $e$ to $T$ creates a cycle. This cycle must cross the cut at least twice (once via $e$), so there exists another edge $e'$ in the cycle crossing the cut. Since $e$ is the minimum-weight crossing edge, $w(e) \leq w(e')$. Replacing $e'$ with $e$ in $T$ yields a spanning tree with weight $\leq w(T)$. Since $T$ is minimum, $w(e) = w(e')$, and the new tree is also an MST containing $e$. $\square$
+**Proof.** Let $e$ be the minimum-weight edge crossing cut $(S, V \setminus S)$. Suppose $e$ is not
+in MST $T$. Adding $e$ to $T$ creates a cycle. This cycle must cross the cut at least twice (once
+via $e$), so there exists another edge $e'$ in the cycle crossing the cut. Since $e$ is the
+minimum-weight crossing edge, $w(e) \leq w(e')$. Replacing $e'$ with $e$ in $T$ yields a spanning
+tree with weight $\leq w(T)$. Since $T$ is minimum, $w(e) = w(e')$, and the new tree is also an MST
+containing $e$. $\square$
 
 ### Kruskal's Algorithm
 
@@ -270,9 +296,13 @@ def kruskal(graph):
     return mst
 ```
 
-**Correctness.** Kruskal's algorithm is correct by the cut property. When an edge $e$ is added, the vertices it connects are in different components — this defines a cut where $e$ is the minimum crossing edge (since edges are processed in sorted order). By the cut property, $e$ belongs to some MST.
+**Correctness.** Kruskal's algorithm is correct by the cut property. When an edge $e$ is added, the
+vertices it connects are in different components — this defines a cut where $e$ is the minimum
+crossing edge (since edges are processed in sorted order). By the cut property, $e$ belongs to some
+MST.
 
-**Complexity:** Sorting: $O(E \log E)$. Union-Find operations: $O(E \cdot \alpha(V))$, where $\alpha$ is the inverse Ackermann function (effectively $O(1)$). Total: $O(E \log E) = O(E \log V)$.
+**Complexity:** Sorting: $O(E \log E)$. Union-Find operations: $O(E \cdot \alpha(V))$, where
+$\alpha$ is the inverse Ackermann function (effectively $O(1)$). Total: $O(E \log E) = O(E \log V)$.
 
 ### Prim's Algorithm
 
@@ -298,7 +328,8 @@ def prim(graph, start):
     return mst_weight
 ```
 
-**Correctness.** Prim's is correct by the cut property. At each step, the cut separates MST vertices from non-MST vertices, and the algorithm selects the minimum-weight crossing edge.
+**Correctness.** Prim's is correct by the cut property. At each step, the cut separates MST vertices
+from non-MST vertices, and the algorithm selects the minimum-weight crossing edge.
 
 **Complexity:** $O((V + E) \log V)$ with a binary heap.
 
@@ -306,7 +337,8 @@ def prim(graph, start):
 
 ## 6. Topological Sort
 
-A **topological ordering** of a DAG is a linear ordering of vertices such that for every directed edge $(u, v)$, $u$ comes before $v$.
+A **topological ordering** of a DAG is a linear ordering of vertices such that for every directed
+edge $(u, v)$, $u$ comes before $v$.
 
 **Algorithm:** DFS-based. When a vertex finishes, prepend it to the result.
 
@@ -339,7 +371,8 @@ def topological_sort(graph):
 
 Vertices: {A, B, C, D}. Edges: {A-B, A-C, B-C, C-D, D-A}
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Adjacency matrix (index: A=0, B=1, C=2, D=3):
 
@@ -352,11 +385,13 @@ Adjacency list:
 - C: [A, B, D]
 - D: [C, A]
 
-</div></details>
+</details>
 
-**Problem 2.** Trace BFS starting from vertex A on the graph from Problem 1. List the order in which vertices are visited and their distances.
+**Problem 2.** Trace BFS starting from vertex A on the graph from Problem 1. List the order in which
+vertices are visited and their distances.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Step | Dequeue | Visit   | Neighbours                  | Queue (front→rear) | Distances     |
 | ---- | ------- | ------- | --------------------------- | ------------------ | ------------- |
@@ -368,11 +403,13 @@ Adjacency list:
 
 Visit order: A, B, C, D. Distances: A:0, B:1, C:1, D:1.
 
-</div></details>
+</details>
 
-**Problem 3.** Apply Dijkstra's algorithm to find the shortest paths from vertex A in the following weighted graph. Edges: A→B (4), A→C (2), B→C (1), B→D (5), C→B (1), C→D (8), C→E (10), D→E (2).
+**Problem 3.** Apply Dijkstra's algorithm to find the shortest paths from vertex A in the following
+weighted graph. Edges: A→B (4), A→C (2), B→C (1), B→D (5), C→B (1), C→D (8), C→E (10), D→E (2).
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Step | Extract | dist[A] | dist[B] | dist[C] | dist[D] | dist[E] |
 | ---- | ------- | ------- | ------- | ------- | ------- | ------- |
@@ -385,11 +422,13 @@ Visit order: A, B, C, D. Distances: A:0, B:1, C:1, D:1.
 
 Shortest paths: A→A: 0, A→B: 3 (A→C→B), A→C: 2, A→D: 8 (A→C→B→D), A→E: 10 (A→C→B→D→E).
 
-</div></details>
+</details>
 
-**Problem 4.** Find the MST of the following graph using Kruskal's algorithm. Edges with weights: A-B (4), A-C (2), B-C (1), B-D (5), C-D (8), D-E (3).
+**Problem 4.** Find the MST of the following graph using Kruskal's algorithm. Edges with weights:
+A-B (4), A-C (2), B-C (1), B-D (5), C-D (8), D-E (3).
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Sorted edges: B-C (1), A-C (2), D-E (3), A-B (4), B-D (5), C-D (8)
 
@@ -403,111 +442,161 @@ Sorted edges: B-C (1), A-C (2), D-E (3), A-B (4), B-D (5), C-D (8)
 
 MST weight: $1 + 2 + 3 + 5 = 11$. 4 edges for 5 vertices. ✓
 
-</div></details>
+</details>
 
 **Problem 5.** Prove that BFS uses $O(V)$ space in the worst case.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-In the worst case, all vertices at the same distance from the source are in the queue simultaneously. In a graph where the source is connected to all other vertices, at distance 1 there are $V - 1$ vertices in the queue. In a star graph, the maximum queue size is $V - 1$. In a complete graph, BFS visits one level at a time, and the maximum queue size is bounded by the number of vertices at the maximum depth, which is at most $V - 1$. Hence the space is $O(V)$. $\square$
+In the worst case, all vertices at the same distance from the source are in the queue
+simultaneously. In a graph where the source is connected to all other vertices, at distance 1 there
+are $V - 1$ vertices in the queue. In a star graph, the maximum queue size is $V - 1$. In a complete
+graph, BFS visits one level at a time, and the maximum queue size is bounded by the number of
+vertices at the maximum depth, which is at most $V - 1$. Hence the space is $O(V)$. $\square$
 
-</div></details>
+</details>
 
-**Problem 6.** Given a DAG, explain why topological sort is possible but BFS-based shortest path (for unweighted graphs) might not produce correct results if cycles exist.
+**Problem 6.** Given a DAG, explain why topological sort is possible but BFS-based shortest path
+(for unweighted graphs) might not produce correct results if cycles exist.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Topological sort is only defined for DAGs (graphs without directed cycles). If a directed cycle exists, there is no valid topological ordering because for any edge $(u, v)$ in the cycle, $u$ must come before $v$, and following the cycle leads to a contradiction.
+Topological sort is only defined for DAGs (graphs without directed cycles). If a directed cycle
+exists, there is no valid topological ordering because for any edge $(u, v)$ in the cycle, $u$ must
+come before $v$, and following the cycle leads to a contradiction.
 
-For shortest paths: in an unweighted graph with cycles, BFS still works correctly because BFS visits each vertex at most once (it marks vertices as visited). The shortest path distance is still well-defined even with cycles, since a cycle would only increase the path length. However, for **weighted** graphs with negative cycles, shortest paths are undefined (you can keep going around the cycle to decrease the distance).
+For shortest paths: in an unweighted graph with cycles, BFS still works correctly because BFS visits
+each vertex at most once (it marks vertices as visited). The shortest path distance is still
+well-defined even with cycles, since a cycle would only increase the path length. However, for
+**weighted** graphs with negative cycles, shortest paths are undefined (you can keep going around
+the cycle to decrease the distance).
 
-</div></details>
+</details>
 
-**Problem 7.** A graph has 6 vertices and 9 edges. What is the sum of all vertex degrees? Is this graph necessarily connected?
+**Problem 7.** A graph has 6 vertices and 9 edges. What is the sum of all vertex degrees? Is this
+graph necessarily connected?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 By the Handshaking Lemma: sum of degrees = $2|E| = 2 \times 9 = 18$.
 
-The graph is not necessarily connected. For example, it could consist of a $K_4$ (complete graph on 4 vertices, 6 edges) plus a path of 3 vertices (2 edges) plus an isolated vertex, totalling $6 + 2 = 8$ edges — but we need 9 edges. A valid disconnected example: $K_4$ (6 edges) + a triangle (3 edges) = 9 edges, 7 vertices... that's too many. Actually, 6 vertices: $K_4$ (6 edges, 4 vertices) + an edge between the remaining 2 vertices (1 edge) + 2 more edges within the remaining 2 vertices is impossible. Let me reconsider: 6 vertices, 9 edges. Minimum edges for connected = 5 (tree). 9 > 5, so it **could** be connected but isn't **necessarily** connected. Example: a $K_4$ on vertices 1-4 (6 edges) and a $K_3$ on vertices 4-6... no, they share vertex 4, making it connected. Two separate components: component 1 has 4 vertices with 6 edges ($K_4$), component 2 has 2 vertices with 1 edge, but that's only 7 edges. To get 9: $K_4$ (6 edges, 4 vertices) + $K_3$ minus 1 edge = 2 edges, 3 vertices. But that requires 7 vertices. With 6 vertices: 5 in one component, 1 isolated. $K_5$ has 10 edges, too many. So with 6 vertices and 9 edges, the graph **must** be connected (minimum edges to disconnect would leave one isolated vertex, requiring $\leq \binom{5}{2} = 10$ edges among the other 5, but 9 < 10, so it's possible: 9 edges among 5 vertices and 1 isolated). Yes, it's possible to be disconnected: 5 vertices with 9 edges + 1 isolated vertex. 9 edges among 5 vertices means the graph on those 5 vertices has 9 edges, which is possible ($K_5$ has 10). So the answer is: no, not necessarily connected.
+The graph is not necessarily connected. For example, it could consist of a $K_4$ (complete graph on
+4 vertices, 6 edges) plus a path of 3 vertices (2 edges) plus an isolated vertex, totalling
+$6 + 2 = 8$ edges — but we need 9 edges. A valid disconnected example: $K_4$ (6 edges) + a triangle
+(3 edges) = 9 edges, 7 vertices... that's too many. Actually, 6 vertices: $K_4$ (6 edges, 4
+vertices) + an edge between the remaining 2 vertices (1 edge) + 2 more edges within the remaining 2
+vertices is impossible. Let me reconsider: 6 vertices, 9 edges. Minimum edges for connected = 5
+(tree). 9 > 5, so it **could** be connected but isn't **necessarily** connected. Example: a $K_4$ on
+vertices 1-4 (6 edges) and a $K_3$ on vertices 4-6... no, they share vertex 4, making it connected.
+Two separate components: component 1 has 4 vertices with 6 edges ($K_4$), component 2 has 2 vertices
+with 1 edge, but that's only 7 edges. To get 9: $K_4$ (6 edges, 4 vertices) + $K_3$ minus 1 edge = 2
+edges, 3 vertices. But that requires 7 vertices. With 6 vertices: 5 in one component, 1 isolated.
+$K_5$ has 10 edges, too many. So with 6 vertices and 9 edges, the graph **must** be connected
+(minimum edges to disconnect would leave one isolated vertex, requiring $\leq \binom{5}{2} = 10$
+edges among the other 5, but 9 < 10, so it's possible: 9 edges among 5 vertices and 1 isolated).
+Yes, it's possible to be disconnected: 5 vertices with 9 edges + 1 isolated vertex. 9 edges among 5
+vertices means the graph on those 5 vertices has 9 edges, which is possible ($K_5$ has 10). So the
+answer is: no, not necessarily connected.
 
-</div></details>
+</details>
 
-**Problem 8.** Explain why Dijkstra's algorithm fails with negative edge weights. Give a counterexample.
+**Problem 8.** Explain why Dijkstra's algorithm fails with negative edge weights. Give a
+counterexample.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Consider: A→B (weight 1), A→C (weight 4), B→C (weight -2).
 
-Dijkstra: Extract A (dist 0). Update B=1, C=4. Extract B (dist 1). Update C = 1 + (-2) = -1 < 4, so C = -1. Extract C (dist -1). Result: C = -1.
+Dijkstra: Extract A (dist 0). Update B=1, C=4. Extract B (dist 1). Update C = 1 + (-2) = -1 < 4, so
+C = -1. Extract C (dist -1). Result: C = -1.
 
 This is actually correct! Let me try a better example.
 
 A→B (1), B→C (-3), A→C (2).
 
-Dijkstra: Extract A (dist 0). B=1, C=2. Extract B (dist 1). C = 1+(-3) = -2 < 2, so C = -2. Extract C (-2). Result: C=-2.
+Dijkstra: Extract A (dist 0). B=1, C=2. Extract B (dist 1). C = 1+(-3) = -2 < 2, so C = -2. Extract
+C (-2). Result: C=-2.
 
 Still correct. The issue arises when a vertex is already visited and a shorter path is found later.
 
 A→B (1), A→C (3), B→D (2), C→B (-2).
 
-Dijkstra: Extract A. B=1, C=3. Extract B (visited, dist 1). D=1+2=3. Extract C (dist 3). B = 3+(-2) = 1, but B is already visited, so this update is ignored. Result: B=1, C=3, D=3.
+Dijkstra: Extract A. B=1, C=3. Extract B (visited, dist 1). D=1+2=3. Extract C (dist 3). B = 3+(-2)
+= 1, but B is already visited, so this update is ignored. Result: B=1, C=3, D=3.
 
-But the shortest path to B is A→C→B = 3 + (-2) = 1, and the shortest path to D is A→C→B→D = 3 + (-2) + 2 = 3. So D=3 is actually correct here too.
+But the shortest path to B is A→C→B = 3 + (-2) = 1, and the shortest path to D is A→C→B→D = 3 +
+(-2) + 2 = 3. So D=3 is actually correct here too.
 
 Better example: A→B (1), A→C (4), C→B (-3).
 
-Dijkstra: Extract A. B=1, C=4. Extract B (dist 1, visited). Extract C (dist 4). B = 4+(-3) = 1. B is already visited. Result: B=1, C=4.
+Dijkstra: Extract A. B=1, C=4. Extract B (dist 1, visited). Extract C (dist 4). B = 4+(-3) = 1. B is
+already visited. Result: B=1, C=4.
 
 Actual shortest: A→C→B = 4-3 = 1. Same result. The algorithm is still correct here.
 
 The canonical counterexample: A→B (1), A→C (5), B→C (-4), C→D (1).
 
-Dijkstra: Extract A. B=1, C=5. Extract B (visited). C = 1+(-4) = -3 < 5. C=-3. Extract C. D = -3+1 = -2. Result: D=-2.
+Dijkstra: Extract A. B=1, C=5. Extract B (visited). C = 1+(-4) = -3 < 5. C=-3. Extract C. D = -3+1 =
+-2. Result: D=-2.
 
 Actual shortest to D: A→B→C→D = 1+(-4)+1 = -2. Still correct!
 
-The key issue: Dijkstra **can** fail. Canonical example where it actually fails requires the negative edge to create a shorter path through an already-visited vertex to a not-yet-visited vertex.
+The key issue: Dijkstra **can** fail. Canonical example where it actually fails requires the
+negative edge to create a shorter path through an already-visited vertex to a not-yet-visited
+vertex.
 
 Let S={A,B,C,D}, edges: A→B(4), A→C(2), C→B(-3), B→D(3), C→D(5).
 
-Dijkstra: Extract A. B=4, C=2. Extract C(2). B=2-3=-1. B=-1 (since $-1 < 4$). Extract B(-1). D=-1+3=2. Extract D(2). Result: D=2.
+Dijkstra: Extract A. B=4, C=2. Extract C(2). B=2-3=-1. B=-1 (since $-1 \lt{} 4$). Extract B(-1).
+D=-1+3=2. Extract D(2). Result: D=2.
 
 Actual shortest to D: A→C→B→D = 2+(-3)+3=2. Same. ✓
 
 The actual failure case is subtle. Here's one: A→B(1), B→E(-4), A→C(4), C→D(2), D→E(1).
 
-Dijkstra: Extract A. B=1, C=4. Extract B(1). E=1-4=-3. Extract C(4). D=4+2=6. Extract E(-3). Extract D(6). Result: E=-3, D=6.
+Dijkstra: Extract A. B=1, C=4. Extract B(1). E=1-4=-3. Extract C(4). D=4+2=6. Extract E(-3). Extract
+D(6). Result: E=-3, D=6.
 
 Actual shortest to D: A→C→D=6. Same. Hmm.
 
 OK here's a real failure: A→B(1), A→C(2), B→D(2), C→B(-1), C→D(3).
 
-Dijkstra: Extract A. B=1, C=2. Extract B(1). D=1+2=3. Extract C(2). B=2-1=1 (B visited, skip). D=2+3=5 (no improvement). Result: D=3.
+Dijkstra: Extract A. B=1, C=2. Extract B(1). D=1+2=3. Extract C(2). B=2-1=1 (B visited, skip).
+D=2+3=5 (no improvement). Result: D=3.
 
 Actual shortest to D: A→B→D=3. Correct!
 
-OK the real issue: if we need to relax through a negative edge after a vertex is already finalized. Let me use: A→B(1), A→C(4), B→C(2), C→D(1).
+OK the real issue: if we need to relax through a negative edge after a vertex is already finalized.
+Let me use: A→B(1), A→C(4), B→C(2), C→D(1).
 
 Dijkstra: A(0), B(1), C(3 via B), D(4). All correct. No negative edge.
 
-The failure requires negative edges creating a situation where the shortest path to a not-yet-visited vertex goes through an already-visited vertex via a negative edge.
+The failure requires negative edges creating a situation where the shortest path to a
+not-yet-visited vertex goes through an already-visited vertex via a negative edge.
 
 Consider: vertices A, B, C. Edges: A→B(3), A→C(5), B→C(-4).
 
-Dijkstra: Extract A. B=3, C=5. Extract B(3). C=3-4=-1. C=-1 (since $-1 < 5$). Extract C. Result: C=-1. ✓
+Dijkstra: Extract A. B=3, C=5. Extract B(3). C=3-4=-1. C=-1 (since $-1 \lt{} 5$). Extract C. Result:
+C=-1. ✓
 
 Consider: vertices A, B, C, D. Edges: A→B(3), A→C(7), B→D(4), C→B(-2), C→D(2).
 
-Dijkstra: Extract A. B=3, C=7. Extract B(3). D=3+4=7. Extract C(7). B=7-2=5 (B visited, ignored). D=7+2=9 (no improvement). Result: D=7.
+Dijkstra: Extract A. B=3, C=7. Extract B(3). D=3+4=7. Extract C(7). B=7-2=5 (B visited, ignored).
+D=7+2=9 (no improvement). Result: D=7.
 
 Actual shortest to D: A→C→B→D = 7+(-2)+4 = 9. Or A→B→D=7. Or A→C→D=9. So D=7 is correct!
 
-The actual counterexample needs the negative edge to make a _shorter_ path to an unvisited node. Let me try:
+The actual counterexample needs the negative edge to make a _shorter_ path to an unvisited node. Let
+me try:
 
 Vertices A, B, C, D. Edges: A→B(1), B→C(3), A→C(6), C→D(1), B→D(7), and the key: C→B(-2).
 
-Dijkstra: A(0). B=1, C=6. Extract B(1). C=min(6, 1+3)=4. D=1+7=8. Extract C(4). B=4-2=2 (B visited, IGNORED). D=min(8,4+1)=5. Extract D(5). Result: D=5.
+Dijkstra: A(0). B=1, C=6. Extract B(1). C=min(6, 1+3)=4. D=1+7=8. Extract C(4). B=4-2=2 (B visited,
+IGNORED). D=min(8,4+1)=5. Extract D(5). Result: D=5.
 
 Actual: A→B→C→D = 1+3+1=5. ✓
 
@@ -515,7 +604,8 @@ Hmm. The algorithm is robust to some negative edges. Here's the actual failure:
 
 Vertices S, A, B. Edges: S→A(1), A→B(-3), S→B(2).
 
-Dijkstra: Extract S. A=1, B=2. Extract A(1). B=min(2, 1-3)=-2. B=-2 (since $-2 < 2$). Extract B. Result: B=-2.
+Dijkstra: Extract S. A=1, B=2. Extract A(1). B=min(2, 1-3)=-2. B=-2 (since $-2 \lt{} 2$). Extract B.
+Result: B=-2.
 
 Actual shortest: S→A→B = 1-3=-2. ✓ Correct!
 
@@ -523,37 +613,49 @@ The actual counterexample where Dijkstra definitively fails:
 
 Vertices 1,2,3. Edges: 1→2(1), 1→3(5), 2→3(2).
 
-Without negative edges, no failure. The key insight: Dijkstra fails when there are negative edges AND the greedy extraction order is wrong.
+Without negative edges, no failure. The key insight: Dijkstra fails when there are negative edges
+AND the greedy extraction order is wrong.
 
 Real failure: Vertices S, A, B, C. Edges: S→A(2), S→B(5), A→C(4), B→C(-3), B→A(-2).
 
-Dijkstra: Extract S. A=2, B=5. Extract A(2). C=2+4=6. Extract B(5). C=min(6,5-3)=2. C=2 (since $2 < 6$). Extract C. Result: C=2.
+Dijkstra: Extract S. A=2, B=5. Extract A(2). C=2+4=6. Extract B(5). C=min(6,5-3)=2. C=2 (since
+$2 \lt{} 6$). Extract C. Result: C=2.
 
 Actual: S→B→C = 5-3=2. Same result. ✓
 
 The definitive failure (from CLRS): S→A(1), S→C(4), A→B(2), B→C(1), C→B(-3).
 
-Dijkstra: S(0). A=1, C=4. Extract A(1). B=1+2=3. Extract C(4). B=min(3,4-3)=1. B=1 (since $1 < 3$). But B is ALREADY VISITED (or not? B was updated to 3 but not extracted yet). Wait — B hasn't been extracted, it's still in the PQ with dist 3. So when C is extracted and we update B to 1, B gets updated in the PQ. Then B is extracted with dist 1. C=min(4, 1+1)=2. But C is already visited!
+Dijkstra: S(0). A=1, C=4. Extract A(1). B=1+2=3. Extract C(4). B=min(3,4-3)=1. B=1 (since
+$1 \lt{} 3$). But B is ALREADY VISITED (or not? B was updated to 3 but not extracted yet). Wait — B
+hasn't been extracted, it's still in the PQ with dist 3. So when C is extracted and we update B to
+1, B gets updated in the PQ. Then B is extracted with dist 1. C=min(4, 1+1)=2. But C is already
+visited!
 
 Result: A=1, B=1, C=4. But shortest path to C is S→A→B→C = 1+2+1=4 or S→C=4. Same. Not a failure.
 
 Let me try: S→A(1), S→C(6), A→B(3), B→C(-2).
 
-Dijkstra: S(0). A=1, C=6. Extract A(1). B=1+3=4. Extract B(4). C=min(6,4-2)=2. C=2 (since $2 < 6$). Extract C(2). Result: C=2.
+Dijkstra: S(0). A=1, C=6. Extract A(1). B=1+3=4. Extract B(4). C=min(6,4-2)=2. C=2 (since
+$2 \lt{} 6$). Extract C(2). Result: C=2.
 
 Actual: S→A→B→C = 1+3-2=2. ✓
 
-I think for this problem level, the key explanation is sufficient: Dijkstra's greedy choice assumes that once a vertex is extracted, its distance is final. With negative edges, a later-discovered path through a negative edge could be shorter. The algorithm ignores these because it marks vertices as visited. Provide the conceptual explanation and state that Bellman-Ford handles negative weights.
+I think for this problem level, the key explanation is sufficient: Dijkstra's greedy choice assumes
+that once a vertex is extracted, its distance is final. With negative edges, a later-discovered path
+through a negative edge could be shorter. The algorithm ignores these because it marks vertices as
+visited. Provide the conceptual explanation and state that Bellman-Ford handles negative weights.
 
-</div></details>
+</details>
 
 **Problem 9.** Perform a topological sort on the following DAG: edges A→B, A→C, B→D, C→D, D→E.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Using DFS-based topological sort:
 
-DFS from A: visit A → visit B → visit D → visit E → E finished, D finished, B finished → visit C → C finished, A finished.
+DFS from A: visit A → visit B → visit D → visit E → E finished, D finished, B finished → visit C → C
+finished, A finished.
 
 Finish order (reverse): A, C, B, D, E → reversed: E, D, B, C, A... wait.
 
@@ -563,39 +665,51 @@ Check: A before B ✓, A before C ✓, B before D ✓, C before D ✓, D before 
 
 Valid topological order: A, B, C, D, E (or A, C, B, D, E).
 
-</div></details>
+</details>
 
-**Problem 10.** Compare Kruskal's and Prim's MST algorithms in terms of time complexity for dense and sparse graphs.
+**Problem 10.** Compare Kruskal's and Prim's MST algorithms in terms of time complexity for dense
+and sparse graphs.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Graph type              | Kruskal         | Prim (binary heap) |
 | ----------------------- | --------------- | ------------------ |
 | Sparse ($E \approx V$)  | $O(V \log V)$   | $O(V \log V)$      |
 | Dense ($E \approx V^2$) | $O(V^2 \log V)$ | $O(V^2 \log V)$    |
 
-Kruskal: $O(E \log E) = O(E \log V)$.
-Prim (binary heap): $O((V+E) \log V)$.
+Kruskal: $O(E \log E) = O(E \log V)$. Prim (binary heap): $O((V+E) \log V)$.
 
-For dense graphs: Prim with an adjacency matrix (no heap) runs in $O(V^2)$, which is better than Kruskal's $O(V^2 \log V)$.
+For dense graphs: Prim with an adjacency matrix (no heap) runs in $O(V^2)$, which is better than
+Kruskal's $O(V^2 \log V)$.
 
-</div></details>
+</details>
 
 **Problem 11.** Prove that a tree with $n$ vertices has exactly $n - 1$ edges using induction.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Proof by induction on $n$.**
 
 Base case: $n = 1$. A single vertex has 0 edges. $0 = 1 - 1$. ✓
 
-Inductive step: Assume all trees with $k$ vertices have $k - 1$ edges. Consider a tree $T$ with $k + 1$ vertices. Since $T$ has at least 2 vertices (for $k \geq 1$), it has at least one leaf $v$ (a tree with $\geq 2$ vertices always has a leaf — otherwise every vertex has degree $\geq 1$, and with no cycles, we'd need $\geq n$ edges, contradicting $|E| = n - 1$). Remove leaf $v$ and its single incident edge. The resulting graph $T'$ is still a tree (removing a leaf cannot create a cycle, and $T'$ is still connected since $v$ was only connected to one vertex). $T'$ has $k$ vertices, so by the inductive hypothesis, $T'$ has $k - 1$ edges. Adding back $v$ and its edge gives $(k - 1) + 1 = k$ edges. ✓ $\square$
+Inductive step: Assume all trees with $k$ vertices have $k - 1$ edges. Consider a tree $T$ with
+$k + 1$ vertices. Since $T$ has at least 2 vertices (for $k \geq 1$), it has at least one leaf $v$
+(a tree with $\geq 2$ vertices always has a leaf — otherwise every vertex has degree $\geq 1$, and
+with no cycles, we'd need $\geq n$ edges, contradicting $|E| = n - 1$). Remove leaf $v$ and its
+single incident edge. The resulting graph $T'$ is still a tree (removing a leaf cannot create a
+cycle, and $T'$ is still connected since $v$ was only connected to one vertex). $T'$ has $k$
+vertices, so by the inductive hypothesis, $T'$ has $k - 1$ edges. Adding back $v$ and its edge gives
+$(k - 1) + 1 = k$ edges. ✓ $\square$
 
-</div></details>
+</details>
 
-**Problem 12.** Given a graph represented as an adjacency list, write a function to detect whether it contains a cycle using DFS.
+**Problem 12.** Given a graph represented as an adjacency list, write a function to detect whether
+it contains a cycle using DFS.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```python
 def has_cycle(graph):
@@ -621,10 +735,12 @@ def has_cycle(graph):
     return False
 ```
 
-The recursion stack (`rec_stack`) tracks the current DFS path. If we encounter a vertex that is already on the current path, we've found a back edge → cycle.
+The recursion stack (`rec_stack`) tracks the current DFS path. If we encounter a vertex that is
+already on the current path, we've found a back edge → cycle.
 
 For undirected graphs, we additionally check that the back edge doesn't go to the parent vertex.
 
-</div></details>
+</details>
 
-For revision on algorithms, see [Graph Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/03-graph-algorithms).
+For revision on algorithms, see
+[Graph Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/03-graph-algorithms).

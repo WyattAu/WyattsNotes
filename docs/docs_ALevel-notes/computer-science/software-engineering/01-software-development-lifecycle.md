@@ -13,7 +13,8 @@ slug: software-development-lifecycle
 
 ### Definition
 
-The **Software Development Lifecycle (SDLC)** is a structured framework describing the phases involved in developing software, from initial conception through to deployment and maintenance.
+The **Software Development Lifecycle (SDLC)** is a structured framework describing the phases
+involved in developing software, from initial conception through to deployment and maintenance.
 
 ### Common Phases
 
@@ -30,7 +31,8 @@ The **Software Development Lifecycle (SDLC)** is a structured framework describi
 
 ### Description
 
-A **sequential**, linear approach where each phase must be completed before the next begins. Developed by Winston Royce in 1970.
+A **sequential**, linear approach where each phase must be completed before the next begins.
+Developed by Winston Royce in 1970.
 
 ```
 Analysis → Design → Implementation → Testing → Deployment → Maintenance
@@ -66,14 +68,14 @@ Analysis → Design → Implementation → Testing → Deployment → Maintenanc
 
 ### Description
 
-An **iterative, incremental** approach that emphasises flexibility, customer collaboration, and delivering working software in short cycles.
+An **iterative, incremental** approach that emphasises flexibility, customer collaboration, and
+delivering working software in short cycles.
 
 ### The Agile Manifesto (2001)
 
-Individuals and interactions over processes and tools
-Working software over comprehensive documentation
-Customer collaboration over contract negotiation
-Responding to change over following a plan
+Individuals and interactions over processes and tools Working software over comprehensive
+documentation Customer collaboration over contract negotiation Responding to change over following a
+plan
 
 ### Scrum Framework
 
@@ -115,7 +117,8 @@ A specific Agile methodology with defined roles, events, and artefacts.
 
 ### Description
 
-Combines elements of waterfall and iterative development. Each iteration (spiral) passes through four quadrants:
+Combines elements of waterfall and iterative development. Each iteration (spiral) passes through
+four quadrants:
 
 1. **Determine objectives** — Identify goals, constraints, alternatives
 2. **Identify and resolve risks** — Risk analysis and mitigation
@@ -156,7 +159,8 @@ Objectives          Development
 
 ### Description
 
-RAD emphasises **rapid prototyping** and iterative development, with minimal planning in favour of speed. Uses workshops, focus groups, and iterative user testing.
+RAD emphasises **rapid prototyping** and iterative development, with minimal planning in favour of
+speed. Uses workshops, focus groups, and iterative user testing.
 
 ### Phases
 
@@ -236,9 +240,11 @@ Show interactions between actors (users) and the system.
 
 ## Problem Set
 
-**Problem 1.** A school wants to develop a new student management system. Requirements are well understood and unlikely to change. Which SDLC model would you recommend? Justify your answer.
+**Problem 1.** A school wants to develop a new student management system. Requirements are well
+understood and unlikely to change. Which SDLC model would you recommend? Justify your answer.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Waterfall model.** Justification:
 
@@ -248,11 +254,13 @@ Show interactions between actors (users) and the system.
 - Lower complexity compared to Agile for a well-defined project
 - Budget and timeline can be estimated more accurately
 
-</div></details>
+</details>
 
-**Problem 2.** A startup is building a social media app with rapidly changing features based on user feedback. Which methodology is most appropriate and why?
+**Problem 2.** A startup is building a social media app with rapidly changing features based on user
+feedback. Which methodology is most appropriate and why?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Agile (Scrum).** Justification:
 
@@ -262,11 +270,13 @@ Show interactions between actors (users) and the system.
 - Working software delivered early allows market validation
 - Low cost of changing direction based on user feedback
 
-</div></details>
+</details>
 
-**Problem 3.** Draw a UML class diagram for a library system with classes `Library`, `Book`, `Member`, and `Loan`. Show appropriate relationships and key attributes/methods.
+**Problem 3.** Draw a UML class diagram for a library system with classes `Library`, `Book`,
+`Member`, and `Loan`. Show appropriate relationships and key attributes/methods.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 ```
 +------------------+
@@ -324,11 +334,12 @@ Relationships:
 - Member 1 --- \* Loan (composition: loans belong to a member)
 - Book 1 --- \* Loan (aggregation: a book can have many loans over time)
 
-</div></details>
+</details>
 
 **Problem 4.** Explain the role of the Scrum Master. Why is this role important?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 The Scrum Master is a **facilitator** (not a manager) who:
 
@@ -339,15 +350,19 @@ The Scrum Master is a **facilitator** (not a manager) who:
 5. Coaches the team on self-organisation and continuous improvement
 6. Acts as a buffer between the development team and external stakeholders
 
-This role is important because without it, teams often revert to ad-hoc practices, lose focus on sprint goals, or fail to identify and address process issues.
+This role is important because without it, teams often revert to ad-hoc practices, lose focus on
+sprint goals, or fail to identify and address process issues.
 
-</div></details>
+</details>
 
-**Problem 5.** Compare the cost of fixing a bug in the waterfall model vs Agile. At which stage is each model most efficient?
+**Problem 5.** Compare the cost of fixing a bug in the waterfall model vs Agile. At which stage is
+each model most efficient?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Waterfall:** Bugs are typically found during the testing phase, which occurs after all development is complete. The cost of fixing a bug increases exponentially the later it is found:
+**Waterfall:** Bugs are typically found during the testing phase, which occurs after all development
+is complete. The cost of fixing a bug increases exponentially the later it is found:
 
 - During design: relatively cheap (redesign)
 - During implementation: moderate (rewrite code)
@@ -361,15 +376,20 @@ This role is important because without it, teams often revert to ad-hoc practice
 - Frequent feedback catches issues early
 - The cost multiplier is typically 3-5× vs 100× in waterfall
 
-Agile is most efficient at the sprint level — bugs found within the same sprint they were introduced are cheapest to fix.
+Agile is most efficient at the sprint level — bugs found within the same sprint they were introduced
+are cheapest to fix.
 
-</div></details>
+</details>
 
-**Problem 6.** Explain what a "minimum viable product" (MVP) is and how it relates to Agile development.
+**Problem 6.** Explain what a "minimum viable product" (MVP) is and how it relates to Agile
+development.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-A **Minimum Viable Product (MVP)** is the simplest version of a product that delivers enough value to early customers and provides feedback for future development. It contains only the core features needed to solve the primary problem.
+A **Minimum Viable Product (MVP)** is the simplest version of a product that delivers enough value
+to early customers and provides feedback for future development. It contains only the core features
+needed to solve the primary problem.
 
 **Relationship to Agile:**
 
@@ -378,13 +398,16 @@ A **Minimum Viable Product (MVP)** is the simplest version of a product that del
 - User feedback on the MVP informs the product backlog
 - The MVP validates assumptions before investing in full development
 
-Example: A ride-sharing app MVP might have only driver-rider matching and payment — no ratings, no scheduling, no advanced features.
+Example: A ride-sharing app MVP might have only driver-rider matching and payment — no ratings, no
+scheduling, no advanced features.
 
-</div></details>
+</details>
 
-**Problem 7.** Describe a situation where the spiral model would be more appropriate than both waterfall and Agile.
+**Problem 7.** Describe a situation where the spiral model would be more appropriate than both
+waterfall and Agile.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 The spiral model is most appropriate for **large, complex, high-risk projects** where:
 
@@ -393,20 +416,24 @@ The spiral model is most appropriate for **large, complex, high-risk projects** 
 - The project involves new technology with unknown feasibility
 - Regulatory or safety requirements demand rigorous risk assessment
 
-**Example:** Developing a medical device control system. Risks include patient safety, regulatory approval, hardware-software integration, and liability. Each spiral iteration would:
+**Example:** Developing a medical device control system. Risks include patient safety, regulatory
+approval, hardware-software integration, and liability. Each spiral iteration would:
 
 1. Define objectives (e.g., "implement heart rate monitoring")
 2. Analyse risks (e.g., "what if the sensor fails?")
 3. Build and test a prototype
 4. Review with medical experts and regulators
 
-Waterfall is too inflexible for evolving requirements. Agile doesn't provide sufficient risk analysis for safety-critical systems.
+Waterfall is too inflexible for evolving requirements. Agile doesn't provide sufficient risk
+analysis for safety-critical systems.
 
-</div></details>
+</details>
 
-**Problem 8.** Create a use case diagram description for an online shopping system. Identify three actors and at least five use cases.
+**Problem 8.** Create a use case diagram description for an online shopping system. Identify three
+actors and at least five use cases.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 **Actors:**
 
@@ -432,6 +459,7 @@ Waterfall is too inflexible for evolving requirements. Agile doesn't provide suf
 - Admin is associated with Manage Inventory, Generate Reports
 - Payment System is associated with Process Payment
 
-For revision on testing, see [Testing](/docs/docs_ALevel-notes/computer-science/software-engineering/02-testing).
+For revision on testing, see
+[Testing](/docs/docs_ALevel-notes/computer-science/software-engineering/02-testing).
 
-</div></details>
+</details>

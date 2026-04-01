@@ -11,15 +11,18 @@ slug: graph-algorithms
 
 ## 1. Dijkstra's Algorithm (Revisited)
 
-See [Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs) for the full treatment. Here we provide additional detail on the priority queue implementation and A\* extension.
+See [Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs) for the full
+treatment. Here we provide additional detail on the priority queue implementation and A\* extension.
 
 ### Priority Queue Optimisation
 
-With a **Fibonacci heap**, Dijkstra's algorithm achieves $O(V \log V + E)$ amortised time (vs $O((V + E)\log V)$ with a binary heap). The key improvement is $O(1)$ amortised decrease-key.
+With a **Fibonacci heap**, Dijkstra's algorithm achieves $O(V \log V + E)$ amortised time (vs
+$O((V + E)\log V)$ with a binary heap). The key improvement is $O(1)$ amortised decrease-key.
 
 ### Bidirectional Dijkstra
 
-Run Dijkstra from both the source and target simultaneously. The search terminates when the two frontiers meet. This can reduce the search space significantly in practice.
+Run Dijkstra from both the source and target simultaneously. The search terminates when the two
+frontiers meet. This can reduce the search space significantly in practice.
 
 ---
 
@@ -27,7 +30,8 @@ Run Dijkstra from both the source and target simultaneously. The search terminat
 
 ### Motivation
 
-Dijkstra's algorithm explores in all directions equally. For pathfinding with a known target, we can use a **heuristic** to guide the search toward the goal.
+Dijkstra's algorithm explores in all directions equally. For pathfinding with a known target, we can
+use a **heuristic** to guide the search toward the goal.
 
 ### Algorithm
 
@@ -67,7 +71,12 @@ def a_star(graph, source, goal, h):
 
 **Theorem.** A\* with an admissible heuristic finds an optimal path.
 
-**Proof.** When A* selects a goal node for expansion, its $g$-value is optimal. If not, there exists a suboptimal path to the goal with cost $g' > g^*$. Let $v$ be the first node on this suboptimal path not yet expanded. By admissibility: $f(v) = g(v) + h(v) \leq g^* + h(v) \leq g^* + \text{true}(v, \text{goal}) \leq g^* + (g' - g(v)) = g'$. Since A\* expands the node with minimum $f$, it would expand $v$ before the goal on the suboptimal path — contradiction. $\square$
+**Proof.** When A* selects a goal node for expansion, its $g$-value is optimal. If not, there exists
+a suboptimal path to the goal with cost $g' \gt{} g^*$. Let $v$ be the first node on this suboptimal
+path not yet expanded. By admissibility:
+$f(v) = g(v) + h(v) \leq g^* + h(v) \leq g^* + \text{true}(v, \text{goal}) \leq g^* + (g' - g(v)) = g'$.
+Since A\* expands the node with minimum $f$, it would expand $v$ before the goal on the suboptimal
+path — contradiction. $\square$
 
 ### Common Heuristics
 
@@ -84,7 +93,8 @@ def a_star(graph, source, goal, h):
 
 ### Kruskal's Algorithm (Detailed)
 
-See [Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs) for the basic algorithm. Here we formalise the Union-Find data structure.
+See [Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs) for the basic
+algorithm. Here we formalise the Union-Find data structure.
 
 #### Union-Find with Path Compression and Union by Rank
 
@@ -111,11 +121,14 @@ class UnionFind:
         return True
 ```
 
-**Theorem (Inverse Ackermann).** With path compression and union by rank, $m$ Union-Find operations on $n$ elements take $O(m \cdot \alpha(n))$ time, where $\alpha$ is the inverse Ackermann function ($\alpha(n) \leq 4$ for all practical $n$).
+**Theorem (Inverse Ackermann).** With path compression and union by rank, $m$ Union-Find operations
+on $n$ elements take $O(m \cdot \alpha(n))$ time, where $\alpha$ is the inverse Ackermann function
+($\alpha(n) \leq 4$ for all practical $n$).
 
 ### Prim's Algorithm (Detailed)
 
-Prim's grows the MST one vertex at a time, always adding the minimum-weight edge connecting the MST to a non-MST vertex.
+Prim's grows the MST one vertex at a time, always adding the minimum-weight edge connecting the MST
+to a non-MST vertex.
 
 **Complexity comparison:**
 
@@ -131,11 +144,13 @@ Prim's grows the MST one vertex at a time, always adding the minimum-weight edge
 
 ### Problem Definition
 
-Given a complete weighted graph, find the shortest possible route that visits every vertex exactly once and returns to the origin.
+Given a complete weighted graph, find the shortest possible route that visits every vertex exactly
+once and returns to the origin.
 
 ### NP-Hardness
 
-TSP is **NP-hard** — no polynomial-time algorithm is known (and likely none exists, assuming P ≠ NP). The brute-force approach checks all $(n-1)!$ permutations.
+TSP is **NP-hard** — no polynomial-time algorithm is known (and likely none exists, assuming P ≠
+NP). The brute-force approach checks all $(n-1)!$ permutations.
 
 ### Heuristic Approaches
 
@@ -165,7 +180,8 @@ def nearest_neighbour_tsp(dist_matrix, start=0):
     return total, path
 ```
 
-**Complexity:** $O(n^2)$. **Guarantee:** At most $O(\log n)$ times the optimal cost (for metric TSP).
+**Complexity:** $O(n^2)$. **Guarantee:** At most $O(\log n)$ times the optimal cost (for metric
+TSP).
 
 #### 2-Opt Improvement
 
@@ -223,7 +239,8 @@ def floyd_warshall(graph):
 
 **Complexity:** $O(V^3)$ time, $O(V^2)$ space.
 
-**Handles:** Negative weights (but not negative cycles — detect by checking if $\text{dist}[i][i] < 0$).
+**Handles:** Negative weights (but not negative cycles — detect by checking if
+$\text{dist}[i][i] \lt{} 0$).
 
 ---
 
@@ -244,7 +261,8 @@ def floyd_warshall(graph):
 
 ## Problem Set
 
-**Problem 1.** Apply A\* to find the shortest path from S to G in the following grid. Use Manhattan distance as the heuristic. Obstacles marked with #.
+**Problem 1.** Apply A\* to find the shortest path from S to G in the following grid. Use Manhattan
+distance as the heuristic. Obstacles marked with #.
 
 ```
 S . . # .
@@ -254,7 +272,8 @@ S . . # .
 . # . . G
 ```
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Coordinates: S=(0,0), G=(4,4). Grid is 5×5.
 
@@ -270,25 +289,34 @@ Open set ordered by $f = g + h$:
 | 4      | (0,2) | 2   | 6   | 8   | S→(0,1)→(0,2) |
 | ...    | ...   | ... | ... | ... | ...           |
 
-The optimal path is: (0,0)→(0,1)→(0,2)→(1,2)→(2,2)→(2,3)→(3,3)... but (3,3) is blocked (#). So: (2,2)→(2,3)→(2,4)→(3,4)→(4,4). Cost: 8.
+The optimal path is: (0,0)→(0,1)→(0,2)→(1,2)→(2,2)→(2,3)→(3,3)... but (3,3) is blocked (#). So:
+(2,2)→(2,3)→(2,4)→(3,4)→(4,4). Cost: 8.
 
-</div></details>
+</details>
 
-**Problem 2.** Prove that the Manhattan distance heuristic is admissible for grid-based pathfinding with 4-directional movement.
+**Problem 2.** Prove that the Manhattan distance heuristic is admissible for grid-based pathfinding
+with 4-directional movement.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-**Proof.** In a grid with 4-directional movement, the shortest path from $(x_1, y_1)$ to $(x_2, y_2)$ requires at least $|x_1 - x_2|$ horizontal moves and $|y_1 - y_2|$ vertical moves (since each move changes one coordinate by exactly 1). Therefore, the minimum number of moves is $|x_1 - x_2| + |y_1 - y_2|$, which is exactly the Manhattan distance. Since the heuristic equals the true minimum cost, it never overestimates. $\square$
+**Proof.** In a grid with 4-directional movement, the shortest path from $(x_1, y_1)$ to
+$(x_2, y_2)$ requires at least $|x_1 - x_2|$ horizontal moves and $|y_1 - y_2|$ vertical moves
+(since each move changes one coordinate by exactly 1). Therefore, the minimum number of moves is
+$|x_1 - x_2| + |y_1 - y_2|$, which is exactly the Manhattan distance. Since the heuristic equals the
+true minimum cost, it never overestimates. $\square$
 
-</div></details>
+</details>
 
 **Problem 3.** When would you choose Prim's algorithm over Kruskal's algorithm for finding an MST?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Choose Prim's when:
 
-1. The graph is **dense** ($E \approx V^2$): Prim's with adjacency matrix runs in $O(V^2)$, while Kruskal's requires sorting $O(V^2)$ edges → $O(V^2 \log V)$
+1. The graph is **dense** ($E \approx V^2$): Prim's with adjacency matrix runs in $O(V^2)$, while
+   Kruskal's requires sorting $O(V^2)$ edges → $O(V^2 \log V)$
 2. The graph is stored as an **adjacency matrix** (Prim's works naturally with this representation)
 3. You need the MST starting from a specific vertex
 
@@ -298,37 +326,52 @@ Choose Kruskal's when:
 2. You want to find only certain edges of the MST (stop early)
 3. The edges are already sorted or can be streamed
 
-</div></details>
+</details>
 
-**Problem 4.** Explain what happens to Dijkstra's algorithm if there is a negative edge in the graph. Give a specific counterexample.
+**Problem 4.** Explain what happens to Dijkstra's algorithm if there is a negative edge in the
+graph. Give a specific counterexample.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Consider vertices S, A, B with edges: S→A (weight 1), A→B (weight -3), S→B (weight 2).
 
-Dijkstra: Extract S (dist: S=0, A=1, B=2). Extract A (dist=1). B = 1 + (-3) = -2 < 2. Update B=-2. Extract B (dist=-2). Result: S→A→B, cost -2. This is actually correct!
+Dijkstra: Extract S (dist: S=0, A=1, B=2). Extract A (dist=1). B = 1 + (-3) = -2 < 2. Update B=-2.
+Extract B (dist=-2). Result: S→A→B, cost -2. This is actually correct!
 
-The failure occurs when a shorter path goes through an already-finalized vertex. Example: S→A (1), S→B (4), A→B (-2). Dijkstra: S(0), A(1), B(4). Extract A. B = 1+(-2) = -1 < 4, update B=-1. Extract B. Result: S→A→B, cost -1. Correct.
+The failure occurs when a shorter path goes through an already-finalized vertex. Example: S→A (1),
+S→B (4), A→B (-2). Dijkstra: S(0), A(1), B(4). Extract A. B = 1+(-2) = -1 < 4, update B=-1. Extract
+B. Result: S→A→B, cost -1. Correct.
 
-The real failure: S→A (3), S→C (7), A→B (2), B→C (-2). Dijkstra: S(0). A=3, C=7. Extract A(3). B=5. Extract C(7). B = 7+(-2) = 5 = no improvement. But A→B→C = 3+2-2 = 3 < 7! B is already finalized at 5, but C should be 3. The algorithm returns C=7, missing the better path.
+The real failure: S→A (3), S→C (7), A→B (2), B→C (-2). Dijkstra: S(0). A=3, C=7. Extract A(3). B=5.
+Extract C(7). B = 7+(-2) = 5 = no improvement. But A→B→C = 3+2-2 = 3 < 7! B is already finalized at
+5, but C should be 3. The algorithm returns C=7, missing the better path.
 
-Wait — C is already extracted. The issue is that when C is extracted at distance 7, a shorter path through B (distance 5 → C = 3) exists but is never explored because B hasn't been processed yet and C is already marked as visited.
+Wait — C is already extracted. The issue is that when C is extracted at distance 7, a shorter path
+through B (distance 5 → C = 3) exists but is never explored because B hasn't been processed yet and
+C is already marked as visited.
 
-</div></details>
+</details>
 
-**Problem 5.** The Floyd-Warshall algorithm computes all-pairs shortest paths in $O(V^3)$ time. For a sparse graph with $E = O(V)$, is this more efficient than running Dijkstra from every vertex?
+**Problem 5.** The Floyd-Warshall algorithm computes all-pairs shortest paths in $O(V^3)$ time. For
+a sparse graph with $E = O(V)$, is this more efficient than running Dijkstra from every vertex?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-Running Dijkstra from every vertex: $V \times O((V + E)\log V) = V \times O(V \log V) = O(V^2 \log V)$.
+Running Dijkstra from every vertex:
+$V \times O((V + E)\log V) = V \times O(V \log V) = O(V^2 \log V)$.
 
 Floyd-Warshall: $O(V^3)$.
 
-For sparse graphs: $V^2 \log V \ll V^3$ for large $V$. So running Dijkstra from every vertex is more efficient for sparse graphs.
+For sparse graphs: $V^2 \log V \ll V^3$ for large $V$. So running Dijkstra from every vertex is more
+efficient for sparse graphs.
 
-For dense graphs ($E = O(V^2)$): Dijkstra from every vertex = $O(V^2 \log V + V^3 \log V)$... wait: $V \times O((V + V^2)\log V) = V \times O(V^2 \log V) = O(V^3 \log V)$. Floyd-Warshall = $O(V^3)$. So Floyd-Warshall is better for dense graphs.
+For dense graphs ($E = O(V^2)$): Dijkstra from every vertex = $O(V^2 \log V + V^3 \log V)$... wait:
+$V \times O((V + V^2)\log V) = V \times O(V^2 \log V) = O(V^3 \log V)$. Floyd-Warshall = $O(V^3)$.
+So Floyd-Warshall is better for dense graphs.
 
-</div></details>
+</details>
 
 **Problem 6.** Apply the nearest neighbour heuristic to the TSP with distance matrix:
 
@@ -342,42 +385,55 @@ D  [ 20,  25,  30,   0 ]
 
 Starting from A.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Start: A. Current = A.
 
-Nearest unvisited from A: B (10). Path: A→B, cost: 10.
-Nearest unvisited from B: D (25). Path: A→B→D, cost: 35.
-Nearest unvisited from D: C (30). Path: A→B→D→C, cost: 65.
-Return to A: C→A (15). Total: 80.
+Nearest unvisited from A: B (10). Path: A→B, cost: 10. Nearest unvisited from B: D (25). Path:
+A→B→D, cost: 35. Nearest unvisited from D: C (30). Path: A→B→D→C, cost: 65. Return to A: C→A (15).
+Total: 80.
 
 Path: A→B→D→C→A, total cost: 80.
 
-</div></details>
+</details>
 
-**Problem 7.** Explain why the 2-opt heuristic improves the TSP solution. Does it always find the optimal solution?
+**Problem 7.** Explain why the 2-opt heuristic improves the TSP solution. Does it always find the
+optimal solution?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-2-opt removes two edges from the current tour and reconnects the two resulting paths in the other possible way. If the new total distance is shorter, the swap is accepted. This corrects "crossing" edges, which are always suboptimal in metric TSP.
+2-opt removes two edges from the current tour and reconnects the two resulting paths in the other
+possible way. If the new total distance is shorter, the swap is accepted. This corrects "crossing"
+edges, which are always suboptimal in metric TSP.
 
-2-opt does **not** always find the optimal solution. It can get stuck in local optima — configurations where no single 2-opt swap improves the tour, but a sequence of swaps (or a swap involving more edges, like 3-opt) would. However, for many practical instances, 2-opt produces near-optimal solutions.
+2-opt does **not** always find the optimal solution. It can get stuck in local optima —
+configurations where no single 2-opt swap improves the tour, but a sequence of swaps (or a swap
+involving more edges, like 3-opt) would. However, for many practical instances, 2-opt produces
+near-optimal solutions.
 
-</div></details>
+</details>
 
 **Problem 8.** How would you detect a negative cycle using the Floyd-Warshall algorithm?
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
-After running Floyd-Warshall, check the diagonal of the distance matrix. If $\text{dist}[i][i] < 0$ for any vertex $i$, there exists a negative cycle through $i$.
+After running Floyd-Warshall, check the diagonal of the distance matrix. If
+$\text{dist}[i][i] \lt{} 0$ for any vertex $i$, there exists a negative cycle through $i$.
 
-**Proof.** $\text{dist}[i][i]$ represents the shortest path from $i$ back to $i$. If this is negative, there exists a cycle with total weight $< 0$ through vertex $i$. This cycle can be traversed repeatedly to make the shortest path arbitrarily negative, meaning shortest paths are undefined. $\square$
+**Proof.** $\text{dist}[i][i]$ represents the shortest path from $i$ back to $i$. If this is
+negative, there exists a cycle with total weight $\lt{} 0$ through vertex $i$. This cycle can be
+traversed repeatedly to make the shortest path arbitrarily negative, meaning shortest paths are
+undefined. $\square$
 
-</div></details>
+</details>
 
 **Problem 9.** Compare A\* and Dijkstra in terms of completeness, optimality, and efficiency.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 | Property    | Dijkstra           | A\* (admissible)                           |
 | ----------- | ------------------ | ------------------------------------------ |
@@ -387,13 +443,16 @@ After running Floyd-Warshall, check the diagonal of the distance matrix. If $\te
 | Space       | $O(V)$             | $O(V)$ (often less in practice)            |
 | Requirement | None               | Heuristic function needed                  |
 
-A* dominates Dijkstra: whenever $h(v) = 0$ for all $v$, A* reduces to Dijkstra. With a good heuristic, A\* explores significantly fewer nodes.
+A* dominates Dijkstra: whenever $h(v) = 0$ for all $v$, A* reduces to Dijkstra. With a good
+heuristic, A\* explores significantly fewer nodes.
 
-</div></details>
+</details>
 
-**Problem 10.** Given a weighted directed graph, explain how to find the shortest path that visits exactly $k$ edges from vertex $s$ to vertex $t$. State the time complexity.
+**Problem 10.** Given a weighted directed graph, explain how to find the shortest path that visits
+exactly $k$ edges from vertex $s$ to vertex $t$. State the time complexity.
 
-<details><summary>Answer</summary><div>
+<details>
+<summary>Answer</summary>
 
 Use **dynamic programming**. Let $dp[i][v]$ = shortest path from $s$ to $v$ using exactly $i$ edges.
 
@@ -403,8 +462,10 @@ Base case: $dp[0][s] = 0$, $dp[0][v] = \infty$ for $v \neq s$.
 
 Answer: $dp[k][t]$.
 
-Time complexity: $O(k \cdot E)$ — we compute $k+1$ tables, each requiring scanning all edges. Space: $O(k \cdot V)$ (or $O(V)$ with rolling array optimisation).
+Time complexity: $O(k \cdot E)$ — we compute $k+1$ tables, each requiring scanning all edges. Space:
+$O(k \cdot V)$ (or $O(V)$ with rolling array optimisation).
 
 For $k = V-1$, this is equivalent to the Bellman-Ford algorithm.
 
-For revision on graphs, see [Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs).
+For revision on graphs, see
+[Graphs](/docs/docs_ALevel-notes/computer-science/data-structures/05-graphs).
