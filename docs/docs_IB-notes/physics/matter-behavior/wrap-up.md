@@ -5,7 +5,7 @@ tags:
   - physics
 categories:
   - physics
-slug: matter-behavior-wrap-up
+slug: wrap
 ---
 
 <details>

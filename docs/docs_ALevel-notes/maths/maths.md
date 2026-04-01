@@ -12,7 +12,10 @@ sidebar_position: 2
 
 ## A Level Mathematics — Course Overview
 
-A Level Mathematics is fundamentally a course in **mathematical reasoning**. The pure mathematics syllabus develops the tools of calculus, algebra, and proof that underpin every quantitative discipline. Statistics teaches you to reason under uncertainty. Mechanics teaches you to model the physical world with mathematics.
+A Level Mathematics is fundamentally a course in **mathematical reasoning**. The pure mathematics
+syllabus develops the tools of calculus, algebra, and proof that underpin every quantitative
+discipline. Statistics teaches you to reason under uncertainty. Mechanics teaches you to model the
+physical world with mathematics.
 
 ### Board Coverage
 
@@ -43,7 +46,8 @@ A Level Mathematics is fundamentally a course in **mathematical reasoning**. The
 The pure mathematics core is the backbone of the course. It develops:
 
 - **Algebraic fluency** — manipulation of polynomials, rational functions, partial fractions
-- **Calculus** — differentiation and integration as inverse operations, with deep understanding of _why_ they work
+- **Calculus** — differentiation and integration as inverse operations, with deep understanding of
+  _why_ they work
 - **Proof** — rigorous arguments by contradiction, induction, and direct deduction
 - **Functions** — domain, range, composition, inverse, transformations
 - **Sequences and series** — arithmetic, geometric, and binomial expansions
@@ -75,7 +79,8 @@ The pure mathematics core is the backbone of the course. It develops:
 | OCR (A) | Paper 1 (Pure), Paper 2 (Pure), Paper 3 (Stat/Mech) | 33.3% each      |
 | CIE     | P1, P2, P3 (Pure), M1, S1 (Applied)                 | Varies          |
 
-> **Note:** CIE is a linear qualification. AQA, Edexcel, and OCR (A) are also linear (all exams at end of Year 13), though AS stand-alone qualifications exist.
+> **Note:** CIE is a linear qualification. AQA, Edexcel, and OCR (A) are also linear (all exams at
+> end of Year 13), though AS stand-alone qualifications exist.
 
 ### How to Use These Notes
 
@@ -88,4 +93,5 @@ Follow the sidebar order. Each topic page contains:
 5. **Multi-step problem set** — questions that require chaining multiple concepts
 6. **Board-specific notes** — where specifications diverge
 
-When you have studied all topics, attempt the [Diagnostic Test](/docs/docs/docs_ALevel-notes/maths/alevel-maths-diagnostic-test) to identify your weakest areas.
+When you have studied all topics, attempt the [Diagnostic Test](diagnostic-test.md) to identify your
+weakest areas.

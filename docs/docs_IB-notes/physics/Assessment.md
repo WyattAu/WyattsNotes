@@ -209,23 +209,22 @@ examination session and vary from session to session depending on the difficulty
 
 ## Cross-References
 
-- **[Syllabus](/docs/docs_IB-notes/physics/Syllabus)** -- Full topic-by-topic syllabus breakdown
-  with key understandings and equations.
-- **[Course Overview](/docs/docs_IB-notes/physics/physics)** -- Overview of all five themes and
-  their sub-topics.
-- **[Wrap Up](/docs/docs_IB-notes/wrap)** -- Practice questions and solutions covering all themes.
+- **[Syllabus](Syllabus.md)** -- Full topic-by-topic syllabus breakdown with key understandings and
+  equations.
+- **[Course Overview](physics.md)** -- Overview of all five themes and their sub-topics.
+- **[Wrap Up](wrap-up.md)** -- Practice questions and solutions covering all themes.
 - **Theme A: Space, Time and Motion**
-  - [Forces and Momentums](/docs/docs_IB-notes/physics/space-time-and-motions/forces-and-momentums)
+  - [Forces and Momentums](space-time-and-motions/forces-and-momentums.md)
 - **Theme B: The Particulate Nature of Matter**
-  - [Thermodynamics](/docs/docs_IB-notes/physics/matter-behavior/thermodynamics)
-  - [Matter Behavior Wrap Up](/docs/docs_IB-notes/matter-behavior-wrap-up)
+  - [Thermodynamics](matter-behavior/thermodynamics.md)
+  - [Matter Behavior Wrap Up](matter-behavior/wrap-up.md)
 - **Theme C: Wave Behaviour**
-  - [Simple Harmonic Motion](/docs/docs_IB-notes/simple-harmonic-motion)
-  - [Waves Wrap Up](/docs/docs_IB-notes/waves-wrap-up)
+  - [Simple Harmonic Motion](waves/simple_harmonic_motion.md)
+  - [Waves Wrap Up](waves/wrap-up.md)
 - **Theme D: Fields**
-  - [Electric and Magnetic Fields](/docs/docs_IB-notes/physics/fields/electric-and-magnetic-fields)
-  - [Gravitational Fields](/docs/docs_IB-notes/physics/fields/gravitational-fields)
-  - [Electromagnetic Induction](/docs/docs_IB-notes/physics/fields/Induction)
-  - [Motion in Electromagnetic Fields](/docs/docs_IB-notes/physics/fields/motion-in-electromagnetic-fields)
+  - [Electric and Magnetic Fields](fields/electric-and-magnetic-fields.md)
+  - [Gravitational Fields](fields/gravitational-fields.md)
+  - [Electromagnetic Induction](fields/Induction.md)
+  - [Motion in Electromagnetic Fields](fields/motion-in-electromagnetic-fields.md)
 - **Theme E: Nuclear and Quantum Physics**
-  - [Nuclear and Quantum Wrap Up](/docs/docs_IB-notes/nuclear-and-quantum-wrap-up)
+  - [Nuclear and Quantum Wrap Up](nuclear-and-quantum/wrap-up.md)
