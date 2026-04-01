@@ -427,9 +427,9 @@ investment to double?
 
 Many natural processes follow exponential models:
 
-- **Growth:** $N(t) = N_0 \cdot a^t$ where $a > 1$ (e.g., population growth, bacterial
+- **Growth:** $N(t) = N_0 \cdot a^t$ where $a \gt{} 1$ (e.g., population growth, bacterial
   reproduction).
-- **Decay:** $N(t) = N_0 \cdot a^t$ where $0 < a < 1$ (e.g., radioactive decay, cooling).
+- **Decay:** $N(t) = N_0 \cdot a^t$ where $0 \lt{} a \lt{} 1$ (e.g., radioactive decay, cooling).
 
 The **half-life** $T$ of a decaying quantity is the time for the quantity to reduce to half its
 initial value. For $N(t) = N_0 \cdot a^t$:
@@ -463,7 +463,7 @@ $M(t) = 500 \cdot (0.92)^t$ grams. Find the half-life.
 Inequalities involving logarithms require careful attention to the behaviour of the logarithmic
 function, which depends on whether the base is greater than or less than 1.
 
-### Case 1: Base $a > 1$
+### Case 1: Base $a \gt{} 1$
 
 When $a > 1$, $\log_a x$ is strictly increasing, so the inequality sign is **preserved**:
 
@@ -471,7 +471,7 @@ $$
 \log_a x \gt{} \log_a y \iff x \gt{} y
 $$
 
-### Case 2: Base $0 < a < 1$
+### Case 2: Base $0 \lt{} a \lt{} 1$
 
 When $0 < a < 1$, $\log_a x$ is strictly decreasing, so the inequality sign is **reversed**:
 

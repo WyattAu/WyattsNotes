@@ -369,7 +369,7 @@ def topological_sort(graph):
 
 **Problem 1.** Represent the following graph using both an adjacency matrix and an adjacency list.
 
-Vertices: {A, B, C, D}. Edges: {A-B, A-C, B-C, C-D, D-A}
+Vertices: `{A, B, C, D}`. Edges: `{A-B, A-C, B-C, C-D, D-A}`
 
 <details>
 <summary>Answer</summary>
@@ -432,13 +432,13 @@ A-B (4), A-C (2), B-C (1), B-D (5), C-D (8), D-E (3).
 
 Sorted edges: B-C (1), A-C (2), D-E (3), A-B (4), B-D (5), C-D (8)
 
-| Edge | Weight | Union?             | MST edges            |
-| ---- | ------ | ------------------ | -------------------- |
-| B-C  | 1      | Yes                | {B-C}                |
-| A-C  | 2      | Yes                | {B-C, A-C}           |
-| D-E  | 3      | Yes                | {B-C, A-C, D-E}      |
-| A-B  | 4      | No (cycle A-B-C-A) | —                    |
-| B-D  | 5      | Yes                | {B-C, A-C, D-E, B-D} |
+| Edge | Weight | Union?             | MST edges              |
+| ---- | ------ | ------------------ | ---------------------- |
+| B-C  | 1      | Yes                | `{B-C}`                |
+| A-C  | 2      | Yes                | `{B-C, A-C}`           |
+| D-E  | 3      | Yes                | `{B-C, A-C, D-E}`      |
+| A-B  | 4      | No (cycle A-B-C-A) | —                      |
+| B-D  | 5      | Yes                | `{B-C, A-C, D-E, B-D}` |
 
 MST weight: $1 + 2 + 3 + 5 = 11$. 4 edges for 5 vertices. ✓
 
@@ -549,7 +549,7 @@ The key issue: Dijkstra **can** fail. Canonical example where it actually fails 
 negative edge to create a shorter path through an already-visited vertex to a not-yet-visited
 vertex.
 
-Let S={A,B,C,D}, edges: A→B(4), A→C(2), C→B(-3), B→D(3), C→D(5).
+Let S=`{A,B,C,D}`, edges: A→B(4), A→C(2), C→B(-3), B→D(3), C→D(5).
 
 Dijkstra: Extract A. B=4, C=2. Extract C(2). B=2-3=-1. B=-1 (since $-1 \lt{} 4$). Extract B(-1).
 D=-1+3=2. Extract D(2). Result: D=2.
