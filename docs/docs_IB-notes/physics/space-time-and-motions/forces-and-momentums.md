@@ -188,8 +188,7 @@ $$
 
 ## Wrap Up
 
-<details>
-<summary><strong>A.1 Kinematics & A.2 Forces and Momentum</strong></summary>
+### A.1 Kinematics & A.2 Forces and Momentum
 
 1. **Question:** A 1500 kg car is traveling on a horizontal road at a constant speed of 25.0 m/s.
 The total resistive force (air drag + friction) is 800 N. The car then begins to accelerate
@@ -448,5 +447,3 @@ with a calculation. c) Now, analyze the situation from the muon's reference fram
   slow). For a moving observer, distances in the direction of motion contract (are shorter). Both
   phenomena must lead to the same physical conclusion.
   </details>
-
-</details>
