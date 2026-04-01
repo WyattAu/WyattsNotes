@@ -5,7 +5,7 @@ tags:
   - physics
 categories:
   - physics
-  slug: waves-wrap-up
+slug: waves-wrap-up
 ---
 
 <details>

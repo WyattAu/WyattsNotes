@@ -5,7 +5,7 @@ tags:
   - physics
 categories:
   - physics
-  slug: nuclear-and-quantum-wrap-up
+slug: nuclear-and-quantum-wrap-up
 ---
 
 <details>
