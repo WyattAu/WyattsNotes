@@ -216,10 +216,11 @@ distance covered during the 10.0 s of acceleration?
     force is constant, a simplification.)
 - **d) Distance:** Use the kinematic equation $s = ut + \frac{1}{2}at^2$.
   - $s = (25.0 \text{ m/s})(10.0 \text{ s}) + \frac{1}{2}(0.800 \text{ m/s}^2)(10.0 \text{ s})^2 = 250 + 0.4(100) = 290 \text{ m}$.
-  **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$
-  for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly
-  linking the resulting acceleration to kinematic equations.
-  </details>
+    **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$
+    for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly
+    linking the resulting acceleration to kinematic equations.
+
+</details>
 
 **Problem 2.** A 2.0 kg firework is launched vertically from rest. Its rocket motor provides a
 constant upward thrust of 50.0 N for 3.0 s before running out of fuel. Ignore air resistance. a)
@@ -246,15 +247,16 @@ air (from launch until it returns to the ground)?
     - $0^2 = (45.6)^2 + 2(-9.8)h_2 \implies h_2 = \frac{45.6^2}{19.6} = 106.0 \text{ m}$.
     - Total max height: $H = h_1 + h_2 = 68.4 + 106.0 = 174.4 \text{ m}$.
   - **b) Total Time in Air:** We need the time for Stage 2. - Time to coast to peak
-  ($t_{\text{up}}$):
-  $v = u + at \implies 0 = 45.6 - 9.8 t_{\text{up}} \implies t_{\text{up}} = 4.65 \text{ s}$. - Time
-  to fall from peak ($t_{\text{down}}$):
-  $s = \frac{1}{2}at^2 \implies 174.4 = \frac{1}{2}(9.8) t_{\text{down}}^2 \implies t_{\text{down}} = 5.97 \text{ s}$. -
-  Total time: $T = t_1 + t_{\text{up}} + t_{\text{down}} = 3.0 + 4.65 + 5.97 = 13.6 \text{ s}$. **If
-  you get this wrong, you should focus on:** Breaking multi-stage motion problems into separate
-  parts, calculating net force correctly in each stage, and using the final conditions of one stage
-  as the initial conditions for the next.
-  </details>
+    ($t_{\text{up}}$):
+    $v = u + at \implies 0 = 45.6 - 9.8 t_{\text{up}} \implies t_{\text{up}} = 4.65 \text{ s}$. -
+    Time to fall from peak ($t_{\text{down}}$):
+    $s = \frac{1}{2}at^2 \implies 174.4 = \frac{1}{2}(9.8) t_{\text{down}}^2 \implies t_{\text{down}} = 5.97 \text{ s}$. -
+    Total time: $T = t_1 + t_{\text{up}} + t_{\text{down}} = 3.0 + 4.65 + 5.97 = 13.6 \text{ s}$.
+    **If you get this wrong, you should focus on:** Breaking multi-stage motion problems into
+    separate parts, calculating net force correctly in each stage, and using the final conditions of
+    one stage as the initial conditions for the next.
+
+</details>
 
 **Problem 3.** A 5.0 kg object is suspended by a rope. A horizontal force is applied, pulling the
 object to the side until the rope makes an angle of 35° with the vertical. The object is held in
@@ -277,12 +279,13 @@ applied horizontal force and the tension in the rope.
     - $T_y - mg = 0 \implies T \cos(35^\circ) = (5.0 \text{ kg})(9.8 \text{ m/s}^2) = 49 \text{ N}$.
     - $T = \frac{49}{\cos(35^\circ)} = 59.8 \text{ N}$.
   - **Horizontal Equilibrium ($\Sigma F_x = 0$):** -
-  $F_a - T_x = 0 \implies F_a = T \sin(35^\circ)$. -
-  $F_a = (59.8 \text{ N}) \sin(35^\circ) = 34.3 \text{ N}$. **If you get this wrong, you should
-  focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors
-  into components using trigonometry, and setting up and solving simultaneous equations for the
-  vertical and horizontal forces.
-  </details>
+    $F_a - T_x = 0 \implies F_a = T \sin(35^\circ)$. -
+    $F_a = (59.8 \text{ N}) \sin(35^\circ) = 34.3 \text{ N}$. **If you get this wrong, you should
+    focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors
+    into components using trigonometry, and setting up and solving simultaneous equations for the
+    vertical and horizontal forces.
+
+</details>
 
 **Problem 4.** A 0.20 kg ball traveling at 10 m/s collides with a stationary 0.30 kg ball. After the
 collision, the 0.20 kg ball moves at 4.0 m/s at an angle of 30° to its original path. a) Determine
@@ -311,11 +314,12 @@ Justify your answer with a calculation.
   - $E_{k, \text{final}} = \frac{1}{2}(0.20)(4.0)^2 + \frac{1}{2}(0.30)(4.56)^2 = 1.6 + 3.12 = 4.72$
     J.
   - Since $E_{k, \text{final}} \lt{} E_{k, \text{initial}}$, kinetic energy was lost, and the
-  collision was **inelastic**. **If you get this wrong, you should focus on:** Applying conservation
-  of momentum as a vector equation (i.e., in component form), combining velocity components to find
-  final speed and direction, and the definition of an elastic collision (conservation of kinetic
-  energy).
-  </details>
+    collision was **inelastic**. **If you get this wrong, you should focus on:** Applying
+    conservation of momentum as a vector equation (i.e., in component form), combining velocity
+    components to find final speed and direction, and the definition of an elastic collision
+    (conservation of kinetic energy).
+
+</details>
 
 **Problem 5.** A 1200 kg car travels at a constant speed of 15 m/s around a flat circular track of
 radius 50 m. It then moves to a section of the track banked at an angle $\theta$. a) For the flat
@@ -347,10 +351,11 @@ any reliance on friction?
     - $\frac{N \sin\theta}{N \cos\theta} = \frac{mv^2/r}{mg} \implies \tan\theta = \frac{v^2}{rg}$.
   - $\tan\theta = \frac{15^2}{50 \cdot 9.8} = 0.459$.
   - $\theta = \arctan(0.459) = 24.7^\circ$. **If you get this wrong, you should focus on:**
-  Identifying the source of the centripetal force in different situations (friction vs. component of
-  normal force), correctly resolving forces on an inclined plane, and solving a system of force
-  equations.
-  </details>
+    Identifying the source of the centripetal force in different situations (friction vs. component
+    of normal force), correctly resolving forces on an inclined plane, and solving a system of force
+    equations.
+
+</details>
 
 **Problem 6.** **Question (HL Only):** A thin hoop of mass M and radius R ($I=MR^2$) rolls without
 slipping down an incline of angle $\theta$. a) Draw a free-body diagram for the hoop, including the
@@ -449,9 +454,10 @@ the muon "explain" its ability to reach the ground?
     $t' = \frac{L}{v} = \frac{999 \text{ m}}{0.995 \times 3.0 \times 10^8 \text{ m/s}} = 3.35 \times 10^{-6}$
     s = 3.35 μs.
   - From the muon's perspective, it only needs to survive for 3.35 μs to reach the ground. Since
-  this is longer than its proper half-life of 1.56 μs, it has a chance to make it. Both frames agree
-  on the outcome. **If you get this wrong, you should focus on:** The two key consequences of
-  special relativity. For a stationary observer watching a moving object, time dilates (clocks run
-  slow). For a moving observer, distances in the direction of motion contract (are shorter). Both
-  phenomena must lead to the same physical conclusion.
-  </details>
+    this is longer than its proper half-life of 1.56 μs, it has a chance to make it. Both frames
+    agree on the outcome. **If you get this wrong, you should focus on:** The two key consequences
+    of special relativity. For a stationary observer watching a moving object, time dilates (clocks
+    run slow). For a moving observer, distances in the direction of motion contract (are shorter).
+    Both phenomena must lead to the same physical conclusion.
+
+</details>
