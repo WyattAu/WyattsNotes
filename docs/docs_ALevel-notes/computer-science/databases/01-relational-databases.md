@@ -512,9 +512,9 @@ R(A, B, C) with functional dependencies: AB → C, C → B
 <details>
 <summary>Answer</summary>
 
-**Step 1: Find candidate keys.** By the closure of AB: AB⁺ = {A, B, C}, so AB is a candidate key. By
-the closure of AC: AC → C → B (by C → B and augmentation), so AC → ABC, making AC also a candidate
-key.
+**Step 1: Find candidate keys.** By the closure of AB: AB⁺ = \{A, B, C\}, so AB is a candidate key.
+By the closure of AC: AC → C → B (by C → B and augmentation), so AC → ABC, making AC also a
+candidate key.
 
 **Step 2: Identify BCNF violations.** BCNF requires that for every non-trivial FD X → Y, X must be a
 superkey. The FD C → B is non-trivial, but C is not a superkey (C does not determine A). Therefore R
@@ -525,10 +525,10 @@ is not in BCNF.
 - $R_1(C, B)$ with FD: $C \to B$. Key: $C$. BCNF: ✓ ($C$ is a superkey of $R_1$).
 - $R_2(A, C)$ with FD: $AC \to C$ (trivial). Key: $AC$. BCNF: ✓ ($AC$ is a superkey of $R_2$).
 
-**Step 4: Verify lossless join.** $R_1 \cap R_2 = \{C\}$, and $C \to B$ holds in $R_1$, so the join
-is lossless (by the chase test / BCNF decomposition theorem). ✓
+**Step 4: Verify lossless join.** $R_1 \cap R_2 = \\{C\\}$, and $C \to B$ holds in $R_1$, so the
+join is lossless (by the chase test / BCNF decomposition theorem). ✓
 
-**Step 5: Dependency preservation.** The original FDs are $\{AB \to C,\; C \to B\}$.
+**Step 5: Dependency preservation.** The original FDs are $\\{AB \to C,\; C \to B\\}$.
 
 - $C \to B$ is preserved in $R_1(C, B)$. ✓
 - $AB \to C$: to check this, we need to compute $C$ from $A$ and $B$. In $R_2(A, C)$, given $A$ we
