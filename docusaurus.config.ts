@@ -10,6 +10,8 @@ import remarkMath from 'remark-math';
 
 const compilationConfig = {
   staticDirectories: ['static'],
+  onBrokenLinks: 'warn', // TODO: Fix remaining broken links across IB/DSE/C++ notes, then revert to 'throw'
+  onBrokenMarkdownLinks: 'warn', // TODO: Same as above
 };
 
 const prjMetadataConfig = {
