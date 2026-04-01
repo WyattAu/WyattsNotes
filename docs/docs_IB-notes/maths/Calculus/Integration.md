@@ -10,14 +10,19 @@ slug: Calculus
 
 ## Integration
 
-Integration is the inverse operation of differentiation. Given the derivative of a function, integration recovers the original function (up to an additive constant). It is a central operation in calculus with wide-ranging applications in geometry, physics, and probability.
+Integration is the inverse operation of differentiation. Given the derivative of a function,
+integration recovers the original function (up to an additive constant). It is a central operation
+in calculus with wide-ranging applications in geometry, physics, and probability.
 
 Two principal forms exist:
 
-- **Indefinite integration** (antidifferentiation): finds the general antiderivative of a function, producing a family of functions differing by a constant.
-- **Definite integration**: computes a numerical value representing the signed area under a curve between two limits.
+- **Indefinite integration** (antidifferentiation): finds the general antiderivative of a function,
+  producing a family of functions differing by a constant.
+- **Definite integration**: computes a numerical value representing the signed area under a curve
+  between two limits.
 
-These are linked by the Fundamental Theorem of Calculus, which unifies differentiation and integration into a single coherent framework.
+These are linked by the Fundamental Theorem of Calculus, which unifies differentiation and
+integration into a single coherent framework.
 
 ### Notation
 
@@ -25,7 +30,8 @@ $$
 \int f(x)\,dx = F(x) + C
 $$
 
-where $F'(x) = f(x)$ and $C$ is the constant of integration. The symbol $\int$ is an elongated $S$ (for "sum"), $f(x)$ is the integrand, and $dx$ indicates the variable of integration.
+where $F'(x) = f(x)$ and $C$ is the constant of integration. The symbol $\int$ is an elongated $S$
+(for "sum"), $f(x)$ is the integrand, and $dx$ indicates the variable of integration.
 
 ---
 
@@ -33,7 +39,8 @@ where $F'(x) = f(x)$ and $C$ is the constant of integration. The symbol $\int$ i
 
 ### Definition
 
-A function $F$ is an antiderivative of $f$ on an interval $I$ if $F'(x) = f(x)$ for all $x \in I$. If $F$ is an antiderivative of $f$, then so is $F + C$ for any constant $C \in \mathbb{R}$.
+A function $F$ is an antiderivative of $f$ on an interval $I$ if $F'(x) = f(x)$ for all $x \in I$.
+If $F$ is an antiderivative of $f$, then so is $F + C$ for any constant $C \in \mathbb{R}$.
 
 ### Basic Rules
 
@@ -159,9 +166,11 @@ $$
 
 ### Area Under a Curve
 
-If $f(x) \geq 0$ on $[a, b]$, then $\int_a^b f(x)\,dx$ gives the area between the curve $y = f(x)$, the $x$-axis, and the vertical lines $x = a$ and $x = b$.
+If $f(x) \geq 0$ on $[a, b]$, then $\int_a^b f(x)\,dx$ gives the area between the curve $y = f(x)$,
+the $x$-axis, and the vertical lines $x = a$ and $x = b$.
 
-If $f(x)$ changes sign on $[a, b]$, the integral gives the **net** (signed) area. The total area is computed by splitting at the zeros of $f$ and taking absolute values:
+If $f(x)$ changes sign on $[a, b]$, the integral gives the **net** (signed) area. The total area is
+computed by splitting at the zeros of $f$ and taking absolute values:
 
 $$
 \text{Total area} = \int_a^b |f(x)|\,dx
@@ -206,7 +215,9 @@ $$
 
 ### 3.1 Substitution ($u$-Substitution)
 
-Substitution is the reverse of the chain rule. Given an integral containing a composite function, choose a substitution $u = g(x)$ such that $du = g'(x)\,dx$ transforms the integral into a simpler form.
+Substitution is the reverse of the chain rule. Given an integral containing a composite function,
+choose a substitution $u = g(x)$ such that $du = g'(x)\,dx$ transforms the integral into a simpler
+form.
 
 **General procedure:**
 
@@ -257,11 +268,16 @@ $$
 \int u\,dv = uv - \int v\,du
 $$
 
-**Choosing $u$ and $dv$:** Use the LIATE priority rule (Logarithmic, Inverse trigonometric, Algebraic, Trigonometric, Exponential) to select $u$ as the function that appears first in the list.
+**Choosing $u$ and $dv$:** Use the LIATE priority rule (Logarithmic, Inverse trigonometric,
+Algebraic, Trigonometric, Exponential) to select $u$ as the function that appears first in the list.
 
-Integration by parts may need to be applied repeatedly. For integrals of the form $\int e^{ax}\sin(bx)\,dx$ or $\int e^{ax}\cos(bx)\,dx$, apply integration by parts twice and solve the resulting equation algebraically.
+Integration by parts may need to be applied repeatedly. For integrals of the form
+$\int e^{ax}\sin(bx)\,dx$ or $\int e^{ax}\cos(bx)\,dx$, apply integration by parts twice and solve
+the resulting equation algebraically.
 
-**Tabular (DI) method:** For integrals of the form $\int f(x) g(x)\,dx$ where one factor differentiates to zero after finitely many steps, the tabular method provides an efficient alternative to repeated application of the formula.
+**Tabular (DI) method:** For integrals of the form $\int f(x) g(x)\,dx$ where one factor
+differentiates to zero after finitely many steps, the tabular method provides an efficient
+alternative to repeated application of the formula.
 
 :::info[Examples]
 
@@ -303,7 +319,9 @@ $$
 
 ### 3.3 Partial Fractions
 
-When the integrand is a rational function $\dfrac{P(x)}{Q(x)}$ where $\deg P < \deg Q$ and $Q$ factors into linear or irreducible quadratic factors, partial fraction decomposition converts the integrand into a sum of simpler fractions.
+When the integrand is a rational function $\dfrac{P(x)}{Q(x)}$ where $\deg P < \deg Q$ and $Q$
+factors into linear or irreducible quadratic factors, partial fraction decomposition converts the
+integrand into a sum of simpler fractions.
 
 **Decomposition rules:**
 
@@ -366,9 +384,12 @@ $$
 \sin A \sin B = \frac{1}{2}[\cos(A-B) - \cos(A+B)]
 $$
 
-**Using substitution with trigonometric derivatives:** Recall that $\dfrac{d}{dx}(\sin x) = \cos x$ and $\dfrac{d}{dx}(\cos x) = -\sin x$. Many trigonometric integrals yield to $u$-substitution when the derivative of one trigonometric factor is present.
+**Using substitution with trigonometric derivatives:** Recall that $\dfrac{d}{dx}(\sin x) = \cos x$
+and $\dfrac{d}{dx}(\cos x) = -\sin x$. Many trigonometric integrals yield to $u$-substitution when
+the derivative of one trigonometric factor is present.
 
-**Integrals of the form $\int \tan^n x\,dx$:** Rewrite in terms of $\sec^2 x$ and use $\dfrac{d}{dx}(\tan x) = \sec^2 x$.
+**Integrals of the form $\int \tan^n x\,dx$:** Rewrite in terms of $\sec^2 x$ and use
+$\dfrac{d}{dx}(\tan x) = \sec^2 x$.
 
 :::info[Examples]
 
@@ -405,13 +426,15 @@ $$
 
 ### 4.1 Area Between Two Curves
 
-Given two continuous functions $f$ and $g$ with $f(x) \geq g(x)$ on $[a, b]$, the area between the curves is:
+Given two continuous functions $f$ and $g$ with $f(x) \geq g(x)$ on $[a, b]$, the area between the
+curves is:
 
 $$
 A = \int_a^b [f(x) - g(x)]\,dx
 $$
 
-If the curves intersect, find the points of intersection and split the integral accordingly so that the integrand $|f(x) - g(x)|$ is always non-negative.
+If the curves intersect, find the points of intersection and split the integral accordingly so that
+the integrand $|f(x) - g(x)|$ is always non-negative.
 
 **Horizontal strips:** When integrating with respect to $y$, the formula becomes:
 
@@ -442,7 +465,8 @@ $$
 
 ### 4.2 Volumes of Revolution
 
-When a region bounded by $y = f(x)$, the $x$-axis, and the lines $x = a$, $x = b$ is revolved about the $x$-axis, the volume of the solid of revolution is:
+When a region bounded by $y = f(x)$, the $x$-axis, and the lines $x = a$, $x = b$ is revolved about
+the $x$-axis, the volume of the solid of revolution is:
 
 $$
 V = \pi \int_a^b [f(x)]^2\,dx
@@ -476,7 +500,8 @@ where $f(x) \geq g(x) \geq 0$ on $[a, b]$.
     <summary>Expand</summary>
     <p>
 
-**Find the volume generated by revolving $y = \sqrt{x}$ about the $x$-axis from $x = 0$ to $x = 4$.**
+**Find the volume generated by revolving $y = \sqrt{x}$ about the $x$-axis from $x = 0$ to
+$x = 4$.**
 
 $$
 \begin{aligned}
@@ -502,11 +527,13 @@ $$
 s(t) = \int v(t)\,dt + s_0
 $$
 
-where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$, $s_0$ are initial conditions.
+where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$, $s_0$ are
+initial conditions.
 
 **Key relationships:**
 
-- The **displacement** over a time interval $[t_1, t_2]$ is $\displaystyle\int_{t_1}^{t_2} v(t)\,dt$.
+- The **displacement** over a time interval $[t_1, t_2]$ is
+  $\displaystyle\int_{t_1}^{t_2} v(t)\,dt$.
 - The **total distance travelled** is $\displaystyle\int_{t_1}^{t_2} |v(t)|\,dt$.
 - The velocity is the derivative of displacement: $v = \dfrac{ds}{dt}$.
 - The acceleration is the derivative of velocity: $a = \dfrac{dv}{dt}$.
@@ -517,7 +544,8 @@ where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v
     <summary>Expand</summary>
     <p>
 
-**A particle moves with velocity $v(t) = 6t^2 - 4t$ m/s for $t \geq 0$. Find the displacement and total distance in the first 3 seconds.**
+**A particle moves with velocity $v(t) = 6t^2 - 4t$ m/s for $t \geq 0$. Find the displacement and
+total distance in the first 3 seconds.**
 
 Displacement:
 
@@ -545,7 +573,8 @@ $$
 
 ## 5. Properties of Definite Integrals
 
-These properties follow from the definition of the definite integral and are essential for simplifying computations.
+These properties follow from the definition of the definite integral and are essential for
+simplifying computations.
 
 ### Linearity
 
@@ -579,7 +608,8 @@ for any $c \in [a, b]$.
 
 If $f(x) \geq 0$ for all $x \in [a, b]$, then $\displaystyle\int_a^b f(x)\,dx \geq 0$.
 
-If $f(x) \geq g(x)$ for all $x \in [a, b]$, then $\displaystyle\int_a^b f(x)\,dx \geq \int_a^b g(x)\,dx$.
+If $f(x) \geq g(x)$ for all $x \in [a, b]$, then
+$\displaystyle\int_a^b f(x)\,dx \geq \int_a^b g(x)\,dx$.
 
 ### Bounds on the Integral
 
@@ -613,7 +643,9 @@ $$
 
 ## 6. Improper Integrals (HL)
 
-Improper integrals extend the concept of definite integration to cases where the interval of integration is unbounded or the integrand has a vertical asymptote within (or at an endpoint of) the interval of integration.
+Improper integrals extend the concept of definite integration to cases where the interval of
+integration is unbounded or the integrand has a vertical asymptote within (or at an endpoint of) the
+interval of integration.
 
 ### Type 1: Infinite Limits of Integration
 
@@ -653,9 +685,11 @@ $$
 
 ### Convergence and Divergence
 
-An improper integral **converges** if the corresponding limit exists and is finite. It **diverges** otherwise.
+An improper integral **converges** if the corresponding limit exists and is finite. It **diverges**
+otherwise.
 
-**$p$-test for convergence:** The integral $\displaystyle\int_1^{\infty} \frac{1}{x^p}\,dx$ converges if and only if $p > 1$, in which case:
+**$p$-test for convergence:** The integral $\displaystyle\int_1^{\infty} \frac{1}{x^p}\,dx$
+converges if and only if $p > 1$, in which case:
 
 $$
 \int_1^{\infty} \frac{1}{x^p}\,dx = \frac{1}{p - 1}
@@ -663,7 +697,9 @@ $$
 
 Similarly, $\displaystyle\int_0^1 \frac{1}{x^p}\,dx$ converges if and only if $p < 1$.
 
-**Comparison test:** If $0 \leq f(x) \leq g(x)$ for all $x \geq a$, and $\int_a^{\infty} g(x)\,dx$ converges, then $\int_a^{\infty} f(x)\,dx$ also converges. Conversely, if $\int_a^{\infty} f(x)\,dx$ diverges, then $\int_a^{\infty} g(x)\,dx$ also diverges.
+**Comparison test:** If $0 \leq f(x) \leq g(x)$ for all $x \geq a$, and $\int_a^{\infty} g(x)\,dx$
+converges, then $\int_a^{\infty} f(x)\,dx$ also converges. Conversely, if $\int_a^{\infty} f(x)\,dx$
+diverges, then $\int_a^{\infty} g(x)\,dx$ also diverges.
 
 :::info[Examples]
 
@@ -708,9 +744,11 @@ The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} <
     <summary>Find $\int \frac{x^3 + 2x}{\sqrt{x^2 + 1}}\,dx$</summary>
     <p>
 
-Let $u = x^2 + 1$, $du = 2x\,dx$. Note that $x^3 + 2x = x(x^2 + 1) + x = xu + \frac{u - 1}{2} + \frac{1}{2}$.
+Let $u = x^2 + 1$, $du = 2x\,dx$. Note that
+$x^3 + 2x = x(x^2 + 1) + x = xu + \frac{u - 1}{2} + \frac{1}{2}$.
 
-Alternatively, split: $\dfrac{x^3 + 2x}{\sqrt{x^2 + 1}} = \dfrac{x(x^2 + 1)}{\sqrt{x^2 + 1}} + \dfrac{x}{\sqrt{x^2 + 1}} = x\sqrt{x^2 + 1} + \dfrac{x}{\sqrt{x^2 + 1}}$.
+Alternatively, split:
+$\dfrac{x^3 + 2x}{\sqrt{x^2 + 1}} = \dfrac{x(x^2 + 1)}{\sqrt{x^2 + 1}} + \dfrac{x}{\sqrt{x^2 + 1}} = x\sqrt{x^2 + 1} + \dfrac{x}{\sqrt{x^2 + 1}}$.
 
 $$
 \begin{aligned}
@@ -877,7 +915,8 @@ $$
     <summary>Determine whether $\displaystyle\int_2^{\infty} \frac{1}{x(\ln x)^2}\,dx$ converges, and evaluate if it does.</summary>
     <p>
 
-Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$. When $x = 2$, $u = \ln 2$; when $x \to \infty$, $u \to \infty$.
+Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$. When $x = 2$, $u = \ln 2$; when $x \to \infty$,
+$u \to \infty$.
 
 $$
 \begin{aligned}
@@ -954,7 +993,8 @@ $$
 I = e^x \sin x - \int e^x \sin x\,dx
 $$
 
-Second application on $\int e^x \sin x\,dx$: $u = e^x$, $dv = \sin x\,dx$, so $du = e^x\,dx$, $v = -\cos x$.
+Second application on $\int e^x \sin x\,dx$: $u = e^x$, $dv = \sin x\,dx$, so $du = e^x\,dx$,
+$v = -\cos x$.
 
 $$
 \int e^x \sin x\,dx = -e^x \cos x + \int e^x \cos x\,dx = -e^x \cos x + I
@@ -979,7 +1019,14 @@ $$
 
 ## Cross-References
 
-- **Differentiation** -- Integration is the inverse operation of differentiation. See the [Calculus: Differentiation](/docs_IB-notes/maths/Calculus/Differentiation) notes for derivative rules that motivate integration techniques.
-- **Functions** -- Domain and range considerations determine when antiderivatives are valid. See [Number and Algebra](/docs_IB-notes/maths/Number-and-algebra/Number-and-algebra) for function fundamentals.
-- **Complex Numbers** -- The exponential form $e^{i\theta} = \cos\theta + i\sin\theta$ provides an elegant derivation of trigonometric integral results. See [Complex Numbers](/docs_IB-notes/maths/Number-and-algebra/Complex).
-- **Logic** -- Proof techniques (direct proof, contradiction) are used to justify properties of integrals. See [Logic](/docs_IB-notes/maths/Discrete-maths/logic).
+- **Differentiation** -- Integration is the inverse operation of differentiation. See the
+  [Number and Algebra](/docs/docs_IB-notes/maths/Number-and-algebra/number-algebra) notes for
+  function fundamentals including derivative rules that motivate integration techniques.
+- **Functions** -- Domain and range considerations determine when antiderivatives are valid. See
+  [Number and Algebra](/docs/docs_IB-notes/maths/Number-and-algebra/number-algebra) for function
+  fundamentals.
+- **Complex Numbers** -- The exponential form $e^{i\theta} = \cos\theta + i\sin\theta$ provides an
+  elegant derivation of trigonometric integral results. See
+  [Complex Numbers](/docs/docs_IB-notes/maths/Number-and-algebra/complex-numbers).
+- **Logic** -- Proof techniques (direct proof, contradiction) are used to justify properties of
+  integrals. See [Logic](/docs/docs_IB-notes/maths/Discrete-maths/logic).

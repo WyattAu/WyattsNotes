@@ -180,20 +180,34 @@ This is based on the IB Mathematics: Analysis and Approaches syllabus (first ass
 
 #### Standard Level (SL)
 
-The SL course covers Topics 1-5 at a foundational level. Students are expected to understand and apply core concepts in number and algebra, functions, geometry and trigonometry, statistics and probability, and calculus. Internal assessment (IA) counts for 20% of the final grade, and the remaining 80% is assessed through two written examination papers (Paper 1: non-calculator, Paper 2: calculator).
+The SL course covers Topics 1-5 at a foundational level. Students are expected to understand and
+apply core concepts in number and algebra, functions, geometry and trigonometry, statistics and
+probability, and calculus. Internal assessment (IA) counts for 20% of the final grade, and the
+remaining 80% is assessed through two written examination papers (Paper 1: non-calculator, Paper 2:
+calculator).
 
 #### Higher Level (HL)
 
-The HL course extends the SL content with additional subtopics in all five areas. HL students sit two additional papers (Paper 3: problem-solving with extended response questions) and cover more advanced techniques including complex numbers, matrices, further calculus, and hypothesis testing. The HL course demands deeper conceptual understanding and greater fluency with algebraic manipulation.
+The HL course extends the SL content with additional subtopics in all five areas. HL students sit
+two additional papers (Paper 3: problem-solving with extended response questions) and cover more
+advanced techniques including complex numbers, matrices, further calculus, and hypothesis testing.
+The HL course demands deeper conceptual understanding and greater fluency with algebraic
+manipulation.
 
 ---
 
 ### Links to Existing Content
 
-- [Number and Algebra](/docs/docs_IB-notes/maths/Number-and-algebra/Number-and-algebra) -- arithmetic and geometric sequences, sigma notation, binomial theorem
-- [Complex Numbers](/docs/docs_IB-notes/maths/Number-and-algebra/Complex) -- complex numbers in Cartesian, polar, and Euler form; De Moivre's theorem; roots of polynomials
-- [Trigonometry](/docs/docs_IB-notes/maths/geometry-and-trigonometry/trigonometry) -- trigonometric functions, identities, sine and cosine rules
-- [Vectors](/docs/docs_IB-notes/maths/geometry-and-trigonometry/vectors) -- vector operations, scalar and cross products, lines and planes
-- [Integration](/docs/docs_IB-notes/maths/Calculus/Integration) -- antiderivatives, definite integration, area, integration techniques
-- [Logic (Discrete Maths)](/docs/docs_IB-notes/maths/Discrete-maths/logic) -- propositional logic, truth tables, proof
+- [Number and Algebra](/docs/docs_IB-notes/maths/Number-and-algebra/number-algebra) -- arithmetic
+  and geometric sequences, sigma notation, binomial theorem
+- [Complex Numbers](/docs/docs_IB-notes/maths/Number-and-algebra/complex-numbers) -- complex numbers
+  in Cartesian, polar, and Euler form; De Moivre's theorem; roots of polynomials
+- [Trigonometry](/docs/docs_IB-notes/maths/geometry-and-trigonometry/trigonometry) -- trigonometric
+  functions, identities, sine and cosine rules
+- [Vectors](/docs/docs_IB-notes/maths/geometry-and-trigonometry/vectors) -- vector operations,
+  scalar and cross products, lines and planes
+- [Integration](/docs/docs_IB-notes/maths/Calculus/Integration) -- antiderivatives, definite
+  integration, area, integration techniques
+- [Logic (Discrete Maths)](/docs/docs_IB-notes/maths/Discrete-maths/logic) -- propositional logic,
+  truth tables, proof
 - [Maths Index](/docs/docs_IB-notes/maths/maths) -- overview of all mathematics notes

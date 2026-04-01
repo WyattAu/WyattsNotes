@@ -9,13 +9,17 @@ categories:
 slug: trigonometry
 ---
 
-Trigonometry is the study of relationships involving lengths and angles of triangles. It is a central topic in the DSE Mathematics compulsory syllabus, connecting [coordinate geometry](./geometries.md) with algebraic techniques and serving as a foundation for many applied problems in two and three dimensions.
+Trigonometry is the study of relationships involving lengths and angles of triangles. It is a
+central topic in the DSE Mathematics compulsory syllabus, connecting
+[coordinate geometry](./geometries.md) with algebraic techniques and serving as a foundation for
+many applied problems in two and three dimensions.
 
 ## Angles and Arcs
 
 ### Degrees and Radians
 
-Angles can be measured in degrees or radians. A full revolution is $360^\circ$ or $2\pi$ radians, giving the fundamental conversion:
+Angles can be measured in degrees or radians. A full revolution is $360^\circ$ or $2\pi$ radians,
+giving the fundamental conversion:
 
 $$
 \begin{aligned}
@@ -32,7 +36,8 @@ $$
 \end{aligned}
 $$
 
-The radian measure of a positive angle is the ratio of the arc length to the radius. Radians are a dimensionless quantity and are the default unit in calculus and many advanced applications.
+The radian measure of a positive angle is the ratio of the arc length to the radius. Radians are a
+dimensionless quantity and are the default unit in calculus and many advanced applications.
 
 Common angle equivalences:
 
@@ -59,7 +64,9 @@ $$
 \end{aligned}
 $$
 
-This formula only applies when $\theta$ is in radians. If the angle is given in degrees, convert to radians first. This formula is also covered in the context of [circles and sectors](./geometries.md#arcs-and-sectors).
+This formula only applies when $\theta$ is in radians. If the angle is given in degrees, convert to
+radians first. This formula is also covered in the context of
+[circles and sectors](./geometries.md#arcs-and-sectors).
 
 ### Area of a Sector
 
@@ -143,7 +150,9 @@ $$
 \end{aligned}
 $$
 
-This follows directly from the [Pythagorean theorem](./geometries.md#pythagorean-theorem) applied to a right-angled triangle with hypotenuse $1$. Two useful corollaries are obtained by dividing through by $\cos^2\theta$ or $\sin^2\theta$:
+This follows directly from the [Pythagorean identity](#pythagorean-identity) applied to a
+right-angled triangle with hypotenuse $1$. Two useful corollaries are obtained by dividing through
+by $\cos^2\theta$ or $\sin^2\theta$:
 
 $$
 \begin{aligned}
@@ -203,7 +212,8 @@ The exact trigonometric values for the standard angles must be memorised for the
 | $\cos\theta$ | $1$             | $\frac{\sqrt{3}}{2}$                    | $\frac{\sqrt{2}}{2}$                    | $\frac{1}{2}$                           | $0$                                     |
 | $\tan\theta$ | $0$             | $\frac{1}{\sqrt{3}}$                    | $1$                                     | $\sqrt{3}$                              | undefined                               |
 
-These values can be derived from the equilateral triangle ($30^\circ$-$60^\circ$-$90^\circ$) and the isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
+These values can be derived from the equilateral triangle ($30^\circ$-$60^\circ$-$90^\circ$) and the
+isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 
 <details>
 <summary>Examples</summary>
@@ -256,7 +266,8 @@ The graph is an even function ($\cos(-x) = \cos x$), symmetric about the $y$-axi
 | $x$-intercepts | $n\pi$, $n \in \mathbb{Z}$    |
 | Asymptotes     | $x = \frac{\pi}{2} + n\pi$    |
 
-The graph is an odd function ($\tan(-x) = -\tan x$). The tangent function has vertical asymptotes where $\cos x = 0$.
+The graph is an odd function ($\tan(-x) = -\tan x$). The tangent function has vertical asymptotes
+where $\cos x = 0$.
 
 ### General Transformations
 
@@ -290,9 +301,11 @@ $$
 
 ### General Solutions
 
-When solving $\sin\theta = k$, $\cos\theta = k$, or $\tan\theta = k$, the solutions repeat periodically. The general solutions (in degrees) are:
+When solving $\sin\theta = k$, $\cos\theta = k$, or $\tan\theta = k$, the solutions repeat
+periodically. The general solutions (in degrees) are:
 
-**For $\sin\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arcsin k$ be the principal value in $[-90^\circ, 90^\circ]$:
+**For $\sin\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arcsin k$ be the principal value
+in $[-90^\circ, 90^\circ]$:
 
 $$
 \begin{aligned}
@@ -300,7 +313,8 @@ $$
 \end{aligned}
 $$
 
-**For $\cos\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arccos k$ be the principal value in $[0^\circ, 180^\circ]$:
+**For $\cos\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arccos k$ be the principal value
+in $[0^\circ, 180^\circ]$:
 
 $$
 \begin{aligned}
@@ -308,7 +322,8 @@ $$
 \end{aligned}
 $$
 
-**For $\tan\theta = k$** (for all real $k$), let $\alpha = \arctan k$ be the principal value in $(-90^\circ, 90^\circ)$:
+**For $\tan\theta = k$** (for all real $k$), let $\alpha = \arctan k$ be the principal value in
+$(-90^\circ, 90^\circ)$:
 
 $$
 \begin{aligned}
@@ -320,7 +335,8 @@ In radians, replace $360^\circ$ with $2\pi$ and $180^\circ$ with $\pi$.
 
 ### Solving Within a Given Interval
 
-To find all solutions within a specified interval (e.g., $0^\circ \leq \theta < 360^\circ$ or $0 \leq \theta < 2\pi$):
+To find all solutions within a specified interval (e.g., $0^\circ \leq \theta < 360^\circ$ or
+$0 \leq \theta < 2\pi$):
 
 1. Find the principal value $\alpha$ using the inverse trigonometric function.
 2. Use the general solution formula to list all solutions in the required interval.
@@ -330,9 +346,12 @@ To find all solutions within a specified interval (e.g., $0^\circ \leq \theta < 
 
 Many trigonometric equations require algebraic manipulation before they can be solved:
 
-- **Factorisation**: Extract common factors, e.g., $2\sin\theta\cos\theta - \sin\theta = 0 \implies \sin\theta(2\cos\theta - 1) = 0$.
-- **Pythagorean substitution**: Replace $\sin^2\theta$ with $1 - \cos^2\theta$ (or vice versa) to obtain an equation in a single function.
-- **Quotient substitution**: Replace $\tan\theta$ with $\frac{\sin\theta}{\cos\theta}$ and clear denominators.
+- **Factorisation**: Extract common factors, e.g.,
+  $2\sin\theta\cos\theta - \sin\theta = 0 \implies \sin\theta(2\cos\theta - 1) = 0$.
+- **Pythagorean substitution**: Replace $\sin^2\theta$ with $1 - \cos^2\theta$ (or vice versa) to
+  obtain an equation in a single function.
+- **Quotient substitution**: Replace $\tan\theta$ with $\frac{\sin\theta}{\cos\theta}$ and clear
+  denominators.
 
 <details>
 <summary>Examples</summary>
@@ -356,7 +375,9 @@ $$
 \end{aligned}
 $$
 
-The sine rule is most useful when one side-side-angle (SSA) or angle-angle-side (AAS) configuration is known. In the ambiguous SSA case, two distinct triangles may satisfy the given conditions (the "ambiguous case").
+The sine rule is most useful when one side-side-angle (SSA) or angle-angle-side (AAS) configuration
+is known. In the ambiguous SSA case, two distinct triangles may satisfy the given conditions (the
+"ambiguous case").
 
 ### Cosine Rule
 
@@ -369,7 +390,8 @@ $$
 \end{aligned}
 $$
 
-The cosine rule generalises the Pythagorean theorem and is most useful for side-side-side (SSS) or side-angle-side (SAS) configurations.
+The cosine rule generalises the Pythagorean theorem and is most useful for side-side-side (SSS) or
+side-angle-side (SAS) configurations.
 
 ### Area of a Triangle Using Trigonometry
 
@@ -379,31 +401,39 @@ $$
 \end{aligned}
 $$
 
-This is derived from the standard formula $\text{Area} = \frac{1}{2} \times \text{base} \times \text{height}$, where the height is expressed using a trigonometric ratio.
+This is derived from the standard formula
+$\text{Area} = \frac{1}{2} \times \text{base} \times \text{height}$, where the height is expressed
+using a trigonometric ratio.
 
 ### Bearings
 
 A bearing is the angle measured clockwise from north. Key conventions:
 
 - Bearings are always given as three-digit numbers from $000^\circ$ to $360^\circ$.
-- The bearing of $B$ from $A$ is generally different from the bearing of $A$ from $B$ (they differ by $180^\circ$ unless the points are collinear with north).
+- The bearing of $B$ from $A$ is generally different from the bearing of $A$ from $B$ (they differ
+  by $180^\circ$ unless the points are collinear with north).
 
 ### Angles of Elevation and Depression
 
 - **Angle of elevation**: the angle above the horizontal from the observer to the object.
 - **Angle of depression**: the angle below the horizontal from the observer to the object.
 
-When the observer and the object are at different heights, these two angles are equal if measured from corresponding horizontal lines (alternate angles).
+When the observer and the object are at different heights, these two angles are equal if measured
+from corresponding horizontal lines (alternate angles).
 
 ### 3D Problems
 
-Three-dimensional trigonometry problems often involve finding the angle between a line and a plane. The standard approach:
+Three-dimensional trigonometry problems often involve finding the angle between a line and a plane.
+The standard approach:
 
 1. Identify the relevant right-angled triangle in the 3D figure.
 2. Drop a perpendicular from a point to the plane to create a right angle.
-3. The angle between the line and the plane is the angle between the line and its projection onto the plane. If $\alpha$ is the angle between the line and the normal to the plane, then the angle $\phi$ between the line and the plane satisfies $\phi = 90^\circ - \alpha$.
+3. The angle between the line and the plane is the angle between the line and its projection onto
+   the plane. If $\alpha$ is the angle between the line and the normal to the plane, then the angle
+   $\phi$ between the line and the plane satisfies $\phi = 90^\circ - \alpha$.
 
-This connects to the vector formulation described in the [3D geometry](./geometries.md#angles-between-lines-and-planes) section.
+This connects to the vector formulation described in the
+[3D geometry](./geometries.md#angles-between-lines-and-planes) section.
 
 <details>
 <summary>Examples</summary>
@@ -423,7 +453,8 @@ This connects to the vector formulation described in the [3D geometry](./geometr
 <summary>Wrap-up Questions</summary>
 <p>
 
-1. **Question:** Convert $210^\circ$ to radians and find the exact values of $\sin 210^\circ$, $\cos 210^\circ$, and $\tan 210^\circ$.
+1. **Question:** Convert $210^\circ$ to radians and find the exact values of $\sin 210^\circ$,
+   $\cos 210^\circ$, and $\tan 210^\circ$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -435,7 +466,8 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-2. **Question:** A sector of a circle of radius $8$ cm has an area of $32\pi$ cm$^2$. Find the arc length and the perimeter of the sector.
+2. **Question:** A sector of a circle of radius $8$ cm has an area of $32\pi$ cm$^2$. Find the arc
+   length and the perimeter of the sector.
    <details>
    <summary>Answer</summary>
    <p>
@@ -458,7 +490,8 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-4. **Question:** In $\triangle ABC$, $a = 10$, $b = 7$, $c = 8$. Find the largest angle of the triangle.
+4. **Question:** In $\triangle ABC$, $a = 10$, $b = 7$, $c = 8$. Find the largest angle of the
+   triangle.
    <details>
    <summary>Answer</summary>
    <p>
@@ -468,7 +501,9 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-5. **Question:** From a point $A$ on the ground, the angle of elevation of the top $T$ of a vertical tower is $40^\circ$. From a point $B$, $30$ m closer to the base of the tower, the angle of elevation is $55^\circ$. Find the height of the tower.
+5. **Question:** From a point $A$ on the ground, the angle of elevation of the top $T$ of a vertical
+   tower is $40^\circ$. From a point $B$, $30$ m closer to the base of the tower, the angle of
+   elevation is $55^\circ$. Find the height of the tower.
    <details>
    <summary>Answer</summary>
    <p>
@@ -482,7 +517,9 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-6. **Question:** A ship $S$ is observed from two lighthouses $A$ and $B$ which are $5$ km apart. The bearing of $S$ from $A$ is $050^\circ$ and the bearing of $S$ from $B$ is $320^\circ$. Find the distance of $S$ from $A$.
+6. **Question:** A ship $S$ is observed from two lighthouses $A$ and $B$ which are $5$ km apart. The
+   bearing of $S$ from $A$ is $050^\circ$ and the bearing of $S$ from $B$ is $320^\circ$. Find the
+   distance of $S$ from $A$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -494,7 +531,8 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-7. **Question:** Prove the identity $\frac{\sin\theta}{1 - \cos\theta} = \frac{1 + \cos\theta}{\sin\theta}$ for $\sin\theta \neq 0$.
+7. **Question:** Prove the identity
+   $\frac{\sin\theta}{1 - \cos\theta} = \frac{1 + \cos\theta}{\sin\theta}$ for $\sin\theta \neq 0$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -506,7 +544,9 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-8. **Question:** A pyramid has a square base $ABCD$ of side $6$ cm and vertex $V$. The slant edges $VA = VB = VC = VD = 5\sqrt{2}$ cm. Find (a) the height of the pyramid, and (b) the angle between the slant edge $VA$ and the base.
+8. **Question:** A pyramid has a square base $ABCD$ of side $6$ cm and vertex $V$. The slant edges
+   $VA = VB = VC = VD = 5\sqrt{2}$ cm. Find (a) the height of the pyramid, and (b) the angle between
+   the slant edge $VA$ and the base.
    <details>
    <summary>Answer</summary>
    <p>
@@ -519,7 +559,9 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-9. **Question:** Sketch the graph of $y = 2\sin\left(x - \frac{\pi}{4}\right) + 1$ for $0 \leq x \leq 2\pi$. State the maximum value, minimum value, and the coordinates of all $x$-intercepts in this interval.
+9. **Question:** Sketch the graph of $y = 2\sin\left(x - \frac{\pi}{4}\right) + 1$ for
+   $0 \leq x \leq 2\pi$. State the maximum value, minimum value, and the coordinates of all
+   $x$-intercepts in this interval.
    <details>
    <summary>Answer</summary>
    <p>
@@ -533,7 +575,9 @@ This connects to the vector formulation described in the [3D geometry](./geometr
    </p>
    </details>
 
-10. **Question:** Two observers $A$ and $B$ are on opposite sides of a vertical tower. $A$ and $B$ are $100$ m apart on level ground. The angle of elevation of the top of the tower from $A$ is $30^\circ$ and from $B$ is $45^\circ$. Find the height of the tower.
+10. **Question:** Two observers $A$ and $B$ are on opposite sides of a vertical tower. $A$ and $B$
+    are $100$ m apart on level ground. The angle of elevation of the top of the tower from $A$ is
+    $30^\circ$ and from $B$ is $45^\circ$. Find the height of the tower.
     <details>
     <summary>Answer</summary>
     <p>
@@ -560,7 +604,8 @@ This connects to the vector formulation described in the [3D geometry](./geometr
     </p>
     </details>
 
-12. **Question:** In $\triangle ABC$, $a = 5$, $b = 7$, $A = 40^\circ$. Determine whether two distinct triangles exist, and find all possible values of $B$.
+12. **Question:** In $\triangle ABC$, $a = 5$, $b = 7$, $A = 40^\circ$. Determine whether two
+    distinct triangles exist, and find all possible values of $B$.
     <details>
     <summary>Answer</summary>
     <p>

@@ -12,10 +12,9 @@ slug: logarithms
 Logarithms are the inverse operation of exponentiation and play a central role in the DSE
 Mathematics compulsory syllabus. They arise naturally when solving exponential equations, modelling
 growth and decay, and simplifying multiplicative structures into additive ones. This topic builds
-directly on the properties of
-[exponential functions](./functions.md#exponential-and-logarithmic-functions) and connects to
-[geometric sequences and series](./sequences-and-series.md) in applications involving compound
-growth.
+directly on the properties of [exponential functions](./functions.md#exponential-functions) and
+connects to [geometric sequences and series](./sequences-and-series.md) in applications involving
+compound growth.
 
 ## Definition of Logarithms
 

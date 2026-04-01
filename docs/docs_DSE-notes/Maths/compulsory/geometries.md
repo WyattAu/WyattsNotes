@@ -9,17 +9,22 @@ categories:
 slug: geometries
 ---
 
-Coordinate geometry provides a bridge between algebraic equations and geometric figures, enabling the use of algebraic methods to solve geometric problems and vice versa.
+Coordinate geometry provides a bridge between algebraic equations and geometric figures, enabling
+the use of algebraic methods to solve geometric problems and vice versa.
 
 ## 2D Coordinate Geometry
 
 ### The Rectangular Coordinate System
 
-In the Cartesian plane, every point $P$ is uniquely identified by an ordered pair $(x, y)$, where $x$ is the horizontal coordinate (abscissa) and $y$ is the vertical coordinate (ordinate). The axes divide the plane into four quadrants, numbered counterclockwise from the positive $x$-axis.
+In the Cartesian plane, every point $P$ is uniquely identified by an ordered pair $(x, y)$, where
+$x$ is the horizontal coordinate (abscissa) and $y$ is the vertical coordinate (ordinate). The axes
+divide the plane into four quadrants, numbered counterclockwise from the positive $x$-axis.
 
 ### Distance Formula
 
-The distance between two points $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$ is derived from the [Pythagorean theorem](./trigonometry.md#pythagorean-theorem) applied to the right triangle formed by the horizontal and vertical differences:
+The distance between two points $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$ is derived from the
+[Pythagorean identity](./trigonometry.md#pythagorean-identity) applied to the right triangle formed
+by the horizontal and vertical differences:
 
 $$
 \begin{aligned}
@@ -58,7 +63,8 @@ The midpoint is the average of the respective coordinates of the two endpoints.
 
 ### Gradient (Slope)
 
-The gradient $m$ of the line passing through $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$, where $x_1 \neq x_2$, measures the rate of change of $y$ with respect to $x$:
+The gradient $m$ of the line passing through $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$, where
+$x_1 \neq x_2$, measures the rate of change of $y$ with respect to $x$:
 
 $$
 \begin{aligned}
@@ -66,7 +72,8 @@ $$
 \end{aligned}
 $$
 
-where $\theta$ is the angle the line makes with the positive $x$-axis. A vertical line (where $x_1 = x_2$) has an undefined gradient. Key gradient values include:
+where $\theta$ is the angle the line makes with the positive $x$-axis. A vertical line (where
+$x_1 = x_2$) has an undefined gradient. Key gradient values include:
 
 | Gradient  | Interpretation                          |
 | --------- | --------------------------------------- |
@@ -85,7 +92,8 @@ where $\theta$ is the angle the line makes with the positive $x$-axis. A vertica
 
 ### Division of a Line Segment
 
-If point $P(x, y)$ divides the line segment joining $A(x_1, y_1)$ and $B(x_2, y_2)$ in the ratio $m : n$ (internally), then:
+If point $P(x, y)$ divides the line segment joining $A(x_1, y_1)$ and $B(x_2, y_2)$ in the ratio
+$m : n$ (internally), then:
 
 $$
 \begin{aligned}
@@ -107,7 +115,8 @@ $$
 \end{aligned}
 $$
 
-where $m$ is the gradient and $c$ is the $y$-intercept. This form is most useful when the gradient and $y$-intercept are known or can be easily determined.
+where $m$ is the gradient and $c$ is the $y$-intercept. This form is most useful when the gradient
+and $y$-intercept are known or can be easily determined.
 
 ### Point-Slope Form
 
@@ -151,7 +160,8 @@ $$
 \end{aligned}
 $$
 
-where $A$, $B$, $C$ are constants and $A$ and $B$ are not both zero. The gradient is $m = -\frac{A}{B}$ and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
+where $A$, $B$, $C$ are constants and $A$ and $B$ are not both zero. The gradient is
+$m = -\frac{A}{B}$ and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
 
 <details>
 <summary>Examples</summary>
@@ -166,7 +176,8 @@ where $A$, $B$, $C$ are constants and $A$ and $B$ are not both zero. The gradien
 
 ### Parallel Lines
 
-Two non-vertical lines with gradients $m_1$ and $m_2$ are parallel if and only if their gradients are equal:
+Two non-vertical lines with gradients $m_1$ and $m_2$ are parallel if and only if their gradients
+are equal:
 
 $$
 \begin{aligned}
@@ -174,7 +185,8 @@ $$
 \end{aligned}
 $$
 
-In the general form $Ax + By + C = 0$, two lines $A_1x + B_1y + C_1 = 0$ and $A_2x + B_2y + C_2 = 0$ are parallel if and only if:
+In the general form $Ax + By + C = 0$, two lines $A_1x + B_1y + C_1 = 0$ and $A_2x + B_2y + C_2 = 0$
+are parallel if and only if:
 
 $$
 \begin{aligned}
@@ -186,7 +198,8 @@ If all three ratios are equal, the lines are coincident (the same line).
 
 ### Perpendicular Lines
 
-Two non-vertical lines with gradients $m_1$ and $m_2$ are perpendicular if and only if the product of their gradients equals $-1$:
+Two non-vertical lines with gradients $m_1$ and $m_2$ are perpendicular if and only if the product
+of their gradients equals $-1$:
 
 $$
 \begin{aligned}
@@ -213,7 +226,9 @@ $$
 
 ### Intersection of Two Lines
 
-The point of intersection of two non-parallel lines $A_1x + B_1y + C_1 = 0$ and $A_2x + B_2y + C_2 = 0$ is found by solving the system simultaneously. The coordinates $(x, y)$ of the intersection satisfy both equations.
+The point of intersection of two non-parallel lines $A_1x + B_1y + C_1 = 0$ and
+$A_2x + B_2y + C_2 = 0$ is found by solving the system simultaneously. The coordinates $(x, y)$ of
+the intersection satisfy both equations.
 
 <details>
 <summary>Examples</summary>
@@ -258,7 +273,8 @@ $$
 \end{aligned}
 $$
 
-For a real circle to exist, we require $\left(\frac{D}{2}\right)^2 + \left(\frac{E}{2}\right)^2 - F > 0$.
+For a real circle to exist, we require
+$\left(\frac{D}{2}\right)^2 + \left(\frac{E}{2}\right)^2 - F > 0$.
 
 <details>
 <summary>Examples</summary>
@@ -280,7 +296,10 @@ The equation of a circle can be determined when given:
 
 ### Intersection of a Line and a Circle
 
-To find the points of intersection of the line $y = mx + c$ and the circle $(x-a)^2 + (y-b)^2 = r^2$, substitute the line equation into the circle equation to obtain a quadratic in $x$ (or $y$). The discriminant $\Delta = b^2 - 4ac$ determines the nature of intersection:
+To find the points of intersection of the line $y = mx + c$ and the circle
+$(x-a)^2 + (y-b)^2 = r^2$, substitute the line equation into the circle equation to obtain a
+quadratic in $x$ (or $y$). The discriminant $\Delta = b^2 - 4ac$ determines the nature of
+intersection:
 
 | Discriminant | Intersection                 |
 | ------------ | ---------------------------- |
@@ -290,7 +309,8 @@ To find the points of intersection of the line $y = mx + c$ and the circle $(x-a
 
 ### Tangent to a Circle
 
-A tangent to a circle at a point $P(x_1, y_1)$ on the circle $(x-a)^2 + (y-b)^2 = r^2$ is perpendicular to the radius at $P$. The gradient of the radius $CP$ (where $C$ is the centre) is:
+A tangent to a circle at a point $P(x_1, y_1)$ on the circle $(x-a)^2 + (y-b)^2 = r^2$ is
+perpendicular to the radius at $P$. The gradient of the radius $CP$ (where $C$ is the centre) is:
 
 $$
 \begin{aligned}
@@ -306,7 +326,8 @@ $$
 \end{aligned}
 $$
 
-The equation of the tangent at $P(x_1, y_1)$ on the circle $x^2 + y^2 + Dx + Ey + F = 0$ can be obtained by replacing:
+The equation of the tangent at $P(x_1, y_1)$ on the circle $x^2 + y^2 + Dx + Ey + F = 0$ can be
+obtained by replacing:
 
 $$
 \begin{aligned}
@@ -342,7 +363,8 @@ $$
 \end{aligned}
 $$
 
-Using the [Heron's formula](./trigonometry.md) for a triangle with side lengths $a$, $b$, $c$ and semi-perimeter $s = \frac{a+b+c}{2}$:
+Using the [Heron's formula](./trigonometry.md) for a triangle with side lengths $a$, $b$, $c$ and
+semi-perimeter $s = \frac{a+b+c}{2}$:
 
 $$
 \begin{aligned}
@@ -390,7 +412,8 @@ $$
 \end{aligned}
 $$
 
-When the angle is given in degrees ($\theta^\circ$), first convert to radians: $\theta = \theta^\circ \times \frac{\pi}{180}$.
+When the angle is given in degrees ($\theta^\circ$), first convert to radians:
+$\theta = \theta^\circ \times \frac{\pi}{180}$.
 
 The area of a segment (the region between a chord and the corresponding arc) is:
 
@@ -412,7 +435,10 @@ $$
 
 ### The 3D Coordinate System
 
-In three-dimensional space, each point is identified by an ordered triple $(x, y, z)$. The three coordinate axes --- $x$-axis, $y$-axis, and $z$-axis --- are mutually perpendicular and intersect at the origin $O(0, 0, 0)$. The three planes $xy$-plane, $yz$-plane, and $zx$-plane divide the space into eight octants.
+In three-dimensional space, each point is identified by an ordered triple $(x, y, z)$. The three
+coordinate axes --- $x$-axis, $y$-axis, and $z$-axis --- are mutually perpendicular and intersect at
+the origin $O(0, 0, 0)$. The three planes $xy$-plane, $yz$-plane, and $zx$-plane divide the space
+into eight octants.
 
 ### Distance Formula in 3D
 
@@ -450,9 +476,11 @@ $$
 \end{aligned}
 $$
 
-where the vector $\mathbf{n} = (A, B, C)$ is a normal vector to the plane. The plane can also be described in several forms:
+where the vector $\mathbf{n} = (A, B, C)$ is a normal vector to the plane. The plane can also be
+described in several forms:
 
-- **Point-normal form**: Given a point $P_0(x_0, y_0, z_0)$ on the plane and normal $\mathbf{n} = (A, B, C)$:
+- **Point-normal form**: Given a point $P_0(x_0, y_0, z_0)$ on the plane and normal
+  $\mathbf{n} = (A, B, C)$:
 
 $$
 \begin{aligned}
@@ -460,7 +488,8 @@ $$
 \end{aligned}
 $$
 
-- **Intercept form**: If the plane has $x$-intercept $a$, $y$-intercept $b$, and $z$-intercept $c$ (all non-zero):
+- **Intercept form**: If the plane has $x$-intercept $a$, $y$-intercept $b$, and $z$-intercept $c$
+  (all non-zero):
 
 $$
 \begin{aligned}
@@ -472,7 +501,9 @@ $$
 
 #### Angle Between a Line and a Plane
 
-The angle $\phi$ between a line with direction vector $\mathbf{d} = (l, m, n)$ and a plane with normal $\mathbf{n} = (A, B, C)$ is defined as the complement of the angle between $\mathbf{d}$ and $\mathbf{n}$:
+The angle $\phi$ between a line with direction vector $\mathbf{d} = (l, m, n)$ and a plane with
+normal $\mathbf{n} = (A, B, C)$ is defined as the complement of the angle between $\mathbf{d}$ and
+$\mathbf{n}$:
 
 $$
 \begin{aligned}
@@ -482,7 +513,8 @@ $$
 
 #### Angle Between Two Planes
 
-The angle $\theta$ between two planes with normals $\mathbf{n_1} = (A_1, B_1, C_1)$ and $\mathbf{n_2} = (A_2, B_2, C_2)$ is:
+The angle $\theta$ between two planes with normals $\mathbf{n_1} = (A_1, B_1, C_1)$ and
+$\mathbf{n_2} = (A_2, B_2, C_2)$ is:
 
 $$
 \begin{aligned}
@@ -492,7 +524,8 @@ $$
 
 #### Angle Between Two Lines in 3D
 
-For two lines with direction vectors $\mathbf{d_1} = (l_1, m_1, n_1)$ and $\mathbf{d_2} = (l_2, m_2, n_2)$:
+For two lines with direction vectors $\mathbf{d_1} = (l_1, m_1, n_1)$ and
+$\mathbf{d_2} = (l_2, m_2, n_2)$:
 
 $$
 \begin{aligned}
@@ -525,7 +558,8 @@ $$
 <summary>Wrap-up Questions</summary>
 <p>
 
-1. **Question:** Find the equation of the perpendicular bisector of the line segment joining $A(3, -1)$ and $B(7, 5)$.
+1. **Question:** Find the equation of the perpendicular bisector of the line segment joining
+   $A(3, -1)$ and $B(7, 5)$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -536,7 +570,8 @@ $$
    </p>
    </details>
 
-2. **Question:** Find the equation of the circle passing through the three points $A(0, 0)$, $B(4, 0)$, and $C(0, 3)$.
+2. **Question:** Find the equation of the circle passing through the three points $A(0, 0)$,
+   $B(4, 0)$, and $C(0, 3)$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -549,7 +584,8 @@ $$
    </p>
    </details>
 
-3. **Question:** The line $y = 2x + k$ is tangent to the circle $x^2 + y^2 - 4x - 2y + 1 = 0$. Find the value(s) of $k$.
+3. **Question:** The line $y = 2x + k$ is tangent to the circle $x^2 + y^2 - 4x - 2y + 1 = 0$. Find
+   the value(s) of $k$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -564,7 +600,9 @@ $$
    </p>
    </details>
 
-4. **Question:** A sector of a circle of radius $12\text{ cm}$ has an arc length of $16\pi\text{ cm}$. Find the area of the sector and the area of the corresponding segment if the chord length is $20\text{ cm}$.
+4. **Question:** A sector of a circle of radius $12\text{ cm}$ has an arc length of
+   $16\pi\text{ cm}$. Find the area of the sector and the area of the corresponding segment if the
+   chord length is $20\text{ cm}$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -576,7 +614,8 @@ $$
    </p>
    </details>
 
-5. **Question:** Find the angle between the line joining $A(1, 2, 3)$ and $B(4, 5, 6)$ and the plane $x + y + z = 1$.
+5. **Question:** Find the angle between the line joining $A(1, 2, 3)$ and $B(4, 5, 6)$ and the plane
+   $x + y + z = 1$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -588,7 +627,9 @@ $$
    </p>
    </details>
 
-6. **Question:** Points $A(1, 2)$, $B(4, 6)$, and $C(7, 4)$ are vertices of a triangle. Find the equation of the altitude from $A$ to $BC$, the area of triangle $ABC$, and the length of the altitude from $A$.
+6. **Question:** Points $A(1, 2)$, $B(4, 6)$, and $C(7, 4)$ are vertices of a triangle. Find the
+   equation of the altitude from $A$ to $BC$, the area of triangle $ABC$, and the length of the
+   altitude from $A$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -601,7 +642,8 @@ $$
    </p>
    </details>
 
-7. **Question:** Find the equation of the circle which touches the $x$-axis at $(3, 0)$ and passes through $(1, 4)$.
+7. **Question:** Find the equation of the circle which touches the $x$-axis at $(3, 0)$ and passes
+   through $(1, 4)$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -614,7 +656,9 @@ $$
    </p>
    </details>
 
-8. **Question:** The vertices of a triangle are $A(2, 1, -1)$, $B(0, 3, -4)$, and $C(5, 0, 2)$. Find (a) the length of each side, (b) the area of the triangle, and (c) the equation of the plane containing the triangle.
+8. **Question:** The vertices of a triangle are $A(2, 1, -1)$, $B(0, 3, -4)$, and $C(5, 0, 2)$. Find
+   (a) the length of each side, (b) the area of the triangle, and (c) the equation of the plane
+   containing the triangle.
    <details>
    <summary>Answer</summary>
    <p>
@@ -629,7 +673,9 @@ $$
    </p>
    </details>
 
-9. **Question:** Two circles $C_1: x^2 + y^2 - 4x + 2y - 4 = 0$ and $C_2: x^2 + y^2 + 2x - 6y + 6 = 0$ intersect at points $A$ and $B$. Find the equation of the common chord $AB$ and the coordinates of $A$ and $B$.
+9. **Question:** Two circles $C_1: x^2 + y^2 - 4x + 2y - 4 = 0$ and
+   $C_2: x^2 + y^2 + 2x - 6y + 6 = 0$ intersect at points $A$ and $B$. Find the equation of the
+   common chord $AB$ and the coordinates of $A$ and $B$.
    <details>
    <summary>Answer</summary>
    <p>
@@ -647,7 +693,8 @@ $$
    </p>
    </details>
 
-10. **Question:** A rectangle $ABCD$ has vertices $A(1, 2)$, $B(5, 6)$, and $C(6, 3)$. Find the coordinates of $D$ and the area of the rectangle.
+10. **Question:** A rectangle $ABCD$ has vertices $A(1, 2)$, $B(5, 6)$, and $C(6, 3)$. Find the
+    coordinates of $D$ and the area of the rectangle.
     <details>
     <summary>Answer</summary>
     <p>
@@ -661,7 +708,9 @@ $$
     </p>
     </details>
 
-11. **Question:** A solid metal cone has base radius $6\text{ cm}$ and slant height $10\text{ cm}$. A sector is cut from a circular sheet of metal to form the curved surface. Find (a) the angle of the sector, (b) the radius of the circular sheet, and (c) the area of the sector.
+11. **Question:** A solid metal cone has base radius $6\text{ cm}$ and slant height $10\text{ cm}$.
+    A sector is cut from a circular sheet of metal to form the curved surface. Find (a) the angle of
+    the sector, (b) the radius of the circular sheet, and (c) the area of the sector.
     <details>
     <summary>Answer</summary>
     <p>
@@ -673,7 +722,8 @@ $$
     </p>
     </details>
 
-12. **Question:** Prove that the points $A(-2, 0)$, $B(0, 4)$, $C(6, 2)$, and $D(4, -2)$ are the vertices of a rectangle. Find the equation of the circle passing through all four vertices.
+12. **Question:** Prove that the points $A(-2, 0)$, $B(0, 4)$, $C(6, 2)$, and $D(4, -2)$ are the
+    vertices of a rectangle. Find the equation of the circle passing through all four vertices.
     <details>
     <summary>Answer</summary>
     <p>
