@@ -211,22 +211,21 @@ examination session and vary from session to session depending on the difficulty
 
 - **[Syllabus](/docs/docs_IB-notes/physics/Syllabus)** -- Full topic-by-topic syllabus breakdown
   with key understandings and equations.
-- **[Course Overview](/docs/docs_IB-notes/physics)** -- Overview of all five themes and their
-  sub-topics.
-- **[Wrap Up](/docs/docs_IB-notes/physics/wrap)** -- Practice questions and solutions covering all
-  themes.
+- **[Course Overview](/docs/docs_IB-notes/physics/physics)** -- Overview of all five themes and
+  their sub-topics.
+- **[Wrap Up](/docs/docs_IB-notes/wrap)** -- Practice questions and solutions covering all themes.
 - **Theme A: Space, Time and Motion**
   - [Forces and Momentums](/docs/docs_IB-notes/physics/space-time-and-motions/forces-and-momentums)
 - **Theme B: The Particulate Nature of Matter**
   - [Thermodynamics](/docs/docs_IB-notes/physics/matter-behavior/thermodynamics)
-  - [Matter Behavior Wrap Up](/docs/docs_IB-notes/physics/matter-behavior/wrap)
+  - [Matter Behavior Wrap Up](/docs/docs_IB-notes/matter-behavior-wrap-up)
 - **Theme C: Wave Behaviour**
-  - [Simple Harmonic Motion](/docs/docs_IB-notes/physics/waves/simple-harmonic-motion)
-  - [Waves Wrap Up](/docs/docs_IB-notes/physics/waves/wrap)
+  - [Simple Harmonic Motion](/docs/docs_IB-notes/simple-harmonic-motion)
+  - [Waves Wrap Up](/docs/docs_IB-notes/waves-wrap-up)
 - **Theme D: Fields**
   - [Electric and Magnetic Fields](/docs/docs_IB-notes/physics/fields/electric-and-magnetic-fields)
   - [Gravitational Fields](/docs/docs_IB-notes/physics/fields/gravitational-fields)
   - [Electromagnetic Induction](/docs/docs_IB-notes/physics/fields/Induction)
   - [Motion in Electromagnetic Fields](/docs/docs_IB-notes/physics/fields/motion-in-electromagnetic-fields)
 - **Theme E: Nuclear and Quantum Physics**
-  - [Nuclear and Quantum Wrap Up](/docs/docs_IB-notes/physics/nuclear-and-quantum/wrap)
+  - [Nuclear and Quantum Wrap Up](/docs/docs_IB-notes/nuclear-and-quantum-wrap-up)

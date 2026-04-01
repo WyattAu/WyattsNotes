@@ -103,7 +103,7 @@ motion.
 - **C.5 Standing Waves and Resonance:** Standing wave patterns in strings and pipes; boundary
   conditions; resonance and harmonics.
 
-> See [Simple Harmonic Motion](waves/simple-harmonic-motion.md) for detailed notes.
+> See [Simple Harmonic Motion](waves/simple_harmonic_motion.md) for detailed notes.
 
 ---
 
@@ -187,6 +187,6 @@ The key differences between SL and HL are:
 - Begin with the [Syllabus](Syllabus.md) page for a detailed breakdown of all topics, sub-topics,
   and the relevant equations from the data booklet.
 - Navigate to the relevant theme section for topic-specific notes and worked examples.
-- The [Wrap-up](wrap.md) page provides a summary of key concepts across the course.
+- The [Wrap-up](wrap-up.md) page provides a summary of key concepts across the course.
 - When preparing for examinations, ensure familiarity with the physics data booklet and practise
   both calculation and explanation-style questions.

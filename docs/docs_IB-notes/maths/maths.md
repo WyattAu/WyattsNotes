@@ -35,8 +35,8 @@ topics.
   complex numbers), and proof by mathematical induction (extended cases including divisibility and
   inequalities).
 
-> See [Number and Algebra notes](Number-and-algebra/number-algebra.md) and
-> [Complex Numbers](Number-and-algebra/complex-numbers.md).
+> See [Number and Algebra notes](Number-and-algebra/Number-and-algebra.md) and
+> [Complex Numbers](Number-and-algebra/Complex.md).
 
 ### 2. Functions
 

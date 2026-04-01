@@ -1020,13 +1020,12 @@ $$
 ## Cross-References
 
 - **Differentiation** -- Integration is the inverse operation of differentiation. See the
-  [Number and Algebra](/docs/docs_IB-notes/maths/Number-and-algebra/number-algebra) notes for
-  function fundamentals including derivative rules that motivate integration techniques.
+  [Number and Algebra](/docs/docs_IB-notes/number-algebra) notes for function fundamentals including
+  derivative rules that motivate integration techniques.
 - **Functions** -- Domain and range considerations determine when antiderivatives are valid. See
-  [Number and Algebra](/docs/docs_IB-notes/maths/Number-and-algebra/number-algebra) for function
-  fundamentals.
+  [Number and Algebra](/docs/docs_IB-notes/number-algebra) for function fundamentals.
 - **Complex Numbers** -- The exponential form $e^{i\theta} = \cos\theta + i\sin\theta$ provides an
   elegant derivation of trigonometric integral results. See
-  [Complex Numbers](/docs/docs_IB-notes/maths/Number-and-algebra/complex-numbers).
+  [Complex Numbers](/docs/docs_IB-notes/complex-numbers).
 - **Logic** -- Proof techniques (direct proof, contradiction) are used to justify properties of
-  integrals. See [Logic](/docs/docs_IB-notes/maths/Discrete-maths/logic).
+  integrals. See [Logic](/docs/docs_IB-notes/logic).

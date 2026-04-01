@@ -198,16 +198,15 @@ manipulation.
 
 ### Links to Existing Content
 
-- [Number and Algebra](/docs/docs_IB-notes/maths/Number-and-algebra/number-algebra) -- arithmetic
-  and geometric sequences, sigma notation, binomial theorem
-- [Complex Numbers](/docs/docs_IB-notes/maths/Number-and-algebra/complex-numbers) -- complex numbers
-  in Cartesian, polar, and Euler form; De Moivre's theorem; roots of polynomials
-- [Trigonometry](/docs/docs_IB-notes/maths/geometry-and-trigonometry/trigonometry) -- trigonometric
-  functions, identities, sine and cosine rules
-- [Vectors](/docs/docs_IB-notes/maths/geometry-and-trigonometry/vectors) -- vector operations,
-  scalar and cross products, lines and planes
-- [Integration](/docs/docs_IB-notes/maths/Calculus/Integration) -- antiderivatives, definite
-  integration, area, integration techniques
-- [Logic (Discrete Maths)](/docs/docs_IB-notes/maths/Discrete-maths/logic) -- propositional logic,
-  truth tables, proof
-- [Maths Index](/docs/docs_IB-notes/maths/maths) -- overview of all mathematics notes
+- [Number and Algebra](/docs/docs_IB-notes/number-algebra) -- arithmetic and geometric sequences,
+  sigma notation, binomial theorem
+- [Complex Numbers](/docs/docs_IB-notes/complex-numbers) -- complex numbers in Cartesian, polar, and
+  Euler form; De Moivre's theorem; roots of polynomials
+- [Trigonometry](/docs/docs_IB-notes/trigonometry) -- trigonometric functions, identities, sine and
+  cosine rules
+- [Vectors](/docs/docs_IB-notes/vectors) -- vector operations, scalar and cross products, lines and
+  planes
+- [Integration](/docs/docs_IB-notes/Calculus) -- antiderivatives, definite integration, area,
+  integration techniques
+- [Logic (Discrete Maths)](/docs/docs_IB-notes/logic) -- propositional logic, truth tables, proof
+- [Maths Index](/docs/docs_IB-notes/maths) -- overview of all mathematics notes
