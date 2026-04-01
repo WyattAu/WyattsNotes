@@ -238,7 +238,7 @@ Show interactions between actors (users) and the system.
 
 **Problem 1.** A school wants to develop a new student management system. Requirements are well understood and unlikely to change. Which SDLC model would you recommend? Justify your answer.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Waterfall model.** Justification:
 
@@ -248,11 +248,11 @@ Show interactions between actors (users) and the system.
 - Lower complexity compared to Agile for a well-defined project
 - Budget and timeline can be estimated more accurately
 
-</p></details>
+</div></details>
 
 **Problem 2.** A startup is building a social media app with rapidly changing features based on user feedback. Which methodology is most appropriate and why?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Agile (Scrum).** Justification:
 
@@ -262,11 +262,11 @@ Show interactions between actors (users) and the system.
 - Working software delivered early allows market validation
 - Low cost of changing direction based on user feedback
 
-</p></details>
+</div></details>
 
 **Problem 3.** Draw a UML class diagram for a library system with classes `Library`, `Book`, `Member`, and `Loan`. Show appropriate relationships and key attributes/methods.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```
 +------------------+
@@ -324,11 +324,11 @@ Relationships:
 - Member 1 --- \* Loan (composition: loans belong to a member)
 - Book 1 --- \* Loan (aggregation: a book can have many loans over time)
 
-</p></details>
+</div></details>
 
 **Problem 4.** Explain the role of the Scrum Master. Why is this role important?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The Scrum Master is a **facilitator** (not a manager) who:
 
@@ -341,11 +341,11 @@ The Scrum Master is a **facilitator** (not a manager) who:
 
 This role is important because without it, teams often revert to ad-hoc practices, lose focus on sprint goals, or fail to identify and address process issues.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Compare the cost of fixing a bug in the waterfall model vs Agile. At which stage is each model most efficient?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Waterfall:** Bugs are typically found during the testing phase, which occurs after all development is complete. The cost of fixing a bug increases exponentially the later it is found:
 
@@ -363,11 +363,11 @@ This role is important because without it, teams often revert to ad-hoc practice
 
 Agile is most efficient at the sprint level — bugs found within the same sprint they were introduced are cheapest to fix.
 
-</p></details>
+</div></details>
 
 **Problem 6.** Explain what a "minimum viable product" (MVP) is and how it relates to Agile development.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 A **Minimum Viable Product (MVP)** is the simplest version of a product that delivers enough value to early customers and provides feedback for future development. It contains only the core features needed to solve the primary problem.
 
@@ -380,11 +380,11 @@ A **Minimum Viable Product (MVP)** is the simplest version of a product that del
 
 Example: A ride-sharing app MVP might have only driver-rider matching and payment — no ratings, no scheduling, no advanced features.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Describe a situation where the spiral model would be more appropriate than both waterfall and Agile.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The spiral model is most appropriate for **large, complex, high-risk projects** where:
 
@@ -402,11 +402,11 @@ The spiral model is most appropriate for **large, complex, high-risk projects** 
 
 Waterfall is too inflexible for evolving requirements. Agile doesn't provide sufficient risk analysis for safety-critical systems.
 
-</p></details>
+</div></details>
 
 **Problem 8.** Create a use case diagram description for an online shopping system. Identify three actors and at least five use cases.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Actors:**
 
@@ -434,4 +434,4 @@ Waterfall is too inflexible for evolving requirements. Agile doesn't provide suf
 
 For revision on testing, see [Testing](/docs/docs_ALevel-notes/computer-science/software-engineering/02-testing).
 
-</p></details>
+</div></details>

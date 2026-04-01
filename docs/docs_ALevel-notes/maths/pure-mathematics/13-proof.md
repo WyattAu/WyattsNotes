@@ -294,39 +294,39 @@ Since $k \geq 4$, we have $k+1 \geq 5 > 2$. ✓ $\blacksquare$
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Prove that the product of two odd numbers is odd.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 Let the two odd numbers be $2m+1$ and $2n+1$ where $m, n \in \mathbb{Z}$.
 
 $(2m+1)(2n+1) = 4mn + 2m + 2n + 1 = 2(2mn+m+n) + 1$.
 
 This is of the form $2k+1$ (with $k = 2mn+m+n$), hence odd. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Proof by Deduction](#1-proof-by-deduction) — Section 1.
+**If you get this wrong, revise:** [Proof by Deduction](#1-proof-by-deduction) — Section 1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Prove by contradiction that there is no greatest even integer.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 Suppose $N$ is the greatest even integer. Then $N = 2k$ for some $k \in \mathbb{Z}$.
 
 But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 > N$. This contradicts $N$ being the greatest even integer. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
+**If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Prove by induction that $\displaystyle\sum_{r=1}^{n} r^3 = \left[\frac{n(n+1)}{2}\right]^2$ for all $n \in \mathbb{N}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 *Base case ($n=1$):* $1^3 = 1 = \left[\dfrac{1 \cdot 2}{2}\right]^2 = 1$. ✓
 
 _Hypothesis:_ $\displaystyle\sum_{r=1}^{k} r^3 = \left[\frac{k(k+1)}{2}\right]^2$.
@@ -344,15 +344,15 @@ $$
 \end{aligned}
 $$
 
-<b>If you get this wrong, revise:</b> [Proof by Mathematical Induction](#5-proof-by-mathematical-induction) — Section 5.
+**If you get this wrong, revise:** [Proof by Mathematical Induction](#5-proof-by-mathematical-induction) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Prove that $\sqrt{3}$ is irrational.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 Suppose $\sqrt{3} = a/b$ in lowest terms with $a, b \in \mathbb{Z}^+$, $\gcd(a,b) = 1$.
 
 $3 = a^2/b^2 \implies a^2 = 3b^2$, so $3 \mid a^2$, hence $3 \mid a$. Write $a = 3k$.
@@ -361,28 +361,28 @@ $9k^2 = 3b^2 \implies b^2 = 3k^2$, so $3 \mid b^2$, hence $3 \mid b$.
 
 But $\gcd(a,b) \geq 3$, contradicting $\gcd(a,b) = 1$. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [$\sqrt{2}$ is irrational](#23-sqrt2-is-irrational) — Section 2.3.
+**If you get this wrong, revise:** [$\sqrt{2}$ is irrational](#23-sqrt2-is-irrational) — Section 2.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Disprove by counterexample: "For all real $x$, $\sin(2x) = 2\sin x$."
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 Let $x = \pi/4$. $\sin(\pi/2) = 1$ but $2\sin(\pi/4) = 2 \times \dfrac{\sqrt{2}}{2} = \sqrt{2} \neq 1$.
 
 (The correct identity is $\sin(2x) = 2\sin x\cos x$.)
 
-<b>If you get this wrong, revise:</b> [Disproof by Counterexample](#4-disproof-by-counterexample) — Section 4.
+**If you get this wrong, revise:** [Disproof by Counterexample](#4-disproof-by-counterexample) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 Prove by induction that $5^n + 3$ is divisible by 4 for all $n \geq 1$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 *Base case ($n=1$):* $5 + 3 = 8$, divisible by 4. ✓
 
 _Hypothesis:_ $5^k + 3 = 4m$.
@@ -391,30 +391,30 @@ _Step:_ $5^{k+1} + 3 = 5 \cdot 5^k + 3 = 5(4m-3) + 3 = 20m - 15 + 3 = 20m - 12 =
 
 Divisible by 4. ✓ $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Divisibility](#54-divisibility) — Section 5.4.
+**If you get this wrong, revise:** [Divisibility](#54-divisibility) — Section 5.4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 Prove by contradiction that $\log_3 5$ is irrational.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 Suppose $\log_3 5 = a/b$ where $a, b \in \mathbb{Z}^+$, $\gcd(a,b)=1$.
 
 $3^{a/b} = 5 \implies 3^a = 5^b$.
 
 $3^a$ is odd and $5^b$ is odd, so no immediate parity contradiction. But: $3^a$ is divisible only by 3, while $5^b$ is divisible only by 5. A positive integer cannot have prime factorisation using only 3s and also only 5s (by the Fundamental Theorem of Arithmetic, prime factorisation is unique). Contradiction. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [$\log_2 3$ is irrational](#24-log_2-3-is-irrational) — Section 2.4.
+**If you get this wrong, revise:** [$\log_2 3$ is irrational](#24-log_2-3-is-irrational) — Section 2.4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Use proof by exhaustion to show that all integers $n$ with $1 \leq n \leq 6$ satisfy: if $n$ is prime, then $n^2 - 1$ is divisible by 24 or $n = 2$ or $n = 3$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 Primes in range: 2, 3, 5.
 
 $n=2$: $n^2-1 = 3$, not divisible by 24 (special case $n=2$).
@@ -423,15 +423,15 @@ $n=5$: $n^2-1 = 24$, divisible by 24. ✓
 
 So the claim holds: primes 2 and 3 are exceptions, and $5^2 - 1 = 24$ is divisible by 24.
 
-<b>If you get this wrong, revise:</b> [Proof by Exhaustion](#3-proof-by-exhaustion) — Section 3.
+**If you get this wrong, revise:** [Proof by Exhaustion](#3-proof-by-exhaustion) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 Prove by induction that $n^3 - n$ is divisible by 6 for all $n \geq 1$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 *Base case ($n=1$):* $1-1=0$, divisible by 6. ✓
 
 _Hypothesis:_ $k^3 - k = 6m$.
@@ -440,30 +440,30 @@ _Step:_ $(k+1)^3 - (k+1) = k^3 + 3k^2 + 3k + 1 - k - 1 = (k^3 - k) + 3k^2 + 3k =
 
 Since $k(k+1)$ is always even (product of consecutive integers), $3k(k+1)$ is divisible by 6. So $(k+1)^3 - (k+1) = 6m + 6n = 6(m+n)$. ✓ $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Divisibility](#54-divisibility) — Section 5.4.
+**If you get this wrong, revise:** [Divisibility](#54-divisibility) — Section 5.4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 Prove that if $a^2 + b^2 = c^2$ for integers $a, b, c$, then at least one of $a, b$ is even.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 Proof by contradiction. Suppose both $a$ and $b$ are odd. Write $a = 2m+1$, $b = 2n+1$.
 
 $$a^2 + b^2 = (2m+1)^2 + (2n+1)^2 = 4m^2+4m+1 + 4n^2+4n+1 = 2(2m^2+2m+2n^2+2n+1)$$
 
 This is even but not divisible by 4. So $c^2$ is even but not divisible by 4, meaning $c$ is even (if $c = 2p$, $c^2 = 4p^2$, which IS divisible by 4). Contradiction. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
+**If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 11</summary><p>
+<details><summary>Problem 11</summary><div>
 Prove by induction that $\displaystyle\sum_{r=1}^{n}\frac{1}{r(r+1)} = \frac{n}{n+1}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 11</summary><p>
+<details><summary>Solution 11</summary><div>
 *Base case ($n=1$):* $\dfrac{1}{1 \times 2} = \dfrac{1}{2} = \dfrac{1}{1+1}$. ✓
 
 _Hypothesis:_ $\displaystyle\sum_{r=1}^{k}\frac{1}{r(r+1)} = \frac{k}{k+1}$.
@@ -479,6 +479,6 @@ $$
 \end{aligned}
 $$
 
-<b>If you get this wrong, revise:</b> [Proof by Mathematical Induction](#5-proof-by-mathematical-induction) — Section 5.
+**If you get this wrong, revise:** [Proof by Mathematical Induction](#5-proof-by-mathematical-induction) — Section 5.
 
-</p></details>
+</div></details>

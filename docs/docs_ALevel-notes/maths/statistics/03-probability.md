@@ -177,24 +177,24 @@ When all outcomes are equally likely: $P(A) = \dfrac{|A|}{|\Omega|} = \dfrac{\te
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Events $A$ and $B$ are such that $P(A) = 0.4$, $P(B) = 0.5$, and $P(A \cup B) = 0.7$. Find $P(A \cap B)$ and $P(A|B)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $P(A \cap B) = P(A) + P(B) - P(A \cup B) = 0.4 + 0.5 - 0.7 = 0.2$.
 
 $P(A|B) = P(A \cap B)/P(B) = 0.2/0.5 = 0.4$.
 
-<b>If you get this wrong, revise:</b> [Addition Rule](#22-addition-rule) — Section 2.2.
+**If you get this wrong, revise:** [Addition Rule](#22-addition-rule) — Section 2.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 A disease affects 1% of a population. A test is 99% accurate (both sensitivity and specificity). A person tests positive. What is the probability they actually have the disease?
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 Let $D$ = has disease, $T^+$ = tests positive.
 
 $P(D) = 0.01$, $P(T^+|D) = 0.99$, $P(T^+|D') = 0.01$.
@@ -207,136 +207,136 @@ $P(D|T^+) = \dfrac{P(T^+|D)P(D)}{P(T^+)} = \dfrac{0.0099}{0.0198} = 0.5$.
 
 Even with a 99% accurate test, a positive result means only a 50% chance of actually having the disease, because the disease is so rare.
 
-<b>If you get this wrong, revise:</b> [Bayes' Theorem](#4-bayes-theorem) — Section 4.
+**If you get this wrong, revise:** [Bayes' Theorem](#4-bayes-theorem) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Prove that if $A$ and $B$ are independent, then so are $A$ and $B'$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 $P(A \cap B') = P(A) - P(A \cap B) = P(A) - P(A)P(B)$ (by independence)
 $= P(A)[1 - P(B)] = P(A)P(B')$. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Independence](#5-independence) — Section 5.
+**If you get this wrong, revise:** [Independence](#5-independence) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 A bag contains 4 red, 3 blue, and 2 green balls. Three balls are drawn without replacement. Find the probability that all three are different colours.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 Total ways to choose 3 from 9: $\binom{9}{3} = 84$.
 
 Ways to get one of each colour: $\binom{4}{1}\binom{3}{1}\binom{2}{1} = 4 \times 3 \times 2 = 24$.
 
 $P = 24/84 = 2/7$.
 
-<b>If you get this wrong, revise:</b> [Counting Principles](#7-counting-principles) — Section 7.
+**If you get this wrong, revise:** [Counting Principles](#7-counting-principles) — Section 7.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Events $A$, $B$, $C$ are such that $P(A) = 0.3$, $P(B) = 0.4$, $P(C) = 0.5$, $P(A \cap B) = 0.1$, $P(A \cap C) = 0.15$, $P(B \cap C) = 0.2$, and $P(A \cap B \cap C) = 0.05$. Find $P(A \cup B \cup C)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 By the inclusion-exclusion principle:
 
 $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$
 $$= 0.3 + 0.4 + 0.5 - 0.1 - 0.15 - 0.2 + 0.05 = 0.8$$
 
-<b>If you get this wrong, revise:</b> [Addition Rule](#22-addition-rule) — Section 2.2.
+**If you get this wrong, revise:** [Addition Rule](#22-addition-rule) — Section 2.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 Two coins are tossed. Given that at least one is heads, find the probability that both are heads.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 $\Omega = \{HH, HT, TH, TT\}$. $A = \{\text{at least one heads}\} = \{HH, HT, TH\}$. $B = \{\text{both heads}\} = \{HH\}$.
 
 $P(B|A) = P(B \cap A)/P(A) = P(B)/P(A) = (1/4)/(3/4) = 1/3$.
 
-<b>If you get this wrong, revise:</b> [Conditional Probability](#3-conditional-probability) — Section 3.
+**If you get this wrong, revise:** [Conditional Probability](#3-conditional-probability) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 A fair die is rolled. Let $A$ = "even number" and $B$ = "number greater than 3". Are $A$ and $B$ independent?
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $A = \{2, 4, 6\}$, $B = \{4, 5, 6\}$, $A \cap B = \{4, 6\}$.
 
 $P(A) = 3/6 = 1/2$, $P(B) = 3/6 = 1/2$, $P(A \cap B) = 2/6 = 1/3$.
 
 $P(A)P(B) = 1/4 \neq 1/3 = P(A \cap B)$. So $A$ and $B$ are **not** independent.
 
-<b>If you get this wrong, revise:</b> [Independence](#5-independence) — Section 5.
+**If you get this wrong, revise:** [Independence](#5-independence) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 In a school, 60% of students study Maths, 40% study Physics, and 25% study both. A student is chosen at random. Given that they study Physics, find the probability they study Maths.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $P(M) = 0.6$, $P(P) = 0.4$, $P(M \cap P) = 0.25$.
 
 $P(M|P) = P(M \cap P)/P(P) = 0.25/0.4 = 0.625$.
 
-<b>If you get this wrong, revise:</b> [Conditional Probability](#3-conditional-probability) — Section 3.
+**If you get this wrong, revise:** [Conditional Probability](#3-conditional-probability) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 A box contains 10 items, 3 of which are defective. Items are inspected one by one without replacement. Find the probability that the first defective item is the third one inspected.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 First two non-defective, third defective:
 
 $$P = \frac{7}{10} \times \frac{6}{9} \times \frac{3}{8} = \frac{7 \times 6 \times 3}{720} = \frac{126}{720} = \frac{7}{40}$$
 
-<b>If you get this wrong, revise:</b> [Tree Diagrams](#62-tree-diagrams) — Section 6.2.
+**If you get this wrong, revise:** [Tree Diagrams](#62-tree-diagrams) — Section 6.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 A machine produces components. 5% are defective. Components are packed in boxes of 20. Find the probability that a box contains exactly one defective component.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 This is a binomial scenario: $X \sim B(20, 0.05)$.
 
 $P(X=1) = \binom{20}{1}(0.05)^1(0.95)^{19} = 20 \times 0.05 \times 0.95^{19} \approx 0.3774$.
 
-<b>If you get this wrong, revise:</b> [Binomial Distribution](#41-binomial) — Statistical Distributions chapter.
+**If you get this wrong, revise:** [Binomial Distribution](#41-binomial) — Statistical Distributions chapter.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 11</summary><p>
+<details><summary>Problem 11</summary><div>
 Prove that $P(A \cup B') = 1 - P(A' \cap B)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 11</summary><p>
+<details><summary>Solution 11</summary><div>
 By De Morgan's law: $(A \cup B')' = A' \cap B$.
 
 So $P(A \cup B') = 1 - P((A \cup B')') = 1 - P(A' \cap B)$. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Complement Rule](#21-complement-rule) — Section 2.1.
+**If you get this wrong, revise:** [Complement Rule](#21-complement-rule) — Section 2.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 12</summary><p>
+<details><summary>Problem 12</summary><div>
 From a standard 52-card deck, 5 cards are dealt. Find the probability of getting a flush (all 5 cards of the same suit).
-</p></details>
+</div></details>
 
-<details><summary>Solution 12</summary><p>
+<details><summary>Solution 12</summary><div>
 Total ways: $\binom{52}{5} = 2598960$.
 
 Ways to get a flush: choose suit (4 ways), then 5 cards from that suit ($\binom{13}{5} = 1287$).
@@ -345,6 +345,6 @@ Total flushes: $4 \times 1287 = 5148$.
 
 $P(\text{flush}) = 5148/2598960 \approx 0.00198 \approx 0.2\%$.
 
-<b>If you get this wrong, revise:</b> [Counting Principles](#7-counting-principles) — Section 7.
+**If you get this wrong, revise:** [Counting Principles](#7-counting-principles) — Section 7.
 
-</p></details>
+</div></details>

@@ -105,7 +105,7 @@ $$\text{ToT} = \frac{\text{Index of Export Prices}}{\text{Index of Import Prices
 
 <details>
 <summary>Worked Example</summary>
-<p>
+<div>
 
 Base year (2020): Export price index = 100, Import price index = 100. ToT = 100.
 
@@ -115,7 +115,7 @@ $$\text{ToT}_{2024} = \frac{115}{125} \times 100 = 92$$
 
 Terms of trade deteriorated by 8%. The country needs to export 8.7% more (115/105 = 1.087) just to buy the same quantity of imports as in 2020.
 
-</p>
+</div>
 </details>
 
 ### 2.4 Factors Affecting the Terms of Trade
@@ -370,106 +370,106 @@ $$\text{DWL} = \frac{1}{2} \times (P_w + t - P_w) \times (Q_d^{domestic} - Q_s^{
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 (a) Country A: absolute advantage in cars (10 > 6). Country B: absolute advantage in trucks (6 > 5). (b) OC of 1 car: A = 5/10 = 0.5 trucks, B = 6/6 = 1 truck. OC of 1 truck: A = 10/5 = 2 cars, B = 6/6 = 1 car. (c) A has lower OC in cars (0.5 < 1) → specialise in cars. B has lower OC in trucks (1 < 2) → specialise in trucks. (d) World price between 0.5 and 1 truck per car. At $p = 0.75$: A gains by exporting cars at a price higher than its OC (0.5). B gains by importing cars at a price lower than its OC (1.0). Both better off.
-</p>
+</div>
 </details>
 
 **Problem 2.** A country's export price index rises from 120 to 132, while its import price index rises from 100 to 120. (a) Calculate the initial and new terms of trade. (b) Has the ToT improved or deteriorated? (c) Explain why this may not be entirely beneficial.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 (a) Initial ToT = 120/100 = 120. New ToT = 132/120 = 110. (b) ToT deteriorated from 120 to 110 (fell by 8.3%). (c) Even though export prices rose by 10%, import prices rose by 20%. The country now needs to export more to buy the same imports. However: if the export price rise is due to higher quality (better technology), the "real" ToT may not have deteriorated. And if import price rise is due to cheaper goods from abroad (more competition), consumers benefit from lower prices.
-</p>
+</div>
 </details>
 
 **Problem 3.** The exchange rate falls from $1.50/£ to $1.20/£. (a) Has the pound appreciated or depreciated? (b) If the price elasticity of demand for exports is 0.6 and for imports is 0.8, use the Marshall-Lerner condition to determine the short-run effect on the current account. (c) Explain the J-curve effect.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 (a) More dollars per pound before → now fewer dollars per pound → pound has depreciated (you get fewer dollars for each pound). (b) $|E_X| + |E_M| = 0.6 + 0.8 = 1.4 > 1$. The Marshall-Lerner condition is satisfied → in the long run, the current account improves. However, these are long-run elasticities. (c) J-curve: in the short run (first 6–12 months), elasticities are lower because contracts are fixed and consumers are slow to change habits. So initially $|E_X| + |E_M| < 1$ → CA worsens. Over time, as consumers and firms adjust, elasticities rise above 1 → CA improves. The path traces a J-shape.
-</p>
+</div>
 </details>
 
 **Problem 4.** Explain the advantages and disadvantages of a fixed exchange rate system compared with a floating exchange rate system. In your answer, refer to the concept of the "impossible trinity" (trilemma).
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 The impossible trinity: a country cannot simultaneously have (1) free capital mobility, (2) a fixed exchange rate, and (3) independent monetary policy. It must give up one. Fixed advantages: certainty for trade/investment, discipline on inflation, no speculative volatility. Fixed disadvantages: loss of monetary independence (must set interest rates to defend the peg, not for domestic objectives), requires large reserves, vulnerable to speculative attacks (e.g., ERM crisis 1992). Floating advantages: automatic BoP adjustment, independent monetary policy, no reserve requirement. Floating disadvantages: volatility, overshooting, competitive devaluation risk. *Revision: see [The Financial Sector](/docs/docs_ALevel-notes/economics/macro/03-the-financial-sector) for monetary policy.*
-</p>
+</div>
 </details>
 
 **Problem 5.** Evaluate the argument that globalisation has increased income inequality both within and between countries.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Between countries: globalisation has *reduced* inequality between nations — China, India, and other emerging economies have grown rapidly through trade, narrowing the gap with developed countries. Within countries: globalisation has *increased* inequality in many developed countries (Stolper-Samuelson theorem: trade liberalisation benefits the abundant factor — skilled labour in developed countries, unskilled labour in developing countries). In the UK/US: skilled workers and capital owners gained; manufacturing workers lost jobs to import competition and offshoring. Top 1% captured disproportionate gains. However: technology (skill-biased technological change) may be a larger driver of within-country inequality than trade. Policy response: progressive taxation, education and retraining, regional development policies.
-</p>
+</div>
 </details>
 
 **Problem 6.** "Foreign aid is an effective strategy for promoting economic development." Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Arguments for: (1) Provides capital that poor countries cannot generate domestically (savings gap). (2) Finances infrastructure (roads, hospitals, schools) with long-term benefits. (3) Can improve health and education (human capital). (4) Emergency/humanitarian aid saves lives. Arguments against: (1) Dependency — may discourage domestic savings and tax effort. (2) Corruption and misappropriation — aid may not reach intended beneficiaries. (3) Dutch disease — large aid inflows appreciate the real exchange rate, making exports less competitive. (4) Tied aid — may benefit donor countries more than recipients. (5) Aid effectiveness depends on institutional quality (Burnside & Dollar, 2000). Evidence: countries with good institutions (Botswana) used aid effectively; countries with poor institutions (DRC) did not. Best practice: aid targeted at institutions, health, and education; with conditionality and monitoring.
-</p>
+</div>
 </details>
 
 **Problem 7.** Using AD/AS analysis, explain the effects of a depreciation of the exchange rate on the domestic economy. Under what conditions might a depreciation be inflationary?
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 AD effects: depreciation makes exports cheaper and imports dearer → net exports rise → AD shifts right → output and price level rise. SRAS effects: imported raw materials become more expensive → production costs rise → SRAS shifts left → price level rises, output falls. Net effect on output: ambiguous (AD shift right vs SRAS shift left). Net effect on prices: unambiguously inflationary (both AD and SRAS shifts push prices up). Conditions for inflationary effect: (1) High import dependence (the UK imports ~30% of consumption). (2) Inelastic demand for imports (necessities like oil, food). (3) Economy near full employment (no spare capacity to absorb demand increase). *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/02-aggregate-demand-and-supply).*
-</p>
+</div>
 </details>
 
 **Problem 8.** Explain the Prebisch-Singer hypothesis. Why might developing countries that specialise in primary commodity exports face a long-term deterioration in their terms of trade?
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Prebisch-Singer hypothesis: the terms of trade for primary commodity exporters decline relative to manufactured goods exporters over the long run. Reasons: (1) Low income elasticity of demand for primary commodities (Engel's law — as income rises, the share spent on food/raw materials falls). (2) High income elasticity of demand for manufactured goods. (3) Technological progress reduces the demand for raw materials (synthetic substitutes, recycling). (4) Agricultural productivity growth is faster than in manufacturing (supply grows faster than demand → prices fall). (5) Oligopolistic pricing in manufacturing vs competitive pricing in primary commodities (manufacturers have pricing power). Implications: developing countries specialising in primary commodities face declining ToT → need to diversify into manufacturing and services.
-</p>
+</div>
 </details>
 
 **Problem 9.** A customs union is formed between three countries. Explain the difference between trade creation and trade diversion. Under what conditions is a customs union more likely to create trade than divert it?
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Trade creation: the union replaces high-cost domestic production with lower-cost imports from a partner country → efficiency gain (consumers benefit, world output increases). Trade diversion: the union replaces low-cost imports from a non-member with higher-cost imports from a partner (because of preferential tariffs) → efficiency loss (consumers lose, world output decreases). Conditions for net trade creation: (1) The union includes countries that are efficient producers (so intra-union trade is genuinely lower-cost). (2) External tariffs are not too high (so trade diversion from non-members is limited). (3) The member countries are economically complementary (different comparative advantages). (4) The union is geographically proximate (lower transport costs). The EU's expansion is estimated to have created more trade than it diverted, but the net effect varies by sector and country.
-</p>
+</div>
 </details>
 
 **Problem 10.** "A country with a persistent current account deficit should devalue its currency to restore balance." Evaluate this policy recommendation.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Devaluation could help: (1) Makes exports cheaper, imports dearer → improves trade balance (Marshall-Lerner condition). (2) Improves competitiveness of domestic industries. (3) Reduces the trade deficit. But: (1) J-curve effect — the CA may worsen initially. (2) Imported inflation — devaluation raises import prices, potentially causing cost-push inflation. (3) If the deficit is structural (caused by lack of competitiveness, not the exchange rate), devaluation is a temporary fix. (4) Capital flight — if markets expect further devaluation, investors sell the currency, making things worse. (5) Retaliation — trading partners may also devalue (competitive devaluation, "currency wars"). Better approach: address the root cause. If the deficit reflects low productivity → supply-side reforms. If it reflects excessive consumption → fiscal tightening. Devaluation is one tool among many, not a panacea. *Revision: see [Fiscal Policy](/docs/docs_ALevel-notes/economics/macro/04-fiscal-policy) for alternative policy approaches.*
-</p>
+</div>
 </details>
 
 **Problem 11.** Compare and contrast import substitution industrialisation (ISI) with export-oriented industrialisation (EOI). Use examples to illustrate your answer.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 ISI: replace imports with domestic production behind tariff walls. Examples: Latin America (Brazil, Argentina, Mexico) 1950s–70s, India pre-1991. Advantages: protects infant industries, reduces dependence on imports, retains foreign exchange. Disadvantages: protected industries become inefficient (no competitive pressure), small domestic market limits economies of scale, leads to balance of payments problems (importing capital goods while exporting little). EOI: focus on producing for export. Examples: East Asian tigers (South Korea, Taiwan, Singapore, Hong Kong) 1960s–90s, China post-1978. Advantages: access to large world markets → economies of scale, competitive pressure drives efficiency and innovation, export earnings finance further investment. Disadvantages: vulnerability to external demand shocks, initially difficult to compete with established firms. Evidence: EOI countries achieved significantly higher growth rates (7–10% vs 3–5% for ISI). The East Asian miracle is widely attributed to EOI combined with education, land reform, and industrial policy.
-</p>
+</div>
 </details>
 
 **Problem 12.** Explain how the UK's decision to leave the EU (Brexit) can be analysed using the theory of comparative advantage and the concept of trade creation and diversion.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Comparative advantage: leaving the EU's single market means the UK faces tariffs and non-tariff barriers when trading with EU members. This reduces the gains from trade based on comparative advantage — UK producers who were competitive within the EU now face higher costs of exporting. Trade creation/diversion: leaving the EU is like *reverse trade creation* — the UK loses the trade-creating effects of the single market. New trade agreements with non-EU countries may create some trade, but: (1) EU is the UK's largest trading partner (43% of exports) — hard to replace. (2) Non-tariff barriers (regulatory divergence, customs checks) increase costs even without tariffs. (3) Services (80% of UK economy) are particularly affected — harder to negotiate services trade deals. Estimated cost: OBR estimates Brexit reduces long-run UK productivity by 4%. Potential benefits: regulatory autonomy, independent trade policy, control over migration. The net effect depends on how effectively the UK uses its new regulatory freedom.
-</p>
+</div>
 </details>

@@ -274,7 +274,7 @@ Root DNS servers (.)
 
 **Problem 1.** A company has a Class C network address `192.168.5.0/24`. They need 6 subnets. Calculate the subnet mask, number of hosts per subnet, and the network addresses of each subnet.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Need 6 subnets. Borrow bits: $2^2 = 4$ (not enough), $2^3 = 8$ (enough). Borrow 3 bits.
 
@@ -295,11 +295,11 @@ Subnet addresses (increment by 32):
 
 8 subnets available (6 needed + 2 spare).
 
-</p></details>
+</div></details>
 
 **Problem 2.** Explain the TCP three-way handshake. Why is a two-way handshake insufficient?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Three-way handshake:**
 
@@ -309,11 +309,11 @@ Subnet addresses (increment by 32):
 
 **Why two-way is insufficient:** A two-way handshake cannot prevent **stale duplicate SYNs** from establishing spurious connections. If a client sends a SYN that is delayed by the network, and the client times out and sends another SYN, the first SYN may arrive later. With a two-way handshake, both SYNs would create separate connections. The third ACK in the three-way handshake allows the server to identify and discard stale connections: if the server receives an ACK for a connection it didn't establish, it rejects it.
 
-</p></details>
+</div></details>
 
 **Problem 3.** A user types `https://www.cam.ac.uk` into their browser. Describe the steps that occur before the web page is displayed, including DNS resolution and the TCP handshake.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 1. **DNS Resolution:**
    - Browser checks local cache → not found
@@ -342,11 +342,11 @@ Subnet addresses (increment by 32):
 
 6. **Rendering:** Browser parses and displays the page
 
-</p></details>
+</div></details>
 
 **Problem 4.** Compare star and mesh topologies in terms of cost, reliability, and scalability. Which would you recommend for a hospital network? Justify.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Star:**
 
@@ -362,11 +362,11 @@ Subnet addresses (increment by 32):
 
 **Recommendation for a hospital:** A **partial mesh** or **redundant star** topology. Hospital networks require high reliability (life-critical systems cannot have downtime), but a full mesh is prohibitively expensive. A practical approach: multiple star networks connected by redundant links (partial mesh at the backbone level). Critical systems (ICU monitors) may have redundant connections.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Explain why UDP is preferred over TCP for online gaming and video conferencing.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Online gaming:**
 
@@ -382,11 +382,11 @@ Subnet addresses (increment by 32):
 - Occasional packet loss manifests as brief glitches (acceptable)
 - TCP would buffer delayed packets, causing increasing lag
 
-</p></details>
+</div></details>
 
 **Problem 6.** Calculate the number of usable host addresses in a `/28` subnet.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 `/28` means 28 bits for the network, $32 - 28 = 4$ bits for the host.
 
@@ -394,11 +394,11 @@ Number of addresses: $2^4 = 16$
 
 Usable hosts: $16 - 2 = 14$ (subtract network address and broadcast address).
 
-</p></details>
+</div></details>
 
 **Problem 7.** Explain the purpose of NAT (Network Address Translation) and how it works.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Purpose:** NAT allows multiple devices on a private network to share a single public IP address for internet access. This:
 
@@ -418,11 +418,11 @@ Usable hosts: $16 - 2 = 14$ (subtract network address and broadcast address).
 | 192.168.1.10 | 50123 | 60001 | 203.0.113.1 |
 | 192.168.1.11 | 50124 | 60002 | 203.0.113.1 |
 
-</p></details>
+</div></details>
 
 **Problem 8.** Explain what happens at each layer of the OSI model when you send an email.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Layer 7 (Application):** Email client composes the message using SMTP protocol.
 **Layer 6 (Presentation):** Data is formatted (e.g., converting to MIME format for attachments).
@@ -434,11 +434,11 @@ Usable hosts: $16 - 2 = 14$ (subtract network address and broadcast address).
 
 At the receiving end, each layer removes its header in reverse order (Layers 1→7).
 
-</p></details>
+</div></details>
 
 **Problem 9.** A network uses the IP address `172.16.5.130/25`. What is the network address, broadcast address, and range of usable host addresses?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 `/25` → subnet mask: `255.255.255.128`
 
@@ -452,11 +452,11 @@ Usable host range: `172.16.5.129` – `172.16.5.254`
 
 Number of usable hosts: $2^7 - 2 = 126$
 
-</p></details>
+</div></details>
 
 **Problem 10.** Explain the difference between a switch and a router. At which OSI layer does each operate?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Property   | Switch                             | Router                                  |
 | ---------- | ---------------------------------- | --------------------------------------- |

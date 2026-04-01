@@ -268,7 +268,7 @@ print(my_list)  # [1, 2, 3, 4]
 
 **Problem 1.** Write a recursive function to compute the sum of digits of a positive integer. Prove its correctness by induction.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def sum_digits(n):
@@ -285,7 +285,7 @@ Inductive step: Assume correct for all numbers with $\leq d$ digits. For a $(d+1
 
 **Termination:** Variant function $V(n) = n$. Each call: $V(n // 10) = \lfloor n/10 \rfloor < n$ for $n \geq 10$. ✓
 
-</p></details>
+</div></details>
 
 **Problem 2.** Convert the following while loop to a for loop:
 
@@ -296,14 +296,14 @@ while i <= 50:
     i += 5
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 for i in range(5, 51, 5):
     print(i)
 ```
 
-</p></details>
+</div></details>
 
 **Problem 3.** Prove that the following function computes $2^n$:
 
@@ -314,7 +314,7 @@ def power_of_two(n):
     return 2 * power_of_two(n - 1)
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 By induction on $n$.
 
@@ -324,11 +324,11 @@ Inductive step: Assume `power_of_two(k) = 2^k` for $k \leq n$. Then `power_of_tw
 
 $\square$
 
-</p></details>
+</div></details>
 
 **Problem 4.** Explain the difference between iteration and recursion. When would you prefer one over the other?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Aspect      | Iteration               | Recursion                          |
 | ----------- | ----------------------- | ---------------------------------- |
@@ -342,11 +342,11 @@ Prefer iteration when: the problem has a natural loop structure, memory is const
 
 Prefer recursion when: the problem has a natural recursive structure (trees, divide-and-conquer), the depth is bounded (e.g., $\log n$), or readability is paramount.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Write a function that uses recursion to check if a string is a palindrome. Prove termination.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def is_palindrome(s):
@@ -359,7 +359,7 @@ def is_palindrome(s):
 
 **Termination.** Variant function: $V(s) = \text{len}(s)$. Each recursive call: $V(s[1:-1]) = \text{len}(s) - 2 < V(s)$ for $\text{len}(s) \geq 2$. Since $V$ is a non-negative integer that strictly decreases, the function must reach a base case. ✓
 
-</p></details>
+</div></details>
 
 **Problem 6.** What is the output of the following code? Explain step by step.
 
@@ -371,17 +371,17 @@ modify(x)
 print(x)
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Output: `10`
 
 Explanation: Python passes the integer `10` by object reference. Inside `modify`, `x = 20` rebinds the local parameter `x` to a new integer object `20`. This does not affect the global `x`, which remains `10`. Integers are immutable in Python, so there is no way to modify the original value through the parameter.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Write a function `gcd(a, b)` using Euclid's algorithm. Prove it terminates and returns the GCD.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def gcd(a, b):
@@ -402,7 +402,7 @@ Since $d | e$ and $e | d$, $d = e$. ✓
 
 Base case: $\gcd(a, 0) = a$. ✓
 
-</p></details>
+</div></details>
 
 **Problem 8.** A student writes the following recursive function. Identify the bug and fix it:
 
@@ -412,7 +412,7 @@ def countdown(n):
     countdown(n - 1)
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Bugs:**
 
@@ -438,6 +438,6 @@ def countdown(n):
         n -= 1
 ```
 
-</p></details>
+</div></details>
 
 For revision on data structures that use recursion, see [Trees](/docs/docs_ALevel-notes/computer-science/data-structures/04-trees).

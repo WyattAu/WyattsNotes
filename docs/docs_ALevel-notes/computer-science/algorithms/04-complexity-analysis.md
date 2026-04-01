@@ -207,7 +207,7 @@ $\log n$ grows very slowly. For all practical input sizes, $O(n \log n)$ is ofte
 
 **Problem 1.** Prove that $3n^2 + 7n + 4 = O(n^2)$ using the formal definition.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 We need to find $c > 0$ and $n_0$ such that $3n^2 + 7n + 4 \leq c \cdot n^2$ for all $n \geq n_0$.
 
@@ -217,11 +217,11 @@ Choose $c = 14$ and $n_0 = 1$. ✓
 
 (More tightly: $c = 4, n_0 = 8$ also works.)
 
-</p></details>
+</div></details>
 
 **Problem 2.** Prove that $n^2 \neq O(n)$.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof by contradiction.** Assume $n^2 = O(n)$. Then $\exists\, c > 0, n_0$ such that $n^2 \leq cn$ for all $n \geq n_0$.
 
@@ -229,11 +229,11 @@ This implies $n \leq c$ for all $n \geq n_0$. But $n$ grows without bound, so th
 
 Equivalently: $\lim_{n \to \infty} n^2 / n = \lim_{n \to \infty} n = \infty \neq 0$, so $n^2 \neq O(n)$.
 
-</p></details>
+</div></details>
 
 **Problem 3.** Use the Master Theorem to solve $T(n) = 4T(n/2) + n^2 \log n$.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $a = 4$, $b = 2$, $c = \log_2 4 = 2$.
 
@@ -241,7 +241,7 @@ $f(n) = n^2 \log n = n^c \log^1 n$.
 
 This is Case 2 with $k = 1$: $T(n) = \Theta(n^c \log^{k+1} n) = \Theta(n^2 \log^2 n)$.
 
-</p></details>
+</div></details>
 
 **Problem 4.** Determine the time complexity of the following function:
 
@@ -258,7 +258,7 @@ def mystery(n):
     return count
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Outer loop: $i$ takes values $1, 3, 9, 27, \ldots, 3^k < n$. Number of iterations: $\lceil \log_3 n \rceil$.
 
@@ -266,11 +266,11 @@ Inner loop: $j$ takes values $1, 2, 4, 8, \ldots, 2^m < n$. Number of iterations
 
 Total: $O(\log_3 n \cdot \log_2 n) = O(\log^2 n)$.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Show that $\log(n!) = \Theta(n \log n)$.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Upper bound:** $\log(n!) = \sum_{i=1}^{n} \log i \leq \sum_{i=1}^{n} \log n = n \log n$.
 
@@ -278,11 +278,11 @@ Total: $O(\log_3 n \cdot \log_2 n) = O(\log^2 n)$.
 
 Therefore: $\log(n!) = \Theta(n \log n)$. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 6.** A student claims that an algorithm with time complexity $O(n^3)$ is always slower than one with complexity $O(n^2 \log n)$. Is this correct? Explain.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 No. Big-O is an **asymptotic** upper bound — it describes behaviour as $n \to \infty$. For small $n$, the $O(n^3)$ algorithm might be faster due to smaller constant factors.
 
@@ -290,11 +290,11 @@ Example: Algorithm A takes $1000n^2 \log n$ operations, Algorithm B takes $n^3$ 
 
 The crossover point is where $n^3 = 1000n^2 \log n$, i.e., $n = 1000\log n$, which is at $n \approx 13,000$. Below this, B is faster.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Perform amortized analysis of a stack that supports push ($O(1)$), pop ($O(1)$), and **multipop(k)** which pops $k$ elements ($O(k)$, or $O(\min(k, \text{size}))$).
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Aggregate method.** In a sequence of $n$ operations, each push adds one element. Each pop removes one element. Each multipop removes $k$ elements. Total elements removed $\leq$ total elements pushed $\leq n$. Total cost of all multipop and pop operations $\leq O(n)$. Total push cost: $O(n)$. Total: $O(n)$. Amortised per operation: $O(1)$.
 
@@ -308,7 +308,7 @@ The crossover point is where $n^3 = 1000n^2 \log n$, i.e., $n = 1000\log n$, whi
 
 All amortised costs: $O(1)$. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 8.** Determine the time complexity of the following recursive function:
 
@@ -319,7 +319,7 @@ def f(n):
     return f(n - 1) + f(n - 1)
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $T(n) = 2T(n-1) + O(1)$, $T(1) = O(1)$.
 
@@ -331,11 +331,11 @@ $T(n) = \Theta(2^n)$.
 
 This is the Fibonacci-like recursion without memoization, leading to exponential time.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Rank the following functions in order of increasing growth rate: $n^{0.5}$, $\log^2 n$, $n \log n$, $2^n$, $n!$, $n^3$, $2^{\log n}$.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 First simplify: $2^{\log n} = n$ (assuming $\log$ is base 2).
 
@@ -350,11 +350,11 @@ $$\log^2 n < n^{0.5} < n = 2^{\log n} < n \log n < n^3 < 2^n < n!$$
 - $n = o(n \log n)$: $\lim \frac{n}{n \log n} = 0$ ✓
 - $n^3 = o(2^n)$: $\lim \frac{n^3}{2^n} = 0$ ✓
 
-</p></details>
+</div></details>
 
 **Problem 10.** Prove that $O(f) + O(g) = O(\max(f, g))$.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof.** Let $h_1 \in O(f)$ and $h_2 \in O(g)$. Then $\exists\, c_1, c_2, n_0$ such that $h_1(n) \leq c_1 f(n)$ and $h_2(n) \leq c_2 g(n)$ for all $n \geq n_0$.
 

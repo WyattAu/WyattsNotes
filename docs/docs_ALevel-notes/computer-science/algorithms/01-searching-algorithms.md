@@ -112,7 +112,7 @@ $\square$
 Binary search **only works on sorted arrays**. Applying it to an unsorted array gives incorrect results. Also, beware of integer overflow when computing `mid = (low + high) // 2` — use `mid = low + (high - low) // 2` for safety.
 :::
 
-<details><summary>Example: Trace binary search for x = 7 in [1, 3, 5, 7, 9, 11, 13]</summary><p>
+<details><summary>Example: Trace binary search for x = 7 in [1, 3, 5, 7, 9, 11, 13]</summary><div>
 
 | Iteration | low | high | mid | A[mid] | Action          |
 | --------- | --- | ---- | --- | ------ | --------------- |
@@ -120,9 +120,9 @@ Binary search **only works on sorted arrays**. Applying it to an unsorted array 
 
 Result: index 3. ✓
 
-</p></details>
+</div></details>
 
-<details><summary>Example: Trace binary search for x = 6 in [1, 3, 5, 7, 9, 11, 13]</summary><p>
+<details><summary>Example: Trace binary search for x = 6 in [1, 3, 5, 7, 9, 11, 13]</summary><div>
 
 | Iteration | low | high | mid | A[mid] | Action                |
 | --------- | --- | ---- | --- | ------ | --------------------- |
@@ -133,7 +133,7 @@ Result: index 3. ✓
 
 Result: -1 (not found). ✓
 
-</p></details>
+</div></details>
 
 ### Recursive Binary Search
 
@@ -197,7 +197,7 @@ For exam questions, always state the precondition (sorted array) for binary sear
 
 **Problem 1.** Trace linear search for the value 8 in the array `[3, 1, 4, 1, 5, 9, 2, 6]`. How many comparisons are made?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The value 8 is not in the array. All 8 elements are checked:
 
@@ -214,11 +214,11 @@ The value 8 is not in the array. All 8 elements are checked:
 
 Total comparisons: 8. Return -1.
 
-</p></details>
+</div></details>
 
 **Problem 2.** Trace binary search for the value 25 in the sorted array `[2, 5, 8, 12, 16, 23, 38, 56, 72, 91]`. Show all iterations.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Iteration | low | high | mid | A[mid] | Action            |
 | --------- | --- | ---- | --- | ------ | ----------------- |
@@ -230,39 +230,39 @@ Total comparisons: 8. Return -1.
 
 4 comparisons. Result: -1.
 
-</p></details>
+</div></details>
 
 **Problem 3.** An array of 1024 elements is searched using binary search. What is the maximum number of comparisons required?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $\lfloor \log_2 1024 \rfloor + 1 = 10 + 1 = 11$ comparisons.
 
 More precisely, binary search on $n = 1024$ elements requires at most $\lceil \log_2(1024 + 1) \rceil = \lceil 10.001 \rceil = 11$ comparisons.
 
-</p></details>
+</div></details>
 
 **Problem 4.** Prove that binary search cannot be directly applied to a singly linked list, and explain what alternative approach could achieve $O(\log n)$ search on a linked list.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Binary search requires $O(1)$ access to the middle element (A[mid]). In a singly linked list, accessing the $k$-th element requires traversing $k$ nodes from the head, which is $O(k)$. Finding the middle of a list of $n$ elements takes $O(n/2) = O(n)$ time, eliminating the benefit of halving.
 
 Alternative: **Jump list / Skip list** — a data structure with multiple levels of linked lists that allows $O(\log n)$ search by "skipping" ahead at higher levels, analogous to binary search.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Explain why the worst case for linear search is $\Omega(n)$ using an adversary argument.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 An adversary constructs the worst case dynamically. The adversary maintains that the target $x$ is not at any position already examined by the algorithm. After $n - 1$ comparisons, all positions except one have been checked. The adversary places $x$ at the remaining unchecked position (or declares it absent). Therefore, any correct algorithm must check all $n$ positions in the worst case, requiring $\Omega(n)$ comparisons. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 6.** Write a function to count the number of occurrences of a value in a sorted array using binary search. Your function should run in $O(\log n)$ time.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Find the leftmost and rightmost occurrence using binary search, then compute the difference.
 
@@ -277,11 +277,11 @@ def count_occurrences(A, x):
 
 Two binary searches: $O(\log n) + O(\log n) = O(\log n)$.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Given an array that is sorted but rotated (e.g., `[4, 5, 6, 7, 0, 1, 2]`), write a modified binary search that runs in $O(\log n)$ time.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def search_rotated(A, x):
@@ -305,11 +305,11 @@ def search_rotated(A, x):
 
 The key insight: one half of the array (left or right of mid) is always sorted. Determine which half is sorted and whether the target lies within it.
 
-</p></details>
+</div></details>
 
 **Problem 8.** A binary search implementation has the following bug: `mid = (low + high) / 2` (using floating-point division instead of integer division). What goes wrong?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 In Python, `/` produces a float, and using a float as an array index raises a `TypeError`. In languages like C/Java, `int mid = (low + high) / 2` truncates toward zero, which works correctly for positive values but is technically implementation-dependent.
 

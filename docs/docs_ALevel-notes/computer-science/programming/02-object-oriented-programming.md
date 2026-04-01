@@ -316,7 +316,7 @@ Each class has a single responsibility.
 
 **Problem 1.** Design a class hierarchy for different types of employees in a company: Manager, Developer, and Intern. Include a common method `calculate_salary()` with different implementations.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 from abc import ABC, abstractmethod
@@ -351,11 +351,11 @@ class Intern(Employee):
         return self.base_salary
 ```
 
-</p></details>
+</div></details>
 
 **Problem 2.** Explain the difference between a class variable and an instance variable. Give an example.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 A **class variable** is shared by all instances of the class (defined at the class level). An **instance variable** is unique to each instance (defined in `__init__`).
 
@@ -369,7 +369,7 @@ class Dog:
 
 `Dog.species` is the same for all dogs. `dog1.name` and `dog2.name` are different.
 
-</p></details>
+</div></details>
 
 **Problem 3.** Explain how polymorphism is demonstrated in the following code:
 
@@ -379,7 +379,7 @@ for shape in shapes:
     print(shape.area())
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The loop iterates over a list of `Shape` objects (actually `Rectangle` and `Circle` instances). When `shape.area()` is called, Python determines at **runtime** which `area()` method to invoke based on the actual type of the object:
 
@@ -388,11 +388,11 @@ The loop iterates over a list of `Shape` objects (actually `Rectangle` and `Circ
 
 The same interface (`area()`) produces different behaviour for different types — this is **run-time polymorphism** (also called **dynamic dispatch**).
 
-</p></details>
+</div></details>
 
 **Problem 4.** A student writes a `Square` class that inherits from `Rectangle`. The `Square` constructor takes only a `side` parameter. Explain why this might violate the Liskov Substitution Principle.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 class Square(Rectangle):
@@ -412,11 +412,11 @@ A `Square` used as a `Rectangle` can be put into an invalid state. This means `S
 
 **Solution:** Use composition instead (Square has-a Rectangle), or make Rectangle immutable, or use an interface-based approach.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Explain the difference between aggregation and composition with examples.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Aggregation (weak "has-a"):** The part can exist independently of the whole. Example: A `Department` has `Teacher` objects. If the department is dissolved, the teachers still exist and can join another department.
 
@@ -424,11 +424,11 @@ A `Square` used as a `Rectangle` can be put into an invalid state. This means `S
 
 In code: Aggregation passes in existing objects. Composition creates objects internally.
 
-</p></details>
+</div></details>
 
 **Problem 6.** Implement an abstract class `DataStructure` with abstract methods `insert`, `delete`, and `search`. Then implement it as a `Stack`.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 from abc import ABC, abstractmethod
@@ -465,11 +465,11 @@ class Stack(DataStructure):
         return -1
 ```
 
-</p></details>
+</div></details>
 
 **Problem 7.** Explain the Open/Closed Principle and give an example of a design that violates it, then fix it.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Violation:**
 
@@ -506,7 +506,7 @@ class AreaCalculator:
 
 Adding a new shape requires only adding a new class — no modification to existing code.
 
-</p></details>
+</div></details>
 
 **Problem 8.** What is the output of the following code? Explain the method resolution order.
 
@@ -530,7 +530,7 @@ print(D().greet())
 print(D.__mro__)
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Output:
 
@@ -546,11 +546,11 @@ Python uses **C3 Linearization** (MRO — Method Resolution Order) to determine 
 
 The MRO is D → B → C → A → object. Since `B` has `greet`, the search stops there.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Explain why multiple inheritance can lead to the "diamond problem" and how Python resolves it.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The **diamond problem** occurs when a class inherits from two classes that both inherit from the same base class:
 
@@ -573,11 +573,11 @@ If `D` calls `super().__init__()`, Python follows the MRO, ensuring each class's
 
 Languages like C++ resolve this differently (requiring explicit disambiguation).
 
-</p></details>
+</div></details>
 
 **Problem 10.** Design a library system with classes for `Book`, `Member`, and `Library`. Use encapsulation appropriately. Include methods for borrowing and returning books.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 class Book:
@@ -639,6 +639,6 @@ class Library:
         return self.__books.get(isbn)
 ```
 
-</p></details>
+</div></details>
 
 For revision on programming fundamentals, see [Programming Constructs](/docs/docs_ALevel-notes/computer-science/programming/01-programming-constructs).

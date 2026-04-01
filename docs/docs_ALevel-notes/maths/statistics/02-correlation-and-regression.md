@@ -157,11 +157,11 @@ If we code $u = \dfrac{x-p}{q}$ and $v = \dfrac{y-r}{s}$, and find the regressio
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Calculate the PMCC for the data: $(1,2)$, $(2,3)$, $(3,5)$, $(4,4)$, $(5,7)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $n=5$, $\bar{x}=3$, $\bar{y}=4.2$.
 
 $\sum x^2 = 55$, $\sum y^2 = 103$, $\sum xy = 67$.
@@ -172,34 +172,34 @@ $S_{xy} = 67 - 5(3)(4.2) = 67 - 63 = 4$.
 
 $r = \dfrac{4}{\sqrt{10 \times 14.8}} = \dfrac{4}{\sqrt{148}} = \dfrac{4}{12.166} \approx 0.329$.
 
-<b>If you get this wrong, revise:</b> [Pearson's PMCC](#1-pearsons-product-moment-correlation-coefficient-pmcc) — Section 1.
+**If you get this wrong, revise:** [Pearson's PMCC](#1-pearsons-product-moment-correlation-coefficient-pmcc) — Section 1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Find the equation of the regression line of $y$ on $x$ for the data in Problem 1.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 $b = S_{xy}/S_{xx} = 4/10 = 0.4$.
 
 $a = \bar{y} - b\bar{x} = 4.2 - 0.4(3) = 4.2 - 1.2 = 3.0$.
 
 Regression line: $y = 3.0 + 0.4x$.
 
-<b>If you get this wrong, revise:</b> [Least Squares Regression](#3-least-squares-regression) — Section 3.
+**If you get this wrong, revise:** [Least Squares Regression](#3-least-squares-regression) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 For the data below, calculate Spearman's rank correlation coefficient.
 
 | $x$ | 10 | 20 | 30 | 40 | 50 |
 | $y$ | 15 | 25 | 18 | 35 | 42 |
 
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 Ranks of $x$: 1, 2, 3, 4, 5. Ranks of $y$: 1, 3, 2, 4, 5.
 
 | $d$ | 0 | -1 | 1 | 0 | 0 |
@@ -208,71 +208,71 @@ $\sum d^2 = 0 + 1 + 1 + 0 + 0 = 2$.
 
 $r_s = 1 - \dfrac{6 \times 2}{5(25-1)} = 1 - \dfrac{12}{120} = 1 - 0.1 = 0.9$.
 
-<b>If you get this wrong, revise:</b> [Spearman's Rank Correlation](#2-spearmans-rank-correlation-coefficient) — Section 2.
+**If you get this wrong, revise:** [Spearman's Rank Correlation](#2-spearmans-rank-correlation-coefficient) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Prove that $\sum e_i = 0$ where $e_i = y_i - (a + bx_i)$ are the residuals of the least squares regression line.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 $$\sum e_i = \sum y_i - na - b\sum x_i = n\bar{y} - n(\bar{y} - b\bar{x}) - bn\bar{x} = n\bar{y} - n\bar{y} + nb\bar{x} - nb\bar{x} = 0 \quad \blacksquare$$
 
-<b>If you get this wrong, revise:</b> [Residuals](#51-residuals) — Section 5.1.
+**If you get this wrong, revise:** [Residuals](#51-residuals) — Section 5.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Data is coded using $u = x - 10$ and $v = y/2$. The coded regression line is $v = 0.5 + 0.3u$. Find the regression line of $y$ on $x$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 Original: $y/2 = 0.5 + 0.3(x-10)$.
 
 $y = 1 + 0.6(x-10) = 1 + 0.6x - 6 = 0.6x - 5$.
 
 So $y = -5 + 0.6x$.
 
-<b>If you get this wrong, revise:</b> [Coding in Regression](#6-coding-in-regression) — Section 6.
+**If you get this wrong, revise:** [Coding in Regression](#6-coding-in-regression) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 A student finds $r = 0.95$ between ice cream sales and drowning deaths. The student concludes ice cream causes drowning. Explain the flaw.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 Correlation does not imply causation. Both ice cream sales and drowning deaths are influenced by a **confounding variable**: hot weather. In summer, more people buy ice cream and more people swim, leading to more of both. The correlation is real but the causal claim is not supported.
 
-<b>If you get this wrong, revise:</b> [Properties](#12-properties) — Section 1.2.
+**If you get this wrong, revise:** [Properties](#12-properties) — Section 1.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 Given $S_{xx} = 80$, $S_{yy} = 200$, and $S_{xy} = 100$, find $r$, $b$ (gradient of $y$ on $x$), and the proportion of variance in $y$ explained by $x$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $r = \dfrac{100}{\sqrt{80 \times 200}} = \dfrac{100}{\sqrt{16000}} = \dfrac{100}{126.49} \approx 0.791$.
 
 $b = \dfrac{S_{xy}}{S_{xx}} = \dfrac{100}{80} = 1.25$.
 
 Proportion of variance explained $= r^2 = 0.625$ (62.5%).
 
-<b>If you get this wrong, revise:</b> [Least Squares Regression](#3-least-squares-regression) — Section 3.
+**If you get this wrong, revise:** [Least Squares Regression](#3-least-squares-regression) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 The regression line of $y$ on $x$ is $y = 2 + 3x$ with $\bar{x} = 5$. What is $\bar{y}$?
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 Since the regression line passes through $(\bar{x}, \bar{y})$:
 
 $\bar{y} = 2 + 3(5) = 17$.
 
-<b>If you get this wrong, revise:</b> [The Regression Line Passes Through $(\bar{x}, \bar{y})$](#4-the-regression-line-passes-through-barx-bary) — Section 4.
+**If you get this wrong, revise:** [The Regression Line Passes Through $(\bar{x}, \bar{y})$](#4-the-regression-line-passes-through-barx-bary) — Section 4.
 
-</p></details>
+</div></details>

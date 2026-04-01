@@ -223,7 +223,7 @@ A **traceability matrix** maps each requirement to the test cases that verify it
 
 Using equivalence partitioning and boundary value analysis, identify all test cases.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Equivalence classes:**
 | Class | Range | Test value |
@@ -244,11 +244,11 @@ Using equivalence partitioning and boundary value analysis, identify all test ca
 
 Total test cases: 5 (equivalence) + 12 (boundary) = 17 (some overlap).
 
-</p></details>
+</div></details>
 
 **Problem 2.** Explain the difference between a stub and a mock in unit testing.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 A **stub** is a simple replacement for a dependency that returns predefined responses. It provides canned answers to calls.
 
@@ -261,7 +261,7 @@ A **mock** is a more sophisticated replacement that **verifies** how it was call
 | Complexity | Simple                                | More complex                          |
 | Example    | Fake database returning fixed records | Verify `send_email()` was called once |
 
-</p></details>
+</div></details>
 
 **Problem 3.** Consider the following code. What is the minimum number of test cases to achieve 100% branch coverage?
 
@@ -279,7 +279,7 @@ def classify(x, y):
             return "Q3"
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 There are 2 decision points, each with 2 branches → 4 branches total.
 
@@ -297,11 +297,11 @@ However, for 100% **path** coverage, we need 4 test cases (one per quadrant):
 3. (-1, -1) → Q3
 4. (1, -1) → Q4
 
-</p></details>
+</div></details>
 
 **Problem 4.** Write unit tests for a stack's push, pop, and peek operations. Include edge cases.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def test_stack():
@@ -334,11 +334,11 @@ def test_stack():
 
 Tests cover: push/peek, push/pop order, empty after all pops, pop from empty, peek from empty.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Explain why 100% statement coverage does not guarantee bug-free code. Give a concrete example.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 100% statement coverage means every line of code has been executed at least once, but it does not guarantee:
 
@@ -376,11 +376,11 @@ Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed)
 - Empty list (edge case)
 - Zero (boundary)
 
-</p></details>
+</div></details>
 
 **Problem 6.** Describe the difference between top-down and bottom-up integration testing. What are the advantages of each?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Top-down integration:**
 
@@ -396,7 +396,7 @@ Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed)
 - Advantages: Low-level modules are thoroughly tested; drivers are simpler than stubs
 - Disadvantages: The complete system is not visible until late; interface defects between high-level modules may be found late
 
-</p></details>
+</div></details>
 
 **Problem 7.** Create a decision table for a login system where a user can be:
 
@@ -404,7 +404,7 @@ Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed)
 - Have correct or incorrect password
 - Account may be locked (after 3 failed attempts)
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Rule | User    | Password  | Locked | Action                         |
 | ---- | ------- | --------- | ------ | ------------------------------ |
@@ -416,11 +416,11 @@ Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed)
 
 Rules 3, 4, 5 could potentially be merged (locked or invalid user always shows an error), but for completeness, they're listed separately.
 
-</p></details>
+</div></details>
 
 **Problem 8.** Explain the concept of regression testing and why it is necessary in iterative development.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Regression testing** is the re-execution of existing test cases after a code change to verify that previously working functionality has not been broken (regressed).
 

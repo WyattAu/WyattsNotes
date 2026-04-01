@@ -283,7 +283,7 @@ This lower bound explains why merge sort and quick sort (both $O(n \log n)$) are
 
 **Problem 1.** Trace bubble sort on the array `[5, 1, 4, 2, 8]`. Show the array after each pass.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Pass 1: Compare and swap adjacent pairs.
 `[5, 1, 4, 2, 8]` → `[1, 5, 4, 2, 8]` → `[1, 4, 5, 2, 8]` → `[1, 4, 2, 5, 8]` → `[1, 4, 2, 5, 8]`
@@ -294,11 +294,11 @@ After pass 2: `[1, 2, 4, 5, 8]`
 
 Pass 3: No swaps → sorted. Early termination.
 
-</p></details>
+</div></details>
 
 **Problem 2.** Trace insertion sort on the array `[5, 1, 4, 2, 8]`. Show the array after each insertion.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | i   | key | Array state                |
 | --- | --- | -------------------------- |
@@ -309,11 +309,11 @@ Pass 3: No swaps → sorted. Early termination.
 
 Sorted: `[1, 2, 4, 5, 8]`
 
-</p></details>
+</div></details>
 
 **Problem 3.** Show the merge process when merging `[1, 3, 5]` and `[2, 4, 6, 8]`.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Step | L remaining | R remaining  | Output           |
 | ---- | ----------- | ------------ | ---------------- |
@@ -326,11 +326,11 @@ Sorted: `[1, 2, 4, 5, 8]`
 
 Result: `[1, 2, 3, 4, 5, 6, 8]`
 
-</p></details>
+</div></details>
 
 **Problem 4.** Trace quick sort on `[3, 6, 8, 10, 1, 2, 1]` using the last element as pivot. Show the array and pivot after each partition.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Call 1:** `quick_sort([3, 6, 8, 10, 1, 2, 1], 0, 6)`
 Pivot = 1 (index 6). Partition: `[1, 1, 2, 10, 6, 8, 3]`. Pivot index = 1.
@@ -349,29 +349,29 @@ Pivot = 8 (index 5). Partition: `[6, 8]`. Pivot index = 5.
 
 Final: `[1, 1, 2, 3, 6, 8, 10]`
 
-</p></details>
+</div></details>
 
 **Problem 5.** Prove that insertion sort is stable.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Insertion sort inserts $A[i]$ into the sorted portion $A[0..i-1]$ by shifting elements $> A[i]$ one position right. The condition for shifting is `A[j] > key` (strictly greater). If $A[j] = \text{key}$, the element is **not** shifted, and `key` is placed **after** the equal element. Therefore, equal elements maintain their relative input order. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 6.** A sorting algorithm makes exactly 7 comparisons to sort an array of 5 elements. Is this possible? Justify using the decision tree model.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 A decision tree for sorting 5 elements must have at least $5! = 120$ leaves. A binary tree of height 7 has at most $2^8 - 1 = 255$ nodes and at most $2^7 = 128$ leaves. Since $128 \geq 120$, it is theoretically possible to sort 5 elements in 7 comparisons. However, this requires a perfectly balanced decision tree (each comparison splits the remaining possibilities roughly in half), which is achievable by an optimal comparison-based sorting algorithm.
 
 Note: $2^6 = 64 < 120$, so 6 comparisons are insufficient. The minimum is $\lceil \log_2 120 \rceil = 7$ comparisons.
 
-</p></details>
+</div></details>
 
 **Problem 7.** When is insertion sort preferred over merge sort despite its worse asymptotic complexity?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Insertion sort is preferred when:
 
@@ -382,11 +382,11 @@ Insertion sort is preferred when:
 
 Many hybrid algorithms (e.g., Timsort) use insertion sort for small subarrays within merge sort.
 
-</p></details>
+</div></details>
 
 **Problem 8.** Show that quick sort's worst case occurs when the array is already sorted and the last element is chosen as pivot.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 For sorted array `[1, 2, 3, 4, 5]` with pivot = last element:
 
@@ -397,11 +397,11 @@ Partition 4: pivot = 2, pivot index = 1. Recurse on `[1]`.
 
 Each partition processes the full remaining array. Total comparisons: $(n-1) + (n-2) + \cdots + 1 = n(n-1)/2 = O(n^2)$.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Derive the recurrence relation for merge sort and solve it using the Master Theorem.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The recurrence: $T(n) = 2T(n/2) + cn$, $T(1) = d$.
 
@@ -413,11 +413,11 @@ $f(n) = cn = O(n^1)$, which is case 2: $f(n) = \Theta(n^{\log_b a} \log^k n)$ wi
 
 Therefore: $T(n) = \Theta(n \log n)$.
 
-</p></details>
+</div></details>
 
 **Problem 10.** Count the number of inversions in `[2, 4, 1, 3, 5]`.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 An inversion is a pair $(i, j)$ with $i < j$ and $A[i] > A[j]$.
 
@@ -429,11 +429,11 @@ Total inversions: 3.
 
 Insertion sort would perform exactly 3 swaps (shifts) to sort this array.
 
-</p></details>
+</div></details>
 
 **Problem 11.** Explain how to modify merge sort to count the number of inversions in an array in $O(n \log n)$ time.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 During the merge step, when an element from the right half is placed before elements remaining in the left half, each remaining left element forms an inversion with this right element.
 
@@ -458,11 +458,11 @@ When $R[j] < L[i]$, all elements $L[i], L[i+1], \ldots$ in the left half are gre
 
 Total inversions = sum of inversions from all merge steps. Total time: $O(n \log n)$.
 
-</p></details>
+</div></details>
 
 **Problem 12.** Explain why non-comparison-based sorts like counting sort can achieve $O(n)$ time, and state their limitations.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Counting sort does not compare elements. Instead, it counts the frequency of each distinct key value and uses these counts to determine positions. If the key values are integers in the range $[0, k]$, counting sort runs in $O(n + k)$ time.
 
@@ -476,6 +476,6 @@ Counting sort does not compare elements. Instead, it counts the frequency of eac
 
 Radix sort extends counting sort to handle larger key ranges by sorting digit by digit, achieving $O(d(n + b))$ where $d$ is the number of digits and $b$ is the base.
 
-</p></details>
+</div></details>
 
 For revision on data structures used in sorting, see [Trees](/docs/docs_ALevel-notes/computer-science/data-structures/04-trees) (heap sort) and [Linked Lists](/docs/docs_ALevel-notes/computer-science/data-structures/02-linked-lists) (merge sort).

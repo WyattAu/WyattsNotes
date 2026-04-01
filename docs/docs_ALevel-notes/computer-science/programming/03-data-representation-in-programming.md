@@ -260,13 +260,13 @@ class InsufficientFundsError(Exception):
 
 **Problem 1.** Explain why `0.1 + 0.2 != 0.3` in most programming languages. What is the binary representation of 0.1?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $0.1$ in binary: $0.1_{10} = 0.0001100110011\ldots_2$ (repeating). This cannot be represented exactly in a finite number of binary digits. The IEEE 754 double-precision representation stores an approximation, which introduces a small rounding error. When $0.1$ and $0.2$ (both approximations) are added, the result is $0.30000000000000004$, not exactly $0.3$.
 
 Solution: use `abs(a - b) < 1e-9` for comparison, or use the `decimal` module for exact decimal arithmetic.
 
-</p></details>
+</div></details>
 
 **Problem 2.** What is the output of the following code? Explain.
 
@@ -278,7 +278,7 @@ print(a)
 print(a is b)
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```
 [1, 2, 3, 4]
@@ -289,11 +289,11 @@ True
 
 To avoid this: `b = a.copy()` or `b = a[:]`.
 
-</p></details>
+</div></details>
 
 **Problem 3.** Write a function that reads a file and counts the occurrences of each word. Handle the case where the file does not exist.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 from collections import Counter
@@ -309,11 +309,11 @@ def count_words(filename):
         return {}
 ```
 
-</p></details>
+</div></details>
 
 **Problem 4.** Explain the difference between shallow copy and deep copy. Give an example where they produce different results.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Shallow copy:** Creates a new container but fills it with references to the same objects as the original.
 
@@ -334,11 +334,11 @@ print(deep)     # [[1, 2], [3, 4]]   — unchanged
 
 The shallow copy shares the inner lists with the original. The deep copy has independent inner lists.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Write a function that safely divides two numbers, handling division by zero and non-numeric input.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def safe_divide(a, b):
@@ -351,11 +351,11 @@ def safe_divide(a, b):
         return "Error: Non-numeric input"
 ```
 
-</p></details>
+</div></details>
 
 **Problem 6.** Explain why strings are immutable in Python. What are the advantages and disadvantages?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Advantages:**
 
@@ -380,6 +380,6 @@ for i in range(1000):
 s = "".join(str(i) for i in range(1000))
 ```
 
-</p></details>
+</div></details>
 
 For revision on number representation, see [Number Systems](/docs/docs_ALevel-notes/computer-science/fundamentals/01-number-systems) and [Floating Point](/docs/docs_ALevel-notes/computer-science/fundamentals/02-floating-point).

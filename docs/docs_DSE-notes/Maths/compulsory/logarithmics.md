@@ -66,7 +66,7 @@ These two identities express the fact that the logarithmic and exponential funct
 
 <details>
 <summary>Examples</summary>
-<p>
+<div>
 
 - $\log_2 8 = 3$ since $2^3 = 8$.
 - $\log_3 81 = 4$ since $3^4 = 81$.
@@ -75,7 +75,7 @@ These two identities express the fact that the logarithmic and exponential funct
 - $\log_{10} 1000 = 3$ since $10^3 = 1000$.
 - $\log_2 \frac{1}{8} = -3$ since $2^{-3} = \frac{1}{8}$.
 
-</p>
+</div>
 </details>
 
 ---
@@ -154,14 +154,14 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
+<div>
 
 - $\log_2 6 + \log_2 3 = \log_2(6 \times 3) = \log_2 18$.
 - $\log_3 54 - \log_3 2 = \log_3 \dfrac{54}{2} = \log_3 27 = 3$.
 - $3\log_5 2 = \log_5(2^3) = \log_5 8$.
 - $\log_4 9 = \dfrac{\log_{10} 9}{\log_{10} 4} = \dfrac{2\log_{10} 3}{2\log_{10} 2} = \dfrac{\log_{10} 3}{\log_{10} 2}$.
 
-</p>
+</div>
 </details>
 
 ### A Note on Invalid Manipulations
@@ -212,7 +212,7 @@ When $0 < a < 1$, both functions are strictly decreasing.
 
 <details>
 <summary>Examples</summary>
-<p>
+<div>
 
 - $\log 1000 = 3$ since $10^3 = 1000$.
 - $\log 0.01 = -2$ since $10^{-2} = 0.01$.
@@ -220,7 +220,7 @@ When $0 < a < 1$, both functions are strictly decreasing.
 - $\ln 1 = 0$ since $e^0 = 1$.
 - $e^{\ln 7} = 7$ by the inverse property.
 
-</p>
+</div>
 </details>
 
 ---
@@ -250,7 +250,7 @@ Before solving, always identify the domain. For an equation containing $\log_a f
 
 <details>
 <summary>Examples</summary>
-<p>
+<div>
 
 **Example 1.** Solve $\log_3(x + 2) + \log_3(x - 6) = 3$.
 
@@ -269,7 +269,7 @@ Before solving, always identify the domain. For an equation containing $\log_a f
 - Solve: $x = 8x - 16$, so $7x = 16$, hence $x = \dfrac{16}{7}$.
 - Check: $\dfrac{16}{7} > 2$ is satisfied.
 
-</p>
+</div>
 </details>
 
 ---
@@ -293,7 +293,7 @@ When the equation involves different bases, rewrite all terms using the same bas
 
 <details>
 <summary>Examples</summary>
-<p>
+<div>
 
 **Example 1.** Solve $3^{2x+1} = 7$.
 
@@ -317,7 +317,7 @@ When the equation involves different bases, rewrite all terms using the same bas
 - Since $u > 0$, only $u = 3$, giving $2^x = 3$.
 - Take $\log$: $x\log 2 = \log 3$, so $x = \dfrac{\log 3}{\log 2}$.
 
-</p>
+</div>
 </details>
 
 ---
@@ -340,7 +340,7 @@ where $[\text{H}^+]$ is the concentration of hydrogen ions (in mol/L). A lower p
 
 <details>
 <summary>Example</summary>
-<p>
+<div>
 
 A solution has $[\text{H}^+] = 2.5 \times 10^{-4}$ mol/L. Find its pH.
 
@@ -348,7 +348,7 @@ $$
 \text{pH} = -\log(2.5 \times 10^{-4}) = -\left(\log 2.5 + \log 10^{-4}\right) = -(\log 2.5 - 4) = 4 - \log 2.5 \approx 3.60
 $$
 
-</p>
+</div>
 </details>
 
 ### Richter Scale
@@ -365,7 +365,7 @@ Because the scale is logarithmic base 10, an earthquake of magnitude 6 is ten ti
 
 <details>
 <summary>Example</summary>
-<p>
+<div>
 
 An earthquake has amplitude $5000$ times the reference. Its magnitude is:
 
@@ -373,7 +373,7 @@ $$
 M = \log_{10} 5000 = \log_{10}(5 \times 10^3) = 3 + \log_{10} 5 \approx 3.70
 $$
 
-</p>
+</div>
 </details>
 
 ### Compound Interest
@@ -396,7 +396,7 @@ $$
 
 <details>
 <summary>Example</summary>
-<p>
+<div>
 
 $\$10{,}000$ is invested at $5\%$ per annum, compounded annually. How long does it take for the investment to double?
 
@@ -405,7 +405,7 @@ $\$10{,}000$ is invested at $5\%$ per annum, compounded annually. How long does 
 - Take $\log$: $\log 2 = t \log 1.05$.
 - $t = \dfrac{\log 2}{\log 1.05} \approx 14.2$ years.
 
-</p>
+</div>
 </details>
 
 ### Exponential Growth and Decay
@@ -429,7 +429,7 @@ $$
 
 <details>
 <summary>Example</summary>
-<p>
+<div>
 
 A radioactive substance decays such that its mass after $t$ years is given by $M(t) = 500 \cdot (0.92)^t$ grams. Find the half-life.
 
@@ -437,7 +437,7 @@ A radioactive substance decays such that its mass after $t$ years is given by $M
 - $0.5 = (0.92)^T$.
 - $T = \dfrac{\log 0.5}{\log 0.92} = \dfrac{-0.3010}{-0.0362} \approx 8.31$ years.
 
-</p>
+</div>
 </details>
 
 ---
@@ -464,7 +464,7 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
+<div>
 
 **Example 1.** Solve $\log_2(3x - 1) < 4$.
 
@@ -480,7 +480,7 @@ $$
 - Domain: $x + 3 > 0 \implies x > -3$.
 - Solution: $-3 < x \leq -\dfrac{5}{2}$.
 
-</p>
+</div>
 </details>
 
 ---
@@ -510,7 +510,7 @@ The standard transformations apply, following the same principles as for other [
 
 <details>
 <summary>Example</summary>
-<p>
+<div>
 
 Sketch $y = \log_2(x - 3) + 1$.
 
@@ -520,137 +520,137 @@ Sketch $y = \log_2(x - 3) + 1$.
 - The new $x$-intercept satisfies $\log_2(x - 3) + 1 = 0$, i.e. $\log_2(x-3) = -1$, giving $x - 3 = \frac{1}{2}$, so $x = 3.5$.
 - Domain: $x > 3$.
 
-</p>
+</div>
 </details>
 
 ---
 
 <details>
 <summary>Wrap-up Questions</summary>
-<p>
+<div>
 
 1. **Question:** Solve $\log_3(x^2 - 4) - \log_3(x + 2) = 1$.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Domain: $x^2 - 4 > 0$ and $x + 2 > 0$, so $x > 2$.
    - Quotient rule: $\log_3 \dfrac{x^2 - 4}{x + 2} = 1$.
    - Factor numerator: $\dfrac{(x-2)(x+2)}{x+2} = x - 2$ (valid since $x \neq -2$).
    - Convert: $x - 2 = 3^1 = 3$, so $x = 5$.
    - Check: $5 > 2$ is satisfied. Solution: $x = 5$.
 
-   </p>
+   </div>
    </details>
 
 2. **Question:** Solve $2^{3x-1} = 5^{x+1}$. Give your answer in terms of logarithms.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Take $\log$ of both sides: $\log(2^{3x-1}) = \log(5^{x+1})$.
    - Power rule: $(3x - 1)\log 2 = (x + 1)\log 5$.
    - Expand: $3x\log 2 - \log 2 = x\log 5 + \log 5$.
    - Collect $x$ terms: $x(3\log 2 - \log 5) = \log 5 + \log 2$.
    - $x = \dfrac{\log 5 + \log 2}{3\log 2 - \log 5} = \dfrac{\log 10}{3\log 2 - \log 5} = \dfrac{1}{3\log 2 - \log 5}$.
 
-   </p>
+   </div>
    </details>
 
 3. **Question:** Simplify $\dfrac{\log_8 27}{\log_8 9}$ without using a calculator.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Let the expression equal $y$. By the change of base formula, $y = \log_9 27$.
    - Write bases and argument as powers of 3: $y = \dfrac{\log_3 27}{\log_3 9} = \dfrac{3}{2}$.
    - Alternatively: $\log_8 27 = \dfrac{\log 27}{\log 8} = \dfrac{3\log 3}{3\log 2}$ and $\log_8 9 = \dfrac{2\log 3}{3\log 2}$, so the ratio is $\dfrac{3\log 3 / (3\log 2)}{2\log 3 / (3\log 2)} = \dfrac{3}{2}$.
 
-   </p>
+   </div>
    </details>
 
 4. **Question:** The population of a bacteria culture grows exponentially. At 12:00, the population is $10{,}000$. At 14:00, the population is $40{,}000$. Find the population at 17:00.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Model: $P(t) = P_0 \cdot a^t$ where $t$ is in hours from 12:00.
    - At $t = 0$: $P_0 = 10{,}000$.
    - At $t = 2$: $40{,}000 = 10{,}000 \cdot a^2$, so $a^2 = 4$, giving $a = 2$.
    - At $t = 5$ (17:00): $P(5) = 10{,}000 \cdot 2^5 = 320{,}000$.
 
-   </p>
+   </div>
    </details>
 
 5. **Question:** Solve $9^x - 6 \cdot 3^x - 27 = 0$.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Note $9^x = (3^2)^x = 3^{2x} = (3^x)^2$. Let $u = 3^x$ ($u > 0$).
    - Substitute: $u^2 - 6u - 27 = 0$.
    - Factor: $(u - 9)(u + 3) = 0$, so $u = 9$ or $u = -3$.
    - Since $u > 0$, only $u = 9$, giving $3^x = 9 = 3^2$, so $x = 2$.
 
-   </p>
+   </div>
    </details>
 
 6. **Question:** A substance has a half-life of 8 years. How long does it take for 90% of the substance to decay?
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Model: $M(t) = M_0 \cdot a^t$ where $a = 2^{-1/8}$ (since $M(8) = \frac{1}{2}M_0$).
    - 90% decay means $M(t) = 0.1M_0$.
    - $0.1 = a^t = \left(2^{-1/8}\right)^t = 2^{-t/8}$.
    - Take $\log$: $\log 0.1 = -\dfrac{t}{8} \log 2$.
    - $t = \dfrac{-8 \log 0.1}{\log 2} = \dfrac{8}{\log 2} \approx 26.6$ years.
 
-   </p>
+   </div>
    </details>
 
 7. **Question:** If $\log_2 3 = a$ and $\log_2 5 = b$, express $\log_2 7.5$ in terms of $a$ and $b$.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - $7.5 = \dfrac{15}{2} = \dfrac{3 \times 5}{2}$.
    - $\log_2 7.5 = \log_2 3 + \log_2 5 - \log_2 2 = a + b - 1$.
 
-   </p>
+   </div>
    </details>
 
 8. **Question:** Solve the inequality $\log_{0.5}(2x + 1) > \log_{0.5}(x + 4)$.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Domain: $2x + 1 > 0 \implies x > -\dfrac{1}{2}$, and $x + 4 > 0 \implies x > -4$. Combined: $x > -\dfrac{1}{2}$.
    - Since the base $0.5 < 1$, the logarithmic function is strictly decreasing, so the inequality sign reverses: $2x + 1 < x + 4$.
    - $x < 3$.
    - Combined with the domain: $-\dfrac{1}{2} < x < 3$.
 
-   </p>
+   </div>
    </details>
 
 9. **Question:** Express $2\log x - \log(x^2 - 4) + \log(x + 2)$ as a single logarithm, stating any restrictions on $x$.
 
    <details>
    <summary>Answer</summary>
-   <p>
+   <div>
    - Restrictions: $x > 0$, $x^2 - 4 > 0 \implies x > 2$ or $x < -2$, and $x + 2 > 0 \implies x > -2$. Combined: $x > 2$.
    - Combine: $2\log x + \log(x + 2) - \log(x^2 - 4) = \log(x^2) + \log(x+2) - \log(x^2 - 4)$.
    - $= \log\dfrac{x^2(x+2)}{x^2 - 4} = \log\dfrac{x^2(x+2)}{(x-2)(x+2)} = \log\dfrac{x^2}{x-2}$.
    - Note: the factor $(x+2)$ cancels since $x + 2 \neq 0$ under the domain $x > 2$.
 
-   </p>
+   </div>
    </details>
 
 10. **Question:** An investor deposits $\$5{,}000$ into an account earning $4\%$ interest compounded quarterly. How long (to the nearest quarter) does it take for the balance to reach $\$10{,}000$?
 
     <details>
     <summary>Answer</summary>
-    <p>
+    <div>
     - $A = P\left(1 + \dfrac{r}{100n}\right)^{nt}$ with $P = 5000$, $r = 4$, $n = 4$, $A = 10000$.
     - $10000 = 5000\left(1 + \dfrac{4}{400}\right)^{4t} = 5000(1.01)^{4t}$.
     - $2 = (1.01)^{4t}$.
@@ -658,8 +658,8 @@ Sketch $y = \log_2(x - 3) + 1$.
     - $t = \dfrac{\log 2}{4\log 1.01} \approx \dfrac{0.3010}{4 \times 0.00432} \approx 17.42$ years.
     - To the nearest quarter: approximately 17 years and 2 quarters (17.5 years).
 
-    </p>
+    </div>
     </details>
 
-</p>
+</div>
 </details>

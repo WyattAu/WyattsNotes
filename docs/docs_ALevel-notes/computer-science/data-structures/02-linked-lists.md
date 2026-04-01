@@ -284,7 +284,7 @@ def insert_sorted_with_sentinel(sentinel, value):
 
 **Problem 1.** Draw the singly linked list after inserting 5 at the head, then 3 at the head, then 8 at the tail, starting from an empty list.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Insert 5 at head: `head → [5|•] → None`
 
@@ -292,11 +292,11 @@ Insert 3 at head: `head → [3|•] → [5|•] → None`
 
 Insert 8 at tail: `head → [3|•] → [5|•] → [8|•] → None`
 
-</p></details>
+</div></details>
 
 **Problem 2.** Write a function to reverse a singly linked list in $O(n)$ time and $O(1)$ space.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def reverse(head):
@@ -312,21 +312,21 @@ def reverse(head):
 
 **Correctness proof (invariant):** At the start of each iteration, `prev` points to the reversed portion of the list, and `current` points to the remaining unprocessed portion. The loop processes each node exactly once, redirecting its `next` to point to the previously processed node. After processing all $n$ nodes, `prev` points to the head of the fully reversed list. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 3.** Explain why deleting the last node of a singly linked list takes $O(n)$ time, but deleting the last node of a doubly linked list (with a tail pointer) takes $O(1)$ time.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 In a singly linked list, to delete the last node you need to modify the `next` pointer of the **second-to-last** node. But you cannot go backwards — you must traverse from the head to find it, which takes $O(n)$.
 
 In a doubly linked list with a tail pointer, the last node has a `prev` pointer directly to the second-to-last node. You can access it in $O(1)$ and update both pointers.
 
-</p></details>
+</div></details>
 
 **Problem 4.** A doubly linked list has nodes with 8 bytes of data and two 8-byte pointers. What is the total memory used by a list of 100 nodes? Compare this to a dynamic array of 100 elements.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Linked list: Each node = 8 (data) + 8 (next) + 8 (prev) = 24 bytes. Total: $100 \times 24 = 2400$ bytes.
 
@@ -334,11 +334,11 @@ Dynamic array (assuming capacity ≈ 128, next power of 2): $128 \times 8 = 1024
 
 The linked list uses $2400/1024 \approx 2.34\times$ more memory due to pointer overhead.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Prove that inserting a node after a given node in a doubly linked list takes $O(1)$ time.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The insertion requires exactly four pointer assignments:
 
@@ -349,11 +349,11 @@ The insertion requires exactly four pointer assignments:
 
 Each assignment is $O(1)$. No traversal is needed. Total: $O(1)$. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 6.** Write a function to find the middle element of a singly linked list in a single pass.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def find_middle(head):
@@ -367,11 +367,11 @@ def find_middle(head):
 
 Uses the **two-pointer technique**: `slow` moves one step at a time, `fast` moves two. When `fast` reaches the end, `slow` is at the middle. Time: $O(n)$, Space: $O(1)$.
 
-</p></details>
+</div></details>
 
 **Problem 7.** A singly linked list may contain a cycle. Write a function to detect whether a cycle exists.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def has_cycle(head):
@@ -387,11 +387,11 @@ def has_cycle(head):
 
 **Floyd's Tortoise and Hare algorithm.** `slow` advances by 1, `fast` by 2. If a cycle exists, both pointers eventually enter the cycle, and `fast` gains on `slow` by 1 per step. Since the cycle has finite length, `fast` must eventually equal `slow`. Time: $O(n)$, Space: $O(1)$.
 
-</p></details>
+</div></details>
 
 **Problem 8.** Explain the advantage of using a sentinel node in a linked list implementation.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 A sentinel node eliminates special-case handling for:
 
@@ -401,11 +401,11 @@ A sentinel node eliminates special-case handling for:
 
 Without a sentinel, every insertion and deletion function must check if the list is empty or if the operation affects the head. The sentinel ensures that the "node before" always exists, simplifying the code and reducing bug potential.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Trace the reversal of the linked list `head → [1] → [2] → [3] → [4] → None` using the iterative reverse algorithm. Show the state after each iteration.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Initial: `prev = None`, `current = [1] → [2] → [3] → [4] → None`
 
@@ -419,11 +419,11 @@ Initial: `prev = None`, `current = [1] → [2] → [3] → [4] → None`
 
 Result: `[4] → [3] → [2] → [1] → None`
 
-</p></details>
+</div></details>
 
 **Problem 10.** A circular buffer can be implemented using either a fixed-size array or a circular linked list. Compare the two approaches in terms of time complexity for enqueue and dequeue operations, and memory usage.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Property   | Array-based circular buffer    | Circular linked list             |
 | ---------- | ------------------------------ | -------------------------------- |
@@ -438,4 +438,4 @@ The array implementation is preferred when the maximum size is known and memory 
 
 For revision on queues, see [Stacks and Queues](/docs/docs_ALevel-notes/computer-science/data-structures/03-stacks-and-queues).
 
-</p></details>
+</div></details>

@@ -197,7 +197,7 @@ def levelorder(root):
 
 **Proof.** By structural induction. For a leaf, the in-order traversal outputs just the leaf's key. For an internal node with key $k$: in-order first traverses the left subtree (all keys $< k$ by BST property), then outputs $k$, then traverses the right subtree (all keys $> k$). By the inductive hypothesis, each subtree's output is sorted. Hence the full output is sorted. $\square$
 
-<details><summary>Example: Traversals of a BST</summary><p>
+<details><summary>Example: Traversals of a BST</summary><div>
 
 ```
         8
@@ -214,7 +214,7 @@ def levelorder(root):
 - Post-order: 1, 4, 7, 6, 3, 13, 14, 10, 8
 - Level-order: 8, 3, 10, 1, 6, 14, 4, 7, 13
 
-</p></details>
+</div></details>
 
 ---
 
@@ -318,7 +318,7 @@ A Level exams typically only require understanding of basic BSTs and heaps. AVL 
 
 **Problem 1.** Draw the BST that results from inserting the keys 50, 30, 70, 20, 40, 60, 80 in that order.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```
         50
@@ -330,21 +330,21 @@ A Level exams typically only require understanding of basic BSTs and heaps. AVL 
 
 Each key is inserted at the correct position to maintain the BST property.
 
-</p></details>
+</div></details>
 
 **Problem 2.** What is the in-order, pre-order, and post-order traversal of the BST from Problem 1?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 - In-order: 20, 30, 40, 50, 60, 70, 80
 - Pre-order: 50, 30, 20, 40, 70, 60, 80
 - Post-order: 20, 40, 30, 60, 80, 70, 50
 
-</p></details>
+</div></details>
 
 **Problem 3.** What is the worst-case height of a BST with $n$ nodes? Give an example insertion order that produces this worst case.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Worst-case height: $n - 1$ (essentially a linked list).
 
@@ -364,11 +364,11 @@ Example: inserting keys in sorted order (1, 2, 3, 4, 5) produces a degenerate tr
 
 Height = 4 = $n - 1$.
 
-</p></details>
+</div></details>
 
 **Problem 4.** Delete the node with key 30 from the BST in Problem 1. Show the resulting tree.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Node 30 has two children (20 and 40). Replace with in-order successor = 40 (smallest in right subtree). Delete the original 40 node (leaf).
 
@@ -380,11 +380,11 @@ Node 30 has two children (20 and 40). Replace with in-order successor = 40 (smal
     20  60  80
 ```
 
-</p></details>
+</div></details>
 
 **Problem 5.** Build a max-heap from the array `[4, 10, 3, 5, 1]`. Show the array after each heapify call.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Start: `[4, 10, 3, 5, 1]`, $n = 5$
 
@@ -408,11 +408,11 @@ Final heap: `[10, 5, 3, 4, 1]`
 
 Verify: 10 > 5 and 10 > 3; 5 > 4 and 5 > 1. ✓
 
-</p></details>
+</div></details>
 
 **Problem 6.** Trace heap sort on the array `[3, 1, 4, 1, 5]`. Show the array after each extraction step.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Build heap: `[5, 3, 4, 1, 1]`
 
@@ -425,19 +425,19 @@ Build heap: `[5, 3, 4, 1, 1]`
 
 Final: `[1, 1, 3, 4, 5]`
 
-</p></details>
+</div></details>
 
 **Problem 7.** Prove that the in-order successor of a node in a BST (if it exists) is the leftmost node in its right subtree, assuming the node has a right child.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof.** Let node $N$ have key $k$ and a right child $R$. By the BST property, all keys in $R$'s subtree are $> k$. The in-order successor is the smallest key greater than $k$. In $R$'s subtree, the smallest key is found by always going left (since left children have smaller keys). Therefore, the in-order successor is the leftmost node in the right subtree. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 8.** A complete binary tree has 100 nodes. What is its height? How many leaves does it have?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Height: $h = \lfloor \log_2 100 \rfloor = 6$.
 
@@ -457,11 +457,11 @@ Wait, I need to reconsider. The 32 nodes at level 5 need 37 children. The first 
 
 Total leaves = 37 (level 6) + 13 (level 5) = 50 = $\lceil 100/2 \rceil$. ✓
 
-</p></details>
+</div></details>
 
 **Problem 9.** Explain why heap sort is not a stable sorting algorithm. Give a concrete example where stability is violated.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Heap sort is not stable because the `heapify` operation swaps elements that may be far apart in the array, changing the relative order of equal elements.
 
@@ -475,15 +475,15 @@ Swap root with second-to-last: `[(3, b), (2, c), (3, a)]`.
 
 Result: `[(3, b), (2, c), (3, a)]`. The relative order of `(3, a)` and `(3, b)` has been reversed. Not stable.
 
-</p></details>
+</div></details>
 
 **Problem 10.** Show that the pre-order traversal of a BST uniquely determines the BST if all keys are distinct.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof.** The first element of a pre-order traversal is the root. All subsequent elements before the first element greater than the root belong to the left subtree, and all elements from that point onward belong to the right subtree. This recursively partitions the traversal, uniquely determining the tree structure. $\square$
 
-<details><summary>Detailed example</summary><p>
+<details><summary>Detailed example</summary><div>
 
 Pre-order: `[8, 3, 1, 6, 4, 7, 10, 14, 13]`
 
@@ -496,13 +496,13 @@ Recurse on right `[10, 14, 13]`: root = 10, left = `[]`, right = `[14, 13]`
 
 This uniquely reconstructs the tree.
 
-</p></details>
+</div></details>
 
-</p></details>
+</div></details>
 
 **Problem 11.** Write a function to compute the height of a binary tree. Prove its correctness.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def tree_height(node):
@@ -513,11 +513,11 @@ def tree_height(node):
 
 **Correctness.** By structural induction. Base case: empty tree has height $-1$ (convention). Inductive step: if the left subtree has height $h_L$ and right subtree has height $h_R$ (by inductive hypothesis), then the height of the current node is $1 + \max(h_L, h_R)$, which is the length of the longest root-to-leaf path. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 12.** Given an array representation of a min-heap `[1, 3, 2, 7, 5, 4, 8]`, what are the children of node 3? What is the parent of node 5?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Array: `[1, 3, 2, 7, 5, 4, 8]` (0-indexed)
 
@@ -525,6 +525,6 @@ Children of node 3 (index 1): left = index $2(1)+1 = 3$ → value 7; right = ind
 
 Parent of node 5 (index 4): parent index = $\lfloor(4-1)/2\rfloor = 1$ → value 3.
 
-</p></details>
+</div></details>
 
 For revision on sorting, see [Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/02-sorting-algorithms).

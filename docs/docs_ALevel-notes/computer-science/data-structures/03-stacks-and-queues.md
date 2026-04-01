@@ -245,7 +245,7 @@ _Termination._ After processing all $n$ tokens of a valid RPN expression, exactl
 
 **Complexity.** Each token is processed once: $O(n)$ time, $O(n)$ space (stack depth).
 
-<details><summary>Example: Evaluate `5 1 2 + 4 * + 3 -`</summary><p>
+<details><summary>Example: Evaluate `5 1 2 + 4 * + 3 -`</summary><div>
 
 | Token | Stack (bottom → top) | Action                      |
 | ----- | -------------------- | --------------------------- |
@@ -263,7 +263,7 @@ Result: 14 ✓
 
 Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
 
-</p></details>
+</div></details>
 
 ### 3.3 Infix to Postfix Conversion (Shunting-Yard Algorithm)
 
@@ -277,7 +277,7 @@ Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
    - If $t$ is an operator $\oplus$: while stack is non-empty and top of stack is an operator $\psi$ with precedence($\psi$) $\geq$ precedence($\oplus$), pop $\psi$ to output. Then push $\oplus$.
 3. Pop all remaining operators to output
 
-<details><summary>Example: Convert `(3 + 4) * 5` to RPN</summary><p>
+<details><summary>Example: Convert `(3 + 4) * 5` to RPN</summary><div>
 
 | Token | Output Queue   | Operator Stack | Action                        |
 | ----- | -------------- | -------------- | ----------------------------- |
@@ -292,7 +292,7 @@ Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
 
 Result: `3 4 + 5 *` ✓
 
-</p></details>
+</div></details>
 
 ---
 
@@ -345,7 +345,7 @@ A **priority queue** is a queue where each element has an associated priority, a
 
 **Problem 1.** A stack initially contains `[10, 20, 30]` (30 on top). After the operations `push(40)`, `pop()`, `push(50)`, `pop()`, `pop()`, what is on the stack?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Initial: `[10, 20, 30]` (top = 30)
 
@@ -357,11 +357,11 @@ Initial: `[10, 20, 30]` (top = 30)
 
 Stack: `[10, 20]` (20 on top)
 
-</p></details>
+</div></details>
 
 **Problem 2.** A queue initially contains `[10, 20, 30]` (front = 10). After `enqueue(40)`, `dequeue()`, `enqueue(50)`, `dequeue()`, what remains?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Initial: front → [10, 20, 30] → rear
 
@@ -372,11 +372,11 @@ Initial: front → [10, 20, 30] → rear
 
 Queue: [30, 40, 50] (front = 30)
 
-</p></details>
+</div></details>
 
 **Problem 3.** Evaluate the RPN expression: `2 3 1 * + 9 -`
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Token | Stack     | Action                    |
 | ----- | --------- | ------------------------- |
@@ -392,11 +392,11 @@ Result: -4 ✓
 
 Check: $2 + (3 \times 1) - 9 = 2 + 3 - 9 = -4$ ✓
 
-</p></details>
+</div></details>
 
 **Problem 4.** Convert the infix expression `A + B * C - D` to RPN using the shunting-yard algorithm.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Precedence: `*` > `+`, `-`
 
@@ -415,11 +415,11 @@ Result: `A B C * + D -` ✓
 
 Check: $(A + (B \times C)) - D$
 
-</p></details>
+</div></details>
 
 **Problem 5.** Prove that a stack can be used to check for balanced parentheses in a string in $O(n)$ time.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Algorithm:** Push `(` onto the stack; for each `)`, pop and check that the stack is non-empty. At the end, the stack must be empty.
 
@@ -431,11 +431,11 @@ Check: $(A + (B \times C)) - D$
 
 Time: $O(n)$ — one pass through the string. Space: $O(n)$ — stack depth.
 
-</p></details>
+</div></details>
 
 **Problem 6.** Implement a queue using two stacks. Show that `enqueue` is $O(1)$ and `dequeue` is amortised $O(1)$.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 class StackQueue:
@@ -459,19 +459,19 @@ class StackQueue:
 
 **Amortised proof.** Over a sequence of $n$ operations, each element is pushed to `in_stack` once ($O(1)$), transferred to `out_stack` at most once ($O(1)$ amortised), and popped from `out_stack` once ($O(1)$). Total: $O(n)$ for $n$ operations → $O(1)$ amortised per operation. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 7.** Explain why a stack is the appropriate data structure for undo functionality in a text editor.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Each action in the editor (typing, deleting, formatting) can be represented as a state change. When the user performs "undo", we need to reverse the **most recent** action — this is exactly LIFO behaviour. Pushing each action onto a stack and popping on undo naturally reverses actions in the correct order. A queue would undo the **oldest** action first, which is not the desired behaviour.
 
-</p></details>
+</div></details>
 
 **Problem 8.** A circular queue has capacity 5. Show the state of the queue (front, rear, size, and array contents) after each operation: `enqueue(1)`, `enqueue(2)`, `dequeue()`, `enqueue(3)`, `enqueue(4)`, `enqueue(5)`, `dequeue()`, `enqueue(6)`.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Operation  | front | rear | size | Array contents (indices 0-4) |
 | ---------- | ----- | ---- | ---- | ---------------------------- |
@@ -487,11 +487,11 @@ Each action in the editor (typing, deleting, formatting) can be represented as a
 
 Note: rear wraps around using `(rear + 1) % capacity`.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Write a function that uses a stack to reverse the order of elements in a queue.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def reverse_queue(queue):
@@ -504,11 +504,11 @@ def reverse_queue(queue):
 
 **Correctness.** Dequeuing all elements and pushing them onto a stack reverses the order (LIFO). Then popping all elements and enqueuing them places them in the queue in the reversed order. Time: $O(n)$, Space: $O(n)$.
 
-</p></details>
+</div></details>
 
 **Problem 10.** Prove that any valid RPN expression with $n$ operands and $n-1$ binary operators evaluates to exactly one value (the stack has exactly one element at the end).
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof by induction on $n$ (number of operands).**
 
@@ -520,4 +520,4 @@ More cleanly: let $f(n)$ be the net change in stack size after processing $n$ op
 
 For revision on complexity analysis, see [Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/04-complexity-analysis).
 
-</p></details>
+</div></details>

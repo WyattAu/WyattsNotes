@@ -290,95 +290,95 @@ $$\int \tan x\,dx = \int \frac{\sin x}{\cos x}\,dx = -\ln|\cos x| + C = \ln|\sec
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Evaluate $\displaystyle\int_0^2 (3x^2 - 4x + 1)\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $$\int_0^2 (3x^2 - 4x + 1)\,dx = \left[x^3 - 2x^2 + x\right]_0^2 = (8 - 8 + 2) - 0 = 2$$
 
-<b>If you get this wrong, revise:</b> [Standard Integrals](#3-standard-integrals) — Section 3.
+**If you get this wrong, revise:** [Standard Integrals](#3-standard-integrals) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Find the area enclosed between $y = x^2$ and $y = 2x$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 Intersection: $x^2 = 2x \implies x(x-2) = 0 \implies x = 0, 2$.
 
 On $[0,2]$: $2x \geq x^2$ (since $2x - x^2 = x(2-x) \geq 0$).
 
 $$A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}$$
 
-<b>If you get this wrong, revise:</b> [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.3.
+**If you get this wrong, revise:** [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Find $\displaystyle\int \frac{2x}{x^2+3}\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 Let $u = x^2 + 3$, $du = 2x\,dx$.
 
 $$\int \frac{2x}{x^2+3}\,dx = \int \frac{1}{u}\,du = \ln|u| + C = \ln(x^2+3) + C$$
 
 (Since $x^2+3 > 0$, no absolute value needed.)
 
-<b>If you get this wrong, revise:</b> [Integration by Substitution](#5-integration-by-substitution) — Section 5.
+**If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Evaluate $\displaystyle\int_0^{\pi/2} x\sin x\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 Integration by parts: $u = x$, $dv = \sin x\,dx$. Then $du = dx$, $v = -\cos x$.
 
 $$\int x\sin x\,dx = -x\cos x + \int \cos x\,dx = -x\cos x + \sin x + C$$
 
 $$\left[-x\cos x + \sin x\right]_0^{\pi/2} = \left(0 + 1\right) - \left(0 + 0\right) = 1$$
 
-<b>If you get this wrong, revise:</b> [Integration by Parts](#6-integration-by-parts) — Section 6.
+**If you get this wrong, revise:** [Integration by Parts](#6-integration-by-parts) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Use the trapezium rule with 4 strips to approximate $\displaystyle\int_0^2 \frac{1}{1+x^2}\,dx$, and give an error bound given $|f''(x)| \leq 2$ on $[0,2]$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 1/(1+1) = 0.5$, $y_3 = 1/(1+2.25) \approx 0.3077$, $y_4 = 1/5 = 0.2$.
 
 $$\text{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
 
 Error bound: $|E| \leq \dfrac{2^3}{12 \times 16} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
 
-<b>If you get this wrong, revise:</b> [The Trapezium Rule](#7-the-trapezium-rule) — Section 7.
+**If you get this wrong, revise:** [The Trapezium Rule](#7-the-trapezium-rule) — Section 7.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 Find $\displaystyle\int \frac{x}{\sqrt{x+1}}\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 Let $u = x+1$, so $x = u-1$ and $dx = du$.
 
 $$\int \frac{u-1}{\sqrt{u}}\,du = \int(u^{1/2} - u^{-1/2})\,du = \frac{2}{3}u^{3/2} - 2u^{1/2} + C = \frac{2}{3}(x+1)^{3/2} - 2(x+1)^{1/2} + C$$
 
-<b>If you get this wrong, revise:</b> [Integration by Substitution](#5-integration-by-substitution) — Section 5.
+**If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 Find a reduction formula for $I_n = \displaystyle\int_0^{\pi/2} \sin^n x\,dx$ for $n \geq 2$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $I_n = \int_0^{\pi/2}\sin^{n-1}x \cdot \sin x\,dx$.
 
 Let $u = \sin^{n-1}x$, $dv = \sin x\,dx$.
@@ -394,15 +394,15 @@ $$I_n = (n-1)I_{n-2} - (n-1)I_n$$
 $$nI_n = (n-1)I_{n-2}$$
 $$I_n = \frac{n-1}{n}I_{n-2}$$
 
-<b>If you get this wrong, revise:</b> [Reduction Formulas](#64-reduction-formulas) — Section 6.4.
+**If you get this wrong, revise:** [Reduction Formulas](#64-reduction-formulas) — Section 6.4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Find the total area between $y = x(x-2)(x+1)$ and the $x$-axis.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $y = x(x-2)(x+1) = x^3 - x^2 - 2x$. Roots at $x = -1, 0, 2$.
 
 $$\int_{-1}^0 (x^3-x^2-2x)\,dx = \left[\frac{x^4}{4}-\frac{x^3}{3}-x^2\right]_{-1}^0 = 0 - \left(\frac{1}{4}+\frac{1}{3}-1\right) = -\left(\frac{3+4-12}{12}\right) = \frac{5}{12}$$
@@ -411,15 +411,15 @@ $$\int_0^2 (x^3-x^2-2x)\,dx = \left[\frac{x^4}{4}-\frac{x^3}{3}-x^2\right]_0^2 =
 
 Total area = $\dfrac{5}{12} + \dfrac{8}{3} = \dfrac{5+32}{12} = \dfrac{37}{12}$.
 
-<b>If you get this wrong, revise:</b> [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.2.
+**If you get this wrong, revise:** [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 Find $\displaystyle\int e^{2x}\cos x\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 Apply integration by parts twice. Let $I = \int e^{2x}\cos x\,dx$.
 
 First: $u = e^{2x}$, $dv = \cos x\,dx$. $du = 2e^{2x}\,dx$, $v = \sin x$.
@@ -436,41 +436,41 @@ $5I = e^{2x}(\sin x + 2\cos x)$.
 
 $$I = \frac{e^{2x}(\sin x + 2\cos x)}{5} + C$$
 
-<b>If you get this wrong, revise:</b> [Integration by Parts](#6-integration-by-parts) — Section 6.
+**If you get this wrong, revise:** [Integration by Parts](#6-integration-by-parts) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 Evaluate $\displaystyle\int_1^e \frac{\ln x}{x}\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$.
 
 $$\int \frac{\ln x}{x}\,dx = \int u\,du = \frac{u^2}{2} + C = \frac{(\ln x)^2}{2} + C$$
 
 $$\left[\frac{(\ln x)^2}{2}\right]_1^e = \frac{1}{2} - 0 = \frac{1}{2}$$
 
-<b>If you get this wrong, revise:</b> [Integration by Substitution](#5-integration-by-substitution) — Section 5.
+**If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 11</summary><p>
+<details><summary>Problem 11</summary><div>
 The curve $C$ has parametric equations $x = t^2$, $y = 2t$ for $0 \leq t \leq 3$. Find the area under $C$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 11</summary><p>
+<details><summary>Solution 11</summary><div>
 $$A = \int_{t=0}^{t=3} y\,\frac{dx}{dt}\,dt = \int_0^3 2t \cdot 2t\,dt = \int_0^3 4t^2\,dt = \left[\frac{4t^3}{3}\right]_0^3 = \frac{4 \times 27}{3} = 36$$
 
-<b>If you get this wrong, revise:</b> [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.4.
+**If you get this wrong, revise:** [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 12</summary><p>
+<details><summary>Problem 12</summary><div>
 Find $\displaystyle\int \frac{3x+5}{x^2+4x+3}\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 12</summary><p>
+<details><summary>Solution 12</summary><div>
 $x^2 + 4x + 3 = (x+1)(x+3)$.
 
 $$\frac{3x+5}{(x+1)(x+3)} = \frac{A}{x+1} + \frac{B}{x+3}$$
@@ -482,15 +482,15 @@ $x = -3$: $-4 = -2B \implies B = 2$.
 
 $$\int \frac{1}{x+1} + \frac{2}{x+3}\,dx = \ln|x+1| + 2\ln|x+3| + C$$
 
-<b>If you get this wrong, revise:</b> [Partial Fractions](#82-partial-fractions) — Section 8.2.
+**If you get this wrong, revise:** [Partial Fractions](#82-partial-fractions) — Section 8.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 13</summary><p>
+<details><summary>Problem 13</summary><div>
 Sketch proof: explain why $\displaystyle\int_{-a}^a f(x)\,dx = 0$ when $f$ is an odd function.
-</p></details>
+</div></details>
 
-<details><summary>Solution 13</summary><p>
+<details><summary>Solution 13</summary><div>
 If $f$ is odd, then $f(-x) = -f(x)$.
 
 $$\int_{-a}^a f(x)\,dx = \int_{-a}^0 f(x)\,dx + \int_0^a f(x)\,dx$$
@@ -501,6 +501,6 @@ $$\int_{-a}^0 f(x)\,dx = \int_a^0 f(-u)(-du) = \int_0^a -f(u)\,du = -\int_0^a f(
 
 Therefore $\displaystyle\int_{-a}^a f(x)\,dx = -\int_0^a f(x)\,dx + \int_0^a f(x)\,dx = 0$. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.
+**If you get this wrong, revise:** [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.
 
-</p></details>
+</div></details>

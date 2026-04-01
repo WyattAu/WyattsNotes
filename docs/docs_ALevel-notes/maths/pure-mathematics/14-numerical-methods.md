@@ -195,82 +195,82 @@ Simpson's rule requires an **even** number of strips. The trapezium rule works w
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Show that $x^3 - 2x - 5 = 0$ has a root in the interval $[2, 3]$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $f(x) = x^3 - 2x - 5$. $f(2) = 8-4-5 = -1 < 0$, $f(3) = 27-6-5 = 16 > 0$.
 
 Since $f$ is continuous and changes sign on $[2,3]$, by the sign change theorem there is a root in $(2,3)$.
 
-<b>If you get this wrong, revise:</b> [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.1.
+**If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Use fixed-point iteration $x_{n+1} = \sqrt[3]{2x_n + 5}$ with $x_0 = 2$ to find $x_3$. Give your answer to 4 decimal places.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 $x_0 = 2.0000$
 $x_1 = \sqrt[3]{9} = 2.0801$
 $x_2 = \sqrt[3]{2(2.0801)+5} = \sqrt[3]{9.1602} = 2.0924$
 $x_3 = \sqrt[3]{2(2.0924)+5} = \sqrt[3]{9.1848} = 2.0943$
 
-<b>If you get this wrong, revise:</b> [Fixed-Point Iteration](#2-fixed-point-iteration) — Section 2.
+**If you get this wrong, revise:** [Fixed-Point Iteration](#2-fixed-point-iteration) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Show that the iteration $x_{n+1} = \dfrac{x_n^3 + 5}{2}$ for solving $x^3 - 2x - 5 = 0$ will not converge near the root.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 $g(x) = \dfrac{x^3+5}{2}$, $g'(x) = \dfrac{3x^2}{2}$.
 
 Near the root $\alpha \approx 2.09$: $g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac{3 \times 4.37}{2} \approx 6.55 > 1$.
 
 Since $|g'(\alpha)| > 1$, the iteration diverges near $\alpha$.
 
-<b>If you get this wrong, revise:</b> [Convergence Condition](#22-convergence-condition) — Section 2.2.
+**If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Use Newton-Raphson with $x_0 = 2$ to find $x_2$ for $f(x) = x^3 - 2x - 5 = 0$. Give your answer to 4 decimal places.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 $f'(x) = 3x^2 - 2$. $x_{n+1} = x_n - \dfrac{x_n^3 - 2x_n - 5}{3x_n^2 - 2}$.
 
 $x_0 = 2$: $f(2) = -1$, $f'(2) = 10$. $x_1 = 2 - (-1/10) = 2.1000$.
 
 $x_1 = 2.1$: $f(2.1) = 9.261-4.2-5 = 0.061$, $f'(2.1) = 13.23-2 = 11.23$. $x_2 = 2.1 - 0.061/11.23 = 2.0946$.
 
-<b>If you get this wrong, revise:</b> [Newton-Raphson Method](#3-newton-raphson-method) — Section 3.
+**If you get this wrong, revise:** [Newton-Raphson Method](#3-newton-raphson-method) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Use Simpson's rule with 4 strips to approximate $\displaystyle\int_0^2 e^{-x^2}\,dx$ to 4 decimal places.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $h = 0.5$. Values: $y_0 = 1$, $y_1 = e^{-0.25} \approx 0.7788$, $y_2 = e^{-1} \approx 0.3679$, $y_3 = e^{-2.25} \approx 0.1054$, $y_4 = e^{-4} \approx 0.0183$.
 
 $$\int_0^2 e^{-x^2}\,dx \approx \frac{0.5}{3}[1 + 4(0.7788) + 2(0.3679) + 4(0.1054) + 0.0183]$$
 $$= \frac{0.5}{3}[1 + 3.1152 + 0.7358 + 0.4216 + 0.0183] = \frac{0.5}{3}(5.2909) \approx 0.8818$$
 
-<b>If you get this wrong, revise:</b> [Simpson's Rule](#5-simpsons-rule) — Section 5.
+**If you get this wrong, revise:** [Simpson's Rule](#5-simpsons-rule) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 Show that the equation $e^x = 3x$ has exactly two real roots, and locate them.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 Let $f(x) = e^x - 3x$. $f'(x) = e^x - 3$.
 
 $f'(x) = 0 \implies x = \ln 3 \approx 1.099$.
@@ -282,15 +282,15 @@ Since $f''(x) = e^x > 0$, this is a global minimum. The minimum value is negativ
 $f(0) = 1 > 0$, $f(1) = e-3 < 0$: root in $(0,1)$.
 $f(1) < 0$, $f(2) = e^2-6 > 0$: root in $(1,2)$.
 
-<b>If you get this wrong, revise:</b> [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
+**If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 The Newton-Raphson formula fails when applied to $f(x) = x^{1/3}$ starting from $x_0 = 1$. Explain why.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $f(x) = x^{1/3}$, $f'(x) = \dfrac{1}{3}x^{-2/3}$.
 
 $x_{n+1} = x_n - \dfrac{x_n^{1/3}}{\frac{1}{3}x_n^{-2/3}} = x_n - 3x_n = -2x_n$.
@@ -299,15 +299,15 @@ So $x_1 = -2$, $x_2 = 4$, $x_3 = -8$, ... The iterates oscillate and diverge.
 
 The problem is that $f'(0) = \infty$ — the tangent at the root $x=0$ is vertical, so the Newton-Raphson step sends the iterate to $-\infty$.
 
-<b>If you get this wrong, revise:</b> [Failures](#33-failures) — Section 3.3.
+**If you get this wrong, revise:** [Failures](#33-failures) — Section 3.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Use the trapezium rule with 6 strips to approximate $\displaystyle\int_1^4 \ln x\,dx$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $h = 0.5$. Values: $\ln 1 = 0$, $\ln 1.5 \approx 0.4055$, $\ln 2 \approx 0.6931$, $\ln 2.5 \approx 0.9163$, $\ln 3 \approx 1.0986$, $\ln 3.5 \approx 1.2528$, $\ln 4 \approx 1.3863$.
 
 $$\text{Approx} = \frac{0.5}{2}[0 + 2(0.4055+0.6931+0.9163+1.0986+1.2528) + 1.3863]$$
@@ -315,15 +315,15 @@ $$= 0.25[0 + 2(4.3663) + 1.3863] = 0.25[8.7326 + 1.3863] = 0.25 \times 10.1189 \
 
 (Exact: $[x\ln x - x]_1^4 = 4\ln 4 - 4 + 1 = 8\ln 2 - 3 \approx 2.5452$.)
 
-<b>If you get this wrong, revise:</b> [The Trapezium Rule](#4-the-trapezium-rule) — Section 4.
+**If you get this wrong, revise:** [The Trapezium Rule](#4-the-trapezium-rule) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 For the equation $x^3 + x - 3 = 0$, show that $x_{n+1} = \sqrt[3]{3 - x_n}$ converges near the root.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 $f(1) = -1 < 0$, $f(1.2) = 1.728 + 1.2 - 3 = -0.072 < 0$, $f(1.3) = 2.197 + 1.3 - 3 = 0.497 > 0$.
 
 Root near $\alpha \approx 1.21$.
@@ -334,17 +334,17 @@ $|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx 
 
 Converges since $|g'(\alpha)| < 1$.
 
-<b>If you get this wrong, revise:</b> [Convergence Condition](#22-convergence-condition) — Section 2.2.
+**If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 Explain why the sign change theorem does not guarantee a root of $f(x) = \dfrac{1}{x-2}$ in the interval $[1, 3]$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 $f(1) = -1 < 0$ and $f(3) = 1 > 0$, so there is a sign change. However, $f$ is **not continuous** on $[1,3]$ — it has a vertical asymptote at $x = 2$. The sign change theorem requires continuity, so it does not apply here. There is no root of $1/(x-2) = 0$.
 
-<b>If you get this wrong, revise:</b> [Limitations](#12-limitations) — Section 1.2.
+**If you get this wrong, revise:** [Limitations](#12-limitations) — Section 1.2.
 
-</p></details>
+</div></details>

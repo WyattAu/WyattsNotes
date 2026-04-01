@@ -356,134 +356,134 @@ Never try to differentiate $f(x)^{g(x)}$ directly using the power rule or the ex
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Evaluate $\displaystyle\lim_{n\to\infty}\left(1+\frac{3}{n}\right)^n$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 Let $m = n/3$, so $n = 3m$. As $n \to \infty$, $m \to \infty$.
 
 $$\left(1+\frac{3}{n}\right)^n = \left(1+\frac{1}{m}\right)^{3m} = \left[\left(1+\frac{1}{m}\right)^m\right]^3 \to e^3$$
 
-<b>If you get this wrong, revise:</b> [The Number $e$](#1-the-number-e) — Section 1.1.
+**If you get this wrong, revise:** [The Number $e$](#1-the-number-e) — Section 1.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Prove that $\dfrac{d}{dx}(e^{3x^2}) = 6x\, e^{3x^2}$ using the chain rule.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 Let $u = 3x^2$, so $y = e^u$ and $\dfrac{dy}{du} = e^u$, $\dfrac{du}{dx} = 6x$.
 
 By the chain rule: $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx} = e^u \cdot 6x = 6x\, e^{3x^2}$. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [The Derivative of $e^x$](#2-the-derivative-of-ex) — Section 2.
+**If you get this wrong, revise:** [The Derivative of $e^x$](#2-the-derivative-of-ex) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Solve $\log_2(x+3) + \log_2(x-1) = 4$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 $$\log_2[(x+3)(x-1)] = 4 \implies (x+3)(x-1) = 16$$
 $$x^2 + 2x - 3 = 16 \implies x^2 + 2x - 19 = 0$$
 $$x = \frac{-2 \pm \sqrt{4+76}}{2} = \frac{-2 \pm \sqrt{80}}{2} = -1 \pm 2\sqrt{5}$$
 
 Domain: $x > 1$, so $x = -1 + 2\sqrt{5}$.
 
-<b>If you get this wrong, revise:</b> [Laws of Logarithms](#4-laws-of-logarithms) — Section 4.
+**If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Given $\log_a 2 = 0.301$ and $\log_a 5 = 0.699$, find $\log_a 200$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 $$\log_a 200 = \log_a(2 \times 100) = \log_a 2 + \log_a 100 = \log_a 2 + \log_a(4 \times 25)$$
 $$= \log_a 2 + 2\log_a 2 + 2\log_a 5 = 3(0.301) + 2(0.699) = 0.903 + 1.398 = 2.301$$
 
-<b>If you get this wrong, revise:</b> [Laws of Logarithms](#4-laws-of-logarithms) — Section 4.
+**If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Solve $5^{2x} - 6 \cdot 5^x + 5 = 0$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 Let $u = 5^x$ ($u > 0$). Then $u^2 - 6u + 5 = 0$, so $(u-1)(u-5) = 0$.
 
 $u = 1$: $5^x = 1 \implies x = 0$.
 $u = 5$: $5^x = 5 \implies x = 1$.
 
-<b>If you get this wrong, revise:</b> [Solving Exponential Equations](#7-solving-exponential-equations) — Section 7.3.
+**If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations) — Section 7.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 A radioactive substance decays with half-life 8 days. If initially there are 200g, find the mass after 25 days.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 Model: $N = N_0 e^{-kt}$ where $N_0 = 200$.
 
 Half-life: $t_{1/2} = \dfrac{\ln 2}{k} = 8 \implies k = \dfrac{\ln 2}{8}$.
 
 $$N = 200 \cdot e^{-25\ln 2/8} = 200 \cdot 2^{-25/8} \approx 200 \cdot 0.2315 \approx 46.3 \text{ g}$$
 
-<b>If you get this wrong, revise:</b> [Exponential Modelling](#8-exponential-modelling) — Section 8.2.
+**If you get this wrong, revise:** [Exponential Modelling](#8-exponential-modelling) — Section 8.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 Differentiate $y = x^x$ using logarithmic differentiation.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $\ln y = x \ln x$. Differentiating: $\dfrac{1}{y}\dfrac{dy}{dx} = \ln x + x \cdot \dfrac{1}{x} = \ln x + 1$.
 
 $$\frac{dy}{dx} = x^x(\ln x + 1)$$
 
-<b>If you get this wrong, revise:</b> [Logarithmic Differentiation](#10-logarithmic-differentiation) — Section 10.
+**If you get this wrong, revise:** [Logarithmic Differentiation](#10-logarithmic-differentiation) — Section 10.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Solve $\ln(3x-1) = \ln(x+2) + \ln 4$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $$\ln(3x-1) = \ln[4(x+2)] \implies 3x - 1 = 4x + 8 \implies x = -9$$
 
 Check domain: $3(-9)-1 = -28 < 0$ and $-9+2 = -7 < 0$. Both logarithms undefined. **No solution.**
 
-<b>If you get this wrong, revise:</b> [Solving Exponential Equations](#7-solving-exponential-equations) — Section 7.1, and always check the domain.
+**If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations) — Section 7.1, and always check the domain.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 Prove that $\log_a b \cdot \log_b a = 1$ for all $a, b > 0$, $a, b \neq 1$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 By the change of base formula:
 
 $$\log_a b = \frac{\ln b}{\ln a}, \qquad \log_b a = \frac{\ln a}{\ln b}$$
 
 $$\log_a b \cdot \log_b a = \frac{\ln b}{\ln a} \cdot \frac{\ln a}{\ln b} = 1 \quad \blacksquare$$
 
-<b>If you get this wrong, revise:</b> [Change of Base Formula](#5-change-of-base-formula) — Section 5.
+**If you get this wrong, revise:** [Change of Base Formula](#5-change-of-base-formula) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 The temperature $T$ of a cooling object follows $T = T_s + (T_0 - T_s)e^{-kt}$. A cup of tea at $90°$C is placed in a room at $20°$C. After 10 minutes it is $60°$C. Find $k$ and determine when the tea reaches $35°$C.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 $T_s = 20$, $T_0 = 90$. Model: $T = 20 + 70e^{-kt}$.
 
 At $t = 10$: $60 = 20 + 70e^{-10k} \implies 40 = 70e^{-10k} \implies e^{-10k} = 4/7$.
@@ -494,35 +494,35 @@ For $T = 35$: $35 = 20 + 70e^{-kt} \implies 15 = 70e^{-kt} \implies e^{-kt} = 3/
 
 $$-kt = \ln(3/14) \implies t = \frac{\ln(14/3)}{k} = \frac{10\ln(14/3)}{\ln(7/4)} \approx 28.3 \text{ minutes}$$
 
-<b>If you get this wrong, revise:</b> [Exponential Modelling](#8-exponential-modelling) — Section 8.
+**If you get this wrong, revise:** [Exponential Modelling](#8-exponential-modelling) — Section 8.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 11</summary><p>
+<details><summary>Problem 11</summary><div>
 Express $y = e^{2x} + 3e^{-2x}$ in the form $y = 2\cosh(2x) + \cosh(2x)$ is not correct. Instead: Find the minimum value of $y = e^{2x} + 3e^{-2x}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 11</summary><p>
+<details><summary>Solution 11</summary><div>
 $\dfrac{dy}{dx} = 2e^{2x} - 6e^{-2x} = 0 \implies 2e^{2x} = 6e^{-2x} \implies e^{4x} = 3 \implies x = \dfrac{\ln 3}{4}$.
 
 At $x = \dfrac{\ln 3}{4}$: $e^{2x} = e^{\ln 3 / 2} = \sqrt{3}$, $e^{-2x} = 1/\sqrt{3}$.
 
 $$y_{\min} = \sqrt{3} + \frac{3}{\sqrt{3}} = \sqrt{3} + \sqrt{3} = 2\sqrt{3}$$
 
-<b>If you get this wrong, revise:</b> [Solving Exponential Equations](#7-solving-exponential-equations) and Section 2.2.
+**If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations) and Section 2.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 12</summary><p>
+<details><summary>Problem 12</summary><div>
 Given $\ln(x^2 + 1) = 2\ln x + \ln 5$, solve for $x$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 12</summary><p>
+<details><summary>Solution 12</summary><div>
 $$\ln(x^2+1) = \ln(x^2) + \ln 5 = \ln(5x^2)$$
 $$x^2 + 1 = 5x^2 \implies 4x^2 = 1 \implies x^2 = \frac{1}{4} \implies x = \frac{1}{2}$$
 
 Reject $x = -1/2$ since $\ln x$ requires $x > 0$.
 
-<b>If you get this wrong, revise:</b> [Laws of Logarithms](#4-laws-of-logarithms) — Section 4 and domain restrictions.
+**If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4 and domain restrictions.
 
-</p></details>
+</div></details>

@@ -33,7 +33,7 @@ where $b$ is the base address of the array, $i$ is the index, and $s$ is the ele
 
 **Proof.** The address of $A[i]$ is computed by a single multiplication and a single addition — both constant-time operations. No traversal is needed. $\square$
 
-<details><summary>Example: Memory layout of an integer array</summary><p>
+<details><summary>Example: Memory layout of an integer array</summary><div>
 
 Consider `int A[5] = {10, 20, 30, 40, 50}` where each `int` is 4 bytes and the base address is $b = 1000$:
 
@@ -47,7 +47,7 @@ Consider `int A[5] = {10, 20, 30, 40, 50}` where each `int` is 4 bytes and the b
 
 $A[3]$ is at $1000 + 3 \times 4 = 1012$. ✓
 
-</p></details>
+</div></details>
 
 ### Operations and Complexity
 
@@ -111,7 +111,7 @@ $$\text{addr}(A[i][j]) = b + (j \cdot m + i) \cdot s$$
 
 This is the default in Fortran, MATLAB, R, and Julia.
 
-<details><summary>Example: 3×2 array in row-major vs column-major</summary><p>
+<details><summary>Example: 3×2 array in row-major vs column-major</summary><div>
 
 $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$
 
@@ -119,7 +119,7 @@ $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$
 
 **Column-major:** 1, 3, 5, 2, 4, 6
 
-</p></details>
+</div></details>
 
 **Theorem.** 2D array access takes $O(1)$ time.
 
@@ -209,7 +209,7 @@ Fields are stored contiguously in memory, in the order declared. The size of a r
 
 **Alignment rule:** On most architectures, an $n$-byte field must be stored at an address that is a multiple of $n$ (or the largest alignment requirement).
 
-<details><summary>Example: Record memory layout with padding</summary><p>
+<details><summary>Example: Record memory layout with padding</summary><div>
 
 ```c
 struct Example {
@@ -231,7 +231,7 @@ Layout (on a 32-bit system with 4-byte alignment):
 
 Total size: 12 bytes (not 7).
 
-</p></details>
+</div></details>
 
 ### Records vs Arrays
 
@@ -279,49 +279,49 @@ def average_grade(student):
 
 **Problem 1.** An integer array `A` has base address 2000. Each integer occupies 4 bytes. What is the address of `A[7]`?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $\text{addr}(A[7]) = 2000 + 7 \times 4 = 2000 + 28 = 2028$
 
-</p></details>
+</div></details>
 
 **Problem 2.** A 2D array `A[4][5]` is stored in row-major order with base address 100. Each element is 2 bytes. What is the address of `A[2][3]`?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $\text{addr}(A[2][3]) = 100 + (2 \times 5 + 3) \times 2 = 100 + 13 \times 2 = 126$
 
-</p></details>
+</div></details>
 
 **Problem 3.** The same array `A[4][5]` is stored in column-major order. What is the address of `A[2][3]`?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $\text{addr}(A[2][3]) = 100 + (3 \times 4 + 2) \times 2 = 100 + 14 \times 2 = 128$
 
-</p></details>
+</div></details>
 
 **Problem 4.** A dynamic array starts at capacity 1 and doubles when full. After inserting 17 elements, what is the current capacity? How many total element copies have occurred due to resizing?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Capacity after 17 insertions: $32$ (doubled from 16 after the 16th insertion).
 
 Total copies: at capacities $1, 2, 4, 8, 16$ → $1 + 2 + 4 + 8 + 16 = 31$ copies.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Explain why inserting an element at the beginning of an array of $n$ elements takes $O(n)$ time.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 All $n$ existing elements must be shifted one position to the right to make room at index 0. Each shift is a constant-time assignment, so the total cost is $n$ assignments = $O(n)$.
 
-</p></details>
+</div></details>
 
 **Problem 6.** A record `Person` has fields: `name` (string, 20 bytes), `age` (int, 4 bytes), `height` (float, 4 bytes). Assuming 4-byte alignment, what is the total size of the record?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 - `name`: offset 0, 20 bytes
 - No padding needed before `age` (offset 20 is divisible by 4)
@@ -330,21 +330,21 @@ All $n$ existing elements must be shifted one position to the right to make room
 
 Total: 28 bytes. (No padding needed at the end since the total is already a multiple of the largest alignment, 4.)
 
-</p></details>
+</div></details>
 
 **Problem 7.** Prove that searching for a value in an unsorted array of $n$ elements requires $\Omega(n)$ comparisons in the worst case.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 In an unsorted array, there is no relationship between the values at different indices. To determine whether a target value $x$ exists in the array, any algorithm must potentially examine every element — if it skips any unchecked element, that element could be $x$. Therefore, the worst case requires $n$ comparisons, giving $\Omega(n)$.
 
 More formally: an adversary can answer "no" to all $n-1$ comparisons. Only after checking all $n$ elements can the algorithm correctly conclude that $x$ is absent.
 
-</p></details>
+</div></details>
 
 **Problem 8.** Given an array `A[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3}`, trace a linear search for the value 9 and count the number of comparisons made.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Step | Index | A[index] | Comparison    | Count |
 | ---- | ----- | -------- | ------------- | ----- |
@@ -359,4 +359,4 @@ Total comparisons: 6. The value 9 is at index 5.
 
 For revision on searching, see [Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/01-searching-algorithms).
 
-</p></details>
+</div></details>

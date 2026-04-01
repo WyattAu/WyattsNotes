@@ -186,11 +186,11 @@ Use the **midpoint** of each class as the representative value. This introduces 
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 For the dataset $\{3, 5, 7, 2, 8, 4, 6, 5\}$, find the mean, median, and mode.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 Ordered: $\{2, 3, 4, 5, 5, 6, 7, 8\}$. $n = 8$.
 
 Mean: $\bar{x} = (3+5+7+2+8+4+6+5)/8 = 40/8 = 5$.
@@ -199,15 +199,15 @@ Median: average of 4th and 5th values = $(5+5)/2 = 5$.
 
 Mode: 5 (appears twice).
 
-<b>If you get this wrong, revise:</b> [Measures of Central Tendency](#1-measures-of-central-tendency) — Section 1.
+**If you get this wrong, revise:** [Measures of Central Tendency](#1-measures-of-central-tendency) — Section 1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Find the variance and standard deviation of $\{4, 8, 6, 5, 3, 7, 9, 2\}$ using the computational formula.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 $\sum x = 44$, $n = 8$, $\bar{x} = 44/8 = 5.5$.
 
 $\sum x^2 = 16 + 64 + 36 + 25 + 9 + 49 + 81 + 4 = 284$.
@@ -216,28 +216,28 @@ $\sigma^2 = 284/8 - 5.5^2 = 35.5 - 30.25 = 5.25$.
 
 $\sigma = \sqrt{5.25} \approx 2.29$.
 
-<b>If you get this wrong, revise:</b> [Computational Formula](#22-computational-formula) — Section 2.2.
+**If you get this wrong, revise:** [Computational Formula](#22-computational-formula) — Section 2.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Data is coded using $y = (x - 100)/5$. The coded data has mean 12 and variance 9. Find the original mean and standard deviation.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 $\bar{y} = (\bar{x} - 100)/5 = 12 \implies \bar{x} - 100 = 60 \implies \bar{x} = 160$.
 
 $\sigma_y = \sigma_x/5 = 3 \implies \sigma_x = 15$.
 
-<b>If you get this wrong, revise:</b> [Coding Data](#4-coding-data) — Section 4.
+**If you get this wrong, revise:** [Coding Data](#4-coding-data) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 For the ordered dataset $\{2, 3, 5, 7, 8, 11, 14, 18, 23\}$, find $Q_1$, $Q_2$, $Q_3$, and the IQR. Identify any outliers.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 $n = 9$ (odd). $Q_2 = 5$th value $= 8$.
 
 Lower half: $\{2, 3, 5, 7\}$. $Q_1 = (3+5)/2 = 4$.
@@ -249,11 +249,11 @@ Lower fence: $4 - 1.5(12) = -14$. Upper fence: $16 + 1.5(12) = 34$.
 
 All values are within $[-14, 34]$, so no outliers.
 
-<b>If you get this wrong, revise:</b> [Quartiles, IQR, and Box Plots](#3-quartiles-iqr-and-box-plots) — Section 3.
+**If you get this wrong, revise:** [Quartiles, IQR, and Box Plots](#3-quartiles-iqr-and-box-plots) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 The following frequency table shows the number of goals scored in 20 football matches. Find the mean and variance.
 
 | Goals | Frequency |
@@ -264,9 +264,9 @@ The following frequency table shows the number of goals scored in 20 football ma
 | 3     | 3         |
 | 4     | 2         |
 
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $\sum f = 20$.
 
 $\sum fx = 0 + 7 + 10 + 9 + 8 = 34$. $\bar{x} = 34/20 = 1.7$.
@@ -275,66 +275,66 @@ $\sum fx^2 = 0 + 7 + 20 + 27 + 32 = 86$.
 
 $\sigma^2 = 86/20 - 1.7^2 = 4.3 - 2.89 = 1.41$.
 
-<b>If you get this wrong, revise:</b> [Frequency Tables](#51-discrete-frequency-data) — Section 5.1.
+**If you get this wrong, revise:** [Frequency Tables](#51-discrete-frequency-data) — Section 5.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 Prove that $\displaystyle\sum_{i=1}^{n}(x_i - \bar{x}) = 0$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 $$\sum(x_i - \bar{x}) = \sum x_i - n\bar{x} = \sum x_i - n \cdot \frac{\sum x_i}{n} = \sum x_i - \sum x_i = 0 \quad \blacksquare$$
 
-<b>If you get this wrong, revise:</b> [Mean](#11-mean) — Section 1.1.
+**If you get this wrong, revise:** [Mean](#11-mean) — Section 1.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 Two datasets A and B have the same mean but A has standard deviation 5 while B has standard deviation 2. What does this tell you about the two datasets?
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 Both datasets are centred at the same point (same mean), but dataset A is more spread out (larger standard deviation). The values in A are more dispersed from the mean, while B's values cluster more tightly around the mean.
 
-<b>If you get this wrong, revise:</b> [Variance and Standard Deviation](#2-variance-and-standard-deviation) — Section 2.
+**If you get this wrong, revise:** [Variance and Standard Deviation](#2-variance-and-standard-deviation) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Given that $\bar{x} = 20$ and $\sum(x_i - 20)^2 = 360$ for $n = 10$ observations, find $\sigma$ and the sample variance $s^2$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $\sigma^2 = 360/10 = 36$, so $\sigma = 6$.
 
 $s^2 = 360/9 = 40$.
 
-<b>If you get this wrong, revise:</b> [Sample Variance](#23-sample-variance) — Section 2.3.
+**If you get this wrong, revise:** [Sample Variance](#23-sample-variance) — Section 2.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 A dataset $\{x_i\}$ has mean 10 and standard deviation 4. A new dataset is formed by adding 5 to each value and then multiplying by 3. Find the new mean and standard deviation.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 Adding 5 shifts mean by 5: mean becomes 15. SD unchanged at 4.
 Multiplying by 3 scales mean by 3: mean becomes 45. SD scales by 3: SD becomes 12.
 
 New mean = 45, new SD = 12.
 
-<b>If you get this wrong, revise:</b> [Coding Data](#4-coding-data) — Section 4.2.
+**If you get this wrong, revise:** [Coding Data](#4-coding-data) — Section 4.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 Explain why the median is preferred to the mean for measuring average income in a country.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 Income distributions are typically right-skewed — a small number of very high earners pull the mean upward. The median, being the middle value, is unaffected by extreme values and gives a more representative "typical" income. For example, if one billionaire lives in a village of 1000 people earning $30{,}000$, the mean would be vastly inflated while the median would remain close to $30{,}000$.
 
-<b>If you get this wrong, revise:</b> [Comparing Measures](#15-comparing-measures) — Section 1.5.
+**If you get this wrong, revise:** [Comparing Measures](#15-comparing-measures) — Section 1.5.
 
-</p></details>
+</div></details>

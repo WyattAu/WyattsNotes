@@ -339,7 +339,7 @@ def topological_sort(graph):
 
 Vertices: {A, B, C, D}. Edges: {A-B, A-C, B-C, C-D, D-A}
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Adjacency matrix (index: A=0, B=1, C=2, D=3):
 
@@ -352,11 +352,11 @@ Adjacency list:
 - C: [A, B, D]
 - D: [C, A]
 
-</p></details>
+</div></details>
 
 **Problem 2.** Trace BFS starting from vertex A on the graph from Problem 1. List the order in which vertices are visited and their distances.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Step | Dequeue | Visit   | Neighbours                  | Queue (front→rear) | Distances     |
 | ---- | ------- | ------- | --------------------------- | ------------------ | ------------- |
@@ -368,11 +368,11 @@ Adjacency list:
 
 Visit order: A, B, C, D. Distances: A:0, B:1, C:1, D:1.
 
-</p></details>
+</div></details>
 
 **Problem 3.** Apply Dijkstra's algorithm to find the shortest paths from vertex A in the following weighted graph. Edges: A→B (4), A→C (2), B→C (1), B→D (5), C→B (1), C→D (8), C→E (10), D→E (2).
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Step | Extract | dist[A] | dist[B] | dist[C] | dist[D] | dist[E] |
 | ---- | ------- | ------- | ------- | ------- | ------- | ------- |
@@ -385,11 +385,11 @@ Visit order: A, B, C, D. Distances: A:0, B:1, C:1, D:1.
 
 Shortest paths: A→A: 0, A→B: 3 (A→C→B), A→C: 2, A→D: 8 (A→C→B→D), A→E: 10 (A→C→B→D→E).
 
-</p></details>
+</div></details>
 
 **Problem 4.** Find the MST of the following graph using Kruskal's algorithm. Edges with weights: A-B (4), A-C (2), B-C (1), B-D (5), C-D (8), D-E (3).
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Sorted edges: B-C (1), A-C (2), D-E (3), A-B (4), B-D (5), C-D (8)
 
@@ -403,39 +403,39 @@ Sorted edges: B-C (1), A-C (2), D-E (3), A-B (4), B-D (5), C-D (8)
 
 MST weight: $1 + 2 + 3 + 5 = 11$. 4 edges for 5 vertices. ✓
 
-</p></details>
+</div></details>
 
 **Problem 5.** Prove that BFS uses $O(V)$ space in the worst case.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 In the worst case, all vertices at the same distance from the source are in the queue simultaneously. In a graph where the source is connected to all other vertices, at distance 1 there are $V - 1$ vertices in the queue. In a star graph, the maximum queue size is $V - 1$. In a complete graph, BFS visits one level at a time, and the maximum queue size is bounded by the number of vertices at the maximum depth, which is at most $V - 1$. Hence the space is $O(V)$. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 6.** Given a DAG, explain why topological sort is possible but BFS-based shortest path (for unweighted graphs) might not produce correct results if cycles exist.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Topological sort is only defined for DAGs (graphs without directed cycles). If a directed cycle exists, there is no valid topological ordering because for any edge $(u, v)$ in the cycle, $u$ must come before $v$, and following the cycle leads to a contradiction.
 
 For shortest paths: in an unweighted graph with cycles, BFS still works correctly because BFS visits each vertex at most once (it marks vertices as visited). The shortest path distance is still well-defined even with cycles, since a cycle would only increase the path length. However, for **weighted** graphs with negative cycles, shortest paths are undefined (you can keep going around the cycle to decrease the distance).
 
-</p></details>
+</div></details>
 
 **Problem 7.** A graph has 6 vertices and 9 edges. What is the sum of all vertex degrees? Is this graph necessarily connected?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 By the Handshaking Lemma: sum of degrees = $2|E| = 2 \times 9 = 18$.
 
 The graph is not necessarily connected. For example, it could consist of a $K_4$ (complete graph on 4 vertices, 6 edges) plus a path of 3 vertices (2 edges) plus an isolated vertex, totalling $6 + 2 = 8$ edges — but we need 9 edges. A valid disconnected example: $K_4$ (6 edges) + a triangle (3 edges) = 9 edges, 7 vertices... that's too many. Actually, 6 vertices: $K_4$ (6 edges, 4 vertices) + an edge between the remaining 2 vertices (1 edge) + 2 more edges within the remaining 2 vertices is impossible. Let me reconsider: 6 vertices, 9 edges. Minimum edges for connected = 5 (tree). 9 > 5, so it **could** be connected but isn't **necessarily** connected. Example: a $K_4$ on vertices 1-4 (6 edges) and a $K_3$ on vertices 4-6... no, they share vertex 4, making it connected. Two separate components: component 1 has 4 vertices with 6 edges ($K_4$), component 2 has 2 vertices with 1 edge, but that's only 7 edges. To get 9: $K_4$ (6 edges, 4 vertices) + $K_3$ minus 1 edge = 2 edges, 3 vertices. But that requires 7 vertices. With 6 vertices: 5 in one component, 1 isolated. $K_5$ has 10 edges, too many. So with 6 vertices and 9 edges, the graph **must** be connected (minimum edges to disconnect would leave one isolated vertex, requiring $\leq \binom{5}{2} = 10$ edges among the other 5, but 9 < 10, so it's possible: 9 edges among 5 vertices and 1 isolated). Yes, it's possible to be disconnected: 5 vertices with 9 edges + 1 isolated vertex. 9 edges among 5 vertices means the graph on those 5 vertices has 9 edges, which is possible ($K_5$ has 10). So the answer is: no, not necessarily connected.
 
-</p></details>
+</div></details>
 
 **Problem 8.** Explain why Dijkstra's algorithm fails with negative edge weights. Give a counterexample.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Consider: A→B (weight 1), A→C (weight 4), B→C (weight -2).
 
@@ -471,7 +471,7 @@ The key issue: Dijkstra **can** fail. Canonical example where it actually fails 
 
 Let S={A,B,C,D}, edges: A→B(4), A→C(2), C→B(-3), B→D(3), C→D(5).
 
-Dijkstra: Extract A. B=4, C=2. Extract C(2). B=2-3=-1<4. B=-1. Extract B(-1). D=-1+3=2. Extract D(2). Result: D=2.
+Dijkstra: Extract A. B=4, C=2. Extract C(2). B=2-3=-1. B=-1 (since $-1 < 4$). Extract B(-1). D=-1+3=2. Extract D(2). Result: D=2.
 
 Actual shortest to D: A→C→B→D = 2+(-3)+3=2. Same. ✓
 
@@ -495,7 +495,7 @@ The failure requires negative edges creating a situation where the shortest path
 
 Consider: vertices A, B, C. Edges: A→B(3), A→C(5), B→C(-4).
 
-Dijkstra: Extract A. B=3, C=5. Extract B(3). C=3-4=-1<5. C=-1. Extract C. Result: C=-1. ✓
+Dijkstra: Extract A. B=3, C=5. Extract B(3). C=3-4=-1. C=-1 (since $-1 < 5$). Extract C. Result: C=-1. ✓
 
 Consider: vertices A, B, C, D. Edges: A→B(3), A→C(7), B→D(4), C→B(-2), C→D(2).
 
@@ -515,7 +515,7 @@ Hmm. The algorithm is robust to some negative edges. Here's the actual failure:
 
 Vertices S, A, B. Edges: S→A(1), A→B(-3), S→B(2).
 
-Dijkstra: Extract S. A=1, B=2. Extract A(1). B=min(2, 1-3)=-2<2. B=-2. Extract B. Result: B=-2.
+Dijkstra: Extract S. A=1, B=2. Extract A(1). B=min(2, 1-3)=-2. B=-2 (since $-2 < 2$). Extract B. Result: B=-2.
 
 Actual shortest: S→A→B = 1-3=-2. ✓ Correct!
 
@@ -527,29 +527,29 @@ Without negative edges, no failure. The key insight: Dijkstra fails when there a
 
 Real failure: Vertices S, A, B, C. Edges: S→A(2), S→B(5), A→C(4), B→C(-3), B→A(-2).
 
-Dijkstra: Extract S. A=2, B=5. Extract A(2). C=2+4=6. Extract B(5). C=min(6,5-3)=2<6. C=2. Extract C. Result: C=2.
+Dijkstra: Extract S. A=2, B=5. Extract A(2). C=2+4=6. Extract B(5). C=min(6,5-3)=2. C=2 (since $2 < 6$). Extract C. Result: C=2.
 
 Actual: S→B→C = 5-3=2. Same result. ✓
 
 The definitive failure (from CLRS): S→A(1), S→C(4), A→B(2), B→C(1), C→B(-3).
 
-Dijkstra: S(0). A=1, C=4. Extract A(1). B=1+2=3. Extract C(4). B=min(3,4-3)=1<3. But B is ALREADY VISITED (or not? B was updated to 3 but not extracted yet). Wait — B hasn't been extracted, it's still in the PQ with dist 3. So when C is extracted and we update B to 1, B gets updated in the PQ. Then B is extracted with dist 1. C=min(4, 1+1)=2. But C is already visited!
+Dijkstra: S(0). A=1, C=4. Extract A(1). B=1+2=3. Extract C(4). B=min(3,4-3)=1. B=1 (since $1 < 3$). But B is ALREADY VISITED (or not? B was updated to 3 but not extracted yet). Wait — B hasn't been extracted, it's still in the PQ with dist 3. So when C is extracted and we update B to 1, B gets updated in the PQ. Then B is extracted with dist 1. C=min(4, 1+1)=2. But C is already visited!
 
 Result: A=1, B=1, C=4. But shortest path to C is S→A→B→C = 1+2+1=4 or S→C=4. Same. Not a failure.
 
 Let me try: S→A(1), S→C(6), A→B(3), B→C(-2).
 
-Dijkstra: S(0). A=1, C=6. Extract A(1). B=1+3=4. Extract B(4). C=min(6,4-2)=2<6. C=2. Extract C(2). Result: C=2.
+Dijkstra: S(0). A=1, C=6. Extract A(1). B=1+3=4. Extract B(4). C=min(6,4-2)=2. C=2 (since $2 < 6$). Extract C(2). Result: C=2.
 
 Actual: S→A→B→C = 1+3-2=2. ✓
 
 I think for this problem level, the key explanation is sufficient: Dijkstra's greedy choice assumes that once a vertex is extracted, its distance is final. With negative edges, a later-discovered path through a negative edge could be shorter. The algorithm ignores these because it marks vertices as visited. Provide the conceptual explanation and state that Bellman-Ford handles negative weights.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Perform a topological sort on the following DAG: edges A→B, A→C, B→D, C→D, D→E.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Using DFS-based topological sort:
 
@@ -563,11 +563,11 @@ Check: A before B ✓, A before C ✓, B before D ✓, C before D ✓, D before 
 
 Valid topological order: A, B, C, D, E (or A, C, B, D, E).
 
-</p></details>
+</div></details>
 
 **Problem 10.** Compare Kruskal's and Prim's MST algorithms in terms of time complexity for dense and sparse graphs.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Graph type              | Kruskal         | Prim (binary heap) |
 | ----------------------- | --------------- | ------------------ |
@@ -579,11 +579,11 @@ Prim (binary heap): $O((V+E) \log V)$.
 
 For dense graphs: Prim with an adjacency matrix (no heap) runs in $O(V^2)$, which is better than Kruskal's $O(V^2 \log V)$.
 
-</p></details>
+</div></details>
 
 **Problem 11.** Prove that a tree with $n$ vertices has exactly $n - 1$ edges using induction.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof by induction on $n$.**
 
@@ -591,11 +591,11 @@ Base case: $n = 1$. A single vertex has 0 edges. $0 = 1 - 1$. ✓
 
 Inductive step: Assume all trees with $k$ vertices have $k - 1$ edges. Consider a tree $T$ with $k + 1$ vertices. Since $T$ has at least 2 vertices (for $k \geq 1$), it has at least one leaf $v$ (a tree with $\geq 2$ vertices always has a leaf — otherwise every vertex has degree $\geq 1$, and with no cycles, we'd need $\geq n$ edges, contradicting $|E| = n - 1$). Remove leaf $v$ and its single incident edge. The resulting graph $T'$ is still a tree (removing a leaf cannot create a cycle, and $T'$ is still connected since $v$ was only connected to one vertex). $T'$ has $k$ vertices, so by the inductive hypothesis, $T'$ has $k - 1$ edges. Adding back $v$ and its edge gives $(k - 1) + 1 = k$ edges. ✓ $\square$
 
-</p></details>
+</div></details>
 
 **Problem 12.** Given a graph represented as an adjacency list, write a function to detect whether it contains a cycle using DFS.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```python
 def has_cycle(graph):
@@ -625,6 +625,6 @@ The recursion stack (`rec_stack`) tracks the current DFS path. If we encounter a
 
 For undirected graphs, we additionally check that the back edge doesn't go to the parent vertex.
 
-</p></details>
+</div></details>
 
 For revision on algorithms, see [Graph Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/03-graph-algorithms).

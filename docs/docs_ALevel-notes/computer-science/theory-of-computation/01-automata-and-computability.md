@@ -275,7 +275,7 @@ A problem is **NP-complete** if:
 
 **Problem 1.** Design a DFA that accepts all binary strings containing an even number of 0s. Give the formal definition and draw the transition table.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $M = (Q, \Sigma, \delta, q_0, F)$ where:
 
@@ -292,7 +292,7 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 Trace "110": $q_0 \to q_0 \to q_0 \to q_0$. Accept (0 zeros, even). ✓
 Trace "101": $q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
 
-</p></details>
+</div></details>
 
 **Problem 2.** Convert the following NFA to a DFA using the subset construction.
 
@@ -307,7 +307,7 @@ NFA: States $\{0, 1, 2\}$, alphabet $\{a, b\}$, start state 0, accepting state 2
 | 2    | a     | ∅      |
 | 2    | b     | ∅      |
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 DFA states (subsets of {0, 1, 2}):
 
@@ -327,11 +327,11 @@ Accepting states: any subset containing 2 → $\{0, 2\}$.
 | $\{0,2\}$   | $\{0,1\}$   | $\{0\}$     | Yes     |
 | $\emptyset$ | $\emptyset$ | $\emptyset$ | No      |
 
-</p></details>
+</div></details>
 
 **Problem 3.** Write a regular expression for the language of all binary strings that do NOT contain the substring "11".
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Any such string is a sequence of blocks, where each block is either `0`, `10`, or `1` (but the last `1` must not be followed by another `1`).
 
@@ -351,11 +351,11 @@ Verification:
 - "0101" → matches with "0", "10", "1"... wait: "0101" = "0" + "10" + "1". ✓
 - "11" → cannot match (no way to have two consecutive 1s). ✓
 
-</p></details>
+</div></details>
 
 **Problem 4.** Use the Pumping Lemma to prove that $L = \{ww \mid w \in \{0,1\}^*\}$ is not regular.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Assume $L$ is regular. Let $p$ be the pumping length. Choose $s = 0^p 1 0^p 1$ (this is $w = 0^p1$, $ww = 0^p10^p1$). Note $|s| = 2p + 2 \geq p$. ✓
 
@@ -369,11 +369,11 @@ Is this in $L$? It would need to be $ww$ for some $w$. The length is $2p - k + 2
 
 Therefore, $L$ is not regular. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 5.** Describe a Turing machine that decides whether a binary string is a palindrome (reads the same forwards and backwards).
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Algorithm:**
 
@@ -408,11 +408,11 @@ Therefore, $L$ is not regular. $\square$
 
 This TM halts on all inputs (always reaches accept or reject), so the language of palindromes is **decidable**. ✓
 
-</p></details>
+</div></details>
 
 **Problem 6.** Prove that if the halting problem were decidable, then every semi-decidable language would be decidable.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof.** Let $L$ be a semi-decidable language. There exists a TM $M_L$ that accepts $w$ if $w \in L$ and loops forever if $w \notin L$.
 
@@ -426,11 +426,11 @@ This TM $M$ always halts and correctly decides $L$. Since $L$ was arbitrary, eve
 
 But we know the halting problem is undecidable, so there must exist semi-decidable languages that are not decidable (e.g., the halting problem itself). $\square$
 
-</p></details>
+</div></details>
 
 **Problem 7.** Explain the difference between a decidable problem and a semi-decidable problem. Give an example of each.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Decidable:** There exists a TM that halts on ALL inputs and correctly answers yes/no.
 
@@ -442,11 +442,11 @@ But we know the halting problem is undecidable, so there must exist semi-decidab
 
 **Key difference:** For semi-decidable problems, you can verify a "yes" answer in finite time, but you cannot always verify a "no" answer (the machine might just be taking a long time, or it might loop forever).
 
-</p></details>
+</div></details>
 
 **Problem 8.** Is the complement of the halting problem semi-decidable? Explain.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 No. The complement of the halting problem is **not** semi-decidable.
 
@@ -454,11 +454,11 @@ No. The complement of the halting problem is **not** semi-decidable.
 
 The halting problem is semi-decidable (run the TM and accept when it halts). If its complement were also semi-decidable, the halting problem would be decidable — but we proved it's not. Therefore, the complement of the halting problem is not semi-decidable. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 9.** Explain why the Travelling Salesman Problem (decision version: "Is there a tour of length ≤ k?") is in NP.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The TSP decision problem is in NP because a proposed solution (a tour) can be **verified** in polynomial time:
 
@@ -474,11 +474,11 @@ Total verification time: $O(n)$, which is polynomial. Therefore, TSP is in NP. �
 
 (Note: this does NOT mean TSP is in P. Verification is polynomial, but finding the tour may not be.)
 
-</p></details>
+</div></details>
 
 **Problem 10.** State the Church-Turing thesis. Explain why it is a thesis and not a theorem. What would it mean if it were false?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Church-Turing Thesis:** Every function that is effectively computable (can be computed by an algorithm) is computable by a Turing machine.
 

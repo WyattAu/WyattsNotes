@@ -144,113 +144,113 @@ $$\frac{P}{v_{\max}} = mg\sin\theta + F_{\text{friction}}$$
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 A car of mass $1200\,\text{kg}$ accelerates from $10\,\text{m/s}$ to $25\,\text{m/s}$. Find the work done by the engine.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $W = \Delta\text{KE} = \tfrac{1}{2}(1200)(625 - 100) = 600 \times 525 = 315000\,\text{J} = 315\,\text{kJ}$.
 
-<b>If you get this wrong, revise:</b> [Work-Energy Principle](#41-statement) — Section 4.1.
+**If you get this wrong, revise:** [Work-Energy Principle](#41-statement) — Section 4.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 A ball of mass $0.5\,\text{kg}$ is dropped from a height of $20\,\text{m}$. Find its speed just before hitting the ground. Take $g = 9.8\,\text{m/s}^2$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 Conservation of energy: $mgh = \tfrac{1}{2}mv^2$.
 
 $v = \sqrt{2gh} = \sqrt{2(9.8)(20)} = \sqrt{392} \approx 19.8\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+**If you get this wrong, revise:** [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 A car engine produces $60\,\text{kW}$ of power. The car has mass $1000\,\text{kg}$ and travels on a level road. Find the maximum speed if the resistance is $400\,\text{N}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 At max speed: $P = Fv$ where $F = 400\,\text{N}$ (driving force equals resistance).
 
 $60000 = 400v \implies v = 150\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Power](#5-power) — Section 5.
+**If you get this wrong, revise:** [Power](#5-power) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 A block of mass $4\,\text{kg}$ slides $6\,\text{m}$ down a rough slope inclined at $30°$ ($\mu = 0.2$). It starts from rest. Find its speed at the bottom using energy methods.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 Loss of GPE $= mgh = 4(9.8)(6\sin 30°) = 4(9.8)(3) = 117.6\,\text{J}$.
 Work against friction $= \mu mg\cos 30° \times 6 = 0.2(4)(9.8)(0.866)(6) = 40.75\,\text{J}$.
 $\tfrac{1}{2}mv^2 = 117.6 - 40.75 = 76.85 \implies v^2 = 76.85/2 = 38.425 \implies v \approx 6.20\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+**If you get this wrong, revise:** [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 A crane lifts a load of $500\,\text{kg}$ through $30\,\text{m}$ in 45 seconds at constant speed. Find the power output.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $W = mgh = 500(9.8)(30) = 147000\,\text{J}$.
 
 $P = W/t = 147000/45 = 3267\,\text{W} \approx 3.27\,\text{kW}$.
 
-<b>If you get this wrong, revise:</b> [Power](#5-power) — Section 5.
+**If you get this wrong, revise:** [Power](#5-power) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 A pendulum has a bob of mass $2\,\text{kg}$ on a string of length $1.5\,\text{m}$. It is released from horizontal. Find the speed at the lowest point.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 Height dropped $= 1.5\,\text{m}$. $mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2(9.8)(1.5)} = \sqrt{29.4} \approx 5.42\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+**If you get this wrong, revise:** [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 A car of mass $800\,\text{kg}$ travels up a hill of gradient $\sin^{-1}(0.1)$ at constant speed $15\,\text{m/s}$. The engine power is $20\,\text{kW}$. Find the resistance to motion.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 At constant speed: driving force $= mg\sin\theta + R$.
 
 $P = Fv \implies F = P/v = 20000/15 = 1333.3\,\text{N}$.
 
 $R = F - mg\sin\theta = 1333.3 - 800(9.8)(0.1) = 1333.3 - 784 = 549.3\,\text{N}$.
 
-<b>If you get this wrong, revise:</b> [Power and Inclined Planes](#53-power-and-inclined-planes) — Section 5.3.
+**If you get this wrong, revise:** [Power and Inclined Planes](#53-power-and-inclined-planes) — Section 5.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 A spring obeys Hooke's law: $T = kx$. Derive the elastic potential energy stored when the extension is $x$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 The force varies from $0$ to $kx$. The work done (energy stored) is:
 
 $$\text{EPE} = \int_0^x T\,dx' = \int_0^x kx'\,dx' = \frac{1}{2}kx^2$$
 
-<b>If you get this wrong, revise:</b> [Work Done](#11-definition-and-derivation) — Section 1.1.
+**If you get this wrong, revise:** [Work Done](#11-definition-and-derivation) — Section 1.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 A projectile is launched at $20\,\text{m/s}$ at $60°$ to the horizontal from a cliff of height $30\,\text{m}$. Find its speed when it hits the ground using energy methods. Take $g = 9.8\,\text{m/s}^2$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 $\tfrac{1}{2}mu^2 + mgh = \tfrac{1}{2}mv^2$.
 
 $\tfrac{1}{2}(400) + 9.8(30) = \tfrac{1}{2}v^2$.
@@ -259,21 +259,21 @@ $200 + 294 = \tfrac{1}{2}v^2 \implies v^2 = 988 \implies v \approx 31.4\,\text{m
 
 (Air resistance is neglected.)
 
-<b>If you get this wrong, revise:</b> [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+**If you get this wrong, revise:** [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 A train of mass $200{,}000\,\text{kg}$ has a maximum power output of $2\,\text{MW}$. The resistance to motion is $R = 5000 + 20v$ newtons. Find the maximum speed on level ground.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 At maximum speed: $P = Rv \implies 2000000 = (5000+20v)v = 5000v + 20v^2$.
 
 $20v^2 + 5000v - 2000000 = 0 \implies v^2 + 250v - 100000 = 0$.
 
 $v = \dfrac{-250 + \sqrt{62500 + 400000}}{2} = \dfrac{-250 + \sqrt{462500}}{2} = \dfrac{-250 + 680.1}{2} = 215.1\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Power](#5-power) — Section 5.
+**If you get this wrong, revise:** [Power](#5-power) — Section 5.
 
-</p></details>
+</div></details>

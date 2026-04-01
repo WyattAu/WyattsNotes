@@ -318,22 +318,22 @@ Differentiating: $2x + 2y\dfrac{dy}{dx} = 0$, so $\dfrac{dy}{dx} = -\dfrac{x}{y}
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Differentiate $f(x) = \sqrt{x}$ from first principles.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $$f'(x) = \lim_{h\to 0}\frac{\sqrt{x+h}-\sqrt{x}}{h} \cdot \frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} = \lim_{h\to 0}\frac{(x+h)-x}{h(\sqrt{x+h}+\sqrt{x})} = \lim_{h\to 0}\frac{1}{\sqrt{x+h}+\sqrt{x}} = \frac{1}{2\sqrt{x}}$$
 
-<b>If you get this wrong, revise:</b> [The Derivative from First Principles](#1-the-derivative-from-first-principles) — Section 1.
+**If you get this wrong, revise:** [The Derivative from First Principles](#1-the-derivative-from-first-principles) — Section 1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Find the stationary points of $f(x) = x^3 - 6x^2 + 9x + 1$ and determine their nature.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 $f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3)$.
 
 Stationary points at $x = 1$ and $x = 3$.
@@ -342,15 +342,15 @@ $f''(x) = 6x - 12$.
 At $x = 1$: $f''(1) = -6 < 0$, so **local maximum**. $f(1) = 1 - 6 + 9 + 1 = 5$.
 At $x = 3$: $f''(3) = 6 > 0$, so **local minimum**. $f(3) = 27 - 54 + 27 + 1 = 1$.
 
-<b>If you get this wrong, revise:</b> [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
+**If you get this wrong, revise:** [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Differentiate $y = \dfrac{x^2 e^x}{\sin x}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 Let $u = x^2 e^x$ and $v = \sin x$.
 
 $u' = 2xe^x + x^2 e^x = e^x(x^2 + 2x)$ (product rule).
@@ -358,30 +358,30 @@ $v' = \cos x$.
 
 $$\frac{dy}{dx} = \frac{e^x(x^2+2x)\sin x - x^2 e^x \cos x}{\sin^2 x} = \frac{xe^x[(x+2)\sin x - x\cos x]}{\sin^2 x}$$
 
-<b>If you get this wrong, revise:</b> [The Quotient Rule](#4-the-quotient-rule) — Section 4 and [The Product Rule](#3-the-product-rule) — Section 3.
+**If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and [The Product Rule](#3-the-product-rule) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Find $\dfrac{dy}{dx}$ where $x^3 + y^3 = 3xy$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 Differentiating implicitly: $3x^2 + 3y^2\dfrac{dy}{dx} = 3y + 3x\dfrac{dy}{dx}$.
 
 $$3y^2\frac{dy}{dx} - 3x\frac{dy}{dx} = 3y - 3x^2$$
 $$\frac{dy}{dx}(y^2 - x) = y - x^2$$
 $$\frac{dy}{dx} = \frac{y - x^2}{y^2 - x}$$
 
-<b>If you get this wrong, revise:</b> [Implicit Differentiation](#12-implicit-differentiation) — Section 12.
+**If you get this wrong, revise:** [Implicit Differentiation](#12-implicit-differentiation) — Section 12.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 A spherical balloon is being inflated at a rate of $100\,\text{cm}^3\text{/s}$. Find the rate of increase of the radius when the radius is $5\,\text{cm}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $V = \dfrac{4}{3}\pi r^3$. Differentiating with respect to $t$:
 
 $$\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$$
@@ -390,43 +390,43 @@ At $r = 5$ with $\dfrac{dV}{dt} = 100$:
 
 $$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \frac{1}{\pi} \approx 0.318 \,\text{cm/s}$$
 
-<b>If you get this wrong, revise:</b> [Connected Rates of Change](#8-connected-rates-of-change) — Section 8.
+**If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) — Section 8.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 Show that $f(x) = e^x + e^{-x}$ is strictly increasing for $x > 0$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 $f'(x) = e^x - e^{-x}$.
 
 For $x > 0$: $e^x > 1 > e^{-x}$, so $e^x - e^{-x} > 0$. Hence $f'(x) > 0$ for all $x > 0$, so $f$ is strictly increasing on $(0, \infty)$.
 
-<b>If you get this wrong, revise:</b> [Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
+**If you get this wrong, revise:** [Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 Find the equation of the tangent to $y = \ln x$ at the point where $x = e$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 At $x = e$: $y = \ln e = 1$. The point is $(e, 1)$.
 
 $\dfrac{dy}{dx} = \dfrac{1}{x}$, so at $x = e$: gradient $m = \dfrac{1}{e}$.
 
 $$y - 1 = \frac{1}{e}(x - e) \implies y = \frac{x}{e}$$
 
-<b>If you get this wrong, revise:</b> [Derivatives of Standard Functions](#6-derivatives-of-standard-functions) — Section 6.
+**If you get this wrong, revise:** [Derivatives of Standard Functions](#6-derivatives-of-standard-functions) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Given $x = t^2 + 1$ and $y = t^3 - 3t$, find the coordinates of the stationary points and determine their nature.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} = \dfrac{3t^2 - 3}{2t} = \dfrac{3(t^2-1)}{2t}$.
 
 Stationary when $dy/dx = 0$: $t^2 = 1 \implies t = \pm 1$.
@@ -440,58 +440,58 @@ Near $t = 1$: for $t = 0.5$, $\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}
 
 Near $t = -1$: for $t = -2$, $\dfrac{dy}{dx} < 0$; for $t = -0.5$, $\dfrac{dy}{dx} > 0$. So $t=-1$ is a **minimum**.
 
-<b>If you get this wrong, revise:</b> [Differentiation of Parametric Equations](#11-differentiation-of-parametric-equations) — Section 11.
+**If you get this wrong, revise:** [Differentiation of Parametric Equations](#11-differentiation-of-parametric-equations) — Section 11.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 Prove that $\dfrac{d}{dx}\sec x = \sec x \tan x$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 $\sec x = \dfrac{1}{\cos x} = (\cos x)^{-1}$.
 
 $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \tan x \quad \blacksquare$$
 
-<b>If you get this wrong, revise:</b> [The Chain Rule](#5-the-chain-rule) — Section 5.
+**If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 Find the minimum value of $f(x) = x + \dfrac{4}{x}$ for $x > 0$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 $f'(x) = 1 - \dfrac{4}{x^2} = \dfrac{x^2 - 4}{x^2} = 0 \implies x^2 = 4 \implies x = 2$ (since $x > 0$).
 
 $f''(x) = \dfrac{8}{x^3}$. At $x = 2$: $f''(2) = 1 > 0$, so minimum.
 
 $f(2) = 2 + \dfrac{4}{2} = 4$.
 
-<b>If you get this wrong, revise:</b> [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
+**If you get this wrong, revise:** [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 11</summary><p>
+<details><summary>Problem 11</summary><div>
 Differentiate $y = \sin^3(2x^2 + 1)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 11</summary><p>
+<details><summary>Solution 11</summary><div>
 Let $u = \sin(2x^2+1)$, so $y = u^3$.
 
 $\dfrac{dy}{du} = 3u^2$, $\dfrac{du}{dx} = \cos(2x^2+1) \cdot 4x$.
 
 $$\frac{dy}{dx} = 3\sin^2(2x^2+1) \cdot \cos(2x^2+1) \cdot 4x = 12x\sin^2(2x^2+1)\cos(2x^2+1)$$
 
-<b>If you get this wrong, revise:</b> [The Chain Rule](#5-the-chain-rule) — Section 5.
+**If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 12</summary><p>
+<details><summary>Problem 12</summary><div>
 Find the points of inflection of $f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 12</summary><p>
+<details><summary>Solution 12</summary><div>
 $f'(x) = 4x^3 - 12x^2 + 12x - 4$.
 $f''(x) = 12x^2 - 24x + 12 = 12(x^2 - 2x + 1) = 12(x-1)^2$.
 
@@ -499,15 +499,15 @@ $f''(x) = 0$ when $x = 1$. But $f''(x) = 12(x-1)^2 \geq 0$ for all $x$ — the s
 
 (Note: $f(x) = (x-1)^4$, which is concave up everywhere.)
 
-<b>If you get this wrong, revise:</b> [Points of Inflection](#10-points-of-inflection) — Section 10.
+**If you get this wrong, revise:** [Points of Inflection](#10-points-of-inflection) — Section 10.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 13</summary><p>
+<details><summary>Problem 13</summary><div>
 A curve has equation $y = \dfrac{2x+1}{x-3}$. Find the equations of the asymptotes and the coordinates of any stationary points.
-</p></details>
+</div></details>
 
-<details><summary>Solution 13</summary><p>
+<details><summary>Solution 13</summary><div>
 Vertical asymptote: $x = 3$ (where denominator is zero).
 
 As $x \to \pm\infty$: $y \to 2$. Horizontal asymptote: $y = 2$.
@@ -516,15 +516,15 @@ $y' = \dfrac{2(x-3) - (2x+1)}{(x-3)^2} = \dfrac{-7}{(x-3)^2}$.
 
 Since $y' < 0$ for all $x \neq 3$, there are **no stationary points**. The function is strictly decreasing on each branch.
 
-<b>If you get this wrong, revise:</b> [The Quotient Rule](#4-the-quotient-rule) — Section 4 and [Stationary Points](#72-stationary-points) — Section 7.2.
+**If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and [Stationary Points](#72-stationary-points) — Section 7.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 14</summary><p>
+<details><summary>Problem 14</summary><div>
 Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\text{cm}^3\text{/s}$. The cone has semi-vertical angle $30°$. Find $dh/dt$ when $h = 10\,\text{cm}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 14</summary><p>
+<details><summary>Solution 14</summary><div>
 With semi-vertical angle $30°$: $r = h\tan 30° = h/\sqrt{3}$.
 
 $V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = \dfrac{\pi h^3}{9}$.
@@ -535,6 +535,6 @@ At $h = 10$ with $dV/dt = 5$:
 
 $$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{100\pi} = \frac{3}{20\pi} \approx 0.0478 \,\text{cm/s}$$
 
-<b>If you get this wrong, revise:</b> [Connected Rates of Change](#8-connected-rates-of-change) — Section 8.
+**If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) — Section 8.
 
-</p></details>
+</div></details>

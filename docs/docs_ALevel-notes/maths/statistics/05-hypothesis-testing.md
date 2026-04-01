@@ -174,11 +174,11 @@ Test statistic: $z = \dfrac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$.
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 A die is rolled 60 times and a 6 appears 16 times. Test at the 5% level whether the die is biased.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $X \sim B(60, p)$. $H_0: p = 1/6$, $H_1: p \neq 1/6$. Two-tailed, $\alpha = 0.05$.
 
 Under $H_0$: $X \sim B(60, 1/6)$. $\mu = 10$, $\sigma = \sqrt{60 \times \frac{1}{6} \times \frac{5}{6}} = \sqrt{50/6} \approx 2.887$.
@@ -189,15 +189,15 @@ Two-tailed: critical values $\pm 1.96$. $|2.078| > 1.96$, so **reject** $H_0$.
 
 There is evidence at the 5% level that the die is biased.
 
-<b>If you get this wrong, revise:</b> [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) — Section 5.
+**If you get this wrong, revise:** [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 A manufacturer claims that 90% of their products pass quality control. In a sample of 200, 170 pass. Test the claim at the 5% significance level.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 $X \sim B(200, p)$. $H_0: p = 0.9$, $H_1: p < 0.9$. Left-tailed, $\alpha = 0.05$.
 
 $\hat{p} = 170/200 = 0.85$.
@@ -210,28 +210,28 @@ Critical value: $-1.645$. Since $-2.358 < -1.645$, **reject** $H_0$.
 
 There is evidence that the proportion passing quality control is less than 90%.
 
-<b>If you get this wrong, revise:</b> [Normal Hypothesis Tests](#6-normal-hypothesis-tests) — Section 6.
+**If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Explain the difference between a Type I error and a Type II error in the context of medical testing.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 **Type I error:** The test says a healthy person is sick (false positive). This leads to unnecessary treatment and anxiety.
 
 **Type II error:** The test says a sick person is healthy (false negative). This means the person goes untreated, potentially with serious consequences.
 
-<b>If you get this wrong, revise:</b> [Type I and Type II Errors](#3-type-i-and-type-ii-errors) — Section 3.
+**If you get this wrong, revise:** [Type I and Type II Errors](#3-type-i-and-type-ii-errors) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Find the critical region for a test of $H_0: p = 0.3$ vs $H_1: p > 0.3$ using $X \sim B(10, p)$ at the 5% level.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 Under $H_0$: $X \sim B(10, 0.3)$.
 
 $P(X \geq 6) = 1 - P(X \leq 5) = 1 - 0.9527 = 0.0473 < 0.05$.
@@ -239,15 +239,15 @@ $P(X \geq 5) = 1 - P(X \leq 4) = 1 - 0.8497 = 0.1503 > 0.05$.
 
 Critical region: $X \geq 6$. Actual significance level: 4.73%.
 
-<b>If you get this wrong, revise:</b> [Critical Region](#23-critical-region) — Section 2.3.
+**If you get this wrong, revise:** [Critical Region](#23-critical-region) — Section 2.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 The mean lifetime of a bulb is claimed to be 1000 hours. A sample of 50 bulbs gives $\bar{x} = 985$ hours with $s = 40$ hours. Test at the 1% level whether the mean lifetime is less than 1000 hours.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $H_0: \mu = 1000$, $H_1: \mu < 1000$. $\alpha = 0.01$.
 
 $\bar{X} \sim N(1000, 40^2/50) = N(1000, 32)$ approximately.
@@ -258,15 +258,15 @@ Critical value at 1%: $-2.326$. Since $-2.652 < -2.326$, **reject** $H_0$.
 
 There is evidence at the 1% level that the mean lifetime is less than 1000 hours.
 
-<b>If you get this wrong, revise:</b> [Normal Hypothesis Tests](#6-normal-hypothesis-tests) — Section 6.
+**If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 For $X \sim B(20, 0.5)$, find the critical region for a two-tailed test at the 10% significance level.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 Under $H_0$: $X \sim B(20, 0.5)$.
 
 For each tail, we need $P(X \leq c_L) \leq 0.05$ and $P(X \geq c_U) \leq 0.05$.
@@ -276,15 +276,15 @@ Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$, $P(X \geq 14) \approx 0.0577 > 0
 
 Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times 0.0207 = 0.0414$.
 
-<b>If you get this wrong, revise:</b> [Critical Values and Significance Levels](#2-critical-values-and-significance-levels) — Section 2.
+**If you get this wrong, revise:** [Critical Values and Significance Levels](#2-critical-values-and-significance-levels) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 A teacher claims that the average score on a test is 70%. In a class of 25, the mean score is 66% with standard deviation 12%. Test at the 5% level.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $H_0: \mu = 70$, $H_1: \mu \neq 70$. Two-tailed, $\alpha = 0.05$.
 
 $\bar{X} \sim N(70, 12^2/25) = N(70, 5.76)$ approximately.
@@ -295,15 +295,15 @@ Two-tailed critical values: $\pm 1.96$. $|-1.667| < 1.96$, so **do not reject** 
 
 There is insufficient evidence at the 5% level that the mean score differs from 70%.
 
-<b>If you get this wrong, revise:</b> [Normal Hypothesis Tests](#6-normal-hypothesis-tests) — Section 6.
+**If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 A drug is effective for 60% of patients. After a new treatment, 18 out of 25 patients are cured. Test whether the new treatment is more effective at the 5% level.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $X \sim B(25, p)$. $H_0: p = 0.6$, $H_1: p > 0.6$. Right-tailed, $\alpha = 0.05$.
 
 Under $H_0$: $X \sim B(25, 0.6)$.
@@ -315,26 +315,26 @@ Critical region: $X \geq 20$. Since $X = 18 < 20$, **do not reject** $H_0$.
 
 Insufficient evidence that the new treatment is more effective.
 
-<b>If you get this wrong, revise:</b> [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) — Section 5.
+**If you get this wrong, revise:** [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 Explain why failing to reject $H_0$ does not mean $H_0$ is true.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 Failing to reject $H_0$ means the data is consistent with $H_0$ but does not prove it. The test may lack sufficient power to detect a real effect. For example, if a drug has a small but real benefit, a small sample may not detect it, leading us to fail to reject $H_0$ even though the drug is effective. The absence of evidence is not evidence of absence.
 
-<b>If you get this wrong, revise:</b> [Interpreting Results](#7-interpreting-results) — Section 7.
+**If you get this wrong, revise:** [Interpreting Results](#7-interpreting-results) — Section 7.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 For a test of $H_0: \mu = 50$ vs $H_1: \mu > 50$ at the 5% level with $\sigma = 4$ and $n = 16$, find the probability of a Type II error if the true mean is $\mu = 52$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 Under $H_0$: $\bar{X} \sim N(50, 16/16) = N(50, 1)$.
 
 Critical value: $P(Z > c) = 0.05 \implies c = 50 + 1.645(1) = 51.645$.
@@ -347,6 +347,6 @@ $P(\bar{X} < 51.645 \mid \mu = 52) = P\!\left(Z < \dfrac{51.645 - 52}{1}\right) 
 
 So $\beta \approx 0.361$ and the power is $1 - \beta \approx 0.639$.
 
-<b>If you get this wrong, revise:</b> [Type I and Type II Errors](#3-type-i-and-type-ii-errors) — Section 3.
+**If you get this wrong, revise:** [Type I and Type II Errors](#3-type-i-and-type-ii-errors) — Section 3.
 
-</p></details>
+</div></details>

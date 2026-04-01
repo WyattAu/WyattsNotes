@@ -150,52 +150,52 @@ $$\Delta\text{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2) \quad \b
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 A ball of mass $0.3\,\text{kg}$ moving at $8\,\text{m/s}$ strikes a wall and rebounds at $5\,\text{m/s}$. Find the impulse exerted by the wall.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 Taking initial direction as positive: $u = 8$, $v = -5$.
 
 $J = m(v - u) = 0.3(-5 - 8) = 0.3(-13) = -3.9\,\text{Ns}$.
 
 The impulse is $3.9\,\text{Ns}$ in the direction opposite to the initial motion.
 
-<b>If you get this wrong, revise:</b> [Impulse](#3-impulse) — Section 3.
+**If you get this wrong, revise:** [Impulse](#3-impulse) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Two particles of masses $3\,\text{kg}$ and $5\,\text{kg}$ collide directly. Before collision, they move at $4\,\text{m/s}$ and $-2\,\text{m/s}$ respectively. After collision, the $3\,\text{kg}$ particle moves at $-1\,\text{m/s}$. Find the velocity of the $5\,\text{kg}$ particle and the coefficient of restitution.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 Momentum: $3(4) + 5(-2) = 3(-1) + 5v \implies 12 - 10 = -3 + 5v \implies 5 = -3 + 5v \implies v = 1.6\,\text{m/s}$.
 
 $e = \dfrac{v_2 - v_1}{u_1 - u_2} = \dfrac{1.6 - (-1)}{4 - (-2)} = \dfrac{2.6}{6} \approx 0.433$.
 
-<b>If you get this wrong, revise:</b> [Direct Collisions](#41-direct-collisions) — Section 4.1.
+**If you get this wrong, revise:** [Direct Collisions](#41-direct-collisions) — Section 4.1.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 A particle of mass $2\,\text{kg}$ is acted upon by a force $F = (6t - 2)\,\text{N}$ for $2\,\text{s}$. If it starts from rest, find its final velocity.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 $J = \int_0^2 (6t-2)\,dt = [3t^2 - 2t]_0^2 = 12 - 4 = 8\,\text{Ns}$.
 
 $J = mv \implies 8 = 2v \implies v = 4\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Impulse from a Graph](#33-impulse-from-a-graph) — Section 3.3.
+**If you get this wrong, revise:** [Impulse from a Graph](#33-impulse-from-a-graph) — Section 3.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 A $6\,\text{kg}$ body moving at $5\,\text{m/s}$ collides with a stationary $4\,\text{kg}$ body. If the collision is perfectly elastic, find the velocities after collision.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 $e = 1$. Momentum: $6(5) + 4(0) = 6v_1 + 4v_2 \implies 30 = 6v_1 + 4v_2$.
 
 Restitution: $v_2 - v_1 = 5$.
@@ -204,15 +204,15 @@ $v_2 = v_1 + 5$. Substituting: $30 = 6v_1 + 4(v_1+5) = 10v_1 + 20 \implies v_1 =
 
 $v_2 = 6\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Coefficient of Restitution](#5-coefficient-of-restitution) — Section 5.
+**If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Prove that for a perfectly elastic collision between equal masses, the bodies exchange velocities.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $m_1 = m_2 = m$. Momentum: $mu_1 + mu_2 = mv_1 + mv_2 \implies u_1 + u_2 = v_1 + v_2$.
 
 Restitution ($e=1$): $v_2 - v_1 = u_1 - u_2$.
@@ -221,40 +221,40 @@ Adding: $2v_2 = 2u_1 \implies v_2 = u_1$. Subtracting: $2v_1 = 2u_2 \implies v_1
 
 The bodies exchange velocities. $\blacksquare$
 
-<b>If you get this wrong, revise:</b> [Conservation of Momentum](#2-conservation-of-momentum) — Section 2.
+**If you get this wrong, revise:** [Conservation of Momentum](#2-conservation-of-momentum) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 A ball is dropped from height $h$ onto a horizontal floor. It bounces back to height $h/4$. Find the coefficient of restitution.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 Speed just before impact: $u = \sqrt{2gh}$.
 Speed just after impact: $v = \sqrt{2g(h/4)} = \sqrt{gh/2} = \sqrt{2gh}/2$.
 
 $e = v/u = (\sqrt{2gh}/2)/\sqrt{2gh} = 1/2 = 0.5$.
 
-<b>If you get this wrong, revise:</b> [Coefficient of Restitution](#5-coefficient-of-restitution) — Section 5.
+**If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 A force acts on a $5\,\text{kg}$ body for $0.3\,\text{s}$, giving it an impulse of $15\,\text{Ns}$. Find the change in velocity.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $J = m\Delta v \implies 15 = 5\Delta v \implies \Delta v = 3\,\text{m/s}$.
 
-<b>If you get this wrong, revise:</b> [Impulse](#3-impulse) — Section 3.
+**If you get this wrong, revise:** [Impulse](#3-impulse) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 A $3\,\text{kg}$ particle moving at $6\,\text{m/s}$ collides with a $2\,\text{kg}$ particle moving at $-3\,\text{m/s}$. If $e = 0.6$, find the velocities after collision and the kinetic energy lost.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 Momentum: $3(6)+2(-3) = 3v_1+2v_2 \implies 12 = 3v_1+2v_2$.
 Restitution: $v_2 - v_1 = 0.6(6-(-3)) = 5.4 \implies v_2 = v_1 + 5.4$.
 
@@ -266,30 +266,30 @@ $\text{KE}_{\text{after}} = \tfrac{1}{2}(3)(0.0576) + \tfrac{1}{2}(2)(31.81) = 0
 
 $\Delta\text{KE} = 63 - 31.90 = 31.10\,\text{J}$.
 
-<b>If you get this wrong, revise:</b> [Energy Loss in Collisions](#53-energy-loss-in-collisions) — Section 5.3.
+**If you get this wrong, revise:** [Energy Loss in Collisions](#53-energy-loss-in-collisions) — Section 5.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 A ball of mass $0.2\,\text{kg}$ hits a vertical wall at $12\,\text{m/s}$ at an angle of $30°$ to the normal, and rebounds at the same angle with $e = 0.7$. Find the impulse parallel and perpendicular to the wall.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 Perpendicular to wall (normal): $u_n = 12\cos 30° = 6\sqrt{3}$, $v_n = -e \cdot u_n = -0.7(6\sqrt{3}) = -4.2\sqrt{3}$.
 
 $J_n = m(v_n - u_n) = 0.2(-4.2\sqrt{3} - 6\sqrt{3}) = 0.2(-10.2\sqrt{3}) = -2.04\sqrt{3} \approx -3.53\,\text{Ns}$.
 
 Parallel to wall: no friction, so velocity component is unchanged. $J_{\parallel} = 0$.
 
-<b>If you get this wrong, revise:</b> [Oblique Collisions](#42-oblique-2d-collisions) — Section 4.2.
+**If you get this wrong, revise:** [Oblique Collisions](#42-oblique-2d-collisions) — Section 4.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 Two bodies of masses $m$ and $2m$ collide. Before collision, they move towards each other at speeds $u$ and $2u$ respectively. After collision, they move in the same direction. Show that $e \leq 1/3$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 Taking the direction of $m$ as positive. $u_1 = u$, $u_2 = -2u$.
 
 Momentum: $mu + 2m(-2u) = mv_1 + 2mv_2 \implies -3mu = m(v_1 + 2v_2) \implies v_1 + 2v_2 = -3u$.
@@ -342,6 +342,6 @@ For $v_2 < 0$: $e = 1 + v_2/u < 1$. ✓ For $v_1 < 0$: $-3u - 2v_2 < 0 \implies 
 
 If the problem says $e \leq 1/3$, there may be additional constraints. Given the complexity, the key idea is shown.
 
-<b>If you get this wrong, revise:</b> [Coefficient of Restitution](#5-coefficient-of-restitution) — Section 5.
+**If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) — Section 5.
 
-</p></details>
+</div></details>

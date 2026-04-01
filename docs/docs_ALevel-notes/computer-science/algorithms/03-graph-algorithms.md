@@ -254,7 +254,7 @@ S . . # .
 . # . . G
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Coordinates: S=(0,0), G=(4,4). Grid is 5×5.
 
@@ -272,19 +272,19 @@ Open set ordered by $f = g + h$:
 
 The optimal path is: (0,0)→(0,1)→(0,2)→(1,2)→(2,2)→(2,3)→(3,3)... but (3,3) is blocked (#). So: (2,2)→(2,3)→(2,4)→(3,4)→(4,4). Cost: 8.
 
-</p></details>
+</div></details>
 
 **Problem 2.** Prove that the Manhattan distance heuristic is admissible for grid-based pathfinding with 4-directional movement.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof.** In a grid with 4-directional movement, the shortest path from $(x_1, y_1)$ to $(x_2, y_2)$ requires at least $|x_1 - x_2|$ horizontal moves and $|y_1 - y_2|$ vertical moves (since each move changes one coordinate by exactly 1). Therefore, the minimum number of moves is $|x_1 - x_2| + |y_1 - y_2|$, which is exactly the Manhattan distance. Since the heuristic equals the true minimum cost, it never overestimates. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 3.** When would you choose Prim's algorithm over Kruskal's algorithm for finding an MST?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Choose Prim's when:
 
@@ -298,11 +298,11 @@ Choose Kruskal's when:
 2. You want to find only certain edges of the MST (stop early)
 3. The edges are already sorted or can be streamed
 
-</p></details>
+</div></details>
 
 **Problem 4.** Explain what happens to Dijkstra's algorithm if there is a negative edge in the graph. Give a specific counterexample.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Consider vertices S, A, B with edges: S→A (weight 1), A→B (weight -3), S→B (weight 2).
 
@@ -314,11 +314,11 @@ The real failure: S→A (3), S→C (7), A→B (2), B→C (-2). Dijkstra: S(0). A
 
 Wait — C is already extracted. The issue is that when C is extracted at distance 7, a shorter path through B (distance 5 → C = 3) exists but is never explored because B hasn't been processed yet and C is already marked as visited.
 
-</p></details>
+</div></details>
 
 **Problem 5.** The Floyd-Warshall algorithm computes all-pairs shortest paths in $O(V^3)$ time. For a sparse graph with $E = O(V)$, is this more efficient than running Dijkstra from every vertex?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Running Dijkstra from every vertex: $V \times O((V + E)\log V) = V \times O(V \log V) = O(V^2 \log V)$.
 
@@ -328,7 +328,7 @@ For sparse graphs: $V^2 \log V \ll V^3$ for large $V$. So running Dijkstra from 
 
 For dense graphs ($E = O(V^2)$): Dijkstra from every vertex = $O(V^2 \log V + V^3 \log V)$... wait: $V \times O((V + V^2)\log V) = V \times O(V^2 \log V) = O(V^3 \log V)$. Floyd-Warshall = $O(V^3)$. So Floyd-Warshall is better for dense graphs.
 
-</p></details>
+</div></details>
 
 **Problem 6.** Apply the nearest neighbour heuristic to the TSP with distance matrix:
 
@@ -342,7 +342,7 @@ D  [ 20,  25,  30,   0 ]
 
 Starting from A.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Start: A. Current = A.
 
@@ -353,31 +353,31 @@ Return to A: C→A (15). Total: 80.
 
 Path: A→B→D→C→A, total cost: 80.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Explain why the 2-opt heuristic improves the TSP solution. Does it always find the optimal solution?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 2-opt removes two edges from the current tour and reconnects the two resulting paths in the other possible way. If the new total distance is shorter, the swap is accepted. This corrects "crossing" edges, which are always suboptimal in metric TSP.
 
 2-opt does **not** always find the optimal solution. It can get stuck in local optima — configurations where no single 2-opt swap improves the tour, but a sequence of swaps (or a swap involving more edges, like 3-opt) would. However, for many practical instances, 2-opt produces near-optimal solutions.
 
-</p></details>
+</div></details>
 
 **Problem 8.** How would you detect a negative cycle using the Floyd-Warshall algorithm?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 After running Floyd-Warshall, check the diagonal of the distance matrix. If $\text{dist}[i][i] < 0$ for any vertex $i$, there exists a negative cycle through $i$.
 
 **Proof.** $\text{dist}[i][i]$ represents the shortest path from $i$ back to $i$. If this is negative, there exists a cycle with total weight $< 0$ through vertex $i$. This cycle can be traversed repeatedly to make the shortest path arbitrarily negative, meaning shortest paths are undefined. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 9.** Compare A\* and Dijkstra in terms of completeness, optimality, and efficiency.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Property    | Dijkstra           | A\* (admissible)                           |
 | ----------- | ------------------ | ------------------------------------------ |
@@ -389,11 +389,11 @@ After running Floyd-Warshall, check the diagonal of the distance matrix. If $\te
 
 A* dominates Dijkstra: whenever $h(v) = 0$ for all $v$, A* reduces to Dijkstra. With a good heuristic, A\* explores significantly fewer nodes.
 
-</p></details>
+</div></details>
 
 **Problem 10.** Given a weighted directed graph, explain how to find the shortest path that visits exactly $k$ edges from vertex $s$ to vertex $t$. State the time complexity.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Use **dynamic programming**. Let $dp[i][v]$ = shortest path from $s$ to $v$ using exactly $i$ edges.
 

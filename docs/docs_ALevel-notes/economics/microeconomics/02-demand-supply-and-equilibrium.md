@@ -287,106 +287,106 @@ Edexcel (9EC0) emphasises elasticity calculations using the midpoint (arc elasti
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Set up MRS = price ratio: $\frac{y}{x} = \frac{P_x}{P_y} = 2$, so $y = 2x$. Substitute into budget constraint: $4x + 2(2x) = 100 \Rightarrow 8x = 100 \Rightarrow x = 12.5$, $y = 25$. General demand: $x = \frac{M}{2P_x}$, $y = \frac{M}{2P_y}$. At $P_x = 5$: $x = 10$.
-</p>
+</div>
 </details>
 
 **Problem 2.** The market demand for good $X$ is $Q_D = 100 - 2P$ and market supply is $Q_S = 20 + 3P$. Find the equilibrium price and quantity. Calculate the consumer and producer surplus at equilibrium.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 $100 - 2P = 20 + 3P \Rightarrow 80 = 5P \Rightarrow P^* = 16$, $Q^* = 68$. CS = $\int_0^{68} [50 - Q/2 - 16] \, dQ = \int_0^{68} [34 - Q/2] \, dQ = [34Q - Q^2/4]_0^{68} = 2312 - 1156 = 1156$. PS = $\int_0^{68} [16 - (Q - 20)/3] \, dQ = \int_0^{68} [22/3 - Q/3] \, dQ = [22Q/3 - Q^2/6]_0^{68} = 498.67 - 770.67 = \ldots$ Recalculate: inverse supply $P = (Q - 20)/3 + 0 = (Q-20)/3$. PS = $\int_0^{68} [16 - (Q-20)/3] dQ = \int_0^{68} [16 - Q/3 + 20/3] dQ = \int_0^{68} [68/3 - Q/3] dQ = [68Q/3 - Q^2/6]_0^{68} = 1541.33 - 770.67 = 770.67$.
-</p>
+</div>
 </details>
 
 **Problem 3.** A linear demand curve passes through points $(P, Q) = (10, 50)$ and $(P, Q) = (20, 30)$. Calculate PED at each point using the point elasticity formula. At what point is $|\text{PED}| = 1$?
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Demand equation: slope $= \frac{30-50}{20-10} = -2$, so $Q = 70 - 2P$. At $(10, 50)$: PED $= \frac{10}{50} \times (-2) = -0.4$ (inelastic). At $(20, 30)$: PED $= \frac{20}{30} \times (-2) = -1.33$ (elastic). Midpoint: $Q = 35$, $P = 17.5$: PED $= \frac{17.5}{35} \times (-2) = -1$.
-</p>
+</div>
 </details>
 
 **Problem 4.** The price of good $A$ rises from £5 to £7, causing quantity demanded of good $B$ to fall from 100 to 80 units. Calculate XED and interpret the relationship between $A$ and $B$.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Using midpoint formula: XED $= \frac{(80-100)/90}{(7-5)/6} = \frac{-20/90}{2/6} = \frac{-0.222}{0.333} = -0.667$. Since XED < 0, $A$ and $B$ are complements. The magnitude (0.667) suggests a moderate complement relationship.
-</p>
+</div>
 </details>
 
 **Problem 5.** A government imposes a specific tax of £3 per unit on a good with demand $Q_D = 120 - P$ and supply $Q_S = 2P - 30$. Find the new equilibrium, the tax incidence on consumers and producers, and the deadweight loss.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 With tax, supply shifts up: $P_s = P_d - 3$, so $Q_S = 2(P_d - 3) - 30 = 2P_d - 36$. New equilibrium: $120 - P_d = 2P_d - 36 \Rightarrow 156 = 3P_d \Rightarrow P_d = 52$. $P_s = 49$. $Q^* = 68$. Tax burden on consumers: $52 - 50 = 2$ (out of £3). Tax burden on producers: $50 - 49 = 1$. DWL $= \frac{1}{2} \times 3 \times (70 - 68) = 3$.
-</p>
+</div>
 </details>
 
 **Problem 6.** Prove that if demand is perfectly inelastic ($\text{PED} = 0$), the full burden of a specific tax falls on consumers. Prove that if demand is perfectly elastic, the full burden falls on producers.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 With vertical demand curve, quantity doesn't change. The price consumers pay rises by the full amount of the tax. With horizontal demand curve, consumers are willing to pay only $P^*$. Producers must absorb the entire tax to continue selling.
-</p>
+</div>
 </details>
 
 **Problem 7.** A firm's total cost function is $TC = 50 + 10Q + 0.5Q^2$. Derive the supply curve. If the market price is £25, how much will the firm produce?
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 $MC = dTC/dQ = 10 + Q$. Supply curve: $P = MC$ for $P \geq AVC$. $AVC = 10 + 0.5Q$, $\min AVC = 10$ at $Q = 0$. So supply: $Q = P - 10$ for $P \geq 10$. At $P = 25$: $Q = 15$.
-</p>
+</div>
 </details>
 
 **Problem 8.** "A firm should always produce at the level where total revenue is maximised." Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 False. A profit-maximising firm produces where $MR = MC$, not where $TR$ is maximised ($MR = 0$). Since $MC > 0$ (typically), the profit-maximising output is lower than the revenue-maximising output. Only if $MC = 0$ would the two coincide.
-</p>
+</div>
 </details>
 
 **Problem 9.** When the price of cinema tickets rises from £8 to £10, weekly attendance falls from 500 to 400. Calculate PED. If the cinema raises prices further to £12, and PED remains constant, predict the new attendance. Is this assumption realistic?
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 PED $= \frac{-100/450}{2/9} = \frac{-0.222}{0.222} = -1$ (unit elastic, using midpoints). If PED remains $-1$: $\frac{\%\Delta Q}{\%\Delta P} = -1$. Price rises from 10 to 12 = 20%. So quantity falls by 20%: $Q = 400 \times 0.8 = 320$. The assumption is unrealistic because PED varies along a linear demand curve.
-</p>
+</div>
 </details>
 
 **Problem 10.** The government is considering imposing a tax on cigarettes. Using demand and supply analysis, discuss the likely effects on (a) equilibrium price and quantity, (b) consumer surplus, (c) tax revenue, and (d) deadweight loss. In your evaluation, consider the implications of inelastic demand for tax revenue vs the goal of reducing smoking.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Cigarettes have inelastic demand (few substitutes, addictive). (a) Price rises substantially, quantity falls modestly. (b) Consumer surplus falls by a large amount (consumers bear most of the tax burden). (c) Tax revenue is high because quantity doesn't fall much. (d) DWL is relatively small (narrow triangle). Evaluation: if the goal is revenue, inelastic goods are ideal for taxation. If the goal is reducing smoking, the tax may be insufficient — complementary policies (education, regulation) may be needed.
-</p>
+</div>
 </details>
 
 **Problem 11.** Two goods have demand curves $Q_A = 50 - P_A + 0.5P_B$ and $Q_B = 80 - 2P_B + P_A$. Calculate the cross-price elasticity of demand for good $B$ with respect to the price of $A$ when $P_A = 20$, $P_B = 10$.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 $\text{XED}_{BA} = \frac{\partial Q_B / \partial P_A \times P_A}{Q_B}$. $\partial Q_B / \partial P_A = 1$. At $P_A = 20$, $P_B = 10$: $Q_B = 80 - 20 + 20 = 80$. XED $= 1 \times 20/80 = 0.25$. Positive, so $A$ and $B$ are weak substitutes.
-</p>
+</div>
 </details>
 
 **Problem 12.** Evaluate the usefulness of elasticity concepts for government policymakers. In your answer, discuss the limitations of elasticity estimates in practice.
 
 <details>
 <summary>Hint</summary>
-<p>
+<div>
 Useful for: tax policy (tax inelastic goods for revenue), subsidy design, price regulation. Limitations: estimates vary with time period and data quality, assume ceteris paribus, may change after policy intervention (endogeneity), difficult to estimate for new goods.
-</p>
+</div>
 </details>

@@ -46,11 +46,11 @@ $$
 
 **Proof of termination.** The sum has exactly $n$ terms, so the algorithm terminates after $n$ iterations.
 
-<details><summary>Example: Convert $1A3_{16}$ to denary</summary><p>
+<details><summary>Example: Convert $1A3_{16}$ to denary</summary><div>
 
 $$1 \times 16^2 + 10 \times 16^1 + 3 \times 16^0 = 256 + 160 + 3 = 419_{10}$$
 
-</p></details>
+</div></details>
 
 #### Denary to Base $b$ (Repeated Division)
 
@@ -70,7 +70,7 @@ $$N = \sum_{i=0}^{k-1} d_i b^i + b^k(d_k + b \cdot N_{k+1}) = \sum_{i=0}^{k} d_i
 
 This maintains the invariant. When $N_k = 0$, the representation is complete.
 
-<details><summary>Example: Convert $156_{10}$ to binary</summary><p>
+<details><summary>Example: Convert $156_{10}$ to binary</summary><div>
 
 | Step | $N$ | $N \bmod 2$ | $\lfloor N/2 \rfloor$ |
 | ---- | --- | ----------- | --------------------- |
@@ -85,13 +85,13 @@ This maintains the invariant. When $N_k = 0$, the representation is complete.
 
 Reading bottom to top: $156_{10} = 10011100_2$
 
-</p></details>
+</div></details>
 
 #### Binary to Hexadecimal (and vice versa)
 
 Since $16 = 2^4$, each hex digit corresponds to exactly 4 binary digits. Group binary digits from right to left in groups of 4, then convert each group.
 
-<details><summary>Example: Convert $10111011011_2$ to hex</summary><p>
+<details><summary>Example: Convert $10111011011_2$ to hex</summary><div>
 
 Group: $101\ 1101\ 1011$
 
@@ -99,19 +99,19 @@ Pad left group: $0101\ 1101\ 1011$
 
 Convert: $5\ \text{D}\ \text{B} = 5DB_{16}$
 
-</p></details>
+</div></details>
 
 #### Hexadecimal to Binary
 
 Replace each hex digit with its 4-bit binary equivalent.
 
-<details><summary>Example: Convert $3F7_{16}$ to binary</summary><p>
+<details><summary>Example: Convert $3F7_{16}$ to binary</summary><div>
 
 $3 = 0011$, $F = 1111$, $7 = 0111$
 
 Result: $001111110111_2 = 11111110111_2$
 
-</p></details>
+</div></details>
 
 #### Octal Conversions
 
@@ -140,7 +140,7 @@ We add bitwise from right to left, with carries:
 
 **Proof.** The carry $C_i$ is defined recursively: $C_0 = 0$ and $C_{i+1} = (A_i \cdot B_i) + (A_i \cdot C_i) + (B_i \cdot C_i)$. By structural induction on $i$, $C_i$ is a Boolean function of $\{A_0, B_0, \ldots, A_{i-1}, B_{i-1}\}$ only. $\square$
 
-<details><summary>Example: Add $1011_2 + 0110_2$</summary><p>
+<details><summary>Example: Add $1011_2 + 0110_2$</summary><div>
 
 ```
   Carry: 1 1 1 0 0
@@ -152,7 +152,7 @@ We add bitwise from right to left, with carries:
 
 $1011_2 = 11_{10}$, $0110_2 = 6_{10}$, $10001_2 = 17_{10}$. Correct. ✓
 
-</p></details>
+</div></details>
 
 ### Binary Subtraction
 
@@ -213,7 +213,7 @@ When adding two $n$-bit two's complement numbers, the result is correct (modulo 
 
 **Formally:** overflow occurs if and only if the carry into the MSB differs from the carry out of the MSB.
 
-<details><summary>Example: Add $-5$ and $3$ in 4-bit two's complement</summary><p>
+<details><summary>Example: Add $-5$ and $3$ in 4-bit two's complement</summary><div>
 
 $-5 = 1011_2$ (since $2^4 - 5 = 11 = 1011_2$)
 $3 = 0011_2$
@@ -230,9 +230,9 @@ $1110_2$ in two's complement: $-2$. Let us verify: $-5 + 3 = -2$. ✓
 
 No overflow (negative + positive never overflows).
 
-</p></details>
+</div></details>
 
-<details><summary>Example: Overflow — Add $6$ and $5$ in 4-bit two's complement</summary><p>
+<details><summary>Example: Overflow — Add $6$ and $5$ in 4-bit two's complement</summary><div>
 
 $6 = 0110_2$, $5 = 0101_2$
 
@@ -246,7 +246,7 @@ $6 = 0110_2$, $5 = 0101_2$
 
 Result: $1011_2 = -5$ in two's complement. But $6 + 5 = 11$, which is outside the range $[-8, 7]$ for 4 bits. Overflow detected: positive + positive yielded negative. ✓
 
-</p></details>
+</div></details>
 
 :::info Board-specific
 
@@ -280,7 +280,7 @@ For signed (two's complement) with $m$ integer bits and $f$ fractional bits:
 
 - **Range:** $[-2^{m-1},\ 2^{m-1} - 2^{-f}]$
 
-<details><summary>Example: 8-bit fixed-point with 5 integer bits and 3 fractional bits</summary><p>
+<details><summary>Example: 8-bit fixed-point with 5 integer bits and 3 fractional bits</summary><div>
 
 $01101011_2$:
 
@@ -291,7 +291,7 @@ Value: $13.375_{10}$
 
 Range: $[0,\ 31.875]$, Precision: $0.125$
 
-</p></details>
+</div></details>
 
 ---
 
@@ -367,7 +367,7 @@ Extended ASCII uses 8 bits (256 characters) but is not standardised — various 
 2. **ASCII compatible:** All ASCII text is valid UTF-8.
 3. **Prefix-free:** No valid UTF-8 sequence is a prefix of another valid sequence.
 
-<details><summary>Example: Encode '€' (U+20AC) in UTF-8</summary><p>
+<details><summary>Example: Encode '€' (U+20AC) in UTF-8</summary><div>
 
 $20AC_{16} = 0010\ 0000\ 1010\ 1100_2$
 
@@ -381,7 +381,7 @@ Split: $\underbrace{0010}_{x} \underbrace{000010}_{xx} \underbrace{101100}_{xx}$
 
 Result: `11100010 10000010 10101100` = `E2 82 AC` in hex.
 
-</p></details>
+</div></details>
 
 ---
 
@@ -408,27 +408,27 @@ Sign and magnitude is rarely used in practice because:
 
 **Problem 1.** Convert $2F7_{16}$ to denary.
 
-<details><summary>Hint</summary><p>Use the positional formula with $b = 16$. Remember $F = 15$.</p></details>
+<details><summary>Hint</summary><div>Use the positional formula with $b = 16$. Remember $F = 15$.</div></details>
 
-<details><summary>Answer</summary><p>$2 \times 256 + 15 \times 16 + 7 = 512 + 240 + 7 = 759_{10}$</p></details>
+<details><summary>Answer</summary><div>$2 \times 256 + 15 \times 16 + 7 = 512 + 240 + 7 = 759_{10}$</div></details>
 
 **Problem 2.** Convert $314_{10}$ to binary and hexadecimal.
 
-<details><summary>Hint</summary><p>Use repeated division by 2, then group into 4-bit nibbles for hex.</p></details>
+<details><summary>Hint</summary><div>Use repeated division by 2, then group into 4-bit nibbles for hex.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Binary: $314 = 256 + 32 + 16 + 8 + 2 = 100111010_2$
 
 Hex: Group as $0001\ 0011\ 1010 = 13A_{16}$
 
-</p></details>
+</div></details>
 
 **Problem 3.** Represent $-42$ in 8-bit two's complement. Verify by adding it to $+42$ and showing the result is zero.
 
-<details><summary>Hint</summary><p>Find the binary of 42, flip all bits, add 1.</p></details>
+<details><summary>Hint</summary><div>Find the binary of 42, flip all bits, add 1.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $42 = 00101010_2$
 
@@ -438,13 +438,13 @@ Add 1: $11010110_2$
 
 Verification: $00101010 + 11010110 = 100000000$. The carry out of 8 bits is discarded, leaving $00000000$. ✓
 
-</p></details>
+</div></details>
 
 **Problem 4.** Perform the addition $10110110_2 + 01101011_2$ and interpret the result in 8-bit unsigned and 8-bit two's complement.
 
-<details><summary>Hint</summary><p>Do the binary addition first. Then interpret based on the encoding scheme.</p></details>
+<details><summary>Hint</summary><div>Do the binary addition first. Then interpret based on the encoding scheme.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```
   1 0 1 1 0 1 1 0
@@ -458,13 +458,13 @@ Verification: $00101010 + 11010110 = 100000000$. The carry out of 8 bits is disc
 - **Unsigned:** $00100001_2 = 33_{10}$. Check: $182 + 107 = 289$. But $289 \bmod 256 = 33$. ✓
 - **Two's complement:** $00100001_2 = 33_{10}$. Check: $-74 + 107 = 33$. ✓
 
-</p></details>
+</div></details>
 
 **Problem 5.** A fixed-point system uses 12 bits: 8 for the integer part and 4 for the fractional part. What is the range and precision? Convert $01011010.1010$ to denary.
 
-<details><summary>Hint</summary><p>Precision is $2^{-4}$. Range depends on whether signed or unsigned.</p></details>
+<details><summary>Hint</summary><div>Precision is $2^{-4}$. Range depends on whether signed or unsigned.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Unsigned range: $[0,\ 255.9375]$, precision: $0.0625$ ($2^{-4}$).
 
@@ -474,13 +474,13 @@ $.1010_2 = 0.5 + 0.125 = 0.625_{10}$
 
 Value: $90.625_{10}$
 
-</p></details>
+</div></details>
 
 **Problem 6.** Encode the string "Hi!" in ASCII (hex). Then explain how many bytes this would take in UTF-8.
 
-<details><summary>Hint</summary><p>Look up each character's ASCII code point.</p></details>
+<details><summary>Hint</summary><div>Look up each character's ASCII code point.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 'H' = 72 = $48_{16}$ = `01001000`
 'i' = 105 = $69_{16}$ = `01101001`
@@ -490,13 +490,13 @@ In ASCII hex: `48 69 21`
 
 Since all code points are below `U+007F`, UTF-8 uses 1 byte per character, so 3 bytes total. UTF-8 encoding is identical to ASCII for these characters.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Encode the character 'ñ' (`U+00F1`) in UTF-8. Show each step.
 
-<details><summary>Hint</summary><p>`U+00F1` falls in the 2-byte range `U+0080`–`U+07FF`. Use the pattern `110xxxxx 10xxxxxx`.</p></details>
+<details><summary>Hint</summary><div>`U+00F1` falls in the 2-byte range `U+0080`–`U+07FF`. Use the pattern `110xxxxx 10xxxxxx`.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $00F1_{16} = 0000\ 1111\ 0001_2$
 
@@ -507,13 +507,13 @@ Second byte: `10` + `110001` = `10110001` = $B1_{16}$
 
 UTF-8: `C3 B1`
 
-</p></details>
+</div></details>
 
 **Problem 8.** A student claims that $1101_2$ in 4-bit two's complement represents $-3$. Another claims it represents $+13$. Who is correct? Explain.
 
-<details><summary>Hint</summary><p>What does the MSB tell you in two's complement?</p></details>
+<details><summary>Hint</summary><div>What does the MSB tell you in two's complement?</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The first student is correct for two's complement interpretation. The MSB is 1, so it is negative.
 
@@ -521,13 +521,13 @@ Value: $- (2^4 - 13) = -(16 - 13) = -3$. ✓
 
 The second student is interpreting it as an unsigned number: $8 + 4 + 1 = 13$. This is also valid — the bit pattern is the same, but the interpretation differs. Context determines which encoding is used.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Prove that the two's complement of the two's complement of $x$ equals $x$ (for $x$ in the valid range, excluding $-2^{n-1}$).
 
-<details><summary>Hint</summary><p>Start with $\text{TwosComp}(x) = 2^n - x$. Apply the operation again.</p></details>
+<details><summary>Hint</summary><div>Start with $\text{TwosComp}(x) = 2^n - x$. Apply the operation again.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Let $y = \text{TwosComp}_n(x) = 2^n - x$.
 
@@ -535,13 +535,13 @@ $\text{TwosComp}_n(y) = 2^n - y = 2^n - (2^n - x) = x$. ✓
 
 The exception is $x = -2^{n-1}$, whose two's complement is $2^n - (-2^{n-1}) = 2^n + 2^{n-1} = 2^{n-1} \cdot 3$, which exceeds $n$ bits. In $n$-bit arithmetic, $2^n - (-2^{n-1}) \bmod 2^n = 2^{n-1}$, which is the bit pattern $100\ldots0$ — the same as $-2^{n-1}$. So $-2^{n-1}$ is its own two's complement.
 
-</p></details>
+</div></details>
 
 **Problem 10.** In a system using 6-bit two's complement, what is the result of adding $-16$ and $-15$? Does overflow occur?
 
-<details><summary>Hint</summary><p>Range of 6-bit two's complement is $[-32, 31]$. Compute $-16 + (-15) = -31$. Is this in range?</p></details>
+<details><summary>Hint</summary><div>Range of 6-bit two's complement is $[-32, 31]$. Compute $-16 + (-15) = -31$. Is this in range?</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $-16 = 2^6 - 16 = 48 = 110000_2$
 $-15 = 2^6 - 15 = 49 = 110001_2$
@@ -559,4 +559,4 @@ Check: $-16 + (-15) = -31$. No overflow: $-31$ is in range $[-32, 31]$. ✓
 
 Both inputs are negative and the result is negative, so no overflow.
 
-</p></details>
+</div></details>

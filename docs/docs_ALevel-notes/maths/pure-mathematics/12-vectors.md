@@ -208,11 +208,11 @@ To find the shortest distance from point $P$ to line $\mathbf{r} = \mathbf{a} + 
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 Given $\mathbf{a} = 3\mathbf{i} - 2\mathbf{j} + \mathbf{k}$ and $\mathbf{b} = \mathbf{i} + 4\mathbf{j} - 3\mathbf{k}$, find $\mathbf{a} + \mathbf{b}$, $\mathbf{a} - \mathbf{b}$, $|\mathbf{a}|$, and a unit vector in the direction of $\mathbf{a}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $\mathbf{a} + \mathbf{b} = 4\mathbf{i} + 2\mathbf{j} - 2\mathbf{k} = \begin{pmatrix}4\\2\\-2\end{pmatrix}$.
 
 $\mathbf{a} - \mathbf{b} = 2\mathbf{i} - 6\mathbf{j} + 4\mathbf{k} = \begin{pmatrix}2\\-6\\4\end{pmatrix}$.
@@ -221,15 +221,15 @@ $|\mathbf{a}| = \sqrt{9+4+1} = \sqrt{14}$.
 
 $\hat{\mathbf{a}} = \dfrac{1}{\sqrt{14}}\begin{pmatrix}3\\-2\\1\end{pmatrix}$.
 
-<b>If you get this wrong, revise:</b> [Magnitude, Unit Vectors](#2-magnitude-unit-vectors-direction-cosines) — Section 2.
+**If you get this wrong, revise:** [Magnitude, Unit Vectors](#2-magnitude-unit-vectors-direction-cosines) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Find the angle between $\mathbf{a} = \begin{pmatrix}2\\1\\-1\end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix}1\\-3\\2\end{pmatrix}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 $\mathbf{a}\cdot\mathbf{b} = 2-3-2 = -3$.
 $|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$, $|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{14}$.
 
@@ -237,28 +237,28 @@ $\cos\theta = \dfrac{-3}{\sqrt{6}\sqrt{14}} = \dfrac{-3}{\sqrt{84}} = \dfrac{-3}
 
 $\theta = \arccos\!\left(\dfrac{-\sqrt{21}}{14}\right) \approx 100.9°$.
 
-<b>If you get this wrong, revise:</b> [The Scalar (Dot) Product](#4-the-scalar-dot-product) — Section 4.
+**If you get this wrong, revise:** [The Scalar (Dot) Product](#4-the-scalar-dot-product) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 Find the vector equation of the line through $A(1, 2, -1)$ and $B(3, 0, 4)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 Direction: $\overrightarrow{AB} = \begin{pmatrix}3-1\\0-2\\4-(-1)\end{pmatrix} = \begin{pmatrix}2\\-2\\5\end{pmatrix}$.
 
 $$\mathbf{r} = \begin{pmatrix}1\\2\\-1\end{pmatrix} + t\begin{pmatrix}2\\-2\\5\end{pmatrix}$$
 
-<b>If you get this wrong, revise:</b> [Vector Equation of a Line](#5-vector-equation-of-a-line) — Section 5.
+**If you get this wrong, revise:** [Vector Equation of a Line](#5-vector-equation-of-a-line) — Section 5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 Show that the lines $\mathbf{r} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t\begin{pmatrix}2\\1\\-1\end{pmatrix}$ and $\mathbf{r} = \begin{pmatrix}3\\1\\1\end{pmatrix} + s\begin{pmatrix}1\\-1\\1\end{pmatrix}$ intersect, and find the point of intersection.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 Equating components: $1+2t = 3+s$, $t = 1-s$, $2-t = 1+s$.
 
 From $t = 1-s$ and $2-t = 1+s$: $2-(1-s) = 1+s \implies 1+s = 1+s$ ✓ (consistent).
@@ -267,28 +267,28 @@ Check first: $1+2(1-s) = 3+s \implies 3-2s = 3+s \implies s = 0$, $t = 1$.
 
 Point: $\begin{pmatrix}1+2\\0+1\\2-1\end{pmatrix} = \begin{pmatrix}3\\1\\1\end{pmatrix}$.
 
-<b>If you get this wrong, revise:</b> [Intersection of Lines](#6-intersection-of-lines) — Section 6.
+**If you get this wrong, revise:** [Intersection of Lines](#6-intersection-of-lines) — Section 6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Find $\lambda$ such that $\begin{pmatrix}\lambda\\3\\-1\end{pmatrix}$ is perpendicular to $\begin{pmatrix}2\\\lambda\\4\end{pmatrix}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 Perpendicular $\iff$ dot product $= 0$:
 
 $$2\lambda + 3\lambda - 4 = 0 \implies 5\lambda = 4 \implies \lambda = \frac{4}{5}$$
 
-<b>If you get this wrong, revise:</b> [Perpendicularity test](#43-perpendicularity-test) — Section 4.3.
+**If you get this wrong, revise:** [Perpendicularity test](#43-perpendicularity-test) — Section 4.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 Find the distance from $P(1, 2, 3)$ to the line $\mathbf{r} = \begin{pmatrix}0\\1\\-1\end{pmatrix} + t\begin{pmatrix}1\\1\\1\end{pmatrix}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 $\overrightarrow{PQ} = \begin{pmatrix}t\\1+t\\-1+t\end{pmatrix} - \begin{pmatrix}1\\2\\3\end{pmatrix} = \begin{pmatrix}t-1\\t-1\\t-4\end{pmatrix}$.
 
 $\overrightarrow{PQ} \cdot \begin{pmatrix}1\\1\\1\end{pmatrix} = 0$:
@@ -296,30 +296,30 @@ $(t-1)+(t-1)+(t-4) = 0 \implies 3t = 6 \implies t = 2$.
 
 $Q = \begin{pmatrix}2\\3\\1\end{pmatrix}$, $\overrightarrow{PQ} = \begin{pmatrix}1\\1\\-2\end{pmatrix}$, $|\overrightarrow{PQ}| = \sqrt{1+1+4} = \sqrt{6}$.
 
-<b>If you get this wrong, revise:</b> [Distance from a Point to a Line](#8-distance-from-a-point-to-a-line) — Section 8.
+**If you get this wrong, revise:** [Distance from a Point to a Line](#8-distance-from-a-point-to-a-line) — Section 8.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 Prove that the direction cosines satisfy $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 For $\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}$ with $|\mathbf{a}| = m$:
 
 $\cos\alpha = a_1/m$, $\cos\beta = a_2/m$, $\cos\gamma = a_3/m$.
 
 $$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \frac{a_1^2+a_2^2+a_3^2}{m^2} = \frac{m^2}{m^2} = 1 \quad \blacksquare$$
 
-<b>If you get this wrong, revise:</b> [Direction Cosines](#23-direction-cosines) — Section 2.3.
+**If you get this wrong, revise:** [Direction Cosines](#23-direction-cosines) — Section 2.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Points $A$, $B$, $C$ have position vectors $\mathbf{a} = \begin{pmatrix}1\\-1\\2\end{pmatrix}$, $\mathbf{b} = \begin{pmatrix}3\\1\\0\end{pmatrix}$, $\mathbf{c} = \begin{pmatrix}4\\0\\3\end{pmatrix}$. Determine whether $\triangle ABC$ is right-angled.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $\overrightarrow{AB} = \begin{pmatrix}2\\2\\-2\end{pmatrix}$, $\overrightarrow{AC} = \begin{pmatrix}3\\1\\1\end{pmatrix}$, $\overrightarrow{BC} = \begin{pmatrix}1\\-1\\3\end{pmatrix}$.
 
 $\overrightarrow{AB}\cdot\overrightarrow{AC} = 6+2-2 = 6 \neq 0$.
@@ -328,15 +328,15 @@ $\overrightarrow{AC}\cdot\overrightarrow{BC} = 3-1+3 = 5 \neq 0$.
 
 No pair is perpendicular, so $\triangle ABC$ is **not** right-angled.
 
-<b>If you get this wrong, revise:</b> [Perpendicularity test](#43-perpendicularity-test) — Section 4.3.
+**If you get this wrong, revise:** [Perpendicularity test](#43-perpendicularity-test) — Section 4.3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 Show that the lines $\mathbf{r} = \begin{pmatrix}0\\0\\1\end{pmatrix} + t\begin{pmatrix}1\\1\\0\end{pmatrix}$ and $\mathbf{r} = \begin{pmatrix}0\\1\\0\end{pmatrix} + s\begin{pmatrix}1\\0\\1\end{pmatrix}$ are skew.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 Equating: $t = s$, $t = 1$, $1 = s$.
 
 From $t = 1$ and $t = s$: $s = 1$. Check third: $1 = s = 1$ ✓.
@@ -347,30 +347,30 @@ $t = s$, $t = 1$, $1 = s$. So $t = s = 1$. Point: $(1, 1, 1)$.
 
 Actually the lines **intersect** at $(1,1,1)$, they are not skew.
 
-<b>If you get this wrong, revise:</b> [Skew Lines](#62-skew-lines) — Section 6.2.
+**If you get this wrong, revise:** [Skew Lines](#62-skew-lines) — Section 6.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 Given $\mathbf{a} = 2\mathbf{i} + \mathbf{j}$ and $\mathbf{b} = \mathbf{i} - 3\mathbf{j}$, find the vector projection of $\mathbf{b}$ onto $\mathbf{a}$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 The projection of $\mathbf{b}$ onto $\mathbf{a}$ is $\text{proj}_{\mathbf{a}}\mathbf{b} = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^2}\,\mathbf{a}$.
 
 $\mathbf{a}\cdot\mathbf{b} = 2-3 = -1$. $|\mathbf{a}|^2 = 4+1 = 5$.
 
 $$\text{proj}_{\mathbf{a}}\mathbf{b} = \frac{-1}{5}(2\mathbf{i}+\mathbf{j}) = -\frac{2}{5}\mathbf{i} - \frac{1}{5}\mathbf{j}$$
 
-<b>If you get this wrong, revise:</b> [Geometric Interpretation](#42-geometric-interpretation) — Section 4.2.
+**If you get this wrong, revise:** [Geometric Interpretation](#42-geometric-interpretation) — Section 4.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 11</summary><p>
+<details><summary>Problem 11</summary><div>
 Find the angle between the line $\mathbf{r} = \begin{pmatrix}1\\2\\-1\end{pmatrix} + t\begin{pmatrix}3\\-1\\2\end{pmatrix}$ and the plane $2x - y + z = 5$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 11</summary><p>
+<details><summary>Solution 11</summary><div>
 The normal to the plane is $\mathbf{n} = \begin{pmatrix}2\\-1\\1\end{pmatrix}$, and the direction of the line is $\mathbf{d} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.
 
 The angle between the line and the plane equals $90°$ minus the angle between $\mathbf{d}$ and $\mathbf{n}$.
@@ -381,6 +381,6 @@ Angle between line and normal: $\phi = \arccos\!\left(\dfrac{9}{2\sqrt{21}}\righ
 
 Angle between line and plane: $90° - \phi$.
 
-<b>If you get this wrong, revise:</b> [Angle Between Two Vectors](#7-angle-between-two-vectors) — Section 7.
+**If you get this wrong, revise:** [Angle Between Two Vectors](#7-angle-between-two-vectors) — Section 7.
 
-</p></details>
+</div></details>

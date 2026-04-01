@@ -302,7 +302,7 @@ Resolved into:
 | 1       | Alice        | London       | Pen     | 5        | 2            |
 | 2       | Bob          | Paris        | Book    | 1        | 15           |
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Step 1 — 1NF:** All values are already atomic. But the table has repeating groups (OrderID 1 has two product rows). This is actually already in 1NF since each cell has a single value.
 
@@ -328,11 +328,11 @@ Resolved into:
 
 All four relations are in 3NF. ✓
 
-</p></details>
+</div></details>
 
 **Problem 2.** Write an SQL query to find the student with the highest average score across all subjects.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```sql
 SELECT student_id, AVG(score) as avg_score
@@ -353,11 +353,11 @@ ORDER BY avg_score DESC
 LIMIT 1;
 ```
 
-</p></details>
+</div></details>
 
 **Problem 3.** Explain the difference between WHERE and HAVING in SQL.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Clause | Applied to      | Timing          | Filters                  |
 | ------ | --------------- | --------------- | ------------------------ |
@@ -376,11 +376,11 @@ GROUP BY department
 HAVING COUNT(*) > 5        -- Filter groups
 ```
 
-</p></details>
+</div></details>
 
 **Problem 4.** Prove that every BCNF relation is in 3NF.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Proof.** Recall:
 
@@ -393,11 +393,11 @@ If a relation is in BCNF, then for every $A \to B$, $A$ is a superkey. This triv
 
 **Counterexample showing 3NF ⊄ BCNF:** See the (student, course, teacher) example in Section 3.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Write an SQL query using a correlated subquery to find all employees who earn more than the average salary of their department.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```sql
 SELECT name, department, salary
@@ -411,11 +411,11 @@ WHERE salary > (
 
 For each employee, the subquery computes the average salary of that employee's department. If the employee's salary exceeds this average, the row is included.
 
-</p></details>
+</div></details>
 
 **Problem 6.** Explain how a deadlock can occur in a database with multiple concurrent transactions. How do databases typically resolve deadlocks?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Deadlock scenario:** Two transactions each hold a lock on a resource that the other needs.
 
@@ -439,7 +439,7 @@ For each employee, the subquery computes the average salary of that employee's d
 
 Most databases use timeout-based detection or prevention (ordering locks to prevent circular wait).
 
-</p></details>
+</div></details>
 
 **Problem 7.** Given the following schema, write a query to find all students who have taken ALL courses offered by the CS department.
 
@@ -449,7 +449,7 @@ Courses(course_id, title, department)
 Grades(student_id, course_id, score)
 ```
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 This is a **relational division** problem.
 
@@ -471,13 +471,13 @@ WHERE NOT EXISTS (
 
 Logic: Find students for whom there does NOT EXIST a CS course that they have NOT taken. (Double negation = they have taken all CS courses.)
 
-</p></details>
+</div></details>
 
 **Problem 8.** Explain why the following relation is not in BCNF and decompose it.
 
 R(A, B, C) with functional dependencies: AB → C, C → B
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Keys:** AB is a candidate key (AB → ABC). AC is also a candidate key (AC → C → B, so AC → ABC).
 

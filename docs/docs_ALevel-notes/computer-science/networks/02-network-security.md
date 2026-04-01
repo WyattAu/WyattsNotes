@@ -213,7 +213,7 @@ A **firewall** is a network security system that monitors and controls incoming 
 
 **Problem 1.** Given RSA parameters $p = 5$, $q = 11$, $e = 3$, encrypt the message $M = 7$ and then decrypt it. Show all steps.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $n = p \times q = 5 \times 11 = 55$
 
@@ -239,11 +239,11 @@ $9 \times 13 = 117 \bmod 55 = 117 - 2 \times 55 = 7$ ✓
 
 Decrypted message: 7. ✓
 
-</p></details>
+</div></details>
 
 **Problem 2.** Explain why symmetric encryption is faster than asymmetric encryption.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Symmetric encryption (e.g., AES) uses simple operations: substitution boxes (S-boxes), bit permutations, and XOR — all of which are fast hardware operations. AES-128 requires only 10 rounds of these operations.
 
@@ -251,11 +251,11 @@ Asymmetric encryption (e.g., RSA) relies on computationally expensive mathematic
 
 Typical performance: AES processes ~1 GB/s on modern hardware. RSA-2048 processes ~1,000 operations/second. AES is roughly 1000× faster.
 
-</p></details>
+</div></details>
 
 **Problem 3.** A user's password is stored as `SHA-256("password123") = ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f`. Explain why this is insecure and how to improve it.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Problems:**
 
@@ -271,11 +271,11 @@ Typical performance: AES processes ~1 GB/s on modern hardware. RSA-2048 processe
 
 Example secure storage: `argon2id(salt="random_16_bytes", password, iterations=3, memory=64MB)`
 
-</p></details>
+</div></details>
 
 **Problem 4.** Explain how a man-in-the-middle attack works and how HTTPS prevents it.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **MITM attack:**
 
@@ -298,11 +298,11 @@ Even if the attacker intercepts the traffic, they cannot:
 - Forge a valid certificate (they don't have the CA's private key)
 - Modify the data without detection (TLS includes integrity checks)
 
-</p></details>
+</div></details>
 
 **Problem 5.** Explain the difference between a virus, a worm, and a Trojan.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 | Malware | Reproduction                 | Needs host                   | User action required     | Purpose              |
 | ------- | ---------------------------- | ---------------------------- | ------------------------ | -------------------- |
@@ -316,11 +316,11 @@ Even if the attacker intercepts the traffic, they cannot:
 
 **Trojan:** Malware disguised as legitimate software. Does not replicate. Creates backdoors for attackers. Named after the Trojan Horse of Greek mythology.
 
-</p></details>
+</div></details>
 
 **Problem 6.** Explain the role of a Certificate Authority (CA) in public-key cryptography.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 A **Certificate Authority (CA)** is a trusted entity that issues **digital certificates** binding a public key to an identity (domain name, organisation, person).
 
@@ -334,11 +334,11 @@ A **Certificate Authority (CA)** is a trusted entity that issues **digital certi
 
 **Why important:** Without CAs, an attacker could create a certificate for any domain, and browsers would have no way to distinguish legitimate certificates from fraudulent ones. CAs provide the trust infrastructure that makes HTTPS work.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Compute the SHA-256 hash of the empty string `""`. Then compute the SHA-256 hash of `"a"`. What does this demonstrate about hash functions?
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 SHA-256("") = `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
 
@@ -350,11 +350,11 @@ This demonstrates:
 2. **Avalanche effect:** Changing a single character ("a" vs "") produces a completely different hash — no similarity between the two outputs
 3. **Fixed output size:** Both hashes are 256 bits (64 hex characters), regardless of input length
 
-</p></details>
+</div></details>
 
 **Problem 8.** Describe a SQL injection attack and explain how to prevent it.
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **SQL injection:** An attacker inserts malicious SQL code into an input field that is concatenated into a database query.
 
@@ -382,6 +382,6 @@ This always evaluates to true, granting access without valid credentials.
 3. **Least privilege:** Database accounts should have minimum necessary permissions
 4. **Stored procedures:** Pre-compiled SQL that accepts parameters safely
 
-</p></details>
+</div></details>
 
 For revision on network fundamentals, see [Network Fundamentals](/docs/docs_ALevel-notes/computer-science/networks/01-network-fundamentals).

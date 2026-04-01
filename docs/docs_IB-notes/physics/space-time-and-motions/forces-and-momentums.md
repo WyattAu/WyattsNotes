@@ -178,7 +178,7 @@ $$
 
 <details>
 <summary><strong>A.1 Kinematics & A.2 Forces and Momentum</strong></summary>
-<p>
+<div>
 
 1. **Question:** A 1500 kg car is traveling on a horizontal road at a constant speed of 25.0 m/s. The total resistive force (air drag + friction) is 800 N. The car then begins to accelerate uniformly for 10.0 s, reaching a new constant speed. During the acceleration, the engine provides a constant driving force of 2000 N.
 a) Calculate the car's acceleration.
@@ -187,7 +187,7 @@ c) At this new speed, what must the engine's driving force be to maintain it?
 d) What is the total distance covered during the 10.0 s of acceleration?
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **Strategy:** Apply Newton's Second Law during acceleration and the definition of constant velocity (net force is zero) for the other parts. Use kinematics for the distance.
 - **a) Acceleration:** During acceleration, the net force is $F_{\text{net}} = F_{\text{drive}} - F_{\text{resistive}}$.
@@ -200,10 +200,10 @@ d) What is the total distance covered during the 10.0 s of acceleration?
   - Therefore, $F_{\text{drive}} = F_{\text{resistive}} = 800 \text{ N}$. (This assumes resistive force is constant, a simplification.)
 - **d) Distance:** Use the kinematic equation $s = ut + \frac{1}{2}at^2$.
   - $s = (25.0 \text{ m/s})(10.0 \text{ s}) + \frac{1}{2}(0.800 \text{ m/s}^2)(10.0 \text{ s})^2 = 250 + 0.4(100) = 290 \text{ m}$.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> Applying Newton's First Law ($F_{\text{net}}=0$ for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly linking the resulting acceleration to kinematic equations.
-  </p>
+  </div>
+  <div>
+  **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$ for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly linking the resulting acceleration to kinematic equations.
+  </div>
   </details>
 
 2. **Question:** A 2.0 kg firework is launched vertically from rest. Its rocket motor provides a constant upward thrust of 50.0 N for 3.0 s before running out of fuel. Ignore air resistance.
@@ -211,7 +211,7 @@ a) Calculate the maximum height the firework reaches.
 b) What is the total time the firework is in the air (from launch until it returns to the ground)?
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **Strategy:** This is a two-stage motion problem. Stage 1 (powered ascent) has a net upward force. Stage 2 (coasting ascent and descent) has only gravity acting on it.
 - **Stage 1: Powered Ascent (first 3.0 s)**
@@ -225,10 +225,10 @@ b) What is the total time the firework is in the air (from launch until it retur
     - $0^2 = (45.6)^2 + 2(-9.8)h_2 \implies h_2 = \frac{45.6^2}{19.6} = 106.0 \text{ m}$.
     - Total max height: $H = h_1 + h_2 = 68.4 + 106.0 = 174.4 \text{ m}$.
   - **b) Total Time in Air:** We need the time for Stage 2. - Time to coast to peak ($t_{\text{up}}$): $v = u + at \implies 0 = 45.6 - 9.8 t_{\text{up}} \implies t_{\text{up}} = 4.65 \text{ s}$. - Time to fall from peak ($t_{\text{down}}$): $s = \frac{1}{2}at^2 \implies 174.4 = \frac{1}{2}(9.8) t_{\text{down}}^2 \implies t_{\text{down}} = 5.97 \text{ s}$. - Total time: $T = t_1 + t_{\text{up}} + t_{\text{down}} = 3.0 + 4.65 + 5.97 = 13.6 \text{ s}$.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> Breaking multi-stage motion problems into separate parts, calculating net force correctly in each stage, and using the final conditions of one stage as the initial conditions for the next.
-  </p>
+  </div>
+  <div>
+  **If you get this wrong, you should focus on:** Breaking multi-stage motion problems into separate parts, calculating net force correctly in each stage, and using the final conditions of one stage as the initial conditions for the next.
+  </div>
   </details>
 
 3. **Question:** A 5.0 kg object is suspended by a rope. A horizontal force is applied, pulling the object to the side until the rope makes an angle of 35° with the vertical. The object is held in static equilibrium.
@@ -236,7 +236,7 @@ a) Draw a free-body diagram for the object.
 b) Calculate the magnitude of the applied horizontal force and the tension in the rope.
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **a) Free-Body Diagram:** The diagram should show three forces acting on the object:
   1. Weight ($F_g = mg$) acting vertically downwards.
@@ -250,10 +250,10 @@ b) Calculate the magnitude of the applied horizontal force and the tension in th
     - $T_y - mg = 0 \implies T \cos(35^\circ) = (5.0 \text{ kg})(9.8 \text{ m/s}^2) = 49 \text{ N}$.
     - $T = \frac{49}{\cos(35^\circ)} = 59.8 \text{ N}$.
   - **Horizontal Equilibrium ($\Sigma F_x = 0$):** - $F_a - T_x = 0 \implies F_a = T \sin(35^\circ)$. - $F_a = (59.8 \text{ N}) \sin(35^\circ) = 34.3 \text{ N}$.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors into components using trigonometry, and setting up and solving simultaneous equations for the vertical and horizontal forces.
-  </p>
+  </div>
+  <div>
+  **If you get this wrong, you should focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors into components using trigonometry, and setting up and solving simultaneous equations for the vertical and horizontal forces.
+  </div>
   </details>
 
 4. **Question:** A 0.20 kg ball traveling at 10 m/s collides with a stationary 0.30 kg ball. After the collision, the 0.20 kg ball moves at 4.0 m/s at an angle of 30° to its original path.
@@ -261,7 +261,7 @@ a) Determine the speed and direction of the 0.30 kg ball after the collision.
 b) Was the collision elastic? Justify your answer with a calculation.
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **Strategy:** This is a 2D collision. Apply conservation of momentum separately for the components parallel and perpendicular to the initial direction. Then compare kinetic energy before and after.
 - Let the initial direction be the x-axis. Initial momentum is all in x: $p_i = (0.20)(10) = 2.0$ kg m/s.
@@ -277,10 +277,10 @@ b) Was the collision elastic? Justify your answer with a calculation.
   - $E_{k, \text{initial}} = \frac{1}{2}(0.20)(10)^2 = 10.0$ J.
   - $E_{k, \text{final}} = \frac{1}{2}(0.20)(4.0)^2 + \frac{1}{2}(0.30)(4.56)^2 = 1.6 + 3.12 = 4.72$ J.
   - Since $E_{k, \text{final}} < E_{k, \text{initial}}$, kinetic energy was lost, and the collision was **inelastic**.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> Applying conservation of momentum as a vector equation (i.e., in component form), combining velocity components to find final speed and direction, and the definition of an elastic collision (conservation of kinetic energy).
-  </p>
+  </div>
+  <div>
+  **If you get this wrong, you should focus on:** Applying conservation of momentum as a vector equation (i.e., in component form), combining velocity components to find final speed and direction, and the definition of an elastic collision (conservation of kinetic energy).
+  </div>
   </details>
 
 5. **Question:** A 1200 kg car travels at a constant speed of 15 m/s around a flat circular track of radius 50 m. It then moves to a section of the track banked at an angle $\theta$.
@@ -288,7 +288,7 @@ a) For the flat track, what is the magnitude of the frictional force required to
 b) For the banked track, what is the ideal banking angle $\theta$ (the "design speed" angle) for the car to navigate the turn at 15 m/s without any reliance on friction?
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **Strategy:** In both cases, a net horizontal force must provide the centripetal force. On the flat track, this is friction. On the ideal banked track, this is the horizontal component of the normal force.
 - **a) Flat Track:**
@@ -306,10 +306,10 @@ b) For the banked track, what is the ideal banking angle $\theta$ (the "design s
     - $\frac{N \sin\theta}{N \cos\theta} = \frac{mv^2/r}{mg} \implies \tan\theta = \frac{v^2}{rg}$.
   - $\tan\theta = \frac{15^2}{50 \cdot 9.8} = 0.459$.
   - $\theta = \arctan(0.459) = 24.7^\circ$.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> Identifying the source of the centripetal force in different situations (friction vs. component of normal force), correctly resolving forces on an inclined plane, and solving a system of force equations.
-  </p>
+  </div>
+  <div>
+  **If you get this wrong, you should focus on:** Identifying the source of the centripetal force in different situations (friction vs. component of normal force), correctly resolving forces on an inclined plane, and solving a system of force equations.
+  </div>
   </details>
 
 6. **Question (HL Only):** A thin hoop of mass M and radius R ($I=MR^2$) rolls without slipping down an incline of angle $\theta$.
@@ -318,7 +318,7 @@ b) By considering both linear and rotational dynamics, derive an expression for 
 c) How does this acceleration compare to that of a block sliding down the same incline without friction?
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **a) Free-Body Diagram:** The diagram should show:
   1. Weight ($Mg$) acting vertically down from the center.
@@ -333,10 +333,10 @@ c) How does this acceleration compare to that of a block sliding down the same i
     - $Mg \sin\theta - Ma = Ma \implies Mg \sin\theta = 2Ma$.
     - $a = \frac{1}{2}g \sin\theta$.
 - **c) Comparison:** A block sliding without friction has only the component of gravity accelerating it, so its acceleration is $a_{\text{block}} = g \sin\theta$. The hoop's acceleration is exactly half of this. This is because some of the initial potential energy must be converted into rotational kinetic energy, leaving less for translational kinetic energy, resulting in a smaller linear acceleration.
-</p>
-<p>
-<b>If you get this wrong, you should focus on:</b> Applying both linear and rotational forms of Newton's second law, correctly identifying static friction as the source of torque for rolling objects, and using the no-slip condition ($a=\alpha R$) to connect the two equations.
-</p>
+</div>
+<div>
+**If you get this wrong, you should focus on:** Applying both linear and rotational forms of Newton's second law, correctly identifying static friction as the source of torque for rolling objects, and using the no-slip condition ($a=\alpha R$) to connect the two equations.
+</div>
 </details>
 
 7. **Question (HL Only):** An ice skater is spinning at an angular speed of 10.0 rad/s with her arms outstretched. In this position, her moment of inertia is 4.0 kg m². She then pulls her arms in, reducing her moment of inertia to 1.5 kg m².
@@ -345,7 +345,7 @@ b) Calculate the change in her rotational kinetic energy.
 c) Where does this change in energy come from?
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **Strategy:** Apply conservation of angular momentum because there is no external torque. Then calculate the kinetic energy before and after.
 - **a) New Angular Speed:**
@@ -357,10 +357,10 @@ c) Where does this change in energy come from?
   - $E_{k, \text{final}} = \frac{1}{2}I_f \omega_f^2 = \frac{1}{2}(1.5)(26.7)^2 = 533$ J.
   - $\Delta E_k = E_{k, \text{final}} - E_{k, \text{initial}} = 533 - 200 = 333$ J.
 - **c) Source of Energy:** The kinetic energy increased. This increase comes from the **work done by the skater** using her muscles to pull her arms inward. She is doing work on her own system, which is not an isolated system in terms of energy (though it is for angular momentum, as the forces are internal).
-</p>
-<p>
-<b>If you get this wrong, you should focus on:</b> The law of conservation of angular momentum and when it applies (no net external torque). Also, understanding that rotational kinetic energy is *not* necessarily conserved when the moment of inertia changes, and that work must be done to change the configuration of a rotating system.
-</p>
+</div>
+<div>
+**If you get this wrong, you should focus on:** The law of conservation of angular momentum and when it applies (no net external torque). Also, understanding that rotational kinetic energy is *not* necessarily conserved when the moment of inertia changes, and that work must be done to change the configuration of a rotating system.
+</div>
 </details>
 
 8. **Question (HL Only):** From the perspective of an observer in a laboratory, a muon is created by a cosmic ray at an altitude of 10.0 km. It travels downwards at a speed of 0.995c. The proper half-life of a muon at rest is 1.56 μs.
@@ -369,7 +369,7 @@ b) Will the muon reach the ground before decaying, according to the lab observer
 c) Now, analyze the situation from the muon's reference frame. How does the muon "explain" its ability to reach the ground?
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 - **Strategy:** Use time dilation for the lab frame analysis and length contraction for the muon's frame analysis.
 - **a) Dilated Half-Life (Lab Frame):**
@@ -385,11 +385,11 @@ c) Now, analyze the situation from the muon's reference frame. How does the muon
   - Contracted distance: $L = \frac{L_0}{\gamma} = \frac{10.0 \text{ km}}{10.01} = 0.999$ km or 999 m.
   - Time to travel this contracted distance: $t' = \frac{L}{v} = \frac{999 \text{ m}}{0.995 \times 3.0 \times 10^8 \text{ m/s}} = 3.35 \times 10^{-6}$ s = 3.35 μs.
   - From the muon's perspective, it only needs to survive for 3.35 μs to reach the ground. Since this is longer than its proper half-life of 1.56 μs, it has a chance to make it. Both frames agree on the outcome.
-  </p>
-  <p>
-  <b>If you get this wrong, you should focus on:</b> The two key consequences of special relativity. For a stationary observer watching a moving object, time dilates (clocks run slow). For a moving observer, distances in the direction of motion contract (are shorter). Both phenomena must lead to the same physical conclusion.
-  </p>
-  </details>
+  </div>
+  <div>
+  **If you get this wrong, you should focus on:** The two key consequences of special relativity. For a stationary observer watching a moving object, time dilates (clocks run slow). For a moving observer, distances in the direction of motion contract (are shorter). Both phenomena must lead to the same physical conclusion.
+  </div>
+   </details>
 
-</p>
+</div>
 </details>

@@ -197,78 +197,78 @@ If $X \sim \text{Po}(\lambda)$ and $Y \sim \text{Po}(\mu)$ are independent, then
 
 ## Problem Set
 
-<details><summary>Problem 1</summary><p>
+<details><summary>Problem 1</summary><div>
 $X \sim B(10, 0.3)$. Find $P(X = 4)$, $P(X \leq 3)$, and $P(X \geq 7)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 1</summary><p>
+<details><summary>Solution 1</summary><div>
 $P(X=4) = \binom{10}{4}(0.3)^4(0.7)^6 = 210 \times 0.0081 \times 0.1176 \approx 0.2001$.
 
 $P(X \leq 3) = P(X=0)+P(X=1)+P(X=2)+P(X=3) \approx 0.0282 + 0.1211 + 0.2335 + 0.2668 \approx 0.6496$.
 
 $P(X \geq 7) = P(X=7)+P(X=8)+P(X=9)+P(X=10) \approx 0.0090 + 0.0014 + 0.0001 + 0.0000 \approx 0.0106$.
 
-<b>If you get this wrong, revise:</b> [The Binomial Distribution](#2-the-binomial-distribution) — Section 2.
+**If you get this wrong, revise:** [The Binomial Distribution](#2-the-binomial-distribution) — Section 2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 2</summary><p>
+<details><summary>Problem 2</summary><div>
 Heights of men are normally distributed with mean 175 cm and standard deviation 8 cm. Find the probability that a randomly chosen man is taller than 185 cm.
-</p></details>
+</div></details>
 
-<details><summary>Solution 2</summary><p>
+<details><summary>Solution 2</summary><div>
 $X \sim N(175, 64)$. $P(X > 185) = P\!\left(Z > \dfrac{185-175}{8}\right) = P(Z > 1.25) = 1 - \Phi(1.25) \approx 1 - 0.8944 = 0.1056$.
 
-<b>If you get this wrong, revise:</b> [The Normal Distribution](#3-the-normal-distribution) — Section 3.
+**If you get this wrong, revise:** [The Normal Distribution](#3-the-normal-distribution) — Section 3.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 3</summary><p>
+<details><summary>Problem 3</summary><div>
 A call centre receives an average of 4.5 calls per minute. Find the probability of receiving exactly 6 calls in a given minute, and the probability of receiving more than 8 calls.
-</p></details>
+</div></details>
 
-<details><summary>Solution 3</summary><p>
+<details><summary>Solution 3</summary><div>
 $X \sim \text{Po}(4.5)$.
 
 $P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{0.01111 \times 8303.77}{720} \approx 0.1281$.
 
 $P(X > 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} \approx 1 - 0.9804 = 0.0196$.
 
-<b>If you get this wrong, revise:</b> [The Poisson Distribution](#4-the-poisson-distribution) — Section 4.
+**If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 4</summary><p>
+<details><summary>Problem 4</summary><div>
 $X \sim B(100, 0.04)$. Use the Poisson approximation to find $P(X \leq 2)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 4</summary><p>
+<details><summary>Solution 4</summary><div>
 $\lambda = np = 4$. $X \approx \text{Po}(4)$.
 
 $P(X \leq 2) = e^{-4}\left(1 + 4 + \dfrac{16}{2}\right) = e^{-4}(1 + 4 + 8) = 13e^{-4} \approx 0.2381$.
 
-<b>If you get this wrong, revise:</b> [Derivation as a Limit](#42-derivation-as-a-limit-of-the-binomial) — Section 4.2.
+**If you get this wrong, revise:** [Derivation as a Limit](#42-derivation-as-a-limit-of-the-binomial) — Section 4.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 5</summary><p>
+<details><summary>Problem 5</summary><div>
 Find $c$ such that $P(-c < Z < c) = 0.95$ where $Z \sim N(0,1)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 5</summary><p>
+<details><summary>Solution 5</summary><div>
 $P(-c < Z < c) = 2\Phi(c) - 1 = 0.95 \implies \Phi(c) = 0.975$.
 
 From tables: $c \approx 1.96$.
 
-<b>If you get this wrong, revise:</b> [Standard Normal](#34-standard-normal) — Section 3.4.
+**If you get this wrong, revise:** [Standard Normal](#34-standard-normal) — Section 3.4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 6</summary><p>
+<details><summary>Problem 6</summary><div>
 The number of emails received per hour follows $\text{Po}(12)$. Find the probability of receiving between 10 and 15 emails (inclusive) in a given hour.
-</p></details>
+</div></details>
 
-<details><summary>Solution 6</summary><p>
+<details><summary>Solution 6</summary><div>
 $X \sim \text{Po}(12)$.
 
 $P(10 \leq X \leq 15) = P(X \leq 15) - P(X \leq 9)$.
@@ -277,15 +277,15 @@ $P(X \leq 15) \approx 0.7728$, $P(X \leq 9) \approx 0.2424$.
 
 $P(10 \leq X \leq 15) \approx 0.7728 - 0.2424 = 0.5304$.
 
-<b>If you get this wrong, revise:</b> [The Poisson Distribution](#4-the-poisson-distribution) — Section 4.
+**If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) — Section 4.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 7</summary><p>
+<details><summary>Problem 7</summary><div>
 A machine produces bolts with lengths $X \sim N(50, 0.04)$ cm. Bolts with length less than 49.7 cm or greater than 50.3 cm are rejected. Find the proportion of bolts rejected.
-</p></details>
+</div></details>
 
-<details><summary>Solution 7</summary><p>
+<details><summary>Solution 7</summary><div>
 $\sigma = \sqrt{0.04} = 0.2$.
 
 $P(X < 49.7) = P(Z < (49.7-50)/0.2) = P(Z < -1.5) = 0.0668$.
@@ -294,47 +294,47 @@ $P(X > 50.3) = P(Z > 1.5) = 0.0668$.
 
 Proportion rejected $= 0.0668 + 0.0668 = 0.1336$ (13.36%).
 
-<b>If you get this wrong, revise:</b> [Finding Probabilities](#35-finding-probabilities) — Section 3.5.
+**If you get this wrong, revise:** [Finding Probabilities](#35-finding-probabilities) — Section 3.5.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 8</summary><p>
+<details><summary>Problem 8</summary><div>
 Prove that $E(aX + b) = aE(X) + b$ and $\text{Var}(aX + b) = a^2\text{Var}(X)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 8</summary><p>
+<details><summary>Solution 8</summary><div>
 $E(aX+b) = \sum(a x_i + b)p_i = a\sum x_i p_i + b\sum p_i = aE(X) + b$. ✓
 
 $\text{Var}(aX+b) = E[(aX+b)^2] - [E(aX+b)]^2 = E[a^2X^2 + 2abX + b^2] - [aE(X)+b]^2$
 $= a^2E(X^2) + 2abE(X) + b^2 - a^2[E(X)]^2 - 2abE(X) - b^2$
 $= a^2[E(X^2) - (E(X))^2] = a^2\text{Var}(X)$. ✓
 
-<b>If you get this wrong, revise:</b> [Expectation and Variance](#12-expectation-and-variance) — Section 1.2.
+**If you get this wrong, revise:** [Expectation and Variance](#12-expectation-and-variance) — Section 1.2.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 9</summary><p>
+<details><summary>Problem 9</summary><div>
 $X \sim B(200, 0.15)$. Use the normal approximation with continuity correction to approximate $P(X > 35)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 9</summary><p>
+<details><summary>Solution 9</summary><div>
 $\mu = 200(0.15) = 30$, $\sigma^2 = 200(0.15)(0.85) = 25.5$, $\sigma \approx 5.05$.
 
 $P(X > 35) \approx P\!\left(Z > \dfrac{35.5 - 30}{5.05}\right) = P(Z > 1.089) \approx 1 - 0.8621 = 0.1379$.
 
-<b>If you get this wrong, revise:</b> [Normal Approximation to Binomial](#36-normal-approximation-to-binomial) — Section 3.6.
+**If you get this wrong, revise:** [Normal Approximation to Binomial](#36-normal-approximation-to-binomial) — Section 3.6.
 
-</p></details>
+</div></details>
 
-<details><summary>Problem 10</summary><p>
+<details><summary>Problem 10</summary><div>
 If $X \sim \text{Po}(3)$ and $Y \sim \text{Po}(5)$ are independent, find $P(X + Y = 6)$.
-</p></details>
+</div></details>
 
-<details><summary>Solution 10</summary><p>
+<details><summary>Solution 10</summary><div>
 By additivity: $X + Y \sim \text{Po}(3+5) = \text{Po}(8)$.
 
 $P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac{e^{-8} \times 262144}{720} \approx \dfrac{0.000335 \times 262144}{720} \approx 0.1221$.
 
-<b>If you get this wrong, revise:</b> [Additivity](#45-additivity) — Section 4.5.
+**If you get this wrong, revise:** [Additivity](#45-additivity) — Section 4.5.
 
-</p></details>
+</div></details>

@@ -80,7 +80,7 @@ Note: the implicit bit is now **0** (not 1), and the exponent is fixed at $-126$
 
 $$0.000\ldots001 \times 2^{-126} = 2^{-23} \times 2^{-126} = 2^{-149} \approx 1.4 \times 10^{-45}$$
 
-<details><summary>Example: Decode IEEE 754 single-precision 0x41280000</summary><p>
+<details><summary>Example: Decode IEEE 754 single-precision 0x41280000</summary><div>
 
 Hex: $41280000_{16}$
 
@@ -96,9 +96,9 @@ $1.0101_2 = 1 + 0.25 + 0.0625 = 1.3125$
 
 $1.3125 \times 8 = 10.5$
 
-</p></details>
+</div></details>
 
-<details><summary>Example: Encode $-6.5$ in IEEE 754 single precision</summary><p>
+<details><summary>Example: Encode $-6.5$ in IEEE 754 single precision</summary><div>
 
 $6.5_{10} = 110.1_2 = 1.101 \times 2^2$
 
@@ -114,7 +114,7 @@ Hex: `C14A0000` (splitting: `1100 0000 1101 0100 0000 0000 0000 0000` — wait, 
 = `11000000 11010000 00000000 00000000`
 = `C0 D0 00 00`
 
-</p></details>
+</div></details>
 
 ---
 
@@ -131,7 +131,7 @@ $$\pm 1.xxxxxx \times 2^e$$
 3. Count the shifts to determine the exponent
 4. Express in the form $1.M \times 2^e$
 
-<details><summary>Example: Normalise $0.00101_2$</summary><p>
+<details><summary>Example: Normalise $0.00101_2$</summary><div>
 
 Shift binary point right 3 positions: $1.01 \times 2^{-3}$
 
@@ -139,7 +139,7 @@ The normalised form is $1.01 \times 2^{-3}$.
 
 In IEEE 754: $e = -3$, $E = -3 + 127 = 124 = 01111100_2$.
 
-</p></details>
+</div></details>
 
 ---
 
@@ -208,7 +208,7 @@ Note: CIE uses an **explicit** leading 0 (not the hidden 1 of IEEE 754).
 - Largest: $-1.111_2 \times 2^7 = -1.875 \times 128 = -240$
 - Smallest positive: $+0.001_2 \times 2^0 = +0.125$
 
-<details><summary>Example: Decode CIE 8-bit `0 1010 110`</summary><p>
+<details><summary>Example: Decode CIE 8-bit `0 1010 110`</summary><div>
 
 $S = 0$ (positive)
 $E = 1010_2 = 10$, $e = 10 - 8 = 2$
@@ -216,9 +216,9 @@ $M = 110$
 
 Value: $+0.110_2 \times 2^2 = 0.75 \times 4 = 3.0_{10}$
 
-</p></details>
+</div></details>
 
-<details><summary>Example: Encode $-5.5$ in CIE 8-bit format</summary><p>
+<details><summary>Example: Encode $-5.5$ in CIE 8-bit format</summary><div>
 
 $5.5 = 101.1_2 = 0.1011 \times 2^3$
 
@@ -228,7 +228,7 @@ $M = 101$ (truncate to 3 bits)
 
 Result: `1 1011 101`
 
-</p></details>
+</div></details>
 
 ---
 
@@ -250,9 +250,9 @@ Result: `1 1011 101`
 
 **Problem 1.** Convert $-14.25$ to IEEE 754 single precision. Give your answer in binary and hexadecimal.
 
-<details><summary>Hint</summary><p>Convert to binary, normalise, determine sign, exponent (with bias 127), and mantissa.</p></details>
+<details><summary>Hint</summary><div>Convert to binary, normalise, determine sign, exponent (with bias 127), and mantissa.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $14.25_{10} = 1110.01_2 = 1.11001 \times 2^3$
 
@@ -262,13 +262,13 @@ Binary: `1 10000010 11001000000000000000000`
 
 Hex: `C1640000`
 
-</p></details>
+</div></details>
 
 **Problem 2.** Decode the IEEE 754 single-precision value `BF800000` (hex).
 
-<details><summary>Hint</summary><p>Convert hex to binary, split into sign, exponent, mantissa fields.</p></details>
+<details><summary>Hint</summary><div>Convert hex to binary, split into sign, exponent, mantissa fields.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 `BF800000` = `10111111 10000000 00000000 00000000`
 
@@ -276,13 +276,13 @@ $S = 1$, $E = 01111111_2 = 127$, $e = 0$, $M = 000\ldots0$
 
 Value: $-1.0 \times 2^0 = -1.0$
 
-</p></details>
+</div></details>
 
 **Problem 3.** What is the IEEE 754 single-precision representation of zero? What about negative zero?
 
-<details><summary>Hint</summary><p>Check the special values table: $E = 0$, $M = 0$.</p></details>
+<details><summary>Hint</summary><div>Check the special values table: $E = 0$, $M = 0$.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $+0$: `0 00000000 00000000000000000000000` = `00000000`
 
@@ -290,13 +290,13 @@ $-0$: `1 00000000 00000000000000000000000` = `80000000`
 
 They compare equal in IEEE 754, but their sign bits differ.
 
-</p></details>
+</div></details>
 
 **Problem 4.** Encode $9.75$ in the CIE 8-bit floating-point format.
 
-<details><summary>Hint</summary><p>Convert to binary, express as $0.MMM \times 2^{e}$ with bias 8.</p></details>
+<details><summary>Hint</summary><div>Convert to binary, express as $0.MMM \times 2^{e}$ with bias 8.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $9.75 = 1001.11_2 = 0.100111 \times 2^4$
 
@@ -304,25 +304,25 @@ $S = 0$, $E = 4 + 8 = 12 = 1100_2$, $M = 100$ (truncate)
 
 Result: `0 1100 100`
 
-</p></details>
+</div></details>
 
 **Problem 5.** Prove that the decimal number $0.2_{10}$ has no finite binary representation.
 
-<details><summary>Hint</summary><p>Write $0.2$ as a fraction in lowest terms. Apply the same argument used for $0.1$.</p></details>
+<details><summary>Hint</summary><div>Write $0.2$ as a fraction in lowest terms. Apply the same argument used for $0.1$.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $0.2 = \frac{2}{10} = \frac{1}{5}$
 
 For a finite binary expansion, the denominator must divide a power of 2 when the fraction is in lowest terms. Since $5$ is prime and does not divide any power of $2$, $1/5$ has no finite binary representation. $\square$
 
-</p></details>
+</div></details>
 
 **Problem 6.** A system uses 12-bit floating-point: 1 sign bit, 5 exponent bits (excess-15), 6 mantissa bits. Calculate the range and approximate precision.
 
-<details><summary>Hint</summary><p>Follow the same pattern as IEEE 754 but with different field sizes.</p></details>
+<details><summary>Hint</summary><div>Follow the same pattern as IEEE 754 but with different field sizes.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Assuming hidden bit convention:
 
@@ -332,52 +332,52 @@ Assuming hidden bit convention:
 - Smallest normalised: $1.0 \times 2^{-14} \approx 6.1 \times 10^{-5}$
 - Precision: $6 + 1 = 7$ bits $\approx 2.1$ decimal digits
 
-</p></details>
+</div></details>
 
 **Problem 7.** Explain the difference between normalised and denormalised numbers in IEEE 754. Why would removing denormalised numbers be problematic?
 
-<details><summary>Hint</summary><p>Consider what happens as values approach zero without denormalised numbers.</p></details>
+<details><summary>Hint</summary><div>Consider what happens as values approach zero without denormalised numbers.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Normalised numbers use the implicit leading 1 and exponent range $[-126, 127]$. Denormalised numbers use implicit leading 0 and fixed exponent $-126$.
 
 Without denormalised numbers, there would be a sudden jump from the smallest normalised number ($\approx 1.18 \times 10^{-38}$) to zero. Any computation producing a result smaller than this threshold would "flush to zero," losing all precision. Denormalised numbers provide a gradual transition, maintaining relative precision longer.
 
-</p></details>
+</div></details>
 
 **Problem 8.** In IEEE 754 single precision, how many distinct normalised numbers are there? How many denormalised?
 
-<details><summary>Hint</summary><p>Count the combinations of sign, exponent, and mantissa for each category.</p></details>
+<details><summary>Hint</summary><div>Count the combinations of sign, exponent, and mantissa for each category.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Normalised: Exponent $E$ ranges from 1 to 254 (254 values). Mantissa $M$ has $2^{23}$ values. Sign has 2 values. Total: $2 \times 254 \times 2^{23} = 4,261,412,864$.
 
 Denormalised: $E = 0$, $M \neq 0$. Total: $2 \times (2^{23} - 1) = 16,777,214$.
 
-</p></details>
+</div></details>
 
 **Problem 9.** A programmer computes $a = 10000000.0$ and $b = 0.00000001$ in single-precision float, then computes $a + b - a$. Explain why the result might be $0$ rather than $b$.
 
-<details><summary>Hint</summary><p>Think about the precision of single-precision float relative to the magnitude of $a$.</p></details>
+<details><summary>Hint</summary><div>Think about the precision of single-precision float relative to the magnitude of $a$.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Single precision has approximately 7 decimal digits of precision. When $a = 10^7$, the smallest representable difference between consecutive floats near $a$ is approximately $a \times \epsilon \approx 10^7 \times 10^{-7} = 1$. Since $b = 10^{-8}$ is much smaller than the gap between representable numbers near $a$, $a + b$ rounds to $a$ itself. Then $a - a = 0$.
 
 This is an example of **cancellation error** combined with **limited precision**.
 
-</p></details>
+</div></details>
 
 **Problem 10.** Calculate the absolute and relative error when $1/3$ is stored as $0.333333$ (6 decimal places).
 
-<details><summary>Hint</summary><p>Use the formulas for absolute and relative error with $x = 1/3$ and $\tilde{x} = 0.333333$.</p></details>
+<details><summary>Hint</summary><div>Use the formulas for absolute and relative error with $x = 1/3$ and $\tilde{x} = 0.333333$.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Absolute error: $|1/3 - 0.333333| = |0.333333\ldots - 0.333333| = 0.000000\overline{3} \approx 3.33 \times 10^{-7}$
 
 Relative error: $\frac{3.33 \times 10^{-7}}{1/3} = 3.33 \times 10^{-7} \times 3 = 10^{-6} = 0.0001\%$
 
-</p></details>
+</div></details>

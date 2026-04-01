@@ -143,7 +143,7 @@ After execution, the cycle repeats from step 1.
 
 Each step involves register transfers and bus operations. A typical fetch takes 3–4 clock cycles (one per bus operation), decode takes 1–2 cycles, and execute takes 1–5 cycles depending on the instruction.
 
-<details><summary>Example: Trace the fetch-decode-execute cycle for ADD #5 (add immediate 5 to ACC)</summary><p>
+<details><summary>Example: Trace the fetch-decode-execute cycle for ADD #5 (add immediate 5 to ACC)</summary><div>
 
 **Assume:** PC = 0x1000, instruction at 0x1000 is `ADD #5` (opcode: 0010, operand: 00000101)
 
@@ -161,7 +161,7 @@ Each step involves register transfers and bus operations. A typical fetch takes 
    - ACC ← ACC + 5
    - Set flags in status register (zero, negative, carry, overflow)
 
-</p></details>
+</div></details>
 
 ---
 
@@ -356,9 +356,9 @@ All A Level boards require understanding of RISC vs CISC principles. ARM (used i
 
 **Problem 1.** A CPU has a 24-bit address bus and a 16-bit data bus. What is the maximum addressable memory?
 
-<details><summary>Hint</summary><p>Each address identifies one location, and each location holds one data bus width.</p></details>
+<details><summary>Hint</summary><div>Each address identifies one location, and each location holds one data bus width.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 $2^{24} = 16,777,216$ locations
 
@@ -366,38 +366,38 @@ Each location holds 16 bits = 2 bytes.
 
 Total addressable memory: $16,777,216 \times 2 = 33,554,432$ bytes = 32 MiB.
 
-</p></details>
+</div></details>
 
 **Problem 2.** Describe what happens during the fetch phase of the fetch-decode-execute cycle. Include all register transfers.
 
-<details><summary>Hint</summary><p>Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.</p></details>
+<details><summary>Hint</summary><div>Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 1. The contents of the Program Counter (PC) are copied to the Memory Address Register (MAR) via the address bus.
 2. The data stored at the memory address held in the MAR is copied to the Memory Data Register (MDR) via the data bus.
 3. The contents of the MDR are copied to the Current Instruction Register (CIR).
 4. The Program Counter is incremented by 1 (or by the instruction length, for variable-length ISAs) to point to the next instruction.
 
-</p></details>
+</div></details>
 
 **Problem 3.** Explain how temporal and spatial locality contribute to cache effectiveness.
 
-<details><summary>Hint</summary><p>Give concrete examples of code patterns that exhibit each type of locality.</p></details>
+<details><summary>Hint</summary><div>Give concrete examples of code patterns that exhibit each type of locality.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **Temporal locality:** In a loop that processes an array, the loop counter variable is accessed repeatedly. After the first access loads it into cache, subsequent accesses hit the cache. Similarly, the instruction bytes of the loop body are fetched from cache after the first iteration.
 
 **Spatial locality:** When accessing `array[i]`, the cache loads a block (cache line) containing `array[i]` and several adjacent elements. Subsequent accesses to `array[i+1]`, `array[i+2]`, etc., are cache hits because they are in the same cache line.
 
-</p></details>
+</div></details>
 
 **Problem 4.** A system uses 32-bit virtual addresses with 4 KiB pages. How many entries are in the page table? What is the size of each entry if physical addresses are 36 bits?
 
-<details><summary>Hint</summary><p>Number of virtual pages = $2^{32}/4096$. Each PTE stores a frame number and flags.</p></details>
+<details><summary>Hint</summary><div>Number of virtual pages = $2^{32}/4096$. Each PTE stores a frame number and flags.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Number of pages: $2^{32}/2^{12} = 2^{20} = 1,048,576$ entries
 
@@ -407,13 +407,13 @@ PTE size: 24 bits (frame number) + flags (typically 8–12 bits) ≈ 4 bytes per
 
 Total page table size: $1,048,576 \times 4 = 4$ MiB per process.
 
-</p></details>
+</div></details>
 
 **Problem 5.** Explain why a 5-stage pipeline (fetch, decode, execute, memory, writeback) processing 100 instructions takes 104 cycles, not 500.
 
-<details><summary>Hint</summary><p>After the pipeline fills, one instruction completes per cycle.</p></details>
+<details><summary>Hint</summary><div>After the pipeline fills, one instruction completes per cycle.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 The first instruction takes 5 cycles to pass through all stages (pipeline fill). After that, one instruction completes per cycle. The last instruction finishes at cycle $5 + 99 = 104$.
 
@@ -421,13 +421,13 @@ Total: $5 + (100 - 1) = 104$ cycles, compared to $100 \times 5 = 500$ without pi
 
 Speedup: $500/104 \approx 4.81\times$ (approaching the theoretical maximum of $5\times$).
 
-</p></details>
+</div></details>
 
 **Problem 6.** Give an example of a data hazard in a pipeline and explain how forwarding can resolve it.
 
-<details><summary>Hint</summary><p>Consider two consecutive instructions where the second uses the result of the first.</p></details>
+<details><summary>Hint</summary><div>Consider two consecutive instructions where the second uses the result of the first.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 ```
 ADD R1, R2, R3    // R1 ← R2 + R3
@@ -438,13 +438,13 @@ The ADD instruction produces R1 in the "writeback" stage, but the SUB instructio
 
 **Forwarding solution:** The result of ADD is available after the "execute" stage (as a computed value). Instead of waiting for writeback, the result is forwarded directly from the execute stage output to the decode stage input of SUB, eliminating the stall.
 
-</p></details>
+</div></details>
 
 **Problem 7.** Compare Von Neumann and Harvard architectures. Why is the modified Harvard architecture used in modern CPUs?
 
-<details><summary>Hint</summary><p>Consider bus contention and the practical need for unified main memory.</p></details>
+<details><summary>Hint</summary><div>Consider bus contention and the practical need for unified main memory.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Von Neumann uses a single memory and bus for both instructions and data, causing contention. Harvard uses separate memories and buses, allowing simultaneous instruction fetch and data access.
 
@@ -454,13 +454,13 @@ Modern CPUs use modified Harvard: L1 cache is split into instruction cache (I-ca
 2. Unified memory simplifies the memory management unit (MMU) design
 3. The cost of duplicate main memory buses is not justified given cache hit rates
 
-</p></details>
+</div></details>
 
 **Problem 8.** A direct-mapped cache has 64 lines, each holding 16 bytes. Main memory has 65,536 blocks. How many bits are needed for the tag, line number, and offset fields?
 
-<details><summary>Hint</summary><p>Offset = log₂(block size). Line = log₂(cache lines). Tag = remaining bits from block address.</p></details>
+<details><summary>Hint</summary><div>Offset = log₂(block size). Line = log₂(cache lines). Tag = remaining bits from block address.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Offset: $\log_2(16) = 4$ bits
 Line number: $\log_2(64) = 6$ bits
@@ -470,13 +470,13 @@ Tag: $16 - 6 = 10$ bits
 
 Each cache line stores: 16 bytes (data) + 10 bits (tag) + 1 bit (valid) + 1 bit (dirty) ≈ 18 bytes total.
 
-</p></details>
+</div></details>
 
 **Problem 9.** Explain the difference between a page fault and a TLB miss. Which is more expensive?
 
-<details><summary>Hint</summary><p>One involves disk I/O; the other involves a slower but still RAM-speed lookup.</p></details>
+<details><summary>Hint</summary><div>One involves disk I/O; the other involves a slower but still RAM-speed lookup.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 **TLB miss:** The virtual-to-physical translation is not in the TLB cache. The CPU must consult the page table in main memory (a few extra memory accesses). Cost: ~10–100 cycles.
 
@@ -484,13 +484,13 @@ Each cache line stores: 16 bytes (data) + 10 bits (tag) + 1 bit (valid) + 1 bit 
 
 A page fault is orders of magnitude more expensive than a TLB miss.
 
-</p></details>
+</div></details>
 
 **Problem 10.** A RISC processor has 32 registers, each 32 bits wide. How many bits are needed to encode a register operand? What is the maximum number of 3-operand instructions possible if the opcode field is 8 bits?
 
-<details><summary>Hint</summary><p>Register field size = log₂(32). Total instruction size = opcode + 3 register fields.</p></details>
+<details><summary>Hint</summary><div>Register field size = log₂(32). Total instruction size = opcode + 3 register fields.</div></details>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary><div>
 
 Register operand: $\log_2(32) = 5$ bits
 
@@ -498,4 +498,4 @@ Instruction format: 8 (opcode) + 5 + 5 + 5 = 23 bits
 
 With 8-bit opcode: $2^8 = 256$ possible opcodes.
 
-</p></details>
+</div></details>
