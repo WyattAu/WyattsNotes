@@ -255,6 +255,16 @@ Total size: 12 bytes (not 7).
 | Size         | Homogeneous              | Heterogeneous                 |
 | Use case     | Collections of same data | Grouping related attributes   |
 
+:::info Board-specific
+
+- **AQA** distinguishes between static arrays (fixed size, compile-time) and dynamic arrays (runtime
+  sizing)
+- **CIE (9618)** covers 1D and 2D arrays, records (fields accessed with dot notation), but does not
+  emphasise static vs dynamic distinction
+- **OCR (A)** requires understanding of arrays, records, and file operations (sequential and random
+  access files)
+- **Edexcel** covers arrays and records with pseudocode implementations :::
+
 ---
 
 ## 5. Bounds Checking

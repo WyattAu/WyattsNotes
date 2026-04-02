@@ -91,6 +91,15 @@ requirements.
 | Beta testing         | Testing by selected users at their own sites            |
 | User acceptance test | Formal testing to determine if requirements are met     |
 
+:::info Board-specific
+
+- **AQA** requires unit testing, integration testing, system testing, acceptance testing; requires
+  understanding of test data (normal, boundary, erroneous, extreme)
+- **CIE (9618)** covers testing strategies; requires test plans and test data design
+- **OCR (A)** requires unit, integration, system, and acceptance testing; may require traceability
+  between requirements and tests
+- **Edexcel** covers testing types and test data design :::
+
 ---
 
 ## 3. Black-Box Testing

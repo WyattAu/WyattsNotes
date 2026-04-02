@@ -12,6 +12,12 @@ sidebar_position: 6
 
 ## 1. International Trade: Comparative Advantage
 
+:::info Board-Specific Note **CIE (9708)** requires formal proof of comparative advantage using
+numerical examples and covers the Ricardian and Heckscher-Ohlin models. **AQA** focuses on the gains
+from trade and limitations of the comparative advantage model. **Edexcel** emphasises diagrammatic
+analysis of trade flows and the UK's trade relationships. **OCR (A)** covers trade theory alongside
+the impact of MNCs and requires evaluation of trade policies. :::
+
 ### 1.1 Absolute vs Comparative Advantage
 
 **Absolute advantage**: a country can produce more of a good with the same resources than another
@@ -147,6 +153,12 @@ benefit from lower prices. Conversely, an improvement caused by a fall in export
 declining competitiveness) may actually reflect economic weakness. :::
 
 ## 3. Exchange Rates
+
+:::info Board-Specific Note **AQA** requires understanding of fixed vs floating systems, the
+Marshall-Lerner condition, and J-curve effects. **CIE (9708)** covers exchange rate determination,
+purchasing power parity, and the effects of exchange rate changes on the balance of payments.
+**Edexcel** emphasises the UK context including Brexit impacts on trade and the pound. **OCR (A)**
+links exchange rates to macroeconomic policy objectives and requires evaluation of intervention. :::
 
 ### 3.1 Definition
 

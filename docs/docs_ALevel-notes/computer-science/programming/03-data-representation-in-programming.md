@@ -134,6 +134,13 @@ Strings are immutable for several reasons:
 3. **Hashing:** Immutable strings can be used as dictionary keys (hash is stable)
 4. **Interning:** Python can reuse identical string objects, saving memory
 
+:::info Board-specific **AQA** requires ASCII, Unicode (UTF-8, UTF-16), image representation
+(pixels, colour depth, resolution), sound sampling (sample rate, bit depth). **CIE (9618)** covers
+similar topics but may emphasise different aspects; requires understanding of file sizes and
+capacity calculations. **OCR (A)** requires character encoding, image representation, and sound
+representation with specific detail on compression (lossy vs lossless). **Edexcel** covers data
+representation fundamentals including number systems and character encoding. :::
+
 ---
 
 ## 4. File Handling

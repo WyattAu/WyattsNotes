@@ -250,6 +250,16 @@ it).
 | 3NF  | 2NF + no transitive dependencies                | Transitive dependencies |
 | BCNF | 3NF + every determinant is a candidate key      | Remaining anomalies     |
 
+:::info Board-specific
+
+- **AQA** requires SQL (SELECT, INSERT, UPDATE, DELETE, JOIN, GROUP BY), normalisation to 3NF, and
+  entity-relationship diagrams
+- **CIE (9618)** requires SQL queries, conceptual and logical data models, and normalisation to at
+  least 3NF
+- **OCR (A)** requires SQL, normalisation to BCNF (Boyce-Codd Normal Form — more advanced than other
+  boards), and ER diagrams
+- **Edexcel** covers SQL fundamentals and basic normalisation :::
+
 ---
 
 ## 4. ACID Properties

@@ -177,6 +177,11 @@ def binary_search_recursive(A, x, low, high):
         return binary_search_recursive(A, x, low, mid - 1)
 ```
 
+:::info Board-specific **AQA** requires linear search and binary search; binary search must be on
+sorted data and may require trace tables. **CIE (9618)** requires linear search and binary search
+with pseudocode. **OCR (A)** requires linear and binary search; may also cover hash-based searching.
+**Edexcel** covers linear and binary search algorithms. :::
+
 ---
 
 ## 3. Comparison of Search Algorithms

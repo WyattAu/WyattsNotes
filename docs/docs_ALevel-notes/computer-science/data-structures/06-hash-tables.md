@@ -264,6 +264,14 @@ per insertion: $O(1)$. $\square$
 | Delete            | $O(1)$          | Lazy deletion     | Lazy deletion    |
 | Load factor limit | No hard limit   | $\alpha \lt{} 1$  | $\alpha \lt{} 1$ |
 
+:::info Board-specific
+
+- **AQA** requires understanding of hash functions, collision resolution (linear probing, quadratic
+  probing, rehashing), and calculating hash table load factor
+- **CIE (9618)** covers hashing and collision handling; may use different terminology
+- **OCR (A)** requires hash tables with collision resolution using linear probing and rehashing
+- **Edexcel** covers hash tables and collision resolution methods :::
+
 ---
 
 ## Problem Set

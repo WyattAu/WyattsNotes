@@ -147,6 +147,12 @@ while True:
         break
 ```
 
+:::info Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
+and `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
+function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
+local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
+requires subroutines with parameters. :::
+
 ---
 
 ## 4. Recursion

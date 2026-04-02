@@ -207,6 +207,12 @@ program.
 
 This means: wherever a superclass object is expected, a subclass object should work correctly.
 
+:::info Board-specific **AQA** requires understanding of classes, objects, inheritance,
+polymorphism, encapsulation; uses pseudocode class definitions. **CIE (9618)** covers OOP
+principles; may require implementation in a specific language (Python/Pascal). **OCR (A)** requires
+class definitions with attributes and methods; constructor/destructor understanding. **Edexcel**
+covers OOP with pseudocode; emphasises encapsulation and data hiding. :::
+
 ---
 
 ## 5. Abstract Classes and Interfaces

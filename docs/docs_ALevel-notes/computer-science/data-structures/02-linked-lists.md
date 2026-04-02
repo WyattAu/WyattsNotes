@@ -213,6 +213,14 @@ def dll_delete(node):
 | Search by value              | $O(n)$ | $O(n)$ |
 | Access by index              | $O(n)$ | $O(n)$ |
 
+:::info Board-specific
+
+- **AQA** focuses on singly linked lists with pointer-based implementation (using `NULL` / `nil`
+  pointers)
+- **CIE (9618)** may require both singly and doubly linked lists
+- **OCR (A)** links linked lists to stack and queue implementations (dynamic data structures)
+- **Edexcel** covers basic singly linked list operations :::
+
 ---
 
 ## 4. Linked Lists vs Arrays

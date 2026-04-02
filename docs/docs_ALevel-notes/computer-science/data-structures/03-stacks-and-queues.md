@@ -183,6 +183,15 @@ class LinkedListQueue:
         return value
 ```
 
+:::info Board-specific
+
+- **AQA** requires both array-based and pointer-based (linked list) implementations
+- **CIE (9618)** requires understanding of stack and queue operations; may specify pointer-based
+  implementations
+- **OCR (A)** requires linear and circular queue implementations (array-based), plus linked list
+  implementations
+- **Edexcel** covers stack and queue ADTs with pseudocode :::
+
 ---
 
 ## 3. Applications of Stacks

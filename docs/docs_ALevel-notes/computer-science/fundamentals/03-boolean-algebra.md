@@ -286,6 +286,15 @@ $f = \bar{A}\bar{B} + \bar{B}C + AB$
 
 </details>
 
+:::info Board-specific
+
+- **AQA** requires Karnaugh maps for simplification of Boolean expressions up to 4 variables
+- **CIE (9618)** focuses on Boolean algebra identities, De Morgan's laws, and simplification using
+  algebraic methods (not Karnaugh maps)
+- **OCR (A)** requires truth tables, logic gate diagrams, and construction of half adder / full
+  adder circuits
+- **Edexcel** covers truth tables, logic gates, and Boolean algebra :::
+
 ---
 
 ## 4. Logic Gate Diagrams
