@@ -423,3 +423,392 @@ For revision on specific algorithm complexities, see
 [Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/searching-algorithms).
 
 </details>
+
+---
+
+## Problems
+
+**Problem 1.** Determine the Big-O time complexity of the following code fragment:
+
+```python
+for i in range(n):
+    for j in range(i):
+        print(i, j)
+```
+
+<details>
+<summary>Hint</summary>
+
+Count the total number of times the inner loop body executes. When i = 0, the inner loop runs 0
+times. When i = 1, it runs 1 time. When i = 2, it runs 2 times. Sum this series.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The inner loop runs `i` times for each value of `i` from 0 to n−1.
+
+Total iterations = $0 + 1 + 2 + \cdots + (n-1) = \frac{n(n-1)}{2} = \frac{n^2 - n}{2}$
+
+The dominant term is $\frac{n^2}{2}$, so the time complexity is $O(n^2)$.
+
+The $\frac{1}{2}$ constant and the $-n$ term are dropped because Big-O ignores constant factors and
+lower-order terms.
+
+</details>
+
+**Problem 2.** Determine the Big-O time complexity of the following code fragment:
+
+```python
+i = 1
+while i < n:
+    for j in range(n):
+        print(j)
+    i *= 2
+```
+
+<details>
+<summary>Hint</summary>
+
+The outer loop variable `i` doubles each iteration (1, 2, 4, 8, ...). How many times does the outer
+loop run? How many times does the inner loop run per outer iteration?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Outer loop:** `i` takes values 1, 2, 4, 8, ..., $2^k < n$. The number of iterations is
+$\lceil \log_2 n \rceil$.
+
+**Inner loop:** Runs `n` times per outer iteration.
+
+**Total:** $n \times \log_2 n = O(n \log n)$.
+
+</details>
+
+**Problem 3.** Algorithm A has time complexity $O(n \log n)$ with a constant factor of 10, and
+Algorithm B has time complexity $O(n^2)$ with a constant factor of 1. For approximately what values
+of $n$ is Algorithm A faster than Algorithm B?
+
+<details>
+<summary>Hint</summary>
+
+Algorithm A performs approximately $10n \log_2 n$ operations and Algorithm B performs approximately
+$n^2$ operations. Solve $10n \log_2 n < n^2$, which simplifies to $10 \log_2 n < n$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+We need $10n \log_2 n < n^2$, which simplifies to $10 \log_2 n < n$ (for $n > 0$).
+
+Testing values:
+
+| $n$ | $10 \log_2 n$ | $n$ | A faster? |
+| --- | ------------- | --- | --------- |
+| 10  | 33.2          | 10  | No        |
+| 20  | 43.2          | 20  | No        |
+| 30  | 49.1          | 30  | No        |
+| 40  | 53.2          | 40  | No        |
+| 50  | 56.4          | 50  | No        |
+| 60  | 59.1          | 60  | Yes       |
+
+Algorithm A becomes faster at approximately **$n = 60$**.
+
+This demonstrates that Big-O notation only describes asymptotic behaviour. For small inputs, the
+algorithm with the better Big-O complexity can be slower due to larger constant factors.
+
+</details>
+
+**Problem 4.** Compare the time complexities of the following pairs of algorithms and state which is
+more efficient asymptotically. Justify each answer: (a) $O(n^2)$ vs $O(n \log n)$, (b) $O(2^n)$ vs
+$O(n^3)$, (c) $O(n)$ vs $O(\log n)$.
+
+<details>
+<summary>Hint</summary>
+
+Use the limit test: if $\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$, then $f(n) = o(g(n))$, meaning
+$f$ grows strictly slower than $g$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) $O(n \log n)$ is more efficient than $O(n^2)$.**
+$\lim_{n \to \infty} \frac{n \log n}{n^2} = \lim_{n \to \infty} \frac{\log n}{n} = 0$. So
+$n \log n = o(n^2)$ — it grows strictly slower.
+
+**(b) $O(n^3)$ is more efficient than $O(2^n)$.** $\lim_{n \to \infty} \frac{n^3}{2^n} = 0$
+(exponential always dominates polynomial). So $n^3 = o(2^n)$.
+
+**(c) $O(\log n)$ is more efficient than $O(n)$.** $\lim_{n \to \infty} \frac{\log n}{n} = 0$ (by
+L'Hôpital's rule or the known hierarchy). So $\log n = o(n)$.
+
+**Summary (most to least efficient):**
+$O(\log n) \subset O(n) \subset O(n \log n) \subset O(n^3) \subset O(2^n)$.
+
+</details>
+
+**Problem 5.** Analyze the space complexity of the following function:
+
+```python
+def create_matrix(n):
+    matrix = []
+    for i in range(n):
+        row = [0] * (2 * n)
+        matrix.append(row)
+    return matrix
+```
+
+<details>
+<summary>Hint</summary>
+
+Count the total number of elements stored. The matrix has `n` rows, each containing `2 * n`
+elements.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The function creates a matrix with:
+
+- `n` rows
+- Each row contains `2n` elements (integers)
+- Total elements: $n \times 2n = 2n^2$
+
+Each integer occupies $O(1)$ space, and the list overhead is also $O(1)$ per element.
+
+**Space complexity: $O(n^2)$.**
+
+The dominant factor is the total number of stored values ($2n^2$). The variable `i`, the `row`
+reference, and the loop overhead all use $O(1)$ additional space and are negligible compared to the
+matrix itself.
+
+</details>
+
+**Problem 6.** Analyze the space complexity of the following recursive function:
+
+```python
+def sum_recursive(arr, n):
+    if n <= 0:
+        return 0
+    return arr[n-1] + sum_recursive(arr, n-1)
+```
+
+<details>
+<summary>Hint</summary>
+
+Recursive functions use stack space proportional to their recursion depth. How deep does the
+recursion go, and how much space does each stack frame use?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Recursion depth:** The function calls itself with `n-1` until `n <= 0`. This means the maximum
+depth is `n` (from `sum_recursive(arr, n)` down to `sum_recursive(arr, 0)`).
+
+**Stack frame size:** Each frame stores the parameters `arr` (a reference, $O(1)$) and `n` (an
+integer, $O(1)$), plus the return address and local variables — all $O(1)$ per frame.
+
+**Total space:** $n \times O(1) = O(n)$.
+
+**Space complexity: $O(n)$** due to the call stack. The input array `arr` itself is not counted in
+the auxiliary space analysis since it is the input, not allocated by the function.
+
+Note: An iterative version of this function would use only $O(1)$ auxiliary space.
+
+</details>
+
+**Problem 7.** State the best-case, average-case, and worst-case time complexity of quicksort. For
+each case, describe the type of input that produces that complexity and explain why it occurs.
+
+<details>
+<summary>Hint</summary>
+
+Quicksort's performance depends on how the pivot partitions the array. Consider what happens when
+the pivot is the median element, a random element, and the minimum or maximum element.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Case    | Complexity    | Input condition                        | Explanation                                                                                                                                   |
+| ------- | ------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Best    | $O(n \log n)$ | Pivot always divides array in half     | Each level processes all $n$ elements, and there are $\log n$ levels. Total: $O(n \log n)$.                                                   |
+| Average | $O(n \log n)$ | Random inputs                          | With a random pivot, the expected split ratio is balanced. The recurrence $T(n) = T(n/2) + T(n/2) + O(n)$ holds on average.                   |
+| Worst   | $O(n^2)$      | Already sorted (with first/last pivot) | If pivot is always the minimum or maximum, one partition has $n-1$ elements and the other has 0. Recurrence: $T(n) = T(n-1) + O(n) = O(n^2)$. |
+
+**Mitigation:** Randomised quicksort (choosing a random pivot) or median-of-three pivot selection
+makes the worst case extremely unlikely in practice, giving expected $O(n \log n)$ regardless of
+input.
+
+</details>
+
+**Problem 8.** Explain why binary search has $O(\log n)$ time complexity. In your answer, show how
+the search range halves at each step and derive the maximum number of iterations mathematically.
+
+<details>
+<summary>Hint</summary>
+
+Start with a range of size $n$. After each comparison, the range is reduced to at most half. After
+$k$ comparisons, the range size is at most $n / 2^k$. When does this become less than 1?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Intuitive argument:** Binary search halves the search range at each step:
+
+- After 1 comparison: range ≤ $n/2$
+- After 2 comparisons: range ≤ $n/4$
+- After 3 comparisons: range ≤ $n/8$
+- After $k$ comparisons: range ≤ $n/2^k$
+
+The algorithm terminates when the range has fewer than 1 element:
+
+$$\frac{n}{2^k} < 1 \implies 2^k > n \implies k > \log_2 n$$
+
+So the maximum number of iterations is $\lfloor \log_2 n \rfloor + 1 = O(\log n)$.
+
+**Formal derivation using the Master Theorem:**
+
+$$T(n) = T(n/2) + O(1), \quad T(1) = O(1)$$
+
+Here $a = 1$, $b = 2$, $c = \log_2 1 = 0$. Since $f(n) = O(1) = O(n^0) = O(n^c)$, this is Master
+Theorem Case 2 with $k = 0$:
+
+$$T(n) = \Theta(n^c \log^{k+1} n) = \Theta(\log n)$$
+
+**Why log n is efficient:** $\log_2 n$ grows extremely slowly. For $n = 10^9$ (one billion),
+$\log_2 n
+\approx 30$. This means binary search finds any element in a sorted billion-element array
+with at most 30 comparisons.
+
+</details>
+
+**Problem 9.** Determine the Big-O time complexity of the following recursive function:
+
+```python
+def recursive_func(n):
+    if n <= 0:
+        return 0
+    x = 0
+    for i in range(n):
+        x += i
+    return x + recursive_func(n // 2)
+```
+
+<details>
+<summary>Hint</summary>
+
+Set up the recurrence relation. The function does $O(n)$ work (the for loop) and then calls itself
+with $n/2$. This gives $T(n) = T(n/2) + O(n)$. Apply the Master Theorem.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Recurrence relation:**
+
+$$T(n) = T(n/2) + O(n), \quad T(0) = O(1)$$
+
+The $O(n)$ term comes from the for loop that iterates `n` times. The recursive call passes $n // 2$.
+
+**Applying the Master Theorem:** $a = 1$, $b = 2$, $c = \log_2 1 = 0$.
+
+$f(n) = O(n) = O(n^{0+1}) = \Omega(n^{c + \epsilon})$ where $\epsilon = 1$.
+
+Check regularity condition: $a \cdot f(n/b) = 1 \cdot (n/2) = n/2 \leq c \cdot n$ for $c = 1/2 < 1$.
+✓
+
+This is **Case 3** of the Master Theorem: $T(n) = \Theta(f(n)) = \Theta(n)$.
+
+**Verification by expansion:**
+
+$$T(n) = n + T(n/2) = n + n/2 + T(n/4) = n + n/2 + n/4 + \cdots + 1$$
+
+$$= n\left(1 + \frac{1}{2} + \frac{1}{4} + \cdots\right) = n \cdot 2 = 2n = O(n)$$
+
+**Time complexity: $O(n)$.**
+
+</details>
+
+**Problem 10.** (Exam-style) Two algorithms solve the same problem — counting inversions in an array
+(the number of pairs (i, j) where i < j but A[i] > A[j]).
+
+**Algorithm P** uses a brute-force approach:
+
+```python
+def algorithm_p(arr):
+    result = 0
+    for i in range(len(arr)):
+        for j in range(i + 1, len(arr)):
+            if arr[i] > arr[j]:
+                result += 1
+    return result
+```
+
+**Algorithm Q** uses a modified merge sort that counts inversions during the merge step.
+
+(a) Determine the time complexity of each algorithm. (b) For $n = 10{,}000$, estimate the number of
+operations for each algorithm. (c) Which algorithm is more efficient and by what factor? Explain
+your reasoning.
+
+<details>
+<summary>Hint</summary>
+
+For Algorithm P, count the number of iterations of the nested loops. For Algorithm Q, recall that
+merge sort is $O(n \log n)$ and the modification to count inversions doesn't change the asymptotic
+complexity.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) Time complexity:**
+
+**Algorithm P:** The outer loop runs $n$ times (i = 0 to n−1). For each i, the inner loop runs from
+i+1 to n−1, which is $n - 1 - i$ iterations.
+
+Total iterations: $\sum_{i=0}^{n-1}(n - 1 - i) = (n-1) + (n-2) + \cdots + 1 + 0 = \frac{n(n-1)}{2}$
+
+**Time complexity of P: $O(n^2)$.**
+
+**Algorithm Q:** Modified merge sort follows the same divide-and-conquer structure as standard merge
+sort. Each level processes all $n$ elements during merging, and there are $\log n$ levels. The
+inversion count is accumulated during the merge step without changing the merge complexity.
+
+**Time complexity of Q: $O(n \log n)$.**
+
+**(b) Estimated operations for $n = 10{,}000$:**
+
+| Algorithm | Formula      | Operations                                           |
+| --------- | ------------ | ---------------------------------------------------- |
+| P         | $n(n-1)/2$   | $10{,}000 \times 9{,}999 / 2 \approx 49{,}995{,}000$ |
+| Q         | $n \log_2 n$ | $10{,}000 \times 13.3 \approx 133{,}000$             |
+
+**(c) Comparison:**
+
+Algorithm Q is significantly more efficient. The ratio is:
+
+$$\frac{n^2/2}{n \log n} = \frac{n}{2 \log_2 n} = \frac{10{,}000}{2 \times 13.3} \approx 376$$
+
+Algorithm Q is approximately **376 times faster** than Algorithm P for $n = 10{,}000$.
+
+**Reasoning:** The difference grows with $n$. For $n = 1{,}000{,}000$, Algorithm P would perform
+$\approx 5 \times 10^{11}$ operations while Algorithm Q performs $\approx 20{,}000{,}000$ — a factor
+of 25,000×. This demonstrates the critical importance of choosing algorithms with better asymptotic
+complexity for large inputs.
+
+</details>

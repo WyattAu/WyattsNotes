@@ -413,6 +413,116 @@ s = "".join(str(i) for i in range(1000))
 
 </details>
 
+**Problem 7.** A bitmap image has a resolution of $1920 \times 1080$ pixels and uses 24-bit colour
+depth. Calculate the uncompressed file size in MB (using $1 \text{ MB} = 1024^2$ bytes). If lossless
+compression achieves a 3:1 ratio, what is the compressed file size in MB?
+
+<details>
+<summary>Answer</summary>
+
+**Uncompressed:**
+
+$\text{File size} = \text{width} \times \text{height} \times \text{colour depth}$
+
+$\text{File size} = 1920 \times 1080 \times 24 \text{ bits} = 49,766,400 \text{ bits}$
+
+$\text{File size} = 49,766,400 \div 8 = 6,220,800 \text{ bytes}$
+
+$\text{File size} = 6,220,800 \div 1024^2 \approx 5.93 \text{ MB}$
+
+**With 3:1 compression:**
+
+$\text{Compressed size} = 5.93 \div 3 \approx 1.98 \text{ MB}$
+
+</details>
+
+**Problem 8.** An audio file is recorded at a sample rate of $44,100 \text{ Hz}$ with a bit depth of
+16 bits, for a duration of 3 minutes in stereo (2 channels). Calculate the file size in MB (using
+$1 \text{ MB} = 1024^2$ bytes).
+
+<details>
+<summary>Answer</summary>
+
+$\text{File size} = \text{sample rate} \times \text{bit depth} \times \text{channels} \times \text{duration}$
+
+$\text{Duration} = 3 \times 60 = 180 \text{ seconds}$
+
+$\text{File size} = 44,100 \times 16 \times 2 \times 180 \text{ bits}$
+
+$\text{File size} = 254,016,000 \text{ bits}$
+
+$\text{File size} = 254,016,000 \div 8 = 31,752,000 \text{ bytes}$
+
+$\text{File size} = 31,752,000 \div 1024^2 \approx 30.28 \text{ MB}$
+
+</details>
+
+**Problem 9.** A text file contains the string `"Hello, 世界!"` (9 characters). ASCII uses 7 bits
+per character. UTF-8 uses 1 byte for ASCII characters and 3 bytes for CJK characters. Calculate the
+storage required in bytes for both encodings. Why is Unicode necessary?
+
+<details>
+<summary>Answer</summary>
+
+**ASCII:** ASCII can only represent 128 characters (0–127) and cannot encode `"世界"`. The ASCII
+encoding would either produce an error or replace each CJK character with a placeholder (e.g., `?`).
+If we consider only the encodable characters (`"Hello, !"`), that is 7 characters at 1 byte each = 7
+bytes. The CJK characters cannot be stored.
+
+**UTF-8:**
+
+| Character                                  | Bytes                 |
+| ------------------------------------------ | --------------------- |
+| H, e, l, l, o, ,, space, ! (8 ASCII chars) | 1 byte each = 8 bytes |
+| 世                                         | 3 bytes               |
+| 界                                         | 3 bytes               |
+
+$\text{Total} = 8 + 3 + 3 = 14 \text{ bytes}$
+
+**Why Unicode is needed:** ASCII only defines 128 characters, covering basic Latin letters, digits,
+and symbols. It cannot represent characters from other scripts (Chinese, Arabic, Cyrillic, etc.),
+mathematical symbols, or emoji. Unicode provides a universal character set of over 149,000
+characters across 161 scripts, ensuring every character in every language can be uniquely encoded.
+UTF-8 is backwards compatible with ASCII, so existing ASCII text works without modification while
+gaining support for all other scripts.
+
+</details>
+
+**Problem 10.** A system stores 1000 images at 4K resolution ($3840 \times 2160$) with 32-bit colour
+depth. Calculate the total storage required in GB (using $1 \text{ GB} = 1024^3$ bytes). If lossless
+compression achieves a 2:1 ratio, what is the compressed total size in GB?
+
+<details>
+<summary>Answer</summary>
+
+**Uncompressed size of one image:**
+
+$\text{File size} = 3840 \times 2160 \times 32 \text{ bits} = 265,420,800 \text{ bits}$
+
+$\text{File size} = 265,420,800 \div 8 = 33,177,600 \text{ bytes}$
+
+$\text{File size in GB} = 33,177,600 \div 1024^3 \approx 0.0309 \text{ GB}$
+
+**Total for 1000 images:**
+
+$\text{Total} = 0.0309 \times 1000 = 30.9 \text{ GB}$
+
+**With 2:1 lossless compression:**
+
+$\text{Compressed total} = 30.9 \div 2 \approx 15.45 \text{ GB}$
+
+**Working directly with bytes:**
+
+$\text{One image} = 33,177,600 \text{ bytes}$
+
+$\text{1000 images} = 33,177,600,000 \text{ bytes}$
+
+$\text{In GB} = 33,177,600,000 \div 1024^3 \approx 30.9 \text{ GB}$
+
+$\text{Compressed} = 30.9 \div 2 \approx 15.45 \text{ GB}$
+
+</details>
+
 For revision on number representation, see
 [Number Systems](/docs/docs_ALevel-notes/computer-science/fundamentals/number-systems) and
 [Floating Point](/docs/docs_ALevel-notes/computer-science/fundamentals/floating-point).

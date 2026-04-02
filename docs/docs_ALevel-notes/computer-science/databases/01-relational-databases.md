@@ -551,3 +551,583 @@ BCNF (which eliminates redundancy but loses the FD $AB \to C$). In practice, 3NF
 when dependency preservation is critical.
 
 </details>
+
+---
+
+## Problems
+
+**Problem 1.** Given the following `Employees` table, write an SQL query to find all employees in
+the 'Sales' department who earn more than 45000.
+
+| emp_id | name  | department | salary |
+| ------ | ----- | ---------- | ------ |
+| 1      | Alice | Sales      | 50000  |
+| 2      | Bob   | IT         | 55000  |
+| 3      | Carol | Sales      | 42000  |
+| 4      | Dave  | Sales      | 48000  |
+| 5      | Eve   | IT         | 60000  |
+
+<details>
+<summary>Hint</summary>
+
+Use SELECT with a WHERE clause that combines two conditions using AND.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```sql
+SELECT name, salary
+FROM Employees
+WHERE department = 'Sales' AND salary > 45000;
+```
+
+Result:
+
+| name  | salary |
+| ----- | ------ |
+| Alice | 50000  |
+| Dave  | 48000  |
+
+The WHERE clause filters rows where both conditions are true simultaneously: the employee must be in
+Sales AND earn more than 45000. Carol is excluded because her salary (42000) is not > 45000. Bob and
+Eve are excluded because they are in IT.
+
+</details>
+
+**Problem 2.** Given the `Students` and `Enrolments` tables below, write an SQL query using an INNER
+JOIN to list each student's name alongside the titles of all courses they are enrolled in.
+
+**Students:**
+
+| student_id | name  |
+| ---------- | ----- |
+| 1          | Alice |
+| 2          | Bob   |
+| 3          | Carol |
+
+**Enrolments:**
+
+| enrolment_id | student_id | course_id |
+| ------------ | ---------- | --------- |
+| 1            | 1          | CS101     |
+| 2            | 1          | MATH201   |
+| 3            | 2          | CS101     |
+| 4            | 2          | PHYS101   |
+
+**Courses:**
+
+| course_id | title               |
+| --------- | ------------------- |
+| CS101     | Computer Science    |
+| MATH201   | Linear Algebra      |
+| PHYS101   | Classical Mechanics |
+
+<details>
+<summary>Hint</summary>
+
+You need to join Students with Enrolments (on student_id), then join the result with Courses (on
+course_id). This requires two JOINs.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```sql
+SELECT Students.name, Courses.title
+FROM Students
+INNER JOIN Enrolments ON Students.student_id = Enrolments.student_id
+INNER JOIN Courses ON Enrolments.course_id = Courses.course_id
+ORDER BY Students.name, Courses.title;
+```
+
+Result:
+
+| name  | title               |
+| ----- | ------------------- |
+| Alice | Computer Science    |
+| Alice | Linear Algebra      |
+| Bob   | Classical Mechanics |
+| Bob   | Computer Science    |
+
+Carol does not appear because she has no enrolments, and INNER JOIN excludes unmatched rows. If we
+wanted Carol to appear with NULL values, we would use LEFT JOIN starting from Students.
+
+</details>
+
+**Problem 3.** The following table stores information about hospital patients. Identify all
+functional dependencies and normalise the table to 2NF.
+
+| patient_id | patient_name | ward_id | ward_name  | doctor_id | doctor_name |
+| ---------- | ------------ | ------- | ---------- | --------- | ----------- |
+| P001       | John Smith   | W01     | Cardiology | D001      | Dr Adams    |
+| P002       | Jane Doe     | W01     | Cardiology | D002      | Dr Brown    |
+| P003       | Bob Wilson   | W02     | Neurology  | D001      | Dr Adams    |
+
+<details>
+<summary>Hint</summary>
+
+First identify the candidate key(s). Then check for partial dependencies — non-key attributes that
+depend on only part of a composite key.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Functional dependencies:**
+
+- patient_id → patient_name, ward_id, doctor_id
+- ward_id → ward_name
+- doctor_id → doctor_name
+
+**Candidate key:** patient_id (uniquely identifies each row)
+
+**Is this in 1NF?** Yes — all values are atomic.
+
+**Is this in 2NF?** No. 2NF requires no partial dependencies on composite keys. Since the key is
+single-attribute (patient_id), there are technically no partial dependencies on a composite key.
+However, there are **transitive dependencies**:
+
+- patient_id → ward_id → ward_name
+- patient_id → doctor_id → doctor_name
+
+This violates **3NF** (transitive dependency), not 2NF.
+
+**Normalise to 2NF:** Since patient_id is a single-attribute key, the table is already in 2NF. The
+issue is at the 3NF level.
+
+**Normalise to 3NF:**
+
+Decompose into:
+
+1. **Patients** (patient_id, patient_name, ward_id, doctor_id)
+2. **Wards** (ward_id, ward_name)
+3. **Doctors** (doctor_id, doctor_name)
+
+Each table is now in 3NF with no transitive dependencies.
+
+</details>
+
+**Problem 4.** The following table records module results for university students. Identify all
+functional dependencies and normalise to 3NF.
+
+| student_id | student_name | module_code | module_title | credits | lecturer | grade |
+| ---------- | ------------ | ----------- | ------------ | ------- | -------- | ----- |
+| S001       | Alice        | CS101       | Programming  | 20      | Dr Lee   | A     |
+| S001       | Alice        | CS201       | Databases    | 20      | Dr Patel | B     |
+| S002       | Bob          | CS101       | Programming  | 20      | Dr Lee   | C     |
+
+<details>
+<summary>Hint</summary>
+
+Identify what uniquely identifies each row (the composite key), then find partial and transitive
+dependencies.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Step 1: Identify functional dependencies.**
+
+- (student_id, module_code) → student_name, module_title, credits, lecturer, grade
+- student_id → student_name
+- module_code → module_title, credits, lecturer
+
+**Candidate key:** (student_id, module_code)
+
+**Step 2: Check 1NF.** All values are atomic. ✓
+
+**Step 3: Check 2NF — partial dependencies.**
+
+- student_name depends only on student_id (partial dependency on composite key)
+- module_title depends only on module_code (partial dependency)
+- credits depends only on module_code (partial dependency)
+- lecturer depends only on module_code (partial dependency)
+
+**Decompose for 2NF:**
+
+1. **Results** (student_id, module_code, grade) — composite key
+2. **Students** (student_id, student_name)
+3. **Modules** (module_code, module_title, credits, lecturer)
+
+**Step 4: Check 3NF — transitive dependencies.**
+
+In Results: key is (student_id, module_code), only non-key attribute is grade. No transitive
+dependency. ✓
+
+In Students: key is student_id, only non-key attribute is student_name. No transitive dependency. ✓
+
+In Modules: key is module_code, non-key attributes are module_title, credits, lecturer. No
+transitive dependency (all depend directly on module_code). ✓
+
+All three tables are in 3NF.
+
+</details>
+
+**Problem 5.** An ER diagram for a school database contains the following entities and
+relationships:
+
+- **Student** (student_id, name, date_of_birth)
+- **Teacher** (teacher_id, name, subject_specialism)
+- **Class** (class_id, class_name, room)
+- A Student **enrols in** many Classes (Many-to-Many)
+- A Teacher **teaches** many Classes (Many-to-Many)
+
+(a) How many junction (link) tables are needed to resolve the Many-to-Many relationships? (b) Write
+the schema for each table, including primary and foreign keys.
+
+<details>
+<summary>Hint</summary>
+
+Each Many-to-Many relationship requires a junction table. The junction table contains foreign keys
+referencing the two entities it connects.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a)** Two junction tables are needed — one for Student–Class and one for Teacher–Class.
+
+**(b) Table schemas:**
+
+**Students** table:
+
+- student_id (PRIMARY KEY)
+- name
+- date_of_birth
+
+**Teachers** table:
+
+- teacher_id (PRIMARY KEY)
+- name
+- subject_specialism
+
+**Classes** table:
+
+- class_id (PRIMARY KEY)
+- class_name
+- room
+
+**Student_Classes** (junction table for enrolment):
+
+- student_id (FOREIGN KEY → Students.student_id)
+- class_id (FOREIGN KEY → Classes.class_id)
+- PRIMARY KEY (student_id, class_id)
+
+**Teacher_Classes** (junction table for teaching):
+
+- teacher_id (FOREIGN KEY → Teachers.teacher_id)
+- class_id (FOREIGN KEY → Classes.class_id)
+- PRIMARY KEY (teacher_id, class_id)
+
+The junction tables use composite primary keys (the combination of the two foreign keys) to ensure
+each student-class or teacher-class pairing is unique.
+
+</details>
+
+**Problem 6.** A hotel database has the following ER model:
+
+- **Guest** (guest_id, name, phone, email)
+- **Room** (room_number, room_type, price_per_night)
+- **Booking** (booking_id, guest_id, room_number, check_in_date, check_out_date)
+- A Guest can make **many** Bookings (1:Many)
+- A Room can have **many** Bookings (1:Many)
+
+Identify all foreign keys in this schema and explain which entity each references.
+
+<details>
+<summary>Hint</summary>
+
+Foreign keys in the Booking table link it to the Guest and Room tables. The 1:Many relationships
+mean the "Many" side (Booking) holds the foreign keys.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Foreign keys in the Booking table:**
+
+| Foreign Key Column | References       | Reason                                                           |
+| ------------------ | ---------------- | ---------------------------------------------------------------- |
+| guest_id           | Guest.guest_id   | Each booking belongs to one guest (1:Many from Guest to Booking) |
+| room_number        | Room.room_number | Each booking is for one room (1:Many from Room to Booking)       |
+
+**Explanation:**
+
+- The Guest-to-Booking relationship is 1:Many because one guest can make multiple bookings, but each
+  booking belongs to exactly one guest. The foreign key `guest_id` in Booking records which guest
+  made the booking.
+- The Room-to-Booking relationship is 1:Many because one room can be booked multiple times (on
+  different dates), but each booking is for exactly one room. The foreign key `room_number` in
+  Booking records which room is booked.
+
+**Primary keys:**
+
+- Guest: guest_id
+- Room: room_number
+- Booking: booking_id
+
+No foreign keys exist in Guest or Room because they are on the "1" side of their respective
+relationships.
+
+</details>
+
+**Problem 7.** Given the following `Products` table, write SQL statements to: (a) Insert a new
+product: (id=6, name='Monitor', category='Electronics', price=299.99) (b) Update the price of
+'Keyboard' to 45.00 (c) Delete all products in the 'Furniture' category
+
+| product_id | name     | category    | price  |
+| ---------- | -------- | ----------- | ------ |
+| 1          | Laptop   | Electronics | 999.99 |
+| 2          | Keyboard | Electronics | 39.99  |
+| 3          | Desk     | Furniture   | 249.99 |
+| 4          | Chair    | Furniture   | 199.99 |
+| 5          | Mouse    | Electronics | 29.99  |
+
+<details>
+<summary>Hint</summary>
+
+Use INSERT INTO ... VALUES for (a), UPDATE ... SET ... WHERE for (b), and DELETE FROM ... WHERE for
+(c). Always include a WHERE clause in UPDATE and DELETE to avoid affecting all rows.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) Insert a new product:**
+
+```sql
+INSERT INTO Products (product_id, name, category, price)
+VALUES (6, 'Monitor', 'Electronics', 299.99);
+```
+
+**(b) Update the price of Keyboard:**
+
+```sql
+UPDATE Products
+SET price = 45.00
+WHERE name = 'Keyboard';
+```
+
+After this: product_id 2 now has price = 45.00.
+
+**(c) Delete all Furniture products:**
+
+```sql
+DELETE FROM Products
+WHERE category = 'Furniture';
+```
+
+This removes rows where product_id is 3 (Desk) and 4 (Chair).
+
+**Final table state:**
+
+| product_id | name     | category    | price  |
+| ---------- | -------- | ----------- | ------ |
+| 1          | Laptop   | Electronics | 999.99 |
+| 2          | Keyboard | Electronics | 45.00  |
+| 5          | Mouse    | Electronics | 29.99  |
+| 6          | Monitor  | Electronics | 299.99 |
+
+</details>
+
+**Problem 8.** A library uses the following tables. Write SQL statements to: (a) Add a new member:
+(member_id=1001, name='Sarah', join_date='2025-03-15') (b) Update the status of all books borrowed
+before '2025-01-01' to 'overdue' (c) Delete the borrow record for member 50 returning book BK004
+
+**Members** (member_id, name, join_date) **Books** (book_id, title, author) **Borrows** (borrow_id,
+member_id, book_id, borrow_date, return_date, status)
+
+<details>
+<summary>Hint</summary>
+
+Each operation targets a specific table. Use WHERE clauses to restrict which rows are affected. For
+(b), use a date comparison.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) Add a new member:**
+
+```sql
+INSERT INTO Members (member_id, name, join_date)
+VALUES (1001, 'Sarah', '2025-03-15');
+```
+
+**(b) Update overdue books:**
+
+```sql
+UPDATE Borrows
+SET status = 'overdue'
+WHERE borrow_date < '2025-01-01';
+```
+
+This updates all borrow records where the borrow date is before 1st January 2025 and sets their
+status to 'overdue'. This is a bulk update — multiple rows may be affected.
+
+**(c) Delete a specific borrow record:**
+
+```sql
+DELETE FROM Borrows
+WHERE member_id = 50 AND book_id = 'BK004';
+```
+
+Both conditions are needed in the WHERE clause to identify the correct record (since member_id alone
+is not unique in the Borrows table — a member can borrow multiple books).
+
+</details>
+
+**Problem 9.** For the relation R(A, B, C, D, E) with the following functional dependencies, find
+all candidate keys and explain your reasoning.
+
+- AB → C
+- C → D
+- DE → A
+- B → E
+
+<details>
+<summary>Hint</summary>
+
+A candidate key is a minimal set of attributes whose closure includes all attributes (A, B, C, D,
+E). Try computing the closure of potential keys starting with individual attributes, then pairs.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Step 1: Compute closures of single attributes.**
+
+$A^+ = \{A\}$ — A does not appear on the left side of any FD. Not a key. $B^+ = \{B\} \to \{B, E\}$
+(B → E) $\to$ cannot go further (E alone doesn't determine anything). Not a key.
+$C^+ = \{C\} \to \{C, D\}$ (C → D) $\to \{C, D, E, A\}$ (DE → A) $\to$ cannot determine B. Not a
+key. $D^+ = \{D\}$ — D alone doesn't determine anything. Not a key. $E^+ = \{E\}$ — E alone doesn't
+determine anything. Not a key.
+
+No single attribute is a candidate key.
+
+**Step 2: Compute closures of pairs.**
+
+$AB^+ = \{A, B\} \to \{A, B, C\}$ (AB → C) $\to \{A, B, C, D\}$ (C → D) $\to \{A, B, C, D, E\}$ (B →
+E, or DE → A). **All attributes! AB is a candidate key.**
+
+$BC^+ = \{B, C\} \to \{B, C, D, E\}$ (C → D, B → E) $\to \{B, C, D, E, A\}$ (DE → A). **All
+attributes! BC is a candidate key.**
+
+$BE^+ = \{B, E\} \to$ already have E, no new FD applies. $\{B, E\}$. Not a key.
+$BD^+ = \{B, D\} \to \{B, D, E\}$ (B → E) $\to \{A, B, D, E\}$ (DE → A) $\to \{A, B, C, D, E\}$ (AB
+→ C). **All attributes! BD is a candidate key.**
+
+**Step 3: Check minimality.**
+
+- AB: Can we remove A? $B^+ = \{B, E\} \neq$ all. Can we remove B? $A^+ = \{A\} \neq$ all. Both
+  needed. ✓
+- BC: Can we remove B? $C^+ = \{C, D, E, A\} \neq$ all (missing B). Can we remove C?
+  $B^+ = \{B, E\} \neq$ all. Both needed. ✓
+- BD: Can we remove B? $D^+ = \{D\} \neq$ all. Can we remove D? $B^+ = \{B, E\} \neq$ all. Both
+  needed. ✓
+
+**Candidate keys: {AB, BC, BD}**
+
+**Prime attributes** (attributes that appear in at least one candidate key): A, B, C, D
+
+</details>
+
+**Problem 10.** (Exam-style multi-step question) A small business needs a database to manage its
+operations. The business has:
+
+- Multiple **departments** (each with a unique department code, name, and location)
+- **Employees** (each with a unique employee number, name, salary, and belonging to one department)
+- **Projects** (each with a unique project code, title, budget, and start date)
+- Employees can work on **multiple projects**, and each project can have **multiple employees**. The
+  system also records the number of hours each employee has worked on each project.
+
+(a) Design a normalised schema (at least 3NF) for this system. State each table, its columns,
+primary keys, and foreign keys. (b) Write SQL to create the Employees table with appropriate
+constraints. (c) Write an SQL query to find the names of all employees who work on projects with a
+budget greater than 50000. (d) Write an SQL query to find the total salary bill for each department.
+
+<details>
+<summary>Hint</summary>
+
+For (a), you need a junction table for the Many-to-Many employee-project relationship. For (c), you
+need to join three tables. For (d), use GROUP BY with SUM.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) Normalised schema (3NF):**
+
+1. **Departments** (dept_code PK, dept_name, location)
+2. **Employees** (emp_no PK, emp_name, salary, dept_code FK → Departments)
+3. **Projects** (project_code PK, title, budget, start_date)
+4. **Employee_Projects** (emp_no FK, project_code FK, hours_worked) — PK is (emp_no, project_code)
+
+**Functional dependencies:**
+
+- dept_code → dept_name, location
+- emp_no → emp_name, salary, dept_code
+- project_code → title, budget, start_date
+- (emp_no, project_code) → hours_worked
+
+All tables are in 3NF: no partial dependencies (all keys are single-attribute except the junction
+table where hours_worked depends on the full composite key) and no transitive dependencies.
+
+**(b) Create Employees table:**
+
+```sql
+CREATE TABLE Employees (
+    emp_no INT PRIMARY KEY,
+    emp_name VARCHAR(100) NOT NULL,
+    salary DECIMAL(10, 2) CHECK (salary > 0),
+    dept_code VARCHAR(10) NOT NULL,
+    FOREIGN KEY (dept_code) REFERENCES Departments(dept_code)
+);
+```
+
+**(c) Employees on projects with budget > 50000:**
+
+```sql
+SELECT DISTINCT e.emp_name
+FROM Employees e
+INNER JOIN Employee_Projects ep ON e.emp_no = ep.emp_no
+INNER JOIN Projects p ON ep.project_code = p.project_code
+WHERE p.budget > 50000;
+```
+
+DISTINCT is used because an employee may work on multiple high-budget projects — we want each name
+listed once.
+
+Result example: If Alice works on Project A (budget 60000) and Project B (budget 30000), she appears
+once (due to DISTINCT).
+
+**(d) Total salary bill per department:**
+
+```sql
+SELECT d.dept_name, SUM(e.salary) AS total_salary
+FROM Departments d
+INNER JOIN Employees e ON d.dept_code = e.dept_code
+GROUP BY d.dept_code, d.dept_name
+ORDER BY total_salary DESC;
+```
+
+Example result:
+
+| dept_name | total_salary |
+| --------- | ------------ |
+| IT        | 165000.00    |
+| Sales     | 142000.00    |
+| HR        | 98000.00     |
+
+</details>

@@ -410,3 +410,345 @@ For revision on searching, see
 [Searching Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/searching-algorithms).
 
 </details>
+
+---
+
+## Problems
+
+**Problem 1.** A character array `C` has base address 3000 and stores lowercase letters. Each
+character occupies 1 byte. What are the addresses of `C[0]`, `C[4]`, and `C[12]`? If `C` is declared
+with size 10, what happens when you access `C[12]`?
+
+<details>
+<summary>Hint</summary>
+
+Use the address formula $\text{addr}(A[i]) = b + i \times s$. For the out-of-bounds access, consider
+whether the language performs bounds checking.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\text{addr}(C[0]) = 3000 + 0 \times 1 = 3000$
+
+$\text{addr}(C[4]) = 3000 + 4 \times 1 = 3004$
+
+$\text{addr}(C[12]) = 3000 + 12 \times 1 = 3012$
+
+If the array has size 10, valid indices are 0–9. Accessing `C[12]` is an **out-of-bounds access**.
+In Python, Java, and C#, this raises an `IndexError`/exception. In C and C++, no bounds checking
+occurs, so the program reads whatever data happens to be at address 3012 — this is **undefined
+behaviour** and a potential buffer overflow vulnerability.
+
+</details>
+
+**Problem 2.** An array `A[8] = {15, 22, 8, 41, 3, 17, 56, 34}` is stored with base address 500.
+Each element is 4 bytes. What is the value stored at address 512? Show your working.
+
+<details>
+<summary>Hint</summary>
+
+Work backwards from the address: find the index using the address formula, then look up the value.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Given $\text{addr}(A[i]) = 500 + i \times 4 = 512$:
+
+$i \times 4 = 12$, so $i = 3$.
+
+$A[3] = 41$.
+
+The value stored at address 512 is **41**.
+
+</details>
+
+**Problem 3.** A record `Book` is defined with fields: `title` (string, 30 bytes), `pages` (int, 4
+bytes), `price` (float, 8 bytes), `available` (bool, 1 byte). Assuming 8-byte alignment, calculate
+the offset of each field and the total size of the record.
+
+<details>
+<summary>Hint</summary>
+
+Place each field at an offset that is a multiple of its alignment requirement. Pad between fields if
+needed, and pad at the end to make the total a multiple of the largest alignment.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Field     | Size | Alignment | Offset | Padding before |
+| --------- | ---- | --------- | ------ | -------------- |
+| title     | 30   | 8         | 0      | —              |
+| (padding) | 2    | —         | 30     | 2 bytes        |
+| pages     | 4    | 4         | 32     | —              |
+| (padding) | 4    | —         | 36     | 4 bytes        |
+| price     | 8    | 8         | 40     | —              |
+| available | 1    | 1         | 48     | —              |
+| (padding) | 7    | —         | 49     | 7 bytes        |
+
+Total size: 56 bytes.
+
+The `title` field occupies offsets 0–29. Offset 30 is not a multiple of 8 (required for `price`), so
+2 bytes of padding are added. After `pages` at offset 32 (4 bytes), offset 36 is not a multiple of
+8, so 4 more bytes of padding. After `available` at offset 48 (1 byte), 7 bytes of padding bring the
+total to 56 (a multiple of 8).
+
+</details>
+
+**Problem 4.** A nested record is defined: `Student` has fields `name` (20 bytes) and `exam` which
+is a record with fields `subject` (10 bytes) and `score` (4 bytes). Assuming 4-byte alignment, what
+is the offset of `exam.score` within a `Student` record?
+
+<details>
+<summary>Hint</summary>
+
+First calculate the offset of the `exam` field, then add the offset of `score` within `exam`.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The `Student` record layout:
+
+- `name`: offset 0, 20 bytes
+- Padding: 2 bytes (to align `exam` to 4-byte boundary? Actually, `exam` is a record, and its
+  alignment is determined by its most strictly aligned field. Both `subject` (char array,
+  alignment 1) and `score` (int, alignment 4) give `exam` an alignment of 4. Offset 20 is divisible
+  by 4, so no padding is needed.)
+- `exam`: offset 20
+
+Within `exam`:
+
+- `subject`: offset 0 within exam, 10 bytes
+- Padding: 2 bytes (to align `score` to 4-byte boundary: 10 is not divisible by 4)
+- `score`: offset 12 within exam, 4 bytes
+
+Offset of `exam.score` within `Student`: $20 + 12 = 32$.
+
+</details>
+
+**Problem 5.** A static array `S[100]` of integers (4 bytes each) is declared. A dynamic array `D`
+starts empty and doubles capacity when full. After appending 100 integers, compare the total memory
+used by `S` and `D`. Which uses more memory and why?
+
+<details>
+<summary>Hint</summary>
+
+The static array allocates exactly 100 slots. The dynamic array doubles at powers of 2 — what is the
+capacity after 100 insertions?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Static array `S`: $100 \times 4 = 400$ bytes.
+
+Dynamic array `D`: After 100 insertions, capacity is 128 (next power of 2 ≥ 100, since doubling
+sequence is 1, 2, 4, 8, 16, 32, 64, 128). Memory used: $128 \times 4 = 512$ bytes.
+
+The dynamic array uses **112 more bytes** (28% more) because it pre-allocates extra capacity to
+achieve $O(1)$ amortised append. However, the static array cannot grow beyond 100 elements, while
+the dynamic array can continue to accept more.
+
+</details>
+
+**Problem 6.** Explain two advantages and two disadvantages of static arrays compared to dynamic
+arrays. Your answer should reference memory allocation and performance.
+
+<details>
+<summary>Hint</summary>
+
+Consider where each type is stored (stack vs heap), whether the size can change, and the
+implications for performance and memory efficiency.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Advantages of static arrays:**
+
+1. **Memory efficiency:** Exactly the required amount of memory is allocated — no wasted capacity. A
+   static array of 50 elements uses precisely $50 \times s$ bytes.
+2. **Allocation speed:** No heap allocation overhead; memory is allocated at compile time on the
+   stack (for local variables), which is faster than runtime heap allocation.
+
+**Disadvantages of static arrays:**
+
+1. **Fixed size:** Cannot grow or shrink. If you need more elements, you must create a new array and
+   copy (or pick a larger size upfront, wasting memory).
+2. **Stack overflow risk:** Large static arrays stored on the stack can cause stack overflow. The
+   stack is typically limited (e.g., 1–8 MB), while the heap is much larger.
+
+</details>
+
+**Problem 7.** Given the 2D array `M[3][4]` initialised as follows:
+
+```
+M = [[5, 12, 3, 8],
+     [1, 9, 6, 4],
+     [7, 2, 11, 10]]
+```
+
+Write pseudocode to calculate the sum of all elements in row 1, and the sum of all elements in
+column 2.
+
+<details>
+<summary>Hint</summary>
+
+Row 1 is `M[1][0]` through `M[1][3]`. Column 2 is `M[0][2]`, `M[1][2]`, `M[2][2]`.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Sum of row 1:**
+
+```
+row_sum = 0
+FOR i = 0 TO 3
+    row_sum = row_sum + M[1][i]
+NEXT i
+OUTPUT row_sum
+```
+
+$M[1][0] + M[1][1] + M[1][2] + M[1][3] = 1 + 9 + 6 + 4 = 20$
+
+**Sum of column 2:**
+
+```
+col_sum = 0
+FOR i = 0 TO 2
+    col_sum = col_sum + M[i][2]
+NEXT i
+OUTPUT col_sum
+```
+
+$M[0][2] + M[1][2] + M[2][2] = 3 + 6 + 11 = 20$
+
+</details>
+
+**Problem 8.** A 3×3 matrix `A` is stored in row-major order with base address 1000. Each element is
+8 bytes. The matrix contains the values:
+
+```
+A = [[2, 5, 1],
+     [3, 8, 4],
+     [7, 6, 9]]
+```
+
+What is the address of `A[2][1]`? What value is stored there?
+
+<details>
+<summary>Hint</summary>
+
+Use the row-major formula: $\text{addr}(A[i][j]) = b + (i \cdot n + j) \cdot s$ where $n$ is the
+number of columns.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\text{addr}(A[2][1]) = 1000 + (2 \times 3 + 1) \times 8 = 1000 + 7 \times 8 = 1000 + 56 = 1056$
+
+The value at `A[2][1]` is **6**.
+
+Verification of all addresses:
+
+- `A[0][0]` at 1000 (value 2), `A[0][1]` at 1008 (value 5), `A[0][2]` at 1016 (value 1)
+- `A[1][0]` at 1024 (value 3), `A[1][1]` at 1032 (value 8), `A[1][2]` at 1040 (value 4)
+- `A[2][0]` at 1048 (value 7), `A[2][1]` at 1056 (value 6), `A[2][2]` at 1064 (value 9)
+
+</details>
+
+**Problem 9.** Write pseudocode to insert the value 25 at index 2 of the array
+`A = {10, 20, 30, 40, 50}`. The array has capacity for 6 elements and currently holds 5. Show the
+state of the array after the insertion.
+
+<details>
+<summary>Hint</summary>
+
+You need to shift elements from index 2 onwards one position to the right before placing the new
+value at index 2.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```
+// A = {10, 20, 30, 40, 50}, size = 5, insert value 25 at index 2
+FOR i = size - 1 TO 2 STEP -1
+    A[i + 1] = A[i]
+NEXT i
+A[2] = 25
+size = size + 1
+```
+
+Trace:
+
+- i = 4: `A[5] = A[4]` → `A[5] = 50`
+- i = 3: `A[4] = A[3]` → `A[4] = 40`
+- i = 2: `A[3] = A[2]` → `A[3] = 30`
+- `A[2] = 25`
+
+Result: `A = {10, 20, 25, 30, 40, 50}`, size = 6.
+
+This takes $O(n)$ time because $n - 2 = 3$ elements were shifted.
+
+</details>
+
+**Problem 10.** (Exam-style) A school needs to store data about 500 students. For each student, they
+need: name (string), age (integer), and a list of up to 10 exam grades (integers). The system must
+support: (a) looking up any student by their position in a class list, (b) calculating the average
+grade for a student, (c) adding a new student to the end of the list when they enrol. Evaluate
+whether a static array, a dynamic array, or an array of records is the most appropriate data
+structure. Justify your choice with reference to the operations required and their time
+complexities.
+
+<details>
+<summary>Hint</summary>
+
+Consider which structure naturally combines the need for indexed access, heterogeneous fields (name,
+age, grades), and the ability to grow. Think about what "array of records" actually means — it
+combines arrays and records.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The most appropriate choice is an **array of records** (implemented as a dynamic array to allow
+growth).
+
+**Why records?** Each student has fields of different types: a string (name), an integer (age), and
+an array of integers (grades). An array alone stores elements of the same type. A record groups
+these heterogeneous fields under one name, making the code readable and the data logically
+organised.
+
+**Why a dynamic array (not static)?** Requirement (c) states that new students can be added when
+they enrol. The number of students is not known in advance (starts at some value, grows as students
+enrol). A static array would require choosing a maximum size upfront, which risks either wasting
+memory or running out of space. A dynamic array grows automatically with $O(1)$ amortised append.
+
+**Operation analysis:**
+
+- (a) Lookup by position: $O(1)$ — direct index access into the array
+- (b) Calculate average grade: $O(1)$ — access the record by index, then average over at most 10
+  grades (constant)
+- (c) Add new student at end: $O(1)$ amortised — dynamic array append
+
+A linked list would also support insertion but would not provide $O(1)$ access by position (it would
+be $O(n)$), making it worse for operation (a). The array of records with dynamic sizing is therefore
+the optimal choice.
+
+</details>

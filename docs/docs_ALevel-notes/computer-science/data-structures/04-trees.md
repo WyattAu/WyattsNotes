@@ -616,3 +616,478 @@ Parent of node 5 (index 4): parent index = $\lfloor(4-1)/2\rfloor = 1$ → value
 
 For revision on sorting, see
 [Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/sorting-algorithms).
+
+---
+
+## Problems
+
+**Problem 1.** Given the following binary tree, write the in-order traversal sequence.
+
+```
+       20
+      /  \
+    10    30
+   /  \     \
+  5   15    40
+     /
+    12
+```
+
+<details>
+<summary>Hint</summary>
+
+In-order traversal visits nodes in the order: Left subtree, Root, Right subtree. Apply this rule
+recursively starting from the root.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+In-order: 5, 10, 12, 15, 20, 30, 40
+
+Step-by-step trace:
+
+1. Start at root 20 → go left to 10
+2. At 10 → go left to 5
+3. At 5 → no left child → visit **5** → no right child
+4. Return to 10 → visit **10** → go right to 15
+5. At 15 → go left to 12
+6. At 12 → no left child → visit **12** → no right child
+7. Return to 15 → visit **15** → no right child
+8. Return to 20 → visit **20** → go right to 30
+9. At 30 → no left child → visit **30** → go right to 40
+10. At 40 → no left child → visit **40** → no right child
+
+</details>
+
+**Problem 2.** For the same tree in Problem 1, write the pre-order and post-order traversal
+sequences.
+
+<details>
+<summary>Hint</summary>
+
+Pre-order: Root, Left, Right. Post-order: Left, Right, Root. Apply each rule recursively.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Pre-order: 20, 10, 5, 15, 12, 30, 40
+
+Step-by-step trace:
+
+1. Visit **20** → go left to 10
+2. Visit **10** → go left to 5
+3. Visit **5** → no left, no right
+4. Return to 10 → go right to 15
+5. Visit **15** → go left to 12
+6. Visit **12** → no left, no right
+7. Return to 15 → no right
+8. Return to 20 → go right to 30
+9. Visit **30** → no left → go right to 40
+10. Visit **40** → no left, no right
+
+Post-order: 5, 12, 15, 10, 40, 30, 20
+
+Step-by-step trace:
+
+1. At 20 → go left to 10 → go left to 5
+2. At 5 → no left, no right → visit **5**
+3. Return to 10 → go right to 15 → go left to 12
+4. At 12 → no left, no right → visit **12**
+5. Return to 15 → no right → visit **15**
+6. Return to 10 → visit **10**
+7. Return to 20 → go right to 30 → go right to 40
+8. At 40 → no left, no right → visit **40**
+9. Return to 30 → visit **30**
+10. Return to 20 → visit **20**
+
+</details>
+
+**Problem 3.** Construct a BST by inserting the following keys in order: 45, 25, 65, 15, 35, 55,
+75, 30. Draw the resulting tree.
+
+<details>
+<summary>Hint</summary>
+
+Insert each key by comparing with nodes starting at the root. Go left if the key is smaller, right
+if larger, until you find an empty position.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```
+          45
+        /    \
+      25      65
+     /  \    /  \
+   15   35  55   75
+       /
+      30
+```
+
+Insertion trace:
+
+1. Insert 45 → root
+2. Insert 25 → 25 < 45, go left → insert as left child of 45
+3. Insert 65 → 65 > 45, go right → insert as right child of 45
+4. Insert 15 → 15 < 45, go left → 15 < 25, go left → insert as left child of 25
+5. Insert 35 → 35 < 45, go left → 35 > 25, go right → insert as right child of 25
+6. Insert 55 → 55 > 45, go right → 55 < 65, go left → insert as left child of 65
+7. Insert 75 → 75 > 45, go right → 75 > 65, go right → insert as right child of 65
+8. Insert 30 → 30 < 45, go left → 30 > 25, go right → 30 < 35, go left → insert as left child of 35
+
+</details>
+
+**Problem 4.** Delete key 25 from the BST in Problem 3. Show the resulting tree.
+
+<details>
+<summary>Hint</summary>
+
+Node 25 has two children (15 and 35). Find the in-order successor (smallest value in the right
+subtree) and replace 25 with it, then delete the successor node.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Node 25 has two children. The in-order successor is the smallest node in the right subtree of 25,
+which is 30 (leftmost node in the subtree rooted at 35).
+
+Replace 25 with 30, then delete the original node 30 (which is a leaf).
+
+```
+          45
+        /    \
+      30      65
+     /  \    /  \
+   15   35  55   75
+```
+
+Verification of BST property:
+
+- All values in left subtree of 30 (15) < 30 ✓
+- All values in right subtree of 30 (35) > 30 ✓
+- All values in left subtree of 45 (30, 15, 35) < 45 ✓
+- All values in right subtree of 45 (65, 55, 75) > 45 ✓
+
+</details>
+
+**Problem 5.** A min-heap is represented by the array `[2, 5, 3, 10, 8, 4, 7]`. Insert the value 1
+into the heap and show the resulting array. Show each swap step.
+
+<details>
+<summary>Hint</summary>
+
+When inserting into a min-heap, add the new element at the end of the array (next available
+position), then "sift up" by swapping with its parent while it is smaller than its parent.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Initial heap: `[2, 5, 3, 10, 8, 4, 7]`
+
+Step 1: Add 1 at the end of the array (index 7):
+
+`[2, 5, 3, 10, 8, 4, 7, 1]`
+
+Step 2: Sift up. Parent of index 7 is index ⌊(7−1)/2⌋ = 3. Value at index 3 is 10.
+
+1 < 10, so swap:
+
+`[2, 5, 3, 1, 8, 4, 7, 10]`
+
+Step 3: Parent of index 3 is index ⌊(3−1)/2⌋ = 1. Value at index 1 is 5.
+
+1 < 5, so swap:
+
+`[2, 1, 3, 5, 8, 4, 7, 10]`
+
+Step 4: Parent of index 1 is index ⌊(1−1)/2⌋ = 0. Value at index 0 is 2.
+
+1 < 2, so swap:
+
+`[1, 2, 3, 5, 8, 4, 7, 10]`
+
+Step 5: Index 0 is the root. Stop.
+
+Final heap: `[1, 2, 3, 5, 8, 4, 7, 10]`
+
+Verification: 1 ≤ 2 and 1 ≤ 3; 2 ≤ 5 and 2 ≤ 8; 3 ≤ 4 and 3 ≤ 7; 5 ≤ 10. ✓
+
+</details>
+
+**Problem 6.** A max-heap is represented by the array `[20, 15, 18, 10, 8, 12, 16]`. Perform an
+extract-max operation (remove the root) and show the resulting array after each step.
+
+<details>
+<summary>Hint</summary>
+
+Extract-max: swap root with last element, remove last element, then sift the new root down by
+swapping with the larger child while the root is smaller than that child.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Initial heap: `[20, 15, 18, 10, 8, 12, 16]`
+
+Step 1: Swap root (20) with last element (16):
+
+`[16, 15, 18, 10, 8, 12, 20]`
+
+Step 2: Remove last element (20 is the extracted max). Heap size is now 6:
+
+`[16, 15, 18, 10, 8, 12]`
+
+Step 3: Sift down from index 0. Children of index 0: left = index 1 (value 15), right = index 2
+(value 18). Larger child = 18.
+
+16 < 18, so swap:
+
+`[18, 15, 16, 10, 8, 12]`
+
+Step 4: Sift down from index 2. Children of index 2: left = index 5 (value 12). No right child
+(index 6 ≥ size 6).
+
+16 > 12, so no swap. Stop.
+
+Final heap: `[18, 15, 16, 10, 8, 12]`
+
+Verification: 18 ≥ 15 and 18 ≥ 16; 15 ≥ 10 and 15 ≥ 8; 16 ≥ 12. ✓
+
+</details>
+
+**Problem 7.** For the following binary tree, calculate the depth of each node and the height of the
+tree.
+
+```
+        A
+       / \
+      B   C
+     /   / \
+    D   E   F
+       /
+      G
+```
+
+<details>
+<summary>Hint</summary>
+
+Depth is the number of edges from the root to the node (root has depth 0). Height of the tree is the
+maximum depth of any node.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Depths:
+
+- A: depth 0
+- B: depth 1
+- C: depth 1
+- D: depth 2
+- E: depth 2
+- F: depth 2
+- G: depth 3
+
+Heights of individual nodes:
+
+- G: height 0 (leaf)
+- D: height 0 (leaf)
+- F: height 0 (leaf)
+- E: height 1 (longest path from E to a leaf: E→G = 1 edge)
+- B: height 1 (longest path: B→D = 1 edge)
+- C: height 2 (longest path: C→E→G = 2 edges)
+- A: height 3 (longest path: A→C→E→G = 3 edges)
+
+Height of the tree = height of root = 3
+
+</details>
+
+**Problem 8.** Convert the following complete binary tree to an array representation (0-indexed),
+and then verify the parent-child relationships using the array formulas.
+
+```
+       4
+      / \
+     2   6
+    / \ / \
+   1  3 5  7
+```
+
+<details>
+<summary>Hint</summary>
+
+For a 0-indexed array: parent of node at index $i$ is $\lfloor (i-1)/2 \rfloor$, left child is
+$2i+1$, right child is $2i+2$. Fill the array using level-order traversal.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Level-order traversal: 4, 2, 6, 1, 3, 5, 7
+
+Array: `[4, 2, 6, 1, 3, 5, 7]`
+
+```
+Index:  0  1  2  3  4  5  6
+Value:  4  2  6  1  3  5  7
+```
+
+Verification of parent-child formulas:
+
+| Node | Index | Left child (2i+1) | Right child (2i+2) |
+| ---- | ----- | ----------------- | ------------------ |
+| 4    | 0     | 2(0)+1 = 1 → 2    | 2(0)+2 = 2 → 6     |
+| 2    | 1     | 2(1)+1 = 3 → 1    | 2(1)+2 = 4 → 3     |
+| 6    | 2     | 2(2)+1 = 5 → 5    | 2(2)+2 = 6 → 7     |
+| 1    | 3     | 2(3)+1 = 7 (none) | 2(3)+2 = 8 (none)  |
+
+Parent verification:
+
+| Node | Index | Parent ⌊(i-1)/2⌋ |
+| ---- | ----- | ---------------- |
+| 2    | 1     | ⌊0/2⌋ = 0 → 4    |
+| 6    | 2     | ⌊1/2⌋ = 0 → 4    |
+| 1    | 3     | ⌊2/2⌋ = 1 → 2    |
+| 3    | 4     | ⌊3/2⌋ = 1 → 2    |
+| 5    | 5     | ⌊4/2⌋ = 2 → 6    |
+| 7    | 6     | ⌊5/2⌋ = 2 → 6    |
+
+All relationships match. ✓
+
+</details>
+
+**Problem 9.** Two BSTs each contain $n$ keys. BST A has height $n-1$ (degenerate) and BST B has
+height $\lfloor \log_2 n \rfloor$ (balanced). Compare the number of comparisons required to search
+for a key that exists in both trees, expressing your answers in terms of $n$.
+
+<details>
+<summary>Hint</summary>
+
+In a BST, each comparison eliminates one subtree. In the worst case, the number of comparisons
+equals the height of the tree. For a successful search, the expected number of comparisons is
+approximately half the height.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**BST A (degenerate, height $n-1$):**
+
+- Worst-case comparisons: $n$ (traverse every node, e.g., searching for the deepest leaf)
+- Best-case comparisons: 1 (the key is at the root)
+- Average-case comparisons: $\approx n/2$ (the key is equally likely to be at any depth)
+
+**BST B (balanced, height $\lfloor \log_2 n \rfloor$):**
+
+- Worst-case comparisons: $\lfloor \log_2 n \rfloor + 1$
+- Best-case comparisons: 1 (the key is at the root)
+- Average-case comparisons: $\approx \lfloor \log_2 n \rfloor / 2$
+
+**Comparison for $n = 1024$:**
+
+- BST A worst case: 1024 comparisons
+- BST B worst case: $\lfloor \log_2 1024 \rfloor + 1 = 10 + 1 = 11$ comparisons
+
+BST B is approximately $n / \log_2 n$ times faster. For large $n$, this difference is enormous,
+which is why balanced BSTs (AVL, red-black trees) are preferred in practice.
+
+</details>
+
+**Problem 10.** (Exam-style multi-step question) A sequence of integers is read from a data stream:
+38, 27, 43, 15, 50, 10, 33, 48.
+
+(a) Construct a BST by inserting these values in the given order. Draw the final tree. (b) State the
+in-order traversal of the BST. What property of BSTs does this demonstrate? (c) Delete the value 27
+from the tree (it has two children). Draw the resulting tree and explain each step of the deletion.
+(d) What is the height of the tree after the deletion?
+
+<details>
+<summary>Hint</summary>
+
+For part (a), insert each value comparing with existing nodes. For part (c), use the in-order
+successor method: find the smallest value in the right subtree of 27 and replace 27 with it.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) BST construction:**
+
+```
+          38
+        /    \
+      27      43
+     /  \       \
+   15   33      50
+   /           /
+  10         48
+```
+
+Insertion trace:
+
+1. 38 → root
+2. 27 → 27 < 38, left child of 38
+3. 43 → 43 > 38, right child of 38
+4. 15 → 15 < 38 → 15 < 27, left child of 27
+5. 50 → 50 > 38 → 50 > 43, right child of 43
+6. 10 → 10 < 38 → 10 < 27 → 10 < 15, left child of 15
+7. 33 → 33 < 38 → 33 > 27, right child of 27
+8. 48 → 48 > 38 → 48 > 43 → 48 < 50, left child of 50
+
+**(b) In-order traversal:** 10, 15, 27, 33, 38, 43, 48, 50
+
+This demonstrates that **in-order traversal of a BST always produces keys in ascending sorted
+order**.
+
+**(c) Deletion of 27:**
+
+Node 27 has two children (15 and 33). Find the in-order successor: the smallest value in the right
+subtree of 27. Go right to 33, then go left as far as possible. 33 has no left child, so the
+in-order successor is **33**.
+
+Replace 27's value with 33, then delete the original 33 node (leaf removal).
+
+```
+          38
+        /    \
+      33      43
+     /  \       \
+   15   [33]    50
+   /           /
+  10         48
+```
+
+After deletion:
+
+```
+          38
+        /    \
+      33      43
+     /          \
+   15           50
+   /           /
+  10         48
+```
+
+**(d) Height calculation:**
+
+Longest root-to-leaf path: 38 → 33 → 15 → 10 = 3 edges, OR 38 → 43 → 50 → 48 = 3 edges.
+
+Height of the tree = **3**.
+
+</details>

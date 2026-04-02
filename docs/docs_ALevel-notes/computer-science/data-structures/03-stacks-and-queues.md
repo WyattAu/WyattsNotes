@@ -593,3 +593,349 @@ For revision on complexity analysis, see
 [Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/complexity-analysis).
 
 </details>
+
+---
+
+## Problems
+
+**Problem 1.** A stack is initially empty. Perform the following operations in order and show the
+stack contents after each: `push(5)`, `push(12)`, `push(3)`, `pop()`, `push(8)`, `pop()`, `pop()`,
+`push(1)`. What are the values returned by each `pop()` operation?
+
+<details>
+<summary>Hint</summary>
+
+Remember that a stack is LIFO — the last element pushed is the first one popped. Track the stack as
+a list with the top at the right.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Operation | Stack (top on right) | Value returned |
+| --------- | -------------------- | -------------- |
+| push(5)   | [5]                  | —              |
+| push(12)  | [5, 12]              | —              |
+| push(3)   | [5, 12, 3]           | —              |
+| pop()     | [5, 12]              | 3              |
+| push(8)   | [5, 12, 8]           | —              |
+| pop()     | [5, 12]              | 8              |
+| pop()     | [5]                  | 12             |
+| push(1)   | [5, 1]               | —              |
+
+Values returned by `pop()` in order: **3, 8, 12**.
+
+Final stack: `[5, 1]` (1 on top).
+
+</details>
+
+**Problem 2.** A stack initially contains `[2, 7, 1, 9]` (9 on top). After performing `pop()`,
+`push(pop() + peek())`, what is on the stack? Show each sub-step.
+
+<details>
+<summary>Hint</summary>
+
+Evaluate the expression inside `push()` first. `pop()` removes and returns the top element. `peek()`
+returns the top without removing it.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Initial: `[2, 7, 1, 9]` (top = 9)
+
+Step 1 — `pop()`: removes 9, stack becomes `[2, 7, 1]`. Returns 9.
+
+Step 2 — evaluate `pop() + peek()`:
+
+- `pop()` removes 1, stack becomes `[2, 7]`. Returns 1.
+- `peek()` returns 7 (top of stack, stack unchanged: `[2, 7]`).
+- Result: $1 + 7 = 8$.
+
+Step 3 — `push(8)`: stack becomes `[2, 7, 8]`.
+
+Final stack: **`[2, 7, 8]`** (8 on top).
+
+</details>
+
+**Problem 3.** A queue initially contains `[5, 10, 15, 20]` (front = 5). Perform `dequeue()`,
+`enqueue(25)`, `dequeue()`, `enqueue(30)`, `dequeue()`. What remains in the queue?
+
+<details>
+<summary>Hint</summary>
+
+A queue is FIFO — elements are removed from the front and added at the rear.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Operation   | Queue (front → rear) | Value returned |
+| ----------- | -------------------- | -------------- |
+| Initial     | [5, 10, 15, 20]      | —              |
+| dequeue()   | [10, 15, 20]         | 5              |
+| enqueue(25) | [10, 15, 20, 25]     | —              |
+| dequeue()   | [15, 20, 25]         | 10             |
+| enqueue(30) | [15, 20, 25, 30]     | —              |
+| dequeue()   | [20, 25, 30]         | 15             |
+
+Final queue: **`[20, 25, 30]`** (front = 20).
+
+</details>
+
+**Problem 4.** A circular queue has capacity 4. Trace the following operations, showing `front`,
+`rear`, `size`, and the array contents after each step: `enqueue(7)`, `enqueue(3)`, `enqueue(9)`,
+`dequeue()`, `dequeue()`, `enqueue(5)`, `enqueue(1)`, `enqueue(8)`. What happens on the last
+operation?
+
+<details>
+<summary>Hint</summary>
+
+Remember that `rear = (rear + 1) % capacity` and `front = (front + 1) % capacity`. The queue is full
+when `size == capacity`.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Operation  | front | rear | size | Array [0, 1, 2, 3] |
+| ---------- | ----- | ---- | ---- | ------------------ |
+| enqueue(7) | 0     | 1    | 1    | [7, _, _, _]       |
+| enqueue(3) | 0     | 2    | 2    | [7, 3, _, _]       |
+| enqueue(9) | 0     | 3    | 3    | [7, 3, 9, _]       |
+| dequeue()  | 1     | 3    | 2    | [_, 3, 9, _]       |
+| dequeue()  | 2     | 3    | 1    | [_, _, 9, _]       |
+| enqueue(5) | 2     | 0    | 2    | [5, _, 9, _]       |
+| enqueue(1) | 2     | 1    | 3    | [5, 1, 9, _]       |
+| enqueue(8) | 2     | 2    | 4    | [5, 1, 9, 8]       |
+
+The last operation (`enqueue(8)`) succeeds. The queue is now **full** (size = capacity = 4). The
+`rear` wraps around: $(1 + 1) \% 4 = 2$. Note that `rear` now equals `front`, but the queue is not
+empty — we use the `size` variable to distinguish full from empty.
+
+</details>
+
+**Problem 5.** Compare the array-based and linked-list-based implementations of a stack in terms of:
+(a) push/pop time complexity, (b) maximum size, (c) memory overhead per element, (d) cache
+performance. Give a specific scenario where each implementation is preferable.
+
+<details>
+<summary>Hint</summary>
+
+Both implementations have the same asymptotic complexity for push/pop, but they differ in practical
+performance and memory characteristics.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Property              | Array-based            | Linked-list-based      |
+| --------------------- | ---------------------- | ---------------------- |
+| (a) Push/Pop time     | $O(1)$                 | $O(1)$                 |
+| (b) Maximum size      | Fixed at creation      | Limited only by memory |
+| (c) Memory overhead   | None per element       | One pointer (8 bytes)  |
+| (d) Cache performance | Excellent (contiguous) | Poor (scattered nodes) |
+
+**Array-based preferable:** When the maximum stack depth is known in advance (e.g., recursion depth
+in a parser with known grammar). The contiguous memory layout gives better cache performance, and
+there is no per-element pointer overhead.
+
+**Linked-list-based preferable:** When the maximum stack depth is unpredictable and could be very
+large (e.g., a web browser's back-navigation stack that grows with user browsing). No need to
+pre-allocate a large array, and no risk of stack overflow from a fixed capacity.
+
+</details>
+
+**Problem 6.** A queue is implemented using a simple (non-circular) array where `enqueue` adds at
+`rear` and `dequeue` removes from `front`, shifting all remaining elements left by one. What is the
+time complexity of `enqueue` and `dequeue`? Explain why this implementation is inefficient for large
+queues.
+
+<details>
+<summary>Hint</summary>
+
+Consider how many elements need to be moved when dequeuing from the front of a non-circular array.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+- `enqueue`: $O(1)$ — add element at index `rear`, increment `rear`.
+- `dequeue`: $O(n)$ — remove element at index `front`, then shift elements `front+1` through
+  `rear-1` one position left.
+
+**Why inefficient:** After dequeuing, every remaining element must be shifted. For a queue of $n$
+elements, dequeue performs $n-1$ assignments. If $n$ is large (e.g., a print queue with 10,000
+jobs), each dequeue is expensive. Over $m$ operations, the total cost is $O(m \cdot n)$ in the worst
+case.
+
+A circular array eliminates this by using modular arithmetic: `front = (front + 1) % capacity`,
+making both enqueue and dequeue $O(1)$ without any shifting.
+
+</details>
+
+**Problem 7.** Evaluate the RPN expression `6 2 3 + * 4 -`. Show the stack after each token is
+processed.
+
+<details>
+<summary>Hint</summary>
+
+Process each token left to right. Operands are pushed; operators pop two operands, compute, and push
+the result.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Token | Stack (bottom → top) | Action                      |
+| ----- | -------------------- | --------------------------- |
+| 6     | [6]                  | Push 6                      |
+| 2     | [6, 2]               | Push 2                      |
+| 3     | [6, 2, 3]            | Push 3                      |
+| +     | [6, 5]               | Pop 3, 2; push 2 + 3 = 5    |
+| \*    | [30]                 | Pop 5, 6; push 6 × 5 = 30   |
+| 4     | [30, 4]              | Push 4                      |
+| -     | [26]                 | Pop 4, 30; push 30 - 4 = 26 |
+
+Result: **26**.
+
+Verification: $(6 \times (2 + 3)) - 4 = 30 - 4 = 26$. ✓
+
+</details>
+
+**Problem 8.** Use a stack to check whether the following expression has balanced brackets:
+`{[()()]}`. Then check `[{(})]`. Show the stack contents at each step.
+
+<details>
+<summary>Hint</summary>
+
+Push opening brackets onto the stack. For each closing bracket, pop and check that it matches the
+corresponding opening bracket.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Checking `{[()()]}`:**
+
+| Char | Stack (top on right) | Action              |
+| ---- | -------------------- | ------------------- |
+| {    | [{]                  | Push {              |
+| [    | [{, []               | Push [              |
+| (    | [{, [, (]            | Push (              |
+| )    | [{, []               | Pop ( — matches ) ✓ |
+| (    | [{, [, (]            | Push (              |
+| )    | [{, []               | Pop ( — matches ) ✓ |
+| ]    | [{]                  | Pop [ — matches ] ✓ |
+| }    | []                   | Pop { — matches } ✓ |
+
+Stack is empty → **balanced**. ✓
+
+**Checking `[{(})]`:**
+
+| Char | Stack (top on right) | Action                         |
+| ---- | -------------------- | ------------------------------ |
+| [    | [[]                  | Push [                         |
+| {    | [{, {}               | Push {                         |
+| (    | [{, {, (]            | Push (                         |
+| }    | [{, (]               | Pop ( — expected } but got ( ✗ |
+
+Stack top is `(` but closing bracket is `}` — **mismatch** → **not balanced**. ✗
+
+</details>
+
+**Problem 9.** Write pseudocode for the `dequeue` operation of a circular array queue. The queue has
+variables `_data[]`, `_front`, `_size`, and `_capacity`. Include error handling for an empty queue.
+
+<details>
+<summary>Hint</summary>
+
+Check if the queue is empty first. If not, read the element at `_front`, update `_front` using
+modular arithmetic, and decrement `_size`.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```
+FUNCTION Dequeue()
+    IF _size = 0 THEN
+        RETURN "Queue is empty"  // or raise an error
+    ENDIF
+    value = _data[_front]
+    _data[_front] = NULL  // optional: clear the slot
+    _front = (_front + 1) MOD _capacity
+    _size = _size - 1
+    RETURN value
+ENDFUNCTION
+```
+
+**Explanation:**
+
+- `_size = 0` check prevents underflow (dequeuing from an empty queue)
+- The value at `_data[_front]` is saved before updating `_front`
+- `_front = (_front + 1) MOD _capacity` wraps around to the start of the array when the end is
+  reached
+- Setting `_data[_front] = NULL` is optional but helps with debugging
+- `_size` is decremented to reflect the removal
+- Time complexity: $O(1)$ — constant number of operations regardless of queue size
+
+</details>
+
+**Problem 10.** (Exam-style) A software company is building two features: (A) a web browser's
+back/forward navigation system, and (B) a customer support ticket system where tickets are answered
+in the order they are received. For each feature, recommend whether a stack or a queue is the most
+appropriate data structure. Justify your answer by explaining why the chosen structure's ordering
+principle matches the feature's requirements, and explain why the alternative structure would be
+incorrect. Include a discussion of how each structure would be implemented (array-based or
+linked-list-based) and justify your choice.
+
+<details>
+<summary>Hint</summary>
+
+Think about the ordering requirement for each feature: does the most recent item need to be accessed
+first (LIFO) or the oldest item (FIFO)?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(A) Browser back/forward navigation — Stack**
+
+The back button must return to the **most recently visited** page, not the first page visited. This
+is LIFO behaviour — a stack.
+
+Implementation: **Linked-list-based stack**. The number of pages visited is unpredictable and could
+be very large. A linked list avoids pre-allocating a fixed capacity and eliminates the risk of
+overflow. Push (visit a page) and pop (go back) are both $O(1)$. Two stacks are used: one for the
+back history and one for the forward history.
+
+Why a queue would be wrong: A queue would return the user to the **first** page visited, not the
+most recent. This would make the back button navigate to the homepage every time, which is clearly
+incorrect.
+
+**(B) Customer support tickets — Queue**
+
+Tickets must be answered in the **order they are received** (first come, first served). This is FIFO
+behaviour — a queue.
+
+Implementation: **Circular array queue**. The volume of support tickets can be estimated (allowing
+capacity planning), and the contiguous memory gives better performance. Both enqueue (new ticket)
+and dequeue (next ticket to answer) are $O(1)$. If the volume is highly variable, a
+linked-list-based queue would be more flexible.
+
+Why a stack would be wrong: A stack would process the **most recently submitted** ticket first. This
+means a customer who submitted a ticket hours ago would wait indefinitely while new tickets are
+handled — unfair and violating the FIFO service guarantee.
+
+</details>

@@ -380,3 +380,318 @@ For revision on sorting, see
 [Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/sorting-algorithms).
 
 </details>
+
+---
+
+## Problems
+
+**Problem 1.** Trace linear search for the value 14 in the array `[7, 3, 14, 2, 9, 6, 1, 8]`. How
+many comparisons are made until the item is found?
+
+<details>
+<summary>Hint</summary>
+
+Step through each element from index 0, comparing each with the target 14. Count each comparison
+until a match is found.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Step | Index | A[index] | Comparison | Count |
+| ---- | ----- | -------- | ---------- | ----- |
+| 1    | 0     | 7        | 7 ≠ 14     | 1     |
+| 2    | 1     | 3        | 3 ≠ 14     | 2     |
+| 3    | 2     | 14       | 14 = 14 ✓  | 3     |
+
+3 comparisons are made. The value 14 is found at index 2. The algorithm returns 2.
+
+</details>
+
+**Problem 2.** Trace linear search for the value 5 in the array
+`[10, 20, 30, 40, 50, 60, 70, 80, 90]`. How many comparisons are made?
+
+<details>
+<summary>Hint</summary>
+
+The value 5 is not in the array, so the algorithm must check every single element before returning
+-1.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Step | Index | A[index] | Comparison | Count |
+| ---- | ----- | -------- | ---------- | ----- |
+| 1    | 0     | 10       | 10 ≠ 5     | 1     |
+| 2    | 1     | 20       | 20 ≠ 5     | 2     |
+| 3    | 2     | 30       | 30 ≠ 5     | 3     |
+| 4    | 3     | 40       | 40 ≠ 5     | 4     |
+| 5    | 4     | 50       | 50 ≠ 5     | 5     |
+| 6    | 5     | 60       | 60 ≠ 5     | 6     |
+| 7    | 6     | 70       | 70 ≠ 5     | 7     |
+| 8    | 7     | 80       | 80 ≠ 5     | 8     |
+| 9    | 8     | 90       | 90 ≠ 5     | 9     |
+
+9 comparisons are made. The value 5 is not found, so the algorithm returns -1. This is the worst
+case for an array of 9 elements — every element must be checked.
+
+</details>
+
+**Problem 3.** Trace binary search for the value 42 in the sorted array
+`[3, 11, 19, 27, 35, 42, 50, 58, 66, 74]`. Show all iterations with low, high, mid, and the action
+taken.
+
+<details>
+<summary>Hint</summary>
+
+Start with low = 0, high = 9. Calculate mid = (0 + 9) // 2 = 4. Compare A[4] with 42 and adjust the
+range accordingly.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Iteration | low | high | mid | A[mid] | Action            |
+| --------- | --- | ---- | --- | ------ | ----------------- |
+| 1         | 0   | 9    | 4   | 35     | 35 < 42, low = 5  |
+| 2         | 5   | 9    | 7   | 58     | 58 > 42, high = 6 |
+| 3         | 5   | 6    | 5   | 42     | Found! Return 5   |
+
+3 comparisons are made. The value 42 is found at index 5.
+
+</details>
+
+**Problem 4.** Trace binary search for the value 15 in the sorted array
+`[2, 6, 10, 14, 18, 22, 26, 30]`. Show all iterations.
+
+<details>
+<summary>Hint</summary>
+
+The value 15 lies between 14 (index 3) and 18 (index 4). The algorithm will narrow down to this gap
+and then terminate with low > high.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Iteration | low | high | mid | A[mid] | Action             |
+| --------- | --- | ---- | --- | ------ | ------------------ |
+| 1         | 0   | 7    | 3   | 14     | 14 < 15, low = 4   |
+| 2         | 4   | 7    | 5   | 22     | 22 > 15, high = 4  |
+| 3         | 4   | 4    | 4   | 18     | 18 > 15, high = 3  |
+| 4         | 4   | 3    | —   | —      | low > high, return |
+
+4 comparisons are made. The value 15 is not in the array, so the algorithm returns -1.
+
+</details>
+
+**Problem 5.** An unsorted array of 10,000 elements must be searched repeatedly. Compare the total
+cost of using linear search directly for 1,000 queries versus sorting the array once then using
+binary search for 1,000 queries.
+
+<details>
+<summary>Hint</summary>
+
+Calculate the cost of each approach: (a) 1,000 linear searches, and (b) one sort plus 1,000 binary
+searches. Use O(n log n) for sorting and O(log n) for each binary search.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Linear search approach:** 1,000 × O(10,000) = O(10,000,000) total comparisons.
+
+**Sort + binary search approach:**
+
+- One-time sort: O(10,000 log₂ 10,000) ≈ O(10,000 × 13.3) ≈ O(133,000) comparisons
+- 1,000 binary searches: 1,000 × O(log₂ 10,000) ≈ 1,000 × 14 = O(14,000) comparisons
+- Total: O(133,000) + O(14,000) = O(147,000) comparisons
+
+Sort + binary search is approximately **68 times more efficient** in total. The one-time cost of
+sorting is quickly amortised over multiple queries. The more queries needed, the greater the
+advantage of sorting first.
+
+</details>
+
+**Problem 6.** A database contains 500,000 records sorted by a unique key field. Explain which
+search algorithm is more efficient and calculate the maximum number of comparisons for each
+algorithm.
+
+<details>
+<summary>Hint</summary>
+
+Since the data is already sorted, binary search can be applied directly. Calculate ⌊log₂(n)⌋ + 1 for
+the binary search worst case.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Linear search:** Worst case = 500,000 comparisons. Time complexity: $O(n)$.
+
+**Binary search:** Worst case =
+$\lfloor \log_2(500{,}000) \rfloor + 1 = \lfloor 18.93 \rfloor + 1 = 19$ comparisons. Time
+complexity: $O(\log n)$.
+
+Binary search is dramatically more efficient — at most 19 comparisons versus 500,000 for linear
+search, an improvement factor of approximately 26,000×. Since the data is already sorted, there is
+no additional preprocessing cost.
+
+</details>
+
+**Problem 7.** Calculate the maximum number of comparisons required for binary search on arrays of
+sizes 15, 100, 500, and 1,000,000. Show your working using the formula
+$\lfloor \log_2 n \rfloor + 1$.
+
+<details>
+<summary>Hint</summary>
+
+Apply the formula $\lfloor \log_2 n \rfloor + 1$ to each array size. Remember that
+$\lfloor x \rfloor$ means the greatest integer less than or equal to $x$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Using $\lfloor \log_2 n \rfloor + 1$:
+
+| $n$       | $\log_2 n$ | $\lfloor \log_2 n \rfloor$ | Max comparisons |
+| --------- | ---------- | -------------------------- | --------------- |
+| 15        | 3.91       | 3                          | 3 + 1 = **4**   |
+| 100       | 6.64       | 6                          | 6 + 1 = **7**   |
+| 500       | 8.97       | 8                          | 8 + 1 = **9**   |
+| 1,000,000 | 19.93      | 19                         | 19 + 1 = **20** |
+
+This demonstrates the power of logarithmic growth: searching through a million elements requires
+only 20 comparisons maximum.
+
+</details>
+
+**Problem 8.** Write pseudocode for (a) a linear search that returns the index of the first
+occurrence of a target value in an array, and (b) a binary search on a sorted array that returns the
+index of the target or -1 if not found.
+
+<details>
+<summary>Hint</summary>
+
+Linear search uses a simple FOR loop checking each element. Binary search uses a WHILE loop with low
+and high pointers, calculating mid each iteration.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) Linear search:**
+
+```
+FUNCTION LinearSearch(A, x)
+    FOR i ← 0 TO LEN(A) - 1
+        IF A[i] = x THEN
+            RETURN i
+        ENDIF
+    ENDFOR
+    RETURN -1
+ENDFUNCTION
+```
+
+**(b) Binary search:**
+
+```
+FUNCTION BinarySearch(A, x)
+    low ← 0
+    high ← LEN(A) - 1
+    WHILE low ≤ high
+        mid ← (low + high) DIV 2
+        IF A[mid] = x THEN
+            RETURN mid
+        ELSE IF A[mid] < x THEN
+            low ← mid + 1
+        ELSE
+            high ← mid - 1
+        ENDIF
+    ENDWHILE
+    RETURN -1
+ENDFUNCTION
+```
+
+Note: In the binary search, `DIV 2` performs integer division (floor division), which is equivalent
+to `//` in Python.
+
+</details>
+
+**Problem 9.** Trace binary search for the value 17 in the sorted array
+`[4, 8, 12, 15, 17, 20, 24, 28, 32, 36, 40]`. Show low, high, mid, and the comparison at each step.
+
+<details>
+<summary>Hint</summary>
+
+The array has 11 elements (indices 0–10). Start with low = 0, high = 10. The first mid will be
+(0 + 10) // 2 = 5.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Iteration | low | high | mid | A[mid] | Comparison | Action          |
+| --------- | --- | ---- | --- | ------ | ---------- | --------------- |
+| 1         | 0   | 10   | 5   | 20     | 20 > 17    | high = 4        |
+| 2         | 0   | 4    | 2   | 12     | 12 < 17    | low = 3         |
+| 3         | 3   | 4    | 3   | 15     | 15 < 17    | low = 4         |
+| 4         | 4   | 4    | 4   | 17     | 17 = 17 ✓  | Found! Return 4 |
+
+4 comparisons are made. The value 17 is found at index 4.
+
+</details>
+
+**Problem 10.** (Exam-style) A school library system stores 20,000 book records. The librarian needs
+to: (a) search for a book by its ISBN (the catalogue is sorted by ISBN), (b) check whether a
+specific book ID exists in an unsorted list of 50 recently returned books, (c) find the price of a
+book given its ISBN in a sorted price catalogue. For each scenario, justify which search algorithm
+is most appropriate, stating your assumptions about the data structure and ordering.
+
+<details>
+<summary>Hint</summary>
+
+Consider three factors for each scenario: (1) Is the data sorted? (2) How large is the dataset? (3)
+How many searches will be performed? The cost of sorting must be weighed against the benefit of
+binary search.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**(a) Binary search.** The ISBN catalogue is sorted and stored in an array with random access.
+Binary search requires at most $\lfloor \log_2(20{,}000) \rfloor + 1 = 15$ comparisons, compared to
+20,000 for linear search. This is efficient and appropriate since no preprocessing is needed.
+
+**(b) Linear search.** The list of 50 recently returned books is unsorted and small. Linear search
+takes at most 50 comparisons — negligible cost. Sorting first would cost $O(50 \log 50) \approx 282$
+operations, which exceeds the 50 comparisons needed for a single search. For a single check, linear
+search is optimal. If many repeated searches were needed, sorting first and using binary search (7
+comparisons max) would become worthwhile after approximately 6 searches ($282 / 50 \approx 5.6$).
+
+**(c) Binary search.** The price catalogue is sorted by ISBN with random access. Binary search finds
+the ISBN in $O(\log 20{,}000) \approx 15$ comparisons, then retrieves the price at that index in
+$O(1)$. Linear search would require $O(20{,}000)$ comparisons — unnecessary when the data is already
+sorted.
+
+**Summary:**
+
+| Scenario              | Data size | Sorted? | Best algorithm | Max comparisons |
+| --------------------- | --------- | ------- | -------------- | --------------- |
+| (a) ISBN lookup       | 20,000    | Yes     | Binary search  | 15              |
+| (b) Recently returned | 50        | No      | Linear search  | 50              |
+| (c) Price lookup      | 20,000    | Yes     | Binary search  | 15              |
+
+</details>

@@ -492,3 +492,352 @@ For revision on queues, see
 [Stacks and Queues](/docs/docs_ALevel-notes/computer-science/data-structures/stacks-and-queues).
 
 </details>
+
+---
+
+## Problems
+
+**Problem 1.** Starting from the singly linked list `head → [2|•] → [7|•] → [4|•] → None`, draw the
+list after each of these operations: (a) insert 9 at the head, (b) insert 5 between 7 and 4, (c)
+delete the node containing 7.
+
+<details>
+<summary>Hint</summary>
+
+Perform each operation step by step, updating one pointer at a time. For insertion between nodes,
+you need to modify the `next` pointer of the preceding node.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Insert 9 at head:
+
+```
+head → [9|•] → [2|•] → [7|•] → [4|•] → None
+```
+
+(b) Insert 5 between 7 and 4:
+
+```
+head → [9|•] → [2|•] → [7|•] → [5|•] → [4|•] → None
+```
+
+(c) Delete the node containing 7:
+
+```
+head → [9|•] → [2|•] → [5|•] → [4|•] → None
+```
+
+To delete 7: traverse to the node before 7 (which is the node containing 2), then set
+`node.next = node.next.next` (i.e., point 2's `next` directly to 5).
+
+</details>
+
+**Problem 2.** Draw the state of a doubly linked list after deleting the node containing value 6.
+The initial list is:
+
+```
+None ← [3|•|•] ↔ [8|•|•] ↔ [6|•|•] ↔ [1|•|•] → None
+         head                      tail
+```
+
+Show the pointer changes required.
+
+<details>
+<summary>Hint</summary>
+
+In a doubly linked list, deleting a node requires updating four pointers: the `next` of the previous
+node and the `prev` of the next node.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+To delete the node containing 6 (let's call it `D`):
+
+- `D.prev.next = D.next` → node 8's `next` points to node 1
+- `D.next.prev = D.prev` → node 1's `prev` points to node 8
+
+Result:
+
+```
+None ← [3|•|•] ↔ [8|•|•] ↔ [1|•|•] → None
+         head                      tail
+```
+
+The pointers of the deleted node (6) are set to `None` to avoid dangling references.
+
+</details>
+
+**Problem 3.** Trace the following operations on a singly linked list, showing the head pointer and
+list contents after each step. Start with an empty list.
+
+1. `insert_head(head, 10)` → head
+2. `insert_head(head, 20)` → head
+3. `insert_tail(head, 30)` → head
+4. `insert_at(head, 15, 1)` → head (insert 15 at position 1)
+5. `delete_value(head, 20)` → head
+
+<details>
+<summary>Hint</summary>
+
+Go through each operation one at a time. For `insert_at`, position 1 means the second element
+(0-indexed).
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+1. After `insert_head(10)`: `head → [10|•] → None`
+2. After `insert_head(20)`: `head → [20|•] → [10|•] → None`
+3. After `insert_tail(30)`: `head → [20|•] → [10|•] → [30|•] → None`
+4. After `insert_at(15, 1)`: Traverse to position 0 (value 20), insert after it:
+   `head → [20|•] → [15|•] → [10|•] → [30|•] → None`
+5. After `delete_value(20)`: Head contains 20, so return `head.next`:
+   `head → [15|•] → [10|•] → [30|•] → None`
+
+Final list: 15, 10, 30.
+
+</details>
+
+**Problem 4.** Given the singly linked list `head → [5|•] → [12|•] → [3|•] → [8|•] → None`, trace
+the `search` function looking for the value 3. How many nodes are visited? Repeat for searching for
+value 9.
+
+<details>
+<summary>Hint</summary>
+
+The search function starts at the head and visits each node sequentially, comparing the data field.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Searching for 3:**
+
+- Visit node 1: data = 5, 5 ≠ 3, move to next
+- Visit node 2: data = 12, 12 ≠ 3, move to next
+- Visit node 3: data = 3, 3 = 3 → found at index 2
+
+Nodes visited: **3**. Best case would be 1 (value at head), worst case is 4 (value at tail or
+absent).
+
+**Searching for 9:**
+
+- Visit node 1: data = 5, 5 ≠ 9
+- Visit node 2: data = 12, 12 ≠ 9
+- Visit node 3: data = 3, 3 ≠ 9
+- Visit node 4: data = 8, 8 ≠ 9
+- `current.next` is None → not found, return -1
+
+Nodes visited: **4** (all nodes). This is the worst case for a list of 4 elements — $O(n)$.
+
+</details>
+
+**Problem 5.** Compare singly linked lists and doubly linked lists in terms of: (a) memory per node,
+(b) time to insert at the tail (without a tail pointer), (c) time to insert before a given node, (d)
+time to delete a given node (when you have a reference to it). Use Big-O notation.
+
+<details>
+<summary>Hint</summary>
+
+Consider how many pointers each node stores and how that affects navigation. For (c), think about
+whether you can go backwards in a singly linked list.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Operation                            | Singly                                          | Doubly                                   |
+| ------------------------------------ | ----------------------------------------------- | ---------------------------------------- |
+| (a) Memory per node                  | $O(d + p)$ (1 pointer)                          | $O(d + 2p)$ (2 pointers)                 |
+| (b) Insert at tail (no tail pointer) | $O(n)$ — traverse to end                        | $O(n)$ — must still traverse from head   |
+| (c) Insert before a given node       | $O(n)$ — traverse from head to find predecessor | $O(1)$ — use `node.prev`                 |
+| (d) Delete a given node (reference)  | $O(n)$ — need predecessor to update its `next`  | $O(1)$ — use `node.prev` and `node.next` |
+
+Where $d$ is data size and $p$ is pointer size. The doubly linked list uses more memory per node (an
+extra pointer) but provides $O(1)$ insertion before and deletion of a known node.
+
+</details>
+
+**Problem 6.** A programmer is implementing a music playlist. Songs can be added to the end, removed
+from the beginning (when played), and the user can skip forward or backward one song at a time.
+Should they use a singly or doubly linked list? Justify your answer.
+
+<details>
+<summary>Hint</summary>
+
+The "skip backward" requirement is the key factor. Consider what operations each list type supports
+efficiently.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+A **doubly linked list** is the better choice.
+
+The "skip backward" operation requires moving from the current song to the previous song. In a
+singly linked list, there is no `prev` pointer, so going backward would require traversing from the
+head — $O(n)$ per backward skip. In a doubly linked list, `current.prev` gives the previous song in
+$O(1)$.
+
+Other operations:
+
+- Add to end: $O(1)$ with a tail pointer (both types)
+- Remove from beginning: $O(1)$ (both types)
+- Skip forward: $O(1)$ via `next` (both types)
+
+The doubly linked list matches all requirements with $O(1)$ operations, while the singly linked list
+would make backward skipping $O(n)$.
+
+</details>
+
+**Problem 7.** Each node in a singly linked list contains a 4-byte integer and one pointer (8 bytes
+on a 64-bit system). What is the total memory used by a list of 50 nodes? What percentage of the
+memory is used for data versus pointers? Compare this to a static array of 50 integers.
+
+<details>
+<summary>Hint</summary>
+
+Calculate the size of one node (data + pointer), then multiply by 50. For the array, only the data
+is stored.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Node size: $4 \text{ (data)} + 8 \text{ (pointer)} = 12$ bytes.
+
+Total memory for 50 nodes: $50 \times 12 = 600$ bytes.
+
+- Data memory: $50 \times 4 = 200$ bytes (33.3%)
+- Pointer memory: $50 \times 8 = 400$ bytes (66.7%)
+
+Static array of 50 integers: $50 \times 4 = 200$ bytes.
+
+The linked list uses $600 / 200 = 3\times$ more memory than the array. Only one-third of the linked
+list's memory stores actual data; the remaining two-thirds is pointer overhead.
+
+</details>
+
+**Problem 8.** Explain why dynamically allocating memory for each linked list node individually can
+lead to memory fragmentation. How does this differ from array memory allocation?
+
+<details>
+<summary>Hint</summary>
+
+Consider where each node is placed in memory relative to other nodes. Think about what happens after
+many insertions and deletions.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Each linked list node is allocated individually on the heap using `malloc`/`new`. The memory
+allocator places each node wherever free space is available, which may be scattered throughout the
+heap. After many insertions and deletions, the heap becomes fragmented: small blocks of free memory
+are interspersed with allocated blocks. Even if total free memory is sufficient, no single
+contiguous block may be large enough for a new allocation.
+
+Arrays, by contrast, are stored in a single contiguous block. A static array is allocated once and
+stays in place. A dynamic array allocates a new contiguous block when resizing and frees the old
+one. This means array access benefits from spatial locality (cache-friendly), while linked list
+access causes cache misses because nodes are scattered.
+
+In practice, this fragmentation and cache performance difference is why arrays outperform linked
+lists for traversal-heavy workloads, despite having the same asymptotic complexity.
+
+</details>
+
+**Problem 9.** Write pseudocode for inserting a new node with value `V` at the **tail** of a singly
+linked list that has a `tail` pointer. The algorithm must work correctly when the list is empty.
+
+<details>
+<summary>Hint</summary>
+
+Handle the empty list as a special case (head and tail both become the new node). For a non-empty
+list, update the current tail's `next` pointer and then update the tail pointer.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```
+PROCEDURE InsertTail(head, tail, V)
+    newNode = new Node(V)
+    newNode.next = NULL
+    IF head = NULL THEN
+        head = newNode
+        tail = newNode
+    ELSE
+        tail.next = newNode
+        tail = newNode
+    ENDIF
+ENDPROCEDURE
+```
+
+**Correctness:**
+
+- Empty list case: both `head` and `tail` point to the new node. The list has one element. ✓
+- Non-empty case: the old tail's `next` now points to the new node (linking it in). The `tail`
+  pointer is updated to the new node. The list grows by one element at the end. ✓
+
+Time complexity: $O(1)$ — no traversal needed because the tail pointer is available.
+
+</details>
+
+**Problem 10.** (Exam-style) A hospital's A&E department needs a data structure to manage patient
+records. Patients arrive and are added to the end of the queue. Patients are seen by a doctor and
+removed from the front. Occasionally, a patient's condition deteriorates and they must be moved to
+the front of the queue immediately. Evaluate whether a singly linked list or a dynamic array would
+be more appropriate. Discuss the time complexity of each required operation for both data
+structures.
+
+<details>
+<summary>Hint</summary>
+
+Focus on the three key operations: add to end, remove from front, and move to front. Consider which
+data structure supports each operation most efficiently.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Required operations and their complexities:
+
+| Operation         | Dynamic Array                                     | Singly Linked List                           |
+| ----------------- | ------------------------------------------------- | -------------------------------------------- |
+| Add to end        | $O(1)$ amortised                                  | $O(1)$ with tail pointer                     |
+| Remove from front | $O(n)$ — shift all elements                       | $O(1)$ — update head pointer                 |
+| Move to front     | $O(n)$ — remove from middle + shift + insert at 0 | $O(n)$ — find node, remove, reinsert at head |
+
+**Analysis:**
+
+The singly linked list is the better choice. The critical operation is **remove from front**, which
+the linked list handles in $O(1)$ (simply set `head = head.next`), while the dynamic array requires
+shifting all remaining elements — $O(n)$ where $n$ could be hundreds of patients.
+
+Both structures require $O(n)$ for "move to front" (must find the patient first), but the linked
+list's removal step is simpler (just pointer updates, no shifting). The linked list also handles
+"add to end" in $O(1)$ with a tail pointer.
+
+The dynamic array's advantage of $O(1)$ random access is irrelevant here — patients are always
+processed in queue order. The linked list's lack of contiguous memory is not a concern since we are
+not doing traversal-heavy work.
+
+**Conclusion:** A singly linked list (with head and tail pointers) is the most appropriate data
+structure, as its $O(1)$ dequeue operation is essential for the high-frequency "remove from front"
+operation in a busy A&E department.
+
+</details>
