@@ -534,13 +534,13 @@ the queue contents after each extraction and relaxation.
 
 | Step | Visit | Dist[S] | Dist[A] | Dist[B] | Dist[C] | Dist[D] | Dist[T] | Queue after extraction |
 | ---- | ----- | ------- | ------- | ------- | ------- | ------- | ------- | ---------------------- |
-| Init | —     | 0       | ∞       | ∞       | ∞       | ∞       | ∞       | {(0,S)}                |
-| 1    | S     | **0**   | 2       | 6       | ∞       | ∞       | ∞       | {(2,A),(6,B)}          |
-| 2    | A     | **0**   | **2**   | 5       | 7       | ∞       | ∞       | {(5,B),(7,C)}          |
-| 3    | B     | **0**   | **2**   | **5**   | 7       | 6       | ∞       | {(6,D),(7,C)}          |
-| 4    | D     | **0**   | **2**   | **5**   | 7       | **6**   | 10      | {(7,C),(10,T)}         |
-| 5    | C     | **0**   | **2**   | **5**   | **7**   | **6**   | 10      | {(10,T)}               |
-| 6    | T     | **0**   | **2**   | **5**   | **7**   | **6**   | **10**  | {}                     |
+| Init | —     | 0       | ∞       | ∞       | ∞       | ∞       | ∞       | `{(0,S)}`              |
+| 1    | S     | **0**   | 2       | 6       | ∞       | ∞       | ∞       | `{(2,A),(6,B)}`        |
+| 2    | A     | **0**   | **2**   | 5       | 7       | ∞       | ∞       | `{(5,B),(7,C)}`        |
+| 3    | B     | **0**   | **2**   | **5**   | 7       | 6       | ∞       | `{(6,D),(7,C)}`        |
+| 4    | D     | **0**   | **2**   | **5**   | 7       | **6**   | 10      | `{(7,C),(10,T)}`       |
+| 5    | C     | **0**   | **2**   | **5**   | **7**   | **6**   | 10      | `{(10,T)}`             |
+| 6    | T     | **0**   | **2**   | **5**   | **7**   | **6**   | **10**  | `{}`                   |
 
 **Working:**
 
@@ -556,8 +556,8 @@ the queue contents after each extraction and relaxation.
 </details>
 
 **Problem 3.** Apply Kruskal's algorithm to find the minimum spanning tree of a graph with vertices
-{A, B, C, D, E} and edges: (A,B,4), (A,C,2), (B,C,1), (B,D,5), (C,D,8), (C,E,10), (D,E,2), (A,D,7).
-List the edges selected in order and state the total weight.
+`{A, B, C, D, E}` and edges: (A,B,4), (A,C,2), (B,C,1), (B,D,5), (C,D,8), (C,E,10), (D,E,2),
+(A,D,7). List the edges selected in order and state the total weight.
 
 <details>
 <summary>Hint</summary>
@@ -585,13 +585,13 @@ would create a cycle (use the Union-Find concept to track connected components).
 
 **Kruskal's trace:**
 
-| Step | Edge | Weight | Action                       | MST edges            | Components        | Total |
-| ---- | ---- | ------ | ---------------------------- | -------------------- | ----------------- | ----- |
-| 1    | B–C  | 1      | Add                          | {B–C}                | {A},{B,C},{D},{E} | 1     |
-| 2    | A–C  | 2      | Add                          | {B–C, A–C}           | {A,B,C},{D},{E}   | 3     |
-| 3    | D–E  | 2      | Add                          | {B–C, A–C, D–E}      | {A,B,C},{D,E}     | 5     |
-| 4    | A–B  | 4      | Skip (A,B in same component) | {B–C, A–C, D–E}      | {A,B,C},{D,E}     | 5     |
-| 5    | B–D  | 5      | Add                          | {B–C, A–C, D–E, B–D} | {A,B,C,D,E}       | 10    |
+| Step | Edge | Weight | Action                       | MST edges              | Components          | Total |
+| ---- | ---- | ------ | ---------------------------- | ---------------------- | ------------------- | ----- |
+| 1    | B–C  | 1      | Add                          | `{B–C}`                | `{A},{B,C},{D},{E}` | 1     |
+| 2    | A–C  | 2      | Add                          | `{B–C, A–C}`           | `{A,B,C},{D},{E}`   | 3     |
+| 3    | D–E  | 2      | Add                          | `{B–C, A–C, D–E}`      | `{A,B,C},{D,E}`     | 5     |
+| 4    | A–B  | 4      | Skip (A,B in same component) | `{B–C, A–C, D–E}`      | `{A,B,C},{D,E}`     | 5     |
+| 5    | B–D  | 5      | Add                          | `{B–C, A–C, D–E, B–D}` | `{A,B,C,D,E}`       | 10    |
 
 All 5 vertices are now connected (4 edges in MST). Algorithm terminates.
 
@@ -599,7 +599,7 @@ All 5 vertices are now connected (4 edges in MST). Algorithm terminates.
 
 </details>
 
-**Problem 4.** Apply Kruskal's algorithm to find the MST of a graph with vertices {P, Q, R, S, T}
+**Problem 4.** Apply Kruskal's algorithm to find the MST of a graph with vertices `{P, Q, R, S, T}`
 and edges: (P,Q,3), (P,R,7), (Q,R,4), (Q,S,6), (R,S,8), (R,T,5), (S,T,2). List edges in selection
 order, show when cycles are rejected, and give the total MST weight.
 
@@ -616,12 +616,12 @@ connected components as you go.
 
 **Edges sorted by weight:** (S,T,2), (P,Q,3), (Q,R,4), (R,T,5), (Q,S,6), (P,R,7), (R,S,8).
 
-| Step | Edge | Weight | Action | MST edges            | Components        | Total |
-| ---- | ---- | ------ | ------ | -------------------- | ----------------- | ----- |
-| 1    | S–T  | 2      | Add    | {S–T}                | {S,T},{P},{Q},{R} | 2     |
-| 2    | P–Q  | 3      | Add    | {S–T, P–Q}           | {S,T},{P,Q},{R}   | 5     |
-| 3    | Q–R  | 4      | Add    | {S–T, P–Q, Q–R}      | {S,T},{P,Q,R}     | 9     |
-| 4    | R–T  | 5      | Add    | {S–T, P–Q, Q–R, R–T} | {P,Q,R,S,T}       | 14    |
+| Step | Edge | Weight | Action | MST edges              | Components          | Total |
+| ---- | ---- | ------ | ------ | ---------------------- | ------------------- | ----- |
+| 1    | S–T  | 2      | Add    | `{S–T}`                | `{S,T},{P},{Q},{R}` | 2     |
+| 2    | P–Q  | 3      | Add    | `{S–T, P–Q}`           | `{S,T},{P,Q},{R}`   | 5     |
+| 3    | Q–R  | 4      | Add    | `{S–T, P–Q, Q–R}`      | `{S,T},{P,Q,R}`     | 9     |
+| 4    | R–T  | 5      | Add    | `{S–T, P–Q, Q–R, R–T}` | `{P,Q,R,S,T}`       | 14    |
 
 All 5 vertices connected (4 edges). Algorithm terminates.
 
@@ -630,7 +630,7 @@ All 5 vertices connected (4 edges). Algorithm terminates.
 </details>
 
 **Problem 5.** Apply Prim's algorithm starting from vertex A to find the MST of a graph with
-vertices {A, B, C, D, E, F} and edges: (A,B,6), (A,C,1), (A,D,5), (B,C,5), (B,E,3), (C,D,5),
+vertices `{A, B, C, D, E, F}` and edges: (A,B,6), (A,C,1), (A,D,5), (B,C,5), (B,E,3), (C,D,5),
 (C,E,6), (C,F,4), (D,F,2), (E,F,6). Show the order vertices are added and the total weight.
 
 <details>
@@ -644,27 +644,27 @@ minimum-weight edge that connects a vertex in the MST to a vertex outside it.
 <details>
 <summary>Answer</summary>
 
-| Step | MST vertices  | Crossing edges (weight)                                | Min edge | Add vertex | MST weight |
-| ---- | ------------- | ------------------------------------------------------ | -------- | ---------- | ---------- |
-| 1    | {A}           | A–B(6), A–C(1), A–D(5)                                 | A–C(1)   | C          | 1          |
-| 2    | {A,C}         | A–B(6), A–D(5), B–C(5), C–D(5), C–E(6), C–F(4)         | C–F(4)   | F          | 5          |
-| 3    | {A,C,F}       | A–B(6), A–D(5), B–C(5), C–D(5), C–E(6), D–F(2), E–F(6) | D–F(2)   | D          | 7          |
-| 4    | {A,C,F,D}     | A–B(6), B–C(5), C–E(6), E–F(6)                         | B–C(5)   | B          | 12         |
-| 5    | {A,C,F,D,B}   | B–E(3), C–E(6), E–F(6)                                 | B–E(3)   | E          | 15         |
-| 6    | {A,C,F,D,B,E} | —                                                      | —        | Done       | 15         |
+| Step | MST vertices    | Crossing edges (weight)                                | Min edge | Add vertex | MST weight |
+| ---- | --------------- | ------------------------------------------------------ | -------- | ---------- | ---------- |
+| 1    | `{A}`           | A–B(6), A–C(1), A–D(5)                                 | A–C(1)   | C          | 1          |
+| 2    | `{A,C}`         | A–B(6), A–D(5), B–C(5), C–D(5), C–E(6), C–F(4)         | C–F(4)   | F          | 5          |
+| 3    | `{A,C,F}`       | A–B(6), A–D(5), B–C(5), C–D(5), C–E(6), D–F(2), E–F(6) | D–F(2)   | D          | 7          |
+| 4    | `{A,C,F,D}`     | A–B(6), B–C(5), C–E(6), E–F(6)                         | B–C(5)   | B          | 12         |
+| 5    | `{A,C,F,D,B}`   | B–E(3), C–E(6), E–F(6)                                 | B–E(3)   | E          | 15         |
+| 6    | `{A,C,F,D,B,E}` | —                                                      | —        | Done       | 15         |
 
 **MST edges:** A–C(1), C–F(4), D–F(2), B–C(5), B–E(3). **Total weight: 15.**
 
 </details>
 
 **Problem 6.** Apply Prim's algorithm starting from vertex S to find the MST of a graph with
-vertices {S, U, V, W, X} and edges: (S,U,2), (S,V,6), (U,V,5), (U,W,8), (V,W,3), (V,X,7), (W,X,4).
+vertices `{S, U, V, W, X}` and edges: (S,U,2), (S,V,6), (U,V,5), (U,W,8), (V,W,3), (V,X,7), (W,X,4).
 Show each step with the candidate edges and the vertex added.
 
 <details>
 <summary>Hint</summary>
 
-Start with MST = {S}. The crossing edges are those from S to non-MST vertices. Always pick the
+Start with MST = `{S}`. The crossing edges are those from S to non-MST vertices. Always pick the
 minimum-weight crossing edge.
 
 </details>
@@ -672,21 +672,22 @@ minimum-weight crossing edge.
 <details>
 <summary>Answer</summary>
 
-| Step | MST vertices | Crossing edges         | Min edge | Add  | Running total |
-| ---- | ------------ | ---------------------- | -------- | ---- | ------------- |
-| 1    | {S}          | S–U(2), S–V(6)         | S–U(2)   | U    | 2             |
-| 2    | {S,U}        | S–V(6), U–V(5), U–W(8) | U–V(5)   | V    | 7             |
-| 3    | {S,U,V}      | U–W(8), V–W(3), V–X(7) | V–W(3)   | W    | 10            |
-| 4    | {S,U,V,W}    | V–X(7), W–X(4)         | W–X(4)   | X    | 14            |
-| 5    | {S,U,V,W,X}  | —                      | —        | Done | 14            |
+| Step | MST vertices  | Crossing edges         | Min edge | Add  | Running total |
+| ---- | ------------- | ---------------------- | -------- | ---- | ------------- |
+| 1    | `{S}`         | S–U(2), S–V(6)         | S–U(2)   | U    | 2             |
+| 2    | `{S,U}`       | S–V(6), U–V(5), U–W(8) | U–V(5)   | V    | 7             |
+| 3    | `{S,U,V}`     | U–W(8), V–W(3), V–X(7) | V–W(3)   | W    | 10            |
+| 4    | `{S,U,V,W}`   | V–X(7), W–X(4)         | W–X(4)   | X    | 14            |
+| 5    | `{S,U,V,W,X}` | —                      | —        | Done | 14            |
 
 **MST edges:** S–U(2), U–V(5), V–W(3), W–X(4). **Total weight: 14.**
 
 </details>
 
-**Problem 7.** For an unweighted graph with vertices {A, B, C, D, E, F} and edges {A–B, A–C, B–D,
-C–D, D–E, D–F, E–F}, compare the process of finding the shortest path from A to F using Dijkstra's
-algorithm versus BFS. Explain why BFS is sufficient and more efficient for unweighted graphs.
+**Problem 7.** For an unweighted graph with vertices `{A, B, C, D, E, F}` and edges
+`{A–B, A–C, B–D, C–D, D–E, D–F, E–F}`, compare the process of finding the shortest path from A to F
+using Dijkstra's algorithm versus BFS. Explain why BFS is sufficient and more efficient for
+unweighted graphs.
 
 <details>
 <summary>Hint</summary>
@@ -763,11 +764,11 @@ paths.
 | Space            | $O(V)$      | $O(V)$                 |
 
 The priority queue operations (insert, extract-min, decrease-key) each take $O(\log V)$ time,
-whereas BFS's queue operations take $O(1)$ time. For an unweighted graph with $V = 10{,}000$ and
-$E = 50{,}000$:
+whereas BFS's queue operations take $O(1)$ time. For an unweighted graph with $V = 10,000$ and
+$E = 50,000$:
 
-- BFS: $\approx 60{,}000$ operations
-- Dijkstra: $\approx 60{,}000 \times 14 \approx 840{,}000$ operations
+- BFS: $\approx 60,000$ operations
+- Dijkstra: $\approx 60,000 \times 14 \approx 840,000$ operations
 
 **Conclusion:** BFS is always preferred for unweighted graphs due to its simpler $O(V + E)$
 complexity. Dijkstra's is only necessary when edge weights vary.
@@ -814,7 +815,7 @@ paths).
 
 </details>
 
-**Problem 10.** (Exam-style) A road network has vertices {A, B, C, D, E} with weighted edges:
+**Problem 10.** (Exam-style) A road network has vertices `{A, B, C, D, E}` with weighted edges:
 A–B(7), A–D(5), B–C(8), B–D(9), B–E(7), C–E(5), D–E(15).
 
 (a) Use Dijkstra's algorithm to find the shortest path from A to E. Show all working. (b) Use Prim's
@@ -859,10 +860,10 @@ objectives of each algorithm.
 
 | Step | MST vertices | Crossing edges                  | Min edge | Add | Total |
 | ---- | ------------ | ------------------------------- | -------- | --- | ----- |
-| 1    | {A}          | A–B(7), A–D(5)                  | A–D(5)   | D   | 5     |
-| 2    | {A,D}        | A–B(7), D–E(15), B–D(9)         | A–B(7)   | B   | 12    |
-| 3    | {A,D,B}      | D–E(15), B–C(8), B–E(7), B–D(9) | B–E(7)   | E   | 19    |
-| 4    | {A,D,B,E}    | B–C(8), C–E(5)                  | C–E(5)   | C   | 24    |
+| 1    | `{A}`        | A–B(7), A–D(5)                  | A–D(5)   | D   | 5     |
+| 2    | `{A,D}`      | A–B(7), D–E(15), B–D(9)         | A–B(7)   | B   | 12    |
+| 3    | `{A,D,B}`    | D–E(15), B–C(8), B–E(7), B–D(9) | B–E(7)   | E   | 19    |
+| 4    | `{A,D,B,E}`  | B–C(8), C–E(5)                  | C–E(5)   | C   | 24    |
 
 **MST edges:** A–D(5), A–B(7), B–E(7), C–E(5). **Total weight: 24.**
 

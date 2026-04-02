@@ -826,27 +826,27 @@ corresponding opening bracket.
 
 **Checking `{[()()]}`:**
 
-| Char | Stack (top on right) | Action              |
-| ---- | -------------------- | ------------------- |
-| {    | [{]                  | Push {              |
-| [    | [{, []               | Push [              |
-| (    | [{, [, (]            | Push (              |
-| )    | [{, []               | Pop ( — matches ) ✓ |
-| (    | [{, [, (]            | Push (              |
-| )    | [{, []               | Pop ( — matches ) ✓ |
-| ]    | [{]                  | Pop [ — matches ] ✓ |
-| }    | []                   | Pop { — matches } ✓ |
+| Char | Stack (top on right) | Action                  |
+| ---- | -------------------- | ----------------------- |
+| `{`  | `[{]`                | Push `{`                |
+| `[`  | `[{, []`             | Push `[`                |
+| `(`  | `[{, [, (]`          | Push `(`                |
+| `)`  | `[{, []`             | Pop `(` — matches `)` ✓ |
+| `(`  | `[{, [, (]`          | Push `(`                |
+| `)`  | `[{, []`             | Pop `(` — matches `)` ✓ |
+| `]`  | `[{]`                | Pop `[` — matches `]` ✓ |
+| `}`  | `[]`                 | Pop `{` — matches `}` ✓ |
 
 Stack is empty → **balanced**. ✓
 
 **Checking `[{(})]`:**
 
-| Char | Stack (top on right) | Action                         |
-| ---- | -------------------- | ------------------------------ |
-| [    | [[]                  | Push [                         |
-| {    | [{, {}               | Push {                         |
-| (    | [{, {, (]            | Push (                         |
-| }    | [{, (]               | Pop ( — expected } but got ( ✗ |
+| Char | Stack (top on right) | Action                               |
+| ---- | -------------------- | ------------------------------------ |
+| `[`  | `[[]`                | Push `[`                             |
+| `{`  | `[{, {}`             | Push `{`                             |
+| `(`  | `[{, {, (]`          | Push `(`                             |
+| `}`  | `[{, (]`             | Pop `(` — expected `}` but got `(` ✗ |
 
 Stack top is `(` but closing bracket is `}` — **mismatch** → **not balanced**. ✗
 
