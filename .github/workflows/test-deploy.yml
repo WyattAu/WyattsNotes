@@ -37,7 +37,7 @@ jobs:
       - name: Build production site
         run: pnpm run build
         env:
-          NODE_OPTIONS: --max-old-space-size=6144
+          NODE_OPTIONS: --max-old-space-size=8192
 
       - name: Validate build output
         run: |
