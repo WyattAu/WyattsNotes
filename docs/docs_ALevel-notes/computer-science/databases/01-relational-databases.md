@@ -1036,7 +1036,7 @@ $BD^+ = \{B, D\} \to \{B, D, E\}$ (B → E) $\to \{A, B, D, E\}$ (DE → A) $\to
 - BD: Can we remove B? $D^+ = \{D\} \neq$ all. Can we remove D? $B^+ = \{B, E\} \neq$ all. Both
   needed. ✓
 
-**Candidate keys: {AB, BC, BD}**
+**Candidate keys:** AB, BC, and BD
 
 **Prime attributes** (attributes that appear in at least one candidate key): A, B, C, D
 
