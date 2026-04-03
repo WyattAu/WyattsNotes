@@ -84,27 +84,24 @@ the buffer is repurposed to hold the heap pointer and metadata.
 ### SSO Thresholds by Implementation
 
 <Tabs>
-  <TabItem value="libstdcxx" label="libstdc++ (GCC)" default>
+<TabItem value="libstdcxx" label="libstdc++ (GCC)" default>
 
-- **Threshold:** 15 characters on 64-bit systems.
-- **Total object size:** 32 bytes.
-- **Detection:** The least significant bit of the first byte is set for short strings.
+**Threshold:** 15 characters on 64-bit systems. **Total object size:** 32 bytes. **Detection:** The
+least significant bit of the first byte is set for short strings.
 
-  </TabItem>
-  <TabItem value="libcxx" label="libc++ (Clang)">
+</TabItem>
+<TabItem value="libcxx" label="libc++ (Clang)">
 
-- **Threshold:** 22 characters on 64-bit systems.
-- **Total object size:** 24 bytes.
-- libc++ uses a more compact representation with the size stored in the last byte of the object.
+**Threshold:** 22 characters on 64-bit systems. **Total object size:** 24 bytes. libc++ uses a more
+compact representation with the size stored in the last byte of the object.
 
-  </TabItem>
-  <TabItem value="msvc" label="MSVC STL">
+</TabItem>
+<TabItem value="msvc" label="MSVC STL">
 
-- **Threshold:** 15 characters on 64-bit systems.
-- **Total object size:** 32 bytes.
-- MSVC stores the capacity and length in separate fields when in long mode, similar to libstdc++.
+**Threshold:** 15 characters on 64-bit systems. **Total object size:** 32 bytes. MSVC stores the
+capacity and length in separate fields when in long mode, similar to libstdc++.
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 ### When Heap Allocation Is Triggered
