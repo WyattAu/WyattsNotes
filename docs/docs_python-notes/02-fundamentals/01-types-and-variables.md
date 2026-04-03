@@ -2,18 +2,24 @@
 title: Types and Variables
 date: 2025-06-04T10:00:00.000Z
 tags:
-  - python
+  - Python
 categories:
-  - python
+  - Python
 slug: types-and-variables
 ---
 
 ## Python's Type System
 
-Python is **dynamically typed** and **strongly typed**. These two properties are frequently confused, so it is worth being precise about what they mean.
+Python is **dynamically typed** and **strongly typed**. These two properties are frequently
+confused, so it is worth being precise about what they mean.
 
-- **Dynamic typing:** Variables do not carry type annotations that the interpreter enforces at assignment. A name is bound to an object, and that object has a type. The same name can be rebound to an object of a completely different type at any time. Type checking happens at runtime, not at compile time.
-- **Strong typing:** The interpreter does not perform implicit type coercions that could silently lose data. Operations between incompatible types raise `TypeError` rather than silently converting one operand to match the other.
+- **Dynamic typing:** Variables do not carry type annotations that the interpreter enforces at
+  assignment. A name is bound to an object, and that object has a type. The same name can be rebound
+  to an object of a completely different type at any time. Type checking happens at runtime, not at
+  compile time.
+- **Strong typing:** The interpreter does not perform implicit type coercions that could silently
+  lose data. Operations between incompatible types raise `TypeError` rather than silently converting
+  one operand to match the other.
 
 ```python
 # Dynamic: the name 'x' is rebound to different types
@@ -26,31 +32,44 @@ x = [1, 2, 3]    # list
 [1, 2] + (3, 4)  # TypeError: can only concatenate list (not "tuple") to list
 ```
 
-Compare this with JavaScript (weakly and dynamically typed), where `"5" + 3` silently produces `"53"`, or C (statically and weakly typed), where implicit conversions between `int` and `float` occur without warning.
+Compare this with JavaScript (weakly and dynamically typed), where `"5" + 3` silently produces
+`"53"`, or C (statically and weakly typed), where implicit conversions between `int` and `float`
+occur without warning.
 
 ### Why Dynamic Typing
 
-Python's design prioritizes **developer velocity and flexibility** over static safety. Guido van Rossum designed Python for scripting, prototyping, and teaching -- domains where the overhead of type declarations is a genuine barrier. Dynamic typing enables:
+Python's design prioritizes **developer velocity and flexibility** over static safety. Guido van
+Rossum designed Python for scripting, prototyping, and teaching -- domains where the overhead of
+type declarations is a genuine barrier. Dynamic typing enables:
 
 - Rapid prototyping without ceremony
 - Highly polymorphic code (duck typing)
 - Metaprogramming and runtime introspection via `getattr`, `setattr`, `dir`, and `type`
 
-The trade-off is that errors a compiler would catch in statically-typed languages surface at runtime. Python mitigates this with extensive testing culture and, since Python 3.5, optional static type checking via type hints (discussed later).
+The trade-off is that errors a compiler would catch in statically-typed languages surface at
+runtime. Python mitigates this with extensive testing culture and, since Python 3.5, optional static
+type checking via type hints (discussed later).
 
 ### Why Strong Typing
 
-Strong typing prevents entire classes of bugs caused by silent data corruption. When `"2" * 3` produces `"222"` in Python, that is a deliberate, documented operation on the `str` type -- not an implicit coercion. The principle is that **surprising implicit behavior is more dangerous than explicit errors**.
+Strong typing prevents entire classes of bugs caused by silent data corruption. When `"2" * 3`
+produces `"222"` in Python, that is a deliberate, documented operation on the `str` type -- not an
+implicit coercion. The principle is that **surprising implicit behavior is more dangerous than
+explicit errors**.
 
 :::info
 
-Python does perform some coercions, but they are narrow and well-defined. For example, `bool` is a subclass of `int`, so `True + 1 == 2`. Numeric towers allow `int + float` because the `int` is promoted to `float`. These are the result of deliberate subtype relationships, not general-purpose coercion rules.
+Python does perform some coercions, but they are narrow and well-defined. For example, `bool` is a
+subclass of `int`, so `True + 1 == 2`. Numeric towers allow `int + float` because the `int` is
+promoted to `float`. These are the result of deliberate subtype relationships, not general-purpose
+coercion rules.
 
 :::
 
 ## Type Hierarchy
 
-Every object in Python is an instance of `object`. The built-in types form a hierarchy rooted at `object`, with `int`, `str`, and others as direct or indirect subclasses.
+Every object in Python is an instance of `object`. The built-in types form a hierarchy rooted at
+`object`, with `int`, `str`, and others as direct or indirect subclasses.
 
 ```mermaid
 classDiagram
@@ -156,7 +175,9 @@ classDiagram
     int <|-- bool
 ```
 
-This hierarchy has immediate consequences. Because `bool` is a subclass of `int`, `isinstance(True, int)` returns `True`. Because `type` is a subclass of `object`, and `object` is an instance of `type`, the relationship is circular -- this is the metaclass mechanism.
+This hierarchy has immediate consequences. Because `bool` is a subclass of `int`,
+`isinstance(True, int)` returns `True`. Because `type` is a subclass of `object`, and `object` is an
+instance of `type`, the relationship is circular -- this is the metaclass mechanism.
 
 ## Numeric Types
 
@@ -164,7 +185,9 @@ Python provides a rich set of numeric types that differ from most languages in c
 
 ### `int`: Arbitrary-Precision Integers
 
-Python integers have **no fixed bit width**. They are arbitrary-precision (bignum), limited only by available memory. There is no 32-bit or 64-bit overflow. This is a deliberate design choice that eliminates an entire class of bugs.
+Python integers have **no fixed bit width**. They are arbitrary-precision (bignum), limited only by
+available memory. There is no 32-bit or 64-bit overflow. This is a deliberate design choice that
+eliminates an entire class of bugs.
 
 ```python
 # No overflow, ever
@@ -176,9 +199,16 @@ import sys
 print(sys.maxsize)  # 2**63 - 1 on 64-bit systems (platform pointer size)
 ```
 
-**Why arbitrary precision?** In scripting and scientific computing, integer overflow is a frequent source of silent, catastrophic errors. Python's target audience (non-systems-programmers) is less likely to think about bit widths. The cost is performance: big-integer arithmetic is slower than fixed-width register arithmetic. Python accepts this trade-off because correctness is prioritized over raw speed.
+**Why arbitrary precision?** In scripting and scientific computing, integer overflow is a frequent
+source of silent, catastrophic errors. Python's target audience (non-systems-programmers) is less
+likely to think about bit widths. The cost is performance: big-integer arithmetic is slower than
+fixed-width register arithmetic. Python accepts this trade-off because correctness is prioritized
+over raw speed.
 
-Internally, CPython represents integers as variable-length arrays of digits (base $2^{30}$ on 64-bit systems). Small integers in the range $[-5, 256]$ are **pre-allocated and interned** -- every reference to `256` points to the same object. This is an optimization that exploits the fact that small integers appear frequently.
+Internally, CPython represents integers as variable-length arrays of digits (base $2^{30}$ on 64-bit
+systems). Small integers in the range $[-5, 256]$ are **pre-allocated and interned** -- every
+reference to `256` points to the same object. This is an optimization that exploits the fact that
+small integers appear frequently.
 
 ```python
 a = 256
@@ -192,13 +222,15 @@ print(a is b)   # False (not interned)
 
 :::warning
 
-Do not rely on integer interning behavior. Use `==` for equality comparison, never `is`. The interning range is a CPython implementation detail, not a language guarantee.
+Do not rely on integer interning behavior. Use `==` for equality comparison, never `is`. The
+interning range is a CPython implementation detail, not a language guarantee.
 
 :::
 
 ### `float`: IEEE 754 Double-Precision
 
-Python's `float` is a C `double` -- IEEE 754 binary64, providing approximately 15-17 significant decimal digits and a range of roughly $\pm 1.8 \times 10^{308}$.
+Python's `float` is a C `double` -- IEEE 754 binary64, providing approximately 15-17 significant
+decimal digits and a range of roughly $\pm 1.8 \times 10^{308}$.
 
 ```python
 # The classic floating-point precision issue
@@ -210,17 +242,23 @@ import math
 math.isclose(0.1 + 0.2, 0.3)  # True
 ```
 
-**Why not arbitrary-precision decimals?** Performance. IEEE 754 arithmetic is implemented in hardware on every modern CPU. A `float` addition is a single CPU instruction. Arbitrary-precision decimals would require software emulation, making all numeric computation orders of magnitude slower. The pragmatic choice is to use hardware floats by default and provide `decimal` and `fractions` modules for cases that require exact arithmetic.
+**Why not arbitrary-precision decimals?** Performance. IEEE 754 arithmetic is implemented in
+hardware on every modern CPU. A `float` addition is a single CPU instruction. Arbitrary-precision
+decimals would require software emulation, making all numeric computation orders of magnitude
+slower. The pragmatic choice is to use hardware floats by default and provide `decimal` and
+`fractions` modules for cases that require exact arithmetic.
 
 :::tip
 
-For financial calculations, use `decimal.Decimal` (exact decimal arithmetic) or `fractions.Fraction` (exact rational arithmetic). Never use `float` for money.
+For financial calculations, use `decimal.Decimal` (exact decimal arithmetic) or `fractions.Fraction`
+(exact rational arithmetic). Never use `float` for money.
 
 :::
 
 ### `complex`: Complex Numbers
 
-Python has first-class support for complex numbers, which is unusual for a general-purpose language. This reflects Python's roots in scientific computing.
+Python has first-class support for complex numbers, which is unusual for a general-purpose language.
+This reflects Python's roots in scientific computing.
 
 ```python
 z = 3 + 4j
@@ -232,7 +270,9 @@ print(abs(z))        # 5.0 (magnitude)
 
 ### `decimal.Decimal`: Exact Decimal Arithmetic
 
-The `decimal` module provides arbitrary-precision, base-10 arithmetic with configurable rounding. It is essential for financial calculations and any domain where binary floating-point representation errors are unacceptable.
+The `decimal` module provides arbitrary-precision, base-10 arithmetic with configurable rounding. It
+is essential for financial calculations and any domain where binary floating-point representation
+errors are unacceptable.
 
 ```python
 from decimal import Decimal, getcontext
@@ -247,7 +287,9 @@ getcontext().prec = 50
 print(Decimal(1) / Decimal(7))  # 0.14285714285714285714285714285714285714285714285714
 ```
 
-**Critical detail:** Always construct `Decimal` from strings, not floats. `Decimal(0.1)` captures the already-corrupted binary floating-point representation. `Decimal("0.1")` creates the exact decimal value.
+**Critical detail:** Always construct `Decimal` from strings, not floats. `Decimal(0.1)` captures
+the already-corrupted binary floating-point representation. `Decimal("0.1")` creates the exact
+decimal value.
 
 ```python
 from decimal import Decimal
@@ -258,7 +300,8 @@ print(Decimal("0.1")) # Decimal('0.1')
 
 ### `fractions.Fraction`: Exact Rational Arithmetic
 
-The `fractions` module stores numbers as exact numerator/denominator pairs. Arithmetic is performed exactly, with results automatically reduced to lowest terms.
+The `fractions` module stores numbers as exact numerator/denominator pairs. Arithmetic is performed
+exactly, with results automatically reduced to lowest terms.
 
 ```python
 from fractions import Fraction
@@ -274,17 +317,21 @@ As with `Decimal`, construct from strings when exactness matters.
 
 ### Numeric Tower
 
-Python's numeric types participate in a coercion hierarchy. When two numeric types interact, the "smaller" type is promoted to the "larger" type:
+Python's numeric types participate in a coercion hierarchy. When two numeric types interact, the
+"smaller" type is promoted to the "larger" type:
 
 ```
 bool -> int -> float -> complex
 ```
 
-This means `1 + 2.5` promotes the `int` to `float`, and `1 + 2j` promotes the `int` to `complex`. `Decimal` and `Fraction` do not participate in this tower -- mixing them with `float` or `complex` raises `TypeError`.
+This means `1 + 2.5` promotes the `int` to `float`, and `1 + 2j` promotes the `int` to `complex`.
+`Decimal` and `Fraction` do not participate in this tower -- mixing them with `float` or `complex`
+raises `TypeError`.
 
 ## Strings
 
-Python 3 strings are **Unicode strings** -- sequences of Unicode code points. This is a fundamental difference from Python 2, where the default string type was bytes.
+Python 3 strings are **Unicode strings** -- sequences of Unicode code points. This is a fundamental
+difference from Python 2, where the default string type was bytes.
 
 ### Immutability
 
@@ -298,14 +345,21 @@ print(s)             # "hello"
 
 **Why are strings immutable?** Several deliberate reasons:
 
-1. **Hashability.** Immutable objects can be hashed, which makes them usable as dictionary keys and set members. Mutable strings would require recalculating the hash on every modification, and would allow keys to change after insertion -- a source of subtle bugs.
-2. **Interning and sharing.** The interpreter can safely share identical string objects across the program. This reduces memory usage and enables fast identity comparisons.
-3. **Thread safety.** Immutable objects are inherently thread-safe. No lock is needed to read a string that another thread might be "modifying" (it cannot be).
-4. **C API compatibility.** CPython's internal representation can store C strings directly when all characters are ASCII, avoiding per-character encoding overhead. This optimization is only safe because strings cannot change.
+1. **Hashability.** Immutable objects can be hashed, which makes them usable as dictionary keys and
+   set members. Mutable strings would require recalculating the hash on every modification, and
+   would allow keys to change after insertion -- a source of subtle bugs.
+2. **Interning and sharing.** The interpreter can safely share identical string objects across the
+   program. This reduces memory usage and enables fast identity comparisons.
+3. **Thread safety.** Immutable objects are inherently thread-safe. No lock is needed to read a
+   string that another thread might be "modifying" (it cannot be).
+4. **C API compatibility.** CPython's internal representation can store C strings directly when all
+   characters are ASCII, avoiding per-character encoding overhead. This optimization is only safe
+   because strings cannot change.
 
 :::warning
 
-String immutability means that concatenation in a loop is $O(n^2)$ because each concatenation copies the entire string. Use `''.join(iterable)` for linear-time concatenation.
+String immutability means that concatenation in a loop is $O(n^2)$ because each concatenation copies
+the entire string. Use `''.join(iterable)` for linear-time concatenation.
 
 ```python
 # O(n^2) -- creates a new string on each iteration
@@ -321,13 +375,17 @@ result = ''.join(words)
 
 ### Encoding: UTF-8 Under the Hood
 
-Python source files are UTF-8 by default (PEP 3120). The internal representation of strings in CPython uses a flexible format:
+Python source files are UTF-8 by default (PEP 3120). The internal representation of strings in
+CPython uses a flexible format:
 
 - **Latin-1 (1 byte per character):** Used when all characters are in the range U+0000 to U+00FF.
-- **UCS-2 (2 bytes per character):** Used when all characters are in the range U+0000 to U+FFFF but some exceed U+00FF.
+- **UCS-2 (2 bytes per character):** Used when all characters are in the range U+0000 to U+FFFF but
+  some exceed U+00FF.
 - **UCS-4 (4 bytes per character):** Used when any character exceeds U+FFFF.
 
-This is a CPython implementation detail (PEP 393, "Flexible String Representation") that optimizes the common case of ASCII-only strings to use 1 byte per character, while still supporting the full Unicode range without surrogate pairs.
+This is a CPython implementation detail (PEP 393, "Flexible String Representation") that optimizes
+the common case of ASCII-only strings to use 1 byte per character, while still supporting the full
+Unicode range without surrogate pairs.
 
 ```python
 import sys
@@ -344,7 +402,8 @@ print(sys.getsizeof(emoji_str))  # 76 bytes (4 bytes/char + overhead)
 
 ### F-Strings (Formatted String Literals)
 
-F-strings (PEP 498, Python 3.6+) are the preferred way to embed expressions in strings. They are evaluated at runtime, not at definition time.
+F-strings (PEP 498, Python 3.6+) are the preferred way to embed expressions in strings. They are
+evaluated at runtime, not at definition time.
 
 ```python
 name = "World"
@@ -372,7 +431,9 @@ now = datetime.now()
 print(f"{now:%Y-%m-%d %H:%M}")    # "2025-06-04 10:00"
 ```
 
-F-strings are faster than `%`-formatting or `str.format()` because the bytecode compiler parses the f-string into a sequence of `FORMAT_VALUE` opcodes at compile time, avoiding the overhead of parsing a format string at runtime.
+F-strings are faster than `%`-formatting or `str.format()` because the bytecode compiler parses the
+f-string into a sequence of `FORMAT_VALUE` opcodes at compile time, avoiding the overhead of parsing
+a format string at runtime.
 
 ### Key String Methods
 
@@ -409,13 +470,15 @@ s.rstrip()     # "  Hello, World!"
 
 :::tip
 
-Prefer `str.startswith()` and `str.endswith()` over `str[:n] == prefix`. They are more readable and handle edge cases (empty strings, prefix longer than string) correctly.
+Prefer `str.startswith()` and `str.endswith()` over `str[:n] == prefix`. They are more readable and
+handle edge cases (empty strings, prefix longer than string) correctly.
 
 :::
 
 ## Booleans
 
-`bool` is a subclass of `int`. There are exactly two instances: `True` and `False`, which are the integer values 1 and 0 respectively.
+`bool` is a subclass of `int`. There are exactly two instances: `True` and `False`, which are the
+integer values 1 and 0 respectively.
 
 ```python
 print(isinstance(True, int))   # True
@@ -425,7 +488,8 @@ print(sum([True, False, True])) # 2
 
 ### Truthiness
 
-In boolean contexts (`if`, `while`, `and`, `or`, `not`, `bool()`), Python applies a well-defined set of rules to determine the truth value of any object:
+In boolean contexts (`if`, `while`, `and`, `or`, `not`, `bool()`), Python applies a well-defined set
+of rules to determine the truth value of any object:
 
 | Value                     | Truth Value | Reason                                           |
 | ------------------------- | :---------: | ------------------------------------------------ |
@@ -455,7 +519,8 @@ if not c:
 
 ### Short-Circuit Evaluation
 
-The `and` and `or` operators do not return booleans -- they return one of their operands. This is a deliberate design choice that enables concise conditional expressions.
+The `and` and `or` operators do not return booleans -- they return one of their operands. This is a
+deliberate design choice that enables concise conditional expressions.
 
 ```python
 # 'and' returns the first falsy value, or the last value if all are truthy
@@ -482,7 +547,8 @@ result = expensive_computation() if preconditions_met() else None
 config = os.environ.get("CONFIG_FILE") or default_path or "/etc/config.ini"
 ```
 
-Short-circuit evaluation also means the right operand is not evaluated if the result is already determined by the left operand. This is critical for avoiding errors:
+Short-circuit evaluation also means the right operand is not evaluated if the result is already
+determined by the left operand. This is critical for avoiding errors:
 
 ```python
 # Safe attribute access
@@ -498,7 +564,8 @@ result = value or 0                  # compute_default() is NOT called
 
 ## `None` and `NoneType`
 
-`None` is the singleton instance of `NoneType`. It represents the absence of a value -- Python's equivalent of `null`, `nil`, or `NoneType` in other languages.
+`None` is the singleton instance of `NoneType`. It represents the absence of a value -- Python's
+equivalent of `null`, `nil`, or `NoneType` in other languages.
 
 ```python
 print(type(None))    # <class 'NoneType'>
@@ -507,7 +574,9 @@ print(None is None)  # True (identity, not equality)
 
 ### Why `None` Is a Singleton
 
-There is exactly one `None` object in any Python process. This is guaranteed by the language specification. The consequence is that identity comparison (`is`) is the correct way to check for `None`:
+There is exactly one `None` object in any Python process. This is guaranteed by the language
+specification. The consequence is that identity comparison (`is`) is the correct way to check for
+`None`:
 
 ```python
 # Correct
@@ -523,11 +592,15 @@ if x == None:
     pass
 ```
 
-Using `is None` rather than `== None` is important because a custom class can override `__eq__` to return `True` when compared to `None`, which would be semantically incorrect. The `is` operator cannot be overridden.
+Using `is None` rather than `== None` is important because a custom class can override `__eq__` to
+return `True` when compared to `None`, which would be semantically incorrect. The `is` operator
+cannot be overridden.
 
 ### Default Argument Pitfall
 
-The most common `None`-related bug involves mutable default arguments. Because default argument values are evaluated once at function definition time (not at call time), using a mutable default causes all calls to share the same object.
+The most common `None`-related bug involves mutable default arguments. Because default argument
+values are evaluated once at function definition time (not at call time), using a mutable default
+causes all calls to share the same object.
 
 ```python
 # BUG: 'items' is created once and shared across all calls
@@ -551,13 +624,17 @@ print(add_item("b"))  # ["b"]  -- fresh list each time
 
 :::warning
 
-This is one of the most common bugs in Python code. Linters like `pylint` and `ruff` flag mutable default arguments. The pattern `def f(arg=None): if arg is None: arg = ...` is the standard solution.
+This is one of the most common bugs in Python code. Linters like `pylint` and `ruff` flag mutable
+default arguments. The pattern `def f(arg=None): if arg is None: arg = ...` is the standard
+solution.
 
 :::
 
 ## Type Hints (PEP 484)
 
-Python 3.5 introduced type hints via PEP 484, allowing optional static type annotations that external tools (mypy, pyright) can check without executing the code. Type hints do not affect runtime behavior -- they are completely ignored by the interpreter.
+Python 3.5 introduced type hints via PEP 484, allowing optional static type annotations that
+external tools (mypy, pyright) can check without executing the code. Type hints do not affect
+runtime behavior -- they are completely ignored by the interpreter.
 
 ### Basic Syntax
 
@@ -573,7 +650,8 @@ optional: str | None = None
 
 ### The `typing` Module and Modern Alternatives
 
-Since Python 3.9, built-in collections (`list`, `dict`, `set`, `tuple`) can be used directly in type annotations, replacing the `typing` module equivalents:
+Since Python 3.9, built-in collections (`list`, `dict`, `set`, `tuple`) can be used directly in type
+annotations, replacing the `typing` module equivalents:
 
 ```python
 # Python 3.9+ (preferred)
@@ -588,7 +666,8 @@ def process(items: List[str]) -> Dict[str, int]:
 
 ### `TypeVar` and Generic Functions
 
-`TypeVar` enables writing generic functions where the relationship between input and output types must be preserved:
+`TypeVar` enables writing generic functions where the relationship between input and output types
+must be preserved:
 
 ```python
 from typing import TypeVar
@@ -634,7 +713,9 @@ def get_name(obj: T) -> str:
 
 ### `Protocol`: Structural Subtyping (PEP 544)
 
-Python's type system supports both nominal typing (based on inheritance) and structural typing (based on shape). `Protocol` enables structural typing -- a type satisfies a protocol if it has the required attributes and methods, regardless of inheritance.
+Python's type system supports both nominal typing (based on inheritance) and structural typing
+(based on shape). `Protocol` enables structural typing -- a type satisfies a protocol if it has the
+required attributes and methods, regardless of inheritance.
 
 ```python
 from typing import Protocol
@@ -661,7 +742,8 @@ shutdown(NetworkConnection()) # OK -- has .close()
 shutdown(InvalidResource())   # type error -- no .close()
 ```
 
-This is Python's formalization of duck typing. It allows type-checked code to remain as flexible as runtime duck typing while providing static guarantees.
+This is Python's formalization of duck typing. It allows type-checked code to remain as flexible as
+runtime duck typing while providing static guarantees.
 
 ### `Callable` and `Union`
 
@@ -693,7 +775,8 @@ def process(value: Union[int, str, None]) -> str:
 
 ### `typing.cast`
 
-When you know more about a type than the type checker does, use `cast` to assert the type without any runtime overhead:
+When you know more about a type than the type checker does, use `cast` to assert the type without
+any runtime overhead:
 
 ```python
 from typing import cast, Any
@@ -706,7 +789,8 @@ names: list[str] = cast(list[str], data)
 
 ## Type Checking with `mypy`
 
-`mypy` is the reference static type checker for Python. It analyzes source code without executing it and reports type errors.
+`mypy` is the reference static type checker for Python. It analyzes source code without executing it
+and reports type errors.
 
 ### Installation and Basic Usage
 
@@ -736,7 +820,9 @@ python_version = "3.12"
 
 ### Stub Files (`.pyi`)
 
-For third-party libraries without type hints, you can write stub files. A stub file has the same module path as the library but with a `.pyi` extension and contains only type signatures -- no implementations.
+For third-party libraries without type hints, you can write stub files. A stub file has the same
+module path as the library but with a `.pyi` extension and contains only type signatures -- no
+implementations.
 
 ```python
 # my_library.pyi
@@ -748,10 +834,14 @@ def connect(host: str, port: int = 5432) -> Connection: ...
 
 Type checkers are best-effort static analysis tools. They have inherent limitations:
 
-1. **No runtime enforcement.** Type hints are annotations, not constraints. `mypy` catches errors at development time, but a misconfigured CI pipeline means errors can reach production.
-2. **`Any` is infectious.** Once a value has type `Any`, it propagates through the entire call graph, effectively disabling type checking for anything that touches it.
-3. **Dynamically dispatched code is hard to type.** `getattr`, `__getattr__`, and `**kwargs` defeat static analysis.
-4. **Generics are erased at runtime.** `list[str]` and `list[int]` are both `list` at runtime. `isinstance(x, list[str])` raises a `TypeError`.
+1. **No runtime enforcement.** Type hints are annotations, not constraints. `mypy` catches errors at
+   development time, but a misconfigured CI pipeline means errors can reach production.
+2. **`Any` is infectious.** Once a value has type `Any`, it propagates through the entire call
+   graph, effectively disabling type checking for anything that touches it.
+3. **Dynamically dispatched code is hard to type.** `getattr`, `__getattr__`, and `**kwargs` defeat
+   static analysis.
+4. **Generics are erased at runtime.** `list[str]` and `list[int]` are both `list` at runtime.
+   `isinstance(x, list[str])` raises a `TypeError`.
 
 ```python
 # This raises TypeError at runtime -- generics are erased
@@ -765,7 +855,9 @@ isinstance([1, 2, 3], list)  # True
 
 ### Assignment Is Binding, Not Declaration
 
-In Python, `x = 5` does not declare a variable named `x` of type `int`. It creates a name `x` in the current scope and binds it to the object `5`. The name is an entry in the current namespace's dictionary; the object exists independently on the heap.
+In Python, `x = 5` does not declare a variable named `x` of type `int`. It creates a name `x` in the
+current scope and binds it to the object `5`. The name is an entry in the current namespace's
+dictionary; the object exists independently on the heap.
 
 ```python
 a = [1, 2, 3]
@@ -775,7 +867,9 @@ print(a)    # [1, 2, 3, 4] -- 'a' sees the change
 print(a is b)  # True
 ```
 
-This is the most fundamental concept in Python's object model: **names are references to objects, not containers for values**. Understanding this eliminates the majority of beginner confusion about Python's behavior.
+This is the most fundamental concept in Python's object model: **names are references to objects,
+not containers for values**. Understanding this eliminates the majority of beginner confusion about
+Python's behavior.
 
 ### Multiple Assignment and Unpacking
 
@@ -799,7 +893,9 @@ print(tail)   # 5
 
 ### Augmented Assignment
 
-Augmented assignment operators (`+=`, `-=`, `*=`, etc.) are syntactic sugar, but they are not always equivalent to the expanded form. The key difference is that `x += y` calls `__iadd__` if it exists, which allows in-place modification:
+Augmented assignment operators (`+=`, `-=`, `*=`, etc.) are syntactic sugar, but they are not always
+equivalent to the expanded form. The key difference is that `x += y` calls `__iadd__` if it exists,
+which allows in-place modification:
 
 ```python
 a = [1, 2, 3]
@@ -811,7 +907,8 @@ a = a + [5]  # calls list.__add__, creates a new list
 print(a is b)  # False -- new object
 ```
 
-For immutable types (`int`, `str`, `tuple`), there is no `__iadd__`, so `+=` is equivalent to `= +` -- it always creates a new object.
+For immutable types (`int`, `str`, `tuple`), there is no `__iadd__`, so `+=` is equivalent to `= +`
+-- it always creates a new object.
 
 ### Scope: LEGB Rule
 
@@ -841,7 +938,8 @@ print(x)          # "global"
 
 ### The `global` and `nonlocal` Keywords
 
-Assignment to a name inside a function creates a local variable by default, even if a name with the same spelling exists in an outer scope. Use `global` or `nonlocal` to override this.
+Assignment to a name inside a function creates a local variable by default, even if a name with the
+same spelling exists in an outer scope. Use `global` or `nonlocal` to override this.
 
 ```python
 count = 0
@@ -863,6 +961,8 @@ def make_counter():
 
 :::warning
 
-Overuse of `global` is a code smell. It creates hidden coupling between functions and makes code difficult to test and reason about. Prefer passing state explicitly through function parameters or using classes.
+Overuse of `global` is a code smell. It creates hidden coupling between functions and makes code
+difficult to test and reason about. Prefer passing state explicitly through function parameters or
+using classes.
 
 :::

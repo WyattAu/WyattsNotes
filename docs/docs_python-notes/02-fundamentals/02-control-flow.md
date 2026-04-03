@@ -2,9 +2,9 @@
 title: Control Flow
 date: 2025-06-04T11:00:00.000Z
 tags:
-  - python
+  - Python
 categories:
-  - python
+  - Python
 slug: control-flow
 ---
 
@@ -12,7 +12,8 @@ slug: control-flow
 
 ### `if` / `elif` / `else`
 
-Python's conditional statements are the most basic form of control flow. Unlike many languages, Python uses **indentation** rather than braces or keywords to delimit blocks.
+Python's conditional statements are the most basic form of control flow. Unlike many languages,
+Python uses **indentation** rather than braces or keywords to delimit blocks.
 
 ```python
 def classify_temperature(temp_celsius: float) -> str:
@@ -28,7 +29,9 @@ def classify_temperature(temp_celsius: float) -> str:
         return "hot"
 ```
 
-The condition expression can be any Python object. Python evaluates its truthiness using the `__bool__()` protocol described in the previous chapter. There is no requirement that the condition be a boolean -- this is consistent with Python's broader philosophy of duck typing.
+The condition expression can be any Python object. Python evaluates its truthiness using the
+`__bool__()` protocol described in the previous chapter. There is no requirement that the condition
+be a boolean -- this is consistent with Python's broader philosophy of duck typing.
 
 ```python
 # All of these are valid conditional expressions
@@ -44,27 +47,43 @@ if not None:
 
 ### Why Indentation for Blocks
 
-This is one of Python's most controversial design decisions and the source of the most frequent criticism from programmers coming from brace-delimited languages. The rationale is both philosophical and practical:
+This is one of Python's most controversial design decisions and the source of the most frequent
+criticism from programmers coming from brace-delimited languages. The rationale is both
+philosophical and practical:
 
-1. **Eliminates a class of bugs.** In C-style languages, mismatched braces are a persistent source of errors. The compiler cannot detect whether the indentation reflects the programmer's intent because the braces define the actual structure. Python makes the indentation the structure -- what you see is what the interpreter sees.
+1. **Eliminates a class of bugs.** In C-style languages, mismatched braces are a persistent source
+   of errors. The compiler cannot detect whether the indentation reflects the programmer's intent
+   because the braces define the actual structure. Python makes the indentation the structure --
+   what you see is what the interpreter sees.
 
-2. **Enforces a single canonical style.** Every Python program has consistent block structure. There is no debate over K&R versus Allman versus GNU indentation style because there is no choice. This reduces cognitive overhead in code reviews and eliminates formatting arguments.
+2. **Enforces a single canonical style.** Every Python program has consistent block structure. There
+   is no debate over K&R versus Allman versus GNU indentation style because there is no choice. This
+   reduces cognitive overhead in code reviews and eliminates formatting arguments.
 
-3. **Reduces visual noise.** Braces, semicolons, and explicit block terminators are syntactic overhead that provides no semantic information beyond what indentation already conveys. Removing them makes code more compact without sacrificing readability.
+3. **Reduces visual noise.** Braces, semicolons, and explicit block terminators are syntactic
+   overhead that provides no semantic information beyond what indentation already conveys. Removing
+   them makes code more compact without sacrificing readability.
 
-4. **Historical precedent.** Guido van Rossum was influenced by ABC (a teaching language developed at CWI) and Haskell, both of which use indentation-based syntax. The choice was deliberate, not accidental.
+4. **Historical precedent.** Guido van Rossum was influenced by ABC (a teaching language developed
+   at CWI) and Haskell, both of which use indentation-based syntax. The choice was deliberate, not
+   accidental.
 
-The trade-off is sensitivity to whitespace. Mixing tabs and spaces, or inconsistent indentation, causes `IndentationError`. Python 3 disallows mixing tabs and spaces entirely within the same file. PEP 8 mandates 4 spaces per indentation level.
+The trade-off is sensitivity to whitespace. Mixing tabs and spaces, or inconsistent indentation,
+causes `IndentationError`. Python 3 disallows mixing tabs and spaces entirely within the same file.
+PEP 8 mandates 4 spaces per indentation level.
 
 :::warning
 
-Python 3 raises `TabError: inconsistent use of tabs and spaces in indentation` if a file mixes tabs and spaces. Configure your editor to insert 4 spaces on Tab. Most linters and formatters (`ruff`, `black`) enforce this automatically.
+Python 3 raises `TabError: inconsistent use of tabs and spaces in indentation` if a file mixes tabs
+and spaces. Configure your editor to insert 4 spaces on Tab. Most linters and formatters (`ruff`,
+`black`) enforce this automatically.
 
 :::
 
 ### Conditional Expressions (Ternary)
 
-Python provides a conditional expression (often called the ternary operator) with an ordering that reflects the English sentence structure:
+Python provides a conditional expression (often called the ternary operator) with an ordering that
+reflects the English sentence structure:
 
 ```python
 # Python's ternary: value_if_true IF condition ELSE value_if_false
@@ -77,7 +96,10 @@ else:
     status = "minor"
 ```
 
-Note the ordering: the value comes first, then the condition. This differs from C's `condition ? value_if_true : value_if_false`. The rationale is that in natural English, you state the assertion first ("it is an adult") and then qualify it ("if age >= 18, otherwise it is a minor").
+Note the ordering: the value comes first, then the condition. This differs from C's
+`condition ? value_if_true : value_if_false`. The rationale is that in natural English, you state
+the assertion first ("it is an adult") and then qualify it ("if age >= 18, otherwise it is a
+minor").
 
 Nested ternary expressions are technically possible but should be avoided:
 
@@ -96,19 +118,30 @@ def sign(x: float) -> str:
 
 ## Structural Pattern Matching (`match` / `case`)
 
-Python 3.10 introduced structural pattern matching via PEP 634. This is not a C-style `switch` statement -- it is a fundamentally more powerful construct that performs **destructuring** of data structures.
+Python 3.10 introduced structural pattern matching via PEP 634. This is not a C-style `switch`
+statement -- it is a fundamentally more powerful construct that performs **destructuring** of data
+structures.
 
 ### Why Structural Pattern Matching, Not C-Style Switch
 
-C's `switch` is essentially a multi-way `if/elif` chain with fall-through semantics. It compares a single value against compile-time constants. Python's `match/case` does something fundamentally different: it matches the **structure** of the subject against a pattern, binding names to matched sub-components.
+C's `switch` is essentially a multi-way `if/elif` chain with fall-through semantics. It compares a
+single value against compile-time constants. Python's `match/case` does something fundamentally
+different: it matches the **structure** of the subject against a pattern, binding names to matched
+sub-components.
 
 The design was driven by several considerations:
 
-1. **Python already has dictionary dispatch.** The use case for simple value-based switching is already well-served by dictionary dispatch: `{"a": func_a, "b": func_b}[key]()`. Adding a C-style switch would be redundant.
+1. **Python already has dictionary dispatch.** The use case for simple value-based switching is
+   already well-served by dictionary dispatch: `{"a": func_a, "b": func_b}[key]()`. Adding a C-style
+   switch would be redundant.
 
-2. **Algebraic data types are increasingly common.** Python codebases increasingly use `dataclasses`, `NamedTuple`, and `TypedDict` to model structured data. Pattern matching provides a natural way to destructure these types.
+2. **Algebraic data types are increasingly common.** Python codebases increasingly use
+   `dataclasses`, `NamedTuple`, and `TypedDict` to model structured data. Pattern matching provides
+   a natural way to destructure these types.
 
-3. **No fall-through.** Fall-through is the most error-prone feature of C's `switch`. Every `case` in Python's `match` is exclusive -- there is no way to accidentally fall through to the next case. This eliminates an entire class of bugs.
+3. **No fall-through.** Fall-through is the most error-prone feature of C's `switch`. Every `case`
+   in Python's `match` is exclusive -- there is no way to accidentally fall through to the next
+   case. This eliminates an entire class of bugs.
 
 ### Literal Patterns
 
@@ -125,7 +158,8 @@ def http_status_text(code: int) -> str:
             return "Unknown"
 ```
 
-The `_` is the wildcard pattern that matches anything. It is a common convention to place it last as the default case.
+The `_` is the wildcard pattern that matches anything. It is a common convention to place it last as
+the default case.
 
 ### Capture Patterns and Guards
 
@@ -179,7 +213,9 @@ def area(shape: Circle | Rectangle | Triangle) -> float:
             return 0.5 * b * h
 ```
 
-This destructuring works because the pattern matches the keyword arguments of the class constructor. For plain classes (not dataclasses), you need to implement `__match_args__` or use positional patterns:
+This destructuring works because the pattern matches the keyword arguments of the class constructor.
+For plain classes (not dataclasses), you need to implement `__match_args__` or use positional
+patterns:
 
 ```python
 class Point:
@@ -228,7 +264,9 @@ flowchart TD
 
 :::info
 
-Pattern matching is exhaustive only if you provide a wildcard `_` case. Without it, no match simply means the `match` block is skipped entirely -- it does not raise an error. This differs from Rust's `match`, which requires exhaustiveness at compile time.
+Pattern matching is exhaustive only if you provide a wildcard `_` case. Without it, no match simply
+means the `match` block is skipped entirely -- it does not raise an error. This differs from Rust's
+`match`, which requires exhaustiveness at compile time.
 
 :::
 
@@ -236,7 +274,8 @@ Pattern matching is exhaustive only if you provide a wildcard `_` case. Without 
 
 ### `for` Loops and the Iterator Protocol
 
-Python's `for` loop is fundamentally different from C's `for (init; condition; increment)` loop. It operates on **iterables** -- objects that implement the iterator protocol.
+Python's `for` loop is fundamentally different from C's `for (init; condition; increment)` loop. It
+operates on **iterables** -- objects that implement the iterator protocol.
 
 ```python
 # The 'for' loop is syntactic sugar for this:
@@ -253,13 +292,18 @@ while True:
     process(item)
 ```
 
-This design means that Python's `for` loop can iterate over anything that produces values sequentially -- lists, strings, files, database cursors, generator functions, infinite sequences. The iterator protocol is the universal interface for sequential access in Python.
+This design means that Python's `for` loop can iterate over anything that produces values
+sequentially -- lists, strings, files, database cursors, generator functions, infinite sequences.
+The iterator protocol is the universal interface for sequential access in Python.
 
-An object is iterable if it implements `__iter__()` (returning an iterator) or `__getitem__()` (for sequence-style access with integer indices starting at 0). An iterator is an object that implements `__next__()` (returning the next value) and raises `StopIteration` when exhausted.
+An object is iterable if it implements `__iter__()` (returning an iterator) or `__getitem__()` (for
+sequence-style access with integer indices starting at 0). An iterator is an object that implements
+`__next__()` (returning the next value) and raises `StopIteration` when exhausted.
 
 ### `range`
 
-`range` produces an arithmetic sequence of integers. It is lazy -- it does not materialize the entire sequence in memory, regardless of the size.
+`range` produces an arithmetic sequence of integers. It is lazy -- it does not materialize the
+entire sequence in memory, regardless of the size.
 
 ```python
 # range(stop)
@@ -283,11 +327,14 @@ print(5 in range(1000000))    # True, instant check
 print(len(range(1000000)))    # 1000000
 ```
 
-`range` objects implement the sequence protocol (`__contains__`, `__len__`, `__getitem__`) with $O(1)$ membership testing. `x in range(n)` does not iterate through the range -- it computes the answer directly.
+`range` objects implement the sequence protocol (`__contains__`, `__len__`, `__getitem__`) with
+$O(1)$ membership testing. `x in range(n)` does not iterate through the range -- it computes the
+answer directly.
 
 ### `enumerate`
 
-`enumerate` wraps an iterable and yields `(index, value)` pairs. It is the Pythonic alternative to manual counter variables.
+`enumerate` wraps an iterable and yields `(index, value)` pairs. It is the Pythonic alternative to
+manual counter variables.
 
 ```python
 words = ["apple", "banana", "cherry"]
@@ -330,7 +377,8 @@ print(list(zip_longest(names, scores, fillvalue="N/A")))
 
 ### `itertools`
 
-The `itertools` module provides a collection of fast, memory-efficient tools for working with iterators. These are building blocks for functional-style programming.
+The `itertools` module provides a collection of fast, memory-efficient tools for working with
+iterators. These are building blocks for functional-style programming.
 
 ```python
 from itertools import chain, islice, cycle, repeat, takewhile, dropwhile, groupby, product, permutations, combinations
@@ -370,7 +418,8 @@ print(list(combinations([1, 2, 3, 4], 2)))
 
 ### `while` Loops
 
-`while` loops repeat as long as a condition remains truthy. They are appropriate when the number of iterations is not known in advance.
+`while` loops repeat as long as a condition remains truthy. They are appropriate when the number of
+iterations is not known in advance.
 
 ```python
 import random
@@ -396,13 +445,16 @@ def converge_pi(target_error: float = 1e-5) -> float:
 
 :::warning
 
-A `while True` loop with no `break` condition is an infinite loop. While occasionally intentional (server main loops, event loops), an accidental infinite loop freezes the program. Always ensure there is a reachable termination condition.
+A `while True` loop with no `break` condition is an infinite loop. While occasionally intentional
+(server main loops, event loops), an accidental infinite loop freezes the program. Always ensure
+there is a reachable termination condition.
 
 :::
 
 ### `break`, `continue`, and Loop `else`
 
-Python loops support `break` (exit the loop immediately), `continue` (skip to the next iteration), and an `else` clause that executes only when the loop completes without hitting `break`.
+Python loops support `break` (exit the loop immediately), `continue` (skip to the next iteration),
+and an `else` clause that executes only when the loop completes without hitting `break`.
 
 ```python
 # break: exit the loop
@@ -444,7 +496,10 @@ def binary_search(sorted_list: list[int], target: int) -> int | None:
         return None
 ```
 
-The loop `else` clause is one of Python's most misunderstood features. It is not analogous to the `else` in `if/else`. It executes when the loop condition becomes false (for `while`) or the iterable is exhausted (for `for`), but not when the loop is exited via `break`. The mental model is: the `else` clause is the "no break" clause.
+The loop `else` clause is one of Python's most misunderstood features. It is not analogous to the
+`else` in `if/else`. It executes when the loop condition becomes false (for `while`) or the iterable
+is exhausted (for `for`), but not when the loop is exited via `break`. The mental model is: the
+`else` clause is the "no break" clause.
 
 ```mermaid
 flowchart TD
@@ -460,7 +515,8 @@ flowchart TD
 
 ### List Comprehensions
 
-List comprehensions provide a concise syntax for creating lists from iterables. They are more readable and often faster than equivalent `for` loops with `append`.
+List comprehensions provide a concise syntax for creating lists from iterables. They are more
+readable and often faster than equivalent `for` loops with `append`.
 
 ```python
 # Basic comprehension
@@ -481,11 +537,13 @@ flat = [element for row in matrix for element in row]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-The execution order of nested comprehensions follows the same left-to-right reading order as nested `for` loops. The first `for` is the outer loop, the second `for` is the inner loop.
+The execution order of nested comprehensions follows the same left-to-right reading order as nested
+`for` loops. The first `for` is the outer loop, the second `for` is the inner loop.
 
 :::warning
 
-List comprehensions create the entire list in memory. For large datasets, prefer generator expressions. A comprehension over a billion-element range would consume all available memory.
+List comprehensions create the entire list in memory. For large datasets, prefer generator
+expressions. A comprehension over a billion-element range would consume all available memory.
 
 :::
 
@@ -523,7 +581,8 @@ unique_squares = {x**2 for x in data}
 
 ### Generator Expressions
 
-Generator expressions have the same syntax as list comprehensions but use parentheses instead of brackets. They produce values lazily, one at a time, and do not store the entire result in memory.
+Generator expressions have the same syntax as list comprehensions but use parentheses instead of
+brackets. They produce values lazily, one at a time, and do not store the entire result in memory.
 
 ```python
 # List comprehension: creates full list in memory
@@ -548,13 +607,17 @@ print(list(result))  # [1, 5, 9, 13, ...]
 
 :::tip
 
-When a comprehension is the sole argument to a function, the enclosing parentheses can be omitted: `sum(x**2 for x in range(100))` is valid. The generator expression syntax `(x**2 for x in range(100))` is required in all other contexts.
+When a comprehension is the sole argument to a function, the enclosing parentheses can be omitted:
+`sum(x**2 for x in range(100))` is valid. The generator expression syntax
+`(x**2 for x in range(100))` is required in all other contexts.
 
 :::
 
 ### Comprehension Scope
 
-Comprehensions have their own local scope in Python 3. Variables assigned inside a comprehension do not leak into the enclosing scope (this was a change from Python 2, where list comprehensions leaked the loop variable).
+Comprehensions have their own local scope in Python 3. Variables assigned inside a comprehension do
+not leak into the enclosing scope (this was a change from Python 2, where list comprehensions leaked
+the loop variable).
 
 ```python
 # Python 3: comprehension has its own scope
@@ -569,7 +632,9 @@ result = [y for y in range(10)]
 
 ## The Walrus Operator (`:=`)
 
-The assignment expression (walrus operator, PEP 572, Python 3.8+) allows you to assign a value to a variable as part of an expression. This eliminates the need for separate assignment statements in cases where you want to both use a value and give it a name.
+The assignment expression (walrus operator, PEP 572, Python 3.8+) allows you to assign a value to a
+variable as part of an expression. This eliminates the need for separate assignment statements in
+cases where you want to both use a value and give it a name.
 
 ```python
 # Without walrus: two steps
@@ -593,11 +658,14 @@ if (match := pattern.search(text)) and match.group(1).isdigit():
     number = int(match.group(1))
 ```
 
-The walrus operator has lower precedence than most operators but higher than commas. Parentheses are required in comprehensions and `if`/`while` conditions.
+The walrus operator has lower precedence than most operators but higher than commas. Parentheses are
+required in comprehensions and `if`/`while` conditions.
 
 :::warning
 
-The walrus operator should be used sparingly. It improves clarity when it avoids redundant computation or awkward workarounds. It harms clarity when it makes a single line do too much. The guiding principle: use it when it eliminates a clear redundancy, not just to save a line.
+The walrus operator should be used sparingly. It improves clarity when it avoids redundant
+computation or awkward workarounds. It harms clarity when it makes a single line do too much. The
+guiding principle: use it when it eliminates a clear redundancy, not just to save a line.
 
 :::
 
@@ -605,7 +673,9 @@ The walrus operator should be used sparingly. It improves clarity when it avoids
 
 ### `try` / `except` / `else` / `finally`
 
-Python's exception handling mechanism is the primary error-handling idiom. Unlike return codes or error objects, exceptions decouple error detection from error handling -- the function that detects the error does not need to know how to handle it.
+Python's exception handling mechanism is the primary error-handling idiom. Unlike return codes or
+error objects, exceptions decouple error detection from error handling -- the function that detects
+the error does not need to know how to handle it.
 
 ```python
 def read_config(path: str) -> dict:
@@ -634,7 +704,8 @@ The four clauses have distinct roles:
 | `else`    | No exception is raised in the `try` block | Code that depends on the `try` succeeding |
 | `finally` | Always, even if an exception is unhandled | Cleanup that must happen regardless       |
 
-The `else` clause exists to prevent a subtle bug: catching an exception that was raised by the error-handling code itself, not by the code you intended to protect.
+The `else` clause exists to prevent a subtle bug: catching an exception that was raised by the
+error-handling code itself, not by the code you intended to protect.
 
 ```python
 # BUG: if json.load succeeds but log.info raises an exception,
@@ -656,7 +727,8 @@ else:
 
 ### Exception Hierarchy
 
-All built-in exceptions inherit from `BaseException`. The hierarchy matters because `except` clauses catch the specified exception and all its subclasses.
+All built-in exceptions inherit from `BaseException`. The hierarchy matters because `except` clauses
+catch the specified exception and all its subclasses.
 
 ```mermaid
 flowchart TD
@@ -682,7 +754,9 @@ flowchart TD
 
 :::warning
 
-Never use a bare `except:` (which catches everything including `SystemExit` and `KeyboardInterrupt`) or `except Exception` without careful consideration. Catching too broadly masks real errors and makes debugging extremely difficult. Catch the most specific exception possible.
+Never use a bare `except:` (which catches everything including `SystemExit` and `KeyboardInterrupt`)
+or `except Exception` without careful consideration. Catching too broadly masks real errors and
+makes debugging extremely difficult. Catch the most specific exception possible.
 
 :::
 
@@ -706,7 +780,8 @@ class ValidationError(AppError):
         super().__init__(f"Validation failed for '{field}': {message}")
 ```
 
-Custom exceptions should inherit from `Exception` (not `BaseException`). Group related exceptions under a common base class so callers can catch the entire category:
+Custom exceptions should inherit from `Exception` (not `BaseException`). Group related exceptions
+under a common base class so callers can catch the entire category:
 
 ```python
 try:
@@ -722,7 +797,8 @@ except AppError as e:
 
 ### Exception Chaining (`raise ... from`)
 
-Python 3 supports explicit exception chaining, which preserves the original cause when raising a new exception.
+Python 3 supports explicit exception chaining, which preserves the original cause when raising a new
+exception.
 
 ```python
 def fetch_user(user_id: int) -> dict:
@@ -736,7 +812,8 @@ def fetch_user(user_id: int) -> dict:
         raise NetworkError(f"Cannot connect to API") from e
 ```
 
-The `from e` clause sets `__cause__` on the new exception, creating an explicit chain. The full traceback includes both the original and the wrapping exception, making diagnosis straightforward.
+The `from e` clause sets `__cause__` on the new exception, creating an explicit chain. The full
+traceback includes both the original and the wrapping exception, making diagnosis straightforward.
 
 ```python
 # Explicit chaining: raise NewError from original_error
@@ -774,7 +851,8 @@ flowchart TD
 
 ### `assert`
 
-Assertions are debugging aids that check conditions that should be true. They are not for data validation or error handling.
+Assertions are debugging aids that check conditions that should be true. They are not for data
+validation or error handling.
 
 ```python
 def binary_search(arr: list[int], target: int) -> int:
@@ -793,7 +871,9 @@ def binary_search(arr: list[int], target: int) -> int:
 
 :::warning
 
-Assertions are stripped when Python runs with the `-O` (optimize) flag. Never use assertions for input validation or security checks. Use explicit `if/raise` for conditions that must be checked in production.
+Assertions are stripped when Python runs with the `-O` (optimize) flag. Never use assertions for
+input validation or security checks. Use explicit `if/raise` for conditions that must be checked in
+production.
 
 :::
 
@@ -801,7 +881,8 @@ Assertions are stripped when Python runs with the `-O` (optimize) flag. Never us
 
 ### The `with` Statement
 
-Context managers manage resources that need explicit setup and teardown. The `with` statement guarantees that cleanup code runs regardless of whether the block succeeds or raises an exception.
+Context managers manage resources that need explicit setup and teardown. The `with` statement
+guarantees that cleanup code runs regardless of whether the block succeeds or raises an exception.
 
 ```python
 # File handling: the file is closed even if an exception occurs
@@ -819,7 +900,9 @@ with lock:
 # lock.release() is called automatically here
 ```
 
-The `with` statement calls `__enter__()` on the context manager when entering the block and `__exit__(exc_type, exc_val, exc_tb)` when leaving. The `__exit__` method receives the exception information if an exception was raised, allowing it to suppress the exception by returning `True`.
+The `with` statement calls `__enter__()` on the context manager when entering the block and
+`__exit__(exc_type, exc_val, exc_tb)` when leaving. The `__exit__` method receives the exception
+information if an exception was raised, allowing it to suppress the exception by returning `True`.
 
 ```python
 class Timer:
@@ -846,7 +929,8 @@ The `contextlib` module provides utilities for creating and composing context ma
 
 #### `contextmanager` Decorator
 
-The `@contextmanager` decorator turns a generator function into a context manager. The code before `yield` runs on entry, the code after `yield` runs on exit.
+The `@contextmanager` decorator turns a generator function into a context manager. The code before
+`yield` runs on entry, the code after `yield` runs on exit.
 
 ```python
 from contextlib import contextmanager
@@ -870,7 +954,8 @@ with temporary_directory() as tmpdir:
 
 #### `suppress`
 
-`suppress` provides a cleaner way to ignore specific exceptions, replacing the common pattern of empty `except` blocks.
+`suppress` provides a cleaner way to ignore specific exceptions, replacing the common pattern of
+empty `except` blocks.
 
 ```python
 from contextlib import suppress
@@ -917,13 +1002,21 @@ with (
 
 ### Why Context Managers Instead of RAII
 
-Languages like C++ use RAII (Resource Acquisition Is Initialization) -- destructors run automatically when objects go out of scope. Python does not use RAII because:
+Languages like C++ use RAII (Resource Acquisition Is Initialization) -- destructors run
+automatically when objects go out of scope. Python does not use RAII because:
 
-1. **Garbage collection is non-deterministic.** Python uses reference counting with a cycle-detecting garbage collector. Objects are not destroyed at a predictable time. An object's `__del__` method (Python's equivalent of a destructor) may run long after the object becomes unreachable, or not at all if it is part of a reference cycle.
+1. **Garbage collection is non-deterministic.** Python uses reference counting with a
+   cycle-detecting garbage collector. Objects are not destroyed at a predictable time. An object's
+   `__del__` method (Python's equivalent of a destructor) may run long after the object becomes
+   unreachable, or not at all if it is part of a reference cycle.
 
-2. **Explicit is better than implicit.** The `with` statement makes resource acquisition and release visible in the code structure. A reader can see exactly where resources are managed without tracing object lifetimes.
+2. **Explicit is better than implicit.** The `with` statement makes resource acquisition and release
+   visible in the code structure. A reader can see exactly where resources are managed without
+   tracing object lifetimes.
 
-3. **Exceptions require explicit handling.** RAII destructors cannot distinguish between normal scope exit and exception-propagated scope exit without additional machinery. The `__exit__` method receives exception information directly.
+3. **Exceptions require explicit handling.** RAII destructors cannot distinguish between normal
+   scope exit and exception-propagated scope exit without additional machinery. The `__exit__`
+   method receives exception information directly.
 
 ```python
 # This is unreliable -- __del__ may run much later, or not at all
@@ -943,6 +1036,8 @@ class ReliableCleanup:
 
 :::tip
 
-Always use `with` statements for file I/O, database connections, network sockets, locks, and any other resource that requires explicit cleanup. Never rely on `__del__` or the garbage collector for resource management.
+Always use `with` statements for file I/O, database connections, network sockets, locks, and any
+other resource that requires explicit cleanup. Never rely on `__del__` or the garbage collector for
+resource management.
 
 :::

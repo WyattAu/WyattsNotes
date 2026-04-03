@@ -1,3 +1,8 @@
 {
-  "label": "Object Oriented"
+  "label": "Object Oriented",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Classes, inheritance, descriptors, dataclasses, and Python's data model."
+  }
 }

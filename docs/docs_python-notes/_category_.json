@@ -1,0 +1,8 @@
+{
+  "label": "Python Notes",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive Python notes covering fundamentals, data structures, OOP, standard library, async programming, and best practices."
+  }
+}

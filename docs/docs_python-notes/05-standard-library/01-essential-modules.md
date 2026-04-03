@@ -2,9 +2,9 @@
 title: Essential Modules
 date: 2025-06-04T14:00:00.000Z
 tags:
-  - python
+  - Python
 categories:
-  - python
+  - Python
 slug: essential-modules
 ---
 
@@ -12,17 +12,33 @@ slug: essential-modules
 
 ### The Case for `pathlib` Over `os.path`
 
-The `os.path` module is a collection of free functions that operate on path strings. It was designed in an era before Python had a coherent object model for paths. `pathlib` (Python 3.4+) replaces this with an object-oriented API where a `Path` instance represents a single filesystem path.
+The `os.path` module is a collection of free functions that operate on path strings. It was designed
+in an era before Python had a coherent object model for paths. `pathlib` (Python 3.4+) replaces this
+with an object-oriented API where a `Path` instance represents a single filesystem path.
 
-The argument for `pathlib` is not aesthetic preference. It is about **composability** and **correctness**:
+The argument for `pathlib` is not aesthetic preference. It is about **composability** and
+**correctness**:
 
-1. **Method chaining.** `os.path` requires you to thread a string through successive function calls: `os.path.join(os.path.dirname(os.path.abspath(p)), 'config.json')`. The equivalent `Path` expression is `Path(p).resolve().parent / 'config.json'`. The `/` operator is overloaded on `PurePosixPath` and `PureWindowsPath` to join path components, which reads as natural composition rather than nested function calls.
+1. **Method chaining.** `os.path` requires you to thread a string through successive function calls:
+   `os.path.join(os.path.dirname(os.path.abspath(p)), 'config.json')`. The equivalent `Path`
+   expression is `Path(p).resolve().parent / 'config.json'`. The `/` operator is overloaded on
+   `PurePosixPath` and `PureWindowsPath` to join path components, which reads as natural composition
+   rather than nested function calls.
 
-2. **No silent truncation.** `os.path.join('/etc', '/var')` returns `/var` -- an absolute second argument silently discards the first. `Path('/etc') / '/var'` raises no error but returns `PosixPath('/var')`. Both are surprising, but `pathlib` at least provides a single consistent type (`PosixPath` or `WindowsPath`) whose semantics are visible in the type.
+2. **No silent truncation.** `os.path.join('/etc', '/var')` returns `/var` -- an absolute second
+   argument silently discards the first. `Path('/etc') / '/var'` raises no error but returns
+   `PosixPath('/var')`. Both are surprising, but `pathlib` at least provides a single consistent
+   type (`PosixPath` or `WindowsPath`) whose semantics are visible in the type.
 
-3. **Uniform access to filesystem operations.** `os.path` only handles path manipulation. Actual I/O (reading, writing, stat, mkdir, glob) requires importing `os`, `shutil`, `glob`, `stat`, and others. `Path` objects carry methods for all of these: `.read_text()`, `.write_text()`, `.stat()`, `.mkdir()`, `.glob()`, `.rename()`, `.unlink()`.
+3. **Uniform access to filesystem operations.** `os.path` only handles path manipulation. Actual I/O
+   (reading, writing, stat, mkdir, glob) requires importing `os`, `shutil`, `glob`, `stat`, and
+   others. `Path` objects carry methods for all of these: `.read_text()`, `.write_text()`,
+   `.stat()`, `.mkdir()`, `.glob()`, `.rename()`, `.unlink()`.
 
-4. **Cross-platform correctness.** `os.path` relies on the host operating system to determine separator behavior. `pathlib` exposes `PurePosixPath` and `PureWindowsPath` for explicit control when you need to manipulate paths for a different platform (e.g., generating URLs on a Linux server that target Windows).
+4. **Cross-platform correctness.** `os.path` relies on the host operating system to determine
+   separator behavior. `pathlib` exposes `PurePosixPath` and `PureWindowsPath` for explicit control
+   when you need to manipulate paths for a different platform (e.g., generating URLs on a Linux
+   server that target Windows).
 
 ```python
 from pathlib import Path
@@ -48,7 +64,8 @@ print(config_file.stem)           # 'settings'
 - `os.chdir()`, `os.getcwd()`: changing and querying the current working directory.
 - `os.walk()`: recursive directory traversal (though `Path.rglob()` covers most use cases).
 - `os.umask()`, `os.getuid()`, `os.setsid()`: low-level process and permission operations.
-- `os.path.expandvars()`, `os.path.expanduser()`: shell variable expansion (note: `Path` does expand `~` in constructors but not `$VAR`).
+- `os.path.expandvars()`, `os.path.expanduser()`: shell variable expansion (note: `Path` does expand
+  `~` in constructors but not `$VAR`).
 
 ```python
 import os
@@ -61,7 +78,8 @@ os.chmod("/tmp/file.txt", 0o644)
 
 ### `os.path` Functions Still Worth Knowing
 
-Even in new code, some `os.path` functions are unavoidable or more convenient than their `pathlib` equivalents:
+Even in new code, some `os.path` functions are unavoidable or more convenient than their `pathlib`
+equivalents:
 
 ```python
 import os.path
@@ -95,15 +113,19 @@ print(p.suffix)   # '.12'
 print(p.suffixes) # ['.12']
 ```
 
-`PurePosixPath` and `PureWindowsPath` perform only string manipulation -- no filesystem access. This is useful for constructing or parsing paths for remote systems.
+`PurePosixPath` and `PureWindowsPath` perform only string manipulation -- no filesystem access. This
+is useful for constructing or parsing paths for remote systems.
 
 ## `sys`: Interpreter State
 
-The `sys` module exposes the runtime environment: interpreter configuration, the module search path, reference counting, and process-level control.
+The `sys` module exposes the runtime environment: interpreter configuration, the module search path,
+reference counting, and process-level control.
 
 ### `sys.argv`: Command-Line Arguments
 
-`sys.argv` is a list of strings. `sys.argv[0]` is the script name (or `'-'` for stdin). Everything after is a positional argument. It does not handle options, flags, or defaults -- for that, use `argparse`.
+`sys.argv` is a list of strings. `sys.argv[0]` is the script name (or `'-'` for stdin). Everything
+after is a positional argument. It does not handle options, flags, or defaults -- for that, use
+`argparse`.
 
 ```python
 import sys
@@ -117,7 +139,8 @@ input_file, output_file = sys.argv[1], sys.argv[2]
 
 ### `sys.path`: Module Search Path
 
-When you write `import foo`, Python searches for `foo` in the directories listed in `sys.path`. The first match wins. The initial value is populated from:
+When you write `import foo`, Python searches for `foo` in the directories listed in `sys.path`. The
+first match wins. The initial value is populated from:
 
 1. The directory containing the script (or the current directory for interactive mode).
 2. `PYTHONPATH` environment variable.
@@ -134,11 +157,15 @@ sys.path.insert(0, "/opt/custom_libs")
 import mymodule  # found in /opt/custom_libs first
 ```
 
-Modifying `sys.path` at runtime is fragile. For reproducible imports, use proper package installation or `PYTHONPATH`. Mutating `sys.path` in library code is particularly dangerous because it affects the global import state of the entire process.
+Modifying `sys.path` at runtime is fragile. For reproducible imports, use proper package
+installation or `PYTHONPATH`. Mutating `sys.path` in library code is particularly dangerous because
+it affects the global import state of the entire process.
 
 ### `sys.modules`: The Module Cache
 
-`sys.modules` is a dictionary mapping module names to loaded module objects. The import system checks this dictionary first -- if a module is already loaded, `import` returns the cached object without re-executing the module's code.
+`sys.modules` is a dictionary mapping module names to loaded module objects. The import system
+checks this dictionary first -- if a module is already loaded, `import` returns the cached object
+without re-executing the module's code.
 
 ```python
 import sys
@@ -148,11 +175,14 @@ print(sys.modules["json"])  # <module 'json' from '...'>
 sys.modules["json"] = None  # breaks all subsequent json imports
 ```
 
-This is occasionally useful for reloading modules during development or for testing, but modifying `sys.modules` in production code is almost always a mistake.
+This is occasionally useful for reloading modules during development or for testing, but modifying
+`sys.modules` in production code is almost always a mistake.
 
 ### `sys.exit()`
 
-`sys.exit()` raises `SystemExit`, which the interpreter catches at the top level to terminate the process with the given exit code. Because it is an exception, it can be caught and handled -- `finally` blocks and context managers still execute.
+`sys.exit()` raises `SystemExit`, which the interpreter catches at the top level to terminate the
+process with the given exit code. Because it is an exception, it can be caught and handled --
+`finally` blocks and context managers still execute.
 
 ```python
 import sys
@@ -164,7 +194,8 @@ except SystemExit as e:
 # Process continues normally
 ```
 
-This is why `sys.exit()` is preferred over `os._exit()`. `os._exit()` terminates the process immediately without cleanup: no `finally` blocks, no `atexit` handlers, no buffer flushing.
+This is why `sys.exit()` is preferred over `os._exit()`. `os._exit()` terminates the process
+immediately without cleanup: no `finally` blocks, no `atexit` handlers, no buffer flushing.
 
 ## `json`: Serialization
 
@@ -182,11 +213,13 @@ print(type(serialized))     # <class 'str'>
 print(type(deserialized))   # <class 'dict'>
 ```
 
-`json.dumps()` returns a string. `json.dump()` writes directly to a file object. The symmetric pair is `json.loads()` (from string) and `json.load()` (from file object).
+`json.dumps()` returns a string. `json.dump()` writes directly to a file object. The symmetric pair
+is `json.loads()` (from string) and `json.load()` (from file object).
 
 ### Custom Encoders and Decoders
 
-The `default` parameter of `json.dumps()` is a function called for objects that are not natively serializable (i.e., not `dict`, `list`, `str`, `int`, `float`, `bool`, or `None`).
+The `default` parameter of `json.dumps()` is a function called for objects that are not natively
+serializable (i.e., not `dict`, `list`, `str`, `int`, `float`, `bool`, or `None`).
 
 ```python
 from datetime import datetime, date
@@ -235,7 +268,11 @@ class CustomDecoder(json.JSONDecoder):
 | Human-readable    | Yes                         | No                                     |
 | Version-stable    | Yes (RFC 8259)              | No (protocol changes between versions) |
 
-Pickle can serialize functions, classes, and object graphs with cycles. But `pickle.loads()` on untrusted data is equivalent to arbitrary code execution -- the pickled byte stream can contain instructions to call any callable, import any module, and execute arbitrary code. For data interchange between systems or for storage that must survive Python version upgrades, JSON is the only safe choice.
+Pickle can serialize functions, classes, and object graphs with cycles. But `pickle.loads()` on
+untrusted data is equivalent to arbitrary code execution -- the pickled byte stream can contain
+instructions to call any callable, import any module, and execute arbitrary code. For data
+interchange between systems or for storage that must survive Python version upgrades, JSON is the
+only safe choice.
 
 ```python
 import pickle
@@ -257,7 +294,8 @@ print(restored.left.value)  # 2
 
 ### Pattern Fundamentals
 
-Python's `re` module uses a backtracking NFA engine. Patterns are compiled into bytecode that the engine interprets. Compilation is the expensive step; matching is fast on the compiled pattern.
+Python's `re` module uses a backtracking NFA engine. Patterns are compiled into bytecode that the
+engine interprets. Compilation is the expensive step; matching is fast on the compiled pattern.
 
 ```python
 import re
@@ -271,7 +309,9 @@ print(match.group(3))  # 'com'
 print(match.groups())  # ('alice', 'example', 'com')
 ```
 
-Always use raw strings (`r'...'`) for regex patterns. Without the raw prefix, `\b` is interpreted as a backspace character, and `\d`, `\w`, `\s` are interpreted as escape sequences (some of which are valid in Python strings, producing the wrong character in the regex).
+Always use raw strings (`r'...'`) for regex patterns. Without the raw prefix, `\b` is interpreted as
+a backspace character, and `\d`, `\w`, `\s` are interpreted as escape sequences (some of which are
+valid in Python strings, producing the wrong character in the regex).
 
 ### Named Groups and Non-Capturing Groups
 
@@ -285,7 +325,9 @@ print(match.group("domain"))  # 'example.com'
 print(match.groupdict())      # {'user': 'alice', 'domain': 'example.com'}
 ```
 
-Non-capturing groups `(?:...)` participate in alternation and quantification but do not create a backreference. This prevents group numbering from shifting when you add groups for structural purposes.
+Non-capturing groups `(?:...)` participate in alternation and quantification but do not create a
+backreference. This prevents group numbering from shifting when you add groups for structural
+purposes.
 
 ```python
 # Non-capturing group for alternation
@@ -311,7 +353,9 @@ re.findall(r'^\w+', text, re.MULTILINE | re.IGNORECASE)
 
 :::danger
 
-The `re.IGNORECASE` flag can change the meaning of `\w` and `\b` for non-ASCII characters because Unicode case folding is complex. If you are matching ASCII-only identifiers, use `re.ASCII` (or `re.A`) alongside `re.IGNORECASE` to constrain `\w`, `\b`, `\d`, and `\s` to ASCII ranges.
+The `re.IGNORECASE` flag can change the meaning of `\w` and `\b` for non-ASCII characters because
+Unicode case folding is complex. If you are matching ASCII-only identifiers, use `re.ASCII` (or
+`re.A`) alongside `re.IGNORECASE` to constrain `\w`, `\b`, `\d`, and `\s` to ASCII ranges.
 
 :::
 
@@ -332,7 +376,9 @@ print(result)  # HELLO world TEST
 
 ### `functools.partial`
 
-`partial` creates a new callable with some arguments pre-filled. This is not currying -- it does not transform a multi-argument function into a chain of single-argument functions. It simply binds positional or keyword arguments.
+`partial` creates a new callable with some arguments pre-filled. This is not currying -- it does not
+transform a multi-argument function into a chain of single-argument functions. It simply binds
+positional or keyword arguments.
 
 ```python
 from functools import partial
@@ -347,7 +393,8 @@ print(square(5))  # 25
 print(cube(3))    # 27
 ```
 
-`partial` is particularly useful for adapting function signatures to fit APIs that expect a specific callable form, such as `map`, `sorted`, or callback interfaces.
+`partial` is particularly useful for adapting function signatures to fit APIs that expect a specific
+callable form, such as `map`, `sorted`, or callback interfaces.
 
 ```python
 from functools import partial
@@ -359,7 +406,10 @@ sorted(pairs, key=partial(lambda seq, idx: seq[idx], idx=1))
 
 ### `functools.lru_cache`
 
-`lru_cache` is a decorator that memoizes function calls using a Least Recently Used eviction policy. It stores the mapping from arguments to return values in a dictionary-ordered structure (the CPython implementation uses a doubly-linked list combined with a hash table, giving O(1) lookup and O(1) eviction).
+`lru_cache` is a decorator that memoizes function calls using a Least Recently Used eviction policy.
+It stores the mapping from arguments to return values in a dictionary-ordered structure (the CPython
+implementation uses a doubly-linked list combined with a hash table, giving O(1) lookup and O(1)
+eviction).
 
 ```python
 from functools import lru_cache
@@ -375,7 +425,9 @@ print(fibonacci.cache_info())
 # CacheInfo(hits=98, misses=101, maxsize=128, currsize=101)
 ```
 
-The cache key is the function's positional and keyword arguments. All arguments must be hashable. This means you cannot cache functions that accept unhashable arguments (lists, dicts, sets) without a wrapper that converts them to a hashable representation.
+The cache key is the function's positional and keyword arguments. All arguments must be hashable.
+This means you cannot cache functions that accept unhashable arguments (lists, dicts, sets) without
+a wrapper that converts them to a hashable representation.
 
 ```python
 from functools import lru_cache
@@ -385,11 +437,13 @@ def cached_parse(query_string):
     return frozenset(query_string.split("&"))
 ```
 
-`maxsize=None` creates an unbounded cache. Use this only when the argument space is small and finite. An unbounded cache on a function with unbounded input is a memory leak.
+`maxsize=None` creates an unbounded cache. Use this only when the argument space is small and
+finite. An unbounded cache on a function with unbounded input is a memory leak.
 
 ### `functools.singledispatch`
 
-`singledispatch` creates a generic function that dispatches on the type of the first argument. It is Python's answer to method overloading for standalone functions.
+`singledispatch` creates a generic function that dispatches on the type of the first argument. It is
+Python's answer to method overloading for standalone functions.
 
 ```python
 from functools import singledispatch
@@ -416,11 +470,15 @@ print(process("hello"))     # HELLO
 print(process([1, "a"]))    # [2, 'A']
 ```
 
-The `register` attribute can also be used as a decorator with explicit type arguments: `@process.register(list)`. When used with type annotations, the annotation is extracted and used as the dispatch key.
+The `register` attribute can also be used as a decorator with explicit type arguments:
+`@process.register(list)`. When used with type annotations, the annotation is extracted and used as
+the dispatch key.
 
 ### `functools.wraps`
 
-`wraps` is a decorator factory that copies metadata (`__name__`, `__doc__`, `__module__`, `__annotations__`, `__dict__`) from the wrapped function to the wrapper function. Without it, every decorated function appears as `wrapper` in tracebacks, `help()`, and `sphinx` documentation.
+`wraps` is a decorator factory that copies metadata (`__name__`, `__doc__`, `__module__`,
+`__annotations__`, `__dict__`) from the wrapped function to the wrapper function. Without it, every
+decorated function appears as `wrapper` in tracebacks, `help()`, and `sphinx` documentation.
 
 ```python
 from functools import wraps
@@ -447,11 +505,13 @@ print(fetch_data.__name__)  # 'fetch_data', not 'wrapper'
 
 ## `itertools`: Iterator Building Blocks
 
-The `itertools` module provides fast, memory-efficient tools for working with iterators. Every function in this module returns an iterator -- no intermediate lists are created.
+The `itertools` module provides fast, memory-efficient tools for working with iterators. Every
+function in this module returns an iterator -- no intermediate lists are created.
 
 ### `chain` and `chain.from_iterable`
 
-`chain` takes multiple iterables and produces a single iterator that yields from each in sequence. `chain.from_iterable` takes a single iterable of iterables.
+`chain` takes multiple iterables and produces a single iterator that yields from each in sequence.
+`chain.from_iterable` takes a single iterable of iterables.
 
 ```python
 from itertools import chain
@@ -462,7 +522,8 @@ list(chain.from_iterable([[1, 2], [3, 4], [5]]))  # [1, 2, 3, 4, 5]
 
 ### `product`, `permutations`, `combinations`
 
-These functions generate elements from the Cartesian product and combinatorial selections of input iterables.
+These functions generate elements from the Cartesian product and combinatorial selections of input
+iterables.
 
 ```python
 from itertools import product, permutations, combinations, combinations_with_replacement
@@ -480,11 +541,14 @@ print(list(combinations_with_replacement([1, 2, 3], 2)))
 # [(1, 1), (1, 2), (1, 3), (2, 2), (2, 3), (3, 3)]
 ```
 
-Key distinction: `permutations` considers order and does not repeat elements. `combinations` ignores order and does not repeat. `product` considers order and repeats according to the `repeat` parameter. `combinations_with_replacement` ignores order but allows repetition.
+Key distinction: `permutations` considers order and does not repeat elements. `combinations` ignores
+order and does not repeat. `product` considers order and repeats according to the `repeat`
+parameter. `combinations_with_replacement` ignores order but allows repetition.
 
 ### `groupby`
 
-`groupby` groups consecutive elements that share the same key. **The input must be sorted by the key** -- `groupby` does not sort for you.
+`groupby` groups consecutive elements that share the same key. **The input must be sorted by the
+key** -- `groupby` does not sort for you.
 
 ```python
 from itertools import groupby
@@ -498,7 +562,8 @@ for key, group in groupby(data, key=lambda x: x[1]):
 # 3 [('elderberry', 3)]
 ```
 
-The groups are iterators that are consumed as you iterate over them. If you need to revisit a group, convert it to a list first.
+The groups are iterators that are consumed as you iterate over them. If you need to revisit a group,
+convert it to a list first.
 
 ### `islice`, `filterfalse`, `accumulate`
 
@@ -526,7 +591,10 @@ print(list(accumulate([1, 2, 3, 4, 5], operator.mul)))
 
 ### Why Type Annotations
 
-Type annotations serve three audiences: static type checkers (mypy, pyright, pytype), IDEs (autocompletion, refactoring), and human readers (documentation). Python does not enforce type annotations at runtime -- they are ignored by the interpreter and stored only in the `__annotations__` attribute.
+Type annotations serve three audiences: static type checkers (mypy, pyright, pytype), IDEs
+(autocompletion, refactoring), and human readers (documentation). Python does not enforce type
+annotations at runtime -- they are ignored by the interpreter and stored only in the
+`__annotations__` attribute.
 
 ### Core Types
 
@@ -558,7 +626,8 @@ data: Any = json.loads(raw_string)
 
 ### `Protocol`: Structural Typing
 
-`Protocol` (Python 3.8+) enables structural typing. A class is considered a subtype of a Protocol if it has the right methods, regardless of whether it explicitly inherits from the Protocol.
+`Protocol` (Python 3.8+) enables structural typing. A class is considered a subtype of a Protocol if
+it has the right methods, regardless of whether it explicitly inherits from the Protocol.
 
 ```python
 from typing import Protocol, runtime_checkable
@@ -582,7 +651,8 @@ render_all([Circle()])    # OK
 render_all([Square()])    # mypy error: 'Square' has no 'draw' method
 ```
 
-`@runtime_checkable` adds `isinstance()` support, but only checks for the presence of method names -- not their signatures.
+`@runtime_checkable` adds `isinstance()` support, but only checks for the presence of method names
+-- not their signatures.
 
 ```python
 @runtime_checkable
@@ -625,11 +695,14 @@ def with_user_id(
     return wrapper
 ```
 
-`ParamSpec` solves a real problem: without it, a decorator that preserves the signature of arbitrary callables must use `*args, **kwargs` with untyped `Any`, losing all type information about the wrapped function's parameters. `ParamSpec` captures the full parameter signature as a type variable.
+`ParamSpec` solves a real problem: without it, a decorator that preserves the signature of arbitrary
+callables must use `*args, **kwargs` with untyped `Any`, losing all type information about the
+wrapped function's parameters. `ParamSpec` captures the full parameter signature as a type variable.
 
 ## `dataclasses`: Beyond Basics
 
-The `@dataclass` decorator (covered in the OOP chapter for fundamentals) supports advanced patterns through the `field()` function, `__post_init__`, and inheritance.
+The `@dataclass` decorator (covered in the OOP chapter for fundamentals) supports advanced patterns
+through the `field()` function, `__post_init__`, and inheritance.
 
 ### `__post_init__` for Validation and Derived Fields
 
@@ -652,7 +725,9 @@ class Rectangle:
         return self._area
 ```
 
-`__post_init__` is called after the generated `__init__`. It receives the same arguments as `__init__`. Fields with `init=False` are not passed to `__init__` and must be set in `__post_init__`.
+`__post_init__` is called after the generated `__init__`. It receives the same arguments as
+`__init__`. Fields with `init=False` are not passed to `__init__` and must be set in
+`__post_init__`.
 
 ### `field()` for Fine-Grained Control
 
@@ -696,15 +771,20 @@ class Derived(Base):
     name: str
 ```
 
-`slots=True` (Python 3.10+) generates `__slots__` automatically. Every class in the hierarchy must use `slots=True` -- mixing slotted and non-slotted dataclasses in an inheritance chain raises `TypeError`.
+`slots=True` (Python 3.10+) generates `__slots__` automatically. Every class in the hierarchy must
+use `slots=True` -- mixing slotted and non-slotted dataclasses in an inheritance chain raises
+`TypeError`.
 
 ## `enum`: Typed Constants
 
 ### Why `IntEnum` Over Raw Constants
 
-Raw integer constants have no type identity. If two modules define `STATUS_OK = 0` and `ERROR_NONE = 0`, they are indistinguishable -- they are both `int` with value `0`. This causes silent bugs in comparisons and makes debugging harder because log messages show bare integers.
+Raw integer constants have no type identity. If two modules define `STATUS_OK = 0` and
+`ERROR_NONE = 0`, they are indistinguishable -- they are both `int` with value `0`. This causes
+silent bugs in comparisons and makes debugging harder because log messages show bare integers.
 
-`IntEnum` members are both integers and enum members. They compare equal to their integer values (for backward compatibility) but have a distinct type and `repr`.
+`IntEnum` members are both integers and enum members. They compare equal to their integer values
+(for backward compatibility) but have a distinct type and `repr`.
 
 ```python
 from enum import IntEnum, Enum, auto
@@ -746,13 +826,17 @@ print(Priority.HIGH == 3) # True
 print(Role.ADMIN == "admin")  # True
 ```
 
-- Use `Enum` when members have no natural comparison with primitive types and you want strict type safety.
+- Use `Enum` when members have no natural comparison with primitive types and you want strict type
+  safety.
 - Use `IntEnum` when members must interoperate with C APIs or integer-based protocols.
-- Use `StrEnum` (Python 3.11+) when members represent string constants that are also used in serialization or string comparisons.
+- Use `StrEnum` (Python 3.11+) when members represent string constants that are also used in
+  serialization or string comparisons.
 
 :::danger
 
-Never compare `Enum` members with `is`. Use `==`. While `Enum` members are singletons within a single process, using `is` for comparison is a fragile pattern that does not work correctly across pickling, multiprocess serialization, or when the enum is re-imported.
+Never compare `Enum` members with `is`. Use `==`. While `Enum` members are singletons within a
+single process, using `is` for comparison is a fragile pattern that does not work correctly across
+pickling, multiprocess serialization, or when the enum is re-imported.
 
 :::
 
@@ -760,14 +844,22 @@ Never compare `Enum` members with `is`. Use `==`. While `Enum` members are singl
 
 ### Why `logging` Over `print`
 
-`print` writes to stdout unconditionally. It has no severity levels, no filtering, no routing to files or network endpoints, no timestamps, no module attribution, and no ability to be disabled without modifying source code. In a library, `print` is not just unprofessional -- it is actively harmful because it pollutes the consumer's stdout with messages the consumer did not request and cannot control.
+`print` writes to stdout unconditionally. It has no severity levels, no filtering, no routing to
+files or network endpoints, no timestamps, no module attribution, and no ability to be disabled
+without modifying source code. In a library, `print` is not just unprofessional -- it is actively
+harmful because it pollutes the consumer's stdout with messages the consumer did not request and
+cannot control.
 
 The `logging` module solves all of these problems:
 
-1. **Severity levels** (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`) allow you to control verbosity without changing code.
-2. **Loggers are hierarchical.** A logger named `"myapp.db"` inherits configuration from `"myapp"`. Libraries use loggers named after their module (`__name__`), and the application configures them centrally.
+1. **Severity levels** (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`) allow you to control
+   verbosity without changing code.
+2. **Loggers are hierarchical.** A logger named `"myapp.db"` inherits configuration from `"myapp"`.
+   Libraries use loggers named after their module (`__name__`), and the application configures them
+   centrally.
 3. **Handlers route messages** to different destinations: stdout, stderr, files, sockets, email.
-4. **Formatters control output format**, including timestamps, logger names, severity, and message text.
+4. **Formatters control output format**, including timestamps, logger names, severity, and message
+   text.
 
 ```python
 import logging
@@ -782,7 +874,11 @@ def process_item(item_id: int) -> None:
 
 :::info
 
-Use `%s`-style formatting in log messages, not f-strings. The `logging` module defers string formatting until it determines that the message will actually be emitted. With f-strings, the string is always constructed even if the log level is filtered out. `logger.debug("Expensive: %r", compute_value())` does not call `compute_value()` if DEBUG is not enabled. `logger.debug(f"Expensive: {compute_value()}")` always calls it.
+Use `%s`-style formatting in log messages, not f-strings. The `logging` module defers string
+formatting until it determines that the message will actually be emitted. With f-strings, the string
+is always constructed even if the log level is filtered out.
+`logger.debug("Expensive: %r", compute_value())` does not call `compute_value()` if DEBUG is not
+enabled. `logger.debug(f"Expensive: {compute_value()}")` always calls it.
 
 :::
 
@@ -804,7 +900,9 @@ logger.info("Application started")
 # 2025-06-04 14:00:00 [INFO] myapp: Application started
 ```
 
-`basicConfig` is a convenience function that configures the root logger. It can only be called once -- subsequent calls have no effect unless `force=True` is passed. For more complex configuration, use `dictConfig` or `fileConfig`.
+`basicConfig` is a convenience function that configures the root logger. It can only be called once
+-- subsequent calls have no effect unless `force=True` is passed. For more complex configuration,
+use `dictConfig` or `fileConfig`.
 
 ```python
 import logging.config
@@ -878,7 +976,9 @@ Common handlers:
 
 ### The Library Pattern
 
-Libraries should never configure logging. They should create loggers with `logging.getLogger(__name__)` and attach a `NullHandler` so that logging does not produce warnings when no handler is configured.
+Libraries should never configure logging. They should create loggers with
+`logging.getLogger(__name__)` and attach a `NullHandler` so that logging does not produce warnings
+when no handler is configured.
 
 ```python
 # In mylib/__init__.py
@@ -892,7 +992,8 @@ logger.addHandler(logging.NullHandler())
 
 ### `date`, `time`, `datetime`, `timedelta`
 
-The `datetime` module provides four core types for temporal data. They are deliberately separate because not every temporal concept needs all components.
+The `datetime` module provides four core types for temporal data. They are deliberately separate
+because not every temporal concept needs all components.
 
 ```python
 from datetime import date, time, datetime, timedelta, timezone
@@ -908,11 +1009,14 @@ print(dt - datetime(2025, 1, 1))  # 154 days, 14:30:00
 print(dt.isoformat())     # 2025-06-04T14:30:00+00:00
 ```
 
-`date` stores year, month, day. `time` stores hour, minute, second, microsecond, and timezone info. `datetime` is the combination of both. `timedelta` represents a duration.
+`date` stores year, month, day. `time` stores hour, minute, second, microsecond, and timezone info.
+`datetime` is the combination of both. `timedelta` represents a duration.
 
 ### Timezone-Aware vs Naive
 
-A naive `datetime` has no timezone information. It represents an abstract time that cannot be mapped to a specific instant on the timeline. An aware `datetime` carries a `tzinfo` subclass that defines its offset from UTC.
+A naive `datetime` has no timezone information. It represents an abstract time that cannot be mapped
+to a specific instant on the timeline. An aware `datetime` carries a `tzinfo` subclass that defines
+its offset from UTC.
 
 ```python
 from datetime import datetime, timezone, timedelta
@@ -930,7 +1034,10 @@ print(aware.astimezone(eastern))  # 2025-06-04 10:00:00-04:00
 
 :::danger
 
-Never compare naive and aware datetimes. Python raises `TypeError`. Never use naive datetimes for timestamps that will be stored, transmitted, or compared across systems. Naive datetimes are acceptable only for purely local display or when the timezone context is obvious and unambiguous (e.g., "schedule this for 9 AM in the user's local time").
+Never compare naive and aware datetimes. Python raises `TypeError`. Never use naive datetimes for
+timestamps that will be stored, transmitted, or compared across systems. Naive datetimes are
+acceptable only for purely local display or when the timezone context is obvious and unambiguous
+(e.g., "schedule this for 9 AM in the user's local time").
 
 :::
 
@@ -972,7 +1079,9 @@ The most commonly used format codes:
 
 ### `datetime.fromtimestamp()` and UTC
 
-`datetime.fromtimestamp()` returns a **local** time by default. For a UTC datetime, use `datetime.fromtimestamp(ts, tz=timezone.utc)` or `datetime.utcfromtimestamp()` (deprecated since 3.12).
+`datetime.fromtimestamp()` returns a **local** time by default. For a UTC datetime, use
+`datetime.fromtimestamp(ts, tz=timezone.utc)` or `datetime.utcfromtimestamp()` (deprecated since
+3.12).
 
 ```python
 from datetime import datetime, timezone
@@ -1004,4 +1113,5 @@ while current <= end:
     current += timedelta(days=1)
 ```
 
-For more complex date arithmetic (business days, holidays, recurrence rules), the third-party `dateutil` library extends `datetime` with `relativedelta`, `rrule`, and flexible parsing.
+For more complex date arithmetic (business days, holidays, recurrence rules), the third-party
+`dateutil` library extends `datetime` with `relativedelta`, `rrule`, and flexible parsing.
