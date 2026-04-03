@@ -1,0 +1,344 @@
+---
+title: Type-Safe Formatting (std::format, std::print)
+date: 2026-04-03T00:00:00.000Z
+tags:
+  - Cpp
+categories:
+  - Cpp
+slug: type-safe-formatting
+---
+
+## Type-Safe Formatting (std::format, std::print)
+
+C++20 introduced `std::format`, a type-safe formatting function that checks argument types at
+compile time using a concise format specification syntax. C++23 added `std::print` and
+`std::println` for direct output to `FILE*` streams without intermediate string construction. This
+section covers the format specification grammar, argument IDs, alignment, sign, width, precision,
+type specifiers, `std::print`, and custom type formatters.
+
+### `std::format` — Overview
+
+`std::format` (C++20) is a type-safe formatting function that uses a format string to produce a
+`std::string` [N4950 §22.14.6]. Unlike `printf`, it checks argument types at compile time. Unlike
+iostreams, it uses a concise, composable format specification syntax.
+
+```cpp
+#include <format>
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string s = std::format("Hello, {}! You are {} years old.", "Alice", 30);
+    std::cout << s << "\n";
+    // Output: Hello, Alice! You are 30 years old.
+}
+```
+
+`std::format` is declared in `<format>` [N4950 §22.14.1] and is part of the `std` namespace. It
+returns a `std::string` by value. The format string is checked at compile time for correctness — a
+mismatch between the format specification and the argument type is a compile-time error [N4950
+§22.14.6.2].
+
+:::info The format string is a **constant expression** — it must be known at compile time. This
+enables the compiler to parse it and verify that every `{}` field has a corresponding argument of
+the correct type. Runtime-computed format strings are not supported by `std::format` (use
+`std::vformat` for runtime format strings, at the cost of losing compile-time checking). :::
+
+### Format Specification Syntax
+
+The full format specification grammar [N4950 §22.14.2] for a replacement field `{...}` is:
+
+```
+replacement-field ::= "{" [arg-id] [":" format-spec] "}"
+arg-id            ::= nonnegative-integer | identifier
+format-spec       ::= [[fill] align] [sign] ["#"] ["0"] [width] ["." precision] [type]
+fill              ::= any character other than "{" or "}"
+align             ::= "<" | ">" | "^" | "="
+sign              ::= "+" | "-" | " "
+#                 ::= "#" (alternate form)
+0                 ::= "0" (zero-padding)
+width             ::= nonnegative-integer | "{" [arg-id] "}"
+precision         ::= nonnegative-integer | "{" [arg-id] "}"
+type              ::= type-specifier
+```
+
+#### Argument ID
+
+| Syntax       | Meaning                                                             |
+| :----------- | :------------------------------------------------------------------ |
+| `{}`         | Automatic indexing — arguments are consumed in order                |
+| `{0}`, `{1}` | Manual indexing — refers to the argument at that position           |
+| `{name}`     | Named argument (only when using `std::format_args` with named pack) |
+
+```cpp
+#include <format>
+#include <iostream>
+
+void arg_id_demo() {
+    std::cout << std::format("Auto: {} {}\n", 1, 2);
+    std::cout << std::format("Manual: {1} {0}\n", 1, 2);
+    std::cout << std::format("Repeated: {0} {0} {0}\n", "hi");
+}
+// Auto: 1 2
+// Manual: 2 1
+// Repeated: hi hi hi
+```
+
+#### Alignment and Fill
+
+Alignment controls how text is padded within a given width [N4950 §22.14.2.2]:
+
+| Align  | Meaning                                 | Default for |
+| :----- | :-------------------------------------- | :---------- |
+| `&lt;` | Left-align                              | Strings     |
+| `&gt;` | Right-align                             | Numbers     |
+| `^`    | Center                                  | —           |
+| `=`    | Pad after sign/0x prefix (numbers only) | —           |
+
+```cpp
+#include <format>
+#include <iostream>
+
+void alignment_demo() {
+    std::cout << std::format("[{:>10}]\n", "left");     // [      left]
+    std::cout << std::format("[{:<10}]\n", "right");    // [right     ]
+    std::cout << std::format("[{:^10}]\n", "center");   // [  center  ]
+    std::cout << std::format("[{:*>10}]\n", "star");    // [******star]
+    std::cout << std::format("[{:.^10}]\n", "dot");     // [..dot.....]
+}
+```
+
+#### Sign, `#`, and Zero-Padding
+
+| Specifier | Meaning                                                             |
+| :-------- | :------------------------------------------------------------------ |
+| `+`       | Always show sign for signed types (`+42`, `-7`)                     |
+| `-`       | Only show sign for negative values (default)                        |
+| (space)   | Show space for positive, minus for negative (` 42`, `-7`)           |
+| `#`       | Alternate form: `0x` prefix for hex, `0b` for binary, `#` for octal |
+| `0`       | Pad with zeros instead of spaces                                    |
+
+```cpp
+#include <format>
+#include <iostream>
+
+void sign_demo() {
+    std::cout << std::format("{:+d}\n", 42);       // +42
+    std::cout << std::format("{: d}\n", 42);       //  42
+    std::cout << std::format("{:-d}\n", 42);       // 42
+    std::cout << std::format("{:#x}\n", 255);      // 0xff
+    std::cout << std::format("{:#b}\n", 10);       // 0b1010
+    std::cout << std::format("{:05d}\n", 42);      // 00042
+    std::cout << std::format("{:#010x}\n", 255);   // 0x000000ff
+}
+```
+
+#### Width and Precision
+
+Width specifies the minimum field width. Precision specifies the maximum number of characters for
+strings, or the number of digits after the decimal point for floating-point numbers [N4950
+§22.14.2.2].
+
+Both can be dynamic — supplied by a runtime argument using `{}` inside the format spec:
+
+```cpp
+#include <format>
+#include <iostream>
+
+void width_precision_demo() {
+    std::cout << std::format("{:10.3f}\n", 3.14159);    // "     3.142"
+    std::cout << std::format("{:.5}\n", "hello world");  // "hello"
+    std::cout << std::format("{:.*f}\n", 4, 3.14159);   // "3.1416" (dynamic precision)
+    std::cout << std::format("{:{}d}\n", 42, 8);        // "      42" (dynamic width)
+}
+```
+
+:::warning Dynamic width and precision use the next argument in the argument list. Mixing manual
+argument IDs with dynamic width/precision can lead to confusing index errors. When using dynamic
+width/precision, keep the argument ordering simple. :::
+
+#### Type Specifiers
+
+| Type      | Meaning                          | Example                                    |
+| :-------- | :------------------------------- | :----------------------------------------- |
+| `d`       | Decimal integer                  | `{}` → `42`                                |
+| `x` / `X` | Hexadecimal                      | `{}` → `2a` / `2A`                         |
+| `o`       | Octal                            | `{}` → `52`                                |
+| `b` / `B` | Binary                           | `{}` → `101010`                            |
+| `f`       | Fixed-point                      | `{}` → `3.141593`                          |
+| `e` / `E` | Scientific notation              | `{}` → `3.141593e+00`                      |
+| `g` / `G` | General (shortest of `f` or `e`) | `{}` → `3.14159`                           |
+| `a` / `A` | Hex float                        | `{}` → `0x1.921fb54411744p+1`              |
+| `s`       | String                           | `{}` → `hello`                             |
+| `c`       | Character                        | `{}` → `A`                                 |
+| `p`       | Pointer                          | `{}` → `0x7ffc1234`                        |
+| `?`       | Debug output (C++23)             | `{}` → `"hello"` (with quotes and escapes) |
+
+### Format Specification Reference Table
+
+The following table provides a comprehensive reference for `std::format` specifications [N4950
+§22.14.2]:
+
+```cpp
+#include <format>
+#include <iostream>
+#include <string>
+#include <limits>
+
+void format_reference_table() {
+    // ── Integer formatting ──────────────────────────────────────────
+    std::cout << std::format("Decimal:      {:d}\n", 255);           // 255
+    std::cout << std::format("Hex lower:    {:x}\n", 255);           // ff
+    std::cout << std::format("Hex upper:    {:X}\n", 255);           // FF
+    std::cout << std::format("Hex prefix:   {:#x}\n", 255);          // 0xff
+    std::cout << std::format("Octal:        {:o}\n", 255);           // 377
+    std::cout << std::format("Binary:       {:b}\n", 10);            // 1010
+    std::cout << std::format("Binary pref:  {:#b}\n", 10);           // 0b1010
+    std::cout << std::format("Zero-pad:     {:06d}\n", 42);          // 000042
+    std::cout << std::format("Signed +:     {:+d}\n", 42);           // +42
+    std::cout << std::format("Signed sp:    {: d}\n", 42);           //  42
+
+    // ── Floating-point formatting ───────────────────────────────────
+    std::cout << std::format("Fixed:        {:.4f}\n", 3.14159);     // 3.1416
+    std::cout << std::format("Scientific:   {:.2e}\n", 3.14159);     // 3.14e+00
+    std::cout << std::format("General:      {:.6g}\n", 3.14159);     // 3.14159
+    std::cout << std::format("Hex float:    {:a}\n", 3.14);          // 0x1.91eb851eb851fp+1
+    std::cout << std::format("Inf:          {:f}\n",
+        std::numeric_limits<double>::infinity());                   // inf
+    std::cout << std::format("NaN:          {:f}\n",
+        std::numeric_limits<double>::quiet_NaN());                  // nan
+
+    // ── String formatting ───────────────────────────────────────────
+    std::cout << std::format("Left:         [{:<20}]\n", "left");    // [left                ]
+    std::cout << std::format("Right:        [{:>20}]\n", "right");   // [               right]
+    std::cout << std::format("Center:       [{:^20}]\n", "mid");     // [        mid         ]
+    std::cout << std::format("Precision:    {:.3}\n", "truncate");   // tru
+    std::cout << std::format("Fill char:    {:*^20}\n", "star");     // [********star********]
+
+    // ── Pointer formatting ──────────────────────────────────────────
+    int x = 42;
+    std::cout << std::format("Pointer:      {:p}\n", static_cast<void*>(&x));
+    // Pointer:      0x7ffd1234abcd (platform-dependent)
+
+    // ── Boolean formatting ──────────────────────────────────────────
+    std::cout << std::format("Bool text:    {:s}\n", true);          // true
+    std::cout << std::format("Bool int:     {:d}\n", true);          // 1
+}
+```
+
+### `std::print` and `std::println` (C++23)
+
+`std::print` (C++23) writes formatted output directly to stdout (or a file) without constructing an
+intermediate `std::string` [N4950 §22.14.6.4]. This avoids a heap allocation when the output is only
+needed on the console.
+
+`std::println` appends a newline automatically.
+
+```cpp
+#include <cstdio>
+#include <format>
+#include <iostream>
+
+int main() {
+    std::print("Hello, {}!\n", "world");          // Writes to stdout
+    std::println("Pi = {:.6f}", 3.14159265);       // Writes to stdout + newline
+    std::println("Error: {} at line {}", "missing ;", 42);
+
+    // Print to stderr
+    std::print(stderr, "Warning: disk full\n");
+}
+```
+
+:::info `std::print` is declared in `<print>` [N4950 §22.14.1]. It writes directly to the C `FILE*`
+stream, bypassing `std::cout` and its stream buffer. This makes it faster for simple console output
+but means it does not synchronize with `std::cout` by default. Avoid mixing
+`std::print(stdout, ...)` and `std::cout` in the same program without calling
+`std::ios_base::sync_with_stdio(true)` first. :::
+
+:::warning `std::print` to stdout does **not** lock the stdout mutex by default. Concurrent calls to
+`std::print` from multiple threads can produce interleaved output. Use `std::print(stderr, ...)` for
+error messages (stderr is unbuffered) or protect stdout with a mutex. :::
+
+### Custom Type Formatter
+
+To make a user-defined type work with `std::format`, you must specialize `std::formatter&lt;T>` for
+your type [N4950 §22.14.6.3]. The specialization must be placed in the `std` namespace and provide:
+
+1. A `parse()` method that parses the format specification (everything after `:`).
+2. A `format()` method that produces the output.
+
+```cpp
+#include <format>
+#include <iostream>
+#include <string>
+
+struct Vec3 {
+    double x, y, z;
+};
+
+template <>
+struct std::formatter<Vec3> : std::formatter<std::string> {
+    auto parse(format_parse_context& ctx) {
+        auto it = ctx.begin();
+        auto end = ctx.end();
+
+        if (it != end && *it == 'p') {
+            precision_ = 0;
+            ++it;
+            if (it != end && *it == '.') {
+                ++it;
+                while (it != end && *it >= '0' && *it <= '9') {
+                    precision_ = precision_ * 10 + (*it - '0');
+                    ++it;
+                }
+            }
+            spec_ = 'p';
+        }
+
+        if (it != end && *it != '}')
+            throw std::format_error("invalid format for Vec3");
+
+        return it;
+    }
+
+    auto format(const Vec3& v, format_context& ctx) const {
+        if (spec_ == 'p') {
+            return std::format_to(ctx.out(), "({:.{}f}, {:.{}f}, {:.{}f})",
+                v.x, precision_, v.y, precision_, v.z, precision_);
+        }
+        return std::format_to(ctx.out(), "Vec3({}, {}, {})", v.x, v.y, v.z);
+    }
+
+private:
+    char spec_ = '\0';
+    int precision_ = 6;
+};
+
+int main() {
+    Vec3 v{1.23456789, 2.34567890, 3.45678901};
+
+    std::cout << std::format("Default: {}\n", v);
+    // Default: Vec3(1.23457, 2.34568, 3.45679)
+
+    std::cout << std::format("Precise: {:p.2}\n", v);
+    // Precise: (1.23, 2.35, 3.46)
+
+    std::cout << std::format("Precise: {:p.0}\n", v);
+    // Precise: (1, 2, 3)
+}
+```
+
+:::tip Inheriting from `std::formatter&lt;std::string>` (or any standard formatter) gives you access
+to the standard format specification parsing logic. If your custom type needs to support the full
+standard specification set (width, fill, alignment), parse the standard spec first with the base
+class's `parse()`, then check for your custom specifiers. :::
+
+:::warning The specialization of `std::formatter` must be in namespace `std` for `std::format` to
+find it. However, adding declarations to namespace `std` is technically undefined behavior unless it
+is a **template specialization** of a standard library template [N4950 §16.5.4.2.1]. Specializing
+`std::formatter` is explicitly permitted. :::
+
+## See Also
+
+- [Stream Buffers and Locale Facets](./1_stream_buffers.md)
+- [Unicode Support](./3_unicode_support.md)

@@ -1,0 +1,393 @@
+---
+title: Task Scheduling and Executors
+date: 2026-04-03T00:00:00.000Z
+tags:
+  - Cpp
+categories:
+  - Cpp
+slug: task-scheduling-executors
+---
+
+# Task Scheduling and Executors
+
+This section covers the task concept, coroutine-based pipeline processing, async/await patterns
+across languages, structured concurrency with `when_all`/`when_any`, a complete Task class wrapping
+a coroutine, and a thread pool executor for scheduling coroutines across threads.
+
+## Task Concept
+
+A **task** is a coroutine that produces a result asynchronously. Unlike a generator (which produces
+many values), a task produces exactly one result upon completion. The task coroutine is typically
+lazy — it does not begin executing until someone calls `resume()` or an executor schedules it.
+
+The minimal interface for a task is:
+
+- **Awaitable**: the task can be `co_await`ed, suspending the awaiting coroutine until the task
+  completes.
+- **Result access**: once the task completes, its result is available.
+- **Exception propagation**: if the task throws, the exception is rethrown at the `co_await` point.
+
+## Coroutine-Based Pipeline Processing
+
+Coroutines enable natural expression of data pipelines where each stage can suspend and resume
+independently:
+
+$$
+\text{source} \xrightarrow{\text{co\_await}} \text{transform}_1 \xrightarrow{\text{co\_await}} \text{transform}_2 \xrightarrow{\text{co\_await}} \text{sink}
+$$
+
+Each stage is a coroutine that reads from the previous stage and writes to the next, with suspension
+occurring whenever data is not yet available.
+
+## Async/Await Patterns Across Languages
+
+| Language   | Keyword(s)                          | Execution model                  | Cancellation            | Error handling        |
+| :--------- | :---------------------------------- | :------------------------------- | :---------------------- | :-------------------- |
+| C++20      | `co_await`, `co_return`, `co_yield` | Stackless, manual scheduling     | `std::stop_token`       | Exception propagation |
+| JavaScript | `async`, `await`                    | Event loop (single-threaded)     | `AbortController`       | `try/catch`           |
+| Python     | `async def`, `await`                | Event loop (`asyncio`)           | `asyncio.Task.cancel()` | `try/except`          |
+| Rust       | `.await`                            | Async runtime (tokio, async-std) | `CancellationToken`     | `?` operator          |
+| C#         | `async`, `await`                    | ThreadPool / IOCP                | `CancellationToken`     | `try/catch`           |
+
+C++ is unique in providing **no built-in executor or event loop**. The coroutine machinery is
+deliberately low-level — the standard provides only the suspension/resumption primitives, and
+scheduling is entirely the programmer's or library's responsibility.
+
+## Structured Concurrency: `when_all` / `when_any`
+
+**Structured concurrency** is the principle that every concurrent operation should have a
+well-defined lifetime — all child tasks must complete (or be cancelled) before the parent scope
+exits. C++ does not yet have a standard `when_all` or `when_any` primitive, but these are common
+library patterns.
+
+- **`when_all(tasks...)`**: returns when **all** tasks have completed. The result is a tuple of
+  results.
+- **`when_any(tasks...)`**: returns when **any** task completes, cancelling the rest. The result
+  identifies which task finished first.
+
+The complexity of `when_all` for $n$ tasks is $\mathcal{O}(n)$ in terms of coroutine handles that
+must be tracked and resumed.
+
+## Complete Example: Task Class Wrapping a Coroutine
+
+```cpp
+#include <coroutine>
+#include <iostream>
+#include <utility>
+#include <exception>
+#include <functional>
+
+struct Task {
+    struct promise_type {
+        std::exception_ptr exception_{};
+        bool ready_{false};
+
+        promise_type() = default;
+        promise_type(const promise_type&) = delete;
+        promise_type& operator=(const promise_type&) = delete;
+        ~promise_type() = default;
+
+        std::suspend_always initial_suspend() noexcept { return {}; }
+        std::suspend_always final_suspend() noexcept { return {}; }
+
+        Task get_return_object() {
+            return Task{std::coroutine_handle<promise_type>::from_promise(*this)};
+        }
+
+        void return_void() { ready_ = true; }
+
+        void unhandled_exception() {
+            exception_ = std::current_exception();
+            ready_ = true;
+        }
+
+        struct FinalAwaiter {
+            bool await_ready() const noexcept { return false; }
+            void await_suspend(std::coroutine_handle<promise_type> h) const noexcept {
+                if (h.promise().continuation_)
+                    h.promise().continuation_.resume();
+            }
+            void await_resume() const noexcept {}
+        };
+
+        std::coroutine_handle<> continuation_{};
+    };
+
+    struct TaskAwaiter {
+        std::coroutine_handle<promise_type> handle_;
+
+        bool await_ready() const noexcept {
+            return handle_.done();
+        }
+
+        std::coroutine_handle<> await_suspend(
+            std::coroutine_handle<> caller) const noexcept {
+            handle_.promise().continuation_ = caller;
+            return handle_;
+        }
+
+        void await_resume() const {
+            if (handle_.promise().exception_)
+                std::rethrow_exception(handle_.promise().exception_);
+        }
+    };
+
+    std::coroutine_handle<promise_type> handle;
+
+    explicit Task(std::coroutine_handle<promise_type> h) : handle(h) {}
+
+    Task(Task&& other) noexcept
+        : handle(std::exchange(other.handle, nullptr)) {}
+    Task(const Task&) = delete;
+    Task& operator=(Task&& other) noexcept {
+        if (this != &other) {
+            if (handle) handle.destroy();
+            handle = std::exchange(other.handle, nullptr);
+        }
+        return *this;
+    }
+    Task& operator=(const Task&) = delete;
+
+    ~Task() { if (handle) handle.destroy(); }
+
+    void start() {
+        if (handle && !handle.done())
+            handle.resume();
+    }
+
+    bool done() const { return !handle || handle.done(); }
+
+    auto operator co_await() && {
+        return TaskAwaiter{handle};
+    }
+
+    auto operator co_await() & {
+        return TaskAwaiter{handle};
+    }
+};
+
+Task async_add(int a, int b) {
+    co_await std::suspend_always{};
+    std::cout << "  async_add(" << a << ", " << b << ") resuming\n";
+    co_return;
+}
+
+Task chained_computation() {
+    std::cout << "  starting chained_computation\n";
+    co_await std::suspend_always{};
+    std::cout << "  chained_computation step 1 done\n";
+    co_await std::suspend_always{};
+    std::cout << "  chained_computation step 2 done\n";
+    co_return;
+}
+
+Task runner() {
+    std::cout << "runner: launching tasks\n";
+    auto t1 = async_add(1, 2);
+    auto t2 = async_add(3, 4);
+    auto t3 = chained_computation();
+
+    t1.start();
+    t2.start();
+    t3.start();
+
+    co_await std::move(t1);
+    co_await std::move(t2);
+    co_await std::move(t3);
+
+    std::cout << "runner: all tasks done\n";
+    co_return;
+}
+
+int main() {
+    std::cout << "main: starting runner\n";
+    auto r = runner();
+    while (!r.done()) {
+        std::cout << "main: pumping event loop\n";
+        r.handle.resume();
+    }
+    std::cout << "main: done\n";
+}
+```
+
+## Complete Example: Simple Thread Pool Executor
+
+```cpp
+#include <coroutine>
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <functional>
+#include <atomic>
+#include <memory>
+
+class ThreadPool {
+public:
+    explicit ThreadPool(std::size_t num_threads = std::thread::hardware_concurrency())
+        : stop_(false) {
+        for (std::size_t i = 0; i < num_threads; ++i) {
+            workers_.emplace_back([this] { worker_loop(); });
+        }
+    }
+
+    ~ThreadPool() {
+        {
+            std::lock_guard<std::mutex> lock(mutex_);
+            stop_ = true;
+        }
+        cv_.notify_all();
+        for (auto& t : workers_) {
+            if (t.joinable()) t.join();
+        }
+    }
+
+    void schedule(std::function<void()> task) {
+        {
+            std::lock_guard<std::mutex> lock(mutex_);
+            queue_.push(std::move(task));
+        }
+        cv_.notify_one();
+    }
+
+    static ThreadPool& instance() {
+        static ThreadPool pool;
+        return pool;
+    }
+
+private:
+    void worker_loop() {
+        while (true) {
+            std::function<void()> task;
+            {
+                std::unique_lock<std::mutex> lock(mutex_);
+                cv_.wait(lock, [this] { return stop_ || !queue_.empty(); });
+                if (stop_ && queue_.empty()) return;
+                task = std::move(queue_.front());
+                queue_.pop();
+            }
+            task();
+        }
+    }
+
+    std::vector<std::thread> workers_;
+    std::queue<std::function<void()>> queue_;
+    std::mutex mutex_;
+    std::condition_variable cv_;
+    bool stop_;
+};
+
+struct ThreadPoolTask {
+    struct promise_type {
+        std::exception_ptr exception_{};
+
+        promise_type() = default;
+        promise_type(const promise_type&) = delete;
+        promise_type& operator=(const promise_type&) = delete;
+        ~promise_type() = default;
+
+        std::suspend_never initial_suspend() noexcept { return {}; }
+        struct FinalAwaiter {
+            bool await_ready() const noexcept { return false; }
+            void await_suspend(std::coroutine_handle<promise_type> h) const noexcept {
+                if (h.promise().continuation_)
+                    h.promise().continuation_.resume();
+            }
+            void await_resume() const noexcept {}
+        };
+        std::suspend_always final_suspend() noexcept { return {}; }
+
+        ThreadPoolTask get_return_object() {
+            return ThreadPoolTask{
+                std::coroutine_handle<promise_type>::from_promise(*this)};
+        }
+
+        void return_void() {}
+        void unhandled_exception() {
+            exception_ = std::current_exception();
+        }
+
+        std::coroutine_handle<> continuation_{};
+    };
+
+    struct ThreadPoolAwaiter {
+        std::coroutine_handle<promise_type> handle_;
+
+        bool await_ready() const noexcept { return handle_.done(); }
+
+        void await_suspend(std::coroutine_handle<> caller) const {
+            handle_.promise().continuation_ = caller;
+            ThreadPool::instance().schedule([h = handle_] { h.resume(); });
+        }
+
+        void await_resume() const {
+            if (handle_.promise().exception_)
+                std::rethrow_exception(handle_.promise().exception_);
+        }
+    };
+
+    std::coroutine_handle<promise_type> handle;
+
+    explicit ThreadPoolTask(std::coroutine_handle<promise_type> h) : handle(h) {}
+    ThreadPoolTask(ThreadPoolTask&& other) noexcept
+        : handle(std::exchange(other.handle, nullptr)) {}
+    ThreadPoolTask(const ThreadPoolTask&) = delete;
+    ThreadPoolTask& operator=(ThreadPoolTask&&) = delete;
+    ThreadPoolTask& operator=(const ThreadPoolTask&) = delete;
+
+    ~ThreadPoolTask() { if (handle) handle.destroy(); }
+
+    auto operator co_await() {
+        return ThreadPoolAwaiter{handle};
+    }
+};
+
+ThreadPoolTask compute_on_thread(int id, int iterations) {
+    std::cout << "  task " << id << " starting on thread "
+              << std::this_thread::get_id() << "\n";
+    for (int i = 0; i < iterations; ++i) {
+        co_await std::suspend_always{};
+    }
+    std::cout << "  task " << id << " finished on thread "
+              << std::this_thread::get_id() << "\n";
+}
+
+ThreadPoolTask run_all() {
+    std::cout << "run_all on thread " << std::this_thread::get_id() << "\n";
+    auto t1 = compute_on_thread(1, 3);
+    auto t2 = compute_on_thread(2, 2);
+    auto t3 = compute_on_thread(3, 4);
+
+    co_await std::move(t1);
+    co_await std::move(t2);
+    co_await std::move(t3);
+
+    std::cout << "run_all: all tasks completed\n";
+}
+
+int main() {
+    std::cout << "main on thread " << std::this_thread::get_id() << "\n";
+
+    auto task = run_all();
+
+    while (!task.handle.done()) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    }
+
+    std::cout << "main: done\n";
+}
+```
+
+:::warning This thread pool executor is a simplified educational example. A production executor must
+handle: work stealing, priority queues, thread affinity, shutdown semantics, exception aggregation
+across `when_all`, and proper cancellation propagation. Libraries like
+[libunifex](https://github.com/facebookexperimental/libunifex) (now `std::execution` proposal,
+P2300) provide production-grade executors. :::
+
+## See Also
+
+- [Coroutine Handle, Promise Type, and Awaiter](./2_promise_awaiter.md)
+- [Generators (std::generator)](./3_generators.md)
+- [Futures, Promises, and Async Flows](./5_futures_promises.md)
