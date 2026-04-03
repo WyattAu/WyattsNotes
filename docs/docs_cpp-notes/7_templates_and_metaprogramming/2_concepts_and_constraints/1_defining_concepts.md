@@ -316,10 +316,6 @@ concepts like `requires(T t) { t + t; }` --- this would accept `std::string` (wh
 concatenation) even if the algorithm is intended for arithmetic. Use the standard library concepts
 in `<concepts>` as building blocks whenever possible. :::
 
-> **Cross-reference:** See
-> [A-Level Further Maths: Complex Numbers](/docs/docs_ALevel-notes/further-maths/pure-mathematics/01-complex-numbers)
-> for the mathematical foundations behind `std::complex`.
-
 ## See Also
 
 - [Constraint Subsumption and Overload Resolution](./2_constraint_subsumption.md)
