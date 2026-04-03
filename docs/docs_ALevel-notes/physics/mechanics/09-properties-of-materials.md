@@ -455,7 +455,7 @@ Calculate the ratio of their extensions.
 Ratio:
 $\frac{\Delta L_{\text{rubber}}}{\Delta L_{\text{steel}}} = \frac{E_{\text{steel}}}{E_{\text{rubber}}} = \frac{2.0 \times 10^{11}}{5.0 \times 10^6} = 4.0 \times 10^4$.
 
-The rubber cord extends $40{,}000$ times more than the steel wire under the same load.
+The rubber cord extends $40,000$ times more than the steel wire under the same load.
 
 <b>If you get this wrong, revise:</b> [Young's Modulus](#3-youngs-modulus)
 

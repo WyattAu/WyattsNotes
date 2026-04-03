@@ -56,10 +56,10 @@ investments). The World Bank uses GNI per capita to classify countries:
 
 | Classification | GNI per capita (2024) |
 | -------------- | --------------------- |
-| Low income     | < $1,145              |
-| Lower-middle   | $1,146 – $4,515       |
-| Upper-middle   | $4,516 – $14,005      |
-| High income    | > $14,005             |
+| Low income     | &lt; USD 1,145        |
+| Lower-middle   | USD 1,146 – 4,515     |
+| Upper-middle   | USD 4,516 – 14,005    |
+| High income    | &gt; USD 14,005       |
 
 ### 2.2 The Human Development Index (HDI)
 
@@ -78,7 +78,7 @@ $$0 \leq \text{HDI} \leq 1$$
 | 1.0 – 0.8  | Very high development |
 | 0.8 – 0.7  | High development      |
 | 0.7 – 0.55 | Medium development    |
-| < 0.55     | Low development       |
+| &lt; 0.55  | Low development       |
 
 ### 2.3 Income Inequality: The Gini Coefficient
 
@@ -490,22 +490,22 @@ converge (East Asia) while others do not (sub-Saharan Africa).
 
 ## Problems
 
-**Problem 1.** Country A has a GDP of $500 billion and a population of 50 million. Country B has a
-GDP of $200 billion and a population of 10 million. (a) Calculate GDP per capita for each country.
-(b) Can you conclude that Country B is more developed? Explain.
+**Problem 1.** Country A has a GDP of USD 500 billion and a population of 50 million. Country B has
+a GDP of USD 200 billion and a population of 10 million. (a) Calculate GDP per capita for each
+country. (b) Can you conclude that Country B is more developed? Explain.
 
 <details>
 <summary>Hint</summary>
-(a) Country A: $500 \times 10^9 / 50 \times 10^6 = \$10{,}000$. Country B: $200 \times 10^9 / 10 \times 10^6 = \$20{,}000$. (b) No — GDP per capita is only one indicator. It does not account for income distribution (Gini coefficient), health, education (HDI), or environmental quality. Country B may have extreme inequality. Always use multiple indicators to assess development.
+(a) Country A: $500 \times 10^9 / 50 \times 10^6 = 10{,}000$ USD. Country B: $200 \times 10^9 / 10 \times 10^6 = 20{,}000$ USD. (b) No — GDP per capita is only one indicator. It does not account for income distribution (Gini coefficient), health, education (HDI), or environmental quality. Country B may have extreme inequality. Always use multiple indicators to assess development.
 </details>
 
-**Problem 2.** A country's GNI per capita is $3{,}200$. (a) Using the World Bank classification,
-what category does this country fall into? (b) What additional information would you need to assess
+**Problem 2.** A country's GNI per capita is $3,200$. (a) Using the World Bank classification, what
+category does this country fall into? (b) What additional information would you need to assess
 whether this country is developing successfully?
 
 <details>
 <summary>Hint</summary>
-(a) $3{,}200 falls in the **lower-middle income** category ($1{,}146 – $4{,}515). (b) You would need: the HDI (to assess health and education), Gini coefficient (to assess inequality), GDP growth rate (to assess momentum), sectoral composition of the economy, poverty rates, and institutional quality indicators (corruption index, property rights).
+(a) USD 3,200 falls in the **lower-middle income** category (USD 1,146 – USD 4,515). (b) You would need: the HDI (to assess health and education), Gini coefficient (to assess inequality), GDP growth rate (to assess momentum), sectoral composition of the economy, poverty rates, and institutional quality indicators (corruption index, property rights).
 </details>
 
 **Problem 3.** Using the Harrod-Domar model, a country has a savings rate of 20% and a
