@@ -352,17 +352,21 @@ const config: Config = {
           ],
         },
         {
-          title: 'Operating System',
+          title: 'Machine Learning',
+          items: [
+            {
+              label: 'Probabilistic ML',
+              to: '/docs/docs_ProbabilisticML-notes/intro',
+            },
+          ],
+        },
+        {
+          title: 'Other',
           items: [
             {
               label: 'TrueNAS',
               to: '/docs/docs_truenas-notes/intro',
             },
-          ],
-        },
-        {
-          title: 'others',
-          items: [
             {
               label: 'Tuning',
               to: '/docs/docs_tuning-notes/intro',
