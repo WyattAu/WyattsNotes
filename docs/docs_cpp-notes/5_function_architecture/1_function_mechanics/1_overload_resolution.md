@@ -198,7 +198,268 @@ struct Vec3 {
 
 :::
 
-## See Also
+## 1.7 Implicit Conversion Sequences in Depth
 
-- [Calling Conventions and Stack Management](2_calling_conventions.md)
-- [Lambda Expressions](3_lambdas.md)
+An **implicit conversion sequence** (ICS) is the sequence of conversions the compiler applies to
+convert an argument to a parameter type. Each ICS consists of up to three parts [N4950 §12.4.3.2]:
+
+1. **Standard conversion** (always present): lvalue-to-rvalue conversion, qualification conversions,
+   etc.
+2. **User-defined conversion** (optional): a converting constructor or conversion operator.
+3. **Second standard conversion** (optional): applied after the user-defined conversion.
+
+No ICS can contain more than one user-defined conversion. This is why chaining `A → B → C` through
+two user-defined conversions is ill-formed.
+
+### Ranking Tie-Breaking Rules
+
+When two ICSes have the same rank (e.g., both are standard conversions), the compiler applies
+tie-breaking rules [N4950 §12.4.3.2.3]:
+
+1. **Rank the second standard conversion:** If both ICSes end with a standard conversion, the better
+   second conversion wins.
+2. **Prefer non-templates to templates:** A non-template function is preferred over a function
+   template specialization providing the same conversion.
+3. **Prefer more specialized templates:** When both are templates, partial ordering selects the more
+   specialized one.
+4. **Prefer functions with fewer ellipsis parameters in the signature.**
+
+```cpp
+#include <iostream>
+
+void f(int&)       { std::cout << "lvalue ref\n"; }
+void f(const int&) { std::cout << "const lvalue ref\n"; }
+void f(int&&)      { std::cout << "rvalue ref\n"; }
+
+int main() {
+    int x = 42;
+    f(x);        // int& is better match than const int& → lvalue ref
+    f(42);       // int&& binds rvalue, const int& also viable but rvalue ref preferred
+    const int cx = 10;
+    f(cx);       // const int& is the only viable match
+}
+```
+
+### Reference Binding and Overload Resolution
+
+Reference collapsing and binding rules interact with overload resolution in subtle ways:
+
+- An rvalue reference parameter (`T&&`) can bind to:
+  - An rvalue of type `T` (exact match).
+  - An rvalue of a type convertible to `T` (standard conversion).
+  - It **cannot** bind to an lvalue (unless `T` is a template parameter subject to reference
+    collapsing).
+
+- A const lvalue reference parameter (`const T&`) can bind to:
+  - An lvalue of type `T` (exact match, but adds a qualification conversion).
+  - An rvalue of type `T` (lvalue-to-rvalue + qualification conversion).
+  - An lvalue or rvalue of a type convertible to `T`.
+
+```cpp
+#include <iostream>
+
+void take(int&& r)       { std::cout << "rvalue ref\n"; }
+void take(const int& r)  { std::cout << "const lvalue ref\n"; }
+
+int main() {
+    take(42);       // rvalue ref (better: no qualification conversion needed)
+    int x = 10;
+    // take(x);     // ERROR: int&& cannot bind to lvalue — no viable candidate with int&&
+    const int& cr = x;
+    take(cr);       // const lvalue ref (int&& cannot bind to const lvalue)
+}
+```
+
+---
+
+## 1.8 Overload Resolution and Templates
+
+When both function templates and non-template functions are candidates, the ranking rules are:
+
+1. Non-template functions are preferred over function template specializations, all else being
+   equal.
+2. Among function templates, the more specialized template is preferred.
+3. If a non-template and a template provide the same conversion rank, the non-template wins.
+
+```cpp
+#include <iostream>
+
+void f(int x) { std::cout << "non-template: " << x << "\n"; }
+
+template<typename T>
+void f(T x) { std::cout << "template: " << x << "\n"; }
+
+int main() {
+    f(42);       // Non-template wins: f(int) is exact match, f&lt;int&gt;(int) is also exact
+                // but non-template is preferred by tie-breaking rule
+    f(3.14);     // Template wins: f(double) is not viable (no non-template overload),
+                // f&lt;double&gt;(double) is the only candidate
+}
+```
+
+### SFINAE and Overload Set Construction
+
+Substitution Failure Is Not An Error (SFINAE) [N4950 §13.10.3] affects overload resolution by
+removing candidates from the viable set rather than causing compilation errors. When template
+argument deduction or constraint checking fails for a particular candidate, that candidate is
+silently removed from the overload set.
+
+```cpp
+#include <iostream>
+#include <type_traits>
+
+template<typename T>
+typename std::enable_if<std::is_integral_v<T>, T>::type
+f(T x) { std::cout << "integral: " << x << "\n"; return x; }
+
+template<typename T>
+typename std::enable_if<std::is_floating_point_v<T>, T>::type
+f(T x) { std::cout << "floating: " << x << "\n"; return x; }
+
+int main() {
+    f(42);     // SFINAE removes the floating-point overload → calls integral overload
+    f(3.14);   // SFINAE removes the integral overload → calls floating-point overload
+}
+```
+
+In C++20, SFINAE is superseded by concepts and `requires` clauses, which are more readable and
+produce better error messages:
+
+```cpp
+#include <iostream>
+#include <concepts>
+
+template<std::integral T>
+void f(T x) { std::cout << "integral: " << x << "\n"; }
+
+template<std::floating_point T>
+void f(T x) { std::cout << "floating: " << x << "\n"; }
+```
+
+---
+
+## 1.9 Overload Resolution with Multi-Parameter Functions
+
+When multiple parameters are involved, overload resolution requires that the best candidate be
+better for at least one argument and no worse for any argument. This is a **partial order** on
+viable functions.
+
+```cpp
+#include <iostream>
+
+struct A {};
+struct B : A {};
+
+void g(A, int)    { std::cout << "A, int\n"; }
+void g(B, double) { std::cout << "B, double\n"; }
+
+int main() {
+    g(B{}, 3.14);   // g(B, double) wins: B→B exact, double→double exact
+
+    // g(B{}, 42);   // AMBIGUOUS:
+    //   g(A, int):   B→A (derived-to-base), int→int (exact)
+    //   g(B, double): B→B (exact), int→double (promotion)
+    //   Neither is strictly better — ambiguity
+}
+```
+
+### `const` and Non-`const` Overloads
+
+A common pattern is providing both `const` and non-`const` accessors:
+
+```cpp
+#include <iostream>
+
+class Buffer {
+    int data_[4]{1, 2, 3, 4};
+public:
+    int& at(std::size_t i)             { return data_[i]; }
+    const int& at(std::size_t i) const { return data_[i]; }
+};
+
+int main() {
+    Buffer buf;
+    buf.at(0) = 99;        // Calls non-const at(int&)
+    const Buffer cbuf;
+    // cbuf.at(0) = 99;    // ERROR: calls const at() const, returns const int&
+}
+```
+
+The overload resolution rule for `const` member functions: if the object expression is a const
+lvalue, only `const` member functions are viable. If the object expression is a non-const lvalue,
+both `const` and non-`const` members are viable, but the non-`const` version is preferred (exact
+match vs qualification conversion).
+
+---
+
+## 1.10 ADL and Hidden Friends: Preventing Unintended Overload Discovery
+
+ADL is powerful but can pull in unexpected overloads. Consider a library that defines `swap` in its
+namespace:
+
+```cpp
+// lib.h
+namespace lib {
+    struct Widget {
+        int value;
+        friend void swap(Widget& a, Widget& b) {
+            std::swap(a.value, b.value);
+        }
+    };
+}
+```
+
+With the hidden friend idiom, `lib::swap` is only found via ADL — it is not found by unqualified or
+qualified lookup. This means:
+
+```cpp
+#include <lib.h>
+#include <algorithm>
+#include <utility>
+
+int main() {
+    lib::Widget a{1}, b{2};
+
+    // ADL finds lib::swap — correct, uses the efficient member-aware swap
+    swap(a, b);
+
+    // Qualified lookup finds std::swap — may be less efficient
+    std::swap(a, b);
+}
+```
+
+The standard library's `std::swap` implementation (since C++11) uses `using std::swap; swap(a, b);`
+to enable ADL-based customization:
+
+```cpp
+template<typename T>
+void my_swap(T& a, T& b) {
+    using std::swap;
+    swap(a, b);  // ADL finds T's namespace's swap if it exists, falls back to std::swap
+}
+```
+
+This two-phase lookup (unqualified + ADL) is the correct way to write generic code that respects
+custom `swap` implementations.
+
+---
+
+## Common Pitfalls
+
+- **Ambiguous overloads with mixed types.** `f(short, long)` vs `f(long, short)` called as `f(1, 1)`
+  is ambiguous because both arguments are `int`, which converts equally well to `short` (truncation)
+  or `long` (promotion). Use explicit casts or provide an `f(int, int)` overload.
+- **Surprising `bool` conversions.** `bool` is an integral type. `f(bool)` is a viable candidate for
+  `f(42)` via the boolean conversion (`42 → true`). This can cause surprising overload selection.
+  Use `std::same_as<T, bool>` constraints to exclude `bool` from integral overloads.
+- **ADL pulling in unexpected operators.** If you define `operator==` for your type in its
+  namespace, it will be found by ADL in any context where your type is used as an argument. This is
+  usually desired, but can cause issues with implicit conversions pulling in operators you didn't
+  intend.
+- **Overload resolution and `std::function`.** `std::function` uses type erasure, which creates a
+  new callable object. The target callable's overloads are resolved at construction time, not at
+  call time. You cannot pass an overloaded function name directly to `std::function` without
+  disambiguation.
+- **`nullptr` overload resolution.** `f(int)` and `f(int*)` called with `f(nullptr)` selects
+  `f(int*)` because `nullptr` has type `std::nullptr_t`, which converts to any pointer type but not
+  to `int`. However, `f(0)` selects `f(int)` because `0` is an `int` literal.

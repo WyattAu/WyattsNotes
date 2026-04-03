@@ -199,7 +199,257 @@ Friendship should be used sparingly. The two most common legitimate use cases ar
 2. **Factory patterns**: When a factory function needs access to a private constructor.
 3. **Internal helpers**: When a utility function needs deep access but should not be a member.
 
-## See Also
+## 2.6 Access Control and Inheritance
 
-- [Object Layout, vptr, and the this Pointer](./1_object_layout_vptr.md)
-- [Special Member Function Generation Rules](./3_special_member_functions.md)
+Access specifiers on base classes control how inherited members are accessible in the derived class.
+This is distinct from the access specifiers on individual members within a class.
+
+### Public, Protected, and Private Inheritance
+
+```cpp
+#include <iostream>
+
+class Base {
+public:
+    int pub = 1;
+protected:
+    int prot = 2;
+private:
+    int priv = 3;
+};
+
+class PubDerived : public Base {
+public:
+    void test() {
+        std::cout << pub << "\n";   // OK: public, accessible
+        std::cout << prot << "\n";  // OK: protected, accessible in derived
+        // std::cout << priv << "\n"; // ERROR: private, not accessible
+    }
+};
+
+class PrivDerived : private Base {
+public:
+    void test() {
+        std::cout << pub << "\n";   // OK: still accessible within PrivDerived
+        std::cout << prot << "\n";  // OK: still accessible within PrivDerived
+    }
+};
+
+int main() {
+    PubDerived pd;
+    std::cout << pd.pub << "\n";   // OK: public inheritance preserves public access
+    // std::cout << pd.prot << "\n"; // ERROR: protected, not accessible outside
+
+    PrivDerived prd;
+    // std::cout << prd.pub << "\n";  // ERROR: private inheritance makes everything private
+}
+```
+
+### Inheritance Access Summary
+
+| Base Member Access | Public Inheritance | Protected Inheritance | Private Inheritance |
+| :----------------- | :----------------: | :-------------------: | :-----------------: |
+| `public`           |      `public`      |      `protected`      |      `private`      |
+| `protected`        |    `protected`     |      `protected`      |      `private`      |
+| `private`          |    inaccessible    |     inaccessible      |    inaccessible     |
+
+**Private inheritance** is not an "is-a" relationship — it is an "implemented-in-terms-of"
+relationship. It is used when you want to reuse a base class's implementation without exposing the
+base interface to users.
+
+### The `using` Declaration in Derived Classes
+
+You can restore the access level of inherited members with a `using` declaration:
+
+```cpp
+class PrivateBase {
+public:
+    void public_func() {}
+};
+
+class Adapter : private PrivateBase {
+public:
+    using PrivateBase::public_func;  // Restore public access for this member
+};
+
+int main() {
+    Adapter a;
+    a.public_func();  // OK: access was restored by using-declaration
+}
+```
+
+---
+
+## 2.7 Access Control and Templates
+
+Template instantiation interacts with access control in specific ways. Access control is checked at
+the point of instantiation, not at the point of definition. This means a friend of a class can
+access private members during template instantiation.
+
+```cpp
+#include <iostream>
+
+class Secret {
+    int value_ = 42;
+    template<typename T> friend void inspect(T&);
+};
+
+template<typename T>
+void inspect(T& obj) {
+    // Access to value_ is checked when T = Secret
+    // At that point, inspect is a friend of Secret
+    // This is valid even though value_ is private
+    std::cout << "inspecting\n";
+}
+
+int main() {
+    Secret s;
+    inspect(s);
+}
+```
+
+### CRTP and Private Members
+
+The Curiously Recurring Template Pattern (CRTP) commonly requires the derived class to access
+private members of the base:
+
+```cpp
+#include <iostream>
+
+template<typename Derived>
+class Counter {
+    int count_ = 0;
+protected:
+    void increment() { ++count_; }
+    int count() const { return count_; }
+};
+
+class Widget : private Counter<Widget> {
+    friend class Counter<Widget>;
+public:
+    void click() { increment(); }
+    int clicks() const { return count(); }
+};
+
+int main() {
+    Widget w;
+    w.click();
+    w.click();
+    std::cout << "Clicks: " << w.clicks() << "\n";  // Output: 2
+}
+```
+
+---
+
+## 2.8 `final` Specifier
+
+The `final` specifier prevents further derivation or overriding. It is enforced at compile time with
+zero runtime cost.
+
+```cpp
+#include <iostream>
+
+class Base {
+public:
+    virtual void process() { std::cout << "Base::process\n"; }
+    virtual ~Base() = default;
+};
+
+class Final : public Base {
+public:
+    void process() final { std::cout << "Final::process\n"; }
+};
+
+// class Derived : public Final {};  // ERROR: cannot derive from 'final' class
+```
+
+The `final` specifier on a virtual function prevents further overriding in derived classes:
+
+```cpp
+class Mid : public Base {
+public:
+    void process() override final { std::cout << "Mid::process\n"; }
+};
+
+// class Leaf : public Mid {
+//     void process() override {}  // ERROR: process is final
+// };
+```
+
+`final` enables **devirtualization**: if the compiler can prove that a virtual call targets a
+`final` class or method, it can replace the indirect call with a direct call or even inline the
+function.
+
+---
+
+## 2.9 Nested Access and Friends of Nested Classes
+
+A nested class has access to all members of its enclosing class (both private and protected), but
+the enclosing class does not have special access to the nested class's private members.
+
+```cpp
+#include <iostream>
+
+class Outer {
+    int secret_ = 99;
+    class Inner {
+        int inner_secret_ = 42;
+    public:
+        void access_outer(Outer& o) {
+            std::cout << o.secret_ << "\n";  // OK: nested class accesses enclosing private
+        }
+    };
+    friend class Inner;  // Implicit — nested classes are implicitly friends of enclosing
+public:
+    void test() {
+        Inner i;
+        // i.inner_secret_;  // ERROR: enclosing class cannot access nested's private
+        i.access_outer(*this);  // OK
+    }
+};
+```
+
+---
+
+## 2.10 Access Control and `constexpr`/`consteval` Functions
+
+Access control is fully enforced in `constexpr` and `consteval` contexts. A `constexpr` function
+cannot access private members of an unrelated class, even at compile time.
+
+```cpp
+class Vault {
+    int code_ = 1337;
+    friend int break_in(const Vault&);
+};
+
+consteval int break_in(const Vault& v) {
+    return v.code_;  // OK: friend access, evaluated at compile time
+}
+
+int main() {
+    constexpr int result = break_in(Vault{});
+    static_assert(result == 1337);
+}
+```
+
+---
+
+## Common Pitfalls
+
+- **Assuming friendship is transitive or inherited.** If `A` declares `B` as a friend, and `C`
+  inherits from `B`, `C` does **not** have access to `A`'s private members. Each class controls its
+  own friendship independently.
+- **Using `protected` data members.** While syntactically legal, `protected` data members break
+  encapsulation because any derived class can modify them directly without the base class's
+  knowledge. Prefer `protected` member functions (getters/setters) or `private` data with
+  `protected` accessors.
+- **Forgetting that `class` defaults to `private` and `struct` defaults to `public`.** A `struct`
+  with no access specifier has public members by default, which can accidentally expose
+  implementation details. Always be explicit about access specifiers.
+- **Overusing friendship.** Every `friend` declaration creates a tight coupling between two classes.
+  Prefer public interfaces, member functions, or the hidden friend idiom for operators. Reserve
+  friendship for cases where no alternative exists (symmetric operators, factories).
+- **Private inheritance confusion.** Private inheritance is not a substitute for composition. It
+  inherits the base class's layout (vtable, sizeof), which increases coupling. Use composition
+  (member variable) unless you specifically need `protected` member access or virtual function
+  overriding.

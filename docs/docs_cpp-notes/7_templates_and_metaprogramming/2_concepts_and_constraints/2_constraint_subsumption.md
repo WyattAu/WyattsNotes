@@ -199,8 +199,287 @@ The `Sortable` concept subsumes `Container` because it includes all of `Containe
 plus additional ones. Therefore, when both overloads are viable, the `Sortable` overload is
 preferred.
 
-## See Also
+## Subsumption and `requires` Expressions
 
-- [Defining Concepts and Requires Clauses](./1_defining_concepts.md)
-- [Standard Library Concepts](./3_standard_concepts.md)
-- [SFINAE vs Concepts](./4_sfinae_vs_concepts.md)
+A `requires` expression introduces a local scope with template parameters that are checked for
+validity. These expressions participate in subsumption based on their structural form [N4950
+§7.1.8].
+
+```cpp
+#include <concepts>
+#include <iostream>
+#include <string>
+
+// Constraint P: uses a requires-expression
+template<typename T>
+concept Hashable = requires(T t) {
+    { std::hash<T>{}(t) } -> std::convertible_to<std::size_t>;
+};
+
+// Constraint Q: uses a conjunction that includes P
+template<typename T>
+concept Serializable = Hashable<T> && requires(T t) {
+    { t.serialize() } -> std::convertible_to<std::string>;
+};
+
+// Q subsumes P because Q = P && additional_requirement
+template<Hashable T>
+void process(const T& val) {
+    std::cout << "hashable\n";
+}
+
+template<Serializable T>
+void process(const T& val) {
+    std::cout << "serializable and hashable\n";
+}
+
+struct MyData {
+    std::string serialize() const { return "data"; }
+};
+
+namespace std {
+    template<> struct hash<MyData> {
+        std::size_t operator()(const MyData&) const { return 42; }
+    };
+}
+
+int main() {
+    MyData d;
+    process(d);  // Calls Serializable overload (more constrained)
+}
+```
+
+### Atomic Constraints and Normalization
+
+The compiler normalizes constraints into a set of **atomic constraints** before performing
+subsumption. An atomic constraint is an expression that cannot be decomposed further into
+conjunctions or disjunctions [N4950 §13.5.4.1].
+
+For `Sortable = Container && RandomAccess && TotallyOrdered`, the atomic constraints are:
+
+1. `Container<T>` (itself a normalized set of atomic constraints from its definition)
+2. `std::random_access_iterator<decltype(C::begin())>`
+3. `std::totally_ordered<typename C::value_type>`
+
+Subsumption checks each atomic constraint individually: if every atomic constraint of $P$ is
+subsumed by at least one atomic constraint of $Q$, then $P$ is subsumed by $Q$.
+
+### Parameter Mapping in Subsumption
+
+When comparing two constrained templates, the compiler maps template parameters between the two
+constraint sets. This is where structural equivalence matters:
+
+```cpp
+#include <concepts>
+#include <iostream>
+
+template<typename T>
+concept IsIntegral = std::integral<T>;
+
+template<typename U>
+concept AlsoIntegral = std::integral<U>;
+
+template<IsIntegral T>
+void f(T) { std::cout << "IsIntegral\n"; }
+
+template<AlsoIntegral T>
+void f(T) { std::cout << "AlsoIntegral\n"; }
+```
+
+Here, `IsIntegral<T>` and `AlsoIntegral<T>` are **structurally identical** after normalization (both
+reduce to `std::integral<T>`). The compiler maps `T` (from the first template) to `T` (from the
+second template) and determines that they are equivalent. This results in **ambiguity** — neither
+subsumes the other because subsumption requires strict "at least as restrictive," not "equally
+restrictive."
+
+To resolve this, make one clearly more restrictive:
+
+```cpp
+template<std::integral T>
+void f(T) { std::cout << "integral\n"; }
+
+template<std::signed_integral T>
+void f(T) { std::cout << "signed integral\n"; }
+```
+
+Now `std::signed_integral<T>` subsumes `std::integral<T>` because every signed integral is also
+integral.
+
+---
+
+## Requires Clauses with Local Parameters
+
+The `requires` clause can introduce local template parameters using a
+**requirement-parameter-list**. This is a common source of confusion because local parameters do not
+participate in the outer template parameter mapping during subsumption.
+
+```cpp
+#include <concepts>
+#include <iostream>
+
+// Version A: constraint on T directly
+template<typename T>
+    requires std::integral<T>
+void f(T) { std::cout << "A: integral T\n"; }
+
+// Version B: constraint using a requires-expression with local parameter
+template<typename T>
+    requires requires(T x) { x + 1; }
+void f(T) { std::cout << "B: T supports + 1\n"; }
+```
+
+These two constraints are **incomparable** for subsumption purposes, even if `T` is an `int`. The
+requires-expression in Version B introduces a local parameter `x`, and the compiler cannot
+structurally compare `std::integral<T>` with the compound requirement `x + 1`. The result is
+ambiguity when `T` is `int`.
+
+**Rule:** For subsumption to work correctly across overloads, use the same structural form for
+constraints. Prefer concept names over ad-hoc requires-expressions when overloading.
+
+---
+
+## Fold Expressions and Conjunctions in Constraints
+
+Constraints can use fold expressions to express "all types in a parameter pack satisfy a concept":
+
+```cpp
+#include <concepts>
+#include <iostream>
+#include <string>
+
+template<typename... Ts>
+concept AllIntegral = (std::integral<Ts> && ...);
+
+template<typename... Ts>
+concept AllSame = (std::same_as<Ts, std::tuple_element_t<0, std::tuple<Ts...>>> && ...);
+
+template<typename... Ts>
+    requires AllIntegral<Ts>
+void print_sum(Ts... args) {
+    std::cout << (args + ...) << "\n";
+}
+
+int main() {
+    print_sum(1, 2, 3);       // OK: all int
+    // print_sum(1, 2.0, 3);  // ERROR: double is not integral
+}
+```
+
+### Subsumption with Pack Expansion Constraints
+
+When comparing constrained variadic templates, subsumption is evaluated per-element in the pack.
+However, packs of different sizes are inherently incomparable — a constraint requiring "at least two
+integral types" cannot structurally subsume one requiring "at least one integral type" using
+standard concept syntax.
+
+```cpp
+#include <concepts>
+#include <iostream>
+
+template<std::integral T>
+void f(T) { std::cout << "single integral\n"; }
+
+template<std::integral T, std::integral U>
+void f(T, U) { std::cout << "two integrals\n"; }
+
+int main() {
+    f(42);        // Calls single integral overload
+    f(1, 2);      // Calls two integrals overload
+    // f(42, 3.14); // ERROR: no viable overload
+}
+```
+
+In this case, the two overloads have different arity (1 vs 2 parameters), so they don't compete
+during overload resolution — the compiler selects based on argument count before applying constraint
+subsumption.
+
+---
+
+## Interaction with SFINAE and `enable_if`
+
+C++20 concepts were designed to replace SFINAE-based constraints. When concepts and `enable_if` are
+mixed in the same overload set, concepts take priority in the resolution order:
+
+1. Template argument deduction eliminates non-deducible candidates.
+2. Constraint satisfaction (concepts and `requires` clauses) eliminates unsatisfied candidates.
+3. Partial ordering by constraints selects the most constrained candidate.
+4. SFINAE from `enable_if` / `std::void_t` is checked as part of template argument deduction.
+
+**Best practice:** Do not mix concepts and `enable_if` in the same overload set. Convert all
+`enable_if` constraints to concepts for consistency and better error messages.
+
+```cpp
+// BAD: mixing SFINAE and concepts
+template<typename T, std::enable_if_t<std::is_integral_v<T>, int> = 0>
+void f(T) {}
+
+template<std::integral T>
+void f(T) {}  // Ambiguous with the enable_if version when T is integral
+
+// GOOD: use concepts consistently
+template<std::integral T>
+void f(T) { std::cout << "integral\n"; }
+
+template<std::signed_integral T>
+void f(T) { std::cout << "signed integral\n"; }
+```
+
+---
+
+## Constraint Subsumption and Class Templates
+
+Concepts can also constrain class template partial specializations. Subsumption determines which
+specialization is selected:
+
+```cpp
+#include <concepts>
+#include <iostream>
+#include <type_traits>
+
+template<typename T>
+struct Renderer {
+    static void draw() { std::cout << "default renderer\n"; }
+};
+
+template<std::integral T>
+struct Renderer<T> {
+    static void draw() { std::cout << "integral renderer\n"; }
+};
+
+template<std::floating_point T>
+struct Renderer<T> {
+    static void draw() { std::cout << "floating-point renderer\n"; }
+};
+
+int main() {
+    Renderer<int>::draw();       // integral renderer
+    Renderer<double>::draw();    // floating-point renderer
+    Renderer<std::string>::draw(); // default renderer
+}
+```
+
+Partial specializations are selected by the most specialized match. If two specializations are
+equally specialized, the program is ill-formed.
+
+---
+
+## Common Pitfalls
+
+- **Structurally different but semantically equivalent constraints are incomparable.**
+  `std::integral<T>` and `requires(T t) { t + 1; } requires std::integral<T>` may be logically
+  equivalent but structurally different. The compiler cannot determine subsumption between them,
+  leading to ambiguity. Use the same concept name consistently.
+- **Forgetting that subsumption requires strict "more restrictive."** Two constraints that are
+  exactly equally restrictive (e.g., two different concept names that normalize to the same atomic
+  constraints) result in ambiguity, not preference. One must be strictly a superset.
+- **Using `requires` expressions with local parameters in overloads.** Local parameters in
+  `requires(T x) { ... }` do not participate in the template parameter mapping during subsumption.
+  This makes the constraint structurally incomparable with other constraints. Prefer
+  `requires std::integral<T>` (no local parameter) over `requires(T x) { x + x; }` (local parameter)
+  when the constraint doesn't need to test specific operations on a parameter.
+- **Concepts with `auto` in `requires` expressions.** `requires(auto x) { x.foo(); }` is less useful
+  for subsumption because `auto` introduces a deduced type that may not map cleanly to the outer
+  template parameters. Use explicit type parameters.
+- **Negated constraints and subsumption.** `!std::integral<T>` does not subsume
+  `std::floating_point<T>` even though all floating-point types are non-integral. The compiler
+  compares constraint structure, not set-theoretic relationships.
