@@ -55,9 +55,6 @@ importers:
       glob:
         specifier: ^11.0.3
         version: 11.0.3
-      inter-ui:
-        specifier: ^4.1.1
-        version: 4.1.1
       katex:
         specifier: ^0.16.44
         version: 0.16.44
@@ -85,9 +82,6 @@ importers:
       remark-code-snippets:
         specifier: ^1.1.0
         version: 1.1.0
-      remark-grid-tables:
-        specifier: ^2.2.2
-        version: 2.2.2
       remark-math:
         specifier: ^6.0.0
         version: 6.0.0
@@ -6911,12 +6905,6 @@ packages:
         integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==,
       }
 
-  grapheme-splitter@1.0.4:
-    resolution:
-      {
-        integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==,
-      }
-
   graphemer@1.4.0:
     resolution:
       {
@@ -7482,13 +7470,6 @@ packages:
       {
         integrity: sha512-0aO8FkhNZlj/ZIbNi7Lxxr12obT7cL1moPfE4tg1LkX7LlLfC6DeX4l2ZEud1ukP9jNQyNnfzQVqwbwmAATY4Q==,
       }
-
-  inter-ui@4.1.1:
-    resolution:
-      {
-        integrity: sha512-451h0J29HyOmA+JXgSi/6M12tL7ZCZ8arYKZUXiOXTJpJbAKqJvFh3k5SiV3x7tKe0C0KyrKUUiQIvvZ2PQDcA==,
-      }
-    engines: { node: '>=16.0.0' }
 
   internal-slot@1.1.0:
     resolution:
@@ -8325,12 +8306,6 @@ packages:
     resolution:
       {
         integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==,
-      }
-
-  lodash.trimend@4.5.1:
-    resolution:
-      {
-        integrity: sha512-lsD+k73XztDsMBKPKvzHXRKFNMohTjoTKIIo4ADLn5dA65LZ1BqlAvSXhR2rPEC3BgAUQnzMnorqDtqn2z4IHA==,
       }
 
   lodash.uniq@4.5.0:
@@ -10938,12 +10913,6 @@ packages:
     resolution:
       {
         integrity: sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==,
-      }
-
-  remark-grid-tables@2.2.2:
-    resolution:
-      {
-        integrity: sha512-e61jugCNhVxmsgx7MUEbOHHRN973zoVEEdH7OKY9EGDdTQCsl8CFk8OE6wlJTFwXO+j/nEB4Rb46vg3SczyM9w==,
       }
 
   remark-math@6.0.0:
@@ -18311,8 +18280,6 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  grapheme-splitter@1.0.4: {}
-
   graphemer@1.4.0: {}
 
   gray-matter@4.0.3:
@@ -18726,8 +18693,6 @@ snapshots:
   ini@6.0.0: {}
 
   inline-style-parser@0.2.4: {}
-
-  inter-ui@4.1.1: {}
 
   internal-slot@1.1.0:
     dependencies:
@@ -19161,8 +19126,6 @@ snapshots:
   lodash.memoize@4.1.2: {}
 
   lodash.merge@4.6.2: {}
-
-  lodash.trimend@4.5.1: {}
 
   lodash.uniq@4.5.0: {}
 
@@ -21151,13 +21114,6 @@ snapshots:
       unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
-
-  remark-grid-tables@2.2.2:
-    dependencies:
-      grapheme-splitter: 1.0.4
-      lodash.trimend: 4.5.1
-      string-width: 4.2.3
-      unist-util-visit: 2.0.3
 
   remark-math@6.0.0:
     dependencies:

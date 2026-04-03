@@ -126,7 +126,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run pnpm audit
-        run: pnpm audit --audit-level=high || true
+        run: pnpm audit --audit-level=high
 
       - name: Check for outdated dependencies
-        run: pnpm dlx npm-check-updates || true
+        run: pnpm dlx npm-check-updates 2>&1 || true

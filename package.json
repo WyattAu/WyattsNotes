@@ -38,7 +38,6 @@
     "docusaurus-plugin-image-zoom": "^3.0.1",
     "docusaurus-theme-redoc": "^2.5.0",
     "glob": "^11.0.3",
-    "inter-ui": "^4.1.1",
     "katex": "^0.16.44",
     "lunr": "^2.3.9",
     "lunr-languages": "^1.14.0",
@@ -48,7 +47,6 @@
     "rehype-katex": "^7.0.1",
     "remark": "^15.0.1",
     "remark-code-snippets": "^1.1.0",
-    "remark-grid-tables": "^2.2.2",
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
@@ -87,7 +85,7 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": "22"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [

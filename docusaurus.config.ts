@@ -74,7 +74,6 @@ const config: Config = {
   ...prjMetadataConfig,
   ...compilationConfig,
 
-  // TODO: Fix remaining broken links across IB/DSE/C++ notes, then revert to 'throw'
   onBrokenLinks: 'throw',
 
   i18n: {
@@ -252,10 +251,7 @@ const config: Config = {
         languages: ['en'],
       },
     ],
-    [
-      'docusaurus-plugin-image-zoom',
-      { selector: '.markdown :not(a) > img, .markdown :not(.mermaid) svg' },
-    ],
+    ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     [
       '@r74tech/docusaurus-plugin-panzoom',
       {
@@ -408,13 +404,6 @@ const config: Config = {
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },
-    },
-    zoom: {
-      selector: '.markdown :not(em) > img',
-      background: {
-        light: 'rgb(255, 255, 255)',
-        dark: 'rgb(50, 50, 50)',
-      },
     },
   } satisfies Preset.ThemeConfig,
 };
