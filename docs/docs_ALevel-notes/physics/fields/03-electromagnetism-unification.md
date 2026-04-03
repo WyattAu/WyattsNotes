@@ -61,6 +61,15 @@ restore this symmetry — and in doing so, predicted electromagnetic waves.
 oscillating electric and magnetic fields perpendicular to each other and to the direction of
 propagation, travelling at speed $c = 1/\sqrt{\mu_0\varepsilon_0}$ in vacuum.
 
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+
+AQA expects qualitative understanding of all four Maxwell's equations and their physical
+significance. Edexcel and CIE require the full derivation of $c$ from first principles. OCR (A)
+emphasises the consequences (EM wave properties, the spectrum) rather than the mathematical
+formalism. CIE may also ask about the displacement current explicitly.
+
+:::
+
 ## 2. Derivation of the Speed of Electromagnetic Waves
 
 Consider electromagnetic waves propagating in free space (no charges, no currents: $Q = 0$,
@@ -129,6 +138,61 @@ from purely electrical and magnetic constants — proving that light is an elect
 creates a changing $E$ field (Faraday), and so on. The rate of this mutual generation is set by
 $\mu_0$ and $\varepsilon_0$.
 
+### The $\mathbf{E}/\mathbf{B}$ Relationship
+
+Starting from the two coupled first-order equations derived above:
+
+$$\frac{\partial E_y}{\partial x} = -\frac{\partial B_z}{\partial t} \quad \text{... (i)}$$
+
+$$\frac{\partial B_z}{\partial x} = \mu_0\varepsilon_0\frac{\partial E_y}{\partial t} \quad \text{... (ii)}$$
+
+For a plane wave $E_y = E_0\sin(kx - \omega t)$, equation (i) gives:
+
+$$kE_0\cos(kx - \omega t) = \omega B_0\cos(kx - \omega t)$$
+
+So $\frac{E_0}{B_0} = \frac{\omega}{k} = c$. This confirms that the electric and magnetic field
+amplitudes are related by a fixed ratio — a direct consequence of Maxwell's equations, not an
+independent assumption.
+
+### Energy in Electromagnetic Waves
+
+The energy density in the electric field is $u_E = \frac{1}{2}\varepsilon_0 E^2$ and in the magnetic
+field is $u_B = \frac{B^2}{2\mu_0}$. Since $B = E/c$:
+
+$$u_B = \frac{E^2}{2\mu_0 c^2} = \frac{\varepsilon_0 E^2}{2} = u_E$$
+
+The electric and magnetic fields carry **equal energy**. The total energy density is:
+
+$$u = \varepsilon_0 E^2 = \frac{B^2}{\mu_0}$$
+
+The Poynting vector gives the energy flux (power per unit area):
+
+$$\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$$
+
+For a plane wave, the time-averaged intensity is:
+
+$$\langle S \rangle = \frac{E_0 B_0}{2\mu_0} = \frac{E_0^2}{2\mu_0 c} = \frac{c\varepsilon_0 E_0^2}{2}$$
+
+**Real-world example.** A typical laser pointer emits about 5 mW of power through a beam of diameter
+2 mm. The intensity is $I = P/A = 5 \times 10^{-3} / (\pi \times 10^{-6}) \approx 1600$ W m$^{-2}$.
+From this, $E_0 = \sqrt{2I/(\mu_0 c)} \approx 1100$ V m$^{-1}$ — a surprisingly large electric field
+from a small device.
+
+### Radiation Pressure
+
+Since EM waves carry momentum, they exert pressure on surfaces. For a wave with intensity $I$:
+
+$$P = \frac{I}{c} \quad \text{(total absorption)}$$
+
+$$P = \frac{2I}{c} \quad \text{(perfect reflection)}$$
+
+**Real-world example.** Solar radiation at Earth's orbit has intensity $\approx 1360$ W m$^{-2}$.
+The radiation pressure on a perfectly reflecting solar sail is
+$P = 2 \times 1360 / (3 \times 10^8)
+\approx 9.1 \times 10^{-6}$ Pa. While tiny, this is sufficient
+to propel lightweight spacecraft — the Planetary Society's LightSail 2 demonstrated solar sailing
+in 2019.
+
 ## 3. Properties of Electromagnetic Waves
 
 From Maxwell's equations, EM waves have these properties:
@@ -140,6 +204,17 @@ From Maxwell's equations, EM waves have these properties:
 4. **Self-propagating**: no medium required
 5. **Carry energy**: the Poynting vector $\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$
    gives the energy flux
+6. **Carry momentum**: radiation pressure $P = I/c$ for total absorption, $P = 2I/c$ for perfect
+   reflection
+
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+
+AQA and OCR (A) focus on the qualitative properties listed above. Edexcel and CIE may ask for the
+$E = cB$ relationship quantitatively. The Poynting vector is beyond most A Level syllabi but
+provides useful context for understanding radiation pressure and energy transport. CIE P4 includes
+radiation pressure as an application topic.
+
+:::
 
 ## 4. The EM Spectrum as a Unified Phenomenon
 
@@ -166,6 +241,274 @@ classical wave description remains valid and powerful.
 :::info Board Note The derivation of $c = 1/\sqrt{\mu_0\varepsilon_0}$ is required by Edexcel and
 CIE. AQA and OCR (A) expect you to know the result and its significance but may not require the full
 derivation. :::
+
+## 5. Faraday's Law — Applications and Lenz's Law Intuition
+
+### Flux Linkage and Induced `EMF`
+
+The magnetic flux through a coil of $N$ turns is called the flux linkage:
+
+$$N\Phi = NBA\cos\theta$$
+
+Faraday's law states that the magnitude of the induced electromotive force equals the rate of change
+of flux linkage:
+
+$$|\varepsilon| = \frac{d(N\Phi)}{dt}$$
+
+### Lenz's Law: Why the Minus Sign Matters
+
+The negative sign in Faraday's law ($\varepsilon = -d\Phi_B/dt$) is not arbitrary — it embodies
+Lenz's law: **the induced current flows in a direction that opposes the change in flux that produced
+it.**
+
+**Intuition.** Lenz's law is a consequence of energy conservation. If the induced current reinforced
+the change in flux, it would amplify itself — a runaway process that would violate conservation of
+energy. The opposition ensures that work must be done to maintain the changing flux, and this work
+is converted to electrical energy.
+
+**Example.** A bar magnet is pushed north-pole-first into a solenoid. The flux through the solenoid
+increases. By Lenz's law, the induced current creates a magnetic field opposing the increase — so
+the solenoid's end nearest the magnet becomes a north pole, repelling the magnet. You feel
+resistance when pushing the magnet in, confirming that mechanical work is being converted to
+electrical energy.
+
+### The Motional `EMF`
+
+When a conductor of length $l$ moves with velocity $v$ perpendicular to a uniform field $B$:
+
+$$\varepsilon = BLv$$
+
+**Derivation.** Each free electron in the conductor experiences a magnetic force $F = evB$ (by
+Fleming's left-hand rule). Electrons accumulate at one end, creating an electric field $E$ that
+opposes further accumulation. Equilibrium is reached when $eE = evB$, giving $E = vB$. Since
+$E =
+\varepsilon/l$, we get $\varepsilon = BLv$.
+
+### Applications of Faraday's Law
+
+**Transformers.** An alternating current in the primary coil creates a changing magnetic flux in the
+iron core, which induces an alternating `EMF` in the secondary coil:
+
+$$\frac{V_s}{V_p} = \frac{N_s}{N_p}$$
+
+For an ideal transformer (no energy losses), power is conserved: $V_p I_p = V_s I_s$.
+
+**Generators.** A coil rotating in a uniform magnetic field produces an alternating `EMF`. For a
+coil of $N$ turns, area $A$, rotating at angular frequency $\omega$ in field $B$:
+
+$$\varepsilon = NAB\omega\sin(\omega t)$$
+
+The peak `EMF` is $\varepsilon_0 = NAB\omega$ — increasing the rotation speed, field strength, coil
+area, or number of turns all increase the output.
+
+**Induction braking.** Eddy currents induced in a conductor moving through a magnetic field create a
+force opposing the motion. This is used in electromagnetic brakes on trains and in damping
+mechanisms for sensitive balances. The braking force is proportional to the conductor's velocity, so
+it provides smooth deceleration without mechanical contact.
+
+**Induction heating.** A high-frequency alternating magnetic field induces eddy currents in a metal
+object, resistively heating it. Used in induction cooktops (where the pan itself becomes the heat
+source) and in industrial furnaces for melting metals.
+
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+
+AQA requires quantitative treatment of transformers (efficiency, turns ratio) and generators.
+Edexcel covers motional `EMF` in detail and includes the rotating coil derivation. CIE P4 requires
+the back-`EMF` of a motor and transformer equations. OCR (A) links electromagnetic induction to
+braking and energy transfer, with less quantitative detail on rotating coils.
+
+:::
+
+## 6. The Hall Effect
+
+When a current-carrying conductor is placed in a magnetic field perpendicular to the current, a
+transverse voltage — the **Hall voltage** — develops across the conductor.
+
+### Mechanism
+
+Charge carriers moving with drift velocity $v_d$ through the conductor experience a magnetic force:
+
+$$F_B = qv_dB$$
+
+This deflects carriers to one side, building up a transverse electric field $E_H$. Equilibrium is
+reached when the electric force balances the magnetic force:
+
+$$qE_H = qv_dB$$
+
+$$E_H = v_dB$$
+
+For a conductor of thickness $t$, the Hall voltage is:
+
+$$V_H = E_H t = v_d B t$$
+
+### Expressing in Terms of Measurable Quantities
+
+Since the current $I = nqv_dA$ where $n$ is the carrier density and $A = wt$ (width $\times$
+thickness), we have $v_d = I/(nqwt)$. Substituting:
+
+$$\boxed{V_H = \frac{BI}{ntq}}$$
+
+This shows that the Hall voltage is proportional to $B$ and inversely proportional to the thickness
+and carrier density.
+
+### Applications
+
+**Hall probes** use the Hall effect to measure magnetic field strength. Since $V_H \propto B$ (for
+fixed $I$), a calibrated Hall probe provides a direct, linear measurement of $B$. This is the most
+common method for measuring magnetic fields in A Level laboratories.
+
+The Hall effect also reveals the sign of the charge carriers: the polarity of $V_H$ depends on
+whether the carriers are positive or negative. In semiconductors, both electron (n-type) and hole
+(p-type) conduction can be distinguished — a crucial tool in semiconductor research.
+
+**Example.** A Hall probe has $n = 8.5 \times 10^{28}$ m$^{-3}$ (copper), thickness $t = 1.0$ mm,
+and carries current $I = 10$ mA. In a field of $B = 0.50$ T:
+
+$V_H = \frac{0.50 \times 0.010}{8.5 \times 10^{28} \times 1.0 \times 10^{-3} \times 1.60 \times 10^{-19}} = \frac{5.0 \times 10^{-3}}{1.36 \times 10^{7}} = 3.7 \times 10^{-10}$
+V.
+
+This tiny voltage in metals explains why Hall probes use **semiconductors** (with much lower $n$) to
+get measurable voltages.
+
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+
+CIE P4 covers the Hall effect explicitly, including the derivation of $V_H = BI/(ntq)$. AQA mentions
+Hall probes as a method of measuring magnetic fields but does not require the full theory. Edexcel
+provides a qualitative treatment. OCR (A) has limited coverage — students should be aware of Hall
+probes as a measuring instrument.
+
+:::
+
+## 7. The Mass Spectrometer
+
+A mass spectrometer separates ions by their mass-to-charge ratio, enabling precise measurement of
+isotopic masses and abundances.
+
+### Stages of Operation
+
+1. **Ionisation.** Atoms are ionised (by electron bombardment or laser), producing positive ions of
+   charge $q = +e$ (or $+2e$, etc.).
+2. **Acceleration.** Ions are accelerated through a potential difference $V$, gaining kinetic
+   energy:
+
+   $$\frac{1}{2}mv^2 = qV \quad \Rightarrow \quad v = \sqrt{\frac{2qV}{m}}$$
+
+3. **Deflection.** Ions enter a region of uniform magnetic field $B$ and follow a semicircular path.
+   The magnetic force provides centripetal acceleration:
+
+   $$qvB = \frac{mv^2}{r} \quad \Rightarrow \quad r = \frac{mv}{qB}$$
+
+4. **Detection.** Ions strike a detector at different positions depending on their radius of
+   curvature. Substituting the velocity from stage 2:
+
+   $$r = \frac{1}{B}\sqrt{\frac{2mV}{q}}$$
+
+   Rearranging for the mass-to-charge ratio:
+
+   $$\boxed{\frac{m}{q} = \frac{B^2 r^2}{2V}}$$
+
+### Key Insights
+
+- Ions with **larger mass** follow a **larger radius** path.
+- Doubly-charged ions ($q = 2e$) follow a **smaller** radius than singly-charged ions of the same
+  mass.
+- The instrument can distinguish between different **isotopes** of the same element, since
+  $r \propto
+  \sqrt{m}$.
+
+**Real-world example.** In a mass spectrometer with $B = 0.50$ T and $V = 10,000$ V, singly-charged
+carbon-12 ions ($m = 12 \times 1.66 \times 10^{-27}$ kg) follow a semicircular path of radius:
+
+$$r = \frac{1}{0.50}\sqrt{\frac{2 \times 1.99 \times 10^{-26} \times 10000}{1.60 \times 10^{-19}}} = 2.0 \times 0.0500 = 0.100 \text{ m} = 10.0 \text{ cm}$$
+
+Carbon-13 ions ($m = 13 \times 1.66 \times 10^{-27}$ kg) would be deflected to a radius
+$\sqrt{13/12} \times 10.0 \approx 10.4$ cm — the two isotopes are clearly separated on the detector.
+
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+
+AQA covers the mass spectrometer quantitatively, including the derivation of $r = mv/(qB)$. Edexcel
+includes it as an application of circular motion in a magnetic field. CIE P4 covers it in detail,
+including time-of-flight variants. OCR (A) treats it more briefly but expects familiarity with the
+principles of velocity selection and magnetic deflection.
+
+:::
+
+## 8. The Cyclotron
+
+A cyclotron is a particle accelerator that uses a combination of an electric field and a magnetic
+field to accelerate charged particles to high energies.
+
+### Structure and Principle
+
+The cyclotron consists of two hollow, D-shaped electrodes ("dees") placed in a uniform magnetic
+field perpendicular to their plane. An alternating potential difference is applied across the gap
+between the dees.
+
+1. A charged particle is injected near the centre.
+2. The electric field in the gap accelerates the particle.
+3. Inside a dee, the magnetic field causes the particle to follow a semicircular path (no work done
+   by $B$ since $\mathbf{F} \perp \mathbf{v}$).
+4. When the particle reaches the gap again, the alternating `EMF` has reversed, accelerating the
+   particle once more.
+5. The particle spirals outward with increasing radius but **constant frequency**.
+
+### The Cyclotron Frequency
+
+The period of the semicircular orbit is $T = \pi r / v = \pi m / (qB)$. Remarkably, the radius and
+velocity cancel out:
+
+$$\boxed{f = \frac{1}{T} = \frac{qB}{2\pi m}}$$
+
+This is the **cyclotron frequency** — it depends only on $q$, $B$, and $m$, **not on the particle's
+speed or radius**. This is why the alternating `EMF` can operate at a fixed frequency, regardless of
+the particle's energy.
+
+### Proof of Frequency Independence
+
+For a charged particle moving in a uniform magnetic field, the centripetal force is provided by the
+magnetic force:
+
+$$\frac{mv^2}{r} = qvB \quad \Rightarrow \quad r = \frac{mv}{qB}$$
+
+The time for one complete revolution is:
+
+$$T = \frac{2\pi r}{v} = \frac{2\pi m}{qB}$$
+
+This is independent of $r$ and $v$, confirming that the frequency is constant:
+
+$$f = \frac{qB}{2\pi m}$$
+
+$\square$
+
+### Maximum Kinetic Energy
+
+The maximum radius is determined by the size of the dees, $r = R$. At this point:
+
+$$KE_{\max} = \frac{1}{2}mv_{\max}^2 = \frac{q^2 B^2 R^2}{2m}$$
+
+This shows that larger cyclotrons (bigger $R$) and stronger fields (larger $B$) produce
+higher-energy particles.
+
+### The Relativistic Limit
+
+As particles approach a significant fraction of $c$, their relativistic mass increases
+($m_{\text{rel}} = \gamma m$). Since $f = qB/(2\pi m)$, the cyclotron frequency decreases. The
+alternating `EMF` falls out of sync, and the particle is no longer accelerated efficiently. The
+**synchrocyclotron** solves this by varying the frequency of the alternating `EMF` to match the
+decreasing cyclotron frequency.
+
+**Real-world example.** The first cyclotron, built by Ernest Lawrence in 1932, had a diameter of
+just 11 cm and accelerated protons to 80 keV. Modern cyclotrons in hospitals produce radioactive
+isotopes for PET scans by accelerating protons to energies of 10--20 MeV.
+
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+
+AQA mentions the cyclotron briefly as an application of circular motion in magnetic fields. Edexcel
+does not typically require detailed knowledge. CIE P4 covers the cyclotron in moderate detail,
+including the derivation of the cyclotron frequency. OCR (A) does not typically examine this topic —
+students should check their specification.
+
+:::
 
 ## Problem Set
 
@@ -305,4 +648,99 @@ refraction, polarisation, speed matching $c$).
 [The EM Spectrum as a Unified Phenomenon](#4-the-em-spectrum-as-a-unified-phenomenon)
 
 </p>
+</details>
+
+<details>
+<summary>Problem 9</summary>
+<p>
+
+A transformer has 200 turns on its primary coil and 50 turns on its secondary coil. The primary is
+connected to a 240 V rms AC supply. (a) Calculate the secondary voltage. (b) If the secondary
+delivers 2.0 A to a load and the transformer is 90% efficient, calculate the primary current.
+
+**Answer.** (a) $V_s/V_p = N_s/N_p$, so $V_s = 240 \times 50/200 = 60$ V.
+
+(b) $P_s = V_s I_s = 60 \times 2.0 = 120$ W. $P_p = P_s / 0.90 = 133$ W.
+$I_p = P_p / V_p = 133/240 = 0.56$ A.
+
+<b>If you get this wrong, revise:</b>
+[Faraday's Law — Applications and Lenz's Law Intuition](#5-faradays-law--applications-and-lenzs-law-intuition)
+
+</p>
+
+</details>
+
+<details>
+<summary>Problem 10</summary>
+<p>
+
+A Hall probe uses a semiconductor strip of thickness 1.5 mm and carrier density $1.0 \times 10^{21}$
+m$^{-3}$. A current of 5.0 mA passes through the strip, which is placed in a magnetic field of 0.30
+T. Calculate the Hall voltage. Why is a semiconductor used rather than a metal?
+
+**Answer.**
+$V_H = \frac{BI}{ntq} = \frac{0.30 \times 5.0 \times 10^{-3}}{1.0 \times 10^{21} \times 1.5 \times 10^{-3} \times 1.60 \times 10^{-19}} = \frac{1.5 \times 10^{-3}}{0.240} = 6.25 \times 10^{-3}$
+V $= 6.3$ mV.
+
+A semiconductor is used because its much lower carrier density ($n$) produces a larger, more easily
+measurable Hall voltage compared to a metal where $n \sim 10^{29}$ m$^{-3}$ would give
+$V_H \sim 10^{-10}$ V.
+
+<b>If you get this wrong, revise:</b> [The Hall Effect](#6-the-hall-effect)
+
+</p>
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+<p>
+
+In a mass spectrometer, a potential difference of 5000 V accelerates singly-charged neon-20 ions
+($m = 20 \times 1.66 \times 10^{-27}$ kg) into a magnetic field of 0.40 T. (a) Calculate the
+velocity of the ions after acceleration. (b) Calculate the radius of their semicircular path. (c)
+Would neon-22 ions hit the detector closer to or further from the entrance slit?
+
+**Answer.** (a) $\frac{1}{2}mv^2 = qV$, so
+$v = \sqrt{2qV/m} = \sqrt{2 \times 1.60 \times 10^{-19} \times 5000 / (3.32 \times 10^{-26})} = \sqrt{4.82 \times 10^{10}} = 2.20 \times 10^5$
+m s$^{-1}$.
+
+(b)
+$r = mv/(qB) = 3.32 \times 10^{-26} \times 2.20 \times 10^5 / (1.60 \times 10^{-19} \times 0.40) = 7.30 \times 10^{-21} / 6.40 \times 10^{-20} = 0.114$
+m $= 11.4$ cm.
+
+(c) Since $r \propto \sqrt{m}$, neon-22 ions ($m$ is 10% larger) follow a path with radius
+$\sqrt{22/20} \times 11.4 \approx 11.9$ cm — **further** from the entrance slit.
+
+<b>If you get this wrong, revise:</b> [The Mass Spectrometer](#7-the-mass-spectrometer)
+
+</p>
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+<p>
+
+A cyclotron with dees of radius 0.50 m uses a magnetic field of 1.2 T to accelerate protons
+($m = 1.67 \times 10^{-27}$ kg, $q = 1.60 \times 10^{-19}$ C). Calculate: (a) the cyclotron
+frequency, (b) the maximum kinetic energy of the protons in both joules and electronvolts, (c)
+explain why the frequency remains constant as the proton accelerates.
+
+**Answer.** (a)
+$f = qB/(2\pi m) = 1.60 \times 10^{-19} \times 1.2 / (2\pi \times 1.67 \times 10^{-27}) = 1.92 \times 10^{-19} / 1.05 \times 10^{-26} = 1.83 \times 10^{7}$
+Hz $= 18.3$ MHz.
+
+(b)
+$KE_{\max} = q^2 B^2 R^2 / (2m) = (1.60 \times 10^{-19})^2 \times 1.44 \times 0.25 / (2 \times 1.67 \times 10^{-27}) = 9.22 \times 10^{-39} / 3.34 \times 10^{-27} = 2.76 \times 10^{-12}$
+J $= 2.76 \times 10^{-12} / 1.60 \times 10^{-19} = 17.2$ MeV.
+
+(c) The cyclotron frequency $f = qB/(2\pi m)$ depends only on the charge, field strength, and mass —
+not on the radius or speed. As the proton gains energy and spirals outward, both $r$ and $v$
+increase proportionally ($r = mv/(qB)$), keeping the period $T = 2\pi r/v = 2\pi m/(qB)$ constant.
+
+<b>If you get this wrong, revise:</b> [The Cyclotron](#8-the-cyclotron)
+
+</p>
+
 </details>
