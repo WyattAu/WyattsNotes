@@ -429,7 +429,5 @@ classes of bugs by construction.
 
 ## See Also
 
-- [References and Views](./2_references.md)
-- [Smart Pointers Overview](../../4_resource_management/1_ownership_and_raii/1_overview.md)
 - [The Stack](../1_data_layout/4_stack.md)
 - [The Heap](../1_data_layout/5_heap.md)

@@ -357,4 +357,3 @@ build CMakeFiles/App.dir/main.cpp.o: dyndep | CMakeFiles/Engine.dir/engine.pcm
 
 - [Header Units](./3_header_unit.md)
 - [The C Runtime (CRT)](./4_c_runtime.md)
-- [Translation Units and Preprocessing](../1_translation/1_translation_unit.md)

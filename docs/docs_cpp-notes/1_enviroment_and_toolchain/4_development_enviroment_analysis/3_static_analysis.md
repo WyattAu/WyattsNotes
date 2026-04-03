@@ -367,4 +367,3 @@ analysis (e.g., using an uninitialized variable on a specific code path).
 
 - [Debugger Configuration](1_language_server_protocol_configuration.md)
 - [Sanitizers](4_sanitizer.md)
-- [Compiler and Standards](../1_compiler_and_standards/1_compiler_overview.md)

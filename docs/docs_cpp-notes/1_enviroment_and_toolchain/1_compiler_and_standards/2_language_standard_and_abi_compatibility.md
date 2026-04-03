@@ -366,5 +366,4 @@ int main() {
 
 ## See Also
 
-- [Compiler Overview](1_compiler_overview.md)
 - [Standard Library Implementation](3_standard_library_implementation.md)

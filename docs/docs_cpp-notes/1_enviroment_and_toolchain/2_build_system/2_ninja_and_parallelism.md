@@ -369,8 +369,3 @@ Despite Ninja's speed advantages, there are cases where GNU Make is more appropr
 - **CMake cache mismatch.** If you switch generators (e.g., from Make to Ninja) without deleting the
   build directory, CMake may use cached values from the old generator. Always start fresh when
   switching generators.
-
-## See Also
-
-- [CMake Basics](1_cmake_basics.md)
-- [Build Targets and Properties](3_build_targets_and_properties.md)

@@ -415,5 +415,3 @@ set(CMAKE_VISIBILITY_INLINES_HIDDEN ON)
 ## See Also
 
 - [Linker](./3_linker.md)
-- [Translation Units and Preprocessing](./1_translation_unit.md)
-- [Preprocessor](./2_preprocessor.md)

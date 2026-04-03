@@ -345,4 +345,3 @@ When modernizing a codebase to C++23 modules:
 
 - [Binary Module Interfaces (BMI)](./2_bmi.md)
 - [The C Runtime (CRT)](./4_c_runtime.md)
-- [Preprocessor](../1_translation/2_preprocessor.md)

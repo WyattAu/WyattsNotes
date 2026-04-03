@@ -447,5 +447,3 @@ nm -D libfoo.so | grep "missing_symbol"
 ## See Also
 
 - [Name Mangling](./5_name_mangling.md)
-- [Translation Units and Preprocessing](./1_translation_unit.md)
-- [Preprocessor](./2_preprocessor.md)
