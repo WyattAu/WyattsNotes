@@ -109,7 +109,6 @@ struct GoodLayout {
   ></iframe>
 </div>
 
-
 ### `[[no_unique_address]]` (C++20)
 
 Empty classes in C++ normally take up 1 byte (to ensure unique addresses). When used as members, this forces padding. The C++20 attribute `[[no_unique_address]]` allows the compiler to overlap the empty class with the padding of other members.

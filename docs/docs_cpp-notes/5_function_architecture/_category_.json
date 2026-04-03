@@ -1,0 +1,8 @@
+{
+  "label": "Function Architecture",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Function mechanics, error handling, and interoperation."
+  }
+}

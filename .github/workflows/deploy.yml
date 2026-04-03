@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -20,20 +20,33 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm ci --prefer-offline
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint check
+        run: pnpm exec eslint . --report-unused-disable-directives --ext .js,.jsx,.ts,.tsx
+
+      - name: Typecheck
+        run: pnpm run typecheck
 
       - name: Clean previous builds
-        run: npx docusaurus clear || rm -rf build/
+        run: pnpm run clear
 
       - name: Build website
-        run: npm run build
+        run: pnpm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=8192
 
       - name: Prepare artifact
         run: |
@@ -42,8 +55,8 @@ jobs:
 
       - name: Validate build output
         run: |
-          [ -d build ] || (echo "Build directory missing"; exit 1)
-          [ -f build/index.html ] || (echo "No index.html found"; exit 1)
+          [ -d build ] || (echo "ERROR: Build directory missing"; exit 1)
+          [ -f build/index.html ] || (echo "ERROR: No index.html found"; exit 1)
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3

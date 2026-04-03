@@ -48,7 +48,15 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({
+  title,
+  Svg,
+  description,
+}: {
+  title: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  description: React.ReactNode;
+}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -67,8 +75,10 @@ export default function HomepageFeatures(): React.ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((feature, idx) => (
+            <React.Fragment key={idx}>
+              <Feature title={feature.title} Svg={feature.Svg} description={feature.description} />
+            </React.Fragment>
           ))}
         </div>
       </div>

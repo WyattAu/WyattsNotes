@@ -1,0 +1,8 @@
+{
+  "label": "Templates and Meta-Programming",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Templates, concepts, constraints, and compile-time computation."
+  }
+}

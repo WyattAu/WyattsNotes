@@ -1,19 +1,141 @@
 name: CI
-on: [push, pull_request]
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main, staging]
+
 jobs:
-  build:
+  validate:
+    name: Lint & Typecheck
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm ci --prefer-offline
+        run: pnpm install --frozen-lockfile
 
-      - name: Build project
-        run: npm run build
+      - name: Lint
+        run: pnpm exec eslint . --report-unused-disable-directives --ext .js,.jsx,.ts,.tsx
+
+      - name: Typecheck
+        run: pnpm run typecheck
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Verify lockfile integrity
+        run: |
+          LOCKFILE_HASH=$(sha256sum pnpm-lock.yaml | cut -d' ' -f1)
+          echo "Lockfile SHA-256: $LOCKFILE_HASH"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=8192
+
+      - name: Validate build output
+        run: |
+          [ -d build ] || (echo "ERROR: Build directory missing"; exit 1)
+          [ -f build/index.html ] || (echo "ERROR: No index.html found"; exit 1)
+          echo "Build successful. Output size: $(du -sh build | cut -f1)"
+
+  links:
+    name: Check Links
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check Markdown Links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress 'docs/**/*.md' 'docs/**/*.mdx' '*.md'
+          fail: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  security:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run pnpm audit (critical = fail)
+        run: pnpm audit --audit-level=critical
+
+      - name: Run pnpm audit (high = warn)
+        id: audit-high
+        continue-on-error: true
+        run: pnpm audit --audit-level=high
+
+      - name: Annotate high-severity findings
+        if: steps.audit-high.outcome == 'failure'
+        run: |
+          echo "::warning::pnpm audit found HIGH-severity vulnerabilities in transitive dependencies."
+          echo "These require upstream fixes (Docusaurus, theme plugins). Review:" 
+          echo "https://github.com/WyattAu/WyattsNotes/security"

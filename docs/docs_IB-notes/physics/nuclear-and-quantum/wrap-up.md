@@ -12,10 +12,13 @@ slug: wrap
 <summary><strong>E.1 Structure of the Atom, E.2 Quantum Physics & E.3 Radioactive Decay</strong></summary>
 <p>
 
-1. **Question (E.2 & D.3 - HL Only):** In a photoelectric effect experiment, light of wavelength 400 nm is incident on a metal surface with a work function of 2.28 eV. The emitted photoelectrons are then directed into a region of uniform magnetic field B = 1.5 mT, with their velocity perpendicular to the field.
-   a) Calculate the maximum kinetic energy of the emitted photoelectrons, in joules.
-   b) What is the radius of the circular path of the most energetic photoelectrons in the magnetic field?
-   c) What is the minimum potential difference required to _stop_ these photoelectrons (the stopping potential)?
+1. **Question (E.2 & D.3 - HL Only):** In a photoelectric effect experiment, light of wavelength 400
+   nm is incident on a metal surface with a work function of 2.28 eV. The emitted photoelectrons are
+   then directed into a region of uniform magnetic field B = 1.5 mT, with their velocity
+   perpendicular to the field. a) Calculate the maximum kinetic energy of the emitted
+   photoelectrons, in joules. b) What is the radius of the circular path of the most energetic
+   photoelectrons in the magnetic field? c) What is the minimum potential difference required to
+   _stop_ these photoelectrons (the stopping potential)?
 
 <details>
 <summary>Answer</summary>
@@ -42,10 +45,13 @@ slug: wrap
 </p>
 </details>
 
-2. **Question (E.1 & A.5 - HL Only):** A hydrogen atom in the n=3 excited state is moving away from an observer at a relativistic speed. The atom de-excites, emitting a photon that an observer at rest with the atom would measure as a Balmer-alpha transition (n=3 to n=2). The observer on Earth, however, measures the wavelength of this photon to be 700 nm.
-   a) What is the wavelength of the Balmer-alpha photon in its rest frame?
-   b) What is the speed of the hydrogen atom relative to the Earth observer?
-   c) From the Earth observer's perspective, what is the lifetime of the n=3 excited state, if its proper lifetime is 10.0 ns?
+2. **Question (E.1 & A.5 - HL Only):** A hydrogen atom in the n=3 excited state is moving away from
+   an observer at a relativistic speed. The atom de-excites, emitting a photon that an observer at
+   rest with the atom would measure as a Balmer-alpha transition (n=3 to n=2). The observer on
+   Earth, however, measures the wavelength of this photon to be 700 nm. a) What is the wavelength of
+   the Balmer-alpha photon in its rest frame? b) What is the speed of the hydrogen atom relative to
+   the Earth observer? c) From the Earth observer's perspective, what is the lifetime of the n=3
+   excited state, if its proper lifetime is 10.0 ns?
 
 <details>
 <summary>Answer</summary>
@@ -73,10 +79,11 @@ slug: wrap
 </p>
 </details>
 
-3. **Question (E.3, E.4 & B.1):** A nuclear fission power plant generates 900 MW of electrical power with an overall efficiency of 35%. The plant uses Uranium-235. The fission of one U-235 nucleus releases 200 MeV of energy.
-   a) What is the thermal power output of the reactor?
-   b) How many U-235 fissions must occur per second to produce this thermal power?
-   c) Calculate the mass of U-235 consumed in one year of operation. (1 year ≈ 3.15 x 10⁷ s).
+3. **Question (E.3, E.4 & B.1):** A nuclear fission power plant generates 900 MW of electrical power
+   with an overall efficiency of 35%. The plant uses Uranium-235. The fission of one U-235 nucleus
+   releases 200 MeV of energy. a) What is the thermal power output of the reactor? b) How many U-235
+   fissions must occur per second to produce this thermal power? c) Calculate the mass of U-235
+   consumed in one year of operation. (1 year ≈ 3.15 x 10⁷ s).
 
 <details>
 <summary>Answer</summary>
@@ -101,10 +108,14 @@ slug: wrap
 </p>
 </details>
 
-4. **Question (E.2 & E.3 - HL Only):** A sample of Cobalt-60 (half-life 5.27 years) is a gamma-ray source. It undergoes beta decay, and the resulting excited Nickel-60 nucleus immediately emits two gamma photons in succession with energies of 1.17 MeV and 1.33 MeV.
-   a) Calculate the de Broglie wavelength of the 1.17 MeV photon. (This is a trick question).
-   b) A particular sample has an initial activity of 100 GBq. What will its activity be after 10 years?
-   c) A lead shield is used to absorb the gamma rays. The 1.33 MeV photons have a much greater penetrating power. If this shield reduces the intensity of the 1.33 MeV photons to 1/16 of its initial value, and the half-value thickness of lead for these photons is 1.2 cm, how thick is the shield?
+4. **Question (E.2 & E.3 - HL Only):** A sample of Cobalt-60 (half-life 5.27 years) is a gamma-ray
+   source. It undergoes beta decay, and the resulting excited Nickel-60 nucleus immediately emits
+   two gamma photons in succession with energies of 1.17 MeV and 1.33 MeV. a) Calculate the de
+   Broglie wavelength of the 1.17 MeV photon. (This is a trick question). b) A particular sample has
+   an initial activity of 100 GBq. What will its activity be after 10 years? c) A lead shield is
+   used to absorb the gamma rays. The 1.33 MeV photons have a much greater penetrating power. If
+   this shield reduces the intensity of the 1.33 MeV photons to 1/16 of its initial value, and the
+   half-value thickness of lead for these photons is 1.2 cm, how thick is the shield?
 
 <details>
 <summary>Answer</summary>
@@ -128,10 +139,13 @@ slug: wrap
 </p>
 </details>
 
-5. **Question (E.5 & D.1):** A main-sequence star is analyzed and found to have the same surface temperature as the Sun (5800 K) but is 100 times more luminous.
-   a) Determine the radius of this star in terms of the Sun's radius ($R_\odot$).
-   b) Assuming the star has a mass 4 times that of the Sun ($M_\odot$), what is the escape velocity from the surface of this star compared to the Sun's?
-   c) A planet orbits this star at a distance equal to the Earth's orbital radius (1 AU). Would you expect this planet to be habitable? Justify your answer with a calculation involving the star's radiation intensity.
+5. **Question (E.5 & D.1):** A main-sequence star is analyzed and found to have the same surface
+   temperature as the Sun (5800 K) but is 100 times more luminous. a) Determine the radius of this
+   star in terms of the Sun's radius ($R_\odot$). b) Assuming the star has a mass 4 times that of
+   the Sun ($M_\odot$), what is the escape velocity from the surface of this star compared to the
+   Sun's? c) A planet orbits this star at a distance equal to the Earth's orbital radius (1 AU).
+   Would you expect this planet to be habitable? Justify your answer with a calculation involving
+   the star's radiation intensity.
 
 <details>
 <summary>Answer</summary>

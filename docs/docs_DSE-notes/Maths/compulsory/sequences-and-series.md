@@ -17,7 +17,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - This is a two-part problem. First, an arithmetic series to find the total saved, then a geometric sequence for the compound interest.
    - **Part 1: Calculate total savings (Arithmetic Series)**
      - The deposits are an arithmetic sequence with $a_1 = 1200$, $d = 300$, and $n=5$ years of deposits.
@@ -39,7 +38,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - Let $A_n$ be the amount of the drug in the body immediately after the $n$-th maintenance dose.
    - $A_0 = 20$ (initial dose).
    - **Day 1:** Before the dose, the amount is $20 \times 0.5 = 10$. After the dose, $A_1 = (20 \times 0.5) + 10 = 20$.
@@ -63,7 +61,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - This series can be solved by recognizing it as a telescoping series after applying partial fraction decomposition.
    - **Step 1: Decompose the general term.**
      - $$ \frac{1}{n(n+1)(n+2)} = \frac{A}{n} + \frac{B}{n+1} + \frac{C}{n+2} $$
@@ -81,8 +78,8 @@ slug: sequences-series
      - The sum is $\frac{1}{2} [ (a_1 - a_2) + (a_2 - a_3) + \dots + (a_N - a_{N+1}) ]$.
      - This telescopes to $\frac{1}{2}(a_1 - a_{N+1})$.
    - **Step 3: Evaluate the limit of the partial sum.**
-     - $$ S_N = \frac{1}{2}(a_1 - a_{N+1}) = \frac{1}{2}\left[ \frac{1}{2} - \frac{1}{N+1} + \frac{1}{N+2} \right] $$
-     - $$ S = \lim_{N\to\infty} S_N = \lim_{N\to\infty} \frac{1}{2}\left[ \frac{1}{2} - \frac{1}{N+1} + \frac{1}{N+2} \right] = \frac{1}{2} \left( \frac{1}{2} - 0 + 0 \right) = \frac{1}{4} $$
+     - $$ S*N = \frac{1}{2}(a_1 - a*{N+1}) = \frac{1}{2}\left[ \frac{1}{2} - \frac{1}{N+1} + \frac{1}{N+2} \right] $$
+     - $$ S = \lim*{N\to\infty} S_N = \lim*{N\to\infty} \frac{1}{2}\left[ \frac{1}{2} - \frac{1}{N+1} + \frac{1}{N+2} \right] = \frac{1}{2} \left( \frac{1}{2} - 0 + 0 \right) = \frac{1}{4} $$
 
    <b>If you get this wrong, you should focus on:</b> Partial fraction decomposition for cubic denominators and identifying the cancellation pattern in telescoping series.
 
@@ -92,7 +89,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - This problem requires tracking the number of triangles added and their area at each step.
    - Let $A_0 = A$ be the initial area. Let $S_0 = 3$ be the initial number of sides.
    - **Step 1 (k=1):**
@@ -125,24 +121,23 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - **Part 1: Show the Ratio Test is inconclusive.**
      - Let $a_n = \frac{n^2+n}{n^3+2}$.
-       $$ L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n\to\infty} \frac{(n+1)^2+(n+1)}{(n+1)^3+2} \cdot \frac{n^3+2}{n^2+n} $$
+       $$ L = \lim*{n\to\infty} \left| \frac{a*{n+1}}{a*n} \right| = \lim*{n\to\infty} \frac{(n+1)^2+(n+1)}{(n+1)^3+2} \cdot \frac{n^3+2}{n^2+n} $$
      - To evaluate this limit, we only need to consider the highest power terms in each polynomial.
      - Highest power in $(n+1)^2+(n+1)$ is $n^2$.
      - Highest power in $(n+1)^3+2$ is $n^3$.
      - Highest power in $n^3+2$ is $n^3$.
      - Highest power in $n^2+n$ is $n^2$.
-       $$ L = \lim_{n\to\infty} \frac{n^2 \cdot n^3}{n^3 \cdot n^2} = \lim_{n\to\infty} \frac{n^5}{n^5} = 1 $$
+       $$ L = \lim*{n\to\infty} \frac{n^2 \cdot n^3}{n^3 \cdot n^2} = \lim*{n\to\infty} \frac{n^5}{n^5} = 1 $$
      - Since the limit is 1, the Ratio Test is inconclusive.
    - **Part 2: Use a more appropriate test.**
      - The Limit Comparison Test is ideal here. The term $a_n$ behaves like $\frac{n^2}{n^3} = \frac{1}{n}$ for large $n$.
      - Let's compare our series to the harmonic series $\sum b_n = \sum \frac{1}{n}$, which is known to diverge.
      - Compute the limit of the ratio of the terms:
-       $$ L = \lim_{n\to\infty} \frac{a_n}{b_n} = \lim_{n\to\infty} \frac{\frac{n^2+n}{n^3+2}}{\frac{1}{n}} = \lim_{n\to\infty} \frac{n(n^2+n)}{n^3+2} = \lim_{n\to\infty} \frac{n^3+n^2}{n^3+2} $$
+       $$ L = \lim*{n\to\infty} \frac{a_n}{b_n} = \lim*{n\to\infty} \frac{\frac{n^2+n}{n^3+2}}{\frac{1}{n}} = \lim*{n\to\infty} \frac{n(n^2+n)}{n^3+2} = \lim*{n\to\infty} \frac{n^3+n^2}{n^3+2} $$
      - Divide numerator and denominator by $n^3$:
-       $$ L = \lim_{n\to\infty} \frac{1+1/n}{1+2/n^3} = \frac{1}{1} = 1 $$
+       $$ L = \lim\_{n\to\infty} \frac{1+1/n}{1+2/n^3} = \frac{1}{1} = 1 $$
      - Since the limit is a finite, positive number ($0 < L < \infty$), and the comparison series $\sum \frac{1}{n}$ diverges, the original series $\sum \frac{n^2+n}{n^3+2}$ also diverges by the Limit Comparison Test.
 
    <b>If you get this wrong, you should focus on:</b> Understanding the limitations of the Ratio Test (especially for rational functions) and applying the Limit Comparison Test by choosing an appropriate p-series to compare with.
@@ -153,7 +148,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - This problem requires using the Taylor Remainder Theorem, specifically the error bound for an alternating series, as the Maclaurin series for cosine is alternating.
    - The Maclaurin series for $\cos(x)$ is $\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \dots$.
    - For $x=0.2$, this is an alternating series. The Alternating Series Estimation Theorem states that the error $|R_n|$ in approximating the sum by the $n$-th partial sum is less than the absolute value of the first unused term, $|a_{n+1}|$.
@@ -176,7 +170,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - **Step 1: Find the Maclaurin series for $\sin(x^2)$.**
      - Start with the series for $\sin(u) = u - \frac{u^3}{3!} + \frac{u^5}{5!} - \dots$.
      - Substitute $u = x^2$:
@@ -184,7 +177,7 @@ slug: sequences-series
    - **Step 2: Integrate the series term-by-term from 0 to 1.**
      - $$ \int_0^1 \sin(x^2) dx \approx \int_0^1 \left( x^2 - \frac{x^6}{6} + \frac{x^{10}}{120} \right) dx $$
    - **Step 3: Evaluate the integral.**
-     - $$ \left[ \frac{x^3}{3} - \frac{x^7}{6 \cdot 7} + \frac{x^{11}}{120 \cdot 11} \right]_0^1 $$
+     - $$ \left[ \frac{x^3}{3} - \frac{x^7}{6 \cdot 7} + \frac{x^{11}}{120 \cdot 11} \right]\_0^1 $$
      - $$ = \left( \frac{1^3}{3} - \frac{1^7}{42} + \frac{1^{11}}{1320} \right) - (0) $$
      - $$ = \frac{1}{3} - \frac{1}{42} + \frac{1}{1320} $$
    - **Step 4: Calculate the final value.**
@@ -201,7 +194,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - This problem involves summing two different infinite geometric series: one for the distances and one for the time.
    - **Step 1: Analyze the sequence of heights.**
      - Initial drop: $h_0 = 10$.
@@ -231,7 +223,6 @@ slug: sequences-series
 
    <details>
    <summary>Answer</summary>
-
    - To prove conditional convergence, we must show two things: (1) the series itself converges, and (2) the series of absolute values diverges.
    - **Part 1: Show convergence of the original series.**
      - We use the Alternating Series Test on $\sum_{n=2}^{\infty} \frac{(-1)^n}{\sqrt{n} \ln(n)}$. Let $b_n = \frac{1}{\sqrt{n} \ln(n)}$.
@@ -257,11 +248,10 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - **Step 1: Use the Ratio Test to find the radius of convergence.**
       - Let $a_n = \frac{(2x-5)^n}{n \cdot 3^n}$.
-      - $$ L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n\to\infty} \left| \frac{(2x-5)^{n+1}}{(n+1)3^{n+1}} \cdot \frac{n \cdot 3^n}{(2x-5)^n} \right| $$
-      - $$ L = \lim_{n\to\infty} \left| \frac{2x-5}{3} \cdot \frac{n}{n+1} \right| = \frac{|2x-5|}{3} \lim_{n\to\infty} \frac{n}{n+1} = \frac{|2x-5|}{3} $$
+      - $$ L = \lim*{n\to\infty} \left| \frac{a*{n+1}}{a*n} \right| = \lim*{n\to\infty} \left| \frac{(2x-5)^{n+1}}{(n+1)3^{n+1}} \cdot \frac{n \cdot 3^n}{(2x-5)^n} \right| $$
+      - $$ L = \lim*{n\to\infty} \left| \frac{2x-5}{3} \cdot \frac{n}{n+1} \right| = \frac{|2x-5|}{3} \lim*{n\to\infty} \frac{n}{n+1} = \frac{|2x-5|}{3} $$
     - **Step 2: Solve for the interval where the series converges.**
       - The series converges when $L < 1$, so $\frac{|2x-5|}{3} < 1 \implies |2x-5| < 3$.
       - This gives $-3 < 2x-5 < 3$.
@@ -269,10 +259,10 @@ slug: sequences-series
       - Divide by 2: $1 < x < 4$.
     - **Step 3: Test the endpoints of the interval.**
       - **Endpoint x = 4:** Substitute into the series:
-        - $$ \sum_{n=1}^{\infty} \frac{(2(4)-5)^n}{n \cdot 3^n} = \sum_{n=1}^{\infty} \frac{3^n}{n \cdot 3^n} = \sum_{n=1}^{\infty} \frac{1}{n} $$
+        - $$ \sum*{n=1}^{\infty} \frac{(2(4)-5)^n}{n \cdot 3^n} = \sum*{n=1}^{\infty} \frac{3^n}{n \cdot 3^n} = \sum\_{n=1}^{\infty} \frac{1}{n} $$
           This is the harmonic series, which diverges.
       - **Endpoint x = 1:** Substitute into the series:
-        - $$ \sum_{n=1}^{\infty} \frac{(2(1)-5)^n}{n \cdot 3^n} = \sum_{n=1}^{\infty} \frac{(-3)^n}{n \cdot 3^n} = \sum_{n=1}^{\infty} \frac{(-1)^n}{n} $$
+        - $$ \sum*{n=1}^{\infty} \frac{(2(1)-5)^n}{n \cdot 3^n} = \sum*{n=1}^{\infty} \frac{(-3)^n}{n \cdot 3^n} = \sum\_{n=1}^{\infty} \frac{(-1)^n}{n} $$
           This is the alternating harmonic series, which converges by the Alternating Series Test.
     - **Step 4: State the final interval of convergence.**
       - The series converges for $x=1$ but not for $x=4$.
@@ -286,7 +276,6 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - This is the Babylonian method for finding a square root.
     - **Part 1: Find the limit.**
       - Assume the sequence converges to a limit $L$. Since all terms will be positive, $L$ must be positive.
@@ -311,12 +300,11 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - The presence of the $n^2$ power in the exponent strongly suggests using the Root Test.
     - Let $a_n = \left(1 - \frac{1}{n}\right)^{n^2}$.
     - Apply the Root Test:
-      - $$ L = \lim_{n\to\infty} \sqrt[n]{|a_n|} = \lim_{n\to\infty} \sqrt[n]{\left(1 - \frac{1}{n}\right)^{n^2}} $$
-      - $$ L = \lim_{n\to\infty} \left( \left(1 - \frac{1}{n}\right)^{n^2} \right)^{1/n} = \lim_{n\to\infty} \left(1 - \frac{1}{n}\right)^n $$
+      - $$ L = \lim*{n\to\infty} \sqrt[n]{|a_n|} = \lim*{n\to\infty} \sqrt[n]{\left(1 - \frac{1}{n}\right)^{n^2}} $$
+      - $$ L = \lim*{n\to\infty} \left( \left(1 - \frac{1}{n}\right)^{n^2} \right)^{1/n} = \lim*{n\to\infty} \left(1 - \frac{1}{n}\right)^n $$
     - This is a standard limit form related to the definition of $e$. Recall the limit definition $\lim_{n\to\infty} (1 + \frac{x}{n})^n = e^x$.
     - In our case, $x=-1$.
       - $$ L = e^{-1} = \frac{1}{e} $$
@@ -331,7 +319,6 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - This is a telescoping series that requires factoring the denominator and using partial fractions.
     - **Step 1: Factor the denominator and decompose the term.**
       - $n^2+4n+3 = (n+1)(n+3)$.
@@ -352,7 +339,7 @@ slug: sequences-series
     - The terms that do not cancel at the end are $-\frac{1}{N+2}$ (from the $n=N-1$ term) and $-\frac{1}{N+3}$ (from the $n=N$ term).
     - $S_N = \frac{1}{2} + \frac{1}{3} - \frac{1}{N+2} - \frac{1}{N+3}$.
     - **Step 3: Evaluate the limit.**
-      - $$ S = \lim_{N\to\infty} \left( \frac{1}{2} + \frac{1}{3} - \frac{1}{N+2} - \frac{1}{N+3} \right) = \frac{1}{2} + \frac{1}{3} - 0 - 0 = \frac{3+2}{6} = \frac{5}{6} $$
+      - $$ S = \lim\_{N\to\infty} \left( \frac{1}{2} + \frac{1}{3} - \frac{1}{N+2} - \frac{1}{N+3} \right) = \frac{1}{2} + \frac{1}{3} - 0 - 0 = \frac{3+2}{6} = \frac{5}{6} $$
 
     <b>If you get this wrong, you should focus on:</b> Factoring quadratic denominators, partial fraction decomposition, and carefully identifying the surviving terms in a telescoping series where the terms are not consecutive.
 
@@ -362,7 +349,6 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - This problem can be broken into two parts: the sum of your deposits and the sum of the bank's bonuses.
     - **Part 1: Sum of your deposits.**
       - You deposit $100 each month for 24 months.
@@ -384,7 +370,6 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - **Part 1: Find the sum of the first series.**
       - The Maclaurin series for $e^x$ is $\sum_{n=0}^{\infty} \frac{x^n}{n!}$.
       - The series $\sum_{n=0}^{\infty} \frac{2^n}{n!}$ matches this form exactly with $x=2$.
@@ -393,7 +378,7 @@ slug: sequences-series
       - Let $S = \sum_{n=2}^{\infty} \frac{2^n}{(n-1)!}$. This series is not in a standard form. We need to manipulate the index to make it match a known series.
       - Let $k = n-1$. When $n=2$, $k=1$. As $n \to \infty$, $k \to \infty$. Also, $n = k+1$.
       - Substitute these into the sum:
-        - $$ S = \sum_{k=1}^{\infty} \frac{2^{k+1}}{k!} = \sum_{k=1}^{\infty} \frac{2 \cdot 2^k}{k!} = 2 \sum_{k=1}^{\infty} \frac{2^k}{k!} $$
+        - $$ S = \sum*{k=1}^{\infty} \frac{2^{k+1}}{k!} = \sum*{k=1}^{\infty} \frac{2 \cdot 2^k}{k!} = 2 \sum\_{k=1}^{\infty} \frac{2^k}{k!} $$
       - Now, the sum $\sum_{k=1}^{\infty} \frac{2^k}{k!}$ is almost $e^2$.
       - We know $e^2 = \sum_{k=0}^{\infty} \frac{2^k}{k!} = \frac{2^0}{0!} + \sum_{k=1}^{\infty} \frac{2^k}{k!} = 1 + \sum_{k=1}^{\infty} \frac{2^k}{k!}$.
       - So, $\sum_{k=1}^{\infty} \frac{2^k}{k!} = e^2 - 1$.
@@ -408,10 +393,9 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - We need to manipulate the sum to use the given formula, which starts at $k=1$.
     - **Step 1: Split the sum and use properties of summation.**
-      - $$ \sum_{k=5}^{20} (3k^2 - 5) = \sum_{k=5}^{20} 3k^2 - \sum_{k=5}^{20} 5 = 3\sum_{k=5}^{20} k^2 - 5 \sum_{k=5}^{20} 1 $$
+      - $$ \sum*{k=5}^{20} (3k^2 - 5) = \sum*{k=5}^{20} 3k^2 - \sum*{k=5}^{20} 5 = 3\sum*{k=5}^{20} k^2 - 5 \sum\_{k=5}^{20} 1 $$
     - **Step 2: Adjust the indices of the sums.**
       - For the first sum: $\sum_{k=5}^{20} k^2 = \left(\sum_{k=1}^{20} k^2\right) - \left(\sum_{k=1}^{4} k^2\right)$.
       - For the second sum: There are $20 - 5 + 1 = 16$ terms. So $\sum_{k=5}^{20} 5 = 5 \times 16 = 80$.
@@ -430,7 +414,6 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - This series can be tested with the Ratio Test, but a simpler approach is the Test for Divergence.
     - **Method 1: Test for Divergence**
       - Let's examine the limit of the terms $a_n = \frac{n^n}{n!}$.
@@ -440,8 +423,8 @@ slug: sequences-series
       - As $n \to \infty$, $a_n \to \infty$ because $a_n \ge n$.
       - Since $\lim_{n\to\infty} a_n \ne 0$, the series diverges by the Test for Divergence.
     - **Method 2: Ratio Test**
-      - $$ L = \lim_{n\to\infty} \left| \frac{(n+1)^{n+1}}{(n+1)!} \cdot \frac{n!}{n^n} \right| = \lim_{n\to\infty} \frac{(n+1)^{n+1}}{(n+1)n!} \cdot \frac{n!}{n^n} $$
-      - $$ L = \lim_{n\to\infty} \frac{(n+1)^n}{n^n} = \lim_{n\to\infty} \left(\frac{n+1}{n}\right)^n = \lim_{n\to\infty} \left(1 + \frac{1}{n}\right)^n = e $$
+      - $$ L = \lim*{n\to\infty} \left| \frac{(n+1)^{n+1}}{(n+1)!} \cdot \frac{n!}{n^n} \right| = \lim*{n\to\infty} \frac{(n+1)^{n+1}}{(n+1)n!} \cdot \frac{n!}{n^n} $$
+      - $$ L = \lim*{n\to\infty} \frac{(n+1)^n}{n^n} = \lim*{n\to\infty} \left(\frac{n+1}{n}\right)^n = \lim\_{n\to\infty} \left(1 + \frac{1}{n}\right)^n = e $$
     - Since $L = e \approx 2.718 > 1$, the series diverges by the Ratio Test.
 
     <b>If you get this wrong, you should focus on:</b> The Test for Divergence as a first-line check, and the application of the Ratio Test leading to the limit definition of $e$.
@@ -452,26 +435,25 @@ slug: sequences-series
 
     <details>
     <summary>Answer</summary>
-
     - To prove convergence without knowing the limit, we can use the Monotone Convergence Theorem, which requires showing the sequence is both monotonic and bounded.
     - **Step 1: Show the sequence is bounded above by 2.**
       - We use mathematical induction.
       - Base Case: $x_1 = \sqrt{2} < 2$. True.
       - Inductive Hypothesis: Assume $x_k < 2$ for some integer $k \ge 1$.
       - Inductive Step: We must show $x_{k+1} < 2$.
-        - $$ x_{k+1} = \sqrt{2 + x_k} < \sqrt{2 + 2} = \sqrt{4} = 2 $$
+        - $$ x\_{k+1} = \sqrt{2 + x_k} < \sqrt{2 + 2} = \sqrt{4} = 2 $$
         The inequality holds because $x_k < 2$. Thus, the sequence is bounded above by 2.
     - **Step 2: Show the sequence is monotonic increasing ($x_{n+1} \ge x_n$).**
       - We use induction again.
       - Base Case: $x_2 = \sqrt{2+\sqrt{2}} > \sqrt{2} = x_1$. True.
       - Inductive Hypothesis: Assume $x_k \ge x_{k-1}$ for some integer $k \ge 2$.
       - Inductive Step: We must show $x_{k+1} \ge x_k$.
-        - $$ x_k \ge x_{k-1} \implies 2+x_k \ge 2+x_{k-1} \implies \sqrt{2+x_k} \ge \sqrt{2+x_{k-1}} \implies x_{k+1} \ge x_k $$
-        Thus, the sequence is monotonic increasing.
+        - $$ x*k \ge x*{k-1} \implies 2+x*k \ge 2+x*{k-1} \implies \sqrt{2+x*k} \ge \sqrt{2+x*{k-1}} \implies x\_{k+1} \ge x_k $$
+          Thus, the sequence is monotonic increasing.
     - **Step 3: Conclude convergence and find the limit.**
       - Since the sequence is bounded above and monotonic increasing, it must converge by the Monotone Convergence Theorem. Let the limit be $L$.
       - To find $L$, we take the limit of the recurrence relation:
-        - $$ \lim_{n\to\infty} x_{n+1} = \lim_{n\to\infty} \sqrt{2 + x_n} $$
+        - $$ \lim*{n\to\infty} x*{n+1} = \lim\_{n\to\infty} \sqrt{2 + x_n} $$
         - $$ L = \sqrt{2 + L} $$
       - Square both sides: $L^2 = 2 + L \implies L^2 - L - 2 = 0$.
       - Factor the quadratic: $(L-2)(L+1) = 0$.
