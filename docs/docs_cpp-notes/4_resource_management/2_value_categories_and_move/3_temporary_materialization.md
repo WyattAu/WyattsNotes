@@ -163,3 +163,273 @@ a fallback). :::
 - [Value Taxonomy](1_value_taxonomy.md)
 - [Reference Collapsing and Forwarding References](2_reference_collapsing.md)
 - [Return Value Optimization (RVO) and NRVO](5_return_value_optimization.md)
+
+## 5.4 Materialization Points
+
+A prvalue is materialized at specific points in the language. The materialization creates a
+temporary object with automatic storage duration [N4950 §7.3.5]. The following contexts are
+materialization points:
+
+1. **Binding to a reference.** When a prvalue binds to a `const T&` or `T&&`, a temporary is created
+   and the reference binds to it.
+2. **Member access on a prvalue class.** `Point{1, 2}.x` materializes the `Point` temporary.
+3. **Taking the address.** `&Point{1, 2}` is ill-formed in C++17 — you cannot take the address of a
+   prvalue. You must materialize it first: `const auto& r = Point{1, 2}; &r;`.
+4. **Initializing an object.** `T t = T{...};` — the prvalue initializes `t` directly (no separate
+   temporary, due to guaranteed copy elision).
+5. **Using a prvalue in a condition.** `if (Point{1, 2}.x &gt; 0)` materializes the temporary.
+
+```cpp
+#include <iostream>
+
+struct Sensor {
+    int id;
+    double reading;
+
+    Sensor(int i, double r) : id{i}, reading{r} {
+        std::cout << "Sensor(" << id << ", " << reading << ")\n";
+    }
+    ~Sensor() { std::cout << "~Sensor(" << id << ")\n"; }
+};
+
+void materialization_points() {
+    // 1. Binding to const reference — lifetime extended to scope end
+    const Sensor& ref = Sensor{42, 36.6};
+    std::cout << "ref.id = " << ref.id << "\n";
+
+    // 2. Member access on prvalue — temporary lives until end of full-expression
+    int x = Sensor{99, 98.0}.id;
+    std::cout << "x = " << x << "\n";
+    // Temporary Sensor{99, 98.0} is destroyed at the semicolon above
+
+    // 3. Direct initialization — prvalue initializes dest, no separate temporary
+    Sensor s = Sensor{7, 37.5};
+    std::cout << "s.id = " << s.id << "\n";
+}
+// ref's temporary destroyed here
+// s destroyed here
+
+int main() {
+    materialization_points();
+}
+```
+
+Output:
+
+```
+Sensor(42, 36.6)
+ref.id = 42
+Sensor(99, 98.0)
+~Sensor(99, 98.0)
+x = 99
+Sensor(7, 37.5)
+s.id = 7
+~Sensor(7, 37.5)
+~Sensor(42, 36.6)
+```
+
+## 5.5 Lifetime Extension Rules
+
+When a prvalue is bound to a `const T&` or a `T&&`, the lifetime of the materialized temporary is
+extended to match the lifetime of the reference [N4950 §11.4.7]. This is called **temporary lifetime
+extension**.
+
+:::warning Lifetime extension applies only when the reference is directly bound to the prvalue. If
+the prvalue is passed through an intermediate function or stored in a member, lifetime extension
+does **not** propagate. :::
+
+```cpp
+#include <iostream>
+
+struct Widget {
+    Widget() { std::cout << "Widget ctor\n"; }
+    ~Widget() { std::cout << "Widget dtor\n"; }
+    int data = 42;
+};
+
+// BAD: function parameter does not extend lifetime
+const int& bad_extend() {
+    return 42;  // dangling reference — temporary dies at end of return statement
+}
+
+// BAD: member reference does not extend lifetime
+struct Holder {
+    const Widget& ref;  // dangling if initialized from a temporary
+};
+
+void lifetime_extension() {
+    // GOOD: direct binding extends lifetime to end of scope
+    const int& r1 = 42;
+    std::cout << "r1 = " << r1 << "\n";  // OK
+
+    // GOOD: direct binding of prvalue to const ref
+    const Widget& w = Widget{};
+    std::cout << "w.data = " << w.data << "\n";  // OK, temporary alive
+
+    // BAD: indirect binding through function return
+    // const int& r2 = bad_extend();  // r2 is dangling — undefined behavior
+
+    // BAD: member reference from temporary
+    // Holder h{Widget{}};  // h.ref is dangling — temporary dies at end of constructor
+}
+
+int main() {
+    lifetime_extension();
+}
+```
+
+## 5.6 Materialization and Move Semantics
+
+Materialization interacts with move semantics in subtle ways. When a prvalue initializes an object,
+no move occurs — the object is constructed directly. But when an xvalue (materialized temporary
+bound to an rvalue reference) is used to initialize another object, move semantics apply.
+
+```cpp
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <string>
+
+struct Buffer {
+    std::vector<int> data;
+
+    Buffer(std::size_t n) : data(n, 0) {
+        std::cout << "Buffer ctor (" << n << " elements)\n";
+    }
+    Buffer(const Buffer& other) : data(other.data) {
+        std::cout << "Buffer copy ctor\n";
+    }
+    Buffer(Buffer&& other) noexcept : data(std::move(other.data)) {
+        std::cout << "Buffer move ctor\n";
+    }
+    ~Buffer() { std::cout << "Buffer dtor\n"; }
+};
+
+Buffer make_buffer() {
+    return Buffer{1000};  // prvalue — guaranteed elision
+}
+
+void move_semantics_demo() {
+    // 1. prvalue → direct initialization (no move)
+    std::cout << "--- prvalue init ---\n";
+    Buffer b1 = Buffer{500};
+    // Only default ctor called, no move
+
+    // 2. Function return prvalue → direct initialization (no move)
+    std::cout << "--- return prvalue ---\n";
+    Buffer b2 = make_buffer();
+    // Only default ctor called, no move
+
+    // 3. std::move creates xvalue → move ctor is called
+    std::cout << "--- move from lvalue ---\n";
+    Buffer b3 = std::move(b1);
+    // Move ctor is called, b1 is left in a moved-from state
+
+    // 4. Materialized temporary bound to rvalue ref → move from it
+    std::cout << "--- move from materialized temp ---\n";
+    Buffer&& rref = Buffer{200};  // prvalue materializes into temporary
+    Buffer b4 = std::move(rref);  // Move ctor called on the materialized temporary
+}
+
+int main() {
+    move_semantics_demo();
+}
+```
+
+## 5.7 Implicit Conversion Chains and Materialization
+
+When an implicit conversion occurs, each step in the chain may involve materialization. The prvalue
+result of one conversion becomes the initializer for the next, and the entire chain is resolved into
+direct initialization of the final object [N4950 §7.3.5].
+
+```cpp
+#include <iostream>
+
+struct IntWrapper {
+    int value;
+    IntWrapper(int v) : value{v} {
+        std::cout << "IntWrapper(" << v << ")\n";
+    }
+};
+
+struct DoubleWrapper {
+    double value;
+    DoubleWrapper(IntWrapper w) : value{static_cast&lt;double&gt;(w.value)} {
+        std::cout << "DoubleWrapper(" << value << ")\n";
+    }
+};
+
+void conversion_chain() {
+    // The literal 42 is an int prvalue.
+    // It converts to IntWrapper via IntWrapper(int).
+    // The IntWrapper prvalue converts to DoubleWrapper via DoubleWrapper(IntWrapper).
+    // In C++17: no temporary IntWrapper is created.
+    // The IntWrapper is constructed directly as the argument to DoubleWrapper.
+    // Then DoubleWrapper is constructed directly as 'dw'.
+    DoubleWrapper dw = 42;
+    std::cout << "dw.value = " << dw.value << "\n";
+}
+
+int main() {
+    conversion_chain();
+}
+```
+
+## 5.8 Materialization in Expressions
+
+Materialization can occur at any point within a complex expression where an identity is required.
+Understanding exactly when materialization happens helps avoid subtle lifetime bugs.
+
+```cpp
+#include <iostream>
+#include <string>
+
+struct Recorder {
+    std::string name;
+    Recorder(const std::string& n) : name{n} {
+        std::cout << "  ctor: " << name << "\n";
+    }
+    ~Recorder() {
+        std::cout << "  dtor: " << name << "\n";
+    }
+};
+
+void expression_materialization() {
+    // Materialization at member access: temporary lives until end of full-expression
+    std::cout << "Expression 1:\n";
+    std::string s = Recorder{"temp"}.name;
+    std::cout << "s = " << s << "\n";
+    // Recorder temporary destroyed at the semicolon above
+
+    // Materialization in a conditional
+    std::cout << "Expression 2:\n";
+    bool b = Recorder{"cond"}.name.size() &gt; 0;
+    std::cout << "b = " << b << "\n";
+    // Recorder temporary destroyed at the semicolon above
+
+    // Materialization in function argument
+    std::cout << "Expression 3:\n";
+    auto take_ref = [](const Recorder& r) {
+        return r.name;
+    };
+    std::string result = take_ref(Recorder{"arg"});
+    std::cout << "result = " << result << "\n";
+    // Recorder temporary lives until end of the full-expression containing the call
+}
+
+int main() {
+    expression_materialization();
+}
+```
+
+## Common Pitfalls
+
+- **Dangling references from lifetime non-extension.** Returning a reference to a materialized
+  temporary, or storing a temporary in a struct member reference, creates a dangling reference.
+- **Assuming materialization creates a copy.** In C++17, prvalue materialization creates the object
+  directly at the destination — there is no separate temporary and no copy/move.
+- **Taking the address of a prvalue.** `&T{...}` is ill-formed. Bind to a reference first, then take
+  its address.
+- **Relying on materialization order in function arguments.** The order of evaluation of function
+  arguments is unspecified. Materialized temporaries in different arguments may be destroyed in any
+  order.

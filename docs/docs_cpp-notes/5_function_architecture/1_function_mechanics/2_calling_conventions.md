@@ -162,6 +162,225 @@ extern "C" int64_t non_leaf_fn(int64_t a, int64_t b) {
 }
 ```
 
+## 2.5 Microsoft x64 ABI vs System V ABI
+
+Windows and Linux/macOS use fundamentally different calling conventions on x86-64. The differences
+are significant enough that calling a function compiled with one ABI from code compiled with the
+other will crash or corrupt memory.
+
+| Aspect                    | System V AMD64 ABI (Linux/macOS)                 | Microsoft x64 ABI (Windows)                 |
+| :------------------------ | :----------------------------------------------- | :------------------------------------------ |
+| Integer arg registers     | RDI, RSI, RDX, RCX, R8, R9 (6)                   | RCX, RDX, R8, R9 (4)                        |
+| Floating-point registers  | XMM0–XMM7 (8)                                    | XMM0–XMM3 (4)                               |
+| Shadow space              | Not required                                     | 32 bytes (caller-allocated, always present) |
+| Stack alignment at `CALL` | 16-byte aligned                                  | 16-byte aligned                             |
+| Return in RAX             | Integer/scalar                                   | Integer/scalar                              |
+| `va_list` implementation  | Register save area (array of GP + SSE registers) | Single pointer (char\*)                     |
+| Callee-saved registers    | RBX, RBP, R12–R15                                | RBX, RBP, RDI, RSI, R12–R15                 |
+| Red zone                  | 128 bytes below RSP                              | None                                        |
+
+### Shadow Space
+
+The Microsoft x64 ABI requires the caller to allocate **32 bytes of "shadow space"** on the stack
+before every function call, regardless of the number of arguments. The callee is free to use this
+space to spill register arguments. This simplifies debugging but adds overhead to every call.
+
+```cpp
+// Microsoft x64 ABI: shadow space illustration
+// Before calling any function, the caller reserves 32 bytes:
+//
+//   sub  rsp, 32          ; allocate shadow space (plus alignment padding)
+//   mov  rcx, arg1        ; first integer argument
+//   mov  rdx, arg2        ; second integer argument
+//   call target
+//   add  rsp, 32          ; clean up shadow space
+//
+// The callee may use [rsp], [rsp+8], [rsp+16], [rsp+24]
+// as scratch space for its first four register arguments.
+```
+
+### `va_list` Differences
+
+Variadic functions behave very differently across the two ABIs. Under System V, `va_list` is backed
+by a register save area that captures the current state of GP and SSE registers at the point of the
+ellipsis. Under Microsoft x64, `va_list` is a simple pointer that walks the stack.
+
+```cpp
+#include <cstdarg>
+#include <cstdio>
+
+// This function compiles on both ABIs but the underlying mechanism differs:
+void print_args(int count, ...) {
+    va_list ap;
+    va_start(ap, count);
+
+    for (int i = 0; i < count; ++i) {
+        int val = va_arg(ap, int);
+        std::printf("  arg[%d] = %d\n", i, val);
+    }
+
+    va_end(ap);
+}
+
+int main() {
+    print_args(4, 10, 20, 30, 40);
+}
+```
+
+## 2.6 Calling Convention Attributes
+
+Compiler-specific attributes let you override the default calling convention. These are
+**non-portable** and should only be used when interfacing with external libraries or operating
+system APIs.
+
+### MSVC Calling Convention Attributes
+
+| Attribute    | Argument Passing            | Stack Cleanup | Use Case                         |
+| :----------- | :-------------------------- | :------------ | :------------------------------- |
+| `__cdecl`    | Stack (right to left)       | Caller        | C default; variable-argument fns |
+| `__stdcall`  | Stack (right to left)       | Callee        | Win32 API                        |
+| `__fastcall` | ECX, EDX, then stack        | Callee        | Performance-critical             |
+| `__thiscall` | ECX = `this`, rest on stack | Callee        | C++ member functions (MSVC)      |
+
+These attributes are primarily relevant for **32-bit x86** code, where multiple calling conventions
+coexisted. On x86-64, both Windows and Linux use a single calling convention (the platform ABI), so
+these attributes have limited effect.
+
+```cpp
+// Interfacing with Win32 API (32-bit example):
+extern "C" __stdcall int MessageBoxA(void* hwnd, const char* text,
+                                      const char* caption, unsigned int type);
+
+// The __cdecl is default on MSVC x86, but explicit for clarity:
+extern "C" __cdecl int printf(const char* fmt, ...);
+```
+
+### System V: Explicit Attributes
+
+GCC and Clang on Linux/macOS generally do not use calling convention attributes for x86-64 because
+the System V ABI is the only game in town. However, the `sysv_abi` and `ms_abi` attributes allow
+mixing ABIs on the same platform (e.g., calling Windows DLLs from Linux via Wine or Windows
+subsystem for Linux):
+
+```cpp
+// GCC/Clang: mixing ABIs on the same platform
+extern "C" __attribute__((ms_abi)) void windows_callback(int a, int b);
+extern "C" __attribute__((sysv_abi)) void linux_callback(int a, int b);
+```
+
+## 2.7 Register Saving Conventions
+
+Registers are divided into **caller-saved** (volatile) and **callee-saved** (non-volatile)
+categories. If a function uses a callee-saved register, it must preserve its value (typically by
+pushing it onto the stack in the prologue and popping it in the epilogue).
+
+### System V x86-64 Register Map
+
+| Register(s)                | Role              | Saved By |
+| :------------------------- | :---------------- | :------- |
+| RAX                        | Return value      | Caller   |
+| RDI, RSI, RDX, RCX, R8, R9 | Integer arguments | Caller   |
+| XMM0–XMM7                  | FP/SIMD arguments | Caller   |
+| XMM8–XMM15                 | FP/SIMD scratch   | Caller   |
+| R10, R11                   | Scratch           | Caller   |
+| RBX                        | Base              | Callee   |
+| RBP                        | Frame pointer     | Callee   |
+| R12, R13, R14, R15         | General purpose   | Callee   |
+| RSP                        | Stack pointer     | Callee   |
+
+```cpp
+// Example showing callee-saved register preservation
+// Compile: g++ -O1 -S -fno-omit-frame-pointer -masm=intel callee_saved.cpp
+extern "C" long use_callee_saved(long a, long b) {
+    // The compiler may choose to use RBX to hold 'a' across the call to helper
+    // If so, it must save and restore RBX
+    volatile long x = a;
+    volatile long y = b;
+    return x + y + 1;
+    // Generated prologue (if RBX is used):
+    //   push  rbx            ; save callee-saved register
+    //   ...
+    // Generated epilogue:
+    //   pop   rbx            ; restore callee-saved register
+    //   ret
+}
+```
+
+## 2.8 Stack Alignment Across ABIs
+
+Both System V and Microsoft x64 require **16-byte stack alignment** at the point of a `CALL`
+instruction. After `CALL` pushes the 8-byte return address, `RSP` is 8 mod 16 inside the callee. The
+callee prologue typically adjusts to restore 16-byte alignment.
+
+```cpp
+// Alignment violation example (x86-64, System V):
+// If a function receives an odd number of stack arguments,
+// the stack may become misaligned unless the caller compensates.
+extern "C" long takes_seven(long a, long b, long c, long d,
+                            long e, long f, long g, long h);
+// a–f in registers (RDI–R9), g at [RSP+8], h at [RSP+16]
+// Caller must ensure RSP is 16-byte aligned before the CALL
+```
+
+:::warning Alignment violations cause crashes on SIMD instructions (e.g., `movaps` requires 16-byte
+alignment). If you see a `SIGSEGV` inside a function that uses SIMD, check for stack misalignment.
+Compiler flags like `-mstackrealign` (MSVC) or `-mno-sse` (GCC) can help diagnose these issues. :::
+
+## 2.9 Debugging Calling Convention Mismatches
+
+A calling convention mismatch occurs when the caller and callee disagree on how arguments are
+passed. This is one of the most insidious categories of bugs because the program may appear to work
+for specific argument values or compiler optimization levels.
+
+### Symptoms
+
+- **Wrong argument values:** Arguments appear shifted or garbage.
+- **Crashes on return:** Stack corruption causes the return address to be invalid.
+- **Works in debug, crashes in release:** Optimization changes register allocation, exposing or
+  masking the mismatch.
+- **Works on one compiler, crashes on another:** Different compilers may use different registers for
+  spill or different stack layouts.
+
+### Common Causes
+
+1. **Missing `extern "C"`** when linking C++ code to a C library. The C++ name mangling changes the
+   symbol name but not the calling convention. However, if the C library expects a specific ABI and
+   the C++ compiler uses a different one, arguments will be garbled.
+2. **Mismatched `__stdcall`/`__cdecl`** in 32-bit code.
+3. **Variadic function prototype mismatch:** Declaring a function as `void f(int, ...)` but defining
+   it as `void f(int a, int b)` without the ellipsis.
+4. **Struct packing differences:** Passing structs by value across ABI boundaries when the struct
+   layout differs due to different alignment/packing rules.
+
+```cpp
+// Example: calling convention mismatch
+// bad.h — declares the function with wrong prototype
+extern "C" int process_data(int a, int b);  // two int arguments
+
+// library.c — actual implementation (compiled with different compiler/ABI)
+int process_data(long a, long b, long c) {  // three long arguments
+    return a + b + c;
+}
+
+// Result: on System V x86-64, 'a' arrives in RDI, 'b' in RSI.
+// But the callee expects three arguments, reading garbage from RDX for 'c'.
+// On Microsoft x64, 'a' in RCX, 'b' in RDX, and R8 would hold garbage for 'c'.
+```
+
+## Common Pitfalls
+
+- **Assuming Windows and Linux share an ABI on x86-64.** They do not. The register allocation,
+  shadow space, and `va_list` implementation all differ.
+- **Using `__cdecl`/`__stdcall` on x86-64.** These attributes are essentially no-ops on x86-64; the
+  platform ABI is always used.
+- **Forgetting about shadow space on Windows.** Every call must have 32 bytes of shadow space, even
+  if the callee takes no arguments.
+- **Passing SIMD types across ABI boundaries.** The System V ABI classifies `__m256` (AVX) types as
+  MEMORY, forcing them onto the stack. The Microsoft x64 ABI does not support AVX-512 register
+  passing at all.
+- **Variadic functions with non-POD types.** Passing objects with non-trivial destructors through
+  `...` is undefined behavior. Use `std::initializer_list` or variadic templates instead.
+
 ## See Also
 
 - [Overload Resolution](1_overload_resolution.md)

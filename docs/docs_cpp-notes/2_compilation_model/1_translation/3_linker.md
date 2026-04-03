@@ -8,10 +8,11 @@ categories:
 slug: linker
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-The Linker (`ld`, `lld`, `link.exe`) is the final architect of the binary. While the compiler works in isolation on Translation Units (TUs), generating "relocatable object files," the linker is responsible for fusing these fragments into a coherent executable memory map.
+The Linker (`ld`, `lld`, `link.exe`) is the final architect of the binary. While the compiler works
+in isolation on Translation Units (TUs), generating "relocatable object files," the linker is
+responsible for fusing these fragments into a coherent executable memory map.
 
 It performs three critical atomic operations:
 
@@ -21,7 +22,8 @@ It performs three critical atomic operations:
 
 ## 1. Symbol Resolution
 
-Input object files contain a **Symbol Table**. The linker aggregates these tables into a Global Symbol Table.
+Input object files contain a **Symbol Table**. The linker aggregates these tables into a Global
+Symbol Table.
 
 ### The Resolution State Machine
 
@@ -33,46 +35,136 @@ The linker maintains three sets:
 
 As the linker scans inputs (objects and libraries) from **left to right** on the command line:
 
-1. If input is an **Object File (`.o`)**: It adds the file to **E**. It adds new definitions to **D** and resolves matching entries in **U**. Any new undefined references in the object are added to **U**.
-2. If input is a **Static Library (`.a`)**: The linker checks if any symbol in the library's member objects matches a symbol currently in **U**.
+1. If input is an **Object File (`.o`)**: It adds the file to **E**. It adds new definitions to
+   **D** and resolves matching entries in **U**. Any new undefined references in the object are
+   added to **U**.
+2. If input is a **Static Library (`.a`)**: The linker checks if any symbol in the library's member
+   objects matches a symbol currently in **U**.
    - If a match is found, that specific member object is extracted and added to **E**.
    - If no match is found, the member object is ignored entirely.
 
-:::danger The Archive Order Trap
-Because static libraries are searched only to resolve _currently pending_ undefined symbols, order matters.
-If `LibA` depends on `LibB`, `LibA` must appear **before** `LibB` in the linker command.
+:::danger The Archive Order Trap Because static libraries are searched only to resolve _currently
+pending_ undefined symbols, order matters. If `LibA` depends on `LibB`, `LibA` must appear
+**before** `LibB` in the linker command.
 
 - Correct: `clang++ main.o -lA -lB`
-- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined).
-  :::
+- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined). :::
 
-### Weak vs. Strong Symbols
+### Weak vs. Strong vs. Common Symbols
 
-- **Strong:** Functions and initialized globals. Only one allowed (ODR).
-- **Weak:** Uninitialized globals, or symbols explicitly marked `__attribute__((weak))`.
-- **Rule:** A Strong symbol overrides a Weak symbol. Multiple Weak symbols are permitted (linker picks an arbitrary one). This is often used for glibc stub functions.
+The linker classifies symbols into three categories that determine how duplicates are handled:
+
+**Strong symbols:** Functions and initialized global variables. There must be exactly one strong
+definition for each symbol across all object files. Duplicate strong definitions cause a "multiple
+definition" linker error.
+
+```cpp
+// Strong: initialized global
+int config_value = 42;
+
+// Strong: function
+void process() { }
+```
+
+**Weak symbols:** Uninitialized globals (tentative definitions), or symbols explicitly annotated
+with `__attribute__((weak))`. If both a strong and weak definition exist, the strong one wins.
+Multiple weak definitions are permitted and the linker picks one arbitrarily.
+
+```cpp
+// Weak: uninitialized global (tentative definition)
+int tentative_value;
+
+// Weak: explicit annotation (GCC/Clang)
+__attribute__((weak))
+void optional_hook() { }
+```
+
+**Common symbols:** These are a special case of tentative definitions. When GCC encounters an
+uninitialized global in a C translation unit, it emits it as a "common" symbol (in the `COM` section
+rather than `BSS`). Common symbols can be merged: if multiple TUs define `int x;` without
+initialization, the linker allocates storage once and aligns to the largest requested alignment. The
+`-fno-common` flag (now default in GCC 10+) disables this behavior and makes uninitialized globals
+ordinary weak symbols instead.
+
+```cpp
+// Before GCC 10 (default -fcommon):
+// File A: int x;  -> COMMON symbol
+// File B: int x;  -> COMMON symbol
+// Linker merges them into a single BSS allocation
+
+// GCC 10+ (default -fno-common):
+// File A: int x;  -> weak BSS symbol
+// File B: int x;  -> weak BSS symbol
+// Multiple weak definitions: OK, linker picks one
+```
+
+### Duplicate Symbol Detection
+
+When the linker encounters two strong definitions of the same symbol, it emits a fatal error. The
+error message includes the object files containing the conflicting definitions:
+
+```
+duplicate symbol '_ZN3foo7processEv' in:
+    CMakeFiles/App.dir/A.cpp.o
+    CMakeFiles/App.dir/B.cpp.o
+ld: fatal error: duplicate symbol
+```
+
+Common causes include:
+
+- Accidentally defining a non-inline function in a header file included by multiple TUs.
+- Forgetting `inline` on a function defined in a header.
+- Violating the ODR by defining a struct differently across TUs (detected at link time only if the
+  mangled names differ).
+
+### Archive Files and `--whole-archive`
+
+Static libraries (`.a` files on Unix, `.lib` files on Windows) are not linked as a single unit. They
+are **archives** of individual object files. The linker extracts only the member objects that
+satisfy currently pending undefined references.
+
+This default behavior causes problems when a library provides a plugin or callback mechanism: member
+objects that register themselves via global constructors may never be pulled in because no symbol in
+`U` references them.
+
+```bash
+# Problem: libplugin.a defines init_plugin() via a global constructor,
+# but nothing in main.o references init_plugin() explicitly.
+clang++ main.o -lplugin  # init_plugin() is NEVER extracted
+
+# Solution: force the linker to include ALL members
+clang++ main.o -Wl,--whole-archive -lplugin -Wl,--no-whole-archive
+```
+
+The `--no-whole-archive` after the library is critical. Forgetting it causes every subsequent
+library on the command line to be linked in its entirety, bloating the binary.
 
 ## 2. Relocation
 
-Compilers generate object code assuming a start address of `0x0`. Instructions referring to data or other functions use placeholder values. **Relocation** is the process of patching these placeholders with actual addresses once the final memory layout is determined.
+Compilers generate object code assuming a start address of `0x0`. Instructions referring to data or
+other functions use placeholder values. **Relocation** is the process of patching these placeholders
+with actual addresses once the final memory layout is determined.
 
 ### Relocation Entries
 
 The compiler generates a `.rela.text` section containing instructions for the linker.
 
-- _Instruction:_ "At offset `0x42` in section `.text`, insert the difference between the address of symbol `foo` and the current instruction pointer (RIP)."
+- _Instruction:_ "At offset `0x42` in section `.text`, insert the difference between the address of
+  symbol `foo` and the current instruction pointer (RIP)."
 
 ### Relocation Types (x86_64)
 
-1. **R_X86_64_PC32 (Relative):**
-   Used for function calls (`call`) and data access (`lea`) within the same binary. The value patched is $S + A - P$ (Symbol + Addend - Place). This enables **Position Independent Code (PIC)**, allowing the binary to be loaded at any virtual address (ASLR).
+1. **R_X86_64_PC32 (Relative):** Used for function calls (`call`) and data access (`lea`) within the
+   same binary. The value patched is $S + A - P$ (Symbol + Addend - Place). This enables **Position
+   Independent Code (PIC)**, allowing the binary to be loaded at any virtual address (ASLR).
 
-2. **R_X86_64_64 (Absolute):**
-   Used for static data pointers (e.g., jump tables). Requires load-time patching if the binary base address changes.
+2. **R_X86_64_64 (Absolute):** Used for static data pointers (e.g., jump tables). Requires load-time
+   patching if the binary base address changes.
 
 ### The PLT and GOT (Dynamic Linking)
 
-When code references a symbol in a _Shared Library_ (`.so`), the address is unknown until runtime. The linker cannot patch the code directly. Instead, it generates:
+When code references a symbol in a _Shared Library_ (`.so`), the address is unknown until runtime.
+The linker cannot patch the code directly. Instead, it generates:
 
 - **Global Offset Table (GOT):** A data section (`.got`) acting as a directory of addresses.
 - **Procedure Linkage Table (PLT):** A code section (`.plt`) containing stubs.
@@ -82,30 +174,39 @@ When code references a symbol in a _Shared Library_ (`.so`), the address is unkn
 1. Code calls `printf` (in libc).
 2. The call jumps to `printf@plt` (stub).
 3. The stub jumps to the address stored in `printf@got`.
-4. Lazy Binding: Initially, the GOT points back to the dynamic linker resolver. On the first call, the resolver finds the actual `printf` address, updates the GOT, and executes the function. Subsequent calls jump directly.
+4. Lazy Binding: Initially, the GOT points back to the dynamic linker resolver. On the first call,
+   the resolver finds the actual `printf` address, updates the GOT, and executes the function.
+   Subsequent calls jump directly.
 
 ## 3. Deduplication (COMDAT Folding)
 
-C++ templates pose a unique challenge. If `std::vector<int>::push_back` is instantiated in `A.cpp` and `B.cpp`, both object files contain the machine code for that function. Naively linking them would result in a "Multiple Definition" error.
+C++ templates pose a unique challenge. If `std::vector<int>::push_back` is instantiated in `A.cpp`
+and `B.cpp`, both object files contain the machine code for that function. Naively linking them
+would result in a "Multiple Definition" error.
 
 ### COMDAT Sections
 
-The compiler marks template instantiations and `inline` functions with a special flag: **COMDAT** (Common Block).
+The compiler marks template instantiations and `inline` functions with a special flag: **COMDAT**
+(Common Block).
 
-- **Rule:** "This section defines symbol X. If you have already seen a COMDAT for X, discard this section. If not, keep it."
+- **Rule:** "This section defines symbol X. If you have already seen a COMDAT for X, discard this
+  section. If not, keep it."
 - **Result:** The final binary contains exactly one copy of the template code.
 
 ### Identical Code Folding (ICF)
 
-Modern linkers (Gold, LLD, Mold) go further. They detect functions that are distinct in C++ but compile to identical machine code.
+Modern linkers (Gold, LLD, Mold) go further. They detect functions that are distinct in C++ but
+compile to identical machine code.
 
-**Example:** `std::vector<int>` and `std::vector<long>` on a 64-bit platform often generate identical instructions (since `int` and `long` may both be passed in 64-bit registers).
+**Example:** `std::vector<int>` and `std::vector<long>` on a 64-bit platform often generate
+identical instructions (since `int` and `long` may both be passed in 64-bit registers).
 
 **ICF Mechanism:**
 
 1. The linker hashes the `.text` content of every section.
 2. If hashes match, it performs a byte-by-byte comparison.
-3. If identical, it keeps one copy and updates the symbol table so both `vector<int>::push_back` and `vector<long>::push_back` point to the same address.
+3. If identical, it keeps one copy and updates the symbol table so both `vector<int>::push_back` and
+   `vector<long>::push_back` point to the same address.
 
 **CMake Configuration:**
 
@@ -116,14 +217,156 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
 endif()
 ```
 
-## 4. Name Demangling
+## 4. Static vs. Shared Libraries
 
-The linker operates on **Mangled Names** (decorated names that encode namespace, class, and argument types).
+### Static Libraries (`.a` / `.lib`)
+
+A static library is an archive of object files. At link time, the linker extracts the needed members
+and embeds them directly into the final binary.
+
+- **Pros:** No runtime dependency; deterministic behavior; simpler deployment.
+- **Cons:** Binary bloat (unused code may be pulled in); no sharing across processes; updates
+  require re-linking.
+
+### Shared Libraries (`.so` / `.dll`)
+
+A shared library is a fully linked binary that is loaded at runtime by the dynamic linker (`ld.so`
+on Linux, `ntdll.dll` on Windows).
+
+- **Pros:** Smaller executables; code sharing across processes (one physical copy in RAM); updates
+  without re-linking.
+- **Cons:** Runtime dependency (missing `.so` causes launch failure); symbol interposition
+  complexity; slight startup cost for dynamic resolution.
+
+### Link Order Significance on Linux
+
+The linker processes inputs strictly left to right. This has a profound effect when mixing object
+files and libraries:
+
+```bash
+# main.o references func_A() in libA and func_B() in libB
+# libA also references func_B() in libB
+
+# CORRECT: main.o first, then dependent libs in dependency order
+clang++ main.o -lA -lB
+
+# WRONG: libB before libA
+clang++ main.o -lB -lA
+# libB is scanned: no pending undefined refs -> nothing extracted
+# libA is scanned: func_A extracted, now func_B is pending
+# End of input: func_B is still undefined -> LINKER ERROR
+
+# WRONG: libraries before object files
+clang++ -lA -lB main.o
+# libA scanned: no pending undefined -> nothing extracted
+# libB scanned: no pending undefined -> nothing extracted
+# main.o added: func_A and func_B become pending
+# End of input: both undefined -> LINKER ERROR
+```
+
+**Rule of thumb:** Object files first, then libraries ordered by dependency (dependents before
+dependencies). Circular dependencies between libraries require `--start-group` / `--end-group`:
+
+```bash
+clang++ main.o -Wl,--start-group -lA -lB -Wl,--end-group
+```
+
+This tells the linker to rescan the group until no more symbols can be resolved.
+
+## 5. Modern Linkers: LLD vs. Mold vs. Gold
+
+### GNU ld (BFD)
+
+The original GNU linker. Written in C, slow for large projects, but universally available. Supports
+all obscure linker script features.
+
+### Gold
+
+A faster linker written in C++, part of GNU Binutils. Introduced the plugin interface for LTO (Link
+Time Optimization). Largely superseded by LLD.
+
+### LLD (LLVM)
+
+The LLVM linker. Written in C++. Key advantages:
+
+- **Speed:** 2-10x faster than GNU ld for large projects.
+- **Cross-platform:** Supports ELF (Linux), COFF (Windows), Mach-O (macOS), and WebAssembly.
+- **Diagnostics:** Improved error messages with source locations.
+
+```bash
+# CMake: use LLD
+cmake -DCMAKE_LINKER=lld ..
+# Or via compiler flag:
+clang++ -fuse-ld=lld main.o -lA -lB
+```
+
+### Mold
+
+A modern linker designed for speed. Written in C++. Claims to be 5-100x faster than GNU ld.
+
+```bash
+cmake -DCMAKE_LINKER=mold ..
+# Or:
+clang++ -fuse-ld=mold main.o -lA -lB
+```
+
+| Feature            | GNU ld (BFD) | Gold    | LLD            | Mold       |
+| :----------------- | :----------- | :------ | :------------- | :--------- |
+| **Language**       | C            | C++     | C++            | C++        |
+| **ELF Support**    | Full         | Full    | Full           | Full       |
+| **COFF Support**   | No           | No      | Yes (lld-link) | No         |
+| **Mach-O Support** | No           | No      | Yes (ld64.lld) | No         |
+| **Linker Scripts** | Full         | Partial | Most           | Partial    |
+| **Speed**          | Baseline     | 2-5x    | 2-10x          | 5-100x     |
+| **LTO**            | Via plugin   | Native  | Native         | Via plugin |
+
+## 6. Linker Scripts
+
+A linker script (`ld` syntax) controls the layout of sections in the final binary. While most
+developers never write them, understanding them is essential for embedded systems and OS
+development.
+
+```ld
+/* Minimal linker script */
+ENTRY(_start)
+
+SECTIONS
+{
+    . = 0x100000;          /* Base address: 1 MB */
+    .text : { *(.text) }   /* All .text sections concatenated */
+    .rodata : { *(.rodata) }
+    .data : { *(.data) }
+    .bss : {
+        __bss_start = .;
+        *(.bss)
+        __bss_end = .;
+    }
+}
+```
+
+Key directives:
+
+- `ENTRY(symbol)`: Sets the entry point.
+- `.` (location counter): Represents the current VMA (Virtual Memory Address).
+- `*(.section)`: Wildcard pattern matching all input sections named `.section`.
+- `PROVIDED(symbol) = value`: Define a symbol only if not already defined.
+
+To inspect the default linker script for your target:
+
+```bash
+ld --verbose | grep -A100 "SECTIONS"
+```
+
+## 7. Name Demangling
+
+The linker operates on **Mangled Names** (decorated names that encode namespace, class, and argument
+types).
 
 - **Source:** `void foo::bar(int)`
 - **Mangled (Itanium):** `_ZN3foo3barEi`
 
-Linker errors report the mangled name, which is unreadable. Tools like `c++filt` translate them back.
+Linker errors report the mangled name, which is unreadable. Tools like `c++filt` translate them
+back.
 
 **Diagnostic Workflow:**
 
@@ -141,11 +384,68 @@ Linker errors report the mangled name, which is unreadable. Tools like `c++filt`
    nm -C --defined-only libfoo.a | grep "foo::bar"
    ```
 
-## Architectural Summary
+## 8. Debugging Undefined Reference Errors
 
-| Process           | Input              | Action                                         | Output                  |
-| :---------------- | :----------------- | :--------------------------------------------- | :---------------------- |
-| **Resolution**    | Symbol Tables      | Match `U` (Undefined) to `D` (Defined).        | Global Symbol Table     |
-| **Deduplication** | COMDAT Sections    | Discard duplicate template instantiations.     | Unique Code Sections    |
-| **Layout**        | Sections           | Concatenate `.text`, `.data` from all objects. | Virtual Address Map     |
-| **Relocation**    | Relocation Entries | Patch placeholders with virtual addresses.     | Executable Machine Code |
+Undefined reference errors are the most common linker errors. A systematic debugging approach:
+
+### Step 1: Demangle the Symbol
+
+```bash
+# Pipe the error through c++filt
+clang++ main.o -lfoo 2>&1 | c++filt
+```
+
+### Step 2: Verify the Symbol Exists
+
+```bash
+# Check if the symbol is defined in any object file or library
+nm -C libfoo.a | grep "missing_symbol"
+nm -C main.o | grep "missing_symbol"
+```
+
+### Step 3: Check Link Order
+
+Ensure the object file referencing the symbol appears before the library providing it on the command
+line.
+
+### Step 4: Check Name Mangling Compatibility
+
+If the symbol is defined in a C library but declared in C++ code without `extern "C"`, the C++
+compiler will emit a mangled name while the library exports an unmangled name.
+
+```cpp
+// WRONG: C++ mangling applied to C function
+extern void c_library_init();  // Mangled as: _Z14c_library_initv
+
+// CORRECT: disable mangling for C interface
+extern "C" void c_library_init();  // Unmangled: c_library_init
+```
+
+### Step 5: Check Visibility and Export Maps
+
+Symbols may be hidden by `-fvisibility=hidden` or by `.def` / version scripts. Use `nm -D` to check
+the _dynamic_ symbol table:
+
+```bash
+# Dynamic symbols only (what's exported from a .so)
+nm -D libfoo.so | grep "missing_symbol"
+```
+
+## 9. Common Pitfalls
+
+- **Link order matters:** Object files before libraries, dependents before dependencies. This is the
+  single most common source of linker errors on Linux.
+- **`--whole-archive` without `--no-whole-archive`:** Forgets to close the whole-archive scope,
+  causing massive binary bloat.
+- **Mismatched `extern "C"`:** Forgetting `extern "C"` when calling C code from C++ causes undefined
+  reference to the mangled name.
+- **Inline functions in headers without `inline`:** Defining a non-inline function in a header
+  included by multiple TUs causes duplicate symbol errors.
+- **Static library not rebuilt after header change:** Changing a header only recompiles TUs that
+  include it. If the static library was not rebuilt, stale object files may cause mysterious errors.
+
+## See Also
+
+- [Name Mangling](./5_name_mangling.md)
+- [Translation Units and Preprocessing](./1_translation_unit.md)
+- [Preprocessor](./2_preprocessor.md)

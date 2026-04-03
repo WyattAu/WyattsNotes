@@ -8,23 +8,44 @@ categories:
 slug: header-units
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-The transition from a text-based inclusion model (`#include`) to a semantic module model (`import`) cannot happen instantaneously. The C++ ecosystem relies on millions of lines of headers (POSIX, Windows SDK, OpenSSL, Boost) that may never be converted to native modules.
+The transition from a text-based inclusion model (`#include`) to a semantic module model (`import`)
+cannot happen instantaneously. The C++ ecosystem relies on millions of lines of headers (POSIX,
+Windows SDK, OpenSSL, Boost) that may never be converted to native modules.
 
 To bridge this gap, C++20/23 introduces two architectural mechanisms:
 
-1. **The Global Module Fragment (GMF):** A reliable sandbox for `#include` directives within module files.
-2. **Header Units:** A mechanism to compile legacy headers into Binary Module Interfaces (BMIs) on the fly, allowing them to be imported like modules.
+1. **The Global Module Fragment (GMF):** A reliable sandbox for `#include` directives within module
+   files.
+2. **Header Units:** A mechanism to compile legacy headers into Binary Module Interfaces (BMIs) on
+   the fly, allowing them to be imported like modules.
 
-## 1. The Global Module Fragment (GMF)
+## 1. What Header Units Solve
 
-The GMF is the primary mechanism for consuming legacy headers inside a module. It creates a transitional environment where the preprocessor functions normally, but the resulting declarations are seamlessly available to the module body.
+In the traditional `#include` model, every translation unit that includes a header re-parses the
+entire header text. For large headers like `&lt;vector&gt;` or `&lt;windows.h&gt;`, this can mean
+parsing tens of thousands of lines for every TU. The preprocessor performs textual inclusion, macro
+expansion, and conditional compilation independently for each TU.
+
+Header units address this redundancy by **compiling the header once** into a BMI, which is then
+imported by all consumers. This is analogous to precompiled headers (PCH) but with semantic
+guarantees:
+
+- The header is parsed only once per build.
+- The BMI captures the semantic interface (declarations, types, templates).
+- Macro behavior is preserved (unlike native modules).
+
+## 2. The Global Module Fragment (GMF)
+
+The GMF is the primary mechanism for consuming legacy headers inside a module. It creates a
+transitional environment where the preprocessor functions normally, but the resulting declarations
+are seamlessly available to the module body.
 
 ### Architecture
 
-The GMF is delimited by the `module;` statement at the very top of the file and ends at the `export module [Name];` declaration.
+The GMF is delimited by the `module;` statement at the very top of the file and ends at the
+`export module [Name];` declaration.
 
 ```cpp
 // src/network.cppm
@@ -53,16 +74,18 @@ export namespace Network {
 
 ### Isolation Rules
 
-1. **Leakage:** Declarations in the GMF (like `sockaddr_in`) are **reachable** by the module implementation, but they are not **exported** to consumers of `Network` unless explicitly re-exported.
-2. **Macro Hygiene:** Macros defined in the GMF are visible inside the module. However, when a consumer writes `import Network;`, they **do not** inherit these macros. This prevents the "macro pollution" common in header-based development.
+1. **Leakage:** Declarations in the GMF (like `sockaddr_in`) are **reachable** by the module
+   implementation, but they are not **exported** to consumers of `Network` unless explicitly
+   re-exported.
+2. **Macro Hygiene:** Macros defined in the GMF are visible inside the module. However, when a
+   consumer writes `import Network;`, they **do not** inherit these macros. This prevents the "macro
+   pollution" common in header-based development.
 
-## 2. Header Units
-
-**Header Units** represent a more aggressive modernization strategy. They allow the compiler to treat a legacy header (`vector`, `windows.h`) as if it were a module.
+## 3. Importing a Header Unit vs Including It
 
 ### Syntax
 
-Instead of `#include "header.h"`, the syntax is `import "header.h";` (or `import <header>;`).
+Instead of `#include "header.h"`, the syntax is `import "header.h";` (or `import &lt;header&gt;;`).
 
 ```cpp
 // src/main.cpp
@@ -74,6 +97,17 @@ int main() {
 }
 ```
 
+### Key Differences from `#include`
+
+| Feature            | `#include "h"`             | `import "h"` (Header Unit)          |
+| :----------------- | :------------------------- | :---------------------------------- |
+| **Parsing**        | Textual copy-paste.        | Semantic load (BMI).                |
+| **Speed**          | Slow (re-parsed every TU). | Fast (parsed once per build graph). |
+| **Macros**         | Leaks everywhere.          | **Leaks**. (Unique exception).      |
+| **ODR**            | Fragile.                   | Strict.                             |
+| **Include guards** | Required for safety        | Not needed (no textual inclusion).  |
+| **Preprocessing**  | Full preprocessing applied | Single precompile pass.             |
+
 ### The Synthesis Mechanism
 
 When the build system encounters `import "header.h";`:
@@ -82,95 +116,233 @@ When the build system encounters `import "header.h";`:
 2. It compiles `header.h` into a BMI (`.pcm` / `.ifc`).
 3. It replaces the text inclusion with a binary load of the interface.
 
-### Benefits vs. Risks
+This means the header is processed once by the preprocessor and once by the compiler's semantic
+analysis. All subsequent importers load the pre-built BMI, skipping both steps.
 
-| Feature     | `#include "h"`             | `import "h"` (Header Unit)          |
-| :---------- | :------------------------- | :---------------------------------- |
-| **Parsing** | Textual copy-paste.        | Semantic load (BMI).                |
-| **Speed**   | Slow (re-parsed every TU). | Fast (parsed once per build graph). |
-| **Macros**  | Leaks everywhere.          | **Leaks**. (Unique exception).      |
-| **ODR**     | Fragile.                   | Strict.                             |
+## 4. Header Unit Naming and File System Layout
 
-:::warning Macro Behavior
-Header Units are the **only** modular construct that exports macros. If `import "config.h";` is used, and `config.h` defines `#define MAX_SIZE 10`, the importer sees `MAX_SIZE`. This preserves compatibility but negates the hygienic benefits of native modules.
-:::
+Header units use the header's path as their identity:
 
-### Constraints: "Importable Headers"
+- `import &lt;vector&gt;;` refers to the standard library header named `vector`.
+- `import "utils/helpers.h";` refers to the file `utils/helpers.h` relative to the include paths.
 
-Not all headers can be Header Units. To be importable, a header must be:
+The build system must locate the header using the same search rules as `#include` (system include
+paths for `&lt;&gt;`, then user include paths for `""`).
 
-1. **Self-Contained:** It does not rely on macros defined by the importer (e.g., `#define _WIN32_WINNT ...` before include).
-2. **Idempotent:** It contains Include Guards.
+### Naming in the BMI
 
-## 3. The `import std;` Named Module (C++23)
+The BMI for a header unit is typically named after the header path:
 
-In C++23, the Standard Library itself is modularized. This renders Header Units for the STL (`import <vector>;`) obsolete.
+```bash
+# Clang generates BMIs with a path-based naming scheme
+clang++ -std=c++23 --precompile header_unit.hpp -o header_unit.hpp.pcm
 
-### `import std;`
-
-- Exports the entire Standard Library (`std::vector`, `std::print`, etc.).
-- **Does not** export global macros (like `assert` or `errno` in some implementations).
-- **Compilation Speed:** Massive improvement. Instead of parsing megabytes of headers for every file, the compiler loads one pre-compiled BMI.
-
-### `import std.compat;`
-
-- Exports everything in `import std;`.
-- Additionally exports the C Standard Library symbols into the **Global Namespace** (e.g., `::printf` vs `std::printf`).
-- Use this for migrating legacy C++ codebases.
-
-## 4. Build System Implementation
-
-Handling Header Units and GMF requires coordination between the compiler and build system to locate headers and determine build order.
-
-### CMake Configuration
-
-As of CMake 3.28, support for `import std;` is becoming standard, but Header Units require specific compiler handling.
-
-**Standard C++23 Configuration:**
-
-```cmake
-cmake_minimum_required(VERSION 3.28)
-project(ModernApp LANGUAGES CXX)
-
-set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_SCAN_FOR_MODULES ON)
-
-# Required for 'import std;' in Clang/GCC currently
-# MSVC handles it automatically in recent VS updates
-if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprebuilt-module-path=${CMAKE_BINARY_DIR}")
-endif()
-
-add_executable(App src/main.cpp)
+# MSVC uses an .ifc file alongside the header
 ```
 
-### Handling External Libraries (OpenSSL, Qt)
+### Clang Command Line
 
-For external dependencies that are not modularized, the **Global Module Fragment** is the architecturally correct integration point. Do not attempt to compile complex third-party headers (like `windows.h` or `openssl/ssl.h`) as Header Units unless you can guarantee they are "Importable."
+```bash
+# Compile a header unit
+clang++ -std=c++23 -c --precompile utils/helpers.h -o utils/helpers.h.pcm
 
-**Correct Pattern:**
+# Import the header unit
+clang++ -std=c++23 -c main.cpp -fmodule-file=utils/helpers.h=utils/helpers.h.pcm
+```
+
+### GCC Command Line
+
+```bash
+# GCC uses -fmodule-header flag
+g++ -std=c++23 -fmodules-ts -fmodule-header utils/helpers.h -o utils/helpers.h.gcm
+```
+
+## 5. GCC vs. Clang Implementation Differences
+
+<Tabs>
+  <TabItem value="clang" label="Clang" default>
+
+Clang treats header units as a distinct BMI type. The `--precompile` flag with a header file
+generates a header-unit BMI. Clang tracks whether a BMI is a named module or a header unit
+internally.
+
+```bash
+# Clang: explicit header unit compilation
+clang++ -std=c++23 --precompile -x c++-system-header vector -o vector.pcm
+clang++ -std=c++23 --precompile -x c++-header my_lib.h -o my_lib.h.pcm
+```
+
+Clang requires specifying the header type (`-x c++-header` for user headers, `-x c++-system-header`
+for system headers) when precompiling header units.
+
+  </TabItem>
+  <TabItem value="gcc" label="GCC">
+
+GCC uses the `-fmodule-header` flag to indicate that an input file should be compiled as a header
+unit rather than a module interface. GCC's header unit support is less mature than Clang's.
+
+```bash
+# GCC: header unit compilation
+g++ -std=c++23 -fmodules-ts -fmodule-header my_lib.h
+# Generates a .gcm BMI that can be imported
+```
+
+GCC relies on the module mapper to resolve header unit imports at compile time. The mapper
+associates header paths with their corresponding BMI files.
+
+  </TabItem>
+</Tabs>
+
+## 6. Interaction with Traditional Headers
+
+Header units can coexist with traditional `#include` directives in the same project, but mixing them
+requires care:
 
 ```cpp
-module;
-#include <QApplication> // Legacy include in GMF
-export module Gui;
-
-import std;
-
-export namespace Gui {
-    void run(int argc, char** argv) {
-        QApplication app(argc, argv);
-        app.exec();
-    }
-}
+// Mixing is allowed but discouraged
+#include <cstdio>       // Traditional include
+import <vector>;        // Header unit import
+#include "legacy.h";    // Traditional include
+import "modern.h";      // Header unit import
 ```
 
-## Architectural Migration Strategy
+**Problems with mixing:**
+
+1. **Macro conflicts:** A macro defined by `#include &lt;cstdio&gt;` may affect the behavior of
+   `import "modern.h";` if `modern.h` uses conditional compilation based on that macro.
+2. **ODR violations:** If `legacy.h` and `modern.h` both define the same entity, the ODR is
+   violated. The header unit model enforces ODR more strictly than textual inclusion.
+3. **Build system complexity:** The build system must track both `#include` dependencies and
+   `import` dependencies, using different scanning mechanisms for each.
+
+**Best practice:** Pick one approach per header. Either `#include` it everywhere or `import` it
+everywhere. Do not mix for the same header across different TUs.
+
+## 7. Macro Export in Header Units
+
+Header units are the **only** modular construct that exports macros. This is a deliberate
+compatibility decision.
+
+```cpp
+// config.h
+#define MAX_SIZE 100
+#define DEBUG_MODE 1
+```
+
+```cpp
+// main.cpp
+import "config.h";  // Header unit import
+
+int buf[MAX_SIZE];  // Works: MAX_SIZE is visible
+#if DEBUG_MODE       // Works: DEBUG_MODE is visible
+// ...
+#endif
+```
+
+This means:
+
+- **Named modules** (`export module Foo;`) do **not** export macros. Importers do not see macros
+  defined in the module interface.
+- **Header units** (`import "config.h";`) **do** export macros. Importers see all macros defined by
+  the header.
+
+This asymmetry exists because many headers (especially configuration headers) are designed to
+communicate exclusively through macros. Making them invisible would break the entire ecosystem.
+
+**Implications:**
+
+- Header units that define macros still suffer from macro pollution in importers.
+- You cannot use header units to achieve macro hygiene. Use the Global Module Fragment with named
+  modules for that.
+- If a header's sole purpose is to define macros, it is a poor candidate for header unit conversion.
+  Keep using `#include` or move the macros to `constexpr` variables in a named module.
+
+## 8. Current Limitations and Edge Cases
+
+### Not All Headers Are Importable
+
+A header must be **self-contained** and **idempotent** to be used as a header unit:
+
+- **Self-contained:** It must not depend on macros defined by the includer before the include
+  directive.
+- **Idempotent:** It must have include guards or `#pragma once`.
+
+Headers that violate these rules will compile differently as header units than as includes, causing
+subtle bugs.
+
+```cpp
+// BAD: not self-contained
+// User must define PLATFORM before including
+#ifdef PLATFORM_LINUX
+void linux_specific();
+#elif defined(PLATFORM_WINDOWS)
+void windows_specific();
+#endif
+```
+
+### Order-Dependent Includes
+
+Headers that must be included in a specific order (common in older C APIs) cannot be reliably
+converted to header units:
+
+```cpp
+// BAD: order matters
+#include <sys/types.h>  // Must be before sys/socket.h
+#include <sys/socket.h>
+```
+
+With `#include`, the textual inclusion order is preserved. With `import`, each header unit is
+compiled independently, and the order of `import` directives may not replicate the textual order
+semantics.
+
+### Conditional Compilation
+
+Headers that rely heavily on preprocessor conditionals are problematic as header units. The BMI
+captures one specific configuration. If different TUs need different configurations of the same
+header, header units cannot accommodate this.
+
+```cpp
+// config.h defines different things based on BUILD_VARIANT
+// If TUs A and B need different BUILD_VARIANT values, they cannot
+// share the same header unit BMI.
+```
+
+### System Headers
+
+Standard library header units (`import &lt;vector&gt;;`) are supported by Clang and MSVC but the
+experience varies. GCC's support is experimental. In C++23, `import std;` is the preferred approach
+for the standard library, making individual STL header units obsolete.
+
+### Third-Party Headers
+
+Complex third-party headers (Qt, OpenSSL, Boost) are generally **not** suitable for header unit
+conversion unless the library explicitly supports it. Use the Global Module Fragment instead.
+
+## 9. Architectural Migration Strategy
 
 When modernizing a codebase to C++23 modules:
 
-1. **Step 1: GMF Adoption.** Move all `#include` directives in `.cpp` files to the Global Module Fragment of a new module. This validates that your headers are self-contained.
+1. **Step 1: GMF Adoption.** Move all `#include` directives in `.cpp` files to the Global Module
+   Fragment of a new module. This validates that your headers are self-contained.
 2. **Step 2: Modularize Internals.** Convert your own project's components to Modules.
 3. **Step 3: `import std;`.** Replace standard library includes with the named module.
-4. **Avoid Header Units.** Use Header Units (`import "foo.h"`) only for headers you control that cannot be refactored into modules yet. For system headers, stick to the GMF mechanism.
+4. **Avoid Header Units.** Use Header Units (`import "foo.h"`) only for headers you control that
+   cannot be refactored into modules yet. For system headers, stick to the GMF mechanism.
+
+## Common Pitfalls
+
+- **Attempting to header-unit non-self-contained headers:** If a header expects the user to
+  `#define` something before including it, it cannot be a header unit. Use `#include` in the GMF
+  instead.
+- **Macro-only headers:** Headers that define only macros (no declarations) are poor candidates for
+  header units. The BMI provides no semantic benefit over `#include`.
+- **ODR violations with mixed usage:** Including a header in one TU and importing it as a header
+  unit in another TU can violate the ODR if the preprocessor state differs.
+- **Build system not configured for header units:** CMake requires explicit configuration
+  (`CMAKE_CXX_SCAN_FOR_MODULES ON`) and compiler-specific flags for header unit support.
+
+## See Also
+
+- [Binary Module Interfaces (BMI)](./2_bmi.md)
+- [The C Runtime (CRT)](./4_c_runtime.md)
+- [Preprocessor](../1_translation/2_preprocessor.md)

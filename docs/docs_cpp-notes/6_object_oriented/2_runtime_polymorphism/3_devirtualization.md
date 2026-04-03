@@ -196,3 +196,279 @@ int main() {
 
 - [Virtual Functions and vtables](./1_vtables.md)
 - [Inheritance, Object Slicing, and Virtual Destructors](./2_inheritance_slicing.md)
+
+## 3.6 Devirtualization Barriers
+
+Even with optimization enabled, devirtualization can fail in many real-world scenarios.
+Understanding these barriers helps you write code that is amenable to optimization.
+
+### Barrier 1: Multiple Inheritance
+
+Multiple inheritance introduces vptr offsets and additional indirection. When a method is called
+through a base class pointer that is not the primary base, the compiler must adjust the `this`
+pointer before performing the vtable lookup. This adjustment can prevent devirtualization.
+
+```cpp
+#include <iostream>
+
+struct Interface1 {
+    virtual void method1() const { std::cout << "I1::method1\n"; }
+    virtual ~Interface1() = default;
+};
+
+struct Interface2 {
+    virtual void method2() const { std::cout << "I2::method2\n"; }
+    virtual ~Interface2() = default;
+};
+
+struct Impl : Interface1, Interface2 {
+    void method1() const override { std::cout << "Impl::method1\n"; }
+    void method2() const override { std::cout << "Impl::method2\n"; }
+};
+
+void call_via_secondary(Interface2* p) {
+    p->method2();
+    // Compiler may not devirtualize even if it knows the full type,
+    // because the this-pointer adjustment for the secondary base
+    // complicates the analysis.
+}
+
+int main() {
+    Impl obj;
+    call_via_secondary(&obj);
+}
+```
+
+### Barrier 2: Indirect Calls Through Function Pointers
+
+When a virtual function call is hidden behind a function pointer, the compiler typically cannot see
+through the indirection to determine the dynamic type.
+
+```cpp
+#include <iostream>
+#include <functional>
+
+struct Base { virtual void f() const { std::cout << "Base\n"; } virtual ~Base() = default; };
+struct Derived : Base { void f() const override { std::cout << "Derived\n"; } };
+
+void call_f(const Base& obj) {
+    obj.f();  // Compiler can potentially devirtualize
+}
+
+void call_via_funcptr(const Base& obj, void (*fp)(const Base&)) {
+    fp(obj);  // Compiler cannot devirtualize through function pointer
+}
+
+int main() {
+    Derived d;
+    call_f(d);  // Likely devirtualized
+
+    // Function pointer hides the virtual dispatch context
+    void (*fp)(const Base&) = [](const Base& b) { b.f(); };
+    call_via_funcptr(d, fp);  // Not devirtualized
+}
+```
+
+### Barrier 3: Separate Compilation
+
+When the caller and the callee are in different translation units, the compiler may not have
+visibility into the full type hierarchy. This is especially problematic when:
+
+- The derived class is defined in a different `.cpp` file.
+- The class hierarchy is defined in a shared library (`.so` / `.dll`).
+- The constructor of the derived class is not visible at the call site.
+
+```cpp
+// --- header.h ---
+struct Base { virtual int compute() const = 0; virtual ~Base() = default; };
+
+// --- factory.cpp ---
+#include "header.h"
+struct Secret : Base { int compute() const override { return 42; } };
+Base* create() { return new Secret; }
+
+// --- main.cpp ---
+#include "header.h"
+Base* create();
+
+int main() {
+    Base* p = create();
+    return p->compute();
+    // Compiler in main.cpp cannot see Secret's definition.
+    // Devirtualization is impossible without LTO.
+}
+```
+
+## 3.7 Link-Time Optimization (LTO) for Cross-TU Devirtualization
+
+**Link-Time Optimization** (LTO) allows the compiler to analyze the entire program across
+translation units during linking. This is the primary tool for enabling devirtualization when
+separate compilation is a barrier.
+
+### How LTO Works
+
+1. During compilation, the compiler emits an intermediate representation (IR) instead of machine
+   code.
+2. During linking, the linker collects all IR files and runs an optimization pass on the combined
+   IR.
+3. The optimizer can now see the full type hierarchy and devirtualize calls that were impossible
+   during individual compilation.
+
+### Enabling LTO
+
+```cmake
+cmake_minimum_required(VERSION 3.25)
+project(LtoExample)
+
+set(CMAKE_CXX_STANDARD 23)
+
+# Enable LTO for all targets
+include(CheckIPOSupported)
+check_ipo_supported(RESULT ipo_supported)
+if(ipo_supported)
+    set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON)
+endif()
+
+add_executable(app main.cpp factory.cpp)
+```
+
+```bash
+# GCC
+g++ -O2 -flto main.cpp factory.cpp -o app
+
+# Clang
+clang++ -O2 -flto main.cpp factory.cpp -o app
+
+# MSVC
+cl /O2 /GL main.cpp factory.cpp /link /LTCG
+```
+
+### LTO Trade-offs
+
+| Aspect           | Without LTO | With LTO                              |
+| :--------------- | :---------- | :------------------------------------ |
+| Compile time     | Fast        | Slow (full-program analysis)          |
+| Link time        | Fast        | Slow (optimization at link time)      |
+| Memory usage     | Low         | High (entire program IR in memory)    |
+| Devirtualization | Limited     | Cross-TU devirtualization enabled     |
+| Binary size      | Normal      | Often smaller (dead code elimination) |
+| Debugging        | Easy        | Harder (optimized code at link time)  |
+
+:::warning LTO can increase link time significantly for large projects (minutes to tens of minutes).
+For CI builds, consider using ThinLTO (`-flto=thin` on Clang), which performs parallel LTO with
+lower memory usage at the cost of slightly less aggressive optimization. :::
+
+## 3.8 `final` and Its Effect on vtable Layout
+
+The `final` specifier does not change the vtable layout itself — the vtable still exists and the
+vptr still points to it. However, `final` enables the compiler to:
+
+1. **Skip the vtable lookup entirely.** The compiler can emit a direct call to the known final
+   function.
+2. **Inline the function body.** Since the call target is known, the compiler can inline it.
+3. **Eliminate the vptr in some cases.** If a class is `final` and has no virtual base classes, some
+   compilers can omit the vptr entirely when the object is not accessed through a base class
+   pointer.
+
+```cpp
+#include <iostream>
+
+struct NonFinal {
+    virtual void f() const { std::cout << "NonFinal::f\n"; }
+    virtual ~NonFinal() = default;
+};
+
+struct FinalClass final {
+    virtual void f() const { std::cout << "FinalClass::f\n"; }
+    virtual ~FinalClass() = default;
+};
+
+void call_non_final(const NonFinal& obj) {
+    obj.f();
+    // Even at -O2, this typically emits an indirect call
+    // because NonFinal could be subclassed in another TU
+}
+
+void call_final(const FinalClass& obj) {
+    obj.f();
+    // At -O2, this is typically inlined to std::cout << "FinalClass::f\n"
+    // The compiler knows FinalClass cannot be subclassed
+}
+
+int main() {
+    NonFinal nf;
+    FinalClass fc;
+    call_non_final(nf);
+    call_final(fc);
+}
+```
+
+Compile and inspect the generated assembly to verify:
+
+```bash
+# GCC: generate assembly
+g++ -O2 -S -masm=intel devirtualization.cpp -o devirtualization.s
+
+# Look for "call" vs "jmp" vs inlined code
+grep -A3 'call_final' devirtualization.s
+```
+
+## 3.9 Speculative Devirtualization (Type Profiling)
+
+Even when the compiler cannot prove the exact type at compile time, it can emit a speculative direct
+call based on profiling data or heuristics:
+
+```cpp
+#include <iostream>
+#include <memory>
+#include <vector>
+
+struct Shape { virtual double area() const = 0; virtual ~Shape() = default; };
+struct Circle : Shape {
+    double r;
+    explicit Circle(double radius) : r{radius} {}
+    double area() const override { return 3.14159265 * r * r; }
+};
+struct Rectangle : Shape {
+    double w, h;
+    Rectangle(double width, double height) : w{width}, h{height} {}
+    double area() const override { return w * h; }
+};
+
+double total_area(const std::vector<std::unique_ptr<Shape>>& shapes) {
+    double sum = 0.0;
+    for (const auto& s : shapes) {
+        sum += s->area();
+        // With PGO: compiler emits
+        //   if (typeid(*s) == typeid(Circle))
+        //     sum += Circle::area(s);  // direct call (fast path)
+        //   else
+        //     sum += s->vptr->area(s); // indirect call (slow path)
+    }
+    return sum;
+}
+
+int main() {
+    std::vector<std::unique_ptr<Shape>> shapes;
+    for (int i = 0; i < 1000; ++i) shapes.push_back(std::make_unique<Circle>(1.0));
+    for (int i = 0; i < 10; ++i) shapes.push_back(std::make_unique<Rectangle>(2.0, 3.0));
+
+    std::cout << "Total area: " << total_area(shapes) << "\n";
+}
+```
+
+## Common Pitfalls
+
+- **Adding `final` too early.** Marking a class `final` prevents extension, which can be problematic
+  in library code where users may need to subclass. Use `final` on leaf classes that you control and
+  that are not part of a public API.
+- **Assuming devirtualization always happens.** Even with `-O3`, compilers may fail to devirtualize
+  due to ABI boundaries, separate compilation, or complex inheritance. Always measure with your
+  specific compiler and optimization level.
+- **Relying on devirtualization for correctness.** Devirtualization is an optimization, not a
+  language guarantee. The program must be correct even without it.
+- **Forgetting LTO for cross-TU calls.** Without LTO, the compiler cannot see the full class
+  hierarchy across translation units. If devirtualization is critical for performance, enable LTO.
+- **PGO without representative workloads.** Profile-guided speculative devirtualization is only as
+  good as the profiling data. If the production workload differs from the training workload, the
+  speculative direct calls may hurt performance (branch misprediction on the fast path).
