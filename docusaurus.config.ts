@@ -405,6 +405,13 @@ const config: Config = {
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },
     },
+    zoom: {
+      selector: '.markdown :not(a) > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)',
+      },
+    },
   } satisfies Preset.ThemeConfig,
 };
 
