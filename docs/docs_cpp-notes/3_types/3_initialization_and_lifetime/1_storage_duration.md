@@ -86,7 +86,7 @@ void use() {
 }
 ```
 
-See [Module 8 (Pointers, References, Views)](/docs/cpp-notes/types/pointers-references-views) for
+See [Pointers, References, and Views](../2_pointers_references_views/2_reference_lifetime) for
 details on reference lifetime extension.
 
 ## Static Storage Duration
