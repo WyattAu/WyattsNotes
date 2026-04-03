@@ -1,0 +1,370 @@
+---
+title: Deducing This and CRTP
+date: 2026-04-03T00:00:00.000Z
+tags:
+  - Cpp
+categories:
+  - Cpp
+slug: deducing-this-crtp
+---
+
+# Explicit Object Parameters (Deducing This) and CRTP Replacement
+
+C++23 introduces **explicit object parameters** (deducing this), which eliminates the need for the
+Curiously Recurring Template Pattern (CRTP) in most cases. This section covers the CRTP pattern, the
+new `this` parameter syntax, value category preservation, and practical patterns for fluent APIs and
+mixin classes.
+
+## 5.1 The CRTP Pattern
+
+The **Curiously Recurring Template Pattern (CRTP)** is a compile-time technique where a derived
+class passes itself as a template parameter to its base class. It enables static polymorphism — the
+base class can call methods on the derived class without virtual dispatch.
+
+```cpp
+#include <iostream>
+#include <sstream>
+
+template <typename Derived>
+struct Serializable {
+    std::string serialize() const {
+        std::ostringstream oss;
+        oss << static_cast<const Derived&>(*this).to_string();
+        return oss.str();
+    }
+
+    void print_serialized() const {
+        std::cout << serialize() << "\n";
+    }
+};
+
+struct Point : Serializable<Point> {
+    double x;
+    double y;
+
+    Point(double x, double y) : x(x), y(y) {}
+
+    std::string to_string() const {
+        return "Point(" + std::to_string(x) + ", " + std::to_string(y) + ")";
+    }
+};
+
+struct Circle : Serializable<Circle> {
+    double cx;
+    double cy;
+    double radius;
+
+    Circle(double cx, double cy, double r) : cx(cx), cy(cy), radius(r) {}
+
+    std::string to_string() const {
+        return "Circle(" + std::to_string(cx) + ", " + std::to_string(cy)
+             + ", r=" + std::to_string(radius) + ")";
+    }
+};
+
+int main() {
+    Point p{1.0, 2.0};
+    Circle c{3.0, 4.0, 5.0};
+
+    p.print_serialized();
+    c.print_serialized();
+}
+```
+
+Limitations of CRTP:
+
+- Verbose boilerplate: every derived class must repeat the base class template parameter.
+- The `static_cast<const Derived&>(*this)` pattern is unintuitive and error-prone.
+- Does not work with type erasure or heterogeneous containers (all types must be known at compile
+  time).
+- Cannot be used when the derived type is not known at the point of base class definition.
+
+## 5.2 C++23 Deducing This
+
+C++23 introduces **explicit object parameters** (also called "deducing this") [N4950 §11.4.8.3]. A
+member function can declare its object parameter explicitly using the `this` keyword in the
+parameter list:
+
+```cpp
+#include <iostream>
+#include <sstream>
+#include <string>
+
+struct Printable {
+    template <typename Self>
+    void print(this const Self& self) {
+        std::cout << self.to_string() << "\n";
+    }
+};
+
+struct Point : Printable {
+    double x;
+    double y;
+
+    Point(double x, double y) : x(x), y(y) {}
+
+    std::string to_string() const {
+        return "Point(" + std::to_string(x) + ", " + std::to_string(y) + ")";
+    }
+};
+
+struct Circle : Printable {
+    double cx;
+    double cy;
+    double radius;
+
+    Circle(double cx, double cy, double r) : cx(cx), cy(cy), radius(r) {}
+
+    std::string to_string() const {
+        return "Circle(" + std::to_string(cx) + ", " + std::to_string(cy)
+             + ", r=" + std::to_string(radius) + ")";
+    }
+};
+
+int main() {
+    Point p{1.0, 2.0};
+    Circle c{3.0, 4.0, 5.0};
+
+    p.print();
+    c.print();
+}
+```
+
+How it works:
+
+- The syntax `this const Self& self` declares an **explicit object parameter**. The compiler deduces
+  `Self` from the type of the object on which the member function is called.
+- When `p.print()` is called, `Self` is deduced as `Point`, so `self` is `const Point&`.
+- When `c.print()` is called, `Self` is deduced as `Circle`, so `self` is `const Circle&`.
+- The base class can call `self.to_string()` directly — no `static_cast` needed.
+
+## 5.3 CRTP vs Deducing This: Comparison
+
+| Aspect                     | CRTP                                              | Deducing This (C++23)                          |
+| -------------------------- | ------------------------------------------------- | ---------------------------------------------- |
+| **Syntax**                 | `class Derived : Base<Derived>`                   | `void f(this const auto& self)`                |
+| **Type access**            | `static_cast<const Derived&>(*this)`              | Direct: `self` is already the derived type     |
+| **Boilerplate**            | High: each derived class repeats the template arg | Low: derived classes just inherit              |
+| **Compile-time poly**      | Yes                                               | Yes                                            |
+| **Requires template base** | Yes                                               | No                                             |
+| **Value category**         | Can only bind to lvalues (const&)                 | Can preserve value category (`auto&&`, `auto`) |
+| **Standard**               | C++98                                             | C++23                                          |
+
+## 5.4 Value Category Preservation
+
+A key advantage of deducing this over CRTP is the ability to preserve the value category of the
+object:
+
+```cpp
+#include <utility>
+#include <iostream>
+
+struct Counter {
+    int count = 0;
+
+    template <typename Self>
+    auto&& increment(this Self&& self) {
+        ++self.count;
+        return std::forward<Self>(self);
+    }
+};
+
+int main() {
+    Counter c1;
+    Counter c2;
+
+    c1.increment().increment().increment();
+    std::cout << "c1.count = " << c1.count << "\n";
+
+    std::move(c2).increment();
+    std::cout << "c2.count = " << c2.count << "\n";
+}
+```
+
+The `Self&&` parameter deduces to:
+
+- `Counter&` when called on an lvalue (preserving the lvalue reference).
+- `Counter&&` when called on an rvalue (preserving the rvalue reference, enabling move semantics).
+
+This is impossible with CRTP, which can only bind to `const Derived&` or `Derived&` — it cannot
+distinguish between lvalue and rvalue receivers.
+
+## 5.5 Deducing This for a Fluent API Builder
+
+Deducing this enables fluent builder patterns where the return type adapts to the most-derived
+class:
+
+```cpp
+#include <iostream>
+#include <string>
+
+struct BuilderBase {
+    template <typename Self>
+    Self& set_name(this Self& self, std::string name) {
+        self.name_ = std::move(name);
+        return self;
+    }
+
+protected:
+    std::string name_;
+};
+
+struct HttpConfig : BuilderBase {
+    template <typename Self>
+    Self& set_port(this Self& self, int port) {
+        self.port_ = port;
+        return self;
+    }
+
+    template <typename Self>
+    Self& set_timeout(this Self& self, int timeout_ms) {
+        self.timeout_ms_ = timeout_ms;
+        return self;
+    }
+
+    void display() const {
+        std::cout << "Server: " << name_ << ":" << port_
+                  << " (timeout: " << timeout_ms_ << "ms)\n";
+    }
+
+private:
+    int port_ = 80;
+    int timeout_ms_ = 30000;
+};
+
+struct GrpcConfig : BuilderBase {
+    template <typename Self>
+    Self& set_max_retries(this Self& self, int retries) {
+        self.max_retries_ = retries;
+        return self;
+    }
+
+    void display() const {
+        std::cout << "Service: " << name_
+                  << " (max retries: " << max_retries_ << ")\n";
+    }
+
+private:
+    int max_retries_ = 3;
+};
+
+int main() {
+    HttpConfig http;
+    http.set_name("api.example.com")
+        .set_port(443)
+        .set_timeout(5000)
+        .display();
+
+    GrpcConfig grpc;
+    grpc.set_name("order-service")
+        .set_max_retries(5)
+        .display();
+}
+```
+
+Without deducing this, each builder method in a base class would return `BuilderBase&`, breaking the
+chain when the derived class adds its own methods. CRTP solves this but with significant
+boilerplate. Deducing this solves it with minimal syntax.
+
+## 5.6 Deducing This for Mixin Classes
+
+Deducing this makes mixin classes straightforward — a mixin can provide methods that return the
+correct derived type without requiring CRTP:
+
+```cpp
+#include <iostream>
+#include <string>
+#include <sstream>
+
+struct JsonMixin {
+    template <typename Self>
+    std::string to_json(this const Self& self) {
+        std::ostringstream oss;
+        oss << "{";
+        bool first = true;
+        self.visit_fields([&](const char* name, auto value) {
+            if (!first) oss << ", ";
+            first = false;
+            if constexpr (std::is_convertible_v<decltype(value), std::string>) {
+                oss << "\"" << name << "\":\"" << value << "\"";
+            } else {
+                oss << "\"" << name << "\":" << value;
+            }
+        });
+        oss << "}";
+        return oss.str();
+    }
+};
+
+struct Person : JsonMixin {
+    std::string name;
+    int age;
+
+    Person(std::string n, int a) : name(std::move(n)), age(a) {}
+
+    template <typename F>
+    void visit_fields(F&& f) const {
+        f("name", name);
+        f("age", age);
+    }
+};
+
+struct Product : JsonMixin {
+    std::string title;
+    double price;
+
+    Product(std::string t, double p) : title(std::move(t)), price(p) {}
+
+    template <typename F>
+    void visit_fields(F&& f) const {
+        f("title", title);
+        f("price", price);
+    }
+};
+
+int main() {
+    Person alice{"Alice", 30};
+    Product widget{"Widget", 9.99};
+
+    std::cout << alice.to_json() << "\n";
+    std::cout << widget.to_json() << "\n";
+}
+```
+
+Output:
+
+```
+{"name":"Alice","age":30}
+{"title":"Widget","price":9.99}
+```
+
+:::tip Deducing this eliminates the need for CRTP in most mixin and static-polymorphism use cases.
+Prefer deducing this in new C++23 code. Reserve CRTP for projects that must target pre-C++23
+standards, or when explicit template instantiation control is needed. :::
+
+## 5.7 Summary: Runtime vs. Compile-Time Polymorphism
+
+| Criterion             | Virtual Functions (Runtime)           | CRTP / Deducing This (Compile-Time)        |
+| --------------------- | ------------------------------------- | ------------------------------------------ |
+| Dispatch mechanism    | vtable lookup at runtime              | Direct call or inlined at compile time     |
+| Type resolution       | Dynamic (based on object's vptr)      | Static (based on deduced type)             |
+| Heterogeneous storage | Supported (base pointers/references)  | Not supported (each type is distinct)      |
+| Binary compatibility  | Stable ABI across derived types       | Changes to derived types recompile base    |
+| Overhead              | One indirect call per virtual call    | Zero overhead (no indirection)             |
+| Flexibility           | Open for extension at any point       | Closed: types must be known at base def.   |
+| Extensibility         | Add new derived types without changes | Adding types may require base modification |
+| Debugging             | Can inspect dynamic type via RTTI     | No runtime type info needed                |
+
+## References
+
+- [N4950 §7.6] — Run-Time Type Information (`dynamic_cast`, `typeid`)
+- [N4950 §7.6.1.7] — `dynamic_cast`
+- [N4950 §7.6.1.8] — `typeid`
+- [N4950 §11.4.8.3] — Explicit object member functions (deducing this)
+- [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html) — vtable layout
+  specification
+
+## See Also
+
+- [Virtual Functions and vtables](./1_vtables.md)
+- [Devirtualization and Final Specifiers](./3_devirtualization.md)
