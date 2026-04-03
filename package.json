@@ -87,6 +87,11 @@
   "engines": {
     "node": "22"
   },
+  "pnpm": {
+    "overrides": {
+      "fast-xml-parser": ">=4.5.4"
+    }
+  },
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint --fix",
