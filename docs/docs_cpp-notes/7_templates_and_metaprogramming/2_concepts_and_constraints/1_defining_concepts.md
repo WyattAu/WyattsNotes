@@ -317,7 +317,7 @@ concatenation) even if the algorithm is intended for arithmetic. Use the standar
 in `<concepts>` as building blocks whenever possible. :::
 
 > **Cross-reference:** See
-> [A-Level Further Maths: Complex Numbers](../../../../docs_ALevel-notes/further-maths/pure-mathematics/01-complex-numbers.md)
+> [A-Level Further Maths: Complex Numbers](/docs/docs_ALevel-notes/further-maths/pure-mathematics/01-complex-numbers)
 > for the mathematical foundations behind `std::complex`.
 
 ## See Also

@@ -276,12 +276,12 @@ uniform random numbers into normally distributed values [N4950 §29.6.4.4]. This
 values in pairs, so the distribution object may cache one value internally for efficiency. :::
 
 > **Cross-reference:** See
-> [A-Level Maths: Statistical Distributions](../../../../docs_ALevel-notes/maths/statistics/04-statistical-distributions.md)
+> [A-Level Maths: Statistical Distributions](/docs/docs_ALevel-notes/maths/statistics/04-statistical-distributions)
 > for the mathematical foundations of the binomial, normal, and Poisson distributions.
 > **Cross-reference:** See
-> [A-Level Further Maths: Poisson and Geometric Distributions](../../../../docs_ALevel-notes/further-maths/further-statistics/01-poisson-and-geometric-distributions.md)
+> [A-Level Further Maths: Poisson and Geometric Distributions](/docs/docs_ALevel-notes/further-maths/further-statistics/01-poisson-and-geometric-distributions)
 > for deeper coverage of Poisson and geometric distributions. **Cross-reference:** See
-> [A-Level Further Maths: Exponential Distribution and Continuous Random Variables](../../../../docs_ALevel-notes/further-maths/further-statistics/02-exponential-and-continuous-random-variables.md)
+> [A-Level Further Maths: Exponential Distribution and Continuous Random Variables](/docs/docs_ALevel-notes/further-maths/further-statistics/02-exponential-and-continuous-random-variables)
 > for the theory behind the exponential distribution.
 
 ## See Also
