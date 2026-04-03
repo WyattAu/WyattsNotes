@@ -275,6 +275,15 @@ Expected stdd: 1
 uniform random numbers into normally distributed values [N4950 §29.6.4.4]. This method produces
 values in pairs, so the distribution object may cache one value internally for efficiency. :::
 
+> **Cross-reference:** See
+> [A-Level Maths: Statistical Distributions](../../../../docs_ALevel-notes/maths/statistics/04-statistical-distributions.md)
+> for the mathematical foundations of the binomial, normal, and Poisson distributions.
+> **Cross-reference:** See
+> [A-Level Further Maths: Poisson and Geometric Distributions](../../../../docs_ALevel-notes/further-maths/further-statistics/01-poisson-and-geometric-distributions.md)
+> for deeper coverage of Poisson and geometric distributions. **Cross-reference:** See
+> [A-Level Further Maths: Exponential Distribution and Continuous Random Variables](../../../../docs_ALevel-notes/further-maths/further-statistics/02-exponential-and-continuous-random-variables.md)
+> for the theory behind the exponential distribution.
+
 ## See Also
 
 - [Filesystem Library](./1_filesystem.md)
