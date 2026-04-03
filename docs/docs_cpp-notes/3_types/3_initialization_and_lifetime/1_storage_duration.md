@@ -86,8 +86,8 @@ void use() {
 }
 ```
 
-See [Pointers, References, and Views](../2_pointers_references_views/2_reference_lifetime) for
-details on reference lifetime extension.
+See [Reference Lifetime](../2_pointers_references_views/2_reference_lifetime.md) for details on
+reference lifetime extension.
 
 ## Static Storage Duration
 
