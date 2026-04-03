@@ -37,7 +37,7 @@
     "docusaurus-lunr-search": "^3.6.0",
     "docusaurus-plugin-image-zoom": "^3.0.1",
     "docusaurus-theme-redoc": "^2.5.0",
-    "glob": "^11.0.3",
+    "glob": "^13.0.6",
     "katex": "^0.16.44",
     "lunr": "^2.3.9",
     "lunr-languages": "^1.14.0",
