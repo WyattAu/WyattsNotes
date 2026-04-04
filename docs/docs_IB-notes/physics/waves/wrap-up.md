@@ -10,7 +10,6 @@ slug: wrap
 
 <details>
 <summary><strong>C.1 Simple Harmonic Motion, C.2 Wave Model & C.3 Wave Phenomena</strong></summary>
-<p>
 
 1. **Question (C.1 & D.1 - HL Only):** A small satellite of mass _m_ is in a circular orbit of
 radius _R_ around a planet of mass _M_ ($M \gg m$). A slight external impulse causes it to oscillate
