@@ -302,6 +302,170 @@ int main() {
 }
 ```
 
+## Coroutine Frame Lifetime and the `final_suspend` Decision
+
+The coroutine frame is heap-allocated (unless the compiler can prove it doesn't escape) and its
+lifetime is managed by `std::coroutine_handle` [N4950 §8.5.1]. When a coroutine reaches the final
+suspend point, the behavior of `final_suspend` determines whether the frame is automatically
+destroyed or must be destroyed manually:
+
+- **`std::suspend_always`**: The coroutine suspends at the final point. The caller (or resumer)
+  **must** call `handle.destroy()` to free the frame. This is required for any coroutine whose
+  return type needs to observe the coroutine's result after completion (e.g., a `Task` that carries
+  a value).
+
+- **`std::suspend_never`**: The coroutine's frame is destroyed immediately upon reaching the final
+  suspend point. The handle becomes invalid. This is used for fire-and-forget coroutines.
+
+```cpp
+#include <coroutine>
+#include <iostream>
+#include <utility>
+
+struct ScopedTask {
+    struct promise_type {
+        std::suspend_always initial_suspend() noexcept { return {}; }
+        std::suspend_never final_suspend() noexcept { return {}; }
+        ScopedTask get_return_object() {
+            return ScopedTask{std::coroutine_handle<promise_type>::from_promise(*this)};
+        }
+        void return_void() {}
+        void unhandled_exception() {}
+    };
+
+    std::coroutine_handle<promise_type> handle;
+
+    explicit ScopedTask(std::coroutine_handle<promise_type> h) : handle(h) {}
+    ~ScopedTask() {
+        if (handle) handle.destroy();
+    }
+    ScopedTask(const ScopedTask&) = delete;
+    ScopedTask& operator=(const ScopedTask&) = delete;
+};
+
+ScopedTask fire_and_forget() {
+    std::cout << "running...\n";
+    co_await std::suspend_always{};
+    std::cout << "resumed\n";
+}
+
+int main() {
+    ScopedTask t = fire_and_forget();
+    t.handle.resume();
+    // After resume: coroutine reaches final_suspend which is suspend_never,
+    // so the frame is destroyed automatically.
+    // handle is now invalid — do NOT call handle.destroy() again.
+    // ~ScopedTask checks handle, but the handle is already done.
+}
+```
+
+:::warning If `final_suspend` returns `std::suspend_never`, the coroutine frame is destroyed at the
+final suspend point. Calling `handle.destroy()` afterward on a dangling handle is **undefined
+behavior**. If `final_suspend` returns `std::suspend_always`, you **must** eventually call
+`handle.destroy()` or the frame leaks. :::
+
+## Symmetric Transfer and `await_suspend` Returning a Handle
+
+When `await_suspend` returns a `coroutine_handle&lt;Z>`, the calling coroutine is suspended and the
+returned handle is resumed immediately — without unwinding the stack back to the caller. This is
+**symmetric transfer** [N4950 §8.5.5]. It is the foundational mechanism for building coroutine
+chains without stack overflow:
+
+```cpp
+#include <coroutine>
+#include <iostream>
+
+struct SymmetricTask {
+    struct promise_type {
+        std::suspend_always initial_suspend() noexcept { return {}; }
+        std::suspend_always final_suspend() noexcept { return {}; }
+        void return_void() {}
+        void unhandled_exception() {}
+
+        SymmetricTask get_return_object() {
+            return SymmetricTask{std::coroutine_handle<promise_type>::from_promise(*this)};
+        }
+
+        struct FinalAwaiter {
+            bool await_ready() const noexcept { return false; }
+
+            std::coroutine_handle<> await_suspend(
+                std::coroutine_handle<promise_type> h) noexcept {
+                return h.promise().continuation_;
+            }
+
+            void await_resume() const noexcept {}
+        };
+
+        std::coroutine_handle<> continuation_;
+    };
+
+    std::coroutine_handle<promise_type> handle;
+    std::coroutine_handle<> continuation_{};
+
+    explicit SymmetricTask(std::coroutine_handle<promise_type> h) : handle(h) {}
+
+    struct Awaiter {
+        SymmetricTask& task;
+        bool await_ready() { return false; }
+
+        std::coroutine_handle<> await_suspend(std::coroutine_handle<> caller) {
+            task.continuation_ = caller;
+            return task.handle;
+        }
+
+        void await_resume() {}
+    };
+};
+
+SymmetricTask inner_a() {
+    std::cout << "inner_a start\n";
+    co_await std::suspend_always{};
+    std::cout << "inner_a end\n";
+}
+
+SymmetricTask outer_b() {
+    std::cout << "outer_b start\n";
+    auto a = inner_a();
+    SymmetricTask::Awaiter aw{a};
+    co_await aw;
+    std::cout << "outer_b end\n";
+}
+
+int main() {
+    auto task = outer_b();
+    task.handle.resume();
+    task.handle.resume();
+    task.handle.destroy();
+}
+```
+
+Symmetric transfer avoids stack growth when coroutines await each other in a chain. Without it, each
+`co_await` of a nested coroutine would grow the stack by one frame, leading to stack overflow for
+deep chains. With symmetric transfer, the resumption is a tail call at the ABI level.
+
+## Common Pitfalls
+
+**1. Dangling coroutine handles:** The most common bug is forgetting to `destroy()` a coroutine
+handle. If `final_suspend` returns `std::suspend_always` and the handle is never destroyed, the
+frame leaks. Always pair handle creation with a destruction guarantee (RAII wrapper, scope guard, or
+`.destroy()` in the destructor of the return type).
+
+**2. Accessing the promise after `final_suspend` with `suspend_never`:** If `final_suspend` returns
+`std::suspend_never`, the frame (including the promise) is destroyed at the final suspend point. Any
+access to `handle.promise()` afterward is undefined behavior.
+
+**3. Exception propagation:** If an exception escapes the coroutine body, `unhandled_exception()` is
+called on the promise. The default behavior (inheriting from `std::exception_ptr` storage) is to
+capture the exception. If `unhandled_exception` does nothing, the exception is silently swallowed.
+Always either rethrow, store, or terminate in `unhandled_exception`.
+
+**4. `await_transform` hides the original type:** When the promise defines `await_transform`, every
+`co_await` expression passes through it. If you intend to `co_await` a type that does not match any
+`await_transform` overload, the compiler will error — the raw expression is never used as the
+awaiter. Provide a generic fallback `template&lt;typename T> auto await_transform(T&& t)` to forward
+unsupported types unchanged.
+
 ## See Also
 
 - [Stackless Coroutine Frames and Heap Allocation](./1_coroutine_frames.md)

@@ -318,6 +318,160 @@ struct Wrong : Base {
 :::tip Best Practice Always use `override` on every function intended to override a base-class
 virtual function. This eliminates an entire class of bugs caused by signature mismatches. :::
 
+## 1.7 Virtual Dispatch During Construction and Destruction
+
+A critical and often surprising rule: **virtual calls from constructors and destructors do not
+dispatch dynamically** [N4950 §11.9.3]. During base class construction, the derived portion of the
+object has not yet been constructed, so the vptr points to the base class's vtable. Any virtual call
+resolves to the base class's version, even if the derived class overrides it:
+
+```cpp
+#include <iostream>
+
+struct Base {
+    Base() {
+        std::cout << "Base ctor: ";
+        do_work();
+    }
+    virtual ~Base() {
+        std::cout << "Base dtor: ";
+        do_work();
+    }
+    virtual void do_work() { std::cout << "Base::do_work\n"; }
+};
+
+struct Derived : Base {
+    int data_{42};
+
+    Derived() {
+        std::cout << "Derived ctor: ";
+        do_work();
+    }
+    ~Derived() override {
+        std::cout << "Derived dtor: ";
+        do_work();
+    }
+    void do_work() override {
+        std::cout << "Derived::do_work data_=" << data_ << "\n";
+    }
+};
+
+int main() {
+    Derived d;
+    std::cout << "---\n";
+}
+```
+
+Output:
+
+```
+Base ctor: Base::do_work
+Derived ctor: Derived::do_work data_=42
+Derived dtor: Derived::do_work data_=42
+Base dtor: Base::do_work
+```
+
+The vptr transitions through three states during `Derived` object construction:
+
+1. During `Base` construction: vptr points to `Base::vtable` → `do_work()` calls `Base::do_work`
+2. During `Derived` construction: vptr points to `Derived::vtable` → `do_work()` calls
+   `Derived::do_work`
+3. During `Derived` destruction: vptr is reset to `Base::vtable` → `do_work()` calls `Base::do_work`
+
+:::warning Calling a pure virtual function from a constructor or destructor is **undefined
+behavior** [N4950 §11.9.3]. The pure virtual function has no definition to dispatch to (or the
+definition is not called). Some implementations call the pure virtual handler and terminate the
+program. :::
+
+## 1.8 NVI (Non-Virtual Interface) Pattern
+
+The **Non-Virtual Interface** pattern makes all public member functions non-virtual and delegates to
+private virtual functions. This provides a stable public API while allowing customization through
+virtual dispatch:
+
+```cpp
+#include <iostream>
+#include <stdexcept>
+
+struct StreamProcessor {
+    // Public non-virtual interface: invariant checking happens here
+    void process(const std::string& data) {
+        if (data.empty()) {
+            throw std::invalid_argument("empty data");
+        }
+        std::cout << "pre-processing: " << data.size() << " bytes\n";
+        do_process(data);
+        std::cout << "post-processing complete\n";
+    }
+
+    virtual ~StreamProcessor() = default;
+
+private:
+    // Private virtual hook: derived classes override this
+    virtual void do_process(const std::string& data) = 0;
+};
+
+struct JsonProcessor : StreamProcessor {
+private:
+    void do_process(const std::string& data) override {
+        std::cout << "JSON processing: " << data << "\n";
+    }
+};
+
+struct XmlProcessor : StreamProcessor {
+private:
+    void do_process(const std::string& data) override {
+        std::cout << "XML processing: " << data << "\n";
+    }
+};
+
+int main() {
+    JsonProcessor jp;
+    XmlProcessor xp;
+    jp.process(R"({"key": "value"})");
+    xp.process("<root><item/></root>");
+}
+```
+
+The NVI pattern ensures that:
+
+- Pre-conditions and post-conditions are checked in the non-virtual wrapper (cannot be bypassed by a
+  derived class override).
+- The virtual function signature is a stable extension point.
+- Template Method is easier to implement since the non-virtual function controls the algorithm
+  skeleton.
+
+## Common Pitfalls
+
+**1. Forgetting `override`:** Without `override`, a misspelled function name or wrong parameter type
+silently creates a new function that **hides** (not overrides) the base version. Always use
+`override` on every function intended to be virtual dispatch.
+
+**2. Virtual functions in constructors/destructors:** As shown in section 1.7, virtual dispatch does
+not work as expected during construction and destruction. Never call virtual functions that rely on
+derived-class state from a base class constructor or destructor.
+
+**3. Diamond inheritance without `virtual`:** If two intermediate classes both inherit from the same
+base non-virtually, the most-derived class contains two copies of the base. This causes ambiguity
+when calling base-class functions. Use virtual inheritance when a diamond is intended, or
+restructure the hierarchy.
+
+**4. Pure virtual function with body:** A pure virtual function (`= 0`) **can** have a definition.
+The class is still abstract, but derived classes can call `Base::f()` explicitly. This is useful for
+providing shared default behavior that derived classes can opt into:
+
+```cpp
+struct Base {
+    virtual void f() = 0;
+};
+
+void Base::f() { std::cout << "Base::f default\n"; }
+
+struct Derived : Base {
+    void f() override { Base::f(); std::cout << "Derived::f\n"; }
+};
+```
+
 ## See Also
 
 - [Inheritance, Object Slicing, and Virtual Destructors](./2_inheritance_slicing.md)

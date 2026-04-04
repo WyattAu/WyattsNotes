@@ -313,6 +313,156 @@ private:
 convention borrowed from COM and C#. It is not mandated by the Standard. Alternatives include
 suffixes like `-able` (e.g., `Serializable`). :::
 
+## 2.6 Virtual Inheritance and the Diamond Problem
+
+When two base classes each inherit from the same base, a **diamond inheritance** pattern arises.
+Without **virtual inheritance**, the derived object contains **two separate copies** of the common
+base subobject, leading to ambiguity [N4950 §11.7.1]:
+
+```cpp
+#include <iostream>
+
+struct Device {
+    int id{};
+    void init() { std::cout << "Device::init id=" << id << "\n"; }
+};
+
+struct Printer : Device {
+    void print() { std::cout << "printing\n"; }
+};
+
+struct Scanner : Device {
+    void scan() { std::cout << "scanning\n"; }
+};
+
+// WITHOUT virtual inheritance: two Device subobjects
+struct PrintScanner_Bad : Printer, Scanner {
+};
+
+// WITH virtual inheritance: ONE shared Device subobject
+struct Printer_V : virtual Device {
+    void print() { std::cout << "printing\n"; }
+};
+
+struct Scanner_V : virtual Device {
+    void scan() { std::cout << "scanning\n"; }
+};
+
+struct PrintScanner_Good : Printer_V, Scanner_V {
+};
+
+int main() {
+    PrintScanner_Bad ps_bad;
+    // ps_bad.id = 42;  // ERROR: ambiguous — which Device::id?
+    ps_bad.Printer::id = 1;
+    ps_bad.Scanner::id = 2;
+    std::cout << "Printer::id=" << ps_bad.Printer::id
+              << " Scanner::id=" << ps_bad.Scanner::id << "\n";
+
+    PrintScanner_Good ps_good;
+    ps_good.id = 42;  // OK: single shared Device subobject
+    ps_good.init();
+    ps_good.print();
+    ps_good.scan();
+}
+```
+
+Output:
+
+```
+Printer::id=1 Scanner::id=2
+Device::init id=42
+printing
+scanning
+```
+
+With virtual inheritance, `Device` becomes a **virtual base**, and the most-derived class
+(`PrintScanner_Good`) is responsible for constructing it. The compiler generates a hidden vbase
+pointer (stored in the vtable or as a separate vptr) to locate the shared `Device` subobject at
+runtime. This adds one level of indirection to every access of a virtual base member [N4950
+§11.7.1].
+
+:::warning Virtual inheritance adds runtime cost: accessing members of a virtual base requires an
+extra indirection through the vbase offset table. Construction order is also affected — virtual
+bases are constructed by the most-derived class, before any non-virtual base classes [N4950
+§11.9.3]. Avoid virtual inheritance unless the diamond pattern is genuinely needed. :::
+
+## 2.7 `override`, `final`, and Name Hiding
+
+A derived class member function with the **same name** as a base class function **hides** all base
+class overloads with that name, regardless of signature [N4950 §11.8.3]. This is one of the most
+insidious bugs in C++ inheritance:
+
+```cpp
+#include <iostream>
+
+struct Base {
+    virtual void process(int x) { std::cout << "Base::process(int): " << x << "\n"; }
+    virtual void process(double x) { std::cout << "Base::process(double): " << x << "\n"; }
+    virtual ~Base() = default;
+};
+
+struct Derived_Wrong : Base {
+    // This HIDES both Base::process overloads — does NOT override either
+    void process(int x) { std::cout << "Derived::process(int): " << x << "\n"; }
+};
+
+struct Derived_Right : Base {
+    // 'override' verifies this matches a base class virtual function
+    void process(int x) override { std::cout << "Derived_Right::process(int): " << x << "\n"; }
+
+    // Bring remaining base overloads into scope
+    using Base::process;
+};
+
+int main() {
+    Derived_Wrong dw;
+    dw.process(1);      // OK: calls Derived_Wrong::process(int)
+    // dw.process(1.5);  // ERROR: Base::process(double) is hidden!
+
+    Derived_Right dr;
+    dr.process(1);      // Calls Derived_Right::process(int)
+    dr.process(1.5);    // OK: 'using Base::process' makes it visible
+}
+```
+
+The `using Base::process;` declaration in `Derived_Right` un-hides the remaining overloads from
+`Base`. Without it, only the derived-class version is visible in overload resolution. This hiding
+applies even when the derived function is `virtual` and does override one specific overload — all
+other overloads are still hidden.
+
+:::tip Best Practice When overriding a base class function that participates in overloading, always
+add `using Base::function_name;` in the derived class to avoid accidentally hiding sibling
+overloads. The `override` keyword catches signature mismatches but does not prevent hiding. :::
+
+## Common Pitfalls
+
+**1. Slicing through container value semantics:** `std::vector&lt;Base>` stores `Base` objects.
+Pushing a `Derived` object slices it. Use `std::vector&lt;std::unique_ptr&lt;Base>>` or
+`std::vector&lt;Base*>` to store polymorphic objects.
+
+**2. Copying polymorphic objects:** The compiler-generated copy constructor performs a memberwise
+copy of the static type. To correctly copy a polymorphic object through a base pointer, you need a
+**virtual `clone()` method** (the Prototype pattern):
+
+```cpp
+struct Cloneable {
+    virtual ~Cloneable() = default;
+    virtual std::unique_ptr<Cloneable> clone() const = 0;
+};
+
+struct Concrete : Cloneable {
+    int data{};
+    std::unique_ptr<Cloneable> clone() const override {
+        return std::make_unique<Concrete>(*this);
+    }
+};
+```
+
+**3. Deleting through a non-virtual destructor:** This is undefined behavior per [N4950 §11.4.7].
+The base destructor does not run, leaking resources. Always declare `virtual ~Base() = default;` on
+any class intended as a polymorphic base.
+
 ## See Also
 
 - [Virtual Functions and vtables](./1_vtables.md)

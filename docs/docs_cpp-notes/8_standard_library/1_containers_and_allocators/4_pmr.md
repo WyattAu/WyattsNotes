@@ -335,6 +335,163 @@ int main() {
 This pattern allows the same `Parser` class to be used in different performance contexts without
 modification, simply by injecting a different memory resource.
 
+### Custom Memory Resources: Tracking Allocations
+
+The `memory_resource` interface makes it straightforward to write custom resources for debugging,
+accounting, or enforcing allocation policies. The following implements a tracking allocator that
+logs every allocation and detects leaks:
+
+```cpp
+#include <memory_resource>
+#include <iostream>
+#include <cstdlib>
+#include <cstddef>
+#include <string>
+
+class TrackingResource : public std::pmr::memory_resource {
+    std::pmr::memory_resource* upstream_;
+    std::size_t total_allocated_{0};
+    std::size_t total_deallocated_{0};
+    std::size_t allocation_count_{0};
+    std::size_t active_count_{0};
+    std::string name_;
+
+    void* do_allocate(std::size_t bytes, std::size_t alignment) override {
+        void* ptr = upstream_->allocate(bytes, alignment);
+        total_allocated_ += bytes;
+        ++allocation_count_;
+        ++active_count_;
+        std::cout << "[" << name_ << "] allocate " << bytes
+                  << " bytes (align=" << alignment << ") -> " << ptr
+                  << " (active=" << active_count_ << ")\n";
+        return ptr;
+    }
+
+    void do_deallocate(void* p, std::size_t bytes, std::size_t alignment) override {
+        upstream_->deallocate(p, bytes, alignment);
+        total_deallocated_ += bytes;
+        --active_count_;
+        std::cout << "[" << name_ << "] deallocate " << bytes
+                  << " bytes (align=" << alignment << ") -> " << p
+                  << " (active=" << active_count_ << ")\n";
+    }
+
+    bool do_is_equal(const std::pmr::memory_resource& other) const noexcept override {
+        return this == &other;
+    }
+
+public:
+    explicit TrackingResource(
+        const std::string& name,
+        std::pmr::memory_resource* upstream = std::pmr::new_delete_resource()
+    ) : upstream_(upstream), name_(name) {}
+
+    ~TrackingResource() override {
+        std::cout << "[" << name_ << "] Summary:\n"
+                  << "  allocations: " << allocation_count_ << "\n"
+                  << "  leaked active: " << active_count_ << "\n"
+                  << "  total allocated: " << total_allocated_ << " bytes\n"
+                  << "  total deallocated: " << total_deallocated_ << " bytes\n";
+        if (active_count_ != 0) {
+            std::cout << "  *** WARNING: " << active_count_
+                      << " allocation(s) not freed! ***\n";
+        }
+    }
+
+    std::size_t active_count() const { return active_count_; }
+};
+
+int main() {
+    TrackingResource tracker("my-tracker");
+
+    std::pmr::vector<int> v(&tracker);
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.reserve(100);
+
+    std::cout << "vector size=" << v.size() << " capacity=" << v.capacity() << "\n";
+    v.clear();
+
+    // Intentional leak for demonstration:
+    // auto* leaked = tracker.allocate(64, alignof(std::max_align_t));
+    // (void)leaked;
+
+    std::cout << "tracker active: " << tracker.active_count() << "\n";
+}
+```
+
+This pattern is invaluable during development: wrap any resource with `TrackingResource` to get
+allocation/deallocation logs and leak detection without modifying the code that uses the containers.
+
+### `std::pmr::synchronized_pool_resource`: Thread-Safe Pool Allocation
+
+For multi-threaded contexts, `std::pmr::synchronized_pool_resource` [N4950 §23.10.4] provides the
+same pool-based allocation as `unsynchronized_pool_resource` but with internal synchronization
+(typically a mutex per pool). The trade-off is thread safety at the cost of higher per-allocation
+overhead:
+
+```cpp
+#include <memory_resource>
+#include <vector>
+#include <iostream>
+#include <thread>
+#include <mutex>
+
+std::mutex cout_mutex;
+
+void worker(int id, std::pmr::memory_resource* mr) {
+    std::pmr::vector<int> local_data(mr);
+    for (int i = 0; i < 1000; ++i) {
+        local_data.push_back(i * id);
+    }
+    std::lock_guard<std::mutex> lock(cout_mutex);
+    std::cout << "Thread " << id << ": " << local_data.size() << " elements\n";
+}
+
+int main() {
+    std::pmr::synchronized_pool_resource pool;
+
+    std::vector<std::thread> threads;
+    for (int i = 0; i < 4; ++i) {
+        threads.emplace_back(worker, i, &pool);
+    }
+
+    for (auto& t : threads) {
+        t.join();
+    }
+
+    std::cout << "All threads completed. Pool cleanup on destruction.\n";
+}
+```
+
+:::info The performance advantage of `synchronized_pool_resource` over `new_delete_resource()` in
+multi-threaded code comes from reduced contention: each thread typically allocates from its own
+thread-local pool chunk, and the global heap lock is only contended when a new chunk is needed. For
+single-threaded code, `unsynchronized_pool_resource` is strictly faster. :::
+
+### Common Pitfalls
+
+**1. `monotonic_buffer_resource` and dangling references:** Since individual `deallocate` calls are
+no-ops, destroying a container that allocated from a monotonic buffer does not free memory. If
+another object still holds a reference or pointer to memory from that destroyed container, the
+reference dangles. All objects using a `monotonic_buffer_resource` should share the same lifetime
+scope as the resource itself.
+
+**2. Buffer sizing for `monotonic_buffer_resource`:** If the initial buffer is too small, the
+resource falls back to the upstream allocator (typically `new_delete_resource`), negating the
+performance benefit. Profile actual allocation patterns and size the buffer accordingly. A common
+technique is to measure peak allocation during a trial run and use that plus a safety margin.
+
+**3. `polymorphic_allocator` is not a drop-in replacement for `std::allocator`:** PMR containers
+have a different type (`std::vector&lt;T, std::pmr::polymorphic_allocator&lt;T>>`) from standard
+containers (`std::vector&lt;T>`). They are not interchangeable in APIs that expect a specific
+allocator type. Design APIs to accept `memory_resource*` and construct PMR containers internally.
+
+**4. `null_memory_resource()` throws on every allocate:** This resource is useful for testing that
+code does not perform unexpected allocations, but will terminate with `std::bad_alloc` on any
+allocation attempt. Use it in unit tests to verify stack-only or no-heap-allocation code paths.
+
 ## See Also
 
 - [Sequence Containers](./1_sequence_containers.md)

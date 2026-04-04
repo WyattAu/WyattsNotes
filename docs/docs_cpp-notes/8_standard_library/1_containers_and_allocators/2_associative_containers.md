@@ -295,6 +295,129 @@ int main() {
 hash to the same bucket). If adversarial inputs are a concern, consider hash functions resistant to
 collision attacks, or use `std::map` for guaranteed $O(\log n)$ worst-case. :::
 
+### `std::map` Heterogeneous Lookup (C++14)
+
+By default, `std::map::find`, `std::map::count`, and `std::map::lower_bound` accept `const Key&` and
+require an exact key type match. If you want to look up a `std::string` key using a
+`std::string_view` without constructing a temporary `std::string`, you need a **transparent
+comparator** [N4950 §22.4.4.1]. The standard library provides `std::less&lt;void>` (C++14), which
+enables heterogeneous lookup when used as the comparator:
+
+```cpp
+#include <map>
+#include <string>
+#include <string_view>
+#include <iostream>
+
+int main() {
+    // Transparent comparator enables heterogeneous lookup [N4950 §22.4.4.1]
+    std::map<std::string, int, std::less<>> m;
+    m["hello"] = 1;
+    m["world"] = 2;
+
+    // Lookup with string_view — no temporary std::string constructed
+    std::string_view sv = "hello";
+    auto it = m.find(sv);
+    if (it != m.end()) {
+        std::cout << "Found: " << it->first << " -> " << it->second << "\n";
+    }
+
+    // count, lower_bound, upper_bound, equal_range also support heterogeneous lookup
+    std::cout << "count(\"world\"): " << m.count("world") << "\n";
+}
+```
+
+The mechanism works because `std::less&lt;void>` deduces the argument types and invokes
+`operator&lt;` as `a &lt; b` where `a` and `b` may be different types, as long as the comparison is
+well-formed [N4950 §22.14.3]. Without `std::less&lt;void>`, calling `m.find(sv)` would construct a
+temporary `std::string` from the `std::string_view`, incurring a heap allocation. With heterogeneous
+lookup, the comparison `sv &lt; "hello"` and `"hello" &lt; sv` are both valid via
+`std::string::operator&lt;` accepting `std::string_view` [N4950 §23.4.5.2.2].
+
+The same transparent comparator technique applies to `std::set`, `std::multimap`, and
+`std::multiset`.
+
+### Node Extraction and Insertion: `extract` / `insert` (C++17)
+
+C++17 introduced node handles and the `extract()` / `insert()` API for associative containers [N4950
+§22.4.4.4]. A **node handle** (`std::map::node_type`) owns an extracted element including its key
+and value. This enables moving elements between containers **without copying or reallocating**:
+
+```cpp
+#include <map>
+#include <iostream>
+#include <string>
+
+int main() {
+    std::map<std::string, int> src;
+    src["alpha"] = 1;
+    src["bravo"] = 2;
+    src["charlie"] = 3;
+
+    std::map<std::string, int> dst;
+    dst["delta"] = 4;
+
+    // Extract a node from src — no copy, no deallocation
+    auto nh = src.extract("bravo");
+
+    if (!nh.empty()) {
+        std::cout << "Extracted: " << nh.key() << " -> " << nh.mapped() << "\n";
+
+        // Modify the key before insertion (unique to extract/insert)
+        nh.key() = "echo";
+        nh.mapped() = 20;
+
+        // Insert into dst — transfers ownership, no allocation
+        dst.insert(std::move(nh));
+    }
+
+    std::cout << "src: ";
+    for (const auto& [k, v] : src) std::cout << k << " ";
+    std::cout << "\n";
+
+    std::cout << "dst: ";
+    for (const auto& [k, v] : dst) std::cout << k << "(" << v << ") ";
+    std::cout << "\n";
+}
+```
+
+Output:
+
+```
+Extracted: bravo -> 2
+src: alpha charlie
+dst: delta echo(20)
+```
+
+This API is critical for performance-sensitive code that needs to transfer elements between maps
+(such as sharding or repartitioning), because the alternative — erase from one map, then emplace
+into another — involves a redundant deallocation and allocation. With `extract`/`insert`, the node's
+heap memory is simply reparented [N4950 §22.4.4.4].
+
+### Common Pitfalls with Associative Containers
+
+**1. Mutable keys in `std::set` and `std::map`:** The keys of ordered associative containers must
+remain ordered at all times. The iterator types for `std::set` yield `const Key&`, preventing direct
+mutation. However, `std::map` iterators yield `std::pair&lt;const Key, T>&`, and the value type is
+`std::pair&lt;const Key, T>` — the key is `const`. This is by design: mutating a key violates the
+ordering invariant and causes undefined behavior [N4950 §22.4.4.1].
+
+**2. `operator[]` default-inserts:** `m[key]` inserts a default-constructed value if `key` is
+absent, then returns a reference to it. This is surprising when used in a read-only context — it
+silently modifies the container. Use `m.at(key)` (throws on miss) or `m.find(key)` (returns
+iterator) for lookups that should not modify the map.
+
+**3. Reference stability in `std::unordered_map`:** Rehashing invalidates all iterators, pointers,
+and references. If you store a reference or pointer to a value and then insert enough elements to
+trigger rehash, that reference dangles. Use `reserve()` before inserting to prevent rehashing, or
+store indices/keys instead of raw pointers.
+
+**4. Hash collision attacks on `std::unordered_map`:** The default `std::hash` for strings is
+deterministic but not cryptographically secure. An adversary who can control keys can craft inputs
+that all hash to the same bucket, degrading $O(1)$ lookup to $O(n)$. In security-sensitive contexts
+(e.g., HTTP header parsing), use a hash-seeded or randomized hash function, or switch to `std::map`
+for guaranteed $O(\log n)$ worst-case.
+
 ## See Also
 
 - [Sequence Containers](./1_sequence_containers.md)

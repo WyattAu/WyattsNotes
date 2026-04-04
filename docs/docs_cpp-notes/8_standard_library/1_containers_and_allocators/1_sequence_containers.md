@@ -312,6 +312,139 @@ int main() {
 }
 ```
 
+### `std::vector&lt;bool>`: A Specialization That Is Not a Container
+
+`std::vector&lt;bool>` is a **partial specialization** of `std::vector` that stores one bit per
+element instead of one byte [N4950 §22.3.11.2]. It packs bits into `unsigned long` words, reducing
+memory usage by 8x but introducing several surprising behaviors:
+
+```cpp
+#include <vector>
+#include <iostream>
+#include <cassert>
+
+int main() {
+    std::vector<bool> vb = {true, false, true, true, false};
+
+    // operator[] returns a PROXY object, not bool&
+    auto ref = vb[0];
+    (void)ref;
+
+    // The following does NOT compile:
+    // bool& bad = vb[0];  // error: cannot convert proxy to bool&
+
+    // You CAN assign through the proxy
+    vb[1] = true;
+
+    // But taking the address of an element is not straightforward:
+    // bool* p = &vb[0];  // error: address of proxy, not a real bool
+
+    // Reference invalidation on swap:
+    std::vector<bool> other = {false, true, false};
+    vb.swap(other);
+    // After swap, any saved references/proxies from 'vb' refer to 'other' elements
+}
+```
+
+The proxy reference (`std::vector&lt;bool>::reference`) is a library-defined class that overloads
+`operator bool`, `operator=`, and `operator~`. This causes problems with generic code that assumes
+`T&` semantics from `operator[]` [N4950 §22.3.11.2]. Specifically, `std::vector&lt;bool>` does not
+satisfy the container requirements in [N4950 §22.2] because its elements are not addressable.
+
+:::warning `std::vector&lt;bool>` is widely regarded as a design mistake. Scott Meyers' "Effective
+STL" (Item 18) recommends using `std::deque&lt;bool>` or `boost::dynamic_bitset` instead. For new
+code, consider `std::vector&lt;uint8_t>` if you need addressable elements, or a dedicated bitset
+library if you need compact storage. :::
+
+### `std::vector` Exception Safety: Strong Guarantee for `push_back`
+
+The C++ Standard provides a strong exception-safety guarantee for `std::vector::push_back` [N4950
+§22.3.11.5]: if `push_back` throws (either because the element's copy/move constructor throws or
+because memory allocation fails), the vector's state is rolled back to its prior state — no elements
+are lost and the vector remains valid.
+
+This guarantee is achieved by allocating the new buffer **before** moving elements into it. If any
+element move/copy throws during the reallocation, the new buffer is deallocated and the original
+buffer remains intact:
+
+```cpp
+#include <vector>
+#include <iostream>
+
+struct ThrowingCopy {
+    int value;
+    static int copy_count;
+    static int throw_after;
+
+    ThrowingCopy(int v) : value(v) {}
+    ThrowingCopy(const ThrowingCopy& other) : value(other.value) {
+        if (++copy_count >= throw_after) {
+            throw std::runtime_error("copy limit reached");
+        }
+    }
+};
+
+int ThrowingCopy::copy_count = 0;
+int ThrowingCopy::throw_after = 5;
+
+int main() {
+    std::vector<ThrowingCopy> v;
+    v.reserve(2);
+    v.emplace_back(1);
+    v.emplace_back(2);
+
+    // This push_back will trigger reallocation (capacity=2, size=2)
+    // The reallocation copies existing elements to new buffer.
+    // If copy throws, the vector remains valid with its original elements.
+    ThrowingCopy::copy_count = 0;
+    ThrowingCopy::throw_after = 1;  // Throw on first copy during realloc
+
+    try {
+        v.push_back(ThrowingCopy(3));
+    } catch (const std::runtime_error& e) {
+        std::cout << "Caught: " << e.what() << "\n";
+    }
+
+    // Vector is still valid — strong guarantee
+    std::cout << "Vector size after exception: " << v.size() << "\n";
+    for (const auto& tc : v) {
+        std::cout << "  value=" << tc.value << "\n";
+    }
+}
+```
+
+Note: If `T`'s move constructor is `noexcept`, the vector will use move instead of copy during
+reallocation, which is both faster and less likely to throw. This is why `noexcept` move
+constructors are critical for performance-critical types stored in vectors.
+
+### Small Buffer Optimization (SBO) and `std::string`
+
+While `std::vector` does not perform SBO (its elements are always on the heap once allocated),
+`std::string` typically implements **Small String Optimization**: short strings (usually &lt; 15-23
+bytes depending on implementation) are stored inline in the string object itself, avoiding heap
+allocation [N4950 §23.4.5]. This is an implementation detail, not mandated by the Standard:
+
+```cpp
+#include <string>
+#include <iostream>
+
+int main() {
+    std::string s1 = "hi";          // Likely SBO: no heap allocation
+    std::string s2(100, 'x');       // Too large for SBO: heap allocation
+
+    std::cout << "sizeof(std::string) = " << sizeof(std::string) << "\n";
+    std::cout << "s1 capacity = " << s1.capacity() << "\n";
+    std::cout << "s2 capacity = " << s2.capacity() << "\n";
+    // Typical 64-bit output:
+    // sizeof(std::string) = 32
+    // s1 capacity = 15
+    // s2 capacity = 100
+}
+```
+
+The capacity of a default-constructed or short string reveals the SBO threshold. libstdc++ uses 15
+bytes, libc++ uses 22 bytes, and MSVC uses 15 bytes on 64-bit platforms.
+
 ## See Also
 
 - [Associative and Unordered Containers](./2_associative_containers.md)

@@ -321,6 +321,162 @@ int main() {
 :::tip Prefer Prefix Prefix increment avoids creating a temporary copy. In performance-sensitive
 code, prefer `++it` over `it++` for iterators and counters. :::
 
+## 4.7 Stream Insertion and Extraction Operators
+
+The stream operators `operator&lt;&lt;` and `operator&gt;&gt;` must be implemented as **non-member
+non-friend functions** (or non-member friends when accessing private state) because the left operand
+is `std::ostream`/`std::istream`, which you cannot modify [N4950 §30.4.2]:
+
+```cpp
+#include <iostream>
+#include <sstream>
+#include <iomanip>
+
+class Vec2 {
+    double x_, y_;
+public:
+    Vec2(double x = 0, double y = 0) : x_(x), y_(y) {}
+    double x() const { return x_; }
+    double y() const { return y_; }
+};
+
+std::ostream& operator<<(std::ostream& os, const Vec2& v) {
+    os << std::fixed << std::setprecision(2) << "(" << v.x() << ", " << v.y() << ")";
+    return os;
+}
+
+std::istream& operator>>(std::istream& is, Vec2& v) {
+    double x, y;
+    char c1, c2, c3;
+    if (is >> c1 >> x >> c2 >> y >> c3) {
+        if (c1 == '(' && c2 == ',' && c3 == ')') {
+            v = Vec2(x, y);
+        } else {
+            is.setstate(std::ios::failbit);
+        }
+    }
+    return is;
+}
+
+int main() {
+    Vec2 v(3.14, 2.71);
+    std::cout << "v = " << v << "\n";
+
+    std::istringstream iss("(1.5, 2.5)");
+    Vec2 parsed;
+    iss >> parsed;
+    std::cout << "parsed = " << parsed << "\n";
+
+    std::cout << "round-trip: " << (iss ? "OK" : "FAIL") << "\n";
+}
+```
+
+Key conventions:
+
+- Return `std::ostream&` / `std::istream&` by reference to enable chaining:
+  `os &lt;&lt; a &lt;&lt; b`.
+- On parse failure, set the stream's failbit via `is.setstate(std::ios::failbit)`. Do **not** throw
+  from stream operators — the stream error state mechanism handles this.
+- Format consistently so that `operator&gt;&gt;` can round-trip the output of `operator&lt;&lt;`.
+
+## 4.8 Conversion Operators and the `explicit` Specifier
+
+A **conversion operator** defines an implicit conversion from the class type to another type [N4950
+§11.4.5]. Like single-argument constructors, conversion operators can cause surprising implicit
+conversions. The `explicit` keyword prevents this [N4950 §11.4.5.2]:
+
+```cpp
+#include <iostream>
+
+class Fraction {
+    int num_, den_;
+public:
+    Fraction(int n, int d) : num_(n), den_(d) {}
+
+    // Implicit conversion to double — potentially dangerous
+    // operator double() const { return static_cast<double>(num_) / den_; }
+
+    // Explicit conversion: requires static_cast<Fraction>(expr)
+    explicit operator double() const { return static_cast<double>(num_) / den_; }
+
+    int numerator() const { return num_; }
+    int denominator() const { return den_; }
+};
+
+void process(double d) {
+    std::cout << "process(" << d << ")\n";
+}
+
+int main() {
+    Fraction f(3, 4);
+
+    // process(f);            // error: explicit conversion operator
+    process(static_cast<double>(f));  // OK: explicit cast
+
+    // Contextual conversion to bool works even with explicit [N4950 §11.4.5.2]
+    if (f) {
+        std::cout << "f is truthy (non-zero)\n";
+    }
+}
+```
+
+The `explicit` specifier on a conversion operator prevents it from participating in implicit
+conversions **except** in contextual boolean conversions (conditions in `if`, `while`, `for`, `!`,
+`&&`, `||`, and the ternary operator) [N4950 §11.4.5.2]. This is why `explicit operator bool()` is
+the standard pattern for making objects conditionally testable without enabling surprising implicit
+conversions to `int` or `double`.
+
+## 4.9 The Spaceship Operator (`operator<=>`) and Automatic Rewrites
+
+C++20 introduced the three-way comparison operator `operator&lt;=>` [N4950 §7.6.8]. When a class
+defines `operator&lt;=>` as defaulted, the compiler automatically generates `==`, `!=`, `&lt;`,
+`&lt;=`, `&gt;`, and `&gt;=` by rewiring to the spaceship operator. The return type determines the
+comparison category:
+
+| Return type             | Category         | Meaning                            |
+| ----------------------- | ---------------- | ---------------------------------- |
+| `std::strong_ordering`  | Total ordering   | Distinct values always comparable  |
+| `std::weak_ordering`    | Weak ordering    | Equivalent values may not be equal |
+| `std::partial_ordering` | Partial ordering | Some pairs incomparable            |
+
+```cpp
+#include <compare>
+#include <iostream>
+
+struct Version {
+    int major, minor, patch;
+
+    auto operator<=>(const Version&) const = default;
+};
+
+int main() {
+    Version v1{2, 1, 0};
+    Version v2{2, 0, 5};
+
+    std::cout << "v1 == v2: " << (v1 == v2) << "\n";
+    std::cout << "v1 > v2:  " << (v1 > v2) << "\n";
+    std::cout << "v1 <= v2: " << (v1 <= v2) << "\n";
+}
+```
+
+The default `operator&lt;=>` performs lexicographic comparison of base classes and then non-static
+data members in declaration order [N4950 §7.6.8]. Combined with `operator==` being defaulted
+independently, this provides a complete comparison suite with zero boilerplate.
+
+## Common Pitfalls
+
+**1. Overloading `operator&&` and `operator||`:** These operators lose short-circuit evaluation when
+overloaded. The Standard evaluates both operands before calling the overloaded operator. For custom
+boolean logic, provide named methods (e.g., `logical_and()`) instead of overloading these operators.
+
+**2. Returning by value from `operator+`:** Binary arithmetic operators should return a new object
+by value (not by reference). Returning a reference to a temporary is undefined behavior. The
+compound assignment operators (`+=`, `-=`) should return `*this` by reference.
+
+**3. `operator[]` bounds checking:** The Standard `operator[]` for `std::vector` and `std::map` does
+**not** perform bounds checking — undefined behavior on out-of-range access. Use `at()` for checked
+access, or implement bounds checking in your own `operator[]`.
+
 ## See Also
 
 - [Special Member Function Generation Rules](./3_special_member_functions.md)

@@ -311,6 +311,150 @@ for small, stable type hierarchies. However, adding a new derived type requires 
 existing types, and adding a new type doesn't modify existing visitors (it only requires extending
 the visitor interface). :::
 
+## 4.6 `dynamic_cast` with Multiple and Virtual Inheritance
+
+When multiple or virtual inheritance is involved, `dynamic_cast` performs a more complex traversal
+of the class hierarchy. The Itanium C++ ABI stores base-to-derived offset information in the vtable
+(through `typeinfo` and base class offset tables), and `dynamic_cast` walks these structures to
+determine whether a cast is valid and to compute the pointer adjustment.
+
+**Cross-cast (casting across sibling branches):** A `dynamic_cast` from one base to another base
+within the same derived object (a "cross-cast") is valid only when both bases are accessible and the
+derived object actually exists. This requires the object to be polymorphic:
+
+```cpp
+#include <iostream>
+
+struct InterfaceA {
+    virtual ~InterfaceA() = default;
+    virtual void a() const { std::cout << "A\n"; }
+};
+
+struct InterfaceB {
+    virtual ~InterfaceB() = default;
+    virtual void b() const { std::cout << "B\n"; }
+};
+
+struct Impl : InterfaceA, InterfaceB {
+    void a() const override { std::cout << "Impl::A\n"; }
+    void b() const override { std::cout << "Impl::B\n"; }
+};
+
+void cross_cast(InterfaceA* pa) {
+    // Cross-cast: from InterfaceA* to InterfaceB* within the same Impl object
+    if (auto* pb = dynamic_cast<InterfaceB*>(pa)) {
+        pb->b();
+    } else {
+        std::cout << "cross-cast failed\n";
+    }
+}
+
+int main() {
+    Impl obj;
+    cross_cast(&obj);
+}
+```
+
+Output:
+
+```
+Impl::B
+```
+
+The cross-cast succeeds because `dynamic_cast` inspects the `typeinfo` to determine that the actual
+object (`Impl`) derives from both `InterfaceA` and `InterfaceB`. The pointer is adjusted by the
+offset between the `InterfaceA` subobject and the `InterfaceB` subobject within `Impl`. For single
+inheritance, `dynamic_cast` is a single `typeinfo` pointer comparison — $O(1)$. For cross-casts and
+casts through virtual bases, the cost is $O(d)$ where $d$ is the depth of the DAG [N4950 §7.6.1.7].
+
+## 4.7 `dynamic_cast` to `void*`: The Most-Derived Type
+
+A `dynamic_cast&lt;void*>(expr)` where `expr` is a pointer to a polymorphic type yields a pointer to
+the **most-derived object** [N4950 §7.6.1.7]. This is useful for implementing `memcmp`-style
+identity checks or determining the root of an object's allocation:
+
+```cpp
+#include <iostream>
+
+struct Base { virtual ~Base() = default; };
+struct Derived : Base { int x{}; };
+struct MoreDerived : Derived { int y{}; };
+
+int main() {
+    MoreDerived md;
+    Base* bp = &md;
+    Derived* dp = &md;
+
+    void* v1 = dynamic_cast<void*>(bp);
+    void* v2 = dynamic_cast<void*>(dp);
+
+    std::cout << "&md = " << static_cast<void*>(&md) << "\n";
+    std::cout << "dynamic_cast<void*>(bp) = " << v1 << "\n";
+    std::cout << "dynamic_cast<void*>(dp) = " << v2 << "\n";
+
+    // All three pointers are the same: the address of the most-derived object
+    std::cout << "all same: " << (v1 == v2 && v1 == static_cast<void*>(&md)) << "\n";
+}
+```
+
+This cast is the only `dynamic_cast` that does not require the target type to be related to the
+source type. It is often used in debugging, custom memory management, and implementing
+`std::pointer_traits`.
+
+## 4.8 `typeid` on Null Pointers and Non-Polymorphic Types
+
+The behavior of `typeid` depends critically on whether the operand is a type or an expression:
+
+- **`typeid(T)`** (type operand): Always well-formed, returns `std::type_info` for the static type
+  `T`. Evaluated at compile time.
+- **`typeid(expr)`** (expression operand, `expr` is a dereferenced pointer to a polymorphic type):
+  Returns `std::type_info` for the **dynamic type** at runtime.
+- **`typeid(*p)` where `p` is null:** If `p` is a null pointer to a polymorphic type, `typeid(*p)`
+  throws `std::bad_typeid` [N4950 §7.6.1.8]. This is because the dereference would require accessing
+  the vtable, which does not exist for a null pointer.
+
+```cpp
+#include <iostream>
+#include <typeinfo>
+
+struct Poly { virtual ~Poly() = default; };
+struct NonPoly {};
+
+int main() {
+    Poly p;
+    NonPoly np;
+
+    std::cout << "typeid(Poly).name() = " << typeid(Poly).name() << "\n";
+    std::cout << "typeid(p).name() = " << typeid(p).name() << "\n";
+    std::cout << "typeid(NonPoly).name() = " << typeid(NonPoly).name() << "\n";
+
+    Poly* null_p = nullptr;
+    try {
+        (void)typeid(*null_p);
+    } catch (const std::bad_typeid& e) {
+        std::cout << "bad_typeid caught: " << e.what() << "\n";
+    }
+}
+```
+
+## Common Pitfalls
+
+**1. `dynamic_cast` on non-polymorphic types:** `dynamic_cast` requires the source type to be
+polymorphic (have at least one virtual function). Attempting `dynamic_cast&lt;Derived*>(base_ptr)`
+where `Base` has no virtual functions is a **compile-time error** [N4950 §7.6.1.7]. Use
+`static_cast` instead for downcasting non-polymorphic types (at your own risk — no runtime check).
+
+**2. `dynamic_cast` and undefined behavior:** The Standard specifies that if the object pointed to
+by the operand is not actually of the target type (or a type derived from it), the behavior of
+`dynamic_cast&lt;T*>(p)` is **implementation-defined** when `p` points to an incomplete type, and
+returns `nullptr` otherwise [N4950 §7.6.1.7]. Never rely on `dynamic_cast` succeeding with
+incomplete types.
+
+**3. Performance in tight loops:** Each `dynamic_cast` may traverse the class hierarchy and perform
+pointer comparisons. In a tight inner loop processing millions of objects, this overhead is
+measurable. If the type hierarchy is small and stable, consider a manual type tag (enum) or the
+Visitor pattern instead.
+
 ## See Also
 
 - [Virtual Functions and vtables](./1_vtables.md)

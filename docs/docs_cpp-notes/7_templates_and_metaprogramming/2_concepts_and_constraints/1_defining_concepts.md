@@ -316,6 +316,147 @@ concepts like `requires(T t) { t + t; }` --- this would accept `std::string` (wh
 concatenation) even if the algorithm is intended for arithmetic. Use the standard library concepts
 in `<concepts>` as building blocks whenever possible. :::
 
+## Abbreviated Function Templates
+
+C++20 introduced **abbreviated function templates** — the `auto` parameter syntax that implicitly
+generates a template parameter with an implicit `std::type_identity` constraint [N4950 §11.4.1]:
+
+```cpp
+#include <concepts>
+#include <iostream>
+#include <string>
+
+void print(auto&& value) {
+    std::cout << value << "\n";
+}
+
+void print_all(const auto&... args) {
+    (print(args), ...);
+}
+
+int main() {
+    print(42);
+    print(3.14);
+    print("hello");
+
+    print_all(1, "two", 3.0);
+}
+```
+
+This is equivalent to writing `template&lt;typename T> void print(T&& value)` but with less syntax.
+The parameter is deduced using the same rules as a function template. Constraints can be applied
+using a trailing requires-clause:
+
+```cpp
+#include <concepts>
+#include <iostream>
+
+void print_numeric(std::integral auto x) {
+    std::cout << "integral: " << x << "\n";
+}
+
+void print_numeric(std::floating_point auto x) {
+    std::cout << "floating: " << x << "\n";
+}
+
+int main() {
+    print_numeric(42);    // calls integral overload
+    print_numeric(3.14);  // calls floating_point overload
+}
+```
+
+Abbreviated function templates with constrained `auto` parameters participate in **partial
+ordering** (subsumption) just like constrained template parameters. The overload set above is
+well-ordered: `std::integral&lt;T>` and `std::floating_point&lt;T>` are mutually exclusive atomic
+constraints [N4950 §13.5.4].
+
+## Concept Refinement and the `requires` Clause Inside Concepts
+
+Concepts can be composed by **refinement** — a concept `C2` refines concept `C1` when every type
+satisfying `C2` also satisfies `C1`. This is expressed with a `requires` clause on the concept
+definition [N4950 §13.9.3]:
+
+```cpp
+#include <concepts>
+#include <iostream>
+#include <iterator>
+#include <ranges>
+
+template<typename T>
+concept InputRange = std::ranges::input_range<T>;
+
+template<typename T>
+concept SortableRange = InputRange<T> &&
+    requires(T& rng) {
+        { rng.begin() } -> std::random_access_iterator;
+        { rng.end() } -> std::sentinel_for<decltype(rng.begin())>;
+        requires std::sortable<decltype(rng.begin())>;
+    };
+
+template<SortableRange R>
+void insertion_sort(R& rng) {
+    auto it = rng.begin();
+    auto end = rng.end();
+    for (auto cur = it + 1; cur != end; ++cur) {
+        auto key = *cur;
+        auto pos = cur;
+        while (pos != it && *(pos - 1) > key) {
+            *pos = *(pos - 1);
+            --pos;
+        }
+        *pos = key;
+    }
+}
+
+int main() {
+    std::vector<int> v = {5, 2, 8, 1, 9, 3};
+    insertion_sort(v);
+    for (int x : v) std::cout << x << " ";
+    std::cout << "\n";
+}
+```
+
+The refinement `SortableRange` requires `InputRange` as a base and adds additional constraints for
+random access and sortability. This means any type satisfying `SortableRange` automatically
+satisfies `InputRange` — the subsumption relationship enables the compiler to select the most
+constrained overload during overload resolution.
+
+## Common Pitfalls
+
+**1. Concepts do not short-circuit in the usual sense:** While `&&` and `||` in constraint
+expressions follow short-circuit evaluation for **atomic constraints** (each individual predicate is
+evaluated independently, and the result is the logical combination), the constraint as a whole is
+evaluated by checking all atomic constraints. A failed substitution in one branch of a disjunction
+does not cause a hard error — SFINAE applies [N4950 §13.5.3].
+
+**2. `requires` inside a concept body vs requires-clause:** A `requires` clause on a function
+constrains the function. A `requires { ... }` expression inside a concept body is a
+requires-expression that tests whether certain expressions are valid. These are distinct constructs:
+
+```cpp
+template<typename T>
+concept HasFoo = requires(T t) { t.foo(); };  // requires-expression
+
+template<typename T>
+    requires HasFoo<T>  // requires-clause
+void bar(T t) { t.foo(); }
+```
+
+**3. Overly permissive concepts:** A concept like `requires(T t) { t + t; }` accepts `std::string`
+(concatenation), `std::string_view`, and pointer types (pointer arithmetic). Always combine with
+`std::same_as` or `std::convertible_to` on the return type to narrow the intent:
+
+```cpp
+template<typename T>
+concept Addable = requires(T a, T b) {
+    { a + b } -> std::convertible_to<T>;  // Also constrains the return type
+};
+```
+
+**4. Concepts and implicit conversions:** `std::integral&lt;int>` is true, but
+`std::integral&lt;bool>` is also true (since `bool` is an integral type). If you need to exclude
+`bool`, add `!std::same_as&lt;T, bool>` to your constraint.
+
 ## See Also
 
 - [Constraint Subsumption and Overload Resolution](./2_constraint_subsumption.md)
