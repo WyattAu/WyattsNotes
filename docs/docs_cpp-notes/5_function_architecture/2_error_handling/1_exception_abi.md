@@ -48,6 +48,10 @@ The search algorithm [N4950 §14.4] proceeds as follows:
 4. The **first** matching clause in the innermost scope wins.
 5. If no frame contains a matching handler, `std::terminate()` is called [N4950 §14.7].
 
+The match is performed using `std::type_info::operator==` or the RTTI comparison function. On
+Itanium ABI systems, the `__gxx_personality_v0` personality function performs this comparison by
+walking the exception's type info chain.
+
 ```cpp
 #include <iostream>
 #include <stdexcept>
@@ -77,6 +81,44 @@ int main() {
     return 0;
 }
 // Output: Caught NetworkError: connection refused
+```
+
+### The Catch-All and Exception Object Slicing
+
+When catching by value (not by reference), the exception object is **sliced** to the catch clause's
+static type. This is almost always wrong because it loses the dynamic type information and invokes
+an extra copy:
+
+```cpp
+#include <iostream>
+#include <stdexcept>
+#include <typeinfo>
+
+struct AppError : std::runtime_error {
+    using std::runtime_error::runtime_error;
+    void describe() const { std::cout << "AppError::describe\n"; }
+};
+
+void throw_app() { throw AppError{"app failure"}; }
+
+int main() {
+    // BAD: caught by value — sliced to std::runtime_error
+    try {
+        throw_app();
+    } catch (std::runtime_error e) {
+        std::cout << "type: " << typeid(e).name() << "\n";
+        // e.describe();  // ERROR: std::runtime_error has no describe()
+        // The dynamic type is LOST
+    }
+
+    // GOOD: caught by reference — preserves dynamic type
+    try {
+        throw_app();
+    } catch (const std::runtime_error& e) {
+        std::cout << "type: " << typeid(e).name() << "\n";
+        // dynamic_cast<const AppError&>(e).describe();  // OK if AppError
+    }
+}
 ```
 
 ## 1.3 Stack Unwinding and Destructor Invocation
@@ -213,6 +255,221 @@ int main() {
 **Relevance:** The no-throw path of exceptions is faster than error-code checking because it
 eliminates the branch. The throw path is significantly slower. Design critical paths to avoid
 throwing; use exceptions for truly exceptional conditions.
+
+## 1.6 Exception Object Lifetime and Storage
+
+The exception object is allocated by the C++ runtime, not by `new`. The Itanium ABI specifies that
+the runtime uses a dedicated allocator (often a thread-local buffer) for small exception objects,
+falling back to `malloc` for large ones [N4950 §14.3]. The exception object is destroyed when the
+last `catch` clause handling it exits [N4950 §14.4]:
+
+```cpp
+#include <iostream>
+#include <stdexcept>
+
+struct Tracked {
+    int id;
+    explicit Tracked(int i) : id(i) { std::cout << "  Tracked(" << id << ") ctor\n"; }
+    ~Tracked() { std::cout << "  ~Tracked(" << id << ") dtor\n"; }
+    Tracked(const Tracked& o) : id(o.id) { std::cout << "  Tracked(" << id << ") copy\n"; }
+};
+
+void throw_tracked() { throw Tracked{1}; }
+
+int main() {
+    try {
+        throw_tracked();
+    } catch (const Tracked& e) {
+        std::cout << "caught Tracked " << e.id << "\n";
+    }
+    std::cout << "after catch\n";
+}
+// Output:
+//   Tracked(1) ctor          (constructed in throw expression)
+//   caught Tracked 1         (handler executes)
+//   ~Tracked(1) dtor         (destroyed when catch exits)
+//   after catch
+```
+
+### Rethrowing with `throw;`
+
+The `throw;` statement re-throws the currently handled exception without copying it. This is
+critical for preserving the dynamic type when re-throwing from a catch clause that caught a base
+class:
+
+```cpp
+#include <iostream>
+#include <stdexcept>
+
+struct AppError : std::runtime_error {
+    using std::runtime_error::runtime_error;
+};
+
+struct NetworkError : AppError {
+    using AppError::AppError;
+};
+
+void handle_and_rethrow() {
+    try {
+        throw NetworkError{"connection refused"};
+    } catch (const AppError& e) {
+        std::cout << "handling: " << e.what() << "\n";
+        throw;  // re-throws the original NetworkError, NOT sliced
+    }
+}
+
+int main() {
+    try {
+        handle_and_rethrow();
+    } catch (const NetworkError& e) {
+        std::cout << "caught NetworkError: " << e.what() << "\n";
+    } catch (const AppError& e) {
+        std::cout << "caught AppError: " << e.what() << "\n";
+    }
+}
+// Output:
+//   handling: connection refused
+//   caught NetworkError: connection refused
+```
+
+:::warning Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
+static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception. :::
+
+## 1.7 Cross-Thread Exception Propagation with `std::exception_ptr`
+
+C++11 introduced `std::exception_ptr` to transport exceptions across threads [N4950 §18.8.5]. This
+is the only standard mechanism for propagating exceptions from a worker thread to the joining
+thread:
+
+```cpp
+#include <iostream>
+#include <exception>
+#include <stdexcept>
+#include <thread>
+#include <future>
+
+int main() {
+    // Using std::async — handles exception_ptr internally
+    std::future<int> f = std::async(std::launch::async, []() {
+        throw std::runtime_error{"async failure"};
+        return 0;
+    });
+
+    try {
+        int result = f.get();  // re-throws the exception from the worker thread
+        (void)result;
+    } catch (const std::exception& e) {
+        std::cout << "caught from async: " << e.what() << "\n";
+    }
+
+    // Manual exception_ptr usage with std::thread
+    std::exception_ptr eptr;
+
+    std::thread worker([&eptr]() {
+        try {
+            throw std::runtime_error{"thread failure"};
+        } catch (...) {
+            eptr = std::current_exception();  // capture exception
+        }
+    });
+
+    worker.join();
+
+    if (eptr) {
+        try {
+            std::rethrow_exception(eptr);  // re-throw in the joining thread
+        } catch (const std::exception& e) {
+            std::cout << "caught from thread: " << e.what() << "\n";
+        }
+    }
+}
+// Output:
+//   caught from async: async failure
+//   caught from thread: thread failure
+```
+
+The implementation allocates a reference-counted exception object on the heap. `std::exception_ptr`
+is essentially a shared-ownership smart pointer to this object. The exception is destroyed when the
+last `exception_ptr` referencing it is destroyed.
+
+## 1.8 The LSDA Table Format
+
+The LSDA (Language-Specific Data Area) encodes the exception handling information for each function.
+On the Itanium ABI, it uses a compact bytecode format:
+
+| Field               | Description                                                             |
+| ------------------- | ----------------------------------------------------------------------- |
+| **LPStart**         | Base address for landing pad offsets (usually the function entry point) |
+| **CallSite Table**  | Array of (begin PC, end PC, landing pad, action) entries                |
+| **Action Table**    | Array of type-filter and next-action offsets for catch clause matching  |
+| **Type Info Table** | Array of `std::type_info*` pointers referenced by the action table      |
+
+Each call site entry describes a range of PC values in the function. When the unwinder finds that
+the current PC falls within a call site range, it checks the action table to determine which catch
+clause (if any) handles the exception. The type info table provides the `std::type_info` for the
+catch clause's type, enabling the dynamic type comparison.
+
+The personality function (`__gxx_personality_v0` on GCC/Clang) interprets these tables during
+unwinding. It is called by the unwinder (`_Unwind_RaiseException`) for each frame on the stack.
+
+## Common Pitfalls
+
+### 1. Throwing from Destructors During Stack Unwinding
+
+If a destructor throws while another exception is already active (during stack unwinding),
+`std::terminate()` is called immediately [N4950 §14.7]. This makes destructor throws extremely
+dangerous:
+
+```cpp
+#include <iostream>
+#include <stdexcept>
+
+struct Bad {
+    ~Bad() {
+        throw std::runtime_error{"destructor threw"};  // DANGEROUS
+    }
+};
+
+int main() {
+    try {
+        Bad b;
+        throw std::runtime_error{"original exception"};  // stack unwinding begins
+    } catch (const std::exception& e) {
+        // NEVER REACHED: terminate() called during unwinding
+        std::cout << e.what() << "\n";
+    }
+}
+// Output: terminate called after throwing an instance of 'std::runtime_error'
+```
+
+### 2. Exceptions and `noexcept` Functions
+
+If an exception escapes a `noexcept` function, `std::terminate()` is called instead of stack
+unwinding. This is a deliberate design choice — callers of `noexcept` functions are entitled to
+assume no exception propagation overhead:
+
+```cpp
+#include <iostream>
+#include <stdexcept>
+
+void unexpected_throw() noexcept {
+    throw std::runtime_error{"from noexcept function"};
+    // std::terminate() is called — no stack unwinding occurs
+}
+
+int main() {
+    unexpected_throw();
+    // never reached
+}
+```
+
+### 3. Memory Overhead of Exception Tables
+
+The LSDA and unwind tables typically add 5-15% to binary size. In embedded environments with tight
+flash budgets, this overhead can be significant. Compiling with `-fno-exceptions` eliminates these
+tables entirely, but also disables all `try`/`catch`/`throw` semantics. On bare-metal targets, you
+may need to provide a custom `__cxa_pure_virtual` and `__cxa_throw` implementation even when using
+`-fno-exceptions` if linked libraries reference these symbols.
 
 ## See Also
 

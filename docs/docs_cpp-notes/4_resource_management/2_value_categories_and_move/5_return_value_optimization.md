@@ -216,6 +216,262 @@ constructed in place (RVO), moved between scopes (move constructors), and swappe
 Copies are the exception, not the rule. Understanding the fallback chain (RVO → NRVO → implicit move
 → copy) is essential for writing code that is both correct and efficient. :::
 
+## 8.6 RVO in Other Contexts
+
+Guaranteed copy elision (C++17 RVO) applies not only to `return` statements but also to variable
+initialization from prvalues [N4950 §8.4.4]. Whenever a prvalue appears as the initializer for an
+object of the same type, the object is constructed directly in the target storage:
+
+```cpp
+#include <iostream>
+
+struct Widget {
+    int id;
+    Widget(int i) : id(i) { std::cout << "  Widget(" << id << ") ctor\n"; }
+    Widget(const Widget& o) : id(o.id) { std::cout << "  Widget(" << id << ") copy ctor\n"; }
+    Widget(Widget&& o) noexcept : id(o.id) { std::cout << "  Widget(" << id << ") move ctor\n"; }
+    ~Widget() { std::cout << "  ~Widget(" << id << ")\n"; }
+};
+
+Widget make_widget(int id) {
+    return Widget{id};  // prvalue — guaranteed elision
+}
+
+int main() {
+    // All of these are guaranteed elision (prvalue initialization):
+
+    // 1. Direct variable initialization
+    Widget w1 = Widget{1};   // Widget(1) ctor only
+
+    // 2. Function return value
+    Widget w2 = make_widget(2);  // Widget(2) ctor only
+
+    // 3. New expression
+    Widget* p = new Widget{3};  // Widget(3) ctor only
+
+    // 4. Parenthesized initialization
+    Widget w4(Widget{4});      // Widget(4) ctor only — NOT a copy
+
+    delete p;
+}
+```
+
+### RVO and Brace Initialization
+
+Brace initialization with prvalues also benefits from guaranteed copy elision:
+
+```cpp
+#include <iostream>
+
+struct Point {
+    double x, y;
+    Point(double x, double y) : x(x), y(y) {
+        std::cout << "  Point(" << x << ", " << y << ")\n";
+    }
+    Point(const Point&) { std::cout << "  Point copy\n"; }
+    Point(Point&&) noexcept { std::cout << "  Point move\n"; }
+};
+
+Point origin() {
+    return {0.0, 0.0};  // prvalue — guaranteed elision
+}
+
+int main() {
+    Point p = origin();  // no copy, no move
+    Point q = Point{1.0, 2.0};  // guaranteed elision
+}
+```
+
+## 8.7 RVO with Inheritance
+
+Guaranteed copy elision applies across inheritance hierarchies. When a prvalue of derived type is
+used to initialize a base-type variable, the elision does NOT apply (because the types differ), and
+the copy/move constructor is called. But when the types match, elision applies normally:
+
+```cpp
+#include <iostream>
+
+struct Base {
+    int id;
+    Base(int i) : id(i) { std::cout << "  Base(" << id << ") ctor\n"; }
+    Base(const Base& o) : id(o.id) { std::cout << "  Base(" << id << ") copy\n"; }
+    Base(Base&& o) noexcept : id(o.id) { std::cout << "  Base(" << id << ") move\n"; }
+    virtual ~Base() = default;
+};
+
+struct Derived : Base {
+    using Base::Base;
+};
+
+int main() {
+    // Same type — guaranteed elision
+    Base b1 = Base{1};  // Base(1) ctor only
+
+    // Different type — copy elision does NOT apply (slicing occurs)
+    Base b2 = Derived{2};  // Base(2) move (Derived prvalue materializes, then moves to Base)
+
+    // Function return with same type
+    auto make_base(int id) -> Base { return Base{id}; }
+    Base b3 = make_base(3);  // guaranteed elision
+
+    // Function return with derived type
+    auto make_derived(int id) -> Derived { return Derived{id}; }
+    Base b4 = make_derived(4);  // NOT elided: different type
+}
+```
+
+## 8.8 RVO and `std::optional`
+
+When returning a prvalue wrapped in `std::optional`, the prvalue is constructed inside the
+optional's storage. This is also guaranteed elision:
+
+```cpp
+#include <iostream>
+#include <optional>
+#include <string>
+
+struct Expensive {
+    std::string data;
+    Expensive(std::string s) : data(std::move(s)) {
+        std::cout << "  Expensive ctor (" << data << ")\n";
+    }
+    Expensive(const Expensive& o) : data(o.data) {
+        std::cout << "  Expensive copy (" << data << ")\n";
+    }
+    Expensive(Expensive&& o) noexcept : data(std::move(o.data)) {
+        std::cout << "  Expensive move (" << data << ")\n";
+    }
+};
+
+std::optional<Expensive> make_expensive(bool flag) {
+    if (flag) {
+        return Expensive{"hello"};  // constructed in-place inside optional
+    }
+    return std::nullopt;
+}
+
+int main() {
+    auto result = make_expensive(true);
+    // Output: Expensive ctor (hello) — no copy, no move
+}
+```
+
+## 8.9 The C++17 Language Change: Prvalues Are Not Temporaries
+
+Before C++17, a prvalue was a temporary object. C++17 changed the language so that a prvalue is
+merely an **initializer** — a recipe for constructing an object. The object is not materialized
+until it is needed [N4950 §7.2.1]. This is why `return Widget{42}` does not create a temporary: the
+prvalue `Widget{42}` is just instructions for constructing a `Widget`, and those instructions are
+applied directly to the return slot.
+
+This has a subtle but important consequence for `decltype`:
+
+```cpp
+#include <iostream>
+#include <type_traits>
+
+struct Widget {
+    Widget(int) {}
+};
+
+int main() {
+    // C++17: prvalue is not an object, so decltype gives the type, not a reference
+    static_assert(std::is_same_v<decltype(Widget{42}), Widget>);
+
+    // Before C++17, decltype(prvalue) would give Widget (not Widget&& or Widget&)
+    // but the prvalue WAS a temporary. Now it is just an initializer.
+
+    std::cout << "prvalue is an initializer, not a temporary\n";
+}
+```
+
+## Common Pitfalls
+
+### 1. NRVO and Debug Builds
+
+NRVO is an optimization that compilers apply at higher optimization levels. In debug builds (`-O0`
+on GCC/Clang), NRVO is typically not applied, resulting in extra move constructor calls. This means
+code that works correctly in debug mode (relying on destructors being called for moved- from
+objects) may exhibit different behavior than optimized builds. Always test move semantics at `-O2`
+or higher.
+
+### 2. NRVO and Address-Taken Variables
+
+If the address of the named return variable is taken (e.g., passed to another function), NRVO may be
+inhibited because the compiler cannot guarantee that all references to the variable can be
+redirected to the caller's storage:
+
+```cpp
+#include <iostream>
+
+struct Widget {
+    Widget(int i) { std::cout << "  Widget ctor\n"; }
+    Widget(Widget&&) noexcept { std::cout << "  Widget move\n"; }
+};
+
+Widget possibly_inhibited() {
+    Widget local(42);
+    register_address(&local);  // address escapes — NRVO may fail
+    return local;
+}
+```
+
+### 3. `return std::move(local)` Prevents Both NRVO and Guaranteed RVO
+
+Writing `return std::move(local)` converts the named variable to an xvalue. Since the return
+expression is no longer a named variable or a prvalue, neither NRVO nor implicit move can apply. The
+move constructor is always called. This is never an optimization — it is always a pessimization:
+
+```cpp
+#include <utility>
+
+struct Widget {
+    int data[1024]{};
+    Widget() = default;
+    Widget(Widget&&) noexcept { std::cout << "  move\n"; }
+};
+
+// BAD: always moves
+Widget bad() {
+    Widget local;
+    return std::move(local);  // xvalue — NRVO inhibited, move always happens
+}
+
+// GOOD: NRVO applies, no move needed
+Widget good() {
+    Widget local;
+    return local;  // named local — NRVO or implicit move
+}
+```
+
+### 4. RVO Does Not Apply to Function Parameters
+
+Guaranteed copy elision only applies to prvalue initialization, not to returning function
+parameters. Returning a function parameter by value always invokes a move or copy:
+
+```cpp
+#include <iostream>
+#include <utility>
+
+struct Widget {
+    Widget() { std::cout << "  ctor\n"; }
+    Widget(Widget&&) noexcept { std::cout << "  move\n"; }
+};
+
+Widget pass_through(Widget w) {
+    return w;  // NOT RVO — w is a function parameter, not a prvalue or local
+    // implicit move applies
+}
+
+int main() {
+    Widget w = pass_through(Widget{});
+    // Output: ctor, move, move
+    // 1st move: pass_through return (implicit move of parameter)
+    // 2nd move: materialization into w — BUT actually this is guaranteed elision
+    // of the prvalue returned by pass_through into w
+}
+```
+
 ## See Also
 
 - [Temporary Materialization](3_temporary_materialization.md)
