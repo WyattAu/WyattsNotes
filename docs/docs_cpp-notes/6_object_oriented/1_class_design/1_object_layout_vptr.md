@@ -170,8 +170,24 @@ static_assert(sizeof(Derived) == sizeof(int));
 ```
 
 :::info Practical Importance EBO is exploited heavily by standard library implementations.
-`std::allocator<T>` is typically an empty class, and `std::vector<T, std::allocator<T>>` inherits
-from it privately so that the allocator storage costs nothing. :::
+`std::allocator&lt;T&gt;` is typically an empty class, and
+`std::vector&lt;T, std::allocator&lt;T&gt;&gt;` inherits from it privately so that the allocator
+storage costs nothing. :::
+
+### EBO Limitations
+
+EBO cannot be applied when:
+
+- The empty class is a **member**, not a base class.
+- Multiple base classes of the **same type** exist (they must have distinct addresses).
+- The empty base is also a base of another base in a diamond hierarchy (the compiler must still
+  ensure unique addresses in some configurations).
+
+```cpp
+struct Empty {};
+struct Bad : Empty, Empty { };  // ERROR: duplicate base type
+struct OK : Empty { int x; };   // OK: single Empty base, EBO applies
+```
 
 ## 1.5 Examining Object Layout
 
@@ -210,7 +226,414 @@ When a class has virtual functions, the compiler adds a hidden pointer — the *
 member of the object layout. The vptr points to a per-class virtual table (vtable) containing
 function pointers for each virtual function. On 64-bit platforms, the vptr occupies 8 bytes.
 
-## See Also
+## 1.6 Multiple Inheritance Layout
 
-- [Access Control and Friendship](./2_access_control.md)
-- [Special Member Function Generation Rules](./3_special_member_functions.md)
+Multiple inheritance introduces a more complex layout because each base class contributes its own
+vptr (if it has virtual functions) and the compiler must handle `this` pointer adjustments when
+converting between derived and base pointers.
+
+```cpp
+#include <cstdio>
+#include <cstdint>
+#include <cstddef>
+
+struct Base1 {
+    int32_t a;
+    virtual void f1() {}
+};
+
+struct Base2 {
+    int32_t b;
+    virtual void f2() {}
+};
+
+struct Derived : Base1, Base2 {
+    int32_t c;
+    void f1() override {}
+    void f2() override {}
+};
+
+int main() {
+    static_assert(sizeof(Base1) == 16);    // vptr(8) + a(4) + pad(4)
+    static_assert(sizeof(Base2) == 16);    // vptr(8) + b(4) + pad(4)
+    static_assert(sizeof(Derived) == 32);  // Base1(16) + Base2(16)
+
+    Derived d;
+    d.a = 1;
+    d.b = 2;
+    d.c = 3;
+
+    // Pointer to first base: no adjustment needed
+    Base1* b1 = &d;
+    // Pointer to second base: this pointer is adjusted by sizeof(Base1)
+    Base2* b2 = &d;
+
+    std::printf("d    = %p\n", (void*)&d);
+    std::printf("b1   = %p (offset 0)\n", (void*)b1);
+    std::printf("b2   = %p (offset %zu)\n", (void*)b2, (size_t)((char*)b2 - (char*)&d));
+
+    // b2 == (char*)&d + sizeof(Base1) == (char*)&d + 16
+}
+```
+
+### The `this` Pointer Adjustment Problem
+
+When a virtual function is called through a pointer to a non-first base, the compiler must adjust
+the `this` pointer before invoking the function. This adjustment is encoded in the **vtable** or
+performed by a **thunk** (a small code stub):
+
+```cpp
+// When calling b2->f2():
+// 1. Load vptr from b2 (which points to Base2's vtable)
+// 2. Load function pointer for f2 from Base2's vtable
+// 3. The thunk subtracts sizeof(Base1) from 'this' to get the Derived*
+// 4. Jump to Derived::f2
+```
+
+This has a runtime cost: one additional instruction (a `sub` or `add` on the `this` pointer) for
+every virtual call through a non-first base pointer. In hot paths, this can be measurable.
+
+## 1.7 Virtual Inheritance Layout
+
+Virtual inheritance solves the diamond problem by ensuring that a virtually inherited base class has
+exactly one subobject shared by all paths in the inheritance hierarchy. The cost is significant:
+virtual base pointers and indirection.
+
+```cpp
+#include <cstdio>
+#include <cstdint>
+#include <cstddef>
+
+struct VBase {
+    int32_t data;
+    virtual void vf() {}
+};
+
+struct Left : virtual VBase {
+    int32_t left_data;
+};
+
+struct Right : virtual VBase {
+    int32_t right_data;
+};
+
+struct Diamond : Left, Right {
+    int32_t diamond_data;
+    void vf() override {}
+};
+
+int main() {
+    std::printf("sizeof(VBase):   %zu\n", sizeof(VBase));
+    std::printf("sizeof(Left):    %zu\n", sizeof(Left));
+    std::printf("sizeof(Right):   %zu\n", sizeof(Right));
+    std::printf("sizeof(Diamond): %zu\n", sizeof(Diamond));
+
+    Diamond d;
+    d.data = 42;
+
+    VBase* vb = &d;
+    std::printf("VBase* points to offset %zu\n",
+        (size_t)((char*)vb - (char*)&d));
+}
+```
+
+### Virtual Base Pointer (vbptr)
+
+Classes with virtual bases contain a hidden **virtual base pointer** (vbptr) that points to a shared
+table containing the offset of the virtual base subobject. The layout is approximately:
+
+```
+Diamond object layout:
++--------------------+  offset 0
+| Left::vptr         |
++--------------------+  offset 8
+| Left::left_data    |
++--------------------+  offset 12
+| Left::vbptr        |  -> points to VBase offset table
++--------------------+  offset 16
+| Right::vptr        |
++--------------------+  offset 24
+| Right::right_data  |
++--------------------+  offset 28
+| Diamond::diamond_data |
++--------------------+  offset 32
+| VBase::vptr        |  (shared)
++--------------------+  offset 40
+| VBase::data        |  (shared)
++--------------------+  offset 44
+```
+
+The exact layout varies by compiler and ABI. MSVC uses a separate vbptr; the Itanium ABI (GCC/Clang)
+often stores virtual base offsets in the vtable itself.
+
+**Performance cost:** Every access to a virtual base member requires an additional indirection
+through the vbptr table. Construction of a diamond object requires multiple `this` adjustments as
+each base constructor is called.
+
+## 1.8 vtable Internals
+
+The vtable is a compiler-generated array of function pointers, one per virtual function in the class
+hierarchy. Each polymorphic class has its own vtable.
+
+### vtable Structure (Itanium C++ ABI)
+
+```
+vtable for Derived:
++---------------------------+
+| offset_to_top = 0         |  <- for dynamic_cast this adjustment
+| typeinfo pointer          |  <- RTTI: points to std::type_info for Derived
+|---------------------------|
+| &Derived::foo             |  <- virtual function pointer
+| &Derived::bar             |  <- virtual function pointer
+| &Base::baz                |  <- inherited, not overridden
+|---------------------------+
+```
+
+### RTTI and `type_info`
+
+Every polymorphic class has an associated `std::type_info` object [N4950 §17.2.1]. The vtable
+contains a pointer to this object, enabling `dynamic_cast` and `typeid`:
+
+```cpp
+#include <cstdio>
+#include <typeinfo>
+
+struct Base { virtual ~Base() = default; };
+struct Derived : Base {};
+
+int main() {
+    Derived d;
+    Base& ref = d;
+
+    // typeid uses the vtable's type_info pointer
+    const std::type_info& ti = typeid(ref);
+    std::printf("type: %s\n", ti.name());  // "7Derived" (mangled name)
+
+    // dynamic_cast uses the type_info hierarchy for runtime type checking
+    if (auto* derived = dynamic_cast<Derived*>(&ref)) {
+        std::printf("cast succeeded\n");
+    }
+}
+```
+
+**RTTI overhead:** Each polymorphic class adds a `type_info` object to the binary (typically in
+`.data.rel.ro`), and each object carries a vptr pointing to a vtable that contains a `type_info`
+pointer. This overhead is present even if you never use `dynamic_cast` or `typeid`.
+
+Disabling RTTI: Use `-fno-rtti` (GCC/Clang) or `/GR-` (MSVC) to eliminate this overhead. This also
+disables `dynamic_cast` (except for upcasts, which are compile-time resolved).
+
+### Pure Virtual Functions and Abstract Classes
+
+A class with at least one **pure virtual function** is abstract — it cannot be instantiated. In the
+vtable, a pure virtual function's slot typically points to `__cxa_pure_virtual` (Itanium ABI) or
+`_purecall` (MSVC), which triggers a runtime error if called:
+
+```cpp
+#include <cstdio>
+
+struct Interface {
+    virtual void process() = 0;
+    virtual ~Interface() = default;
+};
+
+struct Concrete : Interface {
+    void process() override {
+        std::printf("processing\n");
+    }
+};
+
+// struct Bad : Interface { };  // ERROR: cannot instantiate abstract class
+
+int main() {
+    Concrete c;
+    Interface* i = &c;
+    i->process();  // Calls Concrete::process via vtable
+}
+```
+
+### Calling a Pure Virtual Function from a Constructor
+
+A common Undefined Behavior scenario: calling a virtual function (especially a pure virtual) from a
+base class constructor. During base class construction, the derived class vtable is not yet set up:
+
+```cpp
+#include <cstdio>
+
+struct Base {
+    Base() {
+        // During Base construction, the vtable is Base's vtable
+        // NOT the Derived vtable
+        do_work();  // Calls Base::do_work, NOT Derived::do_work
+    }
+    virtual void do_work() {
+        std::printf("Base::do_work\n");
+    }
+};
+
+struct Derived : Base {
+    void do_work() override {
+        std::printf("Derived::do_work\n");
+    }
+};
+
+int main() {
+    Derived d;  // Prints "Base::do_work", NOT "Derived::do_work"
+}
+```
+
+## 1.9 Virtual Destructors and Object Destruction
+
+When deleting an object through a base class pointer, the destructor must be virtual to ensure the
+derived destructor runs. Without `virtual`, only the base destructor runs, causing resource leaks
+and Undefined Behavior.
+
+```cpp
+#include <cstdio>
+#include <memory>
+
+struct Base {
+    ~Base() { std::printf("Base dtor\n"); }
+};
+
+struct Derived : Base {
+    ~Derived() { std::printf("Derived dtor\n"); }
+};
+
+int main() {
+    // BAD: Undefined Behavior — Derived dtor is not called
+    Base* p = new Derived();
+    delete p;  // Only ~Base() runs. Memory leak for Derived members.
+
+    // GOOD: Both destructors run
+    struct BaseVirt { virtual ~BaseVirt() { std::printf("BaseVirt dtor\n"); } };
+    struct DerivedVirt : BaseVirt { ~DerivedVirt() { std::printf("DerivedVirt dtor\n"); } };
+
+    BaseVirt* pv = new DerivedVirt();
+    delete pv;  // ~DerivedVirt() then ~BaseVirt()
+
+    // BEST: Use smart pointers
+    auto up = std::make_unique<DerivedVirt>();
+    // Automatic destruction with correct virtual dispatch
+}
+```
+
+### Destruction Order
+
+When a derived object is destroyed, destructors run in reverse order of construction:
+
+1. Derived destructor body runs.
+2. Derived member destructors run.
+3. Base destructor body runs.
+4. Base member destructors run.
+5. (If multiple bases, right-to-left per declaration order.)
+
+## 1.10 Devirtualization and the `final` Specifier
+
+The compiler can devirtualize a virtual call (convert it to a direct call) when it can prove the
+dynamic type at compile time. The `final` specifier helps the compiler make this determination.
+
+```cpp
+#include <cstdio>
+
+struct Widget {
+    virtual void draw() { std::printf("Widget::draw\n"); }
+    virtual ~Widget() = default;
+};
+
+struct Button final : Widget {  // 'final' prevents further derivation
+    void draw() override { std::printf("Button::draw\n"); }
+};
+
+void render(Widget& w) {
+    w.draw();
+}
+
+int main() {
+    Button b;
+    // The compiler knows 'b' is a Button (not a base pointer).
+    // With 'final', it can prove no further-derived type exists.
+    // Result: devirtualized to a direct call to Button::draw.
+    b.draw();
+
+    // Through a reference: the compiler may or may not devirtualize
+    // depending on optimization level and escape analysis.
+    render(b);
+}
+```
+
+### When Devirtualization Occurs
+
+1. **Static type analysis:** If the object is allocated locally and never escapes (no pointers to it
+   are stored), the compiler can track its exact type.
+2. **`final` on the class:** If the class is `final`, no further derivation is possible, so the
+   dynamic type is always the static type.
+3. **`final` on the method:** If the virtual function is `final`, no override exists, so the
+   compiler can use the static type's vtable entry.
+4. **Speculative devirtualization:** At `-O2`/`-O3`, compilers may emit speculative direct calls
+   guarded by a type check (comparing the vptr against the expected vtable).
+
+## Common Pitfalls
+
+### 1. Object Slicing
+
+Assigning a derived object to a base object by value copies only the base subobject, discarding the
+derived portion:
+
+```cpp
+#include <cstdio>
+
+struct Base { int a; virtual void print() { std::printf("Base: %d\n", a); } };
+struct Derived : Base { int b; void print() override { std::printf("Derived: %d, %d\n", a, b); } };
+
+int main() {
+    Derived d{1, 2};
+    Base b = d;  // SLICING: b contains only {a=1, vptr=Base::vtable}
+    b.print();   // Prints "Base: 1", not "Derived: 1, 2"
+}
+```
+
+### 2. `offsetof` with Non-Standard-Layout Types
+
+`offsetof` is undefined behavior for non-standard-layout classes [N4950 §18.2.4]. A class with
+virtual functions is not standard-layout. Compilers typically still produce correct results, but the
+behavior is not portable:
+
+```cpp
+struct Polymorphic {
+    virtual void f() {}
+    int x;
+};
+
+// offsetof(Polymorphic, x);  // Technically UB, though usually works
+```
+
+### 3. Forgetting Virtual Destructors in Interface Classes
+
+Any class that is intended to be used as a base class with polymorphic deletion must have a virtual
+destructor. This is the single most common C++ bug related to object layout. If a destructor is
+non-virtual and the class has any virtual functions, deleting through a base pointer causes
+Undefined Behavior.
+
+### 4. Multiple Inheritance `this` Pointer Adjustments
+
+When casting between base class pointers in a multiple inheritance hierarchy, the pointer value may
+change. This is surprising but correct — the different base subobjects are at different offsets
+within the derived object. Always use `static_cast` for known-safe downcasts and `dynamic_cast` for
+runtime-checked downcasts.
+
+### 5. EBO Failure with Same-Type Bases
+
+EBO does not apply when two or more base classes have the same type. Each base subobject must have a
+unique address, so each one occupies at least one byte. Use parameterized base classes (empty base
+class templates with different template arguments) to work around this:
+
+```cpp
+template <typename Tag>
+struct EmptyBase {};
+
+struct Combined : EmptyBase<struct A>, EmptyBase<struct B> {
+    int data;
+};
+static_assert(sizeof(Combined) == sizeof(int));  // EBO applies for both
+```
