@@ -89,9 +89,9 @@ to your Windows PATH.
 
 5. Click **OK** on all dialogs.
 
-:::warning Adding directory to path may not the best practice, using running commands from the
+**Warning:** Adding directory to PATH may not be the best practice. Running commands from the
 `msys2 ucrt64` terminal can be a better choice if multiple toolchains are installed to prevent
-conflicts. :::
+conflicts.
 
 #### Step 5: Verification
 
