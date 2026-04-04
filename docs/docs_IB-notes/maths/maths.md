@@ -182,3 +182,194 @@ all topics:
 - Refer to the formulae section above as a quick-reference guide, but note that it is not exhaustive
   -- the full formula booklet provided in examinations should be consulted for the complete list of
   permitted results.
+
+---
+
+## Detailed Topic Breakdown
+
+### Number and Algebra — Key Results
+
+**Arithmetic sequences:** $u_n = u_1 + (n-1)d$,
+$S_n = \frac{n}{2}(2u_1 + (n-1)d) = \frac{n}{2}(u_1 + u_n)$
+
+**Geometric sequences:** $u_n = u_1 r^{n-1}$, $S_n = \frac{u_1(r^n - 1)}{r - 1}$ for $r \neq 1$
+
+**Sum to infinity (when $|r| \lt 1$):** $S_\infty = \frac{u_1}{1 - r}$
+
+**Binomial theorem:** $(a+b)^n = \displaystyle\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k$
+
+**Logarithm laws:**
+
+- $\log_a(xy) = \log_a x + \log_a y$
+- $\log_a(x/y) = \log_a x - \log_a y$
+- $\log_a(x^n) = n\log_a x$
+- $\log_a a = 1$, $\log_a 1 = 0$
+
+### Functions — Key Results
+
+**Discriminant:** $\Delta = b^2 - 4ac$
+
+- $\Delta \gt 0$: Two distinct real roots
+- $\Delta = 0$: One repeated real root
+- $\Delta \lt 0$: No real roots (two complex conjugate roots)
+
+**Vertex form:** $f(x) = a(x - h)^2 + k$, where $(h, k)$ is the vertex.
+
+**Finding inverse:** Replace $f(x)$ with $y$, swap $x$ and $y$, solve for $y$, then write
+$f^{-1}(x)$.
+
+### Calculus — Key Results
+
+**Differentiation rules:**
+
+- $\dfrac{d}{dx}(x^n) = nx^{n-1}$
+- $\dfrac{d}{dx}(e^x) = e^x$
+- $\dfrac{d}{dx}(\ln x) = \dfrac{1}{x}$
+- $\dfrac{d}{dx}(\sin x) = \cos x$
+- $\dfrac{d}{dx}(\cos x) = -\sin x$
+- Product rule: $(uv)' = u'v + uv'$
+- Quotient rule: $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$
+- Chain rule: $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$
+
+**Integration rules:**
+
+- $\displaystyle\int x^n \,dx = \frac{x^{n+1}}{n+1} + C$ for $n \neq -1$
+- $\displaystyle\int \frac{1}{x}\,dx = \ln|x| + C$
+- $\displaystyle\int e^x \,dx = e^x + C$
+- $\displaystyle\int \cos x \,dx = \sin x + C$
+- $\displaystyle\int \sin x \,dx = -\cos x + C$
+
+---
+
+## Calculator Tips (GDC)
+
+### What Your GDC Can Do
+
+- Solve equations numerically (solve, zeros, intersection)
+- Calculate definite integrals
+- Find derivatives numerically at a point
+- Plot functions and find key features (intercepts, maxima, minima)
+- Perform statistical calculations (regression, hypothesis tests)
+- Work with matrices and vectors
+- Handle complex numbers
+
+### Common Mistakes with the GDC
+
+1. **Wrong mode (radians vs degrees).** Most IB questions assume radians unless stated otherwise.
+   Check your calculator mode before every exam.
+2. **Missing brackets.** $\dfrac{1}{2x}$ on a calculator requires `1/(2x)`, not `1/2x` (which the
+   calculator reads as $\dfrac{1}{2} \cdot x$).
+3. **Not using exact values when required.** If a question asks for an exact answer, do not use the
+   GDC to give a decimal approximation.
+4. **Rounding too early.** Carry full calculator precision through intermediate steps, and round
+   only the final answer.
+
+---
+
+## Exam Strategy
+
+### Paper 1 (Non-Calculator)
+
+This paper tests your algebraic fluency and conceptual understanding. Key strategies:
+
+- **Memorise exact values:** $\sin 30° = 1/2$, $\cos 60° = 1/2$, $\tan 45° = 1$, $\sin 0 = 0$,
+  $\cos 0 = 1$, etc.
+- **Practise algebraic manipulation:** Partial fractions, simplifying expressions, solving equations
+  without a calculator.
+- **Know your identities:** Double angle formulas, Pythagorean identities, and log laws should be at
+  your fingertips.
+- **Show all steps:** Since you cannot verify with a calculator, clear working is essential for
+  method marks.
+
+### Paper 2 (GDC Required)
+
+This paper tests your ability to use technology alongside mathematical reasoning. Key strategies:
+
+- **Sketch graphs first.** Before using the GDC, sketch a rough graph to check your answer makes
+  sense.
+- **Use the GDC efficiently.** Know the shortcut keys for your calculator model (e.g. TI-84 or
+  TI-Nspire).
+- **Check GDC answers.** Verify that your calculator's answer is reasonable (correct order of
+  magnitude, correct sign, correct number of solutions).
+
+### Paper 3 (HL Only)
+
+This paper tests problem-solving and mathematical reasoning on HL extension material.
+
+- **Read the entire question before starting.** Paper 3 questions often have multiple parts that
+  build on each other. Understanding the whole question helps you see where each part is heading.
+- **Do not be afraid to use previous parts.** If part (a) asks you to prove a result, use that
+  result in later parts even if you could not complete the proof.
+- **Explain your reasoning.** Paper 3 rewards clear mathematical argument, not just correct answers.
+
+---
+
+## Common Mistakes to Avoid
+
+### Algebra
+
+| Mistake                                        | Correction                                        |
+| :--------------------------------------------- | :------------------------------------------------ |
+| $\sqrt{a^2 + b^2} = a + b$                     | $\sqrt{a^2 + b^2} \neq a + b$ in general          |
+| $\dfrac{1}{a+b} = \dfrac{1}{a} + \dfrac{1}{b}$ | $\dfrac{1}{a+b} \neq \dfrac{1}{a} + \dfrac{1}{b}$ |
+| $(a+b)^2 = a^2 + b^2$                          | $(a+b)^2 = a^2 + 2ab + b^2$                       |
+| $\ln(a+b) = \ln a + \ln b$                     | $\ln(ab) = \ln a + \ln b$ (product, not sum)      |
+| Forgetting $+C$ in indefinite integrals        | Always include the constant of integration        |
+
+### Calculus
+
+| Mistake                                                       | Correction                                                |
+| :------------------------------------------------------------ | :-------------------------------------------------------- |
+| Forgetting the chain rule                                     | Always check for composite functions                      |
+| Wrong sign in quotient rule                                   | $\dfrac{u'v - uv'}{v^2}$ (not $uv' - u'v$)                |
+| $\int \frac{1}{x}\,dx = \ln x$                                | $\int \frac{1}{x}\,dx = \ln\|x\| + C$ (absolute value)    |
+| Confusing $\dfrac{d}{dx}(\sin x)$ and $\dfrac{d}{dx}(\cos x)$ | $\sin x \to \cos x$; $\cos x \to -\sin x$                 |
+| Definite integral sign errors                                 | $\displaystyle\int_a^b = F(b) - F(a)$ (upper minus lower) |
+
+### Trigonometry
+
+| Mistake                        | Correction                                                          |
+| :----------------------------- | :------------------------------------------------------------------ |
+| $\sin 2x = 2\sin x$            | $\sin 2x = 2\sin x \cos x$                                          |
+| Forgetting domain restrictions | $\sin x = 0.5$ has infinitely many solutions; state the range asked |
+| Radians vs degrees             | Check what the question specifies; default to radians               |
+
+### Probability and Statistics
+
+| Mistake                                  | Correction                                                                      |
+| :--------------------------------------- | :------------------------------------------------------------------------------ |
+| $P(A \text{ or } B) = P(A) + P(B)$       | Only if mutually exclusive; otherwise $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| $P(A \text{ and } B) = P(A) \times P(B)$ | Only if independent; otherwise use conditional probability                      |
+| Confusing $\mu$ and $\bar{x}$            | $\mu$ is the population mean; $\bar{x}$ is the sample mean                      |
+
+---
+
+## Internal Assessment (IA) Tips
+
+The mathematical exploration is worth 20% of your final grade. It is an opportunity to explore a
+topic of personal interest in depth.
+
+### Choosing a Topic
+
+- Choose a topic you are genuinely interested in — motivation shows in the quality of work.
+- Ensure the topic has sufficient mathematical depth (calculus, statistics, or algebra beyond the
+  syllabus).
+- Topics that connect mathematics to real-world applications tend to score well (e.g. modelling
+  population growth, analysing projectile motion, investigating the maths behind musical harmonics).
+
+### Structure
+
+1. **Introduction:** Introduce the topic, state the aim, and explain why it is interesting.
+2. **Background:** Define key terms and introduce relevant mathematical concepts.
+3. **Exploration:** Present calculations, derivations, and analysis. Show your working clearly.
+4. **Conclusion:** Summarize findings, discuss limitations, and suggest extensions.
+5. **Bibliography:** Cite all sources.
+
+### Scoring Criteria
+
+- **Presentation:** Well-organised, coherent, and concise.
+- **Mathematical Communication:** Correct notation, clear explanations, appropriate use of
+  technology.
+- **Personal Engagement:** Evidence of independent thinking and personal interest.
+- **Reflection:** Critical evaluation of methods and results.
+- **Use of Mathematics:** Sophistication, rigour, and breadth of mathematical techniques.

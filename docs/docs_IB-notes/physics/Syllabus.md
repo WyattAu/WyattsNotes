@@ -105,3 +105,178 @@ This is based on the 2025 syllabus.
 |                                     |                                      | SL & HL | Stellar equilibrium (radiation pressure vs. gravitational forces).                                                                                  | N/A                                                                                                                                                               |
 |                                     |                                      | SL & HL | Hertzsprung-Russell (HR) diagram and main stellar regions.                                                                                          | N/A                                                                                                                                                               |
 |                                     |                                      | SL & HL | Stellar parallax method for determining distance to stars.                                                                                          | `d(parsec) = 1 / p(arc-second)`                                                                                                                                   |
+
+---
+
+## Topic Breakdown by Theme
+
+### Theme A: Space, Time and Motion (Core)
+
+This is the foundation of the entire course. It covers classical mechanics from kinematics through
+to work, energy, and power, then extends into rigid body mechanics and relativity at HL.
+
+**Key concepts by subtopic:**
+
+- **A.1 Kinematics:** Describing motion using displacement, velocity, and acceleration. The SUVA
+  equations are the most important tool — memorise them and practise identifying which variable is
+  unknown in each problem. Projectile motion is a frequent exam question; always resolve into
+  horizontal and vertical components independently.
+- **A.2 Forces and Momentum:** Free-body diagrams are essential. Newton's second law in momentum
+  form ($F = \Delta p / \Delta t$) is commonly tested with impulse questions. Elastic vs inelastic
+  collisions — remember that kinetic energy is conserved in elastic collisions only.
+- **A.3 Work, Energy and Power:** The work-energy theorem connects force and motion through energy.
+  Efficiency questions are straightforward marks — do not lose them.
+- **A.4 Rigid Body Mechanics (HL):** Torque and rotational equilibrium appear frequently in Paper 2.
+  The moment of inertia depends on mass distribution, not just total mass.
+- **A.5 Relativity (HL):** Time dilation and length contraction are the most commonly tested
+  concepts. Always identify the proper time and proper length first — these belong to the frame
+  where the event occurs at the same position (proper time) or where the object is at rest (proper
+  length).
+
+### Theme B: The Particulate Nature of Matter (Core)
+
+This theme bridges mechanics and thermal physics.
+
+- **B.1 Thermal Energy Transfers:** The distinction between specific heat capacity and specific
+  latent heat is critical. Heat transfer mechanisms (conduction, convection, radiation) are
+  qualitative but commonly tested.
+- **B.2 Greenhouse Effect:** Energy balance of the Earth is a popular exam topic. Be comfortable
+  with albedo, emissivity, and the solar constant.
+- **B.3 Gas Laws:** The ideal gas law connects macroscopic quantities (P, V, T) to microscopic
+  properties (N, $k_B$). The derivation of $P = \frac{1}{3}\rho \langle v^2 \rangle$ from kinetic
+  theory is a classic HL derivation.
+- **B.4 Thermodynamics (HL):** The first law ($\Delta U = Q - W$) and second law (entropy) are
+  central. Be able to sketch and interpret PV diagrams for all four thermodynamic processes.
+- **B.5 Current and Circuits:** Internal resistance questions are almost guaranteed. Always draw the
+  circuit diagram first.
+
+### Theme C: Wave Behaviour (Core)
+
+Waves appear across many contexts — from sound and light to quantum mechanics.
+
+- **C.1 SHM:** The defining equation $a = -\omega^2 x$ is fundamental. Energy interchange between
+  kinetic and potential in SHM mirrors that of a mass-spring system.
+- **C.2 Wave Model:** Know the full electromagnetic spectrum in order. The wave equation
+  $v = f\lambda$ is used in almost every wave problem.
+- **C.3 Wave Phenomena:** Snell's law, Young's double slit, and single-slit diffraction are heavily
+  examined. For double slit: $s = \lambda D / d$.
+- **C.4 Standing Waves and Resonance:** Know the harmonic series for both open and closed pipes, and
+  for strings fixed at both ends.
+- **C.5 Doppler Effect:** The electromagnetic Doppler effect ($\Delta f / f \approx v / c$) is used
+  in astrophysics. The full sound Doppler equations (HL) require careful attention to signs.
+
+### Theme D: Fields (Core)
+
+Fields describe forces that act at a distance — gravitational, electric, and magnetic.
+
+- **D.1 Gravitational Fields:** Orbital mechanics (Kepler's laws, orbital speed, escape velocity)
+  are common. Remember that gravitational potential energy is negative.
+- **D.2 Electric and Magnetic Fields:** Coulomb's law parallels Newton's law of gravitation.
+  Electric potential and field strength are related by $E = -\Delta V_e / \Delta r$.
+- **D.3 Motion in Electromagnetic Fields:** The force on a charge in a magnetic field
+  ($F = qvB \sin\theta$) is always perpendicular to the velocity, causing circular motion. The
+  velocity selector and mass spectrometer are classic applications.
+- **D.4 Induction (HL):** Faraday's law ($\varepsilon = -N \Delta\Phi / \Delta t$) and Lenz's law
+  (direction of induced current opposes the change) are essential.
+
+### Theme E: Nuclear and Quantum Physics (Core)
+
+This theme introduces the quantum nature of matter and energy.
+
+- **E.1 Structure of the Atom:** The Geiger-Marsden experiment, emission/absorption spectra, and the
+  Bohr model for hydrogen are all exam staples.
+- **E.2 Quantum Physics (HL):** The photoelectric effect ($E_{max} = hf - \Phi$) and de Broglie
+  wavelength ($\lambda = h/p$) demonstrate wave-particle duality.
+- **E.3 Radioactive Decay:** Half-life, activity, and the decay law ($N = N_0 e^{-\lambda t}$) are
+  SL essentials. Mass defect and binding energy connect to $E = mc^2$.
+- **E.4 Fission:** Chain reactions, critical mass, and the role of moderators and control rods.
+- **E.5 Fusion and Stars:** The HR diagram, stellar evolution, and the conditions for fusion (high
+  temperature and density).
+
+---
+
+## Assessment Structure
+
+### Standard Level (SL)
+
+| Component | Paper 1                            | Paper 2 | IA  |
+| :-------- | :--------------------------------- | :------ | :-- |
+| Duration  | 45 min (MCQ) + 75 min (structured) | 75 min  | —   |
+| Weighting | 30% (MCQ) + 20% (structured) = 50% | 25%     | 25% |
+
+### Higher Level (HL)
+
+| Component | Paper 1                            | Paper 2 | Paper 3 | IA  |
+| :-------- | :--------------------------------- | :------ | :------ | :-- |
+| Duration  | 60 min (MCQ) + 90 min (structured) | 90 min  | 60 min  | —   |
+| Weighting | 36% (MCQ) + 24% (structured) = 60% | 20%     | 20%     | 20% |
+
+**Paper 1** consists of multiple-choice questions (Section A) followed by structured/data-based
+questions (Section B). No calculator is permitted for Section A; a calculator is permitted for
+Section B.
+
+**Paper 2** contains short-response and extended-response questions covering the full syllabus. A
+calculator is required.
+
+**Paper 3 (HL only)** focuses on the HL extension material and requires problem-solving and
+analytical skills.
+
+**IA (Internal Assessment)** is an individual investigation of your own choosing. It is worth 20% at
+both SL and HL.
+
+---
+
+## Recommended Study Approach
+
+### 1. Build a Strong Foundation in Mechanics
+
+Theme A (Space, Time and Motion) underpins almost everything else. If your mechanics is weak,
+fields, waves, and thermodynamics will all be harder. Master SUVA equations, free-body diagrams, and
+energy conservation before moving on.
+
+### 2. Practise Derivations (HL)
+
+HL exams frequently require you to derive results from first principles. Key derivations to know:
+
+- Centripetal acceleration from circular motion geometry
+- Pressure of an ideal gas from kinetic theory
+- Gravitational potential energy from Newton's law of gravitation
+- Escape velocity from energy conservation
+- Bohr model energy levels
+
+### 3. Use the Data Booklet Effectively
+
+The IB Physics data booklet contains all the formulae you need. However, you must know:
+
+- What each symbol means
+- The conditions under which each formula applies
+- How to combine formulae to solve multi-step problems
+
+### 4. Focus on Multi-Step Problems
+
+Examination questions increasingly combine concepts from different themes. For example, a question
+might combine:
+
+- Projectile motion (A.1) with gravitational fields (D.1)
+- Electric fields (D.2) with energy conservation (A.3)
+- Nuclear decay (E.3) with thermodynamics (B.4)
+
+### 5. Exam Technique
+
+- **Show all working:** Marks are awarded for method, not just the final answer.
+- **Include units in every intermediate step:** A correct numerical answer without units loses
+  marks.
+- **Draw diagrams:** Free-body diagrams, circuit diagrams, and ray diagrams earn marks and help you
+  organise your thinking.
+- **Estimate before calculating:** Quick order-of-magnitude estimates catch calculation errors.
+- **Manage your time:** In Papers 1 and 2, allocate roughly 1 mark per minute. Do not get stuck on a
+  single question.
+
+### 6. Common Pitfalls
+
+- Confusing **distance** and **displacement**, or **speed** and **velocity**.
+- Forgetting the **negative sign** in the first law of thermodynamics sign convention.
+- Using $\theta = 0$ instead of $\theta = 90°$ for the angle between velocity and magnetic field
+  when applying $F = qvB \sin\theta$.
+- Mixing up **half-life** and **decay constant** — remember $T_{1/2} = \ln 2 / \lambda$.
+- Forgetting that **gravitational potential energy is negative** and approaches zero at infinity.
