@@ -6,7 +6,6 @@ tags:
 categories:
   - ML
 slug: supervised-learning
-sidebar_position: -1
 ---
 
 Supervised learning is the field of training models to act as a mapping between a set of inputs to a

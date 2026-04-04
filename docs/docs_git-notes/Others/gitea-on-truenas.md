@@ -6,7 +6,6 @@ tags:
 categories:
   - CS
 slug: hosting-gitea-truenas
-sidebar_position: -1
 ---
 
 ## Procedure

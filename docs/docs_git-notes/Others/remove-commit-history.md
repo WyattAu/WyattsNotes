@@ -7,7 +7,6 @@ tags:
 categories:
   - CS
 slug: remove-commit-history
-sidebar_position: -1
 ---
 
 ## Proposed Solution
