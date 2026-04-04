@@ -8,15 +8,15 @@ categories:
 slug: wrap
 ---
 
-<details>
-<summary><strong>C.1 Simple Harmonic Motion, C.2 Wave Model & C.3 Wave Phenomena</strong></summary>
+## C.1 Simple Harmonic Motion, C.2 Wave Model & C.3 Wave Phenomena
 
-1. **Question (C.1 & D.1 - HL Only):** A small satellite of mass _m_ is in a circular orbit of
-radius _R_ around a planet of mass _M_ ($M \gg m$). A slight external impulse causes it to oscillate
+**Question 1 (C.1 & D.1 - HL Only):** A small satellite of mass _m_ is in a circular orbit of radius
+_R_ around a planet of mass _M_ ($M \gg m$). A slight external impulse causes it to oscillate
 slightly in the radial direction around its stable circular path. By considering the effective
 potential energy of the system (gravitational + rotational kinetic), show that for small radial
 displacements _x_ from the stable orbit ($r = R+x$), the satellite undergoes simple harmonic motion.
 Determine the period of these small radial oscillations.
+
 <details>
 <summary>Answer</summary>
 
@@ -203,14 +203,11 @@ to the star.
     m.
   - This is approximately 1.87 light-years.
 
-<p>
-</p>
 </details>
 
-<details>
-<summary><strong>Wave Properties, Reflection, Refraction, Diffraction, Interference, Standing Waves &amp; Doppler Effect</strong></summary>
+## Wave Properties, Reflection, Refraction, Diffraction, Interference, Standing Waves & Doppler Effect
 
-## Fundamental Wave Properties
+### Fundamental Wave Properties
 
 A **wave** is a disturbance that transfers energy through a medium (or vacuum, for EM waves) without
 transferring matter.
@@ -510,5 +507,3 @@ $$f' = f\left(\frac{v}{v + v_s}\right) = 800\left(\frac{343}{343 + 30}\right) = 
 | $v = \sqrt{\frac{T}{\mu}}$                          | Wave speed on a string           |
 | $f' = f\left(\frac{v \pm v_o}{v \mp v_s}\right)$    | Doppler effect (sound)           |
 | $\frac{\Delta\lambda}{\lambda} \approx \frac{v}{c}$ | Doppler shift (light, $v \ll c$) |
-
-</details>
