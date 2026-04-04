@@ -280,3 +280,307 @@ a system update. :::
 - [Filesystem Library](./1_filesystem.md)
 - [Random Number Generation](./3_random_numbers.md)
 - [Regular Expressions](./4_regular_expressions.md)
+
+### Clock Precision and `is_steady`
+
+The `is_steady` static member of each clock indicates whether the clock is monotonic [N4950
+§29.5.7]:
+
+```cpp
+#include <chrono>
+#include <iostream>
+
+void clock_properties() {
+    std::cout << "system_clock is_steady: "
+              << std::chrono::system_clock::is_steady << "\n";
+    // system_clock is_steady: 0 (false)
+
+    std::cout << "steady_clock is_steady: "
+              << std::chrono::steady_clock::is_steady << "\n";
+    // steady_clock is_steady: 1 (true)
+
+    std::cout << "high_resolution_clock is_steady: "
+              << std::chrono::high_resolution_clock::is_steady << "\n";
+    // Depends on implementation (often true, since it aliases steady_clock)
+}
+```
+
+`steady_clock` is typically implemented using `clock_gettime(CLOCK_MONOTONIC)` on POSIX or
+`QueryPerformanceCounter` on Windows. The minimum tick period is 1 nanosecond by standard guarantee,
+but the actual resolution depends on the hardware timer:
+
+- **x86-64 Linux:** Typically `CLOCK_MONOTONIC_RAW` with ~1 ns resolution (TSC).
+- **x86-64 Windows:** `QueryPerformanceCounter` with ~100 ns resolution (HPET or TSC).
+- **ARM Linux:** May use the generic timer with ~10–1000 ns resolution depending on the SoC.
+
+### `std::ratio` and Duration Representation
+
+`std::ratio<N, D>` is a compile-time rational number [N4950 §20.4.2]. The numerator and denominator
+are reduced to lowest terms at compile time. This is the basis for all duration period calculations:
+
+```cpp
+#include <chrono>
+#include <cstdint>
+#include <iostream>
+#include <type_traits>
+
+void ratio_details() {
+    using namespace std::chrono;
+
+    // std::nano = std::ratio<1, 1000000000>
+    static_assert(nanoseconds::period::num == 1);
+    static_assert(nanoseconds::period::den == 1000000000);
+
+    // std::milli = std::ratio<1, 1000>
+    static_assert(milliseconds::period::num == 1);
+    static_assert(milliseconds::period::den == 1000);
+
+    // The common_type of seconds and milliseconds is milliseconds
+    using Common = std::common_type_t<seconds, milliseconds>;
+    static_assert(std::is_same_v<Common, milliseconds>);
+
+    // The common_type of seconds and nanoseconds is nanoseconds
+    using Common2 = std::common_type_t<seconds, nanoseconds>;
+    static_assert(std::is_same_v<Common2, nanoseconds>);
+
+    // Custom duration: 1/60 of a second (frame time at 60 Hz)
+    using frames = duration<int64_t, std::ratio<1, 60>>;
+    frames f = 30_frames;
+    auto f_secs = duration_cast<seconds>(f);
+    std::cout << "30 frames = " << f_secs.count() << " seconds\n";
+    // 30 frames = 0 seconds (truncated from 0.5)
+
+    auto f_secs_ceil = ceil<seconds>(f);
+    std::cout << "30 frames (ceil) = " << f_secs_ceil.count() << " seconds\n";
+    // 30 frames (ceil) = 1 second
+}
+```
+
+:::warning `std::common_type_t<seconds, seconds>` is `seconds`, not `int`. The `Rep` type is
+preserved. But `std::common_type_t<seconds, milliseconds>` is `milliseconds` because milliseconds
+has a finer period. The common type always has the **shortest** (finest) period among the inputs
+[N4950 §29.5.3]. :::
+
+### Duration Literals and User-Defined Literals
+
+C++14 introduced `operator""` literals for `std::chrono` durations [N4950 §29.5.3.2]:
+
+```cpp
+#include <chrono>
+#include <iostream>
+
+using namespace std::chrono_literals;
+
+void duration_literals() {
+    auto d1 = 5ns;
+    auto d2 = 100us;
+    auto d3 = 42ms;
+    auto d4 = 5s;
+    auto d5 = 2min;
+    auto d6 = 3h;
+
+    // These are constexpr — usable at compile time
+    constexpr auto timeout = 500ms;
+
+    // C++20 literals
+    auto d7 = 7d;
+    auto d8 = 2w;
+
+    // Arithmetic
+    auto total = d4 + d5 + d6;
+    std::cout << "Total: " << duration_cast<seconds>(total).count() << "s\n";
+    // Total: 7562s (2h + 5min + 2s)
+
+    // Multiplication and division
+    auto doubled = 3h * 2;       // 6h
+    auto per_item = 60s / 4;     // 15s
+    auto count = 90s / 15s;      // 6 (scalar)
+}
+```
+
+### Time Points
+
+A `std::chrono::time_point<Clock, Duration>` represents a point in time relative to a clock's epoch
+[N4950 §29.5.5]. The epoch of `system_clock` is the Unix epoch (1970-01-01T00:00:00 UTC).
+
+```cpp
+#include <chrono>
+#include <iostream>
+
+void time_point_basics() {
+    using namespace std::chrono;
+
+    auto now = system_clock::now();
+    auto epoch = system_clock::time_point{};
+
+    auto since_epoch = now - epoch;
+    std::cout << "Seconds since epoch: "
+              << duration_cast<seconds>(since_epoch).count() << "\n";
+
+    // time_point arithmetic
+    auto future = now + 24h;
+    auto past = now - 12h;
+
+    auto diff = future - past;
+    std::cout << "Diff: " << duration_cast<hours>(diff).count() << " hours\n";
+    // Diff: 36 hours
+
+    // Comparison
+    std::cout << "future > now: " << (future > now ? "yes" : "no") << "\n";
+    std::cout << "past < now: " << (past < now ? "yes" : "no") << "\n";
+}
+```
+
+### Converting `system_clock` to `time_t`
+
+`system_clock` is the only clock that can be converted to and from `std::time_t` [N4950 §29.5.7.2]:
+
+```cpp
+#include <chrono>
+#include <ctime>
+#include <iostream>
+
+void time_t_conversion() {
+    using namespace std::chrono;
+
+    auto now = system_clock::now();
+    std::time_t tt = system_clock::to_time_t(now);
+
+    std::cout << "ctime: " << std::ctime(&tt);
+
+    // Round-trip
+    auto recovered = system_clock::from_time_t(tt);
+    auto drift = duration_cast<nanoseconds>(now - recovered);
+    std::cout << "Round-trip drift: " << drift.count() << " ns\n";
+    // Typically 0 or 1 second (truncation to seconds)
+}
+```
+
+:::warning `std::time_t` has only 1-second resolution. Converting `time_point` → `time_t` →
+`time_point` loses sub-second precision. On systems where `time_t` is 32-bit, dates beyond
+2038-01-19 cannot be represented (the Year 2038 problem). Modern 64-bit systems use a 64-bit
+`time_t`. :::
+
+### C++20 Calendar: `year_month_day` Arithmetic
+
+C++20's calendar types support natural date arithmetic that handles month rollover, leap years, and
+day-of-week calculations correctly [N4950 §29.8]:
+
+```cpp
+#include <chrono>
+#include <iostream>
+
+namespace chrono = std::chrono;
+using namespace chrono::literals;
+
+void calendar_arithmetic() {
+    // Adding months handles rollover
+    chrono::year_month_day date{2026y, chrono::January, 31d};
+    auto next_month = date + chrono::months{1};
+    // February 31 does not exist — the standard clamps to the last day of February
+    std::cout << "Jan 31 + 1 month = " << static_cast<unsigned>(next_month.month())
+              << "/" << static_cast<unsigned>(next_month.day()) << "\n";
+    // Jan 31 + 1 month = 2/28 (or 2/29 in a leap year)
+
+    // Leap year detection
+    chrono::year y{2024};
+    std::cout << "2024 is leap: " << y.is_leap() << "\n";   // true
+    std::cout << "2023 is leap: " << chrono::year{2023}.is_leap() << "\n"; // false
+
+    // Day of week
+    chrono::year_month_day known{2026y, chrono::April, 1d};
+    chrono::weekday wd = chrono::weekday(known);
+    std::cout << "2026-04-01 is a " << wd << "\n";
+    // 2026-04-01 is a Wed
+
+    // Difference between two dates
+    chrono::year_month_day d1{2026y, chrono::January, 1d};
+    chrono::year_month_day d2{2026y, chrono::April, 4d};
+    auto diff = chrono::sys_days(d2) - chrono::sys_days(d1);
+    std::cout << "Days between: " << diff.count() << "\n";
+    // Days between: 93
+}
+```
+
+:::warning `operator+` on `year_month_day` with `months` or `years` uses the "last day clamping"
+rule: if the resulting day is out of range (e.g., January 31 + 1 month = February 31), the day is
+clamped to the last valid day of the resulting month. This behavior is defined in [N4950 §29.8.6].
+:::
+
+### C++20 Time-of-Day: `hh_mm_ss`
+
+The `hh_mm_ss` class [N4950 §29.8.3] represents a time of day extracted from a duration:
+
+```cpp
+#include <chrono>
+#include <iostream>
+
+void time_of_day_demo() {
+    using namespace std::chrono;
+
+    // A duration representing time since midnight
+    auto time_since_midnight = 15h + 27min + 45s + 123ms;
+
+    hh_mm_ss time{time_since_midnight};
+    std::cout << "Hours:       " << time.hours().count() << "\n";
+    std::cout << "Minutes:     " << time.minutes().count() << "\n";
+    std::cout << "Seconds:     " << time.seconds().count() << "\n";
+    std::cout << "Subseconds:  " << time.subseconds().count() << "\n";
+    std::cout << "Is negative: " << time.is_negative() << "\n";
+    // Hours: 15, Minutes: 27, Seconds: 45, Subseconds: 123000000
+}
+```
+
+### Wait with `std::this_thread::sleep_for` and `sleep_until`
+
+```cpp
+#include <chrono>
+#include <iostream>
+#include <thread>
+
+void sleep_demo() {
+    using namespace std::chrono;
+
+    // Sleep for a duration
+    auto start = steady_clock::now();
+    std::this_thread::sleep_for(250ms);
+    auto elapsed = steady_clock::now() - start;
+    std::cout << "Slept for "
+              << duration_cast<milliseconds>(elapsed).count() << " ms\n";
+    // Typically 250-260ms (OS scheduling jitter)
+
+    // Sleep until an absolute time
+    auto deadline = steady_clock::now() + 100ms;
+    std::this_thread::sleep_until(deadline);
+}
+```
+
+:::warning `sleep_for` and `sleep_until` can oversleep due to OS scheduling. The actual sleep
+duration is a lower bound, not a guarantee. For high-precision timing (sub-millisecond), use
+busy-waiting with `std::chrono::steady_clock` or OS-specific spin loops. :::
+
+### Common Pitfalls
+
+1. **Using `system_clock` for measuring elapsed time:** `system_clock` can jump backwards (NTP
+   correction, DST transition, manual adjustment). Always use `steady_clock` for benchmarking and
+   timeouts.
+
+2. **Mixing `duration_cast` with `round`/`floor`/`ceil`:** `duration_cast` truncates towards zero.
+   For a duration of `-1500ms`, `duration_cast<seconds>(-1500ms)` yields `-1s`, not `-2s`. Use
+   `floor<seconds>(-1500ms)` for `-2s`.
+
+3. **Integer overflow in duration arithmetic:** Durations use the `Rep` type for storage. If `Rep`
+   is `int32_t` and you compute `1000000s * 1000`, the result overflows. Use `int64_t` durations
+   (the default for standard typedefs) or check bounds.
+
+4. **Timezone database not available:** On some minimal Linux containers or embedded systems, the
+   IANA timezone database may not be installed. `locate_zone()` will throw `std::runtime_error`.
+   Always wrap timezone operations in try-catch.
+
+5. **`high_resolution_clock` may be `system_clock`:** The standard allows `high_resolution_clock` to
+   alias either `system_clock` or `steady_clock`. If it aliases `system_clock`, it is not monotonic
+   and is unsuitable for measuring elapsed time. Check `is_steady` at runtime.
+
+6. **Ignoring `clock_cast` for inter-clock conversions:** C++20 provides `std::chrono::clock_cast`
+   to convert time points between clocks. Converting manually (e.g., subtracting epochs) is
+   error-prone and may not account for clock skew.

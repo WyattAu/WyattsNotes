@@ -280,3 +280,295 @@ values in pairs, so the distribution object may cache one value internally for e
 - [Filesystem Library](./1_filesystem.md)
 - [Chrono Library](./2_chrono.md)
 - [Regular Expressions](./4_regular_expressions.md)
+
+### Engine State, Serialization, and Reproducibility
+
+Every random number engine maintains internal state that determines the next value in the sequence.
+For `std::mt19937`, the state is 624 × 32-bit words (2496 bytes). This state can be saved and
+restored using the `<<` and `>>` operators, enabling deterministic replay:
+
+```cpp
+#include <iostream>
+#include <random>
+#include <sstream>
+
+void engine_serialization_demo() {
+    std::mt19937 engine(42);
+
+    std::cout << "Before save: " << engine() << " " << engine() << "\n";
+
+    // Save state
+    std::ostringstream oss;
+    oss << engine;
+
+    // Generate more values
+    std::cout << "More values: " << engine() << " " << engine() << "\n";
+
+    // Restore state — subsequent values will match the saved point
+    std::istringstream iss(oss.str());
+    iss >> engine;
+
+    std::cout << "After restore: " << engine() << " " << engine() << "\n";
+    // After restore prints the same values as "More values"
+}
+```
+
+This serialization is essential for:
+
+- **Reproducible simulations:** Save the engine state at checkpoints and replay from any point.
+- **Networked games:** Synchronize the RNG state across clients for deterministic behavior.
+- **Fuzz testing:** Record the RNG state that triggered a crash and replay it.
+
+:::warning The `operator<<`/`operator>>` format is **not** portable across compilers or standard
+library implementations. GCC libstdc++ and Clang libc++ may produce different binary formats. Use
+only the same implementation for save/restore. :::
+
+### `std::random_device` Implementation Details
+
+`std::random_device` is the standard library's interface to OS-provided entropy [N4950 §29.6.5.3]:
+
+| Platform | Implementation (Typical)            | Entropy Source           |
+| :------- | :---------------------------------- | :----------------------- |
+| Linux    | Reads from `/dev/urandom`           | Kernel CSPRNG (ChaCha20) |
+| macOS    | `arc4random_buf` or `/dev/urandom`  | Kernel CSPRNG            |
+| Windows  | `BCryptGenRandom` or `RtlGenRandom` | OS cryptographic RNG     |
+| MinGW    | Historically broken (fixed GCC 9+)  | Was PRNG, now OS entropy |
+
+```cpp
+#include <iostream>
+#include <random>
+
+void random_device_props() {
+    std::random_device rd;
+
+    std::cout << "Entropy: " << rd.entropy() << "\n";
+    // On Linux: typically 32.0 (full 32-bit entropy)
+    // On some implementations: 0.0 (entropy estimate not available)
+
+    std::cout << "Min: " << rd.min() << "\n";
+    std::cout << "Max: " << rd.max() << "\n";
+    // Min: 0, Max: 4294967295 (UINT_MAX) on most platforms
+}
+```
+
+:::warning `std::random_device::entropy()` returns 0.0 on many implementations even when the device
+is truly non-deterministic. A return of 0.0 means "entropy estimate not available," NOT "no
+entropy." Do not use this value to decide whether the device is secure. :::
+
+### `std::seed_seq` and Initialization Quality
+
+The Mersenne Twister's standard initialization (`mt19937(seed)`) takes a single 32-bit seed and
+expands it into the 624-word state. This expansion has known weaknesses: the lower bits of the
+initial state have lower entropy [Matsumoto & Nishimura, 1998]. `std::seed_seq` addresses this by
+producing a well-distributed initial state from multiple entropy sources [N4950 §29.6.3.8]:
+
+```cpp
+#include <cstdint>
+#include <iostream>
+#include <random>
+
+void seed_seq_quality_demo() {
+    // Weak initialization: single 32-bit seed
+    // Only 2^32 possible initial states — not enough for the 2^19937-1 period
+    std::mt19937 weak(42);
+
+    // Strong initialization: seed_seq with multiple entropy sources
+    std::random_device rd;
+    std::seed_seq seq{
+        rd(), rd(), rd(), rd(),
+        static_cast<std::uint32_t>(0xDEADBEEF),
+        static_cast<std::uint32_t>(0xCAFEBABE)
+    };
+
+    std::mt19937 strong(seq);
+
+    // seed_seq can also produce a sequence of seed values
+    std::vector<std::uint32_t> seeds(10);
+    seq.generate(seeds.begin(), seeds.end());
+
+    std::cout << "Generated seeds: ";
+    for (auto s : seeds) {
+        std::cout << s << " ";
+    }
+    std::cout << "\n";
+}
+```
+
+The `std::seed_seq::generate` algorithm uses a warm-up process based on the initialization algorithm
+from the Mersenne Twister paper. It performs multiple mixing passes to ensure all bits of the
+initial state have high entropy.
+
+### `std::uniform_int_distribution` Modulo Bias
+
+A naive way to generate a random integer in `[0, n)` is `engine() % n`. This introduces **modulo
+bias** when `n` does not evenly divide the engine's range [N4950 §29.6.4.1]:
+
+$$P(\text{outcome } k) = \begin{cases} \lceil R / n \rceil / R & \text{if } k \lt R \bmod n \\ \lfloor R / n \rfloor / R & \text{otherwise} \end{cases}$$
+
+where $R = \text{max} - \text{min} + 1$ is the engine's range.
+
+For example, with a 16-bit engine ($R = 65536$) and $n = 3$:
+
+- $65536 = 21845 \times 3 + 1$
+- Outcomes 0 and 1 have probability $21846 / 65536$
+- Outcome 2 has probability $21845 / 65536$
+
+This bias is small for large ranges, but `std::uniform_int_distribution` eliminates it entirely by
+using rejection sampling internally.
+
+### Discrete Distribution: Weighted Random Selection
+
+`std::discrete_distribution` allows sampling from an arbitrary discrete probability distribution
+defined by a set of weights [N4950 §29.6.4.5]:
+
+```cpp
+#include <iostream>
+#include <random>
+#include <string>
+#include <vector>
+
+void discrete_distribution_demo() {
+    std::mt19937 engine(12345);
+
+    // Define a custom distribution over actions
+    std::vector<double> weights = {0.50, 0.30, 0.15, 0.05};
+    std::vector<std::string> actions = {"idle", "walk", "run", "jump"};
+
+    std::discrete_distribution<int> dist(weights.begin(), weights.end());
+
+    std::vector<int> counts(4, 0);
+    constexpr int n = 100'000;
+
+    for (int i = 0; i < n; ++i) {
+        int action = dist(engine);
+        ++counts[action];
+    }
+
+    for (std::size_t i = 0; i < actions.size(); ++i) {
+        double freq = static_cast<double>(counts[i]) / n;
+        std::cout << actions[i] << ": " << freq
+                  << " (expected " << weights[i] << ")\n";
+    }
+    // idle: ~0.50, walk: ~0.30, run: ~0.15, jump: ~0.05
+}
+```
+
+:::info `std::discrete_distribution` uses the Walker alias method internally, which provides $O(1)$
+sampling time after an $O(n)$ setup phase. This is optimal for distributions that are sampled many
+times with the same weights [N4950 §29.6.4.5]. :::
+
+### Poisson and Exponential Distributions
+
+These distributions model event arrival processes and are essential for simulation:
+
+```cpp
+#include <cmath>
+#include <iostream>
+#include <random>
+#include <vector>
+
+void arrival_process_demo() {
+    std::mt19937 engine(42);
+
+    // Poisson distribution: number of events in a fixed interval
+    // Parameter lambda = average rate per interval
+    std::poisson_distribution<int> events_per_hour(5.0);
+
+    std::cout << "Events per hour (Poisson, lambda=5):\n";
+    for (int i = 0; i < 20; ++i) {
+        std::cout << "  " << events_per_hour(engine);
+    }
+    std::cout << "\n";
+
+    // Exponential distribution: time between events
+    // Parameter lambda = rate (events per unit time)
+    std::exponential_distribution<double> interarrival(5.0);
+
+    std::cout << "Inter-arrival times (Exponential, lambda=5):\n";
+    double total = 0.0;
+    for (int i = 0; i < 10; ++i) {
+        double t = interarrival(engine);
+        total += t;
+        std::cout << "  " << t << "s";
+    }
+    std::cout << "\n";
+    std::cout << "Total simulated time: " << total << "s\n";
+}
+```
+
+### Performance Considerations
+
+| Engine          | State Size | `operator()` Speed  | Memory Footprint |
+| :-------------- | :--------- | :------------------ | :--------------- |
+| `minstd_rand`   | 4 bytes    | Very fast (LCG)     | Minimal          |
+| `mt19937`       | 2500 bytes | Fast (~5 ns/call)   | Large            |
+| `mt19937_64`    | 2500 bytes | Fast (~5 ns/call)   | Large            |
+| `ranlux48`      | 96 bytes   | Slow (discarding)   | Moderate         |
+| `random_device` | N/A        | Very slow (OS call) | None             |
+
+```cpp
+#include <chrono>
+#include <iostream>
+#include <random>
+
+void engine_benchmark() {
+    using namespace std::chrono;
+    constexpr int iterations = 10'000'000;
+
+    // mt19937
+    {
+        std::mt19937 engine(42);
+        auto start = steady_clock::now();
+        volatile std::uint32_t sink = 0;
+        for (int i = 0; i < iterations; ++i) {
+            sink = engine();
+        }
+        auto elapsed = duration_cast<milliseconds>(steady_clock::now() - start);
+        std::cout << "mt19937: " << elapsed.count() << " ms for "
+                  << iterations << " values\n";
+    }
+
+    // random_device (MUCH slower — OS syscall per call)
+    {
+        std::random_device rd;
+        auto start = steady_clock::now();
+        volatile unsigned int sink = 0;
+        for (int i = 0; i < 100'000; ++i) {
+            sink = rd();
+        }
+        auto elapsed = duration_cast<milliseconds>(steady_clock::now() - start);
+        std::cout << "random_device: " << elapsed.count() << " ms for "
+                  << 100'000 << " values\n";
+    }
+}
+```
+
+:::tip Never use `std::random_device` inside a tight loop. Seed a PRNG engine with one
+`random_device` call, then use the engine for all subsequent random values. `random_device` may make
+an OS syscall for every call, which is orders of magnitude slower than a PRNG. :::
+
+### Common Pitfalls
+
+1. **Seeding `mt19937` with a single 32-bit value:** The engine has 2496 bytes of state. A single
+   32-bit seed can only produce 2^32 distinct initial states — a tiny fraction of the engine's
+   2^19937-1 period. Use `std::seed_seq` with multiple entropy sources.
+
+2. **Using `mt19937` for cryptography:** The Mersenne Twister is **not** cryptographically secure.
+   Given 624 consecutive outputs, the full internal state can be recovered. Use a CSPRNG (e.g.,
+   `std::random_device` backed by `/dev/urandom`, or a library like libsodium) for
+   security-sensitive applications.
+
+3. **Creating distributions inside the loop:** `std::uniform_int_distribution` is lightweight, but
+   some distributions (like `std::discrete_distribution`) have expensive constructors. Create the
+   distribution once and reuse it.
+
+4. **Ignoring thread safety:** None of the standard engine or distribution types are thread-safe.
+   Each thread should have its own engine, or access must be protected by a mutex.
+
+5. **Assuming `random_device` is always non-deterministic:** On some older MinGW implementations,
+   `random_device` was implemented as a fixed-seed PRNG. Verify on your target platform, or read
+   from `/dev/urandom` directly on POSIX systems.
+
+6. **Floating-point distribution bounds:** `std::uniform_real_distribution&lt;double>(0.0, 1.0)`
+   produces values in $[0.0, 1.0)$ — the upper bound is exclusive. If you need a closed interval
+   $[0.0, 1.0]$, use `std::uniform_real_distribution&lt;double>(0.0, std::nextafter(1.0, 2.0))`.
