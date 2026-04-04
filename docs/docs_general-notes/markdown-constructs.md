@@ -244,37 +244,27 @@ Tabs require an MDX import:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs>
-<TabItem value="python" label="Python">
+&lt;Tabs&gt; &lt;TabItem value="python" label="Python"&gt;
 
 ```python
 print("Python code")
 ```
-````
 
-</TabItem>
-<TabItem value="java" label="Java">
+&lt;/TabItem&gt; &lt;TabItem value="java" label="Java"&gt;
 
 ```java
 System.out.println("Java code");
 ```
 
-</TabItem>
-</Tabs>
-```
+&lt;/TabItem&gt; &lt;/Tabs&gt;
+````
 
 Tabs support synchronization by `groupId`. Tabs with the same `groupId` across the page will switch
 in unison:
 
 ```mdx
-<Tabs groupId="language">
-  <TabItem value="python" label="Python">
-    ...
-  </TabItem>
-  <TabItem value="java" label="Java">
-    ...
-  </TabItem>
-</Tabs>
+&lt;Tabs groupId="language"&gt; &lt;TabItem value="python" label="Python"&gt; ... &lt;/TabItem&gt;
+&lt;TabItem value="java" label="Java"&gt; ... &lt;/TabItem&gt; &lt;/Tabs&gt;
 ```
 
 ### Math with KaTeX
@@ -328,12 +318,11 @@ This site adds a hover zoom effect on Mermaid SVGs via `src/css/custom.css`:
 ### Details / Summary
 
 ```mdx
-<details>
-<summary>Click to expand</summary>
+&lt;details&gt; &lt;summary&gt;Click to expand&lt;/summary&gt;
 
 Hidden content here.
 
-</details>
+&lt;/details&gt;
 ```
 
 :::warning Do not nest `<details>` inside another `<details>`. This causes rendering issues in
@@ -367,7 +356,7 @@ Custom components from `@site/src/components/` are also importable:
 ```mdx
 import MyComponent from '@site/src/components/MyComponent';
 
-<MyComponent prop="value" />
+&lt;MyComponent prop="value" /&gt;
 ```
 
 ## Frontmatter Options
