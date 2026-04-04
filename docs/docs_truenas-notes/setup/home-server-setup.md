@@ -6,6 +6,7 @@ tags:
 categories:
   - OS
 slug: setting-home-server
+sidebar_position: -1
 ---
 
 ## Requirements
@@ -20,7 +21,9 @@ slug: setting-home-server
 - SSD for OS drive (preferred, can also boot from flash drives)
 - USB for etching ISO to USB
 - HDDs for storage drives (prefer $2+$ HDD for mirroring or RAID)
-- Any computer with SATA connection (for HDDs), connection to a display (HDMI or DisplayPort, assuming a motherboard without IPMI support) and ethernet connection to ISP provided router (for public access)
+- Any computer with SATA connection (for HDDs), connection to a display (HDMI or DisplayPort,
+  assuming a motherboard without IPMI support) and ethernet connection to ISP provided router (for
+  public access)
 
 ## Procedure
 

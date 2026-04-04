@@ -6,6 +6,7 @@ tags:
 categories:
   - CS
 slug: godbolt-integration
+sidebar_position: -1
 ---
 
 ## Godbolt

@@ -6,4 +6,5 @@ tags:
 categories:
   - truenas
 slug: setup-traefik
+sidebar_position: -1
 ---

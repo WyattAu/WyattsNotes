@@ -93,6 +93,7 @@ const config: Config = {
     ],
   ],
   plugins: [
+    '@docusaurus/plugin-sitemap',
     [
       '@docusaurus/plugin-content-blog',
       {
