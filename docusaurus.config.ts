@@ -284,7 +284,7 @@ const config: Config = {
     navbar: {
       title: "Wyatt's Notes",
       logo: {
-        alt: 'My Site Logo',
+        alt: "Wyatt's Notes",
         src: 'img/WyattsNotes/WyattsNotesLogo.svg',
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
