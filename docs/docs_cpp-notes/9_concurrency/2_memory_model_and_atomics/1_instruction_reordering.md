@@ -347,6 +347,117 @@ void consumer() {
   `std::atomic` or `std::call_once`. A plain bool flag with `volatile` is insufficient because the
   compiler and CPU may reorder the initialization after the flag write.
 
+## Store Buffering: The Litmus Test
+
+The store-buffering phenomenon (also called "Store Buffering" or "4-store SB") is the canonical
+litmus test for memory model correctness. It demonstrates that even when each core's stores appear
+in order locally, the global order may differ:
+
+```
+Initial state: x = 0, y = 0
+
+Core 0:                  Core 1:
+  store x = 1              store y = 1
+  load r1 = y              load r2 = x
+
+Question: Can r1 = 0 AND r2 = 0?
+```
+
+**x86 answer: Yes.** x86 TSO allows store-to-load reordering. The store to `x` sits in Core 0's
+store buffer while the load from `y` executes, reading the stale value. The same happens on Core 1.
+
+**ARM/POWER answer: Yes.** Weakly ordered architectures allow even more reorderings. The stores may
+be observed in any order by the other core.
+
+**Sequentially consistent answer: No.** Under `memory_order_seq_cst`, at least one load must see the
+other core's store.
+
+```cpp
+#include <atomic>
+#include <thread>
+#include <iostream>
+
+std::atomic<int> x{0}, y{0};
+int r1 = 0, r2 = 0;
+
+void thread0() {
+    x.store(1, std::memory_order_relaxed);
+    r1 = y.load(std::memory_order_relaxed);
+}
+
+void thread1() {
+    y.store(1, std::memory_order_relaxed);
+    r2 = x.load(std::memory_order_relaxed);
+}
+
+int main() {
+    int observed_both_zero = 0;
+    constexpr int iterations = 1000000;
+
+    for (int i = 0; i < iterations; ++i) {
+        x.store(0, std::memory_order_relaxed);
+        y.store(0, std::memory_order_relaxed);
+        r1 = r2 = 0;
+
+        std::thread t0(thread0);
+        std::thread t1(thread1);
+        t0.join();
+        t1.join();
+
+        if (r1 == 0 && r2 == 0) ++observed_both_zero;
+    }
+
+    std::cout << "r1=0 && r2=0 observed " << observed_both_zero
+              << " / " << iterations << " times\n";
+}
+```
+
+On x86, this will observe `r1=0 && r2=0` approximately 0-5% of the time (due to store buffer drain
+latency). On ARM, the percentage can be significantly higher. With `memory_order_seq_cst`, the count
+drops to exactly zero.
+
+## Compiler Barrier Semantics
+
+The distinction between `std::atomic_thread_fence` and `std::atomic_signal_fence` is subtle but
+critical for systems programming:
+
+**`std::atomic_thread_fence`** [N4950 §31.7.7] generates both a **compiler barrier** (preventing the
+compiler from reordering loads/stores across the fence) and a **hardware fence** (CPU instructions
+like `mfence` on x86, `DMB` on ARM). It is the correct tool for inter-thread synchronization.
+
+**`std::atomic_signal_fence`** [N4950 §31.7.7] generates only a **compiler barrier**. It emits zero
+CPU instructions. It is designed for synchronization between a thread and a signal handler running
+on the **same thread**, where hardware fences are unnecessary because the signal handler runs on the
+same core and sees all prior stores.
+
+```cpp
+#include <atomic>
+#include <csignal>
+#include <iostream>
+
+volatile sig_atomic_t signal_flag = 0;
+
+void signal_handler(int) {
+    signal_flag = 1;
+    std::atomic_signal_fence(std::memory_order_release);
+}
+
+int main() {
+    std::signal(SIGUSR1, signal_handler);
+
+    while (true) {
+        std::atomic_signal_fence(std::memory_order_acquire);
+        if (signal_flag) {
+            std::cout << "Signal received\n";
+            break;
+        }
+    }
+}
+```
+
+The `atomic_signal_fence` pair ensures the compiler does not hoist the `signal_flag` read before the
+loop or cache it in a register, without emitting any CPU barrier instructions.
+
 ## See Also
 
 - [Cache Coherency (MESI) and False Sharing](./2_cache_coherency.md)

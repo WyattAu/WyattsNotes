@@ -363,6 +363,89 @@ analysis (e.g., using an uninitialized variable on a specific code path).
 - **Running analysis without a compilation database.** Without `compile_commands.json`, clang-tidy
   cannot resolve includes, macros, or platform-specific code correctly.
 
+## 10. Static Analysis for Security (CERT C++ Coding Standards)
+
+Beyond correctness and style, static analysis tools can enforce security rules from the **CERT C++
+Coding Standard**. clang-tidy includes the `cert-*` check group, which maps directly to CERT
+recommendations:
+
+| CERT Rule | clang-tidy Check | Vulnerability            |
+| :-------- | :--------------- | :----------------------- |
+| EXP50-CPP | `cert-err52-cpp` | Throwing in destructor   |
+| EXP63-CPP | `cert-dcl03-c`   | Implicit conversions     |
+| DCL50-CPP | `cert-dcl58-cpp` | Uninitialized const      |
+| INT30-C   | `cert-int30-c`   | Unsigned integer wrap    |
+| OOP57-CPP | `cert-oop57-cpp` | Copy constructor missing |
+| OOP58-CPP | `cert-oop58-cpp` | Move constructor missing |
+
+Enabling `cert-*` in CI is a low-cost way to catch common vulnerability patterns. Many of these
+checks are also covered by `bugprone-*` and `cppcoreguidelines-*`, so the overlap is intentional —
+CERT rules provide a formal security justification for checks you might already have enabled.
+
+## 11. False Positive Management at Scale
+
+In large codebases (100k+ lines), false positives are inevitable. A disciplined approach to managing
+them prevents the suppression mechanism from becoming a liability:
+
+### Tiered Suppression Strategy
+
+1. **Fix immediately:** Warnings with a clear, safe fix. No suppression needed.
+2. **Suppress with justification:** Warnings that are false positives but require a documented
+   reason: `// NOLINT(bugprone-narrowing-conversion): intentional truncation for wire format`.
+3. **Disable at project level:** Warnings that are overwhelmingly false positives for the entire
+   codebase (e.g., `cppcoreguidelines-avoid-magic-numbers` in a numerical library). Disable in
+   `.clang-tidy`, not per-line.
+4. **File-level suppression:** For legacy files that cannot be fixed without a major refactor, use
+   `// NOLINTBEGIN` / `// NOLINTEND` blocks.
+
+```cpp
+// NOLINTBEGIN(cert-err58-cpp): legacy C API, exceptions not propagated across boundary
+extern "C" int legacy_callback(void* ctx, int status) {
+    // ...
+    return status;
+}
+// NOLINTEND(cert-err58-cpp)
+```
+
+### Tracking Suppressions
+
+Maintain a suppression inventory. In CI, count the number of `NOLINT` comments and fail the build if
+the count increases:
+
+```bash
+# CI gate: ensure NOLINT count does not grow
+NOLINT_COUNT=$(grep -r "NOLINT" src/ | wc -l)
+echo "NOLINT suppressions: $NOLINT_COUNT"
+if [ "$NOLINT_COUNT" -gt "$ALLOWED_SUPPRESSIONS" ]; then
+    echo "ERROR: NOLINT count exceeds threshold"
+    exit 1
+fi
+```
+
+## 12. clang-tidy Performance Profiling
+
+For large projects, clang-tidy can become the bottleneck in the CI pipeline. Understanding where
+time is spent helps optimize the analysis configuration:
+
+- **Per-file overhead:** Each file requires a full AST parse (~0.5-2 seconds for a typical source
+  file). This is unavoidable.
+- **Check overhead:** Data flow analysis checks (`clang-analyzer-*`) are 3-10x slower than simple
+  AST pattern matching checks (`modernize-*`). Enable `clang-analyzer-*` only in a dedicated CI job.
+- **Header traversal:** If `HeaderFilterRegex` allows analysis of deeply included system headers,
+  analysis time can explode. Restrict the filter to project headers.
+
+```bash
+# Profile clang-tidy on a single file
+time clang-tidy -p build/ src/main.cpp --checks='bugprone-*,modernize-*' 2>&1
+
+# Compare with data flow analysis enabled
+time clang-tidy -p build/ src/main.cpp --checks='bugprone-*,modernize-*,clang-analyzer-*' 2>&1
+```
+
+In practice, splitting analysis into a fast path (`bugprone-*`, `modernize-*`, `readability-*`) that
+runs on every commit and a slow path (`clang-analyzer-*`, `cppcoreguidelines-pro-bounds-*`) that
+runs nightly provides the best developer experience.
+
 ## See Also
 
 - [Debugger Configuration](1_language_server_protocol_configuration.md)

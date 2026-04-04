@@ -353,6 +353,65 @@ build CMakeFiles/App.dir/main.cpp.o: dyndep | CMakeFiles/Engine.dir/engine.pcm
   module but not to importers. If an importer needs a macro, use `export` or define it in the
   importer's own GMF.
 
+## 8. BMI File Size and Build Disk Pressure
+
+BMI files are significantly larger than the source files they represent. A 500-line module interface
+might produce a 2-5 MB `.pcm` file because the BMI contains the serialized AST, template
+instantiation information, name lookup tables, and debug metadata.
+
+In a project with 100 modules, this can mean 200-500 MB of BMI artifacts in the build directory.
+Combined with the object files, the total build artifact size can exceed 1 GB. This has practical
+implications:
+
+1. **CI disk pressure:** CI runners with limited storage may fill up during module-heavy builds.
+   Ensure CI cleanup jobs remove stale BMIs from previous builds.
+2. **NFS/shared filesystem builds:** BMI files are accessed frequently during compilation (read by
+   downstream TUs). On NFS mounts, the latency of reading large BMIs can dominate build time. Prefer
+   local builds or SSD-backed shared storage.
+3. **`.gitignore` hygiene:** BMI files (`.pcm`, `.ifc`, `.gcm`) must never be committed. Add them to
+   `.gitignore` and verify they are not tracked with `git ls-files '*.pcm'`.
+
+## 9. BMI and Template Instantiation Boundaries
+
+A critical subtlety of BMI design is where template instantiation occurs. When Module B imports
+Module A, and Module A exports a template `foo<T>`, the BMI for Module A must contain enough
+information for Module B to instantiate `foo<int>` if needed. This means:
+
+- **The full template definition** must be present in the BMI, not just the declaration.
+- **All types referenced by the template** must also be in the BMI (transitive type information).
+- **Concept constraints** used by the template must be available for constraint checking in
+  importers.
+
+This is why BMIs for headers like `<vector>` are so large — they must carry the full definitions of
+dozens of internal templates (allocators, iterators, node types) so that downstream TUs can
+instantiate `std::vector<T>` without re-parsing the header.
+
+For your own modules, this means that exporting a template-heavy interface (e.g., a generic
+`Transform<T, U>` pipeline) significantly increases the BMI size and the compilation cost for all
+importers. Prefer **non-template interfaces** with implementation units for the template-heavy
+internals, exporting only the concrete type aliases.
+
+## 10. Debugging BMI-Related Build Failures
+
+BMI-related errors are among the most difficult to diagnose in C++ module builds. Common symptoms
+and their causes:
+
+| Symptom                 | Likely Cause                                          |
+| :---------------------- | :---------------------------------------------------- |
+| "module file not found" | BMI path not passed to compiler (`-fmodule-file`)     |
+| "incompatible module"   | BMI compiled with different flags or compiler version |
+| "ambiguous symbol"      | Same entity exported from two imported modules        |
+| "entity not found"      | Missing `export` on the declaration                   |
+| Infinite compilation    | Circular dependency (should be caught by scanner)     |
+
+**Diagnostic workflow:**
+
+1. Check that the BMI file exists at the expected path using `ls build/**/*.pcm`.
+2. Verify the compiler flags used to build the BMI match the consumer's flags (`-std=c++23`,
+   `-D...`).
+3. Inspect the `dyndep` files (Ninja) to confirm the DAG is correct and acyclic.
+4. Use `clang++ --show-module-info` to dump BMI metadata and verify the exported symbol set.
+
 ## See Also
 
 - [Header Units](./3_header_unit.md)

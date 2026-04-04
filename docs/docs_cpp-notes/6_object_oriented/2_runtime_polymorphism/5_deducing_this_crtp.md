@@ -364,6 +364,126 @@ standards, or when explicit template instantiation control is needed. :::
 - [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html) — vtable layout
   specification
 
+## 5.8 Overload Resolution with Deducing This
+
+Explicit object parameters participate in overload resolution like any other function parameter. The
+compiler deduces the `Self` type from the call expression and selects the best matching overload
+using standard overload resolution rules [N4950 §12.4.3]. This enables a pattern impossible with
+traditional member functions: **overloading based on the value category of the object**:
+
+```cpp
+#include <iostream>
+#include <utility>
+#include <string>
+
+struct Logger {
+    std::string prefix_;
+
+    explicit Logger(std::string prefix) : prefix_(std::move(prefix)) {}
+
+    template <typename Self>
+    std::string label(this const Self& self) {
+        return "[" + self.prefix_ + "] (const)";
+    }
+
+    template <typename Self>
+    std::string label(this Self&& self) {
+        return "[" + self.prefix_ + "] (mutable/rvalue)";
+    }
+};
+
+int main() {
+    Logger l("main");
+
+    std::cout << l.label() << "\n";
+    // Calls label(this const Logger& self) -> [main] (const)
+
+    std::cout << std::move(l).label() << "\n";
+    // Calls label(this Logger&& self) -> [main] (mutable/rvalue)
+
+    std::cout << Logger("temp").label() << "\n";
+    // Calls label(this Logger&& self) -> [temp] (mutable/rvalue)
+}
+```
+
+The first overload binds to const lvalues. The second overload binds to both non-const lvalues
+(`Logger&`) and rvalues (`Logger&&`) due to reference collapsing. This is the deducing-this
+equivalent of providing both `const` and non-const overloads of a traditional member function, but
+with the added ability to distinguish rvalue receivers.
+
+## 5.9 Deducing This and Multiple Inheritance
+
+Deducing this interacts with multiple inheritance in a way that requires careful attention. Because
+`Self` is deduced as the **most-derived type**, a deducing-this member function in a base class has
+access to the complete object, including members of sibling bases:
+
+```cpp
+#include <iostream>
+#include <string>
+
+struct Named {
+    std::string name_;
+};
+
+struct Timestamped {
+    double timestamp_ = 0.0;
+};
+
+struct AuditEntry : Named, Timestamped {
+    template <typename Self>
+    void summarize(this const Self& self) {
+        std::cout << self.name_ << " at t=" << self.timestamp_ << "\n";
+    }
+};
+
+int main() {
+    AuditEntry entry{{"login"}, 1704067200.0};
+    entry.summarize();
+    // login at t=1.70407e+09
+}
+```
+
+This works because `Self` deduces to `AuditEntry`, which inherits from both `Named` and
+`Timestamped`. The `self` parameter is a reference to the complete `AuditEntry` object, so access to
+`name_` and `timestamp_` is valid. With CRTP, this would require `static_cast<Derived*>(this)` and
+explicit knowledge of the derived class's inheritance chain.
+
+## 5.10 Deducing This: ABI and Name Mangling
+
+Deducing this is a pure compile-time mechanism. It does not affect ABI or name mangling. A deducing-
+this member function is mangled as if it were a free function template. For example:
+
+```cpp
+struct Foo {
+    template <typename Self>
+    void bar(this Self&& self);
+};
+```
+
+The mangled name for `Foo::bar` when called on an lvalue `Foo` resembles a free function `bar(Foo&)`
+rather than a traditional member function `Foo::bar()`. This means:
+
+1. **Binary compatibility:** Code compiled with deducing this cannot be linked against code compiled
+   without it (different mangling). However, this is only relevant if you are sharing object files
+   across compilation units compiled with different compiler versions or different language
+   standards.
+2. **vtable interaction:** Deducing-this functions are never virtual. They cannot be placed in a
+   vtable because the `Self` type is resolved at the call site, not through dynamic dispatch. This
+   is by design — deducing this is a static polymorphism mechanism.
+
+## 5.11 Common Pitfalls
+
+- **Cannot be virtual:** Deducing-this member functions cannot be declared `virtual`. The template
+  parameter `Self` must be deduced at the call site, which is incompatible with dynamic dispatch.
+- **`this` pointer access:** Inside a deducing-this function, `this` is not available. Use the
+  explicit `self` parameter instead. Attempting to use `this` results in a compile-time error.
+- **Reference collapsing gotchas:** `this Self&& self` deduces `Self` as `T&` for lvalues and `T`
+  for rvalues. If you need separate behavior for const and non-const, provide explicit overloads
+  rather than relying on `auto&&` to differentiate.
+- **CRTP still needed for explicit instantiation:** If you need to explicitly instantiate a base
+  class template for specific derived types, CRTP remains the appropriate mechanism. Deducing this
+  does not support explicit instantiation of the deduced type.
+
 ## See Also
 
 - [Virtual Functions and vtables](./1_vtables.md)

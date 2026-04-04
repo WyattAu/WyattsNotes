@@ -342,6 +342,76 @@ provides the strong exception guarantee. This is a widely used pattern but note 
 creates a temporary, which may be slightly less efficient than separate copy/move assignment
 operators for simple types. :::
 
+## 7.4 Self-Move Assignment: The Silent Undefined Behavior
+
+Move-assigning an object to itself is a well-defined but dangerous operation that is rarely
+intentional. Consider:
+
+```cpp
+Buffer& operator=(Buffer&& other) noexcept {
+    if (this != &other) {
+        delete[] data_;
+        data_ = other.data_;
+        size_ = other.size_;
+        other.data_ = nullptr;
+        other.size_ = 0;
+    }
+    return *this;
+}
+```
+
+The `this != &other` guard is essential. Without it, `a = std::move(a)` would:
+
+1. `delete[] data_` — freeing the object's own buffer.
+2. `data_ = other.data_` — assigning the now-dangling pointer to itself.
+3. `other.data_ = nullptr` — setting both `this-&gt;data_` and `other.data_` to `nullptr` (same
+   object).
+
+After self-move, the object holds a dangling pointer and a zero size. Any subsequent access or
+destruction triggers use-after-free.
+
+:::warning Self-move assignment (`a = std::move(a)`) is **not undefined behavior** in the general
+case [N4950 §11.4.5.3], but the Standard requires the object to be in a "valid but unspecified
+state" afterward. For resource-owning types that do not guard against self-assignment, this
+typically means a use-after-free. Always include the self-assignment check in move assignment
+operators, or restructure to avoid the issue entirely (e.g., using the copy-and-swap idiom which
+handles self-assignment naturally). :::
+
+## 7.5 Move-Only Types and the Standard Library
+
+The Standard Library makes extensive use of move-only types. Understanding which types are move-only
+and why is critical for writing correct generic code:
+
+| Type                              | Move-Only? | Reason                        |
+| :-------------------------------- | :--------- | :---------------------------- |
+| `std::unique_ptr&lt;T&gt;`        | Yes        | Exclusive ownership model     |
+| `std::thread`                     | Yes        | OS thread handle is unique    |
+| `std::jthread`                    | Yes        | Same as `std::thread`         |
+| `std::mutex`                      | Yes        | OS synchronization primitive  |
+| `std::atomic&lt;T&gt;`            | Yes        | Cannot be atomically moved    |
+| `std::unique_lock&lt;Mutex&gt;`   | Yes        | Owns lock state               |
+| `std::shared_ptr&lt;T&gt;`        | No         | Reference-counted, copyable   |
+| `std::vector&lt;T&gt;`            | No         | Deep-copyable                 |
+| `std::function&lt;R(Args...)&gt;` | No         | Type-erased, copyable         |
+| `std::move_only_function` (C++23) | Yes        | Non-copyable callable wrapper |
+
+When writing generic code that must accept any callable, prefer `std::move_only_function` (C++23)
+over `std::function` if copyability is not required. This avoids the internal heap allocation that
+`std::function` performs for type erasure and enables capturing move-only types in the callable.
+
+## Common Pitfalls
+
+- **Moving from const objects:** `std::move(const T&)` returns `const T&&`, which binds to a copy
+  constructor (not move constructor). The move is silently downgraded to a copy. If you see this in
+  a code review, the object should not be `const` in the first place.
+- **Using moved-from objects:** After a move, the source object is in a valid but unspecified state.
+  You may only assign to it or destroy it. Reading from it (other than to inspect trivial types like
+  `int`) is technically legal but yields unspecified values.
+- **Forgetting `noexcept` on moves:** This is the most performance-critical mistake with move
+  operations. Standard containers check `std::is_nothrow_move_constructible_v&lt;T&gt;` at compile
+  time and fall back to copying if it is `false`. Always mark move constructors and move assignment
+  operators `noexcept`.
+
 ## See Also
 
 - [Reference Collapsing and Forwarding References](2_reference_collapsing.md)

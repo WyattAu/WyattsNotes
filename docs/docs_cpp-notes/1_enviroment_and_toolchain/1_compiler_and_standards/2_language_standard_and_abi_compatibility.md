@@ -364,6 +364,71 @@ int main() {
 - **Forgetting to set `CMAKE_CXX_EXTENSIONS OFF`.** Without this, CMake defaults to GNU extensions,
   which may introduce non-portable constructs.
 
+## ABI and Inline Namespace Versioning
+
+The C++ Standard Library uses **inline namespaces** to embed ABI version information directly into
+symbol names without changing the user-facing API. This is how `libstdc++` and `libc++` manage ABI
+evolution without breaking existing binaries.
+
+### How Inline Namespaces Work
+
+An inline namespace [N4950 §9.8.2] is a nested namespace whose members are automatically accessible
+from the enclosing namespace. However, the mangled symbol name includes the inline namespace name,
+providing ABI versioning without API changes:
+
+```cpp
+#include <iostream>
+
+int main() {
+    // User code sees std::string
+    // But the mangled symbol is std::__cxx11::basic_string<char, ...>
+    std::string s = "hello";
+    std::cout << s << "\n";
+}
+```
+
+The `_GLIBCXX_USE_CXX11_ABI` macro controls whether the old ABI namespace or the new ABI namespace
+is selected. When `=1` (default), `std::string` resolves to `std::__cxx11::basic_string`. When `=0`,
+it resolves to the legacy `std::basic_string` with Copy-On-Write semantics.
+
+### libc++ ABI Versioning
+
+libc++ uses `_LIBCPP_ABI_VERSION` for similar purposes. When libc++ changes the layout of a standard
+type (e.g., `std::optional` grew a union member in a newer version), the ABI version is bumped, and
+the new layout is placed in a new inline namespace. Old binaries continue to link against the old
+inline namespace symbols.
+
+```bash
+# Inspect the inline namespaces in libc++
+nm -C /usr/lib/libc++.so | grep basic_string
+# Output includes: std::__1::basic_string<char, ...>
+# The __1 is the inline namespace (ABI version 1)
+```
+
+### Practical Implications
+
+1. **Never mix ABI versions in the same binary.** If one library was compiled with
+   `_GLIBCXX_USE_CXX11_ABI=0` and another with `=1`, the linker sees two distinct `std::string`
+   types and will report "undefined reference" or "multiple definition" errors.
+2. **System libraries are compiled with the distro's default ABI.** On Ubuntu 22.04, system
+   libraries use ABI=1. Recompiling your own code with ABI=0 and linking against system `.so` files
+   will fail.
+3. **ABI version is embedded in the symbol name.** You can verify ABI compatibility by inspecting
+   symbol names with `nm -C` or `objdump -T`.
+
+## Cross-Platform ABI Checklist
+
+When distributing a C++ library that must work across platforms, verify the following:
+
+- [ ] All object files use the same C++ standard version (or compatible versions).
+- [ ] All object files use the same standard library implementation (`libstdc++`, `libc++`, or MSVC
+      STL).
+- [ ] The `_GLIBCXX_USE_CXX11_ABI` macro is consistent across all compilation units (GCC only).
+- [ ] No GNU extensions are used in public headers (or extensions are enabled uniformly).
+- [ ] The struct layout is identical across platforms (verify with `static_assert(sizeof(T) == N)`).
+- [ ] The calling convention matches (System V AMD64 ABI on Linux, Microsoft x64 on Windows).
+- [ ] Exception handling mechanism matches (DWARF/SJLJ/LSDA on GCC/Clang, SEH on MSVC).
+
 ## See Also
 
 - [Standard Library Implementation](3_standard_library_implementation.md)

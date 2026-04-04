@@ -341,6 +341,59 @@ When modernizing a codebase to C++23 modules:
 - **Build system not configured for header units:** CMake requires explicit configuration
   (`CMAKE_CXX_SCAN_FOR_MODULES ON`) and compiler-specific flags for header unit support.
 
+## 10. BMI Caching and Reproducibility
+
+Header unit BMIs are subject to the same caching and invalidation rules as named module BMIs. The
+cache key includes the compiler version, flags (`-std=c++23`, `-D...`), and the full transitive
+include chain. However, header unit BMIs have an additional complication: **preprocessor state
+matters**.
+
+Unlike named modules, which are macro-free (macros from the GMF are not exported), header units must
+preserve macro definitions. This means two header unit BMIs compiled with different `-D` flags are
+**not interchangeable**, even if the source file is identical. This is a fundamental difference from
+named module BMIs and a primary reason why header units are harder to cache reliably.
+
+The build system must associate each header unit BMI with the exact set of preprocessor defines used
+during its compilation. If a TU compiled with `-DDEBUG=1` imports a header unit that was compiled
+without that flag, the resulting BMI will not contain the debug-guarded code paths, leading to
+missing symbols at link time. Consider:
+
+```bash
+# These produce DIFFERENT BMIs for config.h
+clang++ -std=c++23 --precompile -DDEBUG=1 -x c++-header config.h -o config_debug.h.pcm
+clang++ -std=c++23 --precompile -x c++-header config.h -o config_release.h.pcm
+```
+
+If a TU compiled with `-DDEBUG=1` imports `config.h`, the build system must locate and load the
+`config_debug.h.pcm` BMI, not the release variant. Build systems like CMake track this through the
+P1689 scanning protocol, but the **dependency scanner must be aware of the compile flags** to select
+the correct BMI. This is why header units increase build system complexity significantly compared to
+named modules.
+
+## 11. Header Units and `#pragma once` Interaction
+
+`#pragma once` is a compiler extension that prevents multiple inclusion of the same header. When a
+header is compiled as a header unit, the compiler processes it exactly once to produce the BMI, so
+include guards and `#pragma once` are technically unnecessary for the header unit itself.
+
+However, a header may be **both** `#include`d and `import`ed across different TUs in the same
+project. If the header lacks include guards and is `#include`d transitively by another header that
+is imported as a header unit, the preprocessor may process the text multiple times during BMI
+generation. Therefore, include guards remain a best practice even for headers intended to be used as
+header units.
+
+## 12. Diagnostic Experience
+
+Error messages originating from header unit code are notoriously difficult to interpret. Because the
+compiler operates on the serialized BMI rather than the original source text, error locations may
+reference internal BMI offsets rather than source file line numbers. Clang has improved this
+significantly in recent versions by embedding source location metadata in `.pcm` files, but GCC and
+MSVC still produce cryptic diagnostics for errors in imported header units.
+
+**Mitigation:** Keep header unit headers small and well-tested. If a header is complex enough that
+diagnostics matter, prefer converting it to a named module where the compiler can provide full
+source-level error reporting.
+
 ## See Also
 
 - [Binary Module Interfaces (BMI)](./2_bmi.md)

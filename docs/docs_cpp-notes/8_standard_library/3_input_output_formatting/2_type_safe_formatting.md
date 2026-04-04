@@ -338,6 +338,91 @@ find it. However, adding declarations to namespace `std` is technically undefine
 is a **template specialization** of a standard library template [N4950 §16.5.4.2.1]. Specializing
 `std::formatter` is explicitly permitted. :::
 
+### Runtime Format Strings with `std::vformat`
+
+When the format string must be computed at runtime (e.g., loaded from a configuration file or user
+input), `std::format` cannot be used because it requires a compile-time constant format string. The
+standard provides `std::vformat` for this scenario [N4950 §22.14.6.5]:
+
+```cpp
+#include <format>
+#include <iostream>
+#include <string>
+#include <string_view>
+
+void log_message(std::string_view fmt_str, std::format_args args) {
+    std::string output = std::vformat(fmt_str, args);
+    std::println(stderr, "{}", output);
+}
+
+int main() {
+    std::string user_fmt = "Error at line {}: {}";
+    log_message(user_fmt, std::make_format_args(42, "file not found"));
+    // Error at line 42: file not found
+}
+```
+
+`std::vformat` accepts a runtime `std::string_view` and a `std::format_args` object, but it provides
+no compile-time type checking. If the format string references an argument that does not exist, or
+if the type specifier is incompatible with the argument type, the result is a `std::format_error`
+exception thrown at runtime. This is analogous to the safety difference between `std::variant`
+(checked at compile time via `std::visit`) and `std::any` (checked at runtime via `std::any_cast`).
+
+### Format-To: Writing into Existing Buffers
+
+`std::format_to` and `std::format_to_n` write formatted output directly into an iterator, avoiding
+intermediate `std::string` allocation [N4950 §22.14.6.4]. This is critical in high-throughput
+scenarios where thousands of format operations per second must not trigger heap allocations:
+
+```cpp
+#include <format>
+#include <iostream>
+#include <vector>
+#include <cstddef>
+
+int main() {
+    std::vector<char> buf(256);
+
+    auto write_report = [&](std::back_insert_iterator<std::vector<char>> out,
+                            std::string_view label, int value, double ratio) {
+        out = std::format_to(out, "[{}] value={}", label, value);
+        out = std::format_to(out, " ratio={:.2%}\n", ratio);
+        return out;
+    };
+
+    auto it = std::back_inserter(buf);
+    it = write_report(it, "cpu", 87, 0.87);
+    it = write_report(it, "mem", 2048, 0.45);
+
+    std::string_view result(buf.data(), static_cast<std::size_t>(it - buf.begin()));
+    std::cout << result;
+    // [cpu] value=87 ratio=87.00%
+    // [mem] value=2048 ratio=45.00%
+}
+```
+
+`std::format_to_n` additionally accepts a maximum number of characters to write, returning a
+`std::format_to_n_result` struct containing the output iterator and the total number of characters
+that _would_ have been written (useful for truncation-aware formatting).
+
+### Common Pitfalls
+
+- **Mixing argument ID modes:** You cannot mix automatic (`{}`) and manual (`{0}`, `{1}`) argument
+  IDs in the same format string. Doing so is a compile-time error [N4950 §22.14.6.2]. Pick one mode
+  per format string.
+- **Dynamic width/precision with manual IDs:** When using dynamic width (`{:{}}`) with manual
+  argument IDs, the dynamic width/precision argument is consumed at its position in the argument
+  list, which can create confusing off-by-one index errors. Explicitly index all arguments when
+  using dynamic width.
+- **`std::print` thread safety:** `std::print(stdout, ...)` does not acquire a lock on the stdout
+  mutex. Concurrent `std::print` calls from multiple threads produce interleaved output. Either use
+  `std::print(stderr, ...)` (stderr is unbuffered) or guard stdout with a `std::mutex`.
+- **`std::formatter` specialization in wrong namespace:** The specialization must be in namespace
+  `std`. Placing it in any other namespace, including the type's own namespace, causes the formatter
+  to not be found by overload resolution [N4950 §22.14.6.3].
+- **Format spec `=` alignment with strings:** The `=` alignment (pad after sign/prefix) is only
+  valid for numeric types. Applying it to a string throws `std::format_error` at runtime.
+
 ## See Also
 
 - [Stream Buffers and Locale Facets](./1_stream_buffers.md)

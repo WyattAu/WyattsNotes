@@ -356,6 +356,83 @@ by `#ifdef` but the `extern template` declaration is not (or vice versa), some t
 see the `extern` declaration while others do not. This can lead to ODR violations or mysterious
 linker errors. Keep the `extern` declarations and explicit definitions in sync.
 
+## Explicit Specialization vs. Explicit Instantiation
+
+These two mechanisms are frequently confused but have fundamentally different semantics:
+
+| Aspect                   | Explicit Instantiation                                             | Explicit Specialization                                      |
+| :----------------------- | :----------------------------------------------------------------- | :----------------------------------------------------------- |
+| **Syntax**               | `template void foo<int>()`                                         | `template&lt;&gt; void foo<int>()`                           |
+| **Effect**               | Forces the compiler to generate code from the **primary template** | Provides a **completely new definition** for a specific type |
+| **When used**            | To centralize where instantiation happens                          | When the generic algorithm does not work for a specific type |
+| **Can change behavior?** | No — must match primary template semantics                         | Yes — can have entirely different logic                      |
+| **Standard reference**   | [N4950 §13.9.2]                                                    | [N4950 §13.7.3]                                              |
+
+```cpp
+#include <iostream>
+#include <cstring>
+
+template <typename T>
+T max_value(T a, T b) {
+    return (a > b) ? a : b;
+}
+
+// Explicit instantiation: generate max_value<int> from the primary template
+template int max_value(int, int);
+
+// Explicit specialization: provide a DIFFERENT implementation for const char*
+template <>
+const char* max_value<const char*>(const char* a, const char* b) {
+    return (std::strcmp(a, b) > 0) ? a : b;
+}
+
+int main() {
+    std::cout << max_value(3, 7) << "\n";                   // Uses primary template
+    std::cout << max_value("alpha", "beta") << "\n";        // Uses specialization
+}
+```
+
+The specialization for `const char*` uses `strcmp` instead of `operator>`, which is essential
+because `operator>` on raw pointers compares addresses, not lexicographic order. You cannot achieve
+this behavior change with explicit instantiation alone.
+
+## `extern template` and the C++20 Module Interaction
+
+When a template is defined in a C++20 module and exported, the `extern template` mechanism is
+largely superseded by the module system. The module interface unit (`.cppm`) serves a similar role
+to a header with `extern template` declarations: downstream importers see the template definition
+but do not re-instantiate unless they use a new type.
+
+However, `extern template` remains useful within **non-module code** and in the transition period
+where a codebase mixes modules and traditional headers. If a module exports a template, importers
+that use a common type benefit from the module system's built-in deduplication — the BMI ensures the
+template is instantiated once and shared across all importers.
+
+For header-only libraries consumed via the Global Module Fragment, you can still use
+`extern template` inside the module to suppress redundant instantiation:
+
+```cpp
+// utils.cppm
+module;
+
+#include <vector>
+
+export template <typename T>
+class DataBuffer {
+    std::vector<T> data_;
+public:
+    void push(const T& val) { data_.push_back(val); }
+    std::size_t size() const { return data_.size(); }
+};
+
+// Still valid inside a module: suppress implicit instantiation
+extern template class DataBuffer<int>;
+extern template class DataBuffer<double>;
+
+export template class DataBuffer<int>;
+export template class DataBuffer<double>;
+```
+
 ## See Also
 
 - [Template Instantiation, Monomorphization, and Code Bloat](./1_instantiation.md)

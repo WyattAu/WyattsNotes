@@ -360,3 +360,61 @@ For the architecture described in this course, we adhere to the following hierar
    updates are not propagated to vcpkg or conan.
 3. **Scale:** **Conan**. Only when build times become the primary bottleneck (~30+ minutes) and
    binary caching is mandatory.
+
+## Security: Supply Chain Attack Vectors
+
+C++ dependency management introduces supply chain risks that differ from interpreted languages.
+Because C++ compiles to native machine code, a compromised dependency can execute arbitrary code
+with the full privileges of the host process — there is no sandbox or bytecode verifier.
+
+### Attack Vectors
+
+1. **Dependency Confusion (Typosquatting):** An attacker publishes a package with a name similar to
+   a popular library (e.g., `nlohmann-json` vs `nlohmann_json`). If the package manager resolves
+   names incorrectly, the malicious package is fetched instead.
+2. **Compromised maintainer account:** The maintainer's account is breached, and a backdoored
+   version is pushed. This happened to `event-stream` (Node.js, 2018) and `xz-utils` (C, 2024).
+3. **Compromised build infrastructure:** The CI/CD pipeline that produces binary artifacts is
+   compromised, injecting malicious code into cached binaries.
+4. **Transitive dependency injection:** A legitimate package adds a new transitive dependency that
+   is malicious.
+
+### Mitigation Strategies
+
+- **Pin dependencies to exact SHAs:** Never use floating versions like `>= 1.0.0` in production.
+  Lock to a specific Git commit SHA in `vcpkg.json` or `conan.lock`.
+- **Audit the lockfile diff:** When updating dependencies, review the full resolved graph diff, not
+  just the direct dependency changes. A transitive dependency update can introduce a vulnerability.
+- **Reproduce from source:** Use source-based package managers (vcpkg, CPM.cmake) to ensure you are
+  building from auditable source, not downloading opaque binary artifacts.
+- **Use `export CMAKE_VERIFY_INTERFACE_HEADER_SETS ON`** (CMake 3.29+) to verify that exported
+  headers form a self-consistent interface, catching tampering at configure time.
+
+## Practical CMake Integration Example
+
+The following `CMakeLists.txt` demonstrates a robust vcpkg integration with property propagation:
+
+```cmake
+cmake_minimum_required(VERSION 3.28)
+project(MyApp LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+find_package(fmt CONFIG REQUIRED)
+find_package(nlohmann_json CONFIG REQUIRED)
+
+add_executable(app src/main.cpp)
+
+target_link_libraries(app PRIVATE fmt::fmt nlohmann_json::nlohmann_json)
+
+# Verify that linked targets actually exported what they claim
+set(CMAKE_VERIFY_INTERFACE_HEADER_SETS ON)
+```
+
+When CMake locates packages via vcpkg's toolchain file
+(`cmake -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake`), it resolves the
+dependency graph, compiles from source, and links against the resulting libraries. The
+`CMAKE_VERIFY_INTERFACE_HEADER_SETS` check ensures that the installed package headers form a valid
+interface, catching common packaging errors and potential tampering.
