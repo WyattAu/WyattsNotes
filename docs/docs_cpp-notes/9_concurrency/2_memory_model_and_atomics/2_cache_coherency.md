@@ -355,6 +355,61 @@ The typical cache line size on modern x86 processors is 64 bytes. Key implicatio
 3. **Alignment** to cache line boundaries can improve or degrade performance depending on access
    patterns.
 
+## Store Buffers and Write Serialization
+
+Modern CPUs use **store buffers** between the execution unit and the L1 cache to avoid stalling on
+cache misses during writes. When a CPU writes to a cache line in Shared state, the write is placed
+in the store buffer and the CPU continues executing. The RFO (Read-For-Ownership) request is issued
+on the bus asynchronously.
+
+This creates a subtle ordering problem: the CPU can read its own subsequent loads from the store
+buffer (store forwarding) before the write is visible to other cores. This is one reason why memory
+barriers exist — they force the store buffer to drain before subsequent loads can proceed.
+
+For C++ atomics, `memory_order_release` ensures all prior stores are visible before the release
+operation. On x86, the Total Store Order (TSO) model already guarantees that stores are visible to
+all cores in program order, so `memory_order_release` compiles to a no-op (or compiler barrier
+only). On ARM/AArch64, it emits a `DMB ISH` instruction to ensure store buffer drain.
+
+## The MOESI Protocol
+
+AMD processors use a five-state extension of MESI called **MOESI**, adding an **Owned** state:
+
+| State | Description                                                                                                                                                    |
+| :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **M** | Modified — differs from memory, no other copies exist                                                                                                          |
+| **O** | Owned — differs from memory, but Shared copies may exist in other caches. On read miss, the Owned cache supplies data directly without writing back to memory. |
+| **E** | Exclusive — matches memory, no other copies exist                                                                                                              |
+| **S** | Shared — matches memory, copies may exist in other caches                                                                                                      |
+| **I** | Invalid — not cached                                                                                                                                           |
+
+The Owned state eliminates the write-back-to-memory step when a Modified line is read by another
+core: the data is transferred cache-to-cache, reducing main memory traffic. This is particularly
+beneficial on multi-socket systems where main memory access latency is higher.
+
+Intel processors do not use MOESI; they implement MESI with a snoop filter that achieves similar
+cache-to-cache transfer efficiency through different microarchitectural means. The key difference is
+that Intel's MESI still requires the Modified cache to write back to memory before sharing, while
+MOESI's Owned state allows direct cache-to-cache transfer.
+
+## Detecting False Sharing with `perf`
+
+On Linux, hardware performance counters can directly measure cache coherence events:
+
+```bash
+# Count last-level cache misses (proxy for false sharing)
+perf stat -e cache-misses,cache-references,instructions ./my_program
+
+# Use perf c2c to detect false sharing specifically
+perf c2c record ./my_program
+perf c2c report
+```
+
+The `perf c2c` tool is specifically designed for cache-to-cache transfer analysis and directly
+identifies false sharing by correlating cache miss addresses with data structure offsets. On Intel
+CPUs, the `offcore_response` PMU events distinguish between local and remote cache accesses — remote
+DRAM accesses suggest NUMA effects, while high cache-to-cache transfer counts suggest false sharing.
+
 ## Common Pitfalls
 
 - **False sharing with `std::atomic`:** Atomic variables on the same cache line cause coherence

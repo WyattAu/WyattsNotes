@@ -367,6 +367,85 @@ int process_data(long a, long b, long c) {  // three long arguments
 // On Microsoft x64, 'a' in RCX, 'b' in RDX, and R8 would hold garbage for 'c'.
 ```
 
+## 2.10 Struct Classification in System V ABI
+
+The System V ABI classifies each argument through a recursive algorithm that decomposes structures
+into eightbytes (8-byte chunks). Each eightbyte is classified independently as INTEGER, SSE, or
+MEMORY:
+
+1. **INTEGER:** Integer types, pointers, and structures containing only INTEGER-classified
+   eightbytes.
+2. **SSE:** Floating-point and SIMD types (`__m128`, `__m256`), and structures containing only
+   SSE-classified eightbytes.
+3. **MEMORY:** The structure is passed on the stack if it exceeds 16 bytes, contains both INTEGER
+   and SSE eightbytes (mixed classification), or has misaligned fields.
+
+```cpp
+#include <cstdint>
+
+struct TwoInts {    // 16 bytes, all INTEGER eightbytes
+    int64_t a, b;
+};
+
+struct IntAndFloat { // 8 bytes, mixed INTEGER + SSE → MEMORY
+    int32_t a;       // INTEGER eightbyte
+    float b;         // SSE eightbyte
+};
+
+struct LargeStruct { // 24 bytes → MEMORY (exceeds 2 eightbytes)
+    int64_t a, b, c;
+};
+
+// TwoInts: a → RAX, b → RDX (returned in two registers)
+extern "C" TwoInts return_two_ints();
+
+// IntAndFloat: passed on stack (MEMORY class due to mixed classification)
+extern "C" int process_mixed(IntAndFloat s);
+
+// LargeStruct: hidden first pointer argument
+extern "C" LargeStruct return_large();
+// Caller allocates space, passes pointer in RDI, callee returns pointer in RAX
+```
+
+The mixed-classification rule (`IntAndFloat`) is a frequent source of surprise — a small struct that
+"should" fit in registers is forced onto the stack because its eightbytes span two register classes.
+The fix is to rearrange fields so that all INTEGER fields are contiguous and all SSE fields are
+contiguous, though this conflicts with natural alignment preferences.
+
+## 2.11 NRVO and Calling Convention Interaction
+
+Named Return Value Optimization (NRVO) and Return Value Optimization (RVO) [N4950 §11.9.6] eliminate
+the copy/move of return values. Under the System V ABI, this means the caller passes a hidden
+pointer to the destination storage, and the callee constructs directly into it — bypassing the
+return-value register entirely.
+
+```cpp
+struct Buffer {
+    char data[256];
+};
+
+// Without NRVO: caller allocates 256 bytes, passes hidden pointer in RDI.
+// Callee constructs into that space, returns pointer in RAX.
+Buffer make_buffer() {
+    Buffer b;
+    return b;  // With NRVO: constructed directly in caller's frame
+}
+
+// C++17 guaranteed copy elision for prvalues
+Buffer make_buffer_guaranteed() {
+    return Buffer{};  // Guaranteed no copy/move since C++17
+}
+```
+
+Without RVO/NRVO, returning a large struct by value would require constructing into a local
+temporary, then copying to the caller's frame via the hidden pointer — doubling the construction
+cost. NRVO is not guaranteed (the compiler may decline it if there are multiple return paths with
+different named variables), but RVO for prvalues is mandatory since C++17.
+
+Note that C++ compilers on x86-64 generally ignore 32-bit-specific calling convention attributes
+(`__cdecl`, `__stdcall`, `__fastcall`) — they either warn or silently treat them as the platform
+ABI. These attributes are only meaningful on x86-32 where multiple calling conventions coexisted.
+
 ## Common Pitfalls
 
 - **Assuming Windows and Linux share an ABI on x86-64.** They do not. The register allocation,

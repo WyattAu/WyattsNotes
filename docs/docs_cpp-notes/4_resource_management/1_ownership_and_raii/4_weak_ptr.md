@@ -365,6 +365,94 @@ void reset_demo() {
    not sufficient — you need a cache structure that decides when to clear entries. `weak_ptr` just
    tells you if the object is still alive, not whether you _should_ keep it alive.
 
+## 4.10 Thread Safety of `weak_ptr` Operations
+
+`weak_ptr` has specific thread safety guarantees [N4950 §20.11.3.6]:
+
+- **Distinct instances:** All operations on different `weak_ptr` objects observing the same managed
+  object are safe to call concurrently, including `lock()`, `reset()`, `expired()`, and copy/move
+  operations.
+- **`lock()` is atomic:** It atomically checks the strong count and increments it if nonzero. This
+  is the only race-free way to access the managed object from multiple threads.
+- **`expired()` is NOT atomic with access:** Calling `expired()` and then accessing the object
+  through a previously obtained raw pointer has a TOCTOU (time-of-check-time-of-use) race.
+
+```cpp
+#include <memory>
+#include <thread>
+#include <iostream>
+#include <vector>
+
+void concurrent_weak_access_demo() {
+    auto sp = std::make_shared<int>(42);
+    std::weak_ptr<int> wp = sp;
+
+    {
+        std::vector<std::jthread> threads;
+        for (int i = 0; i < 4; ++i) {
+            threads.emplace_back([&wp] {
+                for (int j = 0; j < 100000; ++j) {
+                    if (auto locked = wp.lock()) {
+                        (void)*locked;
+                    }
+                }
+            });
+        }
+    }
+
+    sp.reset();
+    std::cout << "after reset: expired=" << wp.expired() << "\n";
+}
+
+void bad_expired_check(std::weak_ptr<int> wp) {
+    if (!wp.expired()) {
+        // WRONG: object could be destroyed here by another thread
+    }
+
+    if (auto locked = wp.lock()) {
+        // CORRECT: lock() atomically checks and increments strong count
+    }
+}
+```
+
+## 4.11 `owner_before` and Associative Containers
+
+`weak_ptr` provides `owner_before()` and the `std::owner_less` functor for use as keys in ordered
+associative containers. The comparison is based on the **identity of the control block**, not the
+pointed-to value:
+
+```cpp
+#include <memory>
+#include <set>
+#include <iostream>
+
+int main() {
+    auto a = std::make_shared<int>(1);
+    auto b = std::make_shared<int>(2);
+
+    std::set<std::weak_ptr<int>,
+             std::owner_less<std::weak_ptr<int>>> observers;
+    observers.insert(a);
+    observers.insert(b);
+
+    a.reset();
+    // 'a' is expired but still in the set (weak count keeps control block alive)
+
+    for (auto it = observers.begin(); it != observers.end(); ) {
+        if (it->expired()) {
+            it = observers.erase(it);
+        } else {
+            ++it;
+        }
+    }
+}
+```
+
+`std::owner_less` also enables heterogeneous comparison between `weak_ptr` and `shared_ptr`, so you
+can look up a `shared_ptr` key in a `set` of `weak_ptr` entries (or vice versa) without converting.
+This is useful for registration/unregistration patterns where the subject holds `weak_ptr` observers
+but lookups are done with `shared_ptr`.
+
 ## Common Pitfalls
 
 1. **Using `expired()` instead of `lock()` in multithreaded code.** Between checking `expired()` and

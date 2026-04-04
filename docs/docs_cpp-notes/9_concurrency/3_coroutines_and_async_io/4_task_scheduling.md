@@ -386,6 +386,79 @@ across `when_all`, and proper cancellation propagation. Libraries like
 [libunifex](https://github.com/facebookexperimental/libunifex) (now `std::execution` proposal,
 P2300) provide production-grade executors. :::
 
+## Cancellation with `std::stop_token`
+
+C++ coroutines lack built-in cancellation. The `std::stop_token` mechanism [N4950 §32.4] provides
+cooperative cancellation that integrates with coroutine loops via periodic checks at suspension
+points:
+
+```cpp
+#include <iostream>
+#include <thread>
+#include <stop_token>
+#include <latch>
+
+void cancellation_demo() {
+    std::latch started{1};
+
+    std::jthread worker([&started](std::stop_token st) {
+        int count = 0;
+        started.count_down();
+        while (!st.stop_requested()) {
+            std::cout << "working " << count++ << "\n";
+            std::this_thread::sleep_for(std::chrono::milliseconds(50));
+        }
+        std::cout << "stopped after " << count << " iterations\n";
+    });
+
+    started.wait();
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
+    worker.request_stop();
+}
+```
+
+In a coroutine-based system, the stop token is stored in the promise type and checked at each
+`co_await` suspension point. An awaiter that checks the stop token before suspending allows the
+coroutine to exit cleanly:
+
+```cpp
+struct CancellableAwaiter {
+    std::stop_token token;
+
+    bool await_ready() const noexcept {
+        return token.stop_requested();
+    }
+
+    bool await_suspend(std::coroutine_handle<>) const noexcept {
+        return !token.stop_requested();
+    }
+
+    void await_resume() const noexcept {}
+};
+```
+
+When `await_ready()` returns `true` (stop requested), the coroutine skips suspension and the loop
+condition exits. When it returns `false`, the coroutine suspends normally and resumes when the
+scheduler decides, at which point the loop checks the stop token again. This pattern is cooperative:
+the coroutine must reach a cancellation point to observe the request. Long-running non-suspending
+computation cannot be cancelled until it reaches the next `co_await`.
+
+## Common Pitfalls
+
+- **Forgetting to `resume()` after `suspend_always`.** If a coroutine suspends with `suspend_always`
+  and no scheduler ever calls `resume()`, the coroutine leaks — its frame is never destroyed. Always
+  pair lazy coroutines with a scheduler or manual resume loop.
+- **Symmetric transfer vs direct resume.** Using `handle.resume()` inside `await_suspend` can cause
+  stack overflow on deep coroutine chains. Use symmetric transfer (`return handle;`) when the
+  awaiting coroutine is on a different thread or when chain depth is unbounded.
+- **Dangling continuation handles.** If a coroutine is destroyed while another coroutine holds its
+  handle as a continuation, resuming that continuation will access freed memory. Use `suspend_never`
+  for `final_suspend` when the coroutine is always at the tail of a chain, or reference counting if
+  the handle may outlive the coroutine.
+- **Thread affinity with TLS.** A coroutine suspended on one thread and resumed on another must not
+  rely on thread-local storage without careful synchronization. The coroutine frame itself is
+  heap-allocated and thread-safe, but any TLS access in the coroutine body is thread-affine.
+
 ## See Also
 
 - [Coroutine Handle, Promise Type, and Awaiter](./2_promise_awaiter.md)

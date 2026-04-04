@@ -393,6 +393,70 @@ CLI tools and short-lived microservices.
 - **Freestanding without `-nostdlib`:** Using `-ffreestanding` alone still links the CRT. Use
   `-nostdlib` and provide your own `_start` for true freestanding.
 
+## Thread-Local Storage Initialization
+
+TLS variables have their own initialization lifecycle that interacts with the CRT startup sequence.
+The two categories have fundamentally different performance characteristics:
+
+1. **Static TLS:** Variables declared `thread_local` with constant initializers (zero-initialization
+   or constant-expression initialization) are placed in the `.tbss` or `.tdata` ELF sections. The
+   dynamic linker (`ld.so`) allocates and initializes these when a new thread is created via the TLS
+   block template. Access cost is a single segment register load (`%fs:offset` on x86-64) —
+   effectively free after thread creation.
+2. **Dynamic TLS:** Variables with non-constant initializers (including function-local
+   `thread_local` and types with non-trivial constructors) require a guard variable and an
+   initialization function. On first access, the CRT checks the guard atomically, calls the
+   initializer if needed, and registers a destructor via `__cxa_thread_atexit`. First access has
+   significant overhead compared to static TLS.
+
+```cpp
+#include <iostream>
+#include <string>
+
+thread_local int tls_zero = 0;
+
+thread_local std::string tls_dynamic = "hello";
+
+void thread_entry() {
+    std::cout << tls_dynamic << "\n";
+}
+```
+
+On glibc, `__cxa_thread_atexit` registers per-thread destructors that run when the thread exits,
+analogous to how `atexit` works for the main thread. If the main thread accesses dynamic TLS, the
+destructors run during the normal termination sequence. On Windows, the mechanism is `DllMain` with
+`DLL_THREAD_DETACH`.
+
+:::warning Dynamic TLS has a significant first-access penalty (guard variable check, potential
+initialization, destructor registration). On hot paths, prefer static TLS (constant initialization)
+or pass data explicitly via function parameters. :::
+
+## DSO Constructor and Destructor Ordering
+
+When a program links against shared libraries (`.so` on Linux, `.dll` on Windows), each DSO has its
+own `.init_array` and `.fini_array`. The dynamic linker coordinates initialization across all DSOs:
+
+1. The dynamic linker loads all DSOs in **breadth-first dependency order**.
+2. Constructors run in **reverse dependency order**: leaf DSOs initialize first, then their
+   dependencies.
+3. Destructors run in **dependency order**: dependencies destroyed first, then leaf DSOs.
+
+```bash
+LD_DEBUG=init ./app
+# init: init=0x7f... libbar.so
+# init: init=0x7f... libfoo.so
+# init: init=0x7f... process
+```
+
+A common pitfall is using a global object from one DSO during the construction of a global object in
+another DSO — if the DSO ordering is wrong, the dependency may not yet be constructed. The
+"construct on first use" pattern (magic statics) mitigates this by deferring initialization to first
+access rather than load time.
+
+:::warning `LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
+library's constructors still run in dependency order relative to other DSOs. If the preloaded
+library depends on symbols from the main executable, those symbols may not yet be initialized. :::
+
 ## See Also
 
 - [Linker](../1_translation/3_linker.md)
