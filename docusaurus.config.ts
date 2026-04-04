@@ -393,6 +393,10 @@ const config: Config = {
               label: 'Donate',
               href: 'https://gravatar.com/wyattau',
             },
+            {
+              label: 'Privacy',
+              to: '/privacy',
+            },
           ],
         },
       ],
