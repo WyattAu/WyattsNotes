@@ -27,6 +27,21 @@ The `std::memory_order` enum [N4950 §31.7.5] defines six values:
 | `memory_order_acq_rel` | acquire + release      | Both acquire and release                      |
 | `memory_order_seq_cst` | sequential consistency | Total order across all seq_cst operations     |
 
+### The Memory Model Hierarchy
+
+Memory orderings form a strict hierarchy from weakest to strongest:
+
+$$
+\text{relaxed} \subset \text{consume} \subset \text{acquire} \subset \text{acq\_rel} \subset \text{seq\_cst}
+$$
+
+$$
+\text{relaxed} \subset \text{release} \subset \text{acq\_rel} \subset \text{seq\_cst}
+$$
+
+Using a stronger ordering than necessary is always safe but may incur performance penalties. Using a
+weaker ordering than required results in undefined behavior.
+
 ## Relaxed Ordering
 
 Relaxed atomics guarantee **atomicity only**: the operation is indivisible, but there are no
@@ -66,6 +81,32 @@ int main() {
 loads and stores compile to plain `mov` instructions. On ARM, `relaxed` loads use `ldar` and stores
 use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version). :::
 
+### When Relaxed Is Insufficient: The Message Passing Idiom
+
+Relaxed atomics are insufficient when one thread writes data and another thread reads it based on a
+flag. Without ordering constraints, the reader may see the flag set but read stale data:
+
+```cpp
+#include <atomic>
+#include <iostream>
+
+std::atomic<bool> flag{false};
+int data = 0;
+
+void writer() {
+    data = 42;
+    flag.store(true, std::memory_order_relaxed);
+    // RISK: compiler or CPU may reorder the store to flag before the store to data
+}
+
+void reader() {
+    while (!flag.load(std::memory_order_relaxed)) {}
+    // RISK: data may still be 0 here — the store to data may not be visible
+    std::cout << "data = " << data << "\n";
+}
+// This code has a data race on non-atomic 'data' and is undefined behavior.
+```
+
 ## Acquire/Release Ordering
 
 **Acquire** semantics [N4950 §31.7.5] prevent memory operations **after** the atomic operation from
@@ -86,6 +127,58 @@ $$\text{store}_{\text{release}}(x) \xrightarrow{\text{sw}} \text{load}_{\text{ac
 This creates a happens-before edge, and all memory operations sequenced-before the release store are
 visible to all operations sequenced-after the acquire load.
 
+### Correct Message Passing with Acquire/Release
+
+```cpp
+#include <atomic>
+#include <iostream>
+#include <thread>
+
+std::atomic<bool> flag{false};
+int data = 0;
+
+void writer() {
+    data = 42;  // Non-atomic write, sequenced before release
+    flag.store(true, std::memory_order_release);
+    // Release prevents reordering: data=42 is guaranteed visible before flag=true
+}
+
+void reader() {
+    while (!flag.load(std::memory_order_acquire)) {}
+    // Acquire prevents reordering: data read happens after flag read
+    // Synchronizes-with the release store, so data=42 is visible
+    std::cout << "data = " << data << "\n";
+}
+
+int main() {
+    std::jthread t1(reader);
+    writer();
+    return 0;
+}
+// Output: data = 42 (guaranteed)
+```
+
+### The Synchronizes-With Relationship
+
+The synchronizes-with relationship is the fundamental building block of the C++ memory model. It
+establishes a happens-before edge between threads, which in turn guarantees that all memory
+operations sequenced-before the release store are visible to operations sequenced-after the acquire
+load.
+
+Formally [N4950 §6.9.2.2]:
+
+$$
+A \xrightarrow{\text{sb}} B \implies A \xrightarrow{\text{hb}} B
+$$
+
+$$
+A \xrightarrow{\text{sw}} B \implies A \xrightarrow{\text{hb}} B
+$$
+
+$$
+A \xrightarrow{\text{hb}} B \implies \text{all side effects of } A \text{ visible to } B
+$$
+
 ## Sequentially Consistent Ordering
 
 `memory_order_seq_cst` [N4950 §31.7.5] provides the strongest guarantee: there exists a total order
@@ -103,6 +196,49 @@ on some implementations. On ARM, `seq_cst` operations use `dmb ish` barriers.
 :::info `memory_order_seq_cst` is the **default** for all atomic operations if no memory order is
 specified. This ensures maximum safety but may not be necessary in all cases. For
 performance-critical code, consider using weaker orderings where appropriate. :::
+
+### The Store Buffering Problem (Why seq_cst Is Needed)
+
+Even with acquire/release, the following scenario can produce unexpected results:
+
+```cpp
+#include <atomic>
+#include <iostream>
+#include <thread>
+
+std::atomic<int> x{0};
+std::atomic<int> y{0};
+int r1 = 0;
+int r2 = 0;
+
+// Thread 1: stores x=1 (release), then loads y (acquire)
+void thread1() {
+    x.store(1, std::memory_order_release);
+    r1 = y.load(std::memory_order_acquire);
+}
+
+// Thread 2: stores y=1 (release), then loads x (acquire)
+void thread2() {
+    y.store(1, std::memory_order_release);
+    r2 = x.load(std::memory_order_acquire);
+}
+
+int main() {
+    std::jthread t1(thread1);
+    std::jthread t2(thread2);
+    // With acquire/release, it is possible that r1==0 && r2==0
+    // This is because acquire/release only creates ordering between
+    // the store and load on the SAME atomic variable, not across variables.
+    std::cout << "r1=" << r1 << ", r2=" << r2 << "\n";
+    return 0;
+}
+// Possible output: r1=0, r2=0 (surprising but valid with acquire/release)
+```
+
+With `memory_order_seq_cst`, the outcome `r1==0 && r2==0` is impossible because the total order on
+`seq_cst` operations prevents it. The seq_cst total order ensures that either Thread 1's store to
+`x` happens before Thread 2's store to `y`, or vice versa, and in either case, the other thread's
+load sees the store.
 
 ## Producer-Consumer with Acquire/Release
 
@@ -183,6 +319,14 @@ int main() {
 }
 ```
 
+### Why `alignas(64)` Matters
+
+The `alignas(64)` on the indices places them on separate cache lines (64 bytes is the typical cache
+line size on x86). Without this, both indices might share a cache line, causing **false sharing**:
+every write to `write_idx_` invalidates the cache line containing `read_idx_` (and vice versa),
+forcing the other core to re-fetch from main memory. False sharing can reduce throughput by 5-10x on
+multi-core systems.
+
 ## Memory Ordering Comparison Table
 
 | Operation       | x86                  | ARMv8            | POWER8                    | Compiler Barrier Only |
@@ -200,6 +344,34 @@ provides those ordering guarantees. The only extra cost is for `seq_cst` stores 
 `MFENCE`). On ARM and POWER, acquire and release require explicit barrier instructions, so the
 performance difference between relaxed and acquire/release is significant on those architectures.
 :::
+
+### Hardware Memory Models
+
+Understanding why the ordering costs differ requires understanding the underlying hardware memory
+models:
+
+**x86 (Total Store Order — TSO):**
+
+- Loads are never reordered with other loads.
+- Stores are never reordered with other stores.
+- Loads are never reordered with older stores to the same address.
+- **Stores may be reordered after loads** (this is the only relaxation vs. sequential consistency).
+- Result: acquire loads and release stores are free; only `seq_cst` stores need `MFENCE`.
+
+**ARMv8 (Weakly Ordered):**
+
+- No reordering guarantees by default.
+- All ordering must be explicitly requested via `LDAR`, `STLR`, or `DMB` instructions.
+- `LDAR` provides load-acquire semantics.
+- `STLR` provides store-release semantics.
+- `DMB ISH` provides a full barrier.
+
+**POWER8 (Relaxed):**
+
+- Even weaker than ARMv8.
+- Requires explicit `SYNC` (full barrier) and `LWSYNC` (lightweight sync) instructions.
+- `LWSYNC` provides release semantics but is not a full acquire.
+- A full acquire requires `SYNC`.
 
 ## Fence Operations
 
@@ -239,13 +411,101 @@ int main() {
 }
 ```
 
+### Fence Synchronizes-With Rules
+
+A release fence `F` synchronizes-with an acquire fence `G` if:
+
+1. There exists an atomic store `A` sequenced-before `F`.
+2. There exists an atomic load `B` sequenced-after `G`.
+3. `A` stores to the same atomic variable `X` that `B` loads from.
+4. `B` reads the value written by `A` or a value written after `A` in the modification order of `X`.
+
+This is more complex than direct acquire/release on atomic operations and is why fences are
+discouraged in favor of direct memory ordering on atomic loads and stores.
+
 :::info Fences are rarely needed in practice. Prefer acquire/release semantics on atomic loads and
 stores directly, as they are more readable and equally efficient. Fences are primarily useful when
 interfacing with hardware or when the atomic operation itself is performed by non-standard means.
 :::
 
-## See Also
+## `memory_order_consume`: The Problematic Ordering
 
-- [Instruction Reordering and Happens-Before](./1_instruction_reordering.md)
-- [Atomic Operations and Lock-Free Programming](./3_atomic_operations.md)
-- [Compare-and-Swap (CAS) Loops](./5_cas_loops.md)
+`memory_order_consume` was intended to optimize cases where data dependency ordering is sufficient
+(carries-a-dependency-to). However, it is effectively deprecated because no major compiler
+implements it correctly — they all promote it to `memory_order_acquire` to avoid the complexity of
+tracking data dependencies through the compiler's intermediate representation.
+
+```cpp
+#include <atomic>
+#include <iostream>
+
+struct Node {
+    int data;
+    std::atomic<Node*> next{nullptr};
+};
+
+std::atomic<Node*> head{nullptr};
+
+void producer() {
+    static Node n3{30, nullptr};
+    static Node n2{20, &n3};
+    static Node n1{10, &n2};
+    head.store(&n1, std::memory_order_release);
+}
+
+void consumer() {
+    Node* p = head.load(std::memory_order_consume);
+    // In theory, consume only guarantees that p->next and p->data
+    // are visible (data dependency). Other memory is not guaranteed.
+    // In practice, compilers treat this as acquire.
+    if (p) {
+        std::cout << p->data << "\n";
+        if (p->next) {
+            std::cout << p->next->data << "\n";
+        }
+    }
+}
+
+int main() {
+    producer();
+    consumer();
+    return 0;
+}
+```
+
+The C++26 proposal P0371R3 formalizes the deprecation by recommending that compilers treat
+`memory_order_consume` as `memory_order_acquire`.
+
+## Common Pitfalls
+
+### Pitfall 1: Mixing Memory Orders on the Same Variable
+
+Using different memory orders on the same atomic variable for load and store is valid but requires
+careful reasoning. A release store paired with a relaxed load does NOT establish synchronizes-with:
+
+```cpp
+// WRONG: relaxed load does not synchronize with release store
+// producer: data = 42; flag.store(true, memory_order_release);
+// consumer: while (!flag.load(memory_order_relaxed)); cout << data;
+// UB: no synchronizes-with relationship, data may be stale
+```
+
+### Pitfall 2: Forgetting That Non-Atomic Accesses Are Still UB
+
+Even with correct memory ordering on the flag, non-atomic accesses to shared data without a
+happens-before relationship constitute data races and are undefined behavior. Acquire/release must
+be used on both the flag AND the data must be sequenced-before the release / after the acquire.
+
+### Pitfall 3: seq_cst Does Not Prevent All Surprises
+
+`memory_order_seq_cst` prevents the store-buffering problem but does not prevent other concurrency
+issues like lost updates. A `seq_cst` `fetch_add` is still needed for atomic increments; a plain
+`seq_cst` load-modify-store sequence is not atomic:
+
+```cpp
+// WRONG: load-modify-store is not atomic even with seq_cst
+// int old = counter.load(memory_order_seq_cst);
+// counter.store(old + 1, memory_order_seq_cst);
+// CORRECT: atomic RMW
+// counter.fetch_add(1, memory_order_seq_cst);
+```

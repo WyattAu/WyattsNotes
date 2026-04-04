@@ -28,6 +28,19 @@ Key operations:
 | `notify_one()`     | Wakes one waiting thread                                             |
 | `notify_all()`     | Wakes all waiting threads                                            |
 
+### How `wait()` Works Internally
+
+When a thread calls `wait(lock)`, the following sequence occurs:
+
+1. The thread atomically releases the mutex and blocks.
+2. When notified (or spuriously woken), the thread re-acquires the mutex before returning.
+3. The atomicity of "release mutex + block" is critical — without it, a notification sent between
+   the mutex release and the block would be lost.
+
+On Linux, `std::condition_variable` is typically implemented using `pthread_cond_t`, which uses the
+futex system call. The mutex is released atomically with the futex wait via `pthread_cond_wait`,
+which internally calls `futex_wait` with the mutex address as part of the wait queue.
+
 ## Spurious Wakeups and the Predicate Loop
 
 A **spurious wakeup** is an unwarranted wakeup where `wait()` returns even though no `notify_one()`
@@ -54,12 +67,155 @@ while (!pred()) {
 }
 ```
 
+### Why Spurious Wakeups Exist
+
+Spurious wakeups are not a bug — they are a deliberate design choice mandated by hardware and OS
+constraints:
+
+1. **POSIX allows them**: The POSIX specification for `pthread_cond_wait` explicitly permits
+   spurious wakeups, and C++ condition variables are typically built on top of POSIX primitives.
+2. **Performance**: On some architectures, it is cheaper to occasionally spuriously wake a thread
+   than to guarantee exact wakeup semantics. The futex system call on Linux may spuriously return
+   `EINTR` if a signal is delivered to the waiting thread.
+3. **Implementations**: On some platforms, condition variables are implemented using shared memory
+   and atomic operations, where distinguishing between a genuine notification and a coincidental
+   state change is impractical.
+
+### Lost Wakeup Problem
+
+If `notify_one()` is called before `wait()` begins waiting, the notification is lost and the waiting
+thread may block forever. The mutex prevents this: the notifying thread must hold the mutex while
+modifying the shared state and calling `notify_one()`. The waiting thread checks the predicate while
+holding the mutex. If the predicate is already true, it never calls `wait()`:
+
+```cpp
+#include <iostream>
+#include <mutex>
+#include <condition_variable>
+#include <thread>
+
+std::mutex mtx;
+std::condition_variable cv;
+bool ready = false;
+
+void notifier() {
+    std::lock_guard<std::mutex> lk(mtx);
+    ready = true;
+    cv.notify_one();  // If waiter hasn't reached wait() yet...
+}
+
+void waiter() {
+    std::unique_lock<std::mutex> lk(mtx);
+    // ...the predicate is already true, so wait() returns immediately
+    cv.wait(lk, [] { return ready; });
+    std::cout << "Ready!\n";
+}
+
+int main() {
+    std::jthread t1(notifier);
+    std::jthread t2(waiter);
+    return 0;
+}
+```
+
 ## `std::condition_variable_any`
 
 `std::condition_variable_any` [N4950 §31.5.5] is similar to `std::condition_variable` but can work
 with any **Lockable** type (not just `std::unique_lock<std::mutex>`). It may be less efficient than
 `std::condition_variable` because it cannot use platform-specific optimizations that rely on
 `std::mutex`.
+
+### When to Use `condition_variable_any`
+
+Use `condition_variable_any` when you need to use a non-standard lock type, such as a
+`std::shared_mutex` for read-write locking:
+
+```cpp
+#include <iostream>
+#include <shared_mutex>
+#include <condition_variable>
+#include <queue>
+#include <thread>
+#include <string>
+
+class SharedState {
+    mutable std::shared_mutex rw_mtx_;
+    std::condition_variable_any cv_;
+    std::queue<std::string> queue_;
+
+public:
+    void push(std::string msg) {
+        std::unique_lock<std::shared_mutex> lk(rw_mtx_);
+        queue_.push(std::move(msg));
+        cv_.notify_one();
+    }
+
+    std::string pop() {
+        std::unique_lock<std::shared_mutex> lk(rw_mtx_);
+        cv_.wait(lk, [this] { return !queue_.empty(); });
+        auto msg = std::move(queue_.front());
+        queue_.pop();
+        return msg;
+    }
+
+    bool empty() const {
+        std::shared_lock<std::shared_mutex> lk(rw_mtx_);
+        return queue_.empty();
+    }
+};
+
+int main() {
+    SharedState state;
+    std::jthread producer([&state] {
+        for (int i = 0; i < 5; ++i) {
+            state.push("message " + std::to_string(i));
+        }
+    });
+    std::jthread consumer([&state](std::stop_token st) {
+        int count = 0;
+        while (count < 5 && !st.stop_requested()) {
+            auto msg = state.pop();
+            std::cout << "Got: " << msg << "\n";
+            ++count;
+        }
+    });
+    return 0;
+}
+```
+
+## `wait_for` and `wait_until`: Timed Waits
+
+Condition variables support timed waiting, which is essential for implementing timeouts and
+polling-based patterns:
+
+```cpp
+#include <iostream>
+#include <mutex>
+#include <condition_variable>
+#include <chrono>
+
+std::mutex mtx;
+std::condition_variable cv;
+bool data_ready = false;
+
+int main() {
+    std::unique_lock<std::mutex> lk(mtx);
+
+    if (cv.wait_for(lk, std::chrono::seconds(2), [] { return data_ready; })) {
+        std::cout << "Data ready within timeout\n";
+    } else {
+        std::cout << "Timeout expired\n";
+    }
+    return 0;
+}
+// Output: Timeout expired
+```
+
+The predicate version of `wait_for` returns `true` if the predicate became `true` before the
+timeout, and `false` if the timeout expired (regardless of whether the predicate is true at that
+point). Without the predicate, `wait_for` returns `cv_status::no_timeout` if notified or
+`cv_status::timeout` if the timeout expired — spurious wakeups return `no_timeout`, which is another
+reason to always use the predicate version.
 
 ## Producer-Consumer with Condition Variable
 
@@ -148,6 +304,24 @@ int main() {
 }
 ```
 
+### Notify Outside the Lock: Why It Matters
+
+In the producer-consumer example above, `notify_one()` is called after `lock.unlock()`. This is a
+deliberate optimization: if the notification is sent while the lock is held, the woken thread
+immediately tries to re-acquire the lock and blocks again, causing an unnecessary context switch. By
+notifying after unlocking, the woken thread can acquire the lock immediately.
+
+This pattern is sometimes called "unlock-then-notify":
+
+```cpp
+// Pattern: unlock then notify
+{
+    std::lock_guard<std::mutex> lk(mtx_);
+    // modify shared state
+}
+cv_.notify_one();  // Notify after lock is released
+```
+
 ## `std::latch` (C++20)
 
 `std::latch` [N4950 §31.4.4.3] is a one-shot synchronization primitive. It is initialized with a
@@ -164,6 +338,12 @@ are unblocked.
 A latch is useful for **one-time barriers** such as waiting for all worker threads to finish
 initialization before proceeding.
 
+### Implementation Details
+
+`std::latch` is typically implemented using an atomic counter and an internal condition variable or
+futex. The key invariant is that `count_down` is thread-safe and `wait` blocks until the counter
+reaches zero. Once zero, the latch is "done" and all subsequent `wait()` calls return immediately.
+
 ## `std::barrier` (C++20)
 
 `std::barrier` [N4950 §31.4.4.5] is a reusable synchronization point. Unlike `std::latch`, a barrier
@@ -179,7 +359,9 @@ resets its counter after all threads arrive, allowing it to be reused across mul
 The barrier can accept a **completion function** that is executed once when all threads arrive,
 before any waiting thread is released:
 
-$$\text{Phase } k \to \text{completion function} \to \text{Phase } k+1$$
+$$
+\text{Phase } k \to \text{completion function} \to \text{Phase } k+1
+$$
 
 ## Barrier Synchronization for Parallel Computation
 
@@ -217,6 +399,54 @@ int main() {
         threads.emplace_back(worker, i);
     }
 
+    return 0;
+}
+```
+
+### Completion Function Execution
+
+The completion function in `std::barrier` is executed **exactly once** per phase, by the **last
+thread to arrive** at the barrier. This is important: the completion function runs while other
+threads are still blocked. The completion function must not block (doing so would prevent other
+threads from being released), and it must not throw.
+
+### `arrive_and_drop`: Dynamic Thread Count
+
+`arrive_and_drop()` allows a thread to permanently reduce the expected thread count. This is useful
+when worker threads finish early and the remaining threads should synchronize with a smaller group:
+
+```cpp
+#include <iostream>
+#include <thread>
+#include <barrier>
+#include <vector>
+
+int main() {
+    auto on_phase_complete = [] noexcept {
+        std::cout << "Phase complete\n";
+    };
+
+    std::barrier b(4, on_phase_complete);
+
+    auto worker = [&](int id) {
+        if (id < 2) {
+            for (int phase = 0; phase < 3; ++phase) {
+                std::cout << "Thread " << id << " phase " << phase << "\n";
+                b.arrive_and_wait();
+            }
+            b.arrive_and_drop();  // Permanently remove this thread from the barrier
+        } else {
+            for (int phase = 0; phase < 2; ++phase) {
+                std::cout << "Thread " << id << " phase " << phase << "\n";
+                b.arrive_and_wait();
+            }
+        }
+    };
+
+    std::vector<std::jthread> threads;
+    for (int i = 0; i < 4; ++i) {
+        threads.emplace_back(worker, i);
+    }
     return 0;
 }
 ```
@@ -265,8 +495,134 @@ int main() {
 `std::barrier` when you need reusable phase synchronization. `std::latch` is ideal for
 startup/shutdown patterns and fork-join parallelism [N4950 §31.4.4.3]. :::
 
-## See Also
+## `std::flex_barrier` (C++20 Alternative)
 
-- [Mutexes, Shared Locks, and Deadlock Prevention](./3_mutexes_deadlocks.md)
-- [Thread-Local Storage (TLS)](./5_thread_local_storage.md)
-- [Thread Execution (std::jthread) and Hardware Mapping](./1_threads_jthread.md)
+C++20's `std::barrier` with a completion function that returns the next phase's expected count
+effectively creates a "flex barrier." The completion function can return a new thread count:
+
+```cpp
+#include <iostream>
+#include <thread>
+#include <barrier>
+#include <vector>
+
+int main() {
+    // Completion function returns the next phase's thread count
+    std::barrier b(4, [] noexcept -> std::ptrdiff_t {
+        std::cout << "Phase done. Next phase expects 2 threads.\n";
+        return 2;  // Reduce expected threads for next phase
+    });
+
+    auto worker = [&](int id) {
+        std::cout << "Thread " << id << " arriving at phase 1\n";
+        b.arrive_and_wait();
+        if (id < 2) {
+            std::cout << "Thread " << id << " arriving at phase 2\n";
+            b.arrive_and_wait();
+        }
+    };
+
+    std::vector<std::jthread> threads;
+    for (int i = 0; i < 4; ++i) {
+        threads.emplace_back(worker, i);
+    }
+    return 0;
+}
+```
+
+## Choosing Between Synchronization Primitives
+
+| Requirement                         | Primitive                              | Rationale                       |
+| ----------------------------------- | -------------------------------------- | ------------------------------- |
+| One-time wait for N events          | `std::latch`                           | Single-use, no reset needed     |
+| Reusable phase synchronization      | `std::barrier`                         | Resets automatically per phase  |
+| Wait for a condition to become true | `std::condition_variable`              | Flexible, works with predicates |
+| Wait for a single event (flag)      | `std::atomic<bool>` + `wait()` (C++20) | No mutex overhead               |
+| One-time initialization             | `std::call_once`                       | Guaranteed single execution     |
+
+## Common Pitfalls
+
+### Pitfall 1: Forgetting the Predicate Loop
+
+The single most common bug with condition variables is using `wait(lock)` without a predicate:
+
+```cpp
+// BUG: May wake up spuriously before the condition is actually met
+cv.wait(lock);
+process_data();
+
+// FIX: Always use the predicate version
+cv.wait(lock, [] { return data_ready; });
+process_data();
+```
+
+Without the predicate, a spurious wakeup causes `process_data()` to run with invalid state. This is
+a race condition that is extremely difficult to reproduce because it depends on timing.
+
+### Pitfall 2: Notify Without Holding the Lock
+
+While it is correct to notify after releasing the lock (for performance), you must ensure the shared
+state modification is protected by the lock:
+
+```cpp
+// WRONG: modifying state without lock
+ready = true;
+cv.notify_one();
+
+// CORRECT: modify under lock, notify outside
+{
+    std::lock_guard<std::mutex> lk(mtx_);
+    ready = true;
+}
+cv.notify_one();
+```
+
+### Pitfall 3: Using `notify_all` When `notify_one` Suffices
+
+`notify_all` wakes every waiting thread, which causes a "thundering herd" problem: all threads wake
+up, contend for the mutex, and all but one go back to sleep. Use `notify_one` when only one waiting
+thread can make progress:
+
+```cpp
+// Producer-consumer: only one consumer should wake per item
+cv_.notify_one();  // Correct
+
+// State change that enables multiple waiters to proceed
+cv_.notify_all();  // Correct: all waiters can now proceed
+```
+
+### Pitfall 4: `std::latch` Count Underflow
+
+Calling `count_down()` more times than the initial count is undefined behavior. The count is
+typically an unsigned integer and wraps around, causing `wait()` to never return:
+
+```cpp
+std::latch l(2);
+l.count_down();
+l.count_down();  // Count is now 0
+// l.count_down();  // UB: count underflows, latch may never reach zero
+l.wait();  // Returns immediately (count is already 0)
+```
+
+### Pitfall 5: `std::barrier` with Unequal Thread Counts
+
+If fewer threads arrive at a barrier than the expected count, the waiting threads block forever.
+This is a common bug when worker threads exit early (e.g., due to exceptions):
+
+```cpp
+std::barrier b(4);
+
+auto worker = [&b, id = 0](int id) mutable {
+    if (id == 3) return;  // BUG: one thread doesn't arrive
+    b.arrive_and_wait();  // Other threads block forever
+};
+
+// Fix: use arrive_and_drop() for early-exiting threads
+auto worker_safe = [&b](int id) {
+    if (id == 3) {
+        b.arrive_and_drop();
+        return;
+    }
+    b.arrive_and_wait();
+};
+```

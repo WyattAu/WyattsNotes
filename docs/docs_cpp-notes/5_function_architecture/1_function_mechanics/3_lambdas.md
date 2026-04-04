@@ -47,6 +47,48 @@ int main() {
 }
 ```
 
+### Lambda Components
+
+The full lambda syntax is:
+
+```
+[capture](template_params)(params) mutable noexcept(…) -> ret { body }
+```
+
+Every component after `capture` is optional:
+
+```cpp
+#include <iostream>
+
+int main() {
+    // Minimal lambda
+    auto f1 = []{};
+
+    // With return type deduction
+    auto f2 = [] { return 42; };
+
+    // Explicit return type
+    auto f3 = []() -> double { return 3.14; };
+
+    // Mutable
+    int n = 0;
+    auto f4 = [n]() mutable { return ++n; };
+
+    // Noexcept
+    auto f5 = []() noexcept { };
+
+    // C++20 template parameters
+    auto f6 = []<typename T>(T x) { return x * x; };
+
+    // C++20 requires clause
+    auto f7 = [](auto x) requires std::integral<decltype(x)> { return x; };
+
+    std::cout << f2() << '\n';
+    std::cout << f4() << '\n' << f4() << '\n';
+    return 0;
+}
+```
+
 ## 3.2 Capture Modes
 
 | Capture Syntax | Meaning                                       |
@@ -88,6 +130,71 @@ int main() {
 }
 ```
 
+### Init-Captures in Detail
+
+Init-captures (C++14) are the most flexible capture mechanism. They allow you to:
+
+- Move objects into the closure (avoiding copies).
+- Capture the result of an arbitrary expression.
+- Rename captures for clarity.
+
+```cpp
+#include <iostream>
+#include <string>
+#include <memory>
+#include <vector>
+
+int main() {
+    // Move capture: transfers ownership of the unique_ptr into the closure
+    auto ptr = std::make_unique<int>(42);
+    auto use_ptr = [p = std::move(ptr)]() {
+        return *p;
+    };
+    std::cout << use_ptr() << '\n';  // 42
+    // ptr is now nullptr — ownership moved into the closure
+
+    // Expression capture: compute a derived value at capture time
+    std::vector<int> data = {1, 2, 3, 4, 5};
+    auto snapshot_sum = [sum = 0, d = data]() mutable {
+        for (int x : d) sum += x;
+        return sum;
+    };
+    std::cout << snapshot_sum() << '\n';  // 15
+
+    // Renaming capture: shorter names inside the lambda
+    int very_long_variable_name = 100;
+    auto f = [short_name = very_long_variable_name] {
+        return short_name * 2;
+    };
+    std::cout << f() << '\n';  // 200
+    return 0;
+}
+```
+
+### Structured Binding Capture (C++20)
+
+C++20 allows capturing structured bindings in init-captures:
+
+```cpp
+#include <iostream>
+#include <map>
+
+int main() {
+    std::map<std::string, int> m = {{"a", 1}, {"b", 2}, {"c", 3}};
+
+    for (const auto& [key, value] : m) {
+        auto f = [k = key, v = value] {
+            std::cout << k << " = " << v << '\n';
+        };
+        f();
+    }
+    return 0;
+}
+```
+
+Note that `[key, value]` alone in the capture list does NOT work for structured bindings — you must
+use init-capture syntax `[k = key, v = value]`.
+
 ## 3.3 Mutable Lambdas
 
 By default, a lambda's `operator()` is `const`. The `mutable` keyword removes the `const` qualifier,
@@ -113,6 +220,46 @@ int main() {
     // ERROR: increment of member 'counter' in read-only object
 }
 ```
+
+### Why `mutable` Exists
+
+The default `const` qualifier on `operator()` is a safety feature. It ensures that value captures
+are immutable by default, preventing accidental modification. The `mutable` keyword is an explicit
+opt-in that signals "I intend to modify the captured state." This mirrors the philosophy of `const`
+correctness throughout C++.
+
+### Stateful Lambdas as Function Objects
+
+A `mutable` lambda with captured state is a full function object. It can maintain state across
+invocations, making it useful for algorithms that need accumulation or filtering:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> data = {5, 3, 8, 1, 4, 7, 2, 6, 9};
+
+    auto running_sum = [total = 0](int x) mutable mutable {
+        total += x;
+        return total;
+    };
+
+    std::vector<int> prefix_sums;
+    std::transform(data.begin(), data.end(), std::back_inserter(prefix_sums),
+                   running_sum);
+
+    std::cout << "Prefix sums: ";
+    for (int s : prefix_sums) std::cout << s << " ";
+    std::cout << '\n';
+    // Output: Prefix sums: 5 8 16 17 21 28 30 36 45
+    return 0;
+}
+```
+
+Note: `std::transform` copies the lambda by value. Each copy has its own `total`. If you need a
+shared state across all copies, capture a `std::shared_ptr` or use a reference.
 
 ## 3.4 Generic Lambdas [N4950 §8.1.5.5]
 
@@ -145,6 +292,45 @@ int main() {
         return a + b;
     };
     // add_numbers(1.5, 2.5);  // ERROR: constraint not satisfied
+}
+```
+
+### Generic Lambda with `auto&&` (Forwarding Reference)
+
+Using `auto&&` in a lambda parameter creates a forwarding reference, allowing the lambda to accept
+both lvalues and rvalues without unnecessary copies:
+
+```cpp
+#include <iostream>
+#include <utility>
+#include <string>
+
+int main() {
+    auto forwarder = [](auto&& arg) {
+        return std::forward<decltype(arg)>(arg);
+    };
+
+    std::string s = "hello";
+    std::cout << forwarder(s) << '\n';           // lvalue: hello
+    std::cout << forwarder(std::string("world")) << '\n';  // rvalue: world
+    return 0;
+}
+```
+
+### Variadic Generic Lambdas
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    auto print_all = [](const auto&... args) {
+        (std::cout << ... << args) << '\n';
+    };
+
+    print_all(1, " ", 2.5, " ", "hello");
+    // Output: 1 2.5 hello
+    return 0;
 }
 ```
 
@@ -185,6 +371,81 @@ int main() {
     std::cout << bad(10) << '\n';   // 50 — works here, but fragile
     // After f goes out of scope, calling bad() is undefined behavior
 }
+```
+
+### Capturing `this` in Member Functions
+
+When a lambda is created inside a member function and captures `this`, it holds a raw pointer to the
+object. If the object is destroyed before the lambda executes, the pointer dangles:
+
+```cpp
+#include <iostream>
+#include <functional>
+#include <memory>
+
+class Widget {
+    int value_ = 42;
+public:
+    std::function<int()> get_value_fn() {
+        // CAPTURES RAW this POINTER
+        return [this] { return value_; };
+    }
+};
+
+// SAFER: capture by value if possible
+class SaferWidget {
+    int value_ = 42;
+public:
+    std::function<int()> get_value_fn() {
+        return [self = *this] { return self.value_; };
+    }
+};
+
+// SAFEST: use weak_ptr for shared ownership
+class SafestWidget : public std::enable_shared_from_this<SafestWidget> {
+    int value_ = 42;
+public:
+    std::function<int()> get_value_fn() {
+        auto weak = weak_from_this();
+        return [weak] {
+            if (auto ptr = weak.lock()) {
+                return ptr->value_;
+            }
+            return -1;  // Object was destroyed
+        };
+    }
+};
+
+int main() {
+    auto widget = std::make_shared<SafestWidget>();
+    auto fn = widget->get_value_fn();
+    std::cout << fn() << '\n';  // 42
+    widget.reset();
+    std::cout << fn() << '\n';  // -1 (object destroyed)
+    return 0;
+}
+```
+
+### `[*this]` Capture (C++17)
+
+C++17 introduced `[*this]` which captures the current object by value (calls the copy constructor),
+avoiding the dangling `this` pointer problem:
+
+```cpp
+#include <iostream>
+#include <thread>
+
+class Counter {
+    int count_ = 0;
+public:
+    void start_counting() {
+        std::jthread t([*this] {
+            // Safe: this->count_ is captured by value
+            // Modifying count_ here modifies the COPY, not the original
+            // Use & for actual mutation of the original object
+        });
+    }
+};
 ```
 
 ## 3.6 `std::function` vs Lambda: Type Erasure Overhead
@@ -237,7 +498,168 @@ int main() {
 }
 ```
 
-## See Also
+### `std::function` SBO Threshold
 
-- [Overload Resolution](1_overload_resolution.md)
-- [Type Erasure](4_type_erasure.md)
+The Small Buffer Optimization (SBO) threshold for `std::function` is implementation-defined but
+typically 1-3 machine words (8-24 bytes on 64-bit). Closures smaller than this are stored inline;
+larger ones are heap-allocated:
+
+```cpp
+#include <functional>
+#include <iostream>
+#include <cstdint>
+
+int main() {
+    // Small closure (8 bytes: one int) — fits in SBO, no heap allocation
+    auto small = [x = 42]() { return x; };
+    std::function<int()> f_small = small;
+
+    // Large closure (64 bytes: 8 ints) — heap allocated on most implementations
+    auto large = [a = 1, b = 2, c = 3, d = 4, e = 5, f = 6, g = 7, h = 8]() {
+        return a + b + c + d + e + f + g + h;
+    };
+    std::function<int()> f_large = large;
+
+    std::cout << "sizeof(small closure): " << sizeof(small) << " bytes\n";
+    std::cout << "sizeof(large closure): " << sizeof(large) << " bytes\n";
+    std::cout << "sizeof(std::function): " << sizeof(std::function<int()>) << " bytes\n";
+    return 0;
+}
+```
+
+### `std::function_ref`: Zero-Cost Type Erasure
+
+For non-owning references to callables, `std::function_ref` (C++26, or third-party implementations)
+provides type erasure without heap allocation:
+
+```cpp
+#include <iostream>
+
+// Simplified function_ref implementation
+template <typename Sig>
+class function_ref;
+
+template <typename R, typename... Args>
+class function_ref<R(Args...)> {
+    void* obj_ = nullptr;
+    R (*invoke_)(void*, Args...) = nullptr;
+
+    template <typename F>
+    static R invoke_impl(void* obj, Args... args) {
+        return (*static_cast<F*>(obj))(std::forward<Args>(args)...);
+    }
+
+public:
+    template <typename F>
+    function_ref(F& f) noexcept
+        : obj_(&f), invoke_(invoke_impl<F>) {}
+
+    R operator()(Args... args) const {
+        return invoke_(obj_, std::forward<Args>(args)...);
+    }
+};
+
+int main() {
+    auto lambda = [](int x) { return x * x; };
+    function_ref<int(int)> ref = lambda;
+    std::cout << ref(5) << '\n';  // 25
+    // No heap allocation, no virtual dispatch (inlined in practice)
+    return 0;
+}
+```
+
+## 3.7 Lambda in Unevaluated Contexts
+
+Lambdas can appear in unevaluated contexts (`decltype`, `sizeof`, `noexcept`, `requires`), but with
+limitations:
+
+```cpp
+#include <iostream>
+#include <type_traits>
+
+int main() {
+    auto f = [](int x) { return x * 2; };
+
+    // Lambda type is unnameable but can be queried
+    using ClosureType = decltype(f);
+    std::cout << std::is_trivially_copyable_v<ClosureType> << '\n';
+    std::cout << sizeof(f) << '\n';  // Size of captured members
+
+    // Default-constructible only if no captures
+    auto empty = []{};
+    auto another = decltype(empty){};  // OK: no captures
+
+    // auto copy = decltype(f){};  // ERROR: f has captures, not default-constructible
+    return 0;
+}
+```
+
+## Common Pitfalls
+
+### Pitfall 1: Capturing by Reference in Async Code
+
+The most common source of dangling reference bugs is capturing local variables by reference in
+lambdas passed to asynchronous operations (threads, callbacks, futures):
+
+```cpp
+#include <iostream>
+#include <thread>
+#include <string>
+
+void async_bug() {
+    std::string message = "hello";
+    std::jthread t([&message] {
+        // BUG: message may be destroyed before thread executes
+        std::cout << message << '\n';
+    });
+    t.detach();
+}  // message destroyed here, but thread may still be running
+```
+
+### Pitfall 2: Lambda Copy Semantics in STL Algorithms
+
+STL algorithms copy their callable arguments. If the lambda has mutable state, each copy has
+independent state:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    int count = 0;
+    auto counter = [&count]() mutable { return ++count; };
+
+    std::vector<int> v(5);
+    // std::for_each may copy the lambda multiple times internally
+    std::for_each(v.begin(), v.end(), counter);
+    // count may not be 5 — depends on implementation's copy count
+
+    // Fix: use std::ref to pass by reference
+    count = 0;
+    std::for_each(v.begin(), v.end(), std::ref(counter));
+    std::cout << count << '\n';  // Guaranteed 5
+    return 0;
+}
+```
+
+### Pitfall 3: Overcapturing with `[=]` and `[&]`
+
+Default captures (`[=]`, `[&]`) capture everything that is used, which can inadvertently capture
+pointers, references to local variables, or `this`:
+
+```cpp
+#include <iostream>
+
+struct Handler {
+    void setup() {
+        int local = 42;
+        // BAD: [=] captures `this` implicitly
+        auto callback = [=]() {
+            // Uses this->member_ and local
+            // If callback outlives Handler, this is dangling
+        };
+    }
+    int member_ = 0;
+};
+```

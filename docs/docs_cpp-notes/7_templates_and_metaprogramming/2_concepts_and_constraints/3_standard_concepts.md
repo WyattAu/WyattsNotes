@@ -68,6 +68,88 @@ equality. `int`, `double`, and `std::string` are all `std::regular`. `std::uniqu
 `std::movable` but not `std::regular` (not copyable). `std::mutex` is neither `std::movable` nor
 `std::copyable`. These concepts are the vocabulary types of generic programming. :::
 
+## Understanding `std::derived_from` vs `std::is_base_of`
+
+`std::derived_from<D, B>` is stricter than `std::is_base_of_v<B, D>`:
+
+```cpp
+#include <iostream>
+#include <concepts>
+#include <type_traits>
+
+struct Base {};
+struct Derived : Base {};
+
+struct Unrelated {};
+
+int main() {
+    std::cout << std::boolalpha;
+    std::cout << "is_base_of: " << std::is_base_of_v<Base, Derived> << "\n";
+    std::cout << "derived_from: " << std::derived_from<Derived, Base> << "\n";
+
+    // The difference: derived_from requires implicit convertibility to const Base&
+    // is_base_of does not (e.g., private inheritance)
+    std::cout << "is_base_of<int, int>: " << std::is_base_of_v<int, int> << "\n";
+    std::cout << "derived_from<int, int>: " << std::derived_from<int, int> << "\n";
+    return 0;
+}
+// Output:
+//   is_base_of: true
+//   derived_from: true
+//   is_base_of<int, int>: true  (vacuously true — every type is a base of itself)
+//   derived_from<int, int>: false (int is not implicitly convertible to const int&)
+```
+
+The `std::derived_from` concept requires:
+
+1. `B` is a base class of `D` (or `B` and `D` are the same type).
+2. `D` is implicitly convertible to `const B&`.
+
+This means private inheritance is correctly rejected by `std::derived_from` but accepted by
+`std::is_base_of`.
+
+## Understanding `std::convertible_to` vs `std::is_convertible`
+
+`std::convertible_to<From, To>` [N4950 §18.4.2] requires that `From` is both implicitly and
+explicitly convertible to `To`. The explicit conversion requirement means that types with only
+implicit conversion (but not explicit construction) are handled correctly:
+
+```cpp
+#include <iostream>
+#include <concepts>
+#include <type_traits>
+
+struct ExplicitOnly {
+    explicit operator int() const { return 42; }
+};
+
+struct ImplicitAndExplicit {
+    operator int() const { return 99; }
+};
+
+int main() {
+    std::cout << std::boolalpha;
+    std::cout << "is_convertible<ExplicitOnly, int>: "
+              << std::is_convertible_v<ExplicitOnly, int> << "\n";
+    std::cout << "convertible_to<ExplicitOnly, int>: "
+              << std::convertible_to<ExplicitOnly, int> << "\n";
+
+    std::cout << "is_convertible<ImplicitAndExplicit, int>: "
+              << std::is_convertible_v<ImplicitAndExplicit, int> << "\n";
+    std::cout << "convertible_to<ImplicitAndExplicit, int>: "
+              << std::convertible_to<ImplicitAndExplicit, int> << "\n";
+    return 0;
+}
+// Output:
+//   is_convertible<ExplicitOnly, int>: false
+//   convertible_to<ExplicitOnly, int>: true
+//   is_convertible<ImplicitAndExplicit, int>: true
+//   convertible_to<ImplicitAndExplicit, int>: true
+```
+
+`std::is_convertible` only checks implicit conversion. `std::convertible_to` also checks explicit
+conversion (via `static_cast<To>(declval<From>())`), making it more permissive.
+
 ## Iterator Concepts
 
 The iterator concepts in `<iterator>` [N4950 §18.4.4] form a refinement hierarchy:
@@ -120,6 +202,15 @@ input_iterator -> forward -> bidirectional
 input_iterator -> forward
 input_iterator -> forward -> bidirectional -> random_access -> contiguous
 ```
+
+### Sentinel Concepts
+
+C++20 also provides sentinel concepts for range-based iteration:
+
+| Concept                         | Description                                               |
+| ------------------------------- | --------------------------------------------------------- |
+| `std::sentinel_for<S, I>`       | `S` is a sentinel for iterator `I` (comparable with `==`) |
+| `std::sized_sentinel_for<S, I>` | `S` supports subtraction with `I` to get a difference     |
 
 ## Code Example: `std::totally_ordered` for Custom Types
 
@@ -181,6 +272,39 @@ true
 The default `operator<=>` performs lexicographic comparison on the data members in declaration order
 [N4950 §7.6.8]. Because `int` already supports `<=>`, the compiler generates the full comparison
 operator suite for `Version`, satisfying `std::totally_ordered`.
+
+### Three-Way Comparison Categories
+
+The `<=>` operator returns one of three comparison category types [N4950 §18.4.5]:
+
+| Category                | Properties                                          | Example                 |
+| ----------------------- | --------------------------------------------------- | ----------------------- |
+| `std::strong_ordering`  | Substitutable (a == b implies f(a) == f(b))         | `int`, `std::string`    |
+| `std::weak_ordering`    | Equivalence but not substitutable                   | Case-insensitive string |
+| `std::partial_ordering` | Incomparable values possible (e.g., NaN with float) | `double`                |
+
+```cpp
+#include <iostream>
+#include <compare>
+#include <cmath>
+
+int main() {
+    double a = 1.0;
+    double b = std::nan("");
+
+    auto cmp = a <=> b;
+    std::cout << (cmp == std::partial_ordering::unordered) << "\n";  // true
+    std::cout << (cmp < 0) << "\n";  // false
+    std::cout << (cmp > 0) << "\n";  // false
+    std::cout << (cmp == 0) << "\n"; // false
+
+    // strong_ordering does not have "unordered"
+    int x = 1, y = 2;
+    auto icmp = x <=> y;
+    std::cout << (icmp < 0) << "\n";  // true
+    return 0;
+}
+```
 
 ## Code Example: Constraining a Generic Algorithm
 
@@ -252,8 +376,172 @@ Prefer `std::ranges::range` over manually checking `begin()`/`end()`. Prefer
 concepts are defined in `<ranges>` [N4950 §26.2] and compose naturally with the concepts in
 `<concepts>`. :::
 
-## See Also
+## Range Concepts
 
-- [Defining Concepts and Requires Clauses](./1_defining_concepts.md)
-- [Constraint Subsumption and Overload Resolution](./2_constraint_subsumption.md)
-- [SFINAE vs Concepts](./4_sfinae_vs_concepts.md)
+The `<ranges>` header provides concepts that operate on ranges (pairs of iterators and sentinels)
+rather than individual iterators:
+
+| Concept                               | Description                                             |
+| ------------------------------------- | ------------------------------------------------------- |
+| `std::ranges::range<R>`               | `R` has `begin()` and `end()`                           |
+| `std::ranges::input_range<R>`         | Range whose iterator satisfies `input_iterator`         |
+| `std::ranges::forward_range<R>`       | Range whose iterator satisfies `forward_iterator`       |
+| `std::ranges::bidirectional_range<R>` | Range whose iterator satisfies `bidirectional_iterator` |
+| `std::ranges::random_access_range<R>` | Range whose iterator satisfies `random_access_iterator` |
+| `std::ranges::contiguous_range<R>`    | Range whose iterator satisfies `contiguous_iterator`    |
+| `std::ranges::sized_range<R>`         | Range where `size()` is O(1)                            |
+| `std::ranges::view<R>`                | Range that is a view (cheap to copy/move)               |
+| `std::ranges::borrowed_range<R>`      | Range whose iterators outlive the range object          |
+
+```cpp
+#include <iostream>
+#include <concepts>
+#include <ranges>
+#include <vector>
+#include <list>
+#include <string_view>
+
+int main() {
+    std::cout << std::boolalpha;
+    std::cout << "vector is sized_range: "
+              << std::ranges::sized_range<std::vector<int>> << "\n";
+    std::cout << "list is sized_range: "
+              << std::ranges::sized_range<std::list<int>> << "\n";
+
+    // Views are ranges but not borrowed_ranges (they own their data)
+    auto transformed = std::views::iota(0, 10) | std::views::filter([](int x) { return x % 2 == 0; });
+    std::cout << "filter view is view: "
+              << std::ranges::view<decltype(transformed)> << "\n";
+
+    // string_view is a borrowed_range (it doesn't own data)
+    std::cout << "string_view is borrowed_range: "
+              << std::ranges::borrowed_range<std::string_view> << "\n";
+    return 0;
+}
+```
+
+## `std::invocable` and `std::regular_invocable`
+
+`std::invocable<F, Args...>` checks that `F(Args...)` is a valid expression.
+`std::regular_invocable` adds the requirement that the invocation is equality-preserving — calling
+the same function with the same arguments produces the same result. This distinction matters for
+pure functions vs functions with side effects:
+
+```cpp
+#include <iostream>
+#include <concepts>
+
+int pure(int x) { return x * 2; }
+
+int counter = 0;
+int impure(int x) { return x * 2 + counter++; }
+
+int main() {
+    std::cout << std::boolalpha;
+    std::cout << "invocable(pure, int): "
+              << std::invocable<decltype(pure), int> << "\n";
+    std::cout << "regular_invocable(pure, int): "
+              << std::regular_invocable<decltype(pure), int> << "\n";
+
+    std::cout << "invocable(impure, int): "
+              << std::invocable<decltype(impure), int> << "\n";
+    // regular_invocable is still true for impure — the concept only checks
+    // structural properties, not actual behavior
+    std::cout << "regular_invocable(impure, int): "
+              << std::regular_invocable<decltype(impure), int> << "\n";
+    return 0;
+}
+```
+
+## Common Pitfalls
+
+### Pitfall 1: `std::integral` Excludes `bool`
+
+`std::integral<T>` does not include `bool` in C++20. This was a design decision because `bool` has
+different semantics (only two values, implicit conversion rules). Use `std::integral<T>` for
+arithmetic types and check for `bool` separately if needed:
+
+```cpp
+#include <iostream>
+#include <concepts>
+
+template <typename T>
+    requires std::integral<T>
+void process(T val) {
+    std::cout << val << "\n";
+}
+
+int main() {
+    process(42);     // OK
+    // process(true); // Error: bool does not satisfy integral
+    return 0;
+}
+```
+
+### Pitfall 2: `std::copyable` vs `std::is_copy_constructible`
+
+`std::copyable<T>` requires more than just being copy-constructible. It requires:
+
+- Copy constructible
+- Move constructible (or copy constructible implies it)
+- Copy assignable
+- Move assignable
+- Destructible
+- Equality comparable (via `std::equality_comparable`)
+
+A type that is copy-constructible but not copy-assignable does NOT satisfy `std::copyable`:
+
+```cpp
+#include <iostream>
+#include <concepts>
+
+struct CopyOnly {
+    int value;
+    CopyOnly(int v) : value(v) {}
+    CopyOnly(const CopyOnly&) = default;
+    CopyOnly& operator=(const CopyOnly&) = delete;  // No copy assignment
+    CopyOnly(CopyOnly&&) = default;
+    CopyOnly& operator=(CopyOnly&&) = default;
+};
+
+int main() {
+    std::cout << std::boolalpha;
+    std::cout << "copy_constructible: "
+              << std::is_copy_constructible_v<CopyOnly> << "\n";
+    std::cout << "copyable: " << std::copyable<CopyOnly> << "\n";
+    return 0;
+}
+// Output:
+//   copy_constructible: true
+//   copyable: false
+```
+
+### Pitfall 3: Concept Subsumption Order Matters for Overload Resolution
+
+When two overloads are constrained, the more specific constraint should subsume the less specific
+one. If constraints don't properly subsume, overload resolution becomes ambiguous:
+
+```cpp
+#include <iostream>
+#include <concepts>
+
+// This overload should subsume the more general one
+template <typename T>
+    requires std::integral<T>
+void process(T val) {
+    std::cout << "integral: " << val << "\n";
+}
+
+// This overload is more specific but does NOT subsume the integral version
+template <typename T>
+    requires std::signed_integral<T>
+void process(T val) {
+    std::cout << "signed integral: " << val << "\n";
+}
+
+// process(42);  // Ambiguous! Both constraints are satisfied.
+// Fix: reorder so signed_integral comes first (it subsumes integral)
+```
+
+The fix is to place the more specific overload first, since `std::signed_integral<T>` subsumes
+`std::integral<T>` (every signed integral is an integral, but not vice versa).
