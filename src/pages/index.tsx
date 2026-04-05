@@ -121,7 +121,7 @@ export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
+    <Layout title={`${siteConfig.title}`} description={siteConfig.tagline} noFooter>
       {/* ═══ HERO ═══ */}
       <header className={styles.hero}>
         <div className={styles.heroInner}>

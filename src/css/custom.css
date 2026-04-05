@@ -191,70 +191,37 @@ a:hover {
   }
 }
 
-/* Hero Section Styling */
-.hero {
-  background-color: var(--ifm-color-primary-lightest); /* Light orange in light mode */
-  padding: 4rem 0;
-  transition: background-color var(--ifm-transition-fast);
-}
-
-[data-theme='dark'] .hero {
-  background-color: var(--ifm-color-primary-darkest); /* Dark orange in dark mode */
-}
-
-/* Hero Title */
-.hero__title {
-  color: #000 !important; /* Force black in light mode */
-  font-weight: 800;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme='dark'] .hero__title {
-  color: #fff !important; /* White in dark mode */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-/* Hero Subtitle */
-.hero__subtitle {
-  color: #000 !important; /* Force black in light mode */
-  font-weight: 500;
-}
-
-[data-theme='dark'] .hero__subtitle {
-  color: #fff !important;
-}
-
-/* Ensure content areas match theme */
-.markdown {
+/* Doc-page content styling (scoped to docs only — avoids leaking onto landing page) */
+.docs-doc-page .markdown {
   background-color: var(--ifm-background-color);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-[data-theme='dark'] .markdown {
+[data-theme='dark'] .docs-doc-page .markdown {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.markdown table {
+.docs-doc-page .markdown table {
   border-collapse: collapse;
   width: 100%;
   margin: 1rem 0;
 }
 
-.markdown th,
-.markdown td {
+.docs-doc-page .markdown th,
+.docs-doc-page .markdown td {
   border: 1px solid var(--ifm-table-border-color);
   padding: 0.75em 1em;
   text-align: left;
 }
 
-.markdown th {
+.docs-doc-page .markdown th {
   background-color: var(--ifm-table-header-background);
   font-weight: 700;
 }
 
-.markdown tr:nth-child(even) {
+.docs-doc-page .markdown tr:nth-child(even) {
   background-color: var(--ifm-table-stripe-background);
 }
 
