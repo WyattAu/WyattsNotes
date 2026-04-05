@@ -113,8 +113,8 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 356;
-const totalLines = '179.3K';
+const totalFiles = 373;
+const totalLines = '196.6K';
 const totalSubjects = 13;
 
 export default function Home(): React.ReactNode {
