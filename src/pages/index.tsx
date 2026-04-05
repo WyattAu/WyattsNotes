@@ -1,168 +1,229 @@
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import Layout from '@theme/Layout';
-import clsx from 'clsx';
-import React, { useState } from 'react';
-
+import React from 'react';
 import styles from './index.module.css';
 
-type NavigationItem =
-  | { type: 'single'; label: string; to: string }
-  | {
-      type: 'group';
-      label: string;
-      items: Array<{ label: string; to: string }>;
-    };
-
-interface GroupModalProps {
-  title: string;
-  items: { label: string; to: string }[];
-  onClose: () => void;
+interface Subject {
+  name: string;
+  files: number;
+  lines: string;
+  href: string;
+  tag: string;
 }
 
-function GroupModal({ title, items, onClose }: GroupModalProps) {
-  return (
-    <div className={styles.modalOverlay} onClick={onClose}>
-      <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
-        <div className={styles.modalHeader}>
-          <h3>{title}</h3>
-          <button className={styles.closeButton} onClick={onClose} aria-label="Close">
-            ×
-          </button>
-        </div>
-        <div className={styles.modalContent}>
-          {items.map((item, index) => (
-            <Link
-              key={index}
-              className={clsx(
-                'button button--secondary button--lg shadow--md',
-                styles.heroButton,
-                styles.modalButton,
-              )}
-              to={item.to}
-              onClick={onClose}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
+interface SubjectGroup {
+  label: string;
+  subjects: Subject[];
 }
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  const [openGroup, setOpenGroup] = useState<string | null>(null);
+const subjectGroups: SubjectGroup[] = [
+  {
+    label: 'Academics',
+    subjects: [
+      {
+        name: 'IB Notes',
+        files: 38,
+        lines: '14.4K',
+        href: '/docs/docs_IB-notes/intro',
+        tag: 'HL/SL',
+      },
+      {
+        name: 'A-Level',
+        files: 114,
+        lines: '61.8K',
+        href: '/docs/docs_ALevel-notes/intro',
+        tag: 'A*',
+      },
+      { name: 'DSE', files: 11, lines: '5.4K', href: '/docs/docs_DSE-notes/intro', tag: 'HKDSE' },
+    ],
+  },
+  {
+    label: 'Development',
+    subjects: [
+      {
+        name: 'C++',
+        files: 122,
+        lines: '61.8K',
+        href: '/docs/docs_cpp-notes/intro',
+        tag: 'C++20/23',
+      },
+      {
+        name: 'Java',
+        files: 16,
+        lines: '13.9K',
+        href: '/docs/docs_java-notes/intro',
+        tag: 'JDK 21+',
+      },
+      {
+        name: 'Python',
+        files: 8,
+        lines: '7.5K',
+        href: '/docs/docs_python-notes/intro',
+        tag: '3.12+',
+      },
+      {
+        name: 'Dart',
+        files: 8,
+        lines: '3.0K',
+        href: '/docs/docs_dart-notes/intro',
+        tag: 'Flutter',
+      },
+      {
+        name: 'Git',
+        files: 22,
+        lines: '5.4K',
+        href: '/docs/docs_git-notes/intro',
+        tag: 'Workflow',
+      },
+    ],
+  },
+  {
+    label: 'Infrastructure',
+    subjects: [
+      {
+        name: 'TrueNAS',
+        files: 4,
+        lines: '1.2K',
+        href: '/docs/docs_truenas-notes/intro',
+        tag: 'NAS',
+      },
+      { name: 'Tuning', files: 2, lines: '878', href: '/docs/docs_tuning-notes/intro', tag: 'HW' },
+    ],
+  },
+  {
+    label: 'Research',
+    subjects: [
+      {
+        name: 'Probabilistic ML',
+        files: 3,
+        lines: '1.7K',
+        href: '/docs/docs_ProbabilisticML-notes/intro',
+        tag: 'Grad-level',
+      },
+      {
+        name: 'General',
+        files: 6,
+        lines: '1.2K',
+        href: '/docs/docs_general-notes/intro',
+        tag: 'Meta',
+      },
+    ],
+  },
+];
 
-  const navItems: NavigationItem[] = [
-    {
-      type: 'group',
-      label: 'Year 12-13 Syllabus',
-      items: [
-        { label: 'IB Notes', to: '/docs/docs_IB-notes/intro' },
-        { label: 'A Level Notes', to: '/docs/docs_ALevel-notes/intro' },
-        { label: 'DSE Notes', to: '/docs/docs_DSE-notes/intro' },
-      ],
-    },
-    {
-      type: 'group',
-      label: 'Development Tools',
-      items: [
-        { label: 'C++ Notes', to: '/docs/docs_cpp-notes/intro' },
-        { label: 'Dart Notes', to: '/docs/docs_dart-notes/intro' },
-        { label: 'Java Notes', to: '/docs/docs_java-notes/intro' },
-        { label: 'Python Notes', to: '/docs/docs_python-notes/intro' },
-        { label: 'Git Notes', to: '/docs/docs_git-notes/intro' },
-      ],
-    },
-    {
-      type: 'group',
-      label: 'Operating System',
-      items: [{ label: 'TrueNAS', to: '/docs/docs_truenas-notes/intro' }],
-    },
-    {
-      type: 'group',
-      label: 'Machine Learning',
-      items: [
-        {
-          label: 'Probabilistic ML',
-          to: '/docs/docs_ProbabilisticML-notes/intro',
-        },
-      ],
-    },
-    {
-      type: 'group',
-      label: 'Others',
-      items: [
-        { label: 'Licensing Notes', to: '/docs/docs_licensing-notes/intro' },
-        { label: 'Tuning', to: '/docs/docs_tuning-notes/intro' },
-        { label: 'Contributing Help', to: '/docs/docs_general-notes/intro' },
-      ],
-    },
-  ];
-
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-
-        <div className={styles.buttonGroup}>
-          {navItems.map((item, index) => (
-            <div key={index} className={styles.navItemContainer}>
-              {item.type === 'group' ? (
-                <>
-                  <button
-                    className={clsx(
-                      'button button--secondary button--lg shadow--md',
-                      styles.heroButton,
-                      styles.groupButton,
-                    )}
-                    onClick={() => setOpenGroup(item.label)}
-                  >
-                    {item.label}
-                  </button>
-                  {openGroup === item.label && (
-                    <GroupModal
-                      title={item.label}
-                      items={item.items}
-                      onClose={() => setOpenGroup(null)}
-                    />
-                  )}
-                </>
-              ) : (
-                <Link
-                  className={clsx(
-                    'button button--secondary button--lg shadow--md',
-                    styles.heroButton,
-                  )}
-                  to={item.to}
-                >
-                  {item.label}
-                </Link>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </header>
-  );
-}
+const totalFiles = 356;
+const totalLines = '178.3K';
+const totalSubjects = 13;
 
 export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout title={`${siteConfig.title} - Home`} description={siteConfig.tagline}>
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+    <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
+      {/* ═══ HERO ═══ */}
+      <header className={styles.hero}>
+        <div className={styles.heroInner}>
+          <p className={styles.heroLabel}>Educational reference for systems engineers</p>
+          <Heading as="h1" className={styles.heroTitle}>
+            {siteConfig.title}
+          </Heading>
+          <p className={styles.heroTagline}>{siteConfig.tagline}</p>
+
+          <div className={styles.stats}>
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>{totalFiles}</span>
+              <span className={styles.statLabel}>files</span>
+            </div>
+            <div className={styles.statDivider} />
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>{totalLines}</span>
+              <span className={styles.statLabel}>lines</span>
+            </div>
+            <div className={styles.statDivider} />
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>{totalSubjects}</span>
+              <span className={styles.statLabel}>subjects</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* ═══ SUBJECT GRID ═══ */}
+      <main className={styles.main}>
+        {subjectGroups.map((group) => (
+          <section key={group.label} className={styles.group}>
+            <h2 className={styles.groupLabel}>{group.label}</h2>
+            <div className={styles.grid}>
+              {group.subjects.map((subject) => (
+                <Link key={subject.name} to={subject.href} className={styles.card}>
+                  <div className={styles.cardHeader}>
+                    <span className={styles.cardName}>{subject.name}</span>
+                    <span className={styles.cardTag}>{subject.tag}</span>
+                  </div>
+                  <div className={styles.cardMeta}>
+                    <span className={styles.cardStat}>
+                      {subject.files} {subject.files === 1 ? 'file' : 'files'}
+                    </span>
+                    <span className={styles.cardStat}>{subject.lines} lines</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
       </main>
+
+      {/* ═══ PRINCIPLES ═══ */}
+      <section className={styles.principles}>
+        <div className={styles.principle}>
+          <span className={styles.principleIndex}>01</span>
+          <h3 className={styles.principleTitle}>Free &amp; Open Source</h3>
+          <p className={styles.principleBody}>
+            AGPLv3 licensed. No fees, no ads, no tracking. Source code on GitHub.
+          </p>
+        </div>
+        <div className={styles.principle}>
+          <span className={styles.principleIndex}>02</span>
+          <h3 className={styles.principleTitle}>Syllabus-Aligned</h3>
+          <p className={styles.principleBody}>
+            Written to exam specifications. Derivations included. No filler content.
+          </p>
+        </div>
+        <div className={styles.principle}>
+          <span className={styles.principleIndex}>03</span>
+          <h3 className={styles.principleTitle}>Community Driven</h3>
+          <p className={styles.principleBody}>
+            Corrections and contributions welcome via GitHub Issues and Pull Requests.
+          </p>
+        </div>
+      </section>
+
+      {/* ═══ FOOTER BAR ═══ */}
+      <footer className={styles.footer}>
+        <div className={styles.footerInner}>
+          <span>
+            &copy; {new Date().getFullYear()} Wyatt Au &middot; <Link to="/privacy">Privacy</Link>{' '}
+            &middot;{' '}
+            <a
+              href="https://github.com/WyattAu/WyattsNotes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>{' '}
+            &middot;{' '}
+            <a
+              href="https://www.gnu.org/licenses/agpl-3.0.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AGPLv3
+            </a>
+          </span>
+        </div>
+      </footer>
     </Layout>
   );
 }
