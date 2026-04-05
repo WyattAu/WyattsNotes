@@ -70,24 +70,24 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'Python',
-        files: 12,
-        lines: '12.1K',
+        files: 18,
+        lines: '19.1K',
         href: '/docs/docs_python-notes/intro',
         tag: '3.12+',
         desc: 'Deep reference — async, types, internals, decorators, generators, metaclasses',
       },
       {
         name: 'Dart',
-        files: 15,
-        lines: '10.9K',
+        files: 20,
+        lines: '16.5K',
         href: '/docs/docs_dart-notes/intro',
         tag: 'Flutter',
         desc: 'Dart 3 & Flutter — pattern matching, sealed classes, state management, testing',
       },
       {
         name: 'Git',
-        files: 28,
-        lines: '10.2K',
+        files: 31,
+        lines: '13.3K',
         href: '/docs/docs_git-notes/intro',
         tag: 'Workflow',
         desc: 'Version control — objects, branching, rebasing, hooks, signing, CI/CD',
@@ -146,8 +146,8 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 379;
-const totalLines = '203K';
+const totalFiles = 387;
+const totalLines = '212K';
 const totalSubjects = 13;
 
 export default function Home(): React.ReactNode {
