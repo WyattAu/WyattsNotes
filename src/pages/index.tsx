@@ -11,6 +11,7 @@ interface Subject {
   lines: string;
   href: string;
   tag: string;
+  desc: string;
 }
 
 interface SubjectGroup {
@@ -28,6 +29,7 @@ const subjectGroups: SubjectGroup[] = [
         lines: '14.4K',
         href: '/docs/docs_IB-notes/intro',
         tag: 'HL/SL',
+        desc: 'Diploma Programme notes — Computer Science, Maths, Physics, English',
       },
       {
         name: 'A-Level',
@@ -35,8 +37,16 @@ const subjectGroups: SubjectGroup[] = [
         lines: '61.8K',
         href: '/docs/docs_ALevel-notes/intro',
         tag: 'A*',
+        desc: 'Full A* coverage — Computer Science, Maths, Physics, Economics, Further Maths',
       },
-      { name: 'DSE', files: 11, lines: '5.4K', href: '/docs/docs_DSE-notes/intro', tag: 'HKDSE' },
+      {
+        name: 'DSE',
+        files: 11,
+        lines: '5.4K',
+        href: '/docs/docs_DSE-notes/intro',
+        tag: 'HKDSE',
+        desc: 'Hong Kong Diploma of Secondary Education — exam-aligned reference',
+      },
     ],
   },
   {
@@ -48,6 +58,7 @@ const subjectGroups: SubjectGroup[] = [
         lines: '61.8K',
         href: '/docs/docs_cpp-notes/intro',
         tag: 'C++20/23',
+        desc: 'Systems programming — C++20/23, templates, concurrency, standard library',
       },
       {
         name: 'Java',
@@ -55,27 +66,31 @@ const subjectGroups: SubjectGroup[] = [
         lines: '13.9K',
         href: '/docs/docs_java-notes/intro',
         tag: 'JDK 21+',
+        desc: 'Modern Java — JDK 21+, I/O, concurrency, generics, reflection',
       },
       {
         name: 'Python',
-        files: 8,
-        lines: '7.5K',
+        files: 12,
+        lines: '12.1K',
         href: '/docs/docs_python-notes/intro',
         tag: '3.12+',
+        desc: 'Deep reference — async, types, internals, decorators, generators, metaclasses',
       },
       {
         name: 'Dart',
-        files: 8,
-        lines: '3.0K',
+        files: 15,
+        lines: '10.9K',
         href: '/docs/docs_dart-notes/intro',
         tag: 'Flutter',
+        desc: 'Dart 3 & Flutter — pattern matching, sealed classes, state management, testing',
       },
       {
         name: 'Git',
-        files: 22,
-        lines: '5.4K',
+        files: 28,
+        lines: '10.2K',
         href: '/docs/docs_git-notes/intro',
         tag: 'Workflow',
+        desc: 'Version control — objects, branching, rebasing, hooks, signing, CI/CD',
       },
     ],
   },
@@ -88,8 +103,16 @@ const subjectGroups: SubjectGroup[] = [
         lines: '1.2K',
         href: '/docs/docs_truenas-notes/intro',
         tag: 'NAS',
+        desc: 'NAS administration — ZFS pools, datasets, sharing, snapshots, backup',
       },
-      { name: 'Tuning', files: 2, lines: '878', href: '/docs/docs_tuning-notes/intro', tag: 'HW' },
+      {
+        name: 'Tuning',
+        files: 2,
+        lines: '881',
+        href: '/docs/docs_tuning-notes/intro',
+        tag: 'HW',
+        desc: 'Hardware optimization — undervolting, overclocking, memory tuning, stress testing',
+      },
     ],
   },
   {
@@ -101,6 +124,7 @@ const subjectGroups: SubjectGroup[] = [
         lines: '1.7K',
         href: '/docs/docs_ProbabilisticML-notes/intro',
         tag: 'Grad-level',
+        desc: 'Graduate-level — Bayesian inference, probability spaces, measure theory',
       },
       {
         name: 'General',
@@ -108,13 +132,22 @@ const subjectGroups: SubjectGroup[] = [
         lines: '1.2K',
         href: '/docs/docs_general-notes/intro',
         tag: 'Meta',
+        desc: 'Cross-topic — markdown reference, tooling, writing conventions',
+      },
+      {
+        name: 'Licensing',
+        files: 2,
+        lines: '1.1K',
+        href: '/docs/docs_licensing-notes/intro',
+        tag: 'Legal',
+        desc: 'Open-source licenses — GPL, MIT, Apache, compliance, CLA, DCO',
       },
     ],
   },
 ];
 
 const totalFiles = 373;
-const totalLines = '196.6K';
+const totalLines = '197K';
 const totalSubjects = 13;
 
 export default function Home(): React.ReactNode {
@@ -122,7 +155,6 @@ export default function Home(): React.ReactNode {
 
   return (
     <Layout title={`${siteConfig.title}`} description={siteConfig.tagline} noFooter>
-      {/* ═══ HERO ═══ */}
       <header className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.heroLabel}>Educational reference for systems engineers</p>
@@ -130,6 +162,15 @@ export default function Home(): React.ReactNode {
             {siteConfig.title}
           </Heading>
           <p className={styles.heroTagline}>{siteConfig.tagline}</p>
+
+          <div className={styles.heroCta}>
+            <Link to="#subjects" className={styles.ctaButton}>
+              Browse subjects
+            </Link>
+            <Link to="/search" className={styles.ctaLink}>
+              Search notes
+            </Link>
+          </div>
 
           <div className={styles.stats}>
             <div className={styles.stat}>
@@ -150,8 +191,7 @@ export default function Home(): React.ReactNode {
         </div>
       </header>
 
-      {/* ═══ SUBJECT GRID ═══ */}
-      <main className={styles.main}>
+      <main className={styles.main} id="subjects">
         {subjectGroups.map((group) => (
           <section key={group.label} className={styles.group}>
             <h2 className={styles.groupLabel}>{group.label}</h2>
@@ -162,6 +202,7 @@ export default function Home(): React.ReactNode {
                     <span className={styles.cardName}>{subject.name}</span>
                     <span className={styles.cardTag}>{subject.tag}</span>
                   </div>
+                  <p className={styles.cardDesc}>{subject.desc}</p>
                   <div className={styles.cardMeta}>
                     <span className={styles.cardStat}>
                       {subject.files} {subject.files === 1 ? 'file' : 'files'}
@@ -175,7 +216,6 @@ export default function Home(): React.ReactNode {
         ))}
       </main>
 
-      {/* ═══ PRINCIPLES ═══ */}
       <section className={styles.principles}>
         <div className={styles.principle}>
           <span className={styles.principleIndex}>01</span>
@@ -200,7 +240,6 @@ export default function Home(): React.ReactNode {
         </div>
       </section>
 
-      {/* ═══ FOOTER BAR ═══ */}
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
           <span>
