@@ -105,7 +105,7 @@ const config: Config = {
           type: ['rss', 'atom'],
           xslt: true,
         },
-        editUrl: 'https://wyattsnotes.wyattau.com/WyattsNotes/blog_release-notes',
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/blog_release-notes',
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',

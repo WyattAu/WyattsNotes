@@ -1,7 +1,7 @@
 ---
 id: intro
-title: Intro
-description: Test description
+title: Introduction to DSE
+description: Hong Kong DSE examination notes and study reference material.
 slug: intro
 sidebar_position: 1
 date: 2025-05-15T22:45:51.828Z

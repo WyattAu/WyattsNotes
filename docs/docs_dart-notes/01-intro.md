@@ -1,7 +1,7 @@
 ---
 id: intro
-title: Intro
-description: Test description
+title: Introduction to Dart & Flutter
+description: Dart and Flutter best practices, UI patterns, and cross-platform development reference.
 slug: /intro
 sidebar_position: 1
 ---

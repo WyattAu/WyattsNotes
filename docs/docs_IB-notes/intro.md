@@ -1,11 +1,12 @@
 ---
 id: intro
-title: intro
-description: Test description
+title: Introduction to IB Notes
+description: IB Diploma Programme notes covering Computer Science, Mathematics, and other subjects.
 slug: /intro
 sidebar_position: 1
 ---
 
 ## Abstract
 
-This resource is modified by notes during my education for the IB diploma program.
+Notes created during the IB Diploma Programme, aligned to official syllabi. Covers Computer Science
+(HL/SL), Mathematics, and other examined subjects with derivations and worked examples.

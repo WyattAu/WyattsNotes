@@ -1,7 +1,7 @@
 ---
 id: intro
-title: Intro
-description: Test description
+title: Introduction to General Notes
+description: Cross-topic notes on markdown, tooling, and general software engineering practices.
 slug: intro
 sidebar_position: 1
 date: 2025-05-15T22:45:51.828Z

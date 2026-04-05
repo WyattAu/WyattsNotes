@@ -1,7 +1,7 @@
 ---
 id: intro
-title: intro
-description: Test description
+title: Introduction to Python
+description: Python programming reference — async, type hints, packaging, and modern best practices.
 slug: /intro
 sidebar_position: 1
 tags:
