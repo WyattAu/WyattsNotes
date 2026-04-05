@@ -68,8 +68,6 @@ significance. Edexcel and CIE require the full derivation of $c$ from first prin
 emphasises the consequences (EM wave properties, the spectrum) rather than the mathematical
 formalism. CIE may also ask about the displacement current explicitly.
 
-:::
-
 ## 2. Derivation of the Speed of Electromagnetic Waves
 
 Consider electromagnetic waves propagating in free space (no charges, no currents: $Q = 0$,
@@ -214,8 +212,6 @@ $E = cB$ relationship quantitatively. The Poynting vector is beyond most A Level
 provides useful context for understanding radiation pressure and energy transport. CIE P4 includes
 radiation pressure as an application topic.
 
-:::
-
 ## 4. The EM Spectrum as a Unified Phenomenon
 
 All electromagnetic radiation — radio waves, microwaves, infrared, visible light, ultraviolet,
@@ -317,8 +313,6 @@ Edexcel covers motional `EMF` in detail and includes the rotating coil derivatio
 the back-`EMF` of a motor and transformer equations. OCR (A) links electromagnetic induction to
 braking and energy transfer, with less quantitative detail on rotating coils.
 
-:::
-
 ## 6. The Hall Effect
 
 When a current-carrying conductor is placed in a magnetic field perpendicular to the current, a
@@ -377,8 +371,6 @@ Hall probes as a method of measuring magnetic fields but does not require the fu
 provides a qualitative treatment. OCR (A) has limited coverage — students should be aware of Hall
 probes as a measuring instrument.
 
-:::
-
 ## 7. The Mass Spectrometer
 
 A mass spectrometer separates ions by their mass-to-charge ratio, enabling precise measurement of
@@ -430,8 +422,6 @@ AQA covers the mass spectrometer quantitatively, including the derivation of $r 
 includes it as an application of circular motion in a magnetic field. CIE P4 covers it in detail,
 including time-of-flight variants. OCR (A) treats it more briefly but expects familiarity with the
 principles of velocity selection and magnetic deflection.
-
-:::
 
 ## 8. The Cyclotron
 
@@ -507,8 +497,6 @@ AQA mentions the cyclotron briefly as an application of circular motion in magne
 does not typically require detailed knowledge. CIE P4 covers the cyclotron in moderate detail,
 including the derivation of the cyclotron frequency. OCR (A) does not typically examine this topic —
 students should check their specification.
-
-:::
 
 ## Problem Set
 
