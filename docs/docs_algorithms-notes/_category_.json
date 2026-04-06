@@ -1,0 +1,8 @@
+{
+  "label": "Algorithms",
+  "position": 0,
+  "link": {
+    "type": "generated-index",
+    "description": "Algorithm fundamentals — complexity analysis, data structures, sorting, graph algorithms, dynamic programming, and problem-solving patterns."
+  }
+}

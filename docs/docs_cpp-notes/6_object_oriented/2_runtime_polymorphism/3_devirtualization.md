@@ -472,3 +472,7 @@ int main() {
 - **PGO without representative workloads.** Profile-guided speculative devirtualization is only as
   good as the profiling data. If the production workload differs from the training workload, the
   speculative direct calls may hurt performance (branch misprediction on the fast path).
+
+:::
+
+:::

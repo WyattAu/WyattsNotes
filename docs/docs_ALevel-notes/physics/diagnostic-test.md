@@ -627,3 +627,5 @@ $= -1/(RC) = -0.125$. $\tau = RC = 1/0.125 = 8.0$ s.
 | 28–34 | B     | Good foundation. Systematic revision needed.            |
 | 20–27 | C     | Gaps exist. Prioritise weak sections.                   |
 | < 20  | D/U   | Significant revision required. Start with fundamentals. |
+
+:::

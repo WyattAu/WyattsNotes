@@ -443,3 +443,11 @@ time.
 - [Shared Ownership (std::shared_ptr) and Control Block](3_shared_ptr.md)
 - [Weak Pointers and Cyclic Reference Breaking](4_weak_ptr.md)
 - [RAII Patterns](1_raii_patterns.md)
+
+:::
+
+:::
+
+:::
+
+:::

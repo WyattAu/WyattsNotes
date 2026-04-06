@@ -502,3 +502,11 @@ theorem fail in practice?
 Coase theorem: if property rights are well-defined, transaction costs are zero, and there are few parties, private bargaining will achieve the efficient outcome regardless of who holds the property rights. Example: a factory and neighbouring residents can negotiate a payment for reduced pollution. Fails when: many affected parties (high transaction costs), measurement problems (hard to verify pollution levels), wealth effects (assignment of rights affects distribution), strategic behaviour (holdout problems).
 </p>
 </details>
+
+:::
+
+:::
+
+:::
+
+:::

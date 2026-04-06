@@ -422,3 +422,9 @@ answer, discuss the limitations of elasticity estimates in practice.
 <summary>Hint</summary>
 Useful for: tax policy (tax inelastic goods for revenue), subsidy design, price regulation. Limitations: estimates vary with time period and data quality, assume ceteris paribus, may change after policy intervention (endogeneity), difficult to estimate for new goods.
 </details>
+
+:::
+
+:::
+
+:::

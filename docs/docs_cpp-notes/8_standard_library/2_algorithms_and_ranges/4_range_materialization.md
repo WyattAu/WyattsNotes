@@ -453,3 +453,7 @@ int main() {
 - [Projections and Callable Objects](./3_projections.md)
 - [Iterator-Sentinel Model](./1_iterator_sentinel.md)
 - [Parallel Algorithms](./5_parallel_algorithms.md)
+
+:::
+
+:::

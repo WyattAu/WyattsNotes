@@ -427,3 +427,5 @@ DRAM accesses suggest NUMA effects, while high cache-to-cache transfer counts su
 - [Instruction Reordering and Happens-Before](./1_instruction_reordering.md)
 - [Atomic Operations and Lock-Free Programming](./3_atomic_operations.md)
 - [Memory Orderings](./4_memory_orderings.md)
+
+:::

@@ -421,3 +421,5 @@ form of partial application at the type level.
 - [Projections and Callable Objects](./3_projections.md)
 - [Range Materialization](./4_range_materialization.md)
 - [Parallel Algorithms](./5_parallel_algorithms.md)
+
+:::

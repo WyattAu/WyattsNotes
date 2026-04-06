@@ -387,3 +387,9 @@ $P(\text{flush}) = 5148/2598960 \approx 0.00198 \approx 0.2\%$.
 **If you get this wrong, revise:** [Counting Principles](#7-counting-principles) — Section 7.
 
 </details>
+
+:::
+
+:::
+
+:::

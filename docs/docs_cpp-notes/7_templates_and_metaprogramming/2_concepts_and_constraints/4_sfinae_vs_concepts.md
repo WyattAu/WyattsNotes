@@ -550,3 +550,5 @@ int main() {
 - [Constraint Subsumption and Overload Resolution](./2_constraint_subsumption.md)
 - [Standard Library Concepts](./3_standard_concepts.md)
 - [Type Traits and Static Reflection Patterns](../3_compile_time_computation/4_type_traits.md)
+
+:::

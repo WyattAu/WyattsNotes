@@ -287,3 +287,7 @@ $$
 :::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
 principal value — you may need to find other solutions using the periodic properties or the ASTC
 rule. :::
+
+:::
+
+:::

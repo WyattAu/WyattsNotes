@@ -571,3 +571,5 @@ int main() {
 - [Type Traits and Static Reflection Patterns](./4_type_traits.md)
 - [Argument Deduction (Class and Function)](../1_generic_programming/2_argument_deduction.md)
 - [Template Instantiation, Monomorphization, and Code Bloat](../1_generic_programming/1_instantiation.md)
+
+:::

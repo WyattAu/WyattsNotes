@@ -595,3 +595,5 @@ Using `unreachable_sentinel` is a contract: you are guaranteeing to the standard
 range is infinite (or at least large enough). If the range is shorter than the algorithm expects,
 you get buffer overread — and unlike with bounds-checked iterators, there is no diagnostic. Use this
 only when you have proven the bounds at a higher level.
+
+:::

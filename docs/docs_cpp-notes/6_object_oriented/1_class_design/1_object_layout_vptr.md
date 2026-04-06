@@ -637,3 +637,7 @@ struct Combined : EmptyBase<struct A>, EmptyBase<struct B> {
 };
 static_assert(sizeof(Combined) == sizeof(int));  // EBO applies for both
 ```
+
+:::
+
+:::

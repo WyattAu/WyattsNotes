@@ -798,3 +798,9 @@ Check: $\bar{B}$ covers m0, m1, m4, m5. $\bar{A}\bar{C}$ covers m0, m2. All mint
 covered. ✓
 
 </details>
+
+:::
+
+:::
+
+:::

@@ -439,3 +439,7 @@ export template class DataBuffer<double>;
 - [Dependent Names and Two-Phase Lookup](./4_dependent_names.md)
 - [Template Argument Deduction and CTAD](./2_argument_deduction.md)
 - [SFINAE and Partial Specialization](./3_specialization.md)
+
+:::
+
+:::

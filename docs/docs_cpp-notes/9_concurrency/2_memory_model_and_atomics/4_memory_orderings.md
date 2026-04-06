@@ -509,3 +509,7 @@ issues like lost updates. A `seq_cst` `fetch_add` is still needed for atomic inc
 // CORRECT: atomic RMW
 // counter.fetch_add(1, memory_order_seq_cst);
 ```
+
+:::
+
+:::

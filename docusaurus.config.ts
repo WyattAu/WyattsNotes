@@ -244,6 +244,66 @@ const config: Config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'linux-notes',
+        path: 'docs/docs_linux-notes',
+        routeBasePath: '/docs/docs_linux-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_linux-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'rust-notes',
+        path: 'docs/docs_rust-notes',
+        routeBasePath: '/docs/docs_rust-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_rust-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'networking-notes',
+        path: 'docs/docs_networking-notes',
+        routeBasePath: '/docs/docs_networking-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_networking-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'databases-notes',
+        path: 'docs/docs_databases-notes',
+        routeBasePath: '/docs/docs_databases-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_databases-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'security-notes',
+        path: 'docs/docs_security-notes',
+        routeBasePath: '/docs/docs_security-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_security-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'algorithms-notes',
+        path: 'docs/docs_algorithms-notes',
+        routeBasePath: '/docs/docs_algorithms-notes',
+        sidebarPath: require.resolve('./sidebars/sidebar_algorithms-notes.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
       'docusaurus-lunr-search', // Wont work in dev mode, need to build
       {
         indexDocs: true,
@@ -346,6 +406,10 @@ const config: Config = {
               to: '/docs/docs_python-notes/intro',
             },
             {
+              label: 'Rust ',
+              to: '/docs/docs_rust-notes/intro',
+            },
+            {
               label: 'Git ',
               to: '/docs/docs_git-notes/intro',
             },
@@ -361,8 +425,24 @@ const config: Config = {
           ],
         },
         {
-          title: 'Other',
+          title: 'Infrastructure',
           items: [
+            {
+              label: 'Linux',
+              to: '/docs/docs_linux-notes/intro',
+            },
+            {
+              label: 'Networking',
+              to: '/docs/docs_networking-notes/intro',
+            },
+            {
+              label: 'Databases',
+              to: '/docs/docs_databases-notes/intro',
+            },
+            {
+              label: 'Security',
+              to: '/docs/docs_security-notes/intro',
+            },
             {
               label: 'TrueNAS',
               to: '/docs/docs_truenas-notes/intro',

@@ -581,3 +581,19 @@ void atomic_write(const fs::path& target, std::string_view content) {
 6. **File permissions on Windows:** The POSIX permission model does not map cleanly to Windows ACLs.
    `fs::permissions` on Windows can only reliably set/clear the read-only attribute. Do not rely on
    group/other permissions on Windows.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

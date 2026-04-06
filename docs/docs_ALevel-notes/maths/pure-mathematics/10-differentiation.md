@@ -593,3 +593,15 @@ $$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{10
 Section 8.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

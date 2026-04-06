@@ -343,3 +343,7 @@ $$
 :::tip Exam Tip Converting between forms is essential. A good strategy: always convert to
 polar/Euler form before raising to a power or finding roots, and convert back to Cartesian for the
 final answer. :::
+
+:::
+
+:::

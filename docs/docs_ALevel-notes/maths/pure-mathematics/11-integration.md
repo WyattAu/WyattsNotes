@@ -549,3 +549,15 @@ $\blacksquare$
 [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

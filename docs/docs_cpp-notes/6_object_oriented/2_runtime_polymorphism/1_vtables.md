@@ -476,3 +476,11 @@ struct Derived : Base {
 
 - [Inheritance, Object Slicing, and Virtual Destructors](./2_inheritance_slicing.md)
 - [Devirtualization and Final Specifiers](./3_devirtualization.md)
+
+:::
+
+:::
+
+:::
+
+:::

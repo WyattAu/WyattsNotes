@@ -526,3 +526,7 @@ $\text{Compressed} = 30.9 \div 2 \approx 15.45 \text{ GB}$
 For revision on number representation, see
 [Number Systems](/docs/docs_ALevel-notes/computer-science/fundamentals/number-systems) and
 [Floating Point](/docs/docs_ALevel-notes/computer-science/fundamentals/floating-point).
+
+:::
+
+:::

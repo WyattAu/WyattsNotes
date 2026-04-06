@@ -780,3 +780,9 @@ cancel in pairs.
 Therefore: $\displaystyle\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k} = \frac{n - 1}{2}$.
 
 </details>
+
+:::
+
+:::
+
+:::

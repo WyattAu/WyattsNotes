@@ -291,3 +291,11 @@ solenoid.
 :::tip Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
 conservation. Make sure you can explain why Lenz's law is necessary (conservation of energy) and
 derive the motional EMF expression from Faraday's law. :::
+
+:::
+
+:::
+
+:::
+
+:::

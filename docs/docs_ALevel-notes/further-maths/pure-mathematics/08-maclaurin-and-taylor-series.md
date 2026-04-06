@@ -580,3 +580,11 @@ $\dfrac{e^{-x^2} - 1}{x^2} = -1 + \dfrac{x^2}{2} - \cdots \to \boxed{-1}$ as $x 
 5.2.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::

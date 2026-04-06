@@ -626,3 +626,5 @@ auto worker_safe = [&b](int id) {
     b.arrive_and_wait();
 };
 ```
+
+:::

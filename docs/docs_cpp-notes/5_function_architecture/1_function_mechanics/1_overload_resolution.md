@@ -463,3 +463,5 @@ custom `swap` implementations.
 - **`nullptr` overload resolution.** `f(int)` and `f(int*)` called with `f(nullptr)` selects
   `f(int*)` because `nullptr` has type `std::nullptr_t`, which converts to any pointer type but not
   to `int`. However, `f(0)` selects `f(int)` because `0` is an `int` literal.
+
+:::

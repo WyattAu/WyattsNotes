@@ -467,3 +467,15 @@ any class intended as a polymorphic base.
 
 - [Virtual Functions and vtables](./1_vtables.md)
 - [Devirtualization and Final Specifiers](./3_devirtualization.md)
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

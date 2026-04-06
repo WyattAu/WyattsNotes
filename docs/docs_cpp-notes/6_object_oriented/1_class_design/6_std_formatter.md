@@ -539,3 +539,5 @@ int main() {
 - **Format specifiers in `std::formatter` for `std::optional`.** C++23 provides a built-in formatter
   for `std::optional<T>` that delegates to `T`'s formatter. Do not specialize `std::formatter` for
   `std::optional` yourself unless you have a specific reason.
+
+:::

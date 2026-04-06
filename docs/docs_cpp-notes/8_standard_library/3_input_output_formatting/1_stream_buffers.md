@@ -598,3 +598,15 @@ void stream_state_demo() {
 6. **Thread safety of C++ streams:** The C++ standard does **not** guarantee that concurrent writes
    to the same `std::ostream` from different threads are safe. The behavior is undefined. Use
    `std::mutex` to serialize access to shared streams, or give each thread its own stream.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

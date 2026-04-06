@@ -522,3 +522,5 @@ behavior** and typically manifests as corrupted floating-point values or subtle 
 - **Not checking symbol tables after refactoring.** After removing a function or renaming a class,
   check `nm -C libmylib.so` to verify that stale symbols are not being exported. Stale exports
   increase binary size and can confuse consumers who accidentally use deprecated symbols.
+
+:::

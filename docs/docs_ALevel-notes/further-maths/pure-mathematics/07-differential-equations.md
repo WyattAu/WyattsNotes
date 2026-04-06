@@ -706,3 +706,11 @@ $\boxed{y = \dfrac{x^3}{2} + \dfrac{5x}{2} = \dfrac{x(x^2 + 5)}{2}}$.
 [Integrating Factor](#2-first-order-odes-integrating-factor-method) — Section 2.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::

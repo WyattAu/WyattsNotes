@@ -752,3 +752,7 @@ be $O(n)$), making it worse for operation (a). The array of records with dynamic
 the optimal choice.
 
 </details>
+
+:::
+
+:::

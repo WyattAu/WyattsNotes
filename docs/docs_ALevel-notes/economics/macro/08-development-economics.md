@@ -573,3 +573,9 @@ countries." Evaluate this statement.
 <summary>Hint</summary>
 Arguments that growth and sustainability are incompatible: (1) Growth increases resource use and pollution (more energy, more waste, more deforestation). (2) The environmental Kuznets curve may not apply to CO$_2$ emissions — global warming is a cumulative problem, not a local one. (3) Developing countries may be tempted to "grow now, clean up later" — but by then, environmental damage may be irreversible (deforestation, species extinction, climate tipping points). (4) Exponential growth on a finite planet is physically impossible (the "limits to growth" argument, Club of Rome, 1972). Arguments that they are compatible: (1) **Decoupling** — it is possible to grow while reducing environmental impact through technology (renewable energy, electric vehicles, circular economy). (2) The EKC hypothesis suggests environmental quality improves beyond a certain income level. (3) **Green growth** — investing in renewable energy and sustainable agriculture can be both environmentally beneficial and economically productive (e.g., solar panel manufacturing in China). (4) **Leapfrogging** — developing countries can skip polluting stages of development (e.g., going straight to mobile phones without landline networks, or to solar without coal). (5) The SDGs explicitly recognise that economic growth, social inclusion, and environmental protection must go hand in hand. Evaluation: growth and sustainability are compatible **if** the right policies are in place: carbon pricing, investment in renewable energy, protection of natural capital, international cooperation on climate change. Without these policies, growth will continue to degrade the environment. The key challenge is political will and international coordination.
 </details>
+
+:::
+
+:::
+
+:::

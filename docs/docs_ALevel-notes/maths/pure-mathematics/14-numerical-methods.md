@@ -395,3 +395,13 @@ $f(1) = -1 \lt{} 0$ and $f(3) = 1 \gt{} 0$, so there is a sign change. However, 
 **If you get this wrong, revise:** [Limitations](#12-limitations) — Section 1.2.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

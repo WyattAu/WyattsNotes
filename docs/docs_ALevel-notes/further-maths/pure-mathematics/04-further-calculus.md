@@ -622,3 +622,17 @@ $\frac{5}{4}I = e^x\left(\frac{\sin 2x}{4} - \frac{\cos 2x}{2}\right)$.
 $\boxed{I = \frac{e^x(\sin 2x - 2\cos 2x)}{5} + C}$
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

@@ -430,3 +430,5 @@ No escaping needed inside fenced code blocks — the content is treated as raw t
 
 Do not use `<p>` tags or other raw HTML block elements. MDX does not allow them. Use markdown or
 Docusaurus components instead. Self-closing elements like `<br />` and `<img />` are generally fine.
+
+:::

@@ -586,3 +586,13 @@ out." Evaluate this statement.
 Partially false. Crowding out was limited during 2008–09 because: (1) The economy was in deep recession with large output gap → idle resources available. (2) Interest rates were cut to near zero (the zero lower bound) → central bank accommodated fiscal expansion by keeping $r$ low. (3) Private investment was already depressed ( pessimism) → crowding out was minimal. However: (1) The UK's high MPM (~0.3) reduced the multiplier. (2) Some financial crowding out occurred as government borrowing increased. (3) Confidence effects may have amplified or dampened the policy. The effectiveness of fiscal policy was moderate — sufficient to prevent a deeper recession but not enough to deliver a rapid recovery. *Revision: see [Macroeconomic Performance](/docs/docs_ALevel-notes/economics/macro/macroeconomic-performance) for data on UK GDP and unemployment post-2008.*
 </p>
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

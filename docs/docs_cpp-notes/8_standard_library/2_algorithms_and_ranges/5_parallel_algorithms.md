@@ -404,3 +404,9 @@ parallel-capable algorithms. :::
 - [Range Adaptors, Views, Composition](./2_range_adaptors.md)
 - [Projections and Callable Objects](./3_projections.md)
 - [Range Materialization](./4_range_materialization.md)
+
+:::
+
+:::
+
+:::

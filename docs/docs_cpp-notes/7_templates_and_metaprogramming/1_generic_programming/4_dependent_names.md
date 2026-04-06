@@ -402,3 +402,7 @@ void good(T& obj) {
 - [Explicit and Partial Specialization](./3_specialization.md)
 - [Explicit Instantiation and Extern Templates](./5_explicit_instantiation.md)
 - [Argument Deduction (Class and Function)](./2_argument_deduction.md)
+
+:::
+
+:::

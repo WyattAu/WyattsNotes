@@ -461,3 +461,9 @@ library depends on symbols from the main executable, those symbols may not yet b
 
 - [Linker](../1_translation/3_linker.md)
 - [Binary Module Interfaces (BMI)](./2_bmi.md)
+
+:::
+
+:::
+
+:::

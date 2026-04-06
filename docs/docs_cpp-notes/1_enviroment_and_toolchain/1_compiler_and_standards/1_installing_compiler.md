@@ -426,3 +426,5 @@ Before starting development, run through this checklist:
 4. On macOS: `which clang++` points to Homebrew's LLVM, not Apple Clang.
 5. On Windows: the MSYS2 UCRT64 terminal is used (not MSYS or MINGW64).
 6. On Linux: `ldd` shows the correct standard library linkage.
+
+:::

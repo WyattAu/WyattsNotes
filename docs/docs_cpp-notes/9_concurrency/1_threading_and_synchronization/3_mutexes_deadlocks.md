@@ -696,3 +696,9 @@ int main() {
 `std::call_once` guarantees that the callable is invoked exactly once, even if multiple threads call
 `get_expensive()` concurrently. Internally, it uses a combination of atomic flags and a mutex, but
 the fast path (already initialized) is a single atomic load.
+
+:::
+
+:::
+
+:::

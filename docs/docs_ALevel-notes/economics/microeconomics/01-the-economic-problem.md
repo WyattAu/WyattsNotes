@@ -668,3 +668,21 @@ This question requires evaluating the assumptions of rational choice theory agai
 - **Conclusion**: Rational decision making is a simplification, but it remains the foundation of economic analysis. Its limitations are well-documented, and behavioural economics provides valuable corrections. For A Level purposes, acknowledge both the predictive power and the empirical limitations.
 </p>
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

@@ -811,3 +811,15 @@ Centre of mass is approximately $4.21\,\text{cm}$ from the flat face.
 **If you get this wrong, revise:** [Composite Bodies](#43-composite-bodies) — Section 4.3.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

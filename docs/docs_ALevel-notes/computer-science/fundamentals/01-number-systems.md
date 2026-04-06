@@ -674,3 +674,9 @@ Check: $-16 + (-15) = -31$. No overflow: $-31$ is in range $[-32, 31]$. ✓
 Both inputs are negative and the result is negative, so no overflow.
 
 </details>
+
+:::
+
+:::
+
+:::

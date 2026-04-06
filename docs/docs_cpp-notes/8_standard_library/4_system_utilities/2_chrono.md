@@ -584,3 +584,17 @@ busy-waiting with `std::chrono::steady_clock` or OS-specific spin loops. :::
 6. **Ignoring `clock_cast` for inter-clock conversions:** C++20 provides `std::chrono::clock_cast`
    to convert time points between clocks. Converting manually (e.g., subtracting epochs) is
    error-prone and may not account for clock skew.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

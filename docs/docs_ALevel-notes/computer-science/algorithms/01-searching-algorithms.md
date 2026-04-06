@@ -695,3 +695,9 @@ sorted.
 | (c) Price lookup      | 20,000    | Yes     | Binary search  | 15              |
 
 </details>
+
+:::
+
+:::
+
+:::

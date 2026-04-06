@@ -401,3 +401,11 @@ common source of performance bugs in C++ codebases. :::
 - [Unique Ownership (std::unique_ptr) and EBO](2_unique_ptr.md)
 - [Weak Pointers and Cyclic Reference Breaking](4_weak_ptr.md)
 - [Common Pitfalls](5_custom_deleters.md)
+
+:::
+
+:::
+
+:::
+
+:::

@@ -438,3 +438,7 @@ Angle between line and plane: $90° - \phi$.
 Section 7.
 
 </details>
+
+:::
+
+:::

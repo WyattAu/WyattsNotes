@@ -695,3 +695,7 @@ class Library:
 
 For revision on programming fundamentals, see
 [Programming Constructs](/docs/docs_ALevel-notes/computer-science/programming/programming-constructs).
+
+:::
+
+:::

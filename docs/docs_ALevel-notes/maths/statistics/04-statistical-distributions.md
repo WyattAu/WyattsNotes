@@ -380,3 +380,7 @@ $P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac{e^{-8} \times 262144}{720} \app
 **If you get this wrong, revise:** [Additivity](#45-additivity) — Section 4.5.
 
 </details>
+
+:::
+
+:::

@@ -483,3 +483,5 @@ equally specialized, the program is ill-formed.
 - **Negated constraints and subsumption.** `!std::integral<T>` does not subsume
   `std::floating_point<T>` even though all floating-point types are non-integral. The compiler
   compares constraint structure, not set-theoretic relationships.
+
+:::

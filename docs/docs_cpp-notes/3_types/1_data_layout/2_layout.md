@@ -557,3 +557,5 @@ int main() {
               << std::hardware_constructive_interference_size << "\n";
 }
 ```
+
+:::

@@ -753,3 +753,15 @@ Since the inverse is unique, $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1
 then B," you must undo B first, then undo A.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

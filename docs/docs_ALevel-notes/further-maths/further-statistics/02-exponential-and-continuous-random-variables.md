@@ -440,3 +440,9 @@ Mode: $f(x) = 4x^3$ is increasing on $[0,1]$, so the mode is at $x = 1$.
 Section 1.5.
 
 </details>
+
+:::
+
+:::
+
+:::

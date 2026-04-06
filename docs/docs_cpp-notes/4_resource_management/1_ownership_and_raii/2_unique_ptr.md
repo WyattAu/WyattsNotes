@@ -651,3 +651,15 @@ std::unique_ptr<int> make_value_alt() {
 - [Shared Ownership (std::shared_ptr) and Control Block](3_shared_ptr.md)
 - [Weak References (std::weak_ptr)](4_weak_ptr.md)
 - [Common Pitfalls](5_custom_deleters.md)
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

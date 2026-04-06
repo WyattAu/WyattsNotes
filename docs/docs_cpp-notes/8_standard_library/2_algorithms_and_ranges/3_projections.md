@@ -557,3 +557,5 @@ int main() {
 - [Range Adaptors, Views, Composition](./2_range_adaptors.md)
 - [Range Materialization](./4_range_materialization.md)
 - [Parallel Algorithms](./5_parallel_algorithms.md)
+
+:::

@@ -566,3 +566,21 @@ Reject $x = -1/2$ since $\ln x$ requires $x \gt{} 0$.
 domain restrictions.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

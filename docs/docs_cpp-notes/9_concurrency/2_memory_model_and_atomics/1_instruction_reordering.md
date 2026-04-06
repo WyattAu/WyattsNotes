@@ -463,3 +463,9 @@ loop or cache it in a register, without emitting any CPU barrier instructions.
 - [Cache Coherency (MESI) and False Sharing](./2_cache_coherency.md)
 - [Memory Orderings](./4_memory_orderings.md)
 - [Atomic Operations and Lock-Free Programming](./3_atomic_operations.md)
+
+:::
+
+:::
+
+:::

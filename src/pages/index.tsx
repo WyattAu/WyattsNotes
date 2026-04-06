@@ -34,7 +34,7 @@ const subjectGroups: SubjectGroup[] = [
       {
         name: 'A-Level',
         files: 114,
-        lines: '61.8K',
+        lines: '62.4K',
         href: '/docs/docs_ALevel-notes/intro',
         tag: 'A*',
         desc: 'Full A* coverage — Computer Science, Maths, Physics, Economics, Further Maths',
@@ -55,7 +55,7 @@ const subjectGroups: SubjectGroup[] = [
       {
         name: 'C++',
         files: 122,
-        lines: '61.8K',
+        lines: '62.3K',
         href: '/docs/docs_cpp-notes/intro',
         tag: 'C++20/23',
         desc: 'Systems programming — C++20/23, templates, concurrency, standard library',
@@ -77,6 +77,14 @@ const subjectGroups: SubjectGroup[] = [
         desc: 'Deep reference — async, types, internals, decorators, generators, metaclasses',
       },
       {
+        name: 'Rust',
+        files: 8,
+        lines: '6.5K',
+        href: '/docs/docs_rust-notes/intro',
+        tag: '2024',
+        desc: 'Systems programming — ownership, borrowing, lifetimes, traits, async, Cargo',
+      },
+      {
         name: 'Dart',
         files: 20,
         lines: '16.5K',
@@ -92,26 +100,66 @@ const subjectGroups: SubjectGroup[] = [
         tag: 'Workflow',
         desc: 'Version control — objects, branching, rebasing, hooks, signing, CI/CD',
       },
+      {
+        name: 'Algorithms',
+        files: 8,
+        lines: '6.4K',
+        href: '/docs/docs_algorithms-notes/intro',
+        tag: 'CS',
+        desc: 'Algorithm design — complexity, sorting, graphs, dynamic programming, patterns',
+      },
     ],
   },
   {
     label: 'Infrastructure',
     subjects: [
       {
+        name: 'Linux',
+        files: 9,
+        lines: '6.8K',
+        href: '/docs/docs_linux-notes/intro',
+        tag: 'POSIX',
+        desc: 'Linux administration — CLI, file systems, process management, systemd, security',
+      },
+      {
+        name: 'Networking',
+        files: 8,
+        lines: '6.4K',
+        href: '/docs/docs_networking-notes/intro',
+        tag: 'TCP/IP',
+        desc: 'Computer networking — OSI, TCP/UDP, DNS, HTTP, TLS, troubleshooting',
+      },
+      {
+        name: 'Databases',
+        files: 7,
+        lines: '5.4K',
+        href: '/docs/docs_databases-notes/intro',
+        tag: 'SQL',
+        desc: 'Database fundamentals — relational theory, SQL, indexing, transactions, NoSQL',
+      },
+      {
+        name: 'Security',
+        files: 7,
+        lines: '5.0K',
+        href: '/docs/docs_security-notes/intro',
+        tag: 'InfoSec',
+        desc: 'Information security — cryptography, authentication, web security, incident response',
+      },
+      {
         name: 'TrueNAS',
-        files: 4,
-        lines: '1.2K',
+        files: 10,
+        lines: '7.1K',
         href: '/docs/docs_truenas-notes/intro',
         tag: 'NAS',
-        desc: 'NAS administration — ZFS pools, datasets, sharing, snapshots, backup',
+        desc: 'NAS administration — ZFS deep-dive, sharing, replication, apps, monitoring',
       },
       {
         name: 'Tuning',
-        files: 2,
-        lines: '881',
+        files: 8,
+        lines: '6.4K',
         href: '/docs/docs_tuning-notes/intro',
         tag: 'HW',
-        desc: 'Hardware optimization — undervolting, overclocking, memory tuning, stress testing',
+        desc: 'Hardware optimization — CPU, memory, GPU, storage tuning, cooling, stress testing',
       },
     ],
   },
@@ -128,11 +176,11 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'General',
-        files: 6,
-        lines: '1.2K',
+        files: 10,
+        lines: '4.8K',
         href: '/docs/docs_general-notes/intro',
         tag: 'Meta',
-        desc: 'Cross-topic — markdown reference, tooling, writing conventions',
+        desc: 'Cross-topic — dev environment, productivity, open source, career guidance',
       },
       {
         name: 'Licensing',
@@ -146,9 +194,9 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 387;
-const totalLines = '212K';
-const totalSubjects = 13;
+const totalFiles = 450;
+const totalLines = '263K';
+const totalSubjects = 19;
 
 export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();

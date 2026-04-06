@@ -504,3 +504,7 @@ int main() {
   reference parameter), the referenced object must outlive the generator.
 - **Range adaptor eager materialization.** Some range adaptors (like `std::views::reverse`) may need
   to buffer elements, defeating the lazy evaluation benefit of generators.
+
+:::
+
+:::

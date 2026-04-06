@@ -475,3 +475,7 @@ $= P_{\text{load}}/P_{\text{total}} = 1/2 = 50\%$.
 
 </p>
 </details>
+
+:::
+
+:::

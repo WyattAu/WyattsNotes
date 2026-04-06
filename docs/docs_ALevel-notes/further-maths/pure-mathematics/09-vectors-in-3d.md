@@ -642,3 +642,7 @@ $D = \dfrac{3}{\sqrt{6}} = \dfrac{3\sqrt{6}}{6} = \boxed{\dfrac{\sqrt{6}}{2}}$.
 — Section 9.
 
 </details>
+
+:::
+
+:::

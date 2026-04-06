@@ -453,3 +453,5 @@ int main() {
   inherits the base class's layout (vtable, sizeof), which increases coupling. Use composition
   (member variable) unless you specifically need `protected` member access or virtual function
   overriding.
+
+:::

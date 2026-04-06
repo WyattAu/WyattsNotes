@@ -464,3 +464,5 @@ computation cannot be cancelled until it reaches the next `co_await`.
 - [Coroutine Handle, Promise Type, and Awaiter](./2_promise_awaiter.md)
 - [Generators (std::generator)](./3_generators.md)
 - [Futures, Promises, and Async Flows](./5_futures_promises.md)
+
+:::

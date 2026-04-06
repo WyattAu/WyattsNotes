@@ -608,3 +608,9 @@ Instruction format: 8 (opcode) + 5 + 5 + 5 = 23 bits
 With 8-bit opcode: $2^8 = 256$ possible opcodes.
 
 </details>
+
+:::
+
+:::
+
+:::

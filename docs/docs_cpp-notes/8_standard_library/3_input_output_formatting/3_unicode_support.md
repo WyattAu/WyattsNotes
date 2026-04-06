@@ -568,3 +568,15 @@ platform-dependent:
 7. **Using `std::locale` for Unicode-aware operations:** `std::locale` facets operate on `char`
    values, not on Unicode code points. The `std::ctype<char>::toupper` function cannot handle
    multi-byte characters. For Unicode-aware locale operations, use ICU.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

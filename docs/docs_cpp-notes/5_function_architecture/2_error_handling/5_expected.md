@@ -425,3 +425,7 @@ error handling strategy.
 - [Algebraic Error Handling — std::optional and std::variant](4_optional_variant.md)
 - [The noexcept Specifier](3_noexcept.md)
 - [Exception Safety Guarantees](2_exception_safety.md)
+
+:::
+
+:::

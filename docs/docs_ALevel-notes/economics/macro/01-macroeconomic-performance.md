@@ -813,3 +813,23 @@ of raising interest rates as a response.
 The Bank of England feared that if inflation remained high for an extended period, workers and firms would adjust their inflation expectations upwards. Once $\pi^e$ rises, the short-run Phillips curve shifts upward: for any given unemployment rate, inflation will be higher. This creates a vicious cycle — higher expected inflation leads to higher wage demands, which push costs and prices up further, validating the higher expectations. If expectations become de-anchored, bringing inflation back down requires a much larger increase in unemployment (a painful disinflation). Raising interest rates works by reducing aggregate demand, increasing unemployment, and creating slack in the economy, which puts downward pressure on wages and prices. Effectiveness evaluation: (1) interest rate hikes work with a lag of 12-18 months, making timing difficult; (2) they also reduce investment and growth, creating a recessionary trade-off; (3) if inflation is primarily cost-push (energy prices, supply chains), demand-side tools may be less effective — this is the "stagflation" problem. The Bank of England ultimately raised rates to 5.25%, and inflation fell to near 2% by mid-2024, but this was partly due to the resolution of supply-side pressures (falling energy prices) rather than the demand reduction alone.
 </p>
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

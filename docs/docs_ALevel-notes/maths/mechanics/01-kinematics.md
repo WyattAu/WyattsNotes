@@ -384,3 +384,7 @@ $\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\tex
 — Section 4.4.
 
 </details>
+
+:::
+
+:::

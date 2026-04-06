@@ -449,3 +449,5 @@ public:
 - [Explicit and Partial Specialization](./3_specialization.md)
 - [Parameter Packs and Variadic Templates](../3_compile_time_computation/1_parameter_packs.md)
 - [Dependent Names and Two-Phase Lookup](./4_dependent_names.md)
+
+:::

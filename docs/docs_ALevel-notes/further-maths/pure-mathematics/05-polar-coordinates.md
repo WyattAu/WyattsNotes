@@ -511,3 +511,11 @@ $= \dfrac{1}{2}\left[\left(4\pi - 2\sqrt{3} + \sqrt{3}/2\right) - \left(2\pi + 2
 $= \dfrac{1}{2}\left[2\pi - 3\sqrt{3}\right] = \pi - \dfrac{3\sqrt{3}}{2}$.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::

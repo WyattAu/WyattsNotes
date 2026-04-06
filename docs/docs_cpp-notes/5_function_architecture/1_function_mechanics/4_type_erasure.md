@@ -701,3 +701,7 @@ or pass lambdas as template parameters.
 Standard containers require copyable elements (unless you use move-only containers or
 `std::vector<std::unique_ptr<std::move_only_function<...>>>`). Plan your data structures accordingly
 when using move-only callables.
+
+:::
+
+:::

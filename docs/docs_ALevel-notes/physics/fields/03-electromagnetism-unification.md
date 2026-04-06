@@ -732,3 +732,5 @@ increase proportionally ($r = mv/(qB)$), keeping the period $T = 2\pi r/v = 2\pi
 </p>
 
 </details>
+
+:::

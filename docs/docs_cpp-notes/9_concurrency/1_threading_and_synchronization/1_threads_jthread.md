@@ -546,3 +546,19 @@ void constructor_variants() {
 6. **Thread function exceptions:** If an exception escapes the thread's callable, `std::terminate()`
    is called. Use `std::promise` to transport exceptions to the joining thread, or catch all
    exceptions inside the thread function and store them.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

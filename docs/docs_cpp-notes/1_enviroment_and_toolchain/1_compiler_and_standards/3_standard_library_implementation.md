@@ -462,3 +462,5 @@ measurable in specific scenarios.
 - [Cross-compilation Toolchains](4_crosscompilation_toolchains.md) — Choosing the right standard
   library for cross-compilation
 - [Linker Configuration](5_linker_configuration.md) — Linking against the standard library
+
+:::

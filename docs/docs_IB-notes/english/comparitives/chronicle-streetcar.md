@@ -257,3 +257,5 @@ Both texts depend heavily on dramatic irony:
 :::tip Exam Tip For HL comparative essays, always address both the **similarities and differences**
 between the texts. Stronger essays move beyond surface comparisons to explore how formal differences
 (novella vs play) shape the reader's experience of shared themes. :::
+
+:::

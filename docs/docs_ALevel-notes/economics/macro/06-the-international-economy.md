@@ -543,3 +543,15 @@ theory of comparative advantage and the concept of trade creation and diversion.
 <summary>Hint</summary>
 Comparative advantage: leaving the EU's single market means the UK faces tariffs and non-tariff barriers when trading with EU members. This reduces the gains from trade based on comparative advantage — UK producers who were competitive within the EU now face higher costs of exporting. Trade creation/diversion: leaving the EU is like *reverse trade creation* — the UK loses the trade-creating effects of the single market. New trade agreements with non-EU countries may create some trade, but: (1) EU is the UK's largest trading partner (43% of exports) — hard to replace. (2) Non-tariff barriers (regulatory divergence, customs checks) increase costs even without tariffs. (3) Services (80% of UK economy) are particularly affected — harder to negotiate services trade deals. Estimated cost: OBR estimates Brexit reduces long-run UK productivity by 4%. Potential benefits: regulatory autonomy, independent trade policy, control over migration. The net effect depends on how effectively the UK uses its new regulatory freedom.
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

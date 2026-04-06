@@ -459,3 +459,11 @@ Visitor pattern instead.
 
 - [Virtual Functions and vtables](./1_vtables.md)
 - [Inheritance, Object Slicing, and Virtual Destructors](./2_inheritance_slicing.md)
+
+:::
+
+:::
+
+:::
+
+:::

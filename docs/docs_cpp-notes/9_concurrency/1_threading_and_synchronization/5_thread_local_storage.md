@@ -462,3 +462,7 @@ independent, so there are no synchronization overheads or sequence quality conce
 - [Thread Execution (std::jthread) and Hardware Mapping](./1_threads_jthread.md)
 - [Data Races and Critical Sections](./2_data_races.md)
 - [Mutexes, Shared Locks, and Deadlock Prevention](./3_mutexes_deadlocks.md)
+
+:::
+
+:::

@@ -1131,3 +1131,5 @@ Example result:
 | HR        | 98000.00     |
 
 </details>
+
+:::

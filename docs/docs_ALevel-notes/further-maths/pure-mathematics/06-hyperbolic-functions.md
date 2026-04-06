@@ -558,3 +558,11 @@ $s = \displaystyle\int_{-b}^{b}\cosh(x/a)\,dx = \bigl[a\sinh(x/a)\bigr]_{-b}^b =
 The length of the chain is $\boxed{2a\sinh(b/a)}$.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::

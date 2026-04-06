@@ -427,3 +427,11 @@ Discuss.
 Education addresses the *root cause* (productivity differences) rather than the *symptom* (income differences). Improves human capital, raises wages at the bottom, promotes social mobility. More politically acceptable than higher taxes. But: takes decades to have effect, access to education is itself unequal, doesn't help those past working age, quality of education matters more than quantity. Redistribution provides immediate relief for those in poverty. Optimal approach: both — invest in education for long-run equality of opportunity, and redistribute for short-run poverty alleviation.
 </p>
 </details>
+
+:::
+
+:::
+
+:::
+
+:::

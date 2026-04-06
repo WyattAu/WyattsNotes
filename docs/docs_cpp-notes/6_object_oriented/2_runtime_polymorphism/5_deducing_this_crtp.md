@@ -488,3 +488,5 @@ rather than a traditional member function `Foo::bar()`. This means:
 
 - [Virtual Functions and vtables](./1_vtables.md)
 - [Devirtualization and Final Specifiers](./3_devirtualization.md)
+
+:::

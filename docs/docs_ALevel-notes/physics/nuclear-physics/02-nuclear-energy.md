@@ -342,3 +342,5 @@ energy (via the Maxwell-Boltzmann distribution) to overcome this barrier.
 
 </p>
 </details>
+
+:::

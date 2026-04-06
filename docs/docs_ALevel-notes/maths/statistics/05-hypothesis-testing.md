@@ -390,3 +390,9 @@ So $\beta \approx 0.361$ and the power is $1 - \beta \approx 0.639$.
 Section 3.
 
 </details>
+
+:::
+
+:::
+
+:::

@@ -471,3 +471,7 @@ Relative error:
 $\frac{3.33 \times 10^{-7}}{1/3} = 3.33 \times 10^{-7} \times 3 = 10^{-6} = 0.0001\%$
 
 </details>
+
+:::
+
+:::

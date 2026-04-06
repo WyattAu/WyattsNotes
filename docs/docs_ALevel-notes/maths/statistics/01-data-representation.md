@@ -364,3 +364,13 @@ Income distributions are typically right-skewed — a small number of very high 
 **If you get this wrong, revise:** [Comparing Measures](#15-comparing-measures) — Section 1.5.
 
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

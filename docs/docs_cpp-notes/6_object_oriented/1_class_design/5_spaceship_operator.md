@@ -524,3 +524,5 @@ int main() {
 - **Forgetting `<compare>` header.** `std::strong_ordering`, `std::weak_ordering`, and
   `std::partial_ordering` are defined in `<compare>`. Forgetting to include it causes compilation
   errors.
+
+:::

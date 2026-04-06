@@ -377,3 +377,9 @@ The $4\,\text{kg}$ block accelerates down the slope.
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
 
 </details>
+
+:::
+
+:::
+
+:::

@@ -481,3 +481,5 @@ access, or implement bounds checking in your own `operator[]`.
 
 - [Special Member Function Generation Rules](./3_special_member_functions.md)
 - [The Spaceship Operator](./5_spaceship_operator.md)
+
+:::

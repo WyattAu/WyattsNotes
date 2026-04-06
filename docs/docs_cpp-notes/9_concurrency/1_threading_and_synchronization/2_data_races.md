@@ -499,3 +499,13 @@ public:
 - [Thread Execution (std::jthread) and Hardware Mapping](./1_threads_jthread.md)
 - [Mutexes, Shared Locks, and Deadlock Prevention](./3_mutexes_deadlocks.md)
 - [Atomic Operations and Lock-Free Programming](../2_memory_model_and_atomics/3_atomic_operations.md)
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

@@ -474,3 +474,7 @@ but lookups are done with `shared_ptr`.
 - [Shared Ownership (std::shared_ptr) and Control Block](3_shared_ptr.md)
 - [Common Pitfalls](5_custom_deleters.md)
 - [Unique Ownership (std::unique_ptr) and EBO](2_unique_ptr.md)
+
+:::
+
+:::

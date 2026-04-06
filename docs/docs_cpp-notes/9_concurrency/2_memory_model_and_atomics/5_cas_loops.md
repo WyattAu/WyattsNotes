@@ -674,3 +674,9 @@ the head swings, so it can never be recycled and re-inserted. The tail pointer m
 - **Spinlock without backoff.** A naive spinlock that loops without any pause instruction wastes CPU
   cycles and bus bandwidth. Use `__builtin_ia32_pause()` on x86, `yield()` on ARM, or
   `std::this_thread::yield()` to reduce contention.
+
+:::
+
+:::
+
+:::

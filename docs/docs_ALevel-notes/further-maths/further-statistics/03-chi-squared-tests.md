@@ -455,3 +455,9 @@ a normal distribution.
 **If you get this wrong, revise:** [Degrees of freedom](#23-degrees-of-freedom) — Section 2.3.
 
 </details>
+
+:::
+
+:::
+
+:::

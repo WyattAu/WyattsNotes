@@ -475,3 +475,9 @@ may need to provide a custom `__cxa_pure_virtual` and `__cxa_throw` implementati
 
 - [Exception Safety Guarantees](2_exception_safety.md)
 - [The noexcept Specifier](3_noexcept.md)
+
+:::
+
+:::
+
+:::

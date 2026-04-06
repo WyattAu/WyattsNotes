@@ -794,3 +794,17 @@ pricing is a rational strategy. Why might limit pricing fail in practice?
 Limit pricing is rational when: (a) the long-run gain from maintaining monopoly power (higher future profits) exceeds the short-run sacrifice (lower current profits from charging below the monopoly price), (b) the incumbent has a cost advantage or better information than the potential entrant (asymmetric information about demand or costs), (c) there are significant sunk costs for the entrant, making hit-and-run entry difficult. Limit pricing may fail because: (a) the entrant may interpret the low price as a sign of weak demand rather than a threat, (b) the incumbent cannot credibly commit to maintaining the low price if the entrant does enter (the incumbent would rationally raise prices after the entrant's sunk costs are sunk), (c) predatory pricing (limit pricing pushed below average variable cost) is illegal under UK and EU competition law. Evaluation: contestable market theory suggests that if there are no sunk costs, the mere *threat* of entry achieves the same outcome as limit pricing without the incumbent needing to actually lower its price.
 </p>
 </details>
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::

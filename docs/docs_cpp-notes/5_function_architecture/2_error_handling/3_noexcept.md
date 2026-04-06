@@ -542,3 +542,5 @@ int main() {
 
 - [Exception Safety Guarantees](2_exception_safety.md)
 - [The Itanium Exception ABI](1_exception_abi.md)
+
+:::

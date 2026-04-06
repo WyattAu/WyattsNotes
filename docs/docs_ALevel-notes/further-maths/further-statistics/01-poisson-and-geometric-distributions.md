@@ -485,3 +485,9 @@ $\text{Var}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$. $\blacks
 [Proof that $\text{Var}(X) = \frac{1-p}{p^2}$](#23-proof-that-varx--frac1-pp2) — Section 2.3.
 
 </details>
+
+:::
+
+:::
+
+:::

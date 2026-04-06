@@ -661,3 +661,7 @@ Then $q = 11$, $r = -6$, and the roots are $1, 2, 3$.
 Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
 
 </details>
+
+:::
+
+:::

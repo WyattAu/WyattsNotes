@@ -609,3 +609,5 @@ Section 5.3, and [Power in variable-force situations](#54-power-in-variable-forc
 Section 5.4.
 
 </details>
+
+:::
