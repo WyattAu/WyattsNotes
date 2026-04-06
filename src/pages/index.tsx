@@ -78,11 +78,11 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'Rust',
-        files: 8,
-        lines: '6.5K',
+        files: 16,
+        lines: '14.3K',
         href: '/docs/docs_rust-notes/intro',
         tag: '2024',
-        desc: 'Systems programming — ownership, borrowing, lifetimes, traits, async, Cargo',
+        desc: 'Systems programming — ownership, lifetimes, unsafe, async, channels, traits, Cargo',
       },
       {
         name: 'Dart',
@@ -102,11 +102,11 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'Algorithms',
-        files: 8,
-        lines: '6.4K',
+        files: 16,
+        lines: '14.2K',
         href: '/docs/docs_algorithms-notes/intro',
         tag: 'CS',
-        desc: 'Algorithm design — complexity, sorting, graphs, dynamic programming, patterns',
+        desc: 'Algorithm design — complexity, sorting, trees, graphs, DP, greedy, advanced data structures',
       },
     ],
   },
@@ -115,11 +115,11 @@ const subjectGroups: SubjectGroup[] = [
     subjects: [
       {
         name: 'Linux',
-        files: 9,
-        lines: '6.8K',
+        files: 18,
+        lines: '15.3K',
         href: '/docs/docs_linux-notes/intro',
         tag: 'POSIX',
-        desc: 'Linux administration — CLI, file systems, process management, systemd, security',
+        desc: 'Linux administration — CLI, scripting, file systems, processes, networking, systemd, SSH',
       },
       {
         name: 'Networking',
@@ -131,19 +131,19 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'Databases',
-        files: 7,
-        lines: '5.4K',
+        files: 14,
+        lines: '11.9K',
         href: '/docs/docs_databases-notes/intro',
         tag: 'SQL',
-        desc: 'Database fundamentals — relational theory, SQL, indexing, transactions, NoSQL',
+        desc: 'Databases — relational theory, SQL, indexing, transactions, Redis, PostgreSQL, migrations',
       },
       {
         name: 'Security',
-        files: 7,
-        lines: '5.0K',
+        files: 13,
+        lines: '8.7K',
         href: '/docs/docs_security-notes/intro',
         tag: 'InfoSec',
-        desc: 'Information security — cryptography, authentication, web security, incident response',
+        desc: 'Information security — cryptography, OAuth, OWASP, API security, VPN, forensics',
       },
       {
         name: 'TrueNAS',
@@ -194,8 +194,8 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 450;
-const totalLines = '263K';
+const totalFiles = 488;
+const totalLines = '299K';
 const totalSubjects = 19;
 
 export default function Home(): React.ReactNode {
