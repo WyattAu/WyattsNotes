@@ -235,7 +235,7 @@ chmod 644 /etc/cron.d/myapp
 chown root:root /etc/cron.d/myapp
 ```
 
-### /etc/cron.{hourly,daily,weekly,monthly}/
+### /etc/cron.hourly, cron.daily, cron.weekly, cron.monthly
 
 ```bash
 # Scripts in these directories are run by run-parts
