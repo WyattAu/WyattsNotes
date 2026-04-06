@@ -201,9 +201,11 @@ eliminating the overhead of emulating hardware devices.
 | RNG     | VirtIO RNG                  | Built-in                     |
 | GPU     | VirtIO GPU                  | Built-in (Spice Guest Tools) |
 
-:::info For Windows VMs, download the `virtio-win` ISO from the Fedora project and attach it as a
+:::info
+For Windows VMs, download the `virtio-win` ISO from the Fedora project and attach it as a
 CD-ROM drive during installation. Install the VirtIO drivers before installing Windows, or use the
-`e1000` network driver temporarily and switch to VirtIO after driver installation. :::
+`e1000` network driver temporarily and switch to VirtIO after driver installation.
+:::
 
 ---
 

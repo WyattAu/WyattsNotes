@@ -208,9 +208,11 @@ int main() {
 }
 ```
 
-:::info The projection parameter appears **after** the predicate in the argument list for most
+:::info
+The projection parameter appears **after** the predicate in the argument list for most
 algorithms. The pattern is: `algorithm(range, predicate, projection)`. The predicate receives the
-**projected** value, not the original element. :::
+**projected** value, not the original element.
+:::
 
 ### Projection Mechanics: What Happens Under the Hood
 

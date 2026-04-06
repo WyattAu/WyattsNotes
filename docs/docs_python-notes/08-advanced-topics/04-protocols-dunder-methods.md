@@ -34,7 +34,8 @@ s2 = Singleton()
 print(s1 is s2)  # True
 ```
 
-:::info `__new__` is a static method (receives the class, not the instance). It is rarely
+:::info
+`__new__` is a static method (receives the class, not the instance). It is rarely
 overridden. Use cases include: singletons, immutable types that need pre-initialization validation,
 and subclassing immutable built-in types like `str` and `int`.
 :::
@@ -120,7 +121,8 @@ versions = {v1: "stable"}
 print(versions[v2])  # "stable"
 ```
 
-:::warning If you define `__eq__` without `__hash__`, Python sets `__hash__ = None`, making the
+:::warning
+If you define `__eq__` without `__hash__`, Python sets `__hash__ = None`, making the
 object unhashable. If you define `__hash__` without `__eq__`, objects may compare equal but hash
 differently, breaking dict and set invariants.
 :::
@@ -520,7 +522,8 @@ c += 5        # Counter with value 15 (same object)
 c += Counter(5)  # Counter with value 20
 ```
 
-:::warning If `__iadd__` is not defined, Python falls back to `__add__` and assigns the result:
+:::warning
+If `__iadd__` is not defined, Python falls back to `__add__` and assigns the result:
 `c = c + other`. This creates a new object. Define `__iadd__` when you want in-place mutation for
 performance.
 :::
@@ -778,7 +781,8 @@ mk.value = 2  # Mutate after insertion
 print(mk in s)  # May be False — hash changed but position didn't
 ```
 
-:::danger Never mutate objects that are used as dict keys or set members. If mutability is needed,
+:::danger
+Never mutate objects that are used as dict keys or set members. If mutability is needed,
 use immutable snapshots or compute hash from immutable attributes.
 :::
 

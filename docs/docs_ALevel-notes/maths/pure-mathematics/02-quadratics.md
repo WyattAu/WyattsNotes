@@ -76,8 +76,6 @@ $$x^2 + bx = \left(x + \frac{b}{2}\right)^2 - \frac{b^2}{4}$$
 
 <details>
 <summary>Example</summary>
-<p>
-
 Write $2x^2 - 12x + 22$ in completed square form.
 
 $$
@@ -90,8 +88,6 @@ $$
 $$
 
 The vertex is $(3, 4)$, and since the coefficient of $(x-3)^2$ is positive, the minimum value is $4$.
-
-</p>
 </details>
 
 ---
@@ -150,8 +146,6 @@ _Proof._ From the quadratic formula, the roots are $x = \frac{-b \pm \sqrt{\Delt
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the set of values of $k$ for which $x^2 + 4x + k = 0$ has two distinct real roots.
 
 $$
@@ -161,8 +155,6 @@ $$
 k &< 4
 \end{aligned}
 $$
-
-</p>
 </details>
 
 ---
@@ -203,8 +195,6 @@ _Proof._ From $a < b$, we have $b - a > 0$. Since $m < 0$ and $b - a > 0$, their
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve $x^2 - 5x + 6 < 0$.
 
 Factorise: $(x - 2)(x - 3) < 0$.
@@ -212,14 +202,10 @@ Factorise: $(x - 2)(x - 3) < 0$.
 The parabola opens upwards (coefficient of $x^2$ is positive). It is negative _between_ the roots:
 
 $$2 < x < 3$$
-
-</p>
 </details>
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve $\frac{x + 1}{x - 2} \leq 3$.
 
 $$
@@ -245,8 +231,6 @@ Sign analysis:
 The quotient is $\geq 0$ when $x \leq \frac{7}{2}$ (including equality) but $x \neq 2$.
 
 Solution: $x \leq \frac{7}{2}$, $x \neq 2$, i.e., $x \in (-\infty, 2) \cup \left[\frac{7}{2}, \infty\right)$.
-
-</p>
 </details>
 
 ---
@@ -289,8 +273,6 @@ The discriminant of the resulting quadratic tells you the number of intersection
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 3x^2 - 12x + 7 &= 3(x^2 - 4x) + 7 \\
@@ -301,8 +283,6 @@ $$
 $$
 
 Minimum value is $-5$, occurring at $x = 2$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Completing the square](#2-completing-the-square)
 
@@ -312,15 +292,11 @@ Minimum value is $-5$, occurring at $x = 2$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 x &= \frac{-5 \pm \sqrt{25 + 32}}{4} = \frac{-5 \pm \sqrt{57}}{4}
 \end{aligned}
 $$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic formula](#3-the-quadratic-formula)
 
@@ -330,8 +306,6 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 We need $\Delta \geq 0$:
 
 $$
@@ -342,8 +316,6 @@ k &\leq \frac{36}{16} = \frac{9}{4}
 $$
 
 Note: $k \neq 0$ (otherwise it's not quadratic). If $k = 0$, the equation $-6x + 4 = 0$ still has a real root, so the condition is $k \leq \frac{9}{4}$ with $k$ real (including $k = 0$, which gives a linear equation).
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant](#4-the-discriminant)
 
@@ -353,8 +325,6 @@ Note: $k \neq 0$ (otherwise it's not quadratic). If $k = 0$, the equation $-6x +
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Factorise: $(x - 5)(x + 2) > 0$.
 
 The parabola opens upwards. It is positive outside the roots:
@@ -362,8 +332,6 @@ The parabola opens upwards. It is positive outside the roots:
 $$x < -2 \quad \text{or} \quad x > 5$$
 
 In set notation: $x \in (-\infty, -2) \cup (5, \infty)$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic inequalities](#6-quadratic-inequalities)
 
@@ -373,8 +341,6 @@ In set notation: $x \in (-\infty, -2) \cup (5, \infty)$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Substitute $y = x - 1$ into $x^2 + (x-1)^2 = 13$:
 
 $$
@@ -389,8 +355,6 @@ $$
 $x = 3$: $y = 2$. Point: $(3, 2)$.
 
 $x = -2$: $y = -3$. Point: $(-2, -3)$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Simultaneous equations](#7-simultaneous-equations-linear-quadratic)
 
@@ -400,8 +364,6 @@ $x = -2$: $y = -3$. Point: $(-2, -3)$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 In completed square form: $f(x) = p(x - 2)^2 - 5$.
 
 Since $f(0) = 7$:
@@ -417,8 +379,6 @@ $$
 So $f(x) = 3(x - 2)^2 - 5 = 3(x^2 - 4x + 4) - 5 = 3x^2 - 12x + 7$.
 
 Therefore $p = 3$, $q = -12$, $r = 7$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Completing the square](#2-completing-the-square)
 
@@ -428,8 +388,6 @@ Therefore $p = 3$, $q = -12$, $r = 7$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Completing the square:
 
 $$x^2 + 4x + 9 = (x + 2)^2 + 5$$
@@ -437,8 +395,6 @@ $$x^2 + 4x + 9 = (x + 2)^2 + 5$$
 Since $(x+2)^2 \geq 0$ for all $x$, we have $(x+2)^2 + 5 \geq 5 > 0$ for all $x$. $\blacksquare$
 
 Alternatively: $\Delta = 16 - 36 = -20 < 0$, and since the coefficient of $x^2$ is positive, the parabola is always above the $x$-axis.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant](#4-the-discriminant)
 
@@ -448,8 +404,6 @@ Alternatively: $\Delta = 16 - 36 = -20 < 0$, and since the coefficient of $x^2$ 
 
 <details>
 <summary>Solution</summary>
-<p>
-
 By polynomial division:
 
 $2x^2 \div x = 2x$. Multiply: $2x(x-3) = 2x^2 - 6x$. Subtract: $-2x + 5$.
@@ -459,8 +413,6 @@ $-2x \div x = -2$. Multiply: $-2(x-3) = -2x + 6$. Subtract: $-1$.
 So $\frac{2x^2 - 8x + 5}{x - 3} = 2x - 2 - \frac{1}{x - 3}$.
 
 Therefore $A = 2$, $B = -2$, $C = -1$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Polynomial division](./01-algebraic-expressions.md)
 
@@ -470,8 +422,6 @@ Therefore $A = 2$, $B = -2$, $C = -1$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 At $x = 1$: $y = 1 - 4 + 3 = 0$. The point is $(1, 0)$.
 
 The gradient is $\frac{dy}{dx} = 2x - 4$. At $x = 1$: $\frac{dy}{dx} = -2$.
@@ -479,8 +429,6 @@ The gradient is $\frac{dy}{dx} = 2x - 4$. At $x = 1$: $\frac{dy}{dx} = -2$.
 Using $y - y_1 = m(x - x_1)$:
 
 $$y - 0 = -2(x - 1) \implies y = -2x + 2$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Differentiation](./10-differentiation.md)
 
@@ -490,8 +438,6 @@ $$y - 0 = -2(x - 1) \implies y = -2x + 2$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \Delta &= (2k)^2 - 4(1)(k^2 + 1) \\
@@ -501,8 +447,6 @@ $$
 $$
 
 Since $\Delta = -4 < 0$ for all $k \in \mathbb{R}$, there are no real roots. $\blacksquare$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant](#4-the-discriminant)
 
@@ -512,8 +456,6 @@ Since $\Delta = -4 < 0$ for all $k \in \mathbb{R}$, there are no real roots. $\b
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$(x + 5)(x + 2) = 30$$
 $$x^2 + 7x + 10 = 30$$
 $$x^2 + 7x - 20 = 0$$
@@ -523,8 +465,6 @@ $$x = \frac{-7 \pm \sqrt{49 + 80}}{2} = \frac{-7 \pm \sqrt{129}}{2}$$
 Since length and width must be positive, $x > -2$, so:
 
 $$x = \frac{-7 + \sqrt{129}}{2} \approx 2.18$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic formula](#3-the-quadratic-formula)
 
@@ -534,8 +474,6 @@ $$x = \frac{-7 + \sqrt{129}}{2} \approx 2.18$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$f(x) = (x - 3)^2 + 5$$
 
 Since $(x - 3)^2 \geq 0$, we have $f(x) \geq 5$. Range: $f(x) \in [5, \infty)$.
@@ -545,7 +483,5 @@ For $f(x) \leq 10$:
 $$(x - 3)^2 + 5 \leq 10 \implies (x - 3)^2 \leq 5 \implies -\sqrt{5} \leq x - 3 \leq \sqrt{5}$$
 
 $$3 - \sqrt{5} \leq x \leq 3 + \sqrt{5}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Completing the square](#2-completing-the-square) and [Quadratic inequalities](#6-quadratic-inequalities)

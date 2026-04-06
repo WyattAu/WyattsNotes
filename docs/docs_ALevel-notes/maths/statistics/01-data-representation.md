@@ -18,8 +18,10 @@ slug: data-representation
 | OCR (A)    | Paper 1 | Includes outlier detection                    |
 | CIE (9709) | P1, P6  | Data handling in P1; further statistics in P6 |
 
-:::info You must know when to use the sample variance formula (dividing by $n-1$) versus the
-population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data. :::
+:::info
+You must know when to use the sample variance formula (dividing by $n-1$) versus the
+population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
+:::
 
 ---
 
@@ -68,8 +70,10 @@ mode.
 - The median is robust to outliers but ignores the magnitude of extreme values.
 - The mode is useful for categorical data.
 
-:::warning For skewed distributions, the median is a better measure of central tendency than the
-mean. A few extreme values can pull the mean far from the centre of the data. :::
+:::warning
+For skewed distributions, the median is a better measure of central tendency than the
+mean. A few extreme values can pull the mean far from the centre of the data.
+:::
 
 ---
 
@@ -98,8 +102,10 @@ $$
 \end{aligned}
 $$
 
-:::tip This formula is computationally more efficient and is the one you should use in exams. Just
-remember: "mean of squares minus square of mean." :::
+:::tip
+This formula is computationally more efficient and is the one you should use in exams. Just
+remember: "mean of squares minus square of mean."
+:::
 
 ### 2.3 Sample variance
 
@@ -140,8 +146,10 @@ $$\text{Upper fence} = Q_3 + 1.5 \times \text{IQR}$$
 
 Values outside these fences are potential outliers.
 
-:::warning Different boards may define outliers differently. Always check your board's convention.
-Some use $1.5 \times$ IQR, others use different multipliers. :::
+:::warning
+Different boards may define outliers differently. Always check your board's convention.
+Some use $1.5 \times$ IQR, others use different multipliers.
+:::
 
 ---
 
@@ -166,9 +174,11 @@ $$\sigma_y^2 = \frac{1}{n}\sum(y_i - \bar{y})^2 = \frac{1}{n}\sum\left(\frac{x_i
 
 Hence $\sigma_y = \sigma_x/|c|$. $\blacksquare$
 
-:::tip Coding makes computation easier when data values are large. Always work with coded data to
+:::tip
+Coding makes computation easier when data values are large. Always work with coded data to
 find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean
-but does not affect the spread. :::
+but does not affect the spread.
+:::
 
 ---
 

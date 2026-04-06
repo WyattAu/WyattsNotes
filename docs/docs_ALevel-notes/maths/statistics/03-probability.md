@@ -18,8 +18,10 @@ slug: probability
 | OCR (A)    | Paper 1, 2 | Includes Venn diagrams and tree diagrams          |
 | CIE (9709) | P1, P6     | Probability in P1; conditional in P6              |
 
-:::info Probability questions test logical reasoning as much as formula recall. Always define events
-clearly and draw a diagram before calculating. :::
+:::info
+Probability questions test logical reasoning as much as formula recall. Always define events
+clearly and draw a diagram before calculating.
+:::
 
 ---
 
@@ -109,9 +111,11 @@ $$P(A) = \sum_{i=1}^{n}P(A|B_i)P(B_i)$$
 
 $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i)P(B_i)}$$
 
-:::tip Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
+:::tip
+Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
 positive, what is the probability the patient actually has the disease?" Always define events
-clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$). :::
+clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$).
+:::
 
 ---
 
@@ -138,9 +142,11 @@ $P(A \cap B) = P(A)P(B)$. $\blacksquare$
 **Intuition.** Independence means knowing $B$ occurred gives you **no information** about $A$. The
 probability of $A$ is the same whether or not $B$ has happened.
 
-:::warning "Independent" and "mutually exclusive" are **different** concepts. If $A$ and $B$ are
+:::warning
+"Independent" and "mutually exclusive" are **different** concepts. If $A$ and $B$ are
 mutually exclusive and both have positive probability, they are **not** independent (since
-$P(A \cap B) = 0 \neq P(A)P(B)$). :::
+$P(A \cap B) = 0 \neq P(A)P(B)$).
+:::
 
 ---
 

@@ -43,12 +43,14 @@ As the linker scans inputs (objects and libraries) from **left to right** on the
    - If a match is found, that specific member object is extracted and added to **E**.
    - If no match is found, the member object is ignored entirely.
 
-:::danger The Archive Order Trap Because static libraries are searched only to resolve _currently
+:::danger
+The Archive Order Trap Because static libraries are searched only to resolve _currently
 pending_ undefined symbols, order matters. If `LibA` depends on `LibB`, `LibA` must appear
 **before** `LibB` in the linker command.
 
 - Correct: `clang++ main.o -lA -lB`
-- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined). :::
+- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined).
+:::
 
 ### Weak vs. Strong vs. Common Symbols
 
@@ -198,15 +200,15 @@ The compiler marks template instantiations and `inline` functions with a special
 Modern linkers (Gold, LLD, Mold) go further. They detect functions that are distinct in C++ but
 compile to identical machine code.
 
-**Example:** `std::vector<int>` and `std::vector<long>` on a 64-bit platform often generate
-identical instructions (since `int` and `long` may both be passed in 64-bit registers).
+**Example:** `std::vector<int>` and `std::vector<unsigned int>` often generate identical machine
+code since they have the same element size and layout.
 
 **ICF Mechanism:**
 
 1. The linker hashes the `.text` content of every section.
 2. If hashes match, it performs a byte-by-byte comparison.
 3. If identical, it keeps one copy and updates the symbol table so both `vector<int>::push_back` and
-   `vector<long>::push_back` point to the same address.
+   `vector<unsigned int>::push_back` point to the same address.
 
 **CMake Configuration:**
 

@@ -12,7 +12,9 @@ sidebar_position: 8
 
 ## Development Economics
 
-:::info Board Coverage Edexcel P1, P3 | CIE P2, P4 :::
+:::info
+Board Coverage Edexcel P1, P3 | CIE P2, P4
+:::
 
 Development economics studies how nations transform from low-income, less-productive economies into
 high-income, modern economies. It is distinct from mainstream macroeconomics because it must grapple
@@ -37,10 +39,12 @@ developing if the gains accrue to a small elite.
 | **Focus**    | Quantity of output       | Quality of life                                   |
 | **Scope**    | Narrow (market output)   | Broad (well-being, institutions, freedoms)        |
 
-:::warning Common Pitfall Do not conflate growth with development. Equatorial Guinea has a high GDP
+:::warning
+Common Pitfall Do not conflate growth with development. Equatorial Guinea has a high GDP
 per capita (driven by oil) but low HDI (0.59) due to extreme inequality. Conversely, Costa Rica has
 a moderate GDP per capita but high HDI (0.81) due to strong public services and political stability.
-Always use multiple indicators. :::
+Always use multiple indicators.
+:::
 
 ## 2. Indicators of Development
 
@@ -116,10 +120,12 @@ under the Lorenz curve.
 - **Sectoral employment**: the share of employment in agriculture, industry, and services. As
   countries develop, the share in agriculture falls and the share in services rises.
 
-:::info Board-Specific Note **CIE (9708)** requires you to evaluate the strengths and weaknesses of
+:::info
+Board-Specific Note **CIE (9708)** requires you to evaluate the strengths and weaknesses of
 different development indicators, including the HDI and Gini coefficient. **Edexcel** focuses on GDP
 per capita and HDI as measures of living standards, and may ask you to compare indicators across
-countries. :::
+countries.
+:::
 
 ## 3. Causes of Economic Growth
 
@@ -353,10 +359,12 @@ social premium for community development projects (schools, healthcare, clean wa
 - **Economic Partnership Agreements (EPAs)**: trade agreements between the EU and developing
   countries.
 
-:::warning Common Pitfall Free trade is not always beneficial for developing countries. If a
+:::warning
+Common Pitfall Free trade is not always beneficial for developing countries. If a
 developing country liberalises trade while developed countries maintain subsidies on agriculture
 (e.g., the EU's Common Agricultural Policy), developing-country farmers cannot compete. Trade
-liberalisation must be reciprocal and sequenced appropriately. :::
+liberalisation must be reciprocal and sequenced appropriately.
+:::
 
 ## 7. Sustainable Development
 

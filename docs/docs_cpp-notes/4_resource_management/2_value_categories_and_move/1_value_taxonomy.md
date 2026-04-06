@@ -67,10 +67,12 @@ C++11 introduced move semantics, requiring the xvalue category to represent "thi
 identity but are about to expire." C++17 refined the model by making prvalues non-objects until they
 are materialized, which enabled guaranteed copy elision [N4950 §8.4.4].
 
-:::info Relevance The value category of an expression determines which overloaded function is called
+:::info
+Relevance The value category of an expression determines which overloaded function is called
 (via reference binding rules), whether a move constructor or copy constructor is invoked, and
 whether temporary lifetime extension applies. Understanding value categories is essential to
-understanding why move semantics work. :::
+understanding why move semantics work.
+:::
 
 ## 2.1 lvalue
 
@@ -172,10 +174,12 @@ int main() {
 | xvalue   | Yes           | Yes            | `std::move(x)`, `std::forward<T>(x)`, `return std::move(local);` (member access) |
 | prvalue  | No            | Yes            | `42`, `3.14`, `f()` (by-value return), `int{7}`, `a + b`                         |
 
-:::info Relevance The parenthesized expression `decltype((e))` yields the **declared type of `e`**
+:::info
+Relevance The parenthesized expression `decltype((e))` yields the **declared type of `e`**
 with reference qualifiers preserved, which is how the `static_assert` tests above work. Without the
 extra parentheses, `decltype(e)` strips references. This distinction is critical when writing type
-traits or SFINAE constraints. :::
+traits or SFINAE constraints.
+:::
 
 ## See Also
 

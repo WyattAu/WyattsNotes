@@ -9,8 +9,10 @@ categories:
 slug: web-technologies
 ---
 
-:::info Board-specific This topic is examined by Edexcel (P1, Topic 5) only. Other boards cover some
-of these concepts within their networking modules. :::
+:::info
+Board-specific This topic is examined by Edexcel (P1, Topic 5) only. Other boards cover some
+of these concepts within their networking modules.
+:::
 
 ## 1. The Internet and the World Wide Web
 
@@ -102,7 +104,7 @@ Semantic elements describe meaning to browsers and assistive technologies:
 
 ```html
 <h1>Heading</h1>
-<p>A paragraph of text.</p>
+A paragraph of text.
 <a href="https://example.com">A link</a>
 <img src="photo.jpg" alt="Description of the image" />
 <ul>
@@ -135,7 +137,7 @@ selector {
 
 | Selector     | Example   | Selects                      |
 | ------------ | --------- | ---------------------------- |
-| Element      | `p`       | All `<p>` elements           |
+| Element      | `p`       | All `` elements           |
 | Class        | `.card`   | Elements with `class="card"` |
 | ID           | `#header` | Element with `id="header"`   |
 | Descendant   | `nav a`   | All `<a>` inside `<nav>`     |
@@ -502,10 +504,10 @@ article, and a footer. Why does semantic HTML improve accessibility?
     <main>
       <article>
         <h2>Understanding Recursion</h2>
-        <p>A function that calls itself to solve sub-problems.</p>
+        A function that calls itself to solve sub-problems.
       </article>
     </main>
-    <footer><p>&copy; 2026 Student Blog</p></footer>
+    <footer>&copy; 2026 Student Blog</footer>
   </body>
 </html>
 ```

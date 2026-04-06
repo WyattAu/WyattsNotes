@@ -318,8 +318,10 @@ int main() {
 }
 ```
 
-:::tip Prefer Prefix Prefix increment avoids creating a temporary copy. In performance-sensitive
-code, prefer `++it` over `it++` for iterators and counters. :::
+:::tip
+Prefer Prefix Prefix increment avoids creating a temporary copy. In performance-sensitive
+code, prefer `++it` over `it++` for iterators and counters.
+:::
 
 ## 4.7 Stream Insertion and Extraction Operators
 

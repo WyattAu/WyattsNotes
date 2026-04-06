@@ -9,9 +9,7 @@ sidebar_position: 1
 ## Abstract
 
 This resource is created as a aggregation of best practices in Java. If you are learning Java for a
-specific course, please refer to
-[JETS](https://wyattsnotes.wyattau.com/WyattsNotes/docs/docs_IB-notes/computer-science/options/oop/jets)
-for IB.
+specific course, please refer to the IB Computer Science notes on this site for JETS.
 
 <div className="godbolt-container">
   <iframe

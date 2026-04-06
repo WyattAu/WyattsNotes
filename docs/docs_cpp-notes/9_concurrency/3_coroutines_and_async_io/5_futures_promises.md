@@ -79,10 +79,12 @@ policy controls execution:
 | `std::launch::deferred`                                 | Lazy — runs when `get()` is called on the calling thread       |
 | `std::launch::async \| std::launch::deferred` (default) | Implementation chooses (may be either)                         |
 
-:::warning With the default launch policy, the implementation is free to choose `deferred`
+:::warning
+With the default launch policy, the implementation is free to choose `deferred`
 execution. This means the task might run synchronously on the calling thread when `get()` is called,
 defeating the purpose of asynchronous execution. Always use `std::launch::async` explicitly if you
-need guaranteed asynchronous execution. :::
+need guaranteed asynchronous execution.
+:::
 
 ## Future/Promise Pair as the Basic Async Primitive
 
@@ -238,10 +240,12 @@ int main() {
 }
 ```
 
-:::tip When using `std::async` with `std::launch::async`, be aware that the C++ standard does
+:::tip
+When using `std::async` with `std::launch::async`, be aware that the C++ standard does
 **not** require implementations to use a thread pool. Some implementations (notably GCC's libstdc++)
 spawn a new thread for each `std::async` call, which can be expensive. For high-throughput
-scenarios, use a dedicated thread pool or a coroutine-based executor. :::
+scenarios, use a dedicated thread pool or a coroutine-based executor.
+:::
 
 ## Cancellation via `std::stop_token` Integration
 
@@ -361,9 +365,11 @@ depends on context [N4950 §8.5.3]:
 - If the coroutine has not yet reached `final_suspend`, the exception propagates out of `resume()`.
 - If the coroutine has no caller waiting (e.g., it was detached), `std::terminate()` is called.
 
-:::warning Always store exceptions in `unhandled_exception()` and rethrow them at an appropriate
+:::warning
+Always store exceptions in `unhandled_exception()` and rethrow them at an appropriate
 `await_resume()` point. Letting exceptions escape `resume()` makes the coroutine interface fragile
-and can lead to `std::terminate()` in detached scenarios. :::
+and can lead to `std::terminate()` in detached scenarios.
+:::
 
 ## Cleanup on Cancellation
 
@@ -536,10 +542,12 @@ int main() {
 }
 ```
 
-:::info The P2300 `std::execution` proposal (targeting a future C++ standard) integrates
+:::info
+The P2300 `std::execution` proposal (targeting a future C++ standard) integrates
 `std::stop_token` directly into the sender/receiver model, providing a unified cancellation
 mechanism that propagates through entire async computation graphs. Until P2300 is standardized,
-manual `stop_token` integration as shown above is the recommended approach. :::
+manual `stop_token` integration as shown above is the recommended approach.
+:::
 
 ## Summary
 

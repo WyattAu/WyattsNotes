@@ -102,7 +102,8 @@ String pName;   // unclear
 long t;         // meaningless
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §6.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.1) defines the rules for declaring names. [JLS §3.8](https://docs.oracle.com/javase/specs/jls/se21/html/jls-3.html#jls-3.8) defines what constitutes a valid identifier. Unicode characters are permitted, but ASCII identifiers are the de facto standard.
 :::
 
@@ -141,7 +142,8 @@ com.example.project/
 
 Feature-first packaging has a significant advantage for projects of any non-trivial size: it localizes changes. When a requirement changes for the "user" domain, all the files you need to modify are in a single package. In layer-first packaging, a change to `User` might require edits across `controller/`, `service/`, `repository/`, and `model/` -- four separate directories that are far apart in the tree.
 
-:::tip Recommendation
+:::tip
+Recommendation
 Use feature-first packaging for any project with more than two bounded contexts. For small projects or libraries, layer-first packaging remains acceptable.
 :::
 
@@ -238,7 +240,8 @@ tasks.test {
 }
 ```
 
-:::tip Recommendation
+:::tip
+Recommendation
 Use Gradle with the Kotlin DSL for new projects. Gradle's build cache, incremental compilation, and configuration avoidance yield measurable performance improvements, and the Kotlin DSL provides type safety and IDE autocompletion. Use Maven when integrating with legacy enterprise infrastructure that requires it, or when team familiarity makes the trade-off clear.
 :::
 
@@ -410,7 +413,8 @@ class OrderServiceTest {
 
 The `verify` API with `never()` ensures that when an operation fails partway through, no side effects leak through. The `argThat` matcher enables assertions on the arguments passed to collaborators without requiring an equality implementation that may not exist on the domain object.
 
-:::warning Over-Mocking
+:::warning
+Over-Mocking
 If a test requires more than three mocks, the unit under test likely has too many responsibilities. Restructure the code rather than adding more mocks. Tests that mock extensively tend to be brittle: they break when implementation details change even when the externally observable behavior is correct.
 :::
 
@@ -483,7 +487,8 @@ The `{}` parameterized formatting is the critical difference. SLF4J defers strin
 </configuration>
 ```
 
-:::tip Recommendation
+:::tip
+Recommendation
 Always use SLF4J for application logging. Use JUL only in library code where adding external dependencies is undesirable. Never use `System.out.println` for logging in production code; it cannot be filtered by log level, redirected to files, or formatted consistently.
 :::
 
@@ -1178,6 +1183,7 @@ Modern JVMs (Java 8u191+, Java 11+) automatically detect container limits (cgrou
 -XX:InitialRAMPercentage=50.0
 ```
 
-:::warning Production Advice
+:::warning
+Production Advice
 Never set `-XX:+AlwaysPreTouch` without understanding its implications. This flag touches every page in the heap at JVM startup, which forces the operating system to allocate physical memory for the entire heap immediately. It eliminates page fault pauses during runtime, but it delays startup and can cause the container to be killed if the memory limit is tight.
 :::

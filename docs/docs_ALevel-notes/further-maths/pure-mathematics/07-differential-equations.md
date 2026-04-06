@@ -27,9 +27,11 @@ applications.
 | OCR (A) | Paper 1 | First-order + second-order linear with constant coefficients     |
 | CIE     | P2      | First-order (separable, integrating factor); second-order in P2  |
 
-:::info All boards examine first-order ODEs. CIE and Edexcel require second-order linear ODEs. AQA
+:::info
+All boards examine first-order ODEs. CIE and Edexcel require second-order linear ODEs. AQA
 focuses on first-order equations with growth and decay modelling. The formula booklet gives the
-integrating factor formula on Edexcel; AQA and OCR students must know it. :::
+integrating factor formula on Edexcel; AQA and OCR students must know it.
+:::
 
 ---
 
@@ -68,9 +70,11 @@ $$y^2 = x^2 + 4, \quad y = \sqrt{x^2 + 4}$$
 
 ### 1.4 Domain restrictions
 
-:::warning When dividing by $g(y)$ during separation, we implicitly assume $g(y) \neq 0$. If
+:::warning
+When dividing by $g(y)$ during separation, we implicitly assume $g(y) \neq 0$. If
 $g(y_0) = 0$, then $y = y_0$ is a constant (equilibrium) solution that may not appear in the general
-solution. Always check for these. :::
+solution. Always check for these.
+:::
 
 **Example.** $\dfrac{dy}{dx} = y(1-y)$.
 
@@ -170,8 +174,10 @@ Using $y(0) = 1$: $1 = -1 + C \implies C = 2$.
 
 $$\boxed{y = 2e^{3x} - e^{2x}}$$
 
-:::tip The constant of integration in $\mu = e^{\int P\,dx}$ can be omitted (absorbed into $C$).
-Always choose the simplest antiderivative. :::
+:::tip
+The constant of integration in $\mu = e^{\int P\,dx}$ can be omitted (absorbed into $C$).
+Always choose the simplest antiderivative.
+:::
 
 ---
 
@@ -296,8 +302,10 @@ To find $y_p$, guess the form based on $f(x)$, then determine coefficients by su
 | $k\sin\omega x$ | $c\cos\omega x + d\sin\omega x$   | $x(c\cos\omega x + d\sin\omega x)$ |
 | Polynomial      | General polynomial of same degree | Multiply by $x$ as needed          |
 
-:::warning If any term in your trial $y_p$ already appears in the complementary function $y_h$,
-multiply the entire trial by $x$. If it still appears, multiply by $x^2$. :::
+:::warning
+If any term in your trial $y_p$ already appears in the complementary function $y_h$,
+multiply the entire trial by $x$. If it still appears, multiply by $x^2$.
+:::
 
 ### 4.3 Worked examples
 

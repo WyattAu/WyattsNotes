@@ -11,7 +11,8 @@ slug: capacitance
 
 ## Capacitance
 
-:::info Board Coverage
+:::info
+Board Coverage
 AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
@@ -95,7 +96,8 @@ $$\frac{1}{C_{\text{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}
 
 **Proof.** All capacitors store the same charge $Q$. Total p.d.: $V = V_1 + V_2 + \cdots = Q/C_1 + Q/C_2 + \cdots = Q(1/C_1 + 1/C_2 + \cdots)$. Since $V = Q/C_{\text{total}}$: $1/C_{\text{total}} = 1/C_1 + 1/C_2 + \cdots$ $\square$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 Note the "mirror" relationship with resistors: capacitors in parallel add (like resistors in series), and capacitors in series add reciprocally (like resistors in parallel).
 :::
 
@@ -190,7 +192,8 @@ For discharging: $\frac{Q}{Q_0} = e^{-1} = 0.368$, so **36.8%** remains (63.2% i
 
 **Intuition.** The time constant is the "characteristic time" of the circuit. A large resistance limits the charging current, and a large capacitance requires more charge — both increase the time needed. After $5\tau$, the capacitor is effectively fully charged or discharged.
 
-:::tip Exam Technique
+:::tip
+Exam Technique
 When asked to find the time constant from a graph: for charging, find the time at which the curve reaches 63.2% of its final value. For discharging, find the time at which the curve drops to 36.8% of its initial value. Alternatively, find the time at which the tangent at $t = 0$ intersects the final value line.
 :::
 
@@ -198,34 +201,24 @@ When asked to find the time constant from a graph: for charging, find the time a
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A 100 $\mu$F capacitor is charged to 12 V. Calculate the stored energy.
 
 **Answer.** $E = \frac{1}{2}CV^2 = \frac{1}{2} \times 100 \times 10^{-6} \times 144 = 7.2 \times 10^{-3}$ J $= 7.2$ mJ.
 
 <b>If you get this wrong, revise:</b> [Energy Stored in a Capacitor](#3-energy-stored-in-a-capacitor)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A parallel plate capacitor has plates of area $0.020$ m$^2$ separated by $0.50$ mm in vacuum. Calculate its capacitance.
 
 **Answer.** $C = \frac{\varepsilon_0 A}{d} = \frac{8.85 \times 10^{-12} \times 0.020}{0.50 \times 10^{-3}} = \frac{1.77 \times 10^{-13}}{5.0 \times 10^{-4}} = 3.54 \times 10^{-10}$ F $= 354$ pF.
 
 <b>If you get this wrong, revise:</b> [Parallel Plate Capacitor](#2-parallel-plate-capacitor)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A $470\,\mu$F capacitor is charged through a $100\,\text{k}\Omega$ resistor from a 6.0 V supply. Calculate: (a) the time constant, (b) the charge after 20 s, (c) the current after 20 s.
 
 **Answer.** (a) $\tau = RC = 100 \times 10^3 \times 470 \times 10^{-6} = 47.0$ s.
@@ -235,14 +228,10 @@ A $470\,\mu$F capacitor is charged through a $100\,\text{k}\Omega$ resistor from
 (c) $I = I_0 e^{-t/\tau} = \frac{6.0}{100 \times 10^3} e^{-20/47} = 6.0 \times 10^{-5} \times 0.654 = 3.92 \times 10^{-5}$ A $= 39.2\,\mu$A.
 
 <b>If you get this wrong, revise:</b> [RC Circuits: Charging](#5-rc-circuits-charging)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A $220\,\mu$F capacitor charged to 10 V discharges through a $50\,\text{k}\Omega$ resistor. Calculate: (a) the time constant, (b) the p.d. across the capacitor after 15 s, (c) the time for the p.d. to fall to 3.0 V.
 
 **Answer.** (a) $\tau = 50 \times 10^3 \times 220 \times 10^{-6} = 11.0$ s.
@@ -252,14 +241,10 @@ A $220\,\mu$F capacitor charged to 10 V discharges through a $50\,\text{k}\Omega
 (c) $3.0 = 10 e^{-t/11}$. $e^{-t/11} = 0.3$. $-t/11 = \ln 0.3 = -1.204$. $t = 11 \times 1.204 = 13.2$ s.
 
 <b>If you get this wrong, revise:</b> [RC Circuits: Discharging](#6-rc-circuits-discharging)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 Two capacitors, $C_1 = 10\,\mu$F and $C_2 = 20\,\mu$F, are connected (a) in parallel and (b) in series. Calculate the equivalent capacitance in each case.
 
 **Answer.** (a) $C_{\text{parallel}} = 10 + 20 = 30\,\mu$F.
@@ -267,27 +252,19 @@ Two capacitors, $C_1 = 10\,\mu$F and $C_2 = 20\,\mu$F, are connected (a) in para
 (b) $\frac{1}{C_{\text{series}}} = \frac{1}{10} + \frac{1}{20} = \frac{3}{20}$. $C_{\text{series}} = 6.67\,\mu$F.
 
 <b>If you get this wrong, revise:</b> [Capacitors in Series and Parallel](#4-capacitors-in-series-and-parallel)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A capacitor is charged to 50 V and then discharged through a $200\,\text{k}\Omega$ resistor. After 30 s, the p.d. is 18 V. Calculate the capacitance.
 
 **Answer.** $V = V_0 e^{-t/RC}$. $18 = 50 e^{-30/(200000 \times C)}$. $0.36 = e^{-30/(200000C)}$. $\ln 0.36 = -30/(200000C)$. $-1.022 = -30/(200000C)$. $C = 30/(200000 \times 1.022) = 1.47 \times 10^{-4}$ F $= 147\,\mu$F.
 
 <b>If you get this wrong, revise:</b> [RC Circuits: Discharging](#6-rc-circuits-discharging)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Prove that the energy stored in a capacitor is $E = \frac{1}{2}QV$ by considering the area under the $V$-$Q$ graph.
 
 **Answer.** The $V$-$Q$ graph for a capacitor is a straight line through the origin: $V = Q/C$. The energy stored equals the work done in charging, which is the area under this graph from $Q = 0$ to $Q = Q_0$. This area is a triangle with base $Q_0$ and height $V_0 = Q_0/C$:
@@ -295,14 +272,10 @@ Prove that the energy stored in a capacitor is $E = \frac{1}{2}QV$ by considerin
 $E = \frac{1}{2} \times Q_0 \times V_0 = \frac{1}{2}QV$.
 
 <b>If you get this wrong, revise:</b> [Energy Stored in a Capacitor](#3-energy-stored-in-a-capacitor)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A parallel plate capacitor with plate area $0.010$ m$^2$ and separation $0.20$ mm is filled with a dielectric of $\varepsilon_r = 5.0$. Calculate the capacitance and the energy stored when charged to 200 V.
 
 **Answer.** $C = \frac{\varepsilon_0 \varepsilon_r A}{d} = \frac{8.85 \times 10^{-12} \times 5.0 \times 0.010}{0.20 \times 10^{-3}} = \frac{4.425 \times 10^{-13}}{2.0 \times 10^{-4}} = 2.21 \times 10^{-9}$ F $= 2.21$ nF.
@@ -310,27 +283,19 @@ A parallel plate capacitor with plate area $0.010$ m$^2$ and separation $0.20$ m
 $E = \frac{1}{2}CV^2 = \frac{1}{2} \times 2.21 \times 10^{-9} \times 40000 = 4.42 \times 10^{-5}$ J $= 44.2\,\mu$J.
 
 <b>If you get this wrong, revise:</b> [Parallel Plate Capacitor](#2-parallel-plate-capacitor)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 An uncharged $100\,\mu$F capacitor in series with a $500\,\text{k}\Omega$ resistor is connected to a 20 V supply. How long does it take for the capacitor to charge to 15 V?
 
 **Answer.** $15 = 20(1 - e^{-t/\tau})$. $0.75 = 1 - e^{-t/\tau}$. $e^{-t/\tau} = 0.25$. $-t/\tau = \ln 0.25 = -1.386$. $\tau = RC = 500 \times 10^3 \times 100 \times 10^{-6} = 50$ s. $t = 1.386 \times 50 = 69.3$ s.
 
 <b>If you get this wrong, revise:</b> [RC Circuits: Charging](#5-rc-circuits-charging)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A $47\,\mu$F capacitor charged to 24 V discharges through a $33\,\text{k}\Omega$ resistor. Calculate: (a) the initial energy stored, (b) the time constant, (c) the energy remaining after one time constant.
 
 **Answer.** (a) $E_0 = \frac{1}{2}CV^2 = \frac{1}{2} \times 47 \times 10^{-6} \times 576 = 1.354 \times 10^{-2}$ J $= 13.5$ mJ.
@@ -342,6 +307,4 @@ A $47\,\mu$F capacitor charged to 24 V discharges through a $33\,\text{k}\Omega$
 Alternatively: $E = \frac{1}{2}CV^2 = \frac{1}{2}C(V_0 e^{-1})^2 = E_0 e^{-2} = 13.5 \times 0.135 = 1.83$ mJ.
 
 <b>If you get this wrong, revise:</b> [The Time Constant](#7-the-time-constant)
-
-</p>
 </details>

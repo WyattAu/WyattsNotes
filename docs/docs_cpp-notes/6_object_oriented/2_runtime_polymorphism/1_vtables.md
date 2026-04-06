@@ -90,9 +90,11 @@ $$
 | **Slot**   | Each virtual function occupies a fixed index in the vtable  |
 | **Thunks** | Compiler-generated stubs that adjust `this` before dispatch |
 
-:::info ABI Note The Itanium C++ ABI (used by GCC and Clang on all platforms except Windows)
+:::info
+ABI Note The Itanium C++ ABI (used by GCC and Clang on all platforms except Windows)
 mandates that the vptr is at offset 0 within the object (before any data members). MSVC uses a
-similar but incompatible layout on Windows. :::
+similar but incompatible layout on Windows.
+:::
 
 ## 1.3 Vtable Layout: `sizeof` Demonstration
 
@@ -151,21 +153,21 @@ Typical output on a 64-bit platform (Itanium ABI, LP64):
 
 ```
 NonVirtual:        8 bytes
-EmptyVirtual:      16 bytes
-SingleInheritance: 24 bytes
-MultipleBases:     16 bytes
-DiamondDerived:    32 bytes
+EmptyVirtual:      8 bytes
+SingleInheritance: 16 bytes
+MultipleBases:     8 bytes
+DiamondDerived:    16 bytes
 ```
 
 Analysis:
 
 - `NonVirtual`: two `int` members = $2 \times 4 = 8$ bytes. No vptr.
-- `EmptyVirtual`: one vptr (8 bytes) + padding for alignment = 16 bytes. Even with no data members,
-  a polymorphic class pays the vptr cost.
+- `EmptyVirtual`: one vptr (8 bytes). Even with no data members, a polymorphic class pays the vptr
+  cost, but no additional padding is needed when alignment is already satisfied.
 - `SingleInheritance`: vptr (8) + `int z` (4) + padding (4) = 16 bytes. The derived class **reuses**
   the base's vptr — no additional vptr is added for single inheritance.
-- `MultipleBases`: one vptr = 16 bytes (with padding).
-- `DiamondDerived`: **two** vptrs (one per polymorphic base) + padding = 32 bytes. Each base class
+- `MultipleBases`: one vptr = 8 bytes.
+- `DiamondDerived`: **two** vptrs (one per polymorphic base) + padding = 16 bytes. Each base class
   subobject carries its own vptr.
 
 ## 1.4 Cost of Virtual Dispatch
@@ -245,10 +247,12 @@ int main() {
 }
 ```
 
-:::warning The actual performance difference depends heavily on compiler optimization levels, CPU
+:::warning
+The actual performance difference depends heavily on compiler optimization levels, CPU
 branch prediction accuracy, and whether the compiler can **devirtualize** the call (see
 [Devirtualization](./3_devirtualization.md)). With `-O2` or `-O3`, modern compilers may eliminate
-the virtual dispatch entirely if the dynamic type is provable. :::
+the virtual dispatch entirely if the dynamic type is provable.
+:::
 
 ## 1.5 The `final` Keyword
 
@@ -315,8 +319,10 @@ struct Wrong : Base {
 };
 ```
 
-:::tip Best Practice Always use `override` on every function intended to override a base-class
-virtual function. This eliminates an entire class of bugs caused by signature mismatches. :::
+:::tip
+Best Practice Always use `override` on every function intended to override a base-class
+virtual function. This eliminates an entire class of bugs caused by signature mismatches.
+:::
 
 ## 1.7 Virtual Dispatch During Construction and Destruction
 
@@ -378,10 +384,12 @@ The vptr transitions through three states during `Derived` object construction:
    `Derived::do_work`
 3. During `Derived` destruction: vptr is reset to `Base::vtable` → `do_work()` calls `Base::do_work`
 
-:::warning Calling a pure virtual function from a constructor or destructor is **undefined
+:::warning
+Calling a pure virtual function from a constructor or destructor is **undefined
 behavior** [N4950 §11.9.3]. The pure virtual function has no definition to dispatch to (or the
 definition is not called). Some implementations call the pure virtual handler and terminate the
-program. :::
+program.
+:::
 
 ## 1.8 NVI (Non-Virtual Interface) Pattern
 

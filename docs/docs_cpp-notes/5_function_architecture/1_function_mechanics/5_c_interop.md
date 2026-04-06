@@ -202,10 +202,12 @@ int main(void) {
 }
 ```
 
-:::warning The `reinterpret_cast` approach above works on platforms where C and C++ share the same
+:::warning
+The `reinterpret_cast` approach above works on platforms where C and C++ share the same
 ABI (pointer size, struct layout, calling convention). This is true for x86-64 Linux/macOS (both use
 the System V ABI). On platforms with divergent C/C++ ABIs, use `void*` handles and pass data through
-C-compatible types only. :::
+C-compatible types only.
+:::
 
 ## 5.4 ABI Boundaries: Name Mangling and Layout
 
@@ -375,9 +377,11 @@ int main() {
 }
 ```
 
-:::warning The `RTLD_NOW` flag resolves all symbols at load time, surfacing missing symbol errors
+:::warning
+The `RTLD_NOW` flag resolves all symbols at load time, surfacing missing symbol errors
 immediately. `RTLD_LAZY` defers resolution to first use, which can mask errors and cause crashes at
-unpredictable points. For plugin loading, prefer `RTLD_NOW`. :::
+unpredictable points. For plugin loading, prefer `RTLD_NOW`.
+:::
 
 ## 5.7 Common Pitfalls at Language Boundaries
 

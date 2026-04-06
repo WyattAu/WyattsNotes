@@ -51,7 +51,8 @@ hash("hello")      # varies per interpreter session
 hash(("a", "b"))   # depends on hash("a") ^ hash("b") with rotation
 ```
 
-:::info CPython randomizes hash seeds for `str`, `bytes`, and `datetime` objects at interpreter
+:::info
+CPython randomizes hash seeds for `str`, `bytes`, and `datetime` objects at interpreter
 startup. This is a security measure against hash DoS attacks. Set `PYTHONHASHSEED=0` to disable.
 :::
 
@@ -135,7 +136,8 @@ Since Python 3.7, regular `dict` also preserves insertion order. The differences
 | Equality checks order     | No (Python 3.7+) | Yes           |
 | Reversible                | Yes (3.8+)       | Yes           |
 
-:::warning `OrderedDict` equality is **order-sensitive**:
+:::warning
+`OrderedDict` equality is **order-sensitive**:
 `OrderedDict([(1,2),(3,4)]) != OrderedDict([(3,4),(1,2)])`. Regular `dict` equality in Python 3.7+
 is also order-sensitive during comparison, but the `==` operator on regular dicts does not consider
 order.
@@ -215,7 +217,8 @@ tree["servers"]["db1"]["port"] = 5432
 print(tree["servers"]["web1"]["ip"])  # 10.0.0.1
 ```
 
-:::warning `nested_dict()` above creates an infinite recursion if you try to convert it to a regular
+:::warning
+`nested_dict()` above creates an infinite recursion if you try to convert it to a regular
 `dict` naively. Use a recursive conversion function:
 
 ```python
@@ -320,7 +323,8 @@ c.subtract(["a", "b"])  # Subtract counts (allows negatives)
 print(c)  # Counter({'a': 4, 'c': 3, 'b': 0})
 ```
 
-:::info `Counter` does not raise `KeyError` for missing keys — it returns 0. This is implemented via
+:::info
+`Counter` does not raise `KeyError` for missing keys — it returns 0. This is implemented via
 `__missing__`:
 
 ```python
@@ -370,7 +374,8 @@ print(config["timeout"])  # 30
 ChainMap is ideal for layered configuration systems: defaults, environment variables, CLI args, and
 per-request overrides.
 
-:::warning Writes to a ChainMap affect **only the first mapping**. If you need to modify a specific
+:::warning
+Writes to a ChainMap affect **only the first mapping**. If you need to modify a specific
 layer, access it via `config.maps[0]`, `config.maps[1]`, etc.
 :::
 
@@ -520,7 +525,8 @@ d["port"] = 8080          # Setting 'port' = 8080
 del d["port"]             # Deleting 'port'
 ```
 
-:::warning Prefer `UserDict` over subclassing `dict` directly. When you subclass `dict`, some
+:::warning
+Prefer `UserDict` over subclassing `dict` directly. When you subclass `dict`, some
 C-level methods bypass your Python-level overrides. `UserDict` stores data in an internal `dict`
 attribute (`self.data`), so all access goes through your Python methods.
 :::
@@ -647,7 +653,8 @@ print([e[1] for e in events])
 # ['deploy v1', 'hotfix', 'deploy v2', 'incident']
 ```
 
-:::tip `bisect` operations are O(log n) for search and O(n) for insertion (because the list must
+:::tip
+`bisect` operations are O(log n) for search and O(n) for insertion (because the list must
 shift elements). For frequent insertions, consider `heapq` or a balanced tree structure.
 :::
 
@@ -736,7 +743,8 @@ print(pq.pop())  # normal task
 print(pq.pop())  # low priority task
 ```
 
-:::warning Never store mutable objects directly in a heap and then modify them externally — the heap
+:::warning
+Never store mutable objects directly in a heap and then modify them externally — the heap
 invariant may be violated. Either use immutable data or call `heapq.heapify()` after modifications.
 :::
 

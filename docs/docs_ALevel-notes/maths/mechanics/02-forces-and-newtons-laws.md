@@ -18,8 +18,10 @@ slug: forces-and-newtons-laws
 | OCR (A)    | Paper 1 | Includes inclined planes                              |
 | CIE (9709) | P1, P4  | Forces in P1; connected bodies, inclined planes in P4 |
 
-:::info Always draw a clear free body diagram before writing any equations. The quality of your
-diagram determines the quality of your solution. :::
+:::info
+Always draw a clear free body diagram before writing any equations. The quality of your
+diagram determines the quality of your solution.
+:::
 
 ---
 
@@ -50,9 +52,11 @@ A.
 **Implication.** Forces always come in pairs: action and reaction. They act on **different** bodies
 and are the same type of force.
 
-:::warning Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
+:::warning
+Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
 normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
-pair of the weight is the gravitational pull of the book on the Earth. :::
+pair of the weight is the gravitational pull of the book on the Earth.
+:::
 
 ---
 
@@ -127,8 +131,10 @@ $$F_{\max} = \mu R$$
 
 In A Level, we usually assume $\mu_s = \mu_k = \mu$.
 
-:::warning The friction force is not always $\mu R$. It adjusts to match the applied force up to the
-maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide. :::
+:::warning
+The friction force is not always $\mu R$. It adjusts to match the applied force up to the
+maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
+:::
 
 ### 4.3 Angle of friction
 

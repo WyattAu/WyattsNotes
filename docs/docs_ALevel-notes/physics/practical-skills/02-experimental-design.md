@@ -11,7 +11,9 @@ slug: experimental-design
 
 ## Experimental Design
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
+:::
 
 ## 1. Key Principles of Experimental Design
 
@@ -54,8 +56,10 @@ independent variable.
 | Control     | Immersion depth    | Thermistor fully submerged at fixed depth |
 | Control     | Heating rate       | Heat slowly, allow thermal equilibrium    |
 
-:::warning Common Pitfall Students often confuse the independent and dependent variables. A reliable
-mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable." :::
+:::warning
+Common Pitfall Students often confuse the independent and dependent variables. A reliable
+mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable."
+:::
 
 ### Control Variables in Depth
 
@@ -74,8 +78,10 @@ to the independent variable or the uncontrolled factor.
 4. **Monitoring and recording** — if a variable cannot be perfectly controlled, at least measure it
    so its effect can be assessed
 
-:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
-Paper 5 Q1 (Planning) :::
+:::info
+Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
+Paper 5 Q1 (Planning)
+:::
 
 - **AQA** and **Edexcel** tend to ask students to identify variables from a given method. Practice
   reading a method description and extracting all three types.
@@ -160,7 +166,9 @@ Validity has two aspects that examiners distinguish:
    conditions? For example, results obtained with a 1 mm copper wire may not apply to a 5 mm
    aluminium wire.
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
+:::
 
 - **AQA** emphasises the distinction between validity and reliability in 6-mark practical questions.
 - **Edexcel** Core Practicals require students to comment on the validity of their conclusions.
@@ -192,7 +200,8 @@ include:
 
 $$\boxed{\text{True value} = \text{measured value} \pm \text{uncertainty}}$$
 
-:::warning Common Pitfall Do not confuse these three terms. An experiment can be reliable
+:::warning
+Common Pitfall Do not confuse these three terms. An experiment can be reliable
 (consistent) but invalid (measuring the wrong thing), or valid but inaccurate (systematic error).
 :::
 
@@ -254,7 +263,9 @@ is critical:
 - **Number of repeats:** At least 3 repeats at each value. If time allows, more repeats improve the
   reliability of the mean.
 
-:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
+:::
 
 - **AQA** often provides a method and asks students to identify improvements — focus on range,
   intervals, and repeats.
@@ -354,7 +365,9 @@ When asked to write a risk assessment, structure your answer as follows:
 3. **Describe the control measure** — "Use a low-voltage (e.g., 12 V) power supply instead of mains,
    and ensure all connections are insulated."
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5
+:::
 
 - **AQA** requires a risk assessment as part of the 12 required practicals. Risk assessments are
   assessed in written papers.
@@ -367,9 +380,11 @@ When asked to write a risk assessment, structure your answer as follows:
 
 :::
 
-:::warning Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
+:::warning
+Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
 hazards exist. Examiners award marks for identifying the _most significant_ hazards and providing
-specific, practical control measures. "Be careful" is never an acceptable control measure. :::
+specific, practical control measures. "Be careful" is never an acceptable control measure.
+:::
 
 ## 5. Evaluating Experiments
 
@@ -446,7 +461,9 @@ When a graph is plotted, check:
 - Plot $\lambda$ vs $1/f$; gradient $= v$ (wave speed)
 - Largest uncertainty: measuring wavelength from a frozen ripple pattern
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5
+:::
 
 - **AQA** Required Practical 5 uses a falling object to determine `g`; Required Practical 8 uses a
   potentiometer or voltmeter/ammeter method for internal resistance.
@@ -459,16 +476,16 @@ When a graph is plotted, check:
 
 :::
 
-:::tip Exam Technique When asked "how could you improve this experiment?", always be specific.
+:::tip
+Exam Technique When asked "how could you improve this experiment?", always be specific.
 Instead of "use a more accurate instrument", say "use a micrometer instead of a ruler to measure the
-wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm." :::
+wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm."
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Design an experiment to determine the resistivity of a metal wire. Identify the independent,
 dependent, and control variables.
 
@@ -486,14 +503,10 @@ Measure diameter at multiple positions.
 
 <b>If you get this wrong, revise:</b>
 [Key Principles of Experimental Design](#1-key-principles-of-experimental-design)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 In an experiment to determine $g$ using a simple pendulum, a student measures the time for 20
 oscillations. Explain why this improves the reliability compared to timing a single oscillation.
 
@@ -504,14 +517,10 @@ $\sim 0.2$ s (at the start and end), giving a percentage uncertainty of $\sim 0.
 period uncertainty is reduced by a factor of 20.
 
 <b>If you get this wrong, revise:</b> [Improving Precision](#improving-precision)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 Identify the independent, dependent, and control variables in an experiment to investigate how the
 resistance of a thermistor varies with temperature.
 
@@ -521,14 +530,10 @@ immersion depth, heating rate, method of measurement.
 
 <b>If you get this wrong, revise:</b>
 [Independent, Dependent, and Control Variables](#independent-dependent-and-control-variables)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A student measures the diameter of a wire using a ruler and obtains 1.0 mm. The actual diameter is
 1.02 mm. Explain the systematic error and suggest a better instrument.
 
@@ -537,14 +542,10 @@ $\sim 1$ mm. The reading of 1.0 mm is an approximation. A **micrometer** (resolu
 should be used, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm.
 
 <b>If you get this wrong, revise:</b> [Measuring Instruments](#measuring-instruments)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A student obtains data points that do not lie on a straight line when plotting $T^2$ against $L$ for
 a pendulum. Suggest three possible reasons and how to investigate each.
 
@@ -555,14 +556,10 @@ string. (3) **Air resistance**: damping affects the period at large amplitudes. 
 denser bob to minimise air resistance effects.
 
 <b>If you get this wrong, revise:</b> [Evaluating Experiments](#4-evaluating-experiments)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Explain the difference between reliability and validity in the context of an experiment to determine
 the speed of sound in air using echo timing.
 
@@ -575,14 +572,10 @@ speed of sound depends on temperature).
 
 <b>If you get this wrong, revise:</b>
 [Reliability, Validity, and Accuracy](#reliability-validity-and-accuracy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A student investigates how the resistance of a length of constantan wire changes with temperature.
 The wire is heated in a water bath and its resistance is measured at regular temperature intervals.
 The student's data shows that the resistance increases linearly with temperature, but the gradient
@@ -599,14 +592,10 @@ allow sufficient time for thermal equilibrium before each reading, and stir the 
 continuously.
 
 <b>If you get this wrong, revise:</b> [Accuracy in Depth](#accuracy-in-depth)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Write a risk assessment for an experiment using a Class 2 laser to investigate single-slit
 diffraction. The laser is directed at a slit, and the diffraction pattern is observed on a screen
 1.5 m away.
@@ -619,14 +608,10 @@ diffraction. The laser is directed at a slit, and the diffraction pattern is obs
 | Electrical equipment | Experimenter         | Low        | Check mains connections are insulated; keep liquids away from the laser power supply                                                                                          |
 
 <b>If you get this wrong, revise:</b> [Risk Assessment](#4-risk-assessment)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 A student determines the internal resistance of a battery by plotting a graph of terminal potential
 difference $V$ against current $I$. The equation relating these quantities is
 $V = \mathcal{E} - Ir$, where $\mathcal{E}$ is the emf and $r$ is the internal resistance. The
@@ -643,14 +628,10 @@ change $r$ during the experiment), and take readings quickly to minimise changes
 internal state.
 
 <b>If you get this wrong, revise:</b> [Evaluating Graphs](#evaluating-graphs)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 Design an experiment to determine the Young modulus of a copper wire. In your answer, identify all
 variables, describe the method, and explain how you would ensure the experiment is both reliable and
 valid.
@@ -685,14 +666,10 @@ the wire obeys Hooke's law throughout the range used.
 
 <b>If you get this wrong, revise:</b>
 [Worked Example: Planning an Experiment to Determine `g`](#worked-example-planning-an-experiment-to-determine-g)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 In an experiment to determine the speed of sound in air, a student claps once and measures the time
 for the echo to return from a wall 50 m away. The student repeats the measurement 5 times and
 obtains the following times: 0.294 s, 0.301 s, 0.288 s, 0.310 s, 0.295 s. The accepted speed of
@@ -719,6 +696,4 @@ value $= (343 - 336) / 343 \times 100 = 2.0\%$.
 eliminate human reaction time entirely.
 
 <b>If you get this wrong, revise:</b> [Reliability in Depth](#reliability-in-depth)
-
-</p>
 </details>

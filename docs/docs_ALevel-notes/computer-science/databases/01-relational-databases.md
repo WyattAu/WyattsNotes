@@ -250,7 +250,8 @@ it).
 | 3NF  | 2NF + no transitive dependencies                | Transitive dependencies |
 | BCNF | 3NF + every determinant is a candidate key      | Remaining anomalies     |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires SQL (SELECT, INSERT, UPDATE, DELETE, JOIN, GROUP BY), normalisation to 3NF, and
   entity-relationship diagrams
@@ -258,7 +259,8 @@ it).
   least 3NF
 - **OCR (A)** requires SQL, normalisation to BCNF (Boyce-Codd Normal Form — more advanced than other
   boards), and ER diagrams
-- **Edexcel** covers SQL fundamentals and basic normalisation :::
+- **Edexcel** covers SQL fundamentals and basic normalisation
+:::
 
 ---
 

@@ -11,7 +11,9 @@ slug: magnetic-fields
 
 ## Magnetic Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 **Definition.** A magnetic field is a region of space where a magnetic force acts on moving charges
 or magnetic materials.
@@ -94,16 +96,12 @@ $$E_k = \frac{1}{2}mv^2 = \frac{1}{2}m\left(\frac{Bqr}{m}\right)^2 = \frac{B^2q^
 
 <details>
 <summary>Example: Proton in a Magnetic Field</summary>
-<p>
-
 A proton ($m = 1.67 \times 10^{-27}$ kg) moves at $3.0 \times 10^6$ m s$^{-1}$ perpendicular to a
 magnetic field of 0.50 T. Find the radius of its circular path.
 
 **Answer.**
 $r = \frac{mv}{Bq} = \frac{1.67 \times 10^{-27} \times 3.0 \times 10^6}{0.50 \times 1.60 \times 10^{-19}} = \frac{5.01 \times 10^{-21}}{8.0 \times 10^{-20}} = 0.0626$
 m $= 6.26$ cm.
-
-</p>
 </details>
 
 ## 3. Velocity Selector
@@ -190,16 +188,16 @@ $$\boxed{\mathcal{E} = \mathcal{E}_0\sin(\omega t)}$$
 
 where the peak e.m.f. is $\mathcal{E}_0 = NBA\omega$.
 
-:::tip Exam Technique When asked about Lenz's law, always describe what the induced current does
+:::tip
+Exam Technique When asked about Lenz's law, always describe what the induced current does
 (creates a field to oppose the change) and identify the direction of the induced current using the
-right-hand grip rule. :::
+right-hand grip rule.
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A wire of length 0.30 m carries a current of 5.0 A at $30°$ to a magnetic field of 0.40 T. Calculate
 the force on the wire.
 
@@ -209,14 +207,10 @@ N.
 
 <b>If you get this wrong, revise:</b>
 [Magnetic Force on a Current-Carrying Wire](#1-magnetic-force-on-a-current-carrying-wire)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 An electron moves at $2.0 \times 10^6$ m s$^{-1}$ perpendicular to a magnetic field of 0.80 T.
 Calculate the radius of its circular path.
 
@@ -226,28 +220,20 @@ m $= 14.2\,\mu$m.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A velocity selector has $E = 6.0 \times 10^5$ V m$^{-1}$ and $B = 0.20$ T. Calculate the velocity of
 particles that pass through undeflected.
 
 **Answer.** $v = E/B = 6.0 \times 10^5 / 0.20 = 3.0 \times 10^6$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Velocity Selector](#3-velocity-selector)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A coil of 200 turns, each of area $0.010$ m$^2$, is placed in a magnetic field that decreases
 uniformly from 0.50 T to 0.10 T in 0.05 s. Calculate the average induced e.m.f.
 
@@ -255,14 +241,10 @@ uniformly from 0.50 T to 0.10 T in 0.05 s. Calculate the average induced e.m.f.
 $d(N\Phi)/dt = 200 \times 0.004 / 0.05 = 16$ V. $\mathcal{E} = 16$ V.
 
 <b>If you get this wrong, revise:</b> [Faraday's Law](#4-faradays-law-of-electromagnetic-induction)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A proton and an alpha particle enter a magnetic field with the same velocity. The alpha particle has
 twice the charge and four times the mass of the proton. Compare the radii of their circular paths.
 
@@ -272,28 +254,20 @@ twice the radius.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A straight rod of length 0.50 m moves at 8.0 m s$^{-1}$ perpendicular to a magnetic field of 0.60 T.
 Calculate the motional e.m.f. induced.
 
 **Answer.** $\mathcal{E} = Blv = 0.60 \times 0.50 \times 8.0 = 2.4$ V.
 
 <b>If you get this wrong, revise:</b> [Motional e.m.f.](#motional-emf)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A rectangular coil of 100 turns, dimensions 0.10 m $\times$ 0.05 m, rotates at 3000 rpm in a 0.20 T
 magnetic field. Calculate the peak e.m.f.
 
@@ -303,14 +277,10 @@ $\mathcal{E}_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
 
 <b>If you get this wrong, revise:</b>
 [The Alternating Current Generator](#5-the-alternating-current-generator)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 State Lenz's law and explain how it relates to conservation of energy.
 
 **Answer.** Lenz's law states that the direction of the induced current is such that it opposes the
@@ -320,14 +290,10 @@ opposition means work must be done against the induced effects, and this work ap
 energy in the circuit.
 
 <b>If you get this wrong, revise:</b> [Lenz's Law](#lenzs-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 An electron moves in a circle of radius 2.0 cm in a magnetic field of 0.30 T. Calculate its speed
 and kinetic energy.
 
@@ -340,14 +306,10 @@ J.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A magnet is pushed into a coil of 50 turns, and the magnetic flux through each turn increases by
 $4.0 \times 10^{-3}$ Wb in 0.10 s. Calculate the average induced e.m.f. and explain which end of the
 coil acts as a north pole.
@@ -360,8 +322,6 @@ flows anticlockwise when viewed from the magnet's side.
 
 <b>If you get this wrong, revise:</b> [Faraday's Law](#4-faradays-law-of-electromagnetic-induction)
 and [Lenz's Law](#lenzs-law)
-
-</p>
 </details>
 
 :::

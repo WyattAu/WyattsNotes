@@ -27,10 +27,8 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
 - Coin flip, occurrence of heads and tails are mutually exclusive.
 - Number of boys or girls in a class, the number of boys in a finite total determine the number of girls in a class.
-</p>
 </details>
 
 ## Independent
@@ -46,7 +44,5 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
-- The probability of a asteroid colliding with Mars would not be affected by the occurrence of the national lottery, therefore these are independent events. 
-</p>
+- The probability of a asteroid colliding with Mars would not be affected by the occurrence of the national lottery, therefore these are independent events.
 </details>

@@ -18,8 +18,10 @@ slug: moments
 | OCR (A)    | Paper 1 | Includes non-uniform bodies   |
 | CIE (9709) | P4      | Moments and equilibrium       |
 
-:::info The principle of moments is fundamental. Always state clearly the point about which you are
-taking moments, and include the direction (clockwise/anticlockwise) of each moment. :::
+:::info
+The principle of moments is fundamental. Always state clearly the point about which you are
+taking moments, and include the direction (clockwise/anticlockwise) of each moment.
+:::
 
 ---
 
@@ -97,9 +99,11 @@ $R_{\text{left}} = W + P - R_{\text{right}} = \dfrac{W}{2} + \dfrac{P(L-a)}{L}$.
 Notice that as the vehicle moves right ($a$ increases), $R_{\text{right}}$ increases and
 $R_{\text{left}}$ decreases — the bridge load redistributes continuously.
 
-:::warning The principle of moments applies about **any** point — not just the pivot. Choosing a
+:::warning
+The principle of moments applies about **any** point — not just the pivot. Choosing a
 clever point (often where an unknown force acts) can simplify calculations by eliminating that
-unknown from the moment equation. :::
+unknown from the moment equation.
+:::
 
 ---
 
@@ -160,8 +164,10 @@ $$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$$
 The direction of $\boldsymbol{\tau}$ is given by the right-hand rule and is perpendicular to the
 plane containing $\mathbf{r}$ and $\mathbf{F}$.
 
-:::info In A Level Maths, we work in 2D, so torque is effectively a signed scalar. Clockwise and
-anticlockwise are the only two directions you need to consider. :::
+:::info
+In A Level Maths, we work in 2D, so torque is effectively a signed scalar. Clockwise and
+anticlockwise are the only two directions you need to consider.
+:::
 
 ### 3.1.5 Equilibrium of couples
 
@@ -211,9 +217,11 @@ $$R_w = \frac{W}{2}\cot\theta, \qquad F = R_w, \qquad \mu_{\min} = \frac{R_w}{R_
 The minimum coefficient of friction depends only on the angle $\theta$. As the ladder becomes
 steeper ($\theta$ increases), $\cot\theta$ decreases and less friction is needed.
 
-:::warning If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
+:::warning
+If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
 the wall. This changes the vertical equilibrium to $R_g + F_w = W$ and adds complexity to the moment
-equation. Always read the question carefully to determine whether the wall is smooth or rough. :::
+equation. Always read the question carefully to determine whether the wall is smooth or rough.
+:::
 
 ### 3.2.4 Ladder with a person on it
 
@@ -285,9 +293,11 @@ To find the forces in the members of a framework:
 
 If you assume a rod is in tension and get a negative answer, the rod is in compression.
 
-:::info Framework problems are common in the mechanics section of the A Level exam. The key skill is
+:::info
+Framework problems are common in the mechanics section of the A Level exam. The key skill is
 choosing the right joint to start with — look for joints where you have at most two unknown forces,
-since you can only write two equilibrium equations per joint. :::
+since you can only write two equilibrium equations per joint.
+:::
 
 ---
 
@@ -416,9 +426,11 @@ $P = \dfrac{150}{1.2} = 125\,\text{N}$.
 
 Since $125 \lt 200$, the block **topples first** at $P = 125\,\text{N}$.
 
-:::info A useful rule of thumb: if $\dfrac{h}{d} > \dfrac{1}{\mu}$, the body topples before it
+:::info
+A useful rule of thumb: if $\dfrac{h}{d} > \dfrac{1}{\mu}$, the body topples before it
 slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$, toppling occurs
-first, which matches our calculation. :::
+first, which matches our calculation.
+:::
 
 ---
 

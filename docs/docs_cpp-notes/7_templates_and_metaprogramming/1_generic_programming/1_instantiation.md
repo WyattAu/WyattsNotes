@@ -100,10 +100,12 @@ int main() {
 }
 ```
 
-:::warning A non-dependent call like `g(42)` inside a template is bound at definition time [N4950
+:::warning
+A non-dependent call like `g(42)` inside a template is bound at definition time [N4950
 §13.8.3]. If a better overload of `g` is declared _after_ the template definition, it will **not**
 be found. This is the single most surprising aspect of two-phase lookup and a frequent source of
-bugs. :::
+bugs.
+:::
 
 ## Code Bloat from Implicit Instantiation
 
@@ -406,9 +408,11 @@ int main() {
 }
 ```
 
-:::warning `__attribute__((always_inline))` overrides the compiler's inlining heuristics. Use it
+:::warning
+`__attribute__((always_inline))` overrides the compiler's inlining heuristics. Use it
 only when profiling confirms the overhead, typically for tiny leaf functions in hot loops. Overusing
-it increases code size and can degrade instruction cache performance. :::
+it increases code size and can degrade instruction cache performance.
+:::
 
 ## Common Pitfalls
 

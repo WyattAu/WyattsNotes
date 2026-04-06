@@ -36,8 +36,8 @@ are:
 1. **Exception safety:** `make_unique` performs a single allocation. Expressions like
    `f(unique_ptr<T>(new T), may_throw())` can leak if evaluation order causes `new T` to succeed but
    `may_throw()` throws before the `unique_ptr` is constructed.
-2. **No裸 `new` exposure:** The `new` expression is hidden inside the factory, preventing accidental
-   raw pointer use.
+2. **No raw `new` exposure:** The `new` expression is hidden inside the factory, preventing
+   accidental raw pointer use.
 
 ```cpp
 #include <memory>
@@ -83,9 +83,11 @@ void transfer_demo() {
 }
 ```
 
-:::info Relevance Move-only semantics are the foundation of C++ ownership discipline. If a function
+:::info
+Relevance Move-only semantics are the foundation of C++ ownership discipline. If a function
 takes a `unique_ptr` by value, the caller **must** explicitly transfer ownership with `std::move`.
-This makes the ownership transfer visible at the call site. :::
+This makes the ownership transfer visible at the call site.
+:::
 
 ## 2.4 Custom Deleters
 
@@ -152,8 +154,10 @@ void array_demo() {
 }
 ```
 
-:::warning `std::make_unique` with arrays initializes elements to value-initialization (zero for
-built-in types). If you need non-zero initialization, use `std::vector` or construct manually. :::
+:::warning
+`std::make_unique` with arrays initializes elements to value-initialization (zero for
+built-in types). If you need non-zero initialization, use `std::vector` or construct manually.
+:::
 
 ## 2.6 `unique_ptr` with Polymorphism
 
@@ -213,9 +217,11 @@ int main() {
 }
 ```
 
-:::warning If the base class lacks a virtual destructor, `delete base_ptr` where `base_ptr` actually
+:::warning
+If the base class lacks a virtual destructor, `delete base_ptr` where `base_ptr` actually
 points to a derived object is undefined behavior [N4950 §11.7.3]. The derived destructor does not
-run, leaking resources. Always use `virtual ~Base() = default;` in polymorphic base classes. :::
+run, leaking resources. Always use `virtual ~Base() = default;` in polymorphic base classes.
+:::
 
 ## 2.7 `unique_ptr` as a Class Member
 
@@ -349,9 +355,11 @@ int main() {
 }
 ```
 
-:::info `std::vector<std::unique_ptr<T>>` provides stable pointers and references to elements (no
+:::info
+`std::vector<std::unique_ptr<T>>` provides stable pointers and references to elements (no
 iterator invalidation on push_back amortized, only on reallocation). This makes it safe to hold raw
-pointers to elements as long as no insertion triggers a reallocation. :::
+pointers to elements as long as no insertion triggers a reallocation.
+:::
 
 ## 2.9 `unique_ptr` and Incomplete Types (Pimpl Idiom)
 
@@ -437,10 +445,12 @@ int main() {
 }
 ```
 
-:::warning If you write `~Widget() = default;` in the header (where `Impl` is incomplete), the
+:::warning
+If you write `~Widget() = default;` in the header (where `Impl` is incomplete), the
 compiler generates the destructor body at each call site. The `delete impl_` call requires `Impl` to
 be complete. This causes a compilation error. Always declare `~Widget();` in the header and define
-it (as `= default` or manually) in the `.cpp` file. :::
+it (as `= default` or manually) in the `.cpp` file.
+:::
 
 ## 2.10 `sizeof(unique_ptr)` Comparison Across Types
 
@@ -577,9 +587,11 @@ int main() {
 }
 ```
 
-:::warning `release()` does not delete the managed object. It returns the raw pointer and sets the
+:::warning
+`release()` does not delete the managed object. It returns the raw pointer and sets the
 `unique_ptr` to null. The caller assumes responsibility for cleanup. Use `release()` only when you
-are transferring ownership to another mechanism (e.g., a C API that takes ownership). :::
+are transferring ownership to another mechanism (e.g., a C API that takes ownership).
+:::
 
 ## Common Pitfalls
 

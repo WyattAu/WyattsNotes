@@ -324,10 +324,12 @@ end immediately; the CRT must unwind the environment.
 5. **OS Exit:** The CRT invokes the `exit` syscall (Linux) or `ExitProcess` API (Windows), returning
    control to the kernel.
 
-:::warning `std::terminate` vs `std::exit` If an exception escapes `main`, or an unjoinable
+:::warning
+`std::terminate` vs `std::exit` If an exception escapes `main`, or an unjoinable
 `std::thread` is destroyed, the CRT calls `std::terminate`. This calls `std::abort`, which kills the
 process **without** running static destructors or file buffer flushing. This often results in
-truncated logs or corrupted data files. :::
+truncated logs or corrupted data files.
+:::
 
 ## CRT Linkage Modes (Windows Specific)
 
@@ -427,9 +429,11 @@ analogous to how `atexit` works for the main thread. If the main thread accesses
 destructors run during the normal termination sequence. On Windows, the mechanism is `DllMain` with
 `DLL_THREAD_DETACH`.
 
-:::warning Dynamic TLS has a significant first-access penalty (guard variable check, potential
+:::warning
+Dynamic TLS has a significant first-access penalty (guard variable check, potential
 initialization, destructor registration). On hot paths, prefer static TLS (constant initialization)
-or pass data explicitly via function parameters. :::
+or pass data explicitly via function parameters.
+:::
 
 ## DSO Constructor and Destructor Ordering
 
@@ -453,9 +457,11 @@ another DSO — if the DSO ordering is wrong, the dependency may not yet be cons
 "construct on first use" pattern (magic statics) mitigates this by deferring initialization to first
 access rather than load time.
 
-:::warning `LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
+:::warning
+`LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
 library's constructors still run in dependency order relative to other DSOs. If the preloaded
-library depends on symbols from the main executable, those symbols may not yet be initialized. :::
+library depends on symbols from the main executable, those symbols may not yet be initialized.
+:::
 
 ## See Also
 

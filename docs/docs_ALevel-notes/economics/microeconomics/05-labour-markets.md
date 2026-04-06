@@ -218,10 +218,12 @@ However, the gig economy also reduces monopsony power in some respects: lower ba
 increase labour supply elasticity, and platforms enable workers to switch between employers more
 easily than in traditional company-town settings.
 
-:::info Board-Specific Note CIE (9708) may ask students to assess whether gig economy workers are
+:::info
+Board-Specific Note CIE (9708) may ask students to assess whether gig economy workers are
 employees or self-employed, and the implications for labour market regulation. AQA has examined the
 gig economy in the context of labour market flexibility. Edexcel often links the gig economy to
-wider debates about competition and regulation. :::
+wider debates about competition and regulation.
+:::
 
 ### 4.7 Evaluation of Monopsony Theory
 
@@ -325,10 +327,12 @@ The net effect of trade unions on economic welfare is ambiguous and context-depe
   disrupt supply chains).
 - In competitive labour markets, wage increases above equilibrium unambiguously reduce employment.
 
-:::info Board-Specific Note AQA frequently asks students to evaluate whether trade unions are a
+:::info
+Board-Specific Note AQA frequently asks students to evaluate whether trade unions are a
 force for good or harm in the labour market — both sides must be discussed for full marks. Edexcel
 (Theme 3) links trade unions to broader debates about government intervention. OCR may ask about the
-impact of declining union membership on wage inequality. :::
+impact of declining union membership on wage inequality.
+:::
 
 ## 6. Minimum Wage
 
@@ -355,10 +359,12 @@ and $w_{min} > w_m = MCL(L_m) = MRP_L(L_m)$). $\blacksquare$
 The optimal minimum wage under monopsony is $w_c$ (the competitive wage), which achieves the
 competitive outcome: $L = L_c$, $w = w_c$.
 
-:::warning Common Pitfall The statement "minimum wages always cause unemployment" is only true in
+:::warning
+Common Pitfall The statement "minimum wages always cause unemployment" is only true in
 perfectly competitive labour markets. Under monopsony (e.g., large employers in small towns, certain
 professional sports leagues), a minimum wage can increase employment. Always state the market
-structure. :::
+structure.
+:::
 
 ### 6.3 Real-World Evidence on Minimum Wages
 
@@ -405,10 +411,12 @@ same pay).
 5. **Discrimination**: Taste-based and statistical discrimination (see Section 8) continue to play a
    role, though their magnitude is debated.
 
-:::info Board-Specific Note AQA and Edexcel both expect students to distinguish between the gender
+:::info
+Board-Specific Note AQA and Edexcel both expect students to distinguish between the gender
 pay gap (an average difference across the economy) and equal pay (a legal requirement for identical
 work). OCR (A) may link the gender pay gap to human capital theory and occupational segregation. CIE
-has examined the effectiveness of government policies to reduce the gender pay gap. :::
+has examined the effectiveness of government policies to reduce the gender pay gap.
+:::
 
 ### 6.5 Evaluation of Minimum Wage Policy
 
@@ -507,11 +515,13 @@ significant limitations:
   not all graduate-level jobs require degree-level skills. This creates **underemployment** where
   graduates work in non-graduate roles, and their human capital is underutilised.
 
-:::info Board-Specific Note Edexcel (Theme 3) emphasises the role of education and training in
+:::info
+Board-Specific Note Edexcel (Theme 3) emphasises the role of education and training in
 improving labour market outcomes. AQA may ask students to evaluate whether increasing university
 participation is always economically beneficial. CIE (9708) links human capital to economic growth
 in macro contexts. OCR often examines the limitations of human capital theory in explaining
-persistent wage inequalities. :::
+persistent wage inequalities.
+:::
 
 ## 8. Labour Market Discrimination
 
@@ -576,11 +586,13 @@ In the UK, the ONS estimates that approximately two-thirds of the gender pay gap
 occupational segregation and working patterns, while roughly one-third remains "unexplained" and may
 reflect discrimination.
 
-:::info Board-Specific Note CIE (9708) may ask students to distinguish between the explained and
+:::info
+Board-Specific Note CIE (9708) may ask students to distinguish between the explained and
 unexplained portions of the gender pay gap. AQA expects evaluation of government policies such as
 the UK Gender Pay Gap Reporting Regulations (2017). Edexcel often links discrimination to government
 intervention policies. OCR may examine whether legislation alone is sufficient to eliminate
-discrimination. :::
+discrimination.
+:::
 
 ## 9. Critical Evaluation
 
@@ -602,10 +614,12 @@ discrimination. :::
   inequality
 - Non-wage factors (job satisfaction, work-life balance) are important but hard to quantify
 
-:::info Board-Specific Note AQA places significant emphasis on trade unions and the minimum wage
+:::info
+Board-Specific Note AQA places significant emphasis on trade unions and the minimum wage
 debate. Edexcel covers human capital and migration effects on labour markets. CIE (9708) often asks
 about wage determination in different market structures. OCR (A) emphasises labour market
-flexibility and government intervention. :::
+flexibility and government intervention.
+:::
 
 ## 10. Problem Set
 
@@ -615,9 +629,7 @@ workers are hired?
 
 <details>
 <summary>Hint</summary>
-<p>
 $MP_L = 20 - 2L$. $MRP_L = MP_L \times P = 10(20 - 2L) = 200 - 20L$. Set $MRP_L = w$: $200 - 20L = 60 \Rightarrow L = 7$. The labour demand curve is $w = 200 - 20L$, or $L = 10 - w/20$.
-</p>
 </details>
 
 **Problem 2.** A monopsonist faces labour supply $w = 20 + 2L$ and has $MRP_L = 120 - 4L$. Find the
@@ -626,9 +638,7 @@ loss.
 
 <details>
 <summary>Hint</summary>
-<p>
 $MCL = 20 + 4L$. Monopsony: $120 - 4L = 20 + 4L \Rightarrow 8L = 100 \Rightarrow L_m = 12.5$, $w_m = 45$. Competitive: $120 - 4L = 20 + 2L \Rightarrow 6L = 100 \Rightarrow L_c = 16.67$, $w_c = 53.33$. DWL $= \frac{1}{2}(w_c - w_m)(L_c - L_m) + \text{area above supply}$. More precisely: DWL $= \int_{12.5}^{16.67} [(120 - 4L) - (20 + 2L)] dL = \int_{12.5}^{16.67} [100 - 6L] dL = [100L - 3L^2]_{12.5}^{16.67} = 1667 - 833.7 - 1250 + 468.75 = 52.08$.
-</p>
 </details>
 
 **Problem 3.** Prove that a minimum wage set at the competitive wage in a monopsony labour market
@@ -636,9 +646,7 @@ eliminates the deadweight loss. What happens if the minimum wage is set above th
 
 <details>
 <summary>Hint</summary>
-<p>
 At $w_{min} = w_c$, the monopsonist faces $MCL = w_c$ for all $L \leq L_c$. They hire where $MRP_L = w_c$, which is exactly $L_c$ (the competitive employment level). DWL = 0. If $w_{min} > w_c$: the firm hires where $MRP_L = w_{min}$, giving $L < L_c$. Now there is unemployment ($S_L > D_L$) and a new DWL.
-</p>
 </details>
 
 **Problem 4.** A worker's utility function is $U(C, h) = C^{0.5}h^{0.5}$, where $C$ is consumption
@@ -647,9 +655,7 @@ individual labour supply function. Is it backward-bending?
 
 <details>
 <summary>Hint</summary>
-<p>
 Budget: $C = w(24 - h)$. MRS $= \frac{h}{C}$. Set MRS $= w$: $\frac{h}{w(24-h)} = w \Rightarrow h = w^2(24 - h) \Rightarrow h(1 + w^2) = 24w^2 \Rightarrow h = \frac{24w^2}{1+w^2}$. Labour supply: $L = 24 - h = \frac{24}{1+w^2}$. $\frac{dL}{dw} = \frac{-48w}{(1+w^2)^2} < 0$ for all $w > 0$. The supply curve is always backward-bending with this Cobb-Douglas specification.
-</p>
 </details>
 
 **Problem 5.** A university degree costs £40,000 (tuition + living costs, paid upfront) and takes 3
@@ -658,9 +664,7 @@ years. If the discount rate is 5%, calculate the NPV of the degree. Is it worth 
 
 <details>
 <summary>Hint</summary>
-<p>
 $NPV = \sum_{t=4}^{43} \frac{10{,}000}{(1.05)^t} - 40{,}000$. The PV of an annuity of £10,000 for 40 years at 5%, deferred 3 years: $PV = \frac{10{,}000}{0.05}\left(1 - \frac{1}{1.05^{40}}\right) \times \frac{1}{1.05^3} = 200{,}000 \times (1 - 0.1420) \times 0.8638 = 200{,}000 \times 0.8580 \times 0.8638 = £148{,}192$. $NPV = 148{,}192 - 40{,}000 = £108{,}192 > 0$. The degree is worth it.
-</p>
 </details>
 
 **Problem 6.** "Trade unions always reduce employment." Evaluate this statement with reference to
@@ -668,9 +672,7 @@ competitive and monopsonistic labour markets.
 
 <details>
 <summary>Hint</summary>
-<p>
 In competitive markets: unions that push wages above equilibrium create excess supply (unemployment). However, unions may also increase productivity (reduced turnover, better morale, collective voice) $\Rightarrow$ labour demand shifts right, potentially offsetting employment losses. In monopsony: unions can raise wages *and* employment by countering monopsony power (similar to a minimum wage). Empirical evidence is mixed and depends on the specific market context.
-</p>
 </details>
 
 **Problem 7.** Explain the difference between human capital theory and signalling theory of
@@ -678,9 +680,7 @@ education. What empirical evidence could distinguish between them?
 
 <details>
 <summary>Hint</summary>
-<p>
 Human capital: education increases productivity $\Rightarrow$ higher earnings. Signalling: education reveals pre-existing ability $\Rightarrow$ higher earnings without productivity gain. Distinguishing evidence: (1) Do earnings increase with *years* of education (supporting human capital) or with *completion of a credential* (supporting signalling)? (2) Do dropouts who are equally able as graduates earn less? (3) Does employer learning reduce the education premium over time (signalling effect diminishes as employers learn true productivity)?
-</p>
 </details>
 
 **Problem 8.** "A higher minimum wage will benefit all low-paid workers." Evaluate using both
@@ -688,9 +688,7 @@ competitive and monopsonistic models.
 
 <details>
 <summary>Hint</summary>
-<p>
 Competitive: workers who keep their jobs benefit from higher wages, but some workers lose their jobs (unemployment). The net effect on low-paid workers as a group depends on the elasticity of labour demand. Monopsony: if the minimum wage is set appropriately, all workers benefit (higher wage *and* higher employment). However, if set too high, it creates unemployment even under monopsony. Distributional effects matter: the benefit may not reach the most vulnerable workers.
-</p>
 </details>
 
 **Problem 9.** The UK introduced the National Living Wage (NLW) in 2016. Using labour market theory,
@@ -699,9 +697,7 @@ inequality, and (d) regional labour markets where wage levels differ.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Competitive model predicts job losses for low-skilled workers; monopsony model may predict employment gains. Empirical evidence (e.g., Low Pay Commission) suggests minimal employment effects. (b) Firms with high labour cost shares may raise prices or reduce profits. Some may invest in automation. (c) May reduce poverty for workers in employment but doesn't help the unemployed. May compress the wage distribution. (d) The NLW binds more in low-wage regions (North, Wales) than in high-wage regions (London, SE). Regional effects may differ.
-</p>
 </details>
 
 **Problem 10.** Explain why professional footballers and nurses may earn vastly different wages
@@ -710,9 +706,7 @@ non-pecuniary factors.
 
 <details>
 <summary>Hint</summary>
-<p>
 Footballers: very high MRP (generate millions in revenue through broadcasting, merchandise), very inelastic supply (few people have the required talent), no close substitutes. Nurses: moderate MRP (essential but revenue not directly captured by individual), relatively elastic supply (many qualified nurses), non-pecuniary benefits (job satisfaction, social value) may allow lower wages. The key insight: wages are determined by marginal revenue product, not social value or importance.
-</p>
 </details>
 
 **Problem 11.** An employer cannot observe worker ability before hiring. High-ability workers have
@@ -722,9 +716,7 @@ the deadweight loss?
 
 <details>
 <summary>Hint</summary>
-<p>
 Expected productivity $= 0.5 \times 50{,}000 + 0.5 \times 30{,}000 = £40{,}000$. If the employer offers £40,000, both types accept. But if the employer could distinguish, high-ability workers would be paid £50,000 and low-ability £30,000. High-ability workers lose £10,000 each (transfer, not DWL). DWL arises if high-ability workers are discouraged from applying (if the offered wage is below their reservation wage, or if they seek firms that can identify ability). This is analogous to Akerlof's lemons problem in reverse.
-</p>
 </details>
 
 **Problem 12.** Evaluate the impact of immigration on the domestic labour market. In your answer,
@@ -732,9 +724,7 @@ consider the effects on wages, employment, and the distinction between the short
 
 <details>
 <summary>Hint</summary>
-<p>
 Short run: increased labour supply shifts supply curve right $\Rightarrow$ wage falls, employment increases. The magnitude depends on the degree of substitutability between immigrant and domestic labour. If immigrants are complements (different skills), domestic wages may rise. Long run: immigrants increase aggregate demand (consume goods, pay taxes), which increases labour demand, potentially offsetting the initial wage effect. Empirical evidence (e.g., Dustmann et al. for the UK) generally finds small negative effects on wages of the most substitutable workers, but positive or neutral effects on average wages.
-</p>
 </details>
 
 **Problem 13.** A monopsonist faces labour supply $w = 10 + L$ and has $MRP_L = 80 - 2L$. The
@@ -744,9 +734,7 @@ total wage payments to workers. Has the minimum wage improved worker welfare?
 
 <details>
 <summary>Hint</summary>
-<p>
 $MCL = 10 + 2L$. (a) Monopsony equilibrium: $80 - 2L = 10 + 2L \Rightarrow 4L = 70 \Rightarrow L_m = 17.5$, $w_m = 27.5$. Total wage payments $= 27.5 \times 17.5 = 481.25$. (b) With $w_{min} = 35$: the firm hires where $MRP_L = 35$: $80 - 2L = 35 \Rightarrow L = 22.5$. Supply at $w = 35$: $35 = 10 + L \Rightarrow L_s = 25$. So employment rises to 22.5, and $S_L(22.5) = 32.5 \lt 35$, so the minimum wage does not create a surplus at this employment level. (c) New total wage payments $= 35 \times 22.5 = 787.5$. Worker surplus has increased: more workers are employed at a higher wage. Competitive equilibrium would be $80 - 2L = 10 + L \Rightarrow 3L = 70 \Rightarrow L_c = 23.33$, $w_c = 33.33$. The minimum wage of £35 is slightly above the competitive wage, so employment (22.5) is just below the competitive level (23.33), but the higher wage may compensate.
-</p>
 </details>
 
 **Problem 14.** "The gender pay gap is entirely explained by differences in human capital between
@@ -754,7 +742,6 @@ men and women." Evaluate this statement using economic theory and evidence.
 
 <details>
 <summary>Hint</summary>
-<p>
 Human capital theory explains part of the gap: women are more likely to work part-time, take career
 breaks, and work in lower-paid occupations — all of which reduce MRP. However, even after controlling
 for education, experience, occupation, and hours worked (the Oaxaca-Blinder decomposition), a
@@ -764,7 +751,6 @@ institutional practices. Furthermore, occupational segregation itself may reflec
 education and societal expectations, not freely chosen human capital investment. Therefore, the
 statement is incorrect: human capital explains only part of the gap, and the remaining portion likely
 reflects deeper structural factors.
-</p>
 </details>
 
 **Problem 15.** The UK government is considering extending minimum wage protections to gig economy
@@ -773,7 +759,6 @@ and (c) consumer prices. Refer to monopsony theory in your answer.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) If platforms have monopsony power (as argued in Section 4.6), extending minimum wage protections
 could raise wages *and* increase worker participation (similar to the monopsony minimum wage model).
 However, if the minimum wage is set too high relative to the competitive equilibrium, some workers
@@ -785,7 +770,6 @@ rise as platforms pass on higher labour costs. However, if the minimum wage impr
 and service quality, demand may increase, partially offsetting the cost increase. Evaluation: the
 net effect is ambiguous and depends on the specific market structure and the level of the minimum
 wage set.
-</p>
 </details>
 
 **Problem 16.** Compare and contrast the roles of trade unions and minimum wage legislation as tools
@@ -793,7 +777,6 @@ for improving wages in low-paid labour markets. Which is more effective, and why
 
 <details>
 <summary>Hint</summary>
-<p>
 Both trade unions and minimum wages aim to raise wages above the market-clearing level. In competitive
 markets, both create unemployment by pushing wages above equilibrium. In monopsony markets, both can
 increase wages *and* employment by countering monopsony power. Key differences: (1) Minimum wages apply
@@ -807,7 +790,6 @@ instruments — a minimum wage floor to prevent the worst exploitation, suppleme
 negotiation for specific improvements above the floor. Evidence from Nordic countries (which combine
 high minimum wages through sectoral bargaining with strong unions) supports this complementary
 approach.
-</p>
 </details>
 
 :::

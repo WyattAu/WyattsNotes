@@ -18,8 +18,10 @@ slug: hypothesis-testing
 | OCR (A)    | Paper 1, 2 | Includes critical regions                |
 | CIE (9709) | P1, P6     | Basic hypothesis testing in P6           |
 
-:::info Hypothesis testing requires clear, structured answers. Always state your hypotheses, test
-statistic, critical value/region, comparison, and conclusion in context. :::
+:::info
+Hypothesis testing requires clear, structured answers. Always state your hypotheses, test
+statistic, critical value/region, comparison, and conclusion in context.
+:::
 
 ---
 
@@ -40,9 +42,11 @@ statistic, critical value/region, comparison, and conclusion in context. :::
 The choice depends on the research question. Use a one-tailed test only when you have a specific
 directional prediction **before** seeing the data.
 
-:::warning Choosing a one-tailed test after seeing the data (because the results happen to go in one
+:::warning
+Choosing a one-tailed test after seeing the data (because the results happen to go in one
 direction) is a form of $p$-hacking and is statistically invalid. The tail direction must be decided
-before the experiment. :::
+before the experiment.
+:::
 
 ---
 
@@ -175,9 +179,11 @@ Test statistic: $z = \dfrac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$.
 
 ## 7. Interpreting Results
 
-:::warning "Failing to reject $H_0$" is **not** the same as "proving $H_0$ is true." It means the
+:::warning
+"Failing to reject $H_0$" is **not** the same as "proving $H_0$ is true." It means the
 data does not provide sufficient evidence against $H_0$. The test may lack power (sample too small,
-effect too weak). :::
+effect too weak).
+:::
 
 ---
 

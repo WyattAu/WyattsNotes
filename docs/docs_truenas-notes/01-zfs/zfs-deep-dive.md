@@ -71,9 +71,11 @@ When ZFS reads a block, it:
 | edonr     | Very Fast | Very High            | Best for modern hardware (SSE4.2+) |
 | blake3    | Very Fast | Very High            | Available on newer ZFS versions    |
 
-:::info Set the checksum algorithm at pool creation time with `-O checksum=sha256`. It cannot be
+:::info
+Set the checksum algorithm at pool creation time with `-O checksum=sha256`. It cannot be
 changed after pool creation. `edonr` is the fastest on hardware with SSE4.2+ support and provides
-excellent collision resistance. :::
+excellent collision resistance.
+:::
 
 ---
 
@@ -132,9 +134,11 @@ set at pool creation time and cannot be changed afterward.
 | 13     | 8 KB        | Some modern SSDs with 8 KB physical sectors |
 | 14     | 16 KB       | Advanced-format SMR drives                  |
 
-:::warning Always set `ashift=12` (4 KB) at minimum for modern drives. Setting `ashift=9` on a drive
+:::warning
+Always set `ashift=12` (4 KB) at minimum for modern drives. Setting `ashift=9` on a drive
 with 4 KB physical sectors causes read-modify-write amplification, devastating performance. On
-TrueNAS, the default `ashift` is 12, which is correct for virtually all modern drives. :::
+TrueNAS, the default `ashift` is 12, which is correct for virtually all modern drives.
+:::
 
 ### Pool Creation Examples
 
@@ -200,9 +204,11 @@ variable-size blocks up to this maximum. The optimal recordsize depends on the w
 | General file storage               | 128K                   | Good balance for mixed workloads                 |
 | NFS home directories               | 128K                   | Mixed workload, default is fine                  |
 
-:::warning Changing `recordsize` on an existing dataset only affects new writes. Existing files
+:::warning
+Changing `recordsize` on an existing dataset only affects new writes. Existing files
 retain their original block sizes. To benefit from a recordsize change, you must rewrite the data
-(e.g., copy files to a new dataset with the desired recordsize). :::
+(e.g., copy files to a new dataset with the desired recordsize).
+:::
 
 ---
 
@@ -315,10 +321,12 @@ A dedicated SLOG device (typically a low-latency NVMe SSD or Intel Optane) absor
 writes at SSD speed, then asynchronously flushes them to the pool. This dramatically improves NFS
 and database write performance on HDD-based pools.
 
-:::warning The SLOG must have power-loss protection (PLP). Without PLP, a power loss during a
+:::warning
+The SLOG must have power-loss protection (PLP). Without PLP, a power loss during a
 synchronous write can lose acknowledged data, violating the sync guarantee. Intel Optane DC
 persistent memory is the gold standard for SLOG devices. Enterprise NVMe SSDs with PLP are also
-acceptable. Consumer NVMe SSDs without PLP should not be used as SLOG devices. :::
+acceptable. Consumer NVMe SSDs without PLP should not be used as SLOG devices.
+:::
 
 ---
 
@@ -364,9 +372,11 @@ zpool replace tank /dev/sda /dev/sdb
 zpool status tank
 ```
 
-:::warning During a resilver, the pool is vulnerable. If a second drive fails during resilver of a
+:::warning
+During a resilver, the pool is vulnerable. If a second drive fails during resilver of a
 RAIDZ1 pool, all data is lost. For RAIDZ2, you can tolerate a second failure. Always monitor
-resilver progress and ensure the pool is healthy before and after. :::
+resilver progress and ensure the pool is healthy before and after.
+:::
 
 ---
 
@@ -699,8 +709,10 @@ zfs rollback tank/data@daily-2024-01-10
 zfs rollback -rf tank/data@daily-2024-01-10
 ```
 
-:::warning `zfs rollback` destroys all intermediate snapshots between the current state and the
-target snapshot. Use `zfs clone` instead if you want to preserve the current state. :::
+:::warning
+`zfs rollback` destroys all intermediate snapshots between the current state and the
+target snapshot. Use `zfs clone` instead if you want to preserve the current state.
+:::
 
 ## ZFS Send/Receive Advanced Usage
 
@@ -778,9 +790,11 @@ zpool import <guid>
 zpool import -f tank
 ```
 
-:::warning Always export a pool before disconnecting drives. If a pool is not exported, ZFS
+:::warning
+Always export a pool before disconnecting drives. If a pool is not exported, ZFS
 may mark it as active on the original system, preventing import on the new system. Use
-`zpool export -f` to force export if necessary. :::
+`zpool export -f` to force export if necessary.
+:::
 
 ### Pool Degradation Scenarios
 

@@ -153,9 +153,11 @@ public:
 };
 ```
 
-:::tip Prefer `std::mutex` over `std::recursive_mutex` when possible. `std::recursive_mutex` often
+:::tip
+Prefer `std::mutex` over `std::recursive_mutex` when possible. `std::recursive_mutex` often
 indicates a design issue where lock ownership boundaries are unclear. Use it only when interfacing
-with recursive code structures that you cannot refactor. :::
+with recursive code structures that you cannot refactor.
+:::
 
 ## `std::timed_mutex`
 
@@ -497,10 +499,12 @@ int main() {
 }
 ```
 
-:::info `std::scoped_lock` with multiple mutexes uses an algorithm that attempts to lock each mutex
+:::info
+`std::scoped_lock` with multiple mutexes uses an algorithm that attempts to lock each mutex
 in turn. If any lock attempt fails, it unlocks all previously acquired mutexes and retries. This
 guarantees that all threads acquire the set of mutexes in the same order, preventing circular wait
-[N4950 §31.4.4.2.2]. :::
+[N4950 §31.4.4.2.2].
+:::
 
 ## Reader-Writer Lock for a Thread-Safe Cache
 
@@ -609,9 +613,11 @@ The double-check pattern is essential: between releasing the shared lock and acq
 lock, another thread may have already inserted the key. Without the second check, `try_emplace`
 would silently discard the existing value.
 
-:::tip `std::shared_mutex` in C++17 (and `std::shared_timed_mutex` in C++14) provides read-write
+:::tip
+`std::shared_mutex` in C++17 (and `std::shared_timed_mutex` in C++14) provides read-write
 locking. Prefer `std::shared_lock` for read-only access and `std::unique_lock` for write access. On
-POSIX systems, this typically maps to `pthread_rwlock_t`. :::
+POSIX systems, this typically maps to `pthread_rwlock_t`.
+:::
 
 ## Common Pitfalls
 

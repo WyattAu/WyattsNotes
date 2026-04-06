@@ -11,7 +11,8 @@ slug: quantities-and-units
 
 ## Quantities and Units
 
-:::info Board Coverage
+:::info
+Board Coverage
 AQA Paper 1 & 3 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1
 :::
 
@@ -36,7 +37,8 @@ A **physical quantity** is a property of a phenomenon that can be quantified —
 | Amount of substance | $n$    | mole     | mol         |
 | Luminous intensity  | $I_v$  | candela  | cd          |
 
-:::info Note
+:::info
+Note
 The candela is rarely encountered in A Level Physics. Focus on the first six.
 :::
 
@@ -103,7 +105,8 @@ $$
 
 Therefore $T = k\sqrt{l/g}$. Full analysis reveals $k = 2\pi$.
 
-:::tip Exam Technique
+:::tip
+Exam Technique
 Dimensional analysis is invaluable for checking your working. Get into the habit of verifying dimensions for every formula you derive in an exam.
 :::
 
@@ -151,7 +154,8 @@ $$|\mathbf{F}| = \sqrt{F_x^2 + F_y^2}$$
 - **Systematic error**: A consistent deviation from the true value, caused by a flaw in the apparatus or method. It affects accuracy (closeness to true value) but not precision (repeatability). Example: a zero error on a micrometer.
 - **Random error**: Unpredictable fluctuations in measured values, caused by limitations in resolution or environmental factors. It affects precision but not accuracy. Random errors are reduced by taking repeated measurements.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 Do not confuse precision with accuracy. A precise measurement is repeatable; an accurate measurement is close to the true value. You can have one without the other.
 :::
 
@@ -235,7 +239,8 @@ The number of significant figures in a quoted result should be consistent with t
 
 **Example.** If a length is measured as $12.3 \pm 0.4$ cm, we quote two significant figures (matching the uncertainty's one significant figure). We do not write $12.30 \pm 0.4$ cm — the trailing zero implies precision we do not have.
 
-:::tip Exam Technique
+:::tip
+Exam Technique
 When you compute $g = 9.78 \pm 0.15 \text{ m s}^{-2}$, write $9.8 \pm 0.2$ m s$^{-2}$ (round the uncertainty to 1 s.f. and match the result). This is what examiners expect.
 :::
 
@@ -267,60 +272,42 @@ A similar procedure applies to the $y$-intercept.
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A student measures the diameter of a sphere five times and obtains: 2.04 cm, 2.06 cm, 2.05 cm, 2.03 cm, 2.07 cm. Calculate the mean diameter and its absolute uncertainty.
 
 **Answer.** $\bar{d} = \frac{2.04 + 2.06 + 2.05 + 2.03 + 2.07}{5} = 2.05$ cm. The range is $2.07 - 2.03 = 0.04$ cm, so $\Delta d = 0.02$ cm. Result: $d = 2.05 \pm 0.02$ cm.
 
 <b>If you get this wrong, revise:</b> [Determining Uncertainty from Repeated Measurements](#6-determining-uncertainty-from-repeated-measurements)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 The kinetic energy of a particle is given by $E_k = \frac{1}{2}mv^2$. Show that this expression is dimensionally consistent with the definition of work $W = Fd$.
 
 **Answer.** $[E_k] = [\text{mass}][\text{velocity}]^2 = \mathsf{M}(\mathsf{L}\mathsf{T}^{-1})^2 = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$. Meanwhile $[W] = [F][d] = (\mathsf{M}\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$. The dimensions match. $\square$
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A force $F = 12.0 \pm 0.3$ N acts over a distance $d = 3.45 \pm 0.05$ m. Calculate the work done and its percentage uncertainty.
 
 **Answer.** $W = Fd = 12.0 \times 3.45 = 41.4$ J. The fractional uncertainties are $\frac{0.3}{12.0} = 0.025$ and $\frac{0.05}{3.45} = 0.0145$. By the multiplication rule: $\frac{\Delta W}{W} = 0.025 + 0.0145 = 0.0395$, so $\Delta W = 41.4 \times 0.0395 \approx 1.6$ J. Result: $W = 41.4 \pm 1.6$ J (3.9% uncertainty).
 
 <b>If you get this wrong, revise:</b> [Rule 2: Multiplication and Division](#rule-2-multiplication-and-division)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 Use dimensional analysis to show that the expression $v = \sqrt{\frac{2\Delta E}{m}}$ is dimensionally valid, where $\Delta E$ is energy and $m$ is mass.
 
 **Answer.** $[v] = \mathsf{L}\mathsf{T}^{-1}$. $[\Delta E/m] = \frac{\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}}{\mathsf{M}} = \mathsf{L}^2\mathsf{T}^{-2}$. $[\sqrt{2\Delta E/m}] = (\mathsf{L}^2\mathsf{T}^{-2})^{1/2} = \mathsf{L}\mathsf{T}^{-1} = [v]$. $\square$
 
 <b>If you get this wrong, revise:</b> [Dimensional Analysis](#2-dimensional-analysis)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 The density of a cylinder is $\rho = \frac{m}{\pi r^2 h}$. The mass $m = 150.0 \pm 0.5$ g, radius $r = 1.20 \pm 0.05$ cm, and height $h = 5.00 \pm 0.02$ cm. Calculate $\rho$ and its uncertainty.
 
 **Answer.** $\rho = \frac{150.0}{\pi(1.20)^2(5.00)} = \frac{150.0}{22.62} = 6.63$ g cm$^{-3}$.
@@ -330,92 +317,64 @@ Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$, $\frac{2(0.05)}{1.20} = 
 Total fractional uncertainty: $0.0033 + 0.0833 + 0.004 = 0.0907$. $\Delta\rho = 6.63 \times 0.0907 = 0.60$ g cm$^{-3}$. Result: $\rho = 6.6 \pm 0.6$ g cm$^{-3}$.
 
 <b>If you get this wrong, revise:</b> [Rule 3: Powers](#rule-3-powers)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Two vectors are given: $\mathbf{A} = 3\mathbf{i} + 4\mathbf{j}$ N and $\mathbf{B} = -2\mathbf{i} + 5\mathbf{j}$ N. Find the magnitude and direction of $\mathbf{A} + \mathbf{B}$.
 
 **Answer.** $\mathbf{A} + \mathbf{B} = (3-2)\mathbf{i} + (4+5)\mathbf{j} = \mathbf{i} + 9\mathbf{j}$. Magnitude: $|\mathbf{A}+\mathbf{B}| = \sqrt{1^2 + 9^2} = \sqrt{82} = 9.06$ N. Direction: $\theta = \arctan(9/1) = 83.7°$ above the positive $x$-axis.
 
 <b>If you get this wrong, revise:</b> [Vector Operations](#4-scalars-and-vectors)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A student proposes the formula for the period of a mass on a spring: $T = 2\pi\sqrt{\frac{k}{m}}$, where $k$ is the spring constant and $m$ is the mass. Use dimensional analysis to show this formula is incorrect, and find the correct form.
 
 **Answer.** $[T] = \mathsf{T}$. $[k/m] = \frac{[\text{force}]/[\text{displacement}]}{[\text{mass}]} = \frac{\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}}{\mathsf{M}} = \mathsf{T}^{-2}$. So $[\sqrt{k/m}] = \mathsf{T}^{-1} \neq \mathsf{T}$. The formula is dimensionally wrong. The correct form is $T = 2\pi\sqrt{\frac{m}{k}}$, which gives $[\sqrt{m/k}] = \sqrt{\frac{\mathsf{M}}{\mathsf{T}^{-2}}} = \mathsf{T}$. $\square$
 
 <b>If you get this wrong, revise:</b> [Determining the Form of an Equation](#determining-the-form-of-an-equation)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Convert 0.0000450 nm to SI base units with appropriate significant figures.
 
 **Answer.** $0.0000450$ nm $= 4.50 \times 10^{-5}$ nm $= 4.50 \times 10^{-5} \times 10^{-9}$ m $= 4.50 \times 10^{-14}$ m. The result has 3 significant figures, matching the original.
 
 <b>If you get this wrong, revise:</b> [SI Prefixes](#3-si-prefixes)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 A resistance is calculated from $R = \frac{V}{I}$ where $V = 6.00 \pm 0.05$ V and $I = 0.50 \pm 0.02$ A. Find $R$ and its absolute uncertainty.
 
 **Answer.** $R = \frac{6.00}{0.50} = 12.0$ $\Omega$. Fractional uncertainties: $\frac{0.05}{6.00} = 0.0083$ and $\frac{0.02}{0.50} = 0.04$. Total: $0.0083 + 0.04 = 0.048$. $\Delta R = 12.0 \times 0.048 = 0.58 \approx 0.6$ $\Omega$. Result: $R = 12.0 \pm 0.6$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Rule 2: Multiplication and Division](#rule-2-multiplication-and-division)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 Explain the difference between a systematic error and a random error, giving one example of each from a measurement of the acceleration of free fall using a simple pendulum.
 
 **Answer.** A systematic error is a consistent offset from the true value. Example: the bob is not perfectly point-like, effectively increasing the pendulum length. A random error causes scatter in repeated readings. Example: human reaction time when timing oscillations with a stopwatch — it varies unpredictably from trial to trial.
 
 <b>If you get this wrong, revise:</b> [Types of Error](#types-of-error)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 The gravitational potential energy is given by $E_p = -\frac{GMm}{r}$. Use dimensional analysis to determine the SI units of the gravitational constant $G$.
 
 **Answer.** $[E_p] = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$. $[Mm/r] = \frac{\mathsf{M} \cdot \mathsf{M}}{\mathsf{L}} = \mathsf{M}^2\mathsf{L}^{-1}$. Since $E_p = -\frac{GMm}{r}$: $[G] = \frac{[E_p][r]}{[Mm]} = \frac{\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2} \cdot \mathsf{L}}{\mathsf{M}^2} = \mathsf{M}^{-1}\mathsf{L}^3\mathsf{T}^{-2}$. In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 A quantity $Q$ is measured as $Q = \frac{a^2 b}{\sqrt{c}}$ where $a = 4.0 \pm 0.2$, $b = 3.0 \pm 0.1$, $c = 9.0 \pm 0.3$. Calculate $Q$ and its percentage uncertainty.
 
 **Answer.** $Q = \frac{16.0 \times 3.0}{3.0} = 16.0$.
@@ -425,6 +384,4 @@ Fractional uncertainties: $\frac{2(0.2)}{4.0} = 0.10$ (power rule for $a^2$), $\
 Total: $0.10 + 0.033 + 0.0167 = 0.150$. Percentage uncertainty: 15.0%. $\Delta Q = 16.0 \times 0.150 = 2.4$. Result: $Q = 16.0 \pm 2.4$ (15%).
 
 <b>If you get this wrong, revise:</b> [Rule 3: Powers](#rule-3-powers)
-
-</p>
 </details>

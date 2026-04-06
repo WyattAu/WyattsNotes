@@ -24,9 +24,11 @@ entrepreneurship) are finite.
 Scarcity is the fundamental constraint that makes economics a discipline. Without scarcity, every
 want could be satisfied simultaneously and there would be no need to choose, allocate, or optimise.
 
-:::info Board-Specific Note All four boards (AQA, Edexcel, OCR, CIE) place the economic problem at
+:::info
+Board-Specific Note All four boards (AQA, Edexcel, OCR, CIE) place the economic problem at
 the start of the syllabus. CIE (9708) Paper 1 frequently opens with MCQs testing precise definitions
-of scarcity and opportunity cost. :::
+of scarcity and opportunity cost.
+:::
 
 ### 1.2 Choice
 
@@ -45,15 +47,15 @@ $$\text{Opportunity cost of } A = \max_{B \neq A} \{U(B)\}$$
 where $U(B)$ is the utility (or value) of alternative $B$. This is not the sum of all alternatives —
 only the single best one that was rejected.
 
-:::warning Common Pitfall Students often state that opportunity cost is "everything you give up."
+:::warning
+Common Pitfall Students often state that opportunity cost is "everything you give up."
 This is incorrect. It is the value of the _next-best_ alternative only. If you spend £10 on a book
 when your next-best option is a film ticket costing £10, the opportunity cost is the film ticket —
-not the book, not the £10 itself, and not the film ticket _plus_ a coffee. :::
+not the book, not the £10 itself, and not the film ticket _plus_ a coffee.
+:::
 
 <details>
 <summary>Example</summary>
-<p>
-
 A student has 3 hours of free time. Their options, ranked by preference:
 
 1. Study economics (utility: 30)
@@ -62,8 +64,6 @@ A student has 3 hours of free time. Their options, ranked by preference:
 
 If the student chooses to study economics, the opportunity cost is playing football (utility 25),
 not television.
-
-</p>
 </details>
 
 #### Opportunity Cost in Practice
@@ -116,12 +116,14 @@ consumer's optimal bundle — depends on the shape of the utility function and t
 minimum acceptable threshold, rather than optimising. This accounts for bounded rationality —
 limited cognitive capacity and information.
 
-:::info Board-Specific Note AQA (4.1.1.1) and Edexcel (Theme 1, 1.1.1) both require understanding of
+:::info
+Board-Specific Note AQA (4.1.1.1) and Edexcel (Theme 1, 1.1.1) both require understanding of
 rational decision making as the basis of economic behaviour. OCR (H460, Micro 1.1) places particular
 emphasis on _behavioural_ challenges to rationality — be prepared to discuss how bounded
 rationality, heuristics, and framing effects undermine the assumption of rational utility
 maximisation. CIE (9708) focuses more narrowly on the formal optimisation framework in Paper 2 essay
-questions. :::
+questions.
+:::
 
 ## 2. The Production Possibility Frontier
 
@@ -160,11 +162,13 @@ A **linear PPF** (straight line) arises when resources are perfectly adaptable �
 cost of $X$ in terms of $Y$ is constant. A **convex PPF** would imply decreasing opportunity cost —
 rare but possible if there are economies of scale.
 
-:::info Board-Specific Note AQA frequently asks students to explain _why_ the PPF is bowed outward
+:::info
+Board-Specific Note AQA frequently asks students to explain _why_ the PPF is bowed outward
 (concave) and to calculate opportunity cost from a numerical table or diagram. Edexcel (Theme 1)
 often presents PPF data in table form and asks students to plot and interpret. CIE (9708) may ask
 for a formal derivation or for students to identify the shape from a production function. OCR tends
-to focus more on the _policy implications_ of PPF shifts. :::
+to focus more on the _policy implications_ of PPF shifts.
+:::
 
 #### Evaluation of PPF Assumptions
 
@@ -202,8 +206,6 @@ outside the PPF is unattainable given current resources and technology.
 
 <details>
 <summary>Example: PPF Analysis</summary>
-<p>
-
 An economy can produce either guns or butter. Its PPF is given by:
 
 $$y = 100 - x^2$$
@@ -217,8 +219,6 @@ where $x$ = guns, $y$ = butter (both in thousands of units).
 The opportunity cost of increasing guns from 5 to 6 is $100 - 36 - 75 = -11$ thousand butter. The
 opportunity cost of increasing guns from 0 to 1 is $100 - 1 - 100 = -1$ thousand butter. Opportunity
 cost rises as gun production increases.
-
-</p>
 </details>
 
 #### Real-World Applications of PPF Efficiency
@@ -311,7 +311,8 @@ intervention remains one of the central debates in economics and depends on the 
 the effectiveness of institutions, the nature of the goods being produced, and societal values
 regarding equity and freedom.
 
-:::info Board-Specific Note AQA (4.1.1.3) requires students to understand the economic problem and
+:::info
+Board-Specific Note AQA (4.1.1.3) requires students to understand the economic problem and
 economic systems together, often asking 9-mark questions comparing market and command economies.
 Edexcel (Theme 1, 1.1.4) emphasises the role of the price mechanism in allocating resources and
 expects students to evaluate when government intervention improves outcomes. OCR (H460) expects
@@ -344,14 +345,14 @@ The positive-normative distinction is fundamental because:
 3. Policy debates often conflate the two — "X is bad" (normative) is different from "X causes Y"
    (positive).
 
-:::tip Exam Technique When asked "Is this statement positive or normative?", look for value-laden
+:::tip
+Exam Technique When asked "Is this statement positive or normative?", look for value-laden
 words: _should, ought, fair, unfair, too much, too little, best, worst_. These signal normative
-statements. :::
+statements.
+:::
 
 <details>
 <summary>Example: Classification</summary>
-<p>
-
 Classify each statement:
 
 1. "Inflation is 3.2%." — **Positive** (testable)
@@ -359,8 +360,6 @@ Classify each statement:
 3. "A carbon tax reduces emissions by 5% per £10 of tax." — **Positive** (testable)
 4. "The government should introduce a carbon tax." — **Normative** (value judgement)
 5. "If interest rates rise, investment falls." — **Positive** (testable)
-
-</p>
 </details>
 
 #### Evaluation of the Positive-Normative Distinction
@@ -375,11 +374,13 @@ research agenda itself) is shaped by normative concerns. Economists who prioriti
 inequality are making a value judgement about what matters. The positive-normative distinction is
 therefore best understood as a continuum rather than a binary classification.
 
-:::info Board-Specific Note AQA (4.1.1.2) and Edexcel (Theme 1, 1.1.2) both explicitly test the
+:::info
+Board-Specific Note AQA (4.1.1.2) and Edexcel (Theme 1, 1.1.2) both explicitly test the
 positive-normative distinction, typically with 2-4 mark MCQs or short-answer questions asking
 students to classify statements. CIE (9708) may embed the distinction within longer essay questions.
 OCR often asks students to identify the positive and normative components within a single policy
-argument. :::
+argument.
+:::
 
 ## 4. Factors of Production
 
@@ -396,12 +397,14 @@ We define the four factors of production:
 whereas land and labour are not. Entrepreneurship is a form of human capital but is distinguished
 because it involves decision-making under uncertainty.
 
-:::info Board-Specific Note Edexcel (Theme 1, 1.1.1) lists the four factors of production and their
+:::info
+Board-Specific Note Edexcel (Theme 1, 1.1.1) lists the four factors of production and their
 rewards explicitly in the specification and frequently asks students to identify which factor is
 being described in a given scenario. AQA (4.1.1.1) covers factors of production within the broader
 topic of scarcity and choice. CIE (9708) expects students to distinguish between factor rewards and
 understand the concept of factor mobility. OCR (H460) may ask students to explain how changes in the
-quantity or quality of a factor of production affect the PPF. :::
+quantity or quality of a factor of production affect the PPF.
+:::
 
 ## 5. Specialisation and Division of Labour
 
@@ -451,11 +454,13 @@ gains of deep specialisation. On balance, the benefits of specialisation typical
 costs, but the distribution of those benefits is uneven and requires policy attention (retraining
 programmes, education systems, social safety nets).
 
-:::info Board-Specific Note AQA (4.1.1.4) and Edexcel (Theme 1, 1.1.3) both cover specialisation and
+:::info
+Board-Specific Note AQA (4.1.1.4) and Edexcel (Theme 1, 1.1.3) both cover specialisation and
 division of labour, with AQA placing more emphasis on the link to international trade and Edexcel
 focusing on the efficiency gains within firms. CIE (9708) Paper 2 may ask students to evaluate the
 effects of specialisation on an economy. OCR (H460) often links specialisation to broader questions
-about globalisation and its discontents. :::
+about globalisation and its discontents.
+:::
 
 ## 6. Critical Evaluation
 
@@ -473,10 +478,12 @@ about globalisation and its discontents. :::
 - Cannot capture dynamic changes (innovation, learning by doing)
 - Does not model the institutional framework that determines _how_ production decisions are made
 
-:::info Board-Specific Note CIE (9708) often asks students to apply the PPF to real economies —
+:::info
+Board-Specific Note CIE (9708) often asks students to apply the PPF to real economies —
 e.g., "Using a PPF diagram, explain how a country might reallocate resources from consumer goods to
 capital goods and evaluate the consequences." Focus on the trade-off between current consumption and
-future growth. :::
+future growth.
+:::
 
 #### Additional Evaluation Points
 
@@ -502,9 +509,7 @@ unit of $x$. What does the comparison tell you?
 
 <details>
 <summary>Hint</summary>
-<p>
 Opportunity cost of the $n$th unit of $x$ = $y(n-1) - y(n)$. Compute $y(9)$ and $y(10)$ for the 10th unit, then $y(19)$ and $y(20)$ for the 20th unit.
-</p>
 </details>
 
 **Problem 2.** Prove that if the PPF is linear ($y = a - bx$), then the opportunity cost of $x$ in
@@ -512,9 +517,7 @@ terms of $y$ is constant. Explain what economic assumption this implies about re
 
 <details>
 <summary>Hint</summary>
-<p>
 Take the derivative $\frac{dy}{dx} = -b$. Since this is constant, the opportunity cost doesn't change. This implies resources are equally productive in both sectors.
-</p>
 </details>
 
 **Problem 3.** "The PPF shows the maximum an economy can produce, so any point inside the PPF must
@@ -522,9 +525,7 @@ involve unemployment." Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
-<p>
 Consider: is unemployment the *only* reason an economy might produce inside its PPF? What about misallocation of resources (e.g., using highly skilled workers for unskilled tasks)? What about inefficiency?
-</p>
 </details>
 
 **Problem 4.** A country produces only food ($F$) and clothing ($C$). The PPF is
@@ -533,9 +534,7 @@ effect on the PPF.
 
 <details>
 <summary>Hint</summary>
-<p>
 This is an asymmetric shock — it affects food production capacity but not directly clothing. The PPF pivots inward on the $F$-axis but the $C$-intercept may not change (since resources can be moved from food to clothing, but the food sector's maximum output is reduced).
-</p>
 </details>
 
 **Problem 5.** Classify each statement as positive or normative, explaining your reasoning: (a) "The
@@ -545,9 +544,7 @@ ought to raise taxes on the wealthy."
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Positive — factual, testable. (b) Normative — "unacceptable" is a value judgement. (c) Positive — a counterfactual claim that could be estimated empirically. (d) Normative — "ought to" signals a value judgement about what should be done.
-</p>
 </details>
 
 **Problem 6.** Using the PPF model, explain how an increase in the quality of education (e.g., more
@@ -556,9 +553,7 @@ the long run.
 
 <details>
 <summary>Hint</summary>
-<p>
 Better education improves human capital $\Rightarrow$ resources become more productive $\Rightarrow$ PPF shifts outward. If education specifically enhances the productivity of capital goods production (engineers, scientists), the outward shift may be asymmetric — larger for capital goods. In the long run, more capital goods today $\Rightarrow$ even more outward shift in the future.
-</p>
 </details>
 
 **Problem 7.** A student has 6 hours to revise for two exams: Economics and Mathematics. Her
@@ -568,9 +563,7 @@ Economics?
 
 <details>
 <summary>Hint</summary>
-<p>
 Set up the Lagrangian: $\mathcal{L} = 20\sqrt{t_E} + 15\sqrt{t_M} + \lambda(6 - t_E - t_M)$. Take derivatives and set to zero: $\frac{10}{\sqrt{t_E}} = \lambda$ and $\frac{7.5}{\sqrt{t_M}} = \lambda$. So $\frac{10}{\sqrt{t_E}} = \frac{7.5}{\sqrt{t_M}}$, giving $\frac{t_E}{t_M} = \frac{16}{9}$, so $t_E = \frac{96}{25} = 3.84$ hours, $t_M = 2.16$ hours.
-</p>
 </details>
 
 **Problem 8.** Evaluate the argument that "scarcity can be eliminated through technological
@@ -578,9 +571,7 @@ progress."
 
 <details>
 <summary>Hint</summary>
-<p>
 While technology shifts the PPF outward, it cannot eliminate scarcity because human wants also expand with new possibilities. Consider: did the invention of smartphones eliminate scarcity, or create new wants (apps, data plans, accessories)? Technological progress changes the *composition* of scarcity but does not eliminate it.
-</p>
 </details>
 
 **Problem 9.** A command economy decides to allocate all resources to military production during a
@@ -589,9 +580,7 @@ war ends (c) Why a market economy might make different choices
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) All production at the military goods intercept of the PPF — zero consumer goods. (b) Capital stock depreciates, infrastructure decays $\Rightarrow$ PPF shifts inward post-war (the "peace dividend" in reverse). (c) In a market economy, consumer demand for food, housing, etc. would push production toward a more balanced point, though government could still intervene.
-</p>
 </details>
 
 **Problem 10.** "The concept of opportunity cost implies that there is no such thing as a free
@@ -599,9 +588,7 @@ lunch." Discuss this statement with reference to the PPF model.
 
 <details>
 <summary>Hint</summary>
-<p>
 Even a "free" school meal costs resources that could have been used elsewhere (teacher salaries, ingredients, kitchen equipment). The opportunity cost is the next-best use of those resources. Formally: if resources are on the PPF, producing more of anything requires giving up something else. If resources are inside the PPF, "free" goods may use unemployed resources — but even then, there may be alternative uses for those resources.
-</p>
 </details>
 
 **Problem 11.** An economy produces capital goods ($K$) and consumer goods ($C$) with PPF
@@ -612,11 +599,9 @@ justified for a developing economy seeking long-term growth.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) At $K = 10$: $C = 400 - 100 = 300$. The point $(10, 300)$ lies exactly on the PPF — productively efficient.
 (b) At $K = 15$: $C = 400 - 225 = 175$. Opportunity cost = $300 - 175 = 125$ units of consumer goods.
 (c) Evaluation: In the short run, consumers experience a significant reduction in living standards. However, increased capital goods production expands productive capacity, shifting the PPF outward in future periods. This is the fundamental trade-off faced by developing economies like China and South Korea. Whether it is justified depends on the marginal productivity of the additional capital, the time horizon, and the social cost of reduced current consumption.
-</p>
 </details>
 
 **Problem 12.** "A mixed economy always achieves a more efficient allocation of resources than
@@ -625,12 +610,10 @@ either a pure market or a pure command economy." To what extent do you agree wit
 
 <details>
 <summary>Hint</summary>
-<p>
 This is an evaluative essay question typical of AQA and Edexcel A Level papers. Structure your answer as follows:
 - **Agree**: Mixed economies can correct market failures (public goods, externalities, information asymmetries) through government intervention while retaining the efficiency of the price mechanism for most goods. The Nordic countries combine high living standards with strong social safety nets.
 - **Disagree**: Government intervention can itself cause inefficiency — government failure (regulatory capture, bureaucratic waste, distortionary taxes). The "optimal" mix varies by context. Hong Kong's minimal government approach produced high growth; Sweden's extensive welfare state also produces high living standards.
 - **Conclusion**: There is no universally optimal mix. The effectiveness of a mixed economy depends on the quality of institutions, the nature of market failures present, and societal preferences regarding equity vs efficiency.
-</p>
 </details>
 
 **Problem 13.** The table below shows the maximum output of two goods that Country A can produce
@@ -649,11 +632,9 @@ effect on car production, explain how the PPF changes.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) The PPF connects (0, 200) to (100, 0). Assuming increasing opportunity cost (concave shape), the curve bows outward from the origin. This reflects that resources are not perfectly adaptable between car manufacturing and wheat farming.
 (b) The opportunity cost depends on the shape of the PPF. If we assume a linear PPF for simplicity (constant opportunity cost), the slope is $-200/100 = -2$, so each car costs 2 units of wheat. If the PPF is concave, the opportunity cost at 50 cars is greater than at 0 cars — resources less suited to car production must be transferred from wheat farming.
 (c) This is an asymmetric outward shift. The wheat intercept doubles from 200 to 400, but the car intercept remains at 100. The new PPF connects (0, 400) to (100, 0), pivoting outward on the vertical axis. This represents a sector-specific technological improvement.
-</p>
 </details>
 
 **Problem 14.** Evaluate the view that the concept of rational decision making is of limited use in
@@ -661,12 +642,10 @@ explaining how consumers actually behave in markets. [25 marks]
 
 <details>
 <summary>Hint</summary>
-<p>
 This question requires evaluating the assumptions of rational choice theory against evidence from behavioural economics.
 - **Arguments that rationality is limited**: Kahneman and Tversky's prospect theory shows that people are loss-averse — they value losses more heavily than equivalent gains, violating the rational assumption of symmetric preferences. Thaler's mental accounting shows people treat money differently depending on its source (e.g., spending bonus income more freely than salary). Present bias (hyperbolic discounting) leads people to underinvest in long-term goods like pensions. Framing effects mean the same choice presented differently produces different decisions.
 - **Arguments that rationality remains useful**: Despite these deviations, the rational model provides strong predictive power for aggregate market behaviour. Firms use rational models effectively for pricing and production decisions. Behavioural deviations are often systematic and can be incorporated into extended models (e.g., incorporating probability weighting into expected utility). The rational model remains the benchmark against which deviations are measured.
 - **Conclusion**: Rational decision making is a simplification, but it remains the foundation of economic analysis. Its limitations are well-documented, and behavioural economics provides valuable corrections. For A Level purposes, acknowledge both the predictive power and the empirical limitations.
-</p>
 </details>
 
 :::

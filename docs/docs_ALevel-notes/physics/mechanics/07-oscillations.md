@@ -11,7 +11,8 @@ slug: oscillations
 
 ## Oscillations
 
-:::info Board Coverage
+:::info
+Board Coverage
 AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
@@ -141,7 +142,8 @@ This is SHM in the variable $\theta$ with angular frequency $\omega = \sqrt{g/L}
 
 $$\boxed{T = 2\pi\sqrt{\frac{L}{g}}}$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 The period of a simple pendulum is **independent of mass** and **independent of amplitude** (for small oscillations). These are classic exam questions.
 :::
 
@@ -184,7 +186,8 @@ In SHM, displacement, velocity, and acceleration are out of phase:
 
 **Examples:** A child on a swing (driving at natural frequency), the Tacoma Narrows Bridge (aeroelastic resonance), tuning a radio (LC circuit resonance), MRI machines (nuclear magnetic resonance).
 
-:::tip Exam Technique
+:::tip
+Exam Technique
 In exam questions about damping and resonance, remember: more damping $\to$ lower maximum amplitude $\to$ broader resonance curve. Less damping $\to$ higher peak $\to$ narrower curve.
 :::
 
@@ -192,8 +195,6 @@ In exam questions about damping and resonance, remember: more damping $\to$ lowe
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A mass-spring system has $m = 0.40$ kg and $k = 160$ N m$^{-1}$. The mass is displaced $0.05$ m from equilibrium and released. Find: (a) the period, (b) the maximum velocity, (c) the maximum acceleration.
 
 **Answer.** (a) $T = 2\pi\sqrt{m/k} = 2\pi\sqrt{0.40/160} = 2\pi\sqrt{0.0025} = 2\pi \times 0.05 = 0.314$ s.
@@ -203,14 +204,10 @@ A mass-spring system has $m = 0.40$ kg and $k = 160$ N m$^{-1}$. The mass is dis
 (c) $a_{\max} = A\omega^2 = 0.05 \times 400 = 20$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Mass-Spring System](#4-mass-spring-system)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A simple pendulum has a period of $2.00$ s on Earth. What would be its period on the Moon ($g_{\text{Moon}} = 1.62$ m s$^{-2}$)?
 
 **Answer.** $T_E = 2\pi\sqrt{L/g_E} \implies L = g_E(T_E/2\pi)^2 = 9.81(2.00/2\pi)^2 = 9.81 \times 0.1013 = 0.994$ m.
@@ -218,14 +215,10 @@ A simple pendulum has a period of $2.00$ s on Earth. What would be its period on
 $T_M = 2\pi\sqrt{0.994/1.62} = 2\pi \times 0.7827 = 4.92$ s.
 
 <b>If you get this wrong, revise:</b> [Simple Pendulum](#5-simple-pendulum)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 An object in SHM has amplitude $0.10$ m and frequency $5.0$ Hz. Find its speed and acceleration when it is $0.06$ m from the equilibrium position.
 
 **Answer.** $\omega = 2\pi \times 5.0 = 31.4$ rad s$^{-1}$.
@@ -235,14 +228,10 @@ $v = \omega\sqrt{A^2 - x^2} = 31.4\sqrt{0.01 - 0.0036} = 31.4\sqrt{0.0064} = 31.
 $a = -\omega^2 x = -(31.4)^2 \times 0.06 = -986 \times 0.06 = -59.2$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Velocity-Displacement Relation](#velocity-displacement-relation)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A pendulum of length $1.50$ m has a bob of mass $0.50$ kg. Calculate: (a) its period, (b) its total energy when swinging with amplitude $0.10$ m, (c) the maximum velocity.
 
 **Answer.** (a) $T = 2\pi\sqrt{1.50/9.81} = 2\pi \times 0.391 = 2.46$ s.
@@ -252,27 +241,19 @@ A pendulum of length $1.50$ m has a bob of mass $0.50$ kg. Calculate: (a) its pe
 (c) $v_{\max} = A\omega = 0.10 \times 2.557 = 0.256$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Energy in SHM](#3-energy-in-shm)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 Show that the period of a mass-spring system is independent of the amplitude of oscillation.
 
 **Answer.** $T = 2\pi/\omega = 2\pi\sqrt{m/k}$. The period depends only on $m$ and $k$, neither of which depends on the amplitude $A$. The amplitude $A$ is determined by initial conditions, not the inherent properties of the oscillator. $\square$
 
 <b>If you get this wrong, revise:</b> [Mass-Spring System](#4-mass-spring-system)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A 50 g mass on a spring oscillates with amplitude 4.0 cm and period 0.80 s. Find the total energy and the speed when the displacement is 2.0 cm.
 
 **Answer.** $\omega = 2\pi/0.80 = 7.854$ rad s$^{-1}$.
@@ -282,14 +263,10 @@ $E = \frac{1}{2}m\omega^2 A^2 = \frac{1}{2}(0.050)(7.854)^2(0.04)^2 = \frac{1}{2
 $v = \omega\sqrt{A^2 - x^2} = 7.854\sqrt{0.0016 - 0.0004} = 7.854 \times 0.0346 = 0.272$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Energy in SHM](#3-energy-in-shm)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Sketch graphs showing how displacement, velocity, and acceleration vary with time for one complete cycle of SHM. Show the phase relationships clearly.
 
 **Answer.** All three are sinusoidal curves of the same period.
@@ -299,45 +276,31 @@ Sketch graphs showing how displacement, velocity, and acceleration vary with tim
 - Acceleration: $a = -A\omega^2\cos(\omega t)$ — starts at $-A\omega^2$, goes to $+A\omega^2$, returns. Antiphase to $x$.
 
 <b>If you get this wrong, revise:</b> [Phase Relationships](#6-phase-relationships)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A pendulum has a period of $1.00$ s at a location where $g = 9.81$ m s$^{-2}$. If the pendulum is taken to a location where $g = 9.40$ m s$^{-2}$, what is the new period?
 
 **Answer.** $T \propto g^{-1/2}$. $T_2/T_1 = \sqrt{g_1/g_2} = \sqrt{9.81/9.40} = \sqrt{1.0436} = 1.0216$. $T_2 = 1.0216$ s.
 
 <b>If you get this wrong, revise:</b> [Simple Pendulum](#5-simple-pendulum)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 In an SHM system, the kinetic energy equals the potential energy when the displacement is $x = x_0$. Show that $x_0 = A/\sqrt{2}$.
 
 **Answer.** $E_k = E_p$ when $\frac{1}{2}m\omega^2(A^2 - x^2) = \frac{1}{2}m\omega^2 x^2$. $A^2 - x^2 = x^2 \implies 2x^2 = A^2 \implies x = A/\sqrt{2}$. $\square$
 
 <b>If you get this wrong, revise:</b> [Energy in SHM](#3-energy-in-shm)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 Explain why a heavily damped system does not exhibit resonance at its natural frequency.
 
 **Answer.** A heavily damped system has a very broad, low resonance curve. Energy is dissipated so rapidly that even when driven at the natural frequency, the amplitude build-up is minimal. The damping force is comparable to the restoring force, preventing significant oscillation. The peak of the resonance curve is very flat and occurs at a frequency slightly below the undamped natural frequency.
 
 <b>If you get this wrong, revise:</b> [Damping](#7-damping) and [Resonance](#8-resonance)
-
-</p>
 </details>

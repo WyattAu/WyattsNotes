@@ -42,10 +42,12 @@ exact rules are [N4950 §11.4.5.3]:
 | **Move constructor** | No user-declared copy ctor, copy assign, move assign, or destructor | Trivial                                              | Any base/member has deleted move ctor or inaccessible non-move ctor, or has copy-only semantics                          |
 | **Move assignment**  | No user-declared copy ctor, copy assign, move ctor, or destructor   | Trivial                                              | Any base/member has deleted move assign or inaccessible non-move assign, or has copy-only semantics, or reference member |
 
-:::warning C++11 vs C++14+ Move Generation In C++11, if any SMF is user-declared, the move
+:::warning
+C++11 vs C++14+ Move Generation In C++11, if any SMF is user-declared, the move
 constructor and move assignment are **not** implicitly declared. In C++14 and later, this remains
 true — the Standard was not changed. The critical point: declaring a destructor suppresses implicit
-move generation. :::
+move generation.
+:::
 
 ## 3.3 `= default` and `= delete`
 

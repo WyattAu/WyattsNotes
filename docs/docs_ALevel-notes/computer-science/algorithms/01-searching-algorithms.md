@@ -133,9 +133,11 @@ $$n + 1 \leq 2^{h+1} - 1 \implies h \geq \lceil \log_2(n + 2) \rceil - 1 = \Omeg
 
 $\square$
 
-:::warning Pitfall Binary search **only works on sorted arrays**. Applying it to an unsorted array
+:::warning
+Pitfall Binary search **only works on sorted arrays**. Applying it to an unsorted array
 gives incorrect results. Also, beware of integer overflow when computing `mid = (low + high) // 2` —
-use `mid = low + (high - low) // 2` for safety. :::
+use `mid = low + (high - low) // 2` for safety.
+:::
 
 <details>
 <summary>Example: Trace binary search for x = 7 in [1, 3, 5, 7, 9, 11, 13]</summary>
@@ -177,10 +179,12 @@ def binary_search_recursive(A, x, low, high):
         return binary_search_recursive(A, x, low, mid - 1)
 ```
 
-:::info Board-specific **AQA** requires linear search and binary search; binary search must be on
+:::info
+Board-specific **AQA** requires linear search and binary search; binary search must be on
 sorted data and may require trace tables. **CIE (9618)** requires linear search and binary search
 with pseudocode. **OCR (A)** requires linear and binary search; may also cover hash-based searching.
-**Edexcel** covers linear and binary search algorithms. :::
+**Edexcel** covers linear and binary search algorithms.
+:::
 
 ---
 
@@ -220,8 +224,10 @@ def binary_search_insert_position(A, x):
 Binary search can be used to find a threshold in a continuous or discrete answer space (e.g.,
 "minimum maximum", "maximum minimum" problems).
 
-:::tip Exam tip For exam questions, always state the precondition (sorted array) for binary search
-and trace through the algorithm step by step. Show the low, high, mid values at each iteration. :::
+:::tip
+Exam tip For exam questions, always state the precondition (sorted array) for binary search
+and trace through the algorithm step by step. Show the low, high, mid values at each iteration.
+:::
 
 ---
 

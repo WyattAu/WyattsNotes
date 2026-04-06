@@ -199,9 +199,11 @@ int main() {
 }
 ```
 
-:::info CTAD only works when there is exactly one viable deduction. If the constructor template and
+:::info
+CTAD only works when there is exactly one viable deduction. If the constructor template and
 the class template both participate in deduction and produce conflicting results, deduction fails
-[N4950 §16.3.1.7]. :::
+[N4950 §16.3.1.7].
+:::
 
 ### CTAD and Implicitly Generated Deduction Guides
 

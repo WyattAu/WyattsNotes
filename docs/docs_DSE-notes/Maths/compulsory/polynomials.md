@@ -32,8 +32,6 @@ A polynomial identity is an equality that holds for all values of the variable. 
 
 <details>
 <summary>Key identities at DSE level</summary>
-<p>
-
 - $(a+b)^2 = a^2 + 2ab + b^2$
 - $(a-b)^2 = a^2 - 2ab + b^2$
 - $(a+b)(a-b) = a^2 - b^2$
@@ -42,14 +40,10 @@ A polynomial identity is an equality that holds for all values of the variable. 
 - $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$
 - $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$
 - $a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2 + b^2 + c^2 - ab - bc - ca)$
-
-</p>
 </details>
 
 <details>
 <summary>Example: Using the method of undetermined coefficients</summary>
-<p>
-
 Find constants $A$, $B$, $C$ such that $x^2 + 4x + 6 \equiv A(x-1)^2 + B(x-1) + C$.
 
 Expanding the right-hand side:
@@ -65,8 +59,6 @@ Equating coefficients:
 - constant: $A - B + C = 6 \implies 1 - 6 + C = 6 \implies C = 11$
 
 Therefore $x^2 + 4x + 6 \equiv (x-1)^2 + 6(x-1) + 11$.
-
-</p>
 </details>
 
 ---
@@ -153,8 +145,6 @@ $$
 
 <details>
 <summary>Example: Finding a specific coefficient</summary>
-<p>
-
 Find the coefficient of $x^3$ in the expansion of $(2 - 3x)^7$.
 
 The general term is $T_{r+1} = \binom{7}{r} 2^{7-r}(-3x)^r$.
@@ -166,14 +156,10 @@ $$
 $$
 
 The coefficient of $x^3$ is $-15\,120$.
-
-</p>
 </details>
 
 <details>
 <summary>Example: Finding the constant term</summary>
-<p>
-
 Find the constant term in the expansion of $\left(x + \dfrac{2}{x}\right)^6$.
 
 The general term is $T_{r+1} = \binom{6}{r} x^{6-r} \left(\dfrac{2}{x}\right)^r = \binom{6}{r} \cdot 2^r \cdot x^{6-2r}$.
@@ -185,14 +171,10 @@ $$
 $$
 
 The constant term is $160$.
-
-</p>
 </details>
 
 <details>
 <summary>Example: Finding the middle term</summary>
-<p>
-
 Find the middle term in the expansion of $\left(1 + \dfrac{x}{2}\right)^{10}$.
 
 Since $n = 10$ (even), there is one middle term at position $\dfrac{n}{2} + 1 = 6$, i.e. $r = 5$:
@@ -200,8 +182,6 @@ Since $n = 10$ (even), there is one middle term at position $\dfrac{n}{2} + 1 = 
 $$
 T_6 = \binom{10}{5} \left(\frac{x}{2}\right)^5 = 252 \cdot \frac{x^5}{32} = \frac{63}{8} x^5
 $$
-
-</p>
 </details>
 
 ---
@@ -220,8 +200,6 @@ where $\deg r(x) < \deg g(x)$ or $r(x) = 0$.
 
 <details>
 <summary>Example: Long division</summary>
-<p>
-
 Divide $f(x) = 2x^3 + 3x^2 - 5x + 7$ by $g(x) = x^2 - x + 2$.
 
 $$
@@ -241,8 +219,6 @@ $$
 Quotient: $q(x) = 2x + 5$, Remainder: $r(x) = -4x - 3$.
 
 Verification: $(x^2 - x + 2)(2x + 5) + (-4x - 3) = 2x^3 + 3x^2 - 5x + 7$.
-
-</p>
 </details>
 
 ### Remainder Theorem
@@ -255,8 +231,6 @@ For a divisor of the form $(ax - b)$, set $x = \dfrac{b}{a}$ to obtain the remai
 
 <details>
 <summary>Example: Remainder theorem</summary>
-<p>
-
 Find the remainder when $f(x) = 3x^4 - 2x^3 + x - 5$ is divided by $(x - 2)$.
 
 By the Remainder Theorem, the remainder is $f(2)$:
@@ -264,14 +238,10 @@ By the Remainder Theorem, the remainder is $f(2)$:
 $$
 f(2) = 3(16) - 2(8) + 2 - 5 = 48 - 16 + 2 - 5 = 29
 $$
-
-</p>
 </details>
 
 <details>
 <summary>Example: Remainder with a non-monic linear divisor</summary>
-<p>
-
 Find the remainder when $f(x) = 2x^3 - 5x + 3$ is divided by $(2x + 1)$.
 
 Set $2x + 1 = 0 \implies x = -\dfrac{1}{2}$. The remainder is:
@@ -279,8 +249,6 @@ Set $2x + 1 = 0 \implies x = -\dfrac{1}{2}$. The remainder is:
 $$
 f\!\left(-\frac{1}{2}\right) = 2\left(-\frac{1}{2}\right)^3 - 5\left(-\frac{1}{2}\right) + 3 = -\frac{1}{4} + \frac{5}{2} + 3 = \frac{21}{4}
 $$
-
-</p>
 </details>
 
 ### Factor Theorem
@@ -293,21 +261,15 @@ This follows directly from the Remainder Theorem: if the remainder $f(c) = 0$, t
 
 <details>
 <summary>Example: Factor theorem</summary>
-<p>
-
 Show that $(x - 3)$ is a factor of $f(x) = x^3 - 4x^2 + x + 6$ and hence factorize $f(x)$ completely.
 
 $f(3) = 27 - 36 + 3 + 6 = 0$, so $(x - 3)$ is a factor.
 
 By division (or by comparing coefficients), $f(x) = (x - 3)(x^2 - x - 2) = (x-3)(x-2)(x+1)$.
-
-</p>
 </details>
 
 <details>
 <summary>Example: Finding an unknown constant</summary>
-<p>
-
 If $(x + 2)$ is a factor of $f(x) = x^3 + ax^2 - 3x + 10$, find $a$.
 
 By the Factor Theorem, $f(-2) = 0$:
@@ -315,8 +277,6 @@ By the Factor Theorem, $f(-2) = 0$:
 $$
 (-2)^3 + a(-2)^2 - 3(-2) + 10 = 0 \implies -8 + 4a + 6 + 10 = 0 \implies 4a + 8 = 0 \implies a = -2
 $$
-
-</p>
 </details>
 
 ---
@@ -327,32 +287,22 @@ $$
 
 <details>
 <summary>HCF (highest common factor)</summary>
-<p>
-
 Factor out the greatest common factor from all terms.
 
 $$
 6x^3 - 9x^2 + 12x = 3x(2x^2 - 3x + 4)
 $$
-
-</p>
 </details>
 
 <details>
 <summary>Grouping</summary>
-<p>
-
 $$
 x^3 + 2x^2 - 3x - 6 = x^2(x+2) - 3(x+2) = (x^2 - 3)(x+2)
 $$
-
-</p>
 </details>
 
 <details>
 <summary>Difference of squares</summary>
-<p>
-
 $$
 a^2 - b^2 = (a+b)(a-b)
 $$
@@ -364,14 +314,10 @@ $$
 $$
 9x^4 - 16y^2 = (3x^2 + 4y)(3x^2 - 4y)
 $$
-
-</p>
 </details>
 
 <details>
 <summary>Sum and difference of cubes</summary>
-<p>
-
 $$
 a^3 + b^3 = (a+b)(a^2 - ab + b^2)
 $$
@@ -387,14 +333,10 @@ $$
 $$
 125x^3 - 8 = (5x-2)(25x^2 + 10x + 4)
 $$
-
-</p>
 </details>
 
 <details>
 <summary>Quadratic trinomials</summary>
-<p>
-
 For $ax^2 + bx + c$, find two numbers $p$ and $q$ such that $pq = ac$ and $p + q = b$.
 
 $$
@@ -402,8 +344,6 @@ $$
 $$
 
 If the discriminant $\Delta = b^2 - 4ac < 0$, the quadratic cannot be factorized over $\mathbb{R}$.
-
-</p>
 </details>
 
 ### Factorization by the Factor Theorem
@@ -412,8 +352,6 @@ For polynomials of degree 3 or higher, use the Factor Theorem to find linear fac
 
 <details>
 <summary>Example: Complete factorization</summary>
-<p>
-
 Factorize $f(x) = 2x^3 + x^2 - 13x + 6$ completely.
 
 Test integer factors of $6$: try $x = 1$.
@@ -425,8 +363,6 @@ Try $x = 2$:
 $f(2) = 16 + 4 - 26 + 6 = 0$, so $(x-2)$ is a factor.
 
 Dividing: $f(x) = (x-2)(2x^2 + 5x - 3) = (x-2)(2x-1)(x+3)$.
-
-</p>
 </details>
 
 ---
@@ -442,15 +378,11 @@ To solve $f(x) = 0$:
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve $x^3 - 3x^2 - 4x + 12 = 0$.
 
 Factorizing by grouping: $x^2(x-3) - 4(x-3) = (x^2 - 4)(x-3) = (x-2)(x+2)(x-3) = 0$.
 
 Solutions: $x = 2, -2, 3$.
-
-</p>
 </details>
 
 ### Vieta's Formulas (Quadratic)
@@ -465,8 +397,6 @@ These relationships between roots and coefficients are essential for DSE problem
 
 <details>
 <summary>Example: Finding a new equation from roots</summary>
-<p>
-
 If $\alpha$ and $\beta$ are roots of $2x^2 - 5x + 1 = 0$, find the equation whose roots are $\alpha^2$ and $\beta^2$.
 
 From Vieta: $\alpha + \beta = \dfrac{5}{2}$, $\alpha\beta = \dfrac{1}{2}$.
@@ -484,47 +414,33 @@ $$
 $$
 
 The required equation is $x^2 - \dfrac{21}{4}x + \dfrac{1}{4} = 0$, or equivalently $4x^2 - 21x + 1 = 0$.
-
-</p>
 </details>
 
 <details>
 <summary>Example: Symmetric expressions in roots</summary>
-<p>
-
 If $\alpha$ and $\beta$ are roots of $x^2 - 6x + 4 = 0$, find the value of $\dfrac{1}{\alpha} + \dfrac{1}{\beta}$.
 
 $$
 \frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{6}{4} = \frac{3}{2}
 $$
-
-</p>
 </details>
 
 <details>
 <summary>Extension: Vieta's formulas for cubic equations</summary>
-<p>
-
 For $ax^3 + bx^2 + cx + d = 0$ with roots $\alpha, \beta, \gamma$:
 
 $$
 \alpha + \beta + \gamma = -\frac{b}{a}, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}, \quad \alpha\beta\gamma = -\frac{d}{a}
 $$
-
-</p>
 </details>
 
 ---
 
 <details>
 <summary>Wrap-up Questions</summary>
-<p>
-
 1. **Question:** Expand $(1 + 2x)^6$ and find the coefficient of $x^4$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    Using the binomial theorem:
 
    $$
@@ -538,15 +454,11 @@ $$
    $$
 
    The full expansion is $1 + 12x + 60x^2 + 160x^3 + 240x^4 + 192x^5 + 64x^6$.
-
-   </p>
    </details>
 
 2. **Question:** Find the constant term in the expansion of $\left(x^2 + \dfrac{1}{x}\right)^9$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    The general term is $T_{r+1} = \binom{9}{r} (x^2)^{9-r} \cdot \left(\dfrac{1}{x}\right)^r = \binom{9}{r} x^{18 - 3r}$.
 
    For the constant term: $18 - 3r = 0 \implies r = 6$.
@@ -556,15 +468,11 @@ $$
    $$
 
    The constant term is $84$.
-
-   </p>
    </details>
 
 3. **Question:** When $f(x) = 2x^3 + ax^2 + bx - 6$ is divided by $(x-1)$, the remainder is $-4$. When divided by $(x+2)$, the remainder is $30$. Find $a$ and $b$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    By the Remainder Theorem:
    - $f(1) = 2 + a + b - 6 = -4 \implies a + b = 0 \quad \text{(i)}$
    - $f(-2) = -16 + 4a - 2b - 6 = 30 \implies 4a - 2b = 52 \implies 2a - b = 26 \quad \text{(ii)}$
@@ -572,15 +480,11 @@ $$
    Adding (i) and (ii): $3a = 26 \implies a = \dfrac{26}{3}$.
 
    From (i): $b = -\dfrac{26}{3}$.
-
-   </p>
    </details>
 
 4. **Question:** Given that $(x - 3)$ and $(x + 1)$ are factors of $f(x) = x^3 + ax^2 + bx + c$, find $a$, $b$, and $c$. Hence factorize $f(x)$ completely.
    <details>
    <summary>Answer</summary>
-   <p>
-
    By the Factor Theorem:
    - $f(3) = 27 + 9a + 3b + c = 0 \quad \text{(i)}$
    - $f(-1) = -1 + a - b + c = 0 \quad \text{(ii)}$
@@ -631,29 +535,21 @@ $$
    There are infinitely many cubics with $(x-3)$ and $(x+1)$ as factors. Assuming the problem intends a monic cubic (which it is, with leading coefficient $1$), we write $f(x) = (x-3)(x+1)(x - d)$ where $d$ is the third root. Since no further condition is given, the general answer is:
 
    $a = -(d+2)$, $b = 2d - 3$, $c = 3d$, and $f(x) = (x-3)(x+1)(x-d)$ for any real $d$.
-
-   </p>
    </details>
 
 5. **Question:** Factorize $x^4 - 5x^2 + 4$ completely.
    <details>
    <summary>Answer</summary>
-   <p>
-
    Let $u = x^2$:
 
    $$
    u^2 - 5u + 4 = (u-1)(u-4) = (x^2 - 1)(x^2 - 4) = (x-1)(x+1)(x-2)(x+2)
    $$
-
-   </p>
    </details>
 
 6. **Question:** If $\alpha$ and $\beta$ are roots of $3x^2 - 8x + 2 = 0$, find the value of $\alpha^3 + \beta^3$ without solving the equation.
    <details>
    <summary>Answer</summary>
-   <p>
-
    From Vieta: $\alpha + \beta = \dfrac{8}{3}$, $\alpha\beta = \dfrac{2}{3}$.
 
    $$
@@ -663,15 +559,11 @@ $$
    $$
    = \frac{512}{27} - \frac{48}{9} = \frac{512}{27} - \frac{144}{27} = \frac{368}{27}
    $$
-
-   </p>
    </details>
 
 7. **Question:** Expand $(1 - 3x)^5$ in ascending powers of $x$ up to and including the term in $x^3$. Use the expansion to find an approximate value of $(0.97)^5$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    $$
    (1-3x)^5 = \binom{5}{0} + \binom{5}{1}(-3x) + \binom{5}{2}(-3x)^2 + \binom{5}{3}(-3x)^3 + \cdots
    $$
@@ -685,41 +577,30 @@ $$
    $$
    (0.97)^5 \approx 1 - 15(0.01) + 90(0.0001) - 270(0.000001) = 1 - 0.15 + 0.009 - 0.00027 = 0.85873
    $$
-
-   </p>
    </details>
 
 8. **Question:** The remainder when $f(x) = x^3 + px^2 + qx + 6$ is divided by $(x-1)$ is $12$. The remainder when $f(x)$ is divided by $(x+1)$ is $18$. Find $p$ and $q$.
    <details>
    <summary>Answer</summary>
-   <p>
    - $f(1) = 1 + p + q + 6 = 12 \implies p + q = 5 \quad \text{(i)}$
    - $f(-1) = -1 + p - q + 6 = 18 \implies p - q = 13 \quad \text{(ii)}$
 
    Adding: $2p = 18 \implies p = 9$.
 
    From (i): $q = -4$.
-
-   </p>
    </details>
 
 9. **Question:** Prove that $\binom{n}{r} = \binom{n}{n-r}$ using the definition of binomial coefficients.
    <details>
    <summary>Answer</summary>
-   <p>
-
    $$
    \binom{n}{n-r} = \frac{n!}{(n-r)!\,[n-(n-r)]!} = \frac{n!}{(n-r)!\,r!} = \binom{n}{r}
    $$
-
-   </p>
    </details>
 
 10. **Question:** Find the coefficient of $x^5$ in the expansion of $(1 + x)^8(1 - x)^6$.
     <details>
     <summary>Answer</summary>
-    <p>
-
     Expand each factor using the binomial theorem and collect the $x^5$ terms.
 
     From $(1+x)^8$, the terms contributing to $x^5$ are $x^k$ where $k \leq 5$; from $(1-x)^6$, the term $(-x)^{5-k}$.
@@ -741,15 +622,11 @@ $$
     Sum: $-6 + 120 - 560 + 840 - 420 + 56 = 30$.
 
     The coefficient of $x^5$ is $30$.
-
-    </p>
     </details>
 
 11. **Question:** Let $\alpha$ and $\beta$ be the roots of $x^2 - 7x + 3 = 0$. Form a quadratic equation whose roots are $\dfrac{1}{\alpha}$ and $\dfrac{1}{\beta}$.
     <details>
     <summary>Answer</summary>
-    <p>
-
     From Vieta: $\alpha + \beta = 7$, $\alpha\beta = 3$.
 
     Sum of new roots: $\dfrac{1}{\alpha} + \dfrac{1}{\beta} = \dfrac{\alpha + \beta}{\alpha\beta} = \dfrac{7}{3}$.
@@ -757,23 +634,15 @@ $$
     Product of new roots: $\dfrac{1}{\alpha} \cdot \dfrac{1}{\beta} = \dfrac{1}{3}$.
 
     The equation is $x^2 - \dfrac{7}{3}x + \dfrac{1}{3} = 0$, or $3x^2 - 7x + 1 = 0$.
-
-    </p>
     </details>
 
 12. **Question:** Factorize $f(x) = x^3 - 3x^2 + 4$ completely.
     <details>
     <summary>Answer</summary>
-    <p>
-
     Test integer factors of $4$: try $x = -1$.
 
     $f(-1) = -1 - 3 + 4 = 0$, so $(x+1)$ is a factor.
 
     Dividing: $f(x) = (x+1)(x^2 - 4x + 4) = (x+1)(x-2)^2$.
-
-    </p>
     </details>
-
-</p>
 </details>

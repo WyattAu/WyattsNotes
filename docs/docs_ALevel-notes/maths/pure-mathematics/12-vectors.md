@@ -18,8 +18,10 @@ slug: vectors
 | OCR (A)    | Paper 1, 2 | Includes vector equations of lines                 |
 | CIE (9709) | P1, P2, P3 | 2D in P1; 3D and lines in P2/P3                    |
 
-:::info The formula booklet gives the scalar product formula. You must be comfortable working in 3D
-and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation. :::
+:::info
+The formula booklet gives the scalar product formula. You must be comfortable working in 3D
+and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation.
+:::
 
 ---
 
@@ -173,9 +175,11 @@ $$x = a_1 + tb_1, \quad y = a_2 + tb_2, \quad z = a_3 + tb_3$$
 
 In 2D, eliminating $t$: $\dfrac{x - a_1}{b_1} = \dfrac{y - a_2}{b_2}$.
 
-:::warning A vector equation of a line is not unique. Different points on the line can be used as
+:::warning
+A vector equation of a line is not unique. Different points on the line can be used as
 $\mathbf{a}$, and the direction vector $\mathbf{b}$ can be any non-zero scalar multiple of the
-direction. Always check your answer gives a point and direction consistent with the question. :::
+direction. Always check your answer gives a point and direction consistent with the question.
+:::
 
 ---
 

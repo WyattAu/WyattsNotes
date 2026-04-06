@@ -26,9 +26,11 @@ they are among the most powerful tools in analysis and applied mathematics.
 | OCR (A) | Paper 1 | Maclaurin series; standard series; applications                                        |
 | CIE     | P2      | Maclaurin series; expansion of compound functions; range of validity                   |
 
-:::info All boards require the standard Maclaurin series. Edexcel and CIE additionally require
+:::info
+All boards require the standard Maclaurin series. Edexcel and CIE additionally require
 Taylor series about $x = a$. The formula booklet lists the standard Maclaurin series — you must be
-able to derive them and apply them. :::
+able to derive them and apply them.
+:::
 
 ---
 
@@ -254,8 +256,10 @@ $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \text{for } |x| < 1}$$
 
 $\square$
 
-:::tip The geometric series is the foundation for many other series. The Maclaurin series for
-$\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it. :::
+:::tip
+The geometric series is the foundation for many other series. The Maclaurin series for
+$\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it.
+:::
 
 ---
 
@@ -325,7 +329,8 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
 
 ## 6. Key Results and Pitfalls
 
-:::warning **Common errors:**
+:::warning
+**Common errors:**
 
 1. **Wrong coefficients.** The Maclaurin coefficient of $x^n$ is $\dfrac{f^{(n)}(0)}{n!}$, not
    $f^{(n)}(0)$. Always divide by the factorial.
@@ -338,15 +343,18 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
    $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
 
 4. **Sign errors in alternating series.** $\sin x$ and $\cos x$ have alternating signs:
-   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
+$\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$).
+:::
 
-:::tip **Exam strategy:**
+:::tip
+**Exam strategy:**
 
 - Memorise the six standard series. Derive others from them by substitution and algebra.
 - For compound functions ($e^{x^2}\sin x$), multiply series term by term and collect like powers.
 - Always state the range of validity when asked.
 - To find a Maclaurin series efficiently, compute successive derivatives at $x = 0$ and look for the
-  pattern. :::
+pattern.
+:::
 
 ---
 

@@ -57,8 +57,10 @@ $$
     \epsilon = -N\frac{\Delta \Phi_B}{\Delta t}
 $$
 
-:::info One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
-generated to oppose the change in flux through the coil. :::
+:::info
+One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
+generated to oppose the change in flux through the coil.
+:::
 
 ## Lenz's Law
 
@@ -78,8 +80,10 @@ change in flux, it would create a runaway effect producing infinite energy.
    original field (same direction as the original field).
 4. Use the right-hand grip rule to find the current direction from the magnetic field direction.
 
-:::tip Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
-induced current, and (b) **why** it flows in that direction (to oppose the change in flux). :::
+:::tip
+Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
+induced current, and (b) **why** it flows in that direction (to oppose the change in flux).
+:::
 
 ## Motional EMF
 
@@ -173,9 +177,11 @@ $$
 - **Frequency** ($f$): number of complete cycles per second, $f = \frac{\omega}{2\pi}$
 - **Period** ($T$): time for one complete cycle, $T = \frac{1}{f}$
 
-:::tip Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
+:::tip
+Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
 average power in AC circuits:
-$P_{\text{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\text{rms}}^2}{R}$ :::
+$P_{\text{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\text{rms}}^2}{R}$
+:::
 
 ## Transformers
 
@@ -288,9 +294,11 @@ solenoid.
 | Transformer ratio  | $\frac{V_s}{V_p} = \frac{N_s}{N_p}$          | —           |
 | Energy in inductor | $E = \frac{1}{2}LI^2$                        | J           |
 
-:::tip Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
+:::tip
+Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
 conservation. Make sure you can explain why Lenz's law is necessary (conservation of energy) and
-derive the motional EMF expression from Faraday's law. :::
+derive the motional EMF expression from Faraday's law.
+:::
 
 :::
 

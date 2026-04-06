@@ -94,7 +94,8 @@ data = json.loads(json_str, object_hook=custom_decoder)
 print(type(data["created"]))  # <class 'datetime.datetime'>
 ```
 
-:::info Python's `json` module only handles a subset of types natively: `dict`, `list`, `str`,
+:::info
+Python's `json` module only handles a subset of types natively: `dict`, `list`, `str`,
 `int`, `float`, `bool`, and `None`. Everything else requires custom encoding.
 :::
 
@@ -164,7 +165,8 @@ print(pickle.HIGHEST_PROTOCOL)      # 5
 data = pickle.dumps(obj, protocol=pickle.HIGHEST_PROTOCOL)
 ```
 
-:::danger **Never unpickle data from untrusted sources.** `pickle.loads()` can execute arbitrary
+:::danger
+**Never unpickle data from untrusted sources.** `pickle.loads()` can execute arbitrary
 code during deserialization. A malicious pickle payload can import modules, execute shell commands,
 or access the filesystem.
 
@@ -261,7 +263,8 @@ print(data["database"]["host"])  # localhost
 
 ### safe_load vs load
 
-:::warning Always use `yaml.safe_load()` instead of `yaml.load()`. The latter can deserialize
+:::warning
+Always use `yaml.safe_load()` instead of `yaml.load()`. The latter can deserialize
 arbitrary Python objects, including calls to `subprocess.Popen` or `os.system`:
 
 ```yaml
@@ -372,7 +375,8 @@ name = "viewer"
 role = "readonly"
 ```
 
-:::tip Use TOML for configuration files, JSON for APIs and data interchange, YAML for complex
+:::tip
+Use TOML for configuration files, JSON for APIs and data interchange, YAML for complex
 human-readable data, and pickle only for Python-internal serialization where security is not a
 concern.
 :::
@@ -434,7 +438,8 @@ with open("quoted.csv", "w", newline="") as f:
 # csv.QUOTE_NONE — never quote (raises error if quoting needed)
 ```
 
-:::warning Always open CSV files with `newline=""` as specified in the `csv` module documentation.
+:::warning
+Always open CSV files with `newline=""` as specified in the `csv` module documentation.
 On Python 3, failing to do so can cause extra blank lines in the output on some platforms.
 :::
 

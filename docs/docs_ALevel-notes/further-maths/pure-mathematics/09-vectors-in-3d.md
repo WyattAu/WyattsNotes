@@ -25,9 +25,11 @@ tools are essential for geometry, mechanics, and physics at university level.
 | OCR (A) | Paper 1 | 3D vectors, scalar product, vector product, planes                        |
 | CIE     | P1      | 3D vectors, scalar product, vector product, lines, planes, intersections  |
 
-:::info All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
+:::info
+All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
 scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
-planes. :::
+planes.
+:::
 
 ---
 
@@ -161,7 +163,8 @@ $\mathbf{b}$, and its direction is given by the right-hand rule.
 - $\mathbf{i}\times\mathbf{j} = \mathbf{k}$, $\mathbf{j}\times\mathbf{k} = \mathbf{i}$,
   $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
-:::warning The cross product is **not** commutative:
+:::warning
+The cross product is **not** commutative:
 $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is only defined in 3D.
 :::
 
@@ -354,9 +357,11 @@ $\square$
 - $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$
   are coplanar
 
-:::info The scalar triple product being zero is a test for coplanarity. If four points $A$, $B$,
+:::info
+The scalar triple product being zero is a test for coplanarity. If four points $A$, $B$,
 $C$, $D$ are coplanar, then
-$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$. :::
+$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
+:::
 
 ---
 

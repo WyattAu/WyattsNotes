@@ -64,10 +64,12 @@ $$\pi = \Delta M - \Delta V + \Delta Y \approx \Delta M - \Delta Y$$
 | Self-correction         | Slow or non-existent                     | Automatic, though may take time                              |
 | Government intervention | Essential for stability                  | Minimise — rules-based policy                                |
 
-:::info Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
+:::info
+Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
 (9708) Paper 4 often asks students to evaluate the effectiveness of demand-side policies, requiring
 them to contrast Keynesian and monetarist perspectives. Edexcel requires students to discuss the
-"battle of the economists" in the context of policy debates. :::
+"battle of the economists" in the context of policy debates.
+:::
 
 ### 1.4 Evaluation: The Keynesian-Monetarist Debate in Practice
 
@@ -137,16 +139,12 @@ inflation exceeds target, and by 0.5% for every 1% that output exceeds potential
 
 <details>
 <summary>Worked Example</summary>
-<p>
-
 Suppose $r^* = 2\%$, $\pi^* = 2\%$, current $\pi = 5\%$, output gap = $-3\%$ (recession).
 
 $$i = 2 + 5 + 0.5(5 - 2) + 0.5(-3) = 2 + 5 + 1.5 - 1.5 = 7\%$$
 
 The Taylor Rule prescribes a 7% policy rate: above neutral (4%) to fight inflation, but moderated by
 the recessionary output gap.
-
-</p>
 </details>
 
 ### 2.3 Arguments for Rules
@@ -205,12 +203,14 @@ Most modern central banks use **inflation targeting with discretion**:
 
 $$\text{UK (1992–present), NZ (1990–present), Canada (1991–present), Eurozone (2003–present)}$$
 
-:::info Board-Specific Note AQA (Paper 2) typically asks students to evaluate the effectiveness of
+:::info
+Board-Specific Note AQA (Paper 2) typically asks students to evaluate the effectiveness of
 monetary policy and may require discussion of the transmission mechanism. Edexcel (Paper 3) often
 asks about the role of central bank independence in achieving macroeconomic objectives. OCR
 (Paper 3) may ask students to compare different monetary policy frameworks. CIE (9708) Paper 4
 expects students to evaluate the relative merits of rules vs discretion with reference to specific
-country examples. :::
+country examples.
+:::
 
 ## 3. The Lucas Critique
 
@@ -449,11 +449,13 @@ governments a "blank cheque" risks fiscal profligacy and loss of market confiden
 apply to countries that borrow in foreign currency (emerging markets — most developing countries).
 (5) Assumes away the crowding out channel and Ricardian equivalence too casually.
 
-:::warning Common Pitfall MMT is often caricatured as "deficits don't matter." This is a
+:::warning
+Common Pitfall MMT is often caricatured as "deficits don't matter." This is a
 misrepresentation. MMT argues that deficits should be used to achieve real objectives (full
 employment) and that the only constraint is inflation. It does not claim that unlimited deficits are
 harmless. However, the practical difficulty of knowing when inflation will emerge makes MMT's policy
-prescriptions risky. :::
+prescriptions risky.
+:::
 
 ### 5.3 Exam Technique: Evaluating Policy Frameworks
 
@@ -522,11 +524,13 @@ dollar, partially crowding out the fiscal stimulus.
 amplified. When they pull in opposite directions, they partially offset each other, and the net
 effect depends on the relative strength of each.
 
-:::info Board-Specific Note AQA Paper 2 (Section B) often requires students to evaluate the
+:::info
+Board-Specific Note AQA Paper 2 (Section B) often requires students to evaluate the
 effectiveness of policy mixes. Edexcel Paper 3 expects discussion of policy conflicts and
 trade-offs. OCR may ask about the role of the Treasury and `` `{BoE}` `` in coordinating policy. CIE
 Paper 4 frequently asks students to assess whether government intervention can achieve multiple
-macroeconomic objectives simultaneously. :::
+macroeconomic objectives simultaneously.
+:::
 
 ## 7. Nominal GDP Targeting: An Alternative Framework
 
@@ -574,9 +578,7 @@ statement be less valid?
 
 <details>
 <summary>Hint</summary>
-<p>
 From $MV = PY$: if $V$ is stable (Friedman's assumption) and $Y$ is at potential in the long run (LRAS vertical), then $\Delta P \approx \Delta M$. Sustained inflation requires sustained money supply growth. Conditions where this is less valid: (1) $V$ is not stable — during financial crises, velocity falls sharply (people hoard cash), so $\Delta M$ does not translate to $\Delta P$. (2) The economy has a large output gap — $Y$ can increase, absorbing the money supply growth. (3) Supply shocks cause inflation without money supply growth (cost-push). (4) In the short run, prices are sticky, so $\Delta M$ affects $Y$ not $P$ (Keynesian view). Overall: the monetarist argument is strong in the long run but weaker in the short run and during crises.
-</p>
 </details>
 
 **Problem 2.** Suppose the central bank follows the Taylor Rule with $r^* = 2\%$, $\pi^* = 2\%$, and
@@ -586,9 +588,7 @@ Comment on the results.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) $i = 2 + 3 + 0.5(1) + 0.5(0) = 5.5\%$. Rate above neutral (4%) to fight inflation. (b) $i = 2 + 2 + 0.5(0) + 0.5(-4) = 2\%$. Rate below neutral — aggressive easing for the recession. (c) $i = 2 + 6 + 0.5(4) + 0.5(1) = 2 + 6 + 2 + 0.5 = 10.5\%$. Very aggressive tightening — high inflation combined with above-potential output. The Taylor Rule responds symmetrically to inflation and output deviations, providing a systematic and transparent framework.
-</p>
 </details>
 
 **Problem 3.** Explain the Lucas critique. Why does it imply that traditional macroeconomic models
@@ -596,9 +596,7 @@ are unreliable for policy evaluation? Illustrate your answer with the Phillips c
 
 <details>
 <summary>Hint</summary>
-<p>
 The Lucas critique: when policy changes, people's expectations and behaviour change, so relationships estimated under the old policy regime are no longer valid. Phillips curve example: the 1958–1969 Phillips curve showed a stable trade-off. Governments tried to exploit it by creating inflation to reduce unemployment. But once agents (workers, firms) learned that inflation was being deliberately created, they built inflation expectations into wage and price setting. The Phillips curve shifted upward — for any given unemployment rate, inflation was now higher. The historical relationship was not a structural law but a function of the low-inflation policy regime. Once the regime changed (higher inflation policy), the relationship broke down. Implication: to evaluate policy, we need models based on deep structural parameters (preferences, technology) that do not change when policy changes — i.e., micro-founded models. *Revision: see [Macroeconomic Performance](/docs/docs_ALevel-notes/economics/macro/macroeconomic-performance) for the Phillips curve derivation.*
-</p>
 </details>
 
 **Problem 4.** "Quantitative easing was a necessary and effective response to the 2008 financial
@@ -606,9 +604,7 @@ crisis, but it has created significant long-term problems." Evaluate this statem
 
 <details>
 <summary>Hint</summary>
-<p>
 Necessary: (1) Interest rates were at the ZLB — conventional monetary policy was exhausted. (2) QE prevented a deeper recession and deflation. (3) It stabilised financial markets by providing liquidity. (4) Evidence suggests it lowered long-term rates by 1–2 percentage points. Effective: (1) UK GDP returned to pre-crisis levels by 2013. (2) Inflation remained close to target (until 2021). (3) Financial markets stabilised. Long-term problems: (1) Wealth inequality — QE inflated asset prices, benefiting the wealthy (BoE estimated top 5% gained 40% of benefits). (2) Asset bubbles — property prices surged, creating affordability issues. (3) Zombie firms — low rates kept unproductive firms alive. (4) Exit strategy — unwinding QE without disrupting markets is challenging. (5) Distorted incentives — prolonged low rates may have delayed necessary structural reforms. *Revision: see [The Financial Sector](/docs/docs_ALevel-notes/economics/macro/the-financial-sector) for QE mechanisms.*
-</p>
 </details>
 
 **Problem 5.** The economy is experiencing stagflation: inflation is 8% and rising, while GDP growth
@@ -617,9 +613,7 @@ policy dilemma and evaluate possible policy responses.
 
 <details>
 <summary>Hint</summary>
-<p>
 The dilemma: the economy faces both high inflation (requiring contractionary policy) and low growth (requiring expansionary policy). The AD/AS analysis: SRAS has shifted left (cost-push — e.g., oil prices, supply chain disruption). This raises $P$ and reduces $Y$ simultaneously. Option 1: Do nothing → wait for self-correction (wages fall, SRAS shifts right). But this takes time and causes prolonged unemployment. Option 2: Contractionary monetary policy (raise rates) → AD shifts left → inflation falls but recession deepens. Option 3: Expansionary fiscal policy → AD shifts right → output rises but inflation worsens. Option 4: Supply-side policy → shift SRAS right → both $P$ falls and $Y$ rises (the ideal solution, but takes time). Option 5: Accept higher inflation temporarily → use nominal GDP targeting instead of inflation targeting. Best approach: a combination of tight monetary policy (to anchor expectations), targeted fiscal support (to protect the vulnerable), and aggressive supply-side reform (to address the root cause). *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/aggregate-demand-and-supply).*
-</p>
 </details>
 
 **Problem 6.** "Inflation targeting has been a success and should continue to be the primary
@@ -628,9 +622,7 @@ since 1992.
 
 <details>
 <summary>Hint</summary>
-<p>
 Successes: (1) UK inflation averaged 2.0% from 1992–2020, compared to 10%+ in the 1970s. (2) Inflation expectations became well-anchored. (3) The Bank of England's independence (1997) enhanced credibility. (4) Transparent framework improved accountability. Limitations: (1) Pre-2008, inflation targeting contributed to neglect of financial stability (the BoE focused on CPI while a housing bubble built up). (2) Post-2021, inflation targeting failed to prevent the inflation surge (10.1% in 2022) — the target was breached by a wide margin for an extended period. (3) Inflation targeting may have been too tight post-2008, preventing faster recovery (the BoE could have been more aggressive). (4) A single target ignores output and employment objectives. Reform proposals: (1) Nominal GDP targeting (more flexible, accommodates supply shocks). (2) Average inflation targeting (Fed's new approach, 2020). (3) Dual mandate (like the Fed: price stability + maximum employment). (4) Financial stability as a co-equal objective.
-</p>
 </details>
 
 **Problem 7.** Explain the time-inconsistency problem. How does an independent central bank with an
@@ -638,9 +630,7 @@ inflation target help to solve it?
 
 <details>
 <summary>Hint</summary>
-<p>
 Time inconsistency (Kydland & Prescott, 1977): the optimal policy ex ante (when expectations are being formed) differs from the optimal policy ex post (after expectations are set). The central bank promises low inflation. Once workers set moderate wage demands based on this promise, the bank is tempted to create surprise inflation to boost output (moving along the SRPC). Rational agents anticipate this, so they don't believe the promise. Result: high inflation with no output gain (inflationary bias). Solution: an independent central bank with an explicit inflation target solves this by: (1) Removing the political incentive to boost output before elections. (2) Creating a reputation for low inflation — if the bank deviates, it loses credibility. (3) Providing a clear benchmark for accountability. (4) Delegating to a "conservative" central banker (Rogoff, 1985) who places greater weight on inflation than the government. The UK's institutional framework (Bank of England independence + 2% inflation target + MPC) is designed to address the time-inconsistency problem.
-</p>
 </details>
 
 **Problem 8.** "The COVID-19 pandemic demonstrated that the Keynesian view of macroeconomic policy
@@ -648,9 +638,7 @@ is more relevant than the monetarist view." Discuss.
 
 <details>
 <summary>Hint</summary>
-<p>
 Arguments for: (1) The pandemic caused a massive demand shock (lockdowns → AD collapsed). Keynesian fiscal stimulus (furlough, business grants) was essential to prevent a depression. (2) Monetary policy hit the ZLB — conventional tools were exhausted, confirming the Keynesian concern about the liquidity trap. (3) QE (an unconventional monetary tool) was essentially Keynesian in spirit — government-issued liquidity to support demand. (4) The multiplier was large (estimated 1.0–1.5), validating Keynesian predictions. (5) Austerity during recovery (monetarist approach) was widely rejected as harmful. Arguments against: (1) The post-pandemic inflation surge showed that excessive money creation (monetarist concern) does cause inflation — money supply grew 20%+ in 2020. (2) The Bank of England's eventual tightening (rates from 0.1% to 5.25%) was monetarist in spirit — controlling the money supply/inflation. (3) Supply-side constraints (labour shortages, supply chains) were the primary driver of inflation, not just demand. Best answer: the pandemic validated aspects of both views — Keynesianism for the recession response (active fiscal policy essential at the ZLB), monetarism for the inflation response (tighten monetary policy when inflation rises). The modern consensus is a pragmatic synthesis.
-</p>
 </details>
 
 **Problem 9.** "Brexit has made it harder for the UK government to achieve its macroeconomic
@@ -658,8 +646,6 @@ objectives." Evaluate this statement with reference to the period 2016–2025.
 
 <details>
 <summary>Hint</summary>
-<p>
-
 Macroeconomic objectives: economic growth, price stability, low unemployment, balance of payments
 equilibrium. Brexit effects: (1) **Growth**: the OBR estimated Brexit would reduce long-run
 productivity by 4% — this shifts LRAS left, reducing trend growth. UK GDP growth averaged 1.4%
@@ -675,8 +661,6 @@ regulations, and sign trade deals (e.g., CPTPP, 2024). Evaluation: on balance, t
 Brexit has made macroeconomic management harder, primarily through supply-side constraints and
 reduced trade openness. However, some effects are confounded with COVID-19, making attribution
 difficult.
-
-</p>
 </details>
 
 **Problem 10.** To what extent is the Lucas critique relevant for modern macroeconomic
@@ -684,8 +668,6 @@ policy-making? Discuss with reference to the UK's experience of quantitative eas
 
 <details>
 <summary>Hint</summary>
-<p>
-
 The Lucas critique argues that relationships estimated under one policy regime may not hold when
 policy changes. Application to QE: (1) **Interest rate channel**: pre-2008 models estimated a stable
 relationship between the policy rate and long-term borrowing costs. QE changed this relationship by
@@ -702,8 +684,6 @@ The Taylor Rule, while not followed mechanically, still provides a useful benchm
 `` `{BoE}` ``'s rate decisions. Overall: the Lucas critique remains highly relevant — it reminds us
 that the unprecedented scale of QE means historical evidence may be an unreliable guide to its
 effects, particularly regarding inflation and the exit strategy.
-
-</p>
 </details>
 
 **Problem 11.** Assess the case for replacing inflation targeting with nominal GDP targeting as the
@@ -711,8 +691,6 @@ primary monetary policy framework for the Bank of England.
 
 <details>
 <summary>Hint</summary>
-<p>
-
 Case for NGDP targeting: (1) **Automatic stabiliser**: NGDP targeting would have led to a more
 accommodative response after the 2008 crisis and during COVID — the `` `{BoE}` `` would not have
 tightened prematurely as inflation rose due to supply shocks. (2) **Handles supply shocks better**:
@@ -732,8 +710,6 @@ after supply shocks may benefit borrowers at the expense of savers. Conclusion: 
 intellectually appealing but faces significant practical obstacles. The best reform may be a more
 flexible inflation target (average inflation targeting, as adopted by the Fed in 2020) rather than a
 complete regime change.
-
-</p>
 </details>
 
 :::

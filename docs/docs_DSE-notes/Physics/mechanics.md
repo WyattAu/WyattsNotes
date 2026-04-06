@@ -47,8 +47,10 @@ Where:
 - $s$ = displacement
 - $t$ = time
 
-:::info These equations are only valid for **uniform acceleration**. When acceleration varies,
-calculus or graphical methods must be used. :::
+:::info
+These equations are only valid for **uniform acceleration**. When acceleration varies,
+calculus or graphical methods must be used.
+:::
 
 ### Worked Example 1
 
@@ -94,8 +96,10 @@ For a velocity-time graph:
 - Area under the graph = displacement
 - A straight line indicates uniform acceleration
 
-:::tip The area under a velocity-time graph gives displacement. For non-linear graphs, use counting
-squares or integration. :::
+:::tip
+The area under a velocity-time graph gives displacement. For non-linear graphs, use counting
+squares or integration.
+:::
 
 ### Free Fall
 
@@ -106,8 +110,10 @@ $$g \approx 9.81 \text{ m/s}^2$$
 
 The acceleration is **downward** regardless of whether the object is moving up or down.
 
-:::warning Air resistance is neglected in ideal free-fall problems unless the question explicitly
-states otherwise. :::
+:::warning
+Air resistance is neglected in ideal free-fall problems unless the question explicitly
+states otherwise.
+:::
 
 ### Worked Example 3
 
@@ -146,8 +152,10 @@ Time of flight:
 
 $$T = \frac{2u\sin\theta}{g}$$
 
-:::info In projectile motion, the horizontal and vertical motions are **independent** of each other.
-They share only the common variable $t$ (time). :::
+:::info
+In projectile motion, the horizontal and vertical motions are **independent** of each other.
+They share only the common variable $t$ (time).
+:::
 
 ### Worked Example 4
 
@@ -196,8 +204,10 @@ force on body `A`.
 
 $$F_{AB} = -F_{BA}$$
 
-:::warning Newton's third law pairs act on **different** bodies. Never add action-reaction pairs
-together as they do not act on the same object. :::
+:::warning
+Newton's third law pairs act on **different** bodies. Never add action-reaction pairs
+together as they do not act on the same object.
+:::
 
 ### Types of Forces
 
@@ -245,7 +255,8 @@ $$f_k = \mu_k N$$
 
 Where $\mu$ is the coefficient of friction and $N$ is the normal reaction force.
 
-:::tip $\mu_k \lt \mu_s$ is always true. Kinetic friction is less than the maximum static friction.
+:::tip
+$\mu_k \lt \mu_s$ is always true. Kinetic friction is less than the maximum static friction.
 :::
 
 ### Worked Example 6
@@ -329,8 +340,10 @@ Or equivalently:
 
 $$E_{k1} + E_{p1} = E_{k2} + E_{p2} + W_{\text{lost to friction}}$$
 
-:::info When applying conservation of energy, always identify all forms of energy at each point in
-the motion. :::
+:::info
+When applying conservation of energy, always identify all forms of energy at each point in
+the motion.
+:::
 
 ### Worked Example 7
 
@@ -403,7 +416,8 @@ $$\text{Impulse} = F\Delta t = \Delta p$$
 
 Impulse equals the change in momentum. The SI unit is N s.
 
-:::tip Impulse is the area under a force-time graph. For a variable force, use $J = \int F \, dt$.
+:::tip
+Impulse is the area under a force-time graph. For a variable force, use $J = \int F \, dt$.
 :::
 
 ### Worked Example 9
@@ -430,8 +444,10 @@ magnitude of the average force is $1500 \text{ N}$.
 **Perfectly inelastic collision:** The objects stick together after collision (maximum kinetic
 energy loss).
 
-:::info Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
-energy is only conserved in perfectly elastic collisions. :::
+:::info
+Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
+energy is only conserved in perfectly elastic collisions.
+:::
 
 ### Worked Example 10
 
@@ -515,9 +531,11 @@ The centripetal force required is:
 
 $$F_c = \frac{mv^2}{r} = m\omega^2 r$$
 
-:::warning Centripetal force is **not** a new force. It is the name given to the resultant force
+:::warning
+Centripetal force is **not** a new force. It is the name given to the resultant force
 directed towards the centre of the circle. It is provided by gravity, tension, friction, normal
-reaction, or a combination of these. :::
+reaction, or a combination of these.
+:::
 
 ### Worked Example 12
 
@@ -600,9 +618,11 @@ Orbital period:
 
 $$T = \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r^3}{GM}}$$
 
-:::info Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
+:::info
+Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
 remaining above the same point on the equator. They orbit at approximately $42,300 \text{ km}$ from
-the centre of the Earth. :::
+the centre of the Earth.
+:::
 
 ### Worked Example 14
 
@@ -755,8 +775,10 @@ For a mass-spring system: $T = 2\pi\sqrt{\frac{m}{k}}$
 
 For a simple pendulum (small angle approximation): $T = 2\pi\sqrt{\frac{L}{g}}$
 
-:::info The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
-keep consistent time even as the swing gradually decreases. :::
+:::info
+The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
+keep consistent time even as the swing gradually decreases.
+:::
 
 ### Worked Example 15
 

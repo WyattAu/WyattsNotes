@@ -18,8 +18,10 @@ slug: kinematics
 | OCR (A)    | Paper 1 | Includes variable acceleration |
 | CIE (9709) | P1, P4  | 1D in P1; 2D/projectiles in P4 |
 
-:::info The formula booklet lists the SUVAT equations. You must be able to select the correct
-equation and apply it to multi-stage problems. :::
+:::info
+The formula booklet lists the SUVAT equations. You must be able to select the correct
+equation and apply it to multi-stage problems.
+:::
 
 ---
 
@@ -82,8 +84,10 @@ $$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \text{(useful when 
 | $v^2 = u^2 + 2as$          | $v, u, a, s$ | $t$     |
 | $s = \frac{1}{2}(u+v)t$    | $s, u, v, t$ | $a$     |
 
-:::tip Always write down what you know and what you need. Choose the equation that contains all
-known quantities and the unknown. Draw a diagram with positive direction clearly marked. :::
+:::tip
+Always write down what you know and what you need. Choose the equation that contains all
+known quantities and the unknown. Draw a diagram with positive direction clearly marked.
+:::
 
 ---
 

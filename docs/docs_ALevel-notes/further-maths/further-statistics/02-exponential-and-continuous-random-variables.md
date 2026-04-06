@@ -25,9 +25,11 @@ interval.
 | OCR (A)    | Paper 2 | Continuous RVs and exponential                       |
 | CIE (9231) | S2      | Both continuous RVs and exponential covered          |
 
-:::info The exponential distribution is the continuous counterpart to the geometric distribution.
+:::info
+The exponential distribution is the continuous counterpart to the geometric distribution.
 Both are memoryless. The Poisson process links all three distributions: Poisson counts events,
-exponential measures inter-arrival times, and geometric counts trials until the first event. :::
+exponential measures inter-arrival times, and geometric counts trials until the first event.
+:::
 
 ---
 
@@ -44,8 +46,10 @@ Probabilities are found by integration:
 
 $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 
-:::warning For a continuous random variable, $P(X = a) = 0$ for any single value $a$. This is why
-$P(a \leq X \leq b) = P(a < X < b)$ — the inequalities at individual points do not matter. :::
+:::warning
+For a continuous random variable, $P(X = a) = 0$ for any single value $a$. This is why
+$P(a \leq X \leq b) = P(a < X < b)$ — the inequalities at individual points do not matter.
+:::
 
 ### 1.2 Cumulative distribution function
 
@@ -174,10 +178,12 @@ $$
 
 This uses $P(X > x) = 1 - F(x) = e^{-\lambda x}$.
 
-:::info The memoryless property has important practical implications. If a component with an
+:::info
+The memoryless property has important practical implications. If a component with an
 exponentially distributed lifetime has been working for $s$ hours, the remaining lifetime has the
 same distribution as a brand new component. This means exponential lifetimes imply no "wear out"
-effect — which is why it is more appropriate for electronic components than mechanical ones. :::
+effect — which is why it is more appropriate for electronic components than mechanical ones.
+:::
 
 ### 2.6 Link to Poisson processes
 

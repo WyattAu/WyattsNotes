@@ -12,11 +12,13 @@ sidebar_position: 6
 
 ## 1. International Trade: Comparative Advantage
 
-:::info Board-Specific Note **CIE (9708)** requires formal proof of comparative advantage using
+:::info
+Board-Specific Note **CIE (9708)** requires formal proof of comparative advantage using
 numerical examples and covers the Ricardian and Heckscher-Ohlin models. **AQA** focuses on the gains
 from trade and limitations of the comparative advantage model. **Edexcel** emphasises diagrammatic
 analysis of trade flows and the UK's trade relationships. **OCR (A)** covers trade theory alongside
-the impact of MNCs and requires evaluation of trade policies. :::
+the impact of MNCs and requires evaluation of trade policies.
+:::
 
 ### 1.1 Absolute vs Comparative Advantage
 
@@ -84,10 +86,12 @@ For example, at $p = 1$ (1 unit of Wine for 1 unit of Cloth):
 
 Both are strictly better off. $\blacksquare$
 
-:::tip Exam Technique When asked to prove comparative advantage, always: (1) calculate opportunity
+:::tip
+Exam Technique When asked to prove comparative advantage, always: (1) calculate opportunity
 costs for both countries, (2) identify which country has the lower OC for each good, (3) show
 specialisation increases world output, (4) show a mutually beneficial exchange rate. Use a numerical
-example. :::
+example.
+:::
 
 ### 1.3 Limitations of the Ricardian Model
 
@@ -147,18 +151,22 @@ buy the same quantity of imports as in 2020.
 | Inflation differentials                 | If domestic inflation > trading partners' inflation → ToT deteriorates |
 | Technological progress in export sector | Unit costs fall → export prices may fall → ToT deteriorates            |
 
-:::warning Common Pitfall An improvement in the terms of trade is not always beneficial. If the
+:::warning
+Common Pitfall An improvement in the terms of trade is not always beneficial. If the
 deterioration is caused by cheaper imports (e.g., due to technological progress abroad), consumers
 benefit from lower prices. Conversely, an improvement caused by a fall in export volumes (due to
-declining competitiveness) may actually reflect economic weakness. :::
+declining competitiveness) may actually reflect economic weakness.
+:::
 
 ## 3. Exchange Rates
 
-:::info Board-Specific Note **AQA** requires understanding of fixed vs floating systems, the
+:::info
+Board-Specific Note **AQA** requires understanding of fixed vs floating systems, the
 Marshall-Lerner condition, and J-curve effects. **CIE (9708)** covers exchange rate determination,
 purchasing power parity, and the effects of exchange rate changes on the balance of payments.
 **Edexcel** emphasises the UK context including Brexit impacts on trade and the pound. **OCR (A)**
-links exchange rates to macroeconomic policy objectives and requires evaluation of intervention. :::
+links exchange rates to macroeconomic policy objectives and requires evaluation of intervention.
+:::
 
 ### 3.1 Definition
 
@@ -279,9 +287,11 @@ The path of the current account traces a **J-shape**:
 
 $$CA \text{ falls initially, then rises above the starting level}$$
 
-:::tip Exam Technique When asked about the effect of a depreciation on the current account, always
+:::tip
+Exam Technique When asked about the effect of a depreciation on the current account, always
 distinguish between the short run (J-curve — CA may worsen) and the long run (Marshall-Lerner — CA
-improves). Draw the J-curve diagram. State the Marshall-Lerner condition explicitly. :::
+improves). Draw the J-curve diagram. State the Marshall-Lerner condition explicitly.
+:::
 
 ## 5. Globalisation
 
@@ -360,10 +370,12 @@ war, reshoring) reflects these tensions.
 - **Genuine Progress Indicator (GPI)**: adjusts GDP for environmental costs, inequality, and unpaid
   work
 
-:::warning Common Pitfall GDP per capita is an imperfect measure of development because: (1) it
+:::warning
+Common Pitfall GDP per capita is an imperfect measure of development because: (1) it
 ignores income distribution, (2) it doesn't capture health, education, or political freedom, (3) it
 is biased toward market activity (excludes subsistence farming, unpaid work). Always use multiple
-indicators. :::
+indicators.
+:::
 
 ### 6.2 Barriers to Economic Development
 

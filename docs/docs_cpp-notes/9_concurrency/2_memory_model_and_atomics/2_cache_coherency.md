@@ -197,7 +197,8 @@ int main() {
 }
 ```
 
-:::tip On typical x86-64 systems, `sizeof(padded_counter)` will be 64 (one cache line), while
+:::tip
+On typical x86-64 systems, `sizeof(padded_counter)` will be 64 (one cache line), while
 `sizeof(unpadded_counter)` will be 4 (one int). With 8 threads, the unpadded counters occupy only 32
 bytes (fitting in a single cache line), while the padded counters occupy 512 bytes (8 cache lines).
 The padded version will typically be significantly faster due to the elimination of false sharing.
@@ -312,9 +313,11 @@ Parameters:
 - **RW:** 0 for read, 1 for write.
 - **Locality:** 0-3 (3 = keep in cache as long as possible).
 
-:::warning `__builtin_prefetch` is a hint, not a guarantee. Incorrect prefetching can degrade
+:::warning
+`__builtin_prefetch` is a hint, not a guarantee. Incorrect prefetching can degrade
 performance by evicting useful cache lines. Always benchmark with and without prefetching. The
-hardware prefetcher is often better than manual prefetching for simple patterns. :::
+hardware prefetcher is often better than manual prefetching for simple patterns.
+:::
 
 ## NUMA Considerations
 

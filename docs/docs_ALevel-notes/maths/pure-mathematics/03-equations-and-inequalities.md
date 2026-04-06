@@ -58,8 +58,6 @@ _Intuition._ The quantity $a_1 b_2 - a_2 b_1$ is the _determinant_ of the coeffi
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve:
 
 $$
@@ -83,8 +81,6 @@ Add: $19x = 38$, so $x = 2$.
 Substitute into (1): $6 + 2y = 12$, so $y = 3$.
 
 Solution: $x = 2$, $y = 3$.
-
-</p>
 </details>
 
 ---
@@ -104,8 +100,6 @@ The discriminant of the resulting quadratic determines the number of intersectio
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve:
 
 $$
@@ -128,8 +122,6 @@ $$
 $$x = \frac{4 \pm \sqrt{16 + 480}}{10} = \frac{4 \pm \sqrt{496}}{10} = \frac{4 \pm 4\sqrt{31}}{10} = \frac{2 \pm 2\sqrt{31}}{5}$$
 
 $\Delta = 496 > 0$, so the line intersects the circle at two points.
-
-</p>
 </details>
 
 :::tip
@@ -164,8 +156,6 @@ When an inequality involves fractions, multiply through by the square of the den
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve $\frac{2x - 1}{x + 3} \geq 1$.
 
 $$
@@ -189,8 +179,6 @@ Sign chart:
 The quotient is $\geq 0$ when $x < -3$ or $x \geq 4$.
 
 Solution: $x \in (-\infty, -3) \cup [4, \infty)$.
-
-</p>
 </details>
 
 ---
@@ -213,8 +201,6 @@ When multiple inequalities define a region, the solution is the intersection of 
 
 <details>
 <summary>Example</summary>
-<p>
-
 Shade the region defined by:
 
 $$
@@ -227,8 +213,6 @@ y &\geq 2x
 $$
 
 This defines a polygon bounded by the lines $x + y = 6$, $x = 0$, $y = 0$, and $y = 2x$. The vertices are $(0, 0)$, $(0, 6)$, and the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$, $x = 2$, $y = 4$. So the third vertex is $(2, 4)$.
-
-</p>
 </details>
 
 ---
@@ -269,8 +253,6 @@ _Intuition._ Consider $a = 2$, $b = 4$. Then $\frac{1}{2} > \frac{1}{4}$. The sm
 
 <details>
 <summary>Solution</summary>
-<p>
-
 From (1): $y = 13 - 3x$. Substitute into (2):
 
 $$
@@ -289,8 +271,6 @@ $x = \frac{48}{10} = \frac{24}{5}$: $y = 13 - \frac{72}{5} = \frac{65 - 72}{5} =
 $x = \frac{30}{10} = 3$: $y = 13 - 9 = 4$.
 
 Solutions: $(3, 4)$ and $\left(\frac{24}{5}, -\frac{7}{5}\right)$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Linear-quadratic simultaneous equations](#2-linear-quadratic-simultaneous-equations)
 
@@ -300,8 +280,6 @@ Solutions: $(3, 4)$ and $\left(\frac{24}{5}, -\frac{7}{5}\right)$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$\frac{3}{x - 1} - \frac{2}{x + 1} > 0$$
 
 $$\frac{3(x + 1) - 2(x - 1)}{(x - 1)(x + 1)} > 0$$
@@ -322,8 +300,6 @@ Sign chart:
 | $x > 1$       | $+$     | $+$     | $+$     | $+$      |
 
 Solution: $-5 < x < -1$ or $x > 1$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Inequalities involving fractions](#33-inequalities-involving-fractions)
 
@@ -333,8 +309,6 @@ Solution: $-5 < x < -1$ or $x > 1$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 From (1): $x = 1 - 2y$. Substitute into (2):
 
 $$2(1 - 2y) + 4y = 3 \implies 2 - 4y + 4y = 3 \implies 2 = 3$$
@@ -342,8 +316,6 @@ $$2(1 - 2y) + 4y = 3 \implies 2 - 4y + 4y = 3 \implies 2 = 3$$
 This is a contradiction, so there is no solution.
 
 Alternatively: $a_1 b_2 - a_2 b_1 = 1 \times 4 - 2 \times 2 = 0$, so the lines are parallel. Since $c_1 \cdot 2 \neq c_2 \cdot 1$ ($2 \neq 3$), they are distinct parallel lines.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Linear simultaneous equations](#1-linear-simultaneous-equations)
 
@@ -353,15 +325,11 @@ Alternatively: $a_1 b_2 - a_2 b_1 = 1 \times 4 - 2 \times 2 = 0$, so the lines a
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $(x - 5)(x + 3) \leq 0$.
 
 The parabola opens upwards. It is $\leq 0$ between and including the roots:
 
 $$-3 \leq x \leq 5$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic inequalities](./02-quadratics.md)
 
@@ -371,8 +339,6 @@ $$-3 \leq x \leq 5$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$\frac{1}{x} - \frac{1}{x - 2} \leq 0$$
 
 $$\frac{(x - 2) - x}{x(x - 2)} \leq 0$$
@@ -394,8 +360,6 @@ Sign chart for $x(x - 2)$:
 So $\frac{2}{x(x-2)} \geq 0$ when $x < 0$ or $x > 2$.
 
 Solution: $x \in (-\infty, 0) \cup (2, \infty)$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Reciprocals reverse order](#54-reciprocals-reverse-order-for-positive-numbers)
 
@@ -405,8 +369,6 @@ Solution: $x \in (-\infty, 0) \cup (2, \infty)$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Intersection of $2x + y = 8$ and $x + 2y = 8$:
 
 Multiply first by 2: $4x + 2y = 16$. Subtract: $3x = 8$, $x = \frac{8}{3}$.
@@ -414,8 +376,6 @@ Multiply first by 2: $4x + 2y = 16$. Subtract: $3x = 8$, $x = \frac{8}{3}$.
 $y = 8 - 2 \cdot \frac{8}{3} = \frac{24 - 16}{3} = \frac{8}{3}$.
 
 Vertices: $(0, 0)$, $(4, 0)$, $(0, 4)$, and $\left(\frac{8}{3}, \frac{8}{3}\right)$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Graphical inequalities](#4-graphical-inequalities)
 
@@ -425,15 +385,11 @@ Vertices: $(0, 0)$, $(4, 0)$, $(0, 4)$, and $\left(\frac{8}{3}, \frac{8}{3}\righ
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Since $a > b > 0$, we have $a - b > 0$ and $a + b > 0$.
 
 $a^2 - b^2 = (a - b)(a + b)$.
 
 Both factors are positive, so their product is positive: $a^2 - b^2 > 0$, hence $a^2 > b^2$. $\blacksquare$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Rigorous treatment](#5-rigorous-treatment-of-inequality-manipulation)
 
@@ -443,15 +399,11 @@ Both factors are positive, so their product is positive: $a^2 - b^2 > 0$, hence 
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $|2x - 3| \leq 5$ means $-5 \leq 2x - 3 \leq 5$.
 
 Adding 3: $-2 \leq 2x \leq 8$.
 
 Dividing by 2: $-1 \leq x \leq 4$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Modulus function](./05-functions.md)
 
@@ -461,15 +413,11 @@ Dividing by 2: $-1 \leq x \leq 4$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 By Viète's formulas (sum and product of roots): $-p = 6$ and $q = 8$.
 
 So $p = -6$, $q = 8$.
 
 Verification: $x^2 - 6x + 8 = (x - 2)(x - 4) = 0$, giving roots $2$ and $4$ with sum $6$ and product $8$. ✓
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Quadratics](./02-quadratics.md)
 
@@ -479,8 +427,6 @@ Verification: $x^2 - 6x + 8 = (x - 2)(x - 4) = 0$, giving roots $2$ and $4$ with
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Let $u = x^2$. Then $u^2 - 5u + 4 = 0$.
 
 $(u - 1)(u - 4) = 0$
@@ -492,7 +438,5 @@ $x^2 = 1 \implies x = \pm 1$.
 $x^2 = 4 \implies x = \pm 2$.
 
 Solutions: $x = -2, -1, 1, 2$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic formula](./02-quadratics.md)

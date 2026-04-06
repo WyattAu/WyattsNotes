@@ -96,14 +96,16 @@ class Graph:
 | Sparse graphs | Wasteful         | Efficient       |
 | Dense graphs  | Efficient        | Slightly slower |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires adjacency matrix and adjacency list representations; Dijkstra's algorithm for
   shortest path
 - **CIE (9618)** requires graph representations and traversal; may include minimum spanning tree
   algorithms (Kruskal's, Prim's)
 - **OCR (A)** requires adjacency matrix/list; Dijkstra's, Kruskal's, and Prim's algorithms
-- **Edexcel** covers basic graph representations and traversals :::
+- **Edexcel** covers basic graph representations and traversals
+:::
 
 ---
 
@@ -240,8 +242,10 @@ before $u$ — contradiction. Therefore $\text{dist}[u] = d(s, u)$. $\square$
 **Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$
 each), and each edge causes at most one decrease-key ($O(\log V)$ each).
 
-:::warning Pitfall Dijkstra's algorithm **does not work** with negative edge weights. Use the
-Bellman-Ford algorithm instead for graphs that may contain negative weights. :::
+:::warning
+Pitfall Dijkstra's algorithm **does not work** with negative edge weights. Use the
+Bellman-Ford algorithm instead for graphs that may contain negative weights.
+:::
 
 ---
 

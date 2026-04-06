@@ -41,14 +41,10 @@ A function $f \colon A \to B$ is:
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - $f(x) = 2x + 1$ with domain $\mathbb{R}$ is injective (linear, non-constant) and surjective onto $\mathbb{R}$, hence bijective.
 - $f(x) = x^2$ with domain $\mathbb{R}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{R}$ (range is $[0, \infty)$).
 - $f(x) = x^2$ with domain $[0, \infty)$ and codomain $[0, \infty)$ is bijective.
 - $f(x) = \dfrac{1}{x}$ with domain $\mathbb{R} \setminus \{0\}$ is injective but not surjective onto $\mathbb{R}$ (range is $\mathbb{R} \setminus \{0\}$).
-
-</p>
 </details>
 
 ---
@@ -98,8 +94,6 @@ A necessary condition for a function to have an inverse is that it is one-to-one
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Let $f(x) = 2x + 3$ and $g(x) = x^2$. Then:
   - $(f \circ g)(x) = f(g(x)) = f(x^2) = 2x^2 + 3$
   - $(g \circ f)(x) = g(f(x)) = g(2x + 3) = (2x + 3)^2 = 4x^2 + 12x + 9$
@@ -115,8 +109,6 @@ A necessary condition for a function to have an inverse is that it is one-to-one
   - $\text{dom}(g) = \mathbb{R}$
   - $\text{dom}(f) = \{x : x \geq 1\}$, so we require $g(x) \geq 1$, i.e. $x^2 + 1 \geq 1 \implies x^2 \geq 0$, which holds for all real $x$.
   - Therefore $\text{dom}(f \circ g) = \mathbb{R}$.
-
-</p>
 </details>
 
 ---
@@ -180,8 +172,6 @@ This technique is also essential in solving [inequalities](./inequalities.md) in
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Express $f(x) = 2x^2 - 12x + 22$ in vertex form:
   - $f(x) = 2(x^2 - 6x) + 22 = 2\left[(x - 3)^2 - 9\right] + 22 = 2(x - 3)^2 + 4$
   - Vertex: $(3, 4)$, axis of symmetry: $x = 3$, minimum value: $4$.
@@ -194,8 +184,6 @@ This technique is also essential in solving [inequalities](./inequalities.md) in
   - $f(x) = -(x^2 - 4x) - 7 = -\left[(x - 2)^2 - 4\right] - 7 = -(x - 2)^2 - 3$
   - Since $-(x - 2)^2 \leq 0$ for all $x$, the maximum value is $-3$.
   - Range: $(-\infty, -3]$.
-
-</p>
 </details>
 
 ---
@@ -237,8 +225,6 @@ For equations of the form $a^{f(x)} = b$, take logarithms of both sides. See [lo
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Solve $4^{x} = 2^{x+3}$:
   - Rewrite: $(2^2)^x = 2^{x+3} \implies 2^{2x} = 2^{x+3}$
   - Equate exponents: $2x = x + 3 \implies x = 3$
@@ -252,8 +238,6 @@ For equations of the form $a^{f(x)} = b$, take logarithms of both sides. See [lo
 - The half-life of a substance is 8 hours. If the initial amount is 100 g, find the amount remaining after 24 hours:
   - $A(t) = 100 \times \left(\frac{1}{2}\right)^{t/8}$
   - $A(24) = 100 \times \left(\frac{1}{2}\right)^3 = 12.5 \text{ g}$
-
-</p>
 </details>
 
 ---
@@ -304,8 +288,6 @@ When solving logarithmic equations, the following steps are typical:
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Solve $\log_2 (x + 3) + \log_2 (x - 1) = 4$:
   - Product law: $\log_2 [(x + 3)(x - 1)] = 4$
   - Convert: $(x + 3)(x - 1) = 2^4 = 16$
@@ -324,8 +306,6 @@ When solving logarithmic equations, the following steps are typical:
   - $\dfrac{x^2}{x - 1} = 4 \implies x^2 = 4x - 4 \implies x^2 - 4x + 4 = 0$
   - $(x - 2)^2 = 0 \implies x = 2$
   - Check: $x = 2 > 0$ and $x - 1 = 1 > 0$. Valid.
-
-</p>
 </details>
 
 ---
@@ -363,8 +343,6 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Describe the transformation from $y = x^2$ to $y = 2(x - 3)^2 + 1$:
   - Starting from $y = x^2$:
   - Shift right by 3 units: $y = (x - 3)^2$
@@ -382,8 +360,6 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
   - Rewrite as $y = f(-(x - 4)) - 2 = f(-x + 4) - 2$.
   - From $y = \sqrt{x}$: reflect in the $y$-axis to get $y = \sqrt{-x}$, then shift right by 4 to get $y = \sqrt{-(x - 4)} = \sqrt{-x + 4}$, then shift down by 2.
   - Domain: $-x + 4 \geq 0 \implies x \leq 4$. Range: $[-2, \infty)$.
-
-</p>
 </details>
 
 ---
@@ -392,89 +368,72 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
 
 <details>
 <summary>Wrap-up Questions</summary>
-<p>
-
 1. **Question:** Let $f(x) = \dfrac{2x - 6}{x + 1}$ and $g(x) = x^2 - 4$. Find $(f \circ g)(x)$ and state its domain.
    <details>
    <summary>Answer</summary>
-   <p>
    - $(f \circ g)(x) = f(g(x)) = f(x^2 - 4) = \dfrac{2(x^2 - 4) - 6}{(x^2 - 4) + 1} = \dfrac{2x^2 - 14}{x^2 - 3}$
    - $\text{dom}(g) = \mathbb{R}$.
    - $\text{dom}(f) = \{x \in \mathbb{R} : x \neq -1\}$, so we require $g(x) \neq -1$, i.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
    - $\text{dom}(f \circ g) = \mathbb{R} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
-   </p>
    </details>
 
 2. **Question:** Let $f(x) = 3x - 5$. Find $f^{-1}(x)$ and verify that $f^{-1}(f(x)) = x$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Set $y = 3x - 5$. Solving for $x$: $x = \dfrac{y + 5}{3}$.
    - Interchanging $x$ and $y$: $f^{-1}(x) = \dfrac{x + 5}{3}$.
    - Verification: $f^{-1}(f(x)) = \dfrac{(3x - 5) + 5}{3} = \dfrac{3x}{3} = x$. Confirmed.
-   </p>
    </details>
 
 3. **Question:** A quadratic function $f(x)$ has a maximum value of $7$ at $x = 2$, and $f(0) = -5$. Find $f(x)$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Since the maximum is at $(2, 7)$ and the parabola opens downward, write in vertex form: $f(x) = a(x - 2)^2 + 7$ with $a < 0$.
    - Using $f(0) = -5$: $a(0 - 2)^2 + 7 = -5 \implies 4a + 7 = -5 \implies a = -3$.
    - Therefore $f(x) = -3(x - 2)^2 + 7 = -3x^2 + 12x - 5$.
-   </p>
    </details>
 
 4. **Question:** Find the range of values of $k$ for which the equation $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
    <details>
    <summary>Answer</summary>
-   <p>
    - For two distinct real roots, $\Delta > 0$.
    - $\Delta = [2(k - 1)]^2 - 4(1)(k + 5) = 4(k - 1)^2 - 4k - 20 = 4(k^2 - 2k + 1) - 4k - 20 = 4k^2 - 8k + 4 - 4k - 20 = 4k^2 - 12k - 16$.
    - $4k^2 - 12k - 16 > 0 \implies k^2 - 3k - 4 > 0 \implies (k - 4)(k + 1) > 0$.
    - Therefore $k < -1$ or $k > 4$.
-   </p>
    </details>
 
 5. **Question:** Solve the equation $3^{2x} - 10 \cdot 3^x + 9 = 0$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Let $u = 3^x$ (note $u > 0$). The equation becomes $u^2 - 10u + 9 = 0$.
    - $(u - 1)(u - 9) = 0 \implies u = 1$ or $u = 9$.
    - Case 1: $3^x = 1 \implies x = 0$.
    - Case 2: $3^x = 9 = 3^2 \implies x = 2$.
    - Solutions: $x = 0$ or $x = 2$.
-   </p>
    </details>
 
 6. **Question:** Solve $\log_3(x - 2) + \log_3(x + 6) = 2$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Product law: $\log_3[(x - 2)(x + 6)] = 2$.
    - Convert: $(x - 2)(x + 6) = 3^2 = 9$.
    - $x^2 + 4x - 12 = 9 \implies x^2 + 4x - 21 = 0$.
    - $(x + 7)(x - 3) = 0 \implies x = -7$ or $x = 3$.
    - Domain: $x - 2 > 0 \implies x > 2$. Therefore $x = -7$ is rejected.
    - Solution: $x = 3$.
-   </p>
    </details>
 
 7. **Question:** The graph of $y = f(x)$ passes through the points $(1, 4)$ and $(3, 10)$. State the coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
    <details>
    <summary>Answer</summary>
-   <p>
    - For a point $(a, b)$ on $y = f(x)$ (so $f(a) = b$), the corresponding point on $y = 2f(x - 1) + 3$ is found by setting $x - 1 = a$, i.e. $x = a + 1$, and $y = 2b + 3$.
    - $(1, 4) \mapsto (1 + 1,\; 2 \times 4 + 3) = (2, 11)$.
    - $(3, 10) \mapsto (3 + 1,\; 2 \times 10 + 3) = (4, 23)$.
-   </p>
    </details>
 
 8. **Question:** Given $f(x) = \log_2(x + 3)$ and $g(x) = 2^x - 1$, show that $f$ and $g$ are inverse functions of each other, and state the domain and range of $f^{-1}$.
    <details>
    <summary>Answer</summary>
-   <p>
    - $(f \circ g)(x) = f(g(x)) = f(2^x - 1) = \log_2((2^x - 1) + 3) = \log_2(2^x + 2)$.
    - Wait -- let us verify properly. $g(x) = 2^x - 1$, so $f(g(x)) = \log_2(2^x - 1 + 3) = \log_2(2^x + 2)$. This does not simplify to $x$ directly.
    - Let us re-examine. For $f$ and $g$ to be inverses, we need $f(g(x)) = x$.
@@ -485,13 +444,11 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
      - $f^{-1}(x) = 2^x - 3$.
    - $\text{dom}(f^{-1}) = \text{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all real values for $x > -3$).
    - $\text{range}(f^{-1}) = \text{dom}(f) = (-3, \infty)$.
-   </p>
    </details>
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$, find the range of $f$ when (a) the domain is $\mathbb{R}$, and (b) the domain is $[0, 4]$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Completing the square: $f(x) = (x^2 + 2x + 1) - 1 - 3 = (x + 1)^2 - 4$.
    - The vertex is at $(-1, -4)$.
    - (a) Domain $\mathbb{R}$: Since the parabola opens upward with minimum $-4$, range is $[-4, \infty)$.
@@ -499,21 +456,16 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
      - $f(0) = -3$, $f(4) = 16 + 8 - 3 = 21$.
      - On $[0, 4]$, the function is increasing (vertex at $x = -1$ is to the left of the interval).
      - Range: $[-3, 21]$.
-   </p>
    </details>
 
 10. **Question:** Let $f(x) = \dfrac{x}{x - 2}$ for $x \neq 2$. Find $f^{-1}$, and evaluate $f^{-1}(3) + f(3)$.
     <details>
     <summary>Answer</summary>
-    <p>
     - Set $y = \dfrac{x}{x - 2}$.
     - $y(x - 2) = x \implies yx - 2y = x \implies yx - x = 2y \implies x(y - 1) = 2y \implies x = \dfrac{2y}{y - 1}$.
     - $f^{-1}(x) = \dfrac{2x}{x - 1}$, with domain $\mathbb{R} \setminus \{1\}$.
     - $f^{-1}(3) = \dfrac{2(3)}{3 - 1} = 3$.
     - $f(3) = \dfrac{3}{3 - 2} = 3$.
     - $f^{-1}(3) + f(3) = 3 + 3 = 6$.
-    </p>
     </details>
-
-</p>
 </details>

@@ -11,7 +11,9 @@ slug: thermodynamics
 
 ## Thermodynamics
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. The First Law of Thermodynamics
 
@@ -34,9 +36,11 @@ where:
 - $Q$ is the energy transferred to the system by heating (J) — positive if heat flows in
 - $W$ is the work done **on** the system (J) — positive if work is done on the system
 
-:::warning Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
+:::warning
+Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
 work done **by** the system. Always check which convention is being used. We use the "physics"
-convention where $W$ is work done on the system. :::
+convention where $W$ is work done on the system.
+:::
 
 **Intuition.** The first law is simply energy conservation applied to thermodynamic systems. You can
 increase a gas's internal energy either by heating it or by compressing it (doing work on it).
@@ -206,7 +210,8 @@ $$\Delta S_{\text{total}} \geq 0$$
 unscramble; heat flows from hot to cold but not the reverse. It sets a fundamental limit on the
 efficiency of all engines and refrigerators.
 
-:::tip Exam Technique When asked about the second law, state it clearly (Clausius or Kelvin form),
+:::tip
+Exam Technique When asked about the second law, state it clearly (Clausius or Kelvin form),
 give a consequence (no 100% efficient engine), and explain in terms of entropy if possible. On a
 $p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given temperature limits.
 :::
@@ -215,8 +220,6 @@ $p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given t
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A gas in a cylinder expands isobarically from $2.0 \times 10^{-3}$ m$^3$ to $5.0 \times 10^{-3}$
 m$^3$ at a pressure of $1.5 \times 10^5$ Pa. Calculate the work done by the gas.
 
@@ -225,14 +228,10 @@ $W_{\text{by}} = p\Delta V = 1.5 \times 10^5 \times (5.0 - 2.0) \times 10^{-3} =
 J.
 
 <b>If you get this wrong, revise:</b> [Work Done by a Gas](#2-work-done-by-a-gas)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 200 J of heat is added to a gas while 80 J of work is done on the gas. Calculate the change in
 internal energy.
 
@@ -240,14 +239,10 @@ internal energy.
 
 <b>If you get this wrong, revise:</b>
 [The First Law of Thermodynamics](#1-the-first-law-of-thermodynamics)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A Carnot engine operates between 600 K and 300 K. Calculate its efficiency and the heat rejected to
 the cold reservoir if it absorbs 500 J from the hot reservoir.
 
@@ -256,14 +251,10 @@ the cold reservoir if it absorbs 500 J from the hot reservoir.
 $Q_C = Q_H(1 - \eta) = 500 \times 0.50 = 250$ J.
 
 <b>If you get this wrong, revise:</b> [Carnot Efficiency](#carnot-efficiency)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 An ideal gas expands isothermally from $1.0 \times 10^{-3}$ m$^3$ to $4.0 \times 10^{-3}$ m$^3$ at
 400 K. If there are 0.10 mol of gas, calculate the work done by the gas.
 
@@ -272,14 +263,10 @@ $W_{\text{by}} = nRT\ln(V_2/V_1) = 0.10 \times 8.31 \times 400 \times \ln(4) = 3
 J.
 
 <b>If you get this wrong, revise:</b> [Isothermal](#isothermal-constant-temperature)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 In an isochoric process, 500 J of heat is added to a gas. Calculate the change in internal energy
 and the work done.
 
@@ -287,14 +274,10 @@ and the work done.
 J.
 
 <b>If you get this wrong, revise:</b> [Isochoric](#isochoric-isovolumetric-constant-volume)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A heat engine operates between 500 K and 200 K with an efficiency of 45%. Is this possible according
 to the second law?
 
@@ -303,14 +286,10 @@ the maximum theoretical efficiency).
 
 <b>If you get this wrong, revise:</b>
 [The Second Law of Thermodynamics](#5-the-second-law-of-thermodynamics)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Sketch a $p$-$V$ diagram showing an isothermal expansion followed by an isochoric pressure increase,
 followed by an isothermal compression, followed by an isochoric pressure decrease. Label each stage
 and indicate the net work done.
@@ -323,14 +302,10 @@ the area enclosed by the cycle (clockwise = positive net work output).
 
 <b>If you get this wrong, revise:</b>
 [Thermodynamic Processes on $p$-$V$ Diagrams](#3-thermodynamic-processes-on-p-v-diagrams)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Explain why a refrigerator cannot cool a room by leaving its door open.
 
 **Answer.** A refrigerator transfers heat from its interior (cold reservoir) to the room (hot
@@ -342,8 +317,6 @@ hot without external work, and the work input adds to the total heat in the room
 
 <b>If you get this wrong, revise:</b>
 [The Second Law of Thermodynamics](#5-the-second-law-of-thermodynamics)
-
-</p>
 </details>
 
 :::

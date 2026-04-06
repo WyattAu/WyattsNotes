@@ -30,10 +30,12 @@ RTTI provides two primary operators:
 RTTI relies on the same vtable infrastructure used for virtual dispatch. Each polymorphic class's
 vtable contains a pointer to its `std::type_info` object.
 
-:::warning RTTI Overhead Disabling RTTI (`-fno-rtti`) reduces binary size (by removing type_info
+:::warning
+RTTI Overhead Disabling RTTI (`-fno-rtti`) reduces binary size (by removing type_info
 metadata) and may enable further optimizations. However, it also makes `dynamic_cast` and `typeid`
 unavailable for polymorphic types. Disabling RTTI does **not** eliminate the vtable or vptr —
-virtual dispatch still works. :::
+virtual dispatch still works.
+:::
 
 ## 4.2 `dynamic_cast<T*>(ptr)` — Safe Downcast
 
@@ -146,9 +148,11 @@ Cast succeeded
 Cast failed: std::bad_cast
 ```
 
-:::info `dynamic_cast<T&>` cannot return `nullptr` because references cannot be null. Throwing an
+:::info
+`dynamic_cast<T&>` cannot return `nullptr` because references cannot be null. Throwing an
 exception is the only way to signal failure. This is why `dynamic_cast` on pointers is generally
-preferred — it allows the caller to check for failure without exception overhead. :::
+preferred — it allows the caller to check for failure without exception overhead.
+:::
 
 ## 4.4 `typeid` Operator
 
@@ -205,9 +209,11 @@ Key points:
 - `std::type_index` (from `<typeindex>`) is a wrapper around `std::type_info` that provides value
   semantics and can be used as a key in associative containers.
 
-:::warning The `name()` member of `std::type_info` returns an implementation-defined string. It is
+:::warning
+The `name()` member of `std::type_info` returns an implementation-defined string. It is
 useful for debugging but should not be parsed or compared. Use `std::type_index` for type
-comparisons. :::
+comparisons.
+:::
 
 ## 4.5 RTTI and `dynamic_cast` for the Visitor Pattern
 
@@ -305,11 +311,13 @@ int main() {
 }
 ```
 
-:::tip The `dynamic_cast`-based approach is simpler to implement than the classic Visitor pattern
+:::tip
+The `dynamic_cast`-based approach is simpler to implement than the classic Visitor pattern
 for small, stable type hierarchies. However, adding a new derived type requires updating every
 `dynamic_cast` chain. The Visitor pattern localizes changes: adding a new visitor doesn't modify
 existing types, and adding a new type doesn't modify existing visitors (it only requires extending
-the visitor interface). :::
+the visitor interface).
+:::
 
 ## 4.6 `dynamic_cast` with Multiple and Virtual Inheritance
 

@@ -279,7 +279,8 @@ do {
 
 The `do-while` loop guarantees at least one execution of the body. It is the correct choice when the loop body must run before the condition can be evaluated (e.g., reading input before validating it).
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §14.12](https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.12) defines the `while` statement. [JLS §14.13](https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.13) defines the `do` statement.
 :::
 
@@ -385,7 +386,8 @@ graph TD
     style RuntimeException fill:#f39c12,color:#000
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §11.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-11.html#jls-11.1) defines the Throwable hierarchy and the distinction between unchecked and checked exceptions.
 :::
 
@@ -853,21 +855,21 @@ The compiler determines how much incidental whitespace to strip by finding the l
 String html = """
               <html>
                   <body>
-                      <p>Hello, world</p>
+                      Hello, world
                   </body>
               </html>
               """;
-// Result: "<html>\n    <body>\n        <p>Hello, world</p>\n    </body>\n</html>\n"
+// Result: "<html>\n    <body>\n        Hello, world\n    </body>\n</html>\n"
 
 // Move the closing delimiter left to preserve more indentation
 String html2 = """
               <html>
                   <body>
-                      <p>Hello, world</p>
+                      Hello, world
                   </body>
               </html>
 """;
-// Result: "          <html>\n              <body>\n                  <p>Hello, world</p>\n              </body>\n          <html>\n"
+// Result: "          <html>\n              <body>\n                  Hello, world\n              </body>\n          <html>\n"
 ```
 
 ### Escaping in Text Blocks

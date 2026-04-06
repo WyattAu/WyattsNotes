@@ -11,7 +11,8 @@ slug: thermal-properties
 
 ## Thermal Properties
 
-:::info Board Coverage
+:::info
+Board Coverage
 AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
 :::
 
@@ -48,7 +49,8 @@ $$\boxed{Q = mL}$$
 
 **Intuition.** During a phase change, energy goes into breaking intermolecular bonds rather than increasing kinetic energy, so the temperature remains constant despite energy input. Vaporisation requires much more energy than fusion because gas molecules are completely separated.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 Do not confuse specific heat capacity (which raises temperature) with latent heat (which changes state at constant temperature). In a heating curve, the flat sections are phase changes (latent heat), and the sloped sections are temperature changes (specific heat capacity).
 :::
 
@@ -153,86 +155,60 @@ where $M_r$ is the molar mass.
 
 <details>
 <summary>Example: RMS Speed of Oxygen</summary>
-<p>
-
 Calculate the rms speed of oxygen molecules ($M_r = 0.032$ kg mol$^{-1}$) at 300 K.
 
 **Answer.** $v_{\text{rms}} = \sqrt{\frac{3RT}{M_r}} = \sqrt{\frac{3 \times 8.31 \times 300}{0.032}} = \sqrt{233719} = 483$ m s$^{-1}$.
-
-</p>
 </details>
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Calculate the energy required to heat 2.0 kg of water from 20°C to 80°C. The specific heat capacity of water is 4200 J kg$^{-1}$ K$^{-1}$.
 
 **Answer.** $Q = mc\Delta T = 2.0 \times 4200 \times 60 = 504{,}000$ J $= 504$ kJ.
 
 <b>If you get this wrong, revise:</b> [Specific Heat Capacity](#2-specific-heat-capacity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A 0.50 kg block of ice at 0°C is heated until it completely melts. The specific latent heat of fusion of water is $3.34 \times 10^5$ J kg$^{-1}$. Calculate the energy required.
 
 **Answer.** $Q = mL_f = 0.50 \times 3.34 \times 10^5 = 1.67 \times 10^5$ J $= 167$ kJ.
 
 <b>If you get this wrong, revise:</b> [Specific Latent Heat](#specific-latent-heat)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A gas occupies 0.020 m$^3$ at a pressure of $1.5 \times 10^5$ Pa and temperature 300 K. Calculate the number of moles.
 
 **Answer.** $n = \frac{pV}{RT} = \frac{1.5 \times 10^5 \times 0.020}{8.31 \times 300} = \frac{3000}{2493} = 1.20$ mol.
 
 <b>If you get this wrong, revise:</b> [The Ideal Gas Equation](#the-ideal-gas-equation)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 Calculate the rms speed of nitrogen molecules ($M_r = 0.028$ kg mol$^{-1}$) at 250 K.
 
 **Answer.** $v_{\text{rms}} = \sqrt{\frac{3 \times 8.31 \times 250}{0.028}} = \sqrt{\frac{6232.5}{0.028}} = \sqrt{222{,}589} = 472$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A gas cylinder of volume 0.050 m$^3$ contains oxygen at 200 kPa and 280 K. If the temperature rises to 350 K and the volume increases to 0.060 m$^3$, what is the new pressure?
 
 **Answer.** Using $p_1V_1/T_1 = p_2V_2/T_2$: $p_2 = \frac{p_1V_1T_2}{V_2T_1} = \frac{200{,}000 \times 0.050 \times 350}{0.060 \times 280} = \frac{3{,}500{,}000}{16.8} = 208{,}333$ Pa $\approx 208$ kPa.
 
 <b>If you get this wrong, revise:</b> [Ideal Gas Laws](#3-ideal-gas-laws)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Derive the expression for the average kinetic energy of a gas molecule: $\langle E_k\rangle = \frac{3}{2}k_BT$.
 
 **Answer.** Starting from $pV = \frac{1}{3}Nm\langle v^2\rangle$ (kinetic theory derivation), and using $pV = Nk_BT$ (ideal gas law):
@@ -244,40 +220,28 @@ $\frac{1}{2}m\langle v^2\rangle = \frac{3}{2}k_BT$.
 Since $\langle E_k\rangle = \frac{1}{2}m\langle v^2\rangle$: $\langle E_k\rangle = \frac{3}{2}k_BT$.
 
 <b>If you get this wrong, revise:</b> [Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv-nk_bt-from-kinetic-theory)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A 200 W heater is used to heat 0.80 kg of oil. The oil temperature rises from 20°C to 80°C in 8.0 minutes. Calculate the specific heat capacity of the oil.
 
 **Answer.** $Q = Pt = 200 \times 480 = 96{,}000$ J. $c = Q/(m\Delta T) = 96{,}000/(0.80 \times 60) = 2000$ J kg$^{-1}$ K$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Specific Heat Capacity](#2-specific-heat-capacity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Explain why the rms speed of hydrogen molecules is greater than that of oxygen molecules at the same temperature.
 
 **Answer.** $v_{\text{rms}} = \sqrt{3k_BT/m}$. At the same temperature, $k_BT$ is the same. Since hydrogen has a smaller molecular mass ($m_H \ll m_O$), the rms speed is greater. Specifically, $v_{\text{rms}}(H_2)/v_{\text{rms}}(O_2) = \sqrt{m_O/m_H} = \sqrt{32/2} = 4$.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 250 g of water at 90°C is poured into a 150 g copper calorimeter at 20°C. The final temperature is 75°C. Calculate the specific heat capacity of copper. ($c_{\text{water}} = 4200$ J kg$^{-1}$ K$^{-1}$.)
 
 **Answer.** Energy lost by water = energy gained by copper calorimeter:
@@ -289,19 +253,13 @@ $0.250 \times 4200 \times 15 = 0.150 \times c_c \times 55$
 $15{,}750 = 8.25\,c_c$. $c_c = 1909$ J kg$^{-1}$ K$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Specific Heat Capacity](#2-specific-heat-capacity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A sealed container holds gas at 300 K. The container is heated until the rms speed of the molecules doubles. What is the new temperature?
 
 **Answer.** $v_{\text{rms}} \propto \sqrt{T}$. If $v_{\text{rms}}$ doubles: $2 = \sqrt{T_2/T_1}$. $T_2/T_1 = 4$. $T_2 = 4 \times 300 = 1200$ K.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
-
-</p>
 </details>

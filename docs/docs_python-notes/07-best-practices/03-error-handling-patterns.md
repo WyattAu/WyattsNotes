@@ -53,7 +53,8 @@ BaseException
     └── AssertionError
 ```
 
-:::info `SystemExit`, `KeyboardInterrupt`, and `GeneratorExit` inherit directly from
+:::info
+`SystemExit`, `KeyboardInterrupt`, and `GeneratorExit` inherit directly from
 `BaseException`, not `Exception`. This means `except Exception:` does not catch them — which is
 correct, since you generally do not want to catch system-level signals.
 :::
@@ -148,7 +149,8 @@ print(str(e))   # db.example.com:5432 — connection refused
 print(repr(e))  # ServerError('db.example.com', 5432, 'connection refused')
 ```
 
-:::tip Always call `super().__init__(message)` in custom exceptions. The message is stored in
+:::tip
+Always call `super().__init__(message)` in custom exceptions. The message is stored in
 `self.args` and used by the default `__str__` implementation. Omitting this breaks exception
 chaining and logging.
 :::
@@ -200,7 +202,8 @@ print(get_value_lbyl({"a": 1}, "b"))   # None
 | External API calls       | EAFP + retry                 | Network conditions change         |
 | Configuration validation | LBYL at boundary             | Fail fast, clear error messages   |
 
-:::warning LBYL with file operations has a TOCTOU (Time of Check to Time of Use) race condition:
+:::warning
+LBYL with file operations has a TOCTOU (Time of Check to Time of Use) race condition:
 
 ```python
 import os
@@ -300,7 +303,8 @@ def process_file(path):
             f.close()
 ```
 
-:::tip Use `else` for code that should run only when no exception occurs. Use `finally` for cleanup
+:::tip
+Use `else` for code that should run only when no exception occurs. Use `finally` for cleanup
 that must happen regardless. Avoid putting logic in `finally` that might raise exceptions, as it
 masks the original exception.
 :::
@@ -484,7 +488,8 @@ asyncio.run(main())
 # Logging request: req-002
 ```
 
-:::info Unlike `threading.local()`, `contextvars.ContextVar` is designed for `asyncio` and correctly
+:::info
+Unlike `threading.local()`, `contextvars.ContextVar` is designed for `asyncio` and correctly
 propagates state through `asyncio.TaskGroup` and `Task` creation.
 :::
 
@@ -507,7 +512,8 @@ def binary_search(arr, target):
     return -1
 ```
 
-:::warning Assertions are disabled with `python -O` (optimized mode) because they are controlled by
+:::warning
+Assertions are disabled with `python -O` (optimized mode) because they are controlled by
 the `__debug__` constant. **Never use assertions for data validation or runtime checks** — they are
 for debugging and documenting invariants:
 
@@ -646,7 +652,8 @@ class UserService:
             # Do NOT raise — this is a non-critical background sync
 ```
 
-:::tip **Log and raise** for unexpected errors the caller must handle. **Log and continue** for
+:::tip
+**Log and raise** for unexpected errors the caller must handle. **Log and continue** for
 non-critical background operations. **Raise without logging** when the caller is responsible for
 handling (e.g., validation at API boundary). Never swallow exceptions silently.
 :::

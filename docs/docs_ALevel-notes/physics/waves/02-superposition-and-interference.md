@@ -11,7 +11,9 @@ slug: superposition-and-interference
 
 ## Superposition and Interference
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. The Principle of Superposition
 
@@ -102,9 +104,11 @@ have a constant phase relationship. This requires:
 - Same frequency (and hence wavelength)
 - Constant phase difference
 
-:::warning Common Pitfall Two waves from independent sources (e.g., two light bulbs) are generally
+:::warning
+Common Pitfall Two waves from independent sources (e.g., two light bulbs) are generally
 not coherent because the phase difference fluctuates randomly. Interference requires coherent
-sources, typically produced by splitting a single wave. :::
+sources, typically produced by splitting a single wave.
+:::
 
 ## 3. Young's Double Slit Experiment
 
@@ -159,22 +163,20 @@ visible.
 
 The first minimum of the single-slit pattern occurs at $\sin\theta = \lambda/a$.
 
-:::tip Exam Technique When asked to describe Young's experiment, always mention: coherent source
+:::tip
+Exam Technique When asked to describe Young's experiment, always mention: coherent source
 (single slit before the double slit), narrow slits, monochromatic light, and the small-angle
-approximation. Quote the fringe spacing formula and explain each variable. :::
+approximation. Quote the fringe spacing formula and explain each variable.
+:::
 
 <details>
 <summary>Example: Young's Double Slit</summary>
-<p>
-
 Light of wavelength 590 nm passes through double slits separated by 0.50 mm onto a screen 1.5 m
 away. Calculate the fringe spacing.
 
 **Answer.**
 $\Delta w = \frac{\lambda D}{s} = \frac{590 \times 10^{-9} \times 1.5}{0.50 \times 10^{-3}} = \frac{8.85 \times 10^{-7}}{5.0 \times 10^{-4}} = 1.77 \times 10^{-3}$
 m $= 1.77$ mm.
-
-</p>
 </details>
 
 ## 4. Diffraction Gratings
@@ -213,9 +215,11 @@ or equal to $d/\lambda$).
 | Maxima brightness | Low            | High                                        |
 | Missing orders    | None (ideally) | Possible (if slit width effects considered) |
 
-:::tip Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$, take the
+:::tip
+Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$, take the
 integer part, then note that orders $+n$ and $-n$ are both visible (plus the zeroth order). Total
-visible maxima $= 2n_{\max} + 1$. :::
+visible maxima $= 2n_{\max} + 1$.
+:::
 
 ## 5. Stationary Waves
 
@@ -318,8 +322,6 @@ $$\boxed{f_n = \frac{nv}{2L}, \quad n = 1, 2, 3, \ldots \text{ (all harmonics)}}
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Two coherent sources emit waves of wavelength 0.80 m. At a point P, the path difference is 2.00 m.
 Is the interference at P constructive or destructive?
 
@@ -328,14 +330,10 @@ interference is destructive (minimum).
 
 <b>If you get this wrong, revise:</b>
 [Path Difference and Phase Difference](#2-path-difference-and-phase-difference)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 In Young's double slit experiment, the slits are 0.40 mm apart and the screen is 2.0 m away. The
 fringe spacing is measured as 2.8 mm. Calculate the wavelength of the light.
 
@@ -345,14 +343,10 @@ m $= 560$ nm.
 
 <b>If you get this wrong, revise:</b>
 [Young's Double Slit Experiment](#3-youngs-double-slit-experiment)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A diffraction grating has 500 lines per mm. Light of wavelength 600 nm is incident normally.
 Calculate the angle of the second-order maximum.
 
@@ -361,14 +355,10 @@ $\sin\theta = \frac{2 \times 600 \times 10^{-9}}{2.0 \times 10^{-6}} = \frac{1.2
 $\theta = \arcsin(0.60) = 36.9°$.
 
 <b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A stationary wave on a string of length 1.2 m has a fundamental frequency of 120 Hz. Find: (a) the
 wave speed on the string, (b) the frequency of the third harmonic.
 
@@ -378,14 +368,10 @@ wave speed on the string, (b) the frequency of the third harmonic.
 
 <b>If you get this wrong, revise:</b>
 [Harmonics on a String Fixed at Both Ends](#harmonics-on-a-string-fixed-at-both-ends)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A pipe of length 0.85 m is closed at one end. The speed of sound is 340 m s$^{-1}$. Calculate the
 frequency of the first two harmonics.
 
@@ -395,14 +381,10 @@ The next harmonic is the 3rd: $f_3 = 3f_1 = 300$ Hz. (No 2nd harmonic exists for
 
 <b>If you get this wrong, revise:</b>
 [Harmonics in a Pipe Closed at One End](#harmonics-in-a-pipe-closed-at-one-end)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Two waves meet at a point. Wave 1 has amplitude 3.0 mm and wave 2 has amplitude 4.0 mm. If they are
 in phase, what is the resultant amplitude? If they are in antiphase?
 
@@ -412,14 +394,10 @@ In antiphase: $A_{\text{resultant}} = |3.0 - 4.0| = 1.0$ mm.
 
 <b>If you get this wrong, revise:</b>
 [Constructive and Destructive Interference](#constructive-and-destructive-interference)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A diffraction grating with 300 lines per mm is used with light of wavelength 540 nm. How many orders
 of maximum can be seen on each side of the central maximum?
 
@@ -428,14 +406,10 @@ $n_{\max} = d/\lambda = 3.33 \times 10^{-6} / 540 \times 10^{-9} = 6.17$. So the
 order is $n = 6$. Total visible maxima $= 2(6) + 1 = 13$.
 
 <b>If you get this wrong, revise:</b> [Maximum number of orders](#maximum-number-of-orders)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Derive the stationary wave equation from two progressive waves $y_1 = A\sin(kx - \omega t)$ and
 $y_2 = A\sin(kx + \omega t)$.
 
@@ -451,14 +425,10 @@ $y = 2A\sin(kx)\cos(-\omega t) = 2A\sin(kx)\cos(\omega t)$ (since $\cos$ is even
 
 <b>If you get this wrong, revise:</b>
 [Derivation from Superposition of Two Progressive Waves](#derivation-from-superposition-of-two-progressive-waves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 In a Young's double slit experiment using light of wavelength 550 nm, the fringe spacing on a screen
 1.5 m away is 1.1 mm. Calculate the slit separation.
 
@@ -468,14 +438,10 @@ m $= 0.75$ mm.
 
 <b>If you get this wrong, revise:</b>
 [Young's Double Slit Experiment](#3-youngs-double-slit-experiment)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A string of length 0.60 m vibrates at its fourth harmonic at 400 Hz. Find the wave speed and the
 wavelength of the fourth harmonic.
 
@@ -486,14 +452,10 @@ $\lambda_4 = 2L/4 = L/2 = 0.30$ m.
 
 <b>If you get this wrong, revise:</b>
 [Harmonics on a String Fixed at Both Ends](#harmonics-on-a-string-fixed-at-both-ends)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 Explain the difference between progressive and stationary waves in terms of (a) energy transfer, (b)
 amplitude variation, and (c) phase relationship between neighbouring points.
 
@@ -507,14 +469,10 @@ stationary wave, all points between two adjacent nodes are in phase, but points 
 are in antiphase.
 
 <b>If you get this wrong, revise:</b> [Stationary Waves](#5-stationary-waves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 White light (wavelengths 400–700 nm) is incident on a diffraction grating with 400 lines per mm. For
 the second order, calculate the angular range subtended by the visible spectrum.
 
@@ -529,8 +487,6 @@ $\theta = 34.1°$.
 Angular range $= 34.1° - 18.7° = 15.4°$.
 
 <b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
-
-</p>
 </details>
 
 :::

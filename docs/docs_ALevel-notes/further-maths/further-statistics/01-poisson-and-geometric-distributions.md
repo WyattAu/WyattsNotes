@@ -25,10 +25,12 @@ geometric distribution counts the number of trials until the first success.
 | OCR (A)    | Paper 2 | Poisson and geometric                   |
 | CIE (9231) | S2      | Poisson covered; geometric not required |
 
-:::info The formula booklet provides the Poisson PMF. You must know when to apply each distribution
+:::info
+The formula booklet provides the Poisson PMF. You must know when to apply each distribution
 and how to carry out hypothesis testing with discrete distributions. The geometric distribution has
 two common conventions for the support: $r = 1, 2, 3, \ldots$ (number of trials) or
-$r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$. :::
+$r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$.
+:::
 
 ---
 
@@ -236,9 +238,11 @@ $$
 \frac{1 - (1-q^{m+n})}{1 - (1-q^m)} = \frac{q^{m+n}}{q^m} = q^n = 1 - (1-q^n) = P(X > n) \quad \blacksquare
 $$
 
-:::info This is a remarkable property. It means that if you have already waited $m$ trials without
+:::info
+This is a remarkable property. It means that if you have already waited $m$ trials without
 success, the probability of waiting at least $n$ more trials is exactly the same as if you were
-starting fresh. The process "forgets" its history. :::
+starting fresh. The process "forgets" its history.
+:::
 
 ### 2.5 Cumulative distribution function
 
@@ -293,9 +297,11 @@ Before applying the Poisson distribution, verify:
 2. Events are independent
 3. At most one event can occur in a sufficiently small sub-interval
 
-:::warning The Poisson approximation to the binomial is used when $n \geq 50$ and $np \leq 5$. Do
+:::warning
+The Poisson approximation to the binomial is used when $n \geq 50$ and $np \leq 5$. Do
 not confuse this with the normal approximation to the binomial, which requires $np > 5$ and
-$n(1-p) > 5$. :::
+$n(1-p) > 5$.
+:::
 
 ---
 

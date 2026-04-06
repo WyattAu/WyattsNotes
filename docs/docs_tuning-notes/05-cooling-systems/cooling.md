@@ -87,10 +87,12 @@ coverage but risks air bubbles. Better for large IHS surfaces (Threadripper, EPY
 **Cross/X method:** Two thin lines forming a cross. Provides good coverage for rectangular IHS
 surfaces. Works well for Intel CPUs with their rectangular IHS.
 
-:::danger Liquid metal (galinstan) is electrically conductive and will short-circuit components if
+:::danger
+Liquid metal (galinstan) is electrically conductive and will short-circuit components if
 it spills onto the motherboard contacts or pins. It also reacts with aluminum, causing corrosion.
 Only use liquid metal on nickel-plated or copper surfaces. Apply a conformal coating (nail polish)
-around the IHS to contain spills. :::
+around the IHS to contain spills.
+:::
 
 ### When to Repaste
 
@@ -220,9 +222,11 @@ AIO coolers have finite lifespans. Common failure modes:
    Tilt the case to move bubbles to the radiator.
 4. **Fan failure:** Individual fans can fail. Replaceable in most AIOs.
 
-:::warning Always monitor pump RPM. Set an alarm in your monitoring software if pump RPM drops below
+:::warning
+Always monitor pump RPM. Set an alarm in your monitoring software if pump RPM drops below
 a threshold (typically 1000 RPM). A dead pump with active fans will cook a CPU in minutes under
-load. :::
+load.
+:::
 
 ---
 

@@ -39,10 +39,12 @@ returns a `std::string` by value. The format string is checked at compile time f
 mismatch between the format specification and the argument type is a compile-time error [N4950
 §22.14.6.2].
 
-:::info The format string is a **constant expression** — it must be known at compile time. This
+:::info
+The format string is a **constant expression** — it must be known at compile time. This
 enables the compiler to parse it and verify that every `{}` field has a corresponding argument of
 the correct type. Runtime-computed format strings are not supported by `std::format` (use
-`std::vformat` for runtime format strings, at the cost of losing compile-time checking). :::
+`std::vformat` for runtime format strings, at the cost of losing compile-time checking).
+:::
 
 ### Format Specification Syntax
 
@@ -110,13 +112,13 @@ void alignment_demo() {
 
 #### Sign, `#`, and Zero-Padding
 
-| Specifier | Meaning                                                             |
-| :-------- | :------------------------------------------------------------------ |
-| `+`       | Always show sign for signed types (`+42`, `-7`)                     |
-| `-`       | Only show sign for negative values (default)                        |
-| (space)   | Show space for positive, minus for negative (` 42`, `-7`)           |
-| `#`       | Alternate form: `0x` prefix for hex, `0b` for binary, `#` for octal |
-| `0`       | Pad with zeros instead of spaces                                    |
+| Specifier | Meaning                                                                    |
+| :-------- | :------------------------------------------------------------------------- |
+| `+`       | Always show sign for signed types (`+42`, `-7`)                            |
+| `-`       | Only show sign for negative values (default)                               |
+| (space)   | Show space for positive, minus for negative (` 42`, `-7`)                  |
+| `#`       | Alternate form: `0x` prefix for hex, `0b` for binary, `0` prefix for octal |
+| `0`       | Pad with zeros instead of spaces                                           |
 
 ```cpp
 #include <format>
@@ -148,14 +150,16 @@ Both can be dynamic — supplied by a runtime argument using `{}` inside the for
 void width_precision_demo() {
     std::cout << std::format("{:10.3f}\n", 3.14159);    // "     3.142"
     std::cout << std::format("{:.5}\n", "hello world");  // "hello"
-    std::cout << std::format("{:.*f}\n", 4, 3.14159);   // "3.1416" (dynamic precision)
+    std::cout << std::format("{:.{}f}\n", 3.14159, 4);   // "3.1416" (dynamic precision)
     std::cout << std::format("{:{}d}\n", 42, 8);        // "      42" (dynamic width)
 }
 ```
 
-:::warning Dynamic width and precision use the next argument in the argument list. Mixing manual
+:::warning
+Dynamic width and precision use the next argument in the argument list. Mixing manual
 argument IDs with dynamic width/precision can lead to confusing index errors. When using dynamic
-width/precision, keep the argument ordering simple. :::
+width/precision, keep the argument ordering simple.
+:::
 
 #### Type Specifiers
 
@@ -249,15 +253,19 @@ int main() {
 }
 ```
 
-:::info `std::print` is declared in `<print>` [N4950 §22.14.1]. It writes directly to the C `FILE*`
+:::info
+`std::print` is declared in `<print>` [N4950 §22.14.1]. It writes directly to the C `FILE*`
 stream, bypassing `std::cout` and its stream buffer. This makes it faster for simple console output
 but means it does not synchronize with `std::cout` by default. Avoid mixing
 `std::print(stdout, ...)` and `std::cout` in the same program without calling
-`std::ios_base::sync_with_stdio(true)` first. :::
+`std::ios_base::sync_with_stdio(true)` first.
+:::
 
-:::warning `std::print` to stdout does **not** lock the stdout mutex by default. Concurrent calls to
+:::warning
+`std::print` to stdout does **not** lock the stdout mutex by default. Concurrent calls to
 `std::print` from multiple threads can produce interleaved output. Use `std::print(stderr, ...)` for
-error messages (stderr is unbuffered) or protect stdout with a mutex. :::
+error messages (stderr is unbuffered) or protect stdout with a mutex.
+:::
 
 ### Custom Type Formatter
 
@@ -328,15 +336,19 @@ int main() {
 }
 ```
 
-:::tip Inheriting from `std::formatter&lt;std::string>` (or any standard formatter) gives you access
+:::tip
+Inheriting from `std::formatter&lt;std::string>` (or any standard formatter) gives you access
 to the standard format specification parsing logic. If your custom type needs to support the full
 standard specification set (width, fill, alignment), parse the standard spec first with the base
-class's `parse()`, then check for your custom specifiers. :::
+class's `parse()`, then check for your custom specifiers.
+:::
 
-:::warning The specialization of `std::formatter` must be in namespace `std` for `std::format` to
+:::warning
+The specialization of `std::formatter` must be in namespace `std` for `std::format` to
 find it. However, adding declarations to namespace `std` is technically undefined behavior unless it
 is a **template specialization** of a standard library template [N4950 §16.5.4.2.1]. Specializing
-`std::formatter` is explicitly permitted. :::
+`std::formatter` is explicitly permitted.
+:::
 
 ### Runtime Format Strings with `std::vformat`
 

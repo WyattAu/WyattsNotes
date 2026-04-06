@@ -41,7 +41,8 @@ False
 **Why:** $0.1$ cannot be represented exactly in binary floating point (like $1/3$ cannot be
 represented exactly in decimal).
 
-:::warning Pitfall Never use `==` to compare floating-point numbers. Use `abs(a - b) < epsilon` with
+:::warning
+Pitfall Never use `==` to compare floating-point numbers. Use `abs(a - b) < epsilon` with
 a small tolerance (e.g., `1e-9`).
 
 ```python
@@ -122,8 +123,10 @@ codes (e.g., UTF-8 or UTF-16).
 | Split            | `s.split(sep)` | $O(n)$                            |
 | Slice            | `s[a:b]`       | $O(b-a)$                          |
 
-:::warning Pitfall In Python, strings are **immutable** — you cannot modify individual characters.
-`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string. :::
+:::warning
+Pitfall In Python, strings are **immutable** — you cannot modify individual characters.
+`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string.
+:::
 
 ### String Immutability
 
@@ -134,12 +137,14 @@ Strings are immutable for several reasons:
 3. **Hashing:** Immutable strings can be used as dictionary keys (hash is stable)
 4. **Interning:** Python can reuse identical string objects, saving memory
 
-:::info Board-specific **AQA** requires ASCII, Unicode (UTF-8, UTF-16), image representation
+:::info
+Board-specific **AQA** requires ASCII, Unicode (UTF-8, UTF-16), image representation
 (pixels, colour depth, resolution), sound sampling (sample rate, bit depth). **CIE (9618)** covers
 similar topics but may emphasise different aspects; requires understanding of file sizes and
 capacity calculations. **OCR (A)** requires character encoding, image representation, and sound
 representation with specific detail on compression (lossy vs lossless). **Edexcel** covers data
-representation fundamentals including number systems and character encoding. :::
+representation fundamentals including number systems and character encoding.
+:::
 
 ---
 

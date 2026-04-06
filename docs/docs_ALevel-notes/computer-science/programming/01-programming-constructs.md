@@ -44,8 +44,10 @@ y = float(5)       # y = 5.0
 z = str(42)        # z = "42"
 ```
 
-:::warning Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
-`round(3.9)` for rounding. :::
+:::warning
+Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
+`round(3.9)` for rounding.
+:::
 
 ---
 
@@ -147,11 +149,13 @@ while True:
         break
 ```
 
-:::info Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
+:::info
+Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
 and `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
 function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
 local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
-requires subroutines with parameters. :::
+requires subroutines with parameters.
+:::
 
 ---
 
@@ -212,7 +216,8 @@ $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$ (the golden ratio).
 $\psi = \frac{1-\sqrt{5}}{2}$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$,
 $T(n) = \Theta(\phi^n)$. $\square$
 
-:::warning Pitfall Naive recursive Fibonacci has exponential time complexity. Use memoisation or
+:::warning
+Pitfall Naive recursive Fibonacci has exponential time complexity. Use memoisation or
 iteration for $O(n)$ time:
 
 ```python

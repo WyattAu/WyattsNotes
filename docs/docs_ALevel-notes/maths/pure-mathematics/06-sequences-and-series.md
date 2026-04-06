@@ -79,15 +79,11 @@ _Intuition._ Gauss supposedly used this method as a child to sum $1 + 2 + \cdots
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the sum of the first 20 terms of $3, 7, 11, 15, \ldots$
 
 Here $a = 3$, $d = 4$, $n = 20$.
 
 $$S_{20} = \frac{20}{2}(2 \times 3 + 19 \times 4) = 10(6 + 76) = 10 \times 82 = 820$$
-
-</p>
 </details>
 
 ---
@@ -163,15 +159,11 @@ The condition $|r| < 1$ is essential. A common mistake is to apply the sum-to-in
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the sum to infinity of $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots$
 
 Here $a = 1$, $r = \frac{1}{2}$, $|r| < 1$.
 
 $$S_\infty = \frac{1}{1 - \frac{1}{2}} = 2$$
-
-</p>
 </details>
 
 ---
@@ -225,16 +217,12 @@ $u_2 = \frac{1}{2}$, $u_3 = 2$, $u_4 = \frac{1}{2}$, ... This is periodic with p
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$a + 4d = 17 \quad \text{--- (1)}$$
 $$a + 11d = 38 \quad \text{--- (2)}$$
 
 (2) - (1): $7d = 21 \implies d = 3$.
 
 $a = 17 - 12 = 5$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Arithmetic sequences](#2-arithmetic-sequences)
 
@@ -244,13 +232,9 @@ $a = 17 - 12 = 5$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 This is an arithmetic series with first term $a = 2$, last term $\ell = 3(50) - 1 = 149$, $n = 50$.
 
 $$S = \frac{50}{2}(2 + 149) = 25 \times 151 = 3775$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Sigma notation](#4-sigma-notation)
 
@@ -260,13 +244,9 @@ $$S = \frac{50}{2}(2 + 149) = 25 \times 151 = 3775$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$S_\infty = \frac{a}{1 - r} = 25$$
 
 $$\frac{5}{1 - r} = 25 \implies 1 - r = \frac{1}{5} \implies r = \frac{4}{5}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Sum to infinity](#33-sum-to-infinity)
 
@@ -276,13 +256,9 @@ $$\frac{5}{1 - r} = 25 \implies 1 - r = \frac{1}{5} \implies r = \frac{4}{5}$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $a = 2$, $r = -3$, $n = 10$.
 
 $$S_{10} = \frac{2(1 - (-3)^{10})}{1 - (-3)} = \frac{2(1 - 59049)}{4} = \frac{2(-59048)}{4} = -29524$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Sum of finite geometric series](#32-sum-of-a-finite-geometric-series)
 
@@ -292,8 +268,6 @@ $$S_{10} = \frac{2(1 - (-3)^{10})}{1 - (-3)} = \frac{2(1 - 59049)}{4} = \frac{2(
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \sum_{k=1}^{n} (4k + 1) &= 4\sum_{k=1}^{n} k + \sum_{k=1}^{n} 1 \\
@@ -304,8 +278,6 @@ $$
 &= n(2n + 3) \quad \blacksquare
 \end{aligned}
 $$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Sigma notation](#4-sigma-notation)
 
@@ -315,8 +287,6 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $u_2 = \frac{3 + 1}{3 - 1} = 2$
 
 $u_3 = \frac{2 + 1}{2 - 1} = 3$
@@ -326,8 +296,6 @@ $u_4 = \frac{3 + 1}{3 - 1} = 2$
 $u_5 = \frac{2 + 1}{2 - 1} = 3$
 
 The sequence is periodic: $3, 2, 3, 2, 3, 2, \ldots$ with period 2.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Recurrence relations](#5-recurrence-relations)
 
@@ -337,8 +305,6 @@ The sequence is periodic: $3, 2, 3, 2, 3, 2, \ldots$ with period 2.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$\frac{x + 4}{x} = \frac{x + 12}{x + 4}$$
 
 $$(x + 4)^2 = x(x + 12)$$
@@ -348,8 +314,6 @@ $$x^2 + 8x + 16 = x^2 + 12x$$
 $$4x = 16 \implies x = 4$$
 
 The sequence is $4, 8, 16, \ldots$ with $r = 2$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Geometric sequences](#3-geometric-sequences)
 
@@ -359,8 +323,6 @@ The sequence is $4, 8, 16, \ldots$ with $r = 2$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 The ball falls 10 m, then rises $10 \times 0.8 = 8$ m, falls 8 m, rises $8 \times 0.8 = 6.4$ m, etc.
 
 Total distance = $10 + 2(8 + 6.4 + 5.12 + \cdots)$.
@@ -370,8 +332,6 @@ The bracketed series is geometric with $a = 8$, $r = 0.8$.
 $$S_\infty = \frac{8}{1 - 0.8} = \frac{8}{0.2} = 40$$
 
 Total distance = $10 + 2 \times 40 = 90$ m.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Sum to infinity](#33-sum-to-infinity)
 
@@ -381,8 +341,6 @@ Total distance = $10 + 2 \times 40 = 90$ m.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $a = 3$, $r = 2$.
 
 $$S_n = \frac{3(2^n - 1)}{2 - 1} = 3(2^n - 1) > 10000$$
@@ -396,8 +354,6 @@ So $n = 12$.
 Check: $S_{11} = 3(2048 - 1) = 6141 < 10000$.
 
 $S_{12} = 3(4096 - 1) = 12285 > 10000$. ✓
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Sum of finite geometric series](#32-sum-of-a-finite-geometric-series)
 
@@ -407,8 +363,6 @@ $S_{12} = 3(4096 - 1) = 12285 > 10000$. ✓
 
 <details>
 <summary>Solution</summary>
-<p>
-
 By induction.
 
 Base case ($n = 1$): LHS $= 1 \times 2 = 2$. RHS $= \frac{1 \times 2 \times 3}{3} = 2$. ✓
@@ -427,7 +381,5 @@ $$
 $$
 
 This is the formula for $n + 1$. ✓ $\blacksquare$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Proof by induction](./13-proof.md)

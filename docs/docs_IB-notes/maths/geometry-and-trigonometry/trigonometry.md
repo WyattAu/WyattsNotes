@@ -127,8 +127,10 @@ For $y = a\sin(bx + c) + d$:
 - $c$ = horizontal phase shift (shift left by $\frac{c}{b}$)
 - $d$ = vertical shift
 
-:::tip Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
-and show at least one full period clearly. :::
+:::tip
+Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
+and show at least one full period clearly.
+:::
 
 ## Sine and Cosine Rules
 
@@ -284,9 +286,11 @@ $$
 | $\arccos x$ | "the angle whose cosine is $x$"  | $0 \le \arccos x \le \pi$                        |
 | $\arctan x$ | "the angle whose tangent is $x$" | $-\frac{\pi}{2} \lt \arctan x \lt \frac{\pi}{2}$ |
 
-:::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
+:::tip
+Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
 principal value — you may need to find other solutions using the periodic properties or the ASTC
-rule. :::
+rule.
+:::
 
 :::
 

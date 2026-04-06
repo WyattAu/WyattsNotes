@@ -26,8 +26,10 @@ slug: chemistry-acids-bases-electrochemistry
 - Acid: electron pair acceptor
 - Base: electron pair donor
 
-:::info In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
-the proton donor and proton acceptor in acid-base reactions. :::
+:::info
+In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
+the proton donor and proton acceptor in acid-base reactions.
+:::
 
 ### Conjugate Acid-Base Pairs
 
@@ -49,9 +51,11 @@ $$\text{HA} + \text{B} \rightleftharpoons \text{A}^- + \text{BH}^+$$
 | Conductivity               | Higher                                                | Lower                                                          |
 | Reaction rate (same conc.) | Faster                                                | Slower                                                         |
 
-:::warning A strong acid is NOT the same as a concentrated acid. Strength refers to the degree of
+:::warning
+A strong acid is NOT the same as a concentrated acid. Strength refers to the degree of
 ionisation; concentration refers to the amount dissolved per unit volume. A dilute solution of a
-strong acid can have a higher pH than a concentrated solution of a weak acid. :::
+strong acid can have a higher pH than a concentrated solution of a weak acid.
+:::
 
 ### Common Strong Acids and Bases
 
@@ -122,10 +126,12 @@ $$x = 1.34 \times 10^{-3} \text{ mol/dm}^3$$
 
 $$\text{pH} = -\log_{10}(1.34 \times 10^{-3}) = 2.87$$
 
-:::tip For weak acid calculations, you can assume
+:::tip
+For weak acid calculations, you can assume
 $[\text{HA}]_{\text{initial}} \approx [\text{HA}]_{\text{equilibrium}}$ only when the degree of
 ionisation is small (typically when $K_a \lt 10^{-4}$). This simplification is valid for most
-DSE-level problems. :::
+DSE-level problems.
+:::
 
 ### pH Scale Summary
 
@@ -368,9 +374,11 @@ $2\text{H}_2\text{O} \to \text{O}_2 + 4\text{H}^+ + 4e^-$)
 
 Halides ($\text{Cl}^-$, $\text{Br}^-$, $\text{I}^-$): The halogen is discharged
 
-:::warning Concentration matters. In concentrated chloride solutions, $\text{Cl}^-$ is discharged at
+:::warning
+Concentration matters. In concentrated chloride solutions, $\text{Cl}^-$ is discharged at
 the anode instead of $\text{OH}^-$. In dilute chloride solutions, $\text{OH}^-$ may be
-preferentially discharged. :::
+preferentially discharged.
+:::
 
 ### Worked Example 9
 
@@ -664,8 +672,10 @@ $$\text{pH} = 4.74 + \log_{10}\left(\frac{0.19}{0.11}\right) = 4.74 + \log_{10}(
 The pH changed from 5.04 to 4.98, a change of only 0.06. Without the buffer, adding
 $0.01 \text{ mol}$ of $\text{HCl}$ to $1 \text{ dm}^3$ of water would give pH = 2.
 
-:::info Buffers are most effective when $[\text{HA}] = [\text{A}^-]$, i.e., when
-$\text{pH} = \text{p}K_a$. The effective buffering range is approximately $\text{p}K_a \pm 1$. :::
+:::info
+Buffers are most effective when $[\text{HA}] = [\text{A}^-]$, i.e., when
+$\text{pH} = \text{p}K_a$. The effective buffering range is approximately $\text{p}K_a \pm 1$.
+:::
 
 ---
 

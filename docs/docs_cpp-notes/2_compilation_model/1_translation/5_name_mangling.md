@@ -113,9 +113,11 @@ can exceed 1000 characters.
 nm -C ./app | awk '{ print length, $0 }' | sort -rn | head -20
 ```
 
-:::info Return Types The Itanium ABI generally does **not** encode the return type of a function, as
+:::info
+Return Types The Itanium ABI generally does **not** encode the return type of a function, as
 C++ does not support overloading based solely on return type. Exception: Template functions and
-`auto` return type deduction may trigger return type encoding. :::
+`auto` return type deduction may trigger return type encoding.
+:::
 
 ## 2. The Microsoft ABI (MSVC)
 

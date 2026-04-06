@@ -197,18 +197,22 @@ $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 3. **Cancellation error:** Subtracting nearly equal numbers loses significant digits
 4. **Accumulation error:** Errors compound over many operations
 
-:::warning Pitfall Never use `==` to compare floating-point numbers. Instead, check if
-$|a - b| \lt{} \epsilon$ for some tolerance. :::
+:::warning
+Pitfall Never use `==` to compare floating-point numbers. Instead, check if
+$|a - b| \lt{} \epsilon$ for some tolerance.
+:::
 
 ---
 
 ## 5. CIE Simplified 8-Bit Floating Point
 
-:::info Board-specific: CIE (9618) CIE uses a simplified floating-point format:
+:::info
+Board-specific: CIE (9618) CIE uses a simplified floating-point format:
 
 - 1 sign bit
 - 4 exponent bits (excess-8, i.e., bias = 8)
-- 3 mantissa bits :::
+- 3 mantissa bits
+:::
 
 **Format:** `S EEEE MMM`
 

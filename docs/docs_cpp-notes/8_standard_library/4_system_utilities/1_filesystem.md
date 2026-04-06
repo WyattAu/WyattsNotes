@@ -26,10 +26,12 @@ The library abstracts away platform differences between POSIX and Windows file s
 separators (`/` vs `\`), permissions models, and file metadata are normalized into a common
 interface.
 
-:::info On POSIX systems, `std::filesystem` is implemented on top of POSIX system calls (`stat`,
+:::info
+On POSIX systems, `std::filesystem` is implemented on top of POSIX system calls (`stat`,
 `opendir`, `readdir`, `unlink`, etc.). On Windows, it uses the Win32 API (`CreateFileW`,
 `FindFirstFileW`, etc.). The interface is the same on both platforms, but some features are only
-available on one (e.g., file permissions are more expressive on POSIX). :::
+available on one (e.g., file permissions are more expressive on POSIX).
+:::
 
 ### `std::filesystem::path`
 
@@ -107,10 +109,12 @@ void path_iteration() {
 }
 ```
 
-:::tip `fs::path::lexically_normal()` removes `.` and `..` components without touching the
+:::tip
+`fs::path::lexically_normal()` removes `.` and `..` components without touching the
 filesystem. `fs::canonical()` resolves them by actually querying the filesystem (and throws if the
 path does not exist). Use `lexically_normal()` for string-level cleanup, `canonical()` when you need
-the true absolute path. :::
+the true absolute path.
+:::
 
 ### Directory Iterators
 
@@ -147,10 +151,12 @@ void list_directory(const fs::path& dir) {
 }
 ```
 
-:::warning `fs::directory_iterator` does **not** follow symlinks by default. A symlink to a
-directory appears as `is_symlink() == true` and `is_directory() == false`. Use
-`fs::directory_options::follow_directory_symlink` to follow symlinks, but be careful of symlink
-cycles. :::
+:::warning
+`fs::directory_iterator` does **not** follow symlinks by default. A symlink to a
+directory returns `is_symlink() == true` but also `is_directory() == true` (since `is_directory()`
+follows symlinks by default). Use `fs::directory_options::follow_directory_symlink` to follow
+symlinks into directories, but be careful of symlink cycles.
+:::
 
 ### Recursive Directory Listing
 
@@ -206,11 +212,13 @@ void recursive_list(const fs::path& root, int max_depth = 3) {
 }
 ```
 
-:::info `fs::directory_options::skip_permission_denied` causes the iterator to silently skip
+:::info
+`fs::directory_options::skip_permission_denied` causes the iterator to silently skip
 directories that the current process lacks permission to read. Without this option, a
 `fs::filesystem_error` exception is thrown. This is essential for recursively scanning directories
 like `/home` or `/tmp` where some subdirectories may have restricted permissions [N4950
-§30.10.11.1]. :::
+§30.10.11.1].
+:::
 
 ### File Operations
 
@@ -275,9 +283,11 @@ void file_operations_demo(const fs::path& work_dir) {
 }
 ```
 
-:::warning `fs::remove_all()` is dangerous — it recursively deletes an entire directory tree without
+:::warning
+`fs::remove_all()` is dangerous — it recursively deletes an entire directory tree without
 confirmation. Never call it with a path derived from untrusted user input without validation. Unlike
-`rm -rf`, there is no "trash" or "undo" mechanism. :::
+`rm -rf`, there is no "trash" or "undo" mechanism.
+:::
 
 ## See Also
 
@@ -316,10 +326,12 @@ void file_time_demo(const fs::path& file) {
 }
 ```
 
-:::warning On Windows with MSVC, `fs::file_time_type` historically used a resolution of 100
+:::warning
+On Windows with MSVC, `fs::file_time_type` historically used a resolution of 100
 nanoseconds (Windows FILETIME), while on POSIX it used 1-second resolution (`stat` `st_mtime`).
 C++20 improves this, but portability issues remain for sub-second precision. Always test on your
-target platforms. :::
+target platforms.
+:::
 
 ### Permissions
 
@@ -368,8 +380,10 @@ void permissions_demo(const fs::path& file) {
 | `remove`           | Remove the given permission bits from the current set |
 | `nofollow`         | Do not follow symlinks (applicable on POSIX)          |
 
-:::warning On Windows, `fs::permissions` can only control the read-only attribute. Group and other
-permissions are not supported. The `owner_exec` permission is not meaningful on Windows. :::
+:::warning
+On Windows, `fs::permissions` can only control the read-only attribute. Group and other
+permissions are not supported. The `owner_exec` permission is not meaningful on Windows.
+:::
 
 ### Symbolic Links
 
@@ -488,8 +502,9 @@ void canonical_demo() {
 
 ### Filesystem Error Handling
 
-All `fs::` functions throw `fs::filesystem_error` on failure [N4950 §30.10.5]. This exception
-carries two paths (the source and target of the operation) and a `std::error_code`:
+The throwing overloads of `fs::` functions throw `fs::filesystem_error` on failure [N4950 §30.10.5].
+Non-throwing overloads accept an `std::error_code&` parameter. `filesystem_error` carries two paths
+(the source and target of the operation) and a `std::error_code`:
 
 ```cpp
 #include <filesystem>
@@ -519,9 +534,11 @@ void error_handling_demo() {
 }
 ```
 
-:::tip Use the `std::error_code` overloads in performance-critical code or when errors are expected
+:::tip
+Use the `std::error_code` overloads in performance-critical code or when errors are expected
 (e.g., checking if a file exists by trying to open it). Exception-based error handling has overhead
-from stack unwinding, while error codes do not. :::
+from stack unwinding, while error codes do not.
+:::
 
 ### Temporary Files and Atomic Write Patterns
 

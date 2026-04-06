@@ -47,8 +47,10 @@ Since $f = \frac{1}{T}$, we can also write:
 
 $$v = \frac{\lambda}{T}$$
 
-:::info The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
-electromagnetic. :::
+:::info
+The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
+electromagnetic.
+:::
 
 ### Worked Example 1
 
@@ -97,9 +99,11 @@ $$n = \frac{c}{v}$$
 
 Where $c$ is the speed of light in vacuum and $v$ is the speed of light in the medium.
 
-:::info When a wave enters a denser medium (higher refractive index), it slows down and bends
+:::info
+When a wave enters a denser medium (higher refractive index), it slows down and bends
 **towards** the normal. When entering a less dense medium, it speeds up and bends **away** from the
-normal. :::
+normal.
+:::
 
 ### Total Internal Reflection
 
@@ -221,9 +225,11 @@ $$\beta = 10\log_{10}\left(\frac{I}{I_0}\right)$$
 
 Where $I_0 = 10^{-12} \text{ W/m}^2$ is the threshold of hearing.
 
-:::warning Loudness is a subjective measure (perceived by the ear) while intensity is an objective
+:::warning
+Loudness is a subjective measure (perceived by the ear) while intensity is an objective
 physical quantity. A $10 \text{ dB}$ increase corresponds to a $10\times$ increase in intensity, but
-is perceived as roughly a doubling of loudness. :::
+is perceived as roughly a doubling of loudness.
+:::
 
 ### Worked Example 5
 
@@ -269,9 +275,11 @@ All EM waves:
 - Obey the wave equation $c = f\lambda$
 - Can be reflected, refracted, and diffracted
 
-:::tip For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
+:::tip
+For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
 **R**adio, **M**icrowaves, **I**nfrared, **V**isible, **U**ltraviolet, **X**-rays, **G**amma rays
-(RMIVUXG). :::
+(RMIVUXG).
+:::
 
 ---
 
@@ -372,9 +380,11 @@ internal reflection and travels along the fibre.
 - Medical endoscopy
 - Decorative lighting
 
-:::warning In exam questions, always check whether you need to calculate the critical angle or the
+:::warning
+In exam questions, always check whether you need to calculate the critical angle or the
 acceptance angle. The acceptance angle is the maximum angle at which light can enter the fibre and
-still undergo total internal reflection. :::
+still undergo total internal reflection.
+:::
 
 ### Worked Example 7
 
@@ -523,9 +533,11 @@ The observed frequency is lower than the source frequency.
 - **Astronomy:** Red shift indicates galaxies moving away from us; blue shift indicates approach
 - **Weather radar:** Doppler radar detects the movement of precipitation
 
-:::info Red shift occurs when a light source moves away from the observer. The observed wavelength
+:::info
+Red shift occurs when a light source moves away from the observer. The observed wavelength
 increases (shifts towards the red end of the spectrum). This is key evidence for the expansion of
-the universe. :::
+the universe.
+:::
 
 ### Worked Example 9
 
@@ -622,8 +634,10 @@ Damping reduces the amplitude of oscillations over time by dissipating energy.
 - **Critical damping:** System returns to equilibrium in the shortest time without oscillating
 - **Over-damping:** System returns to equilibrium slowly without oscillating
 
-:::warning In real-world applications, some damping is often deliberately introduced to prevent
-excessive vibrations at resonance. Car shock absorbers and building dampers are examples. :::
+:::warning
+In real-world applications, some damping is often deliberately introduced to prevent
+excessive vibrations at resonance. Car shock absorbers and building dampers are examples.
+:::
 
 ---
 

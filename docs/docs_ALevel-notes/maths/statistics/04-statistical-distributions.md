@@ -18,9 +18,11 @@ slug: statistical-distributions
 | OCR (A)    | Paper 1, 2 | Binomial in P1; normal and Poisson in P2 |
 | CIE (9709) | P1, P6     | Binomial in P1; normal and Poisson in P6 |
 
-:::info The formula booklet gives the probability mass function for the Binomial and Poisson
+:::info
+The formula booklet gives the probability mass function for the Binomial and Poisson
 distributions, and the normal distribution function. You must know when to use each distribution and
-how to find probabilities. :::
+how to find probabilities.
+:::
 
 ---
 
@@ -127,9 +129,11 @@ $$B(n, p) \approx N(np, np(1-p))$$
 with **continuity correction**:
 $P(X \leq k) \approx P\!\left(Z \lt{} \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)$.
 
-:::warning Always apply the continuity correction when approximating a discrete distribution
+:::warning
+Always apply the continuity correction when approximating a discrete distribution
 (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the inequality
-direction. :::
+direction.
+:::
 
 ---
 

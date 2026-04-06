@@ -10,8 +10,6 @@ slug: wrap
 
 <details>
 <summary><strong>E.1 Structure of the Atom, E.2 Quantum Physics & E.3 Radioactive Decay</strong></summary>
-<p>
-
 1. **Question (E.2 & D.3 - HL Only):** In a photoelectric effect experiment, light of wavelength 400
    nm is incident on a metal surface with a work function of 2.28 eV. The emitted photoelectrons are
    then directed into a region of uniform magnetic field B = 1.5 mT, with their velocity
@@ -22,7 +20,6 @@ slug: wrap
 
 <details>
 <summary>Answer</summary>
-<p>
 - **Strategy:** (a) Use Einstein's photoelectric equation. (b) Use the max KE to find the max speed, then use the formula for the radius of a charged particle in a B-field. (c) Relate stopping potential to max KE.
 - **a) Maximum Kinetic Energy ($E_{k, \text{max}}$):**
   - Energy of incident photon: $E = hf = \frac{hc}{\lambda} = \frac{(6.63 \times 10^{-34})(3.0 \times 10^8)}{400 \times 10^{-9}} = 4.97 \times 10^{-19}$ J.
@@ -39,10 +36,7 @@ slug: wrap
   - $eV_s = E_{k, \text{max}}$.
   - The stopping potential in volts is numerically equal to the max KE in electron-volts.
   - $V_s = 0.83$ V.
-</p>
-<p>
 <b>If you get this wrong, you should focus on:</b> The full photoelectric effect calculation (including unit conversions between J and eV), using the resulting kinetic energy to find particle speed, and applying principles of charged particle motion in a B-field. Also, the definition of stopping potential.
-</p>
 </details>
 
 2. **Question (E.1 & A.5 - HL Only):** A hydrogen atom in the n=3 excited state is moving away from
@@ -55,7 +49,6 @@ slug: wrap
 
 <details>
 <summary>Answer</summary>
-<p>
 - **Strategy:** (a) Use the Bohr model energy levels to find the proper wavelength. (b) Use the relativistic Doppler effect formula to find the speed. (c) Use the speed to find the Lorentz factor and apply time dilation.
 - **a) Proper Wavelength ($\lambda_0$):**
   - Energy of the transition: $\Delta E = E_3 - E_2 = \left(-\frac{13.6}{3^2}\right) - \left(-\frac{13.6}{2^2}\right) = -1.511 - (-3.40) = 1.889$ eV.
@@ -73,10 +66,7 @@ slug: wrap
   - First, find the Lorentz factor for $v=0.0619c$.
   - $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}} = \frac{1}{\sqrt{1 - (0.0619)^2}} = 1.0019$.
   - The lifetime measured by the Earth observer is $\Delta t = \gamma \Delta t_0 = 1.0019 \times 10.0 \text{ ns} = 10.019$ ns.
-</p>
-<p>
 <b>If you get this wrong, you should focus on:</b> Calculating photon energies/wavelengths from the Bohr model, applying the full relativistic Doppler effect formula (not the approximation), and connecting the calculated speed to the time dilation formula.
-</p>
 </details>
 
 3. **Question (E.3, E.4 & B.1):** A nuclear fission power plant generates 900 MW of electrical power
@@ -87,7 +77,6 @@ slug: wrap
 
 <details>
 <summary>Answer</summary>
-<p>
 - **Strategy:** (a) Use the definition of efficiency. (b) Find the energy per second and divide by the energy per fission. (c) Find the total number of fissions in a year, then use Avogadro's number and molar mass to find the total mass.
 - **a) Thermal Power:**
   - Efficiency $\eta = \frac{P_{\text{electrical}}}{P_{\text{thermal}}}$.
@@ -102,10 +91,7 @@ slug: wrap
   - Number of moles consumed = $\frac{\text{Number of nuclei}}{N_A} = \frac{2.53 \times 10^{27}}{6.02 \times 10^{23}} = 4.20 \times 10^3$ moles.
   - Mass consumed = (moles) x (molar mass). The molar mass of U-235 is approximately 0.235 kg/mol.
   - Mass = $(4.20 \times 10^3 \text{ mol}) \times (0.235 \text{ kg/mol}) \approx 987$ kg.
-</p>
-<p>
 <b>If you get this wrong, you should focus on:</b> The definition of power plant efficiency, converting between MeV and Joules, and stoichiometry for nuclear reactions (connecting the number of nuclei to moles and mass using Avogadro's constant).
-</p>
 </details>
 
 4. **Question (E.2 & E.3 - HL Only):** A sample of Cobalt-60 (half-life 5.27 years) is a gamma-ray
@@ -119,7 +105,6 @@ slug: wrap
 
 <details>
 <summary>Answer</summary>
-<p>
 - **Strategy:** (a) Test the understanding of wave-particle duality. (b) Use the radioactive decay law for activity. (c) Use the concept of half-value thickness for attenuation.
 - **a) De Broglie Wavelength of a Photon:**
   - The de Broglie wavelength formula $\lambda = h/p$ applies to particles with rest mass. A photon is a massless particle. While it has momentum ($p=E/c$), the term "de Broglie wavelength" is specifically reserved for matter waves. The wavelength of a photon is simply its electromagnetic wavelength, calculated from its energy.
@@ -133,10 +118,7 @@ slug: wrap
 - **c) Shield Thickness:**
   - The intensity is reduced to 1/16. Since $1/16 = (1/2)^4$, the thickness of the shield must be equal to 4 half-value thicknesses ($x_{1/2}$).
   - Thickness = $4 \times x_{1/2} = 4 \times 1.2 \text{ cm} = 4.8$ cm.
-</p>
-<p>
 <b>If you get this wrong, you should focus on:</b> The domain of applicability for quantum concepts (de Broglie for matter, E=hc/λ for photons), the exponential decay formula for activity, and the concept of half-value thickness for radiation attenuation.
-</p>
 </details>
 
 5. **Question (E.5 & D.1):** A main-sequence star is analyzed and found to have the same surface
@@ -149,7 +131,6 @@ slug: wrap
 
 <details>
 <summary>Answer</summary>
-<p>
 - **Strategy:** (a) Use the Stefan-Boltzmann law to relate luminosity, temperature, and radius. (b) Use the escape velocity formula. (c) Calculate the "solar constant" for this planet and compare it to Earth's.
 - **a) Radius of the Star:**
   - Stefan-Boltzmann Law: $L = 4\pi \sigma R^2 T^4$.
@@ -168,13 +149,8 @@ slug: wrap
   - For Earth: $S_{\text{Earth}} = \frac{L_\odot}{4\pi (1 \text{ AU})^2} \approx 1360$ W/m².
   - For the new planet: $S_{\text{planet}} = \frac{L_{\text{star}}}{4\pi (1 \text{ AU})^2} = \frac{100 L_\odot}{4\pi (1 \text{ AU})^2} = 100 \cdot S_{\text{Earth}}$.
   - The planet would receive about 136,000 W/m², 100 times more radiation than Earth. This would make it far too hot for liquid water and thus uninhabitable by life as we know it.
-</p>
-<p>
 <b>If you get this wrong, you should focus on:</b> Using ratiometric reasoning with the Stefan-Boltzmann law to compare stars, the formula for escape velocity, and applying the inverse-square law to determine stellar intensity at a given distance (the habitable zone concept).
-</p>
 </details>
-
-</p>
 </details>
 
 ---

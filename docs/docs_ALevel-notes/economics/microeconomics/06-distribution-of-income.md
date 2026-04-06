@@ -55,9 +55,11 @@ $$G = 1 - 2B$$
 | $0.3 \leq G < 0.4$ | Moderate inequality |
 | $G \geq 0.4$       | High inequality     |
 
-:::info International Comparisons (2023 estimates)
+:::info
+International Comparisons (2023 estimates)
 
-- Denmark: 0.28 | Germany: 0.31 | UK: 0.35 | USA: 0.40 | Brazil: 0.52 | South Africa: 0.63 :::
+- Denmark: 0.28 | Germany: 0.31 | UK: 0.35 | USA: 0.40 | Brazil: 0.52 | South Africa: 0.63
+:::
 
 ### 1.3 Limitations of the Gini Coefficient
 
@@ -214,9 +216,11 @@ where $t$ is the tax rate and $Y(t)$ is the tax base (income), which declines as
 to disincentive effects). At $t = 0$, $T = 0$. At $t = 1$ (100% tax), $T = 0$ (no one works). There
 exists some $t^* \in (0, 1)$ that maximises revenue.
 
-:::warning Common Pitfall The Laffer curve is a theoretical concept — there is no consensus on where
+:::warning
+Common Pitfall The Laffer curve is a theoretical concept — there is no consensus on where
 $t^*$ lies. Most empirical estimates for developed economies suggest that income tax rates are below
-the revenue-maximising rate, meaning tax cuts would _reduce_ revenue. :::
+the revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
+:::
 
 ### 5.3 Evaluating the Trade-Off
 
@@ -236,9 +240,11 @@ the revenue-maximising rate, meaning tax cuts would _reduce_ revenue. :::
 - Generous welfare benefits may create dependency and reduce labour supply
 - Redistribution through distortionary taxation creates deadweight loss
 
-:::tip Exam Technique When asked to evaluate inequality policies, consider: effectiveness (does it
+:::tip
+Exam Technique When asked to evaluate inequality policies, consider: effectiveness (does it
 reduce inequality?), efficiency (does it create disincentives?), equity (is it fair?), fiscal cost
-(can the government afford it?), and unintended consequences (does it create poverty traps?). :::
+(can the government afford it?), and unintended consequences (does it create poverty traps?).
+:::
 
 ## 6. Critical Evaluation
 
@@ -259,10 +265,12 @@ reduce inequality?), efficiency (does it create disincentives?), equity (is it f
 - Globalisation limits the effectiveness of national redistributive policies (mobile capital, tax
   competition)
 
-:::info Board-Specific Note AQA requires detailed knowledge of the Lorenz curve and Gini
+:::info
+Board-Specific Note AQA requires detailed knowledge of the Lorenz curve and Gini
 coefficient, including calculations. Edexcel emphasises poverty measures and government policy. CIE
 covers inequality in the context of development economics. OCR (A) links distribution to market
-failure and government intervention. :::
+failure and government intervention.
+:::
 
 ## 7. Formal Derivations
 
@@ -329,9 +337,7 @@ $$\boxed{L(0) = 0, \quad L(1) = 1, \quad L'(p) = y(p) \geq 0, \quad L(p) \leq p}
 
 <details>
 <summary>Hint</summary>
-<p>
 Cumulative shares: (0.2, 0.05), (0.4, 0.15), (0.6, 0.30), (0.8, 0.55), (1.0, 1.0). Using trapezoidal rule: $B = 0.2 \times \frac{0 + 0.05}{2} + 0.2 \times \frac{0.05 + 0.15}{2} + 0.2 \times \frac{0.15 + 0.30}{2} + 0.2 \times \frac{0.30 + 0.55}{2} + 0.2 \times \frac{0.55 + 1.0}{2} = 0.2 \times (0.025 + 0.10 + 0.225 + 0.425 + 0.775) = 0.2 \times 1.55 = 0.31$. $G = 1 - 2(0.31) = 0.38$.
-</p>
 </details>
 
 **Problem 2.** A flat tax of 20% is proposed to replace the current progressive system. Explain why
@@ -340,9 +346,7 @@ proportional against income.
 
 <details>
 <summary>Hint</summary>
-<p>
 Low-income households spend a larger proportion of their income (sometimes more than 100% — dissaving) than high-income households. A flat tax on income is proportional against income. But low-income households spend nearly all income, while high-income households save a large fraction. If measured against *spending*, the effective tax rate on spending is: for low-income households, $\approx 20\%$ of all spending; for high-income households, the tax as a fraction of spending is lower because much income is saved, not spent. Actually, a flat income tax is proportional by definition. The regressivity argument applies to *consumption taxes* (VAT), not flat income taxes. Clarify the distinction.
-</p>
 </details>
 
 **Problem 3.** The median household income in a country is £30,000. The relative poverty line is 60%
@@ -351,9 +355,7 @@ median income rises to £35,000 but the household's income stays at £16,000, wh
 
 <details>
 <summary>Hint</summary>
-<p>
 Poverty line = $0.6 \times 30{,}000 = £18{,}000$. The household at £16,000 is in relative poverty. If median rises to £35,000: new poverty line = £21,000. The household is still in relative poverty and has fallen *further* below the line (from £2,000 below to £5,000 below). This illustrates a limitation of relative poverty: people can become "poorer" in relative terms even if their absolute income hasn't changed.
-</p>
 </details>
 
 **Problem 4.** A worker earns £40,000 and faces income tax at 20% and National Insurance at 12%. She
@@ -363,9 +365,7 @@ earned?
 
 <details>
 <summary>Hint</summary>
-<p>
 EMTR = 20% (income tax) + 12% (NI) + 55% (benefit withdrawal) = 87%. From an extra £1,000: she pays £200 tax + £120 NI = £320. Her UC falls by £550. Net gain = £1,000 - £320 - £550 = £130. She keeps only 13% of additional earnings. This is a severe poverty trap.
-</p>
 </details>
 
 **Problem 5.** Using Piketty's framework ($r > g$), explain why wealth inequality tends to increase
@@ -373,9 +373,7 @@ over time. Under what conditions might this trend be reversed?
 
 <details>
 <summary>Hint</summary>
-<p>
 If the return on capital ($r$) exceeds the growth rate of the economy ($g$), capital income grows faster than labour income. Since wealth is concentrated, this increases the wealth share of the top. Reversed if: (1) $g > r$ (e.g., rapid growth, low returns due to competition), (2) progressive wealth/capital taxes, (3) shocks that destroy capital value (wars, depressions), (4) policies that broaden capital ownership (employee share schemes).
-</p>
 </details>
 
 **Problem 6.** "Inequality is inevitable in a market economy but is not necessarily undesirable."
@@ -383,9 +381,7 @@ Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
-<p>
 Inevitable: markets reward productivity differences, which reflect education, effort, risk, and talent. Some inequality provides incentives for work, investment, and innovation (efficiency argument). Not necessarily undesirable: moderate inequality is consistent with social mobility and opportunity. However, extreme inequality (as in many developing countries) is associated with political capture, reduced social mobility, and underinvestment in human capital by the poor. The question is the *degree* and *type* of inequality, not its existence.
-</p>
 </details>
 
 **Problem 7.** Compare the advantages and disadvantages of universal vs means-tested benefits as
@@ -393,9 +389,7 @@ tools for reducing poverty.
 
 <details>
 <summary>Hint</summary>
-<p>
 Universal: advantages — no stigma, no poverty trap, universal coverage, simple to administer. Disadvantages — expensive (goes to those who don't need it), may require higher taxes. Means-tested: advantages — targeted, cheaper, can provide higher benefits to those most in need. Disadvantages — creates poverty traps (high EMTR), stigma, non-take-up (eligible people don't claim), administrative complexity.
-</p>
 </details>
 
 **Problem 8.** A country has a Gini coefficient of 0.25 for income but 0.65 for wealth. Explain why
@@ -403,9 +397,7 @@ wealth is more unequally distributed than income, and discuss the implications f
 
 <details>
 <summary>Hint</summary>
-<p>
 Wealth is accumulated over lifetimes and generations; income is measured annually. Wealth generates returns ($r > g$), creating compounding effects. Inheritance concentrates wealth. Implications for social mobility: wealthy families can invest in education, health, networks, and housing for their children, giving them advantages regardless of individual talent. High wealth inequality reduces intergenerational mobility (the "Great Gatsby curve" — countries with higher inequality tend to have lower mobility).
-</p>
 </details>
 
 **Problem 9.** Evaluate the argument that globalisation has increased inequality within developed
@@ -413,9 +405,7 @@ countries.
 
 <details>
 <summary>Hint</summary>
-<p>
 For: trade with low-wage countries reduces demand for unskilled manufacturing labour in developed countries (Stolper-Samuelson theorem). Offshoring of jobs to lower-cost locations. Capital mobility puts downward pressure on wages. Against: trade lowers prices for consumers (disproportionately benefiting the poor). Creates new jobs in export sectors. Increases overall national income. Evidence is mixed: skill-biased technological change may be a more important driver of inequality than trade per se.
-</p>
 </details>
 
 **Problem 10.** "The best way to reduce inequality is through education, not redistribution."
@@ -423,9 +413,7 @@ Discuss.
 
 <details>
 <summary>Hint</summary>
-<p>
 Education addresses the *root cause* (productivity differences) rather than the *symptom* (income differences). Improves human capital, raises wages at the bottom, promotes social mobility. More politically acceptable than higher taxes. But: takes decades to have effect, access to education is itself unequal, doesn't help those past working age, quality of education matters more than quantity. Redistribution provides immediate relief for those in poverty. Optimal approach: both — invest in education for long-run equality of opportunity, and redistribute for short-run poverty alleviation.
-</p>
 </details>
 
 :::

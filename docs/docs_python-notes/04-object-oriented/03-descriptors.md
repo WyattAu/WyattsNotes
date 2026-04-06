@@ -193,7 +193,8 @@ t2 = time.time()
 print(f"First: {t1-t0:.3f}s, Second: {t2-t1:.3f}s")
 ```
 
-:::warning `cached_property` is a non-data descriptor. This means instance attributes override it:
+:::warning
+`cached_property` is a non-data descriptor. This means instance attributes override it:
 
 ```python
 e = ExpensiveComputation(range(100))
@@ -287,7 +288,8 @@ class StaticMethod:
         return self.func
 ```
 
-:::tip Use `@staticmethod` when a method does not need access to `self` or `cls`. Use `@classmethod`
+:::tip
+Use `@staticmethod` when a method does not need access to `self` or `cls`. Use `@classmethod`
 when you need the class (e.g., for alternative constructors). Use a regular method when you need the
 instance.
 :::
@@ -372,7 +374,8 @@ f.x = 1
 f.dynamic = "allowed"  # Stored in __dict__
 ```
 
-:::warning `__slots__` prevents `__dict__` by default, which means `pickle` with protocol 0 may not
+:::warning
+`__slots__` prevents `__dict__` by default, which means `pickle` with protocol 0 may not
 work correctly. Always test serialization with your chosen protocol when using `__slots__`.
 :::
 
@@ -423,7 +426,8 @@ print(s.x)        # Works
 # print(s.z)      # AttributeError: Access to 'z' is not allowed
 ```
 
-:::danger When implementing `__getattribute__`, you **must** use
+:::danger
+When implementing `__getattribute__`, you **must** use
 `object.__getattribute__(self, name)` for any attribute access within the method. Using `self.name`
 will cause infinite recursion because it triggers `__getattribute__` again.
 :::
@@ -469,7 +473,8 @@ pa.version = "1.0"
 # del pa.version  # AttributeError: Cannot delete protected attribute 'version'
 ```
 
-:::warning Same recursion rule applies: always use `object.__setattr__(self, name, value)` and
+:::warning
+Same recursion rule applies: always use `object.__setattr__(self, name, value)` and
 `object.__delattr__(self, name)` within these methods.
 :::
 
@@ -531,7 +536,8 @@ print(v1 > v2)   # False (generated)
 print(v1 >= v2)  # False (generated)
 ```
 
-:::warning `@total_ordering` adds overhead because each generated method calls the others. For
+:::warning
+`@total_ordering` adds overhead because each generated method calls the others. For
 performance-critical code, implement all six comparison methods explicitly.
 :::
 

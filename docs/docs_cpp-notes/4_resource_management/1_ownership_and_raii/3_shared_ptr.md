@@ -55,14 +55,16 @@ A control block is created at the following points:
 3. `std::allocate_shared&lt;T&gt;(alloc, args...)` — uses custom allocator for both
 4. Constructing from a `std::weak_ptr` via `weak_ptr::lock()` — reuses existing control block
 
-:::warning Never construct multiple `shared_ptr` instances from the same raw pointer. Each
+:::warning
+Never construct multiple `shared_ptr` instances from the same raw pointer. Each
 construction creates a new control block, leading to multiple destructions (double-free):
 
 ````cpp
 int* raw = new int(42);
 std::shared_ptr<int> p1(raw);
 std::shared_ptr<int> p2(raw);  // BUG: second control block, double-free!
-``` :::
+```
+:::
 
 ## 3.3 `std::make_shared` vs Direct Construction
 
@@ -136,10 +138,12 @@ shared_ptr(new Sensor) (two allocations):
   Two allocations, two frees
 ```
 
-:::info Relevance `std::make_shared` performs a single allocation (better cache locality, fewer
+:::info
+Relevance `std::make_shared` performs a single allocation (better cache locality, fewer
 syscalls). However, the control block and object share the same memory block, so the memory for the
 control block cannot be freed until **all** `weak_ptr` references are also gone. For very large
-objects with long-lived `weak_ptr` observers, this can delay deallocation. :::
+objects with long-lived `weak_ptr` observers, this can delay deallocation.
+:::
 
 ## 3.4 Thread Safety Model
 
@@ -346,10 +350,12 @@ int main() {
 }
 ```
 
-:::warning COW with `shared_ptr` has thread-safety subtleties. The `unique()` check is a data race
+:::warning
+COW with `shared_ptr` has thread-safety subtleties. The `unique()` check is a data race
 if another thread might modify the object concurrently. COW is safe only in single-threaded contexts
 or with external synchronization. `std::string` implementations have moved away from COW for this
-reason. :::
+reason.
+:::
 
 ## 3.8 `sizeof(shared_ptr)` Across Implementations
 
@@ -375,9 +381,11 @@ matters in memory-constrained applications or when storing many pointers in cont
 4. **Cache pressure:** The control block is a separate allocation, causing an additional cache miss
    on every `shared_ptr` copy or destruction.
 
-:::warning Do not use `shared_ptr` by default. Use `unique_ptr` as your default smart pointer. Only
+:::warning
+Do not use `shared_ptr` by default. Use `unique_ptr` as your default smart pointer. Only
 reach for `shared_ptr` when you genuinely need shared ownership. Premature use of `shared_ptr` is a
-common source of performance bugs in C++ codebases. :::
+common source of performance bugs in C++ codebases.
+:::
 
 ## Common Pitfalls
 

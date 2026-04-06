@@ -11,7 +11,9 @@ slug: radioactivity
 
 ## Radioactivity
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 **Definition.** Radioactivity is the spontaneous emission of radiation from unstable atomic nuclei.
 
@@ -91,10 +93,14 @@ $$\prescript{A}{}{Z}\text{X}^* \to \prescript{A}{}{Z}\text{X} + \gamma$$
 No change in $A$ or $Z$. Gamma rays are weakly ionising but highly penetrating (stopped by thick
 lead or concrete).
 
-:::warning Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
-number changes. A neutron becomes a proton, so the total nucleon count is unchanged. :::
+:::warning
+Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
+number changes. A neutron becomes a proton, so the total nucleon count is unchanged.
+:::
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 | Requirement                  | AQA         | Edexcel     | OCR (A)     | CIE      |
 | ---------------------------- | ----------- | ----------- | ----------- | -------- |
@@ -168,13 +174,17 @@ $$\boxed{t_{1/2} = \frac{\ln 2}{\lambda}}$$
 $N = N_0/2^n$. The decay is exponential — the activity is always proportional to the number of
 remaining nuclei, so it decreases exponentially.
 
-:::tip Exam Technique On a log-linear graph of activity vs time, radioactive decay appears as a
+:::tip
+Exam Technique On a log-linear graph of activity vs time, radioactive decay appears as a
 straight line with gradient $=-\lambda$. The half-life can be found by finding the time for the
-activity to halve at any point on the curve. :::
+activity to halve at any point on the curve.
+:::
 
 ### Radiation Detection
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4
+:::
 
 #### Geiger-Muller Tube
 
@@ -205,10 +215,12 @@ Sources of background radiation include:
   ${}^{40}\text{K}$ and ${}^{238}\text{U}$.
 - **Food and drink** — trace amounts of ${}^{40}\text{K}$ and ${}^{14}\text{C}$.
 
-:::warning Common Pitfall The count rate measured by a GM tube is always less than the true activity
+:::warning
+Common Pitfall The count rate measured by a GM tube is always less than the true activity
 because: (1) the detector only intercepts a fraction of emitted radiation (solid angle factor), and
 (2) not all radiation that enters the tube produces a count (detection efficiency is typically 1-2%
-for gamma rays). Never assume count rate equals activity. :::
+for gamma rays). Never assume count rate equals activity.
+:::
 
 #### Scintillation Detector
 
@@ -235,9 +247,11 @@ $$\ln A = \ln A_0 - \lambda t$$
 
 The gradient of the straight line gives $-\lambda$, and then $t_{1/2} = \ln 2 / \lambda$.
 
-:::tip Exam Technique When describing an experimental method for determining half-life, always
+:::tip
+Exam Technique When describing an experimental method for determining half-life, always
 mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
-readings at regular intervals, and (4) using a log-linear graph for greater accuracy. :::
+readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
+:::
 
 #### Practical Considerations
 
@@ -247,16 +261,16 @@ readings at regular intervals, and (4) using a log-linear graph for greater accu
   known mass of the isotope and use $A = \lambda N$ where $N$ is calculated from the mass and
   Avogadro's number.
 
-:::info Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
+:::info
+Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
 discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
-method. :::
+method.
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Radium-226 undergoes alpha decay. Write the nuclear equation and identify the daughter nucleus.
 
 **Answer.**
@@ -265,42 +279,30 @@ $\prescript{226}{}{88}\text{Ra} \to \prescript{222}{}{86}\text{Rn} + \prescript{
 Daughter nucleus: Radon-222.
 
 <b>If you get this wrong, revise:</b> [Alpha Decay](#alpha-decay-)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 Carbon-14 undergoes beta-minus decay. Write the nuclear equation.
 
 **Answer.**
 $\prescript{14}{}{6}\text{C} \to \prescript{14}{}{7}\text{N} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
 
 <b>If you get this wrong, revise:</b> [Beta Decay ($\beta^-$)](#beta-decay-_beta)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A radioactive sample has a half-life of 5.0 hours. If the initial activity is 800 Bq, what is the
 activity after 20 hours?
 
 **Answer.** Number of half-lives: $n = 20/5 = 4$. $A = 800/2^4 = 800/16 = 50$ Bq.
 
 <b>If you get this wrong, revise:</b> [Half-Life](#half-life)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A sample contains $4.0 \times 10^{12}$ nuclei of a radioactive isotope with decay constant
 $1.2 \times 10^{-7}$ s$^{-1}$. Calculate the initial activity and the number of nuclei remaining
 after 2.0 hours.
@@ -311,14 +313,10 @@ $t = 7200$ s.
 $N = N_0 e^{-\lambda t} = 4.0 \times 10^{12} \times e^{-1.2 \times 10^{-7} \times 7200} = 4.0 \times 10^{12} \times e^{-0.864} = 4.0 \times 10^{12} \times 0.421 = 1.68 \times 10^{12}$.
 
 <b>If you get this wrong, revise:</b> [Exponential Decay Law](#3-exponential-decay-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 Derive the relationship $t_{1/2} = \ln 2/\lambda$.
 
 **Answer.** At $t = t_{1/2}$: $N = N_0/2$. From $N = N_0 e^{-\lambda t}$:
@@ -326,27 +324,19 @@ $\frac{1}{2} = e^{-\lambda t_{1/2}}$. Taking natural logs: $\ln(1/2) = -\lambda 
 $-\ln 2 = -\lambda t_{1/2}$. $t_{1/2} = \ln 2/\lambda$.
 
 <b>If you get this wrong, revise:</b> [Half-Life](#half-life)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 The activity of a sample decreases from 1200 Bq to 150 Bq in 30 minutes. Calculate the half-life.
 
 **Answer.** $150/1200 = 1/8 = 1/2^3$. So 3 half-lives have elapsed. $t_{1/2} = 30/3 = 10$ minutes.
 
 <b>If you get this wrong, revise:</b> [Half-Life](#half-life)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Explain why the antineutrino was proposed in beta decay.
 
 **Answer.** In beta decay, the emitted electron has a continuous energy spectrum rather than a
@@ -357,14 +347,10 @@ released by the nuclear transition, conserving energy. The antineutrino was expe
 in 1956 by Cowan and Reines.
 
 <b>If you get this wrong, revise:</b> [Beta Decay ($\beta^-$)](#beta-decay-_beta)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A sample of iodine-131 has a half-life of 8.04 days. How long does it take for the activity to fall
 to 5% of its initial value?
 
@@ -374,14 +360,10 @@ $\lambda = \ln 2/t_{1/2} = 0.693/8.04 = 0.0862$ day$^{-1}$.
 $t = -\ln 0.05/\lambda = 3.00/0.0862 = 34.8$ days.
 
 <b>If you get this wrong, revise:</b> [Exponential Decay Law](#3-exponential-decay-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 Compare and contrast alpha, beta, and gamma radiation in terms of: (a) nature, (b) ionising power,
 (c) penetrating power, (d) deflection in electric and magnetic fields.
 
@@ -398,14 +380,10 @@ by thick lead).
 $\alpha$ deflection is less (larger mass). $\gamma$ is undeflected (no charge).
 
 <b>If you get this wrong, revise:</b> [Types of Radioactive Decay](#2-types-of-radioactive-decay)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A radioactive isotope X with half-life 12 hours decays to a stable daughter Y. A sample initially
 contains 1000 atoms of X. How many atoms of Y are present after 36 hours?
 
@@ -413,13 +391,13 @@ contains 1000 atoms of X. How many atoms of Y are present after 36 hours?
 $1000 - 125 = 875$.
 
 <b>If you get this wrong, revise:</b> [Exponential Decay Law](#3-exponential-decay-law)
-
-</p>
 </details>
 
 ## 4. Decay Chains
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 **Definition.** A decay chain (or radioactive series) is a sequence of radioactive decays where each
 daughter nuclide is itself radioactive, continuing until a stable nuclide is reached.
@@ -458,16 +436,20 @@ Each daughter has the same activity as the parent. This has practical importance
 protection: the activity of radon-222 (a daughter of ${}^{238}\text{U}$) in buildings is sustained
 by the essentially constant uranium in the ground beneath.
 
-:::warning Common Pitfall In a decay chain, the half-life of the parent determines the overall rate
+:::warning
+Common Pitfall In a decay chain, the half-life of the parent determines the overall rate
 only when the parent is much longer-lived than all daughters. If a short-lived daughter precedes a
 long-lived daughter, the long-lived daughter accumulates and can become the dominant radiological
-hazard. :::
+hazard.
+:::
 
 ## 5. Applications of Radioactivity
 
 ### Carbon-14 Dating
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4
+:::
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant ratio of
 ${}^{14}\text{C}$ to ${}^{12}\text{C}$. Cosmic rays produce neutrons in the upper atmosphere, which
@@ -507,8 +489,10 @@ activity to fall to half its initial value, combining both physical decay and bi
 
 $$\frac{1}{t_{\text{eff}}} = \frac{1}{t_{\text{physical}}} + \frac{1}{t_{\text{biological}}}$$
 
-:::info Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
-explicitly tested by AQA or CIE at A Level. :::
+:::info
+Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
+explicitly tested by AQA or CIE at A Level.
+:::
 
 ## 6. Case Studies
 
@@ -546,17 +530,17 @@ Key differences from Chernobyl:
 Both disasters demonstrate that understanding half-lives is critical for predicting contamination
 timelines and informing public health responses.
 
-:::tip Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
+:::tip
+Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
 which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
 ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
-internally, gamma externally). :::
+internally, gamma externally).
+:::
 
 ## Additional Problems
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 A sample of ancient wood has a ${}^{14}\text{C}$ activity of 1.5 Bq per gram. A living sample of the
 same type of wood has an activity of 12.5 Bq per gram. Calculate the age of the ancient wood.
 ($t_{1/2}$ of ${}^{14}\text{C} = 5730$ years.)
@@ -566,14 +550,10 @@ $\lambda = \ln 2/5730 = 1.209 \times 10^{-4}$ year$^{-1}$.
 $t = -\ln 0.12/(1.209 \times 10^{-4}) = 2.12/(1.209 \times 10^{-4}) = 17,500$ years (2 s.f.).
 
 <b>If you get this wrong, revise:</b> [Carbon-14 Dating](#carbon-14-dating)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 In the uranium-238 decay series, verify that 8 alpha decays and 6 beta-minus decays are consistent
 with the transformation from ${}^{238}\text{U}$ to ${}^{206}\text{Pb}$.
 
@@ -582,14 +562,10 @@ beta-minus decays: $A$ unchanged, $Z = 76 + 6 = 82$. Final nuclide: $A = 206$, $
 ${}^{206}\text{Pb}$ $\checkmark$.
 
 <b>If you get this wrong, revise:</b> [The Uranium-238 Decay Series](#the-uranium-238-decay-series)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 13</summary>
-<p>
-
 A GM tube records a count rate of 340 counts per minute from a radioactive source. The background
 count rate is 25 counts per minute. After 2.5 hours, the count rate (including background) has
 fallen to 105 counts per minute. Calculate the half-life of the source.
@@ -600,14 +576,10 @@ $-1.37 = -150\lambda$. $\lambda = 0.00913$ min$^{-1}$. $t_{1/2} = \ln 2/0.00913 
 
 <b>If you get this wrong, revise:</b>
 [Half-Life Measurement Techniques](#half-life-measurement-techniques)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 14</summary>
-<p>
-
 A patient is administered ${}^{99m}\text{Tc}$ with a physical half-life of 6.0 hours for a
 diagnostic scan. The biological half-life of ${}^{99m}\text{Tc}$ in the body is 4.8 hours. Calculate
 the effective half-life and the fraction of the initial activity remaining after 12 hours.
@@ -619,14 +591,10 @@ After 12 hours: $n = 12/2.67 = 4.49$ effective half-lives. Fraction remaining
 $= 1/2^{4.49} = 1/22.4 = 0.0446$, i.e. 4.5%.
 
 <b>If you get this wrong, revise:</b> [Nuclear Medicine](#nuclear-medicine)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 15</summary>
-<p>
-
 Explain why a sample of radon-222 collected from the soil beneath a building continues to produce a
 detectable activity even after the original radon-222 has been removed, referring to the concept of
 secular equilibrium.
@@ -639,8 +607,6 @@ continuously produced by the long-lived parent, causing the radon activity to re
 equilibrium value over several radon half-lives (approximately 20-40 days).
 
 <b>If you get this wrong, revise:</b> [Secular Equilibrium](#secular-equilibrium)
-
-</p>
 </details>
 
 :::

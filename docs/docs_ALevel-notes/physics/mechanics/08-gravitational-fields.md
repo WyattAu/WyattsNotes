@@ -11,7 +11,8 @@ slug: gravitational-fields
 
 ## Gravitational Fields
 
-:::info Board Coverage
+:::info
+Board Coverage
 AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 :::
 
@@ -166,21 +167,15 @@ $$\boxed{E_{\text{total}} = E_k + E_p = -\frac{GMm}{2r}}$$
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Calculate the gravitational field strength at the surface of Mars, given its mass is $6.42 \times 10^{23}$ kg and its radius is $3.39 \times 10^6$ m.
 
 **Answer.** $g = \frac{GM}{r^2} = \frac{6.67 \times 10^{-11} \times 6.42 \times 10^{23}}{(3.39 \times 10^6)^2} = \frac{4.28 \times 10^{13}}{1.149 \times 10^{13}} = 3.73$ N kg$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Gravitational Field Strength](#2-gravitational-field-strength)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A satellite orbits Earth at an altitude of $400$ km. Calculate: (a) its orbital speed, (b) its period, (c) its centripetal acceleration.
 
 **Answer.** $r = 6370 + 400 = 6770$ km $= 6.77 \times 10^6$ m. $GM = 3.976 \times 10^{14}$.
@@ -192,27 +187,19 @@ A satellite orbits Earth at an altitude of $400$ km. Calculate: (a) its orbital 
 (c) $a = v^2/r = GM/r^2 = 3.976 \times 10^{14}/(6.77 \times 10^6)^2 = 8.67$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Kepler's Laws](#5-keplers-laws)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 Calculate the escape velocity from the Moon, given $M_{\text{Moon}} = 7.35 \times 10^{22}$ kg and $R_{\text{Moon}} = 1.74 \times 10^6$ m.
 
 **Answer.** $v_e = \sqrt{2GM/R} = \sqrt{2 \times 6.67 \times 10^{-11} \times 7.35 \times 10^{22}/1.74 \times 10^6} = \sqrt{5.64 \times 10^6} = 2370$ m s$^{-1} = 2.37$ km s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Escape Velocity](#6-escape-velocity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 Two stars of mass $2.0 \times 10^{30}$ kg each are separated by $1.0 \times 10^{11}$ m. They orbit their common centre of mass. Find the orbital period.
 
 **Answer.** Each star is at distance $r = 5.0 \times 10^{10}$ m from the centre. The gravitational force provides the centripetal force:
@@ -222,14 +209,10 @@ $\frac{Gm^2}{(2r)^2} = \frac{mv^2}{r}$. $\frac{Gm}{4r} = v^2$. $v = \sqrt{Gm/(4r
 $T = 2\pi r/v = 2\pi r\sqrt{4r/(Gm)} = 4\pi\sqrt{r^3/(Gm)} = 4\pi\sqrt{(5 \times 10^{10})^3/(6.67 \times 10^{-11} \times 2 \times 10^{30})} = 4\pi\sqrt{1.25 \times 10^{33}/1.334 \times 10^{20}} = 4\pi\sqrt{9.37 \times 10^{12}} = 4\pi \times 3.06 \times 10^6 = 3.85 \times 10^7$ s $\approx 1.2$ years.
 
 <b>If you get this wrong, revise:</b> [Derivation of Kepler's Third Law](#derivation-of-keplers-third-law-for-circular-orbits)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A satellite of mass $500$ kg is in a circular orbit of radius $7.0 \times 10^6$ m around Earth. Calculate: (a) its total energy, (b) the energy needed to move it to an orbit of radius $1.4 \times 10^7$ m.
 
 **Answer.** (a) $E = -GMm/(2r) = -3.976 \times 10^{14} \times 500/(2 \times 7.0 \times 10^6) = -1.42 \times 10^{10}$ J $= -14.2$ GJ.
@@ -239,71 +222,49 @@ A satellite of mass $500$ kg is in a circular orbit of radius $7.0 \times 10^6$ 
 $\Delta E = E' - E = -7.10 - (-14.2) = 7.10$ GJ.
 
 <b>If you get this wrong, revise:</b> [Orbital Energy](#7-orbital-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Calculate the gravitational potential at a point $3.0 \times 10^7$ m from the centre of Earth ($M_E = 5.97 \times 10^{24}$ kg).
 
 **Answer.** $V = -GM/r = -6.67 \times 10^{-11} \times 5.97 \times 10^{24}/3.0 \times 10^7 = -1.33 \times 10^7$ J kg$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Gravitational Potential](#3-gravitational-potential)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Prove that the escape velocity from a planet of radius $R$ and surface gravitational field strength $g$ is $v_e = \sqrt{2gR}$.
 
 **Answer.** $g = GM/R^2$, so $GM = gR^2$. $v_e = \sqrt{2GM/R} = \sqrt{2gR^2/R} = \sqrt{2gR}$. $\square$
 
 <b>If you get this wrong, revise:</b> [Escape Velocity](#6-escape-velocity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A geostationary satellite orbits above the equator with a period of 24 hours. Calculate its orbital radius.
 
 **Answer.** $T = 86400$ s. $T^2 = \frac{4\pi^2}{GM}r^3$. $r^3 = \frac{GMT^2}{4\pi^2} = \frac{3.976 \times 10^{14} \times 7.46 \times 10^9}{39.48} = 7.52 \times 10^{22}$. $r = 4.22 \times 10^7$ m $= 42{,}200$ km.
 
 <b>If you get this wrong, revise:</b> [Derivation of Kepler's Third Law](#derivation-of-keplers-third-law-for-circular-orbits)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 Show that the orbital speed of a satellite is independent of the satellite's mass.
 
 **Answer.** $v = \sqrt{GM/r}$. The satellite's mass $m$ does not appear — it cancels in the derivation: $\frac{GMm}{r^2} = \frac{mv^2}{r} \implies v^2 = GM/r$. The orbital speed depends only on the mass of the central body and the orbital radius. $\square$
 
 <b>If you get this wrong, revise:</b> [Derivation of Kepler's Third Law](#derivation-of-keplers-third-law-for-circular-orbits)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 Explain why a satellite in a higher orbit moves more slowly than one in a lower orbit, even though the higher satellite has greater total energy.
 
 **Answer.** From $v = \sqrt{GM/r}$: as $r$ increases, $v$ decreases — the satellite moves slower. However, the total energy $E = -GMm/(2r)$ is less negative (greater) at larger $r$. This is because the potential energy increases more than the kinetic energy decreases. The satellite has more total energy but is moving slower — the extra energy is in the form of gravitational potential energy.
 
 <b>If you get this wrong, revise:</b> [Orbital Energy](#7-orbital-energy)
-
-</p>
 </details>

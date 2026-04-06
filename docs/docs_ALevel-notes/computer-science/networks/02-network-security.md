@@ -223,7 +223,8 @@ traffic based on predetermined security rules.
 | Application-layer | Inspects actual content                       | Application (L7) |
 | Next-generation   | Combines all above + IDS/IPS, deep inspection | All layers       |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires symmetric encryption (AES), asymmetric encryption (RSA), digital signatures,
   SSL/TLS, firewalls, and malware types
@@ -231,7 +232,8 @@ traffic based on predetermined security rules.
   specific protocol details
 - **OCR (A)** requires understanding of encryption, digital certificates, authentication methods,
   and network security protocols
-- **Edexcel** covers network security fundamentals including encryption and firewalls :::
+- **Edexcel** covers network security fundamentals including encryption and firewalls
+:::
 
 ---
 

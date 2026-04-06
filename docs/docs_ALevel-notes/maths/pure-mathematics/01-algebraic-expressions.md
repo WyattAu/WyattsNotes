@@ -243,8 +243,6 @@ _Intuition._ The Factor Theorem connects algebra (polynomials) to geometry (root
 
 <details>
 <summary>Example</summary>
-<p>
-
 Show that $(x - 2)$ is a factor of $f(x) = x^3 - 3x^2 + 4$.
 
 By the Factor Theorem, we check $f(2)$:
@@ -264,8 +262,6 @@ x^3 - 3x^2 + 4 &= (x - 2)(x^2 - x - 2) \\
 &= (x - 2)^2(x + 1)
 \end{aligned}
 $$
-
-</p>
 </details>
 
 ---
@@ -300,8 +296,6 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \frac{\sqrt{3} + 1}{\sqrt{3} - 1} &= \frac{(\sqrt{3} + 1)(\sqrt{3} + 1)}{(\sqrt{3} - 1)(\sqrt{3} + 1)} \\
@@ -309,8 +303,6 @@ $$
 &= \frac{4 + 2\sqrt{3}}{2} = 2 + \sqrt{3}
 \end{aligned}
 $$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Rationalising denominators](#11-rationalising-the-denominator)
 
@@ -320,8 +312,6 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 2^{3x} \cdot 2^{4 - x} &= 128 \\
@@ -331,8 +321,6 @@ $$
 x &= \frac{3}{2}
 \end{aligned}
 $$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Laws of indices](#2-indices-exponent-laws)
 
@@ -342,8 +330,6 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Try $f(1) = 1 - 6 + 11 - 6 = 0$. So $(x - 1)$ is a factor.
 
 Divide $x^3 - 6x^2 + 11x - 6$ by $(x - 1)$:
@@ -354,8 +340,6 @@ x^3 - 6x^2 + 11x - 6 &= (x - 1)(x^2 - 5x + 6) \\
 &= (x - 1)(x - 2)(x - 3)
 \end{aligned}
 $$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Factor theorem](#52-the-factor-theorem)
 
@@ -365,8 +349,6 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 By the Remainder Theorem: $f(1) = -6$:
 
 $$
@@ -389,8 +371,6 @@ $$
 $$
 
 Adding (1) and (2): $3a = 18$, so $a = 6$. Then $b = 4 - 6 = -2$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Remainder theorem](#51-the-remainder-theorem)
 
@@ -400,8 +380,6 @@ Adding (1) and (2): $3a = 18$, so $a = 6$. Then $b = 4 - 6 = -2$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \left(\frac{8x^6}{27y^3}\right)^{-2/3} &= \left(\frac{27y^3}{8x^6}\right)^{2/3} \\
@@ -411,8 +389,6 @@ $$
 $$
 
 Since $27^{1/3} = 3$ and $8^{1/3} = 2$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Laws of indices](#2-indices-exponent-laws)
 
@@ -422,8 +398,6 @@ Since $27^{1/3} = 3$ and $8^{1/3} = 2$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 First factorise: $x^2 + x - 6 = (x + 3)(x - 2)$.
 
 $$
@@ -438,8 +412,6 @@ Setting $x = -3$: $-6 + 1 = A(-5)$, so $A = 1$.
 Setting $x = 2$: $4 + 1 = B(5)$, so $B = 1$.
 
 $$\frac{2x + 1}{(x + 3)(x - 2)} = \frac{1}{x + 3} + \frac{1}{x - 2}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Algebraic fractions](#6-simplifying-algebraic-fractions)
 
@@ -449,8 +421,6 @@ $$\frac{2x + 1}{(x + 3)(x - 2)} = \frac{1}{x + 3} + \frac{1}{x - 2}$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $f(1) = 1 - 1 - 7 + 1 + 6 = 0$ ✓
 
 $f(-1) = 1 + 1 - 7 - 1 + 6 = 0$ ✓
@@ -472,8 +442,6 @@ Comparing leading coefficients: $p = 1$.
 Comparing constant terms: $(-1)(1)(-3)(q) = 6$, so $3q = 6$, $q = 2$.
 
 $$f(x) = (x - 1)(x + 1)(x - 3)(x + 2)$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Factor theorem](#52-the-factor-theorem)
 
@@ -483,8 +451,6 @@ $$f(x) = (x - 1)(x + 1)(x - 3)(x + 2)$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Assume $\sqrt{3} = \frac{p}{q}$ in lowest terms, $p, q \in \mathbb{Z}^+$, $\gcd(p, q) = 1$.
 
 $$
@@ -504,8 +470,6 @@ q^2 &= 3k^2
 $$
 
 So $3 \mid q^2$, hence $3 \mid q$. But $\gcd(p, q) = 1$ and both are divisible by 3 — contradiction. $\blacksquare$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Irrationality of surds](#12-irrationality-of-sqrt2)
 
@@ -515,8 +479,6 @@ So $3 \mid q^2$, hence $3 \mid q$. But $\gcd(p, q) = 1$ and both are divisible b
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Using long division:
 
 $3x^3 \div x = 3x^2$. Multiply: $3x^2(x + 2) = 3x^3 + 6x^2$. Subtract: $-x^2 - 10x$.
@@ -528,8 +490,6 @@ $-8x \div x = -8$. Multiply: $-8(x + 2) = -8x - 16$. Subtract: $24$.
 Quotient: $3x^2 - x - 8$, Remainder: $24$.
 
 Verification: $(x + 2)(3x^2 - x - 8) + 24 = 3x^3 - x^2 - 8x + 6x^2 - 2x - 16 + 24 = 3x^3 + 5x^2 - 10x + 8$ ✓
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Polynomial division](#4-polynomial-division)
 
@@ -539,8 +499,6 @@ Verification: $(x + 2)(3x^2 - x - 8) + 24 = 3x^3 - x^2 - 8x + 6x^2 - 2x - 16 + 2
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \frac{3(x - 2) - (x + 1)}{(x + 1)(x - 2)} &= 1 \\
@@ -552,8 +510,6 @@ x^2 - 3x + 5 &= 0
 $$
 
 Discriminant: $\Delta = 9 - 20 = -11 < 0$. No real solutions.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Algebraic fractions](#6-simplifying-algebraic-fractions) and [Quadratics](./02-quadratics.md)
 
@@ -563,8 +519,6 @@ Discriminant: $\Delta = 9 - 20 = -11 < 0$. No real solutions.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Since $(x - 1)^2$ is a factor, both $f(1) = 0$ and $f'(1) = 0$.
 
 $$
@@ -593,8 +547,6 @@ Substituting into (3): $4a - 2(-3 - 2a) + (2 + a) = 20$
 $$4a + 6 + 4a + 2 + a = 20 \implies 9a + 8 = 20 \implies a = \frac{12}{9} = \frac{4}{3}$$
 
 $$b = -3 - \frac{8}{3} = -\frac{17}{3}, \quad c = 2 + \frac{4}{3} = \frac{10}{3}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Remainder and Factor theorems](#5-the-factor-theorem-and-remainder-theorem)
 
@@ -604,8 +556,6 @@ $$b = -3 - \frac{8}{3} = -\frac{17}{3}, \quad c = 2 + \frac{4}{3} = \frac{10}{3}
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Factorise all quadratics:
 
 $$
@@ -617,8 +567,6 @@ $$
 $$
 
 for $x \neq -3, -2, 1, 3$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Factorisation](#32-factorisation) and [Algebraic fractions](#6-simplifying-algebraic-fractions)
 
@@ -628,8 +576,6 @@ for $x \neq -3, -2, 1, 3$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 A perfect square has discriminant $\Delta = 0$:
 
 $$
@@ -643,7 +589,5 @@ $$
 $k = 6$: gives $x^2 + 6x + 9 = (x + 3)^2$ ✓
 
 $k = -2$: gives $x^2 - 2x + 1 = (x - 1)^2$ ✓
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Quadratics](./02-quadratics.md)

@@ -312,7 +312,8 @@ culture.
 | "The bishop blessed him from the boat"                  | Religious authority passes by, offering symbolic but useless blessing                |
 | "He came with a suitcase full of letters... unopened"   | Bayardo's romantic gesture is hollow — appearance without substance                  |
 
-:::tip Exam Tip When writing about Chronicle, always address the **form** (novella, non-linear,
+:::tip
+Exam Tip When writing about Chronicle, always address the **form** (novella, non-linear,
 journalistic) as well as the content. The way the story is told is as important as what happens.
 Consider how Marquez uses the reader's knowledge of the ending to create dramatic irony throughout.
 :::

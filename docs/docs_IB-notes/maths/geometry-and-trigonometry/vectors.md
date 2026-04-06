@@ -443,8 +443,10 @@ $$
 | Distance point to plane | $D = \frac{                               | \bm{p} \cdot \hat{n} - d            | }{  | \hat{n} | }$          | Scalar |
 | Scalar triple product   | $V =                                      | \bm{a} \cdot (\bm{b} \times \bm{c}) | $   | Volume  |
 
-:::tip Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
+:::tip
+Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
 your answer by substituting the point back into both equations. Common errors include sign mistakes
-in the cross product and forgetting to take the absolute value in distance formulas. :::
+in the cross product and forgetting to take the absolute value in distance formulas.
+:::
 
 :::

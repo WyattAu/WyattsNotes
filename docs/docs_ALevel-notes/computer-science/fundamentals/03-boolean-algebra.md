@@ -286,14 +286,16 @@ $f = \bar{A}\bar{B} + \bar{B}C + AB$
 
 </details>
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires Karnaugh maps for simplification of Boolean expressions up to 4 variables
 - **CIE (9618)** focuses on Boolean algebra identities, De Morgan's laws, and simplification using
   algebraic methods (not Karnaugh maps)
 - **OCR (A)** requires truth tables, logic gate diagrams, and construction of half adder / full
   adder circuits
-- **Edexcel** covers truth tables, logic gates, and Boolean algebra :::
+- **Edexcel** covers truth tables, logic gates, and Boolean algebra
+:::
 
 ---
 
@@ -308,12 +310,14 @@ Standard symbols:
 - **NOR gate:** OR with circle
 - **XOR gate:** OR with extra curved line on input
 
-:::tip Exam technique When drawing logic circuits from a Boolean expression:
+:::tip
+Exam technique When drawing logic circuits from a Boolean expression:
 
 1. Identify the order of operations (parentheses first)
 2. Draw inputs on the left
 3. Work rightward, one gate at a time
-4. Label all intermediate and output signals :::
+4. Label all intermediate and output signals
+:::
 
 ---
 
@@ -442,8 +446,10 @@ D-type flip-flops are the fundamental building blocks of:
    - Karnaugh maps (preferred for up to 4 variables)
 4. Draw the circuit from the simplified expression
 
-:::tip Exam technique For K-maps with don't-care conditions (X), treat X as 1 if it helps make a
-larger group, and 0 otherwise. This minimises the expression. :::
+:::tip
+Exam technique For K-maps with don't-care conditions (X), treat X as 1 if it helps make a
+larger group, and 0 otherwise. This minimises the expression.
+:::
 
 ---
 

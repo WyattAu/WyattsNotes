@@ -19,8 +19,8 @@ mechanism [N4950 §14.3].
 When an exception is thrown, the runtime:
 
 1. Allocates the exception object (on a dedicated heap or in a pre-allocated buffer).
-2. Copies or moves the thrown expression into that object via `std::allocator_traits` [N4950
-   §17.6.3.6].
+2. Copies or moves the thrown expression into that object. The runtime uses a dedicated allocation
+   mechanism for exception objects.
 3. Walks the **call stack** using tables generated at compile time.
 
 Each function that may participate in exception handling has two tables embedded in the binary
@@ -31,8 +31,10 @@ Each function that may participate in exception handling has two tables embedded
 | **LSDA** (Language-Specific Data Area) | Describes which PC ranges map to which `try`/`catch` blocks.                                                                            |
 | **Unwind table**                       | Lists every call site in the function so the unwinder can determine whether the function has a cleanup (destructor call) at each point. |
 
-:::info On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` blocks when no
-exception is thrown. The tables are consulted only during unwinding. :::
+:::info
+On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` blocks when no
+exception is thrown. The tables are consulted only during unwinding.
+:::
 
 ## 1.2 Searching for Matching Catch Clauses
 
@@ -183,8 +185,10 @@ the non-throwing path** to a function that does not use exceptions at all. There
 - No per-function "has_exception" global.
 - No code-size penalty in the hot path (the tables live in read-only data sections).
 
-:::tip If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
-errors. This confirms that exception-neutral code has zero overhead in the normal path. :::
+:::tip
+If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
+errors. This confirms that exception-neutral code has zero overhead in the normal path.
+:::
 
 ## 1.5 Performance Comparison: Throw/Catch vs Error Codes
 
@@ -332,8 +336,10 @@ int main() {
 //   caught NetworkError: connection refused
 ```
 
-:::warning Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
-static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception. :::
+:::warning
+Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
+static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception.
+:::
 
 ## 1.7 Cross-Thread Exception Propagation with `std::exception_ptr`
 

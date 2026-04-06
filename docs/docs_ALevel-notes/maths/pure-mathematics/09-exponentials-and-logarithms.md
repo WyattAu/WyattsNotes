@@ -18,8 +18,10 @@ slug: exponentials-and-logarithms
 | OCR (A)    | Paper 1, 2 | Includes $e^x$ and $\ln x$ graphs                 |
 | CIE (9709) | P1, P2, P3 | Exponentials/logarithms in P1; further in P3      |
 
-:::info The formula booklet gives the laws of logarithms and the derivatives of $e^x$ and $\ln x$.
-You must know how to use them and where they come from. :::
+:::info
+The formula booklet gives the laws of logarithms and the derivatives of $e^x$ and $\ln x$.
+You must know how to use them and where they come from.
+:::
 
 ---
 
@@ -57,9 +59,11 @@ $$\frac{d}{dx}e^x \bigg|_{x=0} = 1$$
 That is, the exponential function with base $e$ is its own derivative — the only exponential
 function with this property. We prove this rigorously in the next section.
 
-:::tip When a question asks you to "show that $e \approx 2.718$" or "find the value of
+:::tip
+When a question asks you to "show that $e \approx 2.718$" or "find the value of
 $\lim_{n\to\infty}(1+1/n)^n$", substitute a large value of $n$ (e.g., $n=10^6$) and round
-appropriately. :::
+appropriately.
+:::
 
 ---
 
@@ -95,8 +99,10 @@ $$\frac{d}{dx}a^x = \frac{d}{dx}e^{x\ln a} = (\ln a)\, e^{x\ln a} = a^x \ln a$$
 
 This follows immediately from the chain rule applied to $e^{x\ln a}$.
 
-:::warning The derivative of $a^x$ is $a^x \ln a$, **not** $x a^{x-1}$. The power rule
-$\frac{d}{dx}x^n = nx^{n-1}$ applies when the variable is in the **base**, not the exponent. :::
+:::warning
+The derivative of $a^x$ is $a^x \ln a$, **not** $x a^{x-1}$. The power rule
+$\frac{d}{dx}x^n = nx^{n-1}$ applies when the variable is in the **base**, not the exponent.
+:::
 
 **Intuition.** The function $e^x$ is the unique function whose rate of change at any point equals
 its value at that point. If a population of bacteria doubles every hour, its growth rate is
@@ -163,11 +169,13 @@ $$x^n = (a^p)^n = a^{pn}$$
 
 Therefore $\log_a(x^n) = pn = n\log_a x$. $\blacksquare$
 
-:::warning Common errors:
+:::warning
+Common errors:
 
 - $\log_a(x+y) \neq \log_a x + \log_a y$ (you cannot split a log of a sum)
 - $\log_a x + \log_a y \neq \log_a(x+y)$ (same mistake, reversed)
-- $(\log_a x)^n \neq n\log_a x$ (the power law applies to the argument, not the log itself) :::
+- $(\log_a x)^n \neq n\log_a x$ (the power law applies to the argument, not the log itself)
+:::
 
 ---
 
@@ -183,8 +191,10 @@ $$\ln(a^y) = \ln b$$ $$y \ln a = \ln b$$ $$y = \frac{\ln b}{\ln a}$$
 
 Since $y = \log_a b$, we have $\log_a b = \dfrac{\ln b}{\ln a}$. $\blacksquare$
 
-:::tip Your calculator likely has $\log$ (base 10) and $\ln$ (base $e$) buttons, but not a general
-$\log_a$ button. Use the change of base formula to compute logarithms in any base. :::
+:::tip
+Your calculator likely has $\log$ (base 10) and $\ln$ (base $e$) buttons, but not a general
+$\log_a$ button. Use the change of base formula to compute logarithms in any base.
+:::
 
 **Intuition.** The change of base formula tells us that logarithms in different bases are just
 constant multiples of each other. If you think of $\log_a x$ as "how many times do I need to use
@@ -218,8 +228,10 @@ $$\frac{d}{dx}\ln x = \frac{1}{x}$$
 
 This follows directly from the Fundamental Theorem of Calculus applied to the integral definition.
 
-:::tip This integral definition is why $\ln x$ is called the "natural" logarithm — it arises
-naturally from calculus, whereas $\log_{10}$ is an artefact of our base-10 number system. :::
+:::tip
+This integral definition is why $\ln x$ is called the "natural" logarithm — it arises
+naturally from calculus, whereas $\log_{10}$ is an artefact of our base-10 number system.
+:::
 
 **Intuition.** Think of $\ln x$ as measuring "how much area does $1/t$ sweep out from 1 to $x$?".
 Since $1/t$ decreases as $t$ grows, each additional unit of $x$ contributes less area. This is why
@@ -262,8 +274,10 @@ Sometimes we can use a substitution. For example, $e^{2x} + 3e^x - 4 = 0$.
 Let $u = e^x$ (note $u \gt{} 0$). Then $u^2 + 3u - 4 = 0$, giving $(u+4)(u-1) = 0$, so $u = 1$
 (rejecting $u = -4$). Hence $e^x = 1$, giving $x = 0$.
 
-:::warning When substituting $u = a^x$ or $u = \ln x$, always check the domain. For $u = a^x$ we
-have $u \gt{} 0$; for $u = \ln x$ we have $x \gt{} 0$. Always reject invalid solutions. :::
+:::warning
+When substituting $u = a^x$ or $u = \ln x$, always check the domain. For $u = a^x$ we
+have $u \gt{} 0$; for $u = \ln x$ we have $x \gt{} 0$. Always reject invalid solutions.
+:::
 
 ---
 
@@ -309,12 +323,14 @@ $$
 
 Doubling time: $T_d = \dfrac{\ln 2}{k} = \dfrac{\ln 2}{\ln 2 / 3} = 3$ hours.
 
-:::tip In modelling questions, always:
+:::tip
+In modelling questions, always:
 
 1. Identify the model (growth or decay)
 2. Use the initial condition to find one parameter
 3. Use a second data point to find the remaining parameter
-4. State the complete model before answering the question :::
+4. State the complete model before answering the question
+:::
 
 ---
 
@@ -358,8 +374,10 @@ $$\frac{1}{y}\frac{dy}{dx} = g'(x)\ln f(x) + \frac{g(x) f'(x)}{f(x)}$$
 
 $$\frac{dy}{dx} = f(x)^{g(x)}\left[g'(x)\ln f(x) + \frac{g(x) f'(x)}{f(x)}\right]$$
 
-:::warning Never try to differentiate $f(x)^{g(x)}$ directly using the power rule or the exponential
-rule alone — it requires logarithmic differentiation or rewriting as $e^{g(x)\ln f(x)}$. :::
+:::warning
+Never try to differentiate $f(x)^{g(x)}$ directly using the power rule or the exponential
+rule alone — it requires logarithmic differentiation or rewriting as $e^{g(x)\ln f(x)}$.
+:::
 
 ---
 

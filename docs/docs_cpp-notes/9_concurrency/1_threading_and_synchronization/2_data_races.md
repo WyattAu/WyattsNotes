@@ -25,10 +25,12 @@ $$\text{Data Race} \iff \exists\, m, t_1, t_2 : \text{access}(t_1, m, w) \wedge 
 where $m$ is a scalar memory location, $w$ denotes a write, $r$ denotes a read, and happens-before
 is the order relation defined in [N4950 §6.9.4.1].
 
-:::warning If a C++ program contains a data race, it has **undefined behavior** [N4950 §6.9.4.2].
+:::warning
+If a C++ program contains a data race, it has **undefined behavior** [N4950 §6.9.4.2].
 The compiler is free to assume no data races exist and may optimize accordingly, potentially
 eliminating loads, stores, or reordering operations in ways that are surprising and
-non-deterministic. :::
+non-deterministic.
+:::
 
 ## Undefined Behavior of Data Races
 
@@ -65,9 +67,11 @@ threads. A race condition can occur even with proper synchronization (e.g., two 
 
 ## Demonstrating a Data Race
 
-:::warning The following program intentionally contains a data race for educational purposes. It
+:::warning
+The following program intentionally contains a data race for educational purposes. It
 exhibits undefined behavior and may crash, produce incorrect results, or appear to work correctly
-depending on the platform and compiler flags. Never write code like this in production. :::
+depending on the platform and compiler flags. Never write code like this in production.
+:::
 
 ```cpp
 #include <iostream>
@@ -139,8 +143,10 @@ Even data races that appear harmless in practice can cause problems because:
 3. **Future-proofing.** Code that "works" today with benign data races may break when compiled with
    a different optimization level, a different compiler version, or a different CPU architecture.
 
-:::warning Never rely on benign data races. If two threads access the same variable and at least one
-writes, use a mutex or `std::atomic` [N4950 §6.9.4.2]. :::
+:::warning
+Never rely on benign data races. If two threads access the same variable and at least one
+writes, use a mutex or `std::atomic` [N4950 §6.9.4.2].
+:::
 
 ## Detecting Data Races with ThreadSanitizer
 
@@ -274,9 +280,11 @@ void increment_b(int iterations) {
 }
 ```
 
-:::tip `alignas(64)` ensures each counter starts at the beginning of a cache line. The padding
+:::tip
+`alignas(64)` ensures each counter starts at the beginning of a cache line. The padding
 prevents the next counter from sharing the same line. On systems with 128-byte cache lines, use
-`alignas(128)` and adjust the padding accordingly. :::
+`alignas(128)` and adjust the padding accordingly.
+:::
 
 ### Contended vs Uncontended Locks
 
@@ -347,10 +355,12 @@ int main() {
 | `memory_order_acq_rel` | Both acquire and release                  | Moderate                        | Reference counting            |
 | `memory_order_seq_cst` | Total order across all threads            | Full memory fence               | Default, when in doubt        |
 
-:::warning On x86, the hardware memory model (TSO) is strong enough that `memory_order_acquire` and
+:::warning
+On x86, the hardware memory model (TSO) is strong enough that `memory_order_acquire` and
 `memory_order_release` are effectively free (the hardware provides the ordering). On ARM, POWER, and
 RISC-V, these orderings emit explicit memory barrier instructions and have real cost. Always measure
-before optimizing memory orderings — `memory_order_seq_cst` is the safest default. :::
+before optimizing memory orderings — `memory_order_seq_cst` is the safest default.
+:::
 
 ## Practical Data Race Bug and Fix
 

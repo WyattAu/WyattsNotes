@@ -37,7 +37,8 @@ public final class ImmutableList<E> extends AbstractList<E> implements List<E>, 
 }
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §8.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1) defines class declarations. The top-level class can be `public` or package-private (no modifier). Only one `public` class per compilation unit (.java file) is permitted.
 :::
 
@@ -228,7 +229,8 @@ class SubclassDemo extends AccessDemo {
 `protected` access is narrower than most developers expect. A subclass in a different package can access a `protected` member only through `this` or a reference of the subclass's own type. It cannot access the `protected` member through a reference of the superclass type, even if the actual object is an instance of the subclass.
 :::
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §6.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6) defines access control in exhaustive detail. The rules for `protected` are specified in [JLS §6.6.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6.2).
 :::
 
@@ -399,7 +401,8 @@ public class Circle extends Shape {
 }
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §8.1.1.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1.1.1) defines abstract classes. An abstract class must be declared `abstract` if it has any abstract methods, but a class can be declared `abstract` even with no abstract methods (to prevent direct instantiation).
 :::
 
@@ -1122,7 +1125,8 @@ public enum Operation {
 }
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §8.9](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.9) defines enum declarations. Enum constants are implicitly `public static final`. Enum types implicitly extend `java.lang.Enum` and cannot be instantiated with `new`. Enum types are implicitly `final` unless they have constant-specific class bodies.
 :::
 
@@ -1274,7 +1278,8 @@ String s = (String) strings.get(0);  // compiler inserts the cast
 List<String>[] array = (List<String>[]) new List<?>[10];
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §4.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.6) defines type erasure. [JLS §4.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.5) defines parameterized types. [JLS §4.7](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.7) defines wildcards.
 :::
 

@@ -439,10 +439,12 @@ int main() {
 }
 ```
 
-:::tip When to Still Use SFINAE Concepts cannot replace all SFINAE use cases. In particular, SFINAE
+:::tip
+When to Still Use SFINAE Concepts cannot replace all SFINAE use cases. In particular, SFINAE
 is still needed when the constraint depends on the **function's return type** in a way that cannot
 be expressed as a simple boolean predicate, or when working with C++17 or earlier codebases.
-However, for new C++20 code, concepts should be the default choice for template constraints. :::
+However, for new C++20 code, concepts should be the default choice for template constraints.
+:::
 
 ## Common Pitfalls
 

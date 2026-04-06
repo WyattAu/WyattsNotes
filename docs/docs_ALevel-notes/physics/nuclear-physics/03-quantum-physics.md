@@ -11,7 +11,9 @@ slug: quantum-physics
 
 ## Quantum Physics
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 ## 1. The Photoelectric Effect
 
@@ -220,16 +222,16 @@ continuous spectrum). The dark lines are at the same frequencies as the emission
 A hot solid or dense gas emits a continuous spectrum (all frequencies), because the close proximity
 of atoms broadens the energy levels into bands.
 
-:::tip Exam Technique When calculating photon wavelengths from energy level transitions, first find
+:::tip
+Exam Technique When calculating photon wavelengths from energy level transitions, first find
 $\Delta E$ in joules, then use $\lambda = hc/\Delta E$. Remember to convert eV to joules:
-$1\,\text{eV} = 1.60 \times 10^{-19}$ J. :::
+$1\,\text{eV} = 1.60 \times 10^{-19}$ J.
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 The work function of sodium is $2.28$ eV. Calculate: (a) the threshold frequency, (b) the maximum
 kinetic energy of photoelectrons when light of frequency $8.0 \times 10^{14}$ Hz is incident.
 
@@ -241,14 +243,10 @@ $E_{k,\max} = hf - \phi = 6.63 \times 10^{-34} \times 8.0 \times 10^{14} - 2.28 
 J $= 1.04$ eV.
 
 <b>If you get this wrong, revise:</b> [Einstein's Explanation](#einstiens-explanation-1905)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 The stopping potential for photoelectrons emitted from a metal illuminated by light of wavelength
 400 nm is 1.2 V. Calculate the work function.
 
@@ -261,14 +259,10 @@ J $= 3.11$ eV.
 $\phi = 3.11 - 1.2 = 1.91$ eV.
 
 <b>If you get this wrong, revise:</b> [Stopping Potential](#stopping-potential)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 Calculate the de Broglie wavelength of an electron moving at $2.0 \times 10^6$ m s$^{-1}$.
 
 **Answer.**
@@ -276,14 +270,10 @@ $\lambda = h/(m_e v) = 6.63 \times 10^{-34} / (9.11 \times 10^{-31} \times 2.0 \
 m $= 0.364$ nm.
 
 <b>If you get this wrong, revise:</b> [de Broglie's Hypothesis](#de-broglies-hypothesis-1924)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 An electron in a hydrogen atom transitions from $n = 4$ to $n = 2$. Calculate the wavelength of the
 emitted photon.
 
@@ -294,14 +284,10 @@ $\lambda = hc/\Delta E = 6.63 \times 10^{-34} \times 3.0 \times 10^8 / 4.08 \tim
 m $= 487$ nm (blue-green, Balmer series).
 
 <b>If you get this wrong, revise:</b> [Photon Emission](#photon-emission)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 Light of wavelength 200 nm is incident on a zinc plate with work function 4.30 eV. Determine whether
 photoelectrons are emitted and, if so, calculate their maximum kinetic energy.
 
@@ -310,14 +296,10 @@ photoelectrons are emitted and, if so, calculate their maximum kinetic energy.
 Since $6.20 > 4.30$, photoelectrons are emitted. $E_{k,\max} = 6.20 - 4.30 = 1.90$ eV.
 
 <b>If you get this wrong, revise:</b> [Threshold Frequency](#threshold-frequency)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Calculate the de Broglie wavelength of a neutron moving with kinetic energy $0.025$ eV (thermal
 neutron).
 
@@ -329,14 +311,10 @@ $\lambda = h/(m_n v) = 6.63 \times 10^{-34} / (1.675 \times 10^{-27} \times 2186
 m $= 0.182$ nm.
 
 <b>If you get this wrong, revise:</b> [de Broglie's Hypothesis](#de-broglies-hypothesis-1924)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Explain why the photoelectric effect cannot be explained by classical wave theory.
 
 **Answer.** Classical wave theory predicts: (1) energy is proportional to intensity, so sufficient
@@ -348,14 +326,10 @@ the photon model: each photon has energy $hf$; one photon interacts with one ele
 must have enough energy ($hf > \phi$) to liberate the electron.
 
 <b>If you get this wrong, revise:</b> [Why wave theory fails](#why-wave-theory-fails)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 An electron is accelerated through a potential difference of 500 V. Calculate its de Broglie
 wavelength.
 
@@ -365,14 +339,10 @@ m $= 0.0549$ nm.
 
 <b>If you get this wrong, revise:</b>
 [Calculating Electron Wavelength](#calculating-electron-wavelength)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 A hydrogen atom in the ground state ($n = 1$) absorbs a photon of wavelength 97.3 nm. To which
 energy level does the electron jump?
 
@@ -383,14 +353,10 @@ $E_1 = -13.6$ eV. $E_{\text{final}} = -13.6 + 12.75 = -0.85$ eV.
 $E_n = -13.6/n^2 = -0.85$. $n^2 = 13.6/0.85 = 16$. $n = 4$.
 
 <b>If you get this wrong, revise:</b> [Photon Absorption](#photon-absorption)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 In a photoelectric effect experiment, the maximum kinetic energy of photoelectrons is plotted
 against the frequency of incident light. The graph has a gradient of $4.0 \times 10^{-15}$ J s and a
 $y$-intercept of $-3.2 \times 10^{-19}$ J. Calculate Planck's constant and the work function.
@@ -400,8 +366,6 @@ $y$-intercept of $-3.2 \times 10^{-19}$ J. Calculate Planck's constant and the w
 $y$-intercept $= -\phi = -3.2 \times 10^{-19}$ J. $\phi = 3.2 \times 10^{-19}$ J $= 2.0$ eV.
 
 <b>If you get this wrong, revise:</b> [Graphical analysis](#graphical-analysis)
-
-</p>
 </details>
 
 :::

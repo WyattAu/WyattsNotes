@@ -11,7 +11,9 @@ slug: current-and-resistance
 
 ## Current and Resistance
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. Electric Current
 
@@ -57,8 +59,6 @@ s$^{-1}$).
 
 <details>
 <summary>Example: Drift Velocity in Copper</summary>
-<p>
-
 A copper wire of cross-sectional area $1.0 \times 10^{-6}$ m$^2$ carries a current of 2.0 A. The
 number density of free electrons in copper is $8.5 \times 10^{28}$ m$^{-3}$. Calculate the drift
 velocity.
@@ -66,8 +66,6 @@ velocity.
 **Answer.**
 $v_d = \frac{I}{nAe} = \frac{2.0}{8.5 \times 10^{28} \times 1.0 \times 10^{-6} \times 1.60 \times 10^{-19}} = \frac{2.0}{1.36 \times 10^4} = 1.47 \times 10^{-4}$
 m s$^{-1}$.
-
-</p>
 </details>
 
 ## 2. Potential Difference and Electromotive Force
@@ -175,9 +173,11 @@ resistant to current flow.
 | Silicon    | $6.4 \times 10^{2}$      |
 | Glass      | $\sim 10^{12}$           |
 
-:::warning Common Pitfall Resistivity is a property of the material. Resistance is a property of a
+:::warning
+Common Pitfall Resistivity is a property of the material. Resistance is a property of a
 particular component. A long thin copper wire has high resistance but copper still has low
-resistivity. :::
+resistivity.
+:::
 
 ## 5. I-V Characteristics
 
@@ -241,15 +241,15 @@ The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour 
 
 $$1 \text{ kWh} = 1000 \text{ W} \times 3600 \text{ s} = 3.6 \times 10^6 \text{ J}$$
 
-:::tip Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
-current). For resistors in parallel, use $P = V^2/R$ (same voltage). :::
+:::tip
+Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
+current). For resistors in parallel, use $P = V^2/R$ (same voltage).
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A copper wire has length 2.0 m, cross-sectional area $1.5 \times 10^{-6}$ m$^2$, and resistivity
 $1.7 \times 10^{-8}$ $\Omega$ m. Calculate its resistance.
 
@@ -258,27 +258,19 @@ $R = \frac{\rho L}{A} = \frac{1.7 \times 10^{-8} \times 2.0}{1.5 \times 10^{-6}}
 $\Omega = 0.023$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Resistivity](#4-resistivity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A wire carries a current of 3.0 A. How much charge flows past a point in 2 minutes?
 
 **Answer.** $Q = It = 3.0 \times 120 = 360$ C.
 
 <b>If you get this wrong, revise:</b> [Electric Current](#1-electric-current)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 Calculate the drift velocity of electrons in a silver wire of diameter 1.0 mm carrying a current of
 5.0 A. The number density of free electrons in silver is $5.9 \times 10^{28}$ m$^{-3}$.
 
@@ -288,14 +280,10 @@ $v_d = \frac{I}{nAe} = \frac{5.0}{5.9 \times 10^{28} \times 7.85 \times 10^{-7} 
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Derivation of $I = nAev_d$](#derivation-of-i-naev_d)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A 12 V battery delivers a current of 2.5 A to a resistor. Calculate: (a) the resistance, (b) the
 power dissipated, (c) the energy transferred in 10 minutes.
 
@@ -306,14 +294,10 @@ power dissipated, (c) the energy transferred in 10 minutes.
 (c) $E = Pt = 30 \times 600 = 18{,}000$ J = 18 kJ.
 
 <b>If you get this wrong, revise:</b> [Electrical Energy and Power](#6-electrical-energy-and-power)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A nichrome wire has resistance 8.0 $\Omega$ at $20°$C. The wire is stretched to twice its original
 length. What is its new resistance? (Assume the volume remains constant.)
 
@@ -322,14 +306,10 @@ length. What is its new resistance? (Assume the volume remains constant.)
 $R' = \frac{\rho(2L)}{A/2} = \frac{4\rho L}{A} = 4R = 32$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Resistivity](#4-resistivity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A 2.5 kW heater operates on a 230 V mains supply. Calculate the current it draws and its resistance.
 
 **Answer.** $P = IV$, so $I = P/V = 2500/230 = 10.9$ A.
@@ -337,14 +317,10 @@ A 2.5 kW heater operates on a 230 V mains supply. Calculate the current it draws
 $R = V/I = 230/10.9 = 21.2$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Electrical Energy and Power](#6-electrical-energy-and-power)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Explain why the resistance of a filament lamp increases as the current through it increases.
 
 **Answer.** As the current increases, more energy is dissipated per second ($P = I^2R$), heating the
@@ -355,14 +331,10 @@ Since $R = \rho L/A$, the resistance increases.
 
 <b>If you get this wrong, revise:</b> [Resistivity](#4-resistivity) and
 [I-V Characteristics](#5-i-v-characteristics)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A student measures the resistance of a wire at different lengths. The results are: 10 cm → 0.50
 $\Omega$, 20 cm → 1.05 $\Omega$, 30 cm → 1.45 $\Omega$, 40 cm → 2.00 $\Omega$. Plotting $R$ against
 $L$ gives a gradient of 5.0 $\Omega$ m$^{-1}$. If the wire diameter is 0.40 mm, calculate the
@@ -372,14 +344,10 @@ resistivity.
 gradient $= \rho/A = 5.0$. $\rho = 5.0 \times 1.26 \times 10^{-7} = 6.3 \times 10^{-7}$ $\Omega$ m.
 
 <b>If you get this wrong, revise:</b> [Resistivity](#4-resistivity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 Two resistors of 6 $\Omega$ and 3 $\Omega$ are connected in series across a 9 V battery. Calculate
 the current and the power dissipated in each resistor.
 
@@ -391,14 +359,10 @@ Power in 6 $\Omega$: $P = I^2R = 1^2 \times 6 = 6$ W.
 Power in 3 $\Omega$: $P = 1^2 \times 3 = 3$ W.
 
 <b>If you get this wrong, revise:</b> [Electrical Energy and Power](#6-electrical-energy-and-power)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A thermistor has resistance 2000 $\Omega$ at $20°$C and 400 $\Omega$ at $80°$C. It is connected in
 series with a 500 $\Omega$ fixed resistor and a 6.0 V battery. Calculate the p.d. across the
 thermistor at each temperature.
@@ -410,8 +374,6 @@ At $80°$C: $R_{\text{total}} = 400 + 500 = 900$ $\Omega$. $V_T = \frac{400}{900
 V.
 
 <b>If you get this wrong, revise:</b> [I-V Characteristics](#5-i-v-characteristics)
-
-</p>
 </details>
 
 :::

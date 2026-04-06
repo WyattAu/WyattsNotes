@@ -115,7 +115,8 @@ source = ["src/mylib"]
 branch = true
 ```
 
-:::info PEP 621 standardizes project metadata in `pyproject.toml`. Before this, metadata was
+:::info
+PEP 621 standardizes project metadata in `pyproject.toml`. Before this, metadata was
 scattered across `setup.py`, `setup.cfg`, and `setup.cfg`/`pyproject.toml`. The new standard
 consolidates everything into one file.
 :::
@@ -165,7 +166,8 @@ myapp = "myapp.cli:main"
 where = ["src"]
 ```
 
-:::warning `setup.py` is not deprecated, but `pyproject.toml` is preferred for new projects. The
+:::warning
+`setup.py` is not deprecated, but `pyproject.toml` is preferred for new projects. The
 `setup.py` file can still exist for complex build logic that cannot be expressed declaratively, but
 most projects do not need it.
 :::
@@ -306,7 +308,8 @@ requests==2.31.0 \
     --hash=sha256:942c5a758f98d790eaed1a29cb6eefc7cb0f27a2e5e71b6ed7d0e640c265d3a5
 ```
 
-:::warning Always use `--generate-hashes` in production deployments. Hashes verify that the
+:::warning
+Always use `--generate-hashes` in production deployments. Hashes verify that the
 installed package matches exactly what you tested. Without hashes, a compromised PyPI mirror could
 serve malicious packages.
 :::
@@ -357,7 +360,8 @@ conda env export > environment.yml
 conda env create -f environment.yml
 ```
 
-:::info `venv` is the standard and ships with Python. Use `virtualenv` when you need features like
+:::info
+`venv` is the standard and ships with Python. Use `virtualenv` when you need features like
 `--system-site-packages` or faster creation. Use `conda` when you need non-Python dependencies
 (e.g., CUDA, MKL).
 :::
@@ -479,7 +483,8 @@ mylib/
     └── test_core.py
 ```
 
-:::warning The `src` layout is preferred because it prevents a subtle bug: when you run tests from
+:::warning
+The `src` layout is preferred because it prevents a subtle bug: when you run tests from
 the project root, Python may import the local package instead of the installed one. The `src` layout
 forces you to install the package before testing, catching missing dependencies and incorrect
 packaging.
@@ -575,7 +580,8 @@ global-exclude *.pyo
 prune tests
 ```
 
-:::tip With the `src` layout and `[tool.setuptools.package-data]`, most projects do not need
+:::tip
+With the `src` layout and `[tool.setuptools.package-data]`, most projects do not need
 `MANIFEST.in`. Only use it when you need to include files that setuptools cannot auto-discover.
 :::
 
@@ -779,7 +785,8 @@ packages.
 | Complexity     | High        | Medium   | Low        |
 | VCS versioning | Via plugin  | Built-in | Via plugin |
 
-:::tip For new projects, `hatch` or `flit` are excellent choices. Use `setuptools` only when you
+:::tip
+For new projects, `hatch` or `flit` are excellent choices. Use `setuptools` only when you
 need compatibility with existing tooling or complex build requirements (e.g., C extensions).
 :::
 

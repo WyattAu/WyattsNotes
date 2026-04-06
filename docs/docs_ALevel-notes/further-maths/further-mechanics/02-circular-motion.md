@@ -25,9 +25,11 @@ determine unknown forces.
 | OCR (A)    | Paper 2 | Horizontal and vertical circles             |
 | CIE (9231) | M2      | Full coverage including vertical circles    |
 
-:::info Centripetal force is not a separate force — it is the resultant of the physical forces
+:::info
+Centripetal force is not a separate force — it is the resultant of the physical forces
 (tension, friction, normal reaction, weight) directed towards the centre of the circle. Never
-include "centripetal force" on a free body diagram. :::
+include "centripetal force" on a free body diagram.
+:::
 
 ---
 

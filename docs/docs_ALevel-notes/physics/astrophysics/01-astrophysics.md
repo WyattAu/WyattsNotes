@@ -12,7 +12,8 @@ sidebar_position: 1
 
 ## Astrophysics
 
-:::info Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2 (Option D)
+:::info
+Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2 (Option D)
 :::
 
 ## 1. Astronomical Distances and Measurements
@@ -171,13 +172,15 @@ $2.898 \times 10^{-3}$ m K.
 ($T \approx 3000$ K) peaks in the infrared. This is why hotter stars appear bluer and cooler stars
 appear redder.
 
-:::info Board-Specific
+:::info
+Board-Specific
 
 - **AQA** requires Wien's law, Stefan-Boltzmann law, and the inverse square law explicitly.
 - **Edexcel** emphasises the period--luminosity relation for Cepheids and the use of Type Ia
   supernovae as standard candles.
 - **OCR (A)** includes parallax, standard candles, and black body radiation in the Turning Points
-  option. :::
+option.
+:::
 
 ## 2. Stellar Evolution
 
@@ -310,13 +313,15 @@ escape velocity exceeds the speed of light. For the Sun, $r_s \approx 3$ km; for
 $r_s \approx 9$ mm. This shows how extraordinarily compact a black hole must be: the entire mass of
 the Sun compressed into a sphere smaller than a small city.
 
-:::info Board-Specific
+:::info
+Board-Specific
 
 - **AQA** requires detailed knowledge of stellar evolution pathways, the H-R diagram, and the
   Chandrasekhar limit.
 - **Edexcel** emphasises supernovae including light curves, and the use of standard candles.
 - **OCR (A)** covers neutron stars and black holes, including the Schwarzschild radius derivation,
-  in the Turning Points option. :::
+in the Turning Points option.
+:::
 
 ## 3. Cosmology
 
@@ -428,11 +433,13 @@ expands, photon wavelengths are stretched, producing cosmological redshift:
 
 $$1 + z = \frac{a_{\text{now}}}{a_{\text{then}}}$$
 
-:::info Board-Specific
+:::info
+Board-Specific
 
 - **AQA** requires understanding of Hubble's law, the CMB, and evidence for the Big Bang.
 - **Edexcel** includes the Doppler effect for electromagnetic radiation and redshift calculations.
-- **OCR (A)** covers Olbers' paradox and its resolution in the Turning Points option. :::
+- **OCR (A)** covers Olbers' paradox and its resolution in the Turning Points option.
+:::
 
 ## 4. Telescopes and Observational Astronomy
 
@@ -581,12 +588,14 @@ parabolic dishes.
 - Much more expensive to build, launch, and maintain (no servicing missions for most)
 - Limited aperture size (constrained by launch vehicle fairings; JWST's primary mirror is 6.5 m)
 
-:::info Board-Specific
+:::info
+Board-Specific
 
 - **AQA** requires comparison of reflecting and refracting telescopes, and the Rayleigh criterion.
 - **Edexcel** emphasises angular magnification and the advantages of large-diameter telescopes.
 - **OCR (A)** covers radio telescopes and the comparison of ground-based and space-based
-  observatories. :::
+observatories.
+:::
 
 ## 5. Problems
 

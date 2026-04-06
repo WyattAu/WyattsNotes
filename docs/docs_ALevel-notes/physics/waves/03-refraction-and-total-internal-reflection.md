@@ -11,7 +11,9 @@ slug: refraction-and-total-internal-reflection
 
 ## Refraction and Total Internal Reflection
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. Refractive Index
 
@@ -47,7 +49,9 @@ where $A$ and $B$ are constants specific to the material and $\lambda$ is the wa
 This wavelength dependence is what causes white light to separate into a spectrum when passing
 through a prism.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 **Application: Diamond Cutting.** Diamond has an exceptionally high refractive index ($n = 2.42$)
 and large dispersion. Jewellers cut diamonds with many angled facets so that light entering the top
@@ -131,8 +135,10 @@ displacement $d$ depends on the thickness $t$ of the slab:
 
 $$d = t \cdot \sin\theta_1 \left(1 - \frac{\cos\theta_1}{\sqrt{n^2 - \sin^2\theta_1}}\right)$$
 
-:::info Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
-2 (core practical) | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
+2 (core practical) | CIE P2
+:::
 
 ## 3. Total Internal Reflection
 
@@ -161,19 +167,17 @@ $\sin\theta_2$ can exceed 1 for sufficiently large $\theta_1$, which is impossib
 entirely reflected. If $n_1 < n_2$, then $\frac{n_1}{n_2} < 1$ and
 $\sin\theta_2 < \sin\theta_1 \leq 1$ for all $\theta_1$, so refraction always occurs.
 
-:::warning Common Pitfall TIR can only occur when light travels from a denser medium to a less dense
+:::warning
+Common Pitfall TIR can only occur when light travels from a denser medium to a less dense
 medium. Light going from air into glass can never undergo TIR, no matter how large the angle of
-incidence. :::
+incidence.
+:::
 
 <details>
 <summary>Example: Critical Angle of Glass</summary>
-<p>
-
 The refractive index of glass is 1.50. Calculate the critical angle for glass-air boundary.
 
 **Answer.** $\sin\theta_c = 1/1.50 = 0.667$. $\theta_c = \arcsin(0.667) = 41.8°$.
-
-</p>
 </details>
 
 ### Real-World Example: Mirages
@@ -209,7 +213,9 @@ evanescent wave is exploited in technologies such as:
 - **Optical fibre sensors**: chemicals or biological molecules near the fibre surface can interact
   with the evanescent wave, changing the propagation and allowing detection.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 4. Optical Fibres
 
@@ -253,9 +259,11 @@ Two main effects degrade the signal in optical fibres:
    - **Modal dispersion**: rays entering at different angles travel different path lengths (in
      multimode fibres).
 
-:::tip Exam Technique When asked about advantages of optical fibres over copper cables, mention:
+:::tip
+Exam Technique When asked about advantages of optical fibres over copper cables, mention:
 higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking risk,
-lower signal loss over long distances. :::
+lower signal loss over long distances.
+:::
 
 ### Types of Optical Fibre
 
@@ -298,15 +306,15 @@ angle exceeds the critical angle, producing TIR. Prism periscopes are preferred 
 periscopes because TIR gives 100% reflection (no absorption by a metallic coating), and the
 reflective surface is protected inside the glass, making it resistant to scratches and tarnishing.
 
-:::info Board Coverage AQA Paper 2 (optical fibres in required practical) | Edexcel CP6 (medical
-physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 (optical fibres in required practical) | Edexcel CP6 (medical
+physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Light travels from air ($n = 1.00$) into water ($n = 1.33$) at an angle of incidence of $40°$.
 Calculate the angle of refraction.
 
@@ -314,28 +322,20 @@ Calculate the angle of refraction.
 $\sin\theta_2 = \sin 40° / 1.33 = 0.6428 / 1.33 = 0.483$. $\theta_2 = \arcsin(0.483) = 28.9°$.
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A glass block has refractive index 1.52. Calculate the critical angle for a glass-air boundary.
 
 **Answer.** $\sin\theta_c = 1/1.52 = 0.658$. $\theta_c = 41.1°$.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 Light is incident on a glass-air boundary at $50°$. The refractive index of the glass is 1.50.
 Determine whether total internal reflection occurs.
 
@@ -344,14 +344,10 @@ occurs.
 
 <b>If you get this wrong, revise:</b>
 [Condition for Total Internal Reflection](#condition-for-total-internal-reflection)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A ray of light travels from glass ($n = 1.60$) into water ($n = 1.33$). Calculate the critical
 angle.
 
@@ -359,14 +355,10 @@ angle.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 An optical fibre has a core of refractive index 1.50 and cladding of refractive index 1.45.
 Calculate the critical angle at the core-cladding boundary and the numerical aperture.
 
@@ -376,14 +368,10 @@ $\text{NA} = \sqrt{1.50^2 - 1.45^2} = \sqrt{2.25 - 2.1025} = \sqrt{0.1475} = 0.3
 
 <b>If you get this wrong, revise:</b>
 [Acceptance Angle and Numerical Aperture](#acceptance-angle-and-numerical-aperture)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Explain why a diamond ($n = 2.42$) sparkles more than glass ($n = 1.50$).
 
 **Answer.** The critical angle of diamond is $\theta_c = \arcsin(1/2.42) = 24.4°$, much smaller than
@@ -394,14 +382,10 @@ high dispersion, separating white light into colours.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A light ray enters a rectangular glass block ($n = 1.50$) at an angle of $30°$ to the normal. The
 block is surrounded by air. The ray strikes the opposite face. Calculate the angle of incidence at
 the opposite face and determine whether TIR occurs.
@@ -416,14 +400,10 @@ Since $19.5° < \theta_c = 41.8°$, TIR does not occur. The ray emerges from the
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law) and
 [Condition for Total Internal Reflection](#condition-for-total-internal-reflection)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A prism has an apex angle of $60°$ and refractive index 1.50. A ray enters one face at $45°$ to the
 normal. Trace the ray through the prism, finding the angle of incidence at the second face and the
 angle of emergence.
@@ -439,14 +419,10 @@ $\theta_4 = 52.5°$.
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law) and
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 An optical fibre has a core of refractive index 1.62 and cladding of refractive index 1.52. (a)
 Calculate the critical angle at the core-cladding boundary. (b) Calculate the maximum angle of
 incidence (acceptance angle) for light entering the fibre from air. (c) A pulse of light enters the
@@ -468,14 +444,10 @@ larger angles travel further and arrive later.
 
 <b>If you get this wrong, revise:</b> [Optical Fibres](#4-optical-fibres) and
 [Acceptance Angle and Numerical Aperture](#acceptance-angle-and-numerical-aperture)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A 45°-90°-45° glass prism ($n = 1.50$) is used as a reflector. Light enters through one of the short
 faces perpendicular to the face, hits the hypotenuse, and exits through the other short face. Show
 that TIR occurs at the hypotenuse and determine the angle of the emergent ray.
@@ -494,14 +466,10 @@ metallic coating needed.
 
 <b>If you get this wrong, revise:</b>
 [Condition for Total Internal Reflection](#condition-for-total-internal-reflection)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 Light travels from water ($n = 1.33$) into a glass block ($n = 1.50$). (a) Calculate the critical
 angle for a water-glass boundary (if it exists). (b) A ray in the glass strikes the glass-water
 boundary at $55°$ to the normal. Determine what happens.
@@ -518,14 +486,10 @@ $\theta_2 = \arcsin(0.924) = 67.5°$. The ray refracts into the water, bending a
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle) and
 [Snell's Law](#2-snells-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 A swimming pool appears shallower than it actually is. A pool of true depth 2.0 m is viewed from
 above. (a) Calculate the apparent depth when viewed from directly above. (b) Calculate the apparent
 depth when viewed at an angle of $30°$ to the vertical (from the normal). Take
@@ -549,14 +513,10 @@ m.
 Note that the pool appears deeper when viewed at an angle than when viewed from directly above.
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 13</summary>
-<p>
-
 In a graded-index optical fibre, the refractive index varies as
 $n(r) = n_1\sqrt{1 - 2\Delta(r/a)^2}$ for $r \lt a$ (inside the core), where $n_1 = 1.48$ is the
 index on the axis, $a = 25$ micrometres is the core radius, and $\Delta = 0.01$. (a) Calculate the
@@ -575,8 +535,6 @@ fibre length.
 
 <b>If you get this wrong, revise:</b> [Types of Optical Fibre](#types-of-optical-fibre) and
 [Signal Degradation](#signal-degradation)
-
-</p>
 </details>
 
 :::

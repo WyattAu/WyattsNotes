@@ -171,16 +171,20 @@ void container_demo() {
 }
 ```
 
-:::warning Always mark move constructors and move assignment operators `noexcept` unless they
+:::warning
+Always mark move constructors and move assignment operators `noexcept` unless they
 genuinely can throw (which is rare — moving should only perform pointer swaps and assignments). The
 `std::is_nothrow_move_constructible_v<T>` type trait is used by standard containers to select
 between move and copy during reallocation. If your move is not `noexcept`, your types will be
-silently copied in containers, which can be a severe performance regression. :::
+silently copied in containers, which can be a severe performance regression.
+:::
 
-:::info Relevance The Rule of Five states: if a class defines (or deletes) any of the following, it
+:::info
+Relevance The Rule of Five states: if a class defines (or deletes) any of the following, it
 should probably define all five: destructor, copy constructor, copy assignment operator, move
 constructor, and move assignment operator. This is because manual resource management in one
-operation typically implies manual management is needed in all of them [N4950 §11.4.5.3]. :::
+operation typically implies manual management is needed in all of them [N4950 §11.4.5.3].
+:::
 
 ## 7.1 `std::swap` and Move Semantics
 
@@ -279,9 +283,11 @@ Before swap: a.size=1000, b.size=2000
 After swap:  a.size=2000, b.size=1000
 ```
 
-:::tip When writing a custom `swap`, always include `using std::swap;` before calling `swap` on
+:::tip
+When writing a custom `swap`, always include `using std::swap;` before calling `swap` on
 individual members. This ensures that if a member type has a custom `swap`, it is found via ADL,
-while falling back to `std::swap` for types that do not. :::
+while falling back to `std::swap` for types that do not.
+:::
 
 ## 7.3 Swap as a Building Block
 
@@ -335,12 +341,14 @@ public:
 };
 ```
 
-:::info Relevance The copy-and-swap idiom unifies copy assignment and move assignment into a single
+:::info
+Relevance The copy-and-swap idiom unifies copy assignment and move assignment into a single
 function by taking the parameter by value. When an lvalue is passed, it is copy-constructed; when an
 rvalue is passed, it is move-constructed. The swap is then `noexcept`, so the assignment itself
 provides the strong exception guarantee. This is a widely used pattern but note that it always
 creates a temporary, which may be slightly less efficient than separate copy/move assignment
-operators for simple types. :::
+operators for simple types.
+:::
 
 ## 7.4 Self-Move Assignment: The Silent Undefined Behavior
 
@@ -370,12 +378,14 @@ The `this != &other` guard is essential. Without it, `a = std::move(a)` would:
 After self-move, the object holds a dangling pointer and a zero size. Any subsequent access or
 destruction triggers use-after-free.
 
-:::warning Self-move assignment (`a = std::move(a)`) is **not undefined behavior** in the general
+:::warning
+Self-move assignment (`a = std::move(a)`) is **not undefined behavior** in the general
 case [N4950 §11.4.5.3], but the Standard requires the object to be in a "valid but unspecified
 state" afterward. For resource-owning types that do not guard against self-assignment, this
 typically means a use-after-free. Always include the self-assignment check in move assignment
 operators, or restructure to avoid the issue entirely (e.g., using the copy-and-swap idiom which
-handles self-assignment naturally). :::
+handles self-assignment naturally).
+:::
 
 ## 7.5 Move-Only Types and the Standard Library
 

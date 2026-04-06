@@ -48,10 +48,12 @@ process(std::unique_ptr<Widget>(new Widget), compute_risk());
 process(std::make_unique<Widget>(), compute_risk());
 ```
 
-:::info Relevance This is a real bug pattern. The C++ standard allows argument evaluation in any
+:::info
+Relevance This is a real bug pattern. The C++ standard allows argument evaluation in any
 order [N4950 §7.6.1.9]. If `compute_risk()` is evaluated before the `unique_ptr` constructor, and it
 throws, the `new Widget()` allocation is leaked. `make_unique` eliminates this class of bug
-entirely. :::
+entirely.
+:::
 
 ## 5.3 `shared_ptr` Overuse and Reference Cycles
 
@@ -91,10 +93,12 @@ void aliasing_demo() {
 }
 ```
 
-:::warning The aliasing constructor is useful but dangerous. The aliased pointer does not extend the
+:::warning
+The aliasing constructor is useful but dangerous. The aliased pointer does not extend the
 lifetime of the member it points to — it only extends the lifetime of the **owning** object. If the
 owning object is destroyed first, the aliased pointer dangles. Use cases include returning pointers
-to members from APIs that need to express shared ownership of the containing object. :::
+to members from APIs that need to express shared ownership of the containing object.
+:::
 
 ## 5.5 Custom Deleters
 
@@ -151,7 +155,8 @@ void use_dynamic_lib() {
 }
 ```
 
-:::info Each unique lambda type produces a different `std::unique_ptr` type. Two `unique_ptr`s with
+:::info
+Each unique lambda type produces a different `std::unique_ptr` type. Two `unique_ptr`s with
 different lambda deleters (even lexically identical lambdas) are incompatible types [N4950
 §20.11.1.2.1]. Use `decltype` or a named functor if you need a shared type across translation units.
 :::
@@ -263,9 +268,11 @@ int main() {
 | Lambda (no capture)             | 0 bytes           | Stateless, EBO applies   |
 | Lambda (captures)               | Size of captures  | Stored inline            |
 
-:::tip Prefer stateless functor deleters or captureless lambdas to avoid size overhead. If a deleter
+:::tip
+Prefer stateless functor deleters or captureless lambdas to avoid size overhead. If a deleter
 must carry state, consider whether `std::shared_ptr` with a capturing lambda is more appropriate,
-since `shared_ptr` type-erases the deleter into the control block. :::
+since `shared_ptr` type-erases the deleter into the control block.
+:::
 
 ## 5.7 `shared_ptr` with Custom Deleters and Control Block Layout
 
@@ -399,10 +406,12 @@ void allocator_mismatch_example() {
 }
 ```
 
-:::warning Never extract a raw pointer from an allocator-aware container and manage it with a
+:::warning
+Never extract a raw pointer from an allocator-aware container and manage it with a
 default-deleter smart pointer. The allocation and deallocation mechanisms must match. If you need to
 transfer ownership out of a container, use `std::move`, extract via `release()` on allocator-aware
-wrappers, or use `std::pmr` resources [N4950 §23.12]. :::
+wrappers, or use `std::pmr` resources [N4950 §23.12].
+:::
 
 ## Summary
 

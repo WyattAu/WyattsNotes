@@ -51,8 +51,7 @@ $$
 
 <details>
     <summary>Expand </summary>
-    <p>
-      - Not unique
+    - Not unique
         - $f_1: \mathbb{R}^+ \to \mathbb{R}, \quad f(x) = \pm \sqrt{x}$
         - Since $x$ can be mapped to two elements ($y$ or $-y$), $f_1$ is not unique
       - $f_2: \mathbb{R} \to \mathbb{R}, f_2(x) = \frac{1}{x}$
@@ -60,7 +59,6 @@ $$
         - Redefine $f_2: \mathbb{R} \backslash \{0\} \to \mathbb{R}$
       - $f_3: \empty \to Y$
         - Since no elements are in the domain, uniqueness is satisfy hence a valid function
-    </p>
 </details>
 :::
 
@@ -92,13 +90,11 @@ $$
 
 <details>
     <summary>Expand </summary>
-    <p>
-      - Non-injective
+    - Non-injective
         - $f:\mathbb{R} \to \mathbb{R}, f(x) = x^2$
           - Even function 
             - f(x) = f(-x)
             - Distinct inputs map to same output
-    </p>
 </details>
 :::
 

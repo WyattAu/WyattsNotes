@@ -37,10 +37,12 @@ $$\text{Long-run growth} = f(\Delta K, \Delta L, \Delta A)$$
 
 where $K$ = capital, $L$ = labour, $A$ = total factor productivity (technology and efficiency).
 
-:::info Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
+:::info
+Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
 supply-side policies and requires evaluation of both. AQA emphasises the effect of supply-side
 policies on the Phillips curve. Edexcel links supply-side policy to productivity and
-competitiveness. :::
+competitiveness.
+:::
 
 ## 2. Market-Oriented Supply-Side Policies
 
@@ -90,10 +92,12 @@ and OBR) suggest that for income tax, the UK is to the **left** of $t^*$ — mea
 reduce revenue, not increase it. For corporation tax, the evidence is more contested; some studies
 suggest the UK may be closer to $t^*$ due to capital mobility.
 
-:::info Board-Specific Note CIE (9708) and Edexcel both require understanding of the Laffer curve.
+:::info
+Board-Specific Note CIE (9708) and Edexcel both require understanding of the Laffer curve.
 AQA tends to focus more on the income and substitution effects of tax changes rather than the Laffer
 curve explicitly, though it can be used in evaluation. OCR includes the Laffer curve in the context
-of fiscal policy. :::
+of fiscal policy.
+:::
 
 **Evaluation of tax reform.** The effectiveness of tax cuts as a supply-side tool depends on several
 factors. First, the **elasticity of the tax base** matters — if workers and firms are highly
@@ -172,10 +176,12 @@ and 1983. The short-term social costs were substantial, and some economists argu
 benefits were oversold — UK productivity growth remained below that of Germany and France for much
 of the period.
 
-:::info Board-Specific Note OCR (H460) specifically requires knowledge of Thatcherite reforms and
+:::info
+Board-Specific Note OCR (H460) specifically requires knowledge of Thatcherite reforms and
 their effects on the UK economy. Edexcel (A) references Thatcherism in the context of
 market-oriented policies. AQA and CIE may expect examples but do not mandate specific knowledge of
-the Thatcher era. :::
+the Thatcher era.
+:::
 
 ### 2.4 Competition Policy
 
@@ -245,10 +251,12 @@ has been criticised for incentivising rebadging existing training rather than cr
 opportunities. The key lesson is that **institutional quality matters as much as spending** — simply
 investing more in education without reforming how it is delivered yields diminishing returns.
 
-:::info Board-Specific Note Edexcel (A) expects candidates to discuss specific UK education policies
+:::info
+Board-Specific Note Edexcel (A) expects candidates to discuss specific UK education policies
 as examples of interventionist supply-side policy. CIE (9708) accepts any country example but
 rewards specificity. AQA does not mandate particular policy knowledge but values well-explained
-real-world examples. OCR (H460) links education policy to labour market outcomes. :::
+real-world examples. OCR (H460) links education policy to labour market outcomes.
+:::
 
 ### 3.2 Investment in Infrastructure
 
@@ -328,10 +336,12 @@ However, the model may not be directly transferable: Nordic countries have small
 populations, strong social trust, and distinct institutional histories. The UK's larger, more
 diverse population and different political culture may make the Nordic approach harder to implement.
 
-:::info Board-Specific Note AQA and Edexcel both value comparative analysis of different countries'
+:::info
+Board-Specific Note AQA and Edexcel both value comparative analysis of different countries'
 supply-side approaches. CIE (9708) rewards discussion of how different institutional frameworks
 affect policy effectiveness. OCR (H460) may ask students to compare UK policy with other countries.
-The Nordic model is a strong evaluative point for any board. :::
+The Nordic model is a strong evaluative point for any board.
+:::
 
 ## 4. Evaluation of Supply-Side Policies
 
@@ -372,11 +382,13 @@ services may benefit most from deregulation and competition, while education and
 require government leadership. A pragmatic approach selects the appropriate tool for each situation
 rather than adhering to a rigid ideological position.
 
-:::info Board-Specific Note AQA (7136) Paper 2 often asks candidates to evaluate the relative merits
+:::info
+Board-Specific Note AQA (7136) Paper 2 often asks candidates to evaluate the relative merits
 of market-oriented and interventionist supply-side policies. Edexcel (A) Paper 3 may present a
 scenario requiring analysis of both. CIE (9708) Paper 4 essays frequently require a balanced
 discussion. OCR (H460) emphasises the role of government in correcting market failure through
-supply-side policy. All boards reward nuanced answers that recognise context matters. :::
+supply-side policy. All boards reward nuanced answers that recognise context matters.
+:::
 
 ### 4.2 Supply-Side vs Demand-Side Policy
 
@@ -392,9 +404,11 @@ supply-side policy. All boards reward nuanced answers that recognise context mat
 supply-side policy to raise living standards in the long run. The two are complementary, not
 substitutes.
 
-:::tip Exam Technique The strongest evaluation answers recognise that supply-side policies take time
+:::tip
+Exam Technique The strongest evaluation answers recognise that supply-side policies take time
 to work. An economy in a deep recession needs immediate demand-side stimulus, not just long-run
-supply-side reforms. But sustained growth requires both. Always reference the time horizon. :::
+supply-side reforms. But sustained growth requires both. Always reference the time horizon.
+:::
 
 ### 4.3 Supply-Side Effects on the Phillips Curve
 
@@ -456,10 +470,12 @@ failure (ambitious infrastructure projects that go over budget and under-deliver
 
 $$\text{Net benefit of supply-side policy} = \text{Efficiency gain} - \text{Cost} - \text{Distributional loss} - \text{Government failure risk}$$
 
-:::tip Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
+:::tip
+Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
 [policy] may [benefit] because [reason]. On the other hand, [counter-argument] because [reason].
 However, the overall impact depends on [contextual factor]. Therefore, [judgement]." This "however,
-therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE) responses. :::
+therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE) responses.
+:::
 
 ## 5. Measuring the Impact of Supply-Side Policies
 
@@ -516,10 +532,12 @@ This "productivity puzzle" has been attributed to:
 The UK lags behind comparable economies, suggesting scope for improvement through supply-side
 reforms that learn from international best practice.
 
-:::tip Exam Technique When evaluating supply-side policies, use international comparisons. "South
+:::tip
+Exam Technique When evaluating supply-side policies, use international comparisons. "South
 Korea achieved 7% annual growth for three decades by investing 5% of GDP in education" is more
 persuasive than abstract arguments. But always acknowledge differences in context — policies that
-work in one country may not transfer directly. :::
+work in one country may not transfer directly.
+:::
 
 ## 6. Problem Set
 
@@ -529,9 +547,7 @@ short run and long run.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) LRAS shifts right → $Y^*$ increases. In the short run, SRAS also shifts right (lower costs). Output rises. (b) Price level falls (more supply at every price level). (c) Unemployment falls as firms hire more workers to produce the higher output. The natural rate $u^*$ falls. (d) Budget balance: tax revenue rises (more income, profits, consumption), and welfare spending falls (less unemployment). The budget improves, potentially creating a surplus. Long run: all effects are sustained and amplified. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/docs_ALevel-notes/economics/macro/aggregate-demand-and-supply).*
-</p>
 </details>
 
 **Problem 2.** Evaluate the argument that reducing income tax rates will significantly increase
@@ -539,9 +555,7 @@ labour supply and economic growth.
 
 <details>
 <summary>Hint</summary>
-<p>
 Arguments for: (1) Higher after-tax wage increases incentive to work (substitution effect). (2) Attracts skilled workers from abroad (brain gain). (3) Encourages entrepreneurship and risk-taking. (4) Reduces tax evasion. Arguments against: (1) Income effect may offset substitution effect — higher income allows more leisure. (2) For primary earners, labour supply is relatively inelastic (need to work regardless). (3) The revenue loss may require spending cuts or other tax increases. (4) If tax cuts benefit high earners disproportionately, the effect on aggregate demand may be small (high earners have lower MPCs). (5) Empirical evidence (e.g., Laffer curve analysis) suggests the UK is to the left of revenue-maximising rate for most taxes. Overall: moderate tax cuts may have positive supply-side effects, but they are not a panacea.
-</p>
 </details>
 
 **Problem 3.** "Privatisation always improves economic efficiency." Evaluate this statement with
@@ -549,9 +563,7 @@ reference to natural monopolies and the UK's experience with rail and water priv
 
 <details>
 <summary>Hint</summary>
-<p>
 False. Privatisation improves efficiency when: (1) The industry is competitive — market forces discipline firms. (2) Regulation is effective — prevents abuse of market power. (3) Transaction costs are low. However, natural monopolies (water, rail infrastructure) have high fixed costs and falling average costs over a large range of output — competition is not viable. In these cases: (1) Private monopolies may exploit consumers (price > MC). (2) Fragmentation can reduce coordination (UK rail: multiple operators, infrastructure separate from services). (3) Short-term profit focus may lead to underinvestment in infrastructure (Thames Water debt crisis). UK rail: mixed results — some service improvements but fragmentation, high subsidies, and complex franchising. UK water: underinvestment in infrastructure, environmental concerns, high executive pay. Conclusion: privatisation is beneficial for competitive industries but requires strong regulation for natural monopolies.
-</p>
 </details>
 
 **Problem 4.** Using the Phillips curve framework, explain how successful supply-side policies would
@@ -559,9 +571,7 @@ change the trade-off between inflation and unemployment.
 
 <details>
 <summary>Hint</summary>
-<p>
 Supply-side policies that reduce $u^*$ shift the short-run Phillips curve left and the long-run Phillips curve left. At the new equilibrium, both inflation and unemployment can be lower simultaneously — a favourable shift in the trade-off. Additionally, productivity-enhancing supply-side policies reduce cost-push inflation pressures (lower unit labour costs), further shifting the Phillips curve left. This is the key advantage of supply-side policy over demand-side policy: demand-side policy can only move the economy along the Phillips curve (trading one objective for another), while supply-side policy can improve both objectives. *Revision: see [Macroeconomic Performance](/docs/docs_ALevel-notes/economics/macro/macroeconomic-performance) for the Phillips curve derivation.*
-</p>
 </details>
 
 **Problem 5.** Compare and contrast the likely effects on the UK economy of (a) a £50 billion
@@ -570,9 +580,7 @@ tax. Which policy would you recommend and why?
 
 <details>
 <summary>Hint</summary>
-<p>
 Option (a) — education spending: (1) Direct AD stimulus (short-run boost). (2) LRAS shifts right in the medium to long term (more skilled workforce). (3) Progressive — benefits lower-income students. (4) Takes 5–15 years to fully materialise. (5) Adds to deficit. Option (b) — corporation tax cut: (1) Smaller AD effect (firms may not spend immediately). (2) LRAS shifts right if investment increases (more capital). (3) Regressive — benefits shareholders and high earners. (4) Faster impact if firms respond quickly. (5) Revenue loss may be partially offset by Laffer curve effects. Recommendation: depends on the time horizon and economic context. In a recession, both provide some demand stimulus. Long-term, education has higher social returns but takes longer. The best policy mix might combine both: targeted education investment with moderate tax reform. *Revision: see [Fiscal Policy](/docs/docs_ALevel-notes/economics/macro/fiscal-policy) for evaluation of tax changes.*
-</p>
 </details>
 
 **Problem 6.** Explain why supply-side policies are difficult to evaluate. In your answer, refer to
@@ -580,9 +588,7 @@ the problems of causation, time lags, and measurement.
 
 <details>
 <summary>Hint</summary>
-<p>
 Three key problems: (1) **Causation**: it is hard to isolate the effect of a specific supply-side policy from other factors (global trends, technology, demand conditions). Did UK productivity improve because of education policy, or because of technology imported from the US? (2) **Time lags**: education reforms take 10–20 years to show results; infrastructure projects take 5–10 years. By the time the effects appear, many other things have changed, making attribution difficult. (3) **Measurement**: productivity, potential output, and the natural rate of unemployment are not directly observable — they are estimated using statistical techniques that involve assumptions. Different estimation methods give different results. Additionally: (4) **General equilibrium effects**: a policy may have unintended consequences (e.g., deregulation increases competition but also increases instability). (5) **Political economy**: policies may be designed for political rather than economic reasons, making evaluation harder.
-</p>
 </details>
 
 **Problem 7.** A government reduces unemployment benefits by 20%. Analyse the likely supply-side
@@ -591,9 +597,7 @@ quality of job matches, and (c) income inequality.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Lower benefits increase the opportunity cost of unemployment → unemployed workers search harder and accept jobs sooner → frictional unemployment falls → $u^*$ falls. However, if benefits are too low, workers may accept poor matches → could increase structural unemployment later. (b) Quality of matches may fall — workers under financial pressure accept the first job available rather than waiting for a good match. This reduces productivity (mismatch between skills and job requirements). Also, search intensity may shift from quality-focused to speed-focused. (c) Income inequality increases — the poorest (unemployed) lose a larger share of income. Poverty may rise. There is an equity-efficiency trade-off. Overall: moderate benefit reform may improve labour market efficiency, but excessive cuts can be counterproductive (poverty, poor matches, social costs). The optimal policy balances incentives with a social safety net.
-</p>
 </details>
 
 **Problem 8.** "Supply-side policies are more important than demand-side policies for achieving
@@ -601,9 +605,7 @@ sustained economic growth." Discuss.
 
 <details>
 <summary>Hint</summary>
-<p>
 Arguments for: (1) Only supply-side policies can increase potential output (LRAS), which is the basis for long-run growth. (2) Demand-side policy only smooths the cycle — it cannot raise living standards permanently. (3) Supply-side policies address the root causes of low growth (low productivity, skills gaps, insufficient investment). (4) East Asian "tiger" economies (South Korea, Singapore) achieved rapid growth through supply-side reforms (education, infrastructure, export-oriented industrial policy). Arguments against: (1) Demand-side policy is essential in the short run — the economy may be stuck below potential for years without it (e.g., Japan's Lost Decades, post-2008 recovery). (2) Supply-side policies are slow and uncertain — an economy in recession cannot wait 10 years for education reforms. (3) The two are complementary — demand stability creates a favourable environment for supply-side investment. (4) Demand creates its own supply (Say's Law in reverse: investment responds to demand). Best answer: both are necessary. Demand-side policy stabilises the cycle; supply-side policy raises the growth rate. Neither alone is sufficient.
-</p>
 </details>
 
 **Problem 9.** To what extent is the Laffer curve a valid justification for cutting income tax rates
@@ -611,7 +613,6 @@ in the UK?
 
 <details>
 <summary>Hint</summary>
-<p>
 The Laffer curve is theoretically valid — at a 100% tax rate, nobody works and revenue is zero, so
 there must exist some rate that maximises revenue. However, its **practical relevance** for the UK is
 highly contested. (1) Most empirical studies (IFS, OBR, Mirrlees Review) estimate that the UK income
@@ -626,7 +627,6 @@ uncertain — it depends on behavioural elasticities that are difficult to estim
 Laffer curve provides a useful theoretical framework but is not, by itself, a strong justification
 for cutting UK income tax rates. The revenue-maximising argument applies more to capital taxes than
 income taxes.
-</p>
 </details>
 
 **Problem 10.** Compare the effectiveness of investment in infrastructure with investment in
@@ -634,7 +634,6 @@ education as supply-side policies for raising the UK's long-run rate of economic
 
 <details>
 <summary>Hint</summary>
-<p>
 **Infrastructure:** (1) Direct productivity boost — lower transport costs, faster communications,
 reliable energy supply all reduce firms' costs. (2) High multiplier effect (1.5--2.0) and crowding-in
 of private investment. (3) Can reduce regional inequality if targeted at deprived areas (e.g.,
@@ -650,7 +649,6 @@ infrastructure has a faster and more certain impact but may not sustain growth i
 and bridges do not drive innovation). Education has a slower but more fundamental impact on growth
 potential. The optimal approach combines both, with infrastructure providing the foundation and
 education driving the innovation frontier.
-</p>
 </details>
 
 **Problem 11.** "Governments should not attempt to pick winners through industrial policy." Evaluate
@@ -658,7 +656,6 @@ this statement.
 
 <details>
 <summary>Hint</summary>
-<p>
 **Arguments against industrial policy (picking winners):** (1) Government has inferior information
 to markets about which technologies and firms will succeed — bureaucrats lack the profit motive and
 local knowledge of entrepreneurs. (2) Government failure risk: subsidies may prop up inefficient
@@ -678,7 +675,6 @@ subsidies, grid investment). **Conclusion:** industrial policy is not inherently
 works when the government has strong institutional capacity, clear objectives, and robust evaluation
 mechanisms. It fails when driven by political rather than economic logic. The key is **how** industrial
 policy is designed, not whether it exists.
-</p>
 </details>
 
 **Problem 12.** Assess the extent to which supply-side policies can reduce regional inequality in
@@ -686,7 +682,6 @@ the UK.
 
 <details>
 <summary>Hint</summary>
-<p>
 **The problem:** UK regional inequality is persistent and large. London and the South East have GDP
 per capita approximately 70% above the UK average in some measures, while parts of the North East,
 Wales, and Northern Ireland lag significantly. This reflects differences in industry composition,
@@ -708,7 +703,6 @@ are sustained over decades, targeted effectively, and backed by significant reso
 record of UK regional policy is disappointing, suggesting that the political commitment required
 has been lacking. International evidence (Germany's federal system, Spain's autonomous communities)
 suggests that fiscal devolution may be necessary but not sufficient.
-</p>
 </details>
 
 :::

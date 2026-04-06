@@ -255,7 +255,8 @@ Total size: 12 bytes (not 7).
 | Size         | Homogeneous              | Heterogeneous                 |
 | Use case     | Collections of same data | Grouping related attributes   |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** distinguishes between static arrays (fixed size, compile-time) and dynamic arrays (runtime
   sizing)
@@ -263,7 +264,8 @@ Total size: 12 bytes (not 7).
   emphasise static vs dynamic distinction
 - **OCR (A)** requires understanding of arrays, records, and file operations (sequential and random
   access files)
-- **Edexcel** covers arrays and records with pseudocode implementations :::
+- **Edexcel** covers arrays and records with pseudocode implementations
+:::
 
 ---
 
@@ -275,9 +277,11 @@ before accessing the element.
 Without bounds checking, an out-of-bounds access reads or writes arbitrary memory — a **buffer
 overflow** vulnerability.
 
-:::warning Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
+:::warning
+Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
 `A[-1]` or `A[n]` compiles but causes undefined behaviour. Python, Java, and C# perform automatic
-bounds checking. :::
+bounds checking.
+:::
 
 ---
 

@@ -11,7 +11,9 @@ slug: measurements-and-error-analysis
 
 ## Measurements and Error Analysis
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5
+:::
 
 ## 1. Systematic and Random Errors
 
@@ -65,9 +67,11 @@ measurement or environmental variability.
 
 **Reduction:** Take multiple readings and calculate the mean. Use more precise instruments.
 
-:::warning Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
+:::warning
+Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
 scatter) but inaccurate (systematic error), or accurate (close to true value) but imprecise (large
-scatter). Neither is sufficient alone. :::
+scatter). Neither is sufficient alone.
+:::
 
 ## 2. Uncertainty Analysis
 
@@ -201,16 +205,16 @@ Many physical relationships can be linearised by choosing appropriate variables:
 | $y = ae^{bx}$        | $\ln y = bx + \ln a$      | $\ln y$ vs $x$        | $b$        | $\ln a$   |
 | $T = 2\pi\sqrt{L/g}$ | $T^2 = \frac{4\pi^2}{g}L$ | $T^2$ vs $L$          | $4\pi^2/g$ | $0$       |
 
-:::tip Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
+:::tip
+Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
 gradient, first find the gradient uncertainty using the worst line method, then divide by the
-best-fit gradient and multiply by 100%. :::
+best-fit gradient and multiply by 100%.
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A student measures the length of a table five times: 1.52 m, 1.53 m, 1.51 m, 1.52 m, 1.54 m.
 Calculate the mean and the absolute uncertainty.
 
@@ -221,14 +225,10 @@ $\approx 1.52 \pm 0.02$ m.
 
 <b>If you get this wrong, revise:</b>
 [Uncertainty from Repeated Measurements](#uncertainty-from-repeated-measurements)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 The density of a material is $\rho = m/V$. The mass is $25.0 \pm 0.3$ g and the volume is
 $10.0 \pm 0.5$ cm$^3$. Calculate $\rho$ and its percentage uncertainty.
 
@@ -241,14 +241,10 @@ $\Delta\rho = 2.50 \times 0.062 = 0.16$ g cm$^{-3}$.
 Result: $\rho = 2.50 \pm 0.16$ g cm$^{-3}$ (6.2%).
 
 <b>If you get this wrong, revise:</b> [Propagation of Uncertainty](#propagation-of-uncertainty)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A digital voltmeter reads 4.52 V. What is the absolute uncertainty?
 
 **Answer.** For a digital instrument, the uncertainty is the smallest division (last digit):
@@ -256,14 +252,10 @@ $\pm 0.01$ V.
 
 <b>If you get this wrong, revise:</b>
 [Uncertainty from a Single Reading](#uncertainty-from-a-single-reading)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 The period of a pendulum is given by $T = 2\pi\sqrt{L/g}$. A student plots $T^2$ against $L$ and
 obtains a gradient of $4.05$ s$^2$ m$^{-1}$ with an uncertainty of $\pm 0.10$ s$^2$ m$^{-1}$.
 Calculate $g$ and its uncertainty.
@@ -276,14 +268,10 @@ $\Delta g = 9.75 \times 0.025 = 0.24$ m s$^{-2}$.
 Result: $g = 9.75 \pm 0.24$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Graphical Analysis](#3-graphical-analysis)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A quantity $y$ is calculated as $y = ax^3/b$ where $a = 4.0 \pm 0.2$, $b = 2.0 \pm 0.1$, and
 $x = 3.0 \pm 0.1$. Calculate $y$ and its percentage uncertainty.
 
@@ -297,14 +285,10 @@ Total $= 0.050 + 0.050 + 0.10 = 0.20 = 20\%$. $\Delta y = 54.0 \times 0.20 = 10.
 Result: $y = 54 \pm 11$ (20%).
 
 <b>If you get this wrong, revise:</b> [Propagation of Uncertainty](#propagation-of-uncertainty)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Distinguish between systematic and random errors, giving one example of each from measuring the
 acceleration of free fall using a simple pendulum.
 
@@ -315,14 +299,10 @@ periods.
 
 <b>If you get this wrong, revise:</b>
 [Systematic and Random Errors](#1-systematic-and-random-errors)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 In an experiment to determine $g$ using $T = 2\pi\sqrt{L/g}$, a student measures
 $L = 0.800 \pm 0.002$ m and $T = 1.80 \pm 0.05$ s. Calculate $g$ with its absolute uncertainty.
 
@@ -337,14 +317,10 @@ s$^{-2}$.
 Result: $g = 9.8 \pm 0.6$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Propagation of Uncertainty](#propagation-of-uncertainty)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A student obtains the following data for a linear relationship $y = mx + c$:
 
 | $x$ (cm) | $y$ (cm) |
@@ -364,8 +340,6 @@ Percentage uncertainty $= (0.03/1.34) \times 100 = 2.2\%$.
 
 <b>If you get this wrong, revise:</b>
 [Determining Uncertainty from a Line of Best Fit](#determining-uncertainty-from-a-line-of-best-fit)
-
-</p>
 </details>
 
 :::

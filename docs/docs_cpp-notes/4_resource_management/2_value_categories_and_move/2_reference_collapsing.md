@@ -79,10 +79,12 @@ void collapsing_demo() {
 }
 ```
 
-:::info Relevance Reference collapsing is the mechanism that enables **forwarding references**
+:::info
+Relevance Reference collapsing is the mechanism that enables **forwarding references**
 (Section 4). Without collapsing, a `T&&` parameter could not bind to lvalues — the deduction would
 always produce `T&&`, which cannot accept lvalues. Collapsing allows `T&&` to become `T&` when an
-lvalue is passed, making perfect forwarding possible. :::
+lvalue is passed, making perfect forwarding possible.
+:::
 
 ## 4.1 Distinguishing Forwarding References from Rvalue References
 
@@ -151,9 +153,11 @@ void not_forwarding() {
 }
 ```
 
-:::warning If you add a constraint like `requires` that depends on `T`, the parameter `T&&` is
+:::warning
+If you add a constraint like `requires` that depends on `T`, the parameter `T&&` is
 **not** a forwarding reference — it becomes a plain rvalue reference. The forwarding reference
-deduction requires that `T` be a freshly deduced, unconstrained type parameter. :::
+deduction requires that `T` be a freshly deduced, unconstrained type parameter.
+:::
 
 ## 4.3 `std::forward<T>(x)` — Perfect Forwarding
 
@@ -267,11 +271,13 @@ int main() {
 }
 ```
 
-:::info Relevance Perfect forwarding is the mechanism behind `std::make_unique`, `std::make_shared`,
+:::info
+Relevance Perfect forwarding is the mechanism behind `std::make_unique`, `std::make_shared`,
 `std::vector::emplace_back`, and virtually every factory or emplacement function in the standard
 library. Without forwarding references and `std::forward`, these functions would be forced to copy
 their arguments or require separate overloads for every combination of lvalue/rvalue parameters — a
-combinatorial explosion. :::
+combinatorial explosion.
+:::
 
 ## See Also
 
@@ -373,9 +379,11 @@ void range_for_forwarding() {
 }
 ```
 
-:::tip In `for (auto&& x : expr)`, the `auto&&` is a forwarding reference. This is the idiomatic way
+:::tip
+In `for (auto&& x : expr)`, the `auto&&` is a forwarding reference. This is the idiomatic way
 to write generic range-based for loops that work with both lvalue and rvalue ranges, and with proxy
-iterators that return prvalues (like `std::vector<bool>`). :::
+iterators that return prvalues (like `std::vector<bool>`).
+:::
 
 ## 5.3 `std::forward` Implementation Detail
 
@@ -530,12 +538,14 @@ void variadic_demo() {
 }
 ```
 
-:::warning The `capture` function above is **unsafe** — it stores references to temporaries (the
+:::warning
+The `capture` function above is **unsafe** — it stores references to temporaries (the
 literal `42` produces a `const int&` in the tuple, which dangles if the tuple outlives the full
 expression). `std::make_tuple` decays its arguments, so rvalues are copied/moved, but lvalues are
 stored as references. For safe capture, use `std::make_tuple(std::decay_t&lt;Args>(args)...)` to
 always store by value, or `std::forward_as_tuple(args...)` which explicitly stores references with
-the same lifetime concerns documented. :::
+the same lifetime concerns documented.
+:::
 
 ## 5.6 Forwarding in Class Templates
 

@@ -113,8 +113,6 @@ _Intuition._ Each term in the expansion corresponds to a way of choosing $a$'s a
 
 <details>
 <summary>Example</summary>
-<p>
-
 Expand $(2x - 3)^5$.
 
 $$(2x - 3)^5 = \sum_{r=0}^{5} \binom{5}{r} (2x)^{5-r}(-3)^r$$
@@ -122,8 +120,6 @@ $$(2x - 3)^5 = \sum_{r=0}^{5} \binom{5}{r} (2x)^{5-r}(-3)^r$$
 $$= 32x^5 + 5 \cdot 16x^4(-3) + 10 \cdot 8x^3 \cdot 9 + 10 \cdot 4x^2(-27) + 5 \cdot 2x \cdot 81 + (-243)$$
 
 $$= 32x^5 - 240x^4 + 720x^3 - 1080x^2 + 810x - 243$$
-
-</p>
 </details>
 
 ---
@@ -146,8 +142,6 @@ where $\binom{n}{r} = \frac{n(n-1)(n-2)\cdots(n-r+1)}{r!}$.
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the expansion of $(1 - 2x)^{-3}$ up to and including the term in $x^3$.
 
 Here $n = -3$ and we replace $x$ with $-2x$.
@@ -161,8 +155,6 @@ $$
 $$
 
 Valid for $|-2x| < 1$, i.e., $|x| < \frac{1}{2}$.
-
-</p>
 </details>
 
 ### 4.1 Expanding $(a + bx)^n$
@@ -175,8 +167,6 @@ Then expand $\left(1 + \frac{b}{a}x\right)^n$ using the general binomial theorem
 
 <details>
 <summary>Example</summary>
-<p>
-
 Expand $\sqrt{4 + x}$ in ascending powers of $x$ up to $x^2$.
 
 $$
@@ -189,8 +179,6 @@ $$
 $$
 
 Valid for $\left|\frac{x}{4}\right| < 1$, i.e., $|x| < 4$.
-
-</p>
 </details>
 
 ---
@@ -201,13 +189,9 @@ Valid for $\left|\frac{x}{4}\right| < 1$, i.e., $|x| < 4$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$(1 + 3x)^4 = \binom{4}{0} + \binom{4}{1}(3x) + \binom{4}{2}(3x)^2 + \binom{4}{3}(3x)^3 + \binom{4}{4}(3x)^4$$
 
 $$= 1 + 12x + 54x^2 + 108x^3 + 81x^4$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -217,15 +201,11 @@ $$= 1 + 12x + 54x^2 + 108x^3 + 81x^4$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 The $x^3$ term comes from $r = 3$:
 
 $$\binom{6}{3}(2)^{6-3}(-x)^3 = 20 \cdot 8 \cdot (-x^3) = -160x^3$$
 
 Coefficient of $x^3$: $-160$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -235,8 +215,6 @@ Coefficient of $x^3$: $-160$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 (1 + x)^{-2} &= 1 + (-2)x + \frac{(-2)(-3)}{2!}x^2 + \frac{(-2)(-3)(-4)}{3!}x^3 + \cdots \\
@@ -245,8 +223,6 @@ $$
 $$
 
 Valid for $|x| < 1$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
@@ -256,8 +232,6 @@ Valid for $|x| < 1$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $(1 - 2x)^5 = 1 - 10x + 40x^2 + \cdots$
 
 $(1 + 3x)^4 = 1 + 12x + 54x^2 + \cdots$
@@ -269,8 +243,6 @@ Coefficient of $x^2$ in the product:
 - From $(40x^2)(1)$: $40$
 
 Total: $54 - 120 + 40 = -26$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -280,8 +252,6 @@ Total: $54 - 120 + 40 = -26$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$\sqrt{1.05} = (1 + 0.05)^{1/2}$$
 
 $$= 1 + \frac{1}{2}(0.05) + \frac{\frac{1}{2} \cdot \left(-\frac{1}{2}\right)}{2}(0.05)^2 + \frac{\frac{1}{2}\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)}{6}(0.05)^3 + \cdots$$
@@ -291,8 +261,6 @@ $$= 1 + 0.025 - 0.000625 + 0.00003125 - \cdots$$
 $$\approx 1.024406$$
 
 To 5 d.p.: $1.02441$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
@@ -302,8 +270,6 @@ To 5 d.p.: $1.02441$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Coefficient of $x$: $na$
 
 Coefficient of $x^2$: $\frac{n(n-1)}{2}a^2$
@@ -329,8 +295,6 @@ $$64n - 128 = 72n - 72$$
 $$-8n = 56 \implies n = -7$$
 
 $a = \frac{8}{-8} = -1$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
@@ -340,8 +304,6 @@ $a = \frac{8}{-8} = -1$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Setting $a = 1$ and $b = 1$ in the binomial theorem:
 
 $$(1 + 1)^n = \sum_{r=0}^{n} \binom{n}{r} 1^{n-r} 1^r = \sum_{r=0}^{n} \binom{n}{r}$$
@@ -349,8 +311,6 @@ $$(1 + 1)^n = \sum_{r=0}^{n} \binom{n}{r} 1^{n-r} 1^r = \sum_{r=0}^{n} \binom{n}
 So $\sum_{r=0}^{n} \binom{n}{r} = 2^n$. $\blacksquare$
 
 _Intuition._ The sum of all binomial coefficients counts the total number of subsets of an $n$-element set, which is $2^n$ (each element can either be included or excluded).
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Binomial coefficients](#2-binomial-coefficients)
 
@@ -360,8 +320,6 @@ _Intuition._ The sum of all binomial coefficients counts the total number of sub
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Using partial fractions: $\frac{1}{(1+x)(1-2x)} = \frac{1}{3}\cdot\frac{1}{1+x} + \frac{2}{3}\cdot\frac{1}{1-2x}$.
 
 $$\frac{1}{1+x} = (1+x)^{-1} = 1 - x + x^2 - x^3 + \cdots \quad (|x| < 1)$$
@@ -377,8 +335,6 @@ $$
 $$
 
 Valid for $|x| < \frac{1}{2}$ (the more restrictive condition).
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
@@ -388,8 +344,6 @@ Valid for $|x| < \frac{1}{2}$ (the more restrictive condition).
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$\binom{10}{3} k^3 = 1080$$
 
 $$120k^3 = 1080$$
@@ -397,8 +351,6 @@ $$120k^3 = 1080$$
 $$k^3 = 9$$
 
 $$k = \sqrt[3]{9}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -408,8 +360,6 @@ $$k = \sqrt[3]{9}$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Setting $a = 1$ and $b = -1$ in the binomial theorem:
 
 $$(1 - 1)^n = \sum_{r=0}^{n} \binom{n}{r} 1^{n-r}(-1)^r = \sum_{r=0}^{n} (-1)^r \binom{n}{r}$$
@@ -417,7 +367,5 @@ $$(1 - 1)^n = \sum_{r=0}^{n} \binom{n}{r} 1^{n-r}(-1)^r = \sum_{r=0}^{n} (-1)^r 
 $0^n = 0$ for $n \geq 1$. $\blacksquare$
 
 _Intuition._ This counts the difference between subsets of even size and subsets of odd size — which is zero by a parity argument (there's a bijection between even-sized and odd-sized subsets: add or remove one element).
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Binomial coefficients](#2-binomial-coefficients)

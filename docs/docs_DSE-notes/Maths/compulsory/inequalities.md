@@ -53,15 +53,11 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - $3 > 1 \implies 3 + 5 > 1 + 5$, i.e., $8 > 6$.
 - $4 > 2$ and $3 > 0 \implies 4 \times 3 > 2 \times 3$, i.e., $12 > 6$.
 - $5 > 2$ and $-3 < 0 \implies 5 \times (-3) < 2 \times (-3)$, i.e., $-15 < -6$.
 - $7 > 5 > 2 \implies 7 > 2$ (transitivity).
 - $3 > 2 > 0 \implies 9 > 4$ and $\dfrac{1}{3} < \dfrac{1}{2}$.
-
-</p>
 </details>
 
 ## Linear Inequalities
@@ -85,8 +81,6 @@ The solution of a linear inequality in one variable is an interval, which can be
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Solve $3x - 7 > 5$:
 
 $$
@@ -118,8 +112,6 @@ $$
 $$
 
 The solution set is $[7, \infty)$.
-
-</p>
 </details>
 
 ## Quadratic Inequalities
@@ -155,8 +147,6 @@ The [discriminant](./functions.md#discriminant) $\Delta = b^2 - 4ac$ determines 
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Solve $x^2 - 5x + 6 > 0$:
 
 Factorize: $(x-2)(x-3) > 0$.
@@ -216,8 +206,6 @@ x & \left(-\infty, -\tfrac{1}{2}\right) & \left(-\tfrac{1}{2}, 2\right) & (2, \i
 $$
 
 Solution: $x < -\dfrac{1}{2}$ or $x > 2$, i.e., $\left(-\infty, -\dfrac{1}{2}\right) \cup (2, \infty)$.
-
-</p>
 </details>
 
 ## Absolute Value Inequalities
@@ -268,8 +256,6 @@ This gives two separate linear inequalities, each solved independently.
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Solve $|x - 3| < 5$:
 
 $$
@@ -319,8 +305,6 @@ Solution: $(-3, 3)$.
 Since $|x + 2| \geq 0$ for all real $x$, it can never be $\leq -1$.
 
 Solution: $\varnothing$.
-
-</p>
 </details>
 
 ## Systems of Inequalities
@@ -339,8 +323,6 @@ The same principle applies: solve each inequality independently, then take the i
 
 <details>
 <summary>Examples</summary>
-<p>
-
 - Find all $x$ satisfying $x^2 - 4x + 3 < 0$ and $2x - 1 > 3$:
 
 From $x^2 - 4x + 3 < 0$: $(x-1)(x-3) < 0 \implies 1 < x < 3$.
@@ -374,21 +356,15 @@ From $x^2 + 1 > 0$: always true (discriminant $\Delta = -4 < 0$, and $a = 1 > 0$
 From $x - 3 < 0$: $x < 3$.
 
 Intersection: $(-\infty, 3)$.
-
-</p>
 </details>
 
 ---
 
 <details>
 <summary>Wrap-up Questions</summary>
-<p>
-
 1. **Question:** Solve the inequality $\dfrac{2x - 1}{3} \leq \dfrac{x + 2}{4} + 1$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    Multiply through by $12$ (the LCM of $3$ and $4$, which is positive so the inequality sign is preserved):
 
    $$
@@ -404,43 +380,31 @@ Intersection: $(-\infty, 3)$.
    $$
 
    Solution: $\left(-\infty, \dfrac{22}{5}\right]$.
-
-   </p>
    </details>
 
 2. **Question:** Solve $x^2 - 6x + 9 \geq 0$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    Factorize: $(x - 3)^2 \geq 0$.
 
    Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all real numbers.
 
    Solution: $\mathbb{R}$.
-
-   </p>
    </details>
 
 3. **Question:** Find the range of $x$ for which $x^2 - 3x - 10 < 0$ and $2x + 1 > 0$ both hold.
    <details>
    <summary>Answer</summary>
-   <p>
-
    From $x^2 - 3x - 10 < 0$: $(x - 5)(x + 2) < 0 \implies -2 < x < 5$.
 
    From $2x + 1 > 0$: $x > -\dfrac{1}{2}$.
 
    Intersection: $-\dfrac{1}{2} < x < 5$, i.e., $\left(-\dfrac{1}{2}, 5\right)$.
-
-   </p>
    </details>
 
 4. **Question:** Solve $|3x - 5| < 7$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    $$
    -7 < 3x - 5 < 7
    $$
@@ -454,15 +418,11 @@ Intersection: $(-\infty, 3)$.
    $$
 
    Solution: $\left(-\dfrac{2}{3}, 4\right)$.
-
-   </p>
    </details>
 
 5. **Question:** Solve $|2x + 3| \geq x^2 + 2$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    This inequality combines absolute value and quadratic expressions. Consider two cases.
 
    **Case 1:** $2x + 3 \geq 0$ (i.e., $x \geq -\dfrac{3}{2}$), so $|2x + 3| = 2x + 3$:
@@ -488,15 +448,11 @@ Intersection: $(-\infty, 3)$.
    Discriminant: $\Delta = 4 - 20 = -16 < 0$. Since $a = 1 > 0$, the expression is always positive. No solution in this case.
 
    Solution: $[1 - \sqrt{2},\; 1 + \sqrt{2}]$.
-
-   </p>
    </details>
 
 6. **Question:** For what values of $k$ does the quadratic equation $x^2 + 2kx + k + 6 = 0$ have two distinct real roots?
    <details>
    <summary>Answer</summary>
-   <p>
-
    For two distinct real roots, the [discriminant](./functions.md#discriminant) must satisfy $\Delta > 0$:
 
    $$
@@ -512,15 +468,11 @@ Intersection: $(-\infty, 3)$.
    Since $a = 1 > 0$, the parabola opens upward. The expression is positive outside the roots.
 
    Solution: $k < -2$ or $k > 3$, i.e., $(-\infty, -2) \cup (3, \infty)$.
-
-   </p>
    </details>
 
 7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$, $|x - 2| \leq 3$, and $x > 0$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    From $x^2 - 5x + 4 \leq 0$: $(x-1)(x-4) \leq 0 \implies 1 \leq x \leq 4$.
 
    From $|x - 2| \leq 3$: $-3 \leq x - 2 \leq 3 \implies -1 \leq x \leq 5$.
@@ -535,15 +487,11 @@ Intersection: $(-\infty, 3)$.
    Combined: $[1, 4]$.
 
    Solution: $[1, 4]$.
-
-   </p>
    </details>
 
 8. **Question:** A ball is thrown upward from a height of $2$ m with an initial velocity of $20$ m/s. The height $h$ (in metres) after $t$ seconds is given by $h(t) = -5t^2 + 20t + 2$. During what time interval is the ball at a height greater than $17$ m?
    <details>
    <summary>Answer</summary>
-   <p>
-
    We need $h(t) > 17$:
 
    $$
@@ -563,15 +511,11 @@ Intersection: $(-\infty, 3)$.
    Factorize: $(t - 1)(t - 3) < 0 \implies 1 < t < 3$.
 
    The ball is above $17$ m during the interval $(1, 3)$ seconds.
-
-   </p>
    </details>
 
 9. **Question:** Solve $\dfrac{x^2 - 4}{x - 1} \geq 0$.
    <details>
    <summary>Answer</summary>
-   <p>
-
    First note that $x \neq 1$ (the denominator cannot be zero).
 
    Factorize the numerator: $\dfrac{(x-2)(x+2)}{x-1} \geq 0$.
@@ -597,15 +541,11 @@ Intersection: $(-\infty, 3)$.
    (Note: $x = -2$ is included because the numerator is zero there; $x = 1$ is excluded; $x = 2$ is included.)
 
    Solution: $[-2, 1) \cup [2, \infty)$.
-
-   </p>
    </details>
 
 10. **Question:** Solve $|x^2 - 3x + 1| < 3$.
     <details>
     <summary>Answer</summary>
-    <p>
-
     $$
     -3 < x^2 - 3x + 1 < 3
     $$
@@ -629,9 +569,5 @@ Intersection: $(-\infty, 3)$.
     Since the left inequality imposes no restriction, the solution is:
 
     Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
-
-    </p>
     </details>
-
-</p>
 </details>

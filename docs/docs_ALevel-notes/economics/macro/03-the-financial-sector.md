@@ -74,11 +74,13 @@ The **central bank** (Bank of England, ECB, Federal Reserve) performs:
 
 5. **Issuer of currency**: has the monopoly on note issuance
 
-:::info Board-Specific Note AQA and Edexcel require detailed knowledge of the Bank of England's
+:::info
+Board-Specific Note AQA and Edexcel require detailed knowledge of the Bank of England's
 Monetary Policy Committee (MPC): 9 members, meets 8 times per year, sets the Bank Rate to achieve
 the 2% CPI inflation target. CIE (9708) focuses more on the _functions_ of central banks in general
 rather than a specific institution. OCR expects you to distinguish between the central bank's roles
-in monetary stability and financial stability, and to evaluate whether these roles can conflict. :::
+in monetary stability and financial stability, and to evaluate whether these roles can conflict.
+:::
 
 **Real-world example — the Bank of England during COVID-19 (2020):** In March 2020, the BoE cut Bank
 Rate from 0.75% to 0.1% (an emergency 0.65 percentage point cut) and launched a GBP 200 billion QE
@@ -107,9 +109,11 @@ Money serves three functions: medium of exchange, store of value, unit of accoun
 | **M2**                 | Cash + retail bank deposits (current accounts, instant-access savings)                     |
 | **M4 (broad money)**   | Cash + all retail and wholesale bank deposits + certificates of deposit                    |
 
-:::info Board-Specific Note The exact definitions vary by board and country. CIE (9708) uses M0, M1,
+:::info
+Board-Specific Note The exact definitions vary by board and country. CIE (9708) uses M0, M1,
 M2, M4. Edexcel emphasises M0 and M4. AQA focuses on broad vs narrow money. Always use the
-definitions in your specification. :::
+definitions in your specification.
+:::
 
 ### 2.2 Money Creation: The Money Multiplier
 
@@ -167,11 +171,13 @@ central bank sets the price of reserves (the interest rate) rather than the quan
 the endogenous money view. However, for exam purposes, the money multiplier remains the standard
 model on most A Level specifications.
 
-:::info Board-Specific Note AQA and Edexcel teach the traditional money multiplier model. CIE (9708)
+:::info
+Board-Specific Note AQA and Edexcel teach the traditional money multiplier model. CIE (9708)
 has recently moved towards acknowledging endogenous money but still primarily examines the
 multiplier approach. OCR tends to focus on the practical implications (why QE did not cause
 hyperinflation) rather than the theoretical debate. When answering, use the multiplier model but
-acknowledge its limitations for evaluation marks. :::
+acknowledge its limitations for evaluation marks.
+:::
 
 **Credit creation process (step-by-step balance sheets):**
 
@@ -241,11 +247,13 @@ need to cut rates to combat an impending downturn. The 2020 COVID recession foll
 causality is debated (the curve may have anticipated COVID-related disruptions). In the UK, the
 yield curve also inverted briefly in 2019, signalling expectations of BoE rate cuts.
 
-:::info Board-Specific Note AQA often asks students to explain the yield curve and its significance
+:::info
+Board-Specific Note AQA often asks students to explain the yield curve and its significance
 as a predictor. Edexcel may link the yield curve to business investment decisions (firms use
 long-term rates to evaluate projects). OCR emphasises the expectations theory and liquidity
 preference theory of the term structure. CIE generally does not examine the yield curve in depth but
-may ask about the relationship between bond prices and interest rates. :::
+may ask about the relationship between bond prices and interest rates.
+:::
 
 ## 4. Monetary Policy
 
@@ -302,12 +310,14 @@ understanding of each pathway:
    particularly relevant for small and medium-sized enterprises (SMEs) that depend on bank lending
    and cannot access capital markets directly.
 
-:::info Board-Specific Note AQA expects you to identify at least three transmission channels with
+:::info
+Board-Specific Note AQA expects you to identify at least three transmission channels with
 diagrams. Edexcel requires a clear chain of reasoning from the interest rate change to the final
 impact on AD, inflation, and employment. OCR is particularly interested in the _limitations_ of
 monetary policy transmission — time lags, interest elasticity, and the liquidity trap. CIE expects a
 more formal diagrammatic analysis using the IS-LM framework (though not all centres teach IS-LM, so
-check with your teacher). :::
+check with your teacher).
+:::
 
 **Evaluation — how effective is monetary policy?**
 
@@ -381,12 +391,14 @@ money supply, CPI inflation remained below the 2% target until mid-2021, when su
 disruptions and energy price shocks drove inflation higher. This illustrates that QE alone does not
 cause high inflation — the broader macroeconomic context matters.
 
-:::info Board-Specific Note AQA and Edexcel both require evaluation of QE. CIE (9708) Paper 4
+:::info
+Board-Specific Note AQA and Edexcel both require evaluation of QE. CIE (9708) Paper 4
 frequently includes questions on unconventional monetary policy. Key evaluation points: QE is less
 effective when banks are unwilling to lend (liquidity trap), the impact on the real economy is
 uncertain and hard to measure, and the exit strategy (quantitative tightening) is politically and
 economically risky. OCR may also ask about the interaction between QE and fiscal policy (monetary
-financing). :::
+financing).
+:::
 
 ## 5. Financial Markets
 
@@ -491,16 +503,20 @@ financial institutions ("too big to fail") has not been fully resolved. The fail
 in 2023 was resolved through a government-brokered takeover by UBS, reinforcing the perception that
 large banks will always be rescued.
 
-:::tip Exam Technique When analysing monetary policy, always distinguish between the _transmission
+:::tip
+Exam Technique When analysing monetary policy, always distinguish between the _transmission
 mechanism_ (how the policy affects the economy) and the _effectiveness_ (how well it works in
 practice). Consider time lags, the interest elasticity of investment, and the shape of the liquidity
-preference curve. :::
+preference curve.
+:::
 
-:::tip Exam Technique For evaluation questions (typically worth 12-25 marks), structure your answer
+:::tip
+Exam Technique For evaluation questions (typically worth 12-25 marks), structure your answer
 as: (1) identify the issue, (2) explain the mechanism with a diagram, (3) evaluate using
 **however/on the other hand/significantly** to introduce counterarguments, (4) conclude with a
 justified judgement. Always consider short-run vs long-run effects and the context (e.g., the state
-of the economy at the time). :::
+of the economy at the time).
+:::
 
 ## 7. Problem Set
 
@@ -510,9 +526,7 @@ this calculation rely on?
 
 <details>
 <summary>Hint</summary>
-<p>
 $m = 1/0.08 = 12.5$. Maximum increase $= 12.5 \times 500 = £6{,}250$m. Assumptions: no cash leakages, no excess reserves held, all loans are redeposited in the banking system, demand for loans is infinite at the prevailing interest rate.
-</p>
 </details>
 
 **Problem 2.** The nominal interest rate on a savings account is 3% and inflation is 5%. Calculate
@@ -521,9 +535,7 @@ bank's policy stance?
 
 <details>
 <summary>Hint</summary>
-<p>
 Real rate $\approx 3\% - 5\% = -2\%$. The saver is losing purchasing power (negative real return). This implies the central bank has an expansionary policy stance (low real rates to stimulate the economy). If sustained, negative real rates discourage saving and encourage borrowing and spending.
-</p>
 </details>
 
 **Problem 3.** A 5-year government bond with face value £100 and annual coupon of £4 is currently
@@ -531,9 +543,7 @@ priced at £95. Calculate the current yield. Explain why the yield is higher tha
 
 <details>
 <summary>Hint</summary>
-<p>
 Current yield $= 4/95 \times 100 = 4.21\%$. The yield exceeds the coupon rate (4%) because the bond is trading at a discount (£95 < £100). The investor receives the coupon plus a capital gain of £5 at maturity, so the total return exceeds the coupon.
-</p>
 </details>
 
 **Problem 4.** Using the liquidity preference framework, explain what happens to the interest rate
@@ -542,9 +552,7 @@ diagram in your explanation.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Money supply curve shifts right $\Rightarrow$ interest rate falls (excess supply of money at the original rate, people buy bonds, bond prices rise, yields fall). (b) Income increases $\Rightarrow$ transactions demand for money rises $\Rightarrow$ money demand curve shifts right $\Rightarrow$ interest rate rises (excess demand for money at the original rate, people sell bonds, bond prices fall, yields rise).
-</p>
 </details>
 
 **Problem 5.** Explain the process of quantitative easing. Why might QE be less effective in a
@@ -552,9 +560,7 @@ liquidity trap? Evaluate the risks of QE for (a) asset price inflation and (b) w
 
 <details>
 <summary>Hint</summary>
-<p>
 QE: central bank buys assets (mainly government bonds) $\Rightarrow$ bond prices rise, yields fall $\Rightarrow$ lower borrowing costs, portfolio rebalancing. Liquidity trap: at the zero lower bound, interest rates can't fall further, and banks may hoard reserves rather than lend (excess reserves). Risks: (a) QE increases demand for assets (bonds, equities, property), pushing up prices — potentially creating bubbles disconnected from fundamentals. (b) Asset price inflation benefits those who own assets (wealthy) more than those who don't (poor), exacerbating wealth inequality.
-</p>
 </details>
 
 **Problem 6.** A commercial bank has £500m in deposits, £50m in reserves, and £450m in loans. The
@@ -563,9 +569,7 @@ loan the bank can make? (c) If the reserve ratio is increased to 15%, what happe
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Required reserves $= 10\% \times 500 = £50$m. Actual reserves = £50m. Yes, exactly meeting. (b) Maximum new loan = £0 (no excess reserves). (c) Required reserves $= 15\% \times 500 = £75$m. The bank has only £50m, so it must reduce lending by £25m to meet the new requirement (or borrow reserves).
-</p>
 </details>
 
 **Problem 7.** "Banks create money out of thin air." Evaluate this statement with reference to the
@@ -573,9 +577,7 @@ credit creation process and the role of central bank reserves.
 
 <details>
 <summary>Hint</summary>
-<p>
 Technically true: when a bank makes a loan, it simultaneously creates a deposit (money). The bank doesn't need reserves first — it creates the loan-deposit pair. However, constraints exist: (1) The bank must have enough reserves *later* to settle interbank payments and meet reserve requirements. (2) Capital requirements limit lending relative to equity. (3) The bank must find creditworthy borrowers willing to borrow. (4) Regulatory oversight limits excessive credit creation. The statement is misleading because it suggests unlimited money creation, which is false.
-</p>
 </details>
 
 **Problem 8.** Explain how an increase in the Bank of England's base rate would affect (a) mortgage
@@ -584,9 +586,7 @@ rate.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Variable-rate mortgage payments increase $\Rightarrow$ disposable income falls $\Rightarrow$ consumption falls. (b) Savers earn higher returns $\Rightarrow$ saving becomes more attractive $\Rightarrow$ consumption falls. (c) Higher interest rates attract foreign capital $\Rightarrow$ sterling appreciates $\Rightarrow$ UK exports become more expensive $\Rightarrow$ exports fall. (d) Government pays more interest on its debt (much of which is linked to interest rates) $\Rightarrow$ fiscal deficit widens. (e) Exchange rate appreciates (hot money flows in, attracted by higher returns).
-</p>
 </details>
 
 **Problem 9.** Compare and contrast the use of interest rates and quantitative easing as tools of
@@ -594,9 +594,7 @@ monetary policy. In what circumstances would each be more appropriate?
 
 <details>
 <summary>Hint</summary>
-<p>
 Interest rates: primary tool, affects short-term borrowing costs, well-understood transmission mechanism. Appropriate for normal economic conditions. QE: used when interest rates are at or near zero (zero lower bound), affects long-term rates and asset prices. Appropriate for severe recessions when conventional policy is exhausted. QE is less precise, harder to reverse, and has distributional consequences. Interest rate changes are quick and reversible but may be insufficient in a deep crisis.
-</p>
 </details>
 
 **Problem 10.** "The 2008 financial crisis was primarily caused by excessive risk-taking by banks."
@@ -605,9 +603,7 @@ Evaluate this statement, considering the roles of (a) banks, (b) regulators, (c)
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Banks: excessive leverage, inadequate risk management, complex securitisation, mis-selling of subprime mortgages. (b) Regulators: light-touch regulation, failure to monitor systemic risk, regulatory arbitrage (shadow banking). (c) Central banks: low interest rates encouraged excessive borrowing, failure to identify asset bubbles. (d) Consumers: borrowed beyond their means (subprime mortgages), irrational exuberance about house prices. The crisis was a *systemic* failure — no single cause, but rather a combination of misaligned incentives, regulatory gaps, and collective irrationality.
-</p>
 </details>
 
 **Problem 11.** Explain the inverse relationship between bond prices and interest rates. If a bond
@@ -616,9 +612,7 @@ with face value £100 and coupon 5% has 3 years to maturity and the market inter
 
 <details>
 <summary>Hint</summary>
-<p>
 At 5%: $P = 5/1.05 + 5/1.05^2 + 105/1.05^3 = 4.76 + 4.54 + 90.70 = £100$ (par). At 6%: $P = 5/1.06 + 5/1.06^2 + 105/1.06^3 = 4.72 + 4.45 + 88.16 = £97.33$. The price falls from £100 to £97.33 when the yield rises from 5% to 6%. This confirms the inverse relationship.
-</p>
 </details>
 
 **Problem 12.** Discuss the argument that "fractional reserve banking is inherently unstable and
@@ -626,9 +620,7 @@ should be replaced by full reserve banking." What are the counterarguments?
 
 <details>
 <summary>Hint</summary>
-<p>
 For: fractional reserve banking creates credit booms and busts (Minsky cycle), bank runs are possible (Diamond-Dybvig model), socialises losses (bailouts) while privatising gains. Full reserve banking (Chicago Plan) would eliminate bank runs and credit cycles. Against: fractional reserve banking performs useful maturity transformation (converting short-term deposits into long-term loans), full reserve banking would dramatically reduce lending and economic growth, banks would need to charge for deposits (end of free banking), credit creation could move to shadow banking (unregulated).
-</p>
 </details>
 
 **Problem 13.** In 2022, UK CPI inflation reached 11.1% while the Bank of England's Bank Rate was
@@ -639,9 +631,7 @@ earlier.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Start: real rate $\approx 0.25\% - 5.4\% = -5.15\%$. End: real rate $\approx 3.0\% - 11.1\% = -8.1\%$. Real rates were deeply negative throughout, even after significant tightening. (b) The BoE was criticised because inflation had been rising since late 2021, but it kept rates at 0.25% until December 2021 and raised them only gradually. By the time rates reached meaningful levels, inflation had already become entrenched. (c) For raising earlier: pre-emptive tightening could have anchored expectations, prevented a wage-price spiral, and reduced the peak inflation rate. Against raising earlier: the inflation was primarily driven by external supply shocks (energy, post-COVID supply chains) which monetary policy cannot easily address. Raising rates earlier risked unnecessarily choking the recovery from COVID-19 when the inflation spike might have proved transitory. The judgement depends on whether the inflation was viewed as demand-pull or cost-push in nature.
-</p>
 </details>
 
 **Problem 14.** Explain how a central bank could use each of the following to implement
@@ -651,9 +641,7 @@ interest rate.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) OMO: the central bank sells government bonds, removing money from circulation and reducing bank reserves. Less effective because: in a well-developed financial system, banks can obtain liquidity from other sources (interbank market, central bank standing facilities), so OMOs mainly signal policy intent rather than directly constraining lending. (b) Reserve requirement: increasing the required reserve ratio forces banks to hold more reserves, reducing their lending capacity. Less effective because: in the UK there are no mandatory reserve requirements, and changing them is a blunt instrument that doesn't discriminate between risky and safe lending. Banks may also find ways around the requirement (e.g., shifting activity to shadow banking). (c) Forward guidance: signalling that rates will stay higher for longer to manage inflation expectations. Less effective because: credibility depends on the central bank's track record. If the public doubts the central bank will follow through (e.g., due to political pressure to cut rates), forward guidance loses its power.
-</p>
 </details>
 
 **Problem 15.** "The growth of shadow banking poses a greater threat to financial stability than
@@ -662,9 +650,7 @@ UK Gilt Crisis, and the failure of Silicon Valley Bank in 2023.
 
 <details>
 <summary>Hint</summary>
-<p>
 For the statement: (1) Shadow banking entities (hedge funds, money market funds, private credit) are less regulated, less transparent, and not subject to Basel III capital requirements. (2) The 2008 crisis was amplified by shadow banking — mortgage-backed securities and SIVs (structured investment vehicles) operated outside the regulated banking system. (3) The 2022 UK Gilt Crisis was triggered by liability-driven investments (LDIs) held by pension funds — non-bank entities using leverage that was not captured by banking regulation. (4) SVB's failure was caused by losses on its bond portfolio, but the bank run was amplified by social media and venture capital networks (a form of shadow banking contagion). Against: (1) Traditional banks still pose systemic risk — Credit Suisse's 2023 failure showed that even regulated banks can fail. (2) Shadow banking provides valuable services (credit to SMEs, alternative investments) that traditional banks cannot or will not provide. (3) The solution is better regulation of shadow banking, not eliminating it. Conclusion: shadow banking is a significant and growing risk, but the threat comes from the *interaction* between regulated and unregulated parts of the financial system, not from shadow banking alone.
-</p>
 </details>
 
 **Problem 16.** A country's money supply is currently GBP 2 trillion. The central bank wants to
@@ -675,9 +661,7 @@ purchase to achieve its target.
 
 <details>
 <summary>Hint</summary>
-<p>
 The effective multiplier accounts for excess reserves and cash leakages. Let $rr = 0.05$ (required), $re = 0.03$ (excess), and $c = 0.10$ (cash ratio). Total reserves held per unit of deposits $= rr + re = 0.08$. Each round, only $(1 - c)$ of loans are redeposited. The money multiplier becomes: $m = \frac{1 + c}{rr + re + c} = \frac{1.10}{0.08 + 0.10} = \frac{1.10}{0.18} \approx 6.11$. (a) The effective multiplier is approximately 6.11 (compared to the simple multiplier of $1/0.05 = 20$). (b) Required reserve injection $= \text{target increase} / m = 200 / 6.11 \approx$ GBP 32.7 billion. The central bank must purchase approximately GBP 32.7 billion of bonds. This is much larger than under the simple model (which would suggest only GBP 10 billion needed), illustrating the importance of accounting for cash leakages and excess reserves.
-</p>
 </details>
 
 :::

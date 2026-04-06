@@ -193,8 +193,6 @@ $$
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve $2\sin^2\theta + 3\cos\theta - 3 = 0$ for $0 \leq \theta < 2\pi$.
 
 Using $\sin^2\theta = 1 - \cos^2\theta$:
@@ -212,8 +210,6 @@ $\cos\theta = \frac{1}{2} \implies \theta = \frac{\pi}{3}$ or $\frac{5\pi}{3}$.
 $\cos\theta = 1 \implies \theta = 0$.
 
 Solutions: $\theta = 0, \frac{\pi}{3}, \frac{5\pi}{3}$.
-
-</p>
 </details>
 
 ---
@@ -250,8 +246,6 @@ The small angle approximations are only valid when $\theta$ is in **radians**, n
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \frac{\sin 2\theta}{1 + \cos 2\theta} &= \frac{2\sin\theta\cos\theta}{1 + (2\cos^2\theta - 1)} \\
@@ -259,8 +253,6 @@ $$
 &= \frac{\sin\theta}{\cos\theta} = \tan\theta \quad \blacksquare
 \end{aligned}
 $$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Double angle formulas](#4-double-angle-formulas)
 
@@ -270,8 +262,6 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$2\sin x\cos x = \sin x$$
 
 $$\sin x(2\cos x - 1) = 0$$
@@ -281,8 +271,6 @@ $\sin x = 0 \implies x = 0, \pi$.
 $2\cos x - 1 = 0 \implies \cos x = \frac{1}{2} \implies x = \frac{\pi}{3}, \frac{5\pi}{3}$.
 
 Solutions: $x = 0, \frac{\pi}{3}, \pi, \frac{5\pi}{3}$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
 
@@ -292,8 +280,6 @@ Solutions: $x = 0, \frac{\pi}{3}, \pi, \frac{5\pi}{3}$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $R\sin(\theta - \alpha) = R(\sin\theta\cos\alpha - \cos\theta\sin\alpha) = R\cos\alpha\sin\theta - R\sin\alpha\cos\theta$.
 
 Comparing coefficients: $R\cos\alpha = 4$ and $R\sin\alpha = 3$.
@@ -303,8 +289,6 @@ $$R^2 = 4^2 + 3^2 = 25 \implies R = 5$$
 $$\tan\alpha = \frac{3}{4} \implies \alpha = \arctan\left(\frac{3}{4}\right) \approx 0.6435 \text{ rad}$$
 
 $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
@@ -314,13 +298,9 @@ $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$\sin 75° = \sin(45° + 30°) = \sin 45°\cos 30° + \cos 45°\sin 30°$$
 
 $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
@@ -330,8 +310,6 @@ $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \frac{1 - \cos 2\theta}{\sin 2\theta} &= \frac{1 - (1 - 2\sin^2\theta)}{2\sin\theta\cos\theta} \\
@@ -339,8 +317,6 @@ $$
 &= \frac{\sin\theta}{\cos\theta} = \tan\theta \quad \blacksquare
 \end{aligned}
 $$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Double angle formulas](#4-double-angle-formulas)
 
@@ -350,13 +326,9 @@ $$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Arc length: $s = r\theta = 8 \times 1.2 = 9.6$ cm.
 
 Area: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(64)(1.2) = 38.4$ cm².
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)
 
@@ -366,8 +338,6 @@ Area: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(64)(1.2) = 38.4$ cm².
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $3(1 - \sin^2 x) + 2\sin x - 2 = 0$
 
 $3 - 3\sin^2 x + 2\sin x - 2 = 0$
@@ -383,8 +353,6 @@ $\sin x = -\frac{1}{3} \implies x = \arcsin(-\frac{1}{3}) \approx -0.3398$ or $x
 $\sin x = 1 \implies x = \frac{\pi}{2}$.
 
 Solutions: $x \approx -0.340, \frac{\pi}{2}, 3.481$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
 
@@ -394,8 +362,6 @@ Solutions: $x \approx -0.340, \frac{\pi}{2}, 3.481$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $\sin 0.05 \approx 0.05$
 
 $\cos 0.05 \approx 1 - \frac{0.05^2}{2} = 1 - 0.00125 = 0.99875$
@@ -403,8 +369,6 @@ $\cos 0.05 \approx 1 - \frac{0.05^2}{2} = 1 - 0.00125 = 0.99875$
 $$\frac{\sin 0.05}{\cos 0.05} \approx \frac{0.05}{0.99875} \approx 0.05006$$
 
 (Alternatively, $\tan 0.05 \approx 0.05$ directly.)
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Small angle approximations](#6-small-angle-approximations)
 
@@ -414,8 +378,6 @@ $$\frac{\sin 0.05}{\cos 0.05} \approx \frac{0.05}{0.99875} \approx 0.05006$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 \tan(A+B) - \tan(A-B) &= \frac{\tan A + \tan B}{1 - \tan A\tan B} - \frac{\tan A - \tan B}{1 + \tan A\tan B} \\
@@ -438,8 +400,6 @@ $= \tan A + \tan^2 A \tan B + \tan B + \tan A \tan^2 B - \tan A + \tan^2 A \tan 
 $= 2\tan^2 A \tan B + 2\tan B = 2\tan B(\tan^2 A + 1) = 2\tan B \sec^2 A$
 
 So the correct identity is $\tan(A+B) - \tan(A-B) = \frac{2\tan B \sec^2 A}{1 - \tan^2 A \tan^2 B}$, which equals the stated formula when $1 + \tan^2 A = 1 - \tan^2 A \tan^2 B$... that's not generally true. The problem's stated formula appears incorrect as written.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Tangent of a sum](#33-tangent-of-a-sum)
 
@@ -449,14 +409,10 @@ So the correct identity is $\tan(A+B) - \tan(A-B) = \frac{2\tan B \sec^2 A}{1 - 
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$s = r\theta = 10 \implies \theta = \frac{10}{r}$$
 
 $$A = \frac{1}{2}r^2\theta = \frac{1}{2}r^2 \cdot \frac{10}{r} = 5r = 20 \implies r = 4$$
 
 $$\theta = \frac{10}{4} = 2.5 \text{ radians}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)

@@ -62,12 +62,14 @@ The `concept` keyword restricts what can appear on the right-hand side. Specific
 - It cannot introduce new template parameters (those go in the template-parameter-list).
 - A concept itself is never instantiated --- it is only **evaluated** during constraint checking.
 
-:::info Semantic Difference from `constexpr bool` A `constexpr bool` variable template and a
+:::info
+Semantic Difference from `constexpr bool` A `constexpr bool` variable template and a
 `concept` are both compile-time boolean predicates, but a concept participates in **partial
 ordering** (subsumption) during overload resolution, while a `constexpr bool` variable template does
 not. Concepts are also required to be `true` for all substitutions --- a concept that is `false` for
 some argument is well-formed, whereas a `static_assert(false)` in the concept body would be
-ill-formed. :::
+ill-formed.
+:::
 
 ## Requires-Expressions
 
@@ -234,11 +236,13 @@ int main() {
 }
 ```
 
-:::warning Negation with `!` The negation operator `!` is defined for constraints but **does not
+:::warning
+Negation with `!` The negation operator `!` is defined for constraints but **does not
 participate in subsumption ordering**. A concept `!C` does not subsume or is not subsumed by `C` ---
 they are incomparable. This means `!C` cannot be used to establish a partial ordering between
 overloads, which limits its usefulness in overload resolution. Prefer using a positive constraint on
-an alternative overload instead of negating a constraint. :::
+an alternative overload instead of negating a constraint.
+:::
 
 ## Defining and Using a `Numeric` Concept
 
@@ -310,16 +314,18 @@ mean(3, 7) = 10.0
 mean(3.0, 7.0) = 10.0
 ```
 
-:::tip Concept Design Principle A well-designed concept should be **minimal** (only require what is
+:::tip
+Concept Design Principle A well-designed concept should be **minimal** (only require what is
 necessary) and **specific** (exclude types that would cause undefined behavior). Avoid overly broad
 concepts like `requires(T t) { t + t; }` --- this would accept `std::string` (which supports `+` for
 concatenation) even if the algorithm is intended for arithmetic. Use the standard library concepts
-in `<concepts>` as building blocks whenever possible. :::
+in `<concepts>` as building blocks whenever possible.
+:::
 
 ## Abbreviated Function Templates
 
 C++20 introduced **abbreviated function templates** — the `auto` parameter syntax that implicitly
-generates a template parameter with an implicit `std::type_identity` constraint [N4950 §11.4.1]:
+generates an implicit template parameter with deduction from the argument type [N4950 §11.4.1]:
 
 ```cpp
 #include <concepts>

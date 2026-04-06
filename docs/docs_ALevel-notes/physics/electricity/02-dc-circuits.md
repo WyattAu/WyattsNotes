@@ -11,7 +11,9 @@ slug: dc-circuits
 
 ## DC Circuits
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. Kirchhoff's Laws
 
@@ -50,9 +52,11 @@ $$\frac{W_{\text{gained}}}{Q} = \frac{W_{\text{lost}}}{Q} \implies \sum \mathcal
 
 $\square$
 
-:::tip Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
+:::tip
+Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
 stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
-if current flows through the resistor in your chosen direction. :::
+if current flows through the resistor in your chosen direction.
+:::
 
 ## 2. Series and Parallel Resistors
 
@@ -128,9 +132,11 @@ light intensity:
 
 $$V_{\text{out}} = V_{\text{in}} \cdot \frac{R_{\text{sensor}}}{R_{\text{fixed}} + R_{\text{sensor}}}$$
 
-:::warning Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
+:::warning
+Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
 changes the effective resistance. The simple divider formula no longer applies — you must
-recalculate the parallel combination of $R_2$ and the load. :::
+recalculate the parallel combination of $R_2$ and the load.
+:::
 
 ## 4. Internal Resistance
 
@@ -206,8 +212,6 @@ the behaviour of the circuit for any load.
 
 <details>
 <summary>Example: Thevenin Equivalent</summary>
-<p>
-
 Find the Thevenin equivalent of a circuit with a 12 V battery in series with two parallel resistors
 $R_1 = 6\,\Omega$ and $R_2 = 3\,\Omega$, across terminals A and B that are across $R_2$.
 
@@ -218,16 +222,12 @@ $R_{\text{Th}}$ = resistance between A and B with the 12 V source shorted:
 $R_{\text{Th}} = R_1 \| R_2 = \frac{6 \times 3}{6+3} = 2.0$ $\Omega$.
 
 The circuit is equivalent to a 4.0 V source with $2.0\,\Omega$ internal resistance.
-
-</p>
 </details>
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Three resistors of 4 $\Omega$, 6 $\Omega$, and 12 $\Omega$ are connected in parallel. Calculate the
 equivalent resistance.
 
@@ -236,28 +236,20 @@ $\frac{1}{R} = \frac{1}{4} + \frac{1}{6} + \frac{1}{12} = \frac{3 + 2 + 1}{12} =
 $R = 2.0$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Parallel Combination](#parallel-combination)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A potential divider consists of a 10 k$\Omega$ and a 5.0 k$\Omega$ resistor in series across a 9.0 V
 supply. Calculate the output voltage across the 5.0 k$\Omega$ resistor.
 
 **Answer.** $V_{\text{out}} = 9.0 \times \frac{5.0}{10 + 5.0} = 9.0 \times \frac{1}{3} = 3.0$ V.
 
 <b>If you get this wrong, revise:</b> [Potential Dividers](#3-potential-dividers)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A cell of e.m.f. 12 V and internal resistance 0.50 $\Omega$ is connected to a 5.5 $\Omega$ external
 resistor. Calculate: (a) the current, (b) the terminal p.d., (c) the power dissipated in the
 external resistor.
@@ -269,14 +261,10 @@ external resistor.
 (c) $P = I^2R = 4.0 \times 5.5 = 22$ W.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 Using Kirchhoff's laws, find the current in each branch of a circuit where a 12 V battery and a 6 V
 battery (opposing) are connected with resistors of 2 $\Omega$ and 4 $\Omega$ as follows: 12 V
 battery in series with 2 $\Omega$ (branch 1), 6 V battery in series with 4 $\Omega$ (branch 2), both
@@ -313,14 +301,10 @@ direction in branch 2).
 This means the 12 V battery is driving current through the 6 V battery (charging it).
 
 <b>If you get this wrong, revise:</b> [Kirchhoff's Laws](#1-kirchhoffs-laws)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A battery with unknown e.m.f. and internal resistance is connected to a variable resistor. When
 $R = 4.0\,\Omega$, $I = 1.5$ A. When $R = 9.0\,\Omega$, $I = 0.80$ A. Find $\mathcal{E}$ and $r$.
 
@@ -333,14 +317,10 @@ $6.0 + 1.5r = 7.2 + 0.80r \implies 0.70r = 1.2 \implies r = 1.71\,\Omega$.
 $\mathcal{E} = 6.0 + 1.5(1.71) = 6.0 + 2.57 = 8.57$ V $\approx 8.6$ V.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Find the Thevenin equivalent of a voltage divider with $R_1 = 8\,\Omega$ and $R_2 = 4\,\Omega$
 across a 24 V supply, with terminals across $R_2$.
 
@@ -349,14 +329,10 @@ across a 24 V supply, with terminals across $R_2$.
 $R_{\text{Th}} = R_1 \| R_2 = \frac{8 \times 4}{8+4} = \frac{32}{12} = 2.67\,\Omega$.
 
 <b>If you get this wrong, revise:</b> [Thevenin's Theorem](#5-thevenins-theorem)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Two 6 $\Omega$ resistors are connected in parallel and this combination is connected in series with
 a 3 $\Omega$ resistor across a 12 V supply. Calculate: (a) the total resistance, (b) the current
 from the supply, (c) the p.d. across the parallel combination.
@@ -370,14 +346,10 @@ $R_{\text{total}} = 3 + 3 = 6\,\Omega$.
 
 <b>If you get this wrong, revise:</b>
 [Series and Parallel Resistors](#2-series-and-parallel-resistors)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A 9.0 V battery with internal resistance $0.80\,\Omega$ is connected to a lamp rated 6.0 V, 3.0 W.
 Calculate the current and determine whether the lamp operates at its rated voltage.
 
@@ -389,14 +361,10 @@ Terminal p.d.: $V = IR_L = 0.703 \times 12 = 8.44$ V. This exceeds the rated 6.0
 over-driven (it would likely burn out).
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 In the circuit below, find the current through each resistor: $R_1 = 2\,\Omega$ and
 $R_2 = 4\,\Omega$ in parallel, connected in series with $R_3 = 3\,\Omega$, across a 10 V supply.
 
@@ -412,14 +380,10 @@ A. $\checkmark$
 
 <b>If you get this wrong, revise:</b>
 [Series and Parallel Resistors](#2-series-and-parallel-resistors)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 Explain why a voltmeter should have a very high resistance and an ammeter should have a very low
 resistance.
 
@@ -429,14 +393,10 @@ is connected in series with a component. To avoid dropping significant voltage a
 circuit, its resistance should be very low (ideally zero).
 
 <b>If you get this wrong, revise:</b> [Kirchhoff's Laws](#1-kirchhoffs-laws)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 A potential divider circuit uses a 15 V supply with $R_1 = 10\,\text{k}\Omega$ and a thermistor as
 $R_2$. The thermistor has resistance 2000 $\Omega$ at $25°$C and 500 $\Omega$ at $50°$C. Calculate
 $V_{\text{out}}$ at each temperature.
@@ -448,14 +408,10 @@ At $50°$C:
 $V_{\text{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{10500} = 0.714$ V.
 
 <b>If you get this wrong, revise:</b> [Potential Dividers](#3-potential-dividers)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 A cell of e.m.f. $\mathcal{E}$ and internal resistance $r$ delivers maximum power to an external
 load. Prove that maximum power is delivered when $R = r$, and find the efficiency at this condition.
 
@@ -472,8 +428,6 @@ $\mathcal{E} \cdot \mathcal{E}/(2r) = \mathcal{E}^2/(2r)$. Efficiency
 $= P_{\text{load}}/P_{\text{total}} = 1/2 = 50\%$.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
-
-</p>
 </details>
 
 :::

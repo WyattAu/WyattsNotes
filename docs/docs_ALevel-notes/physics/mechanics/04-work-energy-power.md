@@ -11,7 +11,8 @@ slug: work-energy-power
 
 ## Work, Energy and Power
 
-:::info Board Coverage
+:::info
+Board Coverage
 AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
 :::
 
@@ -161,8 +162,6 @@ Energy is the most unifying concept in physics. It connects mechanics, thermodyn
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A car of mass $1200$ kg accelerates from rest to $25$ m s$^{-1}$ in $8.0$ s. Calculate: (a) the kinetic energy gained, (b) the average power output, (c) the average force.
 
 **Answer.** (a) $E_k = \frac{1}{2}(1200)(25)^2 = 375{,}000$ J $= 375$ kJ.
@@ -172,14 +171,10 @@ A car of mass $1200$ kg accelerates from rest to $25$ m s$^{-1}$ in $8.0$ s. Cal
 (c) $P = Fv_{\text{avg}}$, $v_{\text{avg}} = 12.5$ m s$^{-1}$. $F = 46{,}900/12.5 = 3750$ N. Alternatively, $F = ma = 1200 \times 25/8 = 3750$ N.
 
 <b>If you get this wrong, revise:</b> [Kinetic Energy](#2-kinetic-energy) and [Power and Velocity](#power-and-velocity)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A spring of spring constant $500$ N m$^{-1}$ is compressed by $0.08$ m. A $0.50$ kg ball is placed against it and released. Calculate the speed of the ball as it leaves the spring (assuming no energy losses).
 
 **Answer.** Elastic PE converted to KE: $\frac{1}{2}kx^2 = \frac{1}{2}mv^2$.
@@ -187,14 +182,10 @@ A spring of spring constant $500$ N m$^{-1}$ is compressed by $0.08$ m. A $0.50$
 $v = \sqrt{\frac{kx^2}{m}} = \sqrt{\frac{500 \times 0.0064}{0.50}} = \sqrt{6.4} = 2.53$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A roller coaster car of mass $500$ kg starts from rest at point A, 20 m above the ground. It descends to point B at ground level, then rises to point C at 12 m above the ground. Assuming no friction, find the speed at B and C.
 
 **Answer.** At B: $\frac{1}{2}(500)v_B^2 = 500 \times 9.81 \times 20$. $v_B = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} = 19.8$ m s$^{-1}$.
@@ -202,14 +193,10 @@ A roller coaster car of mass $500$ kg starts from rest at point A, 20 m above th
 At C: $E_k(C) = mg(h_A - h_C) = 500 \times 9.81 \times 8 = 39{,}240$ J. $v_C = \sqrt{2 \times 39{,}240/500} = \sqrt{156.96} = 12.5$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A motor lifts a $200$ kg load through a height of $15$ m in $10$ s. If the motor is $80\%$ efficient and runs on a $240$ V supply, calculate the current it draws.
 
 **Answer.** Useful power: $P_{\text{out}} = \frac{mgh}{t} = \frac{200 \times 9.81 \times 15}{10} = 2943$ W.
@@ -219,27 +206,19 @@ Electrical power: $P_{\text{in}} = \frac{P_{\text{out}}}{\eta} = \frac{2943}{0.8
 Current: $I = \frac{P_{\text{in}}}{V} = \frac{3679}{240} = 15.3$ A.
 
 <b>If you get this wrong, revise:</b> [Efficiency](#7-efficiency)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A pendulum bob of mass $0.50$ kg is pulled aside until it is $0.10$ m above its lowest point and released. Find its speed at the lowest point.
 
 **Answer.** $mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 0.10} = \sqrt{1.962} = 1.40$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A crate is pushed 8.0 m across a rough floor by a force of $150$ N at $30°$ below the horizontal. If $\mu = 0.25$ and the crate has mass $40$ kg, find: (a) the work done by the applied force, (b) the work done against friction, (c) the final speed (starting from rest).
 
 **Answer.** (a) $W_F = Fd\cos\theta = 150 \times 8.0 \times \cos 30° = 150 \times 8.0 \times 0.866 = 1039$ J.
@@ -250,14 +229,10 @@ Friction: $F_f = 0.25 \times 467.4 = 116.9$ N. $W_f = 116.9 \times 8.0 = 935$ J.
 (c) Net work = $1039 - 935 = 104$ J. $W_{\text{net}} = \Delta E_k = \frac{1}{2}mv^2$. $v = \sqrt{2 \times 104/40} = \sqrt{5.2} = 2.28$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Work Done by a Force](#1-work-done-by-a-force) and [Work-Energy Theorem](#2-kinetic-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A car of mass $800$ kg travels at constant speed $20$ m s$^{-1}$ up a hill inclined at $5°$ to the horizontal. The engine has an efficiency of $25\%$. Calculate the rate of fuel energy consumption (in watts).
 
 **Answer.** Component of weight down the slope: $mg\sin 5° = 800 \times 9.81 \times 0.0872 = 684$ N.
@@ -269,14 +244,10 @@ Power output: $P = Fv = 684 \times 20 = 13{,}680$ W.
 Fuel power: $P_{\text{fuel}} = P/\eta = 13{,}680/0.25 = 54{,}700$ W $= 54.7$ kW.
 
 <b>If you get this wrong, revise:</b> [Power and Velocity](#power-and-velocity) and [Efficiency](#7-efficiency)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Two springs are connected in parallel (both attached to the same mass). Spring A has $k_A = 200$ N m$^{-1}$, spring B has $k_B = 300$ N m$^{-1}$. The mass is displaced $0.05$ m. Find the total elastic PE stored.
 
 **Answer.** For parallel springs, the effective spring constant is $k_{\text{eff}} = k_A + k_B = 500$ N m$^{-1}$.
@@ -284,14 +255,10 @@ Two springs are connected in parallel (both attached to the same mass). Spring A
 $E_e = \frac{1}{2}k_{\text{eff}}x^2 = \frac{1}{2}(500)(0.0025) = 0.625$ J.
 
 <b>If you get this wrong, revise:</b> [Elastic Potential Energy](#4-elastic-potential-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 A ball is thrown vertically upward with speed $15$ m s$^{-1}$ from a height of $2.0$ m. Use energy conservation to find the maximum height above the ground.
 
 **Answer.** At launch: $E = E_k + E_p = \frac{1}{2}m(15)^2 + mg(2) = 112.5m + 19.62m = 132.1m$.
@@ -299,14 +266,10 @@ A ball is thrown vertically upward with speed $15$ m s$^{-1}$ from a height of $
 At max height: $E = mgh_{\max}$. So $h_{\max} = 132.1/9.81 = 13.5$ m.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A satellite of mass $500$ kg is in a circular orbit at altitude $300$ km above Earth's surface. Given $g = 9.81$ m s$^{-2}$ at the surface and $R_E = 6370$ km, calculate the total energy of the satellite. (The total energy of a circular orbit is $E = -\frac{GMm}{2r} = -\frac{1}{2}mgh$ is not valid here — use $E = -GMm/(2r)$ with $GM = gR_E^2$.)
 
 **Answer.** $r = R_E + h = 6{,}670{,}000$ m. $GM = gR_E^2 = 9.81 \times (6.37 \times 10^6)^2 = 3.976 \times 10^{14}$.
@@ -314,6 +277,4 @@ A satellite of mass $500$ kg is in a circular orbit at altitude $300$ km above E
 $E = -\frac{GMm}{2r} = -\frac{3.976 \times 10^{14} \times 500}{2 \times 6.67 \times 10^6} = -\frac{1.988 \times 10^{17}}{1.334 \times 10^7} = -1.49 \times 10^{10}$ J $= -14.9$ GJ.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy) and [08-gravitational-fields](./08-gravitational-fields.md)
-
-</p>
 </details>

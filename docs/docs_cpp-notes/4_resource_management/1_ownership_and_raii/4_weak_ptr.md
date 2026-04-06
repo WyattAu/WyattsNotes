@@ -71,9 +71,11 @@ void expired_demo() {
 }
 ```
 
-:::warning Never use `expired()` followed by raw access. There is a race condition between checking
+:::warning
+Never use `expired()` followed by raw access. There is a race condition between checking
 `expired()` and using the object — the object could be destroyed by another thread between the check
-and the access. Always use `lock()` instead, which atomically checks and returns a `shared_ptr`. :::
+and the access. Always use `lock()` instead, which atomically checks and returns a `shared_ptr`.
+:::
 
 ## 4.4 Control Block Reference Counting Details
 
@@ -219,9 +221,11 @@ root
 ~Node(root)
 ```
 
-:::warning `std::enable_shared_from_this` only works when the object is **originally** managed by a
+:::warning
+`std::enable_shared_from_this` only works when the object is **originally** managed by a
 `shared_ptr`. If the object is stack-allocated or managed by a `unique_ptr`, calling
-`shared_from_this()` is undefined behavior. :::
+`shared_from_this()` is undefined behavior.
+:::
 
 ## 4.6 `weak_ptr` as Observer in the Observer Pattern
 

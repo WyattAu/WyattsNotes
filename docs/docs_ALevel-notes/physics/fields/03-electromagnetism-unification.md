@@ -11,7 +11,9 @@ slug: electromagnetism-unification
 
 ## Electromagnetism Unification
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 ## 1. Maxwell's Equations (Integral Form)
 
@@ -61,7 +63,9 @@ restore this symmetry — and in doing so, predicted electromagnetic waves.
 oscillating electric and magnetic fields perpendicular to each other and to the direction of
 propagation, travelling at speed $c = 1/\sqrt{\mu_0\varepsilon_0}$ in vacuum.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 
 AQA expects qualitative understanding of all four Maxwell's equations and their physical
 significance. Edexcel and CIE require the full derivation of $c$ from first principles. OCR (A)
@@ -205,7 +209,9 @@ From Maxwell's equations, EM waves have these properties:
 6. **Carry momentum**: radiation pressure $P = I/c$ for total absorption, $P = 2I/c$ for perfect
    reflection
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 
 AQA and OCR (A) focus on the qualitative properties listed above. Edexcel and CIE may ask for the
 $E = cB$ relationship quantitatively. The Poynting vector is beyond most A Level syllabi but
@@ -234,9 +240,11 @@ Maxwell's unification showed that all these phenomena are described by the same 
 quantum nature of EM radiation (photons) would later be explained by Planck and Einstein, but the
 classical wave description remains valid and powerful.
 
-:::info Board Note The derivation of $c = 1/\sqrt{\mu_0\varepsilon_0}$ is required by Edexcel and
+:::info
+Board Note The derivation of $c = 1/\sqrt{\mu_0\varepsilon_0}$ is required by Edexcel and
 CIE. AQA and OCR (A) expect you to know the result and its significance but may not require the full
-derivation. :::
+derivation.
+:::
 
 ## 5. Faraday's Law — Applications and Lenz's Law Intuition
 
@@ -306,7 +314,9 @@ it provides smooth deceleration without mechanical contact.
 object, resistively heating it. Used in induction cooktops (where the pan itself becomes the heat
 source) and in industrial furnaces for melting metals.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 
 AQA requires quantitative treatment of transformers (efficiency, turns ratio) and generators.
 Edexcel covers motional `EMF` in detail and includes the rotating coil derivation. CIE P4 requires
@@ -364,7 +374,9 @@ V.
 This tiny voltage in metals explains why Hall probes use **semiconductors** (with much lower $n$) to
 get measurable voltages.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 
 CIE P4 covers the Hall effect explicitly, including the derivation of $V_H = BI/(ntq)$. AQA mentions
 Hall probes as a method of measuring magnetic fields but does not require the full theory. Edexcel
@@ -416,7 +428,9 @@ $$r = \frac{1}{0.50}\sqrt{\frac{2 \times 1.99 \times 10^{-26} \times 10000}{1.60
 Carbon-13 ions ($m = 13 \times 1.66 \times 10^{-27}$ kg) would be deflected to a radius
 $\sqrt{13/12} \times 10.0 \approx 10.4$ cm — the two isotopes are clearly separated on the detector.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 
 AQA covers the mass spectrometer quantitatively, including the derivation of $r = mv/(qB)$. Edexcel
 includes it as an application of circular motion in a magnetic field. CIE P4 covers it in detail,
@@ -491,7 +505,9 @@ decreasing cyclotron frequency.
 just 11 cm and accelerated protons to 80 keV. Modern cyclotrons in hospitals produce radioactive
 isotopes for PET scans by accelerating protons to energies of 10--20 MeV.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 
 AQA mentions the cyclotron briefly as an application of circular motion in magnetic fields. Edexcel
 does not typically require detailed knowledge. CIE P4 covers the cyclotron in moderate detail,
@@ -502,8 +518,6 @@ students should check their specification.
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Calculate the speed of light from the values of $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ and
 $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$.
 
@@ -512,14 +526,10 @@ $c = \frac{1}{\sqrt{4\pi \times 10^{-7} \times 8.85 \times 10^{-12}}} = \frac{1}
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Calculating $c$](#calculating-c)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 An EM wave in vacuum has an electric field amplitude of 30 V m$^{-1}$. Calculate the magnetic field
 amplitude.
 
@@ -527,14 +537,10 @@ amplitude.
 
 <b>If you get this wrong, revise:</b>
 [Properties of Electromagnetic Waves](#3-properties-of-electromagnetic-waves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 State Gauss's law for magnetism and explain its physical significance.
 
 **Answer.** $\oint \mathbf{B} \cdot d\mathbf{A} = 0$. This states that the net magnetic flux through
@@ -542,14 +548,10 @@ any closed surface is zero, which means there are no magnetic monopoles. Every m
 that enters a closed surface must also exit it — field lines always form closed loops.
 
 <b>If you get this wrong, revise:</b> [Gauss's Law for Magnetism](#gausss-law-for-magnetism)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 Explain why Maxwell added the displacement current term to Ampere's law and what physical phenomenon
 it predicts.
 
@@ -561,14 +563,10 @@ field. This addition predicted that changing electric fields generate magnetic f
 with Faraday's law (changing $B$ generates $E$), it predicted self-sustaining electromagnetic waves.
 
 <b>If you get this wrong, revise:</b> [Ampere-Maxwell Law](#ampere-maxwell-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 An X-ray has wavelength $0.10$ nm. Calculate its frequency and the electric field amplitude if the
 magnetic field amplitude is $1.5\,\mu$T.
 
@@ -578,14 +576,10 @@ $E_0 = cB_0 = 3.0 \times 10^8 \times 1.5 \times 10^{-6} = 450$ V m$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Properties of Electromagnetic Waves](#3-properties-of-electromagnetic-waves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Explain why electromagnetic waves do not require a medium to propagate, unlike mechanical waves.
 
 **Answer.** EM waves consist of self-sustaining oscillations of electric and magnetic fields. A
@@ -596,14 +590,10 @@ is essential.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Speed of Electromagnetic Waves](#2-derivation-of-the-speed-of-electromagnetic-waves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 In an EM wave, the electric field is given by $E_y = 60\sin(2\pi \times 10^{10}t - kx)$ V m$^{-1}$.
 Calculate: (a) the frequency, (b) the wavelength, (c) the magnetic field amplitude.
 
@@ -615,14 +605,10 @@ Calculate: (a) the frequency, (b) the wavelength, (c) the magnetic field amplitu
 
 <b>If you get this wrong, revise:</b>
 [Properties of Electromagnetic Waves](#3-properties-of-electromagnetic-waves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 What was the significance of Maxwell's prediction of the speed of EM waves? How was it
 experimentally confirmed?
 
@@ -634,14 +620,10 @@ refraction, polarisation, speed matching $c$).
 
 <b>If you get this wrong, revise:</b>
 [The EM Spectrum as a Unified Phenomenon](#4-the-em-spectrum-as-a-unified-phenomenon)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 A transformer has 200 turns on its primary coil and 50 turns on its secondary coil. The primary is
 connected to a 240 V rms AC supply. (a) Calculate the secondary voltage. (b) If the secondary
 delivers 2.0 A to a load and the transformer is 90% efficient, calculate the primary current.
@@ -654,14 +636,10 @@ $I_p = P_p / V_p = 133/240 = 0.56$ A.
 <b>If you get this wrong, revise:</b>
 [Faraday's Law — Applications and Lenz's Law Intuition](#5-faradays-law--applications-and-lenzs-law-intuition)
 
-</p>
-
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A Hall probe uses a semiconductor strip of thickness 1.5 mm and carrier density $1.0 \times 10^{21}$
 m$^{-3}$. A current of 5.0 mA passes through the strip, which is placed in a magnetic field of 0.30
 T. Calculate the Hall voltage. Why is a semiconductor used rather than a metal?
@@ -676,14 +654,10 @@ $V_H \sim 10^{-10}$ V.
 
 <b>If you get this wrong, revise:</b> [The Hall Effect](#6-the-hall-effect)
 
-</p>
-
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 In a mass spectrometer, a potential difference of 5000 V accelerates singly-charged neon-20 ions
 ($m = 20 \times 1.66 \times 10^{-27}$ kg) into a magnetic field of 0.40 T. (a) Calculate the
 velocity of the ions after acceleration. (b) Calculate the radius of their semicircular path. (c)
@@ -702,14 +676,10 @@ $\sqrt{22/20} \times 11.4 \approx 11.9$ cm — **further** from the entrance sli
 
 <b>If you get this wrong, revise:</b> [The Mass Spectrometer](#7-the-mass-spectrometer)
 
-</p>
-
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 A cyclotron with dees of radius 0.50 m uses a magnetic field of 1.2 T to accelerate protons
 ($m = 1.67 \times 10^{-27}$ kg, $q = 1.60 \times 10^{-19}$ C). Calculate: (a) the cyclotron
 frequency, (b) the maximum kinetic energy of the protons in both joules and electronvolts, (c)
@@ -728,8 +698,6 @@ not on the radius or speed. As the proton gains energy and spirals outward, both
 increase proportionally ($r = mv/(qB)$), keeping the period $T = 2\pi r/v = 2\pi m/(qB)$ constant.
 
 <b>If you get this wrong, revise:</b> [The Cyclotron](#8-the-cyclotron)
-
-</p>
 
 </details>
 

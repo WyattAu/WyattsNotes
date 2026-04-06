@@ -144,9 +144,11 @@ The cell membrane (plasma membrane) is a phospholipid bilayer with embedded prot
 - Cholesterol: regulates membrane fluidity
 - Glycolipids and glycoproteins: involved in cell recognition
 
-:::info The cell membrane is selectively permeable: it allows some substances to pass through freely
+:::info
+The cell membrane is selectively permeable: it allows some substances to pass through freely
 but restricts others. Small, non-polar molecules (e.g., $\text{O}_2$, $\text{CO}_2$) diffuse through
-easily, while large or charged molecules require transport proteins. :::
+easily, while large or charged molecules require transport proteins.
+:::
 
 ---
 
@@ -383,9 +385,11 @@ fit. This lowers the activation energy of the reaction.
 
 - Increasing enzyme concentration increases the rate (provided substrate is not limiting)
 
-:::warning Denaturation is **irreversible**. Once an enzyme is denatured by heat or extreme pH, it
+:::warning
+Denaturation is **irreversible**. Once an enzyme is denatured by heat or extreme pH, it
 cannot regain its function. This is different from a temporary decrease in activity at sub-optimal
-conditions. :::
+conditions.
+:::
 
 ### Worked Example 1
 
@@ -463,8 +467,10 @@ For each glucose molecule (two turns of the cycle):
 | Oxidative phosphorylation (from FADH$_2$) | 4                       |
 | **Total**                                 | **approximately 36-38** |
 
-:::info The actual ATP yield may be less than 38 due to the cost of transporting NADH from
-glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 ATP per glucose. :::
+:::info
+The actual ATP yield may be less than 38 due to the cost of transporting NADH from
+glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 ATP per glucose.
+:::
 
 ---
 
@@ -839,9 +845,11 @@ When a ligand binds to a cell-surface receptor, it triggers a cascade of intrace
 3. **Cellular response:** The cell changes its activity (e.g., gene expression, metabolism,
    secretion)
 
-:::info Second messengers greatly amplify the signal. One receptor activation can produce many
+:::info
+Second messengers greatly amplify the signal. One receptor activation can produce many
 second messenger molecules, each of which can activate many enzyme molecules, creating a large
-response from a small stimulus. :::
+response from a small stimulus.
+:::
 
 ---
 

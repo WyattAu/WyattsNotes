@@ -24,19 +24,23 @@ $$P \neq MSC \quad \text{or equivalently} \quad MSB \neq MSC$$
 This leads to a **deadweight welfare loss**: the total surplus (consumer + producer + third-party)
 is not maximised.
 
-:::warning Common Pitfall Market failure does not mean the market has "failed" in a colloquial
+:::warning
+Common Pitfall Market failure does not mean the market has "failed" in a colloquial
 sense. It means the _outcome_ is suboptimal — there exists a reallocation that could make at least
-one person better off without making anyone worse off (Pareto improvement). :::
+one person better off without making anyone worse off (Pareto improvement).
+:::
 
 ## 2. Types of Market Failure
 
-:::info Board-Specific Note **AQA** requires detailed analysis of all four types of externality
+:::info
+Board-Specific Note **AQA** requires detailed analysis of all four types of externality
 (production/consumption, positive/negative) with diagrammatic welfare loss triangles. **Edexcel**
 emphasises the distinction between private and social costs/benefits using demand-supply diagrams.
 **CIE (9708)** covers market failure in the context of allocative efficiency and requires
 consumer/producer surplus, deadweight loss, and cost-benefit analysis. **OCR (A)** links market
 failure directly to government intervention and expects evaluation of whether intervention improves
-outcomes. :::
+outcomes.
+:::
 
 ### 2.1 Externalities
 
@@ -81,8 +85,6 @@ $Q_{mkt}$ and $Q^*$.
 
 <details>
 <summary>Example: Pollution from a Chemical Factory</summary>
-<p>
-
 A chemical factory produces output $Q$ with marginal private cost $MPC = 20 + Q$ and marginal
 external cost $MEC = Q$. The marginal private benefit (demand) is $MPB = 80 - Q$.
 
@@ -92,8 +94,6 @@ external cost $MEC = Q$. The marginal private benefit (demand) is $MPB = 80 - Q$
 - DWL $= \frac{1}{2}(30 - 20)(60 - 30) = 150$
 
 The market over-produces by 10 units, creating a welfare loss of 150.
-
-</p>
 </details>
 
 #### Types of Externalities
@@ -167,13 +167,9 @@ into an agreement, knowing that the other party bears some of the cost of that b
 
 <details>
 <summary>Example</summary>
-<p>
-
 After purchasing comprehensive car insurance, a driver may take more risks (driving faster, parking
 in unsafe areas) because the insurance company bears the cost of accidents. The driver's behaviour
 changes _because_ they are insured — this is moral hazard.
-
-</p>
 </details>
 
 ### 2.4 Market Power
@@ -238,12 +234,14 @@ $$G = \frac{A}{A + B} = 2A = 1 - 2B$$
 
 ## 4. Government Intervention
 
-:::info Board-Specific Note **AQA** requires comparison of taxes, subsidies, regulation, and
+:::info
+Board-Specific Note **AQA** requires comparison of taxes, subsidies, regulation, and
 tradable permits with evaluation of each. **Edexcel** expects diagrammatic analysis showing the
 effect of Pigouvian taxes and subsidies on equilibrium. **CIE (9708)** covers government
 intervention alongside cost-benefit analysis and requires understanding of when intervention may
 fail. **OCR (A)** emphasises the link between market failure and government failure, requiring
-students to evaluate whether intervention worsens outcomes. :::
+students to evaluate whether intervention worsens outcomes.
+:::
 
 ### 4.1 Pigouvian Taxation
 
@@ -262,8 +260,6 @@ and reduces output to $Q^*$.
 
 <details>
 <summary>Example: Carbon Tax</summary>
-<p>
-
 A coal power plant produces electricity with $MPC = 10 + Q$ and $MEC = 0.5Q$ (carbon emissions
 damage). Demand: $P = 100 - Q$.
 
@@ -272,8 +268,6 @@ damage). Demand: $P = 100 - Q$.
 - Optimal tax: $t^* = MEC(36) = 18$
 - With tax, firm faces: $MPC + t = 10 + Q + 18 = 28 + Q$. Equilibrium:
   $100 - Q = 28 + Q \Rightarrow Q = 36$ ✓
-
-</p>
 </details>
 
 ### 4.2 Subsidies
@@ -343,7 +337,8 @@ market failure worsens the outcome.
 6. **Principal-agent problems**: government officials (agents) may not act in the public's
    (principal's) interest
 
-:::tip Exam Technique When evaluating government intervention, always consider government failure. A
+:::tip
+Exam Technique When evaluating government intervention, always consider government failure. A
 strong answer acknowledges that government intervention is not automatically superior to the market
 — it depends on the relative severity of market failure vs government failure in each specific case.
 :::
@@ -359,10 +354,12 @@ education, healthcare, vaccinations.
 **Demerit goods**: goods that the government believes consumers _should_ consume less of. Examples:
 alcohol, tobacco, illegal drugs.
 
-:::warning Common Pitfall Merit and demerit goods are normative concepts — they depend on value
+:::warning
+Common Pitfall Merit and demerit goods are normative concepts — they depend on value
 judgements about what is "good" or "bad" for people. This is different from positive externalities
 (which are objective welfare effects on third parties). Many merit goods also generate positive
-externalities, but the concepts are distinct. :::
+externalities, but the concepts are distinct.
+:::
 
 ### Tragedy of the Commons
 
@@ -380,9 +377,7 @@ market outcome.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Market: $60 - Q = 15 + 0.5Q \Rightarrow Q_{mkt} = 30$, $P = 30$. (b) $MSC = 15 + 0.8Q$. Social optimum: $60 - Q = 15 + 0.8Q \Rightarrow Q^* = 25$, $P^* = 35$. (c) $t^* = MEC(25) = 7.5$. (d) DWL $= \frac{1}{2}(30 - 25)(MSC(30) - MSB(30)) = \frac{1}{2}(5)(15 + 24 - 30) = \frac{1}{2}(5)(9) = 22.5$.
-</p>
 </details>
 
 **Problem 2.** Vaccination against a disease has marginal private benefit $MPB = 100 - Q$ and
@@ -391,9 +386,7 @@ Find the market outcome, the social optimum, and the optimal subsidy.
 
 <details>
 <summary>Hint</summary>
-<p>
 Market: $100 - Q = 20 + Q \Rightarrow Q_{mkt} = 40$. Social: $MSB = 100 - Q + 0.5Q = 100 - 0.5Q$. $100 - 0.5Q = 20 + Q \Rightarrow Q^* = 160/3 \approx 53.3$. Optimal subsidy $= MEB(Q^*) = 0.5 \times 53.3 = 26.7$.
-</p>
 </details>
 
 **Problem 3.** Using Akerlof's lemons model, explain what happens if the proportion of peaches
@@ -402,9 +395,7 @@ peaches survives.
 
 <details>
 <summary>Hint</summary>
-<p>
 Expected value $= 0.8 \times 10{,}000 + 0.2 \times 6{,}000 = £9{,}200$. Sellers of peaches (value £8,000) will sell at £9,200. Sellers of lemons (value £4,000) will also sell. Both types trade — the market survives because the expected value exceeds the sellers' reservation price for peaches.
-</p>
 </details>
 
 **Problem 4.** A country has five income groups with the following shares of total income: poorest
@@ -413,9 +404,7 @@ receive 45%. Plot the Lorenz curve (conceptually) and calculate the Gini coeffic
 
 <details>
 <summary>Hint</summary>
-<p>
 Cumulative shares: (20%, 5%), (40%, 15%), (60%, 30%), (80%, 55%), (100%, 100%). Gini $= 1 - 2B$ where $B$ is the area under the Lorenz curve. Using the trapezoidal rule: $B = 0.2 \times [0 + 2(0.05 + 0.15 + 0.30 + 0.55) + 1]/2 = 0.2 \times [0 + 2.10 + 1]/2 = 0.2 \times 1.55 = 0.31$. Gini $= 1 - 0.62 = 0.38$.
-</p>
 </details>
 
 **Problem 5.** "Government provision of healthcare is justified because healthcare is a merit good."
@@ -423,9 +412,7 @@ Evaluate this statement, considering both market failure and government failure 
 
 <details>
 <summary>Hint</summary>
-<p>
 For: imperfect information (patients can't assess treatment quality), positive externalities (healthy population is more productive), equity concerns (healthcare as a basic right). Against: government provision may be inefficient (no profit motive leads to waste), long waiting times, rationing by queuing rather than price, taxpayer burden. Consider: could the government achieve similar outcomes through regulation and subsidies rather than direct provision?
-</p>
 </details>
 
 **Problem 6.** A government is considering two policies to reduce carbon emissions: (a) a carbon tax
@@ -434,9 +421,7 @@ policies using the criteria of efficiency, equity, and practicality.
 
 <details>
 <summary>Hint</summary>
-<p>
 Tax (a): efficient (firms with low abatement costs reduce more, high-cost firms pay tax), generates revenue (could be used to reduce other distortionary taxes or fund green investment), but uncertain environmental outcome (can't guarantee emission reduction target), regressive (low-income households spend larger share on energy). Regulation (b): certain environmental outcome (guaranteed 20% reduction), but inefficient (all firms must reduce by same amount regardless of cost), no revenue generated, may be difficult to enforce.
-</p>
 </details>
 
 **Problem 7.** Explain why a pure public good (non-excludable, non-rivalrous) will not be provided
@@ -445,9 +430,7 @@ the commons.
 
 <details>
 <summary>Hint</summary>
-<p>
 Free-rider problem applies to public goods (non-excludable): individuals can benefit without paying, so no one pays $\Rightarrow$ not provided. Tragedy of the commons applies to common resources (rivalrous, non-excludable): individuals over-use because they don't bear the full cost $\Rightarrow$ resource is depleted. Both involve non-excludability but differ in rivalry.
-</p>
 </details>
 
 **Problem 8.** A tradable permit scheme for pollution allows 100 firms to each emit up to 10 tonnes
@@ -457,9 +440,7 @@ range.
 
 <details>
 <summary>Hint</summary>
-<p>
 If Firm A reduces by 1 extra tonne (cost £5) and sells the permit to Firm B (saving £20), both benefit. The gain is shared. Trading continues until the permit price equals both firms' marginal abatement costs. The equilibrium price is between £5 and £20. Total cost savings = £15 per permit traded.
-</p>
 </details>
 
 **Problem 9.** "Rent control is an effective way to make housing affordable." Evaluate this
@@ -467,9 +448,7 @@ statement using both theoretical analysis and empirical evidence.
 
 <details>
 <summary>Hint</summary>
-<p>
 Rent control sets a price ceiling below equilibrium $\Rightarrow$ excess demand (shortage). Short-run: existing tenants benefit from lower rents. Long-run: landlords reduce supply (convert to condos, neglect maintenance, exit market) $\Rightarrow$ shortage worsens, housing quality deteriorates. Empirical evidence (e.g., New York, Stockholm) generally supports these predictions. Alternatives: housing benefit (subsidy to low-income renters) increases demand but doesn't restrict supply.
-</p>
 </details>
 
 **Problem 10.** Explain the concept of moral hazard in the context of (a) health insurance and (b)
@@ -477,9 +456,7 @@ bank bailouts. How can policymakers mitigate moral hazard in each case?
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Insured individuals may over-use healthcare or take health risks. Mitigation: co-payments, deductibles, no-claims bonuses. (b) Banks knowing they will be bailed out may take excessive risks (too big to fail). Mitigation: require higher capital ratios, impose "living wills" (resolution plans), use "bail-in" mechanisms (bondholders bear losses before taxpayers).
-</p>
 </details>
 
 **Problem 11.** "The existence of market failure justifies government intervention." To what extent
@@ -487,9 +464,7 @@ do you agree with this statement?
 
 <details>
 <summary>Hint</summary>
-<p>
 Agree: market failure leads to allocative inefficiency (DWL), government can internalise externalities, provide public goods, reduce information asymmetry. Disagree: government failure may be worse than market failure (regulatory capture, information problems, unintended consequences). The key question is *comparative* analysis: which is worse in this specific case? Some market failures may be better addressed through private solutions (Coase theorem, reputation mechanisms, contracts).
-</p>
 </details>
 
 **Problem 12.** Explain how the Coase theorem applies to externalities. Under what conditions can
@@ -498,9 +473,7 @@ theorem fail in practice?
 
 <details>
 <summary>Hint</summary>
-<p>
 Coase theorem: if property rights are well-defined, transaction costs are zero, and there are few parties, private bargaining will achieve the efficient outcome regardless of who holds the property rights. Example: a factory and neighbouring residents can negotiate a payment for reduced pollution. Fails when: many affected parties (high transaction costs), measurement problems (hard to verify pollution levels), wealth effects (assignment of rights affects distribution), strategic behaviour (holdout problems).
-</p>
 </details>
 
 :::

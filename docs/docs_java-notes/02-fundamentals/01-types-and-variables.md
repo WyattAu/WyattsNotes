@@ -35,7 +35,8 @@ graph TB
 
 **Metaspace** (replaced PermGen in Java 8) — Stores class metadata (method bytecodes, field and method definitions, constant pool entries), static fields, and runtime constant pool information. Unlike PermGen, Metaspace uses native memory and can grow dynamically (bounded by `-XX:MaxMetaspaceSize`).
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §2.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-2.html#jls-2.5) defines the runtime data areas. [JLS §17.4](https://docs.oracle.com/javase/specs/jls/se21/html/jls-17.html#jls-17.4) specifies the memory model, which governs how threads interact through shared memory.
 :::
 
@@ -70,7 +71,8 @@ Java defines eight primitive types. They are not objects — they hold raw bit p
 | `char`    |          16 |            2 | `'\u0000'` | 0 to 65,535 (UTF-16 code unit) |
 | `boolean` |           1 |            ~ | `false`    | `true` or `false`              |
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §4.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2) defines primitive types and their values. [JLS §4.2.3](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2.3) specifies floating-point types and IEEE 754 conformance.
 :::
 
@@ -314,7 +316,8 @@ System.out.println(a == f);        // false
 System.out.println(a.equals(f));   // true
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §3.10.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-3.html#jls-3.10.5) defines string literals. [JLS §5.1.7](https://docs.oracle.com/javase/specs/jls/se21/html/jls-5.html#jls-5.1.7) specifies boxing conversion, including the requirement that strings computed from constant expressions are interned.
 :::
 

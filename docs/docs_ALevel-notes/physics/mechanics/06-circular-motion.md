@@ -11,7 +11,9 @@ slug: circular-motion
 
 ## Circular Motion
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. Angular Quantities
 
@@ -32,9 +34,11 @@ $$\omega = \frac{2\pi}{T} = 2\pi f$$
 
 where $T$ is the period (time for one revolution) and $f$ is the frequency.
 
-:::info Board Coverage AQA, Edexcel, OCR (A), and CIE all require radian measure for angular
+:::info
+Board Coverage AQA, Edexcel, OCR (A), and CIE all require radian measure for angular
 quantities. AQA and Edexcel may accept degrees in some contexts but radians are expected in
-formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$. :::
+formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$.
+:::
 
 **Example.** A CD rotates at $480$ rpm. Converting:
 $\omega = 480 \times 2\pi/60 = 16\pi \approx 50.3$ rad s$^{-1}$. A point $0.06$ m from the centre
@@ -71,10 +75,12 @@ $\mathbf{a}(t) = -\omega^2 \mathbf{r}(t)$ is always antiparallel to the position
 it always points towards the centre, regardless of where the particle is on the circle. Even though
 the speed is constant, the _direction_ of velocity changes continuously, requiring acceleration.
 
-:::info Board Coverage AQA: Both geometric and calculus derivations are accepted. Edexcel: Geometric
+:::info
+Board Coverage AQA: Both geometric and calculus derivations are accepted. Edexcel: Geometric
 derivation is the standard approach; calculus is optional extension work. OCR (A): Either method
 accepted; the geometric proof appears more frequently in mark schemes. CIE: The geometric method is
-the primary derivation required; calculus is useful for STEP/matriculation preparation. :::
+the primary derivation required; calculus is useful for STEP/matriculation preparation.
+:::
 
 ### Method 2: Geometry
 
@@ -93,10 +99,12 @@ By Newton's second law, the net force producing centripetal acceleration is:
 
 $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 
-:::warning Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
+:::warning
+Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
 force resulting from whatever physical forces act on the body (tension, friction, gravity, normal
 reaction, etc.). Never draw "centripetal force" on a free body diagram — identify the actual
-force(s) providing the centripetal acceleration. :::
+force(s) providing the centripetal acceleration.
+:::
 
 ### Intuition: Circular Motion is NOT Equilibrium
 
@@ -105,11 +113,13 @@ constant. The velocity vector is changing _direction_. There is always a net inw
 cut the string, the particle does **not** fly radially outward — it moves tangentially (Newton's
 first law).
 
-:::warning Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
+:::warning
+Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
 frame, objects appear to be pushed outward, but this is a pseudo-force (fictitious force) arising
 because the frame itself is accelerating. In an inertial (laboratory) frame, no outward force
 exists. AQA and Edexcel may ask you to explain the difference; OCR (A) has featured this in
-multiple-choice questions. :::
+multiple-choice questions.
+:::
 
 ## 4. Applications
 
@@ -140,9 +150,11 @@ $$\boxed{T = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
 **Example.** A conical pendulum with $L = 1.0$ m and $\alpha = 30°$ has period
 $T = 2\pi\sqrt{1.0 \times \cos 30°/9.81} = 2\pi\sqrt{0.0883} = 1.86$ s.
 
-:::info Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, typically
+:::info
+Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, typically
 as a multi-step calculation. OCR (A): Appears in Paper 2 with derivations required. CIE: Appears in
-P2; may be combined with energy considerations. :::
+P2; may be combined with energy considerations.
+:::
 
 ### Banked Curves
 
@@ -192,10 +204,12 @@ $$\boxed{v_{\min} = \sqrt{\frac{rg(\tan\theta - \mu)}{1 + \mu\tan\theta}}}$$
 assistance. At higher angles, velodromes use banking up to $45°$ so cyclists can maintain speed
 through tight turns. The normal reaction alone provides the centripetal force at the design speed.
 
-:::info Board Coverage AQA: Banked curves without friction are standard; friction on banked curves
+:::info
+Board Coverage AQA: Banked curves without friction are standard; friction on banked curves
 is extension material. Edexcel: Both frictionless and friction cases may appear in CP2. OCR (A):
 Frictionless derivation is core; friction is stretch/challenge. CIE: Frictionless is required;
-friction on banked curves occasionally appears in P2 as a harder question. :::
+friction on banked curves occasionally appears in P2 as a harder question.
+:::
 
 ### Vertical Circles
 
@@ -230,22 +244,16 @@ $$v_{\text{bottom}}^2 = gr + 4gr = 5gr \implies v_{\text{bottom}} = \sqrt{5gr}$$
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A car of mass $1200$ kg travels at $15$ m s$^{-1}$ around a circular bend of radius $50$ m.
 Calculate the centripetal force required.
 
 **Answer.** $F_c = mv^2/r = 1200 \times 225/50 = 5400$ N.
 
 <b>If you get this wrong, revise:</b> [Centripetal Force](#3-centripetal-force)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 A conical pendulum has a string of length $1.5$ m and the bob moves in a horizontal circle of radius
 $0.90$ m with a period of $1.8$ s. Find the angle the string makes with the vertical and the
 tension.
@@ -261,14 +269,10 @@ $T = 10.96m/\sin 36.9° = 10.96m/0.60 = 18.3m$ N.
 
 <b>If you get this wrong, revise:</b>
 [Horizontal Circle: Conical Pendulum](#horizontal-circle-conical-pendulum)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A curve of radius $80$ m is banked at $15°$. Calculate the optimum speed for the curve.
 
 **Answer.**
@@ -276,14 +280,10 @@ $v = \sqrt{rg\tan\theta} = \sqrt{80 \times 9.81 \times \tan 15°} = \sqrt{80 \ti
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Banked Curves](#banked-curves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A mass of $0.50$ kg on a string of length $1.0$ m is whirled in a vertical circle. What is the
 minimum speed at the lowest point for the mass to complete the circle?
 
@@ -291,14 +291,10 @@ minimum speed at the lowest point for the mass to complete the circle?
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Vertical Circles](#vertical-circles)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A satellite orbits Earth at an altitude where the gravitational field strength is $4.5$ N kg$^{-1}$.
 If the orbit radius is $8.0 \times 10^6$ m, find the orbital speed and period.
 
@@ -309,14 +305,10 @@ m s$^{-1}$.
 $T = 2\pi r/v = 2\pi \times 8.0 \times 10^6/6000 = 8378$ s $\approx 2.3$ hours.
 
 <b>If you get this wrong, revise:</b> [Centripetal Force](#3-centripetal-force)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A car of mass $1000$ kg rounds a level (unbanked) curve of radius $40$ m at $12$ m s$^{-1}$. What
 minimum coefficient of static friction is required?
 
@@ -324,14 +316,10 @@ minimum coefficient of static friction is required?
 $\mu_s mg = \mu_s \times 9810 = 3600$. $\mu_s = 3600/9810 = 0.367$.
 
 <b>If you get this wrong, revise:</b> [Centripetal Force](#3-centripetal-force)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A mass of $0.20$ kg is attached to a string of length $0.80$ m and whirled in a vertical circle. At
 the highest point, the speed is $3.0$ m s$^{-1}$. Find: (a) the tension at the highest point, (b)
 the speed at the lowest point, (c) the tension at the lowest point.
@@ -345,14 +333,10 @@ s$^{-1}$.
 (c) $T - mg = mv_b^2/r$. $T = 0.20 \times 40.4/0.80 + 1.962 = 10.1 + 1.962 = 12.1$ N.
 
 <b>If you get this wrong, revise:</b> [Vertical Circles](#vertical-circles)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Derive the centripetal acceleration formula $a = v^2/r$ using the geometric method (considering two
 positions separated by a small angle).
 
@@ -367,14 +351,10 @@ towards the centre. $\square$
 
 <b>If you get this wrong, revise:</b>
 [Centripetal Acceleration — Derivation](#2-centripetal-acceleration--derivation)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 A cyclist of total mass $80$ kg rides around a banked track of radius $25$ m at $8.0$ m s$^{-1}$. If
 the track is banked at $20°$, find the normal reaction and whether friction is needed (and in which
 direction).
@@ -392,14 +372,10 @@ This requires solving two simultaneous equations. $N\sin 20° - F\cos 20° = 80 
 and $N\cos 20° + F\sin 20° = 784.8$.
 
 <b>If you get this wrong, revise:</b> [Banked Curves](#banked-curves)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 Explain why a particle released from circular motion moves tangentially, not radially outward.
 
 **Answer.** By Newton's first law, in the absence of a net force, a body continues in a straight
@@ -411,8 +387,6 @@ rotating frame.
 
 <b>If you get this wrong, revise:</b>
 [Intuition: Circular Motion is NOT Equilibrium](#intuition-circular-motion-is-not-equilibrium)
-
-</p>
 </details>
 
 :::

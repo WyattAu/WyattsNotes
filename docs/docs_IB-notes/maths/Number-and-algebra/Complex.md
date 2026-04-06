@@ -208,9 +208,11 @@ $$
 
 **Principal argument:** $\arg(z) \in (-\pi, \pi]$
 
-:::tip Exam Tip When finding $\arg(z)$, always draw a quick Argand diagram to check which quadrant
+:::tip
+Exam Tip When finding $\arg(z)$, always draw a quick Argand diagram to check which quadrant
 the point is in. A common mistake is to use the calculator value directly without adjusting for the
-correct quadrant. :::
+correct quadrant.
+:::
 
 ### Geometric Interpretation of Operations
 
@@ -340,9 +342,11 @@ $$
 | Polar     | $z = r(\cos\theta + i\sin\theta)$ | Multiplication, division  |
 | Euler     | $z = re^{i\theta}$                | Powers, roots (De Moivre) |
 
-:::tip Exam Tip Converting between forms is essential. A good strategy: always convert to
+:::tip
+Exam Tip Converting between forms is essential. A good strategy: always convert to
 polar/Euler form before raising to a power or finding roots, and convert back to Cartesian for the
-final answer. :::
+final answer.
+:::
 
 :::
 

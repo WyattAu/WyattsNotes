@@ -254,8 +254,10 @@ Both texts depend heavily on dramatic irony:
   theatre respectively — both serve to implicate the audience or reader in the moral failure
   surrounding the central tragedy."
 
-:::tip Exam Tip For HL comparative essays, always address both the **similarities and differences**
+:::tip
+Exam Tip For HL comparative essays, always address both the **similarities and differences**
 between the texts. Stronger essays move beyond surface comparisons to explore how formal differences
-(novella vs play) shape the reader's experience of shared themes. :::
+(novella vs play) shape the reader's experience of shared themes.
+:::
 
 :::

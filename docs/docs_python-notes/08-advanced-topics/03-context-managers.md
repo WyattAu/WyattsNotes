@@ -45,7 +45,8 @@ with (
     outfile.write(infile.read())
 ```
 
-:::warning If the second `with` statement fails (e.g., `open("output.txt", "w")` raises
+:::warning
+If the second `with` statement fails (e.g., `open("output.txt", "w")` raises
 `PermissionError`), the first resource (`input.txt`) is still properly closed. This is a key
 advantage over manual try/finally.
 :::

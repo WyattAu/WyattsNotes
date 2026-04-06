@@ -93,9 +93,11 @@ write time and cannot be changed afterward.
 | Photo libraries (many small files)  | 128K           | Large enough for most image files                    |
 | Source code repositories            | 128K           | Many small reads, metadata caching is more important |
 
-:::warning Changing `recordsize` on an existing dataset only affects new writes. Existing files keep
+:::warning
+Changing `recordsize` on an existing dataset only affects new writes. Existing files keep
 their original block size. To benefit from a recordsize change, rewrite the data by copying files to
-a new dataset. :::
+a new dataset.
+:::
 
 ### Impact of recordsize on Performance
 
@@ -178,9 +180,11 @@ $$
 | Backup storage                     | No         | Most data is unique                   |
 | Database storage                   | No         | Low dedup ratio, performance impact   |
 
-:::warning In most NAS deployments, deduplication is a net negative. The memory cost of the DDT far
+:::warning
+In most NAS deployments, deduplication is a net negative. The memory cost of the DDT far
 exceeds the space savings from deduplication. Use compression (lz4/zstd) instead — it provides
-meaningful space savings with no memory cost. :::
+meaningful space savings with no memory cost.
+:::
 
 ---
 
@@ -285,9 +289,11 @@ ifconfig igb0 mtu 9000
 ifconfig igb0 | grep mtu
 ```
 
-:::warning Jumbo frames must be configured on every device in the network path — NAS, switch, and
+:::warning
+Jumbo frames must be configured on every device in the network path — NAS, switch, and
 clients. A single device with MTU 1500 in the path will cause fragmentation, which is worse than
-standard frames. Only enable jumbo frames if you control the entire network path. :::
+standard frames. Only enable jumbo frames if you control the entire network path.
+:::
 
 ### Link Aggregation (LACP)
 
@@ -368,7 +374,8 @@ L2ARC extends the ARC to SSD storage:
 | Cost                | Low                       | High                         |
 | Boot support        | Sometimes                 | Usually                      |
 
-:::warning Always use an HBA in IT (Initiator Target) mode for ZFS. RAID controllers hide disk
+:::warning
+Always use an HBA in IT (Initiator Target) mode for ZFS. RAID controllers hide disk
 identity and prevent ZFS from performing its error detection, self-healing, and direct disk
 management. Flash RAID controllers to IT mode (LSI 9211-8i, LSI 9300-8i) or buy pre-flashed HBAs.
 :::
@@ -820,10 +827,12 @@ zpool list -v tank
 zdb -bb tank 2>/dev/null | head -30
 ```
 
-:::warning Special vdevs cannot be removed after creation. If a special vdev fails, the entire pool
+:::warning
+Special vdevs cannot be removed after creation. If a special vdev fails, the entire pool
 is at risk. Always mirror special vdevs and use high-endurance NVMe drives rated for sustained write
 workloads. Check the DWPD (Drive Writes Per Day) rating and ensure it meets your projected metadata
-write volume. :::
+write volume.
+:::
 
 ### Optimizing Recordsize Per Dataset
 
@@ -850,9 +859,11 @@ zfs create -o recordsize=1M -o compression=zstd tank/media/videos
 zfs get all tank/postgres/data | grep -E "recordsize|primarycache|logbias|compression"
 ```
 
-:::tip The `recordsize` only affects new writes. Existing files retain their original block size
+:::tip
+The `recordsize` only affects new writes. Existing files retain their original block size
 until they are rewritten. To reblock existing data, copy files to a new dataset with the desired
-recordsize. :::
+recordsize.
+:::
 
 ## Monitoring ARC Statistics
 
@@ -908,9 +919,11 @@ echo $(echo '128 * 1024 * 1024 * 1024 * 90 / 100' | bc) > /sys/module/zfs/parame
 echo "options zfs zfs_arc_max=123480309760" > /etc/modprobe.d/zfs.conf
 ```
 
-:::warning Setting `zfs_arc_max` too high leaves insufficient memory for the kernel, applications,
+:::warning
+Setting `zfs_arc_max` too high leaves insufficient memory for the kernel, applications,
 and the ZFS prefetch cache. Never set it above 90% of physical RAM, and monitor swap usage after
-changes. If the system begins swapping, reduce `zfs_arc_max` immediately. :::
+changes. If the system begins swapping, reduce `zfs_arc_max` immediately.
+:::
 
 ### L2ARC Configuration
 

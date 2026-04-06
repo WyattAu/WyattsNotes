@@ -41,8 +41,8 @@ Compilers often provide two modes: strict ISO compliance and GNU/MSVC extensions
 - **`/Permissive-`** (MSVC): Disables non-standard behavior. This is implicitly enabled by
   `/std:c++20` and later, but explicitly adding it ensures strict conformance.
 
-**Best Practice:** Always explicit define `-std=c++23` (or `/std:c++latest`) and disable extensions
-to prevent vendor lock-in.
+**Best Practice:** Always explicitly define `-std=c++23` (or `/std:c++latest`) and disable
+extensions to prevent vendor lock-in.
 
 ## Standard Library Implementations
 
@@ -81,9 +81,11 @@ clang++ -std=c++23 -stdlib=libc++ main.cpp
 clang++ -std=c++23 -stdlib=libstdc++ main.cpp
 ```
 
-:::warning Library Availability On Linux, using `-stdlib=libc++` requires the installation of
+:::warning
+Library Availability On Linux, using `-stdlib=libc++` requires the installation of
 specific library packages (e.g., `libc++-dev` and `libc++abi-dev` on Debian/Ubuntu). If these are
-missing, the linker will fail to find symbols. :::
+missing, the linker will fail to find symbols.
+:::
 
 ## Application Binary Interface (ABI)
 
@@ -134,7 +136,7 @@ Windows has two distinct ecosystem ABIs:
 
 **Hazard:** You cannot generally link a C++ static library built with MinGW (`libfoo.a`) into an
 MSVC project (`project.exe`). They use different name mangling and exception handling mechanisms
-(SEH vs. DWARF/SJLJ).
+(table-based vs. DWARF/SJLJ).
 
 **Clang on Windows Exception:** Clang on Windows can simulate either ABI depending on the driver:
 
@@ -248,10 +250,9 @@ Also: Three-way comparison (`<=>`), `std::format`, designated initializers, `std
 
 - `std::print`, `std::println` (free-function formatting)
 - `std::expected&lt;T, E&gt;` (error handling without exceptions)
-- `std::generator&lt;T&gt;` (coroutine-based lazy sequences)
 - `std::flat_map`, `std::flat_set` (sorted associative containers using contiguous storage)
 - `std::mdspan` (multidimensional view)
-- `std::generator`, `std::move_only_function`
+- `std::move_only_function`
 - `#embed` directive (binary resource inclusion)
 - `auto` in function parameters, deducing `this`
 
@@ -259,7 +260,7 @@ Also: Three-way comparison (`<=>`), `std::format`, designated initializers, `std
 
 - `std::reflection` (compile-time reflection)
 - `std::text_encoding` (text encoding detection)
-- Pacthes for contracts, `std::expected` monadic operations
+- Patches for contracts, `std::expected` monadic operations
 - Linear algebra (`std::linalg`)
 - Hazard pointers and RCU (lock-free data structures)
 
@@ -313,8 +314,8 @@ struct Config {
 
 ### Cross-Compiler ABI Compatibility Matrix
 
-| Scenario                                    | Compatible? | Notes                                                |
-| :------------------------------------------ | :---------- | :--------------------------------------------------- |
+| Scenario                                   | Compatible? | Notes                                                |
+| :----------------------------------------- | :---------- | :--------------------------------------------------- |
 | GCC 13 ↔ GCC 14 (same `-std`)              | Yes         | Same `libstdc++` ABI                                 |
 | Clang 16 ↔ GCC 13 (Linux, `libstdc++`)     | Usually     | Must use same `libstdc++` version and `-std` flag    |
 | Clang 16 (`libc++`) ↔ GCC 13 (`libstdc++`) | **No**      | Different standard library ABIs                      |
@@ -322,9 +323,11 @@ struct Config {
 | GCC Linux ↔ Clang Linux (`libstdc++`)      | Usually     | Same `libstdc++.so` must be used at runtime          |
 | MSVC 2019 ↔ MSVC 2022                      | Usually     | MSVC STL aims for ABI stability, but not guaranteed  |
 
-:::warning Mixing Clang and GCC on Linux with the same `libstdc++` is generally safe for the same
+:::warning
+Mixing Clang and GCC on Linux with the same `libstdc++` is generally safe for the same
 C++ standard version. However, some ABI-affecting flags (like `-D_GLIBCXX_USE_CXX11_ABI`) must be
-consistent across all object files in the final binary. :::
+consistent across all object files in the final binary.
+:::
 
 ## MSVC ABI Differences
 
@@ -332,8 +335,9 @@ MSVC uses a different C++ ABI from the Itanium ABI used by GCC/Clang. Key differ
 
 1. **Name mangling.** MSVC uses a different mangling scheme (decorated names like
    `??0Config@@QAE@XZ` vs. GCC's `_ZN6ConfigC1Ev`).
-2. **Exception handling.** MSVC uses Structured Exception Handling (SEH) for C++ exceptions.
-   GCC/Clang use DWARF (Linux) or SjLj (some platforms).
+2. **Exception handling.** MSVC uses table-based exception handling (similar to DWARF) for C++
+   exceptions on x64, not Structured Exception Handling (SEH). GCC/Clang use DWARF (Linux) or SjLj
+   (some platforms).
 3. **`sizeof` differences.** Some types have different sizes across ABIs (e.g., `long` is 4 bytes on
    Windows, 8 bytes on Linux x86-64).
 4. **vtable layout.** The vtable structure, RTTI layout, and thunk mechanisms differ.
@@ -427,7 +431,7 @@ When distributing a C++ library that must work across platforms, verify the foll
 - [ ] No GNU extensions are used in public headers (or extensions are enabled uniformly).
 - [ ] The struct layout is identical across platforms (verify with `static_assert(sizeof(T) == N)`).
 - [ ] The calling convention matches (System V AMD64 ABI on Linux, Microsoft x64 on Windows).
-- [ ] Exception handling mechanism matches (DWARF/SJLJ/LSDA on GCC/Clang, SEH on MSVC).
+- [ ] Exception handling mechanism matches (DWARF/SJLJ/LSDA on GCC/Clang, table-based on MSVC x64).
 
 ## See Also
 

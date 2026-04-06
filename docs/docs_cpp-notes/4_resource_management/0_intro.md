@@ -22,6 +22,7 @@ This part covers four tightly coupled topics:
 
 4. **Error Handling (Module 13):** Exception safety guarantees, `noexcept`, and the modern algebraic alternatives (`std::expected`, `std::variant`).
 
-:::info Prerequisite Reading
+:::info
+Prerequisite Reading
 This part assumes familiarity with stack frames (Module 3.4), heap allocation (Module 3.5), pointers (Module 3.6), and class basics (Module 9). Exception mechanics are covered in detail in Module 13.
 :::

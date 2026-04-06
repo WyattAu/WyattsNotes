@@ -11,7 +11,9 @@ slug: nuclear-energy
 
 ## Nuclear Energy
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 ## 1. Mass Defect and Binding Energy
 
@@ -65,8 +67,6 @@ kg, and $1\,\text{u} \cdot c^2 = 931.5$ MeV.
 
 <details>
 <summary>Example: Binding Energy of Helium-4</summary>
-<p>
-
 Calculate the binding energy of $\prescript{4}{}{2}\text{He}$. Given:
 $m(\prescript{4}{}{2}\text{He}) = 4.00260$ u, $m_p = 1.00728$ u, $m_n = 1.00867$ u.
 
@@ -74,8 +74,6 @@ $m(\prescript{4}{}{2}\text{He}) = 4.00260$ u, $m_p = 1.00728$ u, $m_n = 1.00867$
 u.
 
 $E_b = 0.03030 \times 931.5 = 28.2$ MeV.
-
-</p>
 </details>
 
 ## 2. Binding Energy per Nucleon
@@ -191,15 +189,15 @@ Fission is initiated by a neutral particle (neutron), so there is no Coulomb bar
 Fusion requires positively charged nuclei to approach within $\sim 10^{-15}$ m, requiring enormous
 kinetic energy to overcome the Coulomb repulsion.
 
-:::info Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
-require calculation of energy released from mass defect. :::
+:::info
+Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
+require calculation of energy released from mass defect.
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Calculate the mass defect of $\prescript{56}{}{26}\text{Fe}$. Given:
 $m(\prescript{56}{}{26}\text{Fe}) = 55.93493$ u, $m_p = 1.00728$ u, $m_n = 1.00867$ u.
 
@@ -210,14 +208,10 @@ $E_b = 0.51445 \times 931.5 = 479.2$ MeV. $E_b/A = 479.2/56 = 8.56$ MeV/nucleon.
 
 <b>If you get this wrong, revise:</b>
 [Mass Defect and Binding Energy](#1-mass-defect-and-binding-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 The binding energy per nucleon of $\prescript{235}{}{92}\text{U}$ is 7.59 MeV. When it undergoes
 fission into two nuclei each with binding energy per nucleon of 8.40 MeV, calculate the energy
 released per fission.
@@ -227,14 +221,10 @@ after: $235 \times 8.40 = 1974$ MeV. Energy released $= 1974 - 1783.65 = 190.35$
 MeV.
 
 <b>If you get this wrong, revise:</b> [Binding Energy per Nucleon](#2-binding-energy-per-nucleon)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 Explain why energy is released in both nuclear fission and nuclear fusion, using the binding energy
 per nucleon curve.
 
@@ -245,14 +235,10 @@ have higher $E_b/A$). In both cases, the total binding energy increases, and the
 released as energy.
 
 <b>If you get this wrong, revise:</b> [The Binding Energy Curve](#the-binding-energy-curve)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 Calculate the energy released when a proton and neutron combine to form a deuteron
 ($\prescript{2}{}{1}\text{H}$). Given: $m_p = 1.67262 \times 10^{-27}$ kg,
 $m_n = 1.67493 \times 10^{-27}$ kg, $m_d = 3.34358 \times 10^{-27}$ kg, $c = 3.0 \times 10^8$ m
@@ -265,14 +251,10 @@ $= 2.23$ MeV.
 
 <b>If you get this wrong, revise:</b>
 [Mass Defect and Binding Energy](#1-mass-defect-and-binding-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 In a nuclear reactor, each fission of U-235 releases 200 MeV and produces on average 2.5 neutrons.
 If the reactor is operating at a power of 500 MW, calculate the number of fissions per second.
 
@@ -283,14 +265,10 @@ Number of fissions per second $= 500 \times 10^6 / 3.2 \times 10^{-11} = 1.56 \t
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Nuclear Fission](#3-nuclear-fission)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Explain the role of a moderator and control rods in a nuclear fission reactor.
 
 **Answer.** **Moderator** (e.g., graphite or water): slows down fast fission neutrons to thermal
@@ -300,14 +278,10 @@ fissioning. By adjusting their depth, the number of neutrons available for fissi
 maintaining the reactor in a critical state (one fission per fission, on average).
 
 <b>If you get this wrong, revise:</b> [Chain Reaction](#chain-reaction)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 The fusion reaction
 $\prescript{2}{}{1}\text{H} + \prescript{2}{}{1}\text{H} \to \prescript{3}{}{2}\text{He} + \prescript{1}{}{0}\text{n}$
 releases 3.27 MeV. Given the masses: $m(\prescript{2}{}{1}\text{H}) = 2.01410$ u,
@@ -321,14 +295,10 @@ $\Delta m = 4.02820 - 4.02470 = 0.00350$ u. $E = 0.00350 \times 931.5 = 3.26$ Me
 MeV. $\checkmark$
 
 <b>If you get this wrong, revise:</b> [Nuclear Fusion](#4-nuclear-fusion)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 Why does nuclear fusion require extremely high temperatures but fission does not?
 
 **Answer.** Fission is initiated by neutrons, which carry no charge and therefore experience no
@@ -339,8 +309,6 @@ $\sim$MeV. Extremely high temperatures ($\sim 10^8$ K) are needed to give nuclei
 energy (via the Maxwell-Boltzmann distribution) to overcome this barrier.
 
 <b>If you get this wrong, revise:</b> [Conditions for Fusion](#conditions-for-fusion)
-
-</p>
 </details>
 
 :::

@@ -78,10 +78,12 @@ $\square$
 | $O(2^n)$      | Exponential  | Subset enumeration, brute force |
 | $O(n!)$       | Factorial    | Permutation enumeration (TSP)   |
 
-:::info Board-specific **AQA** requires Big-O notation for standard algorithms (searching, sorting);
+:::info
+Board-specific **AQA** requires Big-O notation for standard algorithms (searching, sorting);
 focuses on time complexity. **CIE (9618)** covers Big-O, Big-Theta, and Big-Omega notation; requires
 space complexity analysis. **OCR (A)** requires Big-O notation; may require comparison of algorithm
-performance. **Edexcel** covers time and space complexity with Big-O notation. :::
+performance. **Edexcel** covers time and space complexity with Big-O notation.
+:::
 
 ---
 
@@ -106,7 +108,8 @@ where $P(I)$ is the probability of input $I$.
 | Average | $O(n \log n)$ | Random inputs (expected)      |
 | Worst   | $O(n^2)$      | Already sorted, min/max pivot |
 
-:::warning Pitfall Average case assumes a **uniform distribution** of inputs. Real-world data may
+:::warning
+Pitfall Average case assumes a **uniform distribution** of inputs. Real-world data may
 not be uniformly distributed. Always state the distribution assumption when discussing average case.
 :::
 

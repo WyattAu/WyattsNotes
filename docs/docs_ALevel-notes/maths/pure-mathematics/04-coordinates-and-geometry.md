@@ -92,8 +92,6 @@ $$1 \cdot 1 + m_1 \cdot m_2 = 0 \implies m_1 m_2 = -1 \quad \blacksquare$$
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the equation of the line perpendicular to $2x - 3y + 7 = 0$ passing through $(4, -1)$.
 
 Rearranging: $3y = 2x + 7$, so $y = \frac{2}{3}x + \frac{7}{3}$. Gradient: $m_1 = \frac{2}{3}$.
@@ -103,8 +101,6 @@ Perpendicular gradient: $m_2 = -\frac{3}{2}$.
 $$y + 1 = -\frac{3}{2}(x - 4)$$
 
 $$2y + 2 = -3x + 12 \implies 3x + 2y - 10 = 0$$
-
-</p>
 </details>
 
 ---
@@ -159,8 +155,6 @@ To find the centre and radius from the general form, always complete the square 
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the centre and radius of $x^2 + y^2 - 6x + 4y - 12 = 0$.
 
 $$
@@ -172,8 +166,6 @@ $$
 $$
 
 Centre: $(3, -2)$, Radius: $5$.
-
-</p>
 </details>
 
 ---
@@ -220,15 +212,11 @@ $$x x_1 + y y_1 = x_1^2 + y_1^2 = r^2$$
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the equation of the tangent to $x^2 + y^2 = 25$ at the point $(3, 4)$.
 
 Using $x x_1 + y y_1 = r^2$:
 
 $$3x + 4y = 25$$
-
-</p>
 </details>
 
 ---
@@ -259,13 +247,9 @@ Since the product of gradients is $-1$, $AP \perp BP$. $\blacksquare$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$m = \frac{3 - 5}{-1 - 2} = \frac{-2}{-3} = \frac{2}{3}$$
 
 $$y - 5 = \frac{2}{3}(x - 2) \implies 3y - 15 = 2x - 4 \implies 2x - 3y + 11 = 0$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Equation of a line](#22-equation-of-a-line)
 
@@ -275,8 +259,6 @@ $$y - 5 = \frac{2}{3}(x - 2) \implies 3y - 15 = 2x - 4 \implies 2x - 3y + 11 = 0
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $$
 \begin{aligned}
 (x^2 + 8x) + (y^2 - 6y) &= 24 \\
@@ -286,8 +268,6 @@ $$
 $$
 
 Centre: $(-4, 3)$, Radius: $7$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Expanded form](#32-expanded-form)
 
@@ -297,8 +277,6 @@ Centre: $(-4, 3)$, Radius: $7$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Substitute $y = x + 1$ into $x^2 + y^2 = 1$:
 
 $$
@@ -321,8 +299,6 @@ If the problem instead asked about $y = x + c$ being tangent:
 Substitute: $2x^2 + 2cx + c^2 - 1 = 0$. Set $\Delta = 0$:
 
 $4c^2 - 8(c^2 - 1) = 0 \implies -4c^2 + 8 = 0 \implies c = \pm\sqrt{2}$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Tangent condition](#41-the-tangent-condition)
 
@@ -332,8 +308,6 @@ $4c^2 - 8(c^2 - 1) = 0 \implies -4c^2 + 8 = 0 \implies c = \pm\sqrt{2}$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 From (2): $x = y + 1$. Substitute into (1):
 
 $$3(y + 1) + 2y = 7 \implies 5y + 3 = 7 \implies y = \frac{4}{5}$$
@@ -341,8 +315,6 @@ $$3(y + 1) + 2y = 7 \implies 5y + 3 = 7 \implies y = \frac{4}{5}$$
 $$x = \frac{4}{5} + 1 = \frac{9}{5}$$
 
 Intersection: $\left(\frac{9}{5}, \frac{4}{5}\right)$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Linear simultaneous equations](./03-equations-and-inequalities.md)
 
@@ -352,8 +324,6 @@ Intersection: $\left(\frac{9}{5}, \frac{4}{5}\right)$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Gradient of $AB$: $\frac{4 - 2}{5 - 1} = \frac{1}{2}$.
 
 Gradient of $BC$: $\frac{8 - 4}{3 - 5} = \frac{4}{-2} = -2$.
@@ -361,8 +331,6 @@ Gradient of $BC$: $\frac{8 - 4}{3 - 5} = \frac{4}{-2} = -2$.
 Product: $\frac{1}{2} \times (-2) = -1$.
 
 Since $m_{AB} \cdot m_{BC} = -1$, $AB \perp BC$, so $\angle B = 90°$. $\blacksquare$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Parallel and perpendicular lines](#23-parallel-and-perpendicular-lines)
 
@@ -372,8 +340,6 @@ Since $m_{AB} \cdot m_{BC} = -1$, $AB \perp BC$, so $\angle B = 90°$. $\blacksq
 
 <details>
 <summary>Solution</summary>
-<p>
-
 The centre is $(2, -1)$. The gradient of the radius from $(2, -1)$ to $(4, 3)$ is:
 
 $$m_{\text{radius}} = \frac{3 - (-1)}{4 - 2} = \frac{4}{2} = 2$$
@@ -381,8 +347,6 @@ $$m_{\text{radius}} = \frac{3 - (-1)}{4 - 2} = \frac{4}{2} = 2$$
 The tangent is perpendicular: $m_{\text{tangent}} = -\frac{1}{2}$.
 
 $$y - 3 = -\frac{1}{2}(x - 4) \implies 2y - 6 = -x + 4 \implies x + 2y - 10 = 0$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Equation of a tangent](#42-equation-of-a-tangent-to-a-circle)
 
@@ -392,15 +356,11 @@ $$y - 3 = -\frac{1}{2}(x - 4) \implies 2y - 6 = -x + 4 \implies x + 2y - 10 = 0$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 The perpendicular distance from $(x_0, y_0)$ to $ax + by + c = 0$ is:
 
 $$d = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}$$
 
 $$d = \frac{|2(3) - 1(1) + 4|}{\sqrt{4 + 1}} = \frac{|6 - 1 + 4|}{\sqrt{5}} = \frac{9}{\sqrt{5}} = \frac{9\sqrt{5}}{5}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Distance formula](#1-the-coordinate-plane)
 
@@ -410,8 +370,6 @@ $$d = \frac{|2(3) - 1(1) + 4|}{\sqrt{4 + 1}} = \frac{|6 - 1 + 4|}{\sqrt{5}} = \f
 
 <details>
 <summary>Solution</summary>
-<p>
-
 When $x = 1$: $1 + y^2 - 4 + 6y + 4 = 0 \implies y^2 + 6y + 1 = 0$.
 
 $$y = \frac{-6 \pm \sqrt{36 - 4}}{2} = \frac{-6 \pm \sqrt{32}}{2} = -3 \pm 2\sqrt{2}$$
@@ -427,8 +385,6 @@ $$y + 3 - 2\sqrt{2} = \frac{\sqrt{2}}{4}(x - 1)$$
 $$4y + 12 - 8\sqrt{2} = \sqrt{2}\,x - \sqrt{2}$$
 
 $$\sqrt{2}\,x - 4y - 12 - 7\sqrt{2} = 0$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Equation of a tangent](#42-equation-of-a-tangent-to-a-circle)
 
@@ -438,8 +394,6 @@ $$\sqrt{2}\,x - 4y - 12 - 7\sqrt{2} = 0$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 The centres are $O_1(0, 0)$ and $O_2(5, 0)$ with radii $r_1 = 3$ and $r_2 = 2$.
 
 Distance between centres: $d = 5$.
@@ -455,8 +409,6 @@ So $PQ$ is the vertical line $x = 3$. The $y$-coordinates satisfy $9 + y^2 = 9 \
 Wait, $x = 3$ in $C_1$: $9 + y^2 = 9$, so $y = 0$. The circles intersect at a single point $(3, 0)$ — they are tangent to each other.
 
 So $PQ = 0$; the circles touch at exactly one point.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Intersection of line and circle](#4-intersection-of-a-line-and-a-circle)
 
@@ -466,8 +418,6 @@ So $PQ = 0$; the circles touch at exactly one point.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Midpoint: $M = \left(\frac{1 + 5}{2}, \frac{7 + (-1)}{2}\right) = (3, 3)$.
 
 Gradient of $AB$: $\frac{-1 - 7}{5 - 1} = \frac{-8}{4} = -2$.
@@ -475,7 +425,5 @@ Gradient of $AB$: $\frac{-1 - 7}{5 - 1} = \frac{-8}{4} = -2$.
 Perpendicular gradient: $\frac{1}{2}$.
 
 $$y - 3 = \frac{1}{2}(x - 3) \implies 2y - 6 = x - 3 \implies x - 2y + 3 = 0$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Perpendicular lines](#23-parallel-and-perpendicular-lines)

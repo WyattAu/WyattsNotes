@@ -18,8 +18,10 @@ slug: integration
 | OCR (A)    | Paper 1, 2 | Includes trapezium rule                                    |
 | CIE (9709) | P1, P2, P3 | Basic in P1; by parts/substitution in P2/P3; further in P3 |
 
-:::info The formula booklet provides standard integrals. You must know how to apply integration
-techniques and when to use each method. :::
+:::info
+The formula booklet provides standard integrals. You must know how to apply integration
+techniques and when to use each method.
+:::
 
 ---
 
@@ -70,9 +72,11 @@ $$F(x) = G(x) + C \implies F(b) - F(a) = G(b) - G(a) = \int_a^b f(t)\,dt - 0$$
 
 Hence $\displaystyle\int_a^b f(x)\,dx = F(b) - F(a)$. $\blacksquare$
 
-:::info The Fundamental Theorem of Calculus is one of the most important results in all of
+:::info
+The Fundamental Theorem of Calculus is one of the most important results in all of
 mathematics. It connects the two seemingly unrelated operations of differentiation (finding rates of
-change) and integration (finding areas). :::
+change) and integration (finding areas).
+:::
 
 ---
 
@@ -131,9 +135,11 @@ If $f(x)$ changes sign on $[a,b]$, we must split the integral at each root:
 
 $$A = \int_a^b |f(x)|\,dx$$
 
-:::warning $\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
+:::warning
+$\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
 actual geometric area, take the absolute value and integrate separately over regions where $f$ is
-positive and negative. :::
+positive and negative.
+:::
 
 ### 4.3 Area between two curves
 
@@ -173,8 +179,10 @@ Let $u = x^2 + 1$, $du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
-:::tip When choosing a substitution, look for a function and its derivative. If you see
-$\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$. :::
+:::tip
+When choosing a substitution, look for a function and its derivative. If you see
+$\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$.
+:::
 
 ### 5.3 Definite integrals with substitution
 
@@ -208,8 +216,10 @@ i.e., $\displaystyle\int u\,dv = uv - \int v\,du$. $\blacksquare$
 Use the mnemonic **LIATE** (Logarithmic, Inverse trig, Algebraic, Trig, Exponential). Choose $u$
 from the leftmost category that appears.
 
-:::warning A common mistake is choosing the wrong assignment. If the integral gets more complicated
-after applying the formula, swap $u$ and $dv$. :::
+:::warning
+A common mistake is choosing the wrong assignment. If the integral gets more complicated
+after applying the formula, swap $u$ and $dv$.
+:::
 
 **Example.** Find $\displaystyle\int x e^x\,dx$.
 
@@ -275,8 +285,10 @@ $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-
 The error also depends on how curved the function is (via $f''$). For a straight line ($f'' = 0$),
 the trapezium rule is exact.
 
-:::tip In exams, more strips means better accuracy. The trapezium rule always underestimates for
-concave-down functions and overestimates for concave-up functions. :::
+:::tip
+In exams, more strips means better accuracy. The trapezium rule always underestimates for
+concave-down functions and overestimates for concave-up functions.
+:::
 
 ---
 

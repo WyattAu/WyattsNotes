@@ -11,7 +11,9 @@ slug: operating-systems
 
 ## 1. What is an Operating System?
 
-:::info Board-specific AQA Paper 1 | Edexcel P1 | OCR (A) Paper 1 | CIE Paper 1 :::
+:::info
+Board-specific AQA Paper 1 | Edexcel P1 | OCR (A) Paper 1 | CIE Paper 1
+:::
 
 ### Definition
 
@@ -68,9 +70,11 @@ application.
 | **Desktop**     | General-purpose, multi-user with GUI                               | Windows, macOS, Linux   |
 | **Mobile**      | Optimised for touch, power efficiency, and connectivity            | Android, iOS            |
 
-:::info Board-specific **AQA** emphasises batch, real-time, and distributed systems. **Edexcel** and
+:::info
+Board-specific **AQA** emphasises batch, real-time, and distributed systems. **Edexcel** and
 **OCR (A)** focus on batch, real-time, and desktop/mobile. **CIE** covers real-time and distributed
-systems in particular depth. :::
+systems in particular depth.
+:::
 
 ---
 
@@ -243,9 +247,11 @@ $$\text{Physical address} = \text{SegmentTable}[\text{segment}].\text{base} + \t
 
 If offset $\ge$ limit, a segmentation fault is raised.
 
-:::info Board-specific **AQA** and **OCR (A)** require understanding of both paging and
+:::info
+Board-specific **AQA** and **OCR (A)** require understanding of both paging and
 segmentation. **Edexcel** focuses primarily on paging. **CIE** covers paging with address
-translation in detail. :::
+translation in detail.
+:::
 
 ### TLB (Translation Lookaside Buffer)
 
@@ -412,8 +418,10 @@ The OS must manage updates to itself and installed software. Key concerns:
 - **Version compatibility** ensures updates do not break existing software
 - **Rollback** mechanisms allow reverting to a previous version if an update causes problems
 
-:::info Board-specific **AQA** and **Edexcel** specifically mention software updates and patch
-management. **OCR (A)** and **CIE** may cover this under broader system security topics. :::
+:::info
+Board-specific **AQA** and **Edexcel** specifically mention software updates and patch
+management. **OCR (A)** and **CIE** may cover this under broader system security topics.
+:::
 
 ### Malware Protection
 

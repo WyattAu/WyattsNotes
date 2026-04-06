@@ -47,11 +47,9 @@ Common angle equivalences:
 
 <details>
 <summary>Examples</summary>
-<p>
 - Convert $150^\circ$ to radians: $150 \times \frac{\pi}{180} = \frac{5\pi}{6}$ rad
 - Convert $\frac{7\pi}{4}$ rad to degrees: $\frac{7\pi}{4} \times \frac{180}{\pi} = 315^\circ$
 - Convert $1.2$ rad to degrees: $1.2 \times \frac{180}{\pi} \approx 68.75^\circ$
-</p>
 </details>
 
 ### Arc Length
@@ -88,11 +86,9 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
 - A circle of radius $5$ cm has a sector with angle $\frac{3\pi}{4}$. Arc length $= 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78$ cm. Area $= \frac{1}{2}(25)\left(\frac{3\pi}{4}\right) = \frac{75\pi}{8} \approx 29.45$ cm$^2$.
 - Find the radius of a circle given that a sector of angle $2.5$ rad has area $20$ cm$^2$: $\frac{1}{2}r^2(2.5) = 20 \implies r^2 = 16 \implies r = 4$ cm.
 - A chord of length $6$ cm subtends an angle of $\frac{\pi}{3}$ at the centre. Find the area of the segment: $r = \frac{3}{\sin(\pi/6)} = 6$ cm. Area $= \frac{1}{2}(36)\left(\frac{\pi}{3} - \sin\frac{\pi}{3}\right) = 18\left(\frac{\pi}{3} - \frac{\sqrt{3}}{2}\right) = 6\pi - 9\sqrt{3} \approx 3.35$ cm$^2$.
-</p>
 </details>
 
 ## Trigonometric Ratios
@@ -131,11 +127,9 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
 - In a right-angled triangle, if the hypotenuse is $13$ and one leg is $5$, then $\sin\theta = \frac{5}{13}$, $\cos\theta = \frac{12}{13}$, $\tan\theta = \frac{5}{12}$.
 - Given $\tan\theta = 3$ and $\theta$ is acute: construct a triangle with opposite $= 3$, adjacent $= 1$, hypotenuse $= \sqrt{10}$. Then $\sin\theta = \frac{3}{\sqrt{10}}$ and $\cos\theta = \frac{1}{\sqrt{10}}$.
 - If $\sec\theta = \frac{5}{3}$ and $\theta$ is in the first quadrant, then $\cos\theta = \frac{3}{5}$, $\sin\theta = \frac{4}{5}$, and $\tan\theta = \frac{4}{3}$.
-</p>
 </details>
 
 ## Trigonometric Identities
@@ -195,11 +189,9 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
 - Simplify $\frac{\sin\theta}{\tan\theta}$: Since $\tan\theta = \frac{\sin\theta}{\cos\theta}$, we have $\frac{\sin\theta}{\sin\theta / \cos\theta} = \cos\theta$.
 - Given $\sin\theta = \frac{3}{5}$ and $\theta$ is in the second quadrant, find $\cos\theta$ and $\tan\theta$: $\cos\theta = -\sqrt{1 - \frac{9}{25}} = -\frac{4}{5}$, $\tan\theta = \frac{3/5}{-4/5} = -\frac{3}{4}$.
 - Prove $\frac{1}{1 + \sin\theta} + \frac{1}{1 - \sin\theta} = 2\sec^2\theta$: LHS $= \frac{(1 - \sin\theta) + (1 + \sin\theta)}{(1 + \sin\theta)(1 - \sin\theta)} = \frac{2}{\cos^2\theta} = 2\sec^2\theta$.
-</p>
 </details>
 
 ## Exact Values
@@ -217,12 +209,10 @@ isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 
 <details>
 <summary>Examples</summary>
-<p>
 - Evaluate $2\sin 30^\circ \cos 60^\circ = 2 \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{2}$
 - Evaluate $\sin^2 45^\circ + \cos^2 45^\circ = \frac{1}{2} + \frac{1}{2} = 1$ (confirms the Pythagorean identity)
 - Evaluate $\frac{\tan 60^\circ}{\sin 30^\circ} = \frac{\sqrt{3}}{1/2} = 2\sqrt{3}$
 - Simplify $\sin\frac{\pi}{3}\cos\frac{\pi}{6} + \cos\frac{\pi}{3}\sin\frac{\pi}{6} = \frac{\sqrt{3}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{1}{2} \cdot \frac{1}{2} = \frac{3}{4} + \frac{1}{4} = 1$
-</p>
 </details>
 
 ## Graphs of Trigonometric Functions
@@ -289,12 +279,10 @@ $$
 
 <details>
 <summary>Examples</summary>
-<p>
 - For $y = 3\sin(2x)$: amplitude $= 3$, period $= \frac{2\pi}{2} = \pi$, range $= [-3, 3]$.
 - For $y = -2\cos\left(x - \frac{\pi}{3}\right) + 1$: amplitude $= 2$, period $= 2\pi$, phase shift $= \frac{\pi}{3}$ to the right, vertical shift $= 1$ up, range $= [-1, 3]$.
 - For $y = \tan\left(\frac{x}{2}\right)$: period $= \frac{\pi}{1/2} = 2\pi$, asymptotes at $x = \pi + 2n\pi$.
 - State the maximum and minimum of $y = 4\sin x - 1$: maximum $= 4(1) - 1 = 3$, minimum $= 4(-1) - 1 = -5$.
-</p>
 </details>
 
 ## Solving Trigonometric Equations
@@ -355,12 +343,10 @@ Many trigonometric equations require algebraic manipulation before they can be s
 
 <details>
 <summary>Examples</summary>
-<p>
 - Solve $\sin\theta = \frac{1}{2}$ for $0^\circ \leq \theta < 360^\circ$: $\alpha = 30^\circ$. Solutions: $\theta = 30^\circ$ or $\theta = 180^\circ - 30^\circ = 150^\circ$.
 - Solve $2\cos^2\theta - \cos\theta - 1 = 0$ for $0 \leq \theta < 2\pi$: Let $u = \cos\theta$. Then $2u^2 - u - 1 = 0 \implies (2u + 1)(u - 1) = 0$. So $\cos\theta = -\frac{1}{2}$ or $\cos\theta = 1$. Solutions: $\theta = \frac{2\pi}{3}$, $\theta = \frac{4\pi}{3}$, $\theta = 0$.
 - Solve $\sin 2\theta = \cos\theta$ for $0^\circ \leq \theta < 360^\circ$: $2\sin\theta\cos\theta = \cos\theta \implies \cos\theta(2\sin\theta - 1) = 0$. Either $\cos\theta = 0 \implies \theta = 90^\circ, 270^\circ$, or $\sin\theta = \frac{1}{2} \implies \theta = 30^\circ, 150^\circ$. Solutions: $30^\circ, 90^\circ, 150^\circ, 270^\circ$.
 - Solve $\tan^2\theta = 3$ for $0 \leq \theta < 2\pi$: $\tan\theta = \pm\sqrt{3}$. $\tan\theta = \sqrt{3} \implies \theta = \frac{\pi}{3}, \frac{4\pi}{3}$. $\tan\theta = -\sqrt{3} \implies \theta = \frac{2\pi}{3}, \frac{5\pi}{3}$.
-</p>
 </details>
 
 ## Applications
@@ -437,68 +423,56 @@ This connects to the vector formulation described in the
 
 <details>
 <summary>Examples</summary>
-<p>
 - In $\triangle ABC$, $a = 8$, $b = 6$, $C = 60^\circ$. Find $c$: $c^2 = 64 + 36 - 2(6)(8)\cos 60^\circ = 100 - 48 = 52$, so $c = 2\sqrt{13}$.
 - In $\triangle ABC$, $a = 7$, $A = 45^\circ$, $B = 60^\circ$. Find $b$: $\frac{b}{\sin 60^\circ} = \frac{7}{\sin 45^\circ} \implies b = \frac{7 \cdot \frac{\sqrt{3}}{2}}{\frac{\sqrt{2}}{2}} = \frac{7\sqrt{3}}{\sqrt{2}} = \frac{7\sqrt{6}}{2}$.
 - A ship sails $10$ km on a bearing of $030^\circ$, then $8$ km on a bearing of $120^\circ$. Find the distance from the starting point: The angle between the two legs is $120^\circ - 30^\circ = 90^\circ$. Distance $= \sqrt{10^2 + 8^2} = 2\sqrt{41} \approx 12.8$ km.
 - From the top of a $50$ m cliff, the angle of depression of a boat is $30^\circ$. Find the horizontal distance from the boat to the base of the cliff: $\tan 30^\circ = \frac{50}{d} \implies d = \frac{50}{\tan 30^\circ} = 50\sqrt{3} \approx 86.6$ m.
 - A vertical pole $PQ$ stands on horizontal ground. Point $A$ is on the ground, $20$ m from the base $Q$. The angle of elevation of $P$ from $A$ is $35^\circ$. Find the height of the pole: $PQ = 20\tan 35^\circ \approx 14.0$ m.
 - In a cuboid $ABCDEFGH$ with $AB = 4$, $BC = 3$, $CG = 5$, find the angle between the diagonal $AG$ and the base $ABCD$: $AG = \sqrt{16 + 9 + 25} = \sqrt{50} = 5\sqrt{2}$. The projection of $AG$ onto the base is $AC = \sqrt{16 + 9} = 5$. The angle between $AG$ and the base $= \arccos\frac{AC}{AG} = \arccos\frac{5}{5\sqrt{2}} = \arccos\frac{1}{\sqrt{2}} = 45^\circ$.
-</p>
 </details>
 
 ---
 
 <details>
 <summary>Wrap-up Questions</summary>
-<p>
-
 1. **Question:** Convert $210^\circ$ to radians and find the exact values of $\sin 210^\circ$,
    $\cos 210^\circ$, and $\tan 210^\circ$.
    <details>
    <summary>Answer</summary>
-   <p>
    - $210^\circ = 210 \times \frac{\pi}{180} = \frac{7\pi}{6}$ rad.
    - Reference angle: $210^\circ - 180^\circ = 30^\circ$. Since $210^\circ$ is in the third quadrant, both sine and cosine are negative.
    - $\sin 210^\circ = -\sin 30^\circ = -\frac{1}{2}$
    - $\cos 210^\circ = -\cos 30^\circ = -\frac{\sqrt{3}}{2}$
    - $\tan 210^\circ = \frac{\sin 210^\circ}{\cos 210^\circ} = \frac{-1/2}{-\sqrt{3}/2} = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$
-   </p>
    </details>
 
 2. **Question:** A sector of a circle of radius $8$ cm has an area of $32\pi$ cm$^2$. Find the arc
    length and the perimeter of the sector.
    <details>
    <summary>Answer</summary>
-   <p>
    - Area $= \frac{1}{2}r^2\theta$: $\frac{1}{2}(64)\theta = 32\pi \implies 32\theta = 32\pi \implies \theta = \pi$ rad.
    - Arc length $= r\theta = 8\pi$ cm.
    - Perimeter of sector $= 2r + l = 16 + 8\pi \approx 41.1$ cm.
-   </p>
    </details>
 
 3. **Question:** Solve $3\sin^2\theta - 2\sin\theta - 1 = 0$ for $0^\circ \leq \theta < 360^\circ$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Let $u = \sin\theta$: $3u^2 - 2u - 1 = 0$.
    - $(3u + 1)(u - 1) = 0 \implies u = -\frac{1}{3}$ or $u = 1$.
    - Case 1: $\sin\theta = 1 \implies \theta = 90^\circ$.
    - Case 2: $\sin\theta = -\frac{1}{3}$. Principal value $\alpha = \arcsin(-\frac{1}{3}) \approx -19.47^\circ$.
      - $\theta = 360^\circ + (-19.47^\circ) = 340.53^\circ$ or $\theta = 180^\circ - (-19.47^\circ) = 199.47^\circ$.
    - Solutions: $\theta \approx 90^\circ, 199.5^\circ, 340.5^\circ$.
-   </p>
    </details>
 
 4. **Question:** In $\triangle ABC$, $a = 10$, $b = 7$, $c = 8$. Find the largest angle of the
    triangle.
    <details>
    <summary>Answer</summary>
-   <p>
    - The largest angle is opposite the longest side, so find $\angle A$ (opposite $a = 10$).
    - By the cosine rule: $\cos A = \frac{b^2 + c^2 - a^2}{2bc} = \frac{49 + 64 - 100}{2(7)(8)} = \frac{13}{112}$.
    - $A = \arccos\left(\frac{13}{112}\right) \approx 83.3^\circ$.
-   </p>
    </details>
 
 5. **Question:** From a point $A$ on the ground, the angle of elevation of the top $T$ of a vertical
@@ -506,7 +480,6 @@ This connects to the vector formulation described in the
    elevation is $55^\circ$. Find the height of the tower.
    <details>
    <summary>Answer</summary>
-   <p>
    - Let the height be $h$ and let $B$ be $x$ m from the base. Then $A$ is $(x + 30)$ m from the base.
    - $\tan 55^\circ = \frac{h}{x} \implies h = x\tan 55^\circ$.
    - $\tan 40^\circ = \frac{h}{x + 30} \implies h = (x + 30)\tan 40^\circ$.
@@ -514,7 +487,6 @@ This connects to the vector formulation described in the
    - $x(\tan 55^\circ - \tan 40^\circ) = 30\tan 40^\circ$.
    - $x = \frac{30\tan 40^\circ}{\tan 55^\circ - \tan 40^\circ} = \frac{30(0.8391)}{1.4281 - 0.8391} = \frac{25.17}{0.589} \approx 42.74$ m.
    - $h = 42.74 \times \tan 55^\circ \approx 42.74 \times 1.4281 \approx 61.1$ m.
-   </p>
    </details>
 
 6. **Question:** A ship $S$ is observed from two lighthouses $A$ and $B$ which are $5$ km apart. The
@@ -522,26 +494,22 @@ This connects to the vector formulation described in the
    distance of $S$ from $A$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Draw the diagram. The bearing of $S$ from $A$ is $050^\circ$, so $\angle N_AAS = 50^\circ$. The bearing of $S$ from $B$ is $320^\circ$, so $\angle N_BBS = 360^\circ - 320^\circ = 40^\circ$ measured from north on the west side.
    - The angle $\angle ASB$ can be found by considering the north lines. The interior angle at $S$: $\angle ASB = 50^\circ + 40^\circ = 90^\circ$ (since the two north lines are parallel, the angle between $SA$ and $SB$ equals the sum of the bearing angles).
    - In $\triangle ABS$: $\angle ABS = 180^\circ - 50^\circ - 90^\circ = 40^\circ$.
    - Using the sine rule: $\frac{AS}{\sin 40^\circ} = \frac{5}{\sin 90^\circ} = 5$.
    - $AS = 5\sin 40^\circ \approx 3.21$ km.
-   </p>
    </details>
 
 7. **Question:** Prove the identity
    $\frac{\sin\theta}{1 - \cos\theta} = \frac{1 + \cos\theta}{\sin\theta}$ for $\sin\theta \neq 0$.
    <details>
    <summary>Answer</summary>
-   <p>
    - Starting from the LHS, multiply numerator and denominator by $(1 + \cos\theta)$:
    - $\frac{\sin\theta}{1 - \cos\theta} \cdot \frac{1 + \cos\theta}{1 + \cos\theta} = \frac{\sin\theta(1 + \cos\theta)}{1 - \cos^2\theta}$.
    - Since $1 - \cos^2\theta = \sin^2\theta$ (Pythagorean identity):
    - $= \frac{\sin\theta(1 + \cos\theta)}{\sin^2\theta} = \frac{1 + \cos\theta}{\sin\theta}$.
    - This equals the RHS, completing the proof.
-   </p>
    </details>
 
 8. **Question:** A pyramid has a square base $ABCD$ of side $6$ cm and vertex $V$. The slant edges
@@ -549,14 +517,12 @@ This connects to the vector formulation described in the
    the slant edge $VA$ and the base.
    <details>
    <summary>Answer</summary>
-   <p>
    - (a) The centre $O$ of the square base is the foot of the perpendicular from $V$. The diagonal $AC = 6\sqrt{2}$, so $AO = 3\sqrt{2}$.
      - In $\triangle VOA$: $VO^2 = VA^2 - AO^2 = (5\sqrt{2})^2 - (3\sqrt{2})^2 = 50 - 18 = 32$.
      - Height $VO = \sqrt{32} = 4\sqrt{2}$ cm.
    - (b) The angle between $VA$ and the base is $\angle VAO$.
      - $\cos\angle VAO = \frac{AO}{VA} = \frac{3\sqrt{2}}{5\sqrt{2}} = \frac{3}{5}$.
      - $\angle VAO = \arccos\frac{3}{5} \approx 53.1^\circ$.
-   </p>
    </details>
 
 9. **Question:** Sketch the graph of $y = 2\sin\left(x - \frac{\pi}{4}\right) + 1$ for
@@ -564,7 +530,6 @@ This connects to the vector formulation described in the
    $x$-intercepts in this interval.
    <details>
    <summary>Answer</summary>
-   <p>
    - Amplitude $= 2$, period $= 2\pi$, phase shift $= \frac{\pi}{4}$ to the right, vertical shift $= 1$.
    - Maximum $= 2(1) + 1 = 3$, minimum $= 2(-1) + 1 = -1$.
    - For $x$-intercepts: $2\sin\left(x - \frac{\pi}{4}\right) + 1 = 0 \implies \sin\left(x - \frac{\pi}{4}\right) = -\frac{1}{2}$.
@@ -572,7 +537,6 @@ This connects to the vector formulation described in the
    - $x = \frac{7\pi}{6} + \frac{\pi}{4} = \frac{14\pi + 3\pi}{12} = \frac{17\pi}{12}$.
    - $x = \frac{11\pi}{6} + \frac{\pi}{4} = \frac{22\pi + 3\pi}{12} = \frac{25\pi}{12}$.
    - Both are in $[0, 2\pi]$. $x$-intercepts: $\left(\frac{17\pi}{12}, 0\right)$ and $\left(\frac{25\pi}{12}, 0\right)$.
-   </p>
    </details>
 
 10. **Question:** Two observers $A$ and $B$ are on opposite sides of a vertical tower. $A$ and $B$
@@ -580,20 +544,17 @@ This connects to the vector formulation described in the
     $30^\circ$ and from $B$ is $45^\circ$. Find the height of the tower.
     <details>
     <summary>Answer</summary>
-    <p>
     - Let the tower be $PQ$ of height $h$, with base $Q$ between $A$ and $B$.
     - Let $AQ = x$ m, then $BQ = (100 - x)$ m.
     - $\tan 30^\circ = \frac{h}{x} \implies x = \frac{h}{\tan 30^\circ} = h\sqrt{3}$.
     - $\tan 45^\circ = \frac{h}{100 - x} \implies 100 - x = h$.
     - Substituting: $100 - h\sqrt{3} = h \implies 100 = h(1 + \sqrt{3})$.
     - $h = \frac{100}{1 + \sqrt{3}} = \frac{100(1 - \sqrt{3})}{(1 + \sqrt{3})(1 - \sqrt{3})} = \frac{100(1 - \sqrt{3})}{-2} = 50(\sqrt{3} - 1) \approx 36.6$ m.
-    </p>
     </details>
 
 11. **Question:** Solve $\cos 2\theta = \sin\theta$ for $0 \leq \theta < 2\pi$.
     <details>
     <summary>Answer</summary>
-    <p>
     - Using $\cos 2\theta = 1 - 2\sin^2\theta$: $1 - 2\sin^2\theta = \sin\theta$.
     - $2\sin^2\theta + \sin\theta - 1 = 0$.
     - Let $u = \sin\theta$: $2u^2 + u - 1 = 0 \implies (2u - 1)(u + 1) = 0$.
@@ -601,14 +562,12 @@ This connects to the vector formulation described in the
     - $\sin\theta = \frac{1}{2} \implies \theta = \frac{\pi}{6}, \frac{5\pi}{6}$.
     - $\sin\theta = -1 \implies \theta = \frac{3\pi}{2}$.
     - Solutions: $\theta = \frac{\pi}{6}, \frac{3\pi}{2}, \frac{5\pi}{6}$.
-    </p>
     </details>
 
 12. **Question:** In $\triangle ABC$, $a = 5$, $b = 7$, $A = 40^\circ$. Determine whether two
     distinct triangles exist, and find all possible values of $B$.
     <details>
     <summary>Answer</summary>
-    <p>
     - By the sine rule: $\frac{\sin B}{7} = \frac{\sin 40^\circ}{5}$.
     - $\sin B = \frac{7\sin 40^\circ}{5} = \frac{7(0.6428)}{5} = 0.8999$.
     - Since $\sin B < 1$ and $b > a$ (i.e., $7 > 5$), there is exactly one solution (no ambiguous case when the longer side is given opposite the known angle).
@@ -616,8 +575,5 @@ This connects to the vector formulation described in the
     - $C = 180^\circ - 40^\circ - 64.2^\circ = 75.8^\circ$.
     - $c = \frac{5\sin 75.8^\circ}{\sin 40^\circ} \approx \frac{5(0.9692)}{0.6428} \approx 7.54$.
     - There is only one triangle, with $B \approx 64.2^\circ$, $C \approx 75.8^\circ$, $c \approx 7.54$.
-    </p>
     </details>
-
-</p>
 </details>

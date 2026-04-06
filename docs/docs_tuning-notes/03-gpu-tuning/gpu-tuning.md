@@ -225,10 +225,12 @@ increases memory bandwidth, which benefits workloads that are memory-bandwidth b
 | RTX 4070    | 10500 MHz (21 Gbps) | +200 to +500 MHz         | 2–5%               |
 | RX 7900 XTX | 10000 MHz (20 Gbps) | +500 to +1000 MHz        | 5–10%              |
 
-:::warning Memory overclocking can cause data corruption. If your GPU is used for compute workloads
+:::warning
+Memory overclocking can cause data corruption. If your GPU is used for compute workloads
 (machine learning, rendering, scientific computing), memory instability can produce silently
 incorrect results. Thoroughly test with error-checking workloads (e.g., CUDA memtest) before relying
-on an overclocked GPU for production compute. :::
+on an overclocked GPU for production compute.
+:::
 
 ---
 

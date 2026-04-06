@@ -11,7 +11,9 @@ slug: electric-fields
 
 ## Electric Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 ## 1. Coulomb's Law
 
@@ -73,9 +75,11 @@ screened by conductors (Faraday cages), whereas gravitational fields cannot. Thi
 are two types of electric charge that can rearrange themselves to cancel external fields, but there
 is only one type of mass.
 
-:::info Board Coverage AQA: Comparison table is an expected synoptic link with gravitational fields
+:::info
+Board Coverage AQA: Comparison table is an expected synoptic link with gravitational fields
 (Paper 2). Edexcel: Explicit comparison required in CP3. OCR (A): Potential energy comparison is
-commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4. :::
+commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4.
+:::
 
 ## 2. Electric Field Strength
 
@@ -146,10 +150,12 @@ $E_{\text{total}} = \sigma/\varepsilon_0$. Outside the plates, the fields cancel
 $E_{\text{total}} = 0$. This is the ideal parallel-plate capacitor field, and it justifies the
 formula $E = V/d$ for the uniform field region.
 
-:::info Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
+:::info
+Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
 parallel plates is given. Edexcel: Only the uniform field result $E = V/d$ is required. OCR (A):
 Gauss's law may appear as extension material in Module 6. CIE: The infinite plane result is not in
-the syllabus but is useful for understanding parallel plates. :::
+the syllabus but is useful for understanding parallel plates.
+:::
 
 ## 3. Electric Potential
 
@@ -218,10 +224,12 @@ as the area under the force--distance curve ($W = \int F\,dr$), the energy in a 
 area under the voltage--charge curve. Both represent stored field energy, and both can be recovered
 as useful work when the system returns to its equilibrium state.
 
-:::info Board Coverage AQA: Energy stored in capacitors is required (6.4.3). Edexcel: Required in
+:::info
+Board Coverage AQA: Energy stored in capacitors is required (6.4.3). Edexcel: Required in
 Topic 11 (capacitor energy and charging/discharging graphs). OCR (A): Required in 6.3.2, including
 deriving energy from the area under a $V$--$Q$ graph. CIE: Required in P3 (Chapter 22), including
-the three equivalent forms. :::
+the three equivalent forms.
+:::
 
 ## 4. Relationship Between $E$ and $V$: $E = -dV/dr$
 
@@ -278,8 +286,6 @@ $$\tan\theta = \frac{v_y}{v} = \frac{qEL}{mv^2}$$
 
 <details>
 <summary>Example: Electron Deflection</summary>
-<p>
-
 An electron enters a uniform electric field of 5000 V m$^{-1}$ between plates of length 5.0 cm with
 speed $3.0 \times 10^7$ m s$^{-1}$. Calculate the vertical deflection.
 
@@ -291,8 +297,6 @@ $t = L/v = 0.050/3.0 \times 10^7 = 1.67 \times 10^{-9}$ s.
 
 $y = \frac{1}{2}at^2 = \frac{1}{2} \times 8.78 \times 10^{14} \times (1.67 \times 10^{-9})^2 = 1.22 \times 10^{-3}$
 m $= 1.22$ mm.
-
-</p>
 </details>
 
 ## 6. Real-World Applications of Electric Fields
@@ -322,10 +326,12 @@ acquires a high potential. Their hair stands on end because each strand acquires
 charge, and strands repel each other via Coulomb's law — a vivid demonstration of electrostatic
 repulsion.
 
-:::info Board Coverage AQA: Van de Graaff generators are a specified practical context (required
+:::info
+Board Coverage AQA: Van de Graaff generators are a specified practical context (required
 practical 10). Edexcel: Mentioned in CP3 and CP6 as an example of charge accumulation and high
 potential. OCR (A): Can appear in Paper 2 as a context question. CIE: Not explicitly named but the
-underlying physics (field of a sphere, potential, discharge) is examined in P4. :::
+underlying physics (field of a sphere, potential, discharge) is examined in P4.
+:::
 
 ### Inkjet Printers
 
@@ -370,17 +376,17 @@ The collection efficiency depends on the drift velocity of charged particles, wh
 both the charge acquired by the particle and the electric field strength. The Deutsch--Anderson
 equation relates collection efficiency $\eta$ to plate area, gas flow rate, and drift velocity.
 
-:::info Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
+:::info
+Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
 in Paper 2. Edexcel: Listed as an application in CP3. OCR (A): May appear as an unseen context
 question in Paper 2 requiring application of field and force principles. CIE: Industrial
-applications of electric fields are examinable in P4. :::
+applications of electric fields are examinable in P4.
+:::
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 Two point charges, $q_1 = +3.0\,\mu$C and $q_2 = -5.0\,\mu$C, are separated by 0.20 m. Calculate the
 electrostatic force between them.
 
@@ -389,14 +395,10 @@ $F = \frac{kq_1 q_2}{r^2} = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6} \ti
 N (attractive).
 
 <b>If you get this wrong, revise:</b> [Coulomb's Law](#1-coulombs-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 Calculate the electric field strength at a distance of 0.10 m from a point charge of $+8.0\,\mu$C.
 
 **Answer.**
@@ -404,14 +406,10 @@ $E = \frac{kQ}{r^2} = \frac{8.99 \times 10^9 \times 8.0 \times 10^{-6}}{0.01} = 
 N C$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 Calculate the electric potential at a distance of 5.0 cm from a $+2.0\,\mu$C point charge.
 
 **Answer.**
@@ -419,14 +417,10 @@ $V = \frac{kQ}{r} = \frac{8.99 \times 10^9 \times 2.0 \times 10^{-6}}{0.050} = \
 V $= 360$ kV.
 
 <b>If you get this wrong, revise:</b> [Electric Potential](#3-electric-potential)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 Starting from $E = -dV/dr$, derive the electric field of a point charge from its potential.
 
 **Answer.** $V = \frac{Q}{4\pi\varepsilon_0 r}$.
@@ -434,14 +428,10 @@ $E = -\frac{dV}{dr} = -\frac{Q}{4\pi\varepsilon_0} \cdot \frac{d}{dr}\left(\frac
 
 <b>If you get this wrong, revise:</b>
 [Relationship Between $E$ and $V$](#4-relationship-between-e-and-v-e--dvdr)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 Two parallel plates are separated by 2.0 cm with a p.d. of 500 V across them. Calculate the electric
 field strength and the force on a proton between the plates.
 
@@ -450,14 +440,10 @@ field strength and the force on a proton between the plates.
 $F = qE = 1.60 \times 10^{-19} \times 25000 = 4.0 \times 10^{-15}$ N.
 
 <b>If you get this wrong, revise:</b> [Uniform Electric Field](#uniform-electric-field)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 A proton is released from rest in a uniform electric field of $3.0 \times 10^4$ V m$^{-1}$.
 Calculate its acceleration and the kinetic energy gained after moving 5.0 cm.
 
@@ -469,14 +455,10 @@ $E_k = qV = qEd = 1.60 \times 10^{-19} \times 3.0 \times 10^4 \times 0.050 = 2.4
 
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 Calculate the electric potential energy of two charges, $q_1 = +4.0\,\mu$C and $q_2 = +6.0\,\mu$C,
 separated by 0.30 m.
 
@@ -485,14 +467,10 @@ $U = \frac{kq_1 q_2}{r} = \frac{8.99 \times 10^9 \times 4.0 \times 10^{-6} \time
 J.
 
 <b>If you get this wrong, revise:</b> [Electric Potential Energy](#electric-potential-energy)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 An electron with speed $2.0 \times 10^7$ m s$^{-1}$ enters a uniform electric field of 8000 V
 m$^{-1}$ perpendicular to its motion. The plates are 8.0 cm long. Calculate the deflection angle.
 
@@ -508,14 +486,10 @@ $\tan\theta = v_y/v = 5.62 \times 10^6 / 2.0 \times 10^7 = 0.281$. $\theta = 15.
 
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 Three equal charges of $+2.0\,\mu$C are placed at the corners of an equilateral triangle of side
 0.10 m. Calculate the net electric field at the centre of the triangle.
 
@@ -528,14 +502,10 @@ By symmetry, the fields from the three charges cancel out (they are 120° apart 
 magnitude). $E_{\text{net}} = 0$.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 A small charged sphere of mass 0.50 g is suspended by a thread in a uniform horizontal electric
 field of $5.0 \times 10^3$ V m$^{-1}$. The thread makes an angle of $15°$ with the vertical.
 Calculate the charge on the sphere.
@@ -547,14 +517,10 @@ $q = \frac{mg\tan 15°}{E} = \frac{0.50 \times 10^{-3} \times 9.81 \times 0.2679
 C $= 263$ nC.
 
 <b>If you get this wrong, revise:</b> [Electric Field Strength](#2-electric-field-strength)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 A Van de Graaff generator has a dome of radius 0.30 m. Calculate the electric field strength and the
 potential at the surface when the dome carries a charge of $1.0\,\mu$C. At what potential will spark
 discharge occur if the breakdown field of air is $3.0 \times 10^6$ V m$^{-1}$?
@@ -572,14 +538,10 @@ V $= 900$ kV.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge),
 [Electric Potential](#3-electric-potential), [Van de Graaff Generator](#van-de-graaff-generator)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 A $10$ nF capacitor is charged to $200$ V. Calculate the energy stored. The capacitor is then
 disconnected from the supply and the plate separation is doubled. Calculate the new energy stored
 and explain where the extra energy came from.
@@ -600,14 +562,10 @@ plates when pulling them apart. This mechanical work is stored as additional ele
 
 <b>If you get this wrong, revise:</b>
 [Energy Stored in a Charged Capacitor](#energy-stored-in-a-charged-capacitor)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 13</summary>
-<p>
-
 In an electrostatic precipitator, a dust particle of mass $1.0 \times 10^{-12}$ kg acquires a charge
 of $-50$ fC and enters a region with electric field $2.0 \times 10^5$ V m$^{-1}$ directed towards
 the collecting plate. If the particle must travel $0.50$ m to reach the plate, how long does it
@@ -624,14 +582,10 @@ $= 10$ ms.
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field),
 [Electrostatic Precipitator](#electrostatic-precipitator)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 14</summary>
-<p>
-
 Two charges, $q_A = +4.0\,\mu$C and $q_B = -2.0\,\mu$C, are placed on the x-axis at $x = 0$ and
 $x = 0.20$ m respectively. Find the point on the x-axis (outside the two charges) where the electric
 field is zero.
@@ -659,14 +613,10 @@ Taking the solution outside both charges: $x = \frac{0.80 + 0.566}{2} = 0.683$ m
 The zero-field point is at $x = 0.683$ m on the x-axis.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 15</summary>
-<p>
-
 Compare the gravitational and electrostatic forces between a proton and an electron in a hydrogen
 atom (separation $r = 5.29 \times 10^{-11}$ m). By what factor does the electrostatic force exceed
 the gravitational force?
@@ -686,8 +636,6 @@ becoming significant at macroscopic scales where charges cancel almost perfectly
 
 <b>If you get this wrong, revise:</b> [Coulomb's Law](#1-coulombs-law),
 [Comparison with Gravity](#comparison-with-gravity)
-
-</p>
 </details>
 
 ## Board-Specific Notes

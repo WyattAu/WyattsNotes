@@ -34,8 +34,6 @@ slug: functions
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the natural domain of $f(x) = \sqrt{x + 2} + \frac{1}{x - 1}$.
 
 We need: $x + 2 \geq 0$ (for the square root) AND $x - 1 \neq 0$ (for the denominator).
@@ -43,8 +41,6 @@ We need: $x + 2 \geq 0$ (for the square root) AND $x - 1 \neq 0$ (for the denomi
 So $x \geq -2$ and $x \neq 1$.
 
 Domain: $[-2, 1) \cup (1, \infty)$.
-
-</p>
 </details>
 
 ---
@@ -61,8 +57,6 @@ $$(g \circ f)(x) = g(f(x))$$
 
 <details>
 <summary>Example</summary>
-<p>
-
 Given $f(x) = 2x + 1$ and $g(x) = x^2$, find $f \circ g$ and $g \circ f$.
 
 $(f \circ g)(x) = f(g(x)) = f(x^2) = 2x^2 + 1$.
@@ -70,8 +64,6 @@ $(f \circ g)(x) = f(g(x)) = f(x^2) = 2x^2 + 1$.
 $(g \circ f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^2 = 4x^2 + 4x + 1$.
 
 Clearly $f \circ g \neq g \circ f$.
-
-</p>
 </details>
 
 :::warning
@@ -109,8 +101,6 @@ _Intuition._ An inverse function "undoes" the original function. For this to wor
 
 <details>
 <summary>Example</summary>
-<p>
-
 Find the inverse of $f(x) = \frac{2x + 3}{x - 1}$, $x \neq 1$.
 
 $$y = \frac{2x + 3}{x - 1}$$
@@ -128,8 +118,6 @@ $$x = \frac{y + 3}{y - 2}$$
 So $f^{-1}(x) = \frac{x + 3}{x - 2}$, with domain $x \neq 2$.
 
 The range of $f$ is all real numbers except $f(x) = 2$: $\frac{2x + 3}{x - 1} = 2 \implies 2x + 3 = 2x - 2 \implies 3 = -2$, impossible. So the range is $\mathbb{R} \setminus \{2\}$, which equals the domain of $f^{-1}$. ✓
-
-</p>
 </details>
 
 **Theorem.** The graph of $y = f^{-1}(x)$ is the reflection of $y = f(x)$ in the line $y = x$.
@@ -175,8 +163,6 @@ To solve $|f(x)| = g(x)$:
 
 <details>
 <summary>Example</summary>
-<p>
-
 Solve $|2x - 3| = x + 2$.
 
 Case 1: $2x - 3 \geq 0$, i.e., $x \geq \frac{3}{2}$.
@@ -188,8 +174,6 @@ Case 2: $2x - 3 < 0$, i.e., $x < \frac{3}{2}$.
 $-(2x - 3) = x + 2 \implies -2x + 3 = x + 2 \implies -3x = -1 \implies x = \frac{1}{3}$. Check: $\frac{1}{3} < \frac{3}{2}$ ✓
 
 Solutions: $x = \frac{1}{3}$ and $x = 5$.
-
-</p>
 </details>
 
 ---
@@ -248,8 +232,6 @@ Apply horizontal transformations first (inside the function), then vertical tran
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Domain: $x \neq 3$, i.e., $\mathbb{R} \setminus \{3\}$.
 
 Range: As $x \to 3^+$, $f(x) \to +\infty$; as $x \to 3^-$, $f(x) \to -\infty$. As $x \to \pm\infty$, $f(x) \to 2$. So $f(x) \neq 2$.
@@ -259,8 +241,6 @@ Range: $\mathbb{R} \setminus \{2\}$.
 Inverse: $y = \frac{1}{x - 3} + 2 \implies y - 2 = \frac{1}{x - 3} \implies x - 3 = \frac{1}{y - 2} \implies x = \frac{1}{y - 2} + 3$.
 
 $f^{-1}(x) = \frac{1}{x - 2} + 3$, domain $x \neq 2$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Inverse functions](#3-inverse-functions)
 
@@ -270,8 +250,6 @@ $f^{-1}(x) = \frac{1}{x - 2} + 3$, domain $x \neq 2$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Completing the square: $f(x) = (x - 2)^2 + 5$.
 
 For $x \geq 2$, $f$ is injective (strictly increasing).
@@ -283,8 +261,6 @@ $$y = (x - 2)^2 + 5 \implies (x - 2)^2 = y - 5 \implies x - 2 = \sqrt{y - 5}$$
 $$x = \sqrt{y - 5} + 2$$
 
 $f^{-1}(x) = \sqrt{x - 5} + 2$, domain $x \geq 5$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Inverse functions](#3-inverse-functions)
 
@@ -294,8 +270,6 @@ $f^{-1}(x) = \sqrt{x - 5} + 2$, domain $x \geq 5$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Case 1: $3x + 1 \geq 0$, i.e., $x \geq -\frac{1}{3}$.
 
 $3x + 1 = 2x + 5 \implies x = 4$. Check: $4 \geq -\frac{1}{3}$ ✓
@@ -307,8 +281,6 @@ $-(3x + 1) = 2x + 5 \implies -3x - 1 = 2x + 5 \implies -5x = 6 \implies x = -\fr
 Check: $-\frac{6}{5} < -\frac{1}{3}$ ✓
 
 Solutions: $x = -\frac{6}{5}$ and $x = 4$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Modulus equations](#41-solving-modulus-equations)
 
@@ -318,15 +290,11 @@ Solutions: $x = -\frac{6}{5}$ and $x = 4$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $(g \circ f)(x) = g(f(x)) = g(2x - 1) = (2x - 1)^2 + 3 = 4x^2 - 4x + 4$.
 
 $4x^2 - 4x + 4 = 12 \implies 4x^2 - 4x - 8 = 0 \implies x^2 - x - 2 = 0 \implies (x - 2)(x + 1) = 0$.
 
 $x = 2$ or $x = -1$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Composition](#2-composition-of-functions)
 
@@ -340,8 +308,6 @@ $x = 2$ or $x = -1$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 (a) $y = f(x + 2)$: shift left by 2. Points: $(-2, 1)$ and $(1, -2)$.
 
 (b) $y = -f(x)$: reflect in $x$-axis. Points: $(0, -1)$ and $(3, 2)$.
@@ -349,8 +315,6 @@ $x = 2$ or $x = -1$.
 (c) $y = f(2x)$: horizontal stretch factor $\frac{1}{2}$. Points: $(0, 1)$ and $\left(\frac{3}{2}, -2\right)$.
 
 (d) $y = 3f(x) - 1$: vertical stretch factor 3, then shift down 1. Points: $(0, 2)$ and $(3, -7)$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Transformations](#5-transformations-of-graphs)
 
@@ -360,8 +324,6 @@ $x = 2$ or $x = -1$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $f'(x) = 3x^2 - 3 = 3(x - 1)(x + 1)$.
 
 $f'(x) = 0$ at $x = \pm 1$. $f'(x) < 0$ for $-1 < x < 1$ (decreasing), and $f'(x) > 0$ for $x < -1$ or $x > 1$ (increasing).
@@ -369,8 +331,6 @@ $f'(x) = 0$ at $x = \pm 1$. $f'(x) < 0$ for $-1 < x < 1$ (decreasing), and $f'(x
 Since $f$ is decreasing on $(-1, 1)$ and increasing on $(-\infty, -1)$ and $(1, \infty)$, it is not injective on all of $\mathbb{R}$. For example, $f(-2) = -8 + 6 + 1 = -1$ and $f(0) = 1$ and $f(1) = -1$. So $f(-2) = f(1) = -1$ with $-2 \neq 1$.
 
 The largest interval containing $0$ on which $f$ is strictly monotonic (hence injective) is $[-1, 1]$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Injectivity](#3-inverse-functions) and [Differentiation](./10-differentiation.md)
 
@@ -380,8 +340,6 @@ The largest interval containing $0$ on which $f$ is strictly monotonic (hence in
 
 <details>
 <summary>Solution</summary>
-<p>
-
 Square both sides (both sides are non-negative):
 
 $$
@@ -396,8 +354,6 @@ $$
 $$(3x - 2)(x + 4) < 0$$
 
 $$-4 < x < \frac{2}{3}$$
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Modulus function](#4-the-modulus-function)
 
@@ -407,8 +363,6 @@ $$-4 < x < \frac{2}{3}$$
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $f^{-1}(x)$: $y = e^{2x} \implies \ln y = 2x \implies x = \frac{\ln y}{2}$.
 
 $f^{-1}(x) = \frac{1}{2}\ln x$, domain $x > 0$.
@@ -420,8 +374,6 @@ $g^{-1}(x) = e^x - 1$, domain all $\mathbb{R}$.
 $(f \circ g)(x) = f(g(x)) = f(\ln(x + 1)) = e^{2\ln(x+1)} = (x + 1)^2$.
 
 Domain of $f \circ g$: we need $x + 1 > 0$ (for $g$), so $x > -1$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Composition](#2-composition-of-functions) and [Inverse functions](#3-inverse-functions)
 
@@ -431,8 +383,6 @@ Domain of $f \circ g$: we need $x + 1 > 0$ (for $g$), so $x > -1$.
 
 <details>
 <summary>Solution</summary>
-<p>
-
 $y = |x^2 - 4| = |(x - 2)(x + 2)|$.
 
 When $x^2 - 4 \geq 0$ (i.e., $x \leq -2$ or $x \geq 2$): $y = x^2 - 4$ (parabola opening up).
@@ -444,8 +394,6 @@ $y$-intercept: $x = 0 \implies y = 4$. Point: $(0, 4)$.
 $x$-intercepts: $x^2 - 4 = 0 \implies x = \pm 2$. Points: $(-2, 0)$ and $(2, 0)$.
 
 The graph is the standard parabola $y = x^2 - 4$ with the part between $x = -2$ and $x = 2$ reflected above the $x$-axis.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Modulus function](#4-the-modulus-function) and [Transformations](#5-transformations-of-graphs)
 
@@ -455,8 +403,6 @@ The graph is the standard parabola $y = x^2 - 4$ with the part between $x = -2$ 
 
 <details>
 <summary>Solution</summary>
-<p>
-
 **Injective:** $f(x) = x^2 + 4x = (x+2)^2 - 4$. For $x \geq 0$, $x + 2 > 0$, so $(x+2)^2$ is strictly increasing, hence $f$ is strictly increasing, hence injective.
 
 **Surjective:** For any $y \geq 0$: $x^2 + 4x - y = 0$. By the quadratic formula: $x = \frac{-4 + \sqrt{16 + 4y}}{2} = -2 + \sqrt{4 + y}$. Since $y \geq 0$: $\sqrt{4 + y} \geq 2$, so $x \geq 0$. Thus every $y \geq 0$ has a preimage.
@@ -464,7 +410,5 @@ The graph is the standard parabola $y = x^2 - 4$ with the part between $x = -2$ 
 **Inverse:** $y = x^2 + 4x \implies x^2 + 4x - y = 0 \implies x = \frac{-4 + \sqrt{16 + 4y}}{2}$ (taking the positive root since $x \geq 0$).
 
 $f^{-1}(x) = -2 + \sqrt{4 + x} = \sqrt{x + 4} - 2$, domain $x \geq 0$.
-
-</p>
 </details>
 <b>If you get this wrong, revise:</b> [Inverse functions](#3-inverse-functions)

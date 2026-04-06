@@ -42,8 +42,10 @@ $$h(k) = k \bmod m$$
 **Choosing $m$.** Avoid powers of 2 (patterns in keys align with binary structure). Choose $m$ to be
 a **prime** not close to a power of 2.
 
-:::warning Pitfall If $m = 2^p$ and keys have patterns in their low-order bits (e.g., even numbers),
-the hash function will map many keys to the same bucket. :::
+:::warning
+Pitfall If $m = 2^p$ and keys have patterns in their low-order bits (e.g., even numbers),
+the hash function will map many keys to the same bucket.
+:::
 
 #### Multiplication Method
 
@@ -264,13 +266,15 @@ per insertion: $O(1)$. $\square$
 | Delete            | $O(1)$          | Lazy deletion     | Lazy deletion    |
 | Load factor limit | No hard limit   | $\alpha \lt{} 1$  | $\alpha \lt{} 1$ |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires understanding of hash functions, collision resolution (linear probing, quadratic
   probing, rehashing), and calculating hash table load factor
 - **CIE (9618)** covers hashing and collision handling; may use different terminology
 - **OCR (A)** requires hash tables with collision resolution using linear probing and rehashing
-- **Edexcel** covers hash tables and collision resolution methods :::
+- **Edexcel** covers hash tables and collision resolution methods
+:::
 
 ---
 

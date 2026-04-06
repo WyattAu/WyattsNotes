@@ -47,10 +47,12 @@ contribution to output. The identity $\text{output} \equiv \text{income} \equiv 
 holds by accounting convention: inventories are treated as investment (if produced but unsold,
 counted as $I$), and taxes/subsidies adjust market prices to factor costs. $\blacksquare$
 
-:::warning Common Pitfall GDP counts _market transactions_. Unpaid work (household chores, volunteer
+:::warning
+Common Pitfall GDP counts _market transactions_. Unpaid work (household chores, volunteer
 work) is excluded. Illegal activities are also excluded (though some countries now include estimates
 of the shadow economy). This means GDP underestimates total economic activity, particularly in
-countries with large informal sectors. :::
+countries with large informal sectors.
+:::
 
 ### 1.3 Real vs Nominal GDP
 
@@ -104,11 +106,13 @@ debt, productivity) eventually constrain growth. It also highlights a limitation
 growth came with severe environmental costs, massive income inequality (urban-rural divide), and
 significant debt accumulation.
 
-:::info Board-Specific Note AQA and Edexcel frequently ask students to compare GDP performance
+:::info
+Board-Specific Note AQA and Edexcel frequently ask students to compare GDP performance
 across countries. CIE (9708) may ask students to interpret GDP data from developing economies. OCR
 requires understanding of the difference between **GDP** (output within borders) and **GNI** (income
 earned by nationals, including net income from abroad). GNI is particularly relevant for countries
-like the Philippines or India, where remittances are a large share of national income. :::
+like the Philippines or India, where remittances are a large share of national income.
+:::
 
 ### 1.7 Evaluation: GDP as a Performance Indicator
 
@@ -164,7 +168,8 @@ council tax). RPI tends to give a higher inflation rate than CPI.
   Board-Specific Note CIE (9708) uses CPI. The UK government switched from RPI to CPI for most
   purposes in 2003. AQA and Edexcel may ask students to compare CPI and RPI. OCR may ask about the
   impact of RPI on index-linked government bonds. Note that the UK Statistics Authority designated
-  RPI as not a "National Statistic" in 2013 due to a formula flaw (see below). :::
+RPI as not a "National Statistic" in 2013 due to a formula flaw (see below).
+:::
 
 ### 2.2a Deeper Analysis: CPI vs RPI
 
@@ -187,11 +192,13 @@ interest payments, which means that when the Bank of England raises interest rat
 inflation, RPI tends to rise further (because mortgage costs increase), creating a perverse feedback
 loop.
 
-:::info Board-Specific Note Edexcel frequently tests the CPI vs RPI distinction in multiple-choice
+:::info
+Board-Specific Note Edexcel frequently tests the CPI vs RPI distinction in multiple-choice
 questions. AQA may ask for an evaluation of which measure is more accurate. CIE tends to focus on
 CPI alone but may ask about measurement issues more broadly. OCR may ask about the implications of
 using RPI for index-linked bonds — since RPI overstates inflation, bondholders receive higher
-payments, increasing government debt costs. :::
+payments, increasing government debt costs.
+:::
 
 ### 2.3 Causes of Inflation
 
@@ -253,11 +260,13 @@ The Bank of England responded by raising the base rate from 0.1% (December 2021)
 2023). By late 2024, inflation had fallen back towards the 2% target, though services inflation
 remained sticky due to persistent wage growth.
 
-:::info Board-Specific Note AQA and Edexcel both require students to distinguish between demand-pull
+:::info
+Board-Specific Note AQA and Edexcel both require students to distinguish between demand-pull
 and cost-push causes of inflation using real-world data. CIE (9708) may present students with a
 data-response question featuring inflation statistics from a specific country. OCR has previously
 examined the role of supply-side shocks in causing stagflation (rising inflation with falling
-output). :::
+output).
+:::
 
 ### 2.6 Evaluation: The Costs of Inflation
 
@@ -342,11 +351,13 @@ Causes include:
 - Strong trade unions negotiating wages above equilibrium
 - Generous unemployment benefits reducing the incentive to accept low-paid work
 
-:::info Board-Specific Note AQA distinguishes clearly between cyclical and structural unemployment
+:::info
+Board-Specific Note AQA distinguishes clearly between cyclical and structural unemployment
 and frequently tests causes and remedies. Edexcel emphasises the role of the NMW in causing
 real-wage unemployment. CIE (9708) uses the term "demand-deficient" rather than "cyclical" and may
 ask about hysteresis. OCR has examined the relationship between structural unemployment and regional
-policy in the UK. :::
+policy in the UK.
+:::
 
 ### 3.3 Costs of Unemployment
 
@@ -385,11 +396,13 @@ policy response:
 - **Sectoral impacts**: Hospitality, retail, and travel were worst affected, while professional
   services and technology sectors adapted quickly (remote work).
 
-:::info Board-Specific Note AQA and Edexcel both frequently use COVID-19 as a context for
+:::info
+Board-Specific Note AQA and Edexcel both frequently use COVID-19 as a context for
 data-response questions. CIE (9708) may ask students to evaluate the effectiveness of government
 intervention in the labour market. OCR has examined the distinction between unemployment and
 economic inactivity, which is highly relevant to the COVID case (furloughed workers were technically
-employed, not unemployed or inactive). :::
+employed, not unemployed or inactive).
+:::
 
 ### 3.5 Evaluation: Unemployment Statistics
 
@@ -453,10 +466,12 @@ financial accounts (borrowing from abroad or selling assets).
 - However, persistent deficits financed by borrowing are unsustainable
 - Deficits caused by lack of competitiveness are problematic
 
-:::info Board-Specific Note AQA and Edexcel both require students to calculate the current account
+:::info
+Board-Specific Note AQA and Edexcel both require students to calculate the current account
 balance from data and evaluate whether a deficit is a problem. CIE (9708) may ask about the
 relationship between the current account and the exchange rate. OCR has examined the Marshall-Lerner
-condition and the J-curve effect in the context of current account adjustment. :::
+condition and the J-curve effect in the context of current account adjustment.
+:::
 
 ### 4.3 Real-World Application: The UK's Persistent Current Account Deficit
 
@@ -554,13 +569,15 @@ The Phillips curve relationship has been far less stable in practice than theory
   whether the Phillips curve had steepened again, or whether the inflation was primarily
   supply-driven (cost-push) rather than demand-driven.
 
-:::info Board-Specific Note AQA requires students to explain the expectations-augmented Phillips
+:::info
+Board-Specific Note AQA requires students to explain the expectations-augmented Phillips
 curve and distinguish between short-run and long-run. Edexcel frequently tests the concept of
 hysteresis and how it relates to the Phillips curve (if unemployment rises above `u*`, `u*` itself
 may rise, shifting the LRPC right). CIE (9708) may present a data-response question showing
 inflation and unemployment data and ask students to interpret it using Phillips curve theory. OCR
 has examined the role of supply shocks in causing stagflation and the breakdown of the simple
-Phillips curve relationship. :::
+Phillips curve relationship.
+:::
 
 ### 5.5 Evaluation: The Phillips Curve Trade-Off
 
@@ -602,9 +619,11 @@ These objectives often conflict:
 - **Unemployment vs inflation**: short-run Phillips curve trade-off
 - **All objectives vs each other**: policy must balance competing priorities
 
-:::tip Exam Technique When asked about macroeconomic performance, always use data. Reference the
+:::tip
+Exam Technique When asked about macroeconomic performance, always use data. Reference the
 most recent ONS figures for UK GDP growth, inflation rate, unemployment rate, and current account
-balance. Examiners reward application of theory to real data. :::
+balance. Examiners reward application of theory to real data.
+:::
 
 ### 6.1 Evaluation: Conflicts Between Macroeconomic Objectives
 
@@ -631,11 +650,13 @@ hand... on the other hand... however... therefore"** structure. Here is a worked
   of England's mandate to target inflation (price stability) reflects a judgement that maintaining
   price stability is a prerequisite for achieving the other objectives.
 
-:::info Board-Specific Note AQA essays (25-mark questions) require a sustained argument with
+:::info
+Board-Specific Note AQA essays (25-mark questions) require a sustained argument with
 evaluation throughout. Edexcel's Paper 3 requires evaluation of policy effectiveness. CIE (9708)
 data-response questions (Part b, 8 marks; Part c, 12 marks) require analysis and evaluation of
 extract data. OCR's Component 3 requires a 20-mark essay with a clear conclusion. All boards reward
-the use of real-world data and counterarguments. :::
+the use of real-world data and counterarguments.
+:::
 
 ## 7. Problem Set
 
@@ -647,9 +668,7 @@ inflation rate.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Nominal GDP 2020 = $100(1) + 50(2) + 10(500) = 100 + 100 + 5000 = 5200$. Nominal GDP 2024 = $120(1.50) + 55(2.50) + 15(600) = 180 + 137.50 + 9000 = 9317.50$. (b) Real GDP 2024 (base prices) = $120(1) + 55(2) + 15(500) = 120 + 110 + 7500 = 7730$. (c) GDP deflator = $9317.50 / 7730 \times 100 = 120.5$. Inflation = $20.5\%$.
-</p>
 </details>
 
 **Problem 2.** A CPI basket has four items with weights: food (30%), housing (35%), transport (20%),
@@ -658,9 +677,7 @@ inflation rate.
 
 <details>
 <summary>Hint</summary>
-<p>
 Inflation $= 0.30(5\%) + 0.35(3\%) + 0.20(-2\%) + 0.15(8\%) = 1.5\% + 1.05\% - 0.4\% + 1.2\% = 3.35\%$.
-</p>
 </details>
 
 **Problem 3.** An economy has a labour force of 35 million, employment of 31.5 million, and a
@@ -669,9 +686,7 @@ economic inactivity rate.
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Unemployed $= 35 - 31.5 = 3.5$m. $u = 3.5/35 = 10\%$. (b) Employment rate $= 31.5/55 = 57.3\%$. (c) Economically inactive $= 55 - 35 = 20$m. Inactivity rate $= 20/55 = 36.4\%$.
-</p>
 </details>
 
 **Problem 4.** Using Okun's Law with $\beta = 2$, if potential GDP is £2.5 trillion and actual GDP
@@ -679,9 +694,7 @@ is £2.35 trillion, estimate the cyclical unemployment rate if the natural rate 
 
 <details>
 <summary>Hint</summary>
-<p>
 Output gap $= (2.35 - 2.5)/2.5 = -6\%$. Okun's Law: $-6\% = -2(u - 5\%) \Rightarrow u - 5\% = 3\% \Rightarrow u = 8\%$. Cyclical unemployment $= 8\% - 5\% = 3\%$.
-</p>
 </details>
 
 **Problem 5.** A country's balance of payments shows: exports of goods £300bn, imports of goods
@@ -691,9 +704,7 @@ or surplus.
 
 <details>
 <summary>Hint</summary>
-<p>
 Trade in goods $= 300 - 400 = -100$. Trade in services $= 200 - 150 = +50$. Primary income $= -50$. Secondary income $= -20$. Current account $= -100 + 50 - 50 - 20 = -120$bn (deficit).
-</p>
 </details>
 
 **Problem 6.** "A high GDP per capita necessarily means high living standards." Evaluate this
@@ -701,9 +712,7 @@ statement with reference to at least four limitations of GDP as a welfare measur
 
 <details>
 <summary>Hint</summary>
-<p>
 Four limitations: (1) Inequality — GDP per capita is an average; high average may coexist with extreme poverty. (2) Environmental degradation — China's rapid GDP growth came with severe pollution. (3) Unpaid work — countries with large informal sectors (e.g., India) undercount economic activity. (4) Health and education — Saudi Arabia has high GDP per capita but ranks lower on HDI due to gender inequality in education. (5) Leisure — GDP doesn't value free time; a country with longer working hours has higher GDP but not necessarily better well-being.
-</p>
 </details>
 
 **Problem 7.** Explain the difference between demand-pull and cost-push inflation using AD/AS
@@ -711,9 +720,7 @@ analysis. Under what conditions might both types of inflation occur simultaneous
 
 <details>
 <summary>Hint</summary>
-<p>
 Demand-pull: AD shifts right $\Rightarrow$ both $P$ and $Y$ rise (at least until full employment). Cost-push: SRAS shifts left $\Rightarrow$ $P$ rises but $Y$ falls (stagflation). Both simultaneously: AD shifts right AND SRAS shifts left (e.g., expansionary fiscal policy during an oil price shock) $\Rightarrow$ $P$ rises sharply, effect on $Y$ ambiguous. This is the most dangerous scenario (1970s stagflation).
-</p>
 </details>
 
 **Problem 8.** "The natural rate of unemployment is zero." Discuss this statement with reference to
@@ -721,9 +728,7 @@ the concept of the NAIRU and the different types of unemployment.
 
 <details>
 <summary>Hint</summary>
-<p>
 False. The natural rate is positive because frictional unemployment (time to search for jobs) and structural unemployment (skill/location mismatches) always exist. A zero unemployment rate would mean: (1) no one ever leaves a job voluntarily (no frictional), (2) every worker's skills perfectly match every vacancy (no structural). Both are impossible. Some unemployment is *efficient* — it allows better job matching and resource reallocation. However, the natural rate can be reduced through better information, training, and labour market flexibility.
-</p>
 </details>
 
 **Problem 9.** Explain why deflation can be more damaging than moderate inflation. In your answer,
@@ -731,9 +736,7 @@ refer to the concepts of debt deflation, the zero lower bound, and the paradox o
 
 <details>
 <summary>Hint</summary>
-<p>
 Debt deflation (Fisher): falling prices increase the real value of debt $\Rightarrow$ borrowers cut spending to repay $\Rightarrow$ AD falls further $\Rightarrow$ prices fall further (vicious cycle). Zero lower bound: central banks cannot set nominal interest rates below zero, limiting monetary policy. Paradox of thrift: deflation increases the real value of money, encouraging saving and discouraging spending $\Rightarrow$ AD falls further. Japan's "Lost Decades" (1990s-present) illustrate these dangers.
-</p>
 </details>
 
 **Problem 10.** The short-run Phillips curve suggests a trade-off between inflation and
@@ -742,9 +745,7 @@ of either variable.
 
 <details>
 <summary>Hint</summary>
-<p>
 Policymakers must balance the marginal benefit of lower unemployment (higher output, lower social costs) against the marginal cost of higher inflation (redistribution, uncertainty, menu costs). The optimal point depends on society's preferences (the "loss function" of the central bank/government). If the central bank places greater weight on inflation stabilisation (inflation targeting), it will accept higher unemployment. If the government places greater weight on employment (especially before elections), it will accept higher inflation. The time-inconsistency problem (Kydland & Prescott, 1977) shows that discretionary policymakers may be tempted to exploit the short-run trade-off, leading to inflationary bias.
-</p>
 </details>
 
 **Problem 11.** "A current account deficit is always a sign of economic weakness." Evaluate this
@@ -752,9 +753,7 @@ statement.
 
 <details>
 <summary>Hint</summary>
-<p>
 Not necessarily. A deficit can reflect: (1) Strong domestic demand — consumers are confident and spending, including on imports. (2) Investment — importing capital goods for future growth (China ran deficits during its industrialisation). (3) Attractive investment destination — capital inflows finance the deficit. However, persistent deficits financed by borrowing are concerning: (1) Growing external debt. (2) Loss of competitiveness (structural deficit). (3) Speculative attacks on the currency. The UK has run a persistent current account deficit for decades, financed by London's status as a financial centre.
-</p>
 </details>
 
 **Problem 12.** Explain how the four macroeconomic objectives are interrelated, illustrating your
@@ -762,9 +761,7 @@ answer with examples from the UK economy since 2020.
 
 <details>
 <summary>Hint</summary>
-<p>
 Post-2020 UK: (1) COVID-19 caused a sharp fall in GDP (growth objective) and a spike in unemployment (employment objective). (2) Government stimulus (furlough) limited unemployment but increased government debt. (3) Supply chain disruptions + energy crisis caused cost-push inflation (price stability objective). (4) Sterling depreciation worsened the terms of trade but helped exports (BoP objective). (5) Bank of England raised interest rates to fight inflation, potentially dampening growth and employment. This illustrates the conflicts: fighting inflation may worsen growth and employment; stimulating growth may worsen inflation and the current account.
-</p>
 </details>
 
 **Problem 13.** The CPI basket weights in the UK were updated in 2024. If the weight of "food and
@@ -774,9 +771,7 @@ Explain why regular basket updates are important.
 
 <details>
 <summary>Hint</summary>
-<p>
 Old inflation $= 0.083(12\%) + 0.917(3\%) = 0.996\% + 2.751\% = 3.75\%$. New inflation $= 0.105(12\%) + 0.895(3\%) = 1.26\% + 2.685\% = 3.94\%$. The difference is $3.94\% - 3.75\% = 0.19$ percentage points. Basket updates matter because consumer spending patterns change over time — if households spend a larger share of their income on food, the inflation they actually experience will be higher than the old basket suggests. Failure to update the basket creates **substitution bias** (overstating inflation for items becoming less important and understating it for items becoming more important). This is why the ONS updates the CPI basket annually.
-</p>
 </details>
 
 **Problem 14.** A country has a labour force of 33 million. The natural rate of unemployment is
@@ -786,9 +781,7 @@ cyclical unemployment, and (c) explain two reasons why $\beta$ might differ acro
 
 <details>
 <summary>Hint</summary>
-<p>
 (a) Cyclical unemployment $= 7.2\% - 4.5\% = 2.7\%$. Output gap $= -2.2 \times 2.7\% = -5.94\%$. (b) GDP loss $= 5.94\% \times 3.1$ trillion $= $GBP 184.1 billion. (c) $\beta$ varies across countries because of: (1) Labour market flexibility — countries with flexible wages (e.g., the US) may see output fall less for a given rise in unemployment (higher $\beta$), while countries with rigid wages (e.g., many European nations) may see more underemployment (workers reducing hours rather than losing jobs), leading to a lower $\beta$. (2) The size of the informal sector — in countries with large informal sectors, formal unemployment may rise sharply while output falls less (because informal work absorbs displaced workers).
-</p>
 </details>
 
 **Problem 15.** "A fall in the value of sterling will automatically correct the UK's current account
@@ -797,9 +790,7 @@ effect.
 
 <details>
 <summary>Hint</summary>
-<p>
 A fall in sterling makes UK exports cheaper abroad and imports dearer at home, which should improve the current account. However, whether this actually happens depends on the **Marshall-Lerner condition**: the sum of the price elasticities of demand for exports and imports must exceed 1 (in absolute value). In the short run, demand tends to be inelastic (consumers and firms have fixed contracts and cannot quickly switch suppliers), so the current account may initially worsen — the **J-curve effect**. The deficit worsens because the same volume of imports now costs more in sterling terms. Only after several months or years, as consumers and firms adjust, does the current account improve. Additionally, if UK firms face capacity constraints, they may not be able to increase export volumes even at lower prices, limiting the correction. Evaluation: the exchange rate is a necessary but not sufficient condition for current account adjustment.
-</p>
 </details>
 
 **Problem 16.** The UK inflation rate was 0.9% in 2020, 2.6% in 2021, 9.1% in 2022, and 7.3%
@@ -809,9 +800,7 @@ of raising interest rates as a response.
 
 <details>
 <summary>Hint</summary>
-<p>
 The Bank of England feared that if inflation remained high for an extended period, workers and firms would adjust their inflation expectations upwards. Once $\pi^e$ rises, the short-run Phillips curve shifts upward: for any given unemployment rate, inflation will be higher. This creates a vicious cycle — higher expected inflation leads to higher wage demands, which push costs and prices up further, validating the higher expectations. If expectations become de-anchored, bringing inflation back down requires a much larger increase in unemployment (a painful disinflation). Raising interest rates works by reducing aggregate demand, increasing unemployment, and creating slack in the economy, which puts downward pressure on wages and prices. Effectiveness evaluation: (1) interest rate hikes work with a lag of 12-18 months, making timing difficult; (2) they also reduce investment and growth, creating a recessionary trade-off; (3) if inflation is primarily cost-push (energy prices, supply chains), demand-side tools may be less effective — this is the "stagflation" problem. The Bank of England ultimately raised rates to 5.25%, and inflation fell to near 2% by mid-2024, but this was partly due to the resolution of supply-side pressures (falling energy prices) rather than the demand reduction alone.
-</p>
 </details>
 
 :::

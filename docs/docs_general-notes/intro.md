@@ -94,7 +94,7 @@ docs_general-notes/
 These notes are rendered by Docusaurus 3, which means every `.md` file is processed as MDX. This
 unlocks React components, interactive tabs, and custom JSX — but also imposes constraints:
 
-- Raw HTML tags like `<p>` are not allowed in MDX; use Docusaurus components or markdown instead.
+- Raw HTML tags like `` are not allowed in MDX; use Docusaurus components or markdown instead.
 - Angle brackets in prose (e.g., `std::vector<int>`) must be escaped as `&lt;` and `&gt;` outside of
   code blocks.
 - Nested `<details>` elements inside other `<details>` are not supported.

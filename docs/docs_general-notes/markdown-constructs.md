@@ -211,23 +211,35 @@ print("hello")
 Admonitions are the preferred way to call out important information:
 
 ```md
-:::note This is a note. :::
+:::note
+This is a note.
+:::
 
-:::tip This is a tip. :::
+:::tip
+This is a tip.
+:::
 
-:::info This is informational. :::
+:::info
+This is informational.
+:::
 
 :::caution This is a caution. :::
 
-:::danger This is dangerous. :::
+:::danger
+This is dangerous.
+:::
 
-:::warning This is a warning. :::
+:::warning
+This is a warning.
+:::
 ```
 
 Admonitions support optional titles:
 
 ```md
-:::tip Custom Title Content here. :::
+:::tip
+Custom Title Content here.
+:::
 ```
 
 They can also be collapsible (Docusaurus 3):
@@ -325,8 +337,10 @@ Hidden content here.
 &lt;/details&gt;
 ```
 
-:::warning Do not nest `<details>` inside another `<details>`. This causes rendering issues in
-Docusaurus. :::
+:::warning
+Do not nest `<details>` inside another `<details>`. This causes rendering issues in
+Docusaurus.
+:::
 
 ### MDX Import Statements
 
@@ -428,7 +442,7 @@ No escaping needed inside fenced code blocks — the content is treated as raw t
 
 ### Raw HTML Restrictions
 
-Do not use `<p>` tags or other raw HTML block elements. MDX does not allow them. Use markdown or
+Do not use `` tags or other raw HTML block elements. MDX does not allow them. Use markdown or
 Docusaurus components instead. Self-closing elements like `<br />` and `<img />` are generally fine.
 
 :::

@@ -11,7 +11,8 @@ slug: dynamics
 
 ## Dynamics
 
-:::info Board Coverage
+:::info
+Board Coverage
 AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
 :::
 
@@ -45,7 +46,8 @@ This is the most important equation in mechanics. It states that force, mass, an
 
 $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 The two forces in a Newton's third law pair act on **different bodies**. They do **not** cancel. The normal reaction from a table on a book and the book's weight are **not** a third law pair (both act on the book). The third law pair of the book's weight is the gravitational pull of the book on the Earth.
 :::
 
@@ -92,8 +94,6 @@ $$\sum F_x = ma_x \quad \text{and} \quad \sum F_y = ma_y$$
 
 <details>
 <summary>Example: Inclined Plane</summary>
-<p>
-
 A block of mass $m$ rests on a plane inclined at angle $\alpha$ to the horizontal. Find the acceleration down the plane, assuming no friction.
 
 **Answer.** Resolving perpendicular to the plane: $R = mg\cos\alpha$.
@@ -101,8 +101,6 @@ A block of mass $m$ rests on a plane inclined at angle $\alpha$ to the horizonta
 Resolving parallel to the plane (taking down-plane as positive): $mg\sin\alpha = ma$.
 
 $$a = g\sin\alpha$$
-
-</p>
 </details>
 
 ## 5. Friction
@@ -221,7 +219,8 @@ $$mg - kv^2 = ma$$
 
 At terminal velocity: $v_T = \sqrt{\frac{mg}{k}}$.
 
-:::info Board Note
+:::info
+Board Note
 CIE and Edexcel may expect you to know both drag models qualitatively. AQA focuses on the qualitative description of terminal velocity.
 :::
 
@@ -229,8 +228,6 @@ CIE and Edexcel may expect you to know both drag models qualitatively. AQA focus
 
 <details>
 <summary>Problem 1</summary>
-<p>
-
 A block of mass $5.0$ kg rests on a rough horizontal surface with $\mu_s = 0.4$ and $\mu_d = 0.3$. A horizontal force of $25$ N is applied. Determine whether the block moves and, if so, find its acceleration.
 
 **Answer.** Maximum static friction: $F_s = \mu_s R = 0.4 \times 5.0 \times 9.81 = 19.6$ N. Since the applied force $25$ N $> 19.6$ N, the block moves.
@@ -240,14 +237,10 @@ Dynamic friction: $F_d = 0.3 \times 49.05 = 14.7$ N.
 Net force: $25 - 14.7 = 10.3$ N. Acceleration: $a = 10.3/5.0 = 2.1$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Friction](#5-friction)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 2</summary>
-<p>
-
 In an Atwood machine, $m_1 = 8.0$ kg and $m_2 = 5.0$ kg. Find the acceleration and the tension in the string.
 
 **Answer.** $a = \frac{(8.0 - 5.0) \times 9.81}{8.0 + 5.0} = \frac{29.43}{13.0} = 2.26$ m s$^{-2}$.
@@ -255,14 +248,10 @@ In an Atwood machine, $m_1 = 8.0$ kg and $m_2 = 5.0$ kg. Find the acceleration a
 $T = \frac{2 \times 8.0 \times 5.0 \times 9.81}{13.0} = \frac{784.8}{13.0} = 60.4$ N.
 
 <b>If you get this wrong, revise:</b> [Pulleys: The Atwood Machine](#pulleys-the-atwood-machine)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 3</summary>
-<p>
-
 A person of mass $70$ kg stands on a scale in a lift. The lift accelerates upward at $2.0$ m s$^{-2}$ for 3 s, then travels at constant velocity for 4 s, then decelerates at $3.0$ m s$^{-2}$ to rest. Calculate the scale reading in each phase.
 
 **Answer.** Phase 1 (accelerating up): $R = 70(9.81 + 2.0) = 70 \times 11.81 = 827$ N.
@@ -272,53 +261,37 @@ Phase 2 (constant velocity): $R = 70 \times 9.81 = 687$ N.
 Phase 3 (decelerating, i.e., accelerating downward): $R = 70(9.81 - 3.0) = 70 \times 6.81 = 477$ N.
 
 <b>If you get this wrong, revise:</b> [Lifts (Apparent Weight)](#lifts-apparent-weight)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 4</summary>
-<p>
-
 A block of mass $4.0$ kg is placed on a smooth inclined plane at $30°$ to the horizontal. Find the acceleration of the block down the plane.
 
 **Answer.** Resolving parallel to the plane: $mg\sin 30° = ma$, so $a = g\sin 30° = 9.81 \times 0.5 = 4.91$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Resolving Forces in Two Dimensions](#4-resolving-forces-in-two-dimensions)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 5</summary>
-<p>
-
 A raindrop of mass $2.0 \times 10^{-5}$ kg falls through air with drag proportional to $v^2$. If the terminal velocity is $9.0$ m s$^{-1}$, find the drag constant $k$.
 
 **Answer.** At terminal velocity: $mg = kv_T^2$. $k = \frac{mg}{v_T^2} = \frac{2.0 \times 10^{-5} \times 9.81}{81} = 2.4 \times 10^{-6}$ N s$^2$ m$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Quadratic Drag Model](#quadratic-drag-model)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 6</summary>
-<p>
-
 Two forces, $\mathbf{F}_1 = (3\mathbf{i} + 4\mathbf{j})$ N and $\mathbf{F}_2 = (-\mathbf{i} + 2\mathbf{j})$ N, act on a body of mass $2.0$ kg. Find the magnitude and direction of the acceleration.
 
 **Answer.** $\mathbf{F}_{\text{net}} = (3-1)\mathbf{i} + (4+2)\mathbf{j} = (2\mathbf{i} + 6\mathbf{j})$ N. $\mathbf{a} = \frac{1}{2}(2\mathbf{i} + 6\mathbf{j}) = (1\mathbf{i} + 3\mathbf{j})$ m s$^{-2}$. $|\mathbf{a}| = \sqrt{1 + 9} = \sqrt{10} = 3.16$ m s$^{-2}$. Direction: $\theta = \arctan(3/1) = 71.6°$ from the $x$-axis.
 
 <b>If you get this wrong, revise:</b> [Resolving Forces in Two Dimensions](#4-resolving-forces-in-two-dimensions)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 7</summary>
-<p>
-
 A block slides down a rough inclined plane at $25°$ to the horizontal. If $\mu_d = 0.2$, find the acceleration.
 
 **Answer.** Resolving parallel (down-plane positive): $mg\sin 25° - F_d = ma$. Resolving perpendicular: $R = mg\cos 25°$. So $F_d = 0.2mg\cos 25°$.
@@ -326,14 +299,10 @@ A block slides down a rough inclined plane at $25°$ to the horizontal. If $\mu_
 $a = g(\sin 25° - 0.2\cos 25°) = 9.81(0.4226 - 0.1813) = 9.81 \times 0.2413 = 2.37$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Friction](#5-friction) and [Resolving Forces in Two Dimensions](#4-resolving-forces-in-two-dimensions)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 8</summary>
-<p>
-
 A $60$ kg woman is in a lift that is moving downward at $3.0$ m s$^{-1}$ and decelerating at $1.5$ m s$^{-2}$ (i.e., slowing down). What does the scale read?
 
 **Answer.** The lift is decelerating while moving downward, so the acceleration is **upward**. $R - mg = ma$ where $a = 1.5$ m s$^{-2}$ upward.
@@ -341,14 +310,10 @@ A $60$ kg woman is in a lift that is moving downward at $3.0$ m s$^{-1}$ and dec
 $R = 60(9.81 + 1.5) = 60 \times 11.31 = 679$ N.
 
 <b>If you get this wrong, revise:</b> [Lifts (Apparent Weight)](#lifts-apparent-weight)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 9</summary>
-<p>
-
 Two blocks, $m_1 = 3.0$ kg and $m_2 = 5.0$ kg, are in contact on a frictionless horizontal surface. A horizontal force of $24$ N pushes on $m_1$. Find: (a) the acceleration of the system, (b) the contact force between the blocks.
 
 **Answer.** (a) $a = F/(m_1 + m_2) = 24/8.0 = 3.0$ m s$^{-2}$.
@@ -356,14 +321,10 @@ Two blocks, $m_1 = 3.0$ kg and $m_2 = 5.0$ kg, are in contact on a frictionless 
 (b) For $m_2$ alone: the only horizontal force is the contact force $C$. $C = m_2 a = 5.0 \times 3.0 = 15$ N.
 
 <b>If you get this wrong, revise:</b> [Newton's Second Law](#newtons-second-law)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 10</summary>
-<p>
-
 For the linear drag model $F_d = kv$, derive the time taken for a falling object to reach half its terminal velocity.
 
 **Answer.** $v(t) = v_T(1 - e^{-kt/m})$. Setting $v = v_T/2$:
@@ -373,27 +334,19 @@ $\frac{1}{2} = 1 - e^{-kt/m} \implies e^{-kt/m} = \frac{1}{2} \implies -kt/m = \
 $t = \frac{m \ln 2}{k}$. Since $\tau = m/k$, $t = \tau \ln 2 \approx 0.693\tau$.
 
 <b>If you get this wrong, revise:</b> [Solving the ODE](#solving-the-ode)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 11</summary>
-<p>
-
 Explain why the tension in a rope draped over a pulley is the same on both sides, assuming the pulley is smooth and light.
 
 **Answer.** A smooth pulley exerts no friction on the rope, so the rope slides freely. A light pulley has zero moment of inertia, requiring zero net torque to rotate. Since the rope has the same tension throughout (no friction to create a difference), and the pulley requires no torque, Newton's second law for rotation ($\tau = I\alpha$) gives zero net torque, which is satisfied when $T_1 = T_2$.
 
 <b>If you get this wrong, revise:</b> [Pulleys: The Atwood Machine](#pulleys-the-atwood-machine)
-
-</p>
 </details>
 
 <details>
 <summary>Problem 12</summary>
-<p>
-
 A crate of mass $20$ kg is pushed up a rough ramp inclined at $15°$ to the horizontal by a force of $120$ N acting parallel to the ramp. The coefficient of friction is $0.25$. Find the acceleration.
 
 **Answer.** Resolving perpendicular: $R = mg\cos 15° = 20 \times 9.81 \times 0.966 = 189.5$ N.
@@ -407,6 +360,4 @@ $120 - 20 \times 9.81 \times 0.259 - 47.4 = 20a$.
 $120 - 50.8 - 47.4 = 20a$. $21.8 = 20a$. $a = 1.09$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Friction](#5-friction) and [Resolving Forces in Two Dimensions](#4-resolving-forces-in-two-dimensions)
-
-</p>
 </details>

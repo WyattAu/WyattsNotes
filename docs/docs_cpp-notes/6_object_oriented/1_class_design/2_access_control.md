@@ -82,8 +82,10 @@ class  C { int x; };    // x is private
 static_assert(sizeof(S) == sizeof(C));
 ```
 
-:::tip Convention Use `struct` for passive data aggregates with no invariant enforcement. Use
-`class` for types that maintain invariants and require encapsulation. :::
+:::tip
+Convention Use `struct` for passive data aggregates with no invariant enforcement. Use
+`class` for types that maintain invariants and require encapsulation.
+:::
 
 ## 2.3 Friend Declarations [N4950 §14.3]
 

@@ -53,8 +53,10 @@ A mass spectrometer separates ions based on their mass-to-charge ratio ($m/z$). 
 3. **Deflection:** Ions are deflected by a magnetic field (lighter ions are deflected more)
 4. **Detection:** Ions hit a detector, producing a signal proportional to abundance
 
-:::info In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
-relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass. :::
+:::info
+In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
+relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass.
+:::
 
 ---
 
@@ -77,9 +79,11 @@ Electrons fill orbitals in order of increasing energy:
 
 $$1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p$$
 
-:::warning Note that $4s$ fills before $3d$, but $3d$ loses electrons before $4s$ when forming
+:::warning
+Note that $4s$ fills before $3d$, but $3d$ loses electrons before $4s$ when forming
 cations. This is because the $4s$ orbital is at a higher energy than $3d$ once electrons are in the
-$3d$ subshell. :::
+$3d$ subshell.
+:::
 
 ### Pauli Exclusion Principle
 
@@ -106,9 +110,11 @@ For transition metals, use the noble gas core notation:
 - Copper ($Z = 29$): $[\text{Ar}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
 - Chromium ($Z = 24$): $[\text{Ar}]\, 4s^1\, 3d^5$ (exception: half-full subshells are more stable)
 
-:::tip Exceptions to remember: Cr is $4s^1\, 3d^5$ (not $4s^2\, 3d^4$) and Cu is $4s^1\, 3d^{10}$
+:::tip
+Exceptions to remember: Cr is $4s^1\, 3d^5$ (not $4s^2\, 3d^4$) and Cu is $4s^1\, 3d^{10}$
 (not $4s^2\, 3d^9$). These arise because half-filled and fully-filled $d$ subshells have extra
-stability. :::
+stability.
+:::
 
 ---
 
@@ -259,8 +265,10 @@ possible.
 | 5 bonding pairs   | Trigonal bipyramidal | $90^\circ, 120^\circ$ | $\text{PCl}_5$                 |
 | 6 bonding pairs   | Octahedral           | $90^\circ$            | $\text{SF}_6$                  |
 
-:::info Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
-the nucleus. This reduces bond angles from the ideal values. :::
+:::info
+Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
+the nucleus. This reduces bond angles from the ideal values.
+:::
 
 ### Worked Example 5
 
@@ -519,9 +527,11 @@ Bonds formed:
 
 $$\Delta H = (1652 + 996) - (1490 + 1852) = 2648 - 3342 = -694 \text{ kJ/mol}$$
 
-:::warning Bond enthalpies are average values. For precise calculations, use standard enthalpy of
+:::warning
+Bond enthalpies are average values. For precise calculations, use standard enthalpy of
 formation data instead. Bond enthalpy calculations are less accurate for reactions involving liquids
-or solids because they only account for gaseous state bonds. :::
+or solids because they only account for gaseous state bonds.
+:::
 
 ---
 
@@ -758,8 +768,10 @@ $$\text{Bond order} = \frac{1}{2}(\text{bonding electrons} - \text{antibonding e
 - Bond order = 1.5: intermediate (e.g., $\text{O}_2^-$)
 - Bond order = 0: no bond (molecule does not exist, e.g., $\text{He}_2$)
 
-:::info Molecular orbital theory explains why $\text{O}_2$ is paramagnetic (has unpaired electrons
-in antibonding orbitals), which cannot be explained by simple Lewis structures. :::
+:::info
+Molecular orbital theory explains why $\text{O}_2$ is paramagnetic (has unpaired electrons
+in antibonding orbitals), which cannot be explained by simple Lewis structures.
+:::
 
 ### Intermolecular Forces in Detail
 
