@@ -322,7 +322,6 @@ Substitute $x = r\cos\theta$ and $r^2 = x^2+y^2$.
 $r^2 - 4r\cos\theta = 0 \implies r(r - 4\cos\theta) = 0$. For $r \neq 0$: $r = 4\cos\theta$.
 
 This is a circle with centre $(2, 0)$ and radius $2$.
-
 </details>
 
 <details>
@@ -355,7 +354,6 @@ Use symmetry about $\theta = \pi$ (or integrate from $0$ to $2\pi$). Expand $(1-
 $A = \dfrac{1}{2}\displaystyle\int_0^{2\pi}4(1-\cos\theta)^2\,d\theta = 2\int_0^{2\pi}(1 - 2\cos\theta + \cos^2\theta)\,d\theta$
 
 $= 2\int_0^{2\pi}\left(\dfrac{3}{2} - 2\cos\theta + \dfrac{\cos 2\theta}{2}\right)d\theta = 2\left[\dfrac{3\theta}{2} - 2\sin\theta + \dfrac{\sin 2\theta}{4}\right]_0^{2\pi} = 2 \cdot 3\pi = 6\pi$.
-
 </details>
 
 <details>
@@ -375,7 +373,6 @@ At $\theta = \pi/6$: $r = a(1+1/2) = 3a/2$, $dr/d\theta = a\sqrt{3}/2$.
 $\dfrac{dy}{dx} = \dfrac{(a\sqrt{3}/2)(1/2) + (3a/2)(\sqrt{3}/2)}{(a\sqrt{3}/2)(\sqrt{3}/2) - (3a/2)(1/2)} = \dfrac{a\sqrt{3}/4 + 3a\sqrt{3}/4}{3a/4 - 3a/4} = \dfrac{a\sqrt{3}}{0}$
 
 The gradient is undefined — the tangent is **vertical** at this point.
-
 </details>
 
 <details>
@@ -398,7 +395,6 @@ $\cos 2\theta = 0 \implies 2\theta = \pi/2, 3\pi/2 \implies \theta = \pi/4, 3\pi
 
 At $\theta = \pi/4$: $r = 2\sqrt{2}$, point $(2, 2)$. At $\theta = 3\pi/4$: $r = -2\sqrt{2}$,
 equivalent to $r = 2\sqrt{2}$, $\theta = 7\pi/4$, point $(2, -2)$.
-
 </details>
 
 <details>
@@ -424,7 +420,6 @@ $= \displaystyle\int_0^{\pi/3}\bigl[9\cos^2\theta - 1 - 2\cos\theta - \cos^2\the
 $= \displaystyle\int_0^{\pi/3}\left[4(1+\cos 2\theta) - 1 - 2\cos\theta\right]d\theta = \int_0^{\pi/3}\left(3 + 4\cos 2\theta - 2\cos\theta\right)d\theta$
 
 $= \left[3\theta + 2\sin 2\theta - 2\sin\theta\right]_0^{\pi/3} = \pi + 2\cdot\dfrac{\sqrt{3}}{2} - 2\cdot\dfrac{\sqrt{3}}{2} = \pi$.
-
 </details>
 
 <details>
@@ -444,7 +439,6 @@ $r = \sqrt{8+8} = 4$. The point is in the second quadrant.
 $\tan\theta = \dfrac{2\sqrt{2}}{-2\sqrt{2}} = -1$. In the second quadrant: $\theta = 3\pi/4$.
 
 Polar coordinates: $(4, 3\pi/4)$.
-
 </details>
 
 <details>
@@ -467,7 +461,6 @@ This is an **Archimedean spiral**. Key points:
 - At $\theta = 4\pi$: $r = 4\pi$ (two full revolutions).
 
 The spiral winds outward with equal spacing between successive turns.
-
 </details>
 
 <details>
@@ -489,7 +482,6 @@ $dr/d\theta = \cos\theta$, so at $\theta = \pi/2$: $dr/d\theta = 0$.
 $\dfrac{dy}{dx} = \dfrac{0\cdot 1 + 3\cdot 0}{0\cdot 0 - 3\cdot 1} = \dfrac{0}{-3} = 0$.
 
 The tangent is horizontal: $y = 3$.
-
 </details>
 
 <details>
@@ -517,7 +509,6 @@ $= \dfrac{1}{2}\left[3\theta + 4\sin\theta + \sin 2\theta\right]_{2\pi/3}^{4\pi/
 $= \dfrac{1}{2}\left[\left(4\pi - 2\sqrt{3} + \sqrt{3}/2\right) - \left(2\pi + 2\sqrt{3} - \sqrt{3}/2\right)\right]$
 
 $= \dfrac{1}{2}\left[2\pi - 3\sqrt{3}\right] = \pi - \dfrac{3\sqrt{3}}{2}$.
-
 </details>
 
 :::

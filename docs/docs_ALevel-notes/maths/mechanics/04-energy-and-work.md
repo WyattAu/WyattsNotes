@@ -317,7 +317,6 @@ A car of mass $1200\,\text{kg}$ accelerates from $10\,\text{m/s}$ to $25\,\text{
 $W = \Delta\text{KE} = \tfrac{1}{2}(1200)(625 - 100) = 600 \times 525 = 315000\,\text{J} = 315\,\text{kJ}$.
 
 **If you get this wrong, revise:** [Work-Energy Principle](#41-statement) — Section 4.1.
-
 </details>
 
 <details>
@@ -333,7 +332,6 @@ $v = \sqrt{2gh} = \sqrt{2(9.8)(20)} = \sqrt{392} \approx 19.8\,\text{m/s}$.
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
-
 </details>
 
 <details>
@@ -348,7 +346,6 @@ At max speed: $P = Fv$ where $F = 400\,\text{N}$ (driving force equals resistanc
 $60000 = 400v \implies v = 150\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
-
 </details>
 
 <details>
@@ -364,7 +361,6 @@ $\tfrac{1}{2}mv^2 = 117.6 - 40.75 = 76.85 \implies v^2 = 76.85/2 = 38.425 \impli
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
-
 </details>
 
 <details>
@@ -379,7 +375,6 @@ $W = mgh = 500(9.8)(30) = 147000\,\text{J}$.
 $P = W/t = 147000/45 = 3267\,\text{W} \approx 3.27\,\text{kW}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
-
 </details>
 
 <details>
@@ -393,7 +388,6 @@ Height dropped $= 1.5\,\text{m}$. $mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2(9
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
-
 </details>
 
 <details>
@@ -411,7 +405,6 @@ $R = F - mg\sin\theta = 1333.3 - 800(9.8)(0.1) = 1333.3 - 784 = 549.3\,\text{N}$
 
 **If you get this wrong, revise:** [Power and Inclined Planes](#53-power-and-inclined-planes) —
 Section 5.3.
-
 </details>
 
 <details>
@@ -426,7 +419,6 @@ The force varies from $0$ to $kx$. The work done (energy stored) is:
 $$\text{EPE} = \int_0^x T\,dx' = \int_0^x kx'\,dx' = \frac{1}{2}kx^2$$
 
 **If you get this wrong, revise:** [Work Done](#11-definition-and-derivation) — Section 1.1.
-
 </details>
 
 <details>
@@ -446,7 +438,6 @@ $200 + 294 = \tfrac{1}{2}v^2 \implies v^2 = 988 \implies v \approx 31.4\,\text{m
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
-
 </details>
 
 <details>
@@ -463,7 +454,6 @@ $20v^2 + 5000v - 2000000 = 0 \implies v^2 + 250v - 100000 = 0$.
 $v = \dfrac{-250 + \sqrt{62500 + 400000}}{2} = \dfrac{-250 + \sqrt{462500}}{2} = \dfrac{-250 + 680.1}{2} = 215.1\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
-
 </details>
 
 <details>
@@ -484,7 +474,6 @@ $\tfrac{1}{2}(0.5)v^2 = 9 \implies v^2 = 36 \implies v = 6\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Elastic Potential Energy](#6-elastic-potential-energy) —
 Section 6.
-
 </details>
 
 <details>
@@ -505,7 +494,6 @@ $s = \frac{2}{3}\sqrt{\frac{2(5000)}{500}} \times 5^{3/2} = \frac{2}{3}\sqrt{20}
 
 **If you get this wrong, revise:**
 [Power in variable-force situations](#54-power-in-variable-force-situations) — Section 5.4.
-
 </details>
 
 <details>
@@ -532,7 +520,6 @@ down journey.
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
-
 </details>
 
 <details>
@@ -556,7 +543,6 @@ solution $x = 0$).
 
 **If you get this wrong, revise:**
 [Conservation of energy with springs](#63-conservation-of-energy-with-springs) — Section 6.3.
-
 </details>
 
 <details>
@@ -579,7 +565,6 @@ $0.98x = 25x^2 \implies x(25x - 0.98) = 0 \implies x = 0.0392\,\text{m} = 3.92\,
 
 **If you get this wrong, revise:** [Elastic Potential Energy](#6-elastic-potential-energy) —
 Section 6.
-
 </details>
 
 <details>
@@ -609,7 +594,6 @@ $a = \frac{2074}{1500} \approx 1.38\,\text{m/s}^2$.
 **If you get this wrong, revise:** [Power and Inclined Planes](#53-power-and-inclined-planes) —
 Section 5.3, and [Power in variable-force situations](#54-power-in-variable-force-situations) —
 Section 5.4.
-
 </details>
 
 :::

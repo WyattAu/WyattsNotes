@@ -608,7 +608,6 @@ light-years.
 Using $d = 1/p$: $d = 1/0.05 = 20$ pc.
 
 Converting to light-years: $20 \times 3.26 = 65.2$ ly.
-
 </details>
 
 **Problem 2.** A star has an apparent brightness of $2.0 \times 10^{-8}$ W m$^{-2}$ and a luminosity
@@ -624,7 +623,6 @@ $$d^2 = \frac{L}{4\pi b} = \frac{5.0 \times 10^{29}}{4\pi \times 2.0 \times 10^{
 $$d = \sqrt{1.99 \times 10^{36}} = 1.41 \times 10^{18}\;\text{m}$$
 
 Converting to parsecs: $d = 1.41 \times 10^{18}/(3.09 \times 10^{16}) = 45.6$ pc.
-
 </details>
 
 **Problem 3.** The Sun has a surface temperature of $5800$ K and a luminosity of
@@ -644,7 +642,6 @@ $$r^2 = \frac{3.85 \times 10^{26}}{4\pi \times 5.67 \times 10^{-8} \times 1.133 
 $$r = 6.91 \times 10^{8}\;\text{m} \approx 6.91 \times 10^{5}\;\text{km}$$
 
 This matches the accepted solar radius of $6.96 \times 10^{8}$ m.
-
 </details>
 
 **Problem 4.** A star has a surface temperature of $12,000$ K. Calculate the wavelength at which it
@@ -659,7 +656,6 @@ $$\lambda_{\max} = \frac{2.898 \times 10^{-3}}{T} = \frac{2.898 \times 10^{-3}}{
 
 This is in the **ultraviolet** region. The star appears blue-white to the human eye, with most of
 its visible output at shorter (blue) wavelengths.
-
 </details>
 
 **Problem 5.** A galaxy is observed to have a redshift $z = 0.05$. Calculate its recession velocity
@@ -672,7 +668,6 @@ From $z = v/c$: $v = 0.05 \times 3.0 \times 10^8 = 1.5 \times 10^{7}$ m s$^{-1}$
 s$^{-1}$.
 
 From Hubble's law: $d = v/H_0 = 15,000/70 = 214$ Mpc.
-
 </details>
 
 **Problem 6.** A reflecting telescope has a primary mirror of diameter $200$ mm. Calculate its
@@ -686,7 +681,6 @@ Using the Rayleigh criterion:
 $$\theta = \frac{1.22\lambda}{D} = \frac{1.22 \times 550 \times 10^{-9}}{0.200} = 3.36 \times 10^{-6}\;\text{rad}$$
 
 Converting to arcseconds: $\theta = 3.36 \times 10^{-6} \times 206,265 = 0.69''$.
-
 </details>
 
 **Problem 7.** A Cepheid variable in a nearby galaxy has a pulsation period of $10$ days. Its
@@ -707,7 +701,6 @@ $$\log_{10}\!\left(\frac{d}{10}\right) = 4.8$$
 $$\frac{d}{10} = 10^{4.8} = 6.31 \times 10^{4}$$
 
 $$d = 6.31 \times 10^{5}\;\text{pc} = 631\;\text{kpc}$$
-
 </details>
 
 **Problem 8.** Calculate the Schwarzschild radius of a black hole with mass $10\;M_\odot$.
@@ -721,7 +714,6 @@ $$r_s = \frac{2GM}{c^2} = \frac{2 \times 6.67 \times 10^{-11} \times 10 \times 1
 $$r_s = \frac{2.653 \times 10^{21}}{9.0 \times 10^{16}} = 2.95 \times 10^{4}\;\text{m} \approx 29.5\;\text{km}$$
 
 This is comparable to the size of a large city, containing ten times the mass of the Sun.
-
 </details>
 
 **Problem 9.** Two stars A and B have the same luminosity. Star A has a surface temperature of
@@ -741,7 +733,6 @@ $$\frac{r_A}{r_B} = \frac{1}{4} = 0.25$$
 
 Star A is four times smaller in radius than Star B, despite being twice as hot. Both emit the same
 total power --- Star B compensates for its lower temperature with a much larger surface area.
-
 </details>
 
 **Problem 10.** Estimate the age of the universe using $H_0 = 67.4$ km s$^{-1}$ Mpc$^{-1}$ (Planck
@@ -762,7 +753,6 @@ $$t_H = \frac{4.585 \times 10^{17}}{3.156 \times 10^7} = 1.453 \times 10^{10}\;\
 
 This is a reasonable estimate of the age of the universe. The accepted value from the Planck data is
 $\sim 13.8$ Gyr; the difference arises because the expansion rate has not been constant.
-
 </details>
 
 **Problem 11.** A radio telescope has a dish diameter of $30$ m and operates at a wavelength of $21$
@@ -787,7 +777,6 @@ $$\frac{\theta_{\text{radio}}}{\theta_{\text{optical}}} = \frac{8.54 \times 10^{
 The optical telescope resolves about 12,700 times finer detail despite its much smaller aperture,
 because the resolving power depends on $\lambda/D$ and the radio wavelength is $\sim 400,000$ times
 longer. This illustrates why radio astronomers use interferometry with baselines of many kilometres.
-
 </details>
 
 **Problem 12.** A Type Ia supernova in a distant galaxy has an apparent brightness of
@@ -804,7 +793,6 @@ $$d^2 = \frac{L}{4\pi b} = \frac{1.0 \times 10^{36}}{4\pi \times 3.2 \times 10^{
 $$d = 4.99 \times 10^{24}\;\text{m}$$
 
 Converting to megaparsecs: $d = 4.99 \times 10^{24}/(3.09 \times 10^{22}) = 161$ Mpc.
-
 </details>
 
 :::

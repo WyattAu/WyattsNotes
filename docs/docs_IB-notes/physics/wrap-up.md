@@ -34,7 +34,6 @@ slug: wrap
   - $d_{\text{horiz}} = \sqrt{s_x^2 + s_z^2} = \sqrt{641^2 + 85.6^2} = 647$ m.
 
 <b>If you get this wrong, you should focus on:</b> The principle of vector independence (treating x, y, and z motion separately), using the correct signs for vector quantities (like vertical displacement and velocity), and combining vector components using Pythagoras.
-
 </details>
 
 2. **Question:** A 2.0 kg block starts from rest on a rough incline (angle 25°, coefficient of dynamic friction μ_d = 0.20). It slides 3.0 m down the incline and collides perfectly inelastically with a 1.0 kg block at rest. The combined mass then slides an additional distance before stopping. Calculate this additional distance.
@@ -59,7 +58,6 @@ slug: wrap
   - $(12.43 - 5.33)x = 9.45 \implies 7.1x = 9.45 \implies x = 1.33$ m.
 
 <b>If you get this wrong, you should focus on:</b> Chaining together different physics principles (work-energy, momentum), correctly calculating work done by non-conservative forces like friction, and applying the correct form of conservation law to each stage of the problem.
-
 </details>
 
 3. **Question (HL Only):** A solid uniform disk (mass M, radius R, $I = \frac{1}{2}MR^2$) is free to rotate. A string is wrapped around its rim, and a block of mass m hangs from it. As the system is released from rest, a constant frictional torque $\tau_f$ opposes the disk's motion. Derive an expression for the angular acceleration ($\alpha$) of the disk.
@@ -81,7 +79,6 @@ slug: wrap
   - $\alpha = \frac{mgR - \tau_f}{R^2 (\frac{M}{2} + m)}$.
 
 <b>If you get this wrong, you should focus on:</b> Setting up coupled equations for systems with both linear and rotational motion, correctly identifying the direction of all forces and torques, and algebraically solving a system of equations.
-
 </details>
 
 4. **Question (HL Only):** A spaceship travels away from Earth at 0.80c. It fires a probe back towards Earth at 0.50c relative to the spaceship. A beacon on the probe flashes with a proper period of 2.0 s. What is the period of the flashes and the speed of the probe as measured by an observer on Earth?
@@ -102,7 +99,6 @@ slug: wrap
     - $\Delta t = 1.155 \times 2.0 = 2.31$ s.
 
 <b>If you get this wrong, you should focus on:</b> Correctly assigning reference frames and signs in the velocity addition formula, and remembering to use the final, relative speed between the object and the observer for the time dilation calculation.
-
 </details>
 
 </details>
@@ -128,7 +124,6 @@ slug: wrap
   - $P_2 = (1.0 \times 10^5) \frac{360.2}{300} = 1.20 \times 10^5$ Pa.
 
 <b>If you get this wrong, you should focus on:</b> Connecting the First Law of Thermodynamics to the specific formula for internal energy of a monatomic gas, and correctly applying the ideal gas law ratios for a constant-volume process.
-
 </details>
 
 2. **Question:** A spherical planet (radius 6000 km, no atmosphere, emissivity 0.80, albedo 0.25) orbits a star where the incident radiation intensity is 1500 W/m². Calculate the planet's steady-state surface temperature.
@@ -150,7 +145,6 @@ slug: wrap
     - $T = (6.20 \times 10^9)^{1/4} \approx 280.5$ K.
 
 <b>If you get this wrong, you should focus on:</b> Distinguishing between the area of absorption ($\pi R^2$) and the area of radiation ($4\pi R^2$), and correctly applying both albedo and emissivity in the energy balance equation.
-
 </details>
 
 3. **Question (HL Only):** 0.50 moles of a monatomic ideal gas undergo a cycle: A->B (isobaric expansion from V to 2V at $2\text{x}10^5$ Pa), B->C (isochoric cooling to original temperature T_A), C->A (isothermal compression). Find (i) the net work done and (ii) the cycle's efficiency.
@@ -174,7 +168,6 @@ slug: wrap
   - $\eta = \frac{W_{\text{net}}}{Q_{\text{in}}} = \frac{P_A V_A (1 - \ln 2)}{\frac{5}{2}P_A V_A} = \frac{2}{5}(1 - \ln 2) \approx 0.123$ or 12.3%.
 
 <b>If you get this wrong, you should focus on:</b> Applying the correct formulas for work and internal energy for each type of thermodynamic process (isobaric, isochoric, isothermal), and correctly identifying which stages of the cycle involve heat input ($Q_{\text{in}}$).
-
 </details>
 
 </details>
@@ -202,7 +195,6 @@ slug: wrap
   - $v'_{\text{max}} = \sqrt{2 E_{\text{total}} / M} = \sqrt{2 \cdot 0.786 / 0.80} = 1.40$ m/s.
 
 <b>If you get this wrong, you should focus on:</b> Applying conservation laws at the correct instant. Momentum is conserved _during_ the collision; energy is conserved _before_ and _after_ but not during an inelastic collision. Correctly calculating the total energy of an oscillator that has both KE and PE.
-
 </details>
 
 2. **Question (HL Only):** A diffraction grating with 500 lines/mm is illuminated by light from a source moving towards it. The light's proper wavelength is 600 nm. The second-order spectrum line is seen at 35.0°. Find the source's speed.
@@ -222,7 +214,6 @@ slug: wrap
   - $v \approx c \frac{\Delta\lambda}{\lambda} = (3.0 \times 10^8) \frac{26.4 \text{ nm}}{600 \text{ nm}} = 1.32 \times 10^7$ m/s.
 
 <b>If you get this wrong, you should focus on:</b> Chaining two separate wave concepts, correctly calculating the grating spacing from lines/mm, and applying the Doppler shift equation with the correct interpretation of blueshift vs. redshift.
-
 </details>
 
 </details>
@@ -249,7 +240,6 @@ slug: wrap
   - $W = GMm \left(\frac{3 - 2}{12R}\right) = \frac{GMm}{12R}$.
 
 <b>If you get this wrong, you should focus on:</b> Understanding that the work done to change an orbit is the change in _total_ mechanical energy (KE + PE), not just potential energy. Also, be careful with the negative signs in the energy formulas.
-
 </details>
 
 2. **Question (HL Only):** An alpha particle (+2e, 4u) is accelerated from rest through 5.0 kV. It then enters a uniform magnetic field B = 0.20 T, perpendicular to its velocity. What is the radius of its circular path?
@@ -267,7 +257,6 @@ slug: wrap
   - $r = \frac{mv}{qB} = \frac{(4 \times 1.661\times 10^{-27})(6.94\times 10^5)}{(2 \times 1.6\times 10^{-19})(0.20)} = 0.072$ m or 7.2 cm.
 
 <b>If you get this wrong, you should focus on:</b> Converting between energy in electron-volts (or from a voltage) and joules, and recalling the derivation for the radius of a particle in a B-field by equating magnetic force to centripetal force.
-
 </details>
 
 3. **Question (HL Only):** A rectangular loop (10cm x 5cm, 50 turns, 2.0 Ω) rotates at 30 rad/s in a 0.40 T B-field. The rotation axis is perpendicular to B. At t=0, the loop's plane is perpendicular to B. Find the peak induced current and the average power dissipated.
@@ -289,7 +278,6 @@ slug: wrap
   - $P_{\text{avg}} = \left(\frac{1.5}{\sqrt{2}}\right)^2 (2.0) = \frac{2.25}{2} \times 2.0 = 2.25$ W.
 
 <b>If you get this wrong, you should focus on:</b> The relationship between flux and EMF (Faraday's Law as a derivative), the difference between peak and RMS values for sinusoidal currents/voltages, and the correct formulas for average power.
-
 </details>
 
 </details>
@@ -314,7 +302,6 @@ slug: wrap
   - $V = \frac{E_k}{e} = \frac{2.41 \times 10^{-17}}{1.60 \times 10^{-19}} = 151$ V.
 
 <b>If you get this wrong, you should focus on:</b> The de Broglie hypothesis ($\lambda = h/p$), the relationship between momentum and kinetic energy ($E_k=p^2/2m$), and the work-energy principle for charges in an electric field ($E_k=qV$).
-
 </details>
 
 2. **Question (HL Only):** Ancient wood has a C-14 activity of 0.125 Bq. A modern sample of the same mass has an activity of 0.250 Bq. A different isotope, X, has a decay constant $\lambda = 3.85 \times 10^{-12} s^{-1}$. How many half-lives of X are equal to the wood's age? (Half-life of C-14 is 5730 years).
@@ -334,7 +321,6 @@ slug: wrap
   - The age of the wood is equal to approximately 1.0 half-life of isotope X.
 
 <b>If you get this wrong, you should focus on:</b> The definition of half-life in terms of activity, the relationship between half-life and decay constant ($T_{1/2} = \ln(2)/\lambda$), and performing consistent unit conversions.
-
 </details>
 
 3. **Question:** A star has a peak emission wavelength of 400 nm and luminosity of 1.6 x 10²⁷ W. Its spectrum shows the Balmer alpha absorption line (n=2 to n=3). Determine the radius of this star.
@@ -352,7 +338,6 @@ slug: wrap
   - $R = \sqrt{\frac{1.6 \times 10^{27}}{4\pi (5.67 \times 10^{-8}) (7250)^4}} = \sqrt{8.13 \times 10^{17}} = 9.02 \times 10^8$ m.
 
 <b>If you get this wrong, you should focus on:</b> Applying both Wien's Law and the Stefan-Boltzmann Law, and correctly rearranging the Stefan-Boltzmann equation to solve for the radius. Remember that luminosity is total power output.
-
 </details>
 
 </details>

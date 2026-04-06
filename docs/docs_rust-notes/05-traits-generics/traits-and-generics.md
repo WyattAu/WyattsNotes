@@ -534,11 +534,11 @@ struct Dog {
 }
 
 impl Animal for Dog {
-    fn name(&self) -> "dog"
+    fn name(&self) -> &'static str { "dog" }
 }
 
 impl Pet for Dog {
-    fn owner(&self) -> self.owner_name
+    fn owner(&self) -> &'static str { self.owner_name }
 }
 ```
 

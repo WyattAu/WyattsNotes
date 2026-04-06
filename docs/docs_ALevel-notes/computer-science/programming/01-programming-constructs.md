@@ -316,7 +316,6 @@ total sum. ✓
 
 **Termination:** Variant function $V(n) = n$. Each call: $V(n // 10) = \lfloor n/10 \rfloor \lt{} n$
 for $n \geq 10$. ✓
-
 </details>
 
 **Problem 2.** Convert the following while loop to a for loop:
@@ -335,7 +334,6 @@ while i <= 50:
 for i in range(5, 51, 5):
     print(i)
 ```
-
 </details>
 
 **Problem 3.** Prove that the following function computes $2^n$:
@@ -358,7 +356,6 @@ Inductive step: Assume `power_of_two(k) = 2^k` for $k \leq n$. Then
 `power_of_two(n+1) = 2 * power_of_two(n) = 2 * 2^n = 2^{n+1}`. ✓
 
 $\square$
-
 </details>
 
 **Problem 4.** Explain the difference between iteration and recursion. When would you prefer one
@@ -380,7 +377,6 @@ performance is critical.
 
 Prefer recursion when: the problem has a natural recursive structure (trees, divide-and-conquer),
 the depth is bounded (e.g., $\log n$), or readability is paramount.
-
 </details>
 
 **Problem 5.** Write a function that uses recursion to check if a string is a palindrome. Prove
@@ -401,7 +397,6 @@ def is_palindrome(s):
 **Termination.** Variant function: $V(s) = \text{len}(s)$. Each recursive call:
 $V(s[1:-1]) = \text{len}(s) - 2 \lt{} V(s)$ for $\text{len}(s) \geq 2$. Since $V$ is a non-negative
 integer that strictly decreases, the function must reach a base case. ✓
-
 </details>
 
 **Problem 6.** What is the output of the following code? Explain step by step.
@@ -423,7 +418,6 @@ Explanation: Python passes the integer `10` by object reference. Inside `modify`
 the local parameter `x` to a new integer object `20`. This does not affect the global `x`, which
 remains `10`. Integers are immutable in Python, so there is no way to modify the original value
 through the parameter.
-
 </details>
 
 **Problem 7.** Write a function `gcd(a, b)` using Euclid's algorithm. Prove it terminates and
@@ -454,7 +448,6 @@ $e | (q \cdot b + a \bmod b) = a$. Hence $e | \gcd(a, b)$.
 Since $d | e$ and $e | d$, $d = e$. ✓
 
 Base case: $\gcd(a, 0) = a$. ✓
-
 </details>
 
 **Problem 8.** A student writes the following recursive function. Identify the bug and fix it:
@@ -491,7 +484,6 @@ def countdown(n):
         print(n)
         n -= 1
 ```
-
 </details>
 
 For revision on data structures that use recursion, see

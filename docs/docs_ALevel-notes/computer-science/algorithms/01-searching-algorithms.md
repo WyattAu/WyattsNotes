@@ -147,7 +147,6 @@ use `mid = low + (high - low) // 2` for safety.
 | 1         | 0   | 6    | 3   | 7      | Found! Return 3 |
 
 Result: index 3. ✓
-
 </details>
 
 <details>
@@ -161,7 +160,6 @@ Result: index 3. ✓
 | 4         | 3   | 2    | —   | —      | low > high, return -1 |
 
 Result: -1 (not found). ✓
-
 </details>
 
 ### Recursive Binary Search
@@ -253,7 +251,6 @@ The value 8 is not in the array. All 8 elements are checked:
 | 8    | 7     | 6        | 6 ≠ 8      | 8     |
 
 Total comparisons: 8. Return -1.
-
 </details>
 
 **Problem 2.** Trace binary search for the value 25 in the sorted array
@@ -271,7 +268,6 @@ Total comparisons: 8. Return -1.
 | 5         | 6   | 5    | —   | —      | low > high → -1   |
 
 4 comparisons. Result: -1.
-
 </details>
 
 **Problem 3.** An array of 1024 elements is searched using binary search. What is the maximum number
@@ -284,7 +280,6 @@ $\lfloor \log_2 1024 \rfloor + 1 = 10 + 1 = 11$ comparisons.
 
 More precisely, binary search on $n = 1024$ elements requires at most
 $\lceil \log_2(1024 + 1) \rceil = \lceil 10.001 \rceil = 11$ comparisons.
-
 </details>
 
 **Problem 4.** Prove that binary search cannot be directly applied to a singly linked list, and
@@ -299,7 +294,6 @@ the middle of a list of $n$ elements takes $O(n/2) = O(n)$ time, eliminating the
 
 Alternative: **Jump list / Skip list** — a data structure with multiple levels of linked lists that
 allows $O(\log n)$ search by "skipping" ahead at higher levels, analogous to binary search.
-
 </details>
 
 **Problem 5.** Explain why the worst case for linear search is $\Omega(n)$ using an adversary
@@ -313,7 +307,6 @@ not at any position already examined by the algorithm. After $n - 1$ comparisons
 except one have been checked. The adversary places $x$ at the remaining unchecked position (or
 declares it absent). Therefore, any correct algorithm must check all $n$ positions in the worst
 case, requiring $\Omega(n)$ comparisons. $\square$
-
 </details>
 
 **Problem 6.** Write a function to count the number of occurrences of a value in a sorted array
@@ -334,7 +327,6 @@ def count_occurrences(A, x):
 ```
 
 Two binary searches: $O(\log n) + O(\log n) = O(\log n)$.
-
 </details>
 
 **Problem 7.** Given an array that is sorted but rotated (e.g., `[4, 5, 6, 7, 0, 1, 2]`), write a
@@ -365,7 +357,6 @@ def search_rotated(A, x):
 
 The key insight: one half of the array (left or right of mid) is always sorted. Determine which half
 is sorted and whether the target lies within it.
-
 </details>
 
 **Problem 8.** A binary search implementation has the following bug: `mid = (low + high) / 2` (using
@@ -384,7 +375,6 @@ non-negative and less than `INT_MAX`.
 
 For revision on sorting, see
 [Sorting Algorithms](/docs/docs_ALevel-notes/computer-science/algorithms/sorting-algorithms).
-
 </details>
 
 ---
@@ -399,7 +389,6 @@ many comparisons are made until the item is found?
 
 Step through each element from index 0, comparing each with the target 14. Count each comparison
 until a match is found.
-
 </details>
 
 <details>
@@ -412,7 +401,6 @@ until a match is found.
 | 3    | 2     | 14       | 14 = 14 ✓  | 3     |
 
 3 comparisons are made. The value 14 is found at index 2. The algorithm returns 2.
-
 </details>
 
 **Problem 2.** Trace linear search for the value 5 in the array
@@ -423,7 +411,6 @@ until a match is found.
 
 The value 5 is not in the array, so the algorithm must check every single element before returning
 -1.
-
 </details>
 
 <details>
@@ -443,7 +430,6 @@ The value 5 is not in the array, so the algorithm must check every single elemen
 
 9 comparisons are made. The value 5 is not found, so the algorithm returns -1. This is the worst
 case for an array of 9 elements — every element must be checked.
-
 </details>
 
 **Problem 3.** Trace binary search for the value 42 in the sorted array
@@ -455,7 +441,6 @@ taken.
 
 Start with low = 0, high = 9. Calculate mid = (0 + 9) // 2 = 4. Compare A[4] with 42 and adjust the
 range accordingly.
-
 </details>
 
 <details>
@@ -468,7 +453,6 @@ range accordingly.
 | 3         | 5   | 6    | 5   | 42     | Found! Return 5   |
 
 3 comparisons are made. The value 42 is found at index 5.
-
 </details>
 
 **Problem 4.** Trace binary search for the value 15 in the sorted array
@@ -479,7 +463,6 @@ range accordingly.
 
 The value 15 lies between 14 (index 3) and 18 (index 4). The algorithm will narrow down to this gap
 and then terminate with low > high.
-
 </details>
 
 <details>
@@ -493,7 +476,6 @@ and then terminate with low > high.
 | 4         | 4   | 3    | —   | —      | low > high, return |
 
 4 comparisons are made. The value 15 is not in the array, so the algorithm returns -1.
-
 </details>
 
 **Problem 5.** An unsorted array of 10,000 elements must be searched repeatedly. Compare the total
@@ -505,7 +487,6 @@ binary search for 1,000 queries.
 
 Calculate the cost of each approach: (a) 1,000 linear searches, and (b) one sort plus 1,000 binary
 searches. Use O(n log n) for sorting and O(log n) for each binary search.
-
 </details>
 
 <details>
@@ -522,7 +503,6 @@ searches. Use O(n log n) for sorting and O(log n) for each binary search.
 Sort + binary search is approximately **68 times more efficient** in total. The one-time cost of
 sorting is quickly amortised over multiple queries. The more queries needed, the greater the
 advantage of sorting first.
-
 </details>
 
 **Problem 6.** A database contains 500,000 records sorted by a unique key field. Explain which
@@ -534,7 +514,6 @@ algorithm.
 
 Since the data is already sorted, binary search can be applied directly. Calculate ⌊log₂(n)⌋ + 1 for
 the binary search worst case.
-
 </details>
 
 <details>
@@ -549,7 +528,6 @@ complexity: $O(\log n)$.
 Binary search is dramatically more efficient — at most 19 comparisons versus 500,000 for linear
 search, an improvement factor of approximately 26,000×. Since the data is already sorted, there is
 no additional preprocessing cost.
-
 </details>
 
 **Problem 7.** Calculate the maximum number of comparisons required for binary search on arrays of
@@ -561,7 +539,6 @@ $\lfloor \log_2 n \rfloor + 1$.
 
 Apply the formula $\lfloor \log_2 n \rfloor + 1$ to each array size. Remember that
 $\lfloor x \rfloor$ means the greatest integer less than or equal to $x$.
-
 </details>
 
 <details>
@@ -578,7 +555,6 @@ Using $\lfloor \log_2 n \rfloor + 1$:
 
 This demonstrates the power of logarithmic growth: searching through a million elements requires
 only 20 comparisons maximum.
-
 </details>
 
 **Problem 8.** Write pseudocode for (a) a linear search that returns the index of the first
@@ -590,7 +566,6 @@ index of the target or -1 if not found.
 
 Linear search uses a simple FOR loop checking each element. Binary search uses a WHILE loop with low
 and high pointers, calculating mid each iteration.
-
 </details>
 
 <details>
@@ -631,7 +606,6 @@ ENDFUNCTION
 
 Note: In the binary search, `DIV 2` performs integer division (floor division), which is equivalent
 to `//` in Python.
-
 </details>
 
 **Problem 9.** Trace binary search for the value 17 in the sorted array
@@ -642,7 +616,6 @@ to `//` in Python.
 
 The array has 11 elements (indices 0–10). Start with low = 0, high = 10. The first mid will be
 (0 + 10) // 2 = 5.
-
 </details>
 
 <details>
@@ -656,7 +629,6 @@ The array has 11 elements (indices 0–10). Start with low = 0, high = 10. The f
 | 4         | 4   | 4    | 4   | 17     | 17 = 17 ✓  | Found! Return 4 |
 
 4 comparisons are made. The value 17 is found at index 4.
-
 </details>
 
 **Problem 10.** (Exam-style) A school library system stores 20,000 book records. The librarian needs
@@ -671,7 +643,6 @@ is most appropriate, stating your assumptions about the data structure and order
 Consider three factors for each scenario: (1) Is the data sorted? (2) How large is the dataset? (3)
 How many searches will be performed? The cost of sorting must be weighed against the benefit of
 binary search.
-
 </details>
 
 <details>
@@ -699,7 +670,6 @@ sorted.
 | (a) ISBN lookup       | 20,000    | Yes     | Binary search  | 15              |
 | (b) Recently returned | 50        | No      | Linear search  | 50              |
 | (c) Price lookup      | 20,000    | Yes     | Binary search  | 15              |
-
 </details>
 
 :::

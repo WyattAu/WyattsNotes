@@ -81,18 +81,19 @@ assert_eq!(result, 5050);
 parent scope without `move` or `'static`:
 
 ```rust
+use std::sync::Mutex;
 use std::thread;
 
 let data = vec![1, 2, 3, 4, 5];
 
-let mut results = Vec::new();
+let mut results = Mutex::new(Vec::new());
 
 thread::scope(|s| {
     for chunk in data.chunks(2) {
         let chunk = chunk.to_vec();
         s.spawn(|| {
             let sum: i32 = chunk.iter().sum();
-            results.push(sum);
+            results.lock().unwrap().push(sum);
         });
     }
 });  // all spawned threads are joined here
@@ -840,16 +841,16 @@ The compiler automatically implements `Send` and `Sync` based on the composition
 - A type is `Send` if all its members are `Send`.
 - A type is `Sync` if all its members are `Sync` (equivalently, if `&T` is `Send`).
 
-| Type                               | `Send` | `Sync`                |
-| ---------------------------------- | ------ | --------------------- |
-| `i32`, `f64`, `bool`               | Yes    | Yes                   |
-| `String`, `Vec<T>` where `T: Send` | Yes    | Yes                   |
-| `Box<T>` where `T: Send`           | Yes    | No (unless `T: Sync`) |
-| `Rc<T>`                            | No     | No                    |
-| `Arc<T>` where `T: Send + Sync`    | Yes    | Yes                   |
-| `&T` where `T: Sync`               | Yes    | No                    |
-| `&mut T`                           | No     | No                    |
-| `Mutex<T>` where `T: Send`         | Yes    | Yes                   |
+| Type                                      | `Send` | `Sync`                |
+| ----------------------------------------- | ------ | --------------------- |
+| `i32`, `f64`, `bool`                      | Yes    | Yes                   |
+| `String`, `Vec<T>` where `T: Send + Sync` | Yes    | Yes                   |
+| `Box<T>` where `T: Send`                  | Yes    | No (unless `T: Sync`) |
+| `Rc<T>`                                   | No     | No                    |
+| `Arc<T>` where `T: Send + Sync`           | Yes    | Yes                   |
+| `&T` where `T: Sync`                      | Yes    | Yes                   |
+| `&mut T` where `T: Send`                  | Yes    | No                    |
+| `Mutex<T>` where `T: Send`                | Yes    | Yes                   |
 
 ### Manual Implementation
 

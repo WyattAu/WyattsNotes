@@ -31,8 +31,7 @@ slug: sequences-series
      - $FV = 9000(1.06)^{10} \approx 9000(1.790847) \approx £16,117.62$.
 
    <b>If you get this wrong, you should focus on:</b> Separating a multi-stage problem, calculating the sum of a finite arithmetic series, and applying the formula for compound interest (a geometric sequence application).
-
-   </details>
+</details>
 
 2. **Question:** A patient is given an initial dose of 20mg of a medication. Every day, they take a 10mg maintenance dose. The drug is eliminated from the body such that 50% of the total amount is removed every 24 hours. What is the limiting amount of the drug in the body in the long run (i.e., the steady state amount)?
 
@@ -54,8 +53,7 @@ slug: sequences-series
    - The limiting amount of the drug in the body, measured just after taking the dose, is 20 mg. The amount will then fluctuate between 20mg (just after the dose) and 10mg (just before the next dose). The question asks for the limiting amount, which in this context usually refers to the peak steady-state level.
 
    <b>If you get this wrong, you should focus on:</b> Modeling real-world scenarios with recurrence relations and finding the fixed point or steady state of the system by taking the limit.
-
-   </details>
+</details>
 
 3. **Question:** Find the exact sum of the infinite series $\sum_{n=1}^{\infty} \frac{1}{n(n+1)(n+2)}$.
 
@@ -82,8 +80,7 @@ slug: sequences-series
      - $$ S = \lim*{N\to\infty} S_N = \lim*{N\to\infty} \frac{1}{2}\left[ \frac{1}{2} - \frac{1}{N+1} + \frac{1}{N+2} \right] = \frac{1}{2} \left( \frac{1}{2} - 0 + 0 \right) = \frac{1}{4} $$
 
    <b>If you get this wrong, you should focus on:</b> Partial fraction decomposition for cubic denominators and identifying the cancellation pattern in telescoping series.
-
-   </details>
+</details>
 
 4. **Question:** The area of a Koch snowflake can be found by summing an infinite series. Start with an equilateral triangle of area $A$. At each step, a new equilateral triangle is added to the middle third of each existing side. The new triangle's side length is 1/3 of the side it's added to. Find the total area of the snowflake after an infinite number of steps in terms of the initial area $A$.
 
@@ -114,8 +111,7 @@ slug: sequences-series
      - The total area is $A_{total} = A + A \left( \frac{3}{5} \right) = \frac{8}{5}A$.
 
    <b>If you get this wrong, you should focus on:</b> Modeling a geometric process, identifying the first term and common ratio of the resulting geometric series, and calculating the sum.
-
-   </details>
+</details>
 
 5. **Question:** A student is trying to determine if the series $\sum_{n=1}^{\infty} \frac{n^2+n}{n^3+2}$ converges. They first try the Ratio Test, but find it inconclusive. Show why the Ratio Test is inconclusive, and then use a more appropriate test to definitively determine convergence or divergence.
 
@@ -141,8 +137,7 @@ slug: sequences-series
      - Since the limit is a finite, positive number ($0 < L < \infty$), and the comparison series $\sum \frac{1}{n}$ diverges, the original series $\sum \frac{n^2+n}{n^3+2}$ also diverges by the Limit Comparison Test.
 
    <b>If you get this wrong, you should focus on:</b> Understanding the limitations of the Ratio Test (especially for rational functions) and applying the Limit Comparison Test by choosing an appropriate p-series to compare with.
-
-   </details>
+</details>
 
 6. **Question:** A programmer needs to approximate $\cos(0.2)$ for a low-power device. They decide to use a Maclaurin polynomial. What is the minimum degree of the polynomial required to guarantee an approximation error less than $10^{-7}$?
 
@@ -163,8 +158,7 @@ slug: sequences-series
    - Therefore, using a polynomial of degree 4 (or 5) is sufficient. The minimum degree required to include the $x^4$ term is 4.
 
    <b>If you get this wrong, you should focus on:</b> The Alternating Series Estimation Theorem and how it applies to Taylor series approximations for functions like sine and cosine.
-
-   </details>
+</details>
 
 7. **Question:** The function $f(x) = \sin(x^2)$ is notoriously difficult to integrate. Approximate the value of the definite integral $\int_0^1 \sin(x^2) dx$ by integrating the first three non-zero terms of its Maclaurin series.
 
@@ -187,8 +181,7 @@ slug: sequences-series
      - Approximation $\approx 0.333333 - 0.023810 + 0.000758 = 0.310281$.
 
    <b>If you get this wrong, you should focus on:</b> Creating new series from known Maclaurin series via substitution, and performing term-by-term integration of a power series to approximate a definite integral.
-
-   </details>
+</details>
 
 8. **Question:** A ball is dropped from a height of 10 meters. After each bounce, it returns to 75% of its previous height. The time it takes to fall from a height $h$ is $\sqrt{h/5}$ seconds, and the time it takes to rise to a height $h$ is also $\sqrt{h/5}$ seconds. What is the total time the ball is in the air?
 
@@ -216,8 +209,7 @@ slug: sequences-series
      - Total Time = $\sqrt{2} + 18.28 \approx 1.414 + 18.28 = 19.694$ seconds.
 
    <b>If you get this wrong, you should focus on:</b> Setting up a model based on a word problem, identifying the correct geometric series (especially the common ratio), and summing an infinite geometric series.
-
-   </details>
+</details>
 
 9. **Question:** Show that the series $\sum_{n=2}^{\infty} \frac{(-1)^n}{\sqrt{n} \ln(n)}$ is conditionally convergent.
 
@@ -241,8 +233,7 @@ slug: sequences-series
      - The series converges, but it does not converge absolutely. Therefore, the series is conditionally convergent.
 
    <b>If you get this wrong, you should focus on:</b> The definition of conditional and absolute convergence, applying the Alternating Series Test, and using the Direct Comparison Test with a suitable bounding function (like comparing $\ln(n)$ to a power of $n$).
-
-   </details>
+</details>
 
 10. **Question:** Find the complete interval of convergence for the power series $\sum_{n=1}^{\infty} \frac{(2x-5)^n}{n \cdot 3^n}$.
 
@@ -269,8 +260,7 @@ slug: sequences-series
       - The interval of convergence is $[1, 4)$.
 
     <b>If you get this wrong, you should focus on:</b> The full process for finding the interval of convergence: using the Ratio Test correctly with a center other than 0, solving the resulting inequality, and carefully testing the endpoints using appropriate series tests (like p-series or AST).
-
-    </details>
+</details>
 
 11. **Question:** A sequence is defined by the recurrence relation $a_{n+1} = \frac{1}{2}(a_n + \frac{9}{a_n})$ with $a_1 = 1$. Assuming the sequence converges, what is its limit? Then, calculate the first four terms of the sequence to observe its rate of convergence.
 
@@ -293,8 +283,7 @@ slug: sequences-series
     - **Observation:** The sequence converges to the limit of 3 very quickly. The first term is off by 2, the second is off by 2, the third is off by 0.4, and the fourth is only off by about 0.02. This demonstrates quadratic convergence.
 
     <b>If you get this wrong, you should focus on:</b> The technique for finding the limit of a convergent recursive sequence and performing iterative calculations.
-
-    </details>
+</details>
 
 12. **Question:** Determine if the series $\sum_{n=1}^\infty \left(1 - \frac{1}{n}\right)^{n^2}$ converges or diverges. (Hint: A test other than the Ratio Test will be much more effective).
 
@@ -312,8 +301,7 @@ slug: sequences-series
     - Because the limit $L$ is less than 1, the series converges by the Root Test.
 
     <b>If you get this wrong, you should focus on:</b> Recognizing when to apply the Root Test (especially for terms with powers of n) and knowing the limit definition of the exponential function $e^x$.
-
-    </details>
+</details>
 
 13. **Question:** Find the sum of the series $\sum_{n=1}^{\infty} \frac{2}{n^2+4n+3}$.
 
@@ -342,8 +330,7 @@ slug: sequences-series
       - $$ S = \lim\_{N\to\infty} \left( \frac{1}{2} + \frac{1}{3} - \frac{1}{N+2} - \frac{1}{N+3} \right) = \frac{1}{2} + \frac{1}{3} - 0 - 0 = \frac{3+2}{6} = \frac{5}{6} $$
 
     <b>If you get this wrong, you should focus on:</b> Factoring quadratic denominators, partial fraction decomposition, and carefully identifying the surviving terms in a telescoping series where the terms are not consecutive.
-
-    </details>
+</details>
 
 14. **Question:** A bank offers a special savings account. If you deposit £100 on the first day of the month, they add a £1 bonus at the end of the month. If you deposit £100 on the first day of the next month, they add a £2 bonus, and so on, with the bonus increasing by £1 each month. You deposit £100 each month for 2 years (24 months). What is the total amount of money in the account immediately after the 24th month's bonus is paid? (Assume no other interest is paid).
 
@@ -363,8 +350,7 @@ slug: sequences-series
       - Total Amount = $2,400 + 300 = £2,700$.
 
     <b>If you get this wrong, you should focus on:</b> Breaking a word problem into its constituent parts and recognizing how to apply the formula for the sum of a simple arithmetic series.
-
-    </details>
+</details>
 
 15. **Question:** Using the Maclaurin series for $e^x$, find the exact value of the sum $\sum_{n=0}^{\infty} \frac{2^n}{n!}$. Then, use this result to find the sum of the related series $\sum_{n=2}^{\infty} \frac{2^n}{(n-1)!}$.
 
@@ -386,8 +372,7 @@ slug: sequences-series
         - $$ S = 2(e^2 - 1) $$
 
     <b>If you get this wrong, you should focus on:</b> Recognizing known Maclaurin series, and using index manipulation (re-indexing) to transform a given series into a more familiar form.
-
-    </details>
+</details>
 
 16. **Question:** The sum $\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}$ is a well-known formula. Use this to find the value of the series $\sum_{k=5}^{20} (3k^2 - 5)$.
 
@@ -407,8 +392,7 @@ slug: sequences-series
       - Original expression = $3(2840) - 80 = 8520 - 80 = 8440$.
 
     <b>If you get this wrong, you should focus on:</b> Properties of sigma notation, specifically how to change the starting and ending indices of a sum to match a known formula.
-
-    </details>
+</details>
 
 17. **Question:** Does the series $\sum_{n=1}^\infty \frac{n^n}{n!}$ converge or diverge? Justify your answer with an appropriate test.
 
@@ -428,8 +412,7 @@ slug: sequences-series
     - Since $L = e \approx 2.718 > 1$, the series diverges by the Ratio Test.
 
     <b>If you get this wrong, you should focus on:</b> The Test for Divergence as a first-line check, and the application of the Ratio Test leading to the limit definition of $e$.
-
-    </details>
+</details>
 
 18. **Question:** A sequence is defined recursively by $x_1 = \sqrt{2}$ and $x_{n+1} = \sqrt{2 + x_n}$ for $n \ge 1$. Prove that this sequence converges and find its limit.
 
@@ -461,7 +444,6 @@ slug: sequences-series
       - Therefore, the limit of the sequence is 2.
 
     <b>If you get this wrong, you should focus on:</b> The Monotone Convergence Theorem, proof by mathematical induction for boundedness and monotonicity, and finding the limit of a recursively defined sequence.
-
-    </details>
+</details>
 
 </details>

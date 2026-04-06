@@ -296,7 +296,6 @@ $r = \dfrac{4}{\sqrt{10 \times 14.8}} = \dfrac{4}{\sqrt{148}} = \dfrac{4}{12.166
 
 **If you get this wrong, revise:**
 [Pearson's PMCC](#1-pearsons-product-moment-correlation-coefficient-pmcc) — Section 1.
-
 </details>
 
 <details>
@@ -314,7 +313,6 @@ Regression line: $y = 3.0 + 0.4x$.
 
 **If you get this wrong, revise:** [Least Squares Regression](#3-least-squares-regression) —
 Section 3.
-
 </details>
 
 <details>
@@ -322,7 +320,6 @@ Section 3.
 For the data below, calculate Spearman's rank correlation coefficient.
 
 | $x$ | 10 | 20 | 30 | 40 | 50 | | $y$ | 15 | 25 | 18 | 35 | 42 |
-
 </details>
 
 <details>
@@ -337,7 +334,6 @@ $r_s = 1 - \dfrac{6 \times 2}{5(25-1)} = 1 - \dfrac{12}{120} = 1 - 0.1 = 0.9$.
 
 **If you get this wrong, revise:**
 [Spearman's Rank Correlation](#2-spearmans-rank-correlation-coefficient) — Section 2.
-
 </details>
 
 <details>
@@ -350,7 +346,6 @@ Prove that $\sum e_i = 0$ where $e_i = y_i - (a + bx_i)$ are the residuals of th
 $$\sum e_i = \sum y_i - na - b\sum x_i = n\bar{y} - n(\bar{y} - b\bar{x}) - bn\bar{x} = n\bar{y} - n\bar{y} + nb\bar{x} - nb\bar{x} = 0 \quad \blacksquare$$
 
 **If you get this wrong, revise:** [Residuals](#51-residuals) — Section 5.1.
-
 </details>
 
 <details>
@@ -367,7 +362,6 @@ $y = 1 + 0.6(x-10) = 1 + 0.6x - 6 = 0.6x - 5$.
 So $y = -5 + 0.6x$.
 
 **If you get this wrong, revise:** [Coding in Regression](#6-coding-in-regression) — Section 6.
-
 </details>
 
 <details>
@@ -380,7 +374,6 @@ A student finds $r = 0.95$ between ice cream sales and drowning deaths. The stud
 Correlation does not imply causation. Both ice cream sales and drowning deaths are influenced by a **confounding variable**: hot weather. In summer, more people buy ice cream and more people swim, leading to more of both. The correlation is real but the causal claim is not supported.
 
 **If you get this wrong, revise:** [Properties](#12-properties) — Section 1.2.
-
 </details>
 
 <details>
@@ -398,7 +391,6 @@ Proportion of variance explained $= r^2 = 0.625$ (62.5%).
 
 **If you get this wrong, revise:** [Least Squares Regression](#3-least-squares-regression) —
 Section 3.
-
 </details>
 
 <details>
@@ -415,7 +407,6 @@ $\bar{y} = 2 + 3(5) = 17$.
 **If you get this wrong, revise:**
 [The Regression Line Passes Through $(\bar{x}, \bar{y})$](#4-the-regression-line-passes-through-barx-bary)
 — Section 4.
-
 </details>
 
 <details>
@@ -432,7 +423,6 @@ A more appropriate approach would be to fit a quadratic model $y = a + bx + cx^2
 transformation (e.g., taking logarithms) to linearise the relationship.
 
 **If you get this wrong, revise:** [Residual Plots](#54-residual-plots) — Section 5.4.
-
 </details>
 
 <details>
@@ -450,7 +440,6 @@ Dataset B provides far stronger statistical evidence because random fluctuations
 likely to produce $r = 0.85$ with 100 observations.
 
 **If you get this wrong, revise:** [Properties](#12-properties) — Section 1.2.
-
 </details>
 
 <details>
@@ -463,7 +452,6 @@ Eight students were ranked by two teachers for a presentation. The rankings are:
 | Teacher 2 | 1   | 6   | 2   | 8   | 4   | 7   | 3   | 5   |
 
 Calculate Spearman's rank correlation coefficient and interpret the result.
-
 </details>
 
 <details>
@@ -485,7 +473,6 @@ consistent assessment standards.
 
 **If you get this wrong, revise:**
 [Spearman's Rank Correlation](#2-spearmans-rank-correlation-coefficient) — Section 2.
-
 </details>
 
 <details>
@@ -494,7 +481,6 @@ A medical researcher collects data on blood pressure ($x$ mmHg) and cholesterol 
 
 (a) Calculate the PMCC and interpret it. (b) Find the regression line of $y$ on $x$. (c) Predict the
 cholesterol level for a patient with blood pressure of 150 mmHg. Comment on the reliability.
-
 </details>
 
 <details>
@@ -519,7 +505,6 @@ be treated as precise.
 
 **If you get this wrong, revise:** [Least Squares Regression](#3-least-squares-regression) — Section
 3, and [Extrapolation](#52-extrapolation) — Section 5.2.
-
 </details>
 
 <details>
@@ -528,7 +513,6 @@ Data is coded using $u = (x - 20)/5$ and $v = (y - 100)/10$. The coded PMCC is $
 
 Find: (a) The PMCC for the original data. (b) The regression line of $y$ on $x$ in original
 variables.
-
 </details>
 
 <details>
@@ -552,7 +536,6 @@ $$y = 80 + 1.6x$$
 
 **If you get this wrong, revise:** [Coding in Regression](#6-coding-in-regression) — Section 6, and
 [Effect of Coding on Correlation](#61-effect-of-coding-on-correlation) — Section 6.1.
-
 </details>
 
 <details>
@@ -579,7 +562,6 @@ a large amount.
 
 **If you get this wrong, revise:**
 [Outliers and Influential Points](#55-outliers-and-influential-points) — Section 5.5.
-
 </details>
 
 :::

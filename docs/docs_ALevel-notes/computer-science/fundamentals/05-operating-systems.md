@@ -446,7 +446,6 @@ need to manage processes?
 <summary>Hint</summary>
 
 A program is passive; a process is active. Think about what extra state a running program needs.
-
 </details>
 
 <details>
@@ -459,7 +458,6 @@ files, and process control block.
 The OS must manage processes because multiple processes compete for limited CPU time, memory, and
 I/O resources. The OS ensures fair scheduling, memory isolation between processes, and proper
 resource allocation so that each process executes correctly without interfering with others.
-
 </details>
 
 **Problem 2.** A system uses round-robin scheduling with a time quantum of 4 ms. Three processes
@@ -470,7 +468,6 @@ calculate the average waiting time.
 <summary>Hint</summary>
 
 Processes run in order P1, P2, P3, P1, P3, P1, P3, P1. Track remaining burst time each cycle.
-
 </details>
 
 <details>
@@ -486,7 +483,6 @@ Processes run in order P1, P2, P3, P1, P3, P1, P3, P1. Track remaining burst tim
 - P3: finishes at 24 ms, burst = 7 ms → waiting time = 24 - 7 - 0 = 17 ms
 
 Average waiting time: $(15 + 4 + 17) / 3 = 12$ ms.
-
 </details>
 
 **Problem 3.** Describe the steps the operating system takes during a context switch from process A
@@ -496,7 +492,6 @@ to process B.
 <summary>Hint</summary>
 
 The OS must save A's state, select B, and restore B's state. Consider what state needs saving.
-
 </details>
 
 <details>
@@ -513,7 +508,6 @@ The OS must save A's state, select B, and restore B's state. Consider what state
 
 Steps 2 and 5 involve the most overhead, especially if the page tables must be flushed or the TLB is
 invalidated.
-
 </details>
 
 **Problem 4.** A system uses 32-bit virtual addresses with 4 KiB pages. Physical memory is 1 GiB.
@@ -524,7 +518,6 @@ How many bits are used for the offset, virtual page number, and physical frame n
 
 Page size determines offset bits. Virtual page number comes from the virtual address width. Frame
 number comes from the physical address width.
-
 </details>
 
 <details>
@@ -539,7 +532,6 @@ Physical memory = 1 GiB = $2^{30}$ bytes, so physical address = 30 bits.
 Physical frame number = $30 - 12 = 18$ bits.
 
 Each page table entry stores the 18-bit frame number plus flag bits (present, dirty, permissions).
-
 </details>
 
 **Problem 5.** Explain the difference between interrupt-driven I/O and polling. When is each
@@ -549,7 +541,6 @@ approach more appropriate?
 <summary>Hint</summary>
 
 Consider the trade-off between CPU utilisation and implementation complexity.
-
 </details>
 
 <details>
@@ -566,7 +557,6 @@ waiting.
 
 In general, interrupt-driven I/O is preferred for most systems because it maximises CPU utilisation.
 Polling is used only in specialised cases such as low-latency embedded systems.
-
 </details>
 
 **Problem 6.** A file system uses contiguous allocation. A disk has 10,000 blocks. Files A, B, and C
@@ -579,7 +569,6 @@ might arise over time?
 
 With contiguous allocation, new files are placed in the first available free space. Track the free
 blocks.
-
 </details>
 
 <details>
@@ -594,7 +583,6 @@ File D (30 blocks) is placed starting at block 0, using blocks 0–29. Blocks 30
 small to satisfy new file requests, even though the total free space is sufficient. The solution is
 **compaction** (moving files to create contiguous free space) or using non-contiguous allocation
 (linked or indexed).
-
 </details>
 
 **Problem 7.** Explain what a page fault is and describe the steps the OS takes to handle one.
@@ -603,7 +591,6 @@ small to satisfy new file requests, even though the total free space is sufficie
 <summary>Hint</summary>
 
 The CPU tries to access a virtual page that is not in physical memory. The OS must get it from disk.
-
 </details>
 
 <details>
@@ -624,7 +611,6 @@ Steps taken by the OS:
 6. The OS updates the page table entry for the new page (sets the frame number and present bit)
 7. The OS invalidates any TLB entry for the faulting page
 8. The faulting instruction is restarted, and this time the translation succeeds
-
 </details>
 
 **Problem 8.** Compare and contrast the three file allocation methods: contiguous, linked, and
@@ -634,7 +620,6 @@ indexed. Give a scenario where each is most appropriate.
 <summary>Hint</summary>
 
 Consider access speed, fragmentation, and the ability to grow files.
-
 </details>
 
 <details>
@@ -660,7 +645,6 @@ Consider access speed, fragmentation, and the ability to grow files.
 - No external fragmentation of data blocks; supports file growth (within index limits)
 - Index block overhead; multi-level indexing needed for very large files
 - Best for: general-purpose file systems (used by UNIX, ext4, NTFS)
-
 </details>
 
 **Problem 9.** Explain how DMA improves system performance compared to programmed I/O (where the CPU
@@ -670,7 +654,6 @@ copies every byte). Use a concrete example.
 <summary>Hint</summary>
 
 Consider a disk read of 4 KiB. How many CPU cycles does each approach consume?
-
 </details>
 
 <details>
@@ -688,7 +671,6 @@ controller sends a single interrupt to the CPU.
 For example, reading a 4 KiB disk block: programmed I/O might take ~4,000 CPU instructions and
 millions of cycles. DMA reduces this to ~2 CPU instructions (setup) plus one interrupt, saving
 millions of cycles that can be used for computation.
-
 </details>
 
 **Problem 10.** Describe how the operating system uses an access control list (ACL) to determine
@@ -699,7 +681,6 @@ open request is received.
 <summary>Hint</summary>
 
 The OS checks the user's identity against the ACL entries for the requested operation.
-
 </details>
 
 <details>
@@ -718,7 +699,6 @@ When a user process calls `open("report.pdf", WRITE)`:
 
 This mechanism allows fine-grained control: different users can have different levels of access to
 the same file, and the owner can modify the ACL to add or revoke permissions at any time.
-
 </details>
 
 :::

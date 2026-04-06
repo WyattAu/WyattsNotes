@@ -209,7 +209,6 @@ There is evidence at the 5% level that the die is biased.
 
 **If you get this wrong, revise:** [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) —
 Section 5.
-
 </details>
 
 <details>
@@ -233,7 +232,6 @@ There is evidence that the proportion passing quality control is less than 90%.
 
 **If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) —
 Section 6.
-
 </details>
 
 <details>
@@ -250,7 +248,6 @@ goes untreated, potentially with serious consequences.
 
 **If you get this wrong, revise:** [Type I and Type II Errors](#3-type-i-and-type-ii-errors) —
 Section 3.
-
 </details>
 
 <details>
@@ -268,7 +265,6 @@ $P(X \geq 5) = 1 - P(X \leq 4) = 1 - 0.8497 = 0.1503 \gt{} 0.05$.
 Critical region: $X \geq 6$. Actual significance level: 4.73%.
 
 **If you get this wrong, revise:** [Critical Region](#23-critical-region) — Section 2.3.
-
 </details>
 
 <details>
@@ -290,7 +286,6 @@ There is evidence at the 1% level that the mean lifetime is less than 1000 hours
 
 **If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) —
 Section 6.
-
 </details>
 
 <details>
@@ -312,7 +307,6 @@ Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times
 
 **If you get this wrong, revise:**
 [Critical Values and Significance Levels](#2-critical-values-and-significance-levels) — Section 2.
-
 </details>
 
 <details>
@@ -334,7 +328,6 @@ There is insufficient evidence at the 5% level that the mean score differs from 
 
 **If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) —
 Section 6.
-
 </details>
 
 <details>
@@ -357,7 +350,6 @@ Insufficient evidence that the new treatment is more effective.
 
 **If you get this wrong, revise:** [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) —
 Section 5.
-
 </details>
 
 <details>
@@ -370,7 +362,6 @@ Explain why failing to reject $H_0$ does not mean $H_0$ is true.
 Failing to reject $H_0$ means the data is consistent with $H_0$ but does not prove it. The test may lack sufficient power to detect a real effect. For example, if a drug has a small but real benefit, a small sample may not detect it, leading us to fail to reject $H_0$ even though the drug is effective. The absence of evidence is not evidence of absence.
 
 **If you get this wrong, revise:** [Interpreting Results](#7-interpreting-results) — Section 7.
-
 </details>
 
 <details>
@@ -394,7 +385,6 @@ So $\beta \approx 0.361$ and the power is $1 - \beta \approx 0.639$.
 
 **If you get this wrong, revise:** [Type I and Type II Errors](#3-type-i-and-type-ii-errors) —
 Section 3.
-
 </details>
 
 :::

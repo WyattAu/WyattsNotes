@@ -31,7 +31,6 @@ $\dfrac{x^2-9}{x^2-x-6} = \dfrac{(x-3)(x+3)}{(x-3)(x+2)} = \dfrac{x+3}{x+2}$, $x
 
 **If you get this wrong, revise:**
 [Algebraic Expressions](/docs/docs_ALevel-notes/maths/pure-mathematics/algebraic-expressions)
-
 </details>
 
 <details>
@@ -40,7 +39,6 @@ $(x-2)(x-3) \geq 0$. The quadratic opens upward, so $x \leq 2$ or $x \geq 3$.
 
 **If you get this wrong, revise:**
 [Equations and Inequalities](/docs/docs_ALevel-notes/maths/pure-mathematics/equations-and-inequalities)
-
 </details>
 
 <details>
@@ -51,7 +49,6 @@ $f^{-1}(x) = \dfrac{3x+1}{x-2}$, $x \neq 2$.
 
 **If you get this wrong, revise:**
 [Functions](/docs/docs_ALevel-notes/maths/pure-mathematics/functions)
-
 </details>
 
 <details>
@@ -64,7 +61,6 @@ $= \dfrac{8/3}{x-1} + \dfrac{1/3}{x+2} = \dfrac{8}{3(x-1)} + \dfrac{1}{3(x+2)}$.
 
 **If you get this wrong, revise:**
 [Algebraic Expressions](/docs/docs_ALevel-notes/maths/pure-mathematics/algebraic-expressions)
-
 </details>
 
 ### Sequences, Series, and Binomial Expansion
@@ -75,7 +71,6 @@ $a = 3$, $d = 4$. $S_{50} = \dfrac{50}{2}[2(3) + 49(4)] = 25(6 + 196) = 25 \time
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/docs_ALevel-notes/maths/pure-mathematics/sequences-and-series)
-
 </details>
 
 <details>
@@ -84,7 +79,6 @@ $\binom{5}{3}(2)^2(-3x)^3 = 10 \times 4 \times (-27x^3) = -1080x^3$. Coefficient
 
 **If you get this wrong, revise:**
 [Binomial Expansion](/docs/docs_ALevel-notes/maths/pure-mathematics/binomial-expansion)
-
 </details>
 
 <details>
@@ -93,7 +87,6 @@ $a = 0.5$, $r = 0.2$. $|r| \lt{} 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/docs_ALevel-notes/maths/pure-mathematics/sequences-and-series)
-
 </details>
 
 ### Trigonometry
@@ -109,7 +102,6 @@ $x = \pi/6, \pi/2, 5\pi/6, 3\pi/2$.
 
 **If you get this wrong, revise:**
 [Trigonometry](/docs/docs_ALevel-notes/maths/pure-mathematics/trigonometry)
-
 </details>
 
 <details>
@@ -118,7 +110,6 @@ $\dfrac{1-\cos 2x}{1+\cos 2x} = \dfrac{2\sin^2 x}{2\cos^2 x} = \tan^2 x$. $\blac
 
 **If you get this wrong, revise:**
 [Trigonometry](/docs/docs_ALevel-notes/maths/pure-mathematics/trigonometry)
-
 </details>
 
 ### Exponentials and Logarithms
@@ -129,7 +120,6 @@ $(2x-1)\ln 3 = \ln 7 \implies x = \dfrac{\ln 7 + \ln 3}{2\ln 3} = \dfrac{\ln 21}
 
 **If you get this wrong, revise:**
 [Exponentials and Logarithms](/docs/docs_ALevel-notes/maths/pure-mathematics/exponentials-and-logarithms)
-
 </details>
 
 <details>
@@ -140,7 +130,6 @@ $T_d = \dfrac{\ln 2}{k} = 3$ hours.
 
 **If you get this wrong, revise:**
 [Exponentials and Logarithms](/docs/docs_ALevel-notes/maths/pure-mathematics/exponentials-and-logarithms)
-
 </details>
 
 ### Differentiation
@@ -153,7 +142,6 @@ $\dfrac{dy}{dx} = \dfrac{e^x(x^2+2x)\sin x - x^2e^x\cos x}{\sin^2 x}$.
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/docs_ALevel-notes/maths/pure-mathematics/differentiation)
-
 </details>
 
 <details>
@@ -164,7 +152,6 @@ $x=1$: $y'' = 6 \gt{} 0$, minimum at $(1, 0)$. $x=-1$: $y'' = -6 \lt{} 0$, maxim
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/docs_ALevel-notes/maths/pure-mathematics/differentiation)
-
 </details>
 
 <details>
@@ -173,7 +160,6 @@ $V = \dfrac{4}{3}\pi r^3$. $\dfrac{dV}{dt} = 4\pi r^2\dfrac{dr}{dt} = 4\pi(25)(3
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/docs_ALevel-notes/maths/pure-mathematics/differentiation)
-
 </details>
 
 ### Integration
@@ -184,7 +170,6 @@ By parts: $u=x$, $dv=e^x\,dx$. $I = [xe^x]_0^1 - \int_0^1 e^x\,dx = e - (e-1) = 
 
 **If you get this wrong, revise:**
 [Integration](/docs/docs_ALevel-notes/maths/pure-mathematics/integration)
-
 </details>
 
 <details>
@@ -195,7 +180,6 @@ $A = \int_0^1 (x - x^2)\,dx = \left[\dfrac{x^2}{2} - \dfrac{x^3}{3}\right]_0^1 =
 
 **If you get this wrong, revise:**
 [Integration](/docs/docs_ALevel-notes/maths/pure-mathematics/integration)
-
 </details>
 
 ### Vectors
@@ -207,7 +191,6 @@ $\mathbf{a}\cdot\mathbf{b} = 3-2-2 = -1$. $|\mathbf{a}| = \sqrt{6}$, $|\mathbf{b
 $\cos\theta = \dfrac{-1}{\sqrt{84}} \implies \theta \approx 96.3°$.
 
 **If you get this wrong, revise:** [Vectors](/docs/docs_ALevel-notes/maths/pure-mathematics/vectors)
-
 </details>
 
 <details>
@@ -215,7 +198,6 @@ $\cos\theta = \dfrac{-1}{\sqrt{84}} \implies \theta \approx 96.3°$.
 $\mathbf{r} = \begin{pmatrix}1\\2\\-1\end{pmatrix} + t\begin{pmatrix}2\\-1\\3\end{pmatrix}$.
 
 **If you get this wrong, revise:** [Vectors](/docs/docs_ALevel-notes/maths/pure-mathematics/vectors)
-
 </details>
 
 ### Proof
@@ -225,7 +207,6 @@ $\mathbf{r} = \begin{pmatrix}1\\2\\-1\end{pmatrix} + t\begin{pmatrix}2\\-1\\3\en
 Suppose $\sqrt{5} = a/b$ in lowest terms. $5b^2 = a^2$, so $5 \mid a^2 \implies 5 \mid a$. Write $a = 5k$: $5b^2 = 25k^2 \implies b^2 = 5k^2$, so $5 \mid b$. Contradicts $\gcd(a,b)=1$. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof](/docs/docs_ALevel-notes/maths/pure-mathematics/proof)
-
 </details>
 
 <details>
@@ -234,7 +215,6 @@ Suppose $\sqrt{5} = a/b$ in lowest terms. $5b^2 = a^2$, so $5 \mid a^2 \implies 
 *Step:* $\dfrac{k(k+1)(2k+1)}{6} + (k+1)^2 = \dfrac{(k+1)[k(2k+1)+6(k+1)]}{6} = \dfrac{(k+1)(2k^2+7k+6)}{6} = \dfrac{(k+1)(k+2)(2k+3)}{6}$. ✓
 
 **If you get this wrong, revise:** [Proof](/docs/docs_ALevel-notes/maths/pure-mathematics/proof)
-
 </details>
 
 ### Numerical Methods
@@ -245,7 +225,6 @@ $f(1) = -2 \lt{} 0$, $f(2) = 4 \gt{} 0$. Sign change, continuous function $\impl
 
 **If you get this wrong, revise:**
 [Numerical Methods](/docs/docs_ALevel-notes/maths/pure-mathematics/numerical-methods)
-
 </details>
 
 <details>
@@ -256,7 +235,6 @@ $x_1 = 1.5-(-0.125/5.75) = 1.5+0.0217 = 1.5217$.
 
 **If you get this wrong, revise:**
 [Numerical Methods](/docs/docs_ALevel-notes/maths/pure-mathematics/numerical-methods)
-
 </details>
 
 ---
@@ -271,7 +249,6 @@ $\bar{x} = 30/5 = 6$. $\sum x^2 = 16+64+36+4+100 = 220$. $\sigma^2 = 220/5 - 36 
 
 **If you get this wrong, revise:**
 [Data Representation](/docs/docs_ALevel-notes/maths/statistics/data-representation)
-
 </details>
 
 <details>
@@ -280,7 +257,6 @@ $\bar{x} = 10(3)+50 = 80$. $\sigma_x = 10(2) = 20$.
 
 **If you get this wrong, revise:**
 [Data Representation](/docs/docs_ALevel-notes/maths/statistics/data-representation)
-
 </details>
 
 ### Correlation and Regression
@@ -293,7 +269,6 @@ $b = 24/40 = 0.6$, $a = 7 - 0.6(5) = 4$. Line: $y = 4 + 0.6x$.
 
 **If you get this wrong, revise:**
 [Correlation and Regression](/docs/docs_ALevel-notes/maths/statistics/correlation-and-regression)
-
 </details>
 
 ### Probability
@@ -304,7 +279,6 @@ $P(A|B) = 0.3/0.5 = 0.6$. $P(A \cup B) = 0.6+0.5-0.3 = 0.8$.
 
 **If you get this wrong, revise:**
 [Probability](/docs/docs_ALevel-notes/maths/statistics/probability)
-
 </details>
 
 <details>
@@ -313,7 +287,6 @@ $P = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
 
 **If you get this wrong, revise:**
 [Probability](/docs/docs_ALevel-notes/maths/statistics/probability)
-
 </details>
 
 <details>
@@ -324,7 +297,6 @@ $P(D|T^+) = 0.019/0.068 = 19/68 \approx 0.279$.
 
 **If you get this wrong, revise:**
 [Probability](/docs/docs_ALevel-notes/maths/statistics/probability)
-
 </details>
 
 ### Statistical Distributions
@@ -335,7 +307,6 @@ $P(X=4) = \binom{12}{4}(0.3)^4(0.7)^8 = 495 \times 0.0081 \times 0.0576 \approx 
 
 **If you get this wrong, revise:**
 [Statistical Distributions](/docs/docs_ALevel-notes/maths/statistics/statistical-distributions)
-
 </details>
 
 <details>
@@ -344,7 +315,6 @@ $P(X \gt{} 108) = P(Z \gt{} 8/8) = P(Z \gt{} 1) = 1 - 0.8413 = 0.1587$.
 
 **If you get this wrong, revise:**
 [Statistical Distributions](/docs/docs_ALevel-notes/maths/statistics/statistical-distributions)
-
 </details>
 
 <details>
@@ -353,7 +323,6 @@ $P(X \leq 3) = e^{-5}\left(1+5+\dfrac{25}{2}+\dfrac{125}{6}\right) = e^{-5}(1+5+
 
 **If you get this wrong, revise:**
 [Statistical Distributions](/docs/docs_ALevel-notes/maths/statistics/statistical-distributions)
-
 </details>
 
 ### Hypothesis Testing
@@ -366,7 +335,6 @@ $P(X \geq 15) = 1-P(X \leq 14) \approx 0.0207 \lt{} 0.05$. **Reject** $H_0$: evi
 
 **If you get this wrong, revise:**
 [Hypothesis Testing](/docs/docs_ALevel-notes/maths/statistics/hypothesis-testing)
-
 </details>
 
 <details>
@@ -376,7 +344,6 @@ Type II: Failing to reject $H_0$ when $H_0$ is false (false negative).
 
 **If you get this wrong, revise:**
 [Hypothesis Testing](/docs/docs_ALevel-notes/maths/statistics/hypothesis-testing)
-
 </details>
 
 ---
@@ -390,7 +357,6 @@ Type II: Failing to reject $H_0$ when $H_0$ is false (false negative).
 $v^2 = u^2 + 2as \implies 1225 = 225 + 400a \implies a = 1000/400 = 2.5\,\text{m/s}^2$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/docs_ALevel-notes/maths/mechanics/kinematics)
-
 </details>
 
 <details>
@@ -398,7 +364,6 @@ $v^2 = u^2 + 2as \implies 1225 = 225 + 400a \implies a = 1000/400 = 2.5\,\text{m
 $H = \dfrac{(25\sin 50°)^2}{2(9.8)} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{19.6} \approx 18.71\,\text{m}$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/docs_ALevel-notes/maths/mechanics/kinematics)
-
 </details>
 
 <details>
@@ -406,7 +371,6 @@ $H = \dfrac{(25\sin 50°)^2}{2(9.8)} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{1
 $v=0$ at $t=0,4$. For $0<t<4$: $v>0$. $s = \int_0^4(4t-t^2)\,dt = [2t^2-t^3/3]_0^4 = 32-64/3 = 32/3 \approx 10.67\,\text{m}$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/docs_ALevel-notes/maths/mechanics/kinematics)
-
 </details>
 
 ### Forces and Newton's Laws
@@ -417,7 +381,6 @@ $R = 49\,\text{N}$. $F_{\max} = 19.6\,\text{N}$. $a = (30-19.6)/5 = 10.4/5 = 2.0
 
 **If you get this wrong, revise:**
 [Forces and Newton's Laws](/docs/docs_ALevel-notes/maths/mechanics/forces-and-newtons-laws)
-
 </details>
 
 <details>
@@ -428,7 +391,6 @@ $T = 5(g+a) = 5(9.8+2.26) = 60.3\,\text{N}$.
 
 **If you get this wrong, revise:**
 [Forces and Newton's Laws](/docs/docs_ALevel-notes/maths/mechanics/forces-and-newtons-laws)
-
 </details>
 
 ### Moments
@@ -440,7 +402,6 @@ Moments about left end: $R_R \times 6 = 300 \times 3 + 200 \times 2 = 1300 \impl
 $R_L = 500 - 216.7 = 283.3\,\text{N}$.
 
 **If you get this wrong, revise:** [Moments](/docs/docs_ALevel-notes/maths/mechanics/moments)
-
 </details>
 
 <details>
@@ -448,7 +409,6 @@ $R_L = 500 - 216.7 = 283.3\,\text{N}$.
 $\bar{x} = \dfrac{0+24+15}{12} = 39/12 = 3.25$. $\bar{y} = \dfrac{0+0+20}{12} = 5/3 \approx 1.67$.
 
 **If you get this wrong, revise:** [Moments](/docs/docs_ALevel-notes/maths/mechanics/moments)
-
 </details>
 
 ### Energy and Work
@@ -459,7 +419,6 @@ $P = Fv \implies 40000 = 500v \implies v = 80\,\text{m/s}$.
 
 **If you get this wrong, revise:**
 [Energy and Work](/docs/docs_ALevel-notes/maths/mechanics/energy-and-work)
-
 </details>
 
 <details>
@@ -468,7 +427,6 @@ $mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2(9.8)(15)} = \sqrt{294} \approx 17.1
 
 **If you get this wrong, revise:**
 [Energy and Work](/docs/docs_ALevel-notes/maths/mechanics/energy-and-work)
-
 </details>
 
 ### Momentum
@@ -478,7 +436,6 @@ $mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2(9.8)(15)} = \sqrt{294} \approx 17.1
 $4(6) + 2(0) = 6v \implies v = 4\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Momentum](/docs/docs_ALevel-notes/maths/mechanics/momentum)
-
 </details>
 
 <details>
@@ -486,7 +443,6 @@ $4(6) + 2(0) = 6v \implies v = 4\,\text{m/s}$.
 $J = m(v-u) = 0.15(-7-10) = 0.15(-17) = -2.55\,\text{Ns}$. Magnitude: $2.55\,\text{Ns}$.
 
 **If you get this wrong, revise:** [Momentum](/docs/docs_ALevel-notes/maths/mechanics/momentum)
-
 </details>
 
 <details>
@@ -497,7 +453,6 @@ Restitution: $v_2-v_1 = 0.5(5-(-3)) = 4 \implies v_2 = v_1+4$.
 $3v_1+2(v_1+4) = 9 \implies 5v_1 = 1 \implies v_1 = 0.2\,\text{m/s}$, $v_2 = 4.2\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Momentum](/docs/docs_ALevel-notes/maths/mechanics/momentum)
-
 </details>
 
 ---

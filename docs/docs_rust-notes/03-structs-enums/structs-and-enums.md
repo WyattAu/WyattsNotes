@@ -670,8 +670,8 @@ struct User {
 
 Deriving `PartialOrd` compares fields in declaration order. If you change the order of fields in the
 struct, the derived ordering changes. Deriving `Ord` on a struct with a `f64` field will fail
-because `f64` does not implement `Ord`. Use a custom implementation or `#[derive(Ord)]` with
-`#[cmp]` if available.
+because `f64` does not implement `Ord`. Use a custom implementation or wrap the field in the
+`ordered-float` crate's `OrderedFloat` type instead.
 
 :::
 

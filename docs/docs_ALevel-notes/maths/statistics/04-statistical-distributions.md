@@ -231,7 +231,6 @@ $P(X \geq 7) = P(X=7)+P(X=8)+P(X=9)+P(X=10) \approx 0.0090 + 0.0014 + 0.0001 + 0
 
 **If you get this wrong, revise:** [The Binomial Distribution](#2-the-binomial-distribution) —
 Section 2.
-
 </details>
 
 <details>
@@ -245,7 +244,6 @@ $X \sim N(175, 64)$. $P(X \gt{} 185) = P\!\left(Z \gt{} \dfrac{185-175}{8}\right
 
 **If you get this wrong, revise:** [The Normal Distribution](#3-the-normal-distribution) —
 Section 3.
-
 </details>
 
 <details>
@@ -263,7 +261,6 @@ $P(X \gt{} 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} 
 
 **If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) —
 Section 4.
-
 </details>
 
 <details>
@@ -279,7 +276,6 @@ $P(X \leq 2) = e^{-4}\left(1 + 4 + \dfrac{16}{2}\right) = e^{-4}(1 + 4 + 8) = 13
 
 **If you get this wrong, revise:**
 [Derivation as a Limit](#42-derivation-as-a-limit-of-the-binomial) — Section 4.2.
-
 </details>
 
 <details>
@@ -294,7 +290,6 @@ $P(-c \lt{} Z \lt{} c) = 2\Phi(c) - 1 = 0.95 \implies \Phi(c) = 0.975$.
 From tables: $c \approx 1.96$.
 
 **If you get this wrong, revise:** [Standard Normal](#34-standard-normal) — Section 3.4.
-
 </details>
 
 <details>
@@ -314,7 +309,6 @@ $P(10 \leq X \leq 15) \approx 0.7728 - 0.2424 = 0.5304$.
 
 **If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) —
 Section 4.
-
 </details>
 
 <details>
@@ -333,7 +327,6 @@ $P(X \gt{} 50.3) = P(Z \gt{} 1.5) = 0.0668$.
 Proportion rejected $= 0.0668 + 0.0668 = 0.1336$ (13.36%).
 
 **If you get this wrong, revise:** [Finding Probabilities](#35-finding-probabilities) — Section 3.5.
-
 </details>
 
 <details>
@@ -351,7 +344,6 @@ $= a^2[E(X^2) - (E(X))^2] = a^2\text{Var}(X)$. ✓
 
 **If you get this wrong, revise:** [Expectation and Variance](#12-expectation-and-variance) —
 Section 1.2.
-
 </details>
 
 <details>
@@ -367,7 +359,6 @@ $P(X \gt{} 35) \approx P\!\left(Z \gt{} \dfrac{35.5 - 30}{5.05}\right) = P(Z \gt
 
 **If you get this wrong, revise:**
 [Normal Approximation to Binomial](#36-normal-approximation-to-binomial) — Section 3.6.
-
 </details>
 
 <details>
@@ -382,7 +373,6 @@ By additivity: $X + Y \sim \text{Po}(3+5) = \text{Po}(8)$.
 $P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac{e^{-8} \times 262144}{720} \approx \dfrac{0.000335 \times 262144}{720} \approx 0.1221$.
 
 **If you get this wrong, revise:** [Additivity](#45-additivity) — Section 4.5.
-
 </details>
 
 :::

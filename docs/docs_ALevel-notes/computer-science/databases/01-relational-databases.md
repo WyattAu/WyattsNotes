@@ -354,7 +354,6 @@ OrderID → CustomerName → CustomerCity.
 - OrderItems (OrderID, Product, Quantity)
 
 All four relations are in 3NF. ✓
-
 </details>
 
 **Problem 2.** Write an SQL query to find the student with the highest average score across all
@@ -381,7 +380,6 @@ GROUP BY s.student_id, s.name
 ORDER BY avg_score DESC
 LIMIT 1;
 ```
-
 </details>
 
 **Problem 3.** Explain the difference between WHERE and HAVING in SQL.
@@ -406,7 +404,6 @@ WHERE salary > 30000      -- Filter individual rows
 GROUP BY department
 HAVING COUNT(*) > 5        -- Filter groups
 ```
-
 </details>
 
 **Problem 4.** Prove that every BCNF relation is in 3NF.
@@ -428,7 +425,6 @@ If a relation is in BCNF, then for every $A \to B$, $A$ is a superkey. This triv
 $\square$
 
 **Counterexample showing 3NF ⊄ BCNF:** See the (student, course, teacher) example in Section 3.
-
 </details>
 
 **Problem 5.** Write an SQL query using a correlated subquery to find all employees who earn more
@@ -449,7 +445,6 @@ WHERE salary > (
 
 For each employee, the subquery computes the average salary of that employee's department. If the
 employee's salary exceeds this average, the row is included.
-
 </details>
 
 **Problem 6.** Explain how a deadlock can occur in a database with multiple concurrent transactions.
@@ -479,7 +474,6 @@ How do databases typically resolve deadlocks?
 4. **Detection:** Build a wait-for graph and abort transactions in the cycle
 
 Most databases use timeout-based detection or prevention (ordering locks to prevent circular wait).
-
 </details>
 
 **Problem 7.** Given the following schema, write a query to find all students who have taken ALL
@@ -514,7 +508,6 @@ WHERE NOT EXISTS (
 
 Logic: Find students for whom there does NOT EXIST a CS course that they have NOT taken. (Double
 negation = they have taken all CS courses.)
-
 </details>
 
 **Problem 8.** Explain why the following relation is not in BCNF and decompose it.
@@ -551,7 +544,6 @@ join is lossless (by the chase test / BCNF decomposition theorem). ✓
 We must choose: either accept 3NF (which preserves dependencies but allows redundancy) or accept
 BCNF (which eliminates redundancy but loses the FD $AB \to C$). In practice, 3NF is often preferred
 when dependency preservation is critical.
-
 </details>
 
 ---
@@ -573,7 +565,6 @@ the 'Sales' department who earn more than 45000.
 <summary>Hint</summary>
 
 Use SELECT with a WHERE clause that combines two conditions using AND.
-
 </details>
 
 <details>
@@ -595,7 +586,6 @@ Result:
 The WHERE clause filters rows where both conditions are true simultaneously: the employee must be in
 Sales AND earn more than 45000. Carol is excluded because her salary (42000) is not > 45000. Bob and
 Eve are excluded because they are in IT.
-
 </details>
 
 **Problem 2.** Given the `Students` and `Enrolments` tables below, write an SQL query using an INNER
@@ -631,7 +621,6 @@ JOIN to list each student's name alongside the titles of all courses they are en
 
 You need to join Students with Enrolments (on student_id), then join the result with Courses (on
 course_id). This requires two JOINs.
-
 </details>
 
 <details>
@@ -656,7 +645,6 @@ Result:
 
 Carol does not appear because she has no enrolments, and INNER JOIN excludes unmatched rows. If we
 wanted Carol to appear with NULL values, we would use LEFT JOIN starting from Students.
-
 </details>
 
 **Problem 3.** The following table stores information about hospital patients. Identify all
@@ -673,7 +661,6 @@ functional dependencies and normalise the table to 2NF.
 
 First identify the candidate key(s). Then check for partial dependencies — non-key attributes that
 depend on only part of a composite key.
-
 </details>
 
 <details>
@@ -710,7 +697,6 @@ Decompose into:
 3. **Doctors** (doctor_id, doctor_name)
 
 Each table is now in 3NF with no transitive dependencies.
-
 </details>
 
 **Problem 4.** The following table records module results for university students. Identify all
@@ -727,7 +713,6 @@ functional dependencies and normalise to 3NF.
 
 Identify what uniquely identifies each row (the composite key), then find partial and transitive
 dependencies.
-
 </details>
 
 <details>
@@ -767,7 +752,6 @@ In Modules: key is module_code, non-key attributes are module_title, credits, le
 transitive dependency (all depend directly on module_code). ✓
 
 All three tables are in 3NF.
-
 </details>
 
 **Problem 5.** An ER diagram for a school database contains the following entities and
@@ -787,7 +771,6 @@ the schema for each table, including primary and foreign keys.
 
 Each Many-to-Many relationship requires a junction table. The junction table contains foreign keys
 referencing the two entities it connects.
-
 </details>
 
 <details>
@@ -829,7 +812,6 @@ referencing the two entities it connects.
 
 The junction tables use composite primary keys (the combination of the two foreign keys) to ensure
 each student-class or teacher-class pairing is unique.
-
 </details>
 
 **Problem 6.** A hotel database has the following ER model:
@@ -847,7 +829,6 @@ Identify all foreign keys in this schema and explain which entity each reference
 
 Foreign keys in the Booking table link it to the Guest and Room tables. The 1:Many relationships
 mean the "Many" side (Booking) holds the foreign keys.
-
 </details>
 
 <details>
@@ -877,7 +858,6 @@ mean the "Many" side (Booking) holds the foreign keys.
 
 No foreign keys exist in Guest or Room because they are on the "1" side of their respective
 relationships.
-
 </details>
 
 **Problem 7.** Given the following `Products` table, write SQL statements to: (a) Insert a new
@@ -897,7 +877,6 @@ product: (id=6, name='Monitor', category='Electronics', price=299.99) (b) Update
 
 Use INSERT INTO ... VALUES for (a), UPDATE ... SET ... WHERE for (b), and DELETE FROM ... WHERE for
 (c). Always include a WHERE clause in UPDATE and DELETE to avoid affecting all rows.
-
 </details>
 
 <details>
@@ -937,7 +916,6 @@ This removes rows where product_id is 3 (Desk) and 4 (Chair).
 | 2          | Keyboard | Electronics | 45.00  |
 | 5          | Mouse    | Electronics | 29.99  |
 | 6          | Monitor  | Electronics | 299.99 |
-
 </details>
 
 **Problem 8.** A library uses the following tables. Write SQL statements to: (a) Add a new member:
@@ -952,7 +930,6 @@ member_id, book_id, borrow_date, return_date, status)
 
 Each operation targets a specific table. Use WHERE clauses to restrict which rows are affected. For
 (b), use a date comparison.
-
 </details>
 
 <details>
@@ -985,7 +962,6 @@ WHERE member_id = 50 AND book_id = 'BK004';
 
 Both conditions are needed in the WHERE clause to identify the correct record (since member_id alone
 is not unique in the Borrows table — a member can borrow multiple books).
-
 </details>
 
 **Problem 9.** For the relation R(A, B, C, D, E) with the following functional dependencies, find
@@ -1001,7 +977,6 @@ all candidate keys and explain your reasoning.
 
 A candidate key is a minimal set of attributes whose closure includes all attributes (A, B, C, D,
 E). Try computing the closure of potential keys starting with individual attributes, then pairs.
-
 </details>
 
 <details>
@@ -1041,7 +1016,6 @@ $BD^+ = \{B, D\} \to \{B, D, E\}$ (B → E) $\to \{A, B, D, E\}$ (DE → A) $\to
 **Candidate keys:** AB, BC, and BD
 
 **Prime attributes** (attributes that appear in at least one candidate key): A, B, C, D
-
 </details>
 
 **Problem 10.** (Exam-style multi-step question) A small business needs a database to manage its
@@ -1063,7 +1037,6 @@ budget greater than 50000. (d) Write an SQL query to find the total salary bill 
 
 For (a), you need a junction table for the Many-to-Many employee-project relationship. For (c), you
 need to join three tables. For (d), use GROUP BY with SUM.
-
 </details>
 
 <details>
@@ -1131,7 +1104,6 @@ Example result:
 | IT        | 165000.00    |
 | Sales     | 142000.00    |
 | HR        | 98000.00     |
-
 </details>
 
 :::

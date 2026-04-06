@@ -454,7 +454,7 @@ $$
    $$
 
    The full expansion is $1 + 12x + 60x^2 + 160x^3 + 240x^4 + 192x^5 + 64x^6$.
-   </details>
+</details>
 
 2. **Question:** Find the constant term in the expansion of $\left(x^2 + \dfrac{1}{x}\right)^9$.
    <details>
@@ -468,7 +468,7 @@ $$
    $$
 
    The constant term is $84$.
-   </details>
+</details>
 
 3. **Question:** When $f(x) = 2x^3 + ax^2 + bx - 6$ is divided by $(x-1)$, the remainder is $-4$. When divided by $(x+2)$, the remainder is $30$. Find $a$ and $b$.
    <details>
@@ -480,7 +480,7 @@ $$
    Adding (i) and (ii): $3a = 26 \implies a = \dfrac{26}{3}$.
 
    From (i): $b = -\dfrac{26}{3}$.
-   </details>
+</details>
 
 4. **Question:** Given that $(x - 3)$ and $(x + 1)$ are factors of $f(x) = x^3 + ax^2 + bx + c$, find $a$, $b$, and $c$. Hence factorize $f(x)$ completely.
    <details>
@@ -535,7 +535,7 @@ $$
    There are infinitely many cubics with $(x-3)$ and $(x+1)$ as factors. Assuming the problem intends a monic cubic (which it is, with leading coefficient $1$), we write $f(x) = (x-3)(x+1)(x - d)$ where $d$ is the third root. Since no further condition is given, the general answer is:
 
    $a = -(d+2)$, $b = 2d - 3$, $c = 3d$, and $f(x) = (x-3)(x+1)(x-d)$ for any real $d$.
-   </details>
+</details>
 
 5. **Question:** Factorize $x^4 - 5x^2 + 4$ completely.
    <details>
@@ -545,7 +545,7 @@ $$
    $$
    u^2 - 5u + 4 = (u-1)(u-4) = (x^2 - 1)(x^2 - 4) = (x-1)(x+1)(x-2)(x+2)
    $$
-   </details>
+</details>
 
 6. **Question:** If $\alpha$ and $\beta$ are roots of $3x^2 - 8x + 2 = 0$, find the value of $\alpha^3 + \beta^3$ without solving the equation.
    <details>
@@ -559,7 +559,7 @@ $$
    $$
    = \frac{512}{27} - \frac{48}{9} = \frac{512}{27} - \frac{144}{27} = \frac{368}{27}
    $$
-   </details>
+</details>
 
 7. **Question:** Expand $(1 - 3x)^5$ in ascending powers of $x$ up to and including the term in $x^3$. Use the expansion to find an approximate value of $(0.97)^5$.
    <details>
@@ -577,7 +577,7 @@ $$
    $$
    (0.97)^5 \approx 1 - 15(0.01) + 90(0.0001) - 270(0.000001) = 1 - 0.15 + 0.009 - 0.00027 = 0.85873
    $$
-   </details>
+</details>
 
 8. **Question:** The remainder when $f(x) = x^3 + px^2 + qx + 6$ is divided by $(x-1)$ is $12$. The remainder when $f(x)$ is divided by $(x+1)$ is $18$. Find $p$ and $q$.
    <details>
@@ -588,7 +588,7 @@ $$
    Adding: $2p = 18 \implies p = 9$.
 
    From (i): $q = -4$.
-   </details>
+</details>
 
 9. **Question:** Prove that $\binom{n}{r} = \binom{n}{n-r}$ using the definition of binomial coefficients.
    <details>
@@ -596,7 +596,7 @@ $$
    $$
    \binom{n}{n-r} = \frac{n!}{(n-r)!\,[n-(n-r)]!} = \frac{n!}{(n-r)!\,r!} = \binom{n}{r}
    $$
-   </details>
+</details>
 
 10. **Question:** Find the coefficient of $x^5$ in the expansion of $(1 + x)^8(1 - x)^6$.
     <details>
@@ -622,7 +622,7 @@ $$
     Sum: $-6 + 120 - 560 + 840 - 420 + 56 = 30$.
 
     The coefficient of $x^5$ is $30$.
-    </details>
+</details>
 
 11. **Question:** Let $\alpha$ and $\beta$ be the roots of $x^2 - 7x + 3 = 0$. Form a quadratic equation whose roots are $\dfrac{1}{\alpha}$ and $\dfrac{1}{\beta}$.
     <details>
@@ -634,7 +634,7 @@ $$
     Product of new roots: $\dfrac{1}{\alpha} \cdot \dfrac{1}{\beta} = \dfrac{1}{3}$.
 
     The equation is $x^2 - \dfrac{7}{3}x + \dfrac{1}{3} = 0$, or $3x^2 - 7x + 1 = 0$.
-    </details>
+</details>
 
 12. **Question:** Factorize $f(x) = x^3 - 3x^2 + 4$ completely.
     <details>
@@ -644,5 +644,5 @@ $$
     $f(-1) = -1 - 3 + 4 = 0$, so $(x+1)$ is a factor.
 
     Dividing: $f(x) = (x+1)(x^2 - 4x + 4) = (x+1)(x-2)^2$.
-    </details>
+</details>
 </details>

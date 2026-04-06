@@ -460,7 +460,6 @@ $\text{SiO}_2$ has a giant covalent structure. Each silicon atom is covalently b
 atoms, and each oxygen atom is bonded to two silicon atoms, forming a continuous 3D network.
 Breaking this structure requires breaking many strong covalent bonds, which requires a large amount
 of energy, hence the very high melting point.
-
 </details>
 
 ---
@@ -719,7 +718,6 @@ $\text{Cu}^+$ has a completely filled $3d$ subshell, which is particularly stabl
 symmetrical distribution of electrons. However, $\text{Cu}^{2+}$ ($3d^9$) is more common in aqueous
 chemistry because of the high hydration energy that compensates for the loss of the stable $3d^{10}$
 configuration.
-
 </details>
 
 ---

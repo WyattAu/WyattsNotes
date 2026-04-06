@@ -170,7 +170,6 @@ $J = m(v - u) = 0.3(-5 - 8) = 0.3(-13) = -3.9\,\text{Ns}$.
 The impulse is $3.9\,\text{Ns}$ in the direction opposite to the initial motion.
 
 **If you get this wrong, revise:** [Impulse](#3-impulse) — Section 3.
-
 </details>
 
 <details>
@@ -185,7 +184,6 @@ Momentum: $3(4) + 5(-2) = 3(-1) + 5v \implies 12 - 10 = -3 + 5v \implies 5 = -3 
 $e = \dfrac{v_2 - v_1}{u_1 - u_2} = \dfrac{1.6 - (-1)}{4 - (-2)} = \dfrac{2.6}{6} \approx 0.433$.
 
 **If you get this wrong, revise:** [Direct Collisions](#41-direct-collisions) — Section 4.1.
-
 </details>
 
 <details>
@@ -200,7 +198,6 @@ $J = \int_0^2 (6t-2)\,dt = [3t^2 - 2t]_0^2 = 12 - 4 = 8\,\text{Ns}$.
 $J = mv \implies 8 = 2v \implies v = 4\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Impulse from a Graph](#33-impulse-from-a-graph) — Section 3.3.
-
 </details>
 
 <details>
@@ -220,7 +217,6 @@ $v_2 = 6\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) —
 Section 5.
-
 </details>
 
 <details>
@@ -240,7 +236,6 @@ The bodies exchange velocities. $\blacksquare$
 
 **If you get this wrong, revise:** [Conservation of Momentum](#2-conservation-of-momentum) —
 Section 2.
-
 </details>
 
 <details>
@@ -257,7 +252,6 @@ $e = v/u = (\sqrt{2gh}/2)/\sqrt{2gh} = 1/2 = 0.5$.
 
 **If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) —
 Section 5.
-
 </details>
 
 <details>
@@ -270,7 +264,6 @@ A force acts on a $5\,\text{kg}$ body for $0.3\,\text{s}$, giving it an impulse 
 $J = m\Delta v \implies 15 = 5\Delta v \implies \Delta v = 3\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Impulse](#3-impulse) — Section 3.
-
 </details>
 
 <details>
@@ -292,7 +285,6 @@ $\Delta\text{KE} = 63 - 31.90 = 31.10\,\text{J}$.
 
 **If you get this wrong, revise:** [Energy Loss in Collisions](#53-energy-loss-in-collisions) —
 Section 5.3.
-
 </details>
 
 <details>
@@ -309,7 +301,6 @@ $J_n = m(v_n - u_n) = 0.2(-4.2\sqrt{3} - 6\sqrt{3}) = 0.2(-10.2\sqrt{3}) = -2.04
 Parallel to wall: no friction, so velocity component is unchanged. $J_{\parallel} = 0$.
 
 **If you get this wrong, revise:** [Oblique Collisions](#42-oblique-2d-collisions) — Section 4.2.
-
 </details>
 
 <details>
@@ -384,7 +375,6 @@ idea is shown.
 
 **If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) —
 Section 5.
-
 </details>
 
 :::

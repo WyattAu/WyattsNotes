@@ -240,7 +240,6 @@ $(2,3)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section
 1.1.
-
 </details>
 
 <details>
@@ -256,7 +255,6 @@ $x_2 = \sqrt[3]{2(2.0801)+5} = \sqrt[3]{9.1602} = 2.0924$
 $x_3 = \sqrt[3]{2(2.0924)+5} = \sqrt[3]{9.1848} = 2.0943$
 
 **If you get this wrong, revise:** [Fixed-Point Iteration](#2-fixed-point-iteration) — Section 2.
-
 </details>
 
 <details>
@@ -274,7 +272,6 @@ $g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac{3 \times 4.37}{2} \approx 6.55
 Since $|g'(\alpha)| \gt{} 1$, the iteration diverges near $\alpha$.
 
 **If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
-
 </details>
 
 <details>
@@ -292,7 +289,6 @@ $x_1 = 2.1$: $f(2.1) = 9.261-4.2-5 = 0.061$, $f'(2.1) = 13.23-2 = 11.23$.
 $x_2 = 2.1 - 0.061/11.23 = 2.0946$.
 
 **If you get this wrong, revise:** [Newton-Raphson Method](#3-newton-raphson-method) — Section 3.
-
 </details>
 
 <details>
@@ -308,7 +304,6 @@ $$\int_0^2 e^{-x^2}\,dx \approx \frac{0.5}{3}[1 + 4(0.7788) + 2(0.3679) + 4(0.10
 $$= \frac{0.5}{3}[1 + 3.1152 + 0.7358 + 0.4216 + 0.0183] = \frac{0.5}{3}(5.2909) \approx 0.8818$$
 
 **If you get this wrong, revise:** [Simpson's Rule](#5-simpsons-rule) — Section 5.
-
 </details>
 
 <details>
@@ -331,7 +326,6 @@ $f(0) = 1 \gt{} 0$, $f(1) = e-3 \lt{} 0$: root in $(0,1)$. $f(1) \lt{} 0$, $f(2)
 root in $(1,2)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
-
 </details>
 
 <details>
@@ -351,7 +345,6 @@ The problem is that $f'(0) = \infty$ — the tangent at the root $x=0$ is vertic
 Newton-Raphson step sends the iterate to $-\infty$.
 
 **If you get this wrong, revise:** [Failures](#33-failures) — Section 3.3.
-
 </details>
 
 <details>
@@ -369,7 +362,6 @@ $$= 0.25[0 + 2(4.3663) + 1.3863] = 0.25[8.7326 + 1.3863] = 0.25 \times 10.1189 \
 (Exact: $[x\ln x - x]_1^4 = 4\ln 4 - 4 + 1 = 8\ln 2 - 3 \approx 2.5452$.)
 
 **If you get this wrong, revise:** [The Trapezium Rule](#4-the-trapezium-rule) — Section 4.
-
 </details>
 
 <details>
@@ -390,7 +382,6 @@ $|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx 
 Converges since $|g'(\alpha)| \lt{} 1$.
 
 **If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
-
 </details>
 
 <details>
@@ -403,7 +394,6 @@ Explain why the sign change theorem does not guarantee a root of $f(x) = \dfrac{
 $f(1) = -1 \lt{} 0$ and $f(3) = 1 \gt{} 0$, so there is a sign change. However, $f$ is **not continuous** on $[1,3]$ — it has a vertical asymptote at $x = 2$. The sign change theorem requires continuity, so it does not apply here. There is no root of $1/(x-2) = 0$.
 
 **If you get this wrong, revise:** [Limitations](#12-limitations) — Section 1.2.
-
 </details>
 
 :::

@@ -138,7 +138,6 @@ $$\bar{y} = \frac{16a^2 \times 2a - 2\pi a^2 \times (2a + 8a/(3\pi))}{16a^2 - 2\
 $$= \frac{32a^3 - 4\pi a^3 - 16a^3/3}{a^2(16 - 2\pi)} = \frac{a(96 - 12\pi - 16)/3}{16 - 2\pi} = \frac{a(80 - 12\pi)}{3(16 - 2\pi)}$$
 
 $$= \frac{a(80 - 12\pi)}{48 - 6\pi} = \frac{a(40 - 6\pi)}{24 - 3\pi}$$
-
 </details>
 
 ---
@@ -226,7 +225,6 @@ Substituting (ii) into (i):
 $2v_1 + 3(v_1 + 3) = 10 \implies 5v_1 + 9 = 10 \implies v_1 = 0.2\,\text{m s}^{-1}$.
 
 $v_2 = 0.2 + 3 = 3.2\,\text{m s}^{-1}$.
-
 </details>
 
 ---
@@ -313,7 +311,6 @@ Angle of incidence: $\alpha = \arctan(4/6) = \arctan(2/3)$.
 Angle of reflection: $\beta = \arctan(4/3)$.
 
 Note: $\tan\beta = 4/3 = \dfrac{\tan\alpha}{e} = \dfrac{2/3}{0.5} = 4/3$. ✓
-
 </details>
 
 ---
@@ -349,7 +346,6 @@ Centre of mass: $\left(\dfrac{8}{3}, \dfrac{4}{3}\right)$.
 
 **If you get this wrong, revise:** [Uniform triangular lamina](#21-uniform-triangular-lamina) —
 Section 2.1.
-
 </details>
 
 <details>
@@ -376,7 +372,6 @@ $\Delta KE = \dfrac{1}{2} \times \dfrac{15}{8} \times (10)^2 \times (1 - 0.25) =
 
 **If you get this wrong, revise:**
 [Direct collision of two particles](#53-direct-collision-of-two-particles) — Section 5.3.
-
 </details>
 
 <details>
@@ -392,7 +387,6 @@ The centre of mass lies on the axis of symmetry at a distance $\dfrac{20}{3\pi}\
 diameter.
 
 **If you get this wrong, revise:** [Semicircular lamina](#22-semicircular-lamina) — Section 2.2.
-
 </details>
 
 <details>
@@ -416,7 +410,6 @@ Similarly $\bar{y} = 2a$.
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
-
 </details>
 
 <details>
@@ -441,7 +434,6 @@ $\theta = \arctan\!\left(\dfrac{4\sqrt{3}}{5}\right) = \arctan(1.386) \approx 54
 
 **If you get this wrong, revise:** [Sphere hitting a smooth wall](#71-sphere-hitting-a-smooth-wall)
 — Section 7.1.
-
 </details>
 
 <details>
@@ -465,7 +457,6 @@ Centre of mass: $(1.5, 1)$.
 
 **If you get this wrong, revise:** [Uniform wire frameworks](#41-uniform-wire-frameworks) — Section
 4.1.
-
 </details>
 
 <details>
@@ -495,7 +486,6 @@ Velocity of $B$: $(2.28\mathbf{i} - \mathbf{j})\,\text{m s}^{-1}$.
 
 **If you get this wrong, revise:**
 [Two spheres in oblique collision](#72-two-spheres-in-oblique-collision) — Section 7.2.
-
 </details>
 
 <details>
@@ -519,7 +509,6 @@ $\bar{y} = \dfrac{48 \times 3 - 12 \times 4}{36} = \dfrac{144 - 48}{36} = \dfrac
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
-
 </details>
 
 <details>
@@ -546,7 +535,6 @@ Horizontal distance $= u\cos\theta \times \dfrac{2eu\sin\theta}{g} = \dfrac{eu^2
 
 **If you get this wrong, revise:** [Sphere hitting a smooth wall](#71-sphere-hitting-a-smooth-wall)
 — Section 7.1.
-
 </details>
 
 <details>
@@ -569,5 +557,4 @@ $$= \frac{r^2/4 + h^2/2}{2r/3 + h} = \frac{r^2 + 2h^2}{4\!\left(\dfrac{2r}{3} + 
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
-
 </details>

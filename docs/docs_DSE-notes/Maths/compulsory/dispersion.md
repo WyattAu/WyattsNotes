@@ -378,14 +378,14 @@ While not computed algebraically in the compulsory syllabus, students should rec
    - Mean: $\bar{x} = \frac{460}{7} \approx 65.7$.
    - Median (position $4$ of $7$): $65$.
    - Mode: none (all values are distinct).
-   </details>
+</details>
 
 2. **Question:** A dataset has mean $20$ and variance $36$. Find the mean and variance of the transformed dataset $Y = \dfrac{X - 20}{6}$.
    <details>
    <summary>Answer</summary>
    - $\bar{y} = \frac{1}{6}(20) - \frac{20}{6} = \frac{20-20}{6} = 0$.
    - $\text{Var}(Y) = \left(\frac{1}{6}\right)^2 \times 36 = \frac{1}{36} \times 36 = 1$.
-   </details>
+</details>
 
 3. **Question:** For the grouped frequency distribution below, find the mean and standard deviation using the coding method.
 
@@ -406,7 +406,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
    - $\sum f_i d_i^2 = 5(4) + 12(1) + 18(0) + 10(1) + 5(4) = 20 + 12 + 0 + 10 + 20 = 62$.
    - $\sigma_d^2 = \frac{62}{50} - \left(\frac{10}{50}\right)^2 = 1.24 - 0.04 = 1.2$.
    - $\sigma^2 = 1.2 \times 10^2 = 120$, so $\sigma = \sqrt{120} \approx 10.95$.
-   </details>
+</details>
 
 4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$, $\bar{x}_1 = 72$, $\sigma_1 = 8$). Class B ($n_2 = 20$, $\bar{x}_2 = 80$, $\sigma_2 = 6$). Find the combined mean and combined standard deviation.
    <details>
@@ -422,7 +422,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
      \end{aligned}
      $$
    - Combined standard deviation: $\sigma_c = \sqrt{68.16} \approx 8.26$.
-   </details>
+</details>
 
 5. **Question:** The following are the lifetimes (in hours) of $10$ light bulbs: $820, 790, 810, 780, 830, 800, 795, 815, 805, 855$. Determine the range, IQR, and identify any outliers.
    <details>
@@ -435,7 +435,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
    - IQR $= 820 - 795 = 25$.
    - Lower fence: $795 - 1.5(25) = 757.5$. Upper fence: $820 + 1.5(25) = 857.5$.
    - No outliers (all values lie within $[757.5, 857.5]$).
-   </details>
+</details>
 
 6. **Question:** A farmer records the yields (in kg) of two varieties of wheat over several seasons. Variety A: mean $= 45$, standard deviation $= 5$. Variety B: mean $= 60$, standard deviation $= 9$. Which variety has more consistent yield?
    <details>
@@ -443,7 +443,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
    - CV$_A = \frac{5}{45} \times 100\% \approx 11.1\%$.
    - CV$_B = \frac{9}{60} \times 100\% = 15.0\%$.
    - Since CV$_A <$ CV$_B$, Variety A has more consistent (less variable) yield relative to its mean.
-   </details>
+</details>
 
 7. **Question:** Given the dataset $\{a, b, c\}$ with mean $10$ and variance $8$, find the value of $a^2 + b^2 + c^2$.
    <details>
@@ -451,7 +451,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
    - $\bar{x} = \frac{a+b+c}{3} = 10 \implies a+b+c = 30$.
    - $\sigma^2 = \frac{a^2+b^2+c^2}{3} - \bar{x}^2 = 8$.
    - $\frac{a^2+b^2+c^2}{3} - 100 = 8 \implies a^2+b^2+c^2 = 324$.
-   </details>
+</details>
 
 8. **Question:** A set of $20$ numbers has mean $15$ and standard deviation $3$. If each number is multiplied by $2$ and then $5$ is added, find the new mean and new standard deviation.
    <details>
@@ -459,7 +459,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
    - New mean: $2(15) + 5 = 35$.
    - New variance: $2^2 \times 3^2 = 36$.
    - New standard deviation: $\sqrt{36} = 6$.
-   </details>
+</details>
 
 9. **Question:** The histogram below (described verbally) shows the distribution of weights of $50$ apples. The class intervals and frequencies are:
 
@@ -484,7 +484,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
                      &= 139.5 + 5 = 144.5 \text{ g}
      \end{aligned}
      $$
-   </details>
+</details>
 
 10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$, find $\sum x_i$, $\sum x_i^2$, the mean, and the population variance. Verify your variance using both the definition formula and the computational formula.
     <details>
@@ -506,7 +506,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
         \sigma^2 &= \frac{334}{10} - \left(\frac{52}{10}\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
       \end{aligned}
       $$
-    </details>
+</details>
 
 11. **Question:** The weekly wages (in dollars) of $8$ workers in a small factory are $3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000$. The factory owner claims the average wage is $\$5150$. Is this claim misleading? Explain using an appropriate measure of central tendency and dispersion.
     <details>
@@ -516,7 +516,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
     - Median: $\frac{4200+4500}{2} = 4350$.
     - The median ($4350$) is a far more representative measure here. The single extreme value of $\$12000$ (likely the owner's own salary or a manager's) inflates the mean by $\$800$. The median is resistant to outliers and better reflects what a typical worker earns.
     - The range ($12000 - 3200 = 8800$) and the large gap between the mean and median both indicate significant skewness, confirming the mean is a poor choice of summary statistic.
-    </details>
+</details>
 
 12. **Question:** A set of data has variance $25$ and mean $0$. A new set is formed by removing the value $10$ from the original set. If the original set had $n = 6$ values, find the new mean and new variance.
     <details>
@@ -527,5 +527,5 @@ While not computed algebraically in the compulsory syllabus, students should rec
     - New mean: $\bar{x}' = \frac{-10}{5} = -2$.
     - New sum of squares: $150 - 100 = 50$.
     - New variance: $\sigma'^2 = \frac{50}{5} - (-2)^2 = 10 - 4 = 6$.
-    </details>
+</details>
 </details>

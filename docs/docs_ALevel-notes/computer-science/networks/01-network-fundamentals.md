@@ -300,7 +300,6 @@ Subnet addresses (increment by 32):
 - 192.168.5.224/27 (hosts: 225–254)
 
 8 subnets available (6 needed + 2 spare).
-
 </details>
 
 **Problem 2.** Explain the TCP three-way handshake. Why is a two-way handshake insufficient?
@@ -320,7 +319,6 @@ client times out and sends another SYN, the first SYN may arrive later. With a t
 both SYNs would create separate connections. The third ACK in the three-way handshake allows the
 server to identify and discard stale connections: if the server receives an ACK for a connection it
 didn't establish, it rejects it.
-
 </details>
 
 **Problem 3.** A user types `https://www.cam.ac.uk` into their browser. Describe the steps that
@@ -355,7 +353,6 @@ occur before the web page is displayed, including DNS resolution and the TCP han
 5. **HTTP Response:** Server returns HTML, CSS, JS, images
 
 6. **Rendering:** Browser parses and displays the page
-
 </details>
 
 **Problem 4.** Compare star and mesh topologies in terms of cost, reliability, and scalability.
@@ -381,7 +378,6 @@ networks require high reliability (life-critical systems cannot have downtime), 
 prohibitively expensive. A practical approach: multiple star networks connected by redundant links
 (partial mesh at the backbone level). Critical systems (ICU monitors) may have redundant
 connections.
-
 </details>
 
 **Problem 5.** Explain why UDP is preferred over TCP for online gaming and video conferencing.
@@ -403,7 +399,6 @@ connections.
 - UDP delivers packets as fast as possible without waiting for retransmission
 - Occasional packet loss manifests as brief glitches (acceptable)
 - TCP would buffer delayed packets, causing increasing lag
-
 </details>
 
 **Problem 6.** Calculate the number of usable host addresses in a `/28` subnet.
@@ -416,7 +411,6 @@ connections.
 Number of addresses: $2^4 = 16$
 
 Usable hosts: $16 - 2 = 14$ (subtract network address and broadcast address).
-
 </details>
 
 **Problem 7.** Explain the purpose of NAT (Network Address Translation) and how it works.
@@ -442,7 +436,6 @@ for internet access. This:
 **NAT table example:** | Internal IP | Internal Port | External Port | External IP | |
 --------------- | ------------- | ------------- | -------------- | | 192.168.1.10 | 50123 | 60001 |
 203.0.113.1 | | 192.168.1.11 | 50124 | 60002 | 203.0.113.1 |
-
 </details>
 
 **Problem 8.** Explain what happens at each layer of the OSI model when you send an email.
@@ -459,7 +452,6 @@ path. **Layer 2 (Data Link):** Ethernet frame is created with MAC addresses of t
 1 (Physical):** Bits are transmitted as electrical/optical signals over the network cable.
 
 At the receiving end, each layer removes its header in reverse order (Layers 1→7).
-
 </details>
 
 **Problem 9.** A network uses the IP address `172.16.5.130/25`. What is the network address,
@@ -479,7 +471,6 @@ Broadcast address: `172.16.5.255` (host bits all 1: `...11111111`)
 Usable host range: `172.16.5.129` – `172.16.5.254`
 
 Number of usable hosts: $2^7 - 2 = 126$
-
 </details>
 
 **Problem 10.** Explain the difference between a switch and a router. At which OSI layer does each
@@ -503,7 +494,6 @@ communication.
 
 For revision on network security, see
 [Network Security](/docs/docs_ALevel-notes/computer-science/networks/network-security).
-
 </details>
 
 :::

@@ -289,7 +289,6 @@ are added, the result is $0.30000000000000004$, not exactly $0.3$.
 
 Solution: use `abs(a - b) < 1e-9` for comparison, or use the `decimal` module for exact decimal
 arithmetic.
-
 </details>
 
 **Problem 2.** What is the output of the following code? Explain.
@@ -314,7 +313,6 @@ True
 `a is b` returns `True` because they reference the same object.
 
 To avoid this: `b = a.copy()` or `b = a[:]`.
-
 </details>
 
 **Problem 3.** Write a function that reads a file and counts the occurrences of each word. Handle
@@ -336,7 +334,6 @@ def count_words(filename):
         print(f"Error: File '{filename}' not found.")
         return {}
 ```
-
 </details>
 
 **Problem 4.** Explain the difference between shallow copy and deep copy. Give an example where they
@@ -365,7 +362,6 @@ print(deep)     # [[1, 2], [3, 4]]   — unchanged
 
 The shallow copy shares the inner lists with the original. The deep copy has independent inner
 lists.
-
 </details>
 
 **Problem 5.** Write a function that safely divides two numbers, handling division by zero and
@@ -384,7 +380,6 @@ def safe_divide(a, b):
     except (TypeError, ValueError):
         return "Error: Non-numeric input"
 ```
-
 </details>
 
 **Problem 6.** Explain why strings are immutable in Python. What are the advantages and
@@ -415,7 +410,6 @@ for i in range(1000):
 # Efficient: O(n) — use join
 s = "".join(str(i) for i in range(1000))
 ```
-
 </details>
 
 **Problem 7.** A bitmap image has a resolution of $1920 \times 1080$ pixels and uses 24-bit colour
@@ -438,7 +432,6 @@ $\text{File size} = 6,220,800 \div 1024^2 \approx 5.93 \text{ MB}$
 **With 3:1 compression:**
 
 $\text{Compressed size} = 5.93 \div 3 \approx 1.98 \text{ MB}$
-
 </details>
 
 **Problem 8.** An audio file is recorded at a sample rate of $44,100 \text{ Hz}$ with a bit depth of
@@ -459,7 +452,6 @@ $\text{File size} = 254,016,000 \text{ bits}$
 $\text{File size} = 254,016,000 \div 8 = 31,752,000 \text{ bytes}$
 
 $\text{File size} = 31,752,000 \div 1024^2 \approx 30.28 \text{ MB}$
-
 </details>
 
 **Problem 9.** A text file contains the string `"Hello, 世界!"` (9 characters). ASCII uses 7 bits
@@ -490,7 +482,6 @@ mathematical symbols, or emoji. Unicode provides a universal character set of ov
 characters across 161 scripts, ensuring every character in every language can be uniquely encoded.
 UTF-8 is backwards compatible with ASCII, so existing ASCII text works without modification while
 gaining support for all other scripts.
-
 </details>
 
 **Problem 10.** A system stores 1000 images at 4K resolution ($3840 \times 2160$) with 32-bit colour
@@ -525,7 +516,6 @@ $\text{1000 images} = 33,177,600,000 \text{ bytes}$
 $\text{In GB} = 33,177,600,000 \div 1024^3 \approx 30.9 \text{ GB}$
 
 $\text{Compressed} = 30.9 \div 2 \approx 15.45 \text{ GB}$
-
 </details>
 
 For revision on number representation, see

@@ -332,7 +332,6 @@ Pass 2: `[1, 4, 2, 5, 8]` → `[1, 2, 4, 5, 8]` → `[1, 2, 4, 5, 8]` → `[1, 2
 `[1, 2, 4, 5, 8]`
 
 Pass 3: No swaps → sorted. Early termination.
-
 </details>
 
 **Problem 2.** Trace insertion sort on the array `[5, 1, 4, 2, 8]`. Show the array after each
@@ -349,7 +348,6 @@ insertion.
 | 4   | 8   | [1, 2, 4, 5, 8] (no shift) |
 
 Sorted: `[1, 2, 4, 5, 8]`
-
 </details>
 
 **Problem 3.** Show the merge process when merging `[1, 3, 5]` and `[2, 4, 6, 8]`.
@@ -367,7 +365,6 @@ Sorted: `[1, 2, 4, 5, 8]`
 | 6    | []          | [6, 8]       | append [6, 8]    |
 
 Result: `[1, 2, 3, 4, 5, 6, 8]`
-
 </details>
 
 **Problem 4.** Trace quick sort on `[3, 6, 8, 10, 1, 2, 1]` using the last element as pivot. Show
@@ -388,7 +385,6 @@ index = 6. Recurse on `[6, 8]` (4, 5) and `[]` (7, 6).
 **Call 4:** `quick_sort([6, 8], 4, 5)` Pivot = 8 (index 5). Partition: `[6, 8]`. Pivot index = 5.
 
 Final: `[1, 1, 2, 3, 6, 8, 10]`
-
 </details>
 
 **Problem 5.** Prove that insertion sort is stable.
@@ -400,7 +396,6 @@ Insertion sort inserts $A[i]$ into the sorted portion $A[0..i-1]$ by shifting el
 one position right. The condition for shifting is `A[j] > key` (strictly greater). If
 $A[j] = \text{key}$, the element is **not** shifted, and `key` is placed **after** the equal
 element. Therefore, equal elements maintain their relative input order. $\square$
-
 </details>
 
 **Problem 6.** A sorting algorithm makes exactly 7 comparisons to sort an array of 5 elements. Is
@@ -417,7 +412,6 @@ is achievable by an optimal comparison-based sorting algorithm.
 
 Note: $2^6 = 64 \lt{} 120$, so 6 comparisons are insufficient. The minimum is
 $\lceil \log_2 120 \rceil = 7$ comparisons.
-
 </details>
 
 **Problem 7.** When is insertion sort preferred over merge sort despite its worse asymptotic
@@ -436,7 +430,6 @@ Insertion sort is preferred when:
 4. **Stability is required** and quick sort's instability is a concern
 
 Many hybrid algorithms (e.g., Timsort) use insertion sort for small subarrays within merge sort.
-
 </details>
 
 **Problem 8.** Show that quick sort's worst case occurs when the array is already sorted and the
@@ -453,7 +446,6 @@ index = 2. Recurse on `[1, 2]`. Partition 4: pivot = 2, pivot index = 1. Recurse
 
 Each partition processes the full remaining array. Total comparisons:
 $(n-1) + (n-2) + \cdots + 1 = n(n-1)/2 = O(n^2)$.
-
 </details>
 
 **Problem 9.** Derive the recurrence relation for merge sort and solve it using the Master Theorem.
@@ -470,7 +462,6 @@ $n^{\log_b a} = n^{\log_2 2} = n^1 = n$.
 $f(n) = cn = O(n^1)$, which is case 2: $f(n) = \Theta(n^{\log_b a} \log^k n)$ with $k = 0$.
 
 Therefore: $T(n) = \Theta(n \log n)$.
-
 </details>
 
 **Problem 10.** Count the number of inversions in `[2, 4, 1, 3, 5]`.
@@ -485,7 +476,6 @@ An inversion is a pair $(i, j)$ with $i \lt{} j$ and $A[i] \gt{} A[j]$.
 Total inversions: 3.
 
 Insertion sort would perform exactly 3 swaps (shifts) to sort this array.
-
 </details>
 
 **Problem 11.** Explain how to modify merge sort to count the number of inversions in an array in
@@ -518,7 +508,6 @@ When $R[j] \lt{} L[i]$, all elements $L[i], L[i+1], \ldots$ in the left half are
 $R[j]$, contributing `len(L) - i` inversions.
 
 Total inversions = sum of inversions from all merge steps. Total time: $O(n \log n)$.
-
 </details>
 
 **Problem 12.** Explain why non-comparison-based sorts like counting sort can achieve $O(n)$ time,
@@ -542,7 +531,6 @@ counting sort runs in $O(n + k)$ time.
 
 Radix sort extends counting sort to handle larger key ranges by sorting digit by digit, achieving
 $O(d(n + b))$ where $d$ is the number of digits and $b$ is the base.
-
 </details>
 
 For revision on data structures used in sorting, see

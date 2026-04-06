@@ -402,7 +402,7 @@ tshark -r evidence.pcap -q -z conv,tcp | sort -k2 -rn | head -20
 
 ## Investigation Methodology
 
-### The Six Phases (NIST SP 800-86)
+### The Six Phases (Digital Forensic Methodology)
 
 ```mermaid
 flowchart TD

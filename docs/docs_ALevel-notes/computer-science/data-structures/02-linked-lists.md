@@ -317,7 +317,6 @@ Insert 5 at head: `head → [5|•] → None`
 Insert 3 at head: `head → [3|•] → [5|•] → None`
 
 Insert 8 at tail: `head → [3|•] → [5|•] → [8|•] → None`
-
 </details>
 
 **Problem 2.** Write a function to reverse a singly linked list in $O(n)$ time and $O(1)$ space.
@@ -341,7 +340,6 @@ def reverse(head):
 portion of the list, and `current` points to the remaining unprocessed portion. The loop processes
 each node exactly once, redirecting its `next` to point to the previously processed node. After
 processing all $n$ nodes, `prev` points to the head of the fully reversed list. $\square$
-
 </details>
 
 **Problem 3.** Explain why deleting the last node of a singly linked list takes $O(n)$ time, but
@@ -356,7 +354,6 @@ which takes $O(n)$.
 
 In a doubly linked list with a tail pointer, the last node has a `prev` pointer directly to the
 second-to-last node. You can access it in $O(1)$ and update both pointers.
-
 </details>
 
 **Problem 4.** A doubly linked list has nodes with 8 bytes of data and two 8-byte pointers. What is
@@ -372,7 +369,6 @@ Dynamic array (assuming capacity ≈ 128, next power of 2): $128 \times 8 = 1024
 per-element overhead).
 
 The linked list uses $2400/1024 \approx 2.34\times$ more memory due to pointer overhead.
-
 </details>
 
 **Problem 5.** Prove that inserting a node after a given node in a doubly linked list takes $O(1)$
@@ -389,7 +385,6 @@ The insertion requires exactly four pointer assignments:
 4. `node.next = new_node`
 
 Each assignment is $O(1)$. No traversal is needed. Total: $O(1)$. $\square$
-
 </details>
 
 **Problem 6.** Write a function to find the middle element of a singly linked list in a single pass.
@@ -409,7 +404,6 @@ def find_middle(head):
 
 Uses the **two-pointer technique**: `slow` moves one step at a time, `fast` moves two. When `fast`
 reaches the end, `slow` is at the middle. Time: $O(n)$, Space: $O(1)$.
-
 </details>
 
 **Problem 7.** A singly linked list may contain a cycle. Write a function to detect whether a cycle
@@ -433,7 +427,6 @@ def has_cycle(head):
 **Floyd's Tortoise and Hare algorithm.** `slow` advances by 1, `fast` by 2. If a cycle exists, both
 pointers eventually enter the cycle, and `fast` gains on `slow` by 1 per step. Since the cycle has
 finite length, `fast` must eventually equal `slow`. Time: $O(n)$, Space: $O(1)$.
-
 </details>
 
 **Problem 8.** Explain the advantage of using a sentinel node in a linked list implementation.
@@ -450,7 +443,6 @@ A sentinel node eliminates special-case handling for:
 Without a sentinel, every insertion and deletion function must check if the list is empty or if the
 operation affects the head. The sentinel ensures that the "node before" always exists, simplifying
 the code and reducing bug potential.
-
 </details>
 
 **Problem 9.** Trace the reversal of the linked list `head → [1] → [2] → [3] → [4] → None` using the
@@ -470,7 +462,6 @@ Initial: `prev = None`, `current = [1] → [2] → [3] → [4] → None`
 | (after 4) | [4]→[3]→[2]→[1] | None            | None      |
 
 Result: `[4] → [3] → [2] → [1] → None`
-
 </details>
 
 **Problem 10.** A circular buffer can be implemented using either a fixed-size array or a circular
@@ -494,7 +485,6 @@ The linked list is preferred when the size is highly variable.
 
 For revision on queues, see
 [Stacks and Queues](/docs/docs_ALevel-notes/computer-science/data-structures/stacks-and-queues).
-
 </details>
 
 ---
@@ -510,7 +500,6 @@ delete the node containing 7.
 
 Perform each operation step by step, updating one pointer at a time. For insertion between nodes,
 you need to modify the `next` pointer of the preceding node.
-
 </details>
 
 <details>
@@ -536,7 +525,6 @@ head → [9|•] → [2|•] → [5|•] → [4|•] → None
 
 To delete 7: traverse to the node before 7 (which is the node containing 2), then set
 `node.next = node.next.next` (i.e., point 2's `next` directly to 5).
-
 </details>
 
 **Problem 2.** Draw the state of a doubly linked list after deleting the node containing value 6.
@@ -554,7 +542,6 @@ Show the pointer changes required.
 
 In a doubly linked list, deleting a node requires updating four pointers: the `next` of the previous
 node and the `prev` of the next node.
-
 </details>
 
 <details>
@@ -573,7 +560,6 @@ None ← [3|•|•] ↔ [8|•|•] ↔ [1|•|•] → None
 ```
 
 The pointers of the deleted node (6) are set to `None` to avoid dangling references.
-
 </details>
 
 **Problem 3.** Trace the following operations on a singly linked list, showing the head pointer and
@@ -590,7 +576,6 @@ list contents after each step. Start with an empty list.
 
 Go through each operation one at a time. For `insert_at`, position 1 means the second element
 (0-indexed).
-
 </details>
 
 <details>
@@ -605,7 +590,6 @@ Go through each operation one at a time. For `insert_at`, position 1 means the s
    `head → [15|•] → [10|•] → [30|•] → None`
 
 Final list: 15, 10, 30.
-
 </details>
 
 **Problem 4.** Given the singly linked list `head → [5|•] → [12|•] → [3|•] → [8|•] → None`, trace
@@ -616,7 +600,6 @@ value 9.
 <summary>Hint</summary>
 
 The search function starts at the head and visits each node sequentially, comparing the data field.
-
 </details>
 
 <details>
@@ -640,7 +623,6 @@ absent).
 - `current.next` is None → not found, return -1
 
 Nodes visited: **4** (all nodes). This is the worst case for a list of 4 elements — $O(n)$.
-
 </details>
 
 **Problem 5.** Compare singly linked lists and doubly linked lists in terms of: (a) memory per node,
@@ -652,7 +634,6 @@ time to delete a given node (when you have a reference to it). Use Big-O notatio
 
 Consider how many pointers each node stores and how that affects navigation. For (c), think about
 whether you can go backwards in a singly linked list.
-
 </details>
 
 <details>
@@ -667,7 +648,6 @@ whether you can go backwards in a singly linked list.
 
 Where $d$ is data size and $p$ is pointer size. The doubly linked list uses more memory per node (an
 extra pointer) but provides $O(1)$ insertion before and deletion of a known node.
-
 </details>
 
 **Problem 6.** A programmer is implementing a music playlist. Songs can be added to the end, removed
@@ -679,7 +659,6 @@ Should they use a singly or doubly linked list? Justify your answer.
 
 The "skip backward" requirement is the key factor. Consider what operations each list type supports
 efficiently.
-
 </details>
 
 <details>
@@ -700,7 +679,6 @@ Other operations:
 
 The doubly linked list matches all requirements with $O(1)$ operations, while the singly linked list
 would make backward skipping $O(n)$.
-
 </details>
 
 **Problem 7.** Each node in a singly linked list contains a 4-byte integer and one pointer (8 bytes
@@ -712,7 +690,6 @@ memory is used for data versus pointers? Compare this to a static array of 50 in
 
 Calculate the size of one node (data + pointer), then multiply by 50. For the array, only the data
 is stored.
-
 </details>
 
 <details>
@@ -729,7 +706,6 @@ Static array of 50 integers: $50 \times 4 = 200$ bytes.
 
 The linked list uses $600 / 200 = 3\times$ more memory than the array. Only one-third of the linked
 list's memory stores actual data; the remaining two-thirds is pointer overhead.
-
 </details>
 
 **Problem 8.** Explain why dynamically allocating memory for each linked list node individually can
@@ -740,7 +716,6 @@ lead to memory fragmentation. How does this differ from array memory allocation?
 
 Consider where each node is placed in memory relative to other nodes. Think about what happens after
 many insertions and deletions.
-
 </details>
 
 <details>
@@ -759,7 +734,6 @@ access causes cache misses because nodes are scattered.
 
 In practice, this fragmentation and cache performance difference is why arrays outperform linked
 lists for traversal-heavy workloads, despite having the same asymptotic complexity.
-
 </details>
 
 **Problem 9.** Write pseudocode for inserting a new node with value `V` at the **tail** of a singly
@@ -770,7 +744,6 @@ linked list that has a `tail` pointer. The algorithm must work correctly when th
 
 Handle the empty list as a special case (head and tail both become the new node). For a non-empty
 list, update the current tail's `next` pointer and then update the tail pointer.
-
 </details>
 
 <details>
@@ -797,7 +770,6 @@ ENDPROCEDURE
   pointer is updated to the new node. The list grows by one element at the end. ✓
 
 Time complexity: $O(1)$ — no traversal needed because the tail pointer is available.
-
 </details>
 
 **Problem 10.** (Exam-style) A hospital's A&E department needs a data structure to manage patient
@@ -812,7 +784,6 @@ structures.
 
 Focus on the three key operations: add to end, remove from front, and move to front. Consider which
 data structure supports each operation most efficiently.
-
 </details>
 
 <details>
@@ -843,7 +814,6 @@ not doing traversal-heavy work.
 **Conclusion:** A singly linked list (with head and tail pointers) is the most appropriate data
 structure, as its $O(1)$ dequeue operation is essential for the high-frequency "remove from front"
 operation in a busy A&E department.
-
 </details>
 
 :::

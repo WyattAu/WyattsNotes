@@ -397,7 +397,6 @@ Adjacency list:
 - B: [A, C]
 - C: [A, B, D]
 - D: [C, A]
-
 </details>
 
 **Problem 2.** Trace BFS starting from vertex A on the graph from Problem 1. List the order in which
@@ -415,7 +414,6 @@ vertices are visited and their distances.
 | 4    | D       | C, A    | C, A (visited)              | []                 | —             |
 
 Visit order: A, B, C, D. Distances: A:0, B:1, C:1, D:1.
-
 </details>
 
 **Problem 3.** Apply Dijkstra's algorithm to find the shortest paths from vertex A in the following
@@ -434,7 +432,6 @@ weighted graph. Edges: A→B (4), A→C (2), B→C (1), B→D (5), C→B (1), C�
 | 5    | E (10)  | 0       | 3       | 2       | 8       | 10      |
 
 Shortest paths: A→A: 0, A→B: 3 (A→C→B), A→C: 2, A→D: 8 (A→C→B→D), A→E: 10 (A→C→B→D→E).
-
 </details>
 
 **Problem 4.** Find the MST of the following graph using Kruskal's algorithm. Edges with weights:
@@ -454,7 +451,6 @@ Sorted edges: B-C (1), A-C (2), D-E (3), A-B (4), B-D (5), C-D (8)
 | B-D  | 5      | Yes                | `{B-C, A-C, D-E, B-D}` |
 
 MST weight: $1 + 2 + 3 + 5 = 11$. 4 edges for 5 vertices. ✓
-
 </details>
 
 **Problem 5.** Prove that BFS uses $O(V)$ space in the worst case.
@@ -467,7 +463,6 @@ simultaneously. In a graph where the source is connected to all other vertices, 
 are $V - 1$ vertices in the queue. In a star graph, the maximum queue size is $V - 1$. In a complete
 graph, BFS visits one level at a time, and the maximum queue size is bounded by the number of
 vertices at the maximum depth, which is at most $V - 1$. Hence the space is $O(V)$. $\square$
-
 </details>
 
 **Problem 6.** Given a DAG, explain why topological sort is possible but BFS-based shortest path
@@ -485,7 +480,6 @@ each vertex at most once (it marks vertices as visited). The shortest path dista
 well-defined even with cycles, since a cycle would only increase the path length. However, for
 **weighted** graphs with negative cycles, shortest paths are undefined (you can keep going around
 the cycle to decrease the distance).
-
 </details>
 
 **Problem 7.** A graph has 6 vertices and 9 edges. What is the sum of all vertex degrees? Is this
@@ -513,7 +507,6 @@ edges among the other 5, but 9 < 10, so it's possible: 9 edges among 5 vertices 
 Yes, it's possible to be disconnected: 5 vertices with 9 edges + 1 isolated vertex. 9 edges among 5
 vertices means the graph on those 5 vertices has 9 edges, which is possible ($K_5$ has 10). So the
 answer is: no, not necessarily connected.
-
 </details>
 
 **Problem 8.** Explain why Dijkstra's algorithm fails with negative edge weights. Give a
@@ -550,7 +543,6 @@ The algorithm fails because when $C$ is extracted at distance 4, it finds a shor
 
 **Recovery:** Use the Bellman-Ford algorithm, which correctly handles negative edge weights by
 relaxing all edges $|V| - 1$ times. Bellman-Ford also detects negative-weight cycles.
-
 </details>
 
 **Problem 9.** Perform a topological sort on the following DAG: edges A→B, A→C, B→D, C→D, D→E.
@@ -570,7 +562,6 @@ DFS finishes: E, D, B, C, A. Reverse: A, C, B, D, E.
 Check: A before B ✓, A before C ✓, B before D ✓, C before D ✓, D before E ✓.
 
 Valid topological order: A, B, C, D, E (or A, C, B, D, E).
-
 </details>
 
 **Problem 10.** Compare Kruskal's and Prim's MST algorithms in terms of time complexity for dense
@@ -588,7 +579,6 @@ Kruskal: $O(E \log E) = O(E \log V)$. Prim (binary heap): $O((V+E) \log V)$.
 
 For dense graphs: Prim with an adjacency matrix (no heap) runs in $O(V^2)$, which is better than
 Kruskal's $O(V^2 \log V)$.
-
 </details>
 
 **Problem 11.** Prove that a tree with $n$ vertices has exactly $n - 1$ edges using induction.
@@ -608,7 +598,6 @@ single incident edge. The resulting graph $T'$ is still a tree (removing a leaf 
 cycle, and $T'$ is still connected since $v$ was only connected to one vertex). $T'$ has $k$
 vertices, so by the inductive hypothesis, $T'$ has $k - 1$ edges. Adding back $v$ and its edge gives
 $(k - 1) + 1 = k$ edges. ✓ $\square$
-
 </details>
 
 **Problem 12.** Given a graph represented as an adjacency list, write a function to detect whether
@@ -645,7 +634,6 @@ The recursion stack (`rec_stack`) tracks the current DFS path. If we encounter a
 already on the current path, we've found a back edge → cycle.
 
 For undirected graphs, we additionally check that the back edge doesn't go to the parent vertex.
-
 </details>
 
 For revision on algorithms, see

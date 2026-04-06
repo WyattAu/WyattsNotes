@@ -380,7 +380,7 @@ Intersection: $(-\infty, 3)$.
    $$
 
    Solution: $\left(-\infty, \dfrac{22}{5}\right]$.
-   </details>
+</details>
 
 2. **Question:** Solve $x^2 - 6x + 9 \geq 0$.
    <details>
@@ -390,7 +390,7 @@ Intersection: $(-\infty, 3)$.
    Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all real numbers.
 
    Solution: $\mathbb{R}$.
-   </details>
+</details>
 
 3. **Question:** Find the range of $x$ for which $x^2 - 3x - 10 < 0$ and $2x + 1 > 0$ both hold.
    <details>
@@ -400,7 +400,7 @@ Intersection: $(-\infty, 3)$.
    From $2x + 1 > 0$: $x > -\dfrac{1}{2}$.
 
    Intersection: $-\dfrac{1}{2} < x < 5$, i.e., $\left(-\dfrac{1}{2}, 5\right)$.
-   </details>
+</details>
 
 4. **Question:** Solve $|3x - 5| < 7$.
    <details>
@@ -418,7 +418,7 @@ Intersection: $(-\infty, 3)$.
    $$
 
    Solution: $\left(-\dfrac{2}{3}, 4\right)$.
-   </details>
+</details>
 
 5. **Question:** Solve $|2x + 3| \geq x^2 + 2$.
    <details>
@@ -448,7 +448,7 @@ Intersection: $(-\infty, 3)$.
    Discriminant: $\Delta = 4 - 20 = -16 < 0$. Since $a = 1 > 0$, the expression is always positive. No solution in this case.
 
    Solution: $[1 - \sqrt{2},\; 1 + \sqrt{2}]$.
-   </details>
+</details>
 
 6. **Question:** For what values of $k$ does the quadratic equation $x^2 + 2kx + k + 6 = 0$ have two distinct real roots?
    <details>
@@ -468,7 +468,7 @@ Intersection: $(-\infty, 3)$.
    Since $a = 1 > 0$, the parabola opens upward. The expression is positive outside the roots.
 
    Solution: $k < -2$ or $k > 3$, i.e., $(-\infty, -2) \cup (3, \infty)$.
-   </details>
+</details>
 
 7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$, $|x - 2| \leq 3$, and $x > 0$.
    <details>
@@ -487,7 +487,7 @@ Intersection: $(-\infty, 3)$.
    Combined: $[1, 4]$.
 
    Solution: $[1, 4]$.
-   </details>
+</details>
 
 8. **Question:** A ball is thrown upward from a height of $2$ m with an initial velocity of $20$ m/s. The height $h$ (in metres) after $t$ seconds is given by $h(t) = -5t^2 + 20t + 2$. During what time interval is the ball at a height greater than $17$ m?
    <details>
@@ -511,7 +511,7 @@ Intersection: $(-\infty, 3)$.
    Factorize: $(t - 1)(t - 3) < 0 \implies 1 < t < 3$.
 
    The ball is above $17$ m during the interval $(1, 3)$ seconds.
-   </details>
+</details>
 
 9. **Question:** Solve $\dfrac{x^2 - 4}{x - 1} \geq 0$.
    <details>
@@ -541,7 +541,7 @@ Intersection: $(-\infty, 3)$.
    (Note: $x = -2$ is included because the numerator is zero there; $x = 1$ is excluded; $x = 2$ is included.)
 
    Solution: $[-2, 1) \cup [2, \infty)$.
-   </details>
+</details>
 
 10. **Question:** Solve $|x^2 - 3x + 1| < 3$.
     <details>
@@ -569,5 +569,5 @@ Intersection: $(-\infty, 3)$.
     Since the left inequality imposes no restriction, the solution is:
 
     Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
-    </details>
+</details>
 </details>

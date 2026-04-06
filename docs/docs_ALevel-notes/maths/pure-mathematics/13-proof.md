@@ -325,7 +325,6 @@ $(2m+1)(2n+1) = 4mn + 2m + 2n + 1 = 2(2mn+m+n) + 1$.
 This is of the form $2k+1$ (with $k = 2mn+m+n$), hence odd. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Deduction](#1-proof-by-deduction) — Section 1.
-
 </details>
 
 <details>
@@ -341,7 +340,6 @@ But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 \gt{} N$. This contradicts 
 greatest even integer. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
-
 </details>
 
 <details>
@@ -370,7 +368,6 @@ $$
 
 **If you get this wrong, revise:**
 [Proof by Mathematical Induction](#5-proof-by-mathematical-induction) — Section 5.
-
 </details>
 
 <details>
@@ -390,7 +387,6 @@ But $\gcd(a,b) \geq 3$, contradicting $\gcd(a,b) = 1$. $\blacksquare$
 
 **If you get this wrong, revise:** [$\sqrt{2}$ is irrational](#23-sqrt2-is-irrational) — Section
 2.3.
-
 </details>
 
 <details>
@@ -406,7 +402,6 @@ Let $x = \pi/4$. $\sin(\pi/2) = 1$ but $2\sin(\pi/4) = 2 \times \dfrac{\sqrt{2}}
 
 **If you get this wrong, revise:** [Disproof by Counterexample](#4-disproof-by-counterexample) —
 Section 4.
-
 </details>
 
 <details>
@@ -425,7 +420,6 @@ _Step:_ $5^{k+1} + 3 = 5 \cdot 5^k + 3 = 5(4m-3) + 3 = 20m - 15 + 3 = 20m - 12 =
 Divisible by 4. ✓ $\blacksquare$
 
 **If you get this wrong, revise:** [Divisibility](#54-divisibility) — Section 5.4.
-
 </details>
 
 <details>
@@ -446,7 +440,6 @@ Contradiction. $\blacksquare$
 
 **If you get this wrong, revise:** [$\log_2 3$ is irrational](#24-log_2-3-is-irrational) — Section
 2.4.
-
 </details>
 
 <details>
@@ -464,7 +457,6 @@ $n=2$: $n^2-1 = 3$, not divisible by 24 (special case $n=2$). $n=3$: $n^2-1 = 8$
 So the claim holds: primes 2 and 3 are exceptions, and $5^2 - 1 = 24$ is divisible by 24.
 
 **If you get this wrong, revise:** [Proof by Exhaustion](#3-proof-by-exhaustion) — Section 3.
-
 </details>
 
 <details>
@@ -484,7 +476,6 @@ Since $k(k+1)$ is always even (product of consecutive integers), $3k(k+1)$ is di
 $(k+1)^3 - (k+1) = 6m + 6n = 6(m+n)$. ✓ $\blacksquare$
 
 **If you get this wrong, revise:** [Divisibility](#54-divisibility) — Section 5.4.
-
 </details>
 
 <details>
@@ -502,7 +493,6 @@ This is even but not divisible by 4. So $c^2$ is even but not divisible by 4, me
 (if $c = 2p$, $c^2 = 4p^2$, which IS divisible by 4). Contradiction. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
-
 </details>
 
 <details>
@@ -529,7 +519,6 @@ $$
 
 **If you get this wrong, revise:**
 [Proof by Mathematical Induction](#5-proof-by-mathematical-induction) — Section 5.
-
 </details>
 
 :::

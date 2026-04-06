@@ -207,7 +207,6 @@ $P(A \cap B) = P(A) + P(B) - P(A \cup B) = 0.4 + 0.5 - 0.7 = 0.2$.
 $P(A|B) = P(A \cap B)/P(B) = 0.2/0.5 = 0.4$.
 
 **If you get this wrong, revise:** [Addition Rule](#22-addition-rule) — Section 2.2.
-
 </details>
 
 <details>
@@ -230,7 +229,6 @@ Even with a 99% accurate test, a positive result means only a 50% chance of actu
 disease, because the disease is so rare.
 
 **If you get this wrong, revise:** [Bayes' Theorem](#4-bayes-theorem) — Section 4.
-
 </details>
 
 <details>
@@ -244,7 +242,6 @@ $P(A \cap B') = P(A) - P(A \cap B) = P(A) - P(A)P(B)$ (by independence)
 $= P(A)[1 - P(B)] = P(A)P(B')$. $\blacksquare$
 
 **If you get this wrong, revise:** [Independence](#5-independence) — Section 5.
-
 </details>
 
 <details>
@@ -261,7 +258,6 @@ Ways to get one of each colour: $\binom{4}{1}\binom{3}{1}\binom{2}{1} = 4 \times
 $P = 24/84 = 2/7$.
 
 **If you get this wrong, revise:** [Counting Principles](#7-counting-principles) — Section 7.
-
 </details>
 
 <details>
@@ -277,7 +273,6 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap
 $$= 0.3 + 0.4 + 0.5 - 0.1 - 0.15 - 0.2 + 0.05 = 0.8$$
 
 **If you get this wrong, revise:** [Addition Rule](#22-addition-rule) — Section 2.2.
-
 </details>
 
 <details>
@@ -293,7 +288,6 @@ $P(B|A) = P(B \cap A)/P(A) = P(B)/P(A) = (1/4)/(3/4) = 1/3$.
 
 **If you get this wrong, revise:** [Conditional Probability](#3-conditional-probability) —
 Section 3.
-
 </details>
 
 <details>
@@ -310,7 +304,6 @@ $P(A) = 3/6 = 1/2$, $P(B) = 3/6 = 1/2$, $P(A \cap B) = 2/6 = 1/3$.
 $P(A)P(B) = 1/4 \neq 1/3 = P(A \cap B)$. So $A$ and $B$ are **not** independent.
 
 **If you get this wrong, revise:** [Independence](#5-independence) — Section 5.
-
 </details>
 
 <details>
@@ -326,7 +319,6 @@ $P(M|P) = P(M \cap P)/P(P) = 0.25/0.4 = 0.625$.
 
 **If you get this wrong, revise:** [Conditional Probability](#3-conditional-probability) —
 Section 3.
-
 </details>
 
 <details>
@@ -341,7 +333,6 @@ First two non-defective, third defective:
 $$P = \frac{7}{10} \times \frac{6}{9} \times \frac{3}{8} = \frac{7 \times 6 \times 3}{720} = \frac{126}{720} = \frac{7}{40}$$
 
 **If you get this wrong, revise:** [Tree Diagrams](#62-tree-diagrams) — Section 6.2.
-
 </details>
 
 <details>
@@ -357,7 +348,6 @@ $P(X=1) = \binom{20}{1}(0.05)^1(0.95)^{19} = 20 \times 0.05 \times 0.95^{19} \ap
 
 **If you get this wrong, revise:** [Binomial Distribution](#41-binomial) — Statistical Distributions
 chapter.
-
 </details>
 
 <details>
@@ -372,7 +362,6 @@ By De Morgan's law: $(A \cup B')' = A' \cap B$.
 So $P(A \cup B') = 1 - P((A \cup B')') = 1 - P(A' \cap B)$. $\blacksquare$
 
 **If you get this wrong, revise:** [Complement Rule](#21-complement-rule) — Section 2.1.
-
 </details>
 
 <details>
@@ -391,7 +380,6 @@ Total flushes: $4 \times 1287 = 5148$.
 $P(\text{flush}) = 5148/2598960 \approx 0.00198 \approx 0.2\%$.
 
 **If you get this wrong, revise:** [Counting Principles](#7-counting-principles) — Section 7.
-
 </details>
 
 :::

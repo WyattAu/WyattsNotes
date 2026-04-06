@@ -355,7 +355,6 @@ $$f'(x) = \lim_{h\to 0}\frac{\sqrt{x+h}-\sqrt{x}}{h} \cdot \frac{\sqrt{x+h}+\sqr
 
 **If you get this wrong, revise:**
 [The Derivative from First Principles](#1-the-derivative-from-first-principles) — Section 1.
-
 </details>
 
 <details>
@@ -375,7 +374,6 @@ $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 **If you get this wrong, revise:**
 [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
-
 </details>
 
 <details>
@@ -393,7 +391,6 @@ $$\frac{dy}{dx} = \frac{e^x(x^2+2x)\sin x - x^2 e^x \cos x}{\sin^2 x} = \frac{xe
 
 **If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and
 [The Product Rule](#3-the-product-rule) — Section 3.
-
 </details>
 
 <details>
@@ -410,7 +407,6 @@ $$\frac{dy}{dx} = \frac{y - x^2}{y^2 - x}$$
 
 **If you get this wrong, revise:** [Implicit Differentiation](#12-implicit-differentiation) —
 Section 12.
-
 </details>
 
 <details>
@@ -430,7 +426,6 @@ $$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \fra
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.
-
 </details>
 
 <details>
@@ -447,7 +442,6 @@ all $x \gt{} 0$, so $f$ is strictly increasing on $(0, \infty)$.
 
 **If you get this wrong, revise:**
 [Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
-
 </details>
 
 <details>
@@ -465,7 +459,6 @@ $$y - 1 = \frac{1}{e}(x - e) \implies y = \frac{x}{e}$$
 
 **If you get this wrong, revise:**
 [Derivatives of Standard Functions](#6-derivatives-of-standard-functions) — Section 6.
-
 </details>
 
 <details>
@@ -491,7 +484,6 @@ $t=-1$ is a **minimum**.
 
 **If you get this wrong, revise:**
 [Differentiation of Parametric Equations](#11-differentiation-of-parametric-equations) — Section 11.
-
 </details>
 
 <details>
@@ -506,7 +498,6 @@ $\sec x = \dfrac{1}{\cos x} = (\cos x)^{-1}$.
 $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \tan x \quad \blacksquare$$
 
 **If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
-
 </details>
 
 <details>
@@ -524,7 +515,6 @@ $f(2) = 2 + \dfrac{4}{2} = 4$.
 
 **If you get this wrong, revise:**
 [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
-
 </details>
 
 <details>
@@ -541,7 +531,6 @@ $\dfrac{dy}{du} = 3u^2$, $\dfrac{du}{dx} = \cos(2x^2+1) \cdot 4x$.
 $$\frac{dy}{dx} = 3\sin^2(2x^2+1) \cdot \cos(2x^2+1) \cdot 4x = 12x\sin^2(2x^2+1)\cos(2x^2+1)$$
 
 **If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
-
 </details>
 
 <details>
@@ -560,7 +549,6 @@ $f''(x) = 0$ when $x = 1$. But $f''(x) = 12(x-1)^2 \geq 0$ for all $x$ — the s
 (Note: $f(x) = (x-1)^4$, which is concave up everywhere.)
 
 **If you get this wrong, revise:** [Points of Inflection](#10-points-of-inflection) — Section 10.
-
 </details>
 
 <details>
@@ -581,7 +569,6 @@ decreasing on each branch.
 
 **If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and
 [Stationary Points](#72-stationary-points) — Section 7.2.
-
 </details>
 
 <details>
@@ -603,7 +590,6 @@ $$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{10
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.
-
 </details>
 
 :::

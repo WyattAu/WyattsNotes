@@ -607,7 +607,6 @@ Anode: $\text{Zn} \to \text{Zn}^{2+} + 2e^-$
 Multiply cathode by 2: $2\text{Ag}^+ + 2e^- \to 2\text{Ag}$
 
 Overall: $\text{Zn} + 2\text{Ag}^+ \to \text{Zn}^{2+} + 2\text{Ag}$
-
 </details>
 
 ---
@@ -819,7 +818,6 @@ $$2.38 = \frac{Q \times 63.5}{2 \times 96500}$$
 $$Q = \frac{2.38 \times 2 \times 96500}{63.5} = \frac{459340}{63.5} = 7234 \text{ C}$$
 
 $$t = \frac{Q}{I} = \frac{7234}{4.0} = 1808.5 \text{ s} \approx 30.1 \text{ minutes}$$
-
 </details>
 
 :::

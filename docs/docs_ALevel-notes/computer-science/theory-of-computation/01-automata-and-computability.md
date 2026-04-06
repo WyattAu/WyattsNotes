@@ -329,7 +329,6 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 
 Trace "110": $q_0 \to q_0 \to q_0 \to q_0$. Accept (0 zeros, even). ✓ Trace "101":
 $q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
-
 </details>
 
 **Problem 2.** Convert the following NFA to a DFA using the subset construction.
@@ -364,7 +363,6 @@ Accepting states: any subset containing 2 → $\{0, 2\}$.
 | $\{0,1\}$   | $\{0,1\}$   | $\{0,2\}$   | No      |
 | $\{0,2\}$   | $\{0,1\}$   | $\{0\}$     | Yes     |
 | $\emptyset$ | $\emptyset$ | $\emptyset$ | No      |
-
 </details>
 
 **Problem 3.** Write a regular expression for the language of all binary strings that do NOT contain
@@ -391,7 +389,6 @@ Verification:
 - "10" → matches with "10" and ε. ✓
 - "0101" → matches with "0", "10", "1"... wait: "0101" = "0" + "10" + "1". ✓
 - "11" → cannot match (no way to have two consecutive 1s). ✓
-
 </details>
 
 **Problem 4.** Use the Pumping Lemma to prove that $L = \{ww \mid w \in \{0,1\}^*\}$ is not regular.
@@ -417,7 +414,6 @@ first $p + 1 - k/2$ characters: $0^{p-k}1$. The second half is: $0^{k/2}0^p1 = 0
 these to be equal, $p-k = p+k/2$, giving $k = -k/2$, so $k = 0$. But $k \geq 1$. Contradiction. ✓
 
 Therefore, $L$ is not regular. $\square$
-
 </details>
 
 **Problem 5.** Describe a Turing machine that decides whether a binary string is a palindrome (reads
@@ -459,7 +455,6 @@ the same forwards and backwards).
 
 This TM halts on all inputs (always reaches accept or reject), so the language of palindromes is
 **decidable**. ✓
-
 </details>
 
 **Problem 6.** Prove that if the halting problem were decidable, then every semi-decidable language
@@ -483,7 +478,6 @@ language would be decidable.
 
 But we know the halting problem is undecidable, so there must exist semi-decidable languages that
 are not decidable (e.g., the halting problem itself). $\square$
-
 </details>
 
 **Problem 7.** Explain the difference between a decidable problem and a semi-decidable problem. Give
@@ -506,7 +500,6 @@ yes-instances, but may loop forever on no-instances.
 **Key difference:** For semi-decidable problems, you can verify a "yes" answer in finite time, but
 you cannot always verify a "no" answer (the machine might just be taking a long time, or it might
 loop forever).
-
 </details>
 
 **Problem 8.** Is the complement of the halting problem semi-decidable? Explain.
@@ -523,7 +516,6 @@ the answer).
 The halting problem is semi-decidable (run the TM and accept when it halts). If its complement were
 also semi-decidable, the halting problem would be decidable — but we proved it's not. Therefore, the
 complement of the halting problem is not semi-decidable. $\square$
-
 </details>
 
 **Problem 9.** Explain why the Travelling Salesman Problem (decision version: "Is there a tour of
@@ -546,7 +538,6 @@ polynomial time:
 Total verification time: $O(n)$, which is polynomial. Therefore, TSP is in NP. ✓
 
 (Note: this does NOT mean TSP is in P. Verification is polynomial, but finding the tour may not be.)
-
 </details>
 
 **Problem 10.** State the Church-Turing thesis. Explain why it is a thesis and not a theorem. What
@@ -573,7 +564,6 @@ model of computation.
 
 For revision on algorithms and complexity, see
 [Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/complexity-analysis).
-
 </details>
 
 :::

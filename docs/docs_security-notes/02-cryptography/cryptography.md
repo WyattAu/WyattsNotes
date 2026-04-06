@@ -410,7 +410,7 @@ ph.verify(hashed, "correct_horse_battery_staple")  # True
 | Iterations  | 3             | N/A      | 10+                 |
 | Parallelism | 4             | 1        | N/A                 |
 | Salt length | 16 bytes      | 16 bytes | 16 bytes (embedded) |
-| Hash length | 32 bytes      | 32 bytes | 31 bytes            |
+| Hash length | 32 bytes      | 32 bytes | 31 characters       |
 
 ## Message Authentication Codes
 
@@ -649,7 +649,8 @@ TLS 1.3 improvements over TLS 1.2:
 - **0-RTT resumption** for repeat connections (with replay protection caveats)
 - **Mandatory forward secrecy** (all cipher suites use ephemeral key exchange)
 - **No renegotiation** (eliminates a class of attacks)
-- **Encrypted ServerHello** (after the initial message exchange)
+- **Encrypted server messages** (EncryptedExtensions, Certificate, etc. sent after cleartext
+  ServerHello)
 
 ### Cipher Suites
 
@@ -726,7 +727,7 @@ A sufficiently powerful quantum computer running Shor's algorithm could:
 - **Break DH**: Compute discrete logarithms in polynomial time
 
 Grover's algorithm reduces the effective security of symmetric encryption and hashing by half (e.g.,
-AES-128 becomes 64-bit security, SHA-256 becomes 128-bit collision resistance).
+AES-128 becomes 64-bit security, SHA-256 preimage resistance becomes 128-bit).
 
 ### NIST PQC Standardization (2024)
 

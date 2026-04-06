@@ -229,7 +229,6 @@ $T = \dfrac{2V\sin\theta}{g} = \dfrac{60\sin 50°}{9.8} = \dfrac{45.96}{9.8} \ap
 $R = \dfrac{V^2\sin 2\theta}{g} = \dfrac{900\sin 100°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\,\text{m}$.
 
 **If you get this wrong, revise:** [Key Results](#3-key-results) — Section 3.
-
 </details>
 
 <details>
@@ -249,7 +248,6 @@ $\blacksquare$
 
 **If you get this wrong, revise:** [The Trajectory Equation](#2-the-trajectory-equation) —
 Section 2.
-
 </details>
 
 <details>
@@ -266,7 +264,6 @@ $y = -\dfrac{1}{2}gt^2 = -80 \implies t^2 = \dfrac{160}{9.8} \implies t \approx 
 $x = 20 \times 4.04 \approx 80.8\,\text{m}$.
 
 **If you get this wrong, revise:** [Equations of Motion](#1-equations-of-motion) — Section 1.
-
 </details>
 
 <details>
@@ -282,7 +279,6 @@ The projectile should be launched at $60°$ to the horizontal.
 
 **If you get this wrong, revise:**
 [Maximum range on an inclined plane](#43-maximum-range-on-an-inclined-plane) — Section 4.3.
-
 </details>
 
 <details>
@@ -306,7 +302,6 @@ $= \sqrt{11.49^2 + 11.55^2} = \sqrt{132.0 + 133.4} = \sqrt{265.4} \approx 16.3\,
 Angle below horizontal: $\arctan(11.55/11.49) \approx 45.1°$.
 
 **If you get this wrong, revise:** [Velocity at Any Point](#5-velocity-at-any-point) — Section 5.
-
 </details>
 
 <details>
@@ -321,7 +316,6 @@ $r = \dfrac{2V^2\cos\theta\sin(\theta-\alpha)}{g\cos^2\alpha} = \dfrac{2(625)\co
 $= \dfrac{1250 \times 0.8192 \times 0.2588}{9.8 \times 0.8830} = \dfrac{265.1}{8.653} \approx 30.6\,\text{m}$.
 
 **If you get this wrong, revise:** [Up the plane](#41-up-the-plane) — Section 4.1.
-
 </details>
 
 <details>
@@ -337,7 +331,6 @@ $R_{\max} = \dfrac{V^2 \times 1}{g} = \dfrac{V^2}{g}$. $\blacksquare$
 
 **If you get this wrong, revise:** [Range on horizontal ground](#33-range-on-horizontal-ground) —
 Section 3.3.
-
 </details>
 
 <details>
@@ -360,7 +353,6 @@ catch it at the same height.
 
 **If you get this wrong, revise:** [The Trajectory Equation](#2-the-trajectory-equation) —
 Section 2.
-
 </details>
 
 <details>
@@ -375,7 +367,6 @@ $r = \dfrac{2V^2\cos\theta\sin(\theta+\alpha)}{g\cos^2\alpha} = \dfrac{2(400)\co
 $= \dfrac{800 \times 0.8660 \times 0.8192}{9.8 \times 0.8214} = \dfrac{567.5}{8.050} \approx 70.5\,\text{m}$.
 
 **If you get this wrong, revise:** [Down the plane](#42-down-the-plane) — Section 4.2.
-
 </details>
 
 <details>
@@ -406,7 +397,6 @@ $V \approx 46.3\,\text{m s}^{-1}$.
 
 **If you get this wrong, revise:** [The Trajectory Equation](#2-the-trajectory-equation) —
 Section 2.
-
 </details>
 
 :::

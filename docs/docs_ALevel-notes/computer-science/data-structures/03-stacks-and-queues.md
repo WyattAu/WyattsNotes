@@ -288,7 +288,6 @@ _Termination._ After processing all $n$ tokens of a valid RPN expression, exactl
 Result: 14 ✓
 
 Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
-
 </details>
 
 ### 3.3 Infix to Postfix Conversion (Shunting-Yard Algorithm)
@@ -319,7 +318,6 @@ Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
 | end   | 3, 4, +, 5, \* |                | Pop remaining                 |
 
 Result: `3 4 + 5 *` ✓
-
 </details>
 
 ---
@@ -389,7 +387,6 @@ Initial: `[10, 20, 30]` (top = 30)
 - `pop()` → 30: `[10, 20]`
 
 Stack: `[10, 20]` (20 on top)
-
 </details>
 
 **Problem 2.** A queue initially contains `[10, 20, 30]` (front = 10). After `enqueue(40)`,
@@ -406,7 +403,6 @@ Initial: front → [10, 20, 30] → rear
 - `dequeue()` → 20: [30, 40, 50]
 
 Queue: [30, 40, 50] (front = 30)
-
 </details>
 
 **Problem 3.** Evaluate the RPN expression: `2 3 1 * + 9 -`
@@ -427,7 +423,6 @@ Queue: [30, 40, 50] (front = 30)
 Result: -4 ✓
 
 Check: $2 + (3 \times 1) - 9 = 2 + 3 - 9 = -4$ ✓
-
 </details>
 
 **Problem 4.** Convert the infix expression `A + B * C - D` to RPN using the shunting-yard
@@ -452,7 +447,6 @@ Precedence: `*` > `+`, `-`
 Result: `A B C * + D -` ✓
 
 Check: $(A + (B \times C)) - D$
-
 </details>
 
 **Problem 5.** Prove that a stack can be used to check for balanced parentheses in a string in
@@ -477,7 +471,6 @@ underflow means every `)` matched a previous `(`. Empty stack means every `(` wa
 string is balanced. $\square$
 
 Time: $O(n)$ — one pass through the string. Space: $O(n)$ — stack depth.
-
 </details>
 
 **Problem 6.** Implement a queue using two stacks. Show that `enqueue` is $O(1)$ and `dequeue` is
@@ -511,7 +504,6 @@ to `out_stack` ($O(n)$), then pop ($O(1)$). Each element is transferred at most 
 **Amortised proof.** Over a sequence of $n$ operations, each element is pushed to `in_stack` once
 ($O(1)$), transferred to `out_stack` at most once ($O(1)$ amortised), and popped from `out_stack`
 once ($O(1)$). Total: $O(n)$ for $n$ operations → $O(1)$ amortised per operation. $\square$
-
 </details>
 
 **Problem 7.** Explain why a stack is the appropriate data structure for undo functionality in a
@@ -524,7 +516,6 @@ Each action in the editor (typing, deleting, formatting) can be represented as a
 the user performs "undo", we need to reverse the **most recent** action — this is exactly LIFO
 behaviour. Pushing each action onto a stack and popping on undo naturally reverses actions in the
 correct order. A queue would undo the **oldest** action first, which is not the desired behaviour.
-
 </details>
 
 **Problem 8.** A circular queue has capacity 5. Show the state of the queue (front, rear, size, and
@@ -547,7 +538,6 @@ array contents) after each operation: `enqueue(1)`, `enqueue(2)`, `dequeue()`, `
 | enqueue(6) | 2     | 1    | 4    | [5, 6, 3, 4, _]              |
 
 Note: rear wraps around using `(rear + 1) % capacity`.
-
 </details>
 
 **Problem 9.** Write a function that uses a stack to reverse the order of elements in a queue.
@@ -567,7 +557,6 @@ def reverse_queue(queue):
 **Correctness.** Dequeuing all elements and pushing them onto a stack reverses the order (LIFO).
 Then popping all elements and enqueuing them places them in the queue in the reversed order. Time:
 $O(n)$, Space: $O(n)$.
-
 </details>
 
 **Problem 10.** Prove that any valid RPN expression with $n$ operands and $n-1$ binary operators
@@ -595,7 +584,6 @@ $n - (n - 1) = 1$. Starting from an empty stack, the final stack size is $0 + 1 
 
 For revision on complexity analysis, see
 [Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/complexity-analysis).
-
 </details>
 
 ---
@@ -611,7 +599,6 @@ stack contents after each: `push(5)`, `push(12)`, `push(3)`, `pop()`, `push(8)`,
 
 Remember that a stack is LIFO — the last element pushed is the first one popped. Track the stack as
 a list with the top at the right.
-
 </details>
 
 <details>
@@ -631,7 +618,6 @@ a list with the top at the right.
 Values returned by `pop()` in order: **3, 8, 12**.
 
 Final stack: `[5, 1]` (1 on top).
-
 </details>
 
 **Problem 2.** A stack initially contains `[2, 7, 1, 9]` (9 on top). After performing `pop()`,
@@ -642,7 +628,6 @@ Final stack: `[5, 1]` (1 on top).
 
 Evaluate the expression inside `push()` first. `pop()` removes and returns the top element. `peek()`
 returns the top without removing it.
-
 </details>
 
 <details>
@@ -661,7 +646,6 @@ Step 2 — evaluate `pop() + peek()`:
 Step 3 — `push(8)`: stack becomes `[2, 7, 8]`.
 
 Final stack: **`[2, 7, 8]`** (8 on top).
-
 </details>
 
 **Problem 3.** A queue initially contains `[5, 10, 15, 20]` (front = 5). Perform `dequeue()`,
@@ -671,7 +655,6 @@ Final stack: **`[2, 7, 8]`** (8 on top).
 <summary>Hint</summary>
 
 A queue is FIFO — elements are removed from the front and added at the rear.
-
 </details>
 
 <details>
@@ -687,7 +670,6 @@ A queue is FIFO — elements are removed from the front and added at the rear.
 | dequeue()   | [20, 25, 30]         | 15             |
 
 Final queue: **`[20, 25, 30]`** (front = 20).
-
 </details>
 
 **Problem 4.** A circular queue has capacity 4. Trace the following operations, showing `front`,
@@ -700,7 +682,6 @@ operation?
 
 Remember that `rear = (rear + 1) % capacity` and `front = (front + 1) % capacity`. The queue is full
 when `size == capacity`.
-
 </details>
 
 <details>
@@ -720,7 +701,6 @@ when `size == capacity`.
 The last operation (`enqueue(8)`) succeeds. The queue is now **full** (size = capacity = 4). The
 `rear` wraps around: $(1 + 1) \% 4 = 2$. Note that `rear` now equals `front`, but the queue is not
 empty — we use the `size` variable to distinguish full from empty.
-
 </details>
 
 **Problem 5.** Compare the array-based and linked-list-based implementations of a stack in terms of:
@@ -732,7 +712,6 @@ performance. Give a specific scenario where each implementation is preferable.
 
 Both implementations have the same asymptotic complexity for push/pop, but they differ in practical
 performance and memory characteristics.
-
 </details>
 
 <details>
@@ -752,7 +731,6 @@ there is no per-element pointer overhead.
 **Linked-list-based preferable:** When the maximum stack depth is unpredictable and could be very
 large (e.g., a web browser's back-navigation stack that grows with user browsing). No need to
 pre-allocate a large array, and no risk of stack overflow from a fixed capacity.
-
 </details>
 
 **Problem 6.** A queue is implemented using a simple (non-circular) array where `enqueue` adds at
@@ -764,7 +742,6 @@ queues.
 <summary>Hint</summary>
 
 Consider how many elements need to be moved when dequeuing from the front of a non-circular array.
-
 </details>
 
 <details>
@@ -781,7 +758,6 @@ case.
 
 A circular array eliminates this by using modular arithmetic: `front = (front + 1) % capacity`,
 making both enqueue and dequeue $O(1)$ without any shifting.
-
 </details>
 
 **Problem 7.** Evaluate the RPN expression `6 2 3 + * 4 -`. Show the stack after each token is
@@ -792,7 +768,6 @@ processed.
 
 Process each token left to right. Operands are pushed; operators pop two operands, compute, and push
 the result.
-
 </details>
 
 <details>
@@ -811,7 +786,6 @@ the result.
 Result: **26**.
 
 Verification: $(6 \times (2 + 3)) - 4 = 30 - 4 = 26$. ✓
-
 </details>
 
 **Problem 8.** Use a stack to check whether the following expression has balanced brackets:
@@ -822,7 +796,6 @@ Verification: $(6 \times (2 + 3)) - 4 = 30 - 4 = 26$. ✓
 
 Push opening brackets onto the stack. For each closing bracket, pop and check that it matches the
 corresponding opening bracket.
-
 </details>
 
 <details>
@@ -853,7 +826,6 @@ Stack is empty → **balanced**. ✓
 | `}`  | `[{, (]`             | Pop `(` — expected `}` but got `(` ✗ |
 
 Stack top is `(` but closing bracket is `}` — **mismatch** → **not balanced**. ✗
-
 </details>
 
 **Problem 9.** Write pseudocode for the `dequeue` operation of a circular array queue. The queue has
@@ -864,7 +836,6 @@ variables `_data[]`, `_front`, `_size`, and `_capacity`. Include error handling 
 
 Check if the queue is empty first. If not, read the element at `_front`, update `_front` using
 modular arithmetic, and decrement `_size`.
-
 </details>
 
 <details>
@@ -892,7 +863,6 @@ ENDFUNCTION
 - Setting `_data[_front] = NULL` is optional but helps with debugging
 - `_size` is decremented to reflect the removal
 - Time complexity: $O(1)$ — constant number of operations regardless of queue size
-
 </details>
 
 **Problem 10.** (Exam-style) A software company is building two features: (A) a web browser's
@@ -908,7 +878,6 @@ linked-list-based) and justify your choice.
 
 Think about the ordering requirement for each feature: does the most recent item need to be accessed
 first (LIFO) or the oldest item (FIFO)?
-
 </details>
 
 <details>
@@ -941,7 +910,6 @@ linked-list-based queue would be more flexible.
 Why a stack would be wrong: A stack would process the **most recently submitted** ticket first. This
 means a customer who submitted a ticket hours ago would wait indefinitely while new tickets are
 handled — unfair and violating the FIFO service guarantee.
-
 </details>
 
 :::

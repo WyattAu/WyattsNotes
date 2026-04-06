@@ -270,7 +270,6 @@ $16 \times 4 = 64 \bmod 55 = 9$
 $9 \times 13 = 117 \bmod 55 = 117 - 2 \times 55 = 7$ ✓
 
 Decrypted message: 7. ✓
-
 </details>
 
 **Problem 2.** Explain why symmetric encryption is faster than asymmetric encryption.
@@ -289,7 +288,6 @@ large numbers is orders of magnitude slower than AES.
 
 Typical performance: AES processes ~1 GB/s on modern hardware. RSA-2048 processes ~1,000
 operations/second. AES is roughly 1000× faster.
-
 </details>
 
 **Problem 3.** A user's password is stored as
@@ -313,7 +311,6 @@ why this is insecure and how to improve it.
 3. **Use key stretching:** Multiple iterations of the hash function (PBKDF2 does this)
 
 Example secure storage: `argon2id(salt="random_16_bytes", password, iterations=3, memory=64MB)`
-
 </details>
 
 **Problem 4.** Explain how a man-in-the-middle attack works and how HTTPS prevents it.
@@ -344,7 +341,6 @@ Even if the attacker intercepts the traffic, they cannot:
 - Decrypt the data (they don't have the shared secret)
 - Forge a valid certificate (they don't have the CA's private key)
 - Modify the data without detection (TLS includes integrity checks)
-
 </details>
 
 **Problem 5.** Explain the difference between a virus, a worm, and a Trojan.
@@ -366,7 +362,6 @@ WannaCry ransomware worm spread via SMB.
 
 **Trojan:** Malware disguised as legitimate software. Does not replicate. Creates backdoors for
 attackers. Named after the Trojan Horse of Greek mythology.
-
 </details>
 
 **Problem 6.** Explain the role of a Certificate Authority (CA) in public-key cryptography.
@@ -388,7 +383,6 @@ public key to an identity (domain name, organisation, person).
 **Why important:** Without CAs, an attacker could create a certificate for any domain, and browsers
 would have no way to distinguish legitimate certificates from fraudulent ones. CAs provide the trust
 infrastructure that makes HTTPS work.
-
 </details>
 
 **Problem 7.** Compute the SHA-256 hash of the empty string `""`. Then compute the SHA-256 hash of
@@ -407,7 +401,6 @@ This demonstrates:
 2. **Avalanche effect:** Changing a single character ("a" vs "") produces a completely different
    hash — no similarity between the two outputs
 3. **Fixed output size:** Both hashes are 256 bits (64 hex characters), regardless of input length
-
 </details>
 
 **Problem 8.** Describe a SQL injection attack and explain how to prevent it.
@@ -444,7 +437,6 @@ This always evaluates to true, granting access without valid credentials.
 2. **Input validation:** Reject or sanitise inputs containing SQL metacharacters
 3. **Least privilege:** Database accounts should have minimum necessary permissions
 4. **Stored procedures:** Pre-compiled SQL that accepts parameters safely
-
 </details>
 
 For revision on network fundamentals, see

@@ -69,13 +69,12 @@ immediately.
 
 ## STRIDE Threat Model
 
-STRIDE is a threat classification framework developed by Microsoft (López et al., 2006). It
-categorizes threats against a system into six classes, each mapping to a specific CIA triad
-violation.
+STRIDE is a threat classification framework developed by Microsoft (Shostack, 2014). It categorizes
+threats against a system into six classes, each mapping to a specific security violation.
 
 ### Threat Categories
 
-| Threat                      | STRIDE Category        | CIA Impact      | Example                                     |
+| Threat                      | STRIDE Category        | Security Impact | Example                                     |
 | --------------------------- | ---------------------- | --------------- | ------------------------------------------- |
 | Impersonating a user        | Spoofing               | Confidentiality | Stolen session token, forged certificate    |
 | Modifying data or code      | Tampering              | Integrity       | SQL injection, firmware modification        |

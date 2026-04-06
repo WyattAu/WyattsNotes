@@ -40,8 +40,8 @@ pub struct Context<'a> {
 }
 
 impl Waker {
-    fn wake(self: &Self);
-    fn wake_by_ref(self: &Self);
+    fn wake(self);
+    fn wake_by_ref(&self);
 }
 ```
 

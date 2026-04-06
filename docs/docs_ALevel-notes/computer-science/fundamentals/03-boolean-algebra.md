@@ -283,7 +283,6 @@ Actually: optimal is $f = \bar{A}\bar{B} + AC + AB\bar{C}$... Let me just provid
 result.
 
 $f = \bar{A}\bar{B} + \bar{B}C + AB$
-
 </details>
 
 :::info
@@ -463,7 +462,6 @@ $\overline{A \cdot B} = \bar{A} + \bar{B}$.
 
 Construct a truth table with columns for $A$, $B$, $A \cdot B$, $\overline{A \cdot B}$, $\bar{A}$,
 $\bar{B}$, and $\bar{A} + \bar{B}$.
-
 </details>
 
 <details>
@@ -477,7 +475,6 @@ $\bar{B}$, and $\bar{A} + \bar{B}$.
 | 1   | 1   | 1           | 0                      | 0         | 0         | 0                 |
 
 Columns 4 and 7 are identical. ✓
-
 </details>
 
 **Problem 2.** Simplify the expression $\bar{A}B\bar{C} + \bar{A}BC + AB\bar{C} + ABC$ using Boolean
@@ -487,7 +484,6 @@ algebra.
 <summary>Hint</summary>
 
 Factor out common terms. Use the identity $X\bar{Y} + XY = X$.
-
 </details>
 
 <details>
@@ -500,7 +496,6 @@ $= \bar{A}B(\bar{C} + C) + AB(\bar{C} + C)$
 $= \bar{A}B(1) + AB(1)$
 
 $= B(\bar{A} + A) = B(1) = B$
-
 </details>
 
 **Problem 3.** Use a 3-variable K-map to simplify $f(A,B,C) = \sum(1, 3, 5, 7)$.
@@ -509,7 +504,6 @@ $= B(\bar{A} + A) = B(1) = B$
 <summary>Hint</summary>
 
 Plot the minterms on a K-map and look for the largest possible rectangular groups.
-
 </details>
 
 <details>
@@ -538,7 +532,6 @@ Group all four: these span both rows (A varies) and columns 01, 11 (B=0 for 01, 
 varies; C=1 for both). The common variable is $C = 1$.
 
 $f = C$
-
 </details>
 
 **Problem 4.** Use a 4-variable K-map to simplify
@@ -548,7 +541,6 @@ $f(A,B,C,D) = \sum(0, 1, 2, 4, 5, 6, 8, 9, 12, 13, 14)$.
 <summary>Hint</summary>
 
 Plot on a 4-variable K-map. Look for groups of 4 and 2.
-
 </details>
 
 <details>
@@ -586,7 +578,6 @@ For CD=10: m2 (AB=00), m6 (AB=01), m14 (AB=11).
 Group (m2, m6): $\bar{A}C\bar{D}$ Group (m6, m14): $BC\bar{D}$ Group (m2, m14): Not adjacent.
 
 $f = \bar{C} + \bar{A}C\bar{D} + BC\bar{D}$
-
 </details>
 
 **Problem 5.** Derive the Boolean expression for a full adder's Sum output by constructing the truth
@@ -596,7 +587,6 @@ table and writing the sum-of-products, then simplify.
 <summary>Hint</summary>
 
 Sum is 1 for rows: (0,0,1), (0,1,0), (1,0,0), (1,1,1).
-
 </details>
 
 <details>
@@ -609,7 +599,6 @@ $= \bar{A}(\bar{B}C_{in} + B\bar{C}_{in}) + A(\bar{B}\bar{C}_{in} + BC_{in})$
 $= \bar{A}(B \oplus C_{in}) + A(\overline{B \oplus C_{in}})$
 
 $= A \oplus B \oplus C_{in}$
-
 </details>
 
 **Problem 6.** Design a circuit that outputs 1 when a 3-bit binary input represents a prime number
@@ -619,7 +608,6 @@ $= A \oplus B \oplus C_{in}$
 <summary>Hint</summary>
 
 Prime minterms: $m_2, m_3, m_5, m_7$. Plot on a 3-variable K-map.
-
 </details>
 
 <details>
@@ -639,7 +627,6 @@ Groups:
 - (m5): $A\bar{B}C$ (isolated)
 
 $f = BC + \bar{A}B + A\bar{B}C$
-
 </details>
 
 **Problem 7.** Simplify $\overline{(\bar{A} + B)(A + \bar{B})}$ using De Morgan's laws.
@@ -648,7 +635,6 @@ $f = BC + \bar{A}B + A\bar{B}C$
 <summary>Hint</summary>
 
 Apply De Morgan's to the outer bar first, then to the inner expressions.
-
 </details>
 
 <details>
@@ -661,7 +647,6 @@ By De Morgan's: $= \overline{\bar{A} + B} + \overline{A + \bar{B}}$
 $= A\bar{B} + \bar{A}B$
 
 $= A \oplus B$
-
 </details>
 
 **Problem 8.** Prove algebraically that $(A + B)(A + C) = A + BC$.
@@ -670,14 +655,12 @@ $= A \oplus B$
 <summary>Hint</summary>
 
 Expand the LHS and simplify.
-
 </details>
 
 <details>
 <summary>Answer</summary>
 
 $(A + B)(A + C) = AA + AC + AB + BC = A + AC + AB + BC = A(1 + C + B) + BC = A + BC$
-
 </details>
 
 **Problem 9.** A D-type flip-flop has its $D$ input connected to $\bar{Q}$. Describe the behaviour
@@ -687,7 +670,6 @@ of the output $Q$ on each clock pulse.
 <summary>Hint</summary>
 
 Since $D = \bar{Q}$ and $Q_{next} = D$, what happens to $Q$ on each clock edge?
-
 </details>
 
 <details>
@@ -700,7 +682,6 @@ $Q_{next} = 0$.
 
 This creates a **toggle flip-flop** (T-flip-flop), which divides the clock frequency by 2. It is the
 basis of binary counters.
-
 </details>
 
 **Problem 10.** What is the maximum propagation delay of a 16-bit ripple-carry adder if each full
@@ -710,7 +691,6 @@ adder has a delay of 3 gate delays, and each gate delay is 2ns?
 <summary>Hint</summary>
 
 The carry must ripple through all 16 stages.
-
 </details>
 
 <details>
@@ -720,7 +700,6 @@ Total delay = $16 \times 3 \times 2\text{ns} = 96\text{ns}$
 
 The worst case is when a carry generated at bit 0 must propagate all the way to bit 15 (e.g.,
 $0111\ldots1 + 0000\ldots1$).
-
 </details>
 
 **Problem 11.** Implement a full adder using only NAND gates. State how many NAND gates are
@@ -731,7 +710,6 @@ required.
 
 First express XOR using NAND gates:
 $A \oplus B = \overline{\overline{A \cdot \overline{AB}} \cdot \overline{B \cdot \overline{AB}}}$.
-
 </details>
 
 <details>
@@ -756,7 +734,6 @@ $C_{out} = AB + (A \oplus B)C_{in}$: AND + OR using NAND.
 - OR: 1 NAND
 
 Total: approximately 9 NAND gates.
-
 </details>
 
 **Problem 12.** Use a K-map with don't-care conditions to simplify
@@ -766,7 +743,6 @@ $f(A,B,C) = \sum(0,2,5) + d(1,4,7)$, where $d$ denotes don't-cares.
 <summary>Hint</summary>
 
 Plot the 1s and Xs. Treat X as 1 only if it helps form a larger group.
-
 </details>
 
 <details>
@@ -802,7 +778,6 @@ $f = \bar{B} + \bar{A}\bar{C}$
 
 Check: $\bar{B}$ covers m0, m1, m4, m5. $\bar{A}\bar{C}$ covers m0, m2. All minterms (0, 2, 5)
 covered. ✓
-
 </details>
 
 :::

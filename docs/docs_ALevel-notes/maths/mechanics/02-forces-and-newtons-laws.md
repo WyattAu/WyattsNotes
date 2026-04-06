@@ -201,7 +201,6 @@ Since $30 \gt{} 19.6$, the body slides. Friction $= 19.6\,\text{N}$ (opposing mo
 $F_{\text{net}} = 30 - 19.6 = 10.4\,\text{N}$. $a = F_{\text{net}}/m = 10.4/5 = 2.08\,\text{m/s}^2$.
 
 **If you get this wrong, revise:** [Friction](#4-friction) — Section 4.
-
 </details>
 
 <details>
@@ -215,7 +214,6 @@ Along the plane: $P = mg\sin 30° = 8(9.8)(0.5) = 39.2\,\text{N}$.
 
 **If you get this wrong, revise:**
 [Resolving on an Inclined Plane](#32-resolving-on-an-inclined-plane) — Section 3.2.
-
 </details>
 
 <details>
@@ -231,7 +229,6 @@ Adding: $2g = 10a \implies a = g/5 = 1.96\,\text{m/s}^2$.
 $T = 4(1.96 + 9.8) = 4(11.76) = 47.04\,\text{N}$.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
-
 </details>
 
 <details>
@@ -246,7 +243,6 @@ $R = 10g = 98\,\text{N}$. $F_{\max} = 0.3(98) = 29.4\,\text{N}$.
 Minimum force $= 29.4\,\text{N}$.
 
 **If you get this wrong, revise:** [The Friction Model](#41-the-friction-model) — Section 4.1.
-
 </details>
 
 <details>
@@ -264,7 +260,6 @@ Since $31.49 \gt{} 9.38$, the block slides. $a = (31.49 - 9.38)/5 = 22.11/5 = 4.
 
 **If you get this wrong, revise:**
 [Resolving on an Inclined Plane](#32-resolving-on-an-inclined-plane) — Section 3.2.
-
 </details>
 
 <details>
@@ -279,7 +274,6 @@ For $5\,\text{kg}$: $5g - T = 5a$. For $2\,\text{kg}$ (horizontal): $T = 2a$.
 $5g - 2a = 5a \implies 5g = 7a \implies a = 5g/7 = 7\,\text{m/s}^2$. $T = 2(7) = 14\,\text{N}$.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
-
 </details>
 
 <details>
@@ -295,7 +289,6 @@ Horizontal: $25\cos 30° - 8.45 = 3a \implies 21.65 - 8.45 = 3a \implies a = 4.4
 
 **If you get this wrong, revise:** [Free Body Diagrams](#3-free-body-diagrams-and-resolving-forces)
 — Section 3.
-
 </details>
 
 <details>
@@ -310,7 +303,6 @@ Total mass $= 570\,\text{kg}$. $T - 570g = 570(2) \implies T = 570(9.8+2) = 570(
 Person: $R - 70g = 70(2) \implies R = 70(11.8) = 826\,\text{N}$ (apparent weight).
 
 **If you get this wrong, revise:** [Newton's Second Law](#12-newtons-second-law) — Section 1.2.
-
 </details>
 
 <details>
@@ -325,7 +317,6 @@ $3mg - T = 3ma$, $T - mg = ma$. Adding: $2mg = 4ma \implies a = g/2$.
 $s = \tfrac{1}{2}at^2 \implies 2 = \tfrac{1}{2}(g/2)t^2 \implies t^2 = 8/g \implies t = \sqrt{8/9.8} \approx 0.904\,\text{s}$.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
-
 </details>
 
 <details>
@@ -341,7 +332,6 @@ $v^2 = u^2 + 2as = 0 + 2(4.02)(10) = 80.4 \implies v \approx 8.97\,\text{m/s}$.
 
 **If you get this wrong, revise:**
 [Resolving on an Inclined Plane](#32-resolving-on-an-inclined-plane) — Section 3.2.
-
 </details>
 
 <details>
@@ -360,7 +350,6 @@ Equilibrium: $mg\sin\alpha = \mu mg\cos\alpha \implies \tan\alpha = \mu$.
 The critical angle is the angle of friction: $\tan\lambda = \mu$. $\blacksquare$
 
 **If you get this wrong, revise:** [Angle of Friction](#43-angle-of-friction) — Section 4.3.
-
 </details>
 
 <details>
@@ -381,7 +370,6 @@ $22.49 - 19.6 - 2a = 4a \implies 2.89 = 6a \implies a = 0.482\,\text{m/s}^2$.
 The $4\,\text{kg}$ block accelerates down the slope.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
-
 </details>
 
 :::

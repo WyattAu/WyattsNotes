@@ -524,7 +524,6 @@ A price ceiling makes housing more affordable for low-income households. However
 shortage (excess demand), may reduce the quality and maintenance of rental properties, and could
 lead to black market activities. Landlords may convert properties to other uses, reducing long-run
 supply.
-
 </details>
 
 ---
@@ -850,7 +849,6 @@ the price charged is greater than MC (P \gt MC). This means the value consumers 
 unit (P) exceeds the cost of producing it (MC). Society would benefit from more output, but the
 monopoly restricts output to maximise profit, creating a deadweight loss. In perfect competition, P
 = MC, which is allocatively efficient.
-
 </details>
 
 :::

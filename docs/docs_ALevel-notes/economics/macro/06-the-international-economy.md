@@ -138,7 +138,6 @@ $$\text{ToT}_{2024} = \frac{115}{125} \times 100 = 92$$
 
 Terms of trade deteriorated by 8%. The country needs to export 8.7% more (115/105 = 1.087) just to
 buy the same quantity of imports as in 2020.
-
 </details>
 
 ### 2.4 Factors Affecting the Terms of Trade

@@ -274,7 +274,7 @@ impl Foo {
 Lifetimes can have bounds, just like type parameters:
 
 ```rust
-// 'a must outlive 'b — the reference x must live at least as long as 'b
+// 'b must outlive 'a — 'b is at least as long as 'a
 fn print<'a, 'b: 'a>(x: &'b str, y: &'a str) {
     println!("{} {}", x, y);
 }

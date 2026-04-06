@@ -465,7 +465,6 @@ $\square$
 <summary>Problem 1</summary>
 
 Solve $\dfrac{dy}{dx} = \dfrac{3x^2}{y^2}$ given $y(1) = 2$.
-
 </details>
 
 <details>
@@ -481,14 +480,12 @@ $y^3 = 3x^3 + 5 \implies \boxed{y = \sqrt[3]{3x^3 + 5}}$.
 
 **If you get this wrong, revise:** [Separable Equations](#1-first-order-odes-separable-equations) —
 Section 1.
-
 </details>
 
 <details>
 <summary>Problem 2</summary>
 
 Solve $\dfrac{dy}{dx} + \dfrac{3}{x}\,y = x^2$ for $x > 0$, given $y(1) = 0$.
-
 </details>
 
 <details>
@@ -510,14 +507,12 @@ $\boxed{y = \dfrac{x^3}{6} - \dfrac{1}{6x^3} = \dfrac{x^6 - 1}{6x^3}}$.
 
 **If you get this wrong, revise:**
 [Integrating Factor](#2-first-order-odes-integrating-factor-method) — Section 2.
-
 </details>
 
 <details>
 <summary>Problem 3</summary>
 
 Solve $y'' - 6y' + 9y = 0$ given $y(0) = 1$ and $y'(0) = 0$.
-
 </details>
 
 <details>
@@ -532,14 +527,12 @@ $y(0) = 1$: $A = 1$. $y'(0) = 0$: $B + 3 = 0 \implies B = -3$.
 $\boxed{y = (1 - 3x)e^{3x}}$.
 
 **If you get this wrong, revise:** [Three Cases](#33-three-cases) — Section 3.3.
-
 </details>
 
 <details>
 <summary>Problem 4</summary>
 
 Solve $y'' + 4y' + 13y = 0$.
-
 </details>
 
 <details>
@@ -552,14 +545,12 @@ $\alpha = -2$, $\beta = 3$.
 $\boxed{y = e^{-2x}(A\cos 3x + B\sin 3x)}$.
 
 **If you get this wrong, revise:** [Three Cases](#33-three-cases) — Section 3.3.
-
 </details>
 
 <details>
 <summary>Problem 5</summary>
 
 Find the general solution of $y'' - y = 2e^x$.
-
 </details>
 
 <details>
@@ -577,14 +568,12 @@ $\boxed{y = Ae^x + Be^{-x} + xe^x}$.
 
 **If you get this wrong, revise:**
 [Undetermined Coefficients](#42-method-of-undetermined-coefficients) — Section 4.2.
-
 </details>
 
 <details>
 <summary>Problem 6</summary>
 
 Find the general solution of $y'' + 2y' + y = x^2$.
-
 </details>
 
 <details>
@@ -604,7 +593,6 @@ $\boxed{y = (A + Bx)e^{-x} + x^2 - 4x + 6}$.
 
 **If you get this wrong, revise:**
 [Undetermined Coefficients](#42-method-of-undetermined-coefficients) — Section 4.2.
-
 </details>
 
 <details>
@@ -612,7 +600,6 @@ $\boxed{y = (A + Bx)e^{-x} + x^2 - 4x + 6}$.
 
 A body cools from $80°C$ to $60°C$ in 10 minutes in surroundings at $20°C$. How long does it take to
 cool to $40°C$?
-
 </details>
 
 <details>
@@ -631,14 +618,12 @@ minutes.
 
 **If you get this wrong, revise:** [Newton's Law of Cooling](#52-newtons-law-of-cooling) — Section
 5.2.
-
 </details>
 
 <details>
 <summary>Problem 8</summary>
 
 Solve $\dfrac{dy}{dx} = xy$ given $y(0) = 5$.
-
 </details>
 
 <details>
@@ -656,14 +641,12 @@ $\boxed{y = 5e^{x^2/2}}$.
 
 **If you get this wrong, revise:** [Separable Equations](#1-first-order-odes-separable-equations) —
 Section 1.
-
 </details>
 
 <details>
 <summary>Problem 9</summary>
 
 Solve $y'' + 9y = 6\cos 3x$.
-
 </details>
 
 <details>
@@ -685,14 +668,12 @@ $\boxed{y = A\cos 3x + B\sin 3x + x\sin 3x}$.
 
 **If you get this wrong, revise:**
 [Undetermined Coefficients](#42-method-of-undetermined-coefficients) — Section 4.2.
-
 </details>
 
 <details>
 <summary>Problem 10</summary>
 
 Solve $\dfrac{dy}{dx} - \dfrac{y}{x} = x^2$ for $x > 0$, given $y(1) = 3$.
-
 </details>
 
 <details>
@@ -712,7 +693,6 @@ $\boxed{y = \dfrac{x^3}{2} + \dfrac{5x}{2} = \dfrac{x(x^2 + 5)}{2}}$.
 
 **If you get this wrong, revise:**
 [Integrating Factor](#2-first-order-odes-integrating-factor-method) — Section 2.
-
 </details>
 
 :::

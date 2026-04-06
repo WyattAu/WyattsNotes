@@ -253,7 +253,6 @@ Invalid (negative) | $\lt{} 0$ | -1 |
 12/13 | 12, 13, 14 | | 17/18 | 17, 18, 19 | | 64/65 | 64, 65, 66 |
 
 Total test cases: 5 (equivalence) + 12 (boundary) = 17 (some overlap).
-
 </details>
 
 **Problem 2.** Explain the difference between a stub and a mock in unit testing.
@@ -273,7 +272,6 @@ calls and can assert that specific methods were called with specific arguments.
 | Asserts    | On return values                      | On method calls                       |
 | Complexity | Simple                                | More complex                          |
 | Example    | Fake database returning fixed records | Verify `send_email()` was called once |
-
 </details>
 
 **Problem 3.** Consider the following code. What is the minimum number of test cases to achieve 100%
@@ -311,7 +309,6 @@ However, for 100% **path** coverage, we need 4 test cases (one per quadrant):
 2. (-1, 1) → Q2
 3. (-1, -1) → Q3
 4. (1, -1) → Q4
-
 </details>
 
 **Problem 4.** Write unit tests for a stack's push, pop, and peek operations. Include edge cases.
@@ -349,7 +346,6 @@ def test_stack():
 ```
 
 Tests cover: push/peek, push/pop order, empty after all pops, pop from empty, peek from empty.
-
 </details>
 
 **Problem 5.** Explain why 100% statement coverage does not guarantee bug-free code. Give a concrete
@@ -397,7 +393,6 @@ test:
 - Negative items (different branch)
 - Empty list (edge case)
 - Zero (boundary)
-
 </details>
 
 **Problem 6.** Describe the difference between top-down and bottom-up integration testing. What are
@@ -421,7 +416,6 @@ the advantages of each?
 - Advantages: Low-level modules are thoroughly tested; drivers are simpler than stubs
 - Disadvantages: The complete system is not visible until late; interface defects between high-level
   modules may be found late
-
 </details>
 
 **Problem 7.** Create a decision table for a login system where a user can be:
@@ -443,7 +437,6 @@ the advantages of each?
 
 Rules 3, 4, 5 could potentially be merged (locked or invalid user always shows an error), but for
 completeness, they're listed separately.
-
 </details>
 
 **Problem 8.** Explain the concept of regression testing and why it is necessary in iterative
@@ -472,7 +465,6 @@ previously working functionality has not been broken (regressed).
 
 For revision on software development, see
 [SDLC](/docs/docs_ALevel-notes/computer-science/software-engineering/software-development-lifecycle).
-
 </details>
 
 :::

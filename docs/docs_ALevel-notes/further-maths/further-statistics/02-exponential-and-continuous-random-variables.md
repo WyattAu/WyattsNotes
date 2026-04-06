@@ -280,7 +280,6 @@ $P(0.5 < X < 2) = (1-e^{-4}) - (1-e^{-1}) = e^{-1} - e^{-4} \approx 0.3679 - 0.0
 $F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -\dfrac{\ln(0.1)}{2} \approx 1.151$.
 
 **If you get this wrong, revise:** [Percentiles](#27-percentiles) — Section 2.7.
-
 </details>
 
 <details>
@@ -301,7 +300,6 @@ $\int_0^m \dfrac{3x^2}{8}\,dx = 0.5 \implies \dfrac{m^3}{8} = 0.5 \implies m = \
 
 **If you get this wrong, revise:** [Median, mode, and quartiles](#15-median-mode-and-quartiles) —
 Section 1.5.
-
 </details>
 
 <details>
@@ -317,7 +315,6 @@ This uses the survival function $P(X > x) = e^{-\lambda x}$.
 
 **If you get this wrong, revise:** [The memoryless property](#25-the-memoryless-property) — Section
 2.5.
-
 </details>
 
 <details>
@@ -333,7 +330,6 @@ $P(T > 0.5) = e^{-4 \times 0.5} = e^{-2} \approx 0.1353$.
 
 **If you get this wrong, revise:** [Link to Poisson processes](#26-link-to-poisson-processes) —
 Section 2.6.
-
 </details>
 
 <details>
@@ -352,7 +348,6 @@ $E(X^2) = \dfrac{1}{2}\left[\dfrac{x^4}{4}\right]_0^2 = \dfrac{1}{2}\cdot 4 = 2$
 $\text{Var}(X) = 2 - \left(\dfrac{4}{3}\right)^2 = 2 - \dfrac{16}{9} = \dfrac{2}{9}$.
 
 **If you get this wrong, revise:** [Expected value](#13-expected-value) — Section 1.3.
-
 </details>
 
 <details>
@@ -366,7 +361,6 @@ By the memoryless property: $P(X > 500+200 \mid X > 500) = P(X > 200) = e^{-0.01
 
 **If you get this wrong, revise:** [The memoryless property](#25-the-memoryless-property) — Section
 2.5.
-
 </details>
 
 <details>
@@ -385,7 +379,6 @@ $F(Q_3) = 0.75 \implies \dfrac{Q_3^3}{27} = 0.75 \implies Q_3^3 = 20.25 \implies
 
 **If you get this wrong, revise:**
 [Cumulative distribution function](#12-cumulative-distribution-function) — Section 1.2.
-
 </details>
 
 <details>
@@ -404,7 +397,6 @@ $\blacksquare$
 
 **If you get this wrong, revise:**
 [Proof that $E(X) = \frac{1}{\lambda}$](#23-proof-that-ex--frac1lambda) — Section 2.3.
-
 </details>
 
 <details>
@@ -422,7 +414,6 @@ $\approx 0.6065 - 0.2231 = 0.3834$.
 
 **If you get this wrong, revise:** [Link to Poisson processes](#26-link-to-poisson-processes) —
 Section 2.6.
-
 </details>
 
 <details>
@@ -444,7 +435,6 @@ Mode: $f(x) = 4x^3$ is increasing on $[0,1]$, so the mode is at $x = 1$.
 
 **If you get this wrong, revise:** [Median, mode, and quartiles](#15-median-mode-and-quartiles) —
 Section 1.5.
-
 </details>
 
 :::

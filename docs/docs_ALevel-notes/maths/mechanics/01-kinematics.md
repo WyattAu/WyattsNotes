@@ -188,7 +188,6 @@ $u = 0$, $a = 2$, $t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
 $s = 0 + \tfrac{1}{2}(2)(64) = 64\,\text{m}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
-
 </details>
 
 <details>
@@ -205,7 +204,6 @@ Time up: $v = u - gt \implies 0 = 15 - 9.8t \implies t = 15/9.8 \approx 1.53\,\t
 Total time (up and down): $2 \times 1.53 = 3.06\,\text{s}$.
 
 **If you get this wrong, revise:** [Maximum Height](#45-maximum-height) — Section 4.5.
-
 </details>
 
 <details>
@@ -222,7 +220,6 @@ $H_{\max} = \dfrac{(19.28)^2}{2(9.8)} = \dfrac{371.72}{19.6} \approx 18.97\,\tex
 $R = \dfrac{30^2 \sin 80°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\,\text{m}$.
 
 **If you get this wrong, revise:** [Projectiles](#4-projectiles) — Section 4.
-
 </details>
 
 <details>
@@ -239,7 +236,6 @@ $v^2 = u^2 + 2as \implies 100 = 625 + 400a \implies a = -525/400 = -1.3125\,\tex
 $v = u + at \implies 10 = 25 - 1.3125t \implies t = 15/1.3125 \approx 11.43\,\text{s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
-
 </details>
 
 <details>
@@ -252,7 +248,6 @@ A particle moves with velocity $v = 3t^2 - 2t + 1$ m/s. Find the displacement af
 $s = \int_0^3 (3t^2 - 2t + 1)\,dt = \left[t^3 - t^2 + t\right]_0^3 = 27 - 9 + 3 = 21\,\text{m}$.
 
 **If you get this wrong, revise:** [Variable Acceleration](#5-variable-acceleration) — Section 5.
-
 </details>
 
 <details>
@@ -268,7 +263,6 @@ $\dfrac{d^2R}{d\theta^2} = -\dfrac{4v^2 \sin 2\theta}{g} \lt{} 0$ at $\theta = 4
 maximum. $\blacksquare$
 
 **If you get this wrong, revise:** [Range](#46-range) — Section 4.6.
-
 </details>
 
 <details>
@@ -283,7 +277,6 @@ $s = \tfrac{1}{2}gt^2 \implies 80 = 4.9t^2 \implies t^2 = 80/4.9 \implies t \app
 $v = gt = 9.8(4.04) \approx 39.6\,\text{m/s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
-
 </details>
 
 <details>
@@ -313,7 +306,6 @@ $\theta \approx 76.8°$ or $\theta \approx 39.8°$.
 
 **If you get this wrong, revise:** [Trajectory Equation](#44-derivation-of-the-trajectory-equation)
 — Section 4.4.
-
 </details>
 
 <details>
@@ -332,7 +324,6 @@ $s_2 = ut + \tfrac{1}{2}at^2 = 20(40/3) - \tfrac{1}{2}(1.5)(1600/9) = 800/3 - 40
 Total: $s = 600 + 133.3 = 733.3\,\text{m}$, $t = 30 + 13.33 = 43.33\,\text{s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
-
 </details>
 
 <details>
@@ -347,7 +338,6 @@ $a = dv/dt = 6 - 2t = 0 \implies t = 3$. $v_{\max} = 18 - 9 = 9\,\text{m/s}$.
 Distance: $s = \int_0^6 (6t-t^2)\,dt = [3t^2 - t^3/3]_0^6 = 108 - 72 = 36\,\text{m}$.
 
 **If you get this wrong, revise:** [Variable Acceleration](#5-variable-acceleration) — Section 5.
-
 </details>
 
 <details>
@@ -366,7 +356,6 @@ $s_2 = \tfrac{1}{2}(9.8)(2.03)^2 = 4.9 \times 4.121 \approx 20.19\,\text{m}$.
 Separation: $45 - 20.19 = 24.81\,\text{m}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
-
 </details>
 
 <details>
@@ -386,7 +375,6 @@ $\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\tex
 
 **If you get this wrong, revise:** [Trajectory Equation](#44-derivation-of-the-trajectory-equation)
 — Section 4.4.
-
 </details>
 
 :::

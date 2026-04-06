@@ -418,7 +418,6 @@ ZFS identifies drives by GUID, not by /dev/sdX names. This means drive reorderin
 pool import. However, if you are using a USB enclosure, drives may enumerate differently. Always use
 the TrueNAS web UI for pool management — never manually import with `zpool import` unless you know
 exactly what you are doing.
-
 </details>
 
 <details>
@@ -427,7 +426,6 @@ exactly what you are doing.
 The TrueNAS SCALE boot drive needs at least 32 GB. If you installed on a small USB flash drive, the
 system will fill it with logs and crashloop. Use a real SSD for the boot drive, not a cheap USB
 stick.
-
 </details>
 
 <details>
@@ -444,7 +442,6 @@ smartctl -i /dev/sda | grep "Rotation Rate"
 
 Reference: [WD SMR drive list](https://www.reddit.com/r/DataHoarder/wiki/smr) and similar
 community-maintained lists.
-
 </details>
 
 <details>
@@ -455,7 +452,6 @@ ZFS ACLs and POSIX permissions can conflict. If Windows clients cannot write to 
 1. Check the dataset ACL under **Storage > Pools > Dataset > Edit Permissions**
 2. Ensure the SMB user is the owner or has an explicit ACL entry
 3. Avoid mixing NFS and SMB on the same dataset — use separate datasets if possible
-
 </details>
 
 <details>
@@ -469,7 +465,6 @@ df -h /mnt/.ix-apps
 ```
 
 Clean up unused images and prune logs periodically.
-
 </details>
 
 ## Useful CLI Commands Reference

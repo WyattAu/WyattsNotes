@@ -112,7 +112,6 @@ $$
 \int \left(\frac{2}{x} + 3e^x - \sec^2 x\right)\,dx &= 2\ln|x| + 3e^x - \tan x + C
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -197,7 +196,6 @@ $$
 &= \left(8 - \frac{8}{3}\right) - \left(-8 + \frac{8}{3}\right) = \frac{32}{3}
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -244,7 +242,6 @@ Let $u = x^2 + 1$, $du = 2x\,dx$. When $x = 0$, $u = 1$; when $x = 2$, $u = 5$.
 $$
 \int_0^2 \frac{x}{x^2 + 1}\,dx = \frac{1}{2}\int_1^5 \frac{1}{u}\,du = \frac{1}{2}\Big[\ln|u|\Big]_1^5 = \frac{1}{2}\ln 5
 $$
-
 </details>
 :::
 
@@ -297,7 +294,6 @@ $$
 &= -x^2 \cos x + 2x\sin x + 2\cos x + C
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -334,7 +330,6 @@ Setting $x = 2$: $10 + 1 = B(3) \implies B = \frac{11}{3}$
 $$
 \int \frac{5x + 1}{(x+1)(x-2)}\,dx = \frac{4}{3}\ln|x+1| + \frac{11}{3}\ln|x-2| + C
 $$
-
 </details>
 :::
 
@@ -392,7 +387,6 @@ $$
 $$
 
 (using $u = \cos x$, $du = -\sin x\,dx$ for the second integral)
-
 </details>
 :::
 
@@ -431,7 +425,6 @@ Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$, $2x \geq x^2$.
 $$
 A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
 $$
-
 </details>
 :::
 
@@ -479,7 +472,6 @@ V &= \pi \int_0^4 (\sqrt{x})^2\,dx = \pi \int_0^4 x\,dx \\[6pt]
 &= \pi \left[\frac{x^2}{2}\right]_0^4 = 8\pi
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -529,7 +521,6 @@ $$
 &= \frac{8}{27} + \left(36 - \left(-\frac{4}{27}\right)\right) = \frac{8}{27} + 36 + \frac{4}{27} = 36\frac{12}{27} = \frac{324}{27} = 36\frac{4}{9} \text{ m}
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -595,7 +586,6 @@ $$
 &= -\left(3 \cdot 5 - 2 \cdot (-2)\right) = -(15 + 4) = -19
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -686,7 +676,6 @@ $$
 $$
 
 The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} < 1$.)
-
 </details>
 :::
 
@@ -714,7 +703,6 @@ $$
 $$
 \int \frac{x^3 + 2x}{\sqrt{x^2 + 1}}\,dx = \frac{1}{3}(x^2 + 1)^{3/2} + \sqrt{x^2 + 1} + C
 $$
-
 </details>
 :::
 
@@ -730,7 +718,6 @@ $$
 &= (0 - 0) + \Big[\sin x\Big]_0^{\pi/2} = 1
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -749,7 +736,6 @@ A &= \int_{-1}^0 (x^3 - x)\,dx + \int_0^1 (x - x^3)\,dx \\[6pt]
 &= \left(0 - \frac{1}{4} + \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{4}\right) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -793,7 +779,6 @@ $$
 $$
 V = \pi(2e - 2)
 $$
-
 </details>
 :::
 
@@ -816,7 +801,6 @@ $x = -2$: $1 = -3A \implies A = -\dfrac{1}{3}$
 $$
 \int \frac{3x + 7}{(x+2)(x-1)}\,dx = -\frac{1}{3}\ln|x+2| + \frac{10}{3}\ln|x-1| + C
 $$
-
 </details>
 :::
 
@@ -837,7 +821,6 @@ Displacement at $t = 3$:
 $$
 s(3) = 27 - 9 + 12 = 30 \text{ m}
 $$
-
 </details>
 :::
 
@@ -856,7 +839,6 @@ $$
 $$
 
 The integral converges to $\dfrac{1}{\ln 2}$.
-
 </details>
 :::
 
@@ -882,7 +864,6 @@ $$
 &= x + \frac{1}{2}\ln|x-1| - \frac{1}{2}\ln|x+1| + C
 \end{aligned}
 $$
-
 </details>
 :::
 
@@ -895,7 +876,6 @@ $$
 $$
 \int_0^1 \frac{e^x}{1 + e^x}\,dx = \int_2^{1+e} \frac{1}{u}\,du = \Big[\ln u\Big]_2^{1+e} = \ln(1 + e) - \ln 2
 $$
-
 </details>
 :::
 
@@ -927,7 +907,6 @@ $$
 $$
 2I = e^x (\sin x + \cos x) \implies I = \frac{e^x (\sin x + \cos x)}{2} + C
 $$
-
 </details>
 :::
 

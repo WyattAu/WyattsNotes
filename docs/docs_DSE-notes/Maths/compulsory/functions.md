@@ -375,7 +375,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
    - $\text{dom}(g) = \mathbb{R}$.
    - $\text{dom}(f) = \{x \in \mathbb{R} : x \neq -1\}$, so we require $g(x) \neq -1$, i.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
    - $\text{dom}(f \circ g) = \mathbb{R} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
-   </details>
+</details>
 
 2. **Question:** Let $f(x) = 3x - 5$. Find $f^{-1}(x)$ and verify that $f^{-1}(f(x)) = x$.
    <details>
@@ -383,7 +383,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
    - Set $y = 3x - 5$. Solving for $x$: $x = \dfrac{y + 5}{3}$.
    - Interchanging $x$ and $y$: $f^{-1}(x) = \dfrac{x + 5}{3}$.
    - Verification: $f^{-1}(f(x)) = \dfrac{(3x - 5) + 5}{3} = \dfrac{3x}{3} = x$. Confirmed.
-   </details>
+</details>
 
 3. **Question:** A quadratic function $f(x)$ has a maximum value of $7$ at $x = 2$, and $f(0) = -5$. Find $f(x)$.
    <details>
@@ -391,7 +391,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
    - Since the maximum is at $(2, 7)$ and the parabola opens downward, write in vertex form: $f(x) = a(x - 2)^2 + 7$ with $a < 0$.
    - Using $f(0) = -5$: $a(0 - 2)^2 + 7 = -5 \implies 4a + 7 = -5 \implies a = -3$.
    - Therefore $f(x) = -3(x - 2)^2 + 7 = -3x^2 + 12x - 5$.
-   </details>
+</details>
 
 4. **Question:** Find the range of values of $k$ for which the equation $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
    <details>
@@ -400,7 +400,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
    - $\Delta = [2(k - 1)]^2 - 4(1)(k + 5) = 4(k - 1)^2 - 4k - 20 = 4(k^2 - 2k + 1) - 4k - 20 = 4k^2 - 8k + 4 - 4k - 20 = 4k^2 - 12k - 16$.
    - $4k^2 - 12k - 16 > 0 \implies k^2 - 3k - 4 > 0 \implies (k - 4)(k + 1) > 0$.
    - Therefore $k < -1$ or $k > 4$.
-   </details>
+</details>
 
 5. **Question:** Solve the equation $3^{2x} - 10 \cdot 3^x + 9 = 0$.
    <details>
@@ -410,7 +410,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
    - Case 1: $3^x = 1 \implies x = 0$.
    - Case 2: $3^x = 9 = 3^2 \implies x = 2$.
    - Solutions: $x = 0$ or $x = 2$.
-   </details>
+</details>
 
 6. **Question:** Solve $\log_3(x - 2) + \log_3(x + 6) = 2$.
    <details>
@@ -421,7 +421,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
    - $(x + 7)(x - 3) = 0 \implies x = -7$ or $x = 3$.
    - Domain: $x - 2 > 0 \implies x > 2$. Therefore $x = -7$ is rejected.
    - Solution: $x = 3$.
-   </details>
+</details>
 
 7. **Question:** The graph of $y = f(x)$ passes through the points $(1, 4)$ and $(3, 10)$. State the coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
    <details>
@@ -429,7 +429,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
    - For a point $(a, b)$ on $y = f(x)$ (so $f(a) = b$), the corresponding point on $y = 2f(x - 1) + 3$ is found by setting $x - 1 = a$, i.e. $x = a + 1$, and $y = 2b + 3$.
    - $(1, 4) \mapsto (1 + 1,\; 2 \times 4 + 3) = (2, 11)$.
    - $(3, 10) \mapsto (3 + 1,\; 2 \times 10 + 3) = (4, 23)$.
-   </details>
+</details>
 
 8. **Question:** Given $f(x) = \log_2(x + 3)$ and $g(x) = 2^x - 1$, show that $f$ and $g$ are inverse functions of each other, and state the domain and range of $f^{-1}$.
    <details>
@@ -444,7 +444,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
      - $f^{-1}(x) = 2^x - 3$.
    - $\text{dom}(f^{-1}) = \text{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all real values for $x > -3$).
    - $\text{range}(f^{-1}) = \text{dom}(f) = (-3, \infty)$.
-   </details>
+</details>
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$, find the range of $f$ when (a) the domain is $\mathbb{R}$, and (b) the domain is $[0, 4]$.
    <details>
@@ -456,7 +456,7 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
      - $f(0) = -3$, $f(4) = 16 + 8 - 3 = 21$.
      - On $[0, 4]$, the function is increasing (vertex at $x = -1$ is to the left of the interval).
      - Range: $[-3, 21]$.
-   </details>
+</details>
 
 10. **Question:** Let $f(x) = \dfrac{x}{x - 2}$ for $x \neq 2$. Find $f^{-1}$, and evaluate $f^{-1}(3) + f(3)$.
     <details>
@@ -467,5 +467,5 @@ Horizontal transformations operate on $x$ **before** the function is evaluated; 
     - $f^{-1}(3) = \dfrac{2(3)}{3 - 1} = 3$.
     - $f(3) = \dfrac{3}{3 - 2} = 3$.
     - $f^{-1}(3) + f(3) = 3 + 3 = 6$.
-    </details>
+</details>
 </details>

@@ -383,7 +383,6 @@ $\dfrac{e^x+e^{-x}}{2} = 3 \implies e^x + e^{-x} = 6 \implies e^{2x} - 6e^x + 1 
 $e^x = \dfrac{6\pm\sqrt{36-4}}{2} = 3\pm 2\sqrt{2}$.
 
 $x = \ln(3+2\sqrt{2})$ (taking the positive root for $x > 0$).
-
 </details>
 
 <details>
@@ -403,7 +402,6 @@ $\tanh 2x = \dfrac{\sinh 2x}{\cosh 2x} = \dfrac{2\sinh x\cosh x}{\cosh^2 x+\sinh
 Dividing numerator and denominator by $\cosh^2 x$:
 
 $= \dfrac{2\tanh x}{1+\tanh^2 x}. \quad \blacksquare$
-
 </details>
 
 <details>
@@ -423,7 +421,6 @@ Let $u = 2x$, $du = 2\,dx$.
 $\displaystyle\int\frac{1}{\sqrt{4x^2+9}}\,dx = \frac{1}{2}\int\frac{1}{\sqrt{u^2+9}}\,du = \frac{1}{2}\text{arsinh}\!\left(\frac{u}{3}\right)+C = \frac{1}{2}\text{arsinh}\!\left(\frac{2x}{3}\right)+C$.
 
 $= \dfrac{1}{2}\ln\!\left(\dfrac{2x}{3}+\sqrt{\dfrac{4x^2}{9}+1}\right)+C = \dfrac{1}{2}\ln\!\left(\dfrac{2x+\sqrt{4x^2+9}}{3}\right)+C$.
-
 </details>
 
 <details>
@@ -445,7 +442,6 @@ $(4\cosh x - 7)(\cosh x + 1) = 0$.
 $\cosh x = 7/4$ or $\cosh x = -1$ (rejected since $\cosh x \geq 1$).
 
 $\cosh x = 7/4 \implies x = \pm\ln\!\left(\dfrac{7}{4}+\sqrt{\dfrac{49}{16}-1}\right) = \pm\ln\!\left(\dfrac{7+\sqrt{33}}{4}\right)$.
-
 </details>
 
 <details>
@@ -463,7 +459,6 @@ Use the chain rule with $\dfrac{d}{dx}\text{arcosh}\,u = \dfrac{1}{\sqrt{u^2-1}}
 $\dfrac{d}{dx}\text{arcosh}(x^2+1) = \dfrac{1}{\sqrt{(x^2+1)^2-1}}\cdot 2x = \dfrac{2x}{\sqrt{x^4+2x^2}} = \dfrac{2x}{|x|\sqrt{x^2+2}}$.
 
 For $x > 0$: $\dfrac{2}{\sqrt{x^2+2}}$.
-
 </details>
 
 <details>
@@ -481,7 +476,6 @@ Use $\cosh 2x = 2\cosh^2 x - 1$ to express $\cosh^2 x$ in terms of $\cosh 2x$.
 $\cosh^2 x = \dfrac{\cosh 2x+1}{2}$.
 
 $\displaystyle\int\cosh^2 x\,dx = \int\frac{\cosh 2x+1}{2}\,dx = \frac{1}{2}\left(\frac{\sinh 2x}{2}+x\right)+C = \frac{\sinh 2x}{4}+\frac{x}{2}+C$.
-
 </details>
 
 <details>
@@ -505,7 +499,6 @@ Note that $\dfrac{d}{dx}\left(\dfrac{1}{\cosh^2 x}\right) = \dfrac{-2\sinh x}{\c
 
 So
 $\displaystyle\int\text{sech}^2\,x\tanh x\,dx = \int\dfrac{\sinh x}{\cosh^3 x}\,dx = -\dfrac{1}{2\cosh^2 x}+C = -\dfrac{1}{2}\text{sech}^2\,x+C$.
-
 </details>
 
 <details>
@@ -523,7 +516,6 @@ $\text{arsinh}\,x = \ln(x+\sqrt{x^2+1})$. Compare this with $\ln(\sqrt{2}+1)$.
 $\text{arsinh}\,1 = \ln(1+\sqrt{2}) = \ln(\sqrt{2}+1)$.
 
 Therefore $\ln(\sqrt{2}+1) = \text{arsinh}\,1$, so $k = 1$ and $m = 1$.
-
 </details>
 
 <details>
@@ -541,7 +533,6 @@ Recognise the integrand as $\tanh x$. Alternatively, use the substitution $u = e
 $\dfrac{e^x-e^{-x}}{e^x+e^{-x}} = \tanh x$.
 
 $\displaystyle\int\tanh x\,dx = \ln(\cosh x)+C = \ln\!\left(\frac{e^x+e^{-x}}{2}\right)+C$.
-
 </details>
 
 <details>
@@ -564,7 +555,6 @@ $1+\left(\dfrac{dy}{dx}\right)^2 = 1+\sinh^2(x/a) = \cosh^2(x/a)$.
 $s = \displaystyle\int_{-b}^{b}\cosh(x/a)\,dx = \bigl[a\sinh(x/a)\bigr]_{-b}^b = a\sinh(b/a) - a\sinh(-b/a) = 2a\sinh(b/a)$.
 
 The length of the chain is $\boxed{2a\sinh(b/a)}$.
-
 </details>
 
 :::

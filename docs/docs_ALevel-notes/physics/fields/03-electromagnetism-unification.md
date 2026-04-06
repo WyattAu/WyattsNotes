@@ -635,7 +635,6 @@ $I_p = P_p / V_p = 133/240 = 0.56$ A.
 
 <b>If you get this wrong, revise:</b>
 [Faraday's Law — Applications and Lenz's Law Intuition](#5-faradays-law--applications-and-lenzs-law-intuition)
-
 </details>
 
 <details>
@@ -653,7 +652,6 @@ measurable Hall voltage compared to a metal where $n \sim 10^{29}$ m$^{-3}$ woul
 $V_H \sim 10^{-10}$ V.
 
 <b>If you get this wrong, revise:</b> [The Hall Effect](#6-the-hall-effect)
-
 </details>
 
 <details>
@@ -675,7 +673,6 @@ m $= 11.4$ cm.
 $\sqrt{22/20} \times 11.4 \approx 11.9$ cm — **further** from the entrance slit.
 
 <b>If you get this wrong, revise:</b> [The Mass Spectrometer](#7-the-mass-spectrometer)
-
 </details>
 
 <details>
@@ -698,7 +695,6 @@ not on the radius or speed. As the proton gains energy and spirals outward, both
 increase proportionally ($r = mv/(qB)$), keeping the period $T = 2\pi r/v = 2\pi m/(qB)$ constant.
 
 <b>If you get this wrong, revise:</b> [The Cyclotron](#8-the-cyclotron)
-
 </details>
 
 :::

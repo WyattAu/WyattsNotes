@@ -49,7 +49,6 @@ slug: wrap
 <b>If you get this wrong, you should focus on:</b> Applying the energy balance principle for
 radiation, breaking down a phase change problem into its distinct heating and melting stages, and
 understanding the relationship between power and energy transfer over time ($P=E/t$).
-
 </details>
 
 2. **Question:** A sealed vertical cylinder with a frictionless piston contains 0.10 moles of a
@@ -85,7 +84,6 @@ understanding the relationship between power and energy transfer over time ($P=E
 <b>If you get this wrong, you should focus on:</b> Calculating pressure in a system with a piston,
 correctly applying the Ideal Gas Law, and using the First Law of Thermodynamics for a specific
 process (isobaric), remembering to calculate both the change in internal energy and the work done.
-
 </details>
 
 3. **Question (HL Only):** A Carnot engine operates between a hot reservoir at 600 K and a cold
@@ -119,7 +117,6 @@ process (isobaric), remembering to calculate both the change in internal energy 
 <b>If you get this wrong, you should focus on:</b> The distinction between a heat engine and a
 refrigerator, the correct formulas for Carnot efficiency and Carnot COP, and how the work output of
 an engine serves as the work input for another device.
-
 </details>
 
 4. **Question (HL Only):** 1.0 mole of a monatomic ideal gas is initially at state A (300 K,
@@ -160,7 +157,6 @@ an engine serves as the work input for another device.
 process ($PV^\gamma=\text{const.}$, $TV^{\gamma-1}=\text{const.}$). Also, the formula for
 calculating entropy change during a process with a changing temperature, which requires integration
 or the logarithmic form.
-
 </details>
 
 5. **Question:** A circuit is constructed with a 12.0 V battery with an internal resistance of 0.50
@@ -203,7 +199,6 @@ or the logarithmic form.
 <b>If you get this wrong, you should focus on:</b> The rules for combining series and parallel
 resistors, the concept of internal resistance and terminal PD, and using the potential divider rule
 (or working backwards through the circuit) to find voltage/current for a specific component.
-
 </details>
 
 </details>
@@ -472,5 +467,4 @@ kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$)
 | $c_{\text{rms}} = \sqrt{\frac{3RT}{M}}$              | RMS molecular speed             |
 | $Q = mc\Delta T$                                     | Specific heat (no phase change) |
 | $Q = mL$                                             | Latent heat (phase change)      |
-
 </details>

@@ -198,8 +198,10 @@ fn do_nothing() {}
 fn explicit_unit() -> () {}
 ```
 
-The zero-sized type (ZST) property of `()` is important for generic programming. A `Result<T, ()>`
-does not allocate any space for the error variant's discriminant when the error type is `()`.
+The zero-sized type (ZST) property of `()` is important for generic programming. In `Result<T, ()>`,
+the error variant carries no payload overhead since `()` is a ZST. Additionally, if `T` has a niche
+(e.g., `Option<T>` where `None` is represented by a sentinel value), the compiler can eliminate the
+discriminant entirely through niche optimization.
 
 ### Tuple Structs
 
@@ -442,7 +444,7 @@ Type inference does not work across function boundaries:
 // This does NOT compile — the compiler cannot infer the type of `x`
 // because it has no usage context at the call site:
 fn make_vec() -> Vec<_> {  // ERROR: type annotations needed
-    vec![1, 2, 3]
+    Vec::new()
 }
 
 // Fix: annotate the return type or use a turbofish
@@ -494,7 +496,7 @@ needed (e.g., after moving it):
 
 ```rust
 let s = String::from("hello");
-let s = s.len();  // s was moved into .len(), now s is a usize
+let s = s.len();  // s is borrowed by .len(), then the original String is dropped; the new s is a usize
 ```
 
 ## Mutability
@@ -583,8 +585,9 @@ fn increment() {
 
 :::warning
 
-Do not use `static mut`. It is the source of undefined behavior in multi-threaded contexts and is
-being deprecated. Use `static` with `Mutex`, `AtomicUsize`, or `OnceLock` instead.
+Do not use `static mut`. It is the source of undefined behavior in multi-threaded contexts and
+requires `unsafe` blocks to access. Prefer `static` with `Mutex`, `AtomicUsize`, or `OnceLock`
+instead.
 
 :::
 
@@ -748,6 +751,7 @@ value (for signed). This behavior is documented in the reference but surprises p
 For fallible conversions that return `Result`:
 
 ```rust
+// TryFrom and TryInto are in the prelude since Rust 1.76 — no explicit use needed
 use std::convert::TryFrom;
 use std::convert::TryInto;
 
@@ -777,11 +781,12 @@ necessary for FFI and for implementing safe abstractions over unsafe memory oper
 ## Visibility of Primitive Types
 
 All primitive types are in the prelude and are always in scope. You do not need to import them. The
-full list of prelude types: `Option`, `Result`, `Vec`, `String`, `Box`, `Rc`, `Arc`, `Cow`, `Drop`,
-`Clone`, `Copy`, `Deref`, `DerefMut`, `AsRef`, `AsMut`, `From`, `Into`, `FromIterator`,
-`IntoIterator`, `Fn`, `FnMut`, `FnOnce`, `Send`, `Sync`, `Unpin`, `Sized`, `Debug`, `Display`,
-`Iterator`, `Extend`, `IntoIterator`, `PartialEq`, `PartialOrd`, `Eq`, `Ord`, `Hash`, `Default`,
-`ToString`, `Iterator`, `pin`, `String`, `Vec`, `println`, `eprintln`, `format`, `vec`, `drop`.
+following is an approximate list of commonly used prelude items (see the
+[standard library prelude](https://doc.rust-lang.org/std/prelude/index.html) for the authoritative
+list): `Option`, `Result`, `Vec`, `String`, `Box`, `Drop`, `Clone`, `Copy`, `Deref`, `DerefMut`,
+`AsRef`, `AsMut`, `From`, `Into`, `IntoIterator`, `Fn`, `FnMut`, `FnOnce`, `Send`, `Sync`, `Unpin`,
+`Sized`, `Debug`, `Display`, `Iterator`, `Extend`, `PartialEq`, `PartialOrd`, `Eq`, `Ord`, `Hash`,
+`Default`, `ToString`, `println`, `eprintln`, `format`, `vec`, `drop`.
 
 ## Common Pitfalls
 

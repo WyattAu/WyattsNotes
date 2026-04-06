@@ -800,10 +800,10 @@ assert_eq!(counter.get(), 2);
 
 :::warning
 
-`Cell<T>` is `Send + Sync` when `T: Send + Copy`. This means `Arc<Cell<T>>` can be shared across
-threads, but you must ensure that concurrent `get` and `set` operations do not cause data races. For
-`Copy` types, `Cell` uses atomic-like semantics on most platforms, but this is not guaranteed by the
-language specification.
+`Cell<T>` is `Send` when `T: Send`, and `Sync` when `T: Copy`. This means `Arc<Cell<T>>` can be
+shared across threads when `T: Copy`, and concurrent `get` and `set` operations are safe because
+`Cell` uses interior mutability — `get` copies the value out and `set` replaces it in a single
+operation.
 
 :::
 

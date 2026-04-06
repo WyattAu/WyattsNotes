@@ -444,7 +444,7 @@ This connects to the vector formulation described in the
    - $\sin 210^\circ = -\sin 30^\circ = -\frac{1}{2}$
    - $\cos 210^\circ = -\cos 30^\circ = -\frac{\sqrt{3}}{2}$
    - $\tan 210^\circ = \frac{\sin 210^\circ}{\cos 210^\circ} = \frac{-1/2}{-\sqrt{3}/2} = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$
-   </details>
+</details>
 
 2. **Question:** A sector of a circle of radius $8$ cm has an area of $32\pi$ cm$^2$. Find the arc
    length and the perimeter of the sector.
@@ -453,7 +453,7 @@ This connects to the vector formulation described in the
    - Area $= \frac{1}{2}r^2\theta$: $\frac{1}{2}(64)\theta = 32\pi \implies 32\theta = 32\pi \implies \theta = \pi$ rad.
    - Arc length $= r\theta = 8\pi$ cm.
    - Perimeter of sector $= 2r + l = 16 + 8\pi \approx 41.1$ cm.
-   </details>
+</details>
 
 3. **Question:** Solve $3\sin^2\theta - 2\sin\theta - 1 = 0$ for $0^\circ \leq \theta < 360^\circ$.
    <details>
@@ -464,7 +464,7 @@ This connects to the vector formulation described in the
    - Case 2: $\sin\theta = -\frac{1}{3}$. Principal value $\alpha = \arcsin(-\frac{1}{3}) \approx -19.47^\circ$.
      - $\theta = 360^\circ + (-19.47^\circ) = 340.53^\circ$ or $\theta = 180^\circ - (-19.47^\circ) = 199.47^\circ$.
    - Solutions: $\theta \approx 90^\circ, 199.5^\circ, 340.5^\circ$.
-   </details>
+</details>
 
 4. **Question:** In $\triangle ABC$, $a = 10$, $b = 7$, $c = 8$. Find the largest angle of the
    triangle.
@@ -473,7 +473,7 @@ This connects to the vector formulation described in the
    - The largest angle is opposite the longest side, so find $\angle A$ (opposite $a = 10$).
    - By the cosine rule: $\cos A = \frac{b^2 + c^2 - a^2}{2bc} = \frac{49 + 64 - 100}{2(7)(8)} = \frac{13}{112}$.
    - $A = \arccos\left(\frac{13}{112}\right) \approx 83.3^\circ$.
-   </details>
+</details>
 
 5. **Question:** From a point $A$ on the ground, the angle of elevation of the top $T$ of a vertical
    tower is $40^\circ$. From a point $B$, $30$ m closer to the base of the tower, the angle of
@@ -487,7 +487,7 @@ This connects to the vector formulation described in the
    - $x(\tan 55^\circ - \tan 40^\circ) = 30\tan 40^\circ$.
    - $x = \frac{30\tan 40^\circ}{\tan 55^\circ - \tan 40^\circ} = \frac{30(0.8391)}{1.4281 - 0.8391} = \frac{25.17}{0.589} \approx 42.74$ m.
    - $h = 42.74 \times \tan 55^\circ \approx 42.74 \times 1.4281 \approx 61.1$ m.
-   </details>
+</details>
 
 6. **Question:** A ship $S$ is observed from two lighthouses $A$ and $B$ which are $5$ km apart. The
    bearing of $S$ from $A$ is $050^\circ$ and the bearing of $S$ from $B$ is $320^\circ$. Find the
@@ -499,7 +499,7 @@ This connects to the vector formulation described in the
    - In $\triangle ABS$: $\angle ABS = 180^\circ - 50^\circ - 90^\circ = 40^\circ$.
    - Using the sine rule: $\frac{AS}{\sin 40^\circ} = \frac{5}{\sin 90^\circ} = 5$.
    - $AS = 5\sin 40^\circ \approx 3.21$ km.
-   </details>
+</details>
 
 7. **Question:** Prove the identity
    $\frac{\sin\theta}{1 - \cos\theta} = \frac{1 + \cos\theta}{\sin\theta}$ for $\sin\theta \neq 0$.
@@ -510,7 +510,7 @@ This connects to the vector formulation described in the
    - Since $1 - \cos^2\theta = \sin^2\theta$ (Pythagorean identity):
    - $= \frac{\sin\theta(1 + \cos\theta)}{\sin^2\theta} = \frac{1 + \cos\theta}{\sin\theta}$.
    - This equals the RHS, completing the proof.
-   </details>
+</details>
 
 8. **Question:** A pyramid has a square base $ABCD$ of side $6$ cm and vertex $V$. The slant edges
    $VA = VB = VC = VD = 5\sqrt{2}$ cm. Find (a) the height of the pyramid, and (b) the angle between
@@ -523,7 +523,7 @@ This connects to the vector formulation described in the
    - (b) The angle between $VA$ and the base is $\angle VAO$.
      - $\cos\angle VAO = \frac{AO}{VA} = \frac{3\sqrt{2}}{5\sqrt{2}} = \frac{3}{5}$.
      - $\angle VAO = \arccos\frac{3}{5} \approx 53.1^\circ$.
-   </details>
+</details>
 
 9. **Question:** Sketch the graph of $y = 2\sin\left(x - \frac{\pi}{4}\right) + 1$ for
    $0 \leq x \leq 2\pi$. State the maximum value, minimum value, and the coordinates of all
@@ -537,7 +537,7 @@ This connects to the vector formulation described in the
    - $x = \frac{7\pi}{6} + \frac{\pi}{4} = \frac{14\pi + 3\pi}{12} = \frac{17\pi}{12}$.
    - $x = \frac{11\pi}{6} + \frac{\pi}{4} = \frac{22\pi + 3\pi}{12} = \frac{25\pi}{12}$.
    - Both are in $[0, 2\pi]$. $x$-intercepts: $\left(\frac{17\pi}{12}, 0\right)$ and $\left(\frac{25\pi}{12}, 0\right)$.
-   </details>
+</details>
 
 10. **Question:** Two observers $A$ and $B$ are on opposite sides of a vertical tower. $A$ and $B$
     are $100$ m apart on level ground. The angle of elevation of the top of the tower from $A$ is
@@ -550,7 +550,7 @@ This connects to the vector formulation described in the
     - $\tan 45^\circ = \frac{h}{100 - x} \implies 100 - x = h$.
     - Substituting: $100 - h\sqrt{3} = h \implies 100 = h(1 + \sqrt{3})$.
     - $h = \frac{100}{1 + \sqrt{3}} = \frac{100(1 - \sqrt{3})}{(1 + \sqrt{3})(1 - \sqrt{3})} = \frac{100(1 - \sqrt{3})}{-2} = 50(\sqrt{3} - 1) \approx 36.6$ m.
-    </details>
+</details>
 
 11. **Question:** Solve $\cos 2\theta = \sin\theta$ for $0 \leq \theta < 2\pi$.
     <details>
@@ -562,7 +562,7 @@ This connects to the vector formulation described in the
     - $\sin\theta = \frac{1}{2} \implies \theta = \frac{\pi}{6}, \frac{5\pi}{6}$.
     - $\sin\theta = -1 \implies \theta = \frac{3\pi}{2}$.
     - Solutions: $\theta = \frac{\pi}{6}, \frac{3\pi}{2}, \frac{5\pi}{6}$.
-    </details>
+</details>
 
 12. **Question:** In $\triangle ABC$, $a = 5$, $b = 7$, $A = 40^\circ$. Determine whether two
     distinct triangles exist, and find all possible values of $B$.
@@ -575,5 +575,5 @@ This connects to the vector formulation described in the
     - $C = 180^\circ - 40^\circ - 64.2^\circ = 75.8^\circ$.
     - $c = \frac{5\sin 75.8^\circ}{\sin 40^\circ} \approx \frac{5(0.9692)}{0.6428} \approx 7.54$.
     - There is only one triangle, with $B \approx 64.2^\circ$, $C \approx 75.8^\circ$, $c \approx 7.54$.
-    </details>
+</details>
 </details>

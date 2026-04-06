@@ -216,7 +216,6 @@ Mode: 5 (appears twice).
 
 **If you get this wrong, revise:** [Measures of Central Tendency](#1-measures-of-central-tendency) —
 Section 1.
-
 </details>
 
 <details>
@@ -235,7 +234,6 @@ $\sigma^2 = 284/8 - 5.5^2 = 35.5 - 30.25 = 5.25$.
 $\sigma = \sqrt{5.25} \approx 2.29$.
 
 **If you get this wrong, revise:** [Computational Formula](#22-computational-formula) — Section 2.2.
-
 </details>
 
 <details>
@@ -250,7 +248,6 @@ $\bar{y} = (\bar{x} - 100)/5 = 12 \implies \bar{x} - 100 = 60 \implies \bar{x} =
 $\sigma_y = \sigma_x/5 = 3 \implies \sigma_x = 15$.
 
 **If you get this wrong, revise:** [Coding Data](#4-coding-data) — Section 4.
-
 </details>
 
 <details>
@@ -273,7 +270,6 @@ All values are within $[-14, 34]$, so no outliers.
 
 **If you get this wrong, revise:** [Quartiles, IQR, and Box Plots](#3-quartiles-iqr-and-box-plots) —
 Section 3.
-
 </details>
 
 <details>
@@ -287,7 +283,6 @@ The following frequency table shows the number of goals scored in 20 football ma
 | 2     | 5         |
 | 3     | 3         |
 | 4     | 2         |
-
 </details>
 
 <details>
@@ -301,7 +296,6 @@ $\sum fx^2 = 0 + 7 + 20 + 27 + 32 = 86$.
 $\sigma^2 = 86/20 - 1.7^2 = 4.3 - 2.89 = 1.41$.
 
 **If you get this wrong, revise:** [Frequency Tables](#51-discrete-frequency-data) — Section 5.1.
-
 </details>
 
 <details>
@@ -314,7 +308,6 @@ Prove that $\displaystyle\sum_{i=1}^{n}(x_i - \bar{x}) = 0$.
 $$\sum(x_i - \bar{x}) = \sum x_i - n\bar{x} = \sum x_i - n \cdot \frac{\sum x_i}{n} = \sum x_i - \sum x_i = 0 \quad \blacksquare$$
 
 **If you get this wrong, revise:** [Mean](#11-mean) — Section 1.1.
-
 </details>
 
 <details>
@@ -328,7 +321,6 @@ Both datasets are centred at the same point (same mean), but dataset A is more s
 
 **If you get this wrong, revise:**
 [Variance and Standard Deviation](#2-variance-and-standard-deviation) — Section 2.
-
 </details>
 
 <details>
@@ -343,7 +335,6 @@ $\sigma^2 = 360/10 = 36$, so $\sigma = 6$.
 $s^2 = 360/9 = 40$.
 
 **If you get this wrong, revise:** [Sample Variance](#23-sample-variance) — Section 2.3.
-
 </details>
 
 <details>
@@ -359,7 +350,6 @@ Multiplying by 3 scales mean by 3: mean becomes 45. SD scales by 3: SD becomes 1
 New mean = 45, new SD = 12.
 
 **If you get this wrong, revise:** [Coding Data](#4-coding-data) — Section 4.2.
-
 </details>
 
 <details>
@@ -372,7 +362,6 @@ Explain why the median is preferred to the mean for measuring average income in 
 Income distributions are typically right-skewed — a small number of very high earners pull the mean upward. The median, being the middle value, is unaffected by extreme values and gives a more representative "typical" income. For example, if one billionaire lives in a village of 1000 people earning $30{,}000$, the mean would be vastly inflated while the median would remain close to $30{,}000$.
 
 **If you get this wrong, revise:** [Comparing Measures](#15-comparing-measures) — Section 1.5.
-
 </details>
 
 :::

@@ -476,7 +476,6 @@ The **Internet** is the global physical infrastructure (cables, routers, servers
 using HTTP, HTML, and URLs, invented by Tim Berners-Lee at CERN in 1989. Many services (email via
 SMTP, VoIP) use the Internet but are not part of the Web. The Internet existed for 20 years before
 the Web was created.
-
 </details>
 
 **Problem 2.** Write an HTML page using semantic elements for a student blog with navigation, a main
@@ -515,7 +514,6 @@ article, and a footer. Why does semantic HTML improve accessibility?
 Semantic HTML improves accessibility because screen readers can distinguish navigation from content
 from footer, allowing users to jump between sections. Search engines also better understand page
 structure for indexing.
-
 </details>
 
 **Problem 3.** An element has `width: 200px`, `padding: 20px`, `border: 5px solid black`, and
@@ -529,7 +527,6 @@ structure for indexing.
 
 **border-box:** Visible width = 200px (includes padding and border). Content = 200 - 40 - 10 =
 150px. Total with margin = 200 + 30 = 230px.
-
 </details>
 
 **Problem 4.** Explain client-side vs server-side validation. Why is server-side validation always
@@ -545,7 +542,6 @@ Server-side validation is always necessary because: (1) JavaScript can be disabl
 can send crafted HTTP requests directly, bypassing the browser entirely; (3) only the server can
 verify business rules (sufficient funds, item in stock). Client-side validation is UX only, not
 security.
-
 </details>
 
 **Problem 5.** Describe every step from typing `https://www.example.com/page` to the page being
@@ -563,7 +559,6 @@ displayed.
 5. **HTTP request:** `GET /page HTTP/1.1` with headers sent over encrypted connection.
 6. **HTTP response:** Server returns `200 OK` with HTML, CSS, JS, images.
 7. **Rendering:** Browser parses HTML, builds DOM, executes JavaScript, paints the page.
-
 </details>
 
 **Problem 6.** Explain the three types of XSS and how to prevent each.
@@ -582,7 +577,6 @@ encoding. Victim must click the link. **Prevent:** encode all user-supplied data
 unsafely. **Prevent:** use `textContent`, `createElement()`, and `appendChild()`.
 
 **General:** Content Security Policy, `HttpOnly` cookies, input validation, output encoding.
-
 </details>
 
 **Problem 7.** A login query is `SELECT * FROM users WHERE username = '[input]'`. Show a SQL
@@ -606,7 +600,6 @@ cursor.execute("SELECT * FROM users WHERE username = %s", (username,))
 ```
 
 The database treats the input as a literal string, not executable SQL.
-
 </details>
 
 **Problem 8.** Explain how CSRF works and three prevention methods.
@@ -621,7 +614,6 @@ pointing to a bank transfer URL). The browser sends the session cookie automatic
 **Prevention:** (1) **CSRF tokens** — unique, unpredictable tokens per session embedded in forms;
 (2) **SameSite cookies** — `Strict` or `Lax` prevents cookies with cross-site requests; (3)
 **Re-authentication** — require password for sensitive actions.
-
 </details>
 
 **Problem 9.** Explain cookies vs sessions. What security flags should authentication cookies have?
@@ -636,7 +628,6 @@ unlimited data and are invisible to the client.
 **Security flags:** `HttpOnly` (prevents JavaScript access — XSS defence), `Secure` (HTTPS only),
 `SameSite=Strict` (prevents cross-site requests — CSRF defence), `Path` (restrict to specific URLs).
 Example: `Set-Cookie: session_id=abc123; HttpOnly; Secure; SameSite=Strict; Path=/`
-
 </details>
 
 **Problem 10.** Why is client-side JavaScript validation insufficient for security? Give four
@@ -655,7 +646,6 @@ reasons.
 
 Client-side validation is a UX feature only. Server-side validation is the only reliable security
 boundary.
-
 </details>
 
 :::

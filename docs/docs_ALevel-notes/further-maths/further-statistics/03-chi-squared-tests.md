@@ -267,7 +267,6 @@ $\nu = 6 - 1 = 5$. Critical value: $\chi^2_{0.05,\,5} = 11.07$.
 $2.8 < 11.07$: **do not reject** $H_0$. No evidence the die is biased.
 
 **If you get this wrong, revise:** [Goodness of Fit Test](#2-goodness-of-fit-test) — Section 2.
-
 </details>
 
 <details>
@@ -291,7 +290,6 @@ $\nu = (2-1)(2-1) = 1$. Critical value: $\chi^2_{0.05,\,1} = 3.841$.
 $9.09 > 3.841$: **reject** $H_0$. The variables are not independent.
 
 **If you get this wrong, revise:** [Test for Independence](#3-test-for-independence) — Section 3.
-
 </details>
 
 <details>
@@ -311,7 +309,6 @@ by $E_i$ gives each category appropriate weight. This leads to a test statistic 
 under $H_0$ is approximately $\chi^2$.
 
 **If you get this wrong, revise:** [Test statistic](#22-test-statistic) — Section 2.2.
-
 </details>
 
 <details>
@@ -342,7 +339,6 @@ $6.204 > 5.991$: **reject** $H_0$. Evidence the data does not follow Poisson.
 
 **If you get this wrong, revise:**
 [Worked example: Poisson goodness of fit](#26-worked-example-poisson-goodness-of-fit) — Section 2.6.
-
 </details>
 
 <details>
@@ -359,7 +355,6 @@ Critical value: $\chi^2_{0.05,\,2} = 5.991$.
 Since $12.4 > 5.991$, **reject** $H_0$.
 
 **If you get this wrong, revise:** [Degrees of freedom](#35-degrees-of-freedom) — Section 3.5.
-
 </details>
 
 <details>
@@ -383,7 +378,6 @@ $\nu = 1$. Critical value: $3.841$. Both reject $H_0$, but Yates' gives a more c
 
 **If you get this wrong, revise:** [Yates' correction](#25-yates-correction-continuity-correction) —
 Section 2.5.
-
 </details>
 
 <details>
@@ -404,7 +398,6 @@ $\nu = 5 - 1 = 4$. Critical value at 1%: $\chi^2_{0.01,\,4} = 13.28$.
 $2.9 < 13.28$: **do not reject** $H_0$.
 
 **If you get this wrong, revise:** [Goodness of Fit Test](#2-goodness-of-fit-test) — Section 2.
-
 </details>
 
 <details>
@@ -421,7 +414,6 @@ Critical value: $\chi^2_{0.05,\,6} = 12.59$.
 $18.7 > 12.59$: **reject** $H_0$. There is evidence that the variables are associated.
 
 **If you get this wrong, revise:** [Degrees of freedom](#35-degrees-of-freedom) — Section 3.5.
-
 </details>
 
 <details>
@@ -441,7 +433,6 @@ State three conditions that must be satisfied before carrying out a chi-squared 
    can produce non-significant results. The test has low power. Remedy: increase sample size.
 
 **If you get this wrong, revise:** [Conditions](#24-conditions) — Section 2.4.
-
 </details>
 
 <details>
@@ -459,7 +450,6 @@ $7.2 < 11.07$: **do not reject** $H_0$. There is insufficient evidence that the 
 a normal distribution.
 
 **If you get this wrong, revise:** [Degrees of freedom](#23-degrees-of-freedom) — Section 2.3.
-
 </details>
 
 :::

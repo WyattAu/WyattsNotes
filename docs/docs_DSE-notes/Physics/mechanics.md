@@ -721,7 +721,6 @@ $$r = 6.37 \times 10^6 + 500 \times 10^3 = 6.87 \times 10^6 \text{ m}$$
 $$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.87 \times 10^6}} = \sqrt{5.79 \times 10^7} = 7611 \text{ m/s}$$
 
 $$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.87 \times 10^6}{7611} = 5671 \text{ s} = 94.5 \text{ minutes}$$
-
 </details>
 
 ---

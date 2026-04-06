@@ -403,7 +403,6 @@ Never expose the dashboard on port 8080 to the public internet without authentic
 - 'traefik.http.middlewares.ip-whitelist.ipwhitelist.sourcerange=192.168.1.0/24'
 - 'traefik.http.routers.traefik.middlewares=ip-whitelist'
 ```
-
 </details>
 
 ## Example: Full Service Stack with Traefik
@@ -493,7 +492,6 @@ docker exec traefik ls -la /var/run/docker.sock
 
 On TrueNAS SCALE, you may need to use the built-in Apps catalog for Traefik rather than a custom
 compose, or ensure the Docker socket path is correct for the SCALE Kubernetes-based Docker runtime.
-
 </details>
 
 <details>
@@ -510,7 +508,6 @@ command:
 
 Staging certificates will show as invalid (red padlock) in browsers, but the flow is identical.
 Switch back to the production server once everything works.
-
 </details>
 
 <details>
@@ -528,7 +525,6 @@ You can force a provider refresh by restarting Traefik:
 ```bash
 docker restart traefik
 ```
-
 </details>
 
 <details>
@@ -545,7 +541,6 @@ labels:
 
 If WebSocket connections drop after 30 seconds, check if your reverse proxy or ISP is terminating
 idle connections.
-
 </details>
 
 <details>
@@ -554,5 +549,4 @@ idle connections.
 If your ISP uses Carrier-Grade NAT (CGNAT), you cannot receive incoming connections on port 443. The
 TLS challenge will fail. Switch to the DNS challenge with your DNS provider (Cloudflare, Route53,
 etc.) which requires no inbound ports.
-
 </details>

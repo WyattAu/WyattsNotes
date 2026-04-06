@@ -395,7 +395,6 @@ Let $m = n/3$, so $n = 3m$. As $n \to \infty$, $m \to \infty$.
 $$\left(1+\frac{3}{n}\right)^n = \left(1+\frac{1}{m}\right)^{3m} = \left[\left(1+\frac{1}{m}\right)^m\right]^3 \to e^3$$
 
 **If you get this wrong, revise:** [The Number $e$](#1-the-number-e) — Section 1.1.
-
 </details>
 
 <details>
@@ -412,7 +411,6 @@ $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx} = e^u \cdot 6x = 6x\, e^{3
 $\blacksquare$
 
 **If you get this wrong, revise:** [The Derivative of $e^x$](#2-the-derivative-of-ex) — Section 2.
-
 </details>
 
 <details>
@@ -429,7 +427,6 @@ $$x = \frac{-2 \pm \sqrt{4+76}}{2} = \frac{-2 \pm \sqrt{80}}{2} = -1 \pm 2\sqrt{
 Domain: $x \gt{} 1$, so $x = -1 + 2\sqrt{5}$.
 
 **If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4.
-
 </details>
 
 <details>
@@ -443,7 +440,6 @@ $$\log_a 200 = \log_a(2 \times 100) = \log_a 2 + \log_a 100 = \log_a 2 + \log_a(
 $$= \log_a 2 + 2\log_a 2 + 2\log_a 5 = 3(0.301) + 2(0.699) = 0.903 + 1.398 = 2.301$$
 
 **If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4.
-
 </details>
 
 <details>
@@ -459,7 +455,6 @@ $u = 1$: $5^x = 1 \implies x = 0$. $u = 5$: $5^x = 5 \implies x = 1$.
 
 **If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations)
 — Section 7.3.
-
 </details>
 
 <details>
@@ -476,7 +471,6 @@ Half-life: $t_{1/2} = \dfrac{\ln 2}{k} = 8 \implies k = \dfrac{\ln 2}{8}$.
 $$N = 200 \cdot e^{-25\ln 2/8} = 200 \cdot 2^{-25/8} \approx 200 \cdot 0.2315 \approx 46.3 \text{ g}$$
 
 **If you get this wrong, revise:** [Exponential Modelling](#8-exponential-modelling) — Section 8.2.
-
 </details>
 
 <details>
@@ -492,7 +486,6 @@ $$\frac{dy}{dx} = x^x(\ln x + 1)$$
 
 **If you get this wrong, revise:** [Logarithmic Differentiation](#10-logarithmic-differentiation) —
 Section 10.
-
 </details>
 
 <details>
@@ -509,7 +502,6 @@ solution.**
 
 **If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations)
 — Section 7.1, and always check the domain.
-
 </details>
 
 <details>
@@ -526,7 +518,6 @@ $$\log_a b = \frac{\ln b}{\ln a}, \qquad \log_b a = \frac{\ln a}{\ln b}$$
 $$\log_a b \cdot \log_b a = \frac{\ln b}{\ln a} \cdot \frac{\ln a}{\ln b} = 1 \quad \blacksquare$$
 
 **If you get this wrong, revise:** [Change of Base Formula](#5-change-of-base-formula) — Section 5.
-
 </details>
 
 <details>
@@ -547,7 +538,6 @@ For $T = 35$: $35 = 20 + 70e^{-kt} \implies 15 = 70e^{-kt} \implies e^{-kt} = 3/
 $$-kt = \ln(3/14) \implies t = \frac{\ln(14/3)}{k} = \frac{10\ln(14/3)}{\ln(7/4)} \approx 28.3 \text{ minutes}$$
 
 **If you get this wrong, revise:** [Exponential Modelling](#8-exponential-modelling) — Section 8.
-
 </details>
 
 <details>
@@ -565,7 +555,6 @@ $$y_{\min} = \sqrt{3} + \frac{3}{\sqrt{3}} = \sqrt{3} + \sqrt{3} = 2\sqrt{3}$$
 
 **If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations)
 and Section 2.2.
-
 </details>
 
 <details>
@@ -582,7 +571,6 @@ Reject $x = -1/2$ since $\ln x$ requires $x \gt{} 0$.
 
 **If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4 and
 domain restrictions.
-
 </details>
 
 :::

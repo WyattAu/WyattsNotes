@@ -561,7 +561,6 @@ Differences: Aerobic respiration requires oxygen and occurs in the mitochondria,
 approximately 36-38 ATP per glucose with $\text{CO}_2$ and $\text{H}_2\text{O}$ as by-products.
 Anaerobic respiration occurs without oxygen, only in the cytoplasm, producing 2 ATP per glucose. In
 animals, it produces lactate; in yeast, it produces ethanol and $\text{CO}_2$.
-
 </details>
 
 ---
@@ -804,7 +803,6 @@ Metaphase of mitosis: 20 chromosomes (each with 2 chromatids), 40 DNA molecules.
 
 After cytokinesis: 20 chromosomes, 20 DNA molecules (each daughter cell receives 20 single-chromatid
 chromosomes).
-
 </details>
 
 ---

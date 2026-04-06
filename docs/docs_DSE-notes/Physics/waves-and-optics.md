@@ -488,7 +488,6 @@ waves on the string is $24 \text{ m/s}$. Find the frequency of the second harmon
 For the second harmonic: $\lambda_2 = L = 1.2 \text{ m}$
 
 $$f_2 = \frac{v}{\lambda_2} = \frac{24}{1.2} = 20 \text{ Hz}$$
-
 </details>
 
 ---
@@ -786,7 +785,6 @@ $$\sin\theta_c = \sin 85^\circ = 0.996$$
 The core must have refractive index such that the critical angle is less than $85^\circ$, i.e.,
 $n_{\text{core}}/n_{\text{cladding}} \gt 1.004$. In practice, optical fibres are designed with much
 larger refractive index differences to accommodate bends.
-
 </details>
 
 ---

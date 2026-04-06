@@ -264,7 +264,6 @@ understood and unlikely to change. Which SDLC model would you recommend? Justify
 - Extensive documentation is valuable for a school system (long-term maintenance)
 - Lower complexity compared to Agile for a well-defined project
 - Budget and timeline can be estimated more accurately
-
 </details>
 
 **Problem 2.** A startup is building a social media app with rapidly changing features based on user
@@ -280,7 +279,6 @@ feedback. Which methodology is most appropriate and why?
 - Short sprints allow rapid iteration and frequent releases
 - Working software delivered early allows market validation
 - Low cost of changing direction based on user feedback
-
 </details>
 
 **Problem 3.** Draw a UML class diagram for a library system with classes `Library`, `Book`,
@@ -344,7 +342,6 @@ Relationships:
 - Library 1 --- \* Member (aggregation: members exist independently)
 - Member 1 --- \* Loan (composition: loans belong to a member)
 - Book 1 --- \* Loan (aggregation: a book can have many loans over time)
-
 </details>
 
 **Problem 4.** Explain the role of the Scrum Master. Why is this role important?
@@ -363,7 +360,6 @@ The Scrum Master is a **facilitator** (not a manager) who:
 
 This role is important because without it, teams often revert to ad-hoc practices, lose focus on
 sprint goals, or fail to identify and address process issues.
-
 </details>
 
 **Problem 5.** Compare the cost of fixing a bug in the waterfall model vs Agile. At which stage is
@@ -389,7 +385,6 @@ is complete. The cost of fixing a bug increases exponentially the later it is fo
 
 Agile is most efficient at the sprint level — bugs found within the same sprint they were introduced
 are cheapest to fix.
-
 </details>
 
 **Problem 6.** Explain what a "minimum viable product" (MVP) is and how it relates to Agile
@@ -411,7 +406,6 @@ needed to solve the primary problem.
 
 Example: A ride-sharing app MVP might have only driver-rider matching and payment — no ratings, no
 scheduling, no advanced features.
-
 </details>
 
 **Problem 7.** Describe a situation where the spiral model would be more appropriate than both
@@ -437,7 +431,6 @@ approval, hardware-software integration, and liability. Each spiral iteration wo
 
 Waterfall is too inflexible for evolving requirements. Agile doesn't provide sufficient risk
 analysis for safety-critical systems.
-
 </details>
 
 **Problem 8.** Create a use case diagram description for an online shopping system. Identify three
@@ -472,7 +465,6 @@ actors and at least five use cases.
 
 For revision on testing, see
 [Testing](/docs/docs_ALevel-notes/computer-science/software-engineering/testing).
-
 </details>
 
 :::
