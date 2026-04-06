@@ -25,11 +25,11 @@ const subjectGroups: SubjectGroup[] = [
     subjects: [
       {
         name: 'IB Notes',
-        files: 38,
-        lines: '14.4K',
+        files: 55,
+        lines: '29.1K',
         href: '/docs/docs_IB-notes/intro',
         tag: 'HL/SL',
-        desc: 'Diploma Programme notes — Computer Science, Maths, Physics, English',
+        desc: 'Diploma Programme — Maths, Physics, Chemistry, Computer Science, English, History',
       },
       {
         name: 'A-Level',
@@ -62,19 +62,19 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'Java',
-        files: 16,
-        lines: '13.9K',
+        files: 24,
+        lines: '21.2K',
         href: '/docs/docs_java-notes/intro',
         tag: 'JDK 21+',
-        desc: 'Modern Java — JDK 21+, I/O, concurrency, generics, reflection',
+        desc: 'Modern Java — OOP, collections, concurrency, JVM internals, NIO, testing, build tools',
       },
       {
         name: 'Python',
-        files: 18,
-        lines: '19.1K',
+        files: 26,
+        lines: '26.2K',
         href: '/docs/docs_python-notes/intro',
         tag: '3.12+',
-        desc: 'Deep reference — async, types, internals, decorators, generators, metaclasses',
+        desc: 'Deep reference — async, types, internals, decorators, descriptors, packaging, protocols',
       },
       {
         name: 'Rust',
@@ -194,8 +194,8 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 503;
-const totalLines = '312K';
+const totalFiles = 536;
+const totalLines = '341K';
 const totalSubjects = 19;
 
 export default function Home(): React.ReactNode {
