@@ -50,9 +50,9 @@ export default function NotFoundPage(): React.ReactNode {
           </p>
           <div className={styles.searchWrapper}>
             <SearchBar />
-            <Link to="/search" className={styles.searchLink}>
+            <a href="/search" className={styles.searchLink}>
               Advanced search
-            </Link>
+            </a>
           </div>
         </div>
       </header>

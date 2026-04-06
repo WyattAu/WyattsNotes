@@ -215,9 +215,9 @@ export default function Home(): React.ReactNode {
             <Link to="#subjects" className={styles.ctaButton}>
               Browse subjects
             </Link>
-            <Link to="/search" className={styles.ctaLink}>
+            <a href="/search" className={styles.ctaLink}>
               Search notes
-            </Link>
+            </a>
           </div>
 
           <div className={styles.stats}>
