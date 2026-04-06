@@ -41,11 +41,11 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'DSE',
-        files: 11,
-        lines: '5.4K',
+        files: 18,
+        lines: '11.5K',
         href: '/docs/docs_DSE-notes/intro',
         tag: 'HKDSE',
-        desc: 'Hong Kong Diploma of Secondary Education — exam-aligned reference',
+        desc: 'Hong Kong Diploma of Secondary Education — Physics, Chemistry, Biology, Economics, ICT',
       },
     ],
   },
@@ -123,11 +123,11 @@ const subjectGroups: SubjectGroup[] = [
       },
       {
         name: 'Networking',
-        files: 8,
-        lines: '6.4K',
+        files: 16,
+        lines: '13.2K',
         href: '/docs/docs_networking-notes/intro',
         tag: 'TCP/IP',
-        desc: 'Computer networking — OSI, TCP/UDP, DNS, HTTP, TLS, troubleshooting',
+        desc: 'Computer networking — OSI, TCP/UDP, DNS, HTTP/2/3, TLS internals, WebSockets, traffic analysis',
       },
       {
         name: 'Databases',
@@ -194,8 +194,8 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 488;
-const totalLines = '299K';
+const totalFiles = 503;
+const totalLines = '312K';
 const totalSubjects = 19;
 
 export default function Home(): React.ReactNode {
