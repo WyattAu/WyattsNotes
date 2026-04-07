@@ -68,12 +68,19 @@ kg, and $1\,\text{u} \cdot c^2 = 931.5$ MeV.
 <details>
 <summary>Example: Binding Energy of Helium-4</summary>
 Calculate the binding energy of $\prescript{4}{}{2}\text{He}$. Given:
-$m(\prescript{4}{}{2}\text{He}) = 4.00260$ u, $m_p = 1.00728$ u, $m_n = 1.00867$ u.
+$m(\prescript{4}{}{2}\text{He}) = 4.00260$ u, $m_H = 1.00783$ u (hydrogen atom mass), $m_n = 1.00867$ u.
 
-**Answer.** $\Delta m = 2(1.00728) + 2(1.00867) - 4.00260 = 2.01456 + 2.01734 - 4.00260 = 0.03030$
+**Answer.** $\Delta m = 2(1.00783) + 2(1.00867) - 4.00260 = 2.01566 + 2.01734 - 4.00260 = 0.03040$
 u.
 
-$E_b = 0.03030 \times 931.5 = 28.2$ MeV.
+$E_b = 0.03040 \times 931.5 = 28.3$ MeV.
+
+:::info
+When using atomic masses (which include electrons), use the hydrogen atom mass
+$m_H = 1.00783$ u rather than the proton mass $m_p = 1.00728$ u. The electron binding energies
+cancel out.
+:::
+
 </details>
 
 ## 2. Binding Energy per Nucleon
@@ -199,15 +206,16 @@ require calculation of energy released from mass defect.
 <details>
 <summary>Problem 1</summary>
 Calculate the mass defect of $\prescript{56}{}{26}\text{Fe}$. Given:
-$m(\prescript{56}{}{26}\text{Fe}) = 55.93493$ u, $m_p = 1.00728$ u, $m_n = 1.00867$ u.
+$m(\prescript{56}{}{26}\text{Fe}) = 55.93493$ u, $m_H = 1.00783$ u (hydrogen atom mass), $m_n = 1.00867$ u.
 
 **Answer.**
-$\Delta m = 26(1.00728) + 30(1.00867) - 55.93493 = 26.18928 + 30.26010 - 55.93493 = 0.51445$ u.
+$\Delta m = 26(1.00783) + 30(1.00867) - 55.93493 = 26.20358 + 30.26010 - 55.93493 = 0.52875$ u.
 
-$E_b = 0.51445 \times 931.5 = 479.2$ MeV. $E_b/A = 479.2/56 = 8.56$ MeV/nucleon.
+$E_b = 0.52875 \times 931.5 = 492.5$ MeV. $E_b/A = 492.5/56 = 8.79$ MeV/nucleon.
 
 <b>If you get this wrong, revise:</b>
 [Mass Defect and Binding Energy](#1-mass-defect-and-binding-energy)
+
 </details>
 
 <details>
@@ -221,6 +229,7 @@ after: $235 \times 8.40 = 1974$ MeV. Energy released $= 1974 - 1783.65 = 190.35$
 MeV.
 
 <b>If you get this wrong, revise:</b> [Binding Energy per Nucleon](#2-binding-energy-per-nucleon)
+
 </details>
 
 <details>
@@ -235,6 +244,7 @@ have higher $E_b/A$). In both cases, the total binding energy increases, and the
 released as energy.
 
 <b>If you get this wrong, revise:</b> [The Binding Energy Curve](#the-binding-energy-curve)
+
 </details>
 
 <details>
@@ -251,6 +261,7 @@ $= 2.23$ MeV.
 
 <b>If you get this wrong, revise:</b>
 [Mass Defect and Binding Energy](#1-mass-defect-and-binding-energy)
+
 </details>
 
 <details>
@@ -265,6 +276,7 @@ Number of fissions per second $= 500 \times 10^6 / 3.2 \times 10^{-11} = 1.56 \t
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Nuclear Fission](#3-nuclear-fission)
+
 </details>
 
 <details>
@@ -278,6 +290,7 @@ fissioning. By adjusting their depth, the number of neutrons available for fissi
 maintaining the reactor in a critical state (one fission per fission, on average).
 
 <b>If you get this wrong, revise:</b> [Chain Reaction](#chain-reaction)
+
 </details>
 
 <details>
@@ -295,6 +308,7 @@ $\Delta m = 4.02820 - 4.02470 = 0.00350$ u. $E = 0.00350 \times 931.5 = 3.26$ Me
 MeV. $\checkmark$
 
 <b>If you get this wrong, revise:</b> [Nuclear Fusion](#4-nuclear-fusion)
+
 </details>
 
 <details>
@@ -309,6 +323,7 @@ $\sim$MeV. Extremely high temperatures ($\sim 10^8$ K) are needed to give nuclei
 energy (via the Maxwell-Boltzmann distribution) to overcome this barrier.
 
 <b>If you get this wrong, revise:</b> [Conditions for Fusion](#conditions-for-fusion)
+
 </details>
 
 :::

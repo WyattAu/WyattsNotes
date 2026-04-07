@@ -102,6 +102,7 @@ magnetic field of 0.50 T. Find the radius of its circular path.
 **Answer.**
 $r = \frac{mv}{Bq} = \frac{1.67 \times 10^{-27} \times 3.0 \times 10^6}{0.50 \times 1.60 \times 10^{-19}} = \frac{5.01 \times 10^{-21}}{8.0 \times 10^{-20}} = 0.0626$
 m $= 6.26$ cm.
+
 </details>
 
 ## 3. Velocity Selector
@@ -207,6 +208,7 @@ N.
 
 <b>If you get this wrong, revise:</b>
 [Magnetic Force on a Current-Carrying Wire](#1-magnetic-force-on-a-current-carrying-wire)
+
 </details>
 
 <details>
@@ -220,6 +222,7 @@ m $= 14.2\,\mu$m.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
+
 </details>
 
 <details>
@@ -230,6 +233,7 @@ particles that pass through undeflected.
 **Answer.** $v = E/B = 6.0 \times 10^5 / 0.20 = 3.0 \times 10^6$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Velocity Selector](#3-velocity-selector)
+
 </details>
 
 <details>
@@ -241,6 +245,7 @@ uniformly from 0.50 T to 0.10 T in 0.05 s. Calculate the average induced e.m.f.
 $d(N\Phi)/dt = 200 \times 0.004 / 0.05 = 16$ V. $\mathcal{E} = 16$ V.
 
 <b>If you get this wrong, revise:</b> [Faraday's Law](#4-faradays-law-of-electromagnetic-induction)
+
 </details>
 
 <details>
@@ -254,6 +259,7 @@ twice the radius.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
+
 </details>
 
 <details>
@@ -264,6 +270,7 @@ Calculate the motional e.m.f. induced.
 **Answer.** $\mathcal{E} = Blv = 0.60 \times 0.50 \times 8.0 = 2.4$ V.
 
 <b>If you get this wrong, revise:</b> [Motional e.m.f.](#motional-emf)
+
 </details>
 
 <details>
@@ -277,6 +284,7 @@ $\mathcal{E}_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
 
 <b>If you get this wrong, revise:</b>
 [The Alternating Current Generator](#5-the-alternating-current-generator)
+
 </details>
 
 <details>
@@ -290,22 +298,24 @@ opposition means work must be done against the induced effects, and this work ap
 energy in the circuit.
 
 <b>If you get this wrong, revise:</b> [Lenz's Law](#lenzs-law)
+
 </details>
 
 <details>
 <summary>Problem 9</summary>
-An electron moves in a circle of radius 2.0 cm in a magnetic field of 0.30 T. Calculate its speed
+An electron moves in a circle of radius 1.0 mm in a magnetic field of 0.30 T. Calculate its speed
 and kinetic energy.
 
 **Answer.**
-$v = \frac{Ber}{m} = \frac{1.60 \times 10^{-19} \times 0.30 \times 0.020}{9.11 \times 10^{-31}} = \frac{9.6 \times 10^{-22}}{9.11 \times 10^{-31}} = 1.054 \times 10^9$
+$v = \frac{Ber}{m} = \frac{1.60 \times 10^{-19} \times 0.30 \times 0.001}{9.11 \times 10^{-31}} = \frac{4.8 \times 10^{-23}}{9.11 \times 10^{-31}} = 5.27 \times 10^7$
 m s$^{-1}$.
 
-$E_k = \frac{1}{2}mv^2 = \frac{1}{2} \times 9.11 \times 10^{-31} \times (1.054 \times 10^9)^2 = 5.06 \times 10^{-13}$
+$E_k = \frac{1}{2}mv^2 = \frac{1}{2} \times 9.11 \times 10^{-31} \times (5.27 \times 10^7)^2 = 1.27 \times 10^{-16}$
 J.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
+
 </details>
 
 <details>
@@ -322,6 +332,7 @@ flows anticlockwise when viewed from the magnet's side.
 
 <b>If you get this wrong, revise:</b> [Faraday's Law](#4-faradays-law-of-electromagnetic-induction)
 and [Lenz's Law](#lenzs-law)
+
 </details>
 
 :::

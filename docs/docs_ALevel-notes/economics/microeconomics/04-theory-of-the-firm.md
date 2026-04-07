@@ -248,6 +248,7 @@ $MR = 2 \Rightarrow Q = 15$, $P = 9.50$.
 
 With discrimination: revenue = $11 \times 9 + 8 \times 6 = 99 + 48 = 147$. Without:
 $9.50 \times 15 = 142.50$. Discrimination increases profit.
+
 </details>
 
 **Real-world examples of price discrimination:**
@@ -631,7 +632,7 @@ the output at which average total cost is minimised.
 
 <details>
 <summary>Hint</summary>
-(a) $MC = 20 - 10Q + Q^2$. Diminishing returns: $MC$ starts rising, i.e., $MC' = -10 + 2Q = 0 \Rightarrow Q = 5$. (b) $AVC = 20 - 5Q + Q^2/3$. Minimise: $AVC' = -5 + 2Q/3 = 0 \Rightarrow Q = 7.5$. (c) $ATC = 100/Q + 20 - 5Q + Q^2/3$. $ATC' = -100/Q^2 - 5 + 2Q/3 = 0$. Solve numerically: $Q \approx 7.82$.
+(a) $MC = 20 - 10Q + Q^2$. Diminishing returns: $MC$ starts rising, i.e., $MC' = -10 + 2Q = 0 \Rightarrow Q = 5$. (b) $AVC = 20 - 5Q + Q^2/3$. Minimise: $AVC' = -5 + 2Q/3 = 0 \Rightarrow Q = 7.5$. (c) $ATC = 100/Q + 20 - 5Q + Q^2/3$. $ATC' = -100/Q^2 - 5 + 2Q/3 = 0$. Solve numerically: $Q \approx 9.25$.
 </details>
 
 **Problem 2.** A perfectly competitive industry has market demand $Q_D = 500 - 10P$ and each firm
