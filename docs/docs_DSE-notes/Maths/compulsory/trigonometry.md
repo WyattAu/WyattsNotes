@@ -504,15 +504,17 @@ the bearing of $S$ from $B$ is $320^\circ$. Find the distance of $S$ from $A$.
 <details>
 <summary>Answer</summary>
 
-- The bearing of $B$ from $A$ is $090^\circ$, so $B$ lies due east of $A$. Place $A$ at the origin with
-  north pointing up; then $B$ is at $(5, 0)$.
+- The bearing of $B$ from $A$ is $090^\circ$, so $B$ lies due east of $A$. Place $A$ at the origin
+  with north pointing up; then $B$ is at $(5, 0)$.
 - The bearing of $S$ from $A$ is $050^\circ$, so the ray $AS$ makes $50^\circ$ with north (measured
-  clockwise), i.e., $40^\circ$ with the positive $x$-axis. The bearing of $S$ from $B$ is $320^\circ$,
-  so the ray $BS$ makes $360^\circ - 320^\circ = 40^\circ$ west of north, i.e., $130^\circ$ with the
-  positive $x$-axis.
-- The interior angle at $S$: the ray $SA$ points at bearing $230^\circ$ (back-bearing) and the ray $SB$
-  points at bearing $140^\circ$ (back-bearing). The angle $\angle ASB = 230^\circ - 140^\circ = 90^\circ$.
-- In $\triangle ABS$: $\angle BAS = 90^\circ - 50^\circ = 40^\circ$ (angle between the east direction and the ray $AS$).
+  clockwise), i.e., $40^\circ$ with the positive $x$-axis. The bearing of $S$ from $B$ is
+  $320^\circ$, so the ray $BS$ makes $360^\circ - 320^\circ = 40^\circ$ west of north, i.e.,
+  $130^\circ$ with the positive $x$-axis.
+- The interior angle at $S$: the ray $SA$ points at bearing $230^\circ$ (back-bearing) and the ray
+  $SB$ points at bearing $140^\circ$ (back-bearing). The angle
+  $\angle ASB = 230^\circ - 140^\circ = 90^\circ$.
+- In $\triangle ABS$: $\angle BAS = 90^\circ - 50^\circ = 40^\circ$ (angle between the east
+  direction and the ray $AS$).
 - $\angle ABS = 180^\circ - 40^\circ - 90^\circ = 50^\circ$.
 - Using the sine rule: $\frac{AS}{\sin 50^\circ} = \frac{5}{\sin 90^\circ} = 5$.
 - $AS = 5\sin 50^\circ \approx 3.83$ km.
@@ -523,11 +525,16 @@ $\frac{\sin\theta}{1 - \cos\theta} = \frac{1 + \cos\theta}{\sin\theta}$ for $\si
 <details>
 <summary>Answer</summary>
 
-- Starting from the LHS, multiply numerator and denominator by $(1 + \cos\theta)$:
-- $\frac{\sin\theta}{1 - \cos\theta} \cdot \frac{1 + \cos\theta}{1 + \cos\theta} = \frac{\sin\theta(1 + \cos\theta)}{1 - \cos^2\theta}$.
-- Since $1 - \cos^2\theta = \sin^2\theta$ (Pythagorean identity):
-- $= \frac{\sin\theta(1 + \cos\theta)}{\sin^2\theta} = \frac{1 + \cos\theta}{\sin\theta}$.
-- This equals the RHS, completing the proof.
+Starting from the LHS, multiply numerator and denominator by $(1 + \cos\theta)$:
+
+$\frac{\sin\theta}{1 - \cos\theta} \cdot \frac{1 + \cos\theta}{1 + \cos\theta} = \frac{\sin\theta(1 + \cos\theta)}{1 - \cos^2\theta}$.
+
+Since $1 - \cos^2\theta = \sin^2\theta$ (Pythagorean identity):
+
+$= \frac{\sin\theta(1 + \cos\theta)}{\sin^2\theta} = \frac{1 + \cos\theta}{\sin\theta}$.
+
+This equals the RHS, completing the proof.
+
 </details>
 
 8. **Question:** A pyramid has a square base $ABCD$ of side $6$ cm and vertex $V$. The slant edges
@@ -556,12 +563,18 @@ $x$-intercepts in this interval.
 - Maximum $= 2(1) + 1 = 3$, minimum $= 2(-1) + 1 = -1$.
 - For $x$-intercepts:
   $2\sin\left(x - \frac{\pi}{4}\right) + 1 = 0 \implies \sin\left(x - \frac{\pi}{4}\right) = -\frac{1}{2}$.
-- Let $u = x - \frac{\pi}{4}$. Since $x \in [0, 2\pi]$, we have $u \in \left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$.
-- General solutions for $\sin u = -\frac{1}{2}$: $u = \frac{7\pi}{6} + 2k\pi$ or $u = \frac{11\pi}{6} + 2k\pi$.
-- Also $u = -\frac{\pi}{6}$ (which equals $\frac{11\pi}{6} - 2\pi$) lies in $\left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$. ✓
-- $u = \frac{7\pi}{6}$ lies in the interval. ✓
-- $u = \frac{11\pi}{6}$ lies in the interval. ✓
-- $x = u + \frac{\pi}{4}$, so $x = -\frac{\pi}{6} + \frac{\pi}{4} = \frac{\pi}{12}$, $x = \frac{7\pi}{6} + \frac{\pi}{4} = \frac{17\pi}{12}$, $x = \frac{11\pi}{6} + \frac{\pi}{4} = \frac{25\pi}{12}$. Since $\frac{25\pi}{12} \gt 2\pi$, only two $x$-intercepts lie in $[0, 2\pi]$.
+- Let $u = x - \frac{\pi}{4}$. Since $x \in [0, 2\pi]$, we have
+  $u \in \left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$.
+- General solutions for $\sin u = -\frac{1}{2}$: $u = \frac{7\pi}{6} + 2k\pi$ or
+  $u = \frac{11\pi}{6} + 2k\pi$.
+- Also $u = -\frac{\pi}{6}$ (which equals $\frac{11\pi}{6} - 2\pi$) lies in
+  $\left[-\frac{\pi}{4}, \frac{7\pi}{4}\right]$.
+- $u = \frac{7\pi}{6}$ lies in the interval.
+- $u = \frac{11\pi}{6}$ lies in the interval.
+- $x = u + \frac{\pi}{4}$, so $x = -\frac{\pi}{6} + \frac{\pi}{4} = \frac{\pi}{12}$,
+  $x = \frac{7\pi}{6} + \frac{\pi}{4} = \frac{17\pi}{12}$,
+  $x = \frac{11\pi}{6} + \frac{\pi}{4} = \frac{25\pi}{12}$. Since $\frac{25\pi}{12} \gt 2\pi$, only
+  two $x$-intercepts lie in $[0, 2\pi]$.
 - $x$-intercepts: $\left(\frac{\pi}{12}, 0\right)$ and $\left(\frac{17\pi}{12}, 0\right)$.
 </details>
 
