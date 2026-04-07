@@ -12,27 +12,29 @@ slug: simple-harmonic-motion
 
 :::info
 
-Standard level and higher level: 3 hours
-Students should understand:
--conditions that lead to simple harmonic motion
+Standard level and higher level: 3 hours Students should understand: -conditions that lead to simple
+harmonic motion
 
 - the defining equation of simple harmonic motion as given by a = -$\omega^2 x$
-- a particle undergoing simple harmonic motion can be described using time period $T$, frequency $f$, angular frequency $\omega$, amplitude, equilibrium position, and displacement
-- the time period in terms of frequency of oscillation and angular frequency as given by $T = 1/f$ = $2\pi \omega$
+- a particle undergoing simple harmonic motion can be described using time period $T$, frequency
+  $f$, angular frequency $\omega$, amplitude, equilibrium position, and displacement
+- the time period in terms of frequency of oscillation and angular frequency as given by
+  $T = \frac{1}{f} = \frac{2\pi}{\omega}$
 - the time period of a mass-spring system as given by $T = 2\pi \sqrt{\frac mk}$
 - the time period of a simple pendulum as given by $T = 2\pi\ sqrt{\frac lg}$
-- a qualitative approach to energy changes during one cycle of an oscillation.
-  -dditional higher level: 4 hours
-  -tudents should understand:
+- a qualitative approach to energy changes during one cycle of an oscillation. -dditional higher
+  level: 4 hours -tudents should understand:
 - that a particle undergoing simple harmonic motion can be described using phase angle
 - that problems can be solved using the equations for simple harmonic motion as given by
-  $x = x_0 \sin (\omega t + \Phi) >v = \omega x_0 cos (\omega t + \Phi ) >v = \pm \omega x_0 2 -x 2 >E_T = \frac{12}{m} \omega 2 x0 2 > E_P = \frac{12}{m} \omega 2 \times 2 .$
+  $x = x_0 \sin(\omega t + \Phi), \quad v = \omega x_0 \cos(\omega t + \Phi), \quad v = \pm\omega\sqrt{x_0^2 - x^2}, \quad E_T = \frac{1}{2}m\omega^2 x_0^2, \quad E_P = \frac{1}{2}m\omega^2 x^2.$
 
 :::
 
 ## Fundamental Principles
 
-Simple Harmonic Motion (SHM) is a periodic oscillation about a stable equilibrium position, characterized by a restoring force $F$ directly proportional to the displacement $x$ from equilibrium and directed oppositely to the displacement. This yields Newton's second law:
+Simple Harmonic Motion (SHM) is a periodic oscillation about a stable equilibrium position,
+characterized by a restoring force $F$ directly proportional to the displacement $x$ from
+equilibrium and directed oppositely to the displacement. This yields Newton's second law:
 
 $$
 \begin{aligned}
@@ -43,7 +45,8 @@ $$
 
 $$
 
-where $k > 0$ is the stiffness constant (e.g., spring constant). Rearranged as the equation of motion:
+where $k > 0$ is the stiffness constant (e.g., spring constant). Rearranged as the equation of
+motion:
 
 $$
 \frac{d^2x}{dt^2} + \omega^2 x = 0, \quad \omega = \sqrt{\frac{k}{m}}. \tag{1}
@@ -71,7 +74,8 @@ $$
 x(t) = A \cos(\omega t + \phi_0), \tag{2}
 $$
 
-where $\phi_0$ is the initial phase angle. Velocity $v$ and acceleration $a$ follow by differentiation:
+where $\phi_0$ is the initial phase angle. Velocity $v$ and acceleration $a$ follow by
+differentiation:
 
 $$
 v(t) = \frac{dx}{dt} = -\omega A \sin(\omega t + \phi_0), \tag{3}
@@ -130,7 +134,8 @@ Energy Oscillations:
 
 ### Simple Pendulum
 
-Description: Point mass $m$ suspended on a massless string of length $L$ in gravitational field $g$.  
+Description: Point mass $m$ suspended on a massless string of length $L$ in gravitational field
+$g$.  
 Equation of Motion:  
 For small $\theta$ ($\sin\theta \approx \theta$):
 

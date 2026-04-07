@@ -150,7 +150,7 @@ This is written in the formula booklet with $d = |\bm{r}|$:
 
 $$
 \begin{aligned}
-    E = k\frac{F}{d}
+    E = \frac{F}{q} = k\frac{Q}{d^2}
 \end{aligned}
 $$
 

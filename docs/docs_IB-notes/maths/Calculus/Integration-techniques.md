@@ -496,7 +496,7 @@ $$
 $$
 
 $$
-= \frac{5}{9} + \left|-\frac{4}{3}\right| + \frac{56}{9} = \frac{5}{9} + \frac{12}{9} + \frac{56}{9} = \frac{73}{9}\text{ m}
+= \frac{4}{3} + \left|-\frac{4}{3}\right| + \frac{20}{3} = \frac{4}{3} + \frac{4}{3} + \frac{20}{3} = \frac{28}{3}\text{ m}
 $$
 
 :::

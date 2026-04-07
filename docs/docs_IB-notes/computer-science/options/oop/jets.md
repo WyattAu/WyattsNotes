@@ -33,9 +33,9 @@ students to present OOP concepts
 ## Operators Permitted
 
 - Arithmetic
+  - `+`
   - `-`
-  - `-`
-  - `-`
+  - `*`
   - `/`
   - `%`
 - Relational
@@ -59,15 +59,15 @@ built-in as standard data types of programming languages, in JETS, these are: | 
 size | range | Standard | Default init value | | :---------------- |
 :---------------------------------------: | :--------------------------------------------------: |
 :------------------------------------------------------: | :------------------: | | `byte` | 8 bits
-| $-128\le n \le 127$ | unsigned | `0` | | `int` | 32 bits | $-2^{31}\le n \le 2^{32}$ | signed |
-`0` | | `long` | 64 bits | $-2^{63}\le n \le 2^{63}$ | signed | `0` | | `double` | 64 bits |
-$-4.9\times 10^{324} \le n \le 4.9\times 10^{324}$ | IEEE 754-1984 (double precision binary
+| $-128\le n \le 127$ | signed | `0` | | `int` | 32 bits | $-2^{31}\le n \le 2^{31}-1$ | signed |
+`0` | | `long` | 64 bits | $-2^{63}\le n \le 2^{63}-1$ | signed | `0` | | `double` | 64 bits |
+$-1.8\times 10^{308} \le n \le 1.8\times 10^{308}$ | IEEE 754-1984 (double precision binary
 floating-point) | `0.0d` | | `char` | 16 bits | $0 \le n \le 2^{16} -1$ | UTF-16 | `'\u0000'` `'a'`
 | | `boolean` | 1 bit (logical) 1 byte (in-practice) | `false` |
 
 ```java
-byte b = 120 // bytes is a 8 bit type with a range of -128<b<127, unsigned
-int i = 1243 // int is a 32 bit type have a range of -2^31<i<2^31-1, signed
+byte b = 120 // byte is an 8-bit signed type with range -128 to 127
+int i = 1243 // int is a 32-bit signed type with range -2^31 to 2^31-1
 long
 double
 char

@@ -19,7 +19,7 @@ sidebar_position: 1
 
 ## Paper 1 — Written Response
 
-Paper 1 is a **2-hour** examination (SL) or **2 hours 10 minutes** (HL) that tests knowledge and
+Paper 1 is a **2-hour** examination (SL) or **2 hours 15 minutes** (HL) that tests knowledge and
 understanding of the core syllabus.
 
 ### Structure
@@ -29,7 +29,7 @@ understanding of the core syllabus.
 | Section A           | Short-answer questions      | Short-answer questions         |
 | Section B           | Extended-response questions | Extended-response questions    |
 | Section C (HL only) | n/a                         | Extended-response on HL topics |
-| Total marks         | 45                          | 70                             |
+| Total marks         | 80                          | 100                            |
 
 ### What examiners look for
 
@@ -59,7 +59,7 @@ understanding of the core syllabus.
 
 ## Paper 2 — Problem Solving
 
-Paper 2 is a **1-hour** examination (SL) or **1 hour 20 minutes** (HL) focused on applying
+Paper 2 is a **1-hour** examination (SL) or **1 hour 45 minutes** (HL) focused on applying
 computational thinking to unseen problems.
 
 ### Structure
@@ -68,7 +68,7 @@ computational thinking to unseen problems.
 | ------------------- | --------------------------- | --------------------------- |
 | Section A           | Scenario-based short answer | Scenario-based short answer |
 | Section B (HL only) | n/a                         | HL-only scenario question   |
-| Total marks         | 45                          | 65                          |
+| Total marks         | 45                          | 70                          |
 
 ### Key skills tested
 

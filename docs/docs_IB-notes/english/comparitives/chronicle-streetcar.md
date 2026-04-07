@@ -66,12 +66,12 @@ slug: chronicle-streetcar-comparison
     - A heavenly place where heroes are sent in Greek mythology
 - Chronicle explores the lack of fatalism by character constructs that accept his murder as
   predetermined.
-  - Both the title and the first chapter mentions the death of Santiago Nassar
+  - Both the title and the first chapter mentions the death of Santiago Nasar
 
 ### Postcolonialism
 
-- Streetcar explore postcolonial tensions between traditional values (Belle Reeves) and modern
-  America (Elysian Fields Avenue in New Orleans)
+- Streetcar explore postcolonial tensions between traditional values (Belle Reve) and modern America
+  (Elysian Fields Avenue in New Orleans)
 - Chronicle explores the legacy honor codes and machismo from colonial legacies
 
 ### Reader-Response Theory

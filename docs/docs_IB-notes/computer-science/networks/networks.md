@@ -89,9 +89,9 @@ A WAP is a connection point that acts as a hub with wireless connection
 
 ### Open System Interconnection (OSI) model
 
-The OSI model is a networking standard established by International Standards Organization (ISO) to
-formalize communication across multiple devices. OSI is established by 7 layers which specifies
-standards for physical communication and virtual communication, this include:
+The OSI model is a networking standard established by the International Organization for
+Standardization (ISO) to formalize communication across multiple devices. OSI is established by 7
+layers which specifies standards for physical communication and virtual communication, this include:
 
 - Physical communication
   - Physical layer

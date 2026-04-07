@@ -77,7 +77,7 @@ Where for monatomic ideal gas, adiabatic process satisfy the condition:
 
 $$
 \begin{aligned}
-    \Delta PV^{\frac{5}{3}} = 0
+    PV^{\frac{5}{3}} = \text{constant}
 \end{aligned}
 $$
 
@@ -368,7 +368,8 @@ where $Q$ is the heat transferred reversibly and $T$ is the absolute temperature
 
 - Entropy increases when heat is added to a system ($Q \gt 0 \Rightarrow \Delta S \gt 0$).
 - Entropy decreases when heat is removed ($Q \lt 0 \Rightarrow \Delta S \lt 0$).
-- For an adiabatic process ($Q = 0$), $\Delta S = 0$ (isentropic).
+- For a **reversible** adiabatic process ($Q = 0$), $\Delta S = 0$ (isentropic). An irreversible
+  adiabatic process has $\Delta S > 0$.
 
 ### Microscopic Definition
 

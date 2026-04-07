@@ -15,7 +15,7 @@ slug: spanish-civil-war-chinese-civil-war
 After the collapse of Qing Dynasty (1912), there were a period of warlordism, during which
 Nationalist Kuomintang (KMT) under Chiang Kai-shek took control of most of China. Communist Party of
 China (CCP) established in 1921 had conflicting ideologies with KMT and led to a the Chinese Civil
-War. This conflict had two major phases, first from 1927 to 1937, second being 1946 to 1946, with
+War. This conflict had two major phases, first from 1927 to 1937, second being 1946 to 1949, with
 the second Sino-Japanese War in between.
 
 ### Spanish Civil War

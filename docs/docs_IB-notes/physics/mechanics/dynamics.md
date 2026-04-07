@@ -483,9 +483,10 @@ $$
 
 Before: $\dfrac{1}{2}(60)(9) = 270\text{ J}$.
 
-After: $\dfrac{1}{2}(140)(1.66) = 116.2\text{ J}$.
+After:
+$\dfrac{1}{2}(140)\left(\dfrac{9}{7}\right)^2 = \dfrac{1}{2}(140)\left(\dfrac{81}{49}\right) = 115.7\text{ J}$.
 
-Lost: $270 - 116.2 = 153.8\text{ J}$.
+Lost: $270 - 115.7 = 154.3\text{ J}$.
 
 ### Question 3 (Paper 2 style)
 

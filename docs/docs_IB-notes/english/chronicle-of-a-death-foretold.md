@@ -10,7 +10,7 @@ slug: chronicle-death-foretold
 
 ## Author Context
 
-Garcia Garcia Marquez is a leftist and critic of authoritarianism, with frequent advocates for
+Gabriel Garcia Marquez is a leftist and critic of authoritarianism, with frequent advocates for
 social justice and progressive change. Most of his work align with socialist ideology, emphasizing
 on dismantling of oppressive structures (e.g., patriarchy, class hierarchies), as well as the need
 for collective accountability.
@@ -101,7 +101,7 @@ that interacts directly with the story. The narrator minimizes the discussions o
 reviews that:
 
 - He is a good friend of Santiago
-- At the time of murder he was in love with Maria Alejendrina Cervantes
+- At the time of murder he was in love with Maria Alejandrina Cervantes
 - He married Mercedes Barcha
 - Proposed to Mercedes Barcha when she is in primary school
   - > "I had promised marriage to Mercedes Barcha as soon as she finished primary school, just as
