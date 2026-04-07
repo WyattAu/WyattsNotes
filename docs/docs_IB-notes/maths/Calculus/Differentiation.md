@@ -628,7 +628,7 @@ $$
 h = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \text{ cm}
 $$
 
-The optimal can has $h = 2r$, i.e., height equals diameter.
+The optimal open-top can has $h = r$, i.e., height equals radius.
 
 :::
 

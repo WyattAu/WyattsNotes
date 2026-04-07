@@ -1056,7 +1056,3 @@ if [ ${#ERRORS[@]} -gt 0 ]; then
   printf "%s\n" "${ERRORS[@]}" | mail -s "BACKUP HEALTH ALERT" "$ALERT_EMAIL"
 fi
 ```
-
-:::
-
-:::

@@ -11,11 +11,14 @@ slug: merging
 
 ## The Merge Operation
 
-Merging is the process of combining the changes from one branch into another. Git's merge algorithm is one of its most sophisticated features — it can automatically resolve many cases where both branches have modified different files or different parts of the same file.
+Merging is the process of combining the changes from one branch into another. Git's merge algorithm
+is one of its most sophisticated features — it can automatically resolve many cases where both
+branches have modified different files or different parts of the same file.
 
 ### What `git merge` Actually Does
 
-A merge takes two (or more) commit pointers — usually branch tips — and produces a new **merge commit** that has both as parents:
+A merge takes two (or more) commit pointers — usually branch tips — and produces a new **merge
+commit** that has both as parents:
 
 ```bash
 $ git switch main
@@ -33,7 +36,8 @@ gitGraph
     merge feature-auth id: "F (merge commit)"
 ```
 
-The merge commit `F` has two parents: `D` (main's previous position) and `E` (feature-auth's tip). Its tree is the result of combining the changes from both branches.
+The merge commit `F` has two parents: `D` (main's previous position) and `E` (feature-auth's tip).
+Its tree is the result of combining the changes from both branches.
 
 ### The Three-Way Merge Algorithm
 
@@ -70,11 +74,14 @@ The algorithm works **file by file, hunk by hunk**:
 | `x`  | `x`  | `y`    | `y`          | Only they changed — take theirs                       |
 | `x`  | `y`  | `z`    | **Conflict** | Both changed differently — manual resolution required |
 
-The critical case is the last row: when both branches modify the same region of the same file. This is a **merge conflict**.
+The critical case is the last row: when both branches modify the same region of the same file. This
+is a **merge conflict**.
 
 ### Finding the Common Ancestor
 
-Git finds the base commit by computing the **lowest common ancestor** (LCA) of the two branch tips in the commit DAG. This is not trivial when the history contains multiple merge bases (criss-cross merges):
+Git finds the base commit by computing the **lowest common ancestor** (LCA) of the two branch tips
+in the commit DAG. This is not trivial when the history contains multiple merge bases (criss-cross
+merges):
 
 ```mermaid
 gitGraph
@@ -92,11 +99,15 @@ gitGraph
     commit id: "G"
 ```
 
-In criss-cross situations like this, there are **two** possible merge bases (`B` and `C`). Git's default recursive strategy recursively merges these bases first to create a virtual base, then performs the three-way merge against it.
+In criss-cross situations like this, there are **two** possible merge bases (`B` and `C`). Git's
+default recursive strategy recursively merges these bases first to create a virtual base, then
+performs the three-way merge against it.
 
 ## Fast-Forward Merges
 
-When the current branch has no new commits since the branch point (i.e., the current branch is an ancestor of the branch being merged), Git can perform a **fast-forward** merge. This simply moves the branch pointer forward — no merge commit is created.
+When the current branch has no new commits since the branch point (i.e., the current branch is an
+ancestor of the branch being merged), Git can perform a **fast-forward** merge. This simply moves
+the branch pointer forward — no merge commit is created.
 
 ```mermaid
 gitGraph
@@ -120,7 +131,8 @@ Fast-forward
 
 ### Disabling Fast-Forward
 
-Sometimes you want a merge commit even when a fast-forward is possible — to preserve a record of the merge event:
+Sometimes you want a merge commit even when a fast-forward is possible — to preserve a record of the
+merge event:
 
 ```bash
 $ git merge --no-ff feature-auth
@@ -137,11 +149,14 @@ gitGraph
     merge feature id: "E (--no-ff)" noff
 ```
 
-This is common in release workflows where the merge commit serves as a "release marker" that can be easily identified in the history.
+This is common in release workflows where the merge commit serves as a "release marker" that can be
+easily identified in the history.
 
 :::tip
 
-Use `--no-ff` when merging feature branches into `main` to preserve the branch topology. This makes it easy to see when a feature was merged, revert the entire feature with one command (`git revert -m 1 <merge-commit>`), and understand the project history.
+Use `--no-ff` when merging feature branches into `main` to preserve the branch topology. This makes
+it easy to see when a feature was merged, revert the entire feature with one command
+(`git revert -m 1 <merge-commit>`), and understand the project history.
 
 :::
 
@@ -152,18 +167,20 @@ Git supports several merge strategies, selectable with `-s`:
 | Strategy                       | Description                                                              | When to Use                                          |
 | ------------------------------ | ------------------------------------------------------------------------ | ---------------------------------------------------- |
 | `recursive` (default)          | Three-way merge with recursive base resolution                           | General purpose, handles criss-cross merges          |
-| `ort` (new default, Git 2.33+) | Modern rewrite of recursive with better conflict markers and performance | General purpose (replacing recursive)                |
+| `ort` (new default, Git 2.34+) | Modern rewrite of recursive with better conflict markers and performance | General purpose (replacing recursive)                |
 | `resolve`                      | Simple three-way merge with one base                                     | Simple histories without criss-cross merges          |
 | `octopus`                      | Merge more than two branches at once                                     | Very rare; most merge tools handle only two          |
 | `ours`                         | Discard all changes from the other branch, keep ours                     | Rare; usually `git merge -s ours` is an anti-pattern |
 | `subtree`                      | Adjust subtree merge paths                                               | When managing subtree merges                         |
 
-### The `ort` Strategy (Git 2.33+)
+### The `ort` Strategy (Git 2.34+)
 
-The `ort` ("Ostensibly Recursive's Twin") strategy is a from-scratch rewrite of the `recursive` strategy. It produces identical merge results but with significant improvements:
+The `ort` ("Ostensibly Recursive's Twin") strategy is a from-scratch rewrite of the `recursive`
+strategy. It produces identical merge results but with significant improvements:
 
 - **Performance**: $2\times$–$10\times$ faster on large repositories (Chromium, Android).
-- **Conflict markers**: Clearer conflict markers with section headers (`<<<<<<< HEAD`, `=======`, `>>>>>>> branch`).
+- **Conflict markers**: Clearer conflict markers with section headers (`<<<<<<< HEAD`, `=======`,
+  `>>>>>>> branch`).
 - **Rename detection**: More accurate rename detection.
 - **Memory usage**: Lower peak memory consumption.
 
@@ -176,7 +193,8 @@ $ git merge -s ort feature-auth
 
 ### What a Conflict Looks Like
 
-When both branches modify the same region of a file, Git cannot automatically resolve the conflict. It marks the conflicted regions in the file:
+When both branches modify the same region of a file, Git cannot automatically resolve the conflict.
+It marks the conflicted regions in the file:
 
 ```
 <<<<<<< HEAD
@@ -261,7 +279,8 @@ $ git config --global merge.tool vscode
 $ git config --global mergetool.vscode.cmd 'code --wait $MERGED'
 ```
 
-Popular options: `meld` (Linux), `vscode` (cross-platform), `kdiff3` (cross-platform), `opendiff` (macOS).
+Popular options: `meld` (Linux), `vscode` (cross-platform), `kdiff3` (cross-platform), `opendiff`
+(macOS).
 
 :::
 
@@ -280,7 +299,8 @@ gitGraph
     merge feature id: "E (merge commit)"
 ```
 
-**Merge**: Preserves the exact history. The DAG shows that `C` and `D` were developed in parallel. Non-linear history.
+**Merge**: Preserves the exact history. The DAG shows that `C` and `D` were developed in parallel.
+Non-linear history.
 
 ```mermaid
 gitGraph
@@ -290,7 +310,8 @@ gitGraph
     commit id: "D (rebased)"
 ```
 
-**Rebase**: Rewrites history to create a linear sequence. The original commits `C` and `D` are replaced by new commits `C'` and `D'` with different hashes.
+**Rebase**: Rewrites history to create a linear sequence. The original commits `C` and `D` are
+replaced by new commits `C'` and `D'` with different hashes.
 
 See [Rebasing](./03-rebasing.md) for the complete treatment.
 
@@ -298,7 +319,8 @@ See [Rebasing](./03-rebasing.md) for the complete treatment.
 
 ### 1. Merge Frequently
 
-The longer you wait between merges, the more likely conflicts become, and the harder they are to resolve. A good practice is to merge `main` into your feature branch daily:
+The longer you wait between merges, the more likely conflicts become, and the harder they are to
+resolve. A good practice is to merge `main` into your feature branch daily:
 
 ```bash
 $ git switch feature-auth
@@ -313,7 +335,8 @@ $ git rebase main
 
 ### 2. Keep Feature Branches Short-Lived
 
-Long-lived branches accumulate conflicts. A feature branch should ideally exist for no more than a few days. If a feature is large, break it into smaller, independently mergeable pieces.
+Long-lived branches accumulate conflicts. A feature branch should ideally exist for no more than a
+few days. If a feature is large, break it into smaller, independently mergeable pieces.
 
 ### 3. Use `--no-ff` for Feature Merges
 
@@ -321,7 +344,8 @@ Long-lived branches accumulate conflicts. A feature branch should ideally exist 
 $ git merge --no-ff feature-auth
 ```
 
-This creates a merge commit even when a fast-forward is possible, preserving the branch topology and making the feature's scope visible in the history.
+This creates a merge commit even when a fast-forward is possible, preserving the branch topology and
+making the feature's scope visible in the history.
 
 ### 4. Test Before Merging
 

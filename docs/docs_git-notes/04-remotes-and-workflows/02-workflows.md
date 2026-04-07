@@ -12,7 +12,9 @@ slug: workflows
 
 ## Choosing a Branching Strategy
 
-A branching strategy defines **when to create branches, how long they live, how they integrate, and who can modify which branches**. There is no universal "best" strategy — the right choice depends on team size, release cadence, deployment model, and risk tolerance.
+A branching strategy defines **when to create branches, how long they live, how they integrate, and
+who can modify which branches**. There is no universal "best" strategy — the right choice depends on
+team size, release cadence, deployment model, and risk tolerance.
 
 This guide covers the most widely-used strategies, their trade-offs, and when to use each.
 
@@ -20,7 +22,8 @@ This guide covers the most widely-used strategies, their trade-offs, and when to
 
 ### Concept
 
-All developers commit to a single shared branch (typically `main`). Feature branches are extremely short-lived (hours, not days). Integration is continuous — every commit is potentially deployable.
+All developers commit to a single shared branch (typically `main`). Feature branches are extremely
+short-lived (hours, not days). Integration is continuous — every commit is potentially deployable.
 
 ```mermaid
 gitGraph
@@ -67,7 +70,8 @@ gitGraph
 
 :::info
 
-Google, Meta, and many other large tech companies use trunk-based development internally. It scales well with proper tooling (Bazel for builds, automated canary deployments).
+Google, Meta, and many other large tech companies use trunk-based development internally. It scales
+well with proper tooling (Bazel for builds, automated canary deployments).
 
 :::
 
@@ -75,7 +79,8 @@ Google, Meta, and many other large tech companies use trunk-based development in
 
 ### Concept
 
-A simplified version of trunk-based development with one long-lived branch (`main`) and short-lived feature branches. Every change requires a pull request.
+A simplified version of trunk-based development with one long-lived branch (`main`) and short-lived
+feature branches. Every change requires a pull request.
 
 ```mermaid
 gitGraph
@@ -88,7 +93,7 @@ gitGraph
     checkout main
     commit id: "E"
     checkout feature-auth
-    merge main id: "F (rebase)"
+    merge main id: "F (merge)"
     checkout main
     merge feature-auth id: "G (merge commit)"
     commit id: "H"
@@ -122,7 +127,8 @@ gitGraph
 
 ### Concept
 
-A structured branching model with two long-lived branches (`main` and `develop`) and several short-lived branch types. Originally published by Vincent Driessen in 2010.
+A structured branching model with two long-lived branches (`main` and `develop`) and several
+short-lived branch types. Originally published by Vincent Driessen in 2010.
 
 ```mermaid
 flowchart TD
@@ -222,7 +228,9 @@ $ git branch -d hotfix/fix-crash
 
 :::warning
 
-Git Flow is often overused. For most modern software projects, GitHub Flow or trunk-based development is simpler and more effective. Only adopt Git Flow if you genuinely need release branches and hotfix workflows.
+Git Flow is often overused. For most modern software projects, GitHub Flow or trunk-based
+development is simpler and more effective. Only adopt Git Flow if you genuinely need release
+branches and hotfix workflows.
 
 :::
 
@@ -230,7 +238,8 @@ Git Flow is often overused. For most modern software projects, GitHub Flow or tr
 
 ### Concept
 
-Each developer has their own fork (personal copy) of the canonical repository. Changes flow from fork → pull request → canonical repository.
+Each developer has their own fork (personal copy) of the canonical repository. Changes flow from
+fork → pull request → canonical repository.
 
 ```mermaid
 flowchart LR
@@ -274,7 +283,8 @@ flowchart LR
 
 ## Commit Message Conventions
 
-Regardless of branching strategy, consistent commit messages are essential. The most widely-used convention is **Conventional Commits**:
+Regardless of branching strategy, consistent commit messages are essential. The most widely-used
+convention is **Conventional Commits**:
 
 ```
 <type>(<scope>): <description>
@@ -317,7 +327,8 @@ accepting empty input. Update callers to handle ParseError.
 
 :::tip
 
-Configure `commitlint` with `@commitlint/config-conventional` to enforce commit message conventions in CI:
+Configure `commitlint` with `@commitlint/config-conventional` to enforce commit message conventions
+in CI:
 
 ```bash
 npm install --save-dev @commitlint/cli @commitlint/config-conventional

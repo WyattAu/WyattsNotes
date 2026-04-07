@@ -202,7 +202,7 @@ that manage their own I/O (MySQL, PostgreSQL), delayed allocation should be disa
 
 ```bash
 # Disable delayed allocation for database volumes
-mount -o nodataalloc /dev/sdb1 /var/lib/mysql
+mount -o nodelalloc /dev/sdb1 /var/lib/mysql
 # or in /etc/fstab:
 # /dev/sdb1  /var/lib/mysql  ext4  defaults,nodelalloc  0 2
 ```
@@ -473,16 +473,15 @@ sequenceDiagram
 
 Common FUSE file systems:
 
-| File System  | Purpose                                       |
-| ------------ | --------------------------------------------- |
-| `sshfs`      | Mount remote directories over SSH             |
-| `ntfs-3g`    | Read/write NTFS support                       |
-| `bindfs`     | Remount with altered permissions              |
-| `encfs`      | Encrypted file system layer                   |
-| `rclone`     | Mount cloud storage (S3, GCS, etc.)           |
-| `overlayfs`  | Layered file system (used by Docker, Flatpak) |
-| `fuseiso`    | Mount ISO images                              |
-| `exfat-fuse` | Read/write exFAT support                      |
+| File System  | Purpose                             |
+| ------------ | ----------------------------------- |
+| `sshfs`      | Mount remote directories over SSH   |
+| `ntfs-3g`    | Read/write NTFS support             |
+| `bindfs`     | Remount with altered permissions    |
+| `encfs`      | Encrypted file system layer         |
+| `rclone`     | Mount cloud storage (S3, GCS, etc.) |
+| `fuseiso`    | Mount ISO images                    |
+| `exfat-fuse` | Read/write exFAT support            |
 
 ```bash
 # Mount remote directory via SSH

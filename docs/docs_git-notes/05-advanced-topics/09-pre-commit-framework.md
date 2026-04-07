@@ -91,7 +91,7 @@ run it after cloning. Document this in the README and optionally automate it:
 .PHONY: setup
 setup:
     pip install pre-commit
-    pre-commit install --hook-types
+pre-commit install --hook-type pre-commit --hook-type commit-msg
 ```
 
 ## Configuration File

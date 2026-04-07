@@ -503,8 +503,7 @@ zpool create -o ashift=12 -O compression=lz4 -O atime=off tank \
 ```
 
 Mirror pools provide the best random I/O performance because every vdev can serve reads
-independently. A 6-disk mirror pool (3 mirror vdevs) can serve 3× the random IOPS of a single
-disk.
+independently. A 6-disk mirror pool (3 mirror vdevs) can serve 3× the random IOPS of a single disk.
 
 ### RAIDZ2 Pool Design
 
@@ -525,8 +524,8 @@ zpool create -o ashift=12 -O compression=lz4 -O atime=off tank \
 
 ### dRAID (Declustered RAID)
 
-dRAID is a ZFS feature that distributes spare capacity across all drives in the pool, rather
-than dedicating entire drives as hot spares:
+dRAID is a ZFS feature that distributes spare capacity across all drives in the pool, rather than
+dedicating entire drives as hot spares:
 
 ```bash
 # dRAID2 with distributed spares
@@ -557,35 +556,35 @@ zpool create -o ashift=12 tank \
 zfs create -o special_small_blocks=32K tank/data
 ```
 
-This stores metadata (directories, file attributes) on the fast NVMe vdev while data resides on
-the HDD vdev, dramatically improving directory listing performance.
+This stores metadata (directories, file attributes) on the fast NVMe vdev while data resides on the
+HDD vdev, dramatically improving directory listing performance.
 
 ## ZFS Compression Analysis
 
 ### Compression Ratio by Data Type
 
-| Data Type | lz4 Ratio | zstd-3 Ratio | Compressible |
-|-----------|-----------|-------------|-------------|
-| Text files (source code, docs) | 2.0–3.0x | 2.5–4.0x | Yes |
-| JSON, XML, CSV | 3.0–5.0x | 4.0–7.0x | Yes |
-| Virtual machine images | 1.3–2.0x | 1.5–2.5x | Partially |
-| Databases (relational) | 1.2–1.5x | 1.3–1.8x | Partially |
-| Encrypted data | 1.0x | 1.0x | No |
-| Media (JPEG, MP4, MKV) | 1.0x | 1.0x | No |
-| Compressed archives (ZIP, tar.gz) | 1.0x | 1.0x | No |
-| Logs (server, application) | 5.0–10.0x | 8.0–15.0x | Yes |
+| Data Type                         | lz4 Ratio | zstd-3 Ratio | Compressible |
+| --------------------------------- | --------- | ------------ | ------------ |
+| Text files (source code, docs)    | 2.0–3.0x  | 2.5–4.0x     | Yes          |
+| JSON, XML, CSV                    | 3.0–5.0x  | 4.0–7.0x     | Yes          |
+| Virtual machine images            | 1.3–2.0x  | 1.5–2.5x     | Partially    |
+| Databases (relational)            | 1.2–1.5x  | 1.3–1.8x     | Partially    |
+| Encrypted data                    | 1.0x      | 1.0x         | No           |
+| Media (JPEG, MP4, MKV)            | 1.0x      | 1.0x         | No           |
+| Compressed archives (ZIP, tar.gz) | 1.0x      | 1.0x         | No           |
+| Logs (server, application)        | 5.0–10.0x | 8.0–15.0x    | Yes          |
 
 ### CPU Overhead of Compression
 
 | Algorithm | Compression Throughput | Decompression Throughput | CPU Overhead |
-|-----------|----------------------|-------------------------|-------------|
-| lz4 | 3–5 GB/s per core | 8–12 GB/s per core | Minimal |
-| zstd-1 | 1–2 GB/s per core | 4–6 GB/s per core | Low |
-| zstd-3 | 500 MB–1 GB/s per core | 3–5 GB/s per core | Moderate |
-| zstd-10 | 100–200 MB/s per core | 2–3 GB/s per core | High |
+| --------- | ---------------------- | ------------------------ | ------------ |
+| lz4       | 3–5 GB/s per core      | 8–12 GB/s per core       | Minimal      |
+| zstd-1    | 1–2 GB/s per core      | 4–6 GB/s per core        | Low          |
+| zstd-3    | 500 MB–1 GB/s per core | 3–5 GB/s per core        | Moderate     |
+| zstd-10   | 100–200 MB/s per core  | 2–3 GB/s per core        | High         |
 
-On modern CPUs (8+ cores), lz4 compression overhead is negligible for most workloads. The I/O
-time saved by writing less data to disk typically exceeds the CPU time spent compressing.
+On modern CPUs (8+ cores), lz4 compression overhead is negligible for most workloads. The I/O time
+saved by writing less data to disk typically exceeds the CPU time spent compressing.
 
 ### When to Disable Compression
 
@@ -612,17 +611,16 @@ The replacement algorithm:
 
 - New data enters the MRU list.
 - On a cache hit, data is promoted from MRU to MFU (if accessed multiple times).
-- On eviction, data moves from active to ghost list. Ghost entries remember the data's identity
-  but not its content.
-- If a ghost entry is accessed again (cache miss → hit in ghost list), the data is fetched from
-  disk and placed at the head of the appropriate active list.
+- On eviction, data moves from active to ghost list. Ghost entries remember the data's identity but
+  not its content.
+- If a ghost entry is accessed again (cache miss → hit in ghost list), the data is fetched from disk
+  and placed at the head of the appropriate active list.
 - The ARC size is bounded by `arc_max` (primary cache) and `arc_meta_limit` (metadata cache).
 
 ### ARC Metadata Limit
 
-Metadata (directory entries, file attributes, indirect blocks) can consume a significant portion
-of the ARC. The `arc_meta_limit` parameter controls the maximum fraction of ARC dedicated to
-metadata:
+Metadata (directory entries, file attributes, indirect blocks) can consume a significant portion of
+the ARC. The `arc_meta_limit` parameter controls the maximum fraction of ARC dedicated to metadata:
 
 ```bash
 # Default: 1/4 of ARC
@@ -641,34 +639,34 @@ kstat -p zfs:0:arcstats:arc_meta_max
 
 ### Compression Properties
 
-| Property | Values | Default | Description |
-|----------|--------|---------|-------------|
-| compression | off, lz4, lzjb, zstd, gzip-1..9, zle | lz4 (TrueNAS) | Compress data before writing |
-| compressratio | Read-only | 1.00x | Current compression ratio |
+| Property      | Values                               | Default       | Description                  |
+| ------------- | ------------------------------------ | ------------- | ---------------------------- |
+| compression   | off, lz4, lzjb, zstd, gzip-1..9, zle | lz4 (TrueNAS) | Compress data before writing |
+| compressratio | Read-only                            | 1.00x         | Current compression ratio    |
 
 ### Access Time Properties
 
-| Property | Values | Default | Description |
-|----------|--------|---------|-------------|
-| atime | on, off | on | Update file access time on read |
-| relatime | on, off | off | Update atime only if modified since last read |
-| xattr | on, off | on | Enable extended attributes |
+| Property | Values  | Default | Description                                   |
+| -------- | ------- | ------- | --------------------------------------------- |
+| atime    | on, off | on      | Update file access time on read               |
+| relatime | on, off | off     | Update atime only if modified since last read |
+| xattr    | on, off | on      | Enable extended attributes                    |
 
 ### Quota and Reservation Properties
 
-| Property | Values | Default | Description |
-|----------|--------|---------|-------------|
-| quota | Size or none | none | Maximum space for dataset + children |
-| refquota | Size or none | none | Maximum space for dataset only (not children) |
-| reservation | Size or none | none | Minimum space guaranteed for dataset |
-| refreservation | Size or none | none | Minimum space for dataset only |
+| Property       | Values       | Default | Description                                   |
+| -------------- | ------------ | ------- | --------------------------------------------- |
+| quota          | Size or none | none    | Maximum space for dataset + children          |
+| refquota       | Size or none | none    | Maximum space for dataset only (not children) |
+| reservation    | Size or none | none    | Minimum space guaranteed for dataset          |
+| refreservation | Size or none | none    | Minimum space for dataset only                |
 
 ### Sync Properties
 
-| Property | Values | Default | Description |
-|----------|--------|---------|-------------|
-| sync | standard, always, disabled | standard | Synchronous write behavior |
-| logbias | latency, throughput | latency | Optimize for latency or throughput |
+| Property | Values                     | Default  | Description                        |
+| -------- | -------------------------- | -------- | ---------------------------------- |
+| sync     | standard, always, disabled | standard | Synchronous write behavior         |
+| logbias  | latency, throughput        | latency  | Optimize for latency or throughput |
 
 ## ZFS Snapshot Advanced Usage
 
@@ -791,21 +789,21 @@ zpool import -f tank
 ```
 
 :::warning
-Always export a pool before disconnecting drives. If a pool is not exported, ZFS
-may mark it as active on the original system, preventing import on the new system. Use
-`zpool export -f` to force export if necessary.
+Always export a pool before disconnecting drives. If a pool is not exported, ZFS may mark
+it as active on the original system, preventing import on the new system. Use `zpool export -f` to
+force export if necessary.
 :::
 
 ### Pool Degradation Scenarios
 
-| Scenario | Impact | Recovery |
-|----------|--------|----------|
-| Single disk failure in mirror | No data loss, reduced redundancy | Replace disk, resilver |
-| Single disk failure in RAIDZ2 | No data loss, reduced redundancy | Replace disk, resilver |
-| Two disk failures in RAIDZ2 | No data loss, no redundancy | Replace both disks, resilver |
-| Two disk failures in RAIDZ1 | **Total data loss** | Restore from backup |
-| Cache device failure | Performance degradation only | Remove and replace cache |
-| SLOG device failure | Sync writes fall back to pool | Remove and replace SLOG |
+| Scenario                      | Impact                           | Recovery                     |
+| ----------------------------- | -------------------------------- | ---------------------------- |
+| Single disk failure in mirror | No data loss, reduced redundancy | Replace disk, resilver       |
+| Single disk failure in RAIDZ2 | No data loss, reduced redundancy | Replace disk, resilver       |
+| Two disk failures in RAIDZ2   | No data loss, no redundancy      | Replace both disks, resilver |
+| Two disk failures in RAIDZ1   | **Total data loss**              | Restore from backup          |
+| Cache device failure          | Performance degradation only     | Remove and replace cache     |
+| SLOG device failure           | Sync writes fall back to pool    | Remove and replace SLOG      |
 
 ## ZFS Internals: The DMU Transaction Model
 
@@ -817,19 +815,19 @@ ZFS batches writes into transaction groups for efficiency:
 2. The block is checksummed and added to the current TXG.
 3. When the TXG fills (every ~5 seconds) or is flushed, the entire group is written to disk
    atomically.
-4. The ZIL (ZFS Intent Log) ensures that synchronous writes survive power loss by writing
-   the intent to the log before the TXG is flushed.
+4. The ZIL (ZFS Intent Log) ensures that synchronous writes survive power loss by writing the intent
+   to the log before the TXG is flushed.
 
 ### ZIL (ZFS Intent Log)
 
 The ZIL records the intent to modify data before the modification is committed to the pool:
 
-- **Synchronous writes:** Data is written to the ZIL and acknowledged to the client. Only after
-  the ZIL is persisted (or the data reaches the main pool) does ZFS acknowledge the write.
-- **The ZIL is per-dataset.** Some datasets may need synchronous writes (databases), while others
-  do not (media files).
-- **ZIL is in-memory by default.** A dedicated SLOG device (NVMe SSD) accelerates synchronous
-  writes by providing a fast persistent log.
+- **Synchronous writes:** Data is written to the ZIL and acknowledged to the client. Only after the
+  ZIL is persisted (or the data reaches the main pool) does ZFS acknowledge the write.
+- **The ZIL is per-dataset.** Some datasets may need synchronous writes (databases), while others do
+  not (media files).
+- **ZIL is in-memory by default.** A dedicated SLOG device (NVMe SSD) accelerates synchronous writes
+  by providing a fast persistent log.
 
 ### ZFS Write Path
 
@@ -877,37 +875,35 @@ zfs create -o special_small_blocks=32K tank/data
 # while regular data goes to the main vdev (HDD)
 ```
 
-| Special Vdev | Stores | Benefit |
-|-------------|-------|---------|
-| `special_vdev` | Metadata (dnode, directories) + small blocks | Faster directory listing |
-| `dedup_vdev` | Dedup table | Offloads dedup metadata from ARC |
+| Special Vdev   | Stores                                       | Benefit                          |
+| -------------- | -------------------------------------------- | -------------------------------- |
+| `special_vdev` | Metadata (dnode, directories) + small blocks | Faster directory listing         |
+| `dedup_vdev`   | Dedup table                                  | Offloads dedup metadata from ARC |
 
-### Bookmark Property
+### ZFS Bookmarks
 
-The `bookmark` property stores a SHA-256 hash of a file's contents in the ZFS metadata.
-This enables fast duplicate detection without scanning the file:
+Bookmarks are point-in-time markers for a dataset, created with `zfs bookmark`. Unlike snapshots,
+they don't hold references to blocks and don't prevent space from being freed, making them very
+lightweight. They are primarily used as send base references for incremental `zfs send`:
 
 ```bash
-# Enable bookmarks
-zfs set bookmark=on tank/data
+# Create a bookmark from a snapshot
+zfs bookmark tank/data@snap1 tank/data#bm_snap1
 
-# After enabling, bookmarks are computed for new writes
-# Existing files do not get bookmarks automatically
-
-# Find duplicates using bookmarks
-zfs diff -F tank/data@snap1 tank/data@snap2 | grep "^+" | awk '{print $NF}'
+# Send incremental using a bookmark as the base (snapshot can be destroyed)
+zfs send -i tank/data#bm_snap1 tank/data@snap2 | zfs recv backup/data
 ```
 
 ### dedup Table Analysis
 
 The dedup DDT (Dedup Table) stores a hash entry for every unique block:
 
-| Field | Size | Description |
-|-------|------|-------------|
-| Hash | 32 bytes | SHA-256 hash of block contents |
-| Reference count | 8 bytes | Number of blocks pointing to this entry |
-| First LBLK | 8 bytes | First logical block reference |
-| Disk address | 8 bytes | Physical location on disk |
+| Field           | Size     | Description                             |
+| --------------- | -------- | --------------------------------------- |
+| Hash            | 32 bytes | SHA-256 hash of block contents          |
+| Reference count | 8 bytes  | Number of blocks pointing to this entry |
+| First LBLK      | 8 bytes  | First logical block reference           |
+| Disk address    | 8 bytes  | Physical location on disk               |
 
 Memory per DDT entry: approximately 320 bytes.
 
@@ -921,31 +917,31 @@ $$
 DDT\_RAM = 33554432 	imes 320 	ext{ bytes} pprox 10.7 	ext{ GB}
 $$
 
-This is why dedup requires careful capacity planning. A 4 TB pool with 4 TB of unique data
-needs ~10 GB of RAM just for the DDT.
+This is why dedup requires careful capacity planning. A 4 TB pool with 4 TB of unique data needs ~10
+GB of RAM just for the DDT.
 
 ## ZFS Pool Maintenance Procedures
 
 ### Scrub Scheduling Best Practices
 
-| Pool Type | Scrub Frequency | Time of Day | Reason |
-|-----------|----------------|------------|--------|
-| All-SSD | Weekly | Weekend morning | Fast completion (1–4 hours) |
-| All-HDD | Monthly | Weekend morning | Slow completion (12–48 hours) |
-| Hybrid | Monthly | Weekend morning | Focus on HDD vdevs |
-| Critical data | Bi-weekly | Off-peak | More frequent verification |
+| Pool Type     | Scrub Frequency | Time of Day     | Reason                        |
+| ------------- | --------------- | --------------- | ----------------------------- |
+| All-SSD       | Weekly          | Weekend morning | Fast completion (1–4 hours)   |
+| All-HDD       | Monthly         | Weekend morning | Slow completion (12–48 hours) |
+| Hybrid        | Monthly         | Weekend morning | Focus on HDD vdevs            |
+| Critical data | Bi-weekly       | Off-peak        | More frequent verification    |
 
 ### Resilver Performance Optimization
 
 Resilver speed depends on:
 
-1. **Pool configuration:** Mirror pools resilver faster than RAIDZ pools because data can
-   be read from any mirror copy.
+1. **Pool configuration:** Mirror pools resilver faster than RAIDZ pools because data can be read
+   from any mirror copy.
 2. **Disk speed:** Faster disks resilver faster. NVMe resilvers much faster than HDD.
-3. **Pool load:** Resilver shares I/O bandwidth with normal operations. Scheduling during
-   low-usage periods is recommended.
-4. **Priority:** TrueNAS prioritizes resilver I/O over normal I/O, but both compete for
-   disk bandwidth.
+3. **Pool load:** Resilver shares I/O bandwidth with normal operations. Scheduling during low-usage
+   periods is recommended.
+4. **Priority:** TrueNAS prioritizes resilver I/O over normal I/O, but both compete for disk
+   bandwidth.
 
 ### Drive Replacement Procedure
 
@@ -995,25 +991,11 @@ zpool iostat -v tank 5
 
 ### Common Performance Issues
 
-| Symptom | Likely Cause | Diagnostic |
-|---------|-------------|-----------|
-| Low ARC hit ratio | Working set exceeds RAM | Increase RAM or add L2ARC |
-| High read latency | HDD pool, fragmented data | Check fragmentation, consider SSD cache |
-| Slow write speed | Synchronous writes on HDD pool | Add SLOG device |
-| Inconsistent I/O | Mixed vdev types (HDD + SSD) | Separate hot/cold data |
-| High metadata latency | Many small files | Add special vdev with SSD |
-| Pool performance degrades over time | Fragmentation | Copy data to a new pool |
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
+| Symptom                             | Likely Cause                   | Diagnostic                              |
+| ----------------------------------- | ------------------------------ | --------------------------------------- |
+| Low ARC hit ratio                   | Working set exceeds RAM        | Increase RAM or add L2ARC               |
+| High read latency                   | HDD pool, fragmented data      | Check fragmentation, consider SSD cache |
+| Slow write speed                    | Synchronous writes on HDD pool | Add SLOG device                         |
+| Inconsistent I/O                    | Mixed vdev types (HDD + SSD)   | Separate hot/cold data                  |
+| High metadata latency               | Many small files               | Add special vdev with SSD               |
+| Pool performance degrades over time | Fragmentation                  | Copy data to a new pool                 |

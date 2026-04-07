@@ -478,9 +478,9 @@ The GA100/102/104/106 chips introduced significant architectural changes:
 
 The AD102/104/103 chips introduced:
 
-- **Shader Execution Reordering (SER):** Reorders shader execution order in real time to improve
-  ray tracing performance. Previously, rays were processed in fixed batches regardless of their
-  spatial coherence. SER dynamically groups coherent rays for better cache utilization.
+- **Shader Execution Reordering (SER):** Reorders shader execution order in real time to improve ray
+  tracing performance. Previously, rays were processed in fixed batches regardless of their spatial
+  coherence. SER dynamically groups coherent rays for better cache utilization.
 - **4th Gen Tensor Cores:** Added FP8 (E4M3 and E5M2) support for AI inference. FP8 provides 2x
   throughput vs. FP16 with minimal accuracy loss for inference workloads.
 - **DLSS 3 Frame Generation:** Uses AI to generate intermediate frames, effectively doubling the
@@ -493,21 +493,21 @@ The AD102/104/103 chips introduced:
 AMD's RDNA 3 introduced a chiplet design with separate compute and I/O dies:
 
 - **Compute Die (GCD):** 5nm process, contains the CUs, L2 cache, and render backends.
-- **I/O Die (IOD):** 6nm process, contains the display engine, PCIe controller, memory
-  controllers, and Infinity Cache.
-- **Infinity Cache:** 96 MB of L3 cache (Navi 31) that dramatically reduces dependence on
-  VRAM bandwidth. This is a key differentiator — RDNA 3 achieves competitive performance with
-  narrower memory buses (384-bit vs. NVIDIA's 384-bit on 4090) thanks to the cache.
+- **I/O Die (IOD):** 6nm process, contains the display engine, PCIe controller, memory controllers,
+  and Infinity Cache.
+- **Infinity Cache:** 96 MB of L3 cache (Navi 31) that dramatically reduces dependence on VRAM
+  bandwidth. This is a key differentiator — RDNA 3 achieves competitive performance with narrower
+  memory buses (384-bit vs. NVIDIA's 384-bit on 4090) thanks to the cache.
 
 ### Memory Controller Architecture
 
 GPU memory controllers manage the interface between the GPU and VRAM:
 
 - **Burst length:** GDDR6/GDDR6X use a burst length of 16 (16 data transfers per access).
-- **Channel count:** The number of independent memory channels. More channels = higher bandwidth
-  and lower latency.
-- **Write queue depth:** The number of pending write operations. Deeper queues absorb bursty
-  writes without stalling the GPU.
+- **Channel count:** The number of independent memory channels. More channels = higher bandwidth and
+  lower latency.
+- **Write queue depth:** The number of pending write operations. Deeper queues absorb bursty writes
+  without stalling the GPU.
 
 Understanding the memory controller helps explain why some GPUs with lower bandwidth numbers
 outperform others in practice — a larger L2 cache or Infinity Cache reduces the effective memory
@@ -517,28 +517,29 @@ traffic.
 
 ### Understanding the V/F Curve
 
-The voltage/frequency curve is not linear. Power consumption scales with the square of voltage
-and linearly with frequency:
+The voltage/frequency curve is not linear. Power consumption scales with the square of voltage and
+linearly with frequency:
 
 $$
 P = C \times V^2 \times F
 $$
 
 Where:
+
 - $P$ is power in watts
 - $C$ is a constant representing the switching capacitance
 - $V$ is voltage in volts
 - $F$ is frequency in Hz
 
-This means that a 10% reduction in voltage yields approximately a 19% reduction in power
-consumption ($0.9^2 = 0.81$), while only a small reduction in achievable frequency (because the
-V/F curve is relatively flat in the middle range).
+This means that a 10% reduction in voltage yields approximately a 19% reduction in power consumption
+($0.9^2 = 0.81$), while only a small reduction in achievable frequency (because the V/F curve is
+relatively flat in the middle range).
 
 ### Finding the Efficiency Curve
 
 The "sweet spot" for undervolting is where the performance-per-watt ratio is maximized. This is
-typically at a voltage significantly below the stock voltage but at a frequency only slightly
-below the stock boost:
+typically at a voltage significantly below the stock voltage but at a frequency only slightly below
+the stock boost:
 
 ```mermaid
 graph LR
@@ -563,8 +564,8 @@ Here are starting points for common cards:
 
 - Stock boost: ~2520 MHz @ ~1000 mV
 - Undervolt target: 2520 MHz @ 875 mV
-- Method: The 4090 is power-limited, not voltage-limited. Reducing voltage frees thermal
-  headroom, allowing higher sustained boost.
+- Method: The 4090 is power-limited, not voltage-limited. Reducing voltage frees thermal headroom,
+  allowing higher sustained boost.
 
 **RX 7900 XTX:**
 
@@ -615,11 +616,11 @@ nvidia-smi -lgc 1800  # Lock GPU clock to 1800 MHz
 
 ### NVIDIA Power Modes
 
-| Mode | Behavior | Use Case |
-|------|----------|----------|
-| Default (W) | GPU autonomously manages frequency | Most workloads |
-| Prefer Maximum Performance (P0) | GPU runs at maximum frequency | Benchmarks, latency-sensitive apps |
-| Prefer Power Saving (P8) | GPU drops to minimum frequency | Battery-powered laptops |
+| Mode                            | Behavior                           | Use Case                           |
+| ------------------------------- | ---------------------------------- | ---------------------------------- |
+| Default (W)                     | GPU autonomously manages frequency | Most workloads                     |
+| Prefer Maximum Performance (P0) | GPU runs at maximum frequency      | Benchmarks, latency-sensitive apps |
+| Prefer Power Saving (P8)        | GPU drops to minimum frequency     | Battery-powered laptops            |
 
 ### NVIDIA Xorg Configuration (Linux)
 
@@ -684,15 +685,15 @@ LACT provides a GUI for AMD GPU tuning on Linux:
 For meaningful benchmark comparisons, control these variables:
 
 1. **Driver version:** Pin to a specific driver version. NVIDIA driver updates can change
-  performance by 1–5%.
+   performance by 1–5%.
 2. **Windows power plan:** Always use "High Performance" or "Ultimate Performance."
 3. **Background processes:** Close all non-essential applications, including hardware monitoring
-  overlays (use logging instead).
+   overlays (use logging instead).
 4. **Display resolution and refresh rate:** Use the same resolution and refresh rate for all tests.
 5. **GPU temperature:** Allow the GPU to reach thermal equilibrium before measuring. Run the
-  benchmark twice and use the second result.
-6. **CPU bottleneck:** Ensure the CPU is not the bottleneck. If GPU utilization is below 95%,
-  the CPU may be limiting performance.
+   benchmark twice and use the second result.
+6. **CPU bottleneck:** Ensure the CPU is not the bottleneck. If GPU utilization is below 95%, the
+   CPU may be limiting performance.
 
 ### Benchmark Suite for GPU Validation
 
@@ -730,8 +731,8 @@ For ML training workloads, GPU tuning priorities differ from gaming:
 For GPU rendering (Blender, Octane, V-Ray):
 
 - **OptiX denoising** uses the RT cores to denoise renders, significantly reducing render time.
-- **CUDA cores** determine raw rendering throughput. Higher CUDA core counts translate directly
-  to faster renders.
+- **CUDA cores** determine raw rendering throughput. Higher CUDA core counts translate directly to
+  faster renders.
 - **VRAM capacity** limits scene complexity and texture resolution. Complex scenes with 4K+ textures
   can require 16+ GB of VRAM.
 
@@ -749,14 +750,14 @@ any sustained full-load GPU workload:
 
 ### When Multi-GPU Makes Sense
 
-| Use Case | Multi-GPU Benefit | Configuration |
-|----------|------------------|---------------|
-| ML training (data parallel) | Near-linear scaling | NVLink preferred |
-| ML training (model parallel) | Required for large models | NVLink required |
-| GPU rendering | Near-linear (per-frame) | Separate render tasks |
-| Gaming | Minimal benefit | SLI deprecated |
-| VM passthrough | One GPU per VM | Physical isolation |
-| Inference serving | Load distribution | Software-level |
+| Use Case                     | Multi-GPU Benefit         | Configuration         |
+| ---------------------------- | ------------------------- | --------------------- |
+| ML training (data parallel)  | Near-linear scaling       | NVLink preferred      |
+| ML training (model parallel) | Required for large models | NVLink required       |
+| GPU rendering                | Near-linear (per-frame)   | Separate render tasks |
+| Gaming                       | Minimal benefit           | SLI deprecated        |
+| VM passthrough               | One GPU per VM            | Physical isolation    |
+| Inference serving            | Load distribution         | Software-level        |
 
 ### Multi-GPU Power and Thermal Considerations
 
@@ -765,22 +766,22 @@ Two GPUs under full load can draw 500–900 W combined. Ensure:
 1. **PSU capacity:** 1000 W+ for two high-end GPUs.
 2. **PCIe slot spacing:** Leave at least one empty slot between GPUs for airflow.
 3. **Case airflow:** GPUs in adjacent slots dump heat into each other. Use a case with good
-  front-to-back airflow.
-4. **Power cables:** Use separate PCIe power cables for each GPU. Daisy-chaining doubles the
-   current on a single cable.
+   front-to-back airflow.
+4. **Power cables:** Use separate PCIe power cables for each GPU. Daisy-chaining doubles the current
+   on a single cable.
 
 ## Troubleshooting GPU Issues
 
 ### Common Linux GPU Issues
 
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| GPU not detected | Missing driver or wrong kernel module | Install correct NVIDIA/AMD driver |
-| `nvidia-smi` shows "No devices" | Kernel module not loaded | `sudo modprobe nvidia` |
-| X11 crashes with GPU driver | Driver version mismatch with kernel | Match driver to kernel version |
-| GPU hangs under load | Insufficient power or overheating | Check PSU, improve cooling |
-| Poor performance vs. Windows | Missing power management mode | Set `nvidia-smi -pm 1` |
-| Display flicker | Refresh rate or driver issue | Check display settings, update driver |
+| Issue                           | Cause                                 | Solution                              |
+| ------------------------------- | ------------------------------------- | ------------------------------------- |
+| GPU not detected                | Missing driver or wrong kernel module | Install correct NVIDIA/AMD driver     |
+| `nvidia-smi` shows "No devices" | Kernel module not loaded              | `sudo modprobe nvidia`                |
+| X11 crashes with GPU driver     | Driver version mismatch with kernel   | Match driver to kernel version        |
+| GPU hangs under load            | Insufficient power or overheating     | Check PSU, improve cooling            |
+| Poor performance vs. Windows    | Missing power management mode         | Set `nvidia-smi -pm 1`                |
+| Display flicker                 | Refresh rate or driver issue          | Check display settings, update driver |
 
 ### GPU Failure Diagnosis
 
@@ -808,5 +809,3 @@ Consider RMA if:
 - VRAM errors are reported by CUDA memtest
 - The GPU is detected intermittently or not at all
 - Physical damage (burned PCB, leaking thermal pads, broken fan)
-
-:::

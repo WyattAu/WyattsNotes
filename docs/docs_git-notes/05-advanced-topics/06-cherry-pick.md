@@ -201,7 +201,7 @@ are cherry-picking A, B, C and the conflict occurs at B:
 ```bash
 # Skip the current commit (keep the branch as-is, move to the next)
 $ git cherry-pick --skip
-# Only available in Git 2.34+
+# Only available in Git 2.35+
 ```
 
 For older Git versions, you can achieve the same effect by resetting the index and continuing:

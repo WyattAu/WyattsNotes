@@ -347,7 +347,7 @@ pactree -r nginx          # reverse dependency tree
 
 # Database
 pacman -Q                 # list installed packages
-pacman -Qm                # list explicitly installed (not dependencies)
+pacman -Qm                # list foreign/AUR packages
 pacman -Qe                # list explicitly installed
 pacman -Qdt               # list orphaned packages
 

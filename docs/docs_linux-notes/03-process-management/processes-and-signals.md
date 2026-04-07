@@ -533,8 +533,8 @@ echo $PID > /sys/fs/cgroup/mygroup/cgroup.procs
 # Set I/O weight
 echo "default 100" > /sys/fs/cgroup/mygroup/io.weight
 
-# Enable accounting
-echo "1" > /sys/fs/cgroup/mygroup/memory.swap.max
+# Set swap limit (bytes)
+echo "1G" > /sys/fs/cgroup/mygroup/memory.swap.max
 
 # View cgroup stats
 cat /sys/fs/cgroup/mygroup/memory.current

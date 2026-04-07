@@ -17,7 +17,7 @@ SQL is defined by ANSI/ISO standards (SQL-86, SQL-89, SQL-92, SQL:1999, SQL:2003
 SQL:2008, SQL:2011, SQL:2016, SQL:2019, SQL:2023). No database implements the full standard.
 PostgreSQL has the broadest standards compliance among open-source databases. MySQL diverges
 significantly. SQLite implements a large subset but omits many features (e.g., RIGHT JOIN, FULL
-OUTER JOIN were added late).
+OUTER JOIN were added in 3.39.0, 2022).
 
 When this document specifies behaviour, it defaults to PostgreSQL syntax unless otherwise noted.
 
@@ -767,9 +767,10 @@ graph TD
 
 :::warning
 
-Recursive CTEs without a termination condition loop infinitely (until the database kills the query).
-Always include a depth counter or a visited set. PostgreSQL limits recursion depth to 100 by default
-(`max_recursion_table_option` in MySQL, no limit in PostgreSQL but the query will eventually OOM).
+Recursive CTEs without a termination condition loop infinitely (until the database kills the query
+or the process runs out of memory). Always include a depth counter or a visited set. MySQL limits
+recursion depth to 100 by default (`cte_max_recursion_depth`). PostgreSQL has no recursion depth
+limit, so an unbounded recursive CTE will run until it OOMs.
 
 :::
 

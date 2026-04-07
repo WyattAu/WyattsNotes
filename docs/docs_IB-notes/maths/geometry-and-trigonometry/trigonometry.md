@@ -54,8 +54,8 @@ $$
 
 $$
     \sin 3\theta = \sin(2\theta +\theta) = \sin 2\theta \cos \theta + \cos 2\theta \sin \theta\\
-    \sin 3\theta = (2\sin \theta \cos \theta ) (\cos \theta) + (1-2\sin\theta)(\sin \theta)\\
-    \sin 3\theta = 2\sin \theta \cos^2 \theta + \sin\theta - 2\sin^2 \theta
+    \sin 3\theta = (2\sin \theta \cos \theta ) (\cos \theta) + (1-2\sin^2\theta)(\sin \theta)\\
+    \sin 3\theta = 2\sin \theta \cos^2 \theta + \sin\theta - 2\sin^3 \theta
 $$
 
 ## The Unit Circle

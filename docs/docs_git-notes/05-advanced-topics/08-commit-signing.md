@@ -387,7 +387,7 @@ tagger Your Name <you@example.com>
 Good signature from "Your Name <you@example.com>"
 
 # Verify without fetching from keyservers (local trust only)
-$ git tag -v --no-gpg-verify-ssh v1.2.3
+$ git tag -v --no-gpg-verify v1.2.3
 ```
 
 ## Verifying Signatures

@@ -30,7 +30,7 @@ $$
 $$
 
 where $\theta$ is the angular displacement between the normal vector of the plane and the direction
-of electric field.
+of magnetic field.
 
 ## Inductors
 

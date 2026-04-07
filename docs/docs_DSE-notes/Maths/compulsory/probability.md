@@ -17,7 +17,8 @@ slug: probability
 
 ## Mutually Exclusive
 
-Mutually exclusive identifies the relationships between multiple events, where these events cannot occur at in the same trial. Given two events ($A, B$) mutually exclusive to each other:
+Mutually exclusive identifies the relationships between multiple events, where these events cannot
+occur at in the same trial. Given two events ($A, B$) mutually exclusive to each other:
 
 $$
 \begin{aligned}
@@ -33,12 +34,14 @@ $$
 
 ## Independent
 
-Independent identifies the relationships between multiple events, where the occurrence of one event does not affect the probability of the occurrence of other events. Given two events ($A, B$) independent to each other, the conditional probability satisfy the condition:
+Independent identifies the relationships between multiple events, where the occurrence of one event
+does not affect the probability of the occurrence of other events. Given two events ($A, B$)
+independent to each other, the conditional probability satisfy the condition:
 
 $$
 \begin{aligned}
-  P(A | B) = \frac{P(A \cup B)}{P(B)} = P(A)\\
-  P(A)P(B) = P(A\cup B)
+  P(A | B) = \frac{P(A \cap B)}{P(B)} = P(A)\\
+  P(A)P(B) = P(A\cap B)
 \end{aligned}
 $$
 

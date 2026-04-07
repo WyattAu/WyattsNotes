@@ -1006,15 +1006,3 @@ host 10.0.0.10
 # Both should return consistent results
 # If using /etc/hosts, ensure entries exist on both client and server
 ```
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::

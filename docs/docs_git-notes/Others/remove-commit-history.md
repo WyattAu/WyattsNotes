@@ -24,8 +24,8 @@ slug: remove-commit-history
 - Force-push current branch to GitHub
   - `git push -f origin main`
 - Delete all other branches and tags if needed
-  - ```
-        git tag | xargs git tag -d  # Delete local tags
-        git push origin --delete --tags  # Delete remote tags
-        git push origin --delete old-branch  # Repeat for historical branches
-    ```
+  ```bash
+  git tag | xargs git tag -d  # Delete local tags
+  git push origin --delete --tags  # Delete remote tags
+  git push origin --delete old-branch  # Repeat for historical branches
+  ```

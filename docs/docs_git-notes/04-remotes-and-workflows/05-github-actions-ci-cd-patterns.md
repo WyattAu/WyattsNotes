@@ -51,9 +51,8 @@ be audited for supply-chain security before adoption.
 
 ## Basic Workflow Structure
 
-Every workflow file begins with `name` and `on` (or `true` in some schemas) at the top level,
-followed by `jobs`. Each job has an identifier, runs on a `runs-on` runner, and contains an ordered
-list of `steps`.
+Every workflow file begins with `name` and `on` at the top level, followed by `jobs`. Each job has
+an identifier, runs on a `runs-on` runner, and contains an ordered list of `steps`.
 
 ### Minimal Anatomy
 

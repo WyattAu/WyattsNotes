@@ -12,13 +12,13 @@ compatibility, and performance characteristics.
 
 Git also supports a third protocol — the unauthenticated `git://` protocol — but it is disabled by
 default on all major hosting platforms due to its lack of authentication (it was the vector for
-CVE-2014-9398). It is not covered here.
+CVE-2014-9398, a buffer overflow vulnerability). It is not covered here.
 
 | Aspect                | HTTPS                                      | SSH                                       |
 | --------------------- | ------------------------------------------ | ----------------------------------------- |
 | Default port          | 443                                        | 22                                        |
 | Authentication        | Personal access token, password (legacy)   | Public/private key pair                   |
-| Transport encryption  | TLS (the entire connection is encrypted)   | TLS (only the SSH tunnel is encrypted)    |
+| Transport encryption  | TLS (the entire connection is encrypted)   | SSH (the entire connection is encrypted)  |
 | Firewall friendliness | High (port 443 is almost always open)      | Low (port 22 is often blocked)            |
 | Initial setup         | Token creation on hosting platform         | Key generation, agent config, key upload  |
 | CI/CD suitability     | Excellent (token as env var)               | Good (deploy key)                         |
@@ -41,7 +41,7 @@ upstream  git@github.com:org/repo.git (push)
 
 ### Generating an SSH Key
 
-The modern standard is the **Ed25519** algorithm, which offers equivalent security to RSA-4096 with
+The modern standard is the **Ed25519** algorithm, which offers equivalent security to RSA-3072 with
 smaller keys and faster operations. It is supported by OpenSSH 6.5+ (released January 2014) and all
 major Git hosting platforms.
 
@@ -620,7 +620,7 @@ enables new features like partial clone.
 ```bash
 # Check which protocol Git uses (v2 is the default for modern Git)
 $ GIT_PROTOCOL_FROM_USER=0 git ls-remote --symref origin HEAD
-ref: refs/heads/heads/main	HEAD
+ref: refs/heads/main	HEAD
 abc1234def5678...	refs/heads/main
 
 # Force protocol v2 explicitly

@@ -889,18 +889,18 @@ $$
 The mass loss is $1.32\text{ g}$. Find the percentage of NaHCO$_3$ in the mixture.
 
 The mass loss is due to H$_2$O + CO$_2$ ($2 \times 44 = 88\text{ g/mol}$ for each 2 mol NaHCO$_3$,
-or $62\text{ g/mol}$ per mole of NaHCO$_3$).
+or $31\text{ g/mol}$ per mole of NaHCO$_3$).
 
 $$
-n(\text{NaHCO}_3) = \frac{1.32}{62} = 0.0213\text{ mol}
-$$
-
-$$
-m(\text{NaHCO}_3) = 0.0213 \times 84.01 = 1.79\text{ g}
+n(\text{NaHCO}_3) = \frac{1.32}{31} = 0.0426\text{ mol}
 $$
 
 $$
-\%\text{NaHCO}_3 = \frac{1.79}{4.68} \times 100\% = 38.2\%
+m(\text{NaHCO}_3) = 0.0426 \times 84.01 = 3.58\text{ g}
+$$
+
+$$
+\%\text{NaHCO}_3 = \frac{3.58}{4.68} \times 100\% = 76.5\%
 $$
 
 ### Question 10 (Paper 1 style)

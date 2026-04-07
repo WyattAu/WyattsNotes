@@ -430,9 +430,9 @@ Examples: steel (Fe + C), brass (Cu + Zn), bronze (Cu + Sn), solder (Sn + Pb)
 **Question 1:** The first three ionisation energies of an element are 578, 1817, and 2745 kJ/mol.
 Identify the group of this element.
 
-The large jump between the 1st and 2nd ionisation energies indicates that the second electron is
-removed from a new, inner shell. This means the element has 1 valence electron, placing it in
-**Group 1** (it is aluminium).
+The large jump between the 3rd and 4th ionisation energies indicates that the fourth electron is
+removed from a new, inner shell. This means the element has 3 valence electrons, placing it in
+**Group 13** (it is aluminium).
 
 **Question 2:** Draw the shape of $\text{PCl}_3$ and state its bond angle.
 
@@ -460,6 +460,7 @@ $\text{SiO}_2$ has a giant covalent structure. Each silicon atom is covalently b
 atoms, and each oxygen atom is bonded to two silicon atoms, forming a continuous 3D network.
 Breaking this structure requires breaking many strong covalent bonds, which requires a large amount
 of energy, hence the very high melting point.
+
 </details>
 
 ---
@@ -718,6 +719,7 @@ $\text{Cu}^+$ has a completely filled $3d$ subshell, which is particularly stabl
 symmetrical distribution of electrons. However, $\text{Cu}^{2+}$ ($3d^9$) is more common in aqueous
 chemistry because of the high hydration energy that compensates for the loss of the stable $3d^{10}$
 configuration.
+
 </details>
 
 ---

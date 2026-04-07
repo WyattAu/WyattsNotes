@@ -177,7 +177,7 @@ shared, but P-cores and E-cores have different L1 and L2 cache sizes and latenci
 Director (hardware + OS scheduler) steers threads to the appropriate core type based on workload
 characteristics. This has tuning implications:
 
-- P-cores have larger L2 caches (2 MB vs 2 MB, but fewer E-cores share) and higher clock speeds.
+- P-cores have larger L2 caches (2 MB per P-core vs ~0.5 MB per E-core) and higher clock speeds.
 - E-cores are more power-efficient but have lower single-thread performance.
 - On Linux, the `intel_pstate` driver and the scheduler's asym packing support handle this
   automatically. On Windows, Thread Director requires Windows 11.
@@ -716,8 +716,8 @@ turbostat --show Core,CLUSTER,Busy%,Bzy_MHz,IRQ,PkgWatt,PkgTmp -i 5
 ### Tuning Implications
 
 ITD works in conjunction with the kernel scheduler. On Linux, the `intel_pstate` driver and the
-`sched_util` or `sched_autogroup` governors consume ITD hints to place threads on appropriate cores.
-For heterogeneous architectures (P-cores and E-cores):
+`schedutil` governor consumes ITD hints to place threads on appropriate cores. For heterogeneous
+architectures (P-cores and E-cores):
 
 - **P-cores** have higher single-thread performance and should receive latency-sensitive and
   throughput-classified threads.
@@ -1004,13 +1004,3 @@ Two identical CPU models can differ by 100-300 MHz in stable overclock or underv
 manufacturing variation. Do not assume your results will generalize. When advising others on tuning,
 provide ranges rather than exact values, and always include the disclaimer that individual results
 vary.
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::

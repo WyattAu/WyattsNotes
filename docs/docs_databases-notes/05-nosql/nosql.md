@@ -30,10 +30,10 @@ update propagates slowly, a garbage collector pause causes a timeout, a cross-da
 degrades. Any distributed system must tolerate partitions, which means the real choice is between
 **CP** and **AP**:
 
-| Category | Strategy                                                       | Example Systems                                                                |
-| -------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| CP       | Preserve consistency, sacrifice availability during partitions | PostgreSQL (sync replicas), HBase, MongoDB (default), Redis (with replication) |
-| AP       | Preserve availability, sacrifice consistency during partitions | Cassandra, DynamoDB, CouchDB, Riak                                             |
+| Category | Strategy                                                       | Example Systems                                             |
+| -------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
+| CP       | Preserve consistency, sacrifice availability during partitions | PostgreSQL (sync replicas), HBase, Redis (with replication) |
+| AP       | Preserve availability, sacrifice consistency during partitions | MongoDB (default, w:1), Cassandra, DynamoDB, CouchDB, Riak  |
 
 ### The PACELC Theorem
 

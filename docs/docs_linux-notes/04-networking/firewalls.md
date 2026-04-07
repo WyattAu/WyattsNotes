@@ -45,7 +45,7 @@ flowchart LR
 | nat      | Network Address Translation (SNAT/DNAT/masquerade) |
 | mangle   | Packet modification (TOS, TTL, marks)              |
 | raw      | Connection tracking exemptions                     |
-| security | SECCOMP security filters (used by SELinux)         |
+| security | LSM security hooks (used by SELinux/AppArmor)      |
 
 ### Chains
 

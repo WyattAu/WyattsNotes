@@ -24,7 +24,7 @@ graph TD
     A --> G[rtmon — route monitoring]
     A --> H[tc — traffic control / qdiscs]
     A --> I[nstat — network statistics]
-    A --> J[rdisc — router discovery]
+    A --> J[rdisc — router discovery (legacy)]
 ```
 
 ### Interface Configuration

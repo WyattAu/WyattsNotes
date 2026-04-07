@@ -70,7 +70,7 @@ $$
     \begin{cases}
         \arctan \frac{b}{a} & a \neq 0\\
         \frac{\pi}{2} & a = 0, b > 0\\
-        \frac{\pi}{2} & a = 0, b < 0\\
+        -\frac{\pi}{2} & a = 0, b < 0\\
     \end{cases}
 \end{aligned}
 $$

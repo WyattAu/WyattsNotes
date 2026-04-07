@@ -526,28 +526,27 @@ the DIMM area, or use aftermarket DRAM heatsinks and fans.
 
 ### Signal Integrity
 
-DDR5 operates at significantly higher speeds than DDR4, which makes signal integrity critical.
-Key electrical parameters:
+DDR5 operates at significantly higher speeds than DDR4, which makes signal integrity critical. Key
+electrical parameters:
 
-| Parameter | DDR4-3200 | DDR5-4800 | DDR5-6400 |
-|-----------|-----------|-----------|-----------|
-| Data Rate | 3200 MT/s | 4800 MT/s | 6400 MT/s |
-| VDDQ | 1.2 V | 1.1 V | 1.1 V |
-| VPP | 2.5 V | 1.8 V | 1.8 V |
-| VREFDQ | 0.6 V | 0.55 V | 0.55 V |
+| Parameter   | DDR4-3200       | DDR5-4800       | DDR5-6400       |
+| ----------- | --------------- | --------------- | --------------- |
+| Data Rate   | 3200 MT/s       | 4800 MT/s       | 6400 MT/s       |
+| VDDQ        | 1.2 V           | 1.1 V           | 1.1 V           |
+| VPP         | 2.5 V           | 1.8 V           | 1.8 V           |
+| VREFDQ      | 0.6 V           | 0.55 V          | 0.55 V          |
 | AC/DC Swing | 340 mV / 250 mV | 300 mV / 250 mV | 300 mV / 250 mV |
-| DQS Phase | 90° | 90° | 90° |
+| DQS Phase   | 90°             | 90°             | 90°             |
 
 ### Decision Feedback Equalizer (DFE)
 
-At DDR5 speeds (4800+ MT/s), the signal degrades significantly over the PCB traces. DDR5
-introduces a Decision Feedback Equalizer (DFE) in the memory controller and on the DIMM to
-compensate for inter-symbol interference (ISI):
+At DDR5 speeds (4800+ MT/s), the signal degrades significantly over the PCB traces. DDR5 introduces
+a Decision Feedback Equalizer (DFE) in the memory controller and on the DIMM to compensate for
+inter-symbol interference (ISI):
 
-- **Transmit DFE (TX DFE):** On the memory controller side, compensates for signal degradation
-  on the write path.
-- **Receive DFE (RX DFE):** On the DIMM side, compensates for signal degradation on the read
-  path.
+- **Transmit DFE (TX DFE):** On the memory controller side, compensates for signal degradation on
+  the write path.
+- **Receive DFE (RX DFE):** On the DIMM side, compensates for signal degradation on the read path.
 
 DFE training occurs during system boot (JEDEC training sequence) and can be a source of
 compatibility issues — some CPU/memory combinations fail DFE training at high speeds.
@@ -558,15 +557,15 @@ On boot, the memory controller performs a calibration sequence:
 
 1. **ZQ Calibration:** Calibrates the on-die termination (ODT) resistors by comparing against a
    precision external resistor (RZQ). Takes approximately 256 clock cycles.
-2. **Read Leveling:** Adjusts the DQS read strobe timing to align with the center of the data
-   eye. The controller sweeps the DQS delay and finds the optimal sampling point.
+2. **Read Leveling:** Adjusts the DQS read strobe timing to align with the center of the data eye.
+   The controller sweeps the DQS delay and finds the optimal sampling point.
 3. **Write Leveling:** Adjusts the DQS write strobe timing from the controller's perspective.
 4. **VREF Training:** Calibrates the reference voltage for the receiver to optimize the data eye
    opening.
 5. **DFE Training:** (DDR5 only) Trains the decision feedback equalizer taps.
 
-This entire sequence takes 1–3 seconds. If any training step fails, the system falls back to a
-lower speed or fails to boot.
+This entire sequence takes 1–3 seconds. If any training step fails, the system falls back to a lower
+speed or fails to boot.
 
 ## Memory Controller Architecture
 
@@ -577,12 +576,12 @@ processor's DDR5 interface:
 
 - **One memory controller per CPU** (not per CCD like AMD).
 - **Supports 2 channels** with 1 DIMM per channel for DDR5-6400+ stable operation.
-- **Gear mode:** Controls the ratio between the memory bus and the internal clock. Gear 2
-  (1:2) is required above DDR5-5600.
+- **Gear mode:** Controls the ratio between the memory bus and the internal clock. Gear 2 (1:2) is
+  required above DDR5-5600.
 
 The Intel memory controller is generally more forgiving than AMD's when it comes to running two
-DIMMs at high speeds. Most Intel 13th/14th Gen systems can run two DIMMs at DDR5-6800 with
-relaxed timings.
+DIMMs at high speeds. Most Intel 13th/14th Gen systems can run two DIMMs at DDR5-6800 with relaxed
+timings.
 
 ### AMD Memory Controller (Zen 4)
 
@@ -590,11 +589,11 @@ AMD's Zen 4 memory controller is a significant improvement over Zen 3:
 
 - **1:2 UCLK ratio** at DDR5-6000, providing optimal latency.
 - **Up to DDR5-5200** in 1:1 UCLK mode (FCLK = UCLK = MCLK/2).
-- **Infinity Fabric clock** can run asynchronously at higher speeds, reducing the penalty of
-  1:2.67 mode.
+- **Infinity Fabric clock** can run asynchronously at higher speeds, reducing the penalty of 1:2.67
+  mode.
 
-The Zen 4 memory controller's sweet spot is DDR5-6000 CL30. Going above this requires 1:2.67
-mode, which adds approximately 3–5 ns of latency.
+The Zen 4 memory controller's sweet spot is DDR5-6000 CL30. Going above this requires 1:2.67 mode,
+which adds approximately 3–5 ns of latency.
 
 ## Advanced Timing Tuning
 
@@ -602,8 +601,8 @@ mode, which adds approximately 3–5 ns of latency.
 
 After tightening primary timings, secondary timings provide the next level of optimization:
 
-1. **tFAW (Four Activate Window):** Start at the JEDEC default and reduce by 2 cycles at a time.
-   For dual-rank DDR5, tFAW is typically 24–32. Try reducing to 20–24.
+1. **tFAW (Four Activate Window):** Start at the JEDEC default and reduce by 2 cycles at a time. For
+   dual-rank DDR5, tFAW is typically 24–32. Try reducing to 20–24.
    - Lower tFAW allows more activate commands in a given window, improving row access parallelism.
    - Too low causes data corruption because the DRAM cells do not have enough time to settle.
 
@@ -613,11 +612,11 @@ After tightening primary timings, secondary timings provide the next level of op
    - These affect the time between activating different rows. Lower values improve interleaved
      access performance.
 
-3. **tCWL (CAS Write Latency):** Usually CL - 1 or CL. Try setting to CL - 1 if it is currently
-   at CL. Write latency has less impact on most workloads than read latency.
+3. **tCWL (CAS Write Latency):** Usually CL - 1 or CL. Try setting to CL - 1 if it is currently at
+   CL. Write latency has less impact on most workloads than read latency.
 
-4. **tWR (Write Recovery Time):** Try reducing by 1 cycle. This is the time after a write before
-   the row can be precharged. Related to tRTP (Read to Precharge).
+4. **tWR (Write Recovery Time):** Try reducing by 1 cycle. This is the time after a write before the
+   row can be precharged. Related to tRTP (Read to Precharge).
 
 ### Tertiary Timing Exploration
 
@@ -630,11 +629,10 @@ Tertiary timings are risky to tune but can provide measurable improvements:
      period during refreshes.
 
 2. **tREFI (Refresh Interval):** Default is typically 31200 for DDR5 (at normal temperature).
-   Increasing tREFI delays refresh cycles, improving performance but reducing data retention
-   margin.
+   Increasing tREFI delays refresh cycles, improving performance but reducing data retention margin.
    - Try increasing to 62400 or 93600.
-   - At higher tREFI values, the DRAM may lose data if the ambient temperature is high or if
-     there are long periods without access.
+   - At higher tREFI values, the DRAM may lose data if the ambient temperature is high or if there
+     are long periods without access.
 
 3. **tRDWR (Read to Write Turnaround):** Default is typically 5–7 cycles. Try reducing by 1.
 
@@ -654,17 +652,17 @@ Tertiary timing instability is often intermittent and may not appear in short te
 
 ### Transparent Huge Pages Internals
 
-THP works by the kernel's `khugepaged` daemon scanning process memory and collapsing
-contiguous standard (4 KB) pages into huge pages (2 MB). This process involves:
+THP works by the kernel's `khugepaged` daemon scanning process memory and collapsing contiguous
+standard (4 KB) pages into huge pages (2 MB). This process involves:
 
-1. **Scanning:** `khugepaged` periodically scans process address spaces looking for contiguous
-   4 KB pages that could be collapsed into a single 2 MB page.
-2. **Copying:** When eligible pages are found, `khugepaged` allocates a 2 MB page, copies the
-   data from the constituent 4 KB pages, and updates the page tables.
+1. **Scanning:** `khugepaged` periodically scans process address spaces looking for contiguous 4 KB
+   pages that could be collapsed into a single 2 MB page.
+2. **Copying:** When eligible pages are found, `khugepaged` allocates a 2 MB page, copies the data
+   from the constituent 4 KB pages, and updates the page tables.
 3. **Collapsing:** The original 4 KB pages are freed and replaced with the single 2 MB page.
 
-This process consumes CPU and memory bandwidth. Under memory pressure, the cost of the
-collapsing operation can cause latency spikes.
+This process consumes CPU and memory bandwidth. Under memory pressure, the cost of the collapsing
+operation can cause latency spikes.
 
 ### Huge Pages Configuration
 
@@ -688,13 +686,13 @@ grep -i huge /proc/meminfo
 
 ### Swap File vs. Swap Partition
 
-| Feature | Swap File | Swap Partition |
-|---------|-----------|---------------|
-| Resizable | Yes (fallocate, truncate) | No (requires partitioning tool) |
-| Location flexibility | Any filesystem (except ZFS) | Dedicated partition |
-| Multiple | Yes (multiple swap files) | No (one per partition) |
-| Performance | Slightly lower (filesystem overhead) | Slightly higher (raw device) |
-| Recommended for | Modern Linux (kernel 5.0+) | Legacy systems |
+| Feature              | Swap File                            | Swap Partition                  |
+| -------------------- | ------------------------------------ | ------------------------------- |
+| Resizable            | Yes (fallocate, truncate)            | No (requires partitioning tool) |
+| Location flexibility | Any filesystem (except ZFS)          | Dedicated partition             |
+| Multiple             | Yes (multiple swap files)            | No (one per partition)          |
+| Performance          | Slightly lower (filesystem overhead) | Slightly higher (raw device)    |
+| Recommended for      | Modern Linux (kernel 5.0+)           | Legacy systems                  |
 
 ```bash
 # Create a swap file
@@ -712,8 +710,8 @@ free -h
 ```
 
 :::warning
-Do not create a swap file on a ZFS dataset. ZFS does not support swap files due to
-its copy-on-write nature. Use a swap file on ext4/xfs or a dedicated swap partition instead.
+Do not create a swap file on a ZFS dataset. ZFS does not support swap files due to its
+copy-on-write nature. Use a swap file on ext4/xfs or a dedicated swap partition instead.
 :::
 
 ### NUMA Memory Policy Deep Dive
@@ -757,7 +755,8 @@ AIDA64 provides the most detailed memory benchmarking on Windows:
 - **Memory Read:** Sequential read throughput at various block sizes.
 - **Memory Write:** Sequential write throughput.
 - **Memory Copy:** Copy throughput (read from one location, write to another).
-- **Memory Latency:** Access latency at various block sizes and access patterns (random, sequential).
+- **Memory Latency:** Access latency at various block sizes and access patterns (random,
+  sequential).
 
 ### Linux Memory Benchmarking
 
@@ -778,21 +777,21 @@ numactl -p 1 bandwidth  # Measure bandwidth on node 0
 
 ### Interpreting Memory Benchmark Results
 
-| Metric | DDR4-3600 CL16 | DDR5-6000 CL30 | DDR5-7200 CL34 |
-|--------|---------------|---------------|---------------|
-| Read (GB/s) | 45–50 | 75–85 | 90–100 |
-| Write (GB/s) | 40–45 | 60–70 | 75–85 |
-| Copy (GB/s) | 38–42 | 55–65 | 70–80 |
-| Latency (ns) | 50–60 | 60–70 | 65–75 |
-| AIDA64 Read | 50,000 MB/s | 80,000 MB/s | 95,000 MB/s |
-| AIDA64 Latency | 55 ns | 68 ns | 72 ns |
+| Metric         | DDR4-3600 CL16 | DDR5-6000 CL30 | DDR5-7200 CL34 |
+| -------------- | -------------- | -------------- | -------------- |
+| Read (GB/s)    | 45–50          | 75–85          | 90–100         |
+| Write (GB/s)   | 40–45          | 60–70          | 75–85          |
+| Copy (GB/s)    | 38–42          | 55–65          | 70–80          |
+| Latency (ns)   | 50–60          | 60–70          | 65–75          |
+| AIDA64 Read    | 50,000 MB/s    | 80,000 MB/s    | 95,000 MB/s    |
+| AIDA64 Latency | 55 ns          | 68 ns          | 72 ns          |
 
 ## DDR5 Power Management and PMIC
 
 ### On-DIMM PMIC Architecture
 
-DDR5's most significant architectural change is the relocation of the PMIC (Power Management
-IC) from the motherboard to the DIMM itself. Each DDR5 DIMM has its own PMIC that manages:
+DDR5's most significant architectural change is the relocation of the PMIC (Power Management IC)
+from the motherboard to the DIMM itself. Each DDR5 DIMM has its own PMIC that manages:
 
 - **VDD (1.1 V):** Core power supply for the DRAM cells.
 - **VDDQ (1.1 V):** I/O power supply for the data bus.
@@ -801,17 +800,18 @@ IC) from the motherboard to the DIMM itself. Each DDR5 DIMM has its own PMIC tha
 
 ### PMIC Impact on Tuning
 
-Because the PMIC is on the DIMM, you cannot independently adjust VDDQ and VPP from the
-motherboard. The motherboard only controls VDD (via the memory controller's VDDIO supply).
-All other voltages are managed by the DIMM's PMIC according to its programmed profile.
+Because the PMIC is on the DIMM, you cannot independently adjust VDDQ and VPP from the motherboard.
+The motherboard only controls VDD (via the memory controller's VDDIO supply). All other voltages are
+managed by the DIMM's PMIC according to its programmed profile.
 
 This means:
+
 - **VDDQ and VPP tuning** is not available on DDR5 without specialized tools or custom PMIC
   firmware.
-- **VDD adjustment** from the motherboard affects the PMIC's input voltage, which may or may
-  not change the actual VDDQ and VPP depending on the PMIC's regulation mode.
-- **Some DIMMs** expose PMIC configuration through SMBus (System Management Bus), allowing
-  tools like Thaiphoon Burner or specialized BIOS implementations to adjust internal voltages.
+- **VDD adjustment** from the motherboard affects the PMIC's input voltage, which may or may not
+  change the actual VDDQ and VPP depending on the PMIC's regulation mode.
+- **Some DIMMs** expose PMIC configuration through SMBus (System Management Bus), allowing tools
+  like Thaiphoon Burner or specialized BIOS implementations to adjust internal voltages.
 
 ### DDR5 Training and PMIC
 
@@ -872,27 +872,27 @@ $$
 
 For a CPU that can execute at 5.0 GHz and needs 2 bytes of memory access per instruction:
 
-| Memory Config | Bandwidth | Theoretical Max IPC |
-|---------------|-----------|---------------------|
-| DDR4-3200 single channel | 25.6 GB/s | 6.4 IPC |
-| DDR4-3200 dual channel | 51.2 GB/s | 12.8 IPC |
-| DDR5-6000 dual channel | 96.0 GB/s | 24.0 IPC |
-| DDR5-7200 dual channel | 115.2 GB/s | 28.8 IPC |
+| Memory Config            | Bandwidth  | Theoretical Max IPC |
+| ------------------------ | ---------- | ------------------- |
+| DDR4-3200 single channel | 25.6 GB/s  | 6.4 IPC             |
+| DDR4-3200 dual channel   | 51.2 GB/s  | 12.8 IPC            |
+| DDR5-6000 dual channel   | 96.0 GB/s  | 24.0 IPC            |
+| DDR5-7200 dual channel   | 115.2 GB/s | 28.8 IPC            |
 
 Real-world IPC is much lower because not every instruction accesses memory. However, the principle
 holds: insufficient memory bandwidth bottlenecks the CPU.
 
 ### Intel Gear Mode Impact on Latency
 
-| Gear Mode | Memory Controller Clock | DDR5 Speed Range | Latency Impact |
-|-----------|------------------------|------------------|---------------|
-| Gear 1 | 1:1 (equal to MCLK) | Up to ~5600 MT/s | Lowest latency |
-| Gear 2 | 1:2 (half of MCLK) | Up to ~8400 MT/s | ~2–4 ns additional |
-| Gear 4 | 1:4 (quarter of MCLK) | Extreme speeds | ~6–8 ns additional |
+| Gear Mode | Memory Controller Clock | DDR5 Speed Range | Latency Impact     |
+| --------- | ----------------------- | ---------------- | ------------------ |
+| Gear 1    | 1:1 (equal to MCLK)     | Up to ~5600 MT/s | Lowest latency     |
+| Gear 2    | 1:2 (half of MCLK)      | Up to ~8400 MT/s | ~2–4 ns additional |
+| Gear 4    | 1:4 (quarter of MCLK)   | Extreme speeds   | ~6–8 ns additional |
 
-The latency impact of Gear 2 is typically 3–5 ns. At DDR5-6000 CL30, the absolute latency is
-10.0 ns. At DDR5-7200 CL34 in Gear 2, the absolute latency is 9.4 ns + 3 ns = ~12.4 ns.
-The higher-speed DDR5 is actually slower in terms of absolute latency.
+The latency impact of Gear 2 is typically 3–5 ns. At DDR5-6000 CL30, the absolute latency is 10.0
+ns. At DDR5-7200 CL34 in Gear 2, the absolute latency is 9.4 ns + 3 ns = ~12.4 ns. The higher-speed
+DDR5 is actually slower in terms of absolute latency.
 
 ## Memory Timing Relationships Mathematical Model
 
@@ -903,6 +903,10 @@ The primary timings must satisfy these constraints:
 $$
 tRAS \geq tRCD + tRP + tWR
 $$
+
+> **Note:** The JEDEC spec defines `tRAS >= tRCD + tRP`. Including `tWR` in the sum is a
+> conservative margin used by some memory vendors for additional stability, but it is not part of
+> the official JEDEC specification.
 
 $$
 tRC \geq tRAS + tRP
@@ -921,14 +925,14 @@ next operation begins. Violating any constraint causes data corruption.
 
 ### Secondary and Tertiary Timing Dependencies
 
-| Timing | Depends On | Relationship |
-|--------|-----------|-------------|
-| tRC | tRAS, tRP | $tRC \geq tRAS + tRP$ |
-| tRFC | DRAM density | Larger for denser chips |
-| tREFI | tRFC, temperature | Inversely proportional to temperature |
-| tWTR | tCL, tCWL | Write-to-read turnaround |
-| tRTW | tCL, tCWL | Read-to-write turnaround |
-| tFAW | tRRD_S, tRRD_L | Four-activate window constraint |
+| Timing | Depends On        | Relationship                          |
+| ------ | ----------------- | ------------------------------------- |
+| tRC    | tRAS, tRP         | $tRC \geq tRAS + tRP$                 |
+| tRFC   | DRAM density      | Larger for denser chips               |
+| tREFI  | tRFC, temperature | Inversely proportional to temperature |
+| tWTR   | tCL, tCWL         | Write-to-read turnaround              |
+| tRTW   | tCL, tCWL         | Read-to-write turnaround              |
+| tFAW   | tRRD_S, tRRD_L    | Four-activate window constraint       |
 
 ### Calculating True Latency
 
@@ -952,20 +956,20 @@ $$
 t_{conflict} = tRP + tRCD + tCL + tRAS + tRP
 $$
 
-Understanding these latencies is crucial for database and VM workloads where random access
-patterns dominate.
+Understanding these latencies is crucial for database and VM workloads where random access patterns
+dominate.
 
 ## Memory Stability Edge Cases
 
 ### Cold Boot vs. Warm Boot Stability
 
-Some memory configurations are stable after a warm boot (restart) but fail after a cold boot
-(power off, wait, power on). This is because:
+Some memory configurations are stable after a warm boot (restart) but fail after a cold boot (power
+off, wait, power on). This is because:
 
-1. **Cold boot** subjects the memory controller and DRAM to the full voltage and temperature
-   range. The memory controller must calibrate from scratch.
-2. **Warm boot** benefits from residual charge in the DRAM cells and pre-initialized
-   calibration values cached by the firmware.
+1. **Cold boot** subjects the memory controller and DRAM to the full voltage and temperature range.
+   The memory controller must calibrate from scratch.
+2. **Warm boot** benefits from residual charge in the DRAM cells and pre-initialized calibration
+   values cached by the firmware.
 
 If your system is unstable after a cold boot but stable after a warm boot:
 
@@ -996,9 +1000,3 @@ If four-DIMM stability is poor:
 - Increase VDD by 0.05–0.10 V.
 - Relax secondary timings (tFAW, tRRD).
 - Ensure DIMMs in slots A2/B2 match and DIMMs in A1/B1 match.
-
-:::
-
-:::
-
-:::

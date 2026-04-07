@@ -71,7 +71,7 @@ ORDER BY attname;
 
 ### Histograms
 
-PostgreSQL stores a ** equi-depth histogram** with `default_statistics_target` buckets (default
+PostgreSQL stores an **equi-depth histogram** with `default_statistics_target` buckets (default
 100). Each bucket contains approximately the same number of rows. The histogram is used to estimate
 selectivity for conditions on non-MCV values.
 
@@ -288,7 +288,7 @@ SELECT COUNT(*) FROM large_table;
 ```sql
 -- Hash Join can be parallelized (each worker builds a partial hash table)
 -- Nested Loop Join can be parallelized (each worker handles a subset of outer rows)
--- Merge Join is NOT parallelized (requires sorted inputs)
+-- Merge Join can be parallelized in PostgreSQL 13+ (requires sorted inputs)
 EXPLAIN (ANALYZE)
 SELECT * FROM large_a JOIN large_b ON a.id = b.id;
 ```
