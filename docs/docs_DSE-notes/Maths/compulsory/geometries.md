@@ -536,156 +536,156 @@ $$
 <summary>Wrap-up Questions</summary>
 1. **Question:** Find the equation of the perpendicular bisector of the line segment joining
    $A(3, -1)$ and $B(7, 5)$.
-   <details>
-   <summary>Answer</summary>
-   - Midpoint: $M = \left(\frac{3+7}{2}, \frac{-1+5}{2}\right) = (5, 2)$.
-   - Gradient of $AB$: $m_{AB} = \frac{5 - (-1)}{7 - 3} = \frac{3}{2}$.
-   - Gradient of perpendicular bisector: $m = -\frac{2}{3}$.
-   - Equation: $y - 2 = -\frac{2}{3}(x - 5)$, i.e., $2x + 3y - 16 = 0$.
+<details>
+<summary>Answer</summary>
+- Midpoint: $M = \left(\frac{3+7}{2}, \frac{-1+5}{2}\right) = (5, 2)$.
+- Gradient of $AB$: $m_{AB} = \frac{5 - (-1)}{7 - 3} = \frac{3}{2}$.
+- Gradient of perpendicular bisector: $m = -\frac{2}{3}$.
+- Equation: $y - 2 = -\frac{2}{3}(x - 5)$, i.e., $2x + 3y - 16 = 0$.
 </details>
 
 2. **Question:** Find the equation of the circle passing through the three points $A(0, 0)$,
    $B(4, 0)$, and $C(0, 3)$.
-   <details>
-   <summary>Answer</summary>
-   - Let the circle be $x^2 + y^2 + Dx + Ey + F = 0$.
-   - Substituting $A(0,0)$: $F = 0$.
-   - Substituting $B(4,0)$: $16 + 4D = 0 \implies D = -4$.
-   - Substituting $C(0,3)$: $9 + 3E = 0 \implies E = -3$.
-   - Equation: $x^2 + y^2 - 4x - 3y = 0$, i.e., $(x-2)^2 + \left(y - \frac{3}{2}\right)^2 = \frac{25}{4}$.
-   - Centre $\left(2, \frac{3}{2}\right)$, radius $\frac{5}{2}$.
+<details>
+<summary>Answer</summary>
+- Let the circle be $x^2 + y^2 + Dx + Ey + F = 0$.
+- Substituting $A(0,0)$: $F = 0$.
+- Substituting $B(4,0)$: $16 + 4D = 0 \implies D = -4$.
+- Substituting $C(0,3)$: $9 + 3E = 0 \implies E = -3$.
+- Equation: $x^2 + y^2 - 4x - 3y = 0$, i.e., $(x-2)^2 + \left(y - \frac{3}{2}\right)^2 = \frac{25}{4}$.
+- Centre $\left(2, \frac{3}{2}\right)$, radius $\frac{5}{2}$.
 </details>
 
 3. **Question:** The line $y = 2x + k$ is tangent to the circle $x^2 + y^2 - 4x - 2y + 1 = 0$. Find
    the value(s) of $k$.
-   <details>
-   <summary>Answer</summary>
-   - Substitute $y = 2x + k$ into $(x-2)^2 + (y-1)^2 = 4$:
-   - $(x-2)^2 + (2x + k - 1)^2 = 4$.
-   - Expanding: $x^2 - 4x + 4 + 4x^2 + 4(k-1)x + (k-1)^2 = 4$.
-   - $5x^2 + (4k - 8)x + (k^2 - 2k + 1) = 0$.
-   - For tangency, $\Delta = 0$: $(4k-8)^2 - 4(5)(k^2 - 2k + 1) = 0$.
-   - $16k^2 - 64k + 64 - 20k^2 + 40k - 20 = 0$.
-   - $-4k^2 - 24k + 44 = 0 \implies k^2 + 6k - 11 = 0$.
-   - $k = \frac{-6 \pm \sqrt{36 + 44}}{2} = -3 \pm \sqrt{14}$.
+<details>
+<summary>Answer</summary>
+- Substitute $y = 2x + k$ into $(x-2)^2 + (y-1)^2 = 4$:
+- $(x-2)^2 + (2x + k - 1)^2 = 4$.
+- Expanding: $x^2 - 4x + 4 + 4x^2 + 4(k-1)x + (k-1)^2 = 4$.
+- $5x^2 + (4k - 8)x + (k^2 - 2k + 1) = 0$.
+- For tangency, $\Delta = 0$: $(4k-8)^2 - 4(5)(k^2 - 2k + 1) = 0$.
+- $16k^2 - 64k + 64 - 20k^2 + 40k - 20 = 0$.
+- $-4k^2 - 24k + 44 = 0 \implies k^2 + 6k - 11 = 0$.
+- $k = \frac{-6 \pm \sqrt{36 + 44}}{2} = -3 \pm \sqrt{14}$.
 </details>
 
 4. **Question:** A sector of a circle of radius $12\text{ cm}$ has an arc length of
    $16\pi\text{ cm}$. Find the area of the sector and the area of the corresponding segment if the
    chord length is $20\text{ cm}$.
-   <details>
-   <summary>Answer</summary>
-   - Arc length $l = r\theta$: $16\pi = 12\theta \implies \theta = \frac{4\pi}{3}$ rad.
-   - Area of sector: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(144)\left(\frac{4\pi}{3}\right) = 96\pi \text{ cm}^2$.
-   - Area of triangle formed by the radii and chord: Using the chord length $c = 20$, the triangle has sides $12$, $12$, $20$. Semi-perimeter $s = 22$. By Heron's formula: Area $= \sqrt{22 \times 10 \times 10 \times 2} = \sqrt{4400} = 20\sqrt{11} \text{ cm}^2$.
-   - Alternatively, the perpendicular from centre to chord: $h = \sqrt{12^2 - 10^2} = 2\sqrt{11}$. Triangle area $= \frac{1}{2} \times 20 \times 2\sqrt{11} = 20\sqrt{11}$.
-   - Area of segment $= 96\pi - 20\sqrt{11} \approx 247.3 \text{ cm}^2$.
+<details>
+<summary>Answer</summary>
+- Arc length $l = r\theta$: $16\pi = 12\theta \implies \theta = \frac{4\pi}{3}$ rad.
+- Area of sector: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(144)\left(\frac{4\pi}{3}\right) = 96\pi \text{ cm}^2$.
+- Area of triangle formed by the radii and chord: Using the chord length $c = 20$, the triangle has sides $12$, $12$, $20$. Semi-perimeter $s = 22$. By Heron's formula: Area $= \sqrt{22 \times 10 \times 10 \times 2} = \sqrt{4400} = 20\sqrt{11} \text{ cm}^2$.
+- Alternatively, the perpendicular from centre to chord: $h = \sqrt{12^2 - 10^2} = 2\sqrt{11}$. Triangle area $= \frac{1}{2} \times 20 \times 2\sqrt{11} = 20\sqrt{11}$.
+- Area of segment $= 96\pi - 20\sqrt{11} \approx 247.3 \text{ cm}^2$.
 </details>
 
 5. **Question:** Find the angle between the line joining $A(1, 2, 3)$ and $B(4, 5, 6)$ and the plane
    $x + y + z = 1$.
-   <details>
-   <summary>Answer</summary>
-   - Direction vector of the line: $\mathbf{d} = (4-1, 5-2, 6-3) = (3, 3, 3)$, simplified to $(1, 1, 1)$.
-   - Normal of the plane: $\mathbf{n} = (1, 1, 1)$.
-   - The angle $\alpha$ between $\mathbf{d}$ and $\mathbf{n}$: $\cos\alpha = \frac{|1+1+1|}{\sqrt{3}\sqrt{3}} = \frac{3}{3} = 1$, so $\alpha = 0^\circ$.
-   - The angle $\phi$ between the line and the plane is the complement: $\phi = 90^\circ - 0^\circ = 90^\circ$.
-   - The line is parallel to the plane (perpendicular to the normal).
+<details>
+<summary>Answer</summary>
+- Direction vector of the line: $\mathbf{d} = (4-1, 5-2, 6-3) = (3, 3, 3)$, simplified to $(1, 1, 1)$.
+- Normal of the plane: $\mathbf{n} = (1, 1, 1)$.
+- The angle $\alpha$ between $\mathbf{d}$ and $\mathbf{n}$: $\cos\alpha = \frac{|1+1+1|}{\sqrt{3}\sqrt{3}} = \frac{3}{3} = 1$, so $\alpha = 0^\circ$.
+- The angle $\phi$ between the line and the plane is the complement: $\phi = 90^\circ - 0^\circ = 90^\circ$.
+- The line is parallel to the plane (perpendicular to the normal).
 </details>
 
 6. **Question:** Points $A(1, 2)$, $B(4, 6)$, and $C(7, 4)$ are vertices of a triangle. Find the
    equation of the altitude from $A$ to $BC$, the area of triangle $ABC$, and the length of the
    altitude from $A$.
-   <details>
-   <summary>Answer</summary>
-   - Gradient of $BC$: $m_{BC} = \frac{4-6}{7-4} = -\frac{2}{3}$.
-   - Gradient of altitude from $A$: $m = \frac{3}{2}$ (negative reciprocal).
-   - Equation of altitude: $y - 2 = \frac{3}{2}(x - 1)$, i.e., $3x - 2y + 1 = 0$.
-   - Area of $\triangle ABC$: $\frac{1}{2}|1(6-4) + 4(4-2) + 7(2-6)| = \frac{1}{2}|2 + 8 - 28| = \frac{1}{2}(18) = 9$ square units.
-   - Length of $BC$: $\sqrt{(7-4)^2 + (4-6)^2} = \sqrt{9 + 4} = \sqrt{13}$.
-   - Altitude from $A$: $\frac{2 \times \text{Area}}{BC} = \frac{18}{\sqrt{13}} = \frac{18\sqrt{13}}{13}$.
+<details>
+<summary>Answer</summary>
+- Gradient of $BC$: $m_{BC} = \frac{4-6}{7-4} = -\frac{2}{3}$.
+- Gradient of altitude from $A$: $m = \frac{3}{2}$ (negative reciprocal).
+- Equation of altitude: $y - 2 = \frac{3}{2}(x - 1)$, i.e., $3x - 2y + 1 = 0$.
+- Area of $\triangle ABC$: $\frac{1}{2}|1(6-4) + 4(4-2) + 7(2-6)| = \frac{1}{2}|2 + 8 - 28| = \frac{1}{2}(18) = 9$ square units.
+- Length of $BC$: $\sqrt{(7-4)^2 + (4-6)^2} = \sqrt{9 + 4} = \sqrt{13}$.
+- Altitude from $A$: $\frac{2 \times \text{Area}}{BC} = \frac{18}{\sqrt{13}} = \frac{18\sqrt{13}}{13}$.
 </details>
 
 7. **Question:** Find the equation of the circle which touches the $x$-axis at $(3, 0)$ and passes
    through $(1, 4)$.
-   <details>
-   <summary>Answer</summary>
-   - Since the circle touches the $x$-axis at $(3, 0)$, the centre lies on the vertical line $x = 3$, so the centre is $C(3, r)$ where $r$ is the radius.
-   - The circle equation is $(x-3)^2 + (y-r)^2 = r^2$.
-   - Substituting $(1, 4)$: $(1-3)^2 + (4-r)^2 = r^2$.
-   - $4 + 16 - 8r + r^2 = r^2 \implies 20 - 8r = 0 \implies r = \frac{5}{2}$.
-   - Centre: $(3, \frac{5}{2})$, radius: $\frac{5}{2}$.
-   - Equation: $(x-3)^2 + \left(y - \frac{5}{2}\right)^2 = \frac{25}{4}$, i.e., $x^2 + y^2 - 6x - 5y + 12 = 0$.
+<details>
+<summary>Answer</summary>
+- Since the circle touches the $x$-axis at $(3, 0)$, the centre lies on the vertical line $x = 3$, so the centre is $C(3, r)$ where $r$ is the radius.
+- The circle equation is $(x-3)^2 + (y-r)^2 = r^2$.
+- Substituting $(1, 4)$: $(1-3)^2 + (4-r)^2 = r^2$.
+- $4 + 16 - 8r + r^2 = r^2 \implies 20 - 8r = 0 \implies r = \frac{5}{2}$.
+- Centre: $(3, \frac{5}{2})$, radius: $\frac{5}{2}$.
+- Equation: $(x-3)^2 + \left(y - \frac{5}{2}\right)^2 = \frac{25}{4}$, i.e., $x^2 + y^2 - 6x - 5y + 12 = 0$.
 </details>
 
 8. **Question:** The vertices of a triangle are $A(2, 1, -1)$, $B(0, 3, -4)$, and $C(5, 0, 2)$. Find
    (a) the length of each side, (b) the area of the triangle, and (c) the equation of the plane
    containing the triangle.
-   <details>
-   <summary>Answer</summary>
-   - (a) Side lengths:
-     - $AB = \sqrt{(0-2)^2 + (3-1)^2 + (-4+1)^2} = \sqrt{4 + 4 + 9} = \sqrt{17}$
-     - $BC = \sqrt{(5-0)^2 + (0-3)^2 + (2+4)^2} = \sqrt{25 + 9 + 36} = \sqrt{70}$
-     - $CA = \sqrt{(2-5)^2 + (1-0)^2 + (-1-2)^2} = \sqrt{9 + 1 + 9} = \sqrt{19}$
-   - (b) Using the cross product method: $\overrightarrow{AB} = (-2, 2, -3)$, $\overrightarrow{AC} = (3, -1, 3)$.
-     - $\overrightarrow{AB} \times \overrightarrow{AC} = (6 - 3, -9 + 9, 2 + 6) = (3, 0, 8)$.
-     - Area $= \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}| = \frac{1}{2}\sqrt{9 + 0 + 64} = \frac{\sqrt{73}}{2}$.
-   - (c) The normal vector is $(3, 0, 8)$. Using point $A(2, 1, -1)$: $3(x-2) + 0(y-1) + 8(z+1) = 0$, i.e., $3x + 8z + 2 = 0$.
+<details>
+<summary>Answer</summary>
+- (a) Side lengths:
+  - $AB = \sqrt{(0-2)^2 + (3-1)^2 + (-4+1)^2} = \sqrt{4 + 4 + 9} = \sqrt{17}$
+  - $BC = \sqrt{(5-0)^2 + (0-3)^2 + (2+4)^2} = \sqrt{25 + 9 + 36} = \sqrt{70}$
+  - $CA = \sqrt{(2-5)^2 + (1-0)^2 + (-1-2)^2} = \sqrt{9 + 1 + 9} = \sqrt{19}$
+- (b) Using the cross product method: $\overrightarrow{AB} = (-2, 2, -3)$, $\overrightarrow{AC} = (3, -1, 3)$.
+  - $\overrightarrow{AB} \times \overrightarrow{AC} = (6 - 3, -9 + 9, 2 + 6) = (3, 0, 8)$.
+  - Area $= \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}| = \frac{1}{2}\sqrt{9 + 0 + 64} = \frac{\sqrt{73}}{2}$.
+- (c) The normal vector is $(3, 0, 8)$. Using point $A(2, 1, -1)$: $3(x-2) + 0(y-1) + 8(z+1) = 0$, i.e., $3x + 8z + 2 = 0$.
 </details>
 
 9. **Question:** Two circles $C_1: x^2 + y^2 - 4x + 2y - 4 = 0$ and
    $C_2: x^2 + y^2 + 2x - 6y + 6 = 0$ intersect at points $A$ and $B$. Find the equation of the
    common chord $AB$ and the coordinates of $A$ and $B$.
-   <details>
-   <summary>Answer</summary>
-   - Common chord: Subtract the two equations: $(-4x + 2y - 4) - (2x - 6y + 6) = 0$.
-   - $-6x + 8y - 10 = 0$, i.e., $3x - 4y + 5 = 0$.
-   - From $C_1$: $(x-2)^2 + (y+1)^2 = 9$. Substitute $y = \frac{3x+5}{4}$:
-   - $(x-2)^2 + \left(\frac{3x+5}{4} + 1\right)^2 = 9$.
-   - $(x-2)^2 + \left(\frac{3x+9}{4}\right)^2 = 9$.
-   - Multiply by $16$: $16(x-2)^2 + (3x+9)^2 = 144$.
-   - $16(x^2 - 4x + 4) + 9x^2 + 54x + 81 = 144$.
-   - $25x^2 - 10x + 25 = 144$.
-   - $25x^2 - 10x - 119 = 0$.
-   - $x = \frac{10 \pm \sqrt{100 + 11900}}{50} = \frac{10 \pm \sqrt{12000}}{50} = \frac{10 \pm 20\sqrt{30}}{50} = \frac{1 \pm 2\sqrt{30}}{5}$.
-   - Corresponding $y$-values from $y = \frac{3x+5}{4}$.
+<details>
+<summary>Answer</summary>
+- Common chord: Subtract the two equations: $(-4x + 2y - 4) - (2x - 6y + 6) = 0$.
+- $-6x + 8y - 10 = 0$, i.e., $3x - 4y + 5 = 0$.
+- From $C_1$: $(x-2)^2 + (y+1)^2 = 9$. Substitute $y = \frac{3x+5}{4}$:
+- $(x-2)^2 + \left(\frac{3x+5}{4} + 1\right)^2 = 9$.
+- $(x-2)^2 + \left(\frac{3x+9}{4}\right)^2 = 9$.
+- Multiply by $16$: $16(x-2)^2 + (3x+9)^2 = 144$.
+- $16(x^2 - 4x + 4) + 9x^2 + 54x + 81 = 144$.
+- $25x^2 - 10x + 25 = 144$.
+- $25x^2 - 10x - 119 = 0$.
+- $x = \frac{10 \pm \sqrt{100 + 11900}}{50} = \frac{10 \pm \sqrt{12000}}{50} = \frac{10 \pm 20\sqrt{30}}{50} = \frac{1 \pm 2\sqrt{30}}{5}$.
+- Corresponding $y$-values from $y = \frac{3x+5}{4}$.
 </details>
 
 10. **Question:** A rectangle $ABCD$ has vertices $A(1, 2)$, $B(5, 6)$, and $C(6, 3)$. Find the
     coordinates of $D$ and the area of the rectangle.
-    <details>
-    <summary>Answer</summary>
-    - Check which sides are adjacent: $AB = \sqrt{16+16} = 4\sqrt{2}$, $BC = \sqrt{1+9} = \sqrt{10}$, $AC = \sqrt{25+1} = \sqrt{26}$.
-    - Verify $AB^2 + BC^2 = 32 + 10 = 42 \neq 26 = AC^2$, so $A$, $B$, $C$ are not right-angled at $B$.
-    - $AB^2 + AC^2 = 32 + 26 = 58 = BC^2$ is also not satisfied. Try $BC^2 + AC^2 = 10 + 26 = 36 = AB^2$. This works, so $\angle BCA = 90^\circ$.
-    - The diagonal is $AB$ with midpoint $M = (3, 4)$.
-    - $D$ is such that $M$ is also the midpoint of $CD$: $D = (2M_x - C_x, 2M_y - C_y) = (6 - 6, 8 - 3) = (0, 5)$.
-    - Area $= AB \times \text{width} = 4\sqrt{2} \times \frac{\sqrt{10}}{\sqrt{2}} \times \sqrt{2}$. Alternatively, using the diagonal and side: the parallelogram method gives $\text{Area} = 4\sqrt{2} \times \sqrt{10} \times \sin\theta$.
-    - Simpler: Area $= |\overrightarrow{AB} \times \overrightarrow{AD}|$ where $\overrightarrow{AD} = (-1, 3)$: Area $= |4 \times 3 - 4 \times (-1)| = |12 + 4| = 16$.
+<details>
+<summary>Answer</summary>
+- Check which sides are adjacent: $AB = \sqrt{16+16} = 4\sqrt{2}$, $BC = \sqrt{1+9} = \sqrt{10}$, $AC = \sqrt{25+1} = \sqrt{26}$.
+- Verify $AB^2 + BC^2 = 32 + 10 = 42 \neq 26 = AC^2$, so $A$, $B$, $C$ are not right-angled at $B$.
+- $AB^2 + AC^2 = 32 + 26 = 58 = BC^2$ is also not satisfied. Try $BC^2 + AC^2 = 10 + 26 = 36 = AB^2$. This works, so $\angle BCA = 90^\circ$.
+- The diagonal is $AB$ with midpoint $M = (3, 4)$.
+- $D$ is such that $M$ is also the midpoint of $CD$: $D = (2M_x - C_x, 2M_y - C_y) = (6 - 6, 8 - 3) = (0, 5)$.
+- Area $= AB \times \text{width} = 4\sqrt{2} \times \frac{\sqrt{10}}{\sqrt{2}} \times \sqrt{2}$. Alternatively, using the diagonal and side: the parallelogram method gives $\text{Area} = 4\sqrt{2} \times \sqrt{10} \times \sin\theta$.
+- Simpler: Area $= |\overrightarrow{AB} \times \overrightarrow{AD}|$ where $\overrightarrow{AD} = (-1, 3)$: Area $= |4 \times 3 - 4 \times (-1)| = |12 + 4| = 16$.
 </details>
 
 11. **Question:** A solid metal cone has base radius $6\text{ cm}$ and slant height $10\text{ cm}$.
     A sector is cut from a circular sheet of metal to form the curved surface. Find (a) the angle of
     the sector, (b) the radius of the circular sheet, and (c) the area of the sector.
-    <details>
-    <summary>Answer</summary>
-    - (a) The arc length of the sector equals the circumference of the base: $l = 2\pi(6) = 12\pi$.
-    - The sector radius equals the slant height: $r = 10\text{ cm}$.
-    - $l = r\theta \implies 12\pi = 10\theta \implies \theta = \frac{6\pi}{5}$ rad $= 216^\circ$.
-    - (b) The radius of the circular sheet is the slant height: $10\text{ cm}$.
-    - (c) Area of sector: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \text{ cm}^2$.
+<details>
+<summary>Answer</summary>
+- (a) The arc length of the sector equals the circumference of the base: $l = 2\pi(6) = 12\pi$.
+- The sector radius equals the slant height: $r = 10\text{ cm}$.
+- $l = r\theta \implies 12\pi = 10\theta \implies \theta = \frac{6\pi}{5}$ rad $= 216^\circ$.
+- (b) The radius of the circular sheet is the slant height: $10\text{ cm}$.
+- (c) Area of sector: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \text{ cm}^2$.
 </details>
 
 12. **Question:** Prove that the points $A(-2, 0)$, $B(0, 4)$, $C(6, 2)$, and $D(4, -2)$ are the
     vertices of a rectangle. Find the equation of the circle passing through all four vertices.
-    <details>
-    <summary>Answer</summary>
-    - Midpoint of $AC = \left(\frac{-2+6}{2}, \frac{0+2}{2}\right) = (2, 1)$.
-    - Midpoint of $BD = \left(\frac{0+4}{2}, \frac{4+(-2)}{2}\right) = (2, 1)$.
-    - Since the diagonals bisect each other, $ABCD$ is a parallelogram.
-    - $AB = \sqrt{4 + 16} = 2\sqrt{5}$, $BC = \sqrt{36 + 4} = 2\sqrt{10}$, $AC = \sqrt{64 + 4} = 2\sqrt{17}$.
-    - $AB^2 + BC^2 = 20 + 40 = 60 = AC^2$. The parallelogram has a right angle, so $ABCD$ is a rectangle.
-    - The circle through all four vertices (circumcircle) has centre at the intersection of the diagonals $(2, 1)$ and radius $= \frac{1}{2}AC = \sqrt{17}$.
-    - Equation: $(x-2)^2 + (y-1)^2 = 17$, i.e., $x^2 + y^2 - 4x - 2y - 12 = 0$.
+<details>
+<summary>Answer</summary>
+- Midpoint of $AC = \left(\frac{-2+6}{2}, \frac{0+2}{2}\right) = (2, 1)$.
+- Midpoint of $BD = \left(\frac{0+4}{2}, \frac{4+(-2)}{2}\right) = (2, 1)$.
+- Since the diagonals bisect each other, $ABCD$ is a parallelogram.
+- $AB = \sqrt{4 + 16} = 2\sqrt{5}$, $BC = \sqrt{36 + 4} = 2\sqrt{10}$, $AC = \sqrt{64 + 4} = 2\sqrt{17}$.
+- $AB^2 + BC^2 = 20 + 40 = 60 = AC^2$. The parallelogram has a right angle, so $ABCD$ is a rectangle.
+- The circle through all four vertices (circumcircle) has centre at the intersection of the diagonals $(2, 1)$ and radius $= \frac{1}{2}AC = \sqrt{17}$.
+- Equation: $(x-2)^2 + (y-1)^2 = 17$, i.e., $x^2 + y^2 - 4x - 2y - 12 = 0$.
 </details>
 </details>

@@ -128,158 +128,158 @@ $$
 <details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** How many 8-character passwords exist if they must contain at least one uppercase letter, one lowercase letter, one digit, and one symbol (from 10 symbols), with no repeated characters?
-   <details>
-   <summary>Answer</summary>
-   - Total permutations of 8 distinct characters from 62 options (26 uppercase, 26 lowercase, 10 digits, 10 symbols): $P(62,8)$.  
-   - Subtract invalid cases using inclusion-exclusion:  
-     $$
-     \begin{aligned}
-           P(62,8) - \binom{4}{1}P(52,8) + \binom{4}{2}P(42,8) - \binom{4}{3}P(32,8) + \binom{4}{4}P(22,8)
-     \end{aligned}
-     $$
+<details>
+<summary>Answer</summary>
+- Total permutations of 8 distinct characters from 62 options (26 uppercase, 26 lowercase, 10 digits, 10 symbols): $P(62,8)$.  
+- Subtract invalid cases using inclusion-exclusion:  
+  $$
+  \begin{aligned}
+        P(62,8) - \binom{4}{1}P(52,8) + \binom{4}{2}P(42,8) - \binom{4}{3}P(32,8) + \binom{4}{4}P(22,8)
+  \end{aligned}
+  $$
 </details>
 
 2. **Question:** You have 10 books: 4 distinct mathematics books, 3 identical physics books, and 2 identical chemistry books. How many distinct ways can they be arranged on a shelf?
-   <details>
-   <summary>Answer</summary>
-   - Account for identical books: $\frac{10!}{3! \cdot 2!}$.
+<details>
+<summary>Answer</summary>
+- Account for identical books: $\frac{10!}{3! \cdot 2!}$.
 </details>
 
 3. **Question:** From 10 people, select a committee of 5 with roles: president, vice-president, and 3 indistinct members. How many ways can this be done?
-   <details>
-   <summary>Answer</summary>
-   - Choose president and vice-president (ordered): $\binom{10}{2} \cdot 2!$.  
-   - Choose 3 indistinct members from remaining: $\binom{8}{3}$.  
-   - Total: $\binom{10}{2} \cdot 2! \cdot \binom{8}{3}$.
+<details>
+<summary>Answer</summary>
+- Choose president and vice-president (ordered): $\binom{10}{2} \cdot 2!$.  
+- Choose 3 indistinct members from remaining: $\binom{8}{3}$.  
+- Total: $\binom{10}{2} \cdot 2! \cdot \binom{8}{3}$.
 </details>
 
 4. **Question:** 6 people queue for a bus, but 2 refuse to stand next to each other. How many valid permutations exist?
-   <details>
-   <summary>Answer</summary>
-   - Total permutations: $6!$.  
-   - Subtract permutations where the two are adjacent: $2 \cdot 5!$.  
-   - Valid: $6! - 2 \cdot 5! = 480$.
+<details>
+<summary>Answer</summary>
+- Total permutations: $6!$.  
+- Subtract permutations where the two are adjacent: $2 \cdot 5!$.  
+- Valid: $6! - 2 \cdot 5! = 480$.
 </details>
 
 5. **Question:** An exam has $3$ sections with $5$ questions each. How many ways can you choose $6$ questions if you must pick $\lq 1$ from each section?
-   <details>
-   <summary>Answer</summary>
-   - Use inclusion-exclusion:  
-     $$
-     \binom{15}{6} - \binom{3}{1}\binom{10}{6} + \binom{3}{2}\binom{5}{6} - \binom{3}{3}\binom{0}{6}
-     $$
-     (Note: $\binom{5}{6} = 0$, $\binom{0}{6} = 0$).
+<details>
+<summary>Answer</summary>
+- Use inclusion-exclusion:  
+  $$
+  \binom{15}{6} - \binom{3}{1}\binom{10}{6} + \binom{3}{2}\binom{5}{6} - \binom{3}{3}\binom{0}{6}
+  $$
+  (Note: $\binom{5}{6} = 0$, $\binom{0}{6} = 0$).
 </details>
 
 6. **Question:** Divide 10 students into two groups of 5, but Alice and Bob cannot be in the same group. How many unique arrangements can be made?
-   <details>
-   <summary>Answer</summary>
-   - Total ways to partition into unlabeled groups: $\frac{1}{2}\binom{10}{5}$.  
-   - Subtract cases where Alice and Bob are together: $\frac{1}{2} \left[ \binom{10}{5} - \binom{8}{3} \right]$ (since $\binom{8}{3}$ fixes them together).
+<details>
+<summary>Answer</summary>
+- Total ways to partition into unlabeled groups: $\frac{1}{2}\binom{10}{5}$.  
+- Subtract cases where Alice and Bob are together: $\frac{1}{2} \left[ \binom{10}{5} - \binom{8}{3} \right]$ (since $\binom{8}{3}$ fixes them together).
 </details>
 
 7. **Question:** How many 4-letter words can be formed from "MISSISSIPPI" with no repeated letters?
-   <details>
-   <summary>Answer</summary>
-   - Only 4 distinct letters (M,I,S,P) in the multiset. Impossible to form words with no repeats: $0$.
+<details>
+<summary>Answer</summary>
+- Only 4 distinct letters (M,I,S,P) in the multiset. Impossible to form words with no repeats: $0$.
 </details>
 
 8. **Question:** A pizza place offers 10 distinct toppings (6 meat, 4 vegetable). How many pizzas can be made with 3-5 toppings, including at least one meat and one vegetable?
-   <details>
-   <summary>Answer</summary>
-   - For $k$ toppings ($k = 3,4,5$): $\binom{10}{k} - \binom{6}{k} - \binom{4}{k}$ (exclude all-meat/all-vegetable).  
-   - Sum: $\left[\binom{10}{3}{-}\binom{6}{3}{-}\binom{4}{3}\right] {+} \left[\binom{10}{4}{-}\binom{6}{4}{-}\binom{4}{4}\right] {+} \left[\binom{10}{5}{-}\binom{6}{5}{-}\binom{4}{5}\right] = 96{+}194{+}246 = 536$.
+<details>
+<summary>Answer</summary>
+- For $k$ toppings ($k = 3,4,5$): $\binom{10}{k} - \binom{6}{k} - \binom{4}{k}$ (exclude all-meat/all-vegetable).  
+- Sum: $\left[\binom{10}{3}{-}\binom{6}{3}{-}\binom{4}{3}\right] {+} \left[\binom{10}{4}{-}\binom{6}{4}{-}\binom{4}{4}\right] {+} \left[\binom{10}{5}{-}\binom{6}{5}{-}\binom{4}{5}\right] = 96{+}194{+}246 = 536$.
 </details>
 
 9. **Question:** A student must choose 4 courses from 7 morning and 5 afternoon offerings, with $\lq$1 morning and $\lq$2 afternoon courses. How many ways?
-   <details>
-   <summary>Answer</summary>
-   - Cases: (1 morning, 3 afternoon) or (2 morning, 2 afternoon).  
-   - $\binom{7}{1}\binom{5}{3} + \binom{7}{2}\binom{5}{2} = 7 \cdot 10 + 21 \cdot 10 = 280$.
+<details>
+<summary>Answer</summary>
+- Cases: (1 morning, 3 afternoon) or (2 morning, 2 afternoon).  
+- $\binom{7}{1}\binom{5}{3} + \binom{7}{2}\binom{5}{2} = 7 \cdot 10 + 21 \cdot 10 = 280$.
 </details>
 
 10. **Question:** A license plate has 3 distinct letters (A-Z) followed by 3 distinct digits (0-9). How many plates exist if the number formed by the digits is even?
-    <details>
-    <summary>Answer</summary>
-    - Letters: $P(26,3)$.  
-    - Digits: Choose last digit (even: 0,2,4,6,8; 5 options), then arrange first two from remaining 9 digits: $5 \cdot P(9,2)$.  
-    - Total: $P(26,3) \cdot 5 \cdot 9 \cdot 8 = 5,616,000$.
+<details>
+<summary>Answer</summary>
+- Letters: $P(26,3)$.  
+- Digits: Choose last digit (even: 0,2,4,6,8; 5 options), then arrange first two from remaining 9 digits: $5 \cdot P(9,2)$.  
+- Total: $P(26,3) \cdot 5 \cdot 9 \cdot 8 = 5,616,000$.
 </details>
 
 11. **Question:** A bag has 6 identical red, 4 identical blue, and 5 identical green marbles. How many distinct ways can you draw 4 marbles?
-    <details>
-    <summary>Answer</summary>
-    - Nonnegative integer solutions to $R + B + G = 4$: $\binom{4+3-1}{4} = \binom{6}{4} = 15$.
+<details>
+<summary>Answer</summary>
+- Nonnegative integer solutions to $R + B + G = 4$: $\binom{4+3-1}{4} = \binom{6}{4} = 15$.
 </details>
 
 12. **Question:** How many 5-card poker hands contain at least one card from each suit?
-    <details>
-    <summary>Answer</summary>
-    - Choose suit with two cards: $\binom{4}{1}$.  
-    - Choose 2 cards from that suit: $\binom{13}{2}$.  
-    - Choose 1 card from each other suit: $\binom{13}{1}^3$.  
-    - Total: $\binom{4}{1} \binom{13}{2} \binom{13}{1}^3 = 4 \cdot 78 \cdot 13^3$.
+<details>
+<summary>Answer</summary>
+- Choose suit with two cards: $\binom{4}{1}$.  
+- Choose 2 cards from that suit: $\binom{13}{2}$.  
+- Choose 1 card from each other suit: $\binom{13}{1}^3$.  
+- Total: $\binom{4}{1} \binom{13}{2} \binom{13}{1}^3 = 4 \cdot 78 \cdot 13^3$.
 </details>
 
 13. **Question:** Arrange 5 distinct math and 4 distinct history books on a shelf such that no two math books are adjacent.
-    <details>
-    <summary>Answer</summary>
-    - Arrange history books (creates 5 gaps): $4!$.  
-    - Place math books in gaps (one per gap): $5!$.  
-    - Total: $4! \cdot 5! = 24 \cdot 120 = 2,880$.
+<details>
+<summary>Answer</summary>
+- Arrange history books (creates 5 gaps): $4!$.  
+- Place math books in gaps (one per gap): $5!$.  
+- Total: $4! \cdot 5! = 24 \cdot 120 = 2,880$.
 </details>
 
 14. **Question:** How many positive integers $<1000$ have digits summing to $10$?
-    <details>
-    <summary>Answer</summary>
-    - Represent numbers as 3-digit strings (allow leading zeros).  
-    - Nonnegative solutions to $a+b+c=10$ with $0 \leq a,b,c \leq 9$: $\binom{12}{10} - \binom{3}{1} = 66 - 3 = 63$ (subtract cases where a digit $\lq$10).
+<details>
+<summary>Answer</summary>
+- Represent numbers as 3-digit strings (allow leading zeros).  
+- Nonnegative solutions to $a+b+c=10$ with $0 \leq a,b,c \leq 9$: $\binom{12}{10} - \binom{3}{1} = 66 - 3 = 63$ (subtract cases where a digit $\lq$10).
 </details>
 
 15. **Question:** A family (parents, two children) and 3 friends are seated in a row. Parents must sit together, and children must be separated by at least one adult. How many arrangements?
-    <details>
-    <summary>Answer</summary>
-    - Treat parents as a block: $2!$ internal arrangements.  
-    - Total with parents together: $2! \cdot 6! = 1,440$.  
-    - Subtract cases where children are adjacent (treat as a block): $2! \cdot 2! \cdot 5! = 480$.  
-    - Valid: $1,440 - 480 = 960$.
+<details>
+<summary>Answer</summary>
+- Treat parents as a block: $2!$ internal arrangements.  
+- Total with parents together: $2! \cdot 6! = 1,440$.  
+- Subtract cases where children are adjacent (treat as a block): $2! \cdot 2! \cdot 5! = 480$.  
+- Valid: $1,440 - 480 = 960$.
 </details>
 
 16. **Question:** Assign 10 distinct gifts to 3 distinct children such that each gets $\lq$2 gifts.
-    <details>
-    <summary>Answer</summary>
-    - Total assignments: $3^{10}$.  
-    - Subtract cases where a child gets $<2$ gifts (inclusion-exclusion):  
-      $$
-      3^{10} - \binom{3}{1}\left[\binom{10}{0}2^{10} + \binom{10}{1}2^9\right] + \binom{3}{2}\left[1 + 2\binom{10}{1} + \binom{10}{2}2!\right] = 59,049 - 18,099 = 40,950.
-      $$
+<details>
+<summary>Answer</summary>
+- Total assignments: $3^{10}$.  
+- Subtract cases where a child gets $<2$ gifts (inclusion-exclusion):  
+  $$
+  3^{10} - \binom{3}{1}\left[\binom{10}{0}2^{10} + \binom{10}{1}2^9\right] + \binom{3}{2}\left[1 + 2\binom{10}{1} + \binom{10}{2}2!\right] = 59,049 - 18,099 = 40,950.
+  $$
 </details>
 
 17. **Question:** Pair 5 men and 5 women for a dance. Two men (A,B) refuse to dance with a particular woman (X). How many valid pairings?
-    <details>
-    <summary>Answer</summary>
-    - Total pairings: $5!$.  
-    - Subtract pairings where A or B is paired with X: $5! - 2 \cdot 4! = 120 - 48 = 72$.
+<details>
+<summary>Answer</summary>
+- Total pairings: $5!$.  
+- Subtract pairings where A or B is paired with X: $5! - 2 \cdot 4! = 120 - 48 = 72$.
 </details>
 
 18. **Question:** How many distinct 4-digit numbers can be formed from {1,2,3,4,5,6} with each digit used $\lq2$ times?
-    <details>
-    <summary>Answer</summary>
-    - Case 1 (all distinct): $\binom{6}{4}4! = 360$.  
-    - Case 2 (one digit twice, two once): $\binom{6}{1}\binom{5}{2} \frac{4!}{2!} = 720$.  
-    - Case 3 (two digits twice): $\binom{6}{2} \frac{4!}{2!2!} = 90$.  
-    - Total: $360 + 720 + 90 = 1,170$.
+<details>
+<summary>Answer</summary>
+- Case 1 (all distinct): $\binom{6}{4}4! = 360$.  
+- Case 2 (one digit twice, two once): $\binom{6}{1}\binom{5}{2} \frac{4!}{2!} = 720$.  
+- Case 3 (two digits twice): $\binom{6}{2} \frac{4!}{2!2!} = 90$.  
+- Total: $360 + 720 + 90 = 1,170$.
 </details>
 
 19. **Question:** A coin is flipped 10 times. How many outcomes have between 3 and 5 heads (inclusive)?
-    <details>
-    <summary>Answer</summary>
-    - Sum: $\binom{10}{3} + \binom{10}{4} + \binom{10}{5} = 120 + 210 + 252 = 582$.
+<details>
+<summary>Answer</summary>
+- Sum: $\binom{10}{3} + \binom{10}{4} + \binom{10}{5} = 120 + 210 + 252 = 582$.
 </details>
 
 20. **Question:** A bakery has 8 types of donuts. How many ways to buy a dozen (12) if you must buy $\lq 1$ of each type?
-    <details>
-    <summary>Answer</summary>
-    - First take one of each type. Distribute remaining 4 donuts freely: $\binom{4+8-1}{4} = \binom{11}{4} = 330$.
+<details>
+<summary>Answer</summary>
+- First take one of each type. Distribute remaining 4 donuts freely: $\binom{4+8-1}{4} = \binom{11}{4} = 330$.
 </details>
 </details>

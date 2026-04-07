@@ -363,211 +363,211 @@ Intersection: $(-\infty, 3)$.
 <details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Solve the inequality $\dfrac{2x - 1}{3} \leq \dfrac{x + 2}{4} + 1$.
-   <details>
-   <summary>Answer</summary>
-   Multiply through by $12$ (the LCM of $3$ and $4$, which is positive so the inequality sign is preserved):
+<details>
+<summary>Answer</summary>
+Multiply through by $12$ (the LCM of $3$ and $4$, which is positive so the inequality sign is preserved):
 
-   $$
-   4(2x - 1) \leq 3(x + 2) + 12
-   $$
+$$
+4(2x - 1) \leq 3(x + 2) + 12
+$$
 
-   $$
-   8x - 4 \leq 3x + 6 + 12
-   $$
+$$
+8x - 4 \leq 3x + 6 + 12
+$$
 
-   $$
-   5x \leq 22 \implies x \leq \frac{22}{5}
-   $$
+$$
+5x \leq 22 \implies x \leq \frac{22}{5}
+$$
 
-   Solution: $\left(-\infty, \dfrac{22}{5}\right]$.
+Solution: $\left(-\infty, \dfrac{22}{5}\right]$.
 </details>
 
 2. **Question:** Solve $x^2 - 6x + 9 \geq 0$.
-   <details>
-   <summary>Answer</summary>
-   Factorize: $(x - 3)^2 \geq 0$.
+<details>
+<summary>Answer</summary>
+Factorize: $(x - 3)^2 \geq 0$.
 
-   Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all real numbers.
+Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all real numbers.
 
-   Solution: $\mathbb{R}$.
+Solution: $\mathbb{R}$.
 </details>
 
 3. **Question:** Find the range of $x$ for which $x^2 - 3x - 10 < 0$ and $2x + 1 > 0$ both hold.
-   <details>
-   <summary>Answer</summary>
-   From $x^2 - 3x - 10 < 0$: $(x - 5)(x + 2) < 0 \implies -2 < x < 5$.
+<details>
+<summary>Answer</summary>
+From $x^2 - 3x - 10 < 0$: $(x - 5)(x + 2) < 0 \implies -2 < x < 5$.
 
-   From $2x + 1 > 0$: $x > -\dfrac{1}{2}$.
+From $2x + 1 > 0$: $x > -\dfrac{1}{2}$.
 
-   Intersection: $-\dfrac{1}{2} < x < 5$, i.e., $\left(-\dfrac{1}{2}, 5\right)$.
+Intersection: $-\dfrac{1}{2} < x < 5$, i.e., $\left(-\dfrac{1}{2}, 5\right)$.
 </details>
 
 4. **Question:** Solve $|3x - 5| < 7$.
-   <details>
-   <summary>Answer</summary>
-   $$
-   -7 < 3x - 5 < 7
-   $$
+<details>
+<summary>Answer</summary>
+$$
+-7 < 3x - 5 < 7
+$$
 
-   $$
-   -2 < 3x < 12
-   $$
+$$
+-2 < 3x < 12
+$$
 
-   $$
-   -\frac{2}{3} < x < 4
-   $$
+$$
+-\frac{2}{3} < x < 4
+$$
 
-   Solution: $\left(-\dfrac{2}{3}, 4\right)$.
+Solution: $\left(-\dfrac{2}{3}, 4\right)$.
 </details>
 
 5. **Question:** Solve $|2x + 3| \geq x^2 + 2$.
-   <details>
-   <summary>Answer</summary>
-   This inequality combines absolute value and quadratic expressions. Consider two cases.
+<details>
+<summary>Answer</summary>
+This inequality combines absolute value and quadratic expressions. Consider two cases.
 
-   **Case 1:** $2x + 3 \geq 0$ (i.e., $x \geq -\dfrac{3}{2}$), so $|2x + 3| = 2x + 3$:
+**Case 1:** $2x + 3 \geq 0$ (i.e., $x \geq -\dfrac{3}{2}$), so $|2x + 3| = 2x + 3$:
 
-   $$
-   2x + 3 \geq x^2 + 2 \implies x^2 - 2x - 1 \leq 0
-   $$
+$$
+2x + 3 \geq x^2 + 2 \implies x^2 - 2x - 1 \leq 0
+$$
 
-   Roots: $x = \dfrac{2 \pm \sqrt{4 + 4}}{2} = 1 \pm \sqrt{2}$.
+Roots: $x = \dfrac{2 \pm \sqrt{4 + 4}}{2} = 1 \pm \sqrt{2}$.
 
-   So $1 - \sqrt{2} \leq x \leq 1 + \sqrt{2}$.
+So $1 - \sqrt{2} \leq x \leq 1 + \sqrt{2}$.
 
-   Combined with $x \geq -\dfrac{3}{2}$: $\max\!\left(1 - \sqrt{2},\; -\dfrac{3}{2}\right) \leq x \leq 1 + \sqrt{2}$.
+Combined with $x \geq -\dfrac{3}{2}$: $\max\!\left(1 - \sqrt{2},\; -\dfrac{3}{2}\right) \leq x \leq 1 + \sqrt{2}$.
 
-   Since $1 - \sqrt{2} \approx -0.414 > -\dfrac{3}{2} = -1.5$, the constraint is $1 - \sqrt{2} \leq x \leq 1 + \sqrt{2}$.
+Since $1 - \sqrt{2} \approx -0.414 > -\dfrac{3}{2} = -1.5$, the constraint is $1 - \sqrt{2} \leq x \leq 1 + \sqrt{2}$.
 
-   **Case 2:** $2x + 3 < 0$ (i.e., $x < -\dfrac{3}{2}$), so $|2x + 3| = -(2x + 3)$:
+**Case 2:** $2x + 3 < 0$ (i.e., $x < -\dfrac{3}{2}$), so $|2x + 3| = -(2x + 3)$:
 
-   $$
-   -2x - 3 \geq x^2 + 2 \implies x^2 + 2x + 5 \leq 0
-   $$
+$$
+-2x - 3 \geq x^2 + 2 \implies x^2 + 2x + 5 \leq 0
+$$
 
-   Discriminant: $\Delta = 4 - 20 = -16 < 0$. Since $a = 1 > 0$, the expression is always positive. No solution in this case.
+Discriminant: $\Delta = 4 - 20 = -16 < 0$. Since $a = 1 > 0$, the expression is always positive. No solution in this case.
 
-   Solution: $[1 - \sqrt{2},\; 1 + \sqrt{2}]$.
+Solution: $[1 - \sqrt{2},\; 1 + \sqrt{2}]$.
 </details>
 
 6. **Question:** For what values of $k$ does the quadratic equation $x^2 + 2kx + k + 6 = 0$ have two distinct real roots?
-   <details>
-   <summary>Answer</summary>
-   For two distinct real roots, the [discriminant](./functions.md#discriminant) must satisfy $\Delta > 0$:
+<details>
+<summary>Answer</summary>
+For two distinct real roots, the [discriminant](./functions.md#discriminant) must satisfy $\Delta > 0$:
 
-   $$
-   \Delta = (2k)^2 - 4(1)(k + 6) = 4k^2 - 4k - 24 > 0
-   $$
+$$
+\Delta = (2k)^2 - 4(1)(k + 6) = 4k^2 - 4k - 24 > 0
+$$
 
-   $$
-   k^2 - k - 6 > 0
-   $$
+$$
+k^2 - k - 6 > 0
+$$
 
-   Factorize: $(k - 3)(k + 2) > 0$.
+Factorize: $(k - 3)(k + 2) > 0$.
 
-   Since $a = 1 > 0$, the parabola opens upward. The expression is positive outside the roots.
+Since $a = 1 > 0$, the parabola opens upward. The expression is positive outside the roots.
 
-   Solution: $k < -2$ or $k > 3$, i.e., $(-\infty, -2) \cup (3, \infty)$.
+Solution: $k < -2$ or $k > 3$, i.e., $(-\infty, -2) \cup (3, \infty)$.
 </details>
 
 7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$, $|x - 2| \leq 3$, and $x > 0$.
-   <details>
-   <summary>Answer</summary>
-   From $x^2 - 5x + 4 \leq 0$: $(x-1)(x-4) \leq 0 \implies 1 \leq x \leq 4$.
+<details>
+<summary>Answer</summary>
+From $x^2 - 5x + 4 \leq 0$: $(x-1)(x-4) \leq 0 \implies 1 \leq x \leq 4$.
 
-   From $|x - 2| \leq 3$: $-3 \leq x - 2 \leq 3 \implies -1 \leq x \leq 5$.
+From $|x - 2| \leq 3$: $-3 \leq x - 2 \leq 3 \implies -1 \leq x \leq 5$.
 
-   From $x > 0$: $x \in (0, \infty)$.
+From $x > 0$: $x \in (0, \infty)$.
 
-   Intersection of all three:
-   - From the first: $[1, 4]$.
-   - From the second: $[-1, 5]$.
-   - From the third: $(0, \infty)$.
+Intersection of all three:
+- From the first: $[1, 4]$.
+- From the second: $[-1, 5]$.
+- From the third: $(0, \infty)$.
 
-   Combined: $[1, 4]$.
+Combined: $[1, 4]$.
 
-   Solution: $[1, 4]$.
+Solution: $[1, 4]$.
 </details>
 
 8. **Question:** A ball is thrown upward from a height of $2$ m with an initial velocity of $20$ m/s. The height $h$ (in metres) after $t$ seconds is given by $h(t) = -5t^2 + 20t + 2$. During what time interval is the ball at a height greater than $17$ m?
-   <details>
-   <summary>Answer</summary>
-   We need $h(t) > 17$:
+<details>
+<summary>Answer</summary>
+We need $h(t) > 17$:
 
-   $$
-   -5t^2 + 20t + 2 > 17
-   $$
+$$
+-5t^2 + 20t + 2 > 17
+$$
 
-   $$
-   -5t^2 + 20t - 15 > 0
-   $$
+$$
+-5t^2 + 20t - 15 > 0
+$$
 
-   Divide by $-5$ (reverse inequality):
+Divide by $-5$ (reverse inequality):
 
-   $$
-   t^2 - 4t + 3 < 0
-   $$
+$$
+t^2 - 4t + 3 < 0
+$$
 
-   Factorize: $(t - 1)(t - 3) < 0 \implies 1 < t < 3$.
+Factorize: $(t - 1)(t - 3) < 0 \implies 1 < t < 3$.
 
-   The ball is above $17$ m during the interval $(1, 3)$ seconds.
+The ball is above $17$ m during the interval $(1, 3)$ seconds.
 </details>
 
 9. **Question:** Solve $\dfrac{x^2 - 4}{x - 1} \geq 0$.
-   <details>
-   <summary>Answer</summary>
-   First note that $x \neq 1$ (the denominator cannot be zero).
+<details>
+<summary>Answer</summary>
+First note that $x \neq 1$ (the denominator cannot be zero).
 
-   Factorize the numerator: $\dfrac{(x-2)(x+2)}{x-1} \geq 0$.
+Factorize the numerator: $\dfrac{(x-2)(x+2)}{x-1} \geq 0$.
 
-   Critical points: $x = -2$, $x = 1$, $x = 2$.
+Critical points: $x = -2$, $x = 1$, $x = 2$.
 
-   Sign diagram:
+Sign diagram:
 
-   $$
-   \begin{array}{c|cccc}
-   x & (-\infty, -2) & (-2, 1) & (1, 2) & (2, \infty) \\
-   \hline
-   (x-2) & - & - & - & + \\
-   (x+2) & - & + & + & + \\
-   (x-1) & - & - & + & + \\
-   \hline
-   \dfrac{(x-2)(x+2)}{x-1} & - & + & - & +
-   \end{array}
-   $$
+$$
+\begin{array}{c|cccc}
+x & (-\infty, -2) & (-2, 1) & (1, 2) & (2, \infty) \\
+\hline
+(x-2) & - & - & - & + \\
+(x+2) & - & + & + & + \\
+(x-1) & - & - & + & + \\
+\hline
+\dfrac{(x-2)(x+2)}{x-1} & - & + & - & +
+\end{array}
+$$
 
-   The expression is $\geq 0$ when $-2 \leq x < 1$ or $x \geq 2$.
+The expression is $\geq 0$ when $-2 \leq x < 1$ or $x \geq 2$.
 
-   (Note: $x = -2$ is included because the numerator is zero there; $x = 1$ is excluded; $x = 2$ is included.)
+(Note: $x = -2$ is included because the numerator is zero there; $x = 1$ is excluded; $x = 2$ is included.)
 
-   Solution: $[-2, 1) \cup [2, \infty)$.
+Solution: $[-2, 1) \cup [2, \infty)$.
 </details>
 
 10. **Question:** Solve $|x^2 - 3x + 1| < 3$.
-    <details>
-    <summary>Answer</summary>
-    $$
-    -3 < x^2 - 3x + 1 < 3
-    $$
+<details>
+<summary>Answer</summary>
+$$
+-3 < x^2 - 3x + 1 < 3
+$$
 
-    Split into two inequalities:
+Split into two inequalities:
 
-    **Left inequality:** $x^2 - 3x + 1 > -3 \implies x^2 - 3x + 4 > 0$.
+**Left inequality:** $x^2 - 3x + 1 > -3 \implies x^2 - 3x + 4 > 0$.
 
-    Discriminant: $\Delta = 9 - 16 = -7 < 0$. Since $a = 1 > 0$, this is always true.
+Discriminant: $\Delta = 9 - 16 = -7 < 0$. Since $a = 1 > 0$, this is always true.
 
-    **Right inequality:** $x^2 - 3x + 1 < 3 \implies x^2 - 3x - 2 < 0$.
+**Right inequality:** $x^2 - 3x + 1 < 3 \implies x^2 - 3x - 2 < 0$.
 
-    Roots: $x = \dfrac{3 \pm \sqrt{9 + 8}}{2} = \dfrac{3 \pm \sqrt{17}}{2}$.
+Roots: $x = \dfrac{3 \pm \sqrt{9 + 8}}{2} = \dfrac{3 \pm \sqrt{17}}{2}$.
 
-    Since $a = 1 > 0$, the expression is negative between the roots:
+Since $a = 1 > 0$, the expression is negative between the roots:
 
-    $$
-    \frac{3 - \sqrt{17}}{2} < x < \frac{3 + \sqrt{17}}{2}
-    $$
+$$
+\frac{3 - \sqrt{17}}{2} < x < \frac{3 + \sqrt{17}}{2}
+$$
 
-    Since the left inequality imposes no restriction, the solution is:
+Since the left inequality imposes no restriction, the solution is:
 
-    Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
+Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
 </details>
 </details>
