@@ -303,7 +303,7 @@ where:
 
 ### Molar Volume
 
-At STP ($0\degree\text{C}$, $101.3\text{ kPa}$), one mole of any ideal gas occupies $22.7\text{ L}$.
+At STP ($0\degree\text{C}$, $100\text{ kPa}$), one mole of any ideal gas occupies $22.7\text{ L}$.
 
 At RTP ($25\degree\text{C}$, $100\text{ kPa}$), one mole occupies $24.8\text{ L}$.
 
@@ -888,8 +888,8 @@ $$
 
 The mass loss is $1.32\text{ g}$. Find the percentage of NaHCO$_3$ in the mixture.
 
-The mass loss is due to H$_2$O + CO$_2$ ($2 \times 44 = 88\text{ g/mol}$ for each 2 mol NaHCO$_3$,
-or $31\text{ g/mol}$ per mole of NaHCO$_3$).
+The mass loss is due to H$_2$O + CO$_2$ ($18 + 44 = 62\text{ g/mol}$ for each 2 mol NaHCO$_3$, or
+$31\text{ g/mol}$ per mole of NaHCO$_3$).
 
 $$
 n(\text{NaHCO}_3) = \frac{1.32}{31} = 0.0426\text{ mol}

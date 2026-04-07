@@ -491,8 +491,8 @@ $2\text{SO}_2(\text{g}) + \text{O}_2(\text{g}) \rightleftharpoons 2\text{SO}_3(\
 happens when the pressure is increased?
 
 The product side has 2 moles of gas, the reactant side has 3. The equilibrium shifts to the right
-(fewer moles of gas), increasing [SO$_3$] and $K_p$... wait, $K_p$ does not change. Only the
-position shifts.
+(fewer moles of gas), increasing [SO$_3$]. Note that $K_p$ is a constant at a given temperature and
+does not change; only the equilibrium position shifts.
 
 ### Question 2 (Paper 2 style)
 
@@ -721,10 +721,10 @@ $\Delta H = -198\text{ kJ/mol}$.
 
 **(a)** Explain the effect of increasing temperature on the equilibrium yield of SO$_3$.
 
-Since the forward reaction is exothermic, increasing temperature shifts the equilibrium to the left
-(endothermic direction). This decreases the yield of SO$_3$ and increases $K$... wait, for an
-exothermic reaction, $K$ decreases with temperature. Let me correct: increasing temperature shifts
-equilibrium LEFT, decreasing [SO$_3$] and DECREASING $K$.
+Since the forward reaction is exothermic ($\Delta H \lt 0$), increasing temperature shifts the
+equilibrium to the left (endothermic direction) by Le Chatelier's principle. This decreases the
+yield of SO$_3$ and decreases $K$ (since $\ln K \propto -\Delta H / T$, increasing $T$ for an
+exothermic reaction reduces $K$).
 
 **(b)** Explain the effect of increasing pressure on the equilibrium yield of SO$_3$.
 

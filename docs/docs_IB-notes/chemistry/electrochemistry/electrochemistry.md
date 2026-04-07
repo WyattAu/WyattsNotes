@@ -238,7 +238,7 @@ circuit.
 | **Cathode**          | Electrode where reduction occurs. Electrons are consumed. Positive electrode in galvanic cells.                                                                        |
 | **Salt bridge**      | Completes the internal circuit by allowing ion migration. Maintains electrical neutrality. Contains an inert electrolyte (e.g., $\text{KNO}_3$(aq), $\text{KCl}$(aq)). |
 | **External circuit** | Wire connecting the two electrodes through which electrons flow.                                                                                                       |
-| **Volmeter**         | Measures the potential difference between the two half-cells.                                                                                                          |
+| **Voltmeter**        | Measures the potential difference between the two half-cells.                                                                                                          |
 
 ### Salt Bridge
 
@@ -352,7 +352,7 @@ direction to what would occur spontaneously.
 
 ### Key Differences: Galvanic vs. Electrolytic
 
-| Feature               | Galvanic Cell                               | Electrotic Cell                                 |
+| Feature               | Galvanic Cell                               | Electrolytic Cell                               |
 | --------------------- | ------------------------------------------- | ----------------------------------------------- |
 | Energy conversion     | Chemical to electrical                      | Electrical to chemical                          |
 | Spontaneity           | Spontaneous ($E^\circ_{\text{cell}} \gt 0$) | Non-spontaneous ($E^\circ_{\text{cell}} \lt 0$) |

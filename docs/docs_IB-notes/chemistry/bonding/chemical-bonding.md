@@ -77,12 +77,12 @@ $$
 | Higher ion charge | More negative (stronger) | $\text{MgO} \gt \text{NaCl}$ |
 | Smaller ion radii | More negative (stronger) | $\text{LiF} \gt \text{NaF}$  |
 
-| Compound | $   | z^+ | $   | $     | z^- | $   | $r_+ + r_-$ (pm) | Lattice Energy (kJ/mol) |
-| -------- | --- | --- | --- | ----- | --- | --- | ---------------- | ----------------------- |
-| NaCl     | +1  | -1  | 276 | -787  |
-| MgO      | +2  | -2  | 210 | -3795 |
-| LiF      | +1  | -1  | 201 | -1036 |
-| CaO      | +2  | -2  | 241 | -3414 |
+| Compound | z⁺  | z⁻  | r⁺ + r⁻ (pm) | Lattice Energy (kJ/mol) |
+| -------- | --- | --- | ------------ | ----------------------- |
+| NaCl     | +1  | -1  | 276          | -787                    |
+| MgO      | +2  | -2  | 210          | -3795                   |
+| LiF      | +1  | -1  | 201          | -1036                   |
+| CaO      | +2  | -2  | 241          | -3414                   |
 
 ### The Born-Haber Cycle
 
@@ -208,7 +208,8 @@ The Pauling scale assigns fluorine (the most electronegative element) a value of
 | O       | 3.5                         |
 | N, Cl   | 3.0                         |
 | C       | 2.5                         |
-| S, P    | 2.1                         |
+| S       | 2.6                         |
+| P       | 2.2                         |
 | H       | 2.2                         |
 | Na, K   | 0.9, 0.8                    |
 
@@ -910,11 +911,12 @@ $$
 $$
 
 $$
--1220 = 2416 + \Delta H_{\text{LE}}
+
+-1220 = 1416 + \Delta H_{\text{LE}}
 $$
 
 $$
-\Delta H_{\text{LE}} = -1220 - 2416 = -3636\text{ kJ/mol}
+\Delta H_{\text{LE}} = -1220 - 1416 = -2636\text{ kJ/mol}
 $$
 
 (6 marks for correct cycle setup, correct substitution of all values, and correct arithmetic.)

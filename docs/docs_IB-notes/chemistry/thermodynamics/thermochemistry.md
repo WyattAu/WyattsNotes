@@ -25,7 +25,7 @@ reaction at constant pressure.
 
 Standard enthalpy changes are measured under standard conditions:
 
-- Pressure: $100\text{ kPa}$ ($1\text{ atm}$)
+- Pressure: $100\text{ kPa}$ (IB standard)
 - Concentration: $1\text{ mol/L}$ for solutions
 - Temperature: usually $298\text{ K}$ ($25\degree\text{C}$)
 - All substances in their standard states
@@ -448,10 +448,10 @@ Given the following data, calculate the lattice energy of MgO:
 - $\Delta H_{\text{at}}$(Mg) = $+148\text{ kJ/mol}$
 - $\frac{1}{2}\Delta H_{\text{at}}$(O$_2$) = $+249\text{ kJ/mol}$
 - IE$_1$(Mg) + IE$_2$(Mg) = $+2188\text{ kJ/mol}$
-- EA$_1$(O) + EA$_2$(O) = $-798\text{ kJ/mol}$
+- EA$_1$(O) + EA$_2$(O) = $+603\text{ kJ/mol}$
 
 $$
-\Delta H_{\text{latt}} = -602 - 148 - 249 - 2188 + 798 = -2389\text{ kJ/mol}
+\Delta H_{\text{latt}} = -602 - 148 - 249 - 2188 - 603 = -3790\text{ kJ/mol}
 $$
 
 ### Question 4 (Paper 1 style)
@@ -707,7 +707,7 @@ element in its standard state under standard conditions.
 | Cl$_2$       | Gas            | $+122$                          |
 | H$_2$        | Gas            | $+218$                          |
 | C (graphite) | Solid          | $+717$                          |
-| O$_2$        | Gas            | $+498$                          |
+| O$_2$        | Gas            | $+249$                          |
 
 ### Electron Affinity Trends
 

@@ -114,7 +114,7 @@ $$
 **Incomplete combustion** (limited oxygen):
 
 $$
-\text{C}_n\text{H}_{2n+2} + \frac{3n+1}{2}\text{O}_2 \to \text{CO} + (n+1)\text{H}_2\text{O}
+\text{C}_n\text{H}_{2n+2} + \frac{2n+1}{2}\text{O}_2 \to n\text{CO} + (n+1)\text{H}_2\text{O}
 $$
 
 Or: produces carbon (soot) and water.

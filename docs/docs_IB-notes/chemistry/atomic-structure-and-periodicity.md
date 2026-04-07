@@ -123,12 +123,12 @@ The maximum number of electrons in shell $n$ is $2n^2$.
 **Definition.** An **orbital** is a region of space where there is a high probability ($\ge 90\%$)
 of finding an electron. Each orbital holds a maximum of two electrons with opposite spins.
 
-| Subshell | Number of orbitals | Max electrons | Orbital shape     |
-| -------- | ------------------ | ------------- | ----------------- |
-| $s$      | $1$                | $2$           | Spherical         |
-| $p$      | $3$                | $6$           | Dumbbell          |
-| $d$      | $5$                | $10$          | Cloverleaf        |
-| $f$      | $7$                | $14$          | Complex (7 lobes) |
+| Subshell | Number of orbitals | Max electrons | Orbital shape         |
+| -------- | ------------------ | ------------- | --------------------- |
+| $s$      | $1$                | $2$           | Spherical             |
+| $p$      | $3$                | $6$           | Dumbbell              |
+| $d$      | $5$                | $10$          | Cloverleaf            |
+| $f$      | $7$                | $14$          | Complex (multi-lobed) |
 
 ### Quantum Numbers
 
@@ -306,7 +306,7 @@ nuclei of adjacent atoms in the solid or liquid), which is significantly larger 
 
 :::info[Example — Isoelectronic series]
 
-$\text{O}^{2-} \lt \text{F}^- \lt \text{Na}^+ \lt \text{Mg}^{2+} \lt \text{Al}^{3+}$
+$\text{O}^{2-} \gt \text{F}^- \gt \text{Na}^+ \gt \text{Mg}^{2+} \gt \text{Al}^{3+}$
 
 All have the neon configuration ($1s^2\, 2s^2\, 2p^6$, $10$ electrons). The nuclear charge increases
 from $Z = 8$ to $Z = 13$, so the radius decreases.
@@ -1038,8 +1038,8 @@ $$
 | $4$               | $2p^1$           | $11577$                 | $n = 2$ (jump!) |
 | $\ldots$          |                  |                         |                 |
 | $11$              | $2s^1$           | $6521$                  | $n = 2$         |
-| $12$              | $1s^1$           | $6521$                  | $n = 1$ (jump!) |
-| $13$              | $1s^1$           | $6521$                  | $n = 1$         |
+| $12$              | $1s^1$           | $18560$                 | $n = 1$ (jump!) |
+| $13$              | $1s^1$           | $21600$                 | $n = 1$         |
 
 The jumps reveal:
 
