@@ -597,7 +597,7 @@ class Config:
         return new
 
     def __deepcopy__(self, memo):
-        """Deep copy — new object, copied references."""
+        """Deep copy — new object, copied values."""
         new = self.__class__.__new__(self.__class__)
         memo[id(self)] = new
         new.data = copy.deepcopy(self.data, memo)

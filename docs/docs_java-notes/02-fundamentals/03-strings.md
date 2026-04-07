@@ -87,8 +87,8 @@ This reduces memory usage by roughly 50% for most real-world strings.
 ```java
 // LATIN1 encoding — 1 byte per char
 String latin1 = "Hello, World!";
-// UTF-16 encoding — 2 bytes per char (contains é)
-String utf16 = "Café";
+// UTF-16 encoding — 2 bytes per char (contains 世, U+4E16, outside LATIN1 range)
+String utf16 = "世界";
 ```
 
 The coder flag is stored in the `coder` field of the `String` object. You cannot control which
@@ -482,7 +482,7 @@ default) if you use `getBytes()` or `new String(byte[])` without an explicit cha
 
 ```java
 String s = String.format("Name: %s, Age: %d, Balance: $%,.2f", "Alice", 30, 12345.678);
-// "Name: Alice, Age: 30, Balance: USD12,345.68"
+// "Name: Alice, Age: 30, Balance: $12,345.68"
 ```
 
 | Specifier | Meaning                          | Example                 |
@@ -943,4 +943,3 @@ List<String> lines = text.lines().collect(Collectors.toList());
 "".isEmpty();       // true
 "   ".isEmpty();    // false — contains whitespace characters
 ```
-

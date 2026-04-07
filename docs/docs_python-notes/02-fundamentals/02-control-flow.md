@@ -936,6 +936,7 @@ The `@contextmanager` decorator turns a generator function into a context manage
 from contextlib import contextmanager
 import tempfile
 import os
+import shutil
 
 @contextmanager
 def temporary_directory():

@@ -396,7 +396,7 @@ cjk_str = "\u4f60\u597d"
 emoji_str = "\U0001f600"
 
 print(sys.getsizeof(ascii_str))  # 50 bytes (1 byte/char + overhead)
-print(sys.getsizeof(cjk_str))    # 82 bytes (4 bytes/char + overhead)
+print(sys.getsizeof(cjk_str))    # 82 bytes (2 bytes/char + overhead)
 print(sys.getsizeof(emoji_str))  # 76 bytes (4 bytes/char + overhead)
 ```
 
@@ -418,7 +418,7 @@ print(f"2 + 2 = {2 + 2}")
 # Format specifications
 pi = 3.14159265
 print(f"Pi: {pi:.4f}")          # "Pi: 3.1416"
-print(f"{'centered':^{width}}")  # "     centered      "
+print(f"{'centered':^{width}}")  # "      centered      "
 
 # Debugging (Python 3.8+)
 x = 42

@@ -439,10 +439,7 @@ class User(BaseModel):
         self.name = name
 
 u = User("Alice")
-# Initializing User
-# Initializing User  (BaseModel.__init__ -> super().__init__ -> LoggingMixin)
-# Wait -- no, it's:
-# Initializing User (LoggingMixin runs first via MRO)
+# Initializing User (printed once, via LoggingMixin in MRO)
 ```
 
 ## Multiple Inheritance and Mixins
@@ -731,14 +728,12 @@ print(p == Person("Alice", 30, "unknown"))  # True
 ```python
 from dataclasses import dataclass, field
 
-@dataclass
+@dataclass(slots=True)
 class Order:
     id: int
     items: list = field(default_factory=list)
     total: float = 0.0
     priority: bool = False
-
-    __slots__ = ("id", "items", "total", "priority")
 ```
 
 The `field()` function provides fine-grained control:
@@ -989,7 +984,7 @@ class Validated(ABC):
     def validate(self):
         pass
 
-@dataclass(slots=True)
+@dataclass(slots=True, eq=False)
 class Account(Validated):
     owner: str
     balance: float = 0.0

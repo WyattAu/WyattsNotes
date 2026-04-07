@@ -17,7 +17,7 @@ the smallest known distance.
 
 ```python
 import heapq
-from collections import defaultdict
+from collections import defaultdict, deque
 
 def dijkstra(graph, source):
     """
@@ -468,10 +468,10 @@ def ford_fulkerson(n, capacity, source, sink):
 
     def bfs():
         visited = [False] * n
-        queue = [source]
+        queue = deque([source])
         visited[source] = True
         while queue:
-            u = queue.pop(0)
+            u = queue.popleft()
             for v in range(n):
                 if not visited[v] and capacity[u][v] > 0:
                     parent[v] = u
@@ -526,10 +526,10 @@ def min_cut(n, capacity, source, sink):
 
     # BFS on residual graph to find reachable vertices from source
     visited = [False] * n
-    queue = [source]
+    queue = deque([source])
     visited[source] = True
     while queue:
-        u = queue.pop(0)
+        u = queue.popleft()
         for v in range(n):
             if not visited[v] and capacity[u][v] > 0:
                 visited[v] = True

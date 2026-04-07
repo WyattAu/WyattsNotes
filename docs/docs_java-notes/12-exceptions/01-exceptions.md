@@ -130,8 +130,8 @@ try {
 ```
 
 The pipe operator lets you handle multiple exception types with identical logic. The variable `e` is
-implicitly `final`. You cannot catch two exceptions from the same inheritance hierarchy —
-`IOException | FileNotFoundException` is a compiler error.
+implicitly `final`. The alternatives cannot be related by subtyping — if one exception type is a
+subtype of another, it is a compiler error (e.g., `IOException | FileNotFoundException`).
 
 ### try-with-resources (Java 7+)
 
@@ -188,8 +188,10 @@ public class DebugResource implements AutoCloseable {
 
 ### finally Block Semantics and Gotchas
 
-`finally` executes unless the JVM exits (via `System.exit()` or an `Error` like `OutOfMemoryError`
-that terminates the thread). But there are subtle traps:
+`finally` executes unless the JVM exits (via `System.exit()` or a fatal `Error` that terminates the
+thread). An `OutOfMemoryError` does not typically prevent `finally` from running, but a truly fatal
+error (e.g., `StackOverflowError` leaving no stack space, or `VirtualMachineError`) can. There are
+also subtle traps:
 
 **Gotcha: Return in finally silently discards the try/catch return value**
 
@@ -521,7 +523,7 @@ Creating an exception is expensive because `Throwable` captures the stack trace 
 ```java
 // Benchmark: exception creation vs simple object creation
 // Creating a simple RuntimeException:    ~1-5 microseconds
-// Creating with full stack trace:       ~1-5 microseconds  (same — stack trace is lazy in most JVMs)
+// Creating with full stack trace:       ~1-5 microseconds  (stack trace is captured eagerly in HotSpot)
 // fillInStackTrace() explicitly:        ~1-10 microseconds
 // Throwing and catching (no stack trace): ~0.01 microseconds (near-zero)
 ```

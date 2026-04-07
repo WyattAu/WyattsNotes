@@ -531,7 +531,7 @@ c &= b   # c is now {3, 4}
 c -= b   # c is now set()
 ```
 
-All set operations are O(min(len(a), len(b))) for the basic cases, or O(len(a)) for the in-place
+All set operations are O(len(a) + len(b)) for the basic cases, or O(len(a)) for the in-place
 variants where the right operand can be iterated efficiently.
 
 ### frozenset

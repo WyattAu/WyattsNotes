@@ -438,6 +438,7 @@ def log_duration(label):
 @contextmanager
 def temporary_file(content):
     import tempfile
+    import os
     fd, path = tempfile.mkstemp()
     try:
         with os.fdopen(fd, "w") as f:
@@ -710,7 +711,8 @@ def retry(func, max_retries=3, base_delay=1.0, retryable_exceptions=(RetryableEr
                 break
             delay = base_delay * (2 ** attempt) + random.uniform(0, 1)
             time.sleep(delay)
-    raise last_exception
+    if last_exception is not None:
+        raise last_exception
 ```
 
 ## Common Pitfalls

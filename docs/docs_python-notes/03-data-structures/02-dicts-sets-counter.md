@@ -138,9 +138,8 @@ Since Python 3.7, regular `dict` also preserves insertion order. The differences
 
 :::warning
 `OrderedDict` equality is **order-sensitive**:
-`OrderedDict([(1,2),(3,4)]) != OrderedDict([(3,4),(1,2)])`. Regular `dict` equality in Python 3.7+
-is also order-sensitive during comparison, but the `==` operator on regular dicts does not consider
-order.
+`OrderedDict([(1,2),(3,4)]) != OrderedDict([(3,4),(1,2)])`. Regular `dict` equality does **not**
+consider order — only `OrderedDict` equality is order-sensitive.
 :::
 
 ### LRU Cache with OrderedDict
@@ -693,8 +692,8 @@ print(top5)    # [999998, 999995, 999993, 999990, 999989] (varies)
 print(bottom5) # [0, 1, 2, 3, 4] (varies)
 ```
 
-`nlargest(n, data)` is O(n log k) where `k = n`, making it efficient for small `n` relative to the
-data size. It uses a min-heap of size `k` internally.
+`nlargest(k, data)` is O(N log k) where N = len(data), making it efficient for small `k` relative to
+the data size. It uses a min-heap of size `k` internally.
 
 ### Max-Heap Pattern
 
