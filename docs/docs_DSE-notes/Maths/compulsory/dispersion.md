@@ -9,7 +9,11 @@ categories:
 slug: dispersion
 ---
 
-Statistics is the branch of mathematics concerned with the collection, organisation, analysis, and interpretation of data. In the DSE compulsory syllabus, we focus on **descriptive statistics** -- summarising a dataset through measures of central tendency and measures of dispersion. This page also covers grouped data techniques and graphical representations such as box-and-whisker plots. These tools are frequently combined with [probability](./probability.md) concepts in exam questions.
+Statistics is the branch of mathematics concerned with the collection, organisation, analysis, and
+interpretation of data. In the DSE compulsory syllabus, we focus on **descriptive statistics** --
+summarising a dataset through measures of central tendency and measures of dispersion. This page
+also covers grouped data techniques and graphical representations such as box-and-whisker plots.
+These tools are frequently combined with [probability](./probability.md) concepts in exam questions.
 
 ## Measures of Central Tendency
 
@@ -25,7 +29,8 @@ $$
 \end{aligned}
 $$
 
-The mean uses every data value, making it sensitive to outliers. It is the only measure of central tendency that lends itself to algebraic manipulation (e.g., combining datasets).
+The mean uses every data value, making it sensitive to outliers. It is the only measure of central
+tendency that lends itself to algebraic manipulation (e.g., combining datasets).
 
 <details>
 <summary>Examples</summary>
@@ -35,12 +40,15 @@ The mean uses every data value, making it sensitive to outliers. It is the only 
 
 ### Median
 
-The **median** is the middle value of an ordered dataset. For $n$ data values sorted in ascending order:
+The **median** is the middle value of an ordered dataset. For $n$ data values sorted in ascending
+order:
 
 - If $n$ is odd, the median is the value at position $\dfrac{n+1}{2}$.
-- If $n$ is even, the median is the average of the values at positions $\dfrac{n}{2}$ and $\dfrac{n}{2}+1$.
+- If $n$ is even, the median is the average of the values at positions $\dfrac{n}{2}$ and
+  $\dfrac{n}{2}+1$.
 
-The median is robust to outliers since it depends only on the position of data points, not their magnitude.
+The median is robust to outliers since it depends only on the position of data points, not their
+magnitude.
 
 <details>
 <summary>Examples</summary>
@@ -51,7 +59,8 @@ The median is robust to outliers since it depends only on the position of data p
 
 ### Mode
 
-The **mode** is the value that occurs most frequently in a dataset. A dataset may be unimodal (one mode), bimodal (two modes), multimodal, or have no mode at all.
+The **mode** is the value that occurs most frequently in a dataset. A dataset may be unimodal (one
+mode), bimodal (two modes), multimodal, or have no mode at all.
 
 The mode is the only measure of central tendency applicable to nominal (categorical) data.
 
@@ -72,7 +81,8 @@ The mode is the only measure of central tendency applicable to nominal (categori
 
 ## Measures of Dispersion
 
-Measures of dispersion (spread) quantify how far individual data values deviate from the centre. Two datasets can share the same mean yet have very different spreads.
+Measures of dispersion (spread) quantify how far individual data values deviate from the centre. Two
+datasets can share the same mean yet have very different spreads.
 
 ### Range
 
@@ -82,7 +92,8 @@ $$
 \end{aligned}
 $$
 
-The range is simple to compute but uses only two data points, making it highly sensitive to outliers.
+The range is simple to compute but uses only two data points, making it highly sensitive to
+outliers.
 
 <details>
 <summary>Examples</summary>
@@ -117,7 +128,9 @@ The IQR is resistant to outliers since it ignores the most extreme $50\%$ of dat
 
 ### Variance
 
-Variance measures the average squared deviation from the mean. There are two versions depending on whether the data represents the **entire population** or a **sample** drawn from a larger population.
+Variance measures the average squared deviation from the mean. There are two versions depending on
+whether the data represents the **entire population** or a **sample** drawn from a larger
+population.
 
 **Population variance** (divides by $n$):
 
@@ -143,7 +156,12 @@ $$
 \end{aligned}
 $$
 
-**Why $n$ vs $n-1$?** Dividing by $n-1$ (Bessel's correction) provides an _unbiased_ estimator of the population variance when working with a sample. Using only $n$ data points, the sample mean $\bar{x}$ is closer to the data points than the true population mean $\mu$, so the squared deviations tend to underestimate the true spread. Dividing by $n-1$ compensates for this. In the DSE syllabus, unless the problem explicitly identifies the data as a sample, the population formula (dividing by $n$) is typically expected.
+**Why $n$ vs $n-1$?** Dividing by $n-1$ (Bessel's correction) provides an _unbiased_ estimator of
+the population variance when working with a sample. Using only $n$ data points, the sample mean
+$\bar{x}$ is closer to the data points than the true population mean $\mu$, so the squared
+deviations tend to underestimate the true spread. Dividing by $n-1$ compensates for this. In the DSE
+syllabus, unless the problem explicitly identifies the data as a sample, the population formula
+(dividing by $n$) is typically expected.
 
 <details>
 <summary>Examples</summary>
@@ -156,7 +174,8 @@ $$
 
 ### Standard Deviation
 
-The **standard deviation** is the positive square root of the variance, restoring the units to match the original data:
+The **standard deviation** is the positive square root of the variance, restoring the units to match
+the original data:
 
 $$
 \begin{aligned}
@@ -164,7 +183,8 @@ $$
 \end{aligned}
 $$
 
-Since the standard deviation is in the same units as the data, it is more interpretable than the variance for comparing spread.
+Since the standard deviation is in the same units as the data, it is more interpretable than the
+variance for comparing spread.
 
 <details>
 <summary>Examples</summary>
@@ -174,13 +194,17 @@ Since the standard deviation is in the same units as the data, it is more interp
 
 ## Grouped Data
 
-When data is presented in a **grouped frequency distribution**, individual values are not available. We work with class intervals instead.
+When data is presented in a **grouped frequency distribution**, individual values are not available.
+We work with class intervals instead.
 
 ### Key Definitions
 
-- **Class boundaries**: The endpoints of each class interval, with no gaps between consecutive classes. For example, if raw intervals are $10$--$19$ and $20$--$29$, the class boundaries are $9.5$--$19.5$ and $19.5$--$29.5$.
+- **Class boundaries**: The endpoints of each class interval, with no gaps between consecutive
+  classes. For example, if raw intervals are $10$--$19$ and $20$--$29$, the class boundaries are
+  $9.5$--$19.5$ and $19.5$--$29.5$.
 - **Class width**: The difference between the upper and lower class boundaries.
-- **Class mark (midpoint)**: $x_i = \dfrac{\text{lower boundary} + \text{upper boundary}}{2}$, used as the representative value for all data in the class.
+- **Class mark (midpoint)**: $x_i = \dfrac{\text{lower boundary} + \text{upper boundary}}{2}$, used
+  as the representative value for all data in the class.
 
 ### Mean of Grouped Data
 
@@ -190,11 +214,13 @@ $$
 \end{aligned}
 $$
 
-where $k$ is the number of classes, $f_i$ is the frequency of class $i$, and $x_i$ is the class mark.
+where $k$ is the number of classes, $f_i$ is the frequency of class $i$, and $x_i$ is the class
+mark.
 
 ### Assumed Mean Method (Coding Method)
 
-When class marks are equally spaced, let $h$ be the common class width and $A$ be the class mark of a convenient class (the assumed mean). Define $d_i = \dfrac{x_i - A}{h}$. Then:
+When class marks are equally spaced, let $h$ be the common class width and $A$ be the class mark of
+a convenient class (the assumed mean). Define $d_i = \dfrac{x_i - A}{h}$. Then:
 
 $$
 \begin{aligned}
@@ -225,6 +251,7 @@ $$
           &= 54.5 + 0.5 = 55
 \end{aligned}
 $$
+
 </details>
 
 ### Variance of Grouped Data
@@ -247,7 +274,8 @@ $$
 
 ### Histogram Estimation
 
-In a histogram, the area of each bar represents the frequency of the corresponding class. If class widths are unequal, the height of each bar is the **frequency density**:
+In a histogram, the area of each bar represents the frequency of the corresponding class. If class
+widths are unequal, the height of each bar is the **frequency density**:
 
 $$
 \begin{aligned}
@@ -255,7 +283,8 @@ $$
 \end{aligned}
 $$
 
-The median, quartiles, and other percentiles can be estimated from a cumulative frequency curve (ogive) by linear interpolation within the relevant class.
+The median, quartiles, and other percentiles can be estimated from a cumulative frequency curve
+(ogive) by linear interpolation within the relevant class.
 
 ## Properties of Variance
 
@@ -269,7 +298,8 @@ $$
 \end{aligned}
 $$
 
-Adding a constant $b$ shifts all values equally and does not affect spread. Multiplying by $a$ scales the spread by $|a|$.
+Adding a constant $b$ shifts all values equally and does not affect spread. Multiplying by $a$
+scales the spread by $|a|$.
 
 For the mean: $\overline{aX+b} = a\bar{x} + b$.
 
@@ -281,7 +311,8 @@ For the mean: $\overline{aX+b} = a\bar{x} + b$.
 
 ### Combined Variance
 
-Given two datasets $X$ and $Y$ with sizes $n_1$ and $n_2$, means $\bar{x}_1$ and $\bar{x}_2$, and variances $\sigma_1^2$ and $\sigma_2^2$, the **combined variance** of the pooled dataset is:
+Given two datasets $X$ and $Y$ with sizes $n_1$ and $n_2$, means $\bar{x}_1$ and $\bar{x}_2$, and
+variances $\sigma_1^2$ and $\sigma_2^2$, the **combined variance** of the pooled dataset is:
 
 $$
 \begin{aligned}
@@ -297,7 +328,8 @@ $$
 \end{aligned}
 $$
 
-The additional terms $n_1(\bar{x}_1 - \bar{x}_c)^2$ and $n_2(\bar{x}_2 - \bar{x}_c)^2$ account for the between-group variation caused by the difference in means.
+The additional terms $n_1(\bar{x}_1 - \bar{x}_c)^2$ and $n_2(\bar{x}_2 - \bar{x}_c)^2$ account for
+the between-group variation caused by the difference in means.
 
 <details>
 <summary>Examples</summary>
@@ -312,13 +344,15 @@ $$
              &= \frac{24 + 36 + 96 + 144}{10} = \frac{300}{10} = 30
 \end{aligned}
 $$
+
 </details>
 
 ## Applications
 
 ### Coefficient of Variation
 
-The **coefficient of variation (CV)** allows comparison of variability between datasets measured in different units or with vastly different means:
+The **coefficient of variation (CV)** allows comparison of variability between datasets measured in
+different units or with vastly different means:
 
 $$
 \begin{aligned}
@@ -337,7 +371,8 @@ A larger CV indicates greater relative dispersion.
 
 ### Box-and-Whisker Plots
 
-A **box-and-whisker plot** is a standardised graphical display of the five-number summary: minimum, $Q_1$, $Q_2$ (median), $Q_3$, and maximum.
+A **box-and-whisker plot** is a standardised graphical display of the five-number summary: minimum,
+$Q_1$, $Q_2$ (median), $Q_3$, and maximum.
 
 **Construction:**
 
@@ -345,7 +380,8 @@ A **box-and-whisker plot** is a standardised graphical display of the five-numbe
 2. Draw a line inside the box at $Q_2$.
 3. Extend "whiskers" to the minimum and maximum values.
 
-**Identifying outliers:** A data point is considered a potential outlier if it falls below $Q_1 - 1.5 \times \text{IQR}$ or above $Q_3 + 1.5 \times \text{IQR}$.
+**Identifying outliers:** A data point is considered a potential outlier if it falls below
+$Q_1 - 1.5 \times \text{IQR}$ or above $Q_3 + 1.5 \times \text{IQR}$.
 
 <details>
 <summary>Examples</summary>
@@ -380,14 +416,17 @@ While not computed algebraically in the compulsory syllabus, students should rec
 - Mode: none (all values are distinct).
 </details>
 
-2. **Question:** A dataset has mean $20$ and variance $36$. Find the mean and variance of the transformed dataset $Y = \dfrac{X - 20}{6}$.
+2. **Question:** A dataset has mean $20$ and variance $36$. Find the mean and variance of the
+transformed dataset $Y = \dfrac{X - 20}{6}$.
 <details>
 <summary>Answer</summary>
+
 - $\bar{y} = \frac{1}{6}(20) - \frac{20}{6} = \frac{20-20}{6} = 0$.
 - $\text{Var}(Y) = \left(\frac{1}{6}\right)^2 \times 36 = \frac{1}{36} \times 36 = 1$.
 </details>
 
-3. **Question:** For the grouped frequency distribution below, find the mean and standard deviation using the coding method.
+3. **Question:** For the grouped frequency distribution below, find the mean and standard deviation
+   using the coding method.
 
    | Class    | Frequency |
    | -------- | --------- |
@@ -401,17 +440,21 @@ While not computed algebraically in the compulsory syllabus, students should rec
 <summary>Answer</summary>
 - Class marks: $14.5, 24.5, 34.5, 44.5, 54.5$. Let $A = 34.5$, $h = 10$.
 - $d_i$: $-2, -1, 0, 1, 2$.
-- $\sum f_i = 50$, $\sum f_i d_i = -10 + 0 + 10 + 10 = 10$.
-- $\bar{x} = 34.5 + \frac{10}{50} \times 10 = 34.5 + 2 = 36.5$.
+- $\sum f_i = 50$, $\sum f_i d_i = 5(-2) + 12(-1) + 18(0) + 10(1) + 5(2) = -10 + (-12) + 0 + 10 + 10 = -2$.
+- $\bar{x} = 34.5 + \frac{-2}{50} \times 10 = 34.5 - 0.4 = 34.1$.
 - $\sum f_i d_i^2 = 5(4) + 12(1) + 18(0) + 10(1) + 5(4) = 20 + 12 + 0 + 10 + 20 = 62$.
-- $\sigma_d^2 = \frac{62}{50} - \left(\frac{10}{50}\right)^2 = 1.24 - 0.04 = 1.2$.
-- $\sigma^2 = 1.2 \times 10^2 = 120$, so $\sigma = \sqrt{120} \approx 10.95$.
+- $\sigma_d^2 = rac{62}{50} - \left(rac{-2}{50}ight)^2 = 1.24 - 0.0016 = 1.2384$.
+- $\sigma^2 = 1.2384 	imes 10^2 = 123.84$, so $\sigma = \sqrt{123.84} pprox 11.13$.
 </details>
 
-4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$, $\bar{x}_1 = 72$, $\sigma_1 = 8$). Class B ($n_2 = 20$, $\bar{x}_2 = 80$, $\sigma_2 = 6$). Find the combined mean and combined standard deviation.
+4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$, $\bar{x}_1 = 72$,
+$\sigma_1 = 8$). Class B ($n_2 = 20$, $\bar{x}_2 = 80$, $\sigma_2 = 6$). Find the combined mean and
+combined standard deviation.
 <details>
 <summary>Answer</summary>
-- Combined mean: $\bar{x}_c = \frac{30(72)+20(80)}{50} = \frac{2160+1600}{50} = \frac{3760}{50} = 75.2$.
+
+- Combined mean:
+  $\bar{x}_c = \frac{30(72)+20(80)}{50} = \frac{2160+1600}{50} = \frac{3760}{50} = 75.2$.
 - Combined variance:
   $$
   \begin{aligned}
@@ -424,9 +467,12 @@ While not computed algebraically in the compulsory syllabus, students should rec
 - Combined standard deviation: $\sigma_c = \sqrt{68.16} \approx 8.26$.
 </details>
 
-5. **Question:** The following are the lifetimes (in hours) of $10$ light bulbs: $820, 790, 810, 780, 830, 800, 795, 815, 805, 855$. Determine the range, IQR, and identify any outliers.
+5. **Question:** The following are the lifetimes (in hours) of $10$ light bulbs:
+$820, 790, 810, 780, 830, 800, 795, 815, 805, 855$. Determine the range, IQR, and identify any
+outliers.
 <details>
 <summary>Answer</summary>
+
 - Sorted: $\{780, 790, 795, 800, 805, 810, 815, 820, 830, 855\}$.
 - Range $= 855 - 780 = 75$.
 - $Q_2 = \frac{805+810}{2} = 807.5$.
@@ -437,31 +483,39 @@ While not computed algebraically in the compulsory syllabus, students should rec
 - No outliers (all values lie within $[757.5, 857.5]$).
 </details>
 
-6. **Question:** A farmer records the yields (in kg) of two varieties of wheat over several seasons. Variety A: mean $= 45$, standard deviation $= 5$. Variety B: mean $= 60$, standard deviation $= 9$. Which variety has more consistent yield?
+6. **Question:** A farmer records the yields (in kg) of two varieties of wheat over several seasons.
+Variety A: mean $= 45$, standard deviation $= 5$. Variety B: mean $= 60$, standard deviation $= 9$.
+Which variety has more consistent yield?
 <details>
 <summary>Answer</summary>
+
 - CV$_A = \frac{5}{45} \times 100\% \approx 11.1\%$.
 - CV$_B = \frac{9}{60} \times 100\% = 15.0\%$.
 - Since CV$_A <$ CV$_B$, Variety A has more consistent (less variable) yield relative to its mean.
 </details>
 
-7. **Question:** Given the dataset $\{a, b, c\}$ with mean $10$ and variance $8$, find the value of $a^2 + b^2 + c^2$.
+7. **Question:** Given the dataset $\{a, b, c\}$ with mean $10$ and variance $8$, find the value of
+$a^2 + b^2 + c^2$.
 <details>
 <summary>Answer</summary>
+
 - $\bar{x} = \frac{a+b+c}{3} = 10 \implies a+b+c = 30$.
 - $\sigma^2 = \frac{a^2+b^2+c^2}{3} - \bar{x}^2 = 8$.
 - $\frac{a^2+b^2+c^2}{3} - 100 = 8 \implies a^2+b^2+c^2 = 324$.
 </details>
 
-8. **Question:** A set of $20$ numbers has mean $15$ and standard deviation $3$. If each number is multiplied by $2$ and then $5$ is added, find the new mean and new standard deviation.
+8. **Question:** A set of $20$ numbers has mean $15$ and standard deviation $3$. If each number is
+multiplied by $2$ and then $5$ is added, find the new mean and new standard deviation.
 <details>
 <summary>Answer</summary>
+
 - New mean: $2(15) + 5 = 35$.
 - New variance: $2^2 \times 3^2 = 36$.
 - New standard deviation: $\sqrt{36} = 6$.
 </details>
 
-9. **Question:** The histogram below (described verbally) shows the distribution of weights of $50$ apples. The class intervals and frequencies are:
+9. **Question:** The histogram below (described verbally) shows the distribution of weights of $50$
+   apples. The class intervals and frequencies are:
 
    | Weight (g) | Frequency |
    | ---------- | --------- |
@@ -472,10 +526,12 @@ While not computed algebraically in the compulsory syllabus, students should rec
    | 180 -- 199 | 2         |
 
    Estimate the median weight from the cumulative frequency distribution.
-<details>
-<summary>Answer</summary>
+   <details>
+   <summary>Answer</summary>
+
 - Cumulative frequencies: $6, 20, 40, 48, 50$.
-- The median is the $\frac{50}{2} = 25$th value, which lies in the class $140$--$159$ (cumulative $20$ to $40$).
+- The median is the $\frac{50}{2} = 25$th value, which lies in the class $140$--$159$ (cumulative
+  $20$ to $40$).
 - Using linear interpolation within the class:
   $$
   \begin{aligned}
@@ -484,11 +540,14 @@ While not computed algebraically in the compulsory syllabus, students should rec
                   &= 139.5 + 5 = 144.5 \text{ g}
   \end{aligned}
   $$
-</details>
+  </details>
 
-10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$, find $\sum x_i$, $\sum x_i^2$, the mean, and the population variance. Verify your variance using both the definition formula and the computational formula.
+10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$, find $\sum x_i$, $\sum x_i^2$,
+the mean, and the population variance. Verify your variance using both the definition formula and
+the computational formula.
 <details>
 <summary>Answer</summary>
+
 - $\sum x_i = 3+7+7+2+9+5+1+8+6+4 = 52$.
 - $\sum x_i^2 = 9+49+49+4+81+25+1+64+36+16 = 334$.
 - $\bar{x} = \frac{52}{10} = 5.2$.
@@ -506,21 +565,31 @@ While not computed algebraically in the compulsory syllabus, students should rec
     \sigma^2 &= \frac{334}{10} - \left(\frac{52}{10}\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
   \end{aligned}
   $$
-</details>
+  </details>
 
-11. **Question:** The weekly wages (in dollars) of $8$ workers in a small factory are $3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000$. The factory owner claims the average wage is $\$5150$. Is this claim misleading? Explain using an appropriate measure of central tendency and dispersion.
+11. **Question:** The weekly wages (in dollars) of $8$ workers in a small factory are
+$3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000$. The factory owner claims the average wage is
+$\$5150$. Is this claim misleading? Explain using an appropriate measure of central tendency and
+dispersion.
 <details>
 <summary>Answer</summary>
+
 - Mean: $\bar{x} = \frac{41200}{8} = 5150$. The owner's figure is arithmetically correct.
 - Sorted: $\{3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000\}$.
 - Median: $\frac{4200+4500}{2} = 4350$.
-- The median ($4350$) is a far more representative measure here. The single extreme value of $\$12000$ (likely the owner's own salary or a manager's) inflates the mean by $\$800$. The median is resistant to outliers and better reflects what a typical worker earns.
-- The range ($12000 - 3200 = 8800$) and the large gap between the mean and median both indicate significant skewness, confirming the mean is a poor choice of summary statistic.
+- The median ($4350$) is a far more representative measure here. The single extreme value of
+  $\$12000$ (likely the owner's own salary or a manager's) inflates the mean by $\$800$. The median
+  is resistant to outliers and better reflects what a typical worker earns.
+- The range ($12000 - 3200 = 8800$) and the large gap between the mean and median both indicate
+significant skewness, confirming the mean is a poor choice of summary statistic.
 </details>
 
-12. **Question:** A set of data has variance $25$ and mean $0$. A new set is formed by removing the value $10$ from the original set. If the original set had $n = 6$ values, find the new mean and new variance.
+12. **Question:** A set of data has variance $25$ and mean $0$. A new set is formed by removing the
+value $10$ from the original set. If the original set had $n = 6$ values, find the new mean and new
+variance.
 <details>
 <summary>Answer</summary>
+
 - Original: $\bar{x} = 0$, $\sigma^2 = 25$, $n = 6$.
 - $\sum x_i = 0$, so $\sum x_i^2 = n\sigma^2 + \frac{(\sum x_i)^2}{n} = 6(25) + 0 = 150$.
 - After removing $10$: new sum $= 0 - 10 = -10$, new $n' = 5$.

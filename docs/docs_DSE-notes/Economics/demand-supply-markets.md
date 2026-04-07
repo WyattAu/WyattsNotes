@@ -231,7 +231,11 @@ $$\%\ \text{change in } P = \frac{60 - 50}{50} \times 100\% = 20\%$$
 
 $$\text{PED} = \frac{-20\%}{20\%} = -1$$
 
-PED = 1 (unit elastic). Total revenue remains unchanged.
+PED = 1 (unit elastic by initial-value method). Note: total revenue changes from
+$50 \times 200 = 10{,}000$ to $60 \times 160 = 9{,}600$ (a decrease of 400). The rule "PED = 1
+implies TR unchanged" is exact only for point elasticity on a demand curve of the form $P = k/Q$;
+for a linear demand curve with finite changes, the initial-value PED of $-1$ does not guarantee
+constant TR.
 
 ---
 
@@ -524,6 +528,7 @@ A price ceiling makes housing more affordable for low-income households. However
 shortage (excess demand), may reduce the quality and maintenance of rental properties, and could
 lead to black market activities. Landlords may convert properties to other uses, reducing long-run
 supply.
+
 </details>
 
 ---
@@ -849,6 +854,7 @@ the price charged is greater than MC (P \gt MC). This means the value consumers 
 unit (P) exceeds the cost of producing it (MC). Society would benefit from more output, but the
 monopoly restricts output to maximise profit, creating a deadweight loss. In perfect competition, P
 = MC, which is allocatively efficient.
+
 </details>
 
 :::

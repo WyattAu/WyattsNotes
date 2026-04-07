@@ -992,7 +992,7 @@ Since there is no pressure: $\Psi = -743.3 \text{ kPa}$
 Calculate the water potential of a $0.2 \text{ mol/dm}^3$ $\text{NaCl}$ solution at
 $20^\circ\text{C}$. ($i = 2$ for $\text{NaCl}$)
 
-$$\Psi_s = -(2)(0.2)(8.314)(293) = -974.0 \text{ kPa}$$
+$$\Psi_s = -(2)(0.2)(8.314)(293) = -974.4 \text{ kPa}$$
 
 $\Psi = -974.0 \text{ kPa}$
 
