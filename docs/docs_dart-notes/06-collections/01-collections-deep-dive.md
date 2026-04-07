@@ -273,7 +273,7 @@ the original list, so mutations to the original are visible through the range vi
 
 ### asMap()
 
-Converts a list to an `Iterable<MapEntry<int, T>>`, pairing each element with its index:
+Converts a list to a `Map<int, T>`, pairing each element with its index:
 
 ```dart
 final list = ['a', 'b', 'c'];
@@ -821,13 +821,13 @@ size upfront, use `List(growable: true)` with a pre-allocated capacity, or use `
 
 Dart's default `LinkedHashSet` is a hash table with open addressing:
 
-| Operation        | Complexity     |
-| ---------------- | -------------- | --- | --- | --- | --- |
-| `add(x)`         | O(1) amortized |
-| `contains(x)`    | O(1) amortized |
-| `remove(x)`      | O(1) amortized |
-| `intersection()` | O(min(         | A   | ,   | B   | ))  |
-| `union()`        | O(             | A   | +   | B   | )   |
+| Operation        | Complexity           |
+| ---------------- | -------------------- |
+| `add(x)`         | O(1) amortized       |
+| `contains(x)`    | O(1) amortized       |
+| `remove(x)`      | O(1) amortized       |
+| `intersection()` | O(min(\|A\|, \|B\|)) |
+| `union()`        | O(\|A\| + \|B\|)     |
 
 Hash collisions degrade to O(n) in the worst case, but this is rare with a good hash function. If
 your custom `hashCode` implementation is poor (e.g., always returns the same value), you get a

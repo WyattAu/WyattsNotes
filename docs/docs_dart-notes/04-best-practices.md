@@ -14,7 +14,8 @@ slug: practices
 
 - Always enable null safety (`dart migrate`).
 - Avoid usage of `dynamic` and `Object` declaration, always use `var` or explicit typing.
-- Follow the order of `const` >> `final` >> `var` with no nullability specifier >> `final late` >> `var?`.
+- Follow the order of `const` >> `final` >> `var` with no nullability specifier >> `final late` >>
+  `var?`.
 - Avoid non const top-level variables.
 - Favor immutable data classes (with `freezed` or `equatable`).
 
@@ -49,10 +50,10 @@ slug: practices
 - Avoid global state unless necessary (e.g., use scoped providers).
 - Follow BLoC/Cubit or MVVM patterns.
 - Keep UI (Widgets) and business logic (Models/Controllers) separate.
-  2Reactive Programming:
+- **Reactive Programming:**
 - Use `StreamBuilder`/`FutureBuilder` for async UI updates.
 - Avoid nested reactive widgets (e.g., minimize `StreamBuilder` layers).
-  3State Persistence:
+- **State Persistence:**
 - Use `hydrated_bloc` or `shared_preferences` for local state persistence.
 - Avoid prop drilling with `Provider` or `Riverpod`.
 - Use `freezed` for immutable models and unions.

@@ -39,7 +39,7 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 | **A** | A   | B   |
 | **B** | A   | S   |
 
-Trace for "1101": S → S → A → B → S. Not accepted. ✗
+Trace for "1101": S → S → A → B. Accepted. ✓
 
 Trace for "1001": S → S → A → S → A →... wait, let me retrace.
 

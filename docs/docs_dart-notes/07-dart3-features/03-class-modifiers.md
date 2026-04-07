@@ -493,14 +493,15 @@ Class modifiers can be combined to express precise contracts. Not all combinatio
 
 | First \ Second | `sealed` | `base` | `interface` | `final` | `mixin` |
 | -------------- | -------- | ------ | ----------- | ------- | ------- |
-| `sealed`       | N/A      | No     | No          | No      | No      |
-| `base`         | No       | N/A    | No          | No      | Yes     |
-| `interface`    | No       | No     | N/A         | No      | Yes     |
-| `final`        | No       | No     | No          | N/A     | Yes     |
-| `mixin`        | No       | Yes    | Yes         | Yes     | N/A     |
+| `sealed`       | N/A      | Yes    | Yes         | Yes     | Yes     |
+| `base`         | Yes      | N/A    | No          | No      | Yes     |
+| `interface`    | Yes      | No     | N/A         | No      | Yes     |
+| `final`        | Yes      | No     | No          | N/A     | Yes     |
+| `mixin`        | Yes      | Yes    | Yes         | Yes     | N/A     |
 
-`sealed` cannot combine with any other modifier because `sealed` already restricts everything to the
-same library. Adding `base` or `interface` to `sealed` would be redundant.
+`sealed` can combine with `base`, `interface`, `final`, and `mixin` (e.g., `sealed interface`,
+`sealed mixin class`). These combinations restrict subtypes to the same library while also applying
+the additional modifier's semantics.
 
 ### `sealed interface`
 

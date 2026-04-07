@@ -204,7 +204,8 @@ faster.
 lands in this cluster is $(L + 1)/m$ (one more than the cluster length, since the slot after the
 cluster also triggers probing into the cluster). When an insertion lands in the cluster, the cluster
 grows by at least 1. This positive feedback means large clusters grow disproportionately, leading to
-$O(\log n)$ expected probe length in practice (vs $O(1)$ for uniform hashing).
+degraded performance. The expected number of probes for an unsuccessful search grows rapidly as the
+load factor approaches 1 (vs $O(1)$ for uniform hashing).
 
 More formally, after inserting $n$ keys into a table of size $m$ with linear probing, the expected
 number of probes for an unsuccessful search is approximately:
@@ -297,6 +298,7 @@ $h(k) = k \bmod 7$:
 All keys hash to index 0 — **maximum collisions**. This demonstrates why $m$ should not divide
 common key patterns. If $m = 7$ and all keys are multiples of 7, every key collides. Choose $m$ to
 be a prime not dividing common key values.
+
 </details>
 
 **Problem 2.** Insert keys 10, 22, 31, 4, 15, 28, 17 into a hash table of size 11 using linear
@@ -322,6 +324,7 @@ Final table:
 | Index | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | ----- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Key   | 22  | —   | —   | —   | 4   | 15  | 28  | 17  | —   | 31  | 10  |
+
 </details>
 
 **Problem 3.** Using the same keys as Problem 2, insert into a hash table using chaining with
@@ -341,6 +344,7 @@ $h(k) = k \bmod 5$
 | 4      | 4            |
 
 Load factor: $\alpha = 7/5 = 1.4$.
+
 </details>
 
 **Problem 4.** Compute the polynomial rolling hash of the string "abc" using base $p = 31$ and
@@ -371,6 +375,7 @@ Alternatively, computing iteratively:
 - $2424 / 101 = 24$ remainder $2424 - 2424 = 0$
 
 $h(\text{"abc"}) = 0$.
+
 </details>
 
 **Problem 5.** Explain why the load factor must be less than 1 for open addressing but can exceed 1
@@ -386,6 +391,7 @@ probing, the search for an empty slot may never terminate.
 In chaining, each bucket can hold an arbitrary number of keys (via a linked list). The table never
 "fills up" — chains simply grow longer. However, performance degrades as $\alpha$ increases, since
 search time is proportional to chain length.
+
 </details>
 
 **Problem 6.** Prove that with double hashing, the probe sequence visits all $m$ slots before
@@ -402,6 +408,7 @@ cycles through only $m/g$ distinct values. When $\gcd(d, m) = 1$, by the propert
 arithmetic, the sequence covers all $m$ residues before repeating. $\square$
 
 This is why $h_2(k)$ must be chosen so that $\gcd(h_2(k), m) = 1$.
+
 </details>
 
 **Problem 7.** A hash table with chaining has 1000 slots and contains 500 elements. What is the
@@ -420,6 +427,7 @@ $1 + \frac{\alpha}{2} - \frac{\alpha}{2n} \approx 1 + \frac{\alpha}{2} = 1 + 0.2
 More precisely: for successful search, we examine half the chain on average (the target is equally
 likely to be at any position in the chain). Expected chain length = $\alpha = 0.5$, so expected
 probes = $1 + 0.5/2 = 1.25$.
+
 </details>
 
 **Problem 8.** Design a hash table that maps student IDs (7-digit integers) to names. Specify the
@@ -444,6 +452,7 @@ hash function, table size, and collision resolution method. Justify your choices
 
 For revision on complexity, see
 [Complexity Analysis](/docs/docs_ALevel-notes/computer-science/algorithms/complexity-analysis).
+
 </details>
 
 ---
@@ -458,6 +467,7 @@ value for each of the following keys: 26, 42, 93, 17, 77, 31, 55, 20.
 
 Apply $h(k) = k \bmod 13$ to each key. Remember that the modulo operation gives the remainder after
 division.
+
 </details>
 
 <details>
@@ -477,6 +487,7 @@ $h(k) = k \bmod 13$:
 | 20  | 20 ÷ 13 = 1 r 7  | 7          |
 
 Note: 42 and 55 both hash to index 3 — a collision occurs.
+
 </details>
 
 **Problem 2.** A hash function for strings uses the polynomial rolling hash:
@@ -488,6 +499,7 @@ $i$-th character. Calculate the hash value for the string "Cat".
 
 Look up the ASCII values: C = 67, a = 97, t = 116. Apply the formula:
 $h = (67 + 97 \cdot 31 + 116 \cdot 31^2) \bmod 100$.
+
 </details>
 
 <details>
@@ -507,6 +519,7 @@ Calculate each term:
 $h = (67 + 3007 + 111476) \bmod 100$ $= 114550 \bmod 100$ $= 50$
 
 The hash value of "Cat" is **50**.
+
 </details>
 
 **Problem 3.** Insert the keys 44, 17, 31, 88, 61, 5, 22 into a hash table of size 7 using linear
@@ -517,6 +530,7 @@ probing with $h(k) = k \bmod 7$. Show the state of the table after each insertio
 
 For linear probing, if index $h(k)$ is occupied, try $h(k)+1$, then $h(k)+2$, etc., wrapping around
 using modulo 7.
+
 </details>
 
 <details>
@@ -546,6 +560,7 @@ Final table:
 | Index | 0   | 1   | 2   | 3   | 4   | 5   | 6   |
 | ----- | --- | --- | --- | --- | --- | --- | --- |
 | Key   | 5   | 22  | 44  | 17  | 31  | 88  | 61  |
+
 </details>
 
 **Problem 4.** Using the final hash table from Problem 3, trace the search for key 61 using linear
@@ -555,6 +570,7 @@ probing. Show each probe.
 <summary>Hint</summary>
 
 To search, compute $h(k)$ and probe sequentially. Stop when you find the key or reach an empty slot.
+
 </details>
 
 <details>
@@ -574,6 +590,7 @@ The key 61 was found at index 6 after 2 probes.
 Note: This illustrates a drawback of linear probing — even though $h(61) = 5$, the key is stored at
 index 6 due to earlier collisions. We must continue probing past occupied slots until we find the
 key or an empty slot.
+
 </details>
 
 **Problem 5.** Insert the keys 19, 36, 50, 5, 69, 14, 75 into a hash table of size 11 using
@@ -585,6 +602,7 @@ after all insertions.
 
 Quadratic probing tries offsets of $0, 1, 4, 9, 16, \ldots$ (i.e., $i^2$ for
 $i = 0, 1, 2, 3, \ldots$). If the target index is occupied, try $(h'(k) + i^2) \bmod m$.
+
 </details>
 
 <details>
@@ -609,6 +627,7 @@ Final table:
 | Key   | —   | —   | —   | 36  | 69  | 5   | 50  | 14  | 19  | 75  | —   |
 
 Load factor: $\alpha = 7/11 \approx 0.636$
+
 </details>
 
 **Problem 6.** A hash table of size 7 contains the keys `{14, 21, 7, 28, 35}` using the division
@@ -621,6 +640,7 @@ and show the final table using linear probing.
 
 First check if rehashing is needed. If so, double the table size (to a prime), then reinsert every
 key into the new table using the new modulo.
+
 </details>
 
 <details>
@@ -653,6 +673,7 @@ No collisions occur with the new table size.
 | Key   | —   | 35  | —   | —   | 21  | —   | —   | 7   | 42  | —   | —   | 28  | —   | —   | 14  | —   |
 
 New load factor: $\alpha = 6/17 \approx 0.353 < 0.7$ ✓
+
 </details>
 
 **Problem 7.** A hash table using chaining has 500 buckets and currently stores 350 key-value pairs.
@@ -664,6 +685,7 @@ resizing?
 <summary>Hint</summary>
 
 Load factor $\alpha = n/m$. For chaining with unsuccessful search, expected comparisons = $\alpha$.
+
 </details>
 
 <details>
@@ -684,6 +706,7 @@ $1 + \alpha/2 = 1 + 0.35 = 1.35$, and after resizing is $1 + 0.175 = 1.175$.
 
 Resizing roughly halves the expected search time, demonstrating why maintaining a low load factor is
 important for performance.
+
 </details>
 
 **Problem 8.** Compare linear probing and chaining as collision resolution methods. For each method,
@@ -695,6 +718,7 @@ and (c) the effect of increasing load factor on performance.
 
 Consider how each method stores data (in the table itself vs. in linked lists) and how this affects
 probe sequences, memory usage, and deletion.
+
 </details>
 
 <details>
@@ -712,6 +736,7 @@ probe sequences, memory usage, and deletion.
 **Key trade-off:** Linear probing has better cache performance but suffers from clustering and
 requires careful load factor management. Chaining is simpler to implement and handles deletion
 cleanly but uses extra memory for pointers.
+
 </details>
 
 **Problem 9.** A library system needs a hash table to store book records, where each book has a
@@ -723,6 +748,7 @@ worked examples for at least three ISBNs.
 
 Consider using the division method or a digit-selection technique. Think about what properties the
 hash function should have (uniform distribution, efficiency, minimal collisions).
+
 </details>
 
 <details>
@@ -753,6 +779,7 @@ $$h(\text{isbn}) = (\text{isbn} \bmod 100000) \bmod 10007$$
 
 This gives good distribution across the table. With $m = 10007$ and a load factor target of 0.7, the
 table can hold approximately 7000 books before needing resizing.
+
 </details>
 
 **Problem 10.** (Exam-style multi-step question) A hash table of size 11 uses double hashing with
@@ -770,6 +797,7 @@ tombstones.
 
 For double hashing: $h(k, i) = (h_1(k) + i \cdot h_2(k)) \bmod 11$. Calculate $h_2(k)$ for each key
 first, then trace the probe sequence.
+
 </details>
 
 <details>
@@ -832,6 +860,7 @@ incorrectly concluding the key is not in the table.
 **Solution:** Use lazy deletion (tombstone). Mark index 0 as DELETED (not EMPTY). During search,
 treat DELETED slots as occupied (continue probing past them). During insert, treat DELETED slots as
 available for insertion.
+
 </details>
 
 :::

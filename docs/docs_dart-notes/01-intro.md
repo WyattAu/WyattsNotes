@@ -97,9 +97,8 @@ dynamic anything = 'flexible'; // no static type checking
 Object something = 'typed';    // static type is Object, runtime type is String
 ```
 
-Dart supports generics, mixins, extension methods, and abstract classes. It does **not** support
-operator overloading (it does, actually — Dart has user-defined operators), multiple inheritance, or
-raw pointers.
+Dart supports generics, mixins, extension methods, abstract classes, and **operator overloading**
+via user-defined operators. It does not support multiple inheritance or raw pointers.
 
 ## Dart vs Kotlin vs Swift
 
@@ -233,8 +232,8 @@ void main() async {
   final sendPort = await receivePort.first as SendPort;
 
   final responsePort = ReceivePort();
-  sendPort.send(42);
   sendPort.send(responsePort.sendPort);
+  sendPort.send(42);
 
   final result = await responsePort.first;
   print('Result: $result');  // Result: 84

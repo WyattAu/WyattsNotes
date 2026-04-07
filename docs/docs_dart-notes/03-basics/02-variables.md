@@ -12,28 +12,32 @@ slug: variables
 
 ### Types
 
-Flutter is statically type, therefore, all types are evaluated at compile time, this can be explicitly defined as:
+Flutter is statically type, therefore, all types are evaluated at compile time, this can be
+explicitly defined as:
 
 ```dart
 String text = "hello";
 int number = 22;
 ```
 
-However, Flutter also provides a implicit declaration (`var`) that can be determined by compiler, an example being:
+However, Flutter also provides a implicit declaration (`var`) that can be determined by compiler, an
+example being:
 
 ```dart
 var text = "hello";
 var number = 22;
 ```
 
-Another way of implicit definition is declaring as `Object` class, since all types in Dart inherits from the `Object` type, implicit definitions can be written as:
+Another way of implicit definition is declaring as `Object` class, since all types in Dart inherits
+from the `Object` type, implicit definitions can be written as:
 
 ```dart
 Object text = "hello";
 Object number = 22;
 ```
 
-One exception is that Flutter also allow dynamic typing, if a declarator `dynamic` is used, the evaluation will happen at runtime:
+One exception is that Flutter also allow dynamic typing, if a declarator `dynamic` is used, the
+evaluation will happen at runtime:
 
 ```dart
 dynamic text = "hello";
@@ -41,14 +45,16 @@ dynamic number = 22;
 ```
 
 :::tip
-The best practice is here is to avoid usage of `dynamic` and `Object` declaration, always use `var` or explicit typing.
+The best practice is here is to avoid usage of `dynamic` and `Object` declaration, always use
+`var` or explicit typing.
 :::
 
 ### Mutation Specifier
 
 #### `final` specifier
 
-Variables with `final` specifier is instantiated once and will prevent mutation afterwards, usually the instantiation is performed when calling the constructor:
+Variables with `final` specifier is instantiated once and will prevent mutation afterwards, usually
+the instantiation is performed when calling the constructor:
 
 ```dart
 class Foo extends StatelessWidget {
@@ -63,7 +69,8 @@ class Foo extends StatelessWidget {
 }
 ```
 
-In the example, both `text` and `number` are `required` to be instantiated during the constructor call:
+In the example, both `text` and `number` are `required` to be instantiated during the constructor
+call:
 
 ```dart
 void main(){
@@ -74,21 +81,24 @@ void main(){
 }
 ```
 
-After the instantiation, the variables cannot be mutated, upon mutation, a compile time error will appear.
+After the instantiation, the variables cannot be mutated, upon mutation, a compile time error will
+appear.
 
 #### `const` specifier
 
-Variables with `const` specifier are required to be evaluated at compile time, meaning the value cannot be mutated by any event in runtime including a constructor call.
+Variables with `const` specifier are required to be evaluated at compile time, meaning the value
+cannot be mutated by any event in runtime including a constructor call.
 
 ```dart
-const String text = "hello",
-const int number = 22
+const String text = "hello";
+const int number = 22;
 
 ```
 
 ### Nullable specifier
 
-Variables are required to be defined at declaration by default, to enable the option for the variable to be `null`, the `?` specifier should be used:
+Variables are required to be defined at declaration by default, to enable the option for the
+variable to be `null`, the `?` specifier should be used:
 
 ```dart
 String? text;
@@ -97,7 +107,9 @@ int? number;
 
 #### Accessing Null Variables
 
-When a variable is null, and the compile time null check for the variable is disabled by the nullable specifier, null will be treated as a absense of value and therefore can perform instantiation checks with null:
+When a variable is null, and the compile time null check for the variable is disabled by the
+nullable specifier, null will be treated as a absense of value and therefore can perform
+instantiation checks with null:
 
 ```dart
 int? value; // initialized to 'null'
@@ -118,14 +130,15 @@ String? world(){
 }
 
 void main(){
-  int? text = world();
-  int text = world(); // compile time error
+  String? text = world();
+  String text = world(); // compile time error
 }
 ```
 
 #### `late` specifier
 
-To allow top-level variables and class variables to be initialize separately to their declaration, the `late` specifier can be used, an example being:
+To allow top-level variables and class variables to be initialize separately to their declaration,
+the `late` specifier can be used, an example being:
 
 ```dart
 late String text;
@@ -136,7 +149,8 @@ void main(){
 }
 ```
 
-When accessing a `late` specified variable without instantiation at runtime, a runtime exception will be thrown (runtime error):
+When accessing a `late` specified variable without instantiation at runtime, a runtime exception
+will be thrown (runtime error):
 
 ```dart
 late String text;
@@ -149,7 +163,9 @@ void main(){
 
 :::tip
 
-The best practice of nullability and mutability is to follow the order of `const` >> `final` >> `var` with no nullability specifier >> `final late` >> `var?`. Also non const top-level variables should be avoided.
+The best practice of nullability and mutability is to follow the order of `const` >> `final` >>
+`var` with no nullability specifier >> `final late` >> `var?`. Also non const top-level variables
+should be avoided.
 
 :::
 
@@ -165,15 +181,21 @@ Dart does not have primitive data types as all types are interfaces inherited fr
 
 #### Number Types
 
-Only two number types exists in Dart, `int` and `double`. `int` can represents integers up to 64 bits due to JavaScript limitation. `double` follows the IEEE 754 standard and is also 64 bits.
+Only two number types exists in Dart, `int` and `double`. `int` represents 64-bit integers on native
+platforms, but is limited to 53-bit precision when compiled to JavaScript. `double` follows the IEEE
+754 standard and is also 64 bits.
 
 :::info
-These numbers are inherited from the `num` class, with operations and methods such as `abs()`, `floor()`, etc. Note that `num`, `double`, `int` cannot be extended.
+These numbers are inherited from the `num` class, with operations and methods such as
+`abs()`, `floor()`, etc. Note that `num`, `double`, `int` cannot be extended.
 :::
 
 #### String Literals
 
-Only one String type exists in Dart, `String`, which holds a sequence of characters specify in UTF-16 code. Within String declarations `""`, `${ \\ expression }` can be declared, and any expression that can evaluates to String can be placed within. A raw `String` can be created with declarator `r` infront of the string:
+Only one String type exists in Dart, `String`, which holds a sequence of characters specify in
+UTF-16 code. Within String declarations `""`, `${ \\ expression }` can be declared, and any
+expression that can evaluates to String can be placed within. A raw `String` can be created with
+declarator `r` infront of the string:
 
 <div className="godbolt-container">
   <iframe
@@ -188,7 +210,9 @@ Only one String type exists in Dart, `String`, which holds a sequence of charact
 
 ##### String Concatenation
 
-As with many other languages, concatenation with `+` cause a new String instance to be created, writing to a `StringBuffer` will prevent this process, therefore its recommended, an example is shown bellow.
+As with many other languages, concatenation with `+` cause a new String instance to be created,
+writing to a `StringBuffer` will prevent this process, therefore its recommended, an example is
+shown bellow.
 
 Instead of:
 
@@ -214,11 +238,14 @@ print(text.toString());
 
 #### Booleans
 
-Dart booleans are still interfaces that inherits `Object`, and only alow `true` and `false` assignment. `1` and `0` are not allowed.
+Dart booleans are still interfaces that inherits `Object`, and only alow `true` and `false`
+assignment. `1` and `0` are not allowed.
 
 #### Enums
 
-Dart `enum` are non-inheritable classes that holds a fixed number of constant values. All `enum` extends from the `Enum` class automatically when declared. Differ from enums in other languages like C++, Dart enums can hold fields, methods and const constructors. An example of enum:
+Dart `enum` are non-inheritable classes that holds a fixed number of constant values. All `enum`
+extends from the `Enum` class automatically when declared. Differ from enums in other languages like
+C++, Dart enums can hold fields, methods and const constructors. An example of enum:
 
 <div className="godbolt-container">
   <iframe
@@ -234,7 +261,9 @@ Dart `enum` are non-inheritable classes that holds a fixed number of constant va
 
 #### Records
 
-Records (Dart 3.0+) are an anonymous immutable aggregate type — a composite of named positional and named fields. They are value types with structural equality, similar to C++ `std::tuple` with named elements, or Kotlin data classes.
+Records (Dart 3.0+) are an anonymous immutable aggregate type — a composite of named positional and
+named fields. They are value types with structural equality, similar to C++ `std::tuple` with named
+elements, or Kotlin data classes.
 
 ```dart
 // Positional fields (accessed by position: $1, $2, etc.)
@@ -265,13 +294,17 @@ var (lo, hi) = getBounds([3, 1, 4, 1, 5]);
 
 :::info
 
-Records are **not classes** — they have no identity, only structural equality. Two records with the same fields are equal: `(1, 'a') == (1, 'a')` is `true`. They are stack-allocated (when small) and cannot be extended.
+Records are **not classes** — they have no identity, only structural equality. Two records with the
+same fields are equal: `(1, 'a') == (1, 'a')` is `true`. They are stack-allocated (when small) and
+cannot be extended.
 
 :::
 
 #### Functions
 
-Functions in Dart are first-class objects — they can be assigned to variables, passed as arguments, and returned from other functions. See [Function Mechanics](./01-entrypoint.md) for the entry point discussion.
+Functions in Dart are first-class objects — they can be assigned to variables, passed as arguments,
+and returned from other functions. See [Function Mechanics](./01-entrypoint.md) for the entry point
+discussion.
 
 ```dart
 // Named function
@@ -313,13 +346,15 @@ print(counter()); // 2
 
 :::tip
 
-Prefer named parameters with `required` for public APIs. Named parameters are self-documenting and order-independent, which reduces call-site errors and makes refactoring easier.
+Prefer named parameters with `required` for public APIs. Named parameters are self-documenting and
+order-independent, which reduces call-site errors and makes refactoring easier.
 
 :::
 
 #### Lists
 
-Dart `List` is an ordered, indexable collection. There are two flavors: **fixed-length** (growable: false) and **growable** (the default).
+Dart `List` is an ordered, indexable collection. There are two flavors: **fixed-length** (growable:
+false) and **growable** (the default).
 
 ```dart
 // Literals
@@ -367,19 +402,22 @@ numbers.sublist(1, 3);             // [2, 3]
 
 :::warning
 
-`List.map()`, `List.where()`, and similar methods return `Iterable`, not `List`. If you need a `List`, wrap with `.toList()`:
+`List.map()`, `List.where()`, and similar methods return `Iterable`, not `List`. If you need a
+`List`, wrap with `.toList()`:
 
 ```dart
 var doubled = numbers.map((n) => n * 2).toList();
 ```
 
-This is a deliberate design choice — lazy iterables avoid creating intermediate collections, which is critical for large data pipelines.
+This is a deliberate design choice — lazy iterables avoid creating intermediate collections, which
+is critical for large data pipelines.
 
 :::
 
 #### Sets
 
-A `Set` is an unordered collection of **unique** items. Dart uses a hash-based implementation (linked hash set), providing $O(1)$ insertion, lookup, and deletion.
+A `Set` is an unordered collection of **unique** items. Dart uses a hash-based implementation
+(linked hash set), providing $O(1)$ insertion, lookup, and deletion.
 
 ```dart
 // Literal
@@ -453,13 +491,16 @@ var doubled = ages.map((k, v) => MapEntry(k, v * 2));
 
 :::tip
 
-Use `Map<String, dynamic>` sparingly — it bypasses Dart's type system. Prefer typed maps or custom classes for structured data. When you must use `Map<String, dynamic>` (e.g., JSON deserialization), validate the types at runtime.
+Use `Map<String, dynamic>` sparingly — it bypasses Dart's type system. Prefer typed maps or custom
+classes for structured data. When you must use `Map<String, dynamic>` (e.g., JSON deserialization),
+validate the types at runtime.
 
 :::
 
 #### Symbols
 
-A `Symbol` represents an operator or identifier declared in a Dart program. Symbols are rarely used in application code — their primary use case is in **mirrors** (reflection):
+A `Symbol` represents an operator or identifier declared in a Dart program. Symbols are rarely used
+in application code — their primary use case is in **mirrors** (reflection):
 
 ```dart
 // Symbol for an identifier
@@ -476,6 +517,9 @@ import 'dart:mirrors';
 
 :::info
 
-Symbols are not the same as strings. A symbol represents an **identifier in the program**, not arbitrary text. They are used internally by the Dart VM for optimization and reflection, and are exposed via the `dart:mirrors` library. Most application developers will never create symbols directly.
+Symbols are not the same as strings. A symbol represents an **identifier in the program**, not
+arbitrary text. They are used internally by the Dart VM for optimization and reflection, and are
+exposed via the `dart:mirrors` library. Most application developers will never create symbols
+directly.
 
 :::

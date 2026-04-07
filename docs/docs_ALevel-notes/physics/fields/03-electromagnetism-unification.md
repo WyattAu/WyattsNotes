@@ -122,7 +122,7 @@ $\square$
 
 Similarly for $B_z$:
 
-$$\frac{\partial^2 B_z}{\partial x^2} = \mu_0\varepsilon_0\frac{\partial^2 B_z}{\partial t^2}}$$
+$$\frac{\partial^2 B_z}{\partial x^2} = \mu_0\varepsilon_0\frac{\partial^2 B_z}{\partial t^2}$$
 
 ### Calculating $c$
 
