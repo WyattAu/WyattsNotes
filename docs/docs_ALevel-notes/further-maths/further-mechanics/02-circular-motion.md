@@ -277,6 +277,7 @@ $\alpha \approx 46.6°$. $r = 1.2\sin 46.6° \approx 0.873\,\text{m}$.
 $T = 4.9/0.687 \approx 7.13\,\text{N}$.
 
 **If you get this wrong, revise:** [Conical pendulum](#31-conical-pendulum) — Section 3.1.
+
 </details>
 
 <details>
@@ -294,6 +295,7 @@ $|\mathbf{a}| = \omega^2 r = \dfrac{v^2}{r}$, directed radially inward. $\blacks
 
 **If you get this wrong, revise:**
 [Proof from differentiation](#proof-from-differentiation-of-position-vector) — Section 2.
+
 </details>
 
 <details>
@@ -308,6 +310,7 @@ $v_{\text{opt}} = \sqrt{rg\tan\theta} = \sqrt{60 \times 9.8 \times \tan 20°} = 
 $N = \dfrac{mg}{\cos\theta} = \dfrac{1000 \times 9.8}{\cos 20°} = \dfrac{9800}{0.9397} \approx 10\,430\,\text{N}$.
 
 **If you get this wrong, revise:** [Banked tracks](#32-banked-tracks) — Section 3.2.
+
 </details>
 
 <details>
@@ -330,6 +333,7 @@ $T - mg = \dfrac{mv_b^2}{r} \implies T = \dfrac{0.3 \times 47.36}{0.8} + 2.94 = 
 
 **If you get this wrong, revise:** [Motion in Vertical Circles](#4-motion-in-vertical-circles) —
 Section 4.
+
 </details>
 
 <details>
@@ -349,6 +353,7 @@ $$\boxed{v_{\min} = \sqrt{5gr}} \quad \blacksquare$$
 
 **If you get this wrong, revise:**
 [Proof of minimum speed at the top](#42-proof-of-minimum-speed-at-the-top) — Section 4.2.
+
 </details>
 
 <details>
@@ -366,6 +371,7 @@ $v = \sqrt{g} \approx 3.13\,\text{m s}^{-1}$.
 
 **If you get this wrong, revise:**
 [Particle on the outside of a sphere](#45-particle-on-the-outside-of-a-sphere) — Section 4.5.
+
 </details>
 
 <details>
@@ -387,11 +393,14 @@ From (i): $N = \dfrac{11760 + F\sin 25°}{\cos 25°}$.
 
 Substituting into (ii): $\dfrac{(11760 + F\sin 25°)\sin 25°}{\cos 25°} + F\cos 25° = 7776$.
 
-$11760\tan 25° + F\tan 25°\sin 25° + F\cos 25° = 7776$.
+$11760\tan 25° + F(\tan 25°\sin 25° + \cos 25°) = 7776$.
 
-$5484 + F(0.1786 + 0.9063) = 7776 \implies 1.085F = 2292 \implies F \approx 2113\,\text{N}$.
+Since $\tan\theta\sin\theta + \cos\theta = \sec\theta$:
+
+$5484 + F\sec 25° = 7776 \implies F \times 1.1034 = 2292 \implies F \approx 2077\,\text{N}$.
 
 **If you get this wrong, revise:** [Banked tracks](#32-banked-tracks) — Section 3.2.
+
 </details>
 
 <details>
@@ -408,6 +417,7 @@ Energy: $\dfrac{1}{2}mv_b^2 = mg(2r) \implies v_b = \sqrt{4gr} = 2\sqrt{gr}$.
 This is less than $\sqrt{5gr}$ (the string case) because the rod can push as well as pull.
 
 **If you get this wrong, revise:** [Energy approach](#43-energy-approach) — Section 4.3.
+
 </details>
 
 <details>
@@ -427,6 +437,7 @@ $\alpha \approx 6.6°$.
 $r = L\sin\alpha = 1 \times \sin 6.6° \approx 0.115\,\text{m}$.
 
 **If you get this wrong, revise:** [Conical pendulum](#31-conical-pendulum) — Section 3.1.
+
 </details>
 
 <details>
@@ -452,6 +463,7 @@ centripetal force.
 
 **If you get this wrong, revise:** [Motion in Vertical Circles](#4-motion-in-vertical-circles) —
 Section 4.
+
 </details>
 
 :::

@@ -145,12 +145,13 @@ Reject $H_0$. There is sufficient evidence that the rate has increased.
 **Example.** Find the critical region for a two-tailed test at the 5% level with
 $X \sim \text{Po}(5)$.
 
-Lower tail: $P(X \leq 1) = 0.0404 \leq 0.025$. $P(X \leq 2) = 0.1247 > 0.025$. So $X \leq 1$.
+Lower tail: $P(X \leq 0) = e^{-5} \approx 0.0067 \leq 0.025$. $P(X \leq 1) = 0.0404 > 0.025$. So
+$X \leq 0$.
 
 Upper tail: $P(X \geq 10) = 1 - 0.9682 = 0.0318 \leq 0.025$? No.
 $P(X \geq 11) = 1 - 0.9830 = 0.0170 \leq 0.025$. So $X \geq 11$.
 
-Critical region: $X \leq 1$ or $X \geq 11$.
+Critical region: $X \leq 0$ or $X \geq 11$.
 
 ---
 
@@ -321,6 +322,7 @@ $P(Y > 6) = 1 - P(Y \leq 6) = 1 - 0.7622 = 0.2378$.
 
 **If you get this wrong, revise:** [Cumulative probabilities](#16-cumulative-probabilities) —
 Section 1.6.
+
 </details>
 
 <details>
@@ -338,6 +340,7 @@ Wait: $P(X > 10) = 1 - P(X \leq 10) = 1 - (1-q^{10}) = q^{10} = (5/6)^{10} \appr
 
 **If you get this wrong, revise:**
 [Cumulative distribution function](#25-cumulative-distribution-function) — Section 2.5.
+
 </details>
 
 <details>
@@ -355,6 +358,7 @@ $\blacksquare$
 
 **If you get this wrong, revise:** [Proof that $E(X) = \lambda$](#13-proof-that-ex--lambda) —
 Section 1.3.
+
 </details>
 
 <details>
@@ -372,6 +376,7 @@ $P(6 \leq X \leq 12) \approx 0.9362 - 0.1912 = 0.7450$.
 
 **If you get this wrong, revise:** [Cumulative probabilities](#16-cumulative-probabilities) —
 Section 1.6.
+
 </details>
 
 <details>
@@ -387,6 +392,7 @@ $X \approx \text{Po}(25)$. $P(X \leq 35) = \sum_{r=0}^{35}\dfrac{e^{-25}(25)^r}{
 
 **If you get this wrong, revise:**
 [Poisson as approximation to Binomial](#32-poisson-as-approximation-to-binomial) — Section 3.2.
+
 </details>
 
 <details>
@@ -402,6 +408,7 @@ This uses $P(X > k) = q^k = (1-p)^k$, which follows from $P(X \leq k) = 1 - q^k$
 
 **If you get this wrong, revise:** [The memoryless property](#24-the-memoryless-property) — Section
 2.4.
+
 </details>
 
 <details>
@@ -420,6 +427,7 @@ Critical region: $X \geq 11$. Actual significance level: 4.26%.
 
 **If you get this wrong, revise:** [Poisson hypothesis testing](#17-poisson-hypothesis-testing) —
 Section 1.7.
+
 </details>
 
 <details>
@@ -436,6 +444,7 @@ the distribution of the remaining trials is the same as starting fresh.
 
 **If you get this wrong, revise:** [The memoryless property](#24-the-memoryless-property) — Section
 2.4.
+
 </details>
 
 <details>
@@ -458,6 +467,7 @@ Critical region: $X \geq 7$. Since $X = 8 \geq 7$, reject $H_0$.
 
 **If you get this wrong, revise:** [Poisson hypothesis testing](#17-poisson-hypothesis-testing) —
 Section 1.7.
+
 </details>
 
 <details>
@@ -480,6 +490,7 @@ $\text{Var}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$. $\blacks
 
 **If you get this wrong, revise:**
 [Proof that $\text{Var}(X) = \frac{1-p}{p^2}$](#23-proof-that-varx--frac1-pp2) — Section 2.3.
+
 </details>
 
 :::

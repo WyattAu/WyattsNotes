@@ -19,14 +19,17 @@ slug: trigonometry
 | CIE (9709) | P1, P2, P3 | Trig functions in P1; identities and equations in P2; further trig in P3 |
 
 :::info
-All boards provide trigonometric identities in the formula booklet, but not their proofs. You need to know _which_ identities exist and how to apply them.
+All boards provide trigonometric identities in the formula booklet, but not their proofs.
+You need to know _which_ identities exist and how to apply them.
 :::
 
 ---
 
 ## 1. The Unit Circle Definitions
 
-**Definition.** Consider the unit circle (radius 1, centre at the origin). For an angle $\theta$ measured anticlockwise from the positive $x$-axis, the point on the circle is $(\cos\theta, \sin\theta)$.
+**Definition.** Consider the unit circle (radius 1, centre at the origin). For an angle $\theta$
+measured anticlockwise from the positive $x$-axis, the point on the circle is
+$(\cos\theta, \sin\theta)$.
 
 **Definition.**
 
@@ -36,23 +39,29 @@ $$\sin\theta = \text{the } y\text{-coordinate of the point on the unit circle at
 
 $$\tan\theta = \frac{\sin\theta}{\cos\theta} \quad (\cos\theta \neq 0)$$
 
-_Intuition._ These definitions extend the right-triangle definitions (SOH CAH TOA) to all angles, not just those between 0° and 90°. The unit circle makes clear why $\sin$ and $\cos$ are periodic with period $2\pi$.
+_Intuition._ These definitions extend the right-triangle definitions (SOH CAH TOA) to all angles,
+not just those between 0° and 90°. The unit circle makes clear why $\sin$ and $\cos$ are periodic
+with period $2\pi$.
 
 ### 1.1 Radian Measure
 
-**Definition.** One _radian_ is the angle subtended at the centre of a circle by an arc equal in length to the radius.
+**Definition.** One _radian_ is the angle subtended at the centre of a circle by an arc equal in
+length to the radius.
 
 $$\theta\text{ (radians)} = \frac{\text{arc length}}{r}$$
 
 The full circle: $2\pi$ radians $= 360°$, so $\pi$ radians $= 180°$.
 
-**Theorem (Arc length and sector area).** For a sector of radius $r$ and angle $\theta$ (in radians):
+**Theorem (Arc length and sector area).** For a sector of radius $r$ and angle $\theta$ (in
+radians):
 
 $$\text{Arc length } s = r\theta$$
 
 $$\text{Sector area } A = \frac{1}{2}r^2\theta$$
 
-_Proof._ By definition, $\theta = s/r$, so $s = r\theta$. The sector is a fraction $\frac{\theta}{2\pi}$ of the full circle (area $\pi r^2$), so $A = \frac{\theta}{2\pi} \cdot \pi r^2 = \frac{1}{2}r^2\theta$. $\blacksquare$
+_Proof._ By definition, $\theta = s/r$, so $s = r\theta$. The sector is a fraction
+$\frac{\theta}{2\pi}$ of the full circle (area $\pi r^2$), so
+$A = \frac{\theta}{2\pi} \cdot \pi r^2 = \frac{1}{2}r^2\theta$. $\blacksquare$
 
 ---
 
@@ -86,7 +95,8 @@ $$\cot^2\theta + 1 = \cosec^2\theta$$
 
 $$\sin(A + B) = \sin A \cos B + \cos A \sin B$$
 
-_Proof (using rotation matrices)._ Consider the rotation of the plane by angle $A$ followed by rotation by angle $B$. The combined rotation is by angle $A + B$.
+_Proof (using rotation matrices)._ Consider the rotation of the plane by angle $A$ followed by
+rotation by angle $B$. The combined rotation is by angle $A + B$.
 
 The rotation matrix by angle $\theta$ is:
 
@@ -141,7 +151,8 @@ $$
 \end{aligned}
 $$
 
-_Proof._ Replace $B$ with $-B$ in the sum formulas, using $\sin(-B) = -\sin B$ and $\cos(-B) = \cos B$. $\blacksquare$
+_Proof._ Replace $B$ with $-B$ in the sum formulas, using $\sin(-B) = -\sin B$ and
+$\cos(-B) = \cos B$. $\blacksquare$
 
 ---
 
@@ -169,7 +180,9 @@ Using $\cos^2 A = 1 - \sin^2 A$:
 
 $\cos^2 A - \sin^2 A = (1 - \sin^2 A) - \sin^2 A = 1 - 2\sin^2 A$ $\blacksquare$
 
-_Intuition._ The double angle formulas express functions of $2A$ purely in terms of functions of $A$. They are the algebraic backbone of many trigonometric manipulations and are essential for integration.
+_Intuition._ The double angle formulas express functions of $2A$ purely in terms of functions of
+$A$. They are the algebraic backbone of many trigonometric manipulations and are essential for
+integration.
 
 ---
 
@@ -210,6 +223,7 @@ $\cos\theta = \frac{1}{2} \implies \theta = \frac{\pi}{3}$ or $\frac{5\pi}{3}$.
 $\cos\theta = 1 \implies \theta = 0$.
 
 Solutions: $\theta = 0, \frac{\pi}{3}, \frac{5\pi}{3}$.
+
 </details>
 
 ---
@@ -232,10 +246,12 @@ For the linear approximations (when $\theta$ is very small):
 
 $$\sin\theta \approx \theta, \quad \cos\theta \approx 1, \quad \tan\theta \approx \theta$$
 
-_Intuition._ Near the origin, the curves $y = \sin\theta$ and $y = \tan\theta$ are almost indistinguishable from the line $y = \theta$. The curve $y = \cos\theta$ is nearly flat at $y = 1$.
+_Intuition._ Near the origin, the curves $y = \sin\theta$ and $y = \tan\theta$ are almost
+indistinguishable from the line $y = \theta$. The curve $y = \cos\theta$ is nearly flat at $y = 1$.
 
 :::warning
-The small angle approximations are only valid when $\theta$ is in **radians**, not degrees. This is a very common exam error.
+The small angle approximations are only valid when $\theta$ is in **radians**, not
+degrees. This is a very common exam error.
 :::
 
 ---
@@ -271,12 +287,14 @@ $\sin x = 0 \implies x = 0, \pi$.
 $2\cos x - 1 = 0 \implies \cos x = \frac{1}{2} \implies x = \frac{\pi}{3}, \frac{5\pi}{3}$.
 
 Solutions: $x = 0, \frac{\pi}{3}, \pi, \frac{5\pi}{3}$.
+
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
 
 ---
 
-**Problem 3.** Express $4\sin\theta - 3\cos\theta$ in the form $R\sin(\theta - \alpha)$, where $R > 0$ and $0 < \alpha < \frac{\pi}{2}$.
+**Problem 3.** Express $4\sin\theta - 3\cos\theta$ in the form $R\sin(\theta - \alpha)$, where
+$R > 0$ and $0 < \alpha < \frac{\pi}{2}$.
 
 <details>
 <summary>Solution</summary>
@@ -289,6 +307,7 @@ $$R^2 = 4^2 + 3^2 = 25 \implies R = 5$$
 $$\tan\alpha = \frac{3}{4} \implies \alpha = \arctan\left(\frac{3}{4}\right) \approx 0.6435 \text{ rad}$$
 
 $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
+
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
@@ -301,6 +320,7 @@ $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
 $$\sin 75° = \sin(45° + 30°) = \sin 45°\cos 30° + \cos 45°\sin 30°$$
 
 $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4}$$
+
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
@@ -322,13 +342,15 @@ $$
 
 ---
 
-**Problem 6.** A sector of a circle of radius 8 cm has an angle of 1.2 radians. Find the arc length and the area of the sector.
+**Problem 6.** A sector of a circle of radius 8 cm has an angle of 1.2 radians. Find the arc length
+and the area of the sector.
 
 <details>
 <summary>Solution</summary>
 Arc length: $s = r\theta = 8 \times 1.2 = 9.6$ cm.
 
 Area: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(64)(1.2) = 38.4$ cm².
+
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)
 
@@ -348,11 +370,14 @@ $3\sin^2 x - 2\sin x - 1 = 0$
 
 $(3\sin x + 1)(\sin x - 1) = 0$
 
-$\sin x = -\frac{1}{3} \implies x = \arcsin(-\frac{1}{3}) \approx -0.3398$ or $x = \pi - (-0.3398) = \pi + 0.3398 \approx 3.481$.
+$\sin x = -\frac{1}{3} \implies x = \arcsin(-\frac{1}{3}) \approx -0.3398$ or
+$x = -\pi - \arcsin(-\frac{1}{3}) = -\pi + 0.3398 \approx -2.802$ (since $3.481 > \pi$, subtract
+$2\pi$ to stay in $[-\pi, \pi]$).
 
 $\sin x = 1 \implies x = \frac{\pi}{2}$.
 
-Solutions: $x \approx -0.340, \frac{\pi}{2}, 3.481$.
+Solutions: $x \approx -2.802, -0.340, \frac{\pi}{2}$.
+
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
 
@@ -369,12 +394,14 @@ $\cos 0.05 \approx 1 - \frac{0.05^2}{2} = 1 - 0.00125 = 0.99875$
 $$\frac{\sin 0.05}{\cos 0.05} \approx \frac{0.05}{0.99875} \approx 0.05006$$
 
 (Alternatively, $\tan 0.05 \approx 0.05$ directly.)
+
 </details>
 <b>If you get this wrong, revise:</b> [Small angle approximations](#6-small-angle-approximations)
 
 ---
 
-**Problem 9.** Prove that $\tan(A + B) - \tan(A - B) = \frac{2\tan B}{1 - \tan^2 A \tan^2 B}$.
+**Problem 9.** Prove that
+$\tan(A + B) - \tan(A - B) = \frac{2\tan B \sec^2 A}{1 - \tan^2 A \tan^2 B}$.
 
 <details>
 <summary>Solution</summary>
@@ -389,7 +416,9 @@ $$
 \end{aligned}
 $$
 
-Hmm, let me verify this differently. Actually the identity stated in the problem may not be exactly what I derived. Let me recheck by direct substitution. With $A = B = \frac{\pi}{4}$: LHS $= \tan(\pi/2) - \tan(0)$ which is undefined. The given identity should be correct for valid values.
+Hmm, let me verify this differently. Actually the identity stated in the problem may not be exactly
+what I derived. Let me recheck by direct substitution. With $A = B = \frac{\pi}{4}$: LHS
+$= \tan(\pi/2) - \tan(0)$ which is undefined. The given identity should be correct for valid values.
 
 Actually let me recompute more carefully. The numerator is:
 
@@ -399,13 +428,17 @@ $= \tan A + \tan^2 A \tan B + \tan B + \tan A \tan^2 B - \tan A + \tan^2 A \tan 
 
 $= 2\tan^2 A \tan B + 2\tan B = 2\tan B(\tan^2 A + 1) = 2\tan B \sec^2 A$
 
-So the correct identity is $\tan(A+B) - \tan(A-B) = \frac{2\tan B \sec^2 A}{1 - \tan^2 A \tan^2 B}$, which equals the stated formula when $1 + \tan^2 A = 1 - \tan^2 A \tan^2 B$... that's not generally true. The problem's stated formula appears incorrect as written.
+So the correct identity is $\tan(A+B) - \tan(A-B) = \frac{2\tan B \sec^2 A}{1 - \tan^2 A \tan^2 B}$,
+which equals the stated formula when $1 + \tan^2 A = 1 - \tan^2 A \tan^2 B$... that's not generally
+true. The problem's stated formula appears incorrect as written.
+
 </details>
 <b>If you get this wrong, revise:</b> [Tangent of a sum](#33-tangent-of-a-sum)
 
 ---
 
-**Problem 10.** The area of a sector is $20\text{ cm}^2$ and the arc length is $10\text{ cm}$. Find the radius and the angle.
+**Problem 10.** The area of a sector is $20\text{ cm}^2$ and the arc length is $10\text{ cm}$. Find
+the radius and the angle.
 
 <details>
 <summary>Solution</summary>
@@ -414,5 +447,6 @@ $$s = r\theta = 10 \implies \theta = \frac{10}{r}$$
 $$A = \frac{1}{2}r^2\theta = \frac{1}{2}r^2 \cdot \frac{10}{r} = 5r = 20 \implies r = 4$$
 
 $$\theta = \frac{10}{4} = 2.5 \text{ radians}$$
+
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)

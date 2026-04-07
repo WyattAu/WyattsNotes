@@ -448,6 +448,7 @@ Taking moments about $A$: $R_B \times 4 - 200 \times 2 - 300 \times 1 = 0 \impli
 Vertical equilibrium: $R_A + 175 = 200 + 300 = 500 \implies R_A = 325\,\text{N}$.
 
 **If you get this wrong, revise:** [Principle of Moments](#2-principle-of-moments) — Section 2.
+
 </details>
 
 <details>
@@ -464,6 +465,7 @@ Moments about $A$: $T\cos 30° \times 3 = 12g \times 1.5$.
 $T = \dfrac{12(9.8)(1.5)}{3\cos 30°} = \dfrac{176.4}{2.598} \approx 67.9\,\text{N}$.
 
 **If you get this wrong, revise:** [Definition of a Moment](#1-definition-of-a-moment) — Section 1.
+
 </details>
 
 <details>
@@ -480,6 +482,7 @@ $\bar{y} = \dfrac{2(0) + 3(0) + 5(3)}{10} = \dfrac{15}{10} = 1.5$.
 Centre of mass at $(2.2, 1.5)$.
 
 **If you get this wrong, revise:** [Composite Bodies](#43-composite-bodies) — Section 4.3.
+
 </details>
 
 <details>
@@ -503,6 +506,7 @@ $3W(l-x) \leq W \cdot l \implies 3l - 3x \leq l \implies x \geq \dfrac{2l}{3}$.
 Range: $\dfrac{2l}{3} \leq x \leq \dfrac{4l}{3}$.
 
 **If you get this wrong, revise:** [Tilting and Toppling](#5-tilting-and-toppling) — Section 5.
+
 </details>
 
 <details>
@@ -518,6 +522,7 @@ $18 \times 2 = 40 \times d_{\text{from } B} \implies d_{\text{from } B} = 36/40 
 Centre of mass is $0.9\,\text{m}$ from $B$, i.e., $1.1\,\text{m}$ from $A$.
 
 **If you get this wrong, revise:** [Centre of Mass](#4-centre-of-mass) — Section 4.
+
 </details>
 
 <details>
@@ -538,6 +543,7 @@ $R_w = \dfrac{500\cos 65°}{5\sin 65°} = \dfrac{100\cos 65°}{\sin 65°} = 100\
 $F = R_w = 46.6\,\text{N}$. $\mu_{\min} = F/R_g = 46.6/200 = 0.233$.
 
 **If you get this wrong, revise:** [Friction and Moments](#2-principle-of-moments) — Section 2.
+
 </details>
 
 <details>
@@ -554,6 +560,7 @@ $\bar{x} = \dfrac{0+6+0}{3} = 2$, $\bar{y} = \dfrac{0+0+4}{3} = \dfrac{4}{3}$.
 Centre of mass at $\left(2, \dfrac{4}{3}\right)$.
 
 **If you get this wrong, revise:** [Standard Results](#44-standard-results) — Section 4.4.
+
 </details>
 
 <details>
@@ -575,6 +582,7 @@ $R = \sqrt{50^2 + 71.13^2} = \sqrt{2500 + 5059.5} \approx 86.9\,\text{N}$ at
 $\arctan(71.13/50) \approx 54.9°$ below horizontal.
 
 **If you get this wrong, revise:** [Equilibrium Conditions](#3-equilibrium-conditions) — Section 3.
+
 </details>
 
 <details>
@@ -600,6 +608,7 @@ $\bar{y} = \dfrac{48 \times 3 - 9 \times 4.5}{39} = \dfrac{144 - 40.5}{39} = \df
 Centre of mass at approximately $(3.42, 2.65)$.
 
 **If you get this wrong, revise:** [Subtraction Method](#432-subtraction-method) — Section 4.3.2.
+
 </details>
 
 <details>
@@ -627,6 +636,7 @@ $\cot 55° \approx 0.7002$, so $R_w = \dfrac{3650 \times 0.7002}{6} \approx 426.
 $\mu_{\min} = F/R_g = R_w/R_g = 426.0/950 = 0.448$.
 
 **If you get this wrong, revise:** [Ladders Against Walls](#32-ladders-against-walls) — Section 3.2.
+
 </details>
 
 <details>
@@ -645,6 +655,7 @@ Net torque: $\tau_{\text{net}} = 20 - 20 = 0\,\text{Nm}$.
 The rod **is** in rotational equilibrium since the two couples balance exactly.
 
 **If you get this wrong, revise:** [Couples and Torque](#31-couples-and-torque) — Section 3.1.
+
 </details>
 
 <details>
@@ -679,6 +690,7 @@ This is impossible for a $5\,\text{m}$ beam. The given data is inconsistent — 
 in the problem statement. In an exam, you would state that no valid position exists.
 
 **If you get this wrong, revise:** [Non-Uniform Beams](#33-non-uniform-beams) — Section 3.3.
+
 </details>
 
 <details>
@@ -707,6 +719,7 @@ The vertical rod carries $50\,\text{N}$ in tension.
 
 **If you get this wrong, revise:** [Frameworks and Trusses](#34-frameworks-and-trusses) — Section
 3.4.
+
 </details>
 
 <details>
@@ -736,6 +749,7 @@ For $h > \dfrac{5}{6}\,\text{m}$, the block topples first. At $h = \dfrac{5}{6}\
 and toppling occur simultaneously.
 
 **If you get this wrong, revise:** [Tilting and Toppling](#5-tilting-and-toppling) — Section 5.
+
 </details>
 
 <details>
@@ -756,27 +770,29 @@ $\cos\alpha = 4/5$.
 Taking moments about $A$: the perpendicular distance from $A$ to the line of action of the thrust
 $T$ in $BC$ is needed.
 
-The thrust acts along $CB$. The moment arm from $A$ to this line is $AC = 3\,\text{m}$ (the
-perpendicular distance from $A$ to line $BC$).
+The thrust acts along $CB$. The perpendicular distance from $A(0,0)$ to the line through $B(4,0)$
+with direction $(-4,-3)$ is
+$\dfrac{|(-4)(0-0) - (-3)(0-4)|}{\sqrt{(-4)^2+(-3)^2}} = \dfrac{12}{5} = 2.4\,\text{m}$.
 
-Clockwise moment of thrust: $T \times 3$ (thrust pushes from $B$ toward $C$, creating a clockwise
+Clockwise moment of thrust: $T \times 2.4$ (thrust pushes from $B$ toward $C$, creating a clockwise
 moment about $A$).
 
 Anticlockwise moment of weight: $120 \times 2 = 240\,\text{Nm}$.
 
-$T \times 3 = 240 \implies T = 80\,\text{N}$ (compression).
+$T \times 2.4 = 240 \implies T = 100\,\text{N}$ (compression).
 
 Resolving forces at $A$:
 
-Horizontal: $R_x = T\cos\alpha = 80 \times \dfrac{4}{5} = 64\,\text{N}$.
+Horizontal: $R_x = T\cos\alpha = 100 \times \dfrac{4}{5} = 80\,\text{N}$.
 
-Vertical: $R_y = 120 - T\sin\alpha = 120 - 80 \times \dfrac{3}{5} = 120 - 48 = 72\,\text{N}$.
+Vertical: $R_y = 120 - T\sin\alpha = 120 - 100 \times \dfrac{3}{5} = 120 - 60 = 60\,\text{N}$.
 
-$R = \sqrt{64^2 + 72^2} = \sqrt{4096 + 5184} = \sqrt{9280} \approx 96.3\,\text{N}$.
+$R = \sqrt{80^2 + 60^2} = \sqrt{6400 + 3600} = \sqrt{10000} = 100\,\text{N}$.
 
-Direction: $\theta = \arctan(72/64) = \arctan(1.125) \approx 48.4°$ above the horizontal.
+Direction: $\theta = \arctan(60/80) = \arctan(0.75) \approx 36.9°$ above the horizontal.
 
 **If you get this wrong, revise:** [Equilibrium Conditions](#3-equilibrium-conditions) — Section 3.
+
 </details>
 
 <details>
@@ -806,6 +822,7 @@ $= \dfrac{324\pi + 1800\pi}{504\pi} = \dfrac{2124}{504} = \dfrac{59}{14} \approx
 Centre of mass is approximately $4.21\,\text{cm}$ from the flat face.
 
 **If you get this wrong, revise:** [Composite Bodies](#43-composite-bodies) — Section 4.3.
+
 </details>
 
 :::

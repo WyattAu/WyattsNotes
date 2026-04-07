@@ -404,7 +404,7 @@ $\dfrac{\pi}{4}\left[\dfrac{1}{4}\sec\theta\tan\theta + \dfrac{1}{4}\ln|\sec\the
 
 Simplifying with $\sec(\arctan 2) = \sqrt{5}$ and $\tan(\arctan 2) = 2$:
 
-$$S = \frac{\pi}{8}\biggl(\sqrt{5} + \frac{1}{2}\ln(2+\sqrt{5})\biggr) - 0 = \frac{\pi}{8}\left(\sqrt{5} + \frac{1}{2}\ln(2+\sqrt{5})\right)$$
+$$S = \frac{9\pi\sqrt{5}}{16} - \frac{\pi}{32}\ln(2+\sqrt{5})$$
 
 :::info
 CIE (9231) P2 requires arc length and surface area of revolution. Edexcel FP2 covers arc
@@ -453,6 +453,7 @@ $\int x e^{-x}\,dx = -xe^{-x} + \int e^{-x}\,dx = -xe^{-x} - e^{-x}$.
 
 Combining:
 $\int x^3 e^{-x}\,dx = -x^3 e^{-x} - 3x^2 e^{-x} - 6x e^{-x} - 6e^{-x} + C = -e^{-x}(x^3 + 3x^2 + 6x + 6) + C$.
+
 </details>
 
 <details>
@@ -480,6 +481,7 @@ $= \cos^{n-1}x\sin x + (n-1)I_{n-2} - (n-1)I_n$
 $nI_n = \cos^{n-1}x\sin x + (n-1)I_{n-2}$
 
 $\boxed{I_n = \frac{1}{n}\cos^{n-1}x\sin x + \frac{n-1}{n}I_{n-2} + C}$
+
 </details>
 
 <details>
@@ -499,6 +501,7 @@ $x^2+4x+13 = (x+2)^2+9$. Write $2x-1 = (2x+4) - 5$.
 $\displaystyle\int\frac{2x+4}{(x+2)^2+9}\,dx - 5\int\frac{1}{(x+2)^2+9}\,dx$
 
 $= \ln(x^2+4x+13) - \frac{5}{3}\arctan\!\left(\frac{x+2}{3}\right) + C$
+
 </details>
 
 <details>
@@ -551,6 +554,7 @@ $\dfrac{d}{dx}\bigl[x\arcsin x + \sqrt{1-x^2}\bigr] = \arcsin x + \dfrac{x}{\sqr
 Therefore $\displaystyle\int \arcsin x\,dx = x\arcsin x + \sqrt{1-x^2} + C$.
 
 $\displaystyle\int_0^{1/2}\arcsin x\,dx = \left[x\arcsin x + \sqrt{1-x^2}\right]_0^{1/2} = \frac{1}{2}\cdot\frac{\pi}{6} + \frac{\sqrt{3}}{2} - 1 = \frac{\pi}{12} + \frac{\sqrt{3}}{2} - 1$.
+
 </details>
 
 <details>
@@ -570,6 +574,7 @@ $\dfrac{dy}{dx} = \dfrac{x^2}{2} - \dfrac{1}{2x^2}$.
 $1+\left(\dfrac{dy}{dx}\right)^2 = 1 + \dfrac{x^4}{4} - \dfrac{1}{2} + \dfrac{1}{4x^4} = \dfrac{x^4}{4} + \dfrac{1}{2} + \dfrac{1}{4x^4} = \left(\dfrac{x^2}{2} + \dfrac{1}{2x^2}\right)^2$
 
 $s = \displaystyle\int_1^3\left(\dfrac{x^2}{2} + \dfrac{1}{2x^2}\right)dx = \left[\dfrac{x^3}{6} - \dfrac{1}{2x}\right]_1^3 = \left(\dfrac{9}{2}-\dfrac{1}{6}\right)-\left(\dfrac{1}{6}-\dfrac{1}{2}\right) = \dfrac{14}{3}$.
+
 </details>
 
 <details>
@@ -629,6 +634,7 @@ $I = -\frac{1}{2}e^x\cos 2x + \frac{1}{4}e^x\sin 2x - \frac{1}{4}I$.
 $\frac{5}{4}I = e^x\left(\frac{\sin 2x}{4} - \frac{\cos 2x}{2}\right)$.
 
 $\boxed{I = \frac{e^x(\sin 2x - 2\cos 2x)}{5} + C}$
+
 </details>
 
 :::

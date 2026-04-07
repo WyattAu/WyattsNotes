@@ -19,7 +19,8 @@ slug: binomial-expansion
 | CIE (9709) | P1, P3     | P1: positive integer; P3: general                                |
 
 :::info
-AQA provides the binomial expansion formula in the formula booklet. Edexcel does not — memorise it.
+AQA provides the binomial expansion formula in the formula booklet. Edexcel does not —
+memorise it.
 :::
 
 ---
@@ -44,19 +45,23 @@ Each entry is the sum of the two entries above it.
 
 ## 2. Binomial Coefficients
 
-**Definition.** The _binomial coefficient_ $\binom{n}{r}$ (read "$n$ choose $r$") is defined for non-negative integers $n, r$ with $r \leq n$ by:
+**Definition.** The _binomial coefficient_ $\binom{n}{r}$ (read "$n$ choose $r$") is defined for
+non-negative integers $n, r$ with $r \leq n$ by:
 
 $$\binom{n}{r} = \frac{n!}{r!(n - r)!}$$
 
 where $n! = n(n-1)(n-2)\cdots 1$ is the factorial of $n$, and $0! = 1$.
 
-**Theorem.** $\binom{n}{r}$ counts the number of ways to choose $r$ objects from $n$ distinct objects (order does not matter).
+**Theorem.** $\binom{n}{r}$ counts the number of ways to choose $r$ objects from $n$ distinct
+objects (order does not matter).
 
 _Proof._ We count the number of ways to form a subset of size $r$ from $\{1, 2, \ldots, n\}$.
 
-The number of _ordered_ selections of $r$ objects from $n$ is $n(n-1)\cdots(n-r+1) = \frac{n!}{(n-r)!}$.
+The number of _ordered_ selections of $r$ objects from $n$ is
+$n(n-1)\cdots(n-r+1) = \frac{n!}{(n-r)!}$.
 
-But each subset of size $r$ can be ordered in $r!$ ways. Dividing by $r!$ (to account for overcounting):
+But each subset of size $r$ can be ordered in $r!$ ways. Dividing by $r!$ (to account for
+overcounting):
 
 $$\binom{n}{r} = \frac{n!}{r!(n-r)!} \quad \blacksquare$$
 
@@ -64,9 +69,11 @@ $$\binom{n}{r} = \frac{n!}{r!(n-r)!} \quad \blacksquare$$
 
 **Theorem (Symmetry).** $\binom{n}{r} = \binom{n}{n - r}$.
 
-_Proof._ $\binom{n}{n-r} = \frac{n!}{(n-r)!(n - (n-r))!} = \frac{n!}{(n-r)!\,r!} = \binom{n}{r}$. $\blacksquare$
+_Proof._ $\binom{n}{n-r} = \frac{n!}{(n-r)!(n - (n-r))!} = \frac{n!}{(n-r)!\,r!} = \binom{n}{r}$.
+$\blacksquare$
 
-_Intuition._ Choosing $r$ objects to _include_ is equivalent to choosing $n - r$ objects to _exclude_.
+_Intuition._ Choosing $r$ objects to _include_ is equivalent to choosing $n - r$ objects to
+_exclude_.
 
 **Theorem (Pascal's Identity).** $\binom{n}{r} = \binom{n-1}{r} + \binom{n-1}{r-1}$.
 
@@ -109,7 +116,9 @@ By Pascal's identity, $\binom{k}{r} + \binom{k}{r-1} = \binom{k+1}{r}$:
 
 $$= a^{k+1} + \sum_{r=1}^{k} \binom{k+1}{r} a^{k+1-r} b^r + b^{k+1} = \sum_{r=0}^{k+1} \binom{k+1}{r} a^{k+1-r} b^r \quad \blacksquare$$
 
-_Intuition._ Each term in the expansion corresponds to a way of choosing $a$'s and $b$'s: from $n$ factors of $(a + b)$, choosing $r$ of them to contribute a $b$ (and the remaining $n - r$ to contribute an $a$) gives the term $\binom{n}{r} a^{n-r} b^r$.
+_Intuition._ Each term in the expansion corresponds to a way of choosing $a$'s and $b$'s: from $n$
+factors of $(a + b)$, choosing $r$ of them to contribute a $b$ (and the remaining $n - r$ to
+contribute an $a$) gives the term $\binom{n}{r} a^{n-r} b^r$.
 
 <details>
 <summary>Example</summary>
@@ -120,13 +129,15 @@ $$(2x - 3)^5 = \sum_{r=0}^{5} \binom{5}{r} (2x)^{5-r}(-3)^r$$
 $$= 32x^5 + 5 \cdot 16x^4(-3) + 10 \cdot 8x^3 \cdot 9 + 10 \cdot 4x^2(-27) + 5 \cdot 2x \cdot 81 + (-243)$$
 
 $$= 32x^5 - 240x^4 + 720x^3 - 1080x^2 + 810x - 243$$
+
 </details>
 
 ---
 
 ## 4. General Binomial Expansion
 
-When $n$ is not a positive integer (e.g., $n$ is negative or fractional), the expansion becomes an _infinite series_.
+When $n$ is not a positive integer (e.g., $n$ is negative or fractional), the expansion becomes an
+_infinite series_.
 
 **Theorem (General Binomial Theorem).** For $|x| < 1$ and any $n \in \mathbb{R}$:
 
@@ -136,7 +147,8 @@ $$= \sum_{r=0}^{\infty} \binom{n}{r} x^r$$
 
 where $\binom{n}{r} = \frac{n(n-1)(n-2)\cdots(n-r+1)}{r!}$.
 
-**Note.** When $n$ is a positive integer, the series terminates at $r = n$ (since $\binom{n}{r} = 0$ for $r > n$). When $n$ is not a positive integer, the series is infinite.
+**Note.** When $n$ is a positive integer, the series terminates at $r = n$ (since $\binom{n}{r} = 0$
+for $r > n$). When $n$ is not a positive integer, the series is infinite.
 
 **Convergence.** The series converges when $|x| < 1$. This condition is essential.
 
@@ -155,6 +167,7 @@ $$
 $$
 
 Valid for $|-2x| < 1$, i.e., $|x| < \frac{1}{2}$.
+
 </details>
 
 ### 4.1 Expanding $(a + bx)^n$
@@ -163,7 +176,8 @@ To expand $(a + bx)^n$, first factor out $a$:
 
 $$(a + bx)^n = a^n\left(1 + \frac{b}{a}x\right)^n$$
 
-Then expand $\left(1 + \frac{b}{a}x\right)^n$ using the general binomial theorem. The convergence condition becomes $\left|\frac{b}{a}x\right| < 1$.
+Then expand $\left(1 + \frac{b}{a}x\right)^n$ using the general binomial theorem. The convergence
+condition becomes $\left|\frac{b}{a}x\right| < 1$.
 
 <details>
 <summary>Example</summary>
@@ -179,6 +193,7 @@ $$
 $$
 
 Valid for $\left|\frac{x}{4}\right| < 1$, i.e., $|x| < 4$.
+
 </details>
 
 ---
@@ -192,6 +207,7 @@ Valid for $\left|\frac{x}{4}\right| < 1$, i.e., $|x| < 4$.
 $$(1 + 3x)^4 = \binom{4}{0} + \binom{4}{1}(3x) + \binom{4}{2}(3x)^2 + \binom{4}{3}(3x)^3 + \binom{4}{4}(3x)^4$$
 
 $$= 1 + 12x + 54x^2 + 108x^3 + 81x^4$$
+
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -206,6 +222,7 @@ The $x^3$ term comes from $r = 3$:
 $$\binom{6}{3}(2)^{6-3}(-x)^3 = 20 \cdot 8 \cdot (-x^3) = -160x^3$$
 
 Coefficient of $x^3$: $-160$.
+
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -223,6 +240,7 @@ $$
 $$
 
 Valid for $|x| < 1$.
+
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
@@ -243,6 +261,7 @@ Coefficient of $x^2$ in the product:
 - From $(40x^2)(1)$: $40$
 
 Total: $54 - 120 + 40 = -26$.
+
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -256,17 +275,19 @@ $$\sqrt{1.05} = (1 + 0.05)^{1/2}$$
 
 $$= 1 + \frac{1}{2}(0.05) + \frac{\frac{1}{2} \cdot \left(-\frac{1}{2}\right)}{2}(0.05)^2 + \frac{\frac{1}{2}\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)}{6}(0.05)^3 + \cdots$$
 
-$$= 1 + 0.025 - 0.000625 + 0.00003125 - \cdots$$
+$$= 1 + 0.025 - 0.0003125 + 0.0000078125 - \cdots$$
 
-$$\approx 1.024406$$
+$$\approx 1.024695$$
 
-To 5 d.p.: $1.02441$.
+To 5 d.p.: $1.02470$.
+
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
 ---
 
-**Problem 6.** In the expansion of $(1 + ax)^n$, the coefficients of $x$, $x^2$, and $x^3$ are in the ratio $1 : 4 : 12$. Find $a$ and $n$.
+**Problem 6.** In the expansion of $(1 + ax)^n$, the coefficients of $x$, $x^2$, and $x^3$ are in
+the ratio $1 : 4 : 12$. Find $a$ and $n$.
 
 <details>
 <summary>Solution</summary>
@@ -295,6 +316,7 @@ $$64n - 128 = 72n - 72$$
 $$-8n = 56 \implies n = -7$$
 
 $a = \frac{8}{-8} = -1$.
+
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
@@ -310,13 +332,16 @@ $$(1 + 1)^n = \sum_{r=0}^{n} \binom{n}{r} 1^{n-r} 1^r = \sum_{r=0}^{n} \binom{n}
 
 So $\sum_{r=0}^{n} \binom{n}{r} = 2^n$. $\blacksquare$
 
-_Intuition._ The sum of all binomial coefficients counts the total number of subsets of an $n$-element set, which is $2^n$ (each element can either be included or excluded).
+_Intuition._ The sum of all binomial coefficients counts the total number of subsets of an
+$n$-element set, which is $2^n$ (each element can either be included or excluded).
+
 </details>
 <b>If you get this wrong, revise:</b> [Binomial coefficients](#2-binomial-coefficients)
 
 ---
 
-**Problem 8.** Expand $\frac{1}{(1 + x)(1 - 2x)}$ in ascending powers of $x$ up to $x^3$, stating the range of validity.
+**Problem 8.** Expand $\frac{1}{(1 + x)(1 - 2x)}$ in ascending powers of $x$ up to $x^3$, stating
+the range of validity.
 
 <details>
 <summary>Solution</summary>
@@ -335,12 +360,14 @@ $$
 $$
 
 Valid for $|x| < \frac{1}{2}$ (the more restrictive condition).
+
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
 ---
 
-**Problem 9.** Given that the expansion of $(1 + kx)^{10}$ in ascending powers of $x$ has a coefficient of $x^3$ equal to $1080$, find the value of $k$.
+**Problem 9.** Given that the expansion of $(1 + kx)^{10}$ in ascending powers of $x$ has a
+coefficient of $x^3$ equal to $1080$, find the value of $k$.
 
 <details>
 <summary>Solution</summary>
@@ -351,6 +378,7 @@ $$120k^3 = 1080$$
 $$k^3 = 9$$
 
 $$k = \sqrt[3]{9}$$
+
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
@@ -366,6 +394,9 @@ $$(1 - 1)^n = \sum_{r=0}^{n} \binom{n}{r} 1^{n-r}(-1)^r = \sum_{r=0}^{n} (-1)^r 
 
 $0^n = 0$ for $n \geq 1$. $\blacksquare$
 
-_Intuition._ This counts the difference between subsets of even size and subsets of odd size — which is zero by a parity argument (there's a bijection between even-sized and odd-sized subsets: add or remove one element).
+_Intuition._ This counts the difference between subsets of even size and subsets of odd size — which
+is zero by a parity argument (there's a bijection between even-sized and odd-sized subsets: add or
+remove one element).
+
 </details>
 <b>If you get this wrong, revise:</b> [Binomial coefficients](#2-binomial-coefficients)

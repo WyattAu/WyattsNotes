@@ -119,21 +119,21 @@ Test at the 5% level whether the data follows a Poisson distribution.
 
 **Step 1:** Estimate $\lambda$ from the data:
 
-$$\bar{r} = \frac{0(38)+1(32)+2(18)+3(8)+4(3)+5(1)}{100} = \frac{105}{100} = 1.05$$
+$$\bar{r} = \frac{0(38)+1(32)+2(18)+3(8)+4(3)+5(1)}{100} = \frac{109}{100} = 1.09$$
 
-**Step 2:** Calculate expected frequencies using $\text{Po}(1.05)$:
+**Step 2:** Calculate expected frequencies using $\text{Po}(1.09)$:
 
-$P(X=0) = e^{-1.05} \approx 0.3499 \implies E_0 = 34.99$
+$P(X=0) = e^{-1.09} \approx 0.3365 \implies E_0 = 33.65$
 
-$P(X=1) = 1.05\,e^{-1.05} \approx 0.3674 \implies E_1 = 36.74$
+$P(X=1) = 1.09\,e^{-1.09} \approx 0.3668 \implies E_1 = 36.68$
 
-$P(X=2) = \dfrac{1.05^2}{2}e^{-1.05} \approx 0.1929 \implies E_2 = 19.29$
+$P(X=2) = \dfrac{1.09^2}{2}e^{-1.09} \approx 0.1999 \implies E_2 = 19.99$
 
-$P(X=3) = \dfrac{1.05^3}{6}e^{-1.05} \approx 0.0675 \implies E_3 = 6.75$
+$P(X=3) = \dfrac{1.09^3}{6}e^{-1.09} \approx 0.0726 \implies E_3 = 7.26$
 
-$P(X=4) = \dfrac{1.05^4}{24}e^{-1.05} \approx 0.0177 \implies E_4 = 1.77$
+$P(X=4) = \dfrac{1.09^4}{24}e^{-1.09} \approx 0.0198 \implies E_4 = 1.98$
 
-$P(X \geq 5) = 1 - 0.9954 \approx 0.0046 \implies E_5 = 0.46$
+$P(X \geq 5) = 1 - 0.9956 \approx 0.0044 \implies E_5 = 0.44$
 
 **Step 3:** Merge categories so all $E_i \geq 5$. Merge $r \geq 3$:
 
@@ -267,6 +267,7 @@ $\nu = 6 - 1 = 5$. Critical value: $\chi^2_{0.05,\,5} = 11.07$.
 $2.8 < 11.07$: **do not reject** $H_0$. No evidence the die is biased.
 
 **If you get this wrong, revise:** [Goodness of Fit Test](#2-goodness-of-fit-test) — Section 2.
+
 </details>
 
 <details>
@@ -290,6 +291,7 @@ $\nu = (2-1)(2-1) = 1$. Critical value: $\chi^2_{0.05,\,1} = 3.841$.
 $9.09 > 3.841$: **reject** $H_0$. The variables are not independent.
 
 **If you get this wrong, revise:** [Test for Independence](#3-test-for-independence) — Section 3.
+
 </details>
 
 <details>
@@ -309,6 +311,7 @@ by $E_i$ gives each category appropriate weight. This leads to a test statistic 
 under $H_0$ is approximately $\chi^2$.
 
 **If you get this wrong, revise:** [Test statistic](#22-test-statistic) — Section 2.2.
+
 </details>
 
 <details>
@@ -318,16 +321,19 @@ The number of emails received per day was recorded over 80 days: 0: 15, 1: 25, 2
 
 <details>
 <summary>Solution 4</summary>
-Estimate $\lambda$: $\bar{r} = \dfrac{0(15)+1(25)+2(20)+3(12)+4(5)+5(3)}{80} = \dfrac{109}{80} = 1.3625$.
+Estimate $\lambda$: $\bar{r} = \dfrac{0(15)+1(25)+2(20)+3(12)+4(5)+5(3)}{80} = \dfrac{136}{80} = 1.7$.
 
-Expected (Po(1.3625)): $P(0) = 0.2561 \to E = 20.49$, $P(1) = 0.3490 \to E = 27.92$,
-$P(2) = 0.2377 \to E = 19.02$, $P(3) = 0.1079 \to E = 8.63$, $P(4) = 0.0367 \to E = 2.94$,
-$P(\geq 5) = 0.0126 \to E = 1.01$.
+Expected (Po(1.7)): $P(0) = e^{-1.7} \approx 0.1827 \to E = 14.62$,
+$P(1) = 1.7\,e^{-1.7} \approx 0.3106 \to E = 24.85$,
+$P(2) = \dfrac{1.7^2}{2}e^{-1.7} \approx 0.2640 \to E = 21.12$,
+$P(3) = \dfrac{1.7^3}{6}e^{-1.7} \approx 0.1496 \to E = 11.97$,
+$P(4) = \dfrac{1.7^4}{24}e^{-1.7} \approx 0.0636 \to E = 5.09$,
+$P(\geq 5) = 1 - 0.9705 \approx 0.0295 \to E = 2.36$.
 
-Merge $\geq 3$: $O = 20$, $E = 8.63+2.94+1.01 = 12.58$.
+Merge $\geq 4$: $O = 8$, $E = 5.09+2.36 = 7.45$.
 
-After merging: categories 0, 1, 2, $\geq 3$ with $O$: 15, 25, 20, 20 and $E$: 20.49, 27.92, 19.02,
-12.58.
+After merging: categories 0, 1, 2, 3, $\geq 4$ with $O$: 15, 25, 20, 12, 8 and $E$: 14.62, 24.85,
+21.12, 11.97, 7.45.
 
 $\chi^2 = \dfrac{(15-20.49)^2}{20.49} + \dfrac{(25-27.92)^2}{27.92} + \dfrac{(20-19.02)^2}{19.02} + \dfrac{(20-12.58)^2}{12.58}$
 
@@ -339,6 +345,7 @@ $6.204 > 5.991$: **reject** $H_0$. Evidence the data does not follow Poisson.
 
 **If you get this wrong, revise:**
 [Worked example: Poisson goodness of fit](#26-worked-example-poisson-goodness-of-fit) — Section 2.6.
+
 </details>
 
 <details>
@@ -355,6 +362,7 @@ Critical value: $\chi^2_{0.05,\,2} = 5.991$.
 Since $12.4 > 5.991$, **reject** $H_0$.
 
 **If you get this wrong, revise:** [Degrees of freedom](#35-degrees-of-freedom) — Section 3.5.
+
 </details>
 
 <details>
@@ -378,6 +386,7 @@ $\nu = 1$. Critical value: $3.841$. Both reject $H_0$, but Yates' gives a more c
 
 **If you get this wrong, revise:** [Yates' correction](#25-yates-correction-continuity-correction) —
 Section 2.5.
+
 </details>
 
 <details>
@@ -398,6 +407,7 @@ $\nu = 5 - 1 = 4$. Critical value at 1%: $\chi^2_{0.01,\,4} = 13.28$.
 $2.9 < 13.28$: **do not reject** $H_0$.
 
 **If you get this wrong, revise:** [Goodness of Fit Test](#2-goodness-of-fit-test) — Section 2.
+
 </details>
 
 <details>
@@ -414,6 +424,7 @@ Critical value: $\chi^2_{0.05,\,6} = 12.59$.
 $18.7 > 12.59$: **reject** $H_0$. There is evidence that the variables are associated.
 
 **If you get this wrong, revise:** [Degrees of freedom](#35-degrees-of-freedom) — Section 3.5.
+
 </details>
 
 <details>
@@ -433,6 +444,7 @@ State three conditions that must be satisfied before carrying out a chi-squared 
    can produce non-significant results. The test has low power. Remedy: increase sample size.
 
 **If you get this wrong, revise:** [Conditions](#24-conditions) — Section 2.4.
+
 </details>
 
 <details>
@@ -450,6 +462,7 @@ $7.2 < 11.07$: **do not reject** $H_0$. There is insufficient evidence that the 
 a normal distribution.
 
 **If you get this wrong, revise:** [Degrees of freedom](#23-degrees-of-freedom) — Section 2.3.
+
 </details>
 
 :::

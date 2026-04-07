@@ -252,6 +252,7 @@ $\hat{\mathbf{a}} = \dfrac{1}{\sqrt{14}}\begin{pmatrix}3\\-2\\1\end{pmatrix}$.
 
 **If you get this wrong, revise:**
 [Magnitude, Unit Vectors](#2-magnitude-unit-vectors-direction-cosines) — Section 2.
+
 </details>
 
 <details>
@@ -266,10 +267,11 @@ $|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$, $|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{1
 
 $\cos\theta = \dfrac{-3}{\sqrt{6}\sqrt{14}} = \dfrac{-3}{\sqrt{84}} = \dfrac{-3}{2\sqrt{21}} = \dfrac{-\sqrt{21}}{14}$.
 
-$\theta = \arccos\!\left(\dfrac{-\sqrt{21}}{14}\right) \approx 100.9°$.
+$\theta = \arccos\!\left(\dfrac{-\sqrt{21}}{14}\right) \approx 109.1°$.
 
 **If you get this wrong, revise:** [The Scalar (Dot) Product](#4-the-scalar-dot-product) —
 Section 4.
+
 </details>
 
 <details>
@@ -285,6 +287,7 @@ $$\mathbf{r} = \begin{pmatrix}1\\2\\-1\end{pmatrix} + t\begin{pmatrix}2\\-2\\5\e
 
 **If you get this wrong, revise:** [Vector Equation of a Line](#5-vector-equation-of-a-line) —
 Section 5.
+
 </details>
 
 <details>
@@ -303,6 +306,7 @@ Check first: $1+2(1-s) = 3+s \implies 3-2s = 3+s \implies s = 0$, $t = 1$.
 Point: $\begin{pmatrix}1+2\\0+1\\2-1\end{pmatrix} = \begin{pmatrix}3\\1\\1\end{pmatrix}$.
 
 **If you get this wrong, revise:** [Intersection of Lines](#6-intersection-of-lines) — Section 6.
+
 </details>
 
 <details>
@@ -317,6 +321,7 @@ Perpendicular $\iff$ dot product $= 0$:
 $$2\lambda + 3\lambda - 4 = 0 \implies 5\lambda = 4 \implies \lambda = \frac{4}{5}$$
 
 **If you get this wrong, revise:** [Perpendicularity test](#43-perpendicularity-test) — Section 4.3.
+
 </details>
 
 <details>
@@ -337,6 +342,7 @@ $|\overrightarrow{PQ}| = \sqrt{1+1+4} = \sqrt{6}$.
 
 **If you get this wrong, revise:**
 [Distance from a Point to a Line](#8-distance-from-a-point-to-a-line) — Section 8.
+
 </details>
 
 <details>
@@ -353,6 +359,7 @@ $\cos\alpha = a_1/m$, $\cos\beta = a_2/m$, $\cos\gamma = a_3/m$.
 $$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \frac{a_1^2+a_2^2+a_3^2}{m^2} = \frac{m^2}{m^2} = 1 \quad \blacksquare$$
 
 **If you get this wrong, revise:** [Direction Cosines](#23-direction-cosines) — Section 2.3.
+
 </details>
 
 <details>
@@ -371,11 +378,12 @@ $\overrightarrow{AC}\cdot\overrightarrow{BC} = 3-1+3 = 5 \neq 0$.
 No pair is perpendicular, so $\triangle ABC$ is **not** right-angled.
 
 **If you get this wrong, revise:** [Perpendicularity test](#43-perpendicularity-test) — Section 4.3.
+
 </details>
 
 <details>
 <summary>Problem 9</summary>
-Show that the lines $\mathbf{r} = \begin{pmatrix}0\\0\\1\end{pmatrix} + t\begin{pmatrix}1\\1\\0\end{pmatrix}$ and $\mathbf{r} = \begin{pmatrix}0\\1\\0\end{pmatrix} + s\begin{pmatrix}1\\0\\1\end{pmatrix}$ are skew.
+Show that the lines $\mathbf{r} = \begin{pmatrix}0\\0\\1\end{pmatrix} + t\begin{pmatrix}1\\1\\0\end{pmatrix}$ and $\mathbf{r} = \begin{pmatrix}0\\1\\0\end{pmatrix} + s\begin{pmatrix}1\\0\\1\end{pmatrix}$ intersect, and find the point of intersection.
 </details>
 
 <details>
@@ -391,6 +399,7 @@ $t = s$, $t = 1$, $1 = s$. So $t = s = 1$. Point: $(1, 1, 1)$.
 Actually the lines **intersect** at $(1,1,1)$, they are not skew.
 
 **If you get this wrong, revise:** [Skew Lines](#62-skew-lines) — Section 6.2.
+
 </details>
 
 <details>
@@ -408,6 +417,7 @@ $$\text{proj}_{\mathbf{a}}\mathbf{b} = \frac{-1}{5}(2\mathbf{i}+\mathbf{j}) = -\
 
 **If you get this wrong, revise:** [Geometric Interpretation](#42-geometric-interpretation) —
 Section 4.2.
+
 </details>
 
 <details>
@@ -430,6 +440,7 @@ Angle between line and plane: $90° - \phi$.
 
 **If you get this wrong, revise:** [Angle Between Two Vectors](#7-angle-between-two-vectors) —
 Section 7.
+
 </details>
 
 :::

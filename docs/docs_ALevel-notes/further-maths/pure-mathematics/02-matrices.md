@@ -188,6 +188,7 @@ $$
 $$\operatorname{adj}(\mathbf{A}) = \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$$
 
 $$\mathbf{A}^{-1} = \frac{1}{7}\begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$$
+
 </details>
 
 ---
@@ -230,6 +231,7 @@ $\begin{pmatrix} 1 & 2 & 0 \\ 0 & 1 & 3 \\ 1 & 0 & 1 \end{pmatrix}\begin{pmatrix
 Using the inverse from the previous example:
 
 $$\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \frac{1}{7}\begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}\begin{pmatrix} 4 \\ 5 \\ 2 \end{pmatrix} = \frac{1}{7}\begin{pmatrix} 4 - 10 + 12 \\ 12 + 5 - 6 \\ -4 + 10 + 2 \end{pmatrix} = \frac{1}{7}\begin{pmatrix} 6 \\ 11 \\ 8 \end{pmatrix} = \begin{pmatrix} 6/7 \\ 11/7 \\ 8/7 \end{pmatrix}$$
+
 </details>
 
 ---
@@ -262,7 +264,7 @@ $$\mathbf{R} = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\the
 
 $$= \begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix}\begin{pmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{pmatrix}$$
 
-$$= \begin{pmatrix} \cos^2\theta - \sin^2\theta & \cos\theta\sin\theta + \sin\theta\cos\theta \\ \sin\theta\cos\theta - \cos\theta\sin\theta & \sin^2\theta - \cos^2\theta \end{pmatrix} = \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix} \quad \square$$
+$$= \begin{pmatrix} \cos^2\theta - \sin^2\theta & \cos\theta\sin\theta + \sin\theta\cos\theta \\ \sin\theta\cos\theta + \cos\theta\sin\theta & \sin^2\theta - \cos^2\theta \end{pmatrix} = \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix} \quad \square$$
 
 ### 5.2 Rotation
 
@@ -318,6 +320,7 @@ $\mathbf{S}\mathbf{R} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatr
 
 This is a reflection in the $x$-axis. $\det = -1$, consistent with an orientation-reversing
 transformation.
+
 </details>
 
 ---
@@ -434,6 +437,7 @@ Eigenvector: $\mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 Diagonalisation: $\mathbf{P} = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}$,
 $\mathbf{D} = \begin{pmatrix} 5 & 0 \\ 0 & 2 \end{pmatrix}$, giving
 $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$.
+
 </details>
 
 ---
@@ -461,6 +465,7 @@ $\mathbf{B} = \begin{pmatrix} 1 & 5 \\ -2 & 0 \end{pmatrix}$, compute $\mathbf{A
 <summary>Hint</summary>
 
 Compute both products separately and subtract. They will not be equal.
+
 </details>
 
 <details>
@@ -473,6 +478,7 @@ $$\mathbf{BA} = \begin{pmatrix} 1 & 5 \\ -2 & 0 \end{pmatrix}\begin{pmatrix} 3 &
 $$\mathbf{AB} - \mathbf{BA} = \begin{pmatrix} 5 & 15 \\ -6 & 10 \end{pmatrix} - \begin{pmatrix} 13 & 19 \\ -6 & 2 \end{pmatrix} = \begin{pmatrix} -8 & -4 \\ 0 & 8 \end{pmatrix}$$
 
 This confirms $\mathbf{AB} \neq \mathbf{BA}$.
+
 </details>
 
 ---
@@ -484,6 +490,7 @@ $\mathbf{A} = \begin{pmatrix} 2 & 1 & 3 \\ 0 & -1 & 2 \\ 1 & 0 & 1 \end{pmatrix}
 <summary>Hint</summary>
 
 Expand the determinant along the first row. Then compute cofactors for the adjugate.
+
 </details>
 
 <details>
@@ -506,6 +513,7 @@ $$
 $$\operatorname{adj}(\mathbf{A}) = \begin{pmatrix} -1 & -1 & 4 \\ 2 & -1 & -4 \\ 1 & 1 & -2 \end{pmatrix}$$
 
 $$\mathbf{A}^{-1} = \frac{1}{3}\begin{pmatrix} -1 & -1 & 4 \\ 2 & -1 & -4 \\ 1 & 1 & -2 \end{pmatrix}$$
+
 </details>
 
 ---
@@ -518,6 +526,7 @@ that $\mathbf{M}^2 = \mathbf{I}$.
 
 The line makes angle $\theta$ with the $x$-axis where $\tan\theta = \sqrt{3}$. A reflection applied
 twice is the identity.
+
 </details>
 
 <details>
@@ -529,6 +538,7 @@ $$\mathbf{M} = \begin{pmatrix} \cos\frac{2\pi}{3} & \sin\frac{2\pi}{3} \\ \sin\f
 
 Verification:
 $$\mathbf{M}^2 = \begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}\begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix} = \begin{pmatrix} \frac{1}{4} + \frac{3}{4} & -\frac{\sqrt{3}}{4} + \frac{\sqrt{3}}{4} \\ -\frac{\sqrt{3}}{4} + \frac{\sqrt{3}}{4} & \frac{3}{4} + \frac{1}{4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \mathbf{I} \quad \square$$
+
 </details>
 
 ---
@@ -541,6 +551,7 @@ the image, and verify that the area scales by $|\det(\mathbf{T})|$.
 <summary>Hint</summary>
 
 Apply $\mathbf{T}$ to each vertex. The original triangle has area 1.
+
 </details>
 
 <details>
@@ -556,6 +567,7 @@ Image area using the determinant formula:
 $\dfrac{1}{2}\left|6 \cdot 2 - 0 \cdot 1\right| = \dfrac{1}{2} \times 12 = 6$.
 
 $\det(\mathbf{T}) = 6$, and $|\det(\mathbf{T})| \times \text{original area} = 6 \times 1 = 6$. ✓
+
 </details>
 
 ---
@@ -568,6 +580,7 @@ $$\begin{cases} 2x + y - z = 3 \\ x - y + 2z = 1 \\ 3x + 2y + z = 10 \end{cases}
 <summary>Hint</summary>
 
 Write as $\mathbf{A}\mathbf{x} = \mathbf{b}$ and compute $\mathbf{x} = \mathbf{A}^{-1}\mathbf{b}$.
+
 </details>
 
 <details>
@@ -588,6 +601,7 @@ $$\mathbf{A}^{-1} = -\frac{1}{10}\begin{pmatrix} -5 & -3 & 1 \\ 5 & 5 & -5 \\ 5 
 $$\mathbf{x} = -\frac{1}{10}\begin{pmatrix} -5 & -3 & 1 \\ 5 & 5 & -5 \\ 5 & -1 & -3 \end{pmatrix}\begin{pmatrix} 3 \\ 1 \\ 10 \end{pmatrix} = -\frac{1}{10}\begin{pmatrix} -15 - 3 + 10 \\ 15 + 5 - 50 \\ 15 - 1 - 30 \end{pmatrix} = -\frac{1}{10}\begin{pmatrix} -8 \\ -30 \\ -16 \end{pmatrix} = \begin{pmatrix} 4/5 \\ 3 \\ 8/5 \end{pmatrix}$$
 
 So $x = \dfrac{4}{5}$, $y = 3$, $z = \dfrac{8}{5}$.
+
 </details>
 
 ---
@@ -601,6 +615,7 @@ single rotation of $90°$ combined with an enlargement by factor 2.
 
 The enlargement matrix is $2\mathbf{I}$ and the rotation is $\mathbf{R}_{\pi/2}$. Since
 $2\mathbf{I}$ commutes with all matrices, the order doesn't matter.
+
 </details>
 
 <details>
@@ -621,6 +636,7 @@ $\begin{pmatrix} 0 & -2 \\ 2 & 0 \end{pmatrix} = 2\begin{pmatrix} 0 & -1 \\ 1 & 
 
 This is a rotation by $90°$ combined with an enlargement by factor 2, and the order is irrelevant
 because scalar multiples of the identity commute with all matrices.
+
 </details>
 
 ---
@@ -633,6 +649,7 @@ and diagonal matrix $\mathbf{D}$ such that $\mathbf{A} = \mathbf{P}\mathbf{D}\ma
 <summary>Hint</summary>
 
 Solve $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$ for $\lambda$, then find eigenvectors.
+
 </details>
 
 <details>
@@ -654,6 +671,7 @@ $\begin{pmatrix} 4 & 4 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix
 Eigenvector: $\mathbf{v}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 $$\mathbf{P} = \begin{pmatrix} 4 & 1 \\ 1 & -1 \end{pmatrix}, \quad \mathbf{D} = \begin{pmatrix} 6 & 0 \\ 0 & 1 \end{pmatrix}$$
+
 </details>
 
 ---
@@ -666,6 +684,7 @@ eigenvalues 1 and 2. Use this to compute $\mathbf{A}^5$ without multiplying matr
 
 Diagonalise $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, then
 $\mathbf{A}^5 = \mathbf{P}\mathbf{D}^5\mathbf{P}^{-1}$.
+
 </details>
 
 <details>
@@ -688,6 +707,7 @@ $\mathbf{P}^{-1} = \begin{pmatrix} -1 & 2 \\ 1 & -1 \end{pmatrix}$.
 $\mathbf{D}^5 = \begin{pmatrix} 1 & 0 \\ 0 & 32 \end{pmatrix}$.
 
 $$\mathbf{A}^5 = \mathbf{P}\mathbf{D}^5\mathbf{P}^{-1} = \begin{pmatrix} 1 & 2 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 0 & 32 \end{pmatrix}\begin{pmatrix} -1 & 2 \\ 1 & -1 \end{pmatrix} = \begin{pmatrix} 1 & 64 \\ 1 & 32 \end{pmatrix}\begin{pmatrix} -1 & 2 \\ 1 & -1 \end{pmatrix} = \begin{pmatrix} 63 & -62 \\ 31 & -30 \end{pmatrix}$$
+
 </details>
 
 ---
@@ -700,6 +720,7 @@ $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ to $\begin{pmatrix} 0 \\ 1 \\ 0 \end
 <summary>Hint</summary>
 
 Use the standard formula for $\mathbf{R}_z$ with $\theta = \pi/2$.
+
 </details>
 
 <details>
@@ -712,6 +733,7 @@ $\det(\mathbf{R}_z) = 0 \cdot (0 - 0) - (-1)(1 - 0) + 0 = 1$. ✓
 $$\mathbf{R}_z\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \quad \checkmark$$
 
 The $x$-axis is correctly rotated to the $y$-axis by a $90°$ anticlockwise rotation about $z$.
+
 </details>
 
 ---
@@ -724,6 +746,7 @@ then $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$.
 
 Show that $\mathbf{B}^{-1}\mathbf{A}^{-1}$ satisfies the definition of the inverse of $\mathbf{AB}$,
 and invoke uniqueness.
+
 </details>
 
 <details>
@@ -740,6 +763,7 @@ Since the inverse is unique, $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1
 
 **Intuition.** The order reverses, just like putting on and taking off socks and shoes. To undo "A
 then B," you must undo B first, then undo A.
+
 </details>
 
 :::
