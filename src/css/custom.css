@@ -282,3 +282,165 @@ a:hover {
   transform: scale(1.2);
   transform-origin: center;
 }
+
+/* ==========================================================================
+   KaTeX Dark Mode
+   KaTeX renders math with fixed black text by default.
+   In dark mode, override the base color so math inherits the theme font color.
+   Explicit \textcolor{} commands still work because KaTeX applies them via
+   inline styles, which take precedence over these inherited rules.
+   ========================================================================== */
+
+[data-theme='dark'] .katex {
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .katex .mord,
+[data-theme='dark'] .katex .mop,
+[data-theme='dark'] .katex .mrel,
+[data-theme='dark'] .katex .mbin,
+[data-theme='dark'] .katex .mpunct,
+[data-theme='dark'] .katex .mopen,
+[data-theme='dark'] .katex .mclose,
+[data-theme='dark'] .katex .minner,
+[data-theme='dark'] .katex .mbinop,
+[data-theme='dark'] .katex .mrel,
+[data-theme='dark'] .katex .mpunct,
+[data-theme='dark'] .katex .maccent,
+[data-theme='dark'] .katex .mord.text,
+[data-theme='dark'] .katex .mord.textbf,
+[data-theme='dark'] .katex .msupsub,
+[data-theme='dark'] .katex .mfrac,
+[data-theme='dark'] .katex .msqrt,
+[data-theme='dark'] .katex .mroot,
+[data-theme='dark'] .katex .mtable,
+[data-theme='dark'] .katex .mtr,
+[data-theme='dark'] .katex .mtd {
+  color: inherit;
+}
+
+/* ==========================================================================
+   Dark Mode Toggle — Brutalist Styling
+   Override the default Docusaurus toggle to match the brutalist design:
+   no border-radius, sharp borders, monospace feel.
+   Uses [class*=] attribute selectors because Docusaurus CSS modules hash
+   class names (e.g., toggleButton_mYkh) which change per build.
+   ========================================================================== */
+
+button.clean-btn[class*='toggleButton'] {
+  border: 2px solid var(--ifm-color-emphasis-300) !important;
+  border-radius: 0 !important;
+  padding: 4px 6px !important;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease !important;
+}
+
+button.clean-btn[class*='toggleButton']:hover {
+  border-color: var(--ifm-color-primary) !important;
+  background-color: var(--ifm-color-primary) !important;
+}
+
+button.clean-btn[class*='toggleButton']:hover svg {
+  fill: #000 !important;
+}
+
+/* ==========================================================================
+   Dark Mode — Navbar Search Input
+   Ensure the search input blends with the brutalist dark navbar.
+   ========================================================================== */
+
+[data-theme='dark'] .navbar__search-input {
+  background-color: var(--ifm-background-surface-color) !important;
+  border-color: var(--ifm-color-emphasis-400) !important;
+  color: var(--ifm-font-color-base) !important;
+}
+
+[data-theme='dark'] .navbar__search-input::placeholder {
+  color: var(--ifm-color-emphasis-500) !important;
+}
+
+[data-theme='dark'] .navbar__search-input:focus {
+  background-color: var(--ifm-background-color) !important;
+}
+
+/* ==========================================================================
+   Dark Mode — Lunr Search Page
+   Style the full-page search results for dark mode consistency.
+   ========================================================================== */
+
+[data-theme='dark'] .search-page-input,
+[data-theme='dark'] .search-page-input:focus {
+  background-color: var(--ifm-background-surface-color) !important;
+  color: var(--ifm-font-color-base) !important;
+  border-color: var(--ifm-color-emphasis-400) !important;
+}
+
+[data-theme='dark'] .search-result-item {
+  border-bottom-color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .search-result-link {
+  color: var(--ifm-font-color-base) !important;
+}
+
+[data-theme='dark'] .search-result-link:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='dark'] .search-result-preview {
+  color: var(--ifm-color-emphasis-400) !important;
+}
+
+[data-theme='dark'] .search-result-more {
+  color: var(--ifm-color-primary) !important;
+  border-color: var(--ifm-color-primary) !important;
+}
+
+/* ==========================================================================
+   Dark Mode — Blog & Markdown Pages
+   Ensure blog posts and the privacy page render properly in dark mode.
+   ========================================================================== */
+
+[data-theme='dark'] .blog-post-title {
+  color: var(--ifm-color-emphasis-50) !important;
+}
+
+[data-theme='dark'] .blog-post-meta {
+  color: var(--ifm-color-emphasis-400) !important;
+}
+
+[data-theme='dark'] .blog-sidebar-item {
+  color: var(--ifm-font-color-base) !important;
+}
+
+[data-theme='dark'] .blog-sidebar-item.active {
+  color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='dark'] .pagination-nav__link {
+  border-color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme='dark'] .pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='dark'] .pagination-nav__label {
+  color: var(--ifm-font-color-base) !important;
+}
+
+/* ==========================================================================
+   Dark Mode — Admonitions (custom keywords)
+   Ensure custom admonition types (discord, security, ninja, powershell, release)
+   inherit proper dark mode colors.
+   ========================================================================== */
+
+[data-theme='dark'] .admonition {
+  background-color: var(--ifm-background-surface-color) !important;
+  border-left-color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='dark'] .admonition-title {
+  color: var(--ifm-color-emphasis-50) !important;
+}
