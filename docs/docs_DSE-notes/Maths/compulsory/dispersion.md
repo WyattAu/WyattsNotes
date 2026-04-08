@@ -526,9 +526,9 @@ multiplied by $2$ and then $5$ is added, find the new mean and new standard devi
    | 160 -- 179 | 8         |
    | 180 -- 199 | 2         |
 
-   Estimate the median weight from the cumulative frequency distribution.
-   <details>
-   <summary>Answer</summary>
+Estimate the median weight from the cumulative frequency distribution.
+<details>
+<summary>Answer</summary>
 
 - Cumulative frequencies: $6, 20, 40, 48, 50$.
 - The median is the $\frac{50}{2} = 25$th value, which lies in the class $140$--$159$ (cumulative
