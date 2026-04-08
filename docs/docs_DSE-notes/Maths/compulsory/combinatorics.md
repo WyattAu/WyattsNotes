@@ -197,7 +197,7 @@ questions if you must pick $\lq 1$ from each section?
   \binom{15}{6} - \binom{3}{1}\binom{10}{6} + \binom{3}{2}\binom{5}{6} - \binom{3}{3}\binom{0}{6}
   $$
   (Note: $\binom{5}{6} = 0$, $\binom{0}{6} = 0$).
-  </details>
+</details>
 
 6. **Question:** Divide 10 students into two groups of 5, but Alice and Bob cannot be in the same
 group. How many unique arrangements can be made?
@@ -305,7 +305,7 @@ sit together, and children must be separated by at least one adult. How many arr
   $$
   3^{10} - \binom{3}{1}\left[\binom{10}{0}2^{10} + \binom{10}{1}2^9\right] + \binom{3}{2}\left[1 + 2\binom{10}{1} + \binom{10}{2}2!\right] = 59,049 - 18,099 = 40,950.
   $$
-  </details>
+</details>
 
 17. **Question:** Pair 5 men and 5 women for a dance. Two men (A,B) refuse to dance with a
 particular woman (X). How many valid pairings?

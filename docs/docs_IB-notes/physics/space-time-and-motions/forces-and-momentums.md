@@ -224,7 +224,7 @@ distance covered during the 10.0 s of acceleration?
   **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$
   for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly
   linking the resulting acceleration to kinematic equations.
-  </details>
+</details>
 
 **Problem 2.** A 2.0 kg firework is launched vertically from rest. Its rocket motor provides a
 constant upward thrust of 50.0 N for 3.0 s before running out of fuel. Ignore air resistance. a)
@@ -259,7 +259,7 @@ air (from launch until it returns to the ground)?
   you get this wrong, you should focus on:** Breaking multi-stage motion problems into separate
   parts, calculating net force correctly in each stage, and using the final conditions of one stage
   as the initial conditions for the next.
-  </details>
+</details>
 
 **Problem 3.** A 5.0 kg object is suspended by a rope. A horizontal force is applied, pulling the
 object to the side until the rope makes an angle of 35° with the vertical. The object is held in
@@ -287,7 +287,7 @@ applied horizontal force and the tension in the rope.
   focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors
   into components using trigonometry, and setting up and solving simultaneous equations for the
   vertical and horizontal forces.
-  </details>
+</details>
 
 **Problem 4.** A 0.20 kg ball traveling at 10 m/s collides with a stationary 0.30 kg ball. After the
 collision, the 0.20 kg ball moves at 4.0 m/s at an angle of 30° to its original path. a) Determine
@@ -320,7 +320,7 @@ Justify your answer with a calculation.
   of momentum as a vector equation (i.e., in component form), combining velocity components to find
   final speed and direction, and the definition of an elastic collision (conservation of kinetic
   energy).
-  </details>
+</details>
 
 **Problem 5.** A 1200 kg car travels at a constant speed of 15 m/s around a flat circular track of
 radius 50 m. It then moves to a section of the track banked at an angle $\theta$. a) For the flat
@@ -355,7 +355,7 @@ any reliance on friction?
   Identifying the source of the centripetal force in different situations (friction vs. component of
   normal force), correctly resolving forces on an inclined plane, and solving a system of force
   equations.
-  </details>
+</details>
 
 **Problem 6.** **Question (HL Only):** A thin hoop of mass M and radius R ($I=MR^2$) rolls without
 slipping down an incline of angle $\theta$. a) Draw a free-body diagram for the hoop, including the
@@ -459,6 +459,6 @@ the muon "explain" its ability to reach the ground?
   special relativity. For a stationary observer watching a moving object, time dilates (clocks run
   slow). For a moving observer, distances in the direction of motion contract (are shorter). Both
   phenomena must lead to the same physical conclusion.
-  </details>
+</details>
 
 :::

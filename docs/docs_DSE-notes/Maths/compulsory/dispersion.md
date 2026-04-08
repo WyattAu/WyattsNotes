@@ -443,7 +443,8 @@ transformed dataset $Y = \dfrac{X - 20}{6}$.
 - $\sum f_i = 50$, $\sum f_i d_i = 5(-2) + 12(-1) + 18(0) + 10(1) + 5(2) = -10 + (-12) + 0 + 10 + 10 = -2$.
 - $\bar{x} = 34.5 + \frac{-2}{50} \times 10 = 34.5 - 0.4 = 34.1$.
 - $\sum f_i d_i^2 = 5(4) + 12(1) + 18(0) + 10(1) + 5(4) = 20 + 12 + 0 + 10 + 20 = 62$.
-- $\sigma_d^2 = rac{62}{50} - \left(rac{-2}{50}ight)^2 = 1.24 - 0.0016 = 1.2384$.
+- $\sigma_d^2 = rac{62}{50} - \left(rac{-2}{50}
+ight)^2 = 1.24 - 0.0016 = 1.2384$.
 - $\sigma^2 = 1.2384 	imes 10^2 = 123.84$, so $\sigma = \sqrt{123.84} pprox 11.13$.
 </details>
 
@@ -540,7 +541,7 @@ multiplied by $2$ and then $5$ is added, find the new mean and new standard devi
                   &= 139.5 + 5 = 144.5 \text{ g}
   \end{aligned}
   $$
-  </details>
+</details>
 
 10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$, find $\sum x_i$, $\sum x_i^2$,
 the mean, and the population variance. Verify your variance using both the definition formula and
@@ -565,7 +566,7 @@ the computational formula.
     \sigma^2 &= \frac{334}{10} - \left(\frac{52}{10}\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
   \end{aligned}
   $$
-  </details>
+</details>
 
 11. **Question:** The weekly wages (in dollars) of $8$ workers in a small factory are
 $3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000$. The factory owner claims the average wage is

@@ -543,14 +543,16 @@ the slant edge $VA$ and the base.
 <details>
 <summary>Answer</summary>
 
-- (a) The centre $O$ of the square base is the foot of the perpendicular from $V$. The diagonal
-  $AC = 6\sqrt{2}$, so $AO = 3\sqrt{2}$.
-  - In $\triangle VOA$: $VO^2 = VA^2 - AO^2 = (5\sqrt{2})^2 - (3\sqrt{2})^2 = 50 - 18 = 32$.
-  - Height $VO = \sqrt{32} = 4\sqrt{2}$ cm.
-- (b) The angle between $VA$ and the base is $\angle VAO$.
-  - $\cos\angle VAO = \frac{AO}{VA} = \frac{3\sqrt{2}}{5\sqrt{2}} = \frac{3}{5}$.
-  - $\angle VAO = \arccos\frac{3}{5} \approx 53.1^\circ$.
-  </details>
+(a) The centre $O$ of the square base is the foot of the perpendicular from $V$. The diagonal
+$AC = 6\sqrt{2}$, so $AO = 3\sqrt{2}$. In $\triangle VOA$:
+$VO^2 = VA^2 - AO^2 = (5\sqrt{2})^2 - (3\sqrt{2})^2 = 50 - 18 = 32$.
+Height $VO = \sqrt{32} = 4\sqrt{2}$ cm.
+
+(b) The angle between $VA$ and the base is $\angle VAO$.
+$\cos\angle VAO = \frac{AO}{VA} = \frac{3\sqrt{2}}{5\sqrt{2}} = \frac{3}{5}$.
+$\angle VAO = \arccos\frac{3}{5} \approx 53.1^\circ$.
+
+</details>
 
 9. **Question:** Sketch the graph of $y = 2\sin\left(x - \frac{\pi}{4}\right) + 1$ for
 $0 \leq x \leq 2\pi$. State the maximum value, minimum value, and the coordinates of all
