@@ -46,7 +46,7 @@ jobs:
       - name: Build website
         run: pnpm run build
         env:
-          NODE_OPTIONS: --max-old-space-size=12288
+          NODE_OPTIONS: --max-old-space-size=14336
 
       - name: Prepare artifact
         run: |
