@@ -35,8 +35,10 @@ Dynamic equilibrium is established when:
 - The position of equilibrium describes the relative amounts of reactants and products.
 - Equilibrium can be approached from either direction.
 
-:::warning Equilibrium can only be established in a closed system. If a product is allowed to escape
-(e.g., a gas leaving an open container), equilibrium will never be reached. :::
+:::warning
+Equilibrium can only be established in a closed system. If a product is allowed to escape
+(e.g., a gas leaving an open container), equilibrium will never be reached.
+:::
 
 ---
 
@@ -94,10 +96,12 @@ $\text{NH}_3$). More $\text{NH}_3$ is produced. This is why the Haber process us
 
 </details>
 
-:::warning Adding an inert gas at constant volume does NOT change the equilibrium position, because
+:::warning
+Adding an inert gas at constant volume does NOT change the equilibrium position, because
 the partial pressures (and therefore concentrations) of the reacting gases remain unchanged. Adding
 an inert gas at constant total pressure does shift equilibrium towards the side with more moles of
-gas, because the partial pressures of the reacting gases decrease. :::
+gas, because the partial pressures of the reacting gases decrease.
+:::
 
 #### Change in Temperature
 
@@ -365,9 +369,11 @@ $$\text{SO}_{3(g)} + \text{H}_2\text{SO}_{4(l)} \to \text{H}_2\text{S}_2\text{O}
 
 $$\text{H}_2\text{S}_2\text{O}_{7(l)} + \text{H}_2\text{O}_{(l)} \to 2\text{H}_2\text{SO}_{4(l)}$$
 
-:::info $\text{SO}_3$ is NOT dissolved directly in water because the reaction is highly exothermic
+:::info
+$\text{SO}_3$ is NOT dissolved directly in water because the reaction is highly exothermic
 and would produce a corrosive mist of $\text{H}_2\text{SO}_4$ droplets that is difficult to
-condense. :::
+condense.
+:::
 
 ### Le Chatelier's Principle in the Contact Process
 
