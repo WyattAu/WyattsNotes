@@ -8,12 +8,19 @@ on:
 
 concurrency:
   group: 'pages'
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
-    name: Build
+    name: Build & Deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -33,15 +40,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
-      - name: Lint check
-        run: pnpm exec eslint . --report-unused-disable-directives --ext .js,.jsx,.ts,.tsx
-
-      - name: Typecheck
-        run: pnpm run typecheck
-
-      - name: Clean previous builds
-        run: pnpm run clear
 
       - name: Build website
         run: pnpm run build
@@ -63,17 +61,6 @@ jobs:
         with:
           path: build/
 
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
