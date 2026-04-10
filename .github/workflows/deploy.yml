@@ -6,21 +6,16 @@ on:
       - main
   workflow_dispatch:
 
+# Do NOT cancel in-progress — long builds should not be killed by new pushes
 concurrency:
   group: 'pages'
   cancel-in-progress: false
 
 jobs:
   build:
-    name: Build & Deploy
+    name: Build (attempt 1)
     runs-on: ubuntu-latest
-    timeout-minutes: 120
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    timeout-minutes: 90
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -61,6 +56,65 @@ jobs:
         with:
           path: build/
 
+  build-retry:
+    name: Build (attempt 2)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    needs: build
+    if: failure()
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build website
+        run: pnpm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=14336
+
+      - name: Prepare artifact
+        run: |
+          touch build/.nojekyll
+          echo "Build version: $(git rev-parse --short HEAD) | $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > build/build-info.txt
+
+      - name: Validate build output
+        run: |
+          [ -d build ] || (echo "ERROR: Build directory missing"; exit 1)
+          [ -f build/index.html ] || (echo "ERROR: No index.html found"; exit 1)
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: [build, build-retry]
+    # Deploy if either build succeeded
+    if: needs.build.result == 'success' || needs.build-retry.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
