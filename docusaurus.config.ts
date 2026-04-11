@@ -115,20 +115,50 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'academics-notes',
-        path: 'docs/docs_academics',
-        routeBasePath: '/docs/academics',
-        sidebarPath: require.resolve('./sidebars/sidebar_academics.ts'),
+        id: 'ib-notes',
+        path: 'docs/docs_ib',
+        routeBasePath: '/docs/academics/ib',
+        sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
         ...commonDocsPluginConfig,
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'programming-notes',
-        path: 'docs/docs_programming',
-        routeBasePath: '/docs/programming',
-        sidebarPath: require.resolve('./sidebars/sidebar_programming.ts'),
+        id: 'alevel-notes',
+        path: 'docs/docs_alevel',
+        routeBasePath: '/docs/academics/alevel',
+        sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dse-notes',
+        path: 'docs/docs_dse',
+        routeBasePath: '/docs/academics/dse',
+        sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'cpp-notes',
+        path: 'docs/docs_cpp',
+        routeBasePath: '/docs/cpp',
+        sidebarPath: require.resolve('./sidebars/sidebar_cpp.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'languages-notes',
+        path: 'docs/docs_languages',
+        routeBasePath: '/docs/languages',
+        sidebarPath: require.resolve('./sidebars/sidebar_languages.ts'),
         ...commonDocsPluginConfig,
       },
     ],
@@ -247,23 +277,23 @@ const config: Config = {
           items: [
             {
               label: 'C++',
-              to: '/docs/programming/cpp/intro',
-            },
-            {
-              label: 'Dart',
-              to: '/docs/programming/dart/intro',
+              to: '/docs/cpp/intro',
             },
             {
               label: 'Java',
-              to: '/docs/programming/java/intro',
+              to: '/docs/languages/java/intro',
             },
             {
               label: 'Python',
-              to: '/docs/programming/python/intro',
+              to: '/docs/languages/python/intro',
             },
             {
               label: 'Rust',
-              to: '/docs/programming/rust/intro',
+              to: '/docs/languages/rust/intro',
+            },
+            {
+              label: 'Dart',
+              to: '/docs/languages/dart/intro',
             },
           ],
         },

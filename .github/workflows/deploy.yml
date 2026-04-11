@@ -44,7 +44,7 @@ jobs:
       - name: Build website
         run: pnpm run build
         env:
-          NODE_OPTIONS: --max-old-space-size=14336
+          NODE_OPTIONS: --max-old-space-size=8192
           DISABLE_LUNR: 'true'
 
       - name: Prepare artifact
