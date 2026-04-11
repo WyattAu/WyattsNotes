@@ -115,209 +115,51 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'IB-notes',
-        path: 'docs/docs_IB-notes',
-        routeBasePath: '/docs/docs_IB-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_IB-notes.ts'),
+        id: 'academics-notes',
+        path: 'docs/docs_academics',
+        routeBasePath: '/docs/academics',
+        sidebarPath: require.resolve('./sidebars/sidebar_academics.ts'),
         ...commonDocsPluginConfig,
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'ALevel-notes',
-        path: 'docs/docs_ALevel-notes',
-        routeBasePath: '/docs/docs_ALevel-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_ALevel-notes.ts'),
+        id: 'programming-notes',
+        path: 'docs/docs_programming',
+        routeBasePath: '/docs/programming',
+        sidebarPath: require.resolve('./sidebars/sidebar_programming.ts'),
         ...commonDocsPluginConfig,
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'DSE-notes',
-        path: 'docs/docs_DSE-notes',
-        routeBasePath: '/docs/docs_DSE-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_DSE-notes.ts'),
+        id: 'infrastructure-notes',
+        path: 'docs/docs_infrastructure',
+        routeBasePath: '/docs/infrastructure',
+        sidebarPath: require.resolve('./sidebars/sidebar_infrastructure.ts'),
         ...commonDocsPluginConfig,
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'cpp-notes',
-        path: 'docs/docs_cpp-notes',
-        routeBasePath: '/docs/docs_cpp-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_cpp-notes.ts'),
+        id: 'tools-notes',
+        path: 'docs/docs_tools',
+        routeBasePath: '/docs/tools',
+        sidebarPath: require.resolve('./sidebars/sidebar_tools.ts'),
         ...commonDocsPluginConfig,
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      'docusaurus-lunr-search',
       {
-        id: 'dart-notes',
-        path: 'docs/docs_dart-notes',
-        routeBasePath: '/docs/docs_dart-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_dart-notes.ts'),
-        ...commonDocsPluginConfig,
+        indexDocs: true,
+        indexBlog: true,
+        languages: ['en'],
       },
     ],
-
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'java-notes',
-        path: 'docs/docs_java-notes',
-        routeBasePath: '/docs/docs_java-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_java-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'python-notes',
-        path: 'docs/docs_python-notes',
-        routeBasePath: '/docs/docs_python-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_python-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'git-notes',
-        path: 'docs/docs_git-notes',
-        routeBasePath: '/docs/docs_git-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_git-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'general-notes',
-        path: 'docs/docs_general-notes',
-        routeBasePath: '/docs/docs_general-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_general-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'tuning-notes',
-        path: 'docs/docs_tuning-notes',
-        routeBasePath: '/docs/docs_tuning-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_tuning-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'licensing-notes',
-        path: 'docs/docs_licensing-notes',
-        routeBasePath: '/docs/docs_licensing-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_licensing-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'truenas-notes',
-        path: 'docs/docs_truenas-notes',
-        routeBasePath: '/docs/docs_truenas-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_truenas-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'ProbabilisticML-notes',
-        path: 'docs/docs_ProbabilisticML-notes',
-        routeBasePath: '/docs/docs_ProbabilisticML-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_ProbabilisticML-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'linux-notes',
-        path: 'docs/docs_linux-notes',
-        routeBasePath: '/docs/docs_linux-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_linux-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'rust-notes',
-        path: 'docs/docs_rust-notes',
-        routeBasePath: '/docs/docs_rust-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_rust-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'networking-notes',
-        path: 'docs/docs_networking-notes',
-        routeBasePath: '/docs/docs_networking-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_networking-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'databases-notes',
-        path: 'docs/docs_databases-notes',
-        routeBasePath: '/docs/docs_databases-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_databases-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'security-notes',
-        path: 'docs/docs_security-notes',
-        routeBasePath: '/docs/docs_security-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_security-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'algorithms-notes',
-        path: 'docs/docs_algorithms-notes',
-        routeBasePath: '/docs/docs_algorithms-notes',
-        sidebarPath: require.resolve('./sidebars/sidebar_algorithms-notes.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    // docusaurus-lunr-search is very memory-intensive (~4GB).
-    // Disable during CI build to stay within 16GB runner RAM.
-    // Search index is generated client-side via the plugin's runtime.
-    ...(process.env.DISABLE_LUNR !== 'true'
-      ? [
-          [
-            'docusaurus-lunr-search',
-            {
-              indexDocs: true,
-              indexBlog: true,
-              languages: ['en'],
-            },
-          ],
-        ]
-      : []),
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     [
       '@r74tech/docusaurus-plugin-panzoom',
@@ -377,57 +219,44 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Year 12-13',
+          title: 'Academics',
           items: [
             {
-              label: 'IB ',
-              to: '/docs/docs_IB-notes/intro',
+              label: 'IB',
+              to: '/docs/academics/ib/intro',
             },
             {
-              label: 'A Levels ',
-              to: '/docs/docs_ALevel-notes/intro',
+              label: 'A-Levels',
+              to: '/docs/academics/alevel/intro',
             },
             {
-              label: 'DSE ',
-              to: '/docs/docs_DSE-notes/intro',
+              label: 'DSE',
+              to: '/docs/academics/dse/intro',
             },
           ],
         },
         {
-          title: 'Dev Tools',
+          title: 'Programming',
           items: [
             {
-              label: 'C++ ',
-              to: '/docs/docs_cpp-notes/intro',
+              label: 'C++',
+              to: '/docs/programming/cpp/intro',
             },
             {
-              label: 'Dart ',
-              to: '/docs/docs_dart-notes/intro',
+              label: 'Dart',
+              to: '/docs/programming/dart/intro',
             },
             {
-              label: 'Java ',
-              to: '/docs/docs_java-notes/intro',
+              label: 'Java',
+              to: '/docs/programming/java/intro',
             },
             {
-              label: 'Python ',
-              to: '/docs/docs_python-notes/intro',
+              label: 'Python',
+              to: '/docs/programming/python/intro',
             },
             {
-              label: 'Rust ',
-              to: '/docs/docs_rust-notes/intro',
-            },
-            {
-              label: 'Git ',
-              to: '/docs/docs_git-notes/intro',
-            },
-          ],
-        },
-        {
-          title: 'Machine Learning',
-          items: [
-            {
-              label: 'Probabilistic ML',
-              to: '/docs/docs_ProbabilisticML-notes/intro',
+              label: 'Rust',
+              to: '/docs/programming/rust/intro',
             },
           ],
         },
@@ -436,31 +265,44 @@ const config: Config = {
           items: [
             {
               label: 'Linux',
-              to: '/docs/docs_linux-notes/intro',
+              to: '/docs/infrastructure/linux/intro',
             },
             {
               label: 'Networking',
-              to: '/docs/docs_networking-notes/intro',
+              to: '/docs/infrastructure/networking/intro',
             },
             {
               label: 'Databases',
-              to: '/docs/docs_databases-notes/intro',
+              to: '/docs/infrastructure/databases/intro',
             },
             {
               label: 'Security',
-              to: '/docs/docs_security-notes/intro',
+              to: '/docs/infrastructure/security/intro',
             },
             {
               label: 'TrueNAS',
-              to: '/docs/docs_truenas-notes/intro',
+              to: '/docs/infrastructure/truenas/intro',
             },
             {
               label: 'Tuning',
-              to: '/docs/docs_tuning-notes/intro',
+              to: '/docs/infrastructure/tuning/intro',
+            },
+          ],
+        },
+        {
+          title: 'Tools',
+          items: [
+            {
+              label: 'Git',
+              to: '/docs/tools/git/intro',
             },
             {
-              label: 'Licensing',
-              to: '/docs/docs_licensing-notes/intro',
+              label: 'Algorithms',
+              to: '/docs/tools/algorithms/intro',
+            },
+            {
+              label: 'Probabilistic ML',
+              to: '/docs/tools/probabilisticml/intro',
             },
           ],
         },
