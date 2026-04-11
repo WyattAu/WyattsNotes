@@ -152,14 +152,21 @@ const config: Config = {
         ...commonDocsPluginConfig,
       },
     ],
-    [
-      'docusaurus-lunr-search',
-      {
-        indexDocs: true,
-        indexBlog: true,
-        languages: ['en'],
-      },
-    ],
+    // docusaurus-lunr-search: indexDocs=true builds the search index at build time,
+    // consuming ~4GB+ heap. In CI, disable build-time indexing to stay within
+    // runner memory. Search still works at runtime (client-side index generation).
+    ...(process.env.DISABLE_LUNR !== 'true'
+      ? [
+          [
+            'docusaurus-lunr-search',
+            {
+              indexDocs: true,
+              indexBlog: true,
+              languages: ['en'],
+            },
+          ],
+        ]
+      : []),
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     [
       '@r74tech/docusaurus-plugin-panzoom',
