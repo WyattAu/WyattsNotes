@@ -303,14 +303,21 @@ const config: Config = {
         ...commonDocsPluginConfig,
       },
     ],
-    [
-      'docusaurus-lunr-search', // Wont work in dev mode, need to build
-      {
-        indexDocs: true,
-        indexBlog: true,
-        languages: ['en'],
-      },
-    ],
+    // docusaurus-lunr-search is very memory-intensive (~4GB).
+    // Disable during CI build to stay within 16GB runner RAM.
+    // Search index is generated client-side via the plugin's runtime.
+    ...(process.env.DISABLE_LUNR !== 'true'
+      ? [
+          [
+            'docusaurus-lunr-search',
+            {
+              indexDocs: true,
+              indexBlog: true,
+              languages: ['en'],
+            },
+          ],
+        ]
+      : []),
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     [
       '@r74tech/docusaurus-plugin-panzoom',
