@@ -39,14 +39,13 @@ jobs:
       - name: Build website
         run: pnpm run build
         env:
-          NODE_OPTIONS: --max-old-space-size=12288
+          NODE_OPTIONS: --max-old-space-size=14336
           DISABLE_LUNR: 'true'
 
       - name: Prepare artifact
         run: |
           touch build/.nojekyll
           echo "Build version: $(git rev-parse --short HEAD) | $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > build/build-info.txt
-          echo "LUNR search: DISABLED (build with lunr requires >16GB RAM)"
 
       - name: Validate build output
         run: |
@@ -87,7 +86,7 @@ jobs:
       - name: Build website
         run: pnpm run build
         env:
-          NODE_OPTIONS: --max-old-space-size=12288
+          NODE_OPTIONS: --max-old-space-size=14336
           DISABLE_LUNR: 'true'
 
       - name: Prepare artifact
