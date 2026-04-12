@@ -25,8 +25,8 @@ const subjectGroups: SubjectGroup[] = [
     subjects: [
       {
         name: 'IB Notes',
-        files: 74,
-        lines: '49.1K',
+        files: 79,
+        lines: '53K',
         href: '/docs/academics/ib/intro',
         tag: 'HL/SL',
         desc: 'Diploma Programme — Maths, Physics, Chemistry, Computer Science, English, History',
@@ -194,8 +194,8 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 600;
-const totalLines = '412K';
+const totalFiles = 605;
+const totalLines = '416K';
 const totalSubjects = 19;
 
 export default function Home(): React.ReactNode {
