@@ -45,7 +45,6 @@ jobs:
         run: pnpm run build
         env:
           NODE_OPTIONS: --max-old-space-size=12288
-          DISABLE_LUNR: 'true'
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
 
       - name: Prepare artifact
