@@ -4,7 +4,7 @@ title: Introduction to Networking
 description:
   Computer networking fundamentals — OSI model, TCP/IP, DNS, HTTP/HTTPS, TLS, and practical network
   troubleshooting.
-slug: /intro
+slug: intro
 sidebar_position: 1
 tags:
   - Networking

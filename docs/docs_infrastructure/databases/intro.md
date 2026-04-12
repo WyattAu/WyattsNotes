@@ -4,7 +4,7 @@ title: Introduction to Databases
 description:
   Database fundamentals — relational theory, SQL, indexing, transactions, NoSQL paradigms, and
   database design.
-slug: /intro
+slug: intro
 sidebar_position: 1
 tags:
   - Databases

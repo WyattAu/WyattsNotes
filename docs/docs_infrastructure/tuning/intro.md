@@ -4,7 +4,7 @@ title: Introduction to Hardware Tuning
 description:
   Hardware tuning techniques — undervolting, overclocking, and memory tuning for performance and
   efficiency.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

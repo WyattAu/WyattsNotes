@@ -4,7 +4,7 @@ title: Introduction to Linux
 description:
   Comprehensive Linux reference — CLI, file systems, process management, networking, systemd,
   security, and package management.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

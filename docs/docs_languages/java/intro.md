@@ -2,7 +2,7 @@
 id: intro
 title: Introduction to Java
 description: Java programming best practices, JDK 21+ features, and deep-dive reference material.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

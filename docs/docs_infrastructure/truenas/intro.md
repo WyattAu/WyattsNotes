@@ -2,7 +2,7 @@
 id: intro
 title: Introduction to TrueNAS
 description: TrueNAS setup, configuration, and storage management best practices.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

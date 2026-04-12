@@ -2,7 +2,7 @@
 id: intro
 title: Introduction to Licensing
 description: Open-source licenses, compliance, and legal considerations for software projects.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

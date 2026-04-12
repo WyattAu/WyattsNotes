@@ -2,7 +2,7 @@
 id: intro
 title: Introduction to Python
 description: Python programming reference — async, type hints, packaging, and modern best practices.
-slug: /intro
+slug: intro
 sidebar_position: 1
 tags:
   - Python

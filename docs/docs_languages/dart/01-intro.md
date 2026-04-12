@@ -2,7 +2,7 @@
 id: intro
 title: Introduction to Dart & Flutter
 description: Dart and Flutter best practices, UI patterns, and cross-platform development reference.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

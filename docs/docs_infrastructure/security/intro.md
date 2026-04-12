@@ -4,7 +4,7 @@ title: Introduction to Security
 description:
   Information security fundamentals — threat modeling, cryptography, authentication, web security,
   network security, and incident response.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

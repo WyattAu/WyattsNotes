@@ -4,7 +4,7 @@ title: Introduction to Algorithms
 description:
   Algorithm fundamentals — complexity analysis, data structures, sorting, graph algorithms, dynamic
   programming, and problem-solving patterns.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 

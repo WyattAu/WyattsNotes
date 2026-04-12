@@ -4,7 +4,7 @@ title: Introduction to Rust
 description:
   Systems programming with Rust — ownership, borrowing, lifetimes, traits, concurrency, and the
   Cargo ecosystem.
-slug: /intro
+slug: intro
 sidebar_position: 1
 ---
 
