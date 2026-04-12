@@ -104,8 +104,42 @@ def find_protected_regions(content):
     regions.extend(find_code_fence_regions(content))
 
     # 3. Display math ($$ ... $$) - can span lines
-    for m in re.finditer(r"\$\$.*?\$\$", content, re.DOTALL):
-        regions.append((m.start(), m.end()))
+    #    Use line-by-line matching to avoid matching $$ inside inline math ($^2$$)
+    #    Handles both single-line ($$ ... $$) and multi-line ($$ block $$) forms.
+    all_lines = content.split("\n")
+    # Precompute character offsets for each line start (O(n) total)
+    line_starts = []
+    pos = 0
+    for ln in all_lines:
+        line_starts.append(pos)
+        pos += len(ln) + 1  # +1 for newline
+
+    dm_close_re = re.compile(r"^\s*\$\$\s*$")
+    dm_single_re = re.compile(r"^\s*\$\$.*\$\$\s*$")
+
+    i = 0
+    while i < len(all_lines):
+        line = all_lines[i]
+        stripped = line.lstrip()
+        # Display math opening: $$ at start of line (with optional indentation)
+        # Exclude $$$ and above (likely LaTeX dollar signs, not display math delimiters)
+        if stripped.startswith("$$") and not stripped.startswith("$$$"):
+            if dm_single_re.match(line):
+                # Single-line display math: $$ ... $$ on same line
+                start_pos = line_starts[i]
+                end_pos = start_pos + len(line) + 1
+                regions.append((start_pos, end_pos))
+            else:
+                # Multi-line display math block: search for closing $$ on subsequent lines
+                j = i + 1
+                while j < len(all_lines):
+                    if dm_close_re.match(all_lines[j]):
+                        start_pos = line_starts[i]
+                        end_pos = line_starts[j] + len(all_lines[j]) + 1
+                        regions.append((start_pos, end_pos))
+                        break
+                    j += 1
+        i += 1
 
     # 4. Single-line protected regions (inline code, inline math)
     #    Process line by line to avoid cross-line inline math matches
@@ -137,6 +171,13 @@ def find_protected_regions(content):
 
         # Inline math
         for m in inline_math_re.finditer(line):
+            regions.append((line_start + m.start(), line_start + m.end()))
+
+        # Single-line display math: $$ ... $$ on the same line
+        # Handles cases like "- $$ x^2 $$" or "**text:** $$ ... $$"
+        # where $$ is not at column 0 (not caught by block display math handler).
+        # Uses (?<!\$) lookbehind to avoid matching $$$ (LaTeX dollar signs).
+        for m in re.finditer(r"(?<!\$)\$\$.*?(?<!\$)\$\$", line):
             regions.append((line_start + m.start(), line_start + m.end()))
 
     # Sort by start position and merge overlapping regions

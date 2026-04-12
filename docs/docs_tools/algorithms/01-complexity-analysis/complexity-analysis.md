@@ -199,8 +199,7 @@ The recursive work at the leaves dominates the combine step.
 ### Case 2: Work Equal Across Levels
 
 If $f(n) = \Theta(n^{c_{crit}} \log^k n)$ for some $k \ge 0$, then
-$T(n) = \Theta(n^{c_{crit}}
-\log^{k+1} n)$.
+$T(n) = \Theta(n^{c_{crit}} \log^{k+1} n)$.
 
 The work is the same at each level of the recursion tree.
 
