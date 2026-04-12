@@ -94,12 +94,12 @@ Entities: Student, Teacher, Course, Enrollment
 
 | Key Type      | Definition                                                                   | Example                                       |
 | ------------- | ---------------------------------------------------------------------------- | --------------------------------------------- |
-| Superkey      | A set of attributes that uniquely identifies each tuple (may include extras) | {studentID, name}                             |
-| Candidate key | A minimal superkey (no proper subset is also a superkey)                     | {studentID}, {email}                          |
-| Primary key   | The candidate key chosen by the database designer to be the main identifier  | {studentID}                                   |
+| Superkey      | A set of attributes that uniquely identifies each tuple (may include extras) | `{studentID, name}`                           |
+| Candidate key | A minimal superkey (no proper subset is also a superkey)                     | `{studentID}`, `{email}`                      |
+| Primary key   | The candidate key chosen by the database designer to be the main identifier  | `{studentID}`                                 |
 | Foreign key   | An attribute that references the primary key of another table                | course.teacherID references Teacher.teacherID |
-| Composite key | A primary key consisting of two or more attributes                           | {studentID, courseID} in Enrollment           |
-| Alternate key | A candidate key not chosen as the primary key                                | {email} (if studentID is the primary key)     |
+| Composite key | A primary key consisting of two or more attributes                           | `{studentID, courseID}` in Enrollment         |
+| Alternate key | A candidate key not chosen as the primary key                                | `{email}` (if studentID is the primary key)   |
 
 **Primary key requirements:** Uniqueness (no two rows have the same primary key value), non-null
 (every row must have a primary key), immutable (the value should not change over time).
@@ -119,8 +119,8 @@ A functional dependency $X \rightarrow Y$ means that the value of attribute $Y$ 
 determined by the value of attribute $X$. If two rows have the same value for $X$, they must have
 the same value for $Y$.
 
-**Example:** In a table with {studentID, name, dateOfBirth}, the dependency studentID $\rightarrow$
-name holds because each student has exactly one name.
+**Example:** In a table with `{studentID, name, dateOfBirth}`, the dependency studentID
+$\rightarrow$ name holds because each student has exactly one name.
 
 **Partial dependency:** $X \rightarrow Y$ where $X$ is a proper subset of a candidate key. This
 violates 2NF.
@@ -154,7 +154,7 @@ The Items column contains multiple values, violating the atomicity rule.
 | 1001    | Alice    | Cable   |
 | 1002    | Bob      | Monitor |
 
-Primary key: {OrderID, Item}
+Primary key: `{OrderID, Item}`
 
 ### Second Normal Form (2NF)
 
@@ -170,7 +170,7 @@ composite.
 | 1         | 102      | Alice       | Physics     | Ms. Jones   |
 | 2         | 101      | Bob         | Math        | Mr. Smith   |
 
-Primary key: {studentID, courseID}
+Primary key: `{studentID, courseID}`
 
 Partial dependencies:
 
@@ -197,7 +197,7 @@ key (studentID alone).
 | 101      | Math        | Mr. Smith   |
 | 102      | Physics     | Ms. Jones   |
 
-**Enrollment** (PK: {studentID, courseID}):
+**Enrollment** (PK: `{studentID, courseID}`):
 
 | studentID | courseID |
 | --------- | -------- |
@@ -263,10 +263,10 @@ Starting table: HospitalRecord
 | P003      | Tom         | D001     | Dr. Lee    | Cardiology | 2025-03-03      |
 
 **Step 1: 1NF.** Values are already atomic. But there are repeating groups (same patient appears
-multiple times). The primary key must be {patientID, appointmentDate}.
+multiple times). The primary key must be `{patientID, appointmentDate}`.
 
-Actually, {patientID, appointmentDate} uniquely identifies each row. But patientName depends only on
-patientID, and doctorName depends only on doctorID.
+Actually, `{patientID, appointmentDate}` uniquely identifies each row. But patientName depends only
+on patientID, and doctorName depends only on doctorID.
 
 **Step 2: 2NF.** Remove partial dependencies.
 
@@ -278,7 +278,7 @@ patientID, and doctorName depends only on doctorID.
 | P002      | Mary        |
 | P003      | Tom         |
 
-**Appointment** (PK: {patientID, appointmentDate}, FK: patientID, doctorID):
+**Appointment** (PK: `{patientID, appointmentDate}`, FK: patientID, doctorID):
 
 | patientID | appointmentDate | doctorID |
 | --------- | --------------- | -------- |
@@ -372,9 +372,8 @@ WHERE lastName = 'Jones' AND firstName = 'Bob';
 DELETE FROM Student WHERE studentID = 2;
 ```
 
-:::warning
-DELETE FROM Student without WHERE deletes all rows but keeps the table structure. DROP TABLE Student deletes both the data and the table structure. Be certain which one you intend.
-:::
+:::warning DELETE FROM Student without WHERE deletes all rows but keeps the table structure. DROP
+TABLE Student deletes both the data and the table structure. Be certain which one you intend. :::
 
 ### Queries: SELECT
 
