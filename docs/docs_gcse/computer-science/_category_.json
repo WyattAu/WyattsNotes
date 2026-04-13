@@ -1,0 +1,8 @@
+{
+  "label": "Computer Science",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "GCSE Computer Science covering algorithms, programming, data representation, computer systems, and networks."
+  }
+}

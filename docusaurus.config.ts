@@ -145,6 +145,16 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'gcse-notes',
+        path: 'docs/docs_gcse',
+        routeBasePath: '/docs/academics/gcse',
+        sidebarPath: require.resolve('./sidebars/sidebar_gcse.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'cpp-notes',
         path: 'docs/docs_cpp',
         routeBasePath: '/docs/cpp',
@@ -269,6 +279,10 @@ const config: Config = {
             {
               label: 'DSE',
               to: '/docs/academics/dse/intro',
+            },
+            {
+              label: 'GCSE',
+              to: '/docs/academics/gcse/intro',
             },
           ],
         },
