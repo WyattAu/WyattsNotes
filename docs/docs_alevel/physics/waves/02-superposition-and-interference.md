@@ -177,6 +177,7 @@ away. Calculate the fringe spacing.
 **Answer.**
 $\Delta w = \frac{\lambda D}{s} = \frac{590 \times 10^{-9} \times 1.5}{0.50 \times 10^{-3}} = \frac{8.85 \times 10^{-7}}{5.0 \times 10^{-4}} = 1.77 \times 10^{-3}$
 m $= 1.77$ mm.
+
 </details>
 
 ## 4. Diffraction Gratings
@@ -330,6 +331,7 @@ interference is destructive (minimum).
 
 <b>If you get this wrong, revise:</b>
 [Path Difference and Phase Difference](#2-path-difference-and-phase-difference)
+
 </details>
 
 <details>
@@ -343,6 +345,7 @@ m $= 560$ nm.
 
 <b>If you get this wrong, revise:</b>
 [Young's Double Slit Experiment](#3-youngs-double-slit-experiment)
+
 </details>
 
 <details>
@@ -355,6 +358,7 @@ $\sin\theta = \frac{2 \times 600 \times 10^{-9}}{2.0 \times 10^{-6}} = \frac{1.2
 $\theta = \arcsin(0.60) = 36.9°$.
 
 <b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
+
 </details>
 
 <details>
@@ -368,6 +372,7 @@ wave speed on the string, (b) the frequency of the third harmonic.
 
 <b>If you get this wrong, revise:</b>
 [Harmonics on a String Fixed at Both Ends](#harmonics-on-a-string-fixed-at-both-ends)
+
 </details>
 
 <details>
@@ -381,6 +386,7 @@ The next harmonic is the 3rd: $f_3 = 3f_1 = 300$ Hz. (No 2nd harmonic exists for
 
 <b>If you get this wrong, revise:</b>
 [Harmonics in a Pipe Closed at One End](#harmonics-in-a-pipe-closed-at-one-end)
+
 </details>
 
 <details>
@@ -394,6 +400,7 @@ In antiphase: $A_{\text{resultant}} = |3.0 - 4.0| = 1.0$ mm.
 
 <b>If you get this wrong, revise:</b>
 [Constructive and Destructive Interference](#constructive-and-destructive-interference)
+
 </details>
 
 <details>
@@ -406,6 +413,7 @@ $n_{\max} = d/\lambda = 3.33 \times 10^{-6} / 540 \times 10^{-9} = 6.17$. So the
 order is $n = 6$. Total visible maxima $= 2(6) + 1 = 13$.
 
 <b>If you get this wrong, revise:</b> [Maximum number of orders](#maximum-number-of-orders)
+
 </details>
 
 <details>
@@ -425,6 +433,7 @@ $y = 2A\sin(kx)\cos(-\omega t) = 2A\sin(kx)\cos(\omega t)$ (since $\cos$ is even
 
 <b>If you get this wrong, revise:</b>
 [Derivation from Superposition of Two Progressive Waves](#derivation-from-superposition-of-two-progressive-waves)
+
 </details>
 
 <details>
@@ -438,6 +447,7 @@ m $= 0.75$ mm.
 
 <b>If you get this wrong, revise:</b>
 [Young's Double Slit Experiment](#3-youngs-double-slit-experiment)
+
 </details>
 
 <details>
@@ -452,6 +462,7 @@ $\lambda_4 = 2L/4 = L/2 = 0.30$ m.
 
 <b>If you get this wrong, revise:</b>
 [Harmonics on a String Fixed at Both Ends](#harmonics-on-a-string-fixed-at-both-ends)
+
 </details>
 
 <details>
@@ -469,6 +480,7 @@ stationary wave, all points between two adjacent nodes are in phase, but points 
 are in antiphase.
 
 <b>If you get this wrong, revise:</b> [Stationary Waves](#5-stationary-waves)
+
 </details>
 
 <details>
@@ -487,10 +499,203 @@ $\theta = 34.1°$.
 Angular range $= 34.1° - 18.7° = 15.4°$.
 
 <b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
+
 </details>
 
-:::
+## 6. Advanced Double Slit Calculations
 
-:::
+### 6.1 Finding the Position of a Specific Maximum
 
-:::
+**Example.** Light of wavelength $480$ nm passes through double slits separated by $0.80$ mm onto a
+screen $2.0$ m away. Find the distance from the central maximum to the fifth bright fringe.
+
+**Answer.**
+$w = \frac{n\lambda D}{s} = \frac{5 \times 480 \times 10^{-9} \times 2.0}{0.80 \times 10^{-3}} = \frac{4.80 \times 10^{-6}}{8.0 \times 10^{-4}} = 6.0 \times 10^{-3}$
+m $= 6.0$ mm.
+
+### 6.2 Finding the Position of a Minimum
+
+**Example.** Using the same setup ($\lambda = 480$ nm, $s = 0.80$ mm, $D = 2.0$ m), find the
+distance from the central maximum to the first dark fringe.
+
+**Answer.** For the first minimum, the path difference equals $\lambda/2$. For small angles:
+$w = D\sin\theta \approx D \cdot \lambda/(2s) = 2.0 \times 480 \times 10^{-9}/(2 \times 0.80 \times 10^{-3}) = 6.0 \times 10^{-4}$
+m $= 0.60$ mm.
+
+This is exactly half the fringe spacing: $\Delta w = \lambda D/s = 1.20$ mm, and
+$0.60 = \Delta w/2$. Confirmed.
+
+### 6.3 Non-Integer Wavelength Ratios
+
+**Example.** Two coherent sources emit waves of wavelength $2.5$ cm. At point $P$, the path
+difference is $9.0$ cm. Describe the interference at $P$.
+
+**Answer.** $\Delta x / \lambda = 9.0 / 2.5 = 3.6 = 18/5$. This is neither an integer (constructive)
+nor a half-integer (destructive). The interference is partial. The phase difference is
+$\Delta\phi = (2\pi/\lambda)\Delta x = 2\pi \times 3.6 = 7.2\pi = 0.2\pi$ (modulo $2\pi$).
+
+The resultant amplitude is
+$A_R = 2A|\cos(\Delta\phi/2)| = 2A|\cos(0.1\pi)| = 2A \times 0.951 = 1.90A$. This is close to
+maximum ($2A$) because the path difference is close to $4\lambda = 10.0$ cm.
+
+## 7. Path Difference for Minima and Maxima: Extended Analysis
+
+### 7.1 General Conditions
+
+For two coherent sources separated by distance $s$, at a point $P$ on a screen at distance
+$D \gg s$:
+
+| Condition | Path Difference    | Fringe Type  | Order                 |
+| --------- | ------------------ | ------------ | --------------------- |
+| Bright    | $n\lambda$         | Constructive | $n = 0, 1, 2, \ldots$ |
+| Dark      | $(n + 0.5)\lambda$ | Destructive  | $n = 0, 1, 2, \ldots$ |
+
+The distance from the central maximum to the $n$-th bright fringe is $w_n = n\lambda D/s$. The
+distance to the $n$-th dark fringe is $w_n = (n + 0.5)\lambda D/s$.
+
+### 7.2 White Light Fringes
+
+If white light is used, each wavelength produces its own fringe pattern. The central maximum
+($n = 0$) is white (all wavelengths constructively interfere at $\Delta x = 0$). Higher-order
+fringes are spectrally dispersed: blue light ($\lambda \approx 450$ nm) produces narrower fringes
+than red light ($\lambda \approx 700$ nm).
+
+## 8. Phase Difference and Coherence in Detail
+
+### 8.1 Quantifying Coherence
+
+Two sources are **coherent** if their phase difference $\Delta\phi$ is constant in time. The
+**coherence length** is the maximum path difference over which interference can be observed:
+
+$$L_c = \frac{\lambda^2}{\Delta\lambda}$$
+
+where $\Delta\lambda$ is the bandwidth of the source. A narrow-band source (small $\Delta\lambda$)
+has a long coherence length.
+
+**Example.** A sodium lamp at $\lambda = 589$ nm with $\Delta\lambda = 0.6$ nm:
+$L_c = (589 \times 10^{-9})^2 / (0.6 \times 10^{-9}) = 5.8 \times 10^{-4}$ m $= 0.58$ mm. A laser at
+$\lambda = 633$ nm with $\Delta\lambda = 10^{-6}$ nm has $L_c \approx 400$ m.
+
+### 8.2 Why Independent Sources Are Not Coherent
+
+Light from two independent sources is not coherent because each emits photons with random phase. The
+phase difference fluctuates randomly on a timescale of about $10^{-8}$ s, washing out any
+interference pattern. Young's experiment requires a single source illuminating both slits so the
+slits act as secondary coherent sources.
+
+## 9. Diffraction Grating: Extended Analysis
+
+### 9.1 Angular Dispersion and Resolving Power
+
+The **angular dispersion** of a grating is $d\theta/d\lambda = n/(d\cos\theta)$. The **resolving
+power** is:
+
+$$R = \frac{\lambda}{\Delta\lambda} = nN$$
+
+where $N$ is the total number of illuminated slits.
+
+**Example.** A grating has $500$ lines/mm and is $20$ mm wide. In second order at $\lambda = 600$
+nm, the minimum resolvable wavelength difference is
+$\Delta\lambda = 600/(2 \times 10{,}000) = 0.030$ nm.
+
+### 9.2 Missing Orders
+
+If grating slits have finite width $a$, an order $n$ is missing when it coincides with a single-slit
+minimum: $n = (d/a) \times m$ for $m = 1, 2, 3, \ldots$.
+
+**Example.** A grating with $d = 2.0$ $\mu$m and slit width $a = 0.50$ $\mu$m: $d/a = 4$, so orders
+$n = 4, 8, 12, \ldots$ are missing.
+
+## 10. Common Pitfalls
+
+1. **Forgetting the small-angle approximation.** $\Delta w = \lambda D/s$ assumes
+   $\sin\theta \approx \tan\theta$, valid only when $D \gg s$. For large angles, use
+   $\sin\theta = n\lambda/s$ directly.
+
+2. **Confusing slit separation $s$ with slit width $a$.** $s$ is the separation between slit
+   centres; $a$ determines the diffraction envelope.
+
+3. **Counting the zeroth order.** The central maximum ($n = 0$) counts as a maximum. Total visible
+   maxima $= 2n_{\max} + 1$.
+
+4. **Assuming all harmonics exist for closed pipes.** A pipe closed at one end only supports odd
+   harmonics ($n = 1, 3, 5, \ldots$).
+
+5. **Confusing nodes and antinodes at boundaries.** A fixed end is a displacement node. An open end
+   is a displacement antinode.
+
+## 11. Extension Problem Set
+
+<details>
+<summary>Problem 1</summary>
+In a Young's double slit experiment, light of wavelength $620$ nm produces fringes that are $2.5$ mm apart on a screen $1.2$ m from the slits. Calculate the slit separation. If the slit separation is halved, what happens to the fringe spacing?
+
+**Answer.**
+$s = \lambda D / \Delta w = 620 \times 10^{-9} \times 1.2 / 2.5 \times 10^{-3} = 2.98 \times 10^{-4}$
+m $= 0.298$ mm. If $s$ is halved: $\Delta w$ doubles to $5.0$ mm.
+
+<b>If you get this wrong, revise:</b>
+[Young's Double Slit Experiment](#3-youngs-double-slit-experiment)
+
+</details>
+
+<details>
+<summary>Problem 2</summary>
+Two coherent sources $S_1$ and $S_2$ are $3.0$ mm apart and emit light of wavelength $600$ nm. A screen is placed $5.0$ m away. Calculate the positions of the central maximum and the first three minima.
+
+**Answer.** Fringe spacing: $\Delta w = 600 \times 10^{-9} \times 5.0 / 3.0 \times 10^{-3} = 1.0$
+mm. Central maximum at $w = 0$. Minima at $w = 0.50$ mm, $1.5$ mm, $2.5$ mm.
+
+<b>If you get this wrong, revise:</b>
+[Path Difference for Minima and Maxima](#7-path-difference-for-minima-and-maxima-extended-analysis)
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+A diffraction grating with 400 lines/mm is used with light of wavelength $500$ nm. Calculate the angle of the third-order maximum and the total number of visible maxima.
+
+**Answer.** $d = 2.5 \times 10^{-6}$ m.
+$\sin\theta = 3 \times 500 \times 10^{-9}/2.5 \times 10^{-6} = 0.600$. $\theta = 36.9^\circ$.
+$n_{\max} = d/\lambda = 5$. Total $= 2(5) + 1 = 11$.
+
+<b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+A stationary wave is formed on a string of length $0.80$ m with wave speed $320$ m s$^{-1}$. Calculate the fundamental frequency and the number of nodes in the fourth harmonic.
+
+**Answer.** $f_1 = 320/(2 \times 0.80) = 200$ Hz. Fourth harmonic has $n + 1 = 5$ nodes.
+
+<b>If you get this wrong, revise:</b>
+[Harmonics on a String Fixed at Both Ends](#harmonics-on-a-string-fixed-at-both-ends)
+
+</details>
+
+<details>
+<summary>Problem 5</summary>
+Two waves of the same frequency meet at a point. Wave $A$ has amplitude $5.0$ mm and wave $B$ has amplitude $3.0$ mm. The phase difference is $\pi/3$ radians. Calculate the resultant amplitude.
+
+**Answer.**
+$A_R = \sqrt{A^2 + B^2 + 2AB\cos\Delta\phi} = \sqrt{25 + 9 + 2 \times 5 \times 3 \times \cos(\pi/3)} = \sqrt{25 + 9 + 15} = \sqrt{49} = 7.0$
+mm.
+
+<b>If you get this wrong, revise:</b>
+[Constructive and Destructive Interference](#constructive-and-destructive-interference)
+
+</details>
+
+<details>
+<summary>Problem 6</summary>
+Explain why a diffraction grating produces sharper maxima than a double slit.
+
+**Answer.** With $N$ slits, destructive interference occurs between all pairs, not just adjacent
+slits. Between two adjacent maxima, there are $N - 2$ positions where $N - 1$ slits cancel pairwise,
+suppressing the background intensity much more effectively than with 2 slits. As $N$ increases,
+maxima become narrower and brighter.
+
+<b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
+
+</details>

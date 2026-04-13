@@ -44,10 +44,8 @@ y = float(5)       # y = 5.0
 z = str(42)        # z = "42"
 ```
 
-:::warning
-Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
-`round(3.9)` for rounding.
-:::
+:::warning Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
+`round(3.9)` for rounding. :::
 
 ---
 
@@ -149,13 +147,11 @@ while True:
         break
 ```
 
-:::info
-Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
+:::info Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
 and `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
 function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
 local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
-requires subroutines with parameters.
-:::
+requires subroutines with parameters. :::
 
 ---
 
@@ -216,8 +212,7 @@ $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$ (the golden ratio).
 $\psi = \frac{1-\sqrt{5}}{2}$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$,
 $T(n) = \Theta(\phi^n)$. $\square$
 
-:::warning
-Pitfall Naive recursive Fibonacci has exponential time complexity. Use memoisation or
+:::warning Pitfall Naive recursive Fibonacci has exponential time complexity. Use memoisation or
 iteration for $O(n)$ time:
 
 ```python
@@ -316,6 +311,7 @@ total sum. ✓
 
 **Termination:** Variant function $V(n) = n$. Each call: $V(n // 10) = \lfloor n/10 \rfloor \lt{} n$
 for $n \geq 10$. ✓
+
 </details>
 
 **Problem 2.** Convert the following while loop to a for loop:
@@ -334,6 +330,7 @@ while i <= 50:
 for i in range(5, 51, 5):
     print(i)
 ```
+
 </details>
 
 **Problem 3.** Prove that the following function computes $2^n$:
@@ -356,6 +353,7 @@ Inductive step: Assume `power_of_two(k) = 2^k` for $k \leq n$. Then
 `power_of_two(n+1) = 2 * power_of_two(n) = 2 * 2^n = 2^{n+1}`. ✓
 
 $\square$
+
 </details>
 
 **Problem 4.** Explain the difference between iteration and recursion. When would you prefer one
@@ -377,6 +375,7 @@ performance is critical.
 
 Prefer recursion when: the problem has a natural recursive structure (trees, divide-and-conquer),
 the depth is bounded (e.g., $\log n$), or readability is paramount.
+
 </details>
 
 **Problem 5.** Write a function that uses recursion to check if a string is a palindrome. Prove
@@ -397,6 +396,7 @@ def is_palindrome(s):
 **Termination.** Variant function: $V(s) = \text{len}(s)$. Each recursive call:
 $V(s[1:-1]) = \text{len}(s) - 2 \lt{} V(s)$ for $\text{len}(s) \geq 2$. Since $V$ is a non-negative
 integer that strictly decreases, the function must reach a base case. ✓
+
 </details>
 
 **Problem 6.** What is the output of the following code? Explain step by step.
@@ -418,6 +418,7 @@ Explanation: Python passes the integer `10` by object reference. Inside `modify`
 the local parameter `x` to a new integer object `20`. This does not affect the global `x`, which
 remains `10`. Integers are immutable in Python, so there is no way to modify the original value
 through the parameter.
+
 </details>
 
 **Problem 7.** Write a function `gcd(a, b)` using Euclid's algorithm. Prove it terminates and
@@ -448,6 +449,7 @@ $e | (q \cdot b + a \bmod b) = a$. Hence $e | \gcd(a, b)$.
 Since $d | e$ and $e | d$, $d = e$. ✓
 
 Base case: $\gcd(a, 0) = a$. ✓
+
 </details>
 
 **Problem 8.** A student writes the following recursive function. Identify the bug and fix it:
@@ -484,11 +486,441 @@ def countdown(n):
         print(n)
         n -= 1
 ```
+
 </details>
 
 For revision on data structures that use recursion, see
 [Trees](/docs/academics/alevel/computer-science/data-structures/trees).
 
-:::
+---
 
-:::
+## 6. Worked Examples: Nested Loops and Input Validation
+
+### Worked Example: Nested Loop Trace
+
+Trace the execution of the following code and determine the output:
+
+```python
+for i in range(1, 4):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
+```
+
+**Trace:**
+
+| Iteration | `i` | `j` range                   | Output             |
+| --------- | --- | --------------------------- | ------------------ |
+| Outer 1   | 1   | `range(1, 2)` — j = 1       | `*` then newline   |
+| Outer 2   | 2   | `range(1, 3)` — j = 1, 2    | `**` then newline  |
+| Outer 3   | 3   | `range(1, 4)` — j = 1, 2, 3 | `***` then newline |
+
+**Output:**
+
+```
+*
+**
+***
+```
+
+### Worked Example: Input Validation Loop
+
+Write a function that repeatedly asks the user for an integer between 1 and 100 (inclusive) until
+valid input is provided.
+
+```python
+def get_valid_score():
+    while True:
+        try:
+            score = int(input("Enter a score (1-100): "))
+            if 1 <= score <= 100:
+                return score
+            print("Score must be between 1 and 100.")
+        except ValueError:
+            print("Invalid input. Please enter an integer.")
+```
+
+This loop combines two validation checks: type validation (integer) and range validation (1-100).
+The loop only exits when both checks pass.
+
+### Worked Example: Nested Loop — Multiplication Table
+
+```python
+def multiplication_table(n):
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            print(f"{i * j:4}", end="")
+        print()
+
+multiplication_table(5)
+```
+
+Output:
+
+```
+   1   2   3   4   5
+   2   4   6   8  10
+   3   6   9  12  15
+   4   8  12  16  20
+   5  10  15  20  25
+```
+
+---
+
+## 7. Recursion Trace Walkthrough
+
+### Trace: Factorial of 4
+
+```python
+def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)
+```
+
+Call: `factorial(4)`
+
+```
+factorial(4)
+├── 4 * factorial(3)
+│   ├── 3 * factorial(2)
+│   │   ├── 2 * factorial(1)
+│   │   │   └── returns 1
+│   │   └── returns 2 * 1 = 2
+│   └── returns 3 * 2 = 6
+└── returns 4 * 6 = 24
+```
+
+Stack at deepest point (4 frames):
+
+| Frame | `n` | Waiting for                      |
+| ----- | --- | -------------------------------- |
+| 1     | 4   | `factorial(3)`                   |
+| 2     | 3   | `factorial(2)`                   |
+| 3     | 2   | `factorial(1)`                   |
+| 4     | 1   | (base case, returns immediately) |
+
+### Trace: Fibonacci of 5
+
+```python
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n - 1) + fib(n - 2)
+```
+
+Call: `fib(5)`
+
+```
+fib(5)
+├── fib(4)
+│   ├── fib(3)
+│   │   ├── fib(2)
+│   │   │   ├── fib(1) → 1
+│   │   │   └── fib(0) → 0
+│   │   │   returns 1
+│   │   └── fib(1) → 1
+│   │   returns 2
+│   └── fib(2)
+│       ├── fib(1) → 1
+│       └── fib(0) → 0
+│       returns 1
+│   returns 3
+└── fib(3)
+    ├── fib(2) → 1
+    └── fib(1) → 1
+    returns 2
+returns 5
+```
+
+Note: `fib(3)` is computed twice, `fib(2)` is computed three times. This redundancy is why naive
+recursive Fibonacci is $O(\phi^n)$ — it recomputes the same subproblems repeatedly.
+
+---
+
+## 8. Common Pitfalls
+
+### Off-by-One Errors
+
+Off-by-one errors occur when a loop iterates one time too many or one time too few.
+
+| Error               | Code                                       | Fix                                                   |
+| ------------------- | ------------------------------------------ | ----------------------------------------------------- |
+| Fencepost           | `for i in range(1, n)` — iterates 1 to n-1 | Use `range(1, n + 1)` if you need 1 to n              |
+| Off-by-one in while | `while i &lt; n` vs `while i &lt;= n`      | Decide whether the boundary is inclusive or exclusive |
+| Array indexing      | `array[len(array)]` — IndexError           | Valid indices are 0 to `len(array) - 1`               |
+
+### Infinite Loops
+
+An infinite loop occurs when the loop condition never becomes false.
+
+```python
+# Bug: x never changes
+x = 0
+while x < 10:
+    print(x)
+
+# Bug: wrong increment direction
+x = 10
+while x > 0:
+    x = x + 1  # x increases, never reaches 0
+
+# Bug: floating point comparison
+x = 0.0
+while x != 1.0:
+    x += 0.1  # May never exactly equal 1.0 due to rounding
+```
+
+**Fix for floating point:** Use a tolerance or integer counter:
+
+```python
+for i in range(10):
+    x = i * 0.1
+```
+
+### Scope Issues
+
+Understanding variable scope is critical for correct programs.
+
+```python
+# Pitfall: modifying a global variable
+count = 0
+
+def increment():
+    count = count + 1  # UnboundLocalError!
+    # This creates a local 'count' shadowing the global
+
+def increment_fixed():
+    global count
+    count = count + 1  # Correct: references the global variable
+```
+
+```python
+# Pitfall: mutable default arguments
+def add_item(item, items=[]):
+    items.append(item)
+    return items
+
+print(add_item(1))  # [1]
+print(add_item(2))  # [1, 2] — NOT [2]!
+```
+
+The default list `[]` is created once when the function is defined, not each time it is called. Fix:
+
+```python
+def add_item(item, items=None):
+    if items is None:
+        items = []
+    items.append(item)
+    return items
+```
+
+---
+
+## 9. Additional Problem Set
+
+**Problem 1.** Trace the following code and state the output:
+
+```python
+result = 0
+for i in range(3):
+    for j in range(3):
+        if i == j:
+            result += 1
+        elif i > j:
+            result += 2
+        else:
+            result += 3
+print(result)
+```
+
+<details>
+<summary>Answer</summary>
+
+Trace each `(i, j)` pair:
+
+| `i` | `j` | Condition | `result` change | `result` |
+| --- | --- | --------- | --------------- | -------- |
+| 0   | 0   | i == j    | +1              | 1        |
+| 0   | 1   | else      | +3              | 4        |
+| 0   | 2   | else      | +3              | 7        |
+| 1   | 0   | i &gt; j  | +2              | 9        |
+| 1   | 1   | i == j    | +1              | 10       |
+| 1   | 2   | else      | +3              | 13       |
+| 2   | 0   | i &gt; j  | +2              | 15       |
+| 2   | 1   | i &gt; j  | +2              | 17       |
+| 2   | 2   | i == j    | +1              | 18       |
+
+Output: `18`
+
+</details>
+
+**Problem 2.** Write a recursive function `binary_search(arr, target, low, high)` that returns the
+index of `target` in a sorted array, or `-1` if not found. Prove that it terminates.
+
+<details>
+<summary>Answer</summary>
+
+```python
+def binary_search(arr, target, low, high):
+    if low > high:
+        return -1
+    mid = (low + high) // 2
+    if arr[mid] == target:
+        return mid
+    elif arr[mid] > target:
+        return binary_search(arr, target, low, mid - 1)
+    else:
+        return binary_search(arr, target, mid + 1, high)
+```
+
+**Termination proof.** Variant function: $V = high - low + 1$ (the size of the search range).
+
+Each recursive call either:
+
+- Returns (base case `low &gt; high`), or
+- Calls with `mid - 1` as the new high: $V' = (mid - 1) - low + 1 = mid - low$. Since
+  `mid &gt;= low`, $V' \leq V - 1$.
+- Calls with `mid + 1` as the new low:
+  $V' = high - (mid + 1) + 1 = high - mid`. Since
+  `mid \lt{}= high`, $V' \leq V - 1$.
+
+In both recursive cases, $V$ strictly decreases. Since $V$ is a non-negative integer, the function
+must eventually reach the base case. ✓
+
+</details>
+
+**Problem 3.** The following function is intended to compute the sum of all even numbers from 1 to
+`n`. Find and fix the bug.
+
+```python
+def sum_even(n):
+    total = 0
+    for i in range(1, n):
+        if i % 2 == 0:
+            total += i
+    return total
+```
+
+<details>
+<summary>Answer</summary>
+
+**Bug:** `range(1, n)` excludes `n`. If `n` is even, it should be included in the sum.
+
+**Fix:** Change to `range(1, n + 1)`:
+
+```python
+def sum_even(n):
+    total = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            total += i
+    return total
+```
+
+**Alternative fix** using a more efficient approach (only iterate over even numbers):
+
+```python
+def sum_even(n):
+    total = 0
+    for i in range(2, n + 1, 2):
+        total += i
+    return total
+```
+
+This halves the number of iterations.
+
+**Verification:** For `n = 6`: sum = 2 + 4 + 6 = 12. Original code gives 2 + 4 = 6 (wrong). Fixed
+code gives 2 + 4 + 6 = 12 (correct).
+
+</details>
+
+**Problem 4.** Write a function `validate_password(password)` that returns `True` if the password
+meets all of the following rules, and `False` otherwise:
+
+- At least 8 characters long
+- Contains at least one uppercase letter
+- Contains at least one digit
+- Contains at least one special character from `!@#$%^&amp;*`
+
+<details>
+<summary>Answer</summary>
+
+```python
+def validate_password(password):
+    if len(password) < 8:
+        return False
+    has_upper = False
+    has_digit = False
+    has_special = False
+    specials = set("!@#$%^&*")
+    for char in password:
+        if char.isupper():
+            has_upper = True
+        elif char.isdigit():
+            has_digit = True
+        elif char in specials:
+            has_special = True
+    return has_upper and has_digit and has_special
+```
+
+**Alternative using Python built-ins:**
+
+```python
+def validate_password(password):
+    if len(password) < 8:
+        return False
+    has_upper = any(c.isupper() for c in password)
+    has_digit = any(c.isdigit() for c in password)
+    has_special = any(c in "!@#$%^&*" for c in password)
+    return has_upper and has_digit and has_special
+```
+
+Both versions use early return for the length check and iterate through the password once, giving
+$O(n)$ time complexity.
+
+</details>
+
+**Problem 5.** Explain the output of the following code. Why does the second call behave
+unexpectedly?
+
+```python
+def append_to(element, target=[]):
+    target.append(element)
+    return target
+
+print(append_to(1))
+print(append_to(2))
+```
+
+<details>
+<summary>Answer</summary>
+
+**Output:**
+
+```
+[1]
+[1, 2]
+```
+
+**Explanation:** In Python, default arguments are evaluated **once** when the function is defined,
+not each time the function is called. The list `[]` is created at definition time and shared across
+all calls that use the default.
+
+First call: `target` is the default list `[]`. After appending 1, it becomes `[1]`.
+
+Second call: `target` is the **same** list object `[1]`. After appending 2, it becomes `[1, 2]`.
+
+**Fix:** Use `None` as the default and create a new list inside the function:
+
+```python
+def append_to(element, target=None):
+    if target is None:
+        target = []
+    target.append(element)
+    return target
+```
+
+Now each call that omits `target` gets a fresh empty list.
+
+</details>

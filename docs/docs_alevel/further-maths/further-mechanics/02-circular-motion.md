@@ -466,4 +466,364 @@ Section 4.
 
 </details>
 
+---
+
+## 6. Vertical Circles: Energy Method — Full Derivation
+
+### 6.1 Speed at any point on a vertical circle
+
+Consider a particle of mass $m$ on a string of length $r$ moving in a vertical circle. Let $v_0$ be
+the speed at the lowest point (the reference level for energy).
+
+At angle $\theta$ measured from the **upward vertical** (so the top is $\theta = 0$ and the bottom
+is $\theta = \pi$), the height above the lowest point is:
+
+$$h = r + r\cos\theta = r(1 + \cos\theta)$$
+
+By conservation of energy:
+
+$$\frac{1}{2}mv_0^2 = \frac{1}{2}mv^2 + mgr(1 + \cos\theta)$$
+
+$$\boxed{v^2 = v_0^2 - 2gr(1 + \cos\theta)}$$
+
+### 6.2 Tension at any point
+
+At angle $\theta$ from the upward vertical, the radial direction (towards the centre) has component
+of weight $mg\cos\theta$ pointing **towards** the centre:
+
+$$T + mg\cos\theta = \frac{mv^2}{r}$$
+
+Substituting the speed:
+
+$$T = \frac{m}{r}[v_0^2 - 2gr(1 + \cos\theta)] - mg\cos\theta = \frac{mv_0^2}{r} - 2mg - 2mg\cos\theta - mg\cos\theta$$
+
+$$\boxed{T = \frac{mv_0^2}{r} - 2mg - 3mg\cos\theta}$$
+
+### 6.3 Verification at special points
+
+At the top ($\theta = 0$, $\cos\theta = 1$): $T = \dfrac{mv_0^2}{r} - 5mg$.
+
+At the bottom ($\theta = \pi$, $\cos\theta = -1$): $T = \dfrac{mv_0^2}{r} + mg$.
+
+At the midpoint ($\theta = \pi/2$, $\cos\theta = 0$): $T = \dfrac{mv_0^2}{r} - 2mg$.
+
+### 6.4 Complete derivation of $\sqrt{5gr}$
+
+For a complete circle, we need $T \geq 0$ everywhere. The minimum tension occurs at the top
+($\theta = 0$):
+
+$$\frac{mv_0^2}{r} - 5mg \geq 0 \implies v_0^2 \geq 5gr \implies \boxed{v_0 = \sqrt{5gr}}$$
+
+At this speed, $T_{\text{top}} = 0$ and the weight alone provides the centripetal acceleration at
+the top.
+
+The speed at the top is: $v_{\text{top}}^2 = v_0^2 - 2gr(2) = 5gr - 4gr = gr$, confirming
+$v_{\text{top}} = \sqrt{gr}$.
+
+---
+
+## 7. Banked Tracks: Maximum and Minimum Speed
+
+### 7.1 Derivation with friction
+
+A car of mass $m$ travels on a banked curve of radius $r$ and angle $\theta$, with coefficient of
+friction $\mu$.
+
+When the car travels faster than the optimum speed, friction acts **down the slope** to provide
+additional centripetal force.
+
+Resolving perpendicular to the surface: $N = mg\cos\theta + \dfrac{mv^2}{r}\sin\theta$ ... (i)
+
+Resolving along the surface (towards centre): $F + mg\sin\theta = \dfrac{mv^2}{r}\cos\theta$ ...
+(ii)
+
+At limiting friction: $F = \mu N$.
+
+Substituting (i) into $F = \mu N$ and then into (ii):
+
+$$\mu(mg\cos\theta + \frac{mv^2}{r}\sin\theta) + mg\sin\theta = \frac{mv^2}{r}\cos\theta$$
+
+$$\mu g\cos\theta + \frac{\mu v^2\sin\theta}{r} + g\sin\theta = \frac{v^2\cos\theta}{r}$$
+
+$$v^2\left(\frac{\cos\theta}{r} - \frac{\mu\sin\theta}{r}\right) = g(\mu\cos\theta + \sin\theta)$$
+
+$$\boxed{v_{\max}^2 = \frac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta}}$$
+
+Similarly, when travelling slower than the optimum speed, friction acts **up the slope**:
+
+$$\boxed{v_{\min}^2 = \frac{rg(\sin\theta - \mu\cos\theta)}{\cos\theta + \mu\sin\theta}}$$
+
+Note: $v_{\min}$ only exists if $\sin\theta > \mu\cos\theta$, i.e., $\tan\theta > \mu$. If the bank
+angle is too shallow, the car can come to rest without sliding down.
+
+### 7.2 Worked example: car on a banked curve with friction
+
+**Example.** A curve of radius $80\,\text{m}$ is banked at $30°$ with $\mu = 0.3$. Find the maximum
+and minimum safe speeds for a car on this curve.
+
+$v_{\max}^2 = \dfrac{80 \times 9.8(\sin 30° + 0.3\cos 30°)}{\cos 30° - 0.3\sin 30°} = \dfrac{784(0.5 + 0.2598)}{0.8660 - 0.15} = \dfrac{784 \times 0.7598}{0.7160}$
+
+$= \dfrac{595.7}{0.7160} \approx 831.9 \implies v_{\max} \approx 28.8\,\text{m s}^{-1}$.
+
+$v_{\min}^2 = \dfrac{80 \times 9.8(\sin 30° - 0.3\cos 30°)}{\cos 30° + 0.3\sin 30°} = \dfrac{784(0.5 - 0.2598)}{0.8660 + 0.15} = \dfrac{784 \times 0.2402}{1.016}$
+
+$= \dfrac{188.3}{1.016} \approx 185.3 \implies v_{\min} \approx 13.6\,\text{m s}^{-1}$.
+
+The optimum speed (no friction needed) is
+$v_{\text{opt}} = \sqrt{80 \times 9.8 \times \tan 30°} = \sqrt{452.6} \approx 21.3\,\text{m s}^{-1}$,
+which lies between $v_{\min}$ and $v_{\max}$ as expected.
+
+---
+
+## 8. Conical Pendulum: Detailed Derivation of the Period
+
+### Proof
+
+A mass $m$ is attached to a string of length $L$ and moves in a horizontal circle of radius $r$ at
+constant speed $v$. The string makes a constant angle $\alpha$ with the vertical.
+
+**Forces on the mass:**
+
+- Tension $T$ along the string, directed towards the pivot
+- Weight $mg$ vertically downward
+
+Since the mass moves in a horizontal circle, there is no vertical acceleration:
+
+$$T\cos\alpha = mg \implies T = \frac{mg}{\cos\alpha}$$ ... (i)
+
+The horizontal component of tension provides the centripetal force:
+
+$$T\sin\alpha = \frac{mv^2}{r}$$ ... (ii)
+
+Since $r = L\sin\alpha$ and $v = \omega r = \omega L\sin\alpha$:
+
+From (i) and (ii):
+$\dfrac{mg\sin\alpha}{\cos\alpha} = \dfrac{m\omega^2 L^2\sin^2\alpha}{L\sin\alpha}$
+
+$$g\tan\alpha = \omega^2 L\sin\alpha$$
+
+$$\omega^2 = \frac{g\tan\alpha}{L\sin\alpha} = \frac{g}{L\cos\alpha}$$
+
+$$\boxed{\omega = \sqrt{\frac{g}{L\cos\alpha}}}$$
+
+$$\boxed{T_{\text{period}} = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
+
+Key observations:
+
+- The period depends only on $L$, $\alpha$, and $g$ — it is independent of mass
+- As $\alpha \to 0$, the period approaches $2\pi\sqrt{L/g}$ (simple pendulum for small angles)
+- As $\alpha \to 90°$, the period $\to 0$ (impractical: requires infinite speed)
+- A larger angle $\alpha$ means a faster rotation (shorter period)
+
+---
+
+## 9. Worked Example: Motorcyclist on a Vertical Loop
+
+**Example.** A motorcyclist rides around a vertical circular track of radius $8\,\text{m}$. The
+motorcycle and rider have combined mass $200\,\text{kg}$. Find the minimum speed at the lowest point
+to complete the loop, the normal reaction at the top and bottom at this minimum speed, and the speed
+and reaction at a point $90°$ from the bottom.
+
+**Minimum speed at the bottom:**
+$v_{\min} = \sqrt{5gr} = \sqrt{5 \times 9.8 \times 8} = \sqrt{392} \approx 19.8\,\text{m s}^{-1}$.
+
+**At the top (minimum speed):**
+$v_{\text{top}} = \sqrt{gr} = \sqrt{78.4} \approx 8.85\,\text{m s}^{-1}$.
+
+$R + mg = \dfrac{mv_{\text{top}}^2}{r} \implies R = \dfrac{200 \times 78.4}{8} - 200 \times 9.8 = 1960 - 1960 = 0\,\text{N}$.
+
+At minimum speed, the motorcycle is just in contact with the track at the top.
+
+**At the bottom:**
+
+$v_{\text{bottom}} = \sqrt{5gr} \approx 19.8\,\text{m s}^{-1}$.
+
+$R - mg = \dfrac{mv_{\text{bottom}}^2}{r} \implies R = \dfrac{200 \times 392}{8} + 1960 = 9800 + 1960 = 11760\,\text{N}$.
+
+Note: $R = 6mg$ at the bottom when $v = \sqrt{5gr}$.
+
+**At $90°$ from the bottom** (measuring from the downward vertical, so $\theta = 90°$):
+
+Height above bottom: $r(1 - \cos 90°) = r = 8\,\text{m}$.
+
+$v^2 = v_0^2 - 2gr = 392 - 156.8 = 235.2 \implies v \approx 15.3\,\text{m s}^{-1}$.
+
+At this point, the weight acts radially (towards the centre) and the reaction acts radially outward:
+
+$mg - R = \dfrac{mv^2}{r} \implies R = mg - \dfrac{200 \times 235.2}{8} = 1960 - 5880$.
+
+$R = -3920\,\text{N}$.
+
+The negative sign confirms the track pushes **inward** (downward at this point) to maintain the
+circular path. This is expected: at this speed, the motorcyclist would fly off without the track
+pushing them inward.
+
+---
+
+## 10. Common Pitfalls
+
+### Adding centripetal force to free body diagrams
+
+Centripetal force is **not a force in its own right**. It is the **resultant** of the real forces
+(tension, normal reaction, weight, friction) directed towards the centre of the circle. The most
+common mistake is to draw "centripetal force" as an additional arrow on a free body diagram
+alongside tension, weight, etc. This double-counts and produces incorrect equations.
+
+Correct approach: draw only the physical forces, then apply Newton's second law towards the centre:
+"sum of force components towards centre $= mv^2/r$".
+
+### Sign of the normal reaction in vertical circles
+
+At different points on a vertical circle, the normal reaction can point in different directions:
+
+- At the bottom: reaction points **upward** (away from centre)
+- At the top: reaction points **downward** (towards centre)
+- At the sides: reaction points horizontally (towards or away from centre depending on the speed)
+
+The sign of $R$ in your equations should emerge naturally from the physics. If you get a negative
+$R$, it means the contact force acts in the opposite direction to what you assumed.
+
+### String vs rod in vertical circles
+
+- **String**: can only pull (tension $\geq 0$). Minimum speed at top is $\sqrt{gr}$, minimum at
+  bottom is $\sqrt{5gr}$.
+- **Rod**: can push and pull. Particle can reach the top with $v = 0$, minimum at bottom is
+  $\sqrt{4gr} = 2\sqrt{gr}$.
+- **Smooth wire**: like a rod in that it can provide a reaction in either direction.
+- **Rough surface**: friction can provide tangential force, making the problem significantly more
+  complex.
+
+### Confusing angular velocity with linear velocity
+
+$\omega = v/r$ is only valid when $v$ is the tangential speed and $r$ is the radius of the circular
+path. In a conical pendulum, the radius of the circle is $L\sin\alpha$, not $L$.
+
+---
+
+## 11. Problem Set
+
+<details>
+<summary>Q1. A particle of mass $0.4\,\text{kg}$ is attached to a light inextensible string of length $0.6\,\text{m}$ and whirled in a vertical circle. The speed at the lowest point is $7\,\text{m s}^{-1}$. Find the tension in the string when the particle is at the highest point, and at the point level with the centre.</summary>
+
+Height from bottom to top: $2r = 1.2\,\text{m}$.
+
+$v_{\text{top}}^2 = 49 - 2(9.8)(1.2) = 49 - 23.52 = 25.48$.
+$v_{\text{top}} \approx 5.05\,\text{m s}^{-1}$.
+
+At the top:
+$T + mg = \dfrac{mv_{\text{top}}^2}{r} \implies T = \dfrac{0.4 \times 25.48}{0.6} - 0.4 \times 9.8 = 16.99 - 3.92 = 13.1\,\text{N}$.
+
+At the midpoint (height $r = 0.6\,\text{m}$ above bottom):
+
+$v^2 = 49 - 2(9.8)(0.6) = 49 - 11.76 = 37.24$.
+
+At the midpoint, the weight is perpendicular to the radius. The reaction $R$ acts horizontally
+towards the centre:
+
+$R = \dfrac{0.4 \times 37.24}{0.6} = 24.8\,\text{N}$.
+
+</details>
+
+<details>
+<summary>Q2. A conical pendulum consists of a mass of $0.5\,\text{kg}$ on a string of length $1.5\,\text{m}$. The string makes an angle of $25°$ with the vertical. Find the tension, the speed of the mass, and the period of rotation.</summary>
+
+$T\cos 25° = 0.5 \times 9.8 = 4.9 \implies T = \dfrac{4.9}{\cos 25°} \approx 5.41\,\text{N}$.
+
+$r = 1.5\sin 25° \approx 0.634\,\text{m}$.
+
+$T\sin 25° = \dfrac{mv^2}{r} \implies 5.41\sin 25° = \dfrac{0.5v^2}{0.634}$.
+
+$2.285 = \dfrac{0.5v^2}{0.634} \implies v^2 = \dfrac{2.285 \times 0.634}{0.5} = 2.897 \implies v \approx 1.70\,\text{m s}^{-1}$.
+
+Period
+$= 2\pi\sqrt{\dfrac{L\cos\alpha}{g}} = 2\pi\sqrt{\dfrac{1.5\cos 25°}{9.8}} = 2\pi\sqrt{\dfrac{1.359}{9.8}} \approx 2\pi(0.3726) \approx 2.34\,\text{s}$.
+
+</details>
+
+<details>
+<summary>Q3. A racing car travels around a banked circular track of radius $100\,\text{m}$ banked at $40°$. The coefficient of friction between the tyres and the track is $0.4$. Find the maximum speed at which the car can travel without sliding up the track.</summary>
+
+$v_{\max}^2 = \dfrac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta} = \dfrac{100 \times 9.8(\sin 40° + 0.4\cos 40°)}{\cos 40° - 0.4\sin 40°}$
+
+$= \dfrac{980(0.6428 + 0.3064)}{0.7660 - 0.2571} = \dfrac{980 \times 0.9492}{0.5089} = \dfrac{930.2}{0.5089} \approx 1828$
+
+$v_{\max} \approx 42.8\,\text{m s}^{-1}$.
+
+</details>
+
+<details>
+<summary>Q4. A bead of mass $m$ is threaded on a smooth vertical circular wire of radius $r$. It is projected from the lowest point with speed $u$. Find the condition on $u$ for the bead to reach the highest point, and the reaction at the highest point in terms of $u$.</summary>
+
+To reach the top: $\dfrac{1}{2}mu^2 \geq mg(2r) \implies u \geq 2\sqrt{gr}$.
+
+Note: this is different from the string case because the wire can push as well as pull (like a rod).
+The bead can reach the top even if it has zero speed there.
+
+At the top, the reaction $R$ acts towards the centre (downward):
+
+$R + mg = \dfrac{mv_{\text{top}}^2}{r}$ where $v_{\text{top}}^2 = u^2 - 4gr$.
+
+$R = \dfrac{m(u^2 - 4gr)}{r} - mg = \dfrac{mu^2}{r} - 4mg - mg = \dfrac{mu^2}{r} - 5mg$.
+
+If $u = 2\sqrt{gr}$, then $R = \dfrac{m \times 4gr}{r} - 5mg = 4mg - 5mg = -mg$.
+
+The negative sign means the wire pushes the bead **upward** (away from centre) to prevent it from
+falling through, since the bead has zero speed at the top.
+
+</details>
+
+<details>
+<summary>Q5. A particle is placed on the inside of a smooth hollow sphere of radius $2\,\text{m}$ and given a horizontal speed of $4\,\text{m s}^{-1}$. Find the height at which the particle leaves the surface.</summary>
+
+Let the particle leave at angle $\theta$ from the top. At that point, the normal reaction $R = 0$:
+
+$mg\cos\theta = \dfrac{mv^2}{r}$ ... (i)
+
+Energy from the top:
+$\dfrac{1}{2}mv^2 = \dfrac{1}{2}m(16) + mgr(1-\cos\theta) = 8m + 2m(9.8)(1-\cos\theta)$
+
+$v^2 = 16 + 19.6(1 - \cos\theta) = 35.6 - 19.6\cos\theta$
+
+From (i): $9.8\cos\theta = \dfrac{35.6 - 19.6\cos\theta}{2} = 17.8 - 9.8\cos\theta$
+
+$19.6\cos\theta = 17.8 \implies \cos\theta = \dfrac{17.8}{19.6} = 0.9082 \implies \theta \approx 24.8°$
+
+Height below the centre $= r\cos\theta = 2(0.9082) = 1.82\,\text{m}$.
+
+Height above the bottom $= r + r\cos\theta = 2 + 1.82 = 3.82\,\text{m}$.
+
+</details>
+
+<details>
+<summary>Q6. A car of mass $800\,\text{kg}$ travels at $15\,\text{m s}^{-1}$ around an unbanked horizontal curve of radius $50\,\text{m}$. Find the minimum coefficient of friction required for the car to maintain its circular path. If the curve is banked at $20°$, what coefficient of friction is needed?</summary>
+
+**Unbanked:**
+$\dfrac{mv^2}{r} = F = \mu mg \implies \mu = \dfrac{v^2}{rg} = \dfrac{225}{490} \approx 0.459$.
+
+**Banked at $20°$:**
+$v_{\text{opt}} = \sqrt{50 \times 9.8 \times \tan 20°} = \sqrt{178.3} \approx 13.4\,\text{m s}^{-1}$.
+
+Since $15 > 13.4$, friction acts down the slope. With friction down the slope:
+
+$N\cos 20° - F\sin 20° = mg = 7840$ ... (i)
+
+$N\sin 20° + F\cos 20° = \dfrac{mv^2}{r} = \dfrac{800 \times 225}{50} = 3600$ ... (ii)
+
+From (i): $N = \dfrac{7840 + F\sin 20°}{\cos 20°}$.
+
+Substituting into (ii): $\dfrac{(7840 + F\sin 20°)\sin 20°}{\cos 20°} + F\cos 20° = 3600$.
+
+$7840\tan 20° + F(\sec 20°) = 3600$.
+
+$2854 + 1.064F = 3600 \implies F = \dfrac{746}{1.064} \approx 701\,\text{N}$.
+
+$\mu = \dfrac{F}{N}$. From (i):
+$N = \dfrac{7840 + 701\sin 20°}{\cos 20°} = \dfrac{7840 + 239.8}{0.9397} = \dfrac{8079.8}{0.9397} \approx 8598\,\text{N}$.
+
+$\mu \approx \dfrac{701}{8598} \approx 0.0815$.
+
+Banking the curve dramatically reduces the required friction coefficient from 0.459 to 0.082.
+
+</details>
+
 :::

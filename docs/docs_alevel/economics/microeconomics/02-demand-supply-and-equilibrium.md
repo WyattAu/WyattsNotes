@@ -429,8 +429,206 @@ answer, discuss the limitations of elasticity estimates in practice.
 Useful for: tax policy (tax inelastic goods for revenue), subsidy design, price regulation. Limitations: estimates vary with time period and data quality, assume ceteris paribus, may change after policy intervention (endogeneity), difficult to estimate for new goods.
 </details>
 
-:::
+## 8. Equilibrium Price and Quantity: Extended Calculations
 
-:::
+### 8.1 Solving for Equilibrium Algebraically
 
-:::
+**Example.** Market demand is $Q_D = 200 - 4P$ and market supply is $Q_S = 20 + 6P$. Find the
+equilibrium price and quantity, and verify stability.
+
+**Answer.** Set $Q_D = Q_S$: $200 - 4P = 20 + 6P \implies 180 = 10P \implies P^* = 18$.
+
+$Q^* = 200 - 4(18) = 200 - 72 = 128$.
+
+**Stability check.** At $P = 20 \gt{} P^*$: $Q_D = 120$, $Q_S = 140$. Excess supply of $20$ units
+$\implies$ price falls. At $P = 15 \lt{} P^*$: $Q_D = 140$, $Q_S = 110$. Excess demand of $30$ units
+$\implies$ price rises. The equilibrium is stable. $\square$
+
+### 8.2 Simultaneous Shifts in Demand and Supply
+
+When both curves shift simultaneously, the effect on equilibrium price is ambiguous unless we know
+the relative magnitudes.
+
+| Demand Shift     | Supply Shift     | Effect on $P^*$ | Effect on $Q^*$ |
+| ---------------- | ---------------- | --------------- | --------------- |
+| Right (increase) | Right (increase) | Ambiguous       | Increases       |
+| Right (increase) | Left (decrease)  | Increases       | Ambiguous       |
+| Left (decrease)  | Right (increase) | Decreases       | Ambiguous       |
+| Left (decrease)  | Left (decrease)  | Ambiguous       | Decreases       |
+
+**Example.** Demand increases and supply decreases simultaneously. Both shifts push price up, so
+$P^*$ definitely increases. Quantity could increase or decrease depending on which shift dominates.
+
+## 9. Shifts vs Movements: Extended Analysis
+
+### 9.1 A Common Exam Scenario
+
+**Example.** "The price of coffee rises. Explain the effect on the market for tea."
+
+**Correct analysis.** Coffee and tea are substitutes ($\text{XED} \gt{} 0$). A rise in the price of
+coffee shifts the demand curve for tea to the **right** (increase in demand for tea). At the
+original price, there is now excess demand for tea. The price of tea rises, and the quantity of tea
+traded increases. This is a **shift** in the demand curve, not a movement along it.
+
+**Incorrect analysis.** "The price of tea rises, so demand for tea falls." This confuses a movement
+along the curve with a shift.
+
+### 9.2 Distinguishing the Language
+
+| Scenario                         | Correct Terminology                  | Curve Effect             |
+| -------------------------------- | ------------------------------------ | ------------------------ |
+| Price of the good itself changes | Change in quantity demanded/supplied | Movement along the curve |
+| Any other determinant changes    | Change in demand/supply              | Shift of the curve       |
+
+## 10. Consumer and Producer Surplus: Worked Calculations
+
+### 10.1 Linear Demand and Supply
+
+**Example.** Demand: $Q_D = 100 - 2P$. Supply: $Q_S = 10 + 3P$. Calculate consumer surplus, producer
+surplus, and total surplus at equilibrium.
+
+**Answer.** Equilibrium: $100 - 2P = 10 + 3P \implies 90 = 5P \implies P^* = 18$, $Q^* = 64$.
+
+Inverse demand: $P = 50 - Q/2$ (choke price $= 50$). Inverse supply: $P = (Q - 10)/3$.
+
+$$CS = \int_0^{64} [50 - Q/2 - 18]\,dQ = \int_0^{64} [32 - Q/2]\,dQ = [32Q - Q^2/4]_0^{64} = 2048 - 1024 = 1024$$
+
+$$PS = \int_0^{64} [18 - (Q - 10)/3]\,dQ = \int_0^{64} [64/3 - Q/3]\,dQ = [64Q/3 - Q^2/6]_0^{64} = 1365.3 - 682.7 = 682.7$$
+
+Total surplus $= 1024 + 682.7 = 1706.7$.
+
+### 10.2 Effect of a Price Ceiling
+
+A **binding price ceiling** set below $P^*$ creates a shortage and reduces total surplus. The new
+quantity traded is determined by the supply curve at the ceiling price. Consumer surplus may
+increase or decrease depending on the choke price and the extent of the shortage.
+
+## 11. Tax Incidence Analysis
+
+### 11.1 The Key Result
+
+The distribution of a tax burden between consumers and producers depends on the **relative price
+elasticities** of demand and supply:
+
+$$\frac{\text{Burden on consumers}}{\text{Burden on producers}} = \frac{|\text{PES}|}{|\text{PED}|}$$
+
+The more inelastic side bears a greater share of the tax burden.
+
+### 11.2 Worked Example
+
+**Example.** Demand: $Q_D = 150 - P$. Supply: $Q_S = 2P - 30$. A specific tax of $t = 10$ per unit
+is imposed.
+
+**Answer.** Original equilibrium: $150 - P = 2P - 30 \implies P^* = 60$, $Q^* = 90$.
+
+With tax, supply shifts: $P_s = P_d - 10$. New supply: $Q_S = 2(P_d - 10) - 30 = 2P_d - 50$.
+
+New equilibrium: $150 - P_d = 2P_d - 50 \implies 200 = 3P_d \implies P_d = 66.67$.
+
+$P_s = 56.67$. $Q^* = 83.3$.
+
+Consumer burden: $66.67 - 60 = 6.67$ (out of 10). Producer burden: $60 - 56.67 = 3.33$.
+
+Ratio: $6.67/3.33 = 2$. Check: $|\text{PES}| = (dQ_S/dP)(P/Q) = 2(60/90) = 1.33$.
+$|\text{PED}| = (dQ_D/dP)(P/Q) = |-1|(60/90) = 0.67$. Ratio $= 1.33/0.67 = 2$. $\square$
+
+Deadweight loss:
+$\text{DWL} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times 10 \times (90 - 83.3) = 33.5$.
+
+## 12. Income and Cross-Price Elasticity: Applications
+
+### 12.1 Using YED to Classify Goods
+
+**Example.** When average income rises from $£30{,}000$ to $£33{,}000$, demand for bus travel falls
+from 500 to 475 journeys per week, while demand for foreign holidays rises from 200 to 230 per week.
+Calculate YED for each and classify the goods.
+
+**Answer.** Bus travel: YED
+$= \frac{(475-500)/487.5}{(33000-30000)/31500} = \frac{-0.0513}{0.0952} = -0.54$. Negative YED
+$\implies$ bus travel is an inferior good.
+
+Foreign holidays: YED $= \frac{(230-200)/215}{0.0952} = \frac{0.1395}{0.0952} = 1.47$. YED $\gt{} 1$
+$\implies$ foreign holidays are a luxury (normal good).
+
+### 12.2 Using XED for Competition Policy
+
+If XED between two firms' products is high (close substitutes), they operate in the same market and
+a merger between them would significantly reduce competition. Competition authorities use XED to
+define the **relevant market**.
+
+## 13. Common Pitfalls
+
+1. **Confusing "demand" with "quantity demanded."** "Demand" refers to the entire curve; "quantity
+   demanded" refers to a specific point on the curve. A price change causes a change in quantity
+   demanded (movement), not a change in demand (shift).
+
+2. **Ignoring the ceteris paribus assumption.** In reality, multiple factors change simultaneously.
+   When analysing a change, state clearly what is being held constant.
+
+3. **Assuming elastic demand always means less revenue.** The relationship between PED and revenue
+   depends on the direction of the price change. A price _decrease_ with elastic demand _increases_
+   revenue; a price _increase_ with elastic demand _decreases_ revenue.
+
+4. **Misapplying the midpoint formula.** The midpoint (arc elasticity) formula gives the elasticity
+   at the midpoint of the change, not at either endpoint. For precise analysis, use point
+   elasticity.
+
+5. **Forgetting that supply can be elastic or inelastic too.** PES determines how quickly producers
+   can respond to price changes. In the short run, supply is typically less elastic than in the long
+   run.
+
+6. **Assuming tax burden depends on who pays the government.** The legal incidence (who writes the
+   cheque) does not determine the economic incidence (who bears the burden). The burden depends on
+   relative elasticities.
+
+## 14. Extension Problem Set
+
+**Problem 1.** Market demand is $Q_D = 80 - P$ and supply is $Q_S = 2P - 20$. Find equilibrium, then
+calculate the new equilibrium after demand increases by $20$ units at every price. Compare the
+change in $P^*$ and $Q^*$.
+
+<details>
+<summary>Hint</summary>
+Original: $80 - P = 2P - 20 \implies P^* = 33.3$, $Q^* = 46.7$. New demand: $Q_D' = 100 - P$. New equilibrium: $100 - P = 2P - 20 \implies P^* = 40$, $Q^* = 60$. $\Delta P^* = 6.7$, $\Delta Q^* = 13.3$.
+</details>
+
+**Problem 2.** A good has PED $= -0.4$. If the price rises by 10%, calculate the percentage change
+in quantity demanded and the effect on total revenue.
+
+<details>
+<summary>Hint</summary>
+$\%\Delta Q_d = \text{PED} \times \%\Delta P = -0.4 \times 10 = -4\%$. Quantity falls by 4%. Since $|\text{PED}| \lt{} 1$ (inelastic), revenue rises. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue increases by 5.6%.
+</details>
+
+**Problem 3.** The government imposes a $£5$ per unit tax on a good with demand $Q_D = 100 - P$ and
+supply $Q_S = 3P - 20$. Calculate the tax incidence and deadweight loss.
+
+<details>
+<summary>Hint</summary>
+Original: $P^* = 30$, $Q^* = 70$. With tax: $Q_S = 3(P_d - 5) - 20 = 3P_d - 35$. New: $100 - P_d = 3P_d - 35 \implies P_d = 33.75$. $P_s = 28.75$. $Q^* = 66.25$. Consumer burden: $3.75$, producer burden: $1.25$. Ratio $= 3$. DWL $= \frac{1}{2} \times 5 \times 3.75 = 9.375$.
+</details>
+
+**Problem 4.** A consumer spends $£200$ per month on good $X$ at a price of $£10$. When the price
+rises to $£12$, she reduces consumption to 15 units. Calculate PED using the midpoint formula. Is
+demand elastic or inelastic?
+
+<details>
+<summary>Hint</summary>
+Original quantity $= 200/10 = 20$. PED (midpoint) $= \frac{(15-20)/17.5}{(12-10)/11} = \frac{-0.286}{0.182} = -1.57$. $|\text{PED}| \gt{} 1$, so demand is elastic.
+</details>
+
+**Problem 5.** Demand for electric cars is $Q_D = 50 + 0.5Y - 3P$ where $Y$ is income. When $Y = 40$
+and $P = 8$, calculate YED and PED. If income rises to $44$, by how much does demand change?
+
+<details>
+<summary>Hint</summary>
+At $Y = 40, P = 8$: $Q_D = 50 + 20 - 24 = 46$. YED $= (\partial Q_D/\partial Y)(Y/Q_D) = 0.5 \times 40/46 = 0.435$ (normal necessity). PED $= (\partial Q_D/\partial P)(P/Q_D) = -3 \times 8/46 = -0.522$ (inelastic). At $Y = 44$: $Q_D = 50 + 22 - 24 = 48$. Increase of 2 units.
+</details>
+
+**Problem 6.** "A subsidy on a good with elastic demand and inelastic supply will benefit consumers
+more than producers." Evaluate this statement using tax incidence analysis.
+
+<details>
+<summary>Hint</summary>
+The benefit of a subsidy is distributed in the same way as a tax burden: the more inelastic side receives more benefit. With elastic demand (consumers can easily switch) and inelastic supply (producers cannot easily exit), producers receive a larger share of the subsidy benefit. The statement is incorrect: producers benefit more. The price consumers pay falls by less than the price producers receive increases.
+</details>

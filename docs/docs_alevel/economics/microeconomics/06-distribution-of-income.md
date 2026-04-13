@@ -416,10 +416,236 @@ Discuss.
 Education addresses the *root cause* (productivity differences) rather than the *symptom* (income differences). Improves human capital, raises wages at the bottom, promotes social mobility. More politically acceptable than higher taxes. But: takes decades to have effect, access to education is itself unequal, doesn't help those past working age, quality of education matters more than quantity. Redistribution provides immediate relief for those in poverty. Optimal approach: both — invest in education for long-run equality of opportunity, and redistribute for short-run poverty alleviation.
 </details>
 
-:::
+## 9. Lorenz Curve Interpretation: Worked Example
 
-:::
+### 9.1 Constructing and Interpreting a Lorenz Curve
 
-:::
+**Example.** A country has six income groups (sextiles) with the following shares of total income:
 
-:::
+| Group       | Population share | Income share |
+| ----------- | ---------------- | ------------ |
+| Poorest 1/6 | 16.7%            | 3%           |
+| 2nd 1/6     | 16.7%            | 7%           |
+| 3rd 1/6     | 16.7%            | 12%          |
+| 4th 1/6     | 16.7%            | 18%          |
+| 5th 1/6     | 16.7%            | 25%          |
+| Richest 1/6 | 16.7%            | 35%          |
+
+**Answer.** Cumulative population and income shares:
+
+| Cumulative population | Cumulative income |
+| --------------------- | ----------------- |
+| 16.7%                 | 3%                |
+| 33.3%                 | 10%               |
+| 50.0%                 | 22%               |
+| 66.7%                 | 40%               |
+| 83.3%                 | 65%               |
+| 100%                  | 100%              |
+
+The Lorenz curve passes through these points. The significant bow below the 45-degree line indicates
+substantial inequality. The bottom half of the population earns only 22% of total income.
+
+### 9.2 Comparing Two Lorenz Curves
+
+If country A's Lorenz curve is everywhere closer to the 45-degree line than country B's, then
+country A has unambiguously lower inequality. If the curves cross, the comparison is ambiguous: one
+country may have less inequality at the bottom of the distribution but more at the top.
+
+## 10. Gini Coefficient: Extended Calculation
+
+### 10.1 Worked Example with Quintile Data
+
+**Example.** Income quintile shares: bottom 20% = 6%, second 20% = 11%, third 20% = 16%, fourth 20%
+= 23%, top 20% = 44%. Calculate the Gini coefficient.
+
+**Answer.** Cumulative shares: $(0.2, 0.06)$, $(0.4, 0.17)$, $(0.6, 0.33)$, $(0.8, 0.56)$,
+$(1.0, 1.0)$.
+
+Using the trapezoidal rule for $B$ (area under the Lorenz curve):
+
+$$B = 0.2 \times \frac{0 + 0.06}{2} + 0.2 \times \frac{0.06 + 0.17}{2} + 0.2 \times \frac{0.17 + 0.33}{2} + 0.2 \times \frac{0.33 + 0.56}{2} + 0.2 \times \frac{0.56 + 1.0}{2}$$
+
+$$B = 0.2 \times (0.030 + 0.115 + 0.250 + 0.445 + 0.780) = 0.2 \times 1.620 = 0.324$$
+
+$$G = 1 - 2B = 1 - 0.648 = 0.352$$
+
+A Gini of $0.352$ indicates moderate inequality, comparable to the UK.
+
+### 10.2 Effect of a Transfer on the Gini Coefficient
+
+**Example.** Suppose the government transfers $£5{,}000$ from a person in the top quintile to a
+person in the bottom quintile. The bottom quintile share rises from 6% to 7%, and the top quintile
+share falls from 44% to 43%. Recalculate $G$.
+
+**Answer.** New cumulative shares: $(0.2, 0.07)$, $(0.4, 0.18)$, $(0.6, 0.34)$, $(0.8, 0.57)$,
+$(1.0, 1.0)$.
+
+$$B = 0.2 \times (0.035 + 0.125 + 0.260 + 0.455 + 0.785) = 0.2 \times 1.660 = 0.332$$
+
+$$G = 1 - 2(0.332) = 0.336$$
+
+The Gini coefficient falls from $0.352$ to $0.336$, confirming that progressive redistribution
+reduces measured inequality.
+
+## 11. Causes of Income Inequality: Extended Analysis
+
+### 11.1 Demand-Side Factors
+
+1. **Skill-biased technological change**: Automation and digitalisation increase demand for highly
+   skilled workers (software engineers, data scientists) while reducing demand for routine manual
+   and cognitive tasks. This widens the wage gap between skilled and unskilled workers.
+
+2. **Globalisation**: Trade with low-wage countries reduces demand for unskilled manufacturing
+   labour in developed economies (Stolper-Samuelson theorem). Capital mobility allows firms to
+   relocate production, putting downward pressure on domestic wages.
+
+3. **Rise of the super-star economy**: Technology enables the most talented individuals to capture
+   global markets (e.g., top musicians, athletes, entrepreneurs), leading to winner-takes-all
+   outcomes.
+
+### 11.2 Supply-Side Factors
+
+1. **Unequal access to education**: Quality of schooling varies dramatically by postcode and income.
+   Children from affluent families attend better schools, receive private tutoring, and have greater
+   access to extracurricular activities.
+
+2. **Intergenerational wealth transfers**: Inheritance allows the wealthy to pass on advantages
+   (housing, capital, networks) to their children, perpetuating inequality across generations.
+
+3. **Declining union membership**: Union density has fallen in most developed economies since the
+   1980s, reducing workers' bargaining power and compressing the wage distribution less effectively.
+
+### 11.3 Institutional Factors
+
+1. **Tax policy**: Reductions in top income tax rates since the 1980s have increased post-tax
+   inequality.
+
+2. **Minimum wage**: If the minimum wage does not keep pace with the cost of living, the lowest
+   earners fall further behind.
+
+3. **Financial deregulation**: The growth of the financial sector has created highly paid jobs for a
+   small number of workers, contributing to top-end inequality.
+
+## 12. Poverty Traps and the Welfare System
+
+### 12.1 The Poverty Trap Mechanism
+
+A **poverty trap** occurs when the effective marginal tax rate (EMTR) on additional income is so
+high that work does not significantly increase net income. When means-tested benefits are withdrawn
+as earnings rise, the combined effect of income tax, National Insurance, and benefit withdrawal can
+create EMTRs exceeding 80%.
+
+**Example.** A single parent earning $£15{,}000$ receives $£8{,}000$ in means-tested benefits. For
+every extra $£1$ earned:
+
+- Income tax: 20% ($£0.20$)
+- National Insurance: 12% ($£0.12$)
+- Benefit withdrawal: 63% ($£0.63$)
+- EMTR: 95%
+- Net gain from extra $£1$: $£0.05$
+
+This creates almost no financial incentive to increase working hours or seek higher-paid work.
+
+### 12.2 Universal Credit and Taper Rates
+
+Universal Credit (UK) uses a single taper rate of 55% (as of 2024), meaning benefits are withdrawn
+at 55p for every extra $£1$ earned above the work allowance. This simplifies the system but still
+creates high EMTRs when combined with income tax and National Insurance.
+
+## 13. Government Redistribution Policies: Extended Analysis
+
+### 13.1 The Full Redistribution Toolkit
+
+| Policy                 | Mechanism                                  | Effect on Inequality                    | Potential Drawbacks                               |
+| ---------------------- | ------------------------------------------ | --------------------------------------- | ------------------------------------------------- |
+| Progressive income tax | Higher rates on higher incomes             | Reduces post-tax inequality             | Disincentive to work and invest                   |
+| Means-tested benefits  | Target transfers to the poor               | Reduces poverty directly                | Creates poverty traps, stigma                     |
+| Universal basic income | Flat payment to all adults                 | Reduces poverty without traps           | Very expensive, may reduce work incentive         |
+| Wealth tax             | Annual tax on net wealth above a threshold | Reduces wealth concentration            | Difficult to administer, capital flight           |
+| Inheritance tax        | Tax on wealth transferred at death         | Reduces intergenerational inequality    | Unpopular, avoidance through trusts               |
+| Free education         | State-funded schooling and university      | Promotes equality of opportunity        | Quality varies, regressive if richer benefit more |
+| National minimum wage  | Floor on hourly pay                        | Compresses wage distribution from below | May reduce employment if set too high             |
+
+### 13.2 Evaluating Effectiveness
+
+The most effective redistribution strategies combine **predistribution** (reducing inequality before
+tax, through education, minimum wages, and competition policy) with **redistribution** (taxing and
+transferring after market incomes are determined). Over-reliance on either alone is less effective:
+
+- Pure predistribution without redistribution leaves those unable to work (disabled, retired,
+  unemployed) without support
+- Pure redistribution without predistribution requires very high tax rates, creating large
+  deadweight losses
+
+## 14. Common Pitfalls
+
+1. **Confusing income and wealth inequality.** Wealth is far more unequally distributed than income.
+   A country with moderate income inequality may have extreme wealth inequality. Policies that
+   address income (progressive tax) may not address wealth (inheritance tax, wealth tax).
+
+2. **Assuming a lower Gini always means a better outcome.** A lower Gini achieved by making everyone
+   equally poor is not desirable. The goal is to reduce inequality while maintaining (or increasing)
+   average incomes.
+
+3. **Ignoring the difference between absolute and relative poverty.** A country can have very low
+   absolute poverty but high relative poverty. Policies to address each are different: absolute
+   poverty requires economic growth and direct transfers; relative poverty requires reducing the
+   income gap.
+
+4. **Overstating the poverty trap.** While high EMTRs exist, empirical evidence suggests that most
+   people still respond to financial incentives. The poverty trap is a real but often exaggerated
+   problem.
+
+5. **Treating the Gini coefficient as a complete measure.** The Gini is insensitive to changes at
+   different parts of the distribution. Two countries with the same Gini can have very different
+   income distributions (e.g., one with a large underclass, another with a small elite).
+
+6. **Assuming redistribution necessarily reduces growth.** The equity-efficiency trade-off is real
+   but not absolute. Moderate redistribution (funding education, healthcare, infrastructure) can
+   enhance long-run growth by improving human capital and social stability.
+
+## 15. Extension Problem Set
+
+**Problem 1.** A country has income quintile shares: 4%, 9%, 15%, 24%, 48%. Calculate the Gini
+coefficient. If a policy transfers income to equalise the bottom two quintiles (both at 6.5%), what
+is the new Gini?
+
+<details>
+<summary>Hint</summary>
+Cumulative: (0.2, 0.04), (0.4, 0.13), (0.6, 0.28), (0.8, 0.52), (1.0, 1.0). $B = 0.2 \times (0.020 + 0.085 + 0.205 + 0.400 + 0.760) = 0.294$. $G = 1 - 0.588 = 0.412$. After transfer: cumulative becomes (0.2, 0.065), (0.4, 0.13), ... $B$ increases, $G$ decreases.
+</details>
+
+**Problem 2.** Explain why the Palma ratio may be a better measure of inequality than the Gini
+coefficient when comparing countries with similar middle-income shares but different extreme-income
+shares.
+
+<details>
+<summary>Hint</summary>
+The Palma ratio (top 10% / bottom 40%) focuses on the tails of the distribution where inequality is most politically and economically salient. The Gini is equally sensitive to transfers at all points on the Lorenz curve. If two countries have the same middle 50% share but different tails, the Gini may be similar while the Palma ratio differs significantly, better capturing the difference in inequality that matters most for social cohesion.
+</details>
+
+**Problem 3.** A worker earns $£25{,}000$ and faces income tax at 20%, National Insurance at 12%,
+and has Universal Credit withdrawn at 55%. Calculate the EMTR. How much does she keep from an extra
+$£200$ per month?
+
+<details>
+<summary>Hint</summary>
+EMTR $= 20 + 12 + 55 = 87\%$. From $£200$: tax $= £40$, NI $= £24$, UC withdrawal $= £110$. Net gain $= 200 - 40 - 24 - 110 = £26$. She keeps 13%. This is a severe poverty trap.
+</details>
+
+**Problem 4.** "A universal basic income would eliminate poverty without creating disincentives to
+work." Evaluate this statement.
+
+<details>
+<summary>Hint</summary>
+UBI eliminates the poverty trap (no means-testing, zero marginal withdrawal rate from benefits). It provides a guaranteed income floor, reducing absolute poverty. It simplifies administration and reduces stigma. However: (1) it is extremely expensive, requiring higher taxes which create their own disincentives; (2) a UBI large enough to eliminate poverty would require tax rates that may significantly discourage work and investment; (3) it may reduce the political will to fund targeted services (disability support, social housing); (4) some recipients may reduce labour supply. The net effect on work incentives is ambiguous: the income effect reduces work (people need to work less) but the substitution effect increases work (the marginal tax rate on earnings is lower than under means-tested systems).
+</details>
+
+**Problem 5.** Using Piketty's framework ($r > g$), explain why wealth inequality has increased in
+most developed economies since the 1980s. Discuss two policy responses and their potential
+effectiveness.
+
+<details>
+<summary>Hint</summary>
+Since the 1980s, $r$ (return on capital: 4-6%) has consistently exceeded $g$ (economic growth: 1-3%) in developed economies. This means capital income grows faster than labour income, concentrating wealth among capital owners. Contributing factors: financial deregulation (increasing $r$), tax cuts on capital gains and inheritance (reducing the effective tax on $r$), slower productivity growth (reducing $g$). Policy responses: (1) Wealth tax: directly taxes accumulated capital, but faces valuation challenges and capital flight. Effective if well-designed and internationally coordinated. (2) Inheritance tax: prevents intergenerational concentration, but is easily avoided through trusts and gifts. (3) Progressive capital gains tax: aligns tax rates on capital income with labour income, reducing the $r - g$ gap. Most administratively feasible option.
+</details>

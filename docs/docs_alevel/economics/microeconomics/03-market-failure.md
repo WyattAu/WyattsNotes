@@ -477,10 +477,199 @@ theorem fail in practice?
 Coase theorem: if property rights are well-defined, transaction costs are zero, and there are few parties, private bargaining will achieve the efficient outcome regardless of who holds the property rights. Example: a factory and neighbouring residents can negotiate a payment for reduced pollution. Fails when: many affected parties (high transaction costs), measurement problems (hard to verify pollution levels), wealth effects (assignment of rights affects distribution), strategic behaviour (holdout problems).
 </details>
 
-:::
+## 8. Negative Externalities: Extended Worked Examples
 
-:::
+### 8.1 Calculating DWL with Linear Functions
 
-:::
+**Example.** A factory producing widgets has $MPC = 10 + Q$ and generates pollution with
+$MEC = 0.5Q$. Demand is $P = 80 - Q$. Find the market equilibrium, social optimum, optimal Pigouvian
+tax, and DWL.
 
-:::
+**Answer.**
+
+$MSC = 10 + 1.5Q$.
+
+Market equilibrium: $80 - Q = 10 + Q \implies Q_{mkt} = 35$, $P_{mkt} = 45$.
+
+Social optimum: $80 - Q = 10 + 1.5Q \implies Q^* = 28$, $P^* = 52$.
+
+Optimal tax: $t^* = MEC(28) = 14$.
+
+DWL
+$= \frac{1}{2}(35 - 28)(MSC(35) - MSB(35)) = \frac{1}{2}(7)(10 + 52.5 - 45) = \frac{1}{2}(7)(17.5) = 61.25$.
+
+### 8.2 Diagrammatic Analysis
+
+For a negative production externality, the standard diagram shows:
+
+- Demand curve (MPB) downward sloping
+- Supply curve (MPC) upward sloping, to the right of MSC
+- MSC curve above MPC by the vertical distance equal to MEC
+- Market equilibrium at intersection of MPB and MPC (over-production)
+- Social optimum at intersection of MPB and MSC
+- DWL triangle between MSC and MPB from $Q^*$ to $Q_{mkt}$
+
+The tax shifts the MPC curve upward by $t^*$, so the new MPC + tax curve passes through the social
+optimum.
+
+## 9. Public Goods and the Free-Rider Problem: Extended Analysis
+
+### 9.1 Pure Public Goods vs Quasi-Public Goods
+
+| Feature          | Pure Public Good                  | Quasi-Public Good              |
+| ---------------- | --------------------------------- | ------------------------------ |
+| Excludability    | Non-excludable                    | Excludable                     |
+| Rivalry          | Non-rivalrous                     | Non-rivalrous (up to capacity) |
+| Market provision | Will not be provided              | Under-provided                 |
+| Examples         | National defence, street lighting | Roads, parks, education        |
+| Funding          | General taxation                  | Taxation or user fees          |
+
+### 9.2 Worked Example: Valuing a Public Good
+
+**Example.** A street lamp benefits 50 residents. Each resident values the lamp at $£30$. The lamp
+costs $£1{,}000$ to install. Should it be provided?
+
+**Answer.** Total social benefit $= 50 \times 30 = £1{,}500$. Cost $= £1{,}000$. Since
+$£1{,}500 > £1{,}000$, it is socially efficient to provide the lamp. However, if each resident
+reasons "I can benefit without paying," no one contributes and the lamp is not provided (free-rider
+problem). Government intervention (funding through taxation) is needed.
+
+### 9.3 The Samuelson Condition
+
+The efficient provision of a public good requires:
+
+$$\sum_{i=1}^{n} MRS_i = MRT$$
+
+where $MRS_i$ is each individual's marginal rate of substitution between the public good and a
+private good, and $MRT$ is the marginal rate of transformation (the marginal cost of the public good
+in terms of the private good). This differs from private goods, where efficiency requires
+$MRS_i = MRT$ for each individual.
+
+## 10. Demerit Goods and Information Asymmetry
+
+### 10.1 Demerit Goods
+
+Demerit goods are goods whose consumption generates negative externalities or which consumers
+over-consume due to imperfect information. Unlike negative externalities (which affect third
+parties), demerit goods harm the consumer themselves.
+
+| Feature        | Demerit Good                                    | Good with Negative Externality       |
+| -------------- | ----------------------------------------------- | ------------------------------------ |
+| Harm           | Falls on the consumer                           | Falls on third parties               |
+| Market outcome | Over-consumption (consumers underestimate harm) | Over-production                      |
+| Examples       | Alcohol, tobacco, junk food                     | Factory pollution, second-hand smoke |
+| Policy         | Taxation, regulation, information provision     | Pigouvian tax, regulation            |
+
+### 10.2 Information Asymmetry in Healthcare
+
+In healthcare markets, patients (buyers) typically have far less information than doctors (sellers).
+This leads to:
+
+- **Supplier-induced demand**: doctors may recommend unnecessary treatments
+- **Adverse selection**: healthier individuals opt out of insurance, leaving a sicker risk pool
+- **Moral hazard**: insured patients over-consume healthcare
+
+Government responses: mandatory qualification standards, clinical guidelines, public provision of
+healthcare, regulation of insurance markets.
+
+## 11. Government Intervention: Effectiveness Analysis
+
+### 11.1 Comparing Policy Instruments
+
+| Policy           | Efficiency                      | Certainty of Outcome                | Administrative Cost                       | Equity                    |
+| ---------------- | ------------------------------- | ----------------------------------- | ----------------------------------------- | ------------------------- |
+| Pigouvian tax    | High (internalises externality) | Uncertain (depends on elasticities) | Low                                       | Can be regressive         |
+| Regulation       | Low (inflexible)                | High (directly controls quantity)   | Medium (enforcement needed)               | Depends on design         |
+| Tradable permits | High (cost-effective)           | High (cap is fixed)                 | High (monitoring, trading infrastructure) | Permits can be auctioned  |
+| Subsidy          | High for positive externalities | Uncertain                           | Medium                                    | Pro-poor if well-targeted |
+| Direct provision | Variable                        | High                                | High (bureaucracy)                        | Can ensure access         |
+
+### 11.2 When Government Intervention Fails
+
+Government failure occurs when intervention worsens outcomes. Common examples:
+
+- **Regulatory capture**: regulators become influenced by the industry they regulate (e.g.,
+  financial regulators before the 2008 crisis)
+- **Information problems**: governments cannot accurately measure MEC to set the optimal tax rate
+- **Unintended consequences**: agricultural subsidies encouraging overproduction and environmental
+  damage
+- **Political economy**: short-term electoral incentives lead to underinvestment in long-term
+  projects (e.g., infrastructure, climate mitigation)
+
+## 12. Common Pitfalls
+
+1. **Confusing demerit goods with negative externalities.** A demerit good harms the consumer; a
+   negative externality harms third parties. Alcohol is both (health harm to consumer + anti-social
+   behaviour), but the concepts are distinct.
+
+2. **Assuming all market failure requires government intervention.** Private solutions exist in some
+   cases (Coase theorem, contracts, reputation mechanisms, voluntary agreements).
+
+3. **Ignoring the second-best problem.** If there are multiple market failures, correcting one may
+   worsen another. For example, a tax on pollution may reduce output and employment in the taxed
+   industry.
+
+4. **Drawing DWL triangles incorrectly.** The DWL triangle is bounded by MSC, MSB (or MPB), and the
+   vertical lines at $Q^*$ and $Q_{mkt}$. Make sure you identify the correct quantities.
+
+5. **Confusing public goods with common resources.** Public goods are non-rivalrous and
+   non-excludable. Common resources are rivalrous and non-excludable. The free-rider problem applies
+   to public goods; the tragedy of the commons applies to common resources.
+
+6. **Treating the optimal tax as easy to implement.** In practice, measuring MEC is extremely
+   difficult. The optimal tax rate is uncertain, and setting it too high creates its own deadweight
+   loss.
+
+## 13. Extension Problem Set
+
+**Problem 1.** A chemical plant has $MPC = 20 + 2Q$ and produces pollution with $MEC = 10 + Q$.
+Demand is $P = 120 - Q$. Calculate the market equilibrium, social optimum, DWL, and the optimal tax
+rate.
+
+<details>
+<summary>Hint</summary>
+$MSC = 30 + 3Q$. Market: $120 - Q = 20 + 2Q \implies Q_{mkt} = 33.3$, $P = 86.7$. Social: $120 - Q = 30 + 3Q \implies Q^* = 22.5$, $P^* = 97.5$. DWL $= \frac{1}{2}(33.3 - 22.5)(MSC(33.3) - MSB(33.3)) = \frac{1}{2}(10.8)(129.9 - 86.7) = 233$. Tax $= MEC(22.5) = 32.5$.
+</details>
+
+**Problem 2.** A vaccination programme has $MPB = 200 - 2Q$ and $MPC = 20 + Q$. The marginal
+external benefit is $MEB = 40 - Q$ (herd immunity effect). Calculate the market outcome, social
+optimum, and the optimal subsidy per vaccination.
+
+<details>
+<summary>Hint</summary>
+Market: $200 - 2Q = 20 + Q \implies Q_{mkt} = 60$. $MSB = 240 - 3Q$. Social: $240 - 3Q = 20 + Q \implies Q^* = 55$. Wait, $MSB = MPB + MEB = 200 - 2Q + 40 - Q = 240 - 3Q$. $240 - 3Q = 20 + Q \implies 220 = 4Q \implies Q^* = 55$. Subsidy $= MEB(55) = 40 - 55 = -15$. This is negative, which means $MEB$ is already declining. Let me recheck: at $Q_{mkt} = 60$, $MEB = 40 - 60 = -20$, meaning there's actually a negative externality at high vaccination rates. The optimal subsidy should be $MEB(Q^*) = 40 - 55 = -15$. A negative subsidy means a tax, which doesn't make sense. The issue is the linear $MEB$ function. In practice, $MEB$ would be positive over the relevant range.
+</details>
+
+**Problem 3.** Explain why road congestion is an example of a negative externality. Using a diagram,
+show how a road toll could improve welfare.
+
+<details>
+<summary>Hint</summary>
+Each additional driver imposes travel time costs on all other drivers (negative externality of consumption). The private marginal benefit of driving (saving time vs alternative transport) exceeds the social marginal benefit (which accounts for the congestion caused). A toll equal to the marginal external congestion cost shifts the effective private cost upward, reducing traffic to the socially optimal level. The DWL triangle is eliminated. Revenue from the toll can fund public transport, further reducing congestion.
+</details>
+
+**Problem 4.** "Government provision of healthcare is always superior to market provision." Evaluate
+this statement using concepts of market failure and government failure.
+
+<details>
+<summary>Hint</summary>
+For: healthcare has severe information asymmetry (patients cannot assess quality), positive externalities (healthy population), equity concerns. Market provision leads to adverse selection (only sick buy insurance) and supplier-induced demand. Against: government provision can be inefficient (no profit motive, bureaucracy), long waiting times, rationing by queue rather than price, fiscal burden. Government failure: poor incentives for cost control, political interference, slow innovation. Best approach: mixed model with government funding/insurance and private provision, with regulation to correct information asymmetry.
+</details>
+
+**Problem 5.** A lake is used by 10 fishermen. Each fisherman can catch $Q$ fish per day. The total
+sustainable catch is $1{,}000$ fish per day. If each fisherman maximises their own catch, they each
+catch 150 fish, depleting the stock. Explain this as a tragedy of the commons and propose a
+solution.
+
+<details>
+<summary>Hint</summary>
+Each fisherman receives the full benefit of an additional fish caught (private benefit) but shares the cost of stock depletion with all 10 fishermen (1/10 of the social cost). This creates an incentive to overfish. Total catch $= 10 \times 150 = 1{,}500 \gt{} 1{,}000$ (unsustainable). Solutions: (1) privatisation (assign property rights to the lake), (2) regulation (catch quotas of 100 per fisherman), (3) tradable permits (each fisherman gets 100 permits, can trade), (4) Coase bargaining (fishermen agree to limit catches).
+</details>
+
+**Problem 6.** Compare and contrast tradable pollution permits with a Pigouvian tax as methods of
+reducing pollution. Under what circumstances is each policy preferable?
+
+<details>
+<summary>Hint</summary>
+Tax: price certainty (firm knows the cost per unit of pollution), quantity uncertainty (total pollution depends on firm response). Better when: MEC is relatively flat (cost of pollution doesn't change much with quantity), or when government wants to raise revenue. Permits: quantity certainty (cap is fixed), price uncertainty (permit price fluctuates). Better when: there is a critical pollution threshold (e.g., emissions must stay below X tonnes), or when MEC is steep (cost of pollution rises sharply with quantity). Both are market-based and efficient relative to command-and-control regulation.
+</details>

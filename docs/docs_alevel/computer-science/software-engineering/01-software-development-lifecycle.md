@@ -360,6 +360,7 @@ The Scrum Master is a **facilitator** (not a manager) who:
 
 This role is important because without it, teams often revert to ad-hoc practices, lose focus on
 sprint goals, or fail to identify and address process issues.
+
 </details>
 
 **Problem 5.** Compare the cost of fixing a bug in the waterfall model vs Agile. At which stage is
@@ -385,6 +386,7 @@ is complete. The cost of fixing a bug increases exponentially the later it is fo
 
 Agile is most efficient at the sprint level — bugs found within the same sprint they were introduced
 are cheapest to fix.
+
 </details>
 
 **Problem 6.** Explain what a "minimum viable product" (MVP) is and how it relates to Agile
@@ -406,6 +408,7 @@ needed to solve the primary problem.
 
 Example: A ride-sharing app MVP might have only driver-rider matching and payment — no ratings, no
 scheduling, no advanced features.
+
 </details>
 
 **Problem 7.** Describe a situation where the spiral model would be more appropriate than both
@@ -431,6 +434,7 @@ approval, hardware-software integration, and liability. Each spiral iteration wo
 
 Waterfall is too inflexible for evolving requirements. Agile doesn't provide sufficient risk
 analysis for safety-critical systems.
+
 </details>
 
 **Problem 8.** Create a use case diagram description for an online shopping system. Identify three
@@ -465,6 +469,238 @@ actors and at least five use cases.
 
 For revision on testing, see
 [Testing](/docs/academics/alevel/computer-science/software-engineering/testing).
+
+</details>
+
+---
+
+## 8. Worked Example: Waterfall vs Agile for a Hospital System
+
+### Scenario
+
+A hospital requires a new patient record management system. Requirements include:
+
+- Secure storage of patient medical records
+- Integration with existing lab equipment (APIs are documented but untested)
+- Compliance with medical data regulations (GDPR, HIPAA)
+- Role-based access for doctors, nurses, and administrators
+
+### Waterfall Approach
+
+**Plan:**
+
+1. **Analysis (3 months):** Gather all requirements from hospital staff, legal team, and IT
+2. **Design (3 months):** Design database schema, API integrations, access control system
+3. **Implementation (6 months):** Build the complete system
+4. **Testing (3 months):** Comprehensive testing including security audit
+5. **Deployment (1 month):** Migrate data from old system, train staff
+
+**Total timeline:** 16 months. **Cost:** Fixed budget, predictable.
+
+**Risks:** If lab equipment APIs behave differently than documented, the implementation phase is
+delayed. If regulations change during development, redesign is needed.
+
+### Agile Approach
+
+**Plan:**
+
+- Sprint 1-2: Core patient record CRUD, basic authentication
+- Sprint 3-4: Role-based access control
+- Sprint 5-6: Lab equipment API integration (prototype, discover issues early)
+- Sprint 7-8: Regulatory compliance features, audit logging
+- Sprint 9-10: Reporting, dashboards, polish
+
+**Total timeline:** 20 weeks (5 months). **Cost:** Variable, depends on scope changes.
+
+**Advantages:** Lab API issues are discovered in sprint 5, not month 9. Regulation changes are
+accommodated in the next sprint. Hospital staff see working software after sprint 2 and can provide
+feedback.
+
+### Comparison
+
+| Factor                     | Waterfall                               | Agile                                        |
+| -------------------------- | --------------------------------------- | -------------------------------------------- |
+| Timeline to first delivery | 16 months                               | 5 weeks (MVP)                                |
+| Cost predictability        | High                                    | Medium                                       |
+| Adaptability to API issues | Low (expensive redesign)                | High (discovered in sprint)                  |
+| Regulatory compliance      | Designed upfront, audited once          | Continuous compliance, tested each sprint    |
+| Staff feedback             | Only at deployment                      | Every 2 weeks                                |
+| Best fit if...             | Requirements are fully known and stable | Requirements are partially known or evolving |
+
+---
+
+## 9. Risk Management in the SDLC
+
+### The Risk Management Process
+
+1. **Identification:** List potential risks (technical, operational, external)
+2. **Analysis:** Assess likelihood and impact of each risk
+3. **Prioritisation:** Rank risks to focus mitigation efforts
+4. **Mitigation:** Develop strategies to reduce likelihood or impact
+5. **Monitoring:** Track risks throughout the project lifecycle
+
+### Risk Analysis Matrix
+
+|                       | Low Impact      | Medium Impact   | High Impact     |
+| --------------------- | --------------- | --------------- | --------------- |
+| **High Likelihood**   | Medium priority | High priority   | Critical        |
+| **Medium Likelihood** | Low priority    | Medium priority | High priority   |
+| **Low Likelihood**    | Accept          | Low priority    | Medium priority |
+
+### Risk Mitigation Strategies
+
+| Strategy | Description                             | Example                                       |
+| -------- | --------------------------------------- | --------------------------------------------- |
+| Avoid    | Eliminate the risk by changing the plan | Use proven technology instead of experimental |
+| Transfer | Shift the risk to a third party         | Use a cloud provider for infrastructure       |
+| Mitigate | Reduce likelihood or impact             | Write automated tests to catch bugs early     |
+| Accept   | Acknowledge the risk and plan for it    | Budget contingency for unexpected issues      |
+
+### Example: Risks in a School Management System
+
+| Risk                            | Likelihood | Impact | Mitigation                                      |
+| ------------------------------- | ---------- | ------ | ----------------------------------------------- |
+| Requirements change mid-project | High       | Medium | Use Agile with short sprints                    |
+| Key developer leaves            | Medium     | High   | Document code, pair programming, cross-training |
+| Data migration errors           | Medium     | High   | Write migration scripts early, test with copies |
+| Performance issues at scale     | Low        | High   | Load testing in each sprint                     |
+| Third-party API downtime        | Medium     | Medium | Implement caching and fallback mechanisms       |
+
+---
+
+## 10. Common Pitfalls
+
+| Pitfall                                      | Explanation                                       | Avoidance                                                             |
+| -------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------- |
+| Choosing waterfall for evolving requirements | Late changes are extremely expensive              | Assess requirement stability before choosing methodology              |
+| Skipping the analysis phase                  | Building the wrong product                        | Invest time in understanding the problem before building              |
+| No user involvement during development       | Product does not meet user needs                  | Regular demos and feedback sessions                                   |
+| Insufficient testing                         | Bugs reach production                             | Allocate at least 30% of project time to testing                      |
+| Ignoring technical debt                      | Accumulated shortcuts make future changes harder  | Schedule refactoring time in each sprint                              |
+| Scope creep                                  | Uncontrolled addition of features delays delivery | Use a prioritised backlog, freeze scope for each sprint               |
+| Poor documentation                           | Knowledge lost when team members leave            | Maintain essential docs (architecture, API, deployment) even in Agile |
+
+---
+
+## 11. Additional Problem Set
+
+**Problem 1.** A government agency is building a tax processing system. Requirements are specified
+by law and cannot change during development. The system must handle millions of records accurately.
+Recommend an SDLC methodology and justify your choice.
+
+<details>
+<summary>Answer</summary>
+
+**Waterfall model.** Justification:
+
+- Requirements are fixed by law and cannot change — waterfall's rigidity is an advantage, not a
+  limitation
+- Accuracy is critical — extensive documentation and formal testing phases ensure correctness
+- Large scale (millions of records) — thorough upfront design prevents architectural issues
+- Regulatory audit — waterfall's comprehensive documentation supports compliance requirements
+- Predictable budget and timeline — government projects typically require fixed-cost contracts
+
+Agile would be inappropriate because: iterative delivery of a tax system makes no sense (users
+cannot give feedback on a partially-complete tax calculation), and the cost of errors in tax
+calculations is very high.
+
+</details>
+
+**Problem 2.** Explain how the spiral model's risk analysis phase would apply to a project
+developing autonomous vehicle software.
+
+<details>
+<summary>Answer</summary>
+
+**Spiral 1 (Concept):** Objective: prove basic sensor integration is feasible. Risk: sensors may not
+provide sufficient data. Mitigation: build a small-scale prototype in a controlled environment.
+
+**Spiral 2 (Core navigation):** Objective: implement path planning. Risk: algorithm may not handle
+edge cases (pedestrians, weather). Mitigation: extensive simulation testing with edge case
+scenarios.
+
+**Spiral 3 (Real-world testing):** Objective: test on public roads. Risk: safety incidents.
+Mitigation: safety driver, restricted test areas, gradual expansion of test zones.
+
+**Spiral 4 (Regulatory approval):** Objective: meet safety standards. Risk: failure to pass
+regulatory review. Mitigation: engage regulators early, document all safety cases, conduct
+independent audits.
+
+Each spiral produces a working increment while systematically addressing the highest-priority risks
+before they become costly problems.
+
+</details>
+
+**Problem 3.** A project uses RAD methodology. The prototype is demonstrated to users, who request
+significant changes to the user interface. The development team argues these changes are too costly.
+How should this situation be resolved?
+
+<details>
+<summary>Answer</summary>
+
+This situation is expected in RAD — the whole point is to gather user feedback early and iterate.
+Resolution steps:
+
+1. **Evaluate the changes:** Determine which changes are essential (affect usability) vs cosmetic
+   (nice to have)
+2. **Prioritise:** Add essential changes to the next iteration; defer cosmetic changes to a later
+   cycle
+3. **Re-estimate:** Update the project timeline and budget based on the revised scope
+4. **Communicate:** Present the trade-offs to stakeholders — more features vs earlier delivery
+5. **Decide:** The product owner (or client) decides whether to accept the revised timeline or
+   reduce scope
+
+RAD expects requirements to evolve through user feedback. Rejecting all changes defeats the purpose.
+However, uncontrolled changes lead to scope creep, so a structured change management process is
+needed.
+
+</details>
+
+**Problem 4.** Create a risk analysis matrix for a project to develop an e-commerce website.
+Identify at least four risks and classify them.
+
+<details>
+<summary>Answer</summary>
+
+| Risk                                     | Likelihood | Impact   | Priority | Mitigation                                                |
+| ---------------------------------------- | ---------- | -------- | -------- | --------------------------------------------------------- |
+| Payment gateway integration fails        | Medium     | High     | High     | Early prototyping of payment flow, have a backup provider |
+| Database cannot handle peak traffic      | Medium     | High     | High     | Load testing early, design for horizontal scaling         |
+| Security breach (customer data)          | Low        | Critical | High     | Security audit, encryption, penetration testing           |
+| Project team lacks e-commerce experience | High       | Medium   | High     | Hire experienced developer, use proven framework          |
+| Third-party shipping API changes         | Medium     | Low      | Low      | Abstract API behind an interface, monitor for deprecation |
+| Customer requirements change             | High       | Medium   | High     | Use Agile, prioritise backlog, freeze scope per sprint    |
+
+</details>
+
+**Problem 5.** Explain why documentation is important even in Agile methodologies, despite the Agile
+Manifesto valuing "working software over comprehensive documentation."
+
+<details>
+<summary>Answer</summary>
+
+The Agile Manifesto says "working software over comprehensive documentation" — it does not say "no
+documentation." The word "comprehensive" is key: Agile rejects voluminous documentation that nobody
+reads, not documentation itself.
+
+Essential documentation in Agile includes:
+
+1. **Product backlog:** The prioritised list of features (the primary requirements document)
+2. **Definition of Done:** Clear criteria for when a feature is complete
+3. **Architecture decisions:** Key technical decisions and their rationale
+4. **API documentation:** Necessary for integration between components and teams
+5. **Runbooks:** How to deploy, monitor, and troubleshoot the system
+
+Documentation serves purposes that working software cannot:
+
+- **Onboarding:** New team members need written context
+- **Compliance:** Regulatory requirements may mandate specific documentation
+- **Maintenance:** Future developers need to understand decisions made years ago
+- **Communication:** Written specs reduce ambiguity in distributed teams
+
+The Agile principle is: produce the minimum documentation that provides value, and keep it up to
+date.
+
 </details>
 
 :::
