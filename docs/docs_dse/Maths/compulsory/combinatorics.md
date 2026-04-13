@@ -142,6 +142,430 @@ $$
   - $N = \binom{k+m-1}{m-1} = \binom{10+4-1}{4-1} = 286$
 </details>
 
+## Inclusion-Exclusion Principle
+
+### Two Sets
+
+For finite sets $A$ and $B$:
+
+$$
+\begin{aligned}
+  |A \cup B| = |A| + |B| - |A \cap B|
+\end{aligned}
+$$
+
+<details>
+<summary>Proof</summary>
+
+Every element of $A \cup B$ is either in exactly one of $A, B$ or in both. Summing $|A| + |B|$
+counts elements in $A \cap B$ twice, so subtract one copy:
+
+$$
+\begin{aligned}
+  |A \cup B| = |A| + |B| - |A \cap B|
+\end{aligned}
+$$
+
+</details>
+
+### Three Sets
+
+$$
+\begin{aligned}
+  |A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
+\end{aligned}
+$$
+
+<details>
+<summary>Proof</summary>
+
+Apply the two-set formula iteratively:
+
+$$
+\begin{aligned}
+  |A \cup B \cup C| &= |A| + |B \cup C| - |A \cap (B \cup C)| \\
+  &= |A| + \left[|B| + |C| - |B \cap C|\right] - |(A \cap B) \cup (A \cap C)| \\
+  &= |A| + |B| + |C| - |B \cap C| - \left[|A \cap B| + |A \cap C| - |A \cap B \cap C|\right] \\
+  &= |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
+\end{aligned}
+$$
+
+</details>
+
+### General Formula
+
+For $n$ finite sets $A_1, A_2, \ldots, A_n$:
+
+$$
+\begin{aligned}
+  \left|\bigcup_{i=1}^{n} A_i\right| = \sum_{k=1}^{n} (-1)^{k+1} \sum_{1 \leq i_1 \lt{} \ldots \lt{} i_k \leq n} |A_{i_1} \cap \cdots \cap A_{i_k}|
+\end{aligned}
+$$
+
+The sign alternates: add singleton sizes, subtract pairwise intersections, add triple intersections,
+and so on.
+
+:::info
+Connection to Probability The inclusion-exclusion principle has a direct analogue in
+probability via the [addition rule](./probability.md). If $A, B$ are events in a sample space $S$,
+then:
+
+$$
+\begin{aligned}
+  P(A \cup B) = P(A) + P(B) - P(A \cap B)
+\end{aligned}
+$$
+
+This is just inclusion-exclusion divided by $|S|$.
+:::
+
+<details>
+<summary>Examples</summary>
+
+**Example 1.** In a class of 40 students, 25 study Physics, 20 study Chemistry, and 12 study both.
+How many study at least one of the two subjects?
+
+$$
+\begin{aligned}
+  |P \cup C| = 25 + 20 - 12 = 33
+\end{aligned}
+$$
+
+**Example 2.** A survey of 100 households: 60 have broadband, 50 have cable TV, 30 have streaming,
+20 have broadband and cable, 15 have broadband and streaming, 10 have cable and streaming, and 5
+have all three. How many have at least one service?
+
+$$
+\begin{aligned}
+  |B \cup C \cup S| &= 60 + 50 + 30 - 20 - 15 - 10 + 5 \\
+  &= 140 - 45 + 5 = 100
+\end{aligned}
+$$
+
+All 100 households have at least one service.
+
+**Example 3.** How many integers in $\{1, 2, \ldots, 100\}$ are divisible by 2, 3, or 5?
+
+Let $A_2, A_3, A_5$ be the sets of integers divisible by 2, 3, 5 respectively:
+
+$$
+\begin{aligned}
+  |A_2| &= \lfloor 100/2 \rfloor = 50, \quad |A_3| = \lfloor 100/3 \rfloor = 33, \quad |A_5| = \lfloor 100/5 \rfloor = 20 \\
+  |A_2 \cap A_3| &= \lfloor 100/6 \rfloor = 16, \quad |A_2 \cap A_5| = \lfloor 100/10 \rfloor = 10, \quad |A_3 \cap A_5| = \lfloor 100/15 \rfloor = 6 \\
+  |A_2 \cap A_3 \cap A_5| &= \lfloor 100/30 \rfloor = 3
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+  |A_2 \cup A_3 \cup A_5| = 50 + 33 + 20 - 16 - 10 - 6 + 3 = 74
+\end{aligned}
+$$
+
+</details>
+
+## Circular Permutations
+
+### Standard Result
+
+The number of distinct arrangements of $n$ distinct objects around a circle is $(n-1)!$.
+
+<details>
+<summary>Proof</summary>
+
+In a linear arrangement, $n$ objects yield $n!$ permutations. In a circle, rotating the entire
+arrangement does not produce a new configuration. There are $n$ distinct rotations of any
+arrangement (rotate by $0, 1, \ldots, n-1$ positions), so:
+
+$$
+\begin{aligned}
+  \text{circular permutations} = \frac{n!}{n} = (n-1)!
+\end{aligned}
+$$
+
+Equivalently: fix one object in a reference position to break rotational symmetry, then arrange the
+remaining $n-1$ objects linearly in $(n-1)!$ ways.
+
+</details>
+
+### Directional Equivalence
+
+If clockwise and anticlockwise arrangements are considered the same (e.g. necklaces, key rings),
+each arrangement is counted twice in $(n-1)!$ (once for each direction). The corrected count is:
+
+$$
+\begin{aligned}
+  \frac{(n-1)!}{2}, \quad n \geq 3
+\end{aligned}
+$$
+
+:::warning
+Only apply the division by 2 when the problem explicitly states that reflections are
+equivalent. For problems involving people seated at a round table, clockwise and anticlockwise
+orderings are distinct -- a seating where person $A$ has person $B$ on their left is different from
+person $B$ on their right.
+:::
+
+<details>
+<summary>Examples</summary>
+
+**Example 1.** How many ways can 6 people sit around a circular table?
+
+Fix one person, arrange the remaining 5: $(6-1)! = 120$.
+
+**Example 2.** How many ways can 5 distinct beads be arranged on a bracelet (reflections
+equivalent)?
+
+$$
+\begin{aligned}
+  \frac{(5-1)!}{2} = \frac{24}{2} = 12
+\end{aligned}
+$$
+
+**Example 3.** 4 couples (8 people) sit at a round table. How many arrangements if each couple sits
+together?
+
+Treat each couple as a block: 4 blocks in a circle gives $(4-1)! = 3! = 6$ arrangements. Each block
+has $2!$ internal arrangements. Total:
+
+$$
+\begin{aligned}
+  3! \times 2^4 = 6 \times 16 = 96
+\end{aligned}
+$$
+
+</details>
+
+## Derangements
+
+### Definition
+
+A **derangement** of $n$ objects is a permutation with no fixed points -- no object occupies its
+original position. The number of derangements of $n$ objects is denoted $!n$ (the subfactorial of
+$n$).
+
+### Formula via Inclusion-Exclusion
+
+Let $A_i$ be the set of permutations where element $i$ is in its original position. We want
+$|S \setminus \bigcup_{i=1}^n A_i|$ where $S$ is the set of all $n!$ permutations:
+
+$$
+\begin{aligned}
+  !n &= n! - \binom{n}{1}(n-1)! + \binom{n}{2}(n-2)! - \cdots + (-1)^n \binom{n}{n} 0! \\
+  &= n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}
+\end{aligned}
+$$
+
+<details>
+<summary>Derivation</summary>
+
+There are $\binom{n}{k}$ ways to choose $k$ specific elements to be fixed, and $(n-k)!$ ways to
+permute the remaining elements. Inclusion-exclusion gives:
+
+$$
+\begin{aligned}
+  !n &= \sum_{k=0}^{n} (-1)^k \binom{n}{k} (n-k)! \\
+  &= \sum_{k=0}^{n} (-1)^k \frac{n!}{k!(n-k)!} (n-k)! \\
+  &= n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}
+\end{aligned}
+$$
+
+</details>
+
+### Recursive Formula
+
+$$
+\begin{aligned}
+  !n = (n-1)\bigl(!(n-1) + !(n-2)\bigr), \quad n \geq 3
+\end{aligned}
+$$
+
+with $!0 = 1$ and $!1 = 0$.
+
+<details>
+<summary>Proof</summary>
+
+Consider element 1. In any derangement, element 1 is sent to some position $j \neq 1$ (there are
+$n-1$ choices for $j$). Now consider element $j$:
+
+- If element $j$ goes to position 1, the remaining $n-2$ elements must be deranged among themselves:
+  $!(n-2)$ ways.
+- If element $j$ does not go to position 1, we have $n-1$ elements (all except 1) with $n-1$
+  positions (all except position $j$), where element $j$ cannot go to position 1 and each remaining
+  element cannot go to its own position: $!(n-1)$ ways.
+
+Since $j$ can be any of $n-1$ elements:
+
+$$
+\begin{aligned}
+  !n = (n-1)\bigl(!(n-1) + !(n-2)\bigr)
+\end{aligned}
+$$
+
+</details>
+
+### Small Values
+
+| $n$  | 0   | 1   | 2   | 3   | 4   | 5   | 6   |
+| ---- | --- | --- | --- | --- | --- | --- | --- |
+| $!n$ | 1   | 0   | 1   | 2   | 9   | 44  | 265 |
+
+<details>
+<summary>Examples</summary>
+
+**Example 1 (Hat-Check Problem).** 5 guests check their hats. The attendant returns them at random.
+What is the probability that nobody gets their own hat?
+
+Total permutations: $5! = 120$. Derangements: $!5 = 44$.
+
+$$
+\begin{aligned}
+  P(\text{no fixed point}) = \frac{44}{120} = \frac{11}{30} \approx 0.367
+\end{aligned}
+$$
+
+**Example 2 (Letter-Stuffing Problem).** A secretary types 4 letters and 4 addressed envelopes, then
+stuffs them randomly. What is the probability that exactly one letter goes to the correct envelope?
+
+First, choose which letter is correct: $\binom{4}{1} = 4$ ways. The remaining 3 letters must all be
+in wrong envelopes: $!3 = 2$ ways. Total:
+
+$$
+\begin{aligned}
+  P(\text{exactly 1 correct}) = \frac{4 \times 2}{4!} = \frac{8}{24} = \frac{1}{3}
+\end{aligned}
+$$
+
+</details>
+
+## Combinations with Restrictions
+
+### Complementary Counting
+
+When a problem asks for "at least" or "at most" conditions, it is often easier to count the
+complement and subtract from the total.
+
+$$
+\begin{aligned}
+  \text{Count}(\text{at least } k) = \text{Total} - \text{Count}(\text{at most } k-1)
+\end{aligned}
+$$
+
+### Inclusion/Exclusion of Items
+
+When certain items must be included, pre-select them and choose the rest from the remaining pool.
+When items must be excluded, remove them from the pool before choosing.
+
+### Partitioning into Groups
+
+When dividing $n$ distinct objects into $k$ unlabeled groups of sizes $s_1, s_2, \ldots, s_k$ (where
+$\sum s_i = n$):
+
+$$
+\begin{aligned}
+  N = \binom{n}{s_1, s_2, \ldots, s_k} = \frac{n!}{s_1! \, s_2! \, \cdots \, s_k!}
+\end{aligned}
+$$
+
+If some groups have equal size and are unlabeled, divide by the factorial of the number of identical
+groups to avoid overcounting.
+
+<details>
+<summary>Examples</summary>
+
+**Example 1.** From 12 people, choose a committee of at least 3 and at most 5.
+
+$$
+\begin{aligned}
+  \binom{12}{3} + \binom{12}{4} + \binom{12}{5} = 220 + 495 + 792 = 1,507
+\end{aligned}
+$$
+
+**Example 2.** A committee of 5 is chosen from 8 men and 6 women. It must include at least 2 women.
+
+Total: $\binom{14}{5}$. Subtract committees with 0 or 1 woman:
+
+$$
+\begin{aligned}
+  \binom{14}{5} - \binom{8}{5} - \binom{8}{4}\binom{6}{1} = 2,002 - 56 - 420 = 1,526
+\end{aligned}
+$$
+
+**Example 3.** Divide 10 distinct students into two unlabeled groups of 5.
+
+$$
+\begin{aligned}
+  \frac{\binom{10}{5}}{2!} = \frac{252}{2} = 126
+\end{aligned}
+$$
+
+The division by $2!$ is necessary because the two groups are indistinguishable -- choosing
+$\{A,B,C,D,E\}$ and $\{F,G,H,I,J\}$ is the same partition as choosing $\{F,G,H,I,J\}$ and
+$\{A,B,C,D,E\}$.
+
+</details>
+
+## Common Pitfalls
+
+<details>
+<summary>Permutations vs Combinations</summary>
+
+Order matters in permutations, not in combinations. Ask: does swapping two selected elements produce
+a different outcome?
+
+- Arranging books on a shelf: permutation (order matters).
+- Choosing a committee: combination (order does not matter).
+- Assigning gold/silver/bronze: permutation. Selecting 3 finalists: combination.
+
+The relationship $\binom{n}{r} = \frac{n \mathbf{P} r}{r!}$ is the definitive test -- if you can
+justify dividing out the $r!$, you have a combination.
+
+</details>
+
+<details>
+<summary>Double-Counting in Inclusion-Exclusion</summary>
+
+When applying inclusion-exclusion, every correction must be applied with the correct sign. A common
+error is forgetting to add back the triple intersection after subtracting pairwise intersections.
+The sign pattern is $+$, $-$, $+$, $-$, $\ldots$ for intersections of size 1, 2, 3, 4, $\ldots$
+respectively. Always verify by checking a small case manually.
+
+</details>
+
+<details>
+<summary>Forgetting Identical Objects</summary>
+
+If objects are not all distinct, the formula $n!$ overcounts. Always check whether any objects in
+the problem are identical (identical books, identical balls, repeated letters). Use the multinomial
+coefficient $\frac{n!}{k_1! k_2! \cdots}$ to correct for repetitions.
+
+</details>
+
+<details>
+<summary>Off-by-One in Circular Permutations</summary>
+
+The standard formula $(n-1)!$ assumes rotational symmetry is the only equivalence. Do not divide by
+2 unless the problem states that reflections are equivalent (necklace-type problems). For people
+seated around a table, $(n-1)!$ is correct -- do not use $(n-1)!/2$.
+
+</details>
+
+<details>
+<summary>Stars and Bars vs Direct Counting</summary>
+
+Stars and bars counts the number of **non-negative integer solutions** to an equation. It does not
+apply when:
+
+- Variables have upper bounds (e.g. each person gets at most 3 items) -- use inclusion-exclusion to
+  subtract invalid cases.
+- Objects are distinct -- use the multiplication principle or Stirling numbers instead.
+- Order matters within groups -- stars and bars only counts compositions, not arrangements.
+
+When in doubt, check whether the objects being distributed are identical and whether the recipients
+are distinct.
+
+</details>
+
 ---
 
 <details>
