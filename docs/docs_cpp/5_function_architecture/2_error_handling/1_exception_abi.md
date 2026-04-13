@@ -12,7 +12,7 @@ slug: the-itanium-exception-abi
 
 The dominant exception model on all major platforms (GCC, Clang, MSVC on x64) is the **zero-cost
 table-based** model specified informally by the Itanium C++ ABI and adopted as the de-facto standard
-mechanism [N4950 §14.3].
+mechanism [N4950 §14.2].
 
 ## 1.1 Table-Based Unwinding Model
 
@@ -36,9 +36,21 @@ On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` bl
 exception is thrown. The tables are consulted only during unwinding.
 :::
 
+### Alternative Exception Models
+
+| Model                       | Description                                                         | Normal-Path Cost            | Platforms                 |
+| :-------------------------- | :------------------------------------------------------------------ | :-------------------------- | :------------------------ |
+| **Table-based (zero-cost)** | Static tables describe handlers; unwinder walks stack at throw time | ~0 instructions             | GCC, Clang, MSVC x64      |
+| **Setjmp/Longjmp (SJLJ)**   | `setjmp`/`longjmp` at each `try` entry/exit                         | ~10-20 instructions per try | Embedded, older compilers |
+| **DWARF CFI**               | DWARF Call Frame Information used for unwinding                     | ~0 instructions             | GCC/Clang (Linux, BSD)    |
+
+The SJLJ model incurs cost on every `try` entry (saving registers via `setjmp`) and every `try` exit
+(potentially restoring via `longjmp`). This is why modern compilers default to the table-based model
+— it has zero normal-path cost.
+
 ## 1.2 Searching for Matching Catch Clauses
 
-The search algorithm [N4950 §14.4] proceeds as follows:
+The search algorithm [N4950 §14.2] proceeds as follows:
 
 1. The exception object is associated with a `std::type_info` structure describing its dynamic type.
 2. Starting from the throw site, the unwinder examines the LSDA of each frame on the call stack.
@@ -126,8 +138,34 @@ int main() {
 ## 1.3 Stack Unwinding and Destructor Invocation
 
 During propagation, the unwinder calls the **destructor of every automatic-duration object
-constructed in each abandoned frame** [N4950 §14.3]. This is what makes RAII-based resource
+constructed in each abandoned frame** [N4950 §14.2]. This is what makes RAII-based resource
 management exception-safe.
+
+### Stack Unwinding Walkthrough
+
+Consider a call stack: `main()` calls `outer()`, which calls `middle()`, which calls `inner()`. When
+`inner()` throws:
+
+```
+Call stack (top to bottom):
+  inner()   <- throw occurs here
+  middle()  <- destructors for locals in middle() called
+  outer()   <- destructors for locals in outer() called
+  main()    <- catch clause found, unwinding stops
+```
+
+The unwinder performs the following steps:
+
+1. The exception object is allocated and initialized.
+2. The unwinder (`_Unwind_RaiseException`) is called.
+3. For each frame on the stack (starting from `inner()`): a. The personality function
+   (`__gxx_personality_v0`) is called with the exception object and the frame's context. b. The
+   personality function checks the LSDA for a matching `catch` clause. c. If no match, the
+   personality function identifies cleanup code (destructor calls for local variables) and the
+   unwinder executes those cleanups. d. The frame is popped, and the unwinder moves to the next
+   frame.
+4. When a matching `catch` is found in `main()`, the unwinder sets the instruction pointer to the
+   catch clause's entry point and transfers control.
 
 ```cpp
 #include <iostream>
@@ -184,6 +222,26 @@ the non-throwing path** to a function that does not use exceptions at all. There
 - No extra branches or flags tested on every `try` entry.
 - No per-function "has_exception" global.
 - No code-size penalty in the hot path (the tables live in read-only data sections).
+
+### Proof of the Zero-Cost Principle
+
+**Claim:** In the table-based exception model, the normal (non-throwing) execution path incurs zero
+runtime overhead compared to equivalent code without exception handling.
+
+**Proof:**
+
+1. The compiler generates exception handling information (LSDA and unwind tables) as **static data**
+   in read-only sections of the binary (`.eh_frame`, `.gcc_except_table`). These tables are not
+   loaded into registers or cache during normal execution.
+2. The generated machine code for the normal path contains **no instructions** that reference the
+   exception tables. There are no conditional branches to check for pending exceptions, no global
+   flags, and no extra register saves.
+3. The only overhead is binary size: the tables add ~5-15% to the binary. This is a one-time cost at
+   load time and does not affect runtime instruction count.
+4. Therefore, the instruction count and execution time of the normal path are identical to code
+   compiled without exception support.
+
+$\square$
 
 :::tip
 If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
@@ -264,8 +322,8 @@ throwing; use exceptions for truly exceptional conditions.
 
 The exception object is allocated by the C++ runtime, not by `new`. The Itanium ABI specifies that
 the runtime uses a dedicated allocator (often a thread-local buffer) for small exception objects,
-falling back to `malloc` for large ones [N4950 §14.3]. The exception object is destroyed when the
-last `catch` clause handling it exits [N4950 §14.4]:
+falling back to `malloc` for large ones [N4950 §14.2]. The exception object is destroyed when the
+last `catch` clause handling it exits [N4950 §14.2]:
 
 ```cpp
 #include <iostream>
@@ -418,6 +476,129 @@ catch clause's type, enabling the dynamic type comparison.
 The personality function (`__gxx_personality_v0` on GCC/Clang) interprets these tables during
 unwinding. It is called by the unwinder (`_Unwind_RaiseException`) for each frame on the stack.
 
+## 1.9 `noexcept` and Its Performance Implications
+
+The `noexcept` specifier [N4950 §14.5] guarantees that a function will not throw. If a `noexcept`
+function throws anyway, `std::terminate()` is called immediately without stack unwinding.
+
+### Performance Benefits of `noexcept`
+
+1. **Eliminates exception table entries:** The compiler can omit the function's LSDA entry, reducing
+   binary size.
+2. **Enables optimizations:** The compiler knows the function cannot throw, so it can omit cleanup
+   code for temporaries created in the calling function. This can eliminate branches and reduce
+   register pressure.
+3. **Enables `std::move` in containers:** `std::vector::push_back` uses `noexcept` to decide between
+   copy and move during reallocation. If the element's move constructor is `noexcept`, the vector
+   moves elements; otherwise, it copies them.
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+
+struct NoThrowMove {
+    std::string data;
+    NoThrowMove() = default;
+    NoThrowMove(NoThrowMove&&) noexcept = default;
+    NoThrowMove(const NoThrowMove&) = default;
+};
+
+struct ThrowMove {
+    std::string data;
+    ThrowMove() = default;
+    ThrowMove(ThrowMove&&) = default;  // NOT noexcept
+    ThrowMove(const ThrowMove&) = default;
+};
+
+int main() {
+    std::vector<NoThrowMove> v1;
+    std::vector<ThrowMove> v2;
+
+    v1.reserve(1000);
+    v2.reserve(1000);
+
+    std::cout << "noexcept move: ";
+    for (int i = 0; i < 1000; ++i) v1.push_back(NoThrowMove{});
+    std::cout << "done (used move)\n";
+
+    std::cout << "potentially throwing move: ";
+    for (int i = 0; i < 1000; ++i) v2.push_back(ThrowMove{});
+    std::cout << "done (used copy)\n";
+
+    return 0;
+}
+```
+
+### `noexcept(false)` and Conditional `noexcept`
+
+`noexcept` can be conditional on a compile-time boolean:
+
+```cpp
+template<typename T>
+void swap(T& a, T& b) noexcept(std::is_nothrow_move_constructible_v<T> &&
+                                std::is_nothrow_move_assignable_v<T>) {
+    T tmp = std::move(a);
+    a = std::move(b);
+    b = std::move(tmp);
+}
+```
+
+The standard library uses conditional `noexcept` extensively. For example, `std::vector::push_back`
+is `noexcept` only if the element's move constructor is `noexcept`.
+
+## 1.10 Exception Safety Levels
+
+The C++ community recognizes three exception safety guarantees [N4950 §14.5]:
+
+| Guarantee    | Description                                                                                                                      | Example                                   |
+| :----------- | :------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------- |
+| **No-throw** | The operation never throws. All resources are managed. Destructors, `swap`, move operations.                                     | `~T()`, `std::swap`                       |
+| **Strong**   | If the operation fails, the state is rolled back to the pre-operation state (commit-or-rollback).                                | `std::vector::push_back` (single element) |
+| **Basic**    | If the operation fails, the object is in a valid state (all invariants hold), but the state may have changed. No resource leaks. | `std::sort`                               |
+
+### Code for Each Safety Level
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <stdexcept>
+
+class BasicSafety {
+    std::vector<int> data_;
+public:
+    void add(int value) {
+        // Basic guarantee: if push_back throws, the vector is valid
+        // but may or may not contain the new value
+        data_.push_back(value);
+    }
+};
+
+class StrongSafety {
+    std::vector<int> data_;
+public:
+    void add(int value) {
+        // Strong guarantee: if the operation fails, state is unchanged
+        std::vector<int> new_data = data_;
+        new_data.push_back(value);
+        data_ = std::move(new_data);
+    }
+};
+
+class NoThrowSafety {
+    std::vector<int> data_;
+public:
+    void clear() noexcept {
+        // No-throw guarantee: always succeeds, never throws
+        data_.clear();
+    }
+
+    void swap(NoThrowSafety& other) noexcept {
+        data_.swap(other.data_);
+    }
+};
+```
+
 ## Common Pitfalls
 
 ### 1. Throwing from Destructors During Stack Unwinding
@@ -477,13 +658,24 @@ tables entirely, but also disables all `try`/`catch`/`throw` semantics. On bare-
 may need to provide a custom `__cxa_pure_virtual` and `__cxa_throw` implementation even when using
 `-fno-exceptions` if linked libraries reference these symbols.
 
+### 4. Catching by Value vs Reference
+
+Catching by value slices the exception object and invokes an extra copy constructor. Always catch by
+reference (`const T&` or `T&`) to preserve the dynamic type and avoid unnecessary copies. The only
+exception is `catch (...)`, which cannot specify a type.
+
+### 5. Exception Specifications (Deprecated)
+
+The dynamic exception specification `throw(T1, T2)` is deprecated since C++11 and removed in C++17.
+It was never enforced at compile time and provided no performance benefit. Use `noexcept` (or
+`noexcept(false)`) instead.
+
+### 6. `std::terminate` vs. `std::unexpected`
+
+`std::unexpected` (called when a function throws a type not in its exception specification) is
+removed in C++17. `std::terminate` is the only termination handler for exception-related violations.
+
 ## See Also
 
 - [Exception Safety Guarantees](2_exception_safety.md)
 - [The noexcept Specifier](3_noexcept.md)
-
-:::
-
-:::
-
-:::

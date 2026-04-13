@@ -14,16 +14,47 @@ C++ allows user-defined types to overload most operators, enabling natural synta
 This section covers the rules for overloading, member vs non-member design, and patterns for common
 operators including subscript, function call, and increment/decrement.
 
-## 4.1 Rules for Operator Overloading [N4950 §11.4.5]
+## 4.1 Rules for Operator Overloading [N4950 S14.5]
 
 An overloaded operator is a function with a special name composed of the keyword `operator` followed
-by the operator symbol. The following constraints apply:
+by the operator symbol. The following constraints apply [N4950 S14.5.1]:
 
 - You cannot invent new operators (`operator**` is ill-formed).
 - You cannot change the arity, precedence, or associativity of an operator.
 - The operators `.`, `.*`, `::`, `?:`, and `sizeof` cannot be overloaded.
-- At least one operand must be of class or enumeration type.
-- `operator()`, `operator[]`, `operator->`, and `operator->*` must be non-static member functions.
+- At least one operand must be of class or enumeration type [N4950 S14.5.1].
+- `operator()`, `operator[]`, `operator->`, and `operator->*` must be non-static member functions
+  [N4950 S14.5.4].
+
+### Complete List of Overloadable Operators
+
+The following operators may be overloaded [N4950 S14.5]:
+
+| Category            | Operators                                                                 |
+| ------------------- | ------------------------------------------------------------------------- |
+| Arithmetic          | `+` `-` `*` `/` `%`                                                       |
+| Bitwise             | `^` `\&` `\|` `~` `\&lt;\&lt;` `\&gt;\&gt;`                               |
+| Comparison          | `==` `!=` `\&lt;` `\&gt;` `\&lt;=` `\&gt;=` `\&lt;=\&gt;`                 |
+| Logical             | `!` `\&\&` `\|\|` (but see pitfalls below)                                |
+| Assignment          | `=` `+=` `-=` `*=` `/=` `%=` `^=` `\&=` `\|=` `\&lt;\&lt;=` `\&gt;\&gt;=` |
+| Increment/Decrement | `++` `--` (prefix and postfix)                                            |
+| Dereference         | `*` `->` `->*`                                                            |
+| Subscript           | `[]`                                                                      |
+| Function call       | `()`                                                                      |
+| Memory              | `new` `delete` `new[]` `delete[]`                                         |
+| Comma               | `,`                                                                       |
+
+### Non-Overloadable Operators
+
+The following operators cannot be overloaded under any circumstances [N4950 S14.5.1]:
+
+- `.` (member access)
+- `.*` (member pointer access) -- note: `operator->*` **is** overloadable
+- `::` (scope resolution)
+- `?:` (ternary conditional)
+- `sizeof` / `sizeof...` (size of type/pack)
+- `alignof` (alignment requirement)
+- `typeid` (type identification)
 
 ## 4.2 Member vs Non-Member Overloads
 
@@ -32,6 +63,19 @@ For **binary operators**, the choice between member and non-member affects impli
 - **Member function**: The left operand must be of the class type (or a reference to it). Implicit
   conversions are only applied to the right operand.
 - **Non-member function**: Both operands participate in implicit conversions.
+
+### Proof: Why Symmetric Operators Should Be Non-Member
+
+Consider a class `Int` with an `explicit` constructor and a member `operator+`:
+
+$$\text{For } \texttt{a + b} \text{ where the left operand is not of class type:}$$
+
+1. Name lookup finds the candidate functions: member `Int::operator+` and non-member `operator+`.
+2. If only a member overload exists, the left operand must undergo implicit conversion to `Int`.
+3. If the constructor is `explicit`, the implicit conversion is not permitted [N4950 S11.4.5.2].
+4. Therefore, the expression `3 + Int(2)` would fail if only a member overload exists.
+5. A non-member overload `operator+(int, const Int\&)` is found by ordinary name lookup. The right
+   operand matches directly; the left operand requires no conversion for the `int` parameter.
 
 This is why symmetric operators like `==`, `+`, `*` should typically be implemented as non-members
 (often non-member friends), so that expressions like `2 + vec` work alongside `vec + 2`.
@@ -66,6 +110,21 @@ int main() {
     std::printf("%d %d\n", c.get(), d.get());
 }
 ```
+
+### Decision Table: Member vs Non-Member
+
+| Operator                                    | Recommended Form  | Reason                                             |
+| ------------------------------------------- | ----------------- | -------------------------------------------------- |
+| Binary arithmetic (`+`, `-`, `*`, `/`)      | Non-member friend | Symmetric implicit conversions on both operands    |
+| Compound assignment (`+=`, `-=`, etc.)      | Member            | Modifies `*this`; left operand must be the object  |
+| Comparison (`==`, `!=`, `\&lt;`, etc.)      | Non-member friend | Symmetric; both operands may need conversion       |
+| `operator\&lt;\&lt;` / `operator\&gt;\&gt;` | Non-member        | Left operand is `std::ostream`/`std::istream`      |
+| `operator[]`                                | Member            | Must be non-static member [N4950 S14.5.4]          |
+| `operator()`                                | Member            | Must be non-static member [N4950 S14.5.4]          |
+| `operator->`                                | Member            | Must be non-static member [N4950 S14.5.4]          |
+| Unary (`+`, `-`, `!`, `~`)                  | Member            | Operates on `*this`; no conversion symmetry needed |
+| Prefix `++`/`--`                            | Member            | Modifies `*this`                                   |
+| Postfix `++`/`--`                           | Member            | Modifies `*this` (returns copy)                    |
 
 ## 4.3 A `Vec3` Class with Full Operator Suite
 
@@ -180,8 +239,8 @@ int main() {
 
 ## 4.4 Subscript Operator: Const and Non-Const Overloads
 
-The subscript operator should be overloaded in two versions — a `const` version returning by value
-or const reference, and a non-const version returning a non-const reference — so that the operator
+The subscript operator should be overloaded in two versions -- a `const` version returning by value
+or const reference, and a non-const version returning a non-const reference -- so that the operator
 works correctly on both const and non-const objects.
 
 ```cpp
@@ -235,7 +294,7 @@ int main() {
 
 The function call operator `operator()` allows an object to be invoked like a function. Such objects
 are called **function objects** or **functors**. Lambda closures are the most common example: the
-compiler generates an unnamed class type with an `operator()` [N4950 §7.5.5].
+compiler generates an unnamed class type with an `operator()` [N4950 S7.5.5].
 
 ```cpp
 #include <algorithm>
@@ -284,7 +343,7 @@ int main() {
 
 The prefix increment/decrement (`++obj`, `--obj`) modifies the object and returns a reference to it.
 The postfix increment/decrement (`obj++`, `obj--`) returns a copy of the original value before
-modification [N4950 §11.4.5].
+modification [N4950 S14.5.5].
 
 The postfix form is distinguished by a dummy `int` parameter:
 
@@ -327,7 +386,7 @@ code, prefer `++it` over `it++` for iterators and counters.
 
 The stream operators `operator&lt;&lt;` and `operator&gt;&gt;` must be implemented as **non-member
 non-friend functions** (or non-member friends when accessing private state) because the left operand
-is `std::ostream`/`std::istream`, which you cannot modify [N4950 §30.4.2]:
+is `std::ostream`/`std::istream`, which you cannot modify [N4950 S30.4.2]:
 
 ```cpp
 #include <iostream>
@@ -378,14 +437,14 @@ Key conventions:
 - Return `std::ostream&` / `std::istream&` by reference to enable chaining:
   `os &lt;&lt; a &lt;&lt; b`.
 - On parse failure, set the stream's failbit via `is.setstate(std::ios::failbit)`. Do **not** throw
-  from stream operators — the stream error state mechanism handles this.
+  from stream operators -- the stream error state mechanism handles this.
 - Format consistently so that `operator&gt;&gt;` can round-trip the output of `operator&lt;&lt;`.
 
 ## 4.8 Conversion Operators and the `explicit` Specifier
 
 A **conversion operator** defines an implicit conversion from the class type to another type [N4950
-§11.4.5]. Like single-argument constructors, conversion operators can cause surprising implicit
-conversions. The `explicit` keyword prevents this [N4950 §11.4.5.2]:
+S14.5.3]. Like single-argument constructors, conversion operators can cause surprising implicit
+conversions. The `explicit` keyword prevents this [N4950 S11.4.5.2]:
 
 ```cpp
 #include <iostream>
@@ -395,7 +454,7 @@ class Fraction {
 public:
     Fraction(int n, int d) : num_(n), den_(d) {}
 
-    // Implicit conversion to double — potentially dangerous
+    // Implicit conversion to double -- potentially dangerous
     // operator double() const { return static_cast<double>(num_) / den_; }
 
     // Explicit conversion: requires static_cast<Fraction>(expr)
@@ -415,7 +474,7 @@ int main() {
     // process(f);            // error: explicit conversion operator
     process(static_cast<double>(f));  // OK: explicit cast
 
-    // Contextual conversion to bool works even with explicit [N4950 §11.4.5.2]
+    // Contextual conversion to bool works even with explicit [N4950 S11.4.5.2]
     if (f) {
         std::cout << "f is truthy (non-zero)\n";
     }
@@ -424,16 +483,46 @@ int main() {
 
 The `explicit` specifier on a conversion operator prevents it from participating in implicit
 conversions **except** in contextual boolean conversions (conditions in `if`, `while`, `for`, `!`,
-`&&`, `||`, and the ternary operator) [N4950 §11.4.5.2]. This is why `explicit operator bool()` is
-the standard pattern for making objects conditionally testable without enabling surprising implicit
-conversions to `int` or `double`.
+`\&\&`, `\|\|`, and the ternary operator) [N4950 S11.4.5.2]. This is why `explicit operator bool()`
+is the standard pattern for making objects conditionally testable without enabling surprising
+implicit conversions to `int` or `double`.
+
+### Conversion Operator Pitfalls
+
+When both an implicit conversion operator and an implicit constructor exist, ambiguity can arise:
+
+```cpp
+#include <iostream>
+
+class A {
+public:
+    A(int x) { std::cout << "A(int " << x << ")\n"; }
+};
+
+class B {
+public:
+    operator A() const { std::cout << "B::operator A()\n"; return A(42); }
+};
+
+void convert(A a) {
+    (void)a;
+}
+
+int main() {
+    B b;
+    // convert(b);  // AMBIGUOUS: B -> A via operator, or int -> A via constructor?
+    // The compiler sees: B -> A (operator A) OR B -> int (??) -> A (constructor)
+    // Resolution: be explicit
+    convert(static_cast<A>(b));  // OK: unambiguous
+}
+```
 
 ## 4.9 The Spaceship Operator (`operator<=>`) and Automatic Rewrites
 
-C++20 introduced the three-way comparison operator `operator&lt;=>` [N4950 §7.6.8]. When a class
-defines `operator&lt;=>` as defaulted, the compiler automatically generates `==`, `!=`, `&lt;`,
-`&lt;=`, `&gt;`, and `&gt;=` by rewiring to the spaceship operator. The return type determines the
-comparison category:
+C++20 introduced the three-way comparison operator `operator\&lt;=\&gt;` [N4950 S7.6.8]. When a
+class defines `operator\&lt;=\&gt;` as defaulted, the compiler automatically generates `==`, `!=`,
+`\&lt;`, `\&lt;=`, `\&gt;`, and `\&gt;=` by rewiring to the spaceship operator. The return type
+determines the comparison category:
 
 | Return type             | Category         | Meaning                            |
 | ----------------------- | ---------------- | ---------------------------------- |
@@ -461,27 +550,205 @@ int main() {
 }
 ```
 
-The default `operator&lt;=>` performs lexicographic comparison of base classes and then non-static
-data members in declaration order [N4950 §7.6.8]. Combined with `operator==` being defaulted
-independently, this provides a complete comparison suite with zero boilerplate.
+The default `operator\&lt;=\&gt;` performs lexicographic comparison of base classes and then
+non-static data members in declaration order [N4950 S7.6.8]. Combined with `operator==` being
+defaulted independently, this provides a complete comparison suite with zero boilerplate.
+
+### Custom Spaceship Implementation
+
+When the default lexicographic comparison is not appropriate, you can define a custom spaceship
+operator:
+
+```cpp
+#include <compare>
+#include <iostream>
+#include <cmath>
+
+struct FuzzyDouble {
+    double value;
+    double epsilon;
+
+    explicit FuzzyDouble(double v, double eps = 1e-9) : value(v), epsilon(eps) {}
+
+    std::partial_ordering operator<=>(const FuzzyDouble& rhs) const {
+        if (std::abs(value - rhs.value) <= epsilon) {
+            return std::partial_ordering::equivalent;
+        }
+        return value <=> rhs.value;
+    }
+
+    bool operator==(const FuzzyDouble& rhs) const {
+        return (*this <=> rhs) == std::partial_ordering::equivalent;
+    }
+};
+
+int main() {
+    FuzzyDouble a(1.0, 0.01);
+    FuzzyDouble b(1.005, 0.01);
+
+    std::cout << "a == b: " << (a == b) << "\n";     // true (within epsilon)
+    std::cout << "a < b:  " << (a < b) << "\n";      // false
+    std::cout << "a <=> b: "
+              << ((a <=> b) == std::partial_ordering::equivalent ? "equiv" : "diff") << "\n";
+}
+```
+
+## 4.10 Rule of Three/Five/Zero and Operator Overloading
+
+When a class manages resources (raw pointers, file handles, sockets), the special member functions
+are deeply intertwined with operator overloading [N4950 S11.4.7]:
+
+### Rule of Five
+
+If you define **any** of the following, you should define **all five**:
+
+1. Destructor
+2. Copy constructor
+3. Copy assignment operator
+4. Move constructor
+5. Move assignment operator
+
+```cpp
+#include <algorithm>
+#include <cstddef>
+#include <iostream>
+
+class Buffer {
+    double* data_;
+    std::size_t size_;
+
+public:
+    explicit Buffer(std::size_t n) : data_(new double[n]()), size_(n) {}
+
+    ~Buffer() { delete[] data_; }
+
+    Buffer(const Buffer& other)
+        : data_(new double[other.size_]), size_(other.size_) {
+        std::copy_n(other.data_, size_, data_);
+    }
+
+    Buffer& operator=(const Buffer& other) {
+        if (this != &other) {
+            delete[] data_;
+            data_ = new double[other.size_];
+            size_ = other.size_;
+            std::copy_n(other.data_, size_, data_);
+        }
+        return *this;
+    }
+
+    Buffer(Buffer&& other) noexcept : data_(other.data_), size_(other.size_) {
+        other.data_ = nullptr;
+        other.size_ = 0;
+    }
+
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            delete[] data_;
+            data_ = other.data_;
+            size_ = other.size_;
+            other.data_ = nullptr;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+
+    double& operator[](std::size_t i) { return data_[i]; }
+    const double& operator[](std::size_t i) const { return data_[i]; }
+    std::size_t size() const { return size_; }
+};
+```
+
+### Rule of Zero
+
+If the class holds only RAII members (`std::vector`, `std::string`, `std::unique_ptr`,
+`std::shared_ptr`), do **not** declare any special member functions. The compiler-generated defaults
+are correct:
+
+```cpp
+#include <string>
+#include <vector>
+
+class Person {
+    std::string name_;
+    std::vector<std::string> emails_;
+public:
+    Person(std::string name) : name_(std::move(name)) {}
+
+    // No destructor, no copy/move -- all correct by default
+};
+```
+
+## 4.11 Smart Pointer Operator Overloading
+
+Smart pointers overload several operators to mimic raw pointer behavior:
+
+- `operator*`: dereferences to the managed object.
+- `operator->`: member access through the managed object.
+- `operator bool` (explicit): contextual conversion to check for null.
+- `operator==`, `operator!=` (C++20): comparison with `nullptr`.
+
+```cpp
+#include <iostream>
+#include <memory>
+
+struct Widget {
+    int value;
+    explicit Widget(int v) : value(v) {}
+    void show() const { std::cout << "Widget(" << value << ")\n"; }
+};
+
+int main() {
+    auto ptr = std::make_unique<Widget>(42);
+
+    ptr->show();           // operator->
+    (*ptr).show();         // operator*
+
+    if (ptr) {             // explicit operator bool
+        std::cout << "not null\n";
+    }
+
+    if (ptr != nullptr) {  // operator!= with nullptr (C++20)
+        std::cout << "still not null\n";
+    }
+}
+```
+
+:::warning
+Do not overload `operator*`, `operator->`, or `operator bool` on custom types unless you
+are implementing a smart pointer or proxy object. Overloading these operators on regular types
+creates confusing semantics that mislead readers into expecting pointer-like behavior.
+:::
 
 ## Common Pitfalls
 
 **1. Overloading `operator&&` and `operator||`:** These operators lose short-circuit evaluation when
-overloaded. The Standard evaluates both operands before calling the overloaded operator. For custom
-boolean logic, provide named methods (e.g., `logical_and()`) instead of overloading these operators.
+overloaded. The Standard evaluates both operands before calling the overloaded operator [N4950
+S7.6.4]. For custom boolean logic, provide named methods (e.g., `logical_and()`) instead of
+overloading these operators.
 
 **2. Returning by value from `operator+`:** Binary arithmetic operators should return a new object
 by value (not by reference). Returning a reference to a temporary is undefined behavior. The
 compound assignment operators (`+=`, `-=`) should return `*this` by reference.
 
 **3. `operator[]` bounds checking:** The Standard `operator[]` for `std::vector` and `std::map` does
-**not** perform bounds checking — undefined behavior on out-of-range access. Use `at()` for checked
+**not** perform bounds checking -- undefined behavior on out-of-range access. Use `at()` for checked
 access, or implement bounds checking in your own `operator[]`.
+
+**4. Implicit conversion ambiguity:** When a class has both an implicit single-argument constructor
+and an implicit conversion operator, overload resolution can become ambiguous. Mark one or both as
+`explicit` to resolve the ambiguity.
+
+**5. Forgetting to return `*this` from compound assignment:** `operator+=`, `operator-=`, etc. must
+return `*this` by reference. Forgetting the return statement causes the operators to return `void`,
+breaking chaining (`a += b += c` fails).
+
+**6. Overloading comma operator:** While technically possible, overloading `operator,` changes the
+evaluation order and sequence point semantics. The Standard guarantees left-to-right evaluation for
+the built-in comma operator but not for the overloaded version. This is almost always a mistake.
 
 ## See Also
 
 - [Special Member Function Generation Rules](./3_special_member_functions.md)
 - [The Spaceship Operator](./5_spaceship_operator.md)
-
-:::
+- [Object Layout and the vptr](./1_object_layout_vptr.md)

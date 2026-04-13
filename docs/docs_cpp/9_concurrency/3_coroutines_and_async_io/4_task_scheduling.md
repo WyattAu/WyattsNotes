@@ -27,6 +27,49 @@ The minimal interface for a task is:
 - **Result access**: once the task completes, its result is available.
 - **Exception propagation**: if the task throws, the exception is rethrown at the `co_await` point.
 
+## Cooperative Scheduling with Coroutines
+
+### Proof: Cooperative Scheduling Avoids Data Races
+
+**Claim:** A cooperative scheduler that runs only one coroutine per thread at any given time, and
+only switches between coroutines at explicit suspension points (`co_await`), cannot introduce data
+races on non-atomic variables.
+
+**Proof:**
+
+1. A data race requires two conflicting accesses from different threads that are not ordered by
+   happens-before [N4950 §6.9.4.1].
+2. In a cooperative scheduler, each thread runs at most one coroutine at a time. There is no
+   preemption — a coroutine runs until it explicitly suspends.
+3. Within a single coroutine, all accesses are sequenced (the coroutine is a single thread of
+   execution).
+4. Two coroutines running on different threads access shared data only through explicit
+   synchronization (mutexes, atomics) because the scheduler provides no implicit sharing mechanism.
+5. If shared data is accessed without synchronization, the accesses are from different threads and
+   are not ordered by happens-before — this is a data race. But this is a _programmer error_, not a
+   scheduler error.
+6. The scheduler itself does not introduce concurrency between coroutines on the same thread, so it
+   does not introduce data races.
+
+$\square$
+
+The key insight is that cooperative scheduling on a single thread is equivalent to single-threaded
+execution with voluntary context switches. Data races require _parallel_ access from multiple
+threads, which cooperative scheduling does not create.
+
+### Comparison with Thread-Based Concurrency
+
+| Property            | Thread-Based                | Cooperative Coroutines        |
+| :------------------ | :-------------------------- | :---------------------------- |
+| Context switch cost | ~1-10 $\mu$s (kernel)       | ~10-100 ns (user-space)       |
+| Stack size per task | ~1-8 MB                     | ~100-1000 bytes (frame)       |
+| Data race risk      | High (preemptive)           | Low (cooperative)             |
+| Deadlock risk       | Possible                    | Possible (less likely)        |
+| Memory usage        | High (stack per thread)     | Low (frame per coroutine)     |
+| Debugging           | Harder (timing-dependent)   | Easier (deterministic order)  |
+| CPU-bound work      | Good (parallel)             | Poor (single thread)          |
+| I/O-bound work      | Good (blocked thread freed) | Excellent (zero-cost suspend) |
+
 ## Coroutine-Based Pipeline Processing
 
 Coroutines enable natural expression of data pipelines where each stage can suspend and resume
@@ -38,6 +81,142 @@ $$
 
 Each stage is a coroutine that reads from the previous stage and writes to the next, with suspension
 occurring whenever data is not yet available.
+
+### Pipeline Implementation
+
+```cpp
+#include <coroutine>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+
+template<typename T>
+class Channel {
+public:
+    void push(T value) {
+        {
+            std::lock_guard<std::mutex> lock(mtx_);
+            queue_.push(std::move(value));
+        }
+        cv_.notify_one();
+    }
+
+    std::optional<T> try_pop() {
+        std::lock_guard<std::mutex> lock(mtx_);
+        if (queue_.empty()) return std::nullopt;
+        T val = std::move(queue_.front());
+        queue_.pop();
+        return val;
+    }
+
+    T pop() {
+        std::unique_lock<std::mutex> lock(mtx_);
+        cv_.wait(lock, [this] { return !queue_.empty() || closed_; });
+        if (queue_.empty()) throw std::runtime_error{"channel closed"};
+        T val = std::move(queue_.front());
+        queue_.pop();
+        return val;
+    }
+
+    void close() {
+        {
+            std::lock_guard<std::mutex> lock(mtx_);
+            closed_ = true;
+        }
+        cv_.notify_all();
+    }
+
+    bool is_closed() const {
+        std::lock_guard<std::mutex> lock(mtx_);
+        return closed_ && queue_.empty();
+    }
+
+private:
+    mutable std::mutex mtx_;
+    std::condition_variable cv_;
+    std::queue<T> queue_;
+    bool closed_ = false;
+};
+
+template<typename T>
+class Generator {
+public:
+    struct promise_type {
+        Channel<T>* output_{};
+
+        std::suspend_never initial_suspend() noexcept { return {}; }
+        std::suspend_always final_suspend() noexcept { return {}; }
+        void return_void() {}
+        void unhandled_exception() { std::terminate(); }
+
+        Generator get_return_object() {
+            return Generator{std::coroutine_handle<promise_type>::from_promise(*this)};
+        }
+
+        auto yield_value(T value) {
+            if (output_) output_->push(std::move(value));
+            return std::suspend_always{};
+        }
+    };
+
+    std::coroutine_handle<promise_type> handle;
+
+    Generator(std::coroutine_handle<promise_type> h) : handle(h) {}
+    ~Generator() { if (handle) handle.destroy(); }
+    Generator(const Generator&) = delete;
+    Generator& operator=(const Generator&) = delete;
+
+    void set_output(Channel<T>& ch) { handle.promise().output_ = &ch; }
+
+    void run() {
+        while (!handle.done()) {
+            handle.resume();
+        }
+    }
+};
+
+void pipeline_demo() {
+    Channel<int> ch1;
+    Channel<int> ch2;
+
+    Generator<int> source([&ch1]() -> Generator<int> {
+        for (int i = 1; i <= 5; ++i) {
+            co_yield i;
+        }
+    }());
+
+    source.set_output(ch1);
+
+    Generator<int> transform([&ch1, &ch2]() -> Generator<int> {
+        while (true) {
+            auto val = ch1.try_pop();
+            if (!val) break;
+            co_yield val.value() * 10;
+        }
+    }());
+
+    transform.set_output(ch2);
+
+    std::thread t1([&] { source.run(); });
+    std::thread t2([&] { transform.run(); });
+
+    while (!ch2.is_closed()) {
+        auto val = ch2.try_pop();
+        if (val) std::cout << "  result: " << val.value() << "\n";
+    }
+
+    t1.join();
+    t2.join();
+}
+
+int main() {
+    pipeline_demo();
+    return 0;
+}
+```
 
 ## Async/Await Patterns Across Languages
 
@@ -67,6 +246,77 @@ library patterns.
 
 The complexity of `when_all` for $n$ tasks is $\mathcal{O}(n)$ in terms of coroutine handles that
 must be tracked and resumed.
+
+### `when_all` Implementation
+
+```cpp
+#include <coroutine>
+#include <iostream>
+#include <vector>
+#include <atomic>
+#include <exception>
+
+struct WhenAllTask {
+    struct promise_type {
+        std::exception_ptr exception_{};
+
+        std::suspend_always initial_suspend() noexcept { return {}; }
+        std::suspend_always final_suspend() noexcept { return {}; }
+        void return_void() {}
+        void unhandled_exception() { exception_ = std::current_exception(); }
+
+        WhenAllTask get_return_object() {
+            return WhenAllTask{std::coroutine_handle<promise_type>::from_promise(*this)};
+        }
+    };
+
+    std::coroutine_handle<promise_type> handle;
+
+    WhenAllTask(std::coroutine_handle<promise_type> h) : handle(h) {}
+    WhenAllTask(WhenAllTask&& o) noexcept : handle(std::exchange(o.handle, nullptr)) {}
+    ~WhenAllTask() { if (handle) handle.destroy(); }
+    WhenAllTask(const WhenAllTask&) = delete;
+    WhenAllTask& operator=(const WhenAllTask&) = delete;
+};
+
+struct WhenAll {
+    struct promise_type {
+        std::atomic<int> remaining_{0};
+        std::coroutine_handle<> continuation_{};
+        std::exception_ptr exception_{};
+
+        std::suspend_always initial_suspend() noexcept { return {}; }
+
+        struct FinalAwaiter {
+            bool await_ready() const noexcept { return false; }
+            std::coroutine_handle<> await_suspend(
+                std::coroutine_handle<promise_type> h) noexcept {
+                if (--h.promise().remaining_ == 0) {
+                    return h.promise().continuation_;
+                }
+                return std::noop_coroutine();
+            }
+            void await_resume() const noexcept {}
+        };
+
+        std::suspend_always final_suspend() noexcept { return {}; }
+        void return_void() {}
+        void unhandled_exception() { exception_ = std::current_exception(); }
+
+        WhenAll get_return_object() {
+            return WhenAll{std::coroutine_handle<promise_type>::from_promise(*this)};
+        }
+    };
+
+    std::coroutine_handle<promise_type> handle;
+    std::coroutine_handle<> continuation_{};
+
+    WhenAll(std::coroutine_handle<promise_type> h) : handle(h) {}
+    ~WhenAll() { if (handle) handle.destroy(); }
+    WhenAll(const WhenAll&) = delete;
+    WhenAll& operator=(const WhenAll&) = delete;
+};
+```
 
 ## Complete Example: Task Class Wrapping a Coroutine
 
@@ -388,6 +638,104 @@ across `when_all`, and proper cancellation propagation. Libraries like
 P2300) provide production-grade executors.
 :::
 
+## Work-Stealing Concepts
+
+**Work stealing** is a scheduling strategy where idle threads steal tasks from the queues of busy
+threads. It provides automatic load balancing without centralized coordination:
+
+1. Each thread has a **local deque** of tasks (double-ended queue).
+2. A thread pops tasks from the **bottom** of its own deque (LIFO — good for cache locality and
+   depth-first traversal of task trees).
+3. An idle thread steals tasks from the **top** of another thread's deque (FIFO — good for breadth
+   and reducing contention with the owner).
+
+The work-stealing algorithm has provably optimal time bounds: the expected execution time of a fully
+strict (fork-join) computation with $P$ processors and work $T_1$ is
+$\mathcal{O}(T_1 / P +
+T_{\infty})$, where $T_{\infty}$ is the span (critical path length) [Blumofe
+and Leiserson, 1999].
+
+```cpp
+#include <deque>
+#include <mutex>
+#include <thread>
+#include <vector>
+
+class WorkStealingPool {
+    struct WorkerDeque {
+        std::mutex mtx;
+        std::deque<std::function<void()>> tasks;
+
+        void push_bottom(std::function<void()> task) {
+            std::lock_guard<std::mutex> lock(mtx);
+            tasks.push_back(std::move(task));
+        }
+
+        std::function<void()> pop_bottom() {
+            std::lock_guard<std::mutex> lock(mtx);
+            if (tasks.empty()) return nullptr;
+            auto task = std::move(tasks.back());
+            tasks.pop_back();
+            return task;
+        }
+
+        std::function<void()> steal_top() {
+            std::lock_guard<std::mutex> lock(mtx);
+            if (tasks.empty()) return nullptr;
+            auto task = std::move(tasks.front());
+            tasks.pop_front();
+            return task;
+        }
+    };
+
+    std::vector<WorkerDeque> deques_;
+    std::vector<std::thread> workers_;
+    std::atomic<bool> stop_{false};
+    std::atomic<std::size_t> next_victim_{0};
+
+    std::function<void()> try_steal(std::size_t thief) {
+        std::size_t n = deques_.size();
+        for (std::size_t i = 0; i < n; ++i) {
+            std::size_t victim = (thief + i + 1) % n;
+            auto task = deques_[victim].steal_top();
+            if (task) return task;
+        }
+        return nullptr;
+    }
+
+    void worker_loop(std::size_t id) {
+        while (!stop_) {
+            auto task = deques_[id].pop_bottom();
+            if (!task) task = try_steal(id);
+            if (task) {
+                task();
+            } else {
+                std::this_thread::yield();
+            }
+        }
+    }
+
+public:
+    explicit WorkStealingPool(std::size_t n = std::thread::hardware_concurrency())
+        : deques_(n) {
+        for (std::size_t i = 0; i < n; ++i) {
+            workers_.emplace_back(&WorkStealingPool::worker_loop, this, i);
+        }
+    }
+
+    void submit(std::function<void()> task, std::size_t target) {
+        deques_[target % deques_.size()].push_bottom(std::move(task));
+    }
+
+    ~WorkStealingPool() {
+        stop_ = true;
+        for (auto& w : workers_) {
+            if (w.joinable()) w.join();
+        }
+    }
+};
+```
+
 ## Cancellation with `std::stop_token`
 
 C++ coroutines lack built-in cancellation. The `std::stop_token` mechanism [N4950 §32.4] provides
@@ -460,11 +808,16 @@ computation cannot be cancelled until it reaches the next `co_await`.
 - **Thread affinity with TLS.** A coroutine suspended on one thread and resumed on another must not
   rely on thread-local storage without careful synchronization. The coroutine frame itself is
   heap-allocated and thread-safe, but any TLS access in the coroutine body is thread-affine.
+- **Blocking in coroutines.** Calling blocking operations (e.g., `std::this_thread::sleep_for`,
+  synchronous I/O) inside a coroutine defeats the purpose of cooperative scheduling. The entire
+  thread is blocked, not just the coroutine. Use asynchronous I/O or suspension-based timers
+  instead.
+- **Unbounded task queues.** If tasks are submitted faster than they are consumed, the queue grows
+  without bound. Implement backpressure (e.g., bounded channels, semaphores) to prevent
+  out-of-memory conditions.
 
 ## See Also
 
 - [Coroutine Handle, Promise Type, and Awaiter](./2_promise_awaiter.md)
 - [Generators (std::generator)](./3_generators.md)
 - [Futures, Promises, and Async Flows](./5_futures_promises.md)
-
-:::

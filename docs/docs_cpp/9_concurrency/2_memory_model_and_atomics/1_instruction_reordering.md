@@ -34,6 +34,58 @@ Concretely, the compiler may reorder:
 The as-if rule is the root cause of most multi-threading bugs. The compiler does not know about
 other threads and is free to optimize as if the current thread were the only one running.
 
+### Formal Definition of the As-If Rule
+
+**Definition [N4950 §6.9.2.1]:** Conforming implementations are required to emulate (only) the
+observable behavior of the abstract machine. The as-if rule states that any transformation that
+preserves the observable behavior of a single-threaded execution is legal.
+
+**Corollary for multi-threading:** Any reordering that does not affect single-threaded behavior but
+does affect multi-threaded behavior is legal. The compiler has no obligation to consider other
+threads.
+
+### Common Compiler Reordering Transformations
+
+**Register promotion:** A value loaded from memory may be cached in a register across multiple
+reads:
+
+```cpp
+// Source code
+int flag = 0;
+while (flag == 0) { /* spin */ }
+
+// Compiler may transform to:
+int reg = flag;
+if (reg == 0) {
+    while (true) { /* infinite loop — flag is never re-read */ }
+}
+```
+
+This is a legal single-threaded optimization. If `flag` is not `volatile` or `std::atomic`, the
+compiler assumes no other agent modifies it.
+
+**Speculative hoisting:** Loads may be hoisted above branches:
+
+```cpp
+if (condition) {
+    use(x);  // x loaded here
+}
+// Compiler may move the load above the branch:
+auto tmp = x;  // speculative load
+if (condition) {
+    use(tmp);
+}
+```
+
+**Store coalescing:** Multiple stores to the same location may be merged:
+
+```cpp
+data[0] = 1;
+data[0] = 2;
+data[0] = 3;
+// Compiler may emit only: store data[0] = 3
+```
+
 ## CPU-Level Reordering
 
 Even if the compiler emits instructions in program order, the CPU may reorder them at runtime.
@@ -78,6 +130,42 @@ address, bypassing the cache. This is called **store forwarding**. While this is
 rather than a reordering, it means a thread can always see its own stores immediately, even if other
 threads cannot.
 
+### Interleaving Diagram: Store Buffering Litmus Test
+
+The following diagram shows the temporal relationship between stores and loads across two cores:
+
+```
+Time →
+
+Core 0:
+  ┌──────────┐          ┌──────────┐
+  │ store x=1│          │ load  r1 │
+  │ (buffer) │          │  from y  │
+  └────┬─────┘          └────┬─────┘
+       │                     │
+       ▼                     │
+  ┌──────────┐              │
+  │ draining │              │
+  │ to cache │              │
+  └──────────┘              │
+                            │
+
+Core 1:
+          ┌──────────┐     ┌──────────┐
+          │ store y=1│     │ load  r2 │
+          │ (buffer) │     │  from x  │
+          └────┬─────┘     └────┬─────┘
+               │                │
+               ▼                │
+          ┌──────────┐         │
+          │ draining │         │
+          │ to cache │         │
+          └──────────┘         │
+```
+
+Both loads execute before the other core's store drains from its store buffer, so both `r1 = 0` and
+`r2 = 0` is a valid outcome.
+
 ## Data Dependency and Control Dependency Ordering
 
 A **data dependency** exists when the address or value of one memory access depends on the value
@@ -96,6 +184,22 @@ dependencies provide ordering, but on ARM and POWER, the processor may speculati
 dependent load before the controlling branch is resolved. Always use explicit memory ordering
 (acquire/release) rather than relying on control dependencies.
 :::
+
+### Data Dependencies as Ordering
+
+On most architectures, a true data dependency (RAW — Read After Write) prevents reordering because
+the consumer instruction cannot execute until the producer has produced the value. This is a
+hardware dependency, not a memory ordering guarantee:
+
+```cpp
+// Data dependency prevents reordering of the load of b[i]
+int idx = a[0];  // load a[0]
+int val = b[idx]; // load b[a[0]] — cannot execute until idx is known
+```
+
+However, **address dependencies** (where only the _address_ depends on a prior load, not the value)
+are weaker. On ARM and POWER, address dependencies provide ordering, but on some architectures even
+this is not guaranteed. Always use explicit atomics for correctness.
 
 ## Sequenced-Before Relationship
 
@@ -135,6 +239,24 @@ element happens-before itself), asymmetric, and transitive.
 If $A \prec B$ and both $A$ and $B$ access the same memory location, and at least one is a write,
 then $B$ observes the side effects of $A$ (there is no data race).
 
+### Proof: Happens-Before Prevents Data Races
+
+**Claim:** If two evaluations $A$ and $B$ access the same memory location $M$, and at least one is a
+write, and $A \prec B$, then there is no data race [N4950 §6.9.4.1].
+
+**Proof:**
+
+1. By definition of happens-before, there exists a chain of sequenced-before and synchronizes-with
+   edges from $A$ to $B$.
+2. Sequenced-before guarantees that within a single thread, the second evaluation observes all side
+   effects of the first.
+3. Synchronizes-with guarantees that an acquire operation in thread 2 observes all side effects
+   sequenced-before the matching release operation in thread 1.
+4. By transitivity, $B$ observes all side effects of $A$.
+5. Therefore, $A$ and $B$ are ordered, and no data race exists.
+
+$\square$
+
 ## Synchronizes-With Relationship
 
 A release store to an atomic variable in thread 1 **synchronizes-with** an acquire load of that same
@@ -163,6 +285,20 @@ operations.
 | Compiler reordering across atomics | Prevented               | Allowed |
 | Hardware reordering across atomics | Prevented (fences used) | Allowed |
 | Performance cost                   | Highest                 | Lowest  |
+
+### Formal Definition of Sequential Consistency
+
+A set of operations is sequentially consistent if there exists a total order $T$ over all operations
+such that [N4950 §31.7.5]:
+
+1. $T$ is consistent with the program order of each thread (if $op_1$ is sequenced-before $op_2$ in
+   the same thread, then $op_1$ appears before $op_2$ in $T$).
+2. $T$ respects the read-after-write coherence: every read of location $x$ returns the value of the
+   last write to $x$ in $T$.
+
+The C++ memory model guarantees that all `memory_order_seq_cst` operations participate in a single
+total order $S$, called the **modification order**, which is consistent with all happens-before
+relationships.
 
 ## Concrete Example: Reordering Bug
 
@@ -280,22 +416,71 @@ affects which C++ memory orders are necessary and which are free (compile to no 
 | **RISC-V**     | Weakly Ordered (RVWMO)  | Allowed       | Allowed     | Allowed       | Allowed       |
 | **POWER**      | Weakly Ordered          | Allowed       | Allowed     | Allowed       | Allowed       |
 
-**x86 TSO implications:**
+### x86-TSO Memory Model
 
-- `memory_order_acquire` on x86 compiles to a plain load (no fence needed).
-- `memory_order_release` on x86 compiles to a plain store (no fence needed).
-- `memory_order_seq_cst` on x86 requires an `mfence` or locked instruction only for stores.
-- Store-to-load reordering is the only CPU-level reordering on x86.
+x86 implements **Total Store Order** (TSO), which provides the following guarantees [Intel SDM, Vol.
+3, §8.2]:
 
-**ARM implications:**
+1. **Stores are not reordered with other stores.** All stores appear in program order to all
+   processors.
+2. **Loads are not reordered with other loads.** All loads appear in program order.
+3. **Loads are not reordered with older stores to the same location.** (Store forwarding.)
+4. **Stores may be reordered with older loads.** This is the **only** reordering allowed by TSO.
+5. **A processor may read its own stores before they become visible to other processors.**
 
-- `memory_order_acquire` requires `LDAR` (Load-Acquire) instruction.
-- `memory_order_release` requires `STLR` (Store-Release) instruction.
-- `memory_order_seq_cst` requires `DMB` (Data Memory Barrier).
-- All four reorderings are possible without explicit barriers.
+TSO can be modeled as a per-core FIFO **store buffer** between the CPU and the L1 cache. Stores
+enter the buffer in program order and drain to the cache in program order, but loads may bypass
+pending stores to _different_ addresses.
+
+### ARMv8 Memory Model
+
+ARMv8 provides a **weakly ordered** model with optional barrier instructions:
+
+| Instruction | Barrier Type                        | Effect                                                                      |
+| :---------- | :---------------------------------- | :-------------------------------------------------------------------------- |
+| `DMB`       | Full Data Memory Barrier            | All memory accesses before the barrier complete before any after it         |
+| `DSB`       | Data Synchronization Barrier        | All memory accesses complete, no subsequent instructions execute until done |
+| `ISB`       | Instruction Synchronization Barrier | Flushes the pipeline, fetches instructions from new point                   |
+| `LDAR`      | Load-Acquire                        | Acquire semantics on the load                                               |
+| `STLR`      | Store-Release                       | Release semantics on the store                                              |
+
+### C++ Memory Order to Hardware Instruction Mapping
+
+| C++ Memory Order | x86-64 Instruction                                             | ARMv8 Instruction     |
+| :--------------- | :------------------------------------------------------------- | :-------------------- |
+| `relaxed`        | `mov` (plain load/store)                                       | `ldr` / `str` (plain) |
+| `acquire`        | `mov` (no fence needed)                                        | `ldar`                |
+| `release`        | `mov` (no fence needed)                                        | `stlr`                |
+| `acq_rel`        | `mov` (no fence for load; `mfence` before store is not needed) | `ldar` + `stlr` pair  |
+| `seq_cst`        | `lock` prefix or `mfence`                                      | `dmb ish`             |
 
 This means that code relying on "it works on x86" without proper atomics will break when ported to
 ARM (Apple Silicon, Android) or RISC-V (embedded).
+
+## MESI Cache Protocol Overview
+
+The MESI (Modified-Exclusive-Shared-Invalid) cache coherence protocol governs how cache lines
+interact across cores. While this is a hardware mechanism (not part of the C++ memory model), it
+provides essential intuition for understanding memory ordering:
+
+| State             | Description                                                     |
+| :---------------- | :-------------------------------------------------------------- |
+| **M** (Modified)  | This cache has the only valid copy; it differs from main memory |
+| **E** (Exclusive) | This cache has the only valid copy; it matches main memory      |
+| **S** (Shared)    | Multiple caches have valid copies matching main memory          |
+| **I** (Invalid)   | This cache line is not valid                                    |
+
+When a core writes to a cache line in **Shared** state, it must issue an **RFO
+(Read-For-Ownership)** request that invalidates all other copies. This invalidation traffic is the
+root cause of the performance cost of atomics with stronger memory ordering. The store buffer exists
+to decouple the core from this invalidation latency.
+
+The relationship between MESI and memory ordering is:
+
+- **Store buffers** allow store-to-load reordering (the core reads from cache while the store waits
+  for invalidation acknowledgments).
+- **Invalidation latency** is why release/acquire on x86 is free (stores are already ordered) but
+  costs instructions on ARM (explicit barriers are needed to ensure invalidation completes).
 
 ## Compiler Fence: `std::atomic_signal_fence` and `std::atomic_thread_fence`
 
@@ -337,6 +522,18 @@ void consumer() {
 }
 ```
 
+### Formal Fence Semantics
+
+A release fence $F_r$ **synchronizes-with** an acquire fence $F_a$ if [N4950 §31.7.7]:
+
+1. There exists an atomic operation $X$ such that $F_r$ is sequenced-before $X$ and $X$ is
+   sequenced-before $F_a$.
+2. $X$ reads a value written by (or releases-after) an atomic operation $Y$ that is sequenced-after
+   $F_r$.
+
+This means fences create ordering without modifying the atomic operations themselves — they add
+ordering constraints to the _surrounding_ code.
+
 ## Common Pitfalls
 
 - **Relying on x86 TSO for correctness:** Code that works on x86 due to its strong memory model may
@@ -352,6 +549,9 @@ void consumer() {
 - **Double-checked locking without atomics:** The classic "check, lock, check" pattern requires
   `std::atomic` or `std::call_once`. A plain bool flag with `volatile` is insufficient because the
   compiler and CPU may reorder the initialization after the flag write.
+- **Mixing relaxed and non-relaxed atomics on the same variable:** While legal, this is error-prone.
+  If any thread uses `memory_order_seq_cst` on a variable, all accesses to that variable should
+  typically use the same ordering unless you have a specific reason to relax.
 
 ## Store Buffering: The Litmus Test
 
@@ -422,6 +622,31 @@ On x86, this will observe `r1=0 && r2=0` approximately 0-5% of the time (due to 
 latency). On ARM, the percentage can be significantly higher. With `memory_order_seq_cst`, the count
 drops to exactly zero.
 
+## Proof: Data Races Are Undefined Behavior
+
+**Claim:** If two conflicting evaluations (at least one is a write) on the same memory location are
+not ordered by happens-before, the behavior is undefined [N4950 §6.9.4.1].
+
+**Proof:**
+
+1. [N4950 §6.9.4.1] defines a **data race** as two conflicting evaluations that are not
+   sequenced-before / happens-before each other.
+2. [N4950 §6.9.4.1] states: "If there are two conflicting evaluations, at least one of which is
+   atomic, and neither happens before the other, the behavior is undefined."
+3. For non-atomic accesses, the standard is even stricter: any concurrent conflicting access is UB,
+   regardless of atomicity.
+4. The rationale: the compiler is free to optimize as-if the program is single-threaded. A data race
+   violates the as-if rule's assumptions, so all guarantees are void.
+
+$\square$
+
+**Practical consequence:** The compiler may:
+
+- Hoist loads out of loops (reading stale data).
+- Eliminate stores (assuming no other thread observes them).
+- Split or merge memory operations.
+- Generate arbitrary code for the data-racing region.
+
 ## Compiler Barrier Semantics
 
 The distinction between `std::atomic_thread_fence` and `std::atomic_signal_fence` is subtle but
@@ -469,9 +694,3 @@ loop or cache it in a register, without emitting any CPU barrier instructions.
 - [Cache Coherency (MESI) and False Sharing](./2_cache_coherency.md)
 - [Memory Orderings](./4_memory_orderings.md)
 - [Atomic Operations and Lock-Free Programming](./3_atomic_operations.md)
-
-:::
-
-:::
-
-:::
