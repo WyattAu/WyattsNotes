@@ -395,3 +395,250 @@ at the destination using sequence numbers.
 - **Time-Division Multiplexing (TDM):** Each device is assigned a time slot in which to transmit.
 - **Statistical TDM:** Time slots are allocated dynamically based on demand, improving efficiency
   over fixed TDM.
+
+---
+
+## TCP/IP Protocol Stack Detail
+
+The TCP/IP model is a four-layer model that predates and influenced the OSI model. It is the
+practical framework used on the internet today.
+
+| Layer | TCP/IP Name    | OSI Equivalent                     | Key Protocols                   |
+| :---- | :------------- | :--------------------------------- | :------------------------------ |
+| 4     | Application    | Application, Session, Presentation | HTTP, FTP, SMTP, DNS, DHCP, SSH |
+| 3     | Transport      | Transport                          | TCP, UDP                        |
+| 2     | Internet       | Network                            | IP, ICMP, ARP, OSPF             |
+| 1     | Network Access | Data Link, Physical                | Ethernet, Wi-Fi, MAC, PPP       |
+
+### TCP Segment Structure
+
+A TCP segment contains:
+
+- **Source port** and **destination port** (16 bits each): identify the application-level processes.
+- **Sequence number** (32 bits): ensures correct reassembly of packets.
+- **Acknowledgement number** (32 bits): confirms receipt of data.
+- **Flags**: SYN, ACK, FIN, RST control the connection state.
+- **Window size** (16 bits): used for flow control — tells the sender how much data the receiver can
+  accept.
+- **Checksum**: error detection for the segment header and data.
+
+### TCP vs UDP
+
+| Feature      | TCP                                      | UDP                                  |
+| :----------- | :--------------------------------------- | :----------------------------------- |
+| Connection   | Connection-oriented (handshake required) | Connectionless                       |
+| Reliability  | Reliable (ACKs, retransmission)          | Unreliable (best-effort delivery)    |
+| Ordering     | Preserves packet order                   | No ordering guarantee                |
+| Flow control | Yes (window-based)                       | No                                   |
+| Overhead     | Higher (more header data)                | Lower (minimal header)               |
+| Use cases    | Web browsing, email, file transfer       | Streaming, gaming, VoIP, DNS queries |
+
+### UDP Segment Structure
+
+A UDP datagram is much simpler than TCP:
+
+- **Source port** and **destination port** (16 bits each).
+- **Length** (16 bits): total length of the datagram.
+- **Checksum**: optional error detection.
+- No sequence numbers, no acknowledgements, no flow control.
+
+---
+
+## Subnetting
+
+Subnetting divides a large network into smaller sub-networks (subnets) to improve performance,
+security, and address management.
+
+### Subnet Mask
+
+A subnet mask determines which portion of an IP address represents the network and which represents
+the host. It is written as a series of 1s followed by 0s:
+
+- `255.255.255.0` = `/24` = the first 24 bits are the network portion.
+- `255.255.0.0` = `/16` = the first 16 bits are the network portion.
+
+### Worked Example: Subnetting
+
+**Problem:** A company has been allocated the network `192.168.1.0/24`. They need 6 subnets.
+Determine the subnet mask, number of usable hosts per subnet, and the range of the first three
+subnets.
+
+**Solution:**
+
+1. To create 6 subnets, we need at least 3 bits for the subnet portion ($2^3 = 8 \ge 6$).
+2. The new subnet mask borrows 3 bits from the host portion: `/24 + 3 = /27`.
+3. Subnet mask: `255.255.255.224` (since `11100000` in binary = 224 in decimal).
+4. Host bits remaining: $8 - 3 = 5$, so $2^5 - 2 = 30$ usable hosts per subnet.
+5. Subnet ranges (block size = $256 - 224 = 32$):
+
+| Subnet | Network Address | Usable Host Range               | Broadcast Address |
+| :----- | :-------------- | :------------------------------ | :---------------- |
+| 1      | `192.168.1.0`   | `192.168.1.1` - `192.168.1.30`  | `192.168.1.31`    |
+| 2      | `192.168.1.32`  | `192.168.1.33` - `192.168.1.62` | `192.168.1.63`    |
+| 3      | `192.168.1.64`  | `192.168.1.65` - `192.168.1.94` | `192.168.1.95`    |
+
+---
+
+## Network Security Threats (Expanded)
+
+### Malware Types
+
+| Type       | Description                                                   | Example                             |
+| :--------- | :------------------------------------------------------------ | :---------------------------------- |
+| Virus      | Attaches to legitimate files; requires user action to spread  | Macro virus in Word documents       |
+| Worm       | Self-replicates across networks without user intervention     | Conficker worm (2008)               |
+| Trojan     | Disguised as legitimate software; creates backdoors           | Emotet                              |
+| Ransomware | Encrypts files and demands payment for decryption key         | WannaCry (2017), NotPetya (2017)    |
+| Spyware    | Monitors user activity and collects data without consent      | Keyloggers                          |
+| Rootkit    | Hides deep in the OS to maintain persistent privileged access | Used in advanced persistent threats |
+
+### Common Attack Vectors
+
+- **Brute force attack:** Systematically trying every possible password combination. Countermeasure:
+  rate limiting, account lockout, strong password policies.
+- **Social engineering:** Manipulating people into divulging confidential information. Includes
+  pretexting, baiting, and tailgating (following an authorised person through a secure door).
+- **Session hijacking:** Stealing a valid session token after a user authenticates. Countermeasure:
+  HTTPS, secure cookies, session timeout.
+- **Zero-day exploit:** Exploiting a vulnerability that the software vendor has not yet patched or
+  publicly disclosed.
+
+---
+
+## Problem Set
+
+<details>
+<summary>Question 1</summary>
+
+A company uses a Class C network address `192.168.10.0`. The network administrator needs to create
+10 subnets.
+
+a) What is the minimum number of subnet bits required? b) What is the new subnet mask in both binary
+prefix notation and dotted decimal? c) How many usable host addresses are available per subnet? d)
+Write the network address, first usable address, and broadcast address for the first subnet.
+
+</details>
+
+<details>
+<summary>Answer 1</summary>
+
+a) We need $2^n \ge 10$. With $n = 4$, $2^4 = 16 \ge 10$. Minimum subnet bits: 4. b) Original
+prefix: `/24`. New prefix: `/24 + 4 = /28`. Subnet mask: `255.255.255.240`. c) Remaining host bits:
+$8 - 4 = 4$. Usable hosts: $2^4 - 2 = 14$ per subnet. d) Block size: $256 - 240 = 16$. First subnet:
+Network = `192.168.10.0`, First usable = `192.168.10.1`, Broadcast = `192.168.10.15`.
+
+</details>
+
+<details>
+<summary>Question 2</summary>
+
+Explain why TCP is described as a "reliable" protocol but UDP is not. In your answer, describe the
+mechanisms TCP uses to ensure reliability and explain why these mechanisms are not always desirable.
+
+</details>
+
+<details>
+<summary>Answer 2</summary>
+
+TCP is described as reliable because it uses several mechanisms to ensure data delivery: (1)
+**Three-way handshake** establishes a connection before data transfer. (2) **Sequence numbers**
+allow the receiver to reassemble packets in the correct order and detect missing packets. (3)
+**Acknowledgements (ACKs)** confirm receipt; the sender retransmits unacknowledged packets. (4)
+**Flow control** (sliding window) prevents the sender from overwhelming the receiver. (5)
+**Checksums** detect corrupted data.
+
+UDP does not use any of these mechanisms, making it unreliable but faster and with lower overhead.
+UDP is preferred for real-time applications (streaming, VoIP, online gaming) where speed matters
+more than perfect delivery, and for DNS queries where the small request/response size makes the
+overhead of a TCP connection wasteful.
+
+</details>
+
+<details>
+<summary>Question 3</summary>
+
+A user types `https://www.example.com` into their browser. Describe, in order, the steps that occur
+from the moment the URL is entered until the web page begins to load. Include reference to DNS
+resolution, TCP connections, TLS, and HTTP.
+
+</details>
+
+<details>
+<summary>Answer 3</summary>
+
+1. **DNS Resolution:** The browser checks its local cache for the IP address of `www.example.com`.
+   If not found, it queries the recursive DNS resolver (ISP), which queries the root server, then
+   the TLD server (`.com`), then the authoritative name server. The IP address is returned and
+   cached.
+2. **TCP Connection:** The browser initiates a TCP three-way handshake with the server at the
+   resolved IP address on port 443 (HTTPS). SYN is sent, SYN-ACK is received, ACK is sent.
+3. **TLS Handshake:** The browser and server perform a TLS handshake. The server sends its digital
+   certificate. The browser verifies the certificate with a Certificate Authority. They negotiate a
+   symmetric encryption key using asymmetric encryption. All subsequent data is encrypted.
+4. **HTTP Request:** The browser sends an HTTP GET request over the encrypted connection, requesting
+   the root path `/`.
+5. **HTTP Response:** The server processes the request and sends back the HTML content along with
+   status code `200 OK`.
+6. **Rendering:** The browser begins parsing the HTML and making additional requests for embedded
+   resources (CSS, JavaScript, images).
+
+</details>
+
+<details>
+<summary>Question 4</summary>
+
+A network uses a star topology with a central switch. There are 24 devices connected. A new security
+policy requires the network to be split into three separate groups so that devices in different
+groups cannot communicate with each other.
+
+a) What network technology would you recommend to achieve this without adding physical switches? b)
+Explain how this technology works at the Data Link layer. c) Discuss one advantage and one
+disadvantage of this approach compared to using three separate physical switches.
+
+</details>
+
+<details>
+<summary>Answer 4</summary>
+
+a) VLAN (Virtual Local Area Network). b) A VLAN works at the Data Link layer by tagging Ethernet
+frames with a VLAN ID (using IEEE 802.1Q standard). The switch is configured so that ports assigned
+to VLAN 1 can only communicate with other ports in VLAN 1, and similarly for VLANs 2 and 3. The
+switch enforces this isolation by only forwarding frames to ports in the same VLAN. Frames between
+different VLANs can only be routed through a router (inter-VLAN routing), which can be configured
+with access control policies. c) **Advantage:** Cost-effective — no additional hardware required;
+flexible — devices can be moved between VLANs through software configuration without recabling.
+**Disadvantage:** All VLANs share the same physical switch, so a hardware failure of the switch
+affects all VLANs; total bandwidth is shared among all VLANs.
+
+</details>
+
+<details>
+<summary>Question 5</summary>
+
+Compare and contrast symmetric and asymmetric encryption. Your answer should address:
+
+- How keys are used in each type
+- Key distribution challenges
+- Relative speed
+- A practical scenario where both are used together
+
+</details>
+
+<details>
+<summary>Answer 5</summary>
+
+**Symmetric encryption** uses a single shared key for both encryption and decryption. Both the
+sender and receiver must possess the same key. The main challenge is **key distribution**: how to
+securely share the key without it being intercepted. Symmetric encryption is computationally
+**fast**, making it suitable for encrypting large volumes of data (e.g., AES).
+
+**Asymmetric encryption** uses a key pair: a public key (freely shared) and a private key (kept
+secret). Data encrypted with the public key can only be decrypted with the private key, and vice
+versa. This solves the key distribution problem since the public key can be transmitted openly.
+Asymmetric encryption is computationally **slow**, making it impractical for large data volumes
+(e.g., RSA).
+
+**Practical scenario — HTTPS/TLS:** Asymmetric encryption is used during the initial TLS handshake
+to securely exchange a symmetric session key. Once the symmetric key is established, all subsequent
+data is encrypted using symmetric encryption (AES), combining the security benefits of asymmetric
+encryption with the speed of symmetric encryption.

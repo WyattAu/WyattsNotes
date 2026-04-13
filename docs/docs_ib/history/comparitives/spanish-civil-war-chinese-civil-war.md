@@ -418,3 +418,170 @@ Both civil wars raised questions about international law and the responsibilitie
 > **Exam tip**: When practicing these questions, time yourself (45 minutes for a Paper 2 essay) and
 > write a structured outline before you begin. Focus on making sustained comparisons rather than
 > writing two separate mini-essays.
+
+---
+
+## Timeline Comparison
+
+The following table provides a chronological overview of key events in both wars:
+
+| Period         | Spanish Civil War                                                                   | Chinese Civil War                                                             |
+| :------------- | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
+| Early tensions | Second Republic established (1931); military reforms alienate officer corps         | Qing Dynasty collapses (1912); warlord era begins; KMT and CCP founded        |
+| 1924-1927      | —                                                                                   | First United Front (1924); Shanghai Massacre ends cooperation (1927)          |
+| 1927-1935      | Political polarization intensifies; 1934 right-wing CEDA enters government          | CCP nearly destroyed; Long March (1934-1935) consolidates Mao's leadership    |
+| 1936           | Popular Front wins election (Feb); military uprising begins (July); Siege of Madrid | Xi'an Incident (Dec): Chiang forced to accept Second United Front             |
+| 1937           | Guernica bombing (Apr); Battle of the Ebro preparations                             | Second Sino-Japanese War begins (Jul); Second United Front against Japan      |
+| 1938           | Battle of the Ebro (Jul-Nov): Republican offensive fails with heavy losses          | CCP expands rural base areas during Japanese occupation                       |
+| 1939           | Fall of Barcelona (Jan); Franco declares victory (Apr)                              | Continued war against Japan; CCP grows to ~1.2 million members                |
+| 1945           | Spain remains neutral in WWII; Franco consolidates dictatorship                     | Japan surrenders (Aug); CCP and KMT race to control former Japanese territory |
+| 1946-1948      | Franco regime repressive; Spain diplomatically isolated                             | Civil War resumes (1946); Huaihai Campaign (1948-1949): decisive CCP victory  |
+| 1949           | —                                                                                   | PRC founded (Oct 1); KMT retreats to Taiwan                                   |
+
+---
+
+## Foreign Intervention: Detailed Comparison
+
+### Nature of Intervention
+
+| Aspect                     | Spanish Civil War                                               | Chinese Civil War                                                                         |
+| :------------------------- | :-------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| Primary ideological axis   | Fascism vs Communism (pre-WWII)                                 | Capitalism vs Communism (early Cold War)                                                  |
+| Principal external backers | Germany and Italy (Nationalists); USSR (Republicans)            | USA (KMT); USSR (CCP, especially post-1945)                                               |
+| Scale of intervention      | Significant but limited; testing ground for WWII tactics        | Massive financial aid to KMT; Soviet military equipment to CCP                            |
+| Volunteer fighters         | International Brigades (35,000-40,000 for Republicans)          | Limited foreign volunteers; mainly state-directed military aid                            |
+| Non-intervention policy    | Britain and France formally non-interventionist (ineffective)   | No formal non-intervention; US and USSR openly backed sides                               |
+| Impact on outcome          | German and Italian support was decisive for Nationalist victory | US aid was insufficient to prevent KMT collapse; Soviet timing of aid to CCP was critical |
+
+### Motivations for Intervention
+
+**Spain:**
+
+- Germany: Testing ground for Blitzkrieg tactics; strategic positioning near Gibraltar and the
+  Mediterranean; ideological solidarity with Franco.
+- Italy: Mussolini's ambition for a Mediterranean fascist bloc; rivalry with France and Britain.
+- USSR: Stalin sought to contain fascism and expand Soviet influence; also wanted to control the
+  Republican left.
+- Britain/France: Feared that supporting the Republic would provoke a wider European war; also had
+  sympathy for the anti-communist Nationalists among conservative elites.
+
+**China:**
+
+- USA: Containment of communism in Asia; strategic interest in a stable, pro-Western China; Truman
+  and later Marshall attempted mediation before fully committing to the KMT.
+- USSR: Initially restrained (Comintern wanted cooperation with KMT against Japan); after 1945,
+  Stalin allowed CCP forces into Manchuria and provided captured Japanese weapons, seeing the CCP as
+  a more reliable ally than the KMT.
+- Japan: The Second Sino-Japanese War (1937-1945) profoundly shaped the civil war by devastating
+  KMT-held areas while the CCP expanded in rural regions behind Japanese lines.
+
+---
+
+## Outcome Comparison
+
+### Political Outcomes
+
+| Aspect                  | Spain                                                             | China                                                                               |
+| :---------------------- | :---------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+| Victor                  | Nationalists (Franco)                                             | Communists (CCP)                                                                    |
+| Government formed       | Authoritarian single-party state (1939-1975)                      | People's Republic of China (1949-present)                                           |
+| Opposition fate         | Exile, imprisonment, execution; Law of Political Responsibilities | KMT retreat to Taiwan; land reform and political purges on mainland                 |
+| Duration of aftermath   | 36-year dictatorship followed by democratic transition            | Ongoing CCP rule; cross-strait tensions persist                                     |
+| International alignment | Initially isolated; joined Western bloc via Pact of Madrid (1953) | Initially aligned with USSR; Sino-Soviet split (1960s); independent communist power |
+
+### Social and Economic Outcomes
+
+**Spain:**
+
+- Widespread repression: approximately 200,000-400,000 killed during the war; tens of thousands
+  executed afterward.
+- Economic autarky until the 1950s, then rapid industrialization.
+- Cultural suppression of Catalan, Basque, and Galician languages and identities.
+- Democratic transition after Franco's death (1975); 1978 Constitution established a parliamentary
+  monarchy.
+
+**China:**
+
+- Land reform (1950-1953) redistributed land from landlords to peasants; an estimated 1-2 million
+  landlords killed.
+- Collectivization and the Great Leap Forward (1958-1962) caused a famine killing an estimated 15-45
+  million people.
+- Cultural Revolution (1966-1976) caused widespread social upheaval.
+- Economic reforms under Deng Xiaoping (1978 onward) transformed China into the world's
+  second-largest economy.
+
+---
+
+## Ideological Analysis: Deeper Comparison
+
+### Ideological Coherence
+
+**Spain** had relatively clear ideological lines. The Nationalist coalition (monarchists, fascists,
+Catholics, military) was united primarily by **anti-communism** and **anti-republicanism**. The
+Republican coalition (socialists, communists, anarchists, liberals) was united by **anti-fascism**.
+However, the Republican side was significantly less coherent — the anarchists (CNT-FAI) sought
+revolution, while the moderates sought to defend the existing Republic. The May Days of Barcelona
+(1937), where communist-led forces suppressed anarchist militias, demonstrated this fundamental
+division. The USSR's manipulation of the Republican war effort further undermined ideological unity.
+
+**China** had a more complex ideological landscape. The KMT nominally followed Sun Yat-sen's Three
+Principles (nationalism, democracy, livelihood), but under Chiang Kai-shek it became increasingly
+authoritarian and aligned with landlord and business interests. The CCP adapted Marxist-Leninist
+ideology to Chinese conditions through **Mao Zedong Thought**, which replaced the urban proletariat
+with the peasantry as the revolutionary class. This ideological innovation was decisive — it gave
+the CCP a mass base that the KMT could not match.
+
+### Role of Religion
+
+In **Spain**, the Catholic Church was a central pillar of the Nationalist cause. Franco presented
+the war as a crusade against "godless communism." The Church's active support for the Nationalists —
+and the Republican anti-clerical violence (church burnings, murder of priests) — gave the war a
+powerful religious dimension that extended beyond politics.
+
+In **China**, religion played a much smaller direct role. Confucian values of social hierarchy and
+obedience indirectly supported KMT authority, while the CCP's Marxist atheism was a minor factor
+compared to its economic and social appeal to peasants. The ideological divide was primarily
+economic (landlord vs peasant) rather than religious.
+
+---
+
+## Problem Set: IB Paper 2 Practice
+
+<details>
+<summary>Question 1</summary>
+
+"To what extent was foreign intervention the decisive factor in determining the outcome of either
+the Spanish Civil War or the Chinese Civil War?"
+
+</details>
+
+<details>
+<summary>Question 2</summary>
+
+Compare and contrast the role of guerrilla warfare in the Spanish and Chinese Civil Wars.
+
+</details>
+
+<details>
+<summary>Question 3</summary>
+
+"Economic factors were more important than ideology in causing both the Spanish and Chinese Civil
+Wars." To what extent do you agree with this statement?
+
+</details>
+
+<details>
+<summary>Question 4</summary>
+
+Evaluate the impact of the Spanish Civil War on the international relations of Europe in the period
+1936 to 1939.
+
+</details>
+
+<details>
+<summary>Question 5</summary>
+
+Compare and contrast the methods used by Franco and Mao to consolidate power after their respective
+victories.
+
+</details>

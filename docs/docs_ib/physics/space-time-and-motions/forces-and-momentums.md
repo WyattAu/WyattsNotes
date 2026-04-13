@@ -224,7 +224,7 @@ distance covered during the 10.0 s of acceleration?
   **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$
   for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly
   linking the resulting acceleration to kinematic equations.
-</details>
+  </details>
 
 **Problem 2.** A 2.0 kg firework is launched vertically from rest. Its rocket motor provides a
 constant upward thrust of 50.0 N for 3.0 s before running out of fuel. Ignore air resistance. a)
@@ -259,7 +259,7 @@ air (from launch until it returns to the ground)?
   you get this wrong, you should focus on:** Breaking multi-stage motion problems into separate
   parts, calculating net force correctly in each stage, and using the final conditions of one stage
   as the initial conditions for the next.
-</details>
+  </details>
 
 **Problem 3.** A 5.0 kg object is suspended by a rope. A horizontal force is applied, pulling the
 object to the side until the rope makes an angle of 35° with the vertical. The object is held in
@@ -287,7 +287,7 @@ applied horizontal force and the tension in the rope.
   focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors
   into components using trigonometry, and setting up and solving simultaneous equations for the
   vertical and horizontal forces.
-</details>
+  </details>
 
 **Problem 4.** A 0.20 kg ball traveling at 10 m/s collides with a stationary 0.30 kg ball. After the
 collision, the 0.20 kg ball moves at 4.0 m/s at an angle of 30° to its original path. a) Determine
@@ -320,7 +320,7 @@ Justify your answer with a calculation.
   of momentum as a vector equation (i.e., in component form), combining velocity components to find
   final speed and direction, and the definition of an elastic collision (conservation of kinetic
   energy).
-</details>
+  </details>
 
 **Problem 5.** A 1200 kg car travels at a constant speed of 15 m/s around a flat circular track of
 radius 50 m. It then moves to a section of the track banked at an angle $\theta$. a) For the flat
@@ -355,7 +355,7 @@ any reliance on friction?
   Identifying the source of the centripetal force in different situations (friction vs. component of
   normal force), correctly resolving forces on an inclined plane, and solving a system of force
   equations.
-</details>
+  </details>
 
 **Problem 6.** **Question (HL Only):** A thin hoop of mass M and radius R ($I=MR^2$) rolls without
 slipping down an incline of angle $\theta$. a) Draw a free-body diagram for the hoop, including the
@@ -459,6 +459,266 @@ the muon "explain" its ability to reach the ground?
   special relativity. For a stationary observer watching a moving object, time dilates (clocks run
   slow). For a moving observer, distances in the direction of motion contract (are shorter). Both
   phenomena must lead to the same physical conclusion.
+  </details>
+
+---
+
+## Worked Example: Connected Bodies on a Frictionless Surface
+
+**Problem:** Two blocks, $m_1 = 3.0$ kg and $m_2 = 5.0$ kg, are connected by a light inextensible
+string. Block $m_1$ rests on a frictionless horizontal table, and the string passes over a
+frictionless pulley at the edge so that $m_2$ hangs vertically. The system is released from rest. a)
+Find the acceleration of the system. b) Find the tension in the string.
+
+**Solution:**
+
+For $m_2$ (hanging): $m_2 g - T = m_2 a$ (Eq. 1) For $m_1$ (on table): $T = m_1 a$ (Eq. 2, since no
+friction)
+
+Substitute Eq. 2 into Eq. 1: $m_2 g - m_1 a = m_2 a$ $m_2 g = (m_1 + m_2) a$
+$a = \frac{m_2 g}{m_1 + m_2} = \frac{(5.0)(9.8)}{3.0 + 5.0} = \frac{49}{8.0} = 6.13$ m/s$^2$
+
+Tension: $T = m_1 a = (3.0)(6.13) = 18.4$ N.
+
+---
+
+## Worked Example: Inclined Plane with Friction
+
+**Problem:** A 4.0 kg block is placed on a $30°$ incline. The coefficient of static friction is
+$\mu_s = 0.40$ and the coefficient of kinetic friction is $\mu_k = 0.30$. a) Will the block slide?
+Justify with a calculation. b) If a horizontal force of 20 N is applied pushing the block up the
+incline, find the acceleration.
+
+**Solution:**
+
+**a) Check if block slides:** Component of gravity along the incline:
+$mg\sin 30° = (4.0)(9.8)(0.5) = 19.6$ N. Maximum static friction:
+$f_{s,\max} = \mu_s mg\cos 30° = (0.40)(4.0)(9.8)(0.866) = 13.6$ N. Since $mg\sin 30° = 19.6$ N
+$\gt{} f_{s,\max} = 13.6$ N, the block **will slide**.
+
+**b) With applied horizontal force of 20 N up the incline:** Resolve the horizontal force into
+components parallel and perpendicular to the incline: $F_{\parallel} = 20\cos 30° = 17.3$ N (up the
+incline). $F_{\perp} = 20\sin 30° = 10.0$ N (into the incline).
+
+Normal force: $N = mg\cos 30° + F_{\perp} = (4.0)(9.8)(0.866) + 10.0 = 33.9 + 10.0 = 43.9$ N.
+Kinetic friction: $f_k = \mu_k N = (0.30)(43.9) = 13.2$ N (down the incline).
+
+Net force along the incline:
+$F_{\text{net}} = F_{\parallel} - mg\sin 30° - f_k = 17.3 - 19.6 - 13.2 = -15.5$ N.
+
+The net force is negative (down the incline), meaning the block slides **down** despite the applied
+force. The acceleration is: $a = \frac{|F_{\text{net}}|}{m} = \frac{15.5}{4.0} = 3.88$ m/s$^2$ down
+the incline.
+
+---
+
+## Worked Example: Torque and Rotational Equilibrium
+
+**Problem:** A uniform beam of mass 10 kg and length 4.0 m is pivoted at its left end. A load of 15
+kg is hung from the beam at a point 3.0 m from the pivot. The beam is held in horizontal equilibrium
+by a vertical rope attached 1.0 m from the right end. a) Calculate the tension in the rope. b)
+Calculate the magnitude and direction of the reaction force at the pivot.
+
+**Solution:**
+
+**a) Take moments about the pivot (clockwise positive):**
+
+Clockwise moments:
+
+- Weight of beam: $(10)(9.8)(2.0) = 196$ N m (acts at the center, 2.0 m from pivot).
+- Weight of load: $(15)(9.8)(3.0) = 441$ N m.
+
+Anticlockwise moments:
+
+- Tension in rope: $T(4.0 - 1.0) = 3.0T$.
+
+For equilibrium: $3.0T = 196 + 441 = 637$. $T = 212.3$ N.
+
+**b) Vertical equilibrium:** $R_{\text{pivot}} + T = mg_{\text{beam}} + mg_{\text{load}}$
+$R_{\text{pivot}} + 212.3 = 98 + 147 = 245$ $R_{\text{pivot}} = 32.7$ N (upward).
+
+---
+
+## Angular Momentum Conservation: Extended Analysis
+
+The law of conservation of angular momentum states that when no net external torque acts on a
+system, the total angular momentum remains constant:
+
+$$
+L_{\text{initial}} = L_{\text{final}} \implies I_i \omega_i = I_f \omega_f
+$$
+
+This principle explains a wide range of phenomena:
+
+- **Spinning ice skater:** Pulling arms in reduces $I$, so $\omega$ must increase.
+- **Spinning neutron star:** When a star collapses, its moment of inertia decreases enormously,
+  causing extremely rapid rotation (pulsars can spin at hundreds of revolutions per second).
+- **Orbital mechanics:** A planet in an elliptical orbit moves faster at perihelion (closer to the
+  star, smaller effective $r$) and slower at aphelion (farther, larger effective $r$).
+
+**Important distinction:** Angular momentum is conserved when the net **external torque** is zero.
+Internal forces (like the skater's muscles) can change $I$ and $\omega$, but not the total $L$.
+However, internal forces **can** change the rotational kinetic energy (as seen in the skater problem
+where $E_k$ increased).
+
+---
+
+## Common Pitfalls
+
+1. **Centripetal force is not a "new" force.** It is the net force directed toward the center.
+   Always identify which force(s) provide the centripetal force: tension, friction, component of
+   gravity, normal force, etc.
+
+2. **Confusing centripetal and centrifugal force.** Centrifugal force is a **fictitious force** that
+   appears in a rotating reference frame. In an inertial frame, only centripetal force exists.
+
+3. **Forgetting that rolling involves both translation and rotation.** A rolling object has both
+   translational kinetic energy ($\frac{1}{2}mv^2$) and rotational kinetic energy
+   ($\frac{1}{2}I\omega^2$). The total is $\frac{1}{2}mv^2(1 + \frac{I}{mr^2})$.
+
+4. **Sign conventions in angular momentum.** Define a positive direction of rotation and be
+   consistent. Clockwise and counterclockwise torques must be assigned opposite signs.
+
+5. **Using the wrong moment of inertia.** For a solid sphere $I = \frac{2}{5}mr^2$; for a hollow
+   sphere $I = \frac{2}{3}mr^2$; for a solid cylinder $I = \frac{1}{2}mr^2$; for a thin hoop
+   $I = mr^2$. These are different and must be used correctly.
+
+6. **Equating centripetal acceleration to gravity.** $g = v^2/r$ only applies at the surface of a
+   planet for orbital motion. Do not use it for objects on the surface (unless explicitly stated).
+
+---
+
+## Problem Set
+
+<details>
+<summary>Question 1</summary>
+
+A 2.0 kg block slides down a frictionless incline of angle $35°$ from a height of 1.5 m. a) Find the
+speed of the block at the bottom of the incline. b) The block then slides across a rough horizontal
+surface with $\mu_k = 0.30$. How far does it travel before stopping?
+
 </details>
 
-:::
+<details>
+<summary>Answer 1</summary>
+
+a) By conservation of energy:
+$mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2(9.8)(1.5)} = \sqrt{29.4} = 5.42$ m/s.
+
+b) On the rough surface, friction decelerates the block: $f_k = \mu_k mg = (0.30)(2.0)(9.8) = 5.88$
+N. $a = \frac{f_k}{m} = \frac{5.88}{2.0} = 2.94$ m/s$^2$. Using $v^2 = u^2 + 2as$:
+$0 = (5.42)^2 - 2(2.94)s \implies s = \frac{29.4}{5.88} = 5.0$ m.
+
+</details>
+
+<details>
+<summary>Question 2</summary>
+
+A 500 g ball is attached to a string of length 0.80 m and swung in a vertical circle. The minimum
+speed at the top of the circle is $2.8$ m/s. a) Calculate the tension in the string at the top of
+the circle. b) Calculate the speed of the ball at the bottom of the circle (assuming no energy
+losses).
+
+</details>
+
+<details>
+<summary>Answer 2</summary>
+
+a) At the top: $T + mg = \frac{mv^2}{r}$.
+$T = \frac{mv^2}{r} - mg = \frac{(0.50)(2.8)^2}{0.80} - (0.50)(9.8) = \frac{3.92}{0.80} - 4.9 = 4.9 - 4.9 = 0$
+N. (This confirms the minimum speed condition where tension equals zero at the top.)
+
+b) Conservation of energy: $\frac{1}{2}mv_b^2 = \frac{1}{2}mv_t^2 + mg(2r)$.
+$v_b = \sqrt{v_t^2 + 4gr} = \sqrt{(2.8)^2 + 4(9.8)(0.80)} = \sqrt{7.84 + 31.36} = \sqrt{39.2} = 6.26$
+m/s.
+
+</details>
+
+<details>
+<summary>Question 3</summary>
+
+A disc of mass 0.50 kg and radius 0.20 m ($I = \frac{1}{2}mr^2$) is rotating at 300 rpm. A
+frictional torque of 0.030 N m is applied to bring it to rest. a) Calculate the initial angular
+momentum. b) How long does it take for the disc to stop?
+
+</details>
+
+<details>
+<summary>Answer 3</summary>
+
+a) $\omega_i = 300 \times \frac{2\pi}{60} = 31.4$ rad/s. $I = \frac{1}{2}(0.50)(0.20)^2 = 0.010$ kg
+m$^2$. $L_i = I\omega_i = (0.010)(31.4) = 0.314$ kg m$^2$/s.
+
+b)
+$\tau = \frac{\Delta L}{\Delta t} \implies \Delta t = \frac{L_i}{\tau} = \frac{0.314}{0.030} = 10.5$
+s.
+
+</details>
+
+<details>
+<summary>Question 4</summary>
+
+A 60 kg person stands at the edge of a rotating platform of mass 100 kg and radius 2.0 m, modeled as
+a uniform disc ($I = \frac{1}{2}mr^2$). The system rotates at 1.5 rad/s. The person walks to the
+center of the platform. What is the new angular speed?
+
+</details>
+
+<details>
+<summary>Answer 4</summary>
+
+$I_{\text{disc}} = \frac{1}{2}(100)(2.0)^2 = 200$ kg m$^2$.
+$I_{\text{person, initial}} = mr^2 = (60)(2.0)^2 = 240$ kg m$^2$. $I_{\text{person, final}} = 0$ (at
+the center, $r = 0$).
+
+$I_i = 200 + 240 = 440$ kg m$^2$, $\omega_i = 1.5$ rad/s. $I_f = 200 + 0 = 200$ kg m$^2$.
+
+Conservation: $I_i\omega_i = I_f\omega_f \implies (440)(1.5) = 200\omega_f$.
+$\omega_f = \frac{660}{200} = 3.3$ rad/s.
+
+</details>
+
+<details>
+<summary>Question 5</summary>
+
+A 3.0 kg block on a frictionless table is connected by a string over a pulley to a 2.0 kg block
+hanging vertically. The pulley has mass 0.50 kg and radius 0.10 m ($I = \frac{1}{2}mr^2$ for the
+pulley). a) Derive an expression for the acceleration of the system. b) Calculate the tension on
+each side of the pulley.
+
+</details>
+
+<details>
+<summary>Answer 5</summary>
+
+a) Let $T_1$ be the tension on the table side and $T_2$ on the hanging side. For $m_1$ (on table):
+$T_1 = m_1 a$ (Eq. 1). For $m_2$ (hanging): $m_2 g - T_2 = m_2 a$ (Eq. 2). For pulley:
+$(T_2 - T_1)R = I\alpha = (\frac{1}{2}m_p R^2)(a/R) = \frac{1}{2}m_p Ra$. So
+$T_2 - T_1 = \frac{1}{2}m_p a$ (Eq. 3).
+
+From Eq. 1 and Eq. 2: $T_2 = m_2(g - a)$ and $T_1 = m_1 a$. Substituting into Eq. 3:
+$m_2(g - a) - m_1 a = \frac{1}{2}m_p a$. $m_2 g = (m_1 + m_2 + \frac{1}{2}m_p) a$.
+$a = \frac{m_2 g}{m_1 + m_2 + \frac{1}{2}m_p} = \frac{(2.0)(9.8)}{3.0 + 2.0 + 0.25} = \frac{19.6}{5.25} = 3.73$
+m/s$^2$.
+
+b) $T_1 = m_1 a = (3.0)(3.73) = 11.2$ N. $T_2 = m_2(g - a) = (2.0)(9.8 - 3.73) = (2.0)(6.07) = 12.1$
+N.
+
+</details>
+
+<details>
+<summary>Question 6</summary>
+
+A solid sphere of mass $M$ and radius $R$ ($I = \frac{2}{5}MR^2$) rolls without slipping down an
+incline of angle $\theta$. Derive an expression for the linear acceleration of the sphere in terms
+of $g$ and $\theta$.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+Linear motion (down the incline): $Mg\sin\theta - f = Ma$ (Eq. 1). Rotational motion:
+$fR = I\alpha = (\frac{2}{5}MR^2)(a/R) = \frac{2}{5}MRa$ (Eq. 2). From Eq. 2: $f = \frac{2}{5}Ma$.
+Substitute into Eq. 1: $Mg\sin\theta - \frac{2}{5}Ma = Ma$. $Mg\sin\theta = \frac{7}{5}Ma$.
+$a = \frac{5}{7}g\sin\theta$.

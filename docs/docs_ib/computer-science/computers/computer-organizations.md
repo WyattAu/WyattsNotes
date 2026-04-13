@@ -464,3 +464,300 @@ Consider the following simple program stored in memory:
 > trace showing PC, MAR, MDR, CIR, and Accumulator at each instruction cycle (fetch-decode-execute)
 > is usually sufficient. However, understanding the full detail helps you explain what happens at
 > each stage.
+
+---
+
+## Cache Memory: Worked Example
+
+Cache memory is a small, fast memory located between the CPU and main memory (RAM). It stores
+frequently accessed data and instructions to reduce the average time to access memory.
+
+### Cache Hit and Cache Miss
+
+- **Cache hit:** The data or instruction the CPU needs is found in the cache. This is fast.
+- **Cache miss:** The data is not in the cache and must be fetched from main memory. This is slower.
+- **Hit rate:** The percentage of memory accesses that are cache hits.
+- **Miss rate:** $1 - \text{hit rate}$.
+
+### Worked Example: Cache Hit Rate Calculation
+
+**Problem:** A CPU makes 10,000 memory accesses. The cache has a hit time of 2 ns and the main
+memory has an access time of 50 ns. Out of the 10,000 accesses, 8,500 are cache hits and 1,500 are
+cache misses. Calculate: a) The hit rate. b) The average memory access time (AMAT). c) The total
+time for all 10,000 accesses if there were no cache.
+
+**Solution:**
+
+**a) Hit rate:**
+
+$$
+\text{Hit rate} = \frac{\text{Cache hits}}{\text{Total accesses}} = \frac{8500}{10000} = 0.85 = 85\%
+$$
+
+**b) Average Memory Access Time (AMAT):**
+
+$$
+\text{AMAT} = (\text{Hit rate} \times \text{Hit time}) + (\text{Miss rate} \times \text{Miss penalty})
+$$
+
+The miss penalty is the time to fetch from main memory: 50 ns.
+
+$$
+\text{AMAT} = (0.85 \times 2) + (0.15 \times 50) = 1.7 + 7.5 = 9.2 \text{ ns}
+$$
+
+**c) Without cache (all accesses from main memory):**
+
+$$
+\text{Total time} = 10000 \times 50 = 500,000 \text{ ns}
+$$
+
+**With cache:**
+
+$$
+\text{Total time} = 8500 \times 2 + 1500 \times 50 = 17000 + 75000 = 92,000 \text{ ns}
+$$
+
+The cache reduces total access time by approximately 82%.
+
+---
+
+## Pipelining
+
+Pipelining is a technique where multiple instructions are overlapped in execution, similar to an
+assembly line in a factory. Instead of waiting for one instruction to complete all stages before
+starting the next, each stage processes a different instruction simultaneously.
+
+### The Three-Stage Pipeline
+
+| Stage   | Description                                     |
+| :------ | :---------------------------------------------- |
+| Fetch   | Fetch the next instruction from memory          |
+| Decode  | Decode the instruction and read operands        |
+| Execute | Perform the operation and write back the result |
+
+### How It Works
+
+Without pipelining, executing 3 instructions takes 9 clock cycles (3 cycles each):
+
+```
+Clock:   1   2   3   4   5   6   7   8   9
+Inst 1:  F   D   E
+Inst 2:              F   D   E
+Inst 3:                          F   D   E
+```
+
+With pipelining, 3 instructions take only 5 clock cycles:
+
+```
+Clock:   1   2   3   4   5
+Inst 1:  F   D   E
+Inst 2:      F   D   E
+Inst 3:          F   D   E
+```
+
+The speedup is approximately equal to the number of pipeline stages (in the ideal case).
+
+### Pipeline Hazards
+
+A hazard is a situation that prevents the next instruction from executing in its designated clock
+cycle.
+
+| Hazard Type       | Cause                                                           | Solution                                    |
+| :---------------- | :-------------------------------------------------------------- | :------------------------------------------ |
+| Data hazard       | An instruction depends on the result of a previous instruction  | Forwarding, stalling (inserting bubbles)    |
+| Structural hazard | Two instructions need the same hardware resource simultaneously | Duplicate resources (e.g., separate caches) |
+| Control hazard    | A branch/jump changes the instruction flow                      | Branch prediction, delayed branching        |
+
+### Branch Prediction
+
+When the CPU encounters a conditional branch (e.g., `JUMP IF EQUAL`), it does not yet know whether
+the branch will be taken. Branch prediction attempts to guess the outcome:
+
+- **Static prediction:** Always predict "not taken" or always predict "taken."
+- **Dynamic prediction:** Uses history of previous branches to make more accurate predictions.
+  Modern CPUs achieve prediction accuracy above 95%.
+
+If the prediction is wrong, the pipeline must be flushed (partially completed instructions are
+discarded), which incurs a performance penalty.
+
+---
+
+## RISC vs CISC: Extended Comparison
+
+### Instruction Execution
+
+| Aspect            | RISC                                      | CISC                                       |
+| :---------------- | :---------------------------------------- | :----------------------------------------- |
+| Instruction count | More instructions per task (simpler each) | Fewer instructions per task (complex each) |
+| Clock speed       | Generally higher (simpler circuits)       | Generally lower (more complex circuits)    |
+| Code size         | Larger (more instructions needed)         | Smaller (each instruction does more)       |
+| Compiler design   | Simpler (uniform instruction format)      | More complex (variable formats)            |
+| Power consumption | Lower (simpler design)                    | Higher (more complex design)               |
+
+### Practical Examples
+
+- **RISC:** ARM processors dominate the mobile and embedded market. The ARM architecture is used in
+  virtually all smartphones, tablets, and many IoT devices. Apple's M-series chips (M1, M2) are
+  ARM-based RISC processors.
+- **CISC:** The x86 architecture (Intel Core, AMD Ryzen) dominates desktop and server markets. Most
+  personal computers run CISC processors.
+
+---
+
+## Common Pitfalls
+
+1. **Confusing registers.** The MAR stores an **address**, while the MDR stores the **data or
+   instruction** at that address. The CIR stores the **current instruction** being executed, not the
+   data.
+
+2. **PC increment timing.** The PC is incremented during the **fetch** stage, not after execution.
+   This means if a jump instruction is executed, the PC is overwritten with the jump address,
+   discarding the incremented value.
+
+3. **Cache vs RAM.** Cache is smaller, faster, and more expensive per byte than RAM. SRAM is used
+   for cache; DRAM is used for main memory. Do not confuse these.
+
+4. **Von Neumann bottleneck.** The bottleneck arises because data and instructions share a single
+   bus, not because of the CPU speed. The Harvard architecture avoids this by using separate buses.
+
+5. **Binary overflow.** In two's complement, overflow occurs when adding two positive numbers gives
+   a negative result, or adding two negative numbers gives a positive result. The carry bit alone
+   does not indicate overflow.
+
+6. **Pipelining is not always faster.** Pipeline hazards (data, structural, control) can reduce the
+   effective speedup. The theoretical maximum speedup equals the number of stages, but this is never
+   achieved in practice.
+
+---
+
+## Problem Set
+
+<details>
+<summary>Question 1</summary>
+
+A CPU uses a three-stage pipeline (Fetch, Decode, Execute). Each stage takes 1 clock cycle. How many
+clock cycles are required to execute: a) 1 instruction? b) 10 instructions? c) 100 instructions?
+
+</details>
+
+<details>
+<summary>Answer 1</summary>
+
+a) 1 instruction: 3 cycles (the pipeline must fill before the first instruction completes). b) 10
+instructions: $3 + (10 - 1) = 12$ cycles. After the first instruction, each additional instruction
+adds 1 cycle. c) 100 instructions: $3 + (100 - 1) = 102$ cycles.
+
+</details>
+
+<details>
+<summary>Question 2</summary>
+
+A computer has a two-level cache system. The L1 cache has a hit rate of 80% with an access time of 1
+ns. The L2 cache has a hit rate of 95% (of the remaining accesses) with an access time of 5 ns. Main
+memory has an access time of 100 ns. Calculate the average memory access time.
+
+</details>
+
+<details>
+<summary>Answer 2</summary>
+
+L1 hit: $0.80 \times 1 = 0.80$ ns. L1 miss rate: $0.20$. L2 hit rate of misses: $0.95$. L2 hit:
+$0.20 \times 0.95 \times (1 + 5) = 0.19 \times 6 = 1.14$ ns. L2 miss (goes to main memory):
+$0.20 \times 0.05 \times (1 + 5 + 100) = 0.01 \times 106 = 1.06$ ns.
+
+AMAT $= 0.80 + 1.14 + 1.06 = 3.00$ ns.
+
+</details>
+
+<details>
+<summary>Question 3</summary>
+
+Convert the following 8-bit two's complement binary numbers to decimal: a) `01011010` b) `10110100`
+c) `11111111`
+
+</details>
+
+<details>
+<summary>Answer 3</summary>
+
+a) `01011010`: Positive (MSB = 0). $64 + 16 + 8 + 2 = 90$. b) `10110100`: Negative (MSB = 1).
+Invert: `01001011`. Add 1: `01001100` $= 64 + 8 + 4 = 76$. So the value is $-76$. c) `11111111`:
+Negative (MSB = 1). Invert: `00000000`. Add 1: `00000001` $= 1$. So the value is $-1$.
+
+</details>
+
+<details>
+<summary>Question 4</summary>
+
+Explain the difference between the Von Neumann architecture and the Harvard architecture. In your
+answer, describe the Von Neumann bottleneck and explain how the Harvard architecture addresses it.
+
+</details>
+
+<details>
+<summary>Answer 4</summary>
+
+The Von Neumann architecture uses a single memory space for both data and instructions, connected to
+the CPU by a single bus. This means the CPU cannot read an instruction and read/write data
+simultaneously, creating the **Von Neumann bottleneck** — the bus becomes a performance limitation
+because it can only transfer one item at a time.
+
+The Harvard architecture uses **separate memory spaces** for data and instructions, each with its
+own bus. This allows the CPU to fetch the next instruction and read/write data at the same time,
+eliminating the bottleneck. The trade-off is increased hardware complexity and cost. Harvard
+architecture is commonly used in DSPs and embedded systems where performance is critical.
+
+</details>
+
+<details>
+<summary>Question 5</summary>
+
+A simplified CPU has the following registers: PC (initially 100), ACC (initially 0), MAR, MDR, and
+CIR. The following instructions are in memory:
+
+| Address | Instruction |
+| :------ | :---------- |
+| 100     | LOAD 150    |
+| 101     | SUB 151     |
+| 102     | STORE 152   |
+
+| Address | Value |
+| :------ | :---- |
+| 150     | 42    |
+| 151     | 17    |
+| 152     | ?     |
+
+Trace the fetch-decode-execute cycle for each instruction, showing the state of the PC, MAR, MDR,
+CIR, and ACC after each cycle. What is the final value stored at address 152?
+
+</details>
+
+<details>
+<summary>Answer 5</summary>
+
+**Instruction 1: LOAD 150**
+
+| Stage   | PC  | MAR | MDR      | CIR      | ACC |
+| :------ | :-- | :-- | :------- | :------- | :-- |
+| Fetch   | 101 | 100 | LOAD 150 | LOAD 150 | 0   |
+| Decode  | 101 | 100 | LOAD 150 | LOAD 150 | 0   |
+| Execute | 101 | 150 | 42       | LOAD 150 | 42  |
+
+**Instruction 2: SUB 151**
+
+| Stage   | PC  | MAR | MDR     | CIR     | ACC |
+| :------ | :-- | :-- | :------ | :------ | :-- |
+| Fetch   | 102 | 101 | SUB 151 | SUB 151 | 42  |
+| Decode  | 102 | 101 | SUB 151 | SUB 151 | 42  |
+| Execute | 102 | 151 | 17      | SUB 151 | 25  |
+
+**Instruction 3: STORE 152**
+
+| Stage   | PC  | MAR | MDR       | CIR       | ACC |
+| :------ | :-- | :-- | :-------- | :-------- | :-- |
+| Fetch   | 103 | 102 | STORE 152 | STORE 152 | 25  |
+| Decode  | 103 | 102 | STORE 152 | STORE 152 | 25  |
+| Execute | 103 | 152 | 25        | STORE 152 | 25  |
+
+Final value at address 152: **25** (which is $42 - 17$).

@@ -462,4 +462,277 @@ is approximately zero.
    farads (F), but practical values are in $\mu$F, nF, or pF. Be comfortable converting between SI
    prefixes.
 
-:::
+---
+
+## Worked Example: Magnetic Force on a Current-Carrying Wire
+
+**Problem:** A straight wire of length 0.50 m carrying a current of 3.0 A is placed in a uniform
+magnetic field of $B = 0.40$ T. The wire makes an angle of $60°$ with the field. Calculate the
+magnitude of the force on the wire.
+
+**Solution:**
+
+$$
+F = BIL\sin\theta = (0.40)(3.0)(0.50)\sin 60° = (0.60)(0.866) = 0.520 \text{ N}
+$$
+
+The direction is given by Fleming's Left-Hand Rule: first finger along $\bm{B}$, second finger along
+$I$, thumb gives the direction of $\bm{F}$.
+
+---
+
+## Worked Example: Parallel Plate Capacitor Design
+
+**Problem:** A parallel plate capacitor is to be designed with a capacitance of $100$ pF using
+plates of area $0.010$ m$^2$. a) What plate separation is required? b) If the capacitor is charged
+to 200 V, how much charge is stored? c) What is the energy stored?
+
+**Solution:**
+
+**a) Plate separation:**
+
+$$
+C = \frac{\epsilon_0 A}{d} \implies d = \frac{\epsilon_0 A}{C} = \frac{(8.85 \times 10^{-12})(0.010)}{100 \times 10^{-12}} = \frac{8.85 \times 10^{-14}}{10^{-10}} = 8.85 \times 10^{-4} \text{ m} = 0.885 \text{ mm}
+$$
+
+**b) Charge stored:**
+
+$$
+Q = CV = (100 \times 10^{-12})(200) = 2.0 \times 10^{-8} \text{ C} = 20 \text{ nC}
+$$
+
+**c) Energy stored:**
+
+$$
+W = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-12})(200)^2 = \frac{1}{2}(100 \times 10^{-12})(40000) = 2.0 \times 10^{-6} \text{ J} = 2.0 \text{ \mu J}
+$$
+
+---
+
+## Worked Example: Electric Field Lines and Equipotentials
+
+**Problem:** A positive point charge $Q = +5.0$ nC is placed at the origin. a) Calculate the
+electric field strength at a point 0.10 m from the charge along the x-axis. b) Calculate the
+electric potential at that point. c) A second charge $q = -2.0$ nC is placed at that point. What is
+the electric potential energy of the system?
+
+**Solution:**
+
+**a) Electric field strength:**
+
+$$
+E = \frac{kQ}{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{(0.10)^2} = \frac{44.95}{0.01} = 4.50 \times 10^3 \text{ V/m}
+$$
+
+Direction: radially outward from $Q$ (away from the positive charge).
+
+**b) Electric potential:**
+
+$$
+V_e = \frac{kQ}{r} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{0.10} = \frac{44.95}{0.10} = 450 \text{ V}
+$$
+
+**c) Electric potential energy:**
+
+$$
+U = qV_e = (-2.0 \times 10^{-9})(450) = -9.0 \times 10^{-7} \text{ J} = -900 \text{ nJ}
+$$
+
+The negative sign indicates the system is bound (attractive), which is expected for opposite
+charges.
+
+---
+
+## Gauss's Law (Qualitative Treatment)
+
+Gauss's Law provides a powerful way to calculate electric fields for symmetric charge distributions.
+It states:
+
+$$
+\Phi_E = \oiint_S \bm{E} \cdot d\bm{A} = \frac{Q_{\text{enclosed}}}{\epsilon_0}
+$$
+
+where $\Phi_E$ is the electric flux through a closed surface $S$, and $Q_{\text{enclosed}}$ is the
+total charge inside that surface.
+
+**Key implications:**
+
+- The electric flux through a closed surface depends only on the enclosed charge, not on the
+  distribution of charge outside the surface.
+- For a point charge, choosing a spherical Gaussian surface gives
+  $E = \frac{Q}{4\pi\epsilon_0 r^2}$.
+- For a charged conducting sphere, the electric field outside is the same as a point charge at the
+  center, and the field **inside** the conductor is zero (charges reside on the surface).
+- Between parallel plates, using a rectangular Gaussian surface shows that the field is uniform:
+  $E = \frac{\sigma}{\epsilon_0}$ where $\sigma$ is the surface charge density.
+
+**Exam tip:** For the IB, you need to understand Gauss's Law qualitatively. Be able to explain why
+the field inside a conductor is zero, and why the field outside a charged sphere behaves like a
+point charge.
+
+---
+
+## Common Pitfalls
+
+1. **Forgetting that electric potential is a scalar.** When calculating the total potential at a
+   point due to multiple charges, add the potentials algebraically (including signs). Do not use
+   vector addition.
+
+2. **Confusing electric potential energy and electric potential.** Potential energy $U$ depends on
+   both charges ($U = kq_1 q_2 / r$). Potential $V_e$ is the energy per unit charge
+   ($V_e = kQ / r$).
+
+3. **Using the wrong formula for the force between charges.** Coulomb's law gives the force between
+   **point** charges. For parallel plates, use $F = qE$ where $E = V/d$.
+
+4. **Ignoring the sign of the charge in electric field direction.** The electric field points away
+   from positive charges and toward negative charges. The force on a positive charge is in the
+   direction of $\bm{E}$; the force on a negative charge is opposite to $\bm{E}$.
+
+5. **Capacitance is a property of the geometry, not the charge or voltage.** Changing the charge on
+   a capacitor does not change its capacitance. $C = \epsilon_0 A / d$ depends only on plate area
+   and separation.
+
+6. **Magnetic force direction errors.** For a current-carrying wire, use Fleming's Left-Hand Rule.
+   For a moving charge, use the right-hand rule (and reverse for negative charges).
+
+---
+
+## Problem Set
+
+<details>
+<summary>Question 1</summary>
+
+Two point charges $q_1 = +4.0$ $\mu$C and $q_2 = -6.0$ $\mu$C are placed 30 cm apart in vacuum. a)
+Calculate the electric force between them. b) Is the force attractive or repulsive? Justify your
+answer.
+
+</details>
+
+<details>
+<summary>Answer 1</summary>
+
+a)
+$F = \frac{k|q_1||q_2|}{r^2} = \frac{(8.99 \times 10^9)(4.0 \times 10^{-6})(6.0 \times 10^{-6})}{(0.30)^2} = \frac{215.8}{0.09} = 2.40 \times 10^3$
+N $= 2.40$ kN.
+
+b) The force is **attractive** because the charges have opposite signs (one positive, one negative).
+Coulomb's law gives a negative value for the product $q_1 q_2$, indicating attraction.
+
+</details>
+
+<details>
+<summary>Question 2</summary>
+
+A parallel plate capacitor has plates of area $200$ cm$^2$ separated by $2.0$ mm. A potential
+difference of 500 V is applied. Calculate: a) The capacitance. b) The charge on each plate. c) The
+electric field strength between the plates. d) The energy stored.
+
+</details>
+
+<details>
+<summary>Answer 2</summary>
+
+a)
+$C = \frac{\epsilon_0 A}{d} = \frac{(8.85 \times 10^{-12})(200 \times 10^{-4})}{2.0 \times 10^{-3}} = \frac{1.77 \times 10^{-13}}{2.0 \times 10^{-3}} = 8.85 \times 10^{-11}$
+F $= 88.5$ pF.
+
+b) $Q = CV = (8.85 \times 10^{-11})(500) = 4.43 \times 10^{-8}$ C $= 44.3$ nC.
+
+c) $E = \frac{V}{d} = \frac{500}{2.0 \times 10^{-3}} = 2.5 \times 10^5$ V/m.
+
+d)
+$W = \frac{1}{2}CV^2 = \frac{1}{2}(8.85 \times 10^{-11})(500)^2 = \frac{1}{2}(8.85 \times 10^{-11})(250000) = 1.11 \times 10^{-5}$
+J $= 11.1$ $\mu$J.
+
+</details>
+
+<details>
+<summary>Question 3</summary>
+
+An electron is accelerated from rest through a potential difference of 1000 V. Calculate: a) The
+kinetic energy gained by the electron in electron-volts. b) The speed of the electron.
+
+</details>
+
+<details>
+<summary>Answer 3</summary>
+
+a) The kinetic energy gained equals the work done by the electric field: $E_k = qV = eV = 1000$ eV
+$= 1.60 \times 10^{-16}$ J.
+
+b)
+$E_k = \frac{1}{2}m_e v^2 \implies v = \sqrt{\frac{2E_k}{m_e}} = \sqrt{\frac{2(1.60 \times 10^{-16})}{9.11 \times 10^{-31}}} = \sqrt{3.51 \times 10^{14}} = 1.88 \times 10^7$
+m/s.
+
+</details>
+
+<details>
+<summary>Question 4</summary>
+
+A wire of length 0.30 m carries a current of 5.0 A perpendicular to a uniform magnetic field of
+$B = 0.60$ T. Calculate: a) The magnetic force on the wire. b) The minimum mass that this force
+could support against gravity ($g = 9.8$ m/s$^2$).
+
+</details>
+
+<details>
+<summary>Answer 4</summary>
+
+a) $F = BIL\sin 90° = (0.60)(5.0)(0.30)(1) = 0.90$ N.
+
+b) For the force to support a mass against gravity:
+$F = mg \implies m = \frac{F}{g} = \frac{0.90}{9.8} = 0.0918$ kg $= 91.8$ g.
+
+</details>
+
+<details>
+<summary>Question 5</summary>
+
+Two identical positive charges of $+2.0$ $\mu$C are placed on the x-axis at $x = -0.10$ m and
+$x = +0.10$ m. Calculate the electric field strength at the origin. Explain why the field at the
+origin is zero.
+
+</details>
+
+<details>
+<summary>Answer 5</summary>
+
+At the origin, the distance to each charge is $r = 0.10$ m.
+
+$E_1 = \frac{kq}{r^2} = \frac{(8.99 \times 10^9)(2.0 \times 10^{-6})}{(0.10)^2} = 1.80 \times 10^6$
+V/m (directed toward the negative x-direction, away from the charge at $x = +0.10$).
+
+$E_2 = \frac{kq}{r^2} = 1.80 \times 10^6$ V/m (directed toward the positive x-direction, away from
+the charge at $x = -0.10$).
+
+The total field is:
+$\bm{E}_{\text{total}} = \bm{E}_1 + \bm{E}_2 = -1.80 \times 10^6 + 1.80 \times 10^6 = 0$ V/m.
+
+The field is zero because the charges are equidistant from the origin, have equal magnitude, and the
+fields they produce point in exactly opposite directions, cancelling completely. This point is
+between the charges and is a point of zero field (but not zero potential).
+
+</details>
+
+<details>
+<summary>Question 6</summary>
+
+Explain why the electric field inside a charged conductor is zero, making reference to Gauss's Law.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+Inside a conductor in electrostatic equilibrium, all excess charge resides on the surface. Consider
+a Gaussian surface placed entirely inside the conductor. Since there is no charge enclosed by this
+surface ($Q_{\text{enclosed}} = 0$), Gauss's Law gives:
+
+$\Phi_E = \frac{Q_{\text{enclosed}}}{\epsilon_0} = 0$
+
+This means the net electric flux through the Gaussian surface is zero. The only way this can be true
+for an arbitrary Gaussian surface inside the conductor is if the electric field is zero everywhere
+inside. If there were a non-zero field, free electrons in the conductor would move in response,
+redistributing charge until the field becomes zero. This is the condition of electrostatic
+equilibrium.

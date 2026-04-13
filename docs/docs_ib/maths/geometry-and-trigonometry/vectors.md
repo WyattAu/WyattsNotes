@@ -433,20 +433,300 @@ $$
 (\bm{a} + t\bm{b} - \bm{p}) \cdot \bm{b} = 0 \implies t = \frac{(\bm{p} - \bm{a}) \cdot \bm{b}}{|\bm{b}|^2}
 $$
 
-## Summary Table
-
-| Operation               | Formula                                   | Result                              |
-| ----------------------- | ----------------------------------------- | ----------------------------------- | --- | ------- | ----------- | ------ | ----------- | ------ |
-| Dot product             | $\bm{a} \cdot \bm{b} =                    | \bm{a}                              |     | \bm{b}  | \cos\theta$ | Scalar |
-| Cross product           | $                                         | \bm{a} \times \bm{b}                | =   | \bm{a}  |             | \bm{b} | \sin\theta$ | Vector |
-| Angle between vectors   | $\cos\theta = \frac{\bm{a} \cdot \bm{b}}{ | \bm{a}                              |     | \bm{b}  | }$          | Angle  |
-| Distance point to plane | $D = \frac{                               | \bm{p} \cdot \hat{n} - d            | }{  | \hat{n} | }$          | Scalar |
-| Scalar triple product   | $V =                                      | \bm{a} \cdot (\bm{b} \times \bm{c}) | $   | Volume  |
-
 :::tip
 Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
 your answer by substituting the point back into both equations. Common errors include sign mistakes
 in the cross product and forgetting to take the absolute value in distance formulas.
 :::
 
-:::
+---
+
+## Worked Example 5: Finding the Equation of a Plane
+
+**Problem:** Find the Cartesian equation of the plane passing through the points $A(1, 2, -1)$,
+$B(3, 0, 1)$, and $C(0, 1, 3)$.
+
+**Solution:**
+
+Find two direction vectors in the plane:
+
+$$
+\overrightarrow{AB} = \begin{pmatrix} 2 \\ -2 \\ 2 \end{pmatrix}, \quad \overrightarrow{AC} = \begin{pmatrix} -1 \\ -1 \\ 4 \end{pmatrix}
+$$
+
+Find the normal vector using the cross product:
+
+$$
+\hat{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} (-2)(4) - (2)(-1) \\ (2)(-1) - (2)(4) \\ (2)(-1) - (-2)(-1) \end{pmatrix} = \begin{pmatrix} -8 + 2 \\ -2 - 8 \\ -2 - 2 \end{pmatrix} = \begin{pmatrix} -6 \\ -10 \\ -4 \end{pmatrix}
+$$
+
+Simplify by dividing by $-2$: $\hat{n} = \begin{pmatrix} 3 \\ 5 \\ 2 \end{pmatrix}$.
+
+Using point $A(1, 2, -1)$ and $\hat{n} \cdot \bm{r} = d$:
+
+$$
+d = (3)(1) + (5)(2) + (2)(-1) = 3 + 10 - 2 = 11
+$$
+
+The plane equation is: $3x + 5y + 2z = 11$.
+
+**Verification:** Check point $B$: $3(3) + 5(0) + 2(1) = 9 + 0 + 2 = 11$. Check point $C$:
+$3(0) + 5(1) + 2(3) = 0 + 5 + 6 = 11$.
+
+---
+
+## Worked Example 6: Angle Between Two Planes
+
+**Problem:** Find the acute angle between the planes $\Pi_1: 2x - y + 3z = 7$ and
+$\Pi_2: x + 4y - z = 3$.
+
+**Solution:**
+
+Extract the normal vectors:
+
+$$
+\hat{n}_1 = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}, \quad \hat{n}_2 = \begin{pmatrix} 1 \\ 4 \\ -1 \end{pmatrix}
+$$
+
+$$
+\hat{n}_1 \cdot \hat{n}_2 = (2)(1) + (-1)(4) + (3)(-1) = 2 - 4 - 3 = -5
+$$
+
+$$
+|\hat{n}_1| = \sqrt{4 + 1 + 9} = \sqrt{14}, \quad |\hat{n}_2| = \sqrt{1 + 16 + 1} = \sqrt{18} = 3\sqrt{2}
+$$
+
+$$
+\cos\theta = \frac{|\hat{n}_1 \cdot \hat{n}_2|}{|\hat{n}_1||\hat{n}_2|} = \frac{5}{\sqrt{14} \cdot 3\sqrt{2}} = \frac{5}{3\sqrt{28}} = \frac{5}{3 \times 5.292} = 0.315
+$$
+
+$$
+\theta = \arccos(0.315) \approx 71.6°
+$$
+
+---
+
+## Worked Example 7: Shortest Distance from Point to Plane
+
+**Problem:** Find the shortest distance from the point $P(3, -1, 2)$ to the plane $x - 2y + 2z = 5$.
+
+**Solution:**
+
+Normal vector $\hat{n} = \begin{pmatrix} 1 \\ -2 \\ 2 \end{pmatrix}$,
+$|\hat{n}| = \sqrt{1 + 4 + 4} = 3$.
+
+$$
+\bm{p} \cdot \hat{n} = (3)(1) + (-1)(-2) + (2)(2) = 3 + 2 + 4 = 9
+$$
+
+$$
+D = \frac{|\bm{p} \cdot \hat{n} - d|}{|\hat{n}|} = \frac{|9 - 5|}{3} = \frac{4}{3}
+$$
+
+---
+
+## Worked Example 8: Line of Intersection of Two Planes
+
+**Problem:** Find the vector equation of the line of intersection of the planes
+$\Pi_1: x + y - z = 4$ and $\Pi_2: 2x - y + z = 1$.
+
+**Solution:**
+
+The direction vector of the line is perpendicular to both normals:
+
+$$
+\bm{d} = \hat{n}_1 \times \hat{n}_2 = \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \times \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix} = \begin{pmatrix} (1)(1) - (-1)(-1) \\ (-1)(2) - (1)(1) \\ (1)(-1) - (1)(2) \end{pmatrix} = \begin{pmatrix} 0 \\ -3 \\ -3 \end{pmatrix}
+$$
+
+Simplify: $\bm{d} = \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}$.
+
+Find a point on the line by setting $z = 0$ and solving:
+
+$x + y = 4$ and $2x - y = 1$. Adding: $3x = 5 \implies x = \frac{5}{3}$. Then
+$y = 4 - \frac{5}{3} = \frac{7}{3}$.
+
+A point on the line is $\left(\frac{5}{3}, \frac{7}{3}, 0\right)$.
+
+The line of intersection is:
+
+$$
+\bm{r} = \begin{pmatrix} 5/3 \\ 7/3 \\ 0 \end{pmatrix} + t\begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
+$$
+
+---
+
+## Common Pitfalls
+
+1. **Confusing parametric and Cartesian forms.** In Cartesian form, each component is equated to a
+   parameter expression. Forgetting to set the ratios equal is a common error.
+
+2. **Sign errors in the cross product.** The cross product is anti-commutative:
+   $\bm{a} \times \bm{b} = -(\bm{b} \times \bm{a})$. Always double-check the order of vectors.
+
+3. **Forgetting the absolute value in distance formulas.** The distance from a point to a plane is
+   always non-negative: use $|\bm{p} \cdot \hat{n} - d|$.
+
+4. **Assuming a line intersects a plane.** Always check that $\bm{b} \cdot \hat{n} \neq 0$ before
+   solving. If $\bm{b} \cdot \hat{n} = 0$ and $\bm{a} \cdot \hat{n} = d$, the line lies in the
+   plane. If $\bm{b} \cdot \hat{n} = 0$ and $\bm{a} \cdot \hat{n} \neq d$, the line is parallel to
+   the plane.
+
+5. **Angle between line and plane vs angle between line and normal.** The angle $\alpha$ between a
+   line and a plane satisfies $\sin\alpha = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. The
+   angle between the line and the **normal** satisfies
+   $\cos\phi = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. Note that $\alpha + \phi = 90°$.
+
+6. **Assuming skew lines intersect.** Two lines in 3D are generally skew (neither parallel nor
+   intersecting). Always verify that a common solution exists for the parameters.
+
+---
+
+## Problem Set
+
+<details>
+<summary>Question 1</summary>
+
+Find the angle between the vectors $\bm{a} = \begin{pmatrix} 1 \\ 3 \\ -2 \end{pmatrix}$ and
+$\bm{b} = \begin{pmatrix} 4 \\ -1 \\ 1 \end{pmatrix}$.
+
+</details>
+
+<details>
+<summary>Answer 1</summary>
+
+$\bm{a} \cdot \bm{b} = (1)(4) + (3)(-1) + (-2)(1) = 4 - 3 - 2 = -1$.
+$|\bm{a}| = \sqrt{1 + 9 + 4} = \sqrt{14}$, $|\bm{b}| = \sqrt{16 + 1 + 1} = \sqrt{18} = 3\sqrt{2}$.
+$\cos\theta = \frac{-1}{3\sqrt{28}} = \frac{-1}{3 \times 5.292} = -0.0630$.
+$\theta = \arccos(-0.0630) \approx 93.6°$.
+
+</details>
+
+<details>
+<summary>Question 2</summary>
+
+Find the Cartesian equation of the plane containing the points $P(2, 1, 0)$, $Q(1, -1, 3)$, and
+$R(4, 0, -1)$.
+
+</details>
+
+<details>
+<summary>Answer 2</summary>
+
+$\overrightarrow{PQ} = \begin{pmatrix} -1 \\ -2 \\ 3 \end{pmatrix}$,
+$\overrightarrow{PR} = \begin{pmatrix} 2 \\ -1 \\ -1 \end{pmatrix}$.
+$\hat{n} = \overrightarrow{PQ} \times \overrightarrow{PR} = \begin{pmatrix} (-2)(-1) - (3)(-1) \\ (3)(2) - (-1)(-1) \\ (-1)(-1) - (-2)(2) \end{pmatrix} = \begin{pmatrix} 5 \\ 5 \\ 5 \end{pmatrix}$.
+Simplified normal: $\hat{n} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$.
+$d = (1)(2) + (1)(1) + (1)(0) = 3$. Plane equation: $x + y + z = 3$.
+
+</details>
+
+<details>
+<summary>Question 3</summary>
+
+Find the point of intersection of the line
+$\bm{r} = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix} + t\begin{pmatrix} 3 \\ 2 \\ -1 \end{pmatrix}$
+with the plane $2x - y + 2z = 8$.
+
+</details>
+
+<details>
+<summary>Answer 3</summary>
+
+Substitute into the plane equation: $2(1 + 3t) - (-1 + 2t) + 2(2 - t) = 8$.
+$2 + 6t + 1 - 2t + 4 - 2t = 8$. $7 + 2t = 8 \implies t = 0.5$. Point:
+$\begin{pmatrix} 1 + 1.5 \\ -1 + 1 \\ 2 - 0.5 \end{pmatrix} = \begin{pmatrix} 2.5 \\ 0 \\ 1.5 \end{pmatrix}$.
+Intersection: $(2.5, 0, 1.5)$.
+
+</details>
+
+<details>
+<summary>Question 4</summary>
+
+Find the acute angle between the planes $x + 2y - 2z = 1$ and $3x - y + z = 4$.
+
+</details>
+
+<details>
+<summary>Answer 4</summary>
+
+$\hat{n}_1 = \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}$,
+$\hat{n}_2 = \begin{pmatrix} 3 \\ -1 \\ 1 \end{pmatrix}$.
+$\hat{n}_1 \cdot \hat{n}_2 = 3 - 2 - 2 = -1$. $|\hat{n}_1| = \sqrt{1 + 4 + 4} = 3$,
+$|\hat{n}_2| = \sqrt{9 + 1 + 1} = \sqrt{11}$.
+$\cos\theta = \frac{|-1|}{3\sqrt{11}} = \frac{1}{9.95} = 0.1005$.
+$\theta = \arccos(0.1005) \approx 84.2°$.
+
+</details>
+
+<details>
+<summary>Question 5</summary>
+
+Find the shortest distance from the point $A(2, -3, 1)$ to the plane $2x + y - 2z = 6$.
+
+</details>
+
+<details>
+<summary>Answer 5</summary>
+
+$\hat{n} = \begin{pmatrix} 2 \\ 1 \\ -2 \end{pmatrix}$, $|\hat{n}| = \sqrt{4 + 1 + 4} = 3$.
+$\bm{p} \cdot \hat{n} = (2)(2) + (-3)(1) + (1)(-2) = 4 - 3 - 2 = -1$.
+$D = \frac{|-1 - 6|}{3} = \frac{7}{3}$.
+
+</details>
+
+<details>
+<summary>Question 6</summary>
+
+Find the shortest distance between the skew lines:
+$L_1: \bm{r} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} + s\begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}$
+and
+$L_2: \bm{r} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} + t\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+$\bm{a}_2 - \bm{a}_1 = \begin{pmatrix} 0 \\ -1 \\ 1 \end{pmatrix}$.
+$\bm{b}_1 \times \bm{b}_2 = \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix} \times \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} (0)(0) - (1)(1) \\ (1)(0) - (1)(0) \\ (1)(1) - (0)(0) \end{pmatrix} = \begin{pmatrix} -1 \\ 0 \\ 1 \end{pmatrix}$.
+$|\bm{b}_1 \times \bm{b}_2| = \sqrt{1 + 0 + 1} = \sqrt{2}$.
+$(\bm{a}_2 - \bm{a}_1) \cdot (\bm{b}_1 \times \bm{b}_2) = (0)(-1) + (-1)(0) + (1)(1) = 1$.
+$D = \frac{|1|}{\sqrt{2}} = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}$.
+
+</details>
+
+<details>
+<summary>Question 7</summary>
+
+Find the foot of the perpendicular from the point $P(4, 1, 3)$ to the line
+$\bm{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$.
+
+</details>
+
+<details>
+<summary>Answer 7</summary>
+
+$\bm{a} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}$,
+$\bm{b} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$,
+$\bm{p} = \begin{pmatrix} 4 \\ 1 \\ 3 \end{pmatrix}$.
+$\bm{p} - \bm{a} = \begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix}$.
+$(\bm{p} - \bm{a}) \cdot \bm{b} = 6 + 1 + 12 = 19$. $|\bm{b}|^2 = 4 + 1 + 9 = 14$.
+$t = \frac{19}{14}$. Foot:
+$\bm{F} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + \frac{19}{14}\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} 1 + 19/7 \\ 2 - 19/14 \\ -1 + 57/14 \end{pmatrix} = \begin{pmatrix} 26/7 \\ 9/14 \\ 43/14 \end{pmatrix}$.
+
+</details>
+
+<details>
+<summary>Question 8</summary>
+
+Show that the points $A(1, 2, 3)$, $B(3, 5, 7)$, and $C(5, 8, 11)$ are collinear.
+
+</details>
+
+<details>
+<summary>Answer 8</summary>
+
+$\overrightarrow{AB} = \begin{pmatrix} 2 \\ 3 \\ 4 \end{pmatrix}$,
+$\overrightarrow{AC} = \begin{pmatrix} 4 \\ 6 \\ 8 \end{pmatrix}$.
+$\overrightarrow{AC} = 2\overrightarrow{AB}$, so $\overrightarrow{AC} = k\overrightarrow{AB}$ with
+$k = 2$. Since one vector is a scalar multiple of the other, the points are collinear.
