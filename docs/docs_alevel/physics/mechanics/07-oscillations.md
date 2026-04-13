@@ -304,3 +304,254 @@ Explain why a heavily damped system does not exhibit resonance at its natural fr
 
 <b>If you get this wrong, revise:</b> [Damping](#7-damping) and [Resonance](#8-resonance)
 </details>
+
+## 9. Energy in SHM — Alternative Forms and Frequency Doubling
+
+### Spring Constant Form
+
+For a mass-spring system, the total energy can be written using the spring constant $k$:
+
+$$\boxed{E = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2 A^2}$$
+
+**Proof.** Since $\omega^2 = k/m$ for a mass-spring system: $\frac{1}{2}m\omega^2 A^2 = \frac{1}{2}m \cdot \frac{k}{m} \cdot A^2 = \frac{1}{2}kA^2$. $\square$
+
+**Intuition.** The total energy is set by the amplitude and the stiffness. A stiffer spring or larger amplitude stores more energy. The mass determines how energy is shared between KE and PE but does not affect the total.
+
+### KE and PE Oscillate at Twice the Displacement Frequency
+
+Substituting $x = A\cos(\omega t + \phi)$ into the energy expressions:
+
+$$E_k(t) = \frac{1}{2}m\omega^2(A^2 - x^2) = \frac{1}{2}m\omega^2 A^2 \sin^2(\omega t + \phi)$$
+
+$$E_p(t) = \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}m\omega^2 A^2 \cos^2(\omega t + \phi)$$
+
+Applying the double-angle identities $\sin^2\theta = \tfrac{1}{2}(1 - \cos 2\theta)$ and $\cos^2\theta = \tfrac{1}{2}(1 + \cos 2\theta)$:
+
+$$E_k(t) = \frac{1}{4}m\omega^2 A^2\bigl(1 - \cos(2\omega t + 2\phi)\bigr)$$
+
+$$E_p(t) = \frac{1}{4}m\omega^2 A^2\bigl(1 + \cos(2\omega t + 2\phi)\bigr)$$
+
+Both $E_k$ and $E_p$ vary sinusoidally with angular frequency $2\omega$ — twice the displacement frequency.
+
+**Key observations:**
+
+- $E_k$ is maximum when $x = 0$ (equilibrium position), where all energy is kinetic.
+- $E_p$ is maximum when $x = \pm A$ (turning points), where all energy is potential.
+- KE and PE are always in antiphase with each other.
+- At every instant, $E_k + E_p = \frac{1}{2}m\omega^2 A^2$ (constant).
+
+Consider an oscillator with $\omega = 4\pi$ rad s$^{-1}$ (displacement frequency $f = 2$ Hz, period $T = 0.5$ s). KE varies as $\cos(8\pi t)$, giving a frequency of $4$ Hz — exactly double. In one displacement cycle, KE reaches its maximum twice: once as the mass passes through equilibrium moving left, and once moving right.
+
+:::tip
+Exam Technique
+When asked to sketch $E_k$ and $E_p$ against time, draw two sinusoidal curves at twice the displacement frequency, exactly out of phase, oscillating between $0$ and $E_{\text{total}}$. Their sum is a horizontal line at $E_{\text{total}}$.
+:::
+
+## 10. Damping — Time Constant and Displacement-Time Graphs
+
+### The Damping Force
+
+A damped oscillator experiences a resistive force proportional to velocity:
+
+$$F_d = -bv$$
+
+where $b$ is the **damping coefficient** (units: kg s$^{-1}$). The negative sign indicates the force opposes the motion.
+
+The equation of motion becomes:
+
+$$m\ddot{x} + b\dot{x} + kx = 0$$
+
+### Light Damping — Exponential Decay of Amplitude
+
+For light damping ($b \lt 2\sqrt{km}$), the solution is:
+
+$$\boxed{x(t) = A_0 \, e^{-bt/(2m)} \cos(\omega' t + \phi)}$$
+
+where $\omega' = \sqrt{\omega_0^2 - b^2/(4m^2)}$ is the damped angular frequency, slightly less than the natural frequency $\omega_0 = \sqrt{k/m}$.
+
+The amplitude decays inside the exponential envelope:
+
+$$A(t) = A_0 \, e^{-t/\tau}$$
+
+where the **time constant** is:
+
+$$\boxed{\tau = \frac{2m}{b}}$$
+
+**Intuition.** The time constant is the time for the amplitude to fall to $1/e \approx 37\%$ of its initial value. After one time constant, $A = A_0/e$; after two, $A = A_0/e^2 \approx 14\%$; after three, $A = A_0/e^3 \approx 5\%$. A larger $b$ means faster energy dissipation (shorter $\tau$). A larger $m$ means more inertia (longer $\tau$).
+
+### Comparison of Damping Regimes
+
+| Damping | Condition | Behaviour |
+|---|---|---|
+| Light (underdamped) | $b \lt 2\sqrt{km}$ | Oscillates with exponentially decaying amplitude |
+| Critical | $b = 2\sqrt{km}$ | Fastest return to equilibrium without oscillation |
+| Heavy (overdamped) | $b \gt 2\sqrt{km}$ | No oscillation; returns to equilibrium more slowly than critical |
+
+**Displacement-time description.** For light damping, the graph shows a sinusoid shrinking inside an exponential envelope $A_0 e^{-t/\tau}$. The system crosses equilibrium many times. For critical damping, the displacement decreases smoothly to zero in the shortest possible time without overshooting. For heavy damping, the displacement also decreases smoothly to zero but takes longer than critical damping.
+
+### Energy Dissipation in Damped Oscillations
+
+The total mechanical energy of a lightly damped oscillator decays as:
+
+$$E(t) = E_0 \, e^{-t/\tau_E}$$
+
+where $\tau_E = \tau/2 = m/b$. Energy is lost twice as fast as the amplitude decays, since $E \propto A^2$.
+
+:::warning
+Common Pitfall
+Critical damping is the fastest return **without oscillation**, not the fastest overall. A lightly damped system passes through equilibrium sooner but overshoots. Heavy damping is slower than critical — adding more damping beyond the critical value makes the system **slower**, not faster.
+:::
+
+**Application.** Car shock absorbers are designed to be critically damped: after hitting a bump, the car body returns to equilibrium as quickly as possible without bouncing up and down.
+
+## 11. Forced Oscillations and Resonance — Detailed Treatment
+
+### Natural Frequency and Driving Frequency
+
+Every oscillating system has a **natural frequency** $f_0 = \omega_0/(2\pi)$ — the frequency at which it oscillates when free from external forces.
+
+When a periodic driving force $F = F_0\cos(\omega_d t)$ is applied at driving frequency $f_d = \omega_d/(2\pi)$, the system is compelled to oscillate at $f_d$.
+
+### Resonance
+
+**Definition.** **Resonance** occurs when the driving frequency equals the natural frequency: $f_d = f_0$. At resonance, the system absorbs maximum energy per cycle from the driving force and the amplitude reaches its maximum value.
+
+### Amplitude Response
+
+The steady-state amplitude of a driven, damped oscillator:
+
+$$A(f_d) = \frac{F_0 / m}{\sqrt{(\omega_0^2 - \omega_d^2)^2 + (b\omega_d/m)^2}}$$
+
+At resonance ($\omega_d = \omega_0$):
+
+$$A_{\max} = \frac{F_0}{b\omega_0}$$
+
+**Key features of the resonance curve:**
+
+- The peak amplitude occurs at $f_d \approx f_0$, shifting slightly below $f_0$ as damping increases.
+- Light damping produces a sharp, tall peak (high $Q$-factor).
+- Heavy damping produces a broad, low peak.
+- At resonance, the driving force is in phase with velocity ($90°$ ahead of displacement), maximising power transfer: $P = F \cdot v$.
+
+### Applications of Resonance
+
+**Musical instruments:** Wind instruments use resonating air columns; strings vibrate at natural frequencies (harmonics) to produce sustained, rich tones.
+
+**Tuning forks:** Striking a tuning fork at $f_0$ causes a second identical fork to vibrate sympathetically — a classic demonstration of resonance.
+
+**Tacoma Narrows Bridge (1940):** Wind-induced aeroelastic forces matched the bridge's natural torsional frequency, causing violent resonance and catastrophic collapse.
+
+**Microwave ovens:** Microwaves at 2.45 GHz resonate with the rotational frequency of water molecules, efficiently transferring energy and heating food.
+
+**MRI scanners:** Protons in body tissue resonate at specific radio frequencies in a strong magnetic field, enabling detailed internal imaging without ionising radiation.
+
+:::tip
+Exam Technique
+More damping $\to$ lower peak amplitude, broader resonance curve, peak shifts slightly below $f_0$. Less damping $\to$ higher, sharper peak closer to $f_0$. When sketching resonance curves for different damping levels, always label the natural frequency $f_0$ and show the amplitude axis clearly.
+:::
+
+## 12. Phasor Diagrams for SHM
+
+### What Is a Phasor?
+
+A **phasor** is a rotating vector whose projection onto a fixed axis gives the instantaneous value of a sinusoidal quantity. For SHM, a phasor of length $A$ rotates anticlockwise at angular speed $\omega$.
+
+### Constructing the Diagram
+
+Three phasors originate from the same point, all rotating at $\omega$:
+
+- **Displacement phasor** (length $A$): makes angle $\theta = \omega t + \phi$ with the horizontal. Its horizontal projection gives $x = A\cos(\omega t + \phi)$.
+- **Velocity phasor** (length $A\omega$): leads the displacement phasor by $90°$ (perpendicular, in the direction of rotation). Its horizontal projection gives $v = -A\omega\sin(\omega t + \phi)$.
+- **Acceleration phasor** (length $A\omega^2$): leads the displacement phasor by $180°$ (antiparallel). Its horizontal projection gives $a = -A\omega^2\cos(\omega t + \phi)$.
+
+### Phase Relationships
+
+| Quantity | Phase relative to $x$ | Relationship |
+|---|---|---|
+| Displacement $x$ | $0°$ | Reference |
+| Velocity $v$ | $+90°$ | $v$ leads $x$ by $\pi/2$ |
+| Acceleration $a$ | $+180°$ | $a$ leads $x$ by $\pi$ (antiphase) |
+
+**Equivalently:** displacement lags velocity by $90°$, and displacement lags acceleration by $180°$.
+
+**Intuition.** The phasor diagram makes phase relationships visually obvious. When the displacement phasor is horizontal (turning point, maximum $x$), the velocity phasor is vertical ($v = 0$) and the acceleration phasor points left ($a = -\omega^2 A$). When the displacement phasor is vertical (equilibrium, $x = 0$), the velocity phasor is horizontal ($v = \pm A\omega$) and the acceleration phasor is vertical ($a = 0$).
+
+### Adding Oscillations with Phasors
+
+When two SHM oscillations of the same frequency are combined, the resultant is also SHM with the same frequency. The resultant phasor is the **vector sum** of the individual phasors.
+
+For $x_1 = A_1\cos(\omega t)$ and $x_2 = A_2\cos(\omega t + \delta)$:
+
+$$\boxed{A_{\text{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta}}$$
+
+**Proof.** The cosine rule applied to the triangle formed by the two phasors and their resultant, with included angle $\delta$. $\square$
+
+The resultant phase is given by $\tan\phi_{\text{res}} = \frac{A_2 \sin\delta}{A_1 + A_2 \cos\delta}$.
+
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+
+<details>
+<summary>Problem 11</summary>
+A mass-spring system has $m = 0.25$ kg and $k = 100$ N m$^{-1}$, oscillating with amplitude $0.08$ m. Calculate: (a) the total energy using $E = \frac{1}{2}kA^2$, (b) the KE and PE when $x = 0.04$ m, (c) show that KE and PE each oscillate at twice the displacement frequency.
+
+**Answer.** (a) $E = \frac{1}{2}(100)(0.08)^2 = 0.320$ J.
+
+(b) $E_p = \frac{1}{2}(100)(0.04)^2 = 0.080$ J. $E_k = E - E_p = 0.320 - 0.080 = 0.240$ J.
+
+(c) $E_k(t) = \frac{1}{2}m\omega^2 A^2 \sin^2(\omega t) = \frac{E}{2}(1 - \cos 2\omega t)$. The argument $2\omega t$ means the angular frequency is $2\omega$, twice the displacement frequency $\omega$. Similarly $E_p(t) = \frac{E}{2}(1 + \cos 2\omega t)$. $\square$
+
+<b>If you get this wrong, revise:</b> [Energy in SHM — Alternative Forms and Frequency Doubling](#9-energy-in-shm--alternative-forms-and-frequency-doubling)
+</details>
+
+<details>
+<summary>Problem 12</summary>
+A damped oscillator has $m = 0.50$ kg and $b = 0.80$ kg s$^{-1}$. Calculate: (a) the time constant, (b) the fraction of initial amplitude remaining after 3.0 s, (c) the time for amplitude to fall to 10% of its initial value.
+
+**Answer.** (a) $\tau = 2m/b = 2(0.50)/0.80 = 1.25$ s.
+
+(b) $A(3.0)/A_0 = e^{-3.0/1.25} = e^{-2.4} = 0.0907$, so approximately 9.1%.
+
+(c) $0.10 = e^{-t/1.25} \implies t = -1.25 \ln(0.10) = 1.25 \times 2.303 = 2.88$ s.
+
+<b>If you get this wrong, revise:</b> [Damping — Time Constant and Displacement-Time Graphs](#10-damping--time-constant-and-displacement-time-graphs)
+</details>
+
+<details>
+<summary>Problem 13</summary>
+A system has natural frequency 440 Hz and is lightly damped. It is driven at: (a) 220 Hz, (b) 440 Hz, (c) 880 Hz. Rank the amplitudes from largest to smallest and explain your reasoning.
+
+**Answer.** Largest at 440 Hz: this is resonance ($f_d = f_0$), so the amplitude peaks. The amplitudes at 220 Hz and 880 Hz are both smaller. On a linear frequency scale, 220 Hz is 220 Hz below resonance and 880 Hz is 440 Hz above, so the response at 220 Hz is larger than at 880 Hz. Ranking: 440 Hz (largest) &gt; 220 Hz &gt; 880 Hz (smallest).
+
+<b>If you get this wrong, revise:</b> [Forced Oscillations and Resonance — Detailed Treatment](#11-forced-oscillations-and-resonance--detailed-treatment)
+</details>
+
+<details>
+<summary>Problem 14</summary>
+Two SHM oscillations of the same frequency have amplitudes 3.0 cm and 4.0 cm, with a phase difference of $60°$. Find the amplitude of the resultant oscillation using the phasor method.
+
+**Answer.** $A_{\text{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta} = \sqrt{9 + 16 + 2(3)(4)\cos 60°} = \sqrt{25 + 12} = \sqrt{37} = 6.08$ cm.
+
+<b>If you get this wrong, revise:</b> [Phasor Diagrams for SHM](#12-phasor-diagrams-for-shm)
+</details>
+
+<details>
+<summary>Problem 15</summary>
+A 200 g mass on a spring ($k = 50$ N m$^{-1}$) oscillates with amplitude 5.0 cm. A damping force with $b = 0.20$ kg s$^{-1}$ is present. Calculate: (a) the time constant, (b) the total energy at $t = 0$, (c) the total energy at $t = 2\tau$.
+
+**Answer.** (a) $\tau = 2m/b = 2(0.200)/0.20 = 2.00$ s.
+
+(b) $E_0 = \frac{1}{2}kA^2 = \frac{1}{2}(50)(0.05)^2 = 0.0625$ J.
+
+(c) Since $E \propto A^2 \propto e^{-2t/\tau}$: $E(2\tau) = E_0 \, e^{-4} = 0.0625 \times 0.0183 = 1.14 \times 10^{-3}$ J.
+
+<b>If you get this wrong, revise:</b> [Damping — Time Constant and Displacement-Time Graphs](#10-damping--time-constant-and-displacement-time-graphs)
+</details>
+
+<details>
+<summary>Problem 16</summary>
+Using a phasor diagram, explain why the velocity of an SHM oscillator is zero at the turning points and maximum at the equilibrium position.
+
+**Answer.** The velocity phasor (length $A\omega$) leads the displacement phasor by $90°$. The horizontal projection of the velocity phasor gives the instantaneous velocity. When the displacement phasor is horizontal (turning points, $x = \pm A$), the velocity phasor is vertical, giving a horizontal projection of zero ($v = 0$). When the displacement phasor is vertical (equilibrium, $x = 0$), the velocity phasor is horizontal, giving a maximum projection of $\pm A\omega$. $\square$
+
+<b>If you get this wrong, revise:</b> [Phasor Diagrams for SHM](#12-phasor-diagrams-for-shm)
+</details>
