@@ -118,7 +118,7 @@ glibc's `ptmalloc` (derived from dlmalloc) is the default allocator on most Linu
 organizes free chunks into bins:
 
 **Fast Bins:** Small chunks (up to 128 bytes) stored in singly-linked lists per size class.
-Allocation and deallocation are O(1) — just pop/push from the list.
+Allocation and deallocation are O(1) --- just pop/push from the list.
 
 **Unsorted Bin:** A catch-all bin for recently freed chunks. When a chunk is freed, it goes here
 first. On the next allocation, the allocator checks this bin and may move chunks to small or large
@@ -131,11 +131,11 @@ bins.
 **Chunk Layout:**
 
 ```
-┌──────────┬──────────┬───────────────────────────────┬──────────┐
-│ prev_size│   size   │        user data              │  (next)  │
-│ (8 bytes)│ (8 bytes)│       (requested bytes)       │          │
-└──────────┴──────────┴───────────────────────────────┴──────────┘
-                                           ↑ malloc returns this pointer
++----------+----------+-------------------------------+----------+
+| prev_size|   size   |        user data              |  (next)  |
+| (8 bytes)| (8 bytes)|       (requested bytes)       |          |
++----------+----------+-------------------------------+----------+
+                                           ^ malloc returns this pointer
 ```
 
 The minimum chunk size is 32 bytes (on 64-bit systems) due to the 16-byte header and alignment
@@ -168,7 +168,7 @@ Understanding when to use stack vs heap allocation is critical for performance a
 | Speed          | ~1 cycle (pointer bump)       | ~100-1000 cycles (search, bookkeeping)   |
 | Size limit     | Small (typically 1-8 MB)      | Large (limited by virtual address space) |
 | Lifetime       | Automatic (scope-based)       | Manual (delete/free or smart pointers)   |
-| Thread safety  | Each thread has its own stack | Shared heap — requires synchronization   |
+| Thread safety  | Each thread has its own stack | Shared heap --- requires synchronization |
 | Fragmentation  | None (LIFO deallocation)      | Both internal and external               |
 | Cache locality | Excellent (contiguous)        | Variable (depends on allocation pattern) |
 
@@ -258,11 +258,178 @@ void arena_demo() {
 }
 ```
 
-**Benefits:** O(1) allocation, zero fragmentation, no per-allocation overhead. Used in game engines,
-parsers, and high-frequency trading systems. C++17's `std::pmr::monotonic_buffer_resource` provides
-a standard arena allocator.
+**Benefits:** $O(1)$ allocation, zero fragmentation, no per-allocation overhead. Used in game
+engines, parsers, and high-frequency trading systems. C++17's `std::pmr::monotonic_buffer_resource`
+provides a standard arena allocator.
 
-## 8. `malloc`/`free` Overhead Comparison
+## 8. Pool Allocation Pattern
+
+Pool allocators pre-allocate fixed-size blocks and serve allocations from a free list. This
+eliminates external fragmentation for objects of a known size and provides $O(1)$ allocation:
+
+```cpp
+#include <cstddef>
+#include <vector>
+#include <cstdint>
+#include <iostream>
+#include <cassert>
+
+template <std::size_t BlockSize, std::size_t BlockCount>
+class PoolAllocator {
+    struct Block {
+        alignas(std::max_align_t) std::byte storage[BlockSize];
+        Block* next_free = nullptr;
+    };
+
+    std::vector<Block> blocks_;
+    Block* free_list_ = nullptr;
+
+public:
+    PoolAllocator() : blocks_(BlockCount) {
+        for (std::size_t i = 0; i < BlockCount; ++i) {
+            blocks_[i].next_free = (i + 1 < BlockCount) ? &blocks_[i + 1] : nullptr;
+        }
+        free_list_ = &blocks_[0];
+    }
+
+    void* allocate() {
+        if (!free_list_) return nullptr;
+        Block* block = free_list_;
+        free_list_ = block->next_free;
+        return static_cast<void*>(block->storage);
+    }
+
+    void deallocate(void* ptr) {
+        auto* block = reinterpret_cast<Block*>(
+            static_cast<std::byte*>(ptr) - offsetof(Block, storage));
+        block->next_free = free_list_;
+        free_list_ = block;
+    }
+
+    std::size_t available() const {
+        std::size_t count = 0;
+        for (auto* p = free_list_; p; p = p->next_free) ++count;
+        return count;
+    }
+};
+
+void pool_demo() {
+    PoolAllocator<64, 1000> pool;
+
+    void* a = pool.allocate();
+    void* b = pool.allocate();
+    void* c = pool.allocate();
+
+    std::cout << "Allocated 3 blocks, available: " << pool.available() << "\n";
+
+    pool.deallocate(b);
+    std::cout << "Freed 1 block, available: " << pool.available() << "\n";
+}
+```
+
+## 9. The C++ Allocator Interface [N4950 S9.4]
+
+C++ standard containers parameterize their memory management through the **Allocator** concept
+[N4950 §9.4]. An allocator is a class type that provides `allocate`, `deallocate`, `construct`, and
+`destroy` member functions. The standard provides `std::allocator<T>` as the default.
+
+### Proof of Allocator Requirements
+
+**Theorem.** A type `A` satisfies the `Allocator` concept for type `T` if and only if it provides
+the following member types and functions, with the specified semantics [N4950 §9.4.2]:
+
+**Proof (by enumeration of requirements).** We verify each requirement from [N4950 §9.4.2.1]:
+
+1. **`value_type`**: Must be an alias for `T`. This allows containers to obtain the element type
+   from the allocator.
+
+2. **`A::allocate(n)`**: Must return a pointer to storage for `n` objects of type `T`. The storage
+   must be aligned for `T` (at least `alignof(T)`). The storage is uninitialized --- no constructors
+   are called.
+
+3. **`A::deallocate(p, n)`**: Must deallocate storage previously returned by `allocate`. The pointer
+   `p` must have been returned from `allocate` with the same `n`. After deallocation, `p` is
+   invalid.
+
+4. **`A::construct(ptr, args...)`** (deprecated in C++20): Constructs a `T` at `ptr` using placement
+   new. In C++20, containers use `std::allocator_traits<A>::construct(a, p, args...)` which defaults
+   to `::new(static_cast<void*>(p)) T(std::forward<Args>(args)...)`.
+
+5. **`A::destroy(ptr)`** (deprecated in C++20): Calls `ptr->~T()`. In C++20, containers use
+   `std::allocator_traits<A>::destroy(a, p)`.
+
+6. **Equality**: `a1 == a2` returns `true` if memory allocated by `a1` can be deallocated by `a2`.
+   For stateless allocators (like `std::allocator`), this is always `true`. For stateful allocators
+   (like PMR allocators), this is `true` only if they share the same resource.
+
+7. **Propagation traits**: `propagate_on_container_copy_assignment`,
+   `propagate_on_container_move_assignment`, `propagate_on_container_swap`, and `is_always_equal`
+   control how allocators are transferred when containers are copied, moved, or swapped. These are
+   critical for correctness with stateful allocators. QED.
+
+### Custom Allocator for Standard Containers
+
+```cpp
+#include <cstddef>
+#include <cstdint>
+#include <memory>
+#include <vector>
+#include <iostream>
+
+template <typename T>
+class TrackingAllocator {
+public:
+    using value_type = T;
+
+    TrackingAllocator() = default;
+
+    template <typename U>
+    TrackingAllocator(const TrackingAllocator<U>&) noexcept {}
+
+    T* allocate(std::size_t n) {
+        std::cout << "  Allocating " << n * sizeof(T) << " bytes\n";
+        auto* p = static_cast<T*>(::operator new(n * sizeof(T)));
+        return p;
+    }
+
+    void deallocate(T* p, std::size_t) noexcept {
+        std::cout << "  Deallocating\n";
+        ::operator delete(p);
+    }
+
+    template <typename U>
+    bool operator==(const TrackingAllocator<U>&) const noexcept { return true; }
+};
+
+void tracking_demo() {
+    std::vector<int, TrackingAllocator<int>> v;
+
+    std::cout << "push_back 1:\n";
+    v.push_back(1);
+
+    std::cout << "push_back 2:\n";
+    v.push_back(2);
+
+    std::cout << "reserve(100):\n";
+    v.reserve(100);
+
+    std::cout << "Vector size=" << v.size() << " capacity=" << v.capacity() << "\n";
+}
+```
+
+### Comparison of Allocation Strategies
+
+| Strategy      | Allocation Cost | Deallocation Cost | Fragmentation       | Use Case                           |
+| ------------- | --------------- | ----------------- | ------------------- | ---------------------------------- |
+| `malloc`      | ~50-500 ns      | ~30-200 ns        | External + Internal | General purpose                    |
+| Arena         | ~1-5 ns         | 0 (bulk free)     | None                | Parsing, compilation, game frames  |
+| Pool          | ~5-20 ns        | ~5-20 ns          | None (per size)     | Fixed-size objects (nodes, events) |
+| Stack         | ~1 ns           | ~1 ns             | None                | Small, scope-bound objects         |
+| Slab          | ~5-10 ns        | ~5-10 ns          | Minimal             | Kernel objects, cache-line sized   |
+| PMR monotonic | ~1-5 ns         | 0 (bulk free)     | None                | C++17 standard arena               |
+| PMR pool      | ~5-20 ns        | ~5-20 ns          | None (per size)     | C++17 standard pool                |
+
+## 10. `malloc`/`free` Overhead Comparison
 
 | Operation            | Approximate Cost (x86_64) | Notes                            |
 | -------------------- | ------------------------- | -------------------------------- |
@@ -276,7 +443,7 @@ a standard arena allocator.
 These numbers are approximate and vary by platform, allocator implementation, allocation size, and
 fragmentation state.
 
-## 9. Inspection and Verification
+## 11. Inspection and Verification
 
 To visualize the interaction between C++ code and Kernel memory managers, use system tracing tools.
 
@@ -329,7 +496,7 @@ On Windows, `strace` does not exist. Use **VMMap** from Sysinternals.
   </TabItem>
 </Tabs>
 
-## 10. Heap Profiling with Valgrind Massif
+## 12. Heap Profiling with Valgrind Massif
 
 Valgrind Massif is a heap profiler that tracks memory usage over time, helping identify leaks and
 excessive allocations:
@@ -352,7 +519,7 @@ It is invaluable for finding:
 - **Peak usage** (maximum heap consumption during execution)
 - **Allocation hotspots** (which code paths allocate the most)
 
-## 11. AddressSanitizer for Heap Issues
+## 13. AddressSanitizer for Heap Issues
 
 AddressSanitizer (ASan) is a compiler instrumentation tool that catches heap errors at runtime with
 minimal overhead (~2x slowdown):
@@ -390,7 +557,36 @@ void asan_examples() {
 }
 ```
 
-## 12. C++23 Optimization: `std::pmr`
+### Alignment Requirements and `alignas`
+
+Every type `T` has an alignment requirement `alignof(T)` [N4950 §6.6.5]. The allocator must return
+memory aligned to at least this value. Over-aligned types (e.g., SIMD vectors with `alignas(32)`)
+require special handling because `operator new` only guarantees `alignof(std::max_align_t)` (16 on
+x86_64):
+
+```cpp
+#include <cstdint>
+#include <iostream>
+
+struct alignas(32) SimdVec {
+    float data[8];  // 32 bytes, aligned to 32-byte boundary
+};
+
+int main() {
+    std::cout << "alignof(SimdVec) = " << alignof(SimdVec) << "\n";
+    std::cout << "alignof(std::max_align_t) = " << alignof(std::max_align_t) << "\n";
+
+    // Default new may NOT satisfy alignof(SimdVec) == 32
+    // Use aligned new (C++17) for over-aligned types [N4950 §6.6.3]:
+    SimdVec* p = static_cast<SimdVec*>(::operator new(sizeof(SimdVec), std::align_val_t{32}));
+    std::cout << "p is 32-byte aligned: "
+              << (reinterpret_cast<uintptr_t>(p) % 32 == 0) << "\n";
+
+    ::operator delete(p, std::align_val_t{32});
+}
+```
+
+## 14. C++23 Optimization: `std::pmr`
 
 The complexity of the general-purpose allocator is why C++17/20/23 emphasizes **Polymorphic Memory
 Resources (`std::pmr`)**.
@@ -422,8 +618,106 @@ Resources (`std::pmr`)**.
 5. **Premature optimization with custom allocators.** The default allocator is highly optimized for
    general use. Only switch to a custom allocator after profiling shows it is a bottleneck.
 
+6. **Forgetting alignment with custom allocators.** A custom `allocate()` must return memory aligned
+   to at least `alignof(T)`. Returning misaligned memory causes undefined behavior on architectures
+   that require aligned access (most ARM processors) and degrades performance on x86 due to
+   unaligned load penalties.
+
+7. **Allocator propagation bugs with stateful allocators.** When a container uses a stateful
+   allocator (e.g., PMR), copy assignment, move assignment, and swap must handle the allocator
+   correctly. The propagation traits (`propagate_on_container_copy_assignment`, etc.) determine
+   whether the allocator is copied, moved, or swapped with the container. Getting these wrong causes
+   containers to deallocate memory with the wrong allocator.
+
+8. **Small buffer optimization in allocators.** Many standard library implementations of
+   `std::string` and `std::function` use small buffer optimization (SBO) to avoid heap allocation
+   for small objects. Custom allocators that track allocations may not see these SBO allocations,
+   leading to confusing accounting. The SBO buffer is part of the object itself, not heap-allocated.
+
+9. **Thread safety of `malloc`/`free`.** The C standard guarantees that `malloc` and `free` are
+   thread-safe [C11 §7.22.1]. However, the global heap lock is a significant contention point in
+   multi-threaded applications. Arena and pool allocators reduce contention by giving each thread
+   its own allocation context.
+
+### Memory-Mapped Files and `mmap` for Large Data
+
+For very large datasets (gigabytes), memory-mapped files provide an alternative to `malloc` +
+`read`. `mmap` maps a file directly into virtual address space, letting the OS handle paging:
+
+```cpp
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <iostream>
+#include <cstdint>
+
+void mmap_demo(const char* path) {
+    int fd = open(path, O_RDONLY);
+    if (fd < 0) return;
+
+    struct stat sb;
+    fstat(fd, &sb);
+
+    void* addr = mmap(nullptr, static_cast<std::size_t>(sb.st_size),
+                       PROT_READ, MAP_PRIVATE, fd, 0);
+    if (addr == MAP_FAILED) { close(fd); return; }
+
+    // Access file contents as memory — no explicit read() needed
+    auto* data = static_cast<const std::byte*>(addr);
+    std::cout << "Mapped " << sb.st_size << " bytes\n";
+
+    // The OS pages in data on demand; pages not accessed consume no physical RAM
+    munmap(addr, static_cast<std::size_t>(sb.st_size));
+    close(fd);
+}
+```
+
+Advantages: no copy from kernel space to user space, on-demand paging, shared between processes.
+Disadvantages: page fault latency on first access, limited to file sizes, no portable C++ API
+(POSIX-only).
+
+### NUMA Awareness and Heap Performance
+
+On NUMA (Non-Uniform Memory Access) systems, memory access latency depends on which CPU socket owns
+the physical RAM. A `malloc` call may allocate memory on a remote NUMA node, causing 2-3x higher
+latency for every access. Production systems handling high-throughput workloads (databases, message
+brokers) use NUMA-aware allocation:
+
+- `numa_alloc_onnode()` allocates memory on a specific NUMA node.
+- Thread pools pin threads to specific NUMA nodes.
+- `std::pmr` resources can be configured per thread to allocate from node-local memory.
+
+### Debugging Heap Corruption
+
+Heap corruption is insidious because the crash often occurs far from the root cause. Common causes:
+
+1. **Buffer overflow:** Writing past the end of a `malloc`'d block overwrites the next chunk's
+   metadata (size, flags), causing the allocator to behave erratically on the next allocation or
+   free.
+
+2. **Double free:** Freeing a block twice corrupts the free list. The second `free` may merge the
+   already-freed block with adjacent free blocks, creating overlapping allocations.
+
+3. **Use-after-free:** Accessing freed memory. If the block has been recycled for a new allocation,
+   the data is silently corrupted. If not recycled, the data may appear valid but will eventually be
+   reclaimed.
+
+4. **Mismatched allocator:** Calling `free()` on a pointer returned by `new`, or `delete` on a
+   pointer returned by `malloc`.
+
+Detection tools:
+
+| Tool                  | What It Detects                       | Overhead | Platform              |
+| --------------------- | ------------------------------------- | -------- | --------------------- |
+| AddressSanitizer      | Overflow, use-after-free, double-free | ~2x      | Linux, macOS, Windows |
+| Valgrind Memcheck     | All memory errors                     | 10-50x   | Linux                 |
+| Valgrind Massif       | Memory leaks, peak usage              | 10-20x   | Linux                 |
+| glibc `MALLOC_CHECK_` | Heap corruption (basic)               | Minimal  | Linux                 |
+
 ## See Also
 
 - [The Stack](./4_stack.md)
 - [Pointers](../2_pointers_references_views/1_pointers.md)
 - [Unique Ownership (std::unique_ptr) and EBO](../../4_resource_management/1_ownership_and_raii/2_unique_ptr.md)
+- [Polymorphic Memory Resources (PMR)](../../8_standard_library/1_containers_and_allocators/4_pmr.md)

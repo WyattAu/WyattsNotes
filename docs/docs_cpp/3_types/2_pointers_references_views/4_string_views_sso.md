@@ -68,20 +68,38 @@ The `std::string` object contains a union-like internal buffer. When the string 
 threshold, the data is stored directly in this buffer. When the string grows beyond the threshold,
 the buffer is repurposed to hold the heap pointer and metadata.
 
-```cpp
-// Conceptual layout (libstdc++, 64-bit):
-//
-// Short mode (len <= 15):
-//   [ byte 0: 16 - length | bytes 1-15: char data ]
-//   The length is encoded in the first byte as (16 - actual_length).
-//   The null terminator is placed at position (length + 1).
-//
-// Long mode (len > 15):
-//   [ char* pointer (8 bytes) | size_t length (8 bytes) | size_t capacity (8 bytes) ]
-//   Byte 0 is zero (distinguishing flag).
+### SSO Layout Diagram
+
+```
+libstdc++ (64-bit, 32 bytes total):
+
+Short mode (length <= 15):
++-----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| 0x0F| c0 | c1 | c2 | c3 | c4 | c5 | c6 | c7 | c8 | c9 | c10| c11| c12| c13| c14| \0|
++-----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+  ^     |<------------------- 15 bytes of data ---------------------->|
+  |     Length = 0x0F - first_byte (encoded as 16 - length)
+  First byte LSB = 1 indicates short mode
+
+Long mode (length > 15):
++-------------------+-------------------+-------------------+-------------------+
+| char* data        | size_t length     | size_t capacity   | (unused)          |
+| 8 bytes           | 8 bytes           | 8 bytes           | 8 bytes           |
++-------------------+-------------------+-------------------+-------------------+
+  First byte = 0 indicates long mode
 ```
 
+The discriminator is the least significant bit of the first byte: if it is 1, the string is in short
+mode. If it is 0, the string is in long mode. This works because on x86_64, heap pointers are always
+aligned to at least 16 bytes, so the LSB of a valid pointer is always 0.
+
 ### SSO Thresholds by Implementation
+
+| Implementation  | Object Size (64-bit) | SSO Threshold | Detection Method         |
+| :-------------- | :------------------- | :------------ | :----------------------- |
+| libstdc++ (GCC) | 32 bytes             | 15 chars      | First byte LSB = 1       |
+| libc++ (Clang)  | 24 bytes             | 22 chars      | Size stored in last byte |
+| MSVC STL        | 32 bytes             | 15 chars      | Capacity bit in union    |
 
 <Tabs>
 <TabItem value="libstdcxx" label="libstdc++ (GCC)" default>
@@ -116,7 +134,36 @@ std::string d(100, 'x');         // Explicit construction, heap alloc
 **Key insight:** The SSO threshold is a property of the standard library implementation, not the
 language. Code that depends on a specific threshold is non-portable.
 
-## 3. `std::string_view`: Non-owning Reference
+### SSO and `std::string` Capacity
+
+The capacity of an SSO-stored string is always the SSO threshold minus 1 (to leave room for the null
+terminator). For libstdc++, a default-constructed string has `capacity() == 15` and can hold up to
+15 characters without heap allocation. Calling `reserve(100)` forces a heap allocation regardless of
+the current string length.
+
+```cpp
+#include <string>
+#include <iostream>
+
+int main() {
+    std::string s;  // default-constructed
+    std::cout << "default capacity: " << s.capacity() << "\n";  // 15 (libstdc++)
+
+    s = "hello";
+    std::cout << "after 'hello' capacity: " << s.capacity() << "\n";  // 15 (still SSO)
+
+    s = "a string that exceeds the SSO threshold!!";
+    std::cout << "after long string capacity: " << s.capacity() << "\n";  // >= 47 (heap)
+
+    s.clear();  // Does NOT return to SSO mode
+    std::cout << "after clear capacity: " << s.capacity() << "\n";  // still >= 47
+
+    s.shrink_to_fit();  // Non-binding: may or may not release heap allocation
+    std::cout << "after shrink_to_fit capacity: " << s.capacity() << "\n";
+}
+```
+
+## 3. `std::string_view`: Non-owning Reference [N4950 S22.3]
 
 `std::string_view` (C++17, `<string_view>`) is a non-owning view over a contiguous sequence of
 characters. It is to `std::string` what `std::span` is to `std::vector`.
@@ -180,7 +227,31 @@ This is the primary performance advantage over `std::string::substr`, which retu
 ## 4. Lifetime Dangers: Dangling References
 
 `std::string_view` does not extend the lifetime of the underlying data. If the source is destroyed,
-the view becomes dangling. Accessing a dangling `string_view` is **Undefined Behavior**.
+the view becomes dangling. Accessing a dangling `string_view` is **Undefined Behavior** [N4950
+§22.3].
+
+### Proof of When `string_view` Dangles
+
+**Theorem.** A `std::string_view` dangles if and only if the underlying character storage is freed
+or reallocated while the view is in scope.
+
+**Proof.** By definition, `std::string_view` stores a raw pointer and a size [N4950 §22.3.3]. It
+does not own, share, or extend the lifetime of the pointed-to storage. The view is valid if and only
+if:
+
+1. The pointer is non-null and points to a contiguous sequence of at least `size()` characters.
+2. The storage has not been freed or reallocated.
+
+Condition 2 is violated when:
+
+- The owning `std::string` (or other container) is destroyed.
+- The owning `std::string` is modified in a way that triggers reallocation (e.g., `resize`,
+  `append`, `insert`, `push_back` when `size() == capacity()`).
+- The owning `std::string` is moved from (the moved-from string may be empty, invalidating the
+  pointer).
+
+Since `string_view` has no mechanism to detect or prevent these events, it is the programmer's
+responsibility to ensure the source outlives all views into it. QED.
 
 ### The Classic Bug
 
@@ -216,6 +287,31 @@ void tokenize(std::string input) {
             start = i + 1;
         }
     }
+}
+```
+
+### Reallocation-Induced Dangling
+
+A `string_view` into a `std::string` is invalidated not only when the string is destroyed, but also
+when the string is resized beyond its capacity:
+
+```cpp
+#include <string>
+#include <string_view>
+#include <iostream>
+
+int main() {
+    std::string s = "hello world";
+    std::string_view sv = s;
+
+    // sv is valid here
+    std::cout << sv << "\n";  // "hello world"
+
+    // This may trigger reallocation, invalidating sv
+    s.append(" and this is a very long suffix that exceeds capacity");
+
+    // sv may now dangle! The pointer inside sv may point to freed memory.
+    // std::cout << sv << "\n";  // UB: potentially dangling
 }
 ```
 
@@ -274,16 +370,13 @@ bool starts_with_legacy(const std::string& str, const std::string& prefix) {
 
 ### When to Prefer `const std::string&`
 
-1. **You need to call `.c_str()`** — passing to a C API.
-2. **You need null termination** — e.g., `fopen(sv.data())` is dangerous.
-3. **You need to store the string** — convert to `std::string` at the boundary.
-4. **You are calling a legacy API** that only accepts `std::string` — conversion from `string_view`
-   to `string` still allocates.
+1. **You need to call `.c_str()`** --- passing to a C API.
+2. **You need null termination** --- e.g., `fopen(sv.data())` is dangerous.
+3. **You need to store the string** --- convert to `std::string` at the boundary.
+4. **You are calling a legacy API** that only accepts `std::string` --- conversion from
+   `string_view` to `string` still allocates.
 
-## 6. As Return Values
-
-Returning `std::string_view` from a function is only safe if the underlying data outlives the call
-site. This limits the viable patterns:
+## 6. `string_view` in Function Interfaces
 
 ### Safe: Returning a View Into a Longer-Lived Object
 
@@ -326,6 +419,33 @@ std::string_view truncate(std::string_view sv, size_t max_len) {
 }
 ```
 
+### Accept-and-Store Pattern
+
+When a function needs to store a string for later use, accept `std::string_view` but convert to
+`std::string` at the boundary:
+
+```cpp
+#include <string>
+#include <string_view>
+#include <vector>
+
+class Logger {
+    std::vector<std::string> messages_;
+
+public:
+    void log(std::string_view msg) {
+        // Convert to owning string at the boundary
+        messages_.emplace_back(msg);
+    }
+
+    void flush() {
+        for (const auto& m : messages_) {
+            // safe to use m later
+        }
+    }
+};
+```
+
 ## 7. Performance Implications
 
 ### Zero-Copy Function Chains
@@ -360,16 +480,62 @@ lookup["fast"] = 1; // No std::string allocation for the key
 destroyed, the map's keys dangle. Use `std::unordered_map<std::string, int>` if the strings may be
 modified or freed.
 
+### Benchmark: `string_view` vs `const string&` for Read-Only Parameters
+
+```cpp
+#include <string>
+#include <string_view>
+#include <iostream>
+#include <chrono>
+
+size_t count_chars_string(const std::string& s, char c) {
+    size_t n = 0;
+    for (char ch : s) if (ch == c) ++n;
+    return n;
+}
+
+size_t count_chars_view(std::string_view sv, char c) {
+    size_t n = 0;
+    for (char ch : sv) if (ch == c) ++n;
+    return n;
+}
+
+int main() {
+    const char* literal = "the quick brown fox jumps over the lazy dog";
+    constexpr int N = 10'000'000;
+
+    // With const string&: constructs temp string on each call
+    auto start = std::chrono::high_resolution_clock::now();
+    volatile size_t r1 = 0;
+    for (int i = 0; i < N; ++i) r1 = count_chars_string(literal, 'e');
+    auto end = std::chrono::high_resolution_clock::now();
+    auto ms1 = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+    // With string_view: zero-copy
+    start = std::chrono::high_resolution_clock::now();
+    volatile size_t r2 = 0;
+    for (int i = 0; i < N; ++i) r2 = count_chars_view(literal, 'e');
+    end = std::chrono::high_resolution_clock::now();
+    auto ms2 = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+    std::cout << "const string&: " << ms1 << " ms\n";
+    std::cout << "string_view:   " << ms2 << " ms\n";
+    // string_view is typically 3-10x faster for literal arguments
+    (void)r1;
+    (void)r2;
+}
+```
+
 ## 8. `std::string_view` vs `std::span<const char>`
 
-| Property                    | `std::string_view`  | `std::span<const char>` |
-| :-------------------------- | :------------------ | :---------------------- |
-| Character trait support     | Yes (`char_traits`) | No                      |
-| `operator<<` to `ostream`   | Yes                 | No                      |
-| Hash specialization         | Yes                 | No                      |
-| Null-termination assumption | Sometimes           | Never                   |
-| Generalizes to other types  | No (char-only)      | Yes (any `T`)           |
-| Available since             | C++17               | C++20                   |
+| Property                        | `std::string_view`  | `std::span<const char>` |
+| :------------------------------ | :------------------ | :---------------------- |
+| Character trait support         | Yes (`char_traits`) | No                      |
+| `operator&lt;&lt;` to `ostream` | Yes                 | No                      |
+| Hash specialization             | Yes                 | No                      |
+| Null-termination assumption     | Sometimes           | Never                   |
+| Generalizes to other types      | No (char-only)      | Yes (any `T`)           |
+| Available since                 | C++17               | C++20                   |
 
 `std::string_view` is the correct choice when working with text. `std::span<const char>` is
 appropriate when treating character data as a generic byte buffer (e.g., binary data that happens to
@@ -430,10 +596,121 @@ A default-constructed `string_view` has `data() == nullptr` and `size() == 0`. C
 if (sv.empty()) { } // Checks size == 0
 ```
 
+### Pitfall 4: Passing `string_view` to C APIs
+
+```cpp
+void c_function(const char* path);
+
+std::string_view sv = "/usr/local/bin";
+c_function(sv.data());  // UB if sv is not null-terminated
+```
+
+The fix is to create a null-terminated copy:
+
+```cpp
+std::string path(sv);
+c_function(path.c_str());
+```
+
+### Pitfall 5: `string_view` of a moved-from `std::string`
+
+After a `std::string` is moved from, its contents are unspecified. A `string_view` obtained before
+the move may dangle:
+
+```cpp
+std::string s = "important data";
+std::string_view sv = s;  // sv points to s's buffer
+
+std::string other = std::move(s);
+// 's' is now in a valid but unspecified state
+// sv may dangle if 's' released its buffer to 'other'
+
+// std::cout << sv << "\n";  // Potentially UB
+```
+
+### Pitfall 6: `string_view` from Substring of Temporary
+
+This subtle case creates a dangling view when the substring operation creates a temporary that is
+destroyed before the view is used:
+
+```cpp
+#include <string>
+#include <string_view>
+
+// DANGEROUS: the temporary string is destroyed, view dangles
+std::string_view extract(std::string_view sv) {
+    auto pos = sv.find(' ');
+    if (pos == std::string_view::npos) return sv;
+    // This is safe IF the caller's source outlives the returned view
+    return sv.substr(0, pos);
+}
+
+// Safe usage:
+std::string input = "hello world";
+std::string_view prefix = extract(input);  // safe: input outlives prefix
+```
+
+### Pitfall 7: `string_view` and Concatenation
+
+`std::string_view` does not support concatenation. You cannot write `sv1 + sv2`. This is by design:
+concatenation would require allocating a new buffer, which violates the non-owning semantics of
+`string_view`:
+
+```cpp
+std::string_view a = "hello";
+std::string_view b = " world";
+
+// ERROR: no operator+ for string_view
+// auto c = a + b;
+
+// CORRECT: convert to std::string for concatenation
+std::string c = std::string(a) + std::string(b);
+```
+
+### Pitfall 8: `string_view` from `std::string::operator[]`
+
+`std::string::operator[]` returns a reference to a character within the string's buffer. You can
+construct a `string_view` from a pointer into this buffer, but the view is invalidated if the string
+is modified or destroyed:
+
+```cpp
+#include <string>
+#include <string_view>
+
+void danger() {
+    std::string s = "hello world";
+
+    // This creates a view into s's buffer, NOT a copy
+    std::string_view sv(s.data() + 6, 5);  // "world"
+
+    s += " and more";  // may reallocate, invalidating sv
+    // sv is now potentially dangling
+}
+```
+
+### Pitfall 9: `string_view` Comparison Semantics
+
+`string_view` comparison uses `char_traits::compare`, which compares character-by-character. This is
+correct for ASCII and UTF-8 byte equality but does **not** perform Unicode-aware comparison (e.g.,
+case folding, normalization, locale-dependent ordering):
+
+```cpp
+#include <string_view>
+
+int main() {
+    // These are NOT equal as string_views, despite being visually similar
+    // in some Unicode contexts:
+    std::string_view a = "caf\u00e9";       // e with acute accent (U+00E9)
+    std::string_view b = "cafe\u0301";     // e + combining acute accent (U+0301)
+
+    // a != b at the byte level (different UTF-8 encodings)
+    // For Unicode-aware comparison, use a library like ICU
+}
+```
+
 ## See Also
 
-- **Module 8: Contiguous Memory Views** — `std::span<T>` as the generalization of `string_view`.
-- **Module 7: Data Layout** — Memory ownership models, heap allocation, SSO interaction with
-  alignment.
-- **Module 8: Pointers and References** — Reference lifetime, dangling references.
-- **`std::string_view`** — [N4950 §22.7], C++17.
+- [Contiguous Memory Views](./5_contiguous_memory_views.md)
+- [Heap Allocation](../1_data_layout/5_heap.md)
+- [Reference Lifetime](./2_reference_lifetime.md)
+- [Pointers](./1_pointers.md)

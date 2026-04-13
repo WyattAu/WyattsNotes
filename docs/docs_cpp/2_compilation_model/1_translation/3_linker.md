@@ -39,7 +39,7 @@ As the linker scans inputs (objects and libraries) from **left to right** on the
    **D** and resolves matching entries in **U**. Any new undefined references in the object are
    added to **U**.
 2. If input is a **Static Library (`.a`)**: The linker checks if any symbol in the library's member
-   objects matches a symbol currently in **U**.
+   objects matches a symbol currently in the **U** set.
    - If a match is found, that specific member object is extracted and added to **E**.
    - If no match is found, the member object is ignored entirely.
 
@@ -100,6 +100,35 @@ ordinary weak symbols instead.
 // Multiple weak definitions: OK, linker picks one
 ```
 
+### Symbol Visibility
+
+Symbol visibility controls which symbols are exported from shared libraries (`.so`, `.dll`). This
+affects both dynamic linking and name mangling.
+
+| Visibility    | ELF Flag                                   | Meaning                                               |
+| :------------ | :----------------------------------------- | :---------------------------------------------------- |
+| **Default**   | (none)                                     | Exported; may be interposed by LD_PRELOAD             |
+| **Hidden**    | `__attribute__((visibility("hidden")))`    | Not exported; internal to the DSO                     |
+| **Protected** | `__attribute__((visibility("protected")))` | Exported but cannot be interposed                     |
+| **Internal**  | (implementation-defined)                   | Not exported; may enable more aggressive optimization |
+
+```cpp
+// Hide all symbols by default, export only the API
+#pragma GCC visibility push(hidden)
+
+__attribute__((visibility("default")))
+void public_api_function();
+
+// Internal: not exported, not interposable
+void internal_helper();
+```
+
+```cmake
+# CMake: hide all symbols by default
+set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+set(CMAKE_VISIBILITY_INLINES_HIDDEN ON)
+```
+
 ### Duplicate Symbol Detection
 
 When the linker encounters two strong definitions of the same symbol, it emits a fatal error. The
@@ -118,6 +147,28 @@ Common causes include:
 - Forgetting `inline` on a function defined in a header.
 - Violating the ODR by defining a struct differently across TUs (detected at link time only if the
   mangled names differ).
+
+### Proof: Linker ODR Violation Detection Mechanism
+
+The linker detects ODR violations through the One Definition Rule's structural requirements. Per
+[N4950 S6.3], if two declarations of the same entity differ, the program is ill-formed (no
+diagnostic required). The linker provides a partial diagnostic through its symbol resolution:
+
+1. **Strong symbol conflict:** If two TUs define the same function (same mangled name) as a strong
+   symbol, the linker detects a "multiple definition" error because two global symbol table entries
+   have the same key.
+2. **COMDAT deduplication:** For inline functions and templates, the compiler places each
+   instantiation in a COMDAT section keyed by the mangled name. The linker keeps exactly one copy.
+   If two COMDAT sections have the same key but different sizes or contents, the linker does **not**
+   detect this (it keeps one arbitrarily). This is a silent ODR violation.
+3. **The silent case:** If two TUs define `struct S { int x; };` in one and
+   `struct S { double x; };` in the other, and no function signature encodes `S` differently (e.g.,
+   both TUs only use `S*`), the linker cannot detect the violation. The mangled names are identical.
+   This is the most dangerous form of ODR violation.
+
+Conclusion: The linker detects ODR violations **only when they produce different mangled names**.
+Structural ODR violations (same name, different definitions) that do not affect function signatures
+are invisible to the linker. This is why `-Wodr` (GCC) and modules are important for ODR safety.
 
 ### Archive Files and `--whole-archive`
 
@@ -163,6 +214,10 @@ The compiler generates a `.rela.text` section containing instructions for the li
 2. **R_X86_64_64 (Absolute):** Used for static data pointers (e.g., jump tables). Requires load-time
    patching if the binary base address changes.
 
+3. **R_X86_64_GOTPCREL (GOT-relative):** Used for accessing global variables through the GOT in
+   position-independent code. The instruction loads the GOT entry address, then loads the value from
+   the GOT.
+
 ### The PLT and GOT (Dynamic Linking)
 
 When code references a symbol in a _Shared Library_ (`.so`), the address is unknown until runtime.
@@ -180,6 +235,22 @@ The linker cannot patch the code directly. Instead, it generates:
    the resolver finds the actual `printf` address, updates the GOT, and executes the function.
    Subsequent calls jump directly.
 
+### Lazy vs Eager Binding
+
+By default, ELF uses **lazy binding** (resolve symbols on first call). This can be disabled:
+
+```bash
+# Eager binding: resolve all symbols at load time
+LD_BIND_NOW=1 ./app
+
+# Compile-time: mark all GOT entries as requiring immediate resolution
+clang++ -Wl,-z,now main.o -lfoo
+```
+
+Eager binding eliminates the first-call overhead and makes the startup behavior deterministic, which
+is important for security (prevents GOT overwrite attacks from redirecting control flow) and for
+real-time systems (no unpredictable latency on first function call).
+
 ## 3. Deduplication (COMDAT Folding)
 
 C++ templates pose a unique challenge. If `std::vector<int>::push_back` is instantiated in `A.cpp`
@@ -194,6 +265,10 @@ The compiler marks template instantiations and `inline` functions with a special
 - **Rule:** "This section defines symbol X. If you have already seen a COMDAT for X, discard this
   section. If not, keep it."
 - **Result:** The final binary contains exactly one copy of the template code.
+
+Per [N4950 S6.3], inline functions with external linkage may be defined in multiple translation
+units provided all definitions are identical. COMDAT is the linker mechanism that enforces this by
+keeping only one copy.
 
 ### Identical Code Folding (ICF)
 
@@ -218,6 +293,12 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
     add_link_options("-Wl,--icf=all")
 endif()
 ```
+
+:::warning
+ICF can break programs that compare function pointers for identity. If `f()` and `g()`
+are folded into the same address, `&f == &g` becomes `true` even though they are distinct functions.
+This is rare but possible. Use `-Wl,--icf=safe` to fold only functions with identical relocations.
+:::
 
 ## 4. Static vs. Shared Libraries
 
@@ -352,6 +433,8 @@ Key directives:
 - `.` (location counter): Represents the current VMA (Virtual Memory Address).
 - `*(.section)`: Wildcard pattern matching all input sections named `.section`.
 - `PROVIDED(symbol) = value`: Define a symbol only if not already defined.
+- `KEEP(section)`: Prevent garbage collection from discarding the section (critical for
+  `.init_array`).
 
 To inspect the default linker script for your target:
 
@@ -359,7 +442,39 @@ To inspect the default linker script for your target:
 ld --verbose | grep -A100 "SECTIONS"
 ```
 
-## 7. Name Demangling
+## 7. LTO (Link Time Optimization)
+
+LTO allows the linker to perform whole-program optimization by serializing the compiler's
+intermediate representation (IR) into the object file and re-running optimization passes at link
+time.
+
+### How LTO Works
+
+1. **Compilation:** The compiler generates LLVM IR (or GCC GIMPLE) instead of machine code and
+   embeds it in a `.o` file alongside a thin object file for fast linking without LTO.
+2. **Linking:** The linker extracts the IR from all `.o` files, merges them, and runs
+   interprocedural optimization (inlining, dead code elimination, devirtualization).
+3. **Codegen:** The optimized IR is compiled to machine code and linked.
+
+### LTO Types
+
+| Type         | Description                         | Build Time         | Binary Quality |
+| :----------- | :---------------------------------- | :----------------- | :------------- |
+| **Full LTO** | Merges all IR into one unit         | Slow (high memory) | Best           |
+| **ThinLTO**  | Parallel summary-based optimization | Moderate           | Near-full LTO  |
+
+```cmake
+# CMake: enable LTO
+set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON)
+
+# Or per-target:
+set_target_properties(app PROPERTIES INTERPROCEDURAL_OPTIMIZATION ON)
+```
+
+LTO can detect ODR violations that the linker alone cannot: the merged IR allows the compiler to
+compare type definitions across TUs. GCC's `-Wodr` and Clang's `-Wodr` flags enable this diagnostic.
+
+## 8. Name Demangling
 
 The linker operates on **Mangled Names** (decorated names that encode namespace, class, and argument
 types).
@@ -386,7 +501,7 @@ back.
    nm -C --defined-only libfoo.a | grep "foo::bar"
    ```
 
-## 8. Debugging Undefined Reference Errors
+## 9. Debugging Undefined Reference Errors
 
 Undefined reference errors are the most common linker errors. A systematic debugging approach:
 
@@ -433,7 +548,19 @@ the _dynamic_ symbol table:
 nm -D libfoo.so | grep "missing_symbol"
 ```
 
-## 9. Common Pitfalls
+### Symbol Type Comparison
+
+| nm Symbol Type | Meaning             | Typical Source                                  |
+| :------------- | :------------------ | :---------------------------------------------- |
+| `T` / `t`      | Text (code) section | Function definition                             |
+| `D` / `d`      | Data section        | Initialized global variable                     |
+| `B` / `b`      | BSS section         | Uninitialized global variable                   |
+| `U`            | Undefined           | External reference (needs resolution)           |
+| `W` / `w`      | Weak symbol         | Tentative definition or `__attribute__((weak))` |
+| `A`            | Absolute            | Linker script symbol                            |
+| `V` / `v`      | Weak object (ELF)   | Weak symbol definition                          |
+
+## Common Pitfalls
 
 - **Link order matters:** Object files before libraries, dependents before dependencies. This is the
   single most common source of linker errors on Linux.
@@ -445,9 +572,183 @@ nm -D libfoo.so | grep "missing_symbol"
   included by multiple TUs causes duplicate symbol errors.
 - **Static library not rebuilt after header change:** Changing a header only recompiles TUs that
   include it. If the static library was not rebuilt, stale object files may cause mysterious errors.
+- **LTO with incompatible object files:** Mixing LTO and non-LTO object files from different
+  compilers can cause linker errors. Ensure all objects are compiled with the same LTO settings.
+- **ICF folding distinct functions:** Identical Code Folding may merge functionally distinct
+  functions that happen to compile to the same machine code, breaking function pointer comparisons.
+
+## 10. Version Scripts and Symbol Versioning
+
+ELF shared libraries can use version scripts to control symbol visibility and provide ABI
+versioning. This is critical for maintaining backward compatibility when evolving a library's API.
+
+### Basic Version Script
+
+```ld
+/* libfoo.ver */
+VERS_1.0 {
+    global:
+        foo;
+        bar;
+    local:
+        *;
+};
+
+VERS_2.0 {
+    global:
+        baz;
+} VERS_1.0;
+```
+
+Usage:
+
+```bash
+# Compile and link with version script
+clang++ -shared -Wl,--version-script=libfoo.ver -o libfoo.so foo.cpp
+```
+
+### How Symbol Versioning Works
+
+The linker assigns a version tag to each symbol in the shared library. When a program links against
+the library, it records which version of each symbol it was linked against. At runtime, the dynamic
+linker verifies that the requested version is available.
+
+This allows the library to introduce new symbols (in `VERS_2.0`) without breaking existing programs
+that depend on `VERS_1.0` symbols. If a symbol is removed or changed in `VERS_2.0`, the dynamic
+linker detects the version mismatch and reports an error rather than silently producing incorrect
+behavior.
+
+### Version Script for Hiding Symbols
+
+Version scripts are an alternative to `-fvisibility=hidden` for controlling which symbols are
+exported:
+
+```ld
+{
+    global:
+        public_api_*;
+    local:
+        *;
+};
+```
+
+This exports only symbols matching `public_api_*` and hides everything else, without requiring
+source-level `__attribute__((visibility("hidden")))` annotations.
+
+## 11. Linker Deficiencies and Common Error Patterns
+
+### "undefined reference to `vtable for Foo`"
+
+This error occurs when a class with virtual methods is declared but the compiler-generated virtual
+table and typeinfo are not linked in. Common causes:
+
+1. **Virtual method declared but not defined:** If `Foo` has a virtual method declared in the header
+   but the definition is missing from all TUs, the compiler emits a reference to `vtable for Foo`
+   but no definition. The linker reports the error.
+2. **First virtual method is defined out-of-line but not linked:** The compiler places the vtable in
+   the TU that defines the first non-pure virtual function. If that TU is not linked, the vtable is
+   missing.
+
+### "relocation truncated to fit: R_X86_64_PC32 against symbol"
+
+This error occurs when a 32-bit relative relocation is used for a symbol that is too far away (more
+than 2 GB apart in the virtual address space). Common causes:
+
+1. **Large binaries:** If the `.text` section exceeds 2 GB, references from one end to the other
+   exceed the 32-bit relative offset range.
+2. **Missing `-fPIC`:** Non-PIC code in shared libraries uses absolute addresses that may require
+   64-bit relocations.
+
+Fix: Compile with `-fPIC` and/or use `-mcmodel=medium` or `-mcmodel=large` for large binaries.
+
+### "multiple definition of `__builtin_expect`"
+
+This error occurs when a TU is compiled with `-fno-builtin` or with different compiler versions that
+handle builtins differently. The builtin functions may be emitted as strong symbols in multiple
+object files. Fix by ensuring consistent compiler flags across all TUs.
+
+## 12. Link Map Files
+
+Link map files provide a detailed dump of the linker's decisions, showing where each symbol is
+placed in the output binary:
+
+```bash
+# Generate a link map file
+clang++ -Wl,-Map=output.map main.o -lfoo -o app
+
+# Inspect for specific symbols
+grep "foo\|bar" output.map
+```
+
+The map file contains:
+
+- Memory addresses of each section and symbol.
+- Archive member extraction decisions (which `.o` files from `.a` were pulled in and why).
+- Symbol resolution (which definition satisfied each undefined reference).
+- Total binary size breakdown by section.
+
+Link map files are invaluable for debugging linker issues in large projects where manually tracing
+symbol resolution is impractical.
+
+## 13. Link Time Optimization (LTO) and ODR Detection
+
+As mentioned in Section 7, LTO can detect ODR violations that the linker alone cannot. When LTO is
+enabled, the linker merges the intermediate representation (IR) from all object files and can
+compare type definitions across TUs:
+
+```bash
+# GCC: enable ODR diagnostics
+g++ -flto -Wodr main.o utils.o -o app
+
+# Clang: LTO ODR detection is on by default
+clang++ -flto main.o utils.o -o app
+```
+
+When `-Wodr` detects a mismatch (e.g., `struct S` defined with different members in two TUs), it
+reports the conflicting definitions with source locations. This is a significant improvement over
+the linker's silent acceptance of structurally different ODR violations.
+
+However, `-Wodr` has limitations:
+
+1. It only checks types that are used in LTO-visible functions. If a type is only used in non-inline
+   functions that are not optimized across TUs, the violation may go undetected.
+2. It produces false positives for types that are intentionally defined differently in different
+   contexts (e.g., `#ifdef` guards that produce different struct layouts).
+3. It significantly increases link time because the linker must parse and compare IR from all TUs.
+
+## 14. The `--wrap` Linker Flag
+
+The `--wrap` flag allows intercepting calls to a specific symbol at link time. This is used for
+testing (mocking) and for runtime instrumentation:
+
+```bash
+# Redirect all calls to 'malloc' to '__wrap_malloc'
+clang++ -Wl,--wrap=malloc app.o -o app
+```
+
+```cpp
+// In the application or a test harness:
+extern "C" void* __wrap_malloc(size_t size) {
+    // Custom implementation (logging, tracking, etc.)
+    return __real_malloc(size);
+}
+
+extern "C" void* __real_malloc(size_t size);
+```
+
+The linker rewrites every call to `malloc` to call `__wrap_malloc` instead. The `__real_malloc`
+symbol is provided by the original library and can be called from within the wrapper. This mechanism
+does not require modifying the original source code.
+
+:::warning
+`--wrap` operates at the symbol level, not the function level. If `malloc` is inlined by
+the compiler, the wrapper will not intercept the inlined call. Use `-fno-inline` on the wrapping TU
+or compile the wrapped TU separately without LTO.
+:::
 
 ## See Also
 
 - [Name Mangling](./5_name_mangling.md)
-
-:::
+- [Binary Formats](./4_binary_formats.md)
+- [Symbol Visibility](./2_symbol_visibility.md)
+- [Preprocessing and the AST](./1_preprocessing_ast_object.md)

@@ -35,8 +35,44 @@ A red-black tree is a self-balancing binary search tree with the following prope
 4. If a node is red, both children are black
 5. Every path from a node to its descendant NIL nodes passes through the same number of black nodes
 
-These constraints guarantee that the **height** of the tree is at most $2 \log_2(n + 1)$, which
-bounds all operations to $O(\log n)$.
+#### Proof of O(log n) Height Bound
+
+**Theorem.** A red-black tree with $n$ internal nodes has height $h \leq 2 \log_2(n + 1)$.
+
+**Proof.** Define the **black-height** $\text{bh}(x)$ of a node $x$ as the number of black nodes on
+any path from $x$ to a leaf (excluding $x$ itself). By property 5, this is well-defined.
+
+**Claim:** A subtree rooted at any node $x$ contains at least $2^{\text{bh}(x)} - 1$ internal nodes.
+
+We prove this by induction on the height of $x$.
+
+_Base case:_ If $x$ is a leaf (height 0), then $\text{bh}(x) = 0$ and the subtree has 0 internal
+nodes $= 2^0 - 1 = 1 - 1 = 0$. Holds.
+
+_Inductive step:_ Let $x$ have height $h \gt 0$ and children $a, b$. Each child has black-height
+either $\text{bh}(x)$ (if the child is red) or $\text{bh}(x) - 1$ (if the child is black). In either
+case, $\text{bh}(\text{child}) \geq \text{bh}(x) - 1$. By the inductive hypothesis, each subtree has
+at least $2^{\text{bh}(x) - 1} - 1$ internal nodes. Therefore:
+
+$$
+\text{size}(x) \geq \left(2^{\text{bh}(x) - 1} - 1\right) + \left(2^{\text{bh}(x) - 1} - 1\right) + 1 = 2^{\text{bh}(x)} - 1
+$$
+
+Now, at least half the nodes on any root-to-leaf path are black (by property 4: no two consecutive
+red nodes). Therefore, if the tree height is $h$:
+
+$$
+\text{bh}(\text{root}) \geq \frac{h}{2}
+$$
+
+Combining with the claim ($n \geq 2^{\text{bh}(\text{root})} - 1$):
+
+$$
+n \geq 2^{h/2} - 1 \implies 2^{h/2} \leq n + 1 \implies h \leq 2 \log_2(n + 1)
+$$
+
+QED. Since all operations (search, insert, delete) touch at most $h$ nodes, and $h = O(\log n)$,
+every operation runs in $O(\log n)$ time.
 
 ```cpp
 #include <map>
@@ -124,7 +160,29 @@ hash table for $O(1)$ average-case insertion, deletion, and lookup [N4950 §22.5
 specifies that each bucket holds a singly-linked list of elements that hash to the same value, and
 rehashing occurs when the load factor exceeds `max_load_factor()` [N4950 §22.5.5].
 
-The **load factor** is defined as:
+#### Hash Table Collision Resolution
+
+The standard mandates **separate chaining** for collision resolution [N4950 §22.5.1]: each bucket
+contains a singly-linked list of all elements whose key hashes to that bucket index. When two keys
+produce the same bucket index (a **collision**), they are stored in the same linked list.
+
+$$
+\text{bucket\_index} = H(\text{key}) \mod \text{bucket\_count}
+$$
+
+The average chain length equals the load factor:
+
+$$
+\text{avg\_chain\_length} = \frac{\text{size}()}{\text{bucket\_count}()} = \text{load\_factor}
+$$
+
+With default `max_load_factor = 1.0`, the average chain length is kept below 1.0, meaning most
+lookups require at most one equality comparison. When the load factor exceeds `max_load_factor`, the
+container **rehashes**: allocates a new bucket array (typically $2\times$ the old count), recomputes
+bucket indices for all elements, and deallocates the old array. This is $O(n)$ but occurs
+infrequently.
+
+The **load factor** is defined as [N4950 §22.5.5.3]:
 
 $$
 \text{load\_factor} = \frac{\text{size}()}{\text{bucket\_count}()}
@@ -210,6 +268,38 @@ int main() {
     if (it != locations.end()) {
         std::cout << "Found: " << it->second << "\n";  // "origin"
     }
+}
+```
+
+### `std::multimap` and Ordered Equivalence
+
+`std::multimap` (and `std::multiset`) allow duplicate keys. Elements with equivalent keys are stored
+in insertion order. The `equal_range` member function returns a pair of iterators defining the range
+of elements with a given key [N4950 §22.4.4.4]:
+
+```cpp
+#include <map>
+#include <iostream>
+#include <string>
+
+int main() {
+    std::multimap<std::string, int> scores;
+
+    scores.insert({"Alice", 90});
+    scores.insert({"Bob", 85});
+    scores.insert({"Alice", 95});
+    scores.insert({"Alice", 88});
+
+    // equal_range returns [first, last) of all elements with key "Alice"
+    auto [first, last] = scores.equal_range("Alice");
+    std::cout << "Alice's scores: ";
+    for (auto it = first; it != last; ++it) {
+        std::cout << it->second << " ";
+    }
+    // Output: Alice's scores: 90 95 88  (insertion order preserved)
+
+    std::cout << "\nCount of 'Alice': " << scores.count("Alice") << "\n";
+    // Output: Count of 'Alice': 3
 }
 ```
 
@@ -398,7 +488,112 @@ This API is critical for performance-sensitive code that needs to transfer eleme
 into another — involves a redundant deallocation and allocation. With `extract`/`insert`, the node's
 heap memory is simply reparented [N4950 §22.4.4.4].
 
-### Common Pitfalls with Associative Containers
+### Red-Black Tree Node Structure
+
+Each node in a `std::map` or `std::set` stores three pointers (parent, left child, right child) plus
+a color bit, in addition to the key (and value for `map`). On 64-bit systems, the per-node overhead
+is at least 32 bytes:
+
+```
++--------+--------+--------+----------+
+| left*  | right* | parent*| key      |
+| 8 bytes| 8 bytes| 8 bytes| sizeof(K)|
++--------+--------+--------+----------+
+  (plus color bit, alignment padding, and sizeof(V) for map)
+```
+
+For `std::map<std::string, int>`, each node costs approximately 48-64 bytes: 24 bytes of tree
+pointers + `sizeof(std::string)` (32 bytes) + `sizeof(int)` (4 bytes) + alignment padding. The
+default-constructed empty `std::map` has zero heap allocation; the first `insert` allocates the root
+node.
+
+### Iterator Invalidation in Associative Containers
+
+Unlike sequence containers, associative containers have simpler invalidation rules [N4950 §22.4.4.1
+Table 83]:
+
+| Operation | Iterator effect                      | Pointer/Reference effect             |
+| --------- | ------------------------------------ | ------------------------------------ |
+| `insert`  | No invalidation                      | No invalidation                      |
+| `emplace` | No invalidation                      | No invalidation                      |
+| `erase`   | Only iterators to the erased element | Only to the erased element           |
+| `clear`   | All invalidated                      | All invalidated                      |
+| `swap`    | No invalidation (elements exchanged) | No invalidation (elements exchanged) |
+
+This is a consequence of the node-based structure: inserting a new node allocates a new heap block
+that does not affect existing nodes. Erasing a node only frees that specific block.
+
+For `std::unordered_map`, the rules are stricter: **rehashing** invalidates all iterators, pointers,
+and references because elements are moved to new bucket locations [N4950 §22.5.5 Table 89].
+
+### `std::unordered_map` Heterogeneous Lookup (C++20)
+
+C++20 extended heterogeneous lookup to unordered containers. By providing a transparent hash and
+equality comparator, you can look up keys using a different type without constructing the key:
+
+```cpp
+#include <unordered_map>
+#include <string>
+#include <string_view>
+#include <iostream>
+
+// Transparent hash [N4950 §22.14.3]
+struct TransparentHash {
+    using is_transparent = void;
+
+    auto operator()(std::string_view sv) const noexcept {
+        return std::hash<std::string_view>{}(sv);
+    }
+    auto operator()(const std::string& s) const noexcept {
+        return std::hash<std::string>{}(s);
+    }
+};
+
+// Transparent equality [N4950 §22.5.3.2]
+struct TransparentEqual {
+    using is_transparent = void;
+
+    template <typename T, typename U>
+    bool operator()(const T& a, const U& b) const noexcept {
+        return a == b;
+    }
+};
+
+int main() {
+    std::unordered_map<std::string, int, TransparentHash, TransparentEqual> m;
+    m["hello"] = 1;
+    m["world"] = 2;
+
+    // Lookup with string_view — no temporary std::string constructed
+    std::string_view sv = "hello";
+    auto it = m.find(sv);
+    if (it != m.end()) {
+        std::cout << "Found: " << it->first << " -> " << it->second << "\n";
+    }
+}
+```
+
+The `is_transparent` typedef signals to the container that the hash and equality functions accept
+heterogeneous types. This enables `find`, `count`, `contains`, and `equal_range` to work with any
+type that is comparable to `Key` and hashable.
+
+### Exception Safety of Associative Container Operations
+
+The standard provides the following guarantees [N4950 §22.4.4.4]:
+
+- **`insert` / `emplace`**: If the operation throws (e.g., key comparison throws during tree
+  traversal, or the element constructor throws), the container is unchanged (strong guarantee).
+- **`erase`**: Never throws (destructors are `noexcept` for standard types).
+- **`extract`**: The node handle takes ownership of the extracted element. If the extraction fails
+  (key not found), the container is unchanged.
+- **`swap`**: Never throws (pointer swap only).
+- **`clear`**: Never throws.
+
+For `std::unordered_map`, `rehash` provides the basic guarantee: if an exception occurs during
+rehashing (e.g., hash computation throws), the container is in a valid but unspecified state [N4950
+§22.5.5.3].
+
+### Common Pitfalls
 
 **1. Mutable keys in `std::set` and `std::map`:** The keys of ordered associative containers must
 remain ordered at all times. The iterator types for `std::set` yield `const Key&`, preventing direct
@@ -422,12 +617,122 @@ that all hash to the same bucket, degrading $O(1)$ lookup to $O(n)$. In security
 (e.g., HTTP header parsing), use a hash-seeded or randomized hash function, or switch to `std::map`
 for guaranteed $O(\log n)$ worst-case.
 
+**5. Forgetting to `reserve()` on `unordered_map`:** The default initial bucket count is small
+(typically 1 or a platform-specific minimum). Without `reserve()`, the first few inserts trigger
+repeated rehashing, each costing $O(n)$. For a map expected to hold $n$ elements, call
+`m.reserve(n)` before inserting to pre-allocate buckets and avoid all intermediate rehashes [N4950
+§22.5.5.3].
+
+**6. Using `std::unordered_map` when you need range queries:** `std::unordered_map` provides no
+ordering guarantee. Operations like `lower_bound`, `upper_bound`, and `equal_range` in the ordered
+sense are not available. If you need to iterate over all keys in a range $[lo, hi]$, use `std::map`
+instead.
+
+**7. Erasing while iterating with `operator[]`:** In `std::map`, the pattern `m.erase(m[key])` first
+default-inserts `key` (via `operator[]`) and then immediately erases it, causing a redundant
+allocation and deallocation. Use `m.erase(m.find(key))` instead, which only erases if the key
+exists.
+
+### `std::map` and `std::set` with Custom Comparators
+
+When the default `std::less<Key>` is not suitable (e.g., case-insensitive string comparison),
+provide a custom comparator:
+
+```cpp
+#include <map>
+#include <string>
+#include <iostream>
+#include <algorithm>
+#include <cctype>
+
+struct CaseInsensitiveLess {
+    bool operator()(std::string a, std::string b) const {
+        std::ranges::transform(a, a.begin(), [](unsigned char c) { return std::tolower(c); });
+        std::ranges::transform(b, b.begin(), [](unsigned char c) { return std::tolower(c); });
+        return a < b;
+    }
+};
+
+int main() {
+    std::map<std::string, int, CaseInsensitiveLess> m;
+    m["Hello"] = 1;
+    m["WORLD"] = 2;
+    m["hello"] = 3;  // Replaces "Hello" (case-insensitive equal)
+
+    for (const auto& [k, v] : m) {
+        std::cout << k << " -> " << v << "\n";
+    }
+    // Output: hello -> 3
+    //         WORLD -> 2
+}
+```
+
+The custom comparator must define a **strict weak ordering**: irreflexive ($a \lt a$ is false),
+asymmetric ($a \lt b$ implies $b \lt a$ is false), and transitive ($a \lt b$ and $b \lt c$ implies
+$a \lt c$). Violating these invariants causes undefined behavior.
+
+### `std::unordered_map` Bucket Inspection
+
+Understanding bucket distribution is critical for diagnosing performance problems. A high maximum
+bucket size indicates hash collisions:
+
+```cpp
+#include <unordered_map>
+#include <string>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+int main() {
+    std::unordered_map<std::string, int> m;
+
+    // Insert many keys
+    for (int i = 0; i < 1000; ++i) {
+        m["key_" + std::to_string(i)] = i;
+    }
+
+    std::cout << "bucket_count: " << m.bucket_count() << "\n";
+    std::cout << "load_factor:  " << m.load_factor() << "\n";
+    std::cout << "max_load_factor: " << m.max_load_factor() << "\n";
+
+    // Find the largest bucket
+    std::size_t max_bucket_size = 0;
+    std::size_t max_bucket_idx = 0;
+    for (std::size_t i = 0; i < m.bucket_count(); ++i) {
+        auto sz = m.bucket_size(i);
+        if (sz > max_bucket_size) {
+            max_bucket_size = sz;
+            max_bucket_idx = i;
+        }
+    }
+    std::cout << "max bucket size: " << max_bucket_size
+              << " (bucket " << max_bucket_idx << ")\n";
+
+    // Ideal: max bucket size should be 1 or 2 for a good hash function
+    // If max bucket size is > 10, consider improving the hash function
+}
+```
+
+### Flat Maps and Alternative Data Structures
+
+For performance-critical code where ordered iteration is not needed, consider alternatives to
+`std::unordered_map`:
+
+- **`std::vector&lt;std::pair&lt;K,V>>>` + `std::sort` + `std::lower_bound`**: For small maps (fewer
+  than ~100 elements), a sorted vector with binary search is faster than a hash table due to cache
+  locality. Lookup is $O(\log n)$ but with a very small constant.
+
+- **`boost::flat_map`**: A sorted vector adapter that provides map semantics. Excellent cache
+  locality, but insertion is $O(n)$.
+
+- **`absl::flat_hash_map` / `absl::btree_map`**: Google's Abseil library provides highly optimized
+  hash maps with SIMD-accelerated probing and B-tree-based ordered maps.
+
+- **`tsl::hopscotch_map` / `tsl::robin_map`**: Open-addressing hash maps with better cache locality
+  than `std::unordered_map`'s separate chaining.
+
 ## See Also
 
 - [Sequence Containers](./1_sequence_containers.md)
 - [Iterator Categories, Traversal, Invalidation](./3_iterators.md)
 - [Polymorphic Memory Resources (PMR)](./4_pmr.md)
-
-:::
-
-:::

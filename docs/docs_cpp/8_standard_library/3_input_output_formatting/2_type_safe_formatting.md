@@ -16,7 +16,7 @@ compile time using a concise format specification syntax. C++23 added `std::prin
 section covers the format specification grammar, argument IDs, alignment, sign, width, precision,
 type specifiers, `std::print`, and custom type formatters.
 
-### `std::format` — Overview
+### `std::format` --- Overview
 
 `std::format` (C++20) is a type-safe formatting function that uses a format string to produce a
 `std::string` [N4950 §22.14.6]. Unlike `printf`, it checks argument types at compile time. Unlike
@@ -35,12 +35,12 @@ int main() {
 ```
 
 `std::format` is declared in `<format>` [N4950 §22.14.1] and is part of the `std` namespace. It
-returns a `std::string` by value. The format string is checked at compile time for correctness — a
+returns a `std::string` by value. The format string is checked at compile time for correctness --- a
 mismatch between the format specification and the argument type is a compile-time error [N4950
 §22.14.6.2].
 
 :::info
-The format string is a **constant expression** — it must be known at compile time. This
+The format string is a **constant expression** --- it must be known at compile time. This
 enables the compiler to parse it and verify that every `{}` field has a corresponding argument of
 the correct type. Runtime-computed format strings are not supported by `std::format` (use
 `std::vformat` for runtime format strings, at the cost of losing compile-time checking).
@@ -68,8 +68,8 @@ type              ::= type-specifier
 
 | Syntax       | Meaning                                                             |
 | :----------- | :------------------------------------------------------------------ |
-| `{}`         | Automatic indexing — arguments are consumed in order                |
-| `{0}`, `{1}` | Manual indexing — refers to the argument at that position           |
+| `{}`         | Automatic indexing --- arguments are consumed in order              |
+| `{0}`, `{1}` | Manual indexing --- refers to the argument at that position         |
 | `{name}`     | Named argument (only when using `std::format_args` with named pack) |
 
 ```cpp
@@ -94,8 +94,8 @@ Alignment controls how text is padded within a given width [N4950 §22.14.2.2]:
 | :----- | :-------------------------------------- | :---------- |
 | `&lt;` | Left-align                              | Strings     |
 | `&gt;` | Right-align                             | Numbers     |
-| `^`    | Center                                  | —           |
-| `=`    | Pad after sign/0x prefix (numbers only) | —           |
+| `^`    | Center                                  | ---         |
+| `=`    | Pad after sign/0x prefix (numbers only) | ---         |
 
 ```cpp
 #include <format>
@@ -141,7 +141,7 @@ Width specifies the minimum field width. Precision specifies the maximum number 
 strings, or the number of digits after the decimal point for floating-point numbers [N4950
 §22.14.2.2].
 
-Both can be dynamic — supplied by a runtime argument using `{}` inside the format spec:
+Both can be dynamic --- supplied by a runtime argument using `{}` inside the format spec:
 
 ```cpp
 #include <format>
@@ -163,20 +163,20 @@ width/precision, keep the argument ordering simple.
 
 #### Type Specifiers
 
-| Type      | Meaning                          | Example                                    |
-| :-------- | :------------------------------- | :----------------------------------------- |
-| `d`       | Decimal integer                  | `{}` → `42`                                |
-| `x` / `X` | Hexadecimal                      | `{}` → `2a` / `2A`                         |
-| `o`       | Octal                            | `{}` → `52`                                |
-| `b` / `B` | Binary                           | `{}` → `101010`                            |
-| `f`       | Fixed-point                      | `{}` → `3.141593`                          |
-| `e` / `E` | Scientific notation              | `{}` → `3.141593e+00`                      |
-| `g` / `G` | General (shortest of `f` or `e`) | `{}` → `3.14159`                           |
-| `a` / `A` | Hex float                        | `{}` → `0x1.921fb54411744p+1`              |
-| `s`       | String                           | `{}` → `hello`                             |
-| `c`       | Character                        | `{}` → `A`                                 |
-| `p`       | Pointer                          | `{}` → `0x7ffc1234`                        |
-| `?`       | Debug output (C++23)             | `{}` → `"hello"` (with quotes and escapes) |
+| Type      | Meaning                          | Example                                      |
+| :-------- | :------------------------------- | :------------------------------------------- |
+| `d`       | Decimal integer                  | `{}` --- `42`                                |
+| `x` / `X` | Hexadecimal                      | `{}` --- `2a` / `2A`                         |
+| `o`       | Octal                            | `{}` --- `52`                                |
+| `b` / `B` | Binary                           | `{}` --- `101010`                            |
+| `f`       | Fixed-point                      | `{}` --- `3.141593`                          |
+| `e` / `E` | Scientific notation              | `{}` --- `3.141593e+00`                      |
+| `g` / `G` | General (shortest of `f` or `e`) | `{}` --- `3.14159`                           |
+| `a` / `A` | Hex float                        | `{}` --- `0x1.921fb54411744p+1`              |
+| `s`       | String                           | `{}` --- `hello`                             |
+| `c`       | Character                        | `{}` --- `A`                                 |
+| `p`       | Pointer                          | `{}` --- `0x7ffc1234`                        |
+| `?`       | Debug output (C++23)             | `{}` --- `"hello"` (with quotes and escapes) |
 
 ### Format Specification Reference Table
 
@@ -190,7 +190,7 @@ The following table provides a comprehensive reference for `std::format` specifi
 #include <limits>
 
 void format_reference_table() {
-    // ── Integer formatting ──────────────────────────────────────────
+    // Integer formatting
     std::cout << std::format("Decimal:      {:d}\n", 255);           // 255
     std::cout << std::format("Hex lower:    {:x}\n", 255);           // ff
     std::cout << std::format("Hex upper:    {:X}\n", 255);           // FF
@@ -202,7 +202,7 @@ void format_reference_table() {
     std::cout << std::format("Signed +:     {:+d}\n", 42);           // +42
     std::cout << std::format("Signed sp:    {: d}\n", 42);           //  42
 
-    // ── Floating-point formatting ───────────────────────────────────
+    // Floating-point formatting
     std::cout << std::format("Fixed:        {:.4f}\n", 3.14159);     // 3.1416
     std::cout << std::format("Scientific:   {:.2e}\n", 3.14159);     // 3.14e+00
     std::cout << std::format("General:      {:.6g}\n", 3.14159);     // 3.14159
@@ -212,21 +212,59 @@ void format_reference_table() {
     std::cout << std::format("NaN:          {:f}\n",
         std::numeric_limits<double>::quiet_NaN());                  // nan
 
-    // ── String formatting ───────────────────────────────────────────
+    // String formatting
     std::cout << std::format("Left:         [{:<20}]\n", "left");    // [left                ]
     std::cout << std::format("Right:        [{:>20}]\n", "right");   // [               right]
     std::cout << std::format("Center:       [{:^20}]\n", "mid");     // [        mid         ]
     std::cout << std::format("Precision:    {:.3}\n", "truncate");   // tru
     std::cout << std::format("Fill char:    {:*^20}\n", "star");     // [********star********]
 
-    // ── Pointer formatting ──────────────────────────────────────────
+    // Pointer formatting
     int x = 42;
     std::cout << std::format("Pointer:      {:p}\n", static_cast<void*>(&x));
     // Pointer:      0x7ffd1234abcd (platform-dependent)
 
-    // ── Boolean formatting ──────────────────────────────────────────
+    // Boolean formatting
     std::cout << std::format("Bool text:    {:s}\n", true);          // true
     std::cout << std::format("Bool int:     {:d}\n", true);          // 1
+}
+```
+
+### Compile-Time Format String Validation
+
+#### Proof of Compile-Time Checking Mechanism
+
+**Theorem.** `std::format` rejects type mismatches between the format string and the arguments at
+compile time.
+
+**Proof.** The mechanism relies on C++20's facility for compile-time string analysis via `consteval`
+functions and NTTPs (non-type template parameters).
+
+1. `std::format` is declared as a variadic function template. Its format string parameter is a
+   `consteval`-checked NTTP of type `std::format_string<Args...>` [N4950 §22.14.6.2].
+
+2. The `std::format_string<Args...>` constructor is `consteval`. It parses the format string at
+   compile time, counting replacement fields and verifying that each field's type specification is
+   compatible with the corresponding argument type from `Args...`.
+
+3. If the number of replacement fields does not match `sizeof...(Args)`, or if a type specifier is
+   incompatible (e.g., `{:d}` for a `double` argument), the constructor fails to compile with a
+   diagnostic.
+
+4. Because the constructor is `consteval`, any failure produces a compile-time error, not a runtime
+   exception. This is a structural guarantee: no runtime path can bypass the check. QED.
+
+```cpp
+#include <format>
+#include <string>
+
+int main() {
+    // All of these are COMPILE-TIME ERRORS:
+
+    // std::format("{:d}", 3.14);        // error: 'd' requires integral type
+    // std::format("{}", 1, 2, 3);       // error: too many arguments
+    // std::format("{0} {1}", "hi");     // error: not enough arguments
+    // std::format("{}}", 42);           // error: invalid format string
 }
 ```
 
@@ -336,6 +374,72 @@ int main() {
 }
 ```
 
+#### Supporting Standard Format Specifications
+
+For production-quality formatters, delegate standard spec parsing to the base class and only handle
+custom extensions:
+
+```cpp
+#include <format>
+#include <iostream>
+#include <string>
+#include <cstdint>
+
+struct Duration {
+    int64_t nanos;
+};
+
+template <>
+struct std::formatter<Duration> : std::formatter<std::string> {
+    auto parse(format_parse_context& ctx) {
+        auto it = ctx.begin();
+        auto end = ctx.end();
+
+        // Check for custom specifier 'h' (human-readable) before standard parse
+        if (it != end && *it == 'h') {
+            spec_ = 'h';
+            ++it;
+            // 'h' does not accept fill/align/width/precision
+            if (it != end && *it != '}')
+                throw std::format_error("invalid format for Duration after 'h'");
+            return it;
+        }
+
+        // Delegate to base class for standard spec parsing (width, fill, align)
+        it = std::formatter<std::string>::parse(ctx);
+        return it;
+    }
+
+    auto format(const Duration& d, format_context& ctx) const {
+        if (spec_ == 'h') {
+            double seconds = static_cast<double>(d.nanos) / 1e9;
+            if (seconds < 1e-6) return std::format_to(ctx.out(), "{} ns", d.nanos);
+            if (seconds < 1e-3) return std::format_to(ctx.out(), "{:.3} us", seconds * 1e6);
+            if (seconds < 1.0)  return std::format_to(ctx.out(), "{:.3} ms", seconds * 1e3);
+            return std::format_to(ctx.out(), "{:.3} s", seconds);
+        }
+
+        // Standard formatting delegates to base class context
+        std::string s = std::to_string(d.nanos) + "ns";
+        return std::formatter<std::string>::format(s, ctx);
+    }
+
+private:
+    char spec_ = '\0';
+};
+
+int main() {
+    Duration d1{150};
+    Duration d2{1500000};
+    Duration d3{2500000000};
+
+    std::cout << std::format("human: {:h}\n", d1);  // human: 150 ns
+    std::cout << std::format("human: {:h}\n", d2);  // human: 1.500 ms
+    std::cout << std::format("human: {:h}\n", d3);  // human: 2.500 s
+    std::cout << std::format("standard: {:>20}\n", d1);  // standard:               150ns
+}
+```
+
 :::tip
 Inheriting from `std::formatter&lt;std::string>` (or any standard formatter) gives you access
 to the standard format specification parsing logic. If your custom type needs to support the full
@@ -417,37 +521,192 @@ int main() {
 `std::format_to_n_result` struct containing the output iterator and the total number of characters
 that _would_ have been written (useful for truncation-aware formatting).
 
+### Performance Comparison: `std::format` vs iostreams vs `printf`
+
+`std::format` is designed to be faster than iostreams and competitive with `printf` while providing
+type safety. The key advantage over iostreams is avoiding virtual dispatch and locale overhead per
+operation. The key advantage over `printf` is compile-time type checking.
+
+```cpp
+#include <format>
+#include <iostream>
+#include <cstdio>
+#include <chrono>
+#include <string>
+#include <vector>
+
+int main() {
+    constexpr int N = 1'000'000;
+    std::vector<int> values(N);
+    for (int i = 0; i < N; ++i) values[i] = i;
+
+    // Benchmark: std::format
+    auto start = std::chrono::high_resolution_clock::now();
+    for (int i = 0; i < N; ++i) {
+        auto s = std::format("value={:06d} hex={:#010x}", values[i], values[i]);
+        (void)s;
+    }
+    auto end = std::chrono::high_resolution_clock::now();
+    auto fmt_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+    // Benchmark: printf
+    start = std::chrono::high_resolution_clock::now();
+    char buf[256];
+    for (int i = 0; i < N; ++i) {
+        std::snprintf(buf, sizeof(buf), "value=%06d hex=%#010x", values[i], values[i]);
+        (void)buf;
+    }
+    end = std::chrono::high_resolution_clock::now();
+    auto printf_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+    // Benchmark: iostreams
+    start = std::chrono::high_resolution_clock::now();
+    for (int i = 0; i < N; ++i) {
+        std::ostringstream oss;
+        oss << "value=" << std::setfill('0') << std::setw(6) << values[i]
+            << " hex=0x" << std::hex << std::setw(8) << std::setfill('0') << values[i];
+        (void)oss.str();
+    }
+    end = std::chrono::high_resolution_clock::now();
+    auto io_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+    std::cout << "std::format: " << fmt_ms << " ms\n";
+    std::cout << "printf:     " << printf_ms << " ms\n";
+    std::cout << "iostreams:  " << io_ms << " ms\n";
+}
+```
+
+Typical results (GCC 13, `-O2`): `std::format` is 3-10x faster than iostreams and within 1.2-2x of
+`printf`. The exact ratio depends on the complexity of the format string and the platform.
+
+### Locale-Independent Formatting
+
+By default, `std::format` produces locale-independent output [N4950 §22.14.6.1]. This is a
+significant advantage over iostreams, which use the global locale by default and can produce
+surprising output (e.g., `1,000.50` with a thousands separator in some locales).
+
+```cpp
+#include <format>
+#include <iostream>
+#include <locale>
+
+int main() {
+    // std::format: always locale-independent (unless L specifier used)
+    std::cout << std::format("format: {}\n", 1234567.89);
+    // Output: format: 1234567.89  (always, regardless of locale)
+
+    // iostreams: locale-dependent
+    std::cout.imbue(std::locale("de_DE"));
+    std::cout << "iostream: " << 1234567.89 << "\n";
+    // Output (German locale): iostream: 1.234.567,89
+
+    // Restore default
+    std::cout.imbue(std::locale::classic());
+}
+```
+
+The `L` specifier in `std::format` enables locale-sensitive formatting:
+
+```cpp
+#include <format>
+#include <iostream>
+#include <locale>
+
+int main() {
+    std::locale::global(std::locale("en_US"));
+
+    // Without L: locale-independent
+    std::cout << std::format("No locale: {:.2f}\n", 1234567.89);
+    // Output: No locale: 1234567.89
+
+    // With L: locale-sensitive (C++20 via std::format)
+    // Note: L specifier support for floating-point is limited in early implementations
+}
+```
+
+### `std::format` with Chrono Types (C++20)
+
+`<format>` provides built-in formatting for `std::chrono` types [N4950 §22.14.5]:
+
+```cpp
+#include <format>
+#include <iostream>
+#include <chrono>
+#include <ctime>
+
+int main() {
+    auto now = std::chrono::system_clock::now();
+
+    std::cout << std::format("Default:    {}\n", now);
+    std::cout << std::format("ISO:        {:%Y-%m-%dT%H:%M:%S}\n", now);
+    std::cout << std::format("US date:    {:%m/%d/%Y}\n", now);
+    std::cout << std::format("EU date:    {:%d.%m.%Y}\n", now);
+    std::cout << std::format("Time only:  {:%H:%M:%S}\n", now);
+
+    // Duration formatting
+    auto elapsed = std::chrono::milliseconds(1234567);
+    std::cout << std::format("Elapsed:    {:%H:%M:%S}\n", elapsed);
+    // Output: Elapsed:    00:20:34
+}
+```
+
+### `std::format_to_n` for Bounded Output
+
+When writing into a fixed-size buffer, use `std::format_to_n` to avoid buffer overflows [N4950
+§22.14.6.4]:
+
+```cpp
+#include <format>
+#include <iostream>
+#include <charconv>
+
+int main() {
+    char buf[20];
+
+    auto result = std::format_to_n(buf, sizeof(buf) - 1, "Hello, {}!", "World");
+    *result.out = '\0';  // null-terminate
+
+    std::cout << "Written: " << buf << "\n";
+    std::cout << "Would need: " << result.size << " bytes\n";
+    // Written: Hello, World!
+    // Would need: 13 bytes
+
+    // Truncated case
+    auto result2 = std::format_to_n(buf, 5, "Hello, {}!", "World");
+    std::size_t written = static_cast<std::size_t>(result2.out - buf);
+    buf[written] = '\0';
+    std::cout << "Truncated: " << buf << "\n";
+    // Truncated: Hello
+}
+```
+
 ### Common Pitfalls
 
 - **Mixing argument ID modes:** You cannot mix automatic (`{}`) and manual (`{0}`, `{1}`) argument
   IDs in the same format string. Doing so is a compile-time error [N4950 §22.14.6.2]. Pick one mode
   per format string.
+
 - **Dynamic width/precision with manual IDs:** When using dynamic width (`{:{}}`) with manual
   argument IDs, the dynamic width/precision argument is consumed at its position in the argument
   list, which can create confusing off-by-one index errors. Explicitly index all arguments when
   using dynamic width.
+
 - **`std::print` thread safety:** `std::print(stdout, ...)` does not acquire a lock on the stdout
   mutex. Concurrent `std::print` calls from multiple threads produce interleaved output. Either use
   `std::print(stderr, ...)` (stderr is unbuffered) or guard stdout with a `std::mutex`.
+
 - **`std::formatter` specialization in wrong namespace:** The specialization must be in namespace
   `std`. Placing it in any other namespace, including the type's own namespace, causes the formatter
   to not be found by overload resolution [N4950 §22.14.6.3].
+
 - **Format spec `=` alignment with strings:** The `=` alignment (pad after sign/prefix) is only
   valid for numeric types. Applying it to a string throws `std::format_error` at runtime.
+
+- **Locale-dependent formatting:** By default, `std::format` uses the default locale for
+  locale-sensitive specifiers (e.g., the `L` specifier for localized numbers). For
+  locale-independent output, avoid the `L` specifier or use `std::format` without locale arguments.
 
 ## See Also
 
 - [Stream Buffers and Locale Facets](./1_stream_buffers.md)
 - [Unicode Support](./3_unicode_support.md)
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::

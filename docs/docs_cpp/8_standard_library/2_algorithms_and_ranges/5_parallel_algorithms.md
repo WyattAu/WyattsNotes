@@ -27,6 +27,25 @@ parallel and vectorized execution [N4950 §25.5]. The three standard policies ar
 | `std::execution::par`       | Parallel              | May execute in multiple threads                              |
 | `std::execution::par_unseq` | Parallel + Vectorized | May execute in multiple threads AND vectorize within threads |
 
+#### Formal Semantics of Execution Policies
+
+The standard defines execution policies via the `is_execution_policy` type trait [N4950 §25.5.1] and
+specifies constraints on element access functions:
+
+- **`seq`**: The element access function is invoked sequentially in the calling thread. The
+  invocation order is the same as the sequential overload. No concurrency, no vectorization.
+
+- **`par`**: The element access function may be invoked concurrently from multiple threads. The
+  standard imposes no ordering guarantee on invocations. The implementation may partition the input
+  range and process each partition in a separate thread. Data races in the user function are the
+  caller's responsibility.
+
+- **`par_unseq`**: In addition to `par` semantics, the element access function may be vectorized ---
+  that is, multiple elements may be processed within a single thread using SIMD instructions (e.g.,
+  SSE, AVX). This imposes an additional constraint: **the function must not acquire locks, call
+  blocking APIs, or access thread-local storage**, because the same thread may be processing
+  multiple elements simultaneously via SIMD lanes [N4950 §25.5.1].
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -286,6 +305,89 @@ reproducibility.** Floating-point addition is not associative (e.g.,
 floating-point results, or use compensated summation (Kahan summation) for accuracy.
 :::
 
+### Proof of Deterministic Results with `std::reduce`
+
+**Theorem.** `std::reduce` with `par` policy produces bit-identical results to `std::accumulate` if
+and only if the binary operation `op` is both associative and commutative over the element type.
+
+**Proof.** Let the input be $[a_1, \ldots, a_n]$ with identity `init` and operation `op`.
+
+($\Rightarrow$) Suppose `reduce` always produces the same result as `accumulate`. Then for any
+partitioning of the input into subranges
+$[a_{l_1}, \ldots, a_{r_1}], \ldots, [a_{l_k}, \ldots,
+a_{r_k}]$ where each subrange is reduced
+independently and the partial results are combined, the final result equals `accumulate`'s
+left-to-right evaluation. This is possible for all partitionings only if `op` is associative
+(re-grouping does not change the result) and commutative (re-ordering within or across subranges
+does not change the result).
+
+($\Leftarrow$) If `op` is associative and commutative, then any binary tree of `op` applications
+over the multiset $\{init, a_1, \ldots, a_n\}$ produces the same result. Since `reduce` may apply
+`op` in any tree structure and `accumulate` applies it in one specific left-associative tree, and
+both operate on the same multiset, they must produce the same result. QED.
+
+This proof shows why floating-point addition is problematic: IEEE 754 addition is neither
+associative nor commutative in general (due to rounding), so `reduce` may produce a different bit
+pattern than `accumulate` even though both are "correct" within floating-point semantics.
+
+### Vectorization Hints and `par_unseq`
+
+The `par_unseq` policy [N4950 §25.5.2] permits the implementation to use SIMD vectorization in
+addition to multi-threading. This is particularly effective for element-wise operations on arrays of
+primitive types:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <execution>
+#include <chrono>
+#include <cmath>
+
+int main() {
+    constexpr std::size_t N = 50'000'000;
+    std::vector<double> a(N), b(N), c(N);
+
+    for (std::size_t i = 0; i < N; ++i) {
+        a[i] = static_cast<double>(i) * 0.001;
+        b[i] = static_cast<double>(i) * 0.002;
+    }
+
+    // Sequential transform
+    auto start = std::chrono::high_resolution_clock::now();
+    std::transform(std::execution::seq, a.begin(), a.end(), b.begin(), c.begin(),
+        [](double x, double y) { return std::sqrt(x * x + y * y); });
+    auto end = std::chrono::high_resolution_clock::now();
+    auto seq_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+    // Parallel + vectorized transform
+    start = std::chrono::high_resolution_clock::now();
+    std::transform(std::execution::par_unseq, a.begin(), a.end(), b.begin(), c.begin(),
+        [](double x, double y) { return std::sqrt(x * x + y * y); });
+    end = std::chrono::high_resolution_clock::now();
+    auto pu_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+
+    std::cout << "seq:      " << seq_ms << " ms\n";
+    std::cout << "par_unseq: " << pu_ms << " ms\n";
+}
+```
+
+The restriction on `par_unseq` is that the element access function must be **vectorization-safe**:
+it must not synchronize with other invocations (no mutexes, no atomics, no blocking calls). This is
+because SIMD lanes within a single thread process multiple elements "simultaneously" --- a mutex
+acquire in one lane would deadlock the others.
+
+### Interaction with Standard Allocators
+
+Parallel algorithms that modify elements in-place (e.g., `std::sort`, `std::transform`) do not
+allocate through user-provided allocators. However, the internal thread management of the parallel
+execution engine may allocate through the default allocator for thread-local storage or task
+scheduling data structures [N4950 §25.5.1].
+
+If you are using a custom allocator (e.g., `std::pmr`) for your containers, the elements are still
+allocated through that allocator, but the parallel algorithm's internal bookkeeping uses the default
+allocator. This is generally transparent to the user.
+
 ### Complete Parallel Pipeline Example
 
 ```cpp
@@ -363,8 +465,7 @@ int main() {
     std::cout << "Northern hemisphere cities: " << northern << "\n";
 
     // 5. Parallel for_each: compute and display distance from Tokyo
-    const City& tokyo = cities.back();  // After sort, Tokyo should be first
-    // Find Tokyo
+    const City& tokyo = cities.back();
     auto tokyo_it = std::find_if(cities.begin(), cities.end(),
         [](const City& c) { return c.name == "Tokyo"; });
 
@@ -375,7 +476,6 @@ int main() {
             cities.begin(), cities.end(),
             distances.begin(),
             [&tokyo = *tokyo_it](const City& c) {
-                // Haversine approximation (simplified)
                 auto deg_to_rad = [](double deg) { return deg * 3.14159265 / 180.0; };
                 double dlat = deg_to_rad(c.latitude - tokyo.latitude);
                 double dlon = deg_to_rad(c.longitude - tokyo.longitude);
@@ -384,7 +484,7 @@ int main() {
                          * std::cos(deg_to_rad(c.latitude))
                          * std::sin(dlon / 2) * std::sin(dlon / 2);
                 double c_val = 2 * std::atan2(std::sqrt(a), std::sqrt(1 - a));
-                return 6371.0 * c_val;  // Earth radius in km
+                return 6371.0 * c_val;
             }
         );
 
@@ -394,6 +494,253 @@ int main() {
                       << static_cast<int>(distances[i]) << " km\n";
         }
     }
+}
+```
+
+### Comparison Table: Execution Policies
+
+| Property                 | `seq`              | `par`                    | `par_unseq`                 |
+| ------------------------ | ------------------ | ------------------------ | --------------------------- |
+| Threading                | Single             | Multiple                 | Multiple + SIMD             |
+| Ordering guarantee       | Strict             | None                     | None                        |
+| Data race safety         | Automatic          | Caller's responsibility  | Caller's responsibility     |
+| Locking in user function | Allowed            | Allowed                  | **Forbidden**               |
+| Thread-local storage     | Allowed            | Allowed                  | **Forbidden**               |
+| Blocking calls           | Allowed            | Allowed                  | **Forbidden**               |
+| SIMD auto-vectorization  | Compiler-dependent | Implementation-dependent | Guaranteed permitted        |
+| Best for                 | Small data, debug  | Large data, CPU-bound    | Array math, no side effects |
+
+### Algorithmic Parallelism vs Task Parallelism
+
+The C++ parallel algorithms model **algorithmic parallelism**: the implementation decides how to
+partition and schedule work across threads. This contrasts with **task parallelism**, where the
+programmer explicitly creates and manages threads or tasks (e.g., `std::async`, thread pools).
+
+The key distinction:
+
+- **Algorithmic parallelism** (`std::sort(par, ...)`): The programmer specifies _what_ to compute
+  but not _how_ to parallelize. The standard library implementation chooses the partitioning
+  strategy, grain size, and thread count. This is declarative and portable but gives less control.
+
+- **Task parallelism** (`std::thread`, `std::async`): The programmer explicitly defines parallel
+  tasks and their dependencies. This is imperative and gives full control over synchronization, load
+  balancing, and resource usage, but is more error-prone.
+
+```cpp
+#include <algorithm>
+#include <execution>
+#include <vector>
+#include <future>
+#include <iostream>
+#include <numeric>
+
+// Algorithmic parallelism: declarative
+void algorithmic_approach(std::vector<double>& data) {
+    // The library decides how to parallelize the sort
+    std::sort(std::execution::par, data.begin(), data.end());
+}
+
+// Task parallelism: imperative
+void task_approach(std::vector<double>& data) {
+    auto mid = data.begin() + data.size() / 2;
+
+    // Explicitly define two parallel tasks
+    auto left = std::async(std::launch::async, [&data, mid] {
+        std::sort(data.begin(), mid);
+    });
+    std::sort(mid, data.end());  // Main thread handles right half
+    left.wait();
+
+    // Merge the sorted halves
+    std::inplace_merge(data.begin(), mid, data.end());
+}
+
+int main() {
+    constexpr std::size_t N = 10'000'000;
+    std::vector<double> v1(N), v2(N);
+
+    for (std::size_t i = 0; i < N; ++i) {
+        v1[i] = v2[i] = static_cast<double>(N - i);
+    }
+
+    auto t1 = std::chrono::high_resolution_clock::now();
+    algorithmic_approach(v1);
+    auto t2 = std::chrono::high_resolution_clock::now();
+
+    auto t3 = std::chrono::high_resolution_clock::now();
+    task_approach(v2);
+    auto t4 = std::chrono::high_resolution_clock::now();
+
+    auto ms1 = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
+    auto ms2 = std::chrono::duration_cast<std::chrono::milliseconds>(t4 - t3).count();
+
+    std::cout << "Algorithmic: " << ms1 << " ms\n";
+    std::cout << "Task:         " << ms2 << " ms\n";
+
+    std::cout << "Both sorted: " << std::ranges::is_sorted(v1) << " "
+              << std::ranges::is_sorted(v2) << "\n";
+}
+```
+
+### Parallelism with Standard Allocators
+
+When a parallel algorithm modifies elements in-place (e.g., `std::sort`, `std::transform`), the
+element access function runs on multiple threads simultaneously. If the function constructs
+temporary objects, those temporaries use the default allocator (`operator new`). The parallel
+algorithm's internal thread pool management also uses the default allocator for thread-local
+storage.
+
+If you are using PMR allocators for your containers, the elements are still allocated through the
+PMR allocator, but the algorithm's internal bookkeeping (task queues, thread contexts) uses the
+default allocator. This separation is transparent to the user.
+
+### Complete List of Parallel-Capable Algorithms [N4950 S25.7]
+
+| Algorithm                              | Parallel Overload | Notes                              |
+| -------------------------------------- | :---------------: | :--------------------------------- |
+| `std::adjacent_difference`             |        Yes        | Left-to-right order not guaranteed |
+| `std::adjacent_find`                   |        Yes        | Returns any match                  |
+| `std::all_of` / `any_of`               |        Yes        |                                    |
+| `std::count` / `count_if`              |        Yes        |                                    |
+| `std::equal`                           |        Yes        |                                    |
+| `std::exclusive_scan`                  |        Yes        |                                    |
+| `std::fill` / `fill_n`                 |        Yes        |                                    |
+| `std::find` / `find_end`               |        Yes        |                                    |
+| `std::find_first_of`                   |        Yes        |                                    |
+| `std::find_if` / `find_if_not`         |        Yes        |                                    |
+| `std::for_each`                        |        Yes        |                                    |
+| `std::for_each_n`                      |        Yes        |                                    |
+| `std::generate` / `generate_n`         |        Yes        |                                    |
+| `std::inclusive_scan`                  |        Yes        |                                    |
+| `std::is_heap`                         |        Yes        |                                    |
+| `std::is_partitioned`                  |        Yes        |                                    |
+| `std::is_sorted`                       |        Yes        |                                    |
+| `std::is_sorted_until`                 |        Yes        |                                    |
+| `std::mismatch`                        |        Yes        |                                    |
+| `std::move`                            |        Yes        |                                    |
+| `std::none_of`                         |        Yes        |                                    |
+| `std::reduce`                          |        Yes        | No ordering guarantee              |
+| `std::remove` / `remove_if`            |        Yes        |                                    |
+| `std::replace` / `replace_if`          |        Yes        |                                    |
+| `std::reverse`                         |        Yes        |                                    |
+| `std::rotate`                          |        Yes        |                                    |
+| `std::search` / `search_n`             |        Yes        |                                    |
+| `std::set_difference`                  |        Yes        |                                    |
+| `std::set_intersection`                |        Yes        |                                    |
+| `std::set_symmetric_difference`        |        Yes        |                                    |
+| `std::set_union`                       |        Yes        |                                    |
+| `std::sort`                            |        Yes        |                                    |
+| `std::stable_sort`                     |    Yes (C++20)    |                                    |
+| `std::swap_ranges`                     |        Yes        |                                    |
+| `std::transform`                       |        Yes        |                                    |
+| `std::transform_exclusive_scan`        |        Yes        |                                    |
+| `std::transform_inclusive_scan`        |        Yes        |                                    |
+| `std::transform_reduce`                |        Yes        |                                    |
+| `std::uninitialized_fill`              |        Yes        |                                    |
+| `std::uninitialized_default_construct` |        Yes        |                                    |
+| `std::uninitialized_value_construct`   |        Yes        |                                    |
+| `std::min_element` / `max_element`     |        Yes        | Returns any extremum               |
+| `std::minmax_element`                  |        Yes        |                                    |
+
+### Common Pitfalls
+
+**1. Using `par_unseq` with locking:** The element access function in `par_unseq` must not acquire
+mutexes or use atomics with ordering stronger than `memory_order_relaxed`. SIMD lanes within a
+single thread execute in lockstep; a mutex in one lane blocks all lanes in that thread. This is
+undefined behavior per [N4950 §25.5.1].
+
+**2. Assuming deterministic execution order with `par`:** The standard guarantees that the output of
+`std::sort(std::execution::par, ...)` is a sorted permutation of the input, but it does not
+guarantee that elements are processed in any particular order during execution. If the comparison
+function has side effects, the behavior is undefined.
+
+**3. False sharing in parallel writes:** When different threads write to adjacent memory locations
+(e.g., elements of a `std::vector<int>`), cache line coherence traffic can degrade performance by
+10x or more. Structure parallel outputs so that different threads write to different cache lines
+(e.g., pad each element to a cache-line size, or use thread-local accumulators).
+
+**4. Not all algorithms benefit from parallelism.** `std::find` on a small vector (e.g., 10
+elements) is faster with `seq` because thread creation overhead dominates. Parallelism helps when
+$O(n \log n)$ or $O(n)$ work is spread across multiple cores. Rule of thumb: do not parallelize for
+fewer than ~10,000 elements.
+
+**5. Exception safety in parallel algorithms.** If the element access function throws, the
+implementation calls `std::terminate` [N4950 §25.5.1]. There is no mechanism to catch exceptions
+from individual elements and continue. If your function may throw, catch exceptions inside the
+function and handle them gracefully.
+
+**6. Deadlock with `par_unseq` and shared state.** The `par_unseq` policy may interleave element
+access function invocations from the same thread via SIMD. If the function accesses shared state
+without proper atomics, the interleaving causes data races even within a single thread. This is
+unique to `par_unseq` and does not occur with `par` (where each thread's invocations are
+sequential).
+
+### Parallel `std::for_each_n` and Chunk-Based Processing
+
+`std::for_each_n` applies a function to the first `n` elements. Combined with a parallel policy,
+this enables chunk-based processing where you control the grain size:
+
+```cpp
+#include <algorithm>
+#include <execution>
+#include <vector>
+#include <iostream>
+#include <numeric>
+
+int main() {
+    std::vector<int> data(1'000'000);
+    std::iota(data.begin(), data.end(), 0);
+
+    // Process in chunks using parallel for_each_n
+    std::atomic<long long> sum{0};
+
+    std::for_each_n(std::execution::par,
+        data.begin(), data.size(),
+        [&sum](int x) {
+            sum.fetch_add(x, std::memory_order_relaxed);
+        });
+
+    std::cout << "Sum: " << sum.load() << "\n";
+    // Expected: 499999500000
+}
+```
+
+### Parallel `std::copy_if` and `std::partition`
+
+Moving elements based on a predicate is a common parallel pattern:
+
+```cpp
+#include <algorithm>
+#include <execution>
+#include <vector>
+#include <iostream>
+
+int main() {
+    std::vector<int> data(1'000'000);
+    for (std::size_t i = 0; i < data.size(); ++i) {
+        data[i] = static_cast<int>(i);
+    }
+
+    // Partition: even numbers first, odd numbers after
+    auto pivot = std::partition(std::execution::par,
+        data.begin(), data.end(),
+        [](int x) { return x % 2 == 0; });
+
+    auto even_count = static_cast<std::size_t>(pivot - data.begin());
+    std::cout << "Even count: " << even_count << "\n";
+    std::cout << "First 5 evens: ";
+    for (std::size_t i = 0; i < 5; ++i) std::cout << data[i] << " ";
+    std::cout << "\n";
+
+    // Copy evens to a new vector
+    std::vector<int> evens;
+    evens.reserve(even_count);
+    std::copy_if(std::execution::par,
+        data.begin(), pivot,
+        std::back_inserter(evens),
+        [](int) { return true; });
+
+    std::cout << "Copied " << evens.size() << " evens\n";
 }
 ```
 
@@ -410,9 +757,3 @@ parallel-capable algorithms.
 - [Range Adaptors, Views, Composition](./2_range_adaptors.md)
 - [Projections and Callable Objects](./3_projections.md)
 - [Range Materialization](./4_range_materialization.md)
-
-:::
-
-:::
-
-:::
