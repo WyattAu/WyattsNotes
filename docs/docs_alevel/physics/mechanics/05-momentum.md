@@ -11,7 +11,9 @@ slug: momentum
 
 ## Momentum
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2
+:::
 
 ## 1. Linear Momentum
 
@@ -381,11 +383,13 @@ $$|\mathbf{J}| = \sqrt{J_x^2 + J_y^2}$$
 When a ball strikes a smooth wall, only the component of momentum perpendicular to the wall changes.
 The parallel component is unchanged because the wall exerts no force parallel to its surface.
 
-:::tip Exam Technique For a ball hitting a smooth wall at angle $\alpha$ to the normal with speed
+:::tip
+Exam Technique For a ball hitting a smooth wall at angle $\alpha$ to the normal with speed
 $u$ and rebounding with the normal component reduced by factor $e$: the impulse is
 $J = m(1+e)u\cos\alpha$ perpendicular to the wall, and the rebound angle $\beta$ satisfies
 $\tan\beta = \frac{u\sin\alpha}{eu\cos\alpha} = \frac{\tan\alpha}{e}$, which is greater than
-$\alpha$ when $e \lt 1$. :::
+$\alpha$ when $e \lt 1$.
+:::
 
 <details>
 <summary>Example: Ball Hitting a Wall at an Angle</summary>
@@ -447,10 +451,12 @@ $\square$
 materials involved), not of the individual bodies. For a perfectly elastic collision ($e = 1$), the
 relative speed is unchanged -- the bodies bounce off each other just as fast as they approached.
 
-:::warning Common Pitfall The coefficient of restitution applies along the **line of centres** (the
+:::warning
+Common Pitfall The coefficient of restitution applies along the **line of centres** (the
 line joining the centres of the two bodies at the moment of impact). In oblique collisions, only the
 components along this line are used in the restitution equation. The perpendicular components are
-governed by the smoothness of the surfaces. :::
+governed by the smoothness of the surfaces.
+:::
 
 ## 9. Bouncing Ball: Proof that $e = \sqrt{h'/h}$
 
@@ -476,10 +482,12 @@ $$e = \frac{v}{u} = \frac{\sqrt{2gh'}}{\sqrt{2gh}} = \sqrt{\frac{h'}{h}}$$
 
 $\square$
 
-:::tip Exam Technique This result provides a quick experimental method to determine $e$: drop a ball
+:::tip
+Exam Technique This result provides a quick experimental method to determine $e$: drop a ball
 from a known height, measure the rebound height, and compute $e = \sqrt{h'/h}$. This is often tested
 in practical exams. For successive bounces, the heights form a geometric sequence:
-$h,\ e^2h,\ e^4h,\ \ldots$ :::
+$h,\ e^2h,\ e^4h,\ \ldots$
+:::
 
 ## 10. Explosions and Rocket Propulsion
 
@@ -539,11 +547,13 @@ $$\Delta v = u\ln\left(\frac{m_0}{m_f}\right)$$
 ratio $m_0/m_f$. This is why multi-stage rockets are used -- dropping empty stages reduces $m_f$
 without reducing $m_0$.
 
-:::info Board Coverage AQA: Momentum conservation in explosions is required; the rocket equation is
+:::info
+Board Coverage AQA: Momentum conservation in explosions is required; the rocket equation is
 extension material. Edexcel CP2: Explosions appear in the momentum topic; the rocket equation is not
 explicitly required but may appear in context. OCR (A): Explosions are core; rocket propulsion is
 stretch material. CIE P2: Explosions are required; the rocket equation occasionally appears as a
-challenging problem. :::
+challenging problem.
+:::
 
 ## Further Problems
 

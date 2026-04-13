@@ -11,7 +11,9 @@ slug: kinematics
 
 ## Kinematics
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
+:::
 
 ## 1. Fundamental Definitions
 
@@ -101,7 +103,8 @@ $$s = (v - at)t + \frac{1}{2}at^2 = vt - at^2 + \frac{1}{2}at^2$$
 
 $$\boxed{s = vt - \frac{1}{2}at^2}$$
 
-:::tip Exam Technique To decide which SUVAT equation to use, identify which variable is **not**
+:::tip
+Exam Technique To decide which SUVAT equation to use, identify which variable is **not**
 given and **not** asked for, then use the equation that doesn't contain it.
 
 | Missing variable | Use                        |
@@ -137,16 +140,20 @@ straight line. Two approaches are available:
    partial squares by eye.
 2. **Integration** -- if $v(t)$ is given algebraically, compute $\int_{t_1}^{t_2} v(t)\,dt$ exactly.
 
-:::tip Exam Technique When asked to find the distance travelled from a curved $v$-$t$ graph, check
+:::tip
+Exam Technique When asked to find the distance travelled from a curved $v$-$t$ graph, check
 whether the curve crosses the time axis. If it does, the velocity changes sign and you must split
 the calculation: the **area above** the axis is positive displacement, the **area below** is
 negative displacement. The total distance is the sum of absolute areas; the net displacement is
-their algebraic sum. :::
+their algebraic sum.
+:::
 
-:::warning Common Pitfall Students often draw a tangent to a curve incorrectly by placing the ruler
+:::warning
+Common Pitfall Students often draw a tangent to a curve incorrectly by placing the ruler
 away from the point of interest. Always place the ruler so it just touches the curve **at the
 point** where you need the gradient, then extend it to read two clear coordinates for
-$\Delta y / \Delta x$. :::
+$\Delta y / \Delta x$.
+:::
 
 <details>
 <summary>Example: Finding displacement from a curved v-t graph</summary>
@@ -168,8 +175,10 @@ $$g \approx 9.81 \text{ m s}^{-2}$$
 This was established by Galileo's experiments and is a consequence of the equivalence principle
 (mass cancels in $F = ma = mg$).
 
-:::info Board Note Some boards use $g = 9.8$ m s$^{-2}$ or $g = 10$ m s$^{-2}$ in numerical
-problems. Always use the value specified in the question. :::
+:::info
+Board Note Some boards use $g = 9.8$ m s$^{-2}$ or $g = 10$ m s$^{-2}$ in numerical
+problems. Always use the value specified in the question.
+:::
 
 ## 5. Projectile Motion
 
@@ -281,18 +290,24 @@ $$\boxed{v_T \text{ is reached when } F_{\text{drag}} = mg \implies a = 0}$$
 The $v$-$t$ graph for a falling object reaching terminal velocity shows the velocity increasing with
 a decreasing gradient (decreasing acceleration) until it asymptotically approaches $v_T$.
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2
+:::
 
-:::warning Common Pitfall Terminal velocity does **not** mean the object has stopped accelerating
+:::warning
+Common Pitfall Terminal velocity does **not** mean the object has stopped accelerating
 because it has run out of force. The forces are balanced: weight down equals drag up. The
-acceleration is zero because the **net** force is zero, not because no forces act. :::
+acceleration is zero because the **net** force is zero, not because no forces act.
+:::
 
 ## 6. Non-Uniform Acceleration
 
 When acceleration is not constant, the SUVAT equations do not apply. Instead, we use calculus to
 relate displacement, velocity, and acceleration.
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P1, P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P1, P2
+:::
 
 ### The Differential Relations
 
@@ -319,11 +334,13 @@ $t$.
 | $a = f(v)$ | Rewrite as $dt/dv = 1/f(v)$ and integrate, or use $a = v\,dv/ds$ |
 | $a = f(s)$ | $a = v\,dv/ds$, integrate with respect to $s$                    |
 
-:::tip Exam Technique Identify what the acceleration is given as a function of -- time, velocity, or
+:::tip
+Exam Technique Identify what the acceleration is given as a function of -- time, velocity, or
 displacement -- to decide which calculus method to use. If $a$ is a function of $t$, integrate
 $dv/dt$ directly. If $a$ is a function of $s$, use $a = v\,dv/ds$ and integrate with respect to $s$.
 If $a$ is a function of $v$, rewrite as $dt/dv = 1/f(v)$ and integrate to find $t(v)$, then invert
-if possible. :::
+if possible.
+:::
 
 ### Derivation of $v^2 = u^2 + 2as$ by Integration
 
@@ -366,7 +383,9 @@ $$\boxed{\mathbf{v}_{AB} = \mathbf{v}_A - \mathbf{v}_B}$$
 
 This is the velocity A appears to have when observed from B's frame of reference.
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ### Resolving into Components
 
@@ -394,9 +413,11 @@ with speed $v_b$ (relative to water) can:
   component against the current is $v_b\sin\theta$. For zero downstream drift:
   $v_b\sin\theta = v_c$, giving $\theta = \arcsin(v_c/v_b)$. This is only possible if $v_b > v_c$.
 
-:::warning Common Pitfall The boat's speed $v_b$ is always relative to the water, not relative to
+:::warning
+Common Pitfall The boat's speed $v_b$ is always relative to the water, not relative to
 the ground. The ground speed is the vector sum of the boat's water-relative velocity and the current
-velocity. Never add the magnitudes directly unless the velocities are in the same direction. :::
+velocity. Never add the magnitudes directly unless the velocities are in the same direction.
+:::
 
 ### Relative Velocity and Closest Approach
 

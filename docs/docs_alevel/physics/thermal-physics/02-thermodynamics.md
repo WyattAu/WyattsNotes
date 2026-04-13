@@ -11,7 +11,9 @@ slug: thermodynamics
 
 ## Thermodynamics
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. The First Law of Thermodynamics
 
@@ -34,9 +36,11 @@ where:
 - $Q$ is the energy transferred to the system by heating (J) — positive if heat flows in
 - $W$ is the work done **on** the system (J) — positive if work is done on the system
 
-:::warning Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
+:::warning
+Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
 work done **by** the system. Always check which convention is being used. We use the "physics"
-convention where $W$ is work done on the system. :::
+convention where $W$ is work done on the system.
+:::
 
 **Intuition.** The first law is simply energy conservation applied to thermodynamic systems. You can
 increase a gas's internal energy either by heating it or by compressing it (doing work on it).
@@ -226,9 +230,11 @@ $$\text{COP}_{\text{hp}} = \frac{Q_H}{W} = \frac{T_H}{T_H - T_C}$$
 
 Note that $\text{COP}_{\text{hp}} = \text{COP}_{\text{ref}} + 1$.
 
-:::warning Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
+:::warning
+Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
 refrigerator COP ($Q_C/W$). The key difference: efficiency is a fraction (always $\lt 1$), while COP
-can exceed 1 (you move more heat than the work you put in). :::
+can exceed 1 (you move more heat than the work you put in).
+:::
 
 ## 5. The Second Law of Thermodynamics
 
@@ -297,7 +303,8 @@ molecular arrangements (high $W$). Melting increases entropy because molecules g
 more configurations. Similarly, vaporisation produces a much larger entropy increase because gas
 molecules have far more positional freedom.
 
-:::tip Exam Technique When asked about the second law, state it clearly (Clausius or Kelvin form),
+:::tip
+Exam Technique When asked about the second law, state it clearly (Clausius or Kelvin form),
 give a consequence (no 100% efficient engine), and explain in terms of entropy if possible. On a
 $p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given temperature limits.
 :::

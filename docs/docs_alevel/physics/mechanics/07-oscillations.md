@@ -488,7 +488,9 @@ $$\boxed{A_{\text{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta}}$$
 
 The resultant phase is given by $\tan\phi_{\text{res}} = \frac{A_2 \sin\delta}{A_1 + A_2 \cos\delta}$.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <details>
 <summary>Problem 11</summary>

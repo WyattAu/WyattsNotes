@@ -222,7 +222,221 @@ $R_{\text{Th}}$ = resistance between A and B with the 12 V source shorted:
 $R_{\text{Th}} = R_1 \| R_2 = \frac{6 \times 3}{6+3} = 2.0$ $\Omega$.
 
 The circuit is equivalent to a 4.0 V source with $2.0\,\Omega$ internal resistance.
+
 </details>
+
+## 6. Wheatstone Bridge
+
+A **Wheatstone bridge** is a circuit arrangement of four resistors in a diamond configuration with a
+galvanometer connected between the midpoint nodes. It provides a precise method for measuring
+unknown resistances.
+
+### Balance Condition
+
+Consider four resistors $R_1, R_2, R_3, R_4$ arranged so that $R_1$ and $R_2$ form one branch, $R_3$
+and $R_4$ form another, with a galvanometer of resistance $R_g$ connected between the junction of
+$R_1$-$R_2$ and the junction of $R_3$-$R_4$.
+
+**Derivation.** At balance, no current flows through the galvanometer ($I_g = 0$).
+
+By KCL at each junction, the current through $R_1$ equals the current through $R_2$ (call it $I_1$),
+and the current through $R_3$ equals the current through $R_4$ (call it $I_2$).
+
+Since $I_g = 0$, the p.d. across the galvanometer is zero, so:
+
+$$V_A = V_B$$
+
+where $A$ is the junction of $R_1$ and $R_3$, and $B$ is the junction of $R_2$ and $R_4$.
+
+The p.d. across $R_1$: $V_{R_1} = I_1 R_1$. The p.d. across $R_3$: $V_{R_3} = I_2 R_3$.
+
+For the galvanometer p.d. to be zero:
+
+$$I_1 R_1 = I_2 R_3 \quad \text{...(i)}$$
+
+Similarly, considering the other path:
+
+$$I_1 R_2 = I_2 R_4 \quad \text{...(ii)}$$
+
+Dividing (i) by (ii):
+
+$$\frac{R_1}{R_2} = \frac{R_3}{R_4}$$
+
+$$\boxed{R_1 R_4 = R_2 R_3}$$
+
+$\square$
+
+### Meter Bridge
+
+A **meter bridge** is a practical form of the Wheatstone bridge. A uniform resistance wire of length
+1 m replaces two of the resistors. The balance point is found by sliding a contact along the wire.
+
+At balance: $\frac{R}{S} = \frac{l_1}{l_2} = \frac{l}{100 - l}$
+
+where $R$ is the known resistance, $S$ is the unknown, and $l$ is the balance length.
+
+<details>
+<summary>Example: Wheatstone Bridge Calculation</summary>
+
+A Wheatstone bridge has $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$, $R_3 = 150\,\Omega$. Find $R_4$
+for balance.
+
+**Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac{200 \times 150}{100} = 300\,\Omega$.
+
+</details>
+
+:::warning
+Common Pitfall The Wheatstone bridge balance condition only holds when the galvanometer
+current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's laws (or Thevenin
+analysis) to find the galvanometer current.
+:::
+
+## 7. Norton's Theorem
+
+**Norton's Theorem.** Any linear two-terminal circuit can be replaced by an equivalent circuit
+consisting of a current source $I_N$ in parallel with a resistance $R_N$.
+
+### Finding $I_N$
+
+The Norton current is the short-circuit current between the two terminals (the current that flows
+when the terminals are directly connected).
+
+### Finding $R_N$
+
+The Norton resistance is the same as the Thevenin resistance: the resistance between the two
+terminals when all independent sources are replaced by their internal resistances (voltage sources
+short-circuited, current sources open-circuited).
+
+### Source Transformation
+
+Thevenin and Norton equivalents are related by:
+
+$$I_N = \frac{V_{\text{Th}}}{R_{\text{Th}}}, \qquad R_N = R_{\text{Th}}$$
+
+A voltage source $V_{\text{Th}}$ in series with $R_{\text{Th}}$ is equivalent to a current source
+$I_N$ in parallel with $R_N$.
+
+**Proof.** For the Thevenin equivalent: open-circuit voltage $= V_{\text{Th}}$, short-circuit
+current $= V_{\text{Th}}/R_{\text{Th}}$. For the Norton equivalent: short-circuit current $= I_N$,
+open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\text{Th}}/R_{\text{Th}}$ and
+$R_N = R_{\text{Th}}$. $\square$
+
+:::tip
+Exam Technique Source transformations are useful for simplifying circuits step by step.
+Convert a voltage source with series resistance to a Norton equivalent, combine parallel current
+sources, then convert back.
+:::
+
+## 8. Multi-Loop Circuit Analysis
+
+For circuits with multiple loops, a systematic approach is needed.
+
+### Loop Current Method (Mesh Analysis)
+
+1. Assign a clockwise loop current to each independent loop.
+2. Apply KVL around each loop, expressing voltage drops in terms of loop currents.
+3. Solve the resulting system of simultaneous equations.
+
+**Worked example.** Consider a circuit with two loops. Loop 1 contains a 12 V battery and
+$R_1 = 4\,\Omega$. Loop 2 contains a 6 V battery and $R_2 = 2\,\Omega$. The shared branch contains
+$R_3 = 6\,\Omega$.
+
+Assign loop currents $I_1$ (loop 1, clockwise) and $I_2$ (loop 2, clockwise).
+
+**Loop 1 (KVL):** $12 = 4I_1 + 6(I_1 - I_2)$
+
+**Loop 2 (KVL):** $6 = 2I_2 + 6(I_2 - I_1)$
+
+Expanding:
+
+$$12 = 10I_1 - 6I_2 \quad \text{...(i)}$$ $$6 = -6I_1 + 8I_2 \quad \text{...(ii)}$$
+
+From (i): $I_2 = (10I_1 - 12)/6$.
+
+Substituting into (ii): $6 = -6I_1 + 8(10I_1 - 12)/6 = -6I_1 + (80I_1 - 96)/6$.
+
+$36 = -36I_1 + 80I_1 - 96$. $132 = 44I_1$. $I_1 = 3.0$ A.
+
+$I_2 = (30 - 12)/6 = 3.0$ A.
+
+Current through $R_3$: $I_1 - I_2 = 0$ A (the shared resistor carries no current in this case).
+
+### Number of Independent Equations
+
+For a circuit with $b$ branches and $n$ nodes:
+
+- KCL provides $n - 1$ independent equations.
+- KVL provides $b - n + 1$ independent equations.
+- Total: $(n - 1) + (b - n + 1) = b$ equations for $b$ unknown branch currents.
+
+## 9. Measuring Instruments and Loading Effects
+
+### Ideal vs Real Instruments
+
+An **ideal voltmeter** has infinite resistance ($R_V \to \infty$) and draws zero current. A **real
+voltmeter** has finite resistance (typically $10\,\text{k}\Omega$ to $10\,\text{M}\Omega$ for
+digital meters).
+
+An **ideal ammeter** has zero resistance ($R_A \to 0$) and drops zero voltage. A **real ammeter**
+has finite (but small) resistance.
+
+### Loading Error
+
+When a voltmeter of resistance $R_V$ is connected across a resistor $R_2$ in a potential divider,
+the parallel combination changes the circuit:
+
+$$R_{\text{eff}} = \frac{R_2 R_V}{R_2 + R_V}$$
+
+The measured voltage is:
+
+$$V_{\text{measured}} = V_{\text{in}} \cdot \frac{R_{\text{eff}}}{R_1 + R_{\text{eff}}}$$
+
+which is always less than the true voltage $V_{\text{true}} = V_{\text{in}} \cdot R_2/(R_1 + R_2)$.
+
+**Proof that loading always reduces the reading.** Since $R_{\text{eff}} \lt R_2$ (parallel
+resistance is less than the smallest), and $V_{\text{out}}$ is an increasing function of the lower
+resistance in the divider, we have $V_{\text{measured}} \lt V_{\text{true}}$. $\square$
+
+### Voltmeter Multiplier
+
+To extend the range of a galvanometer (full-scale current $I_g$, internal resistance $R_g$) to
+measure voltage up to $V_{\text{range}}$:
+
+A series "multiplier" resistor $R_s$ is added so that at full scale:
+
+$$V_{\text{range}} = I_g(R_g + R_s)$$
+
+$$\boxed{R_s = \frac{V_{\text{range}}}{I_g} - R_g}$$
+
+### Ammeter Shunt
+
+To extend the range of a galvanometer to measure current up to $I_{\text{range}}$:
+
+A parallel "shunt" resistor $R_{\text{shunt}}$ diverts excess current so that $I_g$ flows through
+the galvanometer:
+
+$$I_g R_g = (I_{\text{range}} - I_g) R_{\text{shunt}}$$
+
+$$\boxed{R_{\text{shunt}} = \frac{R_g \cdot I_g}{I_{\text{range}} - I_g}}$$
+
+<details>
+<summary>Example: Ammeter Shunt Calculation</summary>
+
+A galvanometer has $R_g = 50\,\Omega$ and full-scale current $I_g = 1.0$ mA. Calculate the shunt
+resistance to convert it to a 0--5 A ammeter.
+
+**Answer.**
+$R_{\text{shunt}} = \frac{50 \times 1.0 \times 10^{-3}}{5.0 - 1.0 \times 10^{-3}} = \frac{0.050}{4.999} = 0.0100\,\Omega$.
+
+Note the very small shunt resistance — most current bypasses the galvanometer.
+
+</details>
+
+:::warning
+Common Pitfall A voltmeter with insufficiently high resistance can significantly alter
+the circuit it is measuring. Always ensure $R_V \gg R_{\text{circuit}}$ (rule of thumb:
+$R_V \gt 10 \times R_{\text{circuit}}$ for less than 10% loading error).
+:::
 
 ## Problem Set
 
@@ -236,6 +450,7 @@ $\frac{1}{R} = \frac{1}{4} + \frac{1}{6} + \frac{1}{12} = \frac{3 + 2 + 1}{12} =
 $R = 2.0$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Parallel Combination](#parallel-combination)
+
 </details>
 
 <details>
@@ -246,6 +461,7 @@ supply. Calculate the output voltage across the 5.0 k$\Omega$ resistor.
 **Answer.** $V_{\text{out}} = 9.0 \times \frac{5.0}{10 + 5.0} = 9.0 \times \frac{1}{3} = 3.0$ V.
 
 <b>If you get this wrong, revise:</b> [Potential Dividers](#3-potential-dividers)
+
 </details>
 
 <details>
@@ -261,6 +477,7 @@ external resistor.
 (c) $P = I^2R = 4.0 \times 5.5 = 22$ W.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
+
 </details>
 
 <details>
@@ -301,6 +518,7 @@ direction in branch 2).
 This means the 12 V battery is driving current through the 6 V battery (charging it).
 
 <b>If you get this wrong, revise:</b> [Kirchhoff's Laws](#1-kirchhoffs-laws)
+
 </details>
 
 <details>
@@ -317,6 +535,7 @@ $6.0 + 1.5r = 7.2 + 0.80r \implies 0.70r = 1.2 \implies r = 1.71\,\Omega$.
 $\mathcal{E} = 6.0 + 1.5(1.71) = 6.0 + 2.57 = 8.57$ V $\approx 8.6$ V.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
+
 </details>
 
 <details>
@@ -329,6 +548,7 @@ across a 24 V supply, with terminals across $R_2$.
 $R_{\text{Th}} = R_1 \| R_2 = \frac{8 \times 4}{8+4} = \frac{32}{12} = 2.67\,\Omega$.
 
 <b>If you get this wrong, revise:</b> [Thevenin's Theorem](#5-thevenins-theorem)
+
 </details>
 
 <details>
@@ -346,6 +566,7 @@ $R_{\text{total}} = 3 + 3 = 6\,\Omega$.
 
 <b>If you get this wrong, revise:</b>
 [Series and Parallel Resistors](#2-series-and-parallel-resistors)
+
 </details>
 
 <details>
@@ -361,6 +582,7 @@ Terminal p.d.: $V = IR_L = 0.703 \times 12 = 8.44$ V. This exceeds the rated 6.0
 over-driven (it would likely burn out).
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
+
 </details>
 
 <details>
@@ -380,6 +602,7 @@ A. $\checkmark$
 
 <b>If you get this wrong, revise:</b>
 [Series and Parallel Resistors](#2-series-and-parallel-resistors)
+
 </details>
 
 <details>
@@ -393,6 +616,7 @@ is connected in series with a component. To avoid dropping significant voltage a
 circuit, its resistance should be very low (ideally zero).
 
 <b>If you get this wrong, revise:</b> [Kirchhoff's Laws](#1-kirchhoffs-laws)
+
 </details>
 
 <details>
@@ -408,6 +632,7 @@ At $50°$C:
 $V_{\text{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{10500} = 0.714$ V.
 
 <b>If you get this wrong, revise:</b> [Potential Dividers](#3-potential-dividers)
+
 </details>
 
 <details>
@@ -428,8 +653,92 @@ $\mathcal{E} \cdot \mathcal{E}/(2r) = \mathcal{E}^2/(2r)$. Efficiency
 $= P_{\text{load}}/P_{\text{total}} = 1/2 = 50\%$.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
+
 </details>
 
-:::
+<details>
+<summary>Problem 13</summary>
+A Wheatstone bridge has $R_1 = 120\,\Omega$, $R_2 = 180\,\Omega$, and $R_3 = 200\,\Omega$. Find $R_4$ for balance.
 
-:::
+**Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac{180 \times 200}{120} = 300\,\Omega$.
+
+<b>If you get this wrong, revise:</b> [Wheatstone Bridge](#6-wheatstone-bridge)
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+A circuit has a Thevenin equivalent of $V_{\text{Th}} = 20$ V and $R_{\text{Th}} = 5\,\Omega$. Find the Norton equivalent.
+
+**Answer.** $I_N = V_{\text{Th}}/R_{\text{Th}} = 20/5 = 4.0$ A. $R_N = R_{\text{Th}} = 5\,\Omega$.
+
+The Norton equivalent is a 4.0 A current source in parallel with $5\,\Omega$.
+
+<b>If you get this wrong, revise:</b> [Norton's Theorem](#7-nortons-theorem)
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+A potential divider with $R_1 = 10\,\text{k}\Omega$ and $R_2 = 10\,\text{k}\Omega$ across a 12 V supply is measured with a voltmeter of resistance $R_V = 10\,\text{k}\Omega$ across $R_2$. Calculate the loading error.
+
+**Answer.** True voltage: $V_{\text{true}} = 12 \times \frac{10}{20} = 6.00$ V.
+
+$R_{\text{eff}} = \frac{10 \times 10}{10 + 10} = 5.0\,\text{k}\Omega$.
+
+$V_{\text{measured}} = 12 \times \frac{5.0}{10 + 5.0} = 12 \times \frac{1}{3} = 4.00$ V.
+
+Loading error $= \frac{6.00 - 4.00}{6.00} \times 100 = 33.3\%$.
+
+<b>If you get this wrong, revise:</b>
+[Measuring Instruments and Loading Effects](#9-measuring-instruments-and-loading-effects)
+
+</details>
+
+<details>
+<summary>Problem 16</summary>
+A galvanometer has $R_g = 100\,\Omega$ and full-scale deflection at $I_g = 50\,\mu$A. Calculate the multiplier resistance needed to convert it into a voltmeter with range 0--50 V.
+
+**Answer.**
+$R_s = \frac{V_{\text{range}}}{I_g} - R_g = \frac{50}{50 \times 10^{-6}} - 100 = 10^6 - 100 \approx 1.0\,\text{M}\Omega$.
+
+<b>If you get this wrong, revise:</b>
+[Measuring Instruments and Loading Effects](#9-measuring-instruments-and-loading-effects)
+
+</details>
+
+<details>
+<summary>Problem 17</summary>
+In a two-loop circuit: Loop 1 has a 24 V battery with $R_1 = 3\,\Omega$, loop 2 has a 12 V battery with $R_2 = 6\,\Omega$, and the shared branch has $R_3 = 4\,\Omega$. Both batteries drive current clockwise. Find the current through $R_3$.
+
+**Answer.** Assign $I_1$ (loop 1, CW) and $I_2$ (loop 2, CW).
+
+Loop 1: $24 = 3I_1 + 4(I_1 - I_2) = 7I_1 - 4I_2$ ... (i).
+
+Loop 2: $12 = 6I_2 + 4(I_2 - I_1) = -4I_1 + 10I_2$ ... (ii).
+
+From (i): $I_1 = (24 + 4I_2)/7$.
+
+Substitute into (ii): $12 = -4(24 + 4I_2)/7 + 10I_2$.
+
+$84 = -96 - 16I_2 + 70I_2$. $180 = 54I_2$. $I_2 = 3.33$ A.
+
+$I_1 = (24 + 13.33)/7 = 37.33/7 = 5.33$ A.
+
+Current through $R_3$: $I_1 - I_2 = 5.33 - 3.33 = 2.0$ A (from node A towards node B).
+
+<b>If you get this wrong, revise:</b> [Multi-Loop Circuit Analysis](#8-multi-loop-circuit-analysis)
+
+</details>
+
+<details>
+<summary>Problem 18</summary>
+A meter bridge has a wire of length 100 cm. With a known resistance $R = 10\,\Omega$ in the left gap, the balance point is at 40 cm from the left end. Find the unknown resistance $S$.
+
+**Answer.** At balance: $R/S = l/(100 - l) = 40/60 = 2/3$.
+
+$S = R \times 60/40 = 10 \times 1.5 = 15\,\Omega$.
+
+<b>If you get this wrong, revise:</b> [Wheatstone Bridge](#6-wheatstone-bridge)
+
+</details>

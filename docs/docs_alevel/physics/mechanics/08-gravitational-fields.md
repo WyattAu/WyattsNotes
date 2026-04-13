@@ -438,7 +438,9 @@ The escape velocity is $\sqrt{2} \approx 1.41$ times the circular orbital speed 
 
 An object in a circular orbit needs a speed increase of $(\sqrt{2} - 1) \times 100\% \approx 41\%$ to escape. This is why spacecraft use gravitational slingshots or multi-stage rockets rather than a single impulse to escape Earth's gravity efficiently.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 <details>
 <summary>Problem 11</summary>

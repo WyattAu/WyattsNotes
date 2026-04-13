@@ -11,7 +11,9 @@ slug: thermal-properties
 
 ## Thermal Properties
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. Temperature Scales
 
@@ -51,9 +53,11 @@ $$\boxed{\langle x^2\rangle^{1/2} \propto \sqrt{t}}$$
 This is a hallmark signature of Brownian motion and provided the first direct evidence for the
 existence of atoms and molecules.
 
-:::info Board Coverage AQA: Brownian motion is required practical observation. Edexcel: Explanation
+:::info
+Board Coverage AQA: Brownian motion is required practical observation. Edexcel: Explanation
 in terms of molecular bombardment. OCR (A): Historical context and Einstein's analysis. CIE:
-Qualitative and quantitative treatment. :::
+Qualitative and quantitative treatment.
+:::
 
 ## 2. Specific Heat Capacity
 
@@ -78,10 +82,12 @@ $$\boxed{Q = mL}$$
 increasing kinetic energy, so the temperature remains constant despite energy input. Vaporisation
 requires much more energy than fusion because gas molecules are completely separated.
 
-:::warning Common Pitfall Do not confuse specific heat capacity (which raises temperature) with
+:::warning
+Common Pitfall Do not confuse specific heat capacity (which raises temperature) with
 latent heat (which changes state at constant temperature). In a heating curve, the flat sections are
 phase changes (latent heat), and the sloped sections are temperature changes (specific heat
-capacity). :::
+capacity).
+:::
 
 ### Internal Energy
 
@@ -268,9 +274,11 @@ $\square$
 moment of inertia. For a diatomic molecule, rotation about the bond axis does not count (moment of
 inertia is negligible), leaving only 2 rotational DOF.
 
-:::warning Common Pitfall At A-Level, vibrational DOF are not considered (they are significant only
+:::warning
+Common Pitfall At A-Level, vibrational DOF are not considered (they are significant only
 at high temperatures). The equipartition theorem applies to each fully-excited quadratic DOF. At
-room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6. :::
+room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6.
+:::
 
 ## 7. Maxwell-Boltzmann Speed Distribution
 
@@ -294,9 +302,11 @@ As temperature increases, the distribution broadens and the peak shifts right (f
 but the area under the curve stays normalised to 1 (total probability). As mass increases, the
 distribution narrows and shifts left (heavier molecules move more slowly at the same temperature).
 
-:::info Board Coverage AQA: Qualitative understanding of the distribution shape. Edexcel: Comparison
+:::info
+Board Coverage AQA: Qualitative understanding of the distribution shape. Edexcel: Comparison
 of speeds at different temperatures. OCR (A): Ratio of speeds for different gases. CIE: Quantitative
-use of all three speed measures. :::
+use of all three speed measures.
+:::
 
 <details>
 <summary>Example: Speed Ratio for Different Gases</summary>
