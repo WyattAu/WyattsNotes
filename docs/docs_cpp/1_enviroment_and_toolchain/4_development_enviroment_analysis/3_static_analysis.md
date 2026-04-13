@@ -14,8 +14,8 @@ Static Analysis involves examining source code without executing it. Unlike the 
 focuses on grammar and binary generation, static analyzers focus on correctness, readability.
 
 In a robust architecture, static analysis is not a manual task performed occasionally; it is a
-**Continuous Pipeline** integrated directly into the build system. Following covers the two dominant
-tools in the ecosystem: **clang-tidy** and **Cppcheck**.
+**Continuous Pipeline** integrated directly into the build system. Following covers the dominant
+tools in the ecosystem: **clang-tidy**, **Cppcheck**, and enterprise-grade alternatives.
 
 ## 1. Clang-Tidy (The AST Linter)
 
@@ -68,7 +68,123 @@ void func() {
 }
 ```
 
-## 2. Cppcheck (The Data Flow Analyzer)
+### Per-Line vs Block Suppression
+
+For legacy files that trigger many warnings, block suppression is available since clang-tidy 14:
+
+```cpp
+// NOLINTBEGIN(cert-err58-cpp, cppcoreguidelines-pro-bounds-pointer-arithmetic)
+legacy_c_api_function(buffer, size);
+process_raw_pointer(ptr);
+// NOLINTEND(cert-err58-cpp, cppcoreguidelines-pro-bounds-pointer-arithmetic)
+```
+
+## 2. Analysis Techniques
+
+Static analysis tools employ several distinct analysis techniques, each with different precision and
+cost characteristics:
+
+### 2.1 AST Pattern Matching
+
+The simplest technique. The analyzer walks the AST and matches patterns against known bug or style
+violations. This is fast (O(n) in AST size) but can only detect syntactic patterns, not semantic
+bugs.
+
+**Examples:** `modernize-use-override` (detects virtual function overrides without `override`),
+`bugprone-sizeof-expression` (detects `sizeof(ptr)` instead of `sizeof(*ptr)`).
+
+### 2.2 Data Flow Analysis
+
+Tracks how values flow through the program. At each program point, the analyzer maintains a set of
+facts (e.g., "variable `x` is null," "buffer `buf` has been freed"). These facts propagate through
+assignments, function calls, and control flow merges.
+
+**Example:** Detecting use of an uninitialized variable:
+
+```cpp
+int x;
+if (condition) {
+    x = 42;
+}
+// At this point, data flow analysis knows x may be uninitialized
+// (fact: x is {uninitialized, 42} on the two paths)
+return x;  // bugprone: possible use of uninitialized variable
+```
+
+### 2.3 Path-Sensitive Analysis
+
+A refinement of data flow analysis that tracks facts **per execution path** rather than merging them
+at join points. This is more precise but exponentially more expensive.
+
+**Example:** Distinguishing two paths where a pointer is null vs non-null:
+
+```cpp
+int* p = get_pointer();
+if (p == nullptr) {
+    // Path 1: p is definitely null
+    log_error("null pointer");
+    return -1;
+}
+// Path 2: p is definitely non-null (the null path returned above)
+// Path-sensitive analysis knows p != nullptr here
+return *p;  // no warning
+```
+
+The Clang Static Analyzer (accessed via `clang-analyzer-*` checks in clang-tidy) uses path-sensitive
+analysis based on an exploration engine (symbolic execution with a configurable exploration budget).
+
+### 2.4 Abstract Interpretation
+
+Abstract interpretation is a theoretical framework for static analysis. It computes an
+**over-approximation** of all possible program behaviors using abstract domains (intervals, signs,
+congruences). The analysis is sound: if the analysis does not report a bug, the bug does not exist
+(within the precision of the abstract domain).
+
+**Example:** Interval analysis for integer overflow:
+
+```cpp
+int f(int x) {
+    // Abstract domain: x ∈ [-2^31, 2^31 - 1]
+    // After the check: x ∈ [1, 2^31 - 1]
+    if (x > 0) {
+        // x + 1 ∈ [2, 2^31] — may overflow!
+        return x + 1;
+    }
+    return 0;
+}
+```
+
+### 2.5 Taint Analysis
+
+Taint analysis tracks how untrusted data (user input, network data, file content) flows through the
+program. If tainted data reaches a security-sensitive operation (SQL query, shell command, memory
+allocation size), the analyzer reports a vulnerability.
+
+**Example:** SQL injection detection:
+
+```cpp
+void handle_request(const std::string& user_input) {
+    // user_input is a taint source
+    std::string query = "SELECT * FROM users WHERE name = '" + user_input + "'";
+    // query is now tainted
+    db.execute(query);  // taint sink — potential SQL injection
+}
+```
+
+Clang-tidy does not have built-in taint analysis. PVS-Studio and SonarQube provide taint analysis
+capabilities for C++.
+
+### Comparison of Analysis Techniques
+
+| Technique               | Precision | Cost      | Tools Using It           |
+| :---------------------- | :-------- | :-------- | :----------------------- |
+| AST Pattern Matching    | Low       | Very Low  | clang-tidy (most checks) |
+| Data Flow Analysis      | Medium    | Medium    | cppcheck, clang-analyzer |
+| Path-Sensitive          | High      | High      | clang-analyzer, Coverity |
+| Abstract Interpretation | High      | Very High | Polyspace, Astrée        |
+| Taint Analysis          | High      | High      | PVS-Studio, SonarQube    |
+
+## 3. Cppcheck (The Data Flow Analyzer)
 
 **Cppcheck** uses a custom parser, not Clang. While it may struggle with highly complex template
 metaprogramming, it excels at **Data Flow Analysis**. It is often faster than clang-tidy and finds
@@ -84,7 +200,20 @@ Cppcheck uses inline comments for suppression.
 int x;
 ```
 
-## 3. CMake Pipeline Integration
+### Cppcheck Configuration File
+
+For project-wide suppression, use a `.cppcheck` file:
+
+```
+# .cppcheck
+--enable=all
+--suppress=missingIncludeSystem
+--suppress=unusedFunction
+--std=c++20
+-I include/
+```
+
+## 4. CMake Pipeline Integration
 
 The architectural standard is to run analysis **during compilation**. CMake provides native
 properties to inject these tools into the build graph.
@@ -137,7 +266,7 @@ Static analysis is computationally expensive.
 - **Debug Builds:** Disable analysis to keep iteration times fast.
 - **CI/Release Builds:** Enable analysis to enforce quality gates.
 
-## 4. Execution via Compilation Database
+## 5. Execution via Compilation Database
 
 Sometimes running analysis as part of the build is too slow. You can run `clang-tidy` independently
 using the `compile_commands.json` database generated in Module 4.1.
@@ -153,7 +282,7 @@ run-clang-tidy -p build/
 This script (`run-clang-tidy`) wraps the binary and schedules analysis jobs across all available
 cores.
 
-## 5. Architectural Strategy for CI/CD
+## 6. Architectural Strategy for CI/CD
 
 In a Continuous Integration pipeline, the static analysis step serves as a **Quality Gate**.
 
@@ -180,12 +309,39 @@ In CMake/Ninja workflows, the standard mitigation is **Incremental Analysis**:
 git diff --name-only origin/main | grep '\.cpp$' | xargs clang-tidy -p build/
 ```
 
-## 6. Clang-Tidy Check Categories
+### Complete GitHub Actions Pipeline
+
+```yaml
+name: Static Analysis
+
+on: [push, pull_request]
+
+jobs:
+  clang-tidy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install clang-tidy
+        run: sudo apt install clang-tidy
+
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Release
+
+      - name: Run clang-tidy on changed files
+        run: |
+          git diff --name-only origin/main | grep -E '\.(cpp|hpp|h)$' | \
+            xargs -I{} clang-tidy -p build --warnings-as-errors='*' {}
+```
+
+## 7. Clang-Tidy Check Categories
 
 Clang-Tidy organizes its checks into named modules. Understanding these modules helps you adopt
 checks incrementally without overwhelming the build with warnings.
 
-### 6.1 modernize-\*
+### 7.1 modernize-\*
 
 Modernizes code to use contemporary C++ idioms. These are the safest checks to enable first.
 
@@ -200,7 +356,7 @@ Modernizes code to use contemporary C++ idioms. These are the safest checks to e
 | `modernize-loop-convert`         | Converts `for` loops to range-for where applicable   | Index-based → range-based                      |
 | `modernize-use-starts-ends-with` | Replaces hand-rolled prefix/suffix checks            | `s.find(x) == 0` → `s.starts_with(x)`          |
 
-### 6.2 bugprone-\*
+### 7.2 bugprone-\*
 
 Catches common mistakes that compilers often miss. These are higher-priority checks.
 
@@ -214,7 +370,7 @@ Catches common mistakes that compilers often miss. These are higher-priority che
 | `bugprone-sizeof-expression`          | `sizeof(ptr)` instead of `sizeof(*ptr)`                |
 | `bugprone-integer-division`           | Integer division where floating-point was intended     |
 
-### 6.3 readability-\*
+### 7.3 readability-\*
 
 Enforces consistent style. Some are opinionated — disable the ones that conflict with your project's
 conventions.
@@ -228,7 +384,7 @@ conventions.
 | `readability-implicit-bool-conversion` | Flags implicit conversions to/from `bool`           |
 | `readability-simplify-boolean-expr`    | Simplifies redundant boolean expressions            |
 
-### 6.4 performance-\*
+### 7.4 performance-\*
 
 Identifies patterns that prevent the compiler from generating optimal code.
 
@@ -240,7 +396,7 @@ Identifies patterns that prevent the compiler from generating optimal code.
 | `performance-no-int-to-ptr`                   | Integer-to-pointer conversion without `reinterpret_cast`   |
 | `performance-move-const-arg`                  | Moving from a const value (copy, not move, occurs)         |
 
-## 7. Incremental Adoption Strategy
+## 8. Incremental Adoption Strategy
 
 Enabling all checks at once on a large codebase generates thousands of warnings. Use an incremental
 strategy to adopt clang-tidy without blocking development.
@@ -271,7 +427,7 @@ git diff --name-only HEAD~1 -- '*.cpp' '*.h' '*.hpp' | \
 
 Once the codebase is clean, enable `WarningsAsErrors: "*"` for the full project.
 
-## 8. Integrating with clangd (IDE Experience)
+## 9. Integrating with clangd (IDE Experience)
 
 **clangd** is the language server that powers IDE features (autocomplete, go-to-definition,
 diagnostics) for C++ in VS Code, Neovim, CLion, and other editors. clangd reads the `.clang-tidy`
@@ -315,7 +471,7 @@ Diagnostics:
   suite via `run-clang-tidy` in CI.
 - The `--header-filter` option in `.clang-tidy` reduces analysis scope and speeds up clangd.
 
-## 9. Cppcheck: Usage and Comparison
+## 10. Cppcheck: Usage and Comparison
 
 ### Running Cppcheck
 
@@ -330,19 +486,21 @@ cmake -S . -B build -DCMAKE_CXX_CPPCHECK="cppcheck;--enable=all;--error-exitcode
 cppcheck --enable=all --htmlstep=2 --report-minimum-severity=warning src/ --output-file=report.html
 ```
 
-### Cppcheck vs Clang-Tidy
+### Tool Comparison Table
 
-| Feature             | Clang-Tidy                        | Cppcheck                              |
-| :------------------ | :-------------------------------- | :------------------------------------ |
-| Parser              | Clang AST (full C++ support)      | Custom parser (limited templates)     |
-| Data flow analysis  | Via `clang-analyzer-*` module     | Built-in, strong                      |
-| Template support    | Full                              | Limited                               |
-| Speed               | Slower (full AST parse)           | Faster                                |
-| Autofix             | Yes (`--fix`)                     | No                                    |
-| CI/CD integration   | Via CMake or `run-clang-tidy`     | Via CMake or direct invocation        |
-| IDE integration     | clangd (real-time)                | Limited (plugin-based)                |
-| False positive rate | Moderate (template edge cases)    | Moderate (data flow edge cases)       |
-| Best at             | Style, modernization, refactoring | Buffer overruns, leaks, uninitialized |
+| Feature             | Clang-Tidy                        | Cppcheck                              | PVS-Studio                   | SonarQube                      |
+| :------------------ | :-------------------------------- | :------------------------------------ | :--------------------------- | :----------------------------- |
+| Parser              | Clang AST (full C++ support)      | Custom parser (limited templates)     | Clang-based + custom         | Clang-based                    |
+| Data flow analysis  | Via `clang-analyzer-*` module     | Built-in, strong                      | Path-sensitive               | Path-sensitive                 |
+| Taint analysis      | No                                | No                                    | Yes                          | Yes                            |
+| Template support    | Full                              | Limited                               | Full                         | Full                           |
+| Speed               | Slower (full AST parse)           | Faster                                | Slow (commercial)            | Slow (commercial)              |
+| Autofix             | Yes (`--fix`)                     | No                                    | No (suggests fixes)          | No                             |
+| CI/CD integration   | Via CMake or `run-clang-tidy`     | Via CMake or direct invocation        | Native CI plugin             | Native CI pipeline             |
+| IDE integration     | clangd (real-time)                | Limited (plugin-based)                | Plugin for VS/JetBrains      | Plugin for VS/JetBrains        |
+| False positive rate | Moderate (template edge cases)    | Moderate (data flow edge cases)       | Low                          | Low-Medium                     |
+| Licensing           | Open source (Apache 2.0)          | Open source (GPL)                     | Commercial                   | Commercial                     |
+| Best at             | Style, modernization, refactoring | Buffer overruns, leaks, uninitialized | Complex logic bugs, security | Code quality metrics, security |
 
 ### When to Use Both
 
@@ -350,20 +508,7 @@ In practice, using **both** tools catches the widest range of bugs. Clang-tidy e
 modernization and style enforcement; cppcheck excels at data-flow bugs that require path-sensitive
 analysis (e.g., using an uninitialized variable on a specific code path).
 
-## Common Pitfalls
-
-- **Enabling `-*` without understanding what it disables.** This turns off ALL checks, then you
-  selectively re-enable. Forgetting to re-enable important checks means they are silently skipped.
-- **Suppressing warnings instead of fixing them.** Every `NOLINT` comment should have a
-  justification. Use `// NOLINT(check-name): reason` to document why the suppression exists.
-- **Not pinning clang-tidy version.** Different clang-tidy versions have different check sets. Pin
-  the version in CI to avoid surprising new warnings.
-- **Ignoring header files.** If `HeaderFilterRegex` is too restrictive, bugs in headers go
-  undetected.
-- **Running analysis without a compilation database.** Without `compile_commands.json`, clang-tidy
-  cannot resolve includes, macros, or platform-specific code correctly.
-
-## 10. Static Analysis for Security (CERT C++ Coding Standards)
+## 11. Static Analysis for Security (CERT C++ Coding Standards)
 
 Beyond correctness and style, static analysis tools can enforce security rules from the **CERT C++
 Coding Standard**. clang-tidy includes the `cert-*` check group, which maps directly to CERT
@@ -382,7 +527,7 @@ Enabling `cert-*` in CI is a low-cost way to catch common vulnerability patterns
 checks are also covered by `bugprone-*` and `cppcoreguidelines-*`, so the overlap is intentional —
 CERT rules provide a formal security justification for checks you might already have enabled.
 
-## 11. False Positive Management at Scale
+## 12. False Positive Management at Scale
 
 In large codebases (100k+ lines), false positives are inevitable. A disciplined approach to managing
 them prevents the suppression mechanism from becoming a liability:
@@ -422,7 +567,7 @@ if [ "$NOLINT_COUNT" -gt "$ALLOWED_SUPPRESSIONS" ]; then
 fi
 ```
 
-## 12. clang-tidy Performance Profiling
+## 13. clang-tidy Performance Profiling
 
 For large projects, clang-tidy can become the bottleneck in the CI pipeline. Understanding where
 time is spent helps optimize the analysis configuration:
@@ -446,7 +591,132 @@ In practice, splitting analysis into a fast path (`bugprone-*`, `modernize-*`, `
 runs on every commit and a slow path (`clang-analyzer-*`, `cppcoreguidelines-pro-bounds-*`) that
 runs nightly provides the best developer experience.
 
+## 14. Clang-Tidy Autofix Infrastructure
+
+clang-tidy's `--fix` and `--fix-errors` flags automatically apply suggested fixes to source code.
+This is the most powerful feature of clang-tidy: it can refactor an entire codebase in a single
+pass.
+
+### Safe Autofix Workflow
+
+```bash
+# Step 1: Dry run — show what would be changed
+clang-tidy -p build/ --checks='modernize-*' --fix-errors src/ --dry-run
+
+# Step 2: Apply fixes
+clang-tidy -p build/ --checks='modernize-*' --fix-errors src/
+
+# Step 3: Format the result (clang-tidy does not reformat)
+clang-format -i src/**/*.cpp src/**/*.hpp src/**/*.h
+```
+
+:::warning
+Always run clang-tidy fixes in a separate commit. Review the diff carefully before
+merging. Some fixes (e.g., `modernize-use-auto`) can change semantics if the deduced type is not
+what you expected.
+:::
+
+### Bulk Refactoring with `--fix`
+
+A common use case is migrating a codebase to C++23 idioms:
+
+```bash
+# Replace printf with std::print
+clang-tidy -p build/ --checks='modernize-use-std-print' --fix src/
+
+# Replace NULL with nullptr
+clang-tidy -p build/ --checks='modernize-use-nullptr' --fix src/
+
+# Add override to virtual function overrides
+clang-tidy -p build/ --checks='modernize-use-override' --fix src/
+
+# Replace typedef with using
+clang-tidy -p build/ --checks='modernize-use-using' --fix src/
+```
+
+## 15. Custom Clang-Tidy Checks
+
+For organization-specific rules that are not covered by existing checks, you can write custom
+clang-tidy checks in C++. This requires linking against the clang-tidy library:
+
+```cpp
+// MyCustomCheck.cpp
+#include "clang/ASTMatchers/ASTMatchers.h"
+#include "clang/ASTMatchers/ASTMatchFinder.h"
+#include "clang-tidy/ClangTidyCheck.h"
+
+using namespace clang::ast_matchers;
+
+class MyCustomCheck : public clang::tidy::ClangTidyCheck {
+public:
+    MyCustomCheck(llvm::StringRef Name, clang::tidy::ClangTidyContext* Context)
+        : ClangTidyCheck(Name, Context) {}
+
+    void registerMatchers(clang::ast_matchers::MatchFinder* Finder) override {
+        // Example: find all functions named 'process' that take more than 5 parameters
+        Finder->addMatcher(
+            functionDecl(hasName("process"), parameterCount(isGreaterThan(5)))
+                .bind("process_func"),
+            this);
+    }
+
+    void check(const clang::ast_matchers::MatchFinder::MatchResult& Result) override {
+        const auto* Func = Result.Nodes.getNodeAs<clang::FunctionDecl>("process_func");
+        diag(Func->getLocation(), "function 'process' has too many parameters; consider a struct")
+            << FixItHint::CreateInsertion(Func->getLocation(), "// TODO: refactor\n");
+    }
+};
+```
+
+Custom checks are compiled as shared libraries and loaded via the `--checks` flag or by adding them
+to the `.clang-tidy` configuration. This is an advanced topic and requires familiarity with the
+Clang AST.
+
+## 16. Static Analysis in Code Review
+
+Static analysis tools are most effective when integrated into the code review process:
+
+1. **Pre-commit hooks:** Run `clang-tidy --fix` and `clang-format` as a pre-commit hook to catch
+   issues before they reach the review.
+2. **CI gate:** Fail the build if clang-tidy reports errors on the changed files.
+3. **Review comments:** clang-tidy warnings appear as review comments on GitHub/GitLab via Codecov
+   or similar tools.
+4. **Metrics tracking:** Track the number of clang-tidy warnings over time. A decreasing trend
+   indicates improving code quality.
+
+### Pre-Commit Hook Example
+
+```bash
+#!/bin/bash
+# .git/hooks/pre-commit
+CHANGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(cpp|hpp|h)$')
+if [ -n "$CHANGED_FILES" ]; then
+    echo "$CHANGED_FILES" | xargs clang-tidy -p build/ --warnings-as-errors='*'
+    if [ $? -ne 0 ]; then
+        echo "clang-tidy found errors. Commit aborted."
+        exit 1
+    fi
+fi
+```
+
+## Common Pitfalls
+
+- **Enabling `-*` without understanding what it disables.** This turns off ALL checks, then you
+  selectively re-enable. Forgetting to re-enable important checks means they are silently skipped.
+- **Suppressing warnings instead of fixing them.** Every `NOLINT` comment should have a
+  justification. Use `// NOLINT(check-name): reason` to document why the suppression exists.
+- **Not pinning clang-tidy version.** Different clang-tidy versions have different check sets. Pin
+  the version in CI to avoid surprising new warnings.
+- **Ignoring header files.** If `HeaderFilterRegex` is too restrictive, bugs in headers go
+  undetected.
+- **Running analysis without a compilation database.** Without `compile_commands.json`, clang-tidy
+  cannot resolve includes, macros, or platform-specific code correctly.
+- **Enabling `clang-analyzer-*` in clangd.** The path-sensitive analysis is too expensive for
+  real-time feedback. Enable it only in CI or via explicit `run-clang-tidy` invocation.
+- **Not using `HeaderFilterRegex`.** Without this, clang-tidy may attempt to analyze system headers,
+  which can produce false positives and slow down analysis significantly.
+
 ## See Also
 
-- [Debugger Configuration](1_language_server_protocol_configuration.md)
+- [Language Server Protocol Configuration](1_language_server_protocol_configuration.md)
 - [Sanitizers](4_sanitizer.md)

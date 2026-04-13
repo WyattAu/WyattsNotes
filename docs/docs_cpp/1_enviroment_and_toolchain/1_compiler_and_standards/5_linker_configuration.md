@@ -61,6 +61,24 @@ incremental link times by an order of magnitude.
 
 ---
 
+## Linker Comparison Matrix
+
+| Feature                  | GNU ld.bfd     | GNU gold       | LLVM LLD              | Mold                 | MSVC link.exe  |
+| :----------------------- | :------------- | :------------- | :-------------------- | :------------------- | :------------- |
+| **ELF support**          | Yes            | Yes            | Yes                   | Yes                  | No (COFF only) |
+| **COFF support**         | No             | No             | Yes (`lld-link`)      | Partial              | Yes            |
+| **Mach-O support**       | No             | No             | Yes (`ld64.lld`)      | Partial              | No             |
+| **Wasm support**         | No             | No             | Yes (`wasm-ld`)       | No                   | No             |
+| **Multithreading**       | No             | Limited        | Yes (highly parallel) | Yes (fully parallel) | Yes            |
+| **Incremental linking**  | No             | No             | No                    | No                   | Yes            |
+| **LTO support**          | Via GCC plugin | Via GCC plugin | Native                | Via Clang/GCC plugin | Via MSVC LTCG  |
+| **Linker scripts**       | Full           | Full           | ELF: Full, COFF: No   | Full                 | No             |
+| **ThinLTO**              | No             | No             | Yes                   | No                   | No             |
+| **Typical speed vs BFD** | 1x             | 2-5x           | 5-10x                 | 10-50x               | N/A            |
+| **Memory usage**         | Low            | Medium         | Medium                | High                 | Medium         |
+| **Symbol versioning**    | Yes            | Yes            | Yes                   | Yes                  | N/A            |
+| **Cross-platform**       | No             | No             | Yes                   | No                   | No             |
+
 ## CMake Configuration Strategy
 
 Configuring the linker requires instructing the compiler driver (e.g., `clang++` or `g++`) to invoke
@@ -153,6 +171,20 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 ```
 
+### LTO and Symbol Visibility
+
+When using LTO with shared libraries, ensure that symbols intended for export are marked with
+visible visibility. LTO can inline and eliminate symbols more aggressively, potentially removing
+symbols that would otherwise be exported:
+
+```cmake
+# Ensure public API symbols are preserved when building a shared library with LTO
+set_target_properties(MyLib PROPERTIES
+    CXX_VISIBILITY_PRESET hidden
+    VISIBILITY_INLINES_HIDDEN ON
+)
+```
+
 ---
 
 ## Symbol Stripping
@@ -242,11 +274,11 @@ against static libraries. If library `A` depends on library `B`, `A` must appear
 command line.
 
 ```cmake
-# WRONG order — linker processes B first, finds no undefined symbols,
+# WRONG order -- linker processes B first, finds no undefined symbols,
 # discards B's object files, then processes A and fails on unresolved refs
 target_link_libraries(app PRIVATE B A)
 
-# CORRECT order — A's undefined symbols are recorded, then resolved by B
+# CORRECT order -- A's undefined symbols are recorded, then resolved by B
 target_link_libraries(app PRIVATE A B)
 ```
 
@@ -343,7 +375,7 @@ target_link_options(app PRIVATE -Wl,-z,relro)
 
 **Best practice:** Always use `-Wl,-z,relro,-z,now` for production builds.
 
-### Linker Scripts
+## Linker Scripts
 
 The linker's behavior can be controlled programmatically via **linker scripts** (`.ld` files). These
 define:
@@ -352,8 +384,10 @@ define:
 - Custom section ordering.
 - Symbol assignments at link time.
 
+### Basic Linker Script Syntax
+
 ```ld
-/* minimal.ld — Place .text at 0x10000, .data after it */
+/* minimal.ld -- Place .text at 0x10000, .data after it */
 ENTRY(_start)
 SECTIONS
 {
@@ -370,12 +404,198 @@ SECTIONS
 target_link_options(firmware PRIVATE -T${CMAKE_SOURCE_DIR}/minimal.ld)
 ```
 
+### Section Merging: Proof of Ordering
+
+The linker processes input sections from all object files and merges them into output sections
+according to the linker script. The merging algorithm is deterministic:
+
+1. The linker reads each input object file in command-line order.
+2. For each object file, it extracts sections matching the patterns in the linker script.
+3. Sections are concatenated in the order they are encountered.
+
+**Theorem:** The order of input object files on the link command line determines the order of
+functions in the `.text` section of the final binary.
+
+**Proof:** Consider two object files, `a.o` and `b.o`, each containing a `.text` section. The linker
+script contains `.text : { *(.text*) }`. The `*(.text*)` pattern matches all `.text` sections from
+all input files. The linker iterates over input files in command-line order. For each file, it
+appends the matched sections to the output `.text` section. Therefore, `a.o`'s `.text` precedes
+`b.o`'s `.text` in the output if and only if `a.o` precedes `b.o` on the command line.
+$\blacksquare$
+
+This ordering matters for cache locality: placing frequently-called functions adjacent to each other
+improves instruction cache hit rates.
+
+### Custom Section Markers
+
+Linker scripts can define symbols that mark the boundaries of custom sections. This enables
+compile-time registration patterns:
+
+```ld
+SECTIONS
+{
+    . = 0x8000;
+    .text : { *(.text*) }
+
+    /* Custom section for init functions */
+    .init_array : {
+        __init_array_start = .;
+        KEEP(*(.init_array*))
+        __init_array_end = .;
+    }
+}
+```
+
+```cpp
+// Source code references the linker-defined symbols
+extern "C" {
+    extern void (*__init_array_start[])();
+    extern void (*__init_array_end[])();
+}
+
+// Call all init functions at startup
+for (auto* fn = __init_array_start; fn != __init_array_end; ++fn) {
+    (*fn)();
+}
+```
+
+### Linker Script for Embedded (STM32)
+
+A realistic embedded linker script defines memory regions and places sections within them:
+
+```ld
+/* stm32f407.ld */
+MEMORY
+{
+    FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 1024K
+    RAM (rwx)  : ORIGIN = 0x20000000, LENGTH = 128K
+}
+
+ENTRY(Reset_Handler)
+
+SECTIONS
+{
+    .isr_vector :
+    {
+        . = ALIGN(4);
+        KEEP(*(.isr_vector))
+        . = ALIGN(4);
+    } > FLASH
+
+    .text :
+    {
+        . = ALIGN(4);
+        *(.text*)
+        *(.rodata*)
+        . = ALIGN(4);
+        _etext = .;
+    } > FLASH
+
+    _sidata = LOADADDR(.data);
+
+    .data :
+    {
+        . = ALIGN(4);
+        _sdata = .;
+        *(.data*)
+        . = ALIGN(4);
+        _edata = .;
+    } > RAM AT > FLASH
+
+    .bss :
+    {
+        . = ALIGN(4);
+        _sbss = .;
+        *(.bss*)
+        *(COMMON)
+        . = ALIGN(4);
+        _ebss = .;
+    } > RAM
+}
+```
+
 Linker scripts are essential for bare-metal and embedded development where you control the entire
 memory layout. On hosted platforms, they are occasionally used to:
 
 - Enforce specific section ordering for cache locality.
 - Define link-time symbols (e.g., `__start_custom_section` and `__stop_custom_section` markers).
 - Implement custom allocator regions.
+
+## Symbol Versioning
+
+Symbol versioning is a mechanism that allows a shared library to expose multiple versions of the
+same symbol. This is critical for backward compatibility when the implementation of a function
+changes but its signature does not.
+
+### GNU Symbol Versioning
+
+```cpp
+// versioned.c
+#include <stdio.h>
+
+__asm__(".symver old_printf,printf@GLIBC_2.2.5");
+__asm__(".symver new_printf,printf@@GLIBC_2.17");
+
+void old_printf(const char* s) { puts("[legacy]"); puts(s); }
+void new_printf(const char* s) { puts("[modern]"); puts(s); }
+```
+
+The `@@` (double at-sign) denotes the default version. The `@` (single at-sign) denotes a
+non-default version. Binaries compiled against older glibc versions will resolve to the
+`@GLIBC_2.2.5` version, while newer binaries resolve to `@@GLIBC_2.17`.
+
+Symbol versioning is the mechanism that allows `libstdc++.so.6` to maintain backward compatibility
+across GCC releases. The `.so` version number never changes (it stays at `.6`), but individual
+symbols within the library are versioned:
+
+```bash
+nm -D /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+# Contains entries like:
+# _ZNSt6vectorIiSaIiEE9push_backERKi@@GLIBCXX_3.4.21
+# _ZNSt6vectorIiSaIiEE9push_backERKi@GLIBCXX_3.4
+```
+
+### Inspecting Symbol Versions
+
+```bash
+# Show symbol versions in a shared library
+objdump -T /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep -A1 GLIBCXX
+
+# Show which version a binary requires
+readelf -V /usr/bin/myapp
+```
+
+## The `-Wl,` Flag Mechanism
+
+The `-Wl,` prefix passes flags from the compiler driver to the linker. The comma separates
+individual linker arguments. This is necessary because the compiler driver controls the linking
+phase and does not pass unrecognized flags to the linker.
+
+```bash
+# Pass -z relro and -z now to the linker
+clang++ main.cpp -Wl,-z,relro,-z,now
+
+# Pass a linker script and --gc-sections
+clang++ main.cpp -Wl,-T,memory.ld,--gc-sections
+
+# Pass a library search path
+clang++ main.cpp -Wl,-L,/custom/lib/path
+
+# Set the output format (ELF32 vs ELF64)
+clang++ main.cpp -Wl,-m,elf_x86_64
+```
+
+In CMake, use `target_link_options` to pass these flags:
+
+```cmake
+target_link_options(app PRIVATE
+    "LINKER:-z,relro" "LINKER:-z,now"
+    "LINKER:-T,${CMAKE_SOURCE_DIR}/memory.ld"
+    "LINKER:--gc-sections"
+)
+```
+
+The `LINKER:` prefix in CMake 3.13+ automatically adds the `-Wl,` wrapper, improving portability.
 
 ---
 
@@ -433,3 +653,150 @@ clang++ -mcmodel=large ...
 - **Using `-fuse-ld=mold` on CI where mold is not installed.** The build will silently fall back to
   the default linker. Use `check_cxx_compiler_flag` to verify availability, or install mold as a
   build dependency.
+- **Linker script errors with `-Wl,--gc-sections`.** If your linker script does not use `KEEP()` for
+  sections that must not be garbage-collected (like interrupt vector tables), the linker may remove
+  them. Always use `KEEP(*(.isr_vector))` or equivalent for critical sections.
+- **Circular dependencies between static libraries.** If library `A` depends on `B` and `B` depends
+  on `A`, the linker cannot resolve symbols in a single pass. Solutions: (1) merge the libraries,
+  (2) use `--start-group` / `--end-group` to enable multiple passes, or (3) refactor to eliminate
+  the circular dependency.
+
+## See Also
+
+- [Installing a Compiler](1_installing_compiler.md) -- Compiler selection affects linker choice
+- [Cross-compilation Toolchains](4_crosscompilation_toolchains.md) -- Cross-linker considerations
+- [Language Standard and ABI Compatibility](2_language_standard_and_abi_compatibility.md) -- ABI
+  constraints on linking
+
+## Appendix: Linker Script Reference
+
+### Memory Region Definitions
+
+Linker scripts can define memory regions with specific attributes. This is used in embedded systems
+where different memory types (flash, RAM, registers) have different access permissions:
+
+```ld
+MEMORY
+{
+    FLASH (rx)  : ORIGIN = 0x08000000, LENGTH = 1024K
+    RAM   (rwx) : ORIGIN = 0x20000000, LENGTH = 128K
+    CCM   (rw)  : ORIGIN = 0x10000000, LENGTH = 64K
+}
+```
+
+The attributes in parentheses control what can be placed in each region:
+
+- `r` -- readable
+- `w` -- writable
+- `x` -- executable
+
+### Section Placement with KEEP
+
+By default, the linker's garbage collector (`--gc-sections`) removes unreferenced sections. The
+`KEEP()` directive prevents specific sections from being collected:
+
+```ld
+SECTIONS
+{
+    .isr_vector :
+    {
+        . = ALIGN(4);
+        KEEP(*(.isr_vector))
+        KEEP(*(.isr_vector.*))
+    } > FLASH
+}
+```
+
+### PROVIDE and ASSERT
+
+`PROVIDE` defines a symbol only if it is not already defined by the application:
+
+```ld
+PROVIDE(__stack_start = ORIGIN(RAM) + LENGTH(RAM));
+```
+
+`ASSERT` evaluates an expression at link time and errors if it fails:
+
+```ld
+ASSERT(. <= ORIGIN(FLASH) + LENGTH(FLASH), "Flash overflow")
+ASSERT(. <= ORIGIN(RAM) + LENGTH(RAM), "RAM overflow")
+```
+
+### PHDRS: Program Header Control
+
+For ELF binaries, the linker script can control which sections are mapped into which program
+segments (PT_LOAD, PT_NOTE, etc.):
+
+```ld
+PHDRS
+{
+    text PT_LOAD FLAGS(7);   /* Read + Write + Execute (for self-modifying code) */
+    rodata PT_LOAD FLAGS(4); /* Read only */
+    data PT_LOAD FLAGS(6);   /* Read + Write */
+}
+
+SECTIONS
+{
+    .text : { *(.text*) } :text
+    .rodata : { *(.rodata*) } :rodata
+    .data : { *(.data*) } :data
+    .bss : { *(.bss*) *(COMMON) } :data
+}
+```
+
+### Output Section Types
+
+The linker supports several output section types beyond the default loadable section:
+
+```ld
+SECTIONS
+{
+    /DISCARD/ : {
+        *(.comment)
+        *(.note*)
+        *(.eh_frame*)
+    }
+
+    .noinit (NOLOAD) : {
+        *(.noinit)
+    }
+}
+```
+
+- `/DISCARD/`: Sections listed here are not included in the output binary.
+- `NOLOAD`: The section is allocated space but not loaded into memory at runtime. Useful for
+  zero-initialized regions in embedded systems.
+
+## Appendix: Linker Flag Quick Reference
+
+### GNU/LLD Linker Flags
+
+| Flag                 | Purpose                                         |
+| :------------------- | :---------------------------------------------- |
+| `-z relro`           | Partial RELRO (read-only relocations)           |
+| `-z now`             | Full RELRO (no lazy binding)                    |
+| `-z noexecstack`     | Make the stack non-executable                   |
+| `-z defs`            | Require all symbols to be resolved at link time |
+| `-z origin`          | Allow `$ORIGIN` in RPATH                        |
+| `--gc-sections`      | Remove unreferenced sections                    |
+| `--as-needed`        | Only link libraries that are actually used      |
+| `--no-as-needed`     | Link all specified libraries (legacy behavior)  |
+| `--whole-archive`    | Force include all symbols from a static lib     |
+| `--no-whole-archive` | Revert to default selective inclusion           |
+| `-rpath /path`       | Set runtime library search path                 |
+| `-rpath-link /path`  | Set link-time only search path                  |
+| `--build-id=sha1`    | Embed a build ID for crash reporting            |
+| `-Map=output.map`    | Generate a linker map file                      |
+| `--print-map`        | Print the link map to stdout                    |
+
+### In CMake
+
+```cmake
+target_link_options(app PRIVATE
+    "LINKER:-z,relro" "LINKER:-z,now"
+    "LINKER:--gc-sections"
+    "LINKER:--as-needed"
+    "LINKER:-rpath,$ORIGIN/../lib"
+    "LINKER:-Map,${CMAKE_BINARY_DIR}/app.map"
+)
+```

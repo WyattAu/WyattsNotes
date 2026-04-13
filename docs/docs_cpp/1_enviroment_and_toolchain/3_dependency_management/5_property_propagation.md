@@ -54,9 +54,42 @@ dependencies (`target_link_libraries`), CMake requires a scope keyword.
 - **Use Case:** Public API dependencies. If `LibA` includes `<fmt/core.h>` in its public header
   `liba.h`, then any consumer of `LibA` must also have access to `fmt`'s include path.
 
+### Proof of Property Propagation Rules
+
+**Claim:** When target `B` links against target `A` with scope `S`, the `INTERFACE_` properties of
+`A` propagate to `B` if and only if `S` is `PUBLIC` or `INTERFACE`.
+
+**Proof:**
+
+CMake's property propagation operates on the directed graph $G = (V, E)$ where vertices are targets
+and edges are `target_link_libraries` relationships. Each edge has a scope label
+$\{PRIVATE,
+INTERFACE, PUBLIC\}$.
+
+Define the propagation function $P(T, S)$ where $T$ is a target and $S$ is a scope:
+
+- If $S = PRIVATE$: $P$ sets the build properties of the dependent target but does not modify
+  `INTERFACE_` properties. No propagation to downstream consumers.
+- If $S = INTERFACE$: $P$ sets only the `INTERFACE_` properties of the dependent target. The
+  dependent target's build properties are unchanged, but downstream consumers will see these
+  `INTERFACE_` properties.
+- If $S = PUBLIC$: $P$ sets both the build properties and the `INTERFACE_` properties. The dependent
+  target gets the property for its own build, and all downstream consumers inherit it.
+
+The `INTERFACE_LINK_LIBRARIES` of a target $T$ is the transitive closure of all `PUBLIC` and
+`INTERFACE` edges reachable from $T$. When consumer $C$ links against $T$ with scope `S`, CMake
+merges `T`'s `INTERFACE_LINK_LIBRARIES` into $C$'s link list if $S \in \{PUBLIC, INTERFACE\}$.
+
+$\therefore$ A `PRIVATE` dependency creates a dead end in the propagation graph. Only `PUBLIC` and
+`INTERFACE` edges allow information flow to downstream consumers. $\blacksquare$
+
+**Corollary:** The transitive closure of `INTERFACE` properties from target $T$ to consumer $C$ is
+the set of all targets reachable from $T$ via paths consisting entirely of `PUBLIC` or `INTERFACE`
+edges.
+
 ## The Propagation Graph
 
-Consider a linear dependency chain: **App $\rightarrow$ Engine $\rightarrow$ Core**.
+Consider a linear dependency chain: **App $\to$ Engine $\to$ Core**.
 
 ### Scenario A: Strict Encapsulation (Private)
 
@@ -91,6 +124,36 @@ target_link_libraries(Engine PUBLIC Core)
 
 _Result:_ `App` can include `<openssl/ssl.h>` without explicitly asking for it. This indicates a
 tightly coupled architecture.
+
+## Complete Property Scope Table
+
+The following table enumerates every CMake property that supports visibility scopes and documents
+the propagation behavior for each.
+
+| Property                    | `PRIVATE` (build only) | `INTERFACE` (consumers only) | `PUBLIC` (both) | Target command                       |
+| :-------------------------- | :--------------------- | :--------------------------- | :-------------- | :----------------------------------- |
+| Include directories         | Yes                    | Yes                          | Yes             | `target_include_directories`         |
+| Compile definitions         | Yes                    | Yes                          | Yes             | `target_compile_definitions`         |
+| Compile features            | Yes                    | Yes                          | Yes             | `target_compile_features`            |
+| Compile options             | Yes                    | Yes                          | Yes             | `target_compile_options`             |
+| Link libraries              | Yes                    | Yes                          | Yes             | `target_link_libraries`              |
+| Link options                | Yes                    | Yes                          | Yes             | `target_link_options`                |
+| Link directories            | Yes                    | Yes                          | Yes             | `target_link_directories`            |
+| Precompiled headers         | Yes                    | No                           | No              | `target_precompile_headers`          |
+| Sources                     | Yes                    | No                           | No              | `target_sources`                     |
+| Position independent code   | Yes                    | No                           | No              | `set_target_properties(PIC)`         |
+| C++ standard level          | Yes                    | No                           | No              | `target_compile_features`            |
+| System include directories  | Yes                    | Yes                          | Yes             | `target_include_directories(SYSTEM)` |
+| Autogen include directories | Yes                    | No                           | No              | `target_include_directories` (Qt)    |
+
+### Key Observations
+
+1. **Not all properties propagate.** `target_sources`, `target_precompile_headers`, and position
+   independent code settings are always `PRIVATE` and cannot be made transitive.
+2. **Include directories and compile definitions are the most commonly propagated properties.**
+   These are the properties that directly affect whether a consumer can compile against a library.
+3. **Link libraries are the most dangerous property to propagate.** Every `PUBLIC` link library adds
+   to the transitive closure, increasing compile times and binary size.
 
 ## Interface Libraries
 
@@ -135,6 +198,20 @@ add_library(JsonLib INTERFACE)
 target_include_directories(JsonLib INTERFACE include/)
 ```
 
+### Pattern 3: Interface Alias for Installed Packages
+
+When consuming an installed package via `find_package`, you can create an interface target to
+standardize the consumption:
+
+```cmake
+find_package(fmt REQUIRED)
+
+# Create an alias with our project's preferred settings
+add_library(ProjFmt INTERFACE)
+target_link_libraries(ProjFmt INTERFACE fmt::fmt)
+target_compile_definitions(ProjFmt INTERFACE FMT_HEADER_ONLY)
+```
+
 ## Build Interface vs. Install Interface
 
 A critical nuance in property propagation is the difference between directory layouts during
@@ -154,6 +231,50 @@ target_include_directories(CoreSystem PUBLIC
     # Used by consumers importing the installed package
     $<INSTALL_INTERFACE:include>
 )
+```
+
+### Why This Matters: Formal Treatment
+
+During development, the build tree has a different directory layout than the install tree. Consider
+a library `Core` with headers in `Core/include/`. During an in-tree build, the include path is
+`/path/to/project/Core/include`. After installation with `DESTINATION include`, the path is
+`/usr/local/include`.
+
+If you write:
+
+```cmake
+# WRONG: hardcoded source path
+target_include_directories(Core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+```
+
+The installed package will embed an absolute path to the build machine's source directory. Any
+consumer on a different machine will fail to find headers. The `$<BUILD_INTERFACE>` and
+`$<INSTALL_INTERFACE>` generator expressions solve this by conditionally selecting the correct path
+based on the context.
+
+### Installation with Export
+
+```cmake
+install(TARGETS Core
+    EXPORT CoreTargets
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+    RUNTIME DESTINATION bin
+    INCLUDES DESTINATION include
+)
+
+install(EXPORT CoreTargets
+    FILE CoreTargets.cmake
+    NAMESPACE Core::
+    DESTINATION lib/cmake/Core
+)
+```
+
+Consumers then use:
+
+```cmake
+find_package(Core REQUIRED)
+target_link_libraries(MyApp PRIVATE Core::Core)
 ```
 
 ## System Includes (Warning Suppression)
@@ -275,15 +396,15 @@ in the final binary.
 
 ```text
 App (static)
-├── Server
-│   ├── Network (PUBLIC)
-│   │   ├── OpenSSL::SSL (PUBLIC)   ← ~2MB
-│   │   └── zstd (PRIVATE)          ← ~500KB (NOT linked into App)
-│   └── Logger (PUBLIC)
-│       └── spdlog (PUBLIC)         ← ~200KB
-└── Framework
-    └── Core (PUBLIC)
-        └── fmt (PUBLIC)            ← ~150KB
+  +-- Server
+  |     +-- Network (PUBLIC)
+  |     |     +-- OpenSSL::SSL (PUBLIC)   <- ~2MB
+  |     |     +-- zstd (PRIVATE)          <- ~500KB (NOT linked into App)
+  |     +-- Logger (PUBLIC)
+  |           +-- spdlog (PUBLIC)         <- ~200KB
+  +-- Framework
+        +-- Core (PUBLIC)
+              +-- fmt (PUBLIC)            <- ~150KB
 ```
 
 **Total binary size contribution from transitive deps:** ~2.35MB (OpenSSL dominates).
@@ -329,11 +450,11 @@ Consider a realistic project with a multi-level dependency chain.
 
 ```text
 my-app
-└── http-client (our library)
-    ├── libcurl (system/vcpkg)
-    │   ├── OpenSSL (transitive from libcurl)
-    │   └── zlib (transitive from libcurl)
-    └── nlohmann-json (direct)
+  +-- http-client (our library)
+       +-- libcurl (system/vcpkg)
+       |     +-- OpenSSL (transitive from libcurl)
+       |     +-- zlib (transitive from libcurl)
+       +-- nlohmann-json (direct)
 ```
 
 ### Step-by-Step Propagation
@@ -371,7 +492,7 @@ target_link_libraries(my-app PRIVATE http-client)
 ### What `my-app` Sees
 
 | Property                       | Propagated to `my-app`? | Reason                                             |
-| ------------------------------ | ----------------------- | -------------------------------------------------- |
+| :----------------------------- | :---------------------- | :------------------------------------------------- |
 | `http-client` include dir      | Yes                     | `PUBLIC` on `http-client`                          |
 | `nlohmann_json::nlohmann_json` | Yes                     | `PUBLIC` on `http-client`                          |
 | `nlohmann_json` include dir    | Yes                     | Transitive via `PUBLIC` link                       |
@@ -426,6 +547,25 @@ target_link_libraries(http-client
 )
 ```
 
+### Compiler-ID Conditional Options
+
+```cmake
+add_library(Portable target src/portable.cpp)
+target_compile_options(Portable PUBLIC
+    $<$<CXX_COMPILER_ID:GNU>:-fno-keep-inline-dllexport>
+    $<$<CXX_COMPILER_ID:Clang>:-fvisibility-inlines-hidden>
+    $<$<CXX_COMPILER_ID:MSVC>:/W4>
+)
+```
+
+### Feature Test Conditional Definitions
+
+```cmake
+target_compile_definitions(Portable PUBLIC
+    $<$<BOOL:${USE_FEATURE_X}>:FEATURE_X_ENABLED>
+)
+```
+
 ### Interface Link Libraries (Head-Only Forwarding)
 
 When a header-only library wraps another library, use `INTERFACE_LINK_LIBRARIES` to propagate the
@@ -439,6 +579,25 @@ target_link_libraries(json-wrapper INTERFACE nlohmann_json::nlohmann_json)
 # Consumers link json-wrapper and automatically get nlohmann_json
 target_link_libraries(my-app PRIVATE json-wrapper)
 ```
+
+## Transitive Usage Requirements and `INTERFACE_*` Properties
+
+Every `target_link_libraries` call with `PUBLIC` or `INTERFACE` scope triggers the propagation of
+all `INTERFACE_*` properties from the linked target. The complete list of propagated properties:
+
+| Propagated Property                   | Set by                                   | Effect on consumer                     |
+| :------------------------------------ | :--------------------------------------- | :------------------------------------- |
+| `INTERFACE_INCLUDE_DIRECTORIES`       | `target_include_directories(... PUBLIC)` | Adds to consumer's `-I` paths          |
+| `INTERFACE_COMPILE_DEFINITIONS`       | `target_compile_definitions(... PUBLIC)` | Adds to consumer's `-D` flags          |
+| `INTERFACE_COMPILE_OPTIONS`           | `target_compile_options(... PUBLIC)`     | Adds to consumer's compiler flags      |
+| `INTERFACE_LINK_LIBRARIES`            | `target_link_libraries(... PUBLIC)`      | Links consumer against transitive deps |
+| `INTERFACE_LINK_OPTIONS`              | `target_link_options(... PUBLIC)`        | Adds to consumer's linker flags        |
+| `INTERFACE_LINK_DIRECTORIES`          | `target_link_directories(... PUBLIC)`    | Adds to consumer's `-L` paths          |
+| `INTERFACE_COMPILE_FEATURES`          | `target_compile_features(... PUBLIC)`    | Enables C++ features for consumer      |
+| `INTERFACE_POSITION_INDEPENDENT_CODE` | `set_target_properties(PIC)`             | Enables PIC for consumer               |
+
+This is why a single `PUBLIC` link can cause a cascade of changes: it propagates not just the link
+dependency, but all of the linked target's own transitive usage requirements.
 
 ## Common Pitfalls
 
@@ -454,11 +613,91 @@ target_link_libraries(my-app PRIVATE json-wrapper)
    consumers will get linker errors.
 4. **`SYSTEM` include directories:** Using `SYSTEM` on your own project's headers (not third-party)
    can mask legitimate warnings. Reserve `SYSTEM` for external dependencies only.
+5. **Generator expressions in wrong scope:** A generator expression like `$<CONFIG:Debug>` in a
+   `PUBLIC` compile option propagates to consumers. If the consumer has a different configuration,
+   the option may be silently ignored or incorrectly applied. Use `PRIVATE` for
+   configuration-specific options.
+6. **Circular transitive dependencies:** If `A` links `B` PUBLIC and `B` links `A` PUBLIC, CMake
+   detects a cycle and errors. This indicates a design flaw: the two libraries should be merged or
+   the dependency should be made PRIVATE on at least one side.
+7. **Forgetting that `target_link_libraries` propagates more than just linking.** When you write
+   `target_link_libraries(MyLib PUBLIC OtherLib)`, you are not just adding a linker dependency. You
+   are also propagating all of `OtherLib`'s include directories, compile definitions, compile
+   options, and link options to every consumer of `MyLib`. This can cause unexpected side effects
+   like inheriting warning suppression flags or optimization flags from transitive dependencies.
+
+## Property Propagation Debugging
+
+When builds fail due to incorrect property propagation, use the following diagnostic techniques.
+
+### Inspecting Target Properties
+
+```cmake
+# Print all properties of a target
+get_target_property(INCLUDE_DIRS MyLib INCLUDE_DIRECTORIES)
+message(STATUS "MyLib INCLUDE_DIRECTORIES: ${INCLUDE_DIRS}")
+
+get_target_property(INTERFACE_LINK_LIBS MyLib INTERFACE_LINK_LIBRARIES)
+message(STATUS "MyLib INTERFACE_LINK_LIBRARIES: ${INTERFACE_LINK_LIBS}")
+
+get_target_property(COMPILE_DEFS MyLib COMPILE_DEFINITIONS)
+message(STATUS "MyLib COMPILE_DEFINITIONS: ${COMPILE_DEFS}")
+```
+
+### Tracing the Transitive Closure
+
+CMake does not provide a built-in command to trace the full transitive closure of properties, but
+you can use generator expressions to inspect what a target sees:
+
+```cmake
+# Show the effective link libraries (including transitive)
+target_link_libraries(MyApp PRIVATE
+    $<$<TARGET_EXISTS:MyLib>:MyLib>
+)
+
+# Show the include directories that would propagate to MyApp
+add_custom_target(debug_props
+    COMMAND ${CMAKE_COMMAND}
+        --install-prefix ${CMAKE_BINARY_DIR}/debug
+        -P ${CMAKE_SOURCE_DIR}/cmake/debug_props.cmake
+)
+```
+
+### Common Diagnostic Patterns
+
+1. **"Cannot find -lfoo" at link time:** The library is linked with `PUBLIC` but the include
+   directory is `PRIVATE`, so the consumer cannot find the headers. Or the library is linked as
+   `PRIVATE` but the consumer's header includes it.
+2. **"Undeclared identifier" in consumer:** A `PUBLIC` include directory is missing. The dependency
+   is linked but its include paths are not propagated.
+3. **Unexpected compile flags in consumer:** A dependency sets `target_compile_options(PUBLIC ...)`
+   on a third-party library's target, which propagates unwanted flags. Fix by wrapping the
+   third-party library in an `INTERFACE` target with only the necessary properties.
+
+## Generator Expression Quick Reference
+
+The following table lists commonly used generator expressions for property propagation control.
+
+| Expression                                       | Evaluates to                           | Use case                        |
+| :----------------------------------------------- | :------------------------------------- | :------------------------------ |
+| `$<CONFIG:Debug>`                                | `1` in Debug, `0` otherwise            | Configuration-specific options  |
+| `$<PLATFORM_ID:Linux>`                           | `1` on Linux, `0` otherwise            | Platform-specific options       |
+| `$<CXX_COMPILER_ID:Clang>`                       | `1` for Clang, `0` otherwise           | Compiler-specific options       |
+| `$<BUILD_INTERFACE:...>`                         | Value in build tree only               | Build-tree-only include paths   |
+| `$<INSTALL_INTERFACE:...>`                       | Value in install tree only             | Install-tree-only include paths |
+| `$<TARGET_EXISTS:foo>`                           | `1` if target `foo` exists             | Conditional linking             |
+| `$<LINK_ONLY:foo>`                               | Link `foo` but do not add include dirs | Header-only library separation  |
+| `$<STREQUAL:${CMAKE_BUILD_TYPE},Release>`        | `1` in Release builds                  | Build-type comparison           |
+| `$<BOOL:${ENABLE_FEATURE}>`                      | `1` if option is truthy                | Option-based conditional        |
+| `$<COMPILE_LANGUAGE:CXX>`                        | `1` for C++ sources only               | C++-only compile options        |
+| `$<COMPILE_LANGUAGE:C>`                          | `1` for C sources only                 | C-only compile options          |
+| `$<AND:$<CONFIG:Debug>,$<PLATFORM_ID:Linux>>`    | Logical AND                            | Complex conditions              |
+| `$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>` | Logical OR                             | Multiple config conditions      |
 
 ## See Also
 
-- [Dependency Resolution](1_dependency_architectures_models.md) — How the dependency graph is
+- [Dependency Resolution](1_dependency_architectures_models.md) -- How the dependency graph is
   constructed
-- [vcpkg](3_vcpkg.md) — How vcpkg manages property propagation for installed packages
-- [CPM.cmake](2_cpm.md) — How `add_subdirectory` merges dependency properties
-- [Binary Caching](6_binary_caching.md) — Binary artifacts and their dependency metadata
+- [vcpkg](3_vcpkg.md) -- How vcpkg manages property propagation for installed packages
+- [CPM.cmake](2_cpm.md) -- How `add_subdirectory` merges dependency properties
+- [Binary Caching](6_binary_caching.md) -- Binary artifacts and their dependency metadata

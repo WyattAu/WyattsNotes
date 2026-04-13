@@ -88,6 +88,55 @@ int main() {
 }
 ```
 
+### ADL and Template Argument Deduction
+
+ADL interacts with template argument deduction in a subtle way. When an unqualified function call
+involves a template, ADL adds function template candidates from associated namespaces in addition to
+those found by ordinary unqualified lookup [N4950 §13.10.3.6]:
+
+```cpp
+#include <iostream>
+
+namespace N {
+    struct S {};
+
+    template<typename T>
+    void process(T t) {
+        std::cout << "N::process\n";
+    }
+}
+
+int main() {
+    N::S s;
+    process(s);  // ADL finds N::process<T> — T deduced as N::S
+    // Even if another process() exists in the global namespace,
+    // N::process is a viable candidate via ADL
+}
+```
+
+This mechanism is how range-based `std::begin` and `std::end` are found: ADL discovers custom
+`begin`/`end` in the type's associated namespace, falling back to `std::begin`/`std::end`.
+
+### ADL Blocking with Parentheses
+
+A notable subtlety: enclosing the function name in parentheses suppresses ADL [N4950 §6.5.4.1]:
+
+```cpp
+namespace N {
+    struct X {};
+    void f(X) { std::cout << "N::f\n"; }
+}
+
+int main() {
+    N::X x;
+    (f)(x);  // ADL is suppressed — only ordinary unqualified lookup
+             // N::f is NOT found unless using-directive is present
+}
+```
+
+This is rarely useful in application code but appears in metaprogramming where you want to prevent
+ADL from pulling in unwanted candidates.
+
 ## 1.3 Overload Resolution Phases [N4950 §12.4.3]
 
 Once name lookup has produced a set of candidate functions, the compiler performs overload
@@ -105,6 +154,29 @@ implicit conversion sequences required. A function $f_1$ is a better match than 
 - For at least one argument, the conversion for $f_1$ is better than for $f_2$.
 - For no argument is the conversion for $f_1$ worse than for $f_2$.
 
+### Formal Statement of the Viable Function Selection
+
+Let $C$ be the candidate set from name lookup. For each candidate $c \in C$, let $n_c$ be the number
+of parameters of $c$, and let $k$ be the number of arguments in the call. Candidate $c$ is viable if
+and only if all of the following hold:
+
+1. $n_c = k$, or $c$ has a trailing parameter pack and $n_c \le k$, or $c$ is variadic and
+   $n_c \le k$.
+2. For each argument $a_i$ (where $1 \le i \le k$), there exists an implicit conversion sequence
+   converting $a_i$ to the type of the $i$-th parameter of $c$.
+
+### Formal Statement of the Best Viable Function
+
+Let $V \subseteq C$ be the set of viable functions. A function $f \in V$ is the **best viable
+function** if and only if for every other $g \in V \setminus \{f\}$:
+
+- $\text{ICS}_f(i) \preceq \text{ICS}_g(i)$ for all argument positions $i$ (not worse).
+- $\text{ICS}_f(j) \prec \text{ICS}_g(j)$ for at least one argument position $j$ (strictly better).
+
+Where $\preceq$ denotes "no worse than" and $\prec$ denotes "strictly better" in the conversion
+ranking hierarchy. If no unique best viable function exists, the call is ambiguous [N4950
+§12.4.3.2].
+
 ## 1.4 Conversion Ranking [N4950 §12.4.3.2.2]
 
 The conversion ranking hierarchy (from best to worst) is:
@@ -117,21 +189,118 @@ The conversion ranking hierarchy (from best to worst) is:
 | **User-Defined Conversion** | One user-defined conversion + standard conv               | `class A` → `class B` (via `B(A)`)     |
 | **Ellipsis**                | `...` catch-all                                           | any type                               |
 
+### Complete Conversion Rank Table
+
+The following table enumerates every standard conversion recognized by [N4950 §7.3.3] and its
+ranking within overload resolution:
+
+| Conversion                                      | Category     | Rank         |
+| :---------------------------------------------- | :----------- | :----------- |
+| Identity (no conversion)                        | Standard     | Exact Match  |
+| Lvalue-to-rvalue conversion                     | Standard     | Exact Match  |
+| Qualification conversion (`T` → `const T`)      | Standard     | Exact Match  |
+| Function-to-pointer conversion                  | Standard     | Exact Match  |
+| Null pointer constant → `T*`                    | Standard     | Exact Match  |
+| Null pointer constant → `std::nullptr_t`        | Standard     | Exact Match  |
+| Integral promotion (`char` → `int`)             | Promotion    | Promotion    |
+| Floating-point promotion (`float` → `double`)   | Promotion    | Promotion    |
+| Integral conversion (`int` → `long`)            | Conversion   | Conversion   |
+| Floating-point conversion (`double` → `float`)  | Conversion   | Conversion   |
+| Floating-integral conversion (`int` → `double`) | Conversion   | Conversion   |
+| Pointer conversion (`Derived*` → `Base*`)       | Conversion   | Conversion   |
+| Pointer-to-bool conversion                      | Conversion   | Conversion   |
+| Boolean conversion (`int` → `bool`)             | Conversion   | Conversion   |
+| User-defined converting constructor             | User-Defined | User-Defined |
+| User-defined conversion operator                | User-Defined | User-Defined |
+| Ellipsis conversion                             | Ellipsis     | Ellipsis     |
+
+### Sub-Ranking Within Exact Match
+
+When two ICSes both rank as Exact Match, the compiler applies sub-ranking tie-breakers [N4950
+§12.4.3.2.3]:
+
+1. **Identity conversion** beats a qualification conversion (no cv change is better than adding
+   `const` or `volatile`).
+2. **Reference binding without conversion** beats reference binding with a derived-to-base or
+   qualification conversion.
+3. **No function pointer conversion** beats function-to-pointer conversion.
+4. **No qualification conversion** beats a qualification conversion.
+
 ```cpp
 #include <iostream>
 
-void f(int)      { std::cout << "int\n"; }
-void f(double)   { std::cout << "double\n"; }
-void f(long)     { std::cout << "long\n"; }
+void f(int&)       { std::cout << "int&\n"; }
+void f(const int&) { std::cout << "const int&\n"; }
 
 int main() {
-    f(42);       // Exact match → f(int)
-    f(3.14);     // Exact match → f(double)
-    f(42L);      // Exact match → f(long)  (long is exact match, not promoted)
-    f('c');      // Promotion → f(int)     (char promotes to int, not to long or double)
-    f(42.f);     // Promotion → f(double)  (float promotes to double)
+    int x = 42;
+    f(x);        // int& wins: identity on the referred type (no qualification conversion)
+                 // const int& would require adding const — ranked lower
+    const int cx = 10;
+    f(cx);       // const int&: only viable candidate (int& cannot bind to const)
 }
 ```
+
+### Sub-Ranking Within Standard Conversion
+
+When two ICSes both rank as Standard Conversion, the sub-ranking is [N4950 §12.4.3.2.3]:
+
+1. **Promotion** beats **conversion** (a promotion is a standard conversion but ranked higher than
+   other standard conversions).
+2. Among conversions: **pointer conversion** beats **pointer-to-member conversion** beats **boolean
+   conversion**.
+3. Among conversions of the same category: **conversion of a rank that is a subclass of the other
+   rank** wins. For example, `Derived*` → `Base*` (pointer conversion) beats `int` → `bool` (boolean
+   conversion).
+
+```cpp
+#include <iostream>
+
+void g(long)   { std::cout << "long\n"; }    // integral conversion from int
+void g(double) { std::cout << "double\n"; }  // floating-integral conversion from int
+
+int main() {
+    // g(42) is ambiguous: both are standard conversions of equal sub-rank
+    // int→long is integral conversion; int→double is floating-integral conversion
+    // Neither is a subclass of the other → ambiguous
+    // g(42);  // ERROR: ambiguous
+
+    short s = 42;
+    g(s);  // long wins: short→long is promotion (rank: Promotion),
+           // short→double is floating-integral conversion (rank: Conversion)
+           // Promotion beats Conversion
+}
+```
+
+```cpp
+#include <iostream>
+
+void h(double)    { std::cout << "double\n"; }
+void h(long long) { std::cout << "long long\n"; }
+
+int main() {
+    h(42);    // ambiguous: int→double and int→long long are both standard conversions
+              // of equal sub-rank
+    h(3.14f); // double wins: float→double is promotion, float→long long is conversion
+}
+```
+
+### Proof: Integral Promotion Beats Integral Conversion
+
+**Claim:** When the argument is of an integral type that promotes to `int`, the promotion to `int`
+is preferred over any integral conversion.
+
+**Proof:**
+
+1. By [N4950 §7.3.7], integral promotion applies to types `bool`, `char`, `signed char`,
+   `unsigned char`, `short`, `unsigned short`, and their bit-field equivalents. These types are
+   promoted to `int` (or `unsigned int` if `int` cannot represent all values).
+
+2. By [N4950 §12.4.3.2.2], a promotion is a distinct rank that is strictly better than a standard
+   conversion.
+
+3. Therefore, `short` → `int` (promotion) is strictly preferred over `short` → `long` (integral
+   conversion). QED.
 
 ## 1.5 Ambiguity and Tie-Breaking
 
@@ -157,6 +326,29 @@ int main() {
 **Partial ordering** of function templates resolves ambiguities between template functions. When
 both an ordinary function and a function template are viable, the ordinary function is preferred
 unless the template provides a more specialized match [N4950 §13.7.6.6.5].
+
+### Ambiguity with Reference Binding
+
+A particularly insidious ambiguity arises when one overload accepts by value and another by const
+reference:
+
+```cpp
+#include <iostream>
+
+void k(int)        { std::cout << "by value\n"; }
+void k(const int&) { std::cout << "by const ref\n"; }
+
+int main() {
+    k(42);  // ambiguous: int→int is exact match (lvalue-to-rvalue conversion)
+            // int→const int& is also exact match (lvalue-to-rvalue + qualification)
+            // The ranking rules do not prefer one over the other here
+}
+```
+
+Note: In practice, some compilers resolve this in favor of `k(int)` because the reference binding
+requires an additional (albeit trivial) qualification conversion step, but the Standard considers
+both as exact match rank. The ambiguity is real and portable code must provide a disambiguating
+overload.
 
 ## 1.6 Complete ADL Example: `operator<<`
 
@@ -213,6 +405,30 @@ convert an argument to a parameter type. Each ICS consists of up to three parts 
 
 No ICS can contain more than one user-defined conversion. This is why chaining `A → B → C` through
 two user-defined conversions is ill-formed.
+
+### User-Defined Conversions in Overload Resolution [N4950 §12.4.3.2.2]
+
+When a user-defined conversion is part of an ICS, the overall rank of the ICS is **User-Defined
+Conversion**, regardless of how good or bad the surrounding standard conversions are. This means a
+user-defined conversion is always worse than any standard conversion:
+
+```cpp
+#include <iostream>
+
+struct A {
+    operator int() const { return 42; }
+};
+
+void f(int)    { std::cout << "int\n"; }
+void f(short)  { std::cout << "short\n"; }
+
+int main() {
+    f(A{});  // Calls f(int): A→int is a user-defined conversion (A::operator int()),
+             // then no second standard conversion needed.
+             // A→int→short would require user-defined conversion + standard conversion.
+             // Both are User-Defined rank, but the first has no second conversion → preferred
+}
+```
 
 ### Ranking Tie-Breaking Rules
 
@@ -300,6 +516,42 @@ int main() {
 }
 ```
 
+### Template Partial Ordering [N4950 §13.7.6.6.5]
+
+When two function templates are both viable, partial ordering determines which is "more
+specialized." Template $A$ is more specialized than template $B$ if, for every argument type that
+$A$ can accept, $B$ can also accept it, but $B$ accepts some types that $A$ cannot:
+
+```cpp
+#include <iostream>
+
+template<typename T>
+void debug(T x) {
+    std::cout << "generic: " << x << "\n";
+}
+
+template<typename T>
+void debug(T* x) {
+    std::cout << "pointer: " << *x << "\n";
+}
+
+int main() {
+    debug(42);    // T is int → debug&lt;int&gt;: only the generic overload is viable
+    int val = 10;
+    debug(&val);  // T* matches int* for the pointer overload, T matches int* for the generic
+                  // The pointer overload is more specialized → wins
+}
+```
+
+**Proof that `debug(T*)` is more specialized than `debug(T)`:**
+
+1. Let $A = \text{debug}(T*)$ and $B = \text{debug}(T)$.
+2. Can $A$ accept every type that $B$ can accept? No. $A$ requires a pointer type; $B$ accepts any
+   type. So $A$ is not at least as specialized as $B$.
+3. Can $B$ accept every type that $A$ can accept? Yes. Every `T*` is also a valid `T` (where `T`
+   would be `int*`).
+4. By [N4950 §13.7.6.6.5], partial ordering selects $A$ as more specialized for pointer arguments.
+
 ### SFINAE and Overload Set Construction
 
 Substitution Failure Is Not An Error (SFINAE) [N4950 §13.10.3] affects overload resolution by
@@ -339,6 +591,36 @@ template<std::floating_point T>
 void f(T x) { std::cout << "floating: " << x << "\n"; }
 ```
 
+### SFINAE vs Concepts in Overload Resolution
+
+Concepts participate in overload resolution differently from SFINAE [N4950 §13.5.3]. When two viable
+functions differ only in their constraints, the one with the **more constrained** template is
+preferred:
+
+```cpp
+#include <iostream>
+#include <concepts>
+
+template<typename T>
+    requires std::integral<T>
+void f(T x) { std::cout << "integral\n"; }
+
+template<typename T>
+    requires std::signed_integral<T>
+void f(T x) { std::cout << "signed integral\n"; }
+
+int main() {
+    f(42);    // signed integral: std::signed_integral subsumes std::integral
+              // By [N4950 §13.5.3], the more constrained (subsuming) template wins
+    f(42u);   // integral: unsigned int satisfies std::integral but NOT std::signed_integral
+              // Only the first overload is viable
+}
+```
+
+This partial ordering of constraints has no equivalent in pre-C++20 SFINAE. With SFINAE, two
+overloads that both pass for a given type would be ambiguous; with concepts, the subsumption
+relation provides a principled ordering.
+
 ---
 
 ## 1.9 Overload Resolution with Multi-Parameter Functions
@@ -365,6 +647,25 @@ int main() {
     //   Neither is strictly better — ambiguity
 }
 ```
+
+### Multi-Parameter Ranking: A Proof
+
+**Claim:** If $f_1$ and $f_2$ are viable, and $f_1$ is strictly better than $f_2$ for at least one
+argument and no worse for any argument, then $f_1$ is selected.
+
+**Proof:**
+
+1. Let $k$ be the number of arguments. For each argument $i \in \{1, \ldots, k\}$, let
+   $\text{ICS}_{f_1}(i)$ and $\text{ICS}_{f_2}(i)$ be the implicit conversion sequences for $f_1$
+   and $f_2$ respectively.
+
+2. By the premise, $\exists j$ such that $\text{ICS}_{f_1}(j) \prec \text{ICS}_{f_2}(j)$ (strictly
+   better) and $\forall i, \text{ICS}_{f_1}(i) \preceq \text{ICS}_{f_2}(i)$ (no worse).
+
+3. By [N4950 §12.4.3.2], this is exactly the definition of "better viable function."
+
+4. If no other viable function is better than $f_1$, then $f_1$ is the unique best viable function.
+   QED.
 
 ### `const` and Non-`const` Overloads
 
@@ -445,6 +746,65 @@ void my_swap(T& a, T& b) {
 This two-phase lookup (unqualified + ADL) is the correct way to write generic code that respects
 custom `swap` implementations.
 
+### Why Hidden Friends Are Preferable to Free Functions
+
+A hidden friend defined inside the class body is found only via ADL. A free function defined in the
+namespace is found by both unqualified lookup and ADL. The hidden friend approach prevents the
+function from being found when it should not be, reducing the chance of unintended overload
+resolution:
+
+```cpp
+// NOT a hidden friend — found by unqualified lookup even without ADL
+namespace lib {
+    struct Widget {
+        int value;
+    };
+    void swap(Widget& a, Widget& b);  // declaration visible to unqualified lookup
+}
+
+// Hidden friend — found ONLY via ADL
+namespace lib {
+    struct Widget {
+        int value;
+        friend void swap(Widget& a, Widget& b) { /* ... */ }
+    };
+}
+```
+
+By [N4950 §11.4.4], a friend function defined inside a class is visible in the class body and the
+enclosing namespace, but only if the class is an associated entity of an argument. This means the
+hidden friend is effectively invisible to ordinary unqualified lookup unless an argument of the
+class type is present.
+
+---
+
+## 1.11 Access Checking in Overload Resolution [N4950 §12.4.3]
+
+Access control (public, protected, private) is applied **after** overload resolution. A candidate
+function that is the best match by conversion ranking is selected, and only then is its access
+checked. If it is inaccessible, the program is ill-formed — but the compiler does not fall back to a
+less-preferred accessible candidate:
+
+```cpp
+#include <iostream>
+
+class Secret {
+    void f(int) { std::cout << "private\n"; }
+public:
+    void f(double) { std::cout << "public\n"; }
+};
+
+int main() {
+    Secret s;
+    s.f(42);  // ERROR: f(int) is the best match (exact vs promotion)
+              // but f(int) is private. The compiler does NOT fall back to f(double).
+              // This is a hard error, not an ambiguity.
+}
+```
+
+This behavior is surprising to developers coming from languages where accessibility is part of
+dispatch (like Java). In C++, accessibility is a post-resolution check, not a pre-filter.
+
 ---
 
 ## Common Pitfalls
@@ -466,5 +826,16 @@ custom `swap` implementations.
 - **`nullptr` overload resolution.** `f(int)` and `f(int*)` called with `f(nullptr)` selects
   `f(int*)` because `nullptr` has type `std::nullptr_t`, which converts to any pointer type but not
   to `int`. However, `f(0)` selects `f(int)` because `0` is an `int` literal.
+- **Access control is not a filter.** A private member function can "win" overload resolution,
+  causing a hard error. The compiler will not fall back to a less-preferred public overload. Always
+  ensure the most specific overload for common argument types is accessible.
+- **User-defined conversions are all the same rank.** Even if one converting constructor is
+  "obviously better" (e.g., no narrowing), the compiler cannot rank two user-defined conversions
+  against each other. The result is ambiguity, not the better conversion winning.
+- **Ellipsis is always the worst.** A variadic function (`void f(...)`) is viable for any argument
+  type, but it always loses to any other viable candidate. Never use `...` for type dispatching.
 
-:::
+## See Also
+
+- [Calling Conventions and Stack Management](2_calling_conventions.md)
+- [C-Interop and FFI](5_c_interop.md)

@@ -45,6 +45,84 @@ int subtract(int a, int b) {
 }
 ```
 
+### Formal Semantics of `extern "C"`
+
+By [N4950 §9.9], the `extern "C"` linkage specification has three effects:
+
+1. **Name mangling is disabled.** The symbol name in the object file is the literal function name,
+   not an encoded representation of the signature.
+2. **Language linkage is set to C.** This affects how the function is called (C calling convention)
+   and how entities are looked up.
+3. **Overloading is prohibited.** Within an `extern "C"` block, you cannot have two functions with
+   the same name — the linker would see duplicate symbols.
+
+### `extern "C"` and Function Overloading
+
+Since name mangling is disabled, you cannot overload functions with `extern "C"` linkage:
+
+```cpp
+extern "C" {
+    int process(int x);     // OK: symbol is "process"
+    // int process(double); // ERROR: duplicate symbol "process" — no mangling to disambiguate
+}
+```
+
+This is not a limitation of the linkage specification per se, but a consequence of the linker's
+requirement for unique symbol names within a translation unit.
+
+### `extern "C"` and Member Functions
+
+`extern "C"` cannot be applied to member functions. Only free functions and variables can have C
+language linkage [N4950 §9.9.1]:
+
+```cpp
+class Foo {
+    // extern "C" void bar();  // ERROR: member functions cannot have C linkage
+    static void bar();         // OK: but still has C++ linkage (name mangled)
+};
+```
+
+### `extern "C"` and Static Members
+
+Static member functions have C++ linkage even if declared in a class. If you need a C-callable
+static member function, you must provide a non-member wrapper:
+
+```cpp
+extern "C" void foo_c_wrapper(void* self) {
+    // reinterpret self to the actual class type
+    // call the static or non-static member function
+}
+```
+
+### `constexpr` and `extern "C"`
+
+A function declared with both `constexpr` and `extern "C"` linkage is valid since C++17. The
+function can be used in constant expressions and also has C linkage for linking purposes [N4950
+§9.9]:
+
+```cpp
+extern "C" constexpr int square(int x) {
+    return x * x;
+}
+
+static_assert(square(5) == 25);  // OK: constexpr evaluation
+// Symbol "square" has C linkage for linking purposes
+```
+
+### `extern "C"` and `noexcept`
+
+Functions with `extern "C"` linkage are implicitly `noexcept` unless declared otherwise [N4950
+§14.5]. This is because C has no exception mechanism, so a C-linkage function that throws violates
+the C ABI contract:
+
+```cpp
+extern "C" void c_function();  // implicitly noexcept
+
+extern "C" void throwing_c_function() noexcept(false);  // explicitly non-noexcept — allowed
+                                                        // but dangerous: exceptions may cross
+                                                        // the C ABI boundary
+```
+
 ## 5.2 Calling C from C++
 
 The standard C library headers are wrapped with `extern "C"` by the C++ standard library headers.
@@ -122,6 +200,25 @@ int main() {
     dist = point_distance(p.get(), &origin);
     std::printf("After translate: %f\n", dist);  // ~4.242641
 }
+```
+
+### Memory Ownership Across the Boundary
+
+When a C function returns a heap-allocated pointer, the C++ caller must know how to free it. If the
+C library uses `malloc`, the C++ code must use `free` (not `delete`):
+
+```cpp
+extern "C" {
+    // C function that allocates with malloc
+    char* c_create_buffer(size_t size);
+    void c_destroy_buffer(char* buf);
+}
+
+// C++ code using the C allocator
+std::unique_ptr<char, decltype(&c_destroy_buffer)> buf(
+    c_create_buffer(1024),
+    c_destroy_buffer  // uses the correct C deallocator
+);
 ```
 
 ## 5.3 Calling C++ from C
@@ -202,10 +299,30 @@ int main(void) {
 }
 ```
 
+### `void*` Instead of `reinterpret_cast`
+
+For maximum portability across platforms where C and C++ may have different pointer representations,
+use `void*` handles and pass data through C-compatible types:
+
+```cpp
+// More portable C API using void*
+extern "C" {
+    typedef void* WidgetHandle;
+
+    WidgetHandle widget_create(const char* name) {
+        return static_cast<void*>(new Widget(name));
+    }
+
+    void widget_destroy(WidgetHandle h) {
+        delete static_cast<Widget*>(h);
+    }
+}
+```
+
 :::warning
-The `reinterpret_cast` approach above works on platforms where C and C++ share the same
-ABI (pointer size, struct layout, calling convention). This is true for x86-64 Linux/macOS (both use
-the System V ABI). On platforms with divergent C/C++ ABIs, use `void*` handles and pass data through
+The `reinterpret_cast` approach works on platforms where C and C++ share the same ABI
+(pointer size, struct layout, calling convention). This is true for x86-64 Linux/macOS (both use the
+System V ABI). On platforms with divergent C/C++ ABIs, use `void*` handles and pass data through
 C-compatible types only.
 :::
 
@@ -220,6 +337,38 @@ At a C/C++ boundary, several ABI properties must align:
 | Struct layout      | Same as C++ POD                       | Same as C for POD; non-POD differs     |
 | Exception handling | N/A (no exceptions)                   | Zero-cost with unwind tables           |
 | `bool` size        | Typically 1 byte (implementation-def) | Same as C (implementation-defined)     |
+
+### Itanium C++ ABI vs MSVC C++ ABI
+
+On Linux and macOS, the Itanium C++ ABI is used for name mangling, virtual table layout, and
+exception handling. On Windows, MSVC uses a different C++ ABI. This means that C++ libraries
+compiled with GCC/Clang cannot be linked with MSVC-compiled C++ code (even with `extern "C"` on the
+C-compatible parts). The C-compatible parts work fine across ABIs; only C++-specific features
+(classes, templates, exceptions) are incompatible.
+
+### Name Mangling Examples
+
+The Itanium C++ ABI encodes the full function signature into the symbol name:
+
+```cpp
+// Symbol: _Z3addii
+void add(int, int);
+
+// Symbol: _Z3adddd
+void add(double, double);
+
+// Symbol: _ZN3lib3addEii
+namespace lib { void add(int, int); }
+
+// Symbol: _ZNK4Base3fooEv
+struct Base { virtual void foo() const; };
+
+// Symbol: _Z3maxIiERKT_S2_
+template<typename T> const T& max(const T&, const T&);
+```
+
+With `extern "C"`, all of these become simply `add`, losing the type information. This is why
+overloading is not possible within `extern "C"` blocks.
 
 ```cpp
 #include <cstddef>
@@ -272,6 +421,35 @@ When passing data across a C/C++ boundary, ensure that:
    through C frames, which have no unwind information — undefined behavior. Catch all exceptions
    before returning to C code.
 
+### Proof of Struct Layout Compatibility
+
+**Claim:** A standard-layout struct with only fundamental type members has identical layout in C and
+C++ on the same platform.
+
+**Proof:**
+
+1. By [N4950 §7.7.2], a standard-layout class has the same layout as a corresponding C struct with
+   the same members in the same order.
+2. By [N4950 §7.7.2.1], each non-static data member is allocated at an offset that satisfies its
+   alignment requirement, and the alignment of the struct is the maximum alignment of its members.
+3. C struct layout follows the same rules (ISO C 6.2.5p20, 6.7.2.1p15): each member is placed at an
+   offset satisfying its alignment, with padding inserted as needed.
+4. Since both C and C++ use the same alignment rules for fundamental types (`int`, `double`, etc.)
+   on the same platform, the resulting layout is byte-for-byte identical. QED.
+
+### What Breaks Layout Compatibility
+
+The following C++ features break layout compatibility with C:
+
+| Feature                         | Effect on Layout                                    |
+| :------------------------------ | :-------------------------------------------------- |
+| Virtual functions               | Adds vtable pointer (typically 8 bytes at offset 0) |
+| Virtual base classes            | Adds vtable pointer and virtual base offset         |
+| Multiple inheritance            | May add pointer adjustments for base-to-derived     |
+| Non-standard-layout members     | Reference members, `std::string`, etc.              |
+| Different compiler flags        | `-fpack-struct`, `#pragma pack` changes padding     |
+| Different alignment (`alignas`) | Adds padding not present in the C struct            |
+
 ```cpp
 #include <cstdint>
 #include <cstddef>
@@ -296,6 +474,29 @@ struct BadPacket {
     virtual void validate() {}  // vptr changes layout
 };
 ```
+
+### Controlling Layout with `#pragma pack`
+
+When interfacing with a C library that uses non-default packing (common in network protocols and
+file formats), use `#pragma pack` to match the layout:
+
+```cpp
+#pragma pack(push, 1)  // 1-byte alignment — no padding
+struct NetworkHeader {
+    uint8_t  type;
+    uint32_t length;
+    uint16_t flags;
+};
+#pragma pack(pop)
+
+static_assert(sizeof(NetworkHeader) == 7);  // 1 + 4 + 2 = 7, no padding
+```
+
+:::warning
+`#pragma pack` changes the alignment of all members in the struct, which can cause
+misaligned access on strict-alignment architectures (ARM, SPARC). Use with caution and document the
+rationale.
+:::
 
 ## 5.6 Dynamic Library Loading with `dlfcn.h`
 
@@ -383,7 +584,109 @@ immediately. `RTLD_LAZY` defers resolution to first use, which can mask errors a
 unpredictable points. For plugin loading, prefer `RTLD_NOW`.
 :::
 
-## 5.7 Common Pitfalls at Language Boundaries
+### Windows Equivalent: `LoadLibrary` and `GetProcAddress`
+
+On Windows, the equivalent functions are `LoadLibraryA`/`LoadLibraryW`, `GetProcAddress`, and
+`FreeLibrary`. The pattern is identical but the API is different:
+
+```cpp
+#include <windows.h>
+
+extern "C" {
+    typedef int32_t (*ComputeFn)(int32_t, int32_t);
+}
+
+int main() {
+    HMODULE hmod = LoadLibraryA("plugin.dll");
+    if (!hmod) {
+        return 1;
+    }
+
+    ComputeFn compute = reinterpret_cast<ComputeFn>(GetProcAddress(hmod, "plugin_compute"));
+    if (!compute) {
+        FreeLibrary(hmod);
+        return 1;
+    }
+
+    int32_t result = compute(3, 4);  // 25
+    FreeLibrary(hmod);
+    return 0;
+}
+```
+
+## 5.7 `nothrow new` and C Interop
+
+When allocating memory in C++ that will be freed by C code (or vice versa), you must ensure
+compatible allocation. C++ `new` throws `std::bad_alloc` on failure; C `malloc` returns `NULL`. Use
+`nothrow new` to match C's error-reporting convention:
+
+```cpp
+#include <new>
+#include <cstdlib>
+
+extern "C" void* allocate_buffer(size_t size) {
+    // nothrow new returns nullptr on failure, matching malloc semantics
+    return ::operator new(size, std::nothrow);
+}
+
+extern "C" void deallocate_buffer(void* ptr) {
+    ::operator delete(ptr, std::nothrow);
+}
+```
+
+By [N4950 §7.6.2.7], `::operator new(size, std::nothrow)` returns a null pointer on allocation
+failure instead of throwing. This matches the `malloc` contract that C code expects.
+
+## 5.8 Callback Functions Across the Boundary
+
+When C code passes a callback function pointer to C++ code, the callback must have C linkage. If the
+callback is a C++ function, it must be wrapped:
+
+```cpp
+extern "C" {
+
+// C library function that takes a callback
+void c_library_set_callback(void (*callback)(int event_code));
+
+}
+
+// C++ callback wrapper
+extern "C" void my_callback_wrapper(int event_code) {
+    // Inside this wrapper, we are back in C++ context
+    // We can use C++ features (exceptions, std::string, etc.)
+    // but must not let exceptions escape
+    try {
+        // C++ implementation
+    } catch (...) {
+        // Swallow — exceptions must not cross the C boundary
+    }
+}
+
+void register_callback() {
+    c_library_set_callback(my_callback_wrapper);
+}
+```
+
+### Function Pointer Type Compatibility
+
+A function pointer with C linkage and a function pointer with C++ linkage are **different types**
+[N4950 §7.3.8]. You cannot assign one to the other without a cast:
+
+```cpp
+extern "C" typedef void (*CFuncPtr)(int);
+typedef void (*CppFuncPtr)(int);
+
+CFuncPtr   c_ptr = nullptr;
+CppFuncPtr cpp_ptr = nullptr;
+
+// c_ptr = cpp_ptr;   // ERROR: different types
+c_ptr = reinterpret_cast<CFuncPtr>(cpp_ptr);  // OK with cast, but dangerous
+```
+
+On platforms where C and C++ share the same calling convention (virtually all modern platforms),
+this cast is safe. But it is technically undefined behavior by the Standard.
+
+## 5.9 Common Pitfalls at Language Boundaries
 
 1. **Exceptions crossing the boundary**: A C++ exception that propagates through a C call stack is
    undefined behavior. Always wrap C++ entry points with `try`/`catch(...)`.
@@ -400,6 +703,15 @@ unpredictable points. For plugin loading, prefer `RTLD_NOW`.
 5. **`new`/`delete` mismatch**: Memory allocated with `new` in C++ must be freed with `delete` (not
    `free()`), and vice versa. If passing ownership of heap memory across the boundary, provide
    explicit `create`/`destroy` functions in the C API.
+
+6. **`bool` vs `_Bool`**: C's `_Bool` and C++'s `bool` are distinct types. While they are typically
+   compatible on most platforms, the Standard does not guarantee layout compatibility. Use `int` or
+   a fixed-width type for flags passed across the boundary.
+
+7. **String ownership**: If a C++ function returns a `const char*` pointing to a `std::string`'s
+   internal buffer, the pointer is valid only as long as the `std::string` is alive. C code that
+   stores this pointer will have a dangling reference once the `std::string` is destroyed. Return a
+   copy or require the C code to copy immediately.
 
 ```cpp
 // Safe C++ entry point wrapping
@@ -418,11 +730,30 @@ extern "C" {
 }
 ```
 
+### Construct On First Use Idiom
+
+To avoid the static initialization order fiasco when C code calls into C++ during startup:
+
+```cpp
+// Safe global accessor — avoids static init order issues
+class Config {
+    std::string name_;
+public:
+    Config() : name_("default") {}
+    const char* name() const { return name_.c_str(); }
+};
+
+extern "C" const char* get_config_name() {
+    static Config instance;  // Constructed on first use, not at static init time
+    return instance.name();
+}
+```
+
+By [N4950 §6.7.7], a local `static` variable with block scope is initialized on first control flow
+passage through its declaration, which is guaranteed to be thread-safe since C++11. This avoids the
+static initialization order problem entirely.
+
 ## See Also
 
 - [Calling Conventions and Stack Management](2_calling_conventions.md)
 - [Type Erasure](4_type_erasure.md)
-
-:::
-
-:::

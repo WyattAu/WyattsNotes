@@ -99,12 +99,73 @@ with:
 3. **Name Mangling:** How C++ symbol names are encoded into unique strings for the linker (e.g.,
    `_ZNK3MapI...`).
 
+The Itanium C++ ABI [Itanium ABI] is the specification used by GCC and Clang on all non-Windows
+platforms. It governs vtable layout, the order of base class subobjects, the construction and
+destruction semantics of virtual bases, and the name mangling algorithm. Understanding this
+specification is necessary for diagnosing ABI breakage.
+
 ### The Linkage Rule
 
 **Rule:** All object files (`.o`, `.obj`) and static libraries (`.a`, `.lib`) linked into a single
 executable **must** be compiled with a compatible ABI.
 
 Violating this results in Linker Errors (best case) or runtime memory corruption (worst case).
+
+### Proof of Binary Incompatibility
+
+Consider two translation units compiled with different ABIs. Unit A uses `libstdc++` and Unit B uses
+`libc++`. Both define a function that takes `std::string` by value:
+
+```cpp
+// unit_a.cpp — compiled with -stdlib=libstdc++
+#include <string>
+#include <cstddef>
+
+extern "C" std::size_t get_string_size_libstdcxx(std::string s) {
+    return s.size();
+}
+```
+
+```cpp
+// unit_b.cpp — compiled with -stdlib=libc++
+#include <string>
+#include <iostream>
+#include <cstddef>
+
+extern "C" std::size_t get_string_size_libstdcxx(std::string s);
+
+int main() {
+    std::string msg = "hello";
+    // The caller (libc++) constructs a std::string with sizeof=24 (libc++ SSO buffer is 22 bytes)
+    // The callee (libstdc++) expects sizeof=32 (libstdc++ SSO buffer is 15 bytes)
+    // The callee reads 32 bytes from the stack, but only 24 were written.
+    // This reads 8 bytes of stack garbage, causing undefined behavior.
+    std::cout << get_string_size_libstdcxx(msg) << "\n";
+    return 0;
+}
+```
+
+This compiles and links without error because `extern "C"` suppresses name mangling. However, at
+runtime, `get_string_size_libstdcxx` interprets the stack according to `libstdc++`'s `std::string`
+layout, which differs from `libc++`'s layout. The `size()` call reads from the wrong offset and
+returns garbage. This is undefined behavior [N4950 §6.9].
+
+**Theorem:** Two object files compiled against different C++ standard library implementations are
+binary-incompatible even when the source-level API is identical.
+
+**Proof sketch:**
+
+1. Each standard library implementation defines its own `std::string` layout (member order, SSO
+   buffer size, alignment padding).
+2. The C++ calling convention passes non-trivially-copyable class types by value via memory (caller
+   allocates space, callee reads from that space).
+3. If `sizeof(std::string)` differs between implementations, the callee reads bytes that were never
+   written by the caller, violating memory safety.
+4. Even when `sizeof` is coincidentally equal, the internal layout (offset of size field, offset of
+   data pointer) differs, causing the callee to interpret data fields incorrectly.
+
+$\therefore$ No correct program can be formed by linking object files from different standard
+library ABIs. $\blacksquare$
 
 ### Common ABI Hazards
 
@@ -126,6 +187,11 @@ This is controlled via a preprocessor macro:
 link because the symbol names for `std::string` are mangled differently. This is explained in
 further detail in the [Standard Library Implementation](3_standard_library_implementation.md)
 section.
+
+The root cause is that C++11 prohibited Copy-On-Write semantics for `std::basic_string` [N4950
+§23.4.5]. The legacy `libstdc++` implementation used COW, which means iterators could be invalidated
+by non-const operations on aliased strings. The new ABI uses Small String Optimization (SSO)
+instead, eliminating this class of bugs at the cost of breaking binary compatibility.
 
 #### 2. MSVC vs. MinGW vs. Clang (Windows)
 
@@ -274,6 +340,25 @@ Also: Three-way comparison (`<=>`), `std::format`, designated initializers, `std
 | C++20   | 10.0    | 10.0      | VS 2019  |
 | C++23   | 13.0    | 16.0      | VS 2022  |
 
+### Feature-Level Support Details
+
+Different compilers achieve "full" C++23 support at different versions. The table above shows the
+minimum version for basic support, but some features require newer versions:
+
+| C++23 Feature             | GCC Min | Clang Min | MSVC Min | Notes                                     |
+| :------------------------ | :------ | :-------- | :------- | :---------------------------------------- |
+| `std::print`              | 14.0    | 18.0      | 19.40    | Requires OS-level terminal support        |
+| `std::expected`           | 13.0    | 16.0      | 19.38    | Widely available                          |
+| `std::flat_map`           | 14.0    | 17.0      | 19.40    | Requires sorted associative container     |
+| `std::mdspan`             | 14.0    | 18.0      | 19.40    | Multidimensional view                     |
+| `std::move_only_function` | 13.0    | 18.0      | 19.38    | Move-only callable wrapper                |
+| `std::generator`          | 14.0    | 18.0      | N/A      | Coroutine-based generator                 |
+| `std::ranges::to`         | 14.0    | 18.0      | 19.40    | Range-to-container conversion             |
+| `#embed`                  | N/A     | 19.0      | N/A      | Resource embedding                        |
+| `deducing this`           | N/A     | 18.0      | N/A      | Explicit object member functions          |
+| `auto` in parameters      | N/A     | N/A       | N/A      | Not yet implemented in any major compiler |
+| `std::format` full spec   | 14.0    | 17.0      | 19.38    | Many format specifiers added in C++23     |
+
 ## ABI Stability Between Compiler Versions
 
 ### What Changes Between ABI Versions
@@ -289,6 +374,22 @@ incompatible with previously compiled code. Common causes:
    AVX-512 register passing).
 4. **Standard library changes.** Adding members to standard library types (e.g., `std::vector` grew
    additional member variables in some implementations).
+
+### ABI-Breaking Changes Across Standards
+
+The following table catalogs known ABI-breaking changes introduced by various C++ standards in
+`libstdc++` and `libc++`.
+
+| Change                            | Standard | Implementation | Effect                                      |
+| :-------------------------------- | :------- | :------------- | :------------------------------------------ |
+| `std::string` COW to SSO          | C++11    | libstdc++      | Dual ABI; `sizeof(std::string)` changed     |
+| `std::list` size field removal    | C++11    | libstdc++      | Dual ABI; `O(1)` size() required node count |
+| `std::vector` bool specialization | C++20    | libstdc++      | Minor layout changes in some configurations |
+| `std::optional` union member      | C++23    | libc++         | ABI version bump via `_LIBCPP_ABI_VERSION`  |
+| `std::function` small buffer      | C++14    | libc++         | Layout change in libc++ ABI v2              |
+| `std::shared_ptr` control block   | C++20    | MSVC STL       | Debug-only layout change (IDL sensitive)    |
+| `std::locale::facet` refcount     | C++11    | libstdc++      | Atomic refcount changed layout              |
+| `std::type_info` / RTTI           | C++11    | All            | vtable changes for virtual bases            |
 
 ### ABI Breakage Examples
 
@@ -312,16 +413,44 @@ struct Config {
 // This is an ABI break even though the source API "looks" compatible.
 ```
 
+This is a concrete instance of the One Definition Rule (ODR) violation at the binary level [N4950
+§6.3]. The ODR requires that every entity with external linkage have exactly one definition across
+all translation units. When the definition of `Config` changes between library version v1 and v2,
+but the consumer was compiled against v1, the binary contains two incompatible definitions of
+`Config` in the same program. The linker does not detect this because the struct has no mangled
+symbol (it is not a function or global variable).
+
+### The `-fabi-version` Flags (GCC)
+
+GCC provides flags to control the ABI version used during compilation. These are relevant when
+building code that must interoperate with older binaries.
+
+```bash
+# GCC 5+: default is ABI version 11 (dual ABI with CXX11 ABI enabled)
+g++ -std=c++23 -fabi-version=11 code.cpp
+
+# Force legacy ABI (equivalent to -D_GLIBCXX_USE_CXX11_ABI=0)
+g++ -std=c++23 -fabi-version=10 code.cpp
+
+# Check the current ABI version
+echo | g++ -dM -E - | grep __GXX_ABI_VERSION
+# Output: #define __GXX_ABI_VERSION 1017
+```
+
+ABI version 10 corresponds to the pre-C++11 ABI (COW `std::string`). ABI version 11 is the modern
+C++11 ABI. There is no ABI version 12 or higher as of GCC 14; GCC has maintained ABI version 11
+stability since GCC 5.1.
+
 ### Cross-Compiler ABI Compatibility Matrix
 
-| Scenario                                   | Compatible? | Notes                                                |
-| :----------------------------------------- | :---------- | :--------------------------------------------------- |
-| GCC 13 ↔ GCC 14 (same `-std`)              | Yes         | Same `libstdc++` ABI                                 |
-| Clang 16 ↔ GCC 13 (Linux, `libstdc++`)     | Usually     | Must use same `libstdc++` version and `-std` flag    |
-| Clang 16 (`libc++`) ↔ GCC 13 (`libstdc++`) | **No**      | Different standard library ABIs                      |
-| MSVC 2022 ↔ MinGW-w64 (Windows)            | **No**      | Different name mangling, exception handling, C++ ABI |
-| GCC Linux ↔ Clang Linux (`libstdc++`)      | Usually     | Same `libstdc++.so` must be used at runtime          |
-| MSVC 2019 ↔ MSVC 2022                      | Usually     | MSVC STL aims for ABI stability, but not guaranteed  |
+| Scenario                                                   | Compatible? | Notes                                                |
+| :--------------------------------------------------------- | :---------- | :--------------------------------------------------- |
+| GCC 13 $\leftrightarrow$ GCC 14 (same `-std`)              | Yes         | Same `libstdc++` ABI                                 |
+| Clang 16 $\leftrightarrow$ GCC 13 (Linux, `libstdc++`)     | Usually     | Must use same `libstdc++` version and `-std` flag    |
+| Clang 16 (`libc++`) $\leftrightarrow$ GCC 13 (`libstdc++`) | **No**      | Different standard library ABIs                      |
+| MSVC 2022 $\leftrightarrow$ MinGW-w64 (Windows)            | **No**      | Different name mangling, exception handling, C++ ABI |
+| GCC Linux $\leftrightarrow$ Clang Linux (`libstdc++`)      | Usually     | Same `libstdc++.so` must be used at runtime          |
+| MSVC 2019 $\leftrightarrow$ MSVC 2022                      | Usually     | MSVC STL aims for ABI stability, but not guaranteed  |
 
 :::warning
 Mixing Clang and GCC on Linux with the same `libstdc++` is generally safe for the same
@@ -355,6 +484,11 @@ int main() {
 }
 ```
 
+The `sizeof(long)` difference is a consequence of the different data models: Windows uses the LLP64
+model (`long` is 32 bits, `long long` is 64 bits), while Linux uses the LP64 model (`long` is 64
+bits). This is defined by the System V AMD64 ABI specification [System V ABI] and the Microsoft x64
+calling convention [MSVC x64 ABI] respectively.
+
 ## Common Pitfalls
 
 - **Defaulting to an older standard.** GCC defaults to C++14 (or C++17 in newer versions), Clang
@@ -367,6 +501,13 @@ int main() {
   or `long long` for fixed-width types.
 - **Forgetting to set `CMAKE_CXX_EXTENSIONS OFF`.** Without this, CMake defaults to GNU extensions,
   which may introduce non-portable constructs.
+- **Passing C++ types across `extern "C"` boundaries.** `extern "C"` suppresses name mangling but
+  does not change the calling convention for C++ class types. Passing `std::string`, `std::vector`,
+  or any non-POD type through an `extern "C"` function is undefined behavior if the caller and
+  callee use different standard library ABIs. Use opaque handles or plain C types at ABI boundaries.
+- **ABI version drift in long-lived projects.** If a library is compiled once with GCC 5 and never
+  recompiled, but the application is upgraded to GCC 14, the two may have incompatible ABI
+  assumptions. Rebuild all dependencies when upgrading the toolchain.
 
 ## ABI and Inline Namespace Versioning
 
@@ -376,7 +517,7 @@ evolution without breaking existing binaries.
 
 ### How Inline Namespaces Work
 
-An inline namespace [N4950 §9.8.2] is a nested namespace whose members are automatically accessible
+An inline namespace [N4950 S9.8.2] is a nested namespace whose members are automatically accessible
 from the enclosing namespace. However, the mangled symbol name includes the inline namespace name,
 providing ABI versioning without API changes:
 
@@ -409,6 +550,31 @@ nm -C /usr/lib/libc++.so | grep basic_string
 # The __1 is the inline namespace (ABI version 1)
 ```
 
+### Inline Namespace Mechanics: Formal Treatment
+
+Consider the following simplified representation of how `libstdc++` implements the dual ABI:
+
+```cpp
+// Inside <string> (simplified):
+namespace std {
+    // Legacy ABI (inline namespace removed, so symbols mangle as std::basic_string)
+    inline namespace __cxx11 {
+        template&lt;typename CharT, ...&gt;
+        class basic_string { /* SSO implementation */ };
+    }
+}
+```
+
+When `_GLIBCXX_USE_CXX11_ABI=1`, `basic_string` is defined inside `std::__cxx11`. The mangled name
+for `std::string` becomes `_ZNSt7__cxx11basic_stringIcSt11char_traitsIcESaIcEE` (includes the
+`__cxx11` tag). When `_GLIBCXX_USE_CXX11_ABI=0`, the `basic_string` definition is placed directly in
+`std`, and the mangled name omits the `__cxx11` component.
+
+The linker treats these as entirely different symbols. An object file compiled with ABI=0 references
+`_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx11basic_stringIT_T0_T1_EERKS8_S9_` while an object file
+compiled with ABI=1 references the same function but without the `__cxx11` inline namespace
+qualifier. The linker reports "undefined reference" because it cannot find a match.
+
 ### Practical Implications
 
 1. **Never mix ABI versions in the same binary.** If one library was compiled with
@@ -419,6 +585,97 @@ nm -C /usr/lib/libc++.so | grep basic_string
    will fail.
 3. **ABI version is embedded in the symbol name.** You can verify ABI compatibility by inspecting
    symbol names with `nm -C` or `objdump -T`.
+
+## ABI Inspecting Tools
+
+Verifying ABI compatibility is an essential diagnostic skill. The following tools allow you to
+inspect the binary interface of compiled artifacts.
+
+### `nm`: Symbol Table Inspection
+
+```bash
+# List symbols in a shared library (demangled)
+nm -DC /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep basic_string
+
+# Show undefined symbols in an object file
+nm -u app.o
+
+# Show defined symbols
+nm app.o | grep " T "
+```
+
+### `objdump`: ELF Section and Symbol Inspection
+
+```bash
+# Show all dynamic symbols with their versions
+objdump -T /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | head -30
+
+# Show the dynamic relocation entries
+objdump -R app
+
+# Disassemble a specific function
+objdump -d -M intel app | grep -A20 "<main>:"
+```
+
+### `readelf`: Structured ELF Inspection
+
+```bash
+# Show the program headers (including INTERP for dynamic linker)
+readelf -l app
+
+# Show the dynamic section (DT_NEEDED entries)
+readelf -d app
+
+# Show symbol version requirements
+readelf -V app
+
+# Show section headers (verify .text, .rodata, .data sizes)
+readelf -S app
+```
+
+### `abi-compliance-checker` (Advanced)
+
+For library maintainers, the `abi-compliance-checker` tool from the ABI Compliance Checker suite can
+automatically detect ABI breaks between two versions of a library:
+
+```bash
+# Install
+sudo apt install abi-compliance-checker abi-dumper
+
+# Dump ABI descriptors for two versions
+abi-dumper libfoo.so.1 -o abi1.xml -lver 1.0
+abi-dumper libfoo.so.2 -o abi2.xml -lver 2.0
+
+# Compare
+abi-compliance-checker -l libfoo -old abi1.xml -new abi2.xml
+```
+
+This tool checks for:
+
+- Added/removed symbols
+- Changed symbol visibility
+- Modified vtable layout
+- Changed type sizes
+- Modified function signatures
+
+### C++ Standard Header ABI Differences
+
+Different C++ standard library implementations may implement the same header with different internal
+types. The following table shows the `sizeof` differences for key types across implementations:
+
+| Type                                  | libstdc++ (64-bit) | libc++ (64-bit) | MSVC STL (64-bit) |
+| :------------------------------------ | :----------------- | :-------------- | :---------------- |
+| `sizeof(std::string)`                 | 32                 | 24              | 32                |
+| `sizeof(std::vector<T>)`              | 24                 | 24              | 24                |
+| `sizeof(std::optional<T>)` (no-value) | 24 (for int)       | 16 (for int)    | 16 (for int)      |
+| `sizeof(std::shared_ptr<T>)`          | 16                 | 16              | 16                |
+| `sizeof(std::unique_ptr<T>)`          | 8                  | 8               | 8                 |
+| `sizeof(std::function<void()>)`       | 32                 | 32              | 48                |
+
+The `std::function` size difference is particularly notable: MSVC STL allocates 48 bytes for the
+small buffer optimization (SBO), while libstdc++ and libc++ allocate 32 bytes. A `std::function`
+that captures more state than fits in the SBO buffer triggers heap allocation, so the threshold
+differs between implementations.
 
 ## Cross-Platform ABI Checklist
 
@@ -435,8 +692,22 @@ When distributing a C++ library that must work across platforms, verify the foll
 
 ## See Also
 
+- [Installing a Compiler](1_installing_compiler.md)
 - [Standard Library Implementation](3_standard_library_implementation.md)
+- [Cross-compilation Toolchains](4_crosscompilation_toolchains.md)
+- [Linker Configuration](5_linker_configuration.md)
 
-:::
+## Further Reading
 
-:::
+- **[Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)** -- The formal
+  specification of the C++ ABI used by GCC and Clang on non-Windows platforms. This document defines
+  name mangling, vtable layout, exception handling tables, and class layout rules. Understanding
+  this specification is essential for debugging ABI breakage.
+- **[System V AMD64 ABI](https://gitlab.com/x86-psABIs/x86-64-ABI)** -- The calling convention
+  specification for x86-64 Linux systems. Defines register usage, stack frame layout, and argument
+  passing rules.
+- **[N4950](https://wg21.link/N4950)** -- The C++23 working draft standard. The authoritative
+  reference for language and library behavior.
+- **[Compiler Explorer (godbolt.org)](https://godbolt.org)** -- Online tool for inspecting compiler
+  output (assembly, AST, preprocessed source) across multiple compilers. Essential for verifying
+  that compiler flags produce the expected code generation.

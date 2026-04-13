@@ -38,6 +38,29 @@ ID) based on the input configuration:
    - **Miss:** Download the recipe (`conanfile.py`), build from source locally, and (optionally)
      upload the new binary to the remote.
 
+### Package ID Calculation: Formal Treatment
+
+The Package ID is a SHA-1 hash computed over the concatenation of:
+
+$$
+\text{PackageID} = \text{SHA1}(\text{settings} \| \text{options} \| \text{requires})
+$$
+
+Where `settings` is a sorted dictionary of `os`, `arch`, `compiler`, `compiler.version`,
+`compiler.libcxx`, `build_type`, etc. The `options` dictionary is package-specific. The `requires`
+list captures transitive dependency versions.
+
+**Theorem:** Two machines with identical profiles and identical dependency version constraints will
+compute the same Package ID.
+
+**Proof:** SHA-1 is a deterministic function: identical inputs always produce identical outputs. The
+profile defines the `settings` dictionary. The `conanfile.txt` (or `conanfile.py`) defines the
+`options` and `requires`. If both are identical on two machines, the SHA-1 input is identical, and
+therefore the output is identical. $\blacksquare$
+
+**Corollary:** If two machines have the same Package ID for a dependency, they can share the same
+pre-compiled binary. This is the foundation of Conan's binary caching.
+
 ## Profile Configuration
 
 A **Conan Profile** is a text file that defines the "Settings" used to calculate the Package ID. It
@@ -96,6 +119,39 @@ include(base_linux)
 [settings]
 arch=x86_64
 build_type=Debug
+```
+
+### Cross-Compilation Profiles
+
+For cross-compilation, Conan requires separate build and host profiles:
+
+```ini
+# profile/build-linux (the machine running the compiler)
+[settings]
+os=Linux
+arch=x86_64
+compiler=gcc
+compiler.version=13
+compiler.libcxx=libstdc++11
+build_type=Release
+```
+
+```ini
+# profile/host-arm64 (the target device)
+[settings]
+os=Linux
+arch=armv8
+compiler=gcc
+compiler.version=13
+compiler.libcxx=libstdc++11
+build_type=Release
+compiler.cppstd=20
+```
+
+```bash
+conan install . --build=missing \
+    -pr:b=profile/build-linux \
+    -pr:h=profile/host-arm64
 ```
 
 ## Dependency Specification
@@ -233,10 +289,15 @@ executes a five-stage pipeline defined in your `conanfile.py`:
 | `package` | `package()`              | Copy build artifacts (headers, libs) into package folder |
 | `test`    | `test()`                 | Run consumer tests against the built package             |
 
+### Complete Recipe Example
+
+The following is a production-ready `conanfile.py` for a library named `mylib` that depends on
+`fmt`:
+
 ```python
 from conan import ConanFile
-from conan.tools.cmake import CMake, cmake_layout, CMakeToolchain, CMakeDeps
-from conan.tools.files import copy
+from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout
+from conan.tools.files import copy, rmdir
 import os
 
 class MyLibConan(ConanFile):
@@ -244,15 +305,17 @@ class MyLibConan(ConanFile):
     version = "1.0.0"
     license = "MIT"
     author = "Team"
+    description = "A high-performance data processing library"
+    topics = ("cpp", "data", "processing")
     settings = "os", "compiler", "build_type", "arch"
     exports_sources = "src/*", "CMakeLists.txt", "include/*"
     generators = "CMakeDeps", "CMakeToolchain"
 
+    def requirements(self):
+        self.requires("fmt/10.1.1", transitive_headers=True)
+
     def layout(self):
         cmake_layout(self)
-
-    def requirements(self):
-        self.requires("fmt/10.1.1")
 
     def build(self):
         cmake = CMake(self)
@@ -264,10 +327,19 @@ class MyLibConan(ConanFile):
         cmake.install()
 
     def package_info(self):
-        # Defines the CMake target name that consumers will use
         self.cpp_info.libs = ["mylib"]
         self.cpp_info.bindirs = ["lib"]
         self.cpp_info.includedirs = ["include"]
+
+        # Platform-specific system libraries
+        if self.settings.os == "Linux":
+            self.cpp_info.system_libs = ["pthread", "dl"]
+        elif self.settings.os == "Windows":
+            self.cpp_info.system_libs = ["ws2_32"]
+
+        # Compile definitions to propagate to consumers
+        if self.settings.build_type == "Debug":
+            self.cpp_info.defines = ["MYLIB_DEBUG"]
 ```
 
 ### Package ID Calculation
@@ -284,7 +356,7 @@ conan inspect . -a package_id
 conan graph info . --format=dot
 ```
 
-### `package_info()` — The Contract with Consumers
+### `package_info()` -- The Contract with Consumers
 
 The `package_info()` method is critical: it defines what consumers see when they
 `find_package(mylib)`. It specifies:
@@ -332,8 +404,8 @@ before the project's `CMakeLists.txt` is processed. This file configures:
 build/
   Generators/
     fmt/
-      fmtConfig.cmake          ← find_package(fmt) uses this
-      fmtTargets.cmake         ← defines fmt::fmt target
+      fmtConfig.cmake          <- find_package(fmt) uses this
+      fmtTargets.cmake         <- defines fmt::fmt target
     nlohmann_json/
       nlohmann_jsonConfig.cmake
 ```
@@ -406,6 +478,47 @@ Resolution strategies:
 
 ---
 
+## `build_requires` vs `requires`
+
+Conan 2.x distinguishes between two types of dependencies:
+
+### `requires` (Runtime Dependencies)
+
+These are libraries that your project links against at runtime. They contribute to the Package ID
+hash and their binaries are needed by consumers.
+
+```python
+def requirements(self):
+    self.requires("fmt/10.1.1")
+    self.requires("openssl/3.1.0")
+```
+
+### `tool_requires` (Build-Time Dependencies)
+
+These are tools needed during the build process but not at runtime. They do not affect the Package
+ID and are not propagated to consumers. In Conan 2.x, `build_requires` is replaced by
+`tool_requires` in the `[tool_requires]` section of profiles or in the recipe.
+
+```python
+from conan.tools.cmake import CMakeDeps, CMakeToolchain
+
+class MyLibConan(ConanFile):
+    tool_requires = "cmake/3.28.1"
+    # or equivalently:
+    # def tool_requires(self):
+    #     self.tool_requires("cmake/3.28.1")
+```
+
+| Aspect                       | `requires`                | `tool_requires`           |
+| :--------------------------- | :------------------------ | :------------------------ |
+| **Affects Package ID**       | Yes                       | No                        |
+| **Propagated to consumers**  | Yes (transitive)          | No                        |
+| **Examples**                 | `fmt`, `openssl`, `boost` | `cmake`, `ninja`, `meson` |
+| **Binary needed at runtime** | Yes                       | No                        |
+| **Build-time only**          | No                        | Yes                       |
+
+---
+
 ## Binary Cache and Local Cache
 
 ### The Conan 2.x Cache Structure
@@ -447,6 +560,36 @@ conan cache path fmt/10.1.1:<package_id_hash>
 
 ---
 
+## Conan 1 vs Conan 2: Migration Guide
+
+Conan 2.x introduced breaking changes designed to simplify the API and improve performance. The
+following table highlights the key differences.
+
+| Feature                | Conan 1.x                            | Conan 2.x                                  |
+| :--------------------- | :----------------------------------- | :----------------------------------------- |
+| **Configuration file** | `conan.conf` in `~/.conan`           | No global config (profile-based)           |
+| **Recipe imports**     | `from conans import ConanFile`       | `from conan import ConanFile`              |
+| **CMake integration**  | `self.settings.compiler.libcxx`      | `compiler.libcxx` in profile               |
+| **Build method**       | `def build(self)` with `CMake(self)` | Same, but `CMake` from `conan.tools.cmake` |
+| **Package info**       | `self.cpp_info`                      | Same (compatible)                          |
+| **Generators**         | `cmake`, `cmake_find_package`        | `CMakeDeps`, `CMakeToolchain`              |
+| **Install command**    | `conan install . -s ...`             | `conan install . -pr:...`                  |
+| **Remote commands**    | `conan remote add`                   | Same (compatible)                          |
+| **Lock files**         | `conan lock create`                  | Same (compatible)                          |
+| **Cache location**     | `~/.conan/data/`                     | `~/.conan2/cache/`                         |
+| **Python API**         | Many deprecated functions            | Cleaned-up, fewer functions                |
+| **`build_requires`**   | `self.build_requires("cmake/...")`   | `self.tool_requires("cmake/...")`          |
+
+### Key Migration Steps
+
+1. Change `from conans import ConanFile` to `from conan import ConanFile`.
+2. Replace `cmake` generator with `CMakeDeps` and `CMakeToolchain`.
+3. Move `compiler.libcxx` from the recipe to the profile.
+4. Replace `self.build_requires` with `self.tool_requires`.
+5. Clear the Conan 1.x cache: `rm -rf ~/.conan`.
+
+---
+
 ## Conan vs vcpkg: Architectural Trade-offs
 
 | Aspect             | Conan                                              | vcpkg                                           |
@@ -485,3 +628,152 @@ build from source on your exact toolchain) but at the cost of build time.
 - **Ignoring ABI compatibility.** Conan's Package ID does not capture ABI changes caused by compiler
   flags like `-D_GLIBCXX_USE_CXX11_ABI`. If two TUs are compiled with different ABI settings,
   linking them causes crashes. Ensure your profile captures all ABI-affecting settings.
+- **Stale Conan 1.x cache.** If you have both Conan 1.x and 2.x installed, the `conan` command may
+  invoke the wrong version. Verify with `conan --version` and use `conan2` as an alias if necessary.
+  The caches are separate (`~/.conan` vs `~/.conan2`).
+
+## Conan Recipe: Packaging a Header-Only Library
+
+Header-only libraries have a simplified Conan recipe because there is no build step and no binary
+artifact to package:
+
+```python
+from conan import ConanFile
+from conan.tools.files import copy
+import os
+
+class HeaderOnlyLibConan(ConanFile):
+    name = "header_only_lib"
+    version = "2.0.0"
+    license = "BSL-1.0"
+    description = "A header-only signal/slot library"
+    settings = "os", "compiler", "build_type", "arch"
+    exports_sources = "include/*"
+
+    def package_id(self):
+        # Header-only: all configurations produce the same package
+        self.info.clear()
+
+    def package(self):
+        copy(self, "*.hpp", dst="include", src=os.path.join(self.source_folder, "include"))
+        copy(self, "*.h", dst="include", src=os.path.join(self.source_folder, "include"))
+
+    def package_info(self):
+        self.cpp_info.bindirs = []
+        self.cpp_info.libdirs = []
+```
+
+The key technique is `self.info.clear()` in `package_id()`, which tells Conan that all compiler
+settings produce the same package (since there is no binary). This means only one package is ever
+cached, regardless of the consumer's profile.
+
+## Conan Recipe: Packaging a Library with Options
+
+For libraries with configurable features (e.g., enable/disable SSL, choose threading model):
+
+```python
+from conan import ConanFile
+from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout
+from conan.tools.files import copy
+import os
+
+class FeatureLibConan(ConanFile):
+    name = "feature_lib"
+    version = "3.1.0"
+    license = "MIT"
+    settings = "os", "compiler", "build_type", "arch"
+
+    options = {
+        "shared": [True, False],
+        "fPIC": [True, False],
+        "with_ssl": [True, False],
+        "threading": ["none", "std", "boost"],
+    }
+
+    default_options = {
+        "shared": False,
+        "fPIC": True,
+        "with_ssl": False,
+        "threading": "std",
+    }
+
+    exports_sources = "src/*", "CMakeLists.txt", "include/*"
+
+    def config_options(self):
+        if self.settings.os == "Windows":
+            self.options.rm_safe("fPIC")
+
+    def configure(self):
+        if self.options.shared:
+            self.options.rm_safe("fPIC")
+
+    def requirements(self):
+        if self.options.with_ssl:
+            self.requires("openssl/3.1.0")
+
+    def layout(self):
+        cmake_layout(self)
+
+    def generate(self):
+        tc = CMakeToolchain(self)
+        tc.variables["WITH_SSL"] = self.options.with_ssl
+        tc.variables["THREADING"] = self.options.threading
+        tc.generate()
+
+    def build(self):
+        cmake = CMake(self)
+        cmake.configure()
+        cmake.build()
+
+    def package(self):
+        cmake = CMake(self)
+        cmake.install()
+
+    def package_info(self):
+        self.cpp_info.libs = ["feature_lib"]
+        if self.options.with_ssl:
+            self.cpp_info.defines.append("FEATURE_LIB_SSL")
+```
+
+The `options` dictionary defines package-specific configuration that affects the Package ID. Each
+unique combination of option values produces a different binary, preventing ABI mismatches.
+
+## Conan Center and Private Repositories
+
+### ConanCenter
+
+ConanCenter is the public repository of Conan packages maintained by the community. It contains
+thousands of popular C++ libraries with tested recipes.
+
+```bash
+# Search for a package
+conan search "fmt/*" -r conancenter
+
+# Get package information
+conan inspect fmt/10.1.1 -r conancenter
+```
+
+### Private Repository Setup
+
+Organizations typically deploy JFrog Artifactory as their private Conan remote:
+
+```bash
+# Configure Artifactory remote
+conan remote add company https://artifactory.company.com/artifactory/api/conan/company-libs
+
+# Authenticate
+conan remote login company -p <token> <username>
+
+# Upload a package
+conan upload mylib/1.0.0 -r company
+
+# Download and use
+conan install . -r company --build=missing
+```
+
+## See Also
+
+- [Dependency Resolution](1_dependency_architectures_models.md) -- Package manager taxonomy
+- [vcpkg](3_vcpkg.md) -- Source-first alternative
+- [CPM.cmake](2_cpm.md) -- Lightweight source-based alternative
+- [Binary Caching](6_binary_caching.md) -- Conan's binary caching architecture
