@@ -48,13 +48,29 @@ $$s = \int v\,dt, \qquad v = \int a\,dt$$
 
 Assuming constant acceleration $a$:
 
-$$v = \frac{ds}{dt} \implies \frac{ds}{dt} = u + at \implies s = ut + \frac{1}{2}at^2 + C$$
+Start from the definition of acceleration:
 
-Since $s = 0$ when $t = 0$: $C = 0$.
+$$a = \frac{dv}{dt}$$
+
+Since $a$ is constant, integrate both sides with respect to $t$:
+
+$$\int a\,dt = \int \frac{dv}{dt}\,dt \implies at + C_1 = v$$
+
+Applying the initial condition $v = u$ when $t = 0$: $C_1 = u$.
+
+$$\boxed{v = u + at} \quad \text{(Equation 2)}$$
+
+Now use $v = ds/dt$:
+
+$$\frac{ds}{dt} = u + at$$
+
+Integrate with respect to $t$:
+
+$$s = \int (u + at)\,dt = ut + \frac{1}{2}at^2 + C_2$$
+
+Since $s = 0$ when $t = 0$: $C_2 = 0$.
 
 $$\boxed{s = ut + \tfrac{1}{2}at^2} \quad \text{(Equation 1)}$$
-
-From $v = u + at$: $\boxed{v = u + at} \quad \text{(Equation 2)}$
 
 Eliminating $t$ from (1) and (2): $t = (v-u)/a$.
 
@@ -74,6 +90,12 @@ $s = ut + \tfrac{1}{2}\frac{v-u}{t}t^2 = ut + \tfrac{1}{2}(v-u)t = \tfrac{1}{2}(
 Equation 4.)
 
 $$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \text{(useful when } a \text{ is unknown)}$$
+
+:::tip
+The key insight is that **all five SUVAT equations follow from two integrations** of the
+constant acceleration $a = dv/dt$, using the initial conditions $v(0) = u$ and $s(0) = 0$.
+Memorising the derivation means you can recover any formula you forget.
+:::
 
 ### 2.2 Summary
 
@@ -111,6 +133,62 @@ known quantities and the unknown. Draw a diagram with positive direction clearly
 
 - Area under the graph = change in velocity
 
+### 3.4 Interpreting displacement-time graphs in detail
+
+The gradient of an $s$-$t$ graph gives the velocity at that instant. The **sign** of the gradient
+tells you the direction of motion, and the **steepness** tells you the speed.
+
+- **Positive, increasing gradient**: particle moves in the positive direction with increasing speed
+  (positive acceleration).
+- **Positive, decreasing gradient**: particle moves in the positive direction but is decelerating.
+- **Zero gradient (horizontal)**: particle is instantaneously at rest ($v = 0$). This may be a
+  turning point.
+- **Negative gradient**: particle moves in the negative direction.
+- **Concave-up curve** ($\frac{d^2s}{dt^2} \gt{} 0$): acceleration is positive.
+- **Concave-down curve** ($\frac{d^2s}{dt^2} \lt{} 0$): acceleration is negative.
+
+A common mistake is assuming a particle is at rest only when $s = 0$. In fact, the particle is at
+rest whenever the **gradient** is zero, regardless of the displacement value.
+
+### 3.5 Interpreting velocity-time graphs in detail
+
+The area between the $v$-$t$ curve and the $t$-axis gives the **displacement** (with sign). To find
+the total **distance** travelled, you must take the absolute value of velocity in each region before
+integrating, or equivalently add the magnitudes of the areas above and below the axis.
+
+- **Area above the $t$-axis**: displacement in the positive direction.
+- **Area below the $t$-axis**: displacement in the negative direction.
+- **Total distance** = (area above) + |area below|.
+
+The **gradient** of the tangent to a $v$-$t$ curve gives the instantaneous acceleration. For a
+straight-line $v$-$t$ graph, the acceleration is constant and equals the gradient of that line.
+
+:::warning
+Displacement $\neq$ distance. If a particle moves $10\,\text{m}$ forwards and then
+$10\,\text{m}$ backwards, its displacement is $0$ but its total distance is $20\,\text{m}$. On a
+$v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas add (distance).
+:::
+
+### 3.6 Worked example: graphs
+
+A particle moves so that its displacement $s$ metres from a fixed point $O$ at time $t$ seconds is
+given by $s = t^3 - 9t^2 + 24t$.
+
+The velocity is $v = ds/dt = 3t^2 - 18t + 24 = 3(t^2 - 6t + 8) = 3(t-2)(t-4)$.
+
+- $v = 0$ at $t = 2$ and $t = 4$: the particle is instantaneously at rest at these times.
+- For $0 \lt{} t \lt{} 2$: $v \gt{} 0$ (moving in positive direction).
+- For $2 \lt{} t \lt{} 4$: $v \lt{} 0$ (moving in negative direction — it has reversed).
+- For $t \gt{} 4$: $v \gt{} 0$ (moving in positive direction again).
+
+The acceleration is $a = dv/dt = 6t - 18 = 6(t - 3)$.
+
+- At $t = 3$: $a = 0$, the particle changes from decelerating to accelerating (in the positive
+  sense).
+
+Displacement at key times: $s(0) = 0$, $s(2) = 8 - 36 + 48 = 20$, $s(4) = 64 - 144 + 96 = 16$,
+$s(6) = 216 - 324 + 144 = 36$.
+
 ---
 
 ## 4. Projectiles
@@ -124,6 +202,9 @@ known quantities and the unknown. Draw a diagram with positive direction clearly
 ### 4.2 Horizontal motion
 
 $$x = v\cos\theta \cdot t, \quad a_x = 0$$
+
+Since there is no horizontal acceleration, the horizontal velocity $v_x = v\cos\theta$ remains
+constant throughout the flight.
 
 ### 4.3 Vertical motion
 
@@ -160,17 +241,154 @@ Maximum range occurs when $\sin 2\theta = 1$, i.e., $\theta = 45°$.
 
 $$R_{\max} = \frac{v^2}{g}$$
 
+### 4.7 Velocity at any point on the trajectory
+
+At any time $t$, the velocity vector is:
+
+$$\mathbf{v} = \begin{pmatrix} v\cos\theta \\ v\sin\theta - gt \end{pmatrix}$$
+
+The speed at time $t$ is:
+
+$$|\mathbf{v}| = \sqrt{(v\cos\theta)^2 + (v\sin\theta - gt)^2} = \sqrt{v^2 - 2vgt\sin\theta + g^2t^2}$$
+
+The angle the velocity makes with the horizontal at time $t$ is:
+
+$$\alpha = \arctan\left(\frac{v\sin\theta - gt}{v\cos\theta}\right)$$
+
+At the highest point ($t = v\sin\theta / g$), the velocity is purely horizontal:
+$\mathbf{v} = (v\cos\theta,\, 0)$. The speed at the highest point equals the horizontal component
+$v\cos\theta$.
+
+On landing ($t = 2v\sin\theta / g$), the vertical component is $-v\sin\theta$, so the speed equals
+the initial speed $v$. The landing angle with the horizontal equals the launch angle $\theta$ (by
+symmetry).
+
+### 4.8 Time to reach a given height
+
+Setting $y = h$ and solving for $t$:
+
+$$h = v\sin\theta \cdot t - \frac{1}{2}gt^2 \implies \frac{1}{2}gt^2 - v\sin\theta \cdot t + h = 0$$
+
+$$t = \frac{v\sin\theta \pm \sqrt{(v\sin\theta)^2 - 2gh}}{g}$$
+
+- If $(v\sin\theta)^2 \gt{} 2gh$: two solutions — the projectile passes through height $h$ twice (on
+  the way up and on the way down).
+- If $(v\sin\theta)^2 = 2gh$: one solution — $h$ is the maximum height.
+- If $(v\sin\theta)^2 \lt{} 2gh$: no real solution — the projectile never reaches height $h$.
+
+### 4.9 Projectiles launched from a height
+
+If a projectile is launched from height $H$ above ground level, set $y = -H$ at landing (taking
+upwards as positive):
+
+$$-H = v\sin\theta \cdot t - \frac{1}{2}gt^2$$
+
+$$\frac{1}{2}gt^2 - v\sin\theta \cdot t - H = 0$$
+
+$$t = \frac{v\sin\theta + \sqrt{(v\sin\theta)^2 + 2gH}}{g}$$
+
+(We take the positive root since $t \gt{} 0$.)
+
+The horizontal range is then $R = v\cos\theta \cdot t$.
+
+:::tip
+When a projectile is launched from a height, the time of flight is **longer** than for level
+ground, and the angle for maximum range is **less** than $45°$ (derived via calculus, but beyond the
+core syllabus).
+:::
+
 ---
 
 ## 5. Variable Acceleration
 
-When acceleration is not constant, use calculus:
+When acceleration is not constant, the SUVAT equations do not apply. Instead, use calculus:
 
 $$v = \frac{ds}{dt}, \quad a = \frac{dv}{dt}$$
 
 $$s = \int v\,dt, \quad v = \int a\,dt$$
 
 Use initial conditions to find constants of integration.
+
+### 5.1 Finding velocity from acceleration
+
+Given $a = f(t)$, integrate to find $v$:
+
+$$v = \int a\,dt = \int f(t)\,dt = F(t) + C$$
+
+Use the initial velocity $v(0) = u$ to find $C$.
+
+### 5.2 Finding displacement from velocity
+
+Given $v = g(t)$, integrate to find $s$:
+
+$$s = \int v\,dt = \int g(t)\,dt = G(t) + K$$
+
+Use the initial displacement $s(0) = s_0$ to find $K$.
+
+### 5.3 Acceleration in terms of displacement or velocity
+
+Sometimes acceleration is given as a function of $s$ or $v$, not $t$.
+
+**Case 1:** $a = f(v)$.
+
+Use the chain rule: $a = \dfrac{dv}{dt} = \dfrac{dv}{ds} \cdot \dfrac{ds}{dt} = v\dfrac{dv}{ds}$.
+
+This gives a separable differential equation:
+
+$$f(v) = v\frac{dv}{ds} \implies \int ds = \int \frac{v}{f(v)}\,dv$$
+
+**Case 2:** $a = f(s)$.
+
+Again using $a = v\,dv/ds$:
+
+$$v\,\frac{dv}{ds} = f(s) \implies \int v\,dv = \int f(s)\,ds$$
+
+$$\frac{v^2}{2} = F(s) + C$$
+
+This is equivalent to the work-energy principle: $\tfrac{1}{2}mv^2 = \text{work done}$.
+
+### 5.4 Definite integration for distance and displacement
+
+When finding displacement over a time interval $[t_1, t_2]$:
+
+$$\Delta s = \int_{t_1}^{t_2} v\,dt$$
+
+When finding total distance, you must account for changes in direction. Find when $v = 0$ (turning
+points), split the integral at those times, and take absolute values:
+
+$$\text{Distance} = \int_{t_1}^{t_2} |v|\,dt$$
+
+### 5.5 Worked example: variable acceleration
+
+A particle moves in a straight line. At time $t$ seconds, its acceleration is
+$a = 6t - 4\,\text{m/s}^2$. When $t = 0$, the particle is at rest at the origin. Find:
+
+**(a)** The velocity at time $t$:
+
+$$v = \int (6t - 4)\,dt = 3t^2 - 4t + C$$
+
+Since $v = 0$ when $t = 0$: $C = 0$, so $v = 3t^2 - 4t$.
+
+**(b)** When the particle is at rest:
+
+$v = 0 \implies 3t^2 - 4t = 0 \implies t(3t - 4) = 0 \implies t = 0$ or $t = 4/3\,\text{s}$.
+
+**(c)** The displacement at time $t$:
+
+$$s = \int (3t^2 - 4t)\,dt = t^3 - 2t^2 + K$$
+
+Since $s = 0$ when $t = 0$: $K = 0$, so $s = t^3 - 2t^2$.
+
+**(d)** The total distance travelled in the first 3 seconds:
+
+The particle reverses direction at $t = 4/3$.
+
+$s(4/3) = (64/27) - 2(16/9) = 64/27 - 96/27 = -32/27\,\text{m}$.
+
+$s(3) = 27 - 18 = 9\,\text{m}$.
+
+Distance
+$= |s(4/3) - s(0)| + |s(3) - s(4/3)| = |-32/27| + |9 - (-32/27)| = 32/27 + 275/27 = 307/27 \approx 11.37\,\text{m}$.
 
 ---
 
@@ -386,6 +604,200 @@ $\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\tex
 
 **If you get this wrong, revise:** [Trajectory Equation](#44-derivation-of-the-trajectory-equation)
 — Section 4.4.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+A particle moves with acceleration $a = 4 - 2t\,\text{m/s}^2$. When $t = 0$, $v = 3\,\text{m/s}$ and $s = 0$. Find the velocity and displacement when $t = 5$. Also find when the particle is at rest.
+</details>
+
+<details>
+<summary>Solution 13</summary>
+$v = \int (4 - 2t)\,dt = 4t - t^2 + C$. Since $v(0) = 3$: $C = 3$, so $v = 4t - t^2 + 3$.
+
+$s = \int (4t - t^2 + 3)\,dt = 2t^2 - t^3/3 + 3t + K$. Since $s(0) = 0$: $K = 0$, so
+$s = 2t^2 - t^3/3 + 3t$.
+
+At $t = 5$: $v = 20 - 25 + 3 = -2\,\text{m/s}$,
+$s = 50 - 125/3 + 15 = 65 - 41.67 = 23.33\,\text{m}$.
+
+At rest:
+$v = 0 \implies -t^2 + 4t + 3 = 0 \implies t^2 - 4t - 3 = 0 \implies t = (4 \pm \sqrt{16+12})/2 = 2 \pm \sqrt{7}$.
+
+$t = 2 + \sqrt{7} \approx 4.65\,\text{s}$ (taking the positive root).
+
+**If you get this wrong, revise:** [Variable Acceleration](#5-variable-acceleration) — Section 5.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+A projectile is launched from the top of a cliff $60\,\text{m}$ high at $20\,\text{m/s}$ horizontally. Find the time to hit the ground, the horizontal distance from the base of the cliff, and the speed on impact. Take $g = 9.8\,\text{m/s}^2$.
+</details>
+
+<details>
+<summary>Solution 14</summary>
+Horizontal: $v_x = 20\,\text{m/s}$ (constant). Vertical: $u_y = 0$, $a_y = 9.8$, $s_y = 60$ (downwards positive).
+
+$s_y = \tfrac{1}{2}gt^2 \implies 60 = 4.9t^2 \implies t = \sqrt{60/4.9} \approx 3.50\,\text{s}$.
+
+Horizontal distance: $x = 20 \times 3.50 = 70.0\,\text{m}$.
+
+Vertical velocity on impact: $v_y = gt = 9.8 \times 3.50 = 34.3\,\text{m/s}$.
+
+Speed:
+$|\mathbf{v}| = \sqrt{20^2 + 34.3^2} = \sqrt{400 + 1176.49} = \sqrt{1576.49} \approx 39.7\,\text{m/s}$.
+
+**If you get this wrong, revise:**
+[Projectiles from a Height](#49-projectiles-launched-from-a-height) — Section 4.9.
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+The velocity of a particle is $v = 2t^3 - 9t^2 + 12t - 5$ m/s. Find the total distance travelled between $t = 0$ and $t = 3$.
+</details>
+
+<details>
+<summary>Solution 15</summary>
+First find when $v = 0$: $2t^3 - 9t^2 + 12t - 5 = 0$.
+
+Testing $t = 1$: $2 - 9 + 12 - 5 = 0$. So $(t-1)$ is a factor.
+
+$2t^3 - 9t^2 + 12t - 5 = (t-1)(2t^2 - 7t + 5) = (t-1)(2t-5)(t-1) = (t-1)^2(2t-5)$.
+
+So $v = 0$ at $t = 1$ and $t = 2.5$.
+
+Check the sign of $v$: for $0 \lt{} t \lt{} 1$, test $t = 0.5$:
+$v = 0.25 - 2.25 + 6 - 5 = -1 \lt{} 0$. For $1 \lt{} t \lt{} 2.5$, test $t = 2$:
+$v = 16 - 36 + 24 - 5 = -1 \lt{} 0$. For $t \gt{} 2.5$, test $t = 3$:
+$v = 54 - 81 + 36 - 5 = 4 \gt{} 0$.
+
+So $v \lt{} 0$ for $0 \lt{} t \lt{} 2.5$ and $v \gt{} 0$ for $t \gt{} 2.5$.
+
+$s(2.5) = \int_0^{2.5} v\,dt = \left[\tfrac{1}{2}t^4 - 3t^3 + 6t^2 - 5t\right]_0^{2.5} = 19.531 - 46.875 + 37.5 - 12.5 = -2.344\,\text{m}$.
+
+$s(3) = \left[\tfrac{1}{2}t^4 - 3t^3 + 6t^2 - 5t\right]_0^3 = 40.5 - 81 + 54 - 15 = -1.5\,\text{m}$.
+
+Distance
+$= |s(2.5) - s(0)| + |s(3) - s(2.5)| = |-2.344| + |-1.5 - (-2.344)| = 2.344 + 0.844 = 3.188\,\text{m}$.
+
+**If you get this wrong, revise:**
+[Definite Integration for Distance](#54-definite-integration-for-distance-and-displacement) —
+Section 5.4.
+
+</details>
+
+<details>
+<summary>Problem 16</summary>
+A ball is thrown at $12\,\text{m/s}$ at an angle of $60°$ above the horizontal from a point $2\,\text{m}$ above level ground. Find the speed and direction of the ball when it hits the ground. Take $g = 9.8\,\text{m/s}^2$.
+</details>
+
+<details>
+<summary>Solution 16</summary>
+$v_x = 12\cos 60° = 6\,\text{m/s}$, $v_{y0} = 12\sin 60° = 6\sqrt{3} \approx 10.39\,\text{m/s}$.
+
+Taking upwards as positive with launch at $s_y = 2$:
+
+$s_y = v_{y0}\,t - \tfrac{1}{2}gt^2 = 2$. On hitting ground: $s_y = 0$ (relative to ground).
+
+$0 = 2 + 10.39t - 4.9t^2 \implies 4.9t^2 - 10.39t - 2 = 0$.
+
+$t = \dfrac{10.39 + \sqrt{107.95 + 39.2}}{9.8} = \dfrac{10.39 + \sqrt{147.15}}{9.8} = \dfrac{10.39 + 12.13}{9.8} \approx 2.29\,\text{s}$.
+
+Vertical velocity at impact: $v_y = 10.39 - 9.8(2.29) = 10.39 - 22.44 = -12.05\,\text{m/s}$.
+
+Speed: $\sqrt{6^2 + 12.05^2} = \sqrt{36 + 145.20} = \sqrt{181.20} \approx 13.46\,\text{m/s}$.
+
+Angle below horizontal: $\arctan(12.05/6) \approx 63.5°$.
+
+**If you get this wrong, revise:**
+[Velocity at Any Point](#47-velocity-at-any-point-on-the-trajectory) — Section 4.7.
+
+</details>
+
+<details>
+<summary>Problem 17</summary>
+A particle moves so that $a = -6s\,\text{m/s}^2$, where $s$ is the displacement from a fixed point. When $s = 0$, $v = 8\,\text{m/s}$. Find the velocity when $s = 1$.
+</details>
+
+<details>
+<summary>Solution 17</summary>
+Using $a = v\,dv/ds$:
+
+$$v\,\frac{dv}{ds} = -6s$$
+
+$$\int v\,dv = \int -6s\,ds$$
+
+$$\frac{v^2}{2} = -3s^2 + C$$
+
+When $s = 0$, $v = 8$: $64/2 = C \implies C = 32$.
+
+$$\frac{v^2}{2} = -3s^2 + 32$$
+
+When $s = 1$:
+$v^2/2 = -3 + 32 = 29 \implies v^2 = 58 \implies v = \sqrt{58} \approx 7.62\,\text{m/s}$.
+
+The particle is still moving in the positive direction ($v \gt{} 0$) since it has not yet reached
+the turning point where $v = 0$ (which occurs at $s^2 = 32/3$, i.e., $s \approx 3.27\,\text{m}$).
+
+**If you get this wrong, revise:**
+[Acceleration in Terms of Displacement](#53-acceleration-in-terms-of-displacement-or-velocity) —
+Section 5.3.
+
+</details>
+
+<details>
+<summary>Problem 18</summary>
+A particle $P$ is projected from a point $A$ on horizontal ground with speed $u$ at an angle $\theta$ above the horizontal. At the instant $P$ passes through the highest point of its trajectory, a second particle $Q$ is projected vertically upwards from the point on the ground directly below that highest point. Given that $P$ and $Q$ collide, find an expression for the speed of projection of $Q$ in terms of $u$ and $\theta$.
+</details>
+
+<details>
+<summary>Solution 18</summary>
+Highest point of $P$'s trajectory: $x = \dfrac{u^2\sin 2\theta}{2g}$, $y = \dfrac{u^2\sin^2\theta}{2g}$, at time
+$t_1 = \dfrac{u\sin\theta}{g}$.
+
+After $t_1$, $P$ is in free fall with $v_y = 0$ at $t_1$, so for $t \geq t_1$:
+
+$y_P = \dfrac{u^2\sin^2\theta}{2g} - \dfrac{1}{2}g(t - t_1)^2$.
+
+$x_P = u\cos\theta \cdot t$.
+
+For collision, $Q$ must be at the same $(x, y)$. Since $Q$ is projected vertically from directly
+below the highest point, $Q$'s horizontal position is always $x = u^2\sin 2\theta / (2g)$.
+
+For $P$ to be at this $x$-coordinate at time $t$:
+$u\cos\theta \cdot t = u^2\sin 2\theta / (2g) = u^2\sin\theta\cos\theta / g$, so
+$t = u\sin\theta / g = t_1$.
+
+This means collision occurs at $t = t_1$, the instant of the highest point. But $Q$ is projected at
+that instant, so for collision we need $y_Q(0^+) = y_P(t_1) = H$.
+
+$Q$ starts at ground level ($y_Q = 0$) and must reach $y = H = u^2\sin^2\theta / (2g)$.
+
+For $Q$: $v_Q = w - gt$, $y_Q = wt - \tfrac{1}{2}gt^2$, where $w$ is the projection speed.
+
+Collision at $y = H$ when $t = 0$ is impossible ($Q$ starts at $y = 0$). So collision must occur at
+some $\Delta t \gt{} 0$ after $t_1$.
+
+At time $t_1 + \Delta t$:
+
+$y_P = H - \tfrac{1}{2}g(\Delta t)^2$, $y_Q = w\,\Delta t - \tfrac{1}{2}g(\Delta t)^2$.
+
+For collision: $H = w\,\Delta t$. Also, $x$ must match:
+$u\cos\theta(t_1 + \Delta t) = u^2\sin\theta\cos\theta/g + u\cos\theta\,\Delta t$. This is satisfied
+for all $\Delta t$ since $u\cos\theta \cdot t_1 = u^2\sin\theta\cos\theta/g$.
+
+So any $w$ and $\Delta t$ with $w\,\Delta t = H$ gives a collision. The minimum speed is
+$w = H/\Delta t$ for $\Delta t \to 0^+$, but in practice we need a finite time.
+
+If we require collision at the highest point itself ($\Delta t \to 0$), then $w \to \infty$, which
+is unphysical. The problem states they collide at some time after projection. Since no further
+constraint is given, we take $w$ as a free parameter satisfying
+$w\,\Delta t = u^2\sin^2\theta / (2g)$ for some $\Delta t \gt{} 0$.
+
+**If you get this wrong, revise:** [Projectiles](#4-projectiles) — Section 4.
 
 </details>
 

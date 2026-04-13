@@ -84,6 +84,49 @@ Since the $X_i$ are independent: $\text{Var}(X) = \sum \text{Var}(X_i) = np(1-p)
 - It is skewed left when $p \gt{} 0.5$ and skewed right when $p \lt{} 0.5$.
 - The mode is at $\lfloor(n+1)p\rfloor$.
 
+### 2.5 Direct derivation of $E(X) = np$ from the PMF
+
+The proofs in Sections 2.2 and 2.3 use indicator variables. Here we derive the same results directly
+from the probability mass function using algebraic identities.
+
+**Proof.** Starting from the definition of expectation applied to the binomial PMF:
+
+$$E(X) = \sum_{k=0}^{n} k \binom{n}{k}p^k(1-p)^{n-k}$$
+
+The $k=0$ term vanishes, so begin the sum at $k=1$. Apply the identity
+$k\binom{n}{k} = n\binom{n-1}{k-1}$:
+
+$$E(X) = \sum_{k=1}^{n} n\binom{n-1}{k-1}p^k(1-p)^{n-k} = np\sum_{k=1}^{n}\binom{n-1}{k-1}p^{k-1}(1-p)^{(n-1)-(k-1)}$$
+
+Substitute $j = k - 1$:
+
+$$E(X) = np\sum_{j=0}^{n-1}\binom{n-1}{j}p^j(1-p)^{n-1-j}$$
+
+By the binomial theorem, $\sum_{j=0}^{n-1}\binom{n-1}{j}p^j(1-p)^{n-1-j} = [p + (1-p)]^{n-1} = 1$.
+
+Therefore $E(X) = np$. $\blacksquare$
+
+### 2.6 Direct derivation of $\text{Var}(X) = np(1-p)$ from the PMF
+
+**Proof.** First compute $E(X(X-1))$:
+
+$$E(X(X-1)) = \sum_{k=0}^{n} k(k-1)\binom{n}{k}p^k(1-p)^{n-k}$$
+
+Terms with $k = 0, 1$ are zero. Apply the identity $k(k-1)\binom{n}{k} = n(n-1)\binom{n-2}{k-2}$:
+
+$$E(X(X-1)) = \sum_{k=2}^{n} n(n-1)\binom{n-2}{k-2}p^k(1-p)^{n-k} = n(n-1)p^2\sum_{k=2}^{n}\binom{n-2}{k-2}p^{k-2}(1-p)^{(n-2)-(k-2)}$$
+
+Substitute $j = k - 2$:
+
+$$E(X(X-1)) = n(n-1)p^2\sum_{j=0}^{n-2}\binom{n-2}{j}p^j(1-p)^{n-2-j} = n(n-1)p^2$$
+
+The final equality follows from the binomial theorem:
+$\sum_{j=0}^{n-2}\binom{n-2}{j}p^j(1-p)^{n-2-j} = 1$.
+
+Now $E(X^2) = E(X(X-1)) + E(X) = n(n-1)p^2 + np$.
+
+$$\text{Var}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p) \quad \blacksquare$$
+
 ---
 
 ## 3. The Normal Distribution
@@ -202,6 +245,51 @@ $\text{Var}(X) = E(X^2) - [E(X)]^2 = \lambda^2 + \lambda - \lambda^2 = \lambda$.
 If $X \sim \text{Po}(\lambda)$ and $Y \sim \text{Po}(\mu)$ are independent, then
 $X + Y \sim \text{Po}(\lambda + \mu)$.
 
+### 4.6 Conditions for the Poisson model
+
+The Poisson distribution is appropriate when all of the following hold:
+
+- Events occur **independently** of one another.
+- Events occur at a **constant average rate** $\lambda$ in a fixed interval of time, space, or
+  volume.
+- The probability of more than one event occurring in a sufficiently small sub-interval is
+  **negligible**.
+
+These are sometimes called the **Poisson postulates**. When they are satisfied, the number of events
+in any interval of length $t$ follows $\text{Po}(\lambda t)$.
+
+Typical applications include: calls arriving at a call centre per hour, typing errors per page,
+radioactive decays per second, and cars passing a checkpoint per minute.
+
+:::tip
+To check whether a scenario fits the Poisson model, verify that the rate is approximately
+constant over the interval and that events do not cluster. If events tend to occur in bursts, the
+Poisson model is not appropriate.
+:::
+
+### 4.7 Poisson approximation to the Binomial
+
+**Practical rule.** When $n \gt{} 50$ and $p \lt{} 0.1$, we may approximate $B(n, p)$ by
+$\text{Po}(\lambda)$ where $\lambda = np$.
+
+**Justification.** The theoretical result in Section 4.2 shows that as $n \to \infty$ and $p \to 0$
+with $np = \lambda$ held constant, the binomial PMF converges pointwise to the Poisson PMF. The
+conditions $n \gt{} 50$ and $p \lt{} 0.1$ are practical thresholds that ensure:
+
+1. **$n$ is large enough** that the discrete binomial is well-approximated by a limit distribution.
+2. **$p$ is small enough** that the "rare event" assumption of the Poisson model is satisfied.
+3. **$\lambda = np$ is moderate** (typically $0 \lt{} \lambda \lt{} 10$), so that neither
+   distribution is heavily concentrated at a single point.
+
+The approximation improves as $n$ increases and $p$ decreases while $\lambda = np$ remains fixed.
+
+:::warning
+The Poisson approximation is only appropriate when $p$ is small. When $p$ is not small
+and $n$ is large, use the normal approximation (Section 3.6) instead. The two approximations are
+complementary: Poisson handles the case of many trials with rare success, while normal handles the
+case of many trials with moderate success probability.
+:::
+
 ---
 
 ## 5. Choosing the Right Distribution
@@ -211,6 +299,62 @@ $X + Y \sim \text{Po}(\lambda + \mu)$.
 | Fixed $n$ trials, success/failure          | Binomial $B(n,p)$            |
 | Events in continuous interval, rare events | Poisson $\text{Po}(\lambda)$ |
 | Continuous, bell-shaped                    | Normal $N(\mu,\sigma^2)$     |
+
+---
+
+## 6. Coding of Random Variables
+
+### 6.1 Definition
+
+A **coding** (or linear transformation) of a discrete random variable $X$ is a new random variable
+$Y = aX + b$ where $a$ and $b$ are constants with $a \neq 0$.
+
+Coding arises naturally when changing units (e.g. centimetres to metres, or Celsius to Fahrenheit)
+or when shifting and scaling a distribution.
+
+### 6.2 Effect on expectation
+
+**Theorem.** If $Y = aX + b$, then $E(Y) = aE(X) + b$.
+
+**Proof.** Applying the definition of expectation to $Y$:
+
+$$E(Y) = \sum (ax_i + b)\,p_i = a\sum x_i\,p_i + b\sum p_i = aE(X) + b \cdot 1 = aE(X) + b \quad \blacksquare$$
+
+The key step is $\sum p_i = 1$, since the probabilities sum to 1.
+
+### 6.3 Effect on variance
+
+**Theorem.** If $Y = aX + b$, then $\text{Var}(Y) = a^2\text{Var}(X)$.
+
+**Proof.**
+
+$$
+\begin{aligned}
+\text{Var}(Y) &= E(Y^2) - [E(Y)]^2 \\
+&= E[(aX + b)^2] - [aE(X) + b]^2 \\
+&= E[a^2X^2 + 2abX + b^2] - \\{a^2[E(X)]^2 + 2abE(X) + b^2\\} \\
+&= a^2E(X^2) + 2abE(X) + b^2 - a^2[E(X)]^2 - 2abE(X) - b^2 \\
+&= a^2\\{E(X^2) - [E(X)]^2\\} \\
+&= a^2\text{Var}(X) \quad \blacksquare
+\end{aligned}
+$$
+
+Note how the terms $2abE(X)$ and $b^2$ cancel between $E(Y^2)$ and $[E(Y)]^2$.
+
+:::info
+Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
+$a$ (a scale change) affects variance, and it does so by a factor of $a^2$. This is why variance is
+measured in **squared units** of the original variable.
+:::
+
+### 6.4 Effect on standard deviation
+
+Since $\text{Var}(Y) = a^2\text{Var}(X)$, taking square roots gives:
+
+$$\text{SD}(Y) = |a|\,\text{SD}(X)$$
+
+The absolute value ensures the standard deviation remains non-negative regardless of the sign of
+$a$.
 
 ---
 
@@ -231,6 +375,7 @@ $P(X \geq 7) = P(X=7)+P(X=8)+P(X=9)+P(X=10) \approx 0.0090 + 0.0014 + 0.0001 + 0
 
 **If you get this wrong, revise:** [The Binomial Distribution](#2-the-binomial-distribution) —
 Section 2.
+
 </details>
 
 <details>
@@ -244,6 +389,7 @@ $X \sim N(175, 64)$. $P(X \gt{} 185) = P\!\left(Z \gt{} \dfrac{185-175}{8}\right
 
 **If you get this wrong, revise:** [The Normal Distribution](#3-the-normal-distribution) —
 Section 3.
+
 </details>
 
 <details>
@@ -261,6 +407,7 @@ $P(X \gt{} 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} 
 
 **If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) —
 Section 4.
+
 </details>
 
 <details>
@@ -276,6 +423,7 @@ $P(X \leq 2) = e^{-4}\left(1 + 4 + \dfrac{16}{2}\right) = e^{-4}(1 + 4 + 8) = 13
 
 **If you get this wrong, revise:**
 [Derivation as a Limit](#42-derivation-as-a-limit-of-the-binomial) — Section 4.2.
+
 </details>
 
 <details>
@@ -290,6 +438,7 @@ $P(-c \lt{} Z \lt{} c) = 2\Phi(c) - 1 = 0.95 \implies \Phi(c) = 0.975$.
 From tables: $c \approx 1.96$.
 
 **If you get this wrong, revise:** [Standard Normal](#34-standard-normal) — Section 3.4.
+
 </details>
 
 <details>
@@ -309,6 +458,7 @@ $P(10 \leq X \leq 15) \approx 0.7728 - 0.2424 = 0.5304$.
 
 **If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) —
 Section 4.
+
 </details>
 
 <details>
@@ -327,6 +477,7 @@ $P(X \gt{} 50.3) = P(Z \gt{} 1.5) = 0.0668$.
 Proportion rejected $= 0.0668 + 0.0668 = 0.1336$ (13.36%).
 
 **If you get this wrong, revise:** [Finding Probabilities](#35-finding-probabilities) — Section 3.5.
+
 </details>
 
 <details>
@@ -344,6 +495,7 @@ $= a^2[E(X^2) - (E(X))^2] = a^2\text{Var}(X)$. ✓
 
 **If you get this wrong, revise:** [Expectation and Variance](#12-expectation-and-variance) —
 Section 1.2.
+
 </details>
 
 <details>
@@ -359,6 +511,7 @@ $P(X \gt{} 35) \approx P\!\left(Z \gt{} \dfrac{35.5 - 30}{5.05}\right) = P(Z \gt
 
 **If you get this wrong, revise:**
 [Normal Approximation to Binomial](#36-normal-approximation-to-binomial) — Section 3.6.
+
 </details>
 
 <details>
@@ -373,6 +526,153 @@ By additivity: $X + Y \sim \text{Po}(3+5) = \text{Po}(8)$.
 $P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac{e^{-8} \times 262144}{720} \approx \dfrac{0.000335 \times 262144}{720} \approx 0.1221$.
 
 **If you get this wrong, revise:** [Additivity](#45-additivity) — Section 4.5.
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+Starting from the definition $E(X) = \sum_{k=0}^{n} k\binom{n}{k}p^k(1-p)^{n-k}$, derive $E(X) = np$ using the identity $k\binom{n}{k} = n\binom{n-1}{k-1}$ and the binomial theorem.
+</details>
+
+<details>
+<summary>Solution 11</summary>
+
+$$E(X) = \sum_{k=0}^{n} k\binom{n}{k}p^k(1-p)^{n-k} = \sum_{k=1}^{n} n\binom{n-1}{k-1}p^k(1-p)^{n-k}$$
+
+$$= np\sum_{k=1}^{n}\binom{n-1}{k-1}p^{k-1}(1-p)^{(n-1)-(k-1)} = np\sum_{j=0}^{n-1}\binom{n-1}{j}p^j(1-p)^{n-1-j}$$
+
+By the binomial theorem: $\sum_{j=0}^{n-1}\binom{n-1}{j}p^j(1-p)^{n-1-j} = [p+(1-p)]^{n-1} = 1$.
+
+Therefore $E(X) = np$.
+
+**If you get this wrong, revise:**
+[Direct derivation of $E(X) = np$ from the PMF](#25-direct-derivation-of-ex--np-from-the-pmf) —
+Section 2.5.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+$X \sim \text{Po}(7)$. Let $Y = 3X - 2$. Find $E(Y)$ and $\text{Var}(Y)$.
+</details>
+
+<details>
+<summary>Solution 12</summary>
+For $X \sim \text{Po}(7)$: $E(X) = 7$ and $\text{Var}(X) = 7$.
+
+Using the coding formulae $E(aX+b) = aE(X)+b$ and $\text{Var}(aX+b) = a^2\text{Var}(X)$:
+
+$E(Y) = 3(7) - 2 = 19$.
+
+$\text{Var}(Y) = 3^2 \times 7 = 63$.
+
+Note that the additive constant $-2$ affects the mean but not the variance.
+
+**If you get this wrong, revise:** [Coding of Random Variables](#6-coding-of-random-variables) —
+Section 6.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+$X \sim B(80, 0.03)$. State whether the Poisson approximation is valid, giving reasons. If valid, use it to find $P(X \leq 1)$.
+</details>
+
+<details>
+<summary>Solution 13</summary>
+Check conditions: $n = 80 \gt{} 50$ and $p = 0.03 \lt{} 0.1$. Both conditions are satisfied, so the
+Poisson approximation is valid with $\lambda = np = 80 \times 0.03 = 2.4$.
+
+$X \approx \text{Po}(2.4)$.
+
+$P(X \leq 1) = P(X=0) + P(X=1) = e^{-2.4}\left(1 + 2.4\right) = 3.4\,e^{-2.4} \approx 3.4 \times 0.0907 \approx 0.3085$.
+
+**If you get this wrong, revise:**
+[Poisson approximation to the Binomial](#47-poisson-approximation-to-the-binomial) — Section 4.7.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+A discrete random variable $X$ has $E(X) = 5$ and $\text{Var}(X) = 4$. Let $W = 2X + 3$. Find $E(W)$ and $\text{Var}(W)$.
+</details>
+
+<details>
+<summary>Solution 14</summary>
+$E(W) = 2E(X) + 3 = 2(5) + 3 = 13$.
+
+$\text{Var}(W) = 2^2 \times \text{Var}(X) = 4 \times 4 = 16$.
+
+$\text{SD}(W) = \sqrt{16} = 4$.
+
+**If you get this wrong, revise:** [Coding of Random Variables](#6-coding-of-random-variables) —
+Section 6.
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+Starting from $E(X(X-1)) = \sum_{k=0}^{n} k(k-1)\binom{n}{k}p^k(1-p)^{n-k}$, derive $\text{Var}(X) = np(1-p)$ for $X \sim B(n,p)$.
+</details>
+
+<details>
+<summary>Solution 15</summary>
+Using $k(k-1)\binom{n}{k} = n(n-1)\binom{n-2}{k-2}$:
+
+$$E(X(X-1)) = \sum_{k=2}^{n} n(n-1)\binom{n-2}{k-2}p^k(1-p)^{n-k} = n(n-1)p^2\sum_{j=0}^{n-2}\binom{n-2}{j}p^j(1-p)^{n-2-j} = n(n-1)p^2$$
+
+Then $E(X^2) = E(X(X-1)) + E(X) = n(n-1)p^2 + np$.
+
+$\text{Var}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p)$.
+
+**If you get this wrong, revise:**
+[Direct derivation of $\text{Var}(X) = np(1-p)$ from the PMF](#26-direct-derivation-of-varx--np1-p-from-the-pmf)
+— Section 2.6.
+
+</details>
+
+<details>
+<summary>Problem 16</summary>
+$X \sim B(120, 0.025)$. (a) Show that the Poisson approximation is appropriate. (b) Use it to find $P(X = 5)$. (c) State why the normal approximation would not be appropriate here.
+</details>
+
+<details>
+<summary>Solution 16</summary>
+(a) $n = 120 \gt{} 50$ and $p = 0.025 \lt{} 0.1$, so the Poisson approximation is appropriate.
+$\lambda = np = 120 \times 0.025 = 3$.
+
+(b) $X \approx \text{Po}(3)$.
+
+$$P(X = 5) = \frac{e^{-3} \times 3^5}{5!} = \frac{e^{-3} \times 243}{120} = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
+
+(c) For the normal approximation we need $np \gt{} 5$ and $n(1-p) \gt{} 5$. Here $np = 3 \lt{} 5$,
+so the normal approximation is not appropriate. The Poisson approximation is the correct choice
+since $p$ is small.
+
+**If you get this wrong, revise:**
+[Poisson approximation to the Binomial](#47-poisson-approximation-to-the-binomial) — Section 4.7.
+
+</details>
+
+<details>
+<summary>Problem 17</summary>
+Temperatures in a city are modelled by $X \sim N(15, 9)$ in degrees Celsius. The temperature in
+Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$, $\text{Var}(F)$, and $P(F \gt{} 68)$.
+</details>
+
+<details>
+<summary>Solution 17</summary>
+$E(F) = \frac{9}{5}E(X) + 32 = \frac{9}{5}(15) + 32 = 27 + 32 = 59^\circ\text{F}$.
+
+$\text{Var}(F) = \left(\frac{9}{5}\right)^2 \times 9 = \frac{81}{25} \times 9 = \frac{729}{25} = 29.16$.
+
+$\text{SD}(F) = \sqrt{29.16} = 5.4$.
+
+$P(F \gt{} 68) = P\!\left(Z \gt{} \dfrac{68 - 59}{5.4}\right) = P(Z \gt{} 1.667) \approx 1 - 0.9522 = 0.0478$.
+
+**If you get this wrong, revise:** [Coding of Random Variables](#6-coding-of-random-variables) —
+Section 6.
+
 </details>
 
 :::

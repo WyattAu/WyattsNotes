@@ -187,6 +187,230 @@ effect too weak).
 
 ---
 
+## 8. One-Tailed vs Two-Tailed Tests in Depth
+
+### 8.1 Choosing between one-tailed and two-tailed
+
+**Use a one-tailed test when:**
+
+- The research question has a specific directional prediction established **before** data
+  collection.
+- Only one direction of deviation is practically meaningful.
+- The consequence of missing an effect in the unexpected direction is negligible.
+
+**Use a two-tailed test when:**
+
+- You are interested in any difference from $H_0$, regardless of direction.
+- You want a more conservative test that is harder to reach significance with.
+- There is no strong prior reason to expect the effect in one specific direction.
+
+**Example.** Testing whether a new teaching method changes exam scores:
+
+- One-tailed ($H_1: \mu \gt{} \mu_0$): justified only if prior research strongly suggests the method
+  improves scores, and you would not act on a decrease.
+- Two-tailed ($H_1: \mu \neq \mu_0$): appropriate if the method is new and could either help or
+  harm, and either outcome matters.
+
+### 8.2 Critical region comparison
+
+For a test at significance level $\alpha$, the allocation of the significance level differs:
+
+- **One-tailed:** The entire $\alpha$ goes into one tail. The critical value is at the $1 - \alpha$
+  quantile (right-tailed) or $\alpha$ quantile (left-tailed).
+- **Two-tailed:** $\alpha/2$ goes into each tail. The critical values are at the $\alpha/2$ and
+  $1 - \alpha/2$ quantiles.
+
+This means the two-tailed test has a **higher bar** for each individual tail.
+
+**Example.** Standard normal test at $\alpha = 0.05$:
+
+- One-tailed ($H_1: \mu \gt{} \mu_0$): reject if $z \gt{} 1.645$.
+- Two-tailed ($H_1: \mu \neq \mu_0$): reject if $z \gt{} 1.960$ or $z \lt{} -1.960$.
+
+An observed $z = 1.80$ is significant for the one-tailed test ($1.80 \gt{} 1.645$) but not for the
+two-tailed test ($|1.80| \lt{} 1.960$).
+
+:::info
+A two-tailed test at level $\alpha$ requires a more extreme test statistic than a one-tailed
+test at the same $\alpha$, because the significance "budget" is split between two tails. A
+two-tailed test at $\alpha = 0.05$ corresponds roughly to two one-tailed tests each at
+$\alpha = 0.025$.
+:::
+
+### 8.3 Effect on power
+
+For the same $\alpha$, a one-tailed test has **greater power** than a two-tailed test against an
+alternative in the predicted direction, because the critical value is closer to the null value.
+However, a one-tailed test has **zero power** to detect an effect in the opposite direction.
+
+---
+
+## 9. Binomial Tests with Normal Approximation
+
+### 9.1 When to use the normal approximation
+
+When $n$ is sufficiently large, the binomial distribution $B(n, p)$ can be approximated by a normal
+distribution. The standard conditions are:
+
+$$np \gt{} 5 \quad \text{and} \quad n(1 - p) \gt{} 5$$
+
+Under these conditions:
+
+$$X \approx N(np, np(1-p))$$
+
+Equivalently, for the sample proportion $\hat{p} = X/n$:
+
+$$\hat{p} \approx N\!\left(p, \dfrac{p(1-p)}{n}\right)$$
+
+:::warning
+These conditions must be checked using the null value $p_0$ (the value specified in
+$H_0$), not the observed sample proportion $\hat{p}$.
+:::
+
+### 9.2 Continuity correction
+
+Since the binomial distribution is discrete and the normal distribution is continuous, a
+**continuity correction** improves the accuracy of the approximation:
+
+- For $P(X \leq k)$, use $P\!\left(Z \leq \dfrac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)$.
+- For $P(X \geq k)$, use $P\!\left(Z \geq \dfrac{k - 0.5 - np}{\sqrt{np(1-p)}}\right)$.
+- For $P(X = k)$, use $P(k - 0.5 \lt{} X \lt{} k + 0.5)$ in the normal.
+
+### 9.3 Worked example
+
+**Example.** Historically, 40% of students at a school take the bus. In a survey of 120 students, 58
+take the bus. Test at the 5% level whether the proportion has changed.
+
+$X \sim B(120, p)$. $H_0: p = 0.4$, $H_1: p \neq 0.4$. Two-tailed, $\alpha = 0.05$.
+
+Check conditions using $p_0 = 0.4$: $np_0 = 120 \times 0.4 = 48 \gt{} 5$ and
+$n(1 - p_0) = 120 \times 0.6 = 72 \gt{} 5$. Conditions satisfied.
+
+Under $H_0$: $X \approx N(48, 28.8)$, so $\sigma = \sqrt{28.8} \approx 5.367$.
+
+Using continuity correction:
+
+$$z = \dfrac{58 - 0.5 - 48}{5.367} = \dfrac{9.5}{5.367} = 1.770$$
+
+Two-tailed critical values: $\pm 1.96$. Since $|1.770| \lt{} 1.96$, **do not reject** $H_0$.
+
+There is insufficient evidence at the 5% level that the proportion of bus users has changed.
+
+---
+
+## 10. Confidence Intervals
+
+### 10.1 Definition
+
+A **confidence interval** gives a range of plausible values for a population parameter, together
+with a specified level of confidence.
+
+**Definition.** A $100(1 - \alpha)\%$ confidence interval for a parameter $\theta$ is an interval
+$(L, U)$ constructed from sample data such that, in repeated sampling, $100(1 - \alpha)\%$ of such
+intervals would contain the true value of $\theta$.
+
+:::warning
+A 95% confidence interval does **not** mean there is a 95% probability that $\theta$ lies
+in the interval. The parameter $\theta$ is fixed; it either is or is not in the interval. The 95%
+refers to the long-run proportion of intervals (across many repeated samples) that capture $\theta$.
+:::
+
+### 10.2 95% confidence interval for a population proportion
+
+For large $n$ where $n\hat{p} \gt{} 5$ and $n(1 - \hat{p}) \gt{} 5$, the sample proportion $\hat{p}$
+is approximately normal. The $100(1-\alpha)\%$ confidence interval for $p$ is:
+
+$$\hat{p} \pm z_{\alpha/2}\sqrt{\dfrac{\hat{p}(1 - \hat{p})}{n}}$$
+
+For a 95% confidence interval, $z_{\alpha/2} = 1.96$:
+
+$$\hat{p} \pm 1.96\sqrt{\dfrac{\hat{p}(1 - \hat{p})}{n}}$$
+
+The **margin of error** is $1.96\sqrt{\hat{p}(1-\hat{p})/n}$, which decreases as $n$ increases.
+
+### 10.3 Connection to hypothesis testing
+
+There is a direct and important link between confidence intervals and two-tailed hypothesis tests:
+
+- A $100(1-\alpha)\%$ confidence interval contains exactly those values of $p_0$ that would **not be
+  rejected** by a two-tailed test of $H_0: p = p_0$ at level $\alpha$.
+- If $p_0$ falls **outside** the confidence interval, then $H_0$ is rejected at level $\alpha$.
+- If $p_0$ falls **inside** the confidence interval, then $H_0$ is not rejected at level $\alpha$.
+
+**Example.** Using the bus survey data: $\hat{p} = 58/120 \approx 0.483$, $n = 120$.
+
+$$95\%\text{ CI} = 0.483 \pm 1.96\sqrt{\dfrac{0.483 \times 0.517}{120}} = 0.483 \pm 1.96 \times 0.0456$$
+
+$$95\%\text{ CI} = 0.483 \pm 0.0894 = (0.394, 0.573)$$
+
+Since $p_0 = 0.4$ lies inside $(0.394, 0.573)$, we do not reject $H_0: p = 0.4$ at the 5% level.
+This is consistent with the hypothesis test result in Section 9.3.
+
+---
+
+## 11. Interpreting p-Values
+
+### 11.1 Formal definition
+
+**Definition.** The **$p$-value** is the probability of obtaining a test statistic at least as
+extreme as the observed value, assuming $H_0$ is true.
+
+$$p\text{-value} = P(\text{test statistic} \geq \text{observed} \mid H_0 \text{ true})$$
+
+For a two-tailed test, "at least as extreme" means at least as far from the null value in either
+direction, so the $p$-value is doubled.
+
+### 11.2 Decision rule
+
+- If $p\text{-value} \lt{} \alpha$: reject $H_0$. The result is **statistically significant**.
+- If $p\text{-value} \geq \alpha$: do not reject $H_0$. The result is **not statistically
+  significant**.
+
+### 11.3 Strength of evidence
+
+The smaller the $p$-value, the stronger the evidence against $H_0$:
+
+| $p$-value range           | Strength of evidence against $H_0$ |
+| ------------------------- | ---------------------------------- |
+| $p \geq 0.10$             | Little to no evidence              |
+| $0.05 \leq p \lt{} 0.10$  | Weak evidence                      |
+| $0.01 \leq p \lt{} 0.05$  | Moderate evidence                  |
+| $0.001 \leq p \lt{} 0.01$ | Strong evidence                    |
+| $p \lt{} 0.001$           | Very strong evidence               |
+
+### 11.4 Common misinterpretations
+
+:::warning
+
+- The $p$-value is **not** the probability that $H_0$ is true.
+- The $p$-value is **not** the probability that the observed result occurred by chance.
+- A large $p$-value does **not** prove $H_0$ is true; it only means the data is consistent with
+  $H_0$.
+- Statistical significance does **not** imply practical or scientific importance.
+- The $p$-value depends on sample size: with a very large sample, even trivially small effects can
+produce tiny $p$-values.
+:::
+
+### 11.5 Worked example
+
+**Example.** A factory produces components with mean length 50 mm. A sample of 40 components gives
+$\bar{x} = 50.8$ mm. Given $\sigma = 3$ mm, find the $p$-value for testing $H_0: \mu = 50$ vs
+$H_1: \mu \neq 50$.
+
+Under $H_0$: $\bar{X} \sim N(50, 3^2/40) = N(50, 0.225)$.
+
+$$z = \dfrac{50.8 - 50}{\sqrt{0.225}} = \dfrac{0.8}{0.4743} = 1.687$$
+
+$$p\text{-value} = 2 \times P(Z \gt{} 1.687) = 2 \times (1 - 0.9542) = 0.0916$$
+
+Since $0.0916 \gt{} 0.05$, we do not reject $H_0$ at the 5% level.
+
+**Interpretation:** If the true mean were 50 mm, there would be approximately a 9.2% chance of
+observing a sample mean at least as far from 50 mm as 50.8 mm. This is not unusual enough to provide
+convincing evidence against $H_0$.
+
+---
+
 ## Problem Set
 
 <details>
@@ -209,6 +433,7 @@ There is evidence at the 5% level that the die is biased.
 
 **If you get this wrong, revise:** [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) —
 Section 5.
+
 </details>
 
 <details>
@@ -232,6 +457,7 @@ There is evidence that the proportion passing quality control is less than 90%.
 
 **If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) —
 Section 6.
+
 </details>
 
 <details>
@@ -248,6 +474,7 @@ goes untreated, potentially with serious consequences.
 
 **If you get this wrong, revise:** [Type I and Type II Errors](#3-type-i-and-type-ii-errors) —
 Section 3.
+
 </details>
 
 <details>
@@ -265,6 +492,7 @@ $P(X \geq 5) = 1 - P(X \leq 4) = 1 - 0.8497 = 0.1503 \gt{} 0.05$.
 Critical region: $X \geq 6$. Actual significance level: 4.73%.
 
 **If you get this wrong, revise:** [Critical Region](#23-critical-region) — Section 2.3.
+
 </details>
 
 <details>
@@ -286,6 +514,7 @@ There is evidence at the 1% level that the mean lifetime is less than 1000 hours
 
 **If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) —
 Section 6.
+
 </details>
 
 <details>
@@ -307,6 +536,7 @@ Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times
 
 **If you get this wrong, revise:**
 [Critical Values and Significance Levels](#2-critical-values-and-significance-levels) — Section 2.
+
 </details>
 
 <details>
@@ -328,6 +558,7 @@ There is insufficient evidence at the 5% level that the mean score differs from 
 
 **If you get this wrong, revise:** [Normal Hypothesis Tests](#6-normal-hypothesis-tests) —
 Section 6.
+
 </details>
 
 <details>
@@ -350,6 +581,7 @@ Insufficient evidence that the new treatment is more effective.
 
 **If you get this wrong, revise:** [Binomial Hypothesis Tests](#5-binomial-hypothesis-tests) —
 Section 5.
+
 </details>
 
 <details>
@@ -362,6 +594,7 @@ Explain why failing to reject $H_0$ does not mean $H_0$ is true.
 Failing to reject $H_0$ means the data is consistent with $H_0$ but does not prove it. The test may lack sufficient power to detect a real effect. For example, if a drug has a small but real benefit, a small sample may not detect it, leading us to fail to reject $H_0$ even though the drug is effective. The absence of evidence is not evidence of absence.
 
 **If you get this wrong, revise:** [Interpreting Results](#7-interpreting-results) — Section 7.
+
 </details>
 
 <details>
@@ -385,6 +618,153 @@ So $\beta \approx 0.361$ and the power is $1 - \beta \approx 0.639$.
 
 **If you get this wrong, revise:** [Type I and Type II Errors](#3-type-i-and-type-ii-errors) —
 Section 3.
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+A researcher tests whether a new drug changes recovery time. She uses a two-tailed test of $H_0: \mu = \mu_0$ vs $H_1: \mu \neq \mu_0$ at $\alpha = 0.05$ and obtains $z = 1.85$. (a) What is her conclusion? (b) If she had instead used a right-tailed test $H_1: \mu \gt{} \mu_0$ at the same level, would her conclusion change? Explain.
+</details>
+
+<details>
+<summary>Solution 11</summary>
+(a) Two-tailed test: critical values $\pm 1.96$. $|1.85| = 1.85 \lt{} 1.96$, so **do not reject** $H_0$. There is insufficient evidence that recovery time has changed.
+
+(b) One-tailed test: critical value $1.645$. Since $1.85 \gt{} 1.645$, we **reject** $H_0$. There is
+sufficient evidence that recovery time has increased.
+
+The conclusion changes because a one-tailed test allocates the entire 5% significance level to one
+tail, making the critical value less extreme. This illustrates why the choice between one-tailed and
+two-tailed must be made **before** seeing the data.
+
+**If you get this wrong, revise:**
+[One-Tailed vs Two-Tailed Tests in Depth](#8-one-tailed-vs-two-tailed-tests-in-depth) — Section 8.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+A survey of 200 households in a town finds that 45 regularly recycle. The national recycling rate is 20%. Test at the 5% level whether the recycling rate in this town differs from the national rate, using a normal approximation with continuity correction.
+</details>
+
+<details>
+<summary>Solution 12</summary>
+$X \sim B(200, p)$. $H_0: p = 0.20$, $H_1: p \neq 0.20$. Two-tailed, $\alpha = 0.05$.
+
+Check conditions using $p_0 = 0.20$: $np_0 = 200 \times 0.20 = 40 \gt{} 5$ and
+$n(1 - p_0) = 160 \gt{} 5$. Conditions satisfied.
+
+Under $H_0$: $X \approx N(40, 200 \times 0.20 \times 0.80) = N(40, 32)$,
+$\sigma = \sqrt{32} \approx 5.657$.
+
+Using continuity correction:
+
+$$z = \dfrac{45 - 0.5 - 40}{5.657} = \dfrac{4.5}{5.657} = 0.796$$
+
+Two-tailed critical values: $\pm 1.96$. $|0.796| \lt{} 1.96$, so **do not reject** $H_0$.
+
+There is insufficient evidence at the 5% level that the recycling rate differs from 20%.
+
+**If you get this wrong, revise:**
+[Binomial Tests with Normal Approximation](#9-binomial-tests-with-normal-approximation) — Section 9.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+In a random sample of 150 voters, 87 support a new policy. (a) Construct a 95% confidence interval for the true proportion of support. (b) Since the interval does not contain 0.5, a politician claims "a majority of voters support the policy." Is this claim justified?
+</details>
+
+<details>
+<summary>Solution 13</summary>
+(a) $\hat{p} = 87/150 = 0.58$.
+
+Check: $n\hat{p} = 150 \times 0.58 = 87 \gt{} 5$ and
+$n(1 - \hat{p}) = 150 \times 0.42 = 63 \gt{} 5$.
+
+$$95\%\text{ CI} = 0.58 \pm 1.96\sqrt{\dfrac{0.58 \times 0.42}{150}} = 0.58 \pm 1.96 \times 0.0403$$
+
+$$95\%\text{ CI} = 0.58 \pm 0.0790 = (0.501, 0.659)$$
+
+(b) The 95% CI is $(0.501, 0.659)$. Since the entire interval lies above 0.5, we can reject
+$H_0: p = 0.5$ at the 5% level. However, the lower bound is only 0.501, so the evidence for a
+majority is borderline. The claim is technically supported by the test, but the narrow margin should
+be communicated carefully.
+
+**If you get this wrong, revise:** [Confidence Intervals](#10-confidence-intervals) — Section 10.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+A 95% confidence interval for a population mean is $(48.2, 53.8)$. State whether $H_0$ would be rejected or not rejected at the 5% level for each of the following null values: (a) $\mu_0 = 50$, (b) $\mu_0 = 47$, (c) $\mu_0 = 54$. Justify using the connection between confidence intervals and hypothesis tests.
+</details>
+
+<details>
+<summary>Solution 14</summary>
+A 95% confidence interval contains exactly those values of $\mu_0$ that would **not** be rejected
+by a two-tailed test at the 5% level.
+
+(a) $\mu_0 = 50$: $50 \in (48.2, 53.8)$, so **do not reject** $H_0$. (b) $\mu_0 = 47$:
+$47 \notin (48.2, 53.8)$, so **reject** $H_0$. (c) $\mu_0 = 54$: $54 \notin (48.2, 53.8)$, so
+**reject** $H_0$.
+
+**If you get this wrong, revise:** [Confidence Intervals](#10-confidence-intervals) — Section 10.
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+A sample of 35 students has mean score 62.4 with known population standard deviation $\sigma = 8$. (a) Find the $p$-value for testing $H_0: \mu = 60$ vs $H_1: \mu \gt{} 60$. (b) State your conclusion at the 5% significance level and interpret the $p$-value.
+</details>
+
+<details>
+<summary>Solution 15</summary>
+(a) Under $H_0$: $\bar{X} \sim N(60, 8^2/35) = N(60, 1.829)$.
+
+$$z = \dfrac{62.4 - 60}{\sqrt{1.829}} = \dfrac{2.4}{1.352} = 1.775$$
+
+$$p\text{-value} = P(Z \gt{} 1.775) = 1 - 0.9620 = 0.0380$$
+
+(b) Since $0.038 \lt{} 0.05$, **reject** $H_0$ at the 5% level. There is sufficient evidence that
+the true mean score exceeds 60. The $p$-value of 0.038 means that if the true mean were 60, there
+would be a 3.8% chance of observing a sample mean of 62.4 or higher. This provides moderate evidence
+against $H_0$.
+
+**If you get this wrong, revise:** [Interpreting p-Values](#11-interpreting-p-values) — Section 11.
+
+</details>
+
+<details>
+<summary>Problem 16</summary>
+For a test of $H_0: \mu = 100$ vs $H_1: \mu \gt{} 100$ with $\sigma = 15$, $n = 25$, and $\alpha = 0.05$: (a) Find the critical value in terms of $\bar{x}$. (b) Find the probability of a Type II error and the power of the test if the true mean is $\mu = 108$. (c) How would the power change if $\alpha$ were increased to 0.10?
+</details>
+
+<details>
+<summary>Solution 16</summary>
+(a) Under $H_0$: $\bar{X} \sim N(100, 15^2/25) = N(100, 9)$, so $\sigma_{\bar{X}} = 3$.
+
+Critical value: $c = 100 + 1.645 \times 3 = 104.935$. Reject $H_0$ if $\bar{X} \gt{} 104.935$.
+
+(b) Type II error when $\mu = 108$: $P(\bar{X} \leq 104.935 \mid \mu = 108)$.
+
+$\bar{X} \sim N(108, 9)$ under the true distribution.
+
+$$P\!\left(Z \leq \dfrac{104.935 - 108}{3}\right) = P(Z \leq -1.022) \approx 0.153$$
+
+So $\beta \approx 0.153$ and power $= 1 - 0.153 = 0.847$.
+
+(c) If $\alpha = 0.10$, the critical value becomes $c = 100 + 1.282 \times 3 = 103.846$.
+
+$$\beta_{\text{new}} = P\!\left(Z \leq \dfrac{103.846 - 108}{3}\right) = P(Z \leq -1.385) \approx 0.083$$
+
+Power $= 1 - 0.083 = 0.917$. Increasing $\alpha$ from 0.05 to 0.10 **increases** the power (from
+0.847 to 0.917) but also increases the probability of a Type I error. This illustrates the trade-off
+between Type I and Type II errors.
+
+**If you get this wrong, revise:** [Type I and Type II Errors](#3-type-i-and-type-ii-errors) —
+Section 3.
+
 </details>
 
 :::

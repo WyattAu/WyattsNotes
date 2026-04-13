@@ -104,6 +104,20 @@ $g'(x)$ at the root and show $|g'(\alpha)| \lt{} 1$. If asked why a rearrangemen
 $|g'(\alpha)| \gt{} 1$.
 :::
 
+### 2.4 Geometric interpretation
+
+The fixed-point iteration $x_{n+1} = g(x_n)$ can be visualised using the cobweb diagram. Plot
+$y = g(x)$ and $y = x$. Starting from $x_0$ on the $x$-axis, go vertically to $y = g(x_0) = x_1$,
+then horizontally to $y = x$, then vertically to $y = g(x_1) = x_2$, and so on.
+
+- If $0 \lt{} g'(\alpha) \lt{} 1$: the cobweb spirals inward (monotone convergence).
+- If $-1 \lt{} g'(\alpha) \lt{} 0$: the cobweb zigzags inward (oscillatory convergence).
+- If $|g'(\alpha)| \gt{} 1$: the cobweb spirals or zigzags outward (divergence).
+
+The closer $|g'(\alpha)|$ is to zero, the faster the convergence. When $g'(\alpha) = 0$, the
+iteration achieves quadratic convergence (similar to Newton-Raphson), since the leading error term
+in the Taylor expansion vanishes.
+
 ---
 
 ## 3. Newton-Raphson Method
@@ -163,17 +177,154 @@ Always check that Newton-Raphson is converging. If the iterates oscillate or div
 a different starting point.
 :::
 
+### 3.4 Horizontal tangent failure
+
+When $f'(x_n) = 0$ at some iterate, the Newton-Raphson formula requires division by zero and the
+method breaks down entirely. Even when $f'(x_n)$ is merely small, the step
+$x_{n+1} = x_n - f(x_n)/f'(x_n)$ becomes very large, sending the iterate far from the root.
+
+**Example.** Let $f(x) = x^3 - 3x + 3$. Then $f'(x) = 3x^2 - 3$, so $f'(1) = 0$. Starting at
+$x_0 = 1$:
+
+The formula gives $x_1 = 1 - f(1)/f'(1) = 1 - 1/0$, which is undefined.
+
+Even starting at $x_0 = 0.9$: $f(0.9) = 0.729 - 2.7 + 3 = 1.029$, $f'(0.9) = 2.43 - 3 = -0.57$.
+$x_1 = 0.9 - 1.029/(-0.57) = 0.9 + 1.805 = 2.705$.
+
+The root is near $\alpha \approx -2.10$, so the iterate has been sent in the wrong direction. The
+next iterate $x_2$ will be pulled back, but convergence is erratic compared to a well-chosen
+starting point.
+
+:::warning
+Before applying Newton-Raphson, sketch $f(x)$ or compute $f'(x)$ to check that the
+tangent is not close to horizontal near your starting point.
+:::
+
+### 3.5 Slow convergence near inflection points
+
+The quadratic convergence proof in Section 3.2 requires $f'(\alpha) \neq 0$. When the root coincides
+with an inflection point, so that $f'(\alpha) = 0$, convergence degrades from quadratic to
+**linear**.
+
+**Theorem.** If $f(\alpha) = 0$, $f'(\alpha) = 0$, $f''(\alpha) \neq 0$, and $x_0$ is sufficiently
+close to $\alpha$, then Newton-Raphson converges linearly with rate $1/2$:
+
+$$|x_{n+1} - \alpha| \approx \frac{1}{2}|x_n - \alpha|$$
+
+**Proof sketch.** Expanding by Taylor's theorem to third order about $\alpha$:
+
+$$f(x_n) = \frac{f''(\alpha)}{2}(x_n - \alpha)^2 + \frac{f'''(\alpha)}{6}(x_n - \alpha)^3 + O((x_n - \alpha)^4)$$
+
+$$f'(x_n) = f''(\alpha)(x_n - \alpha) + \frac{f'''(\alpha)}{2}(x_n - \alpha)^2 + O((x_n - \alpha)^3)$$
+
+Therefore:
+
+$$x_{n+1} - \alpha = x_n - \alpha - \frac{f(x_n)}{f'(x_n)}$$
+
+$$= (x_n - \alpha) - \frac{\frac{f''(\alpha)}{2}(x_n - \alpha)^2 + O((x_n - \alpha)^3)}{f''(\alpha)(x_n - \alpha) + O((x_n - \alpha)^2)}$$
+
+$$= (x_n - \alpha) - \frac{\frac{f''(\alpha)}{2}(x_n - \alpha) + O((x_n - \alpha)^2)}{f''(\alpha) + O(x_n - \alpha)}$$
+
+$$= (x_n - \alpha) - \frac{1}{2}(x_n - \alpha)\left(1 + O(x_n - \alpha)\right)$$
+
+$$= \frac{1}{2}(x_n - \alpha) + O((x_n - \alpha)^2)$$
+
+So $|x_{n+1} - \alpha| \to \frac{1}{2}|x_n - \alpha|$ as $x_n \to \alpha$: the error is halved each
+step (linear convergence with rate $1/2$), not squared. $\blacksquare$
+
+**Example.** $f(x) = (x-1)^3$ has a root at $x = 1$ where $f'(1) = 0$. The Newton-Raphson iteration
+becomes:
+
+$$x_{n+1} = x_n - \frac{(x_n - 1)^3}{3(x_n - 1)^2} = x_n - \frac{x_n - 1}{3} = \frac{2x_n + 1}{3}$$
+
+Starting at $x_0 = 4$: $x_1 = 3$, $x_2 = 7/3 \approx 2.333$, $x_3 = 17/9 \approx 1.889$,
+$x_4 = 37/27 \approx 1.370$, $x_5 = 75/81 \approx 1.210$, ...
+
+The error is multiplied by $2/3$ each step (linear, not quadratic). Compare: standard Newton-Raphson
+with $f'(\alpha) \neq 0$ would give roughly 1, then 2, then 4, then 8 correct digits. Here each step
+only adds a fixed fraction of a digit.
+
 ---
 
 ## 4. The Trapezium Rule
 
-(See the Integration chapter for full details.)
+### 4.1 Formula
 
 $$\int_a^b f(x)\,dx \approx \frac{h}{2}\left[y_0 + 2y_1 + \cdots + 2y_{n-1} + y_n\right]$$
 
 where $h = (b-a)/n$ and $y_i = f(a+ih)$.
 
-**Error bound:** $|E| \leq \dfrac{(b-a)^3}{12n^2}M$ where $|f''(x)| \leq M$ on $[a,b]$.
+### 4.2 Error analysis
+
+**Theorem.** The error in the composite trapezium rule is:
+
+$$E_T = -\frac{(b-a)^3}{12n^2}\,f''(\eta)$$
+
+for some $\eta \in (a, b)$, provided $f$ is twice continuously differentiable on $[a, b]$.
+
+**Derivation.** Consider a single strip $[x_i, x_{i+1}]$ of width $h$. The trapezium rule
+approximates $\int_{x_i}^{x_{i+1}} f(x)\,dx$ by the area of a trapezium:
+
+$$\int_{x_i}^{x_{i+1}} f(x)\,dx \approx \frac{h}{2}\left[f(x_i) + f(x_{i+1})\right]$$
+
+To find the error, expand $f$ about the midpoint $m_i = x_i + h/2$. Let $\delta = h/2$:
+
+$$f(x_i) = f(m_i - \delta) = f(m_i) - \delta\, f'(m_i) + \frac{\delta^2}{2}f''(m_i) - \frac{\delta^3}{6}f'''(\zeta_1)$$
+
+$$f(x_{i+1}) = f(m_i + \delta) = f(m_i) + \delta\, f'(m_i) + \frac{\delta^2}{2}f''(m_i) + \frac{\delta^3}{6}f'''(\zeta_2)$$
+
+Adding these:
+
+$$f(x_i) + f(x_{i+1}) = 2f(m_i) + \delta^2 f''(m_i) + O(h^3)$$
+
+The trapezium approximation for this strip is:
+
+$$\frac{h}{2}\left[f(x_i) + f(x_{i+1})\right] = h\,f(m_i) + \frac{h\,\delta^2}{2}f''(m_i) + O(h^4) = h\,f(m_i) + \frac{h^3}{8}f''(m_i) + O(h^4)$$
+
+The exact integral over this strip is (by Taylor expansion of the integral):
+
+$$\int_{x_i}^{x_{i+1}} f(x)\,dx = h\,f(m_i) + \frac{h^3}{24}f''(m_i) + O(h^5)$$
+
+Therefore the error on a single strip is:
+
+$$E_i = \frac{h}{2}\left[f(x_i) + f(x_{i+1})\right] - \int_{x_i}^{x_{i+1}} f(x)\,dx = \left(\frac{1}{8} - \frac{1}{24}\right)h^3 f''(m_i) + O(h^4) = \frac{h^3}{12}f''(m_i) + O(h^4)$$
+
+Summing over all $n$ strips and applying the Intermediate Value Theorem to $f''$ (which is
+continuous), there exists $\eta \in (a, b)$ such that:
+
+$$E_T = \sum_{i=0}^{n-1} E_i = \frac{h^3}{12}\sum_{i=0}^{n-1} f''(m_i) + O(n \cdot h^4) = \frac{h^3}{12}\cdot\frac{n\, f''(\eta)}{1} + O(h^4 \cdot n)$$
+
+Since $\sum_{i=0}^{n-1} f''(m_i) \cdot h \approx \int_a^b f''(x)\,dx$ and $nh = b - a$:
+
+$$E_T = -\frac{(b-a)^3}{12n^2}\,f''(\eta)$$
+
+(The negative sign arises from the exact derivation via the Euler-Maclaurin formula; the key point
+is the $h^2$ scaling.) $\blacksquare$
+
+**Key consequence.** The error is proportional to $h^2 = (b-a)^2/n^2$. Doubling the number of strips
+($n \to 2n$) reduces the error by a factor of 4, since $h \to h/2$ and $h^2 \to h^2/4$.
+
+### 4.3 Error bound
+
+From the error formula, since $|f''(\eta)| \leq M$ for all $\eta \in [a,b]$:
+
+$$|E_T| \leq \frac{(b-a)^3}{12n^2}\,M$$
+
+This gives a **guaranteed** upper bound on the absolute error. If we require the error to satisfy
+$|E_T| \lt{} \varepsilon$, we need:
+
+$$n \gt{} \sqrt{\frac{(b-a)^3\, M}{12\,\varepsilon}}$$
+
+**Example.** Approximate $\displaystyle\int_0^1 e^{-x^2}\,dx$ with the trapezium rule. Here
+$f(x) = e^{-x^2}$, so $f'(x) = -2x\,e^{-x^2}$ and $f''(x) = (4x^2 - 2)e^{-x^2}$. On $[0,1]$:
+$|f''(x)| \leq 2$ (achieved at $x = 0$, where $f''(0) = -2$).
+
+For error $\lt{} 10^{-4}$:
+
+$$n \gt{} \sqrt{\frac{1^3 \times 2}{12 \times 10^{-4}}} = \sqrt{\frac{2}{0.0012}} = \sqrt{1666.\bar{6}} \approx 40.8$$
+
+So $n = 42$ strips suffice (rounding up to the nearest even number, which is convenient if one later
+wishes to compare with Simpson's rule).
 
 ---
 
@@ -224,6 +375,52 @@ number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$
 
 ---
 
+## 7. Comparison of Root-Finding Methods
+
+### 7.1 When to use each method
+
+**Sign change (bisection):** Use when you need a guaranteed, robust result and have a sign change.
+Always converges but slowly (halving the interval each step). No derivative needed. Excellent for
+initial bracketing before switching to a faster method.
+
+**Fixed-point iteration:** Use when the equation is easily rearranged into $x = g(x)$ and
+$|g'(\alpha)| \lt{} 1$ can be verified. Simple to implement but may converge slowly or diverge
+entirely depending on the rearrangement. Different rearrangements of the same equation can give
+radically different convergence behaviour.
+
+**Newton-Raphson:** Use when $f'(x)$ is easy to compute and a good starting estimate is available.
+Extremely fast (quadratic convergence) when it works, but can fail catastrophically if $f'(x_n)$ is
+small, if the starting point is poor, or if the root is at an inflection point.
+
+### 7.2 Practical strategy
+
+In practice, numerical software often combines methods:
+
+1. **Bracket the root** using sign change to find an interval $[a, b]$ containing the root.
+2. **Refine** using Newton-Raphson or fixed-point iteration starting from the midpoint or a
+   favourable endpoint.
+3. **Verify** the result by checking $f(x_n)$ is sufficiently close to zero.
+
+:::info
+Newton-Raphson is the method of choice when derivatives are available and the function is
+well-behaved. Fixed-point iteration is useful when the problem naturally gives a contraction
+mapping. Bisection is the reliable fallback when nothing else is guaranteed to work.
+:::
+
+### 7.3 Cost comparison
+
+| Method         | Cost per step | Convergence rate          | Total cost to reach tolerance $\varepsilon$ |
+| -------------- | ------------- | ------------------------- | ------------------------------------------- |
+| Bisection      | 1 evaluation  | $1/2$ (linear)            | $O(\log_2(1/\varepsilon))$ steps            |
+| Fixed-point    | 1 evaluation  | $\|g'(\alpha)\|$ (linear) | $O(\log_{1/\|g'\|}(1/\varepsilon))$ steps   |
+| Newton-Raphson | 2 evaluations | Quadratic                 | $O(\log_2 \log_2(1/\varepsilon))$ steps     |
+
+Newton-Raphson requires both $f$ and $f'$ per step (two evaluations), but its quadratic convergence
+means it needs far fewer steps in total. For high accuracy requirements, Newton-Raphson is
+overwhelmingly more efficient despite the higher per-step cost.
+
+---
+
 ## Problem Set
 
 <details>
@@ -240,6 +437,7 @@ $(2,3)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section
 1.1.
+
 </details>
 
 <details>
@@ -255,6 +453,7 @@ $x_2 = \sqrt[3]{2(2.0801)+5} = \sqrt[3]{9.1602} = 2.0924$
 $x_3 = \sqrt[3]{2(2.0924)+5} = \sqrt[3]{9.1848} = 2.0943$
 
 **If you get this wrong, revise:** [Fixed-Point Iteration](#2-fixed-point-iteration) — Section 2.
+
 </details>
 
 <details>
@@ -272,6 +471,7 @@ $g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac{3 \times 4.37}{2} \approx 6.55
 Since $|g'(\alpha)| \gt{} 1$, the iteration diverges near $\alpha$.
 
 **If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
+
 </details>
 
 <details>
@@ -289,6 +489,7 @@ $x_1 = 2.1$: $f(2.1) = 9.261-4.2-5 = 0.061$, $f'(2.1) = 13.23-2 = 11.23$.
 $x_2 = 2.1 - 0.061/11.23 = 2.0946$.
 
 **If you get this wrong, revise:** [Newton-Raphson Method](#3-newton-raphson-method) — Section 3.
+
 </details>
 
 <details>
@@ -304,6 +505,7 @@ $$\int_0^2 e^{-x^2}\,dx \approx \frac{0.5}{3}[1 + 4(0.7788) + 2(0.3679) + 4(0.10
 $$= \frac{0.5}{3}[1 + 3.1152 + 0.7358 + 0.4216 + 0.0183] = \frac{0.5}{3}(5.2909) \approx 0.8818$$
 
 **If you get this wrong, revise:** [Simpson's Rule](#5-simpsons-rule) — Section 5.
+
 </details>
 
 <details>
@@ -326,6 +528,7 @@ $f(0) = 1 \gt{} 0$, $f(1) = e-3 \lt{} 0$: root in $(0,1)$. $f(1) \lt{} 0$, $f(2)
 root in $(1,2)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
+
 </details>
 
 <details>
@@ -345,6 +548,7 @@ The problem is that $f'(0) = \infty$ — the tangent at the root $x=0$ is vertic
 Newton-Raphson step sends the iterate to $-\infty$.
 
 **If you get this wrong, revise:** [Failures](#33-failures) — Section 3.3.
+
 </details>
 
 <details>
@@ -362,6 +566,7 @@ $$= 0.25[0 + 2(4.3663) + 1.3863] = 0.25[8.7326 + 1.3863] = 0.25 \times 10.1189 \
 (Exact: $[x\ln x - x]_1^4 = 4\ln 4 - 4 + 1 = 8\ln 2 - 3 \approx 2.5452$.)
 
 **If you get this wrong, revise:** [The Trapezium Rule](#4-the-trapezium-rule) — Section 4.
+
 </details>
 
 <details>
@@ -382,6 +587,7 @@ $|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx 
 Converges since $|g'(\alpha)| \lt{} 1$.
 
 **If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
+
 </details>
 
 <details>
@@ -394,6 +600,240 @@ Explain why the sign change theorem does not guarantee a root of $f(x) = \dfrac{
 $f(1) = -1 \lt{} 0$ and $f(3) = 1 \gt{} 0$, so there is a sign change. However, $f$ is **not continuous** on $[1,3]$ — it has a vertical asymptote at $x = 2$. The sign change theorem requires continuity, so it does not apply here. There is no root of $1/(x-2) = 0$.
 
 **If you get this wrong, revise:** [Limitations](#12-limitations) — Section 1.2.
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+Consider $f(x) = (x-2)^3$. The root is $\alpha = 2$. Apply Newton-Raphson starting from $x_0 = 5$.
+Show that the convergence is linear, find the convergence rate, and explain why quadratic
+convergence is lost.
+</details>
+
+<details>
+<summary>Solution 11</summary>
+$f(x) = (x-2)^3$, $f'(x) = 3(x-2)^2$.
+
+$x_{n+1} = x_n - \dfrac{(x_n-2)^3}{3(x_n-2)^2} = x_n - \dfrac{x_n - 2}{3} = \dfrac{2x_n + 4}{3}$
+
+Starting from $x_0 = 5$: $x_1 = 14/3 \approx 4.667$, $x_2 = 40/9 \approx 4.444$,
+$x_3 = 116/27 \approx 4.296$, $x_4 = 344/81 \approx 4.198$.
+
+Error: $e_0 = 3$, $e_1 = 8/3 \approx 2.667$, $e_2 = 16/9 \approx 1.778$,
+$e_3 = 32/27 \approx 1.185$, $e_4 = 64/81 \approx 0.790$.
+
+Ratio: $e_{n+1}/e_n = 2/3$ for all $n$. This is linear convergence with rate $2/3$.
+
+Quadratic convergence is lost because $f'(\alpha) = f'(2) = 0$. The root coincides with a stationary
+point (inflection point), violating the condition $f'(\alpha) \neq 0$ in the quadratic convergence
+theorem. As shown in Section 3.5, when $f'(\alpha) = 0$ and $f''(\alpha) \neq 0$, Newton-Raphson
+degrades to linear convergence with rate $1/2$. Here $f''(x) = 6(x-2)$, so $f''(2) = 0$ as well
+(triple root), giving rate $2/3$ instead of $1/2$.
+
+**If you get this wrong, revise:**
+[Slow Convergence Near Inflection Points](#35-slow-convergence-near-inflection-points) — Section
+3.5.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+(a) Use the trapezium rule with $n = 4$ strips to approximate $\displaystyle\int_0^2 \frac{1}{1+x^2}\,dx$.
+
+(b) Given that $f''(x) = \dfrac{6x^2 - 2}{(1+x^2)^3}$, find an upper bound $M$ for $|f''(x)|$ on
+$[0,2]$ and hence bound the error in your approximation.
+
+</details>
+
+<details>
+<summary>Solution 12</summary>
+(a) $h = 0.5$.
+
+$y_0 = f(0) = 1$, $y_1 = f(0.5) = 1/1.25 = 0.8$, $y_2 = f(1) = 0.5$,
+$y_3 = f(1.5) = 1/3.25 \approx 0.3077$, $y_4 = f(2) = 0.2$.
+
+$$\text{Approx} = \frac{0.5}{2}[1 + 2(0.8 + 0.5 + 0.3077) + 0.2] = 0.25[1 + 2(1.6077) + 0.2] = 0.25 \times 4.4154 \approx 1.1039$$
+
+(Exact value: $\arctan 2 \approx 1.1071$.)
+
+(b) $f''(x) = \dfrac{6x^2 - 2}{(1+x^2)^3}$. On $[0, 2]$, the numerator $6x^2 - 2$ is maximised at
+$x = 2$ where it equals $6(4) - 2 = 22$. The denominator $(1+x^2)^3$ is minimised at $x = 0$ where
+it equals 1. We need to maximise $|f''(x)|$.
+
+Checking critical points: $f'''(x) = 0$ gives potential extrema of $f''$. Alternatively, evaluate at
+endpoints and critical points. $f''(0) = -2$, $f''(1) = 4/8 = 0.5$, $f''(2) = 22/125 = 0.176$.
+
+So $M = 2$ (taking $|f''(x)| \leq 2$).
+
+Error bound:
+$|E_T| \leq \dfrac{(2-0)^3}{12 \times 4^2} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
+
+The actual error is $|1.1071 - 1.1039| = 0.0032$, well within the bound.
+
+**If you get this wrong, revise:** [Error Analysis](#42-error-analysis) — Section 4.2 and
+[Error Bound](#43-error-bound) — Section 4.3.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+The equation $e^{-x} = x$ has a single real root $\alpha$.
+
+(a) Show that $\alpha \in (0.5, 0.7)$.
+
+(b) Consider the rearrangement $x_{n+1} = e^{-x_n}$. Show that this iteration converges near
+$\alpha$.
+
+(c) Consider the rearrangement $x_{n+1} = -\ln x_n$. Determine whether this converges near $\alpha$.
+
+</details>
+
+<details>
+<summary>Solution 13</summary>
+(a) $f(x) = e^{-x} - x$. $f(0.5) = e^{-0.5} - 0.5 \approx 0.6065 - 0.5 = 0.1065 \gt{} 0$.
+$f(0.7) = e^{-0.7} - 0.7 \approx 0.4966 - 0.7 = -0.2034 \lt{} 0$.
+By the sign change theorem, $\alpha \in (0.5, 0.7)$.
+
+(b) $g_1(x) = e^{-x}$, $g_1'(x) = -e^{-x}$. At $\alpha \approx 0.567$:
+$|g_1'(\alpha)| = e^{-\alpha} = \alpha \approx 0.567 \lt{} 1$. Converges.
+
+(c) $g_2(x) = -\ln x$, $g_2'(x) = -1/x$. At $\alpha \approx 0.567$:
+$|g_2'(\alpha)| = 1/\alpha \approx 1.763 \gt{} 1$. Diverges.
+
+Both rearrangements solve the same equation, but only $x_{n+1} = e^{-x_n}$ converges near the root.
+
+**If you get this wrong, revise:** [Rearrangement Choices](#23-rearrangement-choices) — Section 2.3.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+Newton-Raphson is applied to $f(x) = x^3 - 3x + 2$ (which has a double root at $x = 1$ and a single
+root at $x = -2$). Starting from $x_0 = 0.5$, compute $x_1$ and $x_2$, and comment on the rate of
+convergence towards $x = 1$.
+</details>
+
+<details>
+<summary>Solution 14</summary>
+$f(x) = x^3 - 3x + 2 = (x-1)^2(x+2)$, $f'(x) = 3x^2 - 3$.
+
+$x_0 = 0.5$: $f(0.5) = 0.125 - 1.5 + 2 = 0.625$, $f'(0.5) = 0.75 - 3 = -2.25$.
+$x_1 = 0.5 - 0.625/(-2.25) = 0.5 + 0.2778 = 0.7778$.
+
+$x_1 = 0.7778$: $f(0.7778) = 0.4703 - 2.3334 + 2 = 0.1369$, $f'(0.7778) = 1.8151 - 3 = -1.1849$.
+$x_2 = 0.7778 - 0.1369/(-1.1849) = 0.7778 + 0.1155 = 0.8933$.
+
+The iterates are approaching $x = 1$ but slowly. Errors: $e_0 = 0.5$, $e_1 \approx 0.2222$,
+$e_2 \approx 0.1067$. The ratio $e_2/e_1 \approx 0.48$, and $e_1/e_0 \approx 0.44$. This is
+approximately linear convergence.
+
+At the double root $x = 1$: $f(1) = 0$, $f'(1) = 0$. Since $f'(\alpha) = 0$, quadratic convergence
+is lost (as in Section 3.5). For a double root, Newton-Raphson converges linearly with rate
+approximately $1/2$.
+
+**If you get this wrong, revise:**
+[Slow Convergence Near Inflection Points](#35-slow-convergence-near-inflection-points) — Section
+3.5.
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+(a) Use the trapezium rule with $n = 2$ strips to approximate $\displaystyle\int_0^1 \sqrt{x}\,dx$.
+
+(b) The exact value is $2/3$. Compute the actual error.
+
+(c) Use the error bound formula to find a theoretical upper bound for the error with $n = 2$ strips.
+
+</details>
+
+<details>
+<summary>Solution 15</summary>
+(a) $h = 0.5$. $y_0 = \sqrt{0} = 0$, $y_1 = \sqrt{0.5} \approx 0.7071$, $y_2 = \sqrt{1} = 1$.
+
+$$\text{Approx} = \frac{0.5}{2}[0 + 2(0.7071) + 1] = 0.25 \times 2.4142 = 0.6036$$
+
+(b) Exact: $2/3 \approx 0.6667$. Actual error: $|0.6667 - 0.6036| = 0.0631$.
+
+(c) $f(x) = x^{1/2}$, $f'(x) = \frac{1}{2}x^{-1/2}$, $f''(x) = -\frac{1}{4}x^{-3/2}$.
+
+On $(0, 1]$: $|f''(x)| = \frac{1}{4}x^{-3/2}$, which is unbounded as $x \to 0^+$. The error bound
+requires $f''$ to be bounded on $[a,b]$, but $f''(x) \to \infty$ as $x \to 0$.
+
+If we instead apply the bound on $[\varepsilon, 1]$ for small $\varepsilon \gt{} 0$:
+$M = \frac{1}{4}\varepsilon^{-3/2}$, which blows up as $\varepsilon \to 0$. This illustrates a
+limitation of the error bound: it requires $f''$ to be bounded, which fails when $f$ has a vertical
+tangent at an endpoint.
+
+**If you get this wrong, revise:** [Error Bound](#43-error-bound) — Section 4.3.
+
+</details>
+
+<details>
+<summary>Problem 16</summary>
+For the equation $\cos x = x$, let $g(x) = \cos x$.
+
+(a) Verify that a fixed point $\alpha$ exists in $(0, \pi/2)$.
+
+(b) Show that $|g'(\alpha)| \lt{} 1$, and hence that the iteration $x_{n+1} = \cos x_n$ converges.
+
+(c) Starting from $x_0 = 0.5$, find $x_3$ to 6 decimal places.
+
+</details>
+
+<details>
+<summary>Solution 16</summary>
+(a) $g(0) = \cos 0 = 1 \gt{} 0$ and $g(\pi/2) = \cos(\pi/2) = 0 \lt{} \pi/2$.
+Since $g$ is continuous and $g(x) - x$ changes sign on $(0, \pi/2)$ (check: $g(0) - 0 = 1 \gt{} 0$,
+$g(\pi/2) - \pi/2 = -\pi/2 \lt{} 0$), a fixed point exists.
+
+(b) $g'(x) = -\sin x$. At the fixed point $\alpha \approx 0.7391$:
+$|g'(\alpha)| = \sin(0.7391) \approx 0.6736 \lt{} 1$. Converges.
+
+(c) $x_0 = 0.500000$ $x_1 = \cos(0.5) = 0.877583$ $x_2 = \cos(0.877583) = 0.639012$
+$x_3 = \cos(0.639012) = 0.802685$
+
+**If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
+
+</details>
+
+<details>
+<summary>Problem 17</summary>
+A student uses Newton-Raphson to solve $f(x) = \tan x - 1 = 0$ starting from $x_0 = 1.3$.
+
+(a) Compute $x_1$.
+
+(b) The root is $\alpha = \pi/4 \approx 0.7854$. Explain why starting at $x_0 = 1.3$ may not be
+ideal, and identify a value of $x_0$ between $0$ and $\pi/2$ where Newton-Raphson would fail
+entirely.
+
+</details>
+
+<details>
+<summary>Solution 17</summary>
+(a) $f(x) = \tan x - 1$, $f'(x) = \sec^2 x = 1/\cos^2 x$.
+
+$x_0 = 1.3$: $f(1.3) = \tan(1.3) - 1 \approx 3.6021 - 1 = 2.6021$.
+$f'(1.3) = \sec^2(1.3) = 1/\cos^2(1.3) \approx 1/0.0754 \approx 13.26$.
+$x_1 = 1.3 - 2.6021/13.26 \approx 1.3 - 0.1962 = 1.1038$.
+
+This is still far from $\alpha = 0.7854$. The function is very steep here (large $f'$), so the step
+is small but the iterate is far from the root.
+
+(b) Newton-Raphson fails when $f'(x_0) = 0$, i.e., $\sec^2 x_0 = 0$, which never happens since
+$\sec^2 x \geq 1$ for all $x$. However, as $x_0 \to \pi/2^-$, $\cos x_0 \to 0$ and
+$f'(x_0) \to \infty$, while $f(x_0) = \tan x_0 - 1 \to \infty$. The ratio
+$f(x_0)/f'(x_0) = (\tan x_0 - 1)\cos^2 x_0$ tends to a finite limit, but the function becomes
+extremely steep near $\pi/2$, making the iteration numerically unstable. Starting very close to
+$\pi/2$ sends the iterate far away.
+
+A better starting point is $x_0 = 1.0$: $f(1) = \tan 1 - 1 \approx 0.5574$,
+$f'(1) = \sec^2 1 \approx 3.426$. $x_1 = 1 - 0.5574/3.426 \approx 0.8373$, already close to
+$\alpha = 0.7854$.
+
+**If you get this wrong, revise:** [Horizontal Tangent Failure](#34-horizontal-tangent-failure) —
+Section 3.4.
+
 </details>
 
 :::

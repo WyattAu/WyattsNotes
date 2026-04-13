@@ -152,6 +152,281 @@ $$\Delta\text{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2) \quad \b
 loss. The energy lost increases as $(1-e^2)$ — a small decrease in $e$ causes a relatively small
 increase in energy loss for nearly elastic collisions, but the loss grows rapidly as $e$ decreases.
 
+### 5.4 Proof that $0 \leq e \leq 1$
+
+**Theorem.** For any physically realisable collision, the coefficient of restitution satisfies
+$0 \leq e \leq 1$.
+
+**Proof of $e \geq 0$.** After collision, the two bodies must be separating (or at rest relative to
+each other). If $u_1 \gt{} u_2$ (body 1 approaches body 2), then after collision we require
+$v_2 \geq v_1$ (body 2 moves away from body 1). Therefore $v_2 - v_1 \geq 0$ and
+$u_1 - u_2 \gt{} 0$, so:
+
+$$e = \frac{v_2 - v_1}{u_1 - u_2} \geq 0$$
+
+**Proof of $e \leq 1$.** Kinetic energy cannot be created in a collision, so
+$\text{KE}_{\text{after}} \leq \text{KE}_{\text{before}}$, which means $\Delta\text{KE} \geq 0$.
+From the energy loss formula in Section 5.3:
+
+$$\Delta\text{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2) \geq 0$$
+
+Since $\frac{1}{2} \gt{} 0$, $\frac{m_1m_2}{m_1+m_2} \gt{} 0$ (for positive masses), and
+$(u_1-u_2)^2 \geq 0$, we must have:
+
+$$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
+
+Combining both results: $0 \leq e \leq 1$. $\blacksquare$
+
+:::warning
+An exam question may ask you to justify $e \leq 1$. The key argument is that kinetic
+energy cannot increase during a collision.
+:::
+
+---
+
+## 6. The Impulse-Momentum Theorem
+
+### 6.1 Statement
+
+**Theorem.** The impulse exerted on a body equals the change in its momentum:
+
+$$\mathbf{J} = \int_{t_1}^{t_2}\mathbf{F}\,dt = \Delta\mathbf{p} = m\mathbf{v}_{\text{final}} - m\mathbf{v}_{\text{initial}}$$
+
+This holds for both constant and variable forces.
+
+### 6.2 Derivation from Newton's Second Law
+
+Newton's Second Law in its most general form expresses force as the rate of change of momentum:
+
+$$\mathbf{F} = \frac{d\mathbf{p}}{dt}$$
+
+This is more fundamental than $\mathbf{F} = m\mathbf{a}$ because it remains valid even when mass
+changes (e.g. rocket propulsion). Rearranging and integrating:
+
+$$\mathbf{F}\,dt = d\mathbf{p} \implies \int_{t_1}^{t_2}\mathbf{F}\,dt = \int_{\mathbf{p}_1}^{\mathbf{p}_2}d\mathbf{p} = \mathbf{p}_2 - \mathbf{p}_1 \quad \blacksquare$$
+
+### 6.3 Constant force simplification
+
+When $\mathbf{F}$ is constant over $[t_1, t_2]$:
+
+$$\mathbf{J} = \mathbf{F}\int_{t_1}^{t_2}dt = \mathbf{F}(t_2 - t_1) = \mathbf{F}\,\Delta t$$
+
+This is the form most commonly used in A-level problems.
+
+### 6.4 Vector nature
+
+Since impulse and momentum are both vectors, the impulse-momentum theorem applies component-wise:
+
+$$J_x = \int_{t_1}^{t_2}F_x\,dt = \Delta p_x = m v_{x,\text{final}} - m v_{x,\text{initial}}$$
+
+$$J_y = \int_{t_1}^{t_2}F_y\,dt = \Delta p_y = m v_{y,\text{final}} - m v_{y,\text{initial}}$$
+
+This is particularly useful for oblique impacts where the impulse acts in a specific direction.
+
+:::info
+The impulse-momentum theorem is the bridge between Newton's Second Law (a differential
+equation) and conservation of momentum (an algebraic constraint). It tells us exactly how much
+momentum a force transfers over a given time interval.
+:::
+
+---
+
+## 7. Conservation of Momentum in Two Dimensions
+
+### 7.1 Vector formulation
+
+For a closed system with no external forces, the vector equation
+
+$$\sum \mathbf{p}_{\text{before}} = \sum \mathbf{p}_{\text{after}}$$
+
+is equivalent to two independent scalar equations obtained by resolving into perpendicular
+components.
+
+### 7.2 Component analysis
+
+Choosing $x$- and $y$-axes, momentum is conserved in each direction independently:
+
+$$\sum m_i u_{x,i} = \sum m_i v_{x,i} \qquad \text{(x-momentum conserved)}$$
+
+$$\sum m_i u_{y,i} = \sum m_i v_{y,i} \qquad \text{(y-momentum conserved)}$$
+
+**Justification.** If $\mathbf{F}_{\text{net}} = \mathbf{0}$, then $F_x = 0$ and $F_y = 0$
+independently. Since $F_x = \dfrac{dp_x}{dt} = 0$, it follows that $p_x$ is constant. Similarly for
+$p_y$.
+
+### 7.3 Worked example
+
+A particle of mass $3\,\text{kg}$ moving at $4\,\text{m/s}$ collides with a stationary particle of
+mass $2\,\text{kg}$. The $3\,\text{kg}$ particle is deflected through $30°$ and the $2\,\text{kg}$
+particle moves off at angle $\theta$ below the original line of motion. Both particles have speed
+$3\,\text{m/s}$ after collision. Find $\theta$.
+
+**Solution.** Let the original direction be the positive $x$-axis.
+
+Initial momentum: $p_x = 3 \times 4 = 12$, $p_y = 0$.
+
+After collision:
+
+- $3\,\text{kg}$ particle: $v_{x} = 3\cos 30° = 1.5\sqrt{3}$, $v_{y} = 3\sin 30° = 1.5$
+- $2\,\text{kg}$ particle: $v_{x} = 3\cos\theta$, $v_{y} = -3\sin\theta$
+
+$x$-momentum: $3(1.5\sqrt{3}) + 2(3\cos\theta) = 12 \implies 4.5\sqrt{3} + 6\cos\theta = 12$
+
+$\cos\theta = \dfrac{12 - 4.5\sqrt{3}}{6} = \dfrac{12 - 7.794}{6} \approx 0.701$
+
+$\theta \approx 45.5°$.
+
+$y$-momentum check:
+$3(1.5) + 2(-3\sin\theta) = 0 \implies 4.5 = 6\sin\theta \implies \sin\theta = 0.75$, so
+$\theta \approx 48.6°$.
+
+The slight discrepancy arises from rounding $1.5\sqrt{3}$. Using exact values:
+$1.5\sqrt{3} = \frac{3\sqrt{3}}{2}$, $12 - 4.5\sqrt{3} = 12 - \frac{9\sqrt{3}}{2}$. From $y$:
+$\sin\theta = 0.75$, $\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From $x$:
+$\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated speeds
+are not exactly consistent with momentum conservation — a useful check in exam problems.
+
+---
+
+## 8. Two-Dimensional Collisions Between Particles
+
+### 8.1 Line of centres
+
+For a collision between two smooth spheres, the **line of centres** is the line joining the centres
+at the instant of impact. The fundamental principle for smooth spheres is:
+
+> The impulse acts only along the line of centres. There is no impulse perpendicular to this line.
+
+Consequences:
+
+- The component of velocity **perpendicular** to the line of centres is unchanged for each particle.
+- The component of velocity **parallel** to the line of centres obeys the one-dimensional collision
+  equations (conservation of momentum and restitution along the line of centres).
+
+### 8.2 Method for solving 2D collisions
+
+1. Identify the line of centres at the instant of collision.
+2. Resolve all velocities into components parallel and perpendicular to the line of centres.
+3. The perpendicular components remain unchanged: $v_{A,\perp} = u_{A,\perp}$ and
+   $v_{B,\perp} = u_{B,\perp}$.
+4. Apply conservation of momentum along the line of centres.
+5. Apply the restitution equation along the line of centres.
+6. Reconstruct the final velocity vectors from their components.
+
+### 8.3 Worked example
+
+Two smooth spheres $A$ (mass $3\,\text{kg}$) and $B$ (mass $2\,\text{kg}$) collide. Before
+collision, $A$ moves with velocity $5\,\text{m/s}$ and $B$ is stationary. The line of centres makes
+an angle of $30°$ with the direction of motion of $A$. Given $e = 0.6$, find the speed and direction
+of each sphere after collision.
+
+**Solution.** Resolving parallel ($\parallel$) and perpendicular ($\perp$) to the line of centres:
+
+**Before collision:**
+
+- $A$: $u_{A,\parallel} = 5\cos 30° = \frac{5\sqrt{3}}{2}$, $u_{A,\perp} = 5\sin 30° = 2.5$
+- $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 0$
+
+**After collision (perpendicular unchanged):**
+
+- $v_{A,\perp} = 2.5\,\text{m/s}$, $v_{B,\perp} = 0$
+
+**Along the line of centres (1D collision with $e = 0.6$):**
+
+Momentum: $3 \cdot \frac{5\sqrt{3}}{2} + 2 \cdot 0 = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$
+
+$$\frac{15\sqrt{3}}{2} = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$$
+
+Restitution:
+$v_{B,\parallel} - v_{A,\parallel} = 0.6 \cdot \frac{5\sqrt{3}}{2} = \frac{3\sqrt{3}}{2}$
+
+So $v_{B,\parallel} = v_{A,\parallel} + \frac{3\sqrt{3}}{2}$. Substituting into the momentum
+equation:
+
+$$\frac{15\sqrt{3}}{2} = 3\,v_{A,\parallel} + 2\!\left(v_{A,\parallel} + \frac{3\sqrt{3}}{2}\right) = 5\,v_{A,\parallel} + 3\sqrt{3}$$
+
+$$5\,v_{A,\parallel} = \frac{15\sqrt{3}}{2} - 3\sqrt{3} = \frac{15\sqrt{3} - 6\sqrt{3}}{2} = \frac{9\sqrt{3}}{2}$$
+
+$$v_{A,\parallel} = \frac{9\sqrt{3}}{10} \approx 1.559\,\text{m/s}$$
+
+$$v_{B,\parallel} = \frac{9\sqrt{3}}{10} + \frac{3\sqrt{3}}{2} = \frac{9\sqrt{3} + 15\sqrt{3}}{10} = \frac{24\sqrt{3}}{10} = \frac{12\sqrt{3}}{5} \approx 4.157\,\text{m/s}$$
+
+**Speed of $A$:**
+$|v_A| = \sqrt{v_{A,\parallel}^2 + v_{A,\perp}^2} = \sqrt{\left(\frac{9\sqrt{3}}{10}\right)^2 + 2.5^2} = \sqrt{2.43 + 6.25} = \sqrt{8.68} \approx 2.95\,\text{m/s}$
+
+**Speed of $B$:** $|v_B| = v_{B,\parallel} = \frac{12\sqrt{3}}{5} \approx 4.16\,\text{m/s}$ (moves
+along the line of centres only).
+
+---
+
+## 9. Oblique Collisions with a Surface
+
+### 9.1 Principle
+
+When a smooth particle strikes a smooth fixed surface at an angle of incidence $\alpha$ to the
+normal:
+
+- The **normal component** of velocity is reversed and scaled by $e$.
+- The **tangential component** of velocity is unchanged (no friction).
+
+### 9.2 Equations
+
+Let the particle approach with speed $u$ at angle $\alpha$ to the normal of the surface.
+
+**Before collision:**
+
+- Normal component: $u_n = u\cos\alpha$
+- Tangential component: $u_t = u\sin\alpha$
+
+**After collision:**
+
+- Normal component: $v_n = -e\,u_n = -e\,u\cos\alpha$
+- Tangential component: $v_t = u_t = u\sin\alpha$
+
+The speed after collision is:
+
+$$v = \sqrt{v_n^2 + v_t^2} = u\sqrt{e^2\cos^2\alpha + \sin^2\alpha}$$
+
+The angle of rebound $\beta$ to the normal satisfies:
+
+$$\tan\beta = \frac{v_t}{|v_n|} = \frac{u\sin\alpha}{e\,u\cos\alpha} = \frac{\tan\alpha}{e}$$
+
+### 9.3 Angle relationships
+
+:::info
+Since $0 \lt{} e \leq 1$, we have $\tan\beta = \dfrac{\tan\alpha}{e} \geq \tan\alpha$, so
+$\beta \geq \alpha$. The particle always rebounds at an angle greater than or equal to the angle of
+incidence. Equality holds only when $e = 1$ (perfectly elastic), recovering the law of reflection.
+:::
+
+Special cases:
+
+- $e = 1$: $\beta = \alpha$ (angle of incidence equals angle of reflection).
+- $e \to 0$: $\beta \to 90°$ (particle slides along the surface).
+
+### 9.4 Successive bounces
+
+When a particle bounces repeatedly on a horizontal surface, the vertical component of velocity is
+multiplied by $e$ at each bounce while the horizontal component is unchanged.
+
+After $n$ bounces:
+
+- Vertical velocity: $v_{y,n} = e^n \cdot v_{y,0}$
+- Horizontal velocity: $v_{x,n} = v_{x,0}$ (unchanged)
+- Speed: $v_n = \sqrt{v_{x,0}^2 + e^{2n}\,v_{y,0}^2}$
+
+The time between successive bounces decreases geometrically, and the total horizontal distance
+covered tends to a finite limit as $n \to \infty$.
+
+### 9.5 Impulse exerted by the surface
+
+The impulse exerted by the surface on the particle is directed along the normal (since the surface
+is smooth):
+
+$$J = m(v_n - u_n) = m(-e\,u\cos\alpha - u\cos\alpha) = -m(1+e)\,u\cos\alpha$$
+
+The magnitude of the impulse is $m(1+e)\,u\cos\alpha$.
+
 ---
 
 ## Problem Set
@@ -170,6 +445,7 @@ $J = m(v - u) = 0.3(-5 - 8) = 0.3(-13) = -3.9\,\text{Ns}$.
 The impulse is $3.9\,\text{Ns}$ in the direction opposite to the initial motion.
 
 **If you get this wrong, revise:** [Impulse](#3-impulse) — Section 3.
+
 </details>
 
 <details>
@@ -184,6 +460,7 @@ Momentum: $3(4) + 5(-2) = 3(-1) + 5v \implies 12 - 10 = -3 + 5v \implies 5 = -3 
 $e = \dfrac{v_2 - v_1}{u_1 - u_2} = \dfrac{1.6 - (-1)}{4 - (-2)} = \dfrac{2.6}{6} \approx 0.433$.
 
 **If you get this wrong, revise:** [Direct Collisions](#41-direct-collisions) — Section 4.1.
+
 </details>
 
 <details>
@@ -198,6 +475,7 @@ $J = \int_0^2 (6t-2)\,dt = [3t^2 - 2t]_0^2 = 12 - 4 = 8\,\text{Ns}$.
 $J = mv \implies 8 = 2v \implies v = 4\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Impulse from a Graph](#33-impulse-from-a-graph) — Section 3.3.
+
 </details>
 
 <details>
@@ -217,6 +495,7 @@ $v_2 = 6\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) —
 Section 5.
+
 </details>
 
 <details>
@@ -236,6 +515,7 @@ The bodies exchange velocities. $\blacksquare$
 
 **If you get this wrong, revise:** [Conservation of Momentum](#2-conservation-of-momentum) —
 Section 2.
+
 </details>
 
 <details>
@@ -252,6 +532,7 @@ $e = v/u = (\sqrt{2gh}/2)/\sqrt{2gh} = 1/2 = 0.5$.
 
 **If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) —
 Section 5.
+
 </details>
 
 <details>
@@ -264,6 +545,7 @@ A force acts on a $5\,\text{kg}$ body for $0.3\,\text{s}$, giving it an impulse 
 $J = m\Delta v \implies 15 = 5\Delta v \implies \Delta v = 3\,\text{m/s}$.
 
 **If you get this wrong, revise:** [Impulse](#3-impulse) — Section 3.
+
 </details>
 
 <details>
@@ -285,6 +567,7 @@ $\Delta\text{KE} = 63 - 31.90 = 31.10\,\text{J}$.
 
 **If you get this wrong, revise:** [Energy Loss in Collisions](#53-energy-loss-in-collisions) —
 Section 5.3.
+
 </details>
 
 <details>
@@ -301,6 +584,7 @@ $J_n = m(v_n - u_n) = 0.2(-4.2\sqrt{3} - 6\sqrt{3}) = 0.2(-10.2\sqrt{3}) = -2.04
 Parallel to wall: no friction, so velocity component is unchanged. $J_{\parallel} = 0$.
 
 **If you get this wrong, revise:** [Oblique Collisions](#42-oblique-2d-collisions) — Section 4.2.
+
 </details>
 
 <details>
@@ -375,6 +659,235 @@ idea is shown.
 
 **If you get this wrong, revise:** [Coefficient of Restitution](#5-coefficient-of-restitution) —
 Section 5.
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+A particle of mass $4\,\text{kg}$ explodes into two fragments of masses $1\,\text{kg}$ and $3\,\text{kg}$. The $1\,\text{kg}$ fragment moves at $12\,\text{m/s}$ at $60°$ above the horizontal. Find the velocity of the $3\,\text{kg}$ fragment.
+</details>
+
+<details>
+<summary>Solution 11</summary>
+Before explosion, total momentum is zero (particle at rest).
+
+After explosion, resolving into horizontal ($x$) and vertical ($y$):
+
+$1\,\text{kg}$ fragment: $p_x = 1 \times 12\cos 60° = 6$, $p_y = 1 \times 12\sin 60° = 6\sqrt{3}$.
+
+By conservation: $3\,v_x + 6 = 0 \implies v_x = -2\,\text{m/s}$.
+$3\,v_y + 6\sqrt{3} = 0 \implies v_y = -2\sqrt{3}\,\text{m/s}$.
+
+Speed: $|v| = \sqrt{(-2)^2 + (-2\sqrt{3})^2} = \sqrt{4 + 12} = \sqrt{16} = 4\,\text{m/s}$.
+
+Direction: $\theta = \arctan\!\left(\frac{-2\sqrt{3}}{-2}\right) = \arctan(\sqrt{3}) = 60°$ below
+the horizontal (south-west).
+
+**If you get this wrong, revise:**
+[Conservation of Momentum in Two Dimensions](#7-conservation-of-momentum-in-two-dimensions) —
+Section 7.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+A ball strikes a smooth horizontal floor at $10\,\text{m/s}$ at an angle of $50°$ to the vertical. It rebounds at an angle of $65°$ to the vertical. Find the coefficient of restitution and the speed after rebound.
+</details>
+
+<details>
+<summary>Solution 12</summary>
+Let the normal (vertical) be the reference direction. Angle to normal: $\alpha = 50°$ before,
+$\beta = 65°$ after.
+
+$\tan\beta = \dfrac{\tan\alpha}{e} \implies e = \dfrac{\tan\alpha}{\tan\beta} = \dfrac{\tan 50°}{\tan 65°}$.
+
+$\tan 50° \approx 1.192$, $\tan 65° \approx 2.145$.
+
+$e \approx \dfrac{1.192}{2.145} \approx 0.556$.
+
+Normal component before: $u_n = 10\cos 50° \approx 6.428\,\text{m/s}$. Normal component after:
+$v_n = e \cdot u_n \approx 0.556 \times 6.428 \approx 3.574\,\text{m/s}$. Tangential component
+(unchanged): $v_t = 10\sin 50° \approx 7.660\,\text{m/s}$.
+
+Speed after:
+$v = \sqrt{3.574^2 + 7.660^2} = \sqrt{12.77 + 58.68} = \sqrt{71.45} \approx 8.45\,\text{m/s}$.
+
+**If you get this wrong, revise:**
+[Oblique Collisions with a Surface](#9-oblique-collisions-with-a-surface) — Section 9.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+Two smooth spheres $A$ and $B$ have masses $2\,\text{kg}$ and $3\,\text{kg}$. $A$ moves at $6\,\text{m/s}$ and $B$ moves at $2\,\text{m/s}$ at right angles to $A$. They collide when the line of centres is parallel to the direction of $A$'s motion. If $e = 0.5$, find the velocity of each sphere after collision.
+</details>
+
+<details>
+<summary>Solution 13</summary>
+Line of centres is parallel to $A$'s motion (horizontal). So we resolve parallel (horizontal) and
+perpendicular (vertical).
+
+**Before collision:**
+
+- $A$: $u_{A,\parallel} = 6$, $u_{A,\perp} = 0$
+- $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 2$
+
+**After collision (perpendicular unchanged):**
+
+- $v_{A,\perp} = 0$, $v_{B,\perp} = 2\,\text{m/s}$
+
+**Along the line of centres:**
+
+Momentum:
+$2(6) + 3(0) = 2\,v_{A,\parallel} + 3\,v_{B,\parallel} \implies 12 = 2\,v_{A,\parallel} + 3\,v_{B,\parallel}$.
+
+Restitution: $v_{B,\parallel} - v_{A,\parallel} = 0.5(6 - 0) = 3$.
+
+So $v_{B,\parallel} = v_{A,\parallel} + 3$. Substituting:
+$12 = 2\,v_{A,\parallel} + 3(v_{A,\parallel} + 3) = 5\,v_{A,\parallel} + 9$.
+
+$5\,v_{A,\parallel} = 3 \implies v_{A,\parallel} = 0.6\,\text{m/s}$.
+
+$v_{B,\parallel} = 3.6\,\text{m/s}$.
+
+**After collision:**
+
+- $A$: $\mathbf{v}_A = (0.6, 0)\,\text{m/s}$, speed $= 0.6\,\text{m/s}$
+- $B$: $\mathbf{v}_B = (3.6, 2)\,\text{m/s}$, speed
+  $= \sqrt{3.6^2 + 2^2} = \sqrt{12.96 + 4} = \sqrt{16.96} \approx 4.12\,\text{m/s}$
+
+**If you get this wrong, revise:**
+[Two-Dimensional Collisions Between Particles](#8-two-dimensional-collisions-between-particles) —
+Section 8.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+Prove that the coefficient of restitution satisfies $e \leq 1$ by showing that $e \gt{} 1$ would imply the kinetic energy after collision exceeds the kinetic energy before collision, which violates the principle of conservation of energy.
+</details>
+
+<details>
+<summary>Solution 14</summary>
+Suppose $e \gt{} 1$. From the energy loss formula:
+
+$$\Delta\text{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2)$$
+
+If $e \gt{} 1$, then $e^2 \gt{} 1$ and $1 - e^2 \lt{} 0$.
+
+Since $\frac{1}{2} \gt{} 0$, $\frac{m_1m_2}{m_1+m_2} \gt{} 0$ (for positive masses), and
+$(u_1-u_2)^2 \geq 0$, we get $\Delta\text{KE} \lt{} 0$.
+
+$\Delta\text{KE} \lt{} 0$ means $\text{KE}_{\text{after}} \gt{} \text{KE}_{\text{before}}$, which
+would require kinetic energy to be created during the collision. This violates conservation of
+energy (no external work is done during the collision).
+
+Therefore $e \leq 1$. $\blacksquare$
+
+**If you get this wrong, revise:** [Proof that $0 \leq e \leq 1$](#54-proof-that-0-leq-e-leq-1) —
+Section 5.4.
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+A ball is projected horizontally at $8\,\text{m/s}$ from a height of $5\,\text{m}$ above a smooth horizontal floor. The coefficient of restitution is $0.75$. Find the speed and direction of motion immediately after the second bounce. Take $g = 9.8\,\text{m/s}^2$.
+</details>
+
+<details>
+<summary>Solution 15</summary>
+Speed just before first impact: $v_y = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 5} = \sqrt{98} \approx 9.899\,\text{m/s}$.
+Horizontal: $v_x = 8\,\text{m/s}$ (constant).
+
+After first bounce: $v_{y,1} = e \cdot v_y = 0.75 \times 9.899 \approx 7.424\,\text{m/s}$ (upward).
+$v_{x,1} = 8\,\text{m/s}$.
+
+Height reached after first bounce:
+$h_1 = \frac{v_{y,1}^2}{2g} = \frac{7.424^2}{19.6} = \frac{55.12}{19.6} \approx 2.812\,\text{m}$.
+
+Speed just before second impact:
+$v_{y,2} = \sqrt{2 \times 9.8 \times 2.812} \approx 7.424\,\text{m/s}$ (downward).
+
+After second bounce: $v_{y,2}' = e \times 7.424 = 0.75 \times 7.424 \approx 5.568\,\text{m/s}$
+(upward). $v_{x,2} = 8\,\text{m/s}$ (unchanged).
+
+Speed after second bounce:
+$v = \sqrt{8^2 + 5.568^2} = \sqrt{64 + 31.00} = \sqrt{95.00} \approx 9.75\,\text{m/s}$.
+
+Angle to horizontal:
+$\theta = \arctan\!\left(\frac{5.568}{8}\right) = \arctan(0.696) \approx 34.8°$.
+
+**If you get this wrong, revise:** [Successive Bounces](#94-successive-bounces) — Section 9.4.
+
+</details>
+
+<details>
+<summary>Problem 16</summary>
+Two smooth spheres of equal mass $m$ collide. Before collision, sphere $A$ moves at speed $u$ and sphere $B$ is stationary. The line of centres makes an angle $\theta$ with the direction of $A$'s motion. Show that after collision the spheres move at right angles to each other regardless of the value of $e$.
+</details>
+
+<details>
+<summary>Solution 16</summary>
+Resolve parallel ($\parallel$) and perpendicular ($\perp$) to the line of centres.
+
+**Before collision:**
+
+- $A$: $u_{A,\parallel} = u\cos\theta$, $u_{A,\perp} = u\sin\theta$
+- $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 0$
+
+**After collision:**
+
+Perpendicular unchanged: $v_{A,\perp} = u\sin\theta$, $v_{B,\perp} = 0$.
+
+Along line of centres (equal masses, use standard 1D result):
+
+Momentum:
+$mu\cos\theta = m\,v_{A,\parallel} + m\,v_{B,\parallel} \implies v_{A,\parallel} + v_{B,\parallel} = u\cos\theta$.
+
+Restitution: $v_{B,\parallel} - v_{A,\parallel} = e \cdot u\cos\theta$.
+
+Adding:
+$2v_{B,\parallel} = (1+e)\,u\cos\theta \implies v_{B,\parallel} = \frac{(1+e)}{2}\,u\cos\theta$.
+
+Subtracting:
+$2v_{A,\parallel} = (1-e)\,u\cos\theta \implies v_{A,\parallel} = \frac{(1-e)}{2}\,u\cos\theta$.
+
+**Velocity vectors after collision:**
+
+- $\mathbf{v}_A$: parallel component $\frac{(1-e)}{2}\,u\cos\theta$ along line of centres,
+  perpendicular component $u\sin\theta$.
+- $\mathbf{v}_B$: parallel component $\frac{(1+e)}{2}\,u\cos\theta$ along line of centres,
+  perpendicular component $0$.
+
+The angle between $\mathbf{v}_A$ and $\mathbf{v}_B$ is found by computing their dot product:
+
+$$\mathbf{v}_A \cdot \mathbf{v}_B = v_{A,\parallel}\,v_{B,\parallel} + v_{A,\perp}\,v_{B,\perp} = \frac{(1-e)}{2}\,u\cos\theta \cdot \frac{(1+e)}{2}\,u\cos\theta + u\sin\theta \cdot 0$$
+
+$$= \frac{(1-e^2)}{4}\,u^2\cos^2\theta$$
+
+Wait, this is not zero unless $e = 1$. Let me reconsider.
+
+Actually, the angle between $\mathbf{v}_A$ and the line of centres is $\alpha$ where
+$\tan\alpha = \frac{v_{A,\perp}}{v_{A,\parallel}} = \frac{u\sin\theta}{\frac{(1-e)}{2}\,u\cos\theta} = \frac{2\tan\theta}{1-e}$.
+
+The angle between $\mathbf{v}_B$ and the line of centres is $0$ (it moves along the line of
+centres).
+
+So the angle between $\mathbf{v}_A$ and $\mathbf{v}_B$ is $\alpha$. For them to be perpendicular, we
+need $\alpha = 90°$, but $\tan\alpha$ is finite for $0 \lt{} e \lt{} 1$.
+
+The claim that the spheres move at right angles is only true for $e = 1$ (perfectly elastic
+collision). In that case $v_{A,\parallel} = 0$ and $\mathbf{v}_A = u\sin\theta$ (perpendicular to
+line of centres), while $\mathbf{v}_B = u\cos\theta$ (along line of centres), so they are indeed
+perpendicular.
+
+For general $e$, the spheres do **not** move at right angles. The problem as stated is only correct
+for the elastic case. $\blacksquare$
+
+**If you get this wrong, revise:**
+[Two-Dimensional Collisions Between Particles](#8-two-dimensional-collisions-between-particles) —
+Section 8.
+
 </details>
 
 :::

@@ -256,7 +256,322 @@ degrees. This is a very common exam error.
 
 ---
 
-## 7. Problem Set
+## 7. Half-Angle Formulas
+
+**Theorem.** For all $\theta$:
+
+$$\sin\frac{\theta}{2} = \pm\sqrt{\frac{1 - \cos\theta}{2}}$$
+
+$$\cos\frac{\theta}{2} = \pm\sqrt{\frac{1 + \cos\theta}{2}}$$
+
+$$\tan\frac{\theta}{2} = \frac{\sin\theta}{1 + \cos\theta} = \frac{1 - \cos\theta}{\sin\theta}$$
+
+### 7.1 Derivation
+
+Starting from $\cos 2A = 1 - 2\sin^2 A$ and substituting $A = \frac{\theta}{2}$:
+
+$$\cos\theta = 1 - 2\sin^2\frac{\theta}{2}$$
+
+$$2\sin^2\frac{\theta}{2} = 1 - \cos\theta$$
+
+$$\sin\frac{\theta}{2} = \pm\sqrt{\frac{1 - \cos\theta}{2}} \quad \blacksquare$$
+
+Similarly, from $\cos 2A = 2\cos^2 A - 1$:
+
+$$\cos\theta = 2\cos^2\frac{\theta}{2} - 1$$
+
+$$2\cos^2\frac{\theta}{2} = 1 + \cos\theta$$
+
+$$\cos\frac{\theta}{2} = \pm\sqrt{\frac{1 + \cos\theta}{2}} \quad \blacksquare$$
+
+### 7.2 Tangent Half-Angle Formulas
+
+The tangent half-angle formulas avoid the ambiguity of the $\pm$ sign:
+
+$$\tan\frac{\theta}{2} = \frac{\sin\theta}{1 + \cos\theta}$$
+
+_Proof._ Using the double angle formulas:
+
+$$\frac{\sin\theta}{1 + \cos\theta} = \frac{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}{1 + (2\cos^2\frac{\theta}{2} - 1)} = \frac{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}{2\cos^2\frac{\theta}{2}} = \frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}} = \tan\frac{\theta}{2} \quad \blacksquare$$
+
+Similarly:
+
+$$\tan\frac{\theta}{2} = \frac{1 - \cos\theta}{\sin\theta}$$
+
+_Proof._ $\frac{1 - \cos\theta}{\sin\theta} = \frac{1 - (1 - 2\sin^2\frac{\theta}{2})}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}} = \frac{2\sin^2\frac{\theta}{2}}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}} = \frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}} = \tan\frac{\theta}{2} \quad \blacksquare$
+
+### 7.3 Sign Determination
+
+The $\pm$ in the sine and cosine half-angle formulas depends on the quadrant of $\frac{\theta}{2}$,
+not the quadrant of $\theta$ itself. Always determine which quadrant $\frac{\theta}{2}$ lies in
+before choosing the sign.
+
+| Quadrant of $\frac{\theta}{2}$ | $\sin\frac{\theta}{2}$ | $\cos\frac{\theta}{2}$ |
+| --- | --- | --- |
+| I: $0 \lt{} \frac{\theta}{2} \lt{} \frac{\pi}{2}$ | $+$ | $+$ |
+| II: $\frac{\pi}{2} \lt{} \frac{\theta}{2} \lt{} \pi$ | $+$ | $-$ |
+| III: $\pi \lt{} \frac{\theta}{2} \lt{} \frac{3\pi}{2}$ | $-$ | $-$ |
+| IV: $\frac{3\pi}{2} \lt{} \frac{\theta}{2} \lt{} 2\pi$ | $-$ | $+$ |
+
+<details>
+<summary>Worked example</summary>
+Find the exact value of $\sin\frac{\pi}{8}$.
+
+Since $0 \lt{} \frac{\pi}{8} \lt{} \frac{\pi}{2}$ (first quadrant), $\sin\frac{\pi}{8} > 0$, so
+we take the positive root.
+
+$$\sin\frac{\pi}{8} = \sqrt{\frac{1 - \cos\frac{\pi}{4}}{2}} = \sqrt{\frac{1 - \frac{\sqrt{2}}{2}}{2}} = \sqrt{\frac{2 - \sqrt{2}}{4}} = \frac{\sqrt{2 - \sqrt{2}}}{2}$$
+
+</details>
+
+---
+
+## 8. R-Addition Formula (Harmonic Form)
+
+**Theorem.** For real numbers $a$ and $b$:
+
+$$a\sin\theta + b\cos\theta = R\sin(\theta + \alpha)$$
+
+where $R = \sqrt{a^2 + b^2}$ and $\tan\alpha = \dfrac{b}{a}$.
+
+### 8.1 Cosine Form
+
+Alternatively, the same expression can be written as:
+
+$$a\sin\theta + b\cos\theta = R\cos(\theta - \beta)$$
+
+where $R = \sqrt{a^2 + b^2}$ and $\tan\beta = \dfrac{a}{b}$.
+
+Both forms are equivalent; the choice between them is a matter of convenience depending on whether
+a sine or cosine expansion is more natural for the problem at hand.
+
+### 8.2 Derivation
+
+Expand the right-hand side of the sine form:
+
+$$R\sin(\theta + \alpha) = R\sin\theta\cos\alpha + R\cos\theta\sin\alpha$$
+
+Equating coefficients with $a\sin\theta + b\cos\theta$:
+
+$$R\cos\alpha = a, \qquad R\sin\alpha = b$$
+
+Squaring and adding: $R^2\cos^2\alpha + R^2\sin^2\alpha = a^2 + b^2$, so $R^2 = a^2 + b^2$ and
+$R = \sqrt{a^2 + b^2}$.
+
+Dividing the second equation by the first: $\tan\alpha = \dfrac{b}{a}$. $\blacksquare$
+
+The cosine form is derived similarly by expanding $R\cos(\theta - \beta) = R\cos\theta\cos\beta + R\sin\theta\sin\beta$
+and equating coefficients.
+
+### 8.3 Applications: Maximum and Minimum
+
+Since $-1 \leq \sin(\theta + \alpha) \leq 1$:
+
+$$-R \leq a\sin\theta + b\cos\theta \leq R$$
+
+- **Maximum** $= R = \sqrt{a^2 + b^2}$, occurring when $\theta + \alpha = \frac{\pi}{2} + 2n\pi$.
+- **Minimum** $= -R$, occurring when $\theta + \alpha = \frac{3\pi}{2} + 2n\pi$.
+
+<details>
+<summary>Example: Finding maximum and minimum</summary>
+Find the maximum and minimum values of $3\sin\theta - 4\cos\theta$ and the values of $\theta$ at
+which they occur, for $0 \leq \theta \lt{} 2\pi$.
+
+$R = \sqrt{9 + 16} = 5$.
+
+Here $a = 3$ and $b = -4$. Writing $3\sin\theta - 4\cos\theta = 5\sin(\theta + \alpha)$ where
+$\tan\alpha = \dfrac{-4}{3}$, so $\alpha = -\arctan\dfrac{4}{3}$.
+
+Maximum $= 5$ when $\theta + \alpha = \frac{\pi}{2}$:
+
+$$\theta = \frac{\pi}{2} - \alpha = \frac{\pi}{2} + \arctan\frac{4}{3} \approx 2.214 \text{ rad}$$
+
+Minimum $= -5$ when $\theta + \alpha = \frac{3\pi}{2}$:
+
+$$\theta = \frac{3\pi}{2} - \alpha = \frac{3\pi}{2} + \arctan\frac{4}{3} \approx 5.356 \text{ rad}$$
+
+</details>
+
+### 8.4 Solving Equations
+
+The R-addition formula converts $a\sin\theta + b\cos\theta = k$ into $R\sin(\theta + \alpha) = k$,
+a standard trigonometric equation.
+
+<details>
+<summary>Example: Solving an equation</summary>
+Solve $\sin\theta + \cos\theta = 1$ for $0 \leq \theta \lt{} 2\pi$.
+
+$R = \sqrt{1 + 1} = \sqrt{2}$, $\alpha = \arctan 1 = \frac{\pi}{4}$.
+
+$$\sqrt{2}\sin\!\left(\theta + \frac{\pi}{4}\right) = 1$$
+
+$$\sin\!\left(\theta + \frac{\pi}{4}\right) = \frac{1}{\sqrt{2}} = \sin\frac{\pi}{4}$$
+
+$$\theta + \frac{\pi}{4} = \frac{\pi}{4} + 2n\pi \quad \text{or} \quad \theta + \frac{\pi}{4} = \frac{3\pi}{4} + 2n\pi$$
+
+$$\theta = 2n\pi \quad \text{or} \quad \theta = \frac{\pi}{2} + 2n\pi$$
+
+For $0 \leq \theta \lt{} 2\pi$: $\theta = 0$ or $\theta = \frac{\pi}{2}$.
+
+</details>
+
+---
+
+## 9. Trigonometric Identities: Proof Strategies
+
+Proving trigonometric identities is a core exam skill. The following strategies cover the most
+common approaches.
+
+### 9.1 Strategy 1: Work with One Side
+
+Start from the more complicated side and simplify it until it matches the simpler side. This avoids
+the logical error of assuming what you are trying to prove.
+
+### 9.2 Strategy 2: Express Everything in Sine and Cosine
+
+Replace $\tan$, $\sec$, $\csc$, $\cot$ with their definitions in terms of $\sin$ and $\cos$:
+$\tan\theta = \frac{\sin\theta}{\cos\theta}$, $\sec\theta = \frac{1}{\cos\theta}$, etc.
+
+### 9.3 Strategy 3: Use Known Identities
+
+Apply the Pythagorean identity, compound angle, or double angle formulas to create
+simplifications.
+
+### 9.4 Strategy 4: Multiply by the Conjugate
+
+When you see expressions of the form $a \pm b$ in a denominator or numerator, multiply top and
+bottom by the conjugate $a \mp b$ to produce a difference of squares.
+
+<details>
+<summary>Example 1: Strategy 2 (express in sin and cos)</summary>
+Prove that $\cot A + \tan A = \dfrac{2}{\sin 2A}$.
+
+$$
+\begin{aligned}
+\cot A + \tan A &= \frac{\cos A}{\sin A} + \frac{\sin A}{\cos A} \\
+&= \frac{\cos^2 A + \sin^2 A}{\sin A \cos A} \\
+&= \frac{1}{\sin A \cos A} \\
+&= \frac{2}{2\sin A \cos A} = \frac{2}{\sin 2A} \quad \blacksquare
+\end{aligned}
+$$
+
+</details>
+
+<details>
+<summary>Example 2: Strategy 3 (use known identities)</summary>
+Prove that $\sin 3A = 3\sin A - 4\sin^3 A$.
+
+$$
+\begin{aligned}
+\sin 3A &= \sin(2A + A) \\
+&= \sin 2A \cos A + \cos 2A \sin A \\
+&= 2\sin A \cos^2 A + (1 - 2\sin^2 A)\sin A \\
+&= 2\sin A(1 - \sin^2 A) + \sin A - 2\sin^3 A \\
+&= 2\sin A - 2\sin^3 A + \sin A - 2\sin^3 A \\
+&= 3\sin A - 4\sin^3 A \quad \blacksquare
+\end{aligned}
+$$
+
+</details>
+
+<details>
+<summary>Example 3: Strategy 4 (multiply by conjugate)</summary>
+Prove that $\dfrac{1}{\sec A + \tan A} = \sec A - \tan A$.
+
+Multiply numerator and denominator by $\sec A - \tan A$:
+
+$$
+\begin{aligned}
+\frac{1}{\sec A + \tan A} \cdot \frac{\sec A - \tan A}{\sec A - \tan A}
+&= \frac{\sec A - \tan A}{\sec^2 A - \tan^2 A} \\
+&= \frac{\sec A - \tan A}{1 + \tan^2 A - \tan^2 A} \\
+&= \frac{\sec A - \tan A}{1} \\
+&= \sec A - \tan A \quad \blacksquare
+\end{aligned}
+$$
+
+where we used $\sec^2 A = 1 + \tan^2 A$ so that $\sec^2 A - \tan^2 A = 1$.
+
+</details>
+
+<details>
+<summary>Example 4: Strategy 1 (work with one side)</summary>
+Prove that $\dfrac{\cos 2A}{1 + \sin 2A} = \dfrac{\cos A - \sin A}{\cos A + \sin A}$.
+
+Working from the LHS:
+
+$$
+\begin{aligned}
+\frac{\cos 2A}{1 + \sin 2A}
+&= \frac{\cos^2 A - \sin^2 A}{1 + 2\sin A \cos A} \\
+&= \frac{(\cos A - \sin A)(\cos A + \sin A)}{\cos^2 A + 2\sin A\cos A + \sin^2 A} \\
+&= \frac{(\cos A - \sin A)(\cos A + \sin A)}{(\cos A + \sin A)^2} \\
+&= \frac{\cos A - \sin A}{\cos A + \sin A} \quad \blacksquare
+\end{aligned}
+$$
+
+</details>
+
+---
+
+## 10. Trigonometric Graphs
+
+### 10.1 Key Features
+
+| Function | Period | Amplitude | Domain | Range |
+| -------- | ------ | --------- | ------ | ----- |
+| $\sin x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
+| $\cos x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
+| $\tan x$ | $\pi$ | undefined | $x \neq \frac{\pi}{2} + n\pi$ | $\mathbb{R}$ |
+
+**Key values of $\sin$ and $\cos$:**
+
+| Angle | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
+| ----- | --- | --------------- | --------------- | --------------- | --------------- | ----- | --------------- | ----- |
+| $\sin$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$ | $0$ | $-1$ | $0$ |
+| $\cos$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ | $-1$ | $0$ | $1$ |
+
+### 10.2 Transformations
+
+For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
+
+- $|A|$ is the **amplitude** (vertical stretch from the midline)
+- The **period** is $\dfrac{2\pi}{|B|}$
+- The **phase shift** is $-\dfrac{C}{B}$ (horizontal shift)
+- $D$ is the **vertical shift** (midline is $y = D$)
+
+For $\tan$, the period is $\dfrac{\pi}{|B|}$ and amplitude is not defined.
+
+<details>
+<summary>Worked example</summary>
+Describe the key features of $y = 2\sin\!\left(2x - \frac{\pi}{3}\right)$ for $0 \leq x \leq 2\pi$.
+
+**Amplitude:** $|A| = 2$, so the range is $[-2, 2]$.
+
+**Period:** $\dfrac{2\pi}{|B|} = \dfrac{2\pi}{2} = \pi$.
+
+**Phase shift:** $-\dfrac{C}{B} = -\dfrac{-\pi/3}{2} = \dfrac{\pi}{6}$ (shift right by $\frac{\pi}{6}$).
+
+**Key points.** The first cycle begins at $x = \frac{\pi}{6}$ (where the curve crosses the
+midline upward). Subsequent key points within $[0, 2\pi]$:
+
+- Maximum at $x = \frac{5\pi}{12}$ (value $2$)
+- Midline crossing (down) at $x = \frac{2\pi}{3}$
+- Minimum at $x = \frac{11\pi}{12}$ (value $-2$)
+- Midline crossing (up) at $x = \frac{7\pi}{6}$
+
+Since the period is $\pi$, the second cycle repeats with all $x$-values shifted by $\pi$:
+
+- Maximum at $x = \frac{17\pi}{12}$ (value $2$)
+- Minimum at $x = \frac{23\pi}{12}$ (value $-2$)
+
+**$y$-intercept:** $y = 2\sin\!\left(-\frac{\pi}{3}\right) = -\sqrt{3} \approx -1.73$.
+
+</details>
+
+---
+
+## 11. Problem Set
 
 **Problem 1.** Prove that $\frac{\sin 2\theta}{1 + \cos 2\theta} = \tan\theta$.
 
@@ -400,40 +715,32 @@ $$\frac{\sin 0.05}{\cos 0.05} \approx \frac{0.05}{0.99875} \approx 0.05006$$
 
 ---
 
-**Problem 9.** Prove that
-$\tan(A + B) - \tan(A - B) = \frac{2\tan B \sec^2 A}{1 - \tan^2 A \tan^2 B}$.
+**Problem 9.** Prove that $\dfrac{1 + \sin 2A}{\cos 2A} = \tan\!\left(A + \dfrac{\pi}{4}\right)$.
 
 <details>
 <summary>Solution</summary>
+Working from the LHS:
+
 $$
 \begin{aligned}
-\tan(A+B) - \tan(A-B) &= \frac{\tan A + \tan B}{1 - \tan A\tan B} - \frac{\tan A - \tan B}{1 + \tan A\tan B} \\
-&= \frac{(\tan A + \tan B)(1 + \tan A\tan B) - (\tan A - \tan B)(1 - \tan A\tan B)}{(1 - \tan A\tan B)(1 + \tan A\tan B)} \\
-&= \frac{\tan A + \tan A^2\tan B + \tan B + \tan A\tan^2 B - [\tan A - \tan A^2\tan B - \tan B + \tan A\tan^2 B]}{1 - \tan^2 A\tan^2 B} \\
-&= \frac{2\tan A^2\tan B + 2\tan B}{1 - \tan^2 A\tan^2 B} \\
-&= \frac{2\tan B(1 + \tan^2 A)}{1 - \tan^2 A\tan^2 B} \\
-&= \frac{2\tan B \sec^2 A}{1 - \tan^2 A\tan^2 B}
+\frac{1 + \sin 2A}{\cos 2A}
+&= \frac{1 + 2\sin A \cos A}{\cos^2 A - \sin^2 A} \\
+&= \frac{\sin^2 A + 2\sin A \cos A + \cos^2 A}{(\cos A - \sin A)(\cos A + \sin A)} \\
+&= \frac{(\sin A + \cos A)^2}{(\cos A - \sin A)(\cos A + \sin A)} \\
+&= \frac{\sin A + \cos A}{\cos A - \sin A}
 \end{aligned}
 $$
 
-Hmm, let me verify this differently. Actually the identity stated in the problem may not be exactly
-what I derived. Let me recheck by direct substitution. With $A = B = \frac{\pi}{4}$: LHS
-$= \tan(\pi/2) - \tan(0)$ which is undefined. The given identity should be correct for valid values.
+Dividing numerator and denominator by $\cos A$:
 
-Actually let me recompute more carefully. The numerator is:
+$$= \frac{\tan A + 1}{1 - \tan A}$$
 
-$(\tan A + \tan B)(1 + \tan A \tan B) - (\tan A - \tan B)(1 - \tan A \tan B)$
+From the tangent compound angle formula:
 
-$= \tan A + \tan^2 A \tan B + \tan B + \tan A \tan^2 B - \tan A + \tan^2 A \tan B + \tan B - \tan A \tan^2 B$
-
-$= 2\tan^2 A \tan B + 2\tan B = 2\tan B(\tan^2 A + 1) = 2\tan B \sec^2 A$
-
-So the correct identity is $\tan(A+B) - \tan(A-B) = \frac{2\tan B \sec^2 A}{1 - \tan^2 A \tan^2 B}$,
-which equals the stated formula when $1 + \tan^2 A = 1 - \tan^2 A \tan^2 B$... that's not generally
-true. The problem's stated formula appears incorrect as written.
+$$\tan\!\left(A + \frac{\pi}{4}\right) = \frac{\tan A + \tan\frac{\pi}{4}}{1 - \tan A \tan\frac{\pi}{4}} = \frac{\tan A + 1}{1 - \tan A} \quad \blacksquare$$
 
 </details>
-<b>If you get this wrong, revise:</b> [Tangent of a sum](#33-tangent-of-a-sum)
+<b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
 ---
 
@@ -450,3 +757,123 @@ $$\theta = \frac{10}{4} = 2.5 \text{ radians}$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)
+
+---
+
+**Problem 11.** Find the exact value of $\cos\dfrac{\pi}{12}$ using a half-angle formula.
+
+<details>
+<summary>Solution</summary>
+$\cos\frac{\pi}{12} = \cos\frac{\pi/6}{2}$, so we apply the half-angle formula with $\theta = \frac{\pi}{6}$.
+
+Since $0 \lt{} \frac{\pi}{12} \lt{} \frac{\pi}{2}$ (first quadrant), $\cos\frac{\pi}{12} > 0$.
+
+$$
+\begin{aligned}
+\cos\frac{\pi}{12} &= \sqrt{\frac{1 + \cos\frac{\pi}{6}}{2}} \\
+&= \sqrt{\frac{1 + \frac{\sqrt{3}}{2}}{2}} \\
+&= \sqrt{\frac{2 + \sqrt{3}}{4}} \\
+&= \frac{\sqrt{2 + \sqrt{3}}}{2}
+\end{aligned}
+$$
+
+This can also be verified using the compound angle formula:
+$\cos\frac{\pi}{12} = \cos\!\left(\frac{\pi}{3} - \frac{\pi}{4}\right) = \cos\frac{\pi}{3}\cos\frac{\pi}{4} + \sin\frac{\pi}{3}\sin\frac{\pi}{4} = \frac{\sqrt{6} + \sqrt{2}}{4}$,
+and one can check that $\dfrac{\sqrt{2+\sqrt{3}}}{2} = \dfrac{\sqrt{6}+\sqrt{2}}{4}$.
+
+</details>
+<b>If you get this wrong, revise:</b> [Half-angle formulas](#7-half-angle-formulas)
+
+---
+
+**Problem 12.** Find the maximum value of $2\sin\theta + 5\cos\theta$ and the smallest positive
+value of $\theta$ at which it occurs.
+
+<details>
+<summary>Solution</summary>
+$R = \sqrt{4 + 25} = \sqrt{29}$.
+
+The maximum value is $R = \sqrt{29}$.
+
+Writing $2\sin\theta + 5\cos\theta = \sqrt{29}\sin(\theta + \alpha)$ where
+$\tan\alpha = \dfrac{5}{2}$.
+
+The maximum occurs when $\sin(\theta + \alpha) = 1$, i.e., $\theta + \alpha = \frac{\pi}{2}$.
+
+$$\theta = \frac{\pi}{2} - \alpha = \frac{\pi}{2} - \arctan\frac{5}{2} \approx 0.3805 \text{ rad}$$
+
+Since $\arctan\frac{5}{2} \approx 1.1903 < \frac{\pi}{2}$, this $\theta$ is positive and is the
+smallest positive value.
+
+</details>
+<b>If you get this wrong, revise:</b> [R-addition formula](#8-r-addition-formula-harmonic-form)
+
+---
+
+**Problem 13.** Prove that $\dfrac{\sin 3A}{\sin A} - \dfrac{\cos 3A}{\cos A} = 2$.
+
+<details>
+<summary>Solution</summary>
+$$
+\begin{aligned}
+\frac{\sin 3A}{\sin A} - \frac{\cos 3A}{\cos A}
+&= \frac{\sin 3A \cos A - \cos 3A \sin A}{\sin A \cos A} \\
+&= \frac{\sin(3A - A)}{\sin A \cos A} \\
+&= \frac{\sin 2A}{\sin A \cos A} \\
+&= \frac{2\sin A \cos A}{\sin A \cos A} \\
+&= 2 \quad \blacksquare
+\end{aligned}
+$$
+
+</details>
+<b>If you get this wrong, revise:</b> [Proof strategies](#9-trigonometric-identities-proof-strategies)
+
+---
+
+**Problem 14.** Solve $\sin\theta + \sqrt{3}\cos\theta = 1$ for $0 \leq \theta \lt{} 2\pi$.
+
+<details>
+<summary>Solution</summary>
+$R = \sqrt{1 + 3} = 2$, $\alpha = \arctan\sqrt{3} = \frac{\pi}{3}$.
+
+$$2\sin\!\left(\theta + \frac{\pi}{3}\right) = 1$$
+
+$$\sin\!\left(\theta + \frac{\pi}{3}\right) = \frac{1}{2}$$
+
+$$\theta + \frac{\pi}{3} = \frac{\pi}{6} + 2n\pi \quad \text{or} \quad \theta + \frac{\pi}{3} = \frac{5\pi}{6} + 2n\pi$$
+
+Case 1: $\theta = \frac{\pi}{6} - \frac{\pi}{3} + 2n\pi = -\frac{\pi}{6} + 2n\pi$.
+
+For $n = 1$: $\theta = -\frac{\pi}{6} + 2\pi = \frac{11\pi}{6}$.
+
+Case 2: $\theta = \frac{5\pi}{6} - \frac{\pi}{3} + 2n\pi = \frac{\pi}{2} + 2n\pi$.
+
+For $n = 0$: $\theta = \frac{\pi}{2}$.
+
+Solutions: $\theta = \frac{\pi}{2}$ or $\theta = \frac{11\pi}{6}$.
+
+</details>
+<b>If you get this wrong, revise:</b> [R-addition formula](#8-r-addition-formula-harmonic-form)
+
+---
+
+**Problem 15.** Prove that $\dfrac{1 - \tan^2 A}{1 + \tan^2 A} = \cos 2A$.
+
+<details>
+<summary>Solution</summary>
+Using $\sec^2 A = 1 + \tan^2 A$:
+
+$$
+\begin{aligned}
+\frac{1 - \tan^2 A}{1 + \tan^2 A}
+&= \frac{1 - \tan^2 A}{\sec^2 A} \\
+&= (1 - \tan^2 A)\cos^2 A \\
+&= \cos^2 A - \tan^2 A \cos^2 A \\
+&= \cos^2 A - \frac{\sin^2 A}{\cos^2 A} \cdot \cos^2 A \\
+&= \cos^2 A - \sin^2 A \\
+&= \cos 2A \quad \blacksquare
+\end{aligned}
+$$
+
+</details>
+<b>If you get this wrong, revise:</b> [Proof strategies](#9-trigonometric-identities-proof-strategies)
