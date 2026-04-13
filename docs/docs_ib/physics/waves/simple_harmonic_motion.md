@@ -12,23 +12,31 @@ slug: simple-harmonic-motion
 
 :::info
 
-Standard level and higher level: 3 hours Students should understand: -conditions that lead to simple
-harmonic motion
+**Standard level and higher level (3 hours):** Students should understand:
 
-- the defining equation of simple harmonic motion as given by a = -$\omega^2 x$
-- a particle undergoing simple harmonic motion can be described using time period $T$, frequency
-  $f$, angular frequency $\omega$, amplitude, equilibrium position, and displacement
-- the time period in terms of frequency of oscillation and angular frequency as given by
+- Conditions that lead to simple harmonic motion
+- The defining equation of simple harmonic motion: $a = -\omega^2 x$
+- A particle undergoing SHM can be described using time period $T$, frequency $f$, angular frequency
+  $\omega$, amplitude, equilibrium position, and displacement
+- The time period in terms of frequency and angular frequency:
   $T = \frac{1}{f} = \frac{2\pi}{\omega}$
-- the time period of a mass-spring system as given by $T = 2\pi \sqrt{\frac mk}$
-- the time period of a simple pendulum as given by $T = 2\pi\ sqrt{\frac lg}$
-- a qualitative approach to energy changes during one cycle of an oscillation. -dditional higher
-  level: 4 hours -tudents should understand:
-- that a particle undergoing simple harmonic motion can be described using phase angle
-- that problems can be solved using the equations for simple harmonic motion as given by
-  $x = x_0 \sin(\omega t + \Phi), \quad v = \omega x_0 \cos(\omega t + \Phi), \quad v = \pm\omega\sqrt{x_0^2 - x^2}, \quad E_T = \frac{1}{2}m\omega^2 x_0^2, \quad E_P = \frac{1}{2}m\omega^2 x^2.$
+- The time period of a mass-spring system: $T = 2\pi \sqrt{\frac{m}{k}}$
+- The time period of a simple pendulum: $T = 2\pi \sqrt{\frac{L}{g}}$
+- A qualitative approach to energy changes during one cycle of an oscillation
+
+**Additional higher level (4 hours):** Students should understand:
+
+- That a particle undergoing SHM can be described using phase angle
+- That problems can be solved using the equations for SHM:
+
+$$
+x = x_0 \sin(\omega t + \Phi),\quad v = \omega x_0 \cos(\omega t + \Phi),\quad v = \pm\omega\sqrt{x_0^2 - x^2},\quad E_T = \tfrac{1}{2}m\omega^2 x_0^2,\quad E_P = \tfrac{1}{2}m\omega^2 x^2
+$$
 
 :::
+
+Throughout this file, amplitude is $A$ and initial phase is $\phi_0$, corresponding to the data
+booklet notation $x_0$ and $\Phi$.
 
 ## Fundamental Principles
 
@@ -38,11 +46,9 @@ equilibrium and directed oppositely to the displacement. This yields Newton's se
 
 $$
 \begin{aligned}
-  F \propto x \\
+  F \propto -x \\
   F_{\text{net}} = -kx = m \frac{d^2x}{dt^2},
 \end{aligned}
-
-
 $$
 
 where $k > 0$ is the stiffness constant (e.g., spring constant). Rearranged as the equation of
@@ -52,7 +58,7 @@ $$
 \frac{d^2x}{dt^2} + \omega^2 x = 0, \quad \omega = \sqrt{\frac{k}{m}}. \tag{1}
 $$
 
-Here, $\omega$ is the angular frequency (rad·s⁻¹), governing the system's temporal evolution.
+Here, $\omega$ is the angular frequency (rad s$^{-1}$), governing the system's temporal evolution.
 
 Key Characteristics:
 
@@ -62,7 +68,7 @@ Key Characteristics:
 
 Conditions for Ideal SHM:
 
-1. Restoring force obeys Hooke’s law: $F = -kx$.
+1. Restoring force obeys Hooke's law: $F = -kx$.
 2. Zero dissipative forces (undamped motion).
 3. Constant total mechanical energy.
 
@@ -95,7 +101,7 @@ Phase Relationships:
 
 Graphical Interpretation:
 
-- $x(t)$, $v(t)$, and $a(t)$ are phase-shifted sinusoids (Figure 1).
+- $x(t)$, $v(t)$, and $a(t)$ are phase-shifted sinusoids.
 - $a(t)$ is inverted relative to $x(t)$ due to $a \propto -x$.
 
 ## Energy Conservation
@@ -106,8 +112,7 @@ $$
 E_{\text{total}} = K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2. \tag{5}
 $$
 
-Substituting Equations (2)–(4) yields:  
-Kinetic Energy ($K$):
+Substituting Equations (2)--(4) yields: Kinetic Energy ($K$):
 
 $$
 K = \frac{1}{2}m \omega^2 A^2 \sin^2(\omega t + \phi_0) = \frac{1}{2}m\omega^2 (A^2 - x^2). \tag{6}
@@ -134,17 +139,14 @@ Energy Oscillations:
 
 ### Simple Pendulum
 
-Description: Point mass $m$ suspended on a massless string of length $L$ in gravitational field
-$g$.  
-Equation of Motion:  
-For small $\theta$ ($\sin\theta \approx \theta$):
+Description: Point mass $m$ suspended on a massless string of length $L$ in gravitational field $g$.
+Equation of Motion: For small $\theta$ ($\sin\theta \approx \theta$):
 
 $$
 \frac{d^2\theta}{dt^2} + \frac{g}{L}\theta = 0. \tag{9}
 $$
 
-This matches Equation (1) with $\omega = \sqrt{g/L}$.  
-Period:
+This matches Equation (1) with $\omega = \sqrt{g/L}$. Period:
 
 $$
 T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{L}{g}}. \tag{10}
@@ -156,9 +158,7 @@ Properties:
 
 ### Mass-Spring System
 
-Description: Mass $m$ attached to a spring of stiffness $k$.  
-Equation of Motion:  
-From Hooke’s law:
+Description: Mass $m$ attached to a spring of stiffness $k$. Equation of Motion: From Hooke's law:
 
 $$
 m\frac{d^2x}{dt^2} = -kx \implies \frac{d^2x}{dt^2} + \frac{k}{m}x = 0. \tag{11}
@@ -184,8 +184,7 @@ $$
 
 where $f$ is linear frequency (Hz). Converts temporal periodicity to angular speed.
 
-Phase Angle ($\phi$):  
-Generalizes Equation (2):
+Phase Angle ($\phi$): Generalizes Equation (2):
 
 $$
 x(t) = A \cos(\omega t + \phi_0).
@@ -195,7 +194,7 @@ $$
   $$
   \Delta\phi = \omega \Delta t = \frac{2\pi \Delta t}{T}. \tag{14}
   $$
-- Measured in radians (1 rad ≈ 57.3°).
+- Measured in radians (1 rad $\approx$ 57.3°).
 
 ## Summary of Key Equations
 
@@ -209,3 +208,591 @@ $$
 | Kinetic Energy    | $K = \frac{1}{2}m\omega^2(A^2 - x^2)$                            |
 | Potential Energy  | $U = \frac{1}{2}m\omega^2 x^2$                                   |
 | Total Energy      | $E_{\text{total}} = \frac{1}{2}m\omega^2 A^2$                    |
+
+## Derivation of the SHM Solution
+
+### Verification by Direct Substitution
+
+**Claim:** $x(t) = A\cos(\omega t + \phi_0)$ satisfies $\frac{d^2x}{dt^2} + \omega^2 x = 0$ for any
+constants $A$, $\omega$, and $\phi_0$.
+
+**Proof.** First derivative:
+
+$$
+\frac{dx}{dt} = -\omega A \sin(\omega t + \phi_0)
+$$
+
+Second derivative:
+
+$$
+\frac{d^2x}{dt^2} = -\omega^2 A \cos(\omega t + \phi_0) = -\omega^2 x
+$$
+
+Substituting into the equation of motion:
+
+$$
+\frac{d^2x}{dt^2} + \omega^2 x = -\omega^2 x + \omega^2 x = 0 \quad \blacksquare
+$$
+
+### Sine Form Equivalence
+
+**Claim:** $x(t) = A\sin(\omega t + \phi_0)$ is equally valid as a general solution.
+
+Using the identity $\sin\theta = \cos\!\left(\theta - \frac{\pi}{2}\right)$:
+
+$$
+A\sin(\omega t + \phi_0) = A\cos\!\left(\omega t + \phi_0 - \frac{\pi}{2}\right)
+$$
+
+This is the cosine form with a shifted phase. Since $\phi_0$ is already an arbitrary constant,
+absorbing a constant offset of $-\pi/2$ does not reduce generality. Both forms span the full
+two-parameter solution space $(A, \phi_0)$.
+
+Direct substitution confirms:
+
+$$
+\frac{d^2}{dt^2}\!\left[A\sin(\omega t + \phi_0)\right] = -\omega^2 A\sin(\omega t + \phi_0) = -\omega^2 x \quad \blacksquare
+$$
+
+### Choosing Sine vs Cosine
+
+The two forms are physically equivalent; the choice is a matter of convenience based on initial
+conditions.
+
+| Initial condition                         | Preferred form                   | Rationale                      |
+| ----------------------------------------- | -------------------------------- | ------------------------------ |
+| Released from $x = A$ with $v = 0$        | $x = A\cos(\omega t)$            | $\cos(0) = 1$, $\sin(0) = 0$   |
+| Released from $x = 0$ with $v = v_{\max}$ | $x = A\sin(\omega t)$            | $\sin(0) = 0$, $\cos(0) = 1$   |
+| General initial state                     | Either with appropriate $\phi_0$ | Phase angle absorbs the offset |
+
+The IB data booklet uses the sine convention ($x = x_0 \sin(\omega t + \Phi)$). Both conventions are
+correct. Pick one and remain consistent within a single problem. Switching conventions mid-problem
+introduces a systematic phase error of $\pm\pi/2$.
+
+---
+
+## Worked Examples — SL Level
+
+### Example 1: Period and Frequency of a Mass-Spring System
+
+A spring of stiffness $k = 200\text{ N/m}$ has a $0.50\text{ kg}$ mass attached. Find the period $T$
+and frequency $f$.
+
+$$
+T = 2\pi \sqrt{\frac{m}{k}} = 2\pi \sqrt{\frac{0.50}{200}} = 2\pi(0.0500) = 0.314\text{ s}
+$$
+
+$$
+f = \frac{1}{T} = \frac{1}{0.314} = 3.18\text{ Hz}
+$$
+
+### Example 2: Displacement and Velocity at a Given Time
+
+A mass-spring system has amplitude $A = 0.10\text{ m}$ and period $T = 0.50\text{ s}$. The mass is
+released from maximum displacement at $t = 0$. Find $x$ and $v$ at $t = 0.125\text{ s}$.
+
+Angular frequency:
+
+$$
+\omega = \frac{2\pi}{T} = \frac{2\pi}{0.50} = 4\pi\text{ rad/s}
+$$
+
+With $x(0) = A$, use the cosine form: $x = A\cos(\omega t)$.
+
+$$
+x(0.125) = 0.10\cos(4\pi \times 0.125) = 0.10\cos\!\left(\frac{\pi}{2}\right) = 0\text{ m}
+$$
+
+$$
+v(0.125) = -\omega A \sin(\omega t) = -4\pi(0.10)\sin\!\left(\frac{\pi}{2}\right) = -1.26\text{ m/s}
+$$
+
+The mass passes through equilibrium at $t = T/4 = 0.125\text{ s}$, moving in the negative direction
+with speed $|v| = \omega A = 1.26\text{ m/s}$.
+
+### Example 3: Amplitude from Energy
+
+A $0.30\text{ kg}$ mass oscillates on a spring with $k = 120\text{ N/m}$. At equilibrium, the speed
+is $1.6\text{ m/s}$. Determine the amplitude.
+
+At $x = 0$, all energy is kinetic:
+
+$$
+E_{\text{total}} = \frac{1}{2}mv_{\max}^2 = \frac{1}{2}(0.30)(1.6)^2 = 0.384\text{ J}
+$$
+
+At $x = A$, all energy is potential:
+
+$$
+E_{\text{total}} = \frac{1}{2}kA^2 \implies A = \sqrt{\frac{2E_{\text{total}}}{k}} = \sqrt{\frac{2(0.384)}{120}} = \sqrt{0.00640} = 0.0800\text{ m}
+$$
+
+### Example 4: Simple Pendulum Period
+
+A simple pendulum on Earth has a period of $2.00\text{ s}$. Determine its length. Use
+$g = 9.81\text{ m/s}^2$.
+
+$$
+L = \frac{gT^2}{4\pi^2} = \frac{(9.81)(2.00)^2}{4\pi^2} = \frac{39.2}{39.5} = 0.993\text{ m}
+$$
+
+This is close to $1.00\text{ m}$, which is why a "seconds pendulum" ($T = 2\text{ s}$) is
+approximately $1\text{ m}$ long on Earth.
+
+### Example 5: Phase Difference Between Two Oscillators
+
+Two identical mass-spring systems oscillate with the same amplitude and frequency. System A is
+released from maximum displacement at $t = 0$. System B is released from equilibrium, moving in the
+positive direction, at $t = 0$. Find the phase difference $\Delta\phi$.
+
+System A (cosine form): $x_A = A\cos(\omega t)$
+
+System B (starts at $x = 0$ with positive velocity, sine form):
+$x_B = A\sin(\omega t) = A\cos\!\left(\omega t - \frac{\pi}{2}\right)$
+
+Comparing phases: $\phi_A = 0$, $\phi_B = -\pi/2$.
+
+$$
+|\Delta\phi| = \left|0 - \left(-\frac{\pi}{2}\right)\right| = \frac{\pi}{2}\text{ rad} = 90°
+$$
+
+System A leads System B by $90°$.
+
+### Example 6: Energy Partition at a Given Displacement
+
+A mass-spring system has $A = 0.15\text{ m}$, $k = 80.0\text{ N/m}$, and $m = 0.20\text{ kg}$. Find
+the kinetic energy, potential energy, and speed at $x = 0.090\text{ m}$.
+
+$$
+E_{\text{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(80.0)(0.15)^2 = 0.900\text{ J}
+$$
+
+$$
+U = \frac{1}{2}kx^2 = \frac{1}{2}(80.0)(0.090)^2 = 0.324\text{ J}
+$$
+
+$$
+K = E_{\text{total}} - U = 0.900 - 0.324 = 0.576\text{ J}
+$$
+
+$$
+v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.576)}{0.20}} = \sqrt{5.76} = 2.40\text{ m/s}
+$$
+
+---
+
+## HL Extension: Phase and Advanced Problems
+
+### Determining Phase Angle from Initial Conditions
+
+Given initial displacement $x(0) = x_0$ and initial velocity $v(0) = v_0$, we determine both the
+amplitude $A$ and the phase angle $\phi_0$.
+
+Using the cosine form $x = A\cos(\omega t + \phi_0)$:
+
+$$
+x(0) = A\cos\phi_0 = x_0 \tag{i}
+$$
+
+$$
+v(0) = -\omega A\sin\phi_0 = v_0 \tag{ii}
+$$
+
+Squaring and adding (i) and (ii):
+
+$$
+A^2\cos^2\phi_0 + A^2\sin^2\phi_0 = x_0^2 + \frac{v_0^2}{\omega^2}
+$$
+
+$$
+A = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}} \tag{15}
+$$
+
+Dividing (ii) by (i):
+
+$$
+\tan\phi_0 = -\frac{v_0}{\omega x_0} \tag{16}
+$$
+
+:::warning
+
+Equation (16) alone is ambiguous: $\arctan$ returns values in $(-\pi/2,\, \pi/2)$, but the actual
+phase could be in any quadrant. Always verify the signs of $\cos\phi_0 = x_0/A$ and
+$\sin\phi_0 = -v_0/(\omega A)$ to resolve the correct quadrant.
+
+:::
+
+### HL Example 1: Phase Angle Determination
+
+A $0.40\text{ kg}$ mass on a spring with $k = 160\text{ N/m}$ has initial conditions
+$x(0) = 0.060\text{ m}$ and $v(0) = 1.20\text{ m/s}$ (positive). Find the amplitude and phase angle.
+
+$$
+\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0.40}} = 20.0\text{ rad/s}
+$$
+
+$$
+A = \sqrt{(0.060)^2 + \frac{(1.20)^2}{(20.0)^2}} = \sqrt{0.00360 + 0.00360} = \sqrt{0.00720} = 0.0849\text{ m}
+$$
+
+$$
+\tan\phi_0 = -\frac{v_0}{\omega x_0} = -\frac{1.20}{(20.0)(0.060)} = -1.00
+$$
+
+So $\phi_0 = -\pi/4$ or $\phi_0 = 3\pi/4$. Check quadrant: $\cos\phi_0 = x_0/A = 0.707 > 0$ (first
+or fourth quadrant). $\sin\phi_0 = -v_0/(\omega A) = -0.707 < 0$ (third or fourth quadrant). Both
+conditions point to the fourth quadrant: $\phi_0 = -\pi/4 = -0.785\text{ rad}$.
+
+### HL Example 2: Velocity at Given Displacement
+
+A pendulum oscillates with amplitude $A = 0.120\text{ m}$ and angular frequency
+$\omega = 3.50\text{ rad/s}$. Find the speed at $x = 0.050\text{ m}$.
+
+$$
+v = \pm\omega\sqrt{A^2 - x^2} = \pm 3.50\sqrt{(0.120)^2 - (0.050)^2} = \pm 3.50\sqrt{0.0119} = \pm 0.382\text{ m/s}
+$$
+
+The $\pm$ reflects that the mass passes through $x = 0.050\text{ m}$ twice per cycle: once toward
+equilibrium and once away.
+
+### HL Example 3: Energy at Arbitrary Displacement
+
+A $0.50\text{ kg}$ mass on a spring ($k = 200\text{ N/m}$) oscillates with amplitude
+$0.10\text{ m}$. Find the kinetic energy, potential energy, and speed at $x = 0.060\text{ m}$.
+
+$$
+E_T = \frac{1}{2}m\omega^2 A^2 = \frac{1}{2}(200)(0.10)^2 = 1.00\text{ J}
+$$
+
+$$
+E_P = \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}(200)(0.060)^2 = 0.360\text{ J}
+$$
+
+$$
+K = E_T - E_P = 1.00 - 0.360 = 0.640\text{ J}
+$$
+
+$$
+v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.640)}{0.50}} = 1.60\text{ m/s}
+$$
+
+Verification: $\omega = \sqrt{k/m} = 20.0\text{ rad/s}$,
+$v = 20.0\sqrt{(0.10)^2 - (0.060)^2} = 1.60\text{ m/s}$ $\checkmark$
+
+### HL Example 4: Period, Amplitude, and Total Energy
+
+A $0.50\text{ kg}$ object undergoes SHM with total energy $2.0\text{ J}$ and amplitude
+$0.20\text{ m}$. Determine $\omega$, $k$, and the speed at $x = 0.10\text{ m}$.
+
+$$
+E_T = \frac{1}{2}m\omega^2 A^2 \implies \omega^2 = \frac{2E_T}{mA^2} = \frac{2(2.0)}{(0.50)(0.20)^2} = 200
+$$
+
+$$
+\omega = \sqrt{200} = 14.1\text{ rad/s}, \quad k = m\omega^2 = (0.50)(200) = 100\text{ N/m}
+$$
+
+$$
+v = \omega\sqrt{A^2 - x^2} = 14.1\sqrt{(0.20)^2 - (0.10)^2} = 14.1(0.173) = 2.44\text{ m/s}
+$$
+
+---
+
+## Damping — Qualitative Treatment
+
+Real oscillators lose energy to their surroundings. The rate of energy loss determines the damping
+regime. IB students may be asked to sketch displacement-time graphs for each regime.
+
+### Light Damping (Underdamping)
+
+The amplitude decays exponentially: $A(t) = A_0 e^{-bt}$, where $b$ is the damping coefficient.
+
+- The system oscillates with gradually decreasing amplitude.
+- The period is slightly **longer** than the undamped period: $T_{\text{damped}} \gt T_0$.
+- Energy is dissipated each cycle, primarily as heat via friction or air resistance.
+- The quality factor $Q = 2\pi \times \frac{\text{energy stored}}{\text{energy lost per cycle}}$
+  quantifies how underdamped the system is. High $Q$ means low energy loss per cycle.
+
+### Critical Damping
+
+The damping force is just sufficient to prevent oscillation. The system returns to equilibrium in
+the **shortest possible time** without overshooting.
+
+- Displacement decays as $x(t) = (c_1 + c_2 t)e^{-\alpha t}$ for constants $c_1$, $c_2$, $\alpha$.
+- No oscillation occurs.
+- Applications: car shock absorbers, door closers, instrument mechanisms.
+
+### Heavy Damping (Overdamping)
+
+The damping force exceeds the critical value. The system returns to equilibrium **more slowly** than
+critical damping.
+
+- No oscillation.
+- The return to equilibrium is sluggish.
+- Example: a pendulum immersed in viscous oil.
+
+### Comparison of Damping Regimes
+
+| Regime   | Oscillation        | Return speed | Period vs undamped |
+| -------- | ------------------ | ------------ | ------------------ |
+| Light    | Yes (decaying $A$) | Moderate     | Slightly longer    |
+| Critical | No                 | Fastest      | N/A                |
+| Heavy    | No                 | Slowest      | N/A                |
+
+### Energy Dissipation
+
+In all damped systems, mechanical energy converts to thermal energy through resistive forces. The
+rate of energy loss is proportional to $v^2$. For light damping, $E(t) \approx E_0 e^{-2bt}$; since
+$E \propto A^2$, the amplitude decays as $A(t) \propto e^{-bt}$.
+
+### Phase Space (Qualitative)
+
+An undamped SHM traces a closed **ellipse** in the phase plane ($x$ vs $v$). Under light damping the
+ellipse spirals inward. Under critical or heavy damping the trajectory converges directly without
+loops.
+
+---
+
+## Common Pitfalls
+
+### 1. Confusing $\omega$ and $f$
+
+$\omega = 2\pi f$. The angular frequency $\omega$ (rad/s) is $2\pi$ times the linear frequency $f$
+(Hz). When a question asks for "frequency," it means $f$, not $\omega$. When computing
+$v_{\max} = \omega A$, you need $\omega$.
+
+### 2. Pendulum Period is Independent of Mass
+
+$T = 2\pi\sqrt{L/g}$ contains no $m$. A heavier bob does not swing faster or slower (for small
+angles). Contrast this with the mass-spring system, where $T \propto \sqrt{m}$. The physical reason
+is that gravitational force ($mg$) and inertia ($m$) both scale with mass, cancelling out.
+
+### 3. Sign Errors in the Restoring Force
+
+The defining characteristic of SHM is $F = -kx$ or $a = -\omega^2 x$. The negative sign guarantees
+the force points toward equilibrium. Dropping it gives exponential growth, not oscillation. Always
+verify the restoring force direction opposes displacement.
+
+### 4. Mixing Up Phase Angle Conventions
+
+The cosine form $x = A\cos(\omega t + \phi_0)$ and sine form $x = A\sin(\omega t + \Phi)$ yield
+different phase constants for the same physical state. If $x(0) = 0$ using the cosine form, then
+$\phi_0 = \pm\pi/2$, not $0$.
+
+### 5. Small-Angle Approximation Validity
+
+$T = 2\pi\sqrt{L/g}$ relies on $\sin\theta \approx \theta$, accurate to within 1% for
+$\theta \lt 10°$ and 0.1% for $\theta \lt 5°$. Beyond approximately $15°$, the true period exceeds
+the prediction and the motion is no longer strictly SHM.
+
+### 6. Misidentifying Equilibrium Position
+
+The equilibrium position is where the **net force** is zero, not where the spring is at its natural
+length. For a vertical spring-mass system, equilibrium is where the spring is stretched by $mg/k$
+below its natural length. SHM occurs about this equilibrium, not the natural length.
+
+---
+
+## Problem Set
+
+### Problem 1 (SL)
+
+A $0.25\text{ kg}$ mass is attached to a spring with $k = 400\text{ N/m}$. Calculate: (a) the period
+of oscillation, (b) the frequency, (c) the angular frequency.
+
+<details>
+<summary>Solution</summary>
+
+(a)
+
+$$
+T = 2\pi\sqrt{\frac{m}{k}} = 2\pi\sqrt{\frac{0.25}{400}} = 2\pi(0.0250) = 0.157\text{ s}
+$$
+
+(b)
+
+$$
+T_{\text{Earth}} = 2\pi\sqrt{\frac{1.50}{9.81}} = 2.46\text{ s}
+$$
+
+On Mars:
+
+$$
+T_{\text{Mars}} = 2\pi\sqrt{\frac{1.50}{3.71}} = 4.00\text{ s}
+$$
+
+The period is longer on Mars due to the weaker gravitational field.
+
+</details>
+
+### Problem 3 (SL)
+
+A mass-spring system has amplitude $0.080\text{ m}$ and spring constant $k = 500\text{ N/m}$ with
+mass $0.50\text{ kg}$. Find the kinetic energy and potential energy when the displacement is
+$0.040\text{ m}$.
+
+<details>
+<summary>Solution</summary>
+
+$$
+E_T = \frac{1}{2}kA^2 = \frac{1}{2}(500)(0.080)^2 = 1.60\text{ J}
+$$
+
+$$
+U = \frac{1}{2}kx^2 = \frac{1}{2}(500)(0.040)^2 = 0.400\text{ J}
+$$
+
+$$
+K = E_T - U = 1.60 - 0.400 = 1.20\text{ J}
+$$
+
+At half the amplitude, the split is 75% kinetic, 25% potential (energy scales as $x^2$).
+
+</details>
+
+### Problem 4 (SL)
+
+Two identical pendulums are released simultaneously. Pendulum P is released from an angle of $5°$
+and pendulum Q from an angle of $10°$. Both are within the small-angle regime. Compare their
+periods.
+
+<details>
+<summary>Solution</summary>
+
+For ideal SHM, the period is independent of amplitude:
+
+$$
+T = 2\pi\sqrt{\frac{L}{g}}
+$$
+
+Both pendulums have the same length and gravitational field, so $T_P = T_Q$. This is the property of
+**isochrony**. In practice, Q's period is very slightly longer because the small-angle approximation
+is less accurate at $10°$, but this difference is negligible at the IB level.
+
+</details>
+
+### Problem 5 (SL)
+
+A $2.0\text{ kg}$ object on a spring oscillates with amplitude $0.30\text{ m}$. At
+$x = 0.20\text{ m}$, the speed is $2.0\text{ m/s}$. Find the total energy and the spring constant.
+
+<details>
+<summary>Solution</summary>
+
+From $v^2 = \omega^2(A^2 - x^2) = \frac{k}{m}(A^2 - x^2)$:
+
+$$
+(2.0)^2 = \frac{k}{2.0}\!\left((0.30)^2 - (0.20)^2\right) = \frac{k}{2.0}(0.050)
+$$
+
+$$
+4.0 = 0.025k \implies k = 160\text{ N/m}
+$$
+
+Total energy:
+
+$$
+E_T = \frac{1}{2}kA^2 = \frac{1}{2}(160)(0.30)^2 = 7.2\text{ J}
+$$
+
+</details>
+
+### Problem 6 (HL)
+
+A particle undergoes SHM with $\omega = 8.0\text{ rad/s}$. At $t = 0$, $x = 0.030\text{ m}$ and
+$v = -0.20\text{ m/s}$. Determine the amplitude, the phase angle (cosine form), and the displacement
+at $t = 0.50\text{ s}$.
+
+<details>
+<summary>Solution</summary>
+
+Amplitude:
+
+$$
+A = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}} = \sqrt{(0.030)^2 + \frac{(0.20)^2}{(8.0)^2}} = \sqrt{0.000900 + 0.000625} = \sqrt{0.001525} = 0.0391\text{ m}
+$$
+
+Phase angle:
+
+$$
+\tan\phi_0 = -\frac{v_0}{\omega x_0} = -\frac{-0.20}{(8.0)(0.030)} = 0.833
+$$
+
+$\phi_0 = \arctan(0.833) = 0.694\text{ rad}$. Quadrant check: $\cos\phi_0 = x_0/A = 0.767 > 0$ and
+$\sin\phi_0 = -v_0/(\omega A) = 0.639 > 0$. Both positive, first quadrant confirmed.
+
+Displacement at $t = 0.50\text{ s}$:
+
+$$
+x = 0.0391\cos(8.0 \times 0.50 + 0.694) = 0.0391\cos(4.694) = 0.0391(-0.0296) = -0.00116\text{ m}
+$$
+
+</details>
+
+### Problem 7 (HL)
+
+A $0.60\text{ kg}$ mass on a spring has total energy $0.48\text{ J}$ and amplitude $0.040\text{ m}$.
+(a) Find the spring constant. (b) Find the maximum speed. (c) Find the speed when
+$x = 0.020\text{ m}$. (d) At what displacement is $K = U$?
+
+<details>
+<summary>Solution</summary>
+
+(a)
+
+$$
+k = \frac{2E_T}{A^2} = \frac{2(0.48)}{(0.040)^2} = 600\text{ N/m}
+$$
+
+(b)
+
+$$
+v_{\max} = \omega A = A\sqrt{\frac{k}{m}} = 0.040\sqrt{\frac{600}{0.60}} = 0.040(31.6) = 1.26\text{ m/s}
+$$
+
+(c)
+
+$$
+v = \omega\sqrt{A^2 - x^2} = 31.6\sqrt{(0.040)^2 - (0.020)^2} = 31.6\sqrt{0.00120} = 1.10\text{ m/s}
+$$
+
+(d) $K = U \implies E_T = 2U$:
+
+$$
+\frac{1}{2}kA^2 = 2 \times \frac{1}{2}kx^2 \implies x = \frac{A}{\sqrt{2}} = \frac{0.040}{\sqrt{2}} = 0.0283\text{ m}
+$$
+
+This holds for any SHM regardless of system parameters.
+
+</details>
+
+### Problem 8 (HL)
+
+A simple pendulum of length $2.00\text{ m}$ is released from a small angle on Earth. At the lowest
+point, the bob has speed $3.13\text{ m/s}$. Determine: (a) the amplitude (arc length), (b) the
+maximum acceleration, (c) the speed when the bob is $0.50\text{ m}$ below the release point.
+
+<details>
+<summary>Solution</summary>
+
+$$
+A = \frac{v_{\max}}{\omega} = \frac{3.13}{2.21} = 1.42\text{ m}
+$$
+
+This corresponds to an angular amplitude of $0.71\text{ rad} \approx 41°$, exceeding the small-angle
+regime. The SHM model is approximate here.
+
+(b)
+
+$$
+a_{\max} = \omega^2 A = (4.905)(1.42) = 6.97\text{ m/s}^2
+$$
+
+(c) The release point is at $x = A = 1.42\text{ m}$. A point $0.50\text{ m}$ below corresponds to
+$x = A - 0.50 = 0.92\text{ m}$.
+
+$$
+v = \omega\sqrt{A^2 - x^2} = 2.21\sqrt{(1.42)^2 - (0.92)^2} = 2.21\sqrt{1.170} = 2.21(1.082) = 2.39\text{ m/s}
+$$
+
+</details>
