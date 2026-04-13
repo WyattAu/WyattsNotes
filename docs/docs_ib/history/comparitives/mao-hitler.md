@@ -331,3 +331,253 @@ The CCP's treatment of class enemies was central to Mao's revolutionary strategy
 > **Exam tip**: When discussing legacy, be specific about how each regime's memory is managed
 > differently. China actively controls Mao's narrative, while Germany has engaged in a more open
 > process of confronting its past. This difference itself is an important point of comparison.
+
+## Timeline Comparison
+
+| Year    | Nazi Germany                                                                                                               | Mao's China                                                                                                                                                |
+| :------ | :------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1933    | Hitler appointed Chancellor (30 January); Reichstag Fire (February); Enabling Act passed (March) — end of Weimar democracy | Mao leads the Jiangxi Soviet; CCP establishes rural base area; Chiang Kai-shek launches Fifth Encirclement Campaign                                        |
+| 1934    | Night of the Long Knives (June) — SA leadership purged; Hitler becomes Fuhrer upon Hindenburg's death (August)             | Long March begins (October 1934); CCP retreats from Jiangxi under pressure from KMT forces; approximately 86,000 begin the march                           |
+| 1936    | Remilitarization of the Rhineland (March); Berlin Olympics; Four Year Plan established                                     | Long March concludes at Yan'an (October 1935); Mao's Yan'an period begins — base for CCP consolidation; Mao's "On Protracted War" written (1938)           |
+| 1938    | Anschluss with Austria (March); Kristallnacht (November) — coordinated anti-Jewish pogrom                                  | Second Sino-Japanese War intensifies; Mao's "On Protracted War" outlines guerrilla strategy against Japan; CCP expands influence in rural areas            |
+| 1939    | Invasion of Poland (September) — start of World War II; Pact of Steel with Italy; Molotov-Ribbentrop Pact                  | Mao consolidates CCP control in border regions (Shaan-Gan-Ning); guerilla warfare against Japanese occupation; CCP membership grows significantly          |
+| 1945    | Hitler's suicide (30 April); Germany surrenders (May); Nuremberg Trials begin (November); Holocaust death toll revealed    | Victory over Japan (August); Chinese Civil War resumes between CCP and KMT; Mao's forces gain strategic advantage in Manchuria                             |
+| 1949    | Nuremberg Trials conclude; Federal Republic of Germany (West) and GDR (East) established; division of Germany formalized   | PRC founded (1 October); Mao becomes Chairman of the Central People's Government; KMT retreats to Taiwan                                                   |
+| 1956–57 | (N/A — regime ended 1945)                                                                                                  | Hundred Flowers Campaign (1956–57): intellectuals encouraged to criticise the party; Anti-Rightist Campaign follows, 300,000–500,000 labelled "rightists"  |
+| 1958–62 | (N/A)                                                                                                                      | Great Leap Forward (1958–62): collectivization, backyard furnaces; famine kills an estimated 15–45 million; Mao temporarily sidelined                      |
+| 1966–76 | (N/A)                                                                                                                      | Cultural Revolution (1966–76): Red Guards mobilized; attacks on "Four Olds"; purges of Liu Shaoqi and Deng Xiaoping; an estimated 500,000–2 million deaths |
+
+> **Exam tip**: The chronological overlap is limited (1933–1945 vs. 1949–1976), but both regimes
+> underwent parallel processes of consolidation, radicalization, and the use of mass mobilization.
+> When writing comparative essays, note that Mao's rule was significantly longer, which allowed for
+> alternating periods of radical policy and relative retrenchment — a dynamic absent in Hitler's
+> twelve-year Reich.
+
+## Women Under Both Regimes
+
+### Mao's China
+
+- **Marriage Law (1950)**: Promulgated on 1 May 1950, the Marriage Law abolished arranged marriages,
+  concubinage, bride prices, and child betrothal. Women gained the right to initiate divorce and to
+  own property. Historian Kay Ann Johnson argues in _Women, the Family, and Peasant Revolution in
+  China_ (1983) that the Marriage Law was one of the most transformative pieces of legislation in
+  modern Chinese history, though enforcement varied enormously between urban and rural areas.
+- **Women in the workforce**: The CCP promoted women's participation in agricultural and industrial
+  labour as both an ideological commitment to gender equality and a practical necessity for economic
+  development. By the 1970s, over 70% of women in urban areas were in the workforce. Slogans such as
+  "Women hold up half the sky" became central to state discourse.
+- **The Double Burden**: Despite formal equality, women in Mao's China continued to bear primary
+  responsibility for domestic labour and childcare. The absence of state-supported childcare
+  infrastructure meant that women faced what sociologists later termed the "double burden" —
+  full-time work combined with unpaid domestic duties.
+- **Cultural Revolution impact**: The Cultural Revolution intensified rhetoric about gender equality
+  — women wore the same military-style clothing as men and were encouraged to enter traditionally
+  male roles. However, historian Gail Hershatter argues that this "equality" was in practice an
+  erasure of gender difference that did not address structural inequalities. Women who rose to
+  political prominence (such as Mao's wife Jiang Qing) were exceptions that proved the rule.
+
+### Nazi Germany
+
+- **Kinder, Kuche, Kirche**: Nazi ideology confined women to the roles of mother, homemaker, and
+  churchgoer. Women were discouraged from university education and professional employment. The Law
+  for the Encouragement of Marriage (June 1933) offered loans to young couples on the condition that
+  the wife withdrew from the workforce.
+- **Mother's Cross (Ehrenkreuz der Deutschen Mutter)**: Instituted in December 1938, the Mother's
+  Cross was awarded in bronze (4 children), silver (6 children), and gold (8+ children). By 1939,
+  approximately 3 million women had received the cross. It served as both a material incentive and a
+  powerful symbol of the regime's pronatalist policy.
+- **Wartime relaxation**: As the war progressed and labour shortages became acute, the regime was
+  forced to relax its restrictions on female employment. By 1943, women were conscripted into war
+  industries. However, Nazi ideology prevented the full mobilization of women that occurred in
+  Britain or the Soviet Union — historian Jill Stephenson notes that Germany never deployed more
+  than 50% of its available female labour force, a decision that had significant military
+  consequences.
+- **Lebensborn programme**: Heinrich Himmler established the Lebensborn (Fount of Life) programme in
+  1935 to encourage "racially pure" women to bear children with SS officers. Approximately 20,000
+  children were born through the programme.
+
+### Comparison
+
+Both regimes instrumentalised women as tools of state policy. Mao's regime claimed to liberate women
+through legal reform and economic participation, but failed to dismantle patriarchal structures in
+practice. Hitler's regime explicitly rejected gender equality, confining women to reproductive roles
+while selectively relaxing restrictions when economic or military necessity demanded. The key
+difference lies in ideological justification: Maoism claimed to support equality as a matter of
+Marxist principle, whereas Nazism explicitly opposed it as contrary to "natural" gender roles.
+Historian Claudia Koonz, in _Mothers in the Fatherland_ (1987), argues that women under Nazism were
+not merely passive victims but active participants who sustained the regime through their complicity
+in its racial project.
+
+## Propaganda Methods Compared
+
+### Mao's Propaganda
+
+- **Little Red Book**: _Quotations from Chairman Mao Zedong_ (1964) became the central text of
+  ideological education. Over 1 billion copies were printed. During the Cultural Revolution,
+  citizens were required to carry the book at all times and recite passages at daily loyalty
+  sessions.
+- **Visual iconography**: Mao's portrait was displayed in every public building, workplace, and
+  home. Massive images hung in Tiananmen Square. The image of Mao was reproduced on badges, posters,
+  and everyday objects, creating an omnipresent visual field of ideological messaging.
+- **Loyalty dances and rituals**: During the Cultural Revolution, "loyalty dances" (zhongyang wu)
+  were performed in workplaces and schools. Participants waved the Little Red Book and chanted
+  slogans. Struggle sessions served as public spectacles of ideological enforcement, with accused
+  individuals subjected to humiliation and violence before crowds.
+- **Control of media**: The CCP maintained strict control over newspapers, radio, and later
+  television. All media served the party line. During the Cultural Revolution, Jiang Qing's control
+  over cultural production meant that only a small number of approved revolutionary operas and films
+  were permitted.
+
+### Hitler's Propaganda
+
+- **Nuremberg Rallies**: The annual Reichsparteitag (1923–1938) was a carefully choreographed
+  spectacle of mass obedience. Albert Speer's "Cathedral of Light" — 130 anti-aircraft searchlights
+  creating vertical columns — became an iconic image of Nazi power. Filmmaker Leni Riefenstahl
+  documented the 1934 rally in _Triumph of the Will_, widely regarded as one of the most effective
+  propaganda films ever made.
+- **Radio**: Joseph Goebbels, Minister of Propaganda, oversaw the mass production of inexpensive
+  radios (Volksempfanger) to ensure that Nazi messaging reached every household. By 1939,
+  approximately 70% of German households owned a radio. Hitler's speeches were broadcast live to
+  mass audiences.
+- **Film**: Leni Riefenstahl's _Olympia_ (1938) aestheticised the 1936 Berlin Olympics to promote
+  the image of Aryan physical perfection. Feature films with anti-Semitic themes, such as _Jud Suss_
+  (1940), were mandatory viewing. Goebbels personally supervised film production.
+- **Symbolism**: The swastika, the Nazi salute, and uniformed party organisations (SA, SS, Hitler
+  Youth) created a powerful visual language of belonging and obedience. The slogan "Ein Volk, ein
+  Reich, ein Fuhrer" encapsulated the regime's ideology in a single memorable phrase.
+
+### Effectiveness Analysis
+
+Both systems achieved high levels of ideological penetration, but through different mechanisms.
+Mao's propaganda relied on mass participation and ideological devotion — citizens were not merely
+spectators but expected to be active participants in revolutionary ritual. Hitler's propaganda
+relied more on theatrical spectacle and sophisticated media technology, creating a sense of passive
+awe. Historian Timothy Brook argues that Maoist propaganda was more invasive in daily life because
+it demanded continuous ideological performance, whereas Nazi propaganda operated more through
+periodic mass events and media consumption. However, Nazi propaganda was arguably more
+technologically sophisticated, leveraging film, radio, and architectural spectacle to an extent that
+Mao's China never matched.
+
+## Opposition and Resistance
+
+### Opposition in Mao's China
+
+- **Hundred Flowers Campaign backlash (1957)**: Intellectuals who responded to Mao's call for
+  criticism — including the prominent writer Ding Ling and the historian Luo Longji — were labelled
+  "rightists" and sentenced to labour camps or internal exile. The Anti-Rightist Campaign that
+  followed silenced intellectual dissent for decades.
+- **Purges of party officials**: Liu Shaoqi, Mao's designated successor as State Chairman, was
+  purged during the Cultural Revolution. He was subjected to public humiliation, denied medical
+  treatment, and died in prison in 1969 under degrading conditions. Deng Xiaoping was purged twice —
+  first during the Cultural Revolution and again in 1976 after Zhou Enlai's death — before
+  ultimately returning to power.
+- **Post-Mao resistance**: The Democracy Wall movement (1978–79) and the Tiananmen Square protests
+  of 1989 (though after Mao's death) reflected the enduring legacy of suppressed dissent under Mao's
+  rule. Wei Jingsheng, who posted the essay "The Fifth Modernization" on Democracy Wall calling for
+  democracy as a necessary modernisation, was sentenced to 15 years in prison.
+
+### Opposition in Nazi Germany
+
+- **White Rose (Weisse Rose)**: A student resistance group at the University of Munich led by Hans
+  and Sophie Scholl, Christoph Probst, and others. They distributed leaflets denouncing Nazi crimes
+  and calling for resistance. The group was arrested in February 1943; the Scholls and Probst were
+  executed by guillotine the same day. Six leaflets in total were distributed — the sixth was
+  smuggled out of Germany and dropped by the RAF over German territory.
+- **Edelweiss Pirates (Edelweisspiraten)**: Working-class youth groups who rejected the compulsory
+  Hitler Youth. They engaged in minor acts of sabotage, sheltered deserters, and clashed with Hitler
+  Youth patrols. Estimates suggest that hundreds were arrested; some were publicly hanged in Cologne
+  in 1944.
+- **Clerical resistance**: Dietrich Bonhoeffer, a Lutheran pastor, participated in the Abwehr
+  conspiracy against Hitler. Arrested in 1943, he was executed at Flossenburg concentration camp on
+  9 April 1945. Martin Niemoller, another pastor, spent seven years in concentration camps for his
+  opposition.
+- **20 July Plot (1944)**: Operation Valkyrie, led by Colonel Claus von Stauffenberg, attempted to
+  assassinate Hitler with a bomb at the Wolf's Lair (Rastenburg). The bomb detonated but failed to
+  kill Hitler. Over 200 conspirators were subsequently executed, including Stauffenberg, Ludwig
+  Beck, and Erwin Rommel (forced to commit suicide).
+
+### Comparison
+
+Resistance was significantly more dangerous under Hitler than under Mao for several reasons. The
+Nazi state maintained a comprehensive surveillance apparatus (Gestapo, SS, informer networks) that
+made organised opposition extraordinarily risky. Mao's regime, by contrast, relied more on mass
+mobilisation and periodic campaigns than on continuous surveillance, creating windows of relative
+openness between purges. Additionally, resistance in Nazi Germany targeted the state itself and its
+foundational ideology (anti-Semitism, racial hierarchy), whereas resistance in Mao's China typically
+targeted specific policies rather than the regime's legitimacy. The Catholic and Protestant churches
+provided institutional infrastructure for resistance in Germany; no comparable independent
+institutions existed in Mao's China. However, it should be noted that resistance in both regimes was
+marginal and never posed a serious threat to the leadership's grip on power.
+
+## Practice Questions
+
+### Question 1
+
+"Compare and contrast the methods used by Mao and Hitler to establish and maintain authoritarian
+control."
+
+<details>
+Planning notes:
+- Introduction: define authoritarian control; state thesis that both used propaganda, terror, and cult of personality but through different structural mechanisms
+- Para 1: Propaganda — Little Red Book vs. Nuremberg Rallies and radio; mass participation vs. theatrical spectacle
+- Para 2: Terror — struggle sessions and Laogai vs. Gestapo and concentration camps; mass mobilisation vs. state-controlled violence
+- Para 3: Cult of personality — ideological devotion (Mao) vs. Fuhrerprinzip and media manipulation (Hitler)
+- Para 4: Youth indoctrination — Red Guards vs. Hitler Youth
+- Conclusion: Mao relied more on mass mobilisation and periodic campaigns; Hitler on continuous surveillance and institutional control. Both achieved high levels of compliance.
+</details>
+
+### Question 2
+
+"To what extent were the economic policies of Mao and Hitler successful in achieving their aims?"
+
+<details>
+Planning notes:
+- Introduction: define the aims of each leader's economic policy; thesis that neither fully achieved their aims, though for different reasons
+- Para 1: Mao's Great Leap Forward — aimed at rapid industrialisation; resulted in catastrophic famine (15–45 million deaths); failure acknowledged by party
+- Para 2: Hitler's rearmament — aimed at economic recovery and military preparedness; unemployment fell from 6 million to under 1 million; but recovery was funded by deficit spending and was unsustainable
+- Para 3: Comparison of outcomes — Mao's policies caused greater loss of life; Hitler's policies contributed directly to the onset of war
+- Para 4: Long-term consequences — Deng Xiaoping's reforms ultimately achieved Mao's industrialisation goals; Hitler's economy collapsed with the regime
+- Conclusion: Hitler's policies were more immediately successful in economic terms but ultimately self-destructive; Mao's policies failed in the short term but China eventually industrialised under different leadership
+</details>
+
+### Question 3
+
+"Examine the role of ideology in the policies of two authoritarian leaders you have studied."
+
+<details>
+Planning notes:
+- Introduction: define ideology; thesis that ideology was central to both leaders' policies but was frequently subordinated to pragmatic considerations of power maintenance
+- Para 1: Mao — Marxism-Leninism adapted to Chinese conditions (peasantry vs. proletariat); ideology used to justify Great Leap Forward and Cultural Revolution; but ideology was flexible (US rapprochement in 1972 contradicted anti-imperialist stance)
+- Para 2: Hitler — racial ideology (Aryan supremacy, anti-Semitism) was genuinely central to policy (Nuremberg Laws, Holocaust); but economic pragmatism (Mefo bills, private ownership maintained) contradicted socialist elements of early Nazi rhetoric
+- Para 3: Comparison — Mao's ideology was more flexible and subject to reinterpretation; Hitler's racial ideology was more rigid and consistently applied, especially towards Jews
+- Para 4: Historiography — intentionalist vs. structuralist debate for Hitler; MacFarquhar vs. Goldman on Mao's ideological consistency
+- Conclusion: Ideology was a genuine driver of policy in both regimes, but both leaders were ultimately pragmatists who subordinated ideological purity to the maintenance of power
+</details>
+
+### Question 4
+
+"Compare and contrast the treatment of opposition in two authoritarian states."
+
+<details>
+Planning notes:
+- Introduction: define opposition; thesis that both regimes ruthlessly suppressed dissent but through different mechanisms, and that the nature and effectiveness of resistance differed significantly
+- Para 1: Mao's suppression of opposition — Hundred Flowers Campaign as trap or miscalculation; purges of Liu Shaoqi and Deng Xiaoping; struggle sessions; Laogai system
+- Para 2: Hitler's suppression of opposition — Gleichschaltung (coordination); Reichstag Fire Decree; Night of the Long Knives; Gestapo and concentration camps
+- Para 3: Nature of resistance — White Rose, Edelweiss Pirates, 20 July Plot vs. intellectual dissent (Ding Ling, Wei Jingsheng); resistance in Nazi Germany more institutionally organised
+- Para 4: Why resistance was more dangerous under Hitler — comprehensive surveillance (Gestapo informer network) vs. Mao's reliance on periodic campaigns; absence of independent institutions in China
+- Conclusion: Both regimes made resistance extraordinarily dangerous, but the Nazi state's continuous surveillance apparatus made organised opposition more immediately lethal. In China, resistance was more often a matter of surviving between campaigns than of confronting the state directly.
+</details>
+
+### Question 5
+
+"Assess the impact of authoritarian rule on women in two states you have studied."
+
+<details>
+Planning notes:
+- Introduction: state thesis that both regimes instrumentalised women but with fundamentally different ideological justifications and practical outcomes
+- Para 1: Mao's China — Marriage Law (1950) as legal liberation; women in workforce ("hold up half the sky"); Double Burden; Cultural Revolution's superficial equality; Kay Ann Johnson and Gail Hershatter as historiographical references
+- Para 2: Nazi Germany — Kinder, Kuche, Kirche ideology; Mother's Cross and pronatalist policy; wartime relaxation of restrictions; Lebensborn programme; Jill Stephenson on underutilisation of female labour
+- Para 3: Comparison — Mao claimed to support equality but failed to deliver it in practice; Hitler explicitly opposed equality but was forced into pragmatic concessions; both treated women as instruments of state policy
+- Para 4: Historiography — Claudia Koonz (_Mothers in the Fatherland_) on women's active complicity in Nazism; contrast with narratives of women as passive victims of Maoism
+- Conclusion: Despite surface-level differences, both regimes subordinated women's autonomy to state objectives. Mao's approach was hypocritical (equality in theory, subordination in practice); Hitler's was explicit (subordination as ideological principle). Neither regime genuinely empowered women as autonomous agents.
+</details>
