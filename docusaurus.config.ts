@@ -165,6 +165,26 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'ilc-notes',
+        path: 'docs/docs_ilc',
+        routeBasePath: '/docs/academics/ilc',
+        sidebarPath: require.resolve('./sidebars/sidebar_ilc.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'highers-notes',
+        path: 'docs/docs_highers',
+        routeBasePath: '/docs/academics/highers',
+        sidebarPath: require.resolve('./sidebars/sidebar_highers.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'cpp-notes',
         path: 'docs/docs_cpp',
         routeBasePath: '/docs/cpp',
@@ -297,6 +317,14 @@ const config: Config = {
             {
               label: 'AP',
               to: '/docs/academics/ap/intro',
+            },
+            {
+              label: 'Irish LC',
+              to: '/docs/academics/ilc/intro',
+            },
+            {
+              label: 'Scottish Highers',
+              to: '/docs/academics/highers/intro',
             },
           ],
         },
