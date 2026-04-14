@@ -449,3 +449,332 @@ $$V = \varepsilon - Ir = 9 - 2 \times 0.5 = 8 \text{ V}$$
 15. Two identical resistors of resistance $R$ are connected first in series and then in parallel to
     the same battery. Show that the ratio of the power dissipated in the parallel arrangement to the
     power dissipated in the series arrangement is 4:1.
+
+## 8. Worked Example: Combined Series-Parallel Circuit with Power
+
+A $12 \text{ V}$ battery (internal resistance $0.5 \text{ }\Omega$) is connected to a
+$3 \text{ }\Omega$ resistor in series with a parallel combination of $6 \text{ }\Omega$ and
+$12 \text{ }\Omega$ resistors.
+
+**Step 1:** Find the parallel resistance.
+
+$$\frac{1}{R_p} = \frac{1}{6} + \frac{1}{12} = \frac{3}{12} = \frac{1}{4} \implies R_p = 4 \text{ }\Omega$$
+
+**Step 2:** Total resistance (including internal resistance).
+
+$$R_{\text{total}} = R_{\text{internal}} + R_{\text{series}} + R_p = 0.5 + 3 + 4 = 7.5 \text{ }\Omega$$
+
+**Step 3:** Total current.
+
+$$I = \frac{\varepsilon}{R_{\text{total}}} = \frac{12}{7.5} = 1.6 \text{ A}$$
+
+**Step 4:** Terminal PD.
+
+$$V = \varepsilon - Ir = 12 - 1.6 \times 0.5 = 11.2 \text{ V}$$
+
+**Step 5:** Current through each parallel resistor.
+
+$$I_6 = \frac{V_p}{6} = \frac{11.2 - 1.6 \times 3}{6} = \frac{6.4}{6} = 1.067 \text{ A}$$
+
+$$I_{12} = \frac{V_p}{12} = \frac{6.4}{12} = 0.533 \text{ A}$$
+
+Check: $1.067 + 0.533 = 1.6 \text{ A}$. Correct.
+
+**Step 6:** Power dissipated in each resistor.
+
+$$P_3 = I^2 R_3 = 1.6^2 \times 3 = 7.68 \text{ W}$$
+
+$$P_6 = I_6^2 \times 6 = 1.067^2 \times 6 = 6.83 \text{ W}$$
+
+$$P_{12} = I_{12}^2 \times 12 = 0.533^2 \times 12 = 3.41 \text{ W}$$
+
+## 9. Worked Example: Potential Divider with a Thermistor
+
+A potential divider circuit consists of a $10 \text{ k}\Omega$ fixed resistor and an NTC thermistor
+in series with a $12 \text{ V}$ supply. At $20^{\circ}\text{C}$, the thermistor resistance is
+$10 \text{ k}\Omega$. At $80^{\circ}\text{C}$, the thermistor resistance is $1 \text{ k}\Omega$. The
+output voltage is taken across the thermistor.
+
+**At $20^{\circ}\text{C}$:**
+
+$$V_{\text{out}} = 12 \times \frac{10000}{10000 + 10000} = 12 \times \frac{1}{2} = 6 \text{ V}$$
+
+**At $80^{\circ}\text{C}$:**
+
+$$V_{\text{out}} = 12 \times \frac{1000}{10000 + 1000} = 12 \times \frac{1}{11} = 1.09 \text{ V}$$
+
+As temperature increases, the thermistor resistance decreases, and the output voltage decreases.
+This circuit could be used to trigger a heater when the temperature drops (the output voltage rises
+when it is cold).
+
+## 10. Why Current Is the Same Everywhere in a Series Circuit
+
+Charge is conserved: charge cannot accumulate at any point in a circuit. If the current were
+different at different points in a series circuit, charge would build up at the junction where the
+current changes, which is impossible in a steady-state DC circuit. This is analogous to water
+flowing through a single pipe: the same amount of water passes through every cross-section per
+second. The same argument, applied to junctions in parallel circuits, gives Kirchhoff's first law:
+the total current entering a junction equals the total current leaving it.
+
+## 11. Derivation: Power Formulas from Ohm's Law
+
+Starting from $P = IV$:
+
+- Substitute $V = IR$: $P = I \times IR = I^2 R$
+- Substitute $I = V/R$: $P = \frac{V}{R} \times V = \frac{V^2}{R}$
+
+These are all equivalent expressions. Use $P = IV$ when you know both current and voltage. Use
+$P = I^2R$ when you know current and resistance (useful for finding power dissipated in a specific
+resistor in a circuit). Use $P = V^2/R$ when you know voltage and resistance.
+
+## 12. Why the National Grid Uses High Voltages: Quantitative Analysis
+
+Consider transmitting power $P$ through cables of total resistance $R$.
+
+At voltage $V$, the current is $I = P/V$, and the power lost in the cables is:
+
+$$P_{\text{loss}} = I^2 R = \frac{P^2 R}{V^2}$$
+
+This shows that power loss is inversely proportional to $V^2$. If the transmission voltage is
+increased by a factor of 10, the power loss decreases by a factor of 100. If a power station
+generates $500 \text{ MW}$ and the cable resistance is $5 \text{ }\Omega$:
+
+- At $25 \text{ kV}$: $I = 20000 \text{ A}$,
+  $P_{\text{loss}} = 20000^2 \times 5 = 2 \times 10^9 \text{ W}$ = 2000 MW (four times the generated
+  power -- absurd)
+- At $400 \text{ kV}$: $I = 1250 \text{ A}$,
+  $P_{\text{loss}} = 1250^2 \times 5 = 7.8 \times 10^6 \text{ W}$ = 7.8 MW (1.6% of generated power
+  -- feasible)
+
+## 13. Worked Example: Cost of Electrical Appliances
+
+A household has the following daily usage:
+
+- Fridge: 150 W for 24 hours
+- TV: 120 W for 5 hours
+- Washing machine: 2000 W for 1 hour
+- Lights (5 bulbs): 60 W each for 6 hours
+- Kettle: 2000 W for 0.3 hours
+
+Calculate the daily energy consumption and the monthly cost at 20 p/kWh.
+
+$$E_{\text{fridge}} = 0.15 \times 24 = 3.6 \text{ kWh}$$
+$$E_{\text{TV}} = 0.12 \times 5 = 0.6 \text{ kWh}$$
+$$E_{\text{washing}} = 2.0 \times 1 = 2.0 \text{ kWh}$$
+$$E_{\text{lights}} = 5 \times 0.06 \times 6 = 1.8 \text{ kWh}$$
+$$E_{\text{kettle}} = 2.0 \times 0.3 = 0.6 \text{ kWh}$$
+
+$$E_{\text{total}} = 3.6 + 0.6 + 2.0 + 1.8 + 0.6 = 8.6 \text{ kWh per day}$$
+
+Monthly cost (30 days): $8.6 \times 30 \times 20 = 5160 \text{ pence} = \pounds 51.60$
+
+The fridge is the largest consumer despite its low power rating, because it runs continuously. This
+illustrates the importance of considering both power and usage time.
+
+## 14. Worked Example: I-V Characteristic of a Filament Lamp
+
+A filament lamp is connected to a variable power supply. The following measurements are recorded:
+
+| PD (V) | Current (A) | Resistance ($\Omega$) |
+| ------ | ----------- | --------------------- |
+| 2.0    | 0.20        | 10.0                  |
+| 4.0    | 0.35        | 11.4                  |
+| 6.0    | 0.45        | 13.3                  |
+| 8.0    | 0.52        | 15.4                  |
+| 10.0   | 0.57        | 17.5                  |
+| 12.0   | 0.60        | 20.0                  |
+
+The resistance increases from 10 $\Omega$ at 2 V to 20 $\Omega$ at 12 V. This confirms that the
+filament lamp is non-ohmic: the resistance is not constant. The I-V graph curves away from the
+straight line because the filament heats up as the current increases.
+
+## 15. Summary Table: Series vs Parallel Circuits
+
+| Property               | Series                                  | Parallel                                      |
+| ---------------------- | --------------------------------------- | --------------------------------------------- |
+| Current                | Same through all components             | Splits at junctions; adds up                  |
+| Voltage                | Splits across components; adds up       | Same across all branches                      |
+| Resistance             | $R_{\text{total}} = R_1 + R_2 + \cdots$ | $1/R_{\text{total}} = 1/R_1 + 1/R_2 + \cdots$ |
+| If one component fails | Whole circuit breaks                    | Other branches continue working               |
+| Adding more resistors  | Increases $R_{\text{total}}$            | Decreases $R_{\text{total}}$                  |
+| Example                | Old Christmas tree lights               | Household wiring                              |
+
+## 16. Safety Features Summary
+
+| Feature           | How It Works                      | What It Protects                            |
+| ----------------- | --------------------------------- | ------------------------------------------- |
+| Fuse              | Thin wire melts at a set current  | Prevents fire from overheating              |
+| Circuit breaker   | Electromagnetic switch trips      | Prevents fire; reusable                     |
+| Earth wire        | Low-resistance path to ground     | Prevents electric shock from faulty casing  |
+| Double insulation | Plastic casing, no earth needed   | Prevents shock from internal faults         |
+| RCD               | Compares live and neutral current | Detects current leakage to earth; very fast |
+| Insulation        | Non-conductive coating on wires   | Prevents contact with live conductors       |
+
+## 17. Practice Questions (Additional)
+
+16. A circuit contains a $9 \text{ V}$ battery, a $100 \text{ }\Omega$ resistor in series with a
+    parallel combination of $200 \text{ }\Omega$ and $300 \text{ }\Omega$ resistors. Calculate the
+    current through each resistor and the power dissipated in the $200 \text{ }\Omega$ resistor.
+
+17. A student connects an ammeter in parallel with a resistor. Explain why this is dangerous and
+    what will happen.
+
+18. A $6 \text{ V}$ battery with internal resistance $0.3 \text{ }\Omega$ is connected to an
+    external circuit. The terminal PD is $5.4 \text{ V}$. Calculate the current and the external
+    resistance.
+
+19. Design a potential divider circuit using a $9 \text{ V}$ battery and two resistors that produces
+    an output voltage of $3 \text{ V}$. Specify the values of both resistors.
+
+20. Explain the difference between a thermistor and an LDR. Describe a sensing circuit for each and
+    explain how the output voltage changes as the sensed quantity changes.
+
+21. A hairdryer rated at $1800 \text{ W}$ is connected to the $230 \text{ V}$ mains. Calculate the
+    current it draws. If the mains cable has a resistance of $0.5 \text{ }\Omega$, calculate the
+    power lost in the cable and the voltage reaching the hairdryer.
+
+22. Three identical resistors, each of resistance $R$, are connected to a battery. Calculate the
+    total resistance when they are connected (a) all in series, (b) all in parallel, and (c) two in
+    parallel with the third in series.
+
+23. Explain why the resistance of a filament lamp increases with temperature, while the resistance
+    of a thermistor (NTC) decreases with temperature.
+
+24. A mobile phone charger has an output of $5 \text{ V}$ and $2 \text{ A}$. If the phone battery
+    has a capacity of $3000 \text{ mAh}$, how long does it take to charge from empty? Calculate the
+    energy transferred to the battery during a full charge.
+
+25. A circuit contains a variable resistor, a fixed resistor of $470 \text{ }\Omega$, and an LED in
+    series with a $9 \text{ V}$ battery. The LED requires a minimum current of $10 \text{ mA}$ to
+    light and has a forward voltage drop of $2 \text{ V}$. Calculate the range of resistance values
+    for the variable resistor that keeps the LED lit without exceeding a maximum current of
+    $20 \text{ mA}$.
+
+## Extended Worked Examples
+
+### Example 26: Energy and Cost of Household Appliances
+
+A household uses the following appliances daily: a $2 \text{ kW}$ heater for 4 hours, six
+$10 \text{ W}$ LED lights for 6 hours, a $200 \text{ W}$ TV for 3 hours, and a $3 \text{ kW}$ kettle
+for $0.5 \text{ hours}$. Electricity costs $28 \text{p}$ per kWh. Calculate the daily and monthly
+(30-day) cost.
+
+**Step 1: Energy used by each appliance**
+
+- Heater: $E = Pt = 2 \times 4 = 8 \text{ kWh}$
+- Lights: $E = 0.01 \times 6 \times 6 = 0.36 \text{ kWh}$
+- TV: $E = 0.2 \times 3 = 0.6 \text{ kWh}$
+- Kettle: $E = 3 \times 0.5 = 1.5 \text{ kWh}$
+
+**Step 2: Total daily energy**
+
+$$E_{\text{total}} = 8 + 0.36 + 0.6 + 1.5 = 10.46 \text{ kWh}$$
+
+**Step 3: Daily and monthly cost**
+
+$$\text{Daily cost} = 10.46 \times 28 = 292.9 \text{ p} = \pounds 2.93$$
+
+$$\text{Monthly cost} = 292.9 \times 30 = 8787 \text{ p} = \pounds 87.87$$
+
+:::info
+The heater accounts for $8/10.46 = 76.5\%$ of the total energy cost. This is typical:
+heating appliances dominate household electricity bills. Switching to a more efficient heater or
+improving insulation can significantly reduce costs.
+:::
+
+### Example 27: Parallel Circuit with Multiple Branches
+
+Three resistors of $100 \Omega$, $200 \Omega$, and $300 \Omega$ are connected in parallel across a
+$12 \text{ V}$ battery. Calculate the current through each resistor, the total current, and the
+total resistance.
+
+**Step 1: Current through each resistor (Ohm's law)**
+
+$$I_1 = \frac{V}{R_1} = \frac{12}{100} = 0.120 \text{ A} = 120 \text{ mA}$$
+
+$$I_2 = \frac{V}{R_2} = \frac{12}{200} = 0.060 \text{ A} = 60 \text{ mA}$$
+
+$$I_3 = \frac{V}{R_3} = \frac{12}{300} = 0.040 \text{ A} = 40 \text{ mA}$$
+
+**Step 2: Total current**
+
+$$I_{\text{total}} = I_1 + I_2 + I_3 = 120 + 60 + 40 = 220 \text{ mA}$$
+
+**Step 3: Total resistance**
+
+$$R_{\text{total}} = \frac{V}{I_{\text{total}}} = \frac{12}{0.220} = 54.5 \Omega$$
+
+**Check using the reciprocal formula:**
+
+$$\frac{1}{R} = \frac{1}{100} + \frac{1}{200} + \frac{1}{300} = 0.01 + 0.005 + 0.00333 = 0.01833$$
+
+$$R = \frac{1}{0.01833} = 54.5 \Omega$$
+
+Confirmed.
+
+### Example 28: Internal Resistance and Maximum Current
+
+A battery has EMF $9 \text{ V}$ and internal resistance $1.5 \Omega$. What is the maximum current
+that can be drawn, and what is the terminal PD at this current?
+
+**Step 1: Maximum current (short circuit)**
+
+$$I_{\max} = \frac{\mathcal{E}}{r} = \frac{9}{1.5} = 6 \text{ A}$$
+
+This occurs when the external resistance is zero (short circuit).
+
+**Step 2: Terminal PD at maximum current**
+
+$$V = \mathcal{E} - Ir = 9 - 6 \times 1.5 = 9 - 9 = 0 \text{ V}$$
+
+All the EMF is "lost" across the internal resistance. The battery delivers maximum current but zero
+useful voltage to the external circuit.
+
+**Step 3: Power dissipated in the battery**
+
+$$P_{\text{internal}} = I^2 r = 36 \times 1.5 = 54 \text{ W}$$
+
+This energy is converted to heat inside the battery, which can cause it to overheat or even explode.
+
+:::warning
+A short circuit is extremely dangerous. The battery delivers its maximum current, and all
+the energy is dissipated as heat inside the battery. Never short-circuit a battery.
+:::
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Adding Currents in Series Circuits
+
+In a series circuit, the current is the _same_ through every component. Do not add currents in
+series. Only add currents when they meet at a junction (Kirchhoff's first law).
+
+### Pitfall 7: Forgetting to Subtract the LED/Component Voltage
+
+When calculating the required series resistor for an LED, the resistor voltage is the supply voltage
+_minus_ the LED forward voltage: $V_R = V_{\text{supply}} - V_{\text{LED}}$. Using just the supply
+voltage gives an incorrectly high resistance and the LED will not light.
+
+### Pitfall 8: Confusing AC and DC in Power Calculations
+
+For DC: $P = IV = I^2R = V^2/R$ using the steady values. For AC: the same formulas apply but using
+_RMS_ values. The peak power is twice the average power for a sinusoidal AC supply:
+$P_{\text{peak}} = 2P_{\text{avg}}$.
+
+## Additional Practice Problems
+
+26. A $12 \text{ V}$ car battery has internal resistance $0.05 \Omega$. The starter motor draws
+    $200 \text{ A}$. Calculate (a) the terminal PD, (b) the power delivered to the starter, and (c)
+    the power wasted in the battery.
+
+27. Three identical resistors each of $R$ are connected to a battery. Calculate the total resistance
+    for all possible arrangements and rank them from largest to smallest.
+
+28. An electric shower has a power rating of $8.5 \text{ kW}$ and operates at $230 \text{ V}$.
+    Calculate the current it draws and explain why it requires a dedicated high-current circuit.
+
+29. A student sets up a circuit with a thermistor and a fixed resistor in series with a
+    $6 \text{ V}$ battery. The thermistor has resistance $2000 \Omega$ at $20°\text{C}$ and
+    $500 \Omega$ at $60°\text{C}$. Calculate the voltage across the thermistor at each temperature.
+
+30. Explain the difference between conventional current and electron flow. Why do we still use
+    conventional current in circuit diagrams?

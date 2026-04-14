@@ -542,3 +542,287 @@ the boat cannot overcome the current.
 10. The position of a particle is $x(t) = t^3 - 6t^2 + 9t + 1$ m. Find (a) the times when the
     particle is at rest, (b) the acceleration at each of those times, and (c) the total distance
     traveled between $t = 0$ and $t = 5$ s.
+
+## Motion Graphs: Advanced Analysis
+
+### Determining Velocity from a Displacement-Time Graph
+
+For a curved $x$-vs-$t$ graph, the instantaneous velocity at any point is the gradient of the
+tangent to the curve at that point. A straight-line section indicates constant velocity (zero
+acceleration). A section that curves upward (concave up) indicates positive acceleration; a section
+that curves downward (concave down) indicates negative acceleration.
+
+### Worked Example: Interpreting a Velocity-Time Graph
+
+A particle moves along the $x$-axis. Its velocity is given by $v(t) = 4t - t^2$ for $0 \le t \le 5$
+s.
+
+**Velocity at $t = 2$ s:** $v(2) = 8 - 4 = 4$ m/s.
+
+**Acceleration:** $a(t) = \frac{dv}{dt} = 4 - 2t$. At $t = 2$: $a = 0$ (turning point of velocity).
+
+**Displacement from $t = 0$ to $t = 4$:**
+
+$$\Delta x = \int_0^4 (4t - t^2)\, dt = \left[2t^2 - \frac{t^3}{3}\right]_0^4 = 32 - \frac{64}{3} = 32 - 21.33 = 10.67 \text{ m}$$
+
+**Total distance from $t = 0$ to $t = 5$:** The velocity is zero at $t = 0$ and $t = 4$. For
+$0 \lt t \lt 4$, $v \gt 0$. For $4 \lt t \lt 5$, $v \lt 0$.
+
+$$d = \int_0^4 (4t - t^2)\, dt + \left|\int_4^5 (4t - t^2)\, dt\right| = 10.67 + \left|\left[2t^2 - \frac{t^3}{3}\right]_4^5\right|$$
+
+$$= 10.67 + \left|(50 - 41.67) - (32 - 21.33)\right| = 10.67 + |8.33 - 10.67| = 10.67 + 2.33 = 13.0 \text{ m}$$
+
+## Uniform Circular Motion: Extended Analysis
+
+### Period, Frequency, and Angular Velocity Relationships
+
+For an object in uniform circular motion:
+
+$$\omega = 2\pi f = \frac{2\pi}{T}, \qquad v = \frac{2\pi r}{T} = 2\pi rf, \qquad a_c = \frac{4\pi^2 r}{T^2} = \omega^2 r = \frac{v^2}{r}$$
+
+### Worked Example: Geostationary Orbit
+
+A geostationary satellite orbits above the equator with a period of 24 hours. Given Earth's radius
+$R_E = 6.371 \times 10^6$ m and mass $M_E = 5.97 \times 10^{24}$ kg, find the altitude of the orbit.
+
+$$T = 86400 \text{ s}$$
+
+$$T^2 = \frac{4\pi^2 r^3}{GM}$$
+
+$$r^3 = \frac{GMT^2}{4\pi^2} = \frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24} \times 86400^2}{4\pi^2}$$
+
+$$r^3 = \frac{2.987 \times 10^{24}}{39.48} = 7.566 \times 10^{22}$$
+
+$$r = \sqrt[3]{7.566 \times 10^{22}} = 4.225 \times 10^7 \text{ m}$$
+
+$$h = r - R_E = 4.225 \times 10^7 - 6.371 \times 10^6 = 3.588 \times 10^7 \text{ m} \approx 35880 \text{ km}$$
+
+This is approximately 36000 km above Earth's surface, the standard geostationary orbit altitude.
+
+## Non-Uniform Acceleration: Advanced Examples (AP Physics C)
+
+### Worked Example: Position, Velocity, and Acceleration from a Single Function
+
+The position of a particle is $x(t) = t^4 - 4t^3 + 6t^2$ m.
+
+$$v(t) = \frac{dx}{dt} = 4t^3 - 12t^2 + 12t$$
+
+$$a(t) = \frac{dv}{dt} = 12t^2 - 24t + 12 = 12(t^2 - 2t + 1) = 12(t-1)^2$$
+
+The acceleration is always non-negative (it is zero at $t = 1$). The particle is never decelerating.
+
+**Times when at rest:** $v(t) = 0 \implies 4t(t^2 - 3t + 3) = 0$. The quadratic $t^2 - 3t + 3 = 0$
+has discriminant $9 - 12 = -3 \lt 0$, so the only solution is $t = 0$.
+
+The particle is at rest only at $t = 0$.
+
+### Worked Example: Piecewise-Defined Acceleration
+
+A particle starts from rest. For $0 \le t \le 3$ s, $a = 6t$ m/s$^2$. For $t \gt 3$ s, $a = 0$.
+
+**Phase 1 ($0 \le t \le 3$):**
+
+$$v(t) = \int_0^t 6t'\, dt' = 3t^2$$
+
+$$x(t) = \int_0^t 3t'^2\, dt' = t^3$$
+
+At $t = 3$: $v = 27$ m/s, $x = 27$ m.
+
+**Phase 2 ($t \gt 3$):** Constant velocity $v = 27$ m/s.
+
+$$x(t) = 27 + 27(t - 3)$$
+
+## Summary Table: Kinematic Equations
+
+| Equation                            | Missing Variable | Best Used When                                      |
+| ----------------------------------- | ---------------- | --------------------------------------------------- |
+| $v = v_0 + at$                      | $x - x_0$        | You know initial velocity, acceleration, time       |
+| $x - x_0 = v_0 t + \frac{1}{2}at^2$ | $v$              | You know initial velocity, acceleration, time       |
+| $v^2 = v_0^2 + 2a(x - x_0)$         | $t$              | You know velocities and displacement                |
+| $x - x_0 = \frac{v_0 + v}{2}t$      | $a$              | You know velocities and time (uniform acceleration) |
+
+## Common Pitfalls: Extended
+
+11. **Assuming that the magnitude of acceleration equals $g$ for objects thrown upward.** The
+    magnitude is $g$ only when air resistance is negligible. With air resistance, the acceleration
+    while going up is greater than $g$ (drag and gravity both act downward) and while coming down is
+    less than $g$ (drag opposes gravity).
+
+12. **Using the wrong reference frame in relative motion problems.** Always identify the observer's
+    frame and the moving frame explicitly. Write the velocity addition formula carefully.
+
+13. **Forgetting that in 2D projectile motion, the time determines everything.** Once you find the
+    time of flight (from the vertical motion), you can find the horizontal range. You cannot find
+    the range without first finding the time.
+
+14. **Confusing angular displacement with linear displacement in circular motion problems.** Angular
+    displacement $\theta$ is dimensionless (radians). Linear displacement $s = r\theta$ has units of
+    metres.
+
+15. **Assuming that $a = v^2/r$ applies when the speed is not constant.** The formula $a_c = v^2/r$
+    gives only the centripetal component of acceleration. If the speed is changing, there is also a
+    tangential component $a_t = dv/dt$.
+
+## Practice Questions (Additional)
+
+11. A particle moves along the $x$-axis with acceleration $a(t) = 8t - 6$ m/s$^2$. At $t = 0$, the
+    particle is at $x = 2$ m with velocity $v = -3$ m/s. Find (a) the time when the particle is at
+    rest, (b) the position at that time, and (c) the total distance traveled between $t = 0$ and
+    $t = 3$ s.
+
+12. A projectile is launched from ground level at $40 \text{ m/s}$. Find the two launch angles that
+    give a range of $120 \text{ m}$.
+
+13. A car accelerates from rest at $3 \text{ m/s}^2$ for $4 \text{ s}$, then travels at constant
+    speed for $6 \text{ s}$, then decelerates uniformly to rest in $3 \text{ s}$. Find the total
+    distance and draw a velocity-time graph.
+
+14. Two boats leave the same point simultaneously. Boat A heads north at $6 \text{ m/s}$ and Boat B
+    heads northeast at $8 \text{ m/s}$. Find the velocity of Boat A relative to Boat B.
+
+15. An astronaut on the Moon throws a ball vertically upward at $15 \text{ m/s}$. Find the maximum
+    height and total time in the air. ($g_{\text{Moon}} = 1.62 \text{ m/s}^2$.)
+
+## Extended Worked Examples
+
+### Example 16: Relative Motion in Two Dimensions
+
+Airplane A flies north at $250 \text{ m/s}$. Airplane B flies at $200 \text{ m/s}$ on a heading of
+$60°$ east of north. Find the velocity of A relative to B.
+
+**Step 1: Write velocity vectors**
+
+$$\vec{v}_A = 250\hat{j} \text{ m/s}$$
+
+$$\vec{v}_B = 200\sin 60°\hat{i} + 200\cos 60°\hat{j} = 173.2\hat{i} + 100\hat{j} \text{ m/s}$$
+
+**Step 2: Relative velocity**
+
+$$\vec{v}_{AB} = \vec{v}_A - \vec{v}_B = -173.2\hat{i} + (250 - 100)\hat{j} = -173.2\hat{i} + 150\hat{j} \text{ m/s}$$
+
+**Step 3: Magnitude and direction**
+
+$$|\vec{v}_{AB}| = \sqrt{173.2^2 + 150^2} = \sqrt{29998 + 22500} = \sqrt{52498} = 229.1 \text{ m/s}$$
+
+$$\theta = \arctan\left(\frac{150}{-173.2}\right) = 180° - 40.9° = 139.1° \text{ from east}$$
+
+So the velocity of A relative to B is $229.1 \text{ m/s}$ at $139.1°$ from east (or $50.9°$ west of
+north).
+
+### Example 17: Non-Uniform Acceleration from a Velocity Function
+
+The velocity of a particle is given by $v(t) = t^3 - 6t^2 + 9t$ (m/s) for $0 \le t \le 5 \text{ s}$.
+
+Find (a) when the particle is at rest, (b) the total distance travelled, and (c) the displacement.
+
+**Step 1: Find when the particle is at rest**
+
+$$v(t) = t^3 - 6t^2 + 9t = t(t^2 - 6t + 9) = t(t - 3)^2 = 0$$
+
+$t = 0$ or $t = 3 \text{ s}$.
+
+**Step 2: Determine the sign of $v$ between critical points**
+
+- $0 \lt t \lt 3$: Test $t = 1$: $v = 1 - 6 + 9 = 4 \gt 0$ (moving forward)
+- $t \gt 3$: Test $t = 4$: $v = 64 - 96 + 36 = 4 \gt 0$ (moving forward)
+
+The particle never moves backward. The velocity is always non-negative (zero only at $t = 0$ and
+$t = 3$).
+
+**Step 3: Total distance = displacement (since $v \ge 0$ always)**
+
+$$s(5) - s(0) = \int_0^5 (t^3 - 6t^2 + 9t) \, dt = \left[ \frac{t^4}{4} - 2t^3 + \frac{9t^2}{2} \right]_0^5$$
+
+$$= \frac{625}{4} - 250 + \frac{225}{2} = 156.25 - 250 + 112.5 = 18.75 \text{ m}$$
+
+**Step 4: Acceleration at key points**
+
+$$a(t) = 3t^2 - 12t + 9 = 3(t^2 - 4t + 3) = 3(t - 1)(t - 3)$$
+
+At $t = 0$: $a = 9 \text{ m/s}^2$ (speeding up) At $t = 3$: $a = 3(9 - 12 + 3) = 0 \text{ m/s}^2$
+(momentarily stationary, inflection point)
+
+:::info
+Even though the particle is stationary at $t = 3 \text{ s}$, the acceleration is also zero
+there, so the particle does not reverse direction. Compare this to projectile motion at the top of
+the trajectory where $v = 0$ but $a = g \ne 0$, so the projectile immediately starts moving
+downward.
+:::
+
+### Example 18: Kinematics with Air Resistance
+
+A $70 \text{ kg}$ skydiver falls from rest. The air resistance force is $F_D = kv^2$ where
+$k = 0.25 \text{ kg/m}$. Calculate (a) the terminal velocity, (b) the velocity after $10 \text{ s}$,
+and (c) the distance fallen after $10 \text{ s}$.
+
+**Step 1: Terminal velocity**
+
+At terminal velocity: $mg = kv_T^2$
+
+$$v_T = \sqrt{\frac{mg}{k}} = \sqrt{\frac{70 \times 9.8}{0.25}} = \sqrt{2744} = 52.4 \text{ m/s}$$
+
+**Step 2: Analytical solution**
+
+The equation of motion is $m\frac{dv}{dt} = mg - kv^2$.
+
+This has the solution:
+
+$$v(t) = v_T \tanh\left(\frac{gt}{v_T}\right)$$
+
+$$v(10) = 52.4 \times \tanh\left(\frac{9.8 \times 10}{52.4}\right) = 52.4 \times \tanh(1.870)$$
+
+$$\tanh(1.870) = \frac{e^{3.74} - e^{-3.74}}{e^{3.74} + e^{-3.74}} = \frac{42.10 - 0.0238}{42.10 + 0.0238} = 0.9989$$
+
+$$v(10) = 52.4 \times 0.9989 = 52.3 \text{ m/s}$$
+
+The skydiver has essentially reached terminal velocity after $10 \text{ s}$.
+
+**Step 3: Distance fallen**
+
+$$y(t) = \frac{v_T^2}{g}\ln\left(\cosh\left(\frac{gt}{v_T}\right)\right)$$
+
+$$y(10) = \frac{2744}{9.8}\ln(\cosh(1.870)) = 280 \times \ln(3.263) = 280 \times 1.183 = 331.2 \text{ m}$$
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Using the Wrong Sign Convention in Free Fall
+
+Always define your positive direction before solving. If upward is positive, then $a = -g$ and
+displacements above the launch point are positive. Many errors come from mixing sign conventions
+mid-problem, especially when combining horizontal and vertical components.
+
+### Pitfall 7: Confusing Average Velocity with Average Speed
+
+Average velocity $= \frac{\text{displacement}}{\text{time}}$ (a vector, can be zero for round
+trips). Average speed $= \frac{\text{total distance}}{\text{time}}$ (a scalar, always positive).
+They are equal only for motion in one direction without reversing.
+
+### Pitfall 8: Assuming Graph Slopes Give Instantaneous Values Everywhere
+
+The slope of a displacement-time graph gives instantaneous velocity. The slope of a velocity-time
+graph gives instantaneous acceleration. However, for curved graphs, the slope changes continuously.
+You must draw a tangent at the specific point to find the instantaneous value -- the average slope
+between two points is not the same as the instantaneous slope.
+
+## Additional Practice Problems
+
+16. A ball is thrown upward from the top of a $50 \text{ m}$ building at $20 \text{ m/s}$. Calculate
+    (a) the maximum height above ground, (b) the time to reach maximum height, (c) the total time in
+    the air, and (d) the velocity just before impact with the ground.
+
+17. A police car chasing a speeding motorist. The motorist passes at $30 \text{ m/s}$. The police
+    car starts $2 \text{ s}$ later with acceleration $3 \text{ m/s}^2$. Calculate (a) when and where
+    the police car catches the motorist, and (b) the speeds of both vehicles at that moment.
+
+18. A projectile is launched from a cliff of height $80 \text{ m}$ at $50 \text{ m/s}$ at $40°$
+    above the horizontal. Calculate (a) the time of flight, (b) the maximum height above the launch
+    point, (c) the horizontal range, and (d) the velocity (magnitude and direction) at impact.
+
+19. Two trains approach each other on parallel tracks. Train A travels at $60 \text{ m/s}$ and Train
+    B at $40 \text{ m/s}$. A bird flies at $80 \text{ m/s}$ from Train A to Train B and back
+    repeatedly until the trains meet. If the trains are initially $2 \text{ km}$ apart, calculate
+    the total distance the bird flies.
+
+20. The position of a particle is given by $x(t) = 2t^3 - 9t^2 + 12t + 1$ (m). Find (a) the times
+    when the particle changes direction, (b) the total distance travelled between $t = 0$ and
+    $t = 4 \text{ s}$, and (c) the average velocity and average speed over this interval.

@@ -401,3 +401,331 @@ direction, and the rocket acquires equal and opposite momentum. This works equal
 
 10. A flat disk of mass $M$ and radius $R$ has a small hole of mass $m$ removed at a distance $r$
     from the center. Find the center of mass of the remaining object.
+
+## 11. Impulse: Extended Analysis and Examples
+
+### Impulse as the Area Under an F-t Graph
+
+When the force is given graphically, the impulse equals the area under the $F$-vs-$t$ curve. For a
+linearly decreasing force (a triangle), the area is
+$\frac{1}{2} \times \text{base} \times \text{height}$.
+
+### Worked Example: Triangular Force Profile
+
+A ball hits a wall with a force that varies linearly from 0 to $F_{\max} = 800 \text{ N}$ over
+$\Delta t = 4 \text{ ms}$, then linearly back to 0 over another $4 \text{ ms}$. Find the total
+impulse and the average force.
+
+The $F$-vs-$t$ graph is a triangle with base $8 \text{ ms}$ and height $800 \text{ N}$.
+
+$$J = \frac{1}{2} \times 0.008 \times 800 = 3.2 \text{ N s}$$
+
+$$F_{\text{avg}} = \frac{J}{\Delta t} = \frac{3.2}{0.008} = 400 \text{ N}$$
+
+The average force is half the peak force, which is always the case for a triangular force profile.
+
+### Worked Example: Variable Force from Calculus
+
+A force $F(t) = 6t^2 - 2t$ (in N) acts on a $3 \text{ kg}$ object initially at rest. Find the
+impulse and velocity at $t = 4 \text{ s}$.
+
+$$J = \int_0^4 (6t^2 - 2t)\, dt = \left[2t^3 - t^2\right]_0^4 = 128 - 16 = 112 \text{ N s}$$
+
+$$v = \frac{J}{m} = \frac{112}{3} = 37.3 \text{ m/s}$$
+
+## 12. Collisions: Extended Analysis
+
+### Worked Example: Two-Dimensional Collision
+
+A $2 \text{ kg}$ ball moving at $5 \text{ m/s}$ strikes a stationary $3 \text{ kg}$ ball. After the
+collision, the $2 \text{ kg}$ ball moves at $30^{\circ}$ above the original direction at
+$3 \text{ m/s}$. Find the velocity of the $3 \text{ kg}$ ball.
+
+**Conservation of $x$-momentum:**
+
+$$2(5) + 0 = 2(3\cos 30^{\circ}) + 3v_{2x}$$
+
+$$10 = 5.196 + 3v_{2x}$$
+
+$$v_{2x} = \frac{4.804}{3} = 1.601 \text{ m/s}$$
+
+**Conservation of $y$-momentum:**
+
+$$0 = 2(3\sin 30^{\circ}) + 3v_{2y}$$
+
+$$0 = 3 + 3v_{2y}$$
+
+$$v_{2y} = -1.0 \text{ m/s}$$
+
+**Speed of $3 \text{ kg}$ ball:**
+
+$$v_2 = \sqrt{1.601^2 + (-1.0)^2} = \sqrt{2.563 + 1} = \sqrt{3.563} = 1.89 \text{ m/s}$$
+
+**Direction:** $\theta = \arctan\left(\frac{-1.0}{1.601}\right) = -32.0^{\circ}$ (below the original
+direction).
+
+### Worked Example: Ballistic Pendulum
+
+A $10 \text{ g}$ bullet travelling at $400 \text{ m/s}$ embeds itself in a $2 \text{ kg}$ wooden
+block hanging from a string. Find the maximum height the block reaches.
+
+**Phase 1: Collision (conservation of momentum, perfectly inelastic).**
+
+$$mv = (m + M)V$$
+
+$$0.01 \times 400 = (0.01 + 2)V$$
+
+$$V = \frac{4}{2.01} = 1.99 \text{ m/s}$$
+
+**Phase 2: Swing (conservation of energy).**
+
+$$\frac{1}{2}(m + M)V^2 = (m + M)gh$$
+
+$$h = \frac{V^2}{2g} = \frac{1.99^2}{2 \times 9.8} = \frac{3.96}{19.6} = 0.202 \text{ m}$$
+
+The key insight is that momentum is conserved during the collision (very short time, large internal
+forces), but mechanical energy is not (the collision is inelastic). After the collision, energy is
+conserved during the upward swing (only gravity does work).
+
+## 13. Center of Mass: Extended Examples
+
+### Worked Example: CM of a Non-Uniform Rod
+
+A thin rod of length $L$ and mass $M$ has linear mass density $\lambda(x) = \lambda_0 x/L$, where
+$x$ is the distance from one end. Find the center of mass.
+
+$$\bar{x} = \frac{\int_0^L x\lambda(x)\, dx}{\int_0^L \lambda(x)\, dx} = \frac{\int_0^L x \cdot \frac{\lambda_0 x}{L}\, dx}{\int_0^L \frac{\lambda_0 x}{L}\, dx}$$
+
+$$= \frac{\frac{\lambda_0}{L}\int_0^L x^2\, dx}{\frac{\lambda_0}{L}\int_0^L x\, dx} = \frac{\frac{L^3}{3}}{\frac{L^2}{2}} = \frac{2L}{3}$$
+
+The center of mass is at $\frac{2}{3}L$ from the lighter end (not at the midpoint), because more
+mass is concentrated toward the heavier end.
+
+### Worked Example: CM of an L-Shaped Object
+
+Two uniform rods, each of mass $M$ and length $L$, are joined at right angles to form an L shape.
+Find the center of mass.
+
+Take the origin at the corner. Rod 1 lies along the positive $x$-axis with CM at $(L/2, 0)$. Rod 2
+lies along the positive $y$-axis with CM at $(0, L/2)$.
+
+$$\bar{x} = \frac{M \cdot L/2 + M \cdot 0}{2M} = \frac{L}{4}$$
+
+$$\bar{y} = \frac{M \cdot 0 + M \cdot L/2}{2M} = \frac{L}{4}$$
+
+The center of mass is at $(L/4, L/4)$ from the corner.
+
+## 14. Rocket Propulsion: Extended Analysis (AP Physics C)
+
+### Worked Example: Rocket Velocity
+
+A rocket has initial mass $m_0 = 50000 \text{ kg}$ and final mass $m_f = 10000 \text{ kg}$. The
+exhaust velocity is $v_e = 3000 \text{ m/s}$. Find the velocity gained.
+
+$$\Delta v = v_e \ln\frac{m_0}{m_f} = 3000 \times \ln\left(\frac{50000}{10000}\right) = 3000 \times \ln 5 = 3000 \times 1.609 = 4828 \text{ m/s}$$
+
+### Why Multi-Stage Rockets Are More Efficient
+
+For a single-stage rocket, the mass ratio $m_0/m_f$ is limited by the structural mass of the tank
+and engine. A multi-stage rocket discards the empty first-stage tank and engine, reducing the mass
+that must be accelerated in subsequent stages. This dramatically improves the mass ratio for each
+stage.
+
+For a two-stage rocket with equal exhaust velocities and equal structural fractions, the total
+velocity gain is:
+
+$$\Delta v_{\text{total}} = v_e \ln\frac{m_0}{m_1} + v_e \ln\frac{m_1}{m_f} = v_e \ln\frac{m_0}{m_f}$$
+
+This is the same as a single-stage rocket with the same mass ratio, but the structural mass is much
+less because each stage only needs to be strong enough for its own fuel load, not the total fuel
+load.
+
+## 15. Summary Table: Collision Types
+
+| Property                   | Elastic  | Inelastic       | Perfectly Inelastic  |
+| -------------------------- | -------- | --------------- | -------------------- |
+| Momentum conserved         | Yes      | Yes             | Yes                  |
+| Kinetic energy conserved   | Yes      | No              | No                   |
+| Maximum KE loss            | 0        | Varies          | Maximum              |
+| Objects stick together     | No       | No              | Yes                  |
+| Coefficient of restitution | $e = 1$  | $0 \lt e \lt 1$ | $e = 0$              |
+| Relative velocity          | Reverses | Reduced         | Zero (same velocity) |
+
+## 16. Practice Questions (Additional)
+
+11. A $0.05 \text{ kg}$ tennis ball hits a racket at $20 \text{ m/s}$ and rebounds at
+    $25 \text{ m/s}$ at an angle of $30^{\circ}$ from the original direction. If the contact time is
+    $5 \text{ ms}$, find the average force exerted by the racket.
+
+12. A $5 \text{ kg}$ object moving at $8 \text{ m/s}$ collides with a $3 \text{ kg}$ object moving
+    at $4 \text{ m/s}$ in the same direction. After the collision, the $5 \text{ kg}$ object moves
+    at $5 \text{ m/s}$ in the same direction. Find the velocity of the $3 \text{ kg}$ object and the
+    coefficient of restitution.
+
+13. A force $F(t) = 12t - 3t^2$ (in N) acts on a $4 \text{ kg}$ object initially moving at
+    $2 \text{ m/s}$. Find (a) the time when the object is at rest, (b) the impulse from $t = 0$ to
+    that time, and (c) the impulse from $t = 0$ to $t = 6 \text{ s}$.
+
+14. Two ice skaters of masses $50 \text{ kg}$ and $70 \text{ kg}$ stand facing each other on
+    frictionless ice. They push off each other, and the $50 \text{ kg}$ skater moves at
+    $3 \text{ m/s}$. Find the velocity of the $70 \text{ kg}$ skater and the total kinetic energy of
+    the system.
+
+15. A rocket burns fuel at a rate of $100 \text{ kg/s}$ with an exhaust velocity of
+    $2500 \text{ m/s}$. The initial mass is $20000 \text{ kg}$. Find (a) the thrust and (b) the
+    velocity after $60 \text{ s}$ of burning, assuming the rocket starts from rest in deep space (no
+    gravity).
+
+## Extended Worked Examples
+
+### Example 16: Glancing Collision with Energy Analysis
+
+A $4 \text{ kg}$ object moving at $6 \text{ m/s}$ collides with a stationary $6 \text{ kg}$ object
+on a frictionless surface. After the collision, the $6 \text{ kg}$ object moves at $3 \text{ m/s}$
+at $45°$ to the original direction. Determine the final velocity of the $4 \text{ kg}$ object and
+classify the collision.
+
+**Step 1: Conservation of momentum (x-direction)**
+
+$$m_1 u_1 = m_1 v_{1x} + m_2 v_{2x}$$
+
+$$4 \times 6 = 4v_{1x} + 6 \times 3\cos 45°$$
+
+$$24 = 4v_{1x} + 12.728$$
+
+$$v_{1x} = \frac{24 - 12.728}{4} = 2.818 \text{ m/s}$$
+
+**Step 2: Conservation of momentum (y-direction)**
+
+$$0 = m_1 v_{1y} + m_2 v_{2y}$$
+
+$$0 = 4v_{1y} + 6 \times 3\sin 45°$$
+
+$$v_{1y} = \frac{-12.728}{4} = -3.182 \text{ m/s}$$
+
+**Step 3: Final velocity of the $4 \text{ kg}$ object**
+
+$$|v_1| = \sqrt{2.818^2 + (-3.182)^2} = \sqrt{7.941 + 10.125} = \sqrt{18.066} = 4.251 \text{ m/s}$$
+
+$$\theta = \arctan\left(\frac{-3.182}{2.818}\right) = -48.5°$$
+
+**Step 4: Classify the collision**
+
+$$KE_i = \frac{1}{2}(4)(6^2) = 72 \text{ J}$$
+
+$$KE_f = \frac{1}{2}(4)(4.251)^2 + \frac{1}{2}(6)(3^2) = \frac{1}{2}(4)(18.07) + \frac{1}{2}(6)(9) = 36.14 + 27 = 63.14 \text{ J}$$
+
+$$KE_f \lt KE_i$$, so this is an inelastic collision (but not perfectly inelastic since the objects
+did not stick together). Energy lost $= 72 - 63.14 = 8.86 \text{ J}$.
+
+### Example 17: Impulse and Force-Time Graph Analysis
+
+A $2 \text{ kg}$ object initially at rest is subjected to a force described by:
+
+$$F(t) = \begin{cases} 20t & 0 \le t \le 2 \\ 40 - 10t & 2 \lt t \le 4 \\ 0 & t \gt 4 \end{cases}$$
+
+where $F$ is in newtons and $t$ in seconds. Find the velocity at $t = 4 \text{ s}$ and the average
+force.
+
+**Step 1: Calculate total impulse**
+
+$$J = \int_0^2 20t \, dt + \int_2^4 (40 - 10t) \, dt$$
+
+$$J = \left[ 10t^2 \right]_0^2 + \left[ 40t - 5t^2 \right]_2^4$$
+
+$$J = (40 - 0) + (160 - 80 - 80 + 20) = 40 + 20 = 60 \text{ N}\cdot\text{s}$$
+
+**Step 2: Final velocity**
+
+$$J = mv - mu = 2v - 0 \implies v = 30 \text{ m/s}$$
+
+**Step 3: Average force**
+
+$$F_{\text{avg}} = \frac{J}{\Delta t} = \frac{60}{4} = 15 \text{ N}$$
+
+### Example 18: Perfectly Inelastic Collision with Rotation
+
+A $0.1 \text{ kg}$ bullet travelling at $400 \text{ m/s}$ embeds itself in a wooden block of mass
+$1.9 \text{ kg}$ suspended by a $2 \text{ m}$ string. Find the maximum height the block rises.
+
+**Step 1: Momentum conservation (perfectly inelastic collision)**
+
+$$mv = (m + M)V$$
+
+$$0.1 \times 400 = (0.1 + 1.9)V$$
+
+$$40 = 2V \implies V = 20 \text{ m/s}$$
+
+**Step 2: Energy conservation (pendulum swing)**
+
+$$\frac{1}{2}(m + M)V^2 = (m + M)gh$$
+
+$$h = \frac{V^2}{2g} = \frac{400}{2 \times 9.8} = 20.4 \text{ m}$$
+
+**Step 3: Check feasibility**
+
+The string length is only $2 \text{ m}$, so the block cannot rise $20.4 \text{ m}$. This means the
+block swings past the horizontal. Let us check the velocity at the top of the swing:
+
+At the top of a vertical circle, the block must have enough speed to maintain tension:
+
+$$V_{\text{top}}^2 = V^2 - 4gL = 400 - 4 \times 9.8 \times 2 = 400 - 78.4 = 321.6$$
+
+$$V_{\text{top}} = 17.9 \text{ m/s}$$
+
+Since $V_{\text{top}} \gt 0$, the block completes full circles. The string remains taut at the top
+if:
+
+$$T + (m+M)g = \frac{(m+M)V_{\text{top}}^2}{L}$$
+
+$$T = 2 \times \frac{321.6}{2} - 2 \times 9.8 = 321.6 - 19.6 = 302 \text{ N}$$
+
+The tension is positive, so the block does indeed complete full vertical circles.
+
+:::info
+This is a classic ballistic pendulum problem with a twist: the bullet has enough energy to
+make the block complete full vertical circles. In most textbook versions, the block only swings to a
+modest height.
+:::
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Momentum Is a Vector -- Direction Matters
+
+Momentum conservation applies separately in each direction. In 2D collisions, you must resolve
+momentum into components. A common error is to use scalar momentum conservation in 2D problems.
+
+### Pitfall 7: Confusing Impulse with Force
+
+Impulse $J = F\Delta t = \Delta p$. A small force applied for a long time can produce the same
+impulse (and velocity change) as a large force applied for a short time. Always think about the
+_area under the force-time graph_, not just the peak force.
+
+### Pitfall 8: Assuming KE Is Conserved in All Collisions
+
+Only _elastic_ collisions conserve kinetic energy. In real-world collisions, some KE is always
+converted to heat, sound, or deformation. Before using KE conservation, verify that the collision is
+elastic (or that the problem states it is).
+
+## Additional Practice Problems
+
+16. A $1500 \text{ kg}$ car travelling at $20 \text{ m/s}$ rear-ends a $2500 \text{ kg}$ truck
+    travelling at $15 \text{ m/s}$ in the same direction. The vehicles stick together. Calculate the
+    final velocity, the KE lost, and the impulse on each vehicle.
+
+17. A tennis ball of mass $0.06 \text{ kg}$ is struck by a racket. The force on the ball during the
+    $0.005 \text{ s}$ contact is $F(t) = 1200 \sin(200\pi t)$ (N). Calculate the impulse and the
+    speed of the ball after impact if it was initially at rest.
+
+18. A $3 \text{ kg}$ object moving at $5 \text{ m/s}$ collides elastically with a $1 \text{ kg}$
+    object at rest. Use the elastic collision formulas to find the final velocities of both objects.
+
+19. A $60 \text{ kg}$ person standing on ice catches a $2 \text{ kg}$ ball thrown at
+    $15 \text{ m/s}$. Calculate the person's velocity after catching the ball. If the person then
+    throws the ball back at $15 \text{ m/s}$ (relative to the person), what is the person's new
+    velocity?
+
+20. Two identical objects collide. Object A has velocity $3\hat{i} + 2\hat{j}$ m/s and Object B has
+    velocity $-1\hat{i} + 4\hat{j}$ m/s. After the elastic collision, Object A moves with velocity
+    $1\hat{i} + 3\hat{j}$ m/s. Find the final velocity of Object B and verify both momentum and KE
+    conservation.

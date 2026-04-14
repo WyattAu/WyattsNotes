@@ -424,3 +424,326 @@ hyperbolas. Circular orbits are a special case of elliptical orbits with eccentr
 
 10. A $2000 \text{ kg}$ car towing a $1000 \text{ kg}$ trailer accelerates at $1.5 \text{ m/s}^2$.
     If the tension in the tow bar is $1800 \text{ N}$, find the friction force on the car.
+
+## 10. Friction: A Deeper Look
+
+### Microscopic Origin of Friction
+
+At the microscopic level, even apparently smooth surfaces are rough. When two surfaces are pressed
+together, the microscopic peaks (asperities) interlock. To slide the surfaces, these interlocking
+features must be broken or deformed. The force needed is friction.
+
+**Static friction** involves cold welding: the atoms at the contact points form temporary bonds.
+These bonds must be broken simultaneously to initiate motion, which requires a larger force. Once
+sliding begins, the surfaces do not have time to form as many bonds, and the kinetic friction force
+is lower.
+
+### The Angle of Repose
+
+The steepest angle at which an object on an inclined plane remains stationary is the **angle of
+repose**, given by:
+
+$$\theta_r = \arctan(\mu_s)$$
+
+This is because the block is on the point of sliding when $mg\sin\theta = \mu_s mg\cos\theta$, i.e.,
+$\tan\theta = \mu_s$. This relationship is used in geology to predict landslides and in industry to
+design hoppers and chutes.
+
+### Worked Example: Friction on a Banked Curve Without Friction
+
+A circular road of radius $80 \text{ m}$ is banked at $15^{\circ}$. Find the speed at which a car
+can round the curve without needing any friction.
+
+At the ideal speed, the horizontal component of the normal force provides the centripetal force, and
+the vertical component balances gravity:
+
+$$N\sin\theta = \frac{mv^2}{r}, \qquad N\cos\theta = mg$$
+
+Dividing: $\tan\theta = \frac{v^2}{rg}$
+
+$$v = \sqrt{rg\tan\theta} = \sqrt{80 \times 9.8 \times \tan 15^{\circ}} = \sqrt{80 \times 9.8 \times 0.2679} = \sqrt{209.9} = 14.5 \text{ m/s}$$
+
+At this speed, the car can negotiate the curve even on ice. Below this speed, friction acts up the
+slope; above it, friction acts down the slope.
+
+## 11. Connected Bodies: Systematic Approach
+
+### Worked Example: Three-Body System with a Pulley
+
+Three blocks are connected as follows: $m_1 = 4 \text{ kg}$ and $m_2 = 6 \text{ kg}$ on a
+frictionless table, connected by a string over a pulley at the edge, with $m_3 = 5 \text{ kg}$
+hanging vertically.
+
+**System approach:** The net force on the system is $m_3 g$ (the weight of the hanging mass). The
+total mass being accelerated is $m_1 + m_2 + m_3 = 15 \text{ kg}$.
+
+$$a = \frac{m_3 g}{m_1 + m_2 + m_3} = \frac{5 \times 9.8}{15} = \frac{49}{15} = 3.27 \text{ m/s}^2$$
+
+**Individual approach for tension:** For $m_3$:
+
+$$m_3 g - T = m_3 a \implies T = m_3(g - a) = 5(9.8 - 3.27) = 5 \times 6.53 = 32.7 \text{ N}$$
+
+For the string between $m_1$ and $m_2$ on the table: $T' = m_2 a = 6 \times 3.27 = 19.6 \text{ N}$.
+
+Note that the tension in the string connecting to the hanging mass ($32.7 \text{ N}$) is greater
+than the tension in the string between $m_1$ and $m_2$ ($19.6 \text{ N}$), because the latter string
+only needs to accelerate $m_2$, while the former must also provide the net force to accelerate
+$m_3$.
+
+## 12. Gravitational Field Strength: Derivation of Key Results
+
+### Variation of $g$ with Altitude
+
+At the Earth's surface, $g \approx 9.8 \text{ m/s}^2$. At height $h$ above the surface:
+
+$$g(h) = \frac{GM}{(R_E + h)^2}$$
+
+At $h = R_E$ (one Earth radius above the surface):
+$g = \frac{GM}{4R_E^2} = \frac{g_0}{4} \approx 2.45 \text{ m/s}^2$.
+
+This rapid decrease is why astronauts in low Earth orbit (altitude about 400 km) are not truly
+weightless because of distance from Earth -- they are weightless because they are in free fall. The
+gravitational field strength at 400 km altitude is $g \approx 8.7 \text{ m/s}^2$, about 89% of the
+surface value.
+
+### Gravitational Field Strength Inside a Uniform Sphere
+
+For a point at distance $r$ from the centre of a uniform sphere of radius $R$ and mass $M$:
+
+$$g(r) = \frac{GMr}{R^3} \quad (r \le R)$$
+
+$$g(r) = \frac{GM}{r^2} \quad (r \gt R)$$
+
+Inside the sphere, $g$ increases linearly with $r$ and reaches its maximum at the surface. This is
+because only the mass within radius $r$ contributes to the gravitational force at that point (by
+Newton's shell theorem).
+
+## 13. Orbital Mechanics: Extended Worked Examples
+
+### Worked Example: Satellite Speed and Period
+
+A satellite orbits at an altitude of $500 \text{ km}$ above Earth's surface.
+
+$$r = R_E + h = 6.371 \times 10^6 + 5 \times 10^5 = 6.871 \times 10^6 \text{ m}$$
+
+$$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24}}{6.871 \times 10^6}} = \sqrt{5.80 \times 10^7} = 7615 \text{ m/s}$$
+
+$$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.871 \times 10^6}{7615} = 5671 \text{ s} \approx 94.5 \text{ min}$$
+
+### Worked Example: Escape Velocity from a Planet
+
+The escape velocity from a planet of mass $M$ and radius $R$ is:
+
+$$v_e = \sqrt{\frac{2GM}{R}}$$
+
+For Earth:
+$v_e = \sqrt{\frac{2 \times 6.674 \times 10^{-11} \times 5.97 \times 10^{24}}{6.371 \times 10^6}} = 11186 \text{ m/s} \approx 11.2 \text{ km/s}$.
+
+A useful approximation: $v_e \approx \sqrt{2} \times v_{\text{orbit}}$ for a surface-skimming orbit.
+The factor of $\sqrt{2}$ arises because escape requires twice the kinetic energy of a circular
+orbit: $\frac{1}{2}mv_e^2 = 2 \times \frac{1}{2}mv_{\text{orbit}}^2$.
+
+## 14. Summary Table: Forces and Their Characteristics
+
+| Force            | Law                            | Direction                              | Depends On                          |
+| ---------------- | ------------------------------ | -------------------------------------- | ----------------------------------- |
+| Gravity          | $F = GMm/r^2$                  | Attractive, along line joining centres | Masses, separation                  |
+| Normal           | Adjusts to prevent penetration | Perpendicular to contact surface       | Other forces present                |
+| Tension          | Along string                   | Away from object                       | Applied forces, mass                |
+| Static friction  | $f_s \le \mu_s N$              | Opposes tendency to slide              | Normal force, coefficient           |
+| Kinetic friction | $f_k = \mu_k N$                | Opposes motion                         | Normal force, coefficient           |
+| Spring           | $F = -kx$                      | Toward equilibrium position            | Displacement, spring constant       |
+| Drag             | $F_d \propto v^2$              | Opposes motion                         | Speed, cross-section, fluid density |
+
+## 15. Common Pitfalls: Extended
+
+10. **Assuming the normal force equals $mg$ on an inclined plane.** The normal force is
+    $mg\cos\theta$, not $mg$. Always resolve forces perpendicular to the surface.
+
+11. **Forgetting that tension has a maximum value.** A string can only pull, not push. If the
+    calculated tension is negative, the string has gone slack and the tension is zero.
+
+12. **Applying $F = ma$ to individual objects when using the system approach.** The system approach
+    gives the acceleration of the entire system but does not give tensions or internal forces.
+
+13. **Ignoring air resistance in orbital calculations.** While this is a valid approximation for
+    satellites above the atmosphere, it fails for objects in the lower atmosphere.
+
+14. **Using $g = 9.8 \text{ m/s}^2$ for objects far from Earth's surface.** Use $g = GM/r^2$ with
+    the actual distance from Earth's centre.
+
+15. **Confusing the mass of an orbiting body with the mass of the central body.** In
+    $v = \sqrt{GM/r}$, $M$ is the mass of the body being orbited (e.g., Earth), not the satellite.
+
+## Practice Questions (Additional)
+
+11. A block of mass $m$ is placed on a wedge of mass $M$ with angle $\theta$. All surfaces are
+    frictionless. Find the acceleration of the wedge. (Hint: use conservation of momentum in the
+    horizontal direction.)
+
+12. A $3 \text{ kg}$ block on a frictionless table is connected by a string over a pulley to a
+    $2 \text{ kg}$ block hanging off the edge. The pulley has mass $0.5 \text{ kg}$ and radius
+    $0.1 \text{ m}$ (moment of inertia $I = \frac{1}{2}mr^2$). Find the acceleration of the system
+    and the tension on each side of the pulley.
+
+13. A rocket of mass $1000 \text{ kg}$ is launched vertically. The engine produces a thrust of
+    $15000 \text{ N}$ for $30 \text{ s}$. Find the maximum height reached. (Assume $g$ is constant
+    at $9.8 \text{ m/s}^2$ and neglect air resistance.)
+
+14. Two masses $m_1 = 2 \text{ kg}$ and $m_2 = 3 \text{ kg}$ are connected by a light string over a
+    smooth pulley. $m_1$ rests on a rough table with $\mu_k = 0.3$. Find the acceleration and the
+    tension in the string.
+
+15. Calculate the gravitational field strength at a point halfway between the Earth and the Moon.
+    (Earth-Moon distance $= 3.84 \times 10^8 \text{ m}$, $M_E = 5.97 \times 10^{24} \text{ kg}$,
+    $M_M = 7.35 \times 10^{22} \text{ kg}$.)
+
+## Extended Worked Examples
+
+### Example 16: Atwood Machine with Massive Pulley
+
+Two masses $m_1 = 4 \text{ kg}$ and $m_2 = 6 \text{ kg}$ are connected by a light string over a
+pulley of mass $M = 2 \text{ kg}$ and radius $R = 0.1 \text{ m}$ (solid disk,
+$I = \frac{1}{2}MR^2$). Find the acceleration of the system and the tensions on each side of the
+pulley.
+
+**Step 1: Write equations for each mass and the pulley**
+
+For $m_1$ (lighter, accelerates up):
+
+$$T_1 - m_1 g = m_1 a$$
+
+For $m_2$ (heavier, accelerates down):
+
+$$m_2 g - T_2 = m_2 a$$
+
+For the pulley (rotates clockwise):
+
+$$T_2 R - T_1 R = I\alpha = \frac{1}{2}MR^2 \times \frac{a}{R} = \frac{1}{2}MaR$$
+
+$$T_2 - T_1 = \frac{1}{2}Ma$$
+
+**Step 2: Solve the system**
+
+From the first two equations:
+
+$$T_1 = m_1(g + a), \quad T_2 = m_2(g - a)$$
+
+Substituting into the pulley equation:
+
+$$m_2(g - a) - m_1(g + a) = \frac{1}{2}Ma$$
+
+$$(m_2 - m_1)g - (m_1 + m_2)a = \frac{1}{2}Ma$$
+
+$$a = \frac{(m_2 - m_1)g}{m_1 + m_2 + \frac{1}{2}M} = \frac{(6 - 4) \times 9.8}{4 + 6 + 1} = \frac{19.6}{11} = 1.78 \text{ m/s}^2$$
+
+**Step 3: Find the tensions**
+
+$$T_1 = 4(9.8 + 1.78) = 4 \times 11.58 = 46.3 \text{ N}$$
+
+$$T_2 = 6(9.8 - 1.78) = 6 \times 8.02 = 48.1 \text{ N}$$
+
+:::info
+With a massless pulley, $T_1 = T_2$ and
+$a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{19.6}{10} = 1.96 \text{ m/s}^2$. The massive pulley
+reduces the acceleration because some of the net force goes into rotating the pulley rather than
+accelerating the masses. The difference $T_2 - T_1 = 1.8 \text{ N}$ is the net torque on the pulley.
+:::
+
+### Example 17: Object in a Fluid with Drag
+
+A $0.5 \text{ kg}$ steel ball is dropped into a tank of oil. The drag force is given by $F_D = bv$
+where $b = 0.8 \text{ N}\cdot\text{s/m}$. Find (a) the terminal velocity, (b) the time to reach 63%
+of terminal velocity, and (c) the velocity after $3 \text{ s}$.
+
+**Step 1: Terminal velocity (net force = 0)**
+
+$$mg = bv_T$$
+
+$$v_T = \frac{mg}{b} = \frac{0.5 \times 9.8}{0.8} = 6.125 \text{ m/s}$$
+
+**Step 2: Time constant**
+
+The equation of motion is $ma = mg - bv$, which gives:
+
+$$v(t) = v_T(1 - e^{-t/\tau})$$
+
+where $\tau = m/b = 0.5/0.8 = 0.625 \text{ s}$.
+
+The time to reach $63\%$ of $v_T$ is $t = \tau = 0.625 \text{ s}$.
+
+**Step 3: Velocity after $3 \text{ s}$**
+
+$$v(3) = 6.125(1 - e^{-3/0.625}) = 6.125(1 - e^{-4.8}) = 6.125(1 - 0.00823) = 6.125 \times 0.9918 = 6.074 \text{ m/s}$$
+
+The ball is essentially at terminal velocity after $3 \text{ s}$ (about $99.2\%$ of $v_T$).
+
+### Example 18: Tension in a Cable at an Angle
+
+A $20 \text{ kg}$ traffic light is suspended by two cables. Cable A makes $30°$ with the horizontal
+and Cable B makes $45°$ with the horizontal. Find the tension in each cable.
+
+**Step 1: Resolve forces**
+
+Horizontal: $T_A \cos 30° = T_B \cos 45°$
+
+$$T_A \times 0.866 = T_B \times 0.707 \implies T_A = 0.816 T_B$$
+
+Vertical: $T_A \sin 30° + T_B \sin 45° = mg$
+
+$$T_A \times 0.5 + T_B \times 0.707 = 20 \times 9.8 = 196 \text{ N}$$
+
+**Step 2: Substitute and solve**
+
+$$0.816 T_B \times 0.5 + 0.707 T_B = 196$$
+
+$$0.408 T_B + 0.707 T_B = 196$$
+
+$$1.115 T_B = 196 \implies T_B = 175.8 \text{ N}$$
+
+$$T_A = 0.816 \times 175.8 = 143.4 \text{ N}$$
+
+**Check:** $143.4 \times 0.5 + 175.8 \times 0.707 = 71.7 + 124.3 = 196.0 \text{ N}$. Confirmed.
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Confusing Mass and Weight in Fluid Problems
+
+When an object is submerged in a fluid, the apparent weight is
+$W_{\text{app}} = mg - \rho_{\text{fluid}} V g$. Do not confuse the actual weight $mg$ with the
+apparent weight. Also, the buoyant force depends on the _fluid density_ and the _submerged volume_,
+not the object's density.
+
+### Pitfall 7: Drawing Incorrect Normal Force Directions
+
+The normal force is always perpendicular to the _surface of contact_, not necessarily vertical. On a
+curved surface, the normal force direction changes along the surface. Always draw the normal force
+perpendicular to the contact surface at the point of contact.
+
+### Pitfall 8: Assuming Tension Is the Same Throughout a Rope with Mass
+
+For a "light" (massless) rope, the tension is the same throughout. For a heavy rope, the tension
+varies along its length due to the weight of the rope itself. At the top of a hanging heavy rope,
+the tension equals the total weight; at the bottom, it is zero.
+
+## Additional Practice Problems
+
+16. A $3 \text{ kg}$ block on a $25°$ incline is connected by a string over a pulley to a
+    $5 \text{ kg}$ block hanging vertically. The coefficient of kinetic friction is $0.3$. Calculate
+    the acceleration of the system and the tension in the string.
+
+17. A helicopter of mass $3000 \text{ kg}$ is rising at $2 \text{ m/s}^2$. Calculate the upward
+    force from the rotors. If the helicopter then moves at constant velocity, what upward force is
+    needed?
+
+18. A block of mass $m$ is placed on a frictionless cone with half-angle $\theta$. The cone rotates
+    about its vertical axis with angular velocity $\omega$. Find the height above the apex at which
+    the block remains stationary relative to the cone.
+
+19. A $10 \text{ kg}$ crate is pushed across a rough floor ($\mu_k = 0.4$) by a force of
+    $80 \text{ N}$ applied at $30°$ below the horizontal. Calculate the normal force, the friction
+    force, and the acceleration.
+
+20. Two blocks ($m_1 = 3 \text{ kg}$ on a table, $m_2 = 2 \text{ kg}$ hanging) are connected by a
+    string over a pulley. The table is frictionless. Calculate (a) the acceleration, (b) the
+    tension, and (c) the speed after $m_2$ has fallen $0.5 \text{ m}$ from rest.

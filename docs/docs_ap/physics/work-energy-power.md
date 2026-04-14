@@ -400,3 +400,330 @@ mass.
 
 10. A potential energy function is given by $U(x) = x^4 - 2x^2$ (in J, with $x$ in m). Find all
     equilibrium positions and classify each as stable, unstable, or neutral.
+
+## 11. Work by a Variable Force: Detailed Examples (AP Physics C)
+
+### Worked Example: Spring Force
+
+A spring obeys Hooke's law with $k = 200 \text{ N/m}$. Find the work done compressing it from
+$x = 0$ to $x = 0.15 \text{ m}$.
+
+$$W = \int_0^{0.15} (-kx)\, dx = -\left[\frac{1}{2}kx^2\right]_0^{0.15} = -\frac{1}{2}(200)(0.0225) = -2.25 \text{ J}$$
+
+The negative sign indicates the spring force opposes the displacement. The magnitude of work done
+_by_ the spring is $2.25 \text{ J}$, and the work done _on_ the spring (by the external agent) is
+$+2.25 \text{ J}$, which is stored as elastic potential energy.
+
+### Worked Example: Non-Linear Force
+
+A force $F(x) = 3x^2 + 2x$ (in N, with $x$ in m) acts on a $2 \text{ kg}$ object. Find the work done
+from $x = 0$ to $x = 3 \text{ m}$ and the speed at $x = 3 \text{ m}$ if the object starts from rest.
+
+$$W = \int_0^3 (3x^2 + 2x)\, dx = \left[x^3 + x^2\right]_0^3 = 27 + 9 = 36 \text{ J}$$
+
+By the work-energy theorem: $W = \frac{1}{2}mv_f^2 - 0$
+
+$$v_f = \sqrt{\frac{2W}{m}} = \sqrt{\frac{72}{2}} = \sqrt{36} = 6 \text{ m/s}$$
+
+## 12. Conservation of Energy: Extended Examples
+
+### Worked Example: Block-Spring System on a Frictionless Surface
+
+A $3 \text{ kg}$ block slides on a frictionless surface at $4 \text{ m/s}$ and strikes a spring with
+$k = 500 \text{ N/m}$. Find the maximum compression of the spring.
+
+At maximum compression, all kinetic energy has been converted to elastic potential energy:
+
+$$\frac{1}{2}mv^2 = \frac{1}{2}kx^2$$
+
+$$x = v\sqrt{\frac{m}{k}} = 4\sqrt{\frac{3}{500}} = 4 \times 0.0775 = 0.310 \text{ m}$$
+
+### Worked Example: Pendulum with Energy
+
+A pendulum of length $L = 1.5 \text{ m}$ and mass $m = 0.5 \text{ kg}$ is released from horizontal
+($\theta = 90^{\circ}$). Find the speed at the lowest point.
+
+The pendulum bob falls a height $h = L = 1.5 \text{ m}$.
+
+$$mgh = \frac{1}{2}mv^2$$
+
+$$v = \sqrt{2gL} = \sqrt{2 \times 9.8 \times 1.5} = \sqrt{29.4} = 5.42 \text{ m/s}$$
+
+### Worked Example: Loop-the-Loop
+
+A block of mass $m$ slides from rest down a frictionless ramp of height $h$ and enters a vertical
+circular loop of radius $R$. What is the minimum $h$ for the block to complete the loop?
+
+At the top of the loop, the minimum speed to maintain contact is $v = \sqrt{gR}$ (when the normal
+force is zero).
+
+Using conservation of energy from the top of the ramp to the top of the loop (height $= 2R$):
+
+$$mgh = \frac{1}{2}mv^2 + mg(2R) = \frac{1}{2}m(gR) + 2mgR = \frac{5}{2}mgR$$
+
+$$h = \frac{5}{2}R = 2.5R$$
+
+The ramp must be at least 2.5 times the radius of the loop.
+
+## 13. Potential Energy Diagrams: Extended Analysis
+
+### Worked Example: Interpreting $U(x) = x^4 - 2x^2$
+
+$$F(x) = -\frac{dU}{dx} = -(4x^3 - 4x) = -4x(x^2 - 1) = -4x(x-1)(x+1)$$
+
+**Equilibrium points:** $F(x) = 0$ at $x = 0, \pm 1$.
+
+**Classification:**
+
+$$\frac{d^2U}{dx^2} = 12x^2 - 4$$
+
+- At $x = 0$: $\frac{d^2U}{dx^2} = -4 \lt 0$ -- unstable equilibrium (local maximum)
+- At $x = \pm 1$: $\frac{d^2U}{dx^2} = 8 \gt 0$ -- stable equilibrium (local minima)
+
+$U(0) = 0$ (unstable), $U(\pm 1) = 1 - 2 = -1$ (stable, energy $= -1$ J).
+
+An object with total energy $E = -0.5$ J oscillates between the two turning points in one of the
+potential wells. It cannot escape because $E \lt U(0) = 0$.
+
+## 14. Power: Extended Analysis
+
+### Instantaneous Power for Variable Force
+
+When force and velocity are not constant:
+
+$$P(t) = \vec{F}(t) \cdot \vec{v}(t)$$
+
+### Worked Example: Power as a Function of Time
+
+A force $F(t) = 6t$ N acts on a $2 \text{ kg}$ object initially at rest. Find the power at $t = 3$
+s.
+
+$$a = \frac{F}{m} = 3t$$
+
+$$v(t) = \int_0^t 3t'\, dt' = \frac{3t^2}{2}$$
+
+$$P(3) = F(3) \cdot v(3) = 18 \times \frac{27}{2} = 18 \times 13.5 = 243 \text{ W}$$
+
+### Worked Example: Power Needed to Climb at Constant Speed
+
+A $70 \text{ kg}$ cyclist climbs a $6^{\circ}$ hill at $5 \text{ m/s}$. The total resistive force
+(friction plus air resistance) is $20 \text{ N}$. Find the power output.
+
+$$P = Fv = (mg\sin\theta + F_{\text{resist}})v = (70 \times 9.8 \times \sin 6^{\circ} + 20) \times 5$$
+
+$$= (70 \times 9.8 \times 0.1045 + 20) \times 5 = (71.7 + 20) \times 5 = 458.5 \text{ W}$$
+
+This is close to the maximum sustained power output of a trained cyclist, illustrating the
+difficulty of climbing even a modest gradient.
+
+## 15. Summary Table: Energy Forms and Equations
+
+| Energy Type                     | Formula                    | Key Notes                                       |
+| ------------------------------- | -------------------------- | ----------------------------------------------- |
+| Kinetic (translational)         | $K = \frac{1}{2}mv^2$      | Always positive; depends on speed, not velocity |
+| Kinetic (rotational)            | $K = \frac{1}{2}I\omega^2$ | Depends on moment of inertia                    |
+| Gravitational PE (near surface) | $U_g = mgh$                | $h$ measured from arbitrary reference           |
+| Gravitational PE (general)      | $U = -GMm/r$               | Zero at infinity; negative for bound systems    |
+| Elastic PE                      | $U_s = \frac{1}{2}kx^2$    | Requires Hooke's law to hold                    |
+| Total mechanical                | $E = K + U$                | Conserved when only conservative forces act     |
+| Work by non-conservative forces | $W_{nc} = \Delta E$        | Equals change in total mechanical energy        |
+
+## 16. Common Pitfalls: Extended
+
+9. **Using the wrong sign for work done by gravity.** When an object moves down, gravity does
+   positive work ($W_g = +mg\Delta h$, where $\Delta h$ is negative if up is positive). When an
+   object moves up, gravity does negative work. Be careful with sign conventions.
+
+10. **Confusing the reference level for gravitational PE.** The choice of $h = 0$ is arbitrary. What
+    matters is the _change_ in height, $\Delta h$, not the absolute height.
+
+11. **Applying $U = mgh$ when the height change is a significant fraction of the distance from
+    Earth's centre.** Use $U = -GMm/r$ for large altitude changes.
+
+12. **Forgetting that power is the time derivative of work, not force.** $P = dW/dt = Fv$. Power is
+    not $F/t$ or $F/t^2$.
+
+13. **Assuming the force is constant when using $W = Fd\cos\theta$.** If the force varies with
+    position, you must integrate: $W = \int F(x)\, dx$.
+
+## Practice Questions (Additional)
+
+11. A $1.5 \text{ kg}$ object slides from rest down a curved frictionless ramp of height
+    $3 \text{ m}$ and enters a rough horizontal section with $\mu_k = 0.4$. How far does it slide on
+    the rough section before stopping?
+
+12. A spring with $k = 800 \text{ N/m}$ is compressed $0.10 \text{ m}$ and launches a
+    $0.2 \text{ kg}$ ball vertically. Find the maximum height reached (a) on Earth and (b) on the
+    Moon ($g = 1.62 \text{ m/s}^2$).
+
+13. A force $F(x) = -kx + bx^3$ acts on a particle. Find the potential energy function $U(x)$ and
+    identify the equilibrium positions.
+
+14. A $50 \text{ kg}$ child on a swing is pushed to a height $0.8 \text{ m}$ above the lowest point.
+    Find the speed at the lowest point and the speed when the swing is $0.4 \text{ m}$ above the
+    lowest point.
+
+15. The potential energy of a particle is $U(r) = \frac{A}{r} - \frac{B}{r^2}$ where $A$ and $B$ are
+    positive constants. Find (a) the force, (b) the equilibrium position, and (c) whether the
+    equilibrium is stable or unstable.
+
+## Extended Worked Examples
+
+### Example 16: Power Dissipated by Air Resistance
+
+A car of mass $1500 \text{ kg}$ travels at a constant $25 \text{ m/s}$ on a level road. The engine
+produces a driving force of $1200 \text{ N}$. Calculate the power output of the engine and the power
+dissipated by air resistance and rolling friction.
+
+**Step 1: At constant speed, net force is zero**
+
+$$F_{\text{drive}} = F_{\text{resist}} = 1200 \text{ N}$$
+
+**Step 2: Power output**
+
+$$P = Fv = 1200 \times 25 = 30000 \text{ W} = 30 \text{ kW}$$
+
+**Step 3: All power goes to overcoming resistance**
+
+$$P_{\text{dissipated}} = 30 \text{ kW}$$
+
+If the car then accelerates to $30 \text{ m/s}$ with the same driving force:
+
+**Step 4: New resistance at $30 \text{ m/s}$ (assuming air resistance scales as $v^2$)**
+
+$$F_{\text{air}} \propto v^2$$
+
+Let $F_{\text{air,25}} = F_{\text{air}}(25)$ and $F_{\text{roll}}$ be the constant rolling friction.
+
+At $25 \text{ m/s}$: $F_{\text{air}}(25) + F_{\text{roll}} = 1200 \text{ N}$
+
+At $30 \text{ m/s}$:
+$F_{\text{air}}(30) = F_{\text{air}}(25) \times (30/25)^2 = 1.44 \times F_{\text{air}}(25)$
+
+Assuming $F_{\text{air}}(25) = 1000 \text{ N}$ and $F_{\text{roll}} = 200 \text{ N}$:
+
+$$F_{\text{air}}(30) = 1440 \text{ N}$$
+
+$$F_{\text{total resist}}(30) = 1440 + 200 = 1640 \text{ N}$$
+
+**Net force:** $F_{\text{net}} = 1200 - 1640 = -440 \text{ N}$
+
+The car cannot maintain $30 \text{ m/s}$ with the same driving force -- air resistance increases too
+rapidly.
+
+:::info
+Air resistance (drag) force is given by $F_D = \frac{1}{2}\rho C_D A v^2$, where $\rho$ is
+air density, $C_D$ is the drag coefficient, and $A$ is the cross-sectional area. This quadratic
+dependence on velocity is why fuel consumption increases dramatically at high speeds.
+:::
+
+### Example 17: Energy in a Mass-Spring System with Gravity
+
+A $2 \text{ kg}$ block hangs from a vertical spring with $k = 200 \text{ N/m}$. The block is pulled
+down $0.15 \text{ m}$ from equilibrium and released. Find the maximum speed and the maximum height
+above the release point.
+
+**Step 1: Find the equilibrium extension**
+
+At equilibrium, spring force balances weight:
+
+$$kx_0 = mg \implies x_0 = \frac{mg}{k} = \frac{2 \times 9.8}{200} = 0.098 \text{ m}$$
+
+**Step 2: Define the zero of potential energy**
+
+The simplest approach: measure displacements from equilibrium. Gravity shifts the equilibrium
+position but does not affect the oscillation frequency or amplitude.
+
+**Step 3: Maximum speed (at equilibrium position)**
+
+Using energy conservation relative to equilibrium:
+
+$$\frac{1}{2}kA^2 = \frac{1}{2}mv_{\max}^2$$
+
+where $A = 0.15 \text{ m}$ is the amplitude.
+
+$$v_{\max} = A\sqrt{\frac{k}{m}} = 0.15 \times \sqrt{\frac{200}{2}} = 0.15 \times 10 = 1.5 \text{ m/s}$$
+
+**Step 4: Maximum height above release point**
+
+The block oscillates symmetrically about equilibrium, so it rises $0.15 \text{ m}$ above equilibrium
+to $0.15 \text{ m}$ above equilibrium, which is $0.15 + 0.15 = 0.30 \text{ m}$ above the lowest
+point (the release point).
+
+### Example 18: Work Done Against a Non-Conservative Force
+
+A $5 \text{ kg}$ block starts from rest at the top of a rough curved ramp of height $3 \text{ m}$.
+At the bottom, its speed is $6 \text{ m/s}$. Calculate the work done by friction.
+
+**Step 1: Energy at the top**
+
+$$E_{\text{top}} = mgh = 5 \times 9.8 \times 3 = 147 \text{ J}$$
+
+**Step 2: Energy at the bottom**
+
+$$E_{\text{bottom}} = \frac{1}{2}mv^2 = \frac{1}{2} \times 5 \times 36 = 90 \text{ J}$$
+
+**Step 3: Work done by friction**
+
+$$W_f = E_{\text{bottom}} - E_{\text{top}} = 90 - 147 = -57 \text{ J}$$
+
+The friction does $-57 \text{ J}$ of work (dissipates $57 \text{ J}$ of mechanical energy as heat).
+
+**Step 4: Effective coefficient of friction (if the ramp were straight)**
+
+If the ramp length is $L = 6 \text{ m}$:
+
+$$W_f = -fL = -\mu mg\cos\theta \times L$$
+
+$$57 = \mu \times 5 \times 9.8 \times \cos\theta \times 6$$
+
+With $\cos\theta = 3/6 = 0.5$ (from $h = 3 \text{ m}$, $L = 6 \text{ m}$):
+
+$$57 = \mu \times 5 \times 9.8 \times 0.5 \times 6 = 147\mu$$
+
+$$\mu = \frac{57}{147} = 0.388$$
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Confusing Power and Energy
+
+Power is the _rate_ of energy transfer ($P = dW/dt$), measured in watts (W). Energy is the total
+transferred, measured in joules (J). A device with high power can deliver the same energy as a
+low-power device in less time. Always check units: if a question asks for energy, the answer must be
+in joules; if it asks for power, the answer must be in watts.
+
+### Pitfall 7: Forgetting That Work Is a Scalar
+
+Work is $W = \vec{F} \cdot \vec{d} = Fd\cos\theta$. It can be positive, negative, or zero, but it
+has no direction. A common error is to assign a direction to work or to add work components
+vectorially instead of algebraically.
+
+### Pitfall 8: Incorrect Reference Points for Gravitational PE
+
+Gravitational PE depends on the choice of zero point. Only _changes_ in PE are physically
+meaningful: $\Delta PE = mg\Delta h$. Always be explicit about where you are measuring $h$ from, and
+ensure you are consistent throughout the problem.
+
+## Additional Practice Problems
+
+16. A $1200 \text{ kg}$ car accelerates from $0$ to $30 \text{ m/s}$ in $8 \text{ s}$. Calculate (a)
+    the average power developed, (b) the instantaneous power at $t = 4 \text{ s}$ assuming constant
+    acceleration, and (c) the total distance covered.
+
+17. A $0.5 \text{ kg}$ ball is dropped from a height of $20 \text{ m}$. On each bounce, it loses
+    $20\%$ of its kinetic energy. Calculate the height after the first bounce, the velocity just
+    before the second bounce, and the total vertical distance travelled before the ball comes to
+    rest.
+
+18. A force $F = 10 + 3x$ (N) acts on a $4 \text{ kg}$ object from $x = 0$ to $x = 5 \text{ m}$.
+    Calculate the work done, the final speed if starting from rest, and the power delivered at
+    $x = 3 \text{ m}$ if the object is moving at $4 \text{ m/s}$ at that point.
+
+19. A roller coaster car of mass $500 \text{ kg}$ starts from rest at point A, height
+    $30 \text{ m}$. It goes through a loop of radius $10 \text{ m}$ and then up a ramp to point B.
+    If $80\%$ of the initial PE is converted to KE at the top of the loop, calculate the normal
+    force at the top of the loop and the maximum possible height of point B.
+
+20. Two springs with $k_1 = 200 \text{ N/m}$ and $k_2 = 300 \text{ N/m}$ are connected (a) in series
+    and (b) in parallel. For each arrangement, find the effective spring constant, the period of
+    oscillation for a $2 \text{ kg}$ mass, and the energy stored when compressed $0.1 \text{ m}$.

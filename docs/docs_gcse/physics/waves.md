@@ -494,3 +494,288 @@ The ratio is $(6/2)^2 = 9$, so the intensity at 6 m is $1/9$ of the intensity at
 
 15. The intensity of gamma radiation from a source is 800 W/m$^2$ at a distance of 1 m. Calculate
     the intensity at 5 m and explain why gamma radiation is used for sterilising medical equipment.
+
+## 9. Worked Example: Thin Lens Calculation
+
+An object of height 3 cm is placed 15 cm from a convex lens of focal length 10 cm. Find the image
+position, magnification, and nature.
+
+Using the thin lens equation:
+
+$$\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$$
+
+$$\frac{1}{10} = \frac{1}{v} + \frac{1}{15}$$
+
+$$\frac{1}{v} = \frac{1}{10} - \frac{1}{15} = \frac{3 - 2}{30} = \frac{1}{30}$$
+
+$$v = 30 \text{ cm}$$
+
+The image is 30 cm from the lens, on the opposite side to the object (real image).
+
+**Magnification:**
+
+$$m = \frac{v}{u} = \frac{30}{15} = 2$$
+
+The image is 2 times larger than the object: $3 \times 2 = 6 \text{ cm}$ tall. Since $m$ is positive
+and $v$ is positive, the image is real and inverted.
+
+**Check:** The object is between $f$ and $2f$ (between 10 cm and 20 cm), so the image should be
+beyond $2f$, real, inverted, and magnified. Our result ($v = 30 \text{ cm} \gt 2f = 20 \text{ cm}$,
+inverted, $m = 2$) is consistent.
+
+## 10. Worked Example: Using the Diffraction Grating Equation
+
+A diffraction grating has 600 lines per mm. Light of wavelength $550 \text{ nm}$ is incident
+normally. Find the maximum number of bright fringes visible on each side of the central maximum.
+
+$$d = \frac{1}{600 \times 10^3} = 1.667 \times 10^{-6} \text{ m}$$
+
+The maximum order occurs when $\sin\theta = 1$:
+
+$$n_{\max} = \frac{d}{\lambda} = \frac{1.667 \times 10^{-6}}{550 \times 10^{-9}} = 3.03$$
+
+Since $n$ must be an integer, the maximum order is $n = 3$. Including both sides, there are 3
+fringes on each side plus the central maximum, giving 7 fringes in total.
+
+## 11. Why Sound Intensity Follows the Inverse Square Law
+
+For a point source emitting sound uniformly in all directions, the power $P$ is spread over a sphere
+of surface area $4\pi r^2$. The intensity (power per unit area) is:
+
+$$I = \frac{P}{4\pi r^2}$$
+
+Doubling the distance quadruples the area over which the power is distributed, so the intensity
+drops to one-quarter. This is a geometric consequence of living in three-dimensional space and
+applies to any radiation emitted from a point source.
+
+## 12. Worked Example: Sound Intensity and Decibel Level
+
+A speaker emits sound with a power output of 0.01 W. Calculate the intensity and decibel level at
+distances of 2 m and 8 m.
+
+**At 2 m:**
+
+$$I_2 = \frac{0.01}{4\pi(4)} = \frac{0.01}{50.3} = 1.99 \times 10^{-4} \text{ W/m}^2$$
+
+$$\beta_2 = 10\log_{10}\left(\frac{1.99 \times 10^{-4}}{10^{-12}}\right) = 10\log_{10}(1.99 \times 10^8) = 10 \times 8.30 = 83.0 \text{ dB}$$
+
+**At 8 m:**
+
+$$I_8 = \frac{0.01}{4\pi(64)} = \frac{0.01}{804} = 1.24 \times 10^{-5} \text{ W/m}^2$$
+
+$$\beta_8 = 10\log_{10}\left(\frac{1.24 \times 10^{-5}}{10^{-12}}\right) = 10\log_{10}(1.24 \times 10^7) = 10 \times 7.09 = 70.9 \text{ dB}$$
+
+The distance increased by a factor of 4, so the intensity decreased by a factor of 16 ($4^2$), and
+the decibel level decreased by $10\log_{10}(16) = 12.0 \text{ dB}$.
+
+## 13. Polarisation (Higher Tier)
+
+Polarisation is the restriction of wave oscillations to a single plane. Only transverse waves can be
+polarised.
+
+**How Polaroid filters work:** A Polaroid filter contains long-chain polymer molecules aligned in
+one direction. The filter absorbs the component of the electric field parallel to the polymer chains
+and transmits the perpendicular component. The transmitted light is polarised.
+
+**Two Polaroid filters at right angles:** The first filter polarises the light. The second filter
+(the analyser) is at $90^{\circ}$ to the first, so it blocks all the polarised light. No light
+passes through. This is called **crossed Polaroids**.
+
+**Applications of polarisation:**
+
+- Polarising sunglasses reduce glare by blocking horizontally polarised light reflected from
+  surfaces.
+- Liquid crystal displays (LCDs) use polarising filters to control which pixels are visible.
+- Stress analysis in engineering: transparent plastic models are placed between crossed Polaroids,
+  and stress patterns appear as coloured fringes.
+
+## 14. Refractive Index and the Speed of Light
+
+The refractive index $n$ of a medium is defined as:
+
+$$n = \frac{c}{v}$$
+
+where $c$ is the speed of light in a vacuum and $v$ is the speed of light in the medium. Since
+$v \lt c$ for all material media, $n \gt 1$ always.
+
+**Example:** The refractive index of glass is 1.5. Find the speed of light in glass.
+
+$$v = \frac{c}{n} = \frac{3 \times 10^8}{1.5} = 2 \times 10^8 \text{ m/s}$$
+
+Light travels two-thirds as fast in glass as in a vacuum. This is why light bends towards the normal
+when it enters glass: the part of the wavefront that enters the glass first slows down, causing the
+wavefront to rotate.
+
+## 15. Summary Table: Wave Behaviours
+
+| Behaviour    | What Happens                                | Key Equation                          | Everyday Example           |
+| ------------ | ------------------------------------------- | ------------------------------------- | -------------------------- |
+| Reflection   | Wave bounces off surface                    | $\theta_i = \theta_r$                 | Mirror, echo               |
+| Refraction   | Wave changes direction due to speed change  | $n_1\sin\theta_1 = n_2\sin\theta_2$   | Pencil in water looks bent |
+| Diffraction  | Wave spreads through gap or around obstacle | Max when $\text{gap} \approx \lambda$ | Sound around a corner      |
+| Interference | Waves superpose, creating pattern           | $\Delta x = n\lambda$ (constructive)  | Oil film colours           |
+| Polarisation | Oscillations restricted to one plane        | Only transverse waves                 | Sunglasses                 |
+
+## 16. Worked Example: Refractive Index and Critical Angle
+
+Find the critical angle for light travelling from diamond ($n = 2.42$) to water ($n = 1.33$).
+
+$$\sin\theta_c = \frac{n_2}{n_1} = \frac{1.33}{2.42} = 0.5496$$
+
+$$\theta_c = \arcsin(0.5496) = 33.3^{\circ}$$
+
+The critical angle for diamond in water is $33.3^{\circ}$. This is much smaller than for glass to
+air ($41.8^{\circ}$), which is why diamond is so effective at trapping light through total internal
+reflection, producing its characteristic brilliance.
+
+## 17. Worked Example: Measuring the Speed of Sound with an Echo
+
+A student stands 50 m from a large wall and claps. The echo returns 0.3 s after the clap. Calculate
+the speed of sound.
+
+The sound travels to the wall and back, so the total distance is $2 \times 50 = 100 \text{ m}$.
+
+$$v = \frac{d}{t} = \frac{100}{0.3} = 333 \text{ m/s}$$
+
+This is a reasonable value for the speed of sound in air at room temperature.
+
+## 18. Practice Questions (Additional)
+
+16. Light of wavelength $480 \text{ nm}$ passes through a diffraction grating with 400 lines per mm.
+    Calculate the angles of the first, second, and third order maxima. How many orders are visible
+    in total?
+
+17. An object is placed 20 cm from a concave lens of focal length 15 cm. Calculate the image
+    distance and describe the image.
+
+18. Explain why two independent light sources cannot produce a stable interference pattern.
+
+19. A sound wave has frequency $250 \text{ Hz}$ and intensity level $80 \text{ dB}$ at a distance of
+    $3 \text{ m}$ from the source. Calculate the intensity at $12 \text{ m}$ and the new intensity
+    level in decibels.
+
+20. Water waves in a ripple tank pass through a gap of width $4 \text{ cm}$. The wavelength is
+    $2 \text{ cm}$. Describe the diffraction pattern observed. How would the pattern change if the
+    gap width were increased to $10 \text{ cm}$?
+
+21. A convex lens has focal length $8 \text{ cm}$. An object of height $2 \text{ cm}$ is placed
+    $12 \text{ cm}$ from the lens. Draw a ray diagram (or calculate) to find the image position,
+    height, and nature.
+
+22. Explain how an optical fibre transmits light by total internal reflection. Why must the core
+    have a higher refractive index than the cladding?
+
+23. The speed of light in a certain type of glass is $1.8 \times 10^8 \text{ m/s}$. Calculate the
+    refractive index of the glass and the critical angle for light travelling from this glass to
+    air.
+
+24. A standing wave on a string of length $0.8 \text{ m}$ has a fundamental frequency of
+    $150 \text{ Hz}$. Calculate the wave speed and the frequencies of the second and third
+    harmonics.
+
+25. Describe an experiment to demonstrate that light is a transverse wave using polarising filters.
+
+## Extended Worked Examples
+
+### Example 26: Combining Wave Properties
+
+A water wave has frequency $2.5 \text{ Hz}$ and wavelength $0.4 \text{ m}$. It travels from deep
+water (speed $1.0 \text{ m/s}$) into shallow water where its speed is $0.6 \text{ m/s}$. Calculate
+the new wavelength and explain what happens to the frequency and amplitude.
+
+**Step 1: Verify the given data**
+
+$$v = f\lambda = 2.5 \times 0.4 = 1.0 \text{ m/s}$$
+
+This matches the deep water speed.
+
+**Step 2: New wavelength in shallow water**
+
+Frequency stays the same when a wave crosses a boundary:
+
+$$\lambda_{\text{shallow}} = \frac{v_{\text{shallow}}}{f} = \frac{0.6}{2.5} = 0.24 \text{ m}$$
+
+**Step 3: What happens to the amplitude**
+
+When the wave slows down and the wavelength decreases, the wave height (amplitude) increases. Energy
+is conserved, and since the wave is moving more slowly, the energy is concentrated in a shorter
+wavelength.
+
+:::info
+This is analogous to light bending towards the normal when entering a denser medium. The
+decrease in wave speed causes the wavelength to decrease while the frequency remains constant.
+:::
+
+### Example 27: Electromagnetic Spectrum Calculations
+
+A radio station broadcasts at a frequency of $97.4 \text{ MHz}$. Calculate (a) the wavelength, and
+(b) the time for one complete wave cycle.
+
+**Step 1: Wavelength**
+
+$$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{97.4 \times 10^6} = 3.08 \text{ m}$$
+
+**Step 2: Period**
+
+$$T = \frac{1}{f} = \frac{1}{97.4 \times 10^6} = 1.027 \times 10^{-8} \text{ s} = 10.27 \text{ ns}$$
+
+### Example 28: Sound Wave Intensity and Distance
+
+A speaker produces a sound intensity of $0.01 \text{ W/m}^2$ at $1 \text{ m}$. Calculate the
+intensity at $5 \text{ m}$ and the sound level in decibels at both distances.
+
+**Step 1: Intensity at $5 \text{ m}$ (inverse square law)**
+
+$$\frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} = \frac{1}{25}$$
+
+$$I_2 = \frac{0.01}{25} = 4 \times 10^{-4} \text{ W/m}^2$$
+
+**Step 2: Sound levels**
+
+$$L_1 = 10\log_{10}\left(\frac{0.01}{10^{-12}}\right) = 10\log_{10}(10^{10}) = 100 \text{ dB}$$
+
+$$L_2 = 10\log_{10}\left(\frac{4 \times 10^{-4}}{10^{-12}}\right) = 10\log_{10}(4 \times 10^8) = 10 \times 8.602 = 86.0 \text{ dB}$$
+
+Doubling the distance reduces the level by $6 \text{ dB}$ (from 5 times the distance:
+$10\log_{10} 25 \approx 14 \text{ dB}$ reduction).
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Confusing Frequency and Pitch, Amplitude and Loudness
+
+Frequency determines pitch (high frequency = high pitch). Amplitude determines loudness (large
+amplitude = loud). These are perceptual descriptions, not physical quantities. The physical
+quantities are frequency (Hz) and intensity (W/m^2) or amplitude (m).
+
+### Pitfall 7: Assuming All Waves Require a Medium
+
+Electromagnetic waves (light, radio, X-rays) do NOT require a medium and can travel through a
+vacuum. Mechanical waves (sound, water waves, waves on a string) DO require a medium. This is why we
+can see the Sun but cannot hear solar flares.
+
+### Pitfall 8: Misidentifying the Wavelength in Diagrams
+
+The wavelength is the distance between two consecutive _identical_ points -- two crests, two
+troughs, or any two points one full cycle apart. A common error is to measure from a crest to the
+next trough, which is only half a wavelength.
+
+## Additional Practice Problems
+
+26. Light travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of $35°$.
+    Calculate the angle of refraction and state whether the light bends towards or away from the
+    normal.
+
+27. A person standing $100 \text{ m}$ from a cliff claps their hands. If the speed of sound is
+    $340 \text{ m/s}$, how long does it take to hear the echo? What is the minimum distance between
+    the person and the cliff to hear a distinct echo (assuming the human ear can distinguish sounds
+    $0.1 \text{ s}$ apart)?
+
+28. Compare the properties of transverse and longitudinal waves by completing a table with the
+    following headings: direction of oscillation, direction of propagation, example, can be
+    polarised, can travel through a vacuum.
+
+29. A microwave oven operates at a frequency of $2.45 \text{ GHz}$. Calculate the wavelength.
+    Explain why microwaves are particularly effective at heating food containing water molecules.
+
+30. Describe an experiment to measure the speed of sound in air using two microphones connected to
+    an oscilloscope. Explain how you would improve the accuracy of your measurement.

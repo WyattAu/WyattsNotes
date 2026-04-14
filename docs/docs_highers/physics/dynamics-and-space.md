@@ -302,3 +302,448 @@ $$t \approx \frac{1}{H_0} \approx 14 \text{ billion years}$$
 10. A geostationary satellite orbits at a height of $35,786 \text{ km}$ above Earth's equator.
     Calculate its orbital speed and period, and explain why it remains above the same point on
     Earth's surface.
+
+## 11. Worked Example: Non-Uniform Circular Motion
+
+A ball of mass $0.5 \text{ kg}$ on a string of length $1.0 \text{ m}$ is swung in a vertical circle.
+Its speed at the bottom is $8 \text{ m/s}$. Find the tension in the string at the bottom and the
+minimum speed at the top.
+
+**At the bottom:** The tension and weight act in opposite directions radially.
+
+$$T - mg = \frac{mv^2}{r}$$
+
+$$T = mg + \frac{mv^2}{r} = 0.5 \times 9.8 + \frac{0.5 \times 64}{1.0} = 4.9 + 32 = 36.9 \text{ N}$$
+
+**At the top:** Energy conservation from bottom to top (height difference $= 2r = 2 \text{ m}$):
+
+$$\frac{1}{2}mv_b^2 = \frac{1}{2}mv_t^2 + mg(2r)$$
+
+$$v_t^2 = v_b^2 - 4gr = 64 - 4 \times 9.8 \times 1.0 = 64 - 39.2 = 24.8$$
+
+$$v_t = 4.98 \text{ m/s}$$
+
+**Minimum speed at the top:** Set $T = 0$ at the top:
+
+$$\frac{mv_{\min}^2}{r} = mg \implies v_{\min} = \sqrt{gr} = \sqrt{9.8} = 3.13 \text{ m/s}$$
+
+Since $v_t = 4.98 \text{ m/s} \gt 3.13 \text{ m/s} = v_{\min}$, the string remains taut at the top.
+
+## 12. Gravitational Fields: Extended Analysis
+
+### Worked Example: Gravitational Field Strength at Altitude
+
+Calculate $g$ at an altitude of $300 \text{ km}$ above Earth's surface.
+
+$$r = R_E + h = 6.37 \times 10^6 + 3 \times 10^5 = 6.67 \times 10^6 \text{ m}$$
+
+$$g = \frac{GM}{r^2} = \frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{(6.67 \times 10^6)^2} = \frac{3.983 \times 10^{14}}{4.449 \times 10^{13}} = 8.95 \text{ N/kg}$$
+
+This is about 91% of the surface value of $9.8 \text{ N/kg}$. The International Space Station, at
+about 400 km altitude, experiences $g \approx 8.7 \text{ N/kg}$ -- astronauts are not truly
+weightless because there is no gravity at that altitude; they are weightless because they are in
+free fall.
+
+### Gravitational Potential Energy: Worked Example
+
+A $1000 \text{ kg}$ satellite is moved from an orbit of radius $7000 \text{ km}$ to an orbit of
+radius $42000 \text{ km}$ (geostationary). Calculate the energy required.
+
+$$\Delta E = E_{p,f} - E_{p,i} = -\frac{GMm}{r_f} - \left(-\frac{GMm}{r_i}\right) = GMm\left(\frac{1}{r_i} - \frac{1}{r_f}\right)$$
+
+$$= 6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 1000 \times \left(\frac{1}{7 \times 10^6} - \frac{1}{4.2 \times 10^7}\right)$$
+
+$$= 3.983 \times 10^{17} \times (1.429 \times 10^{-7} - 2.381 \times 10^{-8})$$
+
+$$= 3.983 \times 10^{17} \times 1.191 \times 10^{-7} = 4.74 \times 10^{10} \text{ J} = 47.4 \text{ GJ}$$
+
+This enormous energy requirement explains why launching satellites is so expensive and why ion
+thrusters (which provide continuous low thrust) are preferred for orbit adjustments.
+
+## 13. Stellar Evolution: Extended Analysis
+
+### Worked Example: Wien's Law and Stefan-Boltzmann Law
+
+A star has a radius of $5 \times 10^9 \text{ m}$ (about 7 times the Sun's radius) and surface
+temperature $4000 \text{ K}$.
+
+**Peak wavelength:**
+
+$$\lambda_{\max} = \frac{2.898 \times 10^{-3}}{4000} = 7.25 \times 10^{-7} \text{ m} = 725 \text{ nm}$$
+
+This is in the red/infrared part of the spectrum. The star would appear reddish.
+
+**Luminosity:**
+
+$$L = 4\pi r^2 \sigma T^4 = 4\pi(5 \times 10^9)^2 \times 5.67 \times 10^{-8} \times (4000)^4$$
+
+$$= 4\pi \times 2.5 \times 10^{19} \times 5.67 \times 10^{-8} \times 2.56 \times 10^{14}$$
+
+$$= 4\pi \times 2.5 \times 10^{19} \times 1.452 \times 10^{7} = 4\pi \times 3.63 \times 10^{26} = 4.56 \times 10^{27} \text{ W}$$
+
+This is about 12 times the Sun's luminosity ($3.85 \times 10^{26} \text{ W}$), consistent with a red
+giant star.
+
+### The Main Sequence: Mass-Luminosity Relation
+
+For main-sequence stars:
+
+$$L \propto M^{3.5}$$
+
+A star twice as massive as the Sun is $2^{3.5} \approx 11.3$ times as luminous. Since the available
+fuel is proportional to $M$ but the consumption rate is proportional to $L \propto M^{3.5}$, the
+lifetime is:
+
+$$\text{lifetime} \propto \frac{M}{L} \propto \frac{M}{M^{3.5}} = M^{-2.5}$$
+
+A star of 10 solar masses lives $10^{-2.5} \approx 0.00316$ times as long as the Sun, or about 32
+million years (compared to 10 billion years for the Sun). This is why massive stars are rare: they
+burn through their fuel very quickly.
+
+## 14. Cosmology: Extended Analysis
+
+### Worked Example: Hubble's Law and Redshift
+
+A galaxy has a redshift $z = 0.05$. Find its recession velocity and distance.
+
+For $z \lt 0.1$:
+$v \approx cz = 3 \times 10^8 \times 0.05 = 1.5 \times 10^7 \text{ m/s} = 15000 \text{ km/s}$
+
+$$d = \frac{v}{H_0} = \frac{15000 \text{ km/s}}{70 \text{ km/s/Mpc}} = 214 \text{ Mpc}$$
+
+This galaxy is about 214 megaparsecs away, or roughly 700 million light-years.
+
+### The Cosmic Microwave Background
+
+The cosmic microwave background (CMB) radiation was discovered by Penzias and Wilson in 1965. It is
+thermal radiation with a black-body temperature of $2.725 \text{ K}$, peaking in the microwave
+region. The CMB is the afterglow of the Big Bang: after the universe became transparent about
+380,000 years after the Big Bang, the thermal radiation from the hot, dense early universe has been
+redshifted by the expansion of space to microwave wavelengths.
+
+## 15. Summary Table: Key Formulas
+
+| Topic                    | Formula                                  | Variables               | Notes                |
+| ------------------------ | ---------------------------------------- | ----------------------- | -------------------- |
+| Centripetal acceleration | $a_c = v^2/r = \omega^2 r$               | $v$, $r$, $\omega$      | Always toward centre |
+| Centripetal force        | $F_c = mv^2/r$                           | $m$, $v$, $r$           | Net inward force     |
+| Universal gravitation    | $F = GMm/r^2$                            | $G$, $M$, $m$, $r$      | Inverse-square law   |
+| Gravitational field      | $g = GM/r^2$                             | $G$, $M$, $r$           | Force per unit mass  |
+| Gravitational PE         | $E_p = -GMm/r$                           | $G$, $M$, $m$, $r$      | Zero at infinity     |
+| Orbital speed            | $v = \sqrt{GM/r}$                        | $G$, $M$, $r$           | Circular orbit       |
+| Kepler's third law       | $T^2 = 4\pi^2 r^3 / (GM)$                | $T$, $r$, $G$, $M$      | $T^2 \propto r^3$    |
+| Escape velocity          | $v_e = \sqrt{2GM/r}$                     | $G$, $M$, $r$           | Independent of mass  |
+| Wien's law               | $\lambda_{\max}T = 2.898 \times 10^{-3}$ | $\lambda_{\max}$, $T$   | Peak wavelength      |
+| Stefan-Boltzmann         | $L = 4\pi r^2\sigma T^4$                 | $L$, $r$, $\sigma$, $T$ | Total power output   |
+| Hubble's law             | $v = H_0 d$                              | $v$, $H_0$, $d$         | Recession velocity   |
+
+## 16. Practice Questions (Additional)
+
+11. A $2000 \text{ kg}$ satellite in circular orbit at $500 \text{ km}$ altitude needs to move to a
+    higher orbit at $1000 \text{ km}$ altitude. Calculate the energy required using the
+    gravitational potential energy formula.
+
+12. A star has apparent brightness $B$ and is at distance $d$. If the same star were moved to
+    distance $3d$, by what factor would its apparent brightness change?
+
+13. Calculate the escape velocity from the surface of the Sun. (Mass of Sun
+    $= 1.989 \times 10^{30} \text{ kg}$, radius of Sun $= 6.96 \times 10^8 \text{ m}$.)
+
+14. A ball of mass $0.3 \text{ kg}$ on a string of length $0.9 \text{ m}$ is swung in a vertical
+    circle with speed $7 \text{ m/s}$ at the bottom. Calculate the tension at the bottom and the
+    speed at the top. Does the string go slack?
+
+15. Explain why a white dwarf is hot but has low luminosity, while a red giant is cool but has high
+    luminosity. Reference the Stefan-Boltzmann law in your answer.
+
+16. A galaxy at a distance of $100 \text{ Mpc}$ has a recession velocity of $7000 \text{ km/s}$.
+    Calculate the value of the Hubble constant from this single data point.
+
+17. Calculate the gravitational field strength at the surface of Mars and compare it to Earth's
+    surface gravity. (Mars mass $= 6.39 \times 10^{23} \text{ kg}$, Mars radius
+    $= 3.39 \times 10^6 \text{ m}$.)
+
+18. Two stars in a binary system orbit their common centre of mass. Star A has mass
+    $2 \times 10^{30} \text{ kg}$ and Star B has mass $1 \times 10^{30} \text{ kg}$. They are
+    separated by $1.5 \times 10^{11} \text{ m}$. Calculate the orbital period of the system.
+
+19. Explain the evidence for the Big Bang theory, including the cosmic microwave background
+    radiation and Hubble's law.
+
+20. A geostationary satellite must have an orbital period of 24 hours. Calculate the required
+    orbital radius and verify that it is approximately $42200 \text{ km}$ from Earth's centre.
+
+## Extended Worked Examples
+
+### Example 21: Orbital Transfer (Hohmann Transfer)
+
+A spacecraft of mass $1000 \text{ kg}$ is in a circular low Earth orbit of radius
+$r_1 = 6.67 \times 10^6 \text{ m}$. It needs to transfer to a circular orbit of radius
+$r_2 = 6.67 \times 10^7 \text{ m}$. Calculate the total delta-v required.
+
+**Step 1: Speed in initial circular orbit**
+
+$$v_1 = \sqrt{\frac{GM}{r_1}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.67 \times 10^6}} = \sqrt{5.97 \times 10^7} \approx 7730 \text{ m/s}$$
+
+**Step 2: Speed at perigee of transfer ellipse**
+
+The transfer ellipse has semi-major axis
+$a = \frac{r_1 + r_2}{2} = \frac{6.67 \times 10^6 + 6.67 \times 10^7}{2} = 3.669 \times 10^7 \text{ m}$.
+
+Using the vis-viva equation at perigee ($r = r_1$):
+
+$$v_p = \sqrt{GM \left( \frac{2}{r_1} - \frac{1}{a} \right)} = \sqrt{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times \left( \frac{2}{6.67 \times 10^6} - \frac{1}{3.669 \times 10^7} \right)}$$
+
+$$v_p = \sqrt{3.98 \times 10^{14} \times (2.998 \times 10^{-7} - 2.726 \times 10^{-8})} = \sqrt{3.98 \times 10^{14} \times 2.726 \times 10^{-7}} \approx 10420 \text{ m/s}$$
+
+**Step 3: Speed at apogee of transfer ellipse**
+
+$$v_a = \sqrt{GM \left( \frac{2}{r_2} - \frac{1}{a} \right)} = \sqrt{3.98 \times 10^{14} \times \left( \frac{2}{6.67 \times 10^7} - \frac{1}{3.669 \times 10^7} \right)}$$
+
+$$v_a = \sqrt{3.98 \times 10^{14} \times (2.998 \times 10^{-8} - 2.726 \times 10^{-8})} = \sqrt{3.98 \times 10^{14} \times 2.726 \times 10^{-9}} \approx 1042 \text{ m/s}$$
+
+**Step 4: Speed in final circular orbit**
+
+$$v_2 = \sqrt{\frac{GM}{r_2}} = \sqrt{\frac{3.98 \times 10^{14}}{6.67 \times 10^7}} = \sqrt{5.97 \times 10^6} \approx 2443 \text{ m/s}$$
+
+**Step 5: Total delta-v**
+
+$$\Delta v_1 = v_p - v_1 = 10420 - 7730 = 2690 \text{ m/s}$$
+
+$$\Delta v_2 = v_2 - v_a = 2443 - 1042 = 1401 \text{ m/s}$$
+
+$$\Delta v_{\text{total}} = 2690 + 1401 = 4091 \text{ m/s} \approx 4.1 \text{ km/s}$$
+
+:::info
+Hohmann transfers are the most fuel-efficient two-impulse transfer between coplanar circular
+orbits. In practice, mission designers often use three-impulse bi-elliptic transfers when the ratio
+$r_2/r_1$ is very large (greater than about 11.94).
+:::
+
+### Example 22: Stellar Parallax and Distance
+
+A star is observed to have an annual parallax of $0.077 \text{ arcseconds}$. Calculate the distance
+to the star in parsecs and light-years.
+
+**Step 1: Use the parallax formula**
+
+$$d = \frac{1}{p} \text{ parsecs}$$
+
+where $p$ is the parallax angle in arcseconds.
+
+$$d = \frac{1}{0.077} = 12.99 \text{ pc} \approx 13.0 \text{ pc}$$
+
+**Step 2: Convert to light-years**
+
+$$1 \text{ pc} = 3.26 \text{ ly}$$
+
+$$d = 12.99 \times 3.26 = 42.3 \text{ ly}$$
+
+**Step 3: Convert to metres**
+
+$$1 \text{ pc} = 3.086 \times 10^{16} \text{ m}$$
+
+$$d = 12.99 \times 3.086 \times 10^{16} = 4.01 \times 10^{17} \text{ m}$$
+
+:::warning
+The Gaia space telescope can measure parallaxes down to about $10 \text{ }\mu\text{as}$
+(microarcseconds), corresponding to distances of about $100 \text{ kpc}$. Ground-based observations
+are limited to parallaxes above about $0.01 \text{ arcseconds}$.
+:::
+
+### Example 23: Gravitational Potential Energy in Orbit Changes
+
+A satellite of mass $500 \text{ kg}$ moves from a circular orbit of radius
+$r_1 = 7.0 \times 10^6 \text{ m}$ to a circular orbit of radius $r_2 = 7.5 \times 10^6 \text{ m}$.
+Calculate the energy that must be supplied by the rocket engines.
+
+**Step 1: Total energy in each orbit**
+
+$$E = -\frac{GMm}{2r}$$
+
+$$E_1 = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500}{2 \times 7.0 \times 10^6} = -\frac{1.99 \times 10^{17}}{1.4 \times 10^7} = -1.421 \times 10^{10} \text{ J}$$
+
+$$E_2 = -\frac{1.99 \times 10^{17}}{1.5 \times 10^7} = -1.327 \times 10^{10} \text{ J}$$
+
+**Step 2: Energy change**
+
+$$\Delta E = E_2 - E_1 = -1.327 \times 10^{10} - (-1.421 \times 10^{10}) = 9.4 \times 10^8 \text{ J}$$
+
+The total energy becomes less negative (increases), so energy must be supplied:
+$\Delta E = 9.4 \times 10^8 \text{ J}$.
+
+:::info
+Counter-intuitively, when a satellite fires its engines forward to speed up, it moves to a
+higher orbit where it actually travels _slower_. The kinetic energy decreases, but the gravitational
+potential energy increases by more than the kinetic energy decreases.
+:::
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Confusing Gravitational Force with Gravitational Field Strength
+
+Gravitational force $F = \frac{GMm}{r^2}$ acts on a specific mass $m$. Gravitational field strength
+$g = \frac{GM}{r^2}$ is the force _per unit mass_ and does not depend on the test mass. They have
+the same numerical value at the same location only when the test mass is $1 \text{ kg}$.
+
+### Pitfall 7: Using the Wrong Radius in Orbital Calculations
+
+The radius $r$ in orbital formulas is the distance from the _centre_ of the planet, not the altitude
+above the surface. Always add the planet's radius to the altitude:
+
+$$r = R_{\text{planet}} + h$$
+
+### Pitfall 8: Assuming Kepler's Third Law Applies in All Situations
+
+Kepler's third law $T^2 \propto r^3$ applies specifically to objects orbiting the _same_ central
+body. For two different central bodies (e.g., a satellite around Earth vs around Mars), the constant
+of proportionality changes:
+
+$$T^2 = \frac{4\pi^2}{GM} r^3$$
+
+## Additional Practice Problems
+
+21. A probe is launched from Earth's surface with escape velocity. Calculate the speed of the probe
+    when it is at a distance of $3R_E$ from Earth's centre.
+
+22. Two galaxies are observed to be moving apart at $1200 \text{ km/s}$. Using Hubble's constant
+    $H_0 = 70 \text{ km/s/Mpc}$, calculate the distance to these galaxies in Mpc and in light-years.
+
+23. A $2000 \text{ kg}$ spacecraft in circular orbit at $300 \text{ km}$ altitude fires
+    retro-rockets to deorbit. Calculate the orbital speed before and after a delta-v of
+    $-100 \text{ m/s}$, and explain qualitatively what happens to the orbit.
+
+24. The Sun has an apparent brightness of $1.37 \times 10^3 \text{ W/m}^2$ at Earth. Calculate the
+    luminosity of the Sun and its absolute magnitude (reference: $M_{\text{ref}} = 4.83$).
+
+25. Explain how astronomers distinguish between redshift due to the Doppler effect (peculiar
+    velocity) and cosmological redshift due to the expansion of space.
+
+## Further Worked Examples
+
+### Example 26: Binary Star System
+
+Two stars in a binary system orbit their common centre of mass with a period of $5.0 \text{ years}$.
+The semi-major axes of their orbits are $1.5 \times 10^{11} \text{ m}$ and
+$4.5 \times 10^{11} \text{ m}$. Calculate the masses of both stars.
+
+**Step 1: Use Kepler's third law for binary systems**
+
+$$T^2 = \frac{4\pi^2 a^3}{G(m_1 + m_2)}$$
+
+where $a = a_1 + a_2 = 1.5 \times 10^{11} + 4.5 \times 10^{11} = 6.0 \times 10^{11} \text{ m}$.
+
+$$T = 5.0 \text{ years} = 5.0 \times 3.156 \times 10^7 = 1.578 \times 10^8 \text{ s}$$
+
+**Step 2: Solve for $m_1 + m_2$**
+
+$$m_1 + m_2 = \frac{4\pi^2 a^3}{GT^2} = \frac{4\pi^2 \times (6.0 \times 10^{11})^3}{6.67 \times 10^{-11} \times (1.578 \times 10^8)^2}$$
+
+$$= \frac{4 \times 9.8696 \times 2.16 \times 10^{34}}{6.67 \times 10^{-11} \times 2.490 \times 10^{16}} = \frac{8.527 \times 10^{35}}{1.661 \times 10^6} = 5.13 \times 10^{29} \text{ kg}$$
+
+**Step 3: Find individual masses (centre of mass)**
+
+$$m_1 a_1 = m_2 a_2$$
+
+$$\frac{m_1}{m_2} = \frac{a_2}{a_1} = \frac{4.5 \times 10^{11}}{1.5 \times 10^{11}} = 3$$
+
+So $m_1 = 3m_2$.
+
+$$3m_2 + m_2 = 5.13 \times 10^{29} \implies m_2 = 1.28 \times 10^{29} \text{ kg}$$
+
+$$m_1 = 3.85 \times 10^{29} \text{ kg}$$
+
+### Example 27: Apparent Magnitude and Distance
+
+A star has an apparent magnitude of $6.0$ and an absolute magnitude of $2.0$. Calculate the distance
+to the star in parsecs and light-years.
+
+**Step 1: Use the distance modulus**
+
+$$m - M = 5\log_{10}\left(\frac{d}{10}\right)$$
+
+$$6.0 - 2.0 = 5\log_{10}\left(\frac{d}{10}\right)$$
+
+$$4 = 5\log_{10}\left(\frac{d}{10}\right)$$
+
+$$\log_{10}\left(\frac{d}{10}\right) = 0.8$$
+
+$$\frac{d}{10} = 10^{0.8} = 6.31$$
+
+$$d = 63.1 \text{ pc}$$
+
+**Step 2: Convert to light-years**
+
+$$d = 63.1 \times 3.26 = 205.7 \text{ ly}$$
+
+:::info
+The apparent magnitude scale is logarithmic and inverted: a difference of 5 magnitudes
+corresponds to a brightness ratio of exactly 100. Each magnitude step represents a factor of
+$100^{1/5} \approx 2.512$ in brightness. A magnitude 1 star is $2.512^5 = 100$ times brighter than a
+magnitude 6 star.
+:::
+
+### Example 28: Gravitational Field Strength Inside a Planet
+
+Assuming Earth has uniform density, calculate the gravitational field strength at a depth of
+$2000 \text{ km}$ below the surface.
+
+**Step 1: Depth below surface**
+
+At depth $d$, the distance from the centre is $r = R_E - d = 6371 - 2000 = 4371 \text{ km}$.
+
+**Step 2: Mass enclosed within radius $r$**
+
+For uniform density: $M_{\text{enc}} = M_E \times \left(\frac{r}{R_E}\right)^3$
+
+$$M_{\text{enc}} = 5.97 \times 10^{24} \times \left(\frac{4371}{6371}\right)^3 = 5.97 \times 10^{24} \times (0.686)^3 = 5.97 \times 10^{24} \times 0.323 = 1.928 \times 10^{24} \text{ kg}$$
+
+**Step 3: Gravitational field strength**
+
+$$g = \frac{GM_{\text{enc}}}{r^2} = \frac{6.67 \times 10^{-11} \times 1.928 \times 10^{24}}{(4.371 \times 10^6)^2}$$
+
+$$= \frac{1.286 \times 10^{14}}{1.911 \times 10^{13}} = 6.73 \text{ m/s}^2$$
+
+This is about $69\%$ of the surface gravity ($9.81 \text{ m/s}^2$), even though we are $31\%$ of the
+way to the centre. Inside a uniform sphere, $g$ decreases linearly with $r$.
+
+## Board-Specific Content: SQA Advanced Higher
+
+### Gravitational Potential
+
+The gravitational potential at distance $r$ from a point mass $M$ is:
+
+$$V = -\frac{GM}{r}$$
+
+This is the energy per unit mass. It is always negative (zero at infinity) and becomes more negative
+closer to the mass.
+
+**Example:** Calculate the gravitational potential at the surface of Earth and at an altitude of
+$300 \text{ km}$.
+
+Surface:
+$V = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.371 \times 10^6} = -6.25 \times 10^7 \text{ J/kg}$
+
+At $300 \text{ km}$:
+$V = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.671 \times 10^6} = -5.97 \times 10^7 \text{ J/kg}$
+
+The potential difference: $\Delta V = (-5.97 + 6.25) \times 10^7 = 2.8 \times 10^6 \text{ J/kg}$.
+
+## Additional Practice Problems
+
+26. Calculate the escape velocity from the surface of Mars. (Mars mass
+    $= 6.39 \times 10^{23} \text{ kg}$, Mars radius $= 3.39 \times 10^6 \text{ m}$.) Compare it to
+    the escape velocity from Earth.
+
+27. A satellite in an elliptical orbit has a perigee altitude of $300 \text{ km}$ and an apogee
+    altitude of $3000 \text{ km}$. Calculate the semi-major axis, the orbital period, and the speeds
+    at perigee and apogee.
+
+28. A star has a surface temperature of $12000 \text{ K}$ and a radius of $2.5 R_\odot$. Calculate
+    its luminosity relative to the Sun ($T_\odot = 5778 \text{ K}$) and its absolute magnitude.
+
+29. Explain the significance of the cosmic microwave background radiation. At what temperature is it
+    currently measured, and what does this tell us about the age of the universe?
+
+30. Calculate the gravitational potential energy of a $100 \text{ kg}$ satellite in a circular orbit
+    at an altitude of $500 \text{ km}$. What is its total energy (kinetic + potential)?

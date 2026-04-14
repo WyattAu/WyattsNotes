@@ -466,3 +466,319 @@ the magnetic field changes, not on the absolute magnitude of the field.
 15. A step-down transformer converts 230 V to 12 V. If the primary coil has 460 turns and the
     secondary coil has 24 turns, and the transformer is 96% efficient, calculate the secondary
     current when the primary current is 0.5 A.
+
+## 7. Worked Example: Transformer Power and Efficiency
+
+A step-down transformer converts $230 \text{ V}$ to $12 \text{ V}$. The primary coil has 920 turns.
+A device connected to the secondary draws $5 \text{ A}$ at $12 \text{ V}$. The transformer is 95%
+efficient.
+
+**Step 1:** Find the number of secondary turns.
+
+$$\frac{N_s}{N_p} = \frac{V_s}{V_p} \implies N_s = 920 \times \frac{12}{230} = 48 \text{ turns}$$
+
+**Step 2:** Calculate the power delivered to the load.
+
+$$P_s = V_s I_s = 12 \times 5 = 60 \text{ W}$$
+
+**Step 3:** Calculate the power drawn from the primary.
+
+$$P_p = \frac{P_s}{\eta} = \frac{60}{0.95} = 63.2 \text{ W}$$
+
+**Step 4:** Calculate the primary current.
+
+$$I_p = \frac{P_p}{V_p} = \frac{63.2}{230} = 0.275 \text{ A}$$
+
+**Step 5:** Power wasted.
+
+$$P_{\text{wasted}} = P_p - P_s = 63.2 - 60 = 3.2 \text{ W}$$
+
+## 8. Derivation: Faraday's Law from the Definition of Magnetic Flux
+
+Faraday's law states that the induced EMF equals the rate of change of magnetic flux linkage:
+
+$$\varepsilon = -N\frac{\Delta\Phi}{\Delta t}$$
+
+**Physical argument:** Consider a coil of $N$ turns in a changing magnetic field. The magnetic flux
+$\Phi = BA\cos\theta$ through each turn is changing. The total flux linkage is $N\Phi$. If the flux
+changes by $\Delta\Phi$ in time $\Delta t$, the rate of change is $\Delta\Phi / \Delta t$, and the
+induced EMF is proportional to this rate. The negative sign (Lenz's law) indicates that the induced
+EMF opposes the change in flux.
+
+**Quantitative example:** A coil of 200 turns and area $0.02 \text{ m}^2$ is in a magnetic field of
+flux density $0.5 \text{ T}$. The field is reduced to zero in $0.05 \text{ s}$.
+
+$$\Delta\Phi = BA = 0.5 \times 0.02 = 0.01 \text{ Wb}$$
+
+$$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 200 \times \frac{0.01}{0.05} = 200 \times 0.2 = 40 \text{ V}$$
+
+## 9. Why Lenz's Law Is a Consequence of Conservation of Energy
+
+If the induced current aided the change in flux (instead of opposing it), a small change in the
+magnetic field would produce an induced current that further increased the change, producing more
+current, and so on. This would create energy from nothing -- a perpetual motion machine of the first
+kind. The fact that the induced current opposes the change ensures that energy must be supplied to
+maintain the changing flux. The work done against the opposing force is converted into electrical
+energy.
+
+## 10. Worked Example: Force on a Wire at an Angle
+
+A wire of length $0.25 \text{ m}$ carries a current of $4 \text{ A}$ at an angle of $30^{\circ}$ to
+a magnetic field of flux density $0.6 \text{ T}$. Calculate the force on the wire.
+
+$$F = BIl\sin\theta = 0.6 \times 4 \times 0.25 \times \sin 30^{\circ}$$
+
+$$= 0.6 \times 4 \times 0.25 \times 0.5 = 0.3 \text{ N}$$
+
+If the wire were perpendicular to the field ($\theta = 90^{\circ}$), the force would be
+$0.6 \text{ N}$ -- twice as large. At $\theta = 0^{\circ}$ (parallel), the force would be zero.
+
+## 11. The Right-Hand Rule vs Fleming's Left-Hand Rule
+
+Students often confuse these two rules. Here is a clear distinction:
+
+| Rule                      | Used For                                                                              | What It Finds                                     |
+| ------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Right-hand grip rule      | Finding the direction of the **magnetic field** around a current-carrying wire        | Field direction (fingers curl in field direction) |
+| Fleming's left-hand rule  | Finding the direction of the **force** on a current-carrying wire in a magnetic field | Force direction (thumb)                           |
+| Right-hand rule (general) | Finding the direction of the magnetic field produced by a current loop or solenoid    | North pole direction                              |
+
+The right-hand grip rule has nothing to do with the motor effect. It tells you the shape of the
+magnetic field around a wire. Fleming's left-hand rule tells you the direction of the force when you
+already know the field direction and the current direction.
+
+## 12. Worked Example: Electromagnet Design
+
+Design an electromagnet that can lift a $2 \text{ kg}$ steel block. The electromagnet has a soft
+iron core and 500 turns of wire. The minimum force required is
+$F = mg = 2 \times 9.8 = 19.6 \text{ N}$.
+
+The force on the steel block depends on the magnetic field produced by the electromagnet. For a
+simple solenoid, the magnetic flux density at the centre is approximately:
+
+$$B = \frac{\mu_0 n I}{L}$$
+
+where $n$ is the number of turns per unit length and $L$ is the length of the solenoid. Without more
+details of the geometry, we can use the practical approach: the force is proportional to $NI$
+(current times turns). Doubling either the current or the number of turns doubles the magnetic
+force.
+
+**Key design considerations:**
+
+- Use a soft iron core (easily magnetised and demagnetised)
+- Maximise the number of turns (increases field proportionally)
+- Maximise the current (limited by the power supply and wire heating)
+- Ensure good thermal contact between the core and the block
+
+## 13. Comparing Motors and Generators: A Deeper Look
+
+Both motors and generators involve a coil rotating in a magnetic field. The difference is the
+direction of energy conversion:
+
+| Aspect            | Motor                    | Generator            |
+| ----------------- | ------------------------ | -------------------- |
+| Energy in         | Electrical               | Mechanical (kinetic) |
+| Energy out        | Mechanical (kinetic)     | Electrical           |
+| Contact           | Split-ring commutator    | Slip rings           |
+| Current direction | Reverses every half-turn | Alternates naturally |
+| Output            | Continuous rotation      | Alternating EMF      |
+
+The split-ring commutator in a motor ensures that the current always flows in the correct direction
+to produce a torque that maintains rotation. In a generator, the slip rings maintain continuous
+contact with the coil without reversing, so the AC produced by the rotating coil is transmitted
+directly to the external circuit.
+
+## 14. Worked Example: AC Generator Peak EMF
+
+A coil of 100 turns and area $0.03 \text{ m}^2$ rotates at 50 Hz in a magnetic field of flux density
+$0.4 \text{ T}$. Calculate the peak EMF.
+
+$$\text{EMF}_{\text{peak}} = NAB\omega = NAB \times 2\pi f$$
+
+$$= 100 \times 0.03 \times 0.4 \times 2\pi \times 50$$
+
+$$= 100 \times 0.03 \times 0.4 \times 314.16$$
+
+$$= 376.99 \text{ V} \approx 377 \text{ V}$$
+
+The RMS voltage would be $377 / \sqrt{2} \approx 267 \text{ V}$.
+
+## 15. Magnetic Materials: Hard vs Soft
+
+| Property               | Soft Magnetic Material            | Hard Magnetic Material    |
+| ---------------------- | --------------------------------- | ------------------------- |
+| Examples               | Iron, mild steel                  | Steel, alnico, neodymium  |
+| Ease of magnetisation  | Easy                              | Hard                      |
+| Retention of magnetism | Loses it easily                   | Retains it permanently    |
+| Use                    | Electromagnet cores, transformers | Permanent magnets, motors |
+| Hysteresis loss        | Low                               | High                      |
+
+The distinction is critical for applications. A transformer core must be made of soft iron so that
+it can be magnetised and demagnetised rapidly by the alternating current without significant energy
+loss. A permanent magnet in a motor must be made of a hard magnetic material so that it retains its
+magnetism despite the changing fields produced by the motor's coils.
+
+## 16. Practice Questions (Additional)
+
+16. An electromagnet has 300 turns and carries a current of $3 \text{ A}$. The magnetic flux density
+    at its centre is $0.15 \text{ T}$. If the current is increased to $5 \text{ A}$ and the number
+    of turns is increased to 600, calculate the new flux density.
+
+17. Explain, with reference to Lenz's law, why a magnet dropped through a copper tube falls more
+    slowly than through a plastic tube.
+
+18. A transformer has 1000 turns on its primary and 50 turns on its secondary. The primary is
+    connected to $230 \text{ V}$ mains. If the secondary current is $8 \text{ A}$ and the
+    transformer is 92% efficient, calculate the primary current.
+
+19. Describe how you would demonstrate the motor effect in a school laboratory. Include a diagram
+    description and explain how to reverse the direction of the force.
+
+20. A wire carrying a current of $6 \text{ A}$ is placed at right angles to a magnetic field. The
+    force on the wire is $0.72 \text{ N}$ when the wire is $0.3 \text{ m}$ long. Calculate the
+    magnetic flux density.
+
+21. Explain why transformers are essential for the efficient distribution of electrical energy from
+    power stations to consumers. Include quantitative reasoning.
+
+22. A rectangular coil of 200 turns, dimensions $5 \text{ cm} \times 8 \text{ cm}$, rotates at
+    $40 \text{ Hz}$ in a magnetic field of flux density $0.5 \text{ T}$. Calculate (a) the peak EMF
+    and (b) the EMF when the coil makes an angle of $60^{\circ}$ with the field.
+
+23. Compare and contrast permanent magnets and electromagnets. Give two specific applications where
+    each is preferred.
+
+24. A student investigates how the number of turns on an electromagnet affects the strength of the
+    magnetic field. Describe a suitable method, identify the independent, dependent, and control
+    variables, and explain how the results should be analysed.
+
+25. Explain why the core of a transformer is laminated. What would happen if the core were made from
+    a single solid piece of iron?
+
+## Extended Worked Examples
+
+### Example 26: Electromagnetic Induction Quantitative
+
+A coil of 200 turns is placed in a magnetic field. The magnetic flux through the coil changes from
+$0.02 \text{ Wb}$ to $0.08 \text{ Wb}$ in $0.05 \text{ s}$. Calculate the average EMF induced.
+
+**Step 1: Calculate the change in flux linkage**
+
+$$\Delta(N\Phi) = N\Delta\Phi = 200 \times (0.08 - 0.02) = 200 \times 0.06 = 12 \text{ Wb turns}$$
+
+**Step 2: Apply Faraday's law**
+
+$$\varepsilon = -\frac{\Delta(N\Phi)}{\Delta t} = -\frac{12}{0.05} = -240 \text{ V}$$
+
+The magnitude is $240 \text{ V}$ (the minus sign indicates direction via Lenz's law).
+
+### Example 27: National Grid Power Loss Comparison
+
+A power station generates $500 \text{ MW}$ of power. Compare the power loss in the transmission
+cables if the power is transmitted at (a) $25 \text{ kV}$ and (b) $400 \text{ kV}$, given a cable
+resistance of $2 \Omega$.
+
+**Step 1: At $25 \text{ kV}$**
+
+$$I = \frac{P}{V} = \frac{500 \times 10^6}{25 \times 10^3} = 20000 \text{ A}$$
+
+$$P_{\text{loss}} = I^2 R = (20000)^2 \times 2 = 8 \times 10^8 \text{ W} = 800 \text{ MW}$$
+
+This is _more_ than the generated power! The system is completely impractical at this voltage.
+
+**Step 2: At $400 \text{ kV}$**
+
+$$I = \frac{500 \times 10^6}{400 \times 10^3} = 1250 \text{ A}$$
+
+$$P_{\text{loss}} = (1250)^2 \times 2 = 3.125 \times 10^6 \text{ W} = 3.125 \text{ MW}$$
+
+This is only $0.625\%$ of the generated power.
+
+**Step 3: Efficiency comparison**
+
+At $25 \text{ kV}$: $\eta = \frac{500 - 800}{500} \times 100 = \text{negative (impossible)}$
+
+At $400 \text{ kV}$: $\eta = \frac{500 - 3.125}{500} \times 100 = 99.375\%$
+
+:::info
+Step-up transformers increase the voltage (and decrease the current) for transmission,
+dramatically reducing $I^2R$ losses. Step-down transformers then reduce the voltage to safe levels
+for domestic use. This is the fundamental reason the National Grid uses high-voltage transmission.
+:::
+
+### Example 28: Designing an Electromagnet
+
+Design an electromagnet that can lift a $5 \text{ kg}$ steel block. The electromagnet has a soft
+iron core, 500 turns of wire, and operates from a $12 \text{ V}$ DC supply. Determine the required
+current.
+
+**Step 1: Force needed**
+
+$$F = mg = 5 \times 9.8 = 49 \text{ N}$$
+
+**Step 2: Magnetic field strength needed**
+
+For a rough estimate, the force on a magnetic material near an electromagnet is approximately:
+
+$$F \approx \frac{B^2 A}{2\mu_0}$$
+
+Assuming the pole face area is $A = 0.005 \text{ m}^2$ ($50 \text{ cm}^2$):
+
+$$49 = \frac{B^2 \times 0.005}{2 \times 4\pi \times 10^{-7}}$$
+
+$$B^2 = \frac{49 \times 2.513 \times 10^{-6}}{0.005} = 0.02463$$
+
+$$B = 0.157 \text{ T}$$
+
+**Step 3: Current required (solenoid approximation)**
+
+$$B = \mu_0 \frac{NI}{L}$$
+
+Assuming the solenoid length is $L = 0.2 \text{ m}$:
+
+$$0.157 = 4\pi \times 10^{-7} \times \frac{500 \times I}{0.2}$$
+
+$$I = \frac{0.157 \times 0.2}{4\pi \times 10^{-7} \times 500} = \frac{0.0314}{6.283 \times 10^{-4}} = 50 \text{ A}$$
+
+This is a very high current. In practice, we would increase the number of turns or reduce the air
+gap to achieve the required field with a more practical current.
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Confusing Magnetic Field Lines with Electric Field Lines
+
+Magnetic field lines form _closed loops_ (they have no beginning or end). Electric field lines start
+on positive charges and end on negative charges. This is a consequence of the fact that there are no
+magnetic monopoles (isolated north or south poles).
+
+### Pitfall 7: Getting the Transformer Equation Wrong
+
+The transformer equation is $\frac{V_s}{V_p} = \frac{N_s}{N_p}$. The voltage ratio equals the
+_turns_ ratio. A common error is to invert this or to use current instead of voltage. For current,
+the relationship is _inverted_: $\frac{I_s}{I_p} = \frac{N_p}{N_s}$.
+
+### Pitfall 8: Forgetting That Lenz's Law Is About Conservation of Energy
+
+Lenz's law states that the induced current opposes the change that causes it. This is not just a
+direction rule -- it is a consequence of conservation of energy. If the induced current _aided_ the
+change, it would create energy from nothing, violating the first law of thermodynamics.
+
+## Additional Practice Problems
+
+26. A transformer has 1000 turns on the primary and 50 turns on the secondary. The primary is
+    connected to $230 \text{ V}$ AC. Calculate the secondary voltage and the primary current when
+    the secondary delivers $10 \text{ A}$ to a load.
+
+27. A wire carrying $5 \text{ A}$ is placed at right angles to a magnetic field of flux density
+    $0.3 \text{ T}$. The length of wire in the field is $0.15 \text{ m}$. Calculate the force on the
+    wire and state the direction using Fleming's left-hand rule.
+
+28. Explain how a loudspeaker works, including the role of the permanent magnet, the coil, and the
+    alternating current. Why does the cone vibrate at the frequency of the AC signal?
+
+29. A student investigates how the strength of an electromagnet varies with current. Describe a
+    suitable method, including how to measure the magnetic field strength and how to ensure a fair
+    test.
+
+30. Explain why transformers only work with AC and not DC. What would happen if you connected a
+    transformer to a DC supply?

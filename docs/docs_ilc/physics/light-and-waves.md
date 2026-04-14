@@ -391,3 +391,313 @@ $$
 10. An optical fibre has a core of refractive index 1.50 and cladding of refractive index 1.45. Find
     the critical angle for light travelling from core to cladding, and explain why this angle
     ensures total internal reflection.
+
+## 11. Worked Example: Single Slit Diffraction and Intensity (HL)
+
+Light of wavelength $500 \text{ nm}$ passes through a slit of width $0.05 \text{ mm}$. Find the
+angular width of the central maximum and the angles of the first two minima.
+
+**Central maximum half-width:**
+
+$$\sin\theta = \frac{\lambda}{a} = \frac{500 \times 10^{-9}}{0.05 \times 10^{-3}} = 0.01$$
+
+$$\theta = \arcsin(0.01) = 0.573^{\circ}$$
+
+The full angular width is $2\theta = 1.15^{\circ}$.
+
+**First minimum:** $\sin\theta_1 = \frac{\lambda}{a} = 0.01 \implies \theta_1 = 0.573^{\circ}$
+
+**Second minimum:** $\sin\theta_2 = \frac{2\lambda}{a} = 0.02 \implies \theta_2 = 1.15^{\circ}$
+
+## 12. Worked Example: Diffraction Grating with Multiple Orders (HL)
+
+A diffraction grating has 400 lines/mm. Light of wavelength $589 \text{ nm}$ is incident normally.
+
+**Grating spacing:** $d = \frac{1}{400 \times 10^3} = 2.5 \times 10^{-6} \text{ m}$
+
+**First order ($n = 1$):**
+$\sin\theta = \frac{589 \times 10^{-9}}{2.5 \times 10^{-6}} = 0.2356 \implies \theta = 13.6^{\circ}$
+
+**Second order ($n = 2$):** $\sin\theta = 0.4712 \implies \theta = 28.1^{\circ}$
+
+**Third order ($n = 3$):** $\sin\theta = 0.7068 \implies \theta = 45.0^{\circ}$
+
+**Fourth order:** $\sin\theta = 0.9424 \implies \theta = 70.4^{\circ}$
+
+**Fifth order:** $\sin\theta = 1.178$ -- impossible. So only 4 orders are visible on each side (9
+maxima total including central).
+
+## 13. Sound Intensity: Extended Analysis (HL)
+
+### Worked Example: Combining Decibels
+
+Two machines produce $80 \text{ dB}$ and $83 \text{ dB}$ each at a worker's position. Find the total
+intensity level.
+
+$$I_1 = I_0 \times 10^{80/10} = 10^{-12} \times 10^8 = 10^{-4} \text{ W/m}^2$$
+
+$$I_2 = I_0 \times 10^{83/10} = 10^{-12} \times 10^{8.3} = 2 \times 10^{-4} \text{ W/m}^2$$
+
+$$I_{\text{total}} = 3 \times 10^{-4} \text{ W/m}^2$$
+
+$$\beta_{\text{total}} = 10\log_{10}\left(\frac{3 \times 10^{-4}}{10^{-12}}\right) = 10 \times 7.477 = 74.8 \text{ dB}$$
+
+Adding $80 \text{ dB}$ and $83 \text{ dB}$ gives $74.8 \text{ dB}$, not $163 \text{ dB}$. If two
+sources have the same intensity, the total is $3 \text{ dB}$ higher.
+
+### Worked Example: Inverse Square Law for Sound
+
+A speaker emits $1 \text{ mW}$ of sound power. Calculate the intensity level at $3 \text{ m}$.
+
+$$I = \frac{P}{4\pi r^2} = \frac{10^{-3}}{4\pi \times 9} = 8.84 \times 10^{-6} \text{ W/m}^2$$
+
+$$\beta = 10\log_{10}\left(\frac{8.84 \times 10^{-6}}{10^{-12}}\right) = 10 \times 6.946 = 69.5 \text{ dB}$$
+
+## 14. Refraction: Extended Worked Examples
+
+### Worked Example: Refraction Through a Glass Block (HL)
+
+A ray of light enters a rectangular glass block at $40^{\circ}$ to the normal. The glass has
+refractive index $1.5$. The block is $6 \text{ cm}$ thick. Find the lateral displacement of the ray.
+
+**At entry:**
+
+$$\sin\theta_r = \frac{\sin 40^{\circ}}{1.5} = \frac{0.6428}{1.5} = 0.4285$$
+
+$$\theta_r = \arcsin(0.4285) = 25.4^{\circ}$$
+
+**Lateral displacement:**
+
+$$d_{\text{horizontal}} = \frac{6}{\cos 25.4^{\circ}} = \frac{6}{0.9030} = 6.64 \text{ cm}$$
+
+Lateral displacement
+$= 6.64 \times \sin(40^{\circ} - 25.4^{\circ}) = 6.64 \times 0.252 = 1.67 \text{ cm}$
+
+**At exit:** The ray exits parallel to the original direction (parallel faces). The exit angle
+equals the entry angle ($40^{\circ}$).
+
+## 15. Doppler Effect: Extended Analysis (HL)
+
+### Worked Example: Moving Observer
+
+An observer moves towards a stationary $440 \text{ Hz}$ source at $15 \text{ m/s}$. Speed of sound =
+$343 \text{ m/s}$.
+
+$$f' = 440 \times \frac{343 + 15}{343} = 440 \times 1.0437 = 459.2 \text{ Hz}$$
+
+### Worked Example: Frequency Shift for Radar
+
+A police radar gun operates at $24.15 \text{ GHz}$. A car approaches at $30 \text{ m/s}$. The
+reflected wave is Doppler-shifted twice.
+
+The frequency received by the car:
+
+$$f_1 = 24.15 \times 10^9 \times \frac{343}{343 - 30} = 26.46 \times 10^9 \text{ Hz}$$
+
+The frequency received back at the gun:
+
+$$f_2 = 26.46 \times 10^9 \times \frac{343}{313} = 29.00 \times 10^9 \text{ Hz}$$
+
+Frequency shift: $\Delta f = 29.00 - 24.15 = 4.85 \text{ GHz}$
+
+## 16. Summary Table: Wave and Optics Formulas
+
+| Topic              | Formula                             | Level | Notes                        |
+| ------------------ | ----------------------------------- | ----- | ---------------------------- |
+| Wave equation      | $v = f\lambda$                      | OL/HL | Universal for periodic waves |
+| Snell's law        | $n_1\sin\theta_1 = n_2\sin\theta_2$ | OL/HL | Frequency unchanged          |
+| Critical angle     | $\sin\theta_c = n_2/n_1$            | HL    | Denser to less dense only    |
+| Fringe spacing     | $\Delta x = \lambda L/d$            | HL    | Double slit                  |
+| Grating equation   | $d\sin\theta = n\lambda$            | HL    | $n$th order maximum          |
+| Decibels           | $\beta = 10\log_{10}(I/I_0)$        | HL    | $I_0 = 10^{-12}$ W/m$^2$     |
+| Doppler (source)   | $f' = fv/(v - v_s)$                 | HL    | Minus for approaching        |
+| Doppler (observer) | $f' = f(v + v_o)/v$                 | HL    | Plus for approaching         |
+
+## 17. Practice Questions (Additional)
+
+### Higher Level (Additional)
+
+11. Light of wavelength $620 \text{ nm}$ passes through a single slit of width $0.03 \text{ mm}$.
+    Calculate the angular positions of the first and second minima.
+
+12. A diffraction grating has 600 lines/mm. Light of wavelength $550 \text{ nm}$ is incident
+    normally. Calculate the maximum number of orders visible and the total angular width of the
+    second-order spectrum.
+
+13. Two sound sources produce intensity levels of $72 \text{ dB}$ and $72 \text{ dB}$ at a point.
+    Find the total intensity level.
+
+14. A light ray enters a semicircular glass block of refractive index $1.6$ at an angle of
+    $50^{\circ}$ to the normal at the flat surface. Describe what happens at the curved surface.
+
+15. An ambulance siren at $700 \text{ Hz}$ approaches a stationary observer at $20 \text{ m/s}$ and
+    then recedes at $20 \text{ m/s}$. Calculate the frequency heard by the observer in both cases.
+
+16. Explain why total internal reflection only occurs when light travels from a denser medium to a
+    less dense medium, with reference to Snell's law.
+
+17. A sound intensity level of $90 \text{ dB}$ is measured at $1 \text{ m}$ from a point source. At
+    what distance is the level $60 \text{ dB}$?
+
+18. Describe Young's double slit experiment and explain how it provides evidence for the wave nature
+    of light.
+
+19. An optical fibre has a core refractive index of $1.48$ and cladding refractive index of $1.42$.
+    Calculate the critical angle and explain why this fibre can transmit signals around bends.
+
+20. Explain the difference between coherent and incoherent sources. Why are two independent light
+    bulbs unable to produce a stable interference pattern?
+
+## Extended Worked Examples
+
+### Example 21: Lateral Displacement Through a Glass Block
+
+A ray of light enters a rectangular glass block of refractive index $1.52$ at an angle of incidence
+of $40°$. The block has thickness $5 \text{ cm}$. Calculate the angle of refraction, the lateral
+displacement of the ray, and the angle of emergence.
+
+**Step 1: Angle of refraction (Snell's law at entry)**
+
+$$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
+
+$$1 \times \sin 40° = 1.52 \times \sin\theta_2$$
+
+$$\sin\theta_2 = \frac{0.6428}{1.52} = 0.4229$$
+
+$$\theta_2 = 25.03°$$
+
+**Step 2: Lateral displacement**
+
+The lateral displacement $d$ is given by:
+
+$$d = t \times \frac{\sin(\theta_1 - \theta_2)}{\cos\theta_2}$$
+
+where $t = 5 \text{ cm} = 0.05 \text{ m}$.
+
+$$d = 0.05 \times \frac{\sin(40° - 25.03°)}{\cos 25.03°} = 0.05 \times \frac{\sin 14.97°}{\cos 25.03°}$$
+
+$$d = 0.05 \times \frac{0.2583}{0.9061} = 0.05 \times 0.2851 = 0.01426 \text{ m} = 1.43 \text{ cm}$$
+
+**Step 3: Angle of emergence**
+
+At the second surface, the light goes from glass to air. By Snell's law:
+
+$$1.52 \times \sin 25.03° = 1 \times \sin\theta_e$$
+
+$$\sin\theta_e = 1.52 \times 0.4229 = 0.6428$$
+
+$$\theta_e = 40°$$
+
+The emergent ray is parallel to the incident ray but displaced sideways by $1.43 \text{ cm}$.
+
+:::info
+The emergent ray is always parallel to the incident ray for a rectangular block with
+parallel faces. The lateral displacement increases with thickness and with angle of incidence.
+:::
+
+### Example 22: Doppler Effect -- Moving Observer
+
+A sound source emits a frequency of $440 \text{ Hz}$ and is stationary. An observer moves directly
+towards the source at $25 \text{ m/s}$. Calculate the observed frequency. (Speed of sound
+$= 343 \text{ m/s}$.)
+
+**Step 1: Use the Doppler equation for moving observer**
+
+$$f' = f\left(\frac{v + v_o}{v}\right)$$
+
+where $v_o$ is the observer speed (positive when moving towards the source).
+
+$$f' = 440 \times \frac{343 + 25}{343} = 440 \times \frac{368}{343} = 440 \times 1.0729 = 472.1 \text{ Hz}$$
+
+**Step 2: What if the source moves towards a stationary observer?**
+
+$$f' = f\left(\frac{v}{v - v_s}\right)$$
+
+For the same speed ($v_s = 25 \text{ m/s}$):
+
+$$f' = 440 \times \frac{343}{343 - 25} = 440 \times \frac{343}{318} = 440 \times 1.0786 = 474.6 \text{ Hz}$$
+
+The frequency shift is slightly different for a moving source vs a moving observer at the same
+speed. This asymmetry is a key feature of the classical Doppler effect.
+
+### Example 23: Refraction Through a Prism
+
+A prism has an apex angle of $60°$ and refractive index $1.50$. Light enters one face at an angle of
+$45°$. Calculate the angle of deviation.
+
+**Step 1: Refraction at the first face**
+
+$$\sin 45° = 1.50 \times \sin r_1$$
+
+$$\sin r_1 = \frac{0.7071}{1.50} = 0.4714$$
+
+$$r_1 = 28.13°$$
+
+**Step 2: Angle of incidence at the second face**
+
+For a prism with apex angle $A$:
+
+$$r_1 + r_2 = A = 60°$$
+
+$$r_2 = 60° - 28.13° = 31.87°$$
+
+**Step 3: Check for total internal reflection**
+
+Critical angle: $\sin\theta_c = \frac{1}{n} = \frac{1}{1.50} = 0.6667 \implies \theta_c = 41.8°$
+
+Since $r_2 = 31.87° \lt \theta_c$, the light exits the second face.
+
+**Step 4: Angle of emergence**
+
+$$1.50 \times \sin 31.87° = 1 \times \sin e$$
+
+$$\sin e = 1.50 \times 0.5284 = 0.7926$$
+
+$$e = 52.48°$$
+
+**Step 5: Angle of deviation**
+
+$$D = (i - r_1) + (e - r_2) = (45° - 28.13°) + (52.48° - 31.87°) = 16.87° + 20.61° = 37.48°$$
+
+Or using the formula: $D = i + e - A = 45° + 52.48° - 60° = 37.48°$.
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Forgetting That Light Slows Down in Denser Media
+
+The speed of light in a medium is $v = c/n$. Many students incorrectly believe light speeds up in
+glass. Higher refractive index means slower speed and shorter wavelength (frequency stays constant).
+
+### Pitfall 7: Incorrect Application of Snell's Law at Curved Surfaces
+
+Snell's law applies at every interface, but for curved surfaces (lenses), the angle of incidence
+varies across the surface. You cannot use a single angle of incidence for the entire lens. Instead,
+use the lens maker's equation or the thin lens formula.
+
+### Pitfall 8: Confusing Diffraction and Refraction
+
+Diffraction is the spreading of waves around obstacles or through gaps. Refraction is the bending of
+waves due to a change in speed. They are different phenomena. Diffraction is most pronounced when
+the gap size is comparable to the wavelength; refraction occurs at boundaries between media of
+different densities.
+
+## Additional Practice Problems
+
+21. A convex lens has a focal length of $15 \text{ cm}$. An object $3 \text{ cm}$ tall is placed
+    $25 \text{ cm}$ from the lens. Calculate the image position, height, magnification, and nature
+    (real/virtual, upright/inverted). Draw a ray diagram.
+
+22. Monochromatic light of wavelength $550 \text{ nm}$ is incident on a diffraction grating with
+    $400 \text{ lines/mm}$. Calculate the angles of the first and second order maxima and the total
+    number of orders visible.
+
+23. A concave mirror has a focal length of $20 \text{ cm}$. An object is placed $30 \text{ cm}$ from
+    the mirror. Calculate the image position and magnification. Is the image real or virtual?
+
+24. The wavelength of light in a certain liquid is $450 \text{ nm}$. If the wavelength in air is
+    $600 \text{ nm}$, calculate the refractive index of the liquid and the speed of light in the
+    liquid.
+
+25. Explain how fibre optic cables use total internal reflection to transmit data. Include a
+    calculation showing why a fibre with core refractive index $1.50$ and cladding index $1.45$ is
+    suitable for this purpose.

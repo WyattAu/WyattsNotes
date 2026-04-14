@@ -661,3 +661,138 @@ the electrical energy arrow would be 40% as wide as the input arrow, and the was
     $50^{\circ}\text{C}$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific latent
     heat of fusion of ice = $3.34 \times 10^5$ J/kg, specific heat capacity of water = 4200 J/(kg
     $^{\circ}$C).)
+
+## 10. Worked Example: Multi-Stage Heating
+
+A common exam question involves calculating the energy needed to change both the temperature and the
+state of a substance. The key is to break the process into distinct stages and add the energies.
+
+**Question:** Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\text{C}$ to
+water at $50^{\circ}\text{C}$.
+
+**Stage 1:** Heat ice from $-10^{\circ}\text{C}$ to $0^{\circ}\text{C}$ (no change of state).
+
+$$E_1 = mc_{\text{ice}}\Delta T = 0.5 \times 2100 \times 10 = 10500 \text{ J}$$
+
+**Stage 2:** Melt ice at $0^{\circ}\text{C}$ (change of state, temperature stays at
+$0^{\circ}\text{C}$).
+
+$$E_2 = mL_f = 0.5 \times 3.34 \times 10^5 = 167000 \text{ J}$$
+
+**Stage 3:** Heat water from $0^{\circ}\text{C}$ to $50^{\circ}\text{C}$.
+
+$$E_3 = mc_{\text{water}}\Delta T = 0.5 \times 4200 \times 50 = 105000 \text{ J}$$
+
+$$E_{\text{total}} = 10500 + 167000 + 105000 = 282500 \text{ J} \approx 283 \text{ kJ}$$
+
+Notice that the melting stage (Stage 2) requires by far the most energy -- over half the total. This
+is a common pattern: changing state typically requires more energy than changing temperature by the
+same number of degrees.
+
+## 11. Summary Table: Energy Stores and Their Formulas
+
+| Store                   | Formula                 | Variables                                                          | When to Use                 |
+| ----------------------- | ----------------------- | ------------------------------------------------------------------ | --------------------------- |
+| Kinetic                 | $E_k = \frac{1}{2}mv^2$ | $m$ = mass, $v$ = speed                                            | Object moving               |
+| Gravitational potential | $E_p = mgh$             | $m$ = mass, $g$ = field strength, $h$ = height                     | Object at height            |
+| Elastic potential       | $E_e = \frac{1}{2}ke^2$ | $k$ = spring constant, $e$ = extension                             | Spring stretched/compressed |
+| Thermal                 | $\Delta E = mc\Delta T$ | $m$ = mass, $c$ = specific heat capacity, $\Delta T$ = temp change | Temperature change          |
+| Latent heat             | $E = mL$                | $m$ = mass, $L$ = specific latent heat                             | Change of state             |
+
+## 12. Derivation: Conservation of Energy from the Work-Energy Theorem
+
+The conservation of mechanical energy (kinetic plus potential) is not an independent law -- it
+follows directly from the work-energy theorem when only conservative forces are present.
+
+Starting from the work-energy theorem:
+
+$$W_{\text{net}} = \Delta E_k$$
+
+If only gravity does work (no friction, no applied forces), then
+$W_{\text{net}} = W_{\text{gravity}}$. The work done by gravity is
+$W_{\text{gravity}} = -\Delta E_p$ (negative because when the object moves down, $\Delta E_p$ is
+negative and gravity does positive work).
+
+$$-\Delta E_p = \Delta E_k$$
+
+$$\Delta E_k + \Delta E_p = 0$$
+
+$$E_{k,f} + E_{p,f} = E_{k,i} + E_{p,i}$$
+
+This is the statement of conservation of mechanical energy. It applies whenever only conservative
+forces (gravity, spring force) do work. When non-conservative forces (friction, air resistance) are
+present, the total mechanical energy decreases by an amount equal to the work done by those forces.
+
+## 13. Worked Example: Power on an Incline
+
+A cyclist of mass 70 kg (including the bicycle) travels up a hill inclined at $5^{\circ}$ to the
+horizontal at a constant speed of $6 \text{ m/s}$. The total resistive force (friction plus air
+resistance) is 25 N. Calculate the power the cyclist must develop.
+
+At constant speed, the driving force equals the component of weight down the slope plus the
+resistive force:
+
+$$F_{\text{drive}} = mg\sin\theta + F_{\text{resistive}} = 70 \times 9.8 \times \sin 5^{\circ} + 25$$
+
+$$= 70 \times 9.8 \times 0.0872 + 25 = 59.8 + 25 = 84.8 \text{ N}$$
+
+$$P = Fv = 84.8 \times 6 = 508.8 \text{ W}$$
+
+This is roughly 500 W, which is elite cyclist-level output. It illustrates why cycling uphill is so
+much harder than cycling on the flat: the additional force needed to overcome gravity at even a
+modest gradient significantly increases the required power.
+
+## 14. Worked Example: Efficiency of a Multi-Stage Process
+
+A natural gas power station burns fuel with energy density 55 MJ/kg at a rate of 8 kg/s. The overall
+efficiency is 42%. Calculate the useful power output and the rate of energy wasted per second.
+
+$$P_{\text{input}} = 55 \times 10^6 \times 8 = 4.4 \times 10^8 \text{ W} = 440 \text{ MW}$$
+
+$$P_{\text{useful}} = 0.42 \times 440 = 184.8 \text{ MW}$$
+
+$$P_{\text{wasted}} = 440 - 184.8 = 255.2 \text{ MW}$$
+
+Over one hour, the wasted energy is $255.2 \times 3600 = 918720 \text{ MJ}$, enough to heat over
+20000 homes. This highlights the enormous scale of energy waste in fossil fuel power stations and
+the importance of improving efficiency.
+
+## 15. The Concept of Specific Heat Capacity: Microscopic View
+
+At the microscopic level, temperature is a measure of the average kinetic energy of the particles in
+a substance. When you add energy to a substance, the particles gain kinetic energy (they move
+faster) and the temperature rises. The specific heat capacity tells you how much energy is needed
+per kilogram per degree of temperature rise.
+
+Materials with high specific heat capacities have structural features that absorb energy without
+increasing kinetic energy. In water, the hydrogen bonds between molecules absorb energy as the bonds
+stretch and bend. This energy is stored as potential energy in the bonds rather than as kinetic
+energy of the molecules. As a result, more total energy input is needed to produce a given
+temperature rise.
+
+Lead has a low specific heat capacity (130 J/(kg $^{\circ}$C)) because its atoms are heavy and
+tightly packed in a metallic lattice with weak intermolecular interactions. Nearly all the energy
+input goes directly into kinetic energy, producing a rapid temperature rise.
+
+## 16. Practice Questions (Additional)
+
+16. A 200 g copper block at $150^{\circ}\text{C}$ is dropped into 300 g of water at
+    $20^{\circ}\text{C}$. Assuming no heat loss to the surroundings, find the final temperature.
+    (Specific heat capacity of copper = 390 J/(kg $^{\circ}$C), specific heat capacity of water =
+    4200 J/(kg $^{\circ}$C).)
+
+17. A crane lifts a 500 kg load through a height of 12 m in 15 s. If the motor is 75% efficient,
+    calculate the electrical power input to the motor.
+
+18. Explain, with reference to energy stores and transfers, what happens when a ball is thrown
+    vertically upward and then falls back down. Account for why the ball does not return to its
+    original height.
+
+19. A student designs a solar water heater. The panel has an area of $2.5 \text{ m}^2$ and receives
+    solar radiation at $800 \text{ W/m}^2$. The efficiency of the panel is 35%. The water flows
+    through the panel at a rate of 0.02 kg/s. Calculate the temperature rise of the water as it
+    passes through the panel.
+
+20. A bungee cord of natural length 20 m has spring constant 40 N/m. A jumper of mass 75 kg falls
+    from a bridge. Find the maximum speed of the jumper during the fall. (Hint: the maximum speed
+    occurs when the acceleration is zero, i.e., when the net force is zero.)

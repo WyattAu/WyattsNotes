@@ -326,3 +326,457 @@ $$f' = 800 \times \frac{343}{343 - 25} = 800 \times \frac{343}{318} = 800 \times
 10. A stationary wave is formed on a string of length $1.2 \text{ m}$ with a fundamental frequency
     of $200 \text{ Hz}$. Calculate the frequencies of the second, third, and fourth harmonics, and
     the positions of the nodes and antinodes for the second harmonic.
+
+## 11. Photoelectric Effect: Extended Worked Examples
+
+### Worked Example: Stopping Potential
+
+When light of wavelength $450 \text{ nm}$ is incident on a sodium surface, the stopping potential is
+measured to be $0.65 \text{ V}$. Find the work function of sodium and the threshold frequency.
+
+$$E_k = eV_s = 1.6 \times 10^{-19} \times 0.65 = 1.04 \times 10^{-19} \text{ J} = 0.65 \text{ eV}$$
+
+Photon energy:
+$E = hf = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{450 \times 10^{-9}} = 4.42 \times 10^{-19} \text{ J} = 2.76 \text{ eV}$
+
+$$\phi = E - E_k = 2.76 - 0.65 = 2.11 \text{ eV}$$
+
+Threshold frequency:
+$f_0 = \frac{\phi}{h} = \frac{2.11 \times 1.6 \times 10^{-19}}{6.63 \times 10^{-34}} = 5.09 \times 10^{14} \text{ Hz}$
+
+Threshold wavelength:
+$\lambda_0 = \frac{c}{f_0} = \frac{3 \times 10^8}{5.09 \times 10^{14}} = 5.89 \times 10^{-7} \text{ m} = 589 \text{ nm}$
+
+This is in the yellow part of the visible spectrum, so sodium only emits photoelectrons when
+illuminated with blue, violet, or UV light.
+
+### Worked Example: Photoelectric Current
+
+A metal surface with work function $2.0 \text{ eV}$ is illuminated with light of frequency
+$7 \times 10^{14} \text{ Hz}$ at an intensity of $5 \text{ W/m}^2$. The surface area is
+$2 \text{ cm}^2$.
+
+**Photon energy:**
+$E = hf = 6.63 \times 10^{-34} \times 7 \times 10^{14} = 4.64 \times 10^{-19} \text{ J} = 2.90 \text{ eV}$
+
+Since $2.90 \text{ eV} \gt 2.0 \text{ eV}$, photoelectrons are emitted.
+
+**Maximum KE:** $E_k = 2.90 - 2.0 = 0.90 \text{ eV}$
+
+**Photon flux:** Power per unit area divided by energy per photon:
+
+$$\text{flux} = \frac{5}{4.64 \times 10^{-19}} = 1.078 \times 10^{19} \text{ photons/m}^2\text{/s}$$
+
+**Photoelectrons per second:**
+$1.078 \times 10^{19} \times 2 \times 10^{-4} = 2.16 \times 10^{15} \text{ electrons/s}$
+
+**Maximum current:**
+$I = ne = 2.16 \times 10^{15} \times 1.6 \times 10^{-19} = 3.45 \times 10^{-4} \text{ A} = 0.345 \text{ mA}$
+
+## 12. De Broglie Wavelength: Extended Examples
+
+### Worked Example: Electron Diffraction
+
+Electrons are accelerated through a potential difference of $500 \text{ V}$. They pass through a
+thin crystal and produce a diffraction pattern. The first diffraction maximum is observed at an
+angle of $1.8^{\circ}$. Calculate the atomic spacing.
+
+$$E_k = eV = 500 \text{ eV} = 8.0 \times 10^{-17} \text{ J}$$
+
+$$p = \sqrt{2mE_k} = \sqrt{2 \times 9.11 \times 10^{-31} \times 8.0 \times 10^{-17}} = \sqrt{1.458 \times 10^{-46}} = 1.208 \times 10^{-23} \text{ kg m/s}$$
+
+$$\lambda = \frac{h}{p} = \frac{6.63 \times 10^{-34}}{1.208 \times 10^{-23}} = 5.49 \times 10^{-11} \text{ m}$$
+
+For the first-order maximum: $d\sin\theta = \lambda$
+
+$$d = \frac{\lambda}{\sin\theta} = \frac{5.49 \times 10^{-11}}{\sin 1.8^{\circ}} = \frac{5.49 \times 10^{-11}}{0.0314} = 1.75 \times 10^{-9} \text{ m} = 1.75 \text{ nm}$$
+
+This is roughly 3--5 atomic spacings, which is consistent with crystal lattice spacing.
+
+## 13. Energy Levels: Extended Analysis
+
+### Worked Example: Hydrogen Spectral Series
+
+Calculate the wavelength of the first three lines in the Balmer series (transitions to $n = 2$).
+
+$E_n = -\frac{13.6}{n^2} \text{ eV}$
+
+**$n = 3 \to 2$:**
+
+$$\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{9}\right) = 13.6 \times \frac{5}{36} = 1.889 \text{ eV}$$
+
+$$\lambda = \frac{hc}{\Delta E} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{1.889 \times 1.6 \times 10^{-19}} = \frac{1.989 \times 10^{-25}}{3.022 \times 10^{-19}} = 6.58 \times 10^{-7} \text{ m} = 658 \text{ nm} \text{ (red)}$$
+
+**$n = 4 \to 2$:**
+
+$$\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{16}\right) = 13.6 \times \frac{3}{16} = 2.55 \text{ eV}$$
+
+$$\lambda = \frac{1.989 \times 10^{-25}}{2.55 \times 1.6 \times 10^{-19}} = 4.87 \times 10^{-7} \text{ m} = 487 \text{ nm} \text{ (blue-green)}$$
+
+**$n = 5 \to 2$:**
+
+$$\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{25}\right) = 13.6 \times \frac{21}{100} = 2.856 \text{ eV}$$
+
+$$\lambda = \frac{1.989 \times 10^{-25}}{2.856 \times 1.6 \times 10^{-19}} = 4.35 \times 10^{-7} \text{ m} = 435 \text{ nm} \text{ (violet)}$$
+
+## 14. Particle Physics: Extended Conservation Laws
+
+### Worked Example: Verifying Conservation Laws
+
+Verify conservation of charge, baryon number, and lepton number for beta-minus decay of a free
+neutron:
+
+$$n \to p + e^- + \bar{\nu}_e$$
+
+Writing with full quark content: $udd \to uud + e^- + \bar{\nu}_e$
+
+| Quantity      | Before                                                      | After                                                        | Conserved? |
+| ------------- | ----------------------------------------------------------- | ------------------------------------------------------------ | ---------- |
+| Charge        | $0 + (-\frac{1}{3}) + (-\frac{1}{3}) + (-\frac{1}{3}) = -1$ | $\frac{2}{3} + \frac{2}{3} + (-\frac{1}{3}) + (-1) + 0 = -1$ | Yes        |
+| Baryon number | $3 \times \frac{1}{3} = 1$                                  | $3 \times \frac{1}{3} + 0 + 0 + 0 = 1$                       | Yes        |
+| Lepton number | $0$                                                         | $1 + (-1) = 0$                                               | Yes        |
+
+### Worked Example: Pion Decay
+
+A $\pi^-$ meson (quark content $d\bar{u}$) decays: $\pi^- \to \mu^- + \bar{\nu}_\mu$
+
+| Quantity      | Before                                 | After          | Conserved? |
+| ------------- | -------------------------------------- | -------------- | ---------- |
+| Charge        | $(-\frac{1}{3}) + (-\frac{2}{3}) = -1$ | $-1 + 0 = -1$  | Yes        |
+| Baryon number | $0 + 0 = 0$                            | $0 + 0 = 0$    | Yes        |
+| Lepton number | $0$                                    | $1 + (-1) = 0$ | Yes        |
+
+## 15. Stationary Waves: Extended Analysis
+
+### Worked Example: Nodes and Antinodes for the Second Harmonic
+
+A string of length $1.2 \text{ m}$ has fundamental frequency $200 \text{ Hz}$.
+
+Wave speed: $v = 2Lf_1 = 2 \times 1.2 \times 200 = 480 \text{ m/s}$
+
+**Second harmonic ($n = 2$):** $f_2 = 400 \text{ Hz}$, $\lambda_2 = \frac{2L}{2} = 1.2 \text{ m}$.
+
+Nodes at: $0, 0.6 \text{ m}, 1.2 \text{ m}$ (3 nodes, including the fixed ends)
+
+Antinodes at: $0.3 \text{ m}, 0.9 \text{ m}$ (2 antinodes)
+
+**Third harmonic ($n = 3$):** $f_3 = 600 \text{ Hz}$, $\lambda_3 = \frac{2L}{3} = 0.8 \text{ m}$.
+
+**Fourth harmonic ($n = 4$):** $f_4 = 800 \text{ Hz}$, $\lambda_4 = \frac{2L}{4} = 0.6 \text{ m}$.
+
+## 16. Summary Table: Quantum and Wave Formulas
+
+| Topic           | Formula                         | Variables              | Notes                |
+| --------------- | ------------------------------- | ---------------------- | -------------------- |
+| Photon energy   | $E = hf = hc/\lambda$           | $h$, $f$, $\lambda$    | Planck's constant    |
+| Photoelectric   | $E_k = hf - \phi$               | $h$, $f$, $\phi$       | Einstein's equation  |
+| De Broglie      | $\lambda = h/p = h/(mv)$        | $h$, $p$, $m$, $v$     | Matter waves         |
+| Uncertainty     | $\Delta x \Delta p \ge \hbar/2$ | $\Delta x$, $\Delta p$ | Fundamental limit    |
+| Energy levels   | $\Delta E = hf = hc/\lambda$    | $h$, $f$, $\lambda$    | Spectral lines       |
+| Standing wave   | $f_n = nv/(2L)$                 | $n$, $v$, $L$          | String fixed at ends |
+| Closed pipe     | $f_n = nv/(4L)$                 | $n$ odd                | Only odd harmonics   |
+| Doppler (sound) | $f' = fv/(v \pm v_s)$           | $f$, $v$, $v_s$        | Approaching/receding |
+
+## 17. Practice Questions (Additional)
+
+11. The work function of caesium is $2.14 \text{ eV}$. Calculate the threshold wavelength and the
+    maximum KE of photoelectrons when illuminated with $550 \text{ nm}$ light.
+
+12. Calculate the de Broglie wavelength of a neutron moving at $2200 \text{ m/s}$ (thermal neutrons
+    in a nuclear reactor). (Mass of neutron $= 1.675 \times 10^{-27} \text{ kg}$.)
+
+13. A hydrogen atom is in the $n = 4$ state. Calculate the wavelengths of all possible photons
+    emitted as it decays to the ground state.
+
+14. Verify conservation of charge, baryon number, and lepton number for the reaction:
+    $\pi^+ + p \to K^+ + \Sigma^+$
+
+15. A stationary wave is set up on a string of length $0.6 \text{ m}$ with a fundamental frequency
+    of $250 \text{ Hz}$. Calculate the wave speed and the frequency of the fifth harmonic.
+
+16. A source emitting $600 \text{ Hz}$ moves towards a stationary observer at $40 \text{ m/s}$.
+    Speed of sound $= 343 \text{ m/s}$. Calculate the observed frequency and the wavelength of the
+    observed sound.
+
+17. Explain how electron diffraction experiments provide evidence for the wave nature of matter.
+
+18. Calculate the energy of a photon in the Lyman series corresponding to a transition from $n = 5$
+    to $n = 1$ in hydrogen.
+
+19. An electron is confined to a region of width $0.5 \text{ nm}$. Estimate the minimum uncertainty
+    in its velocity.
+
+20. Explain why the strong nuclear force must be a short-range force. Reference colour confinement
+    and the fact that quarks are never observed in isolation.
+
+## Extended Worked Examples
+
+### Example 21: De Broglie Wavelength of an Electron in a Potential Difference
+
+An electron is accelerated through a potential difference of $200 \text{ V}$. Calculate its de
+Broglie wavelength.
+
+**Step 1: Find the kinetic energy**
+
+$$eV = \frac{1}{2}mv^2$$
+
+$$1.602 \times 10^{-19} \times 200 = \frac{1}{2} \times 9.109 \times 10^{-31} \times v^2$$
+
+$$v^2 = \frac{2 \times 3.204 \times 10^{-17}}{9.109 \times 10^{-31}} = 7.034 \times 10^{13}$$
+
+$$v = 8.387 \times 10^6 \text{ m/s}$$
+
+**Step 2: Calculate the de Broglie wavelength**
+
+$$\lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \times 8.387 \times 10^6}$$
+
+$$\lambda = \frac{6.626 \times 10^{-34}}{7.639 \times 10^{-24}} = 8.67 \times 10^{-11} \text{ m} = 0.0867 \text{ nm}$$
+
+:::info
+For electrons accelerated through potential $V$, the de Broglie wavelength can be calculated
+directly:
+
+$$\lambda = \frac{h}{\sqrt{2m_e eV}} = \frac{1.226}{\sqrt{V}} \text{ nm}$$
+
+where $V$ is in volts. This is a very useful shortcut: for $V = 200 \text{ V}$,
+$\lambda = 1.226/\sqrt{200} = 0.0867 \text{ nm}$.
+:::
+
+### Example 22: Photon Energy and Wavelength Relationships
+
+A photon has energy $4.5 \text{ eV}$. Calculate (a) its wavelength, (b) its frequency, and (c) its
+momentum.
+
+**Step 1: Convert energy to joules**
+
+$$E = 4.5 \text{ eV} = 4.5 \times 1.602 \times 10^{-19} = 7.209 \times 10^{-19} \text{ J}$$
+
+**Step 2: Wavelength**
+
+$$\lambda = \frac{hc}{E} = \frac{6.626 \times 10^{-34} \times 3.0 \times 10^8}{7.209 \times 10^{-19}}$$
+
+$$\lambda = \frac{1.988 \times 10^{-25}}{7.209 \times 10^{-19}} = 2.758 \times 10^{-7} \text{ m} = 275.8 \text{ nm}$$
+
+This is in the ultraviolet region.
+
+**Step 3: Frequency**
+
+$$f = \frac{c}{\lambda} = \frac{3.0 \times 10^8}{2.758 \times 10^{-7}} = 1.088 \times 10^{15} \text{ Hz}$$
+
+**Step 4: Momentum**
+
+$$p = \frac{E}{c} = \frac{7.209 \times 10^{-19}}{3.0 \times 10^8} = 2.403 \times 10^{-27} \text{ kg}\cdot\text{m/s}$$
+
+### Example 23: Stationary Waves in Closed and Open Pipes
+
+A closed pipe (closed at one end, open at the other) has length $0.85 \text{ m}$. Calculate the
+fundamental frequency and the first two overtones. Speed of sound $= 340 \text{ m/s}$.
+
+**Step 1: Fundamental frequency (first harmonic)**
+
+For a closed pipe, the fundamental has a node at the closed end and an antinode at the open end. The
+effective length is $\lambda/4$:
+
+$$f_1 = \frac{v}{4L} = \frac{340}{4 \times 0.85} = \frac{340}{3.4} = 100 \text{ Hz}$$
+
+**Step 2: First overtone (third harmonic)**
+
+Only odd harmonics are present in a closed pipe:
+
+$$f_3 = 3f_1 = 3 \times 100 = 300 \text{ Hz}$$
+
+**Step 3: Second overtone (fifth harmonic)**
+
+$$f_5 = 5f_1 = 5 \times 100 = 500 \text{ Hz}$$
+
+**Comparison with an open pipe of the same length:**
+
+For an open pipe: $f_1 = \frac{v}{2L} = \frac{340}{1.7} = 200 \text{ Hz}$, and _all_ harmonics are
+present ($f_n = nf_1$).
+
+:::info
+A closed pipe produces only odd harmonics (1st, 3rd, 5th, ...), giving a richer, more
+"hollow" sound than an open pipe which produces all harmonics (1st, 2nd, 3rd, ...). This is why
+clarinets (effectively closed pipes) sound different from flutes (open pipes).
+:::
+
+## Common Pitfalls Extended
+
+### Pitfall 6: Confusing Photon Energy with Electron Energy in the Photoelectric Effect
+
+The photon energy $E = hf$ is the energy of the _incoming light_. The work function $\phi$ is the
+minimum energy to release an electron. The kinetic energy of the emitted electron is
+$KE_{\max} = hf - \phi$. If $hf \lt \phi$, no electrons are emitted _regardless_ of the intensity of
+the light.
+
+### Pitfall 7: Assuming All Transitions Are Equally Probable
+
+Not all transitions between energy levels are equally likely. Selection rules govern which
+transitions have high probability. For hydrogen, transitions where $\Delta l = \pm 1$ are strongly
+favoured. However, for exam purposes, you should assume all allowed energy-conserving transitions
+can occur.
+
+### Pitfall 8: Forgetting That Wave Speed Depends on the Medium
+
+When calculating the wavelength of a wave after it enters a new medium, remember that the frequency
+_stays the same_ but the wavelength and speed change:
+
+$$\lambda_2 = \frac{v_2}{v_1} \lambda_1$$
+
+This applies to all waves: light entering glass, sound entering water, waves on a string when
+tension changes, etc.
+
+## Additional Practice Problems
+
+21. Calculate the wavelength of (a) a $100 \text{ eV}$ electron and (b) a $100 \text{ eV}$ proton.
+    Comment on why electron microscopes have much better resolution than optical microscopes.
+
+22. A hydrogen atom is in the $n = 4$ state. Calculate the energies and wavelengths of all possible
+    photons that could be emitted as the atom returns to the ground state. Identify which are in the
+    visible spectrum.
+
+23. In a Young's double slit experiment using laser light of wavelength $633 \text{ nm}$, the slits
+    are $0.5 \text{ mm}$ apart and the screen is $2 \text{ m}$ away. Calculate (a) the fringe
+    spacing, (b) the distance from the central maximum to the third bright fringe, and (c) what
+    happens to the fringe spacing if the wavelength is changed to $450 \text{ nm}$.
+
+24. An X-ray tube operates at $50 \text{ kV}$. Calculate (a) the minimum wavelength of X-rays
+    produced, (b) the maximum energy of the X-ray photons in eV, and (c) the momentum of these
+    photons.
+
+25. Explain how the Heisenberg uncertainty principle implies that electrons cannot exist in
+    stationary orbits (as in the Bohr model) and must be described by probability clouds. Reference
+    the uncertainty in both position and momentum.
+
+## Further Worked Examples
+
+### Example 26: Pair Production
+
+A gamma ray photon converts into an electron-positron pair. Calculate the minimum photon energy
+required.
+
+**Step 1: Minimum energy**
+
+The minimum photon energy must equal the rest mass energy of both particles:
+
+$$E_{\min} = 2m_e c^2 = 2 \times 0.511 = 1.022 \text{ MeV}$$
+
+**Step 2: Corresponding wavelength**
+
+$$\lambda = \frac{hc}{E} = \frac{6.626 \times 10^{-34} \times 3.0 \times 10^8}{1.022 \times 10^6 \times 1.602 \times 10^{-19}}$$
+
+$$= \frac{1.988 \times 10^{-25}}{1.637 \times 10^{-13}} = 1.214 \times 10^{-12} \text{ m}$$
+
+This is in the gamma ray region of the electromagnetic spectrum.
+
+:::info
+Pair production cannot occur in a vacuum -- it must happen near a nucleus to conserve
+momentum. The recoil of the nucleus absorbs the excess momentum. This is why pair production is more
+likely in high-atomic-number materials (lead, tungsten), which are used in radiation shielding.
+:::
+
+### Example 27: Energy Levels of Hydrogen -- Detailed Transitions
+
+Calculate the wavelength and frequency of the photon emitted when a hydrogen atom transitions from
+$n = 4$ to $n = 2$ (H-beta line in the Balmer series).
+
+**Step 1: Energy of each level**
+
+$$E_n = -\frac{13.6}{n^2} \text{ eV}$$
+
+$$E_4 = -\frac{13.6}{16} = -0.85 \text{ eV}$$
+
+$$E_2 = -\frac{13.6}{4} = -3.40 \text{ eV}$$
+
+**Step 2: Energy of emitted photon**
+
+$$\Delta E = E_4 - E_2 = -0.85 - (-3.40) = 2.55 \text{ eV}$$
+
+**Step 3: Wavelength**
+
+$$\lambda = \frac{hc}{\Delta E} = \frac{1240 \text{ eV}\cdot\text{nm}}{2.55 \text{ eV}} = 486.3 \text{ nm}$$
+
+This is in the blue-green region of the visible spectrum -- the H-beta line.
+
+**Step 4: Frequency**
+
+$$f = \frac{c}{\lambda} = \frac{3.0 \times 10^8}{4.863 \times 10^{-7}} = 6.17 \times 10^{14} \text{ Hz}$$
+
+### Example 28: Standing Wave on a String -- All Harmonics
+
+A string of length $0.75 \text{ m}$ and mass $0.015 \text{ kg}$ is under a tension of
+$40 \text{ N}$. Calculate the fundamental frequency, the first three harmonic frequencies, and the
+wave speed.
+
+**Step 1: Wave speed**
+
+$$v = \sqrt{\frac{T}{\mu}} = \sqrt{\frac{40}{0.015/0.75}} = \sqrt{\frac{40}{0.02}} = \sqrt{2000} = 44.7 \text{ m/s}$$
+
+**Step 2: Fundamental frequency**
+
+$$f_1 = \frac{v}{2L} = \frac{44.7}{1.5} = 29.8 \text{ Hz}$$
+
+**Step 3: Harmonics**
+
+$$f_2 = 2f_1 = 59.6 \text{ Hz}$$
+
+$$f_3 = 3f_1 = 89.4 \text{ Hz}$$
+
+$$f_4 = 4f_1 = 119.2 \text{ Hz}$$
+
+All harmonics are present for a string fixed at both ends.
+
+## Board-Specific Content: SQA Advanced Higher
+
+### Wave-Particle Duality: Davisson-Germer Experiment
+
+The Davisson-Germer experiment (1927) provided direct evidence for the wave nature of electrons.
+Electrons were accelerated through a potential difference and directed at a nickel crystal. The
+reflected electrons showed a diffraction pattern, with a peak at an angle consistent with Bragg's
+law:
+
+$$n\lambda = 2d\sin\theta$$
+
+For electrons accelerated through $54 \text{ V}$:
+
+$$\lambda = \frac{1.226}{\sqrt{54}} = 0.167 \text{ nm}$$
+
+The observed peak angle gave $\lambda = 0.165 \text{ nm}$, in excellent agreement. This confirmed de
+Broglie's hypothesis that $\lambda = h/p$.
+
+### Standard Model Particles
+
+The Standard Model classifies fundamental particles into:
+
+- **Quarks** (6 flavours: up, down, charm, strange, top, bottom) -- experience all four forces
+- **Leptons** (6: electron, muon, tau + their neutrinos) -- experience gravity, EM, weak
+- **Gauge bosons** (force carriers): photon (EM), gluon (strong), W and Z (weak), Higgs (mass)
+- **Each quark comes in three colours** (red, green, blue) -- the charge of the strong force
+
+### Conservation Laws in Particle Physics
+
+In every particle interaction, the following must be conserved:
+
+- Energy/momentum
+- Electric charge
+- Baryon number
+- Lepton number (electron lepton number, muon lepton number, tau lepton number separately)
+- Strangeness (in strong interactions only; can change by 1 in weak interactions)
+
+## Additional Practice Problems
+
+26. Calculate the energy of a photon with wavelength $0.02 \text{ nm}$ (hard X-ray region). Can this
+    photon produce pair production? Justify your answer.
+
+27. An electron in a hydrogen atom is in the $n = 5$ state. List all possible transitions that emit
+    photons in the visible spectrum and calculate their wavelengths.
+
+28. A string under tension $T$ has fundamental frequency $f_1$. By what factor must the tension
+    change to double the fundamental frequency? By what factor must the length change?
+
+29. A positron with kinetic energy $2 \text{ MeV}$ collides with an electron at rest, producing two
+    gamma ray photons. Calculate the wavelength of each photon (assume they have equal energy).
+
+30. Compare and contrast the properties of alpha, beta, and gamma radiation in a table. Include:
+    nature, charge, mass, speed, penetrating power, ionising power, and deflection in magnetic
+    fields.

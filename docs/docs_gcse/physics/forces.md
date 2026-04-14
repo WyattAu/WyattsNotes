@@ -597,3 +597,143 @@ because its hull encloses a large volume of air, making its average density less
 
 15. Explain why a car tyre needs to be inflated to the correct pressure. Include reference to the
     contact area between the tyre and the road.
+
+## 10. Derivation: Stopping Distance from the Work-Energy Theorem
+
+The relationship between braking distance and speed can be derived rigorously using the work-energy
+theorem. When a vehicle brakes to a stop, the braking force does negative work equal to the change
+in kinetic energy:
+
+$$F d = \frac{1}{2}mv^2$$
+
+Solving for $d$:
+
+$$d = \frac{mv^2}{2F}$$
+
+This derivation reveals two key facts. First, for a given braking force $F$, the braking distance is
+proportional to $v^2$: doubling the speed quadruples the braking distance. Second, for a given
+speed, the braking distance is inversely proportional to the braking force: better brakes (larger
+$F$) reduce the stopping distance, but the improvement is limited because the maximum braking force
+is set by the friction between the tyres and the road.
+
+## 11. Worked Example: Block on an Inclined Plane with Friction
+
+A $3 \text{ kg}$ block is placed on a rough plane inclined at $35^{\circ}$ to the horizontal. The
+coefficient of friction is $0.25$.
+
+**Part (a):** Does the block slide?
+
+Component of weight down the slope:
+$mg\sin\theta = 3 \times 9.8 \times \sin 35^{\circ} = 16.9 \text{ N}$.
+
+Normal force: $N = mg\cos\theta = 3 \times 9.8 \times \cos 35^{\circ} = 24.1 \text{ N}$.
+
+Maximum static friction: $f_{\max} = \mu_s N = 0.25 \times 24.1 = 6.02 \text{ N}$.
+
+Since $16.9 \text{ N} \gt 6.02 \text{ N}$, the block slides.
+
+**Part (b):** Find the acceleration.
+
+$$a = g(\sin\theta - \mu\cos\theta) = 9.8(\sin 35^{\circ} - 0.25\cos 35^{\circ})$$
+
+$$= 9.8(0.5736 - 0.25 \times 0.8192) = 9.8(0.5736 - 0.2048) = 9.8 \times 0.3688 = 3.61 \text{ m/s}^2$$
+
+## 12. Worked Example: Inelastic Collision with Kinetic Energy Loss
+
+Two trolleys collide on a frictionless track. Trolley A has mass $2 \text{ kg}$ and velocity
+$4 \text{ m/s}$ to the right. Trolley B has mass $3 \text{ kg}$ and velocity $2 \text{ m/s}$ to the
+left. They stick together.
+
+**Step 1:** Choose a sign convention (right = positive).
+
+$$v_A = +4 \text{ m/s}, \qquad v_B = -2 \text{ m/s}$$
+
+**Step 2:** Apply conservation of momentum.
+
+$$m_A v_A + m_B v_B = (m_A + m_B) v_f$$
+
+$$2(4) + 3(-2) = (2 + 3) v_f$$
+
+$$8 - 6 = 5 v_f$$
+
+$$v_f = 0.4 \text{ m/s to the right}$$
+
+**Step 3:** Calculate kinetic energy before and after.
+
+$$E_{k,i} = \frac{1}{2}(2)(16) + \frac{1}{2}(3)(4) = 16 + 6 = 22 \text{ J}$$
+
+$$E_{k,f} = \frac{1}{2}(5)(0.16) = 0.4 \text{ J}$$
+
+**Kinetic energy lost:** $22 - 0.4 = 21.6 \text{ J}$ (transferred to thermal energy and sound).
+
+This illustrates that perfectly inelastic collisions can lose a very large fraction of the initial
+kinetic energy.
+
+## 13. Why Momentum Is Conserved: A Rigorous Argument
+
+Consider two objects colliding. During the collision, object A exerts a force
+$\vec{F}_{A \text{ on } B}$ on object B, and by Newton's third law, object B exerts an equal and
+opposite force $\vec{F}_{B \text{ on } A} = -\vec{F}_{A \text{ on } B}$ on object A.
+
+By Newton's second law:
+
+$$\vec{F}_{A \text{ on } B} = \frac{d\vec{p}_B}{dt}, \qquad \vec{F}_{B \text{ on } A} = \frac{d\vec{p}_A}{dt}$$
+
+Adding these:
+
+$$\frac{d\vec{p}_A}{dt} + \frac{d\vec{p}_B}{dt} = \vec{F}_{B \text{ on } A} + \vec{F}_{A \text{ on } B} = 0$$
+
+$$\frac{d}{dt}(\vec{p}_A + \vec{p}_B) = 0$$
+
+$$\vec{p}_A + \vec{p}_B = \text{constant}$$
+
+This proof extends to any number of particles. Internal forces always cancel in pairs, so the total
+momentum of a closed system is conserved. This is not a separate law -- it is a direct consequence
+of Newton's second and third laws.
+
+## 14. Summary Table: Types of Force
+
+| Force                 | Direction                          | Formula                            | Notes                                        |
+| --------------------- | ---------------------------------- | ---------------------------------- | -------------------------------------------- |
+| Weight                | Vertically downward                | $W = mg$                           | Always present near a gravitational field    |
+| Normal reaction       | Perpendicular to surface           | Adjusts to prevent penetration     | Not always equal to $mg$                     |
+| Friction              | Opposes relative motion            | $f \leq \mu N$                     | Static friction adjusts; kinetic is constant |
+| Tension               | Along the string, away from object | Equal throughout a massless string | Can only pull, never push                    |
+| Air resistance (drag) | Opposes motion through fluid       | $F_d \propto v^2$ at high speeds   | Increases with speed                         |
+| Upthrust              | Upward (in a fluid)                | Equals weight of fluid displaced   | Explains why objects float                   |
+
+## 15. Worked Example: Hydraulic Press
+
+A hydraulic press has a small piston of area $0.01 \text{ m}^2$ and a large piston of area
+$0.5 \text{ m}^2$. A force of 200 N is applied to the small piston.
+
+By Pascal's principle, the pressure is the same throughout the fluid:
+
+$$P = \frac{F_1}{A_1} = \frac{200}{0.01} = 20000 \text{ Pa}$$
+
+$$F_2 = P \times A_2 = 20000 \times 0.5 = 10000 \text{ N}$$
+
+The force is multiplied by a factor of $A_2/A_1 = 50$. However, by conservation of energy, the small
+piston must move 50 times further than the large piston. The work input equals the work output
+(assuming no losses).
+
+## 16. Practice Questions (Additional)
+
+16. A car of mass 1000 kg travelling at $15 \text{ m/s}$ collides with a stationary car of mass 1500
+    kg. The bumpers lock and they move off together. Calculate their common velocity and the kinetic
+    energy lost in the collision.
+
+17. A $2 \text{ kg}$ block is pushed up a $30^{\circ}$ incline with an initial speed of
+    $8 \text{ m/s}$. The coefficient of kinetic friction is $0.2$. Calculate how far up the incline
+    the block travels before stopping and whether it slides back down.
+
+18. Explain why a passenger in a car feels thrown forward when the car brakes suddenly. Refer to
+    Newton's laws in your answer.
+
+19. A uniform metre rule is balanced on a pivot at the 40 cm mark. A 3 N weight hangs from the 10 cm
+    mark and a 5 N weight hangs from the 70 cm mark. Calculate where an additional 2 N weight must
+    be hung to restore balance.
+
+20. A football is kicked from the ground at $20 \text{ m/s}$ at an angle of $35^{\circ}$ to the
+    horizontal. Calculate the maximum height, the time of flight, and the horizontal range. (Assume
+    $g = 9.8 \text{ m/s}^2$ and ignore air resistance.)
