@@ -23,19 +23,49 @@ A word equation describes a chemical reaction using the names of the reactants a
 
 **Example:** magnesium + hydrochloric acid $\to$ magnesium chloride + hydrogen
 
+Word equations are useful as a first step but they lack precision. Different compounds can share the
+same name in different contexts, and word equations convey no information about the stoichiometry of
+the reaction.
+
 ### 1.2 Symbol Equations
 
 A symbol equation uses chemical formulae. It must be **balanced** -- the same number of each type of
 atom must appear on both sides (conservation of mass).
+
+The conservation of mass is a consequence of the fact that atoms are neither created nor destroyed
+in a chemical reaction. The atoms are simply rearranged into different molecules. This is one of the
+most fundamental principles in chemistry.
 
 **Worked Example.** Balance the equation for the reaction between iron and oxygen to form iron(III)
 oxide.
 
 Unbalanced: $\text{Fe} + \text{O}_2 \to \text{Fe}_2\text{O}_3$
 
+Count atoms: Fe: 1 on left, 2 on right. O: 2 on left, 3 on right.
+
+To balance Fe: put 4 on the left. To balance O: put 3 O$_2$ on the left.
+
 $$4\text{Fe} + 3\text{O}_2 \to 2\text{Fe}_2\text{O}_3$$
 
-Check: Fe: 4 = 4 $\checkmark$, O: 6 = 6 $\checkmark$.
+Check: Fe: 4 = 4, O: 6 = 6.
+
+**Worked Example.** Balance the reaction of aluminium with hydrochloric acid.
+
+Unbalanced: $\text{Al} + \text{HCl} \to \text{AlCl}_3 + \text{H}_2$
+
+$$2\text{Al} + 6\text{HCl} \to 2\text{AlCl}_3 + 3\text{H}_2$$
+
+**Worked Example.** Balance the combustion of ethane.
+
+Unbalanced: $\text{C}_2\text{H}_6 + \text{O}_2 \to \text{CO}_2 + \text{H}_2\text{O}$
+
+$$2\text{C}_2\text{H}_6 + 7\text{O}_2 \to 4\text{CO}_2 + 6\text{H}_2\text{O}$$
+
+**Worked Example.** Balance the reaction of zinc with copper(II) sulfate.
+
+$$\text{Zn} + \text{CuSO}_4 \to \text{ZnSO}_4 + \text{Cu}$$
+
+This equation is already balanced. One atom of each element appears on both sides.
 
 ### 1.3 State Symbols
 
@@ -46,10 +76,24 @@ Check: Fe: 4 = 4 $\checkmark$, O: 6 = 6 $\checkmark$.
 | (g)    | Gas                          |
 | (aq)   | Aqueous (dissolved in water) |
 
+State symbols provide information about the physical state of each substance under the reaction
+conditions. This is important because the state affects the energy change and the type of reaction
+that occurs.
+
 **Worked Example.** Write a balanced symbol equation with state symbols for the reaction of calcium
 with hydrochloric acid.
 
 $$\text{Ca(s)} + 2\text{HCl(aq)} \to \text{CaCl}_2\text{(aq)} + \text{H}_2\text{(g)}$$
+
+**Worked Example.** Write the balanced equation for the thermal decomposition of copper(II)
+carbonate.
+
+$$\text{CuCO}_3\text{(s)} \to \text{CuO(s)} + \text{CO}_2\text{(g)}$$
+
+**Worked Example.** Write the balanced equation for the reaction between sodium hydroxide and
+sulfuric acid.
+
+$$2\text{NaOH(aq)} + \text{H}_2\text{SO}_4\text{(aq)} \to \text{Na}_2\text{SO}_4\text{(aq)} + 2\text{H}_2\text{O(l)}$$
 
 ### 1.4 Ionic Equations
 
@@ -69,6 +113,42 @@ Spectator ions: $\text{Na}^+$ and $\text{NO}_3^-$
 
 Net ionic: $\text{Ag}^+\text{(aq)} + \text{Cl}^-\text{(aq)} \to \text{AgCl(s)}$
 
+**Worked Example.** Write the ionic equation for the reaction of zinc with copper(II) sulfate.
+
+Full: $\text{Zn(s)} + \text{CuSO}_4\text{(aq)} \to \text{ZnSO}_4\text{(aq)} + \text{Cu(s)}$
+
+Ionic:
+$\text{Zn(s)} + \text{Cu}^{2+}\text{(aq)} + \text{SO}_4^{2-}\text{(aq)} \to \text{Zn}^{2+}\text{(aq)} + \text{SO}_4^{2-}\text{(aq)} + \text{Cu(s)}$
+
+Net ionic: $\text{Zn(s)} + \text{Cu}^{2+}\text{(aq)} \to \text{Zn}^{2+}\text{(aq)} + \text{Cu(s)}$
+
+Spectator ion: SO$_4^{2-}$.
+
+### 1.5 Half Equations for Redox Reactions
+
+Redox reactions can be split into two half equations: one for oxidation and one for reduction.
+
+**Example:** The reaction between magnesium and copper(II) sulfate.
+
+Oxidation: $\text{Mg} \to \text{Mg}^{2+} + 2e^-$ (magnesium loses electrons)
+
+Reduction: $\text{Cu}^{2+} + 2e^- \to \text{Cu}$ (copper gains electrons)
+
+**Worked Example.** Write half equations for the reaction of chlorine with potassium bromide.
+
+Oxidation: $2\text{Br}^- \to \text{Br}_2 + 2e^-$ (bromide ions are oxidised to bromine)
+
+Reduction: $\text{Cl}_2 + 2e^- \to 2\text{Cl}^-$ (chlorine is reduced to chloride ions)
+
+### 1.6 Derivation: Conservation of Mass from Atomic Theory
+
+Since atoms are neither created nor destroyed in a chemical reaction (Law of Conservation of Mass,
+Lavoisier), the total mass of the reactants equals the total mass of the products. This is why
+equations must be balanced: the number of atoms of each element must be the same on both sides.
+
+In a closed system, this is always true. In an open system, apparent mass changes can occur (e.g.
+gas escaping), but the atoms are still conserved -- they have simply left the system.
+
 ## 2. Types of Chemical Reaction
 
 ### 2.1 Exothermic and Endothermic Reactions
@@ -80,7 +160,22 @@ combustion, neutralisation, respiration, oxidation.
 thermal decomposition, photosynthesis.
 
 **Activation energy:** The minimum energy that particles must have for a reaction to occur. All
-reactions require activation energy, even exothermic ones.
+reactions require activation energy, even exothermic ones. The activation energy is the energy
+barrier that must be surmounted for the reaction to proceed.
+
+<details>
+<summary>Why do exothermic reactions need activation energy?</summary>
+
+An exothermic reaction releases energy overall, but bonds must still be broken before new bonds can
+form. Breaking bonds always requires an energy input. The activation energy is the energy needed to
+break the initial bonds. Once the reaction has started, the energy released from forming new bonds
+more than compensates for the initial input.
+
+Consider a ball rolling down a hill. The ball releases energy (potential energy converts to kinetic
+energy), but it first needs to be pushed over a small bump at the top. The bump is the activation
+energy.
+
+</details>
 
 ### 2.2 Energy Level Diagrams
 
@@ -112,6 +207,9 @@ $$\Delta H = \text{energy absorbed (breaking)} - \text{energy released (forming)
 If $\Delta H$ is negative, the reaction is exothermic. If $\Delta H$ is positive, the reaction is
 endothermic.
 
+This is a consequence of energy conservation. If more energy is released by forming new bonds than
+is absorbed by breaking old bonds, the excess is released to the surroundings (exothermic).
+
 **Worked Example.** Calculate the enthalpy change for the reaction:
 $\text{H}_2 + \text{Cl}_2 \to 2\text{HCl}$
 
@@ -123,6 +221,43 @@ $$\Delta H = 678 - 862 = -184 \text{ kJ/mol}$$
 
 The reaction is exothermic ($\Delta H \lt 0$).
 
+**Worked Example.** Calculate the enthalpy change for the reaction:
+$\text{N}_2 + 3\text{H}_2 \to 2\text{NH}_3$
+
+Given: N$\equiv$N = 945 kJ/mol, H-H = 436 kJ/mol, N-H = 391 kJ/mol.
+
+$$\text{Energy absorbed} = 945 + 3(436) = 945 + 1308 = 2253 \text{ kJ}$$
+$$\text{Energy released} = 6(391) = 2346 \text{ kJ}$$
+$$\Delta H = 2253 - 2346 = -93 \text{ kJ/mol}$$
+
+**Worked Example.** Calculate the enthalpy change for the combustion of methane:
+$\text{CH}_4 + 2\text{O}_2 \to \text{CO}_2 + 2\text{H}_2\text{O}$
+
+Given: C-H = 413 kJ/mol, O=O = 495 kJ/mol, C=O = 805 kJ/mol, O-H = 464 kJ/mol.
+
+$$\text{Energy absorbed} = 4(413) + 2(495) = 1652 + 990 = 2642 \text{ kJ}$$
+$$\text{Energy released} = 2(805) + 4(464) = 1610 + 1856 = 3466 \text{ kJ}$$
+$$\Delta H = 2642 - 3466 = -824 \text{ kJ/mol}$$
+
+### 2.4 Required Practical: Investigating Temperature Changes
+
+Measure the temperature change when a known mass of solid is added to a known volume of solution.
+
+The energy change can be calculated using:
+
+$$q = mc\Delta T$$
+
+where $m$ is the mass of the solution (g), $c$ is the specific heat capacity of water
+($4.18
+\text{ J/g}^{\circ}\text{C}$), and $\Delta T$ is the temperature change.
+
+**Worked Example.** When 2.0 g of calcium chloride is dissolved in 50 g of water, the temperature
+rises by $8.5^{\circ}\text{C}$. Calculate the energy change.
+
+$$q = 50 \times 4.18 \times 8.5 = 1776.5 \text{ J} = 1.78 \text{ kJ}$$
+
+Since the temperature increased, the reaction is exothermic, so $\Delta H = -1.78 \text{ kJ}$.
+
 ## 3. Rates of Reaction
 
 ### 3.1 Collision Theory
@@ -133,7 +268,12 @@ For a reaction to occur, particles must:
 2. **Collide with sufficient energy** (at least the activation energy)
 3. **Collide with the correct orientation**
 
-The **rate of reaction** is the speed at which reactants are converted into products.
+The **rate of reaction** is the speed at which reactants are converted into products. It can be
+measured by monitoring the change in concentration of a reactant or product over time.
+
+Collision theory provides a microscopic explanation for the macroscopic factors that affect rate.
+Any change that increases the frequency of successful collisions (those with sufficient energy and
+correct orientation) will increase the rate.
 
 ### 3.2 Factors Affecting Rate of Reaction
 
@@ -144,6 +284,15 @@ The **rate of reaction** is the speed at which reactants are converted into prod
 | Increasing surface area     | Increases      | More particles exposed for collision                                         |
 | Adding a catalyst           | Increases      | Provides an alternative pathway with lower activation energy                 |
 | Increasing pressure (gases) | Increases      | More particles per unit volume                                               |
+
+**Temperature** has a particularly strong effect because it changes the distribution of molecular
+energies. A small increase in temperature shifts a much larger fraction of molecules above the
+activation energy threshold. The rate approximately doubles for every $10^{\circ}\text{C}$ increase
+in temperature.
+
+**Surface area** matters for solid reactants. A lump of calcium carbonate has a small surface area,
+but the same mass as a powder has a much larger surface area. Since reactions occur at the surface,
+the powder reacts much faster.
 
 ### 3.3 Catalysts
 
@@ -161,6 +310,9 @@ by providing an alternative reaction pathway with a lower activation energy.
 - Lower temperature and pressure can be used (saves energy and money)
 - Do not get used up (only small amounts needed)
 - Reduce waste
+
+A catalyst does not change the products of a reaction, the position of equilibrium, or the enthalpy
+change. It only provides a lower-energy pathway from reactants to products.
 
 ### 3.4 Required Practical: Investigating Rate
 
@@ -193,6 +345,24 @@ A graph of amount of product against time:
 The **gradient** at any point gives the rate at that time. The steepest gradient is at the start
 (initial rate).
 
+**Comparing rate graphs:** When comparing two experiments on the same graph, the curve with the
+steeper initial gradient corresponds to the faster reaction. Both curves should level off at the
+same maximum if the same total amount of reactant is used (assuming complete reaction).
+
+### 3.6 Higher Tier: Calculating Rate from a Graph
+
+The rate at a particular time is equal to the gradient of the tangent to the curve at that point.
+
+$$\text{Rate} = \frac{\Delta y}{\Delta x}$$
+
+where $\Delta y$ is the change in the quantity measured (volume, mass, concentration) and $\Delta x$
+is the change in time.
+
+**Worked Example.** In an experiment, 20 cm$^3$ of gas is collected in the first 30 seconds.
+Calculate the mean rate of reaction.
+
+$$\text{Rate} = \frac{20}{30} = 0.67 \text{ cm}^3/\text{s}$$
+
 ## 4. Reversible Reactions and Equilibrium
 
 ### 4.1 Reversible Reactions
@@ -210,6 +380,10 @@ When a reversible reaction takes place in a **closed system**, the forward and r
 both occur. Eventually, the rates of the forward and reverse reactions become equal, and the
 concentrations of reactants and products remain constant. This state is called **dynamic
 equilibrium**.
+
+The word "dynamic" is important: at equilibrium, both reactions are still occurring, but at the same
+rate. The concentrations do not change because the forward and reverse rates are balanced. If the
+system is not closed (e.g., a gas escapes), equilibrium cannot be established.
 
 **Conditions for equilibrium:**
 
@@ -229,6 +403,13 @@ shifts in the direction that counteracts the change.
 | Increase pressure                    | Shifts to the side with fewer gas molecules                    |
 | Add a catalyst                       | No effect on position; reaches equilibrium faster              |
 
+**Key points:**
+
+- Only temperature changes affect the value of the equilibrium constant
+- Pressure changes affect the position but not the value of the equilibrium constant (for a given
+  temperature)
+- Concentration changes affect the position but not the value of the equilibrium constant
+
 ### 4.4 The Haber Process
 
 $$\text{N}_2\text{(g)} + 3\text{H}_2\text{(g)} \rightleftharpoons 2\text{NH}_3\text{(g)} \quad \Delta H = -92 \text{ kJ/mol}$$
@@ -238,8 +419,36 @@ $$\text{N}_2\text{(g)} + 3\text{H}_2\text{(g)} \rightleftharpoons 2\text{NH}_3\t
 - Temperature: 450$^{\circ}$C (compromise: lower temperature favours product, but reaction would be
   too slow)
 - Pressure: 200 atm (high pressure favours product, 4 moles $\to$ 2 moles; but high pressure is
-  expensive)
+  expensive and dangerous)
 - Catalyst: iron (speeds up the rate)
+
+The conditions chosen represent an economic compromise. The theoretically optimal conditions (low
+temperature, very high pressure) are not practical because the reaction would be too slow or the
+equipment too expensive. The chosen conditions give a reasonable yield at an acceptable rate and
+cost.
+
+**Worked Example.** Explain the effect of increasing temperature on the Haber process equilibrium.
+
+The forward reaction is exothermic ($\Delta H = -92$ kJ/mol). Increasing temperature favours the
+endothermic (reverse) reaction, so the equilibrium shifts to the left, producing more nitrogen and
+hydrogen and less ammonia. The yield of ammonia decreases, but the rate of reaction increases.
+
+### 4.5 The Contact Process
+
+$$2\text{SO}_2\text{(g)} + \text{O}_2\text{(g)} \rightleftharpoons 2\text{SO}_3\text{(g)} \quad \Delta H = -197 \text{ kJ/mol}$$
+
+Conditions: 450$^{\circ}$C, 1-2 atm, vanadium(V) oxide catalyst.
+
+The moderate temperature is again a compromise between equilibrium yield and rate. The pressure is
+only slightly above atmospheric because the equilibrium already favours the product side (3 moles
+$\to$ 2 moles of gas), so very high pressure is not economically justified.
+
+### 4.6 Equilibrium Summary Table
+
+| Process         | Equation                                                    | Favourable Conditions                                 |
+| --------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
+| Haber process   | $\text{N}_2 + 3\text{H}_2 \rightleftharpoons 2\text{NH}_3$  | High pressure, moderate temp, iron catalyst           |
+| Contact process | $2\text{SO}_2 + \text{O}_2 \rightleftharpoons 2\text{SO}_3$ | Moderate pressure, moderate temp, V$_2$O$_5$ catalyst |
 
 ## 5. Acids, Bases, and Salts
 
@@ -258,6 +467,9 @@ The pH scale measures how acidic or alkaline a solution is:
 **Bases** neutralise acids. A **base** that dissolves in water is called an **alkali** (produces
 OH$^-$ ions).
 
+The pH scale is logarithmic: each unit decrease in pH represents a tenfold increase in hydrogen ion
+concentration. A solution of pH 3 has ten times the $[\text{H}^+]$ of a solution of pH 4.
+
 ### 5.2 Strong and Weak Acids
 
 **Strong acids** fully dissociate in water:
@@ -268,7 +480,11 @@ $$\text{HCl} \to \text{H}^+ + \text{Cl}^-$$
 
 $$\text{CH}_3\text{COOH} \rightleftharpoons \text{H}^+ + \text{CH}_3\text{COO}^-$$
 
-A weak acid has a higher pH than a strong acid of the same concentration.
+A weak acid has a higher pH than a strong acid of the same concentration. This is because the weak
+acid produces fewer H$^+$ ions per unit volume.
+
+"Strong" and "weak" refer to the degree of dissociation, not the concentration. A dilute solution of
+a strong acid can have a higher pH than a concentrated solution of a weak acid.
 
 ### 5.3 Reactions of Acids
 
@@ -289,6 +505,9 @@ the water to crystallise the salt.
 2. Filter to remove the excess base
 3. Evaporate the filtrate to obtain the salt crystals
 
+**Insoluble salts:** Made by precipitation -- mixing two solutions that contain the ions of the
+desired salt.
+
 ### 5.5 Titrations
 
 A **titration** is used to find the exact volume of acid needed to neutralise a known volume of
@@ -303,7 +522,28 @@ alkali.
 5. Record the volume of acid used (the titre)
 6. Repeat to obtain concordant results (within 0.10 cm$^3$)
 
-### 5.6 Electrolysis
+**Worked Example.** 25.0 cm$^3$ of 0.100 mol/dm$^3$ NaOH is neutralised by HCl. The average titre is
+22.5 cm$^3$. Calculate the concentration of the HCl.
+
+$$n(\text{NaOH}) = 0.100 \times 0.0250 = 0.00250 \text{ mol}$$
+
+Mole ratio 1:1, so $n(\text{HCl}) = 0.00250 \text{ mol}$.
+
+$$c(\text{HCl}) = \frac{0.00250}{0.0225} = 0.111 \text{ mol/dm}^3$$
+
+### 5.6 Tests for Gases
+
+| Gas            | Test                  | Result                            |
+| -------------- | --------------------- | --------------------------------- |
+| Hydrogen       | Lighted splint        | Squeaky pop                       |
+| Oxygen         | Glowing splint        | Relights                          |
+| Carbon dioxide | Limewater             | Turns cloudy/milky                |
+| Chlorine       | Damp litmus paper     | Bleaches the litmus (turns white) |
+| Ammonia        | Damp red litmus paper | Turns blue                        |
+
+## 6. Electrolysis
+
+### 6.1 Principles
 
 **Electrolysis** is the decomposition of an ionic compound using electricity. It requires a liquid
 (molten or aqueous) to allow ions to move and carry charge.
@@ -313,6 +553,22 @@ alkali.
 - **Anode:** Positive electrode (attracts anions)
 - **Cathode:** Negative electrode (attracts cations)
 - **Electrolyte:** The ionic compound being decomposed
+
+### 6.2 Electrolysis of Molten Ionic Compounds
+
+When a molten ionic compound is electrolysed, the metal is produced at the cathode and the non-metal
+is produced at the anode.
+
+**Example:** Electrolysis of molten lead(II) bromide.
+
+Cathode (negative): $\text{Pb}^{2+} + 2e^- \to \text{Pb}$ (lead metal)
+
+Anode (positive): $2\text{Br}^- \to \text{Br}_2 + 2e^-$ (bromine gas)
+
+### 6.3 Electrolysis of Aqueous Solutions
+
+When an aqueous solution is electrolysed, water can also be electrolysed, producing hydrogen and/or
+oxygen.
 
 **At the cathode (negative):** Metal ions or hydrogen are discharged (reduced).
 
@@ -326,6 +582,8 @@ metal is produced.
 
 Anode (aqueous): Halides produce the halogen. Otherwise, oxygen is produced from hydroxide ions.
 
+### 6.4 Worked Examples
+
 **Worked Example.** Predict the products of the electrolysis of copper(II) sulfate solution using
 inert electrodes.
 
@@ -337,16 +595,97 @@ Anode: Sulfate is not a halide, so oxygen is produced:
 
 $$4\text{OH}^- \to 2\text{H}_2\text{O} + \text{O}_2 + 4e^-$$
 
+**Worked Example.** Predict the products of the electrolysis of aqueous sodium chloride using inert
+electrodes.
+
+Cathode: Sodium is more reactive than hydrogen, so hydrogen is produced:
+
+$$2\text{H}^+ + 2e^- \to \text{H}_2$$
+
+Anode: Chloride is a halide, so chlorine is produced:
+
+$$2\text{Cl}^- \to \text{Cl}_2 + 2e^-$$
+
+**Worked Example.** Predict the products of the electrolysis of aqueous potassium iodide.
+
+Cathode: Potassium is more reactive than hydrogen, so hydrogen is produced from water:
+
+$$2\text{H}_2\text{O} + 2e^- \to \text{H}_2 + 2\text{OH}^-$$
+
+Anode: Iodide is a halide, so iodine is produced:
+
+$$2\text{I}^- \to \text{I}_2 + 2e^-$$
+
+### 6.5 Electrolysis in Industry
+
+**Extraction of aluminium:** Aluminium oxide (bauxite) is dissolved in molten cryolite and
+electrolysed. Aluminium is produced at the cathode and oxygen at the anode. The carbon anodes react
+with the oxygen and must be replaced periodically.
+
+Cathode: $\text{Al}^{3+} + 3e^- \to \text{Al}$
+
+Anode: $2\text{O}^{2-} \to \text{O}_2 + 4e^-$
+
+**Electroplating:** The cathode is the object to be plated. The anode is made of the plating metal.
+The electrolyte contains ions of the plating metal. For example, to copper-plate a key, the key is
+the cathode, a copper bar is the anode, and the electrolyte is copper(II) sulfate solution.
+
+## 7. Types of Chemical Reaction Summary
+
+### 7.1 Classification Table
+
+| Type                  | Description                                         | Example                                                           |
+| --------------------- | --------------------------------------------------- | ----------------------------------------------------------------- |
+| Combustion            | Burning in oxygen                                   | $\text{CH}_4 + 2\text{O}_2 \to \text{CO}_2 + 2\text{H}_2\text{O}$ |
+| Thermal decomposition | Breaking down with heat                             | $\text{CaCO}_3 \to \text{CaO} + \text{CO}_2$                      |
+| Neutralisation        | Acid + base $\to$ salt + water                      | $\text{HCl} + \text{NaOH} \to \text{NaCl} + \text{H}_2\text{O}$   |
+| Displacement          | More reactive element displaces a less reactive one | $\text{Zn} + \text{CuSO}_4 \to \text{ZnSO}_4 + \text{Cu}$         |
+| Oxidation/reduction   | Transfer of electrons                               | $\text{Fe}^{2+} \to \text{Fe}^{3+} + e^-$                         |
+
+### 7.2 Oxidation States
+
+Oxidation state rules:
+
+1. Elements in their standard state: 0
+2. Monatomic ions: equal to their charge
+3. Oxygen: usually $-2$ (except in peroxides: $-1$)
+4. Hydrogen: usually $+1$ (except in metal hydrides: $-1$)
+5. The sum of oxidation states in a neutral compound is 0
+
+**Worked Example.** Determine the oxidation state of manganese in KMnO$_4$.
+
+K = $+1$, O = $-2$ (four oxygens: $4 \times -2 = -8$).
+
+$+1 + \text{Mn} + (-8) = 0$, so Mn = $+7$.
+
+**Worked Example.** Determine the oxidation state of chromium in Cr$_2$O$_7^{2-}$.
+
+O = $-2$ (seven oxygens: $7 \times -2 = -14$).
+
+$2\text{Cr} + (-14) = -2$, so $2\text{Cr} = +12$, giving Cr = $+6$.
+
 ## Common Pitfalls
 
-- **Not balancing equations correctly.** Always count atoms of each element on both sides.
-- **Confusing exothermic and endothermic.** Exothermic = releases heat; endothermic = absorbs heat.
-- **Forgetting state symbols in equations.** These are often required in exams.
+- **Not balancing equations correctly.** Always count atoms of each element on both sides. Check
+  that the total charge is balanced in ionic equations.
+- **Confusing exothermic and endothermic.** Exothermic = releases heat ($\Delta H \lt 0$);
+  endothermic = absorbs heat ($\Delta H \gt 0$).
+- **Forgetting state symbols in equations.** These are often required in exams and provide useful
+  information.
 - **Misapplying Le Chatelier's principle.** The equilibrium shifts to COUNTERACT the change, not to
   reinforce it.
 - **Confusing a catalyst with a reactant.** A catalyst speeds up the reaction but is not consumed.
+  It does not change the yield.
 - **Writing the wrong products in electrolysis.** Remember the rules for discharge at each
-  electrode.
+  electrode. In aqueous solution, hydrogen may be produced at the cathode if the metal is reactive,
+  and oxygen may be produced at the anode if the anion is not a halide.
+- **Forgetting that the pH scale is logarithmic.** A change of 1 pH unit means a tenfold change in
+  $[\text{H}^+]$.
+- **Using the wrong reagent to identify a gas.** Know each test precisely: limewater for CO$_2$,
+  glowing splint for O$_2$, lighted splint for H$_2$.
+- **Confusing the oxidation state of oxygen in peroxides.** In H$_2$O$_2$, oxygen has oxidation
+  state $-1$, not $-2$.
+- **Not including the correct charges in half equations.** Always balance both atoms and charge.
 
 ## Practice Questions
 
@@ -375,3 +714,29 @@ $$4\text{OH}^- \to 2\text{H}_2\text{O} + \text{O}_2 + 4e^-$$
 9. Describe how you would prepare a pure, dry sample of copper(II) sulfate crystals.
 
 10. Explain the difference between a strong acid and a weak acid of the same concentration.
+
+11. A student investigates the rate of reaction between marble chips and hydrochloric acid at two
+    different temperatures. Sketch the two graphs on the same axes and explain the differences.
+
+12. Explain why the Haber process uses a temperature of 450$^{\circ}$C rather than room temperature
+    or 100$^{\circ}$C.
+
+13. Write the balanced equation for the reaction between sulfuric acid and sodium hydroxide,
+    including state symbols.
+
+14. Describe a test to identify (a) hydrogen gas and (b) carbon dioxide gas.
+
+15. Explain, in terms of electrode reactions, why the mass of the anode decreases during the
+    electroplating of a metal object.
+
+16. Balance the equation:
+    $\text{C}_4\text{H}_{10} + \text{O}_2 \to \text{CO}_2 + \text{H}_2\text{O}$
+
+17. Predict the products of electrolysis of aqueous sodium sulfate using inert electrodes.
+
+18. Calculate the pH of a solution made by diluting 10 cm$^3$ of 0.1 mol/dm$^3$ HCl to 100 cm$^3$.
+
+19. Write half equations for the reaction between magnesium and silver nitrate.
+
+20. Explain, using Le Chatelier's principle, why increasing the pressure increases the yield of
+    ammonia in the Haber process.

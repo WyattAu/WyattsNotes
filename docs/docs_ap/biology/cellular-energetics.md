@@ -52,6 +52,22 @@ molecules.
 **Regulation:** Phosphofructokinase (PFK) is the key regulatory enzyme. It is inhibited by ATP and
 citrate (high energy signals) and activated by AMP and fructose-2,6-bisphosphate.
 
+**Worked Example: ATP yield from glycolysis alone.**
+
+If a cell can only carry out glycolysis (no oxygen available), the net ATP yield per glucose is 2
+ATP. The 2 NADH produced cannot enter the electron transport chain without oxygen. In animal cells,
+these NADH are used to reduce pyruvate to lactate (fermentation). In yeast, NADH are used to reduce
+acetaldehyde to ethanol.
+
+**Worked Example: Why hexokinase and PFK are different.**
+
+Hexokinase catalyses the first step of glycolysis (glucose $\to$ glucose-6-phosphate). It is not the
+committed step because glucose-6-phosphate can also enter the pentose phosphate pathway (for NADPH
+production). PFK catalyses the committed step (fructose-6-phosphate $\to$
+fructose-1,6-bisphosphate). Once fructose-1,6-bisphosphate is formed, the molecule is committed to
+glycolysis. This is why PFK is the key regulatory enzyme -- it controls the rate at which glucose
+enters glycolysis.
+
 ### Pyruvate Oxidation (Link Reaction)
 
 Each pyruvate ($\text{C}_3$) is transported into the mitochondrial matrix and converted to
@@ -62,6 +78,10 @@ $$
 $$
 
 Per glucose: 2 acetyl-CoA, $2 \text{CO}_2$, 2 NADH.
+
+The link reaction is catalysed by the pyruvate dehydrogenase complex, a large multi-enzyme complex
+that requires five coenzymes: CoA, $\text{NAD}^+$, FAD, lipoic acid, and thiamine (vitamin B1). This
+is why thiamine deficiency (beriberi) impairs energy metabolism.
 
 ### Citric Acid Cycle (Krebs Cycle)
 
@@ -81,6 +101,15 @@ Per glucose (2 turns):
 - 2 $\text{FADH}_2$
 - 2 ATP
 - 4 $\text{CO}_2$
+
+**Worked Example: Tracking carbon atoms through the Krebs cycle.**
+
+The two carbon atoms from one acetyl-CoA enter the cycle as part of citrate. Over the course of one
+turn, both carbons are released as $\text{CO}_2$. However, neither $\text{CO}_2$ molecule comes
+directly from the acetyl-CoA -- the carbon atoms are scrambled by the symmetrical nature of some
+intermediates (succinate and fumarate). This was demonstrated by Melvin Calvin using radioactive
+$^{14}\text{C}$-labelled acetyl-CoA. Despite the scrambling, the net result is that the two carbons
+from acetyl-CoA are released as $\text{CO}_2$ by the end of one turn.
 
 ### Oxidative Phosphorylation
 
@@ -114,6 +143,11 @@ $$
 
 Approximately 3-4 $\text{H}^+$ are needed per ATP synthesized.
 
+**The role of ATP synthase:** ATP synthase is a molecular motor. The flow of protons through the
+$F_0$ portion causes the $F_1$ portion to rotate, inducing conformational changes that catalyse the
+phosphorylation of ADP to ATP. This mechanism was proposed by Paul Boyer and confirmed by John
+Walker (Nobel Prize, 1997).
+
 ### ATP Yield Per Glucose
 
 | Source                | ATP (Approximate) |
@@ -125,6 +159,19 @@ Approximately 3-4 $\text{H}^+$ are needed per ATP synthesized.
 | Krebs NADH            | 15 ATP            |
 | Krebs $\text{FADH}_2$ | 3 ATP             |
 | **Total**             | **30-32 ATP**     |
+
+**Worked Example: Calculating total ATP yield.**
+
+Using the values of 2.5 ATP per NADH and 1.5 ATP per $\text{FADH}_2$:
+
+- Glycolysis: 2 ATP + 2 NADH $\times$ 2.5 = 7 ATP
+- Pyruvate oxidation: 2 NADH $\times$ 2.5 = 5 ATP
+- Krebs cycle: 2 ATP + 6 NADH $\times$ 2.5 + 2 $\text{FADH}_2 \times$ 1.5 = 2 + 15 + 3 = 20 ATP
+- **Total: 7 + 5 + 20 = 32 ATP**
+
+Note: Some textbooks use 3 ATP per NADH and 2 ATP per $\text{FADH}_2$, giving a total of 38 ATP. The
+actual yield is closer to 30-32 because of proton leak and the cost of transporting molecules across
+membranes.
 
 ### Fermentation (Anaerobic Respiration)
 
@@ -142,6 +189,25 @@ $$
 $$
 \text{Pyruvate} + \text{NADH} \to \text{Lactate} + \text{NAD}^+
 $$
+
+**Worked Example: Why fermentation is necessary.**
+
+During glycolysis, NAD+ is reduced to NADH. Without a way to regenerate NAD+, glycolysis would stop
+after a few seconds because there would be no NAD+ to accept electrons.
+
+In the presence of oxygen, NADH donates its electrons to the ETC, regenerating NAD+. But without
+oxygen, the ETC cannot function. Fermentation solves this problem by using NADH to reduce pyruvate
+(to lactate or ethanol), regenerating NAD+ so glycolysis can continue producing its 2 ATP per
+glucose.
+
+**Worked Example: Why alcoholic fermentation is important in industry.**
+
+Yeast (Saccharomyces cerevisiae) carries out alcoholic fermentation in anaerobic conditions. This is
+exploited in brewing (beer), winemaking, and bread-making. In bread-making, the $\text{CO}_2$
+produced by fermentation causes the dough to rise, while the ethanol evaporates during baking. In
+brewing, ethanol is the desired product, and the $\text{CO}_2$ provides carbonation. The yeast
+consumes the sugars in the wort or grape juice and produces ethanol and $\text{CO}_2$ as waste
+products.
 
 ## Photosynthesis (CED Unit 3)
 
@@ -174,6 +240,12 @@ $$
 4. **$\text{NADP}^+$ reductase:** $\text{NADP}^+ + \text{H}^+ + 2e^- \to \text{NADPH}$.
 
 5. **Chemiosmosis:** $\text{H}^+$ gradient drives ATP synthase, producing ATP.
+
+**Why water is the source of electrons:** The electrons from water replace those lost by P680.
+Without water, the photosystems would run out of electrons and photosynthesis would stop. This was
+demonstrated using $^{18}\text{O}$-labelled water: the labelled oxygen appeared in $\text{O}_2$ gas,
+not in glucose, confirming that water (not $\text{CO}_2$) is the source of oxygen released during
+photosynthesis.
 
 ### The Calvin Cycle (Light-Independent Reactions)
 
@@ -219,6 +291,27 @@ binds $\text{O}_2$ instead of $\text{CO}_2$, producing 2-phosphoglycolate (a 2-c
 - Release $\text{CO}_2$ from organic acids during the day for the Calvin cycle.
 - Temporal separation of $\text{CO}_2$ fixation and the Calvin cycle.
 
+**Comparison table: C3, C4, and CAM plants.**
+
+| Feature          | C3 Plants             | C4 Plants                                            | CAM Plants                             |
+| ---------------- | --------------------- | ---------------------------------------------------- | -------------------------------------- |
+| Carbon fixation  | RuBisCO (mesophyll)   | PEP carboxylase (mesophyll), RuBisCO (bundle-sheath) | PEP carboxylase (night), RuBisCO (day) |
+| Photorespiration | Significant           | Minimal                                              | Minimal                                |
+| Water use        | Moderate              | Moderate                                             | Very efficient                         |
+| Habitat          | Temperate, cool       | Tropical, hot                                        | Arid, desert                           |
+| Examples         | Wheat, rice, soybeans | Corn, sugarcane                                      | Cacti, pineapples, orchids             |
+
+**Worked Example: Comparing C4 and CAM strategies.**
+
+Both C4 and CAM plants minimise photorespiration by concentrating $\text{CO}_2$ around RuBisCO. C4
+plants achieve this through spatial separation: PEP carboxylase fixes $\text{CO}_2$ in mesophyll
+cells, and the resulting 4-carbon acid is transported to bundle-sheath cells where $\text{CO}_2$ is
+released. CAM plants achieve the same result through temporal separation: $\text{CO}_2$ is fixed at
+night (when stomata can open without excessive water loss) and stored as organic acids. During the
+day, the organic acids release $\text{CO}_2$ for the Calvin cycle. The key difference is that C4
+plants fix $\text{CO}_2$ and run the Calvin cycle simultaneously in different cells, while CAM
+plants separate them in time within the same cell.
+
 ## Common Pitfalls
 
 1. **Confusing the inputs and outputs of cellular respiration and photosynthesis.** They are
@@ -236,6 +329,19 @@ binds $\text{O}_2$ instead of $\text{CO}_2$, producing 2-phosphoglycolate (a 2-c
    glycolysis to continue; the ATP comes from glycolysis alone.
 7. **Confusing the roles of photosystems I and II.** PS II comes first (P680), splits water, and
    produces ATP. PS I comes second (P700) and produces NADPH.
+8. **Forgetting that $\text{CO}_2$ is released in both pyruvate oxidation and the Krebs cycle.** A
+   total of 6 $\text{CO}_2$ are released per glucose (2 from link reaction, 4 from Krebs cycle).
+9. **Thinking that the Krebs cycle directly produces a lot of ATP.** It only produces 2 ATP per
+   glucose by substrate-level phosphorylation; most ATP comes from oxidative phosphorylation.
+10. **Confusing photophosphorylation and oxidative phosphorylation.** Photophosphorylation occurs in
+    chloroplasts and uses light energy; oxidative phosphorylation occurs in mitochondria and uses
+    energy from the electron transport chain.
+11. **Thinking glycolysis requires oxygen.** Glycolysis is anaerobic and occurs in the cytoplasm.
+    Oxygen is only required for oxidative phosphorylation.
+12. **Confusing the source of oxygen released in photosynthesis.** Oxygen comes from the splitting
+    of water (photolysis), not from $\text{CO}_2$.
+13. **Forgetting the role of PEP carboxylase in C4 plants.** PEP carboxylase has no oxygenase
+    activity, unlike RuBisCO, so it does not catalyse photorespiration.
 
 ## Practice Questions
 
@@ -260,3 +366,346 @@ binds $\text{O}_2$ instead of $\text{CO}_2$, producing 2-phosphoglycolate (a 2-c
 
 8. Calculate the total ATP yield from one molecule of glucose, assuming 2.5 ATP per NADH and 1.5 ATP
    per $\text{FADH}_2$ in the electron transport chain.
+
+9. Explain the chemiosmotic theory of ATP production. How is it similar in mitochondria and
+   chloroplasts, and how does it differ?
+
+10. A plant is grown in an atmosphere with radioactive ${}^{14}\text{CO}_2$. Describe the path of
+    the radioactive carbon from the atmosphere to glucose, naming the molecules it passes through.
+
+11. Compare the light-dependent reactions and the Calvin cycle in terms of location, inputs,
+    outputs, and dependence on light.
+
+12. Explain why the proton gradient is necessary for ATP synthase to function.
+
+13. Describe the role of PEP carboxylase in C4 photosynthesis and explain why it has a higher
+    affinity for $\text{CO}_2$ than RuBisCO.
+
+14. A researcher measures the rate of oxygen production by isolated chloroplasts under different
+    light intensities. Sketch the expected graph and explain its shape.
+
+15. Explain why uncoupling proteins (which make the inner mitochondrial membrane permeable to
+    protons) cause increased oxygen consumption but decreased ATP production.
+
+16. Describe how the products of the light-dependent reactions (ATP and NADPH) are used in the
+    Calvin cycle.
+
+17. Explain why fermentation is less efficient than aerobic respiration in terms of ATP yield per
+    glucose.
+
+18. Compare the electron transport chains in mitochondria and chloroplasts. What are the key
+    similarities and differences?
+
+19. Explain the effect of increasing temperature on the rate of photosynthesis, including why very
+    high temperatures reduce the rate.
+
+20. A student claims that "plants release oxygen during photosynthesis and absorb oxygen during
+    respiration." Evaluate this claim for a plant in (a) bright sunlight and (b) complete darkness.
+
+21. Explain why the glycerol-3-phosphate shuttle reduces the total ATP yield from glycolysis
+    compared to the malate-aspartate shuttle.
+
+22. Describe the mechanism of brown fat thermogenesis and explain how it differs from normal
+    oxidative phosphorylation.
+
+23. A researcher isolates mitochondria and measures oxygen consumption and ATP production in the
+    presence and absence of DNP (dinitrophenol). Explain the expected results.
+
+24. Explain how the enzyme RuBisCO can be both essential for photosynthesis and wasteful (through
+    photorespiration). Why has evolution not produced a better enzyme?
+
+25. Compare the structure and function of ATP synthase in mitochondria and chloroplasts.
+
+## Review: Detailed Comparison of Respiration and Photosynthesis
+
+Understanding the similarities and differences between these two processes is essential for the AP
+exam.
+
+| Feature           | Cellular Respiration                                                                     | Photosynthesis                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Location          | Cytoplasm and mitochondria                                                               | Chloroplasts                                                                             |
+| Organisms         | All living organisms                                                                     | Plants, algae, some bacteria                                                             |
+| Overall equation  | $\text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \to 6\text{CO}_2 + 6\text{H}_2\text{O}$ | $6\text{CO}_2 + 6\text{H}_2\text{O} \to \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$ |
+| Energy change     | Exergonic ($\Delta G \lt 0$)                                                             | Endergonic ($\Delta G \gt 0$)                                                            |
+| Electron donor    | Glucose (organic molecule)                                                               | Water ($\text{H}_2\text{O}$)                                                             |
+| Electron acceptor | $\text{O}_2$ (final)                                                                     | $\text{NADP}^+$ (final)                                                                  |
+| ATP production    | Substrate-level + oxidative                                                              | Photophosphorylation                                                                     |
+| $\text{CO}_2$     | Released                                                                                 | Consumed                                                                                 |
+| $\text{O}_2$      | Consumed                                                                                 | Released                                                                                 |
+
+The two processes are essentially reverse reactions in terms of overall chemical equation, but they
+differ fundamentally in their mechanisms: respiration catabolises glucose to harvest energy, while
+photosynthesis uses light energy to build glucose.
+
+## Review: Factors Affecting the Rate of Photosynthesis
+
+**Light intensity:** At low light intensity, the rate of photosynthesis increases linearly because
+more photons are available to excite electrons in the photosystems. As light intensity increases,
+the rate plateaus because another factor (usually $\text{CO}_2$ concentration or temperature)
+becomes limiting.
+
+**$\text{CO}_2$ concentration:** At low $\text{CO}_2$, the rate increases because RuBisCO has more
+substrate to fix. At high $\text{CO}_2$, the rate plateaus because light or temperature is limiting.
+Commercial greenhouses often enrich the atmosphere with $\text{CO}_2$ to increase crop yields.
+
+**Temperature:** Affects enzyme activity (particularly RuBisCO). The rate increases with temperature
+up to an optimum (typically $25$--$35\degree$C for most plants) and then decreases sharply as
+enzymes denature. The effect of temperature is most pronounced at high light intensities where light
+is not the limiting factor.
+
+**Water availability:** Water is a reactant in the light-dependent reactions, but it is rarely a
+limiting factor in practice because plants use relatively little water for photosynthesis compared
+to the amount lost through transpiration. However, severe drought causes stomata to close, reducing
+$\text{CO}_2$ uptake and therefore limiting photosynthesis.
+
+**Worked Example: Interpreting a photosynthesis rate graph.**
+
+A graph shows the rate of photosynthesis plotted against light intensity at two temperatures,
+$15\degree$C and $30\degree$C.
+
+1. At low light intensity, both curves rise at the same rate. Light is the limiting factor at both
+   temperatures.
+2. The $15\degree$C curve plateaus at a lower maximum rate than the $30\degree$C curve. At
+   $15\degree$C, temperature limits the rate of enzyme-catalysed reactions (particularly RuBisCO
+   activity).
+3. At $30\degree$C, the higher enzyme activity allows a higher maximum rate of photosynthesis.
+4. If a third curve at $40\degree$C were added, it might plateau at a similar or lower level than
+   the $30\degree$C curve if $40\degree$C is close to the optimum, or it might show a lower rate if
+   enzymes are beginning to denature.
+
+## Review: The Role of the Electron Transport Chain in Respiration
+
+The ETC is a series of membrane-bound protein complexes and mobile electron carriers that transfer
+electrons from NADH and $\text{FADH}_2$ to $\text{O}_2$, the final electron acceptor. The energy
+released by electron transfer is used to pump protons across the inner mitochondrial membrane,
+creating the electrochemical gradient that drives ATP synthesis.
+
+**Key points:**
+
+- Electrons move through the complexes in order of increasingly positive reduction potential (each
+  successive complex has a greater affinity for electrons).
+- $\text{O}_2$ is essential because it is the only molecule with a positive enough reduction
+  potential to accept electrons at the end of the chain. Without $\text{O}_2$, electrons back up
+  through the chain, NADH and $\text{FADH}_2$ cannot be oxidised, and the Krebs cycle stops.
+- Some compounds that block the ETC are poisons: cyanide blocks Complex IV, rotenone blocks Complex
+  I, and antimycin A blocks Complex III. DNP (dinitrophenol) is an uncoupler that makes the membrane
+  permeable to protons, dissipating the gradient without producing ATP. Energy is released as heat
+  instead.
+
+**Worked Example: Effect of cyanide on cellular respiration.**
+
+Cyanide blocks Complex IV (cytochrome c oxidase) of the ETC. When Complex IV is blocked:
+
+1. Electrons cannot be passed to $\text{O}_2$, so the entire ETC backs up.
+2. NADH and $\text{FADH}_2$ cannot be oxidised because there is no electron acceptor available.
+3. Without NAD$^+$ regeneration, glycolysis, the link reaction, and the Krebs cycle all stop.
+4. The proton gradient is not maintained, so ATP synthase cannot produce ATP.
+5. The cell cannot produce ATP aerobically and must rely on fermentation (if possible), which
+   produces only 2 ATP per glucose.
+6. Cells with high energy demands (brain cells, heart muscle) are particularly affected, which is
+   why cyanide is lethal even in small doses.
+
+**Worked Example: DNP as an uncoupler.**
+
+DNP (2,4-dinitrophenol) makes the inner mitochondrial membrane permeable to protons. The proton
+gradient is dissipated because $\text{H}^+$ can flow back across the membrane without passing
+through ATP synthase. The ETC continues to operate (electrons are still passed to $\text{O}_2$), and
+oxygen consumption increases as the cell tries to maintain the gradient, but no ATP is produced. All
+the energy from electron transfer is released as heat. This is the mechanism behind brown fat
+thermogenesis in newborns and hibernating animals, where uncoupling proteins (UCP1) perform a
+similar function. DNP was used as a weight-loss drug in the 1930s (it "burned" calories as heat) but
+was banned due to dangerous side effects including fatal hyperthermia.
+
+## Review: The Compensation Point
+
+The **compensation point** is the light intensity at which the rate of photosynthesis exactly equals
+the rate of respiration. At this point, there is no net gas exchange: all $\text{CO}_2$ produced by
+respiration is used for photosynthesis, and all $\text{O}_2$ produced by photosynthesis is used for
+respiration.
+
+- Below the compensation point: respiration exceeds photosynthesis; the plant has a net consumption
+  of $\text{CO}_2$ and net release of $\text{O}_2$ (or more precisely, the plant takes in more
+  $\text{O}_2$ than it releases).
+- Above the compensation point: photosynthesis exceeds respiration; the plant has a net uptake of
+  $\text{CO}_2$ and net release of $\text{O}_2$.
+
+The compensation point varies among plants. Shade-tolerant plants have a lower compensation point
+(their rate of respiration is lower, so they need less light to compensate). Sun-loving plants have
+a higher compensation point.
+
+## Review: Detailed ATP Yield Calculations
+
+Understanding the precise ATP yield from aerobic respiration requires tracking every NADH and
+$\text{FADH}_2$ molecule through the electron transport chain.
+
+**Per NADH:** Approximately 10 protons are pumped into the intermembrane space. Approximately 4
+protons are needed per ATP (3 for ATP synthase + 1 for phosphate transport). So each NADH yields
+approximately 2.5 ATP.
+
+**Per $\text{FADH}_2$:** Approximately 6 protons are pumped (electrons enter at Complex II,
+bypassing Complex I). So each $\text{FADH}_2$ yields approximately 1.5 ATP.
+
+**Detailed accounting per glucose:**
+
+| Source                | NADH   | $\text{FADH}_2$ | Direct ATP | ATP from NADH | ATP from $\text{FADH}_2$ | Total  |
+| --------------------- | ------ | --------------- | ---------- | ------------- | ------------------------ | ------ |
+| Glycolysis            | 2      | 0               | 2          | 5             | 0                        | 7      |
+| Pyruvate oxidation    | 2      | 0               | 0          | 5             | 0                        | 5      |
+| Krebs cycle (2 turns) | 6      | 2               | 2          | 15            | 3                        | 20     |
+| **Total**             | **10** | **2**           | **4**      | **25**        | **3**                    | **32** |
+
+**Why the actual yield may be lower:**
+
+1. **Proton leak:** Some protons leak back across the inner mitochondrial membrane without passing
+   through ATP synthase, reducing the proton-motive force.
+2. **Cost of transport:** Cytoplasmic NADH must be shuttled into the mitochondrion. The glycerol-3-
+   phosphate shuttle produces $\text{FADH}_2$ (1.5 ATP) instead of NADH (2.5 ATP) in the
+   mitochondrion, reducing the yield by 2 ATP per glucose.
+3. **Variation in proton/ATP ratio:** The actual number of protons per ATP varies between organisms
+   and tissues.
+
+## Review: Regulation of Cellular Respiration
+
+Respiration is regulated at several key control points to match ATP production to the cell's energy
+demands.
+
+**Phosphofructokinase (PFK):** The most important regulatory enzyme of glycolysis. It catalyses the
+phosphorylation of fructose-6-phosphate to fructose-1,6-bisphosphate (the committed step of
+glycolysis).
+
+- **Inhibited by:** ATP (high energy signal -- when ATP is abundant, glycolysis should slow down),
+  citrate (intermediate of the Krebs cycle -- signals that the cell already has sufficient
+  intermediates for energy production).
+- **Activated by:** AMP (low energy signal -- when ATP is being depleted, glycolysis should speed
+  up), fructose-2,6-bisphosphate (a potent allosteric activator whose concentration increases when
+  glucose is abundant).
+
+**Pyruvate dehydrogenase (link reaction):** Converts pyruvate to acetyl-CoA. Inhibited by high
+levels of ATP, NADH, and acetyl-CoA. Activated by high levels of ADP and pyruvate.
+
+**Isocitrate dehydrogenase and $\alpha$-ketoglutarate dehydrogenase (Krebs cycle):** Both are
+inhibited by ATP, NADH, and succinyl-CoA. Both are activated by ADP and $\text{Ca}^{2+}$ (which
+signals increased energy demand in muscle cells).
+
+**Worked Example: How a sprinter's cells regulate respiration.**
+
+During a sprint, the muscle cells' demand for ATP increases dramatically. ATP levels drop, AMP
+levels rise, and ADP levels increase. These changes activate PFK and other regulatory enzymes,
+speeding up glycolysis and the Krebs cycle. However, oxygen delivery cannot keep up with demand, so
+the electron transport chain cannot process all the NADH produced. The cell switches to anaerobic
+respiration (fermentation) to regenerate NAD$^+$ and maintain glycolysis. Lactate accumulates, and
+the oxygen debt builds up.
+
+## Review: Anaerobic Respiration in Various Organisms
+
+While most eukaryotic organisms use lactic acid fermentation or alcoholic fermentation, some
+prokaryotes carry out anaerobic respiration using electron acceptors other than oxygen.
+
+**Nitrate respiration:** Some bacteria use nitrate ($\text{NO}_3^-$) as the final electron acceptor
+instead of oxygen. This is denitrification, which converts nitrate to nitrogen gas ($\text{N}_2$).
+Denitrifying bacteria are important in the nitrogen cycle and are found in waterlogged, anaerobic
+soils.
+
+**Sulphate respiration:** Sulphate-reducing bacteria use sulphate ($\text{SO}_4^{2-}$) as the final
+electron acceptor, producing hydrogen sulphide ($\text{H}_2\text{S}$), which has a characteristic
+"rotten egg" smell. These bacteria are found in anaerobic sediments and hot springs.
+
+**Methanogenesis:** Archaea in anaerobic environments (e.g., swamps, landfill sites, the guts of
+ruminants) use $\text{CO}_2$ as the final electron acceptor, producing methane ($\text{CH}_4$).
+Methane is a potent greenhouse gas.
+
+## Review: Photophosphorylation -- Linear and Cyclic
+
+**Linear (non-cyclic) photophosphorylation:** The standard pathway involving both photosystems.
+Produces both ATP and NADPH. Water is split, and oxygen is released.
+
+**Cyclic photophosphorylation:** Uses only photosystem I. Electrons from ferredoxin are returned to
+the cytochrome b6f complex (rather than being passed to $\text{NADP}^+$), creating a proton gradient
+that drives ATP synthesis. No NADPH is produced, and no water is split (no oxygen released).
+
+**Why cyclic photophosphorylation is important:** The Calvin cycle uses more ATP than NADPH (18 ATP
+and 12 NADPH per glucose). Linear photophosphorylation produces ATP and NADPH in approximately equal
+amounts. Cyclic photophosphorylation allows the plant to produce extra ATP without producing excess
+NADPH, balancing the supply to meet the Calvin cycle's demands.
+
+## Review: Photorespiration and Its Impact
+
+**What is photorespiration?** When $\text{CO}_2$ levels inside the leaf are low and $\text{O}_2$
+levels are high (e.g., on hot, dry days when stomata close to conserve water), RuBisCO binds
+$\text{O}_2$ instead of $\text{CO}_2$. This produces one molecule of 3-PGA (3 carbons) and one
+molecule of 2-phosphoglycolate (2 carbons). The 2-phosphoglycolate enters a salvage pathway in the
+peroxisome and mitochondrion, ultimately releasing $\text{CO}_2$ and consuming ATP without producing
+any sugar.
+
+**Impact:** Photorespiration can reduce the efficiency of photosynthesis by 25--50% in C3 plants
+under hot, dry conditions. It is estimated to consume approximately 25% of the carbon fixed by
+photosynthesis globally.
+
+**Why RuBisCO is not more specific:** RuBisCO evolved in an atmosphere with very little $\text{O}_2$
+(and abundant $\text{CO}_2$). As photosynthesis produced $\text{O}_2$ over billions of years, the
+$\text{O}_2$ concentration increased, making photorespiration inevitable. Evolution has not produced
+a more $\text{CO}_2$-specific form of RuBisCO, possibly because any mutation that increases
+specificity also decreases catalytic rate.
+
+**C4 and CAM adaptations:** C4 and CAM plants have evolved mechanisms to concentrate $\text{CO}_2$
+at the site of RuBisCO, reducing photorespiration. C4 plants use a spatial separation (mesophyll and
+bundle-sheath cells); CAM plants use a temporal separation (fixing $\text{CO}_2$ at night).
+
+## Review: Summary Comparison Table
+
+| Process               | Cellular Respiration                 | Photosynthesis                 |
+| --------------------- | ------------------------------------ | ------------------------------ |
+| Purpose               | Harvest energy from glucose          | Build glucose from light       |
+| ETC location          | Inner mitochondrial membrane         | Thylakoid membrane             |
+| ETC final acceptor    | $\text{O}_2$                         | $\text{NADP}^+$                |
+| Proton gradient site  | Intermembrane space                  | Thylakoid lumen                |
+| ATP synthase location | Inner mitochondrial membrane         | Thylakoid membrane             |
+| ATP yield per glucose | ~30-32 ATP                           | ~18 ATP consumed per glucose   |
+| Water role            | Final product ($\text{H}_2\text{O}$) | Reactant (split for electrons) |
+| Carbon dioxide role   | Waste product                        | Reactant (fixed by RuBisCO)    |
+
+## Review: Brown Fat and Uncoupling Proteins
+
+Brown adipose tissue (brown fat) is specialised for thermogenesis (heat production). It contains
+mitochondria with uncoupling protein 1 (UCP1, also called thermogenin), which forms a channel in the
+inner mitochondrial membrane that allows protons to flow back into the matrix without passing
+through ATP synthase.
+
+**Mechanism:**
+
+1. Brown fat cells oxidise fatty acids, generating NADH and $\text{FADH}_2$.
+2. The ETC pumps protons into the intermembrane space, creating a gradient.
+3. Instead of flowing through ATP synthase, protons flow through UCP1, dissipating the gradient as
+   heat.
+4. No ATP is produced; all the energy from electron transfer is released as heat.
+
+**Physiological significance:** Brown fat is abundant in newborns (who have a large surface
+area-to-volume ratio and cannot shiver effectively) and in hibernating animals. It helps maintain
+body temperature. Adults also have small amounts of brown fat, and there is research interest in
+activating brown fat as a treatment for obesity (burning calories as heat).
+
+## Review: The Role of Alternative Oxidases
+
+Some plants and fungi possess an alternative oxidase (AOX) in their mitochondrial ETC. AOX transfers
+electrons directly from ubiquinol to $\text{O}_2$, bypassing Complexes III and IV. This pathway does
+not pump protons, so no ATP is produced, but it does allow the ETC to continue operating when the
+cytochrome pathway is saturated. AOX also reduces the production of reactive oxygen species (ROS) by
+preventing over-reduction of the ETC.
+
+## Review: Metabolic Disorders of Energy Metabolism
+
+Several inherited disorders affect cellular energy metabolism:
+
+**Leigh syndrome:** A severe neurological disorder caused by defects in mitochondrial ETC complexes
+(especially Complex I or IV). Symptoms include developmental delay, muscle weakness, and respiratory
+failure. Cells cannot produce sufficient ATP, particularly affecting high-energy-demand tissues like
+the brain.
+
+**Pyruvate dehydrogenase deficiency:** Caused by mutations in the pyruvate dehydrogenase complex.
+Pyruvate cannot be converted to acetyl-CoA, so it accumulates and is converted to lactate (lactic
+acidosis). Treatment includes a ketogenic diet (high in fats, which produce acetyl-CoA directly
+through beta-oxidation, bypassing the link reaction).
+
+**Phosphofructokinase deficiency (Tarui disease):** A glycogen storage disease caused by a
+deficiency of muscle PFK. Affected individuals experience muscle pain and cramping during exercise
+because glycolysis cannot proceed past the PFK step.

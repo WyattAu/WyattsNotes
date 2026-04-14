@@ -17,14 +17,18 @@ $$
 \Delta U = q + w
 $$
 
-where $q$ is heat and $w$ is work.
+where $q$ is heat and $w$ is work. The first law is a statement of energy conservation: any change
+in the internal energy of a system must be accounted for by heat flow and work done.
 
 ### Sign Convention (Chemistry)
 
 - $q \gt 0$: heat absorbed by the system (endothermic)
 - $q \lt 0$: heat released by the system (exothermic)
-- $w \gt 0$: work done on the system
-- $w \lt 0$: work done by the system
+- $w \gt 0$: work done on the system (compression)
+- $w \lt 0$: work done by the system (expansion)
+
+This sign convention is used by chemists (IUPAC convention). Some physics texts use the opposite
+sign for work.
 
 ### Pressure-Volume Work
 
@@ -34,6 +38,9 @@ $$
 w = -P\Delta V
 $$
 
+The negative sign reflects the chemistry convention: when a gas expands ($\Delta V \gt 0$), it does
+work on the surroundings ($w \lt 0$).
+
 ### Work at Constant Pressure: Enthalpy
 
 At constant pressure, $w = -P\Delta V$, so:
@@ -42,7 +49,21 @@ $$
 \Delta U = q_P - P\Delta V \implies q_P = \Delta U + P\Delta V = \Delta H
 $$
 
-**Enthalpy** ($H$) is defined as $H = U + PV$. At constant pressure, $\Delta H = q_P$.
+**Enthalpy** ($H$) is defined as $H = U + PV$. At constant pressure, $\Delta H = q_P$. Enthalpy is
+convenient because most chemical reactions occur at constant (atmospheric) pressure.
+
+### Derivation: Why $\Delta H = q_P$
+
+Starting from the first law at constant pressure:
+
+$$\Delta U = q_P + w = q_P - P\Delta V$$
+
+$$q_P = \Delta U + P\Delta V$$
+
+$$q_P = (U_2 - U_1) + P(V_2 - V_1) = (U_2 + PV_2) - (U_1 + PV_1) = H_2 - H_1 = \Delta H$$
+
+This derivation shows that enthalpy change equals heat at constant pressure because the $P\Delta V$
+work term is absorbed into the enthalpy definition.
 
 ## Enthalpy of Reaction (CED Unit 6)
 
@@ -54,7 +75,12 @@ $$
 \Delta H_{\text{rxn}}^\circ = \sum n\Delta H_f^\circ(\text{products}) - \sum m\Delta H_f^\circ(\text{reactants})
 $$
 
-Standard conditions: $1 \text{ atm}$, $298 \text{ K}$, pure substances.
+Standard conditions: $1 \text{ atm}$, $298 \text{ K}$ ($25^\circ\text{C}$), pure substances in their
+most stable form. By convention, $\Delta H_f^\circ = 0$ for elements in their standard state.
+
+The standard state of an element is its most stable form at $1 \text{ atm}$ and $25^\circ\text{C}$:
+e.g., $\text{O}_2(g)$, not $\text{O}_3(g)$ or $\text{O}_2(l)$; $\text{C(graphite)}$, not
+$\text{C(diamond)}$.
 
 ### Hess's Law
 
@@ -64,6 +90,64 @@ written as the sum of several steps:
 $$
 \Delta H_{\text{total}} = \Delta H_1 + \Delta H_2 + \cdots
 $$
+
+Hess's law is a direct consequence of enthalpy being a state function: it depends only on the
+initial and final states, not on the path between them. This allows us to calculate enthalpy changes
+that cannot be measured directly.
+
+### Worked Example: Hess's Law
+
+Calculate $\Delta H^\circ$ for the reaction
+$\text{C}(\text{graphite}) + 2\text{H}_2(g) \to \text{CH}_4(g)$ using the following data:
+
+$\text{C}(\text{graphite}) + \text{O}_2(g) \to \text{CO}_2(g)$, $\Delta H_1 = -393.5 \text{ kJ/mol}$
+
+$\text{H}_2(g) + \frac{1}{2}\text{O}_2(g) \to \text{H}_2\text{O}(l)$,
+$\Delta H_2 = -285.8 \text{ kJ/mol}$
+
+$\text{CH}_4(g) + 2\text{O}_2(g) \to \text{CO}_2(g) + 2\text{H}_2\text{O}(l)$,
+$\Delta H_3 = -890.3 \text{ kJ/mol}$
+
+Using Hess's law: $\Delta H_f(\text{CH}_4) = \Delta H_1 + 2\Delta H_2 - \Delta H_3$
+
+$$= -393.5 + 2(-285.8) - (-890.3) = -393.5 - 571.6 + 890.3 = -74.8 \text{ kJ/mol}$$
+
+### Worked Example: Hess's Law with Multiple Steps
+
+Calculate $\Delta H^\circ$ for
+$\text{C}(s) + 2\text{H}_2(g) + \frac{1}{2}\text{O}_2(g) \to \text{CH}_3\text{OH}(l)$.
+
+Given: $\text{C}(s) + \text{O}_2(g) \to \text{CO}_2(g)$, $\Delta H = -393.5 \text{ kJ/mol}$
+$\text{H}_2(g) + \frac{1}{2}\text{O}_2(g) \to \text{H}_2\text{O}(l)$,
+$\Delta H = -285.8 \text{ kJ/mol}$
+$\text{CH}_3\text{OH}(l) + \frac{3}{2}\text{O}_2(g) \to \text{CO}_2(g) + 2\text{H}_2\text{O}(l)$,
+$\Delta H = -726.4 \text{ kJ/mol}$
+
+Target: $\text{C}(s) + 2\text{H}_2(g) + \frac{1}{2}\text{O}_2(g) \to \text{CH}_3\text{OH}(l)$
+
+Reverse equation 3 and add equations 1 and 2:
+
+$\text{C}(s) + \text{O}_2(g) \to \text{CO}_2(g)$, $\Delta H = -393.5$
+
+$2\text{H}_2(g) + \text{O}_2(g) \to 2\text{H}_2\text{O}(l)$, $\Delta H = 2(-285.8) = -571.6$
+
+$\text{CO}_2(g) + 2\text{H}_2\text{O}(l) \to \text{CH}_3\text{OH}(l) + \frac{3}{2}\text{O}_2(g)$,
+$\Delta H = +726.4$
+
+Sum: $\Delta H = -393.5 - 571.6 + 726.4 = -238.7 \text{ kJ/mol}$
+
+### Worked Example: Bond Enthalpy Calculation
+
+Estimate $\Delta H$ for $\text{N}_2(g) + 3\text{H}_2(g) \to 2\text{NH}_3(g)$ using bond enthalpies.
+
+Bonds broken:
+$1 \text{ N}\equiv\text{N} (945) + 3 \text{ H-H} (436) = 945 + 1308 = 2253 \text{ kJ/mol}$
+
+Bonds formed: $6 \text{ N-H} (391) = 2346 \text{ kJ/mol}$
+
+$$\Delta H \approx 2253 - 2346 = -93 \text{ kJ/mol}$$
+
+(The exact value is $-92.2 \text{ kJ/mol}$, showing that bond enthalpies give a good approximation.)
 
 :::info[Example]
 
@@ -100,14 +184,15 @@ $$
 \Delta H \approx \sum D(\text{bonds broken}) - \sum D(\text{bonds formed})
 $$
 
-This is an approximation because bond energies are average values.
+This is an approximation because bond energies are average values that depend on the molecular
+environment. The approximation is most accurate when all species are in the gas phase.
 
 :::info[Example]
 
 Estimate $\Delta H$ for
 $\text{CH}_4(g) + 2\text{O}_2(g) \to \text{CO}_2(g) + 2\text{H}_2\text{O}(g)$ using bond enthalpies.
 
-Bonds broken: $4 \text{ C--H} (413) + 2 \text{ O=O} (495) = 1652 + 990 = 2642 \text{ kJ/mol}$
+Bonds broken: $4 \text{ C--H} (413) + 2 \text{ O=O} (495) = 1648 + 990 = 2642 \text{ kJ/mol}$
 
 Bonds formed: $2 \text{ C=O} (799) + 4 \text{ O--H} (463) = 1598 + 1852 = 3450 \text{ kJ/mol}$
 
@@ -131,6 +216,9 @@ $$
 where $m$ is mass, $c$ is specific heat capacity (J/g$\cdot$K), and $\Delta T$ is the temperature
 change.
 
+The specific heat capacity of water is $4.18 \text{ J/g}\cdot\text{K}$. Water has an unusually high
+specific heat capacity because hydrogen bonds must be broken to increase its temperature.
+
 ### Coffee-Cup Calorimetry (Constant Pressure)
 
 Measures $\Delta H$ of reactions in solution. The calorimeter is open to the atmosphere, so $P$ is
@@ -140,6 +228,9 @@ $$
 q_{\text{rxn}} = -q_{\text{solution}} = -(m_{\text{solution}} \cdot c_{\text{solution}} \cdot \Delta T)
 $$
 
+The negative sign ensures that if the solution temperature increases ($\Delta T \gt 0$), the
+reaction is exothermic ($q_{\text{rxn}} \lt 0$).
+
 ### Bomb Calorimetry (Constant Volume)
 
 Measures $\Delta U$ of combustion reactions. The calorimeter has a fixed volume.
@@ -147,6 +238,45 @@ Measures $\Delta U$ of combustion reactions. The calorimeter has a fixed volume.
 $$
 q_{\text{rxn}} = -C_{\text{calorimeter}} \cdot \Delta T
 $$
+
+where $C_{\text{calorimeter}}$ is the heat capacity of the entire calorimeter (including the water
+bomb, stirrer, etc.).
+
+### Derivation: Converting $\Delta U$ to $\Delta H$ in Bomb Calorimetry
+
+For a bomb calorimetry experiment:
+
+$$\Delta U = q_V = -C_{\text{cal}} \cdot \Delta T$$
+
+To convert to $\Delta H$:
+
+$$\Delta H = \Delta U + \Delta n_g RT$$
+
+where $\Delta n_g$ is the change in moles of gas. For combustion reactions, $\Delta n_g$ is often
+negative (fewer gas moles of products than reactants), making $\Delta H$ slightly more negative than
+$\Delta U$.
+
+### Worked Example: Bomb Calorimetry with $\Delta H$ Conversion
+
+A bomb calorimeter with $C_{\text{cal}} = 894 \text{ J/K}$ is used to determine the enthalpy of
+combustion of glucose ($\text{C}_6\text{H}_{12}\text{O}_6$). Burning $1.00 \text{ g}$ raises the
+temperature by $3.02 \text{ K}$. Calculate $\Delta U$ and $\Delta H$ per mole.
+
+Molar mass of glucose: $180.16 \text{ g/mol}$.
+
+$$\Delta U = -894 \times 3.02 = -2700 \text{ J} = -2.70 \text{ kJ per gram}$$
+
+$$\Delta U_{\text{per mol}} = -2.70 \times 180.16 = -486 \text{ kJ/mol}$$
+
+For
+$\text{C}_6\text{H}_{12}\text{O}_6(s) + 6\text{O}_2(g) \to 6\text{CO}_2(g) + 6\text{H}_2\text{O}(l)$:
+
+$\Delta n_g = 6 - 6 = 0$ (no net change in gas moles).
+
+$$\Delta H = \Delta U + \Delta n_g RT = -486 + 0 = -486 \text{ kJ/mol}$$
+
+(Literature value: $-2803 \text{ kJ/mol}$. The difference is due to the calorimeter containing a
+solution rather than pure water.)
 
 :::info[Example]
 
@@ -178,8 +308,10 @@ $$
 
 ### Entropy ($S$)
 
-Entropy is a measure of disorder or randomness. The second law states that the entropy of the
-universe increases for any spontaneous process:
+Entropy is a measure of disorder or randomness at the molecular level. More precisely, it is a
+measure of the number of microstates available to a system.
+
+The second law states that the entropy of the universe increases for any spontaneous process:
 
 $$
 \Delta S_{\text{universe}} = \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} \gt 0
@@ -187,10 +319,25 @@ $$
 
 ### Factors Affecting Entropy
 
-- Phase changes: $S_{\text{gas}} \gg S_{\text{liquid}} \gt S_{\text{solid}}$
-- Temperature: higher $T$ means higher $S$
-- Number of particles: more particles means higher $S$
-- Dissolution: dissolving a solid usually increases $S$
+- Phase changes: $S_{\text{gas}} \gg S_{\text{liquid}} \gt S_{\text{solid}}$ (gases have many more
+  microstates because molecules are free to move in three dimensions)
+- Temperature: higher $T$ means higher $S$ (more energy is distributed among more microstates)
+- Number of particles: more particles means higher $S$ (more microstates for more particles)
+- Dissolution: dissolving a solid usually increases $S$ (ions are dispersed in solution)
+- Complexity: more complex molecules have higher $S$ (more vibrational modes)
+
+### Worked Example: Predicting Entropy Changes
+
+Predict the sign of $\Delta S^\circ$ for each reaction:
+
+(a) $2\text{Na}(s) + \text{Cl}_2(g) \to 2\text{NaCl}(s)$: Negative (gas consumed, solid formed)
+
+(b) $\text{CaCO}_3(s) \to \text{CaO}(s) + \text{CO}_2(g)$: Positive (gas produced)
+
+(c) $\text{N}_2(g) + 3\text{H}_2(g) \to 2\text{NH}_3(g)$: Negative (4 moles gas to 2 moles gas)
+
+(d) $\text{NH}_4\text{NO}_3(s) \to \text{N}_2\text{O}(g) + 2\text{H}_2\text{O}(g)$: Positive (solid
+to 3 moles gas)
 
 ### Standard Entropy Change
 
@@ -199,7 +346,52 @@ $$
 $$
 
 Note: unlike $\Delta H_f^\circ$, $S^\circ$ is not zero for elements (elements have nonzero absolute
-entropy).
+entropy because they are not perfect crystals at absolute zero under standard conditions).
+
+### The Third Law of Thermodynamics
+
+The entropy of a perfect crystal at absolute zero ($0 \text{ K}$) is zero. This provides an absolute
+reference point for entropy, unlike enthalpy.
+
+### Worked Example: Standard Entropy Calculation
+
+Calculate $\Delta S^\circ$ for the reaction $\text{CaCO}_3(s) \to \text{CaO}(s) + \text{CO}_2(g)$.
+
+Given: $S^\circ(\text{CaCO}_3, s) = 92.9$, $S^\circ(\text{CaO}, s) = 39.7$,
+$S^\circ(\text{CO}_2, g) = 213.7 \text{ J/(mol}\cdot\text{K)}$.
+
+$$\Delta S^\circ = [39.7 + 213.7] - [92.9] = 253.4 - 92.9 = 160.5 \text{ J/(mol}\cdot\text{K)}$$
+
+The positive $\Delta S^\circ$ is expected because a solid decomposes to produce a gas.
+
+### Worked Example: Entropy and Phase Changes
+
+Calculate $\Delta S$ for the vaporisation of $1.00 \text{ mol}$ of water at $100^{\circ}\text{C}$.
+
+$$\Delta H_{\text{vap}} = 40.7 \text{ kJ/mol}$$
+
+At the boiling point, $\Delta G = 0$, so $\Delta H = T\Delta S$:
+
+$$\Delta S = \frac{\Delta H_{\text{vap}}}{T} = \frac{40700}{373.15} = 109.1 \text{ J/(mol}\cdot\text{K)}$$
+
+This positive entropy change confirms that the gas phase has more disorder than the liquid phase.
+
+### Worked Example: Entropy of Surroundings
+
+For the reaction $\text{NH}_4\text{NO}_3(s) \to \text{N}_2\text{O}(g) + 2\text{H}_2\text{O}(g)$ at
+$298 \text{ K}$:
+
+$\Delta H^\circ = -36.0 \text{ kJ/mol}$ (exothermic, heat released to surroundings).
+
+$$\Delta S_{\text{surroundings}} = \frac{-\Delta H^\circ}{T} = \frac{36000}{298} = 120.8 \text{ J/(mol}\cdot\text{K)}$$
+
+$$\Delta S_{\text{system}} = 439 \text{ J/(mol}\cdot\text{K)}$$ (given)
+
+$$\Delta S_{\text{universe}} = 439 + 120.8 = 559.8 \text{ J/(mol}\cdot\text{K)} \gt 0$$
+
+The reaction is spontaneous because $\Delta S_{\text{universe}} \gt 0$. The positive
+$\Delta S_{\text{system}}$ (more gas molecules produced) and the positive
+$\Delta S_{\text{surroundings}}$ (exothermic) both contribute.
 
 ## Gibbs Free Energy (CED Unit 9)
 
@@ -208,6 +400,9 @@ entropy).
 $$
 \Delta G = \Delta H - T\Delta S
 $$
+
+The Gibbs free energy combines enthalpy and entropy into a single criterion for spontaneity. A
+negative $\Delta G$ means the process is spontaneous at constant temperature and pressure.
 
 ### Spontaneity at Constant Temperature and Pressure
 
@@ -236,6 +431,18 @@ where $R = 8.314 \text{ J/(mol}\cdot\text{K)}$ and $K$ is the equilibrium consta
 | $K \gg 1$ | $\Delta G^\circ \ll 0$ | Products favored  |
 | $K = 1$   | $\Delta G^\circ = 0$   | Neither           |
 | $K \ll 1$ | $\Delta G^\circ \gg 0$ | Reactants favored |
+
+This equation bridges thermodynamics and equilibrium: the equilibrium constant is determined by the
+standard free energy change.
+
+### Derivation: Non-Standard Gibbs Free Energy
+
+$$
+\Delta G = \Delta G^\circ + RT\ln Q
+$$
+
+where $Q$ is the reaction quotient. At equilibrium, $\Delta G = 0$ and $Q = K$, giving
+$\Delta G^\circ = -RT\ln K$.
 
 ### Temperature Dependence of Spontaneity
 
@@ -270,6 +477,53 @@ Above $1113 \text{ K}$, $\Delta G \lt 0$ and the decomposition is spontaneous.
 
 :::
 
+### Worked Example: Gibbs Free Energy Calculation
+
+For the reaction $\text{N}_2(g) + 3\text{H}_2(g) \to 2\text{NH}_3(g)$ at $298 \text{ K}$:
+
+$\Delta H^\circ = -92.2 \text{ kJ/mol}$, $\Delta S^\circ = -198.8 \text{ J/(mol}\cdot\text{K)}$.
+
+Calculate $\Delta G^\circ$ and $K$.
+
+$$\Delta G^\circ = -92200 - 298(-198.8) = -92200 + 59242 = -32958 \text{ J/mol} = -33.0 \text{ kJ/mol}$$
+
+$$K = e^{-\Delta G^\circ/(RT)} = e^{32958/(8.314 \times 298)} = e^{13.29} = 5.9 \times 10^5$$
+
+$K \gg 1$, confirming the reaction strongly favours products at $298 \text{ K}$.
+
+### Worked Example: Non-Standard Gibbs Free Energy
+
+Calculate $\Delta G$ for the reaction $\text{N}_2(g) + 3\text{H}_2(g) \to 2\text{NH}_3(g)$ at
+$298 \text{ K}$ when $P(\text{N}_2) = 10.0 \text{ atm}$, $P(\text{H}_2) = 30.0 \text{ atm}$,
+$P(\text{NH}_3) = 0.500 \text{ atm}$.
+
+$$Q = \frac{(0.500)^2}{(10.0)(30.0)^3} = \frac{0.250}{270000} = 9.26 \times 10^{-7}$$
+
+$$\Delta G = \Delta G^\circ + RT\ln Q = -33000 + (8.314)(298)\ln(9.26 \times 10^{-7})$$
+
+$$= -33000 + 2478 \times (-13.89) = -33000 - 34420 = -67420 \text{ J/mol} = -67.4 \text{ kJ/mol}$$
+
+$\Delta G \lt 0$, so the reaction is spontaneous under these conditions. The high pressure of
+reactants and low pressure of product drive the reaction forward.
+
+## Summary Table: Thermodynamic Quantities
+
+| Quantity          | Symbol | Units           | State Function? | Zero Reference             |
+| ----------------- | ------ | --------------- | --------------- | -------------------------- |
+| Internal energy   | $U$    | kJ              | Yes             | None (arbitrary)           |
+| Enthalpy          | $H$    | kJ              | Yes             | Elements in standard state |
+| Entropy           | $S$    | J/(mol$\cdot$K) | Yes             | Perfect crystal at 0 K     |
+| Gibbs free energy | $G$    | kJ              | Yes             | Elements in standard state |
+
+## Summary Table: Spontaneity Criteria
+
+| $\Delta H$ | $\Delta S$ | Low $T$ ($\Delta G$) | High $T$ ($\Delta G$) | Spontaneous at |
+| ---------- | ---------- | -------------------- | --------------------- | -------------- |
+| $-$        | $+$        | $-$ (spontaneous)    | $-$ (spontaneous)     | All $T$        |
+| $+$        | $-$        | $+$ (nonspontaneous) | $+$ (nonspontaneous)  | Never          |
+| $-$        | $-$        | $-$ (spontaneous)    | $+$ (nonspontaneous)  | Low $T$ only   |
+| $+$        | $+$        | $+$ (nonspontaneous) | $-$ (spontaneous)     | High $T$ only  |
+
 ## Common Pitfalls
 
 1. **Confusing $\Delta U$ and $\Delta H$.** $\Delta H = \Delta U + P\Delta V$. They are equal only
@@ -283,8 +537,11 @@ Above $1113 \text{ K}$, $\Delta G \lt 0$ and the decomposition is spontaneous.
    $\Delta S_{\text{universe}} \gt 0$, not just $\Delta S_{\text{system}} \gt 0$.
 6. **Incorrect units in the Gibbs equation.** $\Delta H$ is in kJ/mol; $\Delta S$ is in
    J/(mol$\cdot$K). Convert one of them before combining.
-7. \*\*Forgetting that $\Delta G^\circ = -RT\ln K$ uses $R = 8.314 \text{ J/(mol}\cdot\text{K)}$,
-   not $0.08206$.
+7. **Using $R = 0.08206$ in $\Delta G^\circ = -RT\ln K$.** Use
+   $R = 8.314 \text{ J/(mol}\cdot\text{K)}$ because $\Delta G^\circ$ is in J/mol.
+8. **Assuming a negative $\Delta H$ guarantees spontaneity.** If $\Delta S$ is sufficiently
+   negative, $\Delta G$ can be positive even when $\Delta H$ is negative.
+9. **Forgetting that standard conditions are $298 \text{ K}$ and $1 \text{ atm}$, not STP.**
 
 ## Practice Questions
 
@@ -316,3 +573,107 @@ Above $1113 \text{ K}$, $\Delta G \lt 0$ and the decomposition is spontaneous.
    $2\text{H}_2(g) + \text{O}_2(g) \to 2\text{H}_2\text{O}(l)$ given: $S^\circ(\text{H}_2) = 130.7$,
    $S^\circ(\text{O}_2) = 205.1$,
    $S^\circ(\text{H}_2\text{O}, l) = 69.9 \text{ J/(mol}\cdot\text{K)}$.
+
+9. A bomb calorimeter has $C_{\text{cal}} = 850 \text{ J/K}$. Burning $1.00 \text{ g}$ of
+   naphthalene ($\text{C}_{10}\text{H}_8$) raises the temperature by $2.46 \text{ K}$. Calculate the
+   enthalpy of combustion per mole of naphthalene.
+
+10. For the reaction $\text{NH}_4\text{NO}_3(s) \to \text{N}_2\text{O}(g) + 2\text{H}_2\text{O}(g)$,
+    $\Delta H^\circ = -36.0 \text{ kJ/mol}$ and $\Delta S^\circ = 439 \text{ J/(mol}\cdot\text{K)}$.
+    Is the reaction spontaneous at $298 \text{ K}$? At what temperature does it become
+    nonspontaneous?
+
+11. Explain why the dissolution of $\text{NH}_4\text{NO}_3$ in water is endothermic yet spontaneous
+    at room temperature.
+
+12. Calculate $\Delta G$ (not $\Delta G^\circ$) for the reaction
+    $\text{N}_2\text{O}_4(g)
+    \rightleftharpoons 2\text{NO}_2(g)$ at $298 \text{ K}$ when
+    $P(\text{N}_2\text{O}_4) = 0.50
+    \text{ atm}$ and $P(\text{NO}_2) = 0.10 \text{ atm}$. Given:
+    $\Delta G^\circ = 4.72
+    \text{ kJ/mol}$.
+
+13. Predict the sign of $\Delta S^\circ$ for each reaction and explain your reasoning: (a)
+    $2\text{Na}(s) + \text{Cl}_2(g) \to 2\text{NaCl}(s)$ (b)
+    $\text{CaCO}_3(s) \to \text{CaO}(s) + \text{CO}_2(g)$
+
+14. Calculate $\Delta H^\circ$ for the reaction $\text{N}_2(g) + 2\text{O}_2(g) \to 2\text{NO}_2(g)$
+    using the following data: $\frac{1}{2}\text{N}_2(g) + \text{O}_2(g) \to \text{NO}_2(g)$,
+    $\Delta H^\circ = 33.2
+    \text{ kJ/mol}$.
+
+15. A student calculates $\Delta G^\circ = -15 \text{ kJ/mol}$ for a reaction at $298 \text{ K}$ and
+    concludes that the reaction will reach completion. Explain why this conclusion may not be
+    justified.
+
+16. Calculate $\Delta G^\circ$ at $500 \text{ K}$ for a reaction with
+    $\Delta H^\circ = -50 \text{ kJ/mol}$ and $\Delta S^\circ = -80 \text{ J/(mol}\cdot\text{K)}$.
+    Is the reaction spontaneous at this temperature?
+
+17. Using the data below, calculate the standard enthalpy change for the reaction
+    $\text{C}_2\text{H}_5\text{OH}(l) + 3\text{O}_2(g) \to 2\text{CO}_2(g) + 3\text{H}_2\text{O}(l)$.
+    $\Delta H_f^\circ(\text{C}_2\text{H}_5\text{OH}, l) = -277.7 \text{ kJ/mol}$.
+
+18. Explain why a reaction with $\Delta H \gt 0$ and $\Delta S \gt 0$ is nonspontaneous at low
+    temperatures but becomes spontaneous at high temperatures.
+
+19. Calculate the boiling point of $\text{Br}_2$ given that $\text{Br}_2(l) \to \text{Br}_2(g)$ has
+    $\Delta H^\circ = 30.9 \text{ kJ/mol}$ and $\Delta S^\circ = 93.2 \text{ J/(mol}\cdot\text{K)}$.
+
+20. A calorimeter contains $200 \text{ g}$ of water at $25.0^\circ\text{C}$. When $5.00 \text{ g}$
+    of $\text{KOH}$ is dissolved, the temperature rises to $35.0^\circ\text{C}$. Calculate the
+    enthalpy of solution of $\text{KOH}$ in kJ/mol.
+
+21. For the reaction $2\text{NO}(g) + \text{O}_2(g) \to 2\text{NO}_2(g)$, given
+    $\Delta H^\circ = -114.1 \text{ kJ/mol}$ and
+    $\Delta S^\circ = -146.5 \text{ J/(mol}\cdot\text{K)}$, calculate the temperature above which
+    the reaction is no longer spontaneous.
+
+22. Using the following data, calculate $\Delta S^\circ$ for the reaction
+    $4\text{Fe}(s) + 3\text{O}_2(g) \to 2\text{Fe}_2\text{O}_3(s)$: $S^\circ(\text{Fe}, s) = 27.3$,
+    $S^\circ(\text{O}_2, g) = 205.1$,
+    $S^\circ(\text{Fe}_2\text{O}_3, s) = 87.4 \text{ J/(mol}\cdot\text{K)}$.
+
+23. Calculate the normal boiling point of chloroform ($\text{CHCl}_3$) given that
+    $\text{CHCl}_3(l) \to \text{CHCl}_3(g)$ has $\Delta H^\circ = 31.4 \text{ kJ/mol}$ and
+    $\Delta S^\circ = 94.2 \text{ J/(mol}\cdot\text{K)}$.
+
+24. For the reaction $\text{C}(s) + \text{H}_2\text{O}(g) \to \text{CO}(g) + \text{H}_2(g)$,
+    $\Delta H^\circ = 131.3 \text{ kJ/mol}$ and
+    $\Delta S^\circ = 133.7 \text{ J/(mol}\cdot\text{K)}$. Calculate the minimum temperature at
+    which this reaction becomes spontaneous.
+
+25. Explain why the following statement is incorrect: "An exothermic reaction is always
+    spontaneous."
+
+26. A bomb calorimeter with $C_{\text{cal}} = 950 \text{ J/K}$ is used to determine the enthalpy of
+    combustion of benzoic acid ($\text{C}_7\text{H}_6\text{O}_2$). Burning $1.00 \text{ g}$ raises
+    the temperature by $3.24 \text{ K}$. Calculate the enthalpy of combustion per mole.
+
+27. Calculate $\Delta G^\circ$ and $K$ at $298 \text{ K}$ for the reaction
+    $\text{H}_2(g) + \text{I}_2(g) \to 2\text{HI}(g)$ given:
+    $\Delta G_f^\circ(\text{HI}, g) = 1.7 \text{ kJ/mol}$.
+
+28. For a certain reaction, $\Delta G^\circ = -5.4 \text{ kJ/mol}$ at $300 \text{ K}$. Calculate $K$
+    at this temperature and determine whether products or reactants are favoured.
+
+29. Calculate the work done when $2.00 \text{ mol}$ of a gas expands from $5.0 \text{ L}$ to
+    $15.0 \text{ L}$ against a constant external pressure of $1.00 \text{ atm}$.
+
+30. Explain, using thermodynamic principles, why ice melts spontaneously at temperatures above
+    $0^{\circ}\text{C}$ even though the process is endothermic.
+
+31. Calculate the work done by the system and $\Delta U$ when $3.00 \text{ L}$ of gas at
+    $2.00 \text{ atm}$ expands against a constant external pressure of $0.50 \text{ atm}$ to a final
+    volume of $8.00 \text{ L}$.
+
+32. Given $\Delta H_f^\circ(\text{NH}_3, g) = -46.1 \text{ kJ/mol}$,
+    $\Delta H_f^\circ(\text{NO}, g) = 90.3 \text{ kJ/mol}$, and
+    $\Delta H_f^\circ(\text{H}_2\text{O}, g) = -241.8 \text{ kJ/mol}$, calculate $\Delta H^\circ$
+    for the reaction $4\text{NH}_3(g) + 5\text{O}_2(g) \to 4\text{NO}(g) + 6\text{H}_2\text{O}(g)$.
+
+33. The standard entropy values are: $S^\circ(\text{C}, s) = 5.7$,
+    $S^\circ(\text{CO}_2, g) = 213.7$, $S^\circ(\text{CO}, g) = 197.7 \text{ J/(mol}\cdot\text{K)}$.
+    Calculate $\Delta S^\circ$ for the reaction $\text{C}(s) + \text{CO}_2(g) \to 2\text{CO}(g)$ and
+    comment on the sign.

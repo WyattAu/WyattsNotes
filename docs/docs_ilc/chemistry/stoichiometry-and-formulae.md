@@ -373,3 +373,336 @@ $$
    $0.200\text{ M}$ $\text{NaOH}$. Find the concentration of $\text{H}_2\text{SO}_4$.
 4. $6.30\text{ g}$ of hydrated $\text{Na}_2\text{CO}_3 \cdot x\text{H}_2\text{O}$ gives
    $2.33\text{ g}$ of anhydrous $\text{Na}_2\text{CO}_3$ on heating. Find $x$.
+
+---
+
+## Ideal Gas Law in Detail (HL)
+
+### Derivation of the Ideal Gas Equation
+
+The ideal gas equation combines three gas laws:
+
+- **Boyle's Law:** $p \propto 1/V$ (at constant $T$)
+- **Charles's Law:** $V \propto T$ (at constant $p$)
+- **Avogadro's Law:** $V \propto n$ (at constant $p$ and $T$)
+
+Combining: $pV = nRT$, where $R = 8.314 \text{ J mol}^{-1}\text{K}^{-1}$.
+
+### Assumptions of the Ideal Gas Model
+
+1. Gas particles have negligible volume.
+2. No intermolecular forces between particles.
+3. Collisions are perfectly elastic.
+4. All particles move randomly.
+
+Real gases deviate from ideal behaviour at high pressure and low temperature.
+
+### Gas Mixtures: Dalton's Law of Partial Pressures
+
+$$p_{\text{total}} = p_1 + p_2 + p_3 + \ldots$$
+
+The partial pressure of each gas is proportional to its mole fraction:
+
+$$p_i = x_i \times p_{\text{total}}$$
+
+where $x_i = n_i / n_{\text{total}}$.
+
+**Worked Example 9 (HL):** A gas mixture contains 0.40 mol of $\text{N}_2$ and 0.10 mol of
+$\text{O}_2$ at a total pressure of 120 kPa. Find the partial pressure of each gas.
+
+$$n_{\text{total}} = 0.40 + 0.10 = 0.50 \text{ mol}$$
+
+$$x_{\text{N}_2} = 0.40/0.50 = 0.80, \quad x_{\text{O}_2} = 0.10/0.50 = 0.20$$
+
+$$p_{\text{N}_2} = 0.80 \times 120 = 96 \text{ kPa}, \quad p_{\text{O}_2} = 0.20 \times 120 = 24 \text{ kPa}$$
+
+### Molar Volume and Gas Calculations
+
+At STP ($0°C$, 1 atm): $V_m = 22.4 \text{ L/mol}$.
+
+At RTP ($25°C$, 1 atm): $V_m = 24.0 \text{ L/mol}$.
+
+**Worked Example 10 (HL):** What volume does 2 mol of gas occupy at STP?
+
+$$V = n \times V_m = 2 \times 22.4 = 44.8 \text{ L}$$
+
+**Worked Example 11 (HL):** What volume of $\text{CO}_2$ is produced when $10.0 \text{ g}$ of
+$\text{CaCO}_3$ reacts with excess $\text{HCl}$ at RTP?
+
+$$\text{CaCO}_3 + 2\text{HCl} \to \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
+
+$$n(\text{CaCO}_3) = \frac{10.0}{100} = 0.100 \text{ mol}$$
+
+$$n(\text{CO}_2) = 0.100 \text{ mol}$$
+
+$$V(\text{CO}_2) = 0.100 \times 24.0 = 2.40 \text{ L}$$
+
+---
+
+## Empirical and Molecular Formulae: Advanced Problems (HL)
+
+### Combustion Analysis
+
+**Worked Example 12 (HL):** A hydrocarbon contains 85.7% C and 14.3% H. Its molar mass is
+$84 \text{ g/mol}$. Find the molecular formula.
+
+Assume 100 g: C = 85.7 g, H = 14.3 g.
+
+$$n(\text{C}) = 85.7/12 = 7.14, \quad n(\text{H}) = 14.3/1 = 14.3$$
+
+Ratio: $7.14 : 14.3 = 1 : 2$. Empirical formula: $\text{CH}_2$.
+
+Empirical formula mass = 14.
+
+$$n = 84/14 = 6$$
+
+Molecular formula: $\text{C}_6\text{H}_{12}$ (cyclohexane or hexene).
+
+### Formulae Containing Elements Other Than C, H, O
+
+**Worked Example 13 (HL):** An organic compound contains 40.0% C, 6.7% H, and 53.3% O. Its molar
+mass is 180 g/mol. Find its molecular formula.
+
+Assume 100 g: C = 40.0 g, H = 6.7 g, O = 53.3 g.
+
+$$n(\text{C}) = 40.0/12 = 3.33, \quad n(\text{H}) = 6.7/1 = 6.7, \quad n(\text{O}) = 53.3/16 = 3.33$$
+
+Ratio: $1 : 2 : 1$. Empirical formula: $\text{CH}_2\text{O}$.
+
+Empirical formula mass = 30.
+
+$$n = 180/30 = 6$$
+
+Molecular formula: $\text{C}_6\text{H}_{12}\text{O}_6$ (glucose).
+
+### Formulae with Nitrogen or Halogens
+
+**Worked Example 14 (HL):** A compound contains 26.2% N, 7.5% H, and 66.3% Cl. Find its empirical
+formula.
+
+Assume 100 g: N = 26.2 g, H = 7.5 g, Cl = 66.3 g.
+
+$$n(\text{N}) = 26.2/14 = 1.87, \quad n(\text{H}) = 7.5/1 = 7.5, \quad n(\text{Cl}) = 66.3/35.5 = 1.87$$
+
+Ratio: $1 : 4 : 1$. Empirical formula: $\text{NH}_4\text{Cl}$ (ammonium chloride).
+
+---
+
+## Advanced Limiting Reagent Problems (HL)
+
+**Worked Example 15 (HL):** $4.6 \text{ g}$ of ethanol ($\text{C}_2\text{H}_5\text{OH}$) is burned
+in excess oxygen. Calculate the mass of $\text{CO}_2$ produced.
+
+$$\text{C}_2\text{H}_5\text{OH} + 3\text{O}_2 \to 2\text{CO}_2 + 3\text{H}_2\text{O}$$
+
+$$n(\text{ethanol}) = \frac{4.6}{46} = 0.10 \text{ mol}$$
+
+$$n(\text{CO}_2) = 2 \times 0.10 = 0.20 \text{ mol}$$
+
+$$m(\text{CO}_2) = 0.20 \times 44 = 8.8 \text{ g}$$
+
+**Worked Example 16 (HL):** $10.0 \text{ g}$ of $\text{Zn}$ is added to $200 \text{ mL}$ of
+$1.00 \text{ M}$ $\text{HCl}$. Find the mass of $\text{ZnCl}_2$ produced and identify the limiting
+reagent.
+
+$$\text{Zn} + 2\text{HCl} \to \text{ZnCl}_2 + \text{H}_2$$
+
+$$n(\text{Zn}) = \frac{10.0}{65.4} = 0.153 \text{ mol}$$
+
+$$n(\text{HCl}) = 1.00 \times 0.200 = 0.200 \text{ mol}$$
+
+Stoichiometry requires $n(\text{HCl}) = 2 \times n(\text{Zn}) = 0.306 \text{ mol}$.
+
+Since $0.200 < 0.306$, HCl is the limiting reagent.
+
+$$n(\text{ZnCl}_2) = \frac{1}{2} \times 0.200 = 0.100 \text{ mol}$$
+
+$$m(\text{ZnCl}_2) = 0.100 \times 136.3 = 13.6 \text{ g}$$
+
+---
+
+## Advanced Titration Calculations (HL)
+
+### Worked Example 17 (HL): $\text{H}_2\text{SO}_4$ Titration
+
+$20.0 \text{ mL}$ of $\text{H}_2\text{SO}_4$ is neutralised by $25.0 \text{ mL}$ of
+$0.200 \text{ M}$ $\text{NaOH}$. Find the concentration of $\text{H}_2\text{SO}_4$.
+
+$$\text{H}_2\text{SO}_4 + 2\text{NaOH} \to \text{Na}_2\text{SO}_4 + 2\text{H}_2\text{O}$$
+
+$$n(\text{NaOH}) = 0.200 \times 0.0250 = 0.00500 \text{ mol}$$
+
+$$n(\text{H}_2\text{SO}_4) = \frac{0.00500}{2} = 0.00250 \text{ mol}$$
+
+$$c(\text{H}_2\text{SO}_4) = \frac{0.00250}{0.0200} = 0.125 \text{ M}$$
+
+### Worked Example 18 (HL): Percentage Purity
+
+$12.0 \text{ g}$ of impure $\text{CaCO}_3$ required $300 \text{ cm}^3$ of $1.00 \text{ M}$
+$\text{HCl}$ to react completely. Find the percentage purity.
+
+$$\text{CaCO}_3 + 2\text{HCl} \to \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
+
+$$n(\text{HCl}) = 1.00 \times 0.300 = 0.300 \text{ mol}$$
+
+$$n(\text{CaCO}_3) = \frac{0.300}{2} = 0.150 \text{ mol}$$
+
+$$m(\text{pure CaCO}_3) = 0.150 \times 100 = 15.0 \text{ g}$$
+
+Wait, this exceeds the sample mass of 12.0 g. Let me correct the problem: $120 \text{ cm}^3$ of
+$1.00 \text{ M}$ $\text{HCl}$.
+
+$$n(\text{HCl}) = 1.00 \times 0.120 = 0.120 \text{ mol}$$
+
+$$n(\text{CaCO}_3) = \frac{0.120}{2} = 0.060 \text{ mol}$$
+
+$$m(\text{pure CaCO}_3) = 0.060 \times 100 = 6.0 \text{ g}$$
+
+$$\%\text{ purity} = \frac{6.0}{12.0} \times 100 = 50.0\%$$
+
+---
+
+## Gravimetric Analysis (HL)
+
+Gravimetric analysis determines the amount of a substance by measuring the mass of a precipitate.
+
+**Worked Example 19 (HL):** To determine the amount of sulfate in a solution, $\text{BaCl}_2$ is
+added to precipitate $\text{BaSO}_4$. If $1.17 \text{ g}$ of $\text{BaSO}_4$ is obtained, find the
+mass of sulfate ions in the original solution.
+
+$$\text{SO}_4^{2-} + \text{Ba}^{2+} \to \text{BaSO}_4\text{(s)}$$
+
+$$n(\text{BaSO}_4) = \frac{1.17}{233.4} = 0.00501 \text{ mol}$$
+
+$$n(\text{SO}_4^{2-}) = 0.00501 \text{ mol}$$
+
+$$m(\text{SO}_4^{2-}) = 0.00501 \times 96.1 = 0.481 \text{ g}$$
+
+---
+
+## Common Pitfalls
+
+1. **Balancing equations** -- always check atoms on both sides.
+2. **Molar mass units** -- use g/mol for mass calculations.
+3. **Limiting reagent** -- identify which reactant limits the reaction by comparing required vs
+   available ratios.
+4. **Titration** -- use the average titre (excluding rough titration) and ensure the balanced
+   equation gives the correct mole ratio.
+5. **Gas volumes** -- ensure temperature is in Kelvin.
+6. **Water of crystallisation** -- subtract the mass of the anhydrous salt from the hydrated salt.
+7. **Molar gas volume** -- use 22.4 L/mol at STP (0°C) and 24.0 L/mol at RTP (25°C). Do not mix
+   these up.
+8. **Percentage yield** -- theoretical yield is the maximum possible; actual yield is always less
+   due to incomplete reactions, side reactions, and losses during purification.
+
+---
+
+## Practice Questions (Extended)
+
+5. A compound contains 69.9% iron and 30.1% oxygen by mass. Find its empirical formula.
+6. Balance: $\text{Al} + \text{O}_2 \to \text{Al}_2\text{O}_3$.
+7. Find the molar mass of $\text{H}_2\text{SO}_4$.
+8. $2.5 \text{ g}$ of $\text{CaCO}_3$ is heated until completely decomposed. Calculate the volume of
+   $\text{CO}_2$ produced at RTP.
+9. A mixture of $\text{NaCl}$ and $\text{Na}_2\text{CO}_3$ weighing $5.00 \text{ g}$ requires
+   $50.0 \text{ cm}^3$ of $0.500 \text{ M}$ $\text{HCl}$ for complete reaction. Calculate the
+   percentage of each compound in the mixture.
+10. In a back titration, $2.00 \text{ g}$ of limestone ($\text{CaCO}_3$) is reacted with
+    $50.0 \text{ mL}$ of $1.00 \text{ M}$ $\text{HCl}$ (excess). The remaining acid requires
+    $30.0 \text{ mL}$ of $0.500 \text{ M}$ $\text{NaOH}$ to neutralise. Calculate the percentage
+    purity of the limestone.
+11. $6.30 \text{ g}$ of hydrated $\text{Na}_2\text{CO}_3 \cdot x\text{H}_2\text{O}$ gives
+    $2.33 \text{ g}$ of anhydrous $\text{Na}_2\text{CO}_3$ on heating. Find $x$.
+12. A student performs a titration and obtains the following results: $25.0 \text{ cm}^3$ of acid is
+    titrated with $0.100 \text{ M}$ $\text{NaOH}$. Titre values: $24.80, 24.90, 24.85 \text{ cm}^3$.
+    Calculate the concentration of the acid, assuming it is monoprotic.
+13. What mass of $\text{AgCl}$ precipitate would be formed when excess $\text{AgNO}_3$ is added to
+    $25.0 \text{ cm}^3$ of $0.150 \text{ M}$ $\text{MgCl}_2$?
+14. A gas mixture at $100 \text{ kPa}$ and $298 \text{ K}$ contains $\text{N}_2$, $\text{O}_2$, and
+    $\text{CO}_2$ with partial pressures of 78, 21, and 1 kPa respectively. Calculate the mole
+    fraction and number of moles of each gas if the total volume is $10.0 \text{ L}$.
+15. Find the empirical formula of a compound that contains 37.5% C, 12.5% H, and 50.0% O by mass.
+
+---
+
+## Solution Stoichiometry (HL)
+
+### Dilution Calculations
+
+$$c_1 V_1 = c_2 V_2$$
+
+**Worked Example 20 (HL):** How would you prepare $250 \text{ mL}$ of $0.10 \text{ M}$ $\text{HCl}$
+from $2.0 \text{ M}$ $\text{HCl}$?
+
+$$2.0 \times V_1 = 0.10 \times 250$$
+
+$$V_1 = \frac{25}{2.0} = 12.5 \text{ mL}$$
+
+Measure $12.5 \text{ mL}$ of $2.0 \text{ M}$ $\text{HCl}$ and dilute to $250 \text{ mL}$ with water.
+
+### Mixing Solutions
+
+**Worked Example 21 (HL):** $100 \text{ mL}$ of $0.50 \text{ M}$ $\text{HCl}$ is mixed with
+$200 \text{ mL}$ of $0.30 \text{ M}$ $\text{HCl}$. Find the concentration of the resulting solution.
+
+$$n_{\text{total}} = 0.50 \times 0.100 + 0.30 \times 0.200 = 0.050 + 0.060 = 0.110 \text{ mol}$$
+
+$$V_{\text{total}} = 0.300 \text{ L}$$
+
+$$c_{\text{total}} = \frac{0.110}{0.300} = 0.367 \text{ M}$$
+
+---
+
+## Error Analysis in Quantitative Chemistry
+
+### Systematic Errors
+
+Errors that affect all measurements in the same direction (e.g., a balance that reads 0.1 g too
+high).
+
+### Random Errors
+
+Errors that vary unpredictably (e.g., reading a burette to different decimal places).
+
+### Reducing Errors
+
+| Error type          | Source                          | Reduction method        |
+| ------------------- | ------------------------------- | ----------------------- |
+| Parallax            | Reading meniscus at wrong angle | Read at eye level       |
+| Air bubbles         | In burette or pipette           | Tap to remove           |
+| Heat loss           | Calorimetry                     | Use insulated container |
+| Incomplete reaction | Not enough reagent              | Use excess              |
+| Impurities          | Sample not pure                 | Recrystallise           |
+
+### Percentage Uncertainty
+
+For a measurement $x \pm \Delta x$:
+
+$$\text{Percentage uncertainty} = \frac{\Delta x}{x} \times 100\%$$
+
+**Worked Example 22 (HL):** In a titration, the burette readings are $12.50 \pm 0.05 \text{ cm}^3$
+(initial) and $24.80 \pm 0.05 \text{ cm}^3$ (final). Calculate the titre and its percentage
+uncertainty.
+
+$$\text{Titre} = 24.80 - 12.50 = 12.30 \text{ cm}^3$$
+
+$$\Delta(\text{titre}) = \sqrt{0.05^2 + 0.05^2} = 0.071 \text{ cm}^3$$
+
+$$\text{Percentage uncertainty} = \frac{0.071}{12.30} \times 100 = 0.58\%$$
+
+---
+
+## Summary Table: Key Stoichiometric Relationships
+
+| Relationship             | Formula                                | Use                      |
+| ------------------------ | -------------------------------------- | ------------------------ |
+| Moles from mass          | $n = m/M$                              | Mass to mole conversions |
+| Moles from volume (gas)  | $n = V/V_m$                            | Gas volume to moles      |
+| Moles from concentration | $n = c \times V$                       | Solution calculations    |
+| Molar mass               | $M = \Sigma(\text{atomic masses})$     | Formula mass             |
+| Empirical formula        | Simplest whole number ratio            | Determine formula        |
+| Molecular formula        | $(\text{Empirical formula})_n$         | True formula             |
+| Percentage yield         | $\text{actual/theoretical} \times 100$ | Efficiency               |
+| Percentage purity        | $\text{pure/impure} \times 100$        | Sample quality           |
+| Ideal gas law            | $pV = nRT$                             | Gas calculations         |
+| Dilution                 | $c_1 V_1 = c_2 V_2$                    | Preparing solutions      |
