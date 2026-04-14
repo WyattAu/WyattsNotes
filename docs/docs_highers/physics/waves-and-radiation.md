@@ -22,6 +22,12 @@ water waves).
 
 **Longitudinal waves:** Oscillations parallel to the direction of energy transfer (e.g., sound).
 
+### Why the Distinction Between Transverse and Longitudinal Matters
+
+Only transverse waves can be polarised (the oscillations restricted to a single plane). Sound cannot
+be polarised because it is longitudinal. This fact was historically important in establishing that
+light is a transverse wave.
+
 **Key Wave Quantities:**
 
 - Wavelength $\lambda$: distance between successive crests (m)
@@ -32,6 +38,14 @@ water waves).
 **Wave Equation:**
 
 $$v = f\lambda$$
+
+### Derivation of the Wave Equation
+
+In one period $T$, each wavefront travels a distance of one wavelength $\lambda$. Therefore:
+
+$$v = \frac{\text{distance}}{\text{time}} = \frac{\lambda}{T} = \lambda f$$
+
+This is exact for any periodic wave.
 
 **Example:** A sound wave has frequency $440 \text{ Hz}$ and wavelength $0.78 \text{ m}$. Find its
 speed.
@@ -60,6 +74,13 @@ $$\sin\theta_2 = \frac{\sin 40°}{1.5} = \frac{0.6428}{1.5} = 0.4285$$
 
 $$\theta_2 = \arcsin(0.4285) \approx 25.4°$$
 
+### Why Frequency Does Not Change During Refraction
+
+The rate at which wavefronts arrive at the boundary must equal the rate at which they leave.
+Otherwise, wavefronts would pile up or gaps would appear. Therefore the frequency is unchanged.
+Since $v = f\lambda$ and $f$ is constant, a decrease in speed produces a proportional decrease in
+wavelength.
+
 **Total Internal Reflection:** Occurs when light travels from a denser to a less dense medium and
 the angle of incidence exceeds the critical angle.
 
@@ -71,13 +92,30 @@ $$\sin\theta_c = \frac{1}{1.5} = 0.6667$$
 
 $$\theta_c = \arcsin(0.6667) \approx 41.8°$$
 
-**Diffraction:** The spreading of waves when they pass through a gap or around an obstacle. Maximum
-diffraction occurs when the gap width is approximately equal to the wavelength.
+### Diffraction
 
-**Interference:**
+**Diffraction** is the spreading of waves when they pass through a gap or around an obstacle.
+Maximum diffraction occurs when the gap width is approximately equal to the wavelength.
+
+### Why Diffraction Depends on Wavelength Relative to Gap Size
+
+By Huygens' principle, every point on a wavefront acts as a source of secondary wavelets. If the gap
+is much wider than the wavelength, most of the wavefront passes through undisturbed, and only the
+edges show significant spreading. If the gap is comparable to the wavelength, the secondary wavelets
+from all parts of the gap overlap significantly, producing broad spreading.
+
+### Interference
 
 - **Constructive interference:** Path difference = $n\lambda$ (waves in phase)
 - **Destructive interference:** Path difference = $(n + \frac{1}{2})\lambda$ (waves out of phase)
+
+### Path Difference and Phase Difference
+
+Path difference $\Delta x$ and phase difference $\Delta\phi$ are related by:
+
+$$\Delta\phi = \frac{2\pi}{\lambda} \Delta x$$
+
+A path difference of $\lambda$ corresponds to a phase difference of $2\pi$ (one full cycle).
 
 ### Double Slit Experiment
 
@@ -139,6 +177,13 @@ where $I_0 = 10^{-12} \text{ W/m}^2$ (threshold of hearing).
 
 $$\beta = 10\log_{10}\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) = 10 \times 6 = 60 \text{ dB}$$
 
+### Why the Decibel Scale Is Logarithmic
+
+The human ear can detect sounds over a range of intensities spanning $10^{12}$ (from the threshold
+of hearing at $10^{-12}$ W/m$^2$ to the threshold of pain at $1$ W/m$^2$). A linear scale would
+require numbers ranging from 1 to a trillion. The logarithmic decibel scale compresses this range to
+0--120 dB, which is far more manageable.
+
 ---
 
 ## Higher Radiation
@@ -153,6 +198,13 @@ mm of aluminium.
 
 **Gamma radiation ($\gamma$):** Electromagnetic radiation. Weakly ionising, requires thick lead or
 concrete to absorb.
+
+### Penetrating Power vs Ionising Power
+
+There is a trade-off: alpha particles are the most ionising but the least penetrating, while gamma
+rays are the least ionising but the most penetrating. This makes sense physically: a highly ionising
+particle loses energy rapidly (short range), while a weakly ionising particle retains its energy
+over a longer distance.
 
 ### Radioactive Decay
 
@@ -181,6 +233,14 @@ $$A = 800 e^{-0.1386 \times 15} = 800 e^{-2.079} = 800 \times 0.125 = 100 \text{
 
 Or more simply: after 3 half-lives, $A = 800 / 2^3 = 100 \text{ Bq}$.
 
+### Why Radioactive Decay Is Random
+
+Each nucleus decays independently with a fixed probability per unit time. It is impossible to
+predict when a specific nucleus will decay. The decay law $N = N_0 e^{-\lambda t}$ describes the
+_average_ behaviour of a large number of nuclei, not the behaviour of any individual nucleus. This
+is analogous to throwing dice: you cannot predict the outcome of a single throw, but you can predict
+the statistical distribution of many throws.
+
 ### Nuclear Equations
 
 In a nuclear reaction, both mass number and atomic number are conserved.
@@ -188,10 +248,6 @@ In a nuclear reaction, both mass number and atomic number are conserved.
 **Alpha decay:** $^A_Z\text{X} \to ^{A-4}_{Z-2}\text{Y} + ^4_2\text{He}$
 
 **Beta-minus decay:** $^A_Z\text{X} \to ^A_{Z+1}\text{Y} + ^0_{-1}\text{e} + \bar{\nu}_e$
-
-**Example:** Write the equation for the alpha decay of radium-226.
-
-$$^{226}_{88}\text{Ra} \to ^{222}_{86}\text{Rn} + ^4_2\text{He}$$
 
 ### Mass-Energy Equivalence
 
@@ -207,6 +263,16 @@ $$\Delta E = \Delta m \cdot c^2$$
 $1 \text{ u} = 931.5 \text{ MeV}/c^2$.
 
 $$E = 0.0304 \times 931.5 = 28.3 \text{ MeV}$$
+
+### Why Binding Energy Per Nucleon Peaks at Iron-56
+
+As nuclei get larger, the binding energy per nucleon increases (because the strong nuclear force
+binds neighbouring nucleons). However, the strong force has a very short range, so nucleons on
+opposite sides of a large nucleus do not attract each other, while the repulsive Coulomb force
+between protons acts over the entire nucleus. Beyond iron-56, the Coulomb repulsion dominates, and
+adding more nucleons actually decreases the binding energy per nucleon. This is why nuclei heavier
+than iron can release energy through fission, and nuclei lighter than iron can release energy
+through fusion.
 
 ### Background Radiation
 
@@ -235,6 +301,12 @@ Background radiation comes from:
 5. **Decay constant and half-life:** $\lambda = \dfrac{\ln 2}{t_{1/2}}$, not
    $\lambda = \dfrac{1}{t_{1/2}}$.
 
+6. **Confusing path difference and phase difference.** Path difference is in metres; phase
+   difference is in radians or degrees.
+
+7. **Using the fringe spacing formula with the wrong variable for slit separation.** $d$ is the slit
+   separation, not the distance to the screen.
+
 ---
 
 ## Practice Questions
@@ -260,3 +332,10 @@ Background radiation comes from:
 
 8. A wave has frequency $250 \text{ Hz}$ and travels at $1500 \text{ m/s}$. Find the wavelength and
    the phase difference between two points $3 \text{ m}$ apart.
+
+9. A diffraction grating produces a first-order maximum at $20°$ for light of wavelength
+   $500 \text{ nm}$. Calculate the number of lines per mm on the grating.
+
+10. A sample of iodine-131 has a half-life of 8 days. A hospital receives a shipment with activity
+    $6.4 \times 10^8 \text{ Bq}$. After how many days will the activity fall below
+    $1.0 \times 10^7 \text{ Bq}$?

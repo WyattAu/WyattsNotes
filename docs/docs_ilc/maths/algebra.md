@@ -28,6 +28,12 @@ $$
 (2x + 3)(x - 5) = 2x^2 - 10x + 3x - 15 = 2x^2 - 7x - 15
 $$
 
+**Example (HL):** Expand and simplify $(x + 2)^3$.
+
+$$
+(x + 2)^3 = (x + 2)(x + 2)^2 = (x + 2)(x^2 + 4x + 4) = x^3 + 4x^2 + 4x + 2x^2 + 8x + 8 = x^3 + 6x^2 + 12x + 8
+$$
+
 **Factorisation** is the reverse process. Common techniques include:
 
 1. **Common factor:** $6x^2 + 9x = 3x(2x + 3)$
@@ -40,6 +46,32 @@ The identity $a^2 - b^2 = (a - b)(a + b)$ extends to factorisation:
 
 $$
 4x^2 - 25y^2 = (2x - 5y)(2x + 5y)
+$$
+
+**Proof.** $(a-b)(a+b) = a^2 + ab - ab - b^2 = a^2 - b^2$.
+
+This identity also leads to the sum and difference of two cubes:
+
+$$
+a^3 - b^3 = (a - b)(a^2 + ab + b^2)
+$$
+
+$$
+a^3 + b^3 = (a + b)(a^2 - ab + b^2)
+$$
+
+**Verification:** $(a - b)(a^2 + ab + b^2) = a^3 + a^2b + ab^2 - a^2b - ab^2 - b^3 = a^3 - b^3$.
+
+**Example (HL):** Factorise $x^4 - 16$ completely.
+
+$$
+x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4)
+$$
+
+**Example (HL):** Factorise $x^3 + 8$.
+
+$$
+x^3 + 8 = (x + 2)(x^2 - 2x + 4)
 $$
 
 ### Perfect Square Trinomials (HL)
@@ -76,6 +108,22 @@ $$
 2x = 10 \implies x = 5
 $$
 
+**Example (HL):** Solve $\frac{2x + 1}{3} - \frac{x - 2}{4} = \frac{1}{6}$.
+
+Multiply through by 12 (the LCM of 3, 4, 6):
+
+$$
+4(2x + 1) - 3(x - 2) = 2
+$$
+
+$$
+8x + 4 - 3x + 6 = 2
+$$
+
+$$
+5x + 10 = 2 \implies 5x = -8 \implies x = -\frac{8}{5}
+$$
+
 ### Quadratic Equations (OL/HL)
 
 Quadratic equations take the form $ax^2 + bx + c = 0$. Methods of solution include:
@@ -93,6 +141,16 @@ For $ax^2 + bx + c = 0$:
 $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
+
+**Derivation.** Complete the square for $ax^2 + bx + c = 0$:
+
+$a\!\left(x^2 + \frac{b}{a}x\right) = -c$
+
+$a\!\left(x + \frac{b}{2a}\right)^2 - \frac{b^2}{4a} = -c$
+
+$a\!\left(x + \frac{b}{2a}\right)^2 = \frac{b^2 - 4ac}{4a}$
+
+$x + \frac{b}{2a} = \frac{\pm\sqrt{b^2 - 4ac}}{2a}$
 
 **Example:** Solve $2x^2 + 3x - 5 = 0$.
 
@@ -130,6 +188,18 @@ The discriminant $\Delta = b^2 - 4ac$ determines the nature of the roots:
 
 $$
 \Delta = 16 - 4k \geq 0 \implies k \leq 4
+$$
+
+**Example (HL):** Find the range of $k$ for which $kx^2 + 4x + k = 0$ has real roots.
+
+$$
+\Delta = 16 - 4k^2 \geq 0 \implies k^2 \leq 4 \implies -2 \leq k \leq 2
+$$
+
+**Example (HL):** Find the value of $k$ for which $x^2 + 2kx + 9 = 0$ has equal roots.
+
+$$
+\Delta = 4k^2 - 36 = 0 \implies k^2 = 9 \implies k = \pm 3
 $$
 
 ### Simultaneous Equations (OL/HL)
@@ -204,6 +274,34 @@ Always check the inequality sign carefully. For $x^2 - 3x - 4 \gt 0$, the soluti
 be $x \lt -1$ or $x \gt 4$ (outside the roots).
 :::
 
+**Example (HL):** Solve $\frac{x - 1}{x + 2} \le 0$.
+
+Critical values: $x = 1$ (numerator zero) and $x = -2$ (denominator zero).
+
+Sign chart:
+
+| Interval | $x < -2$ | $-2 < x < 1$ | $x > 1$      |
+| -------- | -------- | ------------ | ------------ |
+| $x - 1$  | Negative | Negative     | Positive     |
+| $x + 2$  | Negative | Positive     | Positive     |
+| Quotient | Positive | Negative     | Non-negative |
+
+Solution: $x \in (-2, 1]$.
+
+### Modulus Inequalities (HL)
+
+$|x| \lt a \iff -a \lt x \lt a$
+
+$|x| > a \iff x \lt -a$ or $x > a$
+
+**Example:** Solve $|2x - 3| \lt 5$.
+
+$-5 \lt 2x - 3 \lt 5$
+
+$-2 \lt 2x \lt 8$
+
+$-1 \lt x \lt 4$
+
 ## Complex Numbers (HL)
 
 ### Definition
@@ -225,6 +323,9 @@ $$
 z \cdot \bar{z} = a^2 + b^2
 $$
 
+**Division:**
+$\dfrac{a + bi}{c + di} = \dfrac{(a + bi)(c - di)}{(c + di)(c - di)} = \dfrac{(ac + bd) + (bc - ad)i}{c^2 + d^2}$
+
 ### Modulus and Argument
 
 The **modulus** (or absolute value) of $z = a + bi$:
@@ -239,6 +340,17 @@ $$
 \theta = \arctan\left(\frac{b}{a}\right), \quad a > 0
 $$
 
+For $a < 0$, add $\pi$ to get the correct quadrant.
+
+**Quadrant check for the argument:**
+
+| Quadrant | $a$   | $b$   | $\arg(z)$             |
+| -------- | ----- | ----- | --------------------- | --- | --- |
+| I        | $> 0$ | $> 0$ | $\arctan(b/a)$        |
+| II       | $< 0$ | $> 0$ | $\pi - \arctan(b/     | a   | )$  |
+| III      | $< 0$ | $< 0$ | $-\pi + \arctan(b/a)$ |
+| IV       | $> 0$ | $< 0$ | $-\arctan(b/a)$       |
+
 ### Polar Form (HL)
 
 $$
@@ -246,6 +358,19 @@ z = r(\cos\theta + i\sin\theta) = re^{i\theta}
 $$
 
 where $r = |z|$ and $\theta = \arg(z)$.
+
+**Example (HL):** Express $z = -1 + i\sqrt{3}$ in polar form.
+
+$r = \sqrt{1 + 3} = 2$. Since $a = -1 < 0$ and $b = \sqrt{3} > 0$, the point is in the second
+quadrant.
+
+$$
+\theta = \pi - \arctan\!\left(\frac{\sqrt{3}}{1}\right) = \pi - \frac{\pi}{3} = \frac{2\pi}{3}
+$$
+
+$$
+z = 2\left(\cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3}\right) = 2e^{2\pi i/3}
+$$
 
 ### De Moivre's Theorem (HL)
 
@@ -255,6 +380,11 @@ $$
 z^n = r^n(\cos n\theta + i\sin n\theta)
 $$
 
+**Proof by induction for positive integers.** Base case $n = 1$: trivial. Inductive step: assume
+true for $n = k$. Then
+$z^{k+1} = z^k \cdot z = r^k(\cos k\theta + i\sin k\theta) \cdot r(\cos\theta + i\sin\theta)$.
+Expanding using addition formulae gives $r^{k+1}(\cos(k+1)\theta + i\sin(k+1)\theta)$.
+
 **Example:** Express $(\sqrt{3} + i)^4$ in the form $a + bi$.
 
 First find modulus and argument: $r = 2$, $\theta = \frac{\pi}{6}$.
@@ -263,7 +393,20 @@ $$
 (\sqrt{3} + i)^4 = 2^4\left(\cos\frac{4\pi}{6} + i\sin\frac{4\pi}{6}\right) = 16\left(\cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3}\right) = 16\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = -8 + 8\sqrt{3}\,i
 $$
 
-## Roots of Unity (HL)
+**Example (HL):** Express $z = 1 - i\sqrt{3}$ in polar form and hence find $z^5$.
+
+$r = \sqrt{1 + 3} = 2$. Since $a = 1 > 0$ and $b = -\sqrt{3} < 0$, the point is in the fourth
+quadrant.
+
+$$
+\theta = -\frac{\pi}{3}, \quad z = 2e^{-\pi i/3}
+$$
+
+$$
+z^5 = 2^5 e^{-5\pi i/3} = 32\left(\cos\frac{-5\pi}{3} + i\sin\frac{-5\pi}{3}\right) = 32\left(\frac{1}{2} - i\frac{\sqrt{3}}{2}\right) = 16 - 16\sqrt{3}\,i
+$$
+
+### Roots of Unity (HL)
 
 The $n$th roots of unity are the solutions to $z^n = 1$.
 
@@ -272,6 +415,13 @@ z_k = \cos\frac{2k\pi}{n} + i\sin\frac{2k\pi}{n}, \quad k = 0, 1, 2, \ldots, n-1
 $$
 
 These lie on the unit circle in the complex plane, equally spaced at angles of $\frac{2\pi}{n}$.
+
+**Properties:**
+
+- The sum of all $n$th roots of unity is $0$.
+- The product of all $n$th roots of unity is $(-1)^{n-1}$.
+- The $n$th roots of any complex number $w = re^{i\theta}$ are
+  $\sqrt[n]{r}\, e^{i(\theta + 2k\pi)/n}$ for $k = 0, 1, \ldots, n-1$.
 
 **Example:** Find the cube roots of unity.
 
@@ -282,6 +432,18 @@ z_0 = 1, \quad z_1 = -\frac{1}{2} + i\frac{\sqrt{3}}{2}, \quad z_2 = -\frac{1}{2
 $$
 
 Note: $1 + z_1 + z_2 = 0$.
+
+**Example (HL):** Find all complex numbers $z$ such that $z^4 = 16$.
+
+The four fourth roots of $16 = 16e^{0i}$ are:
+
+$$
+z_k = 2\,e^{2k\pi i/4}, \quad k = 0, 1, 2, 3
+$$
+
+$$
+z_0 = 2, \quad z_1 = 2i, \quad z_2 = -2, \quad z_3 = -2i
+$$
 
 ## Matrices (HL)
 
@@ -369,6 +531,9 @@ $$
 4. **Conclusion:** By the principle of mathematical induction, the statement holds for all
    $n \geq 1$.
 
+**Why induction works.** The base case anchors the chain at $n = 1$. The inductive step shows that
+if any link in the chain holds, the next one does too. Together, they prove that every link holds.
+
 **Example:** Prove by induction that $\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
 **Base case** ($n = 1$): LHS $= 1$, RHS $= \frac{1 \cdot 2 \cdot 3}{6} = 1$. True.
@@ -390,10 +555,6 @@ $$
 $$
 
 $$
-= \frac{(k+1)[2k^2 + k + 6k + 6]}{6}
-$$
-
-$$
 = \frac{(k+1)(2k^2 + 7k + 6)}{6}
 $$
 
@@ -405,7 +566,41 @@ $$
 = \frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}
 $$
 
-This matches the formula with $n = k + 1$. By induction, the result holds for all $n \geq 1$.
+This matches the formula with $n = k + 1$. By induction, the result holds for all $n \ge 1$.
+
+**Example:** Prove that $\sum_{r=1}^{n} r^3 = \frac{n^2(n+1)^2}{4}$.
+
+**Base case** ($n = 1$): LHS $= 1$, RHS $= \frac{1 \cdot 4}{4} = 1$. True.
+
+**Inductive hypothesis:** Assume $\sum_{r=1}^{k} r^3 = \frac{k^2(k+1)^2}{4}$.
+
+**Inductive step:**
+
+$$
+\sum_{r=1}^{k+1} r^3 = \frac{k^2(k+1)^2}{4} + (k+1)^3
+$$
+
+$$
+= \frac{k^2(k+1)^2 + 4(k+1)^3}{4}
+$$
+
+$$
+= \frac{(k+1)^2[k^2 + 4(k+1)]}{4}
+$$
+
+$$
+= \frac{(k+1)^2(k^2 + 4k + 4)}{4}
+$$
+
+$$
+= \frac{(k+1)^2(k+2)^2}{4}
+$$
+
+$$
+= \frac{(k+1)^2((k+1)+1)^2}{4}
+$$
+
+By induction, the result holds for all $n \ge 1$.
 
 ## Long Division of Polynomials (HL)
 
@@ -425,14 +620,43 @@ Try $P(1) = 1 - 3 + 2 = 0$, so $(x - 1)$ is a factor.
 
 Dividing: $x^3 - 3x + 2 = (x - 1)(x^2 + x - 2) = (x - 1)(x + 2)(x - 1) = (x - 1)^2(x + 2)$.
 
+**Example (HL):** When $P(x) = x^3 + 2x^2 - 5x - 6$ is divided by $(x - 1)$, the remainder is
+$P(1) = 1 + 2 - 5 - 6 = -8$.
+
+### Polynomial Inequalities (HL)
+
+**Example:** Solve $(x - 1)^2(x + 2) \gt 0$.
+
+The critical values are $x = -2$ and $x = 1$ (double root).
+
+Sign chart:
+
+| Interval  | $x < -2$ | $-2 < x < 1$ | $x > 1$  |
+| --------- | -------- | ------------ | -------- |
+| $(x+2)$   | Negative | Positive     | Positive |
+| $(x-1)^2$ | Positive | Positive     | Positive |
+| Product   | Negative | Positive     | Positive |
+
+Solution: $x < -2$ or $x > 1$, i.e., $x \in (-\infty, -2) \cup (1, \infty)$.
+
+Note that $x = -1$ is not a solution (the product equals zero, not positive). And $x = 1$ is not a
+solution despite being a root, because the factor is squared.
+
 ## Common Pitfalls
 
-1. **Sign errors** in factorisation and expansion -- always double-check.
+1. **Sign errors** in factorisation and expansion -- always double-check by expanding back.
 2. **Forgetting to reverse the inequality** when multiplying/dividing by a negative number.
-3. **Confusing the discriminant conditions** for real vs. complex roots.
+3. **Confusing the discriminant conditions** for real vs. complex roots. $\Delta < 0$ means two
+   complex conjugate roots, not "no roots."
 4. **De Moivre's theorem** requires the argument to be in radians.
 5. **Matrix multiplication is not commutative:** $AB \neq BA$ in general.
-6. **Induction base case** -- always state and verify it explicitly.
+6. **Induction base case** -- always state and verify it explicitly. A proof without a base case is
+   like a chain with no anchor.
+7. **Domain restrictions on logarithms** -- $\log_a(x)$ is only defined for $x > 0$.
+8. **Forgetting absolute values** in the quadratic formula when $\Delta < 0$:
+   $x = \frac{-b \pm i\sqrt{|\Delta|}}{2a}$.
+9. **Confusing the argument quadrant.** For $z = -1 + i$ (second quadrant),
+   $\arg(z) = \frac{3\pi}{4}$, not $\arctan(-1)$.
 
 ## Practice Questions
 
@@ -454,3 +678,26 @@ Dividing: $x^3 - 3x + 2 = (x - 1)(x^2 + x - 2) = (x - 1)(x + 2)(x - 1) = (x - 1)
    $B = \begin{pmatrix} 0 & -1 \\ 2 & 3 \end{pmatrix}$, find $AB - BA$.
 6. Find all complex numbers $z$ such that $z^4 = 16$.
 7. Solve the inequality $x^2 - 2x - 15 \gt 0$.
+8. Factorise $x^4 - 1$ completely.
+9. Find the remainder when $P(x) = 2x^3 - 3x^2 + 5x - 7$ is divided by $(x + 2)$.
+10. Solve $|3x - 1| \le 8$.
+11. Find the modulus and argument of $z = \frac{3 + 4i}{1 - 2i}$.
+12. Prove by induction that $3^n \ge 2^n + n$ for all $n \ge 1$.
+13. Express $\frac{2x + 1}{(x+1)(x-2)}$ in partial fractions.
+14. Solve $z^3 = -27$ and plot all solutions on an Argand diagram.
+15. Find the quadratic equation whose roots are $2 + \sqrt{3}$ and $2 - \sqrt{3}$.
+
+### Extended Practice
+
+16. Given $z = 2 + 3i$ and $w = 1 - 4i$, find $z\bar{w}$ and $|z/w|$.
+17. Solve the simultaneous equations $x + iy + iz = 0$ and $x - 2y + iz = 1 + i$ for real $x$ and
+    $y$.
+18. Prove by induction that
+    $\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \cdots + \frac{1}{n(n+1)} = \frac{n}{n+1}$.
+19. Find the matrix $A$ such that
+    $A\begin{pmatrix} 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 5 \\ 3 \end{pmatrix}$ and
+    $A\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} 7 \\ 7 \end{pmatrix}$.
+20. Express $\frac{3x^2 - x + 2}{(x-1)(x^2 + 1)}$ in partial fractions.
+21. Find all complex numbers $z$ satisfying $|z - 2i| = |z + 2|$ and interpret geometrically.
+22. Prove that if a quadratic equation with rational coefficients has one irrational root
+    $a + b\sqrt{c}$ (where $b \neq 0$), then $a - b\sqrt{c}$ is also a root.

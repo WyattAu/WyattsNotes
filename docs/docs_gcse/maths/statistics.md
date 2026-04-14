@@ -48,6 +48,15 @@ boys and girls should be in the sample?
 
 $$\text{Boys} = \frac{600}{1000} \times 50 = 30, \qquad \text{Girls} = \frac{400}{1000} \times 50 = 20$$
 
+**Worked Example (Higher Tier).** A population of 1200 is divided into three age groups: Under 18
+(300), 18--40 (500), Over 40 (400). A stratified sample of 60 is required.
+
+Under 18: $\frac{300}{1200} \times 60 = 15$.
+
+18--40: $\frac{500}{1200} \times 60 = 25$.
+
+Over 40: $\frac{400}{1200} \times 60 = 20$.
+
 ### 1.3 Bias in Data Collection
 
 A sample is **biased** if it does not fairly represent the population. Sources of bias include:
@@ -56,6 +65,11 @@ A sample is **biased** if it does not fairly represent the population. Sources o
 - Leading questions in surveys
 - Non-response (voluntary response bias)
 - Using convenience sampling
+
+:::warning
+A large sample size does not fix a biased sampling method. A sample of 10000 taken from
+only one school is still biased if you want to draw conclusions about all schools in the country.
+:::
 
 ## 2. Averages and Measures of Central Tendency
 
@@ -119,6 +133,31 @@ To find the median class: find the position $\frac{n}{2}$ and locate it in the c
 
 This is a **measure of spread** that is not affected by outliers.
 
+**Worked Example (Higher Tier).** Using the data above, estimate the median height.
+
+Cumulative frequencies: 5, 17, 35, 45, 50.
+
+Median position: $\frac{50}{2} = 25$. This falls in the $160 \leq h \lt 170$ class (between 17 and
+35).
+
+Using linear interpolation within the class:
+
+$$\text{Median} = 160 + \frac{25 - 17}{35 - 17} \times 10 = 160 + \frac{8}{18} \times 10 = 160 + 4.44 = 164.4 \text{ cm}$$
+
+### 2.5 Choosing the Right Average
+
+- Use the **mean** when data is roughly symmetric and there are no extreme outliers.
+- Use the **median** when data is skewed or has outliers (e.g., income data).
+- Use the **mode** for categorical data (e.g., favourite colour).
+
+**Worked Example (Higher Tier).** The salaries of five employees are: 18000, 22000, 25000, 28000,
+95000 (pounds). Compare the mean and median.
+
+Mean $= \frac{188000}{5} = 37600$. Median $= 25000$.
+
+The mean is heavily distorted by the outlier (95000). The median of 25000 is a much better
+representation of the typical salary.
+
 ## 3. Measures of Spread
 
 ### 3.1 Range
@@ -162,6 +201,14 @@ $Q_1$ or above $Q_3$.
 $$\text{Lower fence} = Q_1 - 1.5 \times \text{IQR}$$
 $$\text{Upper fence} = Q_3 + 1.5 \times \text{IQR}$$
 
+**Worked Example.** Using the data above, identify any outliers.
+
+Lower fence $= 7.75 - 1.5 \times 11.25 = 7.75 - 16.875 = -9.125$.
+
+Upper fence $= 19 + 16.875 = 35.875$.
+
+Since all values are between $-9.125$ and $35.875$, there are no outliers.
+
 ## 4. Representing Data
 
 ### 4.1 Charts and Diagrams
@@ -192,6 +239,16 @@ $$\text{Frequency density} = \frac{\text{frequency}}{\text{class width}}$$
 
 The bar heights (frequency densities) are 1.5, 2.0, 3.0, and 1.0 respectively.
 
+**Worked Example (Higher Tier).** A histogram has a bar of width 5 and height 4. What frequency does
+this bar represent?
+
+$\text{Frequency} = \text{frequency density} \times \text{class width} = 4 \times 5 = 20$.
+
+**Worked Example (Higher Tier).** A histogram has bars with frequency densities 3, 5, 2, and 4 for
+classes of width 4, 6, 8, and 3 respectively. Find the total frequency represented.
+
+$3 \times 4 + 5 \times 6 + 2 \times 8 + 4 \times 3 = 12 + 30 + 16 + 12 = 70$.
+
 ### 4.3 Cumulative Frequency
 
 A **cumulative frequency** curve (ogive) is plotted by adding frequencies as you go. The $x$-axis
@@ -202,6 +259,17 @@ From the curve you can read:
 - Median (at $\frac{n}{2}$)
 - Lower quartile $Q_1$ (at $\frac{n}{4}$)
 - Upper quartile $Q_3$ (at $\frac{3n}{4}$)
+
+**Worked Example.** Using the distance data above, draw the cumulative frequency curve and estimate
+the median distance.
+
+Cumulative frequencies: 15, 45, 90, 110.
+
+Total $n = 110$. Median at position 55.
+
+$Q_1$ at position 27.5, $Q_3$ at position 82.5.
+
+From the ogive, the median falls in the $25 \leq d \lt 40$ class.
 
 ### 4.4 Scatter Graphs and Correlation
 
@@ -227,6 +295,18 @@ factor, or by coincidence.
 - **Interpolation:** Estimating values within the range of the data. Generally reliable.
 - **Extrapolation:** Estimating values outside the range of the data. Unreliable.
 
+**Worked Example (Higher Tier).** A scatter graph of exam score against hours of revision shows a
+strong positive correlation. The line of best fit passes through $(2, 35)$ and $(10, 85)$. Estimate
+the exam score for a student who revised for 7 hours.
+
+Gradient: $m = \frac{85 - 35}{10 - 2} = \frac{50}{8} = 6.25$.
+
+Equation: $y - 35 = 6.25(x - 2)$, so $y = 6.25x + 22.5$.
+
+At $x = 7$: $y = 6.25 \times 7 + 22.5 = 43.75 + 22.5 = 66.25$.
+
+The estimated exam score is approximately 66.
+
 ## 5. Probability
 
 ### 5.1 Basic Probability
@@ -241,6 +321,11 @@ The probability of any event satisfies $0 \leq P(E) \leq 1$.
 
 **Independent events:** $P(A \text{ and } B) = P(A) \times P(B)$
 
+**Theorem.** For any events $A$ and $B$: $0 \leq P(A \cap B) \leq \min(P(A), P(B))$.
+
+**Proof.** $A \cap B \subseteq A$, so $P(A \cap B) \leq P(A)$. Similarly $P(A \cap B) \leq P(B)$.
+Since probabilities are non-negative, $P(A \cap B) \geq 0$. $\blacksquare$
+
 ### 5.2 Combined Events
 
 For two events $A$ and $B$:
@@ -254,6 +339,15 @@ late is 0.1. The probability that it rains AND the student arrives late is 0.05.
 probability that it rains OR the student arrives late.
 
 $$P(R \cup L) = 0.3 + 0.1 - 0.05 = 0.35$$
+
+**Worked Example (Higher Tier).** Are the events "it rains" and "the student arrives late"
+independent?
+
+$P(R) \times P(L) = 0.3 \times 0.1 = 0.03$.
+
+But $P(R \cap L) = 0.05 \neq 0.03$.
+
+The events are **not** independent.
 
 ### 5.3 Tree Diagrams
 
@@ -273,6 +367,20 @@ Second draw (after removing one red): $P(R) = \frac{2}{7}$
 
 $$P(\text{both red}) = \frac{3}{8} \times \frac{2}{7} = \frac{6}{56} = \frac{3}{28}$$
 
+**Worked Example (Higher Tier).** Using the same bag, find the probability that the two balls are
+different colours.
+
+$$P(\text{different}) = P(\text{RB}) + P(\text{BR}) = \frac{3}{8} \times \frac{5}{7} + \frac{5}{8} \times \frac{3}{7} = \frac{15}{56} + \frac{15}{56} = \frac{30}{56} = \frac{15}{28}$$
+
+**Worked Example (Higher Tier).** A fair coin is tossed three times. Find the probability of getting
+exactly two heads.
+
+There are $2^3 = 8$ equally likely outcomes: HHH, HHT, HTH, HTT, THH, THT, TTH, TTT.
+
+Favourable: HHT, HTH, THH (3 outcomes).
+
+$$P(\text{exactly 2 heads}) = \frac{3}{8}$$
+
 ### 5.4 Conditional Probability
 
 $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
@@ -284,6 +392,16 @@ Find the probability that a student plays rugby given that they play football.
 
 $$P(R \mid F) = \frac{P(R \cap F)}{P(F)} = \frac{6/30}{18/30} = \frac{6}{18} = \frac{1}{3}$$
 
+**Worked Example (Higher Tier).** A factory produces items in three shifts. Shift A produces 40% of
+items with 2% defective, shift B produces 35% with 3% defective, and shift C produces 25% with 1%
+defective. An item is found to be defective. What is the probability it came from shift B?
+
+This is Bayes' theorem. Let $D$ be the event "defective" and $B$ be "from shift B".
+
+$$P(D) = 0.40 \times 0.02 + 0.35 \times 0.03 + 0.25 \times 0.01 = 0.008 + 0.0105 + 0.0025 = 0.021$$
+
+$$P(B \mid D) = \frac{P(D \mid B) \cdot P(B)}{P(D)} = \frac{0.03 \times 0.35}{0.021} = \frac{0.0105}{0.021} = 0.5$$
+
 ### 5.5 Venn Diagrams and Probability
 
 A Venn diagram with two sets $A$ and $B$ has four regions:
@@ -294,6 +412,20 @@ A Venn diagram with two sets $A$ and $B$ has four regions:
 | Right only | $A' \cap B$   | In $B$ but not in $A$ |
 | Overlap    | $A \cap B$    | In both               |
 | Outside    | $(A \cup B)'$ | In neither            |
+
+**Worked Example.** In a survey of 100 people, 45 like tea, 35 like coffee, and 15 like both. A
+person is chosen at random. Find the probability they like neither.
+
+$|T \cup C| = 45 + 35 - 15 = 65$.
+
+$P(\text{neither}) = \frac{100 - 65}{100} = 0.35$.
+
+**Worked Example (Higher Tier).** Using the same data, given that a person likes at least one drink,
+find the probability they like tea but not coffee.
+
+$|T \cap C'| = 45 - 15 = 30$.
+
+$P(T \cap C' \mid T \cup C) = \frac{30}{65} = \frac{6}{13}$.
 
 ## 6. Statistical Distributions (Higher Tier)
 
@@ -319,6 +451,10 @@ For frequency data:
 
 $$\sigma = \sqrt{\frac{\sum f(x - \bar{x})^2}{\sum f}}$$
 
+**Computational formula (avoids calculating deviations individually):**
+
+$$\sigma = \sqrt{\frac{\sum x^2}{n} - \bar{x}^2}$$
+
 **Worked Example.** Find the standard deviation of: $4, 8, 6, 5, 3, 9, 7$.
 
 $$\bar{x} = \frac{42}{7} = 6$$
@@ -326,6 +462,38 @@ $$\bar{x} = \frac{42}{7} = 6$$
 $$\sigma = \sqrt{\frac{(4-6)^2 + (8-6)^2 + (6-6)^2 + (5-6)^2 + (3-6)^2 + (9-6)^2 + (7-6)^2}{7}}$$
 
 $$\sigma = \sqrt{\frac{4 + 4 + 0 + 1 + 9 + 9 + 1}{7}} = \sqrt{\frac{28}{7}} = \sqrt{4} = 2$$
+
+**Worked Example (Higher Tier).** If every value in a data set is increased by 5, what happens to
+the mean and standard deviation?
+
+The new mean is $\bar{x} + 5$. The standard deviation is unchanged, because adding a constant shifts
+all values by the same amount but does not change their spread.
+
+If every value is multiplied by $k$, the new mean is $k\bar{x}$ and the new standard deviation is
+$|k|\sigma$.
+
+## 7. Comparing Distributions (Higher Tier)
+
+### 7.1 Using Box Plots
+
+When comparing two box plots:
+
+- Compare the medians (measure of central tendency)
+- Compare the IQRs (measure of spread)
+- Compare the ranges
+- Comment on skewness (if the median is closer to $Q_1$ or $Q_3$)
+
+**Worked Example.** Class A has median 65, $Q_1 = 50$, $Q_3 = 75$. Class B has median 60,
+$Q_1 = 45$, $Q_3 = 70$.
+
+Class A has a higher median (65 vs 60), so on average they scored better. Class A also has a
+narrower IQR ($75 - 50 = 25$ vs $70 - 45 = 25$), so both classes have the same spread by this
+measure.
+
+### 7.2 Using Histograms
+
+When comparing histograms, compare the shapes (symmetric, skewed, bimodal), the locations of peaks,
+and the overall spread.
 
 ## Common Pitfalls
 
@@ -337,6 +505,127 @@ $$\sigma = \sqrt{\frac{4 + 4 + 0 + 1 + 9 + 9 + 1}{7}} = \sqrt{\frac{28}{7}} = \s
 - **Confusing "with replacement" and "without replacement"** in probability questions. This changes
   the probabilities on the second draw.
 - **Counting the overlap twice** when adding probabilities from a Venn diagram.
+- **Using the wrong quartile formula.** For $n$ data points, $Q_1$ is at position $\frac{n+1}{4}$,
+  not $\frac{n}{4}$.
+- **Forgetting that the area under a histogram bar equals the frequency**, not the height.
+- **Misinterpreting the median from grouped data.** The estimated median uses linear interpolation
+  within the median class, not just the midpoint.
+
+### 9.1 Independence vs. Mutual Exclusivity
+
+A very common confusion is between independent events and mutually exclusive events. These are
+different concepts:
+
+- **Independent events:** The occurrence of one does not affect the probability of the other.
+  $P(A \cap B) = P(A) \times P(B)$.
+- **Mutually exclusive events:** They cannot occur at the same time. $P(A \cap B) = 0$.
+
+In fact, if two events have positive probability and are mutually exclusive, they cannot be
+independent (because $P(A \cap B) = 0 \neq P(A) \times P(B)$ when both are positive).
+
+**Example.** A card is drawn from a standard 52-card deck. Let $A$ be "the card is a heart" and $B$
+be "the card is a king". These events are NOT mutually exclusive (the king of hearts is both), but
+they ARE independent: $P(A) = 13/52 = 1/4$, $P(B) = 4/52 = 1/13$, and
+$P(A \cap B) = 1/52 = (1/4)(1/13)$.
+
+### 9.2 Why the Standard Deviation Uses Squared Differences
+
+The standard deviation uses squared differences from the mean rather than absolute differences for
+two key reasons:
+
+1. **Mathematical convenience.** Squared differences are differentiable everywhere, enabling the use
+   of calculus. Absolute values have a "corner" at zero.
+2. **Additivity.** The variance of a sum of independent random variables equals the sum of their
+   variances. This does not hold for mean absolute deviation.
+
+### 9.3 Effect of Coding on Statistical Measures
+
+When data is transformed by a linear coding $y = ax + b$:
+
+- The new mean is $\bar{y} = a\bar{x} + b$.
+- The new standard deviation is $s_y = |a| \cdot s_x$.
+- Adding a constant $b$ shifts the data but does not change the spread. Multiplying by $a$ scales
+  the spread.
+
+**Worked Example.** Data has mean 50 and standard deviation 8. After coding $y = \frac{x - 50}{8}$:
+$\bar{y} = \frac{50 - 50}{8} = 0$ and $s_y = \frac{1}{8} \times 8 = 1$.
+
+This process is called **standardisation** and produces data with mean 0 and standard deviation 1.
+
+### 9.4 Outliers and Their Impact
+
+An outlier is a value that lies far from the other data points. There are several ways to detect
+outliers:
+
+- Values below $Q_1 - 1.5 \times \text{IQR}$ or above $Q_3 + 1.5 \times \text{IQR}$.
+- Values more than 2 standard deviations from the mean (for approximately normal data).
+
+**Impact on measures:**
+
+- The **mean** is heavily affected by outliers because every value contributes equally.
+- The **median** is resistant to outliers because it depends only on the middle value(s).
+- The **standard deviation** is inflated by outliers.
+- The **IQR** is resistant to outliers.
+
+**Example.** Consider the data set $\{2, 3, 4, 5, 100\}$. The mean is $114/5 = 22.8$, heavily pulled
+up by the outlier 100. The median is 4, which better represents the "typical" value. The standard
+deviation is very large due to the outlier. The IQR is $5 - 3 = 2$, unaffected by the outlier.
+
+### 9.5 Tree Diagrams for Multiple Events
+
+Tree diagrams are useful for visualising multi-stage experiments where events are sequential.
+
+**Worked Example.** A bag contains 4 red and 6 blue counters. Two counters are drawn without
+replacement. Find the probability that both are the same colour.
+
+First draw: $P(\text{red}) = 4/10 = 0.4$, $P(\text{blue}) = 6/10 = 0.6$.
+
+Second draw (if first was red): $P(\text{red}) = 3/9 = 1/3$, $P(\text{blue}) = 6/9 = 2/3$.
+
+Second draw (if first was blue): $P(\text{red}) = 4/9$, $P(\text{blue}) = 5/9$.
+
+$$
+P(\text{both red}) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}
+$$
+
+$$
+P(\text{both blue}) = \frac{6}{10} \times \frac{5}{9} = \frac{30}{90} = \frac{1}{3}
+$$
+
+$$
+P(\text{same colour}) = \frac{2}{15} + \frac{1}{3} = \frac{2}{15} + \frac{5}{15} = \frac{7}{15}
+$$
+
+### 9.6 Scatter Graphs and Lines of Best Fit
+
+A **scatter graph** plots pairs of data values to investigate the relationship between two
+variables.
+
+**Types of correlation:**
+
+| Correlation | Description                                    |
+| ----------- | ---------------------------------------------- |
+| Positive    | As one variable increases, so does the other   |
+| Negative    | As one variable increases, the other decreases |
+| None        | No visible linear pattern                      |
+
+The **line of best fit** is drawn by eye so that it passes through the middle of the data, with
+roughly equal numbers of points on each side. It can be used to make predictions:
+
+- **Interpolation:** Predicting within the range of the data (reliable).
+- **Extrapolation:** Predicting outside the range of the data (unreliable).
+
+:::warning
+Never extrapolate far beyond the data range. The relationship may not hold outside the
+observed values.
+:::
+
+### 9.7 Frequency Polygons
+
+A frequency polygon is created by plotting the class midpoint against the frequency density (for
+grouped data) or frequency (for ungrouped data), and joining the points with straight lines.
+
+The area under a frequency polygon equals the total frequency (just like a histogram).
 
 ## Practice Questions
 
@@ -366,3 +655,70 @@ $$\sigma = \sqrt{\frac{4 + 4 + 0 + 1 + 9 + 9 + 1}{7}} = \sqrt{\frac{28}{7}} = \s
 
 10. The heights of 100 students are summarised in a cumulative frequency table. Explain how you
     would estimate the interquartile range from this table.
+
+11. A biased dice has $P(\text{even}) = 0.6$ and $P(\text{odd}) = 0.4$. It is rolled twice. Find the
+    probability that the sum is greater than 8.
+
+12. Explain the difference between a histogram and a bar chart, and when each is most appropriate.
+
+13. A set of data has $\bar{x} = 20$ and $\sigma = 4$. If every value is increased by 5, find the
+    new mean and standard deviation.
+
+14. Two classes took the same test. Class A: median 55, IQR 20. Class B: median 52, IQR 30. Compare
+    the performance of the two classes.
+
+15. In a Venn diagram for events $A$ and $B$, $P(A) = 0.7$, $P(B) = 0.5$, and $P(A \mid B) = 0.6$.
+    Find $P(A \cap B)$ and $P(A \cup B)$.
+
+16. A fair coin is tossed 5 times. Find the probability of getting at least 3 heads.
+
+17. The mean height of 8 students is 162 cm. When a ninth student joins, the mean becomes 163 cm.
+    Find the height of the ninth student.
+
+18. From a histogram, the first three bars have frequency densities 2, 4, and 3 with class widths 5,
+    5, and 10. Estimate the total frequency and the mean.
+
+19. A bag contains $n$ red and $n$ blue balls. Two balls are drawn at random without replacement.
+    Show that the probability of drawing two balls of the same colour is $\frac{n - 1}{2n - 1}$.
+
+20. Explain why the standard deviation is always non-negative, and state when it equals zero.
+
+### Extended Practice (Higher Tier)
+
+21. The probability that it rains on any given day is 0.3. Find the probability that it rains on
+    exactly 2 out of the next 5 days.
+
+22. Two events $A$ and $B$ are mutually exclusive. If $P(A) = 0.35$ and $P(A \cup B) = 0.65$, find
+    $P(B)$ and $P(A \cap B)$.
+
+23. A set of data has a mean of 50 and a standard deviation of 8. After applying the coding
+    $y = \frac{x - 50}{8}$, find the new mean and standard deviation.
+
+24. The table below shows the distribution of exam scores for a class of 40 students:
+
+    | Score range        | Frequency |
+    | ------------------ | --------- |
+    | $0 \le s \lt 20$   | 3         |
+    | $20 \le s \lt 40$  | 8         |
+    | $40 \le s \lt 60$  | 14        |
+    | $60 \le s \lt 80$  | 10        |
+    | $80 \le s \lt 100$ | 5         |
+
+    Draw a cumulative frequency curve and estimate the median and interquartile range.
+
+25. A bag contains 3 red, 5 blue, and 2 green marbles. Three marbles are drawn at random without
+    replacement. Find the probability that exactly two are the same colour.
+
+26. Explain why the mean is affected by outliers but the median is not. Use the data set
+    $2, 3, 4, 5, 100$ to illustrate your answer.
+
+27. A fair spinner has the numbers 1, 2, 3, 4. It is spun twice. Find the probability that the
+    product of the two numbers is even.
+
+28. The standard deviation of a data set is zero. What does this tell you about the data?
+
+29. Two classes sit the same exam. Class A has 20 students with mean 65 and standard deviation 8.
+    Class B has 30 students with mean 70 and standard deviation 10. Find the overall mean.
+
+30. A card is drawn from a standard deck of 52 cards. Find the probability that it is a heart or a
+    face card (or both).

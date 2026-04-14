@@ -32,6 +32,15 @@ are emitted.
 - The maximum kinetic energy of emitted electrons depends on frequency, not intensity
 - More intense light produces more electrons, not more energetic ones
 
+### Why the Photoelectric Effect Disproves the Wave Theory of Light
+
+Classical wave theory predicts that the energy of a light wave depends on its intensity (amplitude),
+not its frequency. A sufficiently intense low-frequency light should eventually eject electrons.
+This does not happen. Einstein's explanation -- that light consists of discrete photons with energy
+$E = hf$ -- correctly predicts that the kinetic energy of emitted electrons depends on frequency,
+and that there is a threshold frequency below which no electrons are emitted regardless of
+intensity. This was one of the key experiments that led to quantum mechanics.
+
 **Einstein's Photoelectric Equation:**
 
 $$E_k = hf - \phi$$
@@ -67,6 +76,16 @@ $$p = \sqrt{2mE_k} = \sqrt{2 \times 9.11 \times 10^{-31} \times 3.2 \times 10^{-
 
 $$\lambda = \frac{h}{p} = \frac{6.63 \times 10^{-34}}{7.64 \times 10^{-24}} = 8.68 \times 10^{-11} \text{ m} \approx 0.087 \text{ nm}$$
 
+### Why Macroscopic Objects Do Not Show Wave Behaviour
+
+A $1 \text{ kg}$ ball moving at $1 \text{ m/s}$ has a de Broglie wavelength of
+$\lambda = 6.63 \times
+10^{-34} / 1 = 6.63 \times 10^{-34}$ m. This is unfathomably small -- far
+smaller than any aperture or obstacle. Wave effects (diffraction, interference) are only observable
+when the wavelength is comparable to the size of the obstacles. For electrons (small mass), the de
+Broglie wavelength can be comparable to atomic spacing, which is why electron diffraction is readily
+observable.
+
 ### Energy Levels and Spectra
 
 Electrons in atoms exist in discrete energy levels. Transitions between levels produce photons:
@@ -96,6 +115,14 @@ a particle:
 $$\Delta x \cdot \Delta p \geq \frac{\hbar}{2}$$
 
 where $\hbar = \dfrac{h}{2\pi}$.
+
+### Why the Uncertainty Principle Is Not About Measurement Error
+
+The uncertainty principle is not a statement about the limitations of our instruments. It is a
+fundamental property of nature: a particle simply does not have simultaneously well-defined position
+and momentum. This has profound consequences: it explains why electrons cannot spiral into the
+nucleus (confinement to a small volume requires large momentum, preventing collapse), and it sets a
+limit on the precision of any physical theory.
 
 **Example:** An electron is confined to a region of width $1 \text{ nm}$. What is the minimum
 uncertainty in its momentum?
@@ -136,6 +163,14 @@ The Standard Model classifies fundamental particles into:
 | Gravity         | Graviton (hypothetical) | 0     | All particles     |
 
 **Higgs Boson:** Gives particles mass via the Higgs mechanism.
+
+### Why Quarks Are Never Found in Isolation
+
+The strong force between quarks increases with distance (unlike gravity and electromagnetism, which
+decrease with distance). This phenomenon, called **colour confinement**, means that separating
+quarks requires more and more energy, until it becomes energetically favourable to create new
+quark-antiquark pairs. The result is that quarks are always found in colour-neutral combinations:
+baryons (three quarks) and mesons (quark-antiquark pair).
 
 ### Conservation Laws in Particle Physics
 
@@ -212,6 +247,13 @@ $$v = 2Lf_1 = 2 \times 0.65 \times 330 = 429 \text{ m/s}$$
 
 $$f_3 = \frac{3v}{2L} = 3 \times 330 = 990 \text{ Hz}$$
 
+### Why a Closed Pipe Only Supports Odd Harmonics
+
+At the closed end, there must be a displacement node (the air cannot move). At the open end, there
+is a displacement antinode. The fundamental has a quarter wavelength fitting in the pipe. The second
+harmonic would require three-quarters of a wavelength, which gives the frequency $3f_1$. The pattern
+continues with only odd multiples of the fundamental.
+
 ### Doppler Effect
 
 When a source of waves moves relative to an observer, the observed frequency changes:
@@ -248,6 +290,10 @@ $$f' = 800 \times \frac{343}{343 - 25} = 800 \times \frac{343}{318} = 800 \times
 5. **Doppler effect sign convention:** Approaching sources increase observed frequency; receding
    sources decrease it.
 
+6. **Confusing baryon number and atomic mass number.** Baryon number counts the number of quarks
+   minus antiquarks (each quark has $B = 1/3$, each antiquark has $B = -1/3$). A proton has $B = 1$,
+   a neutron has $B = 1$, a meson has $B = 0$.
+
 ---
 
 ## Practice Questions
@@ -273,3 +319,10 @@ $$f' = 800 \times \frac{343}{343 - 25} = 800 \times \frac{343}{318} = 800 \times
 
 8. Explain how the Heisenberg uncertainty principle limits the precision of simultaneous
    measurements of position and momentum.
+
+9. A neutron decays into a proton, electron, and electron antineutrino. Write the full reaction and
+   verify conservation of charge, baryon number, and lepton number.
+
+10. A stationary wave is formed on a string of length $1.2 \text{ m}$ with a fundamental frequency
+    of $200 \text{ Hz}$. Calculate the frequencies of the second, third, and fourth harmonics, and
+    the positions of the nodes and antinodes for the second harmonic.

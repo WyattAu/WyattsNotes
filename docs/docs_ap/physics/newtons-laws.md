@@ -17,12 +17,18 @@ the same direction, unless acted upon by a net external force.
 ### Inertial Reference Frames
 
 Newton's laws are valid only in **inertial reference frames** -- frames that are not accelerating. A
-frame attached to an accelerating car is non-inertial.
+frame attached to an accelerating car is non-inertial: a pendulum hanging from the ceiling swings
+backward even though no horizontal force acts on it (in the car's frame). In an inertial frame (the
+ground), the pendulum simply tends to stay at rest while the car accelerates forward.
 
 ### Mass and Inertia
 
 **Mass** is a measure of an object's resistance to changes in its motion (inertia). It is an
 intrinsic property of an object, independent of location. The SI unit is the kilogram (kg).
+
+Mass is not weight. Mass is a scalar; weight is a vector. Mass does not change with location; weight
+depends on the local gravitational field. An astronaut on the Moon has the same mass as on Earth but
+one-sixth the weight.
 
 ## Newton's Second Law -- Force and Acceleration (CED Unit 2)
 
@@ -54,6 +60,15 @@ $$
 
 On Earth: $g \approx 9.8 \text{ m/s}^2$. On the Moon: $g \approx 1.62 \text{ m/s}^2$.
 
+### Proof That $F = ma$ Is Not a Definition
+
+One might think $F = ma$ merely defines force. But force is defined independently through
+interactions (contact forces, gravitational forces, spring forces). $F = ma$ is an empirical law
+that relates the net force to the resulting acceleration. The fact that the same proportionality
+constant ($m$) works for all forces (gravitational, electromagnetic, contact) is a deep and
+non-trivial result. If $F = ma$ were merely a definition, it would not have predictive power, but it
+does: given the forces, we can predict the motion, and given the motion, we can infer the forces.
+
 ## Newton's Third Law -- Action-Reaction Pairs (CED Unit 2)
 
 For every action, there is an equal and opposite reaction:
@@ -68,6 +83,15 @@ $$
 2. The forces are always equal in magnitude and opposite in direction.
 3. The forces are the same type (both gravitational, both normal, both frictional, etc.).
 4. Action-reaction pairs cannot cancel each other because they act on different objects.
+
+### Systematic Identification of Third Law Pairs
+
+To correctly identify a third law pair, use this algorithm:
+
+1. Identify the force on object $A$ and what object exerts it: "Object $B$ exerts force $\vec{F}$ on
+   object $A$."
+2. The third law pair is: "Object $A$ exerts force $-\vec{F}$ on object $B$."
+3. Verify: same type, equal magnitude, opposite direction, different objects.
 
 :::info[Example: Identifying Action-Reaction Pairs]
 
@@ -103,6 +127,14 @@ $$
 N = mg\cos\theta
 $$
 
+### Why the Normal Force Is Not Always Equal to $mg$
+
+The normal force adjusts to prevent the object from penetrating the surface. It equals $mg$ only
+when there is no vertical acceleration and no other vertical forces. In a lift accelerating upward,
+$N = m(g + a) \gt mg$. On an inclined plane, only the component of gravity perpendicular to the
+surface ($mg\cos\theta$) must be balanced by the normal force. The parallel component
+($mg\sin\theta$) causes acceleration along the slope.
+
 ### Tension ($\vec{T}$)
 
 Tension is the pulling force transmitted through a string, rope, or cable. For a massless,
@@ -127,6 +159,14 @@ $$
 
 where $\mu_k$ is the coefficient of kinetic friction. Note that $\mu_k \lt \mu_s$ in general.
 
+### Why Kinetic Friction Is Less Than Static Friction
+
+At the microscopic level, static friction holds because the surfaces form temporary bonds
+(atomic-scale cold welds) at the contact points. These bonds must be broken to initiate sliding.
+Once sliding begins, the surfaces do not have time to form as many bonds, and the kinetic friction
+force is lower. The transition from static to kinetic friction is the reason objects "jerk" when
+they start to move.
+
 ### Applied Force ($\vec{F}_{\text{app}}$)
 
 Any external push or pull.
@@ -146,6 +186,14 @@ A free body diagram shows all external forces acting on a single object:
 1. Isolate the object.
 2. Draw vectors for each force, originating from the object's center.
 3. Do not include internal forces or forces exerted by the object on other objects.
+
+### Common FBD Errors
+
+- Including velocity or acceleration vectors on the FBD. The FBD shows only _forces_.
+- Drawing the normal force at an angle. The normal force is always perpendicular to the contact
+  surface.
+- Including the "centripetal force" as a separate force. The centripetal force is the _net_ radial
+  force, not a separate interaction.
 
 :::info[Example: Block on an Inclined Plane]
 
@@ -191,6 +239,23 @@ $$
 T = \frac{2m_1 m_2 g}{m_1 + m_2}
 $$
 
+### Derivation of Tension in the Atwood Machine
+
+The tension is the same throughout a massless string. Solving the first equation for $T$:
+
+$$
+T = m_1(g + a)
+$$
+
+Substituting the expression for $a$:
+
+$$
+T = m_1\left(g + \frac{(m_2 - m_1)g}{m_1 + m_2}\right) = m_1 g \cdot \frac{m_1 + m_2 + m_2 - m_1}{m_1 + m_2} = \frac{2m_1 m_2 g}{m_1 + m_2}
+$$
+
+Note that $T$ is always between $m_1 g$ and $m_2 g$: it must be greater than $m_1 g$ to accelerate
+$m_1$ upward, and less than $m_2 g$ to accelerate $m_2$ downward.
+
 :::info[Example]
 
 An Atwood machine has $m_1 = 3.0 \text{ kg}$ and $m_2 = 5.0 \text{ kg}$. Find the acceleration and
@@ -213,6 +278,10 @@ When multiple objects are connected, you can either:
 1. Analyze each object separately with its own FBD, or
 2. Treat the system as a single object (internal forces cancel).
 
+**When to use each approach:** Use the system approach when you need the acceleration of the entire
+system. Use the individual approach when you need the tension in a connecting string or the normal
+force between two objects in contact.
+
 ### Elevator Problems
 
 A person of mass $m$ stands on a scale in an elevator. The scale reads the normal force $N$.
@@ -229,6 +298,19 @@ For an object moving in a circle, the net force toward the center provides the c
 $$
 \sum F_{\text{radial}} = \frac{mv^2}{r}
 $$
+
+### Banked Curves
+
+On a banked curve of angle $\theta$ and radius $r$, the ideal speed (at which no friction is
+required) is:
+
+$$
+v_{\text{ideal}} = \sqrt{rg\tan\theta}
+$$
+
+At this speed, the horizontal component of the normal force provides exactly the required
+centripetal force. Below this speed, friction acts up the slope; above it, friction acts down the
+slope.
 
 :::info[Example]
 
@@ -267,7 +349,8 @@ $$
 U = -\frac{GMm}{r}
 $$
 
-The negative sign indicates that work must be done against gravity to move masses apart.
+The negative sign indicates that work must be done against gravity to move masses apart. The
+reference point ($U = 0$) is at infinity.
 
 ### Orbital Mechanics
 
@@ -282,6 +365,13 @@ T = \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r^3}{GM}}
 $$
 
 These are Kepler's Third Law: $T^2 \propto r^3$.
+
+### Why All Orbits Are Conic Sections
+
+Newton showed that any orbit under an inverse-square gravitational force is a conic section
+(ellipse, parabola, or hyperbola). Bound orbits (total energy negative) are ellipses. Escape
+trajectories (total energy zero) are parabolas. Unbound trajectories (total energy positive) are
+hyperbolas. Circular orbits are a special case of elliptical orbits with eccentricity zero.
 
 ## Common Pitfalls
 
@@ -298,6 +388,10 @@ These are Kepler's Third Law: $T^2 \propto r^3$.
    Earth's surface.
 7. **Ignoring the direction of the normal force.** The normal force is always perpendicular to the
    contact surface, not necessarily vertical.
+8. **Adding mass to a pulley system without accounting for the pulley's inertia.** The standard
+   Atwood machine assumes a massless pulley. A massive pulley has its own moment of inertia.
+9. **Assuming the acceleration of a connected system is the same for all parts.** This is true only
+   if the connections are rigid or inextensible.
 
 ## Practice Questions
 
@@ -324,3 +418,9 @@ These are Kepler's Third Law: $T^2 \propto r^3$.
 
 8. A $5.0 \text{ kg}$ block is on a frictionless table connected to a $3.0 \text{ kg}$ block hanging
    over the edge. Find the acceleration of the system and the tension in the string.
+
+9. A block of mass $m$ is placed on a wedge of mass $M$ with angle $\theta$. All surfaces are
+   frictionless. Find the acceleration of the wedge relative to the ground.
+
+10. A $2000 \text{ kg}$ car towing a $1000 \text{ kg}$ trailer accelerates at $1.5 \text{ m/s}^2$.
+    If the tension in the tow bar is $1800 \text{ N}$, find the friction force on the car.

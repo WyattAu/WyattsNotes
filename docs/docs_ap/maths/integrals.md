@@ -41,6 +41,14 @@ $$
 \int x^n\, dx = \frac{x^{n+1}}{n+1} + C, \quad n \ne -1
 $$
 
+**Why the power rule excludes $n = -1$.** Substituting $n = -1$ gives $\frac{x^0}{0}$, which is
+undefined. The antiderivative of $\frac{1}{x}$ is $\ln|x|$, a fundamental result with deep
+connections to the natural logarithm.
+
+**Why the absolute value in $\ln|x|$.** The derivative of $\ln x$ is $\frac{1}{x}$ for $x \gt 0$.
+For $x \lt 0$, the derivative of $\ln(-x)$ is $\frac{1}{-x} \cdot (-1) = \frac{1}{x}$. So the
+antiderivative of $\frac{1}{x}$ on any interval not containing $0$ is $\ln|x| + C$.
+
 :::info[Example]
 
 Evaluate $\displaystyle\int (3x^4 - 2x^2 + 5x - 1)\, dx$.
@@ -48,6 +56,23 @@ Evaluate $\displaystyle\int (3x^4 - 2x^2 + 5x - 1)\, dx$.
 $$
 \int (3x^4 - 2x^2 + 5x - 1)\, dx = \frac{3x^5}{5} - \frac{2x^3}{3} + \frac{5x^2}{2} - x + C
 $$
+
+:::
+
+:::info[Example]
+
+Evaluate $\displaystyle\int \frac{3}{x^2}\, dx$.
+
+Rewrite as $\displaystyle\int 3x^{-2}\, dx = \frac{3x^{-1}}{-1} + C = -\frac{3}{x} + C$.
+
+:::
+
+:::info[Example]
+
+Evaluate $\displaystyle\int \frac{2x^3 - x + 4}{\sqrt{x}}\, dx$.
+
+Rewrite:
+$\displaystyle\int (2x^{5/2} - x^{1/2} + 4x^{-1/2})\, dx = \frac{4x^{7/2}}{7} - \frac{2x^{3/2}}{3} + 8x^{1/2} + C$.
 
 :::
 
@@ -70,6 +95,12 @@ where $\Delta x = \frac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$th su
 | Midpoint sum      | Midpoint of subinterval                           |
 | Trapezoidal sum   | Average of endpoints (trapezoids, not rectangles) |
 
+**Why Riemann sums matter.** They are the foundation of the definite integral. As $n \to \infty$,
+the approximation becomes exact (for continuous functions).
+
+**Theorem.** If $f$ is continuous on $[a, b]$, then the Riemann sum converges to the same value
+regardless of the choice of sample points $x_i^*$.
+
 ### The Definite Integral
 
 The **definite integral** of $f$ from $a$ to $b$ is:
@@ -87,6 +118,19 @@ provided this limit exists. When it does, $f$ is said to be **integrable** on $[
 3. $\displaystyle\int_a^b [f(x) \pm g(x)]\, dx = \int_a^b f(x)\, dx \pm \int_a^b g(x)\, dx$
 4. $\displaystyle\int_a^b c \cdot f(x)\, dx = c \int_a^b f(x)\, dx$
 5. $\displaystyle\int_a^b f(x)\, dx = \int_a^c f(x)\, dx + \int_c^b f(x)\, dx$ (Additivity)
+
+**Property 5 (Additivity) is powerful.** It allows splitting integrals at discontinuities. For
+example, if $f$ has a jump at $c \in (a, b)$, you can split:
+
+$$
+\int_a^b f(x)\, dx = \int_a^c f(x)\, dx + \int_c^b f(x)\, dx
+$$
+
+**Comparison properties.** If $f(x) \ge g(x)$ on $[a, b]$, then
+$\displaystyle\int_a^b f(x)\, dx \ge \int_a^b g(x)\, dx$.
+
+In particular, if $m \le f(x) \le M$ on $[a, b]$, then
+$m(b-a) \le \displaystyle\int_a^b f(x)\, dx \le M(b-a)$.
 
 ### Integral as Net Area
 
@@ -106,13 +150,7 @@ Find the total area between $f(x) = x^2 - 4$ and the $x$-axis on $[-3, 3]$.
 Find the zeros: $x^2 - 4 = 0 \implies x = \pm 2$.
 
 $$
-\text{Total Area} = \int_{-3}^{-2} |x^2 - 4|\, dx + \int_{-2}^{2} |x^2 - 4|\, dx + \int_{2}^{3} |x^2 - 4|\, dx
-$$
-
-On $[-3, -2]$ and $[2, 3]$: $f \ge 0$. On $[-2, 2]$: $f \le 0$.
-
-$$
-= \int_{-3}^{-2}(x^2 - 4)\, dx + \int_{-2}^{2}(4 - x^2)\, dx + \int_{2}^{3}(x^2 - 4)\, dx
+\text{Total Area} = \int_{-3}^{-2} (x^2 - 4)\, dx + \int_{-2}^{2} (4 - x^2)\, dx + \int_{2}^{3} (x^2 - 4)\, dx
 $$
 
 $$
@@ -120,7 +158,7 @@ $$
 $$
 
 $$
-= \frac{7}{3} + \frac{32}{3} + \frac{7}{3} = \frac{46}{3}
+= \frac{-8 - (-27)}{3} - \frac{-8}{3} + \frac{8 - (-8)}{3} + \frac{27 - 8}{3} = \frac{19}{3} + \frac{16}{3} + \frac{19}{3} = \frac{54}{3} = 18
 $$
 
 :::
@@ -147,6 +185,10 @@ $$
 \frac{d}{dx}\!\left[\int_a^{u(x)} f(t)\, dt\right] = f(u(x)) \cdot u'(x)
 $$
 
+**Intuition.** FTC Part 1 says: the rate at which the accumulated area changes is just the height of
+the curve at that point. This connects the two halves of calculus: the derivative and the integral
+are inverse operations.
+
 :::info[Example]
 
 Find $\displaystyle\frac{d}{dx}\!\left[\int_1^{x^2} \sin(t^2)\, dt\right]$.
@@ -155,6 +197,34 @@ By FTC Part 1 and the chain rule:
 
 $$
 \frac{d}{dx}\!\left[\int_1^{x^2} \sin(t^2)\, dt\right] = \sin\!\left((x^2)^2\right) \cdot 2x = 2x \sin(x^4)
+$$
+
+:::
+
+:::info[Example]
+
+Find $\displaystyle\frac{d}{dx}\!\left[\int_0^{\sqrt{x}} e^{t^2}\, dt\right]$.
+
+$$
+\frac{d}{dx}\!\left[\int_0^{\sqrt{x}} e^{t^2}\, dt\right] = e^{(\sqrt{x})^2} \cdot \frac{1}{2\sqrt{x}} = \frac{e^x}{2\sqrt{x}}
+$$
+
+:::
+
+:::info[Example]
+
+Find $\displaystyle\frac{d}{dx}\!\left[\int_x^{x^2} \frac{1}{1+t^2}\, dt\right]$.
+
+Split the integral at a constant (say $0$):
+
+$$
+\int_x^{x^2} \frac{1}{1+t^2}\, dt = \int_0^{x^2} \frac{1}{1+t^2}\, dt - \int_0^x \frac{1}{1+t^2}\, dt
+$$
+
+Differentiating:
+
+$$
+\frac{1}{1+x^4} \cdot 2x - \frac{1}{1+x^2} = \frac{2x}{1+x^4} - \frac{1}{1+x^2}
 $$
 
 :::
@@ -205,6 +275,9 @@ $$
 \int f(u)\, du = F(u) + C = F(g(x)) + C
 $$
 
+**Strategy for choosing $u$.** Look for a function and its derivative in the integrand. If you can
+spot $f(g(x))$ and $g'(x)$, set $u = g(x)$.
+
 :::info[Example]
 
 Evaluate $\displaystyle\int 2x e^{x^2}\, dx$.
@@ -213,6 +286,30 @@ Let $u = x^2$, $du = 2x\, dx$:
 
 $$
 \int 2x e^{x^2}\, dx = \int e^u\, du = e^u + C = e^{x^2} + C
+$$
+
+:::
+
+:::info[Example]
+
+Evaluate $\displaystyle\int \frac{x}{x^2 + 1}\, dx$.
+
+Let $u = x^2 + 1$, $du = 2x\, dx$, giving $\frac{1}{2}du = x\, dx$:
+
+$$
+\int \frac{x}{x^2 + 1}\, dx = \frac{1}{2}\int \frac{1}{u}\, du = \frac{1}{2}\ln|u| + C = \frac{1}{2}\ln(x^2 + 1) + C
+$$
+
+:::
+
+:::info[Example]
+
+Evaluate $\displaystyle\int \frac{\ln x}{x}\, dx$.
+
+Let $u = \ln x$, $du = \frac{1}{x}\, dx$:
+
+$$
+\int \frac{\ln x}{x}\, dx = \int u\, du = \frac{u^2}{2} + C = \frac{(\ln x)^2}{2} + C
 $$
 
 :::
@@ -229,10 +326,22 @@ $$
 
 Evaluate $\displaystyle\int_0^1 x\sqrt{1 + x^2}\, dx$.
 
-Let $u = 1 + x^2$, $du = 2x\, dx$. When $x = 0$, $u = 1$. When $x = 1$, $u = 2$.
+Let $u = 1 + x^2$, $du = 2x\, dx$. When $x = 0$, $u = 1$. When $x = 1, u = 2$.
 
 $$
 \int_0^1 x\sqrt{1 + x^2}\, dx = \frac{1}{2}\int_1^2 \sqrt{u}\, du = \frac{1}{2}\left[\frac{2u^{3/2}}{3}\right]_1^2 = \frac{1}{3}(2\sqrt{2} - 1)
+$$
+
+:::
+
+:::info[Example]
+
+Evaluate $\displaystyle\int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx$.
+
+Let $u = 1 + x^2$, $du = 2x\, dx$. When $x = 0$, $u = 1$. When $x = 1$, $u = 2$.
+
+$$
+\int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx = \int_1^2 u^{-1/2}\, du = \left[2\sqrt{u}\right]_1^2 = 2\sqrt{2} - 2
 $$
 
 :::
@@ -244,6 +353,15 @@ $$
 $$
 
 Choose $u$ using **LIATE** priority: Logarithmic, Inverse trig, Algebraic, Trig, Exponential.
+
+**Why LIATE works.** The antiderivative of $u$ should be simpler than $u$ itself. Logarithmic and
+inverse trig functions simplify upon differentiation. Algebraic functions require integration by
+parts to reduce their degree.
+
+**Tabular integration (DI method).** For integrals of the form $\displaystyle\int f(x)g(x)\, dx$
+where $f(x)$ is a polynomial and $g(x)$ has an easily repeatable derivative pattern, use a table.
+Label columns D (derivatives of $f$) and I (integrals of $g$), alternating signs $+$, $-$, $+$, $-$.
+The result is the sum of diagonal products.
 
 :::info[Example]
 
@@ -259,12 +377,59 @@ $$
 
 :::info[Example]
 
+Evaluate $\displaystyle\int x^2 e^x\, dx$.
+
+Let $u = x^2$, $dv = e^x\, dx$. Then $du = 2x\, dx$, $v = e^x$.
+
+$$
+= x^2 e^x - \int 2x e^x\, dx
+$$
+
+Apply integration by parts again for $\int 2x e^x\, dx$. Let $u = 2x$, $dv = e^x\, dx$,
+$du = 2\, dx$, $v = e^x$:
+
+$$
+\int 2x e^x\, dx = 2xe^x - 2e^x + C
+$$
+
+Therefore:
+
+$$
+\int x^2 e^x\, dx = x^2 e^x - 2xe^x + 2e^x + C = e^x(x^2 - 2x + 2) + C
+$$
+
+**Tabular method check:**
+
+| Sign | D (derivatives) | I (integrals) |
+| ---- | --------------- | ------------- |
+| $+$  | $x^2$           | $e^x$         |
+| $-$  | $2x$            | $e^x$         |
+| $+$  | $2$             | $e^x$         |
+
+Result: $x^2 e^x - 2xe^x + 2e^x = e^x(x^2 - 2x + 2)$. Confirmed.
+
+:::
+
+:::info[Example]
+
 Evaluate $\displaystyle\int \ln x\, dx$.
 
 Let $u = \ln x$, $dv = dx$. Then $du = \frac{1}{x}dx$, $v = x$.
 
 $$
 \int \ln x\, dx = x\ln x - \int x \cdot \frac{1}{x}\, dx = x\ln x - x + C
+$$
+
+:::
+
+:::info[Example]
+
+Evaluate $\displaystyle\int_0^{\pi/2} x\sin x\, dx$.
+
+Let $u = x$, $dv = \sin x\, dx$, $du = dx$, $v = -\cos x$.
+
+$$
+= [-x\cos x]_0^{\pi/2} - \int_0^{\pi/2} (-\cos x)\, dx = \left(0 + \frac{\pi}{2}\cos 0\right) - [-\sin x]_0^{\pi/2} = \frac{\pi}{2} - 1
 $$
 
 :::
@@ -316,10 +481,6 @@ $$
 
 Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^p}\, dx$ converges for $p \gt 0$.
 
-$$
-\int_1^{\infty} \frac{1}{x^p}\, dx = \lim_{b \to \infty} \int_1^b x^{-p}\, dx
-$$
-
 If $p \ne 1$:
 
 $$
@@ -336,15 +497,64 @@ $$
 
 :::
 
+:::info[Example]
+
+Evaluate $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx$.
+
+Let $u = x^2$, $du = 2x\, dx$:
+
+$$
+\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}\int_0^{\infty} e^{-u}\, du = \frac{1}{2}\left[-e^{-u}\right]_0^{\infty} = \frac{1}{2}(0 + 1) = \frac{1}{2}
+$$
+
+:::
+
+**The Gaussian integral.** The integral
+$\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$ is a celebrated result that
+cannot be evaluated by elementary methods. The standard technique uses a double integral in polar
+coordinates. The full Gaussian integral from $-\infty$ to $\infty$ equals $\sqrt{\pi}$.
+
+Note that $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}$ (computed above via
+$u$-substitution) is a different integral from
+$\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$.
+
+:::info[Example]
+
+Evaluate $\displaystyle\int_0^{\infty} e^{-x}\, dx$.
+
+$$
+\lim_{b \to \infty} \left[-e^{-x}\right]_0^b = \lim_{b \to \infty}(-e^{-b} + 1) = 1
+$$
+
+The integral converges to $1$.
+
+:::
+
 ## Applications of Integrals (CED Unit 8)
 
 ### Area Between Curves
 
-The area between $y = f(x)$ and $y = g(x)$ from $x = a$ to $x = b$ (where $f(x) \ge g(x)$):
+The area between $y = f(x)$ and $y = g(x)$ from $x = a$ to $x = b$ (where $f(x) \geq g(x)$):
 
 $$
 A = \int_a^b [f(x) - g(x)]\, dx
 $$
+
+**When to split.** If $f$ and $g$ cross, split the integral at the intersection points.
+
+:::info[Example]
+
+Find the area between $y = x^2$ and $y = 2x$.
+
+Find intersections: $x^2 = 2x$, so $x^2 - 2x = 0$, giving $x = 0$ and $x = 2$.
+
+Between $x = 0$ and $x = 2$, $2x \ge x^2$.
+
+$$
+A = \int_0^2 (2x - x^2)\, dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
+$$
+
+:::
 
 ### Volumes of Solids of Revolution
 
@@ -366,6 +576,9 @@ $$
 V = 2\pi \int_a^b x \cdot f(x)\, dx
 $$
 
+**When to use which method.** Use the disk/washer method when integrating perpendicular to the axis
+of rotation. Use the shell method when integrating parallel to the axis of rotation.
+
 :::info[Example]
 
 Find the volume of the solid obtained by rotating $y = \sqrt{x}$, $y = 0$, $x = 4$ about the
@@ -375,6 +588,32 @@ Using the disk method:
 
 $$
 V = \pi \int_0^4 (\sqrt{x})^2\, dx = \pi \int_0^4 x\, dx = \pi\left[\frac{x^2}{2}\right]_0^4 = 8\pi
+$$
+
+:::
+
+:::info[Example]
+
+Find the volume of the solid obtained by rotating the region bounded by $y = x^2$ and $y = x$ about
+the $y$-axis.
+
+The curves intersect at $x = 0$ and $x = 1$. Using the shell method:
+
+$$
+V = 2\pi \int_0^1 x(x - x^2)\, dx = 2\pi \int_0^1 (x^2 - x^3)\, dx = 2\pi\left[\frac{x^3}{3} - \frac{x^4}{4}\right]_0^1 = 2\pi\left(\frac{1}{3} - \frac{1}{4}\right) = 2\pi \cdot \frac{1}{12} = \frac{\pi}{6}
+$$
+
+:::
+
+:::info[Example]
+
+Find the volume of the solid obtained by rotating the region bounded by $y = e^{-x}$, $y = 0$,
+$x = 0$, $x = 1$ about the $x$-axis.
+
+Using the disk method:
+
+$$
+V = \pi \int_0^1 (e^{-x})^2\, dx = \pi \int_0^1 e^{-2x}\, dx = \pi\left[-\frac{e^{-2x}}{2}\right]_0^1 = \pi\left(-\frac{e^{-2}}{2} + \frac{1}{2}\right) = \frac{\pi}{2}\!\left(1 - \frac{1}{e^2}\right)
 $$
 
 :::
@@ -389,6 +628,42 @@ $$
 
 By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\text{avg}}$.
 
+:::info[Example]
+
+Find the average value of $f(x) = \sin x$ on $[0, \pi]$.
+
+$$
+f_{\text{avg}} = \frac{1}{\pi}\int_0^{\pi} \sin x\, dx = \frac{1}{\pi}[-\cos x]_0^{\pi} = \frac{1}{\pi}(1 - (-1)) = \frac{2}{\pi}
+$$
+
+:::
+
+### Arc Length
+
+The arc length of $y = f(x)$ from $x = a$ to $x = b$ is:
+
+$$
+L = \int_a^b \sqrt{1 + [f'(x)]^2}\, dx
+$$
+
+:::info[Example]
+
+Find the arc length of $y = \frac{2}{3}x^{3/2}$ from $x = 0$ to $x = 3$.
+
+$f'(x) = x^{1/2} = \sqrt{x}$.
+
+$$
+L = \int_0^3 \sqrt{1 + x}\, dx
+$$
+
+Let $u = 1 + x$, $du = dx$:
+
+$$
+L = \int_1^4 \sqrt{u}\, du = \left[\frac{2u^{3/2}}{3}\right]_1^4 = \frac{2}{3}(8 - 1) = \frac{14}{3}
+$$
+
+:::
+
 ## Common Pitfalls
 
 1. **Forgetting the constant of integration** in indefinite integrals. Without it, the answer is
@@ -402,6 +677,18 @@ By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\text
    Inverse trig over Algebraic over Trig over Exponential.
 7. **Sign errors with FTC Part 1 chain rule.** The derivative of $\int_a^{g(x)} f(t)\, dt$ is
    $f(g(x)) \cdot g'(x)$, not $f(g(x))$.
+8. **Forgetting to split improper integrals at the discontinuity** when a singularity is in the
+   interval.
+9. **Choosing the disk vs. washer vs. shell method incorrectly.** Disk: rotate around $x$-axis using
+   radius. Shell: rotate around $y$-axis using height as the integrand. Washer: region between two
+   curves rotated about an axis.
+10. **Dropping the absolute value in $\ln|x|$.** The antiderivative of $\frac{1}{x}$ is
+    $\ln|x| + C$, not $\ln x + C$. On intervals where $x \lt 0$, the integral is well-defined and
+    equals $\ln(-x) + C$.
+11. **Confusing the Gaussian integrals.**
+    $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}$ (evaluated via $u$-substitution),
+    but $\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$ (requires advanced
+    techniques).
 
 ## Practice Questions
 
@@ -423,3 +710,20 @@ By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\text
 7. Find the average value of $f(x) = \sin x$ on $[0, \pi]$.
 
 8. Given $\displaystyle g(x) = \int_0^{x^3} \cos(t^2)\, dt$, find $g'(x)$.
+
+9. Evaluate $\displaystyle\int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx$.
+
+10. Find the arc length of $y = \frac{x^2}{8} + 2$ from $x = 0$ to $x = 4$.
+
+11. Evaluate $\displaystyle\int_1^e \frac{\ln x}{x}\, dx$.
+
+12. Find the volume when the region bounded by $y = e^{-x}$, $y = 0$, $x = 0$, $x = 1$ is rotated
+    about the $x$-axis.
+
+13. Evaluate $\displaystyle\int_0^1 \frac{1}{1 + x^2}\, dx$ and explain the result geometrically.
+
+14. Use the substitution $x = \tan\theta$ to evaluate $\displaystyle\int \frac{1}{1 + x^2}\, dx$.
+
+15. Find the area between the curves $y = \sin x$ and $y = \cos x$ for $0 \le x \le \pi/2$.
+
+16. Evaluate $\displaystyle\int_0^1 x^2 e^{-x}\, dx$ using the tabular method.

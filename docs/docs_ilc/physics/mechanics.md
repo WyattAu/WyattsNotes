@@ -42,6 +42,14 @@ Certificate Physics paper and covers kinematics, dynamics, energy, momentum, and
 - **Scalar:** has magnitude only (e.g., mass, speed, temperature).
 - **Vector:** has magnitude and direction (e.g., displacement, velocity, force, acceleration).
 
+### Resolving Vectors
+
+Any vector of magnitude $F$ at angle $\theta$ to the horizontal can be resolved into components:
+
+$$F_x = F\cos\theta, \qquad F_y = F\sin\theta$$
+
+This technique is essential for inclined plane problems and projectile motion.
+
 ## Kinematics
 
 ### Equations of Motion (OL/HL)
@@ -66,6 +74,12 @@ $$
 
 where $u$ = initial velocity, $v$ = final velocity, $s$ = displacement, $t$ = time.
 
+### Choosing the Right Equation
+
+The variable that does _not_ appear in each equation tells you when to use it. If you do not know
+the time, use $v^2 = u^2 + 2as$. If you do not know the acceleration, use $s = \frac{1}{2}(u+v)t$.
+If you do not know the displacement, use $v = u + at$.
+
 **Example (OL):** A car accelerates from rest at $2\text{ m/s}^2$ for 8 seconds. Find the distance
 travelled.
 
@@ -87,6 +101,11 @@ $$
 $$
 t^2 = \frac{90}{9.8} \approx 9.18 \implies t \approx 3.03\text{ s}
 $$
+
+### Sign Conventions
+
+Always define a positive direction before solving. If "up is positive," then downward velocity and
+acceleration are negative. Be consistent throughout the calculation.
 
 ## Projectile Motion (HL)
 
@@ -118,6 +137,12 @@ $$
 
 Maximum range occurs when $\theta = 45°$.
 
+### Why Horizontal and Vertical Motions Are Independent
+
+The gravitational force acts only vertically. There is no horizontal force (ignoring air
+resistance), so the horizontal acceleration is zero. The two components of motion are completely
+decoupled and can be solved separately using the kinematic equations.
+
 **Example (HL):** A ball is thrown from ground level with initial velocity $20\text{ m/s}$ at an
 angle of $30°$ above the horizontal. Find the maximum height, time of flight, and range.
 
@@ -147,6 +172,11 @@ $$
 R = u_x \cdot T = 10\sqrt{3} \times \frac{20}{9.8} \approx 35.3\text{ m}
 $$
 
+### Projectile from a Height
+
+When launched from a height $h$, the time of flight is found from $y(t) = 0$, which is a quadratic
+in $t$. There is no simple closed-form range formula in this case.
+
 ## Newton's Laws of Motion (OL/HL)
 
 ### First Law (Inertia)
@@ -171,6 +201,13 @@ $$
 
 For every action, there is an equal and opposite reaction.
 
+### Identifying Third Law Pairs Correctly
+
+The two forces must: (1) be equal in magnitude, (2) be opposite in direction, (3) act on _different_
+objects, and (4) be the same type of force. The weight of a book and the normal force on the book
+are _not_ a third law pair (they act on the same object). The correct pairs are: Earth pulls book
+down / book pulls Earth up, and table pushes book up / book pushes table down.
+
 ## Friction (OL/HL)
 
 ### Coefficient of Friction
@@ -185,6 +222,11 @@ reaction force.
 At limiting friction (when the object is on the point of moving): $f = \mu R$.
 
 On a horizontal surface: $R = mg$, so $f = \mu mg$.
+
+### Static vs Kinetic Friction
+
+Static friction adjusts to match the applied force, up to a maximum of $\mu_s R$. Once the object
+starts moving, kinetic friction takes over: $f_k = \mu_k R$. In general, $\mu_k \lt \mu_s$.
 
 **Example (HL):** A block of mass 10 kg rests on a rough horizontal surface with $\mu = 0.4$. A
 horizontal force of 60 N is applied. Find the acceleration.
@@ -208,6 +250,14 @@ $$
 Component of weight down the slope: $mg\sin\theta$.
 
 The block slides when $mg\sin\theta > \mu mg\cos\theta$, i.e., $\tan\theta > \mu$.
+
+If the block slides _down_ the slope:
+
+$$a = g(\sin\theta - \mu\cos\theta)$$
+
+If the block is pushed _up_ the slope:
+
+$$a = -g(\sin\theta + \mu\cos\theta)$$
 
 ## Work, Energy, and Power
 
@@ -249,6 +299,16 @@ the ground.
 $$
 mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 10} = \sqrt{196} = 14\text{ m/s}
 $$
+
+### Energy with Friction (HL)
+
+When friction is present, the work-energy theorem becomes:
+
+$$
+W_{\text{nc}} = \Delta E_k + \Delta E_p
+$$
+
+where $W_{\text{nc}} = -fd$ is the work done by friction (negative because friction opposes motion).
 
 ### Power (OL/HL)
 
@@ -302,6 +362,23 @@ $$
 \text{Impulse} = F \Delta t = \Delta p = m\Delta v
 $$
 
+The impulse equals the change in momentum. For a given $\Delta p$, increasing $\Delta t$ decreases
+the average force. This is the principle behind crumple zones, air bags, and seat belts.
+
+### Elastic vs Inelastic Collisions (HL)
+
+**Elastic:** Both momentum and kinetic energy are conserved.
+
+**Inelastic:** Momentum is conserved, but kinetic energy is not.
+
+**Coefficient of restitution:**
+
+$$
+e = \frac{\text{relative speed of separation}}{\text{relative speed of approach}}
+$$
+
+For elastic: $e = 1$. For perfectly inelastic: $e = 0$.
+
 ## Circular Motion (HL)
 
 ### Centripetal Acceleration and Force
@@ -318,12 +395,30 @@ $$
 
 where $\omega$ is the angular velocity.
 
+### Why Centripetal Force Is Not a Separate Force
+
+The centripetal force is the _net_ inward force, not an additional interaction. For a car on a flat
+roundabout, it is provided by friction. For a satellite in orbit, it is provided by gravity. For a
+ball on a string, it is provided by tension.
+
 **Example (HL):** A car of mass 1000 kg travels around a circular bend of radius 50 m at
 $15\text{ m/s}$. Find the centripetal force.
 
 $$
 F_c = \frac{1000 \times 225}{50} = 4500\text{ N}
 $$
+
+### Vertical Circular Motion (HL)
+
+At the top of a vertical circle:
+
+$$F_c = mg + T = \frac{mv^2}{r}$$
+
+At the bottom:
+
+$$F_c = T - mg = \frac{mv^2}{r}$$
+
+Minimum speed at the top: $v_{\min} = \sqrt{gr}$ (when $T = 0$).
 
 ## Simple Harmonic Motion (HL)
 
@@ -352,6 +447,27 @@ $$
 
 where $A$ is the amplitude and $\omega = \frac{2\pi}{T}$.
 
+### Energy in SHM (HL)
+
+The total energy in SHM is constant:
+
+$$
+E = \frac{1}{2}kA^2 = \frac{1}{2}mv_{\max}^2 = \frac{1}{2}m\omega^2 A^2
+$$
+
+At displacement $x$: $E = \frac{1}{2}mv^2 + \frac{1}{2}kx^2$.
+
+### Mass on a Spring (HL)
+
+For a mass $m$ on a spring of constant $k$:
+
+$$
+T = 2\pi\sqrt{\frac{m}{k}}
+$$
+
+This is independent of amplitude and gravitational field strength. The period depends only on the
+mass and the spring constant.
+
 ## Common Pitfalls
 
 1. **Confusing speed and velocity** -- velocity is a vector.
@@ -360,6 +476,8 @@ where $A$ is the amplitude and $\omega = \frac{2\pi}{T}$.
 4. **Friction on inclined planes** -- resolve forces parallel and perpendicular to the slope.
 5. **Conservation of momentum** only applies when no external net force acts.
 6. **Centripetal force** is not a new force -- it is the net force towards the centre.
+7. **Using $v = u + at$ when acceleration is not constant.**
+8. **Forgetting that the range formula assumes launch and landing at the same height.**
 
 ## Practice Questions
 
@@ -384,3 +502,22 @@ where $A$ is the amplitude and $\omega = \frac{2\pi}{T}$.
    $M_{\text{Earth}} = 5.97 \times 10^{24}\text{ kg}$.)
 4. A spring of spring constant $200\text{ N/m}$ has a mass of 2 kg attached. Find the period of
    oscillation.
+
+5. A $3\text{ kg}$ object moving at $5\text{ m/s}$ collides elastically with a $2\text{ kg}$ object
+   at rest. Find the velocities after the collision.
+
+6. A ball is swung in a vertical circle of radius $1.0\text{ m}$. Find the minimum speed at the top
+   of the circle and the tension in the string at the bottom when the speed is $6\text{ m/s}$.
+
+7. A car of mass $1500\text{ kg}$ rounds a banked curve of radius $100\text{ m}$ at $18\text{ m/s}$.
+   The banking angle is $20°$. Find the minimum coefficient of static friction required.
+
+8. A block of mass $4\text{ kg}$ slides $5\text{ m}$ down a $35°$ incline with $\mu_k = 0.15$. Find
+   the work done by friction, the work done by gravity, and the final speed if the block started
+   from rest.
+
+9. A $0.2\text{ kg}$ mass oscillates on a spring with period $1.5\text{ s}$. Find the spring
+   constant and the total energy if the amplitude is $0.08\text{ m}$.
+
+10. A $60\text{ kg}$ person stands on a scale in a lift. The scale reads $650\text{ N}$. Is the lift
+    accelerating, decelerating, or moving at constant velocity? If accelerating, in which direction?

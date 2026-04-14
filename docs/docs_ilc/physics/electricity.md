@@ -55,6 +55,14 @@ $$
 v = \frac{I}{nAe} = \frac{5}{8.5 \times 10^{28} \times 2 \times 10^{-6} \times 1.6 \times 10^{-19}} \approx 1.84 \times 10^{-4}\text{ m/s}
 $$
 
+### Why Drift Velocity Is So Slow
+
+Even a current of 1 A corresponds to about $6.25 \times 10^{18}$ electrons per second. The drift
+velocity in a copper wire is typically less than 0.1 mm/s. The electric signal propagates at nearly
+the speed of light, but the individual electrons move extraordinarily slowly. This is analogous to
+people in a crowd: one person pushes, and the push propagates through the crowd quickly, but each
+individual moves only a small step.
+
 ## Potential Difference and EMF
 
 ### Potential Difference (OL/HL)
@@ -81,6 +89,13 @@ A real cell has internal resistance $r$. The terminal voltage is:
 $$
 V = \text{EMF} - Ir
 $$
+
+### Why Terminal PD Decreases with Current
+
+The internal resistance dissipates energy as heat. As current increases, the internal voltage drop
+($Ir$) increases, and the terminal PD decreases. If the battery is short-circuited ($R = 0$), all
+the EMF is dropped across the internal resistance, and the terminal PD is zero. The current is
+$I = \varepsilon / r$, which can be very large, potentially damaging the battery.
 
 ## Resistance and Ohm's Law
 
@@ -116,6 +131,12 @@ $$
 R = \frac{1.7 \times 10^{-8} \times 100}{1 \times 10^{-6}} = 1.7\text{ ohms}
 $$
 
+### Why Resistivity Is Temperature-Dependent for Metals
+
+In a metal, the ions vibrate more vigorously at higher temperatures, scattering conduction electrons
+more frequently. This increases resistivity. For semiconductors, resistivity _decreases_ with
+temperature as more charge carriers are liberated.
+
 ## Series and Parallel Circuits (OL/HL)
 
 ### Series Circuits
@@ -136,11 +157,23 @@ $$
 \frac{1}{R} = \frac{1}{4} + \frac{1}{6} = \frac{5}{12} \implies R = 2.4\text{ ohms}
 $$
 
+### Why Adding Parallel Branches Reduces Total Resistance
+
+Each additional branch provides an extra path for current. More paths means less total opposition.
+The total resistance is always less than the smallest individual resistance.
+
 ### Kirchhoff's Laws (HL)
 
 **Junction rule:** The sum of currents entering a junction equals the sum leaving.
 
 **Loop rule:** The sum of EMFs around any closed loop equals the sum of potential drops.
+
+### Applying Kirchhoff's Laws Systematically
+
+1. Label all currents and voltages.
+2. Apply the junction rule at each junction.
+3. Apply the loop rule to each independent loop.
+4. Solve the resulting system of equations.
 
 **Example (HL):** Find the current in each resistor for the following circuit: a 12 V battery in
 series with a 2 ohm resistor, then a parallel combination of 6 ohm and 3 ohm resistors.
@@ -151,8 +184,6 @@ $\frac{1}{R_p} = \frac{1}{6} + \frac{1}{3} = \frac{1}{2} \implies R_p = 2\text{ 
 Total resistance: $R = 2 + 2 = 4\text{ ohms}$.
 
 Total current: $I = \frac{12}{4} = 3\text{ A}$.
-
-Current through 2 ohm (series): $I = 3\text{ A}$.
 
 Voltage across parallel combination: $V_p = 12 - 3 \times 2 = 6\text{ V}$.
 
@@ -180,6 +211,13 @@ $$
 $$
 R = \frac{V}{I} = \frac{230}{0.435} \approx 529\text{ ohms}
 $$
+
+### Maximum Power Transfer (HL)
+
+The maximum power is delivered to a load when the load resistance equals the internal resistance of
+the source: $R = r$.
+
+Proof: $P = \frac{\varepsilon^2 R}{(R+r)^2}$. Setting $\frac{dP}{dR} = 0$ gives $R = r$.
 
 ## Capacitors (HL)
 
@@ -219,8 +257,6 @@ $Q = 0.95 Q_0 \implies 1 - e^{-t/5} = 0.95 \implies e^{-t/5} = 0.05 \implies \fr
 
 ### Alternating Current
 
-An AC voltage can be expressed as:
-
 $$
 V = V_0 \sin(\omega t)
 $$
@@ -228,8 +264,6 @@ $$
 where $V_0$ is the peak voltage and $\omega = 2\pi f$.
 
 ### RMS Values
-
-The root-mean-square (RMS) voltage and current for a sinusoidal AC:
 
 $$
 V_{\text{rms}} = \frac{V_0}{\sqrt{2}}
@@ -246,8 +280,6 @@ The mains supply in Ireland is $230\text{ V}_{\text{rms}}$ at $50\text{ Hz}$.
 $$
 P_{\text{avg}} = V_{\text{rms}} I_{\text{rms}} \cos\phi
 $$
-
-where $\phi$ is the phase angle between voltage and current.
 
 For purely resistive circuits: $\phi = 0$, so $P = V_{\text{rms}} I_{\text{rms}}$.
 
@@ -347,3 +379,16 @@ $$
 4. A transformer has 500 primary turns and 50 secondary turns. The primary voltage is
    $230\text{ V}_{\text{rms}}$. Find the secondary voltage. If the secondary current is 10 A, find
    the primary current.
+
+5. Two capacitors of $22\text{ \mu F}$ and $47\text{ \mu F}$ are connected in series across a
+   $12\text{ V}$ supply. Find the total capacitance and the charge on each capacitor.
+
+6. An AC circuit has $R = 200\text{ ohms}$, $L = 0.2\text{ H}$, $C = 50\text{ \mu F}$ at
+   $f = 100\text{ Hz}$. Calculate $X_L$, $X_C$, $Z$, the phase angle, and the power dissipated.
+
+7. A battery of EMF $12\text{ V}$ and internal resistance $1.0\text{ }\Omega$ is connected to an
+   external circuit of resistance $5\text{ }\Omega$. Calculate the power dissipated in the external
+   circuit and the power dissipated in the internal resistance.
+
+8. A step-up transformer converts $230\text{ V}$ to $11,500\text{ V}$ with 98% efficiency. Find the
+   turns ratio and the primary current when the secondary current is $2\text{ A}$.

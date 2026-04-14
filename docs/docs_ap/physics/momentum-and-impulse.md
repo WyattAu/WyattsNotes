@@ -27,6 +27,14 @@ $$
 
 When mass is constant: $\vec{F}_{\text{net}} = m\vec{a}$.
 
+### Why Momentum Is More Fundamental Than Force
+
+$F = dp/dt$ is the general form of Newton's second law. $F = ma$ is the special case when mass is
+constant. For a rocket expelling fuel, a raindrop accumulating mass, or a relativistic particle,
+$F = ma$ fails but $F = dp/dt$ remains valid. Momentum is conserved; force is not. The momentum form
+of Newton's second law connects directly to the most powerful conservation law in classical
+mechanics.
+
 ## Impulse (CED Unit 5)
 
 Impulse is the change in momentum:
@@ -51,7 +59,19 @@ The impulse delivered to an object equals its change in momentum.
 
 ### Geometric Interpretation
 
-On a force-vs-time graph, the impulse equals the area under the curve.
+On a force-vs-time graph, the impulse equals the area under the curve. For a constant force, this is
+a rectangle. For a variable force, the area can be computed by integration or approximated by
+counting squares.
+
+### Average Force
+
+The average force during an interaction of duration $\Delta t$ is:
+
+$$
+F_{\text{avg}} = \frac{J}{\Delta t} = \frac{\Delta p}{\Delta t}
+$$
+
+This is the constant force that would produce the same impulse over the same time interval.
 
 :::info[Example]
 
@@ -72,6 +92,13 @@ $$
 The magnitude is $6750 \text{ N}$, directed opposite to the initial pitch.
 
 :::
+
+### Why Increasing Contact Time Reduces Force
+
+For a given change in momentum $\Delta p$, the average force is inversely proportional to the
+contact time: $F = \Delta p / \Delta t$. This is the principle behind all safety devices: seat
+belts, air bags, crumple zones, and crash mats all increase the time over which the momentum
+changes, thereby reducing the peak force on the body.
 
 ## Conservation of Momentum (CED Unit 5)
 
@@ -104,6 +131,14 @@ $\blacksquare$
 - Rocket propulsion (AP Physics C)
 - Any system with zero net external force
 
+### When External Forces Are Negligible
+
+During a collision, the internal forces (contact forces between the colliding objects) are very
+large but act for a very short time. The external forces (gravity, friction) are typically much
+smaller. The impulse from external forces is negligible compared to the impulse from internal
+forces, so momentum is approximately conserved during the collision even though the system is not
+truly isolated.
+
 ## Collisions (CED Unit 5)
 
 ### Types of Collisions
@@ -113,6 +148,18 @@ $\blacksquare$
 | Elastic             | Yes                 | Yes                       |
 | Inelastic           | Yes                 | No                        |
 | Perfectly Inelastic | Yes                 | No (maximum KE loss)      |
+
+### Coefficient of Restitution
+
+The coefficient of restitution $e$ measures the elasticity of a collision:
+
+$$
+e = \frac{v_{2f} - v_{1f}}{v_{1i} - v_{2i}} = \frac{\text{relative speed of separation}}{\text{relative speed of approach}}
+$$
+
+- $e = 1$: perfectly elastic
+- $0 \lt e \lt 1$: inelastic
+- $e = 0$: perfectly inelastic (objects stick together)
 
 ### Perfectly Inelastic Collisions
 
@@ -169,9 +216,22 @@ $$
 v_{2f} = \frac{2m_1}{m_1 + m_2} v_{1i}
 $$
 
+### Derivation of the Elastic Collision Formulas
+
+Starting from conservation of momentum and kinetic energy with $v_{2i} = 0$:
+
+From momentum: $m_1 v_{1i} = m_1 v_{1f} + m_2 v_{2f}$, so
+$v_{2f} = \frac{m_1}{m_2}(v_{1i} - v_{1f})$.
+
+Substitute into the KE equation and simplify:
+
+$$
+v_{1f} = \frac{m_1 - m_2}{m_1 + m_2} v_{1i}, \qquad v_{2f} = \frac{2m_1}{m_1 + m_2} v_{1i}
+$$
+
 ### Special Cases of Elastic Collisions
 
-1. **Equal masses** ($m_1 = m_2$): The objects exchange velocities.
+1. **Equal masses** ($m_1 = m_2$): The objects exchange velocities. $v_{1f} = 0$, $v_{2f} = v_{1i}$.
 2. **Stationary target with $m_1 \gg m_2$:** $m_1$ continues essentially unchanged; $m_2$ moves off
    at roughly $2v_{1i}$.
 3. **Stationary target with $m_1 \ll m_2$:** $m_1$ bounces back with $-v_{1i}$; $m_2$ barely moves.
@@ -214,32 +274,17 @@ $$
 \frac{1}{2}m_1 v_{1i}^2 + \frac{1}{2}m_2 v_{2i}^2 = \frac{1}{2}m_1 v_{1f}^2 + \frac{1}{2}m_2 v_{2f}^2
 $$
 
+### Why 2D Elastic Collisions of Equal Masses Produce 90-Degree Scattering
+
 :::info[Example]
 
 A pool ball of mass $m$ moving at speed $v$ collides with an identical stationary ball. After the
 collision, one ball moves at angle $\theta$ above the original direction and the other at angle
 $\phi$ below. Show that $\theta + \phi = 90^\circ$ for an elastic collision.
 
-Conservation of momentum:
+From conservation of KE: $v^2 = v_1^2 + v_2^2$.
 
-$x$: $mv = mv_1\cos\theta + mv_2\cos\phi \implies v = v_1\cos\theta + v_2\cos\phi$
-
-$y$: $0 = mv_1\sin\theta - mv_2\sin\phi \implies v_1\sin\theta = v_2\sin\phi$
-
-Conservation of KE:
-
-$v^2 = v_1^2 + v_2^2$
-
-From the $x$-equation squared:
-$v^2 = v_1^2\cos^2\theta + v_2^2\cos^2\phi + 2v_1 v_2\cos\theta\cos\phi$.
-
-Setting equal to the KE equation:
-
-$v_1^2\cos^2\theta + v_2^2\cos^2\phi + 2v_1 v_2\cos\theta\cos\phi = v_1^2 + v_2^2$
-
-$v_1^2\sin^2\theta + v_2^2\sin^2\phi = 2v_1 v_2\cos\theta\cos\phi$
-
-From the $y$-equation: $v_2 = v_1\sin\theta / \sin\phi$. Substituting and simplifying yields:
+From the $x$-momentum equation squared and using the $y$-equation, we obtain:
 
 $\cos\theta\cos\phi = \sin\theta\sin\phi \implies \cos(\theta + \phi) = 0 \implies \theta + \phi = 90^\circ$.
 
@@ -276,6 +321,35 @@ forces during the brief collision):
 $$
 \vec{v}_{\text{cm}} = \frac{m_1 \vec{v}_1 + m_2 \vec{v}_2}{m_1 + m_2} = \text{constant}
 $$
+
+### Center of Mass Frame
+
+Transforming to the center of mass frame simplifies collision analysis. In this frame, the total
+momentum is zero. Before the collision, the particles approach each other; after the collision, they
+move apart. For an elastic collision, the speeds are unchanged but the directions may be different.
+
+## Rocket Propulsion (AP Physics C)
+
+A rocket expels mass at a rate $\frac{dm}{dt} = -\alpha$ (where $\alpha \gt 0$) with exhaust
+velocity $v_e$ relative to the rocket. By conservation of momentum:
+
+$$
+m\frac{dv}{dt} = -v_e \frac{dm}{dt} = \alpha v_e
+$$
+
+This is the **Tsiolkovsky rocket equation**. Integrating gives:
+
+$$
+\Delta v = v_e \ln\frac{m_0}{m_f}
+$$
+
+where $m_0$ is the initial mass and $m_f$ is the final mass.
+
+### Why Rockets Work in a Vacuum
+
+Rockets do not "push against" the air or the ground. They work by conservation of momentum: the
+rocket expels mass backward, and the rocket moves forward. The expelled gas carries momentum in one
+direction, and the rocket acquires equal and opposite momentum. This works equally well in a vacuum.
 
 ## Common Pitfalls
 
@@ -320,3 +394,10 @@ $$
 8. Two identical balls collide. One was moving at $5.0 \text{ m/s}$ and the other was stationary.
    After the collision, one ball moves at $30^\circ$ above the original direction. Find the speeds
    and direction of both balls after the collision (assume elastic).
+
+9. A force $F(t) = 6t^2 - 2t$ (in N, with $t$ in s) acts on a $3.0 \text{ kg}$ object initially at
+   rest. Find the impulse from $t = 0$ to $t = 4.0 \text{ s}$ and the velocity at
+   $t = 4.0 \text{ s}$.
+
+10. A flat disk of mass $M$ and radius $R$ has a small hole of mass $m$ removed at a distance $r$
+    from the center. Find the center of mass of the remaining object.

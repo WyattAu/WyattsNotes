@@ -23,6 +23,12 @@ Physics syllabus.
   water waves).
 - **Longitudinal waves:** oscillations are parallel to the direction of propagation (e.g., sound).
 
+### Why the Distinction Matters
+
+Only transverse waves can be polarised. Sound cannot be polarised because it is longitudinal. The
+fact that light can be polarised (by Polaroid filters) was historically important evidence that
+light is a transverse wave, not a longitudinal one as Newton had believed.
+
 ### Wave Terminology (OL/HL)
 
 | Term                   | Definition                                       |
@@ -45,12 +51,29 @@ $$
 v = 200 \times 1.5 = 300\text{ m/s}
 $$
 
+### Derivation of the Wave Equation
+
+In one period $T$, each wavefront travels a distance of one wavelength $\lambda$. Therefore:
+
+$$
+v = \frac{\text{distance}}{\text{time}} = \frac{\lambda}{T} = \lambda f
+$$
+
+This is exact for any periodic wave. It implies that frequency and wavelength are inversely
+proportional for a given wave speed.
+
 ## Reflection and Refraction
 
 ### Laws of Reflection (OL/HL)
 
 1. The incident ray, reflected ray, and normal all lie in the same plane.
 2. The angle of incidence equals the angle of reflection: $\theta_i = \theta_r$.
+
+### Why Reflection Obeys the Law
+
+Huygens' principle: every point on a wavefront acts as a source of secondary wavelets. The envelope
+of these wavelets forms the reflected wavefront. Geometry dictates that the angle of reflection
+equals the angle of incidence.
 
 ### Snell's Law of Refraction (OL/HL)
 
@@ -71,6 +94,12 @@ $$
 \sin\theta_2 = \frac{0.5}{1.5} = \frac{1}{3} \implies \theta_2 \approx 19.5°
 $$
 
+### Why Frequency Does Not Change During Refraction
+
+The rate at which wavefronts arrive at the boundary must equal the rate at which they leave.
+Otherwise, wavefronts would pile up or gaps would appear. Since $v = f\lambda$ and $f$ is constant,
+a decrease in speed produces a proportional decrease in wavelength.
+
 ### Total Internal Reflection (HL)
 
 When light travels from a denser to a less dense medium, the critical angle $\theta_c$ is given by:
@@ -90,7 +119,15 @@ $$
 ### Optical Fibres (HL)
 
 Optical fibres use total internal reflection to transmit light signals. Light enters the fibre and
-reflects off the walls, travelling along the fibre with minimal loss.
+reflects off the walls, travelling along the fibre with minimal loss. Applications include
+telecommunications (high bandwidth, low signal loss over long distances) and medicine (endoscopes).
+
+### Why Total Internal Reflection Only Occurs Denser to Less Dense
+
+The refracted ray bends away from the normal as the wave speeds up. At the critical angle, the
+refracted ray travels along the boundary ($\theta_2 = 90°$). Beyond this angle, there is nowhere for
+the refracted ray to go, so all the light is reflected. When going from less dense to more dense,
+the refracted ray always bends toward the normal and there is no critical angle.
 
 ## Diffraction (OL/HL)
 
@@ -99,12 +136,27 @@ Diffraction is the spreading of waves when they pass through a gap or around an 
 - Maximum diffraction occurs when the gap width is approximately equal to the wavelength.
 - Diffraction is more pronounced for longer wavelengths.
 
+### Why Diffraction Depends on Gap Size Relative to Wavelength
+
+By Huygens' principle, every point on a wavefront acts as a source of secondary wavelets. If the gap
+is much wider than the wavelength, most of the wavefront passes through undisturbed, and only the
+edges show significant spreading. If the gap is comparable to the wavelength, the secondary wavelets
+from all parts of the gap overlap significantly, producing broad spreading.
+
 ### Single Slit Diffraction (HL)
 
 For light of wavelength $\lambda$ passing through a slit of width $a$:
 
 - The central maximum has angular half-width $\sin\theta = \frac{\lambda}{a}$.
 - Minima occur at $a\sin\theta = n\lambda$ for $n = 1, 2, 3, \ldots$
+
+### Intensity Pattern
+
+The intensity distribution for single-slit diffraction is:
+
+$$I(\theta) = I_0 \left(\frac{\sin\beta}{\beta}\right)^2, \quad \text{where } \beta = \frac{\pi a\sin\theta}{\lambda}$$
+
+The central maximum is the brightest, and the secondary maxima decrease rapidly in intensity.
 
 ## Interference (HL)
 
@@ -152,6 +204,13 @@ $$
 \Delta x = \frac{600 \times 10^{-9} \times 1.5}{0.5 \times 10^{-3}} = \frac{9 \times 10^{-7}}{5 \times 10^{-4}} = 1.8 \times 10^{-3}\text{ m} = 1.8\text{ mm}
 $$
 
+### Why Coherence Is Necessary
+
+Interference requires a constant phase relationship between the two sources. Two independent light
+sources are not coherent: the phase difference between them changes randomly due to the independent
+emission of photons from different atoms. This is why Young's slits must be illuminated by the
+_same_ source (one slit, then two narrow slits).
+
 ### Diffraction Grating (HL)
 
 A diffraction grating has $N$ slits per unit length. The slit spacing is $d = \frac{1}{N}$.
@@ -162,7 +221,7 @@ $$
 d\sin\theta = n\lambda
 $$
 
-The number of maxima visible is limited by $|\sin\theta| \leq 1$.
+The number of maxima visible is limited by $|\sin\theta| \le 1$.
 
 **Example (HL):** A grating has 500 lines per mm. Light of wavelength $580\text{ nm}$ is incident
 normally. Find the angles of the first and second order maxima.
@@ -194,6 +253,13 @@ Fourth order: $\sin\theta = 1.16$ -- not possible. So only 3 orders are visible 
 
 All EM waves travel at $c = 3 \times 10^8\text{ m/s}$ in a vacuum.
 
+### Why Higher Frequency EM Waves Are More Energetic
+
+The energy of a photon is $E = hf$. Higher frequency means higher energy per photon. This is why
+gamma rays (very high frequency) are extremely dangerous: each photon carries enough energy to break
+chemical bonds and damage DNA. Radio photons have such low energy that they are harmless to
+biological tissue.
+
 ## Sound Waves
 
 ### Properties of Sound (OL/HL)
@@ -201,6 +267,12 @@ All EM waves travel at $c = 3 \times 10^8\text{ m/s}$ in a vacuum.
 - Sound is a longitudinal wave requiring a medium.
 - Speed of sound in air at $20°\text{C}$: approximately $343\text{ m/s}$.
 - Frequency range of human hearing: $20\text{ Hz}$ to $20,000\text{ Hz}$.
+
+### Why Sound Cannot Travel Through a Vacuum
+
+Sound is a mechanical wave: it propagates by particles colliding with their neighbours. In a vacuum,
+there are no particles, so the disturbance cannot propagate. Light (an electromagnetic wave) does
+not require a medium, which is why we can see the Sun but cannot hear it.
 
 ### Intensity (HL)
 
@@ -219,6 +291,22 @@ $$
 $$
 
 where $I_0 = 10^{-12}\text{ W/m}^2$ (threshold of hearing).
+
+**Example (HL):** A sound has intensity level $75\text{ dB}$. Find its intensity.
+
+$$
+75 = 10\log_{10}\left(\frac{I}{10^{-12}}\right) \implies \frac{I}{10^{-12}} = 10^{7.5}
+$$
+
+$$
+I = 10^{7.5} \times 10^{-12} = 10^{-4.5} = 3.16 \times 10^{-5}\text{ W/m}^2
+$$
+
+### Why the Decibel Scale
+
+The human ear can detect intensities spanning $10^{12}$. A linear scale would require numbers from 1
+to a trillion. The logarithmic decibel scale compresses this range to 0--120 dB, which is far more
+manageable. A 3 dB increase corresponds to a doubling of intensity.
 
 ## Doppler Effect (HL)
 
@@ -244,6 +332,13 @@ $$
 f' = 800 \times \frac{343}{343 - 30} = 800 \times \frac{343}{313} \approx 877\text{ Hz}
 $$
 
+### Applications of the Doppler Effect
+
+- **Radar speed guns:** measure the frequency shift of reflected microwaves from moving vehicles.
+- **Astronomy:** redshift of light from distant galaxies indicates they are moving away (Hubble's
+  law).
+- **Medical ultrasound:** the Doppler effect is used to measure blood flow velocity.
+
 ## Common Pitfalls
 
 1. **Mixing up diffraction and interference** -- diffraction is spreading; interference is
@@ -253,6 +348,10 @@ $$
 4. **Doppler effect** -- the source moving towards gives a higher frequency, moving away gives
    lower.
 5. **Total internal reflection** -- only occurs when going from denser to less dense medium.
+6. **Forgetting that the fringe spacing formula assumes small angles.** For large angles, use
+   $d\sin\theta = n\lambda$ directly.
+7. **Confusing amplitude and frequency** -- amplitude determines loudness; frequency determines
+   pitch.
 
 ## Practice Questions
 
@@ -273,3 +372,22 @@ $$
 3. A car horn has frequency 440 Hz. The car approaches at $25\text{ m/s}$. Find the frequency heard
    by a stationary observer (speed of sound $= 343\text{ m/s}$).
 4. Find the critical angle for light going from diamond ($n = 2.42$) to air.
+
+5. A single slit of width $0.1\text{ mm}$ is illuminated with light of wavelength $500\text{ nm}$.
+   Calculate the angular width of the central maximum and the angles of the first two minima.
+
+6. The first-order maximum for a diffraction grating occurs at $17.5°$ for light of wavelength
+   $590\text{ nm}$. Calculate the number of lines per mm on the grating.
+
+7. A sound of intensity $5.0 \times 10^{-6}\text{ W/m}^2$ has an intensity level of $67\text{ dB}$.
+   Calculate the intensity level of a sound that is 1000 times more intense.
+
+8. Explain why two independent light bulbs cannot produce a stable interference pattern, even though
+   they emit the same frequency.
+
+9. A police speed gun uses microwaves of frequency $24.15\text{ GHz}$ reflected from a car
+   approaching at $30\text{ m/s}$. Calculate the observed frequency shift.
+
+10. An optical fibre has a core of refractive index 1.50 and cladding of refractive index 1.45. Find
+    the critical angle for light travelling from core to cladding, and explain why this angle
+    ensures total internal reflection.

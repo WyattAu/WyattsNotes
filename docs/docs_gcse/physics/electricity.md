@@ -54,7 +54,17 @@ where $W$ is energy transferred in joules (J).
 **Resistance ($R$)** is a measure of how much a component opposes the flow of current. It is
 measured in ohms ($\Omega$).
 
-### 1.3 Ohm's Law
+### 1.3 What Current Actually Is
+
+In a metal wire, current is the flow of free (delocalised) electrons. The number of electrons
+passing a point per second is enormous: even a current of 1 A corresponds to about
+$6.25 \times
+10^{18}$ electrons per second. The drift velocity of these electrons is surprisingly
+slow -- typically about 0.1 mm/s in a copper wire carrying 1 A. The signal (the electric field that
+drives the electrons) propagates at nearly the speed of light, which is why a light turns on
+essentially instantly when you flip the switch, even though the individual electrons move slowly.
+
+### 1.4 Ohm's Law
 
 **Ohm's law:** For a conductor at constant temperature, the current is directly proportional to the
 potential difference.
@@ -69,6 +79,14 @@ $$I = \frac{V}{R} = \frac{12}{4} = 3 \text{ A}$$
 potential difference across it.
 
 $$V = IR = 0.5 \times 60 = 30 \text{ V}$$
+
+### 1.5 Why Ohm's Law Is Not a Universal Law
+
+Ohm's law applies only to ohmic conductors (typically metals at constant temperature). Many
+components do not obey Ohm's law: a filament lamp has increasing resistance with current (because
+the filament heats up), a diode only conducts in one direction, and a thermistor changes resistance
+with temperature. The term "law" is historical; it is better thought of as a property of certain
+materials under certain conditions.
 
 ## 2. Series and Parallel Circuits
 
@@ -103,7 +121,14 @@ total resistance.
 $$\frac{1}{R_{\text{total}}} = \frac{1}{6} + \frac{1}{12} = \frac{2 + 1}{12} = \frac{3}{12} = \frac{1}{4}$$
 $$R_{\text{total}} = 4 \text{ } \Omega$$
 
-### 2.3 Combined Series and Parallel
+### 2.3 Why Parallel Resistance Is Always Less Than the Smallest Individual Resistance
+
+Adding a parallel branch provides an additional path for current to flow. More paths means less
+total opposition to current, so the total resistance decreases. In the extreme case, adding a
+parallel branch with zero resistance (a short circuit) makes the total resistance zero, and all
+current flows through the short.
+
+### 2.4 Combined Series and Parallel
 
 **Worked Example.** A 3 $\Omega$ resistor is in series with a parallel combination of 6 $\Omega$ and
 12 $\Omega$ resistors. Find the total resistance.
@@ -111,6 +136,12 @@ $$R_{\text{total}} = 4 \text{ } \Omega$$
 Parallel combination: $R_p = 4 \text{ } \Omega$ (from above).
 
 Total: $R_{\text{total}} = 3 + 4 = 7 \text{ } \Omega$.
+
+### 2.5 Why Adding Resistors in Series Increases Total Resistance
+
+Each additional series resistor adds more opposition to the flow of current. The electrons must pass
+through every resistor in turn, so the total resistance is the sum of all individual resistances.
+This is analogous to adding length to a pipe: a longer pipe offers more resistance to fluid flow.
 
 ## 3. Circuit Components
 
@@ -125,7 +156,16 @@ resistance. This is a non-ohmic component.
 **Diode:** Current flows in one direction only. In the forward direction, current is zero until the
 threshold p.d. (about 0.6 V for a silicon diode) is reached.
 
-### 3.2 Thermistors and LDRs
+### 3.2 Why the Filament Lamp Curve Bends
+
+As current flows through the filament, the power dissipated ($P = I^2R$) heats the filament. The
+resistance of a metal increases with temperature (because the ions vibrate more vigorously and
+scatter the conduction electrons more frequently). So as the current increases, the temperature
+rises, the resistance rises, and the graph of $I$ against $V$ curves away from the straight line. At
+higher voltages, the same increase in voltage produces a smaller increase in current than at lower
+voltages.
+
+### 3.3 Thermistors and LDRs
 
 **Thermistor (NTC):** Resistance decreases as temperature increases.
 
@@ -137,7 +177,14 @@ $$R \propto \frac{1}{T}$$
 
 **Applications:** Automatic night lights, burglar alarms, light meters.
 
-### 3.3 Required Practical: I-V Characteristics
+### 3.4 Why LDRs and Thermistors Are Useful
+
+These components convert a non-electrical quantity (light intensity, temperature) into an electrical
+quantity (resistance). This allows a circuit to respond to changes in the environment. A potential
+divider containing an LDR, for example, produces an output voltage that varies with light level,
+which can be used to switch a light on automatically at dusk.
+
+### 3.5 Required Practical: I-V Characteristics
 
 **Method:**
 
@@ -166,7 +213,15 @@ power dissipated.
 
 $$P = I^2R = 4 \times 12 = 48 \text{ W}$$
 
-### 4.3 Domestic Electricity
+### 4.3 Why $P = I^2R$ and $P = V^2/R$ Give the Same Answer
+
+Starting from $P = IV$ and substituting $V = IR$ gives $P = I(IR) = I^2R$. Substituting $I = V/R$
+gives $P = (V/R)V = V^2/R$. These are not different formulas; they are the same formula expressed in
+terms of different pairs of variables. Use $P = I^2R$ when you know the current and resistance; use
+$P = V^2/R$ when you know the voltage and resistance; use $P = IV$ when you know the current and
+voltage.
+
+### 4.4 Domestic Electricity
 
 In the UK, mains electricity is supplied at approximately 230 V (AC, 50 Hz).
 
@@ -185,6 +240,22 @@ at 15 p per kWh.
 
 $$\text{Energy} = 2 \times 3 = 6 \text{ kWh}$$ $$\text{Cost} = 6 \times 15 = 90 \text{ pence}$$
 
+### 4.5 Why the National Grid Uses High Voltages
+
+Power dissipated in transmission cables is $P = I^2R$. For a given cable resistance $R$, the power
+loss is proportional to $I^2$. Since $P_{\text{transmitted}} = VI$, increasing $V$ allows $I$ to
+decrease for the same transmitted power. If the voltage is doubled, the current is halved, and the
+power loss is reduced to one-quarter. This is the entire reason for the national grid's
+step-up/step-down transformer system.
+
+**Worked Example.** A power station transmits 500 kW through cables of resistance 2 $\Omega$.
+
+At 10,000 V: $I = 500000/10000 = 50$ A. Power loss = $50^2 \times 2 = 5000$ W.
+
+At 250,000 V: $I = 500000/250000 = 2$ A. Power loss = $2^2 \times 2 = 8$ W.
+
+The higher voltage reduces losses by a factor of 625.
+
 ## 5. Mains Electricity and Safety
 
 ### 5.1 AC and DC
@@ -195,7 +266,19 @@ $$\text{Energy} = 2 \times 3 = 6 \text{ kWh}$$ $$\text{Cost} = 6 \times 15 = 90 
 a frequency of 50 Hz and a peak voltage of about 325 V (giving an RMS voltage of approximately 230
 V).
 
-### 5.2 Cables and Plugs
+### 5.2 RMS Voltage and Peak Voltage
+
+The root-mean-square (RMS) voltage of an AC supply is the DC voltage that would deliver the same
+average power to a resistor.
+
+$$V_{\text{rms}} = \frac{V_{\text{peak}}}{\sqrt{2}}$$
+
+For the UK mains: $V_{\text{peak}} = 230 \times \sqrt{2} \approx 325$ V. When we say the mains
+voltage is 230 V, we mean the RMS voltage. The peak voltage (the maximum instantaneous voltage) is
+325 V. This matters for insulation ratings: insulation must withstand the peak voltage, not the RMS
+voltage.
+
+### 5.3 Cables and Plugs
 
 A standard UK three-pin plug has:
 
@@ -203,7 +286,14 @@ A standard UK three-pin plug has:
 - **Neutral wire (blue):** Completes the circuit at 0 V
 - **Earth wire (green and yellow):** Safety wire that carries current to earth if a fault occurs
 
-### 5.3 Fuses and Circuit Breakers
+### 5.4 Why the Earth Wire Is a Safety Feature
+
+If a metal-cased appliance develops a fault (for example, a live wire touches the metal casing), the
+earth wire provides a low-resistance path to earth. A large current flows, which blows the fuse or
+trips the circuit breaker, disconnecting the appliance before anyone touches the live casing.
+Without the earth wire, the casing would remain live, and touching it could be fatal.
+
+### 5.5 Fuses and Circuit Breakers
 
 **Fuse:** A thin wire that melts and breaks the circuit if the current exceeds a certain value.
 Always choose a fuse with a rating slightly higher than the normal operating current.
@@ -211,7 +301,12 @@ Always choose a fuse with a rating slightly higher than the normal operating cur
 **Circuit breaker:** An electromagnetic switch that trips when the current is too high. Can be
 reset, unlike a fuse.
 
-### 5.4 Electrical Hazards
+**Residual Current Device (RCD):** Compares the current in the live and neutral wires. If they
+differ (current is leaking to earth, perhaps through a person), the RCD trips in milliseconds, far
+faster than a fuse. Required in modern installations for circuits supplying sockets that may be used
+outdoors.
+
+### 5.6 Electrical Hazards
 
 | Hazard         | Cause                               | Prevention                                      |
 | -------------- | ----------------------------------- | ----------------------------------------------- |
@@ -257,6 +352,39 @@ The drum inside the photocopier is given a charge. Light is shone onto the docum
 reflected light discharges specific areas of the drum. Toner (charged powder) sticks only to the
 discharged areas. The toner is then transferred to paper and heated to fix it in place.
 
+### 6.4 Electrostatic Precipitators
+
+Industrial electrostatic precipitators remove particulate matter from exhaust gases. The gas passes
+through a grid of wires maintained at a high voltage. The wires ionise the air, charging the dust
+particles. The charged particles are then attracted to oppositely charged plates, where they collect
+and can be removed. This is how power stations reduce particulate pollution.
+
+## 7. Internal Resistance (Higher Tier)
+
+### 7.1 Concept
+
+A real battery has **internal resistance** $r$, which causes energy to be dissipated inside the
+battery itself when current flows. The terminal p.d. is less than the EMF:
+
+$$V = \varepsilon - Ir$$
+
+where $\varepsilon$ is the EMF (the total energy per unit charge supplied by the battery).
+
+### 7.2 Why Internal Resistance Matters
+
+As the current drawn from a battery increases, the voltage lost across the internal resistance
+($Ir$) increases, and the terminal voltage decreases. A car battery has very low internal resistance
+(about 0.01 $\Omega$) so it can deliver the large current needed to start the engine without the
+voltage dropping too much. A school power supply has higher internal resistance to limit the maximum
+current and protect the components.
+
+**Worked Example.** A battery of EMF 9 V and internal resistance 0.5 $\Omega$ is connected to a 4
+$\Omega$ resistor. Find the current and terminal voltage.
+
+$$I = \frac{\varepsilon}{R + r} = \frac{9}{4 + 0.5} = \frac{9}{4.5} = 2 \text{ A}$$
+
+$$V = \varepsilon - Ir = 9 - 2 \times 0.5 = 8 \text{ V}$$
+
 ## Common Pitfalls
 
 - **Confusing series and parallel circuit rules.** Current adds in parallel; resistance adds in
@@ -269,6 +397,12 @@ discharged areas. The toner is then transferred to paper and heated to fix it in
 - **Confusing the live and neutral wires.** The live wire is at the supply voltage; the neutral wire
   is at approximately 0 V.
 - **Forgetting to convert units** (kW to W, hours to seconds) in energy calculations.
+- **Assuming the total resistance in parallel is the sum of individual resistances.** It is the
+  reciprocal of the sum of reciprocals.
+- **Confusing EMF and terminal p.d.** EMF is the total energy per unit charge supplied; terminal
+  p.d. is what is available to the external circuit (EMF minus internal losses).
+- **Measuring current with a voltmeter or voltage with an ammeter.** Ammeters measure current and
+  are placed in series; voltmeters measure potential difference and are placed in parallel.
 
 ## Practice Questions
 
@@ -299,3 +433,19 @@ discharged areas. The toner is then transferred to paper and heated to fix it in
 
 10. Describe how static electricity is used in a spray paint gun, explaining the role of electric
     fields.
+
+11. A battery of EMF 12 V and internal resistance 1.5 $\Omega$ is connected to an external circuit.
+    The terminal p.d. is 10.5 V. Calculate the current and the external resistance.
+
+12. A 3 $\Omega$ resistor and a 6 $\Omega$ resistor are connected in parallel, and this combination
+    is connected in series with a 2 $\Omega$ resistor to a 12 V supply. Calculate the current
+    through each resistor and the power dissipated in each.
+
+13. Explain the difference between a fuse and a circuit breaker. State one advantage of each.
+
+14. A hairdryer rated at 2000 W is connected to the 230 V mains. Calculate the current it draws.
+    Explain why it is important not to use an extension lead rated for 5 A with this appliance.
+
+15. Two identical resistors of resistance $R$ are connected first in series and then in parallel to
+    the same battery. Show that the ratio of the power dissipated in the parallel arrangement to the
+    power dissipated in the series arrangement is 4:1.

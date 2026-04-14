@@ -55,6 +55,12 @@ $$
 a_{\text{total}} = \sqrt{a_t^2 + a_c^2}
 $$
 
+### The Analogy Between Linear and Rotational Kinematics
+
+Every linear kinematic equation has a direct rotational analogue. Replace $x$ with $\theta$, $v$
+with $\omega$, and $a$ with $\alpha$. This is not a coincidence: it reflects the fact that rotation
+is a one-dimensional motion in the angular coordinate. The mathematics is identical.
+
 :::info[Example]
 
 A wheel starts from rest and accelerates at $2.0 \text{ rad/s}^2$ for $5.0 \text{ s}$. Find the
@@ -89,6 +95,14 @@ $$
 I = \int r^2\, dm
 $$
 
+### Why the Moment of Inertia Depends on the Axis
+
+Mass is a scalar, but moment of inertia depends on how the mass is distributed _relative to the axis
+of rotation_. A rod rotated about its center has $I = \frac{1}{12}ML^2$, but the same rod rotated
+about one end has $I = \frac{1}{3}ML^2$ -- four times larger. The same physical object can have
+different moments of inertia depending on the axis. This has no linear analogue: mass is mass,
+regardless of the direction of motion.
+
 ### Common Moments of Inertia
 
 | Object                          | Axis                         | Moment of Inertia  |
@@ -101,6 +115,19 @@ $$
 | Hollow sphere, radius $R$       | Diameter                     | $\frac{2}{3}MR^2$  |
 | Point mass $m$ at distance $r$  | --                           | $mr^2$             |
 
+### Derivation: Moment of Inertia of a Solid Cylinder
+
+Consider a solid cylinder of mass $M$, radius $R$, and length $L$, rotating about its central axis.
+Divide the cylinder into thin cylindrical shells of radius $r$ and thickness $dr$.
+
+$$
+dm = \frac{M}{\pi R^2 L} \cdot 2\pi r L\, dr = \frac{2M}{R^2} r\, dr
+$$
+
+$$
+I = \int_0^R r^2\, dm = \int_0^R r^2 \frac{2M}{R^2} r\, dr = \frac{2M}{R^2} \int_0^R r^3\, dr = \frac{2M}{R^2} \cdot \frac{R^4}{4} = \frac{1}{2}MR^2
+$$
+
 ### Parallel Axis Theorem
 
 $$
@@ -108,6 +135,24 @@ I = I_{\text{cm}} + Md^2
 $$
 
 where $d$ is the distance from the center of mass to the new axis.
+
+### Proof of the Parallel Axis Theorem
+
+Consider a body rotating about an axis parallel to an axis through the center of mass, at distance
+$d$. Let $r_i$ be the distance from the CM axis to mass element $m_i$, and $R_i$ be the distance
+from the new axis. Then $R_i^2 = r_i^2 + d^2 - 2r_i d\cos\phi_i$.
+
+$$
+I = \sum m_i R_i^2 = \sum m_i r_i^2 + \sum m_i d^2 - 2d \sum m_i r_i \cos\phi_i
+$$
+
+The last term is zero because the CM is at the origin: $\sum m_i r_i \cos\phi_i = 0$.
+
+$$
+I = I_{\text{cm}} + Md^2
+$$
+
+$\blacksquare$
 
 :::info[Example]
 
@@ -193,6 +238,16 @@ $$
 mgh_i + \frac{1}{2}mv_i^2 + \frac{1}{2}I\omega_i^2 = mgh_f + \frac{1}{2}mv_f^2 + \frac{1}{2}I\omega_f^2
 $$
 
+### Why Hollow Objects Roll Slower Than Solid Ones
+
+A hollow cylinder has $I = MR^2$, so its kinetic energy is split as
+$K = \frac{1}{2}Mv^2 +
+\frac{1}{2}(MR^2)(v/R)^2 = Mv^2$. Half the energy goes to translation and half
+to rotation. A solid cylinder has $I = \frac{1}{2}MR^2$, so
+$K = \frac{1}{2}Mv^2 + \frac{1}{4}Mv^2 =
+\frac{3}{4}Mv^2$. More energy goes to translation, so the
+solid cylinder moves faster.
+
 :::info[Example]
 
 A solid sphere of mass $M$ and radius $R$ rolls without slipping from rest down an incline of height
@@ -260,6 +315,13 @@ $$
 $$
 
 :::
+
+### Why Angular Momentum Is a Vector
+
+Angular momentum is a vector pointing along the axis of rotation, with direction given by the
+right-hand rule. Conservation of angular momentum applies to each component separately. This is why
+a spinning top precesses: gravity exerts a torque that changes the direction (but not the magnitude)
+of the angular momentum vector.
 
 ## Torque and the Cross Product (AP Physics C)
 
@@ -330,6 +392,10 @@ $$
 6. **Sign errors with torque.** Be consistent with the sign convention (CCW positive, CW negative).
 7. **Assuming angular momentum is conserved when external torques act.** Conservation requires zero
    net external torque.
+8. **Confusing moment of inertia with mass.** Mass is a scalar; moment of inertia depends on the
+   axis.
+9. **Using the wrong radius in $v = R\omega$.** $R$ is the radius of the rolling object, not the
+   radius of the incline or the path.
 
 ## Practice Questions
 
@@ -358,3 +424,11 @@ $$
    bottom.
 
 8. Derive the parallel axis theorem from the definition of moment of inertia.
+
+9. A solid sphere rolls without slipping up a $20^\circ$ incline. If its initial speed is
+   $5.0 \text{ m/s}$, how far up the incline does it travel before stopping and rolling back?
+
+10. A flywheel of moment of inertia $50 \text{ kg} \cdot \text{m}^2$ rotating at $300 \text{ rpm}$
+    is brought to rest by a constant frictional torque of $10 \text{ N} \cdot \text{m}$ in
+    $785 \text{ s}$. Verify this using the rotational impulse equation, and calculate the angle
+    through which the flywheel rotates while stopping.

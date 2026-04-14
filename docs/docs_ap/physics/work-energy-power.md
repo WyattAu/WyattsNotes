@@ -27,15 +27,32 @@ where $\theta$ is the angle between the force and the displacement.
 - $\theta = 90^\circ$: $W = 0$ (force perpendicular to motion)
 - $\theta = 180^\circ$: $W = -Fd$ (force opposes motion)
 
+### Why the Dot Product
+
+Work is a scalar, not a vector. It is the component of the force _along the direction of motion_
+that does work. The perpendicular component changes the direction of motion but does not transfer
+energy. This is why the normal force does no work on an object sliding along a surface, and why the
+centripetal force does no work on an object in uniform circular motion.
+
 ### Work by a Variable Force (AP Physics C)
 
 $$
 W = \int_a^b F(x)\, dx
 $$
 
+The work done by a variable force equals the area under the force-vs-displacement curve.
+
 ### Units
 
 1 Joule (J) = $1 \text{ N} \cdot \text{m} = 1 \text{ kg} \cdot \text{m}^2/\text{s}^2$
+
+### Dimensional Analysis of the Joule
+
+From $W = Fd$:
+$[W] = \text{N} \cdot \text{m} = (\text{kg} \cdot \text{m/s}^2) \cdot \text{m} =
+\text{kg} \cdot \text{m}^2/\text{s}^2$.
+This is the same as the dimensions of kinetic energy $\frac{1}{2}mv^2$, confirming that work and
+energy are the same physical quantity.
 
 :::info[Example]
 
@@ -46,19 +63,9 @@ force and the net work.
 **Applied force:**
 $W_F = Fd\cos\theta = 50 \times 4.0 \times \cos(-30^\circ) = 50 \times 4.0 \times 0.866 = 173.2 \text{ J}$
 
-**Normal force:** First find $N$.
+**Normal force:** $N = mg - F\sin 30^\circ = 50 - 25 = 25 \text{ N}$ (taking $mg = 50 \text{ N}$).
 
-$N + F\sin 30^\circ = mg \implies N = mg - F\sin 30^\circ = 50 - 25 = 25 \text{ N}$ (taking
-$mg = 50 \text{ N}$).
-
-Wait -- the problem says $F = 50 \text{ N}$, not $mg = 50 \text{ N}$. Let $mg$ be determined from
-$N = mg - 50\sin 30^\circ = mg - 25$.
-
-$W_f = -f_k d = -\mu_k N d = -0.3 \times (mg - 25) \times 4.0$.
-
-Since $mg$ is not given, assume $mg = 50 \text{ N}$ (so $N = 25 \text{ N}$):
-
-$W_f = -0.3 \times 25 \times 4.0 = -30 \text{ J}$
+**Friction:** $W_f = -f_k d = -\mu_k N d = -0.3 \times 25 \times 4.0 = -30 \text{ J}$
 
 **Gravity:** $W_g = 0$ (vertical force, horizontal displacement)
 
@@ -97,6 +104,14 @@ W_{\text{net}} = m\int_{v_i}^{v_f} v\, dv = m\left[\frac{v^2}{2}\right]_{v_i}^{v
 $$
 
 $\blacksquare$
+
+### Why the Work-Energy Theorem Is So Powerful
+
+The work-energy theorem connects the net force (a dynamic quantity) to the change in speed (a
+kinematic quantity) without requiring knowledge of the path taken. You do not need to know the
+acceleration, the time, or the detailed trajectory. You only need the initial and final speeds and
+the forces involved. This makes it far more efficient than using Newton's second law for many
+problems.
 
 :::info[Example]
 
@@ -139,11 +154,31 @@ $$
 U = -\frac{GMm}{r}
 $$
 
+### Why Gravitational PE Is Negative
+
+The choice $U = 0$ at $r = \infty$ is a convention, but a natural one. As two masses are brought
+together from infinity, gravity does positive work and the potential energy decreases below zero.
+The negative sign means that energy must be _supplied_ to separate the masses. A bound orbit has
+negative total energy; an unbound trajectory has positive total energy. The boundary between the two
+($E = 0$) corresponds to escape velocity.
+
 ### Conservative vs Non-Conservative Forces
 
 - **Conservative force:** Work done is path-independent; work around a closed loop is zero.
   Examples: gravity, spring force, electrostatic force.
 - **Non-conservative force:** Work depends on the path. Examples: friction, air resistance, tension.
+
+### Mathematical Criterion for Conservative Forces
+
+A force $\vec{F}$ is conservative if and only if:
+
+$$
+\oint \vec{F} \cdot d\vec{r} = 0
+$$
+
+for every closed path. Equivalently, the curl of $\vec{F}$ is zero: $\nabla \times \vec{F} = 0$. For
+one-dimensional motion, a force is conservative if and only if it depends only on position (not on
+velocity or time): $F = F(x)$.
 
 ## Conservation of Energy (CED Unit 4)
 
@@ -230,6 +265,14 @@ For a constant force: $P = Fv\cos\theta$.
 
 1 horsepower (hp) = 746 W
 
+### Instantaneous vs Average Power
+
+Average power: $P_{\text{avg}} = W/t = \Delta E / t$.
+
+Instantaneous power: $P(t) = \vec{F}(t) \cdot \vec{v}(t)$.
+
+When the force and velocity are not constant, average and instantaneous power differ.
+
 :::info[Example]
 
 A $1200 \text{ kg}$ car accelerates from rest to $25 \text{ m/s}$ in 8.0 s on a level road. If the
@@ -243,6 +286,14 @@ $$
 
 :::
 
+### Power at Constant Speed Up an Incline
+
+At constant speed, the driving force equals the component of weight down the slope plus friction:
+
+$$
+P = F_{\text{drive}} v = (mg\sin\theta + f)v
+$$
+
 ## Potential Energy Diagrams and Stability
 
 A potential energy diagram plots $U(x)$ vs $x$. From this, we can determine:
@@ -253,10 +304,32 @@ A potential energy diagram plots $U(x)$ vs $x$. From this, we can determine:
 - **Unstable equilibrium:** Local maximum of $U$ ($\frac{d^2U}{dx^2} \lt 0$)
 - **Neutral equilibrium:** Flat region of $U$
 
-### Total Energy
+### Why $F = -dU/dx$
+
+Consider a one-dimensional conservative force $F(x)$. The work done by this force from $x_1$ to
+$x_2$ is:
+
+$$
+W = \int_{x_1}^{x_2} F(x)\, dx
+$$
+
+By definition, the potential energy change is the negative of this work:
+
+$$
+\Delta U = U(x_2) - U(x_1) = -W = -\int_{x_1}^{x_2} F(x)\, dx
+$$
+
+Differentiating with respect to $x_2$:
+
+$$
+\frac{dU}{dx} = -F(x)
+$$
+
+### Total Energy on a Potential Energy Diagram
 
 On a potential energy diagram, the total energy $E = K + U$ is a horizontal line. The kinetic energy
-at any point is $K = E - U$. Motion is only possible where $K \ge 0$, i.e., $E \ge U$.
+at any point is $K = E - U$. Motion is only possible where $K \ge 0$, i.e., $E \ge U$. The object
+oscillates between the "turning points" where $E = U$ (and $K = 0$).
 
 ## Escape Velocity
 
@@ -268,6 +341,13 @@ $$
 $$
 
 For Earth: $v_e \approx 11.2 \text{ km/s}$.
+
+### Why Escape Velocity Is Independent of Mass
+
+Both the kinetic energy $\frac{1}{2}mv_e^2$ and the gravitational potential energy $GMm/R$ are
+proportional to $m$, so the mass cancels. A ping-pong ball and a spacecraft need the same escape
+velocity from the same point. This is a consequence of the equivalence of gravitational and inertial
+mass.
 
 ## Common Pitfalls
 
@@ -283,6 +363,9 @@ For Earth: $v_e \approx 11.2 \text{ km/s}$.
 6. **Using $U = mgh$ far from Earth's surface.** Use $U = -\frac{GMm}{r}$ instead.
 7. **Incorrectly computing power as force divided by time.** Power is work divided by time, or force
    times velocity.
+8. **Confusing the total energy with the mechanical energy.** Total energy includes thermal energy,
+   sound energy, and all other forms. Mechanical energy ($K + U$) is conserved only when
+   non-conservative forces do no work.
 
 ## Practice Questions
 
@@ -310,3 +393,10 @@ For Earth: $v_e \approx 11.2 \text{ km/s}$.
 
 8. Derive the relationship $F = -\frac{dU}{dx}$ from the work-energy theorem for one-dimensional
    motion.
+
+9. A force $F(x) = 3x^2 - 2x$ (in N, with $x$ in m) acts on a $2.0 \text{ kg}$ object. Find the work
+   done as the object moves from $x = 0$ to $x = 3.0 \text{ m}$, and the speed at $x = 3.0$ m if the
+   object started from rest.
+
+10. A potential energy function is given by $U(x) = x^4 - 2x^2$ (in J, with $x$ in m). Find all
+    equilibrium positions and classify each as stable, unstable, or neutral.

@@ -43,7 +43,13 @@ $s_3 = \frac{1}{2}(10 + 0)\left(\frac{10}{3}\right) = \frac{50}{3} \approx 16.67
 
 Total: $25 + 100 + 16.67 = 141.67 \text{ m}$
 
-### Circular Motion
+### Extracting Information from Graphs
+
+The gradient of a tangent to a curved displacement-time graph gives the instantaneous velocity at
+that point. The area under a velocity-time graph (even a curved one) gives the total displacement.
+For non-constant acceleration, count squares or use integration.
+
+## Circular Motion
 
 For an object moving in a circle of radius $r$ at speed $v$:
 
@@ -55,12 +61,43 @@ For an object moving in a circle of radius $r$ at speed $v$:
 
 This force always acts towards the centre of the circle.
 
+### Why the Centripetal Force Points Inward
+
+Newton's first law says an object continues in a straight line unless acted upon by a force. In
+circular motion, the object is continuously deflected from its straight-line path toward the centre.
+The force causing this deflection is the centripetal force. It is not a separate interaction; it is
+the _name_ for whatever force or combination of forces provides the net inward force (gravity for
+orbits, friction for a car on a roundabout, tension for a ball on a string).
+
+### Why Objects Released from Circular Motion Move Tangentially
+
+When the centripetal force is removed (the string breaks, friction is insufficient), the object
+continues in a straight line tangent to the circle at the point of release. This is Newton's first
+law: with no net force, the object continues with constant velocity. The velocity at the moment of
+release is tangential to the circle, so the object follows a tangent.
+
 **Example:** A car of mass $1200 \text{ kg}$ travels around a roundabout of radius $25 \text{ m}$ at
 $12 \text{ m/s}$. Find the centripetal force.
 
 $$F = \frac{mv^2}{r} = \frac{1200 \times 144}{25} = \frac{172800}{25} = 6912 \text{ N}$$
 
 This force is provided by friction between the tyres and the road.
+
+### Vertical Circular Motion
+
+At the top of a vertical circle, both weight and tension (or normal force) point toward the centre:
+
+$$F_c = mg + T = \frac{mv^2}{r}$$
+
+At the bottom, tension points toward the centre but weight points away:
+
+$$F_c = T - mg = \frac{mv^2}{r}$$
+
+The minimum speed at the top to maintain contact (when $T = 0$):
+
+$$v_{\min} = \sqrt{gr}$$
+
+### Orbital Motion and Satellites
 
 **Example:** A satellite orbits Earth at an altitude of $400 \text{ km}$ in a circular orbit. Given
 Earth's mass $M = 5.97 \times 10^{24} \text{ kg}$ and radius $R = 6.37 \times 10^6 \text{ m}$, find
@@ -76,13 +113,21 @@ $$v = \sqrt{\frac{3.983 \times 10^{14}}{6.77 \times 10^6}} = \sqrt{5.883 \times 
 
 $$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.77 \times 10^6}{7670} \approx 5544 \text{ s} \approx 92.4 \text{ min}$$
 
-### Gravitational Fields
+## Gravitational Fields
 
 **Newton's Law of Gravitation:**
 
 $$F = \frac{Gm_1 m_2}{r^2}$$
 
 where $G = 6.67 \times 10^{-11} \text{ N m}^2 \text{kg}^{-2}$.
+
+### Why Gravity Is an Inverse-Square Law
+
+Consider a point mass emitting gravitational field lines uniformly in all directions. The number of
+field lines crossing a sphere of radius $r$ is constant (the same lines cross every sphere centered
+on the mass). The flux density (field lines per unit area) is proportional to $1/r^2$, since the
+surface area of the sphere is $4\pi r^2$. Therefore, the gravitational field strength is
+proportional to $1/r^2$.
 
 **Gravitational Field Strength:**
 
@@ -94,7 +139,15 @@ At Earth's surface: $g \approx 9.8 \text{ N/kg}$.
 
 $$E_p = -\frac{GMm}{r}$$
 
-This is zero at infinity and negative for finite distances.
+This is zero at infinity and negative for finite distances. The negative sign means energy must be
+supplied to move masses apart.
+
+### Why Gravitational PE Is Negative
+
+The convention $U = 0$ at $r = \infty$ is natural because the gravitational force decreases to zero
+at infinity. As two masses are brought together from infinity, gravity does positive work and the
+potential energy decreases below zero. A bound orbit (like a planet around a star) has negative
+total energy.
 
 **Escape Velocity:**
 
@@ -124,6 +177,14 @@ $$4^1_1\text{H} \to ^4_2\text{He} + 2^0_{+1}\text{e} + 2\nu_e + \text{energy}$$
 - **High-mass stars** ($> 8$ solar masses): Main sequence $\to$ Red supergiant $\to$ Supernova $\to$
   Neutron star or Black hole
 
+### Why Massive Stars Have Shorter Lives
+
+A more massive star has a higher core temperature and pressure, so it burns its fuel much faster.
+Although it has more fuel, the rate of consumption increases more than proportionally with mass. A
+star of 10 solar masses may live only 20 million years, compared to 10 billion years for the Sun.
+The luminosity of a main-sequence star scales roughly as $L \propto M^{3.5}$, while the available
+fuel scales as $M$, so the lifetime scales as $M^{-2.5}$.
+
 ### The Hertzsprung-Russell Diagram
 
 The HR diagram plots luminosity (or absolute magnitude) against temperature (or spectral class).
@@ -150,15 +211,6 @@ This is in the visible spectrum (green-yellow).
 $$L = 4\pi r^2 \sigma T^4$$
 
 where $\sigma = 5.67 \times 10^{-8} \text{ W m}^{-2} \text{K}^{-4}$.
-
-**Example:** The Sun has luminosity $3.83 \times 10^{26} \text{ W}$ and surface temperature
-$5778 \text{ K}$. Find its radius.
-
-$$r = \sqrt{\frac{L}{4\pi\sigma T^4}} = \sqrt{\frac{3.83 \times 10^{26}}{4\pi \times 5.67 \times 10^{-8} \times (5778)^4}}$$
-
-$$= \sqrt{\frac{3.83 \times 10^{26}}{4\pi \times 5.67 \times 10^{-8} \times 1.115 \times 10^{15}}}$$
-
-$$= \sqrt{\frac{3.83 \times 10^{26}}{7.953 \times 10^{8}}} = \sqrt{4.815 \times 10^{17}} \approx 6.94 \times 10^8 \text{ m}$$
 
 ### Universal Gravitation and Orbits
 
@@ -242,3 +294,11 @@ $$t \approx \frac{1}{H_0} \approx 14 \text{ billion years}$$
    period.
 
 8. Compare and contrast the evolution of a star of 1 solar mass with a star of 15 solar masses.
+
+9. A ball of mass $0.5 \text{ kg}$ is attached to a string of length $1.0 \text{ m}$ and swung in a
+   vertical circle. Find the minimum speed at the top of the circle, and the tension in the string
+   at the bottom if the speed is $6 \text{ m/s}$ there.
+
+10. A geostationary satellite orbits at a height of $35,786 \text{ km}$ above Earth's equator.
+    Calculate its orbital speed and period, and explain why it remains above the same point on
+    Earth's surface.
