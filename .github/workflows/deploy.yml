@@ -46,6 +46,7 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=12288
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
+          DISABLE_LUNR: 'true'
 
       - name: Prepare artifact
         run: |
