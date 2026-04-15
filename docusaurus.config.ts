@@ -174,18 +174,8 @@ const config: Config = {
       },
       items: [
         { to: '/blog_release-notes', label: 'Release Notes', position: 'left' },
-        {
-          type: 'docSidebar',
-          sidebarId: 'infrastructureSidebar',
-          label: 'Infrastructure',
-          position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'toolsSidebar',
-          label: 'Tools',
-          position: 'left',
-        },
+        { to: '/docs/infrastructure/linux/intro', label: 'Infrastructure', position: 'left' },
+        { to: '/docs/tools/git/intro', label: 'Tools', position: 'left' },
         {
           href: 'https://academics.wyattsnotes.wyattau.com',
           label: 'Academics',
@@ -253,7 +243,7 @@ const config: Config = {
           items: [
             {
               label: 'C++',
-              href: 'https://programming.wyattsnotes.wyattau.com/docs/cpp/intro',
+              href: 'https://programming.wyattsnotes.wyattau.com/docs/cpp/0_intro',
             },
             {
               label: 'Java',
@@ -269,7 +259,7 @@ const config: Config = {
             },
             {
               label: 'Dart',
-              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/dart/intro',
+              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/dart/01-intro',
             },
           ],
         },

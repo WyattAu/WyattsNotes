@@ -193,11 +193,11 @@ const config: Config = {
         {
           title: 'Languages',
           items: [
-            { label: 'C++', to: '/docs/cpp/intro' },
+            { label: 'C++', to: '/docs/cpp/0_intro' },
             { label: 'Java', to: '/docs/languages/java/intro' },
             { label: 'Python', to: '/docs/languages/python/intro' },
             { label: 'Rust', to: '/docs/languages/rust/intro' },
-            { label: 'Dart', to: '/docs/languages/dart/intro' },
+            { label: 'Dart', to: '/docs/languages/dart/01-intro' },
           ],
         },
         {
