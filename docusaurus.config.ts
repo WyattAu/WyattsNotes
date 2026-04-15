@@ -412,23 +412,6 @@ const config: Config = {
         dark: 'rgb(50, 50, 50)',
       },
     },
-    webpack: {
-      configure: (config) => {
-        // With 540K+ lines of content across 8 plugins, webpack's source
-        // concatenation exceeds V8's max string length. Disable source maps
-        // and minimize concatenation to reduce peak string sizes.
-        config.devtool = false;
-        config.optimization.concatenateModules = false;
-        config.optimization.splitChunks = {
-          ...config.optimization.splitChunks,
-          max_size: 244000, // 244KB per chunk (V8 max SlicedString)
-          chunks: 'all',
-          minSize: 0,
-        };
-
-        return config;
-      },
-    },
   } satisfies Preset.ThemeConfig,
 };
 
