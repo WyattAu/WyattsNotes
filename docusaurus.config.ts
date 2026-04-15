@@ -442,6 +442,18 @@ const config: Config = {
         dark: 'rgb(50, 50, 50)',
       },
     },
+    webpack: {
+      configure: (config) => {
+        // With 709+ content files, webpack's RealContentHashPlugin exceeds V8's
+        // max string length when concatenating all sources. Disable it to allow
+        // the build to succeed. Content hashes are not critical for a documentation
+        // site where the deploy URL includes the commit hash.
+        if (config.optimization?.realContentHash !== undefined) {
+          config.optimization.realContentHash = false;
+        }
+        return config;
+      },
+    },
   } satisfies Preset.ThemeConfig,
 };
 
