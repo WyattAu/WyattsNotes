@@ -442,20 +442,6 @@ const config: Config = {
         dark: 'rgb(50, 50, 50)',
       },
     },
-    webpack: {
-      configure: (config) => {
-        // With 709+ content files, webpack's RealContentHashPlugin exceeds V8's
-        // max string length when concatenating all sources. Remove the plugin to
-        // allow the build to succeed.
-        config.optimization.removeAvailableModules = false;
-        config.plugins = config.plugins.filter(
-          (plugin: { constructor: { name: string } }) =>
-            plugin.constructor.name !== 'RealContentHashPlugin',
-        );
-
-        return config;
-      },
-    },
   } satisfies Preset.ThemeConfig,
 };
 
