@@ -1,8 +1,8 @@
 // @ts-check
-// Standalone Docusaurus config for the Qualifications sub-site.
-// Build: CONFIG_FILE=docusaurus.qualifications.config.ts pnpm run build
-// This config includes only the qualifications docs plugin to avoid the
-// RangeError: Invalid string length that occurs when all plugins are combined.
+// Docusaurus config for the Academics sub-site.
+// Build: pnpm run build -- --config docusaurus.academics.config.ts
+// Contains: IB, A-Level, DSE, GCSE, AP, Scottish Highers, Irish LC
+// Total: ~259K lines across 4 docs plugins.
 
 import remarkGridTable from '@adobe/remark-gridtables';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -60,13 +60,13 @@ const commonDocsPluginConfig = {
 };
 
 const config: Config = {
-  title: "Wyatt's Notes — Qualifications",
-  tagline: 'GCSE, AP, Scottish Highers, Irish Leaving Certificate',
+  title: "Wyatt's Notes — Academics",
+  tagline: 'IB, A-Level, DSE, GCSE, AP, Scottish Highers, Irish Leaving Certificate',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
-  url: 'https://qualifications.wyattsnotes.wyattau.com',
+  url: 'https://academics.wyattsnotes.wyattau.com',
   baseUrl: '/',
   organizationName: 'WyattAu',
-  projectName: 'WyattsNotes-Qualifications',
+  projectName: 'WyattsNotes',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -95,9 +95,39 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'ib-notes',
+        path: 'docs/docs_ib',
+        routeBasePath: '/docs/ib',
+        sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'alevel-notes',
+        path: 'docs/docs_alevel',
+        routeBasePath: '/docs/alevel',
+        sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dse-notes',
+        path: 'docs/docs_dse',
+        routeBasePath: '/docs/dse',
+        sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
+        ...commonDocsPluginConfig,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'qualifications-notes',
         path: 'docs/docs_qualifications',
-        routeBasePath: '/docs/academics/qualifications',
+        routeBasePath: '/docs/qualifications',
         sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
         ...commonDocsPluginConfig,
       },
@@ -145,6 +175,24 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'ibSidebar',
+          label: 'IB',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'alevelSidebar',
+          label: 'A-Levels',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'dseSidebar',
+          label: 'DSE',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'qualificationsSidebar',
           label: 'Qualifications',
           position: 'left',
@@ -152,6 +200,11 @@ const config: Config = {
         {
           href: 'https://wyattsnotes.wyattau.com',
           label: 'Main Site',
+          position: 'right',
+        },
+        {
+          href: 'https://programming.wyattsnotes.wyattau.com',
+          label: 'Programming',
           position: 'right',
         },
         {
@@ -170,24 +223,18 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Qualifications',
+          title: 'Exam Boards',
           items: [
-            {
-              label: 'GCSE',
-              to: '/docs/academics/qualifications/gcse/intro',
-            },
-            {
-              label: 'AP',
-              to: '/docs/academics/qualifications/ap/intro',
-            },
+            { label: 'IB', to: '/docs/ib/intro' },
+            { label: 'A-Levels', to: '/docs/alevel/intro' },
+            { label: 'DSE', to: '/docs/dse/intro' },
+            { label: 'GCSE', to: '/docs/qualifications/gcse/intro' },
+            { label: 'AP', to: '/docs/qualifications/ap/intro' },
             {
               label: 'Scottish Highers',
-              to: '/docs/academics/qualifications/highers/intro',
+              to: '/docs/qualifications/highers/intro',
             },
-            {
-              label: 'Irish LC',
-              to: '/docs/academics/qualifications/ilc/intro',
-            },
+            { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
           ],
         },
         {
@@ -196,6 +243,10 @@ const config: Config = {
             {
               label: 'Main Site',
               href: 'https://wyattsnotes.wyattau.com',
+            },
+            {
+              label: 'Programming',
+              href: 'https://programming.wyattsnotes.wyattau.com',
             },
             {
               label: 'GitHub',

@@ -1,4 +1,7 @@
 // @ts-check
+// Main Docusaurus config for wyattsnotes.wyattau.com.
+// Contains: Landing page, Release Notes blog, Infrastructure, Tools
+// Total: ~115K lines across 2 docs plugins.
 
 import remarkGridTable from '@adobe/remark-gridtables';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -54,7 +57,7 @@ const katexIgnoreNewLineWarning = {
       return 'ignore';
     }
 
-    return 'warn'; // Maintain default for other errors
+    return 'warn';
   },
 };
 
@@ -115,56 +118,6 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'ib-notes',
-        path: 'docs/docs_ib',
-        routeBasePath: '/docs/academics/ib',
-        sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'alevel-notes',
-        path: 'docs/docs_alevel',
-        routeBasePath: '/docs/academics/alevel',
-        sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'dse-notes',
-        path: 'docs/docs_dse',
-        routeBasePath: '/docs/academics/dse',
-        sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'cpp-notes',
-        path: 'docs/docs_cpp',
-        routeBasePath: '/docs/cpp',
-        sidebarPath: require.resolve('./sidebars/sidebar_cpp.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'languages-notes',
-        path: 'docs/docs_languages',
-        routeBasePath: '/docs/languages',
-        sidebarPath: require.resolve('./sidebars/sidebar_languages.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'infrastructure-notes',
         path: 'docs/docs_infrastructure',
         routeBasePath: '/docs/infrastructure',
@@ -182,26 +135,11 @@ const config: Config = {
         ...commonDocsPluginConfig,
       },
     ],
-    // docusaurus-lunr-search: indexDocs=true builds the search index at build time,
-    // consuming ~4GB+ heap. In CI, disable build-time indexing to stay within
-    // runner memory. Search still works at runtime (client-side index generation).
-    ...(process.env.DISABLE_LUNR !== 'true'
-      ? [
-          [
-            'docusaurus-lunr-search',
-            {
-              indexDocs: true,
-              indexBlog: true,
-              languages: ['en'],
-            },
-          ],
-        ]
-      : []),
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     [
       '@r74tech/docusaurus-plugin-panzoom',
       {
-        selector: '.mermaid svg', // Target Mermaid SVGs specifically
+        selector: '.mermaid svg',
       },
     ],
   ],
@@ -237,6 +175,28 @@ const config: Config = {
       items: [
         { to: '/blog_release-notes', label: 'Release Notes', position: 'left' },
         {
+          type: 'docSidebar',
+          sidebarId: 'infrastructureSidebar',
+          label: 'Infrastructure',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'toolsSidebar',
+          label: 'Tools',
+          position: 'left',
+        },
+        {
+          href: 'https://academics.wyattsnotes.wyattau.com',
+          label: 'Academics',
+          position: 'right',
+        },
+        {
+          href: 'https://programming.wyattsnotes.wyattau.com',
+          label: 'Programming',
+          position: 'right',
+        },
+        {
           type: 'search',
           position: 'right',
         },
@@ -260,31 +220,31 @@ const config: Config = {
           items: [
             {
               label: 'IB',
-              to: '/docs/academics/ib/intro',
+              href: 'https://academics.wyattsnotes.wyattau.com/docs/ib/intro',
             },
             {
               label: 'A-Levels',
-              to: '/docs/academics/alevel/intro',
+              href: 'https://academics.wyattsnotes.wyattau.com/docs/alevel/intro',
             },
             {
               label: 'DSE',
-              to: '/docs/academics/dse/intro',
+              href: 'https://academics.wyattsnotes.wyattau.com/docs/dse/intro',
             },
             {
               label: 'GCSE',
-              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/gcse/intro',
+              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/gcse/intro',
             },
             {
               label: 'AP',
-              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/ap/intro',
+              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/ap/intro',
             },
             {
               label: 'Scottish Highers',
-              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/highers/intro',
+              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/highers/intro',
             },
             {
               label: 'Irish LC',
-              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/ilc/intro',
+              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/ilc/intro',
             },
           ],
         },
@@ -293,33 +253,30 @@ const config: Config = {
           items: [
             {
               label: 'C++',
-              to: '/docs/cpp/intro',
+              href: 'https://programming.wyattsnotes.wyattau.com/docs/cpp/intro',
             },
             {
               label: 'Java',
-              to: '/docs/languages/java/intro',
+              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/java/intro',
             },
             {
               label: 'Python',
-              to: '/docs/languages/python/intro',
+              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/python/intro',
             },
             {
               label: 'Rust',
-              to: '/docs/languages/rust/intro',
+              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/rust/intro',
             },
             {
               label: 'Dart',
-              to: '/docs/languages/dart/intro',
+              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/dart/intro',
             },
           ],
         },
         {
           title: 'Infrastructure',
           items: [
-            {
-              label: 'Linux',
-              to: '/docs/infrastructure/linux/intro',
-            },
+            { label: 'Linux', to: '/docs/infrastructure/linux/intro' },
             {
               label: 'Networking',
               to: '/docs/infrastructure/networking/intro',
@@ -345,10 +302,7 @@ const config: Config = {
         {
           title: 'Tools',
           items: [
-            {
-              label: 'Git',
-              to: '/docs/tools/git/intro',
-            },
+            { label: 'Git', to: '/docs/tools/git/intro' },
             {
               label: 'Algorithms',
               to: '/docs/tools/algorithms/intro',
