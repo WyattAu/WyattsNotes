@@ -145,16 +145,6 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'qualifications-notes',
-        path: 'docs/docs_qualifications',
-        routeBasePath: '/docs/academics/qualifications',
-        sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'cpp-notes',
         path: 'docs/docs_cpp',
         routeBasePath: '/docs/cpp',
@@ -282,19 +272,19 @@ const config: Config = {
             },
             {
               label: 'GCSE',
-              to: '/docs/academics/qualifications/gcse/intro',
+              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/gcse/intro',
             },
             {
               label: 'AP',
-              to: '/docs/academics/qualifications/ap/intro',
+              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/ap/intro',
             },
             {
               label: 'Scottish Highers',
-              to: '/docs/academics/qualifications/highers/intro',
+              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/highers/intro',
             },
             {
               label: 'Irish LC',
-              to: '/docs/academics/qualifications/ilc/intro',
+              href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/ilc/intro',
             },
           ],
         },

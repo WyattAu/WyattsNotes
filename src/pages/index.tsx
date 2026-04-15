@@ -47,6 +47,38 @@ const subjectGroups: SubjectGroup[] = [
         tag: 'HKDSE',
         desc: 'Hong Kong Diploma of Secondary Education — Physics, Chemistry, Biology, Economics, ICT',
       },
+      {
+        name: 'GCSE',
+        files: 26,
+        lines: '18.8K',
+        href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/gcse/intro',
+        tag: 'AQA/Edexcel/OCR',
+        desc: 'General Certificate of Secondary Education — Maths, Physics, Chemistry, Biology, Computer Science',
+      },
+      {
+        name: 'AP',
+        files: 26,
+        lines: '18.8K',
+        href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/ap/intro',
+        tag: 'College Board',
+        desc: 'Advanced Placement — Maths, Physics, Chemistry, Biology, Computer Science',
+      },
+      {
+        name: 'Scottish Highers',
+        files: 26,
+        lines: '18.4K',
+        href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/highers/intro',
+        tag: 'SQA',
+        desc: 'Scottish Qualifications Authority — Maths, Physics, Chemistry, Biology, Computer Science',
+      },
+      {
+        name: 'Irish LC',
+        files: 26,
+        lines: '19K',
+        href: 'https://qualifications.wyattsnotes.wyattau.com/docs/academics/qualifications/ilc/intro',
+        tag: 'SEC',
+        desc: 'Irish Leaving Certificate — Maths, Physics, Chemistry, Biology, Computer Science',
+      },
     ],
   },
   {
@@ -194,9 +226,9 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 605;
-const totalLines = '416K';
-const totalSubjects = 19;
+const totalFiles = 709;
+const totalLines = '491K';
+const totalSubjects = 23;
 
 export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
