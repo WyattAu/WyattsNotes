@@ -451,6 +451,7 @@ const config: Config = {
         if (config.optimization?.realContentHash !== undefined) {
           config.optimization.realContentHash = false;
         }
+
         return config;
       },
     },
