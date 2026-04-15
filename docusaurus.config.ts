@@ -145,40 +145,10 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'gcse-notes',
-        path: 'docs/docs_gcse',
-        routeBasePath: '/docs/academics/gcse',
-        sidebarPath: require.resolve('./sidebars/sidebar_gcse.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'ap-notes',
-        path: 'docs/docs_ap',
-        routeBasePath: '/docs/academics/ap',
-        sidebarPath: require.resolve('./sidebars/sidebar_ap.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'ilc-notes',
-        path: 'docs/docs_ilc',
-        routeBasePath: '/docs/academics/ilc',
-        sidebarPath: require.resolve('./sidebars/sidebar_ilc.ts'),
-        ...commonDocsPluginConfig,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'highers-notes',
-        path: 'docs/docs_highers',
-        routeBasePath: '/docs/academics/highers',
-        sidebarPath: require.resolve('./sidebars/sidebar_highers.ts'),
+        id: 'qualifications-notes',
+        path: 'docs/docs_qualifications',
+        routeBasePath: '/docs/academics/qualifications',
+        sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
         ...commonDocsPluginConfig,
       },
     ],
@@ -312,19 +282,19 @@ const config: Config = {
             },
             {
               label: 'GCSE',
-              to: '/docs/academics/gcse/intro',
+              to: '/docs/academics/qualifications/gcse/intro',
             },
             {
               label: 'AP',
-              to: '/docs/academics/ap/intro',
-            },
-            {
-              label: 'Irish LC',
-              to: '/docs/academics/ilc/intro',
+              to: '/docs/academics/qualifications/ap/intro',
             },
             {
               label: 'Scottish Highers',
-              to: '/docs/academics/highers/intro',
+              to: '/docs/academics/qualifications/highers/intro',
+            },
+            {
+              label: 'Irish LC',
+              to: '/docs/academics/qualifications/ilc/intro',
             },
           ],
         },
