@@ -44,9 +44,11 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=32768
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
 
+      - name: Install wrangler
+        run: pnpm add -D wrangler
+
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 26966ba2f4b3a12cb750cd615c8d0bcf
-          command: pages deploy build --project-name wyattsnotes-academics
+        run: npx wrangler pages deploy build --project-name wyattsnotes-academics
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 26966ba2f4b3a12cb750cd615c8d0bcf
