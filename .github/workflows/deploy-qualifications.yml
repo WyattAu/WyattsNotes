@@ -1,14 +1,14 @@
-name: Deploy Programming to Cloudflare Pages
+name: Deploy Qualifications to Cloudflare Pages
 
 on:
   push:
     branches: [main]
     paths:
-      - 'docs/docs_cpp/**'
-      - 'docs/docs_languages/**'
-      - 'sidebars/sidebar_cpp.ts'
-      - 'sidebars/sidebar_languages.ts'
-      - 'docusaurus.programming.config.ts'
+      - 'docs/docs_alevel/**'
+      - 'docs/docs_qualifications/**'
+      - 'sidebars/sidebar_alevel.ts'
+      - 'sidebars/sidebar_qualifications.ts'
+      - 'docusaurus.qualifications.config.ts'
       - 'src/pages/**'
       - 'static/**'
       - 'package.json'
@@ -17,7 +17,7 @@ on:
 
 jobs:
   deploy:
-    name: Build and Deploy Programming
+    name: Build and Deploy Qualifications
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -35,7 +35,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: npx docusaurus build --config docusaurus.programming.config.ts
+        run: npx docusaurus build --config docusaurus.qualifications.config.ts
         env:
           NODE_OPTIONS: --max-old-space-size=32768
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
@@ -45,7 +45,7 @@ jobs:
         run: pnpm add -D wrangler
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy build --project-name wyattsnotes-programming
+        run: npx wrangler pages deploy build --project-name wyattsnotes-qualifications
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: 26966ba2f4b3a12cb750cd615c8d0bcf

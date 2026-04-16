@@ -40,6 +40,7 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=32768
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
+          DISABLE_LUNR: 'true'
 
       - name: Install wrangler
         run: pnpm add -D wrangler

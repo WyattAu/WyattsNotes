@@ -1,8 +1,8 @@
 // @ts-check
-// Docusaurus config for the Programming sub-site.
-// Build: pnpm run build -- --config docusaurus.programming.config.ts
-// Contains: C++, Java, Python, Rust, Dart
-// Total: ~167K lines across 2 docs plugins.
+// Docusaurus config for the Qualifications sub-site.
+// Build: npx docusaurus build --config docusaurus.qualifications.config.ts
+// Contains: A-Level, GCSE, AP, Scottish Highers, Irish LC
+// Total: ~155K lines across 2 docs plugins (alevel + qualifications).
 
 import remarkGridTable from '@adobe/remark-gridtables';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -60,10 +60,10 @@ const commonDocsPluginConfig = {
 };
 
 const config: Config = {
-  title: "Wyatt's Notes — Programming",
-  tagline: 'C++, Java, Python, Rust, Dart',
+  title: "Wyatt's Notes — Qualifications",
+  tagline: 'A-Level, GCSE, AP, Scottish Highers, Irish Leaving Certificate',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
-  url: 'https://programming.wyattau.com',
+  url: 'https://qualifications.wyattau.com',
   baseUrl: '/',
   organizationName: 'WyattAu',
   projectName: 'WyattsNotes',
@@ -95,20 +95,20 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'cpp-notes',
-        path: 'docs/docs_cpp',
-        routeBasePath: '/docs/cpp',
-        sidebarPath: require.resolve('./sidebars/sidebar_cpp.ts'),
+        id: 'alevel-notes',
+        path: 'docs/docs_alevel',
+        routeBasePath: '/docs/alevel',
+        sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
         ...commonDocsPluginConfig,
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'languages-notes',
-        path: 'docs/docs_languages',
-        routeBasePath: '/docs/languages',
-        sidebarPath: require.resolve('./sidebars/sidebar_languages.ts'),
+        id: 'qualifications-notes',
+        path: 'docs/docs_qualifications',
+        routeBasePath: '/docs/qualifications',
+        sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
         ...commonDocsPluginConfig,
       },
     ],
@@ -153,16 +153,24 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
-        { to: '/docs/cpp/intro', label: 'C++', position: 'left' },
-        { to: '/docs/languages/java/intro', label: 'Languages', position: 'left' },
+        { to: '/docs/alevel/intro', label: 'A-Levels', position: 'left' },
+        { to: '/docs/qualifications/gcse/intro', label: 'GCSE', position: 'left' },
+        { to: '/docs/qualifications/ap/intro', label: 'AP', position: 'left' },
+        { to: '/docs/qualifications/scottish-highers', label: 'Highers', position: 'left' },
+        { to: '/docs/qualifications/ilc/intro', label: 'Irish LC', position: 'left' },
+        {
+          href: 'https://academics.wyattau.com',
+          label: 'Academics',
+          position: 'right',
+        },
         {
           href: 'https://wyattsnotes.wyattau.com',
           label: 'Main Site',
           position: 'right',
         },
         {
-          href: 'https://academics.wyattsnotes.wyattau.com',
-          label: 'Academics',
+          href: 'https://programming.wyattau.com',
+          label: 'Programming',
           position: 'right',
         },
         {
@@ -181,25 +189,40 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Languages',
+          title: 'Exam Boards',
           items: [
-            { label: 'C++', to: '/docs/cpp/intro' },
-            { label: 'Java', to: '/docs/languages/java/intro' },
-            { label: 'Python', to: '/docs/languages/python/intro' },
-            { label: 'Rust', to: '/docs/languages/rust/intro' },
-            { label: 'Dart', to: '/docs/languages/dart/intro' },
+            {
+              label: 'IB',
+              href: 'https://academics.wyattau.com/docs/ib/intro',
+            },
+            {
+              label: 'DSE',
+              href: 'https://academics.wyattau.com/docs/dse/intro',
+            },
+            { label: 'A-Levels', to: '/docs/alevel/intro' },
+            { label: 'GCSE', to: '/docs/qualifications/gcse/intro' },
+            { label: 'AP', to: '/docs/qualifications/ap/intro' },
+            {
+              label: 'Scottish Highers',
+              to: '/docs/qualifications/scottish-highers',
+            },
+            { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
           ],
         },
         {
           title: 'More',
           items: [
             {
+              label: 'Academics',
+              href: 'https://academics.wyattau.com',
+            },
+            {
               label: 'Main Site',
               href: 'https://wyattsnotes.wyattau.com',
             },
             {
-              label: 'Academics',
-              href: 'https://academics.wyattsnotes.wyattau.com',
+              label: 'Programming',
+              href: 'https://programming.wyattau.com',
             },
             {
               label: 'GitHub',
@@ -221,7 +244,6 @@ const config: Config = {
       darkTheme: {
         ...prismThemes.gruvboxMaterialDark,
       },
-      additionalLanguages: ['java', 'dart'],
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },

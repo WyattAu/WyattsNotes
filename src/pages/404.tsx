@@ -20,13 +20,33 @@ const subjects: Subject[] = [
   },
   {
     name: 'A-Level',
-    href: 'https://academics.wyattau.com/docs/alevel/intro',
+    href: 'https://qualifications.wyattau.com/docs/alevel/intro',
     tag: 'A*',
   },
   { name: 'DSE', href: 'https://academics.wyattau.com/docs/dse/intro', tag: 'HKDSE' },
   {
+    name: 'GCSE',
+    href: 'https://qualifications.wyattau.com/docs/qualifications/gcse/intro',
+    tag: 'AQA/Edexcel/OCR',
+  },
+  {
+    name: 'AP',
+    href: 'https://qualifications.wyattau.com/docs/qualifications/ap/intro',
+    tag: 'College Board',
+  },
+  {
+    name: 'Scottish Highers',
+    href: 'https://qualifications.wyattau.com/docs/qualifications/scottish-highers',
+    tag: 'SQA',
+  },
+  {
+    name: 'Irish LC',
+    href: 'https://qualifications.wyattau.com/docs/qualifications/ilc/intro',
+    tag: 'SEC',
+  },
+  {
     name: 'C++',
-    href: 'https://programming.wyattau.com/docs/cpp/0_intro',
+    href: 'https://programming.wyattau.com/docs/cpp/intro',
     tag: 'C++20/23',
   },
   {
@@ -46,20 +66,60 @@ const subjects: Subject[] = [
   },
   {
     name: 'Dart',
-    href: 'https://programming.wyattau.com/docs/languages/dart/01-intro',
+    href: 'https://programming.wyattau.com/docs/languages/dart/intro',
     tag: 'Flutter',
   },
-  { name: 'Git', href: '/docs/tools/git/intro', tag: 'Workflow' },
-  { name: 'Algorithms', href: '/docs/tools/algorithms/intro', tag: 'CS' },
-  { name: 'Linux', href: '/docs/infrastructure/linux/intro', tag: 'POSIX' },
-  { name: 'Networking', href: '/docs/infrastructure/networking/intro', tag: 'TCP/IP' },
-  { name: 'Databases', href: '/docs/infrastructure/databases/intro', tag: 'SQL' },
-  { name: 'Security', href: '/docs/infrastructure/security/intro', tag: 'InfoSec' },
-  { name: 'TrueNAS', href: '/docs/infrastructure/truenas/intro', tag: 'NAS' },
-  { name: 'Tuning', href: '/docs/infrastructure/tuning/intro', tag: 'HW' },
-  { name: 'Probabilistic ML', href: '/docs/tools/probabilisticml/intro', tag: 'Grad-level' },
-  { name: 'General', href: '/docs/tools/general/intro', tag: 'Meta' },
-  { name: 'Licensing', href: '/docs/tools/licensing/intro', tag: 'Legal' },
+  { name: 'Git', href: 'https://wyattsnotes.wyattau.com/docs/tools/git/intro', tag: 'Workflow' },
+  {
+    name: 'Algorithms',
+    href: 'https://wyattsnotes.wyattau.com/docs/tools/algorithms/intro',
+    tag: 'CS',
+  },
+  {
+    name: 'Linux',
+    href: 'https://wyattsnotes.wyattau.com/docs/infrastructure/linux/intro',
+    tag: 'POSIX',
+  },
+  {
+    name: 'Networking',
+    href: 'https://wyattsnotes.wyattau.com/docs/infrastructure/networking/intro',
+    tag: 'TCP/IP',
+  },
+  {
+    name: 'Databases',
+    href: 'https://wyattsnotes.wyattau.com/docs/infrastructure/databases/intro',
+    tag: 'SQL',
+  },
+  {
+    name: 'Security',
+    href: 'https://wyattsnotes.wyattau.com/docs/infrastructure/security/intro',
+    tag: 'InfoSec',
+  },
+  {
+    name: 'TrueNAS',
+    href: 'https://wyattsnotes.wyattau.com/docs/infrastructure/truenas/intro',
+    tag: 'NAS',
+  },
+  {
+    name: 'Tuning',
+    href: 'https://wyattsnotes.wyattau.com/docs/infrastructure/tuning/intro',
+    tag: 'HW',
+  },
+  {
+    name: 'Probabilistic ML',
+    href: 'https://wyattsnotes.wyattau.com/docs/tools/probabilisticml/intro',
+    tag: 'Grad-level',
+  },
+  {
+    name: 'General',
+    href: 'https://wyattsnotes.wyattau.com/docs/tools/general/intro',
+    tag: 'Meta',
+  },
+  {
+    name: 'Licensing',
+    href: 'https://wyattsnotes.wyattau.com/docs/tools/licensing/intro',
+    tag: 'Legal',
+  },
 ];
 
 export default function NotFoundPage(): React.ReactNode {

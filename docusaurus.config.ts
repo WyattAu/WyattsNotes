@@ -213,28 +213,28 @@ const config: Config = {
               href: 'https://academics.wyattau.com/docs/ib/intro',
             },
             {
-              label: 'A-Levels',
-              href: 'https://academics.wyattau.com/docs/alevel/intro',
-            },
-            {
               label: 'DSE',
               href: 'https://academics.wyattau.com/docs/dse/intro',
             },
             {
+              label: 'A-Levels',
+              href: 'https://qualifications.wyattau.com/docs/alevel/intro',
+            },
+            {
               label: 'GCSE',
-              href: 'https://academics.wyattau.com/docs/qualifications/gcse/intro',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/gcse/intro',
             },
             {
               label: 'AP',
-              href: 'https://academics.wyattau.com/docs/qualifications/ap/intro',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/ap/intro',
             },
             {
               label: 'Scottish Highers',
-              href: 'https://academics.wyattau.com/docs/qualifications/highers/intro',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/scottish-highers',
             },
             {
               label: 'Irish LC',
-              href: 'https://academics.wyattau.com/docs/qualifications/ilc/intro',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/ilc/intro',
             },
           ],
         },
@@ -243,7 +243,7 @@ const config: Config = {
           items: [
             {
               label: 'C++',
-              href: 'https://programming.wyattau.com/docs/cpp/0_intro',
+              href: 'https://programming.wyattau.com/docs/cpp/intro',
             },
             {
               label: 'Java',
@@ -259,7 +259,7 @@ const config: Config = {
             },
             {
               label: 'Dart',
-              href: 'https://programming.wyattau.com/docs/languages/dart/01-intro',
+              href: 'https://programming.wyattau.com/docs/languages/dart/intro',
             },
           ],
         },

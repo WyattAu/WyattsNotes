@@ -5,15 +5,11 @@ on:
     branches: [main]
     paths:
       - 'docs/docs_ib/**'
-      - 'docs/docs_alevel/**'
       - 'docs/docs_dse/**'
-      - 'docs/docs_qualifications/**'
       - 'sidebars/sidebar_ib.ts'
-      - 'sidebars/sidebar_alevel.ts'
       - 'sidebars/sidebar_dse.ts'
-      - 'sidebars/sidebar_qualifications.ts'
       - 'docusaurus.academics.config.ts'
-      - 'src/css/**'
+      - 'src/pages/**'
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
@@ -43,6 +39,7 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=32768
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
+          DISABLE_LUNR: 'true'
 
       - name: Install wrangler
         run: pnpm add -D wrangler
