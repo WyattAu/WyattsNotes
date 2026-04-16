@@ -63,7 +63,7 @@ const config: Config = {
   title: "Wyatt's Notes — Academics",
   tagline: 'IB, A-Level, DSE, GCSE, AP, Scottish Highers, Irish Leaving Certificate',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
-  url: 'https://academics.wyattsnotes.wyattau.com',
+  url: 'https://academics.wyattau.com',
   baseUrl: '/',
   organizationName: 'WyattAu',
   projectName: 'WyattsNotes',

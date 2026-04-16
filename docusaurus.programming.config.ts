@@ -63,7 +63,7 @@ const config: Config = {
   title: "Wyatt's Notes — Programming",
   tagline: 'C++, Java, Python, Rust, Dart',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
-  url: 'https://programming.wyattsnotes.wyattau.com',
+  url: 'https://programming.wyattau.com',
   baseUrl: '/',
   organizationName: 'WyattAu',
   projectName: 'WyattsNotes',

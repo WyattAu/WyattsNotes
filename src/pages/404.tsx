@@ -15,38 +15,38 @@ interface Subject {
 const subjects: Subject[] = [
   {
     name: 'IB Notes',
-    href: 'https://academics.wyattsnotes.wyattau.com/docs/ib/intro',
+    href: 'https://academics.wyattau.com/docs/ib/intro',
     tag: 'HL/SL',
   },
   {
     name: 'A-Level',
-    href: 'https://academics.wyattsnotes.wyattau.com/docs/alevel/intro',
+    href: 'https://academics.wyattau.com/docs/alevel/intro',
     tag: 'A*',
   },
-  { name: 'DSE', href: 'https://academics.wyattsnotes.wyattau.com/docs/dse/intro', tag: 'HKDSE' },
+  { name: 'DSE', href: 'https://academics.wyattau.com/docs/dse/intro', tag: 'HKDSE' },
   {
     name: 'C++',
-    href: 'https://programming.wyattsnotes.wyattau.com/docs/cpp/0_intro',
+    href: 'https://programming.wyattau.com/docs/cpp/0_intro',
     tag: 'C++20/23',
   },
   {
     name: 'Java',
-    href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/java/intro',
+    href: 'https://programming.wyattau.com/docs/languages/java/intro',
     tag: 'JDK 21+',
   },
   {
     name: 'Python',
-    href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/python/intro',
+    href: 'https://programming.wyattau.com/docs/languages/python/intro',
     tag: '3.12+',
   },
   {
     name: 'Rust',
-    href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/rust/intro',
+    href: 'https://programming.wyattau.com/docs/languages/rust/intro',
     tag: '2024',
   },
   {
     name: 'Dart',
-    href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/dart/01-intro',
+    href: 'https://programming.wyattau.com/docs/languages/dart/01-intro',
     tag: 'Flutter',
   },
   { name: 'Git', href: '/docs/tools/git/intro', tag: 'Workflow' },

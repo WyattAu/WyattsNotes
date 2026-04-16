@@ -177,12 +177,12 @@ const config: Config = {
         { to: '/docs/infrastructure/linux/intro', label: 'Infrastructure', position: 'left' },
         { to: '/docs/tools/git/intro', label: 'Tools', position: 'left' },
         {
-          href: 'https://academics.wyattsnotes.wyattau.com',
+          href: 'https://academics.wyattau.com',
           label: 'Academics',
           position: 'right',
         },
         {
-          href: 'https://programming.wyattsnotes.wyattau.com',
+          href: 'https://programming.wyattau.com',
           label: 'Programming',
           position: 'right',
         },
@@ -210,31 +210,31 @@ const config: Config = {
           items: [
             {
               label: 'IB',
-              href: 'https://academics.wyattsnotes.wyattau.com/docs/ib/intro',
+              href: 'https://academics.wyattau.com/docs/ib/intro',
             },
             {
               label: 'A-Levels',
-              href: 'https://academics.wyattsnotes.wyattau.com/docs/alevel/intro',
+              href: 'https://academics.wyattau.com/docs/alevel/intro',
             },
             {
               label: 'DSE',
-              href: 'https://academics.wyattsnotes.wyattau.com/docs/dse/intro',
+              href: 'https://academics.wyattau.com/docs/dse/intro',
             },
             {
               label: 'GCSE',
-              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/gcse/intro',
+              href: 'https://academics.wyattau.com/docs/qualifications/gcse/intro',
             },
             {
               label: 'AP',
-              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/ap/intro',
+              href: 'https://academics.wyattau.com/docs/qualifications/ap/intro',
             },
             {
               label: 'Scottish Highers',
-              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/highers/intro',
+              href: 'https://academics.wyattau.com/docs/qualifications/highers/intro',
             },
             {
               label: 'Irish LC',
-              href: 'https://academics.wyattsnotes.wyattau.com/docs/qualifications/ilc/intro',
+              href: 'https://academics.wyattau.com/docs/qualifications/ilc/intro',
             },
           ],
         },
@@ -243,23 +243,23 @@ const config: Config = {
           items: [
             {
               label: 'C++',
-              href: 'https://programming.wyattsnotes.wyattau.com/docs/cpp/0_intro',
+              href: 'https://programming.wyattau.com/docs/cpp/0_intro',
             },
             {
               label: 'Java',
-              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/java/intro',
+              href: 'https://programming.wyattau.com/docs/languages/java/intro',
             },
             {
               label: 'Python',
-              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/python/intro',
+              href: 'https://programming.wyattau.com/docs/languages/python/intro',
             },
             {
               label: 'Rust',
-              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/rust/intro',
+              href: 'https://programming.wyattau.com/docs/languages/rust/intro',
             },
             {
               label: 'Dart',
-              href: 'https://programming.wyattsnotes.wyattau.com/docs/languages/dart/01-intro',
+              href: 'https://programming.wyattau.com/docs/languages/dart/01-intro',
             },
           ],
         },
