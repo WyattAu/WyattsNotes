@@ -326,7 +326,8 @@ comparative study. Despite differences in genre, setting, and period, they conve
 shared concerns: the violence of honour codes, the commodification of women, and the destruction of
 the individual by social forces.
 
-For a full dedicated comparative guide, see [chronicle-streetcar](./chronicle-streetcar.md).
+For a full dedicated comparative guide, see
+[chronicle-streetcar](comparitives/chronicle-streetcar.md).
 
 ### Honour and Reputation vs Individual Desire
 
