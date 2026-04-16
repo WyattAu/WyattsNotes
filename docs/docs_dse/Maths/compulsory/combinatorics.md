@@ -15,9 +15,9 @@ Combinatorics is the study of enumeration and arrangement.
 
 ### Sum Rule
 
-Given two [mutually exclusive](./probability.md#mutually-exclusive) events, where the first event
-can occur in $n_1$ distinct ways and the second event in $n_2$ distinct ways, the total number of
-occurrences ($N$) for either event is $n_1 + n_2$. This extends to $k$ mutually exclusive events:
+Given two [mutually exclusive](./probability.md#mutually-exclusive-events) events, where the first
+event can occur in $n_1$ distinct ways and the second event in $n_2$ distinct ways, the total number
+of occurrences ($N$) for either event is $n_1 + n_2$. This extends to $k$ mutually exclusive events:
 
 $$
 \begin{aligned}
@@ -32,9 +32,9 @@ $$
 
 ### Product Rule
 
-Given two [independent](./probability.md#independent) sequential events, where the first event has
-$n_1$ outcomes and the second has $n_2$ outcomes, the total number of compound outcomes ($N$) is
-$n_1 \times n_2$. This extends to $k$ independent sequential choices:
+Given two independent sequential events (where neither affects the other's outcome), where the first
+event has $n_1$ outcomes and the second has $n_2$ outcomes, the total number of compound outcomes
+($N$) is $n_1 \times n_2$. This extends to $k$ independent sequential choices:
 
 $$
 \begin{aligned}
@@ -205,8 +205,7 @@ $$
 The sign alternates: add singleton sizes, subtract pairwise intersections, add triple intersections,
 and so on.
 
-:::info
-Connection to Probability The inclusion-exclusion principle has a direct analogue in
+:::info Connection to Probability The inclusion-exclusion principle has a direct analogue in
 probability via the [addition rule](./probability.md). If $A, B$ are events in a sample space $S$,
 then:
 
@@ -216,8 +215,7 @@ $$
 \end{aligned}
 $$
 
-This is just inclusion-exclusion divided by $|S|$.
-:::
+This is just inclusion-exclusion divided by $|S|$. :::
 
 <details>
 <summary>Examples</summary>
@@ -299,12 +297,10 @@ $$
 \end{aligned}
 $$
 
-:::warning
-Only apply the division by 2 when the problem explicitly states that reflections are
+:::warning Only apply the division by 2 when the problem explicitly states that reflections are
 equivalent. For problems involving people seated at a round table, clockwise and anticlockwise
 orderings are distinct -- a seating where person $A$ has person $B$ on their left is different from
-person $B$ on their right.
-:::
+person $B$ on their right. :::
 
 <details>
 <summary>Examples</summary>
@@ -621,7 +617,7 @@ questions if you must pick $\lq 1$ from each section?
   \binom{15}{6} - \binom{3}{1}\binom{10}{6} + \binom{3}{2}\binom{5}{6} - \binom{3}{3}\binom{0}{6}
   $$
   (Note: $\binom{5}{6} = 0$, $\binom{0}{6} = 0$).
-</details>
+  </details>
 
 6. **Question:** Divide 10 students into two groups of 5, but Alice and Bob cannot be in the same
 group. How many unique arrangements can be made?
@@ -729,7 +725,7 @@ sit together, and children must be separated by at least one adult. How many arr
   $$
   3^{10} - \binom{3}{1}\left[\binom{10}{0}2^{10} + \binom{10}{1}2^9\right] + \binom{3}{2}\left[1 + 2\binom{10}{1} + \binom{10}{2}2!\right] = 59,049 - 18,099 = 40,950.
   $$
-</details>
+  </details>
 
 17. **Question:** Pair 5 men and 5 women for a dance. Two men (A,B) refuse to dance with a
 particular woman (X). How many valid pairings?
