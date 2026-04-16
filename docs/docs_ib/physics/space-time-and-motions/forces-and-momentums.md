@@ -723,3 +723,5 @@ Linear motion (down the incline): $Mg\sin\theta - f = Ma$ (Eq. 1). Rotational mo
 $fR = I\alpha = (\frac{2}{5}MR^2)(a/R) = \frac{2}{5}MRa$ (Eq. 2). From Eq. 2: $f = \frac{2}{5}Ma$.
 Substitute into Eq. 1: $Mg\sin\theta - \frac{2}{5}Ma = Ma$. $Mg\sin\theta = \frac{7}{5}Ma$.
 $a = \frac{5}{7}g\sin\theta$.
+
+</details>
