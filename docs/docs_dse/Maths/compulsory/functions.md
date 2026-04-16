@@ -206,7 +206,8 @@ expressions.
   - $f(x) = -(x^2 - 4x) - 7 = -\left[(x - 2)^2 - 4\right] - 7 = -(x - 2)^2 - 3$
   - Since $-(x - 2)^2 \leq 0$ for all $x$, the maximum value is $-3$.
   - Range: $(-\infty, -3]$.
-  </details>
+
+</details>
 
 ---
 
@@ -266,7 +267,8 @@ For equations of the form $a^{f(x)} = b$, take logarithms of both sides. See
   after 24 hours:
   - $A(t) = 100 \times \left(\frac{1}{2}\right)^{t/8}$
   - $A(24) = 100 \times \left(\frac{1}{2}\right)^3 = 12.5 \text{ g}$
-  </details>
+
+</details>
 
 ---
 
@@ -338,7 +340,8 @@ When solving logarithmic equations, the following steps are typical:
   - $\dfrac{x^2}{x - 1} = 4 \implies x^2 = 4x - 4 \implies x^2 - 4x + 4 = 0$
   - $(x - 2)^2 = 0 \implies x = 2$
   - Check: $x = 2 > 0$ and $x - 1 = 1 > 0$. Valid.
-  </details>
+
+</details>
 
 ---
 
@@ -397,7 +400,8 @@ shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
   - From $y = \sqrt{x}$: reflect in the $y$-axis to get $y = \sqrt{-x}$, then shift right by 4 to
     get $y = \sqrt{-(x - 4)} = \sqrt{-x + 4}$, then shift down by 2.
   - Domain: $-x + 4 \geq 0 \implies x \leq 4$. Range: $[-2, \infty)$.
-  </details>
+
+</details>
 
 ---
 
@@ -826,7 +830,8 @@ $\mathbb{R}$, and (b) the domain is $[0, 4]$.
   - $f(0) = -3$, $f(4) = 16 + 8 - 3 = 21$.
   - On $[0, 4]$, the function is increasing (vertex at $x = -1$ is to the left of the interval).
   - Range: $[-3, 21]$.
-  </details>
+
+</details>
 
 10. **Question:** Let $f(x) = \dfrac{x}{x - 2}$ for $x \neq 2$. Find $f^{-1}$, and evaluate
 $f^{-1}(3) + f(3)$.

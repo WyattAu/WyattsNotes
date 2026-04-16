@@ -684,7 +684,8 @@ and society?"**
 
 <details>
 <summary>
-Question 2</summary>
+Question 2
+</summary>
 
 **"How does the writer present the conflict between public duty and private morality?"**
 
@@ -705,7 +706,8 @@ Question 2</summary>
 
 <details>
 <summary>
-Question 3</summary>
+Question 3
+</summary>
 
 **"Explore the significance of unreliable narration in shaping the reader's response to the text."**
 
@@ -725,7 +727,8 @@ Question 3</summary>
 
 <details>
 <summary>
-Question 4</summary>
+Question 4
+</summary>
 
 **"To what extent is the setting integral to the exploration of the text's central concerns?"**
 
@@ -747,7 +750,8 @@ Question 4</summary>
 
 <details>
 <summary>
-Question 5</summary>
+Question 5
+</summary>
 
 **"Compare and contrast the ways in which writers present the destructive consequences of social
 expectations."**

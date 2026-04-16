@@ -417,11 +417,11 @@ $\frac{1}{1+r}$.
 <details>
 <summary>Worked example: Compound interest</summary>
 
-A deposit of $\$5{,}000$ earns 4% per year, compounded annually. Find the value after 10 years.
+A deposit of $5,000 earns 4% per year, compounded annually. Find the value after 10 years.
 
 $A = 5000(1.04)^{10} \approx 5000 \times 1.48024 = 7401.22$
 
-The value is approximately $\$7{,}401.22$.
+The value is approximately $7,401.22.
 
 </details>
 
@@ -547,7 +547,7 @@ $\log_3 20 = \frac{\ln 20}{\ln 3} = \frac{2.9957\ldots}{1.0986\ldots} \approx 2.
 <summary>Worked example: Exponential growth</summary>
 
 A bacteria culture doubles every 3 hours. If the initial population is $500$, when will it reach
-$32{,}000$?
+32,000?
 
 $P(t) = 500 \cdot 2^{t/3}$. Set $500 \cdot 2^{t/3} = 32000$:
 
