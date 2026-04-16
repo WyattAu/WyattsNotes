@@ -1,0 +1,48 @@
+name: Deploy Programming to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/docs_cpp/**'
+      - 'docs/docs_languages/**'
+      - 'sidebars/sidebar_cpp.ts'
+      - 'sidebars/sidebar_languages.ts'
+      - 'docusaurus.programming.config.ts'
+      - 'src/css/**'
+      - 'static/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build and Deploy Programming
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: npx docusaurus build --config docusaurus.programming.config.ts
+        env:
+          NODE_OPTIONS: --max-old-space-size=32768
+          DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 26966ba2f4b3a12cb750cd615c8d0bcf
+          command: pages deploy build --project-name wyattsnotes-programming

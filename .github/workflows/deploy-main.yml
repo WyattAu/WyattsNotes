@@ -1,0 +1,49 @@
+name: Deploy Main Site to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/docs_infrastructure/**'
+      - 'docs/docs_tools/**'
+      - 'sidebars/sidebar_infrastructure.ts'
+      - 'sidebars/sidebar_tools.ts'
+      - 'docusaurus.config.ts'
+      - 'src/**'
+      - 'static/**'
+      - 'blog_release-notes/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build and Deploy Main Site
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=32768
+          DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 26966ba2f4b3a12cb750cd615c8d0bcf
+          command: pages deploy build --project-name wyattsnotes
