@@ -501,8 +501,7 @@ if (list instanceof List<?>)       // OK since Java 8 for unbounded wildcards? N
 if (list instanceof List)  // raw type check only
 ```
 
-Use `Class&lt;T&gt;` tokens for runtime type checks (see
-[Generic Type Tokens](#generic-type-tokens-with-the-class-t-pattern)).
+Use `Class&lt;T&gt;` tokens for runtime type checks (see the "Generic Type Tokens" section below).
 
 ### Erasure and Overloading
 
