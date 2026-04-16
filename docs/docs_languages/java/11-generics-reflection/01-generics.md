@@ -502,7 +502,7 @@ if (list instanceof List)  // raw type check only
 ```
 
 Use `Class&lt;T&gt;` tokens for runtime type checks (see
-[Generic Type Tokens](#generic-type-tokens)).
+[Generic Type Tokens](#generic-type-tokens-with-the-class-t-pattern)).
 
 ### Erasure and Overloading
 

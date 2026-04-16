@@ -244,9 +244,9 @@ export default function Home(): React.ReactNode {
           <p className={styles.heroTagline}>{siteConfig.tagline}</p>
 
           <div className={styles.heroCta}>
-            <Link to="#subjects" className={styles.ctaButton}>
+            <a href="#subjects" className={styles.ctaButton}>
               Browse subjects
-            </Link>
+            </a>
             <a href="/search" className={styles.ctaLink}>
               Search notes
             </a>
