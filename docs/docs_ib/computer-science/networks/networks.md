@@ -642,3 +642,5 @@ Asymmetric encryption is computationally **slow**, making it impractical for lar
 to securely exchange a symmetric session key. Once the symmetric key is established, all subsequent
 data is encrypted using symmetric encryption (AES), combining the security benefits of asymmetric
 encryption with the speed of symmetric encryption.
+
+</details>

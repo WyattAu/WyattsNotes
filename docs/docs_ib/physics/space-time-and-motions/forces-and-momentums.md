@@ -73,8 +73,7 @@ $$
 \end{aligned}
 $$
 
-:::warning
-The IB only consider the magnitude of centripetal acceleration, therefore is shown in the
+:::warning The IB only consider the magnitude of centripetal acceleration, therefore is shown in the
 equation booklet as:
 
 $$
@@ -96,8 +95,7 @@ $$
 \end{aligned}
 $$
 
-:::warning
-As mentioned above, IB only consider the magnitude of centripetal force:
+:::warning As mentioned above, IB only consider the magnitude of centripetal force:
 
 $$
 \begin{aligned}
@@ -152,11 +150,9 @@ $$
 
 The measure of a solid body's resistance to [angular acceleration](#angular-acceleration).
 
-:::warning
-The IB syllabus only consider the moment of inertia of rigid body with approximated
+:::warning The IB syllabus only consider the moment of inertia of rigid body with approximated
 geometry as a system of discrete particles, as well as moment of inertia that is determined by
-closed-form expressions.
-:::
+closed-form expressions. :::
 
 ### Angular Momentum
 
@@ -179,8 +175,7 @@ $$
 \end{aligned}
 $$
 
-:::info
-For a force that varies at different position, the line integral of $F$ across a surface $C$
+:::info For a force that varies at different position, the line integral of $F$ across a surface $C$
 is:
 
 $$
@@ -221,10 +216,11 @@ distance covered during the 10.0 s of acceleration?
     force is constant, a simplification.)
 - **d) Distance:** Use the kinematic equation $s = ut + \frac{1}{2}at^2$.
   - $s = (25.0 \text{ m/s})(10.0 \text{ s}) + \frac{1}{2}(0.800 \text{ m/s}^2)(10.0 \text{ s})^2 = 250 + 0.4(100) = 290 \text{ m}$.
-  **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$
-  for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly
-  linking the resulting acceleration to kinematic equations.
-  </details>
+    **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$
+    for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly
+    linking the resulting acceleration to kinematic equations.
+
+</details>
 
 **Problem 2.** A 2.0 kg firework is launched vertically from rest. Its rocket motor provides a
 constant upward thrust of 50.0 N for 3.0 s before running out of fuel. Ignore air resistance. a)

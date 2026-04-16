@@ -433,11 +433,9 @@ $$
 (\bm{a} + t\bm{b} - \bm{p}) \cdot \bm{b} = 0 \implies t = \frac{(\bm{p} - \bm{a}) \cdot \bm{b}}{|\bm{b}|^2}
 $$
 
-:::tip
-Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
+:::tip Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
 your answer by substituting the point back into both equations. Common errors include sign mistakes
-in the cross product and forgetting to take the absolute value in distance formulas.
-:::
+in the cross product and forgetting to take the absolute value in distance formulas. :::
 
 ---
 
@@ -730,3 +728,5 @@ $\overrightarrow{AB} = \begin{pmatrix} 2 \\ 3 \\ 4 \end{pmatrix}$,
 $\overrightarrow{AC} = \begin{pmatrix} 4 \\ 6 \\ 8 \end{pmatrix}$.
 $\overrightarrow{AC} = 2\overrightarrow{AB}$, so $\overrightarrow{AC} = k\overrightarrow{AB}$ with
 $k = 2$. Since one vector is a scalar multiple of the other, the points are collinear.
+
+</details>

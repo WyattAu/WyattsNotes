@@ -761,3 +761,5 @@ CIR, and ACC after each cycle. What is the final value stored at address 152?
 | Execute | 103 | 152 | 25        | STORE 152 | 25  |
 
 Final value at address 152: **25** (which is $42 - 17$).
+
+</details>

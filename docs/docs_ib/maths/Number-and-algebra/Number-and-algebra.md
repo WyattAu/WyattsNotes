@@ -357,8 +357,7 @@ $$S_k = \frac{k}{2}\big(2a_1 + (k-1)d\big)$$
 
 $\blacksquare$
 
-:::warning
-In the IB formula booklet this is written as:
+:::warning In the IB formula booklet this is written as:
 
 $$S_n = \frac{n}{2}(2u_1 + (n-1)d) = \frac{n}{2}(u_1 + u_n)$$
 
@@ -578,7 +577,9 @@ and the inductive step ensures each domino knocks over the next.
 ### Sum Formula Proofs
 
 <details>
-<summary>Example: Prove $\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$</summary>
+<summary>Example: Prove the sum of squares formula</summary>
+
+Prove $\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$.
 
 **Base case ($n = 1$):** LHS $= 1$. RHS $= \frac{1 \cdot 2 \cdot 3}{6} = 1$. True.
 
@@ -603,7 +604,9 @@ This equals $\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$, which is the formula for $n = 
 ### Divisibility Proofs
 
 <details>
-<summary>Example: Prove $3^{2n} - 1$ is divisible by 8 for all $n \in \mathbb{N}$</summary>
+<summary>Example: Prove a divisibility result</summary>
+
+Prove $3^{2n} - 1$ is divisible by 8 for all $n \in \mathbb{N}$.
 
 **Base case ($n = 1$):** $3^2 - 1 = 9 - 1 = 8$, which is divisible by 8. True.
 

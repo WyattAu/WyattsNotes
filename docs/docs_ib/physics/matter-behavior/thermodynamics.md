@@ -857,3 +857,5 @@ b) $\eta_{\text{Carnot}} = 1 - \frac{T_c}{T_h} = 1 - \frac{300}{500} = 1 - 0.60 
 c) Yes, the engine is theoretically possible because its efficiency (35%) is less than the Carnot
 efficiency (40%). The second law of thermodynamics states that no real engine can exceed the Carnot
 efficiency, and this engine does not.
+
+</details>
