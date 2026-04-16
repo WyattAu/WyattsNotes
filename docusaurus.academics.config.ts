@@ -173,30 +173,10 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'ibSidebar',
-          label: 'IB',
-          position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'alevelSidebar',
-          label: 'A-Levels',
-          position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'dseSidebar',
-          label: 'DSE',
-          position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'qualificationsSidebar',
-          label: 'Qualifications',
-          position: 'left',
-        },
+        { to: '/docs/ib/intro', label: 'IB', position: 'left' },
+        { to: '/docs/alevel/intro', label: 'A-Levels', position: 'left' },
+        { to: '/docs/dse/intro', label: 'DSE', position: 'left' },
+        { to: '/docs/qualifications/gcse/intro', label: 'Qualifications', position: 'left' },
         {
           href: 'https://wyattsnotes.wyattau.com',
           label: 'Main Site',

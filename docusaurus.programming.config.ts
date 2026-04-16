@@ -153,18 +153,8 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'cppSidebar',
-          label: 'C++',
-          position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'languagesSidebar',
-          label: 'Languages',
-          position: 'left',
-        },
+        { to: '/docs/cpp/0_intro', label: 'C++', position: 'left' },
+        { to: '/docs/languages/java/intro', label: 'Languages', position: 'left' },
         {
           href: 'https://wyattsnotes.wyattau.com',
           label: 'Main Site',
