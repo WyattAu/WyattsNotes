@@ -93,12 +93,29 @@ const config: Config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-sitemap',
+      {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.7,
+        sitemapSize: 70000,
+        ignorePatterns: ['/tags/**'],
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'qualifications-notes',
         path: 'docs/docs_qualifications',
         routeBasePath: '/docs/qualifications',
         sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes - Qualifications",
+          description: 'GCSE, AP, Scottish Highers, and Irish LC notes',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],

@@ -93,12 +93,29 @@ const config: Config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-sitemap',
+      {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.7,
+        sitemapSize: 70000,
+        ignorePatterns: ['/tags/**'],
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'alevel-notes',
         path: 'docs/docs_alevel',
         routeBasePath: '/docs/alevel',
         sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes - A-Levels",
+          description: 'A-Level study notes across all subjects',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],

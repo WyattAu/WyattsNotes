@@ -93,12 +93,29 @@ const config: Config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-sitemap',
+      {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.7,
+        sitemapSize: 70000,
+        ignorePatterns: ['/tags/**'],
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'cpp-notes',
         path: 'docs/docs_cpp',
         routeBasePath: '/docs/cpp',
         sidebarPath: require.resolve('./sidebars/sidebar_cpp.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes - Programming",
+          description: 'C++, Java, Python, Rust, Dart, and more',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],
@@ -109,6 +126,13 @@ const config: Config = {
         path: 'docs/docs_languages',
         routeBasePath: '/docs/languages',
         sidebarPath: require.resolve('./sidebars/sidebar_languages.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes - Programming",
+          description: 'C++, Java, Python, Rust, Dart, and more',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],

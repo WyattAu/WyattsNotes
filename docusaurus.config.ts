@@ -97,6 +97,16 @@ const config: Config = {
   ],
   plugins: [
     [
+      '@docusaurus/plugin-sitemap',
+      {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.7,
+        sitemapSize: 70000,
+        ignorePatterns: ['/tags/**'],
+      },
+    ],
+    [
       '@docusaurus/plugin-content-blog',
       {
         blogTitle: 'Release Notes',
@@ -122,6 +132,13 @@ const config: Config = {
         path: 'docs/docs_infrastructure',
         routeBasePath: '/docs/infrastructure',
         sidebarPath: require.resolve('./sidebars/sidebar_infrastructure.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes",
+          description: 'Infrastructure, tools, and systems engineering notes',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],
@@ -132,6 +149,13 @@ const config: Config = {
         path: 'docs/docs_tools',
         routeBasePath: '/docs/tools',
         sidebarPath: require.resolve('./sidebars/sidebar_tools.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes",
+          description: 'Infrastructure, tools, and systems engineering notes',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],

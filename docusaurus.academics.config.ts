@@ -93,12 +93,29 @@ const config: Config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-sitemap',
+      {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.7,
+        sitemapSize: 70000,
+        ignorePatterns: ['/tags/**'],
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'ib-notes',
         path: 'docs/docs_ib',
         routeBasePath: '/docs/ib',
         sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes - Academics",
+          description: 'IB and DSE study notes',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],
@@ -109,6 +126,13 @@ const config: Config = {
         path: 'docs/docs_dse',
         routeBasePath: '/docs/dse',
         sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
+        feed: {
+          type: ['rss', 'atom'],
+          title: "Wyatt's Notes - Academics",
+          description: 'IB and DSE study notes',
+          language: 'en',
+          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
+        },
         ...commonDocsPluginConfig,
       },
     ],
