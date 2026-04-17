@@ -108,13 +108,6 @@ const config: Config = {
         path: 'docs/docs_alevel',
         routeBasePath: '/docs/alevel',
         sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
-        feed: {
-          type: ['rss', 'atom'],
-          title: "Wyatt's Notes - A-Levels",
-          description: 'A-Level study notes across all subjects',
-          language: 'en',
-          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
-        },
         ...commonDocsPluginConfig,
       },
     ],

@@ -108,13 +108,6 @@ const config: Config = {
         path: 'docs/docs_qualifications',
         routeBasePath: '/docs/qualifications',
         sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
-        feed: {
-          type: ['rss', 'atom'],
-          title: "Wyatt's Notes - Qualifications",
-          description: 'GCSE, AP, Scottish Highers, and Irish LC notes',
-          language: 'en',
-          copyright: `Copyright ${new Date().getFullYear()} Wyatt Au`,
-        },
         ...commonDocsPluginConfig,
       },
     ],
