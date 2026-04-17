@@ -30,7 +30,7 @@ to the atomic/molecular formula mass in amu.
 | H$_2$O                              | 18.02              |
 | NaCl                                | 58.44              |
 | $\text{CaCO}_3$                     | 100.09             |
-| $\text{C}_6\text{H}_{12}\text{O}_6$ | 180.16             |
+| $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$ | 180.16             |
 
 ### Conversions
 
@@ -57,11 +57,11 @@ $$
 Find the percent composition of water.
 
 $$
-\%\text{H} = \frac{2(1.008)}{18.02} \times 100 = 11.19\%
+\%\mathrm{H} = \frac{2(1.008)}{18.02} \times 100 = 11.19\%
 $$
 
 $$
-\%\text{O} = \frac{16.00}{18.02} \times 100 = 88.81\%
+\%\mathrm{O} = \frac{16.00}{18.02} \times 100 = 88.81\%
 $$
 
 :::
@@ -71,15 +71,15 @@ unknown compound from experimental data.
 
 ### Worked Example: Percent Composition Verification
 
-Verify that the percent composition of $\text{Na}_2\text{CO}_3$ is correct.
+Verify that the percent composition of $\mathrm{Na}_2\mathrm{CO}_3$ is correct.
 
 Molar mass: $2(22.99) + 12.01 + 3(16.00) = 105.99$ g/mol.
 
-$$\%\text{Na} = \frac{45.98}{105.99} \times 100 = 43.38\%$$
+$$\%\mathrm{Na} = \frac{45.98}{105.99} \times 100 = 43.38\%$$
 
-$$\%\text{C} = \frac{12.01}{105.99} \times 100 = 11.33\%$$
+$$\%\mathrm{C} = \frac{12.01}{105.99} \times 100 = 11.33\%$$
 
-$$\%\text{O} = \frac{48.00}{105.99} \times 100 = 45.29\%$$
+$$\%\mathrm{O} = \frac{48.00}{105.99} \times 100 = 45.29\%$$
 
 Sum: $43.38 + 11.33 + 45.29 = 100.00\%$. Verified.
 
@@ -114,13 +114,13 @@ $$
 
 Ratio: $3.33 : 6.65 : 3.33 = 1 : 2 : 1$.
 
-Empirical formula: $\text{CH}_2\text{O}$ (molar mass = $30.03 \text{ g/mol}$).
+Empirical formula: $\mathrm{CH}_2\mathrm{O}$ (molar mass = $30.03 \text{ g/mol}$).
 
 $$
 n = \frac{180}{30.03} \approx 6
 $$
 
-Molecular formula: $\text{C}_6\text{H}_{12}\text{O}_6$ (glucose).
+Molecular formula: $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$ (glucose).
 
 :::
 
@@ -134,7 +134,7 @@ $$
 $$
 
 $$
-\text{mol H} = 2 \times \text{mol H}_2\text{O} = 2 \times \frac{\text{mass of H}_2\text{O}}{18.02}
+\text{mol H} = 2 \times \text{mol H}_2\mathrm{O} = 2 \times \frac{\text{mass of H}_2\mathrm{O}}{18.02}
 $$
 
 If the mass of C + mass of H is less than the total mass of the sample, the difference is the mass
@@ -159,11 +159,11 @@ $$\text{mol O} = \frac{0.133}{16.00} = 0.00833 \text{ mol}$$
 
 Ratio: $0.00832 : 0.0166 : 0.00833 = 1 : 2 : 1$.
 
-Empirical formula: $\text{CH}_2\text{O}$.
+Empirical formula: $\mathrm{CH}_2\mathrm{O}$.
 
 ### Worked Example: Molecular Formula from Empirical Formula
 
-A compound has the empirical formula $\text{C}_3\text{H}_4\text{O}_3$ and a molecular mass of
+A compound has the empirical formula $\mathrm{C}_3\mathrm{H}_4\mathrm{O}_3$ and a molecular mass of
 approximately $176 \text{ g/mol}$. Find the molecular formula.
 
 Empirical formula mass:
@@ -171,7 +171,7 @@ $3(12.01) + 4(1.008) + 3(16.00) = 36.03 + 4.032 + 48.00 = 88.06 \text{ g/mol}$.
 
 $$n = \frac{176}{88.06} \approx 2$$
 
-Molecular formula: $\text{C}_6\text{H}_8\text{O}_6$.
+Molecular formula: $\mathrm{C}_6\mathrm{H}_8\mathrm{O}_6$.
 
 ### Worked Example: Combustion Analysis with Nitrogen
 
@@ -195,7 +195,7 @@ mass within rounding.
 
 Ratio: $0.01002 : 0.01998 : 0.00246 = 4.07 : 8.12 : 1 \approx 4 : 8 : 1$.
 
-Empirical formula: $\text{C}_4\text{H}_8\text{N}$.
+Empirical formula: $\mathrm{C}_4\mathrm{H}_8\mathrm{N}$.
 
 ## Balancing Chemical Equations
 
@@ -213,32 +213,32 @@ Empirical formula: $\text{C}_4\text{H}_8\text{N}$.
 Balance the combustion of propane:
 
 $$
-\text{C}_3\text{H}_8 + \text{O}_2 \to \text{CO}_2 + \text{H}_2\text{O}
+\mathrm{C}_3\mathrm{H}_8 + \mathrm{O}_2 \to \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}
 $$
 
-Balance C: $3\text{CO}_2$
+Balance C: $3\mathrm{CO}_2$
 
-Balance H: $4\text{H}_2\text{O}$
+Balance H: $4\mathrm{H}_2\mathrm{O}$
 
-Balance O: $3(2) + 4(1) = 10$ O on right, so $5\text{O}_2$ on left.
+Balance O: $3(2) + 4(1) = 10$ O on right, so $5\mathrm{O}_2$ on left.
 
 $$
-\text{C}_3\text{H}_8 + 5\text{O}_2 \to 3\text{CO}_2 + 4\text{H}_2\text{O}
+\mathrm{C}_3\mathrm{H}_8 + 5\mathrm{O}_2 \to 3\mathrm{CO}_2 + 4\mathrm{H}_2\mathrm{O}
 $$
 
 :::
 
 ### Worked Example: Balancing Complex Equations
 
-Balance the reaction: $\text{C}_4\text{H}_{10} + \text{O}_2 \to \text{CO}_2 + \text{H}_2\text{O}$.
+Balance the reaction: $\mathrm{C}_4\mathrm{H}_{10} + \mathrm{O}_2 \to \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$.
 
-C: 4 on left, so $4\text{CO}_2$ on right.
+C: 4 on left, so $4\mathrm{CO}_2$ on right.
 
-H: 10 on left, so $5\text{H}_2\text{O}$ on right.
+H: 10 on left, so $5\mathrm{H}_2\mathrm{O}$ on right.
 
-O on right: $4(2) + 5(1) = 13$. Need $\frac{13}{2}\text{O}_2$. Multiply all by 2:
+O on right: $4(2) + 5(1) = 13$. Need $\frac{13}{2}\mathrm{O}_2$. Multiply all by 2:
 
-$$2\text{C}_4\text{H}_{10} + 13\text{O}_2 \to 8\text{CO}_2 + 10\text{H}_2\text{O}$$
+$$2\mathrm{C}_4\mathrm{H}_{10} + 13\mathrm{O}_2 \to 8\mathrm{CO}_2 + 10\mathrm{H}_2\mathrm{O}$$
 
 ## Stoichiometric Calculations (CED Unit 4)
 
@@ -250,7 +250,7 @@ significant figures).
 ### Mass-to-Mass Conversions
 
 $$
-\text{mass A} \xrightarrow{\div \text{MM}_A} \text{moles A} \xrightarrow{\text{ratio}} \text{moles B} \xrightarrow{\times \text{MM}_B} \text{mass B}
+\text{mass A} \xrightarrow{\div \mathrm{MM}_A} \text{moles A} \xrightarrow{\text{ratio}} \text{moles B} \xrightarrow{\times \mathrm{MM}_B} \text{mass B}
 $$
 
 ### Limiting Reactant
@@ -279,10 +279,10 @@ purification.
 
 :::info[Example]
 
-If $25.0 \text{ g}$ of $\text{NH}_3$ reacts with $40.0 \text{ g}$ of $\text{O}_2$:
+If $25.0 \text{ g}$ of $\mathrm{NH}_3$ reacts with $40.0 \text{ g}$ of $\mathrm{O}_2$:
 
 $$
-4\text{NH}_3 + 5\text{O}_2 \to 4\text{NO} + 6\text{H}_2\text{O}
+4\mathrm{NH}_3 + 5\mathrm{O}_2 \to 4\mathrm{NO} + 6\mathrm{H}_2\mathrm{O}
 $$
 
 Find the limiting reactant and theoretical yield of NO.
@@ -295,9 +295,9 @@ $$
 \text{mol O}_2 = \frac{40.0}{32.00} = 1.250
 $$
 
-Divide by coefficients: $\text{NH}_3: 1.468/4 = 0.367$, $\text{O}_2: 1.250/5 = 0.250$.
+Divide by coefficients: $\mathrm{NH}_3: 1.468/4 = 0.367$, $\mathrm{O}_2: 1.250/5 = 0.250$.
 
-$\text{O}_2$ is limiting.
+$\mathrm{O}_2$ is limiting.
 
 $$
 \text{mol NO} = 1.250 \times \frac{4}{5} = 1.000 \text{ mol}
@@ -350,11 +350,11 @@ Use molarity to convert between volume and moles, then apply stoichiometric rati
 
 :::info[Example]
 
-What volume of $0.500 \text{ M } \text{HCl}$ is needed to react completely with $25.0 \text{ mL}$ of
+What volume of $0.500 \text{ M } \mathrm{HCl}$ is needed to react completely with $25.0 \text{ mL}$ of
 $0.200 \text{ M } \text{NaOH}$?
 
 $$
-\text{HCl} + \text{NaOH} \to \text{NaCl} + \text{H}_2\text{O}
+\mathrm{HCl} + \text{NaOH} \to \text{NaCl} + \mathrm{H}_2\mathrm{O}
 $$
 
 $$
@@ -366,7 +366,7 @@ $$
 $$
 
 $$
-V_{\text{HCl}} = \frac{0.00500}{0.500} = 0.0100 \text{ L} = 10.0 \text{ mL}
+V_{\mathrm{HCl}} = \frac{0.00500}{0.500} = 0.0100 \text{ L} = 10.0 \text{ mL}
 $$
 
 :::
@@ -383,10 +383,10 @@ the concentration of sulfate.
 ### Worked Example: Gravimetric Calculation
 
 A $0.500 \text{ g}$ sample of an iron ore is dissolved and the iron is precipitated as
-$\text{Fe}_2\text{O}_3$ by heating. If the mass of $\text{Fe}_2\text{O}_3$ obtained is
+$\mathrm{Fe}_2\mathrm{O}_3$ by heating. If the mass of $\mathrm{Fe}_2\mathrm{O}_3$ obtained is
 $0.350 \text{ g}$, calculate the percentage of iron in the ore.
 
-$$\text{mol Fe}_2\text{O}_3 = \frac{0.350}{159.69} = 0.00219 \text{ mol}$$
+$$\text{mol Fe}_2\mathrm{O}_3 = \frac{0.350}{159.69} = 0.00219 \text{ mol}$$
 
 $$\text{mol Fe} = 2 \times 0.00219 = 0.00438 \text{ mol}$$
 
@@ -397,7 +397,7 @@ $$\%\text{ Fe} = \frac{0.245}{0.500} \times 100 = 49.0\%$$
 ### Worked Example: Back Titration
 
 A $2.00 \text{ g}$ sample of impure limestone ($\text{CaCO}_3$) is reacted with $50.0 \text{ mL}$ of
-$1.00 \text{ M } \text{HCl}$ (excess). The remaining acid is titrated with
+$1.00 \text{ M } \mathrm{HCl}$ (excess). The remaining acid is titrated with
 $0.500 \text{ M } \text{NaOH}$, requiring $32.0 \text{ mL}$. Calculate the percentage purity of
 $\text{CaCO}_3$.
 
@@ -424,7 +424,7 @@ PV = nRT
 $$
 
 where
-$R = 0.08206 \text{ L}\cdot\text{atm}/(\text{mol}\cdot\text{K}) = 8.314 \text{ J}/(\text{mol}\cdot\text{K})$.
+$R = 0.08206 \text{ L}\cdot\mathrm{atm}/(\mathrm{mol}\cdot\mathrm{K}) = 8.314 \text{ J}/(\mathrm{mol}\cdot\mathrm{K})$.
 
 The ideal gas law combines Boyle's law ($P \propto 1/V$ at constant $T$), Charles's law
 ($V \propto T$ at constant $P$), and Avogadro's law ($V \propto n$ at constant $P$ and $T$).
@@ -456,10 +456,10 @@ Use $PV = nRT$ to convert between gas volume and moles.
 
 :::info[Example]
 
-What volume of $\text{O}_2$ at STP is produced by decomposing $5.00 \text{ g}$ of $\text{KClO}_3$?
+What volume of $\mathrm{O}_2$ at STP is produced by decomposing $5.00 \text{ g}$ of $\text{KClO}_3$?
 
 $$
-2\text{KClO}_3(s) \to 2\text{KCl}(s) + 3\text{O}_2(g)
+2\text{KClO}_3(s) \to 2\mathrm{KCl}(s) + 3\mathrm{O}_2(g)
 $$
 
 $$
@@ -495,15 +495,15 @@ This is a useful shortcut: one mole of any ideal gas occupies $22.4 \text{ L}$ a
 ### Worked Example: Gas Collection Over Water
 
 $0.200 \text{ g}$ of $\text{KClO}_3$ decomposes:
-$2\text{KClO}_3(s) \to 2\text{KCl}(s) + 3\text{O}_2(g)$. The oxygen is collected over water at
-$25^{\circ}\text{C}$ and $0.980 \text{ atm}$. Vapour pressure of water at $25^{\circ}\text{C}$ is
+$2\text{KClO}_3(s) \to 2\mathrm{KCl}(s) + 3\mathrm{O}_2(g)$. The oxygen is collected over water at
+$25^{\circ}\mathrm{C}$ and $0.980 \text{ atm}$. Vapour pressure of water at $25^{\circ}\mathrm{C}$ is
 $23.8 \text{ mmHg}$. Calculate the volume of dry oxygen.
 
 $$\text{mol KClO}_3 = \frac{0.200}{122.55} = 0.00163 \text{ mol}$$
 
 $$\text{mol O}_2 = 0.00163 \times \frac{3}{2} = 0.00245 \text{ mol}$$
 
-$$P_{\text{O}_2} = P_{\text{total}} - P_{\text{H}_2\text{O}} = 0.980 - \frac{23.8}{760} = 0.980 - 0.0313 = 0.949 \text{ atm}$$
+$$P_{\mathrm{O}_2} = P_{\text{total}} - P_{\mathrm{H}_2\mathrm{O}} = 0.980 - \frac{23.8}{760} = 0.980 - 0.0313 = 0.949 \text{ atm}$$
 
 $$V = \frac{nRT}{P} = \frac{(0.00245)(0.08206)(298)}{0.949} = 0.0630 \text{ L} = 63.0 \text{ mL}$$
 
@@ -520,22 +520,22 @@ $$V = \frac{nRT}{P} = \frac{(0.00245)(0.08206)(298)}{0.949} = 0.0630 \text{ L} =
 
 | Soluble                                      | Exceptions                                                          |
 | -------------------------------------------- | ------------------------------------------------------------------- |
-| $\text{Na}^+$, $\text{K}^+$, $\text{NH}_4^+$ | None                                                                |
-| Nitrates ($\text{NO}_3^-$)                   | None                                                                |
-| Acetates ($\text{CH}_3\text{COO}^-$)         | None                                                                |
-| Chlorides ($\text{Cl}^-$)                    | $\text{Ag}^+$, $\text{Pb}^{2+}$, $\text{Hg}_2^{2+}$                 |
-| Sulfates ($\text{SO}_4^{2-}$)                | $\text{Ba}^{2+}$, $\text{Pb}^{2+}$, $\text{Ca}^{2+}$, $\text{Ag}^+$ |
+| $\mathrm{Na}^+$, $\mathrm{K}^+$, $\mathrm{NH}_4^+$ | None                                                                |
+| Nitrates ($\mathrm{NO}_3^-$)                   | None                                                                |
+| Acetates ($\mathrm{CH}_3\mathrm{COO}^-$)         | None                                                                |
+| Chlorides ($\mathrm{Cl}^-$)                    | $\mathrm{Ag}^+$, $\mathrm{Pb}^{2+}$, $\mathrm{Hg}_2^{2+}$                 |
+| Sulfates ($\mathrm{SO}_4^{2-}$)                | $\mathrm{Ba}^{2+}$, $\mathrm{Pb}^{2+}$, $\mathrm{Ca}^{2+}$, $\mathrm{Ag}^+$ |
 
 | Insoluble                       | Exceptions                                                                       |
 | ------------------------------- | -------------------------------------------------------------------------------- |
-| Hydroxides ($\text{OH}^-$)      | $\text{Na}^+$, $\text{K}^+$, $\text{Ba}^{2+}$, $\text{Ca}^{2+}$ (slightly)       |
-| Carbonates ($\text{CO}_3^{2-}$) | $\text{Na}^+$, $\text{K}^+$, $\text{NH}_4^+$                                     |
-| Phosphates ($\text{PO}_4^{3-}$) | $\text{Na}^+$, $\text{K}^+$, $\text{NH}_4^+$                                     |
-| Sulfides ($\text{S}^{2-}$)      | $\text{Na}^+$, $\text{K}^+$, $\text{NH}_4^+$, $\text{Ca}^{2+}$, $\text{Ba}^{2+}$ |
+| Hydroxides ($\mathrm{OH}^-$)      | $\mathrm{Na}^+$, $\mathrm{K}^+$, $\mathrm{Ba}^{2+}$, $\mathrm{Ca}^{2+}$ (slightly)       |
+| Carbonates ($\mathrm{CO}_3^{2-}$) | $\mathrm{Na}^+$, $\mathrm{K}^+$, $\mathrm{NH}_4^+$                                     |
+| Phosphates ($\mathrm{PO}_4^{3-}$) | $\mathrm{Na}^+$, $\mathrm{K}^+$, $\mathrm{NH}_4^+$                                     |
+| Sulfides ($\mathrm{S}^{2-}$)      | $\mathrm{Na}^+$, $\mathrm{K}^+$, $\mathrm{NH}_4^+$, $\mathrm{Ca}^{2+}$, $\mathrm{Ba}^{2+}$ |
 
 ### Strong Acids and Bases
 
-**Strong acids:** $\text{HCl}$, $\text{HBr}$, $\text{HI}$, $\text{HNO}_3$, $\text{H}_2\text{SO}_4$,
+**Strong acids:** $\mathrm{HCl}$, $\mathrm{HBr}$, $\mathrm{HI}$, $\mathrm{HNO}_3$, $\mathrm{H}_2\mathrm{SO}_4$,
 $\text{HClO}_4$.
 
 **Strong bases:** Group 1 hydroxides, $\text{Ca(OH)}_2$, $\text{Sr(OH)}_2$, $\text{Ba(OH)}_2$.
@@ -545,14 +545,14 @@ are written as intact molecules.
 
 :::info[Example]
 
-Write the net ionic equation for mixing $\text{Pb(NO}_3)_2$ and $\text{KI}$.
+Write the net ionic equation for mixing $\text{Pb(NO}_3)_2$ and $\mathrm{KI}$.
 
-Molecular: $\text{Pb(NO}_3)_2(aq) + 2\text{KI}(aq) \to \text{PbI}_2(s) + 2\text{KNO}_3(aq)$
+Molecular: $\text{Pb(NO}_3)_2(aq) + 2\mathrm{KI}(aq) \to \mathrm{PbI}_2(s) + 2\mathrm{KNO}_3(aq)$
 
 Complete ionic:
-$\text{Pb}^{2+}(aq) + 2\text{NO}_3^-(aq) + 2\text{K}^+(aq) + 2\text{I}^-(aq) \to \text{PbI}_2(s) + 2\text{K}^+(aq) + 2\text{NO}_3^-(aq)$
+$\mathrm{Pb}^{2+}(aq) + 2\mathrm{NO}_3^-(aq) + 2\mathrm{K}^+(aq) + 2\mathrm{I}^-(aq) \to \mathrm{PbI}_2(s) + 2\mathrm{K}^+(aq) + 2\mathrm{NO}_3^-(aq)$
 
-Net ionic: $\text{Pb}^{2+}(aq) + 2\text{I}^-(aq) \to \text{PbI}_2(s)$
+Net ionic: $\mathrm{Pb}^{2+}(aq) + 2\mathrm{I}^-(aq) \to \mathrm{PbI}_2(s)$
 
 :::
 
@@ -588,7 +588,7 @@ Net ionic: $\text{Pb}^{2+}(aq) + 2\text{I}^-(aq) \to \text{PbI}_2(s)$
 2. **Incorrectly identifying the limiting reactant.** Always divide moles by the stoichiometric
    coefficient; the smallest result is the limiting reactant.
 3. **Forgetting to convert temperature to Kelvin** in gas law calculations.
-   $T(\text{K}) = T(^{\circ}\text{C}) + 273.15$.
+   $T(\mathrm{K}) = T(^{\circ}\mathrm{C}) + 273.15$.
 4. **Using the wrong value of $R$.** Match $R$ to the units of pressure and volume. If $P$ is in atm
    and $V$ in L, use $R = 0.08206$. If $P$ is in Pa and $V$ in m$^3$, use $R = 8.314$.
 5. **Not balancing equations before stoichiometric calculations.** The mole ratio comes from the
@@ -605,8 +605,8 @@ Net ionic: $\text{Pb}^{2+}(aq) + 2\text{I}^-(aq) \to \text{PbI}_2(s)$
 
 1. A compound is 36.5% Na, 25.4% S, and 38.1% O by mass. Find its empirical formula.
 
-2. If $10.0 \text{ g}$ of $\text{Al}$ reacts with $15.0 \text{ g}$ of $\text{Cl}_2$:
-   $2\text{Al} + 3\text{Cl}_2 \to 2\text{AlCl}_3$. Find the limiting reactant and the theoretical
+2. If $10.0 \text{ g}$ of $\mathrm{Al}$ reacts with $15.0 \text{ g}$ of $\mathrm{Cl}_2$:
+   $2\mathrm{Al} + 3\mathrm{Cl}_2 \to 2\text{AlCl}_3$. Find the limiting reactant and the theoretical
    yield of $\text{AlCl}_3$.
 
 3. What is the molarity of a solution prepared by dissolving $5.85 \text{ g}$ of $\text{NaCl}$ in
@@ -616,58 +616,58 @@ Net ionic: $\text{Pb}^{2+}(aq) + 2\text{I}^-(aq) \to \text{PbI}_2(s)$
    occupy at STP?
 
 5. Write the net ionic equation for the reaction between $\text{BaCl}_2(aq)$ and
-   $\text{Na}_2\text{SO}_4(aq)$.
+   $\mathrm{Na}_2\mathrm{SO}_4(aq)$.
 
-6. A $0.150 \text{ M } \text{H}_2\text{SO}_4$ solution is titrated with
+6. A $0.150 \text{ M } \mathrm{H}_2\mathrm{SO}_4$ solution is titrated with
    $0.200 \text{ M } \text{NaOH}$. If $25.0 \text{ mL}$ of acid is used, what volume of base is
    required?
 
 7. A compound with molar mass $92.0 \text{ g/mol}$ is 69.6% Mn and 30.4% O. Find the molecular
    formula.
 
-8. Calculate the volume of $\text{CO}_2$ produced at $25^\circ\text{C}$ and $1.05 \text{ atm}$ when
+8. Calculate the volume of $\mathrm{CO}_2$ produced at $25^\circ\mathrm{C}$ and $1.05 \text{ atm}$ when
    $10.0 \text{ g}$ of $\text{CaCO}_3$ decomposes:
-   $\text{CaCO}_3(s) \to \text{CaO}(s) + \text{CO}_2(g)$.
+   $\text{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$.
 
 9. A $0.100 \text{ M}$ solution of $\text{AgNO}_3$ is added to $50.0 \text{ mL}$ of
-   $0.0500 \text{ M}$ $\text{Na}_2\text{CrO}_4$. Calculate the mass of $\text{Ag}_2\text{CrO}_4$
+   $0.0500 \text{ M}$ $\mathrm{Na}_2\mathrm{CrO}_4$. Calculate the mass of $\mathrm{Ag}_2\mathrm{CrO}_4$
    precipitate formed.
 
 10. In a combustion analysis, $0.250 \text{ g}$ of an unknown compound produces $0.366 \text{ g}$ of
-    $\text{CO}_2$ and $0.150 \text{ g}$ of $\text{H}_2\text{O}$. Find the empirical formula.
+    $\mathrm{CO}_2$ and $0.150 \text{ g}$ of $\mathrm{H}_2\mathrm{O}$. Find the empirical formula.
 
 11. $2.00 \text{ g}$ of $\text{KClO}_3$ is heated until it decomposes. The oxygen gas produced is
-    collected over water at $22^\circ\text{C}$ and $0.980 \text{ atm}$. The vapour pressure of water
-    at $22^\circ\text{C}$ is $19.8 \text{ mmHg}$. Calculate the volume of dry oxygen collected.
+    collected over water at $22^\circ\mathrm{C}$ and $0.980 \text{ atm}$. The vapour pressure of water
+    at $22^\circ\mathrm{C}$ is $19.8 \text{ mmHg}$. Calculate the volume of dry oxygen collected.
 
 12. Explain the difference between the theoretical yield and the actual yield, and describe three
     factors that can cause the actual yield to be less than the theoretical yield.
 
 13. Calculate the molarity of a solution prepared by diluting $15.0 \text{ mL}$ of $6.00 \text{ M }$
-    $\text{HCl}$ to a total volume of $500.0 \text{ mL}$.
+    $\mathrm{HCl}$ to a total volume of $500.0 \text{ mL}$.
 
 14. Write balanced molecular, complete ionic, and net ionic equations for the reaction between
     $\text{NiCl}_2(aq)$ and $\text{NaOH}(aq)$.
 
 15. A mixture of $\text{NaHCO}_3$ and $\text{NaCl}$ has a mass of $5.00 \text{ g}$. When heated, the
-    $\text{NaHCO}_3$ decomposes completely to $\text{Na}_2\text{CO}_3$, $\text{H}_2\text{O}$, and
-    $\text{CO}_2$. The mass of the residue is $3.95 \text{ g}$. Calculate the mass of $\text{NaCl}$
+    $\text{NaHCO}_3$ decomposes completely to $\mathrm{Na}_2\mathrm{CO}_3$, $\mathrm{H}_2\mathrm{O}$, and
+    $\mathrm{CO}_2$. The mass of the residue is $3.95 \text{ g}$. Calculate the mass of $\text{NaCl}$
     in the original mixture.
 
-16. What volume of $0.250 \text{ M } \text{H}_2\text{SO}_4$ is needed to completely neutralise
-    $30.0 \text{ mL}$ of $0.400 \text{ M } \text{KOH}$?
+16. What volume of $0.250 \text{ M } \mathrm{H}_2\mathrm{SO}_4$ is needed to completely neutralise
+    $30.0 \text{ mL}$ of $0.400 \text{ M } \mathrm{KOH}$?
 
 17. A sample of a hydrate of $\text{MgSO}_4$ weighing $5.00 \text{ g}$ is heated until constant
     mass, leaving $2.45 \text{ g}$ of anhydrous $\text{MgSO}_4$. Determine the formula of the
     hydrate.
 
-18. At $25^\circ\text{C}$ and $1.00 \text{ atm}$, what is the density of $\text{O}_2$ gas in g/L?
+18. At $25^\circ\mathrm{C}$ and $1.00 \text{ atm}$, what is the density of $\mathrm{O}_2$ gas in g/L?
 
 19. Balance the following redox equation in acidic solution:
-    $\text{MnO}_4^- + \text{Fe}^{2+} \to \text{Mn}^{2+} + \text{Fe}^{3+}$.
+    $\mathrm{MnO}_4^- + \mathrm{Fe}^{2+} \to \mathrm{Mn}^{2+} + \mathrm{Fe}^{3+}$.
 
 20. A $0.500 \text{ g}$ sample of a compound containing only C, H, and O is burned in excess oxygen,
-    producing $1.10 \text{ g}$ of $\text{CO}_2$ and $0.450 \text{ g}$ of $\text{H}_2\text{O}$. Find
+    producing $1.10 \text{ g}$ of $\mathrm{CO}_2$ and $0.450 \text{ g}$ of $\mathrm{H}_2\mathrm{O}$. Find
     the empirical formula. If the molecular mass is approximately $180 \text{ g/mol}$, determine the
     molecular formula.
 
@@ -675,23 +675,23 @@ Net ionic: $\text{Pb}^{2+}(aq) + 2\text{I}^-(aq) \to \text{PbI}_2(s)$
     $0.150 \text{ M }$ $\text{AgNO}_3$ is mixed with $15.0 \text{ mL}$ of
     $0.200 \text{ M } \text{MgCl}_2$.
 
-22. A gas mixture contains $0.50 \text{ g}$ of $\text{N}_2$ and $0.50 \text{ g}$ of $\text{O}_2$ in
+22. A gas mixture contains $0.50 \text{ g}$ of $\mathrm{N}_2$ and $0.50 \text{ g}$ of $\mathrm{O}_2$ in
     a $2.00 \text{ L}$ container at $300 \text{ K}$. Calculate the partial pressure of each gas and
     the total pressure.
 
-23. Write the net ionic equation for the reaction between $\text{H}_2\text{SO}_4(aq)$ and
+23. Write the net ionic equation for the reaction between $\mathrm{H}_2\mathrm{SO}_4(aq)$ and
     $\text{Ba(OH)}_2(aq)$.
 
 24. A student prepares a solution by dissolving $12.5 \text{ g}$ of
-    $\text{CuSO}_4 \cdot 5\text{H}_2\text{O}$ in water to make $250.0 \text{ mL}$ of solution.
+    $\text{CuSO}_4 \cdot 5\mathrm{H}_2\mathrm{O}$ in water to make $250.0 \text{ mL}$ of solution.
     Calculate the molarity of the solution.
 
-25. $4.00 \text{ g}$ of methane ($\text{CH}_4$) is burned in excess oxygen. Calculate the volume of
-    $\text{CO}_2$ produced at $125^{\circ}\text{C}$ and $1.50 \text{ atm}$.
+25. $4.00 \text{ g}$ of methane ($\mathrm{CH}_4$) is burned in excess oxygen. Calculate the volume of
+    $\mathrm{CO}_2$ produced at $125^{\circ}\mathrm{C}$ and $1.50 \text{ atm}$.
 
 26. Balance the following equation and identify the type of reaction:
-    $\text{Al} + \text{HCl} \to \text{AlCl}_3 + \text{H}_2$.
+    $\mathrm{Al} + \mathrm{HCl} \to \text{AlCl}_3 + \mathrm{H}_2$.
 
-27. A $0.300 \text{ M } \text{HCl}$ solution is used to titrate $20.0 \text{ mL}$ of a
+27. A $0.300 \text{ M } \mathrm{HCl}$ solution is used to titrate $20.0 \text{ mL}$ of a
     $\text{Ca(OH)}_2$ solution of unknown concentration. If the titration requires $35.0 \text{ mL}$
     of HCl, calculate the molarity of the $\text{Ca(OH)}_2$ solution.

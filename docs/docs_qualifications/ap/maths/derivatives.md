@@ -499,7 +499,7 @@ The negative sign confirms the top is sliding down.
 
 :::info[Example]
 
-A spherical balloon is inflated at a rate of $10 \text{ cm}^3/\text{s}$. How fast is the radius
+A spherical balloon is inflated at a rate of $10 \text{ cm}^3/\mathrm{s}$. How fast is the radius
 increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 $$
@@ -803,7 +803,7 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 
 1. Find $\displaystyle\frac{dy}{dx}$ for $e^{xy} + y = x^2$ using implicit differentiation.
 
-2. A spherical balloon is inflated at a rate of $10 \text{ cm}^3/\text{s}$. How fast is the radius
+2. A spherical balloon is inflated at a rate of $10 \text{ cm}^3/\mathrm{s}$. How fast is the radius
    increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 3. Find all critical points of $f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1$ and classify them using the
@@ -835,7 +835,7 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 14. Find the inflection points of $f(x) = x^4 - 6x^2 + 4$.
 
 15. A conical tank (vertex pointing down) has radius 5 ft at the top and height 10 ft. Water is
-    pumped in at 3 $\text{ft}^3/\text{min}$. How fast is the water level rising when the water is 6
+    pumped in at 3 $\mathrm{ft}^3/\mathrm{min}$. How fast is the water level rising when the water is 6
     ft deep?
 
 16. Find the dimensions of the rectangle of maximum area that can be inscribed in a semicircle of

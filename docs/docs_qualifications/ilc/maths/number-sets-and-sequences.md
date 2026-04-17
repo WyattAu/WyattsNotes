@@ -522,13 +522,13 @@ $$
 If the nominal annual rate is $i$ compounded $m$ times per year, the effective annual rate is:
 
 $$
-r_{\text{eff}} = \left(1 + \frac{i}{m}\right)^m - 1
+r_{\mathrm{eff}} = \left(1 + \frac{i}{m}\right)^m - 1
 $$
 
 **Example (HL):** A bank offers 6% per annum compounded monthly. Find the effective annual rate.
 
 $$
-r_{\text{eff}} = \left(1 + \frac{0.06}{12}\right)^{12} - 1 = (1.005)^{12} - 1 \approx 0.0617 = 6.17\%
+r_{\mathrm{eff}} = \left(1 + \frac{0.06}{12}\right)^{12} - 1 = (1.005)^{12} - 1 \approx 0.0617 = 6.17\%
 $$
 
 ### Amortisation (HL)

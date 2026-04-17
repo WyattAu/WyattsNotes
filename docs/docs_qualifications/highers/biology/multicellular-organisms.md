@@ -99,10 +99,10 @@ permeability of the membrane.
 
 **Action potential:**
 
-1. Stimulus causes voltage-gated $\text{Na}^+$ channels to open
-2. $\text{Na}^+$ rushes in, depolarising the membrane (to about $+40 \text{ mV}$)
-3. Voltage-gated $\text{K}^+$ channels open
-4. $\text{K}^+$ rushes out, repolarising the membrane
+1. Stimulus causes voltage-gated $\mathrm{Na}^+$ channels to open
+2. $\mathrm{Na}^+$ rushes in, depolarising the membrane (to about $+40 \text{ mV}$)
+3. Voltage-gated $\mathrm{K}^+$ channels open
+4. $\mathrm{K}^+$ rushes out, repolarising the membrane
 5. The membrane briefly becomes hyperpolarised before the resting potential is restored
 
 **Refractory period:** A brief period after an action potential during which the neurone cannot be
@@ -127,7 +127,7 @@ A **synapse** is the junction between two neurones or between a neurone and an e
 **Process:**
 
 1. Action potential arrives at the presynaptic terminal
-2. Voltage-gated $\text{Ca}^{2+}$ channels open; calcium ions enter
+2. Voltage-gated $\mathrm{Ca}^{2+}$ channels open; calcium ions enter
 3. Synaptic vesicles fuse with the presynaptic membrane
 4. Neurotransmitter is released into the synaptic cleft
 5. Neurotransmitter binds to receptors on the postsynaptic membrane
@@ -269,8 +269,8 @@ lacteal (for fatty acids and glycerol).
 
 ## Common Pitfalls
 
-1. **Action potential direction:** Depolarisation is caused by $\text{Na}^+$ influx; repolarisation
-   by $\text{K}^+$ efflux.
+1. **Action potential direction:** Depolarisation is caused by $\mathrm{Na}^+$ influx; repolarisation
+   by $\mathrm{K}^+$ efflux.
 
 2. **Synapse transmission:** Neurotransmitters are released into the synaptic cleft, not directly
    into the next neurone.
@@ -455,7 +455,7 @@ and diffusion.
 
 **The loop of Henle:** Creates a concentration gradient in the medulla of the kidney. The descending
 limb is permeable to water but not ions; water leaves by osmosis into the increasingly concentrated
-medulla. The ascending limb is permeable to ions but not water; $\text{Na}^+$ and $\text{Cl}^-$ are
+medulla. The ascending limb is permeable to ions but not water; $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ are
 actively pumped out, making the medulla increasingly concentrated. This countercurrent multiplier
 mechanism allows the kidney to produce concentrated urine.
 
@@ -572,7 +572,7 @@ The liquid component of blood, making up approximately 55% of blood volume. It c
 
 - Biconcave disc shape increases surface area to volume ratio for gas exchange.
 - No nucleus, allowing more space for haemoglobin.
-- Haemoglobin binds reversibly to oxygen: $\text{Hb} + 4\text{O}_2 \rightleftharpoons \text{HbO}_8$.
+- Haemoglobin binds reversibly to oxygen: $\mathrm{Hb} + 4\mathrm{O}_2 \rightleftharpoons \mathrm{HbO}_8$.
 - In tissues, oxygen dissociates from haemoglobin due to lower oxygen partial pressure and lower pH
   (Bohr effect).
 - Red blood cells have a lifespan of approximately 120 days and are destroyed in the spleen and
@@ -599,7 +599,7 @@ accumulate at the site and release clotting factors. This triggers the clotting 
 
 **Worked Example: The importance of calcium ions in blood clotting.**
 
-Calcium ions ($\text{Ca}^{2+}$) are essential cofactors at multiple steps in the clotting cascade.
+Calcium ions ($\mathrm{Ca}^{2+}$) are essential cofactors at multiple steps in the clotting cascade.
 Without calcium ions, thromboplastin cannot convert prothrombin to thrombin, and thrombin cannot
 convert fibrinogen to fibrin. This is why calcium chelators (substances that bind and remove calcium
 ions) such as EDTA are used as anticoagulants in blood collection tubes. Similarly, the

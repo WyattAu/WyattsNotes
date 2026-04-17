@@ -429,8 +429,8 @@ temperature but never quite reaches it.
 
 :::info[Example]
 
-A cup of coffee at $90^\circ\text{C}$ is placed in a room at $20^\circ\text{C}$. After 10 minutes,
-the coffee is $60^\circ\text{C}$. When will the coffee reach $35^\circ\text{C}$?
+A cup of coffee at $90^\circ\mathrm{C}$ is placed in a room at $20^\circ\mathrm{C}$. After 10 minutes,
+the coffee is $60^\circ\mathrm{C}$. When will the coffee reach $35^\circ\mathrm{C}$?
 
 $$
 T(t) = 20 + 70e^{-kt}
@@ -733,8 +733,8 @@ method would be.
 3. Use Euler's method with $\Delta x = 0.25$ and two steps to approximate $y(0.5)$ for
    $\frac{dy}{dx} = x^2 + y$, $y(0) = 1$.
 
-4. A body at $80^\circ\text{C}$ is placed in a room at $25^\circ\text{C}$. After 30 minutes, the
-   body is at $50^\circ\text{C}$. When will it reach $30^\circ\text{C}$?
+4. A body at $80^\circ\mathrm{C}$ is placed in a room at $25^\circ\mathrm{C}$. After 30 minutes, the
+   body is at $50^\circ\mathrm{C}$. When will it reach $30^\circ\mathrm{C}$?
 
 5. For $\displaystyle\frac{dy}{dx} = y(y - 2)(y - 5)$, find all equilibrium solutions and classify
    their stability. Draw the phase line.

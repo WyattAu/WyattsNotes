@@ -39,7 +39,7 @@ sugar-phosphate backbones on the outside.
 **Semi-conservative replication:** Each new DNA molecule contains one original strand and one new
 strand.
 
-**Meselson-Stahl experiment (1958):** Used heavy (${}^{15}\text{N}$) and light (${}^{14}\text{N}$)
+**Meselson-Stahl experiment (1958):** Used heavy (${}^{15}\mathrm{N}$) and light (${}^{14}\mathrm{N}$)
 nitrogen to demonstrate semi-conservative replication.
 
 **Process:**
@@ -53,15 +53,15 @@ nitrogen to demonstrate semi-conservative replication.
 
 **Worked Example: The Meselson-Stahl experiment.**
 
-Bacteria are grown in medium containing ${}^{15}\text{N}$ (heavy nitrogen) for many generations. All
-their DNA is heavy (${}^{15}\text{N}/{}^{15}\text{N}$). They are then transferred to medium
-containing ${}^{14}\text{N}$ (light nitrogen) and allowed to replicate once.
+Bacteria are grown in medium containing ${}^{15}\mathrm{N}$ (heavy nitrogen) for many generations. All
+their DNA is heavy (${}^{15}\mathrm{N}/{}^{15}\mathrm{N}$). They are then transferred to medium
+containing ${}^{14}\mathrm{N}$ (light nitrogen) and allowed to replicate once.
 
 If replication is semi-conservative: each new DNA molecule contains one heavy strand and one light
-strand (${}^{15}\text{N}/{}^{14}\text{N}$). After one generation, all DNA is intermediate density.
+strand (${}^{15}\mathrm{N}/{}^{14}\mathrm{N}$). After one generation, all DNA is intermediate density.
 
-After two generations: 50% intermediate (${}^{15}\text{N}/{}^{14}\text{N}$) and 50% light
-(${}^{14}\text{N}/{}^{14}\text{N}$). This is exactly what Meselson and Stahl observed, confirming
+After two generations: 50% intermediate (${}^{15}\mathrm{N}/{}^{14}\mathrm{N}$) and 50% light
+(${}^{14}\mathrm{N}/{}^{14}\mathrm{N}$). This is exactly what Meselson and Stahl observed, confirming
 semi-conservative replication.
 
 ### Protein Synthesis
@@ -131,9 +131,9 @@ The **lac operon** in E. coli controls the metabolism of lactose:
 **Example:** In pea plants, tall (T) is dominant over dwarf (t). Cross a heterozygous tall plant
 with a dwarf plant.
 
-Parents: $\text{Tt} \times \text{tt}$
+Parents: $\mathrm{Tt} \times \mathrm{tt}$
 
-Gametes: $\text{T}, \text{t} \times \text{t}$
+Gametes: $\mathrm{T}, \mathrm{t} \times \mathrm{t}$
 
 |     | T   | t   |
 | --- | --- | --- |
@@ -163,12 +163,12 @@ a single recessive allele will be expressed.
 
 **Example:** Haemophilia is caused by a recessive allele on the X chromosome.
 
-If a carrier female ($\text{X}^H\text{X}^h$) marries a normal male ($\text{X}^H\text{Y}$):
+If a carrier female ($\mathrm{X}^H\mathrm{X}^h$) marries a normal male ($\mathrm{X}^H\mathrm{Y}$):
 
-|              | $\text{X}^H$                            | $\text{Y}$                               |
+|              | $\mathrm{X}^H$                            | $\mathrm{Y}$                               |
 | ------------ | --------------------------------------- | ---------------------------------------- |
-| $\text{X}^H$ | $\text{X}^H\text{X}^H$ (normal female)  | $\text{X}^H\text{Y}$ (normal male)       |
-| $\text{X}^h$ | $\text{X}^H\text{X}^h$ (carrier female) | $\text{X}^h\text{Y}$ (haemophiliac male) |
+| $\mathrm{X}^H$ | $\mathrm{X}^H\mathrm{X}^H$ (normal female)  | $\mathrm{X}^H\mathrm{Y}$ (normal male)       |
+| $\mathrm{X}^h$ | $\mathrm{X}^H\mathrm{X}^h$ (carrier female) | $\mathrm{X}^h\mathrm{Y}$ (haemophiliac male) |
 
 Probability of a haemophiliac son: 1/4 (25%).
 
@@ -180,10 +180,10 @@ Example: $\text{CRCR}$ (red) $\times$ $\text{CWCW}$ (white) $\to$ $\text{CRCW}$ 
 
 **Codominance:** Both alleles are expressed in the heterozygote.
 
-Example: Blood groups. $\text{I}^\text{A}\text{I}^\text{B}$ = blood group AB.
+Example: Blood groups. $\mathrm{I}^\mathrm{A}\mathrm{I}^\mathrm{B}$ = blood group AB.
 
-**Multiple alleles:** More than two alleles for a gene (e.g., blood groups: $\text{I}^\text{A}$,
-$\text{I}^\text{B}$, $i$).
+**Multiple alleles:** More than two alleles for a gene (e.g., blood groups: $\mathrm{I}^\mathrm{A}$,
+$\mathrm{I}^\mathrm{B}$, $i$).
 
 **Epistasis:** One gene affects the expression of another gene.
 
@@ -691,7 +691,7 @@ sequence itself.
 
 **DNA methylation:**
 
-- Methyl groups ($-\text{CH}_3$) are added to cytosine bases, particularly at CpG islands near gene
+- Methyl groups ($-\mathrm{CH}_3$) are added to cytosine bases, particularly at CpG islands near gene
   promoters.
 - Methylation generally silences gene expression by preventing transcription factors from binding to
   the promoter.

@@ -17,15 +17,15 @@ $$
 \vec{p} = m\vec{v}
 $$
 
-Momentum is a vector quantity with SI units of $\text{kg} \cdot \text{m/s}$.
+Momentum is a vector quantity with SI units of $\mathrm{kg} \cdot \text{m/s}$.
 
 ### Newton's Second Law in Terms of Momentum
 
 $$
-\vec{F}_{\text{net}} = \frac{d\vec{p}}{dt}
+\vec{F}_{\mathrm{net}} = \frac{d\vec{p}}{dt}
 $$
 
-When mass is constant: $\vec{F}_{\text{net}} = m\vec{a}$.
+When mass is constant: $\vec{F}_{\mathrm{net}} = m\vec{a}$.
 
 ### Why Momentum Is More Fundamental Than Force
 
@@ -40,7 +40,7 @@ mechanics.
 Impulse is the change in momentum:
 
 $$
-\vec{J} = \vec{F}_{\text{net}} \Delta t = \Delta\vec{p} = m\vec{v}_f - m\vec{v}_i
+\vec{J} = \vec{F}_{\mathrm{net}} \Delta t = \Delta\vec{p} = m\vec{v}_f - m\vec{v}_i
 $$
 
 For a variable force:
@@ -68,7 +68,7 @@ counting squares.
 The average force during an interaction of duration $\Delta t$ is:
 
 $$
-F_{\text{avg}} = \frac{J}{\Delta t} = \frac{\Delta p}{\Delta t}
+F_{\mathrm{avg}} = \frac{J}{\Delta t} = \frac{\Delta p}{\Delta t}
 $$
 
 This is the constant force that would produce the same impulse over the same time interval.
@@ -86,7 +86,7 @@ J = \Delta p = m(v_f - v_i) = 0.15(-50 - 40) = 0.15(-90) = -13.5 \text{ kg} \cdo
 $$
 
 $$
-F_{\text{avg}} = \frac{J}{\Delta t} = \frac{-13.5}{0.002} = -6750 \text{ N}
+F_{\mathrm{avg}} = \frac{J}{\Delta t} = \frac{-13.5}{0.002} = -6750 \text{ N}
 $$
 
 The magnitude is $6750 \text{ N}$, directed opposite to the initial pitch.
@@ -113,14 +113,14 @@ $$
 For a system of $n$ particles, Newton's second law gives:
 
 $$
-\frac{d\vec{P}_{\text{total}}}{dt} = \sum_{i=1}^{n} \vec{F}_i = \sum \vec{F}_{\text{ext}} + \sum \vec{F}_{\text{int}}
+\frac{d\vec{P}_{\text{total}}}{dt} = \sum_{i=1}^{n} \vec{F}_i = \sum \vec{F}_{\mathrm{ext}} + \sum \vec{F}_{\mathrm{int}}
 $$
 
-By Newton's third law, all internal forces cancel in pairs: $\sum \vec{F}_{\text{int}} = 0$.
+By Newton's third law, all internal forces cancel in pairs: $\sum \vec{F}_{\mathrm{int}} = 0$.
 
-Therefore: $\displaystyle\frac{d\vec{P}_{\text{total}}}{dt} = \sum \vec{F}_{\text{ext}}$.
+Therefore: $\displaystyle\frac{d\vec{P}_{\text{total}}}{dt} = \sum \vec{F}_{\mathrm{ext}}$.
 
-If $\sum \vec{F}_{\text{ext}} = 0$, then $\vec{P}_{\text{total}}$ is constant.
+If $\sum \vec{F}_{\mathrm{ext}} = 0$, then $\vec{P}_{\text{total}}$ is constant.
 
 $\blacksquare$
 
@@ -295,19 +295,19 @@ $\cos\theta\cos\phi = \sin\theta\sin\phi \implies \cos(\theta + \phi) = 0 \impli
 The center of mass of a system of particles is:
 
 $$
-\vec{r}_{\text{cm}} = \frac{\sum m_i \vec{r}_i}{\sum m_i} = \frac{\sum m_i \vec{r}_i}{M}
+\vec{r}_{\mathrm{cm}} = \frac{\sum m_i \vec{r}_i}{\sum m_i} = \frac{\sum m_i \vec{r}_i}{M}
 $$
 
 For a continuous object:
 
 $$
-\vec{r}_{\text{cm}} = \frac{1}{M}\int \vec{r}\, dm
+\vec{r}_{\mathrm{cm}} = \frac{1}{M}\int \vec{r}\, dm
 $$
 
 ### Motion of the Center of Mass
 
 $$
-M\vec{a}_{\text{cm}} = \sum \vec{F}_{\text{ext}}
+M\vec{a}_{\mathrm{cm}} = \sum \vec{F}_{\mathrm{ext}}
 $$
 
 The center of mass of a system moves as if all external forces were applied to a single particle of
@@ -319,7 +319,7 @@ In any collision, the velocity of the center of mass does not change (since ther
 forces during the brief collision):
 
 $$
-\vec{v}_{\text{cm}} = \frac{m_1 \vec{v}_1 + m_2 \vec{v}_2}{m_1 + m_2} = \text{constant}
+\vec{v}_{\mathrm{cm}} = \frac{m_1 \vec{v}_1 + m_2 \vec{v}_2}{m_1 + m_2} = \text{constant}
 $$
 
 ### Center of Mass Frame
@@ -420,7 +420,7 @@ The $F$-vs-$t$ graph is a triangle with base $8 \text{ ms}$ and height $800 \tex
 
 $$J = \frac{1}{2} \times 0.008 \times 800 = 3.2 \text{ N s}$$
 
-$$F_{\text{avg}} = \frac{J}{\Delta t} = \frac{3.2}{0.008} = 400 \text{ N}$$
+$$F_{\mathrm{avg}} = \frac{J}{\Delta t} = \frac{3.2}{0.008} = 400 \text{ N}$$
 
 The average force is half the peak force, which is always the case for a triangular force profile.
 
@@ -633,7 +633,7 @@ $$J = \int_0^2 20t \, dt + \int_2^4 (40 - 10t) \, dt$$
 
 $$J = \left[ 10t^2 \right]_0^2 + \left[ 40t - 5t^2 \right]_2^4$$
 
-$$J = (40 - 0) + (160 - 80 - 80 + 20) = 40 + 20 = 60 \text{ N}\cdot\text{s}$$
+$$J = (40 - 0) + (160 - 80 - 80 + 20) = 40 + 20 = 60 \text{ N}\cdot\mathrm{s}$$
 
 **Step 2: Final velocity**
 
@@ -641,7 +641,7 @@ $$J = mv - mu = 2v - 0 \implies v = 30 \text{ m/s}$$
 
 **Step 3: Average force**
 
-$$F_{\text{avg}} = \frac{J}{\Delta t} = \frac{60}{4} = 15 \text{ N}$$
+$$F_{\mathrm{avg}} = \frac{J}{\Delta t} = \frac{60}{4} = 15 \text{ N}$$
 
 ### Example 18: Perfectly Inelastic Collision with Rotation
 
@@ -669,14 +669,14 @@ block swings past the horizontal. Let us check the velocity at the top of the sw
 
 At the top of a vertical circle, the block must have enough speed to maintain tension:
 
-$$V_{\text{top}}^2 = V^2 - 4gL = 400 - 4 \times 9.8 \times 2 = 400 - 78.4 = 321.6$$
+$$V_{\mathrm{top}}^2 = V^2 - 4gL = 400 - 4 \times 9.8 \times 2 = 400 - 78.4 = 321.6$$
 
-$$V_{\text{top}} = 17.9 \text{ m/s}$$
+$$V_{\mathrm{top}} = 17.9 \text{ m/s}$$
 
-Since $V_{\text{top}} \gt 0$, the block completes full circles. The string remains taut at the top
+Since $V_{\mathrm{top}} \gt 0$, the block completes full circles. The string remains taut at the top
 if:
 
-$$T + (m+M)g = \frac{(m+M)V_{\text{top}}^2}{L}$$
+$$T + (m+M)g = \frac{(m+M)V_{\mathrm{top}}^2}{L}$$
 
 $$T = 2 \times \frac{321.6}{2} - 2 \times 9.8 = 321.6 - 19.6 = 302 \text{ N}$$
 

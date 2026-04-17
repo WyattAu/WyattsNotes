@@ -119,7 +119,7 @@ $$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.77 \times 10^6}{7670} \approx 5544 
 
 $$F = \frac{Gm_1 m_2}{r^2}$$
 
-where $G = 6.67 \times 10^{-11} \text{ N m}^2 \text{kg}^{-2}$.
+where $G = 6.67 \times 10^{-11} \text{ N m}^2 \mathrm{kg}^{-2}$.
 
 ### Why Gravity Is an Inverse-Square Law
 
@@ -151,11 +151,11 @@ total energy.
 
 **Escape Velocity:**
 
-$$v_{\text{esc}} = \sqrt{\frac{2GM}{r}}$$
+$$v_{\mathrm{esc}} = \sqrt{\frac{2GM}{r}}$$
 
 **Example:** Calculate the escape velocity from Earth's surface.
 
-$$v_{\text{esc}} = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.37 \times 10^6}} = \sqrt{\frac{7.966 \times 10^{14}}{6.37 \times 10^6}} = \sqrt{1.251 \times 10^8} \approx 11180 \text{ m/s} \approx 11.2 \text{ km/s}$$
+$$v_{\mathrm{esc}} = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.37 \times 10^6}} = \sqrt{\frac{7.966 \times 10^{14}}{6.37 \times 10^6}} = \sqrt{1.251 \times 10^8} \approx 11180 \text{ m/s} \approx 11.2 \text{ km/s}$$
 
 ---
 
@@ -168,7 +168,7 @@ Stars are born from clouds of gas and dust (nebulae) that collapse under gravity
 **Main Sequence:** A star is in equilibrium when the outward radiation pressure balances
 gravitational collapse. Hydrogen fuses to form helium in the core.
 
-$$4^1_1\text{H} \to ^4_2\text{He} + 2^0_{+1}\text{e} + 2\nu_e + \text{energy}$$
+$$4^1_1\mathrm{H} \to ^4_2\mathrm{He} + 2^0_{+1}\mathrm{e} + 2\nu_e + \text{energy}$$
 
 **Evolution depends on mass:**
 
@@ -197,12 +197,12 @@ The HR diagram plots luminosity (or absolute magnitude) against temperature (or 
 
 **Wien's Displacement Law:**
 
-$$\lambda_{\text{max}} T = 2.898 \times 10^{-3} \text{ m K}$$
+$$\lambda_{\mathrm{max}} T = 2.898 \times 10^{-3} \text{ m K}$$
 
 **Example:** A star has surface temperature $5800 \text{ K}$. Find the peak wavelength of its
 radiation.
 
-$$\lambda_{\text{max}} = \frac{2.898 \times 10^{-3}}{5800} = 5.0 \times 10^{-7} \text{ m} = 500 \text{ nm}$$
+$$\lambda_{\mathrm{max}} = \frac{2.898 \times 10^{-3}}{5800} = 5.0 \times 10^{-7} \text{ m} = 500 \text{ nm}$$
 
 This is in the visible spectrum (green-yellow).
 
@@ -210,7 +210,7 @@ This is in the visible spectrum (green-yellow).
 
 $$L = 4\pi r^2 \sigma T^4$$
 
-where $\sigma = 5.67 \times 10^{-8} \text{ W m}^{-2} \text{K}^{-4}$.
+where $\sigma = 5.67 \times 10^{-8} \text{ W m}^{-2} \mathrm{K}^{-4}$.
 
 ### Universal Gravitation and Orbits
 
@@ -235,7 +235,7 @@ $$= 2\pi \times 5.030 \times 10^6 \approx 3.16 \times 10^7 \text{ s} \approx 365
 
 $$v = H_0 d$$
 
-where $H_0 \approx 70 \text{ km s}^{-1} \text{Mpc}^{-1}$ is the Hubble constant, $v$ is the
+where $H_0 \approx 70 \text{ km s}^{-1} \mathrm{Mpc}^{-1}$ is the Hubble constant, $v$ is the
 recession velocity, and $d$ is the distance.
 
 **Redshift:** As the universe expands, light from distant galaxies is shifted to longer wavelengths.
@@ -546,7 +546,7 @@ $$1 \text{ pc} = 3.086 \times 10^{16} \text{ m}$$
 $$d = 12.99 \times 3.086 \times 10^{16} = 4.01 \times 10^{17} \text{ m}$$
 
 :::warning
-The Gaia space telescope can measure parallaxes down to about $10 \text{ }\mu\text{as}$
+The Gaia space telescope can measure parallaxes down to about $10 \text{ }\mu\mathrm{as}$
 (microarcseconds), corresponding to distances of about $100 \text{ kpc}$. Ground-based observations
 are limited to parallaxes above about $0.01 \text{ arcseconds}$.
 :::
@@ -614,7 +614,7 @@ $$T^2 = \frac{4\pi^2}{GM} r^3$$
     $-100 \text{ m/s}$, and explain qualitatively what happens to the orbit.
 
 24. The Sun has an apparent brightness of $1.37 \times 10^3 \text{ W/m}^2$ at Earth. Calculate the
-    luminosity of the Sun and its absolute magnitude (reference: $M_{\text{ref}} = 4.83$).
+    luminosity of the Sun and its absolute magnitude (reference: $M_{\mathrm{ref}} = 4.83$).
 
 25. Explain how astronomers distinguish between redshift due to the Doppler effect (peculiar
     velocity) and cosmological redshift due to the expansion of space.
@@ -694,13 +694,13 @@ At depth $d$, the distance from the centre is $r = R_E - d = 6371 - 2000 = 4371 
 
 **Step 2: Mass enclosed within radius $r$**
 
-For uniform density: $M_{\text{enc}} = M_E \times \left(\frac{r}{R_E}\right)^3$
+For uniform density: $M_{\mathrm{enc}} = M_E \times \left(\frac{r}{R_E}\right)^3$
 
-$$M_{\text{enc}} = 5.97 \times 10^{24} \times \left(\frac{4371}{6371}\right)^3 = 5.97 \times 10^{24} \times (0.686)^3 = 5.97 \times 10^{24} \times 0.323 = 1.928 \times 10^{24} \text{ kg}$$
+$$M_{\mathrm{enc}} = 5.97 \times 10^{24} \times \left(\frac{4371}{6371}\right)^3 = 5.97 \times 10^{24} \times (0.686)^3 = 5.97 \times 10^{24} \times 0.323 = 1.928 \times 10^{24} \text{ kg}$$
 
 **Step 3: Gravitational field strength**
 
-$$g = \frac{GM_{\text{enc}}}{r^2} = \frac{6.67 \times 10^{-11} \times 1.928 \times 10^{24}}{(4.371 \times 10^6)^2}$$
+$$g = \frac{GM_{\mathrm{enc}}}{r^2} = \frac{6.67 \times 10^{-11} \times 1.928 \times 10^{24}}{(4.371 \times 10^6)^2}$$
 
 $$= \frac{1.286 \times 10^{14}}{1.911 \times 10^{13}} = 6.73 \text{ m/s}^2$$
 

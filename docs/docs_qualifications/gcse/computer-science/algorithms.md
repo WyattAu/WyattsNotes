@@ -207,12 +207,12 @@ discarding either half.
 
 **Proof sketch.** Let the sorted array be $a_0 \le a_1 \le \cdots \le a_{n-1}$. Suppose the target
 $t$ exists at index $k$. At each step, the algorithm maintains the invariant that
-$a_{\text{low}}
-\le t \le a_{\text{high}}$. If $a_{\text{mid}} \lt t$, then by monotonicity every
-element at index $\le \text{mid}$ is also $\lt t$, so $k \gt \text{mid}$ and we safely set
-$\text{low} = \text{mid}
+$a_{\mathrm{low}}
+\le t \le a_{\text{high}}$. If $a_{\mathrm{mid}} \lt t$, then by monotonicity every
+element at index $\le \mathrm{mid}$ is also $\lt t$, so $k \gt \mathrm{mid}$ and we safely set
+$\mathrm{low} = \mathrm{mid}
 
-- 1$. The argument is symmetric for the other case. The loop terminates when $\text{low} \gt
+- 1$. The argument is symmetric for the other case. The loop terminates when $\mathrm{low} \gt
 \text{high}$,
   meaning the search space is empty and $t$ does not exist in the array.
 

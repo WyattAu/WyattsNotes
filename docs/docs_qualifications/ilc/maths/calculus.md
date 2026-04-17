@@ -351,11 +351,11 @@ We need $f'(c) = 2c = 4$, so $c = 2$. Since $1 < 2 < 3$, the MVT is verified.
 of the area when $r = 5\text{ cm}$.
 
 $$
-A = \pi r^2 \implies \frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi(5)(3) = 30\pi \text{ cm}^2/\text{s}
+A = \pi r^2 \implies \frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi(5)(3) = 30\pi \text{ cm}^2/\mathrm{s}
 $$
 
 **Example (HL):** A conical tank with height 10 m and base radius 5 m is being filled with water at
-a rate of $3\text{ m}^3/\text{min}$. How fast is the water level rising when the water is 4 m deep?
+a rate of $3\text{ m}^3/\mathrm{min}$. How fast is the water level rising when the water is 4 m deep?
 
 The tank has similar cross-sections, so $\frac{r}{h} = \frac{5}{10} = \frac{1}{2}$, giving
 $r = h/2$.

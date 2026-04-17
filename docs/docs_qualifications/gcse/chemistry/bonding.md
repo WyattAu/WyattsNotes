@@ -31,8 +31,8 @@ the ionic compound together.
 
 **Example: Sodium chloride (NaCl)**
 
-$$\text{Na} \to \text{Na}^+ + e^-$$ $$\text{Cl} + e^- \to \text{Cl}^-$$
-$$\text{Na}^+ + \text{Cl}^- \to \text{NaCl}$$
+$$\mathrm{Na} \to \mathrm{Na}^+ + e^-$$ $$\mathrm{Cl} + e^- \to \mathrm{Cl}^-$$
+$$\mathrm{Na}^+ + \mathrm{Cl}^- \to \text{NaCl}$$
 
 Sodium (Group 1) loses one electron to achieve a full outer shell (like neon). Chlorine (Group 7)
 gains one electron to achieve a full outer shell (like argon).
@@ -73,21 +73,21 @@ the receiving atom.
 Magnesium ($2, 8, 2$) loses 2 electrons to form Mg$^{2+}$. Oxygen ($2, 6$) gains 2 electrons to form
 O$^{2-}$.
 
-$$\text{Mg} + \text{O} \to \text{Mg}^{2+} + \text{O}^{2-}$$
+$$\mathrm{Mg} + \mathrm{O} \to \mathrm{Mg}^{2+} + \mathrm{O}^{2-}$$
 
 **Example: Calcium chloride (CaCl$_2$)**
 
 Calcium ($2, 8, 8, 2$) loses 2 electrons. Each chlorine ($2, 8, 7$) gains 1 electron. Two chlorine
 atoms are needed.
 
-$$\text{Ca} + 2\text{Cl} \to \text{Ca}^{2+} + 2\text{Cl}^-$$
+$$\mathrm{Ca} + 2\mathrm{Cl} \to \mathrm{Ca}^{2+} + 2\mathrm{Cl}^-$$
 
 **Example: Sodium oxide (Na$_2$O)**
 
 Each sodium ($2, 8, 1$) loses 1 electron. Oxygen ($2, 6$) gains 2 electrons. Two sodium atoms are
 needed.
 
-$$2\text{Na} + \text{O} \to 2\text{Na}^+ + \text{O}^{2-}$$
+$$2\mathrm{Na} + \mathrm{O} \to 2\mathrm{Na}^+ + \mathrm{O}^{2-}$$
 
 **Example: Aluminium oxide (Al$_2$O$_3$)**
 
@@ -95,7 +95,7 @@ Each aluminium ($2, 8, 3$) loses 3 electrons to form Al$^{3+}$. Each oxygen gain
 form O$^{2-}$. The lowest common multiple of 3 and 2 is 6, so we need two aluminium atoms and three
 oxygen atoms.
 
-$$2\text{Al} + 3\text{O} \to 2\text{Al}^{3+} + 3\text{O}^{2-}$$
+$$2\mathrm{Al} + 3\mathrm{O} \to 2\mathrm{Al}^{3+} + 3\mathrm{O}^{2-}$$
 
 **Worked Example.** Draw the dot and cross diagram for calcium fluoride (CaF$_2$).
 
@@ -172,11 +172,11 @@ $$F \propto \frac{q_1 \cdot q_2}{r^2}$$
 where $q_1$ and $q_2$ are the ion charges and $r$ is the distance between ion centres. For compounds
 with higher charges (e.g. MgO with $2+$ and $2-$) and smaller ions (shorter $r$), the forces are
 much stronger and the melting point is much higher. This explains why MgO melts at
-$2852^{\circ}\text{C}$ while NaCl melts at only $801^{\circ}\text{C}$.
+$2852^{\circ}\mathrm{C}$ while NaCl melts at only $801^{\circ}\mathrm{C}$.
 
 ### 1.7 Comparison of Ionic Compound Properties
 
-| Compound    | Ion Charges | Melting Point (${}^{\circ}\text{C}$) | Solubility in Water |
+| Compound    | Ion Charges | Melting Point (${}^{\circ}\mathrm{C}$) | Solubility in Water |
 | ----------- | ----------- | ------------------------------------ | ------------------- |
 | NaCl        | $+1, -1$    | 801                                  | Soluble             |
 | MgO         | $+2, -2$    | 2852                                 | Slightly soluble    |
@@ -203,7 +203,7 @@ together.
 
 **Hydrogen (H$_2$):** Each hydrogen atom has 1 electron. They share one pair.
 
-$$\text{H} \cdot + \cdot \text{H} \to \text{H} - \text{H}$$
+$$\mathrm{H} \cdot + \cdot \mathrm{H} \to \mathrm{H} - \mathrm{H}$$
 
 **Water (H$_2$O):** Oxygen has 6 outer electrons and needs 2 more. Each hydrogen has 1 electron.
 
@@ -262,7 +262,7 @@ The distinction between intramolecular bonds (within molecules) and intermolecul
 molecules) is one of the most important ideas in chemistry. The covalent bonds inside a water
 molecule are strong (about 464 kJ/mol for O-H), but the hydrogen bonds between water molecules are
 much weaker (about 20 kJ/mol). It is these weaker forces that are overcome when water boils at
-$100^{\circ}\text{C}$.
+$100^{\circ}\mathrm{C}$.
 
 ### 2.4 Bonding in Giant Covalent Structures
 
@@ -270,7 +270,7 @@ $100^{\circ}\text{C}$.
 tetrahedral arrangement. This creates a very rigid, three-dimensional lattice.
 
 - Very hard (hardest natural substance)
-- Very high melting point ($\gt 3500^{\circ}\text{C}$)
+- Very high melting point ($\gt 3500^{\circ}\mathrm{C}$)
 - Does not conduct electricity (no free electrons)
 - Insoluble in all solvents
 
@@ -313,7 +313,7 @@ properties. They are used in composite materials and electronics.
 | Structure               | Tetrahedral, 3D giant lattice          | Layers of hexagonal rings        |
 | Hardness                | Extremely hard                         | Soft and slippery                |
 | Electrical conductivity | Does not conduct                       | Conducts (delocalised electrons) |
-| Melting point           | Very high ($\gt 3500^{\circ}\text{C}$) | Very high                        |
+| Melting point           | Very high ($\gt 3500^{\circ}\mathrm{C}$) | Very high                        |
 | Uses                    | Cutting tools, jewellery               | Pencils, lubricants, electrodes  |
 
 ### 2.6 Bond Polarity
@@ -540,7 +540,7 @@ substance has changed state.
 During boiling, the energy supplied is used to break the hydrogen bonds and other intermolecular
 forces between water molecules, converting liquid water to water vapour. This energy does not
 increase the kinetic energy of the molecules, so the temperature remains constant at
-$100^{\circ}\text{C}$ until all the water has boiled.
+$100^{\circ}\mathrm{C}$ until all the water has boiled.
 
 **Worked Example.** Explain the shape of a cooling curve for a pure substance.
 
@@ -619,8 +619,8 @@ F$_2$ &lt; Cl$_2$ &lt; Br$_2$. All three have only London dispersion forces. As 
 electrons increases (F$_2$: 18, Cl$_2$: 34, Br$_2$: 70), London forces become stronger, requiring
 more energy to overcome. Hence the boiling point increases.
 
-**Worked Example.** Explain why ethanol (C$_2$H$_5$OH, boiling point $78^{\circ}\text{C}$) has a
-much higher boiling point than dimethyl ether (CH$_3$OCH$_3$, boiling point $-24^{\circ}\text{C}$)
+**Worked Example.** Explain why ethanol (C$_2$H$_5$OH, boiling point $78^{\circ}\mathrm{C}$) has a
+much higher boiling point than dimethyl ether (CH$_3$OCH$_3$, boiling point $-24^{\circ}\mathrm{C}$)
 despite both having the molecular formula C$_2$H$_6$O.
 
 Both molecules have the same number of electrons, so London forces are similar. However, ethanol can
@@ -662,7 +662,7 @@ proportion of atoms are on the surface, available for catalysis or other reactio
 
 ### 6.5 Summary: Intermolecular Forces and Boiling Points
 
-| Substance | Molar Mass (g/mol) | IMF Type               | Boiling Point (${}^{\circ}\text{C}$) |
+| Substance | Molar Mass (g/mol) | IMF Type               | Boiling Point (${}^{\circ}\mathrm{C}$) |
 | --------- | ------------------ | ---------------------- | ------------------------------------ |
 | CH$_4$    | 16                 | London only            | -161                                 |
 | NH$_3$    | 17                 | Hydrogen bonding       | -33                                  |
@@ -722,7 +722,7 @@ points compared to London forces, and London forces increase with molar mass.
 
 6. State the type of bonding in each of the following: (a) NaBr, (b) H$_2$O, (c) SiO$_2$, (d) Cu.
 
-7. Explain why ice melts at $0^{\circ}\text{C}$ but water does not boil until $100^{\circ}\text{C}$,
+7. Explain why ice melts at $0^{\circ}\mathrm{C}$ but water does not boil until $100^{\circ}\mathrm{C}$,
    in terms of the energy required to overcome forces.
 
 8. Draw a dot and cross diagram for ammonia (NH$_3$).
@@ -745,8 +745,8 @@ points compared to London forces, and London forces increase with molar mass.
 
 16. Draw a dot and cross diagram for nitrogen (N$_2$), showing all outer electrons clearly.
 
-17. Explain why the boiling point of ethanol ($78^{\circ}\text{C}$) is much higher than that of
-    dimethyl ether ($-24^{\circ}\text{C}$) despite both having the same molecular formula
+17. Explain why the boiling point of ethanol ($78^{\circ}\mathrm{C}$) is much higher than that of
+    dimethyl ether ($-24^{\circ}\mathrm{C}$) despite both having the same molecular formula
     (C$_2$H$_6$O).
 
 18. Compare and contrast the structure and bonding in diamond and silicon dioxide.

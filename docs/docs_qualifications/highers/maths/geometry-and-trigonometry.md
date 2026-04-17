@@ -345,7 +345,7 @@ $$
 $$
 
 $$
-A = \arcsin(0.6372) \approx 39.6° \quad \text{or} \quad A = 180° - 39.6° = 140.4°
+A = \arcsin(0.6372) \approx 39.6° \quad \mathrm{or} \quad A = 180° - 39.6° = 140.4°
 $$
 
 Both values are valid since $A + B = 39.6° + 55° = 94.6° < 180°$ and

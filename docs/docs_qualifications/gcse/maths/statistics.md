@@ -129,7 +129,7 @@ $$\text{Estimated mean} = \frac{8230}{50} = 164.6 \text{ cm}$$
 
 To find the median class: find the position $\frac{n}{2}$ and locate it in the cumulative frequency.
 
-**Interquartile range (IQR):** $\text{IQR} = Q_3 - Q_1$.
+**Interquartile range (IQR):** $\mathrm{IQR} = Q_3 - Q_1$.
 
 This is a **measure of spread** that is not affected by outliers.
 
@@ -168,7 +168,7 @@ Simple but affected by outliers.
 
 ### 3.2 Interquartile Range
 
-$$\text{IQR} = Q_3 - Q_1$$
+$$\mathrm{IQR} = Q_3 - Q_1$$
 
 Where $Q_1$ is the lower quartile (25th percentile) and $Q_3$ is the upper quartile (75th
 percentile).
@@ -191,15 +191,15 @@ A **box plot** displays the minimum, $Q_1$, median, $Q_3$, and maximum.
 - Median position: 5.5, so median $= \frac{10 + 12}{2} = 11$
 - $Q_3$ position: $\frac{33}{4} = 8.25$, so $Q_3 = 18 + 0.25(22 - 18) = 19$
 - Maximum: 25
-- $\text{IQR} = 19 - 7.75 = 11.25$
+- $\mathrm{IQR} = 19 - 7.75 = 11.25$
 
 ### 3.4 Outliers
 
-A common definition: a value is an **outlier** if it is more than $1.5 \times \text{IQR}$ below
+A common definition: a value is an **outlier** if it is more than $1.5 \times \mathrm{IQR}$ below
 $Q_1$ or above $Q_3$.
 
-$$\text{Lower fence} = Q_1 - 1.5 \times \text{IQR}$$
-$$\text{Upper fence} = Q_3 + 1.5 \times \text{IQR}$$
+$$\text{Lower fence} = Q_1 - 1.5 \times \mathrm{IQR}$$
+$$\text{Upper fence} = Q_3 + 1.5 \times \mathrm{IQR}$$
 
 **Worked Example.** Using the data above, identify any outliers.
 
@@ -370,7 +370,7 @@ $$P(\text{both red}) = \frac{3}{8} \times \frac{2}{7} = \frac{6}{56} = \frac{3}{
 **Worked Example (Higher Tier).** Using the same bag, find the probability that the two balls are
 different colours.
 
-$$P(\text{different}) = P(\text{RB}) + P(\text{BR}) = \frac{3}{8} \times \frac{5}{7} + \frac{5}{8} \times \frac{3}{7} = \frac{15}{56} + \frac{15}{56} = \frac{30}{56} = \frac{15}{28}$$
+$$P(\text{different}) = P(\mathrm{RB}) + P(\mathrm{BR}) = \frac{3}{8} \times \frac{5}{7} + \frac{5}{8} \times \frac{3}{7} = \frac{15}{56} + \frac{15}{56} = \frac{30}{56} = \frac{15}{28}$$
 
 **Worked Example (Higher Tier).** A fair coin is tossed three times. Find the probability of getting
 exactly two heads.
@@ -557,7 +557,7 @@ This process is called **standardisation** and produces data with mean 0 and sta
 An outlier is a value that lies far from the other data points. There are several ways to detect
 outliers:
 
-- Values below $Q_1 - 1.5 \times \text{IQR}$ or above $Q_3 + 1.5 \times \text{IQR}$.
+- Values below $Q_1 - 1.5 \times \mathrm{IQR}$ or above $Q_3 + 1.5 \times \mathrm{IQR}$.
 - Values more than 2 standard deviations from the mean (for approximately normal data).
 
 **Impact on measures:**
@@ -578,11 +578,11 @@ Tree diagrams are useful for visualising multi-stage experiments where events ar
 **Worked Example.** A bag contains 4 red and 6 blue counters. Two counters are drawn without
 replacement. Find the probability that both are the same colour.
 
-First draw: $P(\text{red}) = 4/10 = 0.4$, $P(\text{blue}) = 6/10 = 0.6$.
+First draw: $P(\mathrm{red}) = 4/10 = 0.4$, $P(\text{blue}) = 6/10 = 0.6$.
 
-Second draw (if first was red): $P(\text{red}) = 3/9 = 1/3$, $P(\text{blue}) = 6/9 = 2/3$.
+Second draw (if first was red): $P(\mathrm{red}) = 3/9 = 1/3$, $P(\text{blue}) = 6/9 = 2/3$.
 
-Second draw (if first was blue): $P(\text{red}) = 4/9$, $P(\text{blue}) = 5/9$.
+Second draw (if first was blue): $P(\mathrm{red}) = 4/9$, $P(\text{blue}) = 5/9$.
 
 $$
 P(\text{both red}) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}
@@ -656,7 +656,7 @@ The area under a frequency polygon equals the total frequency (just like a histo
 10. The heights of 100 students are summarised in a cumulative frequency table. Explain how you
     would estimate the interquartile range from this table.
 
-11. A biased dice has $P(\text{even}) = 0.6$ and $P(\text{odd}) = 0.4$. It is rolled twice. Find the
+11. A biased dice has $P(\text{even}) = 0.6$ and $P(\mathrm{odd}) = 0.4$. It is rolled twice. Find the
     probability that the sum is greater than 8.
 
 12. Explain the difference between a histogram and a bar chart, and when each is most appropriate.

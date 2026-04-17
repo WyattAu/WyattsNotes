@@ -271,7 +271,7 @@ V).
 The root-mean-square (RMS) voltage of an AC supply is the DC voltage that would deliver the same
 average power to a resistor.
 
-$$V_{\text{rms}} = \frac{V_{\text{peak}}}{\sqrt{2}}$$
+$$V_{\mathrm{rms}} = \frac{V_{\text{peak}}}{\sqrt{2}}$$
 
 For the UK mains: $V_{\text{peak}} = 230 \times \sqrt{2} \approx 325$ V. When we say the mains
 voltage is 230 V, we mean the RMS voltage. The peak voltage (the maximum instantaneous voltage) is
@@ -422,8 +422,8 @@ $$V = \varepsilon - Ir = 9 - 2 \times 0.5 = 8 \text{ V}$$
 
 6. Describe the function of each of the three wires in a UK mains plug.
 
-7. A thermistor has a resistance of 200 $\Omega$ at $20^{\circ}\text{C}$ and 50 $\Omega$ at
-   $80^{\circ}\text{C}$. It is connected in series with a 100 $\Omega$ fixed resistor to a 12 V
+7. A thermistor has a resistance of 200 $\Omega$ at $20^{\circ}\mathrm{C}$ and 50 $\Omega$ at
+   $80^{\circ}\mathrm{C}$. It is connected in series with a 100 $\Omega$ fixed resistor to a 12 V
    supply. Calculate the current at each temperature.
 
 8. Explain why the national grid uses high voltages for transmission.
@@ -491,17 +491,17 @@ $$P_{12} = I_{12}^2 \times 12 = 0.533^2 \times 12 = 3.41 \text{ W}$$
 ## 9. Worked Example: Potential Divider with a Thermistor
 
 A potential divider circuit consists of a $10 \text{ k}\Omega$ fixed resistor and an NTC thermistor
-in series with a $12 \text{ V}$ supply. At $20^{\circ}\text{C}$, the thermistor resistance is
-$10 \text{ k}\Omega$. At $80^{\circ}\text{C}$, the thermistor resistance is $1 \text{ k}\Omega$. The
+in series with a $12 \text{ V}$ supply. At $20^{\circ}\mathrm{C}$, the thermistor resistance is
+$10 \text{ k}\Omega$. At $80^{\circ}\mathrm{C}$, the thermistor resistance is $1 \text{ k}\Omega$. The
 output voltage is taken across the thermistor.
 
-**At $20^{\circ}\text{C}$:**
+**At $20^{\circ}\mathrm{C}$:**
 
-$$V_{\text{out}} = 12 \times \frac{10000}{10000 + 10000} = 12 \times \frac{1}{2} = 6 \text{ V}$$
+$$V_{\mathrm{out}} = 12 \times \frac{10000}{10000 + 10000} = 12 \times \frac{1}{2} = 6 \text{ V}$$
 
-**At $80^{\circ}\text{C}$:**
+**At $80^{\circ}\mathrm{C}$:**
 
-$$V_{\text{out}} = 12 \times \frac{1000}{10000 + 1000} = 12 \times \frac{1}{11} = 1.09 \text{ V}$$
+$$V_{\mathrm{out}} = 12 \times \frac{1000}{10000 + 1000} = 12 \times \frac{1}{11} = 1.09 \text{ V}$$
 
 As temperature increases, the thermistor resistance decreases, and the output voltage decreases.
 This circuit could be used to trigger a heater when the temperature drops (the output voltage rises
@@ -559,7 +559,7 @@ A household has the following daily usage:
 Calculate the daily energy consumption and the monthly cost at 20 p/kWh.
 
 $$E_{\text{fridge}} = 0.15 \times 24 = 3.6 \text{ kWh}$$
-$$E_{\text{TV}} = 0.12 \times 5 = 0.6 \text{ kWh}$$
+$$E_{\mathrm{TV}} = 0.12 \times 5 = 0.6 \text{ kWh}$$
 $$E_{\text{washing}} = 2.0 \times 1 = 2.0 \text{ kWh}$$
 $$E_{\text{lights}} = 5 \times 0.06 \times 6 = 1.8 \text{ kWh}$$
 $$E_{\text{kettle}} = 2.0 \times 0.3 = 0.6 \text{ kWh}$$
@@ -656,7 +656,7 @@ straight line because the filament heats up as the current increases.
 
 A household uses the following appliances daily: a $2 \text{ kW}$ heater for 4 hours, six
 $10 \text{ W}$ LED lights for 6 hours, a $200 \text{ W}$ TV for 3 hours, and a $3 \text{ kW}$ kettle
-for $0.5 \text{ hours}$. Electricity costs $28 \text{p}$ per kWh. Calculate the daily and monthly
+for $0.5 \text{ hours}$. Electricity costs $28 \mathrm{p}$ per kWh. Calculate the daily and monthly
 (30-day) cost.
 
 **Step 1: Energy used by each appliance**
@@ -751,14 +751,14 @@ series. Only add currents when they meet at a junction (Kirchhoff's first law).
 ### Pitfall 7: Forgetting to Subtract the LED/Component Voltage
 
 When calculating the required series resistor for an LED, the resistor voltage is the supply voltage
-_minus_ the LED forward voltage: $V_R = V_{\text{supply}} - V_{\text{LED}}$. Using just the supply
+_minus_ the LED forward voltage: $V_R = V_{\text{supply}} - V_{\mathrm{LED}}$. Using just the supply
 voltage gives an incorrectly high resistance and the LED will not light.
 
 ### Pitfall 8: Confusing AC and DC in Power Calculations
 
 For DC: $P = IV = I^2R = V^2/R$ using the steady values. For AC: the same formulas apply but using
 _RMS_ values. The peak power is twice the average power for a sinusoidal AC supply:
-$P_{\text{peak}} = 2P_{\text{avg}}$.
+$P_{\text{peak}} = 2P_{\mathrm{avg}}$.
 
 ## Additional Practice Problems
 
@@ -773,8 +773,8 @@ $P_{\text{peak}} = 2P_{\text{avg}}$.
     Calculate the current it draws and explain why it requires a dedicated high-current circuit.
 
 29. A student sets up a circuit with a thermistor and a fixed resistor in series with a
-    $6 \text{ V}$ battery. The thermistor has resistance $2000 \Omega$ at $20°\text{C}$ and
-    $500 \Omega$ at $60°\text{C}$. Calculate the voltage across the thermistor at each temperature.
+    $6 \text{ V}$ battery. The thermistor has resistance $2000 \Omega$ at $20°\mathrm{C}$ and
+    $500 \Omega$ at $60°\mathrm{C}$. Calculate the voltage across the thermistor at each temperature.
 
 30. Explain the difference between conventional current and electron flow. Why do we still use
     conventional current in circuit diagrams?

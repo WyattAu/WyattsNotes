@@ -19,17 +19,17 @@ The **average rate** of a reaction is the change in concentration of a reactant 
 time:
 
 $$
-\text{Rate} = -\frac{1}{a}\frac{\Delta[\text{A}]}{\Delta t} = \frac{1}{b}\frac{\Delta[\text{B}]}{\Delta t}
+\text{Rate} = -\frac{1}{a}\frac{\Delta[\mathrm{A}]}{\Delta t} = \frac{1}{b}\frac{\Delta[\mathrm{B}]}{\Delta t}
 $$
 
 where $a$ and $b$ are stoichiometric coefficients.
 
 ### Rate Law
 
-For the reaction $a\text{A} + b\text{B} \to \text{products}$:
+For the reaction $a\mathrm{A} + b\mathrm{B} \to \text{products}$:
 
 $$
-\text{Rate} = k[\text{A}]^m[\text{B}]^n
+\text{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n
 $$
 
 - $k$ is the rate constant (depends on temperature).
@@ -45,7 +45,7 @@ reaction is first order in A. If doubling [A] quadruples the rate, it is second 
 
 :::info[Example]
 
-Determine the rate law from the following data for $2\text{A} + \text{B} \to \text{C}$:
+Determine the rate law from the following data for $2\mathrm{A} + \mathrm{B} \to \mathrm{C}$:
 
 | Experiment | [A] (M) | [B] (M) | Initial Rate (M/s) |
 | ---------- | ------- | ------- | ------------------ |
@@ -58,16 +58,16 @@ Comparing 1 and 2: [A] doubles, rate doubles $\implies$ first order in A ($m = 1
 Comparing 1 and 3: [B] doubles, rate quadruples $\implies$ second order in B ($n = 2$).
 
 $$
-\text{Rate} = k[\text{A}][\text{B}]^2
+\text{Rate} = k[\mathrm{A}][\mathrm{B}]^2
 $$
 
-Find $k$ from experiment 1: $0.0020 = k(0.10)(0.10)^2 \implies k = 2.0 \text{ M}^{-2}\text{s}^{-1}$.
+Find $k$ from experiment 1: $0.0020 = k(0.10)(0.10)^2 \implies k = 2.0 \text{ M}^{-2}\mathrm{s}^{-1}$.
 
 :::
 
 ### Worked Example: Rate Law Determination
 
-Determine the rate law from the following data for $\text{A} + \text{B} \to \text{C}$:
+Determine the rate law from the following data for $\mathrm{A} + \mathrm{B} \to \mathrm{C}$:
 
 | Experiment | [A] (M) | [B] (M) | Rate (M/s) |
 | ---------- | ------- | ------- | ---------- |
@@ -82,20 +82,20 @@ Comparing 2 and 3: [B] doubles, rate unchanged. Zero order in B.
 
 Comparing 2 and 4: [A] doubles, rate doubles. Confirms first order in A.
 
-$$\text{Rate} = k[\text{A}], \quad k = \frac{0.0080}{0.20} = 0.040 \text{ s}^{-1}$$
+$$\text{Rate} = k[\mathrm{A}], \quad k = \frac{0.0080}{0.20} = 0.040 \text{ s}^{-1}$$
 
 ## Integrated Rate Laws (CED Unit 5)
 
 ### First-Order Reactions
 
 $$
-\ln[\text{A}]_t = -kt + \ln[\text{A}]_0
+\ln[\mathrm{A}]_t = -kt + \ln[\mathrm{A}]_0
 $$
 
 or equivalently:
 
 $$
-[\text{A}]_t = [\text{A}]_0 e^{-kt}
+[\mathrm{A}]_t = [\mathrm{A}]_0 e^{-kt}
 $$
 
 **Half-life:** $\displaystyle t_{1/2} = \frac{\ln 2}{k} = \frac{0.693}{k}$
@@ -105,36 +105,36 @@ The half-life is independent of initial concentration.
 ### Second-Order Reactions
 
 $$
-\frac{1}{[\text{A}]_t} = kt + \frac{1}{[\text{A}]_0}
+\frac{1}{[\mathrm{A}]_t} = kt + \frac{1}{[\mathrm{A}]_0}
 $$
 
-**Half-life:** $\displaystyle t_{1/2} = \frac{1}{k[\text{A}]_0}$
+**Half-life:** $\displaystyle t_{1/2} = \frac{1}{k[\mathrm{A}]_0}$
 
 The half-life depends on initial concentration.
 
 ### Zero-Order Reactions
 
 $$
-[\text{A}]_t = -kt + [\text{A}]_0
+[\mathrm{A}]_t = -kt + [\mathrm{A}]_0
 $$
 
-**Half-life:** $\displaystyle t_{1/2} = \frac{[\text{A}]_0}{2k}$
+**Half-life:** $\displaystyle t_{1/2} = \frac{[\mathrm{A}]_0}{2k}$
 
 ### Identifying the Order
 
 | Order  | Linear Plot            | Slope |
 | ------ | ---------------------- | ----- |
 | Zero   | [A] vs $t$             | $-k$  |
-| First  | $\ln[\text{A}]$ vs $t$ | $-k$  |
-| Second | $1/[\text{A}]$ vs $t$  | $k$   |
+| First  | $\ln[\mathrm{A}]$ vs $t$ | $-k$  |
+| Second | $1/[\mathrm{A}]$ vs $t$  | $k$   |
 
 :::info[Example]
 
-The decomposition of $\text{N}_2\text{O}_5$ is first order with
+The decomposition of $\mathrm{N}_2\mathrm{O}_5$ is first order with
 $k = 5.0 \times 10^{-4} \text{ s}^{-1}$. How long does it take for 80% of a $0.500 \text{ M}$ sample
 to decompose?
 
-$[\text{A}]_t = 0.20 \times 0.500 = 0.100 \text{ M}$.
+$[\mathrm{A}]_t = 0.20 \times 0.500 = 0.100 \text{ M}$.
 
 $$
 \ln(0.100) = -(5.0 \times 10^{-4})t + \ln(0.500)
@@ -161,9 +161,9 @@ the time for 75% decomposition.
 
 $$t_{1/2} = \frac{0.693}{0.030} = 23.1 \text{ min}$$
 
-After 75% decomposition, $[\text{A}]_t = 0.25[\text{A}]_0$:
+After 75% decomposition, $[\mathrm{A}]_t = 0.25[\mathrm{A}]_0$:
 
-$$t = \frac{1}{k}\ln\frac{[\text{A}]_0}{[\text{A}]_t} = \frac{1}{0.030}\ln 4 = 33.3 \times 1.386 = 46.2 \text{ min}$$
+$$t = \frac{1}{k}\ln\frac{[\mathrm{A}]_0}{[\mathrm{A}]_t} = \frac{1}{0.030}\ln 4 = 33.3 \times 1.386 = 46.2 \text{ min}$$
 
 Note that 75% decomposition takes two half-lives (46.2 min $\approx 2 \times 23.1$ min).
 
@@ -175,9 +175,9 @@ A **reaction mechanism** is a sequence of elementary steps that sum to the overa
 
 | Molecularity | Description             | Rate Law                                        |
 | ------------ | ----------------------- | ----------------------------------------------- |
-| Unimolecular | One molecule reacts     | Rate = $k[\text{A}]$                            |
-| Bimolecular  | Two molecules collide   | Rate = $k[\text{A}][\text{B}]$                  |
-| Termolecular | Three molecules collide | Rate = $k[\text{A}][\text{B}][\text{C}]$ (rare) |
+| Unimolecular | One molecule reacts     | Rate = $k[\mathrm{A}]$                            |
+| Bimolecular  | Two molecules collide   | Rate = $k[\mathrm{A}][\mathrm{B}]$                  |
+| Termolecular | Three molecules collide | Rate = $k[\mathrm{A}][\mathrm{B}][\mathrm{C}]$ (rare) |
 
 ### Rate-Determining Step
 
@@ -192,38 +192,38 @@ The slowest step in the mechanism determines the overall rate law.
 
 :::info[Example]
 
-The reaction $2\text{NO}_2 + \text{F}_2 \to 2\text{NO}_2\text{F}$ has the experimental rate law
-$\text{Rate} = k[\text{NO}_2][\text{F}_2]$.
+The reaction $2\mathrm{NO}_2 + \mathrm{F}_2 \to 2\mathrm{NO}_2\mathrm{F}$ has the experimental rate law
+$\text{Rate} = k[\mathrm{NO}_2][\mathrm{F}_2]$.
 
 Proposed mechanism:
 
-Step 1 (slow): $\text{NO}_2 + \text{F}_2 \to \text{NO}_2\text{F} + \text{F}$
+Step 1 (slow): $\mathrm{NO}_2 + \mathrm{F}_2 \to \mathrm{NO}_2\mathrm{F} + \mathrm{F}$
 
-Step 2 (fast): $\text{F} + \text{NO}_2 \to \text{NO}_2\text{F}$
+Step 2 (fast): $\mathrm{F} + \mathrm{NO}_2 \to \mathrm{NO}_2\mathrm{F}$
 
-The rate law from the slow step: $\text{Rate} = k[\text{NO}_2][\text{F}_2]$. This matches the
+The rate law from the slow step: $\text{Rate} = k[\mathrm{NO}_2][\mathrm{F}_2]$. This matches the
 experimental rate law, so the mechanism is plausible.
 
-Sum: $2\text{NO}_2 + \text{F}_2 \to 2\text{NO}_2\text{F}$.
+Sum: $2\mathrm{NO}_2 + \mathrm{F}_2 \to 2\mathrm{NO}_2\mathrm{F}$.
 
 :::
 
 ### Worked Example: Mechanism with Fast Equilibrium
 
-The reaction $2\text{NO} + \text{O}_2 \to 2\text{NO}_2$ has the experimental rate law
-$\text{Rate} = k[\text{NO}]^2[\text{O}_2]$.
+The reaction $2\mathrm{NO} + \mathrm{O}_2 \to 2\mathrm{NO}_2$ has the experimental rate law
+$\text{Rate} = k[\mathrm{NO}]^2[\mathrm{O}_2]$.
 
 Proposed mechanism:
 
-Step 1 (fast equilibrium): $\text{NO} + \text{NO} \rightleftharpoons \text{N}_2\text{O}_2$
+Step 1 (fast equilibrium): $\mathrm{NO} + \mathrm{NO} \rightleftharpoons \mathrm{N}_2\mathrm{O}_2$
 
-Step 2 (slow): $\text{N}_2\text{O}_2 + \text{O}_2 \to 2\text{NO}_2$
+Step 2 (slow): $\mathrm{N}_2\mathrm{O}_2 + \mathrm{O}_2 \to 2\mathrm{NO}_2$
 
-From step 1: $K = \frac{[\text{N}_2\text{O}_2]}{[\text{NO}]^2}$, so
-$[\text{N}_2\text{O}_2] = K[\text{NO}]^2$.
+From step 1: $K = \frac{[\mathrm{N}_2\mathrm{O}_2]}{[\mathrm{NO}]^2}$, so
+$[\mathrm{N}_2\mathrm{O}_2] = K[\mathrm{NO}]^2$.
 
 Rate from step 2:
-$\text{Rate} = k_2[\text{N}_2\text{O}_2][\text{O}_2] = k_2 K[\text{NO}]^2[\text{O}_2]$.
+$\text{Rate} = k_2[\mathrm{N}_2\mathrm{O}_2][\mathrm{O}_2] = k_2 K[\mathrm{NO}]^2[\mathrm{O}_2]$.
 
 This matches the experimental rate law with $k = k_2 K$.
 
@@ -286,7 +286,7 @@ $$
 A reaction has $E_a = 75 \text{ kJ/mol}$ without a catalyst and $E_a = 50 \text{ kJ/mol}$ with a
 catalyst. Calculate the ratio of rate constants at $298 \text{ K}$.
 
-$$\frac{k_{\text{cat}}}{k_{\text{uncat}}} = \frac{A e^{-50000/(8.314 \times 298)}}{A e^{-75000/(8.314 \times 298)}} = e^{(75000 - 50000)/(8.314 \times 298)}$$
+$$\frac{k_{\mathrm{cat}}}{k_{\text{uncat}}} = \frac{A e^{-50000/(8.314 \times 298)}}{A e^{-75000/(8.314 \times 298)}} = e^{(75000 - 50000)/(8.314 \times 298)}$$
 
 $$= e^{25000/2478} = e^{10.09} = 2.4 \times 10^4$$
 
@@ -301,10 +301,10 @@ products remain constant (but not necessarily equal).
 
 ### The Equilibrium Constant ($K$)
 
-For the reaction $a\text{A} + b\text{B} \rightleftharpoons c\text{C} + d\text{D}$:
+For the reaction $a\mathrm{A} + b\mathrm{B} \rightleftharpoons c\mathrm{C} + d\mathrm{D}$:
 
 $$
-K_c = \frac{[\text{C}]^c[\text{D}]^d}{[\text{A}]^a[\text{B}]^b}
+K_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}
 $$
 
 For gas-phase reactions, $K_p$ uses partial pressures:
@@ -331,21 +331,21 @@ are constant (equal to 1).
 Write the equilibrium expression for:
 
 $$
-\text{CaCO}_3(s) \rightleftharpoons \text{CaO}(s) + \text{CO}_2(g)
+\text{CaCO}_3(s) \rightleftharpoons \mathrm{CaO}(s) + \mathrm{CO}_2(g)
 $$
 
 $$
-K_p = P_{\text{CO}_2}
+K_p = P_{\mathrm{CO}_2}
 $$
 
-Only $\text{CO}_2$ appears because solids are omitted.
+Only $\mathrm{CO}_2$ appears because solids are omitted.
 
 :::
 
 ## The Reaction Quotient ($Q$)
 
 $$
-Q = \frac{[\text{C}]^c[\text{D}]^d}{[\text{A}]^a[\text{B}]^b}
+Q = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}
 $$
 
 $Q$ has the same form as $K$ but uses current (non-equilibrium) concentrations.
@@ -377,10 +377,10 @@ If a stress is applied to a system at equilibrium, the system shifts to countera
 
 :::info[Example]
 
-For the endothermic reaction $\text{N}_2\text{O}_4(g) \rightleftharpoons 2\text{NO}_2(g)$, predict
+For the endothermic reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$, predict
 the effect of:
 
-- Increasing temperature: shifts right (more $\text{NO}_2$), $K$ increases.
+- Increasing temperature: shifts right (more $\mathrm{NO}_2$), $K$ increases.
 - Increasing pressure (decreasing volume): shifts left (fewer gas moles, 1 vs 2).
 - Adding a catalyst: no shift, but equilibrium is reached faster.
 
@@ -392,17 +392,17 @@ ICE (Initial, Change, Equilibrium) tables organize the calculation of equilibriu
 
 :::info[Example]
 
-For $\text{H}_2(g) + \text{I}_2(g) \rightleftharpoons 2\text{HI}(g)$ with $K_c = 50.5$ at
-$448^\circ\text{C}$:
+For $\mathrm{H}_2(g) + \mathrm{I}_2(g) \rightleftharpoons 2\mathrm{HI}(g)$ with $K_c = 50.5$ at
+$448^\circ\mathrm{C}$:
 
-If $1.00 \text{ M } \text{H}_2$ and $1.00 \text{ M } \text{I}_2$ are mixed, find [HI] at
+If $1.00 \text{ M } \mathrm{H}_2$ and $1.00 \text{ M } \mathrm{I}_2$ are mixed, find [HI] at
 equilibrium.
 
 | Species      | Initial | Change | Equilibrium |
 | ------------ | ------- | ------ | ----------- |
-| $\text{H}_2$ | 1.00    | $-x$   | $1.00 - x$  |
-| $\text{I}_2$ | 1.00    | $-x$   | $1.00 - x$  |
-| $\text{HI}$  | 0       | $+2x$  | $2x$        |
+| $\mathrm{H}_2$ | 1.00    | $-x$   | $1.00 - x$  |
+| $\mathrm{I}_2$ | 1.00    | $-x$   | $1.00 - x$  |
+| $\mathrm{HI}$  | 0       | $+2x$  | $2x$        |
 
 $$
 K_c = \frac{(2x)^2}{(1.00 - x)^2} = 50.5
@@ -417,22 +417,22 @@ $$
 $$
 
 $$
-[\text{HI}] = 2(0.781) = 1.56 \text{ M}
+[\mathrm{HI}] = 2(0.781) = 1.56 \text{ M}
 $$
 
 :::
 
 ### Worked Example: ICE Table with Quadratic
 
-For $\text{PCl}_5(g) \rightleftharpoons \text{PCl}_3(g) + \text{Cl}_2(g)$, $K_c = 0.0420$ at
-$500 \text{ K}$. If $2.00 \text{ M } \text{PCl}_5$ is placed in a flask, find all equilibrium
+For $\mathrm{PCl}_5(g) \rightleftharpoons \mathrm{PCl}_3(g) + \mathrm{Cl}_2(g)$, $K_c = 0.0420$ at
+$500 \text{ K}$. If $2.00 \text{ M } \mathrm{PCl}_5$ is placed in a flask, find all equilibrium
 concentrations.
 
 | Species        | Initial | Change | Equilibrium |
 | -------------- | ------- | ------ | ----------- |
-| $\text{PCl}_5$ | 2.00    | $-x$   | $2.00 - x$  |
-| $\text{PCl}_3$ | 0       | $+x$   | $x$         |
-| $\text{Cl}_2$  | 0       | $+x$   | $x$         |
+| $\mathrm{PCl}_5$ | 2.00    | $-x$   | $2.00 - x$  |
+| $\mathrm{PCl}_3$ | 0       | $+x$   | $x$         |
+| $\mathrm{Cl}_2$  | 0       | $+x$   | $x$         |
 
 $$K_c = \frac{x^2}{2.00 - x} = 0.0420$$
 
@@ -443,12 +443,12 @@ $$x^2 + 0.0420x - 0.0840 = 0$$
 Using the quadratic formula:
 $x = \frac{-0.0420 + \sqrt{0.0420^2 + 4(0.0840)}}{2} = \frac{-0.0420 + 0.581}{2} = 0.269 \text{ M}$
 
-$[\text{PCl}_5] = 1.73 \text{ M}$, $[\text{PCl}_3] = 0.269 \text{ M}$,
-$[\text{Cl}_2] = 0.269 \text{ M}$.
+$[\mathrm{PCl}_5] = 1.73 \text{ M}$, $[\mathrm{PCl}_3] = 0.269 \text{ M}$,
+$[\mathrm{Cl}_2] = 0.269 \text{ M}$.
 
 ### Worked Example: $K_c$ to $K_p$ Conversion
 
-For $\text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g)$ at $400^{\circ}\text{C}$,
+For $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$ at $400^{\circ}\mathrm{C}$,
 $K_c = 0.500$. Calculate $K_p$.
 
 $$\Delta n = 2 - (1 + 3) = -2$$
@@ -463,10 +463,10 @@ Haber process is typically run at higher temperatures to increase $K$).
 ### Solubility Product Constant ($K_{sp}$)
 
 For a sparingly soluble salt
-$\text{M}_a\text{X}_b(s) \rightleftharpoons a\text{M}^{b+}(aq) + b\text{X}^{a-}(aq)$:
+$\mathrm{M}_a\mathrm{X}_b(s) \rightleftharpoons a\mathrm{M}^{b+}(aq) + b\mathrm{X}^{a-}(aq)$:
 
 $$
-K_{sp} = [\text{M}^{b+}]^a[\text{X}^{a-}]^b
+K_{sp} = [\mathrm{M}^{b+}]^a[\mathrm{X}^{a-}]^b
 $$
 
 ### Common Ion Effect
@@ -489,7 +489,7 @@ $K_{sp}(\text{PbCl}_2) = 1.7 \times 10^{-5}$.
 
 After mixing (volumes double):
 
-$[\text{Pb}^{2+}] = 0.00050 \text{ M}$, $[\text{Cl}^-] = 0.0010 \text{ M}$.
+$[\mathrm{Pb}^{2+}] = 0.00050 \text{ M}$, $[\mathrm{Cl}^-] = 0.0010 \text{ M}$.
 
 $$
 Q_{sp} = (0.00050)(0.0010)^2 = 5.0 \times 10^{-10}
@@ -501,12 +501,12 @@ Since $Q_{sp} = 5.0 \times 10^{-10} \lt K_{sp} = 1.7 \times 10^{-5}$, no precipi
 
 ### Worked Example: $K_{sp}$ Calculation from Solubility
 
-The solubility of $\text{AgCl}$ in water at $25^{\circ}\text{C}$ is $1.3 \times 10^{-5} \text{ M}$.
+The solubility of $\text{AgCl}$ in water at $25^{\circ}\mathrm{C}$ is $1.3 \times 10^{-5} \text{ M}$.
 Calculate $K_{sp}$.
 
-$$\text{AgCl}(s) \rightleftharpoons \text{Ag}^+(aq) + \text{Cl}^-(aq)$$
+$$\text{AgCl}(s) \rightleftharpoons \mathrm{Ag}^+(aq) + \mathrm{Cl}^-(aq)$$
 
-$$K_{sp} = [\text{Ag}^+][\text{Cl}^-] = (1.3 \times 10^{-5})^2 = 1.7 \times 10^{-10}$$
+$$K_{sp} = [\mathrm{Ag}^+][\mathrm{Cl}^-] = (1.3 \times 10^{-5})^2 = 1.7 \times 10^{-10}$$
 
 ### Worked Example: Common Ion Effect
 
@@ -526,26 +526,26 @@ The common ion effect reduces solubility by a factor of about 7,600.
 
 | Order | Integrated Law                          | Half-Life           | Units of $k$                 | Linear Plot            |
 | ----- | --------------------------------------- | ------------------- | ---------------------------- | ---------------------- |
-| 0     | $[\text{A}] = -kt + [\text{A}]_0$       | $[\text{A}]_0/(2k)$ | $\text{M s}^{-1}$            | $[\text{A}]$ vs $t$    |
-| 1     | $\ln[\text{A}] = -kt + \ln[\text{A}]_0$ | $0.693/k$           | $\text{s}^{-1}$              | $\ln[\text{A}]$ vs $t$ |
-| 2     | $1/[\text{A}] = kt + 1/[\text{A}]_0$    | $1/(k[\text{A}]_0)$ | $\text{M}^{-1}\text{s}^{-1}$ | $1/[\text{A}]$ vs $t$  |
+| 0     | $[\mathrm{A}] = -kt + [\mathrm{A}]_0$       | $[\mathrm{A}]_0/(2k)$ | $\text{M s}^{-1}$            | $[\mathrm{A}]$ vs $t$    |
+| 1     | $\ln[\mathrm{A}] = -kt + \ln[\mathrm{A}]_0$ | $0.693/k$           | $\mathrm{s}^{-1}$              | $\ln[\mathrm{A}]$ vs $t$ |
+| 2     | $1/[\mathrm{A}] = kt + 1/[\mathrm{A}]_0$    | $1/(k[\mathrm{A}]_0)$ | $\mathrm{M}^{-1}\mathrm{s}^{-1}$ | $1/[\mathrm{A}]$ vs $t$  |
 
 ### Worked Example: Mechanism with Fast Equilibrium
 
-The reaction $2\text{NO} + \text{O}_2 \to 2\text{NO}_2$ has the experimental rate law
-$\text{Rate} = k[\text{NO}]^2[\text{O}_2]$.
+The reaction $2\mathrm{NO} + \mathrm{O}_2 \to 2\mathrm{NO}_2$ has the experimental rate law
+$\text{Rate} = k[\mathrm{NO}]^2[\mathrm{O}_2]$.
 
 Proposed mechanism:
 
-Step 1 (fast equilibrium): $\text{NO} + \text{NO} \rightleftharpoons \text{N}_2\text{O}_2$
+Step 1 (fast equilibrium): $\mathrm{NO} + \mathrm{NO} \rightleftharpoons \mathrm{N}_2\mathrm{O}_2$
 
-Step 2 (slow): $\text{N}_2\text{O}_2 + \text{O}_2 \to 2\text{NO}_2$
+Step 2 (slow): $\mathrm{N}_2\mathrm{O}_2 + \mathrm{O}_2 \to 2\mathrm{NO}_2$
 
-From step 1: $K = \frac{[\text{N}_2\text{O}_2]}{[\text{NO}]^2}$, so
-$[\text{N}_2\text{O}_2] = K[\text{NO}]^2$.
+From step 1: $K = \frac{[\mathrm{N}_2\mathrm{O}_2]}{[\mathrm{NO}]^2}$, so
+$[\mathrm{N}_2\mathrm{O}_2] = K[\mathrm{NO}]^2$.
 
 Rate from step 2:
-$\text{Rate} = k_2[\text{N}_2\text{O}_2][\text{O}_2] = k_2 K[\text{NO}]^2[\text{O}_2]$.
+$\text{Rate} = k_2[\mathrm{N}_2\mathrm{O}_2][\mathrm{O}_2] = k_2 K[\mathrm{NO}]^2[\mathrm{O}_2]$.
 
 This matches the experimental rate law with $k = k_2 K$.
 
@@ -553,9 +553,9 @@ This matches the experimental rate law with $k = k_2 K$.
 
 | Order | Integrated Law                          | Half-Life           | Units of $k$                 | Linear Plot            |
 | ----- | --------------------------------------- | ------------------- | ---------------------------- | ---------------------- |
-| 0     | $[\text{A}] = -kt + [\text{A}]_0$       | $[\text{A}]_0/(2k)$ | $\text{M s}^{-1}$            | $[\text{A}]$ vs $t$    |
-| 1     | $\ln[\text{A}] = -kt + \ln[\text{A}]_0$ | $0.693/k$           | $\text{s}^{-1}$              | $\ln[\text{A}]$ vs $t$ |
-| 2     | $1/[\text{A}] = kt + 1/[\text{A}]_0$    | $1/(k[\text{A}]_0)$ | $\text{M}^{-1}\text{s}^{-1}$ | $1/[\text{A}]$ vs $t$  |
+| 0     | $[\mathrm{A}] = -kt + [\mathrm{A}]_0$       | $[\mathrm{A}]_0/(2k)$ | $\text{M s}^{-1}$            | $[\mathrm{A}]$ vs $t$    |
+| 1     | $\ln[\mathrm{A}] = -kt + \ln[\mathrm{A}]_0$ | $0.693/k$           | $\mathrm{s}^{-1}$              | $\ln[\mathrm{A}]$ vs $t$ |
+| 2     | $1/[\mathrm{A}] = kt + 1/[\mathrm{A}]_0$    | $1/(k[\mathrm{A}]_0)$ | $\mathrm{M}^{-1}\mathrm{s}^{-1}$ | $1/[\mathrm{A}]$ vs $t$  |
 
 ## Summary Table: Factors Affecting Reaction Rate
 
@@ -606,7 +606,7 @@ This matches the experimental rate law with $k = k_2 K$.
 1. For a first-order reaction with $k = 0.050 \text{ s}^{-1}$, how long does it take for the
    concentration to decrease from $0.80 \text{ M}$ to $0.20 \text{ M}$?
 
-2. The following data were collected for the reaction $\text{A} + \text{B} \to \text{C}$:
+2. The following data were collected for the reaction $\mathrm{A} + \mathrm{B} \to \mathrm{C}$:
 
    | [A] (M) | [B] (M) | Rate (M/s) |
    | ------- | ------- | ---------- |
@@ -616,81 +616,81 @@ This matches the experimental rate law with $k = k_2 K$.
 
    Determine the rate law and rate constant.
 
-3. At $400 \text{ K}$, $k = 6.4 \times 10^{-3} \text{ M}^{-1}\text{s}^{-1}$. At $450 \text{ K}$,
-   $k = 3.2 \times 10^{-2} \text{ M}^{-1}\text{s}^{-1}$. Find $E_a$.
+3. At $400 \text{ K}$, $k = 6.4 \times 10^{-3} \text{ M}^{-1}\mathrm{s}^{-1}$. At $450 \text{ K}$,
+   $k = 3.2 \times 10^{-2} \text{ M}^{-1}\mathrm{s}^{-1}$. Find $E_a$.
 
-4. For $\text{PCl}_5(g) \rightleftharpoons \text{PCl}_3(g) + \text{Cl}_2(g)$, $K_p = 1.80$ at
-   $250^\circ\text{C}$. If $0.500 \text{ atm}$ of $\text{PCl}_5$ is placed in a flask, find the
+4. For $\mathrm{PCl}_5(g) \rightleftharpoons \mathrm{PCl}_3(g) + \mathrm{Cl}_2(g)$, $K_p = 1.80$ at
+   $250^\circ\mathrm{C}$. If $0.500 \text{ atm}$ of $\mathrm{PCl}_5$ is placed in a flask, find the
    equilibrium partial pressures of all species.
 
 5. Does a precipitate form when $100 \text{ mL}$ of $0.010 \text{ M } \text{AgNO}_3$ is mixed with
    $100 \text{ mL}$ of $0.010 \text{ M } \text{NaCl}$? $K_{sp}(\text{AgCl}) = 1.8 \times 10^{-10}$.
 
 6. Explain how Le Chatelier's principle applies when the volume of the container is decreased for
-   the reaction $\text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g)$.
+   the reaction $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$.
 
 7. For a reaction with $\Delta H = -92 \text{ kJ/mol}$, what happens to $K$ when the temperature
    increases from $298 \text{ K}$ to $400 \text{ K}$?
 
 8. Calculate the molar solubility of $\text{PbSO}_4$ in pure water and in
-   $0.10 \text{ M } \text{Na}_2\text{SO}_4$. $K_{sp}(\text{PbSO}_4) = 1.6 \times 10^{-8}$.
+   $0.10 \text{ M } \mathrm{Na}_2\mathrm{SO}_4$. $K_{sp}(\text{PbSO}_4) = 1.6 \times 10^{-8}$.
 
 9. The half-life of a reaction is $120 \text{ s}$ and the initial concentration is $0.50 \text{ M}$.
    If the reaction is first order, what is the rate constant? What is the concentration after
    $240 \text{ s}$?
 
 10. Write the equilibrium expression for
-    $\text{BaSO}_4(s) \rightleftharpoons \text{Ba}^{2+}(aq) +
-    \text{SO}_4^{2-}(aq)$ and calculate
-    the concentration of $\text{Ba}^{2+}$ in a saturated solution.
+    $\text{BaSO}_4(s) \rightleftharpoons \mathrm{Ba}^{2+}(aq) +
+    \mathrm{SO}_4^{2-}(aq)$ and calculate
+    the concentration of $\mathrm{Ba}^{2+}$ in a saturated solution.
     $K_{sp} = 1.1 \times
     10^{-10}$.
 
 11. A proposed mechanism for a reaction is: Step 1 (fast):
-    $\text{NO}(g) + \text{Br}_2(g) \rightleftharpoons \text{NOBr}_2(g)$ Step 2 (slow):
-    $\text{NOBr}_2(g) + \text{NO}(g) \to 2\text{NOBr}(g)$ Derive the rate law from this mechanism.
+    $\mathrm{NO}(g) + \mathrm{Br}_2(g) \rightleftharpoons \text{NOBr}_2(g)$ Step 2 (slow):
+    $\text{NOBr}_2(g) + \mathrm{NO}(g) \to 2\text{NOBr}(g)$ Derive the rate law from this mechanism.
 
-12. Calculate the solubility of $\text{PbI}_2$ in $0.020 \text{ M } \text{KI}$.
-    $K_{sp}(\text{PbI}_2) = 7.9 \times 10^{-9}$.
+12. Calculate the solubility of $\mathrm{PbI}_2$ in $0.020 \text{ M } \mathrm{KI}$.
+    $K_{sp}(\mathrm{PbI}_2) = 7.9 \times 10^{-9}$.
 
-13. For the reaction $2\text{SO}_2(g) + \text{O}_2(g) \rightleftharpoons 2\text{SO}_3(g)$,
-    $K_c = 4.0 \times 10^{24}$ at $700 \text{ K}$. If $0.10 \text{ mol}$ of $\text{SO}_2$ and
-    $0.050 \text{ mol}$ of $\text{O}_2$ are placed in a $1.00 \text{ L}$ container, find the
+13. For the reaction $2\mathrm{SO}_2(g) + \mathrm{O}_2(g) \rightleftharpoons 2\mathrm{SO}_3(g)$,
+    $K_c = 4.0 \times 10^{24}$ at $700 \text{ K}$. If $0.10 \text{ mol}$ of $\mathrm{SO}_2$ and
+    $0.050 \text{ mol}$ of $\mathrm{O}_2$ are placed in a $1.00 \text{ L}$ container, find the
     equilibrium concentrations.
 
 14. Explain why increasing the concentration of a reactant in a reaction at equilibrium causes more
     product to form, but does not change the value of $K$.
 
-15. The decomposition of $\text{HI}$ is second order with a rate constant of
-    $1.6 \times 10^{-3} \text{ M}^{-1}\text{s}^{-1}$ at $700 \text{ K}$. If the initial
-    concentration of $\text{HI}$ is $0.200 \text{ M}$, how long does it take for the concentration
+15. The decomposition of $\mathrm{HI}$ is second order with a rate constant of
+    $1.6 \times 10^{-3} \text{ M}^{-1}\mathrm{s}^{-1}$ at $700 \text{ K}$. If the initial
+    concentration of $\mathrm{HI}$ is $0.200 \text{ M}$, how long does it take for the concentration
     to decrease to $0.050 \text{ M}$?
 
 16. A catalyst lowers the activation energy of a reaction from $85 \text{ kJ/mol}$ to
     $55 \text{kJ/mol}$. Calculate the ratio of rate constants at $300 \text{ K}$.
 
-17. For $\text{H}_2(g) + \text{I}_2(g) \rightleftharpoons 2\text{HI}(g)$ at $448^{\circ}\text{C}$,
+17. For $\mathrm{H}_2(g) + \mathrm{I}_2(g) \rightleftharpoons 2\mathrm{HI}(g)$ at $448^{\circ}\mathrm{C}$,
     $K_c = 50.5$. Calculate $K_p$ for this reaction at the same temperature.
 
 18. Will a precipitate form when equal volumes of $0.0020 \text{ M } \text{CaCl}_2$ and
-    $0.0010 \text{ M } \text{Na}_2\text{SO}_4$ are mixed?
+    $0.0010 \text{ M } \mathrm{Na}_2\mathrm{SO}_4$ are mixed?
     $K_{sp}(\text{CaSO}_4) = 2.4 \times 10^{-5}$.
 
-19. For a zero-order reaction $\text{A} \to \text{products}$ with $k = 0.0050 \text{ M/s}$,
-    calculate the concentration of $\text{A}$ after $60 \text{ s}$ if
-    $[\text{A}]_0 = 0.400 \text{ M}$.
+19. For a zero-order reaction $\mathrm{A} \to \text{products}$ with $k = 0.0050 \text{ M/s}$,
+    calculate the concentration of $\mathrm{A}$ after $60 \text{ s}$ if
+    $[\mathrm{A}]_0 = 0.400 \text{ M}$.
 
 20. Calculate $K_c$ for the reaction
-    $\text{Fe}^{3+}(aq) + \text{SCN}^-(aq) \rightleftharpoons \text{FeSCN}^{2+}(aq)$ if at
-    equilibrium $[\text{Fe}^{3+}] = 0.0100 \text{ M}$, $[\text{SCN}^-] = 0.0080 \text{ M}$, and
+    $\mathrm{Fe}^{3+}(aq) + \mathrm{SCN}^-(aq) \rightleftharpoons \text{FeSCN}^{2+}(aq)$ if at
+    equilibrium $[\mathrm{Fe}^{3+}] = 0.0100 \text{ M}$, $[\mathrm{SCN}^-] = 0.0080 \text{ M}$, and
     $[\text{FeSCN}^{2+}] = 0.0020 \text{ M}$.
 
-21. Explain why the rate of a reaction approximately doubles for every $10^{\circ}\text{C}$ increase
+21. Explain why the rate of a reaction approximately doubles for every $10^{\circ}\mathrm{C}$ increase
     in temperature (the "rule of thumb"), and show that this corresponds to an activation energy of
     approximately $50 \text{ kJ/mol}$ using the Arrhenius equation.
 
-22. For the reaction $\text{N}_2\text{O}_4(g) \rightleftharpoons 2\text{NO}_2(g)$, $K_c = 0.600$ at
-    $340 \text{ K}$. If $1.00 \text{ atm}$ of $\text{N}_2\text{O}_4$ is placed in a container at
+22. For the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$, $K_c = 0.600$ at
+    $340 \text{ K}$. If $1.00 \text{ atm}$ of $\mathrm{N}_2\mathrm{O}_4$ is placed in a container at
     $340 \text{ K}$, find the equilibrium partial pressures and the percentage dissociation.
 
 23. Calculate the pH of a saturated solution of $\text{Mg(OH)}_2$. $K_{sp} = 5.6 \times 10^{-12}$.

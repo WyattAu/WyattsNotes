@@ -508,10 +508,10 @@ the one with the most zeros for efficiency.
 ### $3 \times 3$ Inverse
 
 $$
-A^{-1} = \frac{1}{\det A}\text{adj}(A)
+A^{-1} = \frac{1}{\det A}\mathrm{adj}(A)
 $$
 
-where $\text{adj}(A)$ is the adjugate (transpose of the cofactor matrix).
+where $\mathrm{adj}(A)$ is the adjugate (transpose of the cofactor matrix).
 
 The cofactor $C_{ij}$ is $(-1)^{i+j}$ times the determinant of the $2 \times 2$ matrix obtained by
 deleting row $i$ and column $j$.
@@ -527,7 +527,7 @@ $$
 C = \begin{pmatrix} -1 & 2 & -7 \\ 2 & -4 & -1 \\ -6 & -3 & 3 \end{pmatrix}
 $$
 
-$\text{adj}(A) = C^T = \begin{pmatrix} -1 & 2 & -6 \\ 2 & -4 & -3 \\ -7 & -1 & 3 \end{pmatrix}$.
+$\mathrm{adj}(A) = C^T = \begin{pmatrix} -1 & 2 & -6 \\ 2 & -4 & -3 \\ -7 & -1 & 3 \end{pmatrix}$.
 
 $$
 A^{-1} = \frac{1}{-15}\begin{pmatrix} -1 & 2 & -6 \\ 2 & -4 & -3 \\ -7 & -1 & 3 \end{pmatrix} = \begin{pmatrix} \frac{1}{15} & -\frac{2}{15} & \frac{2}{5} \\ -\frac{2}{15} & \frac{4}{15} & \frac{1}{5} \\ \frac{7}{15} & \frac{1}{15} & -\frac{1}{5} \end{pmatrix}
@@ -634,8 +634,8 @@ eigenvectors as columns.
 3. **Dimension mismatch:** You can only multiply an $m \times n$ matrix by an $n \times p$ matrix.
    The "inner dimensions" must match.
 
-4. **Forgetting the determinant in the inverse:** The inverse is $\dfrac{1}{\det A} \text{adj}(A)$,
-   not just $\text{adj}(A)$. Forgetting the $1/\det A$ factor gives a wrong answer unless
+4. **Forgetting the determinant in the inverse:** The inverse is $\dfrac{1}{\det A} \mathrm{adj}(A)$,
+   not just $\mathrm{adj}(A)$. Forgetting the $1/\det A$ factor gives a wrong answer unless
    $\det A = 1$.
 
 5. **Normal vector direction:** The normal to a plane can point in either direction; check

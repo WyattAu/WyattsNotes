@@ -189,7 +189,7 @@ The total distance fallen is $15 + 23.52 = 38.52$ m.
 ### 3.1 Definition
 
 The **specific heat capacity** $c$ of a substance is the energy required to change the temperature
-of 1 kg of the substance by $1^{\circ}\text{C}$ (or 1 K).
+of 1 kg of the substance by $1^{\circ}\mathrm{C}$ (or 1 K).
 
 $$\Delta E = mc\Delta T$$
 
@@ -225,8 +225,8 @@ than inland areas at the same latitude. It is also why water is used as a coolan
 nuclear reactors: it can absorb a great deal of waste heat before its temperature rises to dangerous
 levels.
 
-**Worked Example.** A 2 kW kettle heats 1.5 kg of water from $15^{\circ}\text{C}$ to
-$100^{\circ}\text{C}$. How long does this take?
+**Worked Example.** A 2 kW kettle heats 1.5 kg of water from $15^{\circ}\mathrm{C}$ to
+$100^{\circ}\mathrm{C}$. How long does this take?
 
 $$\Delta E = mc\Delta T = 1.5 \times 4200 \times 85 = 535,500 \text{ J}$$
 
@@ -554,7 +554,7 @@ for:
 - Processing food (thermic effect of food): about 10%
 
 The body converts chemical energy in food (carbohydrates, fats, proteins) into other forms: kinetic
-energy (movement), thermal energy (maintaining body temperature at $37^{\circ}\text{C}$), and
+energy (movement), thermal energy (maintaining body temperature at $37^{\circ}\mathrm{C}$), and
 potential energy (climbing stairs, lifting objects).
 
 ### 8.2 Energy Costs in the Home
@@ -618,7 +618,7 @@ the electrical energy arrow would be 40% as wide as the input arrow, and the was
 2. A 50 kg student climbs a flight of stairs 4 m high in 6 seconds. Calculate the gravitational
    potential energy gained and the power developed.
 
-3. A 500 g block of aluminium is heated from $20^{\circ}\text{C}$ to $120^{\circ}\text{C}$ by a 200
+3. A 500 g block of aluminium is heated from $20^{\circ}\mathrm{C}$ to $120^{\circ}\mathrm{C}$ by a 200
    W heater. How long does this take? (Specific heat capacity of aluminium = 900 J/(kg
    $^{\circ}$C).)
 
@@ -657,8 +657,8 @@ the electrical energy arrow would be 40% as wide as the input arrow, and the was
     kinetic energy is transferred to the brakes, and the brakes have a total mass of 15 kg and
     specific heat capacity 460 J/(kg $^{\circ}$C), calculate the temperature rise of the brakes.
 
-15. Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\text{C}$ to water at
-    $50^{\circ}\text{C}$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific latent
+15. Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{C}$ to water at
+    $50^{\circ}\mathrm{C}$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific latent
     heat of fusion of ice = $3.34 \times 10^5$ J/kg, specific heat capacity of water = 4200 J/(kg
     $^{\circ}$C).)
 
@@ -667,19 +667,19 @@ the electrical energy arrow would be 40% as wide as the input arrow, and the was
 A common exam question involves calculating the energy needed to change both the temperature and the
 state of a substance. The key is to break the process into distinct stages and add the energies.
 
-**Question:** Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\text{C}$ to
-water at $50^{\circ}\text{C}$.
+**Question:** Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{C}$ to
+water at $50^{\circ}\mathrm{C}$.
 
-**Stage 1:** Heat ice from $-10^{\circ}\text{C}$ to $0^{\circ}\text{C}$ (no change of state).
+**Stage 1:** Heat ice from $-10^{\circ}\mathrm{C}$ to $0^{\circ}\mathrm{C}$ (no change of state).
 
-$$E_1 = mc_{\text{ice}}\Delta T = 0.5 \times 2100 \times 10 = 10500 \text{ J}$$
+$$E_1 = mc_{\mathrm{ice}}\Delta T = 0.5 \times 2100 \times 10 = 10500 \text{ J}$$
 
-**Stage 2:** Melt ice at $0^{\circ}\text{C}$ (change of state, temperature stays at
-$0^{\circ}\text{C}$).
+**Stage 2:** Melt ice at $0^{\circ}\mathrm{C}$ (change of state, temperature stays at
+$0^{\circ}\mathrm{C}$).
 
 $$E_2 = mL_f = 0.5 \times 3.34 \times 10^5 = 167000 \text{ J}$$
 
-**Stage 3:** Heat water from $0^{\circ}\text{C}$ to $50^{\circ}\text{C}$.
+**Stage 3:** Heat water from $0^{\circ}\mathrm{C}$ to $50^{\circ}\mathrm{C}$.
 
 $$E_3 = mc_{\text{water}}\Delta T = 0.5 \times 4200 \times 50 = 105000 \text{ J}$$
 
@@ -706,10 +706,10 @@ follows directly from the work-energy theorem when only conservative forces are 
 
 Starting from the work-energy theorem:
 
-$$W_{\text{net}} = \Delta E_k$$
+$$W_{\mathrm{net}} = \Delta E_k$$
 
 If only gravity does work (no friction, no applied forces), then
-$W_{\text{net}} = W_{\text{gravity}}$. The work done by gravity is
+$W_{\mathrm{net}} = W_{\text{gravity}}$. The work done by gravity is
 $W_{\text{gravity}} = -\Delta E_p$ (negative because when the object moves down, $\Delta E_p$ is
 negative and gravity does positive work).
 
@@ -776,8 +776,8 @@ input goes directly into kinetic energy, producing a rapid temperature rise.
 
 ## 16. Practice Questions (Additional)
 
-16. A 200 g copper block at $150^{\circ}\text{C}$ is dropped into 300 g of water at
-    $20^{\circ}\text{C}$. Assuming no heat loss to the surroundings, find the final temperature.
+16. A 200 g copper block at $150^{\circ}\mathrm{C}$ is dropped into 300 g of water at
+    $20^{\circ}\mathrm{C}$. Assuming no heat loss to the surroundings, find the final temperature.
     (Specific heat capacity of copper = 390 J/(kg $^{\circ}$C), specific heat capacity of water =
     4200 J/(kg $^{\circ}$C).)
 

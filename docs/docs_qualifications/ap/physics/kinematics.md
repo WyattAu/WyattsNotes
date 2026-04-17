@@ -222,7 +222,7 @@ $$
 
 ### Key Results
 
-- **Time to reach maximum height:** $\displaystyle t_{\text{up}} = \frac{v_0 \sin\theta}{g}$
+- **Time to reach maximum height:** $\displaystyle t_{\mathrm{up}} = \frac{v_0 \sin\theta}{g}$
 - **Maximum height:** $\displaystyle H = \frac{(v_0 \sin\theta)^2}{2g}$
 - **Total time of flight:** $\displaystyle T = \frac{2v_0 \sin\theta}{g}$
 - **Range:** $\displaystyle R = \frac{v_0^2 \sin 2\theta}{g}$

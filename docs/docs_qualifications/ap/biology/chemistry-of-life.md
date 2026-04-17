@@ -75,7 +75,7 @@ Water is essential for life due to its unique properties:
 ### pH and Buffers
 
 $$
-\text{pH} = -\log[\text{H}^+]
+\mathrm{pH} = -\log[\mathrm{H}^+]
 $$
 
 | pH      | Classification |
@@ -87,39 +87,39 @@ $$
 **Buffers** resist pH changes. The carbonic acid/bicarbonate buffer system in blood:
 
 $$
-\text{H}_2\text{CO}_3 \rightleftharpoons \text{H}^+ + \text{HCO}_3^-
+\mathrm{H}_2\mathrm{CO}_3 \rightleftharpoons \mathrm{H}^+ + \mathrm{HCO}_3^-
 $$
 
-When $[\text{H}^+]$ increases, the equilibrium shifts left, consuming excess $\text{H}^+$.
+When $[\mathrm{H}^+]$ increases, the equilibrium shifts left, consuming excess $\mathrm{H}^+$.
 
 **Worked Example: pH calculations.**
 
-A solution has $[\text{H}^+] = 1 \times 10^{-4}$ M.
+A solution has $[\mathrm{H}^+] = 1 \times 10^{-4}$ M.
 
-$$\text{pH} = -\log(1 \times 10^{-4}) = 4$$
+$$\mathrm{pH} = -\log(1 \times 10^{-4}) = 4$$
 
-If the solution is diluted by a factor of 10, $[\text{H}^+] = 1 \times 10^{-5}$ M, and
-$\text{pH} = 5$.
+If the solution is diluted by a factor of 10, $[\mathrm{H}^+] = 1 \times 10^{-5}$ M, and
+$\mathrm{pH} = 5$.
 
-A one-unit increase in pH represents a tenfold decrease in $[\text{H}^+]$.
+A one-unit increase in pH represents a tenfold decrease in $[\mathrm{H}^+]$.
 
 **Worked Example: Buffer action.**
 
-During vigorous exercise, lactic acid is produced, releasing $\text{H}^+$ into the blood. Without
+During vigorous exercise, lactic acid is produced, releasing $\mathrm{H}^+$ into the blood. Without
 the buffer system, blood pH would drop dangerously.
 
 The bicarbonate buffer system responds:
 
-$$\text{H}^+ + \text{HCO}_3^- \to \text{H}_2\text{CO}_3 \to \text{H}_2\text{O} + \text{CO}_2$$
+$$\mathrm{H}^+ + \mathrm{HCO}_3^- \to \mathrm{H}_2\mathrm{CO}_3 \to \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
 
-The excess $\text{H}^+$ is consumed by reacting with $\text{HCO}_3^-$. The resulting $\text{CO}_2$
+The excess $\mathrm{H}^+$ is consumed by reacting with $\mathrm{HCO}_3^-$. The resulting $\mathrm{CO}_2$
 is removed by increased breathing rate. Blood pH is maintained close to 7.4.
 
 ## Macromolecules (CED Unit 1)
 
 ### Carbohydrates
 
-**General formula:** $\text{C}_n(\text{H}_2\text{O})_n$
+**General formula:** $\mathrm{C}_n(\mathrm{H}_2\mathrm{O})_n$
 
 **Monomers:** Monosaccharides (glucose, fructose, galactose, ribose, deoxyribose).
 
@@ -182,7 +182,7 @@ A triglyceride consists of one glycerol molecule (a 3-carbon alcohol with three 
 three fatty acid molecules (long hydrocarbon chains with a carboxyl group at one end) by three ester
 bonds. Each ester bond is formed by a condensation reaction, releasing one water molecule.
 
-$$\text{Glycerol} + 3 \text{ Fatty acids} \to \text{Triglyceride} + 3 \text{ H}_2\text{O}$$
+$$\text{Glycerol} + 3 \text{ Fatty acids} \to \text{Triglyceride} + 3 \text{ H}_2\mathrm{O}$$
 
 The long hydrocarbon tails are hydrophobic, making triglycerides insoluble in water. This makes them
 ideal for energy storage because they do not affect the water potential of cells.
@@ -193,7 +193,7 @@ ideal for energy storage because they do not affect the water potential of cells
 
 **Structure of an amino acid:** Central carbon ($\alpha$-carbon) bonded to:
 
-- Amino group ($\text{NH}_2$)
+- Amino group ($\mathrm{NH}_2$)
 - Carboxyl group ($\text{COOH}$)
 - Hydrogen atom
 - R group (side chain, varies)
@@ -241,7 +241,7 @@ can cause the protein to unfold.
 - Antiparallel strands ($5' \to 3'$ and $3' \to 5'$)
 - Sugar-phosphate backbone on the outside, bases on the inside
 - Base pairing: A--T (2 H-bonds), G--C (3 H-bonds)
-- Chargaff's rules: $[\text{A}] = [\text{T}]$, $[\text{G}] = [\text{C}]$
+- Chargaff's rules: $[\mathrm{A}] = [\mathrm{T}]$, $[\mathrm{G}] = [\mathrm{C}]$
 
 **RNA:**
 
@@ -353,7 +353,7 @@ $$
 ATP (adenosine triphosphate) stores energy in its high-energy phosphate bonds.
 
 $$
-\text{ATP} \rightleftharpoons \text{ADP} + \text{P}_i + \text{energy} \quad (\Delta G \approx -30.5 \text{ kJ/mol})
+\mathrm{ATP} \rightleftharpoons \mathrm{ADP} + \mathrm{P}_i + \text{energy} \quad (\Delta G \approx -30.5 \text{ kJ/mol})
 $$
 
 ATP hydrolysis is exergonic and couples with endergonic reactions to drive them.
@@ -363,7 +363,7 @@ ATP hydrolysis is exergonic and couples with endergonic reactions to drive them.
 The energy released from ATP hydrolysis drives unfavorable reactions by coupling:
 
 $$
-\text{Overall: } \text{ATP} + \text{Glucose} \to \text{ADP} + \text{Glucose-6-phosphate} \quad (\Delta G \lt 0)
+\text{Overall: } \mathrm{ATP} + \text{Glucose} \to \mathrm{ADP} + \text{Glucose-6-phosphate} \quad (\Delta G \lt 0)
 $$
 
 **Worked Example: Energy coupling in cells.**
@@ -416,10 +416,10 @@ energy from ATP hydrolysis.
 
 7. Explain how ATP hydrolysis can drive an endergonic reaction.
 
-8. A researcher observes that an enzyme has maximum activity at pH 7.0 and $37^\circ\text{C}$.
+8. A researcher observes that an enzyme has maximum activity at pH 7.0 and $37^\circ\mathrm{C}$.
    Explain what happens to the reaction rate if the pH is changed to 10.0 and why.
 
-9. Calculate the pH of a solution with $[\text{H}^+] = 2.5 \times 10^{-3}$ M.
+9. Calculate the pH of a solution with $[\mathrm{H}^+] = 2.5 \times 10^{-3}$ M.
 
 10. A DNA molecule is found to be 24% cytosine. Using Chargaff's rules, determine the percentage of
     all four bases.
@@ -449,7 +449,7 @@ energy from ATP hydrolysis.
     chains.
 
 20. A student measures enzyme activity at different temperatures and finds that the rate peaks at
-    $40^\circ\text{C}$ and drops to zero at $60^\circ\text{C}$. Explain these results with reference
+    $40^\circ\mathrm{C}$ and drops to zero at $60^\circ\mathrm{C}$. Explain these results with reference
     to protein structure.
 
 ## Review: Macromolecule Identification Tests
@@ -556,7 +556,7 @@ their functions.
    strand (semiconservative replication).
 
 **Evidence for semiconservative replication:** The Meselson-Stahl experiment (1958) used heavy
-nitrogen (${}^{15}\text{N}$) to label DNA. After one round of replication in ${}^{14}\text{N}$
+nitrogen (${}^{15}\mathrm{N}$) to label DNA. After one round of replication in ${}^{14}\mathrm{N}$
 medium, all DNA molecules contained one heavy strand and one light strand (intermediate density),
 ruling out conservative replication. After two rounds, both light and intermediate density DNA was
 observed, confirming the semiconservative model.
@@ -598,7 +598,7 @@ layers, which is essential for the function of cell membranes.
 ## Review: Carbohydrate Chemistry in Detail
 
 **Monosaccharides:** The simplest carbohydrates, with the general formula
-$\text{C}_n(\text{H}_2\text{O})_n$. Glucose ($\text{C}_6\text{H}_{12}\text{O}_6$) exists in two
+$\mathrm{C}_n(\mathrm{H}_2\mathrm{O})_n$. Glucose ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$) exists in two
 isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the position of the
 hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of the ring; in
 $\beta$-glucose, it is above. This apparently small difference has enormous consequences:
@@ -640,8 +640,8 @@ sugars and give a positive Benedict's test.
 histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine).
 
 **Zwitterions:** At physiological pH (approximately 7.4), amino acids exist as zwitterions --
-molecules with both a positive charge (on the amino group, $-\text{NH}_3^+$) and a negative charge
-(on the carboxyl group, $-\text{COO}^-$). The overall charge is neutral.
+molecules with both a positive charge (on the amino group, $-\mathrm{NH}_3^+$) and a negative charge
+(on the carboxyl group, $-\mathrm{COO}^-$). The overall charge is neutral.
 
 **Peptide bond formation:** A condensation reaction between the carboxyl group of one amino acid and
 the amino group of another forms a peptide bond (covalent bond) and releases a water molecule. A
@@ -663,8 +663,8 @@ the inactive conformation, decreasing its activity.
 increases the affinity of the other active sites for the substrate. This produces a sigmoidal
 (S-shaped) velocity-vs-substrate curve rather than the hyperbolic curve predicted by the
 Michaelis-Menten equation. Haemoglobin (which is not an enzyme but a transport protein) shows
-cooperative binding of oxygen: binding of the first $\text{O}_2$ molecule increases the affinity for
-subsequent $\text{O}_2$ molecules.
+cooperative binding of oxygen: binding of the first $\mathrm{O}_2$ molecule increases the affinity for
+subsequent $\mathrm{O}_2$ molecules.
 
 **Feedback inhibition:** A common form of metabolic regulation where the end product of a pathway
 inhibits an enzyme early in the pathway. This prevents wasteful overproduction of the end product.
@@ -717,8 +717,8 @@ of the molecule and how it reacts.
 | ---------------- | --------- | ----------------------------- | -------------------------------------- |
 | Hydroxyl (-OH)   | -OH       | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds            |
 | Carbonyl (C=O)   | C=O       | Aldehydes, ketones, sugars    | Polar; reactive                        |
-| Carboxyl (-COOH) | -COOH     | Amino acids, fatty acids      | Acts as an acid; releases $\text{H}^+$ |
-| Amino (-NH$_2$)  | -NH$_2$   | Amino acids                   | Acts as a base; accepts $\text{H}^+$   |
+| Carboxyl (-COOH) | -COOH     | Amino acids, fatty acids      | Acts as an acid; releases $\mathrm{H}^+$ |
+| Amino (-NH$_2$)  | -NH$_2$   | Amino acids                   | Acts as a base; accepts $\mathrm{H}^+$   |
 | Phosphate        | -PO$_4$   | ATP, DNA, phospholipids       | Negative charge; energy transfer       |
 | Sulfhydryl (-SH) | -SH       | Cysteine (amino acid)         | Forms disulfide bridges in proteins    |
 

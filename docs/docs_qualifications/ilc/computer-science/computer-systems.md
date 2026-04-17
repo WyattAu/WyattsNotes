@@ -145,7 +145,7 @@ depending on the instruction complexity.
 If the average CPI is 4, how long does the program take?
 
 $$
-\text{Time} = \frac{\text{Instructions} \times \text{CPI}}{\text{Clock speed}} = \frac{6 \times 10^9 \times 4}{3 \times 10^9} = 8\text{ seconds}
+\text{Time} = \frac{\text{Instructions} \times \mathrm{CPI}}{\text{Clock speed}} = \frac{6 \times 10^9 \times 4}{3 \times 10^9} = 8\text{ seconds}
 $$
 
 **Worked Example (HL).** A 2.5 GHz CPU executes 5 billion instructions with average CPI of 3. How
@@ -386,13 +386,13 @@ Base 16. Digits: 0--9, A--F.
 
 **Conversion:** group binary digits in sets of 4 and convert each group.
 
-$11010111_2 = 1101\ 0111 = \text{D7}_{16}$
+$11010111_2 = 1101\ 0111 = \mathrm{D7}_{16}$
 
-**Worked Example (HL).** Convert $\text{ABC}_{16}$ to decimal.
+**Worked Example (HL).** Convert $\mathrm{ABC}_{16}$ to decimal.
 
 $10 \times 256 + 11 \times 16 + 12 = 2560 + 176 + 12 = 2748$.
 
-**Worked Example (HL).** Convert $\text{FF}_{16}$ to binary and decimal.
+**Worked Example (HL).** Convert $\mathrm{FF}_{16}$ to binary and decimal.
 
 Binary: $11111111_2$. Decimal: $15 \times 16 + 15 = 255$.
 
@@ -544,8 +544,8 @@ A half adder adds two bits:
 
 A full adder adds two bits and a carry-in:
 
-- Sum = $A \oplus B \oplus C_{\text{in}}$
-- $C_{\text{out}} = (A \cdot B) + (C_{\text{in}} \cdot (A \oplus B))$
+- Sum = $A \oplus B \oplus C_{\mathrm{in}}$
+- $C_{\mathrm{out}} = (A \cdot B) + (C_{\mathrm{in}} \cdot (A \oplus B))$
 
 **Why full adders matter.** To add two 8-bit numbers, chain 8 full adders: the carry-out of each
 stage becomes the carry-in of the next.
@@ -803,7 +803,7 @@ than original 8 bytes).
 4. Design a logic circuit for a half adder and provide the truth table.
 
 5. A CPU has a 16-bit address bus. What is the maximum addressable memory? Give your answer in KB.
-6. Convert $\text{FF}_{16}$ to binary and decimal.
+6. Convert $\mathrm{FF}_{16}$ to binary and decimal.
 7. Simplify the Boolean expression $\overline{A + B \cdot \bar{C}}$ using De Morgan's Laws.
 8. Explain the difference between a page fault and thrashing.
 9. A computer has a 95% L1 cache hit rate. L1 access is 2 ns, RAM access is 80 ns. Calculate the

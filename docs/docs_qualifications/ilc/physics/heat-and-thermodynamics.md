@@ -32,13 +32,13 @@ are commonly used:
 Conversion between Celsius and Kelvin:
 
 $$
-T_K = T_{°\text{C}} + 273.15
+T_K = T_{°\mathrm{C}} + 273.15
 $$
 
 Conversion between Celsius and Fahrenheit:
 
 $$
-T_{°\text{F}} = \frac{9}{5}T_{°\text{C}} + 32
+T_{°\mathrm{F}} = \frac{9}{5}T_{°\mathrm{C}} + 32
 $$
 
 ### Why Kelvin Is the Natural Scale for Physics
@@ -134,7 +134,7 @@ $$
 In practice, the calorimeter itself (the container) also absorbs heat, and this should be included:
 
 $$
-m_h c_h (T_h - T_f) = m_c c_c (T_f - T_c) + m_{\text{cal}} c_{\text{cal}} (T_f - T_c)
+m_h c_h (T_h - T_f) = m_c c_c (T_f - T_c) + m_{\mathrm{cal}} c_{\mathrm{cal}} (T_f - T_c)
 $$
 
 where $T_f$ is the final equilibrium temperature.
@@ -155,7 +155,7 @@ $$
 $$
 
 $$
-122600 = 4375T \implies T \approx 28.0°\text{C}
+122600 = 4375T \implies T \approx 28.0°\mathrm{C}
 $$
 
 Note that the temperature change of the copper ($172°$C) is much larger than that of the water
@@ -246,7 +246,7 @@ stage:
 2. Melting at the melting point: $Q_2 = mL_f$
 3. Heating the liquid to its boiling point: $Q_3 = mc_{\text{liquid}}\Delta T_2$
 4. Vaporising at the boiling point: $Q_4 = mL_v$
-5. Heating the gas (if applicable): $Q_5 = mc_{\text{gas}}\Delta T_3$
+5. Heating the gas (if applicable): $Q_5 = mc_{\mathrm{gas}}\Delta T_3$
 
 $$
 Q_{\text{total}} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5
@@ -387,7 +387,7 @@ $$
 
 **Example (HL):** A gas cylinder of volume $0.05\text{ m}^3$ contains oxygen at a pressure of
 $2 \times 10^6\text{ Pa}$ and temperature $300\text{ K}$. Find the mass of oxygen
-($M_{\text{O}_2} = 0.032\text{ kg/mol}$).
+($M_{\mathrm{O}_2} = 0.032\text{ kg/mol}$).
 
 $$
 n = \frac{pV}{RT} = \frac{2 \times 10^6 \times 0.05}{8.314 \times 300} = \frac{100000}{2494.2} = 40.1\text{ mol}
@@ -478,32 +478,32 @@ of temperature.
 The root mean square (RMS) speed is defined as:
 
 $$
-c_{\text{rms}} = \sqrt{\overline{v^2}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}
+c_{\mathrm{rms}} = \sqrt{\overline{v^2}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}
 $$
 
 where $M$ is the molar mass (kg/mol).
 
-Note: $c_{\text{rms}}$ is not the same as the average speed or the most probable speed. The Maxwell
+Note: $c_{\mathrm{rms}}$ is not the same as the average speed or the most probable speed. The Maxwell
 distribution gives:
 
 - Most probable speed: $v_p = \sqrt{\frac{2k_BT}{m}}$
 - Average speed: $\bar{v} = \sqrt{\frac{8k_BT}{\pi m}}$
-- RMS speed: $c_{\text{rms}} = \sqrt{\frac{3k_BT}{m}}$
+- RMS speed: $c_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}}$
 
-The relationship is $v_p \lt \bar{v} \lt c_{\text{rms}}$.
+The relationship is $v_p \lt \bar{v} \lt c_{\mathrm{rms}}$.
 
 **Example (HL):** Find the RMS speed of nitrogen molecules ($M = 0.028\text{ kg/mol}$) at
 $300\text{ K}$.
 
 $$
-c_{\text{rms}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.028}} = \sqrt{267000} \approx 517\text{ m/s}
+c_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.028}} = \sqrt{267000} \approx 517\text{ m/s}
 $$
 
 **Example (HL):** Compare the RMS speeds of hydrogen ($M = 0.002\text{ kg/mol}$) and oxygen
 ($M = 0.032\text{ kg/mol}$) at the same temperature.
 
 $$
-\frac{c_{\text{rms}}(\text{H}_2)}{c_{\text{rms}}(\text{O}_2)} = \sqrt{\frac{M_{\text{O}_2}}{M_{\text{H}_2}}} = \sqrt{\frac{0.032}{0.002}} = \sqrt{16} = 4
+\frac{c_{\mathrm{rms}}(\mathrm{H}_2)}{c_{\mathrm{rms}}(\mathrm{O}_2)} = \sqrt{\frac{M_{\mathrm{O}_2}}{M_{\mathrm{H}_2}}} = \sqrt{\frac{0.032}{0.002}} = \sqrt{16} = 4
 $$
 
 Hydrogen molecules move four times faster than oxygen molecules at the same temperature. This is why
@@ -519,7 +519,7 @@ $$
 U = \frac{3}{2}Nk_BT = \frac{3}{2}nRT
 $$
 
-For a diatomic ideal gas (e.g., $\text{N}_2$, $\text{O}_2$), rotational kinetic energy adds two more
+For a diatomic ideal gas (e.g., $\mathrm{N}_2$, $\mathrm{O}_2$), rotational kinetic energy adds two more
 degrees of freedom:
 
 $$
@@ -611,7 +611,7 @@ ideal gas, $W = nRT\ln(V_2/V_1)$.
 In a cyclic process, the system returns to its initial state, so $\Delta U = 0$. Therefore:
 
 $$
-Q_{\text{net}} = W_{\text{net}}
+Q_{\mathrm{net}} = W_{\mathrm{net}}
 $$
 
 The net work done by the system equals the net heat absorbed. On a $pV$ diagram, the net work equals
@@ -833,7 +833,7 @@ When a body at temperature $T$ is surrounded by an environment at temperature $T
 radiated is:
 
 $$
-P_{\text{net}} = \varepsilon \sigma A (T^4 - T_0^4)
+P_{\mathrm{net}} = \varepsilon \sigma A (T^4 - T_0^4)
 $$
 
 This explains why bodies cool down (lose more radiation than they absorb) when hotter than their
@@ -851,7 +851,7 @@ surroundings, and heat up when colder.
 4. **First law of thermodynamics** -- $W$ is work done _by_ the system. Work done _on_ the system is
    negative $W$. Be consistent with sign conventions.
 5. **Ideal gas law** -- ensure the gas constant $R$ matches the units used.
-   $R = 8.314\text{ J/(mol K)}$ when $p$ is in Pa, $V$ in $\text{m}^3$, $T$ in K, and $n$ in mol.
+   $R = 8.314\text{ J/(mol K)}$ when $p$ is in Pa, $V$ in $\mathrm{m}^3$, $T$ in K, and $n$ in mol.
 6. **Carnot efficiency** -- temperatures must be in Kelvin. The formula $\eta = 1 - T_C/T_H$ gives
    the maximum possible efficiency; real engines are less efficient.
 7. **pV diagrams** -- work done by the gas equals the area under the curve. For a cycle, net work

@@ -105,7 +105,7 @@ The cell membrane is described by the fluid mosaic model:
 
 | Type                  | Description                                                        | Examples                    |
 | --------------------- | ------------------------------------------------------------------ | --------------------------- |
-| Simple diffusion      | Movement from high to low concentration; small non-polar molecules | $\text{O}_2$, $\text{CO}_2$ |
+| Simple diffusion      | Movement from high to low concentration; small non-polar molecules | $\mathrm{O}_2$, $\mathrm{CO}_2$ |
 | Facilitated diffusion | Via channel or carrier proteins; large or polar molecules          | Glucose, ions               |
 | Osmosis               | Movement of water across a semi-permeable membrane                 | Water in cells              |
 
@@ -248,7 +248,7 @@ are genetically different (due to crossing over and independent assortment).
 
 ### Light Microscopy
 
-- Maximum resolution: approximately $0.2 \mu\text{m}$ (200 nm)
+- Maximum resolution: approximately $0.2 \mu\mathrm{m}$ (200 nm)
 - Maximum magnification: approximately $\times 1500$
 - Uses visible light and glass lenses
 - Staining required to increase contrast (e.g., iodine, methylene blue)
@@ -331,7 +331,7 @@ Magnification = $5000 / 10 = \times 500$.
 3. Explain how the fluid mosaic model accounts for the properties of the cell membrane.
 
 4. Calculate the magnification of a cell that appears $5 \text{ mm}$ wide in a micrograph when the
-   actual cell is $10 \mu\text{m}$ wide.
+   actual cell is $10 \mu\mathrm{m}$ wide.
 
 5. Describe what happens to an animal cell and a plant cell when placed in (a) a hypertonic solution
    and (b) a hypotonic solution.
@@ -490,11 +490,11 @@ cell.
 
 | Mechanism             | Energy Required | Direction          | Mediator        | Example                         |
 | --------------------- | --------------- | ------------------ | --------------- | ------------------------------- |
-| Simple diffusion      | No              | High to low conc.  | None            | $\text{O}_2$, $\text{CO}_2$     |
-| Facilitated diffusion | No              | High to low conc.  | Channel/carrier | Glucose, $\text{Na}^+$          |
+| Simple diffusion      | No              | High to low conc.  | None            | $\mathrm{O}_2$, $\mathrm{CO}_2$     |
+| Facilitated diffusion | No              | High to low conc.  | Channel/carrier | Glucose, $\mathrm{Na}^+$          |
 | Osmosis               | No              | High to low $\psi$ | Aquaporins      | Water                           |
-| Active transport      | Yes (ATP)       | Low to high conc.  | Carrier protein | $\text{Na}^+/\text{K}^+$ pump   |
-| Cotransport           | Yes (gradient)  | Low to high conc.  | Carrier protein | $\text{Na}^+$-glucose symporter |
+| Active transport      | Yes (ATP)       | Low to high conc.  | Carrier protein | $\mathrm{Na}^+/\mathrm{K}^+$ pump   |
+| Cotransport           | Yes (gradient)  | Low to high conc.  | Carrier protein | $\mathrm{Na}^+$-glucose symporter |
 | Exocytosis            | Yes (ATP)       | Out of cell        | Vesicles        | Hormone secretion               |
 | Endocytosis           | Yes (ATP)       | Into cell          | Vesicles        | Phagocytosis                    |
 

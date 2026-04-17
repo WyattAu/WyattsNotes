@@ -131,7 +131,7 @@ $$
 ### Parallel Axis Theorem
 
 $$
-I = I_{\text{cm}} + Md^2
+I = I_{\mathrm{cm}} + Md^2
 $$
 
 where $d$ is the distance from the center of mass to the new axis.
@@ -149,7 +149,7 @@ $$
 The last term is zero because the CM is at the origin: $\sum m_i r_i \cos\phi_i = 0$.
 
 $$
-I = I_{\text{cm}} + Md^2
+I = I_{\mathrm{cm}} + Md^2
 $$
 
 $\blacksquare$
@@ -160,7 +160,7 @@ Find the moment of inertia of a solid sphere of mass $M$ and radius $R$ about an
 surface.
 
 $$
-I = I_{\text{cm}} + Md^2 = \frac{2}{5}MR^2 + MR^2 = \frac{7}{5}MR^2
+I = I_{\mathrm{cm}} + Md^2 = \frac{2}{5}MR^2 + MR^2 = \frac{7}{5}MR^2
 $$
 
 :::
@@ -201,11 +201,11 @@ A solid disk of mass $5.0 \text{ kg}$ and radius $0.3 \text{ m}$ is mounted on a
 A $20 \text{ N}$ force is applied tangentially at the rim. Find the angular acceleration.
 
 $$
-I = \frac{1}{2}MR^2 = \frac{1}{2}(5.0)(0.3)^2 = 0.225 \text{ kg} \cdot \text{m}^2
+I = \frac{1}{2}MR^2 = \frac{1}{2}(5.0)(0.3)^2 = 0.225 \text{ kg} \cdot \mathrm{m}^2
 $$
 
 $$
-\tau = Fr = (20)(0.3) = 6.0 \text{ N} \cdot \text{m}
+\tau = Fr = (20)(0.3) = 6.0 \text{ N} \cdot \mathrm{m}
 $$
 
 $$
@@ -219,18 +219,18 @@ $$
 The kinetic energy of a rotating object:
 
 $$
-K_{\text{rot}} = \frac{1}{2}I\omega^2
+K_{\mathrm{rot}} = \frac{1}{2}I\omega^2
 $$
 
 For an object that is both translating and rotating (like a rolling ball):
 
 $$
-K_{\text{total}} = \frac{1}{2}mv_{\text{cm}}^2 + \frac{1}{2}I_{\text{cm}}\omega^2
+K_{\text{total}} = \frac{1}{2}mv_{\mathrm{cm}}^2 + \frac{1}{2}I_{\mathrm{cm}}\omega^2
 $$
 
 ### Rolling Without Slipping
 
-When an object rolls without slipping: $v_{\text{cm}} = R\omega$.
+When an object rolls without slipping: $v_{\mathrm{cm}} = R\omega$.
 
 ### Conservation of Energy with Rotation
 
@@ -302,9 +302,9 @@ $$
 
 :::info[Example]
 
-A figure skater with moment of inertia $4.0 \text{ kg} \cdot \text{m}^2$ is spinning at
+A figure skater with moment of inertia $4.0 \text{ kg} \cdot \mathrm{m}^2$ is spinning at
 $3.0 \text{ rad/s}$. She pulls in her arms, reducing her moment of inertia to
-$1.5 \text{ kg} \cdot \text{m}^2$. Find her new angular speed.
+$1.5 \text{ kg} \cdot \mathrm{m}^2$. Find her new angular speed.
 
 $$
 I_1\omega_1 = I_2\omega_2
@@ -363,10 +363,10 @@ Take torques about the hinge (eliminates the hinge force):
 
 **Torques:**
 
-- Weight of beam at center: $\tau_1 = -(20)(9.8)(2.0)\sin 90^\circ = -392 \text{ N} \cdot \text{m}$
+- Weight of beam at center: $\tau_1 = -(20)(9.8)(2.0)\sin 90^\circ = -392 \text{ N} \cdot \mathrm{m}$
   (CW)
 - Hanging mass at $3.0 \text{ m}$ from hinge:
-  $\tau_2 = -(50)(9.8)(3.0) = -1470 \text{ N} \cdot \text{m}$ (CW)
+  $\tau_2 = -(50)(9.8)(3.0) = -1470 \text{ N} \cdot \mathrm{m}$ (CW)
 - Tension $T$ at $4.0 \text{ m}$ from hinge: $\tau_3 = T(4.0)\sin 30^\circ = 2.0T$ (CCW)
 
 Set $\sum \tau = 0$:
@@ -410,7 +410,7 @@ $$
    released. Find its angular speed as it passes through the vertical position.
 
 4. A merry-go-round of radius $3.0 \text{ m}$ and moment of inertia
-   $600 \text{ kg} \cdot \text{m}^2$ is rotating at $0.50 \text{ rad/s}$. A child of mass
+   $600 \text{ kg} \cdot \mathrm{m}^2$ is rotating at $0.50 \text{ rad/s}$. A child of mass
    $30 \text{ kg}$ jumps on at the edge. Find the new angular speed.
 
 5. A $4.0 \text{ m}$ uniform beam of mass $50 \text{ kg}$ is supported by two vertical cables, one
@@ -428,8 +428,8 @@ $$
 9. A solid sphere rolls without slipping up a $20^\circ$ incline. If its initial speed is
    $5.0 \text{ m/s}$, how far up the incline does it travel before stopping and rolling back?
 
-10. A flywheel of moment of inertia $50 \text{ kg} \cdot \text{m}^2$ rotating at $300 \text{ rpm}$
-    is brought to rest by a constant frictional torque of $10 \text{ N} \cdot \text{m}$ in
+10. A flywheel of moment of inertia $50 \text{ kg} \cdot \mathrm{m}^2$ rotating at $300 \text{ rpm}$
+    is brought to rest by a constant frictional torque of $10 \text{ N} \cdot \mathrm{m}$ in
     $785 \text{ s}$. Verify this using the rotational impulse equation, and calculate the angle
     through which the flywheel rotates while stopping.
 
@@ -461,7 +461,7 @@ A thin uniform rod of mass $M$ and length $L$, pivoted at one end.
 $$I = \int_0^L x^2 \frac{M}{L}\, dx = \frac{M}{L}\left[\frac{x^3}{3}\right]_0^L = \frac{ML^2}{3}$$
 
 Using the parallel axis theorem:
-$I_{\text{end}} = I_{\text{cm}} + Md^2 = \frac{ML^2}{12} + M\left(\frac{L}{2}\right)^2 = \frac{ML^2}{12} + \frac{ML^2}{4} = \frac{ML^2}{3}$.
+$I_{\mathrm{end}} = I_{\mathrm{cm}} + Md^2 = \frac{ML^2}{12} + M\left(\frac{L}{2}\right)^2 = \frac{ML^2}{12} + \frac{ML^2}{4} = \frac{ML^2}{3}$.
 Confirmed.
 
 ## 12. Rolling Without Slipping: Extended Analysis
@@ -472,7 +472,7 @@ A solid sphere, a solid cylinder, a hollow sphere, and a hollow cylinder, all of
 $R$, are released from rest at the top of an incline of height $h$. Rank them by their speed at the
 bottom.
 
-| Object          | $I_{\text{cm}}$   | $v$ at bottom   | Fraction as KE of translation |
+| Object          | $I_{\mathrm{cm}}$   | $v$ at bottom   | Fraction as KE of translation |
 | --------------- | ----------------- | --------------- | ----------------------------- |
 | Solid sphere    | $\frac{2}{5}MR^2$ | $\sqrt{10gh/7}$ | $5/7 = 71\%$                  |
 | Solid cylinder  | $\frac{1}{2}MR^2$ | $\sqrt{4gh/3}$  | $2/3 = 67\%$                  |
@@ -507,11 +507,11 @@ torque about the pivot):
 
 $$L_{\text{initial}} = L_{\text{final}}$$
 
-$$mv \cdot L = I_{\text{rod}}\omega + mv' \cdot L$$
+$$mv \cdot L = I_{\mathrm{rod}}\omega + mv' \cdot L$$
 
 Since the ball sticks to the end of the rod (perfectly inelastic collision):
 
-$$mvr = (I_{\text{rod}} + mr^2)\omega = \left(\frac{1}{3}Mr^2 + mr^2\right)\omega$$
+$$mvr = (I_{\mathrm{rod}} + mr^2)\omega = \left(\frac{1}{3}Mr^2 + mr^2\right)\omega$$
 
 $$\omega = \frac{mvr}{r^2\left(\frac{M}{3} + m\right)} = \frac{mv}{r\left(\frac{M}{3} + m\right)} = \frac{0.05 \times 8}{1 \times \left(\frac{2}{3} + 0.05\right)}$$
 
@@ -519,13 +519,13 @@ $$= \frac{0.4}{0.717} = 0.558 \text{ rad/s}$$
 
 ### Worked Example: Person on a Rotating Platform
 
-A merry-go-round of radius $3 \text{ m}$ and moment of inertia $600 \text{ kg}\cdot\text{m}^2$
+A merry-go-round of radius $3 \text{ m}$ and moment of inertia $600 \text{ kg}\cdot\mathrm{m}^2$
 rotates at $0.5 \text{ rad/s}$. A $60 \text{ kg}$ person standing at the edge walks to the centre.
 Find the new angular speed.
 
-**Initially:** $I_i = 600 + 60 \times 3^2 = 600 + 540 = 1140 \text{ kg}\cdot\text{m}^2$.
+**Initially:** $I_i = 600 + 60 \times 3^2 = 600 + 540 = 1140 \text{ kg}\cdot\mathrm{m}^2$.
 
-**Finally:** $I_f = 600 + 60 \times 0^2 = 600 \text{ kg}\cdot\text{m}^2$.
+**Finally:** $I_f = 600 + 60 \times 0^2 = 600 \text{ kg}\cdot\mathrm{m}^2$.
 
 $$I_i\omega_i = I_f\omega_f$$
 
@@ -556,7 +556,7 @@ Take torques about the base of the ladder (eliminates the friction and normal fo
 **Torque equation (about base):**
 
 Clockwise (positive):
-$Mg \times 2\cos 65^{\circ} = 15 \times 9.8 \times 2 \times 0.4226 = 124.2 \text{ N}\cdot\text{m}$
+$Mg \times 2\cos 65^{\circ} = 15 \times 9.8 \times 2 \times 0.4226 = 124.2 \text{ N}\cdot\mathrm{m}$
 
 Anticlockwise (negative): $N_w \times 4\sin 65^{\circ} = N_w \times 3.625$
 
@@ -595,8 +595,8 @@ Since $f = 34.3 \text{ N} \lt 58.8 \text{ N} = f_{\max}$, the ladder does not sl
     an incline of $30^{\circ}$ from a height of $2 \text{ m}$. Find the linear speed at the bottom
     and the time taken.
 
-13. A disk of moment of inertia $0.5 \text{ kg}\cdot\text{m}^2$ rotating at $20 \text{ rad/s}$ has a
-    braking torque of $0.2 \text{ N}\cdot\text{m}$ applied. Find (a) the angular deceleration, (b)
+13. A disk of moment of inertia $0.5 \text{ kg}\cdot\mathrm{m}^2$ rotating at $20 \text{ rad/s}$ has a
+    braking torque of $0.2 \text{ N}\cdot\mathrm{m}$ applied. Find (a) the angular deceleration, (b)
     the time to stop, and (c) the number of revolutions made while stopping.
 
 14. A $3 \text{ m}$ uniform beam of mass $40 \text{ kg}$ is hinged at a wall and supported by a
@@ -617,15 +617,15 @@ support to the wheel centre is $0.15 \text{ m}$. Calculate the precession angula
 
 **Step 1: Moment of inertia of the wheel (thin ring approximation)**
 
-$$I = MR^2 = 2 \times 0.35^2 = 0.245 \text{ kg}\cdot\text{m}^2$$
+$$I = MR^2 = 2 \times 0.35^2 = 0.245 \text{ kg}\cdot\mathrm{m}^2$$
 
 **Step 2: Angular momentum of the wheel**
 
-$$L = I\omega = 0.245 \times 50 = 12.25 \text{ kg}\cdot\text{m}^2/\text{s}$$
+$$L = I\omega = 0.245 \times 50 = 12.25 \text{ kg}\cdot\mathrm{m}^2/\mathrm{s}$$
 
 **Step 3: Torque due to gravity about the support**
 
-$$\tau = Mg \times d = 2 \times 9.8 \times 0.15 = 2.94 \text{ N}\cdot\text{m}$$
+$$\tau = Mg \times d = 2 \times 9.8 \times 0.15 = 2.94 \text{ N}\cdot\mathrm{m}$$
 
 **Step 4: Precession angular velocity**
 
@@ -649,38 +649,38 @@ the centre of the rod.
 **Part (a): About the end with the point mass**
 
 Rod about its end:
-$I_{\text{rod}} = \frac{1}{3}ML^2 = \frac{1}{3} \times 3 \times 4 = 4 \text{ kg}\cdot\text{m}^2$
+$I_{\mathrm{rod}} = \frac{1}{3}ML^2 = \frac{1}{3} \times 3 \times 4 = 4 \text{ kg}\cdot\mathrm{m}^2$
 
-Point mass at the pivot: $I_{\text{pm}} = mr^2 = 2 \times 0^2 = 0 \text{ kg}\cdot\text{m}^2$
+Point mass at the pivot: $I_{\mathrm{pm}} = mr^2 = 2 \times 0^2 = 0 \text{ kg}\cdot\mathrm{m}^2$
 
-$$I_a = 4 + 0 = 4 \text{ kg}\cdot\text{m}^2$$
+$$I_a = 4 + 0 = 4 \text{ kg}\cdot\mathrm{m}^2$$
 
 **Part (b): About the centre of the rod**
 
 Rod about its centre:
-$I_{\text{rod}} = \frac{1}{12}ML^2 = \frac{1}{12} \times 3 \times 4 = 1 \text{ kg}\cdot\text{m}^2$
+$I_{\mathrm{rod}} = \frac{1}{12}ML^2 = \frac{1}{12} \times 3 \times 4 = 1 \text{ kg}\cdot\mathrm{m}^2$
 
 Point mass is $1 \text{ m}$ from the centre:
-$I_{\text{pm}} = 2 \times 1^2 = 2 \text{ kg}\cdot\text{m}^2$
+$I_{\mathrm{pm}} = 2 \times 1^2 = 2 \text{ kg}\cdot\mathrm{m}^2$
 
-$$I_b = 1 + 2 = 3 \text{ kg}\cdot\text{m}^2$$
+$$I_b = 1 + 2 = 3 \text{ kg}\cdot\mathrm{m}^2$$
 
 **Verify with parallel axis theorem (part a from part b):**
 
-$$I_a = I_b + M_{\text{total}}d^2 = 3 + 5 \times 1^2 = 8 \text{ kg}\cdot\text{m}^2$$
+$$I_a = I_b + M_{\text{total}}d^2 = 3 + 5 \times 1^2 = 8 \text{ kg}\cdot\mathrm{m}^2$$
 
 Wait -- this gives $8$, not $4$. Let me recheck. The parallel axis theorem requires the total mass
 to be at the centre of mass of the _entire system_, not just the rod.
 
 **Centre of mass from the pivot (end with point mass):**
 
-$$x_{\text{cm}} = \frac{3 \times 1 + 2 \times 0}{5} = 0.6 \text{ m from pivot}$$
+$$x_{\mathrm{cm}} = \frac{3 \times 1 + 2 \times 0}{5} = 0.6 \text{ m from pivot}$$
 
 Now using the parallel axis theorem from the centre of mass:
 
-$$I_{\text{cm}} = I_b = 3 \text{ kg}\cdot\text{m}^2 \quad \text{(already calculated)}$$
+$$I_{\mathrm{cm}} = I_b = 3 \text{ kg}\cdot\mathrm{m}^2 \quad \text{(already calculated)}$$
 
-$$I_a = I_{\text{cm}} + M_{\text{total}} \times x_{\text{cm}}^2 = 3 + 5 \times 0.36 = 3 + 1.8 = 4.8 \text{ kg}\cdot\text{m}^2$$
+$$I_a = I_{\mathrm{cm}} + M_{\text{total}} \times x_{\mathrm{cm}}^2 = 3 + 5 \times 0.36 = 3 + 1.8 = 4.8 \text{ kg}\cdot\mathrm{m}^2$$
 
 This still does not match. Let me recalculate $I_b$ more carefully. The point mass is at the _end_
 of the rod, which is $1 \text{ m}$ from the centre of the rod. So $I_b = 1 + 2 \times 1^2 = 3$ is
@@ -688,18 +688,18 @@ correct.
 
 And $I_a$ directly: rod about its far end (away from point mass): use parallel axis from centre,
 $I_{\text{rod, end}} = \frac{1}{12}(3)(4) + 3(1)^2 = 1 + 3 = 4$. Point mass at distance
-$2 \text{ m}$: $I_{\text{pm}} = 2 \times 4 = 8$. Wait -- the point mass is at the pivot, so $r = 0$,
+$2 \text{ m}$: $I_{\mathrm{pm}} = 2 \times 4 = 8$. Wait -- the point mass is at the pivot, so $r = 0$,
 giving $I_a = 4 + 0 = 4$.
 
-The parallel axis check failed because I was not careful. The correct check: $I_{\text{cm}} = 3$
+The parallel axis check failed because I was not careful. The correct check: $I_{\mathrm{cm}} = 3$
 about the centre of mass at $0.6 \text{ m}$ from pivot, so $I_a = 3 + 5(0.6)^2 = 3 + 1.8 = 4.8$. But
 direct calculation gives $4$.
 
 Let me recheck $I_b$: the point mass is at one end of the rod, which is $1 \text{ m}$ from the rod's
-centre. $I_{\text{pm}} = 2 \times 1^2 = 2$. $I_{\text{rod, centre}} = 1$. $I_b = 3$. Correct.
+centre. $I_{\mathrm{pm}} = 2 \times 1^2 = 2$. $I_{\text{rod, centre}} = 1$. $I_b = 3$. Correct.
 
-The discrepancy means $I_{\text{cm}} \ne I_b$. The centre of mass of the system is at
-$0.6 \text{ m}$ from the pivot (not at the centre of the rod). So $I_{\text{cm}}$ should be
+The discrepancy means $I_{\mathrm{cm}} \ne I_b$. The centre of mass of the system is at
+$0.6 \text{ m}$ from the pivot (not at the centre of the rod). So $I_{\mathrm{cm}}$ should be
 calculated about the system's centre of mass, not the rod's centre. This is a subtle but important
 point.
 
@@ -718,7 +718,7 @@ Rotation: $TR = I\alpha$, where $R$ is the axle radius and $a = R\alpha$.
 $$T \times 0.005 = I \times \frac{a}{0.005}$$
 
 For the yo-yo (solid disk):
-$I = \frac{1}{2}MR_{\text{disk}}^2 = \frac{1}{2} \times 0.1 \times 0.03^2 = 4.5 \times 10^{-5} \text{ kg}\cdot\text{m}^2$
+$I = \frac{1}{2}MR_{\text{disk}}^2 = \frac{1}{2} \times 0.1 \times 0.03^2 = 4.5 \times 10^{-5} \text{ kg}\cdot\mathrm{m}^2$
 
 $$T = \frac{Ia}{R^2} = \frac{4.5 \times 10^{-5} \times a}{2.5 \times 10^{-5}} = 1.8a$$
 
@@ -752,7 +752,7 @@ the contact point (instantaneously at rest).
 
 ### Pitfall 8: Forgetting Units in Moment of Inertia
 
-Moment of inertia has units of $\text{kg}\cdot\text{m}^2$. A common error is to use centimetres
+Moment of inertia has units of $\mathrm{kg}\cdot\mathrm{m}^2$. A common error is to use centimetres
 instead of metres when calculating $I = mr^2$, giving answers that are off by a factor of $10^4$.
 Always convert to SI units before calculating.
 
@@ -762,9 +762,9 @@ Always convert to SI units before calculating.
     $20°$ incline at $5 \text{ m/s}$. Calculate how far up the incline it travels before stopping
     and rolling back.
 
-17. A figure skater with arms extended has moment of inertia $4.5 \text{ kg}\cdot\text{m}^2$ and
+17. A figure skater with arms extended has moment of inertia $4.5 \text{ kg}\cdot\mathrm{m}^2$ and
     rotates at $2 \text{ rad/s}$. She pulls her arms in, reducing her moment of inertia to
-    $1.5 \text{ kg}\cdot\text{m}^2$. Calculate her new angular velocity and the ratio of final to
+    $1.5 \text{ kg}\cdot\mathrm{m}^2$. Calculate her new angular velocity and the ratio of final to
     initial rotational KE.
 
 18. A uniform rod of mass $8 \text{ kg}$ and length $3 \text{ m}$ is hinged at one end and held
@@ -776,6 +776,6 @@ Always convert to SI units before calculating.
     surface at $4 \text{ m/s}$. It encounters a ramp of height $0.5 \text{ m}$. Does it reach the
     top? If so, what is its speed at the top?
 
-20. Two flywheels ($I_1 = 2 \text{ kg}\cdot\text{m}^2$ spinning at $300 \text{ rpm}$,
-    $I_2 = 5 \text{ kg}\cdot\text{m}^2$ at rest) are coupled together. Calculate the final angular
+20. Two flywheels ($I_1 = 2 \text{ kg}\cdot\mathrm{m}^2$ spinning at $300 \text{ rpm}$,
+    $I_2 = 5 \text{ kg}\cdot\mathrm{m}^2$ at rest) are coupled together. Calculate the final angular
     velocity and the energy lost in the coupling process.

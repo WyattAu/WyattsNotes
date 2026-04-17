@@ -239,7 +239,7 @@ $$
 If $f$ is continuous, positive, and decreasing on $[1, \infty)$, and $a_n = f(n)$, then:
 
 $$
-\sum_{n=1}^{\infty} a_n \quad \text{and} \quad \int_1^{\infty} f(x)\, dx
+\sum_{n=1}^{\infty} a_n \quad \mathrm{and} \quad \int_1^{\infty} f(x)\, dx
 $$
 
 either both converge or both diverge.

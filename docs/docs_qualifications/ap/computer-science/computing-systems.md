@@ -144,7 +144,7 @@ Base-16 representation, using digits 0--9 and A--F.
 
 Conversion: group binary digits in groups of 4 from right to left.
 
-$10110110_2 = \text{B6}_{16}$
+$10110110_2 = \mathrm{B6}_{16}$
 
 **Uses of hexadecimal:** Colour codes (#RRGGBB in HTML/CSS), memory addresses, MAC addresses, error
 codes, assembly language.
@@ -273,15 +273,15 @@ This requires: 2 NOT gates, 2 AND gates, 1 OR gate.
 
 **Half adder:** Adds two single bits. Produces sum and carry.
 
-$$\text{Sum} = A \oplus B$$
+$$\mathrm{Sum} = A \oplus B$$
 
 $$\text{Carry} = A \cdot B$$
 
 **Full adder:** Adds two bits and a carry-in. Produces sum and carry-out.
 
-$$\text{Sum} = A \oplus B \oplus C_{\text{in}}$$
+$$\mathrm{Sum} = A \oplus B \oplus C_{\mathrm{in}}$$
 
-$$C_{\text{out}} = (A \cdot B) + (C_{\text{in}} \cdot (A \oplus B))$$
+$$C_{\mathrm{out}} = (A \cdot B) + (C_{\mathrm{in}} \cdot (A \oplus B))$$
 
 **Why full adders matter.** A full adder can be chained to add multi-bit numbers. To add two 8-bit
 numbers, chain 8 full adders: the carry-out of each stage becomes the carry-in of the next. The
@@ -595,7 +595,7 @@ $2 	imes 16 + 11 = 43$.
 
 A half adder adds two single bits:
 
-$$	ext{Sum} = A \oplus B$$
+$$\mathrm{Sum} = A \oplus B$$
 $$	ext{Carry} = A \cdot B$$
 
 **Implementation using basic gates:** 1 XOR gate (sum), 1 AND gate (carry).
@@ -604,8 +604,8 @@ $$	ext{Carry} = A \cdot B$$
 
 A full adder adds two bits and a carry-in:
 
-$$	ext{Sum} = A \oplus B \oplus C_{	ext{in}}$$
-$$C_{	ext{out}} = (A \cdot B) + (C_{	ext{in}} \cdot (A \oplus B))$$
+$$\mathrm{Sum} = A \oplus B \oplus C_{\mathrm{in}}$$
+$$C_{\mathrm{out}} = (A \cdot B) + (C_{\mathrm{in}} \cdot (A \oplus B))$$
 
 **Implementation:** 2 XOR gates, 2 AND gates, 1 OR gate.
 

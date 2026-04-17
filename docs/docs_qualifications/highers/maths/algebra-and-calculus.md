@@ -446,8 +446,8 @@ Optimisation problems require you to express the quantity to be optimised as a f
 variable, then find the stationary points.
 
 **Example:** A rectangular box with a square base has a volume of $128 \text{ cm}^3$. The material
-for the base costs 5 pence per $\text{cm}^2$ and the material for the sides costs 3 pence per
-$\text{cm}^2$. Find the dimensions that minimise the cost.
+for the base costs 5 pence per $\mathrm{cm}^2$ and the material for the sides costs 3 pence per
+$\mathrm{cm}^2$. Find the dimensions that minimise the cost.
 
 Let the base have side length $x$ cm and height $h$ cm.
 

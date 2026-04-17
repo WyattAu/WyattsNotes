@@ -78,7 +78,7 @@ These prefixes are combined with the suffix that identifies the homologous serie
 Alkanes are **saturated hydrocarbons** -- all carbon-carbon bonds are single bonds. The general
 formula is:
 
-$$\text{C}_n\text{H}_{2n+2}$$
+$$\mathrm{C}_n\mathrm{H}_{2n+2}$$
 
 The formula is derived from the fact that each carbon atom forms four bonds. In a straight chain,
 the two end carbons are bonded to three hydrogens each, and the remaining $(n-2)$ carbons are bonded
@@ -102,16 +102,16 @@ area for intermolecular attraction, more electrons to polarise).
 
 **Complete combustion** (plenty of oxygen):
 
-$$\text{C}_n\text{H}_{2n+2} + \frac{3n+1}{2}\text{O}_2 \to n\text{CO}_2 + (n+1)\text{H}_2\text{O}$$
+$$\mathrm{C}_n\mathrm{H}_{2n+2} + \frac{3n+1}{2}\mathrm{O}_2 \to n\mathrm{CO}_2 + (n+1)\mathrm{H}_2\mathrm{O}$$
 
-**Example:** $\text{CH}_4 + 2\text{O}_2 \to \text{CO}_2 + 2\text{H}_2\text{O}$
+**Example:** $\mathrm{CH}_4 + 2\mathrm{O}_2 \to \mathrm{CO}_2 + 2\mathrm{H}_2\mathrm{O}$
 
-**Example:** $2\text{C}_4\text{H}_{10} + 13\text{O}_2 \to 8\text{CO}_2 + 10\text{H}_2\text{O}$
+**Example:** $2\mathrm{C}_4\mathrm{H}_{10} + 13\mathrm{O}_2 \to 8\mathrm{CO}_2 + 10\mathrm{H}_2\mathrm{O}$
 
 **Incomplete combustion** (limited oxygen) produces carbon monoxide (CO) and/or carbon (soot):
 
-$$2\text{CH}_4 + 3\text{O}_2 \to 2\text{CO} + 4\text{H}_2\text{O}$$
-$$\text{CH}_4 + \text{O}_2 \to \text{C} + 2\text{H}_2\text{O}$$
+$$2\mathrm{CH}_4 + 3\mathrm{O}_2 \to 2\mathrm{CO} + 4\mathrm{H}_2\mathrm{O}$$
+$$\mathrm{CH}_4 + \mathrm{O}_2 \to \mathrm{C} + 2\mathrm{H}_2\mathrm{O}$$
 
 :::warning
 Carbon monoxide is a toxic, colourless, odourless gas that binds to haemoglobin more
@@ -127,7 +127,7 @@ moderately limited oxygen, carbon monoxide is produced.
 
 Alkanes react with halogens in the presence of UV light (substitution reaction):
 
-$$\text{CH}_4 + \text{Cl}_2 \xrightarrow{\text{UV}} \text{CH}_3\text{Cl} + \text{HCl}$$
+$$\mathrm{CH}_4 + \mathrm{Cl}_2 \xrightarrow{\mathrm{UV}} \mathrm{CH}_3\mathrm{Cl} + \mathrm{HCl}$$
 
 This is a **free radical substitution** reaction. The reaction can continue to produce
 dichloromethane, trichloromethane, and tetrachloromethane.
@@ -145,18 +145,18 @@ The mechanism involves three stages:
 
 **Initiation:**
 
-$$\text{Cl}_2 \xrightarrow{\text{UV}} 2\text{Cl}^\bullet$$
+$$\mathrm{Cl}_2 \xrightarrow{\mathrm{UV}} 2\mathrm{Cl}^\bullet$$
 
 **Propagation:**
 
-$$\text{CH}_4 + \text{Cl}^\bullet \to \text{CH}_3^\bullet + \text{HCl}$$
-$$\text{CH}_3^\bullet + \text{Cl}_2 \to \text{CH}_3\text{Cl} + \text{Cl}^\bullet$$
+$$\mathrm{CH}_4 + \mathrm{Cl}^\bullet \to \mathrm{CH}_3^\bullet + \mathrm{HCl}$$
+$$\mathrm{CH}_3^\bullet + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{Cl} + \mathrm{Cl}^\bullet$$
 
 **Termination:**
 
-$$\text{Cl}^\bullet + \text{Cl}^\bullet \to \text{Cl}_2$$
-$$\text{CH}_3^\bullet + \text{Cl}^\bullet \to \text{CH}_3\text{Cl}$$
-$$\text{CH}_3^\bullet + \text{CH}_3^\bullet \to \text{C}_2\text{H}_6$$
+$$\mathrm{Cl}^\bullet + \mathrm{Cl}^\bullet \to \mathrm{Cl}_2$$
+$$\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$$
+$$\mathrm{CH}_3^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6$$
 
 The propagation step is self-sustaining: each time a chlorine radical is consumed, another is
 produced. This is why UV light is needed only to start the reaction, not to sustain it.
@@ -166,14 +166,14 @@ produced. This is why UV light is needed only to start the reaction, not to sust
 **Worked Example.** Write the balanced equation for the complete combustion of pentane
 (C$_5$H$_{12}$).
 
-$$\text{C}_5\text{H}_{12} + 8\text{O}_2 \to 5\text{CO}_2 + 6\text{H}_2\text{O}$$
+$$\mathrm{C}_5\mathrm{H}_{12} + 8\mathrm{O}_2 \to 5\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O}$$
 
 Check: C: 5 = 5, H: 12 = 12, O: 16 = 10 + 6 = 16.
 
 **Worked Example.** Write the balanced equation for the incomplete combustion of propane producing
 carbon monoxide.
 
-$$2\text{C}_3\text{H}_8 + 7\text{O}_2 \to 6\text{CO} + 8\text{H}_2\text{O}$$
+$$2\mathrm{C}_3\mathrm{H}_8 + 7\mathrm{O}_2 \to 6\mathrm{CO} + 8\mathrm{H}_2\mathrm{O}$$
 
 ## 3. Alkenes
 
@@ -182,7 +182,7 @@ $$2\text{C}_3\text{H}_8 + 7\text{O}_2 \to 6\text{CO} + 8\text{H}_2\text{O}$$
 Alkenes are **unsaturated hydrocarbons** -- they contain at least one carbon-carbon **double bond**
 (C=C). The general formula is:
 
-$$\text{C}_n\text{H}_{2n}$$
+$$\mathrm{C}_n\mathrm{H}_{2n}$$
 
 | Name    | Formula    |
 | ------- | ---------- |
@@ -199,7 +199,7 @@ sigma bond and is what makes alkenes more reactive than alkanes.
 Alkenes decolourise **bromine water** (orange to colourless). This is because the double bond opens
 and bromine adds across it:
 
-$$\text{C}_2\text{H}_4 + \text{Br}_2 \to \text{C}_2\text{H}_4\text{Br}_2$$
+$$\mathrm{C}_2\mathrm{H}_4 + \mathrm{Br}_2 \to \mathrm{C}_2\mathrm{H}_4\mathrm{Br}_2$$
 
 Alkanes do NOT decolourise bromine water (no double bond to react with).
 
@@ -208,18 +208,18 @@ Alkanes do NOT decolourise bromine water (no double bond to react with).
 Alkenes undergo **addition reactions** because the double bond can open up, allowing new atoms to
 bond to the carbon atoms.
 
-**Hydrogenation:** $\text{C}_2\text{H}_4 + \text{H}_2 \to \text{C}_2\text{H}_6$ (with nickel
+**Hydrogenation:** $\mathrm{C}_2\mathrm{H}_4 + \mathrm{H}_2 \to \mathrm{C}_2\mathrm{H}_6$ (with nickel
 catalyst)
 
-**Hydration:** $\text{C}_2\text{H}_4 + \text{H}_2\text{O} \to \text{C}_2\text{H}_5\text{OH}$ (with
+**Hydration:** $\mathrm{C}_2\mathrm{H}_4 + \mathrm{H}_2\mathrm{O} \to \mathrm{C}_2\mathrm{H}_5\mathrm{OH}$ (with
 phosphoric acid catalyst)
 
 **Reaction with steam:** This is used industrially to make ethanol.
 
 **Reaction with hydrogen bromide:**
-$\text{C}_2\text{H}_4 + \text{HBr} \to \text{C}_2\text{H}_5\text{Br}$
+$\mathrm{C}_2\mathrm{H}_4 + \mathrm{HBr} \to \mathrm{C}_2\mathrm{H}_5\mathrm{Br}$
 
-**Reaction with halogens:** $\text{C}_2\text{H}_4 + \text{Br}_2 \to \text{C}_2\text{H}_4\text{Br}_2$
+**Reaction with halogens:** $\mathrm{C}_2\mathrm{H}_4 + \mathrm{Br}_2 \to \mathrm{C}_2\mathrm{H}_4\mathrm{Br}_2$
 
 In all addition reactions, the pi bond breaks and two new sigma bonds form. The carbon atoms go from
 sp$^2$ hybridised (trigonal planar) to sp$^3$ hybridised (tetrahedral).
@@ -233,15 +233,15 @@ The double bond in each alkene molecule (monomer) opens and links to form a poly
 
 **Example: Poly(ethene) from ethene**
 
-$$n\text{C}_2\text{H}_4 \to \text{(-CH}_2\text{-CH}_2\text{-)}_n$$
+$$n\mathrm{C}_2\mathrm{H}_4 \to \text{(-CH}_2\text{-CH}_2\text{-)}_n$$
 
 **Example: Poly(propene) from propene**
 
-$$n\text{C}_3\text{H}_6 \to \text{(-CH}_2\text{-CH(CH}_3\text{)-)}_n$$
+$$n\mathrm{C}_3\mathrm{H}_6 \to \text{(-CH}_2\text{-CH(CH}_3\text{)-)}_n$$
 
 **Example: Poly(chloroethene) / PVC from chloroethene**
 
-$$n\text{C}_2\text{H}_3\text{Cl} \to \text{(-CH}_2\text{-CHCl-)}_n$$
+$$n\mathrm{C}_2\mathrm{H}_3\mathrm{Cl} \to \text{(-CH}_2\text{-CHCl-)}_n$$
 
 ### 3.5 Problems with Polymers
 
@@ -274,7 +274,7 @@ PVC) are burned.
 
 Alcohols contain the **hydroxyl group** (-OH). The general formula is:
 
-$$\text{C}_n\text{H}_{2n+1}\text{OH}$$
+$$\mathrm{C}_n\mathrm{H}_{2n+1}\mathrm{OH}$$
 
 | Name     | Formula      | Boiling Point ($^{\circ}$C) |
 | -------- | ------------ | --------------------------- |
@@ -293,12 +293,12 @@ $$\text{C}_n\text{H}_{2n+1}\text{OH}$$
 
 **Combustion:**
 
-$$\text{C}_2\text{H}_5\text{OH} + 3\text{O}_2 \to 2\text{CO}_2 + 3\text{H}_2\text{O}$$
+$$\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 3\mathrm{O}_2 \to 2\mathrm{CO}_2 + 3\mathrm{H}_2\mathrm{O}$$
 
 **Oxidation:** Ethanol can be oxidised to ethanoic acid using an oxidising agent (e.g. potassium
 dichromate(VI) with dilute sulfuric acid).
 
-$$\text{C}_2\text{H}_5\text{OH} \to \text{CH}_3\text{COOH}$$
+$$\mathrm{C}_2\mathrm{H}_5\mathrm{OH} \to \mathrm{CH}_3\text{COOH}$$
 
 The oxidation proceeds in two stages: ethanol is first oxidised to ethanal (an aldehyde), which is
 then further oxidised to ethanoic acid (a carboxylic acid).
@@ -306,11 +306,11 @@ then further oxidised to ethanoic acid (a carboxylic acid).
 **Dehydration:** Ethanol can be dehydrated to ethene using aluminium oxide catalyst at high
 temperature.
 
-$$\text{C}_2\text{H}_5\text{OH} \to \text{C}_2\text{H}_4 + \text{H}_2\text{O}$$
+$$\mathrm{C}_2\mathrm{H}_5\mathrm{OH} \to \mathrm{C}_2\mathrm{H}_4 + \mathrm{H}_2\mathrm{O}$$
 
 **Reaction with sodium:**
 
-$$2\text{C}_2\text{H}_5\text{OH} + 2\text{Na} \to 2\text{C}_2\text{H}_5\text{ONa} + \text{H}_2$$
+$$2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{Na} \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{ONa} + \mathrm{H}_2$$
 
 This reaction is similar to the reaction of sodium with water but is less vigorous. It confirms that
 alcohols contain the -OH group.
@@ -325,7 +325,7 @@ alcohols contain the -OH group.
 
 **Fermentation** uses yeast to convert sugars into ethanol and carbon dioxide:
 
-$$\text{C}_6\text{H}_{12}\text{O}_6 \to 2\text{C}_2\text{H}_5\text{OH} + 2\text{CO}_2$$
+$$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$$
 
 **Conditions:**
 
@@ -353,7 +353,7 @@ $$m(\text{ethanol}) = 2 \times 46 = 92 \text{ g}$$
 
 Carboxylic acids contain the **carboxyl group** (-COOH). The general formula is:
 
-$$\text{C}_n\text{H}_{2n+1}\text{COOH}$$
+$$\mathrm{C}_n\mathrm{H}_{2n+1}\text{COOH}$$
 
 | Name           | Formula        |
 | -------------- | -------------- |
@@ -378,15 +378,15 @@ undissociated in solution.
 
 **With sodium carbonate:**
 
-$$2\text{CH}_3\text{COOH} + \text{Na}_2\text{CO}_3 \to 2\text{CH}_3\text{COONa} + \text{H}_2\text{O} + \text{CO}_2$$
+$$2\mathrm{CH}_3\text{COOH} + \mathrm{Na}_2\mathrm{CO}_3 \to 2\mathrm{CH}_3\text{COONa} + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
 
 **With metals:**
 
-$$2\text{CH}_3\text{COOH} + 2\text{Na} \to 2\text{CH}_3\text{COONa} + \text{H}_2$$
+$$2\mathrm{CH}_3\text{COOH} + 2\mathrm{Na} \to 2\mathrm{CH}_3\text{COONa} + \mathrm{H}_2$$
 
 **With alcohols (esterification):**
 
-$$\text{CH}_3\text{COOH} + \text{C}_2\text{H}_5\text{OH} \rightleftharpoons \text{CH}_3\text{COOC}_2\text{H}_5 + \text{H}_2\text{O}$$
+$$\mathrm{CH}_3\text{COOH} + \mathrm{C}_2\mathrm{H}_5\mathrm{OH} \rightleftharpoons \mathrm{CH}_3\text{COOC}_2\mathrm{H}_5 + \mathrm{H}_2\mathrm{O}$$
 
 ### 5.4 Esters
 
@@ -418,7 +418,7 @@ Crude oil is a mixture of hydrocarbons with different chain lengths. These are s
 
 **Process:**
 
-1. Crude oil is heated to about $400^{\circ}\text{C}$ to vaporise it
+1. Crude oil is heated to about $400^{\circ}\mathrm{C}$ to vaporise it
 2. The vapour enters the fractionating column at the bottom
 3. The column is hotter at the bottom and cooler at the top
 4. Hydrocarbons condense at different heights depending on their boiling point
@@ -454,7 +454,7 @@ alkanes and aromatic compounds. Produces higher-quality petrol.
 
 **Example:**
 
-$$\text{C}_{10}\text{H}_{22} \to \text{C}_8\text{H}_{18} + \text{C}_2\text{H}_4$$
+$$\mathrm{C}_{10}\mathrm{H}_{22} \to \mathrm{C}_8\mathrm{H}_{18} + \mathrm{C}_2\mathrm{H}_4$$
 
 (decane $\to$ octane + ethene)
 
@@ -469,7 +469,7 @@ The atoms must balance: 12 C and 26 H on the left. The known product has 8 C and
 product has $12 - 8 = 4$ C and $26 - 18 = 8$ H. The formula is C$_4$H$_8$, which is butene (an
 alkene).
 
-$$\text{C}_{12}\text{H}_{26} \to \text{C}_8\text{H}_{18} + \text{C}_4\text{H}_8$$
+$$\mathrm{C}_{12}\mathrm{H}_{26} \to \mathrm{C}_8\mathrm{H}_{18} + \mathrm{C}_4\mathrm{H}_8$$
 
 ## 7. Biodegradable Polymers and Natural Polymers
 
@@ -521,12 +521,12 @@ conditions, may contaminate recycling streams if mixed with conventional plastic
 
 | Reaction Type  | Description                          | Example                                                                                        |
 | -------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------- |
-| Combustion     | Burning in oxygen                    | $\text{CH}_4 + 2\text{O}_2 \to \text{CO}_2 + 2\text{H}_2\text{O}$                              |
-| Addition       | Atoms added across C=C double bond   | $\text{C}_2\text{H}_4 + \text{Br}_2 \to \text{C}_2\text{H}_4\text{Br}_2$                       |
-| Substitution   | Atom replaced by another atom        | $\text{CH}_4 + \text{Cl}_2 \to \text{CH}_3\text{Cl} + \text{HCl}$                              |
-| Polymerisation | Monomers join to form long chains    | $n\text{C}_2\text{H}_4 \to \text{poly(ethene)}$                                                |
-| Esterification | Acid + alcohol $\to$ ester + water   | $\text{CH}_3\text{COOH} + \text{C}_2\text{H}_5\text{OH} \to \text{ester} + \text{H}_2\text{O}$ |
-| Fermentation   | Sugar $\to$ ethanol + carbon dioxide | $\text{C}_6\text{H}_{12}\text{O}_6 \to 2\text{C}_2\text{H}_5\text{OH} + 2\text{CO}_2$          |
+| Combustion     | Burning in oxygen                    | $\mathrm{CH}_4 + 2\mathrm{O}_2 \to \mathrm{CO}_2 + 2\mathrm{H}_2\mathrm{O}$                              |
+| Addition       | Atoms added across C=C double bond   | $\mathrm{C}_2\mathrm{H}_4 + \mathrm{Br}_2 \to \mathrm{C}_2\mathrm{H}_4\mathrm{Br}_2$                       |
+| Substitution   | Atom replaced by another atom        | $\mathrm{CH}_4 + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{Cl} + \mathrm{HCl}$                              |
+| Polymerisation | Monomers join to form long chains    | $n\mathrm{C}_2\mathrm{H}_4 \to \text{poly(ethene)}$                                                |
+| Esterification | Acid + alcohol $\to$ ester + water   | $\mathrm{CH}_3\text{COOH} + \mathrm{C}_2\mathrm{H}_5\mathrm{OH} \to \text{ester} + \mathrm{H}_2\mathrm{O}$ |
+| Fermentation   | Sugar $\to$ ethanol + carbon dioxide | $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$          |
 
 ## Common Pitfalls
 
@@ -644,7 +644,7 @@ monomer. (b) Draw the displayed formula of the monomer. (c) Name the polymer.
 
 **Worked Example.** Write the equation for the polymerisation of but-2-ene and name the polymer.
 
-$$n\text{CH}_3\text{CH}=\text{CHCH}_3 \to \text{(-CH(CH}_3\text{)-CH}_2\text{-)}_n$$
+$$n\mathrm{CH}_3\mathrm{CH}=\text{CHCH}_3 \to \text{(-CH(CH}_3\text{)-CH}_2\text{-)}_n$$
 
 The polymer is poly(but-2-ene), also called polybutene.
 
@@ -671,7 +671,7 @@ Identify the other product.
 Atom balance: C: $14 - 8 = 6$, H: $30 - 18 = 12$. The other product is C$_6$H$_{12}$, which is
 cyclohexane.
 
-$$\text{C}_{14}\text{H}_{30} \to \text{C}_8\text{H}_{18} + \text{C}_6\text{H}_{12}$$
+$$\mathrm{C}_{14}\mathrm{H}_{30} \to \mathrm{C}_8\mathrm{H}_{18} + \mathrm{C}_6\mathrm{H}_{12}$$
 
 **Worked Example.** Explain why the product of cracking always contains at least one alkene.
 
@@ -690,7 +690,7 @@ with fewer hydrogen atoms relative to their carbon atoms.
 23. A student performs a titration and obtains the following results: 24.8, 24.6, 24.7 cm$^3$. What
     average titre should they use?
 
-24. Calculate the atom economy for the reaction: $2\text{Na} + \text{Cl}_2 \to 2\text{NaCl}$.
+24. Calculate the atom economy for the reaction: $2\mathrm{Na} + \mathrm{Cl}_2 \to 2\text{NaCl}$.
 
 25. What is the percentage yield if 5.0 g of CaCO$_3$ produces only 2.0 g of CO$_2$?
 
@@ -701,8 +701,8 @@ with fewer hydrogen atoms relative to their carbon atoms.
 28. A solution contains 20 g of NaOH in 500 cm$^3$. What is the molar concentration?
 
 29. Calculate the atom economy for the Haber process:
-    $\text{N}_2 + 3\text{H}_2 \rightleftharpoons
-    2\text{NH}_3$, where ammonia is the desired
+    $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons
+    2\mathrm{NH}_3$, where ammonia is the desired
     product.
 
 30. 5.0 g of a mixture of Mg and Zn reacts with excess acid to produce 2.4 dm$^3$ of H$_2$ at RTP.

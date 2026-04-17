@@ -202,15 +202,15 @@ $$\sin \theta = \frac{\text{opposite}}{\text{hypotenuse}}, \quad \cos \theta = \
 
 **Proof that $\tan \theta = \frac{\sin \theta}{\cos \theta}$.**
 
-$$\tan \theta = \frac{\text{opp}}{\text{adj}} = \frac{\text{opp}/\text{hyp}}{\text{adj}/\text{hyp}} = \frac{\sin \theta}{\cos \theta} \quad \blacksquare$$
+$$\tan \theta = \frac{\mathrm{opp}}{\mathrm{adj}} = \frac{\mathrm{opp}/\mathrm{hyp}}{\mathrm{adj}/\mathrm{hyp}} = \frac{\sin \theta}{\cos \theta} \quad \blacksquare$$
 
 **Proof that $\sin^2\theta + \cos^2\theta = 1$.**
 
-By Pythagoras: $\text{opp}^2 + \text{adj}^2 = \text{hyp}^2$.
+By Pythagoras: $\mathrm{opp}^2 + \mathrm{adj}^2 = \mathrm{hyp}^2$.
 
-Dividing by $\text{hyp}^2$:
+Dividing by $\mathrm{hyp}^2$:
 
-$$\frac{\text{opp}^2}{\text{hyp}^2} + \frac{\text{adj}^2}{\text{hyp}^2} = 1$$
+$$\frac{\mathrm{opp}^2}{\mathrm{hyp}^2} + \frac{\mathrm{adj}^2}{\mathrm{hyp}^2} = 1$$
 
 $$\sin^2\theta + \cos^2\theta = 1 \quad \blacksquare$$
 
@@ -421,7 +421,7 @@ area.
 
 $$V = \pi \times 5^2 \times 12 = 300\pi \approx 942 \text{ cm}^3$$
 
-$$\text{SA} = 2\pi \times 25 + 2\pi \times 5 \times 12 = 50\pi + 120\pi = 170\pi \approx 534 \text{ cm}^2$$
+$$\mathrm{SA} = 2\pi \times 25 + 2\pi \times 5 \times 12 = 50\pi + 120\pi = 170\pi \approx 534 \text{ cm}^2$$
 
 **Worked Example (Higher Tier).** A cone has base radius 6 cm and slant height 10 cm. Find its
 volume.

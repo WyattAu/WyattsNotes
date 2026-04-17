@@ -612,7 +612,7 @@ wavefront to rotate.
 | ------------ | ------------------------------------------- | ------------------------------------- | -------------------------- |
 | Reflection   | Wave bounces off surface                    | $\theta_i = \theta_r$                 | Mirror, echo               |
 | Refraction   | Wave changes direction due to speed change  | $n_1\sin\theta_1 = n_2\sin\theta_2$   | Pencil in water looks bent |
-| Diffraction  | Wave spreads through gap or around obstacle | Max when $\text{gap} \approx \lambda$ | Sound around a corner      |
+| Diffraction  | Wave spreads through gap or around obstacle | Max when $\mathrm{gap} \approx \lambda$ | Sound around a corner      |
 | Interference | Waves superpose, creating pattern           | $\Delta x = n\lambda$ (constructive)  | Oil film colours           |
 | Polarisation | Oscillations restricted to one plane        | Only transverse waves                 | Sunglasses                 |
 

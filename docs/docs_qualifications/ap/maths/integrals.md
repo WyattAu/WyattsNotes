@@ -623,17 +623,17 @@ $$
 The average value of $f$ on $[a, b]$ is:
 
 $$
-f_{\text{avg}} = \frac{1}{b - a}\int_a^b f(x)\, dx
+f_{\mathrm{avg}} = \frac{1}{b - a}\int_a^b f(x)\, dx
 $$
 
-By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\text{avg}}$.
+By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\mathrm{avg}}$.
 
 :::info[Example]
 
 Find the average value of $f(x) = \sin x$ on $[0, \pi]$.
 
 $$
-f_{\text{avg}} = \frac{1}{\pi}\int_0^{\pi} \sin x\, dx = \frac{1}{\pi}[-\cos x]_0^{\pi} = \frac{1}{\pi}(1 - (-1)) = \frac{2}{\pi}
+f_{\mathrm{avg}} = \frac{1}{\pi}\int_0^{\pi} \sin x\, dx = \frac{1}{\pi}[-\cos x]_0^{\pi} = \frac{1}{\pi}(1 - (-1)) = \frac{2}{\pi}
 $$
 
 :::

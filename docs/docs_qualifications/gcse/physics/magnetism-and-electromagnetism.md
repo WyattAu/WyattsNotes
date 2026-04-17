@@ -247,7 +247,7 @@ An **AC generator** converts kinetic energy into electrical energy using electro
 
 **Peak EMF:**
 
-$$\text{EMF}_{\text{peak}} = NAB\omega$$
+$$\mathrm{EMF}_{\text{peak}} = NAB\omega$$
 
 where $N$ is the number of turns, $A$ is the area of the coil, $B$ is the magnetic flux density, and
 $\omega$ is the angular velocity.
@@ -593,7 +593,7 @@ directly to the external circuit.
 A coil of 100 turns and area $0.03 \text{ m}^2$ rotates at 50 Hz in a magnetic field of flux density
 $0.4 \text{ T}$. Calculate the peak EMF.
 
-$$\text{EMF}_{\text{peak}} = NAB\omega = NAB \times 2\pi f$$
+$$\mathrm{EMF}_{\text{peak}} = NAB\omega = NAB \times 2\pi f$$
 
 $$= 100 \times 0.03 \times 0.4 \times 2\pi \times 50$$
 

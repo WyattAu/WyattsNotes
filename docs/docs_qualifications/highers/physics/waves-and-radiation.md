@@ -190,10 +190,10 @@ require numbers ranging from 1 to a trillion. The logarithmic decibel scale comp
 
 ### Nuclear Radiation
 
-**Alpha radiation ($\alpha$):** Helium nucleus ($^4_2\text{He}$). Highly ionising, stopped by paper,
+**Alpha radiation ($\alpha$):** Helium nucleus ($^4_2\mathrm{He}$). Highly ionising, stopped by paper,
 range of a few cm in air.
 
-**Beta radiation ($\beta^-$):** Electron ($^0_{-1}\text{e}$). Moderately ionising, stopped by a few
+**Beta radiation ($\beta^-$):** Electron ($^0_{-1}\mathrm{e}$). Moderately ionising, stopped by a few
 mm of aluminium.
 
 **Gamma radiation ($\gamma$):** Electromagnetic radiation. Weakly ionising, requires thick lead or
@@ -245,9 +245,9 @@ the statistical distribution of many throws.
 
 In a nuclear reaction, both mass number and atomic number are conserved.
 
-**Alpha decay:** $^A_Z\text{X} \to ^{A-4}_{Z-2}\text{Y} + ^4_2\text{He}$
+**Alpha decay:** $^A_Z\mathrm{X} \to ^{A-4}_{Z-2}\mathrm{Y} + ^4_2\mathrm{He}$
 
-**Beta-minus decay:** $^A_Z\text{X} \to ^A_{Z+1}\text{Y} + ^0_{-1}\text{e} + \bar{\nu}_e$
+**Beta-minus decay:** $^A_Z\mathrm{X} \to ^A_{Z+1}\mathrm{Y} + ^0_{-1}\mathrm{e} + \bar{\nu}_e$
 
 ### Mass-Energy Equivalence
 
@@ -654,7 +654,7 @@ $= 1.008665 \text{ u}$, $1 \text{ u} = 931.5 \text{ MeV}/c^2$.
 
 Helium-4 has 2 protons and 2 neutrons.
 
-$$\Delta m = 2m_p + 2m_n - m_{\text{He}} = 2(1.007276) + 2(1.008665) - 4.001506$$
+$$\Delta m = 2m_p + 2m_n - m_{\mathrm{He}} = 2(1.007276) + 2(1.008665) - 4.001506$$
 
 $$\Delta m = 2.014552 + 2.017330 - 4.001506 = 0.030376 \text{ u}$$
 
@@ -694,7 +694,7 @@ $$y_5 = 5 \times \Delta y = 5 \times 1.09 = 5.44 \text{ mm}$$
 
 **Step 3: What happens if the wavelength is doubled?**
 
-$$\Delta y_{\text{new}} = \frac{2\lambda D}{d} = 2 \times 1.09 = 2.18 \text{ mm}$$
+$$\Delta y_{\mathrm{new}} = \frac{2\lambda D}{d} = 2 \times 1.09 = 2.18 \text{ mm}$$
 
 Doubling the wavelength doubles the fringe spacing.
 
@@ -702,7 +702,7 @@ Doubling the wavelength doubles the fringe spacing.
 
 ### Radiation Detection: Geiger-Muller Tube
 
-A GM tube has a dead time of approximately $100 \text{ }\mu\text{s}$ after each count. This limits
+A GM tube has a dead time of approximately $100 \text{ }\mu\mathrm{s}$ after each count. This limits
 the maximum count rate:
 
 $$\text{Maximum count rate} = \frac{1}{\text{dead time}} = \frac{1}{100 \times 10^{-6}} = 10000 \text{ counts/s}$$
@@ -710,7 +710,7 @@ $$\text{Maximum count rate} = \frac{1}{\text{dead time}} = \frac{1}{100 \times 1
 At high activities, the GM tube undercounts because some particles arrive during the dead time. The
 true count rate is related to the observed count rate by:
 
-$$R_{\text{true}} = \frac{R_{\text{obs}}}{1 - R_{\text{obs}} \times \tau}$$
+$$R_{\text{true}} = \frac{R_{\mathrm{obs}}}{1 - R_{\mathrm{obs}} \times \tau}$$
 
 where $\tau$ is the dead time.
 
