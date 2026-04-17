@@ -92,19 +92,16 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
+          sitemap: {
+      lastmod: 'date',
+      changefreq: 'weekly',
+      priority: 0.7,
+      ignorePatterns: ['/tags/**'],
+    },
+    } satisfies Preset.Options,
     ],
   ],
   plugins: [
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        lastmod: 'date',
-        changefreq: 'weekly',
-        priority: 0.7,
-        ignorePatterns: ['/tags/**'],
-      },
-    ],
     [
       '@docusaurus/plugin-content-blog',
       {
