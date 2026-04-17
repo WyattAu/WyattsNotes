@@ -22,7 +22,7 @@
     "content-check": "npm run mdlint && npm run spellcheck"
   },
   "dependencies": {
-    "@adobe/remark-gridtables": "^3.0.14",
+    "@adobe/remark-gridtables": "^3.0.19",
     "@docusaurus/core": "^3.9.2",
     "@docusaurus/plugin-sitemap": "^3.9.2",
     "@docusaurus/preset-classic": "^3.9.2",
