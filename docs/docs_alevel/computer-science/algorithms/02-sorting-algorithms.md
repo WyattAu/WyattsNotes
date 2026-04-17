@@ -534,7 +534,7 @@ $O(d(n + b))$ where $d$ is the number of digits and $b$ is the base.
 </details>
 
 For revision on data structures used in sorting, see
-[Trees](/docs/academics/alevel/computer-science/data-structures/trees) (heap sort) and
-[Linked Lists](/docs/academics/alevel/computer-science/data-structures/linked-lists) (merge sort).
+[Trees](/docs/alevel/computer-science/data-structures/trees) (heap sort) and
+[Linked Lists](/docs/alevel/computer-science/data-structures/linked-lists) (merge sort).
 
 :::

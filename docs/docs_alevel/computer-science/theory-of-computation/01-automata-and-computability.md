@@ -563,7 +563,7 @@ revolutionise computer science and mathematics, as it would imply the existence 
 model of computation.
 
 For revision on algorithms and complexity, see
-[Complexity Analysis](/docs/academics/alevel/computer-science/algorithms/complexity-analysis).
+[Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis).
 </details>
 
 :::

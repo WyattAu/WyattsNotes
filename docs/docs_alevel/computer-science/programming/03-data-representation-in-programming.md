@@ -519,8 +519,8 @@ $\text{Compressed} = 30.9 \div 2 \approx 15.45 \text{ GB}$
 </details>
 
 For revision on number representation, see
-[Number Systems](/docs/academics/alevel/computer-science/fundamentals/number-systems) and
-[Floating Point](/docs/academics/alevel/computer-science/fundamentals/floating-point).
+[Number Systems](/docs/alevel/computer-science/fundamentals/number-systems) and
+[Floating Point](/docs/alevel/computer-science/fundamentals/floating-point).
 
 :::
 

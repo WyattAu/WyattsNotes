@@ -547,7 +547,7 @@ short run and long run.
 
 <details>
 <summary>Hint</summary>
-(a) LRAS shifts right → $Y^*$ increases. In the short run, SRAS also shifts right (lower costs). Output rises. (b) Price level falls (more supply at every price level). (c) Unemployment falls as firms hire more workers to produce the higher output. The natural rate $u^*$ falls. (d) Budget balance: tax revenue rises (more income, profits, consumption), and welfare spending falls (less unemployment). The budget improves, potentially creating a surplus. Long run: all effects are sustained and amplified. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/academics/alevel/economics/macro/aggregate-demand-and-supply).*
+(a) LRAS shifts right → $Y^*$ increases. In the short run, SRAS also shifts right (lower costs). Output rises. (b) Price level falls (more supply at every price level). (c) Unemployment falls as firms hire more workers to produce the higher output. The natural rate $u^*$ falls. (d) Budget balance: tax revenue rises (more income, profits, consumption), and welfare spending falls (less unemployment). The budget improves, potentially creating a surplus. Long run: all effects are sustained and amplified. *Revision: see [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply).*
 </details>
 
 **Problem 2.** Evaluate the argument that reducing income tax rates will significantly increase
@@ -571,7 +571,7 @@ change the trade-off between inflation and unemployment.
 
 <details>
 <summary>Hint</summary>
-Supply-side policies that reduce $u^*$ shift the short-run Phillips curve left and the long-run Phillips curve left. At the new equilibrium, both inflation and unemployment can be lower simultaneously — a favourable shift in the trade-off. Additionally, productivity-enhancing supply-side policies reduce cost-push inflation pressures (lower unit labour costs), further shifting the Phillips curve left. This is the key advantage of supply-side policy over demand-side policy: demand-side policy can only move the economy along the Phillips curve (trading one objective for another), while supply-side policy can improve both objectives. *Revision: see [Macroeconomic Performance](/docs/academics/alevel/economics/macro/macroeconomic-performance) for the Phillips curve derivation.*
+Supply-side policies that reduce $u^*$ shift the short-run Phillips curve left and the long-run Phillips curve left. At the new equilibrium, both inflation and unemployment can be lower simultaneously — a favourable shift in the trade-off. Additionally, productivity-enhancing supply-side policies reduce cost-push inflation pressures (lower unit labour costs), further shifting the Phillips curve left. This is the key advantage of supply-side policy over demand-side policy: demand-side policy can only move the economy along the Phillips curve (trading one objective for another), while supply-side policy can improve both objectives. *Revision: see [Macroeconomic Performance](/docs/alevel/economics/macro/macroeconomic-performance) for the Phillips curve derivation.*
 </details>
 
 **Problem 5.** Compare and contrast the likely effects on the UK economy of (a) a £50 billion
@@ -580,7 +580,7 @@ tax. Which policy would you recommend and why?
 
 <details>
 <summary>Hint</summary>
-Option (a) — education spending: (1) Direct AD stimulus (short-run boost). (2) LRAS shifts right in the medium to long term (more skilled workforce). (3) Progressive — benefits lower-income students. (4) Takes 5–15 years to fully materialise. (5) Adds to deficit. Option (b) — corporation tax cut: (1) Smaller AD effect (firms may not spend immediately). (2) LRAS shifts right if investment increases (more capital). (3) Regressive — benefits shareholders and high earners. (4) Faster impact if firms respond quickly. (5) Revenue loss may be partially offset by Laffer curve effects. Recommendation: depends on the time horizon and economic context. In a recession, both provide some demand stimulus. Long-term, education has higher social returns but takes longer. The best policy mix might combine both: targeted education investment with moderate tax reform. *Revision: see [Fiscal Policy](/docs/academics/alevel/economics/macro/fiscal-policy) for evaluation of tax changes.*
+Option (a) — education spending: (1) Direct AD stimulus (short-run boost). (2) LRAS shifts right in the medium to long term (more skilled workforce). (3) Progressive — benefits lower-income students. (4) Takes 5–15 years to fully materialise. (5) Adds to deficit. Option (b) — corporation tax cut: (1) Smaller AD effect (firms may not spend immediately). (2) LRAS shifts right if investment increases (more capital). (3) Regressive — benefits shareholders and high earners. (4) Faster impact if firms respond quickly. (5) Revenue loss may be partially offset by Laffer curve effects. Recommendation: depends on the time horizon and economic context. In a recession, both provide some demand stimulus. Long-term, education has higher social returns but takes longer. The best policy mix might combine both: targeted education investment with moderate tax reform. *Revision: see [Fiscal Policy](/docs/alevel/economics/macro/fiscal-policy) for evaluation of tax changes.*
 </details>
 
 **Problem 6.** Explain why supply-side policies are difficult to evaluate. In your answer, refer to

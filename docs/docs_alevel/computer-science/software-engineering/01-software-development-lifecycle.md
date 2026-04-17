@@ -468,7 +468,7 @@ actors and at least five use cases.
 - Payment System is associated with Process Payment
 
 For revision on testing, see
-[Testing](/docs/academics/alevel/computer-science/software-engineering/testing).
+[Testing](/docs/alevel/computer-science/software-engineering/testing).
 
 </details>
 

@@ -11,7 +11,7 @@ slug: graph-algorithms
 
 ## 1. Dijkstra's Algorithm (Revisited)
 
-See [Graphs](/docs/academics/alevel/computer-science/data-structures/graphs) for the full
+See [Graphs](/docs/alevel/computer-science/data-structures/graphs) for the full
 treatment. Here we provide additional detail on the priority queue implementation and A\* extension.
 
 ### Priority Queue Optimisation
@@ -93,7 +93,7 @@ path — contradiction. $\square$
 
 ### Kruskal's Algorithm (Detailed)
 
-See [Graphs](/docs/academics/alevel/computer-science/data-structures/graphs) for the basic
+See [Graphs](/docs/alevel/computer-science/data-structures/graphs) for the basic
 algorithm. Here we formalise the Union-Find data structure.
 
 #### Union-Find with Path Compression and Union by Rank
@@ -466,7 +466,7 @@ $O(k \cdot V)$ (or $O(V)$ with rolling array optimisation).
 For $k = V-1$, this is equivalent to the Bellman-Ford algorithm.
 
 For revision on graphs, see
-[Graphs](/docs/academics/alevel/computer-science/data-structures/graphs).
+[Graphs](/docs/alevel/computer-science/data-structures/graphs).
 </details>
 
 ---

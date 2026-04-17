@@ -445,7 +445,7 @@ This always evaluates to true, granting access without valid credentials.
 </details>
 
 For revision on network fundamentals, see
-[Network Fundamentals](/docs/academics/alevel/computer-science/networks/network-fundamentals).
+[Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals).
 
 ---
 

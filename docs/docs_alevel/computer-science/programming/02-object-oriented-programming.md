@@ -688,7 +688,7 @@ class Library:
 </details>
 
 For revision on programming fundamentals, see
-[Programming Constructs](/docs/academics/alevel/computer-science/programming/programming-constructs).
+[Programming Constructs](/docs/alevel/computer-science/programming/programming-constructs).
 
 :::
 

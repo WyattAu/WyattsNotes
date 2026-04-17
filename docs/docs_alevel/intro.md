@@ -38,7 +38,7 @@ The goal is not just exam preparation — it is to build the deep mathematical, 
 
 ## Subjects
 
-- **[Mathematics](/docs/academics/alevel/maths/maths)** — Pure mathematics, statistics, and mechanics
-- **[Physics](/docs/academics/alevel/physics/physics)** — Mechanics, waves, electricity, fields, thermal, nuclear, and astrophysics
-- **[Computer Science](/docs/academics/alevel/computer-science/computer-science)** — Fundamentals, data structures, algorithms, programming, and theory
-- **[Economics](/docs/academics/alevel/economics/economics)** — Microeconomics and macroeconomics
+- **[Mathematics](/docs/alevel/maths/maths)** — Pure mathematics, statistics, and mechanics
+- **[Physics](/docs/alevel/physics/physics)** — Mechanics, waves, electricity, fields, thermal, nuclear, and astrophysics
+- **[Computer Science](/docs/alevel/computer-science/computer-science)** — Fundamentals, data structures, algorithms, programming, and theory
+- **[Economics](/docs/alevel/economics/economics)** — Microeconomics and macroeconomics

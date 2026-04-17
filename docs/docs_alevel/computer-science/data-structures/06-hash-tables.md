@@ -451,7 +451,7 @@ hash function, table size, and collision resolution method. Justify your choices
 - Load factor < 0.7 ensures average $O(1)$ operations
 
 For revision on complexity, see
-[Complexity Analysis](/docs/academics/alevel/computer-science/algorithms/complexity-analysis).
+[Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis).
 
 </details>
 

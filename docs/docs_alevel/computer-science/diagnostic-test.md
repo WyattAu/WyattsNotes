@@ -28,7 +28,7 @@ relevant revision page for further study.
 
 $1 \times 32 + 0 \times 16 + 1 \times 8 + 1 \times 4 + 0 \times 2 + 1 \times 1 = 32 + 8 + 4 + 1 = 45_{10}$
 
-**Revision:** [Number Systems](/docs/academics/alevel/computer-science/fundamentals/number-systems)
+**Revision:** [Number Systems](/docs/alevel/computer-science/fundamentals/number-systems)
 </details>
 
 **Q2.** Represent $-37$ in 8-bit two's complement.
@@ -38,7 +38,7 @@ $1 \times 32 + 0 \times 16 + 1 \times 8 + 1 \times 4 + 0 \times 2 + 1 \times 1 =
 
 $37 = 00100101_2$. Flip: $11011010_2$. Add 1: $11011011_2$.
 
-**Revision:** [Number Systems](/docs/academics/alevel/computer-science/fundamentals/number-systems)
+**Revision:** [Number Systems](/docs/alevel/computer-science/fundamentals/number-systems)
 </details>
 
 **Q3.** The ASCII code for 'A' is 65. What is the ASCII code for 'Z'?
@@ -48,7 +48,7 @@ $37 = 00100101_2$. Flip: $11011010_2$. Add 1: $11011011_2$.
 
 'Z' = 65 + 25 = 90. (Uppercase letters are consecutive, A–Z spanning 26 characters.)
 
-**Revision:** [Number Systems](/docs/academics/alevel/computer-science/fundamentals/number-systems)
+**Revision:** [Number Systems](/docs/alevel/computer-science/fundamentals/number-systems)
 </details>
 
 **Q4.** Simplify the Boolean expression $\overline{A} \cdot B + A \cdot B$.
@@ -59,7 +59,7 @@ $37 = 00100101_2$. Flip: $11011010_2$. Add 1: $11011011_2$.
 $B \cdot (\overline{A} + A) = B \cdot 1 = B$ (by the identity law: $X + \overline{X} = 1$).
 
 **Revision:**
-[Boolean Algebra](/docs/academics/alevel/computer-science/fundamentals/boolean-algebra)
+[Boolean Algebra](/docs/alevel/computer-science/fundamentals/boolean-algebra)
 </details>
 
 **Q5.** What is the purpose of the MAR (Memory Address Register) in the fetch-decode-execute cycle?
@@ -71,7 +71,7 @@ The MAR holds the address of the memory location to be read from or written to. 
 phase, the PC is copied to the MAR so the CPU can read the instruction at that address.
 
 **Revision:**
-[Computer Architecture](/docs/academics/alevel/computer-science/fundamentals/computer-architecture)
+[Computer Architecture](/docs/alevel/computer-science/fundamentals/computer-architecture)
 </details>
 
 ---
@@ -87,7 +87,7 @@ index 12?
 $500 + 12 \times 8 = 500 + 96 = 596$.
 
 **Revision:**
-[Arrays and Records](/docs/academics/alevel/computer-science/data-structures/arrays-and-records)
+[Arrays and Records](/docs/alevel/computer-science/data-structures/arrays-and-records)
 </details>
 
 **Q7.** What is the worst-case time complexity of inserting at the beginning of a singly linked list
@@ -99,7 +99,7 @@ with $n$ elements?
 $O(1)$ — insert at the head by updating the new node's next pointer to the current head and updating
 the head pointer. No traversal needed.
 
-**Revision:** [Linked Lists](/docs/academics/alevel/computer-science/data-structures/linked-lists)
+**Revision:** [Linked Lists](/docs/alevel/computer-science/data-structures/linked-lists)
 </details>
 
 **Q8.** Evaluate the RPN expression: `3 4 + 2 * 7 -`.
@@ -112,7 +112,7 @@ the head pointer. No traversal needed.
 Verification: $(3 + 4) \times 2 - 7 = 14 - 7 = 7$. ✓
 
 **Revision:**
-[Stacks and Queues](/docs/academics/alevel/computer-science/data-structures/stacks-and-queues)
+[Stacks and Queues](/docs/alevel/computer-science/data-structures/stacks-and-queues)
 </details>
 
 **Q9.** What is the maximum number of nodes at depth 3 in a binary tree?
@@ -122,7 +122,7 @@ Verification: $(3 + 4) \times 2 - 7 = 14 - 7 = 7$. ✓
 
 $2^3 = 8$ nodes.
 
-**Revision:** [Trees](/docs/academics/alevel/computer-science/data-structures/trees)
+**Revision:** [Trees](/docs/alevel/computer-science/data-structures/trees)
 </details>
 
 **Q10.** Which graph traversal guarantees finding the shortest path in an unweighted graph?
@@ -133,7 +133,7 @@ $2^3 = 8$ nodes.
 BFS (Breadth-First Search). BFS explores vertices level by level, so the first time a vertex is
 discovered, the path to it is the shortest.
 
-**Revision:** [Graphs](/docs/academics/alevel/computer-science/data-structures/graphs)
+**Revision:** [Graphs](/docs/alevel/computer-science/data-structures/graphs)
 </details>
 
 **Q11.** What is the load factor of a hash table with 200 elements and 50 buckets?
@@ -143,7 +143,7 @@ discovered, the path to it is the shortest.
 
 $\alpha = 200/50 = 4.0$.
 
-**Revision:** [Hash Tables](/docs/academics/alevel/computer-science/data-structures/hash-tables)
+**Revision:** [Hash Tables](/docs/alevel/computer-science/data-structures/hash-tables)
 </details>
 
 ---
@@ -158,7 +158,7 @@ $\alpha = 200/50 = 4.0$.
 $O(\log n)$ — each comparison halves the search space.
 
 **Revision:**
-[Searching Algorithms](/docs/academics/alevel/computer-science/algorithms/searching-algorithms)
+[Searching Algorithms](/docs/alevel/computer-science/algorithms/searching-algorithms)
 </details>
 
 **Q13.** Which sorting algorithm has worst-case complexity $O(n \log n)$ and is in-place?
@@ -170,7 +170,7 @@ Heap sort. (Merge sort is $O(n \log n)$ but not in-place; quick sort is in-place
 case.)
 
 **Revision:**
-[Sorting Algorithms](/docs/academics/alevel/computer-science/algorithms/sorting-algorithms)
+[Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms)
 </details>
 
 **Q14.** State the lower bound for comparison-based sorting and name the proof technique used.
@@ -182,7 +182,7 @@ $\Omega(n \log n)$. Proved using the **decision tree model**: a decision tree fo
 elements has at least $n!$ leaves, requiring height $\Omega(\log n!) = \Omega(n \log n)$.
 
 **Revision:**
-[Sorting Algorithms](/docs/academics/alevel/computer-science/algorithms/sorting-algorithms)
+[Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms)
 </details>
 
 **Q15.** For which type of graph does Dijkstra's algorithm fail to find correct shortest paths?
@@ -194,7 +194,7 @@ Graphs with **negative edge weights**. Dijkstra's greedy choice assumes that onc
 finalised, its distance cannot improve — this assumption fails with negative edges.
 
 **Revision:**
-[Graph Algorithms](/docs/academics/alevel/computer-science/algorithms/graph-algorithms)
+[Graph Algorithms](/docs/alevel/computer-science/algorithms/graph-algorithms)
 </details>
 
 **Q16.** What property must an A\* heuristic have to guarantee an optimal path?
@@ -205,7 +205,7 @@ finalised, its distance cannot improve — this assumption fails with negative e
 **Admissibility:** $h(v) \leq$ true cost from $v$ to the goal for all $v$.
 
 **Revision:**
-[Graph Algorithms](/docs/academics/alevel/computer-science/algorithms/graph-algorithms)
+[Graph Algorithms](/docs/alevel/computer-science/algorithms/graph-algorithms)
 </details>
 
 **Q17.** Solve the recurrence $T(n) = 2T(n/2) + n$ using the Master Theorem.
@@ -217,7 +217,7 @@ $a = 2$, $b = 2$, $c = \log_2 2 = 1$. $f(n) = n = \Theta(n^1) = \Theta(n^c)$. Ca
 $T(n) = \Theta(n \log n)$.
 
 **Revision:**
-[Complexity Analysis](/docs/academics/alevel/computer-science/algorithms/complexity-analysis)
+[Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis)
 </details>
 
 ---
@@ -232,7 +232,7 @@ $T(n) = \Theta(n \log n)$.
 `3` and `3.5`. `//` is integer division (floor), `/` is float division.
 
 **Revision:**
-[Programming Constructs](/docs/academics/alevel/computer-science/programming/programming-constructs)
+[Programming Constructs](/docs/alevel/computer-science/programming/programming-constructs)
 </details>
 
 **Q19.** Explain the difference between a procedure and a function.
@@ -244,7 +244,7 @@ A **function** returns a value; a **procedure** performs an action (side effect)
 a value.
 
 **Revision:**
-[Programming Constructs](/docs/academics/alevel/computer-science/programming/programming-constructs)
+[Programming Constructs](/docs/alevel/computer-science/programming/programming-constructs)
 </details>
 
 **Q20.** What is the time complexity of naive recursive Fibonacci?
@@ -255,7 +255,7 @@ a value.
 $O(\phi^n)$ where $\phi = (1+\sqrt{5})/2 \approx 1.618$ (exponential).
 
 **Revision:**
-[Programming Constructs](/docs/academics/alevel/computer-science/programming/programming-constructs)
+[Programming Constructs](/docs/alevel/computer-science/programming/programming-constructs)
 </details>
 
 **Q21.** What is encapsulation in OOP?
@@ -267,7 +267,7 @@ Encapsulation is the bundling of data and methods within a class, and restrictin
 internal state through access modifiers (public, private, protected).
 
 **Revision:**
-[OOP](/docs/academics/alevel/computer-science/programming/object-oriented-programming)
+[OOP](/docs/alevel/computer-science/programming/object-oriented-programming)
 </details>
 
 **Q22.** State the Liskov Substitution Principle.
@@ -279,7 +279,7 @@ Objects of a superclass shall be replaceable with objects of a subclass without 
 program.
 
 **Revision:**
-[OOP](/docs/academics/alevel/computer-science/programming/object-oriented-programming)
+[OOP](/docs/alevel/computer-science/programming/object-oriented-programming)
 </details>
 
 **Q23.** Why are strings immutable in Python?
@@ -291,7 +291,7 @@ For thread safety, hash stability (used as dictionary keys), security (prevent i
 modification), and string interning (memory efficiency through reuse).
 
 **Revision:**
-[Data Representation in Programming](/docs/academics/alevel/computer-science/programming/data-representation-in-programming)
+[Data Representation in Programming](/docs/alevel/computer-science/programming/data-representation-in-programming)
 </details>
 
 ---
@@ -307,7 +307,7 @@ requirements?
 The **Waterfall** model — its sequential phases suit stable requirements with clear milestones.
 
 **Revision:**
-[SDLC](/docs/academics/alevel/computer-science/software-engineering/software-development-lifecycle)
+[SDLC](/docs/alevel/computer-science/software-engineering/software-development-lifecycle)
 </details>
 
 **Q25.** What is a sprint in Scrum?
@@ -319,7 +319,7 @@ A sprint is a time-boxed iteration (typically 2–4 weeks) in which the developm
 potentially shippable product increment.
 
 **Revision:**
-[SDLC](/docs/academics/alevel/computer-science/software-engineering/software-development-lifecycle)
+[SDLC](/docs/alevel/computer-science/software-engineering/software-development-lifecycle)
 </details>
 
 **Q26.** What is the difference between verification and validation?
@@ -330,7 +330,7 @@ potentially shippable product increment.
 **Verification:** "Are we building the product right?" — checks conformance to specification.
 **Validation:** "Are we building the right product?" — checks that it meets user needs.
 
-**Revision:** [Testing](/docs/academics/alevel/computer-science/software-engineering/testing)
+**Revision:** [Testing](/docs/alevel/computer-science/software-engineering/testing)
 </details>
 
 **Q27.** What is boundary value analysis? Give an example.
@@ -342,7 +342,7 @@ Boundary value analysis tests values at and around the boundaries of equivalence
 off-by-one errors are most likely. Example: for a function accepting ages 0–120, test -1, 0, 1 and
 119, 120, 121.
 
-**Revision:** [Testing](/docs/academics/alevel/computer-science/software-engineering/testing)
+**Revision:** [Testing](/docs/alevel/computer-science/software-engineering/testing)
 </details>
 
 **Q28.** Does 100% statement coverage guarantee 100% branch coverage? Explain.
@@ -354,7 +354,7 @@ No. Consider `if condition: x = 1`. A single test with `condition = True` achiev
 coverage (both `x = 1` and subsequent code execute) but only 50% branch coverage (the false branch
 is never taken).
 
-**Revision:** [Testing](/docs/academics/alevel/computer-science/software-engineering/testing)
+**Revision:** [Testing](/docs/alevel/computer-science/software-engineering/testing)
 </details>
 
 ---
@@ -369,7 +369,7 @@ is never taken).
 Layer 3 (Network layer). Routers make forwarding decisions based on IP addresses.
 
 **Revision:**
-[Network Fundamentals](/docs/academics/alevel/computer-science/networks/network-fundamentals)
+[Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 </details>
 
 **Q30.** What are the three parts of the TCP three-way handshake?
@@ -382,7 +382,7 @@ Layer 3 (Network layer). Routers make forwarding decisions based on IP addresses
 3. Client sends **ACK**
 
 **Revision:**
-[Network Fundamentals](/docs/academics/alevel/computer-science/networks/network-fundamentals)
+[Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 </details>
 
 **Q31.** Why is UDP preferred over TCP for video conferencing?
@@ -394,7 +394,7 @@ UDP has lower latency (no handshake, no retransmission). Delayed packets are use
 communication — better to skip them than wait for retransmission.
 
 **Revision:**
-[Network Fundamentals](/docs/academics/alevel/computer-science/networks/network-fundamentals)
+[Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 </details>
 
 **Q32.** What is the purpose of DNS?
@@ -406,7 +406,7 @@ DNS (Domain Name System) translates human-readable domain names (e.g., `www.exam
 addresses (e.g., `93.184.216.34`).
 
 **Revision:**
-[Network Fundamentals](/docs/academics/alevel/computer-science/networks/network-fundamentals)
+[Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 </details>
 
 **Q33.** What is NAT and why is it used?
@@ -419,7 +419,7 @@ multiple devices on a LAN to share one internet-facing IP. It conserves IPv4 add
 a basic level of security by hiding internal addresses.
 
 **Revision:**
-[Network Fundamentals](/docs/academics/alevel/computer-science/networks/network-fundamentals)
+[Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 </details>
 
 **Q34.** Explain how RSA encryption works in three sentences.
@@ -432,7 +432,7 @@ $M = C^d \bmod n$. The keys are derived from two large primes $p, q$ where $n = 
 $ed \equiv 1 \pmod{(p-1)(q-1)}$. Security relies on the difficulty of factoring $n$ into $p$ and
 $q$.
 
-**Revision:** [Network Security](/docs/academics/alevel/computer-science/networks/network-security)
+**Revision:** [Network Security](/docs/alevel/computer-science/networks/network-security)
 </details>
 
 **Q35.** What is the CIA triad in information security?
@@ -443,7 +443,7 @@ $q$.
 **C**onfidentiality (data accessible only to authorised parties), **I**ntegrity (data not tampered
 with), **A**vailability (data accessible when needed).
 
-**Revision:** [Network Security](/docs/academics/alevel/computer-science/networks/network-security)
+**Revision:** [Network Security](/docs/alevel/computer-science/networks/network-security)
 </details>
 
 ---
@@ -459,7 +459,7 @@ A **primary key** uniquely identifies each row in its table. A **foreign key** r
 primary key of another table, establishing a relationship.
 
 **Revision:**
-[Relational Databases](/docs/academics/alevel/computer-science/databases/relational-databases)
+[Relational Databases](/docs/alevel/computer-science/databases/relational-databases)
 </details>
 
 **Q37.** Write an SQL query to find all students whose average grade is above 80.
@@ -475,7 +475,7 @@ HAVING AVG(score) > 80;
 ```
 
 **Revision:**
-[Relational Databases](/docs/academics/alevel/computer-science/databases/relational-databases)
+[Relational Databases](/docs/alevel/computer-science/databases/relational-databases)
 </details>
 
 **Q38.** What is the difference between WHERE and HAVING in SQL?
@@ -486,7 +486,7 @@ HAVING AVG(score) > 80;
 `WHERE` filters rows **before** grouping; `HAVING` filters groups **after** `GROUP BY`.
 
 **Revision:**
-[Relational Databases](/docs/academics/alevel/computer-science/databases/relational-databases)
+[Relational Databases](/docs/alevel/computer-science/databases/relational-databases)
 </details>
 
 **Q39.** What anomaly does 2NF eliminate that 1NF does not?
@@ -497,7 +497,7 @@ HAVING AVG(score) > 80;
 **Partial dependencies** — non-key attributes depending on only part of a composite key.
 
 **Revision:**
-[Relational Databases](/docs/academics/alevel/computer-science/databases/relational-databases)
+[Relational Databases](/docs/alevel/computer-science/databases/relational-databases)
 </details>
 
 **Q40.** What does the "A" in ACID stand for, and what does it mean?
@@ -508,7 +508,7 @@ HAVING AVG(score) > 80;
 **Atomicity:** A transaction is all-or-nothing — either all operations complete or none do.
 
 **Revision:**
-[Relational Databases](/docs/academics/alevel/computer-science/databases/relational-databases)
+[Relational Databases](/docs/alevel/computer-science/databases/relational-databases)
 </details>
 
 ---
@@ -525,7 +525,7 @@ multiple transitions per state per input symbol, and accepts if ANY path leads t
 state.
 
 **Revision:**
-[Automata and Computability](/docs/academics/alevel/computer-science/theory-of-computation/automata-and-computability)
+[Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
 </details>
 
 **Q42.** Is the language $L = \{a^n b^n \mid n \geq 0\}$ regular? Justify.
@@ -538,7 +538,7 @@ first $p$ symbols (all $a$'s); removing $y$ yields unequal numbers of $a$'s and 
 in $L$.
 
 **Revision:**
-[Automata and Computability](/docs/academics/alevel/computer-science/theory-of-computation/automata-and-computability)
+[Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
 </details>
 
 **Q43.** State the halting problem and explain why it is undecidable.
@@ -551,7 +551,7 @@ because assuming a decider $H$ exists leads to a contradiction when we construct
 does the opposite of $H$ when run on itself.
 
 **Revision:**
-[Automata and Computability](/docs/academics/alevel/computer-science/theory-of-computation/automata-and-computability)
+[Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
 </details>
 
 **Q44.** What is the difference between P and NP?
@@ -563,7 +563,7 @@ does the opposite of $H$ when run on itself.
 in polynomial time. P ⊆ NP. Whether P = NP is an open question.
 
 **Revision:**
-[Automata and Computability](/docs/academics/alevel/computer-science/theory-of-computation/automata-and-computability)
+[Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
 </details>
 
 **Q45.** What does the Church-Turing thesis state?
@@ -575,7 +575,7 @@ Every effectively computable function is computable by a Turing machine. It is a
 theorem) because "effectively computable" is an informal concept.
 
 **Revision:**
-[Automata and Computability](/docs/academics/alevel/computer-science/theory-of-computation/automata-and-computability)
+[Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
 </details>
 
 ---

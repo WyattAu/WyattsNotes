@@ -168,7 +168,7 @@ inputs).
 Compute the total cost of $n$ operations and divide by $n$.
 
 **Example: Dynamic array.** Total cost of $n$ insertions: $O(n)$ (proved in
-[Arrays and Records](/docs/academics/alevel/computer-science/data-structures/arrays-and-records)).
+[Arrays and Records](/docs/alevel/computer-science/data-structures/arrays-and-records)).
 Amortised cost per insertion: $O(1)$.
 
 #### Accounting Method
@@ -413,8 +413,8 @@ $\square$
 **Corollary.** If $f = O(g)$, then $O(f + g) = O(g)$.
 
 For revision on specific algorithm complexities, see
-[Sorting Algorithms](/docs/academics/alevel/computer-science/algorithms/sorting-algorithms) and
-[Searching Algorithms](/docs/academics/alevel/computer-science/algorithms/searching-algorithms).
+[Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms) and
+[Searching Algorithms](/docs/alevel/computer-science/algorithms/searching-algorithms).
 </details>
 
 ---

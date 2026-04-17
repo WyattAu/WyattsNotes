@@ -401,7 +401,7 @@ the value 9 and count the number of comparisons made.
 Total comparisons: 6. The value 9 is at index 5.
 
 For revision on searching, see
-[Searching Algorithms](/docs/academics/alevel/computer-science/algorithms/searching-algorithms).
+[Searching Algorithms](/docs/alevel/computer-science/algorithms/searching-algorithms).
 </details>
 
 ---
