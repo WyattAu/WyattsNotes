@@ -102,7 +102,6 @@ const config: Config = {
         lastmod: 'date',
         changefreq: 'weekly',
         priority: 0.7,
-        sitemapSize: 70000,
         ignorePatterns: ['/tags/**'],
       },
     ],
