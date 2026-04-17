@@ -7,7 +7,7 @@ tags:
   - SQA
 categories:
   - Scottish Qualifications
-slug: scottish-highers
+slug: intro
 ---
 
 # Scottish Highers and Advanced Highers

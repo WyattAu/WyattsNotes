@@ -145,7 +145,7 @@ const config: Config = {
       items: [
         { to: '/docs/qualifications/gcse/intro', label: 'GCSE', position: 'left' },
         { to: '/docs/qualifications/ap/intro', label: 'AP', position: 'left' },
-        { to: '/docs/qualifications/scottish-highers', label: 'Highers', position: 'left' },
+        { to: '/docs/qualifications/highers/intro', label: 'Highers', position: 'left' },
         { to: '/docs/qualifications/ilc/intro', label: 'Irish LC', position: 'left' },
         {
           href: 'https://alevel.wyattau.com',
@@ -193,7 +193,7 @@ const config: Config = {
             { label: 'AP', to: '/docs/qualifications/ap/intro' },
             {
               label: 'Scottish Highers',
-              to: '/docs/qualifications/scottish-highers',
+              to: '/docs/qualifications/highers/intro',
             },
             { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
             {

@@ -67,7 +67,7 @@ const subjectGroups: SubjectGroup[] = [
         name: 'Scottish Highers',
         files: 26,
         lines: '18.4K',
-        href: 'https://qualifications.wyattau.com/docs/qualifications/scottish-highers',
+        href: 'https://qualifications.wyattau.com/docs/qualifications/highers/intro',
         tag: 'SQA',
         desc: 'Scottish Qualifications Authority — Maths, Physics, Chemistry, Biology, Computer Science',
       },

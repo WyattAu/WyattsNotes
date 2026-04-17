@@ -36,7 +36,7 @@ const subjects: Subject[] = [
   },
   {
     name: 'Scottish Highers',
-    href: 'https://qualifications.wyattau.com/docs/qualifications/scottish-highers',
+    href: 'https://qualifications.wyattau.com/docs/qualifications/highers/intro',
     tag: 'SQA',
   },
   {
