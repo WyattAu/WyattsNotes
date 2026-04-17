@@ -1,8 +1,8 @@
 // @ts-check
-// Docusaurus config for the Qualifications sub-site.
-// Build: npx docusaurus build --config docusaurus.qualifications.config.ts
-// Contains: GCSE, AP, Scottish Highers, Irish LC
-// Total: ~75K lines across 1 docs plugin.
+// Docusaurus config for the A-Level sub-site.
+// Build: npx docusaurus build --config docusaurus.alevel.config.ts
+// Contains: A-Level only (1 docs plugin)
+// Total: ~80K lines.
 
 import remarkGridTable from '@adobe/remark-gridtables';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -60,10 +60,10 @@ const commonDocsPluginConfig = {
 };
 
 const config: Config = {
-  title: "Wyatt's Notes — Qualifications",
-  tagline: 'GCSE, AP, Scottish Highers, Irish Leaving Certificate',
+  title: "Wyatt's Notes — A-Levels",
+  tagline: 'A-Level Computer Science, Maths, Physics, Economics, Further Maths',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
-  url: 'https://qualifications.wyattau.com',
+  url: 'https://alevel.wyattau.com',
   baseUrl: '/',
   organizationName: 'WyattAu',
   projectName: 'WyattsNotes',
@@ -95,10 +95,10 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'qualifications-notes',
-        path: 'docs/docs_qualifications',
-        routeBasePath: '/docs/qualifications',
-        sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
+        id: 'alevel-notes',
+        path: 'docs/docs_alevel',
+        routeBasePath: '/docs/alevel',
+        sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
         ...commonDocsPluginConfig,
       },
     ],
@@ -143,14 +143,11 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
-        { to: '/docs/qualifications/gcse/intro', label: 'GCSE', position: 'left' },
-        { to: '/docs/qualifications/ap/intro', label: 'AP', position: 'left' },
-        { to: '/docs/qualifications/scottish-highers', label: 'Highers', position: 'left' },
-        { to: '/docs/qualifications/ilc/intro', label: 'Irish LC', position: 'left' },
+        { to: '/docs/alevel/intro', label: 'A-Levels', position: 'left' },
         {
-          href: 'https://alevel.wyattau.com',
-          label: 'A-Levels',
-          position: 'right',
+          href: 'https://qualifications.wyattau.com',
+          label: 'Other Quals',
+          position: 'left',
         },
         {
           href: 'https://academics.wyattau.com',
@@ -185,17 +182,23 @@ const config: Config = {
         {
           title: 'Exam Boards',
           items: [
+            { label: 'A-Levels', to: '/docs/alevel/intro' },
             {
-              label: 'A-Levels',
-              href: 'https://alevel.wyattau.com/docs/alevel/intro',
+              label: 'GCSE',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/gcse/intro',
             },
-            { label: 'GCSE', to: '/docs/qualifications/gcse/intro' },
-            { label: 'AP', to: '/docs/qualifications/ap/intro' },
+            {
+              label: 'AP',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/ap/intro',
+            },
             {
               label: 'Scottish Highers',
-              to: '/docs/qualifications/scottish-highers',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/scottish-highers',
             },
-            { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
+            {
+              label: 'Irish LC',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/ilc/intro',
+            },
             {
               label: 'IB',
               href: 'https://academics.wyattau.com/docs/ib/intro',
@@ -210,12 +213,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'A-Levels',
-              href: 'https://alevel.wyattau.com',
-            },
-            {
               label: 'Academics',
               href: 'https://academics.wyattau.com',
+            },
+            {
+              label: 'Qualifications',
+              href: 'https://qualifications.wyattau.com',
             },
             {
               label: 'Main Site',

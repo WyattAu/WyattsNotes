@@ -35,7 +35,7 @@ const subjectGroups: SubjectGroup[] = [
         name: 'A-Level',
         files: 115,
         lines: '79.6K',
-        href: 'https://qualifications.wyattau.com/docs/alevel/intro',
+        href: 'https://alevel.wyattau.com/docs/alevel/intro',
         tag: 'A*',
         desc: 'Full A* coverage — Computer Science, Maths, Physics, Economics, Further Maths',
       },

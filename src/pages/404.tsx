@@ -20,7 +20,7 @@ const subjects: Subject[] = [
   },
   {
     name: 'A-Level',
-    href: 'https://qualifications.wyattau.com/docs/alevel/intro',
+    href: 'https://alevel.wyattau.com/docs/alevel/intro',
     tag: 'A*',
   },
   { name: 'DSE', href: 'https://academics.wyattau.com/docs/dse/intro', tag: 'HKDSE' },

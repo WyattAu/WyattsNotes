@@ -218,7 +218,7 @@ const config: Config = {
             },
             {
               label: 'A-Levels',
-              href: 'https://qualifications.wyattau.com/docs/alevel/intro',
+              href: 'https://alevel.wyattau.com/docs/alevel/intro',
             },
             {
               label: 'GCSE',

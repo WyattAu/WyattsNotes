@@ -156,6 +156,11 @@ const config: Config = {
         { to: '/docs/ib/intro', label: 'IB', position: 'left' },
         { to: '/docs/dse/intro', label: 'DSE', position: 'left' },
         {
+          href: 'https://alevel.wyattau.com',
+          label: 'A-Levels',
+          position: 'left',
+        },
+        {
           href: 'https://qualifications.wyattau.com',
           label: 'Qualifications',
           position: 'left',
@@ -192,7 +197,7 @@ const config: Config = {
             { label: 'DSE', to: '/docs/dse/intro' },
             {
               label: 'A-Levels',
-              href: 'https://qualifications.wyattau.com/docs/alevel/intro',
+              href: 'https://alevel.wyattau.com/docs/alevel/intro',
             },
             {
               label: 'GCSE',
