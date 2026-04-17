@@ -570,15 +570,16 @@ This matches the experimental rate law with $k = k_2 K$.
 
 ## Summary Table: Le Chatelier's Principle
 
-| Stress Applied       | Direction of Shift    | Effect on $K$         |
-| -------------------- | --------------------- | --------------------- | ------- |
-| Add reactant         | Toward products       | None                  |
-| Add product          | Toward reactants      | None                  |
-| Remove reactant      | Toward reactants      | None                  |
-| Remove product       | Toward products       | None                  |
-| Increase temperature | Endothermic: products | Exothermic: reactants | Changes |
-| Decrease volume      | Fewer gas moles       | None                  |
-| Add catalyst         | No shift              | None                  |
+| Stress Applied               | Direction of Shift | Effect on $K$ |
+| ---------------------------- | ------------------ | ------------- |
+| Add reactant                 | Toward products    | None          |
+| Add product                  | Toward reactants   | None          |
+| Remove reactant              | Toward reactants   | None          |
+| Remove product               | Toward products    | None          |
+| Increase temperature (endo.) | Toward products    | Increases     |
+| Increase temperature (exo.)  | Toward reactants   | Decreases     |
+| Decrease volume              | Fewer gas moles    | None          |
+| Add catalyst                 | No shift           | None          |
 
 ## Common Pitfalls
 
@@ -640,8 +641,9 @@ This matches the experimental rate law with $k = k_2 K$.
 
 10. Write the equilibrium expression for
     $\text{BaSO}_4(s) \rightleftharpoons \text{Ba}^{2+}(aq) +
-    $\text{SO}_4^{2-}(aq)$ and
-    calculate the concentration of $\text{Ba}^{2+}$ in a saturated solution. $K_{sp} = 1.1 \times
+    \text{SO}_4^{2-}(aq)$ and calculate
+    the concentration of $\text{Ba}^{2+}$ in a saturated solution.
+    $K_{sp} = 1.1 \times
     10^{-10}$.
 
 11. A proposed mechanism for a reaction is: Step 1 (fast):

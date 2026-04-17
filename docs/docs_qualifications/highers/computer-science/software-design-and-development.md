@@ -431,10 +431,10 @@ Boundaries: 0, 1, 9, 10, 11, 49, 50, 51. Test values at and on either side of ea
 
 **Coupling:** How much modules depend on each other. Low coupling is desirable.
 
-| Design Goal | Desirable | Effect                          |
-| ----------- | --------- | ------------------------------- |
-| High cohesion | Yes      | Easier to understand and modify  |
-| Low coupling   | Yes      | Changes in one module have less impact |
+| Design Goal   | Desirable | Effect                                 |
+| ------------- | --------- | -------------------------------------- |
+| High cohesion | Yes       | Easier to understand and modify        |
+| Low coupling  | Yes       | Changes in one module have less impact |
 
 **Worked Example.** A class `CustomerManager` handles customer data, sends emails, and generates
 reports. This has low cohesion. Refactor by splitting into `CustomerData`, `EmailService`, and
@@ -483,11 +483,11 @@ Show how an object moves between states in response to events.
 
 **Map, Filter, Reduce:**
 
-| Function | Purpose                                  | Example (Haskell)          |
-| -------- | ---------------------------------------- | -------------------------- |
-| map      | Apply a function to each element        | `map (*2) [1,2,3] = [2,4,6]` |
-| filter   | Keep elements matching a predicate      | `filter even [1..10]`       |
-| reduce   | Combine elements into a single value    | `sum [1,2,3,4] = 10`        |
+| Function | Purpose                              | Example (Haskell)            |
+| -------- | ------------------------------------ | ---------------------------- |
+| map      | Apply a function to each element     | `map (*2) [1,2,3] = [2,4,6]` |
+| filter   | Keep elements matching a predicate   | `filter even [1..10]`        |
+| reduce   | Combine elements into a single value | `sum [1,2,3,4] = 10`         |
 
 **Haskell examples:**
 
@@ -530,14 +530,14 @@ finally:
 
 ### Data Validation Techniques
 
-| Check        | Description                                    | Example                    |
-| ------------ | ---------------------------------------------- | -------------------------- |
-| Range check  | Value within acceptable range                  | 0 <= age <= 120            |
-| Type check   | Value is the correct data type                 | isinstance(age, int)       |
-| Length check  | String has correct number of characters       | len(name) <= 50            |
-| Format check  | Data matches expected pattern                  | email contains @ and .     |
-| Presence check| Field is not empty                            | name != ""                 |
-| Lookup check  | Value exists in a reference table             | country in valid_countries |
+| Check          | Description                             | Example                    |
+| -------------- | --------------------------------------- | -------------------------- |
+| Range check    | Value within acceptable range           | `0 <= age <= 120`          |
+| Type check     | Value is the correct data type          | isinstance(age, int)       |
+| Length check   | String has correct number of characters | `len(name) <= 50`          |
+| Format check   | Data matches expected pattern           | email contains @ and .     |
+| Presence check | Field is not empty                      | name != ""                 |
+| Lookup check   | Value exists in a reference table       | country in valid_countries |
 
 **Worked Example.** Write a Python function that validates a password.
 
@@ -573,8 +573,8 @@ def validate_password(password):
 24. Explain the difference between a state transition diagram and a sequence diagram. When would you
     use each?
 
-25. Write pseudocode for a function that validates an email address. Check for the presence of @
-    and at least one . after the @.
+25. Write pseudocode for a function that validates an email address. Check for the presence of @ and
+    at least one . after the @.
 
 26. Explain why functional programming is becoming more popular. Give two advantages and two
     disadvantages compared to imperative programming.
@@ -627,12 +627,12 @@ def add(a, b):
 
 ### Code Quality Metrics
 
-| Metric      | Description                                        |
-| ----------- | -------------------------------------------------- |
-| Cyclomatic complexity | Number of independent paths through code (lower is better) |
-| Code coverage | Percentage of code exercised by tests (higher is better) |
-| Lines of code | Total lines (lower is generally better for the same functionality) |
-| Technical debt | Cost of future work caused by shortcuts taken now |
+| Metric                | Description                                                        |
+| --------------------- | ------------------------------------------------------------------ |
+| Cyclomatic complexity | Number of independent paths through code (lower is better)         |
+| Code coverage         | Percentage of code exercised by tests (higher is better)           |
+| Lines of code         | Total lines (lower is generally better for the same functionality) |
+| Technical debt        | Cost of future work caused by shortcuts taken now                  |
 
 ### Debugging Strategies
 
@@ -644,21 +644,21 @@ def add(a, b):
 
 ### Software Licensing
 
-| License    | Description                                              |
-| ---------- | -------------------------------------------------------- |
-| Proprietary | Source code is closed; usage restricted by EULA          |
-| Open source | Source code is available; usage governed by license       |
-| GPL        | Derivative works must also be open source               |
-| MIT        | Permissive; can use, modify, and distribute freely       |
-| Apache     | Permissive; requires attribution and license notice      |
+| License     | Description                                         |
+| ----------- | --------------------------------------------------- |
+| Proprietary | Source code is closed; usage restricted by EULA     |
+| Open source | Source code is available; usage governed by license |
+| GPL         | Derivative works must also be open source           |
+| MIT         | Permissive; can use, modify, and distribute freely  |
+| Apache      | Permissive; requires attribution and license notice |
 
 ## Additional Practice Questions
 
 31. Write a Python function that implements a linked list with append, delete, and search methods.
     What is the time complexity of each?
 
-32. Explain the difference between a syntax error, a logic error, and a runtime error. Give a
-    Python example of each.
+32. Explain the difference between a syntax error, a logic error, and a runtime error. Give a Python
+    example of each.
 
 33. Design a test plan for a vending machine program. Include test cases for normal operation,
     boundary conditions, and error handling.
@@ -673,8 +673,8 @@ def add(a, b):
 
 37. Explain what cyclomatic complexity is and why keeping it low is important.
 
-38. Write a Python function that implements binary search on a sorted list. Include unit tests
-    that cover normal, boundary, and error cases.
+38. Write a Python function that implements binary search on a sorted list. Include unit tests that
+    cover normal, boundary, and error cases.
 
 ---
 
