@@ -24,7 +24,7 @@
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.14",
     "@docusaurus/core": "^3.9.2",
-    "@docusaurus/plugin-sitemap": "^3.9.2",
+    "@docusaurus/plugin-sitemap": "^3.10.0",
     "@docusaurus/preset-classic": "^3.9.2",
     "@docusaurus/theme-live-codeblock": "^3.9.2",
     "@docusaurus/theme-mermaid": "^3.9.2",
