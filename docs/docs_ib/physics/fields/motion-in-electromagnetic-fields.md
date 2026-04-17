@@ -155,8 +155,8 @@ Key points:
 - The magnetic force does **no work** on the charge (since $W = F \cdot d$ and $F \perp v$), so the
   kinetic energy of the charge does not change.
 - The magnitude is $F = qvB \sin\theta$, where $\theta$ is the angle between $\bm{v}$ and $\bm{B}$.
-- When $\bm{v} \perp \bm{B}$ ($\theta = 90°$), the force is maximum: $F = qvB$.
-- When $\bm{v} \parallel \bm{B}$ ($\theta = 0°$ or $180°$), the force is zero.
+- When $\bm{v} \perp \bm{B}$ ($\theta = 90^\circ$), the force is maximum: $F = qvB$.
+- When $\bm{v} \parallel \bm{B}$ ($\theta = 0^\circ$ or $180^\circ$), the force is zero.
 
 ### Right-Hand Rule for Magnetic Force
 
@@ -237,7 +237,7 @@ direction of the force.
 
 ## Helical Motion
 
-When a charged particle enters a magnetic field at an angle $\theta$ (not $90°$) to the field, the
+When a charged particle enters a magnetic field at an angle $\theta$ (not $90^\circ$) to the field, the
 velocity component parallel to $\bm{B}$ ($v_\parallel = v \cos\theta$) is unaffected by the magnetic
 force. Only the perpendicular component ($v_\perp = v \sin\theta$) causes circular motion. The
 result is a **helical** (spiral) path.
@@ -412,7 +412,7 @@ The direction is given by Fleming's Left-Hand Rule (motor effect):
 ## Exam Tips for D.3
 
 1. **Always identify what is perpendicular.** The magnetic force depends on the angle between
-   $\bm{v}$ and $\bm{B}$. If the question does not state the angle, it is usually $90°$.
+   $\bm{v}$ and $\bm{B}$. If the question does not state the angle, it is usually $90^\circ$.
 
 2. **Electrons are negative.** When working with electrons, the force direction is **opposite** to
    what the right-hand rule gives. Either use the left hand for negative charges, or reverse the
@@ -553,7 +553,7 @@ simplified values.
 ## Common Pitfalls
 
 1. **Forgetting the angle in $F = qvB\sin\theta$.** If the question does not specify the angle, it
-   is usually $90°$, making $\sin\theta = 1$. However, if the velocity has a component parallel to
+   is usually $90^\circ$, making $\sin\theta = 1$. However, if the velocity has a component parallel to
    $\bm{B}$, use $\sin\theta$ with the perpendicular component only.
 
 2. **Sign of electron charge.** The Lorentz force on an electron is in the **opposite** direction to
@@ -630,7 +630,7 @@ m $= 16.7$ cm.
 <summary>Question 3</summary>
 
 An electron enters a region of uniform magnetic field ($B = 0.40$ T) with a velocity of
-$6.0 \times 10^6$ m/s at an angle of $60°$ to the field lines. Calculate: a) The radius of the
+$6.0 \times 10^6$ m/s at an angle of $60^\circ$ to the field lines. Calculate: a) The radius of the
 helical path. b) The pitch of the helix (distance along the field per revolution).
 
 </details>

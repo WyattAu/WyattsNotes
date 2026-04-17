@@ -32,8 +32,8 @@ $$\boxed{F = BIl\sin\theta}$$
 where $B$ is the magnetic flux density (T), $I$ is the current (A), $l$ is the length of wire in the
 field (m), and $\theta$ is the angle between the wire and the field direction.
 
-The force is maximum when the wire is perpendicular to the field ($\theta = 90°$): $F = BIl$. The
-force is zero when the wire is parallel to the field ($\theta = 0°$).
+The force is maximum when the wire is perpendicular to the field ($\theta = 90^\circ$): $F = BIl$. The
+force is zero when the wire is parallel to the field ($\theta = 0^\circ$).
 
 **Definition.** Fleming's left-hand rule relates the directions of force, magnetic field, and
 current: thumb (force), index (field), middle (current).
@@ -59,7 +59,7 @@ $$F = B \cdot \frac{q}{t} \cdot l \cdot \sin\theta = B \cdot q \cdot \frac{l}{t}
 
 $$\boxed{F = Bqv\sin\theta}$$
 
-For a charge moving perpendicular to the field ($\theta = 90°$):
+For a charge moving perpendicular to the field ($\theta = 90^\circ$):
 
 $$\boxed{F = Bqv}$$
 
@@ -552,7 +552,7 @@ Separation: $\Delta x = 2(0.137 - 0.125) = 0.024$ m $= 2.4$ cm.
 
 <details>
 <summary>Problem 1</summary>
-A wire of length 0.30 m carries a current of 5.0 A at $30°$ to a magnetic field of 0.40 T. Calculate
+A wire of length 0.30 m carries a current of 5.0 A at $30^\circ$ to a magnetic field of 0.40 T. Calculate
 the force on the wire.
 
 **Answer.**
@@ -801,7 +801,7 @@ $\Delta x = 2(0.137 - 0.125) = 0.024$ m $= 2.4$ cm.
 
 <details>
 <summary>Problem 18</summary>
-A proton enters a uniform magnetic field of 0.40 T at an angle of $30°$ to the field lines with speed
+A proton enters a uniform magnetic field of 0.40 T at an angle of $30^\circ$ to the field lines with speed
 $5.0 \times 10^6$ m s$^{-1}$. Calculate (a) the radius of the helical path, (b) the pitch of the
 helix.
 

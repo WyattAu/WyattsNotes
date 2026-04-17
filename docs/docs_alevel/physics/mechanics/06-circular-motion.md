@@ -147,7 +147,7 @@ $$\tan\alpha = \frac{\omega^2 L\sin\alpha}{g} \implies \omega^2 = \frac{g}{L\cos
 
 $$\boxed{T = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
 
-**Example.** A conical pendulum with $L = 1.0$ m and $\alpha = 30°$ has period
+**Example.** A conical pendulum with $L = 1.0$ m and $\alpha = 30^\circ$ has period
 $T = 2\pi\sqrt{1.0 \times \cos 30°/9.81} = 2\pi\sqrt{0.0883} = 1.86$ s.
 
 :::info
@@ -200,8 +200,8 @@ For the **minimum** speed, friction acts up the slope, giving:
 
 $$\boxed{v_{\min} = \sqrt{\frac{rg(\tan\theta - \mu)}{1 + \mu\tan\theta}}}$$
 
-**Real-world example.** Motorways are banked at about $2$--$3°$ for drainage and slight curve
-assistance. At higher angles, velodromes use banking up to $45°$ so cyclists can maintain speed
+**Real-world example.** Motorways are banked at about $2$--$3^\circ$ for drainage and slight curve
+assistance. At higher angles, velodromes use banking up to $45^\circ$ so cyclists can maintain speed
 through tight turns. The normal reaction alone provides the centripetal force at the design speed.
 
 :::info
@@ -260,7 +260,7 @@ $0.90$ m with a period of $1.8$ s. Find the angle the string makes with the vert
 tension.
 
 **Answer.** $\cos\alpha = \sqrt{1 - (0.9/1.5)^2} = \sqrt{1 - 0.36} = \sqrt{0.64} = 0.80$.
-$\alpha = 36.9°$.
+$\alpha = 36.9^\circ$.
 
 $\omega = 2\pi/T = 2\pi/1.8 = 3.49$ rad s$^{-1}$. $v = \omega r = 3.49 \times 0.90 = 3.14$ m
 s$^{-1}$.
@@ -275,7 +275,7 @@ $T = 10.96m/\sin 36.9° = 10.96m/0.60 = 18.3m$ N.
 
 <details>
 <summary>Problem 3</summary>
-A curve of radius $80$ m is banked at $15°$. Calculate the optimum speed for the curve.
+A curve of radius $80$ m is banked at $15^\circ$. Calculate the optimum speed for the curve.
 
 **Answer.**
 $v = \sqrt{rg\tan\theta} = \sqrt{80 \times 9.81 \times \tan 15°} = \sqrt{80 \times 9.81 \times 0.268} = \sqrt{210.3} = 14.5$
@@ -364,7 +364,7 @@ towards the centre. $\square$
 <details>
 <summary>Problem 9</summary>
 A cyclist of total mass $80$ kg rides around a banked track of radius $25$ m at $8.0$ m s$^{-1}$. If
-the track is banked at $20°$, find the normal reaction and whether friction is needed (and in which
+the track is banked at $20^\circ$, find the normal reaction and whether friction is needed (and in which
 direction).
 
 **Answer.** Optimum speed:
@@ -374,7 +374,7 @@ m s$^{-1}$.
 Since $8.0 < 9.45$, the cyclist is going too slowly, so friction must act **up** the slope to
 prevent sliding down.
 
-$N\cos 20° = mg + F\sin 20°$ and $N\sin 20° - F\cos 20° = mv^2/r$.
+$N\cos 20° = mg + F\sin 20^\circ$ and $N\sin 20° - F\cos 20° = mv^2/r$.
 
 This requires solving two simultaneous equations. $N\sin 20° - F\cos 20° = 80 \times 64/25 = 204.8$
 and $N\cos 20° + F\sin 20° = 784.8$.
@@ -418,7 +418,7 @@ $$T - mg\cos\theta = \frac{mv^2}{r}$$
 
 $$\boxed{T = \frac{mv^2}{r} + mg\cos\theta}$$
 
-**At the top** ($\theta = 180°$, so $\cos\theta = -1$):
+**At the top** ($\theta = 180^\circ$, so $\cos\theta = -1$):
 
 $$\boxed{T_{\text{top}} = \frac{mv^2}{r} - mg}$$
 
@@ -427,7 +427,7 @@ giving the minimum speed at the top:
 
 $$\boxed{v_{\min} = \sqrt{gr}}$$
 
-**At the bottom** ($\theta = 0°$, so $\cos\theta = 1$):
+**At the bottom** ($\theta = 0^\circ$, so $\cos\theta = 1$):
 
 $$\boxed{T_{\text{bottom}} = \frac{mv^2}{r} + mg}$$
 
@@ -619,7 +619,7 @@ A conical pendulum has a string of length $2.0$ m and the bob has mass $0.50$ kg
 horizontal circle of radius $1.0$ m. Find: (a) the angle the string makes with the vertical, (b) the
 tension, (c) the period, (d) the linear speed of the bob.
 
-**Answer.** (a) $\sin\alpha = r/L = 1.0/2.0 = 0.50$, so $\alpha = 30.0°$.
+**Answer.** (a) $\sin\alpha = r/L = 1.0/2.0 = 0.50$, so $\alpha = 30.0^\circ$.
 
 (b) $T = mg/\cos\alpha = 0.50 \times 9.81/\cos 30° = 4.905/0.866 = 5.66$ N.
 
@@ -655,7 +655,7 @@ s$^{-1}$.
 <summary>Problem 14</summary>
 A bead slides without friction on a vertical circular wire of radius $0.50$ m. If it is given just
 enough speed at the lowest point to reach the highest point, what is its speed: (a) at the highest
-point, (b) when the radius to the bead makes an angle of $60°$ with the upward vertical?
+point, (b) when the radius to the bead makes an angle of $60^\circ$ with the upward vertical?
 
 **Answer.** "Just enough to reach the highest point" means the speed at the top is zero (for a
 wire/rod, unlike a string, there is no minimum speed requirement since the wire can provide a normal
@@ -667,7 +667,7 @@ By energy conservation: $\tfrac{1}{2}mv_b^2 = mg(2r) + 0$.
 
 $v_b = \sqrt{4gr} = \sqrt{4 \times 9.81 \times 0.50} = \sqrt{19.62} = 4.43$ m s$^{-1}$.
 
-(b) At angle $\theta = 60°$ from the upward vertical, the height above the bottom is
+(b) At angle $\theta = 60^\circ$ from the upward vertical, the height above the bottom is
 $r + r\cos 60° = r + r/2 = 3r/2 = 0.75$ m.
 
 $\tfrac{1}{2}mv^2 = \tfrac{1}{2}mv_b^2 - mg \times 0.75$.
@@ -683,15 +683,15 @@ $v = 2.21$ m s$^{-1}$.
 
 <details>
 <summary>Problem 15</summary>
-Two identical conical pendulums have the same string length $L$ but different angles $\alpha_1 = 20°$
-and $\alpha_2 = 40°$. Show that the pendulum with the larger angle has the shorter period, and find
+Two identical conical pendulums have the same string length $L$ but different angles $\alpha_1 = 20^\circ$
+and $\alpha_2 = 40^\circ$. Show that the pendulum with the larger angle has the shorter period, and find
 the ratio of their periods.
 
 **Answer.**
 $T_1/T_2 = \sqrt{\cos\alpha_1/\cos\alpha_2} = \sqrt{\cos 20°/\cos 40°}
 = \sqrt{0.9397/0.7660} = \sqrt{1.227} = 1.108$.
 
-Since $T_1/T_2 \gt 1$, $T_1 \gt T_2$: the pendulum at the larger angle ($40°$) has the shorter
+Since $T_1/T_2 \gt 1$, $T_1 \gt T_2$: the pendulum at the larger angle ($40^\circ$) has the shorter
 period, as expected.
 
 The ratio is $T_1:T_2 = 1.108:1$, or equivalently $T_2/T_1 = 0.902$.

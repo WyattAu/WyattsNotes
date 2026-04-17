@@ -135,7 +135,7 @@ $$
 R = \frac{u^2\sin 2\theta}{g}
 $$
 
-Maximum range occurs when $\theta = 45°$.
+Maximum range occurs when $\theta = 45^\circ$.
 
 ### Why Horizontal and Vertical Motions Are Independent
 
@@ -144,7 +144,7 @@ resistance), so the horizontal acceleration is zero. The two components of motio
 decoupled and can be solved separately using the kinematic equations.
 
 **Example (HL):** A ball is thrown from ground level with initial velocity $20\text{ m/s}$ at an
-angle of $30°$ above the horizontal. Find the maximum height, time of flight, and range.
+angle of $30^\circ$ above the horizontal. Find the maximum height, time of flight, and range.
 
 $$
 u_x = 20\cos 30° = 10\sqrt{3} \approx 17.32\text{ m/s}
@@ -319,7 +319,7 @@ $$
 Unit: watt (W).
 
 **Example (HL):** A car of mass 1200 kg travels at a constant speed of $20\text{ m/s}$ up a hill
-inclined at $5°$ against a total resistance of 400 N. Find the power output of the engine.
+inclined at $5^\circ$ against a total resistance of 400 N. Find the power output of the engine.
 
 $$
 P = Fv = (mg\sin 5° + 400) \times 20
@@ -493,9 +493,9 @@ mass and the spring constant.
 
 ### Higher Level
 
-1. A projectile is launched at $30\text{ m/s}$ at $45°$ to the horizontal from a cliff 20 m above
+1. A projectile is launched at $30\text{ m/s}$ at $45^\circ$ to the horizontal from a cliff 20 m above
    sea level. Find the horizontal distance from the cliff where it hits the water.
-2. A block of mass 5 kg is on a rough plane inclined at $30°$ with $\mu = 0.3$. Find the
+2. A block of mass 5 kg is on a rough plane inclined at $30^\circ$ with $\mu = 0.3$. Find the
    acceleration of the block down the plane.
 3. A satellite of mass 500 kg orbits Earth at a height of 300 km above the surface. Find the orbital
    speed and period. (Earth's radius $= 6.37 \times 10^6\text{ m}$,
@@ -510,9 +510,9 @@ mass and the spring constant.
    of the circle and the tension in the string at the bottom when the speed is $6\text{ m/s}$.
 
 7. A car of mass $1500\text{ kg}$ rounds a banked curve of radius $100\text{ m}$ at $18\text{ m/s}$.
-   The banking angle is $20°$. Find the minimum coefficient of static friction required.
+   The banking angle is $20^\circ$. Find the minimum coefficient of static friction required.
 
-8. A block of mass $4\text{ kg}$ slides $5\text{ m}$ down a $35°$ incline with $\mu_k = 0.15$. Find
+8. A block of mass $4\text{ kg}$ slides $5\text{ m}$ down a $35^\circ$ incline with $\mu_k = 0.15$. Find
    the work done by friction, the work done by gravity, and the final speed if the block started
    from rest.
 
@@ -673,7 +673,7 @@ $a_{\max} = \omega^2 A = \left(\frac{2\pi}{1.5}\right)^2 \times 0.08 = \left(\fr
 
 ### Example 21: Projectile Motion with Air Resistance (Qualitative)
 
-A projectile is launched at $45°$ to the horizontal. Explain qualitatively how air resistance
+A projectile is launched at $45^\circ$ to the horizontal. Explain qualitatively how air resistance
 affects (a) the maximum height, (b) the range, (c) the time of flight, and (d) the optimal launch
 angle.
 
@@ -691,8 +691,8 @@ air resistance acts upward (opposing the downward motion), so the projectile tak
 The net effect is usually a slightly _longer_ time of flight than the ascent time, but the total
 time may be less than without air resistance due to the much lower apex.
 
-(d) **Optimal launch angle:** Without air resistance, $45°$ gives maximum range. With air
-resistance, the optimal angle is less than $45°$ (typically around $35°-40°$ for a baseball,
+(d) **Optimal launch angle:** Without air resistance, $45^\circ$ gives maximum range. With air
+resistance, the optimal angle is less than $45^\circ$ (typically around $35°-40^\circ$ for a baseball,
 depending on the drag coefficient). This is because a lower angle gives a flatter trajectory,
 reducing the time the projectile spends in the air (and thus the total distance over which air
 resistance acts).

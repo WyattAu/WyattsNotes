@@ -237,7 +237,7 @@ Time of flight: $y = 0 \implies t = \dfrac{2v\sin\theta}{g}$.
 
 $$R = v\cos\theta \cdot \frac{2v\sin\theta}{g} = \frac{v^2\sin 2\theta}{g}$$
 
-Maximum range occurs when $\sin 2\theta = 1$, i.e., $\theta = 45°$.
+Maximum range occurs when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$.
 
 $$R_{\max} = \frac{v^2}{g}$$
 
@@ -293,7 +293,7 @@ The horizontal range is then $R = v\cos\theta \cdot t$.
 
 :::tip
 When a projectile is launched from a height, the time of flight is **longer** than for level
-ground, and the angle for maximum range is **less** than $45°$ (derived via calculus, but beyond the
+ground, and the angle for maximum range is **less** than $45^\circ$ (derived via calculus, but beyond the
 core syllabus).
 :::
 
@@ -428,7 +428,7 @@ Total time (up and down): $2 \times 1.53 = 3.06\,\text{s}$.
 
 <details>
 <summary>Problem 3</summary>
-A projectile is launched at $30\,\text{m/s}$ at an angle of $40°$ above the horizontal. Find the range and maximum height. Take $g = 9.8\,\text{m/s}^2$.
+A projectile is launched at $30\,\text{m/s}$ at an angle of $40^\circ$ above the horizontal. Find the range and maximum height. Take $g = 9.8\,\text{m/s}^2$.
 </details>
 
 <details>
@@ -475,14 +475,14 @@ $s = \int_0^3 (3t^2 - 2t + 1)\,dt = \left[t^3 - t^2 + t\right]_0^3 = 27 - 9 + 3 
 
 <details>
 <summary>Problem 6</summary>
-Show that the maximum range of a projectile on level ground is achieved at $45°$.
+Show that the maximum range of a projectile on level ground is achieved at $45^\circ$.
 </details>
 
 <details>
 <summary>Solution 6</summary>
-$R = \dfrac{v^2 \sin 2\theta}{g}$. To maximise: $\dfrac{dR}{d\theta} = \dfrac{2v^2 \cos 2\theta}{g} = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45°$.
+$R = \dfrac{v^2 \sin 2\theta}{g}$. To maximise: $\dfrac{dR}{d\theta} = \dfrac{2v^2 \cos 2\theta}{g} = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45^\circ$.
 
-$\dfrac{d^2R}{d\theta^2} = -\dfrac{4v^2 \sin 2\theta}{g} \lt{} 0$ at $\theta = 45°$, confirming a
+$\dfrac{d^2R}{d\theta^2} = -\dfrac{4v^2 \sin 2\theta}{g} \lt{} 0$ at $\theta = 45^\circ$, confirming a
 maximum. $\blacksquare$
 
 **If you get this wrong, revise:** [Range](#46-range) — Section 4.6.
@@ -527,7 +527,7 @@ $u = \dfrac{450 \pm \sqrt{202500 - 126604}}{196} = \dfrac{450 \pm \sqrt{75896}}{
 
 $u \approx 3.702$ or $u \approx 0.890$.
 
-$\theta \approx 74.9°$ or $\theta \approx 41.7°$.
+$\theta \approx 74.9^\circ$ or $\theta \approx 41.7^\circ$.
 
 **If you get this wrong, revise:** [Trajectory Equation](#44-derivation-of-the-trajectory-equation)
 — Section 4.4.
@@ -589,7 +589,7 @@ Separation: $45 - 20.19 = 24.81\,\text{m}$.
 
 <details>
 <summary>Problem 12</summary>
-A projectile is launched from ground level and just clears a wall $20\,\text{m}$ high and $40\,\text{m}$ away. If the launch angle is $50°$, find the minimum launch speed.
+A projectile is launched from ground level and just clears a wall $20\,\text{m}$ high and $40\,\text{m}$ away. If the launch angle is $50^\circ$, find the minimum launch speed.
 </details>
 
 <details>
@@ -691,7 +691,7 @@ Section 5.4.
 
 <details>
 <summary>Problem 16</summary>
-A ball is thrown at $12\,\text{m/s}$ at an angle of $60°$ above the horizontal from a point $2\,\text{m}$ above level ground. Find the speed and direction of the ball when it hits the ground. Take $g = 9.8\,\text{m/s}^2$.
+A ball is thrown at $12\,\text{m/s}$ at an angle of $60^\circ$ above the horizontal from a point $2\,\text{m}$ above level ground. Find the speed and direction of the ball when it hits the ground. Take $g = 9.8\,\text{m/s}^2$.
 </details>
 
 <details>
@@ -710,7 +710,7 @@ Vertical velocity at impact: $v_y = 10.39 - 9.8(2.29) = 10.39 - 22.44 = -12.05\,
 
 Speed: $\sqrt{6^2 + 12.05^2} = \sqrt{36 + 145.20} = \sqrt{181.20} \approx 13.46\,\text{m/s}$.
 
-Angle below horizontal: $\arctan(12.05/6) \approx 63.5°$.
+Angle below horizontal: $\arctan(12.05/6) \approx 63.5^\circ$.
 
 **If you get this wrong, revise:**
 [Velocity at Any Point](#47-velocity-at-any-point-on-the-trajectory) — Section 4.7.

@@ -391,7 +391,7 @@ Phase 3 (decelerating, i.e., accelerating downward): $R = 70(9.81 - 3.0) = 70 \t
 
 <details>
 <summary>Problem 4</summary>
-A block of mass $4.0$ kg is placed on a smooth inclined plane at $30°$ to the horizontal. Find the acceleration of the block down the plane.
+A block of mass $4.0$ kg is placed on a smooth inclined plane at $30^\circ$ to the horizontal. Find the acceleration of the block down the plane.
 
 **Answer.** Resolving parallel to the plane: $mg\sin 30° = ma$, so $a = g\sin 30° = 9.81 \times 0.5 = 4.91$ m s$^{-2}$.
 
@@ -411,16 +411,16 @@ A raindrop of mass $2.0 \times 10^{-5}$ kg falls through air with drag proportio
 <summary>Problem 6</summary>
 Two forces, $\mathbf{F}_1 = (3\mathbf{i} + 4\mathbf{j})$ N and $\mathbf{F}_2 = (-\mathbf{i} + 2\mathbf{j})$ N, act on a body of mass $2.0$ kg. Find the magnitude and direction of the acceleration.
 
-**Answer.** $\mathbf{F}_{\text{net}} = (3-1)\mathbf{i} + (4+2)\mathbf{j} = (2\mathbf{i} + 6\mathbf{j})$ N. $\mathbf{a} = \frac{1}{2}(2\mathbf{i} + 6\mathbf{j}) = (1\mathbf{i} + 3\mathbf{j})$ m s$^{-2}$. $|\mathbf{a}| = \sqrt{1 + 9} = \sqrt{10} = 3.16$ m s$^{-2}$. Direction: $\theta = \arctan(3/1) = 71.6°$ from the $x$-axis.
+**Answer.** $\mathbf{F}_{\text{net}} = (3-1)\mathbf{i} + (4+2)\mathbf{j} = (2\mathbf{i} + 6\mathbf{j})$ N. $\mathbf{a} = \frac{1}{2}(2\mathbf{i} + 6\mathbf{j}) = (1\mathbf{i} + 3\mathbf{j})$ m s$^{-2}$. $|\mathbf{a}| = \sqrt{1 + 9} = \sqrt{10} = 3.16$ m s$^{-2}$. Direction: $\theta = \arctan(3/1) = 71.6^\circ$ from the $x$-axis.
 
 <b>If you get this wrong, revise:</b> [Resolving Forces in Two Dimensions](#4-resolving-forces-in-two-dimensions)
 </details>
 
 <details>
 <summary>Problem 7</summary>
-A block slides down a rough inclined plane at $25°$ to the horizontal. If $\mu_d = 0.2$, find the acceleration.
+A block slides down a rough inclined plane at $25^\circ$ to the horizontal. If $\mu_d = 0.2$, find the acceleration.
 
-**Answer.** Resolving parallel (down-plane positive): $mg\sin 25° - F_d = ma$. Resolving perpendicular: $R = mg\cos 25°$. So $F_d = 0.2mg\cos 25°$.
+**Answer.** Resolving parallel (down-plane positive): $mg\sin 25° - F_d = ma$. Resolving perpendicular: $R = mg\cos 25^\circ$. So $F_d = 0.2mg\cos 25^\circ$.
 
 $a = g(\sin 25° - 0.2\cos 25°) = 9.81(0.4226 - 0.1813) = 9.81 \times 0.2413 = 2.37$ m s$^{-2}$.
 
@@ -473,7 +473,7 @@ Explain why the tension in a rope draped over a pulley is the same on both sides
 
 <details>
 <summary>Problem 12</summary>
-A crate of mass $20$ kg is pushed up a rough ramp inclined at $15°$ to the horizontal by a force of $120$ N acting parallel to the ramp. The coefficient of friction is $0.25$. Find the acceleration.
+A crate of mass $20$ kg is pushed up a rough ramp inclined at $15^\circ$ to the horizontal by a force of $120$ N acting parallel to the ramp. The coefficient of friction is $0.25$. Find the acceleration.
 
 **Answer.** Resolving perpendicular: $R = mg\cos 15° = 20 \times 9.81 \times 0.966 = 189.5$ N.
 
@@ -490,7 +490,7 @@ $120 - 50.8 - 47.4 = 20a$. $21.8 = 20a$. $a = 1.09$ m s$^{-2}$.
 
 <details>
 <summary>Problem 13</summary>
-A block is placed on an inclined plane and the angle is slowly increased. The block begins to slide when the angle reaches $35°$. Find the coefficient of static friction.
+A block is placed on an inclined plane and the angle is slowly increased. The block begins to slide when the angle reaches $35^\circ$. Find the coefficient of static friction.
 
 **Answer.** At the angle of repose, the block is at limiting equilibrium: $\tan\alpha = \mu_s$.
 
@@ -527,7 +527,7 @@ $T = \frac{3.0 \times 1.5 \times 9.81 \times 1.25}{4.5} = \frac{55.2}{4.5} = 12.
 
 <details>
 <summary>Problem 16</summary>
-Two masses, $m_A = 5.0$ kg and $m_B = 3.0$ kg, are connected by a light inextensible string over a smooth pulley. Mass $m_A$ rests on a smooth plane inclined at $30°$ to the horizontal, with the string parallel to the slope. Mass $m_B$ hangs freely. The system is released from rest. Find the acceleration and the tension in the string.
+Two masses, $m_A = 5.0$ kg and $m_B = 3.0$ kg, are connected by a light inextensible string over a smooth pulley. Mass $m_A$ rests on a smooth plane inclined at $30^\circ$ to the horizontal, with the string parallel to the slope. Mass $m_B$ hangs freely. The system is released from rest. Find the acceleration and the tension in the string.
 
 **Answer.** First determine the direction of motion. For $m_A$ down the slope: $m_A g\sin 30° = 5.0 \times 9.81 \times 0.5 = 24.5$ N. Weight of $m_B$ = $3.0 \times 9.81 = 29.4$ N. Since $m_B$'s weight exceeds $m_A$'s component down the slope, $m_B$ descends and $m_A$ moves up the slope.
 
@@ -615,7 +615,7 @@ Total distance: $16 + 48 + 10.7 = 74.7$ m.
 
 <details>
 <summary>Problem 20</summary>
-Two blocks, $m_A = 5.0$ kg on a rough incline at $30°$ ($\mu = 0.2$) and $m_B = 8.0$ kg hanging vertically, are connected by a light inextensible string over a smooth pulley at the top of the incline. The string is parallel to the incline. If the system is released from rest, find: (a) the acceleration, (b) the tension, (c) the velocity after the system has moved 2.0 m.
+Two blocks, $m_A = 5.0$ kg on a rough incline at $30^\circ$ ($\mu = 0.2$) and $m_B = 8.0$ kg hanging vertically, are connected by a light inextensible string over a smooth pulley at the top of the incline. The string is parallel to the incline. If the system is released from rest, find: (a) the acceleration, (b) the tension, (c) the velocity after the system has moved 2.0 m.
 
 **Answer.** First determine the direction of motion. Component of $m_A$'s weight down the slope: $m_A g\sin 30° = 5.0 \times 9.81 \times 0.5 = 24.5$ N. Maximum friction on $m_A$: $\mu m_A g\cos 30° = 0.2 \times 5.0 \times 9.81 \times 0.866 = 8.50$ N.
 

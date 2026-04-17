@@ -611,7 +611,7 @@ Gradient of $BC$: $\frac{8 - 4}{3 - 5} = \frac{4}{-2} = -2$.
 
 Product: $\frac{1}{2} \times (-2) = -1$.
 
-Since $m_{AB} \cdot m_{BC} = -1$, $AB \perp BC$, so $\angle B = 90°$. $\blacksquare$
+Since $m_{AB} \cdot m_{BC} = -1$, $AB \perp BC$, so $\angle B = 90^\circ$. $\blacksquare$
 
 </details>
 <b>If you get this wrong, revise:</b> [Parallel and perpendicular lines](#23-parallel-and-perpendicular-lines)

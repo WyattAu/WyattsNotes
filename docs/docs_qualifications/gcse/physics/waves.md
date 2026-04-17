@@ -761,7 +761,7 @@ next trough, which is only half a wavelength.
 
 ## Additional Practice Problems
 
-26. Light travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of $35°$.
+26. Light travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of $35^\circ$.
     Calculate the angle of refraction and state whether the light bends towards or away from the
     normal.
 

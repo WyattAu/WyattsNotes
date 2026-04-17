@@ -356,7 +356,7 @@ $$
 |\Delta\phi| = \left|0 - \left(-\frac{\pi}{2}\right)\right| = \frac{\pi}{2}\text{ rad} = 90°
 $$
 
-System A leads System B by $90°$.
+System A leads System B by $90^\circ$.
 
 ### Example 6: Energy Partition at a Given Displacement
 
@@ -582,7 +582,7 @@ $\phi_0 = \pm\pi/2$, not $0$.
 ### 5. Small-Angle Approximation Validity
 
 $T = 2\pi\sqrt{L/g}$ relies on $\sin\theta \approx \theta$, accurate to within 1% for
-$\theta \lt 10°$ and 0.1% for $\theta \lt 5°$. Beyond approximately $15°$, the true period exceeds
+$\theta \lt 10^\circ$ and 0.1% for $\theta \lt 5^\circ$. Beyond approximately $15^\circ$, the true period exceeds
 the prediction and the motion is no longer strictly SHM.
 
 ### 6. Misidentifying Equilibrium Position
@@ -652,8 +652,8 @@ At half the amplitude, the split is 75% kinetic, 25% potential (energy scales as
 
 ### Problem 4 (SL)
 
-Two identical pendulums are released simultaneously. Pendulum P is released from an angle of $5°$
-and pendulum Q from an angle of $10°$. Both are within the small-angle regime. Compare their
+Two identical pendulums are released simultaneously. Pendulum P is released from an angle of $5^\circ$
+and pendulum Q from an angle of $10^\circ$. Both are within the small-angle regime. Compare their
 periods.
 
 <details>
@@ -667,7 +667,7 @@ $$
 
 Both pendulums have the same length and gravitational field, so $T_P = T_Q$. This is the property of
 **isochrony**. In practice, Q's period is very slightly longer because the small-angle approximation
-is less accurate at $10°$, but this difference is negligible at the IB level.
+is less accurate at $10^\circ$, but this difference is negligible at the IB level.
 
 </details>
 
@@ -779,7 +779,7 @@ $$
 A = \frac{v_{\max}}{\omega} = \frac{3.13}{2.21} = 1.42\text{ m}
 $$
 
-This corresponds to an angular amplitude of $0.71\text{ rad} \approx 41°$, exceeding the small-angle
+This corresponds to an angular amplitude of $0.71\text{ rad} \approx 41^\circ$, exceeding the small-angle
 regime. The SHM model is approximate here.
 
 (b)

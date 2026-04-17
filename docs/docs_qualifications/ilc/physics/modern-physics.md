@@ -208,7 +208,7 @@ struck by an alpha particle.
 - The vast majority of alpha particles passed straight through the foil with little or no
   deflection.
 - A small fraction were deflected through moderate angles.
-- A very small number (about 1 in 8000) were deflected through angles greater than $90°$, and some
+- A very small number (about 1 in 8000) were deflected through angles greater than $90^\circ$, and some
   bounced nearly straight back.
 
 **Conclusions:**
@@ -225,7 +225,7 @@ struck by an alpha particle.
 **Why the Thomson model failed:** In the plum pudding model, the positive charge is spread out. The
 maximum Coulomb force on an alpha particle passing through a diffuse positive sphere would be much
 smaller than what is needed to produce the observed large-angle deflections. Rutherford calculated
-that to produce a deflection of greater than $90°$, the alpha particle must encounter a concentrated
+that to produce a deflection of greater than $90^\circ$, the alpha particle must encounter a concentrated
 charge within a radius of approximately $10^{-14}\text{ m}$, about four orders of magnitude smaller
 than the known atomic radius ($\approx 10^{-10}\text{ m}$).
 

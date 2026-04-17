@@ -276,7 +276,7 @@ might combine:
 
 - Confusing **distance** and **displacement**, or **speed** and **velocity**.
 - Forgetting the **negative sign** in the first law of thermodynamics sign convention.
-- Using $\theta = 0$ instead of $\theta = 90°$ for the angle between velocity and magnetic field
+- Using $\theta = 0$ instead of $\theta = 90^\circ$ for the angle between velocity and magnetic field
   when applying $F = qvB \sin\theta$.
 - Mixing up **half-life** and **decay constant** — remember $T_{1/2} = \ln 2 / \lambda$.
 - Forgetting that **gravitational potential energy is negative** and approaches zero at infinity.

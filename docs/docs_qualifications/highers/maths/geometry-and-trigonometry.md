@@ -324,7 +324,7 @@ $$
 A = \frac{1}{2}ab\sin C
 $$
 
-**Example:** In triangle $ABC$, $a = 8$, $b = 5$, $C = 60°$. Find $c$.
+**Example:** In triangle $ABC$, $a = 8$, $b = 5$, $C = 60^\circ$. Find $c$.
 
 $$
 c^2 = 64 + 25 - 2(8)(5)\cos 60° = 89 - 40 = 49
@@ -332,7 +332,7 @@ $$
 
 $c = 7$.
 
-**Example:** In triangle $ABC$, $a = 7$, $b = 9$, $B = 55°$. Find angle $A$.
+**Example:** In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$.
 
 By the sine rule:
 
@@ -348,9 +348,9 @@ $$
 A = \arcsin(0.6372) \approx 39.6° \quad \text{or} \quad A = 180° - 39.6° = 140.4°
 $$
 
-Both values are valid since $A + B = 39.6° + 55° = 94.6° < 180°$ and
-$A + B = 140.4° + 55° = 195.4° > 180°$. Only $A \approx 39.6°$ is valid (since the sum of angles
-must be less than $180°$).
+Both values are valid since $A + B = 39.6° + 55° = 94.6° < 180^\circ$ and
+$A + B = 140.4° + 55° = 195.4° > 180^\circ$. Only $A \approx 39.6^\circ$ is valid (since the sum of angles
+must be less than $180^\circ$).
 
 ### Wave Function (R-Addition Formula)
 
@@ -753,7 +753,7 @@ $$
 9. Find the perpendicular distance from the point $(1, 2, 3)$ to the line
    $\mathbf{r} = (0, 1, -1) + t(2, -1, 3)$.
 
-10. In triangle $ABC$, $a = 7$, $b = 9$, $B = 55°$. Find angle $A$ (there may be two solutions).
+10. In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$ (there may be two solutions).
 
 11. Solve $2\sin^2 x + 3\cos x - 3 = 0$ for $0 \le x \lt 2\pi$.
 

@@ -595,7 +595,7 @@ $$
 
 ### Problem 2 (SL)
 
-A straight wire of length $0.60\text{ m}$ moves at $8.0\text{ m s}^{-1}$ at an angle of $30°$ to a
+A straight wire of length $0.60\text{ m}$ moves at $8.0\text{ m s}^{-1}$ at an angle of $30^\circ$ to a
 magnetic field of $0.25\text{ T}$. Calculate the induced EMF.
 
 <details>

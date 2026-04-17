@@ -377,7 +377,7 @@ Two vectors are given: $\mathbf{A} = 3\mathbf{i} + 4\mathbf{j}$ N and $\mathbf{B
 **Answer.**
 $\mathbf{A} + \mathbf{B} = (3-2)\mathbf{i} + (4+5)\mathbf{j} = \mathbf{i} + 9\mathbf{j}$. Magnitude:
 $|\mathbf{A}+\mathbf{B}| = \sqrt{1^2 + 9^2} = \sqrt{82} = 9.06$ N. Direction:
-$\theta = \arctan(9/1) = 83.7°$ above the positive $x$-axis.
+$\theta = \arctan(9/1) = 83.7^\circ$ above the positive $x$-axis.
 
 <b>If you get this wrong, revise:</b> [Vector Operations](#4-scalars-and-vectors)
 

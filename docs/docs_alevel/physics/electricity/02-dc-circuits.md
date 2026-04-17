@@ -622,13 +622,13 @@ circuit, its resistance should be very low (ideally zero).
 <details>
 <summary>Problem 11</summary>
 A potential divider circuit uses a 15 V supply with $R_1 = 10\,\text{k}\Omega$ and a thermistor as
-$R_2$. The thermistor has resistance 2000 $\Omega$ at $25°$C and 500 $\Omega$ at $50°$C. Calculate
+$R_2$. The thermistor has resistance 2000 $\Omega$ at $25^\circ\mathrm{C}$ and 500 $\Omega$ at $50^\circ\mathrm{C}$. Calculate
 $V_{\text{out}}$ at each temperature.
 
-**Answer.** At $25°$C:
+**Answer.** At $25^\circ\mathrm{C}$:
 $V_{\text{out}} = 15 \times \frac{2000}{10000 + 2000} = 15 \times \frac{2}{12} = 2.50$ V.
 
-At $50°$C:
+At $50^\circ\mathrm{C}$:
 $V_{\text{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{10500} = 0.714$ V.
 
 <b>If you get this wrong, revise:</b> [Potential Dividers](#3-potential-dividers)

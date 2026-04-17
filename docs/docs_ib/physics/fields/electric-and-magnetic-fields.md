@@ -464,7 +464,7 @@ is approximately zero.
 ## Worked Example: Magnetic Force on a Current-Carrying Wire
 
 **Problem:** A straight wire of length 0.50 m carrying a current of 3.0 A is placed in a uniform
-magnetic field of $B = 0.40$ T. The wire makes an angle of $60°$ with the field. Calculate the
+magnetic field of $B = 0.40$ T. The wire makes an angle of $60^\circ$ with the field. Calculate the
 magnitude of the force on the wire.
 
 **Solution:**

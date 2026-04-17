@@ -572,7 +572,7 @@ $$
 5. **Angle between line and plane vs angle between line and normal.** The angle $\alpha$ between a
    line and a plane satisfies $\sin\alpha = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. The
    angle between the line and the **normal** satisfies
-   $\cos\phi = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. Note that $\alpha + \phi = 90°$.
+   $\cos\phi = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. Note that $\alpha + \phi = 90^\circ$.
 
 6. **Assuming skew lines intersect.** Two lines in 3D are generally skew (neither parallel nor
    intersecting). Always verify that a common solution exists for the parameters.
@@ -595,7 +595,7 @@ $\bm{b} = \begin{pmatrix} 4 \\ -1 \\ 1 \end{pmatrix}$.
 $\bm{a} \cdot \bm{b} = (1)(4) + (3)(-1) + (-2)(1) = 4 - 3 - 2 = -1$.
 $|\bm{a}| = \sqrt{1 + 9 + 4} = \sqrt{14}$, $|\bm{b}| = \sqrt{16 + 1 + 1} = \sqrt{18} = 3\sqrt{2}$.
 $\cos\theta = \frac{-1}{3\sqrt{28}} = \frac{-1}{3 \times 5.292} = -0.0630$.
-$\theta = \arccos(-0.0630) \approx 93.6°$.
+$\theta = \arccos(-0.0630) \approx 93.6^\circ$.
 
 </details>
 
@@ -652,7 +652,7 @@ $\hat{n}_2 = \begin{pmatrix} 3 \\ -1 \\ 1 \end{pmatrix}$.
 $\hat{n}_1 \cdot \hat{n}_2 = 3 - 2 - 2 = -1$. $|\hat{n}_1| = \sqrt{1 + 4 + 4} = 3$,
 $|\hat{n}_2| = \sqrt{9 + 1 + 1} = \sqrt{11}$.
 $\cos\theta = \frac{|-1|}{3\sqrt{11}} = \frac{1}{9.95} = 0.1005$.
-$\theta = \arccos(0.1005) \approx 84.2°$.
+$\theta = \arccos(0.1005) \approx 84.2^\circ$.
 
 </details>
 

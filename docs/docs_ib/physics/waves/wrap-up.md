@@ -273,9 +273,9 @@ $$\sin\theta_c = \frac{n_2}{n_1}$$
 
 Light travels from glass ($n = 1.50$) to air ($n = 1.00$). Find the critical angle.
 
-$$\sin\theta_c = \frac{1.00}{1.50} = 0.667 \implies \theta_c = 41.8°$$
+$$\sin\theta_c = \frac{1.00}{1.50} = 0.667 \implies \theta_c = 41.8^\circ$$
 
-Any angle of incidence greater than $41.8°$ will result in total internal reflection.
+Any angle of incidence greater than $41.8^\circ$ will result in total internal reflection.
 
 ### Dispersion
 
@@ -327,7 +327,7 @@ where $D$ is the diameter of the aperture.
 A telescope with a mirror of diameter $0.10$ m observes light of wavelength $550$ nm. What is the
 minimum angular separation it can resolve?
 
-$$\theta = \frac{1.22 \times 550 \times 10^{-9}}{0.10} = 6.71 \times 10^{-6} \text{ rad} \approx 0.00038°$$
+$$\theta = \frac{1.22 \times 550 \times 10^{-9}}{0.10} = 6.71 \times 10^{-6} \text{ rad} \approx 0.00038^\circ$$
 
 > **Exam Tip:** Diffraction is often the limiting factor on the resolving power of optical
 > instruments. A larger aperture gives better resolution. This is why astronomical telescopes use

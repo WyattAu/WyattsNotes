@@ -582,14 +582,14 @@ load.
 
 A $4 \text{ kg}$ object moving at $6 \text{ m/s}$ collides with a stationary $6 \text{ kg}$ object
 on a frictionless surface. After the collision, the $6 \text{ kg}$ object moves at $3 \text{ m/s}$
-at $45°$ to the original direction. Determine the final velocity of the $4 \text{ kg}$ object and
+at $45^\circ$ to the original direction. Determine the final velocity of the $4 \text{ kg}$ object and
 classify the collision.
 
 **Step 1: Conservation of momentum (x-direction)**
 
 $$m_1 u_1 = m_1 v_{1x} + m_2 v_{2x}$$
 
-$$4 \times 6 = 4v_{1x} + 6 \times 3\cos 45°$$
+$$4 \times 6 = 4v_{1x} + 6 \times 3\cos 45^\circ$$
 
 $$24 = 4v_{1x} + 12.728$$
 
@@ -599,7 +599,7 @@ $$v_{1x} = \frac{24 - 12.728}{4} = 2.818 \text{ m/s}$$
 
 $$0 = m_1 v_{1y} + m_2 v_{2y}$$
 
-$$0 = 4v_{1y} + 6 \times 3\sin 45°$$
+$$0 = 4v_{1y} + 6 \times 3\sin 45^\circ$$
 
 $$v_{1y} = \frac{-12.728}{4} = -3.182 \text{ m/s}$$
 
@@ -607,7 +607,7 @@ $$v_{1y} = \frac{-12.728}{4} = -3.182 \text{ m/s}$$
 
 $$|v_1| = \sqrt{2.818^2 + (-3.182)^2} = \sqrt{7.941 + 10.125} = \sqrt{18.066} = 4.251 \text{ m/s}$$
 
-$$\theta = \arctan\left(\frac{-3.182}{2.818}\right) = -48.5°$$
+$$\theta = \arctan\left(\frac{-3.182}{2.818}\right) = -48.5^\circ$$
 
 **Step 4: Classify the collision**
 

@@ -414,7 +414,7 @@ Similarly $\bar{y} = 2a$.
 
 <details>
 <summary>Problem 5</summary>
-A sphere hits a smooth horizontal floor with speed $10\,\text{m s}^{-1}$ at an angle of $60°$ to the horizontal. The coefficient of restitution is $e = 0.8$. Find the speed and angle of the sphere immediately after impact.
+A sphere hits a smooth horizontal floor with speed $10\,\text{m s}^{-1}$ at an angle of $60^\circ$ to the horizontal. The coefficient of restitution is $e = 0.8$. Find the speed and angle of the sphere immediately after impact.
 </details>
 
 <details>
@@ -430,7 +430,7 @@ $v_x = 5$ (unchanged).
 Speed $= \sqrt{25 + 48} = \sqrt{73} \approx 8.54\,\text{m s}^{-1}$.
 
 Angle to horizontal:
-$\theta = \arctan\!\left(\dfrac{4\sqrt{3}}{5}\right) = \arctan(1.386) \approx 54.2°$.
+$\theta = \arctan\!\left(\dfrac{4\sqrt{3}}{5}\right) = \arctan(1.386) \approx 54.2^\circ$.
 
 **If you get this wrong, revise:** [Sphere hitting a smooth wall](#71-sphere-hitting-a-smooth-wall)
 — Section 7.1.

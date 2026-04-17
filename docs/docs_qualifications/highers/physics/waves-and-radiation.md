@@ -66,13 +66,13 @@ $$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
 where $n$ is the refractive index of each medium.
 
 **Example:** Light travels from air ($n = 1$) into glass ($n = 1.5$) at an angle of incidence of
-$40°$. Find the angle of refraction.
+$40^\circ$. Find the angle of refraction.
 
 $$1 \times \sin 40° = 1.5 \times \sin\theta_2$$
 
 $$\sin\theta_2 = \frac{\sin 40°}{1.5} = \frac{0.6428}{1.5} = 0.4285$$
 
-$$\theta_2 = \arcsin(0.4285) \approx 25.4°$$
+$$\theta_2 = \arcsin(0.4285) \approx 25.4^\circ$$
 
 ### Why Frequency Does Not Change During Refraction
 
@@ -90,7 +90,7 @@ $$\sin\theta_c = \frac{n_2}{n_1} \quad (n_1 > n_2)$$
 
 $$\sin\theta_c = \frac{1}{1.5} = 0.6667$$
 
-$$\theta_c = \arcsin(0.6667) \approx 41.8°$$
+$$\theta_c = \arcsin(0.6667) \approx 41.8^\circ$$
 
 ### Diffraction
 
@@ -143,7 +143,7 @@ $$d = \frac{1}{500} \text{ mm} = 2 \times 10^{-6} \text{ m}$$
 
 $$\sin\theta = \frac{n\lambda}{d} = \frac{2 \times 580 \times 10^{-9}}{2 \times 10^{-6}} = \frac{1.16 \times 10^{-6}}{2 \times 10^{-6}} = 0.58$$
 
-$$\theta = \arcsin(0.58) \approx 35.4°$$
+$$\theta = \arcsin(0.58) \approx 35.4^\circ$$
 
 ### The Electromagnetic Spectrum
 
@@ -319,7 +319,7 @@ Background radiation comes from:
 3. A radioactive sample has half-life 8 days and initial activity $1200 \text{ Bq}$. Find the
    activity after 32 days.
 
-4. Light travels from water ($n = 1.33$) into air at an angle of $35°$ to the normal. Find the angle
+4. Light travels from water ($n = 1.33$) into air at an angle of $35^\circ$ to the normal. Find the angle
    of refraction. Does total internal reflection occur?
 
 5. The binding energy per nucleon of iron-56 is $8.79 \text{ MeV}$. Find the total binding energy.
@@ -333,7 +333,7 @@ Background radiation comes from:
 8. A wave has frequency $250 \text{ Hz}$ and travels at $1500 \text{ m/s}$. Find the wavelength and
    the phase difference between two points $3 \text{ m}$ apart.
 
-9. A diffraction grating produces a first-order maximum at $20°$ for light of wavelength
+9. A diffraction grating produces a first-order maximum at $20^\circ$ for light of wavelength
    $500 \text{ nm}$. Calculate the number of lines per mm on the grating.
 
 10. A sample of iodine-131 has a half-life of 8 days. A hospital receives a shipment with activity

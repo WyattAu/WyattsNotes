@@ -41,7 +41,7 @@ $$
 n = \frac{m}{M}, \quad n = \frac{N}{N_A}, \quad n = \frac{V}{V_m}
 $$
 
-At STP ($0°$C, 1 atm): $V_m = 22.4\text{ L/mol}$. At room temperature ($25°$C, 1 atm):
+At STP ($0^\circ\mathrm{C}$, 1 atm): $V_m = 22.4\text{ L/mol}$. At room temperature ($25^\circ\mathrm{C}$, 1 atm):
 $V_m = 24.0\text{ L/mol}$.
 
 **Example (OL):** How many moles are in 10 g of $\text{NaOH}$ ($M = 40\text{ g/mol}$)?
@@ -336,7 +336,7 @@ $$
 pV = nRT
 $$
 
-**Example (HL):** What volume does 0.250 mol of gas occupy at $25°$C and
+**Example (HL):** What volume does 0.250 mol of gas occupy at $25^\circ\mathrm{C}$ and
 $1.01 \times 10^5\text{ Pa}$?
 
 $$

@@ -485,7 +485,7 @@ Tension: $T = m_1 a = (3.0)(6.13) = 18.4$ N.
 
 ## Worked Example: Inclined Plane with Friction
 
-**Problem:** A 4.0 kg block is placed on a $30°$ incline. The coefficient of static friction is
+**Problem:** A 4.0 kg block is placed on a $30^\circ$ incline. The coefficient of static friction is
 $\mu_s = 0.40$ and the coefficient of kinetic friction is $\mu_k = 0.30$. a) Will the block slide?
 Justify with a calculation. b) If a horizontal force of 20 N is applied pushing the block up the
 incline, find the acceleration.
@@ -594,7 +594,7 @@ where $E_k$ increased).
 <details>
 <summary>Question 1</summary>
 
-A 2.0 kg block slides down a frictionless incline of angle $35°$ from a height of 1.5 m. a) Find the
+A 2.0 kg block slides down a frictionless incline of angle $35^\circ$ from a height of 1.5 m. a) Find the
 speed of the block at the bottom of the incline. b) The block then slides across a rough horizontal
 surface with $\mu_k = 0.30$. How far does it travel before stopping?
 

@@ -622,10 +622,10 @@ Result: $V_0 = 10.0 \pm 0.5$ (arbitrary units).
 
 <details>
 <summary>Problem 6</summary>
-A student determines the refractive index $n$ of glass by measuring the critical angle $\theta_c$. Five measurements of $\theta_c$ are: $41.5°$, $42.0°$, $41.8°$, $42.2°$, $41.6°$. Using $n = 1/\sin\theta_c$, calculate $n$ and its uncertainty.
+A student determines the refractive index $n$ of glass by measuring the critical angle $\theta_c$. Five measurements of $\theta_c$ are: $41.5^\circ$, $42.0^\circ$, $41.8^\circ$, $42.2^\circ$, $41.6^\circ$. Using $n = 1/\sin\theta_c$, calculate $n$ and its uncertainty.
 
-**Answer.** Mean $\theta_c = (41.5 + 42.0 + 41.8 + 42.2 + 41.6)/5 = 41.82°$. Range
-$= 42.2 - 41.5 = 0.7°$. $\Delta\theta_c = 0.35°$.
+**Answer.** Mean $\theta_c = (41.5 + 42.0 + 41.8 + 42.2 + 41.6)/5 = 41.82^\circ$. Range
+$= 42.2 - 41.5 = 0.7^\circ$. $\Delta\theta_c = 0.35^\circ$.
 
 $n = 1/\sin(41.82°) = 1/0.6667 = 1.500$.
 

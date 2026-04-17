@@ -84,7 +84,7 @@ $$
 where $n$ is the refractive index.
 
 **Example (OL):** Light travels from air ($n = 1$) into glass ($n = 1.5$) at an angle of incidence
-of $30°$. Find the angle of refraction.
+of $30^\circ$. Find the angle of refraction.
 
 $$
 1 \times \sin 30° = 1.5 \times \sin\theta_2
@@ -125,7 +125,7 @@ telecommunications (high bandwidth, low signal loss over long distances) and med
 ### Why Total Internal Reflection Only Occurs Denser to Less Dense
 
 The refracted ray bends away from the normal as the wave speeds up. At the critical angle, the
-refracted ray travels along the boundary ($\theta_2 = 90°$). Beyond this angle, there is nowhere for
+refracted ray travels along the boundary ($\theta_2 = 90^\circ$). Beyond this angle, there is nowhere for
 the refracted ray to go, so all the light is reflected. When going from less dense to more dense,
 the refracted ray always bends toward the normal and there is no critical angle.
 
@@ -231,11 +231,11 @@ d = \frac{1}{500 \times 10^3} = 2 \times 10^{-6}\text{ m}
 $$
 
 First order ($n = 1$):
-$\sin\theta = \frac{580 \times 10^{-9}}{2 \times 10^{-6}} = 0.29 \implies \theta \approx 16.9°$.
+$\sin\theta = \frac{580 \times 10^{-9}}{2 \times 10^{-6}} = 0.29 \implies \theta \approx 16.9^\circ$.
 
-Second order ($n = 2$): $\sin\theta = 0.58 \implies \theta \approx 35.4°$.
+Second order ($n = 2$): $\sin\theta = 0.58 \implies \theta \approx 35.4^\circ$.
 
-Third order: $\sin\theta = 0.87 \implies \theta \approx 60.5°$.
+Third order: $\sin\theta = 0.87 \implies \theta \approx 60.5^\circ$.
 
 Fourth order: $\sin\theta = 1.16$ -- not possible. So only 3 orders are visible on each side.
 
@@ -358,7 +358,7 @@ $$
 ### Ordinary Level
 
 1. A wave has wavelength 0.5 m and frequency 680 Hz. Find the speed.
-2. Light travels from air into water ($n = 1.33$) at $40°$. Find the angle of refraction.
+2. Light travels from air into water ($n = 1.33$) at $40^\circ$. Find the angle of refraction.
 3. State the laws of reflection.
 4. Describe how sound differs from light in terms of wave type and propagation.
 
@@ -376,7 +376,7 @@ $$
 5. A single slit of width $0.1\text{ mm}$ is illuminated with light of wavelength $500\text{ nm}$.
    Calculate the angular width of the central maximum and the angles of the first two minima.
 
-6. The first-order maximum for a diffraction grating occurs at $17.5°$ for light of wavelength
+6. The first-order maximum for a diffraction grating occurs at $17.5^\circ$ for light of wavelength
    $590\text{ nm}$. Calculate the number of lines per mm on the grating.
 
 7. A sound of intensity $5.0 \times 10^{-6}\text{ W/m}^2$ has an intensity level of $67\text{ dB}$.
@@ -553,7 +553,7 @@ Frequency shift: $\Delta f = 29.00 - 24.15 = 4.85 \text{ GHz}$
 ### Example 21: Lateral Displacement Through a Glass Block
 
 A ray of light enters a rectangular glass block of refractive index $1.52$ at an angle of incidence
-of $40°$. The block has thickness $5 \text{ cm}$. Calculate the angle of refraction, the lateral
+of $40^\circ$. The block has thickness $5 \text{ cm}$. Calculate the angle of refraction, the lateral
 displacement of the ray, and the angle of emergence.
 
 **Step 1: Angle of refraction (Snell's law at entry)**
@@ -564,7 +564,7 @@ $$1 \times \sin 40° = 1.52 \times \sin\theta_2$$
 
 $$\sin\theta_2 = \frac{0.6428}{1.52} = 0.4229$$
 
-$$\theta_2 = 25.03°$$
+$$\theta_2 = 25.03^\circ$$
 
 **Step 2: Lateral displacement**
 
@@ -586,7 +586,7 @@ $$1.52 \times \sin 25.03° = 1 \times \sin\theta_e$$
 
 $$\sin\theta_e = 1.52 \times 0.4229 = 0.6428$$
 
-$$\theta_e = 40°$$
+$$\theta_e = 40^\circ$$
 
 The emergent ray is parallel to the incident ray but displaced sideways by $1.43 \text{ cm}$.
 
@@ -622,8 +622,8 @@ speed. This asymmetry is a key feature of the classical Doppler effect.
 
 ### Example 23: Refraction Through a Prism
 
-A prism has an apex angle of $60°$ and refractive index $1.50$. Light enters one face at an angle of
-$45°$. Calculate the angle of deviation.
+A prism has an apex angle of $60^\circ$ and refractive index $1.50$. Light enters one face at an angle of
+$45^\circ$. Calculate the angle of deviation.
 
 **Step 1: Refraction at the first face**
 
@@ -631,19 +631,19 @@ $$\sin 45° = 1.50 \times \sin r_1$$
 
 $$\sin r_1 = \frac{0.7071}{1.50} = 0.4714$$
 
-$$r_1 = 28.13°$$
+$$r_1 = 28.13^\circ$$
 
 **Step 2: Angle of incidence at the second face**
 
 For a prism with apex angle $A$:
 
-$$r_1 + r_2 = A = 60°$$
+$$r_1 + r_2 = A = 60^\circ$$
 
-$$r_2 = 60° - 28.13° = 31.87°$$
+$$r_2 = 60° - 28.13° = 31.87^\circ$$
 
 **Step 3: Check for total internal reflection**
 
-Critical angle: $\sin\theta_c = \frac{1}{n} = \frac{1}{1.50} = 0.6667 \implies \theta_c = 41.8°$
+Critical angle: $\sin\theta_c = \frac{1}{n} = \frac{1}{1.50} = 0.6667 \implies \theta_c = 41.8^\circ$
 
 Since $r_2 = 31.87° \lt \theta_c$, the light exits the second face.
 
@@ -653,13 +653,13 @@ $$1.50 \times \sin 31.87° = 1 \times \sin e$$
 
 $$\sin e = 1.50 \times 0.5284 = 0.7926$$
 
-$$e = 52.48°$$
+$$e = 52.48^\circ$$
 
 **Step 5: Angle of deviation**
 
-$$D = (i - r_1) + (e - r_2) = (45° - 28.13°) + (52.48° - 31.87°) = 16.87° + 20.61° = 37.48°$$
+$$D = (i - r_1) + (e - r_2) = (45° - 28.13°) + (52.48° - 31.87°) = 16.87° + 20.61° = 37.48^\circ$$
 
-Or using the formula: $D = i + e - A = 45° + 52.48° - 60° = 37.48°$.
+Or using the formula: $D = i + e - A = 45° + 52.48° - 60° = 37.48^\circ$.
 
 ## Common Pitfalls Extended
 

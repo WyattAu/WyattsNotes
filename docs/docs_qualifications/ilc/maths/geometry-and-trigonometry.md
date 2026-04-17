@@ -73,8 +73,8 @@ where $m$ is the slope and $c$ is the $y$-intercept.
 - Perpendicular lines: $m_1 \cdot m_2 = -1$.
 
 **Proof of the perpendicular condition.** If two lines with slopes $m_1$ and $m_2$ are
-perpendicular, then the angle between them is $90°$. Using the tangent addition formula:
-$\tan(\alpha + \beta) = \frac{m_1 + m_2}{1 - m_1 m_2}$. Setting $\alpha + \beta = 90°$: $\tan 90°$
+perpendicular, then the angle between them is $90^\circ$. Using the tangent addition formula:
+$\tan(\alpha + \beta) = \frac{m_1 + m_2}{1 - m_1 m_2}$. Setting $\alpha + \beta = 90^\circ$: $\tan 90^\circ$
 is undefined, so $1 - m_1 m_2 = 0$, giving $m_1 m_2 = -1$.
 
 **Example (OL):** Find the equation of the line through $(1, 3)$ perpendicular to $y = 2x + 1$.
@@ -294,7 +294,7 @@ $$
 \tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}
 $$
 
-**Example (HL):** Find the exact value of $\sin 75°$.
+**Example (HL):** Find the exact value of $\sin 75^\circ$.
 
 $$
 \sin 75° = \sin(45° + 30°) = \sin 45°\cos 30° + \cos 45°\sin 30°
@@ -304,7 +304,7 @@ $$
 = \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4}
 $$
 
-**Example (HL):** Find the exact value of $\tan 15°$.
+**Example (HL):** Find the exact value of $\tan 15^\circ$.
 
 $$
 \tan 15° = \tan(45° - 30°) = \frac{1 - \frac{1}{\sqrt{3}}}{1 + \frac{1}{\sqrt{3}}} = \frac{\sqrt{3} - 1}{\sqrt{3} + 1} = \frac{(\sqrt{3} - 1)^2}{3 - 1} = \frac{4 - 2\sqrt{3}}{2} = 2 - \sqrt{3}
@@ -392,7 +392,7 @@ $$
 \cos A - \cos B = -2\sin\frac{A+B}{2}\sin\frac{A-B}{2}
 $$
 
-**Example (HL):** Evaluate $\sin 75° - \sin 15°$.
+**Example (HL):** Evaluate $\sin 75° - \sin 15^\circ$.
 
 $$
 \sin 75° - \sin 15° = 2\cos\frac{90°}{2}\sin\frac{60°}{2} = 2\cos 45°\sin 30° = 2 \cdot \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{2}}{2}
@@ -471,15 +471,15 @@ Use when you know: two sides and a non-included angle, or two angles and one sid
 or none. If $a > b$ and $A$ is acute, there is exactly one solution. If $a < b$ and $A$ is acute,
 there may be two solutions (the "ambiguous case").
 
-**Example (HL) -- Ambiguous case:** In $\triangle ABC$, $a = 8$, $b = 10$, $A = 40°$. Find all
+**Example (HL) -- Ambiguous case:** In $\triangle ABC$, $a = 8$, $b = 10$, $A = 40^\circ$. Find all
 possible values of $B$.
 
 By the sine rule:
 $\sin B = \frac{b \sin A}{a} = \frac{10 \sin 40°}{8} = \frac{10 \times 0.6428}{8} = 0.8035$.
 
-$B = \arcsin(0.8035) \approx 53.5°$ or $B \approx 180° - 53.5° = 126.5°$.
+$B = \arcsin(0.8035) \approx 53.5^\circ$ or $B \approx 180° - 53.5° = 126.5^\circ$.
 
-Check: $A + B = 40° + 126.5° = 166.5° < 180°$, so both solutions are valid.
+Check: $A + B = 40° + 126.5° = 166.5° < 180^\circ$, so both solutions are valid.
 
 ### The Cosine Rule (OL/HL)
 
@@ -502,7 +502,7 @@ $$
 **Proof.** Drop altitude $h$ from $B$ to side $b$. Then $h = a\sin C$, so
 $A = \frac{1}{2} \times b \times h = \frac{1}{2}ab\sin C$.
 
-**Example (HL):** In $\triangle ABC$, $a = 8$, $b = 6$, and $C = 50°$. Find the area.
+**Example (HL):** In $\triangle ABC$, $a = 8$, $b = 6$, and $C = 50^\circ$. Find the area.
 
 $$
 A = \frac{1}{2}(8)(6)\sin 50° = 24 \times 0.766 = 18.39 \text{ square units}
@@ -523,7 +523,7 @@ $$
 3\sin\theta - 4\cos\theta = 5\sin(\theta + \alpha)
 $$
 
-where $\tan\alpha = \frac{-4}{3}$, so $\alpha = \arctan(-4/3) \approx -53.1°$.
+where $\tan\alpha = \frac{-4}{3}$, so $\alpha = \arctan(-4/3) \approx -53.1^\circ$.
 
 **Application -- finding maximum value:** The maximum of $R\sin(\theta + \alpha)$ is $R$ and the
 minimum is $-R$. So the maximum of $3\sin\theta - 4\cos\theta$ is $5$ and the minimum is $-5$.
@@ -625,7 +625,7 @@ $\overrightarrow{AC} = \mathbf{c} - \mathbf{a}$.
 
 ### Theorem: Angles in a Triangle
 
-The sum of the interior angles of a triangle is $180°$.
+The sum of the interior angles of a triangle is $180^\circ$.
 
 **Proof:** Let $\triangle ABC$ have vertices $A$, $B$, $C$. Draw a line through $A$ parallel to
 $BC$. Then $\angle B = \angle BAX$ (alternate angles) and $\angle C = \angle CAY$ (alternate
@@ -670,7 +670,7 @@ OAC + 2\angle OCB = 2\angle ACB$.
 The angle in a semicircle is a right angle.
 
 **Proof.** If $AB$ is the diameter and $C$ is on the circumference, then the angle at the centre
-$AOB = 180°$. By the angle-at-centre theorem, the angle at the circumference $ACB = 90°$.
+$AOB = 180^\circ$. By the angle-at-centre theorem, the angle at the circumference $ACB = 90^\circ$.
 
 ### Theorem: Tangent-Radius Property
 
@@ -708,10 +708,10 @@ other point, contradicting that it is a tangent. Hence the tangent is perpendicu
 
 1. Find the equation of the line through $(2, -1)$ and $(4, 5)$.
 2. Find the centre and radius of $x^2 + y^2 + 6x - 2y + 6 = 0$.
-3. Solve $2\sin\theta = 1$ for $0 \leq \theta \leq 360°$.
-4. In $\triangle ABC$, $a = 10$, $b = 7$, $C = 45°$. Find $c$ using the cosine rule.
+3. Solve $2\sin\theta = 1$ for $0 \leq \theta \leq 360^\circ$.
+4. In $\triangle ABC$, $a = 10$, $b = 7$, $C = 45^\circ$. Find $c$ using the cosine rule.
 5. Prove that $\sin^2\theta + \cos^2\theta = 1$.
-6. Find the area of $\triangle ABC$ where $a = 8$, $b = 5$, and $C = 60°$.
+6. Find the area of $\triangle ABC$ where $a = 8$, $b = 5$, and $C = 60^\circ$.
 7. Find the midpoint and length of the segment joining $(-2, 3)$ and $(4, -1)$.
 
 ### Higher Level
@@ -727,8 +727,8 @@ other point, contradicting that it is a tangent. Hence the tangent is perpendicu
 7. Prove that $\sin(A+B)\sin(A-B) = \sin^2 A - \sin^2 B$.
 8. Find the equation of the tangent to the circle $x^2 + y^2 - 4x + 6y + 9 = 0$ at the point
    $(1, -1)$.
-9. Two ships leave a port. Ship A sails on a bearing of $030°$ at 20 km/h. Ship B sails on a bearing
-   of $110°$ at 15 km/h. Find the distance between them after 3 hours.
+9. Two ships leave a port. Ship A sails on a bearing of $030^\circ$ at 20 km/h. Ship B sails on a bearing
+   of $110^\circ$ at 15 km/h. Find the distance between them after 3 hours.
 10. Prove that the angle at the centre of a circle is twice the angle at the circumference.
 11. Express $4\sin\theta + 3\cos\theta$ in the form $R\sin(\theta + \alpha)$ and hence find its
     maximum value.

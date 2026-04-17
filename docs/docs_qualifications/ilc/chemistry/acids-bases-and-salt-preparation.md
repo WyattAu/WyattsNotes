@@ -88,7 +88,7 @@ $$
 \text{pH} = -\log_{10}[\text{H}_3\text{O}^+]
 $$
 
-At $25°$C: $[\text{H}_3\text{O}^+][\text{OH}^-] = 10^{-14}$.
+At $25^\circ\mathrm{C}$: $[\text{H}_3\text{O}^+][\text{OH}^-] = 10^{-14}$.
 
 | pH  | [H3O+]              | Description     |
 | --- | ------------------- | --------------- |
@@ -129,7 +129,7 @@ $$
 
 The larger the $K_a$, the stronger the acid.
 
-**Relationship:** $\text{pH} + \text{pOH} = 14$ at $25°$C.
+**Relationship:** $\text{pH} + \text{pOH} = 14$ at $25^\circ\mathrm{C}$.
 
 ## pH Calculations (HL)
 

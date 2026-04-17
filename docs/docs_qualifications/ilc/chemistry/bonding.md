@@ -124,7 +124,7 @@ In molecules with multiple polar bonds, the overall polarity depends on the mole
 
 $\text{CO}_2$ is linear ($\text{O}=\text{C}=\text{O}$). The two C=O bond dipoles are equal in
 magnitude and opposite in direction, so they cancel. $\text{SO}_2$ is bent (V-shaped) with a bond
-angle of approximately $119°$. The two S=O bond dipoles do not cancel, leaving a net dipole moment.
+angle of approximately $119^\circ$. The two S=O bond dipoles do not cancel, leaving a net dipole moment.
 
 ## VSEPR Theory (OL/HL)
 
@@ -133,11 +133,11 @@ pair repulsion.
 
 | Electron pairs | Shape                | Bond angle  |
 | -------------- | -------------------- | ----------- |
-| 2              | Linear               | $180°$      |
-| 3              | Trigonal planar      | $120°$      |
-| 4              | Tetrahedral          | $109.5°$    |
-| 5              | Trigonal bipyramidal | $120°, 90°$ |
-| 6              | Octahedral           | $90°$       |
+| 2              | Linear               | $180^\circ$      |
+| 3              | Trigonal planar      | $120^\circ$      |
+| 4              | Tetrahedral          | $109.5^\circ$    |
+| 5              | Trigonal bipyramidal | $120°, 90^\circ$ |
+| 6              | Octahedral           | $90^\circ$       |
 
 ### Effect of Lone Pairs
 
@@ -145,20 +145,20 @@ Lone pairs repel more strongly than bonding pairs, reducing bond angles.
 
 | Bonding pairs | Lone pairs | Shape              | Example              | Bond angle |
 | ------------- | ---------- | ------------------ | -------------------- | ---------- |
-| 3             | 1          | Trigonal pyramidal | $\text{NH}_3$        | $107°$     |
-| 2             | 2          | Bent               | $\text{H}_2\text{O}$ | $104.5°$   |
+| 3             | 1          | Trigonal pyramidal | $\text{NH}_3$        | $107^\circ$     |
+| 2             | 2          | Bent               | $\text{H}_2\text{O}$ | $104.5^\circ$   |
 | 4             | 1          | See-saw            | $\text{SF}_4$        | --         |
 | 3             | 2          | T-shaped           | $\text{ClF}_3$       | --         |
-| 2             | 3          | Linear             | $\text{XeF}_2$       | $180°$     |
+| 2             | 3          | Linear             | $\text{XeF}_2$       | $180^\circ$     |
 
 **Worked Example 3 (OL):** Use VSEPR theory to predict the shape of $\text{BF}_3$ and
 $\text{H}_2\text{O}$.
 
 $\text{BF}_3$: Boron has 3 bonding pairs and 0 lone pairs. Electron geometry: trigonal planar.
-Molecular shape: trigonal planar. Bond angle: $120°$.
+Molecular shape: trigonal planar. Bond angle: $120^\circ$.
 
 $\text{H}_2\text{O}$: Oxygen has 2 bonding pairs and 2 lone pairs. Electron geometry: tetrahedral.
-Molecular shape: bent. Bond angle: $104.5°$ (reduced from $109.5°$ due to lone pair repulsion).
+Molecular shape: bent. Bond angle: $104.5^\circ$ (reduced from $109.5^\circ$ due to lone pair repulsion).
 
 **Worked Example 4 (HL):** Describe the bonding in $\text{SF}_4$ using VSEPR theory. Include the
 hybridisation of the central atom.
@@ -171,15 +171,15 @@ occupies an equatorial position. Molecular shape: see-saw. Hybridisation: $sp^3d
 
 ### sp Hybridisation
 
-Two hybrid orbitals, linear geometry ($180°$). Example: $\text{BeCl}_2$, $\text{C}_2\text{H}_2$.
+Two hybrid orbitals, linear geometry ($180^\circ$). Example: $\text{BeCl}_2$, $\text{C}_2\text{H}_2$.
 
 ### sp2 Hybridisation
 
-Three hybrid orbitals, trigonal planar ($120°$). Example: $\text{BF}_3$, $\text{C}_2\text{H}_4$.
+Three hybrid orbitals, trigonal planar ($120^\circ$). Example: $\text{BF}_3$, $\text{C}_2\text{H}_4$.
 
 ### sp3 Hybridisation
 
-Four hybrid orbitals, tetrahedral ($109.5°$). Example: $\text{CH}_4$, $\text{NH}_3$,
+Four hybrid orbitals, tetrahedral ($109.5^\circ$). Example: $\text{CH}_4$, $\text{NH}_3$,
 $\text{H}_2\text{O}$.
 
 ### sp3d Hybridisation
@@ -202,7 +202,7 @@ and pi bonds and hybridisation.
 Each carbon in ethyne is $sp$ hybridised. The two $sp$ orbitals form two sigma bonds (one C--H and
 one C--C). Each carbon has two remaining unhybridised $p$ orbitals ($p_y$ and $p_z$). These overlap
 sideways to form two pi bonds perpendicular to each other. The C≡C triple bond consists of one sigma
-and two pi bonds. The molecule is linear ($180°$).
+and two pi bonds. The molecule is linear ($180^\circ$).
 
 ## Intermolecular Forces (OL/HL)
 
@@ -235,8 +235,8 @@ A special, strong dipole-dipole force between:
 - Ice is less dense than liquid water (open lattice structure).
 - DNA base pairing.
 
-**Example (OL):** Explain why $\text{H}_2\text{O}$ boils at $100°$C but $\text{H}_2\text{S}$ boils
-at $-60°$C despite having a similar molecular mass.
+**Example (OL):** Explain why $\text{H}_2\text{O}$ boils at $100^\circ\mathrm{C}$ but $\text{H}_2\text{S}$ boils
+at $-60^\circ\mathrm{C}$ despite having a similar molecular mass.
 
 Water forms hydrogen bonds (O is highly electronegative), which require significant energy to
 overcome. $\text{H}_2\text{S}$ cannot form hydrogen bonds (S is not electronegative enough), so only
@@ -555,8 +555,8 @@ Some molecules have an odd number of valence electrons, making the central elect
 **Example:** $\text{NO}_2$ has 17 valence electrons. Nitrogen has 5 valence electrons, each oxygen
 contributes 6. Total: $5 + 2(6) = 17$. The unpaired electron counts as a "half" electron domain.
 
-The molecule is bent (approximately $134°$) with bond angle between that of $\text{BF}_3$ ($120°$)
-and $\text{H}_2\text{O}$ ($104.5°$).
+The molecule is bent (approximately $134^\circ$) with bond angle between that of $\text{BF}_3$ ($120^\circ$)
+and $\text{H}_2\text{O}$ ($104.5^\circ$).
 
 ### Expanded Octets
 
@@ -564,10 +564,10 @@ Elements in period 3 and below can have more than 8 electrons in their valence s
 octet) by using $d$ orbitals.
 
 **Example:** $\text{SF}_6$ has sulfur with 12 electrons around it (6 bonding pairs). Electron
-geometry: octahedral ($sp^3d^2$). Bond angle: $90°$.
+geometry: octahedral ($sp^3d^2$). Bond angle: $90^\circ$.
 
 **Example:** $\text{PCl}_5$ has phosphorus with 10 electrons (5 bonding pairs). Electron geometry:
-trigonal bipyramidal ($sp^3d$). Bond angles: $90°$ and $120°$.
+trigonal bipyramidal ($sp^3d$). Bond angles: $90^\circ$ and $120^\circ$.
 
 ### Determining Hybridisation
 

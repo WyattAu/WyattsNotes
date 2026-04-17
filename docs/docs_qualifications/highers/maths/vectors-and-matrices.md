@@ -294,7 +294,7 @@ Solution: $x = -3$, $y = 4$.
 The determinant of a transformation matrix gives the area scale factor. A negative determinant
 indicates the transformation involves a reflection.
 
-**Example:** Rotate the point $(3, 2)$ by $90°$ anticlockwise about the origin.
+**Example:** Rotate the point $(3, 2)$ by $90^\circ$ anticlockwise about the origin.
 
 $$
 \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} -2 \\ 3 \end{pmatrix}

@@ -491,7 +491,7 @@ $|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$, $|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{1
 
 $\cos\theta = \dfrac{-3}{\sqrt{6}\sqrt{14}} = \dfrac{-3}{\sqrt{84}} = \dfrac{-3}{2\sqrt{21}} = \dfrac{-\sqrt{21}}{14}$.
 
-$\theta = \arccos\!\left(\dfrac{-\sqrt{21}}{14}\right) \approx 109.1°$.
+$\theta = \arccos\!\left(\dfrac{-\sqrt{21}}{14}\right) \approx 109.1^\circ$.
 
 **If you get this wrong, revise:** [The Scalar (Dot) Product](#4-the-scalar-dot-product) —
 Section 4.
@@ -653,7 +653,7 @@ Find the angle between the line $\mathbf{r} = \begin{pmatrix}1\\2\\-1\end{pmatri
 <summary>Solution 11</summary>
 The normal to the plane is $\mathbf{n} = \begin{pmatrix}2\\-1\\1\end{pmatrix}$, and the direction of the line is $\mathbf{d} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.
 
-The angle between the line and the plane equals $90°$ minus the angle between $\mathbf{d}$ and
+The angle between the line and the plane equals $90^\circ$ minus the angle between $\mathbf{d}$ and
 $\mathbf{n}$.
 
 $\cos\phi = \dfrac{\mathbf{d}\cdot\mathbf{n}}{|\mathbf{d}||\mathbf{n}|} = \dfrac{6+1+2}{\sqrt{14}\sqrt{6}} = \dfrac{9}{2\sqrt{21}}$.
@@ -682,8 +682,8 @@ Check:
 $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \dfrac{1}{9} + \dfrac{4}{9} + \dfrac{4}{9} = \dfrac{9}{9} = 1$.
 ✓
 
-The angles are $\alpha = \arccos(1/3) \approx 70.5°$, $\beta = \arccos(-2/3) \approx 131.8°$,
-$\gamma = \arccos(2/3) \approx 48.2°$.
+The angles are $\alpha = \arccos(1/3) \approx 70.5^\circ$, $\beta = \arccos(-2/3) \approx 131.8^\circ$,
+$\gamma = \arccos(2/3) \approx 48.2^\circ$.
 
 **If you get this wrong, revise:** [Direction Cosines](#23-direction-cosines) — Section 2.3.
 

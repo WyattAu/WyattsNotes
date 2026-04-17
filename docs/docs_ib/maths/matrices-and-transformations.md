@@ -380,16 +380,16 @@ Key properties of rotation matrices:
 
 | Angle  | Matrix                                                                                                              |
 | :----: | :------------------------------------------------------------------------------------------------------------------ |
-| $90°$  | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$                                                                     |
-| $180°$ | $\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}$                                                                    |
-| $270°$ | $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$                                                                     |
-| $60°$  | $\begin{pmatrix} \frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}$               |
-| $45°$  | $\begin{pmatrix} \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{pmatrix}$ |
+| $90^\circ$  | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$                                                                     |
+| $180^\circ$ | $\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}$                                                                    |
+| $270^\circ$ | $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$                                                                     |
+| $60^\circ$  | $\begin{pmatrix} \frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}$               |
+| $45^\circ$  | $\begin{pmatrix} \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{pmatrix}$ |
 
 ### Enlargements (Dilations)
 
 An **enlargement** with scale factor $k$ about the origin scales all distances by $|k|$ and, if
-$k \lt 0$, also rotates by $180°$.
+$k \lt 0$, also rotates by $180^\circ$.
 
 $$
 E_k = \begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}
@@ -397,7 +397,7 @@ $$
 
 - $\det(E_k) = k^2$, so the area scale factor is $k^2$.
 - For $k = 1$, this is the identity transformation.
-- For $k = -1$, this is equivalent to a rotation of $180°$ about the origin.
+- For $k = -1$, this is equivalent to a rotation of $180^\circ$ about the origin.
 
 **Stretches.** A stretch parallel to the $x$-axis with scale factor $k$:
 
@@ -439,7 +439,7 @@ $$
 \mathbf{v}' = B(A\mathbf{v}) = (BA)\mathbf{v}
 $$
 
-**Example.** A rotation of $90°$ anticlockwise followed by a reflection in the $x$-axis:
+**Example.** A rotation of $90^\circ$ anticlockwise followed by a reflection in the $x$-axis:
 
 $$
 \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}

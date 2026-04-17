@@ -219,7 +219,7 @@ quadrant.
 - **Addition:** vector addition (parallelogram rule)
 - **Conjugation ($\bar{z}$):** reflection in the real axis
 - **Negation ($-z$):** reflection in the origin
-- **Multiplication by $i$:** rotation $90°$ anticlockwise
+- **Multiplication by $i$:** rotation $90^\circ$ anticlockwise
 
 ## De Moivre's Theorem
 
@@ -801,7 +801,7 @@ $z_2$ have the same argument.
 ### Calculator Mode Errors
 
 Ensure your calculator is in **radian mode** when working with arguments and complex exponentials.
-Using degree mode by mistake is a very common source of error, since $\pi/3$ radians is $60°$ but
+Using degree mode by mistake is a very common source of error, since $\pi/3$ radians is $60^\circ$ but
 entering $60$ in radian mode gives a completely different value.
 
 ### Argument Normalisation
@@ -901,7 +901,7 @@ $$
 
 Find all complex numbers $z$ satisfying both $|z - 2| = 2$ and $\arg(z) = \pi/4$.
 
-**Solution:** The condition $\arg(z) = \pi/4$ means $z$ lies on the ray from the origin at $45°$, so
+**Solution:** The condition $\arg(z) = \pi/4$ means $z$ lies on the ray from the origin at $45^\circ$, so
 $z = t(1 + i)$ for $t \gt{} 0$.
 
 Substituting into $|z - 2| = 2$:

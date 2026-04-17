@@ -289,7 +289,7 @@ shows that:
   with energy above $E_a$
 
 **Effect of temperature:** A small increase in temperature significantly increases the fraction of
-molecules with energy above $E_a$, because the distribution is exponential. A $10°$C rise typically
+molecules with energy above $E_a$, because the distribution is exponential. A $10^\circ\mathrm{C}$ rise typically
 doubles the rate.
 
 **Effect of a catalyst:** A catalyst provides an alternative reaction pathway with a lower

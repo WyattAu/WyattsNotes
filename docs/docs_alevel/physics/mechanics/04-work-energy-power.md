@@ -334,7 +334,7 @@ m s$^{-1}$.
 
 <details>
 <summary>Problem 6</summary>
-A crate is pushed 8.0 m across a rough floor by a force of $150$ N at $30°$ below the horizontal. If $\mu = 0.25$ and the crate has mass $40$ kg, find: (a) the work done by the applied force, (b) the work done against friction, (c) the final speed (starting from rest).
+A crate is pushed 8.0 m across a rough floor by a force of $150$ N at $30^\circ$ below the horizontal. If $\mu = 0.25$ and the crate has mass $40$ kg, find: (a) the work done by the applied force, (b) the work done against friction, (c) the final speed (starting from rest).
 
 **Answer.** (a)
 $W_F = Fd\cos\theta = 150 \times 8.0 \times \cos 30° = 150 \times 8.0 \times 0.866 = 1039$ J.
@@ -352,7 +352,7 @@ $v = \sqrt{2 \times 104/40} = \sqrt{5.2} = 2.28$ m s$^{-1}$.
 
 <details>
 <summary>Problem 7</summary>
-A car of mass $800$ kg travels at constant speed $20$ m s$^{-1}$ up a hill inclined at $5°$ to the horizontal. The engine has an efficiency of $25\%$. Calculate the rate of fuel energy consumption (in watts).
+A car of mass $800$ kg travels at constant speed $20$ m s$^{-1}$ up a hill inclined at $5^\circ$ to the horizontal. The engine has an efficiency of $25\%$. Calculate the rate of fuel energy consumption (in watts).
 
 **Answer.** Component of weight down the slope: $mg\sin 5° = 800 \times 9.81 \times 0.0872 = 684$ N.
 
@@ -435,7 +435,7 @@ J.
 <details>
 <summary>Problem 12</summary>
 
-A block of mass $3.0$ kg is projected up a rough incline at $30°$ with speed $8.0$ m s$^{-1}$. The
+A block of mass $3.0$ kg is projected up a rough incline at $30^\circ$ with speed $8.0$ m s$^{-1}$. The
 coefficient of friction is $0.20$. Use energy methods to find how far up the incline it travels
 before stopping.
 

@@ -512,13 +512,13 @@ the angle between $F_1$ and $F_2$, then:
 $$\frac{F_1}{\sin\theta_1} = \frac{F_2}{\sin\theta_2} = \frac{F_3}{\sin\theta_3}$$
 
 **Example.** A particle of mass $10\,\text{kg}$ is suspended by two strings. One string makes an
-angle of $30°$ with the vertical and the other makes an angle of $60°$ with the vertical. Find the
+angle of $30^\circ$ with the vertical and the other makes an angle of $60^\circ$ with the vertical. Find the
 tensions.
 
-The three forces are: $T_1$ (at $30°$ from vertical), $T_2$ (at $60°$ from vertical), and weight
+The three forces are: $T_1$ (at $30^\circ$ from vertical), $T_2$ (at $60^\circ$ from vertical), and weight
 $W = 10g$ (vertically downward).
 
-Angles between the forces: the angle between $T_1$ and $T_2$ is $30° + 60° = 90°$.
+Angles between the forces: the angle between $T_1$ and $T_2$ is $30° + 60° = 90^\circ$.
 
 By Lami's theorem:
 
@@ -539,7 +539,7 @@ This is equivalent to Lami's theorem and follows from the sine rule applied to t
 ### 11.5 Worked example -- beam in equilibrium
 
 A uniform beam $AB$ of length $4\,\text{m}$ and mass $20\,\text{kg}$ is hinged at $A$ and supported
-by a wire attached at $B$, making an angle of $30°$ with the beam. A particle of mass
+by a wire attached at $B$, making an angle of $30^\circ$ with the beam. A particle of mass
 $30\,\text{kg}$ hangs from the beam at a point $1.5\,\text{m}$ from $A$. Find the tension in the
 wire and the reaction at the hinge.
 
@@ -586,7 +586,7 @@ $F_{\text{net}} = 30 - 19.6 = 10.4\,\text{N}$. $a = F_{\text{net}}/m = 10.4/5 = 
 
 <details>
 <summary>Problem 2</summary>
-A block of mass $8\,\text{kg}$ rests on a smooth plane inclined at $30°$ to the horizontal. It is held in equilibrium by a force $P$ acting parallel to the plane. Find $P$.
+A block of mass $8\,\text{kg}$ rests on a smooth plane inclined at $30^\circ$ to the horizontal. It is held in equilibrium by a force $P$ acting parallel to the plane. Find $P$.
 </details>
 
 <details>
@@ -631,7 +631,7 @@ Minimum force $= 29.4\,\text{N}$.
 
 <details>
 <summary>Problem 5</summary>
-A $5\,\text{kg}$ block is on a rough plane inclined at $40°$ with $\mu = 0.25$. Is the block in equilibrium? If not, find its acceleration.
+A $5\,\text{kg}$ block is on a rough plane inclined at $40^\circ$ with $\mu = 0.25$. Is the block in equilibrium? If not, find its acceleration.
 </details>
 
 <details>
@@ -664,7 +664,7 @@ $5g - 2a = 5a \implies 5g = 7a \implies a = 5g/7 = 7\,\text{m/s}^2$. $T = 2(7) =
 
 <details>
 <summary>Problem 7</summary>
-A $3\,\text{kg}$ block on a rough horizontal surface ($\mu = 0.5$) is pulled by a force of $25\,\text{N}$ at $30°$ above the horizontal. Find the acceleration.
+A $3\,\text{kg}$ block on a rough horizontal surface ($\mu = 0.5$) is pulled by a force of $25\,\text{N}$ at $30^\circ$ above the horizontal. Find the acceleration.
 </details>
 
 <details>
@@ -710,7 +710,7 @@ $s = \tfrac{1}{2}at^2 \implies 2 = \tfrac{1}{2}(g/2)t^2 \implies t^2 = 8/g \impl
 
 <details>
 <summary>Problem 10</summary>
-A block slides down a rough slope of length $10\,\text{m}$ inclined at $35°$ with $\mu = 0.2$. If it starts from rest, find its speed at the bottom.
+A block slides down a rough slope of length $10\,\text{m}$ inclined at $35^\circ$ with $\mu = 0.2$. If it starts from rest, find its speed at the bottom.
 </details>
 
 <details>
@@ -745,7 +745,7 @@ The critical angle is the angle of friction: $\tan\lambda = \mu$. $\blacksquare$
 
 <details>
 <summary>Problem 12</summary>
-A $4\,\text{kg}$ block on a rough inclined plane ($\mu = 0.3$, angle $= 50°$) is attached to a $2\,\text{kg}$ block hanging freely over a pulley at the top. Find the acceleration.
+A $4\,\text{kg}$ block on a rough inclined plane ($\mu = 0.3$, angle $= 50^\circ$) is attached to a $2\,\text{kg}$ block hanging freely over a pulley at the top. Find the acceleration.
 </details>
 
 <details>
@@ -766,7 +766,7 @@ The $4\,\text{kg}$ block accelerates down the slope.
 
 <details>
 <summary>Problem 13</summary>
-A $6\,\text{kg}$ block is on a rough horizontal surface with $\mu = 0.4$. A force $P$ is applied at an angle of $25°$ below the horizontal. Find the minimum value of $P$ required to move the block.
+A $6\,\text{kg}$ block is on a rough horizontal surface with $\mu = 0.4$. A force $P$ is applied at an angle of $25^\circ$ below the horizontal. Find the minimum value of $P$ required to move the block.
 </details>
 
 <details>
@@ -788,18 +788,18 @@ $P = 31.9\,\text{N}$ (2 d.p.)
 
 <details>
 <summary>Problem 14</summary>
-A particle of mass $5\,\text{kg}$ is suspended by two light inextensible strings. One string makes an angle of $45°$ with the upward vertical and the other makes an angle of $60°$ with the upward vertical on the opposite side. Use Lami's theorem to find the tensions in both strings.
+A particle of mass $5\,\text{kg}$ is suspended by two light inextensible strings. One string makes an angle of $45^\circ$ with the upward vertical and the other makes an angle of $60^\circ$ with the upward vertical on the opposite side. Use Lami's theorem to find the tensions in both strings.
 </details>
 
 <details>
 <summary>Solution 14</summary>
-The three forces are $T_1$ (at $45°$ from vertical), $T_2$ (at $60°$ from vertical), and $W = 5g$ (downward).
+The three forces are $T_1$ (at $45^\circ$ from vertical), $T_2$ (at $60^\circ$ from vertical), and $W = 5g$ (downward).
 
-The angle between $T_1$ and $T_2$ is $45° + 60° = 105°$.
+The angle between $T_1$ and $T_2$ is $45° + 60° = 105^\circ$.
 
-The angle between $T_1$ and $W$ is $180° - 60° = 120°$.
+The angle between $T_1$ and $W$ is $180° - 60° = 120^\circ$.
 
-The angle between $T_2$ and $W$ is $180° - 45° = 135°$.
+The angle between $T_2$ and $W$ is $180° - 45° = 135^\circ$.
 
 By Lami's theorem:
 
@@ -818,7 +818,7 @@ $T_2 = \frac{5g \times 0.8660}{0.9659} = \frac{42.43}{0.9659} \approx 43.9\,\tex
 
 <details>
 <summary>Problem 15</summary>
-A $7\,\text{kg}$ block on a rough inclined plane (angle $= 35°$, $\mu = 0.35$) is pulled up the slope by a force of $80\,\text{N}$ acting parallel to the plane. Find the acceleration of the block.
+A $7\,\text{kg}$ block on a rough inclined plane (angle $= 35^\circ$, $\mu = 0.35$) is pulled up the slope by a force of $80\,\text{N}$ acting parallel to the plane. Find the acceleration of the block.
 </details>
 
 <details>
@@ -870,7 +870,7 @@ $T = 2(9.8 - 0.98) = 2(8.82) = 17.64\,\text{N}$.
 
 <details>
 <summary>Problem 17</summary>
-A uniform beam $AB$ of weight $120\,\text{N}$ and length $6\,\text{m}$ is hinged at $A$ and held horizontally by a cable attached at $B$ making an angle of $40°$ with the horizontal. A load of $80\,\text{N}$ is hung from the beam at a point $2\,\text{m}$ from $A$. Find the tension in the cable and the magnitude and direction of the reaction at the hinge.
+A uniform beam $AB$ of weight $120\,\text{N}$ and length $6\,\text{m}$ is hinged at $A$ and held horizontally by a cable attached at $B$ making an angle of $40^\circ$ with the horizontal. A load of $80\,\text{N}$ is hung from the beam at a point $2\,\text{m}$ from $A$. Find the tension in the cable and the magnitude and direction of the reaction at the hinge.
 </details>
 
 <details>
@@ -892,7 +892,7 @@ $V_A = 200 - 134.8 \times 0.6428 = 200 - 86.7 = 113.3\,\text{N}$.
 Magnitude of hinge reaction:
 $\sqrt{H_A^2 + V_A^2} = \sqrt{103.3^2 + 113.3^2} = \sqrt{10670.9 + 12836.9} = \sqrt{23507.8} \approx 153.3\,\text{N}$.
 
-Angle below horizontal: $\arctan(V_A/H_A) = \arctan(113.3/103.3) \approx 47.6°$.
+Angle below horizontal: $\arctan(V_A/H_A) = \arctan(113.3/103.3) \approx 47.6^\circ$.
 
 **If you get this wrong, revise:** [Beam in Equilibrium](#115-worked-example----beam-in-equilibrium)
 — Section 11.5.
@@ -901,7 +901,7 @@ Angle below horizontal: $\arctan(V_A/H_A) = \arctan(113.3/103.3) \approx 47.6°$
 
 <details>
 <summary>Problem 18</summary>
-A $4\,\text{kg}$ block is placed on a rough inclined plane at angle $30°$ with $\mu = 0.6$. Determine whether the block is in equilibrium. If a horizontal force $P = 50\,\text{N}$ is then applied pushing the block up the slope, find the acceleration.
+A $4\,\text{kg}$ block is placed on a rough inclined plane at angle $30^\circ$ with $\mu = 0.6$. Determine whether the block is in equilibrium. If a horizontal force $P = 50\,\text{N}$ is then applied pushing the block up the slope, find the acceleration.
 </details>
 
 <details>
@@ -962,7 +962,7 @@ contact) and both act on the book.
 
 <details>
 <summary>Problem 20</summary>
-Two particles of masses $5\,\text{kg}$ and $3\,\text{kg}$ are attached to the ends of a light inextensible string. The $5\,\text{kg}$ particle is on a rough plane inclined at $30°$ ($\mu = 0.4$) and the $3\,\text{kg}$ particle hangs vertically over a smooth pulley at the top of the incline. The string is parallel to the slope. Find the acceleration and the tension.
+Two particles of masses $5\,\text{kg}$ and $3\,\text{kg}$ are attached to the ends of a light inextensible string. The $5\,\text{kg}$ particle is on a rough plane inclined at $30^\circ$ ($\mu = 0.4$) and the $3\,\text{kg}$ particle hangs vertically over a smooth pulley at the top of the incline. The string is parallel to the slope. Find the acceleration and the tension.
 </details>
 
 <details>

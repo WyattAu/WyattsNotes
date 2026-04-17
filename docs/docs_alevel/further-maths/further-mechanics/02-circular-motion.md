@@ -162,11 +162,11 @@ the downward vertical:
 
 **Along the string (towards centre):** $T - mg\cos\theta = \dfrac{mv^2}{r}$
 
-**At the top** ($\theta = 180°$): both $T$ and $mg$ act towards centre:
+**At the top** ($\theta = 180^\circ$): both $T$ and $mg$ act towards centre:
 
 $$T + mg = \frac{mv^2}{r}$$
 
-**At the bottom** ($\theta = 0°$): centripetal direction is upward:
+**At the bottom** ($\theta = 0^\circ$): centripetal direction is upward:
 
 $$T - mg = \frac{mv^2}{r}$$
 
@@ -273,7 +273,7 @@ $4.9\cos^2\alpha + 3.75\cos\alpha - 4.9 = 0$.
 
 $\cos\alpha = \dfrac{-3.75 + \sqrt{14.0625 + 96.04}}{9.8} = \dfrac{-3.75 + 10.48}{9.8} \approx 0.687$.
 
-$\alpha \approx 46.6°$. $r = 1.2\sin 46.6° \approx 0.873\,\text{m}$.
+$\alpha \approx 46.6^\circ$. $r = 1.2\sin 46.6° \approx 0.873\,\text{m}$.
 $T = 4.9/0.687 \approx 7.13\,\text{N}$.
 
 **If you get this wrong, revise:** [Conical pendulum](#31-conical-pendulum) — Section 3.1.
@@ -300,7 +300,7 @@ $|\mathbf{a}| = \omega^2 r = \dfrac{v^2}{r}$, directed radially inward. $\blacks
 
 <details>
 <summary>Problem 3</summary>
-A curve of radius $60\,\text{m}$ is banked at $20°$. Find the optimum speed and the normal reaction for a car of mass $1000\,\text{kg}$ at this speed.
+A curve of radius $60\,\text{m}$ is banked at $20^\circ$. Find the optimum speed and the normal reaction for a car of mass $1000\,\text{kg}$ at this speed.
 </details>
 
 <details>
@@ -363,7 +363,7 @@ A particle starts from rest at the top of a smooth sphere of radius $1.5\,\text{
 
 <details>
 <summary>Solution 6</summary>
-The particle leaves when $R = 0$, which occurs at $\theta = \arccos(2/3) \approx 48.2°$ from the top.
+The particle leaves when $R = 0$, which occurs at $\theta = \arccos(2/3) \approx 48.2^\circ$ from the top.
 
 At this point: $\dfrac{1}{2}mv^2 = mgr(1-\cos\theta) = mg(1.5)(1/3) = 0.5mg$.
 
@@ -376,7 +376,7 @@ $v = \sqrt{g} \approx 3.13\,\text{m s}^{-1}$.
 
 <details>
 <summary>Problem 7</summary>
-A car of mass $1200\,\text{kg}$ travels at $18\,\text{m s}^{-1}$ around a banked curve of radius $50\,\text{m}$ banked at $25°$. Determine whether friction acts up or down the slope, and find the friction force.
+A car of mass $1200\,\text{kg}$ travels at $18\,\text{m s}^{-1}$ around a banked curve of radius $50\,\text{m}$ banked at $25^\circ$. Determine whether friction acts up or down the slope, and find the friction force.
 </details>
 
 <details>
@@ -432,7 +432,7 @@ $\omega = \dfrac{2\pi}{T} = \pi\,\text{rad s}^{-1}$.
 From $\omega^2 = \dfrac{g}{L\cos\alpha}$:
 $\pi^2 = \dfrac{9.8}{\cos\alpha} \implies \cos\alpha = \dfrac{9.8}{\pi^2} \approx 0.993$.
 
-$\alpha \approx 6.6°$.
+$\alpha \approx 6.6^\circ$.
 
 $r = L\sin\alpha = 1 \times \sin 6.6° \approx 0.115\,\text{m}$.
 
@@ -558,7 +558,7 @@ angle is too shallow, the car can come to rest without sliding down.
 
 ### 7.2 Worked example: car on a banked curve with friction
 
-**Example.** A curve of radius $80\,\text{m}$ is banked at $30°$ with $\mu = 0.3$. Find the maximum
+**Example.** A curve of radius $80\,\text{m}$ is banked at $30^\circ$ with $\mu = 0.3$. Find the maximum
 and minimum safe speeds for a car on this curve.
 
 $v_{\max}^2 = \dfrac{80 \times 9.8(\sin 30° + 0.3\cos 30°)}{\cos 30° - 0.3\sin 30°} = \dfrac{784(0.5 + 0.2598)}{0.8660 - 0.15} = \dfrac{784 \times 0.7598}{0.7160}$
@@ -612,7 +612,7 @@ Key observations:
 
 - The period depends only on $L$, $\alpha$, and $g$ — it is independent of mass
 - As $\alpha \to 0$, the period approaches $2\pi\sqrt{L/g}$ (simple pendulum for small angles)
-- As $\alpha \to 90°$, the period $\to 0$ (impractical: requires infinite speed)
+- As $\alpha \to 90^\circ$, the period $\to 0$ (impractical: requires infinite speed)
 - A larger angle $\alpha$ means a faster rotation (shorter period)
 
 ---
@@ -622,7 +622,7 @@ Key observations:
 **Example.** A motorcyclist rides around a vertical circular track of radius $8\,\text{m}$. The
 motorcycle and rider have combined mass $200\,\text{kg}$. Find the minimum speed at the lowest point
 to complete the loop, the normal reaction at the top and bottom at this minimum speed, and the speed
-and reaction at a point $90°$ from the bottom.
+and reaction at a point $90^\circ$ from the bottom.
 
 **Minimum speed at the bottom:**
 $v_{\min} = \sqrt{5gr} = \sqrt{5 \times 9.8 \times 8} = \sqrt{392} \approx 19.8\,\text{m s}^{-1}$.
@@ -642,7 +642,7 @@ $R - mg = \dfrac{mv_{\text{bottom}}^2}{r} \implies R = \dfrac{200 \times 392}{8}
 
 Note: $R = 6mg$ at the bottom when $v = \sqrt{5gr}$.
 
-**At $90°$ from the bottom** (measuring from the downward vertical, so $\theta = 90°$):
+**At $90^\circ$ from the bottom** (measuring from the downward vertical, so $\theta = 90^\circ$):
 
 Height above bottom: $r(1 - \cos 90°) = r = 8\,\text{m}$.
 
@@ -725,7 +725,7 @@ $R = \dfrac{0.4 \times 37.24}{0.6} = 24.8\,\text{N}$.
 </details>
 
 <details>
-<summary>Q2. A conical pendulum consists of a mass of $0.5\,\text{kg}$ on a string of length $1.5\,\text{m}$. The string makes an angle of $25°$ with the vertical. Find the tension, the speed of the mass, and the period of rotation.</summary>
+<summary>Q2. A conical pendulum consists of a mass of $0.5\,\text{kg}$ on a string of length $1.5\,\text{m}$. The string makes an angle of $25^\circ$ with the vertical. Find the tension, the speed of the mass, and the period of rotation.</summary>
 
 $T\cos 25° = 0.5 \times 9.8 = 4.9 \implies T = \dfrac{4.9}{\cos 25°} \approx 5.41\,\text{N}$.
 
@@ -741,7 +741,7 @@ $= 2\pi\sqrt{\dfrac{L\cos\alpha}{g}} = 2\pi\sqrt{\dfrac{1.5\cos 25°}{9.8}} = 2\
 </details>
 
 <details>
-<summary>Q3. A racing car travels around a banked circular track of radius $100\,\text{m}$ banked at $40°$. The coefficient of friction between the tyres and the track is $0.4$. Find the maximum speed at which the car can travel without sliding up the track.</summary>
+<summary>Q3. A racing car travels around a banked circular track of radius $100\,\text{m}$ banked at $40^\circ$. The coefficient of friction between the tyres and the track is $0.4$. Find the maximum speed at which the car can travel without sliding up the track.</summary>
 
 $v_{\max}^2 = \dfrac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta} = \dfrac{100 \times 9.8(\sin 40° + 0.4\cos 40°)}{\cos 40° - 0.4\sin 40°}$
 
@@ -786,7 +786,7 @@ $v^2 = 16 + 19.6(1 - \cos\theta) = 35.6 - 19.6\cos\theta$
 
 From (i): $9.8\cos\theta = \dfrac{35.6 - 19.6\cos\theta}{2} = 17.8 - 9.8\cos\theta$
 
-$19.6\cos\theta = 17.8 \implies \cos\theta = \dfrac{17.8}{19.6} = 0.9082 \implies \theta \approx 24.8°$
+$19.6\cos\theta = 17.8 \implies \cos\theta = \dfrac{17.8}{19.6} = 0.9082 \implies \theta \approx 24.8^\circ$
 
 Height below the centre $= r\cos\theta = 2(0.9082) = 1.82\,\text{m}$.
 
@@ -795,12 +795,12 @@ Height above the bottom $= r + r\cos\theta = 2 + 1.82 = 3.82\,\text{m}$.
 </details>
 
 <details>
-<summary>Q6. A car of mass $800\,\text{kg}$ travels at $15\,\text{m s}^{-1}$ around an unbanked horizontal curve of radius $50\,\text{m}$. Find the minimum coefficient of friction required for the car to maintain its circular path. If the curve is banked at $20°$, what coefficient of friction is needed?</summary>
+<summary>Q6. A car of mass $800\,\text{kg}$ travels at $15\,\text{m s}^{-1}$ around an unbanked horizontal curve of radius $50\,\text{m}$. Find the minimum coefficient of friction required for the car to maintain its circular path. If the curve is banked at $20^\circ$, what coefficient of friction is needed?</summary>
 
 **Unbanked:**
 $\dfrac{mv^2}{r} = F = \mu mg \implies \mu = \dfrac{v^2}{rg} = \dfrac{225}{490} \approx 0.459$.
 
-**Banked at $20°$:**
+**Banked at $20^\circ$:**
 $v_{\text{opt}} = \sqrt{50 \times 9.8 \times \tan 20°} = \sqrt{178.3} \approx 13.4\,\text{m s}^{-1}$.
 
 Since $15 > 13.4$, friction acts down the slope. With friction down the slope:

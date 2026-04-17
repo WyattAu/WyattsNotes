@@ -249,7 +249,7 @@ $$R = v_0\cos\theta \cdot \frac{2v_0\sin\theta}{g} = \frac{v_0^2 \cdot 2\sin\the
 
 $$\boxed{R = \frac{v_0^2\sin 2\theta}{g}}$$
 
-**Maximum range** occurs when $\sin 2\theta = 1$, i.e., $\theta = 45°$:
+**Maximum range** occurs when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$:
 
 $$R_{\max} = \frac{v_0^2}{g}$$
 
@@ -399,7 +399,7 @@ $$\mathbf{v}_{\text{ground}} = (3.0\ \text{east}) + (5.0\ \text{north})$$
 
 Speed relative to ground: $v = \sqrt{3^2 + 5^2} = \sqrt{34} = 5.83$ m s$^{-1}$.
 
-Direction: $\theta = \arctan(5/3) = 59.0°$ north of east.
+Direction: $\theta = \arctan(5/3) = 59.0^\circ$ north of east.
 
 ### Crossing a River
 
@@ -461,7 +461,7 @@ A stone is thrown vertically upward with speed $15.0$ m s$^{-1}$. Find: (a) the 
 
 <details>
 <summary>Problem 2</summary>
-A projectile is launched from ground level with speed $25.0$ m s$^{-1}$ at an angle of $35°$ to the horizontal. Calculate the horizontal range and the maximum height.
+A projectile is launched from ground level with speed $25.0$ m s$^{-1}$ at an angle of $35^\circ$ to the horizontal. Calculate the horizontal range and the maximum height.
 
 **Answer.**
 $R = \frac{v_0^2\sin 2\theta}{g} = \frac{625 \times \sin 70°}{9.81} = \frac{625 \times 0.9397}{9.81} = 59.9$
@@ -577,7 +577,7 @@ A golfer hits a ball from the ground with speed $40$ m s$^{-1}$. At what angle s
 **Answer.** $R = \frac{v_0^2\sin 2\theta}{g}$, so
 $\sin 2\theta = \frac{Rg}{v_0^2} = \frac{120 \times 9.81}{1600} = 0.736$.
 
-$2\theta = 47.4°$ or $132.6°$, giving $\theta = 23.7°$ or $66.3°$. Both angles give the same range —
+$2\theta = 47.4^\circ$ or $132.6^\circ$, giving $\theta = 23.7^\circ$ or $66.3^\circ$. Both angles give the same range —
 complementary angles always do (since $\sin 2\theta = \sin(180° - 2\theta)$).
 
 <b>If you get this wrong, revise:</b> [Maximum Range](#maximum-range)
@@ -586,7 +586,7 @@ complementary angles always do (since $\sin 2\theta = \sin(180° - 2\theta)$).
 
 <details>
 <summary>Problem 10</summary>
-On the Moon, $g = 1.62$ m s$^{-2}$. A astronaut throws a rock with speed $12$ m s$^{-1}$ at $60°$ to the horizontal. Compare the maximum height and range to what they would be on Earth.
+On the Moon, $g = 1.62$ m s$^{-2}$. A astronaut throws a rock with speed $12$ m s$^{-1}$ at $60^\circ$ to the horizontal. Compare the maximum height and range to what they would be on Earth.
 
 **Answer.** On the Moon:
 $H = \frac{144 \times \sin^2 60°}{2 \times 1.62} = \frac{144 \times 0.75}{3.24} = 33.3$ m.
@@ -661,7 +661,7 @@ the starting point?
 
 **Answer.** (a) Time = $80/5.0 = 16$ s. Downstream displacement = $2.5 \times 16 = 40$ m.
 
-(b) For zero downstream drift: $\sin\theta = 2.5/5.0 = 0.5$, giving $\theta = 30°$ upstream from the
+(b) For zero downstream drift: $\sin\theta = 2.5/5.0 = 0.5$, giving $\theta = 30^\circ$ upstream from the
 perpendicular.
 
 <b>If you get this wrong, revise:</b> [Crossing a River](#crossing-a-river)
@@ -706,7 +706,7 @@ $v^2 = 28$, $v = 5.29$ m s$^{-1}$.
 <summary>Problem 17</summary>
 
 A ball is thrown from the top of a building of height $45$ m with speed $20$ m s$^{-1}$ at an angle
-of $30°$ above the horizontal. Find: (a) the time of flight, (b) the horizontal distance from the
+of $30^\circ$ above the horizontal. Find: (a) the time of flight, (b) the horizontal distance from the
 base where the ball lands, (c) the speed at impact.
 
 **Answer.** (a) Vertical: $y = 45 + 10t - 4.905t^2 = 0$.

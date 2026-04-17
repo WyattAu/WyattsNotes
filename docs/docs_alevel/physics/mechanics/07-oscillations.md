@@ -134,7 +134,7 @@ Newton's second law: $ma = -mg\sin\theta$, where $a = L\ddot{\theta}$:
 
 $$mL\ddot{\theta} = -mg\sin\theta \implies \ddot{\theta} = -\frac{g}{L}\sin\theta$$
 
-**Small angle approximation:** For $\theta \lesssim 10°$, $\sin\theta \approx \theta$ (in radians). Then:
+**Small angle approximation:** For $\theta \lesssim 10^\circ$, $\sin\theta \approx \theta$ (in radians). Then:
 
 $$\ddot{\theta} = -\frac{g}{L}\theta$$
 
@@ -157,8 +157,8 @@ In SHM, displacement, velocity, and acceleration are out of phase:
 
 **Key phase differences:**
 
-- Velocity leads displacement by $90°$ ($\pi/2$)
-- Acceleration leads displacement by $180°$ ($\pi$) — acceleration is always antiphase to displacement
+- Velocity leads displacement by $90^\circ$ ($\pi/2$)
+- Acceleration leads displacement by $180^\circ$ ($\pi$) — acceleration is always antiphase to displacement
 
 ## 7. Damping
 
@@ -272,7 +272,7 @@ Sketch graphs showing how displacement, velocity, and acceleration vary with tim
 **Answer.** All three are sinusoidal curves of the same period.
 
 - Displacement: $x = A\cos(\omega t)$ — starts at $A$, goes to $-A$, returns.
-- Velocity: $v = -A\omega\sin(\omega t)$ — starts at $0$, goes to $-A\omega$, returns. Leads $x$ by $90°$.
+- Velocity: $v = -A\omega\sin(\omega t)$ — starts at $0$, goes to $-A\omega$, returns. Leads $x$ by $90^\circ$.
 - Acceleration: $a = -A\omega^2\cos(\omega t)$ — starts at $-A\omega^2$, goes to $+A\omega^2$, returns. Antiphase to $x$.
 
 <b>If you get this wrong, revise:</b> [Phase Relationships](#6-phase-relationships)
@@ -431,7 +431,7 @@ $$A_{\max} = \frac{F_0}{b\omega_0}$$
 - The peak amplitude occurs at $f_d \approx f_0$, shifting slightly below $f_0$ as damping increases.
 - Light damping produces a sharp, tall peak (high $Q$-factor).
 - Heavy damping produces a broad, low peak.
-- At resonance, the driving force is in phase with velocity ($90°$ ahead of displacement), maximising power transfer: $P = F \cdot v$.
+- At resonance, the driving force is in phase with velocity ($90^\circ$ ahead of displacement), maximising power transfer: $P = F \cdot v$.
 
 ### Applications of Resonance
 
@@ -461,18 +461,18 @@ A **phasor** is a rotating vector whose projection onto a fixed axis gives the i
 Three phasors originate from the same point, all rotating at $\omega$:
 
 - **Displacement phasor** (length $A$): makes angle $\theta = \omega t + \phi$ with the horizontal. Its horizontal projection gives $x = A\cos(\omega t + \phi)$.
-- **Velocity phasor** (length $A\omega$): leads the displacement phasor by $90°$ (perpendicular, in the direction of rotation). Its horizontal projection gives $v = -A\omega\sin(\omega t + \phi)$.
-- **Acceleration phasor** (length $A\omega^2$): leads the displacement phasor by $180°$ (antiparallel). Its horizontal projection gives $a = -A\omega^2\cos(\omega t + \phi)$.
+- **Velocity phasor** (length $A\omega$): leads the displacement phasor by $90^\circ$ (perpendicular, in the direction of rotation). Its horizontal projection gives $v = -A\omega\sin(\omega t + \phi)$.
+- **Acceleration phasor** (length $A\omega^2$): leads the displacement phasor by $180^\circ$ (antiparallel). Its horizontal projection gives $a = -A\omega^2\cos(\omega t + \phi)$.
 
 ### Phase Relationships
 
 | Quantity | Phase relative to $x$ | Relationship |
 |---|---|---|
-| Displacement $x$ | $0°$ | Reference |
-| Velocity $v$ | $+90°$ | $v$ leads $x$ by $\pi/2$ |
-| Acceleration $a$ | $+180°$ | $a$ leads $x$ by $\pi$ (antiphase) |
+| Displacement $x$ | $0^\circ$ | Reference |
+| Velocity $v$ | $+90^\circ$ | $v$ leads $x$ by $\pi/2$ |
+| Acceleration $a$ | $+180^\circ$ | $a$ leads $x$ by $\pi$ (antiphase) |
 
-**Equivalently:** displacement lags velocity by $90°$, and displacement lags acceleration by $180°$.
+**Equivalently:** displacement lags velocity by $90^\circ$, and displacement lags acceleration by $180^\circ$.
 
 **Intuition.** The phasor diagram makes phase relationships visually obvious. When the displacement phasor is horizontal (turning point, maximum $x$), the velocity phasor is vertical ($v = 0$) and the acceleration phasor points left ($a = -\omega^2 A$). When the displacement phasor is vertical (equilibrium, $x = 0$), the velocity phasor is horizontal ($v = \pm A\omega$) and the acceleration phasor is vertical ($a = 0$).
 
@@ -529,7 +529,7 @@ A system has natural frequency 440 Hz and is lightly damped. It is driven at: (a
 
 <details>
 <summary>Problem 14</summary>
-Two SHM oscillations of the same frequency have amplitudes 3.0 cm and 4.0 cm, with a phase difference of $60°$. Find the amplitude of the resultant oscillation using the phasor method.
+Two SHM oscillations of the same frequency have amplitudes 3.0 cm and 4.0 cm, with a phase difference of $60^\circ$. Find the amplitude of the resultant oscillation using the phasor method.
 
 **Answer.** $A_{\text{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta} = \sqrt{9 + 16 + 2(3)(4)\cos 60°} = \sqrt{25 + 12} = \sqrt{37} = 6.08$ cm.
 
@@ -553,7 +553,7 @@ A 200 g mass on a spring ($k = 50$ N m$^{-1}$) oscillates with amplitude 5.0 cm.
 <summary>Problem 16</summary>
 Using a phasor diagram, explain why the velocity of an SHM oscillator is zero at the turning points and maximum at the equilibrium position.
 
-**Answer.** The velocity phasor (length $A\omega$) leads the displacement phasor by $90°$. The horizontal projection of the velocity phasor gives the instantaneous velocity. When the displacement phasor is horizontal (turning points, $x = \pm A$), the velocity phasor is vertical, giving a horizontal projection of zero ($v = 0$). When the displacement phasor is vertical (equilibrium, $x = 0$), the velocity phasor is horizontal, giving a maximum projection of $\pm A\omega$. $\square$
+**Answer.** The velocity phasor (length $A\omega$) leads the displacement phasor by $90^\circ$. The horizontal projection of the velocity phasor gives the instantaneous velocity. When the displacement phasor is horizontal (turning points, $x = \pm A$), the velocity phasor is vertical, giving a horizontal projection of zero ($v = 0$). When the displacement phasor is vertical (equilibrium, $x = 0$), the velocity phasor is horizontal, giving a maximum projection of $\pm A\omega$. $\square$
 
 <b>If you get this wrong, revise:</b> [Phasor Diagrams for SHM](#12-phasor-diagrams-for-shm)
 </details>

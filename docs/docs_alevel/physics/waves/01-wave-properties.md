@@ -159,8 +159,8 @@ $$\boxed{I = I_0 \cos^2\theta}$$
 where $I_0 = \frac{1}{2}\varepsilon_0 c E_0^2$ is the intensity of the polarised light incident on
 the analyser.
 
-**Intuition.** When $\theta = 0$, all light passes through. When $\theta = 90°$, no light passes. At
-$\theta = 45°$, the intensity is halved. This is a direct consequence of the vector nature of the
+**Intuition.** When $\theta = 0$, all light passes through. When $\theta = 90^\circ$, no light passes. At
+$\theta = 45^\circ$, the intensity is halved. This is a direct consequence of the vector nature of the
 electric field.
 
 ### Polarisation by Reflection (Brewster's Angle)
@@ -351,7 +351,7 @@ When given a displacement--position graph:
 1. Identify the positions of the two points: $x_1$ and $x_2$
 2. Measure the wavelength $\lambda$ from the graph (peak to peak)
 3. Calculate $\Delta x = |x_2 - x_1|$
-4. Apply $\Delta\phi = \frac{\Delta x}{\lambda} \times 360°$ (or $\times 2\pi$ rad)
+4. Apply $\Delta\phi = \frac{\Delta x}{\lambda} \times 360^\circ$ (or $\times 2\pi$ rad)
 
 When given a displacement--time graph at a single point, the phase difference between two instants
 $t_1$ and $t_2$ is:
@@ -405,7 +405,7 @@ Calculate the wavelength.
 <details>
 <summary>Problem 3</summary>
 Unpolarised light of intensity $I_0$ passes through two polarising filters. The first filter's axis
-is vertical. The second filter's axis is at $30°$ to the vertical. What is the intensity of the
+is vertical. The second filter's axis is at $30^\circ$ to the vertical. What is the intensity of the
 transmitted light?
 
 **Answer.** After the first filter, the light is vertically polarised with intensity $I_0/2$
@@ -424,7 +424,7 @@ difference in (a) radians and (b) degrees.
 
 **Answer.** (a) $\Delta\phi = \frac{2\pi}{0.60} \times 0.15 = \frac{\pi}{2}$ rad.
 
-(b) $\Delta\phi = \frac{0.15}{0.60} \times 360° = 90°$.
+(b) $\Delta\phi = \frac{0.15}{0.60} \times 360° = 90^\circ$.
 
 <b>If you get this wrong, revise:</b> [Phase and Phase Difference](#6-phase-and-phase-difference)
 </details>
@@ -464,7 +464,7 @@ $r_2 = 6.0$ m.
 
 <details>
 <summary>Problem 8</summary>
-Polarised light of intensity 120 W m$^{-2}$ is incident on an analyser at $60°$ to the polarisation
+Polarised light of intensity 120 W m$^{-2}$ is incident on an analyser at $60^\circ$ to the polarisation
 direction. Calculate the transmitted intensity.
 
 **Answer.** $I = 120 \cos^2 60° = 120 \times 0.25 = 30$ W m$^{-2}$.
@@ -519,15 +519,15 @@ $$d = \frac{\Delta t \cdot v_P \cdot v_S}{v_P - v_S} = \frac{120 \times 6500 \ti
 <details>
 <summary>Problem 12</summary>
 Unpolarised light passes through three polarising filters. The first has a vertical axis, the second
-is at $45°$ to the vertical, and the third is horizontal ($90°$ to the vertical). If the initial
+is at $45^\circ$ to the vertical, and the third is horizontal ($90^\circ$ to the vertical). If the initial
 intensity is $I_0$, what is the final transmitted intensity? Compare this with the case where the
 middle filter is removed.
 
 **Answer.** With all three filters:
 
 - After filter 1 (vertical): $I_1 = I_0/2$, polarised vertically.
-- After filter 2 ($45°$): $I_2 = (I_0/2)\cos^2 45° = (I_0/2)(1/2) = I_0/4$, polarised at $45°$.
-- After filter 3 (horizontal, $45°$ from filter 2's axis):
+- After filter 2 ($45^\circ$): $I_2 = (I_0/2)\cos^2 45° = (I_0/2)(1/2) = I_0/4$, polarised at $45^\circ$.
+- After filter 3 (horizontal, $45^\circ$ from filter 2's axis):
   $I_3 = (I_0/4)\cos^2 45° = (I_0/4)(1/2) = I_0/8$.
 
 Without the middle filter (crossed polarisers): $I = (I_0/2)\cos^2 90° = 0$. No light passes.

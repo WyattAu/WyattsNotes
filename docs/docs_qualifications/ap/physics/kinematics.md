@@ -688,7 +688,7 @@ $$x(t) = 27 + 27(t - 3)$$
 ### Example 16: Relative Motion in Two Dimensions
 
 Airplane A flies north at $250 \text{ m/s}$. Airplane B flies at $200 \text{ m/s}$ on a heading of
-$60°$ east of north. Find the velocity of A relative to B.
+$60^\circ$ east of north. Find the velocity of A relative to B.
 
 **Step 1: Write velocity vectors**
 
@@ -706,7 +706,7 @@ $$|\vec{v}_{AB}| = \sqrt{173.2^2 + 150^2} = \sqrt{29998 + 22500} = \sqrt{52498} 
 
 $$\theta = \arctan\left(\frac{150}{-173.2}\right) = 180° - 40.9° = 139.1° \text{ from east}$$
 
-So the velocity of A relative to B is $229.1 \text{ m/s}$ at $139.1°$ from east (or $50.9°$ west of
+So the velocity of A relative to B is $229.1 \text{ m/s}$ at $139.1^\circ$ from east (or $50.9^\circ$ west of
 north).
 
 ### Example 17: Non-Uniform Acceleration from a Velocity Function
@@ -814,7 +814,7 @@ between two points is not the same as the instantaneous slope.
     car starts $2 \text{ s}$ later with acceleration $3 \text{ m/s}^2$. Calculate (a) when and where
     the police car catches the motorist, and (b) the speeds of both vehicles at that moment.
 
-18. A projectile is launched from a cliff of height $80 \text{ m}$ at $50 \text{ m/s}$ at $40°$
+18. A projectile is launched from a cliff of height $80 \text{ m}$ at $50 \text{ m/s}$ at $40^\circ$
     above the horizontal. Calculate (a) the time of flight, (b) the maximum height above the launch
     point, (c) the horizontal range, and (d) the velocity (magnitude and direction) at impact.
 

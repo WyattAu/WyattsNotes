@@ -277,7 +277,7 @@ _Proof._ For even $f$: the point $(-x, f(-x)) = (-x, f(x))$ is on the graph when
 These two points are reflections of each other across the $y$-axis. $\blacksquare$
 
 For odd $f$: the point $(-x, f(-x)) = (-x, -f(x))$ is on the graph whenever $(x, f(x))$ is. Rotating
-$(x, f(x))$ by $180°$ about the origin gives $(-x, -f(x))$. $\blacksquare$
+$(x, f(x))$ by $180^\circ$ about the origin gives $(-x, -f(x))$. $\blacksquare$
 
 **Algebraic Properties.**
 

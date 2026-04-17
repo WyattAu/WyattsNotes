@@ -266,7 +266,7 @@ more moderate climates than inland regions — water heats and cools slowly comp
 
 ### Worked Example: Specific Heat
 
-**Question:** 200 g of water at $20°$C is heated until its temperature reaches $80°$C. How much
+**Question:** 200 g of water at $20^\circ\mathrm{C}$ is heated until its temperature reaches $80^\circ\mathrm{C}$. How much
 energy is required? ($c_{\text{water}} = 4186$ J kg⁻¹ K⁻¹)
 
 **Solution:**
@@ -311,38 +311,38 @@ breaking or forming intermolecular bonds, not increasing kinetic energy.
 
 ### Worked Example: Heating Curve
 
-**Question:** How much total energy is required to convert 500 g of ice at $-20°$C to steam at
-$120°$C? Use: $c_{\text{ice}} = 2090$ J kg⁻¹ K⁻¹, $c_{\text{water}} = 4186$ J kg⁻¹ K⁻¹,
+**Question:** How much total energy is required to convert 500 g of ice at $-20^\circ\mathrm{C}$ to steam at
+$120^\circ\mathrm{C}$? Use: $c_{\text{ice}} = 2090$ J kg⁻¹ K⁻¹, $c_{\text{water}} = 4186$ J kg⁻¹ K⁻¹,
 $c_{\text{steam}} = 2010$ J kg⁻¹ K⁻¹, $L_f = 3.34 \times 10^5$ J kg⁻¹, $L_v = 2.26 \times 10^6$ J
 kg⁻¹.
 
 **Solution:** Break the process into five stages:
 
-1. Heat ice from $-20°$C to $0°$C:
+1. Heat ice from $-20^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
 
    $$
    Q_1 = mc\Delta T = (0.500)(2090)(20) = 20900 \text{ J}
    $$
 
-2. Melt ice at $0°$C:
+2. Melt ice at $0^\circ\mathrm{C}$:
 
    $$
    Q_2 = mL_f = (0.500)(3.34 \times 10^5) = 167000 \text{ J}
    $$
 
-3. Heat water from $0°$C to $100°$C:
+3. Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
    $$
    Q_3 = mc\Delta T = (0.500)(4186)(100) = 209300 \text{ J}
    $$
 
-4. Vaporise water at $100°$C:
+4. Vaporise water at $100^\circ\mathrm{C}$:
 
    $$
    Q_4 = mL_v = (0.500)(2.26 \times 10^6) = 1130000 \text{ J}
    $$
 
-5. Heat steam from $100°$C to $120°$C:
+5. Heat steam from $100^\circ\mathrm{C}$ to $120^\circ\mathrm{C}$:
    $$
    Q_5 = mc\Delta T = (0.500)(2010)(20) = 20100 \text{ J}
    $$
@@ -659,7 +659,7 @@ The second law explains why certain processes have a preferred direction:
 ## Common Pitfalls
 
 1. **Using Celsius instead of Kelvin.** All gas law calculations require absolute temperature (K). A
-   common mistake is using $T = 20°$C instead of $T = 293$ K.
+   common mistake is using $T = 20^\circ$C instead of $T = 293$ K.
 
 2. **Sign conventions for work.** In the IB convention, $W$ is work done **by** the gas. Positive
    $W$ means the gas expands; negative $W$ means it is compressed. In the first law,
@@ -705,7 +705,7 @@ Pa.
 <details>
 <summary>Question 2</summary>
 
-A 0.50 kg block of copper at $200°$C is dropped into 1.0 kg of water at $20°$C in an insulated
+A 0.50 kg block of copper at $200^\circ\mathrm{C}$ is dropped into 1.0 kg of water at $20^\circ\mathrm{C}$ in an insulated
 container. Assuming no heat loss to the surroundings, calculate the final equilibrium temperature.
 ($c_{\text{copper}} = 385$ J kg$^{-1}$ K$^{-1}$, $c_{\text{water}} = 4186$ J kg$^{-1}$ K$^{-1}$)
 
@@ -717,7 +717,7 @@ container. Assuming no heat loss to the surroundings, calculate the final equili
 By conservation of energy, heat lost by copper = heat gained by water:
 $m_c c_c (T_c - T_f) = m_w c_w (T_f - T_w)$. $(0.50)(385)(200 - T_f) = (1.0)(4186)(T_f - 20)$.
 $192.5(200 - T_f) = 4186(T_f - 20)$. $38500 - 192.5T_f = 4186T_f - 83720$. $122220 = 4378.5T_f$.
-$T_f = 27.9°$C.
+$T_f = 27.9^\circ$C.
 
 </details>
 
@@ -808,7 +808,7 @@ m/s.
 <details>
 <summary>Question 5</summary>
 
-300 g of ice at $-10°$C is placed in 500 g of water at $40°$C in an insulated container. Calculate
+300 g of ice at $-10^\circ\mathrm{C}$ is placed in 500 g of water at $40^\circ\mathrm{C}$ in an insulated container. Calculate
 the final temperature and state of the mixture. ($c_{\text{ice}} = 2090$ J kg$^{-1}$ K$^{-1}$,
 $c_{\text{water}} = 4186$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J kg$^{-1}$)
 
@@ -817,22 +817,22 @@ $c_{\text{water}} = 4186$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J kg$^{
 <details>
 <summary>Answer 5</summary>
 
-First, check if all the ice melts. Maximum heat the water can provide (cooling to $0°$C):
+First, check if all the ice melts. Maximum heat the water can provide (cooling to $0^\circ\mathrm{C}$):
 $Q_{\text{water, max}} = m_w c_w \Delta T = (0.500)(4186)(40) = 83720$ J.
 
-Heat needed to warm ice to $0°$C and melt it: $Q_{\text{ice, warm}} = (0.300)(2090)(10) = 6270$ J.
+Heat needed to warm ice to $0^\circ\mathrm{C}$ and melt it: $Q_{\text{ice, warm}} = (0.300)(2090)(10) = 6270$ J.
 $Q_{\text{ice, melt}} = (0.300)(3.34 \times 10^5) = 100200$ J. Total needed:
 $6270 + 100200 = 106470$ J.
 
-Since $106470 \gt{} 83720$, **not all the ice melts**. The final temperature is $0°$C.
+Since $106470 \gt{} 83720$, **not all the ice melts**. The final temperature is $0^\circ\mathrm{C}$.
 
 Let $m$ be the mass of ice that melts:
 $m_w c_w (40 - 0) = m_{\text{ice}} c_{\text{ice}} (10) + m L_f$.
 $83720 = 6270 + m(3.34 \times 10^5)$.
 $m = \frac{83720 - 6270}{3.34 \times 10^5} = \frac{77450}{334000} = 0.232$ kg $= 232$ g.
 
-Final state: 232 g of melted ice (water at $0°$C) + 68 g of unmelted ice, total water =
-$500 + 232 = 732$ g at $0°$C.
+Final state: 232 g of melted ice (water at $0^\circ\mathrm{C}$) + 68 g of unmelted ice, total water =
+$500 + 232 = 732$ g at $0^\circ\mathrm{C}$.
 
 </details>
 

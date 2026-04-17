@@ -615,7 +615,7 @@ capacitor when connected individually to a $230 \text{ V}$, $50 \text{ Hz}$ AC s
 
 $$I_R = \frac{V}{R} = \frac{230}{100} = 2.3 \text{ A}$$
 
-Phase angle: $0°$ (current and voltage in phase)
+Phase angle: $0^\circ$ (current and voltage in phase)
 
 $$P_R = VI = 230 \times 2.3 = 529 \text{ W}$$
 
@@ -625,7 +625,7 @@ $$X_L = 2\pi f L = 2\pi \times 50 \times 0.5 = 157.1 \Omega$$
 
 $$I_L = \frac{V}{X_L} = \frac{230}{157.1} = 1.464 \text{ A}$$
 
-Phase angle: $90°$ (current lags voltage)
+Phase angle: $90^\circ$ (current lags voltage)
 
 $$P_L = 0 \text{ W}$$ (pure inductor dissipates no power)
 
@@ -635,7 +635,7 @@ $$X_C = \frac{1}{2\pi f C} = \frac{1}{2\pi \times 50 \times 10 \times 10^{-6}} =
 
 $$I_C = \frac{V}{X_C} = \frac{230}{318.3} = 0.723 \text{ A}$$
 
-Phase angle: $-90°$ (current leads voltage)
+Phase angle: $-90^\circ$ (current leads voltage)
 
 $$P_C = 0 \text{ W}$$ (pure capacitor dissipates no power)
 

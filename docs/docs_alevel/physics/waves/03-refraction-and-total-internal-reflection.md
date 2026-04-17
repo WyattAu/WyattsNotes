@@ -56,7 +56,7 @@ Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 **Application: Diamond Cutting.** Diamond has an exceptionally high refractive index ($n = 2.42$)
 and large dispersion. Jewellers cut diamonds with many angled facets so that light entering the top
 of the diamond strikes the internal facets at angles well above the critical angle
-($\theta_c = 24.4°$). The light is trapped inside by repeated TIR and eventually exits through the
+($\theta_c = 24.4^\circ$). The light is trapped inside by repeated TIR and eventually exits through the
 top, directing brightness back towards the viewer. The large dispersion also splits white light into
 a rainbow of colours, creating the characteristic "fire" of a diamond. A well-cut diamond has a
 specific facet geometry (typically 57 facets in a round brilliant cut) optimised so that light
@@ -120,15 +120,15 @@ causing the wavefront to pivot towards the normal.
 
 ### Worked Example: Light through a Glass Slab
 
-A ray of light enters a glass slab ($n = 1.50$) from air at $\theta_1 = 40°$. The slab has parallel
+A ray of light enters a glass slab ($n = 1.50$) from air at $\theta_1 = 40^\circ$. The slab has parallel
 faces.
 
 **Step 1: At the first surface (air to glass).** $1.00 \times \sin 40° = 1.50 \times \sin\theta_2$.
-$\theta_2 = \arcsin(0.643/1.50) = 25.4°$.
+$\theta_2 = \arcsin(0.643/1.50) = 25.4^\circ$.
 
 **Step 2: At the second surface (glass to air).** The ray hits the second surface at
-$\theta_3 = 25.4°$ (equal to $\theta_2$ because the faces are parallel).
-$1.50 \times \sin 25.4° = 1.00 \times \sin\theta_4$. $\theta_4 = 40°$.
+$\theta_3 = 25.4^\circ$ (equal to $\theta_2$ because the faces are parallel).
+$1.50 \times \sin 25.4° = 1.00 \times \sin\theta_4$. $\theta_4 = 40^\circ$.
 
 **Result.** The emergent ray is parallel to the incident ray but laterally displaced. This lateral
 displacement $d$ depends on the thickness $t$ of the slab:
@@ -151,7 +151,7 @@ Total internal reflection (TIR) occurs when:
 
 ### Derivation of the Critical Angle
 
-At the critical angle, the refracted ray travels along the boundary ($\theta_2 = 90°$):
+At the critical angle, the refracted ray travels along the boundary ($\theta_2 = 90^\circ$):
 
 $$n_1 \sin\theta_c = n_2 \sin 90° = n_2$$
 
@@ -177,7 +177,7 @@ incidence.
 <summary>Example: Critical Angle of Glass</summary>
 The refractive index of glass is 1.50. Calculate the critical angle for glass-air boundary.
 
-**Answer.** $\sin\theta_c = 1/1.50 = 0.667$. $\theta_c = \arcsin(0.667) = 41.8°$.
+**Answer.** $\sin\theta_c = 1/1.50 = 0.667$. $\theta_c = \arcsin(0.667) = 41.8^\circ$.
 </details>
 
 ### Real-World Example: Mirages
@@ -315,11 +315,11 @@ physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
 
 <details>
 <summary>Problem 1</summary>
-Light travels from air ($n = 1.00$) into water ($n = 1.33$) at an angle of incidence of $40°$.
+Light travels from air ($n = 1.00$) into water ($n = 1.33$) at an angle of incidence of $40^\circ$.
 Calculate the angle of refraction.
 
 **Answer.** $1.00 \times \sin 40° = 1.33 \times \sin\theta_2$.
-$\sin\theta_2 = \sin 40° / 1.33 = 0.6428 / 1.33 = 0.483$. $\theta_2 = \arcsin(0.483) = 28.9°$.
+$\sin\theta_2 = \sin 40° / 1.33 = 0.6428 / 1.33 = 0.483$. $\theta_2 = \arcsin(0.483) = 28.9^\circ$.
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law)
 </details>
@@ -328,7 +328,7 @@ $\sin\theta_2 = \sin 40° / 1.33 = 0.6428 / 1.33 = 0.483$. $\theta_2 = \arcsin(0
 <summary>Problem 2</summary>
 A glass block has refractive index 1.52. Calculate the critical angle for a glass-air boundary.
 
-**Answer.** $\sin\theta_c = 1/1.52 = 0.658$. $\theta_c = 41.1°$.
+**Answer.** $\sin\theta_c = 1/1.52 = 0.658$. $\theta_c = 41.1^\circ$.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
@@ -336,10 +336,10 @@ A glass block has refractive index 1.52. Calculate the critical angle for a glas
 
 <details>
 <summary>Problem 3</summary>
-Light is incident on a glass-air boundary at $50°$. The refractive index of the glass is 1.50.
+Light is incident on a glass-air boundary at $50^\circ$. The refractive index of the glass is 1.50.
 Determine whether total internal reflection occurs.
 
-**Answer.** $\theta_c = \arcsin(1/1.50) = 41.8°$. Since $50° > 41.8°$, total internal reflection
+**Answer.** $\theta_c = \arcsin(1/1.50) = 41.8^\circ$. Since $50° > 41.8^\circ$, total internal reflection
 occurs.
 
 <b>If you get this wrong, revise:</b>
@@ -351,7 +351,7 @@ occurs.
 A ray of light travels from glass ($n = 1.60$) into water ($n = 1.33$). Calculate the critical
 angle.
 
-**Answer.** $\sin\theta_c = n_2/n_1 = 1.33/1.60 = 0.831$. $\theta_c = \arcsin(0.831) = 56.2°$.
+**Answer.** $\sin\theta_c = n_2/n_1 = 1.33/1.60 = 0.831$. $\theta_c = \arcsin(0.831) = 56.2^\circ$.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
@@ -362,7 +362,7 @@ angle.
 An optical fibre has a core of refractive index 1.50 and cladding of refractive index 1.45.
 Calculate the critical angle at the core-cladding boundary and the numerical aperture.
 
-**Answer.** $\theta_c = \arcsin(1.45/1.50) = \arcsin(0.9667) = 75.2°$.
+**Answer.** $\theta_c = \arcsin(1.45/1.50) = \arcsin(0.9667) = 75.2^\circ$.
 
 $\text{NA} = \sqrt{1.50^2 - 1.45^2} = \sqrt{2.25 - 2.1025} = \sqrt{0.1475} = 0.384$.
 
@@ -374,8 +374,8 @@ $\text{NA} = \sqrt{1.50^2 - 1.45^2} = \sqrt{2.25 - 2.1025} = \sqrt{0.1475} = 0.3
 <summary>Problem 6</summary>
 Explain why a diamond ($n = 2.42$) sparkles more than glass ($n = 1.50$).
 
-**Answer.** The critical angle of diamond is $\theta_c = \arcsin(1/2.42) = 24.4°$, much smaller than
-glass ($41.8°$). Light entering a diamond is much more likely to strike internal surfaces at angles
+**Answer.** The critical angle of diamond is $\theta_c = \arcsin(1/2.42) = 24.4^\circ$, much smaller than
+glass ($41.8^\circ$). Light entering a diamond is much more likely to strike internal surfaces at angles
 exceeding the critical angle, causing repeated TIR. This traps light inside the diamond for longer
 and directs it back towards the observer, creating the sparkle effect. Additionally, diamond has
 high dispersion, separating white light into colours.
@@ -386,17 +386,17 @@ high dispersion, separating white light into colours.
 
 <details>
 <summary>Problem 7</summary>
-A light ray enters a rectangular glass block ($n = 1.50$) at an angle of $30°$ to the normal. The
+A light ray enters a rectangular glass block ($n = 1.50$) at an angle of $30^\circ$ to the normal. The
 block is surrounded by air. The ray strikes the opposite face. Calculate the angle of incidence at
 the opposite face and determine whether TIR occurs.
 
 **Answer.** At entry: $1.00 \times \sin 30° = 1.50 \times \sin\theta_2$.
-$\sin\theta_2 = 0.5/1.50 = 0.333$. $\theta_2 = 19.5°$.
+$\sin\theta_2 = 0.5/1.50 = 0.333$. $\theta_2 = 19.5^\circ$.
 
 For a rectangular block with parallel faces, the angle of incidence at the opposite face equals the
-angle of refraction at the first face: $\theta_{\text{opposite}} = 19.5°$.
+angle of refraction at the first face: $\theta_{\text{opposite}} = 19.5^\circ$.
 
-Since $19.5° < \theta_c = 41.8°$, TIR does not occur. The ray emerges from the block.
+Since $19.5° < \theta_c = 41.8^\circ$, TIR does not occur. The ray emerges from the block.
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law) and
 [Condition for Total Internal Reflection](#condition-for-total-internal-reflection)
@@ -404,18 +404,18 @@ Since $19.5° < \theta_c = 41.8°$, TIR does not occur. The ray emerges from the
 
 <details>
 <summary>Problem 8</summary>
-A prism has an apex angle of $60°$ and refractive index 1.50. A ray enters one face at $45°$ to the
+A prism has an apex angle of $60^\circ$ and refractive index 1.50. A ray enters one face at $45^\circ$ to the
 normal. Trace the ray through the prism, finding the angle of incidence at the second face and the
 angle of emergence.
 
 **Answer.** At the first face: $\sin\theta_2 = \sin 45° / 1.50 = 0.707 / 1.50 = 0.471$.
-$\theta_2 = 28.1°$.
+$\theta_2 = 28.1^\circ$.
 
-The angle of incidence at the second face: $\theta_3 = 60° - 28.1° = 31.9°$.
+The angle of incidence at the second face: $\theta_3 = 60° - 28.1° = 31.9^\circ$.
 
-Since $31.9° < 41.8°$ (the critical angle), the ray emerges. At the second face:
+Since $31.9° < 41.8^\circ$ (the critical angle), the ray emerges. At the second face:
 $1.50 \times \sin 31.9° = 1.00 \times \sin\theta_4$. $\sin\theta_4 = 1.50 \times 0.529 = 0.793$.
-$\theta_4 = 52.5°$.
+$\theta_4 = 52.5^\circ$.
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law) and
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
@@ -429,12 +429,12 @@ incidence (acceptance angle) for light entering the fibre from air. (c) A pulse 
 fibre at the acceptance angle. Calculate the path length per metre of fibre length for this ray, and
 hence the additional distance compared to the axial ray.
 
-**Answer.** (a) $\theta_c = \arcsin(1.52/1.62) = \arcsin(0.938) = 69.6°$.
+**Answer.** (a) $\theta_c = \arcsin(1.52/1.62) = \arcsin(0.938) = 69.6^\circ$.
 
 (b) At the air-core boundary, the refracted angle inside the core is
-$\theta_r = 90° - 69.6° = 20.4°$. Using Snell's law:
+$\theta_r = 90° - 69.6° = 20.4^\circ$. Using Snell's law:
 $\sin\theta_{\max} = 1.62 \times \sin 20.4° = 1.62 \times 0.349 = 0.565$.
-$\theta_{\max} = \arcsin(0.565) = 34.4°$.
+$\theta_{\max} = \arcsin(0.565) = 34.4^\circ$.
 
 (c) For each zigzag segment, the ray travels a distance $\Delta s$ while advancing $\Delta z$ along
 the fibre axis. $\Delta z = \Delta s \cos(20.4°)$, so
@@ -453,13 +453,13 @@ faces perpendicular to the face, hits the hypotenuse, and exits through the othe
 that TIR occurs at the hypotenuse and determine the angle of the emergent ray.
 
 **Answer.** The ray enters perpendicular to the short face, so it passes through undeviated and
-strikes the hypotenuse at $45°$ to the normal of that face.
+strikes the hypotenuse at $45^\circ$ to the normal of that face.
 
-Since $\theta_c = \arcsin(1/1.50) = 41.8°$ and $45° > 41.8°$, TIR occurs at the hypotenuse.
+Since $\theta_c = \arcsin(1/1.50) = 41.8^\circ$ and $45° > 41.8^\circ$, TIR occurs at the hypotenuse.
 
 The reflected ray exits through the other short face perpendicular to it (by symmetry of the 45°
 reflection). The emergent ray is therefore perpendicular to the short face, i.e., the prism acts as
-a perfect retroreflector for this geometry. The deviation is $90°$.
+a perfect retroreflector for this geometry. The deviation is $90^\circ$.
 
 This is why such prisms are used in binoculars and periscopes — they give 100% reflection with no
 metallic coating needed.
@@ -472,16 +472,16 @@ metallic coating needed.
 <summary>Problem 11</summary>
 Light travels from water ($n = 1.33$) into a glass block ($n = 1.50$). (a) Calculate the critical
 angle for a water-glass boundary (if it exists). (b) A ray in the glass strikes the glass-water
-boundary at $55°$ to the normal. Determine what happens.
+boundary at $55^\circ$ to the normal. Determine what happens.
 
 **Answer.** (a) For TIR to be possible, light must travel from denser to less dense. Since
 $n_{\text{glass}} = 1.50 > n_{\text{water}} = 1.33$, TIR is possible for light going from glass to
-water. $\theta_c = \arcsin(1.33/1.50) = \arcsin(0.887) = 62.5°$.
+water. $\theta_c = \arcsin(1.33/1.50) = \arcsin(0.887) = 62.5^\circ$.
 
-(b) Since $55° < 62.5°$, the angle of incidence is below the critical angle. Refraction occurs.
+(b) Since $55° < 62.5^\circ$, the angle of incidence is below the critical angle. Refraction occurs.
 Using Snell's law: $1.50 \times \sin 55° = 1.33 \times \sin\theta_2$.
 $\sin\theta_2 = 1.50 \times 0.819 / 1.33 = 1.229 / 1.33 = 0.924$.
-$\theta_2 = \arcsin(0.924) = 67.5°$. The ray refracts into the water, bending away from the normal.
+$\theta_2 = \arcsin(0.924) = 67.5^\circ$. The ray refracts into the water, bending away from the normal.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle) and
@@ -492,20 +492,20 @@ $\theta_2 = \arcsin(0.924) = 67.5°$. The ray refracts into the water, bending a
 <summary>Problem 12</summary>
 A swimming pool appears shallower than it actually is. A pool of true depth 2.0 m is viewed from
 above. (a) Calculate the apparent depth when viewed from directly above. (b) Calculate the apparent
-depth when viewed at an angle of $30°$ to the vertical (from the normal). Take
+depth when viewed at an angle of $30^\circ$ to the vertical (from the normal). Take
 $n_{\text{water}} = 1.33$.
 
 **Answer.** (a) For near-normal viewing, the apparent depth is given by:
 $d_{\text{apparent}} = d_{\text{real}} / n = 2.0 / 1.33 = 1.50$ m.
 
-(b) At an angle of $30°$ to the vertical, a ray from the bottom of the pool refracts at the surface.
+(b) At an angle of $30^\circ$ to the vertical, a ray from the bottom of the pool refracts at the surface.
 Using Snell's law: $1.33 \times \sin\theta_1 = 1.00 \times \sin\theta_2$, where $\theta_1$ is the
 angle in water from the normal. The apparent position is found by tracing the refracted ray back.
 For a pool of depth $d$ and viewing angle $\theta_2$:
 
 $d_{\text{apparent}} = d \cdot \frac{\cos\theta_2}{\cos\theta_1}$
 
-where $\theta_1 = \arcsin(\sin 30° / 1.33) = \arcsin(0.376) = 22.1°$.
+where $\theta_1 = \arcsin(\sin 30° / 1.33) = \arcsin(0.376) = 22.1^\circ$.
 
 $d_{\text{apparent}} = 2.0 \times \frac{\cos 30°}{\cos 22.1°} = 2.0 \times \frac{0.866}{0.927} = 2.0 \times 0.934 = 1.87$
 m.

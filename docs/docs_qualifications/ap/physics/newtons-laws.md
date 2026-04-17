@@ -680,12 +680,12 @@ The ball is essentially at terminal velocity after $3 \text{ s}$ (about $99.2\%$
 
 ### Example 18: Tension in a Cable at an Angle
 
-A $20 \text{ kg}$ traffic light is suspended by two cables. Cable A makes $30°$ with the horizontal
-and Cable B makes $45°$ with the horizontal. Find the tension in each cable.
+A $20 \text{ kg}$ traffic light is suspended by two cables. Cable A makes $30^\circ$ with the horizontal
+and Cable B makes $45^\circ$ with the horizontal. Find the tension in each cable.
 
 **Step 1: Resolve forces**
 
-Horizontal: $T_A \cos 30° = T_B \cos 45°$
+Horizontal: $T_A \cos 30° = T_B \cos 45^\circ$
 
 $$T_A \times 0.866 = T_B \times 0.707 \implies T_A = 0.816 T_B$$
 
@@ -728,7 +728,7 @@ the tension equals the total weight; at the bottom, it is zero.
 
 ## Additional Practice Problems
 
-16. A $3 \text{ kg}$ block on a $25°$ incline is connected by a string over a pulley to a
+16. A $3 \text{ kg}$ block on a $25^\circ$ incline is connected by a string over a pulley to a
     $5 \text{ kg}$ block hanging vertically. The coefficient of kinetic friction is $0.3$. Calculate
     the acceleration of the system and the tension in the string.
 
@@ -741,7 +741,7 @@ the tension equals the total weight; at the bottom, it is zero.
     the block remains stationary relative to the cone.
 
 19. A $10 \text{ kg}$ crate is pushed across a rough floor ($\mu_k = 0.4$) by a force of
-    $80 \text{ N}$ applied at $30°$ below the horizontal. Calculate the normal force, the friction
+    $80 \text{ N}$ applied at $30^\circ$ below the horizontal. Calculate the normal force, the friction
     force, and the acceleration.
 
 20. Two blocks ($m_1 = 3 \text{ kg}$ on a table, $m_2 = 2 \text{ kg}$ hanging) are connected by a

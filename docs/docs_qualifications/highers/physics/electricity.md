@@ -592,9 +592,9 @@ $\sqrt{57393} = 239.6 \approx 240 \text{ V}$. Confirmed.
 
 $$\tan\phi = \frac{X_C}{R} = \frac{63.7}{100} = 0.637$$
 
-$$\phi = \arctan(0.637) = 32.5°$$
+$$\phi = \arctan(0.637) = 32.5^\circ$$
 
-The current leads the voltage by $32.5°$.
+The current leads the voltage by $32.5^\circ$.
 
 ### Example 23: Wheatstone Bridge Analysis
 

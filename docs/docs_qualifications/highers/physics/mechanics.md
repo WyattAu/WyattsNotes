@@ -108,7 +108,7 @@ A projectile follows a parabolic path when air resistance is negligible.
 - **Maximum height:** $H = \dfrac{(v_0 \sin\theta)^2}{2g}$
 - **Time of flight:** $T = \dfrac{2v_0 \sin\theta}{g}$
 - **Range:** $R = \dfrac{v_0^2 \sin 2\theta}{g}$
-- **Maximum range** at $\theta = 45°$
+- **Maximum range** at $\theta = 45^\circ$
 
 ### Why the Path Is a Parabola
 
@@ -125,7 +125,7 @@ The horizontal and vertical components are completely independent. There is no h
 always $g$ downward, regardless of the horizontal motion. This means you can solve each component
 separately using the kinematic equations.
 
-**Example:** A ball is thrown at $20 \text{ m/s}$ at an angle of $30°$ above the horizontal. Find
+**Example:** A ball is thrown at $20 \text{ m/s}$ at an angle of $30^\circ$ above the horizontal. Find
 the maximum height and horizontal range.
 
 Vertical component: $v_y = 20\sin 30° = 10 \text{ m/s}$.
@@ -237,7 +237,7 @@ final speeds and the forces, you can solve the problem directly. This is especia
 variable-force problems and curved paths.
 
 **Example:** A car of mass $1200 \text{ kg}$ travels at a constant speed of $25 \text{ m/s}$ up a
-hill inclined at $5°$ to the horizontal. The total resistive force is $800 \text{ N}$. Find the
+hill inclined at $5^\circ$ to the horizontal. The total resistive force is $800 \text{ N}$. Find the
 power output of the engine.
 
 Component of weight along the slope:
@@ -388,7 +388,7 @@ The minimum speed at the top to maintain circular motion: $v_{\min} = \sqrt{gr}$
 1. A stone is thrown horizontally from a cliff $40 \text{ m}$ high at $15 \text{ m/s}$. Find the
    time to hit the ground and the horizontal distance travelled.
 
-2. A $60 \text{ kg}$ skier accelerates down a slope inclined at $20°$ to the horizontal. The
+2. A $60 \text{ kg}$ skier accelerates down a slope inclined at $20^\circ$ to the horizontal. The
    coefficient of friction is $0.1$. Find the acceleration.
 
 3. A car of mass $800 \text{ kg}$ accelerates from rest to $20 \text{ m/s}$ in $8 \text{ s}$.
@@ -398,7 +398,7 @@ The minimum speed at the top to maintain circular motion: $v_{\min} = \sqrt{gr}$
    $2 \text{ m/s}$ in the same direction. They stick together. Find the velocity after the collision
    and the kinetic energy lost.
 
-5. A ball is projected at $25 \text{ m/s}$ at $40°$ above the horizontal from the top of a
+5. A ball is projected at $25 \text{ m/s}$ at $40^\circ$ above the horizontal from the top of a
    $15 \text{ m}$ cliff. Find the speed when it hits the ground.
 
 6. Two particles of masses $2 \text{ kg}$ and $3 \text{ kg}$ are connected by a string over a
@@ -414,7 +414,7 @@ The minimum speed at the top to maintain circular motion: $v_{\min} = \sqrt{gr}$
 9. A car of mass $1000 \text{ kg}$ rounds a bend of radius $80 \text{ m}$ at $15 \text{ m/s}$. Find
    the minimum coefficient of static friction required.
 
-10. A $3 \text{ kg}$ block slides $4 \text{ m}$ down a $30°$ incline with $\mu_k = 0.2$. Find the
+10. A $3 \text{ kg}$ block slides $4 \text{ m}$ down a $30^\circ$ incline with $\mu_k = 0.2$. Find the
     work done by friction, the work done by gravity, and the final speed if the block started from
     rest.
 
@@ -449,7 +449,7 @@ $$s = \bar{v}t = \frac{u + v}{2}t$$
 
 ## 12. Worked Example: Projectile from a Height
 
-A ball is thrown from the top of a $40 \text{ m}$ cliff at $15 \text{ m/s}$ at $25°$ above the
+A ball is thrown from the top of a $40 \text{ m}$ cliff at $15 \text{ m/s}$ at $25^\circ$ above the
 horizontal. Find the time to hit the ground and the horizontal distance.
 
 $$v_x = 15\cos 25° = 13.59 \text{ m/s}, \qquad v_y = 15\sin 25° = 6.34 \text{ m/s}$$
@@ -466,7 +466,7 @@ Horizontal distance: $R = v_x t = 13.59 \times 3.58 = 48.7 \text{ m}$.
 
 ## 13. Worked Example: Energy with Friction on an Incline
 
-A $4 \text{ kg}$ block slides $5 \text{ m}$ down a $30°$ rough incline with $\mu_k = 0.2$, starting
+A $4 \text{ kg}$ block slides $5 \text{ m}$ down a $30^\circ$ rough incline with $\mu_k = 0.2$, starting
 from rest.
 
 **Work done by gravity:**
@@ -534,18 +534,18 @@ the ball to just complete the circle, we need $v_t = \sqrt{gL} = \sqrt{11.76} = 
 
 ## 16. Practice Questions (Additional)
 
-11. A stone is thrown at $18 \text{ m/s}$ at $50°$ to the horizontal from the top of a
+11. A stone is thrown at $18 \text{ m/s}$ at $50^\circ$ to the horizontal from the top of a
     $25 \text{ m}$ cliff. Calculate the speed at which it hits the ground.
 
 12. A car of mass $900 \text{ kg}$ travels at constant speed around a circular bend of radius
-    $60 \text{ m}$ that is banked at $12°$. Calculate the minimum coefficient of static friction
+    $60 \text{ m}$ that is banked at $12^\circ$. Calculate the minimum coefficient of static friction
     required.
 
 13. A bullet of mass $8 \text{ g}$ travelling at $600 \text{ m/s}$ passes through a wooden block of
     mass $2 \text{ kg}$, emerging at $200 \text{ m/s}$. Calculate the velocity of the block and the
     kinetic energy lost.
 
-14. A $5 \text{ kg}$ box is pushed up a $35°$ incline at constant speed by a force of $50 \text{ N}$
+14. A $5 \text{ kg}$ box is pushed up a $35^\circ$ incline at constant speed by a force of $50 \text{ N}$
     applied parallel to the incline. Calculate the coefficient of kinetic friction.
 
 15. A ball of mass $0.3 \text{ kg}$ is attached to a string of length $0.8 \text{ m}$ and swung in a
@@ -569,8 +569,8 @@ the ball to just complete the circle, we need $v_t = \sqrt{gL} = \sqrt{11.76} = 
     $4 \text{ s}$, then travels at constant speed for $3 \text{ s}$, then decelerates at
     $2 \text{ m/s}^2$ to rest. Calculate the total work done by the tension in the cable.
 
-20. Explain why the range of a projectile is the same for complementary angles (e.g., $30°$ and
-    $60°$). Include a mathematical derivation.
+20. Explain why the range of a projectile is the same for complementary angles (e.g., $30^\circ$ and
+    $60^\circ$). Include a mathematical derivation.
 
 ## Extended Worked Examples
 
@@ -601,7 +601,7 @@ initial and final speeds.
 ### Example 22: Oblique Collision in 2D
 
 A $3 \text{ kg}$ object moving at $4 \text{ m/s}$ collides with a stationary $2 \text{ kg}$ object.
-After the collision, the $3 \text{ kg}$ object moves at $2 \text{ m/s}$ at $30°$ to its original
+After the collision, the $3 \text{ kg}$ object moves at $2 \text{ m/s}$ at $30^\circ$ to its original
 direction. Find the velocity of the $2 \text{ kg}$ object after the collision.
 
 Take the original direction as the x-axis.
@@ -626,13 +626,13 @@ $$v_{2y} = -1.5 \text{ m/s}$$
 
 $$|v_2| = \sqrt{3.402^2 + (-1.5)^2} = \sqrt{11.57 + 2.25} = \sqrt{13.82} = 3.72 \text{ m/s}$$
 
-$$\theta = \arctan\left(\frac{-1.5}{3.402}\right) = -23.8°$$
+$$\theta = \arctan\left(\frac{-1.5}{3.402}\right) = -23.8^\circ$$
 
-The $2 \text{ kg}$ object moves at $3.72 \text{ m/s}$ at $23.8°$ below the original direction.
+The $2 \text{ kg}$ object moves at $3.72 \text{ m/s}$ at $23.8^\circ$ below the original direction.
 
 ### Example 23: Connected Bodies on an Inclined Plane
 
-Two masses, $m_A = 8 \text{ kg}$ on a $30°$ incline and $m_B = 5 \text{ kg}$ hanging vertically, are
+Two masses, $m_A = 8 \text{ kg}$ on a $30^\circ$ incline and $m_B = 5 \text{ kg}$ hanging vertically, are
 connected by a light inextensible string over a smooth pulley at the top of the incline. The
 coefficient of friction between $m_A$ and the incline is $\mu = 0.2$. Find the acceleration of the
 system and the tension in the string. Take $g = 9.8 \text{ m/s}^2$.
@@ -722,5 +722,5 @@ surface with no vertical acceleration.
     calculate the velocities of both particles.
 
 25. Derive an expression for the period of a simple pendulum using energy considerations. A pendulum
-    of length $1.5 \text{ m}$ is displaced $10°$ from the vertical. Calculate the maximum speed of
+    of length $1.5 \text{ m}$ is displaced $10^\circ$ from the vertical. Calculate the maximum speed of
     the bob and the period of oscillation.

@@ -573,12 +573,12 @@ decreasing on each branch.
 
 <details>
 <summary>Problem 14</summary>
-Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\text{cm}^3\text{/s}$. The cone has semi-vertical angle $30°$. Find $dh/dt$ when $h = 10\,\text{cm}$.
+Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\text{cm}^3\text{/s}$. The cone has semi-vertical angle $30^\circ$. Find $dh/dt$ when $h = 10\,\text{cm}$.
 </details>
 
 <details>
 <summary>Solution 14</summary>
-With semi-vertical angle $30°$: $r = h\tan 30° = h/\sqrt{3}$.
+With semi-vertical angle $30^\circ$: $r = h\tan 30° = h/\sqrt{3}$.
 
 $V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = \dfrac{\pi h^3}{9}$.
 

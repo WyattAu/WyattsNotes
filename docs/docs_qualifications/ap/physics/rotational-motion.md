@@ -759,7 +759,7 @@ Always convert to SI units before calculating.
 ## Additional Practice Problems
 
 16. A solid sphere of mass $4 \text{ kg}$ and radius $0.1 \text{ m}$ rolls without slipping up a
-    $20°$ incline at $5 \text{ m/s}$. Calculate how far up the incline it travels before stopping
+    $20^\circ$ incline at $5 \text{ m/s}$. Calculate how far up the incline it travels before stopping
     and rolling back.
 
 17. A figure skater with arms extended has moment of inertia $4.5 \text{ kg}\cdot\text{m}^2$ and

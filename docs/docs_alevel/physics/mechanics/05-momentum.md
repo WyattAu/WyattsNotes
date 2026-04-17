@@ -169,7 +169,7 @@ along the line of centres.
 
 <details>
 <summary>Example: 2D Collision</summary>
-A particle of mass $2m$ moving with speed $u$ collides with a stationary particle of mass $m$. After the collision, the $2m$ particle moves at $60°$ to its original direction. Find the final speeds (elastic collision).
+A particle of mass $2m$ moving with speed $u$ collides with a stationary particle of mass $m$. After the collision, the $2m$ particle moves at $60^\circ$ to its original direction. Find the final speeds (elastic collision).
 
 **Answer.** Let the original direction be the $x$-axis.
 
@@ -262,17 +262,17 @@ $J = 0.16(40 - (-35)) = 0.16 \times 75 = 12$ N s. $F = 12/0.001 = 12{,}000$ N $=
 
 <details>
 <summary>Problem 5</summary>
-Two identical particles collide. One is at rest and the other has velocity $\mathbf{u}$. After an elastic collision, the first particle moves at $30°$ to $\mathbf{u}$. Find the direction of the second particle and the final speeds.
+Two identical particles collide. One is at rest and the other has velocity $\mathbf{u}$. After an elastic collision, the first particle moves at $30^\circ$ to $\mathbf{u}$. Find the direction of the second particle and the final speeds.
 
 **Answer.** By conservation of momentum (equal masses in elastic collision), the particles move at
-right angles to each other after collision. So the second particle moves at $60°$ to $\mathbf{u}$.
+right angles to each other after collision. So the second particle moves at $60^\circ$ to $\mathbf{u}$.
 
 By symmetry and KE conservation: both have speed $u\cos 60° = u/2$... No, let me be more careful.
 
-Momentum ($x$): $mu = mv_1\cos 30° + mv_2\cos 60°$, i.e.,
+Momentum ($x$): $mu = mv_1\cos 30° + mv_2\cos 60^\circ$, i.e.,
 $u = \frac{\sqrt{3}}{2}v_1 + \frac{1}{2}v_2$.
 
-Momentum ($y$): $0 = mv_1\sin 30° - mv_2\sin 60°$, i.e., $v_1 = \sqrt{3}\,v_2$.
+Momentum ($y$): $0 = mv_1\sin 30° - mv_2\sin 60^\circ$, i.e., $v_1 = \sqrt{3}\,v_2$.
 
 Substituting:
 $u = \frac{\sqrt{3}}{2}(\sqrt{3}v_2) + \frac{v_2}{2} = \frac{3v_2}{2} + \frac{v_2}{2} = 2v_2$. So
@@ -393,7 +393,7 @@ $\alpha$ when $e \lt 1$.
 
 <details>
 <summary>Example: Ball Hitting a Wall at an Angle</summary>
-A ball of mass $0.20$ kg hits a smooth vertical wall at $30°$ to the normal with speed $8.0$ m s$^{-1}$. The coefficient of restitution is $0.75$. Find: (a) the impulse exerted by the wall, (b) the speed and direction of the ball after impact.
+A ball of mass $0.20$ kg hits a smooth vertical wall at $30^\circ$ to the normal with speed $8.0$ m s$^{-1}$. The coefficient of restitution is $0.75$. Find: (a) the impulse exerted by the wall, (b) the speed and direction of the ball after impact.
 
 **Answer.** Take the $x$-axis perpendicular to the wall (positive away from wall) and the $y$-axis
 parallel to the wall.
@@ -413,9 +413,9 @@ The impulse is $2.43$ N s perpendicular to the wall, directed away from the wall
 $v = \sqrt{v_x^2 + v_y^2} = \sqrt{5.20^2 + 4.00^2} = \sqrt{27.04 + 16.00} = \sqrt{43.04} = 6.56$ m
 s$^{-1}$.
 
-Angle to normal: $\tan\beta = v_y/v_x = 4.00/5.20 = 0.769$, so $\beta = 37.6°$.
+Angle to normal: $\tan\beta = v_y/v_x = 4.00/5.20 = 0.769$, so $\beta = 37.6^\circ$.
 
-The rebound angle ($37.6°$) is greater than the approach angle ($30°$), as expected when $e \lt 1$.
+The rebound angle ($37.6^\circ$) is greater than the approach angle ($30^\circ$), as expected when $e \lt 1$.
 
 </details>
 
@@ -574,7 +574,7 @@ $m_C = 5.0 - 2.0 - 1.5 = 1.5$ kg.
 
 $v_C = \sqrt{(-12/1.5)^2 + (-24/1.5)^2} = \sqrt{64 + 256} = \sqrt{320} = 17.9$ m s$^{-1}$.
 
-Direction: $\tan\theta = 24/12 = 2.0$, so $\theta = 63.4°$ south of west.
+Direction: $\tan\theta = 24/12 = 2.0$, so $\theta = 63.4^\circ$ south of west.
 
 <b>If you get this wrong, revise:</b>
 [Explosions and Rocket Propulsion](#10-explosions-and-rocket-propulsion)
@@ -583,10 +583,10 @@ Direction: $\tan\theta = 24/12 = 2.0$, so $\theta = 63.4°$ south of west.
 
 <details>
 <summary>Problem 13</summary>
-A ball of mass $0.10$ kg is projected at $20°$ to the vertical towards a smooth vertical wall with speed $10$ m s$^{-1}$. The coefficient of restitution between the ball and the wall is $0.60$. Find the impulse exerted by the wall and the speed of the ball after impact.
+A ball of mass $0.10$ kg is projected at $20^\circ$ to the vertical towards a smooth vertical wall with speed $10$ m s$^{-1}$. The coefficient of restitution between the ball and the wall is $0.60$. Find the impulse exerted by the wall and the speed of the ball after impact.
 
 **Answer.** Let the $x$-axis be perpendicular to the wall (positive away from wall). The angle to
-the normal is $20°$.
+the normal is $20^\circ$.
 
 Before: $u_x = -10\cos 20° = -9.40$ m s$^{-1}$, $u_y = 10\sin 20° = 3.42$ m s$^{-1}$.
 

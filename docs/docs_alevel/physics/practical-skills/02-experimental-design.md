@@ -43,7 +43,7 @@ independent variable.
 | Independent | Length of pendulum, $L$       | Vary with a metre rule from 0.2 m to 1.0 m      |
 | Dependent   | Period, $T$                   | Measure with a stopwatch (time 20 oscillations) |
 | Control     | Mass of bob                   | Use the same bob throughout                     |
-| Control     | Amplitude (angle of release)  | Keep below $5°$                                 |
+| Control     | Amplitude (angle of release)  | Keep below $5^\circ$                                 |
 | Control     | String material and thickness | Use inextensible string                         |
 
 **Example 2 — Investigating the effect of temperature on the resistance of a thermistor:**
@@ -227,13 +227,13 @@ When asked to design an experiment, address:
 - **Independent:** length of pendulum, $L$ (varied from 0.20 m to 1.00 m in 0.10 m steps)
 - **Dependent:** period of oscillation, $T$ (measured by timing 20 oscillations with a digital
   stopwatch)
-- **Control:** mass of bob, amplitude of swing ($\lt{} 5°$), string material
+- **Control:** mass of bob, amplitude of swing ($\lt{} 5^\circ$), string material
 
 **Method:**
 
 1. Set up a retort stand with a clamp. Attach a piece of inextensible string and a pendulum bob.
 2. Measure the length $L$ from the point of suspension to the centre of the bob using a metre rule.
-3. Displace the bob by a small angle ($\lt{} 5°$) and release it.
+3. Displace the bob by a small angle ($\lt{} 5^\circ$) and release it.
 4. Time 20 complete oscillations using a digital stopwatch. Divide by 20 to find $T$.
 5. Repeat for each length. Take three readings at each length and calculate a mean $T$.
 6. Plot $T^2$ against $L$. The gradient is $4\pi^2/g$.
@@ -288,7 +288,7 @@ Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
 | Micrometer       | 0–25 mm          | 0.001 mm          | Wire diameters              |
 | Digital balance  | 0–200 g          | 0.01 g            | Mass                        |
 | Stopwatch        | 0–60 min         | 0.01 s            | Time intervals              |
-| Thermometer      | $-10$ to $110°$C | 1°C or 0.1°C      | Temperature                 |
+| Thermometer      | $-10$ to $110^\circ\mathrm{C}$ | 1°C or 0.1°C      | Temperature                 |
 | Voltmeter        | 0–20 V           | 0.01 V or 0.1 V   | Potential difference        |
 | Ammeter          | 0–10 A           | 0.01 A or 0.1 A   | Current                     |
 | Signal generator | 1 Hz – 1 MHz     | 1 Hz              | AC frequency                |
@@ -550,7 +550,7 @@ A student obtains data points that do not lie on a straight line when plotting $
 a pendulum. Suggest three possible reasons and how to investigate each.
 
 **Answer.** (1) **Large angle oscillations**: the formula $T = 2\pi\sqrt{L/g}$ assumes small angles.
-For angles $> 10°$, the period increases. Solution: use smaller angles ($< 5°$) and repeat. (2)
+For angles $> 10^\circ$, the period increases. Solution: use smaller angles ($< 5^\circ$) and repeat. (2)
 **String not ideal**: the string may stretch or have mass. Solution: use a lighter, inextensible
 string. (3) **Air resistance**: damping affects the period at large amplitudes. Solution: use a
 denser bob to minimise air resistance effects.

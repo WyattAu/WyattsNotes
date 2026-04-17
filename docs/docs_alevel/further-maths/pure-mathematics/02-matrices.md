@@ -308,10 +308,10 @@ $\mathbf{R}_{\text{rot}} \times \mathbf{R}_{\text{ref}}$.
 <details>
 <summary>Worked Example: Combined transformation</summary>
 
-Find the matrix representing a rotation of $90°$ anticlockwise about the origin followed by a
+Find the matrix representing a rotation of $90^\circ$ anticlockwise about the origin followed by a
 reflection in the line $y = x$.
 
-Rotation by $90°$: $\mathbf{R} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$
+Rotation by $90^\circ$: $\mathbf{R} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$
 
 Reflection in $y = x$: $\mathbf{S} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$
 
@@ -607,8 +607,8 @@ So $x = \dfrac{4}{5}$, $y = 3$, $z = \dfrac{8}{5}$.
 ---
 
 **Problem 6.** Find the single $2 \times 2$ matrix that represents an enlargement by scale factor 2
-about the origin followed by a rotation of $90°$ anticlockwise. Show that this is equivalent to a
-single rotation of $90°$ combined with an enlargement by factor 2.
+about the origin followed by a rotation of $90^\circ$ anticlockwise. Show that this is equivalent to a
+single rotation of $90^\circ$ combined with an enlargement by factor 2.
 
 <details>
 <summary>Hint</summary>
@@ -623,7 +623,7 @@ $2\mathbf{I}$ commutes with all matrices, the order doesn't matter.
 
 Enlargement by 2: $\mathbf{E} = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}$.
 
-Rotation by $90°$: $\mathbf{R} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.
+Rotation by $90^\circ$: $\mathbf{R} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.
 
 Enlargement then rotation:
 $\mathbf{R}\mathbf{E} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} = \begin{pmatrix} 0 & -2 \\ 2 & 0 \end{pmatrix}$.
@@ -634,7 +634,7 @@ $\mathbf{E}\mathbf{R} = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatr
 Both give the same result:
 $\begin{pmatrix} 0 & -2 \\ 2 & 0 \end{pmatrix} = 2\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.
 
-This is a rotation by $90°$ combined with an enlargement by factor 2, and the order is irrelevant
+This is a rotation by $90^\circ$ combined with an enlargement by factor 2, and the order is irrelevant
 because scalar multiples of the identity commute with all matrices.
 
 </details>
@@ -712,7 +712,7 @@ $$\mathbf{A}^5 = \mathbf{P}\mathbf{D}^5\mathbf{P}^{-1} = \begin{pmatrix} 1 & 2 \
 
 ---
 
-**Problem 9.** Find the $3 \times 3$ matrix representing a rotation of $90°$ anticlockwise about the
+**Problem 9.** Find the $3 \times 3$ matrix representing a rotation of $90^\circ$ anticlockwise about the
 $z$-axis. Verify that this matrix has determinant 1 and that it maps
 $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ to $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$.
 
@@ -732,7 +732,7 @@ $\det(\mathbf{R}_z) = 0 \cdot (0 - 0) - (-1)(1 - 0) + 0 = 1$. ✓
 
 $$\mathbf{R}_z\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \quad \checkmark$$
 
-The $x$-axis is correctly rotated to the $y$-axis by a $90°$ anticlockwise rotation about $z$.
+The $x$-axis is correctly rotated to the $y$-axis by a $90^\circ$ anticlockwise rotation about $z$.
 
 </details>
 

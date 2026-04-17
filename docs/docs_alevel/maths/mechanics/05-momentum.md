@@ -257,7 +257,7 @@ $p_y$.
 ### 7.3 Worked example
 
 A particle of mass $3\,\text{kg}$ moving at $4\,\text{m/s}$ collides with a stationary particle of
-mass $2\,\text{kg}$. The $3\,\text{kg}$ particle is deflected through $30°$ and the $2\,\text{kg}$
+mass $2\,\text{kg}$. The $3\,\text{kg}$ particle is deflected through $30^\circ$ and the $2\,\text{kg}$
 particle moves off at angle $\theta$ below the original line of motion. Both particles have speed
 $3\,\text{m/s}$ after collision. Find $\theta$.
 
@@ -274,11 +274,11 @@ $x$-momentum: $3(1.5\sqrt{3}) + 2(3\cos\theta) = 12 \implies 4.5\sqrt{3} + 6\cos
 
 $\cos\theta = \dfrac{12 - 4.5\sqrt{3}}{6} = \dfrac{12 - 7.794}{6} \approx 0.701$
 
-$\theta \approx 45.5°$.
+$\theta \approx 45.5^\circ$.
 
 $y$-momentum check:
 $3(1.5) + 2(-3\sin\theta) = 0 \implies 4.5 = 6\sin\theta \implies \sin\theta = 0.75$, so
-$\theta \approx 48.6°$.
+$\theta \approx 48.6^\circ$.
 
 The slight discrepancy arises from rounding $1.5\sqrt{3}$. Using exact values:
 $1.5\sqrt{3} = \frac{3\sqrt{3}}{2}$, $12 - 4.5\sqrt{3} = 12 - \frac{9\sqrt{3}}{2}$. From $y$:
@@ -317,7 +317,7 @@ Consequences:
 
 Two smooth spheres $A$ (mass $3\,\text{kg}$) and $B$ (mass $2\,\text{kg}$) collide. Before
 collision, $A$ moves with velocity $5\,\text{m/s}$ and $B$ is stationary. The line of centres makes
-an angle of $30°$ with the direction of motion of $A$. Given $e = 0.6$, find the speed and direction
+an angle of $30^\circ$ with the direction of motion of $A$. Given $e = 0.6$, find the speed and direction
 of each sphere after collision.
 
 **Solution.** Resolving parallel ($\parallel$) and perpendicular ($\perp$) to the line of centres:
@@ -402,7 +402,7 @@ incidence. Equality holds only when $e = 1$ (perfectly elastic), recovering the 
 Special cases:
 
 - $e = 1$: $\beta = \alpha$ (angle of incidence equals angle of reflection).
-- $e \to 0$: $\beta \to 90°$ (particle slides along the surface).
+- $e \to 0$: $\beta \to 90^\circ$ (particle slides along the surface).
 
 ### 9.4 Successive bounces
 
@@ -572,7 +572,7 @@ Section 5.3.
 
 <details>
 <summary>Problem 9</summary>
-A ball of mass $0.2\,\text{kg}$ hits a vertical wall at $12\,\text{m/s}$ at an angle of $30°$ to the normal, and rebounds at the same angle with $e = 0.7$. Find the impulse parallel and perpendicular to the wall.
+A ball of mass $0.2\,\text{kg}$ hits a vertical wall at $12\,\text{m/s}$ at an angle of $30^\circ$ to the normal, and rebounds at the same angle with $e = 0.7$. Find the impulse parallel and perpendicular to the wall.
 </details>
 
 <details>
@@ -664,7 +664,7 @@ Section 5.
 
 <details>
 <summary>Problem 11</summary>
-A particle of mass $4\,\text{kg}$ explodes into two fragments of masses $1\,\text{kg}$ and $3\,\text{kg}$. The $1\,\text{kg}$ fragment moves at $12\,\text{m/s}$ at $60°$ above the horizontal. Find the velocity of the $3\,\text{kg}$ fragment.
+A particle of mass $4\,\text{kg}$ explodes into two fragments of masses $1\,\text{kg}$ and $3\,\text{kg}$. The $1\,\text{kg}$ fragment moves at $12\,\text{m/s}$ at $60^\circ$ above the horizontal. Find the velocity of the $3\,\text{kg}$ fragment.
 </details>
 
 <details>
@@ -680,7 +680,7 @@ $3\,v_y + 6\sqrt{3} = 0 \implies v_y = -2\sqrt{3}\,\text{m/s}$.
 
 Speed: $|v| = \sqrt{(-2)^2 + (-2\sqrt{3})^2} = \sqrt{4 + 12} = \sqrt{16} = 4\,\text{m/s}$.
 
-Direction: $\theta = \arctan\!\left(\frac{-2\sqrt{3}}{-2}\right) = \arctan(\sqrt{3}) = 60°$ below
+Direction: $\theta = \arctan\!\left(\frac{-2\sqrt{3}}{-2}\right) = \arctan(\sqrt{3}) = 60^\circ$ below
 the horizontal (south-west).
 
 **If you get this wrong, revise:**
@@ -691,13 +691,13 @@ Section 7.
 
 <details>
 <summary>Problem 12</summary>
-A ball strikes a smooth horizontal floor at $10\,\text{m/s}$ at an angle of $50°$ to the vertical. It rebounds at an angle of $65°$ to the vertical. Find the coefficient of restitution and the speed after rebound.
+A ball strikes a smooth horizontal floor at $10\,\text{m/s}$ at an angle of $50^\circ$ to the vertical. It rebounds at an angle of $65^\circ$ to the vertical. Find the coefficient of restitution and the speed after rebound.
 </details>
 
 <details>
 <summary>Solution 12</summary>
-Let the normal (vertical) be the reference direction. Angle to normal: $\alpha = 50°$ before,
-$\beta = 65°$ after.
+Let the normal (vertical) be the reference direction. Angle to normal: $\alpha = 50^\circ$ before,
+$\beta = 65^\circ$ after.
 
 $\tan\beta = \dfrac{\tan\alpha}{e} \implies e = \dfrac{\tan\alpha}{\tan\beta} = \dfrac{\tan 50°}{\tan 65°}$.
 
@@ -815,7 +815,7 @@ Speed after second bounce:
 $v = \sqrt{8^2 + 5.568^2} = \sqrt{64 + 31.00} = \sqrt{95.00} \approx 9.75\,\text{m/s}$.
 
 Angle to horizontal:
-$\theta = \arctan\!\left(\frac{5.568}{8}\right) = \arctan(0.696) \approx 34.8°$.
+$\theta = \arctan\!\left(\frac{5.568}{8}\right) = \arctan(0.696) \approx 34.8^\circ$.
 
 **If you get this wrong, revise:** [Successive Bounces](#94-successive-bounces) — Section 9.4.
 
@@ -874,7 +874,7 @@ The angle between $\mathbf{v}_B$ and the line of centres is $0$ (it moves along 
 centres).
 
 So the angle between $\mathbf{v}_A$ and $\mathbf{v}_B$ is $\alpha$. For them to be perpendicular, we
-need $\alpha = 90°$, but $\tan\alpha$ is finite for $0 \lt{} e \lt{} 1$.
+need $\alpha = 90^\circ$, but $\tan\alpha$ is finite for $0 \lt{} e \lt{} 1$.
 
 The claim that the spheres move at right angles is only true for $e = 1$ (perfectly elastic
 collision). In that case $v_{A,\parallel} = 0$ and $\mathbf{v}_A = u\sin\theta$ (perpendicular to

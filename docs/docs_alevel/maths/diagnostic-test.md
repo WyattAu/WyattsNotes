@@ -188,7 +188,7 @@ $A = \int_0^1 (x - x^2)\,dx = \left[\dfrac{x^2}{2} - \dfrac{x^3}{3}\right]_0^1 =
 <summary>Q17. Find the angle between $\mathbf{a} = \begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.</summary>
 $\mathbf{a}\cdot\mathbf{b} = 3-2-2 = -1$. $|\mathbf{a}| = \sqrt{6}$, $|\mathbf{b}| = \sqrt{14}$.
 
-$\cos\theta = \dfrac{-1}{\sqrt{84}} \implies \theta \approx 96.3°$.
+$\cos\theta = \dfrac{-1}{\sqrt{84}} \implies \theta \approx 96.3^\circ$.
 
 **If you get this wrong, revise:** [Vectors](/docs/alevel/maths/pure-mathematics/vectors)
 </details>
@@ -360,7 +360,7 @@ $v^2 = u^2 + 2as \implies 1225 = 225 + 400a \implies a = 1000/400 = 2.5\,\text{m
 </details>
 
 <details>
-<summary>Q35. A projectile is launched at $25\,\text{m/s}$ at $50°$ above horizontal. Find the maximum height.</summary>
+<summary>Q35. A projectile is launched at $25\,\text{m/s}$ at $50^\circ$ above horizontal. Find the maximum height.</summary>
 $H = \dfrac{(25\sin 50°)^2}{2(9.8)} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{19.6} \approx 18.71\,\text{m}$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/alevel/maths/mechanics/kinematics)

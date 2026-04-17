@@ -482,7 +482,7 @@ $t = L/v = 0.080/(2.0 \times 10^7) = 4.0 \times 10^{-9}$ s.
 
 $v_y = at = 1.405 \times 10^{15} \times 4.0 \times 10^{-9} = 5.62 \times 10^6$ m s$^{-1}$.
 
-$\tan\theta = v_y/v = 5.62 \times 10^6 / 2.0 \times 10^7 = 0.281$. $\theta = 15.7°$.
+$\tan\theta = v_y/v = 5.62 \times 10^6 / 2.0 \times 10^7 = 0.281$. $\theta = 15.7^\circ$.
 
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field)
@@ -507,10 +507,10 @@ magnitude). $E_{\text{net}} = 0$.
 <details>
 <summary>Problem 10</summary>
 A small charged sphere of mass 0.50 g is suspended by a thread in a uniform horizontal electric
-field of $5.0 \times 10^3$ V m$^{-1}$. The thread makes an angle of $15°$ with the vertical.
+field of $5.0 \times 10^3$ V m$^{-1}$. The thread makes an angle of $15^\circ$ with the vertical.
 Calculate the charge on the sphere.
 
-**Answer.** Resolving horizontally: $qE = T\sin 15°$. Resolving vertically: $mg = T\cos 15°$.
+**Answer.** Resolving horizontally: $qE = T\sin 15^\circ$. Resolving vertically: $mg = T\cos 15^\circ$.
 
 $\tan 15° = \frac{qE}{mg}$.
 $q = \frac{mg\tan 15°}{E} = \frac{0.50 \times 10^{-3} \times 9.81 \times 0.2679}{5000} = \frac{1.314 \times 10^{-3}}{5000} = 2.63 \times 10^{-7}$

@@ -531,7 +531,7 @@ $$\log_a b \cdot \log_b a = \frac{\ln b}{\ln a} \cdot \frac{\ln a}{\ln b} = 1 \q
 
 <details>
 <summary>Problem 10</summary>
-The temperature $T$ of a cooling object follows $T = T_s + (T_0 - T_s)e^{-kt}$. A cup of tea at $90°$C is placed in a room at $20°$C. After 10 minutes it is $60°$C. Find $k$ and determine when the tea reaches $35°$C.
+The temperature $T$ of a cooling object follows $T = T_s + (T_0 - T_s)e^{-kt}$. A cup of tea at $90^\circ\mathrm{C}$ is placed in a room at $20^\circ\mathrm{C}$. After 10 minutes it is $60^\circ\mathrm{C}$. Find $k$ and determine when the tea reaches $35^\circ\mathrm{C}$.
 </details>
 
 <details>

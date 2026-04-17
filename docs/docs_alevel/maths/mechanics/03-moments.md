@@ -453,7 +453,7 @@ Vertical equilibrium: $R_A + 175 = 200 + 300 = 500 \implies R_A = 325\,\text{N}$
 
 <details>
 <summary>Problem 2</summary>
-A uniform rod $AB$ of length $3\,\text{m}$ and mass $12\,\text{kg}$ is hinged at $A$ and held horizontal by a string attached at $B$ making an angle of $30°$ with the horizontal. Find the tension in the string.
+A uniform rod $AB$ of length $3\,\text{m}$ and mass $12\,\text{kg}$ is hinged at $A$ and held horizontal by a string attached at $B$ making an angle of $30^\circ$ with the horizontal. Find the tension in the string.
 </details>
 
 <details>
@@ -527,7 +527,7 @@ Centre of mass is $0.9\,\text{m}$ from $B$, i.e., $1.1\,\text{m}$ from $A$.
 
 <details>
 <summary>Problem 6</summary>
-A ladder of length $5\,\text{m}$ and weight $200\,\text{N}$ rests against a smooth vertical wall at an angle of $65°$ to the horizontal. The ground is rough. Find the minimum coefficient of friction for equilibrium.
+A ladder of length $5\,\text{m}$ and weight $200\,\text{N}$ rests against a smooth vertical wall at an angle of $65^\circ$ to the horizontal. The ground is rough. Find the minimum coefficient of friction for equilibrium.
 </details>
 
 <details>
@@ -536,7 +536,7 @@ Let $R_w$ = reaction from wall (horizontal), $R_g$ = reaction from ground (verti
 
 Horizontal: $R_w = F$. Vertical: $R_g = 200$.
 
-Moments about base of ladder: $R_w \times 5\sin 65° = 200 \times 2.5\cos 65°$.
+Moments about base of ladder: $R_w \times 5\sin 65° = 200 \times 2.5\cos 65^\circ$.
 
 $R_w = \dfrac{500\cos 65°}{5\sin 65°} = \dfrac{100\cos 65°}{\sin 65°} = 100\cot 65° \approx 46.6\,\text{N}$.
 
@@ -565,7 +565,7 @@ Centre of mass at $\left(2, \dfrac{4}{3}\right)$.
 
 <details>
 <summary>Problem 8</summary>
-A uniform rod $AB$ of length $6\,\text{m}$ and weight $100\,\text{N}$ is hinged at $A$ and supported by a wire at $B$ making angle $60°$ with the rod. Find the tension and the reaction at the hinge.
+A uniform rod $AB$ of length $6\,\text{m}$ and weight $100\,\text{N}$ is hinged at $A$ and supported by a wire at $B$ making angle $60^\circ$ with the rod. Find the tension and the reaction at the hinge.
 </details>
 
 <details>
@@ -579,7 +579,7 @@ Resolving horizontally: $R_x = T\sin 60° = 57.74 \times 0.866 = 50\,\text{N}$.
 Resolving vertically: $R_y = 100 - T\cos 60° = 100 - 28.87 = 71.13\,\text{N}$.
 
 $R = \sqrt{50^2 + 71.13^2} = \sqrt{2500 + 5059.5} \approx 86.9\,\text{N}$ at
-$\arctan(71.13/50) \approx 54.9°$ below horizontal.
+$\arctan(71.13/50) \approx 54.9^\circ$ below horizontal.
 
 **If you get this wrong, revise:** [Equilibrium Conditions](#3-equilibrium-conditions) — Section 3.
 
@@ -613,7 +613,7 @@ Centre of mass at approximately $(3.42, 2.65)$.
 
 <details>
 <summary>Problem 10</summary>
-A uniform ladder of length $6\,\text{m}$ and weight $150\,\text{N}$ rests against a smooth vertical wall, with the foot on rough horizontal ground. The ladder makes an angle of $55°$ with the horizontal. A man of weight $800\,\text{N}$ stands on the ladder $2\,\text{m}$ from the top. Find the minimum coefficient of friction between the ladder and the ground for equilibrium.
+A uniform ladder of length $6\,\text{m}$ and weight $150\,\text{N}$ rests against a smooth vertical wall, with the foot on rough horizontal ground. The ladder makes an angle of $55^\circ$ with the horizontal. A man of weight $800\,\text{N}$ stands on the ladder $2\,\text{m}$ from the top. Find the minimum coefficient of friction between the ladder and the ground for equilibrium.
 </details>
 
 <details>
@@ -621,15 +621,15 @@ A uniform ladder of length $6\,\text{m}$ and weight $150\,\text{N}$ rests agains
 Let $R_w$ = reaction from wall (horizontal), $R_g$ = reaction from ground (vertical), $F$ = friction at ground.
 
 The man is $2\,\text{m}$ from the top, so $4\,\text{m}$ from the base. His horizontal distance from
-the base is $4\cos 55°$.
+the base is $4\cos 55^\circ$.
 
 Horizontal: $R_w = F$. Vertical: $R_g = 150 + 800 = 950\,\text{N}$.
 
 Moments about the base of the ladder (perpendicular distances):
 
-$R_w \times 6\sin 55° = 150 \times 3\cos 55° + 800 \times 4\cos 55°$.
+$R_w \times 6\sin 55° = 150 \times 3\cos 55° + 800 \times 4\cos 55^\circ$.
 
-$R_w = \dfrac{(450 + 3200)\cos 55°}{6\sin 55°} = \dfrac{3650\cos 55°}{6\sin 55°} = \dfrac{3650}{6}\cot 55°$.
+$R_w = \dfrac{(450 + 3200)\cos 55°}{6\sin 55°} = \dfrac{3650\cos 55°}{6\sin 55°} = \dfrac{3650}{6}\cot 55^\circ$.
 
 $\cot 55° \approx 0.7002$, so $R_w = \dfrac{3650 \times 0.7002}{6} \approx 426.0\,\text{N}$.
 
@@ -789,7 +789,7 @@ Vertical: $R_y = 120 - T\sin\alpha = 120 - 100 \times \dfrac{3}{5} = 120 - 60 = 
 
 $R = \sqrt{80^2 + 60^2} = \sqrt{6400 + 3600} = \sqrt{10000} = 100\,\text{N}$.
 
-Direction: $\theta = \arctan(60/80) = \arctan(0.75) \approx 36.9°$ above the horizontal.
+Direction: $\theta = \arctan(60/80) = \arctan(0.75) \approx 36.9^\circ$ above the horizontal.
 
 **If you get this wrong, revise:** [Equilibrium Conditions](#3-equilibrium-conditions) — Section 3.
 

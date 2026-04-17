@@ -130,7 +130,7 @@ $$R = V\cos\theta \cdot T = V\cos\theta \cdot \frac{2V\sin\theta}{g}$$
 
 $$\boxed{R = \frac{V^2\sin 2\theta}{g}}$$
 
-This is maximised when $\sin 2\theta = 1$, i.e., $\theta = 45°$, giving $R_{\max} = \dfrac{V^2}{g}$.
+This is maximised when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$, giving $R_{\max} = \dfrac{V^2}{g}$.
 $\blacksquare$
 
 :::info
@@ -215,12 +215,12 @@ $$\tan\phi = \frac{v_y}{v_x} = \frac{V\sin\theta - gt}{V\cos\theta} = \tan\theta
 
 <details>
 <summary>Problem 1</summary>
-A projectile is launched at $30\,\text{m s}^{-1}$ at $50°$ to the horizontal from ground level. Find the maximum height, time of flight, and range.
+A projectile is launched at $30\,\text{m s}^{-1}$ at $50^\circ$ to the horizontal from ground level. Find the maximum height, time of flight, and range.
 </details>
 
 <details>
 <summary>Solution 1</summary>
-$V = 30$, $\theta = 50°$, $g = 9.8$.
+$V = 30$, $\theta = 50^\circ$, $g = 9.8$.
 
 $H = \dfrac{V^2\sin^2\theta}{2g} = \dfrac{900\sin^2 50°}{19.6} = \dfrac{900 \times 0.5868}{19.6} \approx 26.94\,\text{m}$.
 
@@ -259,7 +259,7 @@ A projectile is launched from a cliff $80\,\text{m}$ high at $20\,\text{m s}^{-1
 
 <details>
 <summary>Solution 3</summary>
-$\theta = 0°$, so $v_x = 20$, $v_y = 0$.
+$\theta = 0^\circ$, so $v_x = 20$, $v_y = 0$.
 
 $y = -\dfrac{1}{2}gt^2 = -80 \implies t^2 = \dfrac{160}{9.8} \implies t \approx 4.04\,\text{s}$.
 
@@ -271,14 +271,14 @@ $x = 20 \times 4.04 \approx 80.8\,\text{m}$.
 
 <details>
 <summary>Problem 4</summary>
-Find the angle of projection for maximum range on an inclined plane of angle $30°$ when projecting up the plane.
+Find the angle of projection for maximum range on an inclined plane of angle $30^\circ$ when projecting up the plane.
 </details>
 
 <details>
 <summary>Solution 4</summary>
-For maximum range up the plane: $\theta = 45° + \dfrac{\alpha}{2} = 45° + 15° = 60°$.
+For maximum range up the plane: $\theta = 45° + \dfrac{\alpha}{2} = 45° + 15° = 60^\circ$.
 
-The projectile should be launched at $60°$ to the horizontal.
+The projectile should be launched at $60^\circ$ to the horizontal.
 
 **If you get this wrong, revise:**
 [Maximum range on an inclined plane](#43-maximum-range-on-an-inclined-plane) — Section 4.3.
@@ -287,7 +287,7 @@ The projectile should be launched at $60°$ to the horizontal.
 
 <details>
 <summary>Problem 5</summary>
-A ball is thrown at $15\,\text{m s}^{-1}$ from a height of $2\,\text{m}$ at $40°$ above the horizontal. Find the speed and angle when it hits the ground.
+A ball is thrown at $15\,\text{m s}^{-1}$ from a height of $2\,\text{m}$ at $40^\circ$ above the horizontal. Find the speed and angle when it hits the ground.
 </details>
 
 <details>
@@ -303,7 +303,7 @@ $v_x = 15\cos 40° = 11.49\,\text{m s}^{-1}$.
 Speed
 $= \sqrt{11.49^2 + 11.55^2} = \sqrt{132.0 + 133.4} = \sqrt{265.4} \approx 16.3\,\text{m s}^{-1}$.
 
-Angle below horizontal: $\arctan(11.55/11.49) \approx 45.1°$.
+Angle below horizontal: $\arctan(11.55/11.49) \approx 45.1^\circ$.
 
 **If you get this wrong, revise:** [Velocity at Any Point](#5-velocity-at-any-point) — Section 5.
 
@@ -311,7 +311,7 @@ Angle below horizontal: $\arctan(11.55/11.49) \approx 45.1°$.
 
 <details>
 <summary>Problem 6</summary>
-A projectile is launched at $25\,\text{m s}^{-1}$ at $35°$ up a plane inclined at $20°$ to the horizontal. Find the range on the plane.
+A projectile is launched at $25\,\text{m s}^{-1}$ at $35^\circ$ up a plane inclined at $20^\circ$ to the horizontal. Find the range on the plane.
 </details>
 
 <details>
@@ -326,12 +326,12 @@ $= \dfrac{1250 \times 0.8192 \times 0.2588}{9.8 \times 0.8830} = \dfrac{265.1}{8
 
 <details>
 <summary>Problem 7</summary>
-Show that for a given initial speed $V$, the maximum range on horizontal ground is $\dfrac{V^2}{g}$ and occurs at $\theta = 45°$.
+Show that for a given initial speed $V$, the maximum range on horizontal ground is $\dfrac{V^2}{g}$ and occurs at $\theta = 45^\circ$.
 </details>
 
 <details>
 <summary>Solution 7</summary>
-$R = \dfrac{V^2\sin 2\theta}{g}$. The maximum value of $\sin 2\theta$ is 1, occurring when $2\theta = 90°$, so $\theta = 45°$.
+$R = \dfrac{V^2\sin 2\theta}{g}$. The maximum value of $\sin 2\theta$ is 1, occurring when $2\theta = 90^\circ$, so $\theta = 45^\circ$.
 
 $R_{\max} = \dfrac{V^2 \times 1}{g} = \dfrac{V^2}{g}$. $\blacksquare$
 
@@ -342,7 +342,7 @@ Section 3.3.
 
 <details>
 <summary>Problem 8</summary>
-A cricketer hits a ball at $28\,\text{m s}^{-1}$ at $35°$ to the horizontal. A fielder stands $60\,\text{m}$ away. Can the fielder catch the ball at the same height?
+A cricketer hits a ball at $28\,\text{m s}^{-1}$ at $35^\circ$ to the horizontal. A fielder stands $60\,\text{m}$ away. Can the fielder catch the ball at the same height?
 </details>
 
 <details>
@@ -365,7 +365,7 @@ Section 2.
 
 <details>
 <summary>Problem 9</summary>
-A projectile is launched from the top of an incline of angle $25°$ at $20\,\text{m s}^{-1}$ at angle $30°$ to the horizontal, directed down the plane. Find the range on the plane.
+A projectile is launched from the top of an incline of angle $25^\circ$ at $20\,\text{m s}^{-1}$ at angle $30^\circ$ to the horizontal, directed down the plane. Find the range on the plane.
 </details>
 
 <details>
@@ -398,7 +398,7 @@ $\tan\theta = \dfrac{9.8 \times 1200}{2V^2\cos^2\theta \times 20} = \dfrac{588}{
 From (i):
 $5 = 20\tan\theta - \dfrac{1960}{V^2\cos^2\theta} = 20\tan\theta - \dfrac{1960}{588}\tan\theta = \tan\theta\left(20 - \dfrac{10}{3}\right) = \dfrac{50}{3}\tan\theta$.
 
-$\tan\theta = \dfrac{15}{50} = 0.3$, so $\theta \approx 16.7°$.
+$\tan\theta = \dfrac{15}{50} = 0.3$, so $\theta \approx 16.7^\circ$.
 
 $V^2\cos^2\theta = \dfrac{588}{0.3} = 1960$.
 $V^2 = \dfrac{1960}{\cos^2 16.7°} = \dfrac{1960}{0.9163} \approx 2139$.
@@ -429,13 +429,13 @@ $$R = \frac{2V^2\cos^2\theta\tan\theta}{g} = \frac{2V^2\sin\theta\cos\theta}{g} 
 
 To maximise, differentiate with respect to $\theta$ and set to zero:
 
-$$\frac{dR}{d\theta} = \frac{V^2}{g}\cdot 2\cos 2\theta = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45°$$
+$$\frac{dR}{d\theta} = \frac{V^2}{g}\cdot 2\cos 2\theta = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45^\circ$$
 
 Second derivative check:
 
 $$\frac{d^2R}{d\theta^2} = \frac{V^2}{g}\cdot(-4\sin 2\theta) \bigg|_{\theta = 45°} = \frac{V^2}{g}(-4) \lt{} 0 \quad \checkmark$$
 
-So the maximum is confirmed. Substituting $\theta = 45°$:
+So the maximum is confirmed. Substituting $\theta = 45^\circ$:
 
 $$R_{\max} = \frac{V^2\sin 90°}{g} = \frac{V^2}{g}$$
 
@@ -474,7 +474,7 @@ The maximum height above ground level is $h + \dfrac{V^2\sin^2\theta}{2g}$.
 
 ### 7.4 Angle for maximum range from a height
 
-For maximum range from a height, the optimal angle is **less than** $45°$. The exact value
+For maximum range from a height, the optimal angle is **less than** $45^\circ$. The exact value
 satisfies:
 
 $$\theta = \arctan\!\left(\frac{V}{\sqrt{V^2 + 2gh}}\right)$$
@@ -496,11 +496,11 @@ i.e.:
 
 $$\tan\theta = \frac{V\sin\theta}{V\cos\theta} = \frac{V\sqrt{1 - \frac{V^2}{V^2 + 2gh}}}{\frac{V^2}{\sqrt{V^2 + 2gh}}} = \frac{V}{\sqrt{V^2 + 2gh}}$$
 
-When $h = 0$, this reduces to $\tan\theta = 1$, i.e., $\theta = 45°$ as expected. $\blacksquare$
+When $h = 0$, this reduces to $\tan\theta = 1$, i.e., $\theta = 45^\circ$ as expected. $\blacksquare$
 
 ### 7.5 Worked example: projectile from a cliff
 
-**Example.** A stone is thrown from a cliff $50\,\text{m}$ high at $15\,\text{m s}^{-1}$ at $30°$
+**Example.** A stone is thrown from a cliff $50\,\text{m}$ high at $15\,\text{m s}^{-1}$ at $30^\circ$
 above the horizontal. Find the time of flight, the horizontal range, the maximum height above
 ground, and the speed and direction of impact.
 
@@ -524,14 +524,14 @@ $v_y = 15\sin 30° - 9.8(4.05) = 7.5 - 39.69 = -32.19\,\text{m s}^{-1}$.
 Speed
 $= \sqrt{12.99^2 + 32.19^2} = \sqrt{168.7 + 1036.2} = \sqrt{1204.9} \approx 34.7\,\text{m s}^{-1}$.
 
-**Angle below horizontal:** $\arctan(32.19/12.99) \approx 68.1°$.
+**Angle below horizontal:** $\arctan(32.19/12.99) \approx 68.1^\circ$.
 
 ---
 
 ## 8. Worked Example: Range on an Inclined Plane
 
-**Example.** A projectile is launched at $30\,\text{m s}^{-1}$ at $55°$ to the horizontal up a plane
-inclined at $20°$. Find the range on the plane and the time of flight.
+**Example.** A projectile is launched at $30\,\text{m s}^{-1}$ at $55^\circ$ to the horizontal up a plane
+inclined at $20^\circ$. Find the range on the plane and the time of flight.
 
 Using the range formula:
 
@@ -539,7 +539,7 @@ $$r = \frac{2V^2\cos\theta\sin(\theta - \alpha)}{g\cos^2\alpha} = \frac{2(900)\c
 
 $$= \frac{1800 \times 0.5736 \times 0.5736}{9.8 \times 0.8830} = \frac{592.4}{8.653} \approx 68.5\,\text{m}$$
 
-Time of flight: the projectile lands when $y = x\tan 20°$.
+Time of flight: the projectile lands when $y = x\tan 20^\circ$.
 
 From the trajectory equation:
 
@@ -624,18 +624,18 @@ Always check that your answer makes physical sense:
 
 $R = \dfrac{V^2\sin 2\theta}{g} \implies 50 = \dfrac{625\sin 2\theta}{9.8} \implies \sin 2\theta = \dfrac{490}{625} = 0.784$.
 
-$2\theta = 51.6°$ or $128.4°$, so $\theta = 25.8°$ or $64.2°$.
+$2\theta = 51.6^\circ$ or $128.4^\circ$, so $\theta = 25.8^\circ$ or $64.2^\circ$.
 
-For $\theta = 25.8°$: $H = \dfrac{625\sin^2 25.8°}{19.6} \approx 5.83\,\text{m}$,
+For $\theta = 25.8^\circ$: $H = \dfrac{625\sin^2 25.8°}{19.6} \approx 5.83\,\text{m}$,
 $T = \dfrac{50\sin 25.8°}{9.8} \approx 2.19\,\text{s}$.
 
-For $\theta = 64.2°$: $H = \dfrac{625\sin^2 64.2°}{19.6} \approx 25.8\,\text{m}$,
+For $\theta = 64.2^\circ$: $H = \dfrac{625\sin^2 64.2°}{19.6} \approx 25.8\,\text{m}$,
 $T = \dfrac{50\sin 64.2°}{9.8} \approx 4.61\,\text{s}$.
 
 </details>
 
 <details>
-<summary>Q2. A ball is thrown from a window $12\,\text{m}$ above the ground at $10\,\text{m s}^{-1}$ at $45°$ below the horizontal. Find the time to hit the ground and the horizontal distance from the window.</summary>
+<summary>Q2. A ball is thrown from a window $12\,\text{m}$ above the ground at $10\,\text{m s}^{-1}$ at $45^\circ$ below the horizontal. Find the time to hit the ground and the horizontal distance from the window.</summary>
 
 Taking upward as positive, $V_y = -10\sin 45° = -7.071\,\text{m s}^{-1}$.
 
@@ -648,19 +648,19 @@ $R = 10\cos 45° \times 1.002 \approx 7.09\,\text{m}$.
 </details>
 
 <details>
-<summary>Q3. Prove that the maximum horizontal range from a height $h$ is achieved at an angle less than $45°$, and find the optimal angle when $V = 20\,\text{m s}^{-1}$ and $h = 10\,\text{m}$.</summary>
+<summary>Q3. Prove that the maximum horizontal range from a height $h$ is achieved at an angle less than $45^\circ$, and find the optimal angle when $V = 20\,\text{m s}^{-1}$ and $h = 10\,\text{m}$.</summary>
 
 From Section 7.4: $\theta = \arctan\!\left(\dfrac{V}{\sqrt{V^2 + 2gh}}\right)$.
 
-$\theta = \arctan\!\left(\dfrac{20}{\sqrt{400 + 196}}\right) = \arctan\!\left(\dfrac{20}{\sqrt{596}}\right) = \arctan\!\left(\dfrac{20}{24.41}\right) = \arctan(0.819) \approx 39.3°$.
+$\theta = \arctan\!\left(\dfrac{20}{\sqrt{400 + 196}}\right) = \arctan\!\left(\dfrac{20}{\sqrt{596}}\right) = \arctan\!\left(\dfrac{20}{24.41}\right) = \arctan(0.819) \approx 39.3^\circ$.
 
-This is less than $45°$ because the projectile benefits from the extra "free" height gained from the
+This is less than $45^\circ$ because the projectile benefits from the extra "free" height gained from the
 elevated launch point, so a flatter trajectory maximises the horizontal component of velocity.
 
 </details>
 
 <details>
-<summary>Q4. A projectile is launched at $18\,\text{m s}^{-1}$ at $50°$ to the horizontal up a plane inclined at $15°$. Find the range on the plane and the time of flight.</summary>
+<summary>Q4. A projectile is launched at $18\,\text{m s}^{-1}$ at $50^\circ$ to the horizontal up a plane inclined at $15^\circ$. Find the range on the plane and the time of flight.</summary>
 
 $r = \dfrac{2(324)\cos 50°\sin 35°}{9.8\cos^2 15°} = \dfrac{648 \times 0.6428 \times 0.5736}{9.8 \times 0.9330}$
 
@@ -687,14 +687,14 @@ gained equals gravitational potential energy lost.
 </details>
 
 <details>
-<summary>Q6. A golfer hits a ball from the top of a hill $30\,\text{m}$ above the fairway. The ball leaves at $40\,\text{m s}^{-1}$ at $35°$ above the horizontal. The fairway slopes downward at $10°$ below the horizontal. Find the distance the ball travels along the fairway before landing.</summary>
+<summary>Q6. A golfer hits a ball from the top of a hill $30\,\text{m}$ above the fairway. The ball leaves at $40\,\text{m s}^{-1}$ at $35^\circ$ above the horizontal. The fairway slopes downward at $10^\circ$ below the horizontal. Find the distance the ball travels along the fairway before landing.</summary>
 
 The landing condition is that the ball reaches the sloping fairway. The fairway surface passes
-through $(0, -30)$ and has equation $y = -30 - x\tan 10°$.
+through $(0, -30)$ and has equation $y = -30 - x\tan 10^\circ$.
 
 Setting the trajectory equal to the fairway:
 
-$x\tan 35° - \dfrac{9.8x^2}{2(1600)\cos^2 35°} = -30 - x\tan 10°$
+$x\tan 35° - \dfrac{9.8x^2}{2(1600)\cos^2 35°} = -30 - x\tan 10^\circ$
 
 $x(0.7002 + 0.1763) - \dfrac{9.8x^2}{2(1600)(0.6710)} = -30$
 

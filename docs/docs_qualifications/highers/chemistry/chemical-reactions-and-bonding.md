@@ -142,9 +142,9 @@ pair repulsion.
 
 The electron pairs around a central atom repel each other to positions that maximise separation. For
 four electron pairs (tetrahedral), the angle that maximises separation in three dimensions is
-$\arccos(-1/3) \approx 109.5°$. When lone pairs replace bonding pairs, the lone pair--bond pair
+$\arccos(-1/3) \approx 109.5^\circ$. When lone pairs replace bonding pairs, the lone pair--bond pair
 repulsion is greater than bond pair--bond pair repulsion, compressing the remaining bond angles.
-This explains why $\text{NH}_3$ has bond angles of $107°$ and $\text{H}_2\text{O}$ has $104.5°$.
+This explains why $\text{NH}_3$ has bond angles of $107^\circ$ and $\text{H}_2\text{O}$ has $104.5^\circ$.
 
 **Worked Example 4:** Predict the shape and bond angle of $\text{SF}_4$.
 
@@ -152,7 +152,7 @@ Sulfur in $\text{SF}_4$ has 6 valence electrons. Four are used in S-F bonds, lea
 Total electron domains = 5 (4 bonding + 1 lone pair). This corresponds to a trigonal bipyramidal
 electron geometry. The lone pair occupies an equatorial position to minimise repulsion (two 90°
 interactions rather than three). The molecular shape is **see-saw** with bond angles of
-approximately $102°$ (equatorial) and $173°$ (axial-equatorial).
+approximately $102^\circ$ (equatorial) and $173^\circ$ (axial-equatorial).
 
 ### Intermolecular Forces
 
@@ -538,7 +538,7 @@ malleability, and high melting point.
 difference is $3.16 - 1.61 = 1.55$, suggesting polar covalent. $\text{Al}^{3+}$ is a small, highly
 charged cation with high polarising power, and $\text{Cl}^-$ is a relatively large anion. According
 to Fajans' Rules, this gives $\text{AlCl}_3$ significant **covalent character**. Indeed,
-$\text{AlCl}_3$ sublimes at $180°$C (low for an ionic compound) and forms dimer molecules
+$\text{AlCl}_3$ sublimes at $180^\circ\mathrm{C}$ (low for an ionic compound) and forms dimer molecules
 $\text{Al}_2\text{Cl}_6$ in the gas phase.
 
 ---
@@ -548,7 +548,7 @@ $\text{Al}_2\text{Cl}_6$ in the gas phase.
 Both $\text{H}_2\text{O}$ and $\text{CO}_2$ contain three atoms, yet they have different shapes.
 
 **$\text{CO}_2$:** Carbon has 4 valence electrons. Each double bond counts as one electron domain.
-With two electron domains (two double bonds), the electron geometry is linear ($180°$). Since there
+With two electron domains (two double bonds), the electron geometry is linear ($180^\circ$). Since there
 are no lone pairs, the molecular shape is also linear. The two C=O bond dipoles are equal in
 magnitude and opposite in direction, so they cancel: $\text{CO}_2$ is non-polar.
 
@@ -598,7 +598,7 @@ arrangement, forming a rigid three-dimensional network. Every C-C bond is a stro
 
 **Properties explained:**
 
-- **Very high melting point ($> 3500°$C):** All bonds must be broken to melt diamond, requiring
+- **Very high melting point ($> 3500^\circ$C):** All bonds must be broken to melt diamond, requiring
   enormous energy.
 - **Extremely hard:** The three-dimensional network prevents any movement of atoms.
 - **Does not conduct electricity:** All four valence electrons of each carbon are localised in sigma
@@ -626,7 +626,7 @@ the entire layer.
 Each silicon atom is covalently bonded to four oxygen atoms, and each oxygen atom is bonded to two
 silicon atoms, forming a giant covalent network similar to diamond.
 
-- Very high melting point ($\sim 1700°$C)
+- Very high melting point ($\sim 1700^\circ$C)
 - Hard and insoluble
 - Does not conduct electricity
 

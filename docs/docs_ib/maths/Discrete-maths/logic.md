@@ -579,7 +579,7 @@ then $b = c$.
 
 **Error 2:** "If $\sin A = \sin B$, then $A = B$."
 
-Counterexample: $\sin 30° = \sin 150° = 0.5$, but $30° \neq 150°$. The correct statement is: if
+Counterexample: $\sin 30° = \sin 150° = 0.5$, but $30° \neq 150^\circ$. The correct statement is: if
 $\sin A = \sin B$ and $A, B \in [-90°, 90°]$, then $A = B$. In general, $\sin A = \sin B$ implies
 $A = B + 360°k$ or $A = 180° - B + 360°k$ for some integer $k$.
 

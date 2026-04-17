@@ -350,7 +350,7 @@ $60000 = 400v \implies v = 150\,\text{m/s}$.
 
 <details>
 <summary>Problem 4</summary>
-A block of mass $4\,\text{kg}$ slides $6\,\text{m}$ down a rough slope inclined at $30°$ ($\mu = 0.2$). It starts from rest. Find its speed at the bottom using energy methods.
+A block of mass $4\,\text{kg}$ slides $6\,\text{m}$ down a rough slope inclined at $30^\circ$ ($\mu = 0.2$). It starts from rest. Find its speed at the bottom using energy methods.
 </details>
 
 <details>
@@ -423,7 +423,7 @@ $$\text{EPE} = \int_0^x T\,dx' = \int_0^x kx'\,dx' = \frac{1}{2}kx^2$$
 
 <details>
 <summary>Problem 9</summary>
-A projectile is launched at $20\,\text{m/s}$ at $60°$ to the horizontal from a cliff of height $30\,\text{m}$. Find its speed when it hits the ground using energy methods. Take $g = 9.8\,\text{m/s}^2$.
+A projectile is launched at $20\,\text{m/s}$ at $60^\circ$ to the horizontal from a cliff of height $30\,\text{m}$. Find its speed when it hits the ground using energy methods. Take $g = 9.8\,\text{m/s}^2$.
 </details>
 
 <details>
@@ -498,7 +498,7 @@ $s = \frac{2}{3}\sqrt{\frac{2(5000)}{500}} \times 5^{3/2} = \frac{2}{3}\sqrt{20}
 
 <details>
 <summary>Problem 13</summary>
-A block of mass $2\,\text{kg}$ is projected up a rough slope inclined at $45°$ to the horizontal
+A block of mass $2\,\text{kg}$ is projected up a rough slope inclined at $45^\circ$ to the horizontal
 with speed $12\,\text{m/s}$. The coefficient of friction is $0.3$. Using energy methods, find the
 distance travelled before the block comes to rest, and the speed when it returns to its starting
 point.
@@ -549,7 +549,7 @@ solution $x = 0$).
 <summary>Problem 15</summary>
 A small body of mass $0.2\,\text{kg}$ is attached to one end of a light elastic spring of stiffness
 $50\,\text{N/m}$ and natural length $0.5\,\text{m}$. The other end is fixed to a point on a smooth
-inclined plane at angle $30°$ to the horizontal. The body is released from rest at the point where
+inclined plane at angle $30^\circ$ to the horizontal. The body is released from rest at the point where
 the spring is at its natural length. Find the maximum extension. Take $g = 9.8\,\text{m/s}^2$.
 </details>
 

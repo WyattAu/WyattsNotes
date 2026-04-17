@@ -50,7 +50,7 @@ length to the radius.
 
 $$\theta\text{ (radians)} = \frac{\text{arc length}}{r}$$
 
-The full circle: $2\pi$ radians $= 360°$, so $\pi$ radians $= 180°$.
+The full circle: $2\pi$ radians $= 360^\circ$, so $\pi$ radians $= 180^\circ$.
 
 **Theorem (Arc length and sector area).** For a sector of radius $r$ and angle $\theta$ (in
 radians):
@@ -628,11 +628,11 @@ $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
 
 ---
 
-**Problem 4.** Find the exact value of $\sin 75°$.
+**Problem 4.** Find the exact value of $\sin 75^\circ$.
 
 <details>
 <summary>Solution</summary>
-$$\sin 75° = \sin(45° + 30°) = \sin 45°\cos 30° + \cos 45°\sin 30°$$
+$$\sin 75° = \sin(45° + 30°) = \sin 45°\cos 30° + \cos 45°\sin 30^\circ$$
 
 $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4}$$
 

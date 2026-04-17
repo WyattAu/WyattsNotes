@@ -382,7 +382,7 @@ $$
 
 ### Worked Example: Sine Rule
 
-**Problem:** In triangle $ABC$, $a = 8$ cm, $A = 45°$, $B = 30°$. Find $b$.
+**Problem:** In triangle $ABC$, $a = 8$ cm, $A = 45^\circ$, $B = 30^\circ$. Find $b$.
 
 **Solution:**
 
@@ -415,8 +415,8 @@ Given sides $a$ and $b$ and angle $A$ (where $a$ is opposite $A$):
 
 - **No triangle** if $a \lt b\sin A$
 - **One right-angled triangle** if $a = b\sin A$
-- **Two triangles** if $b\sin A \lt a \lt b$ and $A \lt 90°$
-- **One triangle** if $a \ge b$ or $A \ge 90°$
+- **Two triangles** if $b\sin A \lt a \lt b$ and $A \lt 90^\circ$
+- **One triangle** if $a \ge b$ or $A \ge 90^\circ$
 
 ### Why Two Triangles?
 
@@ -426,12 +426,12 @@ $$
 B_1 = \arcsin(k) \quad \text{and} \quad B_2 = 180° - \arcsin(k)
 $$
 
-Both may be valid since $B_1 + B_2 = 180°$ (so if $A + B_1 \lt 180°$, check whether
-$A + B_2 \lt 180°$ as well).
+Both may be valid since $B_1 + B_2 = 180^\circ$ (so if $A + B_1 \lt 180^\circ$, check whether
+$A + B_2 \lt 180^\circ$ as well).
 
 ### Worked Example: Ambiguous Case
 
-**Problem:** In triangle $ABC$, $a = 7$, $b = 10$, $A = 40°$. Find all possible triangles.
+**Problem:** In triangle $ABC$, $a = 7$, $b = 10$, $A = 40^\circ$. Find all possible triangles.
 
 **Solution:**
 
@@ -447,11 +447,11 @@ $$
 B_1 = \arcsin(0.919) \approx 66.8°, \quad B_2 = 180° - 66.8° = 113.2°
 $$
 
-Check both: $A + B_1 = 106.8° \lt 180°$ and $A + B_2 = 153.2° \lt 180°$. Both are valid.
+Check both: $A + B_1 = 106.8° \lt 180^\circ$ and $A + B_2 = 153.2° \lt 180^\circ$. Both are valid.
 
-**Triangle 1:** $B = 66.8°$, $C = 73.2°$, $c_1 = \frac{7\sin 73.2°}{\sin 40°} \approx 10.4$
+**Triangle 1:** $B = 66.8^\circ$, $C = 73.2^\circ$, $c_1 = \frac{7\sin 73.2°}{\sin 40°} \approx 10.4$
 
-**Triangle 2:** $B = 113.2°$, $C = 26.8°$, $c_2 = \frac{7\sin 26.8°}{\sin 40°} \approx 4.89$
+**Triangle 2:** $B = 113.2^\circ$, $C = 26.8^\circ$, $c_2 = \frac{7\sin 26.8°}{\sin 40°} \approx 4.89$
 
 ## Non-Right-Angled Triangle Problems
 
@@ -465,7 +465,7 @@ Check both: $A + B_1 = 106.8° \lt 180°$ and $A + B_2 = 153.2° \lt 180°$. Bot
 
 ### Worked Example: Multi-Step Triangle Problem
 
-**Problem:** In triangle $ABC$, $a = 12$, $b = 8$, $A = 65°$. Find the area of the triangle.
+**Problem:** In triangle $ABC$, $a = 12$, $b = 8$, $A = 65^\circ$. Find the area of the triangle.
 
 **Solution:**
 
@@ -475,7 +475,7 @@ $$
 \frac{\sin B}{8} = \frac{\sin 65°}{12} \implies \sin B = \frac{2\sin 65°}{3} \approx 0.604
 $$
 
-Since $b \lt a$, there is only one solution: $B \approx 37.2°$, so $C = 77.8°$.
+Since $b \lt a$, there is only one solution: $B \approx 37.2^\circ$, so $C = 77.8^\circ$.
 
 $$
 \text{Area} = \frac{1}{2}(12)(8)\sin 77.8° \approx 47.0 \text{ square units}
@@ -483,13 +483,13 @@ $$
 
 ### Worked Example: Bearing Problem
 
-**Problem:** A ship sails from port $A$ on a bearing of $050°$ for $15$ km to point $B$, then on a
-bearing of $110°$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to $A$.
+**Problem:** A ship sails from port $A$ on a bearing of $050^\circ$ for $15$ km to point $B$, then on a
+bearing of $110^\circ$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to $A$.
 
 **Solution:**
 
-The angle at $B$ is the change in bearing: $110° - 050° = 60°$. The interior angle at $B$ is
-$180° - 60° = 120°$.
+The angle at $B$ is the change in bearing: $110° - 050° = 60^\circ$. The interior angle at $B$ is
+$180° - 60° = 120^\circ$.
 
 Using the cosine rule:
 
@@ -503,7 +503,7 @@ $$
 \frac{\sin C}{15} = \frac{\sin 120°}{5\sqrt{37}} \implies C \approx 25.3°
 $$
 
-The bearing from $C$ to $A$ is $360° - 110° - 25.3° \approx 225°$.
+The bearing from $C$ to $A$ is $360° - 110° - 25.3° \approx 225^\circ$.
 
 ## Solving Trigonometric Equations
 
@@ -736,7 +736,7 @@ period. A common mistake is to find $\arcsin(k)$ but forget $\pi - \arcsin(k)$.
 ### Mixing Up Degrees and Radians
 
 Ensure your calculator is in the correct mode. If an angle is given as $\frac{\pi}{3}$, it is in
-radians; if given as $60°$, it is in degrees. Forgetting to convert is one of the most frequent
+radians; if given as $60^\circ$, it is in degrees. Forgetting to convert is one of the most frequent
 errors.
 
 ### Wrong Sign in Compound Angle Formulas

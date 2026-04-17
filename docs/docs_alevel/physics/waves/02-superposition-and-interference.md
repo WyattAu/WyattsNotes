@@ -355,7 +355,7 @@ Calculate the angle of the second-order maximum.
 
 **Answer.** $d = 1/500$ mm $= 2.0 \times 10^{-6}$ m. $d\sin\theta = 2\lambda$.
 $\sin\theta = \frac{2 \times 600 \times 10^{-9}}{2.0 \times 10^{-6}} = \frac{1.2 \times 10^{-6}}{2.0 \times 10^{-6}} = 0.60$.
-$\theta = \arcsin(0.60) = 36.9°$.
+$\theta = \arcsin(0.60) = 36.9^\circ$.
 
 <b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
 
@@ -491,12 +491,12 @@ the second order, calculate the angular range subtended by the visible spectrum.
 **Answer.** $d = 1/400$ mm $= 2.5 \times 10^{-6}$ m. For $n = 2$:
 
 For 400 nm: $\sin\theta = \frac{2 \times 400 \times 10^{-9}}{2.5 \times 10^{-6}} = 0.320$,
-$\theta = 18.7°$.
+$\theta = 18.7^\circ$.
 
 For 700 nm: $\sin\theta = \frac{2 \times 700 \times 10^{-9}}{2.5 \times 10^{-6}} = 0.560$,
-$\theta = 34.1°$.
+$\theta = 34.1^\circ$.
 
-Angular range $= 34.1° - 18.7° = 15.4°$.
+Angular range $= 34.1° - 18.7° = 15.4^\circ$.
 
 <b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
 
