@@ -27,7 +27,7 @@ DNA is a double-stranded helix composed of nucleotides.
 - Adenine (A) pairs with Thymine (T) -- two hydrogen bonds.
 - Cytosine (C) pairs with Guanine (G) -- three hydrogen bonds.
 
-**Chargaff's rule:** $[\mathrm{A}] = [\mathrm{T}]$ and $[\mathrm{C}] = [\mathrm{G}]$.
+**Chargaff's rule:** $[\text{A}] = [\text{T}]$ and $[\text{C}] = [\text{G}]$.
 
 ### DNA Replication (HL)
 
@@ -251,7 +251,7 @@ $$
 $$
 
 Compare to the critical value at the appropriate degrees of freedom
-($\mathrm{df} = \text{number of genotypes} - \text{number of alleles}$).
+($\text{df} = \text{number of genotypes} - \text{number of alleles}$).
 
 **Worked Example: Hardy-Weinberg with multiple alleles.**
 

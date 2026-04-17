@@ -241,7 +241,7 @@ When an object falls through a fluid:
 
 1. Initially, the only force is weight (downward). Acceleration = $g$.
 2. As speed increases, drag increases.
-3. The resultant force decreases: $F_{\mathrm{net}} = W - D$.
+3. The resultant force decreases: $F_{\text{net}} = W - D$.
 4. Eventually, drag equals weight: $D = W$. The resultant force is zero, and acceleration is zero.
 5. The object continues at a constant speed called **terminal velocity**.
 

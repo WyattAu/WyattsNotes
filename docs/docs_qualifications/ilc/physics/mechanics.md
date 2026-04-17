@@ -233,7 +233,7 @@ horizontal force of 60 N is applied. Find the acceleration.
 
 Maximum friction: $f = 0.4 \times 10 \times 9.8 = 39.2\text{ N}$.
 
-Net force: $F_{\mathrm{net}} = 60 - 39.2 = 20.8\text{ N}$.
+Net force: $F_{\text{net}} = 60 - 39.2 = 20.8\text{ N}$.
 
 $$
 a = \frac{20.8}{10} = 2.08\text{ m/s}^2
@@ -305,10 +305,10 @@ $$
 When friction is present, the work-energy theorem becomes:
 
 $$
-W_{\mathrm{nc}} = \Delta E_k + \Delta E_p
+W_{\text{nc}} = \Delta E_k + \Delta E_p
 $$
 
-where $W_{\mathrm{nc}} = -fd$ is the work done by friction (negative because friction opposes motion).
+where $W_{\text{nc}} = -fd$ is the work done by friction (negative because friction opposes motion).
 
 ### Power (OL/HL)
 

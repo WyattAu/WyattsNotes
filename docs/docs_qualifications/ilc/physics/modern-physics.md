@@ -355,13 +355,13 @@ The ionisation energy is the minimum energy required to remove an electron from 
 (transition from $n$ to $n = \infty$). For hydrogen:
 
 $$
-E_{\mathrm{ion}} = 0 - (-13.6) = 13.6\text{ eV}
+E_{\text{ion}} = 0 - (-13.6) = 13.6\text{ eV}
 $$
 
 This corresponds to a photon of wavelength:
 
 $$
-\lambda = \frac{hc}{E_{\mathrm{ion}}} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{13.6 \times 1.6 \times 10^{-19}} = 91.2\text{ nm}
+\lambda = \frac{hc}{E_{\text{ion}}} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{13.6 \times 1.6 \times 10^{-19}} = 91.2\text{ nm}
 $$
 
 This is in the far ultraviolet (Lyman limit). Any photon with wavelength shorter than
@@ -621,16 +621,16 @@ Types of decay:
 
 | Type             | Symbol                          | Change                                 | Penetrating Power    |
 | ---------------- | ------------------------------- | -------------------------------------- | -------------------- |
-| Alpha decay      | $\alpha$ (${}^4_2\mathrm{He}$)    | $Z$ decreases by 2, $A$ decreases by 4 | Low (paper)          |
-| Beta-minus decay | $\beta^-$ (${}^0_{-1}\mathrm{e}$) | $Z$ increases by 1, $A$ unchanged      | Moderate (aluminium) |
+| Alpha decay      | $\alpha$ (${}^4_2\text{He}$)    | $Z$ decreases by 2, $A$ decreases by 4 | Low (paper)          |
+| Beta-minus decay | $\beta^-$ (${}^0_{-1}\text{e}$) | $Z$ increases by 1, $A$ unchanged      | Moderate (aluminium) |
 | Gamma decay      | $\gamma$                        | No change in $Z$ or $A$                | High (lead/concrete) |
 
 **Alpha decay** occurs mainly in heavy nuclei ($A \gt 150$). The emitted alpha particle is a
-helium-4 nucleus. Example: ${}^{238}_{92}\mathrm{U} \to {}^{234}_{90}\mathrm{Th} + {}^4_2\mathrm{He}$.
+helium-4 nucleus. Example: ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^4_2\text{He}$.
 
 **Beta-minus decay** occurs when a neutron converts to a proton, emitting an electron and an
 antineutrino: $n \to p + e^- + \bar{\nu}_e$. This process is mediated by the weak nuclear force.
-Example: ${}^{14}_{6}\mathrm{C} \to {}^{14}_{7}\mathrm{N} + {}^0_{-1}\mathrm{e} + \bar{\nu}_e$.
+Example: ${}^{14}_{6}\text{C} \to {}^{14}_{7}\text{N} + {}^0_{-1}\text{e} + \bar{\nu}_e$.
 
 **Gamma decay** occurs when a nucleus in an excited state emits a high-energy photon to reach a
 lower energy state. The nucleus remains the same isotope; only its energy changes.
@@ -745,7 +745,7 @@ products include two (or sometimes three) lighter nuclei, additional neutrons (w
 chain reaction), and energy.
 
 $$
-{}^{235}_{92}\mathrm{U} + {}^1_0\mathrm{n} \to {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3{}^1_0\mathrm{n} + \text{energy}
+{}^{235}_{92}\text{U} + {}^1_0\text{n} \to {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3{}^1_0\text{n} + \text{energy}
 $$
 
 The released neutrons can induce further fission events, creating a **chain reaction**. In a nuclear
@@ -760,7 +760,7 @@ higher binding energy per nucleon. Fusion requires extremely high temperatures
 ($\sim 10^7\text{ K}$) to overcome the Coulomb repulsion between the positively charged nuclei.
 
 $$
-{}^2_1\mathrm{H} + {}^3_1\mathrm{H} \to {}^4_2\mathrm{He} + {}^1_0\mathrm{n} + \text{energy}
+{}^2_1\text{H} + {}^3_1\text{H} \to {}^4_2\text{He} + {}^1_0\text{n} + \text{energy}
 $$
 
 Fusion is the process that powers stars. In the Sun, the proton-proton chain converts hydrogen to

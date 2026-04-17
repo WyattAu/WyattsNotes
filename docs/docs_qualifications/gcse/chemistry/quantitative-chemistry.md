@@ -53,14 +53,14 @@ $$M_r = 2(55.8) + 3(16.0) = 111.6 + 48.0 = 159.6$$
 In a balanced chemical equation, the total $M_r$ of reactants equals the total $M_r$ of products.
 This is a direct consequence of the conservation of mass.
 
-**Worked Example.** Verify that the equation $\text{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$ obeys the
+**Worked Example.** Verify that the equation $\text{CaCO}_3 \to \text{CaO} + \text{CO}_2$ obeys the
 law of conservation of mass.
 
-$M_r(\text{CaCO}_3) = 100.1$, $M_r(\mathrm{CaO}) = 56.1$, $M_r(\mathrm{CO}_2) = 44.0$.
+$M_r(\text{CaCO}_3) = 100.1$, $M_r(\text{CaO}) = 56.1$, $M_r(\text{CO}_2) = 44.0$.
 
 $100.1 = 56.1 + 44.0 = 100.1$. The equation is balanced.
 
-**Worked Example.** Verify the conservation of mass for: $2\mathrm{Mg} + \mathrm{O}_2 \to 2\mathrm{MgO}$.
+**Worked Example.** Verify the conservation of mass for: $2\text{Mg} + \text{O}_2 \to 2\text{MgO}$.
 
 $$2(24.3) + 2(16.0) = 48.6 + 32.0 = 80.6$$ $$2(24.3 + 16.0) = 2(40.3) = 80.6$$
 
@@ -103,11 +103,11 @@ $$M_r(\text{NaOH}) = 23 + 16 + 1 = 40$$ $$n = \frac{15}{40} = 0.375 \text{ mol}$
 
 **Worked Example.** Calculate the mass of 0.5 mol of CO$_2$.
 
-$$M_r(\mathrm{CO}_2) = 12 + (2 \times 16) = 44$$ $$m = 0.5 \times 44 = 22 \text{ g}$$
+$$M_r(\text{CO}_2) = 12 + (2 \times 16) = 44$$ $$m = 0.5 \times 44 = 22 \text{ g}$$
 
 **Worked Example.** Calculate the mass of 2.5 mol of H$_2$SO$_4$.
 
-$$M_r(\mathrm{H}_2\mathrm{SO}_4) = 2(1) + 32 + 4(16) = 2 + 32 + 64 = 98$$
+$$M_r(\text{H}_2\text{SO}_4) = 2(1) + 32 + 4(16) = 2 + 32 + 64 = 98$$
 $$m = 2.5 \times 98 = 245 \text{ g}$$
 
 **Worked Example.** Calculate the number of moles in 50 g of CaCO$_3$.
@@ -116,7 +116,7 @@ $$n = \frac{50}{100.1} = 0.500 \text{ mol}$$
 
 **Worked Example.** What is the mass of 0.25 mol of nitrogen gas (N$_2$)?
 
-$$M_r(\mathrm{N}_2) = 2 \times 14 = 28$$ $$m = 0.25 \times 28 = 7.0 \text{ g}$$
+$$M_r(\text{N}_2) = 2 \times 14 = 28$$ $$m = 0.25 \times 28 = 7.0 \text{ g}$$
 
 ### 2.5 Number of Particles
 
@@ -139,7 +139,7 @@ $$\text{Molecules} = 2 \times 6.02 \times 10^{23} = 1.204 \times 10^{24}$$
 
 ### 2.6 Molar Volume of Gas
 
-At room temperature and pressure (RTP, approximately $25^{\circ}\mathrm{C}$ and 1 atm), one mole of
+At room temperature and pressure (RTP, approximately $25^{\circ}\text{C}$ and 1 atm), one mole of
 any gas occupies approximately **24 dm$^3$**.
 
 $$n = \frac{V}{24}$$
@@ -161,7 +161,7 @@ Note: 480 cm$^3$ = 0.480 dm$^3$ (divide by 1000).
 
 **Worked Example.** What volume does 4 g of methane (CH$_4$) occupy at RTP?
 
-$$M_r(\mathrm{CH}_4) = 12 + 4(1) = 16$$ $$n = \frac{4}{16} = 0.25 \text{ mol}$$
+$$M_r(\text{CH}_4) = 12 + 4(1) = 16$$ $$n = \frac{4}{16} = 0.25 \text{ mol}$$
 $$V = 0.25 \times 24 = 6.0 \text{ dm}^3$$
 
 **Worked Example.** What mass of nitrogen gas (N$_2$) occupies 6 dm$^3$ at RTP?
@@ -202,32 +202,32 @@ escaping) or gained (e.g., gas from the atmosphere dissolving), but the atoms ar
 **Worked Example.** Calculate the mass of iron produced when 16 g of iron(III) oxide is reduced by
 carbon.
 
-$$\mathrm{Fe}_2\mathrm{O}_3 + 3\mathrm{C} \to 2\mathrm{Fe} + 3\mathrm{CO}$$
+$$\text{Fe}_2\text{O}_3 + 3\text{C} \to 2\text{Fe} + 3\text{CO}$$
 
-$$M_r(\mathrm{Fe}_2\mathrm{O}_3) = 2 \times 56 + 3 \times 16 = 160$$ $$M_r(\mathrm{Fe}) = 56$$
+$$M_r(\text{Fe}_2\text{O}_3) = 2 \times 56 + 3 \times 16 = 160$$ $$M_r(\text{Fe}) = 56$$
 
-$$n(\mathrm{Fe}_2\mathrm{O}_3) = \frac{16}{160} = 0.1 \text{ mol}$$
+$$n(\text{Fe}_2\text{O}_3) = \frac{16}{160} = 0.1 \text{ mol}$$
 
-From the equation: $n(\mathrm{Fe}) = 2 \times n(\mathrm{Fe}_2\mathrm{O}_3) = 0.2 \text{ mol}$
+From the equation: $n(\text{Fe}) = 2 \times n(\text{Fe}_2\text{O}_3) = 0.2 \text{ mol}$
 
-$$m(\mathrm{Fe}) = 0.2 \times 56 = 11.2 \text{ g}$$
+$$m(\text{Fe}) = 0.2 \times 56 = 11.2 \text{ g}$$
 
 **Worked Example.** What mass of magnesium oxide is formed when 12 g of magnesium burns in oxygen?
 
-$$2\mathrm{Mg} + \mathrm{O}_2 \to 2\mathrm{MgO}$$
+$$2\text{Mg} + \text{O}_2 \to 2\text{MgO}$$
 
-$$n(\mathrm{Mg}) = \frac{12}{24} = 0.5 \text{ mol}$$
+$$n(\text{Mg}) = \frac{12}{24} = 0.5 \text{ mol}$$
 
-Mole ratio: $n(\mathrm{MgO}) = n(\mathrm{Mg}) = 0.5 \text{ mol}$
+Mole ratio: $n(\text{MgO}) = n(\text{Mg}) = 0.5 \text{ mol}$
 
-$$m(\mathrm{MgO}) = 0.5 \times (24 + 16) = 0.5 \times 40 = 20 \text{ g}$$
+$$m(\text{MgO}) = 0.5 \times (24 + 16) = 0.5 \times 40 = 20 \text{ g}$$
 
 **Worked Example.** What mass of zinc chloride is produced when 6.5 g of zinc reacts with excess
 hydrochloric acid?
 
-$$\mathrm{Zn} + 2\mathrm{HCl} \to \text{ZnCl}_2 + \mathrm{H}_2$$
+$$\text{Zn} + 2\text{HCl} \to \text{ZnCl}_2 + \text{H}_2$$
 
-$$n(\mathrm{Zn}) = \frac{6.5}{65} = 0.10 \text{ mol}$$
+$$n(\text{Zn}) = \frac{6.5}{65} = 0.10 \text{ mol}$$
 
 Mole ratio: 1:1, so $n(\text{ZnCl}_2) = 0.10 \text{ mol}$.
 
@@ -235,13 +235,13 @@ $$m(\text{ZnCl}_2) = 0.10 \times (65 + 2 \times 35.5) = 0.10 \times 136 = 13.6 \
 
 **Worked Example.** What volume of CO$_2$ is produced when 25 g of CaCO$_3$ reacts with excess HCl?
 
-$$\text{CaCO}_3 + 2\mathrm{HCl} \to \text{CaCl}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
+$$\text{CaCO}_3 + 2\text{HCl} \to \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
 
 $$n(\text{CaCO}_3) = \frac{25}{100.1} = 0.250 \text{ mol}$$
 
-Mole ratio 1:1, so $n(\mathrm{CO}_2) = 0.250 \text{ mol}$.
+Mole ratio 1:1, so $n(\text{CO}_2) = 0.250 \text{ mol}$.
 
-$$V(\mathrm{CO}_2) = 0.250 \times 24 = 6.0 \text{ dm}^3$$
+$$V(\text{CO}_2) = 0.250 \times 24 = 6.0 \text{ dm}^3$$
 
 ## 4. Concentration
 
@@ -336,36 +336,36 @@ coefficient. The smallest result is the limiting reactant.
 **Worked Example.** 8 g of hydrogen reacts with 32 g of oxygen to form water. Which is the limiting
 reactant? What mass of water is formed?
 
-$$2\mathrm{H}_2 + \mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O}$$
+$$2\text{H}_2 + \text{O}_2 \to 2\text{H}_2\text{O}$$
 
-$$n(\mathrm{H}_2) = \frac{8}{2} = 4 \text{ mol}$$ $$n(\mathrm{O}_2) = \frac{32}{32} = 1 \text{ mol}$$
+$$n(\text{H}_2) = \frac{8}{2} = 4 \text{ mol}$$ $$n(\text{O}_2) = \frac{32}{32} = 1 \text{ mol}$$
 
 Divide by coefficients: H$_2$: $4/2 = 2$, O$_2$: $1/1 = 1$. O$_2$ gives the smaller value, so it is
 limiting.
 
 From the equation: 1 mol O$_2$ produces 2 mol H$_2$O.
 
-$$m(\mathrm{H}_2\mathrm{O}) = 2 \times 18 = 36 \text{ g}$$
+$$m(\text{H}_2\text{O}) = 2 \times 18 = 36 \text{ g}$$
 
 **Worked Example.** 5.6 g of iron reacts with 3.2 g of sulfur. Find the limiting reactant and the
 mass of iron(II) sulfide formed.
 
-$$\mathrm{Fe} + \mathrm{S} \to \mathrm{FeS}$$
+$$\text{Fe} + \text{S} \to \text{FeS}$$
 
-$$n(\mathrm{Fe}) = \frac{5.6}{56} = 0.10 \text{ mol}$$
-$$n(\mathrm{S}) = \frac{3.2}{32} = 0.10 \text{ mol}$$
+$$n(\text{Fe}) = \frac{5.6}{56} = 0.10 \text{ mol}$$
+$$n(\text{S}) = \frac{3.2}{32} = 0.10 \text{ mol}$$
 
 The mole ratio is 1:1, and both reactants have 0.10 mol. Neither is in excess; both are limiting.
 
-$$m(\mathrm{FeS}) = 0.10 \times (56 + 32) = 0.10 \times 88 = 8.8 \text{ g}$$
+$$m(\text{FeS}) = 0.10 \times (56 + 32) = 0.10 \times 88 = 8.8 \text{ g}$$
 
 **Worked Example.** 10 g of calcium carbonate reacts with 100 cm$^3$ of 2.0 mol/dm$^3$ hydrochloric
 acid. Identify the limiting reactant.
 
-$$\text{CaCO}_3 + 2\mathrm{HCl} \to \text{CaCl}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
+$$\text{CaCO}_3 + 2\text{HCl} \to \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
 
 $$n(\text{CaCO}_3) = \frac{10}{100.1} = 0.0999 \text{ mol}$$
-$$n(\mathrm{HCl}) = 2.0 \times 0.100 = 0.200 \text{ mol}$$
+$$n(\text{HCl}) = 2.0 \times 0.100 = 0.200 \text{ mol}$$
 
 Divide by coefficients: CaCO$_3$: $0.0999/1 = 0.0999$, HCl: $0.200/2 = 0.100$. CaCO$_3$ gives the
 smaller value, so it is the limiting reactant.
@@ -397,7 +397,7 @@ end up in the desired product.
 
 $$\text{Atom economy} = \frac{M_r \text{ of desired product}}{\sum M_r \text{ of all products}} \times 100\%$$
 
-**Worked Example.** For the reaction $\text{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$, calculate the
+**Worked Example.** For the reaction $\text{CaCO}_3 \to \text{CaO} + \text{CO}_2$, calculate the
 atom economy if CaO is the desired product.
 
 $$\text{Atom economy} = \frac{56}{56 + 44} \times 100\% = \frac{56}{100} \times 100\% = 56\%$$
@@ -405,7 +405,7 @@ $$\text{Atom economy} = \frac{56}{56 + 44} \times 100\% = \frac{56}{100} \times 
 **Note:** Addition reactions have 100% atom economy. Reactions that produce waste products have
 lower atom economy.
 
-**Worked Example.** For the reaction $\mathrm{CH}_4 + \mathrm{H}_2\mathrm{O} \to \mathrm{CO} + 3\mathrm{H}_2$,
+**Worked Example.** For the reaction $\text{CH}_4 + \text{H}_2\text{O} \to \text{CO} + 3\text{H}_2$,
 calculate the atom economy if H$_2$ is the desired product.
 
 $$\text{Atom economy} = \frac{3 \times 2}{28 + 3 \times 2} = \frac{6}{34} \times 100\% = 17.6\%$$
@@ -414,7 +414,7 @@ This is a very low atom economy, meaning most of the mass of the reactants ends 
 (CO) rather than the desired product (H$_2$).
 
 **Worked Example.** Calculate the atom economy for the reaction of iron with copper(II) sulfate:
-$\mathrm{Fe} + \text{CuSO}_4 \to \text{FeSO}_4 + \mathrm{Cu}$, where copper is the desired product.
+$\text{Fe} + \text{CuSO}_4 \to \text{FeSO}_4 + \text{Cu}$, where copper is the desired product.
 
 $$\text{Atom economy} = \frac{63.5}{151.9 + 63.5} = \frac{63.5}{215.4} \times 100\% = 29.5\%$$
 
@@ -437,13 +437,13 @@ with high yield but low atom economy produces a lot of waste. The best processes
 **Worked Example.** 5.0 g of calcium carbonate is reacted with excess hydrochloric acid. Calculate:
 (a) the volume of CO$_2$ produced at RTP (b) the mass of CaCl$_2$ produced
 
-$$\text{CaCO}_3 + 2\mathrm{HCl} \to \text{CaCl}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
+$$\text{CaCO}_3 + 2\text{HCl} \to \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
 
 (a) $n(\text{CaCO}_3) = \frac{5.0}{100} = 0.050 \text{ mol}$
 
 Mole ratio: 1:1 for CaCO$_3$ and CO$_2$.
 
-$$V(\mathrm{CO}_2) = 0.050 \times 24 = 1.2 \text{ dm}^3$$
+$$V(\text{CO}_2) = 0.050 \times 24 = 1.2 \text{ dm}^3$$
 
 (b) Mole ratio: 1:1 for CaCO$_3$ and CaCl$_2$.
 
@@ -454,9 +454,9 @@ $$m(\text{CaCl}_2) = 0.050 \times 111 = 5.55 \text{ g}$$
 **Worked Example.** 25.0 cm$^3$ of NaOH solution is titrated with 0.100 mol/dm$^3$ HCl. The average
 titre is 20.0 cm$^3$. Calculate the concentration of the NaOH solution.
 
-$$\text{NaOH} + \mathrm{HCl} \to \text{NaCl} + \mathrm{H}_2\mathrm{O}$$
+$$\text{NaOH} + \text{HCl} \to \text{NaCl} + \text{H}_2\text{O}$$
 
-$$n(\mathrm{HCl}) = 0.100 \times 0.0200 = 0.00200 \text{ mol}$$
+$$n(\text{HCl}) = 0.100 \times 0.0200 = 0.00200 \text{ mol}$$
 
 Mole ratio: 1:1, so $n(\text{NaOH}) = 0.00200 \text{ mol}$.
 
@@ -465,9 +465,9 @@ $$c(\text{NaOH}) = \frac{0.00200}{0.0250} = 0.0800 \text{ mol/dm}^3$$
 **Worked Example.** 20.0 cm$^3$ of 0.500 mol/dm$^3$ H$_2$SO$_4$ is titrated with NaOH. The average
 titre is 25.0 cm$^3$. Calculate the concentration of the NaOH solution.
 
-$$\mathrm{H}_2\mathrm{SO}_4 + 2\text{NaOH} \to \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}$$
+$$\text{H}_2\text{SO}_4 + 2\text{NaOH} \to \text{Na}_2\text{SO}_4 + 2\text{H}_2\text{O}$$
 
-$$n(\mathrm{H}_2\mathrm{SO}_4) = 0.500 \times 0.0200 = 0.0100 \text{ mol}$$
+$$n(\text{H}_2\text{SO}_4) = 0.500 \times 0.0200 = 0.0100 \text{ mol}$$
 
 Mole ratio: 1:2, so $n(\text{NaOH}) = 0.0200 \text{ mol}$.
 
@@ -478,30 +478,30 @@ mol/dm$^3$ NaOH. The average titre is 18.0 cm$^3$. Calculate the concentration o
 
 $$n(\text{NaOH}) = 0.200 \times 0.0250 = 0.00500 \text{ mol}$$
 
-Mole ratio 1:1, so $n(\mathrm{HCl}) = 0.00500 \text{ mol}$.
+Mole ratio 1:1, so $n(\text{HCl}) = 0.00500 \text{ mol}$.
 
-$$c(\mathrm{HCl}) = \frac{0.00500}{0.0180} = 0.278 \text{ mol/dm}^3$$
+$$c(\text{HCl}) = \frac{0.00500}{0.0180} = 0.278 \text{ mol/dm}^3$$
 
 ### 6.3 Gas Volume Calculations
 
 **Worked Example.** 2.4 g of magnesium reacts with excess hydrochloric acid. Calculate the volume of
 hydrogen produced at RTP.
 
-$$\mathrm{Mg} + 2\mathrm{HCl} \to \text{MgCl}_2 + \mathrm{H}_2$$
+$$\text{Mg} + 2\text{HCl} \to \text{MgCl}_2 + \text{H}_2$$
 
-$$n(\mathrm{Mg}) = \frac{2.4}{24} = 0.10 \text{ mol}$$
+$$n(\text{Mg}) = \frac{2.4}{24} = 0.10 \text{ mol}$$
 
-Mole ratio: 1:1, so $n(\mathrm{H}_2) = 0.10 \text{ mol}$.
+Mole ratio: 1:1, so $n(\text{H}_2) = 0.10 \text{ mol}$.
 
-$$V(\mathrm{H}_2) = 0.10 \times 24 = 2.4 \text{ dm}^3$$
+$$V(\text{H}_2) = 0.10 \times 24 = 2.4 \text{ dm}^3$$
 
 **Worked Example.** What mass of magnesium is needed to produce 1.2 dm$^3$ of hydrogen at RTP?
 
-$$n(\mathrm{H}_2) = \frac{1.2}{24} = 0.050 \text{ mol}$$
+$$n(\text{H}_2) = \frac{1.2}{24} = 0.050 \text{ mol}$$
 
-Mole ratio 1:1, so $n(\mathrm{Mg}) = 0.050 \text{ mol}$.
+Mole ratio 1:1, so $n(\text{Mg}) = 0.050 \text{ mol}$.
 
-$$m(\mathrm{Mg}) = 0.050 \times 24 = 1.2 \text{ g}$$
+$$m(\text{Mg}) = 0.050 \times 24 = 1.2 \text{ g}$$
 
 ## 7. Water of Crystallisation
 
@@ -513,14 +513,14 @@ that five water molecules are associated with each formula unit of copper(II) su
 
 When hydrated salts are heated, they lose their water of crystallisation and become **anhydrous**.
 
-$$\text{CuSO}_4 \cdot 5\mathrm{H}_2\text{O(s)} \xrightarrow{\Delta} \text{CuSO}_4\text{(s)} + 5\mathrm{H}_2\text{O(g)}$$
+$$\text{CuSO}_4 \cdot 5\text{H}_2\text{O(s)} \xrightarrow{\Delta} \text{CuSO}_4\text{(s)} + 5\text{H}_2\text{O(g)}$$
 
 **Worked Example.** 12.5 g of hydrated CuSO$_4 \cdot x$H$_2$O is heated until all water is removed,
 leaving 8.0 g of anhydrous CuSO$_4$. Find $x$.
 
-$$m(\mathrm{H}_2\mathrm{O}) = 12.5 - 8.0 = 4.5 \text{ g}$$
+$$m(\text{H}_2\text{O}) = 12.5 - 8.0 = 4.5 \text{ g}$$
 $$n(\text{CuSO}_4) = \frac{8.0}{159.6} = 0.0501 \text{ mol}$$
-$$n(\mathrm{H}_2\mathrm{O}) = \frac{4.5}{18} = 0.250 \text{ mol}$$
+$$n(\text{H}_2\text{O}) = \frac{4.5}{18} = 0.250 \text{ mol}$$
 $$x = \frac{0.250}{0.0501} \approx 5$$
 
 The formula is CuSO$_4 \cdot 5$H$_2$O.
@@ -528,9 +528,9 @@ The formula is CuSO$_4 \cdot 5$H$_2$O.
 **Worked Example.** 6.30 g of hydrated Na$_2$CO$_3 \cdot x$H$_2$O gives 2.65 g of anhydrous
 Na$_2$CO$_3$ on heating. Find $x$.
 
-$$m(\mathrm{H}_2\mathrm{O}) = 6.30 - 2.65 = 3.65 \text{ g}$$
-$$n(\mathrm{Na}_2\mathrm{CO}_3) = \frac{2.65}{106} = 0.0250 \text{ mol}$$
-$$n(\mathrm{H}_2\mathrm{O}) = \frac{3.65}{18} = 0.203 \text{ mol}$$
+$$m(\text{H}_2\text{O}) = 6.30 - 2.65 = 3.65 \text{ g}$$
+$$n(\text{Na}_2\text{CO}_3) = \frac{2.65}{106} = 0.0250 \text{ mol}$$
+$$n(\text{H}_2\text{O}) = \frac{3.65}{18} = 0.203 \text{ mol}$$
 $$x = \frac{0.203}{0.0250} \approx 8$$
 
 The formula is Na$_2$CO$_3 \cdot 8$H$_2$O.
@@ -539,8 +539,8 @@ The formula is Na$_2$CO$_3 \cdot 8$H$_2$O.
 
 **Worked Example.** Calculate the percentage of water of crystallisation in CuSO$_4 \cdot 5$H$_2$O.
 
-$$M_r(\text{CuSO}_4 \cdot 5\mathrm{H}_2\mathrm{O}) = 159.6 + 5(18) = 159.6 + 90 = 249.6$$
-$$\%\text{ H}_2\mathrm{O} = \frac{90}{249.6} \times 100 = 36.1\%$$
+$$M_r(\text{CuSO}_4 \cdot 5\text{H}_2\text{O}) = 159.6 + 5(18) = 159.6 + 90 = 249.6$$
+$$\%\text{ H}_2\text{O} = \frac{90}{249.6} \times 100 = 36.1\%$$
 
 ## 8. Formula Triangle Summary
 
@@ -562,20 +562,20 @@ $$n = \frac{V}{24}, \quad V = n \times 24$$
 limiting reactant. (b) Calculate the mass of CaCl$_2$ produced. (c) Calculate the volume of CO$_2$
 at RTP. (d) Calculate the percentage yield if 15.0 g of CaCl$_2$ was obtained.
 
-$$\text{CaCO}_3 + 2\mathrm{HCl} \to \text{CaCl}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
+$$\text{CaCO}_3 + 2\text{HCl} \to \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
 
 (a) $n(\text{CaCO}_3) = \frac{20.0}{100.1} = 0.200 \text{ mol}$
 
-$n(\mathrm{HCl}) = 1.0 \times 0.150 = 0.150 \text{ mol}$
+$n(\text{HCl}) = 1.0 \times 0.150 = 0.150 \text{ mol}$
 
 Stoichiometry requires $2 \times 0.200 = 0.400$ mol HCl, but only 0.150 mol is available. HCl is the
 limiting reactant.
 
-$n(\text{CaCl}_2) = n(\mathrm{HCl})/2 = 0.0750 \text{ mol}$
+$n(\text{CaCl}_2) = n(\text{HCl})/2 = 0.0750 \text{ mol}$
 
 (b) $m(\text{CaCl}_2) = 0.0750 \times 111 = 8.33 \text{ g}$
 
-(c) $V(\mathrm{CO}_2) = 0.0750 \times 24 = 1.80 \text{ dm}^3$
+(c) $V(\text{CO}_2) = 0.0750 \times 24 = 1.80 \text{ dm}^3$
 
 (d) $\text{Percentage yield} = \frac{15.0}{8.33} \times 100\% = 180\%$
 
@@ -622,7 +622,7 @@ Since the yield exceeds 100%, this indicates experimental error -- likely the pr
    percentage yield.
 
 7. Calculate the atom economy for the reaction:
-   $\mathrm{CH}_4 + \mathrm{H}_2\mathrm{O} \to \mathrm{CO} + 3\mathrm{H}_2$, where H$_2$ is the desired
+   $\text{CH}_4 + \text{H}_2\text{O} \to \text{CO} + 3\text{H}_2$, where H$_2$ is the desired
    product.
 
 8. A solution is made by dissolving 12 g of NaOH in water to make 500 cm$^3$ of solution. Calculate
@@ -646,14 +646,14 @@ Since the yield exceeds 100%, this indicates experimental error -- likely the pr
     the chemical industry.
 
 15. 3.36 g of iron(III) oxide is reduced by carbon monoxide according to the equation:
-    $\mathrm{Fe}_2\mathrm{O}_3 + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO}_2$. Calculate the mass of iron
+    $\text{Fe}_2\text{O}_3 + 3\text{CO} \to 2\text{Fe} + 3\text{CO}_2$. Calculate the mass of iron
     produced and the volume of CO$_2$ released at RTP.
 
 16. What volume of 0.5 mol/dm$^3$ sulfuric acid is needed to react completely with 10 g of sodium
     hydroxide?
 
 17. Calculate the percentage yield if 4.0 g of CaCO$_3$ produces 1.8 g of CaO. The equation is
-    $\text{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$.
+    $\text{CaCO}_3 \to \text{CaO} + \text{CO}_2$.
 
 18. What mass of aluminium is produced when 51 g of Al$_2$O$_3$ is electrolysed? (Assume 100%
     yield.)
@@ -671,24 +671,24 @@ Since the yield exceeds 100%, this indicates experimental error -- likely the pr
 **Worked Example.** 10.0 g of limestone (CaCO$_3$) is reacted with excess hydrochloric acid.
 Calculate the mass of CaCl$_2$ formed, the volume of CO$_2$ at RTP, and the mass of water produced.
 
-$$\text{CaCO}_3 + 2\mathrm{HCl} \to \text{CaCl}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
+$$\text{CaCO}_3 + 2\text{HCl} \to \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
 
 $$n(\text{CaCO}_3) = \frac{10.0}{100.1} = 0.0999 \text{ mol}$$
 
 Since HCl is in excess, CaCO$_3$ is limiting. Mole ratio 1:1 for all products.
 
 $$m(\text{CaCl}_2) = 0.0999 \times 111 = 11.1 \text{ g}$$
-$$V(\mathrm{CO}_2) = 0.0999 \times 24 = 2.40 \text{ dm}^3$$
-$$m(\mathrm{H}_2\mathrm{O}) = 0.0999 \times 18 = 1.80 \text{ g}$$
+$$V(\text{CO}_2) = 0.0999 \times 24 = 2.40 \text{ dm}^3$$
+$$m(\text{H}_2\text{O}) = 0.0999 \times 18 = 1.80 \text{ g}$$
 
 ### 9.2 Back-Titration Style Problems
 
 **Worked Example.** 1.20 g of impure magnesium is reacted with excess dilute sulfuric acid. The
 hydrogen produced occupies 1.22 dm$^3$ at RTP. Calculate the percentage purity of the magnesium.
 
-$$n(\mathrm{H}_2) = \frac{1.22}{24} = 0.0508 \text{ mol}$$
+$$n(\text{H}_2) = \frac{1.22}{24} = 0.0508 \text{ mol}$$
 
-From $\mathrm{Mg} + \mathrm{H}_2\mathrm{SO}_4 \to \text{MgSO}_4 + \mathrm{H}_2$: mole ratio 1:1.
+From $\text{Mg} + \text{H}_2\text{SO}_4 \to \text{MgSO}_4 + \text{H}_2$: mole ratio 1:1.
 
 $$m(\text{Mg pure}) = 0.0508 \times 24.3 = 1.23 \text{ g}$$
 

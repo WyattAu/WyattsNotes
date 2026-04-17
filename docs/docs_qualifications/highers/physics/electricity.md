@@ -76,14 +76,14 @@ The resistance of a wire depends on its material and dimensions:
 
 $$R = \frac{\rho L}{A}$$
 
-where $\rho$ is resistivity (measured in $\Omega \mathrm{m}$), $L$ is length, and $A$ is
+where $\rho$ is resistivity (measured in $\Omega \text{m}$), $L$ is length, and $A$ is
 cross-sectional area.
 
 Resistivity is an intrinsic property of the material, independent of the dimensions of the wire. It
 depends on temperature: for metals, resistivity increases approximately linearly with temperature.
 
 **Example:** A copper wire of length $10 \text{ m}$ and diameter $0.5 \text{ mm}$ has resistivity
-$1.7 \times 10^{-8} \Omega \mathrm{m}$. Find its resistance.
+$1.7 \times 10^{-8} \Omega \text{m}$. Find its resistance.
 
 $$A = \pi r^2 = \pi(0.25 \times 10^{-3})^2 = 1.963 \times 10^{-7} \text{ m}^2$$
 
@@ -196,12 +196,12 @@ Or in kWh: $E = 2 \times 3 = 6 \text{ kWh}$.
 
 Two resistors in series form a potential divider. The output voltage across $R_2$ is:
 
-$$V_{\mathrm{out}} = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$$
+$$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2}$$
 
 **Example:** A $12 \text{ V}$ supply is connected across a $10 \text{ k}\Omega$ and a
 $2 \text{ k}\Omega$ resistor in series. Find the PD across the $2 \text{ k}\Omega$ resistor.
 
-$$V_{\mathrm{out}} = 12 \times \frac{2}{10 + 2} = 12 \times \frac{1}{6} = 2 \text{ V}$$
+$$V_{\text{out}} = 12 \times \frac{2}{10 + 2} = 12 \times \frac{1}{6} = 2 \text{ V}$$
 
 ### Sensing Circuits with Potential Dividers
 
@@ -228,7 +228,7 @@ $$E = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}$$
 
 $$E = \int_0^Q V\, dq = \int_0^Q \frac{q}{C}\, dq = \frac{Q^2}{2C} = \frac{1}{2}CV^2$$
 
-**Example:** A $100 \mu\mathrm{F}$ capacitor is charged to $200 \text{ V}$. Find the energy stored.
+**Example:** A $100 \mu\text{F}$ capacitor is charged to $200 \text{ V}$. Find the energy stored.
 
 $$E = \frac{1}{2}CV^2 = \frac{1}{2} \times 100 \times 10^{-6} \times 40000 = 2 \text{ J}$$
 
@@ -255,7 +255,7 @@ The current during charging is: $I = I_0 e^{-t/RC}$ (starts at $I_0 = V_0/R$, de
 
 The current during discharging is: $I = -I_0 e^{-t/RC}$ (flows in the opposite direction).
 
-**Example:** A $470 \mu\mathrm{F}$ capacitor is charged through a $100 \text{ k}\Omega$ resistor from
+**Example:** A $470 \mu\text{F}$ capacitor is charged through a $100 \text{ k}\Omega$ resistor from
 a $9 \text{ V}$ supply. Find the time constant and the time to reach 95% of full charge.
 
 $$\tau = RC = 100000 \times 470 \times 10^{-6} = 47 \text{ s}$$
@@ -313,7 +313,7 @@ in parallel)
 4. Design a potential divider using a $12 \text{ V}$ supply to produce an output of $3.6 \text{ V}$
    using a $10 \text{ k}\Omega$ resistor as $R_1$.
 
-5. A $220 \mu\mathrm{F}$ capacitor is charged to $50 \text{ V}$ and then discharged through a
+5. A $220 \mu\text{F}$ capacitor is charged to $50 \text{ V}$ and then discharged through a
    $33 \text{ k}\Omega$ resistor. Find the time constant and the charge remaining after
    $15 \text{ s}$.
 
@@ -323,10 +323,10 @@ in parallel)
 7. A lamp rated $60 \text{ W}$, $240 \text{ V}$ is connected to a $200 \text{ V}$ supply. Calculate
    the actual power dissipated, assuming the resistance of the lamp is constant.
 
-8. A $470 \mu\mathrm{F}$ capacitor stores $0.5 \text{ J}$ of energy. Find the voltage across it and
+8. A $470 \mu\text{F}$ capacitor stores $0.5 \text{ J}$ of energy. Find the voltage across it and
    the charge stored.
 
-9. Two capacitors of $10 \mu\mathrm{F}$ and $22 \mu\mathrm{F}$ are connected in series across a
+9. Two capacitors of $10 \mu\text{F}$ and $22 \mu\text{F}$ are connected in series across a
    $12 \text{ V}$ supply. Find the charge on each capacitor and the PD across each.
 
 10. A battery of EMF $12 \text{ V}$ and internal resistance $0.8 \Omega$ is connected to an external
@@ -363,7 +363,7 @@ the terminal PD is EMF plus $Ir$)
 
 ## 12. Worked Example: Resistivity and Wire Dimensions
 
-A nichrome wire has resistivity $1.10 \times 10^{-6} \Omega\mathrm{m}$. A length of this wire must
+A nichrome wire has resistivity $1.10 \times 10^{-6} \Omega\text{m}$. A length of this wire must
 have a resistance of $15 \Omega$ and carry a maximum current of $2 \text{ A}$ without overheating.
 If the wire must not exceed a power dissipation of $20 \text{ W}$, find the minimum cross-sectional
 area and the corresponding length.
@@ -382,7 +382,7 @@ achieved with wire dimensions that keep the power dissipation within thermal lim
 
 ### Worked Example: RC Circuit Analysis
 
-A $220 \mu\mathrm{F}$ capacitor is charged through a $47 \text{ k}\Omega$ resistor from a
+A $220 \mu\text{F}$ capacitor is charged through a $47 \text{ k}\Omega$ resistor from a
 $12 \text{ V}$ supply. Find:
 
 (a) The time constant.
@@ -417,21 +417,21 @@ $$t = -10.34 \times \ln(0.167) = -10.34 \times (-1.79) = 18.5 \text{ s}$$
 The energy stored in a capacitor is $E = \frac{1}{2}CV^2$, not $CV^2$. The factor of one-half arises
 because the voltage increases linearly as charge builds up: at the start, $V = 0$, and at the end,
 $V = V_0$. The average voltage during charging is $V_0/2$, and
-$E = Q \times V_{\mathrm{avg}} = QV_0/2$.
+$E = Q \times V_{\text{avg}} = QV_0/2$.
 
 Using calculus:
 $E = \int_0^{Q_0} V\, dq = \int_0^{Q_0} \frac{q}{C}\, dq = \frac{Q_0^2}{2C} = \frac{1}{2}CV_0^2$.
 
 ### Capacitors in Series and Parallel: Worked Example
 
-Two capacitors $C_1 = 10 \mu\mathrm{F}$ and $C_2 = 22 \mu\mathrm{F}$ are connected in series across a
+Two capacitors $C_1 = 10 \mu\text{F}$ and $C_2 = 22 \mu\text{F}$ are connected in series across a
 $12 \text{ V}$ supply.
 
 **Total capacitance:**
 
 $$\frac{1}{C_{\text{total}}} = \frac{1}{10} + \frac{1}{22} = \frac{22 + 10}{220} = \frac{32}{220}$$
 
-$$C_{\text{total}} = \frac{220}{32} = 6.875 \mu\mathrm{F}$$
+$$C_{\text{total}} = \frac{220}{32} = 6.875 \mu\text{F}$$
 
 **Charge on each capacitor:**
 $Q = C_{\text{total}}V = 6.875 \times 10^{-6} \times 12 = 8.25 \times 10^{-5} \text{ C}$
@@ -450,23 +450,23 @@ Check: $8.25 + 3.75 = 12 \text{ V}$. Correct.
 
 ### Worked Example: Sensor Circuit Design
 
-Design a circuit that turns on a fan when the temperature exceeds $30^{\circ}\mathrm{C}$. Use a
+Design a circuit that turns on a fan when the temperature exceeds $30^{\circ}\text{C}$. Use a
 $9 \text{ V}$ supply, a $10 \text{ k}\Omega$ fixed resistor, and an NTC thermistor with the
-following characteristics: $R = 20 \text{ k}\Omega$ at $20^{\circ}\mathrm{C}$,
-$R = 10 \text{ k}\Omega$ at $30^{\circ}\mathrm{C}$, $R = 5 \text{ k}\Omega$ at $40^{\circ}\mathrm{C}$.
+following characteristics: $R = 20 \text{ k}\Omega$ at $20^{\circ}\text{C}$,
+$R = 10 \text{ k}\Omega$ at $30^{\circ}\text{C}$, $R = 5 \text{ k}\Omega$ at $40^{\circ}\text{C}$.
 
 Place the thermistor as $R_2$ (top of the divider). The output voltage across the thermistor is:
 
-$$V_{\mathrm{out}} = 9 \times \frac{R_{\text{thermistor}}}{10 + R_{\text{thermistor}}}$$
+$$V_{\text{out}} = 9 \times \frac{R_{\text{thermistor}}}{10 + R_{\text{thermistor}}}$$
 
-At $20^{\circ}\mathrm{C}$: $V_{\mathrm{out}} = 9 \times \frac{20}{30} = 6.0 \text{ V}$
+At $20^{\circ}\text{C}$: $V_{\text{out}} = 9 \times \frac{20}{30} = 6.0 \text{ V}$
 
-At $30^{\circ}\mathrm{C}$: $V_{\mathrm{out}} = 9 \times \frac{10}{20} = 4.5 \text{ V}$
+At $30^{\circ}\text{C}$: $V_{\text{out}} = 9 \times \frac{10}{20} = 4.5 \text{ V}$
 
-At $40^{\circ}\mathrm{C}$: $V_{\mathrm{out}} = 9 \times \frac{5}{15} = 3.0 \text{ V}$
+At $40^{\circ}\text{C}$: $V_{\text{out}} = 9 \times \frac{5}{15} = 3.0 \text{ V}$
 
 As temperature increases, the output voltage decreases. A voltage comparator set to trigger at
-$4.5 \text{ V}$ would switch on the fan when the temperature exceeds $30^{\circ}\mathrm{C}$.
+$4.5 \text{ V}$ would switch on the fan when the temperature exceeds $30^{\circ}\text{C}$.
 
 ## 15. Summary Table: Key Electricity Formulas
 
@@ -480,7 +480,7 @@ $4.5 \text{ V}$ would switch on the fan when the temperature exceeds $30^{\circ}
 | Capacitance         | $C = Q/V$                                      | $Q$, $V$                      | Unit: farad                   |
 | Capacitor energy    | $E = \frac{1}{2}CV^2$                          | $C$, $V$                      | Three equivalent forms        |
 | RC time constant    | $\tau = RC$                                    | $R$, $C$                      | 63.2% charge in one $\tau$    |
-| Potential divider   | $V_{\mathrm{out}} = V_{\mathrm{in}} R_2/(R_1+R_2)$ | $V_{\mathrm{in}}$, $R_1$, $R_2$ | For sensing circuits          |
+| Potential divider   | $V_{\text{out}} = V_{\text{in}} R_2/(R_1+R_2)$ | $V_{\text{in}}$, $R_1$, $R_2$ | For sensing circuits          |
 
 ## 16. Practice Questions (Additional)
 
@@ -491,7 +491,7 @@ $4.5 \text{ V}$ would switch on the fan when the temperature exceeds $30^{\circ}
     parallel resistors of $8 \Omega$ and $12 \Omega$ in series with a $4 \Omega$ resistor. Find the
     current through each resistor and the power dissipated in the $4 \Omega$ resistor.
 
-13. A $470 \mu\mathrm{F}$ capacitor is charged to $25 \text{ V}$ and then discharged through a
+13. A $470 \mu\text{F}$ capacitor is charged to $25 \text{ V}$ and then discharged through a
     $22 \text{ k}\Omega$ resistor. Calculate (a) the time constant, (b) the voltage after
     $15 \text{ s}$, (c) the current after $15 \text{ s}$, and (d) the energy remaining in the
     capacitor after $15 \text{ s}$.
@@ -501,7 +501,7 @@ $4.5 \text{ V}$ would switch on the fan when the temperature exceeds $30^{\circ}
     $1 \text{ k}\Omega$ in bright light. Calculate the output voltage (across the LDR) in both
     conditions.
 
-15. Two capacitors of $47 \mu\mathrm{F}$ and $100 \mu\mathrm{F}$ are connected in series and charged
+15. Two capacitors of $47 \mu\text{F}$ and $100 \mu\text{F}$ are connected in series and charged
     from a $12 \text{ V}$ supply. Find (a) the total capacitance, (b) the charge on each capacitor,
     (c) the PD across each capacitor, and (d) the total energy stored.
 
@@ -513,8 +513,8 @@ $4.5 \text{ V}$ would switch on the fan when the temperature exceeds $30^{\circ}
     $1.5 \text{ A}$. When a $12 \Omega$ resistor is connected instead, the current is
     $0.85 \text{ A}$. Calculate the EMF and internal resistance of the battery.
 
-18. A $100 \mu\mathrm{F}$ capacitor charged to $50 \text{ V}$ is connected across an uncharged
-    $47 \mu\mathrm{F}$ capacitor. Calculate the final voltage across both capacitors and the energy
+18. A $100 \mu\text{F}$ capacitor charged to $50 \text{ V}$ is connected across an uncharged
+    $47 \mu\text{F}$ capacitor. Calculate the final voltage across both capacitors and the energy
     lost in the process.
 
 19. Design a potential divider circuit using a $12 \text{ V}$ supply that produces an output of
@@ -563,8 +563,8 @@ power transfer, so impedance matching is used.
 
 ### Example 22: RC Circuit with AC Supply
 
-A $100 \Omega$ resistor and a $50 \mu\mathrm{F}$ capacitor are connected in series with an AC supply
-of $V_{\mathrm{rms}} = 240 \text{ V}$ at $50 \text{ Hz}$. Calculate the impedance, current, voltage
+A $100 \Omega$ resistor and a $50 \mu\text{F}$ capacitor are connected in series with an AC supply
+of $V_{\text{rms}} = 240 \text{ V}$ at $50 \text{ Hz}$. Calculate the impedance, current, voltage
 across each component, and the phase angle.
 
 **Step 1: Calculate capacitive reactance**
@@ -577,13 +577,13 @@ $$Z = \sqrt{R^2 + X_C^2} = \sqrt{100^2 + 63.7^2} = \sqrt{10000 + 4058} = \sqrt{1
 
 **Step 3: Calculate current**
 
-$$I_{\mathrm{rms}} = \frac{V_{\mathrm{rms}}}{Z} = \frac{240}{118.6} = 2.02 \text{ A}$$
+$$I_{\text{rms}} = \frac{V_{\text{rms}}}{Z} = \frac{240}{118.6} = 2.02 \text{ A}$$
 
 **Step 4: Voltage across each component**
 
-$$V_R = I_{\mathrm{rms}} \times R = 2.02 \times 100 = 202 \text{ V}$$
+$$V_R = I_{\text{rms}} \times R = 2.02 \times 100 = 202 \text{ V}$$
 
-$$V_C = I_{\mathrm{rms}} \times X_C = 2.02 \times 63.7 = 128.8 \text{ V}$$
+$$V_C = I_{\text{rms}} \times X_C = 2.02 \times 63.7 = 128.8 \text{ V}$$
 
 **Check:** $V_R^2 + V_C^2 = 202^2 + 128.8^2 = 40804 + 16589 = 57393$.
 $\sqrt{57393} = 239.6 \approx 240 \text{ V}$. Confirmed.
@@ -617,7 +617,7 @@ When balanced, no current flows through the galvanometer. The circuit becomes tw
 - Branch 1: $P + Q = 100 + 200 = 300 \Omega$
 - Branch 2: $R + S = 150 + 300 = 450 \Omega$
 
-$$R_{\mathrm{eq}} = \frac{300 \times 450}{300 + 450} = \frac{135000}{750} = 180 \Omega$$
+$$R_{\text{eq}} = \frac{300 \times 450}{300 + 450} = \frac{135000}{750} = 180 \Omega$$
 
 **Step 3: Total current from battery**
 
@@ -657,7 +657,7 @@ When $I = 0$ (open circuit), $V = \mathcal{E}$. As current increases, $V$ decrea
 
 ## Additional Practice Problems
 
-21. A $470 \mu\mathrm{F}$ capacitor is charged to $20 \text{ V}$ and then discharged through a
+21. A $470 \mu\text{F}$ capacitor is charged to $20 \text{ V}$ and then discharged through a
     $33 \text{ k}\Omega$ resistor. Calculate (a) the time constant, (b) the time for the voltage to
     fall to $5 \text{ V}$, and (c) the energy dissipated in the resistor during the complete
     discharge.
@@ -708,7 +708,7 @@ $$\mathcal{E} = 5.6 + 1.4 \times 2.35 = 5.6 + 3.29 = 8.89 \text{ V}$$
 
 ### Example 27: Energy Stored and Dissipated in an RC Circuit
 
-A $220 \mu\mathrm{F}$ capacitor is charged to $12 \text{ V}$ and then discharged through a
+A $220 \mu\text{F}$ capacitor is charged to $12 \text{ V}$ and then discharged through a
 $15 \text{ k}\Omega$ resistor. Calculate (a) the initial energy stored, (b) the time constant, (c)
 the energy remaining after one time constant, and (d) the total energy dissipated in the resistor.
 
@@ -775,7 +775,7 @@ The current in a conductor can be expressed as:
 
 $$I = nAve$$
 
-where $n$ is the number density of charge carriers (per $\mathrm{m}^3$), $A$ is the cross-sectional
+where $n$ is the number density of charge carriers (per $\text{m}^3$), $A$ is the cross-sectional
 area, $v$ is the drift velocity, and $e$ is the charge of an electron.
 
 For copper: $n \approx 8.5 \times 10^{28} \text{ m}^{-3}$.
@@ -796,8 +796,8 @@ the speed of light.
     battery, the terminal PD, the current through each resistor, and the power delivered to each
     resistor.
 
-27. A $100 \mu\mathrm{F}$ capacitor is charged to $30 \text{ V}$ and then connected across a
-    $200 \mu\mathrm{F}$ uncharged capacitor. Calculate the final voltage across both, the charge on
+27. A $100 \mu\text{F}$ capacitor is charged to $30 \text{ V}$ and then connected across a
+    $200 \mu\text{F}$ uncharged capacitor. Calculate the final voltage across both, the charge on
     each, and the energy lost.
 
 28. An AC circuit has a $60 \Omega$ resistor and a $0.1 \text{ H}$ inductor in series with a

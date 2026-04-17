@@ -694,7 +694,7 @@ $$\Delta E = E_4 - E_2 = -0.85 - (-3.40) = 2.55 \text{ eV}$$
 
 **Step 3: Wavelength**
 
-$$\lambda = \frac{hc}{\Delta E} = \frac{1240 \text{ eV}\cdot\mathrm{nm}}{2.55 \text{ eV}} = 486.3 \text{ nm}$$
+$$\lambda = \frac{hc}{\Delta E} = \frac{1240 \text{ eV}\cdot\text{nm}}{2.55 \text{ eV}} = 486.3 \text{ nm}$$
 
 This is in the blue-green region of the visible spectrum -- the H-beta line.
 

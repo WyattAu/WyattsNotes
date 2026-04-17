@@ -194,35 +194,35 @@ one tree supporting many insects).
 
 **Carbon Cycle:**
 
-1. Photosynthesis: $\mathrm{CO}_2 \to$ organic compounds (producers)
+1. Photosynthesis: $\text{CO}_2 \to$ organic compounds (producers)
 2. Feeding: Carbon passed along food chains
-3. Respiration: Organic compounds $\to \mathrm{CO}_2$ (all organisms)
-4. Decomposition: Dead organisms $\to \mathrm{CO}_2$ (decomposers)
-5. Combustion: Fossil fuels $\to \mathrm{CO}_2$
+3. Respiration: Organic compounds $\to \text{CO}_2$ (all organisms)
+4. Decomposition: Dead organisms $\to \text{CO}_2$ (decomposers)
+5. Combustion: Fossil fuels $\to \text{CO}_2$
 6. Fossilisation: Dead organisms $\to$ fossil fuels (over millions of years)
 
 **Nitrogen Cycle:**
 
-1. **Nitrogen fixation:** $\mathrm{N}_2 \to \mathrm{NH}_3$ (by nitrogen-fixing bacteria in root nodules
+1. **Nitrogen fixation:** $\text{N}_2 \to \text{NH}_3$ (by nitrogen-fixing bacteria in root nodules
    or lightning)
-2. **Nitrification:** $\mathrm{NH}_3 \to \mathrm{NO}_2^- \to \mathrm{NO}_3^-$ (by nitrifying bacteria)
-3. **Assimilation:** Plants absorb $\mathrm{NO}_3^-$; animals obtain nitrogen by eating plants
-4. **Ammonification:** Dead organisms/urea/faeces $\to \mathrm{NH}_3$ (by decomposers)
-5. **Denitrification:** $\mathrm{NO}_3^- \to \mathrm{N}_2$ (by denitrifying bacteria in anaerobic
+2. **Nitrification:** $\text{NH}_3 \to \text{NO}_2^- \to \text{NO}_3^-$ (by nitrifying bacteria)
+3. **Assimilation:** Plants absorb $\text{NO}_3^-$; animals obtain nitrogen by eating plants
+4. **Ammonification:** Dead organisms/urea/faeces $\to \text{NH}_3$ (by decomposers)
+5. **Denitrification:** $\text{NO}_3^- \to \text{N}_2$ (by denitrifying bacteria in anaerobic
    conditions)
 
 **Summary table: nitrogen cycle bacteria.**
 
 | Process           | Bacteria                  | Product                 | Conditions |
 | ----------------- | ------------------------- | ----------------------- | ---------- |
-| Nitrogen fixation | Rhizobium, Azotobacter    | Ammonia ($\mathrm{NH}_3$) | Aerobic    |
+| Nitrogen fixation | Rhizobium, Azotobacter    | Ammonia ($\text{NH}_3$) | Aerobic    |
 | Nitrification     | Nitrosomonas, Nitrobacter | Nitrite, nitrate        | Aerobic    |
-| Denitrification   | Pseudomonas               | $\mathrm{N}_2$ gas        | Anaerobic  |
+| Denitrification   | Pseudomonas               | $\text{N}_2$ gas        | Anaerobic  |
 | Ammonification    | Decomposers               | Ammonia                 | Both       |
 
 ### Human Impact on Ecosystems
 
-**Deforestation:** Loss of habitat, reduced biodiversity, increased $\mathrm{CO}_2$.
+**Deforestation:** Loss of habitat, reduced biodiversity, increased $\text{CO}_2$.
 
 **Eutrophication:**
 
@@ -234,7 +234,7 @@ one tree supporting many insects).
 
 **Climate change:**
 
-- Increased $\mathrm{CO}_2$ and other greenhouse gases enhance the greenhouse effect
+- Increased $\text{CO}_2$ and other greenhouse gases enhance the greenhouse effect
 - Consequences: rising temperatures, sea level rise, changes in species distribution, increased
   extreme weather
 
@@ -261,7 +261,7 @@ one tree supporting many insects).
 4. **Speciation:** Allopatric speciation requires geographic isolation; sympatric does not.
 
 5. **Nitrogen fixation:** Not all bacteria can fix nitrogen. Only specific species (e.g., Rhizobium
-   in legume root nodules) can convert $\mathrm{N}_2$ to $\mathrm{NH}_3$.
+   in legume root nodules) can convert $\text{N}_2$ to $\text{NH}_3$.
 
 6. **Confusing nitrification and denitrification.** Nitrification converts ammonia to nitrate
    (useful for plants); denitrification converts nitrate to nitrogen gas (removes nitrogen).
@@ -273,8 +273,8 @@ one tree supporting many insects).
    ecosystem (how it interacts with other organisms and the environment).
 
 9. **Forgetting that plants respire.** Plants carry out both photosynthesis and respiration. At
-   night, they only respire (net release of $\mathrm{CO}_2$). During the day, photosynthesis exceeds
-   respiration (net uptake of $\mathrm{CO}_2$).
+   night, they only respire (net release of $\text{CO}_2$). During the day, photosynthesis exceeds
+   respiration (net uptake of $\text{CO}_2$).
 
 10. **Assuming all energy at one trophic level is transferred to the next.** Only about 10% is
     transferred; the rest is lost. This limits food chains to typically 4-5 trophic levels.
@@ -471,7 +471,7 @@ because they contain an estimated 50% of all terrestrial species.
   atmospheric moisture to form acids. Acid rain damages forests, acidifies lakes, and corrodes
   buildings.
 
-**Climate change:** Rising atmospheric $\mathrm{CO}_2$ from burning fossil fuels enhances the
+**Climate change:** Rising atmospheric $\text{CO}_2$ from burning fossil fuels enhances the
 greenhouse effect. Consequences include rising sea levels (thermal expansion of water and melting
 ice caps), more frequent extreme weather events, and shifts in species distributions.
 
@@ -567,32 +567,32 @@ geosphere.
 
 **Key processes and the carbon reservoirs they connect:**
 
-1. **Photosynthesis:** Atmospheric $\mathrm{CO}_2$ is fixed into organic compounds by plants, algae,
+1. **Photosynthesis:** Atmospheric $\text{CO}_2$ is fixed into organic compounds by plants, algae,
    and cyanobacteria. Approximately 120 gigatonnes of carbon are fixed by photosynthesis each year.
-2. **Respiration:** Organic compounds are oxidised to release $\mathrm{CO}_2$, returning carbon to the
+2. **Respiration:** Organic compounds are oxidised to release $\text{CO}_2$, returning carbon to the
    atmosphere. This occurs in all living organisms.
 3. **Decomposition:** Decomposers (bacteria and fungi) break down dead organic matter, releasing
-   $\mathrm{CO}_2$.
+   $\text{CO}_2$.
 4. **Combustion:** Burning fossil fuels (coal, oil, natural gas) releases stored carbon as
-   $\mathrm{CO}_2$. This is the primary cause of the recent increase in atmospheric $\mathrm{CO}_2$.
-5. **Ocean absorption:** The oceans absorb approximately 25% of anthropogenic $\mathrm{CO}_2$
-   emissions. Dissolved $\mathrm{CO}_2$ forms carbonic acid, leading to ocean acidification.
+   $\text{CO}_2$. This is the primary cause of the recent increase in atmospheric $\text{CO}_2$.
+5. **Ocean absorption:** The oceans absorb approximately 25% of anthropogenic $\text{CO}_2$
+   emissions. Dissolved $\text{CO}_2$ forms carbonic acid, leading to ocean acidification.
 6. **Sedimentation:** Over millions of years, dead marine organisms sink to the ocean floor and are
    compressed into sedimentary rocks and fossil fuels, locking carbon away.
-7. **Weathering:** Silicate and carbonate rocks absorb $\mathrm{CO}_2$ very slowly through chemical
+7. **Weathering:** Silicate and carbonate rocks absorb $\text{CO}_2$ very slowly through chemical
    weathering.
 
 **Worked Example: The impact of deforestation on the carbon cycle.**
 
 When a tropical rainforest is cleared:
 
-1. The trees are either burned (releasing $\mathrm{CO}_2$ immediately) or left to decompose (releasing
-   $\mathrm{CO}_2$ gradually).
+1. The trees are either burned (releasing $\text{CO}_2$ immediately) or left to decompose (releasing
+   $\text{CO}_2$ gradually).
 2. The carbon stored in the trees (approximately 200 tonnes of carbon per hectare for tropical
    rainforest) is released to the atmosphere.
-3. Photosynthesis no longer removes $\mathrm{CO}_2$ from the atmosphere in the cleared area.
+3. Photosynthesis no longer removes $\text{CO}_2$ from the atmosphere in the cleared area.
 4. Soil carbon is also lost as the exposed soil is eroded and organic matter decomposes.
-5. The net effect is a significant increase in atmospheric $\mathrm{CO}_2$.
+5. The net effect is a significant increase in atmospheric $\text{CO}_2$.
 
 ## Review: Ecological Succession in Detail
 
@@ -680,17 +680,17 @@ A bare rock face is exposed after a landslide. Predict the stages of primary suc
 **Nitrogen cycle:**
 
 Nitrogen is essential for the synthesis of amino acids, proteins, and nucleic acids. Although
-nitrogen gas ($\mathrm{N}_2$) makes up approximately 78% of the atmosphere, most organisms cannot use
+nitrogen gas ($\text{N}_2$) makes up approximately 78% of the atmosphere, most organisms cannot use
 atmospheric nitrogen directly. The nitrogen cycle converts nitrogen between different chemical
 forms:
 
 **Key processes in the nitrogen cycle:**
 
-1. **Nitrogen fixation:** Atmospheric $\mathrm{N}_2$ is converted into ammonia ($\mathrm{NH}_3$) by
+1. **Nitrogen fixation:** Atmospheric $\text{N}_2$ is converted into ammonia ($\text{NH}_3$) by
    nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes, or free-living Azotobacter
-   in soil). Lightning also fixes nitrogen by converting $\mathrm{N}_2$ to nitrogen oxides.
-2. **Nitrification:** Ammonia is converted to nitrite ($\mathrm{NO}_2^-$) by Nitrosomonas bacteria,
-   then to nitrate ($\mathrm{NO}_3^-$) by Nitrobacter bacteria. Nitrates are the form of nitrogen most
+   in soil). Lightning also fixes nitrogen by converting $\text{N}_2$ to nitrogen oxides.
+2. **Nitrification:** Ammonia is converted to nitrite ($\text{NO}_2^-$) by Nitrosomonas bacteria,
+   then to nitrate ($\text{NO}_3^-$) by Nitrobacter bacteria. Nitrates are the form of nitrogen most
    readily absorbed by plants.
 3. **Absorption:** Plants absorb nitrates (and some ammonium ions) through their roots and
    incorporate them into amino acids and nucleic acids.
@@ -698,11 +698,11 @@ forms:
 5. **Decomposition (ammonification):** When organisms die, decomposers (bacteria and fungi) break
    down proteins and urea into ammonia, returning nitrogen to the soil.
 6. **Denitrification:** Denitrifying bacteria (e.g., Pseudomonas) convert nitrates in waterlogged,
-   anaerobic soil back into nitrogen gas ($\mathrm{N}_2$), returning it to the atmosphere.
+   anaerobic soil back into nitrogen gas ($\text{N}_2$), returning it to the atmosphere.
 
 **Human impact on the nitrogen cycle:**
 
-- **Synthetic fertilisers:** The Haber process converts $\mathrm{N}_2$ and $\mathrm{H}_2$ into ammonia
+- **Synthetic fertilisers:** The Haber process converts $\text{N}_2$ and $\text{H}_2$ into ammonia
   for fertilisers. Excess fertiliser runs off into waterways, causing eutrophication.
 - **Combustion of fossil fuels:** Releases nitrogen oxides into the atmosphere, contributing to acid
   rain and photochemical smog.
@@ -710,9 +710,9 @@ forms:
 
 **Worked Example: Tracing a nitrogen atom through the nitrogen cycle.**
 
-A nitrogen atom in the atmosphere as $\mathrm{N}_2$ is fixed by Rhizobium bacteria in the root nodules
-of a clover plant, converting it to $\mathrm{NH}_3$. The clover incorporates the ammonia into amino
+A nitrogen atom in the atmosphere as $\text{N}_2$ is fixed by Rhizobium bacteria in the root nodules
+of a clover plant, converting it to $\text{NH}_3$. The clover incorporates the ammonia into amino
 acids. A rabbit eats the clover and digests the proteins, using the amino acids to make its own
-proteins. When the rabbit dies, decomposer bacteria break down its proteins, releasing $\mathrm{NH}_3$
-back into the soil. Nitrosomonas converts the $\mathrm{NH}_3$ to $\mathrm{NO}_2^-$, and Nitrobacter
-converts $\mathrm{NO}_2^-$ to $\mathrm{NO}_3^-$. A grass plant absorbs the nitrate through its roots.
+proteins. When the rabbit dies, decomposer bacteria break down its proteins, releasing $\text{NH}_3$
+back into the soil. Nitrosomonas converts the $\text{NH}_3$ to $\text{NO}_2^-$, and Nitrobacter
+converts $\text{NO}_2^-$ to $\text{NO}_3^-$. A grass plant absorbs the nitrate through its roots.

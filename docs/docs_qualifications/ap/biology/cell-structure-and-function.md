@@ -210,7 +210,7 @@ eukaryotic cells.
      tyrosine kinases, ligand-gated ion channels).
 
 2. **Transduction:** The signal is relayed and amplified through a signal transduction pathway.
-   - Often involves **second messengers** (cAMP, $\mathrm{Ca}^{2+}$, $\mathrm{IP}_3$, DAG).
+   - Often involves **second messengers** (cAMP, $\text{Ca}^{2+}$, $\text{IP}_3$, DAG).
    - **Protein kinases** phosphorylate target proteins, activating or deactivating them.
    - **Protein phosphatases** remove phosphate groups, reversing kinase action.
    - **Cascades** amplify the signal (one activated kinase activates many downstream targets).
@@ -299,7 +299,7 @@ receptors in the cytoplasm or nucleus.
     the outcome depends on the specific pathway and cell type.
 11. **Confusing GPCRs and RTKs.** GPCRs use G-proteins and second messengers; RTKs dimerize and
     autophosphorylate, often activating the MAP kinase cascade.
-12. **Thinking all second messengers are the same.** cAMP, $\mathrm{Ca}^{2+}$, $\mathrm{IP}_3$, and DAG
+12. **Thinking all second messengers are the same.** cAMP, $\text{Ca}^{2+}$, $\text{IP}_3$, and DAG
     have different roles and activate different downstream pathways.
 13. **Confusing exocytosis and endocytosis direction.** Exocytosis releases materials out of the
     cell; endocytosis brings materials in.
@@ -385,13 +385,13 @@ receptors in the cytoplasm or nucleus.
 Understanding the nuances of membrane transport is critical. Here is a more detailed analysis of
 each mechanism:
 
-**Simple diffusion:** Small, nonpolar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$, steroid
+**Simple diffusion:** Small, nonpolar molecules (e.g., $\text{O}_2$, $\text{CO}_2$, steroid
 hormones) diffuse directly through the phospholipid bilayer. The rate depends on the concentration
 gradient, temperature, and the surface area of the membrane. No energy or transport protein is
 required.
 
-**Facilitated diffusion:** Polar molecules and ions (e.g., glucose, amino acids, $\mathrm{Na}^+$,
-$\mathrm{K}^+$) cannot cross the hydrophobic interior of the bilayer and require transport proteins.
+**Facilitated diffusion:** Polar molecules and ions (e.g., glucose, amino acids, $\text{Na}^+$,
+$\text{K}^+$) cannot cross the hydrophobic interior of the bilayer and require transport proteins.
 Channel proteins form hydrophilic pores; carrier proteins undergo conformational changes to shuttle
 molecules across. Like simple diffusion, facilitated diffusion is passive (no energy required) and
 moves substances down their concentration gradient.
@@ -402,15 +402,15 @@ region of higher water potential (lower solute concentration) to a region of low
 osmosis in cells that need to regulate water movement quickly (e.g., kidney cells).
 
 **Active transport:** Moves substances against their concentration gradient, requiring energy from
-ATP hydrolysis. The $\mathrm{Na}^+/\mathrm{K}^+$ pump is the classic example: it uses one ATP to pump 3
-$\mathrm{Na}^+$ out and 2 $\mathrm{K}^+$ in against their gradients. This pump is essential for
+ATP hydrolysis. The $\text{Na}^+/\text{K}^+$ pump is the classic example: it uses one ATP to pump 3
+$\text{Na}^+$ out and 2 $\text{K}^+$ in against their gradients. This pump is essential for
 maintaining the resting membrane potential, which is critical for nerve impulse transmission and
 muscle contraction.
 
 **Cotransport (secondary active transport):** Uses the energy stored in an ion gradient (established
 by primary active transport) to transport another substance against its gradient. For example, the
-$\mathrm{Na}^+$-glucose cotransporter in the small intestine uses the $\mathrm{Na}^+$ gradient
-(maintained by the $\mathrm{Na}^+/\mathrm{K}^+$ pump) to transport glucose into the cell against its
+$\text{Na}^+$-glucose cotransporter in the small intestine uses the $\text{Na}^+$ gradient
+(maintained by the $\text{Na}^+/\text{K}^+$ pump) to transport glucose into the cell against its
 concentration gradient.
 
 **Bulk transport:** Large molecules or particles are transported via vesicles. Endocytosis brings
@@ -430,7 +430,7 @@ Amino acids exit the cell by facilitated diffusion (from 10 mM to 5 mM, down the
 gradient). No energy is required.
 
 If the cell needs to accumulate amino acids to a concentration higher than 5 mM (e.g., for protein
-synthesis), it must use active transport (or a cotransporter that uses the $\mathrm{Na}^+$ gradient)
+synthesis), it must use active transport (or a cotransporter that uses the $\text{Na}^+$ gradient)
 to move amino acids against their concentration gradient. This requires ATP (directly or
 indirectly).
 
@@ -534,7 +534,7 @@ coordination (e.g., synchronous contraction of heart muscle cells).
 **Worked Example: Why gap junctions are essential in cardiac muscle.**
 
 Cardiac muscle cells (cardiomyocytes) are connected by gap junctions that form intercalated discs.
-These gap junctions allow ions (especially $\mathrm{Ca}^{2+}$) to flow freely between adjacent cells,
+These gap junctions allow ions (especially $\text{Ca}^{2+}$) to flow freely between adjacent cells,
 so an action potential generated in one cell can spread rapidly to all connected cells. This ensures
 that the entire heart muscle contracts as a coordinated unit (a functional syncytium). Without gap
 junctions, the heart would not beat in a synchronised manner, leading to ineffective pumping and
@@ -570,7 +570,7 @@ chloroplasts have their own circular DNA and ribosomes (70S), supporting the end
 
 **Peroxisomes:** Small organelles that contain oxidative enzymes (e.g., catalase). They break down
 fatty acids by beta-oxidation and detoxify harmful by-products of metabolism, such as hydrogen
-peroxide ($\mathrm{H}_2\mathrm{O}_2$), which catalase converts to water and oxygen.
+peroxide ($\text{H}_2\text{O}_2$), which catalase converts to water and oxygen.
 
 ## Review: Microscopy Techniques
 

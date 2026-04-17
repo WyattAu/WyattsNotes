@@ -166,9 +166,9 @@ Normal force: $N = mg = 5 \times 9.8 = 49 \text{ N}$.
 
 Friction force: $f = \mu N = 0.4 \times 49 = 19.6 \text{ N}$.
 
-Resultant force: $F_{\mathrm{net}} = 30 - 19.6 = 10.4 \text{ N}$.
+Resultant force: $F_{\text{net}} = 30 - 19.6 = 10.4 \text{ N}$.
 
-$$a = \frac{F_{\mathrm{net}}}{m} = \frac{10.4}{5} = 2.08 \text{ m/s}^2$$
+$$a = \frac{F_{\text{net}}}{m} = \frac{10.4}{5} = 2.08 \text{ m/s}^2$$
 
 ### Free-Body Diagrams and Connected Bodies
 
@@ -222,7 +222,7 @@ For force in the direction of motion: $W = Fs$.
 
 **Work-Energy Principle:** The work done by the resultant force equals the change in kinetic energy.
 
-$$W_{\mathrm{net}} = \Delta E_k = \frac{1}{2}mv^2 - \frac{1}{2}mu^2$$
+$$W_{\text{net}} = \Delta E_k = \frac{1}{2}mv^2 - \frac{1}{2}mu^2$$
 
 **Conservation of Energy (mechanical):** In the absence of non-conservative forces:
 
@@ -260,9 +260,9 @@ $$v = \sqrt{392} \approx 19.8 \text{ m/s}$$
 
 When friction is present, the work-energy theorem becomes:
 
-$$W_{\mathrm{nc}} = \Delta E_k + \Delta E_p$$
+$$W_{\text{nc}} = \Delta E_k + \Delta E_p$$
 
-where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (friction, which is negative).
+where $W_{\text{nc}}$ is the work done by non-conservative forces (friction, which is negative).
 
 $$-fd = \frac{1}{2}mv^2 - 0 + mg(h_f - h_i)$$
 
@@ -300,7 +300,7 @@ $$v = 4 \text{ m/s}$$
 
 For a given change in momentum, increasing the impact time decreases the average force:
 
-$$F_{\mathrm{avg}} = \frac{\Delta p}{\Delta t}$$
+$$F_{\text{avg}} = \frac{\Delta p}{\Delta t}$$
 
 This is why car crumple zones, seat belts, air bags, and crash mats all work: they increase the time
 over which the momentum changes, reducing the peak force.
@@ -478,10 +478,10 @@ $W_g = mg\sin\theta \times d = 4 \times 9.8 \times \sin 30° \times 5 = 98 \text
 
 **Work done by friction:** $W_f = -fd = -6.79 \times 5 = -33.95 \text{ J}$
 
-**Net work:** $W_{\mathrm{net}} = 98 - 33.95 = 64.05 \text{ J}$
+**Net work:** $W_{\text{net}} = 98 - 33.95 = 64.05 \text{ J}$
 
 **Final speed:**
-$W_{\mathrm{net}} = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2 \times 64.05}{4}} = \sqrt{32.03} = 5.66 \text{ m/s}$
+$W_{\text{net}} = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2 \times 64.05}{4}} = \sqrt{32.03} = 5.66 \text{ m/s}$
 
 ## 14. Vertical Circular Motion: Detailed Analysis
 

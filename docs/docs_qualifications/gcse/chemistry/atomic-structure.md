@@ -44,7 +44,7 @@ elements share the same value of $Z$. The mass number, by contrast, can vary wit
 because the number of neutrons is not fixed. This is the basis of isotopes.
 
 **Notation:** An atom of element X with mass number $A$ and atomic number $Z$ is written as
-$\prescript{A}{}{Z}\mathrm{X}$.
+$\prescript{A}{}{Z}\text{X}$.
 
 **Worked Example.** An atom of sodium has 11 protons and 12 neutrons. State its atomic number, mass
 number, and electron configuration.
@@ -55,14 +55,14 @@ $$Z = 11, \quad A = 11 + 12 = 23$$ $$\text{Electron configuration: } 2, 8, 1$$
 write its full notation.
 
 The atomic number $Z = 9$, which is fluorine. The mass number $A = 9 + 10 = 19$. The notation is
-$\prescript{19}{}{9}\mathrm{F}$. Since the number of protons equals the number of electrons, this is a
+$\prescript{19}{}{9}\text{F}$. Since the number of protons equals the number of electrons, this is a
 neutral fluorine atom.
 
 **Worked Example.** An ion has 8 protons, 8 neutrons, and 10 electrons. Identify the ion and give
 its charge.
 
 The element with 8 protons is oxygen ($Z = 8$). There are 10 electrons but only 8 protons, so the
-ion carries a charge of $10 - 8 = 2-$. This is the oxide ion, $\mathrm{O}^{2-}$. The mass number is
+ion carries a charge of $10 - 8 = 2-$. This is the oxide ion, $\text{O}^{2-}$. The mass number is
 $A = 8 + 8 = 16$.
 
 ### 1.2 History of the Atom
@@ -284,21 +284,21 @@ When atoms gain or lose electrons to form ions, the electron configuration chang
 
 **Example:** Sodium ion (Na$^+$)
 
-$$\text{Na: } 2, 8, 1 \implies \mathrm{Na}^+: 2, 8$$
+$$\text{Na: } 2, 8, 1 \implies \text{Na}^+: 2, 8$$
 
 The sodium ion has the same electron configuration as neon. This is why sodium forms a $1+$ ion: by
 losing one electron, it achieves a full outer shell.
 
 **Example:** Oxide ion (O$^{2-}$)
 
-$$\text{O: } 2, 6 \implies \mathrm{O}^{2-}: 2, 8$$
+$$\text{O: } 2, 6 \implies \text{O}^{2-}: 2, 8$$
 
 The oxide ion has the same electron configuration as neon. By gaining two electrons, oxygen achieves
 a full outer shell.
 
 **Example:** Calcium ion (Ca$^{2+}$)
 
-$$\text{Ca: } 2, 8, 8, 2 \implies \mathrm{Ca}^{2+}: 2, 8, 8$$
+$$\text{Ca: } 2, 8, 8, 2 \implies \text{Ca}^{2+}: 2, 8, 8$$
 
 Calcium loses its two outer electrons to achieve the configuration of argon.
 
@@ -415,27 +415,27 @@ losing their outer electron, lower ionisation energy means greater reactivity.
 
 **Reactions with water:**
 
-$$2\mathrm{Na} + 2\mathrm{H}_2\mathrm{O} \to 2\text{NaOH} + \mathrm{H}_2$$
+$$2\text{Na} + 2\text{H}_2\text{O} \to 2\text{NaOH} + \text{H}_2$$
 
 Lithium fizzes steadily; sodium melts and moves vigorously; potassium ignites with a lilac flame.
 
 **Reactions with chlorine:**
 
-$$2\mathrm{Na} + \mathrm{Cl}_2 \to 2\text{NaCl}$$
+$$2\text{Na} + \text{Cl}_2 \to 2\text{NaCl}$$
 
 These form **ionic compounds** called metal halides.
 
 **Worked Example.** Predict the products and write a balanced equation for the reaction of potassium
 with water.
 
-$$2\mathrm{K} + 2\mathrm{H}_2\mathrm{O} \to 2\mathrm{KOH} + \mathrm{H}_2$$
+$$2\text{K} + 2\text{H}_2\text{O} \to 2\text{KOH} + \text{H}_2$$
 
 Potassium hydroxide and hydrogen gas are produced. The reaction is more vigorous than that of sodium
 because potassium is more reactive.
 
 **Worked Example.** Write the balanced equation for lithium reacting with chlorine.
 
-$$2\mathrm{Li} + \mathrm{Cl}_2 \to 2\text{LiCl}$$
+$$2\text{Li} + \text{Cl}_2 \to 2\text{LiCl}$$
 
 ### 5.4 Group 7: The Halogens
 
@@ -455,18 +455,18 @@ decreases. This makes the halogen less eager to accept an electron, hence less r
 **Displacement reactions:** A more reactive halogen displaces a less reactive halogen from its
 compound.
 
-$$\mathrm{Cl}_2 + 2\mathrm{KBr} \to 2\mathrm{KCl} + \mathrm{Br}_2$$
+$$\text{Cl}_2 + 2\text{KBr} \to 2\text{KCl} + \text{Br}_2$$
 
 Chlorine displaces bromine from potassium bromide solution (chlorine is more reactive).
 
-Bromine cannot displace chlorine: $\mathrm{Br}_2 + 2\mathrm{KCl} \to$ no reaction.
+Bromine cannot displace chlorine: $\text{Br}_2 + 2\text{KCl} \to$ no reaction.
 
 **Worked Example.** Predict whether a reaction occurs when bromine is added to potassium iodide
 solution.
 
 Bromine is more reactive than iodine, so it will displace iodine:
 
-$$\mathrm{Br}_2 + 2\mathrm{KI} \to 2\mathrm{KBr} + \mathrm{I}_2$$
+$$\text{Br}_2 + 2\text{KI} \to 2\text{KBr} + \text{I}_2$$
 
 The solution would turn brown as iodine is formed.
 
@@ -474,7 +474,7 @@ The solution would turn brown as iodine is formed.
 solution.
 
 Chlorine is more reactive than fluorine is false -- fluorine is the most reactive halogen. So
-chlorine cannot displace fluorine: $\mathrm{Cl}_2 + 2\mathrm{KF} \to$ no reaction.
+chlorine cannot displace fluorine: $\text{Cl}_2 + 2\text{KF} \to$ no reaction.
 
 ### 5.5 Group 0: The Noble Gases
 
@@ -488,7 +488,7 @@ atmosphere).
 
 The increasing boiling point down Group 0 is explained by increasing London dispersion forces as the
 number of electrons increases. Helium ($A_r = 4$) has very weak intermolecular forces and boils at
-$-269^{\circ}\mathrm{C}$, whereas xenon ($A_r = 131$) boils at $-108^{\circ}\mathrm{C}$.
+$-269^{\circ}\text{C}$, whereas xenon ($A_r = 131$) boils at $-108^{\circ}\text{C}$.
 
 ### 5.6 Transition Metals
 
@@ -503,7 +503,7 @@ properties:
 
 The variable oxidation states arise because transition metals have electrons in both the 4s and 3d
 subshells, and electrons from both can be lost. Iron, for example, has the configuration
-$[\mathrm{Ar}]\,4s^2 3d^6$. It can lose the two 4s electrons to form Fe$^{2+}$, or both 4s electrons
+$[\text{Ar}]\,4s^2 3d^6$. It can lose the two 4s electrons to form Fe$^{2+}$, or both 4s electrons
 and one 3d electron to form Fe$^{3+}$.
 
 ### 5.7 Comparing Group 1 Metals with Transition Metals
@@ -546,19 +546,19 @@ bonding and reactivity.
 
 **Group 1 elements** lose 1 electron to form $1+$ ions:
 
-$$\mathrm{Na} \to \mathrm{Na}^+ + e^-$$
+$$\text{Na} \to \text{Na}^+ + e^-$$
 
 **Group 2 elements** lose 2 electrons to form $2+$ ions:
 
-$$\mathrm{Mg} \to \mathrm{Mg}^{2+} + 2e^-$$
+$$\text{Mg} \to \text{Mg}^{2+} + 2e^-$$
 
 **Group 6 elements** gain 2 electrons to form $2-$ ions:
 
-$$\mathrm{O} + 2e^- \to \mathrm{O}^{2-}$$
+$$\text{O} + 2e^- \to \text{O}^{2-}$$
 
 **Group 7 elements** gain 1 electron to form $1-$ ions:
 
-$$\mathrm{Cl} + e^- \to \mathrm{Cl}^-$$
+$$\text{Cl} + e^- \to \text{Cl}^-$$
 
 ### 6.3 Ionic Charges
 
@@ -589,7 +589,7 @@ shell. The charge is the negative of this number: $-(8 - \text{group number})$.
 The **first ionisation energy** is the energy required to remove one electron from each atom in a
 mole of gaseous atoms.
 
-$$\mathrm{X}(g) \to \mathrm{X}^+(g) + e^-$$
+$$\text{X}(g) \to \text{X}^+(g) + e^-$$
 
 **Trends across a period:** Ionisation energy generally increases because the nuclear charge
 increases while the shielding remains roughly constant. The outer electron is more strongly
@@ -711,8 +711,8 @@ This matches copper ($A_r \approx 63.5$). The isotopes are Cu-63 and Cu-65.
 18. A sample of a radioactive isotope has an initial mass of 20 g. After 2 hours, 2.5 g remains.
     Calculate the half-life of the isotope.
 
-19. Explain why the boiling point of helium ($-269^{\circ}\mathrm{C}$) is much lower than that of
-    radon ($-62^{\circ}\mathrm{C}$).
+19. Explain why the boiling point of helium ($-269^{\circ}\text{C}$) is much lower than that of
+    radon ($-62^{\circ}\text{C}$).
 
 20. Write balanced equations for the reactions of: (a) lithium with water, (b) fluorine with
     potassium bromide solution, (c) calcium with oxygen.

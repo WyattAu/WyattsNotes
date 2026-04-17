@@ -33,13 +33,13 @@ Reading bottom to top: $11001000_2$.
 **Hexadecimal:** Base-16 using digits 0-9 and A-F. Used for memory addresses, colour codes, and MAC
 addresses.
 
-$$\mathrm{A}3_{16} = 10 \times 16 + 3 = 163_{10}$$
+$$\text{A}3_{16} = 10 \times 16 + 3 = 163_{10}$$
 
 **Binary to hex:** Group binary digits in fours from the right.
 
-$$11010110_2 = 1101 \; 0110 = \mathrm{D}6_{16}$$
+$$11010110_2 = 1101 \; 0110 = \text{D}6_{16}$$
 
-**Worked Example.** Convert $\mathrm{FF}_{16}$ to binary and decimal.
+**Worked Example.** Convert $\text{FF}_{16}$ to binary and decimal.
 
 Binary: $11111111_2$. Decimal: $15 \times 16 + 15 = 255$.
 
@@ -691,7 +691,7 @@ restores the saved state, and resumes the calculation. The user does not notice 
 
 6. Explain why cache memory improves CPU performance.
 
-7. Convert $\mathrm{FF}_{16}$ to binary and decimal.
+7. Convert $\text{FF}_{16}$ to binary and decimal.
 
 8. Explain three functions of an operating system with examples.
 

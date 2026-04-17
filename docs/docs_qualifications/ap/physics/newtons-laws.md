@@ -35,7 +35,7 @@ one-sixth the weight.
 The net external force on an object equals the product of its mass and acceleration:
 
 $$
-\vec{F}_{\mathrm{net}} = m\vec{a}
+\vec{F}_{\text{net}} = m\vec{a}
 $$
 
 In component form:
@@ -167,7 +167,7 @@ Once sliding begins, the surfaces do not have time to form as many bonds, and th
 force is lower. The transition from static to kinetic friction is the reason objects "jerk" when
 they start to move.
 
-### Applied Force ($\vec{F}_{\mathrm{app}}$)
+### Applied Force ($\vec{F}_{\text{app}}$)
 
 Any external push or pull.
 
@@ -333,7 +333,7 @@ $$
 F = \frac{Gm_1 m_2}{r^2}
 $$
 
-where $G = 6.674 \times 10^{-11} \text{ N} \cdot \mathrm{m}^2/\mathrm{kg}^2$.
+where $G = 6.674 \times 10^{-11} \text{ N} \cdot \text{m}^2/\text{kg}^2$.
 
 ### Gravitational Field
 
@@ -710,7 +710,7 @@ $$T_A = 0.816 \times 175.8 = 143.4 \text{ N}$$
 ### Pitfall 6: Confusing Mass and Weight in Fluid Problems
 
 When an object is submerged in a fluid, the apparent weight is
-$W_{\mathrm{app}} = mg - \rho_{\text{fluid}} V g$. Do not confuse the actual weight $mg$ with the
+$W_{\text{app}} = mg - \rho_{\text{fluid}} V g$. Do not confuse the actual weight $mg$ with the
 apparent weight. Also, the buoyant force depends on the _fluid density_ and the _submerged volume_,
 not the object's density.
 

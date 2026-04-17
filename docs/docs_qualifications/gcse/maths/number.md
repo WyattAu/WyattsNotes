@@ -113,25 +113,25 @@ that is a multiple of both.
 If the prime factorisations are $a = p_1^{\alpha_1} p_2^{\alpha_2} \cdots$ and
 $b = p_1^{\beta_1} p_2^{\beta_2} \cdots$, then:
 
-$$\mathrm{HCF}(a, b) = p_1^{\min(\alpha_1, \beta_1)} p_2^{\min(\alpha_2, \beta_2)} \cdots$$
+$$\text{HCF}(a, b) = p_1^{\min(\alpha_1, \beta_1)} p_2^{\min(\alpha_2, \beta_2)} \cdots$$
 
-$$\mathrm{LCM}(a, b) = p_1^{\max(\alpha_1, \beta_1)} p_2^{\max(\alpha_2, \beta_2)} \cdots$$
+$$\text{LCM}(a, b) = p_1^{\max(\alpha_1, \beta_1)} p_2^{\max(\alpha_2, \beta_2)} \cdots$$
 
 **Relationship:** For any positive integers $a$ and $b$:
 
-$$\mathrm{HCF}(a, b) \times \mathrm{LCM}(a, b) = a \times b$$
+$$\text{HCF}(a, b) \times \text{LCM}(a, b) = a \times b$$
 
 **Proof of the relationship.** Write $a = \prod p_i^{\alpha_i}$ and $b = \prod p_i^{\beta_i}$. Then:
 
-$$\mathrm{HCF} \times \mathrm{LCM} = \prod p_i^{\min(\alpha_i, \beta_i)} \cdot \prod p_i^{\max(\alpha_i, \beta_i)} = \prod p_i^{\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i)} = \prod p_i^{\alpha_i + \beta_i} = ab \quad \blacksquare$$
+$$\text{HCF} \times \text{LCM} = \prod p_i^{\min(\alpha_i, \beta_i)} \cdot \prod p_i^{\max(\alpha_i, \beta_i)} = \prod p_i^{\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i)} = \prod p_i^{\alpha_i + \beta_i} = ab \quad \blacksquare$$
 
 **Worked Example.** Find the HCF and LCM of $84$ and $210$.
 
 $$84 = 2^2 \times 3 \times 7, \qquad 210 = 2 \times 3 \times 5 \times 7$$
 
-$$\mathrm{HCF} = 2^{\min(2,1)} \times 3^{\min(1,1)} \times 5^{\min(0,1)} \times 7^{\min(1,1)} = 2 \times 3 \times 7 = 42$$
+$$\text{HCF} = 2^{\min(2,1)} \times 3^{\min(1,1)} \times 5^{\min(0,1)} \times 7^{\min(1,1)} = 2 \times 3 \times 7 = 42$$
 
-$$\mathrm{LCM} = 2^{\max(2,1)} \times 3^{\max(1,1)} \times 5^{\max(0,1)} \times 7^{\max(1,1)} = 2^2 \times 3 \times 5 \times 7 = 420$$
+$$\text{LCM} = 2^{\max(2,1)} \times 3^{\max(1,1)} \times 5^{\max(0,1)} \times 7^{\max(1,1)} = 2^2 \times 3 \times 5 \times 7 = 420$$
 
 **Verification:** $42 \times 420 = 17640 = 84 \times 210$. $\checkmark$
 
@@ -139,9 +139,9 @@ $$\mathrm{LCM} = 2^{\max(2,1)} \times 3^{\max(1,1)} \times 5^{\max(0,1)} \times 
 
 $$180 = 2^2 \times 3^2 \times 5, \qquad 252 = 2^2 \times 3^2 \times 7, \qquad 396 = 2^2 \times 3^2 \times 11$$
 
-$$\mathrm{HCF} = 2^2 \times 3^2 = 36$$
+$$\text{HCF} = 2^2 \times 3^2 = 36$$
 
-$$\mathrm{LCM} = 2^2 \times 3^2 \times 5 \times 7 \times 11 = 4 \times 9 \times 385 = 13860$$
+$$\text{LCM} = 2^2 \times 3^2 \times 5 \times 7 \times 11 = 4 \times 9 \times 385 = 13860$$
 
 ### 1.4 Divisibility Tests and Prime Testing
 
@@ -234,7 +234,7 @@ A percentage represents a fraction out of 100. The key operations are:
 - **Percentage of an amount:** $P\%$ of $A = \frac{P}{100} \times A$
 - **Percentage change:** $\frac{\text{change}}{\text{original}} \times 100\%$
 - **Percentage increase/decrease:**
-  $\mathrm{new} = \text{original} \times \left(1 \pm \frac{P}{100}\right)$
+  $\text{new} = \text{original} \times \left(1 \pm \frac{P}{100}\right)$
 
 **Worked Example.** A coat costs 120 pounds. It is reduced by 15% in a sale, then the sale price is
 increased by 15%. What is the final price?
@@ -633,14 +633,14 @@ patterns, and scheduling.
 **Worked Example.** Bus A arrives every 12 minutes and Bus B arrives every 18 minutes. They both
 arrive together at 08:00. When will they next arrive together?
 
-We need $\mathrm{LCM}(12, 18) = 36$ minutes.
+We need $\text{LCM}(12, 18) = 36$ minutes.
 
 Next simultaneous arrival: 08:36.
 
 **Worked Example.** Three lights flash every 6, 8, and 12 seconds respectively. They all flash at
 time $t = 0$. When will they next all flash together?
 
-$\mathrm{LCM}(6, 8, 12) = 24$ seconds.
+$\text{LCM}(6, 8, 12) = 24$ seconds.
 
 ## 8. Number Theory Proofs (Higher Tier)
 

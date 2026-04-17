@@ -79,7 +79,7 @@ Unit: volt (V).
 EMF is the energy supplied per unit charge by a source:
 
 $$
-\mathrm{EMF} = \frac{W}{Q}
+\text{EMF} = \frac{W}{Q}
 $$
 
 ### Internal Resistance (HL)
@@ -87,7 +87,7 @@ $$
 A real cell has internal resistance $r$. The terminal voltage is:
 
 $$
-V = \mathrm{EMF} - Ir
+V = \text{EMF} - Ir
 $$
 
 ### Why Terminal PD Decreases with Current
@@ -266,22 +266,22 @@ where $V_0$ is the peak voltage and $\omega = 2\pi f$.
 ### RMS Values
 
 $$
-V_{\mathrm{rms}} = \frac{V_0}{\sqrt{2}}
+V_{\text{rms}} = \frac{V_0}{\sqrt{2}}
 $$
 
 $$
-I_{\mathrm{rms}} = \frac{I_0}{\sqrt{2}}
+I_{\text{rms}} = \frac{I_0}{\sqrt{2}}
 $$
 
-The mains supply in Ireland is $230\text{ V}_{\mathrm{rms}}$ at $50\text{ Hz}$.
+The mains supply in Ireland is $230\text{ V}_{\text{rms}}$ at $50\text{ Hz}$.
 
 ### Power in AC Circuits
 
 $$
-P_{\mathrm{avg}} = V_{\mathrm{rms}} I_{\mathrm{rms}} \cos\phi
+P_{\text{avg}} = V_{\text{rms}} I_{\text{rms}} \cos\phi
 $$
 
-For purely resistive circuits: $\phi = 0$, so $P = V_{\mathrm{rms}} I_{\mathrm{rms}}$.
+For purely resistive circuits: $\phi = 0$, so $P = V_{\text{rms}} I_{\text{rms}}$.
 
 ### Reactance and Impedance (HL)
 
@@ -327,7 +327,7 @@ At resonance: $Z = R = 100\text{ ohms}$.
 The induced EMF is equal to the negative rate of change of magnetic flux:
 
 $$
-\mathrm{EMF} = -\frac{d\Phi}{dt}
+\text{EMF} = -\frac{d\Phi}{dt}
 $$
 
 where $\Phi = BA\cos\theta$ is the magnetic flux.
@@ -373,11 +373,11 @@ $$
    ohms. Find the current and terminal voltage.
 2. A $47\text{ \mu F}$ capacitor is charged to 12 V and then discharged through a
    $100\text{ k\Omega}$ resistor. Find the time constant and the charge after 10 s.
-3. An AC circuit has $V = 230\text{ V}_{\mathrm{rms}}$ at $50\text{ Hz}$ connected to a
+3. An AC circuit has $V = 230\text{ V}_{\text{rms}}$ at $50\text{ Hz}$ connected to a
    $100\text{ ohm}$ resistor in series with a $0.1\text{ H}$ inductor. Find the impedance and the
    current.
 4. A transformer has 500 primary turns and 50 secondary turns. The primary voltage is
-   $230\text{ V}_{\mathrm{rms}}$. Find the secondary voltage. If the secondary current is 10 A, find
+   $230\text{ V}_{\text{rms}}$. Find the secondary voltage. If the secondary current is 10 A, find
    the primary current.
 
 5. Two capacitors of $22\text{ \mu F}$ and $47\text{ \mu F}$ are connected in series across a
@@ -395,7 +395,7 @@ $$
 
 ## 9. Worked Example: Complex RC Circuit Analysis (HL)
 
-A $100\mu\mathrm{F}$ capacitor is charged through a $33\text{ k}\Omega$ resistor from a $9\text{ V}$
+A $100\mu\text{F}$ capacitor is charged through a $33\text{ k}\Omega$ resistor from a $9\text{ V}$
 supply.
 
 **(a) Time constant:** $\tau = RC = 33000 \times 100 \times 10^{-6} = 3.3\text{ s}$
@@ -413,7 +413,7 @@ $$0.95 = 1 - e^{-t/3.3} \implies e^{-t/3.3} = 0.05 \implies t = -3.3 \times\ln(0
 
 ## 10. Worked Example: RLC Circuit Analysis (HL)
 
-An RLC series circuit has $R = 200\text{ }\Omega$, $L = 0.5\text{ H}$, $C = 20\text{ }\mu\mathrm{F}$
+An RLC series circuit has $R = 200\text{ }\Omega$, $L = 0.5\text{ H}$, $C = 20\text{ }\mu\text{F}$
 at $f = 100\text{ Hz}$.
 
 **Inductive reactance:** $X_L = 2\pi fL = 2\pi \times 100 \times 0.5 = 314.2\text{ }\Omega$
@@ -448,7 +448,7 @@ original field.
 ## 12. Worked Example: Transformer Efficiency (HL)
 
 A step-up transformer has 500 primary turns and 5000 secondary turns. The primary voltage is
-$230\text{ V}_{\mathrm{rms}}$ and the secondary current is $5\text{ A}$ at $95\text{ }\Omega$ load.
+$230\text{ V}_{\text{rms}}$ and the secondary current is $5\text{ A}$ at $95\text{ }\Omega$ load.
 
 **Secondary voltage:** $V_s = 230 \times \frac{5000}{500} = 2300\text{ V}$
 
@@ -469,14 +469,14 @@ $$I_p = \frac{I_s \times V_s}{0.95 \times V_p} = \frac{5 \times 2300}{0.95 \time
 
 ### Worked Example
 
-Three capacitors $C_1 = 22\mu\mathrm{F}$, $C_2 = 47\mu\mathrm{F}$, and $C_3 = 10\mu\mathrm{F}$ are
+Three capacitors $C_1 = 22\mu\text{F}$, $C_2 = 47\mu\text{F}$, and $C_3 = 10\mu\text{F}$ are
 connected in series across a $12\text{ V}$ supply.
 
 **Total capacitance:**
 
 $$\frac{1}{C_{\text{total}}} = \frac{1}{22} + \frac{1}{47} + \frac{1}{10} = 0.0455 + 0.0213 + 0.1000 = 0.1668$$
 
-$$C_{\text{total}} = \frac{1}{0.1668} = 5.996\mu\mathrm{F} \approx 6.0\mu\mathrm{F}$$
+$$C_{\text{total}} = \frac{1}{0.1668} = 5.996\mu\text{F} \approx 6.0\mu\text{F}$$
 
 **Charge (same on each):**
 $Q = C_{\text{total}}V = 5.996 \times 10^{-6} \times 12 = 7.195 \times 10^{-5}\text{ C}$
@@ -568,16 +568,16 @@ Check: $0.610 + 0.407 = 1.017\text{ A}$. Correct.
     $4\text{ }\Omega$ resistor and a $12\text{ }\Omega$ resistor in parallel. Calculate the current
     through each resistor and the power dissipated in the $4\text{ }\Omega$ resistor.
 
-12. A $47\mu\mathrm{F}$ capacitor is charged to $20\text{ V}$ and then discharged through a
+12. A $47\mu\text{F}$ capacitor is charged to $20\text{ V}$ and then discharged through a
     $68\text{ k}\Omega$ resistor. Calculate (a) the time constant, (b) the voltage after
     $5\text{ s}$, (c) the energy stored initially, and (d) the energy remaining after $5\text{ s}$.
 
-13. An AC circuit has $R = 150\text{ }\Omega$, $L = 0.3\text{ H}$, $C = 30\text{ }\mu\mathrm{F}$ at
+13. An AC circuit has $R = 150\text{ }\Omega$, $L = 0.3\text{ H}$, $C = 30\text{ }\mu\text{F}$ at
     $f = 200\text{ Hz}$. Calculate $X_L$, $X_C$, $Z$, the phase angle, the current, and the power
     dissipated.
 
 14. A transformer with 1000 primary turns and 50 secondary turns is connected to a
-    $230\text{ V}_{\mathrm{rms}}$ mains supply. If the secondary delivers $10\text{ A}$ to a
+    $230\text{ V}_{\text{rms}}$ mains supply. If the secondary delivers $10\text{ A}$ to a
     $100\text{ }\Omega$ load at $92\text{ }\%$ efficiency, calculate the primary current and the
     power wasted in the transformer.
 
@@ -586,10 +586,10 @@ Check: $0.610 + 0.407 = 1.017\text{ A}$. Correct.
 
 16. A potential divider circuit consists of a $20\text{ k}\Omega$ resistor and an NTC thermistor in
     series with a $12\text{ V}$ supply. The thermistor has resistance $15\text{ k}\Omega$ at
-    $20^{\circ}\mathrm{C}$ and $3\text{ k}\Omega$ at $80^{\circ}\mathrm{C}$. Calculate the output
+    $20^{\circ}\text{C}$ and $3\text{ k}\Omega$ at $80^{\circ}\text{C}$. Calculate the output
     voltage at each temperature and explain how this circuit could be used as a temperature sensor.
 
-17. Two capacitors of $33\mu\mathrm{F}$ and $100\mu\mathrm{F}$ are connected in series and then in
+17. Two capacitors of $33\mu\text{F}$ and $100\mu\text{F}$ are connected in series and then in
     parallel with a $6\text{ V}$ supply. For each configuration, find the total capacitance, the
     charge stored energy, and the PD across each capacitor.
 
@@ -608,7 +608,7 @@ Check: $0.610 + 0.407 = 1.017\text{ A}$. Correct.
 
 ### Example 21: AC Circuit with Purely Resistive, Inductive, and Capacitive Loads
 
-Compare the behaviour of a $100 \Omega$ resistor, a $0.5 \text{ H}$ inductor, and a $10 \mu\mathrm{F}$
+Compare the behaviour of a $100 \Omega$ resistor, a $0.5 \text{ H}$ inductor, and a $10 \mu\text{F}$
 capacitor when connected individually to a $230 \text{ V}$, $50 \text{ Hz}$ AC supply.
 
 **Resistor:**
@@ -680,7 +680,7 @@ Check: $P = VI = 6 \times 0.0333 = 0.1998 \text{ W}$. Confirmed.
 
 ### Example 23: Capacitor Charging Through a Resistor
 
-A $47 \mu\mathrm{F}$ capacitor is charged through a $100 \text{ k}\Omega$ resistor from a
+A $47 \mu\text{F}$ capacitor is charged through a $100 \text{ k}\Omega$ resistor from a
 $12 \text{ V}$ supply. Calculate (a) the time constant, (b) the voltage after $5 \text{ s}$, (c) the
 current after $5 \text{ s}$, and (d) the time to reach $95\%$ of the supply voltage.
 
@@ -698,7 +698,7 @@ $$= 12(1 - 0.3452) = 12 \times 0.6548 = 7.86 \text{ V}$$
 
 $$I(t) = I_0 e^{-t/\tau} = \frac{V_0}{R} e^{-t/\tau} = \frac{12}{100000} \times e^{-1.064}$$
 
-$$= 0.00012 \times 0.3452 = 4.14 \times 10^{-5} \text{ A} = 41.4 \mu\mathrm{A}$$
+$$= 0.00012 \times 0.3452 = 4.14 \times 10^{-5} \text{ A} = 41.4 \mu\text{A}$$
 
 **Step 4: Time to reach 95% of supply voltage**
 
@@ -724,7 +724,7 @@ Useful rules of thumb for RC circuits:
 For a sinusoidal AC supply:
 
 - Peak voltage: $V_0$
-- RMS voltage: $V_{\mathrm{rms}} = V_0/\sqrt{2}$
+- RMS voltage: $V_{\text{rms}} = V_0/\sqrt{2}$
 - Peak-to-peak voltage: $2V_0$
 
 Mains electricity in Ireland is $230 \text{ V}$ RMS, which corresponds to a peak voltage of
@@ -757,8 +757,8 @@ block DC while passing AC signals.
     voltage, (b) the RMS voltage, (c) the frequency, and (d) the peak voltage across a $50 \Omega$
     resistor connected to the generator.
 
-24. A capacitor of $22 \mu\mathrm{F}$ is charged to $50 \text{ V}$ and then connected across an
-    uncharged $47 \mu\mathrm{F}$ capacitor. Calculate (a) the common final voltage, (b) the charge on
+24. A capacitor of $22 \mu\text{F}$ is charged to $50 \text{ V}$ and then connected across an
+    uncharged $47 \mu\text{F}$ capacitor. Calculate (a) the common final voltage, (b) the charge on
     each capacitor, and (c) the energy lost in the process.
 
 25. Describe an experiment to determine the relationship between the current through a filament lamp

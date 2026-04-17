@@ -387,7 +387,7 @@ $$5 + (n - 1) \times 3 = 137$$ $$3(n - 1) = 132$$ $$n - 1 = 44$$ $$n = 45$$
 **Worked Example (Higher Tier).** An arithmetic sequence has $u_3 = 14$ and $u_7 = 26$. Find $a$ and
 $d$.
 
-$$a + 2d = 14 \quad \mathrm{and} \quad a + 6d = 26$$
+$$a + 2d = 14 \quad \text{and} \quad a + 6d = 26$$
 
 Subtracting: $4d = 12$, so $d = 3$. Then $a = 14 - 6 = 8$.
 

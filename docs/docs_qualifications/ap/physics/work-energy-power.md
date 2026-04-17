@@ -44,13 +44,13 @@ The work done by a variable force equals the area under the force-vs-displacemen
 
 ### Units
 
-1 Joule (J) = $1 \text{ N} \cdot \mathrm{m} = 1 \text{ kg} \cdot \mathrm{m}^2/\mathrm{s}^2$
+1 Joule (J) = $1 \text{ N} \cdot \text{m} = 1 \text{ kg} \cdot \text{m}^2/\text{s}^2$
 
 ### Dimensional Analysis of the Joule
 
 From $W = Fd$:
-$[W] = \mathrm{N} \cdot \mathrm{m} = (\mathrm{kg} \cdot \text{m/s}^2) \cdot \mathrm{m} =
-\mathrm{kg} \cdot \mathrm{m}^2/\mathrm{s}^2$.
+$[W] = \text{N} \cdot \text{m} = (\text{kg} \cdot \text{m/s}^2) \cdot \text{m} =
+\text{kg} \cdot \text{m}^2/\text{s}^2$.
 This is the same as the dimensions of kinetic energy $\frac{1}{2}mv^2$, confirming that work and
 energy are the same physical quantity.
 
@@ -71,7 +71,7 @@ $W_F = Fd\cos\theta = 50 \times 4.0 \times \cos(-30^\circ) = 50 \times 4.0 \time
 
 **Normal force:** $W_N = 0$ (vertical force, horizontal displacement)
 
-**Net work:** $W_{\mathrm{net}} = 173.2 - 30 = 143.2 \text{ J}$
+**Net work:** $W_{\text{net}} = 173.2 - 30 = 143.2 \text{ J}$
 
 :::
 
@@ -88,19 +88,19 @@ $$
 The net work done on an object equals its change in kinetic energy:
 
 $$
-W_{\mathrm{net}} = \Delta K = K_f - K_i = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2
+W_{\text{net}} = \Delta K = K_f - K_i = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2
 $$
 
 ### Proof of the Work-Energy Theorem (AP Physics C)
 
 $$
-W_{\mathrm{net}} = \int_{x_i}^{x_f} F_{\mathrm{net}}\, dx = \int_{x_i}^{x_f} ma\, dx = m\int_{x_i}^{x_f} \frac{dv}{dt}\, dx
+W_{\text{net}} = \int_{x_i}^{x_f} F_{\text{net}}\, dx = \int_{x_i}^{x_f} ma\, dx = m\int_{x_i}^{x_f} \frac{dv}{dt}\, dx
 $$
 
 Using the chain rule $\frac{dv}{dt} = \frac{dv}{dx}\frac{dx}{dt} = v\frac{dv}{dx}$:
 
 $$
-W_{\mathrm{net}} = m\int_{v_i}^{v_f} v\, dv = m\left[\frac{v^2}{2}\right]_{v_i}^{v_f} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2
+W_{\text{net}} = m\int_{v_i}^{v_f} v\, dv = m\left[\frac{v^2}{2}\right]_{v_i}^{v_f} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2
 $$
 
 $\blacksquare$
@@ -119,7 +119,7 @@ A $2.0 \text{ kg}$ block initially at rest is pushed by a $12 \text{ N}$ horizon
 frictionless surface for $5.0 \text{ m}$. Find its final speed.
 
 $$
-W_{\mathrm{net}} = 12 \times 5.0 = 60 \text{ J}
+W_{\text{net}} = 12 \times 5.0 = 60 \text{ J}
 $$
 
 $$
@@ -201,10 +201,10 @@ $$
 ### Work-Energy Principle (with Non-Conservative Forces)
 
 $$
-W_{\mathrm{nc}} = \Delta K + \Delta U = E_f - E_i
+W_{\text{nc}} = \Delta K + \Delta U = E_f - E_i
 $$
 
-where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (like friction).
+where $W_{\text{nc}}$ is the work done by non-conservative forces (like friction).
 
 :::info[Example]
 
@@ -233,7 +233,7 @@ $$
 A $3.0 \text{ kg}$ block slides down a $30^\circ$ incline of length $5.0 \text{ m}$ from rest. The
 coefficient of kinetic friction is $\mu_k = 0.2$. Find the speed at the bottom.
 
-**Energy method:** $W_{\mathrm{nc}} = \Delta K + \Delta U$
+**Energy method:** $W_{\text{nc}} = \Delta K + \Delta U$
 
 $-f_k d = \frac{1}{2}mv_f^2 - 0 + mg(h_f - h_i)$
 
@@ -261,13 +261,13 @@ For a constant force: $P = Fv\cos\theta$.
 
 ### Units
 
-1 Watt (W) = $1 \text{ J/s} = 1 \text{ kg} \cdot \mathrm{m}^2/\mathrm{s}^3$
+1 Watt (W) = $1 \text{ J/s} = 1 \text{ kg} \cdot \text{m}^2/\text{s}^3$
 
 1 horsepower (hp) = 746 W
 
 ### Instantaneous vs Average Power
 
-Average power: $P_{\mathrm{avg}} = W/t = \Delta E / t$.
+Average power: $P_{\text{avg}} = W/t = \Delta E / t$.
 
 Instantaneous power: $P(t) = \vec{F}(t) \cdot \vec{v}(t)$.
 
@@ -357,7 +357,7 @@ mass.
    which can be set anywhere convenient.
 3. **Confusing force and power.** Power is force times velocity, not just force.
 4. **Applying conservation of mechanical energy when non-conservative forces are present.** Use
-   $W_{\mathrm{nc}} = \Delta E$ instead.
+   $W_{\text{nc}} = \Delta E$ instead.
 5. **Forgetting the sign convention.** Work done by gravity is $W_g = -mg\Delta h$ (positive when
    the object moves down).
 6. **Using $U = mgh$ far from Earth's surface.** Use $U = -\frac{GMm}{r}$ instead.
@@ -591,22 +591,22 @@ If the car then accelerates to $30 \text{ m/s}$ with the same driving force:
 
 **Step 4: New resistance at $30 \text{ m/s}$ (assuming air resistance scales as $v^2$)**
 
-$$F_{\mathrm{air}} \propto v^2$$
+$$F_{\text{air}} \propto v^2$$
 
-Let $F_{\text{air,25}} = F_{\mathrm{air}}(25)$ and $F_{\text{roll}}$ be the constant rolling friction.
+Let $F_{\text{air,25}} = F_{\text{air}}(25)$ and $F_{\text{roll}}$ be the constant rolling friction.
 
-At $25 \text{ m/s}$: $F_{\mathrm{air}}(25) + F_{\text{roll}} = 1200 \text{ N}$
+At $25 \text{ m/s}$: $F_{\text{air}}(25) + F_{\text{roll}} = 1200 \text{ N}$
 
 At $30 \text{ m/s}$:
-$F_{\mathrm{air}}(30) = F_{\mathrm{air}}(25) \times (30/25)^2 = 1.44 \times F_{\mathrm{air}}(25)$
+$F_{\text{air}}(30) = F_{\text{air}}(25) \times (30/25)^2 = 1.44 \times F_{\text{air}}(25)$
 
-Assuming $F_{\mathrm{air}}(25) = 1000 \text{ N}$ and $F_{\text{roll}} = 200 \text{ N}$:
+Assuming $F_{\text{air}}(25) = 1000 \text{ N}$ and $F_{\text{roll}} = 200 \text{ N}$:
 
-$$F_{\mathrm{air}}(30) = 1440 \text{ N}$$
+$$F_{\text{air}}(30) = 1440 \text{ N}$$
 
 $$F_{\text{total resist}}(30) = 1440 + 200 = 1640 \text{ N}$$
 
-**Net force:** $F_{\mathrm{net}} = 1200 - 1640 = -440 \text{ N}$
+**Net force:** $F_{\text{net}} = 1200 - 1640 = -440 \text{ N}$
 
 The car cannot maintain $30 \text{ m/s}$ with the same driving force -- air resistance increases too
 rapidly.
@@ -657,7 +657,7 @@ At the bottom, its speed is $6 \text{ m/s}$. Calculate the work done by friction
 
 **Step 1: Energy at the top**
 
-$$E_{\mathrm{top}} = mgh = 5 \times 9.8 \times 3 = 147 \text{ J}$$
+$$E_{\text{top}} = mgh = 5 \times 9.8 \times 3 = 147 \text{ J}$$
 
 **Step 2: Energy at the bottom**
 
@@ -665,7 +665,7 @@ $$E_{\text{bottom}} = \frac{1}{2}mv^2 = \frac{1}{2} \times 5 \times 36 = 90 \tex
 
 **Step 3: Work done by friction**
 
-$$W_f = E_{\text{bottom}} - E_{\mathrm{top}} = 90 - 147 = -57 \text{ J}$$
+$$W_f = E_{\text{bottom}} - E_{\text{top}} = 90 - 147 = -57 \text{ J}$$
 
 The friction does $-57 \text{ J}$ of work (dissipates $57 \text{ J}$ of mechanical energy as heat).
 

@@ -265,7 +265,7 @@ biological tissue.
 ### Properties of Sound (OL/HL)
 
 - Sound is a longitudinal wave requiring a medium.
-- Speed of sound in air at $20°\mathrm{C}$: approximately $343\text{ m/s}$.
+- Speed of sound in air at $20°\text{C}$: approximately $343\text{ m/s}$.
 - Frequency range of human hearing: $20\text{ Hz}$ to $20,000\text{ Hz}$.
 
 ### Why Sound Cannot Travel Through a Vacuum

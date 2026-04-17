@@ -38,7 +38,7 @@ and why plant cells have a fixed, rectangular shape while animal cells are flexi
 
 **The cell membrane as a gatekeeper.** The cell membrane is not a solid barrier; it is a dynamic
 structure composed of a phospholipid bilayer with embedded proteins. Small, non-polar molecules
-(such as $\mathrm{O}_2$ and $\mathrm{CO}_2$) can diffuse directly through the lipid bilayer. Larger or
+(such as $\text{O}_2$ and $\text{CO}_2$) can diffuse directly through the lipid bilayer. Larger or
 polar molecules (such as glucose and ions) require transport proteins to cross. This selective
 permeability is essential for maintaining the internal conditions of the cell (homeostasis).
 
@@ -395,7 +395,7 @@ movement in either direction.
 - Occurs in both liquids and gases
 - Rate increases with: larger concentration gradient, higher temperature, larger surface area,
   shorter diffusion distance
-- Only works for small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$) and lipid-soluble
+- Only works for small, non-polar molecules (e.g., $\text{O}_2$, $\text{CO}_2$) and lipid-soluble
   substances
 - Large or polar molecules (e.g., glucose, amino acids, ions) cannot diffuse through the lipid
   bilayer and require transport proteins (facilitated diffusion or active transport)
@@ -414,9 +414,9 @@ movement in either direction.
 **Worked Example.** Oxygen diffuses from the alveoli (high concentration) into the blood (low
 concentration). Carbon dioxide diffuses from the blood into the alveoli. This simultaneous exchange
 of gases is efficient because both processes use the same concentration gradient in opposite
-directions: the alveoli have high $\mathrm{O}_2$ and low $\mathrm{CO}_2$ (because fresh air is
-continually breathed in), while the blood arriving at the lungs has low $\mathrm{O}_2$ and high
-$\mathrm{CO}_2$ (because it has just returned from the body tissues where respiration occurred).
+directions: the alveoli have high $\text{O}_2$ and low $\text{CO}_2$ (because fresh air is
+continually breathed in), while the blood arriving at the lungs has low $\text{O}_2$ and high
+$\text{CO}_2$ (because it has just returned from the body tissues where respiration occurred).
 
 ### 3.2 Osmosis
 
@@ -600,7 +600,7 @@ units.
 | Micrometre | $\mu$m | $\times 10^{-6}$ m   |
 | Nanometre  | nm     | $\times 10^{-9}$ m   |
 
-**Worked Example.** A mitochondrion is $5 \mu\mathrm{m}$ long. Express this in nanometres.
+**Worked Example.** A mitochondrion is $5 \mu\text{m}$ long. Express this in nanometres.
 
 $$5 \text{ \mu m} = 5 \times 1000 \text{ nm} = 5000 \text{ nm}$$
 

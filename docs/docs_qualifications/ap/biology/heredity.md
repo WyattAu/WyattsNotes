@@ -519,7 +519,7 @@ Epigenetics refers to heritable changes in gene expression that do not involve c
 sequence. Epigenetic modifications can be influenced by environmental factors and can sometimes be
 passed to offspring.
 
-**DNA methylation:** Methyl groups ($-\mathrm{CH}_3$) are added to cytosine bases, typically in CpG
+**DNA methylation:** Methyl groups ($-\text{CH}_3$) are added to cytosine bases, typically in CpG
 islands near gene promoters. Methylation generally silences gene expression by preventing
 transcription factors from binding.
 

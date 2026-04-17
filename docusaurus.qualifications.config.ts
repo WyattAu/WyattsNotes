@@ -37,16 +37,18 @@ const remarkPluginsConfig = {
   remarkPlugins: [remarkMath, remarkCodeSnippets],
 };
 
+const katexIgnoreNewLineWarning = {
+  strict: (errorCode: string) => {
+    if (errorCode === 'newLineInDisplayMode') {
+      return 'ignore';
+    }
+
+    return 'warn';
+  },
+};
+
 const rehypePluginConfig = {
-  rehypePlugins: [
-    [
-      rehypeKatex,
-      {
-        strict: (errorCode: string) => (errorCode === 'newLineInDisplayMode' ? 'ignore' : 'warn'),
-        output: 'html',
-      },
-    ],
-  ],
+  rehypePlugins: [[rehypeKatex, katexIgnoreNewLineWarning]],
 };
 
 const commonDocsPluginConfig = {

@@ -39,31 +39,31 @@ most fundamental principles in chemistry.
 **Worked Example.** Balance the equation for the reaction between iron and oxygen to form iron(III)
 oxide.
 
-Unbalanced: $\mathrm{Fe} + \mathrm{O}_2 \to \mathrm{Fe}_2\mathrm{O}_3$
+Unbalanced: $\text{Fe} + \text{O}_2 \to \text{Fe}_2\text{O}_3$
 
 Count atoms: Fe: 1 on left, 2 on right. O: 2 on left, 3 on right.
 
 To balance Fe: put 4 on the left. To balance O: put 3 O$_2$ on the left.
 
-$$4\mathrm{Fe} + 3\mathrm{O}_2 \to 2\mathrm{Fe}_2\mathrm{O}_3$$
+$$4\text{Fe} + 3\text{O}_2 \to 2\text{Fe}_2\text{O}_3$$
 
 Check: Fe: 4 = 4, O: 6 = 6.
 
 **Worked Example.** Balance the reaction of aluminium with hydrochloric acid.
 
-Unbalanced: $\mathrm{Al} + \mathrm{HCl} \to \text{AlCl}_3 + \mathrm{H}_2$
+Unbalanced: $\text{Al} + \text{HCl} \to \text{AlCl}_3 + \text{H}_2$
 
-$$2\mathrm{Al} + 6\mathrm{HCl} \to 2\text{AlCl}_3 + 3\mathrm{H}_2$$
+$$2\text{Al} + 6\text{HCl} \to 2\text{AlCl}_3 + 3\text{H}_2$$
 
 **Worked Example.** Balance the combustion of ethane.
 
-Unbalanced: $\mathrm{C}_2\mathrm{H}_6 + \mathrm{O}_2 \to \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$
+Unbalanced: $\text{C}_2\text{H}_6 + \text{O}_2 \to \text{CO}_2 + \text{H}_2\text{O}$
 
-$$2\mathrm{C}_2\mathrm{H}_6 + 7\mathrm{O}_2 \to 4\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O}$$
+$$2\text{C}_2\text{H}_6 + 7\text{O}_2 \to 4\text{CO}_2 + 6\text{H}_2\text{O}$$
 
 **Worked Example.** Balance the reaction of zinc with copper(II) sulfate.
 
-$$\mathrm{Zn} + \text{CuSO}_4 \to \text{ZnSO}_4 + \mathrm{Cu}$$
+$$\text{Zn} + \text{CuSO}_4 \to \text{ZnSO}_4 + \text{Cu}$$
 
 This equation is already balanced. One atom of each element appears on both sides.
 
@@ -83,17 +83,17 @@ that occurs.
 **Worked Example.** Write a balanced symbol equation with state symbols for the reaction of calcium
 with hydrochloric acid.
 
-$$\text{Ca(s)} + 2\text{HCl(aq)} \to \text{CaCl}_2\text{(aq)} + \mathrm{H}_2\text{(g)}$$
+$$\text{Ca(s)} + 2\text{HCl(aq)} \to \text{CaCl}_2\text{(aq)} + \text{H}_2\text{(g)}$$
 
 **Worked Example.** Write the balanced equation for the thermal decomposition of copper(II)
 carbonate.
 
-$$\text{CuCO}_3\text{(s)} \to \text{CuO(s)} + \mathrm{CO}_2\text{(g)}$$
+$$\text{CuCO}_3\text{(s)} \to \text{CuO(s)} + \text{CO}_2\text{(g)}$$
 
 **Worked Example.** Write the balanced equation for the reaction between sodium hydroxide and
 sulfuric acid.
 
-$$2\text{NaOH(aq)} + \mathrm{H}_2\mathrm{SO}_4\text{(aq)} \to \mathrm{Na}_2\mathrm{SO}_4\text{(aq)} + 2\mathrm{H}_2\text{O(l)}$$
+$$2\text{NaOH(aq)} + \text{H}_2\text{SO}_4\text{(aq)} \to \text{Na}_2\text{SO}_4\text{(aq)} + 2\text{H}_2\text{O(l)}$$
 
 ### 1.4 Ionic Equations
 
@@ -107,20 +107,20 @@ Full equation:
 $\text{AgNO}_3\text{(aq)} + \text{NaCl(aq)} \to \text{AgCl(s)} + \text{NaNO}_3\text{(aq)}$
 
 Ionic:
-$\mathrm{Ag}^+\text{(aq)} + \mathrm{NO}_3^-\text{(aq)} + \mathrm{Na}^+\text{(aq)} + \mathrm{Cl}^-\text{(aq)} \to \text{AgCl(s)} + \mathrm{Na}^+\text{(aq)} + \mathrm{NO}_3^-\text{(aq)}$
+$\text{Ag}^+\text{(aq)} + \text{NO}_3^-\text{(aq)} + \text{Na}^+\text{(aq)} + \text{Cl}^-\text{(aq)} \to \text{AgCl(s)} + \text{Na}^+\text{(aq)} + \text{NO}_3^-\text{(aq)}$
 
-Spectator ions: $\mathrm{Na}^+$ and $\mathrm{NO}_3^-$
+Spectator ions: $\text{Na}^+$ and $\text{NO}_3^-$
 
-Net ionic: $\mathrm{Ag}^+\text{(aq)} + \mathrm{Cl}^-\text{(aq)} \to \text{AgCl(s)}$
+Net ionic: $\text{Ag}^+\text{(aq)} + \text{Cl}^-\text{(aq)} \to \text{AgCl(s)}$
 
 **Worked Example.** Write the ionic equation for the reaction of zinc with copper(II) sulfate.
 
 Full: $\text{Zn(s)} + \text{CuSO}_4\text{(aq)} \to \text{ZnSO}_4\text{(aq)} + \text{Cu(s)}$
 
 Ionic:
-$\text{Zn(s)} + \mathrm{Cu}^{2+}\text{(aq)} + \mathrm{SO}_4^{2-}\text{(aq)} \to \mathrm{Zn}^{2+}\text{(aq)} + \mathrm{SO}_4^{2-}\text{(aq)} + \text{Cu(s)}$
+$\text{Zn(s)} + \text{Cu}^{2+}\text{(aq)} + \text{SO}_4^{2-}\text{(aq)} \to \text{Zn}^{2+}\text{(aq)} + \text{SO}_4^{2-}\text{(aq)} + \text{Cu(s)}$
 
-Net ionic: $\text{Zn(s)} + \mathrm{Cu}^{2+}\text{(aq)} \to \mathrm{Zn}^{2+}\text{(aq)} + \text{Cu(s)}$
+Net ionic: $\text{Zn(s)} + \text{Cu}^{2+}\text{(aq)} \to \text{Zn}^{2+}\text{(aq)} + \text{Cu(s)}$
 
 Spectator ion: SO$_4^{2-}$.
 
@@ -130,15 +130,15 @@ Redox reactions can be split into two half equations: one for oxidation and one 
 
 **Example:** The reaction between magnesium and copper(II) sulfate.
 
-Oxidation: $\mathrm{Mg} \to \mathrm{Mg}^{2+} + 2e^-$ (magnesium loses electrons)
+Oxidation: $\text{Mg} \to \text{Mg}^{2+} + 2e^-$ (magnesium loses electrons)
 
-Reduction: $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$ (copper gains electrons)
+Reduction: $\text{Cu}^{2+} + 2e^- \to \text{Cu}$ (copper gains electrons)
 
 **Worked Example.** Write half equations for the reaction of chlorine with potassium bromide.
 
-Oxidation: $2\mathrm{Br}^- \to \mathrm{Br}_2 + 2e^-$ (bromide ions are oxidised to bromine)
+Oxidation: $2\text{Br}^- \to \text{Br}_2 + 2e^-$ (bromide ions are oxidised to bromine)
 
-Reduction: $\mathrm{Cl}_2 + 2e^- \to 2\mathrm{Cl}^-$ (chlorine is reduced to chloride ions)
+Reduction: $\text{Cl}_2 + 2e^- \to 2\text{Cl}^-$ (chlorine is reduced to chloride ions)
 
 ### 1.6 Derivation: Conservation of Mass from Atomic Theory
 
@@ -211,7 +211,7 @@ This is a consequence of energy conservation. If more energy is released by form
 is absorbed by breaking old bonds, the excess is released to the surroundings (exothermic).
 
 **Worked Example.** Calculate the enthalpy change for the reaction:
-$\mathrm{H}_2 + \mathrm{Cl}_2 \to 2\mathrm{HCl}$
+$\text{H}_2 + \text{Cl}_2 \to 2\text{HCl}$
 
 Given: H-H bond energy = 436 kJ/mol, Cl-Cl bond energy = 242 kJ/mol, H-Cl bond energy = 431 kJ/mol.
 
@@ -222,7 +222,7 @@ $$\Delta H = 678 - 862 = -184 \text{ kJ/mol}$$
 The reaction is exothermic ($\Delta H \lt 0$).
 
 **Worked Example.** Calculate the enthalpy change for the reaction:
-$\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$
+$\text{N}_2 + 3\text{H}_2 \to 2\text{NH}_3$
 
 Given: N$\equiv$N = 945 kJ/mol, H-H = 436 kJ/mol, N-H = 391 kJ/mol.
 
@@ -231,7 +231,7 @@ $$\text{Energy released} = 6(391) = 2346 \text{ kJ}$$
 $$\Delta H = 2253 - 2346 = -93 \text{ kJ/mol}$$
 
 **Worked Example.** Calculate the enthalpy change for the combustion of methane:
-$\mathrm{CH}_4 + 2\mathrm{O}_2 \to \mathrm{CO}_2 + 2\mathrm{H}_2\mathrm{O}$
+$\text{CH}_4 + 2\text{O}_2 \to \text{CO}_2 + 2\text{H}_2\text{O}$
 
 Given: C-H = 413 kJ/mol, O=O = 495 kJ/mol, C=O = 805 kJ/mol, O-H = 464 kJ/mol.
 
@@ -249,10 +249,10 @@ $$q = mc\Delta T$$
 
 where $m$ is the mass of the solution (g), $c$ is the specific heat capacity of water
 ($4.18
-\text{ J/g}^{\circ}\mathrm{C}$), and $\Delta T$ is the temperature change.
+\text{ J/g}^{\circ}\text{C}$), and $\Delta T$ is the temperature change.
 
 **Worked Example.** When 2.0 g of calcium chloride is dissolved in 50 g of water, the temperature
-rises by $8.5^{\circ}\mathrm{C}$. Calculate the energy change.
+rises by $8.5^{\circ}\text{C}$. Calculate the energy change.
 
 $$q = 50 \times 4.18 \times 8.5 = 1776.5 \text{ J} = 1.78 \text{ kJ}$$
 
@@ -287,7 +287,7 @@ correct orientation) will increase the rate.
 
 **Temperature** has a particularly strong effect because it changes the distribution of molecular
 energies. A small increase in temperature shifts a much larger fraction of molecules above the
-activation energy threshold. The rate approximately doubles for every $10^{\circ}\mathrm{C}$ increase
+activation energy threshold. The rate approximately doubles for every $10^{\circ}\text{C}$ increase
 in temperature.
 
 **Surface area** matters for solid reactants. A lump of calcium carbonate has a small surface area,
@@ -361,7 +361,7 @@ is the change in time.
 **Worked Example.** In an experiment, 20 cm$^3$ of gas is collected in the first 30 seconds.
 Calculate the mean rate of reaction.
 
-$$\text{Rate} = \frac{20}{30} = 0.67 \text{ cm}^3/\mathrm{s}$$
+$$\text{Rate} = \frac{20}{30} = 0.67 \text{ cm}^3/\text{s}$$
 
 ## 4. Reversible Reactions and Equilibrium
 
@@ -372,7 +372,7 @@ reversible arrow ($\rightleftharpoons$).
 
 **Example:** Ammonium chloride decomposes on heating and reforms on cooling.
 
-$$\mathrm{NH}_4\text{Cl(s)} \rightleftharpoons \mathrm{NH}_3\text{(g)} + \text{HCl(g)}$$
+$$\text{NH}_4\text{Cl(s)} \rightleftharpoons \text{NH}_3\text{(g)} + \text{HCl(g)}$$
 
 ### 4.2 Dynamic Equilibrium
 
@@ -412,7 +412,7 @@ shifts in the direction that counteracts the change.
 
 ### 4.4 The Haber Process
 
-$$\mathrm{N}_2\text{(g)} + 3\mathrm{H}_2\text{(g)} \rightleftharpoons 2\mathrm{NH}_3\text{(g)} \quad \Delta H = -92 \text{ kJ/mol}$$
+$$\text{N}_2\text{(g)} + 3\text{H}_2\text{(g)} \rightleftharpoons 2\text{NH}_3\text{(g)} \quad \Delta H = -92 \text{ kJ/mol}$$
 
 **Conditions used:**
 
@@ -435,7 +435,7 @@ hydrogen and less ammonia. The yield of ammonia decreases, but the rate of react
 
 ### 4.5 The Contact Process
 
-$$2\mathrm{SO}_2\text{(g)} + \mathrm{O}_2\text{(g)} \rightleftharpoons 2\mathrm{SO}_3\text{(g)} \quad \Delta H = -197 \text{ kJ/mol}$$
+$$2\text{SO}_2\text{(g)} + \text{O}_2\text{(g)} \rightleftharpoons 2\text{SO}_3\text{(g)} \quad \Delta H = -197 \text{ kJ/mol}$$
 
 Conditions: 450$^{\circ}$C, 1-2 atm, vanadium(V) oxide catalyst.
 
@@ -447,8 +447,8 @@ $\to$ 2 moles of gas), so very high pressure is not economically justified.
 
 | Process         | Equation                                                    | Favourable Conditions                                 |
 | --------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
-| Haber process   | $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3$  | High pressure, moderate temp, iron catalyst           |
-| Contact process | $2\mathrm{SO}_2 + \mathrm{O}_2 \rightleftharpoons 2\mathrm{SO}_3$ | Moderate pressure, moderate temp, V$_2$O$_5$ catalyst |
+| Haber process   | $\text{N}_2 + 3\text{H}_2 \rightleftharpoons 2\text{NH}_3$  | High pressure, moderate temp, iron catalyst           |
+| Contact process | $2\text{SO}_2 + \text{O}_2 \rightleftharpoons 2\text{SO}_3$ | Moderate pressure, moderate temp, V$_2$O$_5$ catalyst |
 
 ## 5. Acids, Bases, and Salts
 
@@ -468,17 +468,17 @@ The pH scale measures how acidic or alkaline a solution is:
 OH$^-$ ions).
 
 The pH scale is logarithmic: each unit decrease in pH represents a tenfold increase in hydrogen ion
-concentration. A solution of pH 3 has ten times the $[\mathrm{H}^+]$ of a solution of pH 4.
+concentration. A solution of pH 3 has ten times the $[\text{H}^+]$ of a solution of pH 4.
 
 ### 5.2 Strong and Weak Acids
 
 **Strong acids** fully dissociate in water:
 
-$$\mathrm{HCl} \to \mathrm{H}^+ + \mathrm{Cl}^-$$
+$$\text{HCl} \to \text{H}^+ + \text{Cl}^-$$
 
 **Weak acids** partially dissociate in water:
 
-$$\mathrm{CH}_3\text{COOH} \rightleftharpoons \mathrm{H}^+ + \mathrm{CH}_3\mathrm{COO}^-$$
+$$\text{CH}_3\text{COOH} \rightleftharpoons \text{H}^+ + \text{CH}_3\text{COO}^-$$
 
 A weak acid has a higher pH than a strong acid of the same concentration. This is because the weak
 acid produces fewer H$^+$ ions per unit volume.
@@ -527,9 +527,9 @@ alkali.
 
 $$n(\text{NaOH}) = 0.100 \times 0.0250 = 0.00250 \text{ mol}$$
 
-Mole ratio 1:1, so $n(\mathrm{HCl}) = 0.00250 \text{ mol}$.
+Mole ratio 1:1, so $n(\text{HCl}) = 0.00250 \text{ mol}$.
 
-$$c(\mathrm{HCl}) = \frac{0.00250}{0.0225} = 0.111 \text{ mol/dm}^3$$
+$$c(\text{HCl}) = \frac{0.00250}{0.0225} = 0.111 \text{ mol/dm}^3$$
 
 ### 5.6 Tests for Gases
 
@@ -561,9 +561,9 @@ is produced at the anode.
 
 **Example:** Electrolysis of molten lead(II) bromide.
 
-Cathode (negative): $\mathrm{Pb}^{2+} + 2e^- \to \mathrm{Pb}$ (lead metal)
+Cathode (negative): $\text{Pb}^{2+} + 2e^- \to \text{Pb}$ (lead metal)
 
-Anode (positive): $2\mathrm{Br}^- \to \mathrm{Br}_2 + 2e^-$ (bromine gas)
+Anode (positive): $2\text{Br}^- \to \text{Br}_2 + 2e^-$ (bromine gas)
 
 ### 6.3 Electrolysis of Aqueous Solutions
 
@@ -589,32 +589,32 @@ inert electrodes.
 
 Cathode: Copper is less reactive than hydrogen, so copper is produced:
 
-$$\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$
+$$\text{Cu}^{2+} + 2e^- \to \text{Cu}$$
 
 Anode: Sulfate is not a halide, so oxygen is produced:
 
-$$4\mathrm{OH}^- \to 2\mathrm{H}_2\mathrm{O} + \mathrm{O}_2 + 4e^-$$
+$$4\text{OH}^- \to 2\text{H}_2\text{O} + \text{O}_2 + 4e^-$$
 
 **Worked Example.** Predict the products of the electrolysis of aqueous sodium chloride using inert
 electrodes.
 
 Cathode: Sodium is more reactive than hydrogen, so hydrogen is produced:
 
-$$2\mathrm{H}^+ + 2e^- \to \mathrm{H}_2$$
+$$2\text{H}^+ + 2e^- \to \text{H}_2$$
 
 Anode: Chloride is a halide, so chlorine is produced:
 
-$$2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$$
+$$2\text{Cl}^- \to \text{Cl}_2 + 2e^-$$
 
 **Worked Example.** Predict the products of the electrolysis of aqueous potassium iodide.
 
 Cathode: Potassium is more reactive than hydrogen, so hydrogen is produced from water:
 
-$$2\mathrm{H}_2\mathrm{O} + 2e^- \to \mathrm{H}_2 + 2\mathrm{OH}^-$$
+$$2\text{H}_2\text{O} + 2e^- \to \text{H}_2 + 2\text{OH}^-$$
 
 Anode: Iodide is a halide, so iodine is produced:
 
-$$2\mathrm{I}^- \to \mathrm{I}_2 + 2e^-$$
+$$2\text{I}^- \to \text{I}_2 + 2e^-$$
 
 ### 6.5 Electrolysis in Industry
 
@@ -622,9 +622,9 @@ $$2\mathrm{I}^- \to \mathrm{I}_2 + 2e^-$$
 electrolysed. Aluminium is produced at the cathode and oxygen at the anode. The carbon anodes react
 with the oxygen and must be replaced periodically.
 
-Cathode: $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$
+Cathode: $\text{Al}^{3+} + 3e^- \to \text{Al}$
 
-Anode: $2\mathrm{O}^{2-} \to \mathrm{O}_2 + 4e^-$
+Anode: $2\text{O}^{2-} \to \text{O}_2 + 4e^-$
 
 **Electroplating:** The cathode is the object to be plated. The anode is made of the plating metal.
 The electrolyte contains ions of the plating metal. For example, to copper-plate a key, the key is
@@ -636,11 +636,11 @@ the cathode, a copper bar is the anode, and the electrolyte is copper(II) sulfat
 
 | Type                  | Description                                         | Example                                                           |
 | --------------------- | --------------------------------------------------- | ----------------------------------------------------------------- |
-| Combustion            | Burning in oxygen                                   | $\mathrm{CH}_4 + 2\mathrm{O}_2 \to \mathrm{CO}_2 + 2\mathrm{H}_2\mathrm{O}$ |
-| Thermal decomposition | Breaking down with heat                             | $\text{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$                      |
-| Neutralisation        | Acid + base $\to$ salt + water                      | $\mathrm{HCl} + \text{NaOH} \to \text{NaCl} + \mathrm{H}_2\mathrm{O}$   |
-| Displacement          | More reactive element displaces a less reactive one | $\mathrm{Zn} + \text{CuSO}_4 \to \text{ZnSO}_4 + \mathrm{Cu}$         |
-| Oxidation/reduction   | Transfer of electrons                               | $\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$                         |
+| Combustion            | Burning in oxygen                                   | $\text{CH}_4 + 2\text{O}_2 \to \text{CO}_2 + 2\text{H}_2\text{O}$ |
+| Thermal decomposition | Breaking down with heat                             | $\text{CaCO}_3 \to \text{CaO} + \text{CO}_2$                      |
+| Neutralisation        | Acid + base $\to$ salt + water                      | $\text{HCl} + \text{NaOH} \to \text{NaCl} + \text{H}_2\text{O}$   |
+| Displacement          | More reactive element displaces a less reactive one | $\text{Zn} + \text{CuSO}_4 \to \text{ZnSO}_4 + \text{Cu}$         |
+| Oxidation/reduction   | Transfer of electrons                               | $\text{Fe}^{2+} \to \text{Fe}^{3+} + e^-$                         |
 
 ### 7.2 Oxidation States
 
@@ -656,13 +656,13 @@ Oxidation state rules:
 
 K = $+1$, O = $-2$ (four oxygens: $4 \times -2 = -8$).
 
-$+1 + \mathrm{Mn} + (-8) = 0$, so Mn = $+7$.
+$+1 + \text{Mn} + (-8) = 0$, so Mn = $+7$.
 
 **Worked Example.** Determine the oxidation state of chromium in Cr$_2$O$_7^{2-}$.
 
 O = $-2$ (seven oxygens: $7 \times -2 = -14$).
 
-$2\mathrm{Cr} + (-14) = -2$, so $2\mathrm{Cr} = +12$, giving Cr = $+6$.
+$2\text{Cr} + (-14) = -2$, so $2\text{Cr} = +12$, giving Cr = $+6$.
 
 ## Common Pitfalls
 
@@ -680,7 +680,7 @@ $2\mathrm{Cr} + (-14) = -2$, so $2\mathrm{Cr} = +12$, giving Cr = $+6$.
   electrode. In aqueous solution, hydrogen may be produced at the cathode if the metal is reactive,
   and oxygen may be produced at the anode if the anion is not a halide.
 - **Forgetting that the pH scale is logarithmic.** A change of 1 pH unit means a tenfold change in
-  $[\mathrm{H}^+]$.
+  $[\text{H}^+]$.
 - **Using the wrong reagent to identify a gas.** Know each test precisely: limewater for CO$_2$,
   glowing splint for O$_2$, lighted splint for H$_2$.
 - **Confusing the oxidation state of oxygen in peroxides.** In H$_2$O$_2$, oxygen has oxidation
@@ -689,16 +689,16 @@ $2\mathrm{Cr} + (-14) = -2$, so $2\mathrm{Cr} = +12$, giving Cr = $+6$.
 
 ## Practice Questions
 
-1. Balance the equation: $\mathrm{Al} + \mathrm{HCl} \to \text{AlCl}_3 + \mathrm{H}_2$
+1. Balance the equation: $\text{Al} + \text{HCl} \to \text{AlCl}_3 + \text{H}_2$
 
 2. Using the bond energies H-H = 436 kJ/mol, O=O = 498 kJ/mol, and O-H = 464 kJ/mol, calculate the
-   enthalpy change for $2\mathrm{H}_2 + \mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O}$.
+   enthalpy change for $2\text{H}_2 + \text{O}_2 \to 2\text{H}_2\text{O}$.
 
 3. Explain how increasing the temperature increases the rate of a reaction, with reference to
    collision theory.
 
 4. State Le Chatelier's principle and use it to predict the effect of increasing pressure on the
-   equilibrium: $\mathrm{N}_2\mathrm{O}_4\text{(g)} \rightleftharpoons 2\mathrm{NO}_2\text{(g)}$.
+   equilibrium: $\text{N}_2\text{O}_4\text{(g)} \rightleftharpoons 2\text{NO}_2\text{(g)}$.
 
 5. Write the ionic equation for the reaction between zinc and copper(II) sulfate solution.
 
@@ -730,7 +730,7 @@ $2\mathrm{Cr} + (-14) = -2$, so $2\mathrm{Cr} = +12$, giving Cr = $+6$.
     electroplating of a metal object.
 
 16. Balance the equation:
-    $\mathrm{C}_4\mathrm{H}_{10} + \mathrm{O}_2 \to \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$
+    $\text{C}_4\text{H}_{10} + \text{O}_2 \to \text{CO}_2 + \text{H}_2\text{O}$
 
 17. Predict the products of electrolysis of aqueous sodium sulfate using inert electrodes.
 

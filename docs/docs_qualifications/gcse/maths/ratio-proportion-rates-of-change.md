@@ -24,7 +24,7 @@ dividing all parts by their highest common factor.
 
 **Worked Example.** Simplify the ratio $24 : 36 : 48$.
 
-$$\mathrm{HCF}(24, 36, 48) = 12$$
+$$\text{HCF}(24, 36, 48) = 12$$
 
 $$24 : 36 : 48 = 2 : 3 : 4$$
 
@@ -678,9 +678,9 @@ The compound interest earns EUR 15.25 more than simple interest over 3 years.
 
 #### 10.2 Percentage Change Calculations
 
-**Percentage increase:** $\frac{\mathrm{new} - \text{original}}{\text{original}} \times 100\%$
+**Percentage increase:** $\frac{\text{new} - \text{original}}{\text{original}} \times 100\%$
 
-**Percentage decrease:** $\frac{\text{original} - \mathrm{new}}{\text{original}} \times 100\%$
+**Percentage decrease:** $\frac{\text{original} - \text{new}}{\text{original}} \times 100\%$
 
 **Worked Example.** A shirt originally costs 40 pounds. It is reduced to 32 pounds in a sale. What
 is the percentage decrease?
