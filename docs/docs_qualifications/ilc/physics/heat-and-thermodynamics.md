@@ -25,9 +25,9 @@ are commonly used:
 
 | Scale             | Boiling point of water | Freezing point of water | Absolute zero |
 | ----------------- | ---------------------- | ----------------------- | ------------- |
-| Celsius ($°$C)    | $100$                  | $0$                     | $-273.15$     |
+| Celsius ($^\circ\mathrm{C}$)    | $100$                  | $0$                     | $-273.15$     |
 | Kelvin (K)        | $373.15$               | $273.15$                | $0$           |
-| Fahrenheit ($°$F) | $212$                  | $32$                    | $-459.67$     |
+| Fahrenheit ($^\circ\mathrm{F}$) | $212$                  | $32$                    | $-459.67$     |
 
 Conversion between Celsius and Kelvin:
 
@@ -59,7 +59,7 @@ fundamental.
 - **Heat** is the transfer of energy due to a temperature difference. It is an extensive property:
   it depends on the amount of material.
 
-A bath of water at $50°$C and a cup of water at $50°$C have the same temperature, but the bath
+A bath of water at $50^\circ\mathrm{C}$ and a cup of water at $50^\circ\mathrm{C}$ have the same temperature, but the bath
 contains far more thermal energy. Heat flows from the bath to a colder object faster than the cup
 would, not because the bath is at a higher temperature, but because it has more energy to give.
 
@@ -73,7 +73,7 @@ equilibrium with B, and B with C, then A is in thermal equilibrium with C.
 ## Specific Heat Capacity (OL/HL)
 
 The specific heat capacity $c$ is the energy required to raise the temperature of 1 kg of a
-substance by 1 K (or $1°$C -- the size of the degree is the same on both scales):
+substance by 1 K (or $1^\circ\mathrm{C}$ -- the size of the degree is the same on both scales):
 
 $$
 Q = mc\Delta T
@@ -82,7 +82,7 @@ $$
 where $Q$ is the heat energy transferred, $m$ is the mass, and $\Delta T$ is the temperature change.
 
 The unit of $c$ is $\mathrm{J/(kg K)}$ or $\mathrm{J/(kg °C)}$ -- these are numerically identical
-because a change of 1 K equals a change of 1 $°$C.
+because a change of 1 K equals a change of 1 $^\circ\mathrm{C}$.
 
 | Substance | $c$ (J/kg K) |
 | --------- | ------------ |
@@ -115,8 +115,8 @@ Water has $c = 4180\mathrm{ J/(kg K)}$, which is exceptionally high. This is bec
 - Hydrogen bonding between molecules absorbs additional energy as the bonds stretch and deform.
 - This high value has significant consequences for climate, biology, and engineering.
 
-**Example (OL):** How much energy is needed to raise the temperature of 2 kg of water from $20°$C to
-$80°$C?
+**Example (OL):** How much energy is needed to raise the temperature of 2 kg of water from $20^\circ\mathrm{C}$ to
+$80^\circ\mathrm{C}$?
 
 $$
 Q = mc\Delta T = 2 \times 4180 \times 60 = 501600\mathrm{ J} \approx 502\mathrm{ kJ}
@@ -139,7 +139,7 @@ $$
 
 where $T_f$ is the final equilibrium temperature.
 
-**Example (HL):** A 0.5 kg piece of copper at $200°$C is placed in 1 kg of water at $20°$C. Find the
+**Example (HL):** A 0.5 kg piece of copper at $200^\circ\mathrm{C}$ is placed in 1 kg of water at $20^\circ\mathrm{C}$. Find the
 final temperature. (Ignore the calorimeter's heat capacity.)
 
 $$
@@ -158,8 +158,8 @@ $$
 122600 = 4375T \implies T \approx 28.0°\mathrm{C}
 $$
 
-Note that the temperature change of the copper ($172°$C) is much larger than that of the water
-($8°$C), even though the energy transferred is the same. This reflects the much lower specific heat
+Note that the temperature change of the copper ($172^\circ\mathrm{C}$) is much larger than that of the water
+($8^\circ\mathrm{C}$), even though the energy transferred is the same. This reflects the much lower specific heat
 capacity of copper.
 
 ### Method of Mixtures
@@ -169,8 +169,8 @@ A known mass of a substance at a known temperature is mixed with a known mass of
 different temperature. By measuring the final equilibrium temperature, the unknown specific heat
 capacity can be calculated.
 
-**Example (HL):** A $0.2\mathrm{ kg}$ metal block is heated to $150°$C and placed in $0.5\mathrm{ kg}$
-of water at $15°$C$. The final temperature is $20°$C. Find the specific heat capacity of the metal.
+**Example (HL):** A $0.2\mathrm{ kg}$ metal block is heated to $150^\circ\mathrm{C}$ and placed in $0.5\mathrm{ kg}$
+of water at $15^\circ\mathrm{C}$. The final temperature is $20^\circ\mathrm{C}$. Find the specific heat capacity of the metal.
 (Ignore calorimeter heat capacity.)
 
 $$
@@ -231,7 +231,7 @@ Note that $L_v$ is generally much larger than $L_f$ because completely separatin
 (boiling) requires overcoming all intermolecular forces, whereas melting only needs to disrupt the
 ordered lattice while keeping molecules close together.
 
-**Example (OL):** How much energy is needed to convert 0.2 kg of ice at $0°$C to water at $0°$C?
+**Example (OL):** How much energy is needed to convert 0.2 kg of ice at $0^\circ\mathrm{C}$ to water at $0^\circ\mathrm{C}$?
 
 $$
 Q = mL_f = 0.2 \times 3.34 \times 10^5 = 66800\mathrm{ J} = 66.8\mathrm{ kJ}
@@ -252,12 +252,12 @@ $$
 Q_{\mathrm{total}} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5
 $$
 
-**Example (HL):** How much energy is needed to convert 100 g of ice at $-10°$C to steam at $100°$C?
+**Example (HL):** How much energy is needed to convert 100 g of ice at $-10^\circ\mathrm{C}$ to steam at $100^\circ\mathrm{C}$?
 
-1. Heat ice from $-10°$C to $0°$C: $Q_1 = 0.1 \times 2100 \times 10 = 2100\mathrm{ J}$.
-2. Melt ice at $0°$C: $Q_2 = 0.1 \times 3.34 \times 10^5 = 33400\mathrm{ J}$.
-3. Heat water from $0°$C to $100°$C: $Q_3 = 0.1 \times 4180 \times 100 = 41800\mathrm{ J}$.
-4. Vaporise water at $100°$C: $Q_4 = 0.1 \times 2.26 \times 10^6 = 226000\mathrm{ J}$.
+1. Heat ice from $-10^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$: $Q_1 = 0.1 \times 2100 \times 10 = 2100\mathrm{ J}$.
+2. Melt ice at $0^\circ\mathrm{C}$: $Q_2 = 0.1 \times 3.34 \times 10^5 = 33400\mathrm{ J}$.
+3. Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$: $Q_3 = 0.1 \times 4180 \times 100 = 41800\mathrm{ J}$.
+4. Vaporise water at $100^\circ\mathrm{C}$: $Q_4 = 0.1 \times 2.26 \times 10^6 = 226000\mathrm{ J}$.
 
 $$
 Q_{\mathrm{total}} = 2100 + 33400 + 41800 + 226000 = 303300\mathrm{ J} \approx 303\mathrm{ kJ}
@@ -265,7 +265,7 @@ $$
 
 Notice that the latent heat of vaporisation ($226\mathrm{ kJ}$) dominates the total energy. This is
 why steam burns are so much more dangerous than water burns at the same temperature: steam at
-$100°$C contains an additional $2260\mathrm{ kJ/kg}$ of energy compared to water at $100°$C, and this
+$100^\circ\mathrm{C}$ contains an additional $2260\mathrm{ kJ/kg}$ of energy compared to water at $100^\circ\mathrm{C}$, and this
 energy is released when the steam condenses on the skin.
 
 ## Gas Laws
@@ -659,7 +659,7 @@ $$
 \eta = 1 - \frac{300}{600} = 0.50 = 50\%
 $$
 
-**Example (HL):** A steam turbine receives steam at $500°$C and exhausts to a condenser at $30°$C.
+**Example (HL):** A steam turbine receives steam at $500^\circ\mathrm{C}$ and exhausts to a condenser at $30^\circ\mathrm{C}$.
 Find the maximum Carnot efficiency and the minimum heat rejected per cycle if the turbine absorbs
 $5000\mathrm{ kJ}$ per cycle.
 
@@ -756,7 +756,7 @@ $$
 | Fibreglass insulation | 0.04          |
 
 **Example (HL):** A copper wall of thickness $5\mathrm{ mm}$ and area $2\mathrm{ m}^2$ has one face at
-$100°$C and the other at $20°$C. Find the rate of heat conduction.
+$100^\circ\mathrm{C}$ and the other at $20^\circ\mathrm{C}$. Find the rate of heat conduction.
 
 $$
 \frac{dQ}{dt} = \frac{401 \times 2 \times (100 - 20)}{0.005} = \frac{64160}{0.005} = 1.28 \times 10^7\mathrm{ W}
@@ -863,25 +863,25 @@ surroundings, and heat up when colder.
 
 ### Ordinary Level
 
-1. How much energy is needed to heat 5 kg of water from $15°$C to $85°$C?
-2. How much energy is needed to melt 0.5 kg of ice at $0°$C?
+1. How much energy is needed to heat 5 kg of water from $15^\circ\mathrm{C}$ to $85^\circ\mathrm{C}$?
+2. How much energy is needed to melt 0.5 kg of ice at $0^\circ\mathrm{C}$?
 3. A gas at $1.5 \times 10^5\mathrm{ Pa}$ occupies $4\mathrm{ m}^3$. If the volume is compressed to
    $2\mathrm{ m}^3$ at constant temperature, find the new pressure.
 4. Describe the three methods of heat transfer with an example of each.
 5. Explain the difference between heat and temperature.
-6. Convert $-40°$C to Kelvin and Fahrenheit. (Note: $-40°$C equals $-40°$F.)
+6. Convert $-40^\circ\mathrm{C}$ to Kelvin and Fahrenheit. (Note: $-40^\circ\mathrm{C}$ equals $-40^\circ\mathrm{F}$.)
 
 ### Higher Level
 
-1. Calculate the total energy to convert 200 g of ice at $-20°$C to steam at $120°$C. Assume the
+1. Calculate the total energy to convert 200 g of ice at $-20^\circ\mathrm{C}$ to steam at $120^\circ\mathrm{C}$. Assume the
    specific heat capacity of steam is $2010\mathrm{ J/(kg K)}$.
 2. Using the ideal gas law, find the pressure of 3 mol of gas in a 10 L container at $350\mathrm{ K}$.
-3. Find the RMS speed of oxygen molecules ($M = 0.032\mathrm{ kg/mol}$) at $27°$C.
-4. A heat engine operates between $500°$C and $50°$C. Find the maximum Carnot efficiency. If the
+3. Find the RMS speed of oxygen molecules ($M = 0.032\mathrm{ kg/mol}$) at $27^\circ\mathrm{C}$.
+4. A heat engine operates between $500^\circ\mathrm{C}$ and $50^\circ\mathrm{C}$. Find the maximum Carnot efficiency. If the
    engine absorbs $2000\mathrm{ J}$ from the hot reservoir per cycle, how much work is done per cycle
    and how much heat is rejected?
-5. A $150\mathrm{ g}$ block of an unknown metal at $250°$C is dropped into $300\mathrm{ g}$ of water at
-   $20°$C$ in a calorimeter of heat capacity $50\mathrm{ J/K}$. The final temperature is $30°$C. Find
+5. A $150\mathrm{ g}$ block of an unknown metal at $250^\circ\mathrm{C}$ is dropped into $300\mathrm{ g}$ of water at
+   $20^\circ\mathrm{C}$ in a calorimeter of heat capacity $50\mathrm{ J/K}$. The final temperature is $30^\circ\mathrm{C}$. Find
    the specific heat capacity of the metal.
 6. An ideal gas undergoes isothermal expansion from $2 \times 10^5\mathrm{ Pa}$, $0.01\mathrm{ m}^3$ to
    $1 \times 10^5\mathrm{ Pa}$. Find the final volume and the work done by the gas.
@@ -889,7 +889,7 @@ surroundings, and heat up when colder.
    power radiated and the wavelength of peak emission.
 8. Two moles of a monatomic ideal gas are heated at constant pressure from $300\mathrm{ K}$ to
    $500\mathrm{ K}$. Calculate the change in internal energy, the heat added, and the work done.
-9. A heat pump operates between an outdoor temperature of $5°$C and an indoor temperature of $22°$C.
+9. A heat pump operates between an outdoor temperature of $5^\circ\mathrm{C}$ and an indoor temperature of $22^\circ\mathrm{C}$.
    Find the maximum coefficient of performance (COP). If the heat pump delivers $5\mathrm{ kW}$ of
    heat to the building, what is the minimum power input required?
 10. Derive the expression for the pressure of an ideal gas from kinetic theory, clearly stating your
