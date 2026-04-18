@@ -1,0 +1,35 @@
+name: Uptime Monitor
+
+on:
+  schedule:
+    # Every 30 minutes
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check all sites
+        run: |
+          SITES=(
+            "wyattsnotes.wyattau.com"
+            "academics.wyattau.com"
+            "alevel.wyattau.com"
+            "qualifications.wyattau.com"
+            "programming.wyattau.com"
+          )
+          FAILED=()
+          for site in "${SITES[@]}"; do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "https://${site}")
+            if [ "$STATUS" != "200" ]; then
+              FAILED+=("${site} returned ${STATUS}")
+            fi
+            echo "${site}: ${STATUS}"
+          done
+          if [ ${#FAILED[@]} -gt 0 ]; then
+            echo "::error::Failed sites: ${FAILED[*]}"
+            exit 1
+          fi
+          echo "All sites healthy"
