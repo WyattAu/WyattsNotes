@@ -1,15 +1,18 @@
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import React, { useEffect, useState } from 'react';
 
-export default function ReadingProgress(): React.ReactElement | null {
+export default function ReadingProgress(): React.ReactElement {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    if (!ExecutionEnvironment.canUseDOM) return;
+    if (!ExecutionEnvironment.canUseDOM) {
+      return;
+    }
 
     function updateProgress() {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
       if (docHeight > 0) {
         setProgress(Math.min((scrollTop / docHeight) * 100, 100));
       }
@@ -17,11 +20,17 @@ export default function ReadingProgress(): React.ReactElement | null {
 
     window.addEventListener('scroll', updateProgress, { passive: true });
     updateProgress();
+
     return () => window.removeEventListener('scroll', updateProgress);
   }, []);
 
-  if (!ExecutionEnvironment.canUseDOM) return null;
-  if (progress < 1) return null;
+  if (!ExecutionEnvironment.canUseDOM) {
+    return <></>;
+  }
+
+  if (progress < 1) {
+    return <></>;
+  }
 
   return (
     <div

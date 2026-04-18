@@ -123,8 +123,12 @@ export default function SearchPage(): React.ReactElement {
   const [query, setQuery] = useState('');
 
   const filtered = useMemo(() => {
-    if (!query.trim()) return sites;
+    if (!query.trim()) {
+      return sites;
+    }
+
     const q = query.toLowerCase();
+
     return sites.filter((s) => s.name.toLowerCase().includes(q) || s.tag.toLowerCase().includes(q));
   }, [query]);
 
@@ -163,7 +167,7 @@ export default function SearchPage(): React.ReactElement {
           {filtered.map((site) => (
             <a
               key={site.name}
-              href={`${site.searchUrl}?q=${encodeURIComponent(query)}`}
+              href={`${site.searchUrl}?q=${encodeURIComponent(String(query))}`}
               style={{
                 display: 'block',
                 padding: '1.25rem',
