@@ -88,12 +88,12 @@ Critical region: $X \geq 12$. Actual significance level: 1.76%.
 **Definition.**
 
 - **Type I error:** Rejecting $H_0$ when $H_0$ is true (false positive).
-  $$P(\text{Type I}) = \alpha \text{ (the significance level)}$$
+  $$P(\mathrm{Type I}) = \alpha \mathrm{ (the significance level)}$$
 
 - **Type II error:** Failing to reject $H_0$ when $H_0$ is false (false negative).
-  $$P(\text{Type II}) = \beta$$
+  $$P(\mathrm{Type II}) = \beta$$
 
-- The **power** of a test is $1 - \beta = P(\text{reject } H_0 \mid H_0 \text{ is false})$.
+- The **power** of a test is $1 - \beta = P(\mathrm{reject } H_0 \mid H_0 \mathrm{ is false})$.
 
 ### 3.2 Relationship
 
@@ -252,7 +252,7 @@ However, a one-tailed test has **zero power** to detect an effect in the opposit
 When $n$ is sufficiently large, the binomial distribution $B(n, p)$ can be approximated by a normal
 distribution. The standard conditions are:
 
-$$np \gt{} 5 \quad \text{and} \quad n(1 - p) \gt{} 5$$
+$$np \gt{} 5 \quad \mathrm{and} \quad n(1 - p) \gt{} 5$$
 
 Under these conditions:
 
@@ -339,9 +339,9 @@ There is a direct and important link between confidence intervals and two-tailed
 
 **Example.** Using the bus survey data: $\hat{p} = 58/120 \approx 0.483$, $n = 120$.
 
-$$95\%\text{ CI} = 0.483 \pm 1.96\sqrt{\dfrac{0.483 \times 0.517}{120}} = 0.483 \pm 1.96 \times 0.0456$$
+$$95\%\mathrm{ CI} = 0.483 \pm 1.96\sqrt{\dfrac{0.483 \times 0.517}{120}} = 0.483 \pm 1.96 \times 0.0456$$
 
-$$95\%\text{ CI} = 0.483 \pm 0.0894 = (0.394, 0.573)$$
+$$95\%\mathrm{ CI} = 0.483 \pm 0.0894 = (0.394, 0.573)$$
 
 Since $p_0 = 0.4$ lies inside $(0.394, 0.573)$, we do not reject $H_0: p = 0.4$ at the 5% level.
 This is consistent with the hypothesis test result in Section 9.3.
@@ -355,15 +355,15 @@ This is consistent with the hypothesis test result in Section 9.3.
 **Definition.** The **$p$-value** is the probability of obtaining a test statistic at least as
 extreme as the observed value, assuming $H_0$ is true.
 
-$$p\text{-value} = P(\text{test statistic} \geq \text{observed} \mid H_0 \text{ true})$$
+$$p\mathrm{-value} = P(\mathrm{test statistic} \geq \mathrm{observed} \mid H_0 \mathrm{ true})$$
 
 For a two-tailed test, "at least as extreme" means at least as far from the null value in either
 direction, so the $p$-value is doubled.
 
 ### 11.2 Decision rule
 
-- If $p\text{-value} \lt{} \alpha$: reject $H_0$. The result is **statistically significant**.
-- If $p\text{-value} \geq \alpha$: do not reject $H_0$. The result is **not statistically
+- If $p\mathrm{-value} \lt{} \alpha$: reject $H_0$. The result is **statistically significant**.
+- If $p\mathrm{-value} \geq \alpha$: do not reject $H_0$. The result is **not statistically
   significant**.
 
 ### 11.3 Strength of evidence
@@ -401,7 +401,7 @@ Under $H_0$: $\bar{X} \sim N(50, 3^2/40) = N(50, 0.225)$.
 
 $$z = \dfrac{50.8 - 50}{\sqrt{0.225}} = \dfrac{0.8}{0.4743} = 1.687$$
 
-$$p\text{-value} = 2 \times P(Z \gt{} 1.687) = 2 \times (1 - 0.9542) = 0.0916$$
+$$p\mathrm{-value} = 2 \times P(Z \gt{} 1.687) = 2 \times (1 - 0.9542) = 0.0916$$
 
 Since $0.0916 \gt{} 0.05$, we do not reject $H_0$ at the 5% level.
 
@@ -682,9 +682,9 @@ In a random sample of 150 voters, 87 support a new policy. (a) Construct a 95% c
 Check: $n\hat{p} = 150 \times 0.58 = 87 \gt{} 5$ and
 $n(1 - \hat{p}) = 150 \times 0.42 = 63 \gt{} 5$.
 
-$$95\%\text{ CI} = 0.58 \pm 1.96\sqrt{\dfrac{0.58 \times 0.42}{150}} = 0.58 \pm 1.96 \times 0.0403$$
+$$95\%\mathrm{ CI} = 0.58 \pm 1.96\sqrt{\dfrac{0.58 \times 0.42}{150}} = 0.58 \pm 1.96 \times 0.0403$$
 
-$$95\%\text{ CI} = 0.58 \pm 0.0790 = (0.501, 0.659)$$
+$$95\%\mathrm{ CI} = 0.58 \pm 0.0790 = (0.501, 0.659)$$
 
 (b) The 95% CI is $(0.501, 0.659)$. Since the entire interval lies above 0.5, we can reject
 $H_0: p = 0.5$ at the 5% level. However, the lower bound is only 0.501, so the evidence for a
@@ -724,7 +724,7 @@ A sample of 35 students has mean score 62.4 with known population standard devia
 
 $$z = \dfrac{62.4 - 60}{\sqrt{1.829}} = \dfrac{2.4}{1.352} = 1.775$$
 
-$$p\text{-value} = P(Z \gt{} 1.775) = 1 - 0.9620 = 0.0380$$
+$$p\mathrm{-value} = P(Z \gt{} 1.775) = 1 - 0.9620 = 0.0380$$
 
 (b) Since $0.038 \lt{} 0.05$, **reject** $H_0$ at the 5% level. There is sufficient evidence that
 the true mean score exceeds 60. The $p$-value of 0.038 means that if the true mean were 60, there
@@ -756,7 +756,7 @@ So $\beta \approx 0.153$ and power $= 1 - 0.153 = 0.847$.
 
 (c) If $\alpha = 0.10$, the critical value becomes $c = 100 + 1.282 \times 3 = 103.846$.
 
-$$\beta_{\text{new}} = P\!\left(Z \leq \dfrac{103.846 - 108}{3}\right) = P(Z \leq -1.385) \approx 0.083$$
+$$\beta_{\mathrm{new}} = P\!\left(Z \leq \dfrac{103.846 - 108}{3}\right) = P(Z \leq -1.385) \approx 0.083$$
 
 Power $= 1 - 0.083 = 0.917$. Increasing $\alpha$ from 0.05 to 0.10 **increases** the power (from
 0.847 to 0.917) but also increases the probability of a Type I error. This illustrates the trade-off

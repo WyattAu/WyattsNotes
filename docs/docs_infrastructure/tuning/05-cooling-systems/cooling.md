@@ -682,7 +682,7 @@ Where:
 For a 500 W system with a 10 °C exhaust temperature rise:
 
 $$
-\dot{m} = \frac{500}{1005 \times 10} = 0.050 \text{ kg/s} \approx 150 \text{ CFM}
+\dot{m} = \frac{500}{1005 \times 10} = 0.050 \mathrm{ kg/s} \approx 150 \mathrm{ CFM}
 $$
 
 If your total fan capacity (intake + exhaust) is less than 150 CFM, the case will have

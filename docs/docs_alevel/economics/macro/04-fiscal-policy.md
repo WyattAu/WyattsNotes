@@ -17,7 +17,7 @@ sidebar_position: 4
 We define **fiscal policy** as the use of government spending ($G$) and taxation ($T$) to influence
 the level of aggregate demand, economic activity, and the allocation of resources in the economy.
 
-$$\text{Fiscal policy tools: } G, T, \text{ and } (G - T)$$
+$$\mathrm{Fiscal policy tools: } G, T, \mathrm{ and } (G - T)$$
 
 Fiscal policy is conducted by the government (Chancellor of the Exchequer in the UK, Secretary of
 the Treasury in the US) alongside the central bank's monetary policy.
@@ -26,7 +26,7 @@ the Treasury in the US) alongside the central bank's monetary policy.
 
 The government budget records planned revenue and expenditure:
 
-$$\text{Budget balance} = T - G$$
+$$\mathrm{Budget balance} = T - G$$
 
 - **Budget surplus**: $T > G$ (government revenue exceeds spending)
 - **Budget deficit**: $G > T$ (government spending exceeds revenue)
@@ -69,7 +69,7 @@ what is meant.
 
 ### 2.2 Government Spending as a Share of GDP
 
-$$\text{Government spending ratio} = \frac{G}{Y} \times 100\%$$
+$$\mathrm{Government spending ratio} = \frac{G}{Y} \times 100\%$$
 
 In the UK, this ratio was approximately 45% of GDP in 2023–24, reflecting the expansionary fiscal
 response to COVID-19 and the energy crisis. The long-run average is closer to 40%.
@@ -173,7 +173,7 @@ one maximum $t^*$ where $\frac{dR}{dt} = 0$. At this point, the marginal gain fr
 (more tax per unit of income) exactly equals the marginal loss from a smaller tax base.
 $\blacksquare$
 
-$$\frac{dR}{dt} = Y(t) + t \cdot \frac{dY}{dt} = 0 \quad \text{at } t^*$$
+$$\frac{dR}{dt} = Y(t) + t \cdot \frac{dY}{dt} = 0 \quad \mathrm{at } t^*$$
 
 The key debate is **where** $t^*$ lies. Supply-side economists (e.g., Arthur Laffer) argue that many
 economies are already to the right of $t^*$, so cutting rates would increase revenue. Empirical
@@ -185,7 +185,7 @@ evidence is mixed.
 
 **Budget deficit**: the amount by which government spending exceeds revenue in a given year.
 
-$$\text{Deficit}_t = G_t - T_t$$
+$$\mathrm{Deficit}_t = G_t - T_t$$
 
 **National debt**: the accumulated total of all past budget deficits minus surpluses.
 
@@ -241,7 +241,7 @@ Used to increase aggregate demand during a recession:
 
 The total effect on output:
 
-$$\Delta Y = k \cdot \Delta G \quad \text{or} \quad \Delta Y = k \cdot MPC \cdot \Delta T$$
+$$\Delta Y = k \cdot \Delta G \quad \mathrm{or} \quad \Delta Y = k \cdot MPC \cdot \Delta T$$
 
 where $k$ is the complex multiplier.
 
@@ -284,7 +284,7 @@ results from an increase in government spending.
 
 When the government runs a deficit, it must borrow by selling bonds:
 
-$$G > T \Rightarrow \text{government issues bonds} \Rightarrow \text{demand for loanable funds rises}$$
+$$G > T \Rightarrow \mathrm{government issues bonds} \Rightarrow \mathrm{demand for loanable funds rises}$$
 
 This increases the demand for loanable funds, pushing up the real interest rate:
 
@@ -298,7 +298,7 @@ of $\Delta G$ on AD.
 **Financial crowding out**: the mechanism described above — government borrowing raises interest
 rates, reducing private investment.
 
-$$\Delta I = -\frac{1}{MPS} \cdot \Delta G \quad \text{(full crowding out in extreme case)}$$
+$$\Delta I = -\frac{1}{MPS} \cdot \Delta G \quad \mathrm{(full crowding out in extreme case)}$$
 
 **Resource crowding out**: if the economy is at full employment, government spending uses resources
 that would otherwise be employed by the private sector. The increase in $G$ bids up wages and
@@ -334,7 +334,7 @@ at full employment (Classical view). Reference the state of the economic cycle.
 **Automatic stabilisers** are features of the tax and benefit system that automatically dampen
 fluctuations in economic activity, without any deliberate policy action.
 
-$$\text{Automatic stabilisers: } T(Y) \text{ and } B(Y) \text{ where } \frac{dT}{dY} > 0 \text{ and } \frac{dB}{dY} < 0$$
+$$\mathrm{Automatic stabilisers: } T(Y) \mathrm{ and } B(Y) \mathrm{ where } \frac{dT}{dY} > 0 \mathrm{ and } \frac{dB}{dY} < 0$$
 
 ### 7.2 Mechanism
 
@@ -433,7 +433,7 @@ _Argument._ Rational, forward-looking households anticipate that current governm
 implies future tax increases to repay the debt. They increase saving by exactly the amount of the
 deficit to pay the expected future taxes:
 
-$$\Delta G \text{ (deficit-financed)} \Rightarrow \Delta S_{private} = \Delta G \Rightarrow \Delta C = 0$$
+$$\Delta G \mathrm{ (deficit-financed)} \Rightarrow \Delta S_{private} = \Delta G \Rightarrow \Delta C = 0$$
 
 Therefore, the multiplier is zero — fiscal policy is completely ineffective.
 
@@ -540,7 +540,7 @@ reasoning.
 
 <details>
 <summary>Hint</summary>
-(a) Debt-to-GDP = $2,700/3,000 = 90\%$. (b) Approximate change: $\Delta(D/Y) \approx (r - g) \times (D/Y) + \text{primary deficit}/Y$. $r = 110/2,700 = 4.1\%$. $r - g = 4.1\% - 2.5\% = 1.6\%$. $(r-g) \times D/Y = 1.6\% \times 90\% = 1.44\%$. Primary deficit ratio = $50/3,000 = 1.67\%$. Total change $\approx 1.44\% + 1.67\% = 3.1\%$. The debt ratio rises. (c) Because the interest rate on debt exceeds the growth rate ($r > g$), and the primary deficit adds to borrowing, the debt burden grows faster than the economy.
+(a) Debt-to-GDP = $2,700/3,000 = 90\%$. (b) Approximate change: $\Delta(D/Y) \approx (r - g) \times (D/Y) + \mathrm{primary deficit}/Y$. $r = 110/2,700 = 4.1\%$. $r - g = 4.1\% - 2.5\% = 1.6\%$. $(r-g) \times D/Y = 1.6\% \times 90\% = 1.44\%$. Primary deficit ratio = $50/3,000 = 1.67\%$. Total change $\approx 1.44\% + 1.67\% = 3.1\%$. The debt ratio rises. (c) Because the interest rate on debt exceeds the growth rate ($r > g$), and the primary deficit adds to borrowing, the debt burden grows faster than the economy.
 </details>
 
 **Problem 7.** Using the concept of the Laffer curve, explain why a government might increase tax

@@ -62,9 +62,9 @@ machine:
 - **S:** No change.
 - **I:** No action.
 
-$$\text{E} \xrightarrow{\text{write}} \text{M} \quad \text{S} \xrightarrow{\text{write request}} \text{RFO} \to \text{I} \to \text{M}$$
+$$\mathrm{E} \xrightarrow{\mathrm{write}} \mathrm{M} \quad \mathrm{S} \xrightarrow{\mathrm{write request}} \mathrm{RFO} \to \mathrm{I} \to \mathrm{M}$$
 
-$$\text{M} \xrightarrow{\text{snoop read}} \text{write-back} \to \text{S} \quad \text{I} \xrightarrow{\text{read miss}} \text{load} \to \text{S or E}$$
+$$\mathrm{M} \xrightarrow{\mathrm{snoop read}} \mathrm{write-back} \to \mathrm{S} \quad \mathrm{I} \xrightarrow{\mathrm{read miss}} \mathrm{load} \to \mathrm{S or E}$$
 
 ### Formal State Transition Table
 
@@ -164,7 +164,7 @@ The cost of an invalidation depends on the cache hierarchy level at which the li
 same cache line (typically 64 bytes). Even though the variables are logically independent, the
 hardware treats them as a single unit for coherence purposes.
 
-$$\text{False Sharing: } \text{var}_1 \in \text{line}_L \wedge \text{var}_2 \in \text{line}_L \wedge \text{thread}_1 \text{ writes } \text{var}_1 \wedge \text{thread}_2 \text{ writes } \text{var}_2$$
+$$\mathrm{False Sharing: } \mathrm{var}_1 \in \mathrm{line}_L \wedge \mathrm{var}_2 \in \mathrm{line}_L \wedge \mathrm{thread}_1 \mathrm{ writes } \mathrm{var}_1 \wedge \mathrm{thread}_2 \mathrm{ writes } \mathrm{var}_2$$
 
 Each write by one thread invalidates the cache line for the other thread, causing repeated cache
 misses and coherence traffic. Performance can degrade by orders of magnitude compared to the
@@ -187,10 +187,10 @@ writes per thread.
    $T_2$ issues an RFO, invalidating $T_1$'s copy. $T_2$'s line transitions to **Modified**.
 5. Step 3 and step 4 alternate for every write, producing a **ping-pong** pattern.
 6. Each ping-pong costs ~40-100ns (inter-core coherence latency), versus ~1-4ns for an L1 hit.
-7. For $n$ writes per thread, total coherence cost is $\Theta(n \times \text{coherence\_latency})$,
-   versus $\Theta(n \times \text{L1\_latency})$ without false sharing.
+7. For $n$ writes per thread, total coherence cost is $\Theta(n \times \mathrm{coherence\_latency})$,
+   versus $\Theta(n \times \mathrm{L1\_latency})$ without false sharing.
 8. The speedup from eliminating false sharing is
-   $\frac{\text{coherence\_latency}}{\text{L1\_latency}} \approx 10\text{x}\text{--}100\text{x}$.
+   $\frac{\mathrm{coherence\_latency}}{\mathrm{L1\_latency}} \approx 10\mathrm{x}\mathrm{--}100\mathrm{x}$.
 
 $\square$
 

@@ -73,7 +73,7 @@ enzyme has been denatured, it cannot recover its function.
 
 A student investigates the effect of temperature on amylase activity. The results are:
 
-| Temperature ($^{\circ}$C) | Time for starch to disappear (s) | Rate ($1/\text{time}$) ($\times 10^{-3}$ s$^{-1}$) |
+| Temperature ($^{\circ}$C) | Time for starch to disappear (s) | Rate ($1/\mathrm{time}$) ($\times 10^{-3}$ s$^{-1}$) |
 | ------------------------- | -------------------------------- | -------------------------------------------------- |
 | 10                        | 300                              | 3.3                                                |
 | 20                        | 120                              | 8.3                                                |
@@ -352,7 +352,7 @@ into the blood; carbon dioxide diffuses from the blood into the alveoli.
 
 Fick's law states:
 
-$$\text{Rate of diffusion} \propto \frac{\text{Surface area} \times \text{Concentration difference}}{\text{Diffusion distance}}$$
+$$\mathrm{Rate of diffusion} \propto \frac{\mathrm{Surface area} \times \mathrm{Concentration difference}}{\mathrm{Diffusion distance}}$$
 
 The alveoli are adapted to maximise the rate of diffusion by:
 

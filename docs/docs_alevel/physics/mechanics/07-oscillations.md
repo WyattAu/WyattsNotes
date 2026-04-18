@@ -98,11 +98,11 @@ $$\boxed{E_p = \frac{1}{2}m\omega^2 x^2}$$
 
 ### Total Energy
 
-$$E_{\text{total}} = E_k + E_p = \frac{1}{2}m\omega^2(A^2 - x^2) + \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}m\omega^2 A^2$$
+$$E_{\mathrm{total}} = E_k + E_p = \frac{1}{2}m\omega^2(A^2 - x^2) + \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}m\omega^2 A^2$$
 
-$$\boxed{E_{\text{total}} = \frac{1}{2}m\omega^2 A^2 = \text{constant}}$$
+$$\boxed{E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2 = \mathrm{constant}}$$
 
-**Proof that total energy is constant.** The total energy depends only on $m$, $\omega$, and $A$ — none of which change during the motion. Therefore $E_{\text{total}}$ is conserved. $\square$
+**Proof that total energy is constant.** The total energy depends only on $m$, $\omega$, and $A$ — none of which change during the motion. Therefore $E_{\mathrm{total}}$ is conserved. $\square$
 
 **Intuition.** Energy oscillates between kinetic and potential forms. At the equilibrium ($x = 0$), all energy is kinetic. At the turning points ($x = \pm A$), all energy is potential. The total is always the same — this is just conservation of energy applied to SHM.
 
@@ -208,7 +208,7 @@ A mass-spring system has $m = 0.40$ kg and $k = 160$ N m$^{-1}$. The mass is dis
 
 <details>
 <summary>Problem 2</summary>
-A simple pendulum has a period of $2.00$ s on Earth. What would be its period on the Moon ($g_{\text{Moon}} = 1.62$ m s$^{-2}$)?
+A simple pendulum has a period of $2.00$ s on Earth. What would be its period on the Moon ($g_{\mathrm{Moon}} = 1.62$ m s$^{-2}$)?
 
 **Answer.** $T_E = 2\pi\sqrt{L/g_E} \implies L = g_E(T_E/2\pi)^2 = 9.81(2.00/2\pi)^2 = 9.81 \times 0.1013 = 0.994$ m.
 
@@ -344,7 +344,7 @@ Consider an oscillator with $\omega = 4\pi$ rad s$^{-1}$ (displacement frequency
 
 :::tip
 Exam Technique
-When asked to sketch $E_k$ and $E_p$ against time, draw two sinusoidal curves at twice the displacement frequency, exactly out of phase, oscillating between $0$ and $E_{\text{total}}$. Their sum is a horizontal line at $E_{\text{total}}$.
+When asked to sketch $E_k$ and $E_p$ against time, draw two sinusoidal curves at twice the displacement frequency, exactly out of phase, oscillating between $0$ and $E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$.
 :::
 
 ## 10. Damping — Time Constant and Displacement-Time Graphs
@@ -482,11 +482,11 @@ When two SHM oscillations of the same frequency are combined, the resultant is a
 
 For $x_1 = A_1\cos(\omega t)$ and $x_2 = A_2\cos(\omega t + \delta)$:
 
-$$\boxed{A_{\text{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta}}$$
+$$\boxed{A_{\mathrm{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta}}$$
 
 **Proof.** The cosine rule applied to the triangle formed by the two phasors and their resultant, with included angle $\delta$. $\square$
 
-The resultant phase is given by $\tan\phi_{\text{res}} = \frac{A_2 \sin\delta}{A_1 + A_2 \cos\delta}$.
+The resultant phase is given by $\tan\phi_{\mathrm{res}} = \frac{A_2 \sin\delta}{A_1 + A_2 \cos\delta}$.
 
 :::info
 Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
@@ -531,7 +531,7 @@ A system has natural frequency 440 Hz and is lightly damped. It is driven at: (a
 <summary>Problem 14</summary>
 Two SHM oscillations of the same frequency have amplitudes 3.0 cm and 4.0 cm, with a phase difference of $60^\circ$. Find the amplitude of the resultant oscillation using the phasor method.
 
-**Answer.** $A_{\text{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta} = \sqrt{9 + 16 + 2(3)(4)\cos 60°} = \sqrt{25 + 12} = \sqrt{37} = 6.08$ cm.
+**Answer.** $A_{\mathrm{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta} = \sqrt{9 + 16 + 2(3)(4)\cos 60°} = \sqrt{25 + 12} = \sqrt{37} = 6.08$ cm.
 
 <b>If you get this wrong, revise:</b> [Phasor Diagrams for SHM](#12-phasor-diagrams-for-shm)
 </details>

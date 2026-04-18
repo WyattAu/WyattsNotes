@@ -25,7 +25,7 @@ An atom consists of a small, dense, positively charged **nucleus** surrounded by
 
 The **atomic mass unit** (u) is defined as $\frac{1}{12}$ the mass of a carbon-12 atom:
 
-$$1 \text{ u} = 1.66054 \times 10^{-27} \text{ kg}$$
+$$1 \mathrm{ u} = 1.66054 \times 10^{-27} \mathrm{ kg}$$
 
 The nucleus occupies roughly $10^{-15}$ m of an atom with diameter $10^{-10}$ m. If the atom were
 the size of a football stadium, the nucleus would be approximately the size of a marble at the
@@ -33,10 +33,10 @@ centre.
 
 ### Nuclear Notation
 
-**Definition.** Nuclear notation represents an atom as $\prescript{A}{}{Z}\text{X}$ where $A$ is the
+**Definition.** Nuclear notation represents an atom as $\prescript{A}{}{Z}\mathrm{X}$ where $A$ is the
 mass number (total nucleons), $Z$ is the atomic number (protons), and X is the chemical symbol.
 
-$$\prescript{A}{}{Z}\text{X}$$
+$$\prescript{A}{}{Z}\mathrm{X}$$
 
 - $A = Z + N$ where $N$ is the neutron number
 - $Z$ determines the element (chemical identity)
@@ -44,11 +44,11 @@ $$\prescript{A}{}{Z}\text{X}$$
 
 Examples:
 
-- $\prescript{235}{}{92}\text{U}$: uranium-235 with 92 protons and 143 neutrons
-- $\prescript{1}{}{1}\text{H}$: protium (the most common hydrogen isotope)
-- $\prescript{2}{}{1}\text{H}$: deuterium (heavy hydrogen, one proton + one neutron)
-- $\prescript{3}{}{1}\text{H}$: tritium (one proton + two neutrons, radioactive)
-- $\prescript{12}{}{6}\text{C}$: carbon-12 (the standard for defining the atomic mass unit)
+- $\prescript{235}{}{92}\mathrm{U}$: uranium-235 with 92 protons and 143 neutrons
+- $\prescript{1}{}{1}\mathrm{H}$: protium (the most common hydrogen isotope)
+- $\prescript{2}{}{1}\mathrm{H}$: deuterium (heavy hydrogen, one proton + one neutron)
+- $\prescript{3}{}{1}\mathrm{H}$: tritium (one proton + two neutrons, radioactive)
+- $\prescript{12}{}{6}\mathrm{C}$: carbon-12 (the standard for defining the atomic mass unit)
 
 ### Isotopes, Isobars, and Isotones
 
@@ -63,9 +63,9 @@ Examples:
 
 Examples:
 
-- Isotopes: $\prescript{1}{}{1}\text{H}$, $\prescript{2}{}{1}\text{H}$, $\prescript{3}{}{1}\text{H}$
-- Isobars: $\prescript{40}{}{20}\text{Ca}$ and $\prescript{40}{}{18}\text{Ar}$
-- Isotones: $\prescript{14}{}{6}\text{C}$ and $\prescript{15}{}{7}\text{N}$ (both have $N = 8$)
+- Isotopes: $\prescript{1}{}{1}\mathrm{H}$, $\prescript{2}{}{1}\mathrm{H}$, $\prescript{3}{}{1}\mathrm{H}$
+- Isobars: $\prescript{40}{}{20}\mathrm{Ca}$ and $\prescript{40}{}{18}\mathrm{Ar}$
+- Isotones: $\prescript{14}{}{6}\mathrm{C}$ and $\prescript{15}{}{7}\mathrm{N}$ (both have $N = 8$)
 
 :::info
 In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
@@ -76,8 +76,8 @@ reactions can distinguish between isotopes of the same element.
 
 The nucleus is held together by the **strong nuclear force**, which is:
 
-- Attractive at distances of $1$ to $3 \text{ fm}$ ($1 \text{ fm} = 10^{-15}$ m)
-- Repulsive at distances shorter than about $0.5 \text{ fm}$ (hard core repulsion)
+- Attractive at distances of $1$ to $3 \mathrm{ fm}$ ($1 \mathrm{ fm} = 10^{-15}$ m)
+- Repulsive at distances shorter than about $0.5 \mathrm{ fm}$ (hard core repulsion)
 - Independent of charge (acts equally between proton-proton, neutron-neutron, and proton-neutron
   pairs)
 - Much stronger than the electrostatic force at short range, but has a very short range
@@ -106,28 +106,28 @@ There are three main types of radiation emitted by radioactive nuclei:
 
 | Property                    | Alpha ($\alpha$)                                  | Beta-minus ($\beta^-$)                      | Beta-plus ($\beta^+$)                       | Gamma ($\gamma$)                            |
 | --------------------------- | ------------------------------------------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-| **Nature**                  | Helium nucleus $\prescript{4}{}{2}\text{He}^{2+}$ | Electron $e^-$                              | Positron $e^+$                              | Electromagnetic wave                        |
+| **Nature**                  | Helium nucleus $\prescript{4}{}{2}\mathrm{He}^{2+}$ | Electron $e^-$                              | Positron $e^+$                              | Electromagnetic wave                        |
 | **Charge**                  | $+2e$                                             | $-e$                                        | $+e$                                        | $0$                                         |
 | **Mass (u)**                | $4.0015$                                          | $0.00055$                                   | $0.00055$                                   | $0$                                         |
 | **Speed**                   | $\sim 5\%$ of $c$                                 | Up to $99\%$ of $c$                         | Up to $99\%$ of $c$                         | $c$ (speed of light)                        |
 | **Ionising power**          | Very high                                         | Moderate                                    | Moderate                                    | Low                                         |
 | **Penetrating power**       | Very low (stopped by paper or a few cm of air)    | Moderate (stopped by a few mm of aluminium) | Moderate (stopped by a few mm of aluminium) | Very high (requires thick lead/concrete)    |
-| **Range in air**            | $\sim 5 \text{ cm}$                               | $\sim 1 \text{ m}$                          | $\sim 1 \text{ m}$                          | Infinite (intensity decreases with $1/r^2$) |
+| **Range in air**            | $\sim 5 \mathrm{ cm}$                               | $\sim 1 \mathrm{ m}$                          | $\sim 1 \mathrm{ m}$                          | Infinite (intensity decreases with $1/r^2$) |
 | **Deflection in E/B field** | Deflected towards negative plate                  | Deflected towards positive plate            | Deflected towards negative plate            | Not deflected                               |
 | **Energy spectrum**         | Discrete (monoenergetic)                          | Continuous (shared with antineutrino)       | Continuous (shared with neutrino)           | Discrete (line spectrum)                    |
 
 ### Alpha Decay
 
-In alpha decay, the nucleus emits an alpha particle ($\prescript{4}{}{2}\text{He}$), reducing both
+In alpha decay, the nucleus emits an alpha particle ($\prescript{4}{}{2}\mathrm{He}$), reducing both
 $A$ by $4$ and $Z$ by $2$:
 
-$$\prescript{A}{}{Z}\text{X} \to \prescript{A-4}{}{Z-2}\text{Y} + \prescript{4}{}{2}\text{He}$$
+$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A-4}{}{Z-2}\mathrm{Y} + \prescript{4}{}{2}\mathrm{He}$$
 
 The daughter nucleus shifts two places to the left in the periodic table.
 
 Example (radium-226 decay):
 
-$$\prescript{226}{}{88}\text{Ra} \to \prescript{222}{}{86}\text{Rn} + \prescript{4}{}{2}\text{He}$$
+$$\prescript{226}{}{88}\mathrm{Ra} \to \prescript{222}{}{86}\mathrm{Rn} + \prescript{4}{}{2}\mathrm{He}$$
 
 Alpha particles are emitted with a single characteristic energy (discrete spectrum) because the
 transition is between two well-defined nuclear energy levels. Alpha decay occurs primarily in heavy
@@ -143,7 +143,7 @@ $$n \to p + e^- + \bar{\nu}_e$$
 
 The nuclear equation is:
 
-$$\prescript{A}{}{Z}\text{X} \to \prescript{A}{}{Z+1}\text{Y} + e^- + \bar{\nu}_e$$
+$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z+1}\mathrm{Y} + e^- + \bar{\nu}_e$$
 
 The daughter nucleus shifts one place to the right in the periodic table. The mass number $A$ does
 not change because a neutron is replaced by a proton.
@@ -165,7 +165,7 @@ $$p \to n + e^+ + \nu_e$$
 
 The nuclear equation is:
 
-$$\prescript{A}{}{Z}\text{X} \to \prescript{A}{}{Z-1}\text{Y} + e^+ + \nu_e$$
+$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z-1}\mathrm{Y} + e^+ + \nu_e$$
 
 Beta-plus decay occurs in proton-rich nuclei. The daughter nucleus shifts one place to the left in
 the periodic table.
@@ -173,19 +173,19 @@ the periodic table.
 **Condition for beta-plus decay:** The parent nucleus must have enough mass-energy to create the
 positron. Specifically:
 
-$$m(\text{parent}) \gt m(\text{daughter}) + 2m_e$$
+$$m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$$
 
 The extra $m_e$ is required because the daughter has one fewer electron, so one orbital electron
 must be emitted as well. If this condition is not met, **electron capture** may occur instead:
 
-$$\prescript{A}{}{Z}\text{X} + e^- \to \prescript{A}{}{Z-1}\text{Y} + \nu_e$$
+$$\prescript{A}{}{Z}\mathrm{X} + e^- \to \prescript{A}{}{Z-1}\mathrm{Y} + \nu_e$$
 
 ### Gamma Radiation
 
 Gamma rays are high-energy photons emitted when a nucleus transitions from an excited state to a
 lower energy state:
 
-$$\prescript{A}{}{Z}\text{X}^* \to \prescript{A}{}{Z}\text{X} + \gamma$$
+$$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 
 The asterisk denotes an excited nuclear state. Gamma emission does not change $A$ or $Z$. It
 typically follows alpha or beta decay when the daughter nucleus is left in an excited state.
@@ -235,7 +235,7 @@ Where:
 
 - $N$ = number of undecayed nuclei at time $t$
 - $\lambda$ = decay constant (probability of decay per nucleus per unit time)
-- The SI unit of activity is the **becquerel** (Bq), where $1 \text{ Bq} = 1 \text{ decay/s}$
+- The SI unit of activity is the **becquerel** (Bq), where $1 \mathrm{ Bq} = 1 \mathrm{ decay/s}$
 
 The decay constant $\lambda$ is characteristic of a particular isotope. A large $\lambda$ means the
 isotope decays quickly (short-lived); a small $\lambda$ means it decays slowly (long-lived).
@@ -310,11 +310,11 @@ This is a straight line with:
 
 The half-life is then:
 
-$$t_{1/2} = \frac{\ln 2}{|\text{slope}|}$$
+$$t_{1/2} = \frac{\ln 2}{|\mathrm{slope}|}$$
 
 :::info
 In DSE exams, half-life determination from graphs is a frequent question. For a log-linear
-plot, remember the slope is negative: $|\text{slope}| = \lambda$. Always check the axes carefully --
+plot, remember the slope is negative: $|\mathrm{slope}| = \lambda$. Always check the axes carefully --
 count rate is proportional to activity but is lower due to detector efficiency.
 :::
 
@@ -324,7 +324,7 @@ For a sample of mass $m$ of an isotope with molar mass $M$:
 
 $$N = \frac{m}{M} N_A$$
 
-Where $N_A = 6.02 \times 10^{23} \text{ mol}^{-1}$ is the Avogadro constant.
+Where $N_A = 6.02 \times 10^{23} \mathrm{ mol}^{-1}$ is the Avogadro constant.
 
 The activity is then:
 
@@ -355,23 +355,23 @@ Where:
 
 - $E$ = energy equivalent (J)
 - $m$ = mass (kg)
-- $c = 3.0 \times 10^8 \text{ m/s}$ (speed of light)
+- $c = 3.0 \times 10^8 \mathrm{ m/s}$ (speed of light)
 
 A small amount of mass corresponds to a very large amount of energy. For nuclear physics
 calculations, it is often convenient to use the conversion:
 
-$$1 \text{ u} \times c^2 = 931.5 \text{ MeV}$$
+$$1 \mathrm{ u} \times c^2 = 931.5 \mathrm{ MeV}$$
 
 or equivalently:
 
-$$1 \text{ MeV}/c^2 = 1.783 \times 10^{-30} \text{ kg}$$
+$$1 \mathrm{ MeV}/c^2 = 1.783 \times 10^{-30} \mathrm{ kg}$$
 
 ### Mass Defect and Binding Energy
 
 **Definition.** The **mass defect** $\Delta m$ of a nucleus is the difference between the total mass
 of its constituent nucleons (when separated) and the actual mass of the nucleus:
 
-$$\Delta m = Zm_p + Nm_n - m_{\text{nucleus}}$$
+$$\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}$$
 
 Where:
 
@@ -379,7 +379,7 @@ Where:
 - $N$ = number of neutrons
 - $m_p$ = mass of a proton
 - $m_n$ = mass of a neutron
-- $m_{\text{nucleus}}$ = actual mass of the nucleus
+- $m_{\mathrm{nucleus}}$ = actual mass of the nucleus
 
 The mass defect is always positive for stable nuclei. The "missing" mass has been converted into
 binding energy that holds the nucleus together.
@@ -413,7 +413,7 @@ The binding energy per nucleon curve is one of the most important graphs in nucl
 
 Key points:
 
-- Iron-56 ($\prescript{56}{}{26}\text{Fe}$) has the highest binding energy per nucleon and is the
+- Iron-56 ($\prescript{56}{}{26}\mathrm{Fe}$) has the highest binding energy per nucleon and is the
   most stable nucleus
 - Energy is released when light nuclei **fuse** (move towards the peak from the left)
 - Energy is released when heavy nuclei **fission** (move towards the peak from the right)
@@ -426,7 +426,7 @@ three) lighter nuclei, accompanied by the release of energy and typically two or
 
 The most studied fission reaction is uranium-235:
 
-$$\prescript{1}{}{0}\text{n} + \prescript{235}{}{92}\text{U} \to \prescript{236}{}{92}\text{U}^* \to \prescript{141}{}{56}\text{Ba} + \prescript{92}{}{36}\text{Kr} + 3\prescript{1}{}{0}\text{n} + \text{energy}$$
+$$\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{236}{}{92}\mathrm{U}^* \to \prescript{141}{}{56}\mathrm{Ba} + \prescript{92}{}{36}\mathrm{Kr} + 3\prescript{1}{}{0}\mathrm{n} + \mathrm{energy}$$
 
 The released neutrons can induce further fission reactions, creating a **chain reaction**.
 
@@ -445,8 +445,8 @@ supercritical, the reaction rate increases exponentially.
 | Containment  | Prevent radiation leaks to the environment                        | Thick concrete and steel     |
 | Shielding    | Absorb gamma rays and neutrons                                    | Lead, concrete, water        |
 
-**Moderator:** Fast neutrons from fission have energies of about $2 \text{ MeV}$. U-235 fission is
-much more probable with thermal (slow) neutrons ($\sim 0.025 \text{ eV}$). The moderator slows
+**Moderator:** Fast neutrons from fission have energies of about $2 \mathrm{ MeV}$. U-235 fission is
+much more probable with thermal (slow) neutrons ($\sim 0.025 \mathrm{ eV}$). The moderator slows
 neutrons through elastic collisions. A good moderator has a small mass number (for efficient energy
 transfer in elastic collisions) and a low neutron absorption cross-section.
 
@@ -491,9 +491,9 @@ reactants (moving towards the peak of the binding energy curve).
 
 Example fusion reactions:
 
-$$\prescript{2}{}{1}\text{H} + \prescript{2}{}{1}\text{H} \to \prescript{3}{}{2}\text{He} + \prescript{1}{}{0}\text{n} + 3.27 \text{ MeV}$$
+$$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 3.27 \mathrm{ MeV}$$
 
-$$\prescript{2}{}{1}\text{H} + \prescript{3}{}{1}\text{H} \to \prescript{4}{}{2}\text{He} + \prescript{1}{}{0}\text{n} + 17.6 \text{ MeV}$$
+$$\prescript{2}{}{1}\mathrm{H} + \prescript{3}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 17.6 \mathrm{ MeV}$$
 
 #### Conditions for Fusion
 
@@ -513,21 +513,21 @@ Stars are powered by fusion. The main processes are:
 **Proton-proton (pp) chain** (dominant in stars like the Sun):
 
 Step 1:
-$\prescript{1}{}{1}\text{H} + \prescript{1}{}{1}\text{H} \to \prescript{2}{}{1}\text{H} + e^+ + \nu_e + 0.42 \text{ MeV}$
+$\prescript{1}{}{1}\mathrm{H} + \prescript{1}{}{1}\mathrm{H} \to \prescript{2}{}{1}\mathrm{H} + e^+ + \nu_e + 0.42 \mathrm{ MeV}$
 
 Step 2:
-$\prescript{2}{}{1}\text{H} + \prescript{1}{}{1}\text{H} \to \prescript{3}{}{2}\text{He} + \gamma + 5.49 \text{ MeV}$
+$\prescript{2}{}{1}\mathrm{H} + \prescript{1}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \gamma + 5.49 \mathrm{ MeV}$
 
 Step 3:
-$\prescript{3}{}{2}\text{He} + \prescript{3}{}{2}\text{He} \to \prescript{4}{}{2}\text{He} + 2\prescript{1}{}{1}\text{H} + 12.86 \text{ MeV}$
+$\prescript{3}{}{2}\mathrm{He} + \prescript{3}{}{2}\mathrm{He} \to \prescript{4}{}{2}\mathrm{He} + 2\prescript{1}{}{1}\mathrm{H} + 12.86 \mathrm{ MeV}$
 
 Net:
-$4\prescript{1}{}{1}\text{H} \to \prescript{4}{}{2}\text{He} + 2e^+ + 2\nu_e + 2\gamma + 26.7 \text{ MeV}$
+$4\prescript{1}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + 2e^+ + 2\nu_e + 2\gamma + 26.7 \mathrm{ MeV}$
 
 **CNO cycle** (dominant in stars more massive than the Sun):
 
 Uses carbon, nitrogen, and oxygen as catalysts. The net result is the same: four protons fuse to
-form a helium-4 nucleus with the release of about $26.7 \text{ MeV}$. The CNO cycle has a much
+form a helium-4 nucleus with the release of about $26.7 \mathrm{ MeV}$. The CNO cycle has a much
 stronger temperature dependence than the pp chain, making it dominant at higher temperatures.
 
 ### Q-Value of Nuclear Reactions
@@ -535,18 +535,18 @@ stronger temperature dependence than the pp chain, making it dominant at higher 
 **Definition.** The **Q-value** of a nuclear reaction is the energy released (or absorbed) in the
 reaction, calculated from the mass difference between reactants and products:
 
-$$Q = (m_{\text{reactants}} - m_{\text{products}}) \times c^2$$
+$$Q = (m_{\mathrm{reactants}} - m_{\mathrm{products}}) \times c^2$$
 
 - $Q \gt 0$: exothermic reaction (energy released, e.g., fission, fusion)
 - $Q \lt 0$: endothermic reaction (energy absorbed, threshold energy required)
 
 For the D-T fusion reaction:
 
-$$Q = [m(\prescript{2}{}{1}\text{H}) + m(\prescript{3}{}{1}\text{H}) - m(\prescript{4}{}{2}\text{He}) - m(\prescript{1}{}{0}\text{n})]c^2 = 17.6 \text{ MeV}$$
+$$Q = [m(\prescript{2}{}{1}\mathrm{H}) + m(\prescript{3}{}{1}\mathrm{H}) - m(\prescript{4}{}{2}\mathrm{He}) - m(\prescript{1}{}{0}\mathrm{n})]c^2 = 17.6 \mathrm{ MeV}$$
 
 :::info
 In DSE calculations, always convert masses to the same units (preferably u) before computing
-the Q-value. Use $1 \text{ u} = 931.5 \text{ MeV}/c^2$ for the energy conversion. Remember that the
+the Q-value. Use $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$ for the energy conversion. Remember that the
 Q-value is shared among all products as kinetic energy (and possibly photons).
 :::
 
@@ -572,7 +572,7 @@ The Geiger-Muller (GM) tube is the most commonly used radiation detector in scho
 7. The pulse is counted by an electronic counter
 
 **Dead time:** After each detection event, the GM tube requires a brief recovery period ($\sim 100$
-to $300 \ \mu\text{s}$) during which it cannot detect new events. This is called the **dead time**.
+to $300 \ \mu\mathrm{s}$) during which it cannot detect new events. This is called the **dead time**.
 At high count rates, some events are missed, leading to an undercount.
 
 **Quenching:** Without quenching, the positive ions would reach the cathode and release secondary
@@ -678,7 +678,7 @@ ionisation can damage biological tissue through several mechanisms:
 
 1. **Direct ionisation:** Radiation directly ionises DNA molecules, causing strand breaks
 2. **Indirect ionisation:** Radiation ionises water molecules (the most abundant molecule in the
-   body), producing reactive free radicals ($\text{OH}^*$, $\text{H}^*$) that attack DNA
+   body), producing reactive free radicals ($\mathrm{OH}^*$, $\mathrm{H}^*$) that attack DNA
 
 Types of DNA damage:
 
@@ -691,10 +691,10 @@ Types of DNA damage:
 
 | Quantity                          | Unit           | Definition                                                         |
 | --------------------------------- | -------------- | ------------------------------------------------------------------ |
-| Absorbed dose                     | Gray (Gy)      | Energy absorbed per unit mass: $1 \text{ Gy} = 1 \text{ J/kg}$     |
+| Absorbed dose                     | Gray (Gy)      | Energy absorbed per unit mass: $1 \mathrm{ Gy} = 1 \mathrm{ J/kg}$     |
 | Equivalent dose (dose equivalent) | Sievert (Sv)   | Absorbed dose weighted by radiation type: $H = D \times w_R$       |
 | Effective dose                    | Sievert (Sv)   | Equivalent dose weighted by tissue sensitivity: $E = \sum H_T w_T$ |
-| Activity                          | Becquerel (Bq) | One decay per second: $1 \text{ Bq} = 1 \text{ s}^{-1}$            |
+| Activity                          | Becquerel (Bq) | One decay per second: $1 \mathrm{ Bq} = 1 \mathrm{ s}^{-1}$            |
 
 Radiation weighting factors $w_R$:
 
@@ -711,28 +711,28 @@ damage along a short track.
 
 Common dose conversions:
 
-$$1 \text{ Sv} = 1000 \text{ mSv}$$
+$$1 \mathrm{ Sv} = 1000 \mathrm{ mSv}$$
 
-$$1 \text{ mSv} = 1000 \ \mu\text{Sv}$$
+$$1 \mathrm{ mSv} = 1000 \ \mu\mathrm{Sv}$$
 
 ### Exposure Limits
 
 | Category                         | Annual limit (typical)                                                       |
 | -------------------------------- | ---------------------------------------------------------------------------- |
-| General public                   | $1 \text{ mSv}$                                                              |
-| Radiation workers (occupational) | $20 \text{ mSv}$ averaged over 5 years ($50 \text{ mSv}$ in any single year) |
-| Pregnant radiation workers       | $1 \text{ mSv}$ to the foetus                                                |
+| General public                   | $1 \mathrm{ mSv}$                                                              |
+| Radiation workers (occupational) | $20 \mathrm{ mSv}$ averaged over 5 years ($50 \mathrm{ mSv}$ in any single year) |
+| Pregnant radiation workers       | $1 \mathrm{ mSv}$ to the foetus                                                |
 
 Typical radiation doses:
 
 | Source                          | Typical dose                |
 | ------------------------------- | --------------------------- |
-| Chest X-ray                     | $0.02$-$0.1 \text{ mSv}$    |
-| Dental X-ray                    | $0.005 \text{ mSv}$         |
-| CT scan (abdomen)               | $8$-$10 \text{ mSv}$        |
-| Background radiation (per year) | $2.4$-$3.0 \text{ mSv}$     |
-| Flight at 35,000 ft (per hour)  | $0.003$-$0.005 \text{ mSv}$ |
-| Mammogram                       | $0.4 \text{ mSv}$           |
+| Chest X-ray                     | $0.02$-$0.1 \mathrm{ mSv}$    |
+| Dental X-ray                    | $0.005 \mathrm{ mSv}$         |
+| CT scan (abdomen)               | $8$-$10 \mathrm{ mSv}$        |
+| Background radiation (per year) | $2.4$-$3.0 \mathrm{ mSv}$     |
+| Flight at 35,000 ft (per hour)  | $0.003$-$0.005 \mathrm{ mSv}$ |
+| Mammogram                       | $0.4 \mathrm{ mSv}$           |
 
 ### ALARA Principle
 
@@ -758,7 +758,7 @@ radiation to half its original value:
 
 $$I = I_0 e^{-\mu x}$$
 
-$$\text{HVT} = \frac{\ln 2}{\mu}$$
+$$\mathrm{HVT} = \frac{\ln 2}{\mu}$$
 
 Where $\mu$ is the linear attenuation coefficient.
 
@@ -779,14 +779,14 @@ Carbon-14 dating is used to determine the age of organic materials up to about $
 
 **Principle:**
 
-- Carbon-14 ($\prescript{14}{}{6}\text{C}$) is produced in the upper atmosphere by cosmic ray
+- Carbon-14 ($\prescript{14}{}{6}\mathrm{C}$) is produced in the upper atmosphere by cosmic ray
   neutrons interacting with nitrogen-14:
 
-  $$\prescript{1}{}{0}\text{n} + \prescript{14}{}{7}\text{N} \to \prescript{14}{}{6}\text{C} + \prescript{1}{}{1}\text{H}$$
+  $$\prescript{1}{}{0}\mathrm{n} + \prescript{14}{}{7}\mathrm{N} \to \prescript{14}{}{6}\mathrm{C} + \prescript{1}{}{1}\mathrm{H}$$
 
 - C-14 is radioactive and undergoes beta-minus decay with a half-life of $5730$ years:
 
-  $$\prescript{14}{}{6}\text{C} \to \prescript{14}{}{7}\text{N} + e^- + \bar{\nu}_e$$
+  $$\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + e^- + \bar{\nu}_e$$
 
 - Living organisms continuously exchange carbon with the environment, maintaining a constant ratio
   of C-14 to C-12 ($\sim 1.3 \times 10^{-12}$)
@@ -847,7 +847,7 @@ process:
 
 **Advantages of nuclear power:**
 
-- Very high energy density: $1 \text{ kg}$ of U-235 produces as much energy as about $2.7$ million
+- Very high energy density: $1 \mathrm{ kg}$ of U-235 produces as much energy as about $2.7$ million
   kg of coal
 - No greenhouse gas emissions during operation (CO$_2$-free electricity generation)
 - Reliable baseload power (not dependent on weather)
@@ -960,12 +960,12 @@ energy -- these are high-frequency topics.
 | Decay constant          | $\lambda = \frac{\ln 2}{t_{1/2}}$                     |
 | Number of nuclei        | $N = \frac{m}{M} N_A$                                 |
 | Mass-energy equivalence | $E = mc^2$                                            |
-| Mass defect             | $\Delta m = Zm_p + Nm_n - m_{\text{nucleus}}$         |
+| Mass defect             | $\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}$         |
 | Binding energy          | $BE = \Delta m \cdot c^2$                             |
-| Q-value                 | $Q = (m_{\text{reactants}} - m_{\text{products}})c^2$ |
-| Energy conversion       | $1 \text{ u} = 931.5 \text{ MeV}$                     |
+| Q-value                 | $Q = (m_{\mathrm{reactants}} - m_{\mathrm{products}})c^2$ |
+| Energy conversion       | $1 \mathrm{ u} = 931.5 \mathrm{ MeV}$                     |
 | Radiation intensity     | $I = I_0 e^{-\mu x}$                                  |
-| Half-value thickness    | $\text{HVT} = \frac{\ln 2}{\mu}$                      |
+| Half-value thickness    | $\mathrm{HVT} = \frac{\ln 2}{\mu}$                      |
 
 ---
 
@@ -979,15 +979,15 @@ He-4 is $4.003$ u.
 
 **Decay equation:**
 
-$$\prescript{222}{}{86}\text{Rn} \to \prescript{218}{}{84}\text{Po} + \prescript{4}{}{2}\text{He}$$
+$$\prescript{222}{}{86}\mathrm{Rn} \to \prescript{218}{}{84}\mathrm{Po} + \prescript{4}{}{2}\mathrm{He}$$
 
 **Energy released (Q-value):**
 
-$$Q = (m_{\text{parent}} - m_{\text{daughter}} - m_{\alpha}) \times 931.5 \text{ MeV}$$
+$$Q = (m_{\mathrm{parent}} - m_{\mathrm{daughter}} - m_{\alpha}) \times 931.5 \mathrm{ MeV}$$
 
 $$Q = (221.970 - 217.963 - 4.003) \times 931.5$$
 
-$$Q = 0.004 \times 931.5 = 3.73 \text{ MeV}$$
+$$Q = 0.004 \times 931.5 = 3.73 \mathrm{ MeV}$$
 
 This energy is shared as kinetic energy between the alpha particle and the polonium-218 daughter
 nucleus, with most going to the alpha particle (due to conservation of momentum and the lighter mass
@@ -1006,9 +1006,9 @@ $$\frac{A}{A_0} = \frac{100}{800} = \frac{1}{8} = \frac{1}{2^3}$$
 
 This corresponds to $3$ half-lives. Therefore:
 
-$$3 t_{1/2} = 30 \text{ min}$$
+$$3 t_{1/2} = 30 \mathrm{ min}$$
 
-$$t_{1/2} = 10 \text{ min}$$
+$$t_{1/2} = 10 \mathrm{ min}$$
 
 **Method 2: Using the decay law**
 
@@ -1022,13 +1022,13 @@ $$\ln\left(\frac{1}{8}\right) = -1800\lambda$$
 
 $$-2.079 = -1800\lambda$$
 
-$$\lambda = 1.155 \times 10^{-3} \text{ s}^{-1}$$
+$$\lambda = 1.155 \times 10^{-3} \mathrm{ s}^{-1}$$
 
-$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.155 \times 10^{-3}} = 600 \text{ s} = 10 \text{ min}$$
+$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.155 \times 10^{-3}} = 600 \mathrm{ s} = 10 \mathrm{ min}$$
 
 ### Worked Example 3: Binding Energy per Nucleon
 
-Calculate the binding energy per nucleon of helium-4 ($\prescript{4}{}{2}\text{He}$).
+Calculate the binding energy per nucleon of helium-4 ($\prescript{4}{}{2}\mathrm{He}$).
 
 Given:
 
@@ -1038,21 +1038,21 @@ Given:
 
 **Step 1: Calculate the mass defect**
 
-$$\Delta m = Zm_p + Nm_n - m_{\text{nucleus}}$$
+$$\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}$$
 
 $$\Delta m = 2(1.007276) + 2(1.008665) - 4.001506$$
 
 $$\Delta m = 2.014552 + 2.017330 - 4.001506$$
 
-$$\Delta m = 4.031882 - 4.001506 = 0.030376 \text{ u}$$
+$$\Delta m = 4.031882 - 4.001506 = 0.030376 \mathrm{ u}$$
 
 **Step 2: Calculate the binding energy**
 
-$$BE = \Delta m \times 931.5 \text{ MeV} = 0.030376 \times 931.5 = 28.30 \text{ MeV}$$
+$$BE = \Delta m \times 931.5 \mathrm{ MeV} = 0.030376 \times 931.5 = 28.30 \mathrm{ MeV}$$
 
 **Step 3: Calculate the binding energy per nucleon**
 
-$$\frac{BE}{A} = \frac{28.30}{4} = 7.07 \text{ MeV/nucleon}$$
+$$\frac{BE}{A} = \frac{28.30}{4} = 7.07 \mathrm{ MeV/nucleon}$$
 
 ### Worked Example 4: Radiocarbon Dating
 
@@ -1076,9 +1076,9 @@ $$-2.303 = -\lambda t$$
 
 $$t = \frac{2.303}{\lambda}$$
 
-With $\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{5730} = 1.209 \times 10^{-4} \text{ yr}^{-1}$:
+With $\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{5730} = 1.209 \times 10^{-4} \mathrm{ yr}^{-1}$:
 
-$$t = \frac{2.303}{1.209 \times 10^{-4}} = 19,040 \text{ years}$$
+$$t = \frac{2.303}{1.209 \times 10^{-4}} = 19,040 \mathrm{ years}$$
 
 The ancient wood is approximately $19,000$ years old.
 
@@ -1100,29 +1100,29 @@ calculate:
 
 The thermal power (energy per second from fission) is:
 
-$$P_{\text{thermal}} = \frac{P_{\text{electrical}}}{\text{efficiency}} = \frac{1000 \times 10^6}{0.33} = 3.03 \times 10^9 \text{ W}$$
+$$P_{\mathrm{thermal}} = \frac{P_{\mathrm{electrical}}}{\mathrm{efficiency}} = \frac{1000 \times 10^6}{0.33} = 3.03 \times 10^9 \mathrm{ W}$$
 
 Energy released per fission:
 
-$$E_{\text{fission}} = 200 \text{ MeV} = 200 \times 10^6 \times 1.6 \times 10^{-19} = 3.2 \times 10^{-11} \text{ J}$$
+$$E_{\mathrm{fission}} = 200 \mathrm{ MeV} = 200 \times 10^6 \times 1.6 \times 10^{-19} = 3.2 \times 10^{-11} \mathrm{ J}$$
 
 Number of fissions per second:
 
-$$\text{Rate} = \frac{P_{\text{thermal}}}{E_{\text{fission}}} = \frac{3.03 \times 10^9}{3.2 \times 10^{-11}} = 9.47 \times 10^{19} \text{ fissions/s}$$
+$$\mathrm{Rate} = \frac{P_{\mathrm{thermal}}}{E_{\mathrm{fission}}} = \frac{3.03 \times 10^9}{3.2 \times 10^{-11}} = 9.47 \times 10^{19} \mathrm{ fissions/s}$$
 
 **(b) Mass of U-235 consumed per day:**
 
 Number of fissions per day:
 
-$$N = 9.47 \times 10^{19} \times 86400 = 8.18 \times 10^{24} \text{ fissions/day}$$
+$$N = 9.47 \times 10^{19} \times 86400 = 8.18 \times 10^{24} \mathrm{ fissions/day}$$
 
 Mass of U-235 per atom:
 
-$$m_{\text{U-235}} = 235 \times 1.66 \times 10^{-27} = 3.90 \times 10^{-25} \text{ kg}$$
+$$m_{\mathrm{U-235}} = 235 \times 1.66 \times 10^{-27} = 3.90 \times 10^{-25} \mathrm{ kg}$$
 
 Mass consumed per day:
 
-$$m = N \times m_{\text{U-235}} = 8.18 \times 10^{24} \times 3.90 \times 10^{-25} = 3.19 \text{ kg/day}$$
+$$m = N \times m_{\mathrm{U-235}} = 8.18 \times 10^{24} \times 3.90 \times 10^{-25} = 3.19 \mathrm{ kg/day}$$
 
 ### Worked Example 6: Activity and Number of Nuclei
 
@@ -1134,21 +1134,21 @@ A sample contains $5.0 \times 10^{20}$ atoms of cobalt-60 ($t_{1/2} = 5.27$ year
 
 $$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{5.27 \times 365.25 \times 24 \times 3600}$$
 
-$$\lambda = \frac{0.693}{1.663 \times 10^8} = 4.17 \times 10^{-9} \text{ s}^{-1}$$
+$$\lambda = \frac{0.693}{1.663 \times 10^8} = 4.17 \times 10^{-9} \mathrm{ s}^{-1}$$
 
 **(b) Initial activity:**
 
-$$A_0 = \lambda N_0 = 4.17 \times 10^{-9} \times 5.0 \times 10^{20} = 2.08 \times 10^{12} \text{ Bq}$$
+$$A_0 = \lambda N_0 = 4.17 \times 10^{-9} \times 5.0 \times 10^{20} = 2.08 \times 10^{12} \mathrm{ Bq}$$
 
 **(c) Activity after 2 years:**
 
-$$t = 2 \times 365.25 \times 24 \times 3600 = 6.31 \times 10^7 \text{ s}$$
+$$t = 2 \times 365.25 \times 24 \times 3600 = 6.31 \times 10^7 \mathrm{ s}$$
 
 $$A = A_0 e^{-\lambda t} = 2.08 \times 10^{12} \times e^{-(4.17 \times 10^{-9})(6.31 \times 10^7)}$$
 
 $$A = 2.08 \times 10^{12} \times e^{-0.263}$$
 
-$$A = 2.08 \times 10^{12} \times 0.769 = 1.60 \times 10^{12} \text{ Bq}$$
+$$A = 2.08 \times 10^{12} \times 0.769 = 1.60 \times 10^{12} \mathrm{ Bq}$$
 
 ### Worked Example 7: Penetration and Shielding
 
@@ -1158,13 +1158,13 @@ lead shield be to reduce the gamma intensity to $1/16$ of its original value?
 If the intensity is reduced to $1/16$, this corresponds to $4$ half-value thicknesses (since
 $2^4 = 16$):
 
-$$\text{Thickness} = 4 \times \text{HVT} = 4 \times 2.5 = 10 \text{ cm}$$
+$$\mathrm{Thickness} = 4 \times \mathrm{HVT} = 4 \times 2.5 = 10 \mathrm{ cm}$$
 
 **Alternatively, using the exponential attenuation law:**
 
 $$\frac{I}{I_0} = e^{-\mu x} = \frac{1}{16}$$
 
-$$\mu = \frac{\ln 2}{\text{HVT}} = \frac{0.693}{2.5} = 0.277 \text{ cm}^{-1}$$
+$$\mu = \frac{\ln 2}{\mathrm{HVT}} = \frac{0.693}{2.5} = 0.277 \mathrm{ cm}^{-1}$$
 
 $$\frac{1}{16} = e^{-0.277x}$$
 
@@ -1172,7 +1172,7 @@ $$\ln\left(\frac{1}{16}\right) = -0.277x$$
 
 $$-2.773 = -0.277x$$
 
-$$x = 10.0 \text{ cm}$$
+$$x = 10.0 \mathrm{ cm}$$
 
 ---
 
@@ -1197,7 +1197,7 @@ still determine half-life from count rate measurements.
 
 | Confusion                      | Correct understanding                                        |
 | ------------------------------ | ------------------------------------------------------------ |
-| Alpha = helium-4 nucleus       | $\prescript{4}{}{2}\text{He}^{2+}$ (not just "helium")       |
+| Alpha = helium-4 nucleus       | $\prescript{4}{}{2}\mathrm{He}^{2+}$ (not just "helium")       |
 | Beta-minus = electron          | Emitted from the nucleus (not an orbital electron)           |
 | Beta-plus = positron           | Not the same as beta-minus; emitted by proton-rich nuclei    |
 | Gamma = photon                 | No charge, no mass; travels at $c$                           |
@@ -1209,13 +1209,13 @@ still determine half-life from count rate measurements.
 The binding energy is defined as a **positive** quantity. It represents the energy that must be
 supplied to separate the nucleus into its constituent nucleons.
 
-$$BE = (Zm_p + Nm_n - m_{\text{nucleus}})c^2 \gt 0$$
+$$BE = (Zm_p + Nm_n - m_{\mathrm{nucleus}})c^2 \gt 0$$
 
 The mass defect $\Delta m$ is always **positive** for a bound nucleus:
 
-$$\Delta m = Zm_p + Nm_n - m_{\text{nucleus}} \gt 0$$
+$$\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}} \gt 0$$
 
-Do not write $BE = (m_{\text{nucleus}} - Zm_p - Nm_n)c^2$ -- this would give a negative value, which
+Do not write $BE = (m_{\mathrm{nucleus}} - Zm_p - Nm_n)c^2$ -- this would give a negative value, which
 is incorrect by definition.
 
 ### Mistake 4: Forgetting Background Radiation
@@ -1223,11 +1223,11 @@ is incorrect by definition.
 When measuring count rates with a GM tube, the measured count rate includes both the source and
 background radiation:
 
-$$R_{\text{measured}} = R_{\text{source}} + R_{\text{background}}$$
+$$R_{\mathrm{measured}} = R_{\mathrm{source}} + R_{\mathrm{background}}$$
 
 Always subtract the background count rate to obtain the true source count rate:
 
-$$R_{\text{source}} = R_{\text{measured}} - R_{\text{background}}$$
+$$R_{\mathrm{source}} = R_{\mathrm{measured}} - R_{\mathrm{background}}$$
 
 This is particularly important when the source count rate is comparable to the background rate.
 
@@ -1270,9 +1270,9 @@ When calculating mass defects and binding energies, be consistent with the masse
 For most DSE problems, atomic masses are given, and the calculation simplifies because the electron
 masses cancel:
 
-$$\Delta m = Z \cdot m(\prescript{1}{}{1}\text{H}) + N \cdot m_n - m(\prescript{A}{}{Z}\text{X})$$
+$$\Delta m = Z \cdot m(\prescript{1}{}{1}\mathrm{H}) + N \cdot m_n - m(\prescript{A}{}{Z}\mathrm{X})$$
 
-Where $m(\prescript{1}{}{1}\text{H})$ is the atomic mass of hydrogen (proton + electron).
+Where $m(\prescript{1}{}{1}\mathrm{H})$ is the atomic mass of hydrogen (proton + electron).
 
 :::warning
 In DSE exams, always read the question carefully to determine whether nuclear masses or

@@ -149,7 +149,7 @@ Domain of $f \circ g$: $[5, \infty)$.
 The **inverse function** $f^{-1}$ of $f$ satisfies:
 
 $$
-f^{-1}(f(x)) = x \quad \text{and} \quad f(f^{-1}(x)) = x
+f^{-1}(f(x)) = x \quad \mathrm{and} \quad f(f^{-1}(x)) = x
 $$
 
 ### Existence of Inverses
@@ -303,7 +303,7 @@ For rational functions $\dfrac{P(x)}{Q(x)}$:
 
 - If $\deg P \lt \deg Q$: horizontal asymptote at $y = 0$.
 - If $\deg P = \deg Q$: horizontal asymptote at
-  $y = \dfrac{\text{leading coefficient of } P}{\text{leading coefficient of } Q}$.
+  $y = \dfrac{\mathrm{leading coefficient of } P}{\mathrm{leading coefficient of } Q}$.
 - If $\deg P = \deg Q + 1$: oblique asymptote (found by polynomial division).
 
 :::info[Example]
@@ -414,7 +414,7 @@ $$
 ### Linear Inequalities
 
 $$
-ax + b \gt 0 \implies x \gt -\frac{b}{a} \quad (\text{if } a \gt 0)
+ax + b \gt 0 \implies x \gt -\frac{b}{a} \quad (\mathrm{if } a \gt 0)
 $$
 
 :::warning[Exam Tip]
@@ -448,7 +448,7 @@ $$
 $$
 
 $$
-|ax + b| \ge c \iff ax + b \le -c \quad \text{or} \quad ax + b \ge c
+|ax + b| \ge c \iff ax + b \le -c \quad \mathrm{or} \quad ax + b \ge c
 $$
 
 :::info[Example]
@@ -635,7 +635,7 @@ The function $f$ is defined as $f(x) = \dfrac{x^2 - 9}{x - 3}$ for $x \neq 3$.
 **(a)** Simplify $f(x)$.
 
 $$
-f(x) = \frac{(x-3)(x+3)}{x-3} = x + 3 \quad \text{for } x \neq 3
+f(x) = \frac{(x-3)(x+3)}{x-3} = x + 3 \quad \mathrm{for } x \neq 3
 $$
 
 **(b)** Find the equations of any asymptotes of $f$.
@@ -656,13 +656,13 @@ when divided by $(x - 1)$. Find $a$ and $b$.
 Since $(x + 3)$ is a factor: $P(-3) = 0$.
 
 $$
--27 + 9a - 3b - 12 = 0 \implies 9a - 3b = 39 \implies 3a - b = 13 \quad \text{(1)}
+-27 + 9a - 3b - 12 = 0 \implies 9a - 3b = 39 \implies 3a - b = 13 \quad \mathrm{(1)}
 $$
 
 Since $P(1) = -20$:
 
 $$
-1 + a + b - 12 = -20 \implies a + b = -9 \quad \text{(2)}
+1 + a + b - 12 = -20 \implies a + b = -9 \quad \mathrm{(2)}
 $$
 
 Adding (1) and (2): $4a = 4 \implies a = 1$.

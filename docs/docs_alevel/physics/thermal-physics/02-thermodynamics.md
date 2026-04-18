@@ -77,11 +77,11 @@ external pressure $p$, pushing the piston out by a small distance $\Delta x$.
 
 The work done **by** the gas:
 
-$$dW_{\text{by}} = F\,\Delta x = pA\,\Delta x = p\,\Delta V$$
+$$dW_{\mathrm{by}} = F\,\Delta x = pA\,\Delta x = p\,\Delta V$$
 
 For a finite expansion:
 
-$$\boxed{W_{\text{by}} = \int_{V_1}^{V_2} p\,dV}$$
+$$\boxed{W_{\mathrm{by}} = \int_{V_1}^{V_2} p\,dV}$$
 
 ### Derivation of Work Done by Gas at Constant Pressure
 
@@ -89,34 +89,34 @@ $$\boxed{W_{\text{by}} = \int_{V_1}^{V_2} p\,dV}$$
 2. The gas exerts a force $F = pA$ on the piston.
 3. When the piston moves outward by distance $\Delta x$, the work done by the gas is:
 
-$$W_{\text{by}} = F\Delta x = pA\Delta x$$
+$$W_{\mathrm{by}} = F\Delta x = pA\Delta x$$
 
 4. Since the volume change $\Delta V = A\Delta x$:
 
-$$\boxed{W_{\text{by}} = p\Delta V}$$
+$$\boxed{W_{\mathrm{by}} = p\Delta V}$$
 
 $\square$
 
 **Special case: work done by gas at constant pressure:**
 
-$$W_{\text{by}} = p\Delta V = p(V_2 - V_1)$$
+$$W_{\mathrm{by}} = p\Delta V = p(V_2 - V_1)$$
 
 The work done by the gas equals the **area under the $p$-$V$ curve**.
 
-In our convention (work done on system): $W_{\text{on}} = -W_{\text{by}} = -p\Delta V$ for constant
+In our convention (work done on system): $W_{\mathrm{on}} = -W_{\mathrm{by}} = -p\Delta V$ for constant
 pressure.
 
 ## 3. Thermodynamic Processes on $p$-$V$ Diagrams
 
 ### Isobaric (Constant Pressure)
 
-$$p = \text{const}, \qquad W_{\text{by}} = p\Delta V$$
+$$p = \mathrm{const}, \qquad W_{\mathrm{by}} = p\Delta V$$
 
 On a $p$-$V$ diagram: a horizontal line. The area under it equals $p\Delta V$.
 
 ### Isochoric (Isovolumetric, Constant Volume)
 
-$$V = \text{const}, \qquad W_{\text{by}} = 0$$
+$$V = \mathrm{const}, \qquad W_{\mathrm{by}} = 0$$
 
 On a $p$-$V$ diagram: a vertical line. No area underneath, so no work is done.
 
@@ -124,25 +124,25 @@ From the first law: $\Delta U = Q$ (all heat goes into internal energy).
 
 ### Isothermal (Constant Temperature)
 
-For an ideal gas, $pV = nRT = \text{const}$, so $pV = \text{const}$ — a **hyperbola** on the $p$-$V$
+For an ideal gas, $pV = nRT = \mathrm{const}$, so $pV = \mathrm{const}$ — a **hyperbola** on the $p$-$V$
 diagram.
 
-$$W_{\text{by}} = \int_{V_1}^{V_2} p\,dV = \int_{V_1}^{V_2} \frac{nRT}{V}\,dV = nRT\ln\frac{V_2}{V_1}$$
+$$W_{\mathrm{by}} = \int_{V_1}^{V_2} p\,dV = \int_{V_1}^{V_2} \frac{nRT}{V}\,dV = nRT\ln\frac{V_2}{V_1}$$
 
 For an ideal gas, internal energy depends only on temperature ($U = \frac{3}{2}Nk_BT$), so
 $\Delta U = 0$ for an isothermal process.
 
-From the first law: $Q = -W_{\text{on}} = W_{\text{by}}$.
+From the first law: $Q = -W_{\mathrm{on}} = W_{\mathrm{by}}$.
 
 ### Adiabatic
 
 No heat exchange with the surroundings: $Q = 0$.
 
-From the first law: $\Delta U = W_{\text{on}}$.
+From the first law: $\Delta U = W_{\mathrm{on}}$.
 
 For an ideal gas undergoing a reversible adiabatic process:
 
-$$pV^{\gamma} = \text{constant}$$
+$$pV^{\gamma} = \mathrm{constant}$$
 
 where $\gamma = C_p/C_v$ is the ratio of specific heats. For a monatomic ideal gas, $\gamma = 5/3$.
 For a diatomic gas (like air), $\gamma \approx 7/5 = 1.4$.
@@ -150,8 +150,8 @@ For a diatomic gas (like air), $\gamma \approx 7/5 = 1.4$.
 On a $p$-$V$ diagram, an adiabatic curve is **steeper** than an isothermal curve passing through the
 same point.
 
-**Intuition.** In an adiabatic expansion, the gas does work ($W_{\text{by}} > 0$), so
-$W_{\text{on}} < 0$, giving $\Delta U < 0$ — the gas cools. In an adiabatic compression, the gas
+**Intuition.** In an adiabatic expansion, the gas does work ($W_{\mathrm{by}} > 0$), so
+$W_{\mathrm{on}} < 0$, giving $\Delta U < 0$ — the gas cools. In an adiabatic compression, the gas
 heats up. This is why pumping a bicycle tyre makes the pump warm.
 
 ## 4. The Carnot Cycle
@@ -168,14 +168,14 @@ consists of four reversible processes:
 
 The efficiency of any heat engine is:
 
-$$\eta = \frac{W_{\text{out}}}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1 - \frac{Q_C}{Q_H}$$
+$$\eta = \frac{W_{\mathrm{out}}}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1 - \frac{Q_C}{Q_H}$$
 
 **Derivation of Carnot efficiency.** For the Carnot cycle, $Q_H/T_H = Q_C/T_C$ (from the properties
 of reversible cycles):
 
 $$\frac{Q_C}{Q_H} = \frac{T_C}{T_H}$$
 
-$$\boxed{\eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H}}$$
+$$\boxed{\eta_{\mathrm{Carnot}} = 1 - \frac{T_C}{T_H}}$$
 
 where $T_H$ and $T_C$ are the absolute temperatures of the hot and cold reservoirs.
 
@@ -203,7 +203,7 @@ cannot be reduced to absolute zero.
 
 4. **Adiabatic compression ($T_C \to T_H$):** $Q = 0$. Gas heats from $T_C$ to $T_H$.
 
-For the adiabatic steps, $TV^{\gamma-1} = \text{const}$, so
+For the adiabatic steps, $TV^{\gamma-1} = \mathrm{const}$, so
 $T_H V_2^{\gamma-1} = T_C V_3^{\gamma-1}$ and $T_C V_4^{\gamma-1} = T_H V_1^{\gamma-1}$, which gives
 $V_2/V_1 = V_3/V_4$.
 
@@ -221,14 +221,14 @@ $Q_C$ from a cold reservoir to a hot reservoir, rejecting $Q_H = Q_C + W$.
 
 The **coefficient of performance** (COP) of a refrigerator:
 
-$$\text{COP}_{\text{ref}} = \frac{Q_C}{W} = \frac{Q_C}{Q_H - Q_C} = \frac{T_C}{T_H - T_C}$$
+$$\mathrm{COP}_{\mathrm{ref}} = \frac{Q_C}{W} = \frac{Q_C}{Q_H - Q_C} = \frac{T_C}{T_H - T_C}$$
 
 A **heat pump** heats a building by extracting heat from outside (cold reservoir) and dumping it
 inside (hot reservoir):
 
-$$\text{COP}_{\text{hp}} = \frac{Q_H}{W} = \frac{T_H}{T_H - T_C}$$
+$$\mathrm{COP}_{\mathrm{hp}} = \frac{Q_H}{W} = \frac{T_H}{T_H - T_C}$$
 
-Note that $\text{COP}_{\text{hp}} = \text{COP}_{\text{ref}} + 1$.
+Note that $\mathrm{COP}_{\mathrm{hp}} = \mathrm{COP}_{\mathrm{ref}} + 1$.
 
 :::warning
 Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
@@ -251,7 +251,7 @@ $\Delta S = Q/T$. The total entropy of an isolated system can never decrease.
 
 **Entropy statement.** The total entropy of an isolated system can never decrease:
 
-$$\Delta S_{\text{total}} \geq 0$$
+$$\Delta S_{\mathrm{total}} \geq 0$$
 
 **Intuition.** The second law explains why some processes are irreversible: an egg can break but not
 unscramble; heat flows from hot to cold but not the reverse. It sets a fundamental limit on the
@@ -264,18 +264,18 @@ efficiency of all engines and refrigerators.
 $$\oint \frac{dQ}{T} = \frac{Q_H}{T_H} - \frac{Q_C}{T_C} = 0$$
 
 This shows $dQ/T$ is an **exact differential** -- its integral around any closed reversible path is
-zero. Therefore, $\oint dQ_{\text{rev}}/T = 0$ defines a state function, which we call **entropy**
+zero. Therefore, $\oint dQ_{\mathrm{rev}}/T = 0$ defines a state function, which we call **entropy**
 $S$:
 
-$$dS = \frac{dQ_{\text{rev}}}{T}, \qquad \Delta S = \int \frac{dQ_{\text{rev}}}{T}$$
+$$dS = \frac{dQ_{\mathrm{rev}}}{T}, \qquad \Delta S = \int \frac{dQ_{\mathrm{rev}}}{T}$$
 
-For an **irreversible** process, $\Delta S_{\text{total}} > 0$. For a **reversible** process,
-$\Delta S_{\text{total}} = 0$.
+For an **irreversible** process, $\Delta S_{\mathrm{total}} > 0$. For a **reversible** process,
+$\Delta S_{\mathrm{total}} = 0$.
 
 **Proof that heat flows from hot to cold.** Consider two bodies at $T_H > T_C$ exchanging a small
 amount of heat $dQ$ reversibly through a Carnot engine. The total entropy change is:
 
-$$dS_{\text{total}} = -\frac{dQ}{T_H} + \frac{dQ}{T_C} = dQ\left(\frac{1}{T_C} - \frac{1}{T_H}\right) > 0$$
+$$dS_{\mathrm{total}} = -\frac{dQ}{T_H} + \frac{dQ}{T_C} = dQ\left(\frac{1}{T_C} - \frac{1}{T_H}\right) > 0$$
 
 since $T_C < T_H$. This is consistent with the second law: the process (heat from hot to cold
 through a reversible engine) increases total entropy. The reverse process would decrease total
@@ -317,7 +317,7 @@ A gas in a cylinder expands isobarically from $2.0 \times 10^{-3}$ m$^3$ to $5.0
 m$^3$ at a pressure of $1.5 \times 10^5$ Pa. Calculate the work done by the gas.
 
 **Answer.**
-$W_{\text{by}} = p\Delta V = 1.5 \times 10^5 \times (5.0 - 2.0) \times 10^{-3} = 1.5 \times 10^5 \times 3.0 \times 10^{-3} = 450$
+$W_{\mathrm{by}} = p\Delta V = 1.5 \times 10^5 \times (5.0 - 2.0) \times 10^{-3} = 1.5 \times 10^5 \times 3.0 \times 10^{-3} = 450$
 J.
 
 <b>If you get this wrong, revise:</b> [Work Done by a Gas](#2-work-done-by-a-gas)
@@ -355,7 +355,7 @@ An ideal gas expands isothermally from $1.0 \times 10^{-3}$ m$^3$ to $4.0 \times
 400 K. If there are 0.10 mol of gas, calculate the work done by the gas.
 
 **Answer.**
-$W_{\text{by}} = nRT\ln(V_2/V_1) = 0.10 \times 8.31 \times 400 \times \ln(4) = 332.4 \times 1.386 = 461$
+$W_{\mathrm{by}} = nRT\ln(V_2/V_1) = 0.10 \times 8.31 \times 400 \times \ln(4) = 332.4 \times 1.386 = 461$
 J.
 
 <b>If you get this wrong, revise:</b> [Isothermal](#isothermal-constant-temperature)
@@ -428,9 +428,9 @@ at 22°C. Calculate the maximum possible COP and the electrical power required t
 heating.
 
 **Answer.** $T_H = 295$ K, $T_C = 278$ K. Maximum COP (Carnot):
-$\text{COP}_{\text{hp}} = T_H / (T_H - T_C) = 295/17 = 17.4$.
+$\mathrm{COP}_{\mathrm{hp}} = T_H / (T_H - T_C) = 295/17 = 17.4$.
 
-Power required: $W = Q_H / \text{COP} = 5000 / 17.4 = 287$ W.
+Power required: $W = Q_H / \mathrm{COP} = 5000 / 17.4 = 287$ W.
 
 In practice, real heat pumps have COP of 3--5 due to irreversibilities, so actual power would be
 1000--1700 W. The Carnot COP represents the theoretical upper bound.
@@ -472,7 +472,7 @@ $18 - 0.2T_f = 0.3T_f - 6$. $24 = 0.5T_f$. $T_f = 48$°C $= 321$ K.
 
 Entropy change of hot water: $\Delta S_1 = 0.200 \times 4200 \times \ln(321/363) = -104.2$ J
 K$^{-1}$. Entropy change of cold water: $\Delta S_2 = 0.300 \times 4200 \times \ln(321/293) = 117.7$
-J K$^{-1}$. Total: $\Delta S_{\text{total}} = -104.2 + 117.7 = 13.5$ J K$^{-1}$ > 0.
+J K$^{-1}$. Total: $\Delta S_{\mathrm{total}} = -104.2 + 117.7 = 13.5$ J K$^{-1}$ > 0.
 
 The positive total entropy confirms this is a spontaneous, irreversible process.
 
@@ -489,19 +489,19 @@ constant temperature $T = 400$ K. Calculate: (a) the work done by the gas, (b) t
 (c) the entropy change of the gas, (d) the entropy change of the universe.
 
 **Answer.** (a) The gas does work, but we need $n$ or the initial pressure. Since $pV = nRT$ at both
-states and $T$ is constant: $W_{\text{by}} = nRT\ln(V_2/V_1)$. Without $n$ or $p_1$, we need more
+states and $T$ is constant: $W_{\mathrm{by}} = nRT\ln(V_2/V_1)$. Without $n$ or $p_1$, we need more
 information. Assume $p_1 = 2.0 \times 10^5$ Pa. Then
 $n = p_1V_1/(RT) = 2.0 \times 10^5 \times 2.0 \times 10^{-3} / (8.31 \times 400) = 0.120$ mol.
 
-$W_{\text{by}} = nRT\ln(V_2/V_1) = 0.120 \times 8.31 \times 400 \times \ln(4) = 553$ J.
+$W_{\mathrm{by}} = nRT\ln(V_2/V_1) = 0.120 \times 8.31 \times 400 \times \ln(4) = 553$ J.
 
-(b) $\Delta U = 0$ (isothermal, ideal gas), so $Q = -W_{\text{on}} = W_{\text{by}} = 553$ J (heat
+(b) $\Delta U = 0$ (isothermal, ideal gas), so $Q = -W_{\mathrm{on}} = W_{\mathrm{by}} = 553$ J (heat
 absorbed).
 
-(c) $\Delta S_{\text{gas}} = Q/T = 553/400 = 1.38$ J K$^{-1}$.
+(c) $\Delta S_{\mathrm{gas}} = Q/T = 553/400 = 1.38$ J K$^{-1}$.
 
-(d) The surroundings lose heat $Q$ at temperature $T$, so $\Delta S_{\text{surr}} = -Q/T = -1.38$ J
-K$^{-1}$. Total: $\Delta S_{\text{universe}} = 0$ (reversible isothermal process).
+(d) The surroundings lose heat $Q$ at temperature $T$, so $\Delta S_{\mathrm{surr}} = -Q/T = -1.38$ J
+K$^{-1}$. Total: $\Delta S_{\mathrm{universe}} = 0$ (reversible isothermal process).
 
 <b>If you get this wrong, revise:</b> [Isothermal](#isothermal-constant-temperature)
 
@@ -513,13 +513,13 @@ K$^{-1}$. Total: $\Delta S_{\text{universe}} = 0$ (reversible isothermal process
 Explain why the adiabatic curve on a $p$-$V$ diagram is steeper than the isothermal curve passing
 through the same point.
 
-**Answer.** For an isothermal process: $pV = \text{const}$, so $p \propto 1/V$. For an adiabatic
-process: $pV^{\gamma} = \text{const}$, so $p \propto 1/V^{\gamma}$. Since $\gamma > 1$, the
+**Answer.** For an isothermal process: $pV = \mathrm{const}$, so $p \propto 1/V$. For an adiabatic
+process: $pV^{\gamma} = \mathrm{const}$, so $p \propto 1/V^{\gamma}$. Since $\gamma > 1$, the
 adiabatic pressure drops faster with increasing volume than the isothermal pressure.
 
 Physically: in an isothermal expansion, heat flows in to maintain temperature, so the pressure drop
 is moderated. In an adiabatic expansion, no heat enters, so the gas cools
-($\Delta U = W_{\text{on}} < 0$), and the pressure drops both due to increased volume and decreased
+($\Delta U = W_{\mathrm{on}} < 0$), and the pressure drops both due to increased volume and decreased
 temperature. The combined effect makes the adiabatic curve steeper.
 
 At any given volume $V > V_0$ (expansion from $V_0$), the adiabatic pressure is lower than the
@@ -536,15 +536,15 @@ A real engine operates between 600 K and 300 K with an actual efficiency of 40%.
 Carnot efficiency, (b) the heat absorbed per cycle if the engine delivers 500 J of work per cycle,
 (c) the entropy change of the universe per cycle.
 
-**Answer.** (a) $\eta_{\text{Carnot}} = 1 - 300/600 = 50\%$.
+**Answer.** (a) $\eta_{\mathrm{Carnot}} = 1 - 300/600 = 50\%$.
 
 (b) $W = \eta \times Q_H$. $Q_H = W/\eta = 500/0.40 = 1250$ J. $Q_C = Q_H - W = 750$ J.
 
-(c) $\Delta S_{\text{universe}} = -Q_H/T_H + Q_C/T_C = -1250/600 + 750/300 = -2.083 + 2.500 = 0.417$
+(c) $\Delta S_{\mathrm{universe}} = -Q_H/T_H + Q_C/T_C = -1250/600 + 750/300 = -2.083 + 2.500 = 0.417$
 J K$^{-1}$ per cycle.
 
 The positive entropy production confirms the engine is irreversible (if it were reversible,
-$\Delta S_{\text{universe}} = 0$ and $\eta = \eta_{\text{Carnot}}$).
+$\Delta S_{\mathrm{universe}} = 0$ and $\eta = \eta_{\mathrm{Carnot}}$).
 
 <b>If you get this wrong, revise:</b>
 [Entropy from the Carnot Cycle](#entropy-from-the-carnot-cycle)
@@ -554,10 +554,10 @@ $\Delta S_{\text{universe}} = 0$ and $\eta = \eta_{\text{Carnot}}$).
 <details>
 <summary>Problem 15</summary>
 
-Derive the relation $pV^{\gamma} = \text{const}$ for a reversible adiabatic process starting from
+Derive the relation $pV^{\gamma} = \mathrm{const}$ for a reversible adiabatic process starting from
 the first law and the ideal gas law.
 
-**Answer.** For an adiabatic process, $Q = 0$, so $\Delta U = W_{\text{on}} = -p\,dV$ (infinitesimal
+**Answer.** For an adiabatic process, $Q = 0$, so $\Delta U = W_{\mathrm{on}} = -p\,dV$ (infinitesimal
 work done on system).
 
 For $n$ moles of ideal gas: $dU = nC_v\,dT$.
@@ -570,10 +570,10 @@ $\frac{dT}{T} = -\frac{R}{C_v}\frac{dV}{V}$.
 
 Since $R = C_p - C_v$ and $\gamma = C_p/C_v$: $\frac{R}{C_v} = \frac{C_p - C_v}{C_v} = \gamma - 1$.
 
-Integrating: $\ln T = -(\gamma - 1)\ln V + \text{const}$, so $TV^{\gamma-1} = \text{const}$.
+Integrating: $\ln T = -(\gamma - 1)\ln V + \mathrm{const}$, so $TV^{\gamma-1} = \mathrm{const}$.
 
-Using $T = pV/(nR)$: $\frac{pV}{nR} V^{\gamma-1} = \text{const}$, giving
-$pV^{\gamma} = \text{const}$.
+Using $T = pV/(nR)$: $\frac{pV}{nR} V^{\gamma-1} = \mathrm{const}$, giving
+$pV^{\gamma} = \mathrm{const}$.
 
 $\square$
 

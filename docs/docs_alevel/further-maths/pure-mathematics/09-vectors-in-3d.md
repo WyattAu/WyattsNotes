@@ -336,11 +336,11 @@ $|\mathbf{b}\times\mathbf{c}|$ (from Section 4.3).
 The height is the component of $\mathbf{a}$ perpendicular to the base, which is the projection of
 $\mathbf{a}$ onto the direction of $\mathbf{b}\times\mathbf{c}$:
 
-$$\text{height} = |\mathbf{a}|\cos\phi = \frac{\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}{|\mathbf{b}\times\mathbf{c}|}$$
+$$\mathrm{height} = |\mathbf{a}|\cos\phi = \frac{\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}{|\mathbf{b}\times\mathbf{c}|}$$
 
 where $\phi$ is the angle between $\mathbf{a}$ and $\mathbf{b}\times\mathbf{c}$.
 
-$$V = \text{base} \times \text{height} = |\mathbf{b}\times\mathbf{c}| \cdot \frac{\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}{|\mathbf{b}\times\mathbf{c}|} = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
+$$V = \mathrm{base} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \cdot \frac{\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}{|\mathbf{b}\times\mathbf{c}|} = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
 
 Taking the absolute value to get a positive volume:
 

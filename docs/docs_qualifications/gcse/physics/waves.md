@@ -55,19 +55,19 @@ $$v = f\lambda$$
 
 **Worked Example.** A wave has a frequency of 250 Hz and a wavelength of 1.4 m. Find the wave speed.
 
-$$v = f\lambda = 250 \times 1.4 = 350 \text{ m/s}$$
+$$v = f\lambda = 250 \times 1.4 = 350 \mathrm{ m/s}$$
 
 **Worked Example.** Sound travels at 330 m/s in air. A note has a wavelength of 0.66 m. Find its
 frequency.
 
-$$f = \frac{v}{\lambda} = \frac{330}{0.66} = 500 \text{ Hz}$$
+$$f = \frac{v}{\lambda} = \frac{330}{0.66} = 500 \mathrm{ Hz}$$
 
 ### 1.5 Derivation of the Wave Equation
 
 Consider a wave moving at speed $v$. In one period $T$, each wavefront travels a distance equal to
 one wavelength $\lambda$. Therefore:
 
-$$v = \frac{\text{distance}}{\text{time}} = \frac{\lambda}{T} = \lambda \times \frac{1}{T} = \lambda f$$
+$$v = \frac{\mathrm{distance}}{\mathrm{time}} = \frac{\lambda}{T} = \lambda \times \frac{1}{T} = \lambda f$$
 
 This is not an approximation; it is exact for any periodic wave.
 
@@ -100,7 +100,7 @@ This is not an approximation; it is exact for any periodic wave.
 **Worked Example.** Two microphones are placed 3.4 m apart. The oscilloscope shows a time difference
 of 0.01 s. Calculate the speed of sound.
 
-$$v = \frac{d}{\Delta t} = \frac{3.4}{0.01} = 340 \text{ m/s}$$
+$$v = \frac{d}{\Delta t} = \frac{3.4}{0.01} = 340 \mathrm{ m/s}$$
 
 ### 2.3 Improving Accuracy in Wave Speed Measurements
 
@@ -182,7 +182,7 @@ Repeaters are placed at intervals to regenerate the signal.
 
 Electromagnetic waves are transverse waves that travel at the speed of light in a vacuum:
 
-$$c = 3.0 \times 10^8 \text{ m/s}$$
+$$c = 3.0 \times 10^8 \mathrm{ m/s}$$
 
 | Type          | Wavelength range                           | Uses                             | Dangers                          |
 | ------------- | ------------------------------------------ | -------------------------------- | -------------------------------- |
@@ -285,7 +285,7 @@ $$d = \frac{v \times t}{2}$$
 **Worked Example.** A sonar pulse is sent from a ship and the echo returns after 0.4 seconds. If the
 speed of sound in water is 1500 m/s, find the depth of the water.
 
-$$d = \frac{1500 \times 0.4}{2} = 300 \text{ m}$$
+$$d = \frac{1500 \times 0.4}{2} = 300 \mathrm{ m}$$
 
 ## 6. Wave Behaviour
 
@@ -400,7 +400,7 @@ virtual images, and $f$ is positive for convex lenses.
 
 **Magnification:**
 
-$$m = \frac{\text{image height}}{\text{object height}} = \frac{v}{u}$$
+$$m = \frac{\mathrm{image height}}{\mathrm{object height}} = \frac{v}{u}$$
 
 ### 7.6 Concave (Diverging) Lenses (Higher Tier)
 
@@ -508,7 +508,7 @@ $$\frac{1}{10} = \frac{1}{v} + \frac{1}{15}$$
 
 $$\frac{1}{v} = \frac{1}{10} - \frac{1}{15} = \frac{3 - 2}{30} = \frac{1}{30}$$
 
-$$v = 30 \text{ cm}$$
+$$v = 30 \mathrm{ cm}$$
 
 The image is 30 cm from the lens, on the opposite side to the object (real image).
 
@@ -516,19 +516,19 @@ The image is 30 cm from the lens, on the opposite side to the object (real image
 
 $$m = \frac{v}{u} = \frac{30}{15} = 2$$
 
-The image is 2 times larger than the object: $3 \times 2 = 6 \text{ cm}$ tall. Since $m$ is positive
+The image is 2 times larger than the object: $3 \times 2 = 6 \mathrm{ cm}$ tall. Since $m$ is positive
 and $v$ is positive, the image is real and inverted.
 
 **Check:** The object is between $f$ and $2f$ (between 10 cm and 20 cm), so the image should be
-beyond $2f$, real, inverted, and magnified. Our result ($v = 30 \text{ cm} \gt 2f = 20 \text{ cm}$,
+beyond $2f$, real, inverted, and magnified. Our result ($v = 30 \mathrm{ cm} \gt 2f = 20 \mathrm{ cm}$,
 inverted, $m = 2$) is consistent.
 
 ## 10. Worked Example: Using the Diffraction Grating Equation
 
-A diffraction grating has 600 lines per mm. Light of wavelength $550 \text{ nm}$ is incident
+A diffraction grating has 600 lines per mm. Light of wavelength $550 \mathrm{ nm}$ is incident
 normally. Find the maximum number of bright fringes visible on each side of the central maximum.
 
-$$d = \frac{1}{600 \times 10^3} = 1.667 \times 10^{-6} \text{ m}$$
+$$d = \frac{1}{600 \times 10^3} = 1.667 \times 10^{-6} \mathrm{ m}$$
 
 The maximum order occurs when $\sin\theta = 1$:
 
@@ -555,18 +555,18 @@ distances of 2 m and 8 m.
 
 **At 2 m:**
 
-$$I_2 = \frac{0.01}{4\pi(4)} = \frac{0.01}{50.3} = 1.99 \times 10^{-4} \text{ W/m}^2$$
+$$I_2 = \frac{0.01}{4\pi(4)} = \frac{0.01}{50.3} = 1.99 \times 10^{-4} \mathrm{ W/m}^2$$
 
-$$\beta_2 = 10\log_{10}\left(\frac{1.99 \times 10^{-4}}{10^{-12}}\right) = 10\log_{10}(1.99 \times 10^8) = 10 \times 8.30 = 83.0 \text{ dB}$$
+$$\beta_2 = 10\log_{10}\left(\frac{1.99 \times 10^{-4}}{10^{-12}}\right) = 10\log_{10}(1.99 \times 10^8) = 10 \times 8.30 = 83.0 \mathrm{ dB}$$
 
 **At 8 m:**
 
-$$I_8 = \frac{0.01}{4\pi(64)} = \frac{0.01}{804} = 1.24 \times 10^{-5} \text{ W/m}^2$$
+$$I_8 = \frac{0.01}{4\pi(64)} = \frac{0.01}{804} = 1.24 \times 10^{-5} \mathrm{ W/m}^2$$
 
-$$\beta_8 = 10\log_{10}\left(\frac{1.24 \times 10^{-5}}{10^{-12}}\right) = 10\log_{10}(1.24 \times 10^7) = 10 \times 7.09 = 70.9 \text{ dB}$$
+$$\beta_8 = 10\log_{10}\left(\frac{1.24 \times 10^{-5}}{10^{-12}}\right) = 10\log_{10}(1.24 \times 10^7) = 10 \times 7.09 = 70.9 \mathrm{ dB}$$
 
 The distance increased by a factor of 4, so the intensity decreased by a factor of 16 ($4^2$), and
-the decibel level decreased by $10\log_{10}(16) = 12.0 \text{ dB}$.
+the decibel level decreased by $10\log_{10}(16) = 12.0 \mathrm{ dB}$.
 
 ## 13. Polarisation (Higher Tier)
 
@@ -600,7 +600,7 @@ $v \lt c$ for all material media, $n \gt 1$ always.
 
 **Example:** The refractive index of glass is 1.5. Find the speed of light in glass.
 
-$$v = \frac{c}{n} = \frac{3 \times 10^8}{1.5} = 2 \times 10^8 \text{ m/s}$$
+$$v = \frac{c}{n} = \frac{3 \times 10^8}{1.5} = 2 \times 10^8 \mathrm{ m/s}$$
 
 Light travels two-thirds as fast in glass as in a vacuum. This is why light bends towards the normal
 when it enters glass: the part of the wavefront that enters the glass first slows down, causing the
@@ -612,7 +612,7 @@ wavefront to rotate.
 | ------------ | ------------------------------------------- | ------------------------------------- | -------------------------- |
 | Reflection   | Wave bounces off surface                    | $\theta_i = \theta_r$                 | Mirror, echo               |
 | Refraction   | Wave changes direction due to speed change  | $n_1\sin\theta_1 = n_2\sin\theta_2$   | Pencil in water looks bent |
-| Diffraction  | Wave spreads through gap or around obstacle | Max when $\text{gap} \approx \lambda$ | Sound around a corner      |
+| Diffraction  | Wave spreads through gap or around obstacle | Max when $\mathrm{gap} \approx \lambda$ | Sound around a corner      |
 | Interference | Waves superpose, creating pattern           | $\Delta x = n\lambda$ (constructive)  | Oil film colours           |
 | Polarisation | Oscillations restricted to one plane        | Only transverse waves                 | Sunglasses                 |
 
@@ -633,15 +633,15 @@ reflection, producing its characteristic brilliance.
 A student stands 50 m from a large wall and claps. The echo returns 0.3 s after the clap. Calculate
 the speed of sound.
 
-The sound travels to the wall and back, so the total distance is $2 \times 50 = 100 \text{ m}$.
+The sound travels to the wall and back, so the total distance is $2 \times 50 = 100 \mathrm{ m}$.
 
-$$v = \frac{d}{t} = \frac{100}{0.3} = 333 \text{ m/s}$$
+$$v = \frac{d}{t} = \frac{100}{0.3} = 333 \mathrm{ m/s}$$
 
 This is a reasonable value for the speed of sound in air at room temperature.
 
 ## 18. Practice Questions (Additional)
 
-16. Light of wavelength $480 \text{ nm}$ passes through a diffraction grating with 400 lines per mm.
+16. Light of wavelength $480 \mathrm{ nm}$ passes through a diffraction grating with 400 lines per mm.
     Calculate the angles of the first, second, and third order maxima. How many orders are visible
     in total?
 
@@ -650,27 +650,27 @@ This is a reasonable value for the speed of sound in air at room temperature.
 
 18. Explain why two independent light sources cannot produce a stable interference pattern.
 
-19. A sound wave has frequency $250 \text{ Hz}$ and intensity level $80 \text{ dB}$ at a distance of
-    $3 \text{ m}$ from the source. Calculate the intensity at $12 \text{ m}$ and the new intensity
+19. A sound wave has frequency $250 \mathrm{ Hz}$ and intensity level $80 \mathrm{ dB}$ at a distance of
+    $3 \mathrm{ m}$ from the source. Calculate the intensity at $12 \mathrm{ m}$ and the new intensity
     level in decibels.
 
-20. Water waves in a ripple tank pass through a gap of width $4 \text{ cm}$. The wavelength is
-    $2 \text{ cm}$. Describe the diffraction pattern observed. How would the pattern change if the
-    gap width were increased to $10 \text{ cm}$?
+20. Water waves in a ripple tank pass through a gap of width $4 \mathrm{ cm}$. The wavelength is
+    $2 \mathrm{ cm}$. Describe the diffraction pattern observed. How would the pattern change if the
+    gap width were increased to $10 \mathrm{ cm}$?
 
-21. A convex lens has focal length $8 \text{ cm}$. An object of height $2 \text{ cm}$ is placed
-    $12 \text{ cm}$ from the lens. Draw a ray diagram (or calculate) to find the image position,
+21. A convex lens has focal length $8 \mathrm{ cm}$. An object of height $2 \mathrm{ cm}$ is placed
+    $12 \mathrm{ cm}$ from the lens. Draw a ray diagram (or calculate) to find the image position,
     height, and nature.
 
 22. Explain how an optical fibre transmits light by total internal reflection. Why must the core
     have a higher refractive index than the cladding?
 
-23. The speed of light in a certain type of glass is $1.8 \times 10^8 \text{ m/s}$. Calculate the
+23. The speed of light in a certain type of glass is $1.8 \times 10^8 \mathrm{ m/s}$. Calculate the
     refractive index of the glass and the critical angle for light travelling from this glass to
     air.
 
-24. A standing wave on a string of length $0.8 \text{ m}$ has a fundamental frequency of
-    $150 \text{ Hz}$. Calculate the wave speed and the frequencies of the second and third
+24. A standing wave on a string of length $0.8 \mathrm{ m}$ has a fundamental frequency of
+    $150 \mathrm{ Hz}$. Calculate the wave speed and the frequencies of the second and third
     harmonics.
 
 25. Describe an experiment to demonstrate that light is a transverse wave using polarising filters.
@@ -679,13 +679,13 @@ This is a reasonable value for the speed of sound in air at room temperature.
 
 ### Example 26: Combining Wave Properties
 
-A water wave has frequency $2.5 \text{ Hz}$ and wavelength $0.4 \text{ m}$. It travels from deep
-water (speed $1.0 \text{ m/s}$) into shallow water where its speed is $0.6 \text{ m/s}$. Calculate
+A water wave has frequency $2.5 \mathrm{ Hz}$ and wavelength $0.4 \mathrm{ m}$. It travels from deep
+water (speed $1.0 \mathrm{ m/s}$) into shallow water where its speed is $0.6 \mathrm{ m/s}$. Calculate
 the new wavelength and explain what happens to the frequency and amplitude.
 
 **Step 1: Verify the given data**
 
-$$v = f\lambda = 2.5 \times 0.4 = 1.0 \text{ m/s}$$
+$$v = f\lambda = 2.5 \times 0.4 = 1.0 \mathrm{ m/s}$$
 
 This matches the deep water speed.
 
@@ -693,7 +693,7 @@ This matches the deep water speed.
 
 Frequency stays the same when a wave crosses a boundary:
 
-$$\lambda_{\text{shallow}} = \frac{v_{\text{shallow}}}{f} = \frac{0.6}{2.5} = 0.24 \text{ m}$$
+$$\lambda_{\mathrm{shallow}} = \frac{v_{\mathrm{shallow}}}{f} = \frac{0.6}{2.5} = 0.24 \mathrm{ m}$$
 
 **Step 3: What happens to the amplitude**
 
@@ -708,36 +708,36 @@ decrease in wave speed causes the wavelength to decrease while the frequency rem
 
 ### Example 27: Electromagnetic Spectrum Calculations
 
-A radio station broadcasts at a frequency of $97.4 \text{ MHz}$. Calculate (a) the wavelength, and
+A radio station broadcasts at a frequency of $97.4 \mathrm{ MHz}$. Calculate (a) the wavelength, and
 (b) the time for one complete wave cycle.
 
 **Step 1: Wavelength**
 
-$$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{97.4 \times 10^6} = 3.08 \text{ m}$$
+$$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{97.4 \times 10^6} = 3.08 \mathrm{ m}$$
 
 **Step 2: Period**
 
-$$T = \frac{1}{f} = \frac{1}{97.4 \times 10^6} = 1.027 \times 10^{-8} \text{ s} = 10.27 \text{ ns}$$
+$$T = \frac{1}{f} = \frac{1}{97.4 \times 10^6} = 1.027 \times 10^{-8} \mathrm{ s} = 10.27 \mathrm{ ns}$$
 
 ### Example 28: Sound Wave Intensity and Distance
 
-A speaker produces a sound intensity of $0.01 \text{ W/m}^2$ at $1 \text{ m}$. Calculate the
-intensity at $5 \text{ m}$ and the sound level in decibels at both distances.
+A speaker produces a sound intensity of $0.01 \mathrm{ W/m}^2$ at $1 \mathrm{ m}$. Calculate the
+intensity at $5 \mathrm{ m}$ and the sound level in decibels at both distances.
 
-**Step 1: Intensity at $5 \text{ m}$ (inverse square law)**
+**Step 1: Intensity at $5 \mathrm{ m}$ (inverse square law)**
 
 $$\frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} = \frac{1}{25}$$
 
-$$I_2 = \frac{0.01}{25} = 4 \times 10^{-4} \text{ W/m}^2$$
+$$I_2 = \frac{0.01}{25} = 4 \times 10^{-4} \mathrm{ W/m}^2$$
 
 **Step 2: Sound levels**
 
-$$L_1 = 10\log_{10}\left(\frac{0.01}{10^{-12}}\right) = 10\log_{10}(10^{10}) = 100 \text{ dB}$$
+$$L_1 = 10\log_{10}\left(\frac{0.01}{10^{-12}}\right) = 10\log_{10}(10^{10}) = 100 \mathrm{ dB}$$
 
-$$L_2 = 10\log_{10}\left(\frac{4 \times 10^{-4}}{10^{-12}}\right) = 10\log_{10}(4 \times 10^8) = 10 \times 8.602 = 86.0 \text{ dB}$$
+$$L_2 = 10\log_{10}\left(\frac{4 \times 10^{-4}}{10^{-12}}\right) = 10\log_{10}(4 \times 10^8) = 10 \times 8.602 = 86.0 \mathrm{ dB}$$
 
-Doubling the distance reduces the level by $6 \text{ dB}$ (from 5 times the distance:
-$10\log_{10} 25 \approx 14 \text{ dB}$ reduction).
+Doubling the distance reduces the level by $6 \mathrm{ dB}$ (from 5 times the distance:
+$10\log_{10} 25 \approx 14 \mathrm{ dB}$ reduction).
 
 ## Common Pitfalls Extended
 
@@ -765,16 +765,16 @@ next trough, which is only half a wavelength.
     Calculate the angle of refraction and state whether the light bends towards or away from the
     normal.
 
-27. A person standing $100 \text{ m}$ from a cliff claps their hands. If the speed of sound is
-    $340 \text{ m/s}$, how long does it take to hear the echo? What is the minimum distance between
+27. A person standing $100 \mathrm{ m}$ from a cliff claps their hands. If the speed of sound is
+    $340 \mathrm{ m/s}$, how long does it take to hear the echo? What is the minimum distance between
     the person and the cliff to hear a distinct echo (assuming the human ear can distinguish sounds
-    $0.1 \text{ s}$ apart)?
+    $0.1 \mathrm{ s}$ apart)?
 
 28. Compare the properties of transverse and longitudinal waves by completing a table with the
     following headings: direction of oscillation, direction of propagation, example, can be
     polarised, can travel through a vacuum.
 
-29. A microwave oven operates at a frequency of $2.45 \text{ GHz}$. Calculate the wavelength.
+29. A microwave oven operates at a frequency of $2.45 \mathrm{ GHz}$. Calculate the wavelength.
     Explain why microwaves are particularly effective at heating food containing water molecules.
 
 30. Describe an experiment to measure the speed of sound in air using two microphones connected to

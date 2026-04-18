@@ -55,9 +55,9 @@ contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is 
 
 **Theorem (FTC).** If $f$ is continuous on $[a,b]$, then
 
-$$(\text{Part 1})\quad \frac{d}{dx}\int_a^x f(t)\,dt = f(x)$$
+$$(\mathrm{Part 1})\quad \frac{d}{dx}\int_a^x f(t)\,dt = f(x)$$
 
-$$(\text{Part 2})\quad \int_a^b f(x)\,dx = F(b) - F(a)$$
+$$(\mathrm{Part 2})\quad \int_a^b f(x)\,dx = F(b) - F(a)$$
 
 where $F$ is any antiderivative of $f$ (i.e., $F'(x) = f(x)$).
 
@@ -262,7 +262,7 @@ Summing all trapezia:
 
 $$
 \begin{aligned}
-\text{Total} &= \frac{h}{2}(y_0+y_1) + \frac{h}{2}(y_1+y_2) + \cdots + \frac{h}{2}(y_{n-1}+y_n) \\
+\mathrm{Total} &= \frac{h}{2}(y_0+y_1) + \frac{h}{2}(y_1+y_2) + \cdots + \frac{h}{2}(y_{n-1}+y_n) \\
 &= \frac{h}{2}\left[y_0 + 2y_1 + 2y_2 + \cdots + 2y_{n-1} + y_n\right]
 \end{aligned}
 $$
@@ -386,7 +386,7 @@ Use the trapezium rule with 4 strips to approximate $\displaystyle\int_0^2 \frac
 <summary>Solution 5</summary>
 $h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 1/(1+1) = 0.5$, $y_3 = 1/(1+2.25) \approx 0.3077$, $y_4 = 1/5 = 0.2$.
 
-$$\text{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
+$$\mathrm{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
 
 Error bound:
 $|E| \leq \dfrac{2^3}{12 \times 16} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.

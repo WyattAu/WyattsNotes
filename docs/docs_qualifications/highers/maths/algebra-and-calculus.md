@@ -208,7 +208,7 @@ k = \frac{\ln 2}{8} \approx 0.0866
 $$
 
 $$
-N(25) = 200e^{-0.0866 \times 25} = 200e^{-2.165} \approx 200 \times 0.1147 \approx 22.9 \text{ g}
+N(25) = 200e^{-0.0866 \times 25} = 200e^{-2.165} \approx 200 \times 0.1147 \approx 22.9 \mathrm{ g}
 $$
 
 ### Polynomials
@@ -274,7 +274,7 @@ $$x^2 - 2x - 3 = 0$$
 
 $$(x - 3)(x + 1) = 0$$
 
-$$x = 3 \text{ or } x = -1$$
+$$x = 3 \mathrm{ or } x = -1$$
 
 When $x = 3$: $y = 9 - 12 + 3 = 0$. When $x = -1$: $y = 1 + 4 + 3 = 8$.
 
@@ -445,9 +445,9 @@ $$
 Optimisation problems require you to express the quantity to be optimised as a function of a single
 variable, then find the stationary points.
 
-**Example:** A rectangular box with a square base has a volume of $128 \text{ cm}^3$. The material
-for the base costs 5 pence per $\text{cm}^2$ and the material for the sides costs 3 pence per
-$\text{cm}^2$. Find the dimensions that minimise the cost.
+**Example:** A rectangular box with a square base has a volume of $128 \mathrm{ cm}^3$. The material
+for the base costs 5 pence per $\mathrm{cm}^2$ and the material for the sides costs 3 pence per
+$\mathrm{cm}^2$. Find the dimensions that minimise the cost.
 
 Let the base have side length $x$ cm and height $h$ cm.
 
@@ -474,17 +474,17 @@ x^3 = 153.6
 $$
 
 $$
-x = \sqrt[3]{153.6} \approx 5.35 \text{ cm}
+x = \sqrt[3]{153.6} \approx 5.35 \mathrm{ cm}
 $$
 
 $$
-h = \frac{128}{5.35^2} \approx 4.47 \text{ cm}
+h = \frac{128}{5.35^2} \approx 4.47 \mathrm{ cm}
 $$
 
 **Verification:** $\frac{d^2C}{dx^2} = 10 + \frac{3072}{x^3} > 0$ for all $x > 0$, confirming a
 minimum.
 
-**Example:** A closed cylindrical can must hold $500 \text{ cm}^3$ of liquid. Find the dimensions
+**Example:** A closed cylindrical can must hold $500 \mathrm{ cm}^3$ of liquid. Find the dimensions
 that minimise the surface area.
 
 Let the radius be $r$ and the height be $h$.
@@ -498,11 +498,11 @@ $$
 $$
 
 $$
-4\pi r^3 = 1000 \implies r^3 = \frac{250}{\pi} \implies r = \sqrt[3]{\frac{250}{\pi}} \approx 4.30 \text{ cm}
+4\pi r^3 = 1000 \implies r^3 = \frac{250}{\pi} \implies r = \sqrt[3]{\frac{250}{\pi}} \approx 4.30 \mathrm{ cm}
 $$
 
 $$
-h = \frac{500}{\pi \times 4.30^2} \approx 8.60 \text{ cm}
+h = \frac{500}{\pi \times 4.30^2} \approx 8.60 \mathrm{ cm}
 $$
 
 Note that $h = 2r$, so the optimal can has height equal to diameter.
@@ -601,7 +601,7 @@ $$
 ### Integration by Substitution (Advanced Higher)
 
 $$
-\int f(g(x))g'(x) \, dx = \int f(u) \, du \quad \text{where } u = g(x)
+\int f(g(x))g'(x) \, dx = \int f(u) \, du \quad \mathrm{where } u = g(x)
 $$
 
 **Example:** Evaluate $\int 2x\sqrt{x^2 + 1} \, dx$.
@@ -705,7 +705,7 @@ $y^2 = x^2 + 3$, giving $y = \sqrt{x^2 + 3}$ (taking the positive root since $y 
 
 5. Find the area enclosed by the curves $y = x^3$ and $y = x$.
 
-6. A closed cylindrical can must hold $500 \text{ cm}^3$ of liquid. Find the dimensions that
+6. A closed cylindrical can must hold $500 \mathrm{ cm}^3$ of liquid. Find the dimensions that
    minimise the surface area.
 
 7. Solve $\log_3(x) + \log_3(x - 2) = 1$.

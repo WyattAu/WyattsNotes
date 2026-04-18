@@ -41,12 +41,12 @@ car).
 **Stratified sampling formula.** If a population of size $N$ contains a subgroup of size $n$, then
 the sample from that subgroup should be:
 
-$$\text{sample size} = \frac{n}{N} \times \text{total sample size}$$
+$$\mathrm{sample size} = \frac{n}{N} \times \mathrm{total sample size}$$
 
 **Worked Example.** A school has 600 boys and 400 girls. A sample of 50 students is needed. How many
 boys and girls should be in the sample?
 
-$$\text{Boys} = \frac{600}{1000} \times 50 = 30, \qquad \text{Girls} = \frac{400}{1000} \times 50 = 20$$
+$$\mathrm{Boys} = \frac{600}{1000} \times 50 = 30, \qquad \mathrm{Girls} = \frac{400}{1000} \times 50 = 20$$
 
 **Worked Example (Higher Tier).** A population of 1200 is divided into three age groups: Under 18
 (300), 18--40 (500), Over 40 (400). A stratified sample of 60 is required.
@@ -85,11 +85,11 @@ only one school is still biased if you want to draw conclusions about all school
 
 Ordered: $1, 2, 3, 4, 5, 5, 5, 7, 8, 9$.
 
-$$\text{Mean} = \frac{1 + 2 + 3 + 4 + 5 + 5 + 5 + 7 + 8 + 9}{10} = \frac{49}{10} = 4.9$$
+$$\mathrm{Mean} = \frac{1 + 2 + 3 + 4 + 5 + 5 + 5 + 7 + 8 + 9}{10} = \frac{49}{10} = 4.9$$
 
-$$\text{Median} = \frac{5 + 5}{2} = 5$$
+$$\mathrm{Median} = \frac{5 + 5}{2} = 5$$
 
-$$\text{Mode} = 5$$
+$$\mathrm{Mode} = 5$$
 
 ### 2.2 Mean from a Frequency Table
 
@@ -123,13 +123,13 @@ For grouped data, use the **midpoint** of each class as an estimate for $x$.
 | $180 \leq h \lt 190$ | 5             | 185          | 925          |
 | **Total**            | **50**        |              | **8230**     |
 
-$$\text{Estimated mean} = \frac{8230}{50} = 164.6 \text{ cm}$$
+$$\mathrm{Estimated mean} = \frac{8230}{50} = 164.6 \mathrm{ cm}$$
 
 ### 2.4 Estimated Median and Interquartile Range from Grouped Data
 
 To find the median class: find the position $\frac{n}{2}$ and locate it in the cumulative frequency.
 
-**Interquartile range (IQR):** $\text{IQR} = Q_3 - Q_1$.
+**Interquartile range (IQR):** $\mathrm{IQR} = Q_3 - Q_1$.
 
 This is a **measure of spread** that is not affected by outliers.
 
@@ -142,7 +142,7 @@ Median position: $\frac{50}{2} = 25$. This falls in the $160 \leq h \lt 170$ cla
 
 Using linear interpolation within the class:
 
-$$\text{Median} = 160 + \frac{25 - 17}{35 - 17} \times 10 = 160 + \frac{8}{18} \times 10 = 160 + 4.44 = 164.4 \text{ cm}$$
+$$\mathrm{Median} = 160 + \frac{25 - 17}{35 - 17} \times 10 = 160 + \frac{8}{18} \times 10 = 160 + 4.44 = 164.4 \mathrm{ cm}$$
 
 ### 2.5 Choosing the Right Average
 
@@ -162,13 +162,13 @@ representation of the typical salary.
 
 ### 3.1 Range
 
-$$\text{Range} = \text{maximum value} - \text{minimum value}$$
+$$\mathrm{Range} = \mathrm{maximum value} - \mathrm{minimum value}$$
 
 Simple but affected by outliers.
 
 ### 3.2 Interquartile Range
 
-$$\text{IQR} = Q_3 - Q_1$$
+$$\mathrm{IQR} = Q_3 - Q_1$$
 
 Where $Q_1$ is the lower quartile (25th percentile) and $Q_3$ is the upper quartile (75th
 percentile).
@@ -191,15 +191,15 @@ A **box plot** displays the minimum, $Q_1$, median, $Q_3$, and maximum.
 - Median position: 5.5, so median $= \frac{10 + 12}{2} = 11$
 - $Q_3$ position: $\frac{33}{4} = 8.25$, so $Q_3 = 18 + 0.25(22 - 18) = 19$
 - Maximum: 25
-- $\text{IQR} = 19 - 7.75 = 11.25$
+- $\mathrm{IQR} = 19 - 7.75 = 11.25$
 
 ### 3.4 Outliers
 
-A common definition: a value is an **outlier** if it is more than $1.5 \times \text{IQR}$ below
+A common definition: a value is an **outlier** if it is more than $1.5 \times \mathrm{IQR}$ below
 $Q_1$ or above $Q_3$.
 
-$$\text{Lower fence} = Q_1 - 1.5 \times \text{IQR}$$
-$$\text{Upper fence} = Q_3 + 1.5 \times \text{IQR}$$
+$$\mathrm{Lower fence} = Q_1 - 1.5 \times \mathrm{IQR}$$
+$$\mathrm{Upper fence} = Q_3 + 1.5 \times \mathrm{IQR}$$
 
 **Worked Example.** Using the data above, identify any outliers.
 
@@ -226,7 +226,7 @@ Since all values are between $-9.125$ and $35.875$, there are no outliers.
 
 In a histogram, the **area** of each bar represents the frequency, not the height.
 
-$$\text{Frequency density} = \frac{\text{frequency}}{\text{class width}}$$
+$$\mathrm{Frequency density} = \frac{\mathrm{frequency}}{\mathrm{class width}}$$
 
 **Worked Example.**
 
@@ -242,7 +242,7 @@ The bar heights (frequency densities) are 1.5, 2.0, 3.0, and 1.0 respectively.
 **Worked Example (Higher Tier).** A histogram has a bar of width 5 and height 4. What frequency does
 this bar represent?
 
-$\text{Frequency} = \text{frequency density} \times \text{class width} = 4 \times 5 = 20$.
+$\mathrm{Frequency} = \mathrm{frequency density} \times \mathrm{class width} = 4 \times 5 = 20$.
 
 **Worked Example (Higher Tier).** A histogram has bars with frequency densities 3, 5, 2, and 4 for
 classes of width 4, 6, 8, and 3 respectively. Find the total frequency represented.
@@ -311,15 +311,15 @@ The estimated exam score is approximately 66.
 
 ### 5.1 Basic Probability
 
-$$P(\text{event}) = \frac{\text{number of favourable outcomes}}{\text{total number of outcomes}}$$
+$$P(\mathrm{event}) = \frac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}$$
 
 The probability of any event satisfies $0 \leq P(E) \leq 1$.
 
-**Complement rule:** $P(\text{not } E) = 1 - P(E)$
+**Complement rule:** $P(\mathrm{not } E) = 1 - P(E)$
 
-**Mutually exclusive events:** $P(A \text{ or } B) = P(A) + P(B)$
+**Mutually exclusive events:** $P(A \mathrm{ or } B) = P(A) + P(B)$
 
-**Independent events:** $P(A \text{ and } B) = P(A) \times P(B)$
+**Independent events:** $P(A \mathrm{ and } B) = P(A) \times P(B)$
 
 **Theorem.** For any events $A$ and $B$: $0 \leq P(A \cap B) \leq \min(P(A), P(B))$.
 
@@ -365,12 +365,12 @@ First draw: $P(R) = \frac{3}{8}$
 
 Second draw (after removing one red): $P(R) = \frac{2}{7}$
 
-$$P(\text{both red}) = \frac{3}{8} \times \frac{2}{7} = \frac{6}{56} = \frac{3}{28}$$
+$$P(\mathrm{both red}) = \frac{3}{8} \times \frac{2}{7} = \frac{6}{56} = \frac{3}{28}$$
 
 **Worked Example (Higher Tier).** Using the same bag, find the probability that the two balls are
 different colours.
 
-$$P(\text{different}) = P(\text{RB}) + P(\text{BR}) = \frac{3}{8} \times \frac{5}{7} + \frac{5}{8} \times \frac{3}{7} = \frac{15}{56} + \frac{15}{56} = \frac{30}{56} = \frac{15}{28}$$
+$$P(\mathrm{different}) = P(\mathrm{RB}) + P(\mathrm{BR}) = \frac{3}{8} \times \frac{5}{7} + \frac{5}{8} \times \frac{3}{7} = \frac{15}{56} + \frac{15}{56} = \frac{30}{56} = \frac{15}{28}$$
 
 **Worked Example (Higher Tier).** A fair coin is tossed three times. Find the probability of getting
 exactly two heads.
@@ -379,7 +379,7 @@ There are $2^3 = 8$ equally likely outcomes: HHH, HHT, HTH, HTT, THH, THT, TTH, 
 
 Favourable: HHT, HTH, THH (3 outcomes).
 
-$$P(\text{exactly 2 heads}) = \frac{3}{8}$$
+$$P(\mathrm{exactly 2 heads}) = \frac{3}{8}$$
 
 ### 5.4 Conditional Probability
 
@@ -418,7 +418,7 @@ person is chosen at random. Find the probability they like neither.
 
 $|T \cup C| = 45 + 35 - 15 = 65$.
 
-$P(\text{neither}) = \frac{100 - 65}{100} = 0.35$.
+$P(\mathrm{neither}) = \frac{100 - 65}{100} = 0.35$.
 
 **Worked Example (Higher Tier).** Using the same data, given that a person likes at least one drink,
 find the probability they like tea but not coffee.
@@ -557,7 +557,7 @@ This process is called **standardisation** and produces data with mean 0 and sta
 An outlier is a value that lies far from the other data points. There are several ways to detect
 outliers:
 
-- Values below $Q_1 - 1.5 \times \text{IQR}$ or above $Q_3 + 1.5 \times \text{IQR}$.
+- Values below $Q_1 - 1.5 \times \mathrm{IQR}$ or above $Q_3 + 1.5 \times \mathrm{IQR}$.
 - Values more than 2 standard deviations from the mean (for approximately normal data).
 
 **Impact on measures:**
@@ -578,22 +578,22 @@ Tree diagrams are useful for visualising multi-stage experiments where events ar
 **Worked Example.** A bag contains 4 red and 6 blue counters. Two counters are drawn without
 replacement. Find the probability that both are the same colour.
 
-First draw: $P(\text{red}) = 4/10 = 0.4$, $P(\text{blue}) = 6/10 = 0.6$.
+First draw: $P(\mathrm{red}) = 4/10 = 0.4$, $P(\mathrm{blue}) = 6/10 = 0.6$.
 
-Second draw (if first was red): $P(\text{red}) = 3/9 = 1/3$, $P(\text{blue}) = 6/9 = 2/3$.
+Second draw (if first was red): $P(\mathrm{red}) = 3/9 = 1/3$, $P(\mathrm{blue}) = 6/9 = 2/3$.
 
-Second draw (if first was blue): $P(\text{red}) = 4/9$, $P(\text{blue}) = 5/9$.
-
-$$
-P(\text{both red}) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}
-$$
+Second draw (if first was blue): $P(\mathrm{red}) = 4/9$, $P(\mathrm{blue}) = 5/9$.
 
 $$
-P(\text{both blue}) = \frac{6}{10} \times \frac{5}{9} = \frac{30}{90} = \frac{1}{3}
+P(\mathrm{both red}) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}
 $$
 
 $$
-P(\text{same colour}) = \frac{2}{15} + \frac{1}{3} = \frac{2}{15} + \frac{5}{15} = \frac{7}{15}
+P(\mathrm{both blue}) = \frac{6}{10} \times \frac{5}{9} = \frac{30}{90} = \frac{1}{3}
+$$
+
+$$
+P(\mathrm{same colour}) = \frac{2}{15} + \frac{1}{3} = \frac{2}{15} + \frac{5}{15} = \frac{7}{15}
 $$
 
 ### 9.6 Scatter Graphs and Lines of Best Fit
@@ -656,7 +656,7 @@ The area under a frequency polygon equals the total frequency (just like a histo
 10. The heights of 100 students are summarised in a cumulative frequency table. Explain how you
     would estimate the interquartile range from this table.
 
-11. A biased dice has $P(\text{even}) = 0.6$ and $P(\text{odd}) = 0.4$. It is rolled twice. Find the
+11. A biased dice has $P(\mathrm{even}) = 0.6$ and $P(\mathrm{odd}) = 0.4$. It is rolled twice. Find the
     probability that the sum is greater than 8.
 
 12. Explain the difference between a histogram and a bar chart, and when each is most appropriate.

@@ -17,13 +17,13 @@ Let $f, g: \mathbb{N} \to \mathbb{R}^+$ be functions.
 
 #### Big-O (Upper Bound)
 
-$$f(n) = O(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{N} \text{ s.t. } f(n) \leq c \cdot g(n)\ \forall\, n \geq n_0$$
+$$f(n) = O(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{N} \mathrm{ s.t. } f(n) \leq c \cdot g(n)\ \forall\, n \geq n_0$$
 
 **Intuition:** $f$ is eventually bounded above by a constant multiple of $g$.
 
 #### Big-Omega (Lower Bound)
 
-$$f(n) = \Omega(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{N} \text{ s.t. } f(n) \geq c \cdot g(n)\ \forall\, n \geq n_0$$
+$$f(n) = \Omega(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{N} \mathrm{ s.t. } f(n) \geq c \cdot g(n)\ \forall\, n \geq n_0$$
 
 **Intuition:** $f$ is eventually bounded below by a constant multiple of $g$.
 
@@ -31,7 +31,7 @@ $$f(n) = \Omega(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{N} \text{ s.t. } f(
 
 $$f(n) = \Theta(g(n)) \iff f(n) = O(g(n)) \land f(n) = \Omega(g(n))$$
 
-$$\iff \exists\, c_1, c_2 > 0,\ n_0 \in \mathbb{N} \text{ s.t. } c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n)\ \forall\, n \geq n_0$$
+$$\iff \exists\, c_1, c_2 > 0,\ n_0 \in \mathbb{N} \mathrm{ s.t. } c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n)\ \forall\, n \geq n_0$$
 
 **Intuition:** $f$ grows at the same rate as $g$, up to constant factors.
 
@@ -57,11 +57,11 @@ $$\lim_{n \to \infty} \frac{n}{n \log n} = \lim_{n \to \infty} \frac{1}{\log n} 
 
 Similarly, $\log n = o(n)$:
 
-$$\lim_{n \to \infty} \frac{\log n}{n} = 0 \quad \text{(by L'Hôpital's rule)}$$
+$$\lim_{n \to \infty} \frac{\log n}{n} = 0 \quad \mathrm{(by L'Hôpital's rule)}$$
 
 And $n^k = o(2^n)$ for any constant $k$:
 
-$$\lim_{n \to \infty} \frac{n^k}{2^n} = 0 \quad \text{(exponential dominates polynomial)}$$
+$$\lim_{n \to \infty} \frac{n^k}{2^n} = 0 \quad \mathrm{(exponential dominates polynomial)}$$
 
 $\square$
 
@@ -94,9 +94,9 @@ performance. **Edexcel** covers time and space complexity with Big-O notation.
 For an algorithm with input size $n$, let $D_n$ be the set of all possible inputs of size $n$, and
 let $T(A, I)$ be the running time of algorithm $A$ on input $I$.
 
-- **Best case:** $T_{\text{best}}(n) = \min_{I \in D_n} T(A, I)$
-- **Worst case:** $T_{\text{worst}}(n) = \max_{I \in D_n} T(A, I)$
-- **Average case:** $T_{\text{avg}}(n) = \sum_{I \in D_n} T(A, I) \cdot P(I)$
+- **Best case:** $T_{\mathrm{best}}(n) = \min_{I \in D_n} T(A, I)$
+- **Worst case:** $T_{\mathrm{worst}}(n) = \max_{I \in D_n} T(A, I)$
+- **Average case:** $T_{\mathrm{avg}}(n) = \sum_{I \in D_n} T(A, I) \cdot P(I)$
 
 where $P(I)$ is the probability of input $I$.
 
@@ -192,7 +192,7 @@ Total amortised cost: $\sum_{i=1}^{n} \hat{c}_i = \sum_{i=1}^{n} c_i + \Phi(D_n)
 
 Since $\Phi \geq 0$ and $\Phi(D_0) = 0$: $\sum \hat{c}_i \geq \sum c_i$.
 
-**Example: Dynamic array.** Let $\Phi = 2(\text{size} - \text{capacity}/2)$ when size $\geq$
+**Example: Dynamic array.** Let $\Phi = 2(\mathrm{size} - \mathrm{capacity}/2)$ when size $\geq$
 capacity/2, else 0.
 
 - **Insert without resize:** Actual cost = 1. $\Phi$ increases by 2. Amortised cost = $1 + 2 = 3$.
@@ -330,7 +330,7 @@ $n \approx 13,000$. Below this, B is faster.
 </details>
 
 **Problem 7.** Perform amortized analysis of a stack that supports push ($O(1)$), pop ($O(1)$), and
-**multipop(k)** which pops $k$ elements ($O(k)$, or $O(\min(k, \text{size}))$).
+**multipop(k)** which pops $k$ elements ($O(k)$, or $O(\min(k, \mathrm{size}))$).
 
 <details>
 <summary>Answer</summary>

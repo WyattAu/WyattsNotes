@@ -20,7 +20,7 @@ A **data race** [N4950 §6.9.4.2] occurs when two or more threads access the sam
 concurrently, at least one of them performs a write, and there is no happens-before relationship
 between the accesses. Formally, a data race is present when all three conditions hold:
 
-$$\text{Data Race} \iff \exists\, m, t_1, t_2 : \text{access}(t_1, m, w) \wedge \text{access}(t_2, m, r/w) \wedge \neg\text{happens-before}(t_1, t_2) \wedge \neg\text{happens-before}(t_2, t_1)$$
+$$\mathrm{Data Race} \iff \exists\, m, t_1, t_2 : \mathrm{access}(t_1, m, w) \wedge \mathrm{access}(t_2, m, r/w) \wedge \neg\mathrm{happens-before}(t_1, t_2) \wedge \neg\mathrm{happens-before}(t_2, t_1)$$
 
 where $m$ is a scalar memory location, $w$ denotes a write, $r$ denotes a read, and happens-before
 is the order relation defined in [N4950 §6.9.4.1].

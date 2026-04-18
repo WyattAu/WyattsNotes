@@ -71,7 +71,7 @@ Structure:
   chain
 - **Matrix:** Contains enzymes for the Krebs cycle, mitochondrial DNA, and ribosomes
 
-$$\text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \to 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{ATP}$$
+$$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2 \to 6\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O} + \mathrm{ATP}$$
 
 ### Endoplasmic Reticulum (ER)
 
@@ -124,7 +124,7 @@ Structure:
 - **Grana:** Stacks of thylakoids
 - **Stroma:** Fluid-filled space; site of the light-independent reactions (Calvin cycle)
 
-$$6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow{\text{light}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$$
+$$6\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{light}} \mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2$$
 
 ### Cell Membrane
 
@@ -146,7 +146,7 @@ The cell membrane (plasma membrane) is a phospholipid bilayer with embedded prot
 
 :::info
 The cell membrane is selectively permeable: it allows some substances to pass through freely
-but restricts others. Small, non-polar molecules (e.g., $\text{O}_2$, $\text{CO}_2$) diffuse through
+but restricts others. Small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$) diffuse through
 easily, while large or charged molecules require transport proteins.
 :::
 
@@ -161,7 +161,7 @@ easily, while large or charged molecules require transport proteins.
 Movement of molecules from a region of higher concentration to a region of lower concentration,
 directly through the phospholipid bilayer.
 
-- Only for small, non-polar molecules (e.g., $\text{O}_2$, $\text{CO}_2$, lipid-soluble substances)
+- Only for small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$, lipid-soluble substances)
 - Net movement stops at equilibrium (dynamic equilibrium)
 - Rate depends on: concentration gradient, temperature, surface area, distance
 
@@ -169,8 +169,8 @@ directly through the phospholipid bilayer.
 
 Movement of molecules down their concentration gradient through transport proteins.
 
-- **Channel proteins:** Form hydrophilic pores for specific ions (e.g., $\text{Na}^+$, $\text{K}^+$,
-  $\text{Ca}^{2+}$)
+- **Channel proteins:** Form hydrophilic pores for specific ions (e.g., $\mathrm{Na}^+$, $\mathrm{K}^+$,
+  $\mathrm{Ca}^{2+}$)
 - **Carrier proteins:** Bind to specific molecules, undergo conformational change, and release on
   the other side
 - Used for larger or polar molecules (e.g., glucose, amino acids, ions)
@@ -181,7 +181,7 @@ The movement of water molecules from a region of higher water potential to a reg
 potential, through a selectively permeable membrane.
 
 **Water potential** ($\Psi$) is measured in kilopascals (kPa). Pure water has
-$\Psi = 0 \text{ kPa}$. Adding solutes decreases water potential (makes it more negative).
+$\Psi = 0 \mathrm{ kPa}$. Adding solutes decreases water potential (makes it more negative).
 
 **Osmosis in animal cells:**
 
@@ -204,7 +204,7 @@ $\Psi = 0 \text{ kPa}$. Adding solutes decreases water potential (makes it more 
 Movement of molecules against their concentration gradient (from low to high concentration),
 requiring ATP and carrier proteins.
 
-- Specific to certain molecules (e.g., $\text{Na}^+/\text{K}^+$ pump, absorption of minerals by root
+- Specific to certain molecules (e.g., $\mathrm{Na}^+/\mathrm{K}^+$ pump, absorption of minerals by root
   hair cells)
 - Can become saturated at high concentrations (carrier proteins are limiting)
 - Inhibited by metabolic poisons (e.g., cyanide) that block ATP production
@@ -230,11 +230,11 @@ hormones, neurotransmitters).
 
 ### Carbohydrates
 
-General formula: $\text{C}_x(\text{H}_2\text{O})_y$
+General formula: $\mathrm{C}_x(\mathrm{H}_2\mathrm{O})_y$
 
 **Monosaccharides:**
 
-- Glucose ($\text{C}_6\text{H}_{12}\text{O}_6$): primary energy source
+- Glucose ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$): primary energy source
 - Fructose: found in fruits
 - Galactose: component of milk sugar
 - Ribose and deoxyribose: in RNA and DNA respectively
@@ -266,12 +266,12 @@ Proteins are polymers of amino acids.
 
 **Amino acid structure:**
 
-Each amino acid has an amino group ($\text{NH}_2$), a carboxyl group ($\text{COOH}$), a hydrogen
+Each amino acid has an amino group ($\mathrm{NH}_2$), a carboxyl group ($\mathrm{COOH}$), a hydrogen
 atom, and an R group (side chain), all bonded to a central carbon atom.
 
 **Peptide bond formation:**
 
-Amino acids join by condensation reactions, forming peptide bonds ($\text{-CO-NH-}$) and releasing
+Amino acids join by condensation reactions, forming peptide bonds ($\mathrm{-CO-NH-}$) and releasing
 water.
 
 - Dipeptide: 2 amino acids
@@ -367,7 +367,7 @@ fit. This lowers the activation energy of the reaction.
 
 - Rate increases with temperature (up to the optimum)
 - Beyond the optimum, the enzyme denatures (active site changes shape irreversibly)
-- Human enzymes: optimum around $37^\circ\text{C}$
+- Human enzymes: optimum around $37^\circ\mathrm{C}$
 
 **pH:**
 
@@ -393,18 +393,18 @@ conditions.
 
 ### Worked Example 1
 
-An enzyme has an optimum temperature of $40^\circ\text{C}$. At $20^\circ\text{C}$, the reaction rate
-is $0.3$ units/s. At $40^\circ\text{C}$, the rate is $1.2$ units/s. Calculate the Q10 (temperature
+An enzyme has an optimum temperature of $40^\circ\mathrm{C}$. At $20^\circ\mathrm{C}$, the reaction rate
+is $0.3$ units/s. At $40^\circ\mathrm{C}$, the rate is $1.2$ units/s. Calculate the Q10 (temperature
 coefficient).
 
-$$Q_{10} = \frac{\text{Rate at }(T + 10)}{\text{Rate at } T}$$
+$$Q_{10} = \frac{\mathrm{Rate at }(T + 10)}{\mathrm{Rate at } T}$$
 
-Between $20^\circ\text{C}$ and $30^\circ\text{C}$: $Q_{10}$ might be approximately 2 (typical for
-biological reactions). Without the $30^\circ\text{C}$ data, we can estimate the overall effect:
+Between $20^\circ\mathrm{C}$ and $30^\circ\mathrm{C}$: $Q_{10}$ might be approximately 2 (typical for
+biological reactions). Without the $30^\circ\mathrm{C}$ data, we can estimate the overall effect:
 
-From $20^\circ\text{C}$ to $40^\circ\text{C}$ (a $20^\circ\text{C}$ increase):
+From $20^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$ (a $20^\circ\mathrm{C}$ increase):
 
-$$\text{Rate increase factor} = \frac{1.2}{0.3} = 4$$
+$$\mathrm{Rate increase factor} = \frac{1.2}{0.3} = 4$$
 
 This is consistent with $Q_{10} \approx 2$ (since $2^2 = 4$).
 
@@ -438,13 +438,13 @@ This is consistent with $Q_{10} \approx 2$ (since $2^2 = 4$).
 ### Link Reaction (Mitochondrial Matrix)
 
 - Pyruvate (3C) is decarboxylated and dehydrogenated
-- Forms acetyl CoA (2C) + $\text{CO}_2$ + NADH
+- Forms acetyl CoA (2C) + $\mathrm{CO}_2$ + NADH
 
 ### Krebs Cycle (Mitochondrial Matrix)
 
 For each glucose molecule (two turns of the cycle):
 
-- 2 $\text{CO}_2$ released
+- 2 $\mathrm{CO}_2$ released
 - 3 NADH produced per turn (6 total)
 - 1 FADH$_2$ produced per turn (2 total)
 - 1 ATP produced per turn (2 total)
@@ -479,30 +479,30 @@ glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 A
 ### Light-Dependent Reactions (Thylakoid Membrane)
 
 1. Light energy is absorbed by chlorophyll in Photosystem II
-2. Water is split (photolysis): $\text{H}_2\text{O} \to 2\text{H}^+ + 2e^- + \frac{1}{2}\text{O}_2$
+2. Water is split (photolysis): $\mathrm{H}_2\mathrm{O} \to 2\mathrm{H}^+ + 2e^- + \frac{1}{2}\mathrm{O}_2$
 3. Electrons pass through the electron transport chain, generating ATP
 4. Light is absorbed by Photosystem I; electrons are re-energised
 5. Electrons reduce NADP$^+$ to NADPH
 
-Products: ATP, NADPH, $\text{O}_2$
+Products: ATP, NADPH, $\mathrm{O}_2$
 
 ### Light-Independent Reactions / Calvin Cycle (Stroma)
 
-1. $\text{CO}_2$ is fixed by ribulose bisphosphate (RuBP, 5C) using the enzyme RuBisCO
+1. $\mathrm{CO}_2$ is fixed by ribulose bisphosphate (RuBP, 5C) using the enzyme RuBisCO
 2. Forms an unstable 6C compound that splits into two molecules of glycerate-3-phosphate (GP, 3C)
 3. GP is reduced to triose phosphate (TP, 3C) using ATP and NADPH
 4. Some TP is used to make glucose and other organic compounds
 5. Most TP is used to regenerate RuBP (uses ATP)
 
-For every 3 $\text{CO}_2$ molecules fixed: 1 molecule of triose phosphate (3C) is produced. It takes
-6 $\text{CO}_2$ molecules to produce 1 molecule of glucose (6C).
+For every 3 $\mathrm{CO}_2$ molecules fixed: 1 molecule of triose phosphate (3C) is produced. It takes
+6 $\mathrm{CO}_2$ molecules to produce 1 molecule of glucose (6C).
 
 ### Limiting Factors in Photosynthesis
 
 | Factor                      | Effect                                                             |
 | --------------------------- | ------------------------------------------------------------------ |
 | Light intensity             | Increases rate up to a plateau (light saturation point)            |
-| $\text{CO}_2$ concentration | Increases rate up to a plateau                                     |
+| $\mathrm{CO}_2$ concentration | Increases rate up to a plateau                                     |
 | Temperature                 | Increases rate up to optimum, then decreases (enzyme denaturation) |
 
 ---
@@ -545,9 +545,9 @@ maintains fluidity. Glycoproteins on the surface enable cell recognition. The fl
 vesicle formation (endocytosis/exocytosis).
 
 **Question 2:** Explain the effect of increasing temperature on enzyme activity from
-$0^\circ\text{C}$ to $60^\circ\text{C}$.
+$0^\circ\mathrm{C}$ to $60^\circ\mathrm{C}$.
 
-From $0^\circ\text{C}$ to the optimum (approximately $37-40^\circ\text{C}$): increasing temperature
+From $0^\circ\mathrm{C}$ to the optimum (approximately $37-40^\circ\mathrm{C}$): increasing temperature
 increases kinetic energy, leading to more frequent collisions between enzyme and substrate
 molecules, increasing the rate of reaction. Beyond the optimum temperature, the increased kinetic
 energy breaks the bonds maintaining the tertiary structure of the enzyme, causing the active site to
@@ -559,9 +559,9 @@ sharply.
 Similarities: Both begin with glycolysis; both produce ATP.
 
 Differences: Aerobic respiration requires oxygen and occurs in the mitochondria, producing
-approximately 36-38 ATP per glucose with $\text{CO}_2$ and $\text{H}_2\text{O}$ as by-products.
+approximately 36-38 ATP per glucose with $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$ as by-products.
 Anaerobic respiration occurs without oxygen, only in the cytoplasm, producing 2 ATP per glucose. In
-animals, it produces lactate; in yeast, it produces ethanol and $\text{CO}_2$.
+animals, it produces lactate; in yeast, it produces ethanol and $\mathrm{CO}_2$.
 
 </details>
 
@@ -841,7 +841,7 @@ When a ligand binds to a cell-surface receptor, it triggers a cascade of intrace
 1. **Signal reception:** The ligand binds to the receptor
 2. **Signal transduction:** The signal is relayed inside the cell, often involving:
    - **G-proteins:** Activate or inhibit enzymes
-   - **Second messengers:** Small molecules that amplify the signal (e.g., cAMP, $\text{Ca}^{2+}$)
+   - **Second messengers:** Small molecules that amplify the signal (e.g., cAMP, $\mathrm{Ca}^{2+}$)
    - **Enzyme cascades:** Kinase cascades that phosphorylate target proteins
 3. **Cellular response:** The cell changes its activity (e.g., gene expression, metabolism,
    secretion)
@@ -975,26 +975,26 @@ Where:
 
 - $i$ = ionisation constant (number of particles per molecule)
 - $C$ = molar concentration
-- $R$ = gas constant ($8.314 \text{ J mol}^{-1} \text{ K}^{-1}$)
+- $R$ = gas constant ($8.314 \mathrm{ J mol}^{-1} \mathrm{ K}^{-1}$)
 - $T$ = temperature in Kelvin
 
 ### Worked Example 4 (Water Potential)
 
-Calculate the water potential of a $0.3 \text{ mol/dm}^3$ sucrose solution at $25^\circ\text{C}$.
+Calculate the water potential of a $0.3 \mathrm{ mol/dm}^3$ sucrose solution at $25^\circ\mathrm{C}$.
 ($i = 1$ for sucrose)
 
-$$\Psi_s = -iCRT = -(1)(0.3)(8.314)(298) = -743.3 \text{ kPa}$$
+$$\Psi_s = -iCRT = -(1)(0.3)(8.314)(298) = -743.3 \mathrm{ kPa}$$
 
-Since there is no pressure: $\Psi = -743.3 \text{ kPa}$
+Since there is no pressure: $\Psi = -743.3 \mathrm{ kPa}$
 
 ### Worked Example 5 (Water Potential)
 
-Calculate the water potential of a $0.2 \text{ mol/dm}^3$ $\text{NaCl}$ solution at
-$20^\circ\text{C}$. ($i = 2$ for $\text{NaCl}$)
+Calculate the water potential of a $0.2 \mathrm{ mol/dm}^3$ $\mathrm{NaCl}$ solution at
+$20^\circ\mathrm{C}$. ($i = 2$ for $\mathrm{NaCl}$)
 
-$$\Psi_s = -(2)(0.2)(8.314)(293) = -974.4 \text{ kPa}$$
+$$\Psi_s = -(2)(0.2)(8.314)(293) = -974.4 \mathrm{ kPa}$$
 
-$\Psi = -974.0 \text{ kPa}$
+$\Psi = -974.0 \mathrm{ kPa}$
 
 :::
 

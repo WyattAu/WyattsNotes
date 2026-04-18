@@ -26,12 +26,12 @@ Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2
 **Definition.** The **light-year** (ly) is the distance travelled by light in a vacuum in one Julian
 year:
 
-$$1\;\text{ly} = c \times 1\;\text{year} = 3.00 \times 10^8 \times 3.156 \times 10^7 = 9.46 \times 10^{15}\;\text{m}$$
+$$1\;\mathrm{ly} = c \times 1\;\mathrm{year} = 3.00 \times 10^8 \times 3.156 \times 10^7 = 9.46 \times 10^{15}\;\mathrm{m}$$
 
 **Definition.** The **parsec** (pc) is the distance at which one astronomical unit subtends an angle
 of one arcsecond:
 
-$$1\;\text{pc} = \frac{1\;\text{AU}}{\tan(1'')} \approx \frac{1.50 \times 10^{11}}{4.848 \times 10^{-6}} = 3.09 \times 10^{16}\;\text{m}$$
+$$1\;\mathrm{pc} = \frac{1\;\mathrm{AU}}{\tan(1'')} \approx \frac{1.50 \times 10^{11}}{4.848 \times 10^{-6}} = 3.09 \times 10^{16}\;\mathrm{m}$$
 
 **Key conversions:**
 
@@ -49,24 +49,24 @@ distant stars. This apparent angular displacement is called **stellar parallax**
 ### Proof of the Parallax Formula
 
 Consider a nearby star at distance $d$ from the Sun. As Earth moves from one side of its orbit to
-the other (separation $2\;\text{AU}$), the star appears to shift by an angle $2p$, where $p$ is the
+the other (separation $2\;\mathrm{AU}$), the star appears to shift by an angle $2p$, where $p$ is the
 **parallax angle** measured in arcseconds.
 
 For small angles, $\tan p \approx p$ (in radians):
 
-$$\tan p = \frac{1\;\text{AU}}{d} \approx p$$
+$$\tan p = \frac{1\;\mathrm{AU}}{d} \approx p$$
 
 Converting $p$ from arcseconds to radians:
 
-$$p\;(\text{rad}) = p\;('') \times \frac{\pi}{648,000} = \frac{p\;('')}{206,265}$$
+$$p\;(\mathrm{rad}) = p\;('') \times \frac{\pi}{648,000} = \frac{p\;('')}{206,265}$$
 
 Therefore:
 
-$$d = \frac{1\;\text{AU}}{p\;(\text{rad})} = \frac{206,265\;\text{AU}}{p\;('')}$$
+$$d = \frac{1\;\mathrm{AU}}{p\;(\mathrm{rad})} = \frac{206,265\;\mathrm{AU}}{p\;('')}$$
 
 By definition, when $p = 1''$, $d = 1$ pc $= 206,265$ AU. Hence:
 
-$$\boxed{d\;(\text{pc}) = \frac{1}{p\;('')}}$$
+$$\boxed{d\;(\mathrm{pc}) = \frac{1}{p\;('')}}$$
 
 $\square$
 
@@ -158,7 +158,7 @@ this is why giants and supergiants occupy the upper-right region of the H-R diag
 The wavelength at which a black body emits maximum radiation is inversely proportional to its
 temperature:
 
-$$\boxed{\lambda_{\max} T = 2.898 \times 10^{-3}\;\text{m K}}$$
+$$\boxed{\lambda_{\max} T = 2.898 \times 10^{-3}\;\mathrm{m K}}$$
 
 where $\lambda_{\max}$ is in metres and $T$ is in kelvin.
 
@@ -190,7 +190,7 @@ Stars form from the gravitational collapse of regions within **nebulae** --- vas
 (mostly hydrogen) and dust. For a cloud to collapse under its own gravity, its gravitational
 potential energy must exceed the thermal kinetic energy of the gas:
 
-$$|E_{\text{grav}}| \gt E_{\text{thermal}}$$
+$$|E_{\mathrm{grav}}| \gt E_{\mathrm{thermal}}$$
 
 When this condition is met, the cloud fragment collapses and heats up. Conservation of angular
 momentum causes it to spin faster and flatten into a protoplanetary disk. The core temperature rises
@@ -220,7 +220,7 @@ Two fusion processes convert hydrogen to helium:
 1. **Proton--proton (pp) chain** --- dominant in stars with $T \lt 1.5 \times 10^7$ K (like the
    Sun):
 
-   $$4\,{}^{1}\text{H} \rightarrow {}^{4}\text{He} + 2e^+ + 2\nu_e + 2\gamma$$
+   $$4\,{}^{1}\mathrm{H} \rightarrow {}^{4}\mathrm{He} + 2e^+ + 2\nu_e + 2\gamma$$
 
    Energy released per reaction: $\sim 26.7$ MeV.
 
@@ -240,7 +240,7 @@ and therefore exhausts its fuel much faster. More massive stars have **shorter**
 1. **Main sequence** --- hydrogen fuses to helium in the core ($\sim 10^{10}$ years for solar-mass
    stars).
 2. **Red giant** --- hydrogen shell burning causes the envelope to expand and cool. A helium flash
-   ignites helium fusion in the core (${}^{4}\text{He}$ to ${}^{12}\text{C}$ and ${}^{16}\text{O}$).
+   ignites helium fusion in the core (${}^{4}\mathrm{He}$ to ${}^{12}\mathrm{C}$ and ${}^{16}\mathrm{O}$).
 3. **Planetary nebula** --- the outer layers are gently ejected, exposing the hot core.
 4. **White dwarf** --- the remaining core (typically $\sim 0.6\;M_\odot$), supported by **electron
    degeneracy pressure**. No fusion occurs; it slowly cools over billions of years.
@@ -348,14 +348,14 @@ speeds much less than the speed of light ($v \ll c$):
 
 $$\boxed{\frac{\Delta \lambda}{\lambda} = \frac{v}{c}}$$
 
-where $\Delta \lambda = \lambda_{\text{obs}} - \lambda_{\text{emit}}$ is the change in wavelength.
+where $\Delta \lambda = \lambda_{\mathrm{obs}} - \lambda_{\mathrm{emit}}$ is the change in wavelength.
 
 - **Redshift** ($\Delta \lambda \gt 0$): source receding from the observer
 - **Blueshift** ($\Delta \lambda \lt 0$): source approaching the observer
 
 For cosmological redshifts, the **redshift parameter** $z$ is defined as:
 
-$$z = \frac{\lambda_{\text{obs}} - \lambda_{\text{emit}}}{\lambda_{\text{emit}}}$$
+$$z = \frac{\lambda_{\mathrm{obs}} - \lambda_{\mathrm{emit}}}{\lambda_{\mathrm{emit}}}$$
 
 so that $\Delta \lambda / \lambda = z = v/c$ for $v \ll c$.
 
@@ -379,11 +379,11 @@ $$t_H = \frac{1}{H_0}$$
 
 With $H_0 = 70$ km s$^{-1}$ Mpc$^{-1}$:
 
-$$H_0 = \frac{70 \times 10^3\;\text{m s}^{-1}}{3.09 \times 10^{22}\;\text{m}} = 2.27 \times 10^{-18}\;\text{s}^{-1}$$
+$$H_0 = \frac{70 \times 10^3\;\mathrm{m s}^{-1}}{3.09 \times 10^{22}\;\mathrm{m}} = 2.27 \times 10^{-18}\;\mathrm{s}^{-1}$$
 
-$$t_H = \frac{1}{2.27 \times 10^{-18}} = 4.41 \times 10^{17}\;\text{s} \approx 14.0\;\text{billion years}$$
+$$t_H = \frac{1}{2.27 \times 10^{-18}} = 4.41 \times 10^{17}\;\mathrm{s} \approx 14.0\;\mathrm{billion years}$$
 
-$$\boxed{t_H \approx \frac{1}{H_0} \approx 14\;\text{Gyr}}$$
+$$\boxed{t_H \approx \frac{1}{H_0} \approx 14\;\mathrm{Gyr}}$$
 
 $\square$
 
@@ -420,7 +420,7 @@ Key properties:
 
 Using Wien's law to find the peak wavelength:
 
-$$\lambda_{\max} = \frac{2.898 \times 10^{-3}}{2.725} = 1.06 \times 10^{-3}\;\text{m} = 1.06\;\text{mm}$$
+$$\lambda_{\max} = \frac{2.898 \times 10^{-3}}{2.725} = 1.06 \times 10^{-3}\;\mathrm{m} = 1.06\;\mathrm{mm}$$
 
 This confirms the microwave nature of the CMB, which was initially detected as excess noise at a
 wavelength of 7.35 cm by Penzias and Wilson.
@@ -431,7 +431,7 @@ The expansion of the universe is not galaxies moving through space, but rather t
 space itself. This is described by the **scale factor** $a(t)$, where $a = 1$ today. As the universe
 expands, photon wavelengths are stretched, producing cosmological redshift:
 
-$$1 + z = \frac{a_{\text{now}}}{a_{\text{then}}}$$
+$$1 + z = \frac{a_{\mathrm{now}}}{a_{\mathrm{then}}}$$
 
 :::info
 Board-Specific
@@ -545,7 +545,7 @@ Large telescopes serve two fundamental purposes:
    the observation of fainter objects. The collecting power relative to the human eye (diameter
    $\sim 5$ mm) is:
 
-   $$\text{Collecting power ratio} = \left(\frac{D}{d_{\text{eye}}}\right)^2$$
+   $$\mathrm{Collecting power ratio} = \left(\frac{D}{d_{\mathrm{eye}}}\right)^2$$
 
 2. **Resolving power** --- proportional to $1/D$. A larger aperture gives smaller minimum angular
    resolution $\theta$, allowing finer detail to be distinguished.
@@ -620,7 +620,7 @@ From $b = L/(4\pi d^2)$:
 
 $$d^2 = \frac{L}{4\pi b} = \frac{5.0 \times 10^{29}}{4\pi \times 2.0 \times 10^{-8}} = \frac{5.0 \times 10^{29}}{2.513 \times 10^{-7}} = 1.99 \times 10^{36}$$
 
-$$d = \sqrt{1.99 \times 10^{36}} = 1.41 \times 10^{18}\;\text{m}$$
+$$d = \sqrt{1.99 \times 10^{36}} = 1.41 \times 10^{18}\;\mathrm{m}$$
 
 Converting to parsecs: $d = 1.41 \times 10^{18}/(3.09 \times 10^{16}) = 45.6$ pc.
 </details>
@@ -639,7 +639,7 @@ $(5800)^4 = 1.133 \times 10^{15}$ K$^4$
 
 $$r^2 = \frac{3.85 \times 10^{26}}{4\pi \times 5.67 \times 10^{-8} \times 1.133 \times 10^{15}} = \frac{3.85 \times 10^{26}}{8.07 \times 10^{8}} = 4.77 \times 10^{17}$$
 
-$$r = 6.91 \times 10^{8}\;\text{m} \approx 6.91 \times 10^{5}\;\text{km}$$
+$$r = 6.91 \times 10^{8}\;\mathrm{m} \approx 6.91 \times 10^{5}\;\mathrm{km}$$
 
 This matches the accepted solar radius of $6.96 \times 10^{8}$ m.
 </details>
@@ -652,7 +652,7 @@ emits maximum radiation. In which part of the electromagnetic spectrum does this
 
 Using Wien's displacement law:
 
-$$\lambda_{\max} = \frac{2.898 \times 10^{-3}}{T} = \frac{2.898 \times 10^{-3}}{12,000} = 2.42 \times 10^{-7}\;\text{m} = 242\;\text{nm}$$
+$$\lambda_{\max} = \frac{2.898 \times 10^{-3}}{T} = \frac{2.898 \times 10^{-3}}{12,000} = 2.42 \times 10^{-7}\;\mathrm{m} = 242\;\mathrm{nm}$$
 
 This is in the **ultraviolet** region. The star appears blue-white to the human eye, with most of
 its visible output at shorter (blue) wavelengths.
@@ -678,7 +678,7 @@ minimum angular resolution for light of wavelength $550$ nm. Express your answer
 
 Using the Rayleigh criterion:
 
-$$\theta = \frac{1.22\lambda}{D} = \frac{1.22 \times 550 \times 10^{-9}}{0.200} = 3.36 \times 10^{-6}\;\text{rad}$$
+$$\theta = \frac{1.22\lambda}{D} = \frac{1.22 \times 550 \times 10^{-9}}{0.200} = 3.36 \times 10^{-6}\;\mathrm{rad}$$
 
 Converting to arcseconds: $\theta = 3.36 \times 10^{-6} \times 206,265 = 0.69''$.
 </details>
@@ -700,7 +700,7 @@ $$\log_{10}\!\left(\frac{d}{10}\right) = 4.8$$
 
 $$\frac{d}{10} = 10^{4.8} = 6.31 \times 10^{4}$$
 
-$$d = 6.31 \times 10^{5}\;\text{pc} = 631\;\text{kpc}$$
+$$d = 6.31 \times 10^{5}\;\mathrm{pc} = 631\;\mathrm{kpc}$$
 </details>
 
 **Problem 8.** Calculate the Schwarzschild radius of a black hole with mass $10\;M_\odot$.
@@ -711,7 +711,7 @@ $$d = 6.31 \times 10^{5}\;\text{pc} = 631\;\text{kpc}$$
 
 $$r_s = \frac{2GM}{c^2} = \frac{2 \times 6.67 \times 10^{-11} \times 10 \times 1.99 \times 10^{30}}{(3.0 \times 10^8)^2}$$
 
-$$r_s = \frac{2.653 \times 10^{21}}{9.0 \times 10^{16}} = 2.95 \times 10^{4}\;\text{m} \approx 29.5\;\text{km}$$
+$$r_s = \frac{2.653 \times 10^{21}}{9.0 \times 10^{16}} = 2.95 \times 10^{4}\;\mathrm{m} \approx 29.5\;\mathrm{km}$$
 
 This is comparable to the size of a large city, containing ten times the mass of the Sun.
 </details>
@@ -743,13 +743,13 @@ satellite value).
 
 Convert $H_0$ to SI units:
 
-$$H_0 = \frac{67.4 \times 10^{3}}{3.09 \times 10^{22}} = 2.181 \times 10^{-18}\;\text{s}^{-1}$$
+$$H_0 = \frac{67.4 \times 10^{3}}{3.09 \times 10^{22}} = 2.181 \times 10^{-18}\;\mathrm{s}^{-1}$$
 
-$$t_H = \frac{1}{H_0} = \frac{1}{2.181 \times 10^{-18}} = 4.585 \times 10^{17}\;\text{s}$$
+$$t_H = \frac{1}{H_0} = \frac{1}{2.181 \times 10^{-18}} = 4.585 \times 10^{17}\;\mathrm{s}$$
 
 Converting to years:
 
-$$t_H = \frac{4.585 \times 10^{17}}{3.156 \times 10^7} = 1.453 \times 10^{10}\;\text{years} \approx 14.5\;\text{Gyr}$$
+$$t_H = \frac{4.585 \times 10^{17}}{3.156 \times 10^7} = 1.453 \times 10^{10}\;\mathrm{years} \approx 14.5\;\mathrm{Gyr}$$
 
 This is a reasonable estimate of the age of the universe. The accepted value from the Planck data is
 $\sim 13.8$ Gyr; the difference arises because the expansion rate has not been constant.
@@ -764,15 +764,15 @@ operating at $\lambda = 550$ nm. Give the ratio of their minimum resolvable angl
 
 Radio telescope:
 
-$$\theta_{\text{radio}} = \frac{1.22 \times 0.21}{30} = 8.54 \times 10^{-3}\;\text{rad} \approx 29.3'$$
+$$\theta_{\mathrm{radio}} = \frac{1.22 \times 0.21}{30} = 8.54 \times 10^{-3}\;\mathrm{rad} \approx 29.3'$$
 
 Optical telescope:
 
-$$\theta_{\text{optical}} = \frac{1.22 \times 550 \times 10^{-9}}{1.0} = 6.71 \times 10^{-7}\;\text{rad} \approx 0.14''$$
+$$\theta_{\mathrm{optical}} = \frac{1.22 \times 550 \times 10^{-9}}{1.0} = 6.71 \times 10^{-7}\;\mathrm{rad} \approx 0.14''$$
 
 Ratio:
 
-$$\frac{\theta_{\text{radio}}}{\theta_{\text{optical}}} = \frac{8.54 \times 10^{-3}}{6.71 \times 10^{-7}} \approx 12,700$$
+$$\frac{\theta_{\mathrm{radio}}}{\theta_{\mathrm{optical}}} = \frac{8.54 \times 10^{-3}}{6.71 \times 10^{-7}} \approx 12,700$$
 
 The optical telescope resolves about 12,700 times finer detail despite its much smaller aperture,
 because the resolving power depends on $\lambda/D$ and the radio wavelength is $\sim 400,000$ times
@@ -790,7 +790,7 @@ From $b = L/(4\pi d^2)$:
 
 $$d^2 = \frac{L}{4\pi b} = \frac{1.0 \times 10^{36}}{4\pi \times 3.2 \times 10^{-15}} = \frac{1.0 \times 10^{36}}{4.02 \times 10^{-14}} = 2.49 \times 10^{49}$$
 
-$$d = 4.99 \times 10^{24}\;\text{m}$$
+$$d = 4.99 \times 10^{24}\;\mathrm{m}$$
 
 Converting to megaparsecs: $d = 4.99 \times 10^{24}/(3.09 \times 10^{22}) = 161$ Mpc.
 </details>

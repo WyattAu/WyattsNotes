@@ -65,13 +65,13 @@ Some derived units have special names:
 
 | Derived Quantity | Name    | Symbol   | In Base Units                             |
 | ---------------- | ------- | -------- | ----------------------------------------- |
-| Force            | newton  | N        | $\text{kg m s}^{-2}$                      |
-| Energy           | joule   | J        | $\text{kg m}^2\text{s}^{-2}$              |
-| Power            | watt    | W        | $\text{kg m}^2\text{s}^{-3}$              |
-| Pressure         | pascal  | Pa       | $\text{kg m}^{-1}\text{s}^{-2}$           |
-| Charge           | coulomb | C        | $\text{A s}$                              |
-| Voltage          | volt    | V        | $\text{kg m}^2\text{s}^{-3}\text{A}^{-1}$ |
-| Resistance       | ohm     | $\Omega$ | $\text{kg m}^2\text{s}^{-3}\text{A}^{-2}$ |
+| Force            | newton  | N        | $\mathrm{kg m s}^{-2}$                      |
+| Energy           | joule   | J        | $\mathrm{kg m}^2\mathrm{s}^{-2}$              |
+| Power            | watt    | W        | $\mathrm{kg m}^2\mathrm{s}^{-3}$              |
+| Pressure         | pascal  | Pa       | $\mathrm{kg m}^{-1}\mathrm{s}^{-2}$           |
+| Charge           | coulomb | C        | $\mathrm{A s}$                              |
+| Voltage          | volt    | V        | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-1}$ |
+| Resistance       | ohm     | $\Omega$ | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-2}$ |
 
 ## 2. Dimensional Analysis
 
@@ -238,10 +238,10 @@ If $z = x^n$, then:
 
 $$\frac{\Delta z}{z} = |n| \cdot \frac{\Delta x}{x}$$
 
-**Derivation.** Write $z = \underbrace{x \cdot x \cdots x}_{n \text{ times}}$. Applying the
+**Derivation.** Write $z = \underbrace{x \cdot x \cdots x}_{n \mathrm{ times}}$. Applying the
 multiplication rule repeatedly:
 
-$$\frac{\Delta z}{z} = \underbrace{\frac{\Delta x}{x} + \frac{\Delta x}{x} + \cdots + \frac{\Delta x}{x}}_{n \text{ terms}} = n \cdot \frac{\Delta x}{x}$$
+$$\frac{\Delta z}{z} = \underbrace{\frac{\Delta x}{x} + \frac{\Delta x}{x} + \cdots + \frac{\Delta x}{x}}_{n \mathrm{ terms}} = n \cdot \frac{\Delta x}{x}$$
 
 For negative or fractional powers, the result generalises via logarithmic differentiation (see
 [01-wave-properties](../waves/01-wave-properties.md) for the general propagation of error formula).
@@ -269,7 +269,7 @@ and the uncertainty should be quoted to at most 2 significant figures.
 trailing zero implies precision we do not have.
 
 :::tip
-Exam Technique When you compute $g = 9.78 \pm 0.15 \text{ m s}^{-2}$, write $9.8 \pm 0.2$ m
+Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$, write $9.8 \pm 0.2$ m
 s$^{-2}$ (round the uncertainty to 1 s.f. and match the result). This is what examiners expect.
 :::
 
@@ -295,7 +295,7 @@ the error bars).
 
 The uncertainty in the gradient is:
 
-$$\Delta m = \frac{|m_{\text{best}} - m_{\text{worst}}|}{2}$$
+$$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
 
 A similar procedure applies to the $y$-intercept.
 
@@ -318,7 +318,7 @@ $2.07 - 2.03 = 0.04$ cm, so $\Delta d = 0.02$ cm. Result: $d = 2.05 \pm 0.02$ cm
 The kinetic energy of a particle is given by $E_k = \frac{1}{2}mv^2$. Show that this expression is dimensionally consistent with the definition of work $W = Fd$.
 
 **Answer.**
-$[E_k] = [\text{mass}][\text{velocity}]^2 = \mathsf{M}(\mathsf{L}\mathsf{T}^{-1})^2 = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
+$[E_k] = [\mathrm{mass}][\mathrm{velocity}]^2 = \mathsf{M}(\mathsf{L}\mathsf{T}^{-1})^2 = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
 Meanwhile
 $[W] = [F][d] = (\mathsf{M}\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
 The dimensions match. $\square$
@@ -388,7 +388,7 @@ $\theta = \arctan(9/1) = 83.7^\circ$ above the positive $x$-axis.
 A student proposes the formula for the period of a mass on a spring: $T = 2\pi\sqrt{\frac{k}{m}}$, where $k$ is the spring constant and $m$ is the mass. Use dimensional analysis to show this formula is incorrect, and find the correct form.
 
 **Answer.** $[T] = \mathsf{T}$.
-$[k/m] = \frac{[\text{force}]/[\text{displacement}]}{[\text{mass}]} = \frac{\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}}{\mathsf{M}} = \mathsf{T}^{-2}$.
+$[k/m] = \frac{[\mathrm{force}]/[\mathrm{displacement}]}{[\mathrm{mass}]} = \frac{\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}}{\mathsf{M}} = \mathsf{T}^{-2}$.
 So $[\sqrt{k/m}] = \mathsf{T}^{-1} \neq \mathsf{T}$. The formula is dimensionally wrong. The correct
 form is $T = 2\pi\sqrt{\frac{m}{k}}$, which gives
 $[\sqrt{m/k}] = \sqrt{\frac{\mathsf{M}}{\mathsf{T}^{-2}}} = \mathsf{T}$. $\square$
@@ -508,7 +508,7 @@ the molar gas constant with units J mol$^{-1}$ K$^{-1}$.
 **Answer.**
 $[PV] = (\mathsf{M}\mathsf{L}^{-1}\mathsf{T}^{-2})(\mathsf{L}^3) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
 
-$[nRT] = (\text{mol})(\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}\text{ mol}^{-1}\mathsf{\Theta}^{-1})(\mathsf{\Theta}) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
+$[nRT] = (\mathrm{mol})(\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}\mathrm{ mol}^{-1}\mathsf{\Theta}^{-1})(\mathsf{\Theta}) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
 
 Both sides have dimensions $\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$, so the equation is dimensionally
 consistent. $\square$
@@ -681,7 +681,7 @@ $[G] = \mathsf{L}^3\mathsf{M}^{-1}\mathsf{T}^{-2}$. In SI units: m$^3$ kg$^{-1}$
 A student proposes the formula for the frequency of a mass-spring system: $f = \frac{1}{2\pi}\sqrt{\frac{m}{k}}$, where $k$ is the spring constant. Use dimensional analysis to determine whether this formula is correct.
 
 **Answer.** $[f] = \mathsf{T}^{-1}$.
-$[m/k] = \frac{\mathsf{M}}{[\text{force}]/[\text{displacement}]} = \frac{\mathsf{M}}{\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}} = \frac{\mathsf{M}}{\mathsf{M}\mathsf{T}^{-2}} = \mathsf{T}^2$.
+$[m/k] = \frac{\mathsf{M}}{[\mathrm{force}]/[\mathrm{displacement}]} = \frac{\mathsf{M}}{\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}} = \frac{\mathsf{M}}{\mathsf{M}\mathsf{T}^{-2}} = \mathsf{T}^2$.
 
 $[\sqrt{m/k}] = \mathsf{T} \neq \mathsf{T}^{-1}$. The formula is incorrect. The correct form is
 $f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$, giving $[\sqrt{k/m}] = \mathsf{T}^{-1} = [f]$. $\square$
@@ -720,10 +720,10 @@ $[2as] = (\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}) = \mathsf{L}^2\mathsf{T}^{-2}$.
 $\square$
 
 For $\mathsf{M}^{1/2}\mathsf{L}^{3/2}\mathsf{T}^{-1}$:
-$\sqrt{\text{kg}} \cdot \text{m}^{3/2} \cdot \text{s}^{-1}$. An example is $\sqrt{G} \cdot M / r$
+$\sqrt{\mathrm{kg}} \cdot \mathrm{m}^{3/2} \cdot \mathrm{s}^{-1}$. An example is $\sqrt{G} \cdot M / r$
 where $G$ has units m$^3$ kg$^{-1}$ s$^{-2}$, giving
-$[\sqrt{G}] = \text{m}^{3/2}\text{ kg}^{-1/2}\text{ s}^{-1}$ and
-$[\sqrt{G} \cdot M] = \text{m}^{3/2}\text{ kg}^{1/2}\text{ s}^{-1}$.
+$[\sqrt{G}] = \mathrm{m}^{3/2}\mathrm{ kg}^{-1/2}\mathrm{ s}^{-1}$ and
+$[\sqrt{G} \cdot M] = \mathrm{m}^{3/2}\mathrm{ kg}^{1/2}\mathrm{ s}^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
 

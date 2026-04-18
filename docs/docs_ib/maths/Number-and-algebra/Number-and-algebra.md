@@ -36,8 +36,8 @@ The vertical bar is read "such that."
 
 Let $A$ and $B$ be subsets of a universal set $U$.
 
-- **Union:** $A \cup B = \{x \in U \mid x \in A \text{ or } x \in B\}$
-- **Intersection:** $A \cap B = \{x \in U \mid x \in A \text{ and } x \in B\}$
+- **Union:** $A \cup B = \{x \in U \mid x \in A \mathrm{ or } x \in B\}$
+- **Intersection:** $A \cap B = \{x \in U \mid x \in A \mathrm{ and } x \in B\}$
 - **Complement:** $A' = \{x \in U \mid x \notin A\}$
 - **Set difference:** $A \setminus B = \{x \in A \mid x \notin B\}$
 
@@ -160,7 +160,7 @@ _Injective?_ No. $f(1) = f(-1) = 1$, so distinct inputs map to the same output. 
 even function.)
 
 _Surjective?_ No. There is no $x \in \mathbb{R}$ such that $f(x) = -1$, so
-$-1 \notin \text{range}(f)$.
+$-1 \notin \mathrm{range}(f)$.
 
 The range is $[0, \infty)$, a proper subset of $\mathbb{R}$.
 
@@ -184,7 +184,7 @@ Therefore $f$ is bijective.
 
 If $f: X \to Y$ is bijective, the **inverse function** $f^{-1}: Y \to X$ exists and satisfies:
 
-$$f^{-1}(f(x)) = x \quad \text{for all } x \in X, \qquad f(f^{-1}(y)) = y \quad \text{for all } y \in Y$$
+$$f^{-1}(f(x)) = x \quad \mathrm{for all } x \in X, \qquad f(f^{-1}(y)) = y \quad \mathrm{for all } y \in Y$$
 
 To find $f^{-1}$: write $y = f(x)$, solve for $x$ in terms of $y$, then interchange $x$ and $y$.
 
@@ -276,15 +276,15 @@ $\frac{1}{2} \times 10^{-d}$ where $d$ is the number of decimal places.
 <details>
 <summary>Worked example: Bounds</summary>
 
-The sides of a rectangle are measured as $5.2\,\text{cm}$ and $3.8\,\text{cm}$ (each to 1 d.p.).
+The sides of a rectangle are measured as $5.2\,\mathrm{cm}$ and $3.8\,\mathrm{cm}$ (each to 1 d.p.).
 
 Upper bounds: $5.25$ and $3.85$. Lower bounds: $5.15$ and $3.75$.
 
-Maximum area: $5.25 \times 3.85 = 20.2125\,\text{cm}^2$.
+Maximum area: $5.25 \times 3.85 = 20.2125\,\mathrm{cm}^2$.
 
-Minimum area: $5.15 \times 3.75 = 19.3125\,\text{cm}^2$.
+Minimum area: $5.15 \times 3.75 = 19.3125\,\mathrm{cm}^2$.
 
-The area is $19.8\,\text{cm}^2 \pm 0.45\,\text{cm}^2$ (to 1 d.p.), but in bounds form we write
+The area is $19.8\,\mathrm{cm}^2 \pm 0.45\,\mathrm{cm}^2$ (to 1 d.p.), but in bounds form we write
 $19.3125 \le A \lt 20.2125$.
 
 </details>
@@ -792,7 +792,7 @@ Therefore $f$ is surjective but not injective.
 <details>
 <summary>Problem 3: Scientific notation and error</summary>
 
-The speed of light is measured as $3.00 \times 10^8\,\text{m/s}$ to 3 s.f. Find the absolute and
+The speed of light is measured as $3.00 \times 10^8\,\mathrm{m/s}$ to 3 s.f. Find the absolute and
 relative error.
 
 **Solution.**
@@ -800,7 +800,7 @@ relative error.
 Upper bound: $3.005 \times 10^8$. Lower bound: $2.995 \times 10^8$.
 
 Maximum absolute error:
-$\frac{1}{2} \times 10^{8-2} = 0.005 \times 10^8 = 5 \times 10^5\,\text{m/s}$.
+$\frac{1}{2} \times 10^{8-2} = 0.005 \times 10^8 = 5 \times 10^5\,\mathrm{m/s}$.
 
 Relative error:
 $\frac{5 \times 10^5}{3.00 \times 10^8} = \frac{5}{300} = \frac{1}{60} \approx 0.0167$ (about
@@ -859,7 +859,7 @@ Solve for $x$: $\log_3(x - 1) + \log_3(x + 1) = \log_3 8$.
 
 By the product rule: $\log_3\!\big((x-1)(x+1)\big) = \log_3 8$
 
-$(x-1)(x+1) = 8 \implies x^2 - 1 = 8 \implies x^2 = 9 \implies x = 3 \text{ or } x = -3$
+$(x-1)(x+1) = 8 \implies x^2 - 1 = 8 \implies x^2 = 9 \implies x = 3 \mathrm{ or } x = -3$
 
 Domain check: $x - 1 \gt 0 \implies x \gt 1$. So $x = -3$ is rejected.
 

@@ -240,7 +240,7 @@ $$E = Pt = VIt = I^2Rt = \frac{V^2t}{R}$$
 
 The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour (kWh) is used:
 
-$$1 \text{ kWh} = 1000 \text{ W} \times 3600 \text{ s} = 3.6 \times 10^6 \text{ J}$$
+$$1 \mathrm{ kWh} = 1000 \mathrm{ W} \times 3600 \mathrm{ s} = 3.6 \times 10^6 \mathrm{ J}$$
 
 :::tip
 Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
@@ -539,11 +539,11 @@ $$I = \frac{P}{V}$$
 
 The power dissipated as heat in the cables is:
 
-$$P_{\text{loss}} = I^2R = \left(\frac{P}{V}\right)^2 R$$
+$$P_{\mathrm{loss}} = I^2R = \left(\frac{P}{V}\right)^2 R$$
 
 **Proof that doubling the voltage quarters the loss.** If $V \to 2V$:
 
-$$P_{\text{loss}}' = \left(\frac{P}{2V}\right)^2 R = \frac{1}{4} \cdot \frac{P^2}{V^2}R = \frac{P_{\text{loss}}}{4}$$
+$$P_{\mathrm{loss}}' = \left(\frac{P}{2V}\right)^2 R = \frac{1}{4} \cdot \frac{P^2}{V^2}R = \frac{P_{\mathrm{loss}}}{4}$$
 
 $\square$
 
@@ -576,13 +576,13 @@ $\Omega$.
 
 At 10 kV: $I = P/V = 100 \times 10^6 / (10 \times 10^3) = 10{,}000$ A.
 
-$P_{\text{loss}} = I^2R = (10{,}000)^2 \times 5.4 = 5.4 \times 10^8$ W $= 540$ MW.
+$P_{\mathrm{loss}} = I^2R = (10{,}000)^2 \times 5.4 = 5.4 \times 10^8$ W $= 540$ MW.
 
 This exceeds the total power being transmitted! Clearly 10 kV is impractical.
 
 At 400 kV: $I = 100 \times 10^6 / (400 \times 10^3) = 250$ A.
 
-$P_{\text{loss}} = (250)^2 \times 5.4 = 3.375 \times 10^5$ W $= 338$ kW.
+$P_{\mathrm{loss}} = (250)^2 \times 5.4 = 3.375 \times 10^5$ W $= 338$ kW.
 
 Percentage loss $= 338{,}000 / 100{,}000{,}000 = 0.34\%$.
 
@@ -658,7 +658,7 @@ power dissipated, (c) the energy transferred in 10 minutes.
 A nichrome wire has resistance 8.0 $\Omega$ at $20^\circ\mathrm{C}$. The wire is stretched to twice its original
 length. What is its new resistance? (Assume the volume remains constant.)
 
-**Answer.** If $L \to 2L$ and volume $AL = \text{const}$, then $A \to A/2$.
+**Answer.** If $L \to 2L$ and volume $AL = \mathrm{const}$, then $A \to A/2$.
 
 $R' = \frac{\rho(2L)}{A/2} = \frac{4\rho L}{A} = 4R = 32$ $\Omega$.
 
@@ -712,7 +712,7 @@ gradient $= \rho/A = 5.0$. $\rho = 5.0 \times 1.26 \times 10^{-7} = 6.3 \times 1
 Two resistors of 6 $\Omega$ and 3 $\Omega$ are connected in series across a 9 V battery. Calculate
 the current and the power dissipated in each resistor.
 
-**Answer.** Total resistance $R_{\text{total}} = 6 + 3 = 9$ $\Omega$. Current $I = V/R = 9/9 = 1.0$
+**Answer.** Total resistance $R_{\mathrm{total}} = 6 + 3 = 9$ $\Omega$. Current $I = V/R = 9/9 = 1.0$
 A.
 
 Power in 6 $\Omega$: $P = I^2R = 1^2 \times 6 = 6$ W.
@@ -729,10 +729,10 @@ A thermistor has resistance 2000 $\Omega$ at $20^\circ\mathrm{C}$ and 400 $\Omeg
 series with a 500 $\Omega$ fixed resistor and a 6.0 V battery. Calculate the p.d. across the
 thermistor at each temperature.
 
-**Answer.** At $20^\circ\mathrm{C}$: $R_{\text{total}} = 2000 + 500 = 2500$ $\Omega$.
+**Answer.** At $20^\circ\mathrm{C}$: $R_{\mathrm{total}} = 2000 + 500 = 2500$ $\Omega$.
 $V_T = \frac{2000}{2500} \times 6.0 = 4.80$ V.
 
-At $80^\circ\mathrm{C}$: $R_{\text{total}} = 400 + 500 = 900$ $\Omega$. $V_T = \frac{400}{900} \times 6.0 = 2.67$
+At $80^\circ\mathrm{C}$: $R_{\mathrm{total}} = 400 + 500 = 900$ $\Omega$. $V_T = \frac{400}{900} \times 6.0 = 2.67$
 V.
 
 <b>If you get this wrong, revise:</b> [I-V Characteristics](#5-i-v-characteristics)
@@ -794,15 +794,15 @@ $\Omega$. Calculate the power loss and efficiency when transmitting at: (a) 25 k
 400 kV.
 
 **Answer.** (a) $I = 500 \times 10^6 / (25 \times 10^3) = 20{,}000$ A.
-$P_{\text{loss}} = (20{,}000)^2 \times 4.0 = 1.6 \times 10^9$ W $= 1600$ MW. Efficiency
+$P_{\mathrm{loss}} = (20{,}000)^2 \times 4.0 = 1.6 \times 10^9$ W $= 1600$ MW. Efficiency
 $= 500/(500 + 1600) = 23.8\%$.
 
 (b) $I = 500 \times 10^6 / (132 \times 10^3) = 3788$ A.
-$P_{\text{loss}} = (3788)^2 \times 4.0 = 5.74 \times 10^7$ W $= 57.4$ MW. Efficiency
+$P_{\mathrm{loss}} = (3788)^2 \times 4.0 = 5.74 \times 10^7$ W $= 57.4$ MW. Efficiency
 $= 500/557.4 = 89.7\%$.
 
 (c) $I = 500 \times 10^6 / (400 \times 10^3) = 1250$ A.
-$P_{\text{loss}} = (1250)^2 \times 4.0 = 6.25 \times 10^6$ W $= 6.25$ MW. Efficiency
+$P_{\mathrm{loss}} = (1250)^2 \times 4.0 = 6.25 \times 10^6$ W $= 6.25$ MW. Efficiency
 $= 500/506.25 = 98.8\%$.
 
 <b>If you get this wrong, revise:</b> [Power Transmission](#10-power-transmission)
@@ -839,7 +839,7 @@ $I_{\max} = \frac{2\pi \times 1.0 \times 10^{-3} \times 0.0553}{4\pi \times 10^{
 Silicon has a band gap of 1.1 eV and an intrinsic carrier concentration of
 $n_i = 1.5 \times 10^{16}$ m$^{-3}$ at 300 K. (a) Estimate $n_i$ at 350 K. (b) A sample of silicon
 is doped with phosphorus at a concentration of $N_D = 5.0 \times 10^{21}$ m$^{-3}$. Calculate the
-ratio of conductivities: $\sigma_{\text{doped}} / \sigma_{\text{intrinsic}}$ at 300 K. (Assume
+ratio of conductivities: $\sigma_{\mathrm{doped}} / \sigma_{\mathrm{intrinsic}}$ at 300 K. (Assume
 mobility is the same for both.)
 
 **Answer.** (a)
@@ -856,7 +856,7 @@ $= 1.5 \times 10^{16} \times 1.260 \times \exp(3.035) = 1.5 \times 10^{16} \time
 m$^{-3}$.
 
 (b) Since $\sigma = nq\mu$ and mobility $\mu$ is the same:
-$\sigma_{\text{doped}}/\sigma_{\text{intrinsic}} = N_D/n_i = 5.0 \times 10^{21} / 1.5 \times 10^{16} = 3.3 \times 10^{5}$.
+$\sigma_{\mathrm{doped}}/\sigma_{\mathrm{intrinsic}} = N_D/n_i = 5.0 \times 10^{21} / 1.5 \times 10^{16} = 3.3 \times 10^{5}$.
 
 Doping increased conductivity by over 5 orders of magnitude.
 
@@ -905,10 +905,10 @@ $= 5000 \times \exp[3900 \times (-2.60 \times 10^{-4})]$
 
 $= 5000 \times \exp(-1.014) = 5000 \times 0.363 = 1813$ $\Omega$.
 
-(b) At $25^\circ\mathrm{C}$: $R_{\text{total}} = 5000 + 10{,}000 = 15{,}000$ $\Omega$.
+(b) At $25^\circ\mathrm{C}$: $R_{\mathrm{total}} = 5000 + 10{,}000 = 15{,}000$ $\Omega$.
 $V_T = \frac{5000}{15{,}000} \times 9.0 = 3.00$ V.
 
-At $50^\circ\mathrm{C}$: $R_{\text{total}} = 1813 + 10{,}000 = 11{,}813$ $\Omega$.
+At $50^\circ\mathrm{C}$: $R_{\mathrm{total}} = 1813 + 10{,}000 = 11{,}813$ $\Omega$.
 $V_T = \frac{1813}{11{,}813} \times 9.0 = 1.38$ V.
 
 (c) At $25^\circ\mathrm{C}$: $V_R = 9.0 - 3.00 = 6.00$ V. (Or $V_R = \frac{10{,}000}{15{,}000} \times 9.0 = 6.00$
@@ -933,7 +933,7 @@ the battery at each temperature.
 
 **Answer.** (a) At $20^\circ\mathrm{C}$: $r = 0.50$ $\Omega$. Total resistance $= 0.50 + 5.0 = 5.50$ $\Omega$.
 
-$I = \mathcal{E}/R_{\text{total}} = 12.0/5.50 = 2.18$ A.
+$I = \mathcal{E}/R_{\mathrm{total}} = 12.0/5.50 = 2.18$ A.
 $P_L = I^2 R_L = (2.18)^2 \times 5.0 = 23.8$ W.
 
 (b) At $60^\circ\mathrm{C}$:
@@ -943,9 +943,9 @@ Total resistance $= 0.580 + 5.0 = 5.580$ $\Omega$. $I = 12.0/5.580 = 2.151$ A.
 
 $P_L = (2.151)^2 \times 5.0 = 23.1$ W.
 
-(c) At $20^\circ\mathrm{C}$: $P_{\text{int}} = I^2 r = (2.18)^2 \times 0.50 = 2.38$ W.
+(c) At $20^\circ\mathrm{C}$: $P_{\mathrm{int}} = I^2 r = (2.18)^2 \times 0.50 = 2.38$ W.
 
-At $60^\circ\mathrm{C}$: $P_{\text{int}} = (2.151)^2 \times 0.580 = 2.68$ W.
+At $60^\circ\mathrm{C}$: $P_{\mathrm{int}} = (2.151)^2 \times 0.580 = 2.68$ W.
 
 Note: even though the internal resistance only increased by 16%, the internal power dissipation
 increased by 12.6%, while the useful power to the load decreased. This illustrates why battery

@@ -38,7 +38,7 @@ and why plant cells have a fixed, rectangular shape while animal cells are flexi
 
 **The cell membrane as a gatekeeper.** The cell membrane is not a solid barrier; it is a dynamic
 structure composed of a phospholipid bilayer with embedded proteins. Small, non-polar molecules
-(such as $\text{O}_2$ and $\text{CO}_2$) can diffuse directly through the lipid bilayer. Larger or
+(such as $\mathrm{O}_2$ and $\mathrm{CO}_2$) can diffuse directly through the lipid bilayer. Larger or
 polar molecules (such as glucose and ions) require transport proteins to cross. This selective
 permeability is essential for maintaining the internal conditions of the cell (homeostasis).
 
@@ -188,28 +188,28 @@ supply from the mother.
 
 **Magnification calculation:**
 
-$$\text{Magnification} = \frac{\text{image size}}{\text{actual size}}$$
+$$\mathrm{Magnification} = \frac{\mathrm{image size}}{\mathrm{actual size}}$$
 
 This equation can be rearranged to find any of the three variables:
 
-$$\text{Actual size} = \frac{\text{image size}}{\text{magnification}}$$
+$$\mathrm{Actual size} = \frac{\mathrm{image size}}{\mathrm{magnification}}$$
 
-$$\text{Image size} = \text{actual size} \times \text{magnification}$$
+$$\mathrm{Image size} = \mathrm{actual size} \times \mathrm{magnification}$$
 
 A useful mnemonic: the **MIA** triangle (Magnification = Image / Actual).
 
 **Worked Example.** A cell is observed to be 4.2 mm in a micrograph. The actual size is 0.07 mm.
 Calculate the magnification.
 
-$$\text{Magnification} = \frac{4.2}{0.07} = 60$$
+$$\mathrm{Magnification} = \frac{4.2}{0.07} = 60$$
 
 **Unit conversion tip.** You will frequently need to convert between millimetres (mm) and
-micrometres ($\mu$m). Remember: $1 \text{ mm} = 1000 \text{ \mu m}$.
+micrometres ($\mu$m). Remember: $1 \mathrm{ mm} = 1000 \mathrm{ \mu m}$.
 
 **Worked Example.** A cell measures 8.5 mm in a micrograph taken at magnification $\times 400$. Find
 the actual size in micrometres.
 
-$$\text{Actual size} = \frac{8.5}{400} = 0.02125 \text{ mm} = 21.25 \text{ \mu m}$$
+$$\mathrm{Actual size} = \frac{8.5}{400} = 0.02125 \mathrm{ mm} = 21.25 \mathrm{ \mu m}$$
 
 **Staining.** Most biological specimens are colourless and transparent, making them difficult to see
 under a microscope. Stains such as iodine (which stains starch and nuclei), methylene blue (which
@@ -395,7 +395,7 @@ movement in either direction.
 - Occurs in both liquids and gases
 - Rate increases with: larger concentration gradient, higher temperature, larger surface area,
   shorter diffusion distance
-- Only works for small, non-polar molecules (e.g., $\text{O}_2$, $\text{CO}_2$) and lipid-soluble
+- Only works for small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$) and lipid-soluble
   substances
 - Large or polar molecules (e.g., glucose, amino acids, ions) cannot diffuse through the lipid
   bilayer and require transport proteins (facilitated diffusion or active transport)
@@ -414,9 +414,9 @@ movement in either direction.
 **Worked Example.** Oxygen diffuses from the alveoli (high concentration) into the blood (low
 concentration). Carbon dioxide diffuses from the blood into the alveoli. This simultaneous exchange
 of gases is efficient because both processes use the same concentration gradient in opposite
-directions: the alveoli have high $\text{O}_2$ and low $\text{CO}_2$ (because fresh air is
-continually breathed in), while the blood arriving at the lungs has low $\text{O}_2$ and high
-$\text{CO}_2$ (because it has just returned from the body tissues where respiration occurred).
+directions: the alveoli have high $\mathrm{O}_2$ and low $\mathrm{CO}_2$ (because fresh air is
+continually breathed in), while the blood arriving at the lungs has low $\mathrm{O}_2$ and high
+$\mathrm{CO}_2$ (because it has just returned from the body tissues where respiration occurred).
 
 ### 3.2 Osmosis
 
@@ -472,7 +472,7 @@ concentrated sugar solution.
 6. Remove, gently dry with a paper towel, and measure the new mass.
 7. Calculate the percentage change in mass:
 
-$$\text{Percentage change} = \frac{\text{final mass} - \text{initial mass}}{\text{initial mass}} \times 100\%$$
+$$\mathrm{Percentage change} = \frac{\mathrm{final mass} - \mathrm{initial mass}}{\mathrm{initial mass}} \times 100\%$$
 
 8. Plot a graph of percentage change in mass against sugar concentration.
 
@@ -529,7 +529,7 @@ available glucose is absorbed.
 
 ### 4.1 Levels of Organisation
 
-$$\text{Cells} \to \text{Tissues} \to \text{Organs} \to \text{Organ Systems} \to \text{Organisms}$$
+$$\mathrm{Cells} \to \mathrm{Tissues} \to \mathrm{Organs} \to \mathrm{Organ Systems} \to \mathrm{Organisms}$$
 
 - **Cell:** The basic unit of life.
 - **Tissue:** A group of similar cells with the same function (e.g., muscle tissue is made of muscle
@@ -600,9 +600,9 @@ units.
 | Micrometre | $\mu$m | $\times 10^{-6}$ m   |
 | Nanometre  | nm     | $\times 10^{-9}$ m   |
 
-**Worked Example.** A mitochondrion is $5 \mu\text{m}$ long. Express this in nanometres.
+**Worked Example.** A mitochondrion is $5 \mu\mathrm{m}$ long. Express this in nanometres.
 
-$$5 \text{ \mu m} = 5 \times 1000 \text{ nm} = 5000 \text{ nm}$$
+$$5 \mathrm{ \mu m} = 5 \times 1000 \mathrm{ nm} = 5000 \mathrm{ nm}$$
 
 ### 5.3 Estimating Cell Size
 
@@ -613,10 +613,10 @@ To estimate the size of a cell or organelle from a micrograph:
 3. Divide the field of view diameter by the number of cells.
 
 **Worked Example.** A student observes a cell under a microscope at $\times 400$ magnification. The
-diameter of the field of view at this magnification is $0.5 \text{ mm}$. The student estimates that
+diameter of the field of view at this magnification is $0.5 \mathrm{ mm}$. The student estimates that
 10 cells fit across the diameter. Calculate the width of one cell in micrometres.
 
-$$\text{Width of one cell} = \frac{0.5 \text{ mm}}{10} = 0.05 \text{ mm} = 50 \text{ \mu m}$$
+$$\mathrm{Width of one cell} = \frac{0.5 \mathrm{ mm}}{10} = 0.05 \mathrm{ mm} = 50 \mathrm{ \mu m}$$
 
 ## Common Pitfalls
 

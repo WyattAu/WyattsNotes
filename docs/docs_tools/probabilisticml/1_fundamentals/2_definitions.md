@@ -91,9 +91,9 @@ Given metric spaces $(X, d_X)$ and $(Y, d_Y)$, a function $f: X \to Y$ is $K$-Li
 $$ d_Y(f(x_1), f(x_2)) \leq K \cdot d_X(x_1, x_2) \quad \forall x_1, x_2 \in X $$
 
 The **Lipschitz constant** (or Lipschitz semi-norm) is defined as:
-$$\lVert f \rVert_{\text{Lip}} = \sup_{x \neq y} \frac{d_Y(f(x), f(y))}{d_X(x, y)}$$
+$$\lVert f \rVert_{\mathrm{Lip}} = \sup_{x \neq y} \frac{d_Y(f(x), f(y))}{d_X(x, y)}$$
 
-The set of 1-Lipschitz functions consists of all functions satisfying $\lVert f \rVert_{\text{Lip}} \leq 1$.
+The set of 1-Lipschitz functions consists of all functions satisfying $\lVert f \rVert_{\mathrm{Lip}} \leq 1$.
 
 In Wasserstein GANs, the discriminator (critic) must be 1-Lipschitz. This is often enforced via Gradient Penalty or Spectral Normalization.
 
@@ -197,7 +197,7 @@ Let $\mathcal{C} \subseteq \mathcal{P}(S)$ be any collection of subsets of $S$, 
 
 $$
 \begin{equation}
-  \sigma(\mathcal{C}) = \bigcap \left\{\mathcal{G}:\mathcal{C} \subseteq \mathcal{G}, \mathcal{G} \text{ is a $\sigma$-algebra on }S \right\}
+  \sigma(\mathcal{C}) = \bigcap \left\{\mathcal{G}:\mathcal{C} \subseteq \mathcal{G}, \mathcal{G} \mathrm{ is a $\sigma$-algebra on }S \right\}
 \end{equation}
 $$
 
@@ -245,7 +245,7 @@ assuming the set $\{x \in \Omega : f(x) \neq g(x)\}$ is measurable.
 A measure space $(\Omega, \mathcal{F}, \mu)$ is **complete** if every subset of a null set is measurable (and hence also a null set). Formally:
 
 $$
-\text{If } N \in \mathcal{F} \text{ with } \mu(N) = 0 \text{ and } A \subseteq N, \text{ then } A \in \mathcal{F}
+\mathrm{If } N \in \mathcal{F} \mathrm{ with } \mu(N) = 0 \mathrm{ and } A \subseteq N, \mathrm{ then } A \in \mathcal{F}
 $$
 
 _Note:_ The Lebesgue measure on $\mathbb{R}^d$ is complete by construction. Any measure space can be "completed" by adding all subsets of null sets to the $\sigma$-algebra. The completion of a Borel measure yields the larger $\sigma$-algebra of Lebesgue-measurable sets.
@@ -277,7 +277,7 @@ _Intuition:_ If $\nu \ll \mu$, then $\nu$ cannot "create probability out of thin
 Let $T: (\Omega_1, \mathcal{F}_1) \to (\Omega_2, \mathcal{F}_2)$ be a **measurable mapping**. Given a measure $\mu$ on $(\Omega_1, \mathcal{F}_1)$, the **pushforward measure** $T_\#\mu$ on $(\Omega_2, \mathcal{F}_2)$ is defined as:
 
 $$
-T_\# \mu(B) = \mu(T^{-1}(B)) \quad \text{for all } B \in \mathcal{F}_2
+T_\# \mu(B) = \mu(T^{-1}(B)) \quad \mathrm{for all } B \in \mathcal{F}_2
 $$
 
 _Note:_ This is a pure measure-theoretic concept. When $T$ is a random element and $\mu = P$, the pushforward becomes the law/induced distribution.
@@ -311,8 +311,8 @@ Let $(S, \mathcal{B}(S))$ be a measurable space and $x \in S$ be a fixed point. 
 $$
 \forall A \in \mathcal{B}(S), \quad
 \delta_x(A) = \begin{cases}
-  1 & \text{if } x\in A\\
-  0 & \text{if } x\notin A
+  1 & \mathrm{if } x\in A\\
+  0 & \mathrm{if } x\notin A
 \end{cases}
 $$
 
@@ -332,10 +332,10 @@ In statistical contexts, if $X_1, \dots, X_n$ are random elements, $\hat{P}_n$ b
 
 ### Support of a Measure
 
-Given a Borel probability measure $\mu$ on a topological space $(S, \tau)$, the support of $\mu$, denoted $\text{supp}(\mu)$, is the set of all points $x \in S$ for which every open neighborhood of $x$ has positive measure. Equivalently, it is the intersection of all closed sets with full measure:
+Given a Borel probability measure $\mu$ on a topological space $(S, \tau)$, the support of $\mu$, denoted $\mathrm{supp}(\mu)$, is the set of all points $x \in S$ for which every open neighborhood of $x$ has positive measure. Equivalently, it is the intersection of all closed sets with full measure:
 
 $$
-\text{supp}(\mu) = \bigcap \{ C \subseteq S : C \text{ is closed and } \mu(C) = 1 \}
+\mathrm{supp}(\mu) = \bigcap \{ C \subseteq S : C \mathrm{ is closed and } \mu(C) = 1 \}
 $$
 
 ### Probability Measure
@@ -542,8 +542,8 @@ Indicator function $1_A:\Omega \rightarrow \{1,0\}$ satisfies:
 $$
 1_A(\omega) =
 \begin{cases}
-  1 & \text{if } \omega \in A\\
-  0 & \text{else}
+  1 & \mathrm{if } \omega \in A\\
+  0 & \mathrm{else}
 \end{cases}
 $$
 
@@ -568,7 +568,7 @@ This is an integral constructed from $3$ steps:
 1. Simple functions: Given a simple function $s=\sum \alpha_i 1_A$, the integral is $\int s d\mu = \sum^n_{i=1} \alpha_i \mu (A_i)$.
 2. Non-negative Measurable Functions: For any $f: \Omega \rightarrow [0, \infty]$, defined as the supremum of integrals of simple functions bounded by f:
    $$
-   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \text{ is simple}\right\}
+   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \mathrm{ is simple}\right\}
    $$
 3. General Measurable Functions: For a **measurable** function $f: \Omega \rightarrow \mathbb{R}$, decompose into positive and negative parts $f = f^+ - f^-$ (where $f^+ = \max(f, 0)$ and $f^- = \max(-f, 0)$). The integral is defined as:
    $$
@@ -608,16 +608,16 @@ For a real-valued random variable $X$ and $k \in \mathbb{N}$:
 The **variance** of $X$ is the second central moment:
 
 $$
-\text{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
+\mathrm{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
 $$
 
-The **standard deviation** is $\sigma_X = \sqrt{\text{Var}(X)}$.
+The **standard deviation** is $\sigma_X = \sqrt{\mathrm{Var}(X)}$.
 
 _Properties:_
 
-- $\text{Var}(X) \geq 0$
-- $\text{Var}(aX + b) = a^2 \text{Var}(X)$ for constants $a, b$
-- $\text{Var}(X) = 0 \iff X = \mathbb{E}[X]$ almost surely
+- $\mathrm{Var}(X) \geq 0$
+- $\mathrm{Var}(aX + b) = a^2 \mathrm{Var}(X)$ for constants $a, b$
+- $\mathrm{Var}(X) = 0 \iff X = \mathbb{E}[X]$ almost surely
 
 ### Law of the Unconscious Statistician (LOTUS)
 
@@ -631,26 +631,26 @@ _Intuition:_ LOTUS justifies computing expectations using the pushforward measur
 
 For two random variables $X, Y$ with finite second moments, the covariance is defined as:
 
-$$\text{Cov}(X, Y) = \mathbb{E}[(X - \mathbb{E}[X])(Y - \mathbb{E}[Y])]$$
+$$\mathrm{Cov}(X, Y) = \mathbb{E}[(X - \mathbb{E}[X])(Y - \mathbb{E}[Y])]$$
 
-Equivalently, $\text{Cov}(X, Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$.
+Equivalently, $\mathrm{Cov}(X, Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$.
 
 _Properties:_
 
-- $\text{Cov}(X, X) = \text{Var}(X)$
-- $\text{Cov}(X, Y) = \text{Cov}(Y, X)$ (symmetry)
-- $\text{Cov}(aX, bY) = ab \cdot \text{Cov}(X, Y)$ (bilinearity)
-- If $X$ and $Y$ are independent, $\text{Cov}(X, Y) = 0$ (but converse is not true)
+- $\mathrm{Cov}(X, X) = \mathrm{Var}(X)$
+- $\mathrm{Cov}(X, Y) = \mathrm{Cov}(Y, X)$ (symmetry)
+- $\mathrm{Cov}(aX, bY) = ab \cdot \mathrm{Cov}(X, Y)$ (bilinearity)
+- If $X$ and $Y$ are independent, $\mathrm{Cov}(X, Y) = 0$ (but converse is not true)
 
 ### Covariance Matrix
 
 For a random vector $\mathbf{X} \in \mathbb{R}^d$ with finite second moments, the covariance matrix $\Sigma \in \mathbb{R}^{d \times d}$ is defined as:
 
 $$
-\Sigma = \text{Cov}(\mathbf{X}) = \mathbb{E}\left[(\mathbf{X} - \mathbb{E}[\mathbf{X}])(\mathbf{X} - \mathbb{E}[\mathbf{X}])^\top\right]
+\Sigma = \mathrm{Cov}(\mathbf{X}) = \mathbb{E}\left[(\mathbf{X} - \mathbb{E}[\mathbf{X}])(\mathbf{X} - \mathbb{E}[\mathbf{X}])^\top\right]
 $$
 
-The $(i,j)$-th entry is $\Sigma_{ij} = \text{Cov}(X_i, X_j)$. The covariance matrix is symmetric and positive semi-definite.
+The $(i,j)$-th entry is $\Sigma_{ij} = \mathrm{Cov}(X_i, X_j)$. The covariance matrix is symmetric and positive semi-definite.
 
 ### Lebesgue $p$-spaces ($\mathcal{L}^p$)
 
@@ -1049,7 +1049,7 @@ _Relevance:_ Score-based generative models and diffusion models are formulated a
 A **filtration** $\{\mathcal{F}_t\}_{t \geq 0}$ is an increasing family of $\sigma$-algebras indexed by time (discrete or continuous):
 
 $$
-\mathcal{F}_s \subseteq \mathcal{F}_t \subseteq \mathcal{F} \quad \text{for all } s \leq t
+\mathcal{F}_s \subseteq \mathcal{F}_t \subseteq \mathcal{F} \quad \mathrm{for all } s \leq t
 $$
 
 _Intuition:_ $\mathcal{F}_t$ represents the information available at time $t$. As time progresses, we gain more information (the $\sigma$-algebra grows).
@@ -1067,7 +1067,7 @@ _Intuition:_ An adapted process cannot "see into the future." At each time $t$, 
 A stochastic process $\{X_t\}_{t \geq 0}$ adapted to a filtration $\{\mathcal{F}_t\}$ is a **martingale** if:
 
 $$
-\mathbb{E}[X_t | \mathcal{F}_s] = X_s \quad \text{for all } s \leq t
+\mathbb{E}[X_t | \mathcal{F}_s] = X_s \quad \mathrm{for all } s \leq t
 $$
 
 _Variants:_
@@ -1226,7 +1226,7 @@ Given a dominated model with reference measure $\lambda$, the density $f_\theta 
 
 $$
 \begin{equation}
- L_s(\theta) = f_\theta(s), \quad \text{where } f_\theta = \frac{dP_\theta}{d\lambda}
+ L_s(\theta) = f_\theta(s), \quad \mathrm{where } f_\theta = \frac{dP_\theta}{d\lambda}
 \end{equation}
 $$
 
@@ -1261,7 +1261,7 @@ $$
 _Properties:_
 
 - $\mathbb{E}_{x \sim P_\theta}[s(x; \theta)] = 0$ (under regularity conditions)
-- $\text{Cov}(s(x; \theta)) = \mathcal{I}(\theta)$ (Fisher Information Matrix)
+- $\mathrm{Cov}(s(x; \theta)) = \mathcal{I}(\theta)$ (Fisher Information Matrix)
 
 _Relevance:_ Essential for the REINFORCE algorithm in Reinforcement Learning and Fisher Information analysis.
 
@@ -1457,7 +1457,7 @@ Let $\mu, \nu \in \mathcal{P}(S)$ where $(S, d)$ is a Polish space. The $p$-Wass
 $$W_p(\mu, \nu) = \left( \inf_{\gamma \in \Pi(\mu, \nu)} \int_{S \times S} d(x, y)^p \, d\gamma(x, y) \right)^{1/p}$$
 where $\Pi(\mu, \nu)$ is the set of joint distributions (couplings) with marginals $\mu$ and $\nu$.
 
-_Duality (for $p=1$):_ Via Kantorovich-Rubinstein, $W_1(\mu, \nu) = \sup \{ \mathbb{E}_\mu[f] - \mathbb{E}_\nu[f] : \lVert f \rVert_{\text{Lip}} \leq 1 \}$.
+_Duality (for $p=1$):_ Via Kantorovich-Rubinstein, $W_1(\mu, \nu) = \sup \{ \mathbb{E}_\mu[f] - \mathbb{E}_\nu[f] : \lVert f \rVert_{\mathrm{Lip}} \leq 1 \}$.
 
 _Relevance:_ Foundation of Wasserstein GANs; provides meaningful gradients even when distributions have disjoint support.
 
@@ -1466,17 +1466,17 @@ _Relevance:_ Foundation of Wasserstein GANs; provides meaningful gradients even 
 A metric on the space of probability measures derived from an RKHS. Let $P, Q$ be probability measures and $\mathcal{H}$ be an RKHS with unit ball $\mathcal{F}$.
 
 $$
-\text{MMD}(P, Q) = \sup_{f \in \mathcal{F}} \left( \mathbb{E}_{x \sim P}[f(x)] - \mathbb{E}_{y \sim Q}[f(y)] \right)
+\mathrm{MMD}(P, Q) = \sup_{f \in \mathcal{F}} \left( \mathbb{E}_{x \sim P}[f(x)] - \mathbb{E}_{y \sim Q}[f(y)] \right)
 $$
 
 _Relevance:_ Used in Generative Moment Matching Networks (GMMN) and as a critic in GANs. Can be computed efficiently via kernel tricks without explicit density estimation.
 
 ### Fisher Divergence
 
-The **Fisher Divergence** (or Score Matching objective) measures the discrepancy between score functions of two distributions. For data distribution $p_{\text{data}}$ and model distribution $p_\theta$:
+The **Fisher Divergence** (or Score Matching objective) measures the discrepancy between score functions of two distributions. For data distribution $p_{\mathrm{data}}$ and model distribution $p_\theta$:
 
 $$
-J(\theta) = \mathbb{E}_{p_{\text{data}}}\left[ \lVert \nabla_x \log p_{\text{data}}(x) - \nabla_x \log p_\theta(x) \rVert^2 \right]
+J(\theta) = \mathbb{E}_{p_{\mathrm{data}}}\left[ \lVert \nabla_x \log p_{\mathrm{data}}(x) - \nabla_x \log p_\theta(x) \rVert^2 \right]
 $$
 
 _Key Property:_ Minimizing the Fisher divergence is equivalent to Score Matching. Unlike KL divergence, it does not require computing the normalizing constant of $p_\theta$.
@@ -1566,5 +1566,5 @@ Intrinsic variability that cannot be reduced even with a larger data set. For ex
 ### Manifold Hypothesis
 
 Let $\mathcal{X} = \mathbb{R}^d$ be the ambient data space. The Manifold Hypothesis states that the probability mass of the data distribution $P_{data}$ is supported on (or concentrated near) a topological manifold $\mathcal{M} \subseteq \mathbb{R}^d$ where $\dim(\mathcal{M}) \ll d$.
-Formally, $\text{supp}(P_{data}) \subseteq \mathcal{M}$.
+Formally, $\mathrm{supp}(P_{data}) \subseteq \mathcal{M}$.
 Explains why high-dimensional generative models (GANs, VAEs) work: they map a low-dimensional latent space $\mathcal{Z} \subseteq \mathbb{R}^k$ to $\mathcal{M}$.

@@ -118,19 +118,19 @@ $$
 
 ### Worked Example 1: Motional EMF
 
-**Problem:** A rod of length $0.5\text{ m}$ moves at $3.0\text{ m s}^{-1}$ perpendicular to a
-magnetic field of $0.2\text{ T}$. Calculate the induced EMF.
+**Problem:** A rod of length $0.5\mathrm{ m}$ moves at $3.0\mathrm{ m s}^{-1}$ perpendicular to a
+magnetic field of $0.2\mathrm{ T}$. Calculate the induced EMF.
 
 **Solution:**
 
 $$
-\epsilon = Blv = (0.2)(0.5)(3.0) = 0.3\text{ V}
+\epsilon = Blv = (0.2)(0.5)(3.0) = 0.3\mathrm{ V}
 $$
 
 ### Worked Example 2: EMF in a Rotating Coil
 
-**Problem:** A rectangular coil of $200$ turns, each of area $0.01\text{ m}^2$, rotates at
-$50\text{ Hz}$ in a magnetic field of $0.5\text{ T}$. Calculate the peak EMF.
+**Problem:** A rectangular coil of $200$ turns, each of area $0.01\mathrm{ m}^2$, rotates at
+$50\mathrm{ Hz}$ in a magnetic field of $0.5\mathrm{ T}$. Calculate the peak EMF.
 
 **Solution:**
 
@@ -138,7 +138,7 @@ $$
 \begin{aligned}
     \epsilon_0 &= NAB\omega = NAB \cdot 2\pi f\\
     \epsilon_0 &= (200)(0.01)(0.5)(2\pi \times 50)\\
-    \epsilon_0 &= 314\text{ V}
+    \epsilon_0 &= 314\mathrm{ V}
 \end{aligned}
 $$
 
@@ -173,14 +173,14 @@ $$
 ### Key Features of AC
 
 - **Peak EMF** ($\epsilon_0$): maximum value of the alternating EMF
-- **Root mean square (RMS) EMF**: $\epsilon_{\text{rms}} = \frac{\epsilon_0}{\sqrt{2}}$
+- **Root mean square (RMS) EMF**: $\epsilon_{\mathrm{rms}} = \frac{\epsilon_0}{\sqrt{2}}$
 - **Frequency** ($f$): number of complete cycles per second, $f = \frac{\omega}{2\pi}$
 - **Period** ($T$): time for one complete cycle, $T = \frac{1}{f}$
 
 :::tip
 Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
 average power in AC circuits:
-$P_{\text{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\text{rms}}^2}{R}$
+$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$
 :::
 
 ## Transformers
@@ -241,17 +241,17 @@ $$
 ### Worked Example 3: Transformer
 
 **Problem:** A step-down transformer has $2000$ turns on the primary and $100$ turns on the
-secondary. The primary voltage is $240\text{ V}$ and the primary current is $2\text{ A}$. Calculate
+secondary. The primary voltage is $240\mathrm{ V}$ and the primary current is $2\mathrm{ A}$. Calculate
 the secondary voltage and current (assuming ideal).
 
 **Solution:**
 
 $$
-\frac{V_s}{V_p} = \frac{N_s}{N_p} \implies V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12\text{ V}
+\frac{V_s}{V_p} = \frac{N_s}{N_p} \implies V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12\mathrm{ V}
 $$
 
 $$
-I_s = I_p \times \frac{N_p}{N_s} = 2 \times \frac{2000}{100} = 40\text{ A}
+I_s = I_p \times \frac{N_p}{N_s} = 2 \times \frac{2000}{100} = 40\mathrm{ A}
 $$
 
 ## Energy Stored in an Inductor
@@ -321,19 +321,19 @@ Determine the direction of the induced current in the coil.
 
 ### Worked Example 5: Faraday's Law with Changing Area
 
-**Problem:** A square loop of side length $0.10\text{ m}$ lies perpendicular to a uniform magnetic
-field of $0.40\text{ T}$. The loop is pulled out of the field in $0.20\text{ s}$, shrinking the area
-inside the field from $0.010\text{ m}^2$ to zero. The loop has $50$ turns. Find the average induced
+**Problem:** A square loop of side length $0.10\mathrm{ m}$ lies perpendicular to a uniform magnetic
+field of $0.40\mathrm{ T}$. The loop is pulled out of the field in $0.20\mathrm{ s}$, shrinking the area
+inside the field from $0.010\mathrm{ m}^2$ to zero. The loop has $50$ turns. Find the average induced
 EMF.
 
 **Solution:**
 
 $$
-\Delta\Phi_B = B\,\Delta A = (0.40)(0.010 - 0) = 4.0 \times 10^{-3}\text{ Wb}
+\Delta\Phi_B = B\,\Delta A = (0.40)(0.010 - 0) = 4.0 \times 10^{-3}\mathrm{ Wb}
 $$
 
 $$
-\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 50 \times \frac{4.0 \times 10^{-3}}{0.20} = 1.0\text{ V}
+\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 50 \times \frac{4.0 \times 10^{-3}}{0.20} = 1.0\mathrm{ V}
 $$
 
 Note that here $B$ is constant and the flux changes because the **area** changes — Faraday's law
@@ -341,70 +341,70 @@ applies equally to $\Delta A$ as to $\Delta B$.
 
 ### Worked Example 6: EMF in a Coil Being Pulled Out of a Field
 
-**Problem:** A circular coil of radius $5.0\text{ cm}$ with $120$ turns is positioned so that its
-plane is perpendicular to a uniform field of $0.60\text{ T}$. The coil is moved completely out of
-the field region in $0.050\text{ s}$. Calculate the magnitude of the average EMF induced.
+**Problem:** A circular coil of radius $5.0\mathrm{ cm}$ with $120$ turns is positioned so that its
+plane is perpendicular to a uniform field of $0.60\mathrm{ T}$. The coil is moved completely out of
+the field region in $0.050\mathrm{ s}$. Calculate the magnitude of the average EMF induced.
 
 **Solution:**
 
 $$
-A = \pi r^2 = \pi(0.050)^2 = 7.85 \times 10^{-3}\text{ m}^2
+A = \pi r^2 = \pi(0.050)^2 = 7.85 \times 10^{-3}\mathrm{ m}^2
 $$
 
 $$
-\Delta\Phi_B = BA = (0.60)(7.85 \times 10^{-3}) = 4.71 \times 10^{-3}\text{ Wb}
+\Delta\Phi_B = BA = (0.60)(7.85 \times 10^{-3}) = 4.71 \times 10^{-3}\mathrm{ Wb}
 $$
 
 $$
-\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 120 \times \frac{4.71 \times 10^{-3}}{0.050} = 11.3\text{ V}
+\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 120 \times \frac{4.71 \times 10^{-3}}{0.050} = 11.3\mathrm{ V}
 $$
 
 ### Worked Example 7: Transformer Efficiency with Losses
 
-**Problem:** A transformer has $N_p = 4000$ and $N_s = 200$. The input power is $1200\text{ W}$ at
-$V_p = 240\text{ V}$. The output power measured at the secondary is $1140\text{ W}$. Calculate: (a)
+**Problem:** A transformer has $N_p = 4000$ and $N_s = 200$. The input power is $1200\mathrm{ W}$ at
+$V_p = 240\mathrm{ V}$. The output power measured at the secondary is $1140\mathrm{ W}$. Calculate: (a)
 the secondary voltage, (b) the secondary current, (c) the efficiency.
 
 **Solution:**
 
-(a) $V_s = 240 \times 200/4000 = 12.0\text{ V}$
+(a) $V_s = 240 \times 200/4000 = 12.0\mathrm{ V}$
 
-(b) $I_s = 1140/12.0 = 95.0\text{ A}$
+(b) $I_s = 1140/12.0 = 95.0\mathrm{ A}$
 
 (c) $\eta = 1140/1200 \times 100\% = 95.0\%$
 
 ### Worked Example 8: Power Transmission — Step-Up Then Step-Down
 
-**Problem:** A power station generates $500\text{ kW}$ at $5000\text{ V}$. The power is transmitted
+**Problem:** A power station generates $500\mathrm{ kW}$ at $5000\mathrm{ V}$. The power is transmitted
 through cables of total resistance $10\,\Omega$.
 
-(a) Calculate the power loss if transmitted directly at $5000\text{ V}$.
+(a) Calculate the power loss if transmitted directly at $5000\mathrm{ V}$.
 
-(b) A step-up transformer raises the voltage to $50\,000\text{ V}$ for transmission, and a step-down
-transformer reduces it back to $5000\text{ V}$ at the consumer end. Calculate the power loss now.
+(b) A step-up transformer raises the voltage to $50\,000\mathrm{ V}$ for transmission, and a step-down
+transformer reduces it back to $5000\mathrm{ V}$ at the consumer end. Calculate the power loss now.
 
 **Solution:**
 
 (a) Direct transmission:
 
 $$
-I = \frac{P}{V} = \frac{500\,000}{5000} = 100\text{ A}
+I = \frac{P}{V} = \frac{500\,000}{5000} = 100\mathrm{ A}
 $$
 
 $$
-P_{\text{loss}} = I^2 R = (100)^2(10) = 100\,000\text{ W} = 100\text{ kW}
+P_{\mathrm{loss}} = I^2 R = (100)^2(10) = 100\,000\mathrm{ W} = 100\mathrm{ kW}
 $$
 
 This is $20\%$ of the generated power wasted as heat.
 
-(b) With step-up to $50\,000\text{ V}$:
+(b) With step-up to $50\,000\mathrm{ V}$:
 
 $$
-I' = \frac{P}{V'} = \frac{500\,000}{50\,000} = 10\text{ A}, \quad P'_{\text{loss}} = (10)^2(10) = 1000\text{ W} = 1.0\text{ kW}
+I' = \frac{P}{V'} = \frac{500\,000}{50\,000} = 10\mathrm{ A}, \quad P'_{\mathrm{loss}} = (10)^2(10) = 1000\mathrm{ W} = 1.0\mathrm{ kW}
 $$
 
-The loss drops from $100\text{ kW}$ to $1.0\text{ kW}$ — a factor of 100, since
-$P_{\text{loss}} \propto I^2$ and the current was reduced by a factor of 10.
+The loss drops from $100\mathrm{ kW}$ to $1.0\mathrm{ kW}$ — a factor of 100, since
+$P_{\mathrm{loss}} \propto I^2$ and the current was reduced by a factor of 10.
 
 ---
 
@@ -448,9 +448,9 @@ lamination). The insulation between laminations prevents currents from flowing a
 
 **Problem:** A conducting disc of radius $R$ and thickness $t$ rotates at angular velocity $\omega$
 in a uniform magnetic field $B$ perpendicular to the disc. Show that the power dissipated by eddy
-currents scales as $P \propto B^2\omega^2 R^4 t / \rho$, and evaluate for $R = 0.15\text{ m}$,
-$t = 5.0\text{ mm}$, $\omega = 300\text{ rad s}^{-1}$, $B = 0.80\text{ T}$,
-$\rho = 1.7 \times 10^{-8}\,\Omega\text{m}$.
+currents scales as $P \propto B^2\omega^2 R^4 t / \rho$, and evaluate for $R = 0.15\mathrm{ m}$,
+$t = 5.0\mathrm{ mm}$, $\omega = 300\mathrm{ rad s}^{-1}$, $B = 0.80\mathrm{ T}$,
+$\rho = 1.7 \times 10^{-8}\,\Omega\mathrm{m}$.
 
 **Solution:**
 
@@ -471,7 +471,7 @@ $$
 Substituting:
 
 $$
-P = \frac{\pi(0.80)^2(300)^2(5.0 \times 10^{-3})(0.15)^4}{2(1.7 \times 10^{-8})} \approx 1.4 \times 10^{7}\text{ W}
+P = \frac{\pi(0.80)^2(300)^2(5.0 \times 10^{-3})(0.15)^4}{2(1.7 \times 10^{-8})} \approx 1.4 \times 10^{7}\mathrm{ W}
 $$
 
 :::warning
@@ -486,30 +486,30 @@ scaling: $P \propto \omega^2$ and $P \propto R^4$.
 
 When the coil of a DC motor rotates in the magnetic field of the stator, it simultaneously acts as a
 generator. The changing flux through the rotating coil induces an EMF that **opposes** the supply
-voltage. This is called the **back EMF** ($\epsilon_{\text{back}}$).
+voltage. This is called the **back EMF** ($\epsilon_{\mathrm{back}}$).
 
 ### Net Voltage and Current
 
 The net voltage driving current through the motor coil is:
 
 $$
-V_{\text{net}} = V_{\text{supply}} - \epsilon_{\text{back}}
+V_{\mathrm{net}} = V_{\mathrm{supply}} - \epsilon_{\mathrm{back}}
 $$
 
 and the current in the motor is:
 
 $$
-I = \frac{V_{\text{supply}} - \epsilon_{\text{back}}}{R}
+I = \frac{V_{\mathrm{supply}} - \epsilon_{\mathrm{back}}}{R}
 $$
 
 where $R$ is the total resistance of the motor windings.
 
 ### Startup vs Operating Speed
 
-- **At startup** ($\omega = 0$): $\epsilon_{\text{back}} = 0$, so $I = V_{\text{supply}}/R$. This is
+- **At startup** ($\omega = 0$): $\epsilon_{\mathrm{back}} = 0$, so $I = V_{\mathrm{supply}}/R$. This is
   the **maximum current** — it can be very large if $R$ is small, which is why motors often use a
   **starter resistor** or electronic speed controller to limit initial current.
-- **At operating speed**: the back EMF increases with $\omega$ (since $\epsilon_{\text{back}}$ is
+- **At operating speed**: the back EMF increases with $\omega$ (since $\epsilon_{\mathrm{back}}$ is
   proportional to the rate of change of flux), reducing the net voltage and hence the current. The
   motor reaches a steady speed when the back EMF is large enough that the current produces just
   enough torque to balance the load torque.
@@ -519,24 +519,24 @@ where $R$ is the total resistance of the motor windings.
 The mechanical power output of the motor is:
 
 $$
-P_{\text{mech}} = \epsilon_{\text{back}} \cdot I
+P_{\mathrm{mech}} = \epsilon_{\mathrm{back}} \cdot I
 $$
 
-By energy conservation, $V_{\text{supply}} \cdot I = \epsilon_{\text{back}} \cdot I + I^2 R$.
+By energy conservation, $V_{\mathrm{supply}} \cdot I = \epsilon_{\mathrm{back}} \cdot I + I^2 R$.
 
 ### Worked Example: Back EMF
 
-**Problem:** A DC motor is connected to a $120\text{ V}$ supply. The resistance of the armature
-windings is $4.0\,\Omega$. When the motor is running at full speed, the current is $5.0\text{ A}$.
+**Problem:** A DC motor is connected to a $120\mathrm{ V}$ supply. The resistance of the armature
+windings is $4.0\,\Omega$. When the motor is running at full speed, the current is $5.0\mathrm{ A}$.
 Calculate: (a) the back EMF, (b) the mechanical power output, (c) the current at startup.
 
 **Solution:**
 
-(a) $\epsilon_{\text{back}} = V_{\text{supply}} - IR = 120 - (5.0)(4.0) = 100\text{ V}$
+(a) $\epsilon_{\mathrm{back}} = V_{\mathrm{supply}} - IR = 120 - (5.0)(4.0) = 100\mathrm{ V}$
 
-(b) $P_{\text{mech}} = \epsilon_{\text{back}} \cdot I = (100)(5.0) = 500\text{ W}$
+(b) $P_{\mathrm{mech}} = \epsilon_{\mathrm{back}} \cdot I = (100)(5.0) = 500\mathrm{ W}$
 
-(c) At startup, $\epsilon_{\text{back}} = 0$, so $I_{\text{startup}} = 120/4.0 = 30\text{ A}$ — six
+(c) At startup, $\epsilon_{\mathrm{back}} = 0$, so $I_{\mathrm{startup}} = 120/4.0 = 30\mathrm{ A}$ — six
 times the operating current, confirming the need for startup protection.
 
 ---
@@ -565,10 +565,10 @@ switch is closed). Always check that the source is AC before applying the transf
 
 ### Confusing Peak and RMS Values
 
-The peak EMF $\epsilon_0$ and the RMS EMF $\epsilon_{\text{rms}} = \epsilon_0/\sqrt{2}$ are
+The peak EMF $\epsilon_0$ and the RMS EMF $\epsilon_{\mathrm{rms}} = \epsilon_0/\sqrt{2}$ are
 different quantities. Using peak values where RMS is expected (or vice versa) leads to errors of
 $\sqrt{2}$ in voltage, $2$ in power, or $\sqrt{2}$ in current. Multimeters display RMS. When a
-problem gives "$240\text{ V}$ AC" without qualification, it means RMS.
+problem gives "$240\mathrm{ V}$ AC" without qualification, it means RMS.
 
 ---
 
@@ -576,40 +576,40 @@ problem gives "$240\text{ V}$ AC" without qualification, it means RMS.
 
 ### Problem 1 (SL)
 
-A rectangular coil of $100$ turns, each of dimensions $0.10\text{ m} \times 0.05\text{ m}$, is
-placed perpendicular to a uniform magnetic field of $0.30\text{ T}$. The field drops to zero
-uniformly in $0.040\text{ s}$. Calculate the average EMF induced in the coil.
+A rectangular coil of $100$ turns, each of dimensions $0.10\mathrm{ m} \times 0.05\mathrm{ m}$, is
+placed perpendicular to a uniform magnetic field of $0.30\mathrm{ T}$. The field drops to zero
+uniformly in $0.040\mathrm{ s}$. Calculate the average EMF induced in the coil.
 
 <details>
 <summary>Solution</summary>
 
 $$
-\Delta\Phi_B = B\,\Delta A\cos\theta = (0.30)(0.10 \times 0.05)(1) - 0 = 1.5 \times 10^{-3}\text{ Wb}
+\Delta\Phi_B = B\,\Delta A\cos\theta = (0.30)(0.10 \times 0.05)(1) - 0 = 1.5 \times 10^{-3}\mathrm{ Wb}
 $$
 
 $$
-\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 100 \times \frac{1.5 \times 10^{-3}}{0.040} = 3.75\text{ V}
+\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 100 \times \frac{1.5 \times 10^{-3}}{0.040} = 3.75\mathrm{ V}
 $$
 
 </details>
 
 ### Problem 2 (SL)
 
-A straight wire of length $0.60\text{ m}$ moves at $8.0\text{ m s}^{-1}$ at an angle of $30^\circ$ to a
-magnetic field of $0.25\text{ T}$. Calculate the induced EMF.
+A straight wire of length $0.60\mathrm{ m}$ moves at $8.0\mathrm{ m s}^{-1}$ at an angle of $30^\circ$ to a
+magnetic field of $0.25\mathrm{ T}$. Calculate the induced EMF.
 
 <details>
 <summary>Solution</summary>
 
 $$
-\epsilon = Blv\sin\theta = (0.25)(0.60)(8.0)\sin 30° = (0.25)(0.60)(8.0)(0.500) = 0.60\text{ V}
+\epsilon = Blv\sin\theta = (0.25)(0.60)(8.0)\sin 30° = (0.25)(0.60)(8.0)(0.500) = 0.60\mathrm{ V}
 $$
 
 </details>
 
 ### Problem 3 (SL)
 
-A step-up transformer converts $120\text{ V}$ to $2400\text{ V}$. The primary coil has $200$ turns.
+A step-up transformer converts $120\mathrm{ V}$ to $2400\mathrm{ V}$. The primary coil has $200$ turns.
 The secondary is connected to a load of $100\,\Omega$. Calculate: (a) the number of secondary turns,
 (b) the secondary current, (c) the primary current (ideal).
 
@@ -625,40 +625,40 @@ $$
 (b)
 
 $$
-I_s = \frac{V_s}{R_L} = \frac{2400}{100} = 24\text{ A}
+I_s = \frac{V_s}{R_L} = \frac{2400}{100} = 24\mathrm{ A}
 $$
 
 (c)
 
 $$
-I_p = I_s \times \frac{N_s}{N_p} = 24 \times \frac{4000}{200} = 480\text{ A}
+I_p = I_s \times \frac{N_s}{N_p} = 24 \times \frac{4000}{200} = 480\mathrm{ A}
 $$
 
-Check: $V_p I_p = 120 \times 480 = 57\,600\text{ W}$, $V_s I_s = 2400 \times 24 = 57\,600\text{ W}$.
+Check: $V_p I_p = 120 \times 480 = 57\,600\mathrm{ W}$, $V_s I_s = 2400 \times 24 = 57\,600\mathrm{ W}$.
 
 </details>
 
 ### Problem 4 (SL)
 
-An AC generator produces a peak EMF of $340\text{ V}$ at $60\text{ Hz}$. Calculate: (a) the RMS
+An AC generator produces a peak EMF of $340\mathrm{ V}$ at $60\mathrm{ Hz}$. Calculate: (a) the RMS
 voltage, (b) the peak voltage across a $50\,\Omega$ resistor, (c) the average power dissipated.
 
 <details>
 <summary>Solution</summary>
 
-(a) $V_{\text{rms}} = 340/\sqrt{2} = 240\text{ V}$
+(a) $V_{\mathrm{rms}} = 340/\sqrt{2} = 240\mathrm{ V}$
 
-(b) Peak voltage across the resistor (negligible internal resistance): $V_0 = 340\text{ V}$.
+(b) Peak voltage across the resistor (negligible internal resistance): $V_0 = 340\mathrm{ V}$.
 
-(c) $P_{\text{avg}} = V_{\text{rms}}^2/R = (240)^2/50 = 1152\text{ W}$
+(c) $P_{\mathrm{avg}} = V_{\mathrm{rms}}^2/R = (240)^2/50 = 1152\mathrm{ W}$
 
 </details>
 
 ### Problem 5 (HL)
 
-A solenoid of length $0.50\text{ m}$, cross-sectional area $4.0 \times 10^{-3}\text{ m}^2$, and
-$500$ turns carries a current that increases uniformly from $0$ to $3.0\text{ A}$ in
-$0.10\text{ s}$. A secondary coil of $50$ turns is wound around the centre of the solenoid.
+A solenoid of length $0.50\mathrm{ m}$, cross-sectional area $4.0 \times 10^{-3}\mathrm{ m}^2$, and
+$500$ turns carries a current that increases uniformly from $0$ to $3.0\mathrm{ A}$ in
+$0.10\mathrm{ s}$. A secondary coil of $50$ turns is wound around the centre of the solenoid.
 Calculate: (a) the self-inductance of the solenoid, (b) the EMF induced in the secondary coil.
 
 <details>
@@ -667,27 +667,27 @@ Calculate: (a) the self-inductance of the solenoid, (b) the EMF induced in the s
 (a)
 
 $$
-L = \frac{\mu_0 N^2 A}{l} = \frac{(4\pi \times 10^{-7})(500)^2(4.0 \times 10^{-3})}{0.50} = 2.51 \times 10^{-3}\text{ H} = 2.51\text{ mH}
+L = \frac{\mu_0 N^2 A}{l} = \frac{(4\pi \times 10^{-7})(500)^2(4.0 \times 10^{-3})}{0.50} = 2.51 \times 10^{-3}\mathrm{ H} = 2.51\mathrm{ mH}
 $$
 
 (b) The field inside the solenoid is $B = \mu_0(N/l)I$, so the flux through one secondary turn is
 $\Phi_B = \mu_0(N/l)IA$. The rate of change:
 
 $$
-\frac{\Delta\Phi_B}{\Delta t} = \mu_0 \frac{N}{l}A \frac{\Delta I}{\Delta t} = (4\pi \times 10^{-7}) \cdot 1000 \cdot (4.0 \times 10^{-3}) \cdot 30 = 1.508 \times 10^{-4}\text{ Wb s}^{-1}
+\frac{\Delta\Phi_B}{\Delta t} = \mu_0 \frac{N}{l}A \frac{\Delta I}{\Delta t} = (4\pi \times 10^{-7}) \cdot 1000 \cdot (4.0 \times 10^{-3}) \cdot 30 = 1.508 \times 10^{-4}\mathrm{ Wb s}^{-1}
 $$
 
 $$
-\epsilon_{\text{secondary}} = N_s \frac{\Delta\Phi_B}{\Delta t} = 50 \times 1.508 \times 10^{-4} = 7.54\text{ mV}
+\epsilon_{\mathrm{secondary}} = N_s \frac{\Delta\Phi_B}{\Delta t} = 50 \times 1.508 \times 10^{-4} = 7.54\mathrm{ mV}
 $$
 
 </details>
 
 ### Problem 6 (HL)
 
-A metal ring of radius $r = 0.040\text{ m}$ and resistance $0.50\,\Omega$ falls vertically into a
-region of uniform horizontal magnetic field of $0.80\text{ T}$. At the instant the ring enters the
-field (moving at $2.0\text{ m s}^{-1}$), calculate: (a) the induced EMF, (b) the induced current,
+A metal ring of radius $r = 0.040\mathrm{ m}$ and resistance $0.50\,\Omega$ falls vertically into a
+region of uniform horizontal magnetic field of $0.80\mathrm{ T}$. At the instant the ring enters the
+field (moving at $2.0\mathrm{ m s}^{-1}$), calculate: (a) the induced EMF, (b) the induced current,
 (c) the direction of the magnetic force on the ring.
 
 <details>
@@ -696,13 +696,13 @@ field (moving at $2.0\text{ m s}^{-1}$), calculate: (a) the induced EMF, (b) the
 (a) As the ring enters, the flux increases at rate $\Delta\Phi_B/\Delta t = B \cdot 2r \cdot v$:
 
 $$
-\epsilon = B \cdot 2r \cdot v = (0.80)(0.080)(2.0) = 0.128\text{ V}
+\epsilon = B \cdot 2r \cdot v = (0.80)(0.080)(2.0) = 0.128\mathrm{ V}
 $$
 
 (b)
 
 $$
-I = \frac{\epsilon}{R} = \frac{0.128}{0.50} = 0.256\text{ A}
+I = \frac{\epsilon}{R} = \frac{0.128}{0.50} = 0.256\mathrm{ A}
 $$
 
 (c) By Lenz's law, the induced current creates a field opposing the increasing downward flux, so the
@@ -712,42 +712,42 @@ force on the ring is **upward**, opposing the fall.
 
 ### Problem 7 (HL)
 
-A power station produces $2.0\text{ MW}$ at $4000\text{ V}$. The transmission line has total
-resistance $8.0\,\Omega$. A step-up transformer increases the voltage to $80\,000\text{ V}$ for
-transmission, and a step-down transformer at the destination returns it to $4000\text{ V}$.
+A power station produces $2.0\mathrm{ MW}$ at $4000\mathrm{ V}$. The transmission line has total
+resistance $8.0\,\Omega$. A step-up transformer increases the voltage to $80\,000\mathrm{ V}$ for
+transmission, and a step-down transformer at the destination returns it to $4000\mathrm{ V}$.
 Calculate: (a) the current in the transmission line, (b) the power loss in the line, (c) the overall
 efficiency of the transmission system.
 
 <details>
 <summary>Solution</summary>
 
-(a) $I_{\text{line}} = 2.0 \times 10^6 / 80\,000 = 25\text{ A}$
+(a) $I_{\mathrm{line}} = 2.0 \times 10^6 / 80\,000 = 25\mathrm{ A}$
 
-(b) $P_{\text{loss}} = (25)^2(8.0) = 5.0\text{ kW}$
+(b) $P_{\mathrm{loss}} = (25)^2(8.0) = 5.0\mathrm{ kW}$
 
 (c) $\eta = (2.0 \times 10^6 - 5000)/(2.0 \times 10^6) = 99.75\%$
 
-Without transformers the current would be $500\text{ A}$, giving $P_{\text{loss}} = 2.0\text{ MW}$ —
+Without transformers the current would be $500\mathrm{ A}$, giving $P_{\mathrm{loss}} = 2.0\mathrm{ MW}$ —
 all power would be lost.
 
 </details>
 
 ### Problem 8 (HL)
 
-A DC motor operates from a $48\text{ V}$ supply. The armature resistance is $2.0\,\Omega$. When
-driving a mechanical load at steady speed, the back EMF is $42\text{ V}$. Calculate: (a) the current
+A DC motor operates from a $48\mathrm{ V}$ supply. The armature resistance is $2.0\,\Omega$. When
+driving a mechanical load at steady speed, the back EMF is $42\mathrm{ V}$. Calculate: (a) the current
 drawn, (b) the mechanical power output, (c) the power dissipated as heat, (d) the efficiency of the
 motor.
 
 <details>
 <summary>Solution</summary>
 
-(a) $I = (48 - 42)/2.0 = 3.0\text{ A}$
+(a) $I = (48 - 42)/2.0 = 3.0\mathrm{ A}$
 
-(b) $P_{\text{mech}} = (42)(3.0) = 126\text{ W}$
+(b) $P_{\mathrm{mech}} = (42)(3.0) = 126\mathrm{ W}$
 
-(c) $P_{\text{heat}} = (3.0)^2(2.0) = 18\text{ W}$ (check:
-$126 + 18 = 48 \times 3.0 = 144\text{ W}$)
+(c) $P_{\mathrm{heat}} = (3.0)^2(2.0) = 18\mathrm{ W}$ (check:
+$126 + 18 = 48 \times 3.0 = 144\mathrm{ W}$)
 
 (d) $\eta = 126/144 = 87.5\%$
 
@@ -755,8 +755,8 @@ $126 + 18 = 48 \times 3.0 = 144\text{ W}$)
 
 ### Problem 9 (HL)
 
-An inductor of $0.50\text{ H}$ carries a current of $4.0\text{ A}$. The current is reduced to zero
-in $0.020\text{ s}$. Calculate: (a) the energy initially stored, (b) the average EMF induced during
+An inductor of $0.50\mathrm{ H}$ carries a current of $4.0\mathrm{ A}$. The current is reduced to zero
+in $0.020\mathrm{ s}$. Calculate: (a) the energy initially stored, (b) the average EMF induced during
 the decay.
 
 <details>
@@ -765,13 +765,13 @@ the decay.
 (a)
 
 $$
-E = \frac{1}{2}LI^2 = \frac{1}{2}(0.50)(4.0)^2 = 4.0\text{ J}
+E = \frac{1}{2}LI^2 = \frac{1}{2}(0.50)(4.0)^2 = 4.0\mathrm{ J}
 $$
 
 (b)
 
 $$
-\epsilon = L\frac{\Delta I}{\Delta t} = (0.50)\frac{4.0 - 0}{0.020} = 100\text{ V}
+\epsilon = L\frac{\Delta I}{\Delta t} = (0.50)\frac{4.0 - 0}{0.020} = 100\mathrm{ V}
 $$
 
 The negative sign (from Lenz's law) indicates the EMF opposes the decrease in current, but the
@@ -781,8 +781,8 @@ question asks for the magnitude.
 
 ### Problem 10 (SL/HL)
 
-A coil of $150$ turns and area $2.0 \times 10^{-3}\text{ m}^2$ is placed in a magnetic field that
-varies with time as $B(t) = 0.50\sin(120\pi t)\text{ T}$. The coil is oriented with its plane
+A coil of $150$ turns and area $2.0 \times 10^{-3}\mathrm{ m}^2$ is placed in a magnetic field that
+varies with time as $B(t) = 0.50\sin(120\pi t)\mathrm{ T}$. The coil is oriented with its plane
 perpendicular to the field. Calculate: (a) the flux as a function of time, (b) the peak EMF, (c) the
 RMS EMF.
 
@@ -792,23 +792,23 @@ RMS EMF.
 (a)
 
 $$
-\Phi_B(t) = NAB(t) = (150)(2.0 \times 10^{-3})(0.50\sin 120\pi t) = 0.150\sin(120\pi t)\text{ Wb}
+\Phi_B(t) = NAB(t) = (150)(2.0 \times 10^{-3})(0.50\sin 120\pi t) = 0.150\sin(120\pi t)\mathrm{ Wb}
 $$
 
 (b)
 
 $$
-\epsilon(t) = -\frac{d\Phi_B}{dt} = -(0.150)(120\pi)\cos(120\pi t) = -56.5\cos(120\pi t)\text{ V}
+\epsilon(t) = -\frac{d\Phi_B}{dt} = -(0.150)(120\pi)\cos(120\pi t) = -56.5\cos(120\pi t)\mathrm{ V}
 $$
 
 $$
-\epsilon_0 = 56.5\text{ V}
+\epsilon_0 = 56.5\mathrm{ V}
 $$
 
 (c)
 
 $$
-\epsilon_{\text{rms}} = \frac{\epsilon_0}{\sqrt{2}} = \frac{56.5}{\sqrt{2}} = 40.0\text{ V}
+\epsilon_{\mathrm{rms}} = \frac{\epsilon_0}{\sqrt{2}} = \frac{56.5}{\sqrt{2}} = 40.0\mathrm{ V}
 $$
 
 </details>

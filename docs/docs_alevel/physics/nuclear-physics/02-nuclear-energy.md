@@ -26,10 +26,10 @@ energy that holds the nucleus together.
 The **mass defect** $\Delta m$ is the difference between the mass of a nucleus and the sum of the
 masses of its constituent nucleons:
 
-$$\Delta m = Zm_p + Nm_n - m_{\text{nucleus}}$$
+$$\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}$$
 
 where $Z$ is the number of protons, $N$ is the number of neutrons, $m_p$ is the proton mass, $m_n$
-is the neutron mass, and $m_{\text{nucleus}}$ is the actual nuclear mass.
+is the neutron mass, and $m_{\mathrm{nucleus}}$ is the actual nuclear mass.
 
 The mass defect is always **positive** for stable nuclei — the nucleus is lighter than its
 constituent parts.
@@ -43,7 +43,7 @@ from its constituents.
 ### Derivation of Mass-Energy Equivalence
 
 1. From Einstein's special relativity, the total energy of a body at rest is $E = mc^2$.
-2. A nucleus of mass $m_{\text{nucleus}}$ is lighter than its constituent nucleons by the mass
+2. A nucleus of mass $m_{\mathrm{nucleus}}$ is lighter than its constituent nucleons by the mass
    defect $\Delta m$.
 3. The "missing mass" has been converted to energy that holds the nucleus together.
 4. The energy equivalent of the mass defect is the binding energy:
@@ -62,13 +62,13 @@ This is the energy that would be required to completely separate the nucleus int
 protons and neutrons. Equivalently, it is the energy released when the nucleus is formed from its
 constituents.
 
-**Calculating mass defect.** Use atomic mass units (u), where $1\,\text{u} = 1.661 \times 10^{-27}$
-kg, and $1\,\text{u} \cdot c^2 = 931.5$ MeV.
+**Calculating mass defect.** Use atomic mass units (u), where $1\,\mathrm{u} = 1.661 \times 10^{-27}$
+kg, and $1\,\mathrm{u} \cdot c^2 = 931.5$ MeV.
 
 <details>
 <summary>Example: Binding Energy of Helium-4</summary>
-Calculate the binding energy of $\prescript{4}{}{2}\text{He}$. Given:
-$m(\prescript{4}{}{2}\text{He}) = 4.00260$ u, $m_H = 1.00783$ u (hydrogen atom mass), $m_n = 1.00867$ u.
+Calculate the binding energy of $\prescript{4}{}{2}\mathrm{He}$. Given:
+$m(\prescript{4}{}{2}\mathrm{He}) = 4.00260$ u, $m_H = 1.00783$ u (hydrogen atom mass), $m_n = 1.00867$ u.
 
 **Answer.** $\Delta m = 2(1.00783) + 2(1.00867) - 4.00260 = 2.01566 + 2.01734 - 4.00260 = 0.03040$
 u.
@@ -99,7 +99,7 @@ The plot of $E_b/A$ versus mass number $A$ has the following key features:
 
 - **Light nuclei** ($A < 20$): binding energy per nucleon rises rapidly with $A$. Nuclei become more
   stable by **fusion** (combining light nuclei to reach higher $E_b/A$).
-- **Iron-56** ($\prescript{56}{}{26}\text{Fe}$): the peak of the curve at $\sim 8.8$ MeV/nucleon.
+- **Iron-56** ($\prescript{56}{}{26}\mathrm{Fe}$): the peak of the curve at $\sim 8.8$ MeV/nucleon.
   Iron-56 is the most stable nucleus.
 - **Heavy nuclei** ($A > 60$): binding energy per nucleon gradually decreases. Nuclei become more
   stable by **fission** (splitting heavy nuclei to reach higher $E_b/A$).
@@ -111,21 +111,21 @@ binding energy.
 ### Derivation of Energy Released from the Binding Energy Curve
 
 1. For any nuclear process, the total number of nucleons is conserved:
-   $A_{\text{products}} = A_{\text{reactants}}$.
-2. The binding energy per nucleon changes from $(E_b/A)_{\text{initial}}$ to
-   $(E_b/A)_{\text{final}}$.
-3. Total binding energy before: $E_{b,\text{initial}} = (E_b/A)_{\text{initial}} \times A$.
-4. Total binding energy after: $E_{b,\text{final}} = (E_b/A)_{\text{final}} \times A$.
+   $A_{\mathrm{products}} = A_{\mathrm{reactants}}$.
+2. The binding energy per nucleon changes from $(E_b/A)_{\mathrm{initial}}$ to
+   $(E_b/A)_{\mathrm{final}}$.
+3. Total binding energy before: $E_{b,\mathrm{initial}} = (E_b/A)_{\mathrm{initial}} \times A$.
+4. Total binding energy after: $E_{b,\mathrm{final}} = (E_b/A)_{\mathrm{final}} \times A$.
 5. Energy released equals the increase in total binding energy:
 
-$$\Delta E = \left[(E_b/A)_{\text{final}} - (E_b/A)_{\text{initial}}\right] \times A$$
+$$\Delta E = \left[(E_b/A)_{\mathrm{final}} - (E_b/A)_{\mathrm{initial}}\right] \times A$$
 
 $$\boxed{\Delta E = \Delta(E_b/A) \times A}$$
 
-For **fission** of heavy nuclei: $(E_b/A)_{\text{final}} > (E_b/A)_{\text{initial}}$, so
+For **fission** of heavy nuclei: $(E_b/A)_{\mathrm{final}} > (E_b/A)_{\mathrm{initial}}$, so
 $\Delta E > 0$.
 
-For **fusion** of light nuclei: $(E_b/A)_{\text{final}} > (E_b/A)_{\text{initial}}$, so
+For **fusion** of light nuclei: $(E_b/A)_{\mathrm{final}} > (E_b/A)_{\mathrm{initial}}$, so
 $\Delta E > 0$.
 
 $\square$
@@ -140,14 +140,14 @@ lighter nuclei, releasing energy and typically one or more neutrons.
 A heavy nucleus (e.g., uranium-235) absorbs a neutron and splits into two lighter nuclei (fission
 fragments), releasing energy and more neutrons:
 
-$$\prescript{1}{}{0}\text{n} + \prescript{235}{}{92}\text{U} \to \prescript{236}{}{92}\text{U}^* \to \prescript{141}{}{56}\text{Ba} + \prescript{92}{}{36}\text{Kr} + 3\prescript{1}{}{0}\text{n} + \text{energy}$$
+$$\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{236}{}{92}\mathrm{U}^* \to \prescript{141}{}{56}\mathrm{Ba} + \prescript{92}{}{36}\mathrm{Kr} + 3\prescript{1}{}{0}\mathrm{n} + \mathrm{energy}$$
 
 ### Energy Released
 
 The fission fragments have a higher binding energy per nucleon than the parent nucleus. The energy
 released is:
 
-$$\Delta E = (E_b/A)_{\text{products}} \times A_{\text{products}} - (E_b/A)_{\text{parent}} \times A_{\text{parent}}$$
+$$\Delta E = (E_b/A)_{\mathrm{products}} \times A_{\mathrm{products}} - (E_b/A)_{\mathrm{parent}} \times A_{\mathrm{parent}}$$
 
 For U-235 fission: $\Delta E \approx 200$ MeV per fission event.
 
@@ -177,12 +177,12 @@ nuclear reaction occurs when a projectile strikes a target nucleus. It has dimen
 
 The cross-section is defined operationally as:
 
-$$\sigma = \frac{\text{number of reactions per unit time}}{\text{incident flux} \times \text{number of target nuclei}}$$
+$$\sigma = \frac{\mathrm{number of reactions per unit time}}{\mathrm{incident flux} \times \mathrm{number of target nuclei}}$$
 
 The SI unit would be m$^2$, but nuclear cross-sections are so small that the standard unit is the
 **barn**:
 
-$$1\,\text{barn} = 10^{-28}\,\text{m}^2$$
+$$1\,\mathrm{barn} = 10^{-28}\,\mathrm{m}^2$$
 
 The name is deliberate: a typical nuclear cross-section is "as big as a barn" compared to the
 geometric cross-section of a nucleus ($\sim \pi R^2 \sim 10^{-30}$ m$^2$). Quantum mechanical
@@ -194,7 +194,7 @@ interaction area much larger than the physical size.
 The fission cross-section depends critically on neutron energy. This is the fundamental reason why
 some isotopes are "fissile" and others are merely "fertile."
 
-For $\prescript{235}{}{92}\text{U}$:
+For $\prescript{235}{}{92}\mathrm{U}$:
 
 - Thermal neutron cross-section ($E \approx 0.025$ eV): $\sigma_f \approx 585$ barns
 - Fast neutron cross-section ($E \approx 1$ MeV): $\sigma_f \approx 1$ barn
@@ -210,21 +210,21 @@ into a fissile isotope.
 
 The distinction follows from the odd-even binding energy effect. When a nucleus absorbs a neutron,
 the compound nucleus has excitation energy equal to the binding energy of the added neutron
-$E_b^{\text{added}}$. Fission occurs only if this exceeds the fission barrier $E_f$.
+$E_b^{\mathrm{added}}$. Fission occurs only if this exceeds the fission barrier $E_f$.
 
-For $\prescript{235}{}{92}\text{U} + \text{n} \to \prescript{236}{}{92}\text{U}^*$:
+For $\prescript{235}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{236}{}{92}\mathrm{U}^*$:
 
-- $\prescript{235}{}{92}\text{U}$ has 143 neutrons (odd). Adding a neutron pairs the last neutron,
+- $\prescript{235}{}{92}\mathrm{U}$ has 143 neutrons (odd). Adding a neutron pairs the last neutron,
   gaining extra pairing energy.
-- $E_b^{\text{added}} \approx 6.5$ MeV while $E_f \approx 5.3$ MeV.
-- Since $E_b^{\text{added}} \gt{} E_f$, fission proceeds even with thermal neutrons.
+- $E_b^{\mathrm{added}} \approx 6.5$ MeV while $E_f \approx 5.3$ MeV.
+- Since $E_b^{\mathrm{added}} \gt{} E_f$, fission proceeds even with thermal neutrons.
 
-For $\prescript{238}{}{92}\text{U} + \text{n} \to \prescript{239}{}{92}\text{U}^*$:
+For $\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\mathrm{U}^*$:
 
-- $\prescript{238}{}{92}\text{U}$ has 146 neutrons (even). Adding a neutron creates an unpaired
+- $\prescript{238}{}{92}\mathrm{U}$ has 146 neutrons (even). Adding a neutron creates an unpaired
   neutron with less pairing energy gain.
-- $E_b^{\text{added}} \approx 4.9$ MeV while $E_f \approx 5.5$ MeV.
-- Since $E_b^{\text{added}} \lt{} E_f$, thermal neutrons cannot induce fission.
+- $E_b^{\mathrm{added}} \approx 4.9$ MeV while $E_f \approx 5.5$ MeV.
+- Since $E_b^{\mathrm{added}} \lt{} E_f$, thermal neutrons cannot induce fission.
 
 :::warning
 Common Pitfall Do not confuse "fissile" with "radioactive." U-238 is highly radioactive
@@ -236,7 +236,7 @@ occurring fissile isotope is U-235 (0.72\% of natural uranium).
 
 U-238 can fission, but only with neutrons above approximately 1 MeV. The condition is:
 
-$$E_b^{\text{added}} + E_n^{\text{kinetic}} \gt{} E_f \implies 4.9 + E_n \gt{} 5.5 \implies E_n \gt{} 0.6\,\text{MeV}$$
+$$E_b^{\mathrm{added}} + E_n^{\mathrm{kinetic}} \gt{} E_f \implies 4.9 + E_n \gt{} 5.5 \implies E_n \gt{} 0.6\,\mathrm{MeV}$$
 
 The practical threshold is quoted as $\sim 1$ MeV to account for the distribution of fission barrier
 heights and the very small cross-section just above threshold.
@@ -246,7 +246,7 @@ heights and the very small cross-section just above threshold.
 Although U-238 is not fissile, it is **fertile**. It captures a neutron and is transmuted into
 Pu-239 through beta decays:
 
-$$\prescript{238}{}{92}\text{U} + \text{n} \to \prescript{239}{}{92}\text{U} \xrightarrow{\beta^-,\; 23.5\,\text{min}} \prescript{239}{}{93}\text{Np} \xrightarrow{\beta^-,\; 2.36\,\text{days}} \prescript{239}{}{94}\text{Pu}$$
+$$\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\mathrm{U} \xrightarrow{\beta^-,\; 23.5\,\mathrm{min}} \prescript{239}{}{93}\mathrm{Np} \xrightarrow{\beta^-,\; 2.36\,\mathrm{days}} \prescript{239}{}{94}\mathrm{Pu}$$
 
 This conversion chain is the basis of **breeder reactors**, discussed in Section 5.
 
@@ -275,8 +275,8 @@ U-235 thermal fission:
 
 | Precursor                       | Half-life | Yield per 100 fissions |
 | ------------------------------- | --------- | ---------------------- |
-| $\prescript{87}{}{35}\text{Br}$ | 55.7 s    | 0.027                  |
-| $\prescript{137}{}{53}\text{I}$ | 24.5 s    | 0.025                  |
+| $\prescript{87}{}{35}\mathrm{Br}$ | 55.7 s    | 0.027                  |
+| $\prescript{137}{}{53}\mathrm{I}$ | 24.5 s    | 0.025                  |
 
 The **delayed neutron fraction** $\beta$ is the fraction of all fission neutrons that are delayed.
 For U-235, $\beta \approx 0.0065$ (0.65\%). Although tiny, these neutrons are essential for reactor
@@ -292,9 +292,9 @@ reaction.
 - Thermal absorption cross-section: $\sigma_a \approx 2.65 \times 10^6$ barns (the largest known for
   any stable nuclide)
 - Produced mainly by decay:
-  $\prescript{135}{}{52}\text{Te} \to \prescript{135}{}{53}\text{I}
-  \xrightarrow{\beta^-} \prescript{135}{}{54}\text{Xe} \xrightarrow{\beta^-} \prescript{135}{}{55}\text{Cs}$
-- $\prescript{135}{}{54}\text{Xe}$ has $t_{1/2} = 9.2$ hours
+  $\prescript{135}{}{52}\mathrm{Te} \to \prescript{135}{}{53}\mathrm{I}
+  \xrightarrow{\beta^-} \prescript{135}{}{54}\mathrm{Xe} \xrightarrow{\beta^-} \prescript{135}{}{55}\mathrm{Cs}$
+- $\prescript{135}{}{54}\mathrm{Xe}$ has $t_{1/2} = 9.2$ hours
 
 After a reactor shutdown, xenon-135 builds up from iodine-135 decay faster than it decays away. This
 **iodine pit** can prevent restart for 24--48 hours.
@@ -329,13 +329,13 @@ around the core where excess neutrons convert it to fissile isotopes.
 
 **Uranium-plutonium cycle:**
 
-$$\prescript{238}{}{92}\text{U} + \text{n} \to \prescript{239}{}{92}\text{U} \to \prescript{239}{}{93}\text{Np} \to \prescript{239}{}{94}\text{Pu}$$
+$$\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\mathrm{U} \to \prescript{239}{}{93}\mathrm{Np} \to \prescript{239}{}{94}\mathrm{Pu}$$
 
 **Thorium-uranium cycle:**
 
-$$\prescript{232}{}{90}\text{Th} + \text{n} \to \prescript{233}{}{90}\text{Th} \to \prescript{233}{}{91}\text{Pa} \to \prescript{233}{}{92}\text{U}$$
+$$\prescript{232}{}{90}\mathrm{Th} + \mathrm{n} \to \prescript{233}{}{90}\mathrm{Th} \to \prescript{233}{}{91}\mathrm{Pa} \to \prescript{233}{}{92}\mathrm{U}$$
 
-The breeding ratio $\text{BR} = \text{fissile atoms produced} / \text{fissile atoms consumed}$. For
+The breeding ratio $\mathrm{BR} = \mathrm{fissile atoms produced} / \mathrm{fissile atoms consumed}$. For
 BR $\gt{} 1$, the reactor is a net producer. Fast breeder reactors using liquid sodium achieve BR
 $\approx 1.2$--$1.3$. The thorium cycle is attractive because thorium is roughly $3\times$ more
 abundant than uranium and produces less long-lived transuranic waste.
@@ -394,12 +394,12 @@ its energy in a single collision. $\square$
 
 | Moderator                                | $M/m_n$ | $\Delta E_{\max}/E$ | Collisions to thermalise |
 | ---------------------------------------- | ------- | ------------------- | ------------------------ |
-| Hydrogen ($\prescript{1}{}{1}\text{H}$)  | 1       | 1.000               | $\sim 18$                |
-| Deuterium ($\prescript{2}{}{1}\text{H}$) | 2       | 0.889               | $\sim 25$                |
+| Hydrogen ($\prescript{1}{}{1}\mathrm{H}$)  | 1       | 1.000               | $\sim 18$                |
+| Deuterium ($\prescript{2}{}{1}\mathrm{H}$) | 2       | 0.889               | $\sim 25$                |
 | Carbon-12                                | 12      | 0.284               | $\sim 115$               |
 
 The average logarithmic energy decrement per collision is $\xi$, and the number of collisions to
-thermalise from $E_0 = 2$ MeV to $E_{\text{th}} = 0.025$ eV is $n = \ln(E_0/E_{\text{th}})/\xi$.
+thermalise from $E_0 = 2$ MeV to $E_{\mathrm{th}} = 0.025$ eV is $n = \ln(E_0/E_{\mathrm{th}})/\xi$.
 Hydrogen is the best moderator by energy loss per collision, but it has a non-negligible absorption
 cross-section. Deuterium (in heavy water) is the best practical compromise: high energy loss with
 negligible absorption.
@@ -411,7 +411,7 @@ Control rods are made of materials with very high neutron absorption cross-secti
 
 The **multiplication factor** is:
 
-$$k = \frac{\text{neutrons in generation } n + 1}{\text{neutrons in generation } n}$$
+$$k = \frac{\mathrm{neutrons in generation } n + 1}{\mathrm{neutrons in generation } n}$$
 
 | Regime        | Condition   | Behaviour                       |
 | ------------- | ----------- | ------------------------------- |
@@ -419,14 +419,14 @@ $$k = \frac{\text{neutrons in generation } n + 1}{\text{neutrons in generation }
 | Critical      | $k = 1$     | Steady power (normal operation) |
 | Supercritical | $k \gt{} 1$ | Power increases                 |
 
-The **effective** multiplication factor $k_{\text{eff}}$ accounts for neutron leakage and non-fuel
-absorption: $k_{\text{eff}} = k_{\infty} \cdot P_{\text{non-leak}}$, where $k_{\infty}$ is the
-infinite-medium factor and $P_{\text{non-leak}}$ is the non-leakage probability.
+The **effective** multiplication factor $k_{\mathrm{eff}}$ accounts for neutron leakage and non-fuel
+absorption: $k_{\mathrm{eff}} = k_{\infty} \cdot P_{\mathrm{non-leak}}$, where $k_{\infty}$ is the
+infinite-medium factor and $P_{\mathrm{non-leak}}$ is the non-leakage probability.
 
 :::tip
 Exam Technique When asked about reactor control, state the precise condition: "The reactor is
-critical when $k_{\text{eff}} = 1$. Control rods absorb neutrons to reduce $k_{\text{eff}}$ below 1
-for shutdown, or are adjusted to maintain $k_{\text{eff}} = 1$ for steady power."
+critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce $k_{\mathrm{eff}}$ below 1
+for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for steady power."
 :::
 
 ### Delayed Neutrons and Reactor Control
@@ -435,9 +435,9 @@ This is one of the most important engineering facts about nuclear reactors. With
 neutrons, controlling a reactor would be essentially impossible on human timescales.
 
 **Theorem.** The reactor response time is governed by delayed neutrons, not the prompt neutron
-lifetime, provided $k_{\text{eff}} \lt 1 + \beta$.
+lifetime, provided $k_{\mathrm{eff}} \lt 1 + \beta$.
 
-_Proof._ The prompt neutron lifetime is $\ell \approx 10^{-4}$ s. If $k_{\text{eff}} = 1.001$ (0.1\%
+_Proof._ The prompt neutron lifetime is $\ell \approx 10^{-4}$ s. If $k_{\mathrm{eff}} = 1.001$ (0.1\%
 supercritical) with only prompt neutrons, the power grows as:
 
 $$P(t) = P_0 \, e^{(k-1)t/\ell} = P_0 \, e^{0.001 \times t / 10^{-4}} = P_0 \, e^{10\,t}$$
@@ -445,20 +445,20 @@ $$P(t) = P_0 \, e^{(k-1)t/\ell} = P_0 \, e^{0.001 \times t / 10^{-4}} = P_0 \, e
 Power doubles every $\ln 2 / 10 \approx 0.069$ s. No mechanical system can respond this fast.
 
 With delayed neutrons (fraction $\beta \approx 0.0065$ for U-235), the reactor is "prompt
-subcritical" when $1 \lt k_{\text{eff}} \lt 1 + \beta$. In this regime, the neutron population grows
+subcritical" when $1 \lt k_{\mathrm{eff}} \lt 1 + \beta$. In this regime, the neutron population grows
 on the timescale of the longest-lived delayed precursor ($\sim 55$ s for Br-87), not the prompt
 lifetime. The effective time constant becomes:
 
-$$\tau_{\text{eff}} \approx \frac{\beta / \bar{\lambda}}{k_{\text{eff}} - 1}$$
+$$\tau_{\mathrm{eff}} \approx \frac{\beta / \bar{\lambda}}{k_{\mathrm{eff}} - 1}$$
 
-where $\bar{\lambda} \approx 0.08\,\text{s}^{-1}$. For $k_{\text{eff}} = 1.001$:
-$\tau_{\text{eff}} \approx 0.0065 / (0.08 \times 0.001) \approx 81$ s --- easily manageable by
+where $\bar{\lambda} \approx 0.08\,\mathrm{s}^{-1}$. For $k_{\mathrm{eff}} = 1.001$:
+$\tau_{\mathrm{eff}} \approx 0.0065 / (0.08 \times 0.001) \approx 81$ s --- easily manageable by
 mechanical control systems. $\square$
 
 :::warning
 Common Pitfall The reactor period is not the prompt neutron lifetime. The reactor
 responds on the timescale set by delayed neutrons ($\sim$tens of seconds), provided
-$k_{\text{eff}} \lt 1 + \beta$. Only if $k_{\text{eff}}$ exceeds $1 + \beta$ does the reactor become
+$k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the reactor become
 "prompt supercritical" and uncontrollable.
 :::
 
@@ -515,7 +515,7 @@ nucleus, releasing energy due to the increase in binding energy per nucleon.
 
 Two light nuclei combine to form a heavier nucleus, releasing energy:
 
-$$\prescript{2}{}{1}\text{H} + \prescript{3}{}{1}\text{H} \to \prescript{4}{}{2}\text{He} + \prescript{1}{}{0}\text{n} + 17.6\,\text{MeV}$$
+$$\prescript{2}{}{1}\mathrm{H} + \prescript{3}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 17.6\,\mathrm{MeV}$$
 
 ### Conditions for Fusion
 
@@ -548,7 +548,7 @@ The pp chain is the dominant fusion process in main-sequence stars with mass $\l
 
 **Step 1** (rate-limiting, mediated by the weak interaction):
 
-$$\prescript{1}{}{1}\text{H} + \prescript{1}{}{1}\text{H} \to \prescript{2}{}{1}\text{H} + \text{e}^+ + \nu_e + 0.42\,\text{MeV}$$
+$$\prescript{1}{}{1}\mathrm{H} + \prescript{1}{}{1}\mathrm{H} \to \prescript{2}{}{1}\mathrm{H} + \mathrm{e}^+ + \nu_e + 0.42\,\mathrm{MeV}$$
 
 One proton must undergo inverse beta decay ($p \to n + e^+ + \nu_e$), which requires the weak force
 and is extraordinarily slow --- mean time $\sim 10^{10}$ years in the solar core. This slowness is
@@ -556,26 +556,26 @@ why the Sun has a long lifetime.
 
 **Step 2**:
 
-$$\prescript{2}{}{1}\text{H} + \prescript{1}{}{1}\text{H} \to \prescript{3}{}{2}\text{He} + \gamma + 5.49\,\text{MeV}$$
+$$\prescript{2}{}{1}\mathrm{H} + \prescript{1}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \gamma + 5.49\,\mathrm{MeV}$$
 
 **Step 3** (dominant branch, $\sim 85\%$ probability):
 
-$$\prescript{3}{}{2}\text{He} + \prescript{3}{}{2}\text{He} \to \prescript{4}{}{2}\text{He} + 2\prescript{1}{}{1}\text{H} + 12.86\,\text{MeV}$$
+$$\prescript{3}{}{2}\mathrm{He} + \prescript{3}{}{2}\mathrm{He} \to \prescript{4}{}{2}\mathrm{He} + 2\prescript{1}{}{1}\mathrm{H} + 12.86\,\mathrm{MeV}$$
 
 **Net reaction:**
-$4\prescript{1}{}{1}\text{H} \to \prescript{4}{}{2}\text{He} + 2\text{e}^+ + 2\nu_e + 2\gamma + 26.7\,\text{MeV}$
+$4\prescript{1}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + 2\mathrm{e}^+ + 2\nu_e + 2\gamma + 26.7\,\mathrm{MeV}$
 
 ### The CNO Cycle
 
 In stars more massive than $\sim 1.5\,M_\odot$, the CNO cycle dominates. Carbon, nitrogen, and
 oxygen act as catalysts:
 
-$$\prescript{12}{}{6}\text{C} \xrightarrow{+\text{p}} \prescript{13}{}{7}\text{N} \xrightarrow{\beta^+} \prescript{13}{}{6}\text{C} \xrightarrow{+\text{p}} \prescript{14}{}{7}\text{N} \xrightarrow{+\text{p}} \prescript{15}{}{8}\text{O} \xrightarrow{\beta^+} \prescript{15}{}{7}\text{N} \xrightarrow{+\text{p}} \prescript{12}{}{6}\text{C} + \prescript{4}{}{2}\text{He}$$
+$$\prescript{12}{}{6}\mathrm{C} \xrightarrow{+\mathrm{p}} \prescript{13}{}{7}\mathrm{N} \xrightarrow{\beta^+} \prescript{13}{}{6}\mathrm{C} \xrightarrow{+\mathrm{p}} \prescript{14}{}{7}\mathrm{N} \xrightarrow{+\mathrm{p}} \prescript{15}{}{8}\mathrm{O} \xrightarrow{\beta^+} \prescript{15}{}{7}\mathrm{N} \xrightarrow{+\mathrm{p}} \prescript{12}{}{6}\mathrm{C} + \prescript{4}{}{2}\mathrm{He}$$
 
-**Net reaction:** $4\text{p} \to \prescript{4}{}{2}\text{He} + 26.7$ MeV (identical to the pp
+**Net reaction:** $4\mathrm{p} \to \prescript{4}{}{2}\mathrm{He} + 26.7$ MeV (identical to the pp
 chain).
 
-The CNO cycle rate scales as $\propto T^{16\text{--}20}$ (for the slowest step) versus $\propto T^4$
+The CNO cycle rate scales as $\propto T^{16\mathrm{--}20}$ (for the slowest step) versus $\propto T^4$
 for the pp chain. At $T \gt{} 1.5 \times 10^7$ K the CNO cycle dominates. It also produces a steeper
 temperature gradient in the stellar core, driving convection in massive stars.
 
@@ -584,20 +584,20 @@ temperature gradient in the stellar core, driving convection in massive stars.
 For net energy output, the fusion power must exceed power losses. John Lawson (1957) derived the
 minimum condition for D-T fusion:
 
-$$n\tau \gt{} 10^{20}\,\text{s}\,\text{m}^{-3}$$
+$$n\tau \gt{} 10^{20}\,\mathrm{s}\,\mathrm{m}^{-3}$$
 
 where $n$ is the ion density (m$^{-3}$) and $\tau$ is the energy confinement time (s).
 
 **Derivation sketch.** Fusion power density:
-$P_{\text{fus}} = \frac{1}{4}n^2\langle\sigma v\rangle
-E_{\text{fus}}$, where
+$P_{\mathrm{fus}} = \frac{1}{4}n^2\langle\sigma v\rangle
+E_{\mathrm{fus}}$, where
 $\langle\sigma v\rangle$ is the reactivity (Maxwell-Boltzmann averaged) and the factor of $1/4$
 accounts for equal D and T densities. Power lost by thermal conduction is
-$P_{\text{loss}} = 3nkT/\tau$. Setting $P_{\text{fus}} \ge P_{\text{loss}}$ and substituting the
+$P_{\mathrm{loss}} = 3nkT/\tau$. Setting $P_{\mathrm{fus}} \ge P_{\mathrm{loss}}$ and substituting the
 temperature-dependent $\langle\sigma v\rangle$ yields the Lawson criterion. The exact numerical
 value depends on fuel choice and loss model.
 
-The triple product $nT\tau \gt{} 3 \times 10^{21}\,\text{keV}\,\text{s}\,\text{m}^{-3}$ is sometimes
+The triple product $nT\tau \gt{} 3 \times 10^{21}\,\mathrm{keV}\,\mathrm{s}\,\mathrm{m}^{-3}$ is sometimes
 quoted as an equivalent form.
 
 ### Tokamak Design
@@ -622,7 +622,7 @@ itself --- no magnetic fields are needed.
 
 ### Why D-T is the Easiest Fusion Reaction
 
-$$\prescript{2}{}{1}\text{H} + \prescript{3}{}{1}\text{H} \to \prescript{4}{}{2}\text{He} + \text{n} + 17.6\,\text{MeV}$$
+$$\prescript{2}{}{1}\mathrm{H} + \prescript{3}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + \mathrm{n} + 17.6\,\mathrm{MeV}$$
 
 D-T has the lowest Coulomb barrier of any practical fuel combination: tritium has the largest
 nuclear radius relative to its charge, the $Q$-value of 17.6 MeV is the highest per reaction of any
@@ -630,7 +630,7 @@ D-based fuel, and the reactivity $\langle\sigma v\rangle$ peaks at the lowest te
 keV versus $\sim 500$ keV for D-D). However, tritium ($t_{1/2} = 12.3$ years) must be bred from
 lithium:
 
-$$\prescript{6}{}{3}\text{Li} + \text{n} \to \prescript{4}{}{2}\text{He} + \prescript{3}{}{1}\text{H} + 4.8\,\text{MeV}$$
+$$\prescript{6}{}{3}\mathrm{Li} + \mathrm{n} \to \prescript{4}{}{2}\mathrm{He} + \prescript{3}{}{1}\mathrm{H} + 4.8\,\mathrm{MeV}$$
 
 ### The ITER Project
 
@@ -665,8 +665,8 @@ Fe-56 is produced in greater abundance because the alpha process favours nuclei 
 
 <details>
 <summary>Problem 1</summary>
-Calculate the mass defect of $\prescript{56}{}{26}\text{Fe}$. Given:
-$m(\prescript{56}{}{26}\text{Fe}) = 55.93493$ u, $m_H = 1.00783$ u (hydrogen atom mass), $m_n = 1.00867$ u.
+Calculate the mass defect of $\prescript{56}{}{26}\mathrm{Fe}$. Given:
+$m(\prescript{56}{}{26}\mathrm{Fe}) = 55.93493$ u, $m_H = 1.00783$ u (hydrogen atom mass), $m_n = 1.00867$ u.
 
 **Answer.**
 $\Delta m = 26(1.00783) + 30(1.00867) - 55.93493 = 26.20358 + 30.26010 - 55.93493 = 0.52875$ u.
@@ -680,7 +680,7 @@ $E_b = 0.52875 \times 931.5 = 492.5$ MeV. $E_b/A = 492.5/56 = 8.79$ MeV/nucleon.
 
 <details>
 <summary>Problem 2</summary>
-The binding energy per nucleon of $\prescript{235}{}{92}\text{U}$ is 7.59 MeV. When it undergoes
+The binding energy per nucleon of $\prescript{235}{}{92}\mathrm{U}$ is 7.59 MeV. When it undergoes
 fission into two nuclei each with binding energy per nucleon of 8.40 MeV, calculate the energy
 released per fission.
 
@@ -710,7 +710,7 @@ released as energy.
 <details>
 <summary>Problem 4</summary>
 Calculate the energy released when a proton and neutron combine to form a deuteron
-($\prescript{2}{}{1}\text{H}$). Given: $m_p = 1.67262 \times 10^{-27}$ kg,
+($\prescript{2}{}{1}\mathrm{H}$). Given: $m_p = 1.67262 \times 10^{-27}$ kg,
 $m_n = 1.67493 \times 10^{-27}$ kg, $m_d = 3.34358 \times 10^{-27}$ kg, $c = 3.0 \times 10^8$ m
 s$^{-1}$.
 
@@ -756,9 +756,9 @@ maintaining the reactor in a critical state (one fission per fission, on average
 <details>
 <summary>Problem 7</summary>
 The fusion reaction
-$\prescript{2}{}{1}\text{H} + \prescript{2}{}{1}\text{H} \to \prescript{3}{}{2}\text{He} + \prescript{1}{}{0}\text{n}$
-releases 3.27 MeV. Given the masses: $m(\prescript{2}{}{1}\text{H}) = 2.01410$ u,
-$m(\prescript{3}{}{2}\text{He}) = 3.01603$ u, $m_n = 1.00867$ u. Verify the energy release using the
+$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n}$
+releases 3.27 MeV. Given the masses: $m(\prescript{2}{}{1}\mathrm{H}) = 2.01410$ u,
+$m(\prescript{3}{}{2}\mathrm{He}) = 3.01603$ u, $m_n = 1.00867$ u. Verify the energy release using the
 mass defect.
 
 **Answer.** Total mass before: $2 \times 2.01410 = 4.02820$ u. Total mass after:
@@ -789,9 +789,9 @@ energy (via the Maxwell-Boltzmann distribution) to overcome this barrier.
 <details>
 <summary>Problem 9</summary>
 Calculate the energy released by the fission reaction
-$\text{n} + \prescript{235}{}{92}\text{U} \to \prescript{141}{}{56}\text{Ba} + \prescript{92}{}{36}\text{Kr} + 3\text{n}$.
-Given: $m_n = 1.00867$ u, $m(\prescript{235}{}{92}\text{U}) = 235.04393$ u,
-$m(\prescript{141}{}{56}\text{Ba}) = 140.91440$ u, $m(\prescript{92}{}{36}\text{Kr}) = 91.92627$ u.
+$\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{141}{}{56}\mathrm{Ba} + \prescript{92}{}{36}\mathrm{Kr} + 3\mathrm{n}$.
+Given: $m_n = 1.00867$ u, $m(\prescript{235}{}{92}\mathrm{U}) = 235.04393$ u,
+$m(\prescript{141}{}{56}\mathrm{Ba}) = 140.91440$ u, $m(\prescript{92}{}{36}\mathrm{Kr}) = 91.92627$ u.
 
 **Answer.** Reactants: $1.00867 + 235.04393 = 236.05260$ u. Products:
 $140.91440 + 91.92627 + 3(1.00867) = 140.91440 + 91.92627 + 3.02601 = 235.86668$ u.
@@ -809,9 +809,9 @@ $E = 0.18592 \times 931.5 = 173.2$ MeV.
 Calculate the number of elastic collisions required to thermalise a 2 MeV neutron to 0.025 eV
 using (a) graphite moderator ($\xi = 0.158$) and (b) heavy water moderator ($\xi = 0.725$).
 
-**Answer.** The number of collisions is $n = \ln(E_0 / E_{\text{th}}) / \xi$.
+**Answer.** The number of collisions is $n = \ln(E_0 / E_{\mathrm{th}}) / \xi$.
 
-$E_0 / E_{\text{th}} = 2 \times 10^6 / 0.025 = 8 \times 10^7$. $\ln(8 \times 10^7) = 18.20$.
+$E_0 / E_{\mathrm{th}} = 2 \times 10^6 / 0.025 = 8 \times 10^7$. $\ln(8 \times 10^7) = 18.20$.
 
 (a) Graphite: $n = 18.20 / 0.158 = 115$ collisions. (b) Heavy water:
 $n = 18.20 / 0.725 = 25.1 \approx 25$ collisions.
@@ -850,9 +850,9 @@ Annual production $= 1.86 \times 10^{-6} \times 3.156 \times 10^7 = 58.7$ kg/yea
 A D-T fusion plasma has ion density $n = 1.2 \times 10^{20}$ m$^{-3}$ and energy confinement time
 $\tau = 0.8$ s. Does this satisfy the Lawson criterion?
 
-**Answer.** Lawson criterion for D-T: $n\tau \gt{} 10^{20}\,\text{s}\,\text{m}^{-3}$.
+**Answer.** Lawson criterion for D-T: $n\tau \gt{} 10^{20}\,\mathrm{s}\,\mathrm{m}^{-3}$.
 
-$n\tau = 1.2 \times 10^{20} \times 0.8 = 9.6 \times 10^{19}\,\text{s}\,\text{m}^{-3}$.
+$n\tau = 1.2 \times 10^{20} \times 0.8 = 9.6 \times 10^{19}\,\mathrm{s}\,\mathrm{m}^{-3}$.
 
 Since $9.6 \times 10^{19} \lt 10^{20}$, this does **not** satisfy the Lawson criterion. The plasma
 must achieve either higher density or longer confinement time.
@@ -876,8 +876,8 @@ $= 2.0 \times 10^{19} \times 3.088 \times 10^{-11}$ $= 6.18 \times 10^8$ W $= 61
 
 <details>
 <summary>Problem 14</summary>
-$\prescript{16}{}{8}\text{O}$ has binding energy per nucleon $E_b/A = 7.98$ MeV/nucleon. A
-hypothetical fission of $\prescript{16}{}{8}\text{O}$ into two $\prescript{8}{}{4}\text{Be}$ nuclei
+$\prescript{16}{}{8}\mathrm{O}$ has binding energy per nucleon $E_b/A = 7.98$ MeV/nucleon. A
+hypothetical fission of $\prescript{16}{}{8}\mathrm{O}$ into two $\prescript{8}{}{4}\mathrm{Be}$ nuclei
 (each with $E_b/A = 7.06$ MeV/nucleon) is proposed. Determine whether this fission releases or
 absorbs energy, and explain using the binding energy curve.
 

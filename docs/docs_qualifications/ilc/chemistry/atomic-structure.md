@@ -33,25 +33,25 @@ Notation: ${}^A_Z X$
 
 Atoms of the same element with different numbers of neutrons (same $Z$, different $A$).
 
-**Example (OL):** Carbon has two common isotopes: ${}^{12}_6\text{C}$ (98.9%) and
-${}^{13}_6\text{C}$ (1.1%).
+**Example (OL):** Carbon has two common isotopes: ${}^{12}_6\mathrm{C}$ (98.9%) and
+${}^{13}_6\mathrm{C}$ (1.1%).
 
 ### Relative Atomic Mass (OL/HL)
 
 $$
-A_r = \frac{\sum(\text{isotope abundance} \times \text{isotope mass})}{100}
+A_r = \frac{\sum(\mathrm{isotope abundance} \times \mathrm{isotope mass})}{100}
 $$
 
-**Example (OL):** Chlorine has two isotopes: ${}^{35}\text{Cl}$ (75%) and ${}^{37}\text{Cl}$ (25%).
+**Example (OL):** Chlorine has two isotopes: ${}^{35}\mathrm{Cl}$ (75%) and ${}^{37}\mathrm{Cl}$ (25%).
 
 $$
 A_r = \frac{75 \times 35 + 25 \times 37}{100} = \frac{2625 + 925}{100} = 35.5
 $$
 
 **Worked Example 1 (HL):** The relative atomic mass of boron is 10.81. If boron has two isotopes,
-${}^{10}\text{B}$ and ${}^{11}\text{B}$, calculate their percentage abundances.
+${}^{10}\mathrm{B}$ and ${}^{11}\mathrm{B}$, calculate their percentage abundances.
 
-Let $x$ = percentage of ${}^{10}\text{B}$ and $(100 - x)$ = percentage of ${}^{11}\text{B}$.
+Let $x$ = percentage of ${}^{10}\mathrm{B}$ and $(100 - x)$ = percentage of ${}^{11}\mathrm{B}$.
 
 $$10x + 11(100 - x) = 10.81 \times 100$$
 
@@ -59,10 +59,10 @@ $$10x + 1100 - 11x = 1081$$
 
 $$-x = -19 \implies x = 19\%$$
 
-${}^{10}\text{B} = 19\%$, ${}^{11}\text{B} = 81\%$.
+${}^{10}\mathrm{B} = 19\%$, ${}^{11}\mathrm{B} = 81\%$.
 
 **Worked Example 2 (OL):** Calculate the relative atomic mass of neon from its isotopes:
-${}^{20}\text{Ne}$ (90.5%) and ${}^{22}\text{Ne}$ (9.5%).
+${}^{20}\mathrm{Ne}$ (90.5%) and ${}^{22}\mathrm{Ne}$ (9.5%).
 
 $$A_r = \frac{90.5 \times 20 + 9.5 \times 22}{100} = \frac{1810 + 209}{100} = \frac{2019}{100} = 20.19$$
 
@@ -113,16 +113,16 @@ Electrons fill orbitals from lowest to highest energy. The order is:
 
 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d, 6p, ...
 
-**Example (HL):** Iron ($Z = 26$): $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$ or $[\text{Ar}]\,4s^2 3d^6$.
+**Example (HL):** Iron ($Z = 26$): $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$ or $[\mathrm{Ar}]\,4s^2 3d^6$.
 
 **Worked Example 4 (HL):** Write the full electron configuration and orbital diagram for chromium
 ($Z = 24$). (Hint: chromium is an exception.)
 
-Expected: $[\text{Ar}]\,4s^2 3d^4$. However, chromium is an exception: $[\text{Ar}]\,4s^1 3d^5$.
+Expected: $[\mathrm{Ar}]\,4s^2 3d^4$. However, chromium is an exception: $[\mathrm{Ar}]\,4s^1 3d^5$.
 
 This is because a half-filled $d$ subshell ($3d^5$) is more stable than a partially filled one
-($3d^4$). Similarly, copper ($Z = 29$) is $[\text{Ar}]\,4s^1 3d^{10}$ rather than
-$[\text{Ar}]\,4s^2 3d^9$.
+($3d^4$). Similarly, copper ($Z = 29$) is $[\mathrm{Ar}]\,4s^1 3d^{10}$ rather than
+$[\mathrm{Ar}]\,4s^2 3d^9$.
 
 ### Hund's Rule (HL)
 
@@ -164,7 +164,7 @@ When hydrogen atoms absorb energy, electrons are excited to higher energy levels
 to lower levels, they emit photons:
 
 $$
-\Delta E = E_{\text{higher}} - E_{\text{lower}} = hf = \frac{hc}{\lambda}
+\Delta E = E_{\mathrm{higher}} - E_{\mathrm{lower}} = hf = \frac{hc}{\lambda}
 $$
 
 **Balmer series** (transitions to $n = 2$): visible light.
@@ -177,7 +177,7 @@ $$
 
 The energy of an electron in the $n$th level of hydrogen is:
 
-$$E_n = -\frac{13.6}{n^2} \text{ eV}$$
+$$E_n = -\frac{13.6}{n^2} \mathrm{ eV}$$
 
 This is derived from the Bohr model, which postulates that the angular momentum of the electron is
 quantised: $mvr = n\hbar$. Solving for the allowed radii and energies gives the above formula.
@@ -186,19 +186,19 @@ quantised: $mvr = n\hbar$. Solving for the allowed radii and energies gives the 
 $n = 4$ to $n = 2$.
 
 $$
-\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{16}\right) = 13.6 \times \frac{3}{16} = 2.55\text{ eV}
+\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{16}\right) = 13.6 \times \frac{3}{16} = 2.55\mathrm{ eV}
 $$
 
 $$
-\lambda = \frac{hc}{\Delta E} = \frac{1240\text{ eV nm}}{2.55\text{ eV}} = 486\text{ nm}
+\lambda = \frac{hc}{\Delta E} = \frac{1240\mathrm{ eV nm}}{2.55\mathrm{ eV}} = 486\mathrm{ nm}
 $$
 
 This is the blue-green line in the Balmer series.
 
-**Worked Example 6 (HL):** A photon of wavelength $97.2\text{ nm}$ is emitted from a hydrogen atom.
+**Worked Example 6 (HL):** A photon of wavelength $97.2\mathrm{ nm}$ is emitted from a hydrogen atom.
 Identify the transition involved.
 
-$$\Delta E = \frac{1240}{97.2} = 12.76 \text{ eV}$$
+$$\Delta E = \frac{1240}{97.2} = 12.76 \mathrm{ eV}$$
 
 $$12.76 = 13.6\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
@@ -221,13 +221,13 @@ Transition: $n = 4 \to n = 1$ (Lyman series).
 Decreases across a period (increasing nuclear charge pulls electrons closer). Increases down a group
 (additional shells).
 
-**Worked Example 7 (OL):** Arrange the following in order of increasing atomic radius: $\text{Na}$,
-$\text{Mg}$, $\text{Al}$, $\text{K}$.
+**Worked Example 7 (OL):** Arrange the following in order of increasing atomic radius: $\mathrm{Na}$,
+$\mathrm{Mg}$, $\mathrm{Al}$, $\mathrm{K}$.
 
-$\text{Al} < \text{Mg} < \text{Na} < \text{K}$.
+$\mathrm{Al} < \mathrm{Mg} < \mathrm{Na} < \mathrm{K}$.
 
-$\text{Na}$, $\text{Mg}$, and $\text{Al}$ are in period 3: radius decreases from left to right.
-$\text{K}$ is in period 4 (below $\text{Na}$) and has a much larger radius.
+$\mathrm{Na}$, $\mathrm{Mg}$, and $\mathrm{Al}$ are in period 3: radius decreases from left to right.
+$\mathrm{K}$ is in period 4 (below $\mathrm{Na}$) and has a much larger radius.
 
 ### Ionisation Energy (OL/HL)
 
@@ -245,15 +245,15 @@ $p$-subshell, or because pairing begins.
 **Example (OL):** Explain why the first ionisation energy of aluminium is lower than that of
 magnesium.
 
-Magnesium has the electron configuration $[\text{Ne}]\,3s^2$ -- a filled $3s$ subshell. Aluminium
-has $[\text{Ne}]\,3s^2 3p^1$. The $3p$ electron in aluminium is at a higher energy level and is
+Magnesium has the electron configuration $[\mathrm{Ne}]\,3s^2$ -- a filled $3s$ subshell. Aluminium
+has $[\mathrm{Ne}]\,3s^2 3p^1$. The $3p$ electron in aluminium is at a higher energy level and is
 shielded by the $3s$ electrons, so it is easier to remove.
 
 **Worked Example 8 (HL):** Explain why the first ionisation energy of sulfur is lower than that of
 phosphorus.
 
-Phosphorus: $[\text{Ne}]\,3s^2 3p^3$ -- each $3p$ orbital has one electron (half-filled subshell,
-stable). Sulfur: $[\text{Ne}]\,3s^2 3p^4$ -- one $3p$ orbital has two electrons. The pairing energy
+Phosphorus: $[\mathrm{Ne}]\,3s^2 3p^3$ -- each $3p$ orbital has one electron (half-filled subshell,
+stable). Sulfur: $[\mathrm{Ne}]\,3s^2 3p^4$ -- one $3p$ orbital has two electrons. The pairing energy
 in sulfur's $3p^4$ configuration makes the fourth electron slightly easier to remove than
 phosphorus's third $3p$ electron.
 
@@ -315,7 +315,7 @@ This element is chromium.
 5. **Orbital diagrams** -- apply Hund's rule correctly.
 
 6. **Transition metal electron configurations** -- remember the exceptions: Cr is
-   $[\text{Ar}]\,4s^1 3d^5$ and Cu is $[\text{Ar}]\,4s^1 3d^{10}$.
+   $[\mathrm{Ar}]\,4s^1 3d^5$ and Cu is $[\mathrm{Ar}]\,4s^1 3d^{10}$.
 7. **Ion formation** -- when a transition metal forms an ion, the $4s$ electrons are lost BEFORE the
    $3d$ electrons, even though $4s$ fills first.
 8. **Spectral lines** -- emission spectra have dark background with bright lines; absorption spectra
@@ -329,8 +329,8 @@ This element is chromium.
 
 1. Describe the structure of an atom, naming the three subatomic particles and their properties.
 2. Write the electron configuration for potassium ($Z = 19$).
-3. Calculate the relative atomic mass of neon from its isotopes: ${}^{20}\text{Ne}$ (90.5%) and
-   ${}^{22}\text{Ne}$ (9.5%).
+3. Calculate the relative atomic mass of neon from its isotopes: ${}^{20}\mathrm{Ne}$ (90.5%) and
+   ${}^{22}\mathrm{Ne}$ (9.5%).
 4. State the trends in atomic radius and ionisation energy across a period.
 
 ### Higher Level
@@ -338,20 +338,20 @@ This element is chromium.
 1. Write the full electron configuration and orbital diagram for chromium ($Z = 24$). (Hint:
    chromium is an exception.)
 2. Explain why the first ionisation energy of sulfur is lower than that of phosphorus.
-3. A photon of wavelength $97.2\text{ nm}$ is emitted from a hydrogen atom. Identify the transition
+3. A photon of wavelength $97.2\mathrm{ nm}$ is emitted from a hydrogen atom. Identify the transition
    involved.
-4. The relative atomic mass of boron is 10.81. If boron has two isotopes, ${}^{10}\text{B}$ and
-   ${}^{11}\text{B}$, calculate their percentage abundances.
+4. The relative atomic mass of boron is 10.81. If boron has two isotopes, ${}^{10}\mathrm{B}$ and
+   ${}^{11}\mathrm{B}$, calculate their percentage abundances.
 
 ### Extended Questions
 
 5. Explain why the first ionisation energy of neon is much higher than that of sodium.
-6. Write the electron configuration of $\text{Fe}^{2+}$ and $\text{Fe}^{3+}$, explaining why
-   $\text{Fe}^{3+}$ is more stable.
-7. Calculate the energy of a photon with wavelength $121.6\text{ nm}$ and identify the hydrogen
+6. Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$, explaining why
+   $\mathrm{Fe}^{3+}$ is more stable.
+7. Calculate the energy of a photon with wavelength $121.6\mathrm{ nm}$ and identify the hydrogen
    transition that produces it.
-8. Explain why the second ionisation energy of sodium ($4562 \text{ kJ/mol}$) is much higher than
-   the first ($496 \text{ kJ/mol}$).
+8. Explain why the second ionisation energy of sodium ($4562 \mathrm{ kJ/mol}$) is much higher than
+   the first ($496 \mathrm{ kJ/mol}$).
 9. The mass spectrum of silicon shows three peaks at $m/z = 28$, 29, 30 with relative abundances
    92.2%, 4.7%, and 3.1%. Calculate the relative atomic mass of silicon.
 10. Explain the significance of the line spectrum of hydrogen in the development of atomic theory,
@@ -390,7 +390,7 @@ configuration 2, 8, 1.
 
 **Worked Example 10 (HL):** The successive ionisation energies of an element are:
 
-$738, 1451, 7733, 10540 \text{ kJ/mol}$
+$738, 1451, 7733, 10540 \mathrm{ kJ/mol}$
 
 Identify the element and explain your reasoning.
 
@@ -445,7 +445,7 @@ density.
 
 The radial distribution function shows the probability of finding an electron at a given distance
 from the nucleus. For the $1s$ orbital, the most probable distance equals the Bohr radius
-($a_0 = 52.9 \text{ pm}$). For the $2s$ orbital, there is a node (zero probability) at a certain
+($a_0 = 52.9 \mathrm{ pm}$). For the $2s$ orbital, there is a node (zero probability) at a certain
 distance.
 
 ---
@@ -456,35 +456,35 @@ distance.
 
 When transition metals form ions, the $4s$ electrons are removed before the $3d$ electrons.
 
-**Example:** $\text{Fe}$: $[\text{Ar}]\,4s^2 3d^6$
+**Example:** $\mathrm{Fe}$: $[\mathrm{Ar}]\,4s^2 3d^6$
 
-$\text{Fe}^{2+}$: $[\text{Ar}]\,3d^6$ (two $4s$ electrons removed)
+$\mathrm{Fe}^{2+}$: $[\mathrm{Ar}]\,3d^6$ (two $4s$ electrons removed)
 
-$\text{Fe}^{3+}$: $[\text{Ar}]\,3d^5$ (three electrons removed: two from $4s$, one from $3d$)
+$\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\,3d^5$ (three electrons removed: two from $4s$, one from $3d$)
 
-Note: $\text{Fe}^{3+}$ has a half-filled $3d$ subshell, making it particularly stable.
+Note: $\mathrm{Fe}^{3+}$ has a half-filled $3d$ subshell, making it particularly stable.
 
 ### Common Ion Configurations
 
 | Ion              | Electron configuration            |
 | ---------------- | --------------------------------- |
-| $\text{Na}^+$    | $[\text{Ne}]$ or $1s^2 2s^2 2p^6$ |
-| $\text{Ca}^{2+}$ | $[\text{Ar}]$                     |
-| $\text{O}^{2-}$  | $[\text{Ne}]$                     |
-| $\text{Cl}^-$    | $[\text{Ar}]$                     |
-| $\text{Cu}^+$    | $[\text{Ar}]\,3d^{10}$            |
-| $\text{Zn}^{2+}$ | $[\text{Ar}]\,3d^{10}$            |
+| $\mathrm{Na}^+$    | $[\mathrm{Ne}]$ or $1s^2 2s^2 2p^6$ |
+| $\mathrm{Ca}^{2+}$ | $[\mathrm{Ar}]$                     |
+| $\mathrm{O}^{2-}$  | $[\mathrm{Ne}]$                     |
+| $\mathrm{Cl}^-$    | $[\mathrm{Ar}]$                     |
+| $\mathrm{Cu}^+$    | $[\mathrm{Ar}]\,3d^{10}$            |
+| $\mathrm{Zn}^{2+}$ | $[\mathrm{Ar}]\,3d^{10}$            |
 
 ### Isoelectronic Series
 
 Ions with the same number of electrons are isoelectronic.
 
-**Example:** $\text{O}^{2-}$, $\text{F}^-$, $\text{Ne}$, $\text{Na}^+$, $\text{Mg}^{2+}$ all have 10
-electrons ($[\text{Ne}]$ configuration).
+**Example:** $\mathrm{O}^{2-}$, $\mathrm{F}^-$, $\mathrm{Ne}$, $\mathrm{Na}^+$, $\mathrm{Mg}^{2+}$ all have 10
+electrons ($[\mathrm{Ne}]$ configuration).
 
 **Trend in ionic radius:** For isoelectronic ions, the radius decreases as nuclear charge increases:
 
-$$\text{O}^{2-} > \text{F}^-> \text{Ne} > \text{Na}^+ > \text{Mg}^{2+}$$
+$$\mathrm{O}^{2-} > \mathrm{F}^-> \mathrm{Ne} > \mathrm{Na}^+ > \mathrm{Mg}^{2+}$$
 
 ---
 
@@ -494,16 +494,16 @@ $$\text{O}^{2-} > \text{F}^-> \text{Ne} > \text{Na}^+ > \text{Mg}^{2+}$$
 
 | Block   | Subshell being filled | Groups                 | Examples                              |
 | ------- | --------------------- | ---------------------- | ------------------------------------- |
-| s-block | $s$                   | 1, 2                   | $\text{Na}$, $\text{Mg}$              |
-| p-block | $p$                   | 13-18                  | $\text{Al}$, $\text{Cl}$, $\text{Ar}$ |
-| d-block | $d$                   | 3-12                   | $\text{Fe}$, $\text{Cu}$              |
-| f-block | $f$                   | Lanthanides, Actinides | $\text{U}$, $\text{Ce}$               |
+| s-block | $s$                   | 1, 2                   | $\mathrm{Na}$, $\mathrm{Mg}$              |
+| p-block | $p$                   | 13-18                  | $\mathrm{Al}$, $\mathrm{Cl}$, $\mathrm{Ar}$ |
+| d-block | $d$                   | 3-12                   | $\mathrm{Fe}$, $\mathrm{Cu}$              |
+| f-block | $f$                   | Lanthanides, Actinides | $\mathrm{U}$, $\mathrm{Ce}$               |
 
 ### Periodic Trends in Detail: Atomic Radius
 
 **Across a period:** Nuclear charge increases by one proton per element, but shielding increases
 only slightly (electrons in the same shell do not shield effectively). The effective nuclear charge
-($Z_{\text{eff}}$) increases, pulling electrons closer.
+($Z_{\mathrm{eff}}$) increases, pulling electrons closer.
 
 **Down a group:** Each new shell is further from the nucleus. Although $Z$ increases, the additional
 inner shells provide significant shielding, so the outer electrons are less tightly held.
@@ -535,9 +535,9 @@ The first ionisation energy increases across a period with two notable dips:
 
 ## Advanced: Effective Nuclear Charge (HL)
 
-The effective nuclear charge ($Z_{\text{eff}}$) experienced by an electron is:
+The effective nuclear charge ($Z_{\mathrm{eff}}$) experienced by an electron is:
 
-$$Z_{\text{eff}} = Z - S$$
+$$Z_{\mathrm{eff}} = Z - S$$
 
 where $Z$ is the actual nuclear charge and $S$ is the shielding constant (Slater's rules).
 
@@ -548,9 +548,9 @@ where $Z$ is the actual nuclear charge and $S$ is the shielding constant (Slater
 2. Electrons in the (n-1) shell shield by 0.85.
 3. Electrons in lower shells shield by 1.00.
 
-**Worked Example 11 (HL):** Calculate $Z_{\text{eff}}$ for a $3p$ electron in chlorine.
+**Worked Example 11 (HL):** Calculate $Z_{\mathrm{eff}}$ for a $3p$ electron in chlorine.
 
-$\text{Cl}$: $1s^2 2s^2 2p^6 3s^2 3p^5$. $Z = 17$.
+$\mathrm{Cl}$: $1s^2 2s^2 2p^6 3s^2 3p^5$. $Z = 17$.
 
 For a $3p$ electron:
 
@@ -560,9 +560,9 @@ For a $3p$ electron:
 
 $$S = 2.45 + 6.80 + 2.00 = 11.25$$
 
-$$Z_{\text{eff}} = 17 - 11.25 = 5.75$$
+$$Z_{\mathrm{eff}} = 17 - 11.25 = 5.75$$
 
-This relatively high $Z_{\text{eff}}$ explains chlorine's high electronegativity and small atomic
+This relatively high $Z_{\mathrm{eff}}$ explains chlorine's high electronegativity and small atomic
 radius.
 
 ---
@@ -611,11 +611,11 @@ and scanning electron microscopy (SEM) are two common types.
 
 | Concept                  | Formula/Relationship                  | Key Idea                      |
 | ------------------------ | ------------------------------------- | ----------------------------- |
-| Bohr model energy        | $E_n = -13.6/n^2 \text{ eV}$          | Quantised energy levels       |
+| Bohr model energy        | $E_n = -13.6/n^2 \mathrm{ eV}$          | Quantised energy levels       |
 | Photon energy            | $E = hf = hc/\lambda$                 | Emitted/absorbed photons      |
 | De Broglie               | $\lambda = h/mv$                      | Wave-particle duality         |
 | Heisenberg               | $\Delta x \cdot \Delta p \geq h/4\pi$ | Measurement limits            |
-| Effective nuclear charge | $Z_{\text{eff}} = Z - S$              | Shielding effects             |
+| Effective nuclear charge | $Z_{\mathrm{eff}} = Z - S$              | Shielding effects             |
 | Shell capacity           | $2n^2$                                | Maximum electrons per shell   |
 | Moseley's law            | $\sqrt{f} = a(Z - b)$                 | Atomic number defines element |
 
@@ -624,19 +624,19 @@ and scanning electron microscopy (SEM) are two common types.
 ## Practice Questions (Extended)
 
 11. The successive ionisation energies of an element are:
-    $578, 1817, 2745, 11578, 14842, 18379 \text{ kJ/mol}$. Identify the element and explain the
+    $578, 1817, 2745, 11578, 14842, 18379 \mathrm{ kJ/mol}$. Identify the element and explain the
     pattern.
 
-12. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \text{ m/s}$.
-    (Mass of electron $= 9.11 \times 10^{-31} \text{ kg}$, $h = 6.63 \times 10^{-34} \text{ J s}$.)
+12. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \mathrm{ m/s}$.
+    (Mass of electron $= 9.11 \times 10^{-31} \mathrm{ kg}$, $h = 6.63 \times 10^{-34} \mathrm{ J s}$.)
 
 13. Explain why potassium ($Z = 19$) is placed after argon ($Z = 18$) in the periodic table, despite
     argon having a filled $3p$ subshell and potassium having an electron in the $4s$ subshell.
 
-14. Calculate $Z_{\text{eff}}$ for a valence electron in sodium and in potassium. Use your results
+14. Calculate $Z_{\mathrm{eff}}$ for a valence electron in sodium and in potassium. Use your results
     to explain why potassium is more reactive than sodium.
 
-15. The first four ionisation energies of an element X are: $1090, 2350, 4620, 6220 \text{ kJ/mol}$.
+15. The first four ionisation energies of an element X are: $1090, 2350, 4620, 6220 \mathrm{ kJ/mol}$.
     To which group does X belong? Explain your reasoning.
 
 16. Draw the shape of a $2p_z$ orbital and a $3d_{xy}$ orbital, labelling the axes.

@@ -28,7 +28,7 @@ Momentum is a vector quantity with SI units kg m s$^{-1}$.
 **Principle of Conservation of Linear Momentum.** In the absence of an external net force, the total
 momentum of a system is conserved:
 
-$$\sum \mathbf{p}_{\text{initial}} = \sum \mathbf{p}_{\text{final}}$$
+$$\sum \mathbf{p}_{\mathrm{initial}} = \sum \mathbf{p}_{\mathrm{final}}$$
 
 ### Proof from Newton's Laws
 
@@ -43,7 +43,7 @@ Therefore:
 
 $$\frac{d\mathbf{p}_A}{dt} = -\frac{d\mathbf{p}_B}{dt} \implies \frac{d\mathbf{p}_A}{dt} + \frac{d\mathbf{p}_B}{dt} = 0 \implies \frac{d}{dt}(\mathbf{p}_A + \mathbf{p}_B) = 0$$
 
-Hence $\mathbf{p}_A + \mathbf{p}_B = \text{constant}$. $\square$
+Hence $\mathbf{p}_A + \mathbf{p}_B = \mathrm{constant}$. $\square$
 
 **Intuition.** Momentum conservation is more fundamental than energy conservation in collisions
 because it holds for _all_ types of collisions — elastic, inelastic, and explosive. Kinetic energy
@@ -98,11 +98,11 @@ For two bodies of masses $m_1$ and $m_2$ with initial velocities $u_1$ and $u_2$
 
 **Conservation of momentum:**
 
-$$m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2 \quad \text{...(i)}$$
+$$m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2 \quad \mathrm{...(i)}$$
 
 **Conservation of kinetic energy** (elastic, $e = 1$):
 
-$$\frac{1}{2}m_1 u_1^2 + \frac{1}{2}m_2 u_2^2 = \frac{1}{2}m_1 v_1^2 + \frac{1}{2}m_2 v_2^2 \quad \text{...(ii)}$$
+$$\frac{1}{2}m_1 u_1^2 + \frac{1}{2}m_2 u_2^2 = \frac{1}{2}m_1 v_1^2 + \frac{1}{2}m_2 v_2^2 \quad \mathrm{...(ii)}$$
 
 From (i): $m_1(u_1 - v_1) = m_2(v_2 - u_2)$ ... (iii)
 
@@ -110,7 +110,7 @@ From (ii): $m_1(u_1^2 - v_1^2) = m_2(v_2^2 - u_2^2)$ ... (iv)
 
 Dividing (iv) by (iii):
 
-$$u_1 + v_1 = u_2 + v_2 \implies v_1 - v_2 = -(u_1 - u_2) \quad \text{(Newton's restitution with } e = 1\text{)}$$
+$$u_1 + v_1 = u_2 + v_2 \implies v_1 - v_2 = -(u_1 - u_2) \quad \mathrm{(Newton's restitution with } e = 1\mathrm{)}$$
 
 From $v_1 = u_2 + v_2 - u_1$, substituting into (i):
 
@@ -162,7 +162,7 @@ dissipated.
 
 In two dimensions, momentum conservation applies **separately** in each direction:
 
-$$\sum p_x^{\text{before}} = \sum p_x^{\text{after}}, \qquad \sum p_y^{\text{before}} = \sum p_y^{\text{after}}$$
+$$\sum p_x^{\mathrm{before}} = \sum p_x^{\mathrm{after}}, \qquad \sum p_y^{\mathrm{before}} = \sum p_y^{\mathrm{after}}$$
 
 For an elastic collision, we also conserve kinetic energy. The coefficient of restitution applies
 along the line of centres.
@@ -317,7 +317,7 @@ A $0.50$ kg ball falls vertically from height $5.0$ m onto a concrete floor and 
 Speed just after impact: $v_2 = \sqrt{2g \times 3.2} = \sqrt{62.78} = 7.92$ m s$^{-1}$ (upward).
 
 The floor has infinite mass, so
-$e = \frac{v_{\text{separation}}}{v_{\text{approach}}} = \frac{7.92}{9.90} = 0.80$.
+$e = \frac{v_{\mathrm{separation}}}{v_{\mathrm{approach}}} = \frac{7.92}{9.90} = 0.80$.
 
 <b>If you get this wrong, revise:</b> [Coefficient of Restitution](#coefficient-of-restitution)
 
@@ -362,7 +362,7 @@ Explain, using momentum conservation, why a gun recoils when fired, and calculat
 
 **Answer.** Before firing, total momentum is zero (both at rest). After firing, the bullet moves
 forward with momentum $p_b = 0.010 \times 400 = 4.0$ kg m s$^{-1}$. By conservation:
-$p_{\text{rifle}} = -4.0$ kg m s$^{-1}$, so $v_r = -4.0/2.0 = -2.0$ m s$^{-1}$.
+$p_{\mathrm{rifle}} = -4.0$ kg m s$^{-1}$, so $v_r = -4.0/2.0 = -2.0$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Momentum](#2-conservation-of-momentum)
 
@@ -423,7 +423,7 @@ The rebound angle ($37.6^\circ$) is greater than the approach angle ($30^\circ$)
 
 **Definition.** The coefficient of restitution can be expressed in terms of relative velocities:
 
-$$\boxed{e = \frac{|\text{relative speed of separation}|}{|\text{relative speed of approach}|}}$$
+$$\boxed{e = \frac{|\mathrm{relative speed of separation}|}{|\mathrm{relative speed of approach}|}}$$
 
 ### Derivation for a 1D Collision
 

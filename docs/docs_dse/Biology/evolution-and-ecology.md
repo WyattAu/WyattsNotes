@@ -671,7 +671,7 @@ is lost through:
 This rule explains why food chains are typically limited to 4-5 trophic levels -- there is
 insufficient energy to sustain higher levels.
 
-$$\text{Energy available at level } n = 0.1^n \times \text{Energy at producer level}$$
+$$\mathrm{Energy available at level } n = 0.1^n \times \mathrm{Energy at producer level}$$
 
 :::info
 The 10% rule is an approximation. Actual transfer efficiency ranges from about 5% to 20%
@@ -689,34 +689,34 @@ recycled.
 
 Key processes:
 
-- Photosynthesis: $\text{CO}_2$ converted to organic compounds by producers
-- Respiration: organic compounds broken down, releasing $\text{CO}_2$
-- Combustion: burning fossil fuels releases stored carbon as $\text{CO}_2$
-- Decomposition: decomposers break down dead organic matter, releasing $\text{CO}_2$
-- Ocean absorption: oceans absorb $\text{CO}_2$ from the atmosphere (dissolved $\text{CO}_2$,
+- Photosynthesis: $\mathrm{CO}_2$ converted to organic compounds by producers
+- Respiration: organic compounds broken down, releasing $\mathrm{CO}_2$
+- Combustion: burning fossil fuels releases stored carbon as $\mathrm{CO}_2$
+- Decomposition: decomposers break down dead organic matter, releasing $\mathrm{CO}_2$
+- Ocean absorption: oceans absorb $\mathrm{CO}_2$ from the atmosphere (dissolved $\mathrm{CO}_2$,
   bicarbonate, carbonate)
 - Sedimentation: dead marine organisms form limestone and fossil fuels over geological time
-- Deforestation: reduces $\text{CO}_2$ uptake by photosynthesis; burning releases stored carbon
+- Deforestation: reduces $\mathrm{CO}_2$ uptake by photosynthesis; burning releases stored carbon
 
 **Nitrogen cycle:**
 
 Key processes:
 
-- Nitrogen fixation: atmospheric $\text{N}_2$ (unreactive) converted to ammonia ($\text{NH}_3$) by
+- Nitrogen fixation: atmospheric $\mathrm{N}_2$ (unreactive) converted to ammonia ($\mathrm{NH}_3$) by
   nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes) or lightning
-- Nitrification: ammonia converted to nitrite ($\text{NO}_2^-$) by Nitrosomonas, then to nitrate
-  ($\text{NO}_3^-$) by Nitrobacter
+- Nitrification: ammonia converted to nitrite ($\mathrm{NO}_2^-$) by Nitrosomonas, then to nitrate
+  ($\mathrm{NO}_3^-$) by Nitrobacter
 - Absorption: plants absorb nitrate through roots
 - Assimilation: plants incorporate nitrogen into amino acids and proteins
 - Feeding: animals obtain nitrogen by eating plants or other animals
 - Decomposition / ammonification: decomposers break down dead organisms and waste, releasing ammonia
-- Denitrification: denitrifying bacteria convert nitrate back to $\text{N}_2$, returning it to the
+- Denitrification: denitrifying bacteria convert nitrate back to $\mathrm{N}_2$, returning it to the
   atmosphere (e.g., Pseudomonas)
 
 **Phosphorus cycle:**
 
 - Phosphorus has no significant gaseous phase (unlike carbon and nitrogen)
-- Weathering of rocks releases phosphate ions ($\text{PO}_4^{3-}$) into soil and water
+- Weathering of rocks releases phosphate ions ($\mathrm{PO}_4^{3-}$) into soil and water
 - Plants absorb phosphate; animals obtain it through food chains
 - Decomposition returns phosphorus to soil
 - Sedimentation: phosphorus settles to the ocean floor and forms sedimentary rock over geological
@@ -740,12 +740,12 @@ Key processes:
   per unit area per unit time
 - **Net Primary Productivity (NPP):** GPP minus the energy used by producers for respiration (R):
 
-$$\text{NPP} = \text{GPP} - R$$
+$$\mathrm{NPP} = \mathrm{GPP} - R$$
 
 NPP represents the energy available to consumers (herbivores and decomposers). NPP is a measure of
 how much biomass is available for the rest of the food chain.
 
-$$\text{NPP} = \text{energy stored in plant biomass}$$
+$$\mathrm{NPP} = \mathrm{energy stored in plant biomass}$$
 
 ---
 
@@ -798,7 +798,7 @@ seasons, total precipitation. Match these to the biome descriptions above.
 
 - Clearing of forests for agriculture, logging, urbanisation, and infrastructure
 - Tropical rainforests are being cleared at approximately 10 million hectares per year
-- Consequences: habitat loss, biodiversity decline, soil erosion, increased $\text{CO}_2$ in
+- Consequences: habitat loss, biodiversity decline, soil erosion, increased $\mathrm{CO}_2$ in
   atmosphere (reduced photosynthesis + burning), disruption of water cycle, loss of indigenous
   cultures
 
@@ -844,10 +844,10 @@ Substances that biomagnify are typically:
 
 ### Climate Change
 
-- Burning fossil fuels releases $\text{CO}_2$, methane ($\text{CH}_4$), and nitrous oxide
-  ($\text{N}_2\text{O}$) -- greenhouse gases
+- Burning fossil fuels releases $\mathrm{CO}_2$, methane ($\mathrm{CH}_4$), and nitrous oxide
+  ($\mathrm{N}_2\mathrm{O}$) -- greenhouse gases
 - Greenhouse gases trap infrared radiation (heat) in the atmosphere, increasing global temperatures
-- Pre-industrial $\text{CO}_2$ concentration: ~280 ppm; current: &gt;420 ppm
+- Pre-industrial $\mathrm{CO}_2$ concentration: ~280 ppm; current: &gt;420 ppm
 - Global average temperature has risen approximately 1.1 degrees C above pre-industrial levels
 
 Consequences:
@@ -855,7 +855,7 @@ Consequences:
 - Rising sea levels (thermal expansion of water + melting ice caps)
 - More frequent and severe extreme weather events (hurricanes, droughts, floods)
 - Shifts in species distributions and ranges
-- Ocean acidification (dissolved $\text{CO}_2$ forms carbonic acid, lowering pH)
+- Ocean acidification (dissolved $\mathrm{CO}_2$ forms carbonic acid, lowering pH)
 - Disruption of phenology (timing of biological events: flowering, migration, breeding)
 - Coral bleaching (warm water causes corals to expel symbiotic algae)
 
@@ -945,7 +945,7 @@ If producers have 10,000 kJ of energy:
 
 Doubling time can be estimated using the rule of 70:
 
-$$\text{Doubling time} \approx \frac{70}{r \times 100}$$
+$$\mathrm{Doubling time} \approx \frac{70}{r \times 100}$$
 
 Where $r$ is the per capita growth rate expressed as a decimal.
 
@@ -982,7 +982,7 @@ frequencies differ significantly from Hardy-Weinberg expected frequencies:
 $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 Where $O$ = observed frequency and $E$ = expected frequency. Compare the calculated value to the
-critical value at the appropriate degrees of freedom ($df = \text{number of categories} - 1$) and
+critical value at the appropriate degrees of freedom ($df = \mathrm{number of categories} - 1$) and
 significance level (typically $p = 0.05$).
 :::
 
@@ -1030,11 +1030,11 @@ A grassland ecosystem has the following energy values at each trophic level:
 
 **(a) Calculate the percentage energy transfer from producers to primary consumers.**
 
-$$\text{Transfer efficiency} = \frac{5000}{50000} \times 100\% = 10\%$$
+$$\mathrm{Transfer efficiency} = \frac{5000}{50000} \times 100\% = 10\%$$
 
 **(b) Calculate the percentage energy transfer from primary consumers to secondary consumers.**
 
-$$\text{Transfer efficiency} = \frac{400}{5000} \times 100\% = 8\%$$
+$$\mathrm{Transfer efficiency} = \frac{400}{5000} \times 100\% = 8\%$$
 
 **(c) Explain why the transfer efficiency from primary to secondary consumers is lower than from
 producers to primary consumers.**
@@ -1060,7 +1060,7 @@ conditions.
 
 $$N = N_0 \times e^{rt}$$
 
-$$N = 100 \times e^{0.5 \times 6} = 100 \times e^3 = 100 \times 20.09 = 2009 \text{ cells}$$
+$$N = 100 \times e^{0.5 \times 6} = 100 \times e^3 = 100 \times 20.09 = 2009 \mathrm{ cells}$$
 
 **(b) If the carrying capacity of the environment is 5,000 cells, calculate the population size
 after 6 hours using the logistic growth model.**
@@ -1073,7 +1073,7 @@ $$N = \frac{5000}{1 + 49 \times e^{-3}}$$
 
 $$N = \frac{5000}{1 + 49 \times 0.0498}$$
 
-$$N = \frac{5000}{1 + 2.44} = \frac{5000}{3.44} = 1453 \text{ cells}$$
+$$N = \frac{5000}{1 + 2.44} = \frac{5000}{3.44} = 1453 \mathrm{ cells}$$
 
 **(c) Compare the two results and explain the difference.**
 

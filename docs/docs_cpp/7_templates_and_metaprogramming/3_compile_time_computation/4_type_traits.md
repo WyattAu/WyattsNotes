@@ -506,7 +506,7 @@ These work by mapping the count `N` to a parameter pack of integers, which can t
 parameter pack expansion:
 
 $$
-\text{make\_index\_sequence<3>} \Rightarrow \text{index\_sequence<0, 1, 2>}
+\mathrm{make\_index\_sequence<3>} \Rightarrow \mathrm{index\_sequence<0, 1, 2>}
 $$
 
 ```cpp

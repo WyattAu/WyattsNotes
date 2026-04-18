@@ -28,7 +28,7 @@ seven classes of food are:
 Basal Metabolic Rate (BMR) is the minimum energy required to maintain vital functions at rest. Total
 daily energy expenditure depends on:
 
-$$\text{Total Energy} = \text{BMR} + \text{Physical Activity} + \text{SDA (Specific Dynamic Action)}$$
+$$\mathrm{Total Energy} = \mathrm{BMR} + \mathrm{Physical Activity} + \mathrm{SDA (Specific Dynamic Action)}$$
 
 Average daily energy requirements:
 
@@ -90,7 +90,7 @@ glands, liver, pancreas) secreting enzymes into the tract.
   - **Mucus:** Lubricates food for swallowing
   - **Water:** Dissolves food molecules for taste
 
-$$\text{Starch} \xrightarrow{\text{salivary amylase}} \text{Maltose}$$
+$$\mathrm{Starch} \xrightarrow{\mathrm{salivary amylase}} \mathrm{Maltose}$$
 
 ### The Stomach
 
@@ -101,7 +101,7 @@ $$\text{Starch} \xrightarrow{\text{salivary amylase}} \text{Maltose}$$
     polypeptides
   - **Mucus:** Protects the stomach lining from acid and enzymes
 
-$$\text{Proteins} \xrightarrow{\text{pepsin (pH 2)}} \text{Polypeptides}$$
+$$\mathrm{Proteins} \xrightarrow{\mathrm{pepsin (pH 2)}} \mathrm{Polypeptides}$$
 
 The stomach churns food with gastric juice to form **chyme**, a semi-liquid acidic mixture. The
 pyloric sphincter controls the release of chyme into the duodenum.
@@ -220,7 +220,7 @@ water.
 5. Pressure in lungs decreases below atmospheric pressure
 6. Air rushes in
 
-$$P_{\text{lung}} \lt P_{\text{atm}} \implies \text{air flows in}$$
+$$P_{\mathrm{lung}} \lt P_{\mathrm{atm}} \implies \mathrm{air flows in}$$
 
 **Exhalation (expiration) -- at rest (passive):**
 
@@ -231,7 +231,7 @@ $$P_{\text{lung}} \lt P_{\text{atm}} \implies \text{air flows in}$$
 5. Pressure in lungs increases above atmospheric pressure
 6. Air is pushed out
 
-$$P_{\text{lung}} \gt P_{\text{atm}} \implies \text{air flows out}$$
+$$P_{\mathrm{lung}} \gt P_{\mathrm{atm}} \implies \mathrm{air flows out}$$
 
 **Forced exhalation:** Internal intercostal muscles and abdominal muscles contract actively.
 
@@ -249,9 +249,9 @@ $$P_{\text{lung}} \gt P_{\text{atm}} \implies \text{air flows out}$$
 
 **Diffusion of gases:**
 
-$$\text{O}_2 \text{ (alveolar air, } pO_2 \approx 13.3 \text{ kPa)} \to \text{O}_2 \text{ (blood, } pO_2 \approx 5.3 \text{ kPa)}$$
+$$\mathrm{O}_2 \mathrm{ (alveolar air, } pO_2 \approx 13.3 \mathrm{ kPa)} \to \mathrm{O}_2 \mathrm{ (blood, } pO_2 \approx 5.3 \mathrm{ kPa)}$$
 
-$$\text{CO}_2 \text{ (blood, } pCO_2 \approx 6.0 \text{ kPa)} \to \text{CO}_2 \text{ (alveolar air, } pCO_2 \approx 5.3 \text{ kPa)}$$
+$$\mathrm{CO}_2 \mathrm{ (blood, } pCO_2 \approx 6.0 \mathrm{ kPa)} \to \mathrm{CO}_2 \mathrm{ (alveolar air, } pCO_2 \approx 5.3 \mathrm{ kPa)}$$
 
 Oxygen diffuses from alveolar air into the blood; carbon dioxide diffuses from blood into alveolar
 air. Both movements are down their respective partial pressure gradients.
@@ -419,7 +419,7 @@ Rh- mother carrying an Rh+ foetus may produce anti-D antibodies during a second 
 
 Each haemoglobin molecule can carry up to 4 oxygen molecules:
 
-$$\text{Hb} + 4\text{O}_2 \rightleftharpoons \text{HbO}_8$$
+$$\mathrm{Hb} + 4\mathrm{O}_2 \rightleftharpoons \mathrm{HbO}_8$$
 
 In the lungs (high $pO_2$), oxygen binds to haemoglobin (loading). In the tissues (low $pO_2$),
 oxygen dissociates from haemoglobin (unloading).
@@ -429,7 +429,7 @@ oxygen dissociates from haemoglobin (unloading).
 The oxygen dissociation curve is an S-shaped (sigmoid) curve showing the relationship between the
 partial pressure of oxygen ($pO_2$) and the percentage saturation of haemoglobin.
 
-$$\text{Percentage saturation of Hb vs } pO_2$$
+$$\mathrm{Percentage saturation of Hb vs } pO_2$$
 
 Key points:
 

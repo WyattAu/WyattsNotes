@@ -177,7 +177,7 @@ This follows since $\cos(\pi/2) = 0$.
 **Intuition.** The dot product $\mathbf{a}\cdot\mathbf{b}$ measures the extent to which $\mathbf{a}$
 and $\mathbf{b}$ point in the same direction. It equals the product of the magnitude of $\mathbf{a}$
 and the **projection** of $\mathbf{b}$ onto $\mathbf{a}$:
-$\mathbf{a}\cdot\mathbf{b} = |\mathbf{a}| \cdot (\text{shadow of }\mathbf{b}\text{ on }\mathbf{a})$.
+$\mathbf{a}\cdot\mathbf{b} = |\mathbf{a}| \cdot (\mathrm{shadow of }\mathbf{b}\mathrm{ on }\mathbf{a})$.
 If they are perpendicular, the shadow is zero. If they point the same way, the dot product is
 positive; if opposite, negative.
 
@@ -347,7 +347,7 @@ and $\mathbf{c}$, and direction perpendicular to both. The height of the paralle
 projection of $\mathbf{a}$ onto $\mathbf{b}\times\mathbf{c}$, which is $|\mathbf{a}|\cos\phi$ where
 $\phi$ is the angle between $\mathbf{a}$ and $\mathbf{b}\times\mathbf{c}$.
 
-$$V = \text{base area} \times \text{height} = |\mathbf{b}\times\mathbf{c}| \cdot |\mathbf{a}|\cos\phi = |\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})| \quad \blacksquare$$
+$$V = \mathrm{base area} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \cdot |\mathbf{a}|\cos\phi = |\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})| \quad \blacksquare$$
 
 ### 9.3 Properties of the scalar triple product
 
@@ -358,7 +358,7 @@ $$V = \text{base area} \times \text{height} = |\mathbf{b}\times\mathbf{c}| \cdot
 - **Coplanarity test:** $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ are coplanar if and only if
   $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = 0$ (the parallelepiped has zero volume).
 - **Volume of a tetrahedron:**
-  $V_{\text{tet}} = \dfrac{1}{6}|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$, since a tetrahedron
+  $V_{\mathrm{tet}} = \dfrac{1}{6}|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$, since a tetrahedron
   is $\dfrac{1}{6}$ of a parallelepiped.
 
 **Example.** Find the volume of the parallelepiped with edges
@@ -633,11 +633,11 @@ Given $\mathbf{a} = 2\mathbf{i} + \mathbf{j}$ and $\mathbf{b} = \mathbf{i} - 3\m
 
 <details>
 <summary>Solution 10</summary>
-The projection of $\mathbf{b}$ onto $\mathbf{a}$ is $\text{proj}_{\mathbf{a}}\mathbf{b} = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^2}\,\mathbf{a}$.
+The projection of $\mathbf{b}$ onto $\mathbf{a}$ is $\mathrm{proj}_{\mathbf{a}}\mathbf{b} = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^2}\,\mathbf{a}$.
 
 $\mathbf{a}\cdot\mathbf{b} = 2-3 = -1$. $|\mathbf{a}|^2 = 4+1 = 5$.
 
-$$\text{proj}_{\mathbf{a}}\mathbf{b} = \frac{-1}{5}(2\mathbf{i}+\mathbf{j}) = -\frac{2}{5}\mathbf{i} - \frac{1}{5}\mathbf{j}$$
+$$\mathrm{proj}_{\mathbf{a}}\mathbf{b} = \frac{-1}{5}(2\mathbf{i}+\mathbf{j}) = -\frac{2}{5}\mathbf{i} - \frac{1}{5}\mathbf{j}$$
 
 **If you get this wrong, revise:** [Geometric Interpretation](#42-geometric-interpretation) —
 Section 4.2.

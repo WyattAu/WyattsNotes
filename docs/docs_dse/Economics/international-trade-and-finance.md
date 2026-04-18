@@ -120,7 +120,7 @@ Comparative advantage arises from differences between countries in:
 The **terms of trade (TOT)** is the ratio of a country's export prices to its import prices. It
 measures how many units of imports a country can buy with one unit of exports.
 
-$$\text{Terms of Trade} = \frac{\text{Index of Export Prices}}{\text{Index of Import Prices}} \times 100$$
+$$\mathrm{Terms of Trade} = \frac{\mathrm{Index of Export Prices}}{\mathrm{Index of Import Prices}} \times 100$$
 
 ### Interpretation
 
@@ -133,7 +133,7 @@ $$\text{Terms of Trade} = \frac{\text{Index of Export Prices}}{\text{Index of Im
 
 If the export price index is 120 and the import price index is 100:
 
-$$\text{TOT} = \frac{120}{100} \times 100 = 120$$
+$$\mathrm{TOT} = \frac{120}{100} \times 100 = 120$$
 
 A TOT of 120 means the country can buy 20% more imports per unit of exports compared to the base
 year.
@@ -172,7 +172,7 @@ making it less competitive compared to domestically produced goods.
 
 **Deadweight loss of a tariff:**
 
-$$\text{DWL} = \text{Loss in consumer surplus} - \text{Gain in producer surplus} - \text{Tariff revenue}$$
+$$\mathrm{DWL} = \mathrm{Loss in consumer surplus} - \mathrm{Gain in producer surplus} - \mathrm{Tariff revenue}$$
 
 ### Quotas
 
@@ -290,7 +290,7 @@ The current account records trade in goods and services, income flows, and curre
 | Primary income                       | Income from investments abroad minus income paid to foreign investors (e.g., dividends, interest) |
 | Secondary income (current transfers) | One-way transfers with nothing received in return (e.g., remittances, foreign aid)                |
 
-$$\text{Current Account Balance} = \text{(X - M)}_{\text{goods}} + \text{(X - M)}_{\text{services}} + \text{Primary Income} + \text{Secondary Income}$$
+$$\mathrm{Current Account Balance} = \mathrm{(X - M)}_{\mathrm{goods}} + \mathrm{(X - M)}_{\mathrm{services}} + \mathrm{Primary Income} + \mathrm{Secondary Income}$$
 
 **Current account surplus:** When credits (inflows) exceed debits (outflows). The country is earning
 more from abroad than it is spending.
@@ -318,7 +318,7 @@ The financial account records cross-border investments in financial assets.
 
 The balance of payments must always balance (sum to zero):
 
-$$\text{Current Account} + \text{Capital Account} + \text{Financial Account} = 0$$
+$$\mathrm{Current Account} + \mathrm{Capital Account} + \mathrm{Financial Account} = 0$$
 
 If the current account is in deficit, the capital and financial accounts must be in surplus by an
 equal amount (and vice versa).
@@ -473,7 +473,7 @@ more expensive (increasing costs and imported inflation), and the current accoun
 Trade dependency measures the degree to which a country's economy relies on international trade. It
 is typically measured as:
 
-$$\text{Trade Dependency Ratio} = \frac{\text{Total Trade (Exports + Imports)}}{\text{GDP}} \times 100\%$$
+$$\mathrm{Trade Dependency Ratio} = \frac{\mathrm{Total Trade (Exports + Imports)}}{\mathrm{GDP}} \times 100\%$$
 
 ### Hong Kong's Trade Dependency
 
@@ -621,7 +621,7 @@ X exports 20 wheat to Y at rate 1 wheat = 0.8 cloth:
 
 Now both countries gain. The exchange rate must be between the two opportunity costs: between 0.5
 (X's cost of wheat in terms of cloth) and 1 (Y's cost of wheat in terms of cloth). Any exchange rate
-where $0.5 \lt \text{exchange rate} \lt 1$ will benefit both countries.
+where $0.5 \lt \mathrm{exchange rate} \lt 1$ will benefit both countries.
 
 </details>
 
@@ -648,12 +648,12 @@ Change in imports = 400 - 600 = -200 units (imports decrease by 200 units)
 
 **DWL from consumption distortion (consumption side):** This is the loss in consumer surplus due to
 reduced consumption. Triangle with base = 100 units (consumption falls from 1,000 to 900) and height
-= USD 2 (the tariff). $\text{DWL}_{\text{consumption}} = \frac{1}{2} \times 100 \times 2 = 100$
+= USD 2 (the tariff). $\mathrm{DWL}_{\mathrm{consumption}} = \frac{1}{2} \times 100 \times 2 = 100$
 
 **DWL from production distortion (production side):** This is the loss due to inefficient domestic
 production (resources diverted from more efficient uses). Triangle with base = 100 units (domestic
 production rises from 400 to 500) and height = USD 2.
-$\text{DWL}_{\text{production}} = \frac{1}{2} \times 100 \times 2 = 100$
+$\mathrm{DWL}_{\mathrm{production}} = \frac{1}{2} \times 100 \times 2 = 100$
 
 Total DWL = $100 + 100 = 200$
 
@@ -919,7 +919,7 @@ Assuming the capital account is approximately 0:
 
 Current Account + Financial Account = 0
 
-$-40 + (\text{Net financial account} + \text{Change in reserves}) = 0$
+$-40 + (\mathrm{Net financial account} + \mathrm{Change in reserves}) = 0$
 
 The financial account (excluding reserves) is +60. Let $R$ be the change in reserve assets (positive
 means an increase in reserves, which is recorded as a negative in the financial account):

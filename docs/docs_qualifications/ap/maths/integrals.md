@@ -140,7 +140,7 @@ If $f$ changes sign, the integral gives the **net** (signed) area.
 The total area between $f$ and the $x$-axis on $[a, b]$ is:
 
 $$
-\text{Total Area} = \int_a^b |f(x)|\, dx
+\mathrm{Total Area} = \int_a^b |f(x)|\, dx
 $$
 
 :::info[Example]
@@ -150,7 +150,7 @@ Find the total area between $f(x) = x^2 - 4$ and the $x$-axis on $[-3, 3]$.
 Find the zeros: $x^2 - 4 = 0 \implies x = \pm 2$.
 
 $$
-\text{Total Area} = \int_{-3}^{-2} (x^2 - 4)\, dx + \int_{-2}^{2} (4 - x^2)\, dx + \int_{2}^{3} (x^2 - 4)\, dx
+\mathrm{Total Area} = \int_{-3}^{-2} (x^2 - 4)\, dx + \int_{-2}^{2} (4 - x^2)\, dx + \int_{2}^{3} (x^2 - 4)\, dx
 $$
 
 $$
@@ -492,7 +492,7 @@ This converges to $\frac{1}{p-1}$ when $p \gt 1$ and diverges when $p \lt 1$.
 If $p = 1$:
 
 $$
-\lim_{b \to \infty} [\ln x]_1^b = \lim_{b \to \infty} \ln b = \infty \quad \text{(diverges)}
+\lim_{b \to \infty} [\ln x]_1^b = \lim_{b \to \infty} \ln b = \infty \quad \mathrm{(diverges)}
 $$
 
 :::
@@ -623,17 +623,17 @@ $$
 The average value of $f$ on $[a, b]$ is:
 
 $$
-f_{\text{avg}} = \frac{1}{b - a}\int_a^b f(x)\, dx
+f_{\mathrm{avg}} = \frac{1}{b - a}\int_a^b f(x)\, dx
 $$
 
-By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\text{avg}}$.
+By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\mathrm{avg}}$.
 
 :::info[Example]
 
 Find the average value of $f(x) = \sin x$ on $[0, \pi]$.
 
 $$
-f_{\text{avg}} = \frac{1}{\pi}\int_0^{\pi} \sin x\, dx = \frac{1}{\pi}[-\cos x]_0^{\pi} = \frac{1}{\pi}(1 - (-1)) = \frac{2}{\pi}
+f_{\mathrm{avg}} = \frac{1}{\pi}\int_0^{\pi} \sin x\, dx = \frac{1}{\pi}[-\cos x]_0^{\pi} = \frac{1}{\pi}(1 - (-1)) = \frac{2}{\pi}
 $$
 
 :::

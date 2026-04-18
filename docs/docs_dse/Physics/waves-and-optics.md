@@ -54,10 +54,10 @@ electromagnetic.
 
 ### Worked Example 1
 
-A sound wave has a frequency of $440 \text{ Hz}$ and a wavelength of $0.78 \text{ m}$. Find the
+A sound wave has a frequency of $440 \mathrm{ Hz}$ and a wavelength of $0.78 \mathrm{ m}$. Find the
 speed of sound.
 
-$$v = f\lambda = 440 \times 0.78 = 343.2 \text{ m/s}$$
+$$v = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s}$$
 
 ### Phase and Phase Difference
 
@@ -66,10 +66,10 @@ direction. Points separated by a whole number of wavelengths are in phase.
 
 **Phase difference** is the fraction of a cycle by which one wave leads or lags another:
 
-$$\text{Phase difference} = \frac{\Delta x}{\lambda} \times 360^\circ = \frac{\Delta x}{\lambda} \times 2\pi \text{ rad}$$
+$$\mathrm{Phase difference} = \frac{\Delta x}{\lambda} \times 360^\circ = \frac{\Delta x}{\lambda} \times 2\pi \mathrm{ rad}$$
 
 Points that are half a wavelength apart are in **antiphase** (phase difference $= 180^\circ$ or
-$\pi \text{ rad}$).
+$\pi \mathrm{ rad}$).
 
 ---
 
@@ -140,20 +140,20 @@ states that the resultant displacement at any point is the sum of the individual
 
 **Constructive interference** occurs when waves meet in phase:
 
-$$\text{Path difference} = n\lambda \quad (n = 0, 1, 2, \ldots)$$
+$$\mathrm{Path difference} = n\lambda \quad (n = 0, 1, 2, \ldots)$$
 
 **Destructive interference** occurs when waves meet in antiphase:
 
-$$\text{Path difference} = \left(n + \frac{1}{2}\right)\lambda \quad (n = 0, 1, 2, \ldots)$$
+$$\mathrm{Path difference} = \left(n + \frac{1}{2}\right)\lambda \quad (n = 0, 1, 2, \ldots)$$
 
 ### Worked Example 3
 
-Two coherent sources are $0.5 \text{ mm}$ apart and produce an interference pattern on a screen
-$1.2 \text{ m}$ away. The fringe spacing is $1.2 \text{ mm}$. Find the wavelength of the light.
+Two coherent sources are $0.5 \mathrm{ mm}$ apart and produce an interference pattern on a screen
+$1.2 \mathrm{ m}$ away. The fringe spacing is $1.2 \mathrm{ mm}$. Find the wavelength of the light.
 
 Using the double-slit formula:
 
-$$\lambda = \frac{ay}{D} = \frac{0.5 \times 10^{-3} \times 1.2 \times 10^{-3}}{1.2} = 5 \times 10^{-7} \text{ m} = 500 \text{ nm}$$
+$$\lambda = \frac{ay}{D} = \frac{0.5 \times 10^{-3} \times 1.2 \times 10^{-3}}{1.2} = 5 \times 10^{-7} \mathrm{ m} = 500 \mathrm{ nm}$$
 
 ---
 
@@ -184,12 +184,12 @@ For a string of length $L$ fixed at both ends:
 
 ### Worked Example 4
 
-A string of length $0.8 \text{ m}$ has a fundamental frequency of $220 \text{ Hz}$. Find the wave
+A string of length $0.8 \mathrm{ m}$ has a fundamental frequency of $220 \mathrm{ Hz}$. Find the wave
 speed and the frequency of the third harmonic.
 
-$$v = f_1 \times \lambda_1 = 220 \times 2(0.8) = 352 \text{ m/s}$$
+$$v = f_1 \times \lambda_1 = 220 \times 2(0.8) = 352 \mathrm{ m/s}$$
 
-$$f_3 = 3f_1 = 3 \times 220 = 660 \text{ Hz}$$
+$$f_3 = 3f_1 = 3 \times 220 = 660 \mathrm{ Hz}$$
 
 ---
 
@@ -202,12 +202,12 @@ through a vacuum.
 
 | Property                           | Description                            |
 | ---------------------------------- | -------------------------------------- |
-| Speed in air at $20^\circ\text{C}$ | Approximately $343 \text{ m/s}$        |
-| Speed in water                     | Approximately $1480 \text{ m/s}$       |
-| Speed in steel                     | Approximately $5960 \text{ m/s}$       |
-| Audible range                      | $20 \text{ Hz}$ to $20,000 \text{ Hz}$ |
-| Infrasonic                         | Below $20 \text{ Hz}$                  |
-| Ultrasonic                         | Above $20,000 \text{ Hz}$              |
+| Speed in air at $20^\circ\mathrm{C}$ | Approximately $343 \mathrm{ m/s}$        |
+| Speed in water                     | Approximately $1480 \mathrm{ m/s}$       |
+| Speed in steel                     | Approximately $5960 \mathrm{ m/s}$       |
+| Audible range                      | $20 \mathrm{ Hz}$ to $20,000 \mathrm{ Hz}$ |
+| Infrasonic                         | Below $20 \mathrm{ Hz}$                  |
+| Ultrasonic                         | Above $20,000 \mathrm{ Hz}$              |
 
 ### Intensity and Loudness
 
@@ -223,24 +223,24 @@ The loudness level is measured in decibels (dB):
 
 $$\beta = 10\log_{10}\left(\frac{I}{I_0}\right)$$
 
-Where $I_0 = 10^{-12} \text{ W/m}^2$ is the threshold of hearing.
+Where $I_0 = 10^{-12} \mathrm{ W/m}^2$ is the threshold of hearing.
 
 :::warning
 Loudness is a subjective measure (perceived by the ear) while intensity is an objective
-physical quantity. A $10 \text{ dB}$ increase corresponds to a $10\times$ increase in intensity, but
+physical quantity. A $10 \mathrm{ dB}$ increase corresponds to a $10\times$ increase in intensity, but
 is perceived as roughly a doubling of loudness.
 :::
 
 ### Worked Example 5
 
-The intensity of one sound is $10^{-4} \text{ W/m}^2$ and another is $10^{-2} \text{ W/m}^2$. Find
+The intensity of one sound is $10^{-4} \mathrm{ W/m}^2$ and another is $10^{-2} \mathrm{ W/m}^2$. Find
 the difference in loudness level.
 
-$$\Delta\beta = 10\log_{10}\left(\frac{10^{-2}}{10^{-4}}\right) = 10\log_{10}(100) = 10 \times 2 = 20 \text{ dB}$$
+$$\Delta\beta = 10\log_{10}\left(\frac{10^{-2}}{10^{-4}}\right) = 10\log_{10}(100) = 10 \times 2 = 20 \mathrm{ dB}$$
 
 ### Ultrasound
 
-Ultrasound has frequencies above $20,000 \text{ Hz}$. Applications include:
+Ultrasound has frequencies above $20,000 \mathrm{ Hz}$. Applications include:
 
 - Medical imaging (sonography)
 - Non-destructive testing of materials
@@ -252,23 +252,23 @@ Ultrasound has frequencies above $20,000 \text{ Hz}$. Applications include:
 ## The Electromagnetic Spectrum
 
 Electromagnetic waves are transverse waves that can travel through a vacuum at the speed of light
-$c = 3 \times 10^8 \text{ m/s}$.
+$c = 3 \times 10^8 \mathrm{ m/s}$.
 
 ### EM Spectrum Summary
 
 | Type          | Wavelength Range                     | Frequency Range                                       | Source                       |
 | ------------- | ------------------------------------ | ----------------------------------------------------- | ---------------------------- |
-| Radio waves   | $\gt 0.1 \text{ m}$                  | $\lt 3 \times 10^9 \text{ Hz}$                        | Oscillating circuits         |
-| Microwaves    | $0.1 \text{ mm}$ to $0.1 \text{ m}$  | $3 \times 10^9$ to $3 \times 10^{11} \text{ Hz}$      | Magnetron                    |
-| Infrared      | $700 \text{ nm}$ to $1 \text{ mm}$   | $3 \times 10^{11}$ to $4 \times 10^{14} \text{ Hz}$   | Hot objects                  |
-| Visible light | $400 \text{ nm}$ to $700 \text{ nm}$ | $4 \times 10^{14}$ to $7.5 \times 10^{14} \text{ Hz}$ | Luminous objects             |
-| Ultraviolet   | $10 \text{ nm}$ to $400 \text{ nm}$  | $7.5 \times 10^{14}$ to $3 \times 10^{16} \text{ Hz}$ | Hot objects, discharge tubes |
-| X-rays        | $0.01 \text{ nm}$ to $10 \text{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19} \text{ Hz}$   | Electron bombardment         |
-| Gamma rays    | $\lt 0.01 \text{ nm}$                | $\gt 3 \times 10^{19} \text{ Hz}$                     | Radioactive decay            |
+| Radio waves   | $\gt 0.1 \mathrm{ m}$                  | $\lt 3 \times 10^9 \mathrm{ Hz}$                        | Oscillating circuits         |
+| Microwaves    | $0.1 \mathrm{ mm}$ to $0.1 \mathrm{ m}$  | $3 \times 10^9$ to $3 \times 10^{11} \mathrm{ Hz}$      | Magnetron                    |
+| Infrared      | $700 \mathrm{ nm}$ to $1 \mathrm{ mm}$   | $3 \times 10^{11}$ to $4 \times 10^{14} \mathrm{ Hz}$   | Hot objects                  |
+| Visible light | $400 \mathrm{ nm}$ to $700 \mathrm{ nm}$ | $4 \times 10^{14}$ to $7.5 \times 10^{14} \mathrm{ Hz}$ | Luminous objects             |
+| Ultraviolet   | $10 \mathrm{ nm}$ to $400 \mathrm{ nm}$  | $7.5 \times 10^{14}$ to $3 \times 10^{16} \mathrm{ Hz}$ | Hot objects, discharge tubes |
+| X-rays        | $0.01 \mathrm{ nm}$ to $10 \mathrm{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19} \mathrm{ Hz}$   | Electron bombardment         |
+| Gamma rays    | $\lt 0.01 \mathrm{ nm}$                | $\gt 3 \times 10^{19} \mathrm{ Hz}$                     | Radioactive decay            |
 
 All EM waves:
 
-- Travel at $c = 3 \times 10^8 \text{ m/s}$ in vacuum
+- Travel at $c = 3 \times 10^8 \mathrm{ m/s}$ in vacuum
 - Are transverse waves
 - Can be polarised
 - Can travel through a vacuum
@@ -305,7 +305,7 @@ $$n = \frac{\sin i}{\sin r} = \frac{c}{v}$$
 White light is composed of a continuous spectrum of colours. Dispersion occurs because the
 refractive index of a medium varies with wavelength (shorter wavelengths refract more):
 
-$$n_{\text{violet}} \gt n_{\text{blue}} \gt n_{\text{green}} \gt n_{\text{yellow}} \gt n_{\text{orange}} \gt n_{\text{red}}$$
+$$n_{\mathrm{violet}} \gt n_{\mathrm{blue}} \gt n_{\mathrm{green}} \gt n_{\mathrm{yellow}} \gt n_{\mathrm{orange}} \gt n_{\mathrm{red}}$$
 
 A prism separates white light into its constituent colours because each colour has a slightly
 different refractive index in the glass.
@@ -341,7 +341,7 @@ Where $h_i$ is the image height and $h_o$ is the object height.
 
 ### Worked Example 6
 
-An object is placed $30 \text{ cm}$ from a convex lens of focal length $20 \text{ cm}$. Find the
+An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $20 \mathrm{ cm}$. Find the
 image position and magnification.
 
 $$\frac{1}{v} - \frac{1}{-30} = \frac{1}{20}$$
@@ -350,11 +350,11 @@ $$\frac{1}{v} + \frac{1}{30} = \frac{1}{20}$$
 
 $$\frac{1}{v} = \frac{1}{20} - \frac{1}{30} = \frac{3 - 2}{60} = \frac{1}{60}$$
 
-$$v = 60 \text{ cm}$$
+$$v = 60 \mathrm{ cm}$$
 
 $$m = \frac{v}{u} = \frac{60}{-30} = -2$$
 
-The image is real, inverted, and twice the size of the object, located $60 \text{ cm}$ on the other
+The image is real, inverted, and twice the size of the object, located $60 \mathrm{ cm}$ on the other
 side of the lens.
 
 ---
@@ -391,7 +391,7 @@ still undergo total internal reflection.
 An optical fibre has a core of refractive index $1.50$ and cladding of refractive index $1.45$. Find
 the critical angle at the core-cladding boundary.
 
-$$\sin\theta_c = \frac{n_{\text{cladding}}}{n_{\text{core}}} = \frac{1.45}{1.50} = 0.967$$
+$$\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.45}{1.50} = 0.967$$
 
 $$\theta_c = \sin^{-1}(0.967) = 75.2^\circ$$
 
@@ -415,13 +415,13 @@ between the polariser and analyser.
 
 ### Worked Example 8
 
-Unpolarised light of intensity $200 \text{ W/m}^2$ passes through two Polaroid filters. The second
+Unpolarised light of intensity $200 \mathrm{ W/m}^2$ passes through two Polaroid filters. The second
 filter's transmission axis is at $60^\circ$ to the first. Find the intensity after the second
 filter.
 
-After the first filter (intensity halved): $I_1 = 100 \text{ W/m}^2$
+After the first filter (intensity halved): $I_1 = 100 \mathrm{ W/m}^2$
 
-After the second filter: $I_2 = I_1\cos^2 60^\circ = 100 \times 0.25 = 25 \text{ W/m}^2$
+After the second filter: $I_2 = I_1\cos^2 60^\circ = 100 \times 0.25 = 25 \mathrm{ W/m}^2$
 
 ---
 
@@ -453,14 +453,14 @@ After the second filter: $I_2 = I_1\cos^2 60^\circ = 100 \times 0.25 = 25 \text{
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
-**Question 1:** Light of wavelength $600 \text{ nm}$ is incident on a pair of slits separated by
-$0.2 \text{ mm}$. The screen is $1.5 \text{ m}$ away. Find the distance between the central maximum
+**Question 1:** Light of wavelength $600 \mathrm{ nm}$ is incident on a pair of slits separated by
+$0.2 \mathrm{ mm}$. The screen is $1.5 \mathrm{ m}$ away. Find the distance between the central maximum
 and the third bright fringe.
 
-$$y = \frac{n\lambda D}{a} = \frac{3 \times 600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{2.7 \times 10^{-6}}{2 \times 10^{-4}} = 0.0135 \text{ m} = 13.5 \text{ mm}$$
+$$y = \frac{n\lambda D}{a} = \frac{3 \times 600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{2.7 \times 10^{-6}}{2 \times 10^{-4}} = 0.0135 \mathrm{ m} = 13.5 \mathrm{ mm}$$
 
-**Question 2:** A concave lens has a focal length of $15 \text{ cm}$. An object is placed
-$25 \text{ cm}$ from the lens. Find the image position.
+**Question 2:** A concave lens has a focal length of $15 \mathrm{ cm}$. An object is placed
+$25 \mathrm{ cm}$ from the lens. Find the image position.
 
 $$\frac{1}{v} - \frac{1}{-25} = \frac{1}{-15}$$
 
@@ -468,26 +468,26 @@ $$\frac{1}{v} + \frac{1}{25} = -\frac{1}{15}$$
 
 $$\frac{1}{v} = -\frac{1}{15} - \frac{1}{25} = \frac{-5 - 3}{75} = -\frac{8}{75}$$
 
-$$v = -9.375 \text{ cm}$$
+$$v = -9.375 \mathrm{ cm}$$
 
-The image is virtual, upright, and $9.375 \text{ cm}$ from the lens on the same side as the object.
+The image is virtual, upright, and $9.375 \mathrm{ cm}$ from the lens on the same side as the object.
 
 **Question 3:** The critical angle for a glass-air boundary is $42^\circ$. Find the refractive index
 of the glass.
 
 $$n = \frac{1}{\sin 42^\circ} = \frac{1}{0.669} = 1.49$$
 
-**Question 4:** Unpolarised light of intensity $300 \text{ W/m}^2$ passes through a Polaroid filter.
+**Question 4:** Unpolarised light of intensity $300 \mathrm{ W/m}^2$ passes through a Polaroid filter.
 What is the transmitted intensity?
 
-The first Polaroid reduces the intensity by half: $I = 150 \text{ W/m}^2$.
+The first Polaroid reduces the intensity by half: $I = 150 \mathrm{ W/m}^2$.
 
-**Question 5:** A stationary wave is set up on a string of length $1.2 \text{ m}$. The speed of the
-waves on the string is $24 \text{ m/s}$. Find the frequency of the second harmonic.
+**Question 5:** A stationary wave is set up on a string of length $1.2 \mathrm{ m}$. The speed of the
+waves on the string is $24 \mathrm{ m/s}$. Find the frequency of the second harmonic.
 
-For the second harmonic: $\lambda_2 = L = 1.2 \text{ m}$
+For the second harmonic: $\lambda_2 = L = 1.2 \mathrm{ m}$
 
-$$f_2 = \frac{v}{\lambda_2} = \frac{24}{1.2} = 20 \text{ Hz}$$
+$$f_2 = \frac{v}{\lambda_2} = \frac{24}{1.2} = 20 \mathrm{ Hz}$$
 </details>
 
 ---
@@ -540,13 +540,13 @@ the universe.
 
 ### Worked Example 9
 
-A police car sounding a siren of frequency $500 \text{ Hz}$ travels at $30 \text{ m/s}$ towards a
-stationary observer. The speed of sound is $340 \text{ m/s}$. Find the frequency heard by the
+A police car sounding a siren of frequency $500 \mathrm{ Hz}$ travels at $30 \mathrm{ m/s}$ towards a
+stationary observer. The speed of sound is $340 \mathrm{ m/s}$. Find the frequency heard by the
 observer.
 
 $$f' = f \left(\frac{v}{v - v_s}\right) = 500 \times \frac{340}{340 - 30} = 500 \times \frac{340}{310}$$
 
-$$f' = 500 \times 1.097 = 548.4 \text{ Hz}$$
+$$f' = 500 \times 1.097 = 548.4 \mathrm{ Hz}$$
 
 ### Worked Example 10
 
@@ -554,7 +554,7 @@ After the police car passes the observer and moves away, what frequency is heard
 
 $$f' = f \left(\frac{v}{v + v_s}\right) = 500 \times \frac{340}{340 + 30} = 500 \times \frac{340}{370}$$
 
-$$f' = 500 \times 0.919 = 459.5 \text{ Hz}$$
+$$f' = 500 \times 0.919 = 459.5 \mathrm{ Hz}$$
 
 ---
 
@@ -581,16 +581,16 @@ The attenuation of sound in a medium is often expressed in decibels per unit dis
 
 ### Worked Example 11
 
-A source emits sound with power $0.01 \text{ W}$. Find the intensity at distances of $5 \text{ m}$
-and $20 \text{ m}$ from the source.
+A source emits sound with power $0.01 \mathrm{ W}$. Find the intensity at distances of $5 \mathrm{ m}$
+and $20 \mathrm{ m}$ from the source.
 
-At $r = 5 \text{ m}$:
+At $r = 5 \mathrm{ m}$:
 
-$$I_1 = \frac{0.01}{4\pi(5)^2} = \frac{0.01}{314.16} = 3.18 \times 10^{-5} \text{ W/m}^2$$
+$$I_1 = \frac{0.01}{4\pi(5)^2} = \frac{0.01}{314.16} = 3.18 \times 10^{-5} \mathrm{ W/m}^2$$
 
-At $r = 20 \text{ m}$:
+At $r = 20 \mathrm{ m}$:
 
-$$I_2 = \frac{0.01}{4\pi(20)^2} = \frac{0.01}{5026.55} = 1.99 \times 10^{-6} \text{ W/m}^2$$
+$$I_2 = \frac{0.01}{4\pi(20)^2} = \frac{0.01}{5026.55} = 1.99 \times 10^{-6} \mathrm{ W/m}^2$$
 
 Note that doubling the distance reduces the intensity by a factor of 4 (inverse square law).
 
@@ -668,20 +668,20 @@ All harmonics are present in an open pipe.
 
 ### Worked Example 12
 
-A closed pipe of length $0.85 \text{ m}$ produces a fundamental frequency of $100 \text{ Hz}$. Find
+A closed pipe of length $0.85 \mathrm{ m}$ produces a fundamental frequency of $100 \mathrm{ Hz}$. Find
 the speed of sound.
 
-$$v = 4Lf_1 = 4 \times 0.85 \times 100 = 340 \text{ m/s}$$
+$$v = 4Lf_1 = 4 \times 0.85 \times 100 = 340 \mathrm{ m/s}$$
 
 ### Worked Example 13
 
-Find the frequency of the second harmonic that a closed pipe of length $0.5 \text{ m}$ can support.
-Take the speed of sound as $340 \text{ m/s}$.
+Find the frequency of the second harmonic that a closed pipe of length $0.5 \mathrm{ m}$ can support.
+Take the speed of sound as $340 \mathrm{ m/s}$.
 
 A closed pipe only supports odd harmonics. The "second harmonic" that exists is actually the 3rd
 harmonic:
 
-$$f_3 = \frac{3v}{4L} = \frac{3 \times 340}{4 \times 0.5} = \frac{1020}{2} = 510 \text{ Hz}$$
+$$f_3 = \frac{3v}{4L} = \frac{3 \times 340}{4 \times 0.5} = \frac{1020}{2} = 510 \mathrm{ Hz}$$
 
 ---
 
@@ -690,8 +690,8 @@ $$f_3 = \frac{3v}{4L} = \frac{3 \times 340}{4 \times 0.5} = \frac{1020}{2} = 510
 <details>
 <summary>More Practice Problems</summary>
 
-**Question 6:** A concave mirror has a focal length of $15 \text{ cm}$. An object $4 \text{ cm}$
-tall is placed $25 \text{ cm}$ from the mirror. Find the image position, height, and nature.
+**Question 6:** A concave mirror has a focal length of $15 \mathrm{ cm}$. An object $4 \mathrm{ cm}$
+tall is placed $25 \mathrm{ cm}$ from the mirror. Find the image position, height, and nature.
 
 Using the mirror formula $\frac{1}{v} + \frac{1}{u} = \frac{1}{f}$ (with real-is-positive
 convention):
@@ -700,13 +700,13 @@ $$\frac{1}{v} + \frac{1}{-25} = \frac{1}{15}$$
 
 $$\frac{1}{v} = \frac{1}{15} + \frac{1}{25} = \frac{5 + 3}{75} = \frac{8}{75}$$
 
-$$v = 9.375 \text{ cm}$$
+$$v = 9.375 \mathrm{ cm}$$
 
 Magnification: $m = \frac{-v}{u} = \frac{-9.375}{-25} = 0.375$
 
-Image height: $h_i = 0.375 \times 4 = 1.5 \text{ cm}$
+Image height: $h_i = 0.375 \times 4 = 1.5 \mathrm{ cm}$
 
-The image is real, inverted, diminished, and located $9.375 \text{ cm}$ in front of the mirror.
+The image is real, inverted, diminished, and located $9.375 \mathrm{ cm}$ in front of the mirror.
 
 **Question 7:** Light travels from water ($n = 1.33$) to glass ($n = 1.5$). If the angle of
 incidence is $40^\circ$, find the angle of refraction.
@@ -719,31 +719,31 @@ $$\sin\theta_2 = \frac{1.33 \times 0.6428}{1.5} = \frac{0.855}{1.5} = 0.570$$
 
 $$\theta_2 = \sin^{-1}(0.570) = 34.7^\circ$$
 
-**Question 8:** A source of sound of frequency $600 \text{ Hz}$ is placed on a moving train. The
-train moves towards a stationary observer at $25 \text{ m/s}$. Speed of sound is $340 \text{ m/s}$.
+**Question 8:** A source of sound of frequency $600 \mathrm{ Hz}$ is placed on a moving train. The
+train moves towards a stationary observer at $25 \mathrm{ m/s}$. Speed of sound is $340 \mathrm{ m/s}$.
 What frequency does the observer hear?
 
 $$f' = f \left(\frac{v}{v - v_s}\right) = 600 \times \frac{340}{340 - 25} = 600 \times \frac{340}{315}$$
 
-$$f' = 600 \times 1.079 = 647.6 \text{ Hz}$$
+$$f' = 600 \times 1.079 = 647.6 \mathrm{ Hz}$$
 
-**Question 9:** Two point sources are $3 \text{ mm}$ apart and emit coherent light of wavelength
-$600 \text{ nm}$. A screen is placed $2 \text{ m}$ away. Find the separation between adjacent bright
+**Question 9:** Two point sources are $3 \mathrm{ mm}$ apart and emit coherent light of wavelength
+$600 \mathrm{ nm}$. A screen is placed $2 \mathrm{ m}$ away. Find the separation between adjacent bright
 fringes.
 
-$$y = \frac{\lambda D}{a} = \frac{600 \times 10^{-9} \times 2}{3 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{3 \times 10^{-3}} = 4 \times 10^{-4} \text{ m} = 0.4 \text{ mm}$$
+$$y = \frac{\lambda D}{a} = \frac{600 \times 10^{-9} \times 2}{3 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{3 \times 10^{-3}} = 4 \times 10^{-4} \mathrm{ m} = 0.4 \mathrm{ mm}$$
 
-**Question 10:** A string fixed at both ends is $0.6 \text{ m}$ long. The wave speed on the string
-is $180 \text{ m/s}$. Find the frequencies of the first three harmonics.
+**Question 10:** A string fixed at both ends is $0.6 \mathrm{ m}$ long. The wave speed on the string
+is $180 \mathrm{ m/s}$. Find the frequencies of the first three harmonics.
 
-Fundamental: $f_1 = \frac{v}{2L} = \frac{180}{2 \times 0.6} = 150 \text{ Hz}$
+Fundamental: $f_1 = \frac{v}{2L} = \frac{180}{2 \times 0.6} = 150 \mathrm{ Hz}$
 
-2nd harmonic: $f_2 = 2f_1 = 300 \text{ Hz}$
+2nd harmonic: $f_2 = 2f_1 = 300 \mathrm{ Hz}$
 
-3rd harmonic: $f_3 = 3f_1 = 450 \text{ Hz}$
+3rd harmonic: $f_3 = 3f_1 = 450 \mathrm{ Hz}$
 
-**Question 11:** An object is placed $12 \text{ cm}$ from a convex lens of focal length
-$8 \text{ cm}$. Determine the image position, magnification, and nature.
+**Question 11:** An object is placed $12 \mathrm{ cm}$ from a convex lens of focal length
+$8 \mathrm{ cm}$. Determine the image position, magnification, and nature.
 
 $$\frac{1}{v} - \frac{1}{-12} = \frac{1}{8}$$
 
@@ -751,26 +751,26 @@ $$\frac{1}{v} + \frac{1}{12} = \frac{1}{8}$$
 
 $$\frac{1}{v} = \frac{1}{8} - \frac{1}{12} = \frac{3 - 2}{24} = \frac{1}{24}$$
 
-$$v = 24 \text{ cm}$$
+$$v = 24 \mathrm{ cm}$$
 
 $$m = \frac{v}{u} = \frac{24}{-12} = -2$$
 
-The image is real, inverted, magnified ($2\times$), and located $24 \text{ cm}$ from the lens on the
+The image is real, inverted, magnified ($2\times$), and located $24 \mathrm{ cm}$ from the lens on the
 opposite side.
 
 **Question 12:** Calculate the speed of light in glass of refractive index $1.52$.
 
-$$v = \frac{c}{n} = \frac{3 \times 10^8}{1.52} = 1.97 \times 10^8 \text{ m/s}$$
+$$v = \frac{c}{n} = \frac{3 \times 10^8}{1.52} = 1.97 \times 10^8 \mathrm{ m/s}$$
 
-**Question 13:** A sound source emits waves of frequency $440 \text{ Hz}$ and wavelength
-$0.78 \text{ m}$. The source moves towards a stationary observer at $20 \text{ m/s}$. What frequency
+**Question 13:** A sound source emits waves of frequency $440 \mathrm{ Hz}$ and wavelength
+$0.78 \mathrm{ m}$. The source moves towards a stationary observer at $20 \mathrm{ m/s}$. What frequency
 does the observer hear?
 
-$$v_{\text{sound}} = f\lambda = 440 \times 0.78 = 343.2 \text{ m/s}$$
+$$v_{\mathrm{sound}} = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s}$$
 
 $$f' = f\left(\frac{v}{v - v_s}\right) = 440 \times \frac{343.2}{343.2 - 20} = 440 \times \frac{343.2}{323.2}$$
 
-$$f' = 440 \times 1.062 = 467.3 \text{ Hz}$$
+$$f' = 440 \times 1.062 = 467.3 \mathrm{ Hz}$$
 
 **Question 14:** Explain the principle of a communication optical fibre and calculate the minimum
 refractive index of the core for total internal reflection at a bend of $5^\circ$ from the straight
@@ -783,7 +783,7 @@ bend causes the ray to strike at $85^\circ$ (instead of $90^\circ$ for a straigh
 $$\sin\theta_c = \sin 85^\circ = 0.996$$
 
 The core must have refractive index such that the critical angle is less than $85^\circ$, i.e.,
-$n_{\text{core}}/n_{\text{cladding}} \gt 1.004$. In practice, optical fibres are designed with much
+$n_{\mathrm{core}}/n_{\mathrm{cladding}} \gt 1.004$. In practice, optical fibres are designed with much
 larger refractive index differences to accommodate bends.
 </details>
 
@@ -793,7 +793,7 @@ larger refractive index differences to accommodate bends.
 
 ### Ultrasound Imaging
 
-Medical ultrasound uses high-frequency sound waves ($1$ to $15 \text{ MHz}$) to create images of
+Medical ultrasound uses high-frequency sound waves ($1$ to $15 \mathrm{ MHz}$) to create images of
 internal body structures.
 
 **Principle:**
@@ -816,10 +816,10 @@ between the two media. A gel is applied between the transducer and the skin to e
 ### Worked Example 14
 
 Ultrasound pulses are sent into the body and the echo from an organ returns after
-$40 \text{ \mu s}$. The speed of ultrasound in tissue is $1540 \text{ m/s}$. Find the depth of the
+$40 \mathrm{ \mu s}$. The speed of ultrasound in tissue is $1540 \mathrm{ m/s}$. Find the depth of the
 organ.
 
-$$d = \frac{vt}{2} = \frac{1540 \times 40 \times 10^{-6}}{2} = \frac{0.0616}{2} = 0.0308 \text{ m} = 3.08 \text{ cm}$$
+$$d = \frac{vt}{2} = \frac{1540 \times 40 \times 10^{-6}}{2} = \frac{0.0616}{2} = 0.0308 \mathrm{ m} = 3.08 \mathrm{ cm}$$
 
 (The factor of 2 accounts for the pulse travelling to the organ and back.)
 
@@ -836,15 +836,15 @@ liquid.
 
 ### Worked Example 15
 
-P-waves are detected at a seismograph station $6000 \text{ km}$ from the earthquake epicentre. If
-the P-wave speed is $8.0 \text{ km/s}$ and the S-wave speed is $4.5 \text{ km/s}$, find the time
+P-waves are detected at a seismograph station $6000 \mathrm{ km}$ from the earthquake epicentre. If
+the P-wave speed is $8.0 \mathrm{ km/s}$ and the S-wave speed is $4.5 \mathrm{ km/s}$, find the time
 difference between the arrival of P-waves and S-waves.
 
-P-wave arrival time: $t_P = \frac{6000}{8.0} = 750 \text{ s} = 12.5 \text{ minutes}$
+P-wave arrival time: $t_P = \frac{6000}{8.0} = 750 \mathrm{ s} = 12.5 \mathrm{ minutes}$
 
-S-wave arrival time: $t_S = \frac{6000}{4.5} = 1333 \text{ s} = 22.2 \text{ minutes}$
+S-wave arrival time: $t_S = \frac{6000}{4.5} = 1333 \mathrm{ s} = 22.2 \mathrm{ minutes}$
 
-Time difference: $t_S - t_P = 583 \text{ s} = 9.7 \text{ minutes}$
+Time difference: $t_S - t_P = 583 \mathrm{ s} = 9.7 \mathrm{ minutes}$
 
 This time difference is used to determine the distance from the epicentre, and data from multiple
 stations can triangulate the exact location.

@@ -26,24 +26,24 @@ goods are excluded to avoid double counting.
 
 **1. Output (production) approach:**
 
-$$\text{GDP} = \sum \text{Gross Value Added} = \sum (Q_i \times P_i) - \sum \text{intermediate consumption}$$
+$$\mathrm{GDP} = \sum \mathrm{Gross Value Added} = \sum (Q_i \times P_i) - \sum \mathrm{intermediate consumption}$$
 
 **2. Income approach:**
 
-$$\text{GDP} = W + R + i + \pi + D + T_{ind} - S$$
+$$\mathrm{GDP} = W + R + i + \pi + D + T_{ind} - S$$
 
 where $W$ = wages, $R$ = rent, $i$ = interest, $\pi$ = profit, $D$ = depreciation, $T_{ind}$ =
 indirect taxes minus subsidies.
 
 **3. Expenditure approach:**
 
-$$\text{GDP} = C + I + G + (X - M)$$
+$$\mathrm{GDP} = C + I + G + (X - M)$$
 
 where $C$ = consumption, $I$ = investment, $G$ = government spending, $X$ = exports, $M$ = imports.
 
 **Proof of equivalence (sketch).** Every pound spent on final output (expenditure) becomes income
 for someone (wages, profit, rent, interest). Every item of income corresponds to a factor's
-contribution to output. The identity $\text{output} \equiv \text{income} \equiv \text{expenditure}$
+contribution to output. The identity $\mathrm{output} \equiv \mathrm{income} \equiv \mathrm{expenditure}$
 holds by accounting convention: inventories are treated as investment (if produced but unsold,
 counted as $I$), and taxes/subsidies adjust market prices to factor costs. $\blacksquare$
 
@@ -59,17 +59,17 @@ countries with large informal sectors.
 **Nominal GDP** is measured at current prices. **Real GDP** adjusts for price changes using a price
 index (GDP deflator):
 
-$$\text{Real GDP} = \frac{\text{Nominal GDP}}{\text{GDP Deflator}} \times 100$$
+$$\mathrm{Real GDP} = \frac{\mathrm{Nominal GDP}}{\mathrm{GDP Deflator}} \times 100$$
 
-$$\text{GDP Deflator} = \frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100$$
+$$\mathrm{GDP Deflator} = \frac{\mathrm{Nominal GDP}}{\mathrm{Real GDP}} \times 100$$
 
 **GDP growth rate:**
 
-$$g = \frac{\text{GDP}_t - \text{GDP}_{t-1}}{\text{GDP}_{t-1}} \times 100\%$$
+$$g = \frac{\mathrm{GDP}_t - \mathrm{GDP}_{t-1}}{\mathrm{GDP}_{t-1}} \times 100\%$$
 
 ### 1.4 GDP Per Capita
 
-$$\text{GDP per capita} = \frac{\text{GDP}}{\text{Population}}$$
+$$\mathrm{GDP per capita} = \frac{\mathrm{GDP}}{\mathrm{Population}}$$
 
 GDP per capita is a better (though imperfect) measure of average living standards than total GDP.
 
@@ -140,7 +140,7 @@ outcomes.
 
 We define **inflation** as a sustained increase in the general price level over time.
 
-$$\text{Inflation rate} = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%$$
+$$\mathrm{Inflation rate} = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%$$
 
 **Deflation**: a sustained _decrease_ in the general price level ($\pi \lt{} 0$). **Disinflation**:
 a _reduction_ in the rate of inflation (prices still rising, but more slowly).
@@ -150,7 +150,7 @@ a _reduction_ in the rate of inflation (prices still rising, but more slowly).
 **Consumer Price Index (CPI)**: measures the change in the cost of a basket of goods and services
 representative of household consumption.
 
-$$\text{CPI}_t = \frac{\sum_{i} P_{i,t} \cdot Q_{i,0}}{\sum_{i} P_{i,0} \cdot Q_{i,0}} \times 100$$
+$$\mathrm{CPI}_t = \frac{\sum_{i} P_{i,t} \cdot Q_{i,0}}{\sum_{i} P_{i,0} \cdot Q_{i,0}} \times 100$$
 
 where $Q_{i,0}$ are base-period quantities (Laspeyres index).
 
@@ -204,14 +204,14 @@ payments, increasing government debt costs.
 
 **Demand-pull inflation**: caused by excess aggregate demand.
 
-$$AD > \text{full employment output} \Rightarrow P \uparrow$$
+$$AD > \mathrm{full employment output} \Rightarrow P \uparrow$$
 
 When the economy is at or near full capacity, any further increase in AD cannot increase output
 (resources are fully employed) and instead bids up prices.
 
 **Cost-push inflation**: caused by increases in costs of production.
 
-$$\text{Costs } \uparrow \Rightarrow SRAS \text{ shifts left} \Rightarrow P \uparrow, Y \downarrow$$
+$$\mathrm{Costs } \uparrow \Rightarrow SRAS \mathrm{ shifts left} \Rightarrow P \uparrow, Y \downarrow$$
 
 Causes: rising wages (wage-price spiral), rising commodity prices (oil shocks), exchange rate
 depreciation (imported inflation), higher taxes.
@@ -297,7 +297,7 @@ rapidly, making it much harder and more painful to bring inflation back down.
 
 The **unemployment rate** is:
 
-$$u = \frac{\text{Number unemployed}}{\text{Labour force}} \times 100\% = \frac{U}{U + E} \times 100\%$$
+$$u = \frac{\mathrm{Number unemployed}}{\mathrm{Labour force}} \times 100\% = \frac{U}{U + E} \times 100\%$$
 
 where the **labour force** = employed + unemployed. The unemployed are those without work, actively
 seeking work, and available to start work.
@@ -432,7 +432,7 @@ measures of underemployment and job quality.
 The **balance of payments (BoP)** records all transactions between residents of a country and the
 rest of the world.
 
-$$\text{Current Account} + \text{Capital Account} + \text{Financial Account} = 0$$
+$$\mathrm{Current Account} + \mathrm{Capital Account} + \mathrm{Financial Account} = 0$$
 
 **Current Account:**
 
@@ -541,7 +541,7 @@ wages return to their original level, and employment falls back to $u^*$. The ec
 the short-run Phillips curve to a point with higher inflation but the same unemployment rate.
 $\blacksquare$
 
-$$\text{Long-run Phillips curve: } u = u^* \text{ (vertical)}$$
+$$\mathrm{Long-run Phillips curve: } u = u^* \mathrm{ (vertical)}$$
 
 ### 5.3 Expectations and the Phillips Curve
 

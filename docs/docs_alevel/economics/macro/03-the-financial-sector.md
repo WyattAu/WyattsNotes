@@ -263,15 +263,15 @@ Monetary policy affects the economy through several channels:
 
 $$
 \begin{aligned}
-\text{Central bank } &\uparrow \text{ interest rate} \\
+\mathrm{Central bank } &\uparrow \mathrm{ interest rate} \\
 &\downarrow \\
-\text{Commercial banks } &\uparrow \text{ lending rates} \\
+\mathrm{Commercial banks } &\uparrow \mathrm{ lending rates} \\
 &\downarrow \\
-\text{Borrowing becomes more expensive } &\Rightarrow C \downarrow, I \downarrow \\
+\mathrm{Borrowing becomes more expensive } &\Rightarrow C \downarrow, I \downarrow \\
 &\downarrow \\
-\text{Saving becomes more attractive } &\Rightarrow C \downarrow \\
+\mathrm{Saving becomes more attractive } &\Rightarrow C \downarrow \\
 &\downarrow \\
-\text{Exchange rate appreciates } &\Rightarrow X \downarrow, M \uparrow \\
+\mathrm{Exchange rate appreciates } &\Rightarrow X \downarrow, M \uparrow \\
 &\downarrow \\
 AD &\downarrow \Rightarrow Y \downarrow, P \downarrow
 \end{aligned}
@@ -661,7 +661,7 @@ purchase to achieve its target.
 
 <details>
 <summary>Hint</summary>
-The effective multiplier accounts for excess reserves and cash leakages. Let $rr = 0.05$ (required), $re = 0.03$ (excess), and $c = 0.10$ (cash ratio). Total reserves held per unit of deposits $= rr + re = 0.08$. Each round, only $(1 - c)$ of loans are redeposited. The money multiplier becomes: $m = \frac{1 + c}{rr + re + c} = \frac{1.10}{0.08 + 0.10} = \frac{1.10}{0.18} \approx 6.11$. (a) The effective multiplier is approximately 6.11 (compared to the simple multiplier of $1/0.05 = 20$). (b) Required reserve injection $= \text{target increase} / m = 200 / 6.11 \approx$ GBP 32.7 billion. The central bank must purchase approximately GBP 32.7 billion of bonds. This is much larger than under the simple model (which would suggest only GBP 10 billion needed), illustrating the importance of accounting for cash leakages and excess reserves.
+The effective multiplier accounts for excess reserves and cash leakages. Let $rr = 0.05$ (required), $re = 0.03$ (excess), and $c = 0.10$ (cash ratio). Total reserves held per unit of deposits $= rr + re = 0.08$. Each round, only $(1 - c)$ of loans are redeposited. The money multiplier becomes: $m = \frac{1 + c}{rr + re + c} = \frac{1.10}{0.08 + 0.10} = \frac{1.10}{0.18} \approx 6.11$. (a) The effective multiplier is approximately 6.11 (compared to the simple multiplier of $1/0.05 = 20$). (b) Required reserve injection $= \mathrm{target increase} / m = 200 / 6.11 \approx$ GBP 32.7 billion. The central bank must purchase approximately GBP 32.7 billion of bonds. This is much larger than under the simple model (which would suggest only GBP 10 billion needed), illustrating the importance of accounting for cash leakages and excess reserves.
 </details>
 
 :::

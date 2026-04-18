@@ -47,7 +47,7 @@ equilibrium and directed oppositely to the displacement. This yields Newton's se
 $$
 \begin{aligned}
   F \propto -x \\
-  F_{\text{net}} = -kx = m \frac{d^2x}{dt^2},
+  F_{\mathrm{net}} = -kx = m \frac{d^2x}{dt^2},
 \end{aligned}
 $$
 
@@ -62,8 +62,8 @@ Here, $\omega$ is the angular frequency (rad s$^{-1}$), governing the system's t
 
 Key Characteristics:
 
-- Equilibrium Position: Point where net force vanishes ($F_{\text{net}} = 0$).
-- Amplitude ($A$): Maximum displacement from equilibrium ($|x|_{\text{max}} = A$).
+- Equilibrium Position: Point where net force vanishes ($F_{\mathrm{net}} = 0$).
+- Amplitude ($A$): Maximum displacement from equilibrium ($|x|_{\mathrm{max}} = A$).
 - Isochrony: Period $T$ is amplitude-independent for ideal SHM.
 
 Conditions for Ideal SHM:
@@ -96,8 +96,8 @@ Phase Relationships:
 - Displacement-Velocity: $v = \pm \omega \sqrt{A^2 - x^2}$ (from energy conservation).
 - Displacement-Acceleration: $a = -\omega^2 x$ (definitive property of SHM).
 - Extrema:
-  - $|v|_{\text{max}} = \omega A$ at $x = 0$ (equilibrium).
-  - $|a|_{\text{max}} = \omega^2 A$ at $x = \pm A$ (max displacement).
+  - $|v|_{\mathrm{max}} = \omega A$ at $x = 0$ (equilibrium).
+  - $|a|_{\mathrm{max}} = \omega^2 A$ at $x = \pm A$ (max displacement).
 
 Graphical Interpretation:
 
@@ -106,10 +106,10 @@ Graphical Interpretation:
 
 ## Energy Conservation
 
-Total mechanical energy $E_{\text{total}}$ is conserved:
+Total mechanical energy $E_{\mathrm{total}}$ is conserved:
 
 $$
-E_{\text{total}} = K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2. \tag{5}
+E_{\mathrm{total}} = K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2. \tag{5}
 $$
 
 Substituting Equations (2)--(4) yields: Kinetic Energy ($K$):
@@ -127,13 +127,13 @@ $$
 Total Energy:
 
 $$
-E_{\text{total}} = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2 A^2. \tag{8}
+E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2 A^2. \tag{8}
 $$
 
 Energy Oscillations:
 
-- $K_{\text{max}} = E_{\text{total}}$ at $x = 0$.
-- $U_{\text{max}} = E_{\text{total}}$ at $x = \pm A$.
+- $K_{\mathrm{max}} = E_{\mathrm{total}}$ at $x = 0$.
+- $U_{\mathrm{max}} = E_{\mathrm{total}}$ at $x = \pm A$.
 
 ## Example Systems
 
@@ -207,7 +207,7 @@ $$
 | Period            | $T = 2\pi / \omega$                                              |
 | Kinetic Energy    | $K = \frac{1}{2}m\omega^2(A^2 - x^2)$                            |
 | Potential Energy  | $U = \frac{1}{2}m\omega^2 x^2$                                   |
-| Total Energy      | $E_{\text{total}} = \frac{1}{2}m\omega^2 A^2$                    |
+| Total Energy      | $E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2$                    |
 
 ## Derivation of the SHM Solution
 
@@ -275,69 +275,69 @@ introduces a systematic phase error of $\pm\pi/2$.
 
 ### Example 1: Period and Frequency of a Mass-Spring System
 
-A spring of stiffness $k = 200\text{ N/m}$ has a $0.50\text{ kg}$ mass attached. Find the period $T$
+A spring of stiffness $k = 200\mathrm{ N/m}$ has a $0.50\mathrm{ kg}$ mass attached. Find the period $T$
 and frequency $f$.
 
 $$
-T = 2\pi \sqrt{\frac{m}{k}} = 2\pi \sqrt{\frac{0.50}{200}} = 2\pi(0.0500) = 0.314\text{ s}
+T = 2\pi \sqrt{\frac{m}{k}} = 2\pi \sqrt{\frac{0.50}{200}} = 2\pi(0.0500) = 0.314\mathrm{ s}
 $$
 
 $$
-f = \frac{1}{T} = \frac{1}{0.314} = 3.18\text{ Hz}
+f = \frac{1}{T} = \frac{1}{0.314} = 3.18\mathrm{ Hz}
 $$
 
 ### Example 2: Displacement and Velocity at a Given Time
 
-A mass-spring system has amplitude $A = 0.10\text{ m}$ and period $T = 0.50\text{ s}$. The mass is
-released from maximum displacement at $t = 0$. Find $x$ and $v$ at $t = 0.125\text{ s}$.
+A mass-spring system has amplitude $A = 0.10\mathrm{ m}$ and period $T = 0.50\mathrm{ s}$. The mass is
+released from maximum displacement at $t = 0$. Find $x$ and $v$ at $t = 0.125\mathrm{ s}$.
 
 Angular frequency:
 
 $$
-\omega = \frac{2\pi}{T} = \frac{2\pi}{0.50} = 4\pi\text{ rad/s}
+\omega = \frac{2\pi}{T} = \frac{2\pi}{0.50} = 4\pi\mathrm{ rad/s}
 $$
 
 With $x(0) = A$, use the cosine form: $x = A\cos(\omega t)$.
 
 $$
-x(0.125) = 0.10\cos(4\pi \times 0.125) = 0.10\cos\!\left(\frac{\pi}{2}\right) = 0\text{ m}
+x(0.125) = 0.10\cos(4\pi \times 0.125) = 0.10\cos\!\left(\frac{\pi}{2}\right) = 0\mathrm{ m}
 $$
 
 $$
-v(0.125) = -\omega A \sin(\omega t) = -4\pi(0.10)\sin\!\left(\frac{\pi}{2}\right) = -1.26\text{ m/s}
+v(0.125) = -\omega A \sin(\omega t) = -4\pi(0.10)\sin\!\left(\frac{\pi}{2}\right) = -1.26\mathrm{ m/s}
 $$
 
-The mass passes through equilibrium at $t = T/4 = 0.125\text{ s}$, moving in the negative direction
-with speed $|v| = \omega A = 1.26\text{ m/s}$.
+The mass passes through equilibrium at $t = T/4 = 0.125\mathrm{ s}$, moving in the negative direction
+with speed $|v| = \omega A = 1.26\mathrm{ m/s}$.
 
 ### Example 3: Amplitude from Energy
 
-A $0.30\text{ kg}$ mass oscillates on a spring with $k = 120\text{ N/m}$. At equilibrium, the speed
-is $1.6\text{ m/s}$. Determine the amplitude.
+A $0.30\mathrm{ kg}$ mass oscillates on a spring with $k = 120\mathrm{ N/m}$. At equilibrium, the speed
+is $1.6\mathrm{ m/s}$. Determine the amplitude.
 
 At $x = 0$, all energy is kinetic:
 
 $$
-E_{\text{total}} = \frac{1}{2}mv_{\max}^2 = \frac{1}{2}(0.30)(1.6)^2 = 0.384\text{ J}
+E_{\mathrm{total}} = \frac{1}{2}mv_{\max}^2 = \frac{1}{2}(0.30)(1.6)^2 = 0.384\mathrm{ J}
 $$
 
 At $x = A$, all energy is potential:
 
 $$
-E_{\text{total}} = \frac{1}{2}kA^2 \implies A = \sqrt{\frac{2E_{\text{total}}}{k}} = \sqrt{\frac{2(0.384)}{120}} = \sqrt{0.00640} = 0.0800\text{ m}
+E_{\mathrm{total}} = \frac{1}{2}kA^2 \implies A = \sqrt{\frac{2E_{\mathrm{total}}}{k}} = \sqrt{\frac{2(0.384)}{120}} = \sqrt{0.00640} = 0.0800\mathrm{ m}
 $$
 
 ### Example 4: Simple Pendulum Period
 
-A simple pendulum on Earth has a period of $2.00\text{ s}$. Determine its length. Use
-$g = 9.81\text{ m/s}^2$.
+A simple pendulum on Earth has a period of $2.00\mathrm{ s}$. Determine its length. Use
+$g = 9.81\mathrm{ m/s}^2$.
 
 $$
-L = \frac{gT^2}{4\pi^2} = \frac{(9.81)(2.00)^2}{4\pi^2} = \frac{39.2}{39.5} = 0.993\text{ m}
+L = \frac{gT^2}{4\pi^2} = \frac{(9.81)(2.00)^2}{4\pi^2} = \frac{39.2}{39.5} = 0.993\mathrm{ m}
 $$
 
-This is close to $1.00\text{ m}$, which is why a "seconds pendulum" ($T = 2\text{ s}$) is
-approximately $1\text{ m}$ long on Earth.
+This is close to $1.00\mathrm{ m}$, which is why a "seconds pendulum" ($T = 2\mathrm{ s}$) is
+approximately $1\mathrm{ m}$ long on Earth.
 
 ### Example 5: Phase Difference Between Two Oscillators
 
@@ -353,30 +353,30 @@ $x_B = A\sin(\omega t) = A\cos\!\left(\omega t - \frac{\pi}{2}\right)$
 Comparing phases: $\phi_A = 0$, $\phi_B = -\pi/2$.
 
 $$
-|\Delta\phi| = \left|0 - \left(-\frac{\pi}{2}\right)\right| = \frac{\pi}{2}\text{ rad} = 90°
+|\Delta\phi| = \left|0 - \left(-\frac{\pi}{2}\right)\right| = \frac{\pi}{2}\mathrm{ rad} = 90°
 $$
 
 System A leads System B by $90^\circ$.
 
 ### Example 6: Energy Partition at a Given Displacement
 
-A mass-spring system has $A = 0.15\text{ m}$, $k = 80.0\text{ N/m}$, and $m = 0.20\text{ kg}$. Find
-the kinetic energy, potential energy, and speed at $x = 0.090\text{ m}$.
+A mass-spring system has $A = 0.15\mathrm{ m}$, $k = 80.0\mathrm{ N/m}$, and $m = 0.20\mathrm{ kg}$. Find
+the kinetic energy, potential energy, and speed at $x = 0.090\mathrm{ m}$.
 
 $$
-E_{\text{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(80.0)(0.15)^2 = 0.900\text{ J}
-$$
-
-$$
-U = \frac{1}{2}kx^2 = \frac{1}{2}(80.0)(0.090)^2 = 0.324\text{ J}
+E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(80.0)(0.15)^2 = 0.900\mathrm{ J}
 $$
 
 $$
-K = E_{\text{total}} - U = 0.900 - 0.324 = 0.576\text{ J}
+U = \frac{1}{2}kx^2 = \frac{1}{2}(80.0)(0.090)^2 = 0.324\mathrm{ J}
 $$
 
 $$
-v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.576)}{0.20}} = \sqrt{5.76} = 2.40\text{ m/s}
+K = E_{\mathrm{total}} - U = 0.900 - 0.324 = 0.576\mathrm{ J}
+$$
+
+$$
+v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.576)}{0.20}} = \sqrt{5.76} = 2.40\mathrm{ m/s}
 $$
 
 ---
@@ -424,15 +424,15 @@ $\sin\phi_0 = -v_0/(\omega A)$ to resolve the correct quadrant.
 
 ### HL Example 1: Phase Angle Determination
 
-A $0.40\text{ kg}$ mass on a spring with $k = 160\text{ N/m}$ has initial conditions
-$x(0) = 0.060\text{ m}$ and $v(0) = 1.20\text{ m/s}$ (positive). Find the amplitude and phase angle.
+A $0.40\mathrm{ kg}$ mass on a spring with $k = 160\mathrm{ N/m}$ has initial conditions
+$x(0) = 0.060\mathrm{ m}$ and $v(0) = 1.20\mathrm{ m/s}$ (positive). Find the amplitude and phase angle.
 
 $$
-\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0.40}} = 20.0\text{ rad/s}
+\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0.40}} = 20.0\mathrm{ rad/s}
 $$
 
 $$
-A = \sqrt{(0.060)^2 + \frac{(1.20)^2}{(20.0)^2}} = \sqrt{0.00360 + 0.00360} = \sqrt{0.00720} = 0.0849\text{ m}
+A = \sqrt{(0.060)^2 + \frac{(1.20)^2}{(20.0)^2}} = \sqrt{0.00360 + 0.00360} = \sqrt{0.00720} = 0.0849\mathrm{ m}
 $$
 
 $$
@@ -441,59 +441,59 @@ $$
 
 So $\phi_0 = -\pi/4$ or $\phi_0 = 3\pi/4$. Check quadrant: $\cos\phi_0 = x_0/A = 0.707 > 0$ (first
 or fourth quadrant). $\sin\phi_0 = -v_0/(\omega A) = -0.707 < 0$ (third or fourth quadrant). Both
-conditions point to the fourth quadrant: $\phi_0 = -\pi/4 = -0.785\text{ rad}$.
+conditions point to the fourth quadrant: $\phi_0 = -\pi/4 = -0.785\mathrm{ rad}$.
 
 ### HL Example 2: Velocity at Given Displacement
 
-A pendulum oscillates with amplitude $A = 0.120\text{ m}$ and angular frequency
-$\omega = 3.50\text{ rad/s}$. Find the speed at $x = 0.050\text{ m}$.
+A pendulum oscillates with amplitude $A = 0.120\mathrm{ m}$ and angular frequency
+$\omega = 3.50\mathrm{ rad/s}$. Find the speed at $x = 0.050\mathrm{ m}$.
 
 $$
-v = \pm\omega\sqrt{A^2 - x^2} = \pm 3.50\sqrt{(0.120)^2 - (0.050)^2} = \pm 3.50\sqrt{0.0119} = \pm 0.382\text{ m/s}
+v = \pm\omega\sqrt{A^2 - x^2} = \pm 3.50\sqrt{(0.120)^2 - (0.050)^2} = \pm 3.50\sqrt{0.0119} = \pm 0.382\mathrm{ m/s}
 $$
 
-The $\pm$ reflects that the mass passes through $x = 0.050\text{ m}$ twice per cycle: once toward
+The $\pm$ reflects that the mass passes through $x = 0.050\mathrm{ m}$ twice per cycle: once toward
 equilibrium and once away.
 
 ### HL Example 3: Energy at Arbitrary Displacement
 
-A $0.50\text{ kg}$ mass on a spring ($k = 200\text{ N/m}$) oscillates with amplitude
-$0.10\text{ m}$. Find the kinetic energy, potential energy, and speed at $x = 0.060\text{ m}$.
+A $0.50\mathrm{ kg}$ mass on a spring ($k = 200\mathrm{ N/m}$) oscillates with amplitude
+$0.10\mathrm{ m}$. Find the kinetic energy, potential energy, and speed at $x = 0.060\mathrm{ m}$.
 
 $$
-E_T = \frac{1}{2}m\omega^2 A^2 = \frac{1}{2}(200)(0.10)^2 = 1.00\text{ J}
-$$
-
-$$
-E_P = \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}(200)(0.060)^2 = 0.360\text{ J}
+E_T = \frac{1}{2}m\omega^2 A^2 = \frac{1}{2}(200)(0.10)^2 = 1.00\mathrm{ J}
 $$
 
 $$
-K = E_T - E_P = 1.00 - 0.360 = 0.640\text{ J}
+E_P = \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}(200)(0.060)^2 = 0.360\mathrm{ J}
 $$
 
 $$
-v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.640)}{0.50}} = 1.60\text{ m/s}
+K = E_T - E_P = 1.00 - 0.360 = 0.640\mathrm{ J}
 $$
 
-Verification: $\omega = \sqrt{k/m} = 20.0\text{ rad/s}$,
-$v = 20.0\sqrt{(0.10)^2 - (0.060)^2} = 1.60\text{ m/s}$ $\checkmark$
+$$
+v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.640)}{0.50}} = 1.60\mathrm{ m/s}
+$$
+
+Verification: $\omega = \sqrt{k/m} = 20.0\mathrm{ rad/s}$,
+$v = 20.0\sqrt{(0.10)^2 - (0.060)^2} = 1.60\mathrm{ m/s}$ $\checkmark$
 
 ### HL Example 4: Period, Amplitude, and Total Energy
 
-A $0.50\text{ kg}$ object undergoes SHM with total energy $2.0\text{ J}$ and amplitude
-$0.20\text{ m}$. Determine $\omega$, $k$, and the speed at $x = 0.10\text{ m}$.
+A $0.50\mathrm{ kg}$ object undergoes SHM with total energy $2.0\mathrm{ J}$ and amplitude
+$0.20\mathrm{ m}$. Determine $\omega$, $k$, and the speed at $x = 0.10\mathrm{ m}$.
 
 $$
 E_T = \frac{1}{2}m\omega^2 A^2 \implies \omega^2 = \frac{2E_T}{mA^2} = \frac{2(2.0)}{(0.50)(0.20)^2} = 200
 $$
 
 $$
-\omega = \sqrt{200} = 14.1\text{ rad/s}, \quad k = m\omega^2 = (0.50)(200) = 100\text{ N/m}
+\omega = \sqrt{200} = 14.1\mathrm{ rad/s}, \quad k = m\omega^2 = (0.50)(200) = 100\mathrm{ N/m}
 $$
 
 $$
-v = \omega\sqrt{A^2 - x^2} = 14.1\sqrt{(0.20)^2 - (0.10)^2} = 14.1(0.173) = 2.44\text{ m/s}
+v = \omega\sqrt{A^2 - x^2} = 14.1\sqrt{(0.20)^2 - (0.10)^2} = 14.1(0.173) = 2.44\mathrm{ m/s}
 $$
 
 ---
@@ -508,9 +508,9 @@ regime. IB students may be asked to sketch displacement-time graphs for each reg
 The amplitude decays exponentially: $A(t) = A_0 e^{-bt}$, where $b$ is the damping coefficient.
 
 - The system oscillates with gradually decreasing amplitude.
-- The period is slightly **longer** than the undamped period: $T_{\text{damped}} \gt T_0$.
+- The period is slightly **longer** than the undamped period: $T_{\mathrm{damped}} \gt T_0$.
 - Energy is dissipated each cycle, primarily as heat via friction or air resistance.
-- The quality factor $Q = 2\pi \times \frac{\text{energy stored}}{\text{energy lost per cycle}}$
+- The quality factor $Q = 2\pi \times \frac{\mathrm{energy stored}}{\mathrm{energy lost per cycle}}$
   quantifies how underdamped the system is. High $Q$ means low energy loss per cycle.
 
 ### Critical Damping
@@ -597,7 +597,7 @@ below its natural length. SHM occurs about this equilibrium, not the natural len
 
 ### Problem 1 (SL)
 
-A $0.25\text{ kg}$ mass is attached to a spring with $k = 400\text{ N/m}$. Calculate: (a) the period
+A $0.25\mathrm{ kg}$ mass is attached to a spring with $k = 400\mathrm{ N/m}$. Calculate: (a) the period
 of oscillation, (b) the frequency, (c) the angular frequency.
 
 <details>
@@ -606,19 +606,19 @@ of oscillation, (b) the frequency, (c) the angular frequency.
 (a)
 
 $$
-T = 2\pi\sqrt{\frac{m}{k}} = 2\pi\sqrt{\frac{0.25}{400}} = 2\pi(0.0250) = 0.157\text{ s}
+T = 2\pi\sqrt{\frac{m}{k}} = 2\pi\sqrt{\frac{0.25}{400}} = 2\pi(0.0250) = 0.157\mathrm{ s}
 $$
 
 (b)
 
 $$
-T_{\text{Earth}} = 2\pi\sqrt{\frac{1.50}{9.81}} = 2.46\text{ s}
+T_{\mathrm{Earth}} = 2\pi\sqrt{\frac{1.50}{9.81}} = 2.46\mathrm{ s}
 $$
 
 On Mars:
 
 $$
-T_{\text{Mars}} = 2\pi\sqrt{\frac{1.50}{3.71}} = 4.00\text{ s}
+T_{\mathrm{Mars}} = 2\pi\sqrt{\frac{1.50}{3.71}} = 4.00\mathrm{ s}
 $$
 
 The period is longer on Mars due to the weaker gravitational field.
@@ -627,23 +627,23 @@ The period is longer on Mars due to the weaker gravitational field.
 
 ### Problem 3 (SL)
 
-A mass-spring system has amplitude $0.080\text{ m}$ and spring constant $k = 500\text{ N/m}$ with
-mass $0.50\text{ kg}$. Find the kinetic energy and potential energy when the displacement is
-$0.040\text{ m}$.
+A mass-spring system has amplitude $0.080\mathrm{ m}$ and spring constant $k = 500\mathrm{ N/m}$ with
+mass $0.50\mathrm{ kg}$. Find the kinetic energy and potential energy when the displacement is
+$0.040\mathrm{ m}$.
 
 <details>
 <summary>Solution</summary>
 
 $$
-E_T = \frac{1}{2}kA^2 = \frac{1}{2}(500)(0.080)^2 = 1.60\text{ J}
+E_T = \frac{1}{2}kA^2 = \frac{1}{2}(500)(0.080)^2 = 1.60\mathrm{ J}
 $$
 
 $$
-U = \frac{1}{2}kx^2 = \frac{1}{2}(500)(0.040)^2 = 0.400\text{ J}
+U = \frac{1}{2}kx^2 = \frac{1}{2}(500)(0.040)^2 = 0.400\mathrm{ J}
 $$
 
 $$
-K = E_T - U = 1.60 - 0.400 = 1.20\text{ J}
+K = E_T - U = 1.60 - 0.400 = 1.20\mathrm{ J}
 $$
 
 At half the amplitude, the split is 75% kinetic, 25% potential (energy scales as $x^2$).
@@ -673,8 +673,8 @@ is less accurate at $10^\circ$, but this difference is negligible at the IB leve
 
 ### Problem 5 (SL)
 
-A $2.0\text{ kg}$ object on a spring oscillates with amplitude $0.30\text{ m}$. At
-$x = 0.20\text{ m}$, the speed is $2.0\text{ m/s}$. Find the total energy and the spring constant.
+A $2.0\mathrm{ kg}$ object on a spring oscillates with amplitude $0.30\mathrm{ m}$. At
+$x = 0.20\mathrm{ m}$, the speed is $2.0\mathrm{ m/s}$. Find the total energy and the spring constant.
 
 <details>
 <summary>Solution</summary>
@@ -686,22 +686,22 @@ $$
 $$
 
 $$
-4.0 = 0.025k \implies k = 160\text{ N/m}
+4.0 = 0.025k \implies k = 160\mathrm{ N/m}
 $$
 
 Total energy:
 
 $$
-E_T = \frac{1}{2}kA^2 = \frac{1}{2}(160)(0.30)^2 = 7.2\text{ J}
+E_T = \frac{1}{2}kA^2 = \frac{1}{2}(160)(0.30)^2 = 7.2\mathrm{ J}
 $$
 
 </details>
 
 ### Problem 6 (HL)
 
-A particle undergoes SHM with $\omega = 8.0\text{ rad/s}$. At $t = 0$, $x = 0.030\text{ m}$ and
-$v = -0.20\text{ m/s}$. Determine the amplitude, the phase angle (cosine form), and the displacement
-at $t = 0.50\text{ s}$.
+A particle undergoes SHM with $\omega = 8.0\mathrm{ rad/s}$. At $t = 0$, $x = 0.030\mathrm{ m}$ and
+$v = -0.20\mathrm{ m/s}$. Determine the amplitude, the phase angle (cosine form), and the displacement
+at $t = 0.50\mathrm{ s}$.
 
 <details>
 <summary>Solution</summary>
@@ -709,7 +709,7 @@ at $t = 0.50\text{ s}$.
 Amplitude:
 
 $$
-A = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}} = \sqrt{(0.030)^2 + \frac{(0.20)^2}{(8.0)^2}} = \sqrt{0.000900 + 0.000625} = \sqrt{0.001525} = 0.0391\text{ m}
+A = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}} = \sqrt{(0.030)^2 + \frac{(0.20)^2}{(8.0)^2}} = \sqrt{0.000900 + 0.000625} = \sqrt{0.001525} = 0.0391\mathrm{ m}
 $$
 
 Phase angle:
@@ -718,22 +718,22 @@ $$
 \tan\phi_0 = -\frac{v_0}{\omega x_0} = -\frac{-0.20}{(8.0)(0.030)} = 0.833
 $$
 
-$\phi_0 = \arctan(0.833) = 0.694\text{ rad}$. Quadrant check: $\cos\phi_0 = x_0/A = 0.767 > 0$ and
+$\phi_0 = \arctan(0.833) = 0.694\mathrm{ rad}$. Quadrant check: $\cos\phi_0 = x_0/A = 0.767 > 0$ and
 $\sin\phi_0 = -v_0/(\omega A) = 0.639 > 0$. Both positive, first quadrant confirmed.
 
-Displacement at $t = 0.50\text{ s}$:
+Displacement at $t = 0.50\mathrm{ s}$:
 
 $$
-x = 0.0391\cos(8.0 \times 0.50 + 0.694) = 0.0391\cos(4.694) = 0.0391(-0.0296) = -0.00116\text{ m}
+x = 0.0391\cos(8.0 \times 0.50 + 0.694) = 0.0391\cos(4.694) = 0.0391(-0.0296) = -0.00116\mathrm{ m}
 $$
 
 </details>
 
 ### Problem 7 (HL)
 
-A $0.60\text{ kg}$ mass on a spring has total energy $0.48\text{ J}$ and amplitude $0.040\text{ m}$.
+A $0.60\mathrm{ kg}$ mass on a spring has total energy $0.48\mathrm{ J}$ and amplitude $0.040\mathrm{ m}$.
 (a) Find the spring constant. (b) Find the maximum speed. (c) Find the speed when
-$x = 0.020\text{ m}$. (d) At what displacement is $K = U$?
+$x = 0.020\mathrm{ m}$. (d) At what displacement is $K = U$?
 
 <details>
 <summary>Solution</summary>
@@ -741,25 +741,25 @@ $x = 0.020\text{ m}$. (d) At what displacement is $K = U$?
 (a)
 
 $$
-k = \frac{2E_T}{A^2} = \frac{2(0.48)}{(0.040)^2} = 600\text{ N/m}
+k = \frac{2E_T}{A^2} = \frac{2(0.48)}{(0.040)^2} = 600\mathrm{ N/m}
 $$
 
 (b)
 
 $$
-v_{\max} = \omega A = A\sqrt{\frac{k}{m}} = 0.040\sqrt{\frac{600}{0.60}} = 0.040(31.6) = 1.26\text{ m/s}
+v_{\max} = \omega A = A\sqrt{\frac{k}{m}} = 0.040\sqrt{\frac{600}{0.60}} = 0.040(31.6) = 1.26\mathrm{ m/s}
 $$
 
 (c)
 
 $$
-v = \omega\sqrt{A^2 - x^2} = 31.6\sqrt{(0.040)^2 - (0.020)^2} = 31.6\sqrt{0.00120} = 1.10\text{ m/s}
+v = \omega\sqrt{A^2 - x^2} = 31.6\sqrt{(0.040)^2 - (0.020)^2} = 31.6\sqrt{0.00120} = 1.10\mathrm{ m/s}
 $$
 
 (d) $K = U \implies E_T = 2U$:
 
 $$
-\frac{1}{2}kA^2 = 2 \times \frac{1}{2}kx^2 \implies x = \frac{A}{\sqrt{2}} = \frac{0.040}{\sqrt{2}} = 0.0283\text{ m}
+\frac{1}{2}kA^2 = 2 \times \frac{1}{2}kx^2 \implies x = \frac{A}{\sqrt{2}} = \frac{0.040}{\sqrt{2}} = 0.0283\mathrm{ m}
 $$
 
 This holds for any SHM regardless of system parameters.
@@ -768,31 +768,31 @@ This holds for any SHM regardless of system parameters.
 
 ### Problem 8 (HL)
 
-A simple pendulum of length $2.00\text{ m}$ is released from a small angle on Earth. At the lowest
-point, the bob has speed $3.13\text{ m/s}$. Determine: (a) the amplitude (arc length), (b) the
-maximum acceleration, (c) the speed when the bob is $0.50\text{ m}$ below the release point.
+A simple pendulum of length $2.00\mathrm{ m}$ is released from a small angle on Earth. At the lowest
+point, the bob has speed $3.13\mathrm{ m/s}$. Determine: (a) the amplitude (arc length), (b) the
+maximum acceleration, (c) the speed when the bob is $0.50\mathrm{ m}$ below the release point.
 
 <details>
 <summary>Solution</summary>
 
 $$
-A = \frac{v_{\max}}{\omega} = \frac{3.13}{2.21} = 1.42\text{ m}
+A = \frac{v_{\max}}{\omega} = \frac{3.13}{2.21} = 1.42\mathrm{ m}
 $$
 
-This corresponds to an angular amplitude of $0.71\text{ rad} \approx 41^\circ$, exceeding the small-angle
+This corresponds to an angular amplitude of $0.71\mathrm{ rad} \approx 41^\circ$, exceeding the small-angle
 regime. The SHM model is approximate here.
 
 (b)
 
 $$
-a_{\max} = \omega^2 A = (4.905)(1.42) = 6.97\text{ m/s}^2
+a_{\max} = \omega^2 A = (4.905)(1.42) = 6.97\mathrm{ m/s}^2
 $$
 
-(c) The release point is at $x = A = 1.42\text{ m}$. A point $0.50\text{ m}$ below corresponds to
-$x = A - 0.50 = 0.92\text{ m}$.
+(c) The release point is at $x = A = 1.42\mathrm{ m}$. A point $0.50\mathrm{ m}$ below corresponds to
+$x = A - 0.50 = 0.92\mathrm{ m}$.
 
 $$
-v = \omega\sqrt{A^2 - x^2} = 2.21\sqrt{(1.42)^2 - (0.92)^2} = 2.21\sqrt{1.170} = 2.21(1.082) = 2.39\text{ m/s}
+v = \omega\sqrt{A^2 - x^2} = 2.21\sqrt{(1.42)^2 - (0.92)^2} = 2.21\sqrt{1.170} = 2.21(1.082) = 2.39\mathrm{ m/s}
 $$
 
 </details>

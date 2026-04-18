@@ -19,7 +19,7 @@ goods and services.
 Formally, market failure occurs when the price mechanism does not equate marginal social benefit
 with marginal social cost:
 
-$$P \neq MSC \quad \text{or equivalently} \quad MSB \neq MSC$$
+$$P \neq MSC \quad \mathrm{or equivalently} \quad MSB \neq MSC$$
 
 This leads to a **deadweight welfare loss**: the total surplus (consumer + producer + third-party)
 is not maximised.
@@ -64,18 +64,18 @@ where $MPB$ = marginal private benefit, $MEB$ = marginal external benefit.
 Consider a good with a negative production externality (e.g., pollution from a factory). The market
 equilibrium is where demand (MPB) equals supply (MPC):
 
-$$\text{Market equilibrium: } MPB = MPC \implies Q_{mkt}, P_{mkt}$$
+$$\mathrm{Market equilibrium: } MPB = MPC \implies Q_{mkt}, P_{mkt}$$
 
 The socially optimal outcome is where marginal social benefit equals marginal social cost:
 
-$$\text{Social optimum: } MSB = MSC \implies Q^*, P^*$$
+$$\mathrm{Social optimum: } MSB = MSC \implies Q^*, P^*$$
 
 Since $MSC > MPC$ (there is an external cost), the social optimum quantity $Q^*$ is _less than_ the
 market quantity $Q_{mkt}$. The free market **over-produces** the good.
 
 The deadweight welfare loss (DWL) is:
 
-$$\text{DWL} = \frac{1}{2}(Q_{mkt} - Q^*)(MSC(Q_{mkt}) - MSB(Q_{mkt}))$$
+$$\mathrm{DWL} = \frac{1}{2}(Q_{mkt} - Q^*)(MSC(Q_{mkt}) - MSB(Q_{mkt}))$$
 
 This is the area of the triangle between the MSC and MSB curves from $Q^*$ to $Q_{mkt}$.
 
@@ -112,7 +112,7 @@ We define a **public good** as a good that is:
    consuming the good
 2. **Non-rivalrous**: one person's consumption does not reduce the quantity available to others
 
-$$Q_{total} = Q_{individual} \quad \text{(non-rivalry)}$$
+$$Q_{total} = Q_{individual} \quad \mathrm{(non-rivalry)}$$
 
 Contrast with **private goods**: excludable and rivalrous (your consumption of an apple means I
 cannot eat it).

@@ -201,7 +201,7 @@ Differentiate: $2x\frac{dx}{dt} + 2y\frac{dy}{dt} = 0$.
 When $x = 3$: $y = \sqrt{25 - 9} = 4$.
 
 $$
-2(3)(0.5) + 2(4)\frac{dy}{dt} = 0 \implies 3 + 8\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{3}{8} \text{ m/s}
+2(3)(0.5) + 2(4)\frac{dy}{dt} = 0 \implies 3 + 8\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{3}{8} \mathrm{ m/s}
 $$
 
 ---
@@ -285,7 +285,7 @@ $$
 ### Integration by Substitution
 
 $$
-\int f(g(x))g'(x) \, dx = \int f(u) \, du \quad \text{where } u = g(x)
+\int f(g(x))g'(x) \, dx = \int f(u) \, du \quad \mathrm{where } u = g(x)
 $$
 
 **Example:** Evaluate $\int \dfrac{x}{x^2 + 1} \, dx$.

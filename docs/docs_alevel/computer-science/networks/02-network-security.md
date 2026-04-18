@@ -70,7 +70,7 @@ compromised.
 **Asymmetric encryption** (public-key cryptography) uses a **pair of keys**: a **public key**
 (shared openly) and a **private key** (kept secret).
 
-$$C = E_{\text{pub}}(M), \quad M = D_{\text{priv}}(C)$$
+$$C = E_{\mathrm{pub}}(M), \quad M = D_{\mathrm{priv}}(C)$$
 
 - Anyone can encrypt using the public key
 - Only the private key holder can decrypt
@@ -146,12 +146,12 @@ A **digital signature** provides:
 
 ### Process
 
-**Signing:** $$S = D_{\text{priv}}(H(M))$$
+**Signing:** $$S = D_{\mathrm{priv}}(H(M))$$
 
 where $H$ is a hash function. The sender hashes the message and "decrypts" the hash with their
 private key.
 
-**Verification:** $$H(M) \stackrel{?}{=} E_{\text{pub}}(S)$$
+**Verification:** $$H(M) \stackrel{?}{=} E_{\mathrm{pub}}(S)$$
 
 The receiver encrypts the signature with the sender's public key and compares it to the hash of the
 received message.
@@ -189,7 +189,7 @@ fixed-length output (hash/digest).
 
 ### Applications
 
-- **Password storage:** Store $H(\text{password})$ instead of the plaintext password
+- **Password storage:** Store $H(\mathrm{password})$ instead of the plaintext password
 - **Data integrity:** Compare hashes before and after transmission
 - **Digital signatures:** Sign the hash instead of the entire message
 - **Blockchain:** Hash pointers link blocks
@@ -199,7 +199,7 @@ fixed-length output (hash/digest).
 **Why not just hash?** Simple hashing is vulnerable to **rainbow tables** (precomputed hash-lookup
 tables).
 
-**Salting:** Add a random string (salt) before hashing: $H(\text{salt} + \text{password})$. Each
+**Salting:** Add a random string (salt) before hashing: $H(\mathrm{salt} + \mathrm{password})$. Each
 user gets a unique salt, making rainbow tables useless.
 
 **Key stretching:** Use slow hash functions (bcrypt, PBKDF2, Argon2) that deliberately take many

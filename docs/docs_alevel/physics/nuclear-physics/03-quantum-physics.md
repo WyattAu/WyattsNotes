@@ -120,18 +120,18 @@ of a specific frequency — a **spectral line**.
 An electron can absorb a photon and jump to a higher level, but **only** if the photon energy
 exactly matches an energy level difference:
 
-$$hf = E_{\text{upper}} - E_{\text{lower}}$$
+$$hf = E_{\mathrm{upper}} - E_{\mathrm{lower}}$$
 
 This is why absorption spectra show dark lines at the same frequencies as emission lines.
 
 ### The Hydrogen Spectrum
 
 **Definition.** The electronvolt (eV) is a unit of energy equal to the work done when an electron is
-accelerated through a potential difference of one volt: $1\,\text{eV} = 1.60 \times 10^{-19}$ J.
+accelerated through a potential difference of one volt: $1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
 
 The energy levels of hydrogen are given by the **Bohr model**:
 
-$$E_n = -\frac{13.6\,\text{eV}}{n^2}, \qquad n = 1, 2, 3, \ldots$$
+$$E_n = -\frac{13.6\,\mathrm{eV}}{n^2}, \qquad n = 1, 2, 3, \ldots$$
 
 The Lyman series (UV): transitions to $n = 1$. The Balmer series (visible): transitions to $n = 2$.
 The Paschen series (IR): transitions to $n = 3$.
@@ -225,7 +225,7 @@ of atoms broadens the energy levels into bands.
 :::tip
 Exam Technique When calculating photon wavelengths from energy level transitions, first find
 $\Delta E$ in joules, then use $\lambda = hc/\Delta E$. Remember to convert eV to joules:
-$1\,\text{eV} = 1.60 \times 10^{-19}$ J.
+$1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
 :::
 
 ## 5. Wave-Particle Duality — Deeper Analysis
@@ -319,11 +319,11 @@ position and a well-defined momentum.
 **Electrons cannot "fall into" the nucleus.** If an electron were confined to a nucleus
 ($\Delta x \sim 5 \times 10^{-15}$ m), the minimum momentum uncertainty would be:
 
-$$\Delta p \geq \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 5 \times 10^{-15}} = 1.06 \times 10^{-20}\,\text{kg m s}^{-1}$$
+$$\Delta p \geq \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 5 \times 10^{-15}} = 1.06 \times 10^{-20}\,\mathrm{kg m s}^{-1}$$
 
 The corresponding kinetic energy (using $E_k = p^2/2m$ and taking $p \approx \Delta p$):
 
-$$E_k \geq \frac{(1.06 \times 10^{-20})^2}{2 \times 9.11 \times 10^{-31}} = 6.1 \times 10^{-11}\,\text{J} \approx 382\,\text{MeV}$$
+$$E_k \geq \frac{(1.06 \times 10^{-20})^2}{2 \times 9.11 \times 10^{-31}} = 6.1 \times 10^{-11}\,\mathrm{J} \approx 382\,\mathrm{MeV}$$
 
 This is orders of magnitude larger than the binding energy of the atom ($\sim 13.6$ eV). The
 confinement energy alone would far exceed any attractive potential, so the electron cannot be
@@ -344,15 +344,15 @@ $5 \times 10^{-15}$ m.
 1. Position uncertainty: $\Delta x \approx 5 \times 10^{-15}$ m.
 2. From the uncertainty principle:
 
-$$\Delta p \geq \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 5 \times 10^{-15}} = 1.06 \times 10^{-20}\,\text{kg m s}^{-1}$$
+$$\Delta p \geq \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 5 \times 10^{-15}} = 1.06 \times 10^{-20}\,\mathrm{kg m s}^{-1}$$
 
 3. Minimum kinetic energy (using $E_k = (\Delta p)^2 / 2m_e$):
 
-$$E_k \geq \frac{(1.06 \times 10^{-20})^2}{2 \times 9.11 \times 10^{-31}} = \frac{1.12 \times 10^{-40}}{1.82 \times 10^{-30}} = 6.15 \times 10^{-11}\,\text{J}$$
+$$E_k \geq \frac{(1.06 \times 10^{-20})^2}{2 \times 9.11 \times 10^{-31}} = \frac{1.12 \times 10^{-40}}{1.82 \times 10^{-30}} = 6.15 \times 10^{-11}\,\mathrm{J}$$
 
 4. Converting to eV:
 
-$$E_k \geq \frac{6.15 \times 10^{-11}}{1.60 \times 10^{-19}} = 3.84 \times 10^8\,\text{eV} = 384\,\text{MeV}$$
+$$E_k \geq \frac{6.15 \times 10^{-11}}{1.60 \times 10^{-19}} = 3.84 \times 10^8\,\mathrm{eV} = 384\,\mathrm{MeV}$$
 
 This is $\sim 28$ million times the ground-state binding energy of hydrogen (13.6 eV), confirming
 that the electron cannot exist inside the nucleus.
@@ -398,7 +398,7 @@ $$r^3 = \frac{n^2 \hbar^2}{m_e k e^2} \cdot r^2 \implies \boxed{r_n = \frac{n^2 
 
 where the **Bohr radius** is:
 
-$$\boxed{a_0 = \frac{\hbar^2}{m_e k e^2} = 0.0529\,\text{nm}}$$
+$$\boxed{a_0 = \frac{\hbar^2}{m_e k e^2} = 0.0529\,\mathrm{nm}}$$
 
 For hydrogen ($Z = 1$), the ground state ($n = 1$) orbit has $r_1 = a_0 = 0.0529$ nm.
 
@@ -424,7 +424,7 @@ $$E_n = E_k + E_p = \frac{k e^2}{2r_n} - \frac{k e^2}{r_n} = -\frac{k e^2}{2r_n}
 
 $$E_n = -\frac{k e^2}{2} \cdot \frac{m_e k e^2}{n^2 \hbar^2} = -\frac{m_e k^2 e^4}{2\hbar^2 n^2}$$
 
-$$\boxed{E_n = -\frac{Z^2 \cdot 13.6\,\text{eV}}{n^2}}$$
+$$\boxed{E_n = -\frac{Z^2 \cdot 13.6\,\mathrm{eV}}{n^2}}$$
 
 For hydrogen ($Z = 1$): $E_1 = -13.6$ eV, $E_2 = -3.4$ eV, $E_3 = -1.51$ eV, $E_4 = -0.85$ eV.
 
@@ -446,7 +446,7 @@ $$\frac{1}{\lambda} = \frac{m_e k^2 e^4}{2\hbar^2 hc}\left(\frac{1}{n_f^2} - \fr
 
 4. Identifying the Rydberg constant:
 
-$$\boxed{R = \frac{m_e k^2 e^4}{4\pi c \hbar^3} = 1.097 \times 10^7\,\text{m}^{-1}}$$
+$$\boxed{R = \frac{m_e k^2 e^4}{4\pi c \hbar^3} = 1.097 \times 10^7\,\mathrm{m}^{-1}}$$
 
 $\square$
 
@@ -466,7 +466,7 @@ The series limit represents ionisation — the electron is freed from the atom e
 The ionisation energy is the energy required to move the electron from the ground state to
 $n = \infty$ (free):
 
-$$E_{\text{ionisation}} = E_\infty - E_1 = 0 - (-13.6\,\text{eV}) = 13.6\,\text{eV}$$
+$$E_{\mathrm{ionisation}} = E_\infty - E_1 = 0 - (-13.6\,\mathrm{eV}) = 13.6\,\mathrm{eV}$$
 
 For hydrogen, this equals the ground state binding energy in magnitude.
 
@@ -495,7 +495,7 @@ rises again, drops at $V \approx 9.8$ V, again at $V \approx 14.7$ V, and so on.
 The spacing of $4.9$ V between successive dips directly measures the energy gap to the first excited
 state of Hg. The emitted photon has wavelength:
 
-$$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\text{eV nm}}{4.9\,\text{eV}} = 253\,\text{nm}$$
+$$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\mathrm{eV nm}}{4.9\,\mathrm{eV}} = 253\,\mathrm{nm}$$
 
 which is in the UV — consistent with the observed UV emission from the Hg vapour.
 
@@ -540,7 +540,7 @@ $x = 0$ and $x = L$. Inside the box, $V = 0$; outside, $V = \infty$.
 
 **Boundary conditions.** The electron cannot exist outside the box, so:
 
-$$\psi(0) = 0 \quad \text{and} \quad \psi(L) = 0$$
+$$\psi(0) = 0 \quad \mathrm{and} \quad \psi(L) = 0$$
 
 **Proof: Derivation of the wave functions and energy levels.**
 
@@ -752,7 +752,7 @@ m $= 487$ nm (blue-green, Balmer series).
 Light of wavelength 200 nm is incident on a zinc plate with work function 4.30 eV. Determine whether
 photoelectrons are emitted and, if so, calculate their maximum kinetic energy.
 
-**Answer.** Photon energy $= hc/\lambda = 1240\,\text{eV nm}/200\,\text{nm} = 6.20$ eV.
+**Answer.** Photon energy $= hc/\lambda = 1240\,\mathrm{eV nm}/200\,\mathrm{nm} = 6.20$ eV.
 
 Since $6.20 \gt 4.30$, photoelectrons are emitted. $E_{k,\max} = 6.20 - 4.30 = 1.90$ eV.
 
@@ -813,7 +813,7 @@ energy level does the electron jump?
 
 **Answer.** Photon energy $= hc/\lambda = 1240/97.3 = 12.75$ eV.
 
-$E_1 = -13.6$ eV. $E_{\text{final}} = -13.6 + 12.75 = -0.85$ eV.
+$E_1 = -13.6$ eV. $E_{\mathrm{final}} = -13.6 + 12.75 = -0.85$ eV.
 
 $E_n = -13.6/n^2 = -0.85$. $n^2 = 13.6/0.85 = 16$. $n = 4$.
 
@@ -845,11 +845,11 @@ Heisenberg uncertainty principle to estimate the minimum uncertainty in its velo
 1. Position uncertainty: $\Delta x \approx 1.0 \times 10^{-10}$ m.
 2. From $\Delta x \cdot \Delta p \geq \hbar/2$:
 
-$$\Delta p \geq \frac{1.055 \times 10^{-34}}{2 \times 1.0 \times 10^{-10}} = 5.28 \times 10^{-25}\,\text{kg m s}^{-1}$$
+$$\Delta p \geq \frac{1.055 \times 10^{-34}}{2 \times 1.0 \times 10^{-10}} = 5.28 \times 10^{-25}\,\mathrm{kg m s}^{-1}$$
 
 3. Since $\Delta p = m_e \Delta v$:
 
-$$\Delta v \geq \frac{5.28 \times 10^{-25}}{9.11 \times 10^{-31}} = 5.80 \times 10^5\,\text{m s}^{-1}$$
+$$\Delta v \geq \frac{5.28 \times 10^{-25}}{9.11 \times 10^{-31}} = 5.80 \times 10^5\,\mathrm{m s}^{-1}$$
 
 The minimum uncertainty in velocity is $5.8 \times 10^5$ m s$^{-1}$.
 
@@ -878,11 +878,11 @@ $$r_n = \frac{n^2\hbar^2}{m_e ke^2}$$
 
 For $n = 1$, the Bohr radius:
 
-$$a_0 = \frac{\hbar^2}{m_e ke^2} = \frac{(1.055 \times 10^{-34})^2}{9.11 \times 10^{-31} \times 8.99 \times 10^9 \times (1.60 \times 10^{-19})^2} = 5.29 \times 10^{-11}\,\text{m} = 0.0529\,\text{nm}$$
+$$a_0 = \frac{\hbar^2}{m_e ke^2} = \frac{(1.055 \times 10^{-34})^2}{9.11 \times 10^{-31} \times 8.99 \times 10^9 \times (1.60 \times 10^{-19})^2} = 5.29 \times 10^{-11}\,\mathrm{m} = 0.0529\,\mathrm{nm}$$
 
 4. Total energy $E_n = -ke^2/(2r_n)$. For $n = 1$:
 
-$$E_1 = -\frac{ke^2}{2a_0} = -\frac{(8.99 \times 10^9)(1.60 \times 10^{-19})^2}{2 \times 5.29 \times 10^{-11}} = -2.18 \times 10^{-18}\,\text{J} = -13.6\,\text{eV}$$
+$$E_1 = -\frac{ke^2}{2a_0} = -\frac{(8.99 \times 10^9)(1.60 \times 10^{-19})^2}{2 \times 5.29 \times 10^{-11}} = -2.18 \times 10^{-18}\,\mathrm{J} = -13.6\,\mathrm{eV}$$
 
 <b>If you get this wrong, revise:</b> [Derivation of the Bohr Model](#derivation-of-the-bohr-model)
 
@@ -902,7 +902,7 @@ de-excites.
 
 2. Wavelength of the emitted photon:
 
-$$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\text{eV nm}}{4.9\,\text{eV}} = 253\,\text{nm}$$
+$$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\mathrm{eV nm}}{4.9\,\mathrm{eV}} = 253\,\mathrm{nm}$$
 
 This is in the ultraviolet region, consistent with the observed UV emission.
 
@@ -919,7 +919,7 @@ the energies of the ground state ($n = 1$) and the first three excited states ($
 
 Using $E_n = n^2 h^2 / (8m_e L^2)$:
 
-$$E_1 = \frac{(6.63 \times 10^{-34})^2}{8 \times 9.11 \times 10^{-31} \times (1.0 \times 10^{-9})^2} = \frac{4.396 \times 10^{-67}}{7.288 \times 10^{-48}} = 6.03 \times 10^{-20}\,\text{J} = 0.377\,\text{eV}$$
+$$E_1 = \frac{(6.63 \times 10^{-34})^2}{8 \times 9.11 \times 10^{-31} \times (1.0 \times 10^{-9})^2} = \frac{4.396 \times 10^{-67}}{7.288 \times 10^{-48}} = 6.03 \times 10^{-20}\,\mathrm{J} = 0.377\,\mathrm{eV}$$
 
 Since $E_n \propto n^2$:
 
@@ -942,9 +942,9 @@ Calculate the shortest wavelength in the Lyman series of hydrogen. What type of 
 The shortest wavelength in the Lyman series corresponds to the transition from $n = \infty$ to
 $n = 1$ (the series limit):
 
-$$\frac{1}{\lambda_{\min}} = R\left(\frac{1}{1^2} - \frac{1}{\infty^2}\right) = R = 1.097 \times 10^7\,\text{m}^{-1}$$
+$$\frac{1}{\lambda_{\min}} = R\left(\frac{1}{1^2} - \frac{1}{\infty^2}\right) = R = 1.097 \times 10^7\,\mathrm{m}^{-1}$$
 
-$$\lambda_{\min} = \frac{1}{R} = \frac{1}{1.097 \times 10^7} = 9.12 \times 10^{-8}\,\text{m} = 91.2\,\text{nm}$$
+$$\lambda_{\min} = \frac{1}{R} = \frac{1}{1.097 \times 10^7} = 9.12 \times 10^{-8}\,\mathrm{m} = 91.2\,\mathrm{nm}$$
 
 This is in the far ultraviolet region, well below the visible range ($380$--$700$ nm).
 
@@ -995,7 +995,7 @@ $$V = \frac{h^2}{2m_e e \lambda^2} = \frac{(6.63 \times 10^{-34})^2}{2 \times 9.
 
 $$V = \frac{4.396 \times 10^{-67}}{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 4.0 \times 10^{-20}}$$
 
-$$V = \frac{4.396 \times 10^{-67}}{1.167 \times 10^{-68}} = 37.7\,\text{V}$$
+$$V = \frac{4.396 \times 10^{-67}}{1.167 \times 10^{-68}} = 37.7\,\mathrm{V}$$
 
 In practice, a much higher voltage ($\gt 100$ kV) is used because lens aberrations further limit the
 resolution, but the diffraction-limited minimum is approximately $38$ V.
@@ -1013,7 +1013,7 @@ experiment at $\sim 900$ K).
 
 **Answer.**
 
-$$\lambda = \frac{h}{mv} = \frac{6.63 \times 10^{-34}}{1.20 \times 10^{-24} \times 220} = \frac{6.63 \times 10^{-34}}{2.64 \times 10^{-22}} = 2.51 \times 10^{-12}\,\text{m} = 0.00251\,\text{nm}$$
+$$\lambda = \frac{h}{mv} = \frac{6.63 \times 10^{-34}}{1.20 \times 10^{-24} \times 220} = \frac{6.63 \times 10^{-34}}{2.64 \times 10^{-22}} = 2.51 \times 10^{-12}\,\mathrm{m} = 0.00251\,\mathrm{nm}$$
 
 This is comparable to the spacing between atoms in a crystal lattice. Remarkably, interference
 patterns for C-60 have been observed experimentally (Arndt et al., 1999), confirming wave-particle

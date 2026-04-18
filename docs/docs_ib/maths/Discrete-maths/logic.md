@@ -97,7 +97,7 @@ Therefore, we can say not A or B is the same as (not A) or B.
 
 I cry if I am sad
 
-- $\text{Sad}\implies\text{Cry}$
+- $\mathrm{Sad}\implies\mathrm{Cry}$
 - Means that if I am sad, then I cry.
 - It doesn't say that there aren't other situations in which I might also cry.
 - I can cry under other conditions. Being sad is NOT the only condition.
@@ -105,7 +105,7 @@ I cry if I am sad
 
 I cry only if I am sad
 
-- $\text{Cry}\implies\text{Sad}$
+- $\mathrm{Cry}\implies\mathrm{Sad}$
 - If I am crying, then I am sad. This is because only under this condition (being sad) I can cry.
 - This does not mean that I cry every time I am sad. I can be sad and not cry, but if I am crying,
   then I HAVE to be sad.
@@ -114,7 +114,7 @@ I cry only if I am sad
 
 I cry if and only if I am sad
 
-- $\text{Sad}\iff\text{Cry}$
+- $\mathrm{Sad}\iff\mathrm{Cry}$
 - Combination of the other two statements, both must be true.
 - I cry if I am sad: 'If I am sad then I cry'
 - I cry only if I am sad: 'If I am crying then I am sad'
@@ -122,7 +122,7 @@ I cry if and only if I am sad
 
 The church bells ring if it is Sunday
 
-- $\text{Sunday}\implies\text{Ring}$
+- $\mathrm{Sunday}\implies\mathrm{Ring}$
 - If it is Sunday, then the bells ring
 - On Sunday, at some point the bells ring
 - Doesn't say anything else about the other days
@@ -130,7 +130,7 @@ The church bells ring if it is Sunday
 
 The church bells ring only if it is Sunday
 
-- $\text{Ring}\implies\text{Sunday}$
+- $\mathrm{Ring}\implies\mathrm{Sunday}$
 - If the bells ring, then it is Sunday
 - The bells will not ring on any other day
 - They might not ring on Sunday/on every Sunday
@@ -143,33 +143,33 @@ The church bells ring if and only if it is Sunday
 
 A number is prime if it is an integer
 
-- $\text{Integer}\implies\text{Prime}$ : False, lots of integers are not prime.
+- $\mathrm{Integer}\implies\mathrm{Prime}$ : False, lots of integers are not prime.
 - If a number is an integer, then it is prime.
 - It can also possible be a decimal and prime, doesn't have to be an integer
 
 A number is prime only if it is an integer
 
-- $\text{Prime}\implies\text{Integer}$ : True, all primes are integers.
+- $\mathrm{Prime}\implies\mathrm{Integer}$ : True, all primes are integers.
 - If a number is prime, then it is an integer.
 
 A number is prime if and only if it is an integer
 
-- $\text{Integer}\iff\text{Prime}$ : False, all primes are integers, but not all integers are primes
+- $\mathrm{Integer}\iff\mathrm{Prime}$ : False, all primes are integers, but not all integers are primes
 - Both statements must be true.
 
 A shape is a rectangle if it is a square
 
-- $\text{Square}\implies\text{Rectangle}$ : True, all squares are rectangles
+- $\mathrm{Square}\implies\mathrm{Rectangle}$ : True, all squares are rectangles
 - If a shape is a square, then it is a rectangle
 
 A shape is a rectangle only if it is a square
 
-- $\text{Rectangle}\implies\text{Square}$ : False, not all rectangles are squares
+- $\mathrm{Rectangle}\implies\mathrm{Square}$ : False, not all rectangles are squares
 - If a shape is a rectangle, then it is a square.
 
 A shape is a rectangle if and only if it is a square
 
-- $\text{Square}\iff\text{Rectangle}$ : False, because one of the two statements above are false.
+- $\mathrm{Square}\iff\mathrm{Rectangle}$ : False, because one of the two statements above are false.
 
 A if B
 
@@ -319,7 +319,7 @@ The converse of $P \Rightarrow Q$ is $Q \Rightarrow P$:
 | F   | F   | T                 | T                 |
 
 The truth values differ in rows 2 and 3. This is why the converse of a true statement need not be
-true. For instance, "If a number is prime then it is odd" ($P = \text{prime}$, $Q = \text{odd}$) is
+true. For instance, "If a number is prime then it is odd" ($P = \mathrm{prime}$, $Q = \mathrm{odd}$) is
 false (witness $2$), but its converse "If a number is odd then it is prime" is also false (witness
 $9$). In contrast, "If a number is a square then it is a rectangle" is true, but its converse "If a
 number is a rectangle then it is a square" is false.
@@ -473,7 +473,7 @@ backbone of most direct proofs.
 (something that is always false, such as $0 = 1$ or $q^2 = 2$ where $q$ is rational). Since the
 assumption $\neg P$ led to an impossibility, $\neg P$ must be false, so $P$ is true.
 
-$$\neg P \Rightarrow \cdots \Rightarrow \text{contradiction} \quad \therefore P$$
+$$\neg P \Rightarrow \cdots \Rightarrow \mathrm{contradiction} \quad \therefore P$$
 
 **Worked example 1.** Prove that $\sqrt{2}$ is irrational.
 
@@ -530,7 +530,7 @@ $\square$
 **Structure.** Split the domain into exhaustive, mutually exclusive cases and prove the result holds
 in each one.
 
-$$\text{Case 1: } C_1 \Rightarrow Q \qquad \text{Case 2: } C_2 \Rightarrow Q \qquad \cdots$$
+$$\mathrm{Case 1: } C_1 \Rightarrow Q \qquad \mathrm{Case 2: } C_2 \Rightarrow Q \qquad \cdots$$
 
 Since the cases cover all possibilities, $Q$ holds unconditionally.
 
@@ -695,7 +695,7 @@ Step 1: Negate the universal quantifier. "There exists an integer $n$ such that 
 case that (if $n$ is prime then $n$ is odd or $n = 2$)."
 
 Step 2: Negate the implication. "$P \Rightarrow Q$" negates to "$P$ and $\neg Q$". So: "$n$ is prime
-and $\neg(n \text{ is odd or } n = 2)$."
+and $\neg(n \mathrm{ is odd or } n = 2)$."
 
 Step 3: Apply De Morgan's law. $\neg(A \lor B) = (\neg A) \land (\neg B)$. So: "$n$ is even and
 $n \neq 2$."

@@ -66,7 +66,7 @@ pair of the weight is the gravitational pull of the book on the Earth.
 
 $$W = mg$$
 
-where $g \approx 9.8\,\text{m/s}^2$ (or $9.81$ on some boards). Weight acts vertically downward
+where $g \approx 9.8\,\mathrm{m/s}^2$ (or $9.81$ on some boards). Weight acts vertically downward
 through the centre of mass.
 
 ### 2.2 Normal reaction
@@ -163,11 +163,11 @@ For two particles of masses $m_1$ and $m_2$ connected over a smooth pulley:
 3. Use the constraint that both have the same acceleration magnitude (inextensible string).
 4. Solve the simultaneous equations.
 
-**Example.** Masses $5\,\text{kg}$ and $3\,\text{kg}$ hang vertically over a smooth pulley.
+**Example.** Masses $5\,\mathrm{kg}$ and $3\,\mathrm{kg}$ hang vertically over a smooth pulley.
 
-For $5\,\text{kg}$: $5g - T = 5a$. For $3\,\text{kg}$: $T - 3g = 3a$.
+For $5\,\mathrm{kg}$: $5g - T = 5a$. For $3\,\mathrm{kg}$: $T - 3g = 3a$.
 
-Adding: $2g = 8a \implies a = g/4 = 2.45\,\text{m/s}^2$. $T = 3(g/4 + g) = 15g/4 = 36.75\,\text{N}$.
+Adding: $2g = 8a \implies a = g/4 = 2.45\,\mathrm{m/s}^2$. $T = 3(g/4 + g) = 15g/4 = 36.75\,\mathrm{N}$.
 
 ### 5.2 On an inclined plane
 
@@ -295,19 +295,19 @@ included in the equations of motion for each particle.
 3. Solve the simultaneous equations.
 4. If $a \lt{} 0$, the assumed direction was wrong -- reconsider with friction reversed.
 
-**Example.** A particle of mass $4\,\text{kg}$ on a rough horizontal table ($\mu = 0.3$) is
+**Example.** A particle of mass $4\,\mathrm{kg}$ on a rough horizontal table ($\mu = 0.3$) is
 connected by a light inextensible string over a smooth pulley at the table edge to a particle of
-mass $3\,\text{kg}$ hanging vertically. Find the acceleration.
+mass $3\,\mathrm{kg}$ hanging vertically. Find the acceleration.
 
-For the $3\,\text{kg}$ mass (assumed descending): $3g - T = 3a$.
+For the $3\,\mathrm{kg}$ mass (assumed descending): $3g - T = 3a$.
 
-For the $4\,\text{kg}$ mass: $R = 4g$, $F = \mu R = 0.3 \times 4g = 1.2g$.
+For the $4\,\mathrm{kg}$ mass: $R = 4g$, $F = \mu R = 0.3 \times 4g = 1.2g$.
 
 $$T - 1.2g = 4a$$
 
-Adding: $3g - 1.2g = 7a \implies 1.8g = 7a \implies a = 1.8g/7 \approx 2.52\,\text{m/s}^2$.
+Adding: $3g - 1.2g = 7a \implies 1.8g = 7a \implies a = 1.8g/7 \approx 2.52\,\mathrm{m/s}^2$.
 
-Since $a \gt{} 0$, the assumption is correct: the $3\,\text{kg}$ mass descends.
+Since $a \gt{} 0$, the assumption is correct: the $3\,\mathrm{kg}$ mass descends.
 
 ### 8.4 Friction and the direction of motion
 
@@ -511,7 +511,7 @@ the angle between $F_1$ and $F_2$, then:
 
 $$\frac{F_1}{\sin\theta_1} = \frac{F_2}{\sin\theta_2} = \frac{F_3}{\sin\theta_3}$$
 
-**Example.** A particle of mass $10\,\text{kg}$ is suspended by two strings. One string makes an
+**Example.** A particle of mass $10\,\mathrm{kg}$ is suspended by two strings. One string makes an
 angle of $30^\circ$ with the vertical and the other makes an angle of $60^\circ$ with the vertical. Find the
 tensions.
 
@@ -524,9 +524,9 @@ By Lami's theorem:
 
 $$\frac{T_1}{\sin(180° - 60°)} = \frac{T_2}{\sin(180° - 30°)} = \frac{10g}{\sin 90°}$$
 
-$$T_1 = 10g \sin 60° = 10g \times \frac{\sqrt{3}}{2} = 5\sqrt{3}\,g \approx 84.9\,\text{N}$$
+$$T_1 = 10g \sin 60° = 10g \times \frac{\sqrt{3}}{2} = 5\sqrt{3}\,g \approx 84.9\,\mathrm{N}$$
 
-$$T_2 = 10g \sin 30° = 10g \times \frac{1}{2} = 5g = 49\,\text{N}$$
+$$T_2 = 10g \sin 30° = 10g \times \frac{1}{2} = 5g = 49\,\mathrm{N}$$
 
 ### 11.4 Triangle of forces
 
@@ -538,9 +538,9 @@ This is equivalent to Lami's theorem and follows from the sine rule applied to t
 
 ### 11.5 Worked example -- beam in equilibrium
 
-A uniform beam $AB$ of length $4\,\text{m}$ and mass $20\,\text{kg}$ is hinged at $A$ and supported
+A uniform beam $AB$ of length $4\,\mathrm{m}$ and mass $20\,\mathrm{kg}$ is hinged at $A$ and supported
 by a wire attached at $B$, making an angle of $30^\circ$ with the beam. A particle of mass
-$30\,\text{kg}$ hangs from the beam at a point $1.5\,\text{m}$ from $A$. Find the tension in the
+$30\,\mathrm{kg}$ hangs from the beam at a point $1.5\,\mathrm{m}$ from $A$. Find the tension in the
 wire and the reaction at the hinge.
 
 **Taking moments about $A$ (to eliminate the hinge reaction):**
@@ -549,11 +549,11 @@ $$T\sin 30° \times 4 - 20g \times 2 - 30g \times 1.5 = 0$$
 
 $$T \times 0.5 \times 4 = 40g + 45g$$
 
-$$2T = 85g \implies T = 42.5g = 416.5\,\text{N}$$
+$$2T = 85g \implies T = 42.5g = 416.5\,\mathrm{N}$$
 
 **Resolving horizontally at $A$:**
 
-$$H_A = T\cos 30° = 42.5g \times \frac{\sqrt{3}}{2} \approx 360.8\,\text{N}$$
+$$H_A = T\cos 30° = 42.5g \times \frac{\sqrt{3}}{2} \approx 360.8\,\mathrm{N}$$
 
 **Resolving vertically at $A$:**
 
@@ -561,7 +561,7 @@ $$V_A + T\sin 30° = 20g + 30g$$
 
 $$V_A + 42.5g \times 0.5 = 50g$$
 
-$$V_A = 50g - 21.25g = 28.75g = 281.75\,\text{N}$$
+$$V_A = 50g - 21.25g = 28.75g = 281.75\,\mathrm{N}$$
 
 ---
 
@@ -569,16 +569,16 @@ $$V_A = 50g - 21.25g = 28.75g = 281.75\,\text{N}$$
 
 <details>
 <summary>Problem 1</summary>
-A body of mass $5\,\text{kg}$ is on a rough horizontal surface with $\mu = 0.4$. A horizontal force of $30\,\text{N}$ is applied. Find the acceleration.
+A body of mass $5\,\mathrm{kg}$ is on a rough horizontal surface with $\mu = 0.4$. A horizontal force of $30\,\mathrm{N}$ is applied. Find the acceleration.
 </details>
 
 <details>
 <summary>Solution 1</summary>
-$R = mg = 5(9.8) = 49\,\text{N}$. $F_{\max} = \mu R = 0.4(49) = 19.6\,\text{N}$.
+$R = mg = 5(9.8) = 49\,\mathrm{N}$. $F_{\max} = \mu R = 0.4(49) = 19.6\,\mathrm{N}$.
 
-Since $30 \gt{} 19.6$, the body slides. Friction $= 19.6\,\text{N}$ (opposing motion).
+Since $30 \gt{} 19.6$, the body slides. Friction $= 19.6\,\mathrm{N}$ (opposing motion).
 
-$F_{\text{net}} = 30 - 19.6 = 10.4\,\text{N}$. $a = F_{\text{net}}/m = 10.4/5 = 2.08\,\text{m/s}^2$.
+$F_{\mathrm{net}} = 30 - 19.6 = 10.4\,\mathrm{N}$. $a = F_{\mathrm{net}}/m = 10.4/5 = 2.08\,\mathrm{m/s}^2$.
 
 **If you get this wrong, revise:** [Friction](#4-friction) — Section 4.
 
@@ -586,12 +586,12 @@ $F_{\text{net}} = 30 - 19.6 = 10.4\,\text{N}$. $a = F_{\text{net}}/m = 10.4/5 = 
 
 <details>
 <summary>Problem 2</summary>
-A block of mass $8\,\text{kg}$ rests on a smooth plane inclined at $30^\circ$ to the horizontal. It is held in equilibrium by a force $P$ acting parallel to the plane. Find $P$.
+A block of mass $8\,\mathrm{kg}$ rests on a smooth plane inclined at $30^\circ$ to the horizontal. It is held in equilibrium by a force $P$ acting parallel to the plane. Find $P$.
 </details>
 
 <details>
 <summary>Solution 2</summary>
-Along the plane: $P = mg\sin 30° = 8(9.8)(0.5) = 39.2\,\text{N}$.
+Along the plane: $P = mg\sin 30° = 8(9.8)(0.5) = 39.2\,\mathrm{N}$.
 
 **If you get this wrong, revise:**
 [Resolving on an Inclined Plane](#32-resolving-on-an-inclined-plane) — Section 3.2.
@@ -600,15 +600,15 @@ Along the plane: $P = mg\sin 30° = 8(9.8)(0.5) = 39.2\,\text{N}$.
 
 <details>
 <summary>Problem 3</summary>
-Masses of $6\,\text{kg}$ and $4\,\text{kg}$ are connected by a light inextensible string over a smooth pulley. Find the acceleration and the tension.
+Masses of $6\,\mathrm{kg}$ and $4\,\mathrm{kg}$ are connected by a light inextensible string over a smooth pulley. Find the acceleration and the tension.
 </details>
 
 <details>
 <summary>Solution 3</summary>
-For $6\,\text{kg}$: $6g - T = 6a$. For $4\,\text{kg}$: $T - 4g = 4a$.
+For $6\,\mathrm{kg}$: $6g - T = 6a$. For $4\,\mathrm{kg}$: $T - 4g = 4a$.
 
-Adding: $2g = 10a \implies a = g/5 = 1.96\,\text{m/s}^2$.
-$T = 4(1.96 + 9.8) = 4(11.76) = 47.04\,\text{N}$.
+Adding: $2g = 10a \implies a = g/5 = 1.96\,\mathrm{m/s}^2$.
+$T = 4(1.96 + 9.8) = 4(11.76) = 47.04\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
 
@@ -616,14 +616,14 @@ $T = 4(1.96 + 9.8) = 4(11.76) = 47.04\,\text{N}$.
 
 <details>
 <summary>Problem 4</summary>
-A block of mass $10\,\text{kg}$ is on a rough surface with $\mu = 0.3$. Find the minimum horizontal force required to move the block.
+A block of mass $10\,\mathrm{kg}$ is on a rough surface with $\mu = 0.3$. Find the minimum horizontal force required to move the block.
 </details>
 
 <details>
 <summary>Solution 4</summary>
-$R = 10g = 98\,\text{N}$. $F_{\max} = 0.3(98) = 29.4\,\text{N}$.
+$R = 10g = 98\,\mathrm{N}$. $F_{\max} = 0.3(98) = 29.4\,\mathrm{N}$.
 
-Minimum force $= 29.4\,\text{N}$.
+Minimum force $= 29.4\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [The Friction Model](#41-the-friction-model) — Section 4.1.
 
@@ -631,16 +631,16 @@ Minimum force $= 29.4\,\text{N}$.
 
 <details>
 <summary>Problem 5</summary>
-A $5\,\text{kg}$ block is on a rough plane inclined at $40^\circ$ with $\mu = 0.25$. Is the block in equilibrium? If not, find its acceleration.
+A $5\,\mathrm{kg}$ block is on a rough plane inclined at $40^\circ$ with $\mu = 0.25$. Is the block in equilibrium? If not, find its acceleration.
 </details>
 
 <details>
 <summary>Solution 5</summary>
-$R = mg\cos 40° = 5(9.8)(0.766) = 37.53\,\text{N}$.
-$F_{\max} = 0.25(37.53) = 9.38\,\text{N}$.
-Force down slope: $mg\sin 40° = 5(9.8)(0.643) = 31.49\,\text{N}$.
+$R = mg\cos 40° = 5(9.8)(0.766) = 37.53\,\mathrm{N}$.
+$F_{\max} = 0.25(37.53) = 9.38\,\mathrm{N}$.
+Force down slope: $mg\sin 40° = 5(9.8)(0.643) = 31.49\,\mathrm{N}$.
 
-Since $31.49 \gt{} 9.38$, the block slides. $a = (31.49 - 9.38)/5 = 22.11/5 = 4.42\,\text{m/s}^2$.
+Since $31.49 \gt{} 9.38$, the block slides. $a = (31.49 - 9.38)/5 = 22.11/5 = 4.42\,\mathrm{m/s}^2$.
 
 **If you get this wrong, revise:**
 [Resolving on an Inclined Plane](#32-resolving-on-an-inclined-plane) — Section 3.2.
@@ -649,14 +649,14 @@ Since $31.49 \gt{} 9.38$, the block slides. $a = (31.49 - 9.38)/5 = 22.11/5 = 4.
 
 <details>
 <summary>Problem 6</summary>
-A particle of mass $2\,\text{kg}$ is on a smooth horizontal table. It is connected by a light string passing over a smooth pulley at the edge to a particle of mass $5\,\text{kg}$ hanging freely. Find the acceleration and tension.
+A particle of mass $2\,\mathrm{kg}$ is on a smooth horizontal table. It is connected by a light string passing over a smooth pulley at the edge to a particle of mass $5\,\mathrm{kg}$ hanging freely. Find the acceleration and tension.
 </details>
 
 <details>
 <summary>Solution 6</summary>
-For $5\,\text{kg}$: $5g - T = 5a$. For $2\,\text{kg}$ (horizontal): $T = 2a$.
+For $5\,\mathrm{kg}$: $5g - T = 5a$. For $2\,\mathrm{kg}$ (horizontal): $T = 2a$.
 
-$5g - 2a = 5a \implies 5g = 7a \implies a = 5g/7 = 7\,\text{m/s}^2$. $T = 2(7) = 14\,\text{N}$.
+$5g - 2a = 5a \implies 5g = 7a \implies a = 5g/7 = 7\,\mathrm{m/s}^2$. $T = 2(7) = 14\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
 
@@ -664,14 +664,14 @@ $5g - 2a = 5a \implies 5g = 7a \implies a = 5g/7 = 7\,\text{m/s}^2$. $T = 2(7) =
 
 <details>
 <summary>Problem 7</summary>
-A $3\,\text{kg}$ block on a rough horizontal surface ($\mu = 0.5$) is pulled by a force of $25\,\text{N}$ at $30^\circ$ above the horizontal. Find the acceleration.
+A $3\,\mathrm{kg}$ block on a rough horizontal surface ($\mu = 0.5$) is pulled by a force of $25\,\mathrm{N}$ at $30^\circ$ above the horizontal. Find the acceleration.
 </details>
 
 <details>
 <summary>Solution 7</summary>
-Vertical: $R + 25\sin 30° = 3g \implies R = 29.4 - 12.5 = 16.9\,\text{N}$.
-$F_{\max} = 0.5(16.9) = 8.45\,\text{N}$.
-Horizontal: $25\cos 30° - 8.45 = 3a \implies 21.65 - 8.45 = 3a \implies a = 4.4\,\text{m/s}^2$.
+Vertical: $R + 25\sin 30° = 3g \implies R = 29.4 - 12.5 = 16.9\,\mathrm{N}$.
+$F_{\max} = 0.5(16.9) = 8.45\,\mathrm{N}$.
+Horizontal: $25\cos 30° - 8.45 = 3a \implies 21.65 - 8.45 = 3a \implies a = 4.4\,\mathrm{m/s}^2$.
 
 **If you get this wrong, revise:** [Free Body Diagrams](#3-free-body-diagrams-and-resolving-forces)
 — Section 3.
@@ -680,14 +680,14 @@ Horizontal: $25\cos 30° - 8.45 = 3a \implies 21.65 - 8.45 = 3a \implies a = 4.4
 
 <details>
 <summary>Problem 8</summary>
-A lift of mass $500\,\text{kg}$ carries a person of mass $70\,\text{kg}$. Find the tension in the cable when the lift accelerates upward at $2\,\text{m/s}^2$. Find the apparent weight of the person.
+A lift of mass $500\,\mathrm{kg}$ carries a person of mass $70\,\mathrm{kg}$. Find the tension in the cable when the lift accelerates upward at $2\,\mathrm{m/s}^2$. Find the apparent weight of the person.
 </details>
 
 <details>
 <summary>Solution 8</summary>
-Total mass $= 570\,\text{kg}$. $T - 570g = 570(2) \implies T = 570(9.8+2) = 570(11.8) = 6726\,\text{N}$.
+Total mass $= 570\,\mathrm{kg}$. $T - 570g = 570(2) \implies T = 570(9.8+2) = 570(11.8) = 6726\,\mathrm{N}$.
 
-Person: $R - 70g = 70(2) \implies R = 70(11.8) = 826\,\text{N}$ (apparent weight).
+Person: $R - 70g = 70(2) \implies R = 70(11.8) = 826\,\mathrm{N}$ (apparent weight).
 
 **If you get this wrong, revise:** [Newton's Second Law](#12-newtons-second-law) — Section 1.2.
 
@@ -695,14 +695,14 @@ Person: $R - 70g = 70(2) \implies R = 70(11.8) = 826\,\text{N}$ (apparent weight
 
 <details>
 <summary>Problem 9</summary>
-Two particles of masses $m$ and $3m$ are connected by a light inextensible string over a smooth pulley. The system is released from rest. Find the time for the heavier mass to descend $2\,\text{m}$.
+Two particles of masses $m$ and $3m$ are connected by a light inextensible string over a smooth pulley. The system is released from rest. Find the time for the heavier mass to descend $2\,\mathrm{m}$.
 </details>
 
 <details>
 <summary>Solution 9</summary>
 $3mg - T = 3ma$, $T - mg = ma$. Adding: $2mg = 4ma \implies a = g/2$.
 
-$s = \tfrac{1}{2}at^2 \implies 2 = \tfrac{1}{2}(g/2)t^2 \implies t^2 = 8/g \implies t = \sqrt{8/9.8} \approx 0.904\,\text{s}$.
+$s = \tfrac{1}{2}at^2 \implies 2 = \tfrac{1}{2}(g/2)t^2 \implies t^2 = 8/g \implies t = \sqrt{8/9.8} \approx 0.904\,\mathrm{s}$.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
 
@@ -710,14 +710,14 @@ $s = \tfrac{1}{2}at^2 \implies 2 = \tfrac{1}{2}(g/2)t^2 \implies t^2 = 8/g \impl
 
 <details>
 <summary>Problem 10</summary>
-A block slides down a rough slope of length $10\,\text{m}$ inclined at $35^\circ$ with $\mu = 0.2$. If it starts from rest, find its speed at the bottom.
+A block slides down a rough slope of length $10\,\mathrm{m}$ inclined at $35^\circ$ with $\mu = 0.2$. If it starts from rest, find its speed at the bottom.
 </details>
 
 <details>
 <summary>Solution 10</summary>
-$a = g(\sin 35° - \mu\cos 35°) = 9.8(0.574 - 0.2 \times 0.819) = 9.8(0.574 - 0.164) = 9.8(0.410) = 4.02\,\text{m/s}^2$.
+$a = g(\sin 35° - \mu\cos 35°) = 9.8(0.574 - 0.2 \times 0.819) = 9.8(0.574 - 0.164) = 9.8(0.410) = 4.02\,\mathrm{m/s}^2$.
 
-$v^2 = u^2 + 2as = 0 + 2(4.02)(10) = 80.4 \implies v \approx 8.97\,\text{m/s}$.
+$v^2 = u^2 + 2as = 0 + 2(4.02)(10) = 80.4 \implies v \approx 8.97\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:**
 [Resolving on an Inclined Plane](#32-resolving-on-an-inclined-plane) — Section 3.2.
@@ -745,20 +745,20 @@ The critical angle is the angle of friction: $\tan\lambda = \mu$. $\blacksquare$
 
 <details>
 <summary>Problem 12</summary>
-A $4\,\text{kg}$ block on a rough inclined plane ($\mu = 0.3$, angle $= 50^\circ$) is attached to a $2\,\text{kg}$ block hanging freely over a pulley at the top. Find the acceleration.
+A $4\,\mathrm{kg}$ block on a rough inclined plane ($\mu = 0.3$, angle $= 50^\circ$) is attached to a $2\,\mathrm{kg}$ block hanging freely over a pulley at the top. Find the acceleration.
 </details>
 
 <details>
 <summary>Solution 12</summary>
-For $4\,\text{kg}$ down slope: $4g\sin 50° - T - \mu(4g\cos 50°) = 4a$.
+For $4\,\mathrm{kg}$ down slope: $4g\sin 50° - T - \mu(4g\cos 50°) = 4a$.
 $4(9.8)(0.766) - T - 0.3(4)(9.8)(0.643) = 4a$
 $30.03 - T - 7.54 = 4a \implies 22.49 - T = 4a$.
 
-For $2\,\text{kg}$: $T - 2g = 2a \implies T = 2(9.8+a) = 19.6 + 2a$.
+For $2\,\mathrm{kg}$: $T - 2g = 2a \implies T = 2(9.8+a) = 19.6 + 2a$.
 
-$22.49 - 19.6 - 2a = 4a \implies 2.89 = 6a \implies a = 0.482\,\text{m/s}^2$.
+$22.49 - 19.6 - 2a = 4a \implies 2.89 = 6a \implies a = 0.482\,\mathrm{m/s}^2$.
 
-The $4\,\text{kg}$ block accelerates down the slope.
+The $4\,\mathrm{kg}$ block accelerates down the slope.
 
 **If you get this wrong, revise:** [Connected Particles](#5-connected-particles) — Section 5.
 
@@ -766,7 +766,7 @@ The $4\,\text{kg}$ block accelerates down the slope.
 
 <details>
 <summary>Problem 13</summary>
-A $6\,\text{kg}$ block is on a rough horizontal surface with $\mu = 0.4$. A force $P$ is applied at an angle of $25^\circ$ below the horizontal. Find the minimum value of $P$ required to move the block.
+A $6\,\mathrm{kg}$ block is on a rough horizontal surface with $\mu = 0.4$. A force $P$ is applied at an angle of $25^\circ$ below the horizontal. Find the minimum value of $P$ required to move the block.
 </details>
 
 <details>
@@ -779,7 +779,7 @@ $0.9063P = 23.52 + 0.1690P$
 
 $0.7373P = 23.52$
 
-$P = 31.9\,\text{N}$ (2 d.p.)
+$P = 31.9\,\mathrm{N}$ (2 d.p.)
 
 **If you get this wrong, revise:**
 [Friction -- Detailed Treatment](#8-friction----detailed-treatment) — Section 8.2.
@@ -788,7 +788,7 @@ $P = 31.9\,\text{N}$ (2 d.p.)
 
 <details>
 <summary>Problem 14</summary>
-A particle of mass $5\,\text{kg}$ is suspended by two light inextensible strings. One string makes an angle of $45^\circ$ with the upward vertical and the other makes an angle of $60^\circ$ with the upward vertical on the opposite side. Use Lami's theorem to find the tensions in both strings.
+A particle of mass $5\,\mathrm{kg}$ is suspended by two light inextensible strings. One string makes an angle of $45^\circ$ with the upward vertical and the other makes an angle of $60^\circ$ with the upward vertical on the opposite side. Use Lami's theorem to find the tensions in both strings.
 </details>
 
 <details>
@@ -808,9 +808,9 @@ $$\frac{T_1}{\sin 135°} = \frac{T_2}{\sin 120°} = \frac{5g}{\sin 105°}$$
 $\sin 105° \approx 0.9659$, $\sin 135° = \frac{\sqrt{2}}{2} \approx 0.7071$,
 $\sin 120° = \frac{\sqrt{3}}{2} \approx 0.8660$.
 
-$T_1 = \frac{5g \times 0.7071}{0.9659} = \frac{34.65}{0.9659} \approx 35.9\,\text{N}$
+$T_1 = \frac{5g \times 0.7071}{0.9659} = \frac{34.65}{0.9659} \approx 35.9\,\mathrm{N}$
 
-$T_2 = \frac{5g \times 0.8660}{0.9659} = \frac{42.43}{0.9659} \approx 43.9\,\text{N}$
+$T_2 = \frac{5g \times 0.8660}{0.9659} = \frac{42.43}{0.9659} \approx 43.9\,\mathrm{N}$
 
 **If you get this wrong, revise:** [Lami's Theorem](#113-lamis-theorem) — Section 11.3.
 
@@ -818,14 +818,14 @@ $T_2 = \frac{5g \times 0.8660}{0.9659} = \frac{42.43}{0.9659} \approx 43.9\,\tex
 
 <details>
 <summary>Problem 15</summary>
-A $7\,\text{kg}$ block on a rough inclined plane (angle $= 35^\circ$, $\mu = 0.35$) is pulled up the slope by a force of $80\,\text{N}$ acting parallel to the plane. Find the acceleration of the block.
+A $7\,\mathrm{kg}$ block on a rough inclined plane (angle $= 35^\circ$, $\mu = 0.35$) is pulled up the slope by a force of $80\,\mathrm{N}$ acting parallel to the plane. Find the acceleration of the block.
 </details>
 
 <details>
 <summary>Solution 15</summary>
-$R = mg\cos 35° = 7(9.8)(0.819) = 56.18\,\text{N}$.
+$R = mg\cos 35° = 7(9.8)(0.819) = 56.18\,\mathrm{N}$.
 
-$F = \mu R = 0.35(56.18) = 19.66\,\text{N}$ (friction acts down the slope since the block moves up).
+$F = \mu R = 0.35(56.18) = 19.66\,\mathrm{N}$ (friction acts down the slope since the block moves up).
 
 Parallel to the plane: $80 - mg\sin 35° - F = ma$
 
@@ -833,7 +833,7 @@ $80 - 7(9.8)(0.574) - 19.66 = 7a$
 
 $80 - 39.37 - 19.66 = 7a$
 
-$20.97 = 7a \implies a \approx 3.00\,\text{m/s}^2$
+$20.97 = 7a \implies a \approx 3.00\,\mathrm{m/s}^2$
 
 **If you get this wrong, revise:**
 [Inclined Planes with Friction](#10-inclined-planes-with-friction) — Section 10.3.
@@ -842,25 +842,25 @@ $20.97 = 7a \implies a \approx 3.00\,\text{m/s}^2$
 
 <details>
 <summary>Problem 16</summary>
-A $3\,\text{kg}$ block on a rough horizontal table ($\mu = 0.5$) is connected by a light inextensible string over a smooth pulley at the table edge to a $2\,\text{kg}$ block hanging freely. Determine whether the system moves, and if so find the acceleration and tension.
+A $3\,\mathrm{kg}$ block on a rough horizontal table ($\mu = 0.5$) is connected by a light inextensible string over a smooth pulley at the table edge to a $2\,\mathrm{kg}$ block hanging freely. Determine whether the system moves, and if so find the acceleration and tension.
 </details>
 
 <details>
 <summary>Solution 16</summary>
-Check if the system moves: the weight of the hanging mass is $2g = 19.6\,\text{N}$.
+Check if the system moves: the weight of the hanging mass is $2g = 19.6\,\mathrm{N}$.
 
-Maximum static friction on the $3\,\text{kg}$ block:
-$F_{\max} = \mu m_1 g = 0.5 \times 3 \times 9.8 = 14.7\,\text{N}$.
+Maximum static friction on the $3\,\mathrm{kg}$ block:
+$F_{\max} = \mu m_1 g = 0.5 \times 3 \times 9.8 = 14.7\,\mathrm{N}$.
 
 Since $19.6 \gt{} 14.7$, the system moves.
 
-For $2\,\text{kg}$ (descending): $2g - T = 2a$.
+For $2\,\mathrm{kg}$ (descending): $2g - T = 2a$.
 
-For $3\,\text{kg}$ (horizontal): $T - \mu(3g) = 3a \implies T - 14.7 = 3a$.
+For $3\,\mathrm{kg}$ (horizontal): $T - \mu(3g) = 3a \implies T - 14.7 = 3a$.
 
-Adding: $2g - 14.7 = 5a \implies 19.6 - 14.7 = 5a \implies a = 4.9/5 = 0.98\,\text{m/s}^2$.
+Adding: $2g - 14.7 = 5a \implies 19.6 - 14.7 = 5a \implies a = 4.9/5 = 0.98\,\mathrm{m/s}^2$.
 
-$T = 2(9.8 - 0.98) = 2(8.82) = 17.64\,\text{N}$.
+$T = 2(9.8 - 0.98) = 2(8.82) = 17.64\,\mathrm{N}$.
 
 **If you get this wrong, revise:**
 [Particle on a table with a pulley -- rough surface](#93-particle-on-a-table-with-a-pulley----rough-surface)
@@ -870,7 +870,7 @@ $T = 2(9.8 - 0.98) = 2(8.82) = 17.64\,\text{N}$.
 
 <details>
 <summary>Problem 17</summary>
-A uniform beam $AB$ of weight $120\,\text{N}$ and length $6\,\text{m}$ is hinged at $A$ and held horizontally by a cable attached at $B$ making an angle of $40^\circ$ with the horizontal. A load of $80\,\text{N}$ is hung from the beam at a point $2\,\text{m}$ from $A$. Find the tension in the cable and the magnitude and direction of the reaction at the hinge.
+A uniform beam $AB$ of weight $120\,\mathrm{N}$ and length $6\,\mathrm{m}$ is hinged at $A$ and held horizontally by a cable attached at $B$ making an angle of $40^\circ$ with the horizontal. A load of $80\,\mathrm{N}$ is hung from the beam at a point $2\,\mathrm{m}$ from $A$. Find the tension in the cable and the magnitude and direction of the reaction at the hinge.
 </details>
 
 <details>
@@ -881,16 +881,16 @@ $T\sin 40° \times 6 - 120 \times 3 - 80 \times 2 = 0$
 
 $6T\sin 40° = 360 + 160 = 520$
 
-$T = \frac{520}{6\sin 40°} = \frac{520}{6(0.6428)} = \frac{520}{3.857} \approx 134.8\,\text{N}$
+$T = \frac{520}{6\sin 40°} = \frac{520}{6(0.6428)} = \frac{520}{3.857} \approx 134.8\,\mathrm{N}$
 
-Resolving horizontally: $H_A = T\cos 40° = 134.8 \times 0.766 = 103.3\,\text{N}$.
+Resolving horizontally: $H_A = T\cos 40° = 134.8 \times 0.766 = 103.3\,\mathrm{N}$.
 
 Resolving vertically: $V_A + T\sin 40° = 120 + 80$
 
-$V_A = 200 - 134.8 \times 0.6428 = 200 - 86.7 = 113.3\,\text{N}$.
+$V_A = 200 - 134.8 \times 0.6428 = 200 - 86.7 = 113.3\,\mathrm{N}$.
 
 Magnitude of hinge reaction:
-$\sqrt{H_A^2 + V_A^2} = \sqrt{103.3^2 + 113.3^2} = \sqrt{10670.9 + 12836.9} = \sqrt{23507.8} \approx 153.3\,\text{N}$.
+$\sqrt{H_A^2 + V_A^2} = \sqrt{103.3^2 + 113.3^2} = \sqrt{10670.9 + 12836.9} = \sqrt{23507.8} \approx 153.3\,\mathrm{N}$.
 
 Angle below horizontal: $\arctan(V_A/H_A) = \arctan(113.3/103.3) \approx 47.6^\circ$.
 
@@ -901,23 +901,23 @@ Angle below horizontal: $\arctan(V_A/H_A) = \arctan(113.3/103.3) \approx 47.6^\c
 
 <details>
 <summary>Problem 18</summary>
-A $4\,\text{kg}$ block is placed on a rough inclined plane at angle $30^\circ$ with $\mu = 0.6$. Determine whether the block is in equilibrium. If a horizontal force $P = 50\,\text{N}$ is then applied pushing the block up the slope, find the acceleration.
+A $4\,\mathrm{kg}$ block is placed on a rough inclined plane at angle $30^\circ$ with $\mu = 0.6$. Determine whether the block is in equilibrium. If a horizontal force $P = 50\,\mathrm{N}$ is then applied pushing the block up the slope, find the acceleration.
 </details>
 
 <details>
 <summary>Solution 18</summary>
-Without $P$: $mg\sin 30° = 4(9.8)(0.5) = 19.6\,\text{N}$. $F_{\max} = \mu mg\cos 30° = 0.6(4)(9.8)(0.866) = 20.35\,\text{N}$.
+Without $P$: $mg\sin 30° = 4(9.8)(0.5) = 19.6\,\mathrm{N}$. $F_{\max} = \mu mg\cos 30° = 0.6(4)(9.8)(0.866) = 20.35\,\mathrm{N}$.
 
 Since $19.6 \lt{} 20.35$, the block is in equilibrium without the applied force.
 
-With $P = 50\,\text{N}$ horizontal:
+With $P = 50\,\mathrm{N}$ horizontal:
 
 Perpendicular to plane:
-$R = mg\cos 30° + P\sin 30° = 4(9.8)(0.866) + 50(0.5) = 33.95 + 25 = 58.95\,\text{N}$.
+$R = mg\cos 30° + P\sin 30° = 4(9.8)(0.866) + 50(0.5) = 33.95 + 25 = 58.95\,\mathrm{N}$.
 
-$F = \mu R = 0.6(58.95) = 35.37\,\text{N}$ (down the slope, opposing upward motion).
+$F = \mu R = 0.6(58.95) = 35.37\,\mathrm{N}$ (down the slope, opposing upward motion).
 
-Component of $P$ up the slope: $P\cos 30° = 50(0.866) = 43.3\,\text{N}$.
+Component of $P$ up the slope: $P\cos 30° = 50(0.866) = 43.3\,\mathrm{N}$.
 
 Parallel to plane: $43.3 - mg\sin 30° - 35.37 = 4a$
 
@@ -936,7 +936,7 @@ insufficient to overcome both gravity and friction.
 
 <details>
 <summary>Problem 19</summary>
-A book of mass $1.5\,\text{kg}$ rests on a table. Identify the Newton's Third Law pair for each of the forces acting on the book, stating the bodies on which each force acts.
+A book of mass $1.5\,\mathrm{kg}$ rests on a table. Identify the Newton's Third Law pair for each of the forces acting on the book, stating the bodies on which each force acts.
 </details>
 
 <details>
@@ -962,14 +962,14 @@ contact) and both act on the book.
 
 <details>
 <summary>Problem 20</summary>
-Two particles of masses $5\,\text{kg}$ and $3\,\text{kg}$ are attached to the ends of a light inextensible string. The $5\,\text{kg}$ particle is on a rough plane inclined at $30^\circ$ ($\mu = 0.4$) and the $3\,\text{kg}$ particle hangs vertically over a smooth pulley at the top of the incline. The string is parallel to the slope. Find the acceleration and the tension.
+Two particles of masses $5\,\mathrm{kg}$ and $3\,\mathrm{kg}$ are attached to the ends of a light inextensible string. The $5\,\mathrm{kg}$ particle is on a rough plane inclined at $30^\circ$ ($\mu = 0.4$) and the $3\,\mathrm{kg}$ particle hangs vertically over a smooth pulley at the top of the incline. The string is parallel to the slope. Find the acceleration and the tension.
 </details>
 
 <details>
 <summary>Solution 20</summary>
-Assume the $5\,\text{kg}$ block moves down the slope (we check $a \gt{} 0$ afterwards).
+Assume the $5\,\mathrm{kg}$ block moves down the slope (we check $a \gt{} 0$ afterwards).
 
-For $5\,\text{kg}$ down the slope: $5g\sin 30° - T - \mu(5g\cos 30°) = 5a$
+For $5\,\mathrm{kg}$ down the slope: $5g\sin 30° - T - \mu(5g\cos 30°) = 5a$
 
 $5(9.8)(0.5) - T - 0.4(5)(9.8)(0.866) = 5a$
 
@@ -977,7 +977,7 @@ $24.5 - T - 16.99 = 5a$
 
 $7.51 - T = 5a$ \hfill (1)
 
-For $3\,\text{kg}$: $T - 3g = 3a$
+For $3\,\mathrm{kg}$: $T - 3g = 3a$
 
 $T = 3(9.8 + a) = 29.4 + 3a$ \hfill (2)
 
@@ -985,12 +985,12 @@ Substituting (2) into (1):
 
 $7.51 - 29.4 - 3a = 5a$
 
-$-21.89 = 8a \implies a = -2.74\,\text{m/s}^2$
+$-21.89 = 8a \implies a = -2.74\,\mathrm{m/s}^2$
 
-Since $a \lt{} 0$, the assumption is wrong. The $5\,\text{kg}$ block does not move down; instead the
-$3\,\text{kg}$ mass descends and the $5\,\text{kg}$ block moves up the slope.
+Since $a \lt{} 0$, the assumption is wrong. The $5\,\mathrm{kg}$ block does not move down; instead the
+$3\,\mathrm{kg}$ mass descends and the $5\,\mathrm{kg}$ block moves up the slope.
 
-Re-do with the $5\,\text{kg}$ block moving up the slope (friction now acts down the slope):
+Re-do with the $5\,\mathrm{kg}$ block moving up the slope (friction now acts down the slope):
 
 $T - 5g\sin 30° - \mu(5g\cos 30°) = 5a$
 
@@ -998,7 +998,7 @@ $T - 24.5 - 16.99 = 5a$
 
 $T - 41.49 = 5a$ \hfill (3)
 
-For $3\,\text{kg}$ (descending): $3g - T = 3a$
+For $3\,\mathrm{kg}$ (descending): $3g - T = 3a$
 
 $T = 29.4 - 3a$ \hfill (4)
 
@@ -1006,17 +1006,17 @@ Substituting (4) into (3):
 
 $29.4 - 3a - 41.49 = 5a$
 
-$-12.09 = 8a \implies a = -1.51\,\text{m/s}^2$
+$-12.09 = 8a \implies a = -1.51\,\mathrm{m/s}^2$
 
 Since $a$ is still negative, the system does not move at all. The hanging mass is too light to
 overcome friction plus the component of weight down the slope.
 
-Check: the force trying to pull the $5\,\text{kg}$ block up the slope is $3g = 29.4\,\text{N}$. The
-force opposing this is $5g\sin 30° + \mu(5g\cos 30°) = 24.5 + 16.99 = 41.49\,\text{N}$.
+Check: the force trying to pull the $5\,\mathrm{kg}$ block up the slope is $3g = 29.4\,\mathrm{N}$. The
+force opposing this is $5g\sin 30° + \mu(5g\cos 30°) = 24.5 + 16.99 = 41.49\,\mathrm{N}$.
 
 Since $29.4 \lt{} 41.49$, the system remains in equilibrium. The tension is
-$T = 3g = 29.4\,\text{N}$, and friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\text{N}$ (which is
-$\lt{} \mu R = 16.99\,\text{N}$, confirming equilibrium).
+$T = 3g = 29.4\,\mathrm{N}$, and friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\mathrm{N}$ (which is
+$\lt{} \mu R = 16.99\,\mathrm{N}$, confirming equilibrium).
 
 **If you get this wrong, revise:**
 [Friction and the direction of motion](#84-friction-and-the-direction-of-motion) — Section 8.4.

@@ -25,7 +25,7 @@ $P$ also satisfies $Q$.
 Formally, for a constraint $P$ to subsume a constraint $Q$:
 
 $$
-\forall \text{substitutions } S : P(S) \implies Q(S)
+\forall \mathrm{substitutions } S : P(S) \implies Q(S)
 $$
 
 This is a structural comparison performed by the compiler, not a runtime check. The rules for

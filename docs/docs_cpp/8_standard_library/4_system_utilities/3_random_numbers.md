@@ -412,9 +412,9 @@ initial state have high entropy.
 A naive way to generate a random integer in `[0, n)` is `engine() % n`. This introduces **modulo
 bias** when `n` does not evenly divide the engine's range [N4950 §29.6.4.1]:
 
-$$P(\text{outcome } k) = \begin{cases} \lceil R / n \rceil / R & \text{if } k \lt R \bmod n \\ \lfloor R / n \rfloor / R & \text{otherwise} \end{cases}$$
+$$P(\mathrm{outcome } k) = \begin{cases} \lceil R / n \rceil / R & \mathrm{if } k \lt R \bmod n \\ \lfloor R / n \rfloor / R & \mathrm{otherwise} \end{cases}$$
 
-where $R = \text{max} - \text{min} + 1$ is the engine's range.
+where $R = \mathrm{max} - \mathrm{min} + 1$ is the engine's range.
 
 For example, with a 16-bit engine ($R = 65536$) and $n = 3$:
 

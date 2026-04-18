@@ -186,7 +186,7 @@ To prove a statement $P(n)$ for all integers $n \geq n_0$:
 :::info
 The principle of mathematical induction is equivalent to the well-ordering principle: every
 non-empty set of positive integers has a least element. If $P(n_0)$ is true but some $P(m)$ with
-$m \gt{} n_0$ is false, then the set $\{m : P(m) \text{ is false}\}$ has a least element,
+$m \gt{} n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least element,
 contradicting the inductive step.
 :::
 
@@ -206,7 +206,7 @@ _Inductive step:_
 $$
 \begin{aligned}
 \sum_{r=1}^{k+1} r &= \sum_{r=1}^{k} r + (k+1) \\
-&= \frac{k(k+1)}{2} + (k+1) \quad \text{(by hypothesis)} \\
+&= \frac{k(k+1)}{2} + (k+1) \quad \mathrm{(by hypothesis)} \\
 &= \frac{k(k+1) + 2(k+1)}{2} \\
 &= \frac{(k+1)(k+2)}{2}
 \end{aligned}

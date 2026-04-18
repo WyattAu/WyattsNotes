@@ -43,7 +43,7 @@ ID) based on the input configuration:
 The Package ID is a SHA-1 hash computed over the concatenation of:
 
 $$
-\text{PackageID} = \text{SHA1}(\text{settings} \| \text{options} \| \text{requires})
+\mathrm{PackageID} = \mathrm{SHA1}(\mathrm{settings} \| \mathrm{options} \| \mathrm{requires})
 $$
 
 Where `settings` is a sorted dictionary of `os`, `arch`, `compiler`, `compiler.version`,

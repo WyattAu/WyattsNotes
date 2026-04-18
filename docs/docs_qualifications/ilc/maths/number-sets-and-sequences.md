@@ -172,11 +172,11 @@ $$
 
 **Proof of the first law:**
 
-$x \in (A \cup B)' \iff x \notin A \cup B \iff x \notin A \text{ and } x \notin B \iff x \in A' \text{ and } x \in B' \iff x \in A' \cap B'$.
+$x \in (A \cup B)' \iff x \notin A \cup B \iff x \notin A \mathrm{ and } x \notin B \iff x \in A' \mathrm{ and } x \in B' \iff x \in A' \cap B'$.
 
 **Proof of the second law:**
 
-$x \in (A \cap B)' \iff x \notin A \cap B \iff x \notin A \text{ or } x \notin B \iff x \in A' \text{ or } x \in B' \iff x \in A' \cup B'$.
+$x \in (A \cap B)' \iff x \notin A \cap B \iff x \notin A \mathrm{ or } x \notin B \iff x \in A' \mathrm{ or } x \in B' \iff x \in A' \cup B'$.
 
 ### Set Identities (HL)
 
@@ -355,7 +355,7 @@ $$
 $$
 
 $$
-\lim_{n \to \infty} \frac{a_n}{n^k} = 0 \text{ if } \deg(a_n) \lt k
+\lim_{n \to \infty} \frac{a_n}{n^k} = 0 \mathrm{ if } \deg(a_n) \lt k
 $$
 
 **Example (HL):** Evaluate $\lim_{n \to \infty} \frac{3n^2 + 2n}{5n^2 - n}$.
@@ -506,7 +506,7 @@ where $P$ is the principal.
 years.
 
 $$
-A = 5000(1.04)^6 \approx 5000 \times 1.2653 \approx \text{EUR } 6326.60
+A = 5000(1.04)^6 \approx 5000 \times 1.2653 \approx \mathrm{EUR } 6326.60
 $$
 
 ### Present Value
@@ -522,13 +522,13 @@ $$
 If the nominal annual rate is $i$ compounded $m$ times per year, the effective annual rate is:
 
 $$
-r_{\text{eff}} = \left(1 + \frac{i}{m}\right)^m - 1
+r_{\mathrm{eff}} = \left(1 + \frac{i}{m}\right)^m - 1
 $$
 
 **Example (HL):** A bank offers 6% per annum compounded monthly. Find the effective annual rate.
 
 $$
-r_{\text{eff}} = \left(1 + \frac{0.06}{12}\right)^{12} - 1 = (1.005)^{12} - 1 \approx 0.0617 = 6.17\%
+r_{\mathrm{eff}} = \left(1 + \frac{0.06}{12}\right)^{12} - 1 = (1.005)^{12} - 1 \approx 0.0617 = 6.17\%
 $$
 
 ### Amortisation (HL)
@@ -555,7 +555,7 @@ $$
 the monthly repayment.
 
 $$
-M = \frac{300000 \times 0.0035}{1 - (1.0035)^{-300}} \approx \frac{1050}{1 - 0.3484} \approx \frac{1050}{0.6516} \approx \text{EUR } 1611.36
+M = \frac{300000 \times 0.0035}{1 - (1.0035)^{-300}} \approx \frac{1050}{1 - 0.3484} \approx \frac{1050}{0.6516} \approx \mathrm{EUR } 1611.36
 $$
 
 ## Recurrence Relations (HL)

@@ -77,7 +77,7 @@ Where for monatomic ideal gas, adiabatic process satisfy the condition:
 
 $$
 \begin{aligned}
-    PV^{\frac{5}{3}} = \text{constant}
+    PV^{\frac{5}{3}} = \mathrm{constant}
 \end{aligned}
 $$
 
@@ -130,7 +130,7 @@ At constant temperature, the pressure of a fixed mass of gas is inversely propor
 volume:
 
 $$
-PV = \text{constant} \quad \text{or} \quad P_1 V_1 = P_2 V_2
+PV = \mathrm{constant} \quad \mathrm{or} \quad P_1 V_1 = P_2 V_2
 $$
 
 **Microscopic explanation:** At constant temperature, the average kinetic energy of molecules is
@@ -143,7 +143,7 @@ At constant pressure, the volume of a fixed mass of gas is directly proportional
 temperature:
 
 $$
-V \propto T \quad \text{or} \quad \frac{V_1}{T_1} = \frac{V_2}{T_2}
+V \propto T \quad \mathrm{or} \quad \frac{V_1}{T_1} = \frac{V_2}{T_2}
 $$
 
 **Microscopic explanation:** Increasing temperature increases the average speed of molecules. To
@@ -156,7 +156,7 @@ At constant volume, the pressure of a fixed mass of gas is directly proportional
 temperature:
 
 $$
-P \propto T \quad \text{or} \quad \frac{P_1}{T_1} = \frac{P_2}{T_2}
+P \propto T \quad \mathrm{or} \quad \frac{P_1}{T_1} = \frac{P_2}{T_2}
 $$
 
 **Microscopic explanation:** At constant volume, increasing temperature increases molecular speed.
@@ -170,7 +170,7 @@ $$
 \frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
 $$
 
-This follows directly from the ideal gas law since $\frac{PV}{T} = nR = \text{constant}$ for a fixed
+This follows directly from the ideal gas law since $\frac{PV}{T} = nR = \mathrm{constant}$ for a fixed
 amount of gas.
 
 ---
@@ -204,7 +204,7 @@ $$
 Summing over all $N$ molecules:
 
 $$
-F_{\text{total}} = \frac{m}{L} \sum_{i=1}^{N} v_{x,i}^2 = \frac{m N \langle v_x^2 \rangle}{L}
+F_{\mathrm{total}} = \frac{m}{L} \sum_{i=1}^{N} v_{x,i}^2 = \frac{m N \langle v_x^2 \rangle}{L}
 $$
 
 Since the motion is random,
@@ -227,10 +227,10 @@ where $\rho = Nm/V$ is the density.
 The root-mean-square (rms) speed is defined as:
 
 $$
-v_{\text{rms}} = \sqrt{\langle v^2 \rangle} = \sqrt{\frac{3k_B T}{m}} = \sqrt{\frac{3RT}{M}}
+v_{\mathrm{rms}} = \sqrt{\langle v^2 \rangle} = \sqrt{\frac{3k_B T}{m}} = \sqrt{\frac{3RT}{M}}
 $$
 
-where $M$ is the molar mass. Note that $v_{\text{rms}}$ is **not** the average speed, but it is a
+where $M$ is the molar mass. Note that $v_{\mathrm{rms}}$ is **not** the average speed, but it is a
 useful measure of the typical molecular speed.
 
 ---
@@ -267,12 +267,12 @@ more moderate climates than inland regions — water heats and cools slowly comp
 ### Worked Example: Specific Heat
 
 **Question:** 200 g of water at $20^\circ\mathrm{C}$ is heated until its temperature reaches $80^\circ\mathrm{C}$. How much
-energy is required? ($c_{\text{water}} = 4186$ J kg⁻¹ K⁻¹)
+energy is required? ($c_{\mathrm{water}} = 4186$ J kg⁻¹ K⁻¹)
 
 **Solution:**
 
 $$
-Q = mc\Delta T = (0.200)(4186)(80 - 20) = (0.200)(4186)(60) = 50232 \text{ J} \approx 50.2 \text{ kJ}
+Q = mc\Delta T = (0.200)(4186)(80 - 20) = (0.200)(4186)(60) = 50232 \mathrm{ J} \approx 50.2 \mathrm{ kJ}
 $$
 
 ---
@@ -312,8 +312,8 @@ breaking or forming intermolecular bonds, not increasing kinetic energy.
 ### Worked Example: Heating Curve
 
 **Question:** How much total energy is required to convert 500 g of ice at $-20^\circ\mathrm{C}$ to steam at
-$120^\circ\mathrm{C}$? Use: $c_{\text{ice}} = 2090$ J kg⁻¹ K⁻¹, $c_{\text{water}} = 4186$ J kg⁻¹ K⁻¹,
-$c_{\text{steam}} = 2010$ J kg⁻¹ K⁻¹, $L_f = 3.34 \times 10^5$ J kg⁻¹, $L_v = 2.26 \times 10^6$ J
+$120^\circ\mathrm{C}$? Use: $c_{\mathrm{ice}} = 2090$ J kg⁻¹ K⁻¹, $c_{\mathrm{water}} = 4186$ J kg⁻¹ K⁻¹,
+$c_{\mathrm{steam}} = 2010$ J kg⁻¹ K⁻¹, $L_f = 3.34 \times 10^5$ J kg⁻¹, $L_v = 2.26 \times 10^6$ J
 kg⁻¹.
 
 **Solution:** Break the process into five stages:
@@ -321,34 +321,34 @@ kg⁻¹.
 1. Heat ice from $-20^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
 
    $$
-   Q_1 = mc\Delta T = (0.500)(2090)(20) = 20900 \text{ J}
+   Q_1 = mc\Delta T = (0.500)(2090)(20) = 20900 \mathrm{ J}
    $$
 
 2. Melt ice at $0^\circ\mathrm{C}$:
 
    $$
-   Q_2 = mL_f = (0.500)(3.34 \times 10^5) = 167000 \text{ J}
+   Q_2 = mL_f = (0.500)(3.34 \times 10^5) = 167000 \mathrm{ J}
    $$
 
 3. Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
    $$
-   Q_3 = mc\Delta T = (0.500)(4186)(100) = 209300 \text{ J}
+   Q_3 = mc\Delta T = (0.500)(4186)(100) = 209300 \mathrm{ J}
    $$
 
 4. Vaporise water at $100^\circ\mathrm{C}$:
 
    $$
-   Q_4 = mL_v = (0.500)(2.26 \times 10^6) = 1130000 \text{ J}
+   Q_4 = mL_v = (0.500)(2.26 \times 10^6) = 1130000 \mathrm{ J}
    $$
 
 5. Heat steam from $100^\circ\mathrm{C}$ to $120^\circ\mathrm{C}$:
    $$
-   Q_5 = mc\Delta T = (0.500)(2010)(20) = 20100 \text{ J}
+   Q_5 = mc\Delta T = (0.500)(2010)(20) = 20100 \mathrm{ J}
    $$
 
 $$
-Q_{\text{total}} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5 = 20900 + 167000 + 209300 + 1130000 + 20100 = 1547300 \text{ J} \approx 1.55 \text{ MJ}
+Q_{\mathrm{total}} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5 = 20900 + 167000 + 209300 + 1130000 + 20100 = 1547300 \mathrm{ J} \approx 1.55 \mathrm{ MJ}
 $$
 
 ---
@@ -389,7 +389,7 @@ microstate is a specific arrangement of particles; a macrostate is defined by ma
 The total entropy of an isolated system never decreases:
 
 $$
-\Delta S_{\text{total}} \geq 0
+\Delta S_{\mathrm{total}} \geq 0
 $$
 
 This means:
@@ -404,13 +404,13 @@ This means:
 For a heat engine operating between a hot reservoir at $T_h$ and a cold reservoir at $T_c$:
 
 $$
-\Delta S_{\text{total}} = -\frac{Q_h}{T_h} + \frac{Q_c}{T_c} \geq 0
+\Delta S_{\mathrm{total}} = -\frac{Q_h}{T_h} + \frac{Q_c}{T_c} \geq 0
 $$
 
 This leads to the Carnot efficiency limit:
 
 $$
-\eta_{\text{Carnot}} = 1 - \frac{T_c}{T_h}
+\eta_{\mathrm{Carnot}} = 1 - \frac{T_c}{T_h}
 $$
 
 No real engine can exceed this efficiency.
@@ -446,13 +446,13 @@ J of heat is added to the gas. Find the change in internal energy.
 Work done by the gas:
 
 $$
-W = P\Delta V = (2.0 \times 10^5)(5.0 \times 10^{-3} - 2.0 \times 10^{-3}) = (2.0 \times 10^5)(3.0 \times 10^{-3}) = 600 \text{ J}
+W = P\Delta V = (2.0 \times 10^5)(5.0 \times 10^{-3} - 2.0 \times 10^{-3}) = (2.0 \times 10^5)(3.0 \times 10^{-3}) = 600 \mathrm{ J}
 $$
 
 Using the first law:
 
 $$
-\Delta U = Q - W = 1500 - 600 = 900 \text{ J}
+\Delta U = Q - W = 1500 - 600 = 900 \mathrm{ J}
 $$
 
 The internal energy increased by 900 J.
@@ -486,13 +486,13 @@ isovolumetrically to 400 K. What is the new pressure?
 **a) Volume:**
 
 $$
-V = \frac{nRT}{P} = \frac{(0.200)(8.31)(300)}{1.50 \times 10^5} = \frac{498.6}{1.50 \times 10^5} = 3.32 \times 10^{-3} \text{ m}^3 = 3.32 \text{ L}
+V = \frac{nRT}{P} = \frac{(0.200)(8.31)(300)}{1.50 \times 10^5} = \frac{498.6}{1.50 \times 10^5} = 3.32 \times 10^{-3} \mathrm{ m}^3 = 3.32 \mathrm{ L}
 $$
 
 **b) Isothermal compression to half volume:**
 
 $$
-P_1 V_1 = P_2 V_2 \implies P_2 = \frac{P_1 V_1}{V_2} = \frac{(1.50 \times 10^5)(3.32 \times 10^{-3})}{1.66 \times 10^{-3}} = 3.00 \times 10^5 \text{ Pa}
+P_1 V_1 = P_2 V_2 \implies P_2 = \frac{P_1 V_1}{V_2} = \frac{(1.50 \times 10^5)(3.32 \times 10^{-3})}{1.66 \times 10^{-3}} = 3.00 \times 10^5 \mathrm{ Pa}
 $$
 
 The pressure doubles (Boyle's Law: halving the volume at constant temperature doubles the pressure).
@@ -500,7 +500,7 @@ The pressure doubles (Boyle's Law: halving the volume at constant temperature do
 **c) Isovolumetric heating to 400 K:**
 
 $$
-\frac{P_2}{T_2} = \frac{P_3}{T_3} \implies P_3 = \frac{P_2 T_3}{T_2} = \frac{(3.00 \times 10^5)(400)}{300} = 4.00 \times 10^5 \text{ Pa}
+\frac{P_2}{T_2} = \frac{P_3}{T_3} \implies P_3 = \frac{P_2 T_3}{T_2} = \frac{(3.00 \times 10^5)(400)}{300} = 4.00 \times 10^5 \mathrm{ Pa}
 $$
 
 ---
@@ -527,7 +527,7 @@ $$
 Work done by an ideal gas during isothermal expansion:
 
 $$
-W = nRT \ln\left(\frac{V_2}{V_1}\right) = (2.0)(8.31)(723)\ln\left(\frac{8.0 \times 10^{-3}}{4.0 \times 10^{-3}}\right) = 12016 \ln(2) = 12016 \times 0.693 = 8327 \text{ J}
+W = nRT \ln\left(\frac{V_2}{V_1}\right) = (2.0)(8.31)(723)\ln\left(\frac{8.0 \times 10^{-3}}{4.0 \times 10^{-3}}\right) = 12016 \ln(2) = 12016 \times 0.693 = 8327 \mathrm{ J}
 $$
 
 So $W = 8330$ J and $Q = 8330$ J (heat flows into the gas to maintain constant temperature during
@@ -535,30 +535,30 @@ expansion).
 
 **b) Adiabatic expansion:**
 
-For a monatomic ideal gas, $PV^{5/3} = \text{constant}$.
+For a monatomic ideal gas, $PV^{5/3} = \mathrm{constant}$.
 
 $$
 P_1 V_1^{5/3} = P_2 V_2^{5/3}
 $$
 
 $$
-P_2 = P_1 \left(\frac{V_1}{V_2}\right)^{5/3} = (3.0 \times 10^5)\left(\frac{1}{2}\right)^{5/3} = (3.0 \times 10^5)(0.315) = 9.44 \times 10^4 \text{ Pa}
+P_2 = P_1 \left(\frac{V_1}{V_2}\right)^{5/3} = (3.0 \times 10^5)\left(\frac{1}{2}\right)^{5/3} = (3.0 \times 10^5)(0.315) = 9.44 \times 10^4 \mathrm{ Pa}
 $$
 
 Using the ideal gas law to find $T_2$:
 
 $$
-T_2 = \frac{P_2 V_2}{nR} = \frac{(9.44 \times 10^4)(8.0 \times 10^{-3})}{(2.0)(8.31)} = \frac{755}{16.62} = 45.4 \text{ K}
+T_2 = \frac{P_2 V_2}{nR} = \frac{(9.44 \times 10^4)(8.0 \times 10^{-3})}{(2.0)(8.31)} = \frac{755}{16.62} = 45.4 \mathrm{ K}
 $$
 
 For an adiabatic process, $Q = 0$, so $W = -\Delta U$:
 
 $$
-\Delta U = \frac{3}{2}nR\Delta T = \frac{3}{2}(2.0)(8.31)(45.4 - 723) = (24.93)(-677.6) = -16890 \text{ J}
+\Delta U = \frac{3}{2}nR\Delta T = \frac{3}{2}(2.0)(8.31)(45.4 - 723) = (24.93)(-677.6) = -16890 \mathrm{ J}
 $$
 
 $$
-W = -\Delta U = 16890 \text{ J}
+W = -\Delta U = 16890 \mathrm{ J}
 $$
 
 **Comparison:** The adiabatic expansion does more work ($16890$ J vs $8330$ J) because the gas cools
@@ -607,13 +607,13 @@ The Maxwell-Boltzmann distribution describes the distribution of molecular speed
 temperature $T$. The rms speed is:
 
 $$
-v_{\text{rms}} = \sqrt{\frac{3k_B T}{m}} = \sqrt{\frac{3RT}{M}}
+v_{\mathrm{rms}} = \sqrt{\frac{3k_B T}{m}} = \sqrt{\frac{3RT}{M}}
 $$
 
 Lighter molecules move faster at the same temperature. For example, at 300 K:
 
-- $H_2$: $v_{\text{rms}} = \sqrt{\frac{3(8.31)(300)}{0.002}} = 1920$ m/s
-- $O_2$: $v_{\text{rms}} = \sqrt{\frac{3(8.31)(300)}{0.032}} = 484$ m/s
+- $H_2$: $v_{\mathrm{rms}} = \sqrt{\frac{3(8.31)(300)}{0.002}} = 1920$ m/s
+- $O_2$: $v_{\mathrm{rms}} = \sqrt{\frac{3(8.31)(300)}{0.032}} = 484$ m/s
 
 This difference in molecular speeds is the basis for **isotope separation** and explains why lighter
 gases (like hydrogen) escape from planetary atmospheres more easily than heavier gases.
@@ -633,7 +633,7 @@ $$
 **Phase change at constant temperature:**
 
 $$
-\Delta S = \frac{Q}{T} = \frac{mL_f}{T_f} \quad \text{(melting)} \quad \text{or} \quad \Delta S = \frac{mL_v}{T_b} \quad \text{(boiling)}
+\Delta S = \frac{Q}{T} = \frac{mL_f}{T_f} \quad \mathrm{(melting)} \quad \mathrm{or} \quad \Delta S = \frac{mL_v}{T_b} \quad \mathrm{(boiling)}
 $$
 
 **Free expansion of a gas:** When an ideal gas expands into a vacuum (no work done, no heat
@@ -674,7 +674,7 @@ The second law explains why certain processes have a preferred direction:
    curve has a flat section during phase transitions.
 
 5. **Assuming all processes are reversible.** Real processes are irreversible. Only in the ideal
-   limit of infinitely slow, quasi-static processes can $\Delta S_{\text{total}} = 0$.
+   limit of infinitely slow, quasi-static processes can $\Delta S_{\mathrm{total}} = 0$.
 
 6. **Applying the ideal gas law to real gases.** The ideal gas law assumes no intermolecular forces
    and negligible molecular volume. It works well at low pressures and high temperatures but fails
@@ -707,7 +707,7 @@ Pa.
 
 A 0.50 kg block of copper at $200^\circ\mathrm{C}$ is dropped into 1.0 kg of water at $20^\circ\mathrm{C}$ in an insulated
 container. Assuming no heat loss to the surroundings, calculate the final equilibrium temperature.
-($c_{\text{copper}} = 385$ J kg$^{-1}$ K$^{-1}$, $c_{\text{water}} = 4186$ J kg$^{-1}$ K$^{-1}$)
+($c_{\mathrm{copper}} = 385$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$)
 
 </details>
 
@@ -800,7 +800,7 @@ Calculate the rms speed of nitrogen molecules ($M = 0.028$ kg/mol) at a temperat
 <details>
 <summary>Answer 4</summary>
 
-$v_{\text{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3(8.31)(300)}{0.028}} = \sqrt{\frac{7479}{0.028}} = \sqrt{267107} = 517$
+$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3(8.31)(300)}{0.028}} = \sqrt{\frac{7479}{0.028}} = \sqrt{267107} = 517$
 m/s.
 
 </details>
@@ -809,8 +809,8 @@ m/s.
 <summary>Question 5</summary>
 
 300 g of ice at $-10^\circ\mathrm{C}$ is placed in 500 g of water at $40^\circ\mathrm{C}$ in an insulated container. Calculate
-the final temperature and state of the mixture. ($c_{\text{ice}} = 2090$ J kg$^{-1}$ K$^{-1}$,
-$c_{\text{water}} = 4186$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J kg$^{-1}$)
+the final temperature and state of the mixture. ($c_{\mathrm{ice}} = 2090$ J kg$^{-1}$ K$^{-1}$,
+$c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J kg$^{-1}$)
 
 </details>
 
@@ -818,16 +818,16 @@ $c_{\text{water}} = 4186$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J kg$^{
 <summary>Answer 5</summary>
 
 First, check if all the ice melts. Maximum heat the water can provide (cooling to $0^\circ\mathrm{C}$):
-$Q_{\text{water, max}} = m_w c_w \Delta T = (0.500)(4186)(40) = 83720$ J.
+$Q_{\mathrm{water, max}} = m_w c_w \Delta T = (0.500)(4186)(40) = 83720$ J.
 
-Heat needed to warm ice to $0^\circ\mathrm{C}$ and melt it: $Q_{\text{ice, warm}} = (0.300)(2090)(10) = 6270$ J.
-$Q_{\text{ice, melt}} = (0.300)(3.34 \times 10^5) = 100200$ J. Total needed:
+Heat needed to warm ice to $0^\circ\mathrm{C}$ and melt it: $Q_{\mathrm{ice, warm}} = (0.300)(2090)(10) = 6270$ J.
+$Q_{\mathrm{ice, melt}} = (0.300)(3.34 \times 10^5) = 100200$ J. Total needed:
 $6270 + 100200 = 106470$ J.
 
 Since $106470 \gt{} 83720$, **not all the ice melts**. The final temperature is $0^\circ\mathrm{C}$.
 
 Let $m$ be the mass of ice that melts:
-$m_w c_w (40 - 0) = m_{\text{ice}} c_{\text{ice}} (10) + m L_f$.
+$m_w c_w (40 - 0) = m_{\mathrm{ice}} c_{\mathrm{ice}} (10) + m L_f$.
 $83720 = 6270 + m(3.34 \times 10^5)$.
 $m = \frac{83720 - 6270}{3.34 \times 10^5} = \frac{77450}{334000} = 0.232$ kg $= 232$ g.
 
@@ -852,7 +852,7 @@ c) Is this engine theoretically possible? Justify your answer.
 a)
 $\eta = \frac{W}{Q_h} = \frac{Q_h - Q_c}{Q_h} = \frac{2000 - 1300}{2000} = \frac{700}{2000} = 0.35 = 35\%$.
 
-b) $\eta_{\text{Carnot}} = 1 - \frac{T_c}{T_h} = 1 - \frac{300}{500} = 1 - 0.60 = 0.40 = 40\%$.
+b) $\eta_{\mathrm{Carnot}} = 1 - \frac{T_c}{T_h} = 1 - \frac{300}{500} = 1 - 0.60 = 0.40 = 40\%$.
 
 c) Yes, the engine is theoretically possible because its efficiency (35%) is less than the Carnot
 efficiency (40%). The second law of thermodynamics states that no real engine can exceed the Carnot

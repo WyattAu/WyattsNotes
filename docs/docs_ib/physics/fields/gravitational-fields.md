@@ -106,7 +106,7 @@ $$
 
 where:
 
-$G$: Gravitational constant ($6.67 \times 10^{-11} \text{ m}^3 \text{ kg}^{-1} \text{ s}^{-2}$)
+$G$: Gravitational constant ($6.67 \times 10^{-11} \mathrm{ m}^3 \mathrm{ kg}^{-1} \mathrm{ s}^{-2}$)
 
 $m_1, m_2$: The mass of the two point masses
 
@@ -359,7 +359,7 @@ density decreases with height) and orbital velocity by the formula:
 $$
 \begin{aligned}
     F_{drag} = \frac{1}{2}C_dA\rho v^2\\
-    \rho(h) = \rho_0 e^{-\frac{h}{H}}, \quad H \approx 8 \text{ km}\\
+    \rho(h) = \rho_0 e^{-\frac{h}{H}}, \quad H \approx 8 \mathrm{ km}\\
     v = \sqrt{\frac{GM}{r}}\\
     F_{drag} = \frac{1}{2}C_d A \rho_0 e^{-\frac{h}{H}} \left(\frac{GM}{r}\right)\\
     \therefore F \propto \frac{e^{-\frac{h}{H}}}{r}
@@ -423,7 +423,7 @@ the outer shell contribute zero):
 
 $$
 \begin{aligned}
-    M_{\text{enc}} = M\left(\frac{r}{R}\right)^3
+    M_{\mathrm{enc}} = M\left(\frac{r}{R}\right)^3
 \end{aligned}
 $$
 
@@ -431,7 +431,7 @@ The field strength at $r$ is then:
 
 $$
 \begin{aligned}
-    g = \frac{GM_{\text{enc}}}{r^2} = \frac{G M (r/R)^3}{r^2} = \frac{GM}{R^3} r \quad \implies \quad g \propto r
+    g = \frac{GM_{\mathrm{enc}}}{r^2} = \frac{G M (r/R)^3}{r^2} = \frac{GM}{R^3} r \quad \implies \quad g \propto r
 \end{aligned}
 $$
 
@@ -442,13 +442,13 @@ $$
 \begin{aligned}
     g(r) =
     \begin{cases}
-        \dfrac{GM}{R^3}\, r & \text{for } r \lt{} R \\[8pt]
-        \dfrac{GM}{r^2} & \text{for } r \geq R
+        \dfrac{GM}{R^3}\, r & \mathrm{for } r \lt{} R \\[8pt]
+        \dfrac{GM}{r^2} & \mathrm{for } r \geq R
     \end{cases}
 \end{aligned}
 $$
 
-The field is zero at $r = 0$, increases linearly to $g_{\text{surface}} = GM/R^2$ at $r = R$, then
+The field is zero at $r = 0$, increases linearly to $g_{\mathrm{surface}} = GM/R^2$ at $r = R$, then
 decreases as $1/r^2$.
 
 ## Graphs of Gravitational Quantities
@@ -497,7 +497,7 @@ The required orbital radius is found from Kepler's third law:
 
 $$
 \begin{aligned}
-    r = \sqrt[3]{\frac{GM T^2}{4\pi^2}} = \sqrt[3]{\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(86400)^2}{4\pi^2}} \approx 4.22 \times 10^7 \text{ m}
+    r = \sqrt[3]{\frac{GM T^2}{4\pi^2}} = \sqrt[3]{\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(86400)^2}{4\pi^2}} \approx 4.22 \times 10^7 \mathrm{ m}
 \end{aligned}
 $$
 
@@ -505,8 +505,8 @@ The altitude above Earth's surface and orbital speed are:
 
 $$
 \begin{aligned}
-    h &= r - R_E \approx 4.22 \times 10^7 - 6.371 \times 10^6 \approx 3.58 \times 10^7 \text{ m} \approx 35800 \text{ km}\\[4pt]
-    v &= \sqrt{\frac{GM}{r}} \approx 3070 \text{ m/s} \approx 3.07 \text{ km/s}
+    h &= r - R_E \approx 4.22 \times 10^7 - 6.371 \times 10^6 \approx 3.58 \times 10^7 \mathrm{ m} \approx 35800 \mathrm{ km}\\[4pt]
+    v &= \sqrt{\frac{GM}{r}} \approx 3070 \mathrm{ m/s} \approx 3.07 \mathrm{ km/s}
 \end{aligned}
 $$
 
@@ -528,12 +528,12 @@ $$
 \begin{aligned}
     E_k &= \frac{1}{2}mv^2 = \frac{1}{2}m\left(\frac{GM}{r}\right) = \frac{GMm}{2r}\\[4pt]
     E_p &= -\frac{GMm}{r}\\[4pt]
-    E_{\text{total}} &= E_k + E_p = \frac{GMm}{2r} - \frac{GMm}{r} = -\frac{GMm}{2r}
+    E_{\mathrm{total}} &= E_k + E_p = \frac{GMm}{2r} - \frac{GMm}{r} = -\frac{GMm}{2r}
 \end{aligned}
 $$
 
 The total energy is always negative (gravitationally bound), and
-$E_{\text{total}} = \frac{1}{2}E_p$, so $E_k = -\frac{1}{2}E_p$ for all circular orbits.
+$E_{\mathrm{total}} = \frac{1}{2}E_p$, so $E_k = -\frac{1}{2}E_p$ for all circular orbits.
 
 ### Hohmann Transfer Orbit (Qualitative)
 
@@ -558,14 +558,14 @@ Calculate the gravitational force between Earth and the Moon.
 
 $$
 \begin{aligned}
-    M_{\text{Earth}} = 5.97 \times 10^{24} \text{ kg}, \quad M_{\text{Moon}} = 7.35 \times 10^{22} \text{ kg}, \quad r = 3.84 \times 10^8 \text{ m}
+    M_{\mathrm{Earth}} = 5.97 \times 10^{24} \mathrm{ kg}, \quad M_{\mathrm{Moon}} = 7.35 \times 10^{22} \mathrm{ kg}, \quad r = 3.84 \times 10^8 \mathrm{ m}
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-    F &= G\frac{M_{\text{Earth}} M_{\text{Moon}}}{r^2} = (6.67 \times 10^{-11}) \frac{(5.97 \times 10^{24})(7.35 \times 10^{22})}{(3.84 \times 10^8)^2}\\
-    F &= (6.67 \times 10^{-11}) \frac{4.388 \times 10^{47}}{1.475 \times 10^{17}} = (6.67 \times 10^{-11})(2.975 \times 10^{30}) \approx 1.98 \times 10^{20} \text{ N}
+    F &= G\frac{M_{\mathrm{Earth}} M_{\mathrm{Moon}}}{r^2} = (6.67 \times 10^{-11}) \frac{(5.97 \times 10^{24})(7.35 \times 10^{22})}{(3.84 \times 10^8)^2}\\
+    F &= (6.67 \times 10^{-11}) \frac{4.388 \times 10^{47}}{1.475 \times 10^{17}} = (6.67 \times 10^{-11})(2.975 \times 10^{30}) \approx 1.98 \times 10^{20} \mathrm{ N}
 \end{aligned}
 $$
 
@@ -575,8 +575,8 @@ Calculate the gravitational field strength at 300 km altitude and compare with $
 
 $$
 \begin{aligned}
-    r &= R_{\text{Earth}} + h = 6.371 \times 10^6 + 3.00 \times 10^5 = 6.671 \times 10^6 \text{ m}\\[4pt]
-    g &= \frac{GM}{r^2} = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.671 \times 10^6)^2} = \frac{3.983 \times 10^{14}}{4.450 \times 10^{13}} \approx 8.95 \text{ m/s}^2\\[4pt]
+    r &= R_{\mathrm{Earth}} + h = 6.371 \times 10^6 + 3.00 \times 10^5 = 6.671 \times 10^6 \mathrm{ m}\\[4pt]
+    g &= \frac{GM}{r^2} = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.671 \times 10^6)^2} = \frac{3.983 \times 10^{14}}{4.450 \times 10^{13}} \approx 8.95 \mathrm{ m/s}^2\\[4pt]
     \frac{g_0 - g}{g_0} &= \frac{9.81 - 8.95}{9.81} \approx 8.8\%
 \end{aligned}
 $$
@@ -593,7 +593,7 @@ $$
     \Delta E_p &= GMm\left(\frac{1}{r_1} - \frac{1}{r_2}\right)\\[4pt]
     &= (6.67 \times 10^{-11})(5.97 \times 10^{24})(1000)\left(\frac{1}{6.671 \times 10^6} - \frac{1}{4.22 \times 10^7}\right)\\[4pt]
     &= (3.983 \times 10^{14})(1.499 \times 10^{-7} - 2.370 \times 10^{-8})\\[4pt]
-    &= (3.983 \times 10^{14})(1.262 \times 10^{-7}) \approx 5.03 \times 10^7 \text{ J} \approx 50.3 \text{ MJ}
+    &= (3.983 \times 10^{14})(1.262 \times 10^{-7}) \approx 5.03 \times 10^7 \mathrm{ J} \approx 50.3 \mathrm{ MJ}
 \end{aligned}
 $$
 
@@ -603,7 +603,7 @@ The potential energy increases (becomes less negative) since work is done agains
 
 $$
 \begin{aligned}
-    v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2(6.67 \times 10^{-11})(5.97 \times 10^{24})}{6.371 \times 10^6}} = \sqrt{1.250 \times 10^8} \approx 11.2 \text{ km/s}
+    v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2(6.67 \times 10^{-11})(5.97 \times 10^{24})}{6.371 \times 10^6}} = \sqrt{1.250 \times 10^8} \approx 11.2 \mathrm{ km/s}
 \end{aligned}
 $$
 
@@ -616,9 +616,9 @@ Find the period of a satellite at 500 km altitude using $T = 2\pi\sqrt{r^3/(GM)}
 
 $$
 \begin{aligned}
-    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \text{ m}\\[4pt]
+    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \mathrm{ m}\\[4pt]
     T &= 2\pi\sqrt{\frac{(6.871 \times 10^6)^3}{(6.67 \times 10^{-11})(5.97 \times 10^{24})}} = 2\pi\sqrt{\frac{3.245 \times 10^{20}}{3.983 \times 10^{14}}}\\[4pt]
-    &= 2\pi\sqrt{8.148 \times 10^5} = 2\pi(902.7) \approx 5672 \text{ s} \approx 94.5 \text{ min}
+    &= 2\pi\sqrt{8.148 \times 10^5} = 2\pi(902.7) \approx 5672 \mathrm{ s} \approx 94.5 \mathrm{ min}
 \end{aligned}
 $$
 
@@ -636,7 +636,7 @@ $$
 
 $$
 \begin{aligned}
-    h = r - R = R = 6.371 \times 10^6 \text{ m} \approx 6371 \text{ km}
+    h = r - R = R = 6.371 \times 10^6 \mathrm{ m} \approx 6371 \mathrm{ km}
 \end{aligned}
 $$
 
@@ -647,7 +647,7 @@ Doubling the distance from the center reduces the field by a factor of $2^2 = 4$
 ### Using the Wrong Radius in $g = GM/r^2$
 
 The formula gives the field at distance $r$ from the **center** of the mass. For the surface, use
-$r = R_{\text{planet}}$; for altitude $h$, use $r = R_{\text{planet}} + h$. A common mistake is
+$r = R_{\mathrm{planet}}$; for altitude $h$, use $r = R_{\mathrm{planet}} + h$. A common mistake is
 substituting the orbital radius when asked for surface gravity, or vice versa.
 
 ### Sign Conventions in Gravitational Potential Energy
@@ -656,12 +656,12 @@ By convention $E_p = 0$ at infinite separation, so $E_p$ is **always negative** 
 
 $$
 \begin{aligned}
-    E_p = -\frac{GMm}{r} \lt{} 0 \quad \text{for all finite } r
+    E_p = -\frac{GMm}{r} \lt{} 0 \quad \mathrm{for all finite } r
 \end{aligned}
 $$
 
 Moving outward ($r_2 \gt{} r_1$) gives positive $\Delta E_p$ since work is done against gravity. Do
-not confuse this with the $mgh$ approximation (valid only for $h \ll R_{\text{Earth}}$).
+not confuse this with the $mgh$ approximation (valid only for $h \ll R_{\mathrm{Earth}}$).
 
 ### Escape Velocity is Independent of the Escaping Object's Mass
 
@@ -701,7 +701,7 @@ Two spheres of mass $m_1 = 8.00 \times 10^{6}$ kg and $m_2 = 3.50 \times 10^{4}$
 $$
 \begin{aligned}
     F &= G\frac{m_1 m_2}{r^2} = (6.67 \times 10^{-11})\frac{(8.00 \times 10^6)(3.50 \times 10^4)}{(50.0)^2}\\
-    &= (6.67 \times 10^{-11})\frac{2.80 \times 10^{11}}{2500} = (6.67 \times 10^{-11})(1.12 \times 10^8) \approx 7.47 \times 10^{-3} \text{ N}
+    &= (6.67 \times 10^{-11})\frac{2.80 \times 10^{11}}{2500} = (6.67 \times 10^{-11})(1.12 \times 10^8) \approx 7.47 \times 10^{-3} \mathrm{ N}
 \end{aligned}
 $$
 
@@ -716,8 +716,8 @@ Calculate $g$ at 500 km altitude. How much weaker is this than 9.81 m/s$^2$?
 
 $$
 \begin{aligned}
-    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \text{ m}\\[4pt]
-    g &= \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.871 \times 10^6)^2} = \frac{3.983 \times 10^{14}}{4.721 \times 10^{13}} \approx 8.44 \text{ m/s}^2
+    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \mathrm{ m}\\[4pt]
+    g &= \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.871 \times 10^6)^2} = \frac{3.983 \times 10^{14}}{4.721 \times 10^{13}} \approx 8.44 \mathrm{ m/s}^2
 \end{aligned}
 $$
 
@@ -727,15 +727,15 @@ Fractional decrease: $(9.81 - 8.44)/9.81 \approx 14.0\%$.
 
 ### Problem 3
 
-Calculate the escape velocity from Mars. Given: $M_{\text{Mars}} = 6.42 \times 10^{23}$ kg,
-$R_{\text{Mars}} = 3.390 \times 10^{6}$ m.
+Calculate the escape velocity from Mars. Given: $M_{\mathrm{Mars}} = 6.42 \times 10^{23}$ kg,
+$R_{\mathrm{Mars}} = 3.390 \times 10^{6}$ m.
 
 <details>
 <summary>Solution</summary>
 
 $$
 \begin{aligned}
-    v_e &= \sqrt{\frac{2(6.67 \times 10^{-11})(6.42 \times 10^{23})}{3.390 \times 10^6}} = \sqrt{\frac{8.564 \times 10^{13}}{3.390 \times 10^6}} = \sqrt{2.526 \times 10^7} \approx 5.03 \text{ km/s}
+    v_e &= \sqrt{\frac{2(6.67 \times 10^{-11})(6.42 \times 10^{23})}{3.390 \times 10^6}} = \sqrt{\frac{8.564 \times 10^{13}}{3.390 \times 10^6}} = \sqrt{2.526 \times 10^7} \approx 5.03 \mathrm{ km/s}
 \end{aligned}
 $$
 
@@ -753,7 +753,7 @@ speed, (c) total mechanical energy.
 
 $$
 \begin{aligned}
-    r &= 6.671 \times 10^6 \text{ m}
+    r &= 6.671 \times 10^6 \mathrm{ m}
 \end{aligned}
 $$
 
@@ -761,7 +761,7 @@ $$
 
 $$
 \begin{aligned}
-    T = 2\pi\sqrt{\frac{r^3}{GM}} = 2\pi\sqrt{\frac{(6.671 \times 10^6)^3}{(6.67 \times 10^{-11})(5.97 \times 10^{24})}} = 2\pi(863.3) \approx 5425 \text{ s} \approx 90.4 \text{ min}
+    T = 2\pi\sqrt{\frac{r^3}{GM}} = 2\pi\sqrt{\frac{(6.671 \times 10^6)^3}{(6.67 \times 10^{-11})(5.97 \times 10^{24})}} = 2\pi(863.3) \approx 5425 \mathrm{ s} \approx 90.4 \mathrm{ min}
 \end{aligned}
 $$
 
@@ -769,7 +769,7 @@ $$
 
 $$
 \begin{aligned}
-    v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{3.983 \times 10^{14}}{6.671 \times 10^6}} \approx 7728 \text{ m/s} \approx 7.73 \text{ km/s}
+    v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{3.983 \times 10^{14}}{6.671 \times 10^6}} \approx 7728 \mathrm{ m/s} \approx 7.73 \mathrm{ km/s}
 \end{aligned}
 $$
 
@@ -777,7 +777,7 @@ $$
 
 $$
 \begin{aligned}
-    E_{\text{total}} = -\frac{GMm}{2r} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(500)}{2(6.671 \times 10^6)} = -\frac{1.992 \times 10^{14}}{1.334 \times 10^7} \approx -14.9 \text{ MJ}
+    E_{\mathrm{total}} = -\frac{GMm}{2r} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(500)}{2(6.671 \times 10^6)} = -\frac{1.992 \times 10^{14}}{1.334 \times 10^7} \approx -14.9 \mathrm{ MJ}
 \end{aligned}
 $$
 
@@ -795,7 +795,7 @@ $$
 \begin{aligned}
     W &= GMm\left(\frac{1}{r_1} - \frac{1}{r_2}\right)\\[4pt]
     &= (6.67 \times 10^{-11})(5.97 \times 10^{24})(1000)\left(\frac{1}{6.671 \times 10^6} - \frac{1}{4.22 \times 10^7}\right)\\[4pt]
-    &= (3.983 \times 10^{14})(1.262 \times 10^{-7}) \approx 5.03 \times 10^7 \text{ J} = 50.3 \text{ MJ}
+    &= (3.983 \times 10^{14})(1.262 \times 10^{-7}) \approx 5.03 \times 10^7 \mathrm{ J} = 50.3 \mathrm{ MJ}
 \end{aligned}
 $$
 
@@ -833,7 +833,7 @@ minimum energy is needed for escape? (c) Verify $E_k = \frac{1}{2}|E_p|$.
 
 $$
 \begin{aligned}
-    r = 6.371 \times 10^6 + 2.00 \times 10^7 = 2.637 \times 10^7 \text{ m}
+    r = 6.371 \times 10^6 + 2.00 \times 10^7 = 2.637 \times 10^7 \mathrm{ m}
 \end{aligned}
 $$
 
@@ -841,19 +841,19 @@ $$
 
 $$
 \begin{aligned}
-    E_{\text{total}} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(2000)}{2(2.637 \times 10^7)} = -\frac{7.966 \times 10^{14}}{5.274 \times 10^7} \approx -15.1 \text{ MJ}
+    E_{\mathrm{total}} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(2000)}{2(2.637 \times 10^7)} = -\frac{7.966 \times 10^{14}}{5.274 \times 10^7} \approx -15.1 \mathrm{ MJ}
 \end{aligned}
 $$
 
-**(b)** For escape, $E_{\text{total}}$ must reach zero: $\Delta E = 0 - (-15.1 \times 10^6) = 15.1$
+**(b)** For escape, $E_{\mathrm{total}}$ must reach zero: $\Delta E = 0 - (-15.1 \times 10^6) = 15.1$
 MJ.
 
 **(c)**
 
 $$
 \begin{aligned}
-    E_k &= \frac{GMm}{2r} = \frac{7.966 \times 10^{14}}{2(2.637 \times 10^7)} \approx 15.1 \times 10^6 \text{ J}\\[4pt]
-    |E_p| &= \frac{GMm}{r} = \frac{7.966 \times 10^{14}}{2.637 \times 10^7} \approx 30.2 \times 10^6 \text{ J}\\[4pt]
+    E_k &= \frac{GMm}{2r} = \frac{7.966 \times 10^{14}}{2(2.637 \times 10^7)} \approx 15.1 \times 10^6 \mathrm{ J}\\[4pt]
+    |E_p| &= \frac{GMm}{r} = \frac{7.966 \times 10^{14}}{2.637 \times 10^7} \approx 30.2 \times 10^6 \mathrm{ J}\\[4pt]
     E_k &= \frac{1}{2}|E_p| \quad \checkmark
 \end{aligned}
 $$

@@ -45,10 +45,10 @@ $$
 
 :::info[Example]
 
-A sound wave has frequency $440\text{ Hz}$ and travels at $343\text{ m/s}$. Find its wavelength.
+A sound wave has frequency $440\mathrm{ Hz}$ and travels at $343\mathrm{ m/s}$. Find its wavelength.
 
 $$
-\lambda = \frac{v}{f} = \frac{343}{440} = 0.780\text{ m}
+\lambda = \frac{v}{f} = \frac{343}{440} = 0.780\mathrm{ m}
 $$
 
 :::
@@ -110,15 +110,15 @@ pressure) and rarefactions (low pressure).
 
 | Medium                       | Speed (m/s) |
 | ---------------------------- | ----------- |
-| Air at $20\degree\text{C}$   | 343         |
-| Water at $20\degree\text{C}$ | 1482        |
+| Air at $20\degree\mathrm{C}$   | 343         |
+| Water at $20\degree\mathrm{C}$ | 1482        |
 | Steel                        | 5960        |
 | Glass                        | 5640        |
 
 The speed of sound in air depends on temperature:
 
 $$
-v \approx 331 + 0.6T_C \text{ m/s}
+v \approx 331 + 0.6T_C \mathrm{ m/s}
 $$
 
 ### Inverse Square Law
@@ -139,7 +139,7 @@ $$
 \beta = 10\log_{10}\!\left(\frac{I}{I_0}\right)
 $$
 
-where $I_0 = 10^{-12}\text{ W/m}^2$ is the threshold of hearing.
+where $I_0 = 10^{-12}\mathrm{ W/m}^2$ is the threshold of hearing.
 
 | Source               | Level (dB) |
 | -------------------- | ---------- |
@@ -163,17 +163,17 @@ the intensity. Decibels are logarithmic, so you cannot simply add them.
 
 | Region        | Wavelength Range                   | Frequency Range                                        |
 | ------------- | ---------------------------------- | ------------------------------------------------------ |
-| Radio waves   | $\gt 0.1\text{ m}$                 | $\lt 3 \times 10^9\text{ Hz}$                          |
-| Microwaves    | $0.1\text{ mm}$ to $0.1\text{ m}$  | $3 \times 10^9$ to $3 \times 10^{12}\text{ Hz}$        |
-| Infrared      | $700\text{ nm}$ to $0.1\text{ mm}$ | $3 \times 10^{12}$ to $4.3 \times 10^{14}\text{ Hz}$   |
-| Visible light | $400\text{ nm}$ to $700\text{ nm}$ | $4.3 \times 10^{14}$ to $7.5 \times 10^{14}\text{ Hz}$ |
-| Ultraviolet   | $10\text{ nm}$ to $400\text{ nm}$  | $7.5 \times 10^{14}$ to $3 \times 10^{16}\text{ Hz}$   |
-| X-rays        | $0.01\text{ nm}$ to $10\text{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19}\text{ Hz}$     |
-| Gamma rays    | $\lt 0.01\text{ nm}$               | $\gt 3 \times 10^{19}\text{ Hz}$                       |
+| Radio waves   | $\gt 0.1\mathrm{ m}$                 | $\lt 3 \times 10^9\mathrm{ Hz}$                          |
+| Microwaves    | $0.1\mathrm{ mm}$ to $0.1\mathrm{ m}$  | $3 \times 10^9$ to $3 \times 10^{12}\mathrm{ Hz}$        |
+| Infrared      | $700\mathrm{ nm}$ to $0.1\mathrm{ mm}$ | $3 \times 10^{12}$ to $4.3 \times 10^{14}\mathrm{ Hz}$   |
+| Visible light | $400\mathrm{ nm}$ to $700\mathrm{ nm}$ | $4.3 \times 10^{14}$ to $7.5 \times 10^{14}\mathrm{ Hz}$ |
+| Ultraviolet   | $10\mathrm{ nm}$ to $400\mathrm{ nm}$  | $7.5 \times 10^{14}$ to $3 \times 10^{16}\mathrm{ Hz}$   |
+| X-rays        | $0.01\mathrm{ nm}$ to $10\mathrm{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19}\mathrm{ Hz}$     |
+| Gamma rays    | $\lt 0.01\mathrm{ nm}$               | $\gt 3 \times 10^{19}\mathrm{ Hz}$                       |
 
 ### Key Properties
 
-- All EM waves travel at $c = 3.0 \times 10^8\text{ m/s}$ in a vacuum.
+- All EM waves travel at $c = 3.0 \times 10^8\mathrm{ m/s}$ in a vacuum.
 - They are all transverse waves.
 - They can all travel through a vacuum.
 - They can all be polarised.
@@ -188,7 +188,7 @@ When two or more waves overlap, the resultant displacement at any point is the a
 individual displacements:
 
 $$
-y_{\text{total}} = y_1 + y_2 + y_3 + \cdots
+y_{\mathrm{total}} = y_1 + y_2 + y_3 + \cdots
 $$
 
 ### Constructive Interference
@@ -196,7 +196,7 @@ $$
 Waves arrive **in phase** (path difference $= n\lambda$, where $n$ is an integer):
 
 $$
-\text{Path difference} = n\lambda
+\mathrm{Path difference} = n\lambda
 $$
 
 The resultant amplitude is $A_1 + A_2$ (maximum).
@@ -206,7 +206,7 @@ The resultant amplitude is $A_1 + A_2$ (maximum).
 Waves arrive **out of phase** (path difference $= (n + \frac{1}{2})\lambda$):
 
 $$
-\text{Path difference} = \left(n + \frac{1}{2}\right)\lambda
+\mathrm{Path difference} = \left(n + \frac{1}{2}\right)\lambda
 $$
 
 The resultant amplitude is $|A_1 - A_2|$ (minimum).
@@ -219,11 +219,11 @@ of bright and dark fringes (for light) or loud and quiet regions (for sound).
 For double-slit interference with slit separation $d$ and distance to screen $D$:
 
 $$
-d\sin\theta = n\lambda \quad (\text{bright fringes})
+d\sin\theta = n\lambda \quad (\mathrm{bright fringes})
 $$
 
 $$
-d\sin\theta = \left(n + \frac{1}{2}\right)\lambda \quad (\text{dark fringes})
+d\sin\theta = \left(n + \frac{1}{2}\right)\lambda \quad (\mathrm{dark fringes})
 $$
 
 For small angles ($\sin\theta \approx \tan\theta \approx \dfrac{x}{D}$):
@@ -240,11 +240,11 @@ $$
 
 :::info[Example]
 
-Light of wavelength $600\text{ nm}$ passes through a double slit with separation $0.2\text{ mm}$.
-The screen is $1.5\text{ m}$ away. Find the fringe spacing.
+Light of wavelength $600\mathrm{ nm}$ passes through a double slit with separation $0.2\mathrm{ mm}$.
+The screen is $1.5\mathrm{ m}$ away. Find the fringe spacing.
 
 $$
-\Delta x = \frac{\lambda D}{d} = \frac{600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{9 \times 10^{-7}}{2 \times 10^{-4}} = 4.5 \times 10^{-3}\text{ m} = 4.5\text{ mm}
+\Delta x = \frac{\lambda D}{d} = \frac{600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{9 \times 10^{-7}}{2 \times 10^{-4}} = 4.5 \times 10^{-3}\mathrm{ m} = 4.5\mathrm{ mm}
 $$
 
 :::
@@ -295,29 +295,29 @@ Both ends are antinodes.
 **Closed pipe** (closed at one end):
 
 $$
-f_n = \frac{nv}{4L}, \quad n = 1, 3, 5, \ldots \text{ (odd harmonics only)}
+f_n = \frac{nv}{4L}, \quad n = 1, 3, 5, \ldots \mathrm{ (odd harmonics only)}
 $$
 
 The closed end is a node, the open end is an antinode.
 
 :::info[Example]
 
-A string of length $0.75\text{ m}$ has a fundamental frequency of $220\text{ Hz}$. Find the speed of
+A string of length $0.75\mathrm{ m}$ has a fundamental frequency of $220\mathrm{ Hz}$. Find the speed of
 waves on the string.
 
 $$
-f_1 = \frac{v}{2L} \implies v = 2Lf_1 = 2(0.75)(220) = 330\text{ m/s}
+f_1 = \frac{v}{2L} \implies v = 2Lf_1 = 2(0.75)(220) = 330\mathrm{ m/s}
 $$
 
 :::
 
 :::info[Example]
 
-An open pipe has a fundamental frequency of $440\text{ Hz}$. Find the frequency of the third
+An open pipe has a fundamental frequency of $440\mathrm{ Hz}$. Find the frequency of the third
 harmonic.
 
 $$
-f_3 = 3f_1 = 3(440) = 1320\text{ Hz}
+f_3 = 3f_1 = 3(440) = 1320\mathrm{ Hz}
 $$
 
 :::
@@ -387,11 +387,11 @@ $$
 
 :::info[Example]
 
-A fire engine with siren at $700\text{ Hz}$ approaches at $30\text{ m/s}$. What frequency does a
-stationary observer hear? ($v_{\text{sound}} = 343\text{ m/s}$)
+A fire engine with siren at $700\mathrm{ Hz}$ approaches at $30\mathrm{ m/s}$. What frequency does a
+stationary observer hear? ($v_{\mathrm{sound}} = 343\mathrm{ m/s}$)
 
 $$
-f' = \frac{f}{1 - v_s/v_w} = \frac{700}{1 - 30/343} = \frac{700}{0.9125} = 767\text{ Hz}
+f' = \frac{f}{1 - v_s/v_w} = \frac{700}{1 - 30/343} = \frac{700}{0.9125} = 767\mathrm{ Hz}
 $$
 
 :::
@@ -446,11 +446,11 @@ This is why astronomical telescopes use large mirrors and electron microscopes u
 
 :::info[Example]
 
-A telescope with a mirror of diameter $0.1\text{ m}$ observes light of wavelength $550\text{ nm}$.
+A telescope with a mirror of diameter $0.1\mathrm{ m}$ observes light of wavelength $550\mathrm{ nm}$.
 Find the minimum angular separation it can resolve.
 
 $$
-\theta_{\min} = 1.22 \times \frac{550 \times 10^{-9}}{0.1} = 6.71 \times 10^{-6}\text{ rad}
+\theta_{\min} = 1.22 \times \frac{550 \times 10^{-9}}{0.1} = 6.71 \times 10^{-6}\mathrm{ rad}
 $$
 
 This is approximately $1.38$ arcseconds.
@@ -497,36 +497,36 @@ $$
 
 ### Question 1 (Paper 1 style)
 
-Light of wavelength $590\text{ nm}$ is incident on a double slit with separation $0.5\text{ mm}$.
-The screen is $2\text{ m}$ away. Find the distance from the central maximum to the third bright
+Light of wavelength $590\mathrm{ nm}$ is incident on a double slit with separation $0.5\mathrm{ mm}$.
+The screen is $2\mathrm{ m}$ away. Find the distance from the central maximum to the third bright
 fringe.
 
 $$
-x_3 = \frac{3\lambda D}{d} = \frac{3 \times 590 \times 10^{-9} \times 2}{0.5 \times 10^{-3}} = \frac{3.54 \times 10^{-6}}{5 \times 10^{-4}} = 7.08 \times 10^{-3}\text{ m} = 7.08\text{ mm}
+x_3 = \frac{3\lambda D}{d} = \frac{3 \times 590 \times 10^{-9} \times 2}{0.5 \times 10^{-3}} = \frac{3.54 \times 10^{-6}}{5 \times 10^{-4}} = 7.08 \times 10^{-3}\mathrm{ m} = 7.08\mathrm{ mm}
 $$
 
 ### Question 2 (Paper 2 style)
 
-A string of length $0.8\text{ m}$ and mass $4\text{ g}$ is under tension $50\text{ N}$.
+A string of length $0.8\mathrm{ m}$ and mass $4\mathrm{ g}$ is under tension $50\mathrm{ N}$.
 
 **(a)** Find the speed of waves on the string.
 
 $$
-\mu = \frac{0.004}{0.8} = 0.005\text{ kg/m}
+\mu = \frac{0.004}{0.8} = 0.005\mathrm{ kg/m}
 $$
 
 $$
-v = \sqrt{\frac{T}{\mu}} = \sqrt{\frac{50}{0.005}} = \sqrt{10000} = 100\text{ m/s}
+v = \sqrt{\frac{T}{\mu}} = \sqrt{\frac{50}{0.005}} = \sqrt{10000} = 100\mathrm{ m/s}
 $$
 
 **(b)** Find the fundamental frequency and the first three harmonic frequencies.
 
 $$
-f_1 = \frac{v}{2L} = \frac{100}{1.6} = 62.5\text{ Hz}
+f_1 = \frac{v}{2L} = \frac{100}{1.6} = 62.5\mathrm{ Hz}
 $$
 
 $$
-f_2 = 125\text{ Hz}, \quad f_3 = 187.5\text{ Hz}
+f_2 = 125\mathrm{ Hz}, \quad f_3 = 187.5\mathrm{ Hz}
 $$
 
 **(c)** Draw the standing wave pattern for the second harmonic.
@@ -536,11 +536,11 @@ nodes (including both ends) and 2 antinodes.
 
 ### Question 3 (Paper 1 style)
 
-An ambulance with siren at $800\text{ Hz}$ moves away from a stationary observer at $20\text{ m/s}$.
-What frequency does the observer hear? ($v_{\text{sound}} = 340\text{ m/s}$)
+An ambulance with siren at $800\mathrm{ Hz}$ moves away from a stationary observer at $20\mathrm{ m/s}$.
+What frequency does the observer hear? ($v_{\mathrm{sound}} = 340\mathrm{ m/s}$)
 
 $$
-f' = \frac{f}{1 + v_s/v_w} = \frac{800}{1 + 20/340} = \frac{800}{1.0588} = 756\text{ Hz}
+f' = \frac{f}{1 + v_s/v_w} = \frac{800}{1 + 20/340} = \frac{800}{1.0588} = 756\mathrm{ Hz}
 $$
 
 ### Question 4 (Paper 2 style)
@@ -562,25 +562,25 @@ $$
 
 ### Question 5 (Paper 2 style)
 
-A car horn produces sound at $400\text{ Hz}$. The car approaches a stationary observer at
-$25\text{ m/s}$, then passes and moves away at the same speed.
+A car horn produces sound at $400\mathrm{ Hz}$. The car approaches a stationary observer at
+$25\mathrm{ m/s}$, then passes and moves away at the same speed.
 
 **(a)** Find the frequency heard by the observer as the car approaches.
 
 $$
-f' = \frac{400}{1 - 25/343} = \frac{400}{0.927} = 431\text{ Hz}
+f' = \frac{400}{1 - 25/343} = \frac{400}{0.927} = 431\mathrm{ Hz}
 $$
 
 **(b)** Find the frequency heard as the car moves away.
 
 $$
-f' = \frac{400}{1 + 25/343} = \frac{400}{1.073} = 373\text{ Hz}
+f' = \frac{400}{1 + 25/343} = \frac{400}{1.073} = 373\mathrm{ Hz}
 $$
 
 **(c)** Calculate the change in frequency.
 
 $$
-\Delta f = 431 - 373 = 58\text{ Hz}
+\Delta f = 431 - 373 = 58\mathrm{ Hz}
 $$
 
 ---
@@ -636,11 +636,11 @@ $$
 
 :::info[Example]
 
-At $10\text{ m}$ from a source, the intensity is $0.5\text{ W/m}^2$. Find the intensity at
-$25\text{ m}$.
+At $10\mathrm{ m}$ from a source, the intensity is $0.5\mathrm{ W/m}^2$. Find the intensity at
+$25\mathrm{ m}$.
 
 $$
-I_2 = I_1 \times \frac{r_1^2}{r_2^2} = 0.5 \times \frac{100}{625} = 0.08\text{ W/m}^2
+I_2 = I_1 \times \frac{r_1^2}{r_2^2} = 0.5 \times \frac{100}{625} = 0.08\mathrm{ W/m}^2
 $$
 
 :::
@@ -702,11 +702,11 @@ $$
 
 :::info[Example]
 
-A diffraction grating has $500\text{ lines/mm}$. Light of wavelength $600\text{ nm}$ is incident
+A diffraction grating has $500\mathrm{ lines/mm}$. Light of wavelength $600\mathrm{ nm}$ is incident
 normally. Find the angles of the first and second-order maxima.
 
 $$
-d = \frac{1}{500000} = 2 \times 10^{-6}\text{ m}
+d = \frac{1}{500000} = 2 \times 10^{-6}\mathrm{ m}
 $$
 
 $$
@@ -728,13 +728,13 @@ visible.
 
 ### Question 6 (Paper 2 style)
 
-A string of length $0.6\text{ m}$ is fixed at both ends. The speed of waves on the string is
-$240\text{ m/s}$.
+A string of length $0.6\mathrm{ m}$ is fixed at both ends. The speed of waves on the string is
+$240\mathrm{ m/s}$.
 
 **(a)** Calculate the fundamental frequency.
 
 $$
-f_1 = \frac{v}{2L} = \frac{240}{1.2} = 200\text{ Hz}
+f_1 = \frac{v}{2L} = \frac{240}{1.2} = 200\mathrm{ Hz}
 $$
 
 **(b)** Draw the standing wave pattern for the third harmonic and state its frequency.
@@ -742,7 +742,7 @@ $$
 The third harmonic has 3 half-wavelengths fitting on the string, with 4 nodes and 3 antinodes.
 
 $$
-f_3 = 3f_1 = 600\text{ Hz}
+f_3 = 3f_1 = 600\mathrm{ Hz}
 $$
 
 **(c)** The tension in the string is doubled. Find the new fundamental frequency.
@@ -752,21 +752,21 @@ v = \sqrt{\frac{T}{\mu}} \implies v' = \sqrt{2}v
 $$
 
 $$
-f_1' = \sqrt{2} \times 200 = 283\text{ Hz}
+f_1' = \sqrt{2} \times 200 = 283\mathrm{ Hz}
 $$
 
 ### Question 7 (Paper 2 style)
 
-Two loudspeakers are $3\text{ m}$ apart and emit sound of frequency $686\text{ Hz}$ in phase. The
-speed of sound is $343\text{ m/s}$.
+Two loudspeakers are $3\mathrm{ m}$ apart and emit sound of frequency $686\mathrm{ Hz}$ in phase. The
+speed of sound is $343\mathrm{ m/s}$.
 
 **(a)** Calculate the wavelength.
 
 $$
-\lambda = \frac{v}{f} = \frac{343}{686} = 0.5\text{ m}
+\lambda = \frac{v}{f} = \frac{343}{686} = 0.5\mathrm{ m}
 $$
 
-**(b)** A listener walks along a line parallel to the speakers, $4\text{ m}$ away. Find the
+**(b)** A listener walks along a line parallel to the speakers, $4\mathrm{ m}$ away. Find the
 positions of the first two points of constructive interference.
 
 For constructive interference: path difference $= n\lambda$.
@@ -779,10 +779,10 @@ $$
 $$
 
 For $n = 1$: $\sin\theta = 1/6$, $\theta = 9.6\degree$. Distance from centre:
-$4\tan 9.6\degree = 0.68\text{ m}$.
+$4\tan 9.6\degree = 0.68\mathrm{ m}$.
 
 For $n = 2$: $\sin\theta = 1/3$, $\theta = 19.5\degree$. Distance from centre:
-$4\tan 19.5\degree = 1.41\text{ m}$.
+$4\tan 19.5\degree = 1.41\mathrm{ m}$.
 
 ### Question 8 (Paper 1 style)
 
@@ -795,15 +795,15 @@ inversely proportional to the slit width.
 
 ### Question 9 (Paper 2 style)
 
-Unpolarised light of intensity $200\text{ W/m}^2$ passes through three polarising filters. The first
+Unpolarised light of intensity $200\mathrm{ W/m}^2$ passes through three polarising filters. The first
 has its axis vertical. The second is at $30\degree$ to the vertical. The third is at $60\degree$ to
 the vertical.
 
 Find the intensity after each filter.
 
-After filter 1: $I_1 = \dfrac{200}{2} = 100\text{ W/m}^2$.
+After filter 1: $I_1 = \dfrac{200}{2} = 100\mathrm{ W/m}^2$.
 
-After filter 2: $I_2 = 100\cos^2 30\degree = 100 \times 0.75 = 75\text{ W/m}^2$.
+After filter 2: $I_2 = 100\cos^2 30\degree = 100 \times 0.75 = 75\mathrm{ W/m}^2$.
 
 After filter 3:
-$I_3 = 75\cos^2(60\degree - 30\degree) = 75\cos^2 30\degree = 75 \times 0.75 = 56.25\text{ W/m}^2$.
+$I_3 = 75\cos^2(60\degree - 30\degree) = 75\cos^2 30\degree = 75 \times 0.75 = 56.25\mathrm{ W/m}^2$.

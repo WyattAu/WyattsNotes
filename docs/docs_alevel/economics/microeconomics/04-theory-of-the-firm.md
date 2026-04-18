@@ -31,7 +31,7 @@ The production function is $Q = f(L, \bar{K})$.
 **Law of diminishing marginal returns**: as more of a variable factor (labour) is added to a fixed
 factor (capital), the marginal product of labour eventually diminishes.
 
-$$MP_L = \frac{dQ}{dL}, \quad \frac{d^2 Q}{dL^2} < 0 \text{ for } L > L^*$$
+$$MP_L = \frac{dQ}{dL}, \quad \frac{d^2 Q}{dL^2} < 0 \mathrm{ for } L > L^*$$
 
 Since $MC = \frac{dw}{dQ} = \frac{w}{MP_L}$ (where $w$ is the wage rate), diminishing marginal
 returns ($MP_L$ falling) implies $MC$ is eventually rising.
@@ -42,7 +42,7 @@ inputs:
 $$
 \begin{aligned}
 \min_{L,K} \quad & wL + rK \\
-\text{s.t.} \quad & Q = f(L, K)
+\mathrm{s.t.} \quad & Q = f(L, K)
 \end{aligned}
 $$
 
@@ -126,7 +126,7 @@ $$\frac{d\pi}{dQ} = MR - MC = 0 \implies MR = MC$$
 
 Second-order condition (for maximum):
 
-$$\frac{d^2\pi}{dQ^2} = \frac{d(MR)}{dQ} - \frac{d(MC)}{dQ} < 0 \implies MC \text{ cuts MR from below}$$
+$$\frac{d^2\pi}{dQ^2} = \frac{d(MR)}{dQ} - \frac{d(MC)}{dQ} < 0 \implies MC \mathrm{ cuts MR from below}$$
 
 **Normal profit** is the minimum profit necessary to keep a firm in the industry (included in total
 cost as _opportunity cost_ of capital). **Economic profit** (supernormal profit) is profit above
@@ -207,7 +207,7 @@ $$Q_m : a - 2bQ_m = MC(Q_m)$$ $$P_m = a - bQ_m$$
 
 **Deadweight loss**: The monopolist produces less and charges more than a competitive market.
 
-$$\text{DWL} = \int_{Q_m}^{Q_c} [P(Q) - MC(Q)] \, dQ > 0$$
+$$\mathrm{DWL} = \int_{Q_m}^{Q_c} [P(Q) - MC(Q)] \, dQ > 0$$
 
 where $Q_c$ is the competitive output ($P = MC$).
 
@@ -230,9 +230,9 @@ producer.
 **Third-degree price discrimination**: the firm divides consumers into groups with different PEDs
 and charges a higher price to the less elastic group.
 
-$$\frac{P_1}{P_2} = \frac{1 - \frac{1}{|\text{PED}_2|}}{1 - \frac{1}{|\text{PED}_1|}}$$
+$$\frac{P_1}{P_2} = \frac{1 - \frac{1}{|\mathrm{PED}_2|}}{1 - \frac{1}{|\mathrm{PED}_1|}}$$
 
-Group with lower $|\text{PED}|$ pays higher price.
+Group with lower $|\mathrm{PED}|$ pays higher price.
 
 <details>
 <summary>Example: Third-Degree Price Discrimination</summary>
@@ -289,7 +289,7 @@ discrimination to be feasible.
 A natural monopoly exists where LRAC falls continuously over the relevant output range (strong
 economies of scale). One firm can supply the entire market at lower cost than two or more firms.
 
-$$LRAC(Q_{total}) < \sum_{i} LRAC(Q_i) \quad \text{for any partition } Q_{total} = \sum Q_i$$
+$$LRAC(Q_{total}) < \sum_{i} LRAC(Q_i) \quad \mathrm{for any partition } Q_{total} = \sum Q_i$$
 
 Examples: water supply, electricity distribution, railway networks.
 
@@ -342,13 +342,13 @@ may earn supernormal profit.
 
 **Long run**: free entry eliminates supernormal profit, but $P > MC$ and $P > AC_{min}$.
 
-$$\pi = 0 \implies P = AC$$ $$MR = MC \implies P > MC \text{ (since } MR < P\text{)}$$
+$$\pi = 0 \implies P = AC$$ $$MR = MC \implies P > MC \mathrm{ (since } MR < P\mathrm{)}$$
 
 **Excess capacity**: the firm produces at an output below the output that minimises AC. The gap
 between actual output and the minimum efficient scale output is excess capacity — a measure of
 inefficiency.
 
-$$Q_{MC} < Q_{MES} \quad \text{where } Q_{MES} \text{ minimises AC}$$
+$$Q_{MC} < Q_{MES} \quad \mathrm{where } Q_{MES} \mathrm{ minimises AC}$$
 
 **Evaluation of monopolistic competition**: While the model predicts excess capacity and allocative
 inefficiency ($P > MC$), it has important strengths that are often underemphasised in exam answers.
@@ -405,7 +405,7 @@ Consider the discount factor $\delta \in (0, 1)$, which represents how much firm
 profits relative to current profits. If both firms play **tit-for-tat** (cooperate in the first
 round, then copy the opponent's previous action), collusion is sustainable if:
 
-$$(\text{Gain from cheating today}) \lt (\text{Loss from future punishment})$$
+$$(\mathrm{Gain from cheating today}) \lt (\mathrm{Loss from future punishment})$$
 
 More intuitively: if firms are sufficiently patient ($\delta$ is close to 1), the long-run gains
 from cooperation outweigh the short-run temptation to cheat. This explains why OPEC has maintained

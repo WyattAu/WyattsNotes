@@ -265,13 +265,13 @@ The CSS box model describes how every HTML element is rendered as a rectangular 
 **Total element width** (default `content-box`):
 
 $$
-\text{Total Width} = \text{margin-left} + \text{border-left} + \text{padding-left} + \text{width} + \text{padding-right} + \text{border-right} + \text{margin-right}
+\mathrm{Total Width} = \mathrm{margin-left} + \mathrm{border-left} + \mathrm{padding-left} + \mathrm{width} + \mathrm{padding-right} + \mathrm{border-right} + \mathrm{margin-right}
 $$
 
 With `box-sizing: border-box`, the `width` property includes content, padding, and border:
 
 $$
-\text{Total Width} = \text{margin-left} + \text{width} + \text{margin-right}
+\mathrm{Total Width} = \mathrm{margin-left} + \mathrm{width} + \mathrm{margin-right}
 $$
 
 #### Layout Properties

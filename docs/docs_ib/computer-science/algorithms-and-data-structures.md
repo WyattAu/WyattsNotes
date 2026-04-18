@@ -691,7 +691,7 @@ amortized $O(1)$ insertion at the end.
 The $O(1)$ access time is the defining advantage of arrays. The memory address of element `arr[i]`
 is computed as:
 
-$\text{address}(\text{arr}[i]) = \text{base address} + i \times \text{element size}$
+$\mathrm{address}(\mathrm{arr}[i]) = \mathrm{base address} + i \times \mathrm{element size}$
 
 This calculation is constant-time, regardless of the array size or the index accessed.
 
@@ -1120,7 +1120,7 @@ Big-O notation provides an upper bound on the growth rate of a function as its i
 arbitrarily large. Formally, a function $f(n)$ is said to be $O(g(n))$ if there exist positive
 constants $c$ and $n_0$ such that:
 
-$$f(n) \leq c \cdot g(n) \quad \text{for all } n \geq n_0$$
+$$f(n) \leq c \cdot g(n) \quad \mathrm{for all } n \geq n_0$$
 
 In other words, $g(n)$ is an asymptotic upper bound for $f(n)$. Big-O describes the worst-case
 growth rate; it says that $f(n)$ grows no faster than $g(n)$, up to a constant factor, for
@@ -1345,16 +1345,16 @@ linear array when elements are dequeued from the front.
 The List ADT defines an ordered collection that allows access by position:
 
 `get(index)` -- returns the element at position `index`. Precondition:
-$0 \leq \text{index} \lt \text{size}$.
+$0 \leq \mathrm{index} \lt \mathrm{size}$.
 
 `set(index, item)` -- replaces the element at position `index` with `item`. Precondition:
-$0 \leq \text{index} \lt \text{size}$.
+$0 \leq \mathrm{index} \lt \mathrm{size}$.
 
 `add(index, item)` -- inserts `item` at position `index`, shifting subsequent elements.
-Precondition: $0 \leq \text{index} \leq \text{size}$.
+Precondition: $0 \leq \mathrm{index} \leq \mathrm{size}$.
 
 `remove(index)` -- removes the element at position `index`, shifting subsequent elements.
-Precondition: $0 \leq \text{index} \lt \text{size}$.
+Precondition: $0 \leq \mathrm{index} \lt \mathrm{size}$.
 
 `size()` -- returns the number of elements.
 

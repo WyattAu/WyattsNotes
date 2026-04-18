@@ -25,7 +25,7 @@ of $x$ under $f$, written $y = f(x)$.
 - The set $A$ is called the **domain** of $f$.
 - The set $B$ is called the **codomain** of $f$.
 - The set of all images $\{f(x) : x \in A\}$ is called the **range** of $f$. The range is always a
-  subset of the codomain: $\text{range}(f) \subseteq B$.
+  subset of the codomain: $\mathrm{range}(f) \subseteq B$.
 
 A **relation** is any subset of $A \times B$. A function is a special type of relation where each
 element of $A$ appears as the first component of exactly one ordered pair.
@@ -81,7 +81,7 @@ For $(f \circ g)(x)$ to be defined at a particular value of $x$, two conditions 
 The domain of $f \circ g$ is therefore:
 
 $$
-\text{dom}(f \circ g) = \{x \in \text{dom}(g) : g(x) \in \text{dom}(f)\}
+\mathrm{dom}(f \circ g) = \{x \in \mathrm{dom}(g) : g(x) \in \mathrm{dom}(f)\}
 $$
 
 ### Order of Composition
@@ -94,11 +94,11 @@ is evaluated first.
 If $f$ is a bijection, then the **inverse function** $f^{-1}$ exists and satisfies:
 
 $$
-f^{-1}(f(x)) = x \quad \text{for all } x \in \text{dom}(f)
+f^{-1}(f(x)) = x \quad \mathrm{for all } x \in \mathrm{dom}(f)
 $$
 
 $$
-f(f^{-1}(y)) = y \quad \text{for all } y \in \text{dom}(f^{-1}) = \text{range}(f)
+f(f^{-1}(y)) = y \quad \mathrm{for all } y \in \mathrm{dom}(f^{-1}) = \mathrm{range}(f)
 $$
 
 The graphs of $y = f(x)$ and $y = f^{-1}(x)$ are reflections of each other in the line $y = x$.
@@ -123,10 +123,10 @@ injective.
   - Therefore $f^{-1}(x) = \dfrac{3x + 1}{x - 2}$, with domain $\mathbb{R} \setminus \{2\}$.
 
 - Let $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + 1$. Find the domain of $f \circ g$:
-  - $\text{dom}(g) = \mathbb{R}$
-  - $\text{dom}(f) = \{x : x \geq 1\}$, so we require $g(x) \geq 1$, i.e.
+  - $\mathrm{dom}(g) = \mathbb{R}$
+  - $\mathrm{dom}(f) = \{x : x \geq 1\}$, so we require $g(x) \geq 1$, i.e.
     $x^2 + 1 \geq 1 \implies x^2 \geq 0$, which holds for all real $x$.
-  - Therefore $\text{dom}(f \circ g) = \mathbb{R}$.
+  - Therefore $\mathrm{dom}(f \circ g) = \mathbb{R}$.
 
 </details>
 
@@ -266,7 +266,7 @@ For equations of the form $a^{f(x)} = b$, take logarithms of both sides. See
 - The half-life of a substance is 8 hours. If the initial amount is 100 g, find the amount remaining
   after 24 hours:
   - $A(t) = 100 \times \left(\frac{1}{2}\right)^{t/8}$
-  - $A(24) = 100 \times \left(\frac{1}{2}\right)^3 = 12.5 \text{ g}$
+  - $A(24) = 100 \times \left(\frac{1}{2}\right)^3 = 12.5 \mathrm{ g}$
 
 </details>
 
@@ -292,9 +292,9 @@ For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{R}$:
 
 $$
 \begin{aligned}
-\log_a (MN) &= \log_a M + \log_a N &\text{(Product Law)} \\
-\log_a \left(\frac{M}{N}\right) &= \log_a M - \log_a N &\text{(Quotient Law)} \\
-\log_a M^p &= p \log_a M &\text{(Power Law)} \\
+\log_a (MN) &= \log_a M + \log_a N &\mathrm{(Product Law)} \\
+\log_a \left(\frac{M}{N}\right) &= \log_a M - \log_a N &\mathrm{(Quotient Law)} \\
+\log_a M^p &= p \log_a M &\mathrm{(Power Law)} \\
 \log_a 1 &= 0 \\
 \log_a a &= 1
 \end{aligned}
@@ -414,7 +414,7 @@ shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
 The **modulus** (or absolute value) function is defined piecewise:
 
 $$
-f(x) = |x| = \begin{cases} x & \text{if } x \geq 0 \\ -x & \text{if } x \lt 0 \end{cases}
+f(x) = |x| = \begin{cases} x & \mathrm{if } x \geq 0 \\ -x & \mathrm{if } x \lt 0 \end{cases}
 $$
 
 The graph of $y = |x|$ is V-shaped, with its vertex at the origin. It is symmetric about the
@@ -581,7 +581,7 @@ degrees of $P$ and $Q$:
 | Condition               | Horizontal Asymptote                                                            |
 | ----------------------- | ------------------------------------------------------------------------------- |
 | $\deg P \lt \deg Q$     | $y = 0$ (the $x$-axis)                                                          |
-| $\deg P = \deg Q$       | $y = \frac{\text{leading coefficient of } P}{\text{leading coefficient of } Q}$ |
+| $\deg P = \deg Q$       | $y = \frac{\mathrm{leading coefficient of } P}{\mathrm{leading coefficient of } Q}$ |
 | $\deg P = \deg Q + 1$   | Oblique asymptote (polynomial long division)                                    |
 | $\deg P \gt \deg Q + 1$ | No horizontal or oblique asymptote                                              |
 
@@ -726,9 +726,9 @@ always positive, not always negative.
 <details>
 <summary>Answer</summary>
 - $(f \circ g)(x) = f(g(x)) = f(x^2 - 4) = \dfrac{2(x^2 - 4) - 6}{(x^2 - 4) + 1} = \dfrac{2x^2 - 14}{x^2 - 3}$
-- $\text{dom}(g) = \mathbb{R}$.
-- $\text{dom}(f) = \{x \in \mathbb{R} : x \neq -1\}$, so we require $g(x) \neq -1$, i.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
-- $\text{dom}(f \circ g) = \mathbb{R} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
+- $\mathrm{dom}(g) = \mathbb{R}$.
+- $\mathrm{dom}(f) = \{x \in \mathbb{R} : x \neq -1\}$, so we require $g(x) \neq -1$, i.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
+- $\mathrm{dom}(f \circ g) = \mathbb{R} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
 </details>
 
 2. **Question:** Let $f(x) = 3x - 5$. Find $f^{-1}(x)$ and verify that $f^{-1}(f(x)) = x$.
@@ -812,9 +812,9 @@ inverse functions of each other, and state the domain and range of $f^{-1}$.
 - To find the true inverse of $f(x) = \log_2(x + 3)$:
   - Set $y = \log_2(x + 3) \implies 2^y = x + 3 \implies x = 2^y - 3$.
   - $f^{-1}(x) = 2^x - 3$.
-- $\text{dom}(f^{-1}) = \text{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all real values
+- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all real values
   for $x > -3$).
-- $\text{range}(f^{-1}) = \text{dom}(f) = (-3, \infty)$.
+- $\mathrm{range}(f^{-1}) = \mathrm{dom}(f) = (-3, \infty)$.
 </details>
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$, find the range of $f$ when (a) the domain is

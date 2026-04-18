@@ -179,7 +179,7 @@ requires that all resources are fully employed and used in the most efficient wa
 In the context of a single firm, productive efficiency means producing at the lowest possible
 average cost (at the minimum point of the average cost curve).
 
-$$\text{Productive efficiency: } \text{MC} = \text{AC}_{\min}$$
+$$\mathrm{Productive efficiency: } \mathrm{MC} = \mathrm{AC}_{\min}$$
 
 ### Allocative Efficiency
 
@@ -187,7 +187,7 @@ An economy is allocatively efficient when it is producing the combination of goo
 best satisfies society's wants. This occurs where the marginal benefit (MB) of the last unit
 produced equals its marginal cost (MC).
 
-$$\text{Allocative efficiency: } P = \text{MC}$$
+$$\mathrm{Allocative efficiency: } P = \mathrm{MC}$$
 
 When $P \gt MC$, society values the good more than it costs to produce -- more should be produced.
 When $P \lt MC$, the good costs more to produce than society values it -- less should be produced.
@@ -417,11 +417,11 @@ decision.
 
 A rational decision-maker continues an activity as long as:
 
-$$\text{MB} \gt \text{MC}$$
+$$\mathrm{MB} \gt \mathrm{MC}$$
 
 The optimal level is where:
 
-$$\text{MB} = \text{MC}$$
+$$\mathrm{MB} = \mathrm{MC}$$
 
 ### Incentives
 
@@ -866,7 +866,7 @@ services. It is a theoretical measure used to model consumer behaviour.
 - **Total utility (TU):** The total satisfaction from consuming a given quantity of a good
 - **Marginal utility (MU):** The additional satisfaction from consuming one more unit of a good
 
-$$\text{MU} = \frac{\Delta \text{TU}}{\Delta Q}$$
+$$\mathrm{MU} = \frac{\Delta \mathrm{TU}}{\Delta Q}$$
 
 **Law of diminishing marginal utility:** As a consumer consumes more units of a good, the additional
 satisfaction (marginal utility) from each additional unit decreases.
@@ -884,7 +884,7 @@ satisfaction (marginal utility) from each additional unit decreases.
 The consumer maximises utility where the marginal utility per dollar spent is equal across all
 goods:
 
-$$\frac{\text{MU}_A}{P_A} = \frac{\text{MU}_B}{P_B}$$
+$$\frac{\mathrm{MU}_A}{P_A} = \frac{\mathrm{MU}_B}{P_B}$$
 
 ### Consumer and Producer Surplus
 
@@ -892,7 +892,7 @@ $$\frac{\text{MU}_A}{P_A} = \frac{\text{MU}_B}{P_B}$$
 the actual price they pay. It represents the benefit consumers receive from purchasing a good at a
 market price lower than their maximum willingness to pay.
 
-$$\text{Consumer Surplus} = \text{Maximum willingness to pay} - \text{Actual price paid}$$
+$$\mathrm{Consumer Surplus} = \mathrm{Maximum willingness to pay} - \mathrm{Actual price paid}$$
 
 On a demand and supply diagram, consumer surplus is the area below the demand curve and above the
 equilibrium price.
@@ -901,7 +901,7 @@ equilibrium price.
 price they are willing to accept. It represents the benefit producers receive from selling at a
 market price higher than their minimum acceptable price.
 
-$$\text{Producer Surplus} = \text{Actual price received} - \text{Minimum acceptable price}$$
+$$\mathrm{Producer Surplus} = \mathrm{Actual price received} - \mathrm{Minimum acceptable price}$$
 
 On a demand and supply diagram, producer surplus is the area above the supply curve and below the
 equilibrium price.

@@ -40,7 +40,7 @@ $$\boxed{v = f\lambda}$$
 exactly one wavelength $\lambda$ (the source completes one full oscillation, producing one complete
 wave cycle):
 
-$$v = \frac{\text{distance travelled}}{\text{time taken}} = \frac{\lambda}{T} = \lambda \cdot \frac{1}{T} = f\lambda$$
+$$v = \frac{\mathrm{distance travelled}}{\mathrm{time taken}} = \frac{\lambda}{T} = \lambda \cdot \frac{1}{T} = f\lambda$$
 
 $\square$
 
@@ -76,7 +76,7 @@ where:
 - $\phi_0$ is the initial phase
 
 **Proof that $v = f\lambda$ from the wave function.** A point of constant phase satisfies
-$kx - \omega t = \text{const}$. Differentiating: $k\frac{dx}{dt} - \omega = 0$, so:
+$kx - \omega t = \mathrm{const}$. Differentiating: $k\frac{dx}{dt} - \omega = 0$, so:
 
 $$v = \frac{dx}{dt} = \frac{\omega}{k} = \frac{2\pi f}{2\pi/\lambda} = f\lambda$$
 
@@ -233,7 +233,7 @@ with SI units W m$^{-2}$.
 Consider a sinusoidal wave on a string. The power transmitted past a point is the rate at which the
 transverse force does work:
 
-$$P = F_{\text{transverse}} \times v_{\text{transverse}}$$
+$$P = F_{\mathrm{transverse}} \times v_{\mathrm{transverse}}$$
 
 For a wave $y = A\sin(kx - \omega t)$, the transverse velocity is:
 
@@ -286,7 +286,7 @@ $$I_1 r_1^2 = I_2 r_2^2$$
 
 In practice, intensity ratios are often expressed using the **decibel scale**:
 
-$$\text{Intensity level (dB)} = 10 \log_{10}\left(\frac{I}{I_0}\right)$$
+$$\mathrm{Intensity level (dB)} = 10 \log_{10}\left(\frac{I}{I_0}\right)$$
 
 where $I_0 = 1.0 \times 10^{-12}$ W m$^{-2}$ is the threshold of hearing. This logarithmic scale
 reflects how human perception of loudness works: a 3 dB increase represents a doubling of intensity,
@@ -356,7 +356,7 @@ When given a displacement--position graph:
 When given a displacement--time graph at a single point, the phase difference between two instants
 $t_1$ and $t_2$ is:
 
-$$\Delta\phi = \frac{\Delta t}{T} \times 360° = \frac{\Delta t}{T} \times 2\pi \text{ rad}$$
+$$\Delta\phi = \frac{\Delta t}{T} \times 360° = \frac{\Delta t}{T} \times 2\pi \mathrm{ rad}$$
 
 :::info
 Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
@@ -510,7 +510,7 @@ $t_S = d/v_S$. The time difference is:
 
 $$\Delta t = t_S - t_P = d\left(\frac{1}{v_S} - \frac{1}{v_P}\right) = d\left(\frac{v_P - v_S}{v_P v_S}\right)$$
 
-$$d = \frac{\Delta t \cdot v_P \cdot v_S}{v_P - v_S} = \frac{120 \times 6500 \times 3800}{6500 - 3800} = \frac{120 \times 2.47 \times 10^7}{2700} = \frac{2.964 \times 10^9}{2700} \approx 1.10 \times 10^6 \text{ m} = 1100 \text{ km}$$
+$$d = \frac{\Delta t \cdot v_P \cdot v_S}{v_P - v_S} = \frac{120 \times 6500 \times 3800}{6500 - 3800} = \frac{120 \times 2.47 \times 10^7}{2700} = \frac{2.964 \times 10^9}{2700} \approx 1.10 \times 10^6 \mathrm{ m} = 1100 \mathrm{ km}$$
 
 <b>If you get this wrong, revise:</b>
 [Real-World Application: Seismic Waves](#real-world-application-seismic-waves)
@@ -559,12 +559,12 @@ reflected signal.
 
 **Answer.** First, the ultrasound hits the moving blood (source at rest, observer moving away):
 
-$$f_1 = f_0 \cdot \frac{c - v}{c} = 5.0 \times 10^6 \times \frac{1540 - 0.80}{1540} = 5.0 \times 10^6 \times 0.99948 = 4.9974 \times 10^6 \text{ Hz}$$
+$$f_1 = f_0 \cdot \frac{c - v}{c} = 5.0 \times 10^6 \times \frac{1540 - 0.80}{1540} = 5.0 \times 10^6 \times 0.99948 = 4.9974 \times 10^6 \mathrm{ Hz}$$
 
 This reflected signal then travels back to the transducer (source moving away, observer at rest),
 effectively doubling the shift:
 
-$$\Delta f \approx \frac{2f_0 v}{c} = \frac{2 \times 5.0 \times 10^6 \times 0.80}{1540} = \frac{8.0 \times 10^6}{1540} \approx 5190 \text{ Hz} \approx 5.2 \text{ kHz}$$
+$$\Delta f \approx \frac{2f_0 v}{c} = \frac{2 \times 5.0 \times 10^6 \times 0.80}{1540} = \frac{8.0 \times 10^6}{1540} \approx 5190 \mathrm{ Hz} \approx 5.2 \mathrm{ kHz}$$
 
 <b>If you get this wrong, revise:</b>
 [Real-World Application: Doppler Ultrasound](#real-world-application-doppler-ultrasound)
@@ -580,9 +580,9 @@ with amplitude greater than, less than, or equal to 0.04 m.
 **Answer.** The phase difference is $\Delta\phi = \pi/3$ rad (60°). Since $\Delta\phi$ is neither
 $0$ nor $\pi$, the resultant amplitude is intermediate:
 
-$$A_{\text{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\Delta\phi} = \sqrt{0.04^2 + 0.04^2 + 2(0.04)(0.04)\cos(\pi/3)}$$
+$$A_{\mathrm{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\Delta\phi} = \sqrt{0.04^2 + 0.04^2 + 2(0.04)(0.04)\cos(\pi/3)}$$
 
-$$= 0.04\sqrt{2 + 2 \times 0.5} = 0.04\sqrt{3} \approx 0.069 \text{ m}$$
+$$= 0.04\sqrt{2 + 2 \times 0.5} = 0.04\sqrt{3} \approx 0.069 \mathrm{ m}$$
 
 The resultant amplitude ($\approx 0.069$ m) is greater than 0.04 m but less than 0.08 m (which would
 be the fully constructive case at $\Delta\phi = 0$).

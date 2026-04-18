@@ -376,7 +376,7 @@ responsible for a subset of the data.
 
 **Hash-based sharding:**
 
-$$\text{shard} = \text{hash}(\text{key}) \pmod{\text{num\_shards}}$$
+$$\mathrm{shard} = \mathrm{hash}(\mathrm{key}) \pmod{\mathrm{num\_shards}}$$
 
 - Even data distribution
 - Requires application-level routing or a proxy (e.g., Vitess, Citus)

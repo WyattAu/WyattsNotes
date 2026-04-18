@@ -264,7 +264,7 @@ k = \min(n, 10)
 $$
 
 The station waits for $r \times 512$ bit times before retransmitting. A "bit time" at 10 Mbps is 100
-nanoseconds, so each slot time is $512 \times 100\text{ ns} = 51.2\,\mu\text{s}$.
+nanoseconds, so each slot time is $512 \times 100\mathrm{ ns} = 51.2\,\mu\mathrm{s}$.
 
 The maximum backoff occurs after 10 collisions: $k = 10$, giving a range of $\{0, 1, \ldots,
 1023\}$.
@@ -285,7 +285,7 @@ Slot time = 512 bit times = 51.2 microseconds
 If the random number selected is $r = 7$, the station waits:
 
 $$
-7 \times 51.2\,\mu\text{s} = 358.4\,\mu\text{s}
+7 \times 51.2\,\mu\mathrm{s} = 358.4\,\mu\mathrm{s}
 $$
 
 before attempting retransmission.
@@ -301,7 +301,7 @@ be able to detect a collision before it finishes transmitting the minimum-size f
 transmitting 64 bytes takes:
 
 $$
-\frac{64 \times 8}{10 \times 10^6} = 51.2\,\mu\text{s}
+\frac{64 \times 8}{10 \times 10^6} = 51.2\,\mu\mathrm{s}
 $$
 
 This ensures that any collision on the segment will be detected before the transmitting station
@@ -364,7 +364,7 @@ PAM-5 modulation (5 amplitude levels: -2, -1, 0, +1, +2). However, trellis codin
 encoding effectively transmit 1 byte per symbol across all four pairs:
 
 $$
-\text{Line rate} = 125 \text{ MBd} \times 8 \text{ bits/symbol} = 1000 \text{ Mbps}
+\mathrm{Line rate} = 125 \mathrm{ MBd} \times 8 \mathrm{ bits/symbol} = 1000 \mathrm{ Mbps}
 $$
 
 ## Switching
@@ -535,7 +535,7 @@ and STP blocks redundant paths.
 The root bridge is the switch with the lowest **Bridge ID (BID)**:
 
 $$
-\text{BID} = \text{Bridge Priority (16 bits)} + \text{MAC Address (48 bits)}
+\mathrm{BID} = \mathrm{Bridge Priority (16 bits)} + \mathrm{MAC Address (48 bits)}
 $$
 
 The default bridge priority is 32768. The priority is configurable in increments of 4096: 0, 4096,
@@ -837,15 +837,15 @@ retransmission attempt. c) The slot time in microseconds.
 a) $k = \min(6, 10) = 6$. Range: $\{0, 1, 2, \ldots, 2^6 - 1\} = \{0, 1, 2, \ldots, 63\}$. That is
 64 possible values.
 
-b) Maximum wait: $63 \times \text{slot time}$.
+b) Maximum wait: $63 \times \mathrm{slot time}$.
 
 c) Slot time at 100 Mbps is still 512 bit times (this is fixed regardless of speed):
 
 $$
-\frac{512}{100 \times 10^6} = 5.12\,\mu\text{s}
+\frac{512}{100 \times 10^6} = 5.12\,\mu\mathrm{s}
 $$
 
-Maximum wait: $63 \times 5.12\,\mu\text{s} = 322.56\,\mu\text{s}$.
+Maximum wait: $63 \times 5.12\,\mu\mathrm{s} = 322.56\,\mu\mathrm{s}$.
 
 </details>
 

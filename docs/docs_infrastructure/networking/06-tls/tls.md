@@ -93,7 +93,7 @@ Client                              Server
 The pre-master secret and both random values are combined to generate the **master secret**:
 
 $$
-\text{master\_secret} = \text{PRF}(\text{pre\_master\_secret}, \text{"master secret"}, \text{ClientRandom} + \text{ServerRandom})
+\mathrm{master\_secret} = \mathrm{PRF}(\mathrm{pre\_master\_secret}, \mathrm{"master secret"}, \mathrm{ClientRandom} + \mathrm{ServerRandom})
 $$
 
 The master secret is then used to generate the symmetric encryption keys and MAC keys for the

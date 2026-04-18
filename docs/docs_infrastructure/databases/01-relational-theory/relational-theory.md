@@ -178,7 +178,7 @@ reason about query correctness and performance.
 
 ### Selection (sigma)
 
-Filters tuples based on a predicate. Denoted $\sigma_{\text{predicate}}(R)$.
+Filters tuples based on a predicate. Denoted $\sigma_{\mathrm{predicate}}(R)$.
 
 ```sql
 -- sigma_{salary > 100000}(Employee)
@@ -187,7 +187,7 @@ SELECT * FROM Employee WHERE salary > 100000;
 
 ### Projection (pi)
 
-Selects a subset of attributes. Denoted $\pi_{\text{attr}_1, \text{attr}_2}(R)$.
+Selects a subset of attributes. Denoted $\pi_{\mathrm{attr}_1, \mathrm{attr}_2}(R)$.
 
 ```sql
 -- pi_{name, salary}(Employee)
@@ -235,7 +235,7 @@ Division answers "which X values are associated with ALL Y values?" Denoted $R \
 Given `Takes(student, course)` and `RequiredCourse(course)`, find students who have taken ALL
 required courses:
 
-$$\pi_{\text{student}, \text{course}}(\text{Takes}) \div \pi_{\text{course}}(\text{RequiredCourse})$$
+$$\pi_{\mathrm{student}, \mathrm{course}}(\mathrm{Takes}) \div \pi_{\mathrm{course}}(\mathrm{RequiredCourse})$$
 
 SQL has no direct division operator. You simulate it with a double `NOT EXISTS`:
 
@@ -277,7 +277,7 @@ SELECT name FROM suppliers;
 
 ### Rename (rho)
 
-The rename operation, denoted $\rho_{\text{new\_name}}(R)$, gives a relation or its attributes new
+The rename operation, denoted $\rho_{\mathrm{new\_name}}(R)$, gives a relation or its attributes new
 names. In SQL, this is `AS`:
 
 ```sql
@@ -721,11 +721,11 @@ Relational calculus is an alternative to relational algebra for expressing queri
 
 **Tuple relational calculus:** variables range over tuples.
 
-$$\{ t \mid \exists s \in \text{Employee}(s[\text{dept}] = t[\text{dept}] \land s[\text{salary}] \gt 100000) \}$$
+$$\{ t \mid \exists s \in \mathrm{Employee}(s[\mathrm{dept}] = t[\mathrm{dept}] \land s[\mathrm{salary}] \gt 100000) \}$$
 
 **Domain relational calculus:** variables range over attribute values (domains).
 
-$$\{ \lt \text{name}, \text{salary} \gt \mid \exists d, s (\text{Employee}(d, \text{name}, s) \land s \gt 100000) \}$$
+$$\{ \lt \mathrm{name}, \mathrm{salary} \gt \mid \exists d, s (\mathrm{Employee}(d, \mathrm{name}, s) \land s \gt 100000) \}$$
 
 Codd's theorem (1972) proves that relational algebra and relational calculus are **equivalent** in
 expressive power: every query expressible in one is expressible in the other. SQL is based on
@@ -746,7 +746,7 @@ names that reflect the domain (e.g., `customer_id` instead of `id`).
 A decomposition of relation $R$ into $R_1$ and $R_2$ is **lossless** if $R_1 \bowtie R_2 = R$ (no
 information is lost). A decomposition is lossless if and only if:
 
-$$R_1 \cap R_2 \rightarrow R_1 \text{ or } R_1 \cap R_2 \rightarrow R_2$$
+$$R_1 \cap R_2 \rightarrow R_1 \mathrm{ or } R_1 \cap R_2 \rightarrow R_2$$
 
 That is, the common attributes form a superkey for at least one of the decomposed relations.
 

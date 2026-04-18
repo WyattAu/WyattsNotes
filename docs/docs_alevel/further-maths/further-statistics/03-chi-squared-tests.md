@@ -48,7 +48,7 @@ follows a **chi-squared distribution** with $k$ degrees of freedom, written $\ch
 - The distribution is defined only for $\chi^2 \geq 0$
 - It is positively skewed, becoming more symmetric as $k$ increases
 - $E(\chi^2_k) = k$
-- $\text{Var}(\chi^2_k) = 2k$
+- $\mathrm{Var}(\chi^2_k) = 2k$
 - As $k \to \infty$, the distribution approaches a normal distribution $N(k, 2k)$
 - The distribution is additive: if $X \sim \chi^2_a$ and $Y \sim \chi^2_b$ are independent, then
   $X + Y \sim \chi^2_{a+b}$
@@ -98,7 +98,7 @@ For the chi-squared approximation to be valid:
 For a $2 \times 2$ contingency table with small expected frequencies, Yates' correction adjusts the
 test statistic:
 
-$$\chi^2_{\text{Yates}} = \sum\frac{(|O_i - E_i| - 0.5)^2}{E_i}$$
+$$\chi^2_{\mathrm{Yates}} = \sum\frac{(|O_i - E_i| - 0.5)^2}{E_i}$$
 
 This correction makes the test more conservative (less likely to reject $H_0$).
 
@@ -121,7 +121,7 @@ Test at the 5% level whether the data follows a Poisson distribution.
 
 $$\bar{r} = \frac{0(38)+1(32)+2(18)+3(8)+4(3)+5(1)}{100} = \frac{109}{100} = 1.09$$
 
-**Step 2:** Calculate expected frequencies using $\text{Po}(1.09)$:
+**Step 2:** Calculate expected frequencies using $\mathrm{Po}(1.09)$:
 
 $P(X=0) = e^{-1.09} \approx 0.3365 \implies E_0 = 33.65$
 
@@ -174,7 +174,7 @@ two categorical variables.
 
 For a contingency table with entries $O_{ij}$ (row $i$, column $j$), the expected frequency is:
 
-$$\boxed{E_{ij} = \frac{(\text{row } i \text{ total}) \times (\text{column } j \text{ total})}{\text{grand total}}}$$
+$$\boxed{E_{ij} = \frac{(\mathrm{row } i \mathrm{ total}) \times (\mathrm{column } j \mathrm{ total})}{\mathrm{grand total}}}$$
 
 ### 3.4 Test statistic
 
@@ -477,7 +477,7 @@ are small. The uncorrected chi-squared test tends to reject $H_0$ too often (it 
 
 Yates' correction adjusts each term by subtracting 0.5 from the absolute difference before squaring:
 
-$$\chi^2_{\text{Yates}} = \sum_{i=1}^{4}\frac{(|O_i - E_i| - 0.5)^2}{E_i}$$
+$$\chi^2_{\mathrm{Yates}} = \sum_{i=1}^{4}\frac{(|O_i - E_i| - 0.5)^2}{E_i}$$
 
 This reduces the test statistic, making it harder to reject $H_0$.
 
@@ -593,7 +593,7 @@ Still highly significant ($30.42 > 6.635$).
 
 ### 7.1 Goodness of fit
 
-$$\nu = (\text{number of categories after merging}) - 1 - (\text{parameters estimated})$$
+$$\nu = (\mathrm{number of categories after merging}) - 1 - (\mathrm{parameters estimated})$$
 
 | Distribution fitted                | Parameters estimated | $\nu$ formula |
 | ---------------------------------- | -------------------- | ------------- |
@@ -644,7 +644,7 @@ probability of the data given the hypothesis, not the probability of the hypothe
 
 | Statement                                                        | Correct?        | Why                                                                                         |
 | ---------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------- |
-| "There is a 5% chance the null hypothesis is true"               | No              | This confuses $P(\text{data}\mid H_0)$ with $P(H_0\mid\text{data})$                         |
+| "There is a 5% chance the null hypothesis is true"               | No              | This confuses $P(\mathrm{data}\mid H_0)$ with $P(H_0\mid\mathrm{data})$                         |
 | "The probability of getting this result by chance is 5%"         | Approximately   | More precisely: the probability of getting a result _at least this extreme_ by chance is 5% |
 | "We have proved the alternative hypothesis"                      | No              | We have only found evidence against $H_0$; the alternative could still be wrong             |
 | "A significant result means the effect is practically important" | Not necessarily | With a very large sample, even tiny deviations become significant                           |
@@ -672,7 +672,7 @@ follows a half-normal distribution.
 For a $2 \times 2$ table, the chi-squared test is equivalent to a two-proportion $z$-test. If $p_1$
 and $p_2$ are the sample proportions:
 
-$$\chi^2 = z^2 \quad \text{where} \quad z = \frac{p_1 - p_2}{\sqrt{\hat{p}(1-\hat{p})(1/n_1 + 1/n_2)}}$$
+$$\chi^2 = z^2 \quad \mathrm{where} \quad z = \frac{p_1 - p_2}{\sqrt{\hat{p}(1-\hat{p})(1/n_1 + 1/n_2)}}$$
 
 and $\hat{p}$ is the pooled proportion.
 
@@ -680,7 +680,7 @@ and $\hat{p}$ is the pooled proportion.
 
 As $\nu$ increases, $\chi^2_\nu$ approaches $N(\nu, 2\nu)$. This means for large tables:
 
-$$z = \frac{\chi^2 - \nu}{\sqrt{2\nu}} \sim N(0,1) \quad \text{approximately}$$
+$$z = \frac{\chi^2 - \nu}{\sqrt{2\nu}} \sim N(0,1) \quad \mathrm{approximately}$$
 
 This approximation is useful when chi-squared tables do not list the required $\nu$ value.
 
@@ -786,7 +786,7 @@ $2.329 \lt{} 7.815$: **do not reject** $H_0$.
 
 $H_0$: Independent. $H_1$: Not independent.
 
-Expected: $E_{ij} = (\text{row } i \text{ total})(\text{column } j \text{ total})/400$.
+Expected: $E_{ij} = (\mathrm{row } i \mathrm{ total})(\mathrm{column } j \mathrm{ total})/400$.
 
 $E_{44} = 50 \times 85/400 = 10.625$. All $E \geq 5$. $\checkmark$
 

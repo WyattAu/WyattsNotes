@@ -87,22 +87,22 @@ is not present.
 **Proof.** We prove by invariant.
 
 **Invariant:** At the start of each loop iteration, if $x$ exists in $A$, then
-$x \in A[\text{low}..\text{high}]$.
+$x \in A[\mathrm{low}..\mathrm{high}]$.
 
 **Base case.** Initially, `low = 0` and `high = n-1`, so
-$A[\text{low}..\text{high}] = A[0..n-1] = A$. If $x \in A$, the invariant holds.
+$A[\mathrm{low}..\mathrm{high}] = A[0..n-1] = A$. If $x \in A$, the invariant holds.
 
 **Maintenance.** Three cases:
 
-1. $A[\text{mid}] = x$: Return mid. Correct. ✓
-2. $A[\text{mid}] \lt{} x$: Since $A$ is sorted, $A[0..\text{mid}] \leq A[\text{mid}] \lt{} x$, so
-   $x \notin A[0..\text{mid}]$. Setting `low = mid + 1` restricts the search to
-   $A[\text{mid}+1..\text{high}]$. If $x$ was in the old range, it is in the new range.
-3. $A[\text{mid}] \gt{} x$: Since $A$ is sorted, $A[\text{mid}..n-1] \geq A[\text{mid}] \gt{} x$, so
-   $x \notin A[\text{mid}..n-1]$. Setting `high = mid - 1` restricts the search to
-   $A[\text{low}..\text{mid}-1]$. If $x$ was in the old range, it is in the new range.
+1. $A[\mathrm{mid}] = x$: Return mid. Correct. ✓
+2. $A[\mathrm{mid}] \lt{} x$: Since $A$ is sorted, $A[0..\mathrm{mid}] \leq A[\mathrm{mid}] \lt{} x$, so
+   $x \notin A[0..\mathrm{mid}]$. Setting `low = mid + 1` restricts the search to
+   $A[\mathrm{mid}+1..\mathrm{high}]$. If $x$ was in the old range, it is in the new range.
+3. $A[\mathrm{mid}] \gt{} x$: Since $A$ is sorted, $A[\mathrm{mid}..n-1] \geq A[\mathrm{mid}] \gt{} x$, so
+   $x \notin A[\mathrm{mid}..n-1]$. Setting `high = mid - 1` restricts the search to
+   $A[\mathrm{low}..\mathrm{mid}-1]$. If $x$ was in the old range, it is in the new range.
 
-**Termination.** The loop terminates when `low > high`, meaning $A[\text{low}..\text{high}]$ is
+**Termination.** The loop terminates when `low > high`, meaning $A[\mathrm{low}..\mathrm{high}]$ is
 empty. By the invariant, $x \notin A$. Return $-1$. ✓
 
 $\square$

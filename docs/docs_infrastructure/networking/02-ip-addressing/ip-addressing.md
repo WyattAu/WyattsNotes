@@ -134,8 +134,8 @@ A /24 prefix means the first 24 bits are network bits. In binary:
 
 ### Number of Hosts Formula
 
-The number of addresses in a CIDR block is $2^{32 - \text{prefix length}}$. The number of usable
-host addresses is $2^{32 - \text{prefix length}} - 2$ (subtract the network address and broadcast
+The number of addresses in a CIDR block is $2^{32 - \mathrm{prefix length}}$. The number of usable
+host addresses is $2^{32 - \mathrm{prefix length}} - 2$ (subtract the network address and broadcast
 address). The exception is /31 (point-to-point links per RFC 3021) where both addresses are usable,
 and /32 which represents a single host.
 

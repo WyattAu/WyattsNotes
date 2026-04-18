@@ -512,8 +512,8 @@ term and the common difference.
 
 <details>
 <summary>Solution</summary>
-$$a + 4d = 17 \quad \text{--- (1)}$$
-$$a + 11d = 38 \quad \text{--- (2)}$$
+$$a + 4d = 17 \quad \mathrm{--- (1)}$$
+$$a + 11d = 38 \quad \mathrm{--- (2)}$$
 
 (2) - (1): $7d = 21 \implies d = 3$.
 

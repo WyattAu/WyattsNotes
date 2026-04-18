@@ -282,9 +282,9 @@ The standard laws of indices extend naturally:
 
 $$
 \begin{aligned}
-z_1 z_2 &= r_1 r_2 \, e^{i(\theta_1 + \theta_2)} & &\text{(arguments add)} \\
-\frac{z_1}{z_2} &= \frac{r_1}{r_2} \, e^{i(\theta_1 - \theta_2)} & &\text{(arguments subtract)} \\
-z^n &= r^n e^{in\theta} & &\text{(argument multiplies)}
+z_1 z_2 &= r_1 r_2 \, e^{i(\theta_1 + \theta_2)} & &\mathrm{(arguments add)} \\
+\frac{z_1}{z_2} &= \frac{r_1}{r_2} \, e^{i(\theta_1 - \theta_2)} & &\mathrm{(arguments subtract)} \\
+z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 \end{aligned}
 $$
 
@@ -443,9 +443,9 @@ $$\boxed{z_k = e^{2k\pi i/n} = \cos\!\left(\frac{2k\pi}{n}\right) + i\sin\!\left
 
 $$\boxed{\sum_{k=0}^{n-1} z_k = 0}$$
 
-$$\boxed{|z - a| = r \iff \text{circle centre } a \text{ radius } r}$$
+$$\boxed{|z - a| = r \iff \mathrm{circle centre } a \mathrm{ radius } r}$$
 
-$$\boxed{\arg(z - a) = \alpha \iff \text{half-line from } a \text{ at angle } \alpha}$$
+$$\boxed{\arg(z - a) = \alpha \iff \mathrm{half-line from } a \mathrm{ at angle } \alpha}$$
 
 ---
 
@@ -553,7 +553,7 @@ $\displaystyle\sum_{k=0}^{4}\omega^k = \frac{1 - \omega^5}{1 - \omega} = \frac{1
 
 Expanding using $\omega^k = \cos\frac{2k\pi}{5} + i\sin\frac{2k\pi}{5}$:
 
-$$\sum_{k=0}^{4}\omega^k = \underbrace{\sum_{k=0}^{4}\cos\frac{2k\pi}{5}}_{\text{real}} + i\underbrace{\sum_{k=0}^{4}\sin\frac{2k\pi}{5}}_{\text{imaginary}} = 0$$
+$$\sum_{k=0}^{4}\omega^k = \underbrace{\sum_{k=0}^{4}\cos\frac{2k\pi}{5}}_{\mathrm{real}} + i\underbrace{\sum_{k=0}^{4}\sin\frac{2k\pi}{5}}_{\mathrm{imaginary}} = 0$$
 
 The imaginary part is zero by symmetry ($\sin\theta = -\sin(2\pi - \theta)$). The real part gives:
 

@@ -183,7 +183,7 @@ between threat modeling and security investment.
 Risk is commonly expressed as:
 
 $$
-\text{Risk} = \text{Likelihood} \times \text{Impact}
+\mathrm{Risk} = \mathrm{Likelihood} \times \mathrm{Impact}
 $$
 
 Where likelihood and impact are each rated on a defined scale. A common 5-point scale:

@@ -60,20 +60,20 @@ the cost of parsing $H$ and $S(H)$ the cost of serializing its semantic interfac
 
 **`#include` model:** Each TU independently preprocesses and parses $H$. Total cost:
 
-$$C_{\text{include}} = n \cdot (P(H) + S(H))$$
+$$C_{\mathrm{include}} = n \cdot (P(H) + S(H))$$
 
 **Header unit model:** $H$ is parsed once, producing a BMI. Each TU deserializes the BMI. Let $D(H)$
 denote deserialization cost, where $D(H) \lt P(H)$ because deserialization reads a pre-structured
 AST rather than re-parsing raw text. Total cost:
 
-$$C_{\text{header\_unit}} = P(H) + S(H) + n \cdot D(H)$$
+$$C_{\mathrm{header\_unit}} = P(H) + S(H) + n \cdot D(H)$$
 
 The savings are:
 
-$$C_{\text{include}} - C_{\text{header\_unit}} = (n - 1)(P(H) + S(H) - D(H))$$
+$$C_{\mathrm{include}} - C_{\mathrm{header\_unit}} = (n - 1)(P(H) + S(H) - D(H))$$
 
 Since $P(H) \gt D(H)$ for any non-trivial header, the savings grow linearly with the number of TUs.
-For a header like `&lt;vector&gt;` with $P(H) \approx 50\text{ms}$ and $D(H) \approx 5\text{ms}$
+For a header like `&lt;vector&gt;` with $P(H) \approx 50\mathrm{ms}$ and $D(H) \approx 5\mathrm{ms}$
 across 100 TUs, the savings are approximately $4.5$ seconds per incremental build.
 
 ## 2. The Global Module Fragment (GMF)

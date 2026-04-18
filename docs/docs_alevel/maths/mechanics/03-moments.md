@@ -45,10 +45,10 @@ friend balance you.
 **Crane counterweight.** Tower cranes have a heavy concrete counterweight on the short arm behind
 the tower. When a load is lifted on the long arm, the counterweight generates a restoring
 (anticlockwise) moment about the base to prevent the crane from tipping. The counterweight must
-satisfy $W_{\text{load}} \times d_{\text{long}} \lt W_{\text{counter}} \times d_{\text{short}}$.
+satisfy $W_{\mathrm{load}} \times d_{\mathrm{long}} \lt W_{\mathrm{counter}} \times d_{\mathrm{short}}$.
 
-**Spanner and bolt.** A spanner of length $0.2\,\text{m}$ applies a force of $50\,\text{N}$
-perpendicular to its length. The moment on the bolt is $50 \times 0.2 = 10\,\text{Nm}$. A longer
+**Spanner and bolt.** A spanner of length $0.2\,\mathrm{m}$ applies a force of $50\,\mathrm{N}$
+perpendicular to its length. The moment on the bolt is $50 \times 0.2 = 10\,\mathrm{Nm}$. A longer
 spanner always generates a larger moment for the same force, which is why mechanics use extension
 bars on stubborn bolts.
 
@@ -81,7 +81,7 @@ where $\mathbf{r}_i$ is the position vector of the point of application of $\mat
 to $O$.
 
 This means the clockwise and anticlockwise moments balance:
-$\sum M_{\text{clockwise}} = \sum M_{\text{anticlockwise}}$. $\blacksquare$
+$\sum M_{\mathrm{clockwise}} = \sum M_{\mathrm{anticlockwise}}$. $\blacksquare$
 
 ### 2.3 Real-world application: bridge supports
 
@@ -90,14 +90,14 @@ of weight $P$ is on the bridge at distance $a$ from the left pier, the reaction 
 are found by taking moments about each pier in turn.
 
 Taking moments about the left pier:
-$R_{\text{right}} \times L = W \times \dfrac{L}{2} + P \times a$, so
-$R_{\text{right}} = \dfrac{W}{2} + \dfrac{Pa}{L}$.
+$R_{\mathrm{right}} \times L = W \times \dfrac{L}{2} + P \times a$, so
+$R_{\mathrm{right}} = \dfrac{W}{2} + \dfrac{Pa}{L}$.
 
 By symmetry (vertical equilibrium):
-$R_{\text{left}} = W + P - R_{\text{right}} = \dfrac{W}{2} + \dfrac{P(L-a)}{L}$.
+$R_{\mathrm{left}} = W + P - R_{\mathrm{right}} = \dfrac{W}{2} + \dfrac{P(L-a)}{L}$.
 
-Notice that as the vehicle moves right ($a$ increases), $R_{\text{right}}$ increases and
-$R_{\text{left}}$ decreases — the bridge load redistributes continuously.
+Notice that as the vehicle moves right ($a$ increases), $R_{\mathrm{right}}$ increases and
+$R_{\mathrm{left}}$ decreases — the bridge load redistributes continuously.
 
 :::warning
 The principle of moments applies about **any** point — not just the pivot. Choosing a
@@ -133,7 +133,7 @@ and no acceleration of the centre of mass. However, the net moment (torque) is n
 
 For a couple with forces $F$ separated by perpendicular distance $d$:
 
-$$\text{Torque} = F \times d$$
+$$\mathrm{Torque} = F \times d$$
 
 The moment of a couple is the same about **any** point in the plane. This is a key property: unlike
 the moment of a single force, the torque of a couple does not depend on the choice of reference
@@ -328,16 +328,16 @@ where $M = \sum m_i$. Similarly for $\bar{y}$. $\blacksquare$
 
 ### 4.3.1 Worked example: composite lamina
 
-A uniform lamina consists of a rectangle $ABCD$ where $AB = 6\,\text{cm}$ and $BC = 4\,\text{cm}$,
+A uniform lamina consists of a rectangle $ABCD$ where $AB = 6\,\mathrm{cm}$ and $BC = 4\,\mathrm{cm}$,
 with an equilateral triangle $BCE$ attached to side $BC$ (each side of the triangle is
-$4\,\text{cm}$). Find the centre of mass of the composite lamina.
+$4\,\mathrm{cm}$). Find the centre of mass of the composite lamina.
 
 **Step 1: Treat as two separate bodies.**
 
-Rectangle: area $= 6 \times 4 = 24\,\text{cm}^2$, centre at $(3, 2)$ from $A$.
+Rectangle: area $= 6 \times 4 = 24\,\mathrm{cm}^2$, centre at $(3, 2)$ from $A$.
 
-Equilateral triangle $BCE$ with side $4\,\text{cm}$: height $= 4\sin 60° = 2\sqrt{3}\,\text{cm}$.
-Area $= \frac{1}{2} \times 4 \times 2\sqrt{3} = 4\sqrt{3}\,\text{cm}^2$.
+Equilateral triangle $BCE$ with side $4\,\mathrm{cm}$: height $= 4\sin 60° = 2\sqrt{3}\,\mathrm{cm}$.
+Area $= \frac{1}{2} \times 4 \times 2\sqrt{3} = 4\sqrt{3}\,\mathrm{cm}^2$.
 
 The centre of mass of the triangle is at $\frac{1}{3}$ of its height from $BC$. Taking $B$ as origin
 with $BA$ along the positive $x$-axis and $BC$ along the positive $y$-axis:
@@ -367,11 +367,11 @@ $$\bar{x} = \frac{24 \times 3 + 4\sqrt{3} \times 6}{24 + 4\sqrt{3}} = \frac{72 +
 Dividing numerator and denominator by 4: $\bar{x} = \dfrac{18 + 6\sqrt{3}}{6 + \sqrt{3}}$.
 
 Rationalising:
-$\bar{x} = \dfrac{(18 + 6\sqrt{3})(6 - \sqrt{3})}{36 - 3} = \dfrac{108 - 18\sqrt{3} + 36\sqrt{3} - 18}{33} = \dfrac{90 + 18\sqrt{3}}{33} \approx 3.69\,\text{cm}$.
+$\bar{x} = \dfrac{(18 + 6\sqrt{3})(6 - \sqrt{3})}{36 - 3} = \dfrac{108 - 18\sqrt{3} + 36\sqrt{3} - 18}{33} = \dfrac{90 + 18\sqrt{3}}{33} \approx 3.69\,\mathrm{cm}$.
 
 $$\bar{y} = \frac{24 \times 2 + 4\sqrt{3} \times \frac{8+2\sqrt{3}}{3}}{24 + 4\sqrt{3}} = \frac{48 + \frac{32\sqrt{3}+24}{3}}{24 + 4\sqrt{3}} = \frac{\frac{168+32\sqrt{3}}{3}}{24+4\sqrt{3}}$$
 
-$\bar{y} = \dfrac{168 + 32\sqrt{3}}{72 + 12\sqrt{3}} \approx 2.30\,\text{cm}$.
+$\bar{y} = \dfrac{168 + 32\sqrt{3}}{72 + 12\sqrt{3}} \approx 2.30\,\mathrm{cm}$.
 
 ### 4.3.2 Subtraction method
 
@@ -411,20 +411,20 @@ where $h$ is the height at which the force is applied and $d$ is half the base w
 
 ### 5.3 Worked example: toppling vs. sliding
 
-A uniform block of weight $500\,\text{N}$, width $0.6\,\text{m}$ and height $1.2\,\text{m}$ sits on
+A uniform block of weight $500\,\mathrm{N}$, width $0.6\,\mathrm{m}$ and height $1.2\,\mathrm{m}$ sits on
 a rough surface with $\mu = 0.4$. A horizontal force $P$ is applied at the top of the block.
 Determine whether the block slides or topples first, and find the critical value of $P$.
 
-**Check sliding:** $P = \mu R = 0.4 \times 500 = 200\,\text{N}$.
+**Check sliding:** $P = \mu R = 0.4 \times 500 = 200\,\mathrm{N}$.
 
 **Check toppling:** The block topples about its bottom-right corner. Taking moments about that
 corner:
 
-$P \times 1.2 = 500 \times 0.3$ (weight acts at the centre, $0.3\,\text{m}$ from the corner).
+$P \times 1.2 = 500 \times 0.3$ (weight acts at the centre, $0.3\,\mathrm{m}$ from the corner).
 
-$P = \dfrac{150}{1.2} = 125\,\text{N}$.
+$P = \dfrac{150}{1.2} = 125\,\mathrm{N}$.
 
-Since $125 \lt 200$, the block **topples first** at $P = 125\,\text{N}$.
+Since $125 \lt 200$, the block **topples first** at $P = 125\,\mathrm{N}$.
 
 :::info
 A useful rule of thumb: if $\dfrac{h}{d} > \dfrac{1}{\mu}$, the body topples before it
@@ -438,14 +438,14 @@ first, which matches our calculation.
 
 <details>
 <summary>Problem 1</summary>
-A uniform beam of length $4\,\text{m}$ and weight $200\,\text{N}$ is supported at its ends $A$ and $B$. A load of $300\,\text{N}$ is placed $1\,\text{m}$ from $A$. Find the reactions at $A$ and $B$.
+A uniform beam of length $4\,\mathrm{m}$ and weight $200\,\mathrm{N}$ is supported at its ends $A$ and $B$. A load of $300\,\mathrm{N}$ is placed $1\,\mathrm{m}$ from $A$. Find the reactions at $A$ and $B$.
 </details>
 
 <details>
 <summary>Solution 1</summary>
-Taking moments about $A$: $R_B \times 4 - 200 \times 2 - 300 \times 1 = 0 \implies 4R_B = 700 \implies R_B = 175\,\text{N}$.
+Taking moments about $A$: $R_B \times 4 - 200 \times 2 - 300 \times 1 = 0 \implies 4R_B = 700 \implies R_B = 175\,\mathrm{N}$.
 
-Vertical equilibrium: $R_A + 175 = 200 + 300 = 500 \implies R_A = 325\,\text{N}$.
+Vertical equilibrium: $R_A + 175 = 200 + 300 = 500 \implies R_A = 325\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Principle of Moments](#2-principle-of-moments) — Section 2.
 
@@ -453,16 +453,16 @@ Vertical equilibrium: $R_A + 175 = 200 + 300 = 500 \implies R_A = 325\,\text{N}$
 
 <details>
 <summary>Problem 2</summary>
-A uniform rod $AB$ of length $3\,\text{m}$ and mass $12\,\text{kg}$ is hinged at $A$ and held horizontal by a string attached at $B$ making an angle of $30^\circ$ with the horizontal. Find the tension in the string.
+A uniform rod $AB$ of length $3\,\mathrm{m}$ and mass $12\,\mathrm{kg}$ is hinged at $A$ and held horizontal by a string attached at $B$ making an angle of $30^\circ$ with the horizontal. Find the tension in the string.
 </details>
 
 <details>
 <summary>Solution 2</summary>
-Weight acts at midpoint: $12g\,\text{N}$ at $1.5\,\text{m}$ from $A$.
+Weight acts at midpoint: $12g\,\mathrm{N}$ at $1.5\,\mathrm{m}$ from $A$.
 
 Moments about $A$: $T\cos 30° \times 3 = 12g \times 1.5$.
 
-$T = \dfrac{12(9.8)(1.5)}{3\cos 30°} = \dfrac{176.4}{2.598} \approx 67.9\,\text{N}$.
+$T = \dfrac{12(9.8)(1.5)}{3\cos 30°} = \dfrac{176.4}{2.598} \approx 67.9\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Definition of a Moment](#1-definition-of-a-moment) — Section 1.
 
@@ -470,7 +470,7 @@ $T = \dfrac{12(9.8)(1.5)}{3\cos 30°} = \dfrac{176.4}{2.598} \approx 67.9\,\text
 
 <details>
 <summary>Problem 3</summary>
-Find the centre of mass of three particles of masses $2\,\text{kg}$, $3\,\text{kg}$, and $5\,\text{kg}$ placed at $(0,0)$, $(4,0)$, and $(2,3)$ respectively.
+Find the centre of mass of three particles of masses $2\,\mathrm{kg}$, $3\,\mathrm{kg}$, and $5\,\mathrm{kg}$ placed at $(0,0)$, $(4,0)$, and $(2,3)$ respectively.
 </details>
 
 <details>
@@ -511,15 +511,15 @@ Range: $\dfrac{2l}{3} \leq x \leq \dfrac{4l}{3}$.
 
 <details>
 <summary>Problem 5</summary>
-A non-uniform rod $AB$ of length $2\,\text{m}$ and weight $40\,\text{N}$ is supported at $A$ and at a point $C$, $1.4\,\text{m}$ from $A$. When supported at $A$ and $B$, the reaction at $A$ is $18\,\text{N}$. Find the position of the centre of mass.
+A non-uniform rod $AB$ of length $2\,\mathrm{m}$ and weight $40\,\mathrm{N}$ is supported at $A$ and at a point $C$, $1.4\,\mathrm{m}$ from $A$. When supported at $A$ and $B$, the reaction at $A$ is $18\,\mathrm{N}$. Find the position of the centre of mass.
 </details>
 
 <details>
 <summary>Solution 5</summary>
-When supported at $A$ and $B$: moments about $B$: $R_A \times 2 = W \times d_{\text{from } B}$.
-$18 \times 2 = 40 \times d_{\text{from } B} \implies d_{\text{from } B} = 36/40 = 0.9\,\text{m}$.
+When supported at $A$ and $B$: moments about $B$: $R_A \times 2 = W \times d_{\mathrm{from } B}$.
+$18 \times 2 = 40 \times d_{\mathrm{from } B} \implies d_{\mathrm{from } B} = 36/40 = 0.9\,\mathrm{m}$.
 
-Centre of mass is $0.9\,\text{m}$ from $B$, i.e., $1.1\,\text{m}$ from $A$.
+Centre of mass is $0.9\,\mathrm{m}$ from $B$, i.e., $1.1\,\mathrm{m}$ from $A$.
 
 **If you get this wrong, revise:** [Centre of Mass](#4-centre-of-mass) — Section 4.
 
@@ -527,7 +527,7 @@ Centre of mass is $0.9\,\text{m}$ from $B$, i.e., $1.1\,\text{m}$ from $A$.
 
 <details>
 <summary>Problem 6</summary>
-A ladder of length $5\,\text{m}$ and weight $200\,\text{N}$ rests against a smooth vertical wall at an angle of $65^\circ$ to the horizontal. The ground is rough. Find the minimum coefficient of friction for equilibrium.
+A ladder of length $5\,\mathrm{m}$ and weight $200\,\mathrm{N}$ rests against a smooth vertical wall at an angle of $65^\circ$ to the horizontal. The ground is rough. Find the minimum coefficient of friction for equilibrium.
 </details>
 
 <details>
@@ -538,9 +538,9 @@ Horizontal: $R_w = F$. Vertical: $R_g = 200$.
 
 Moments about base of ladder: $R_w \times 5\sin 65° = 200 \times 2.5\cos 65^\circ$.
 
-$R_w = \dfrac{500\cos 65°}{5\sin 65°} = \dfrac{100\cos 65°}{\sin 65°} = 100\cot 65° \approx 46.6\,\text{N}$.
+$R_w = \dfrac{500\cos 65°}{5\sin 65°} = \dfrac{100\cos 65°}{\sin 65°} = 100\cot 65° \approx 46.6\,\mathrm{N}$.
 
-$F = R_w = 46.6\,\text{N}$. $\mu_{\min} = F/R_g = 46.6/200 = 0.233$.
+$F = R_w = 46.6\,\mathrm{N}$. $\mu_{\min} = F/R_g = 46.6/200 = 0.233$.
 
 **If you get this wrong, revise:** [Friction and Moments](#2-principle-of-moments) — Section 2.
 
@@ -565,20 +565,20 @@ Centre of mass at $\left(2, \dfrac{4}{3}\right)$.
 
 <details>
 <summary>Problem 8</summary>
-A uniform rod $AB$ of length $6\,\text{m}$ and weight $100\,\text{N}$ is hinged at $A$ and supported by a wire at $B$ making angle $60^\circ$ with the rod. Find the tension and the reaction at the hinge.
+A uniform rod $AB$ of length $6\,\mathrm{m}$ and weight $100\,\mathrm{N}$ is hinged at $A$ and supported by a wire at $B$ making angle $60^\circ$ with the rod. Find the tension and the reaction at the hinge.
 </details>
 
 <details>
 <summary>Solution 8</summary>
 Moments about $A$: $T \times 6\sin 60° = 100 \times 3$ (weight acts at midpoint).
 
-$T = \dfrac{300}{6 \times 0.866} = \dfrac{300}{5.196} \approx 57.74\,\text{N}$.
+$T = \dfrac{300}{6 \times 0.866} = \dfrac{300}{5.196} \approx 57.74\,\mathrm{N}$.
 
-Resolving horizontally: $R_x = T\sin 60° = 57.74 \times 0.866 = 50\,\text{N}$.
+Resolving horizontally: $R_x = T\sin 60° = 57.74 \times 0.866 = 50\,\mathrm{N}$.
 
-Resolving vertically: $R_y = 100 - T\cos 60° = 100 - 28.87 = 71.13\,\text{N}$.
+Resolving vertically: $R_y = 100 - T\cos 60° = 100 - 28.87 = 71.13\,\mathrm{N}$.
 
-$R = \sqrt{50^2 + 71.13^2} = \sqrt{2500 + 5059.5} \approx 86.9\,\text{N}$ at
+$R = \sqrt{50^2 + 71.13^2} = \sqrt{2500 + 5059.5} \approx 86.9\,\mathrm{N}$ at
 $\arctan(71.13/50) \approx 54.9^\circ$ below horizontal.
 
 **If you get this wrong, revise:** [Equilibrium Conditions](#3-equilibrium-conditions) — Section 3.
@@ -587,7 +587,7 @@ $\arctan(71.13/50) \approx 54.9^\circ$ below horizontal.
 
 <details>
 <summary>Problem 9</summary>
-A uniform lamina is made from a rectangle $ABCD$ with $AB = 8\,\text{cm}$, $AD = 6\,\text{cm}$, and a square of side $3\,\text{cm}$ removed from corner $C$. Find the centre of mass of the remaining lamina.
+A uniform lamina is made from a rectangle $ABCD$ with $AB = 8\,\mathrm{cm}$, $AD = 6\,\mathrm{cm}$, and a square of side $3\,\mathrm{cm}$ removed from corner $C$. Find the centre of mass of the remaining lamina.
 </details>
 
 <details>
@@ -601,9 +601,9 @@ $= 9$, centre at $(6.5, 4.5)$.
 
 Using the subtraction method:
 
-$\bar{x} = \dfrac{48 \times 4 - 9 \times 6.5}{48 - 9} = \dfrac{192 - 58.5}{39} = \dfrac{133.5}{39} = 3.42\,\text{cm}$.
+$\bar{x} = \dfrac{48 \times 4 - 9 \times 6.5}{48 - 9} = \dfrac{192 - 58.5}{39} = \dfrac{133.5}{39} = 3.42\,\mathrm{cm}$.
 
-$\bar{y} = \dfrac{48 \times 3 - 9 \times 4.5}{39} = \dfrac{144 - 40.5}{39} = \dfrac{103.5}{39} = 2.65\,\text{cm}$.
+$\bar{y} = \dfrac{48 \times 3 - 9 \times 4.5}{39} = \dfrac{144 - 40.5}{39} = \dfrac{103.5}{39} = 2.65\,\mathrm{cm}$.
 
 Centre of mass at approximately $(3.42, 2.65)$.
 
@@ -613,17 +613,17 @@ Centre of mass at approximately $(3.42, 2.65)$.
 
 <details>
 <summary>Problem 10</summary>
-A uniform ladder of length $6\,\text{m}$ and weight $150\,\text{N}$ rests against a smooth vertical wall, with the foot on rough horizontal ground. The ladder makes an angle of $55^\circ$ with the horizontal. A man of weight $800\,\text{N}$ stands on the ladder $2\,\text{m}$ from the top. Find the minimum coefficient of friction between the ladder and the ground for equilibrium.
+A uniform ladder of length $6\,\mathrm{m}$ and weight $150\,\mathrm{N}$ rests against a smooth vertical wall, with the foot on rough horizontal ground. The ladder makes an angle of $55^\circ$ with the horizontal. A man of weight $800\,\mathrm{N}$ stands on the ladder $2\,\mathrm{m}$ from the top. Find the minimum coefficient of friction between the ladder and the ground for equilibrium.
 </details>
 
 <details>
 <summary>Solution 10</summary>
 Let $R_w$ = reaction from wall (horizontal), $R_g$ = reaction from ground (vertical), $F$ = friction at ground.
 
-The man is $2\,\text{m}$ from the top, so $4\,\text{m}$ from the base. His horizontal distance from
+The man is $2\,\mathrm{m}$ from the top, so $4\,\mathrm{m}$ from the base. His horizontal distance from
 the base is $4\cos 55^\circ$.
 
-Horizontal: $R_w = F$. Vertical: $R_g = 150 + 800 = 950\,\text{N}$.
+Horizontal: $R_w = F$. Vertical: $R_g = 150 + 800 = 950\,\mathrm{N}$.
 
 Moments about the base of the ladder (perpendicular distances):
 
@@ -631,7 +631,7 @@ $R_w \times 6\sin 55° = 150 \times 3\cos 55° + 800 \times 4\cos 55^\circ$.
 
 $R_w = \dfrac{(450 + 3200)\cos 55°}{6\sin 55°} = \dfrac{3650\cos 55°}{6\sin 55°} = \dfrac{3650}{6}\cot 55^\circ$.
 
-$\cot 55° \approx 0.7002$, so $R_w = \dfrac{3650 \times 0.7002}{6} \approx 426.0\,\text{N}$.
+$\cot 55° \approx 0.7002$, so $R_w = \dfrac{3650 \times 0.7002}{6} \approx 426.0\,\mathrm{N}$.
 
 $\mu_{\min} = F/R_g = R_w/R_g = 426.0/950 = 0.448$.
 
@@ -641,16 +641,16 @@ $\mu_{\min} = F/R_g = R_w/R_g = 426.0/950 = 0.448$.
 
 <details>
 <summary>Problem 11</summary>
-A couple consists of two forces of $25\,\text{N}$ acting at the ends of a rod of length $0.8\,\text{m}$. The forces are perpendicular to the rod. Calculate the torque of the couple. A second couple is applied to the same rod in the opposite direction with forces of $40\,\text{N}$ at a distance of $0.5\,\text{m}$ apart. Is the rod in equilibrium? If not, what is the net torque?
+A couple consists of two forces of $25\,\mathrm{N}$ acting at the ends of a rod of length $0.8\,\mathrm{m}$. The forces are perpendicular to the rod. Calculate the torque of the couple. A second couple is applied to the same rod in the opposite direction with forces of $40\,\mathrm{N}$ at a distance of $0.5\,\mathrm{m}$ apart. Is the rod in equilibrium? If not, what is the net torque?
 </details>
 
 <details>
 <summary>Solution 11</summary>
-Torque of first couple: $\tau_1 = 25 \times 0.8 = 20\,\text{Nm}$.
+Torque of first couple: $\tau_1 = 25 \times 0.8 = 20\,\mathrm{Nm}$.
 
-Torque of second couple: $\tau_2 = 40 \times 0.5 = 20\,\text{Nm}$ (opposite direction).
+Torque of second couple: $\tau_2 = 40 \times 0.5 = 20\,\mathrm{Nm}$ (opposite direction).
 
-Net torque: $\tau_{\text{net}} = 20 - 20 = 0\,\text{Nm}$.
+Net torque: $\tau_{\mathrm{net}} = 20 - 20 = 0\,\mathrm{Nm}$.
 
 The rod **is** in rotational equilibrium since the two couples balance exactly.
 
@@ -660,7 +660,7 @@ The rod **is** in rotational equilibrium since the two couples balance exactly.
 
 <details>
 <summary>Problem 12</summary>
-A non-uniform beam $AB$ of length $5\,\text{m}$ and weight $300\,\text{N}$ is supported at $A$ on a pivot and at $B$ by a vertical string. A load of $400\,\text{N}$ is hung from a point $C$, $2\,\text{m}$ from $A$. When the beam is horizontal, the tension in the string at $B$ is $500\,\text{N}$. Find the distance of the centre of mass of the beam from $A$.
+A non-uniform beam $AB$ of length $5\,\mathrm{m}$ and weight $300\,\mathrm{N}$ is supported at $A$ on a pivot and at $B$ by a vertical string. A load of $400\,\mathrm{N}$ is hung from a point $C$, $2\,\mathrm{m}$ from $A$. When the beam is horizontal, the tension in the string at $B$ is $500\,\mathrm{N}$. Find the distance of the centre of mass of the beam from $A$.
 </details>
 
 <details>
@@ -675,18 +675,18 @@ $500 \times 5 = 300x + 800$.
 
 $2500 = 300x + 800$.
 
-$300x = 1700 \implies x = \dfrac{1700}{300} = \dfrac{17}{3} \approx 5.67\,\text{m}$.
+$300x = 1700 \implies x = \dfrac{1700}{300} = \dfrac{17}{3} \approx 5.67\,\mathrm{m}$.
 
-Since $x > 5\,\text{m}$ (the length of the beam), the centre of mass lies **beyond** end $B$. This
+Since $x > 5\,\mathrm{m}$ (the length of the beam), the centre of mass lies **beyond** end $B$. This
 makes sense — the tension at $B$ is large relative to the load, suggesting the beam is heavier near
 end $B$.
 
-Wait — let us check: if the beam is $5\,\text{m}$ long, the centre of mass must lie on the beam. Let
+Wait — let us check: if the beam is $5\,\mathrm{m}$ long, the centre of mass must lie on the beam. Let
 us re-examine.
 
-$2500 = 300x + 800 \implies x = \dfrac{1700}{300} = 5.67\,\text{m}$.
+$2500 = 300x + 800 \implies x = \dfrac{1700}{300} = 5.67\,\mathrm{m}$.
 
-This is impossible for a $5\,\text{m}$ beam. The given data is inconsistent — there must be an error
+This is impossible for a $5\,\mathrm{m}$ beam. The given data is inconsistent — there must be an error
 in the problem statement. In an exam, you would state that no valid position exists.
 
 **If you get this wrong, revise:** [Non-Uniform Beams](#33-non-uniform-beams) — Section 3.3.
@@ -695,12 +695,12 @@ in the problem statement. In an exam, you would state that no valid position exi
 
 <details>
 <summary>Problem 13</summary>
-A light framework consists of six rods joined to form a regular hexagon of side $2\,\text{m}$. Three additional diagonal rods connect opposite vertices. A vertical force of $100\,\text{N}$ acts downward at the top vertex. The framework is supported at the bottom two vertices. Using the method of joints, find the force in the vertical rod connecting the top vertex to the centre of the hexagon.
+A light framework consists of six rods joined to form a regular hexagon of side $2\,\mathrm{m}$. Three additional diagonal rods connect opposite vertices. A vertical force of $100\,\mathrm{N}$ acts downward at the top vertex. The framework is supported at the bottom two vertices. Using the method of joints, find the force in the vertical rod connecting the top vertex to the centre of the hexagon.
 </details>
 
 <details>
 <summary>Solution 13</summary>
-By symmetry, the two support reactions are equal. Vertical equilibrium: $2R = 100 \implies R = 50\,\text{N}$ at each bottom vertex.
+By symmetry, the two support reactions are equal. Vertical equilibrium: $2R = 100 \implies R = 50\,\mathrm{N}$ at each bottom vertex.
 
 Consider the joint at the top vertex. The vertical rod carries force $F_v$ and the two diagonal rods
 carry forces $F_d$ each.
@@ -713,9 +713,9 @@ Now consider the joint where the vertical rod meets the centre. By symmetry, the
 components from the diagonal rods at this joint cancel. Resolving vertically:
 $F_v = 2F_d\cos 60° = F_d$.
 
-Substituting: $F_v + F_v = 100 \implies F_v = 50\,\text{N}$ (tension).
+Substituting: $F_v + F_v = 100 \implies F_v = 50\,\mathrm{N}$ (tension).
 
-The vertical rod carries $50\,\text{N}$ in tension.
+The vertical rod carries $50\,\mathrm{N}$ in tension.
 
 **If you get this wrong, revise:** [Frameworks and Trusses](#34-frameworks-and-trusses) — Section
 3.4.
@@ -724,28 +724,28 @@ The vertical rod carries $50\,\text{N}$ in tension.
 
 <details>
 <summary>Problem 14</summary>
-A uniform rectangular block of weight $400\,\text{N}$ has a base $0.5\,\text{m}$ wide and height $1.0\,\text{m}$. It rests on a rough horizontal surface with $\mu = 0.3$. A horizontal force $P$ is applied at a height $h$ above the ground. Find the range of $h$ for which the block will slide before it topples.
+A uniform rectangular block of weight $400\,\mathrm{N}$ has a base $0.5\,\mathrm{m}$ wide and height $1.0\,\mathrm{m}$. It rests on a rough horizontal surface with $\mu = 0.3$. A horizontal force $P$ is applied at a height $h$ above the ground. Find the range of $h$ for which the block will slide before it topples.
 </details>
 
 <details>
 <summary>Solution 14</summary>
-**Sliding force:** $P_{\text{slide}} = \mu \times 400 = 0.3 \times 400 = 120\,\text{N}$.
+**Sliding force:** $P_{\mathrm{slide}} = \mu \times 400 = 0.3 \times 400 = 120\,\mathrm{N}$.
 
 **Toppling condition:** Taking moments about the bottom-right corner when the block is about to
 topple:
 
 $P \times h = 400 \times 0.25$ (half the base width).
 
-$P_{\text{topple}} = \dfrac{100}{h}$.
+$P_{\mathrm{topple}} = \dfrac{100}{h}$.
 
-For sliding to occur before toppling: $P_{\text{slide}} \lt P_{\text{topple}}$.
+For sliding to occur before toppling: $P_{\mathrm{slide}} \lt P_{\mathrm{topple}}$.
 
-$120 \lt \dfrac{100}{h} \implies h \lt \dfrac{100}{120} = \dfrac{5}{6} \approx 0.833\,\text{m}$.
+$120 \lt \dfrac{100}{h} \implies h \lt \dfrac{100}{120} = \dfrac{5}{6} \approx 0.833\,\mathrm{m}$.
 
-So the block will slide before it topples if $h \lt \dfrac{5}{6}\,\text{m}$ (i.e., the force is
-applied below $\dfrac{5}{6}\,\text{m}$ from the ground).
+So the block will slide before it topples if $h \lt \dfrac{5}{6}\,\mathrm{m}$ (i.e., the force is
+applied below $\dfrac{5}{6}\,\mathrm{m}$ from the ground).
 
-For $h > \dfrac{5}{6}\,\text{m}$, the block topples first. At $h = \dfrac{5}{6}\,\text{m}$, sliding
+For $h > \dfrac{5}{6}\,\mathrm{m}$, the block topples first. At $h = \dfrac{5}{6}\,\mathrm{m}$, sliding
 and toppling occur simultaneously.
 
 **If you get this wrong, revise:** [Tilting and Toppling](#5-tilting-and-toppling) — Section 5.
@@ -754,15 +754,15 @@ and toppling occur simultaneously.
 
 <details>
 <summary>Problem 15</summary>
-A uniform rod $AB$ of length $4\,\text{m}$ and weight $120\,\text{N}$ is hinged at $A$ to a vertical wall. The rod is held in a horizontal position by a light strut $BC$ connected to the wall at $C$, vertically below $A$, with $AC = 3\,\text{m}$. Find the thrust in the strut and the magnitude and direction of the reaction at the hinge $A$.
+A uniform rod $AB$ of length $4\,\mathrm{m}$ and weight $120\,\mathrm{N}$ is hinged at $A$ to a vertical wall. The rod is held in a horizontal position by a light strut $BC$ connected to the wall at $C$, vertically below $A$, with $AC = 3\,\mathrm{m}$. Find the thrust in the strut and the magnitude and direction of the reaction at the hinge $A$.
 </details>
 
 <details>
 <summary>Solution 15</summary>
 The strut $BC$ is a rod under compression (thrust). Let the thrust be $T$ along $BC$.
 
-First, find the geometry. $AC = 3\,\text{m}$, $AB = 4\,\text{m}$, so
-$BC = \sqrt{3^2 + 4^2} = 5\,\text{m}$.
+First, find the geometry. $AC = 3\,\mathrm{m}$, $AB = 4\,\mathrm{m}$, so
+$BC = \sqrt{3^2 + 4^2} = 5\,\mathrm{m}$.
 
 The angle between $BC$ and the horizontal is $\alpha$ where $\sin\alpha = 3/5$ and
 $\cos\alpha = 4/5$.
@@ -772,22 +772,22 @@ $T$ in $BC$ is needed.
 
 The thrust acts along $CB$. The perpendicular distance from $A(0,0)$ to the line through $B(4,0)$
 with direction $(-4,-3)$ is
-$\dfrac{|(-4)(0-0) - (-3)(0-4)|}{\sqrt{(-4)^2+(-3)^2}} = \dfrac{12}{5} = 2.4\,\text{m}$.
+$\dfrac{|(-4)(0-0) - (-3)(0-4)|}{\sqrt{(-4)^2+(-3)^2}} = \dfrac{12}{5} = 2.4\,\mathrm{m}$.
 
 Clockwise moment of thrust: $T \times 2.4$ (thrust pushes from $B$ toward $C$, creating a clockwise
 moment about $A$).
 
-Anticlockwise moment of weight: $120 \times 2 = 240\,\text{Nm}$.
+Anticlockwise moment of weight: $120 \times 2 = 240\,\mathrm{Nm}$.
 
-$T \times 2.4 = 240 \implies T = 100\,\text{N}$ (compression).
+$T \times 2.4 = 240 \implies T = 100\,\mathrm{N}$ (compression).
 
 Resolving forces at $A$:
 
-Horizontal: $R_x = T\cos\alpha = 100 \times \dfrac{4}{5} = 80\,\text{N}$.
+Horizontal: $R_x = T\cos\alpha = 100 \times \dfrac{4}{5} = 80\,\mathrm{N}$.
 
-Vertical: $R_y = 120 - T\sin\alpha = 120 - 100 \times \dfrac{3}{5} = 120 - 60 = 60\,\text{N}$.
+Vertical: $R_y = 120 - T\sin\alpha = 120 - 100 \times \dfrac{3}{5} = 120 - 60 = 60\,\mathrm{N}$.
 
-$R = \sqrt{80^2 + 60^2} = \sqrt{6400 + 3600} = \sqrt{10000} = 100\,\text{N}$.
+$R = \sqrt{80^2 + 60^2} = \sqrt{6400 + 3600} = \sqrt{10000} = 100\,\mathrm{N}$.
 
 Direction: $\theta = \arctan(60/80) = \arctan(0.75) \approx 36.9^\circ$ above the horizontal.
 
@@ -797,29 +797,29 @@ Direction: $\theta = \arctan(60/80) = \arctan(0.75) \approx 36.9^\circ$ above th
 
 <details>
 <summary>Problem 16</summary>
-A uniform solid is formed from a hemisphere of radius $6\,\text{cm}$ attached to a cylinder of the same radius and height $10\,\text{cm}$. Find the distance of the centre of mass from the flat face of the hemisphere.
+A uniform solid is formed from a hemisphere of radius $6\,\mathrm{cm}$ attached to a cylinder of the same radius and height $10\,\mathrm{cm}$. Find the distance of the centre of mass from the flat face of the hemisphere.
 </details>
 
 <details>
 <summary>Solution 16</summary>
 **Hemisphere:** The centre of mass of a uniform solid hemisphere is at $\dfrac{3r}{8}$ from the flat face.
 
-$\bar{x}_H = \dfrac{3 \times 6}{8} = \dfrac{18}{8} = 2.25\,\text{cm}$ from the flat face.
+$\bar{x}_H = \dfrac{3 \times 6}{8} = \dfrac{18}{8} = 2.25\,\mathrm{cm}$ from the flat face.
 
-Volume of hemisphere: $V_H = \dfrac{2}{3}\pi r^3 = \dfrac{2}{3}\pi(216) = 144\pi\,\text{cm}^3$.
+Volume of hemisphere: $V_H = \dfrac{2}{3}\pi r^3 = \dfrac{2}{3}\pi(216) = 144\pi\,\mathrm{cm}^3$.
 
-**Cylinder:** Centre of mass at midpoint: $\bar{x}_C = 5\,\text{cm}$ from its base (which is the
+**Cylinder:** Centre of mass at midpoint: $\bar{x}_C = 5\,\mathrm{cm}$ from its base (which is the
 flat face of the hemisphere).
 
-Volume of cylinder: $V_C = \pi r^2 h = \pi(36)(10) = 360\pi\,\text{cm}^3$.
+Volume of cylinder: $V_C = \pi r^2 h = \pi(36)(10) = 360\pi\,\mathrm{cm}^3$.
 
 **Composite body:** Taking moments about the flat face:
 
 $\bar{x} = \dfrac{V_H \times 2.25 + V_C \times 5}{V_H + V_C} = \dfrac{144\pi \times 2.25 + 360\pi \times 5}{144\pi + 360\pi}$
 
-$= \dfrac{324\pi + 1800\pi}{504\pi} = \dfrac{2124}{504} = \dfrac{59}{14} \approx 4.21\,\text{cm}$.
+$= \dfrac{324\pi + 1800\pi}{504\pi} = \dfrac{2124}{504} = \dfrac{59}{14} \approx 4.21\,\mathrm{cm}$.
 
-Centre of mass is approximately $4.21\,\text{cm}$ from the flat face.
+Centre of mass is approximately $4.21\,\mathrm{cm}$ from the flat face.
 
 **If you get this wrong, revise:** [Composite Bodies](#43-composite-bodies) — Section 4.3.
 

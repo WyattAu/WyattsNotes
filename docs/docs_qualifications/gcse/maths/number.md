@@ -113,25 +113,25 @@ that is a multiple of both.
 If the prime factorisations are $a = p_1^{\alpha_1} p_2^{\alpha_2} \cdots$ and
 $b = p_1^{\beta_1} p_2^{\beta_2} \cdots$, then:
 
-$$\text{HCF}(a, b) = p_1^{\min(\alpha_1, \beta_1)} p_2^{\min(\alpha_2, \beta_2)} \cdots$$
+$$\mathrm{HCF}(a, b) = p_1^{\min(\alpha_1, \beta_1)} p_2^{\min(\alpha_2, \beta_2)} \cdots$$
 
-$$\text{LCM}(a, b) = p_1^{\max(\alpha_1, \beta_1)} p_2^{\max(\alpha_2, \beta_2)} \cdots$$
+$$\mathrm{LCM}(a, b) = p_1^{\max(\alpha_1, \beta_1)} p_2^{\max(\alpha_2, \beta_2)} \cdots$$
 
 **Relationship:** For any positive integers $a$ and $b$:
 
-$$\text{HCF}(a, b) \times \text{LCM}(a, b) = a \times b$$
+$$\mathrm{HCF}(a, b) \times \mathrm{LCM}(a, b) = a \times b$$
 
 **Proof of the relationship.** Write $a = \prod p_i^{\alpha_i}$ and $b = \prod p_i^{\beta_i}$. Then:
 
-$$\text{HCF} \times \text{LCM} = \prod p_i^{\min(\alpha_i, \beta_i)} \cdot \prod p_i^{\max(\alpha_i, \beta_i)} = \prod p_i^{\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i)} = \prod p_i^{\alpha_i + \beta_i} = ab \quad \blacksquare$$
+$$\mathrm{HCF} \times \mathrm{LCM} = \prod p_i^{\min(\alpha_i, \beta_i)} \cdot \prod p_i^{\max(\alpha_i, \beta_i)} = \prod p_i^{\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i)} = \prod p_i^{\alpha_i + \beta_i} = ab \quad \blacksquare$$
 
 **Worked Example.** Find the HCF and LCM of $84$ and $210$.
 
 $$84 = 2^2 \times 3 \times 7, \qquad 210 = 2 \times 3 \times 5 \times 7$$
 
-$$\text{HCF} = 2^{\min(2,1)} \times 3^{\min(1,1)} \times 5^{\min(0,1)} \times 7^{\min(1,1)} = 2 \times 3 \times 7 = 42$$
+$$\mathrm{HCF} = 2^{\min(2,1)} \times 3^{\min(1,1)} \times 5^{\min(0,1)} \times 7^{\min(1,1)} = 2 \times 3 \times 7 = 42$$
 
-$$\text{LCM} = 2^{\max(2,1)} \times 3^{\max(1,1)} \times 5^{\max(0,1)} \times 7^{\max(1,1)} = 2^2 \times 3 \times 5 \times 7 = 420$$
+$$\mathrm{LCM} = 2^{\max(2,1)} \times 3^{\max(1,1)} \times 5^{\max(0,1)} \times 7^{\max(1,1)} = 2^2 \times 3 \times 5 \times 7 = 420$$
 
 **Verification:** $42 \times 420 = 17640 = 84 \times 210$. $\checkmark$
 
@@ -139,9 +139,9 @@ $$\text{LCM} = 2^{\max(2,1)} \times 3^{\max(1,1)} \times 5^{\max(0,1)} \times 7^
 
 $$180 = 2^2 \times 3^2 \times 5, \qquad 252 = 2^2 \times 3^2 \times 7, \qquad 396 = 2^2 \times 3^2 \times 11$$
 
-$$\text{HCF} = 2^2 \times 3^2 = 36$$
+$$\mathrm{HCF} = 2^2 \times 3^2 = 36$$
 
-$$\text{LCM} = 2^2 \times 3^2 \times 5 \times 7 \times 11 = 4 \times 9 \times 385 = 13860$$
+$$\mathrm{LCM} = 2^2 \times 3^2 \times 5 \times 7 \times 11 = 4 \times 9 \times 385 = 13860$$
 
 ### 1.4 Divisibility Tests and Prime Testing
 
@@ -232,9 +232,9 @@ Subtract: $90x = 43 \implies x = \frac{43}{90}$.
 A percentage represents a fraction out of 100. The key operations are:
 
 - **Percentage of an amount:** $P\%$ of $A = \frac{P}{100} \times A$
-- **Percentage change:** $\frac{\text{change}}{\text{original}} \times 100\%$
+- **Percentage change:** $\frac{\mathrm{change}}{\mathrm{original}} \times 100\%$
 - **Percentage increase/decrease:**
-  $\text{new} = \text{original} \times \left(1 \pm \frac{P}{100}\right)$
+  $\mathrm{new} = \mathrm{original} \times \left(1 \pm \frac{P}{100}\right)$
 
 **Worked Example.** A coat costs 120 pounds. It is reduced by 15% in a sale, then the sale price is
 increased by 15%. What is the final price?
@@ -272,7 +272,7 @@ By the theorem: $\frac{20^2}{100} = 4\%$ decrease. $\checkmark$
 
 The original price is $100\%$, and after the increase it is $120\%$. So:
 
-$$\text{original} = \frac{336}{1.20} = 280 \text{ pounds}$$
+$$\mathrm{original} = \frac{336}{1.20} = 280 \mathrm{ pounds}$$
 
 **Worked Example (Higher Tier).** A shop offers "15% off the sale price." A customer pays 34 pounds.
 What was the original price before the sale?
@@ -295,7 +295,7 @@ $$A = P\left(1 - \frac{r}{100}\right)^n$$
 **Worked Example.** 2000 pounds is invested at 3.5% compound interest per year. Find the value after
 6 years, giving your answer to the nearest penny.
 
-$$A = 2000 \times 1.035^6 = 2000 \times 1.22925\ldots = 2458.51 \text{ pounds}$$
+$$A = 2000 \times 1.035^6 = 2000 \times 1.22925\ldots = 2458.51 \mathrm{ pounds}$$
 
 **Worked Example (Higher Tier).** A car bought for 18000 pounds depreciates at 12% per annum. After
 how many whole years will its value first fall below 8000 pounds?
@@ -312,7 +312,7 @@ So after 7 years the value first falls below 8000 pounds.
 **Worked Example.** 5000 pounds is invested at 4% compound interest. Find the total interest earned
 after 3 years.
 
-$$A = 5000 \times 1.04^3 = 5000 \times 1.124864 = 5624.32 \text{ pounds}$$
+$$A = 5000 \times 1.04^3 = 5000 \times 1.124864 = 5624.32 \mathrm{ pounds}$$
 
 Total interest $= 5624.32 - 5000 = 624.32$ pounds.
 
@@ -402,13 +402,13 @@ $$\frac{4.5 \times 10^8}{3 \times 10^{-2}} = 1.5 \times 10^{8 - (-2)} = 1.5 \tim
 **Worked Example.** The population of a city is $2.4 \times 10^6$. The average income is
 $3.1 \times 10^4$ pounds per year. Find the total income, in standard form.
 
-$$2.4 \times 10^6 \times 3.1 \times 10^4 = 7.44 \times 10^{10} \text{ pounds}$$
+$$2.4 \times 10^6 \times 3.1 \times 10^4 = 7.44 \times 10^{10} \mathrm{ pounds}$$
 
 **Worked Example (Higher Tier).** The speed of light is approximately $3 \times 10^8$ m/s. The
 distance from the Sun to the Earth is approximately $1.5 \times 10^{11}$ m. How many minutes does
 light take to travel from the Sun to the Earth?
 
-$$\text{Time} = \frac{1.5 \times 10^{11}}{3 \times 10^8} = 500 \text{ seconds} = \frac{500}{60} \approx 8.33 \text{ minutes}$$
+$$\mathrm{Time} = \frac{1.5 \times 10^{11}}{3 \times 10^8} = 500 \mathrm{ seconds} = \frac{500}{60} \approx 8.33 \mathrm{ minutes}$$
 
 ## 4. Upper and Lower Bounds
 
@@ -431,8 +431,8 @@ Bounds for length: $8.35 \leq l \lt 8.45$
 
 Bounds for width: $5.15 \leq w \lt 5.20$
 
-- Upper bound of area: $8.45 \times 5.20 = 43.94 \text{ cm}^2$
-- Lower bound of area: $8.35 \times 5.15 = 43.0025 \text{ cm}^2$
+- Upper bound of area: $8.45 \times 5.20 = 43.94 \mathrm{ cm}^2$
+- Lower bound of area: $8.35 \times 5.15 = 43.0025 \mathrm{ cm}^2$
 
 :::warning
 For division, the upper bound of the quotient is NOT upper/upper. It is upper/lower (for
@@ -443,11 +443,11 @@ positive quantities).
 lower bound of $\frac{x}{y}$.
 
 Lower bound of
-$\frac{x}{y} = \frac{\text{lower}(x)}{\text{upper}(y)} = \frac{6.25}{2.75} = \frac{25}{11}
+$\frac{x}{y} = \frac{\mathrm{lower}(x)}{\mathrm{upper}(y)} = \frac{6.25}{2.75} = \frac{25}{11}
 \approx 2.27$.
 
 Upper bound of
-$\frac{x}{y} = \frac{\text{upper}(x)}{\text{lower}(y)} = \frac{6.35}{2.65} = \frac{127}{53}
+$\frac{x}{y} = \frac{\mathrm{upper}(x)}{\mathrm{lower}(y)} = \frac{6.35}{2.65} = \frac{127}{53}
 \approx 2.40$.
 
 **General principle for bounds:**
@@ -463,8 +463,8 @@ $\frac{x}{y} = \frac{\text{upper}(x)}{\text{lower}(y)} = \frac{6.35}{2.65} = \fr
 bound of $a^2 - b^2$.
 
 Upper bound of $a^2 - b^2$:
-$\text{upper}(a)^2 - \text{lower}(b)^2 = 12.45^2 - 3.65^2 = 155.0025 -
-13.3225 = 141.68 \text{ cm}^2$.
+$\mathrm{upper}(a)^2 - \mathrm{lower}(b)^2 = 12.45^2 - 3.65^2 = 155.0025 -
+13.3225 = 141.68 \mathrm{ cm}^2$.
 
 ## 5. Estimation and Approximation
 
@@ -563,7 +563,7 @@ square of the radius $r$ of the pipe. When $r = 2$ cm, $t = 45$ minutes. Find $t
 
 $$t = \frac{k}{r^2} \implies 45 = \frac{k}{4} \implies k = 180$$
 
-$$t = \frac{180}{25} = 7.2 \text{ minutes}$$
+$$t = \frac{180}{25} = 7.2 \mathrm{ minutes}$$
 
 ### 6.3 Proportionality with Powers and Roots
 
@@ -633,14 +633,14 @@ patterns, and scheduling.
 **Worked Example.** Bus A arrives every 12 minutes and Bus B arrives every 18 minutes. They both
 arrive together at 08:00. When will they next arrive together?
 
-We need $\text{LCM}(12, 18) = 36$ minutes.
+We need $\mathrm{LCM}(12, 18) = 36$ minutes.
 
 Next simultaneous arrival: 08:36.
 
 **Worked Example.** Three lights flash every 6, 8, and 12 seconds respectively. They all flash at
 time $t = 0$. When will they next all flash together?
 
-$\text{LCM}(6, 8, 12) = 24$ seconds.
+$\mathrm{LCM}(6, 8, 12) = 24$ seconds.
 
 ## 8. Number Theory Proofs (Higher Tier)
 

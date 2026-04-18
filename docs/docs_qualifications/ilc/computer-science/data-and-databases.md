@@ -48,7 +48,7 @@ to 'a', add 32 to the ASCII code: 65 + 32 = 97.
 **Example (OL):** A $800 \times 600$ image with 24-bit colour depth.
 
 $$
-\text{Size} = 800 \times 600 \times 24 = 11520000\text{ bits} = 1440000\text{ bytes} \approx 1.37\text{ MB}
+\mathrm{Size} = 800 \times 600 \times 24 = 11520000\mathrm{ bits} = 1440000\mathrm{ bytes} \approx 1.37\mathrm{ MB}
 $$
 
 **Worked Example (OL).** An image is 1024 $\times$ 768 with 16-bit colour depth.
@@ -80,7 +80,7 @@ Sound is sampled (analog to digital conversion).
 **Example (HL):** 3 minutes of stereo audio at 44,100 Hz, 16-bit.
 
 $$
-\text{Size} = 44100 \times 16 \times 180 \times 2 = 254016000\text{ bits} \approx 30.3\text{ MB}
+\mathrm{Size} = 44100 \times 16 \times 180 \times 2 = 254016000\mathrm{ bits} \approx 30.3\mathrm{ MB}
 $$
 
 **Worked Example (HL).** A 5-minute mono recording at 22050 Hz with 8-bit depth.

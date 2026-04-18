@@ -353,7 +353,7 @@ a customer deposits £1,000, what is the maximum amount of new money that can be
 <summary>Answer</summary>
 When a bank receives a deposit, it keeps a fraction (reserve ratio $r$) as reserves and lends out the rest. The loan becomes a deposit in another bank, which in turn lends out $(1-r)$ of it, and so on.<br />
 Money multiplier: $m = \frac{1}{r} = \frac{1}{0.05} = 20$.<br />
-Maximum new money $= m \times \text{initial deposit} = 20 \times 1,000 = £20,000$.<br />
+Maximum new money $= m \times \mathrm{initial deposit} = 20 \times 1,000 = £20,000$.<br />
 Alternatively: $\Delta M = \Delta D \times \frac{1}{r} = 1,000 \times 20 = £20,000$ (total deposits including the original). New lending = $20,000 - 1,000 = £19,000$.<br />
 This assumes: (1) no cash leakages (all money stays in the banking system), (2) banks lend out all excess reserves, (3) demand for loans exists. In practice, the actual multiplier is much smaller.
 <i>Revision: [The Financial Sector](/docs/alevel/economics/macro/the-financial-sector)</i>

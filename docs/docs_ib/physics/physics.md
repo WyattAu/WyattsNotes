@@ -299,9 +299,9 @@ $v = \sqrt{\frac{2(6.67 \times 10^{-11})(5.97 \times 10^{24})}{6.37 \times 10^6 
 
 **Efficient approach:** Store the numerator and denominator separately:
 
-- Numerator: $2 \times 6.67\text{E}-11 \times 5.97\text{E}24 \rightarrow$ STO A
-- Denominator: $6.37\text{E}6 + 3.5\text{E}5 \rightarrow$ STO B
-- Answer: $\sqrt{\text{A}/\text{B}}$
+- Numerator: $2 \times 6.67\mathrm{E}-11 \times 5.97\mathrm{E}24 \rightarrow$ STO A
+- Denominator: $6.37\mathrm{E}6 + 3.5\mathrm{E}5 \rightarrow$ STO B
+- Answer: $\sqrt{\mathrm{A}/\mathrm{B}}$
 
 This avoids transcription errors and preserves precision.
 

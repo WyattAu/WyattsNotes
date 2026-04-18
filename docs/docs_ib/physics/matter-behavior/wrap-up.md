@@ -28,23 +28,23 @@ slug: wrap
   calculation. (c) Use the concept of power to find time.
 - **a) Plate Temperature:**
   - The plate reflects 10%, so it absorbs 90%. Power absorbed:
-    $P_{\text{in}} = (\text{Intensity}) \times (\text{Area}) \times (\text{Absorptivity}) = 800 \times 0.20 \times 0.90 = 144$
+    $P_{\mathrm{in}} = (\mathrm{Intensity}) \times (\mathrm{Area}) \times (\mathrm{Absorptivity}) = 800 \times 0.20 \times 0.90 = 144$
     W.
-  - Power radiated (out): $P_{\text{out}} = e \sigma A T^4$, where $e=0.90$.
+  - Power radiated (out): $P_{\mathrm{out}} = e \sigma A T^4$, where $e=0.90$.
   - In equilibrium,
-    $P_{\text{in}} = P_{\text{out}} \implies 144 = (0.90)(5.67\times 10^{-8})(0.20)T^4$.
+    $P_{\mathrm{in}} = P_{\mathrm{out}} \implies 144 = (0.90)(5.67\times 10^{-8})(0.20)T^4$.
   - $T^4 = \frac{144}{1.02\times 10^{-8}} = 1.41 \times 10^{10}$ K⁴ $\implies T = 344.6$ K (or
     71.6°C).
 - **b) Total Energy for Ice/Water:**
-  - 1. Heat ice from -15°C to 0°C: $Q_1 = mc_{\text{ice}}\Delta T = (0.50)(2100)(15) = 15,750$ J.
+  - 1. Heat ice from -15°C to 0°C: $Q_1 = mc_{\mathrm{ice}}\Delta T = (0.50)(2100)(15) = 15,750$ J.
   - 2. Melt ice at 0°C: $Q_2 = mL_f = (0.50)(3.3\times 10^5) = 165,000$ J.
-  - 3. Heat water from 0°C to 20°C: $Q_3 = mc_{\text{water}}\Delta T = (0.50)(4200)(20) = 42,000$ J.
-  - Total Energy: $Q_{\text{total}} = Q_1 + Q_2 + Q_3 = 15750 + 165000 + 42000 = 222,750$ J.
+  - 3. Heat water from 0°C to 20°C: $Q_3 = mc_{\mathrm{water}}\Delta T = (0.50)(4200)(20) = 42,000$ J.
+  - Total Energy: $Q_{\mathrm{total}} = Q_1 + Q_2 + Q_3 = 15750 + 165000 + 42000 = 222,750$ J.
 - **c) Time to Transfer Energy:**
   - The net power available from the plate is the power it absorbs from the sun, which is 144 W. We
     assume all this power is conducted into the ice.
-  - Power is the rate of energy transfer: $P = \frac{Q}{t} \implies t = \frac{Q_{\text{total}}}{P}$.
-  - $t = \frac{222750 \text{ J}}{144 \text{ W}} = 1547$ s (or about 25.8 minutes).
+  - Power is the rate of energy transfer: $P = \frac{Q}{t} \implies t = \frac{Q_{\mathrm{total}}}{P}$.
+  - $t = \frac{222750 \mathrm{ J}}{144 \mathrm{ W}} = 1547$ s (or about 25.8 minutes).
 
 <b>If you get this wrong, you should focus on:</b> Applying the energy balance principle for
 radiation, breaking down a phase change problem into its distinct heating and melting stages, and
@@ -64,15 +64,15 @@ understanding the relationship between power and energy transfer over time ($P=E
   the piston. Use the Ideal Gas Law for the initial volume. Apply thermodynamics for an isobaric
   process for part (b).
 - **a) Initial Volume:**
-  - The piston is in equilibrium. The pressure from the gas ($P_{\text{gas}}$) must support the
-    piston's weight and the atmospheric pressure ($P_{\text{atm}}$).
-  - $P_{\text{gas}} A = P_{\text{atm}} A + mg$.
-  - $P_{\text{gas}} = P_{\text{atm}} + \frac{mg}{A} = (1.01 \times 10^5) + \frac{(5.0)(9.8)}{0.010} = 1.01 \times 10^5 + 4900 = 1.059 \times 10^5$
+  - The piston is in equilibrium. The pressure from the gas ($P_{\mathrm{gas}}$) must support the
+    piston's weight and the atmospheric pressure ($P_{\mathrm{atm}}$).
+  - $P_{\mathrm{gas}} A = P_{\mathrm{atm}} A + mg$.
+  - $P_{\mathrm{gas}} = P_{\mathrm{atm}} + \frac{mg}{A} = (1.01 \times 10^5) + \frac{(5.0)(9.8)}{0.010} = 1.01 \times 10^5 + 4900 = 1.059 \times 10^5$
     Pa.
   - Now use the Ideal Gas Law:
-    $V_1 = \frac{nRT_1}{P_{\text{gas}}} = \frac{(0.10)(8.31)(293)}{1.059 \times 10^5} = 0.00230 \text{ m}^3$.
+    $V_1 = \frac{nRT_1}{P_{\mathrm{gas}}} = \frac{(0.10)(8.31)(293)}{1.059 \times 10^5} = 0.00230 \mathrm{ m}^3$.
 - **b) Work and Heat for Isobaric Expansion:**
-  - The process is isobaric, so the pressure remains $P_{\text{gas}} = 1.059 \times 10^5$ Pa. The
+  - The process is isobaric, so the pressure remains $P_{\mathrm{gas}} = 1.059 \times 10^5$ Pa. The
     volume doubles, so $V_2 = 2V_1 = 0.00460$ m³.
   - **Work Done:**
     $W = P \Delta V = (1.059 \times 10^5)(V_2 - V_1) = (1.059 \times 10^5)(0.00230) = 243.6$ J.
@@ -103,15 +103,15 @@ process (isobaric), remembering to calculate both the change in internal energy 
   - Efficiency of a Carnot engine: $\eta = 1 - \frac{T_c}{T_h} = 1 - \frac{300}{600} = 0.50$ (or
     50%).
   - Efficiency is also defined as $\eta = \frac{W}{Q_h}$.
-  - Work produced per cycle: $W = \eta \cdot Q_h = 0.50 \times 2000 \text{ J} = 1000 \text{ J}$.
+  - Work produced per cycle: $W = \eta \cdot Q_h = 0.50 \times 2000 \mathrm{ J} = 1000 \mathrm{ J}$.
 - **b) Refrigerator Coefficient of Performance:**
   - For a refrigerator, the goal is to remove heat $Q_c$ from the cold reservoir.
   - COP (cooling) is defined as $COP = \frac{Q_c}{W}$.
   - For an ideal (Carnot) refrigerator,
-    $COP_{\text{Carnot}} = \frac{T_c}{T_h - T_c} = \frac{300}{600 - 300} = 1.0$.
+    $COP_{\mathrm{Carnot}} = \frac{T_c}{T_h - T_c} = \frac{300}{600 - 300} = 1.0$.
 - **c) Heat Removed by Refrigerator:**
   - The refrigerator is driven by the 1000 J of work from the engine, so $W = 1000$ J.
-  - Using the COP definition: $Q_c = COP \cdot W = 1.0 \times 1000 \text{ J} = 1000 \text{ J}$.
+  - Using the COP definition: $Q_c = COP \cdot W = 1.0 \times 1000 \mathrm{ J} = 1000 \mathrm{ J}$.
   - The refrigerator can remove 1000 J of heat from the cold reservoir per cycle.
 
 <b>If you get this wrong, you should focus on:</b> The distinction between a heat engine and a
@@ -128,7 +128,7 @@ an engine serves as the work input for another device.
 <details>
 <summary>Answer</summary>
 
-- **Strategy:** Use the adiabatic relation ($PV^\gamma = \text{const.}$) to find the state variables
+- **Strategy:** Use the adiabatic relation ($PV^\gamma = \mathrm{const.}$) to find the state variables
   at B. For the entropy change, use the formula $\Delta S = \int \frac{dQ}{T}$ for the constant
   volume process.
 - **a) State B (after adiabatic compression):**
@@ -154,7 +154,7 @@ an engine serves as the work input for another device.
   - The entropy decreases, as expected, since heat is being removed from the system.
 
 <b>If you get this wrong, you should focus on:</b> The specific gas law relations for an adiabatic
-process ($PV^\gamma=\text{const.}$, $TV^{\gamma-1}=\text{const.}$). Also, the formula for
+process ($PV^\gamma=\mathrm{const.}$, $TV^{\gamma-1}=\mathrm{const.}$). Also, the formula for
 calculating entropy change during a process with a changing temperature, which requires integration
 or the logarithmic form.
 </details>
@@ -174,27 +174,27 @@ or the logarithmic form.
 - **a) Equivalent Resistance:**
   - First, find the equivalent resistance of the parallel part ($R_p$):
     - $\frac{1}{R_p} = \frac{1}{3.0} + \frac{1}{6.0} = \frac{2+1}{6.0} = \frac{3.0}{6.0} = 0.5 \implies R_p = 2.0 \Omega$.
-  - Now, add the series resistor: $R_{\text{external}} = 2.0 \Omega + R_p = 2.0 + 2.0 = 4.0 \Omega$.
+  - Now, add the series resistor: $R_{\mathrm{external}} = 2.0 \Omega + R_p = 2.0 + 2.0 = 4.0 \Omega$.
 - **b) Total Current:**
   - The total resistance of the entire circuit is
-    $R_{\text{total}} = R_{\text{external}} + r = 4.0 + 0.50 = 4.5 \Omega$.
+    $R_{\mathrm{total}} = R_{\mathrm{external}} + r = 4.0 + 0.50 = 4.5 \Omega$.
   - Use Ohm's Law for the whole circuit:
-    $I_{\text{total}} = \frac{\varepsilon}{R_{\text{total}}} = \frac{12.0 \text{ V}}{4.5 \Omega} = 2.67$
+    $I_{\mathrm{total}} = \frac{\varepsilon}{R_{\mathrm{total}}} = \frac{12.0 \mathrm{ V}}{4.5 \Omega} = 2.67$
     A.
 - **c) Terminal Potential Difference:**
   - The terminal PD is the voltage across the external circuit:
-    $V_{\text{terminal}} = I_{\text{total}} R_{\text{external}} = (2.67 \text{ A})(4.0 \Omega) = 10.67$
+    $V_{\mathrm{terminal}} = I_{\mathrm{total}} R_{\mathrm{external}} = (2.67 \mathrm{ A})(4.0 \Omega) = 10.67$
     V.
   - Alternatively, it's the EMF minus the "lost volts":
-    $V_{\text{terminal}} = \varepsilon - I_{\text{total}} r = 12.0 - (2.67)(0.50) = 12.0 - 1.335 = 10.67$
+    $V_{\mathrm{terminal}} = \varepsilon - I_{\mathrm{total}} r = 12.0 - (2.67)(0.50) = 12.0 - 1.335 = 10.67$
     V.
 - **d) Power in 3.0 Ω Resistor:**
   - First, find the voltage across the parallel combination ($V_p$). This is the total current times
     the parallel equivalent resistance.
-    - $V_p = I_{\text{total}} R_p = (2.67 \text{ A})(2.0 \Omega) = 5.34$ V.
+    - $V_p = I_{\mathrm{total}} R_p = (2.67 \mathrm{ A})(2.0 \Omega) = 5.34$ V.
   - This voltage is the same across both the 3.0 Ω and 6.0 Ω resistors.
   - Now, find the power dissipated in the 3.0 Ω resistor using $P = \frac{V^2}{R}$. -
-    $P_{3\Omega} = \frac{(5.34 \text{ V})^2}{3.0 \Omega} = 9.5$ W.
+    $P_{3\Omega} = \frac{(5.34 \mathrm{ V})^2}{3.0 \Omega} = 9.5$ W.
 
 <b>If you get this wrong, you should focus on:</b> The rules for combining series and parallel
 resistors, the concept of internal resistance and terminal PD, and using the potential divider rule
@@ -212,14 +212,14 @@ Pressure is defined as force per unit area:
 
 $$P = \frac{F}{A}$$
 
-The SI unit is the pascal (Pa), where $1 \text{ Pa} = 1 \text{ N m}^{-2}$.
+The SI unit is the pascal (Pa), where $1 \mathrm{ Pa} = 1 \mathrm{ N m}^{-2}$.
 
 **Hydrostatic pressure** in a fluid column of density $\rho$ at depth $h$ is:
 
 $$P = P_0 + \rho g h$$
 
 where $P_0$ is the pressure at the surface (often atmospheric pressure,
-$P_{\text{atm}} \approx 1.01 \times 10^5$ Pa).
+$P_{\mathrm{atm}} \approx 1.01 \times 10^5$ Pa).
 
 **Pascal's principle:** A change in pressure applied to an enclosed fluid is transmitted
 undiminished to every portion of the fluid and the walls of the container. This is the basis of
@@ -229,8 +229,8 @@ $$\frac{F_1}{A_1} = \frac{F_2}{A_2}$$
 
 ### Worked Example: Hydraulic Lift
 
-A hydraulic lift has a small piston of area $0.010 \text{ m}^2$ and a large piston of area
-$0.50 \text{ m}^2$. A force of $200$ N is applied to the small piston.
+A hydraulic lift has a small piston of area $0.010 \mathrm{ m}^2$ and a large piston of area
+$0.50 \mathrm{ m}^2$. A force of $200$ N is applied to the small piston.
 
 - **Pressure transmitted:** $P = \frac{200}{0.010} = 2.0 \times 10^4$ Pa
 - **Force on large piston:** $F_2 = P \times A_2 = (2.0 \times 10^4)(0.50) = 1.0 \times 10^4$ N
@@ -250,29 +250,29 @@ conservation).
 **Archimedes' principle:** An object wholly or partially immersed in a fluid experiences an upward
 buoyant force equal to the weight of the fluid displaced.
 
-$$F_b = \rho_{\text{fluid}} \cdot V_{\text{submerged}} \cdot g$$
+$$F_b = \rho_{\mathrm{fluid}} \cdot V_{\mathrm{submerged}} \cdot g$$
 
 An object floats when $F_b = mg$, i.e., when:
 
-$$\rho_{\text{fluid}} \cdot V_{\text{submerged}} \cdot g = \rho_{\text{object}} \cdot V_{\text{object}} \cdot g$$
+$$\rho_{\mathrm{fluid}} \cdot V_{\mathrm{submerged}} \cdot g = \rho_{\mathrm{object}} \cdot V_{\mathrm{object}} \cdot g$$
 
 This simplifies to the **fraction submerged**:
 
-$$\text{Fraction submerged} = \frac{\rho_{\text{object}}}{\rho_{\text{fluid}}}$$
+$$\mathrm{Fraction submerged} = \frac{\rho_{\mathrm{object}}}{\rho_{\mathrm{fluid}}}$$
 
 ### Worked Example: Floating Block
 
-A wooden block of density $600 \text{ kg m}^{-3}$ and volume $0.0050 \text{ m}^3$ floats in water
-($\rho = 1000 \text{ kg m}^{-3}$).
+A wooden block of density $600 \mathrm{ kg m}^{-3}$ and volume $0.0050 \mathrm{ m}^3$ floats in water
+($\rho = 1000 \mathrm{ kg m}^{-3}$).
 
 - **Fraction submerged:** $\frac{600}{1000} = 0.60$ (60% underwater)
-- **Volume submerged:** $0.60 \times 0.0050 = 0.0030 \text{ m}^3$
+- **Volume submerged:** $0.60 \times 0.0050 = 0.0030 \mathrm{ m}^3$
 - **Buoyant force:** $F_b = (1000)(0.0030)(9.8) = 29.4$ N
 - **Weight of block:** $mg = (600)(0.0050)(9.8) = 29.4$ N (confirms equilibrium)
 
 > **Exam Tip:** A common IB question asks whether an object will float or sink. Compare the average
 > density of the object to the density of the fluid. If
-> $\rho_{\text{object}} \lt{} \rho_{\text{fluid}}$, it floats.
+> $\rho_{\mathrm{object}} \lt{} \rho_{\mathrm{fluid}}$, it floats.
 
 ---
 
@@ -281,7 +281,7 @@ A wooden block of density $600 \text{ kg m}^{-3}$ and volume $0.0050 \text{ m}^3
 For an **ideal fluid** (incompressible, non-viscous, steady flow), Bernoulli's equation states that
 along a streamline:
 
-$$P + \frac{1}{2}\rho v^2 + \rho g h = \text{constant}$$
+$$P + \frac{1}{2}\rho v^2 + \rho g h = \mathrm{constant}$$
 
 This is a statement of **conservation of energy** per unit volume of fluid:
 
@@ -290,7 +290,7 @@ This is a statement of **conservation of energy** per unit volume of fluid:
 - $\rho g h$ — gravitational potential energy per unit volume
 
 **Key consequence — the Venturi effect:** Where the fluid speed increases, the pressure decreases.
-For a horizontal pipe ($h = \text{const.}$):
+For a horizontal pipe ($h = \mathrm{const.}$):
 
 $$P_1 + \frac{1}{2}\rho v_1^2 = P_2 + \frac{1}{2}\rho v_2^2$$
 
@@ -300,15 +300,15 @@ $$A_1 v_1 = A_2 v_2$$
 
 ### Worked Example: Pipe Flow
 
-Water flows through a pipe that narrows from cross-sectional area $A_1 = 0.050 \text{ m}^2$ to
-$A_2 = 0.020 \text{ m}^2$. The water speed in the wider section is $2.0 \text{ m s}^{-1}$ and the
+Water flows through a pipe that narrows from cross-sectional area $A_1 = 0.050 \mathrm{ m}^2$ to
+$A_2 = 0.020 \mathrm{ m}^2$. The water speed in the wider section is $2.0 \mathrm{ m s}^{-1}$ and the
 pressure there is $1.5 \times 10^5$ Pa.
 
 - **Speed in narrow section:**
-  $v_2 = \frac{A_1 v_1}{A_2} = \frac{(0.050)(2.0)}{0.020} = 5.0 \text{ m s}^{-1}$
+  $v_2 = \frac{A_1 v_1}{A_2} = \frac{(0.050)(2.0)}{0.020} = 5.0 \mathrm{ m s}^{-1}$
 - **Pressure in narrow section (horizontal):**
   $$P_2 = P_1 + \frac{1}{2}\rho(v_1^2 - v_2^2) = 1.5 \times 10^5 + \frac{1}{2}(1000)(4.0 - 25.0)$$
-  $$P_2 = 1.5 \times 10^5 - 10500 = 1.395 \times 10^5 \text{ Pa}$$
+  $$P_2 = 1.5 \times 10^5 - 10500 = 1.395 \times 10^5 \mathrm{ Pa}$$
 
 The pressure **drops** where the fluid speeds up — this is the Venturi effect.
 
@@ -342,7 +342,7 @@ All of these are unified in the **ideal gas equation**:
 
 $$PV = nRT$$
 
-where $R = 8.31 \text{ J mol}^{-1}\text{K}^{-1}$ is the universal gas constant and $T$ is the
+where $R = 8.31 \mathrm{ J mol}^{-1}\mathrm{K}^{-1}$ is the universal gas constant and $T$ is the
 absolute temperature in Kelvin.
 
 ### Microscopic Basis: Pressure from Molecular Collisions
@@ -361,17 +361,17 @@ $$\frac{1}{2}m\langle c^2 \rangle = \frac{3}{2}k_BT$$
 
 The **root-mean-square speed** is:
 
-$$c_{\text{rms}} = \sqrt{\langle c^2 \rangle} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
+$$c_{\mathrm{rms}} = \sqrt{\langle c^2 \rangle} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
 
 where $M$ is the molar mass (kg mol$^{-1}$).
 
 ### Worked Example: RMS Speed
 
-Calculate the rms speed of nitrogen molecules ($M = 0.028 \text{ kg mol}^{-1}$) at $300$ K.
+Calculate the rms speed of nitrogen molecules ($M = 0.028 \mathrm{ kg mol}^{-1}$) at $300$ K.
 
-$$c_{\text{rms}} = \sqrt{\frac{3(8.31)(300)}{0.028}} = \sqrt{\frac{7479}{0.028}} = \sqrt{267107} \approx 517 \text{ m s}^{-1}$$
+$$c_{\mathrm{rms}} = \sqrt{\frac{3(8.31)(300)}{0.028}} = \sqrt{\frac{7479}{0.028}} = \sqrt{267107} \approx 517 \mathrm{ m s}^{-1}$$
 
-> **Exam Tip:** When converting between $c_{\text{rms}}$ forms, remember that $m$ is the mass of a
+> **Exam Tip:** When converting between $c_{\mathrm{rms}}$ forms, remember that $m$ is the mass of a
 > **single molecule** ($m = M/N_A$) while $M$ is the **molar mass**. Mixing these up is a very
 > common error.
 
@@ -435,8 +435,8 @@ Therefore:
 ### Worked Example: Phase Change Energy
 
 Calculate the total energy required to convert $2.0$ kg of ice at $-20$ degrees C to steam at $120$
-degrees C. (Data: $c_{\text{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$, $c_{\text{water}} = 4200$ J
-kg$^{-1}$ K$^{-1}$, $c_{\text{steam}} = 2000$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J
+degrees C. (Data: $c_{\mathrm{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4200$ J
+kg$^{-1}$ K$^{-1}$, $c_{\mathrm{steam}} = 2000$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J
 kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$)
 
 | Stage                           | Calculation               | Energy (J)                |
@@ -460,11 +460,11 @@ kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$)
 | :--------------------------------------------------- | :------------------------------ |
 | $P = \frac{F}{A}$                                    | Pressure definition             |
 | $P = P_0 + \rho g h$                                 | Hydrostatic pressure            |
-| $F_b = \rho_f V_{\text{sub}} g$                      | Buoyant force (Archimedes)      |
-| $P + \frac{1}{2}\rho v^2 + \rho g h = \text{const.}$ | Bernoulli's equation            |
+| $F_b = \rho_f V_{\mathrm{sub}} g$                      | Buoyant force (Archimedes)      |
+| $P + \frac{1}{2}\rho v^2 + \rho g h = \mathrm{const.}$ | Bernoulli's equation            |
 | $A_1 v_1 = A_2 v_2$                                  | Continuity equation             |
 | $PV = nRT$                                           | Ideal gas law                   |
-| $c_{\text{rms}} = \sqrt{\frac{3RT}{M}}$              | RMS molecular speed             |
+| $c_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}}$              | RMS molecular speed             |
 | $Q = mc\Delta T$                                     | Specific heat (no phase change) |
 | $Q = mL$                                             | Latent heat (phase change)      |
 </details>

@@ -203,21 +203,21 @@ distance covered during the 10.0 s of acceleration?
 - **Strategy:** Apply Newton's Second Law during acceleration and the definition of constant
   velocity (net force is zero) for the other parts. Use kinematics for the distance.
 - **a) Acceleration:** During acceleration, the net force is
-  $F_{\text{net}} = F_{\text{drive}} - F_{\text{resistive}}$.
-  - $F_{\text{net}} = 2000 \text{ N} - 800 \text{ N} = 1200 \text{ N}$.
+  $F_{\mathrm{net}} = F_{\mathrm{drive}} - F_{\mathrm{resistive}}$.
+  - $F_{\mathrm{net}} = 2000 \mathrm{ N} - 800 \mathrm{ N} = 1200 \mathrm{ N}$.
   - From Newton's Second Law,
-    $F_{\text{net}} = ma \implies a = \frac{F_{\text{net}}}{m} = \frac{1200 \text{ N}}{1500 \text{ kg}} = 0.800 \text{ m/s}^2$.
+    $F_{\mathrm{net}} = ma \implies a = \frac{F_{\mathrm{net}}}{m} = \frac{1200 \mathrm{ N}}{1500 \mathrm{ kg}} = 0.800 \mathrm{ m/s}^2$.
 - **b) Final Speed:** Use the kinematic equation $v = u + at$.
-  - $v = 25.0 \text{ m/s} + (0.800 \text{ m/s}^2)(10.0 \text{ s}) = 25.0 + 8.0 = 33.0 \text{ m/s}$.
+  - $v = 25.0 \mathrm{ m/s} + (0.800 \mathrm{ m/s}^2)(10.0 \mathrm{ s}) = 25.0 + 8.0 = 33.0 \mathrm{ m/s}$.
 - **c) New Driving Force:** To maintain a constant speed of 33.0 m/s, the car must be in equilibrium
   (zero acceleration). This means the net force is zero.
-  - $F_{\text{net}} = F_{\text{drive}} - F_{\text{resistive}} = 0$.
-  - Therefore, $F_{\text{drive}} = F_{\text{resistive}} = 800 \text{ N}$. (This assumes resistive
+  - $F_{\mathrm{net}} = F_{\mathrm{drive}} - F_{\mathrm{resistive}} = 0$.
+  - Therefore, $F_{\mathrm{drive}} = F_{\mathrm{resistive}} = 800 \mathrm{ N}$. (This assumes resistive
     force is constant, a simplification.)
 - **d) Distance:** Use the kinematic equation $s = ut + \frac{1}{2}at^2$.
-  - $s = (25.0 \text{ m/s})(10.0 \text{ s}) + \frac{1}{2}(0.800 \text{ m/s}^2)(10.0 \text{ s})^2 = 250 + 0.4(100) = 290 \text{ m}$.
-    **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\text{net}}=0$
-    for constant velocity) and Second Law ($F_{\text{net}}=ma$ for acceleration), and correctly
+  - $s = (25.0 \mathrm{ m/s})(10.0 \mathrm{ s}) + \frac{1}{2}(0.800 \mathrm{ m/s}^2)(10.0 \mathrm{ s})^2 = 250 + 0.4(100) = 290 \mathrm{ m}$.
+    **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\mathrm{net}}=0$
+    for constant velocity) and Second Law ($F_{\mathrm{net}}=ma$ for acceleration), and correctly
     linking the resulting acceleration to kinematic equations.
 
 </details>
@@ -234,24 +234,24 @@ air (from launch until it returns to the ground)?
   Stage 2 (coasting ascent and descent) has only gravity acting on it.
 - **Stage 1: Powered Ascent (first 3.0 s)**
   - Net force:
-    $F_{\text{net}} = F_{\text{thrust}} - F_g = 50.0 \text{ N} - (2.0 \text{ kg})(9.8 \text{ m/s}^2) = 50.0 - 19.6 = 30.4 \text{ N}$.
-  - Acceleration: $a_1 = F_{\text{net}}/m = 30.4 / 2.0 = 15.2 \text{ m/s}^2$.
+    $F_{\mathrm{net}} = F_{\mathrm{thrust}} - F_g = 50.0 \mathrm{ N} - (2.0 \mathrm{ kg})(9.8 \mathrm{ m/s}^2) = 50.0 - 19.6 = 30.4 \mathrm{ N}$.
+  - Acceleration: $a_1 = F_{\mathrm{net}}/m = 30.4 / 2.0 = 15.2 \mathrm{ m/s}^2$.
   - Height reached in Stage 1:
-    $h_1 = \frac{1}{2}a_1 t^2 = \frac{1}{2}(15.2)(3.0)^2 = 68.4 \text{ m}$.
-  - Velocity at end of Stage 1: $v_1 = a_1 t = 15.2 \times 3.0 = 45.6 \text{ m/s}$.
+    $h_1 = \frac{1}{2}a_1 t^2 = \frac{1}{2}(15.2)(3.0)^2 = 68.4 \mathrm{ m}$.
+  - Velocity at end of Stage 1: $v_1 = a_1 t = 15.2 \times 3.0 = 45.6 \mathrm{ m/s}$.
 - **Stage 2: Coasting Motion (after 3.0 s)**
   - The firework now has an initial upward velocity of 45.6 m/s and is at a height of 68.4 m. The
-    only acceleration is $a_2 = -g = -9.8 \text{ m/s}^2$.
+    only acceleration is $a_2 = -g = -9.8 \mathrm{ m/s}^2$.
   - **a) Maximum Height:** Find the additional height ($h_2$) it coasts upwards. Use
     $v^2 = u^2 + 2as$.
-    - $0^2 = (45.6)^2 + 2(-9.8)h_2 \implies h_2 = \frac{45.6^2}{19.6} = 106.0 \text{ m}$.
-    - Total max height: $H = h_1 + h_2 = 68.4 + 106.0 = 174.4 \text{ m}$.
+    - $0^2 = (45.6)^2 + 2(-9.8)h_2 \implies h_2 = \frac{45.6^2}{19.6} = 106.0 \mathrm{ m}$.
+    - Total max height: $H = h_1 + h_2 = 68.4 + 106.0 = 174.4 \mathrm{ m}$.
   - **b) Total Time in Air:** We need the time for Stage 2. - Time to coast to peak
-    ($t_{\text{up}}$):
-    $v = u + at \implies 0 = 45.6 - 9.8 t_{\text{up}} \implies t_{\text{up}} = 4.65 \text{ s}$. -
-    Time to fall from peak ($t_{\text{down}}$):
-    $s = \frac{1}{2}at^2 \implies 174.4 = \frac{1}{2}(9.8) t_{\text{down}}^2 \implies t_{\text{down}} = 5.97 \text{ s}$. -
-    Total time: $T = t_1 + t_{\text{up}} + t_{\text{down}} = 3.0 + 4.65 + 5.97 = 13.6 \text{ s}$.
+    ($t_{\mathrm{up}}$):
+    $v = u + at \implies 0 = 45.6 - 9.8 t_{\mathrm{up}} \implies t_{\mathrm{up}} = 4.65 \mathrm{ s}$. -
+    Time to fall from peak ($t_{\mathrm{down}}$):
+    $s = \frac{1}{2}at^2 \implies 174.4 = \frac{1}{2}(9.8) t_{\mathrm{down}}^2 \implies t_{\mathrm{down}} = 5.97 \mathrm{ s}$. -
+    Total time: $T = t_1 + t_{\mathrm{up}} + t_{\mathrm{down}} = 3.0 + 4.65 + 5.97 = 13.6 \mathrm{ s}$.
     **If you get this wrong, you should focus on:** Breaking multi-stage motion problems into
     separate parts, calculating net force correctly in each stage, and using the final conditions of
     one stage as the initial conditions for the next.
@@ -276,11 +276,11 @@ applied horizontal force and the tension in the rope.
   - Vertical component of tension: $T_y = T \cos(\theta)$.
   - Horizontal component of tension: $T_x = T \sin(\theta)$.
   - **Vertical Equilibrium ($\Sigma F_y = 0$):**
-    - $T_y - mg = 0 \implies T \cos(35^\circ) = (5.0 \text{ kg})(9.8 \text{ m/s}^2) = 49 \text{ N}$.
-    - $T = \frac{49}{\cos(35^\circ)} = 59.8 \text{ N}$.
+    - $T_y - mg = 0 \implies T \cos(35^\circ) = (5.0 \mathrm{ kg})(9.8 \mathrm{ m/s}^2) = 49 \mathrm{ N}$.
+    - $T = \frac{49}{\cos(35^\circ)} = 59.8 \mathrm{ N}$.
   - **Horizontal Equilibrium ($\Sigma F_x = 0$):** -
     $F_a - T_x = 0 \implies F_a = T \sin(35^\circ)$. -
-    $F_a = (59.8 \text{ N}) \sin(35^\circ) = 34.3 \text{ N}$. **If you get this wrong, you should
+    $F_a = (59.8 \mathrm{ N}) \sin(35^\circ) = 34.3 \mathrm{ N}$. **If you get this wrong, you should
     focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors
     into components using trigonometry, and setting up and solving simultaneous equations for the
     vertical and horizontal forces.
@@ -310,10 +310,10 @@ Justify your answer with a calculation.
       $\theta = \arctan\left(\frac{v_{2y}}{v_{2x}}\right) = \arctan\left(\frac{-1.33}{4.36}\right) = -17.0^\circ$
       (below the original path).
 - **b) Elasticity:** Compare initial and final total kinetic energy.
-  - $E_{k, \text{initial}} = \frac{1}{2}(0.20)(10)^2 = 10.0$ J.
-  - $E_{k, \text{final}} = \frac{1}{2}(0.20)(4.0)^2 + \frac{1}{2}(0.30)(4.56)^2 = 1.6 + 3.12 = 4.72$
+  - $E_{k, \mathrm{initial}} = \frac{1}{2}(0.20)(10)^2 = 10.0$ J.
+  - $E_{k, \mathrm{final}} = \frac{1}{2}(0.20)(4.0)^2 + \frac{1}{2}(0.30)(4.56)^2 = 1.6 + 3.12 = 4.72$
     J.
-  - Since $E_{k, \text{final}} \lt{} E_{k, \text{initial}}$, kinetic energy was lost, and the
+  - Since $E_{k, \mathrm{final}} \lt{} E_{k, \mathrm{initial}}$, kinetic energy was lost, and the
     collision was **inelastic**. **If you get this wrong, you should focus on:** Applying
     conservation of momentum as a vector equation (i.e., in component form), combining velocity
     components to find final speed and direction, and the definition of an elastic collision
@@ -337,8 +337,8 @@ any reliance on friction?
 - **a) Flat Track:**
   - The centripetal force required is $F_c = \frac{mv^2}{r} = \frac{1200 \cdot 15^2}{50} = 5400$ N.
   - This force is provided entirely by static friction, so $f_s = 5400$ N.
-  - The maximum static friction is $f_{s,\text{max}} = \mu_s N = \mu_s mg$.
-  - To avoid slipping, we need $f_s \le f_{s,\text{max}} \implies 5400 \le \mu_s(1200)(9.8)$.
+  - The maximum static friction is $f_{s,\mathrm{max}} = \mu_s N = \mu_s mg$.
+  - To avoid slipping, we need $f_s \le f_{s,\mathrm{max}} \implies 5400 \le \mu_s(1200)(9.8)$.
   - $\mu_s \ge \frac{5400}{11760} = 0.46$. The minimum coefficient of static friction is 0.46.
 - **b) Banked Track (No Friction):**
   - Draw a free-body diagram showing only weight ($mg$) down and the normal force ($N$)
@@ -372,17 +372,17 @@ acceleration compare to that of a block sliding down the same incline without fr
   3. Static friction ($f_s$) acting _up_ the incline, at the point of contact. (This friction
      provides the torque to make it rotate).
 - **b) Derive Acceleration:**
-  - **Linear Motion (down the incline):** $F_{\text{net}} = Ma \implies Mg \sin\theta - f_s = Ma$.
+  - **Linear Motion (down the incline):** $F_{\mathrm{net}} = Ma \implies Mg \sin\theta - f_s = Ma$.
     (Eq. 1)
   - **Rotational Motion (about the center):** The only force providing a torque is friction.
-    $\tau_{\text{net}} = I\alpha \implies f_s R = (MR^2)\alpha$. (Eq. 2)
+    $\tau_{\mathrm{net}} = I\alpha \implies f_s R = (MR^2)\alpha$. (Eq. 2)
   - **No-slip condition:** $a = \alpha R \implies \alpha = a/R$.
   - Substitute the no-slip condition into Eq. 2: $f_s R = MR^2(a/R) \implies f_s = Ma$.
   - Substitute this expression for $f_s$ back into Eq. 1:
     - $Mg \sin\theta - Ma = Ma \implies Mg \sin\theta = 2Ma$.
     - $a = \frac{1}{2}g \sin\theta$.
 - **c) Comparison:** A block sliding without friction has only the component of gravity accelerating
-it, so its acceleration is $a_{\text{block}} = g \sin\theta$. The hoop's acceleration is exactly
+it, so its acceleration is $a_{\mathrm{block}} = g \sin\theta$. The hoop's acceleration is exactly
 half of this. This is because some of the initial potential energy must be converted into rotational
 kinetic energy, leaving less for translational kinetic energy, resulting in a smaller linear
 acceleration. **If you get this wrong, you should focus on:** Applying both linear and rotational
@@ -402,12 +402,12 @@ the change in her rotational kinetic energy. c) Where does this change in energy
   calculate the kinetic energy before and after.
 - **a) New Angular Speed:**
   - Conservation of angular momentum: $L_i = L_f \implies I_i \omega_i = I_f \omega_f$.
-  - $(4.0 \text{ kg m}^2)(10.0 \text{ rad/s}) = (1.5 \text{ kg m}^2) \omega_f$.
+  - $(4.0 \mathrm{ kg m}^2)(10.0 \mathrm{ rad/s}) = (1.5 \mathrm{ kg m}^2) \omega_f$.
   - $\omega_f = \frac{40.0}{1.5} = 26.7$ rad/s.
 - **b) Change in Rotational Kinetic Energy:**
-  - $E_{k, \text{initial}} = \frac{1}{2}I_i \omega_i^2 = \frac{1}{2}(4.0)(10.0)^2 = 200$ J.
-  - $E_{k, \text{final}} = \frac{1}{2}I_f \omega_f^2 = \frac{1}{2}(1.5)(26.7)^2 = 533$ J.
-  - $\Delta E_k = E_{k, \text{final}} - E_{k, \text{initial}} = 533 - 200 = 333$ J.
+  - $E_{k, \mathrm{initial}} = \frac{1}{2}I_i \omega_i^2 = \frac{1}{2}(4.0)(10.0)^2 = 200$ J.
+  - $E_{k, \mathrm{final}} = \frac{1}{2}I_f \omega_f^2 = \frac{1}{2}(1.5)(26.7)^2 = 533$ J.
+  - $\Delta E_k = E_{k, \mathrm{final}} - E_{k, \mathrm{initial}} = 533 - 200 = 333$ J.
 - **c) Source of Energy:** The kinetic energy increased. This increase comes from the **work done by
 the skater** using her muscles to pull her arms inward. She is doing work on her own system, which
 is not an isolated system in terms of energy (though it is for angular momentum, as the forces are
@@ -432,13 +432,13 @@ the muon "explain" its ability to reach the ground?
 - **a) Dilated Half-Life (Lab Frame):**
   - $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}} = \frac{1}{\sqrt{1 - 0.995^2}} = 10.01$.
   - The dilated half-life is
-    $\Delta t = \gamma \Delta t_0 = 10.01 \times (1.56 \times 10^{-6} \text{ s}) = 1.56 \times 10^{-5}$
+    $\Delta t = \gamma \Delta t_0 = 10.01 \times (1.56 \times 10^{-6} \mathrm{ s}) = 1.56 \times 10^{-5}$
     s.
 - **b) Survival in Lab Frame:**
   - Time for the muon to travel 10.0 km:
-    $t_{\text{travel}} = \frac{\text{distance}}{\text{speed}} = \frac{10000 \text{ m}}{0.995 \times 3.0 \times 10^8 \text{ m/s}} = 3.35 \times 10^{-5}$
+    $t_{\mathrm{travel}} = \frac{\mathrm{distance}}{\mathrm{speed}} = \frac{10000 \mathrm{ m}}{0.995 \times 3.0 \times 10^8 \mathrm{ m/s}} = 3.35 \times 10^{-5}$
     s.
-  - $t_{\text{travel}} = 33.5$ μs. The dilated half-life is 15.6 μs.
+  - $t_{\mathrm{travel}} = 33.5$ μs. The dilated half-life is 15.6 μs.
   - Since the travel time (33.5 μs) is longer than one dilated half-life (15.6 μs), less than half
     the muons will survive. Specifically, the number of half-lives passed is
     $33.5/15.6 \approx 2.15$. A significant fraction will reach the ground. (The question is simply
@@ -448,10 +448,10 @@ the muon "explain" its ability to reach the ground?
     "lives" for only a short time.
   - From the muon's perspective, the Earth and its atmosphere are rushing towards it at 0.995c. The
     distance of 10.0 km is **length contracted**.
-  - Contracted distance: $L = \frac{L_0}{\gamma} = \frac{10.0 \text{ km}}{10.01} = 0.999$ km or 999
+  - Contracted distance: $L = \frac{L_0}{\gamma} = \frac{10.0 \mathrm{ km}}{10.01} = 0.999$ km or 999
     m.
   - Time to travel this contracted distance:
-    $t' = \frac{L}{v} = \frac{999 \text{ m}}{0.995 \times 3.0 \times 10^8 \text{ m/s}} = 3.35 \times 10^{-6}$
+    $t' = \frac{L}{v} = \frac{999 \mathrm{ m}}{0.995 \times 3.0 \times 10^8 \mathrm{ m/s}} = 3.35 \times 10^{-6}$
     s = 3.35 μs.
   - From the muon's perspective, it only needs to survive for 3.35 μs to reach the ground. Since
     this is longer than its proper half-life of 1.56 μs, it has a chance to make it. Both frames
@@ -505,10 +505,10 @@ Normal force: $N = mg\cos 30° + F_{\perp} = (4.0)(9.8)(0.866) + 10.0 = 33.9 + 1
 Kinetic friction: $f_k = \mu_k N = (0.30)(43.9) = 13.2$ N (down the incline).
 
 Net force along the incline:
-$F_{\text{net}} = F_{\parallel} - mg\sin 30° - f_k = 17.3 - 19.6 - 13.2 = -15.5$ N.
+$F_{\mathrm{net}} = F_{\parallel} - mg\sin 30° - f_k = 17.3 - 19.6 - 13.2 = -15.5$ N.
 
 The net force is negative (down the incline), meaning the block slides **down** despite the applied
-force. The acceleration is: $a = \frac{|F_{\text{net}}|}{m} = \frac{15.5}{4.0} = 3.88$ m/s$^2$ down
+force. The acceleration is: $a = \frac{|F_{\mathrm{net}}|}{m} = \frac{15.5}{4.0} = 3.88$ m/s$^2$ down
 the incline.
 
 ---
@@ -535,8 +535,8 @@ Anticlockwise moments:
 
 For equilibrium: $3.0T = 196 + 441 = 637$. $T = 212.3$ N.
 
-**b) Vertical equilibrium:** $R_{\text{pivot}} + T = mg_{\text{beam}} + mg_{\text{load}}$
-$R_{\text{pivot}} + 212.3 = 98 + 147 = 245$ $R_{\text{pivot}} = 32.7$ N (upward).
+**b) Vertical equilibrium:** $R_{\mathrm{pivot}} + T = mg_{\mathrm{beam}} + mg_{\mathrm{load}}$
+$R_{\mathrm{pivot}} + 212.3 = 98 + 147 = 245$ $R_{\mathrm{pivot}} = 32.7$ N (upward).
 
 ---
 
@@ -546,7 +546,7 @@ The law of conservation of angular momentum states that when no net external tor
 system, the total angular momentum remains constant:
 
 $$
-L_{\text{initial}} = L_{\text{final}} \implies I_i \omega_i = I_f \omega_f
+L_{\mathrm{initial}} = L_{\mathrm{final}} \implies I_i \omega_i = I_f \omega_f
 $$
 
 This principle explains a wide range of phenomena:
@@ -668,8 +668,8 @@ center of the platform. What is the new angular speed?
 <details>
 <summary>Answer 4</summary>
 
-$I_{\text{disc}} = \frac{1}{2}(100)(2.0)^2 = 200$ kg m$^2$.
-$I_{\text{person, initial}} = mr^2 = (60)(2.0)^2 = 240$ kg m$^2$. $I_{\text{person, final}} = 0$ (at
+$I_{\mathrm{disc}} = \frac{1}{2}(100)(2.0)^2 = 200$ kg m$^2$.
+$I_{\mathrm{person, initial}} = mr^2 = (60)(2.0)^2 = 240$ kg m$^2$. $I_{\mathrm{person, final}} = 0$ (at
 the center, $r = 0$).
 
 $I_i = 200 + 240 = 440$ kg m$^2$, $\omega_i = 1.5$ rad/s. $I_f = 200 + 0 = 200$ kg m$^2$.

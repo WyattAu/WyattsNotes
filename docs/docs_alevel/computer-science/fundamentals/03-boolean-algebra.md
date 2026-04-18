@@ -337,8 +337,8 @@ A **half adder** adds two single bits, producing a sum and carry.
 
 **Derivation:** From the truth table:
 
-- $\text{Sum} = A \oplus B$ (XOR: 1 when exactly one input is 1)
-- $\text{Carry} = A \cdot B$ (AND: 1 only when both inputs are 1)
+- $\mathrm{Sum} = A \oplus B$ (XOR: 1 when exactly one input is 1)
+- $\mathrm{Carry} = A \cdot B$ (AND: 1 only when both inputs are 1)
 
 **Implementation:** 1 XOR gate + 1 AND gate.
 
@@ -361,7 +361,7 @@ A **full adder** adds three bits (two inputs + carry-in), producing sum and carr
 
 **Derivation:**
 
-$\text{Sum} = A \oplus B \oplus C_{in}$
+$\mathrm{Sum} = A \oplus B \oplus C_{in}$
 
 For $C_{out}$, we note it is 1 when at least two of the three inputs are 1:
 
@@ -592,7 +592,7 @@ Sum is 1 for rows: (0,0,1), (0,1,0), (1,0,0), (1,1,1).
 <details>
 <summary>Answer</summary>
 
-$\text{Sum} = \bar{A}\bar{B}C_{in} + \bar{A}B\bar{C}_{in} + A\bar{B}\bar{C}_{in} + ABC_{in}$
+$\mathrm{Sum} = \bar{A}\bar{B}C_{in} + \bar{A}B\bar{C}_{in} + A\bar{B}\bar{C}_{in} + ABC_{in}$
 
 $= \bar{A}(\bar{B}C_{in} + B\bar{C}_{in}) + A(\bar{B}\bar{C}_{in} + BC_{in})$
 
@@ -696,7 +696,7 @@ The carry must ripple through all 16 stages.
 <details>
 <summary>Answer</summary>
 
-Total delay = $16 \times 3 \times 2\text{ns} = 96\text{ns}$
+Total delay = $16 \times 3 \times 2\mathrm{ns} = 96\mathrm{ns}$
 
 The worst case is when a carry generated at bit 0 must propagate all the way to bit 15 (e.g.,
 $0111\ldots1 + 0000\ldots1$).

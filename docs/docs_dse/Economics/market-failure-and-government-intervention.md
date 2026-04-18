@@ -46,7 +46,7 @@ to bear it.
 This occurs when the production of a good imposes costs on society that are not reflected in the
 producer's private costs.
 
-$$\text{MSC} = \text{MPC} + \text{MEC}$$
+$$\mathrm{MSC} = \mathrm{MPC} + \mathrm{MEC}$$
 
 Where:
 
@@ -92,7 +92,7 @@ socially optimal output. The market **over-produces** the good.
 
 This occurs when the consumption of a good imposes costs on third parties.
 
-$$\text{MSC} = \text{MPB} + \text{MEC}$$
+$$\mathrm{MSC} = \mathrm{MPB} + \mathrm{MEC}$$
 
 Where MEC is the marginal external cost of consumption.
 
@@ -115,7 +115,7 @@ for it.
 
 ### Positive Externality of Production
 
-$$\text{MSB} = \text{MPB} + \text{MEB}$$
+$$\mathrm{MSB} = \mathrm{MPB} + \mathrm{MEB}$$
 
 Where MEB = marginal external benefit of production.
 
@@ -130,7 +130,7 @@ social optimum.
 
 ### Positive Externality of Consumption
 
-$$\text{MSB} = \text{MPB} + \text{MEB}$$
+$$\mathrm{MSB} = \mathrm{MPB} + \mathrm{MEB}$$
 
 **Example:** Education. The individual student benefits from higher future earnings (MPB), but
 society benefits from a more educated population (lower crime rates, better civic participation,
@@ -158,12 +158,12 @@ rationale for government provision or subsidisation of education.
 A Pigouvian tax is a tax levied on each unit of a good that generates a negative externality. The
 tax is set equal to the marginal external cost at the socially optimal output.
 
-$$\text{Pigouvian tax per unit} = \text{MEC} \text{ at } Q_{\text{opt}}$$
+$$\mathrm{Pigouvian tax per unit} = \mathrm{MEC} \mathrm{ at } Q_{\mathrm{opt}}$$
 
 By internalising the externality, the tax shifts the private cost curve upward to coincide with the
 social cost curve:
 
-$$\text{MPC} + \text{Tax} = \text{MSC}$$
+$$\mathrm{MPC} + \mathrm{Tax} = \mathrm{MSC}$$
 
 The firm now faces the full social cost of production and reduces output to the socially optimal
 level.
@@ -204,7 +204,7 @@ A subsidy is a payment per unit to producers (or consumers) of a good that gener
 externality. The subsidy shifts the private benefit curve upward to coincide with the social benefit
 curve:
 
-$$\text{MPB} + \text{Subsidy} = \text{MSB}$$
+$$\mathrm{MPB} + \mathrm{Subsidy} = \mathrm{MSB}$$
 
 The firm (or consumer) now receives the full social benefit and increases consumption/production to
 the socially optimal level.
@@ -423,7 +423,7 @@ analysis (CBA) to determine whether the intervention will improve net welfare.
 3. **Discount future costs and benefits:** Future costs and benefits are worth less than present
    ones (time preference). Use a social discount rate to convert future flows to present value.
 
-$$\text{NPV} = \sum_{t=0}^{T} \frac{B_t - C_t}{(1 + r)^t}$$
+$$\mathrm{NPV} = \sum_{t=0}^{T} \frac{B_t - C_t}{(1 + r)^t}$$
 
 4. **Compare:** If NPV \gt 0, the intervention improves net welfare and should be undertaken. If NPV
    \lt 0, the costs outweigh the benefits.

@@ -78,7 +78,7 @@ $$
 ### Polar to Cartesian
 
 Since polar coordinates is already defined by the argument, conversion to cartesian is simply
-evaluating the definition of cartesian coordinate ($\text{cis }\theta$):
+evaluating the definition of cartesian coordinate ($\mathrm{cis }\theta$):
 
 $$
 \begin{aligned}
@@ -176,8 +176,8 @@ Key properties:
 $$
 \begin{aligned}
     z \cdot \bar{z} &= a^2 + b^2 = |z|^2\\
-    z + \bar{z} &= 2a \quad (\text{real})\\
-    z - \bar{z} &= 2bi \quad (\text{imaginary})
+    z + \bar{z} &= 2a \quad (\mathrm{real})\\
+    z - \bar{z} &= 2bi \quad (\mathrm{imaginary})
 \end{aligned}
 $$
 
@@ -185,8 +185,8 @@ $$
 
 An Argand diagram represents complex numbers in a 2D plane:
 
-- The **horizontal axis** represents the real part ($\text{Re}(z)$)
-- The **vertical axis** represents the imaginary part ($\text{Im}(z)$)
+- The **horizontal axis** represents the real part ($\mathrm{Re}(z)$)
+- The **vertical axis** represents the imaginary part ($\mathrm{Im}(z)$)
 
 A complex number $z = a + bi$ is plotted at the point $(a, b)$.
 
@@ -529,12 +529,12 @@ $$
 z = z_1 + t(z_2 - z_1), \quad t \in \mathbb{R}
 $$
 
-Equivalently, a line with equation $\text{Re}(\bar{a}\, z) = c$ for some complex constant $a \neq 0$
+Equivalently, a line with equation $\mathrm{Re}(\bar{a}\, z) = c$ for some complex constant $a \neq 0$
 and real constant $c$.
 
 ### Perpendicular from the Origin to a Line
 
-The shortest distance from the origin to the line $\text{Re}(\bar{a}\, z) = c$ is:
+The shortest distance from the origin to the line $\mathrm{Re}(\bar{a}\, z) = c$ is:
 
 $$
 d = \frac{|c|}{|a|}
@@ -620,7 +620,7 @@ $$
 $$
 \begin{aligned}
     \left(re^{i\theta}\right)^{k+1} &= \left(re^{i\theta}\right)^k \cdot re^{i\theta}\\
-    &= r^k e^{ik\theta} \cdot r e^{i\theta} \quad \text{(by hypothesis)}\\
+    &= r^k e^{ik\theta} \cdot r e^{i\theta} \quad \mathrm{(by hypothesis)}\\
     &= r^{k+1} \cdot e^{i(k\theta + \theta)}\\
     &= r^{k+1} e^{i(k+1)\theta}
 \end{aligned}
@@ -708,10 +708,10 @@ Using the formula for the area of a triangle with vertices at complex numbers:
 
 $$
 \begin{aligned}
-    \text{Area} &= \frac{1}{2}\left|\text{Im}\!\left(\bar{z}_{AB} \cdot z_{AC}\right)\right|\\
-    &= \frac{1}{2}\left|\text{Im}\!\left((4 - 2i)(2 + 6i)\right)\right|\\
-    &= \frac{1}{2}\left|\text{Im}(8 + 24i - 4i + 12)\right|\\
-    &= \frac{1}{2}\left|\text{Im}(20 + 20i)\right|\\
+    \mathrm{Area} &= \frac{1}{2}\left|\mathrm{Im}\!\left(\bar{z}_{AB} \cdot z_{AC}\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{Im}\!\left((4 - 2i)(2 + 6i)\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{Im}(8 + 24i - 4i + 12)\right|\\
+    &= \frac{1}{2}\left|\mathrm{Im}(20 + 20i)\right|\\
     &= \frac{1}{2} \cdot 20 = 10
 \end{aligned}
 $$
@@ -773,8 +773,8 @@ in the second or third quadrant, you must adjust:
 
 $$
 \begin{aligned}
-    \text{Quadrant II:}\quad &\theta = \pi - \arctan\!\left|\frac{b}{a}\right|\\
-    \text{Quadrant III:}\quad &\theta = -\pi + \arctan\frac{b}{a}
+    \mathrm{Quadrant II:}\quad &\theta = \pi - \arctan\!\left|\frac{b}{a}\right|\\
+    \mathrm{Quadrant III:}\quad &\theta = -\pi + \arctan\frac{b}{a}
 \end{aligned}
 $$
 
@@ -792,7 +792,7 @@ $|z|$ is a real, non-negative scalar (the modulus), whereas $z$ is a complex num
 differently under operations. For example:
 
 $$
-|z_1 + z_2| \neq |z_1| + |z_2| \quad \text{in general}
+|z_1 + z_2| \neq |z_1| + |z_2| \quad \mathrm{in general}
 $$
 
 The triangle inequality gives $|z_1 + z_2| \leq |z_1| + |z_2|$, with equality only when $z_1$ and
@@ -1018,10 +1018,10 @@ numbers:
 
 $$
 \begin{aligned}
-    \text{Area} &= \frac{1}{2}\left|\text{Im}\!\left(\bar{z}_2 \cdot z_3\right)\right|\\
-    &= \frac{1}{2}\left|\text{Im}\!\left((4 - 2i)(1 + 5i)\right)\right|\\
-    &= \frac{1}{2}\left|\text{Im}(4 + 20i - 2i + 10)\right|\\
-    &= \frac{1}{2}\left|\text{Im}(14 + 18i)\right|\\
+    \mathrm{Area} &= \frac{1}{2}\left|\mathrm{Im}\!\left(\bar{z}_2 \cdot z_3\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{Im}\!\left((4 - 2i)(1 + 5i)\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{Im}(4 + 20i - 2i + 10)\right|\\
+    &= \frac{1}{2}\left|\mathrm{Im}(14 + 18i)\right|\\
     &= \frac{1}{2} \cdot 18 = 9
 \end{aligned}
 $$
@@ -1038,7 +1038,7 @@ $z \neq -i$.
 $z$ have the same direction. This occurs when $z$ lies on the line through $1$ and $-i$, excluding
 those two points.
 
-Algebraically, set $\text{Im}\!\left(\frac{z + i}{z - 1}\right) = 0$. Let $z = x + iy$:
+Algebraically, set $\mathrm{Im}\!\left(\frac{z + i}{z - 1}\right) = 0$. Let $z = x + iy$:
 
 $$
 \frac{z + i}{z - 1} = \frac{x + i(y + 1)}{(x - 1) + iy}

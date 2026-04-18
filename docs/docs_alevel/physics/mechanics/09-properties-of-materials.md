@@ -53,11 +53,11 @@ For two springs with spring constants $k_1$ and $k_2$:
 
 **Series** (force is the same through both, extensions add):
 
-$$\frac{1}{k_{\text{series}}} = \frac{1}{k_1} + \frac{1}{k_2}$$
+$$\frac{1}{k_{\mathrm{series}}} = \frac{1}{k_1} + \frac{1}{k_2}$$
 
 **Parallel** (extension is the same for both, forces add):
 
-$$k_{\text{parallel}} = k_1 + k_2$$
+$$k_{\mathrm{parallel}} = k_1 + k_2$$
 
 <details>
 <summary>Example</summary>
@@ -79,7 +79,7 @@ geometry, we use **stress** and **strain**.
 
 $$\boxed{\sigma = \frac{F}{A}}$$
 
-Units: pascals (Pa), where $1\;\text{Pa} = 1\;\text{N m}^{-2}$. Typical values range from
+Units: pascals (Pa), where $1\;\mathrm{Pa} = 1\;\mathrm{N m}^{-2}$. Typical values range from
 $\sim 10^6$ Pa for soft metals to $\sim 10^9$ Pa for steel.
 
 **Definition.** **Strain** $\varepsilon$ is the extension per unit original length:
@@ -426,7 +426,7 @@ mm.
 Two identical springs each of spring constant $150$ N m$^{-1}$ are connected in parallel and support
 a $12$ kg mass. Find the total extension.
 
-**Answer.** $k_{\text{parallel}} = 150 + 150 = 300$ N m$^{-1}$.
+**Answer.** $k_{\mathrm{parallel}} = 150 + 150 = 300$ N m$^{-1}$.
 
 $F = mg = 12 \times 9.81 = 117.7$ N.
 
@@ -445,7 +445,7 @@ Calculate the ratio of their extensions.
 **Answer.** For the same $F$, $L$, and $A$: $\Delta L = FL/(AE)$, so $\Delta L \propto 1/E$.
 
 Ratio:
-$\frac{\Delta L_{\text{rubber}}}{\Delta L_{\text{steel}}} = \frac{E_{\text{steel}}}{E_{\text{rubber}}} = \frac{2.0 \times 10^{11}}{5.0 \times 10^6} = 4.0 \times 10^4$.
+$\frac{\Delta L_{\mathrm{rubber}}}{\Delta L_{\mathrm{steel}}} = \frac{E_{\mathrm{steel}}}{E_{\mathrm{rubber}}} = \frac{2.0 \times 10^{11}}{5.0 \times 10^6} = 4.0 \times 10^4$.
 
 The rubber cord extends $40,000$ times more than the steel wire under the same load.
 
@@ -475,7 +475,7 @@ J.
 
 (b) The total energy is the area under the full force-extension curve up to fracture. Approximating
 as a triangle from the origin to the breaking point:
-$E_{\text{total}} \approx \frac{1}{2} \times 300 \times 4.0 \times 10^{-3} = 0.60$ J. (A better
+$E_{\mathrm{total}} \approx \frac{1}{2} \times 300 \times 4.0 \times 10^{-3} = 0.60$ J. (A better
 estimate would account for the non-linear region, but this is a reasonable approximation.)
 
 <b>If you get this wrong, revise:</b> [Elastic Potential Energy](#5-elastic-potential-energy)
@@ -499,7 +499,7 @@ rather than failing suddenly, giving warning before collapse.
 <details>
 <summary>Problem 8</summary>
 A steel wire of length $2.5$ m and diameter $0.80$ mm is stretched by $3.0$ mm. Calculate the
-elastic potential energy stored. ($E_{\text{steel}} = 2.0 \times 10^{11}$ Pa)
+elastic potential energy stored. ($E_{\mathrm{steel}} = 2.0 \times 10^{11}$ Pa)
 
 **Answer.** $A = \pi(0.40 \times 10^{-3})^2 = 5.03 \times 10^{-7}$ m$^2$.
 $V = AL = 5.03 \times 10^{-7} \times 2.5 = 1.26 \times 10^{-6}$ m$^3$.

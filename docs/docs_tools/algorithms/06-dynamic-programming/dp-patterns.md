@@ -32,7 +32,7 @@ framework.
 Given $n$ items with weights $w_i$ and values $v_i$, and a knapsack of capacity $W$, maximise the
 total value of items selected. Each item can be taken at most once.
 
-$$dp[i][c] = \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) \quad \text{if } c \ge w_i$$
+$$dp[i][c] = \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) \quad \mathrm{if } c \ge w_i$$
 
 ```python
 def knapsack_01(weights, values, capacity):
@@ -574,7 +574,7 @@ def count_no_consecutive_ones(n):
 
 Minimum number of insertions, deletions, and substitutions to transform one string into another.
 
-$$dp[i][j] = \begin{cases} dp[i-1][j-1] & \text{if } s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \text{otherwise} \end{cases}$$
+$$dp[i][j] = \begin{cases} dp[i-1][j-1] & \mathrm{if } s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm{otherwise} \end{cases}$$
 
 ```python
 def edit_distance(s, t):

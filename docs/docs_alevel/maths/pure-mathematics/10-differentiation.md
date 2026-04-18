@@ -265,7 +265,7 @@ When two quantities are related by an equation, their rates of change are relate
 2. Differentiate both sides with respect to $t$ (time).
 3. Substitute known values and solve for the unknown rate.
 
-**Example.** The radius $r$ of a circle increases at $2\,\text{cm/s}$. Find the rate of change of
+**Example.** The radius $r$ of a circle increases at $2\,\mathrm{cm/s}$. Find the rate of change of
 the area when $r = 5$.
 
 $A = \pi r^2$. Differentiating with respect to $t$:
@@ -274,7 +274,7 @@ $$\frac{dA}{dt} = 2\pi r \frac{dr}{dt}$$
 
 At $r = 5$, $\dfrac{dr}{dt} = 2$:
 
-$$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\text{cm}^2\text{/s}$$
+$$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\mathrm{cm}^2\mathrm{/s}$$
 
 ---
 
@@ -411,7 +411,7 @@ Section 12.
 
 <details>
 <summary>Problem 5</summary>
-A spherical balloon is being inflated at a rate of $100\,\text{cm}^3\text{/s}$. Find the rate of increase of the radius when the radius is $5\,\text{cm}$.
+A spherical balloon is being inflated at a rate of $100\,\mathrm{cm}^3\mathrm{/s}$. Find the rate of increase of the radius when the radius is $5\,\mathrm{cm}$.
 </details>
 
 <details>
@@ -422,7 +422,7 @@ $$\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$$
 
 At $r = 5$ with $\dfrac{dV}{dt} = 100$:
 
-$$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \frac{1}{\pi} \approx 0.318 \,\text{cm/s}$$
+$$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \frac{1}{\pi} \approx 0.318 \,\mathrm{cm/s}$$
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.
@@ -573,7 +573,7 @@ decreasing on each branch.
 
 <details>
 <summary>Problem 14</summary>
-Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\text{cm}^3\text{/s}$. The cone has semi-vertical angle $30^\circ$. Find $dh/dt$ when $h = 10\,\text{cm}$.
+Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\mathrm{cm}^3\mathrm{/s}$. The cone has semi-vertical angle $30^\circ$. Find $dh/dt$ when $h = 10\,\mathrm{cm}$.
 </details>
 
 <details>
@@ -586,7 +586,7 @@ $$\frac{dV}{dt} = \frac{\pi h^2}{3} \cdot \frac{dh}{dt}$$
 
 At $h = 10$ with $dV/dt = 5$:
 
-$$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{100\pi} = \frac{3}{20\pi} \approx 0.0478 \,\text{cm/s}$$
+$$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{100\pi} = \frac{3}{20\pi} \approx 0.0478 \,\mathrm{cm/s}$$
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.

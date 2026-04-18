@@ -58,7 +58,7 @@ $$\int a\,dt = \int \frac{dv}{dt}\,dt \implies at + C_1 = v$$
 
 Applying the initial condition $v = u$ when $t = 0$: $C_1 = u$.
 
-$$\boxed{v = u + at} \quad \text{(Equation 2)}$$
+$$\boxed{v = u + at} \quad \mathrm{(Equation 2)}$$
 
 Now use $v = ds/dt$:
 
@@ -70,7 +70,7 @@ $$s = \int (u + at)\,dt = ut + \frac{1}{2}at^2 + C_2$$
 
 Since $s = 0$ when $t = 0$: $C_2 = 0$.
 
-$$\boxed{s = ut + \tfrac{1}{2}at^2} \quad \text{(Equation 1)}$$
+$$\boxed{s = ut + \tfrac{1}{2}at^2} \quad \mathrm{(Equation 1)}$$
 
 Eliminating $t$ from (1) and (2): $t = (v-u)/a$.
 
@@ -78,18 +78,18 @@ $$s = u\frac{v-u}{a} + \frac{1}{2}a\frac{(v-u)^2}{a^2} = \frac{uv - u^2}{a} + \f
 
 $$s = \frac{2uv - 2u^2 + v^2 - 2uv + u^2}{2a} = \frac{v^2 - u^2}{2a}$$
 
-$$\boxed{v^2 = u^2 + 2as} \quad \text{(Equation 3)}$$
+$$\boxed{v^2 = u^2 + 2as} \quad \mathrm{(Equation 3)}$$
 
 From (1): $s = ut + \tfrac{1}{2}at^2 = \tfrac{1}{2}(2u + at)t = \tfrac{1}{2}(u + u + at)t$.
 
-Using $v = u + at$: $\boxed{s = \tfrac{1}{2}(u+v)t} \quad \text{(Equation 4)}$
+Using $v = u + at$: $\boxed{s = \tfrac{1}{2}(u+v)t} \quad \mathrm{(Equation 4)}$
 
 Eliminating $a$ from (1) and (2): $a = (v-u)/t$.
 
 $s = ut + \tfrac{1}{2}\frac{v-u}{t}t^2 = ut + \tfrac{1}{2}(v-u)t = \tfrac{1}{2}(u+v)t$. (Same as
 Equation 4.)
 
-$$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \text{(useful when } a \text{ is unknown)}$$
+$$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \mathrm{(useful when } a \mathrm{ is unknown)}$$
 
 :::tip
 The key insight is that **all five SUVAT equations follow from two integrations** of the
@@ -164,8 +164,8 @@ The **gradient** of the tangent to a $v$-$t$ curve gives the instantaneous accel
 straight-line $v$-$t$ graph, the acceleration is constant and equals the gradient of that line.
 
 :::warning
-Displacement $\neq$ distance. If a particle moves $10\,\text{m}$ forwards and then
-$10\,\text{m}$ backwards, its displacement is $0$ but its total distance is $20\,\text{m}$. On a
+Displacement $\neq$ distance. If a particle moves $10\,\mathrm{m}$ forwards and then
+$10\,\mathrm{m}$ backwards, its displacement is $0$ but its total distance is $20\,\mathrm{m}$. On a
 $v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas add (distance).
 :::
 
@@ -345,7 +345,7 @@ $$v\,\frac{dv}{ds} = f(s) \implies \int v\,dv = \int f(s)\,ds$$
 
 $$\frac{v^2}{2} = F(s) + C$$
 
-This is equivalent to the work-energy principle: $\tfrac{1}{2}mv^2 = \text{work done}$.
+This is equivalent to the work-energy principle: $\tfrac{1}{2}mv^2 = \mathrm{work done}$.
 
 ### 5.4 Definite integration for distance and displacement
 
@@ -356,12 +356,12 @@ $$\Delta s = \int_{t_1}^{t_2} v\,dt$$
 When finding total distance, you must account for changes in direction. Find when $v = 0$ (turning
 points), split the integral at those times, and take absolute values:
 
-$$\text{Distance} = \int_{t_1}^{t_2} |v|\,dt$$
+$$\mathrm{Distance} = \int_{t_1}^{t_2} |v|\,dt$$
 
 ### 5.5 Worked example: variable acceleration
 
 A particle moves in a straight line. At time $t$ seconds, its acceleration is
-$a = 6t - 4\,\text{m/s}^2$. When $t = 0$, the particle is at rest at the origin. Find:
+$a = 6t - 4\,\mathrm{m/s}^2$. When $t = 0$, the particle is at rest at the origin. Find:
 
 **(a)** The velocity at time $t$:
 
@@ -371,7 +371,7 @@ Since $v = 0$ when $t = 0$: $C = 0$, so $v = 3t^2 - 4t$.
 
 **(b)** When the particle is at rest:
 
-$v = 0 \implies 3t^2 - 4t = 0 \implies t(3t - 4) = 0 \implies t = 0$ or $t = 4/3\,\text{s}$.
+$v = 0 \implies 3t^2 - 4t = 0 \implies t(3t - 4) = 0 \implies t = 0$ or $t = 4/3\,\mathrm{s}$.
 
 **(c)** The displacement at time $t$:
 
@@ -383,12 +383,12 @@ Since $s = 0$ when $t = 0$: $K = 0$, so $s = t^3 - 2t^2$.
 
 The particle reverses direction at $t = 4/3$.
 
-$s(4/3) = (64/27) - 2(16/9) = 64/27 - 96/27 = -32/27\,\text{m}$.
+$s(4/3) = (64/27) - 2(16/9) = 64/27 - 96/27 = -32/27\,\mathrm{m}$.
 
-$s(3) = 27 - 18 = 9\,\text{m}$.
+$s(3) = 27 - 18 = 9\,\mathrm{m}$.
 
 Distance
-$= |s(4/3) - s(0)| + |s(3) - s(4/3)| = |-32/27| + |9 - (-32/27)| = 32/27 + 275/27 = 307/27 \approx 11.37\,\text{m}$.
+$= |s(4/3) - s(0)| + |s(3) - s(4/3)| = |-32/27| + |9 - (-32/27)| = 32/27 + 275/27 = 307/27 \approx 11.37\,\mathrm{m}$.
 
 ---
 
@@ -396,14 +396,14 @@ $= |s(4/3) - s(0)| + |s(3) - s(4/3)| = |-32/27| + |9 - (-32/27)| = 32/27 + 275/2
 
 <details>
 <summary>Problem 1</summary>
-A car accelerates from rest at $2\,\text{m/s}^2$ for 8 seconds. Find the distance travelled.
+A car accelerates from rest at $2\,\mathrm{m/s}^2$ for 8 seconds. Find the distance travelled.
 </details>
 
 <details>
 <summary>Solution 1</summary>
 $u = 0$, $a = 2$, $t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
 
-$s = 0 + \tfrac{1}{2}(2)(64) = 64\,\text{m}$.
+$s = 0 + \tfrac{1}{2}(2)(64) = 64\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
 
@@ -411,16 +411,16 @@ $s = 0 + \tfrac{1}{2}(2)(64) = 64\,\text{m}$.
 
 <details>
 <summary>Problem 2</summary>
-A ball is thrown vertically upwards at $15\,\text{m/s}$. Find the maximum height and the time to return to the thrower's hand. Take $g = 9.8\,\text{m/s}^2$.
+A ball is thrown vertically upwards at $15\,\mathrm{m/s}$. Find the maximum height and the time to return to the thrower's hand. Take $g = 9.8\,\mathrm{m/s}^2$.
 </details>
 
 <details>
 <summary>Solution 2</summary>
-At max height: $v = 0$. $v^2 = u^2 + 2as \implies 0 = 225 - 2(9.8)s \implies s = 225/19.6 \approx 11.48\,\text{m}$.
+At max height: $v = 0$. $v^2 = u^2 + 2as \implies 0 = 225 - 2(9.8)s \implies s = 225/19.6 \approx 11.48\,\mathrm{m}$.
 
-Time up: $v = u - gt \implies 0 = 15 - 9.8t \implies t = 15/9.8 \approx 1.53\,\text{s}$.
+Time up: $v = u - gt \implies 0 = 15 - 9.8t \implies t = 15/9.8 \approx 1.53\,\mathrm{s}$.
 
-Total time (up and down): $2 \times 1.53 = 3.06\,\text{s}$.
+Total time (up and down): $2 \times 1.53 = 3.06\,\mathrm{s}$.
 
 **If you get this wrong, revise:** [Maximum Height](#45-maximum-height) — Section 4.5.
 
@@ -428,16 +428,16 @@ Total time (up and down): $2 \times 1.53 = 3.06\,\text{s}$.
 
 <details>
 <summary>Problem 3</summary>
-A projectile is launched at $30\,\text{m/s}$ at an angle of $40^\circ$ above the horizontal. Find the range and maximum height. Take $g = 9.8\,\text{m/s}^2$.
+A projectile is launched at $30\,\mathrm{m/s}$ at an angle of $40^\circ$ above the horizontal. Find the range and maximum height. Take $g = 9.8\,\mathrm{m/s}^2$.
 </details>
 
 <details>
 <summary>Solution 3</summary>
-$v_x = 30\cos 40° \approx 22.98\,\text{m/s}$, $v_y = 30\sin 40° \approx 19.28\,\text{m/s}$.
+$v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$, $v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
 
-$H_{\max} = \dfrac{(19.28)^2}{2(9.8)} = \dfrac{371.72}{19.6} \approx 18.97\,\text{m}$.
+$H_{\max} = \dfrac{(19.28)^2}{2(9.8)} = \dfrac{371.72}{19.6} \approx 18.97\,\mathrm{m}$.
 
-$R = \dfrac{30^2 \sin 80°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\,\text{m}$.
+$R = \dfrac{30^2 \sin 80°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Projectiles](#4-projectiles) — Section 4.
 
@@ -445,16 +445,16 @@ $R = \dfrac{30^2 \sin 80°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\
 
 <details>
 <summary>Problem 4</summary>
-A train decelerates uniformly from $25\,\text{m/s}$ to $10\,\text{m/s}$ over a distance of $200\,\text{m}$. Find the deceleration and the time taken.
+A train decelerates uniformly from $25\,\mathrm{m/s}$ to $10\,\mathrm{m/s}$ over a distance of $200\,\mathrm{m}$. Find the deceleration and the time taken.
 </details>
 
 <details>
 <summary>Solution 4</summary>
 $u = 25$, $v = 10$, $s = 200$.
 
-$v^2 = u^2 + 2as \implies 100 = 625 + 400a \implies a = -525/400 = -1.3125\,\text{m/s}^2$.
+$v^2 = u^2 + 2as \implies 100 = 625 + 400a \implies a = -525/400 = -1.3125\,\mathrm{m/s}^2$.
 
-$v = u + at \implies 10 = 25 - 1.3125t \implies t = 15/1.3125 \approx 11.43\,\text{s}$.
+$v = u + at \implies 10 = 25 - 1.3125t \implies t = 15/1.3125 \approx 11.43\,\mathrm{s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
 
@@ -467,7 +467,7 @@ A particle moves with velocity $v = 3t^2 - 2t + 1$ m/s. Find the displacement af
 
 <details>
 <summary>Solution 5</summary>
-$s = \int_0^3 (3t^2 - 2t + 1)\,dt = \left[t^3 - t^2 + t\right]_0^3 = 27 - 9 + 3 = 21\,\text{m}$.
+$s = \int_0^3 (3t^2 - 2t + 1)\,dt = \left[t^3 - t^2 + t\right]_0^3 = 27 - 9 + 3 = 21\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Variable Acceleration](#5-variable-acceleration) — Section 5.
 
@@ -491,14 +491,14 @@ maximum. $\blacksquare$
 
 <details>
 <summary>Problem 7</summary>
-A stone is dropped from a cliff of height $80\,\text{m}$. Find the time to hit the ground and the speed on impact. Take $g = 9.8\,\text{m/s}^2$.
+A stone is dropped from a cliff of height $80\,\mathrm{m}$. Find the time to hit the ground and the speed on impact. Take $g = 9.8\,\mathrm{m/s}^2$.
 </details>
 
 <details>
 <summary>Solution 7</summary>
-$s = \tfrac{1}{2}gt^2 \implies 80 = 4.9t^2 \implies t^2 = 80/4.9 \implies t \approx 4.04\,\text{s}$.
+$s = \tfrac{1}{2}gt^2 \implies 80 = 4.9t^2 \implies t^2 = 80/4.9 \implies t \approx 4.04\,\mathrm{s}$.
 
-$v = gt = 9.8(4.04) \approx 39.6\,\text{m/s}$.
+$v = gt = 9.8(4.04) \approx 39.6\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
 
@@ -506,7 +506,7 @@ $v = gt = 9.8(4.04) \approx 39.6\,\text{m/s}$.
 
 <details>
 <summary>Problem 8</summary>
-A particle is projected from a point $O$ on horizontal ground. It passes through a point $P$ which is $10\,\text{m}$ horizontally and $5\,\text{m}$ vertically from $O$. If the initial speed is $15\,\text{m/s}$, find the possible angles of projection.
+A particle is projected from a point $O$ on horizontal ground. It passes through a point $P$ which is $10\,\mathrm{m}$ horizontally and $5\,\mathrm{m}$ vertically from $O$. If the initial speed is $15\,\mathrm{m/s}$, find the possible angles of projection.
 </details>
 
 <details>
@@ -536,18 +536,18 @@ $\theta \approx 74.9^\circ$ or $\theta \approx 41.7^\circ$.
 
 <details>
 <summary>Problem 9</summary>
-A car travels at $20\,\text{m/s}$ for 30 seconds, then decelerates at $1.5\,\text{m/s}^2$ until it stops. Find the total distance and total time.
+A car travels at $20\,\mathrm{m/s}$ for 30 seconds, then decelerates at $1.5\,\mathrm{m/s}^2$ until it stops. Find the total distance and total time.
 </details>
 
 <details>
 <summary>Solution 9</summary>
-Phase 1: $s_1 = 20 \times 30 = 600\,\text{m}$, $t_1 = 30\,\text{s}$.
+Phase 1: $s_1 = 20 \times 30 = 600\,\mathrm{m}$, $t_1 = 30\,\mathrm{s}$.
 
-Phase 2: $v = u + at \implies 0 = 20 - 1.5t \implies t = 40/3 \approx 13.33\,\text{s}$.
+Phase 2: $v = u + at \implies 0 = 20 - 1.5t \implies t = 40/3 \approx 13.33\,\mathrm{s}$.
 
-$s_2 = ut + \tfrac{1}{2}at^2 = 20(40/3) - \tfrac{1}{2}(1.5)(1600/9) = 800/3 - 400/3 = 400/3 \approx 133.3\,\text{m}$.
+$s_2 = ut + \tfrac{1}{2}at^2 = 20(40/3) - \tfrac{1}{2}(1.5)(1600/9) = 800/3 - 400/3 = 400/3 \approx 133.3\,\mathrm{m}$.
 
-Total: $s = 600 + 133.3 = 733.3\,\text{m}$, $t = 30 + 13.33 = 43.33\,\text{s}$.
+Total: $s = 600 + 133.3 = 733.3\,\mathrm{m}$, $t = 30 + 13.33 = 43.33\,\mathrm{s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
 
@@ -560,9 +560,9 @@ The velocity of a particle is given by $v = 6t - t^2$ for $0 \leq t \leq 6$. Fin
 
 <details>
 <summary>Solution 10</summary>
-$a = dv/dt = 6 - 2t = 0 \implies t = 3$. $v_{\max} = 18 - 9 = 9\,\text{m/s}$.
+$a = dv/dt = 6 - 2t = 0 \implies t = 3$. $v_{\max} = 18 - 9 = 9\,\mathrm{m/s}$.
 
-Distance: $s = \int_0^6 (6t-t^2)\,dt = [3t^2 - t^3/3]_0^6 = 108 - 72 = 36\,\text{m}$.
+Distance: $s = \int_0^6 (6t-t^2)\,dt = [3t^2 - t^3/3]_0^6 = 108 - 72 = 36\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Variable Acceleration](#5-variable-acceleration) — Section 5.
 
@@ -570,18 +570,18 @@ Distance: $s = \int_0^6 (6t-t^2)\,dt = [3t^2 - t^3/3]_0^6 = 108 - 72 = 36\,\text
 
 <details>
 <summary>Problem 11</summary>
-Two balls are dropped from the same height, the second $1\,\text{s}$ after the first. How far apart are they when the first hits the ground (height $= 45\,\text{m}$)?
+Two balls are dropped from the same height, the second $1\,\mathrm{s}$ after the first. How far apart are they when the first hits the ground (height $= 45\,\mathrm{m}$)?
 </details>
 
 <details>
 <summary>Solution 11</summary>
-First ball: $t = \sqrt{90/9.8} \approx 3.03\,\text{s}$.
+First ball: $t = \sqrt{90/9.8} \approx 3.03\,\mathrm{s}$.
 
-Second ball at $t = 3.03$: has been falling for $2.03\,\text{s}$.
+Second ball at $t = 3.03$: has been falling for $2.03\,\mathrm{s}$.
 
-$s_2 = \tfrac{1}{2}(9.8)(2.03)^2 = 4.9 \times 4.121 \approx 20.19\,\text{m}$.
+$s_2 = \tfrac{1}{2}(9.8)(2.03)^2 = 4.9 \times 4.121 \approx 20.19\,\mathrm{m}$.
 
-Separation: $45 - 20.19 = 24.81\,\text{m}$.
+Separation: $45 - 20.19 = 24.81\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
 
@@ -589,7 +589,7 @@ Separation: $45 - 20.19 = 24.81\,\text{m}$.
 
 <details>
 <summary>Problem 12</summary>
-A projectile is launched from ground level and just clears a wall $20\,\text{m}$ high and $40\,\text{m}$ away. If the launch angle is $50^\circ$, find the minimum launch speed.
+A projectile is launched from ground level and just clears a wall $20\,\mathrm{m}$ high and $40\,\mathrm{m}$ away. If the launch angle is $50^\circ$, find the minimum launch speed.
 </details>
 
 <details>
@@ -600,7 +600,7 @@ $20 = 40\tan 50° - \dfrac{9.8 \times 1600}{2v^2\cos^2 50°}$.
 
 $20 = 40(1.1918) - \dfrac{15680}{2v^2(0.4132)} = 47.67 - \dfrac{15680}{0.8263v^2} = 47.67 - \dfrac{18976.9}{v^2}$.
 
-$\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\text{m/s}$.
+$\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Trajectory Equation](#44-derivation-of-the-trajectory-equation)
 — Section 4.4.
@@ -609,7 +609,7 @@ $\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\tex
 
 <details>
 <summary>Problem 13</summary>
-A particle moves with acceleration $a = 4 - 2t\,\text{m/s}^2$. When $t = 0$, $v = 3\,\text{m/s}$ and $s = 0$. Find the velocity and displacement when $t = 5$. Also find when the particle is at rest.
+A particle moves with acceleration $a = 4 - 2t\,\mathrm{m/s}^2$. When $t = 0$, $v = 3\,\mathrm{m/s}$ and $s = 0$. Find the velocity and displacement when $t = 5$. Also find when the particle is at rest.
 </details>
 
 <details>
@@ -619,13 +619,13 @@ $v = \int (4 - 2t)\,dt = 4t - t^2 + C$. Since $v(0) = 3$: $C = 3$, so $v = 4t - 
 $s = \int (4t - t^2 + 3)\,dt = 2t^2 - t^3/3 + 3t + K$. Since $s(0) = 0$: $K = 0$, so
 $s = 2t^2 - t^3/3 + 3t$.
 
-At $t = 5$: $v = 20 - 25 + 3 = -2\,\text{m/s}$,
-$s = 50 - 125/3 + 15 = 65 - 41.67 = 23.33\,\text{m}$.
+At $t = 5$: $v = 20 - 25 + 3 = -2\,\mathrm{m/s}$,
+$s = 50 - 125/3 + 15 = 65 - 41.67 = 23.33\,\mathrm{m}$.
 
 At rest:
 $v = 0 \implies -t^2 + 4t + 3 = 0 \implies t^2 - 4t - 3 = 0 \implies t = (4 \pm \sqrt{16+12})/2 = 2 \pm \sqrt{7}$.
 
-$t = 2 + \sqrt{7} \approx 4.65\,\text{s}$ (taking the positive root).
+$t = 2 + \sqrt{7} \approx 4.65\,\mathrm{s}$ (taking the positive root).
 
 **If you get this wrong, revise:** [Variable Acceleration](#5-variable-acceleration) — Section 5.
 
@@ -633,21 +633,21 @@ $t = 2 + \sqrt{7} \approx 4.65\,\text{s}$ (taking the positive root).
 
 <details>
 <summary>Problem 14</summary>
-A projectile is launched from the top of a cliff $60\,\text{m}$ high at $20\,\text{m/s}$ horizontally. Find the time to hit the ground, the horizontal distance from the base of the cliff, and the speed on impact. Take $g = 9.8\,\text{m/s}^2$.
+A projectile is launched from the top of a cliff $60\,\mathrm{m}$ high at $20\,\mathrm{m/s}$ horizontally. Find the time to hit the ground, the horizontal distance from the base of the cliff, and the speed on impact. Take $g = 9.8\,\mathrm{m/s}^2$.
 </details>
 
 <details>
 <summary>Solution 14</summary>
-Horizontal: $v_x = 20\,\text{m/s}$ (constant). Vertical: $u_y = 0$, $a_y = 9.8$, $s_y = 60$ (downwards positive).
+Horizontal: $v_x = 20\,\mathrm{m/s}$ (constant). Vertical: $u_y = 0$, $a_y = 9.8$, $s_y = 60$ (downwards positive).
 
-$s_y = \tfrac{1}{2}gt^2 \implies 60 = 4.9t^2 \implies t = \sqrt{60/4.9} \approx 3.50\,\text{s}$.
+$s_y = \tfrac{1}{2}gt^2 \implies 60 = 4.9t^2 \implies t = \sqrt{60/4.9} \approx 3.50\,\mathrm{s}$.
 
-Horizontal distance: $x = 20 \times 3.50 = 70.0\,\text{m}$.
+Horizontal distance: $x = 20 \times 3.50 = 70.0\,\mathrm{m}$.
 
-Vertical velocity on impact: $v_y = gt = 9.8 \times 3.50 = 34.3\,\text{m/s}$.
+Vertical velocity on impact: $v_y = gt = 9.8 \times 3.50 = 34.3\,\mathrm{m/s}$.
 
 Speed:
-$|\mathbf{v}| = \sqrt{20^2 + 34.3^2} = \sqrt{400 + 1176.49} = \sqrt{1576.49} \approx 39.7\,\text{m/s}$.
+$|\mathbf{v}| = \sqrt{20^2 + 34.3^2} = \sqrt{400 + 1176.49} = \sqrt{1576.49} \approx 39.7\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:**
 [Projectiles from a Height](#49-projectiles-launched-from-a-height) — Section 4.9.
@@ -676,12 +676,12 @@ $v = 54 - 81 + 36 - 5 = 4 \gt{} 0$.
 
 So $v \lt{} 0$ for $0 \lt{} t \lt{} 2.5$ and $v \gt{} 0$ for $t \gt{} 2.5$.
 
-$s(2.5) = \int_0^{2.5} v\,dt = \left[\tfrac{1}{2}t^4 - 3t^3 + 6t^2 - 5t\right]_0^{2.5} = 19.531 - 46.875 + 37.5 - 12.5 = -2.344\,\text{m}$.
+$s(2.5) = \int_0^{2.5} v\,dt = \left[\tfrac{1}{2}t^4 - 3t^3 + 6t^2 - 5t\right]_0^{2.5} = 19.531 - 46.875 + 37.5 - 12.5 = -2.344\,\mathrm{m}$.
 
-$s(3) = \left[\tfrac{1}{2}t^4 - 3t^3 + 6t^2 - 5t\right]_0^3 = 40.5 - 81 + 54 - 15 = -1.5\,\text{m}$.
+$s(3) = \left[\tfrac{1}{2}t^4 - 3t^3 + 6t^2 - 5t\right]_0^3 = 40.5 - 81 + 54 - 15 = -1.5\,\mathrm{m}$.
 
 Distance
-$= |s(2.5) - s(0)| + |s(3) - s(2.5)| = |-2.344| + |-1.5 - (-2.344)| = 2.344 + 0.844 = 3.188\,\text{m}$.
+$= |s(2.5) - s(0)| + |s(3) - s(2.5)| = |-2.344| + |-1.5 - (-2.344)| = 2.344 + 0.844 = 3.188\,\mathrm{m}$.
 
 **If you get this wrong, revise:**
 [Definite Integration for Distance](#54-definite-integration-for-distance-and-displacement) —
@@ -691,12 +691,12 @@ Section 5.4.
 
 <details>
 <summary>Problem 16</summary>
-A ball is thrown at $12\,\text{m/s}$ at an angle of $60^\circ$ above the horizontal from a point $2\,\text{m}$ above level ground. Find the speed and direction of the ball when it hits the ground. Take $g = 9.8\,\text{m/s}^2$.
+A ball is thrown at $12\,\mathrm{m/s}$ at an angle of $60^\circ$ above the horizontal from a point $2\,\mathrm{m}$ above level ground. Find the speed and direction of the ball when it hits the ground. Take $g = 9.8\,\mathrm{m/s}^2$.
 </details>
 
 <details>
 <summary>Solution 16</summary>
-$v_x = 12\cos 60° = 6\,\text{m/s}$, $v_{y0} = 12\sin 60° = 6\sqrt{3} \approx 10.39\,\text{m/s}$.
+$v_x = 12\cos 60° = 6\,\mathrm{m/s}$, $v_{y0} = 12\sin 60° = 6\sqrt{3} \approx 10.39\,\mathrm{m/s}$.
 
 Taking upwards as positive with launch at $s_y = 2$:
 
@@ -704,11 +704,11 @@ $s_y = v_{y0}\,t - \tfrac{1}{2}gt^2 = 2$. On hitting ground: $s_y = 0$ (relative
 
 $0 = 2 + 10.39t - 4.9t^2 \implies 4.9t^2 - 10.39t - 2 = 0$.
 
-$t = \dfrac{10.39 + \sqrt{107.95 + 39.2}}{9.8} = \dfrac{10.39 + \sqrt{147.15}}{9.8} = \dfrac{10.39 + 12.13}{9.8} \approx 2.29\,\text{s}$.
+$t = \dfrac{10.39 + \sqrt{107.95 + 39.2}}{9.8} = \dfrac{10.39 + \sqrt{147.15}}{9.8} = \dfrac{10.39 + 12.13}{9.8} \approx 2.29\,\mathrm{s}$.
 
-Vertical velocity at impact: $v_y = 10.39 - 9.8(2.29) = 10.39 - 22.44 = -12.05\,\text{m/s}$.
+Vertical velocity at impact: $v_y = 10.39 - 9.8(2.29) = 10.39 - 22.44 = -12.05\,\mathrm{m/s}$.
 
-Speed: $\sqrt{6^2 + 12.05^2} = \sqrt{36 + 145.20} = \sqrt{181.20} \approx 13.46\,\text{m/s}$.
+Speed: $\sqrt{6^2 + 12.05^2} = \sqrt{36 + 145.20} = \sqrt{181.20} \approx 13.46\,\mathrm{m/s}$.
 
 Angle below horizontal: $\arctan(12.05/6) \approx 63.5^\circ$.
 
@@ -719,7 +719,7 @@ Angle below horizontal: $\arctan(12.05/6) \approx 63.5^\circ$.
 
 <details>
 <summary>Problem 17</summary>
-A particle moves so that $a = -6s\,\text{m/s}^2$, where $s$ is the displacement from a fixed point. When $s = 0$, $v = 8\,\text{m/s}$. Find the velocity when $s = 1$.
+A particle moves so that $a = -6s\,\mathrm{m/s}^2$, where $s$ is the displacement from a fixed point. When $s = 0$, $v = 8\,\mathrm{m/s}$. Find the velocity when $s = 1$.
 </details>
 
 <details>
@@ -737,10 +737,10 @@ When $s = 0$, $v = 8$: $64/2 = C \implies C = 32$.
 $$\frac{v^2}{2} = -3s^2 + 32$$
 
 When $s = 1$:
-$v^2/2 = -3 + 32 = 29 \implies v^2 = 58 \implies v = \sqrt{58} \approx 7.62\,\text{m/s}$.
+$v^2/2 = -3 + 32 = 29 \implies v^2 = 58 \implies v = \sqrt{58} \approx 7.62\,\mathrm{m/s}$.
 
 The particle is still moving in the positive direction ($v \gt{} 0$) since it has not yet reached
-the turning point where $v = 0$ (which occurs at $s^2 = 32/3$, i.e., $s \approx 3.27\,\text{m}$).
+the turning point where $v = 0$ (which occurs at $s^2 = 32/3$, i.e., $s \approx 3.27\,\mathrm{m}$).
 
 **If you get this wrong, revise:**
 [Acceleration in Terms of Displacement](#53-acceleration-in-terms-of-displacement-or-velocity) —

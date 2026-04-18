@@ -79,9 +79,9 @@ class Graph:
 | ----------------- | ------------------------ |
 | Space             | $O(n + \lvert E \rvert)$ |
 | Add edge          | $O(1)$                   |
-| Remove edge       | $O(\text{degree})$       |
-| Check adjacency   | $O(\text{degree})$       |
-| List neighbours   | $O(\text{degree})$       |
+| Remove edge       | $O(\mathrm{degree})$       |
+| Check adjacency   | $O(\mathrm{degree})$       |
+| List neighbours   | $O(\mathrm{degree})$       |
 | Iterate all edges | $O(n + \lvert E \rvert)$ |
 
 **Best for:** Sparse graphs ($|E| \ll n^2$).
@@ -91,7 +91,7 @@ class Graph:
 | Property      | Adjacency Matrix | Adjacency List  |
 | ------------- | ---------------- | --------------- |
 | Space         | $O(V^2)$         | $O(V + E)$      |
-| Edge lookup   | $O(1)$           | $O(\text{deg})$ |
+| Edge lookup   | $O(1)$           | $O(\mathrm{deg})$ |
 | Add edge      | $O(1)$           | $O(1)$          |
 | Sparse graphs | Wasteful         | Efficient       |
 | Dense graphs  | Efficient        | Slightly slower |
@@ -223,21 +223,21 @@ def dijkstra(graph, source):
 in a graph with non-negative edge weights.
 
 **Proof.** We prove by induction that when a vertex $u$ is extracted from the priority queue (marked
-visited), $\text{dist}[u]$ equals the true shortest distance $d(s, u)$.
+visited), $\mathrm{dist}[u]$ equals the true shortest distance $d(s, u)$.
 
 Let $S$ be the set of visited vertices. We maintain the **invariant**: for every $u \in S$,
-$\text{dist}[u] = d(s, u)$.
+$\mathrm{dist}[u] = d(s, u)$.
 
-_Base case._ $s$ is extracted first with $\text{dist}[s] = 0 = d(s, s)$. ✓
+_Base case._ $s$ is extracted first with $\mathrm{dist}[s] = 0 = d(s, s)$. ✓
 
 _Inductive step._ Let $u$ be the next vertex extracted. Assume for contradiction that
-$\text{dist}[u] \gt{} d(s, u)$. Then there exists a shortest path $P$ from $s$ to $u$. Let $x$ be
+$\mathrm{dist}[u] \gt{} d(s, u)$. Then there exists a shortest path $P$ from $s$ to $u$. Let $x$ be
 the first vertex on $P$ not in $S$, and let $y$ be the predecessor of $x$ on $P$ ($y \in S$). Then:
 
-$$\text{dist}[x] \leq \text{dist}[y] + w(y, x) = d(s, y) + w(y, x) = d(s, x) \leq d(s, u) < \text{dist}[u]$$
+$$\mathrm{dist}[x] \leq \mathrm{dist}[y] + w(y, x) = d(s, y) + w(y, x) = d(s, x) \leq d(s, u) < \mathrm{dist}[u]$$
 
-Since $\text{dist}[x] \lt{} \text{dist}[u]$, $x$ would have been extracted from the priority queue
-before $u$ — contradiction. Therefore $\text{dist}[u] = d(s, u)$. $\square$
+Since $\mathrm{dist}[x] \lt{} \mathrm{dist}[u]$, $x$ would have been extracted from the priority queue
+before $u$ — contradiction. Therefore $\mathrm{dist}[u] = d(s, u)$. $\square$
 
 **Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$
 each), and each edge causes at most one decrease-key ($O(\log V)$ each).
@@ -516,9 +516,9 @@ counterexample.
 <summary>Answer</summary>
 
 Dijkstra's algorithm relies on the **greedy choice property**: once a vertex $u$ is extracted from
-the priority queue, $\text{dist}[u]$ is assumed to be final. This is valid only when all edge
+the priority queue, $\mathrm{dist}[u]$ is assumed to be final. This is valid only when all edge
 weights are non-negative, because any alternative path to $u$ must pass through an unvisited vertex
-whose distance is at least $\text{dist}[u]$.
+whose distance is at least $\mathrm{dist}[u]$.
 
 With negative edges, a shorter path to an already-visited vertex may be discovered later through a
 not-yet-visited vertex, invalidating the greedy choice.
@@ -537,7 +537,7 @@ $$S \xrightarrow{1} A \xrightarrow{2} B \xrightarrow{1} C, \quad S \xrightarrow{
 | 3    | B (3)   | 0       | 1        | **3**    | 4        |
 | 4    | C (4)   | 0       | 1        | 3        | **4**    |
 
-Dijkstra outputs $\text{dist}[B] = 3$. But the true shortest path is $S \to C \to B = 4 + (-3) = 1$.
+Dijkstra outputs $\mathrm{dist}[B] = 3$. But the true shortest path is $S \to C \to B = 4 + (-3) = 1$.
 The algorithm fails because when $C$ is extracted at distance 4, it finds a shorter path to $B$
 ($4 - 3 = 1$), but $B$ has already been extracted and marked as visited.
 

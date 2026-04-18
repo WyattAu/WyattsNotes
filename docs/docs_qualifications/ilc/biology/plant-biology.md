@@ -222,7 +222,7 @@ source).
   collected has a high sucrose concentration (up to 30%).
 - Ringing a stem (removing a ring of bark containing phloem) causes swelling above the ring as
   sugars accumulate. The tissue below the ring dies as it is cut off from its sugar supply.
-- Radioactive tracers (${}^{14}\text{C}$ in $CO_2$) fed to leaves show movement of labelled sugars
+- Radioactive tracers (${}^{14}\mathrm{C}$ in $CO_2$) fed to leaves show movement of labelled sugars
   to other parts of the plant through the phloem.
 - Phloem sap always flows from source to sink, not in the reverse direction.
 

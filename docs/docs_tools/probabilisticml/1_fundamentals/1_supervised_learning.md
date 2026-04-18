@@ -65,8 +65,8 @@ where $B(k)$ is a binary indicator function, with condition:
 $$
 B(k) =
 \begin{dcases}
-  1 \quad \text{if k is true}\\
-  0 \quad \text{if k is false}
+  1 \quad \mathrm{if k is true}\\
+  0 \quad \mathrm{if k is false}
 \end{dcases}
 $$
 

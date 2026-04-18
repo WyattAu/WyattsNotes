@@ -30,7 +30,7 @@ the underlying type.
 Given a pointer `T* ptr`, the operation `ptr + N` resolves to:
 
 $$
-\text{Address}_{new} = \text{Address}_{old} + (N \times \text{sizeof}(T))
+\mathrm{Address}_{new} = \mathrm{Address}_{old} + (N \times \mathrm{sizeof}(T))
 $$
 
 ### Architectural Implications

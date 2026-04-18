@@ -338,7 +338,7 @@ $$
 The signed area between $y = f(x)$ and the $x$-axis from $x = a$ to $x = b$ is:
 
 $$
-\text{Area} = \int_a^b f(x)\,dx
+\mathrm{Area} = \int_a^b f(x)\,dx
 $$
 
 If the curve crosses the $x$-axis, split the integral at the zeros and take the absolute value of
@@ -349,7 +349,7 @@ each part.
 The area between $y = f(x)$ and $y = g(x)$ from $x = a$ to $x = b$ (where $f(x) \ge g(x)$):
 
 $$
-\text{Area} = \int_a^b [f(x) - g(x)]\,dx
+\mathrm{Area} = \int_a^b [f(x) - g(x)]\,dx
 $$
 
 :::info[Example]
@@ -361,7 +361,7 @@ Intersection points: $x^2 = 2x \implies x(x-2) = 0 \implies x = 0$ or $x = 2$.
 For $0 \le x \le 2$: $2x \ge x^2$.
 
 $$
-\text{Area} = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
+\mathrm{Area} = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
 $$
 
 :::
@@ -373,7 +373,7 @@ Find the area enclosed by $y = x^2 - 4$ and the $x$-axis.
 Zeros: $x^2 - 4 = 0 \implies x = \pm 2$.
 
 $$
-\text{Area} = \int_{-2}^{2} |x^2 - 4|\,dx = 2\int_0^2 (4 - x^2)\,dx = 2\left[4x - \frac{x^3}{3}\right]_0^2 = 2\left(8 - \frac{8}{3}\right) = \frac{32}{3}
+\mathrm{Area} = \int_{-2}^{2} |x^2 - 4|\,dx = 2\int_0^2 (4 - x^2)\,dx = 2\left[4x - \frac{x^3}{3}\right]_0^2 = 2\left(8 - \frac{8}{3}\right) = \frac{32}{3}
 $$
 
 :::
@@ -464,21 +464,21 @@ $$
 ### Total Distance vs Displacement
 
 $$
-\text{Displacement} = \int_{t_1}^{t_2} v(t)\,dt
+\mathrm{Displacement} = \int_{t_1}^{t_2} v(t)\,dt
 $$
 
 $$
-\text{Total distance} = \int_{t_1}^{t_2} |v(t)|\,dt
+\mathrm{Total distance} = \int_{t_1}^{t_2} |v(t)|\,dt
 $$
 
 :::info[Example]
 
-A particle moves with velocity $v(t) = t^2 - 4t + 3\text{ m/s}$ for $0 \le t \le 5$.
+A particle moves with velocity $v(t) = t^2 - 4t + 3\mathrm{ m/s}$ for $0 \le t \le 5$.
 
 **(a)** Find the displacement.
 
 $$
-s = \int_0^5 (t^2 - 4t + 3)\,dt = \left[\frac{t^3}{3} - 2t^2 + 3t\right]_0^5 = \frac{125}{3} - 50 + 15 = \frac{40}{3}\text{ m}
+s = \int_0^5 (t^2 - 4t + 3)\,dt = \left[\frac{t^3}{3} - 2t^2 + 3t\right]_0^5 = \frac{125}{3} - 50 + 15 = \frac{40}{3}\mathrm{ m}
 $$
 
 **(b)** Find the total distance travelled.
@@ -492,11 +492,11 @@ Find when $v = 0$: $t^2 - 4t + 3 = 0 \implies (t-1)(t-3) = 0 \implies t = 1, 3$.
 | $3 \lt t \lt 5$ | $+$         | Forward  |
 
 $$
-\text{Distance} = \int_0^1 v\,dt + \left|\int_1^3 v\,dt\right| + \int_3^5 v\,dt
+\mathrm{Distance} = \int_0^1 v\,dt + \left|\int_1^3 v\,dt\right| + \int_3^5 v\,dt
 $$
 
 $$
-= \frac{4}{3} + \left|-\frac{4}{3}\right| + \frac{20}{3} = \frac{4}{3} + \frac{4}{3} + \frac{20}{3} = \frac{28}{3}\text{ m}
+= \frac{4}{3} + \left|-\frac{4}{3}\right| + \frac{20}{3} = \frac{4}{3} + \frac{4}{3} + \frac{20}{3} = \frac{28}{3}\mathrm{ m}
 $$
 
 :::
@@ -566,7 +566,7 @@ Let $R$ be the region bounded by the curve $y = x(x-2)$ and the $x$-axis.
 Zeros: $x = 0$ and $x = 2$. The curve is below the axis (opens upward).
 
 $$
-\text{Area} = \int_0^2 |x(x-2)|\,dx = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
+\mathrm{Area} = \int_0^2 |x(x-2)|\,dx = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
 $$
 
 **(b)** Find the volume when $R$ is rotated $360\degree$ about the $x$-axis.
@@ -621,8 +621,8 @@ $$
 
 ### Question 5 (Paper 2 style)
 
-A particle moves in a straight line with acceleration $a(t) = 6t - 2\text{ m/s}^2$. At $t = 0$, the
-velocity is $4\text{ m/s}$ and the displacement is $0\text{ m}$.
+A particle moves in a straight line with acceleration $a(t) = 6t - 2\mathrm{ m/s}^2$. At $t = 0$, the
+velocity is $4\mathrm{ m/s}$ and the displacement is $0\mathrm{ m}$.
 
 **(a)** Find the velocity function.
 
@@ -653,7 +653,7 @@ $$
 Check if $v = 0$: $3t^2 - 2t + 4 = 0$. Discriminant $= 4 - 48 \lt 0$, so $v \gt 0$ always.
 
 $$
-\text{Distance} = \int_0^3 v\,dt = \int_0^3 (3t^2 - 2t + 4)\,dt = \left[t^3 - t^2 + 4t\right]_0^3 = 27 - 9 + 12 = 30\text{ m}
+\mathrm{Distance} = \int_0^3 v\,dt = \int_0^3 (3t^2 - 2t + 4)\,dt = \left[t^3 - t^2 + 4t\right]_0^3 = 27 - 9 + 12 = 30\mathrm{ m}
 $$
 
 ### Question 6 (Paper 2 style)
@@ -923,7 +923,7 @@ Intersection: $x^3 = \sqrt{x} \implies x^6 = x \implies x(x^5 - 1) = 0 \implies 
 For $0 \le x \le 1$: $\sqrt{x} \ge x^3$.
 
 $$
-\text{Area} = \int_0^1 (\sqrt{x} - x^3)\,dx = \left[\frac{2x^{3/2}}{3} - \frac{x^4}{4}\right]_0^1 = \frac{2}{3} - \frac{1}{4} = \frac{5}{12}
+\mathrm{Area} = \int_0^1 (\sqrt{x} - x^3)\,dx = \left[\frac{2x^{3/2}}{3} - \frac{x^4}{4}\right]_0^1 = \frac{2}{3} - \frac{1}{4} = \frac{5}{12}
 $$
 
 ### Question 9 (Paper 1 style)

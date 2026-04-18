@@ -18,7 +18,7 @@ type, stored in **contiguous memory locations**. Each element is accessed by an 
 
 Formally, an array $A$ of type $T$ with $n$ elements maps indices to memory:
 
-$$A: \{0, 1, \ldots, n-1\} \to \text{Memory addresses}$$
+$$A: \{0, 1, \ldots, n-1\} \to \mathrm{Memory addresses}$$
 
 where $A[i]$ is stored at base address $b + i \times s$, and $s$ is the size (in bytes) of one
 element of type $T$.
@@ -27,7 +27,7 @@ element of type $T$.
 
 **Address calculation:**
 
-$$\text{addr}(A[i]) = b + i \cdot s$$
+$$\mathrm{addr}(A[i]) = b + i \cdot s$$
 
 where $b$ is the base address of the array, $i$ is the index, and $s$ is the element size.
 
@@ -96,7 +96,7 @@ class StaticArray:
 A **two-dimensional array** is an array of arrays — a matrix with $m$ rows and $n$ columns.
 Formally:
 
-$$A: \{0,\ldots,m-1\} \times \{0,\ldots,n-1\} \to \text{Memory}$$
+$$A: \{0,\ldots,m-1\} \times \{0,\ldots,n-1\} \to \mathrm{Memory}$$
 
 ### Memory Layouts
 
@@ -104,7 +104,7 @@ $$A: \{0,\ldots,m-1\} \times \{0,\ldots,n-1\} \to \text{Memory}$$
 
 Elements of each row are stored contiguously. Row 0 first, then row 1, etc.
 
-$$\text{addr}(A[i][j]) = b + (i \cdot n + j) \cdot s$$
+$$\mathrm{addr}(A[i][j]) = b + (i \cdot n + j) \cdot s$$
 
 This is the default in C, C++, Python (NumPy default), and most modern languages.
 
@@ -112,7 +112,7 @@ This is the default in C, C++, Python (NumPy default), and most modern languages
 
 Elements of each column are stored contiguously. Column 0 first, then column 1, etc.
 
-$$\text{addr}(A[i][j]) = b + (j \cdot m + i) \cdot s$$
+$$\mathrm{addr}(A[i][j]) = b + (j \cdot m + i) \cdot s$$
 
 This is the default in Fortran, MATLAB, R, and Julia.
 
@@ -311,7 +311,7 @@ the address of `A[7]`?
 <details>
 <summary>Answer</summary>
 
-$\text{addr}(A[7]) = 2000 + 7 \times 4 = 2000 + 28 = 2028$
+$\mathrm{addr}(A[7]) = 2000 + 7 \times 4 = 2000 + 28 = 2028$
 </details>
 
 **Problem 2.** A 2D array `A[4][5]` is stored in row-major order with base address 100. Each element
@@ -320,7 +320,7 @@ is 2 bytes. What is the address of `A[2][3]`?
 <details>
 <summary>Answer</summary>
 
-$\text{addr}(A[2][3]) = 100 + (2 \times 5 + 3) \times 2 = 100 + 13 \times 2 = 126$
+$\mathrm{addr}(A[2][3]) = 100 + (2 \times 5 + 3) \times 2 = 100 + 13 \times 2 = 126$
 </details>
 
 **Problem 3.** The same array `A[4][5]` is stored in column-major order. What is the address of
@@ -329,7 +329,7 @@ $\text{addr}(A[2][3]) = 100 + (2 \times 5 + 3) \times 2 = 100 + 13 \times 2 = 12
 <details>
 <summary>Answer</summary>
 
-$\text{addr}(A[2][3]) = 100 + (3 \times 4 + 2) \times 2 = 100 + 14 \times 2 = 128$
+$\mathrm{addr}(A[2][3]) = 100 + (3 \times 4 + 2) \times 2 = 100 + 14 \times 2 = 128$
 </details>
 
 **Problem 4.** A dynamic array starts at capacity 1 and doubles when full. After inserting 17
@@ -415,18 +415,18 @@ with size 10, what happens when you access `C[12]`?
 <details>
 <summary>Hint</summary>
 
-Use the address formula $\text{addr}(A[i]) = b + i \times s$. For the out-of-bounds access, consider
+Use the address formula $\mathrm{addr}(A[i]) = b + i \times s$. For the out-of-bounds access, consider
 whether the language performs bounds checking.
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\text{addr}(C[0]) = 3000 + 0 \times 1 = 3000$
+$\mathrm{addr}(C[0]) = 3000 + 0 \times 1 = 3000$
 
-$\text{addr}(C[4]) = 3000 + 4 \times 1 = 3004$
+$\mathrm{addr}(C[4]) = 3000 + 4 \times 1 = 3004$
 
-$\text{addr}(C[12]) = 3000 + 12 \times 1 = 3012$
+$\mathrm{addr}(C[12]) = 3000 + 12 \times 1 = 3012$
 
 If the array has size 10, valid indices are 0–9. Accessing `C[12]` is an **out-of-bounds access**.
 In Python, Java, and C#, this raises an `IndexError`/exception. In C and C++, no bounds checking
@@ -446,7 +446,7 @@ Work backwards from the address: find the index using the address formula, then 
 <details>
 <summary>Answer</summary>
 
-Given $\text{addr}(A[i]) = 500 + i \times 4 = 512$:
+Given $\mathrm{addr}(A[i]) = 500 + i \times 4 = 512$:
 
 $i \times 4 = 12$, so $i = 3$.
 
@@ -629,14 +629,14 @@ What is the address of `A[2][1]`? What value is stored there?
 <details>
 <summary>Hint</summary>
 
-Use the row-major formula: $\text{addr}(A[i][j]) = b + (i \cdot n + j) \cdot s$ where $n$ is the
+Use the row-major formula: $\mathrm{addr}(A[i][j]) = b + (i \cdot n + j) \cdot s$ where $n$ is the
 number of columns.
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\text{addr}(A[2][1]) = 1000 + (2 \times 3 + 1) \times 8 = 1000 + 7 \times 8 = 1000 + 56 = 1056$
+$\mathrm{addr}(A[2][1]) = 1000 + (2 \times 3 + 1) \times 8 = 1000 + 7 \times 8 = 1000 + 56 = 1056$
 
 The value at `A[2][1]` is **6**.
 

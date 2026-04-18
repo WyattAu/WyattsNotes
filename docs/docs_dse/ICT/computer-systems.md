@@ -454,13 +454,13 @@ A bitmap image is a grid of **pixels** (picture elements). Each pixel is assigne
 **Image file size (uncompressed):**
 
 $$
-\text{File Size (bits)} = \text{Width} \times \text{Height} \times \text{Colour Depth}
+\mathrm{File Size (bits)} = \mathrm{Width} \times \mathrm{Height} \times \mathrm{Colour Depth}
 $$
 
 **In bytes:**
 
 $$
-\text{File Size (bytes)} = \frac{\text{Width} \times \text{Height} \times \text{Colour Depth}}{8}
+\mathrm{File Size (bytes)} = \frac{\mathrm{Width} \times \mathrm{Height} \times \mathrm{Colour Depth}}{8}
 $$
 
 <details>
@@ -469,19 +469,19 @@ $$
 A $1024 \times 768$ image with 24-bit colour depth.
 
 $$
-\text{Size (bits)} = 1024 \times 768 \times 24 = 18874368 \text{ bits}
+\mathrm{Size (bits)} = 1024 \times 768 \times 24 = 18874368 \mathrm{ bits}
 $$
 
 $$
-\text{Size (bytes)} = \frac{18874368}{8} = 2359296 \text{ bytes}
+\mathrm{Size (bytes)} = \frac{18874368}{8} = 2359296 \mathrm{ bytes}
 $$
 
 $$
-\text{Size (KB)} = \frac{2359296}{1024} = 2304 \text{ KB}
+\mathrm{Size (KB)} = \frac{2359296}{1024} = 2304 \mathrm{ KB}
 $$
 
 $$
-\text{Size (MB)} = \frac{2304}{1024} = 2.25 \text{ MB}
+\mathrm{Size (MB)} = \frac{2304}{1024} = 2.25 \mathrm{ MB}
 $$
 
 </details>
@@ -527,13 +527,13 @@ accurate representation of the analogue signal. Common values: 8-bit (telephone 
 (CD), 24-bit (studio recording).
 
 **Nyquist theorem:** To accurately capture a sound with maximum frequency $f_{\max}$, the sampling
-rate must be at least $2f_{\max}$. Since human hearing ranges up to approximately $20\text{ kHz}$,
-the CD sampling rate of $44\,100\text{ Hz}$ is sufficient (Nyquist frequency = $22\,050\text{ Hz}$).
+rate must be at least $2f_{\max}$. Since human hearing ranges up to approximately $20\mathrm{ kHz}$,
+the CD sampling rate of $44\,100\mathrm{ Hz}$ is sufficient (Nyquist frequency = $22\,050\mathrm{ Hz}$).
 
 **File size calculation:**
 
 $$
-\text{File Size (bits)} = \text{Sampling Rate} \times \text{Bit Depth} \times \text{Duration (s)} \times \text{Channels}
+\mathrm{File Size (bits)} = \mathrm{Sampling Rate} \times \mathrm{Bit Depth} \times \mathrm{Duration (s)} \times \mathrm{Channels}
 $$
 
 - Mono: 1 channel. Stereo: 2 channels.
@@ -544,19 +544,19 @@ $$
 A 3-minute stereo recording at CD quality (44 100 Hz, 16-bit).
 
 $$
-\text{Duration} = 3 \times 60 = 180 \text{ seconds}
+\mathrm{Duration} = 3 \times 60 = 180 \mathrm{ seconds}
 $$
 
 $$
-\text{Size (bits)} = 44100 \times 16 \times 180 \times 2 = 254016000 \text{ bits}
+\mathrm{Size (bits)} = 44100 \times 16 \times 180 \times 2 = 254016000 \mathrm{ bits}
 $$
 
 $$
-\text{Size (bytes)} = \frac{254016000}{8} = 31752000 \text{ bytes}
+\mathrm{Size (bytes)} = \frac{254016000}{8} = 31752000 \mathrm{ bytes}
 $$
 
 $$
-\text{Size (MB)} = \frac{31752000}{1024 \times 1024} \approx 30.28 \text{ MB}
+\mathrm{Size (MB)} = \frac{31752000}{1024 \times 1024} \approx 30.28 \mathrm{ MB}
 $$
 
 </details>
@@ -610,7 +610,7 @@ A school needs to store 500 GB of student records. They are considering an HDD v
 
 Answer:
 
-(a) $500 \text{ GB} = 0.5 \text{ TB}$. One 1 TB HDD is sufficient.
+(a) $500 \mathrm{ GB} = 0.5 \mathrm{ TB}$. One 1 TB HDD is sufficient.
 
 (b) **Advantages of SSD:** Faster read/write speeds, no moving parts (more durable, less prone to
 mechanical failure), quieter operation, lower power consumption.
@@ -699,25 +699,25 @@ Answer:
 (a)
 
 $$
-\text{Size (bits)} = 4000 \times 3000 \times 32 = 384000000 \text{ bits}
+\mathrm{Size (bits)} = 4000 \times 3000 \times 32 = 384000000 \mathrm{ bits}
 $$
 
 $$
-\text{Size (bytes)} = \frac{384000000}{8} = 48000000 \text{ bytes}
+\mathrm{Size (bytes)} = \frac{384000000}{8} = 48000000 \mathrm{ bytes}
 $$
 
 $$
-\text{Size (MB)} = \frac{48000000}{1024 \times 1024} \approx 45.77 \text{ MB}
+\mathrm{Size (MB)} = \frac{48000000}{1024 \times 1024} \approx 45.77 \mathrm{ MB}
 $$
 
 (b)
 
 $$
-16 \text{ GB} = 16 \times 1024 \text{ MB} = 16384 \text{ MB}
+16 \mathrm{ GB} = 16 \times 1024 \mathrm{ MB} = 16384 \mathrm{ MB}
 $$
 
 $$
-\text{Number of images} = \left\lfloor \frac{16384}{45.77} \right\rfloor = 358 \text{ images}
+\mathrm{Number of images} = \left\lfloor \frac{16384}{45.77} \right\rfloor = 358 \mathrm{ images}
 $$
 
 </details>
@@ -736,19 +736,19 @@ Answer:
 (a)
 
 $$
-\text{Duration} = 2 \times 60 = 120 \text{ seconds}
+\mathrm{Duration} = 2 \times 60 = 120 \mathrm{ seconds}
 $$
 
 $$
-\text{Size (bits)} = 22050 \times 8 \times 120 \times 1 = 21168000 \text{ bits}
+\mathrm{Size (bits)} = 22050 \times 8 \times 120 \times 1 = 21168000 \mathrm{ bits}
 $$
 
 $$
-\text{Size (bytes)} = \frac{21168000}{8} = 2646000 \text{ bytes}
+\mathrm{Size (bytes)} = \frac{21168000}{8} = 2646000 \mathrm{ bytes}
 $$
 
 $$
-\text{Size (MB)} = \frac{2646000}{1024 \times 1024} \approx 2.52 \text{ MB}
+\mathrm{Size (MB)} = \frac{2646000}{1024 \times 1024} \approx 2.52 \mathrm{ MB}
 $$
 
 (b) Doubling the sampling rate doubles the file size to approximately 5.05 MB. Sound quality
@@ -771,7 +771,7 @@ Answer:
 
 (a) 'h' = 72 + 32 = 104. (Lowercase letters are 32 positions after their uppercase counterparts.)
 
-(b) Each ASCII character is 1 byte. $1000 \text{ bytes} / 1024 = 0.98 \text{ KB}$.
+(b) Each ASCII character is 1 byte. $1000 \mathrm{ bytes} / 1024 = 0.98 \mathrm{ KB}$.
 
 (c) ASCII only supports 128 characters (English alphabet, digits, basic symbols). Unicode supports
 over 149 000 characters covering all major writing systems, symbols, and emoji. This makes Unicode
@@ -848,19 +848,19 @@ Answer:
 (c)
 
 $$
-\text{Uncompressed (bits)} = 800 \times 600 \times 16 = 7680000 \text{ bits}
+\mathrm{Uncompressed (bits)} = 800 \times 600 \times 16 = 7680000 \mathrm{ bits}
 $$
 
 $$
-\text{Uncompressed (bytes)} = \frac{7680000}{8} = 960000 \text{ bytes}
+\mathrm{Uncompressed (bytes)} = \frac{7680000}{8} = 960000 \mathrm{ bytes}
 $$
 
 $$
-\text{Uncompressed (KB)} = \frac{960000}{1024} = 937.5 \text{ KB}
+\mathrm{Uncompressed (KB)} = \frac{960000}{1024} = 937.5 \mathrm{ KB}
 $$
 
 $$
-\text{Compressed (KB)} = \frac{937.5}{3} \times 2 = 625 \text{ KB}
+\mathrm{Compressed (KB)} = \frac{937.5}{3} \times 2 = 625 \mathrm{ KB}
 $$
 
 </details>

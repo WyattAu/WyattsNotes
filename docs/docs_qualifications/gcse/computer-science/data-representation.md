@@ -368,20 +368,20 @@ Each combination maps to a unique colour. So 24 bits gives $2^{24} = 16,777,216$
 
 ### 4.2 Calculating Image File Size
 
-$$\text{File size (bits)} = \text{width} \times \text{height} \times \text{colour depth}$$
+$$\mathrm{File size (bits)} = \mathrm{width} \times \mathrm{height} \times \mathrm{colour depth}$$
 
 **Worked Example.** An image is 1920 $\times$ 1080 pixels with 24-bit colour depth. Calculate the
 file size in megabytes.
 
-$$\text{File size} = 1920 \times 1080 \times 24 = 49766400 \text{ bits}$$
-$$= \frac{49766400}{8} = 6220800 \text{ bytes}$$
-$$= \frac{6220800}{1024 \times 1024} \approx 5.93 \text{ MB}$$
+$$\mathrm{File size} = 1920 \times 1080 \times 24 = 49766400 \mathrm{ bits}$$
+$$= \frac{49766400}{8} = 6220800 \mathrm{ bytes}$$
+$$= \frac{6220800}{1024 \times 1024} \approx 5.93 \mathrm{ MB}$$
 
 **Worked Example.** An image is 800 $\times$ 600 pixels with 32-bit colour depth.
 
 $$
-\text{File size} = 800 \times 600 \times 32 = 15360000 \text{ bits} = 1920000 \text{ bytes} \approx
-1.83 \text{ MB}
+\mathrm{File size} = 800 \times 600 \times 32 = 15360000 \mathrm{ bits} = 1920000 \mathrm{ bytes} \approx
+1.83 \mathrm{ MB}
 $$
 
 **Worked Example (Higher Tier).** A 4-megapixel image has a file size of 3 MB. What is the colour
@@ -389,7 +389,7 @@ depth?
 
 $4 \times 10^6$ pixels $\times$ colour depth = $3 \times 1024 \times 1024 \times 8$ bits.
 
-$\text{Colour depth} = \frac{3 \times 1048576 \times 8}{4000000} = \frac{25165824}{4000000} \approx
+$\mathrm{Colour depth} = \frac{3 \times 1048576 \times 8}{4000000} = \frac{25165824}{4000000} \approx
 6.29$
 bits.
 
@@ -468,24 +468,24 @@ original curve.
 
 ### 5.3 Calculating Sound File Size
 
-$$\text{File size (bits)} = \text{sample rate} \times \text{sample resolution} \times \text{duration (seconds)} \times \text{channels}$$
+$$\mathrm{File size (bits)} = \mathrm{sample rate} \times \mathrm{sample resolution} \times \mathrm{duration (seconds)} \times \mathrm{channels}$$
 
 **Worked Example.** A 3-minute audio clip is recorded at 44100 Hz with 16-bit resolution (mono).
 Calculate the file size.
 
-$$\text{File size} = 44100 \times 16 \times 180 = 127008000 \text{ bits}$$
-$$= \frac{127008000}{8} = 15876000 \text{ bytes} \approx 15.14 \text{ MB}$$
+$$\mathrm{File size} = 44100 \times 16 \times 180 = 127008000 \mathrm{ bits}$$
+$$= \frac{127008000}{8} = 15876000 \mathrm{ bytes} \approx 15.14 \mathrm{ MB}$$
 
 **Worked Example.** A 2-minute stereo audio clip at 48000 Hz with 24-bit resolution.
 
-$$\text{File size} = 48000 \times 24 \times 120 \times 2 = 276480000 \text{ bits} \approx 32.94 \text{ MB}$$
+$$\mathrm{File size} = 48000 \times 24 \times 120 \times 2 = 276480000 \mathrm{ bits} \approx 32.94 \mathrm{ MB}$$
 
 **Worked Example (Higher Tier).** A 5-minute mono recording at 22050 Hz has a file size of 12.5 MB.
 What is the bit depth?
 
-$\text{File size in bits} = 12.5 \times 1024 \times 1024 \times 8 = 104857600$ bits.
+$\mathrm{File size in bits} = 12.5 \times 1024 \times 1024 \times 8 = 104857600$ bits.
 
-$\text{Bit depth} = \frac{104857600}{22050 \times 300} = \frac{104857600}{6615000} \approx 15.85$.
+$\mathrm{Bit depth} = \frac{104857600}{22050 \times 300} = \frac{104857600}{6615000} \approx 15.85$.
 
 This is closest to 16-bit, which gives: $22050 \times 16 \times 300 = 105840000$ bits $\approx
 12.62$
@@ -648,7 +648,7 @@ table above.
 
 For an $n$-bit two's complement number, the range is:
 
-$$-2^{n-1} \text{ to } 2^{n-1} - 1$$
+$$-2^{n-1} \mathrm{ to } 2^{n-1} - 1$$
 
 | Bits | Range                     |
 | ---- | ------------------------- |

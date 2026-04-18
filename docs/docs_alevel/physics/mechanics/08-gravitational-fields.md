@@ -99,7 +99,7 @@ Every planet moves in an elliptical orbit with the Sun at one focus.
 
 A line joining a planet to the Sun sweeps out equal areas in equal times. This means the planet moves faster when closer to the Sun (near perihelion) and slower when farther (near aphelion).
 
-**Proof from conservation of angular momentum.** $L = mrv_\perp = \text{const}$. When $r$ is small, $v_\perp$ must be large, and vice versa.
+**Proof from conservation of angular momentum.** $L = mrv_\perp = \mathrm{const}$. When $r$ is small, $v_\perp$ must be large, and vice versa.
 
 ### Third Law: Law of Periods
 
@@ -133,7 +133,7 @@ $$\boxed{v_e = \sqrt{\frac{2GM}{r}}}$$
 
 For Earth: $v_e = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.37 \times 10^6}} = \sqrt{1.25 \times 10^8} \approx 11.2$ km s$^{-1}$.
 
-**Intuition.** The escape velocity is $\sqrt{2}$ times the circular orbital velocity at the same radius. This factor of $\sqrt{2}$ comes from the ratio of kinetic energies: escape requires $2 \times$ the orbital KE (since $v_e^2 = 2GM/r = 2v_{\text{orbit}}^2$).
+**Intuition.** The escape velocity is $\sqrt{2}$ times the circular orbital velocity at the same radius. This factor of $\sqrt{2}$ comes from the ratio of kinetic energies: escape requires $2 \times$ the orbital KE (since $v_e^2 = 2GM/r = 2v_{\mathrm{orbit}}^2$).
 
 ## 7. Orbital Energy
 
@@ -149,7 +149,7 @@ $$E_p = -\frac{GMm}{r}$$
 
 **Total energy:**
 
-$$\boxed{E_{\text{total}} = E_k + E_p = -\frac{GMm}{2r}}$$
+$$\boxed{E_{\mathrm{total}} = E_k + E_p = -\frac{GMm}{2r}}$$
 
 **Intuition.** The total energy is negative — the satellite is bound. To move to a higher orbit, energy must be added. The total energy is exactly half the potential energy (and the negative of the kinetic energy).
 
@@ -191,7 +191,7 @@ A satellite orbits Earth at an altitude of $400$ km. Calculate: (a) its orbital 
 
 <details>
 <summary>Problem 3</summary>
-Calculate the escape velocity from the Moon, given $M_{\text{Moon}} = 7.35 \times 10^{22}$ kg and $R_{\text{Moon}} = 1.74 \times 10^6$ m.
+Calculate the escape velocity from the Moon, given $M_{\mathrm{Moon}} = 7.35 \times 10^{22}$ kg and $R_{\mathrm{Moon}} = 1.74 \times 10^6$ m.
 
 **Answer.** $v_e = \sqrt{2GM/R} = \sqrt{2 \times 6.67 \times 10^{-11} \times 7.35 \times 10^{22}/1.74 \times 10^6} = \sqrt{5.64 \times 10^6} = 2370$ m s$^{-1} = 2.37$ km s$^{-1}$.
 
@@ -299,15 +299,15 @@ At $h = 100$ km: $g_{100} = 9.81 \times (6370/6470)^2 = 9.81 \times 0.9693 = 9.5
 
 At $h = 300$ km (typical low Earth orbit): $g_{300} = 9.81 \times (6370/6670)^2 = 9.81 \times 0.9120 = 8.95$ N kg$^{-1}$, a decrease of about 8.8%.
 
-At $h = 35786$ km (geostationary orbit): $g_{\text{GEO}} = 9.81 \times (6370/42156)^2 = 9.81 \times 0.0228 = 0.224$ N kg$^{-1}$, only about 2.3% of the surface value.
+At $h = 35786$ km (geostationary orbit): $g_{\mathrm{GEO}} = 9.81 \times (6370/42156)^2 = 9.81 \times 0.0228 = 0.224$ N kg$^{-1}$, only about 2.3% of the surface value.
 
 ### Field Strength Inside the Earth
 
 For a uniform sphere of radius $R$ and mass $M$, the field strength at distance $r$ from the centre ($r \lt R$) is:
 
-$$g(r) = \frac{GM_{\text{enc}}}{r^2} = \frac{G(Mr^3/R^3)}{r^2} = \frac{GM}{R^3}\,r = g_0 \frac{r}{R}$$
+$$g(r) = \frac{GM_{\mathrm{enc}}}{r^2} = \frac{G(Mr^3/R^3)}{r^2} = \frac{GM}{R^3}\,r = g_0 \frac{r}{R}$$
 
-where $M_{\text{enc}} = M(r/R)^3$ is the mass enclosed within radius $r$ (shell theorem).
+where $M_{\mathrm{enc}} = M(r/R)^3$ is the mass enclosed within radius $r$ (shell theorem).
 
 This shows $g$ increases linearly from $0$ at the centre to $g_0$ at the surface. Maximum $g$ occurs at the surface (for a uniform sphere).
 
@@ -336,13 +336,13 @@ Substituting $GM = 3.976 \times 10^{14}$ N m$^2$ kg$^{-1}$ and $\omega = 2\pi/86
 
 $$r^3 = \frac{3.976 \times 10^{14}}{(7.272 \times 10^{-5})^2} = \frac{3.976 \times 10^{14}}{5.288 \times 10^{-9}} = 7.52 \times 10^{22}$$
 
-$$r = \sqrt[3]{7.52 \times 10^{22}} = 4.22 \times 10^7 \text{ m} = 42{,}200 \text{ km}$$
+$$r = \sqrt[3]{7.52 \times 10^{22}} = 4.22 \times 10^7 \mathrm{ m} = 42{,}200 \mathrm{ km}$$
 
 The altitude above Earth's surface is $h = r - R_E = 42200 - 6370 = 35{,}830$ km.
 
 ### Orbital Speed
 
-$$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{3.976 \times 10^{14}}{4.22 \times 10^7}} = \sqrt{9.42 \times 10^6} = 3070 \text{ m s}^{-1}$$
+$$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{3.976 \times 10^{14}}{4.22 \times 10^7}} = \sqrt{9.42 \times 10^6} = 3070 \mathrm{ m s}^{-1}$$
 
 **Verification:** $v = \omega r = (7.272 \times 10^{-5})(4.22 \times 10^7) = 3070$ m s$^{-1}$. $\checkmark$
 
@@ -389,13 +389,13 @@ $$\Delta E_p = \frac{GMmh}{R_E^2} = mgh$$
 
 since $g = GM/R_E^2$.
 
-$$\boxed{\Delta E_p = mgh \quad \text{(valid for } h \ll R_E\text{)}}$$
+$$\boxed{\Delta E_p = mgh \quad \mathrm{(valid for } h \ll R_E\mathrm{)}}$$
 
 **Proof that this is the first-order approximation.** The Taylor expansion gives $\Delta E_p = mgh(1 - h/R_E + h^2/R_E^2 - \cdots)$. The leading term is $mgh$, and the correction is of relative order $h/R_E$. For $h = 1$ km, $h/R_E \approx 1.6 \times 10^{-4}$, so the error is about 0.016%. $\square$
 
 ### Negative Total Energy Means a Bound System
 
-For a satellite in orbit, $E_{\text{total}} = -GMm/(2r) \lt 0$. Negative total energy means the system is gravitationally **bound** — the satellite cannot escape without an input of energy. To escape, enough energy must be added to raise $E_{\text{total}}$ to zero.
+For a satellite in orbit, $E_{\mathrm{total}} = -GMm/(2r) \lt 0$. Negative total energy means the system is gravitationally **bound** — the satellite cannot escape without an input of energy. To escape, enough energy must be added to raise $E_{\mathrm{total}}$ to zero.
 
 :::tip
 Exam Technique
@@ -413,13 +413,13 @@ At the surface of a planet (radius $r$), an object of mass $m$ has:
 
 To just reach infinity with zero speed (the minimum condition for escape):
 
-$$\frac{1}{2}mv_{\text{esc}}^2 - \frac{GMm}{r} = 0$$
+$$\frac{1}{2}mv_{\mathrm{esc}}^2 - \frac{GMm}{r} = 0$$
 
-$$\boxed{v_{\text{esc}} = \sqrt{\frac{2GM}{r}}}$$
+$$\boxed{v_{\mathrm{esc}} = \sqrt{\frac{2GM}{r}}}$$
 
 ### Numerical Values
 
-| Body | $v_{\text{esc}}$ (km s$^{-1}$) |
+| Body | $v_{\mathrm{esc}}$ (km s$^{-1}$) |
 |---|---|
 | Earth | 11.2 |
 | Moon | 2.4 |
@@ -428,11 +428,11 @@ $$\boxed{v_{\text{esc}} = \sqrt{\frac{2GM}{r}}}$$
 
 ### Relationship to Orbital Speed
 
-The circular orbital speed at radius $r$ is $v_{\text{orbit}} = \sqrt{GM/r}$. Comparing:
+The circular orbital speed at radius $r$ is $v_{\mathrm{orbit}} = \sqrt{GM/r}$. Comparing:
 
-$$v_{\text{esc}} = \sqrt{2} \, v_{\text{orbit}}$$
+$$v_{\mathrm{esc}} = \sqrt{2} \, v_{\mathrm{orbit}}$$
 
-The escape velocity is $\sqrt{2} \approx 1.41$ times the circular orbital speed at the same radius. This factor of $\sqrt{2}$ arises because escaping requires exactly twice the kinetic energy of a circular orbit: $\frac{1}{2}mv_{\text{esc}}^2 = 2 \times \frac{1}{2}mv_{\text{orbit}}^2$.
+The escape velocity is $\sqrt{2} \approx 1.41$ times the circular orbital speed at the same radius. This factor of $\sqrt{2}$ arises because escaping requires exactly twice the kinetic energy of a circular orbit: $\frac{1}{2}mv_{\mathrm{esc}}^2 = 2 \times \frac{1}{2}mv_{\mathrm{orbit}}^2$.
 
 ### Implications
 
@@ -483,9 +483,9 @@ Error term: $\delta = h/R = 10000/6.37 \times 10^6 = 1.57 \times 10^{-3} = 0.157
 <summary>Problem 14</summary>
 A spacecraft is in a circular orbit of radius $r$ around Earth. What speed increase is needed for it to escape? Express your answer as a fraction of its current orbital speed.
 
-**Answer.** Current speed: $v_{\text{orbit}} = \sqrt{GM/r}$. Escape speed: $v_{\text{esc}} = \sqrt{2GM/r} = \sqrt{2}\,v_{\text{orbit}}$.
+**Answer.** Current speed: $v_{\mathrm{orbit}} = \sqrt{GM/r}$. Escape speed: $v_{\mathrm{esc}} = \sqrt{2GM/r} = \sqrt{2}\,v_{\mathrm{orbit}}$.
 
-Required speed increase: $\Delta v = v_{\text{esc}} - v_{\text{orbit}} = (\sqrt{2} - 1)v_{\text{orbit}} \approx 0.414\,v_{\text{orbit}}$.
+Required speed increase: $\Delta v = v_{\mathrm{esc}} - v_{\mathrm{orbit}} = (\sqrt{2} - 1)v_{\mathrm{orbit}} \approx 0.414\,v_{\mathrm{orbit}}$.
 
 The spacecraft needs a speed increase of approximately **41.4%** of its orbital speed.
 
@@ -504,7 +504,7 @@ $E_2 = -3.976 \times 10^{14} \times 800/(2 \times 1.05 \times 10^7) = -1.52 \tim
 
 (b) $\Delta E = E_2 - E_1 = -1.52 \times 10^{10} - (-2.27 \times 10^{10}) = 7.5 \times 10^9$ J $= 7.5$ GJ.
 
-(c) $v_{\text{esc}} = \sqrt{2GM/r_1} = \sqrt{2 \times 3.976 \times 10^{14}/7.0 \times 10^6} = \sqrt{1.136 \times 10^8} = 10660$ m s$^{-1} = 10.7$ km s$^{-1}$.
+(c) $v_{\mathrm{esc}} = \sqrt{2GM/r_1} = \sqrt{2 \times 3.976 \times 10^{14}/7.0 \times 10^6} = \sqrt{1.136 \times 10^8} = 10660$ m s$^{-1} = 10.7$ km s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Escape Velocity — Extended Discussion](#12-escape-velocity--extended-discussion) and [Orbital Energy](#7-orbital-energy)
 </details>

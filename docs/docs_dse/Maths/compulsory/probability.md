@@ -49,7 +49,7 @@ If all elementary outcomes in a finite sample space $S$ are equally likely, then
 
 $$
 \begin{aligned}
-  P(A) = \frac{|A|}{|S|} = \frac{\text{number of favourable outcomes}}{\text{total number of outcomes}}
+  P(A) = \frac{|A|}{|S|} = \frac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}
 \end{aligned}
 $$
 
@@ -61,9 +61,9 @@ This definition reduces probability to a counting problem and directly connects 
 
 A fair six-sided die is rolled. The sample space is $S = \\{1, 2, 3, 4, 5, 6\\}$.
 
-- $P(\text{even}) = \frac{|\\{2, 4, 6\\}|}{|S|} = \frac{3}{6} = \frac{1}{2}$.
-- $P(\text{prime}) = \frac{|\\{2, 3, 5\\}|}{|S|} = \frac{3}{6} = \frac{1}{2}$.
-- $P(\text{even AND prime}) = \frac{|\\{2\\}|}{|S|} = \frac{1}{6}$.
+- $P(\mathrm{even}) = \frac{|\\{2, 4, 6\\}|}{|S|} = \frac{3}{6} = \frac{1}{2}$.
+- $P(\mathrm{prime}) = \frac{|\\{2, 3, 5\\}|}{|S|} = \frac{3}{6} = \frac{1}{2}$.
+- $P(\mathrm{even AND prime}) = \frac{|\\{2\\}|}{|S|} = \frac{1}{6}$.
 
 </details>
 
@@ -395,13 +395,13 @@ $$
 A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement. Find the probability
 that both are red.
 
-- $P(\text{1st red}) = \frac{5}{8}$.
-- $P(\text{2nd red} \mid \text{1st red}) = \frac{4}{7}$.
-- $P(\text{both red}) = \frac{5}{8} \times \frac{4}{7} = \frac{20}{56} = \frac{5}{14}$.
+- $P(\mathrm{1st red}) = \frac{5}{8}$.
+- $P(\mathrm{2nd red} \mid \mathrm{1st red}) = \frac{4}{7}$.
+- $P(\mathrm{both red}) = \frac{5}{8} \times \frac{4}{7} = \frac{20}{56} = \frac{5}{14}$.
 
 With replacement, the second draw is unaffected:
 
-- $P(\text{both red, with replacement}) = \frac{5}{8} \times \frac{5}{8} = \frac{25}{64}$.
+- $P(\mathrm{both red, with replacement}) = \frac{5}{8} \times \frac{5}{8} = \frac{25}{64}$.
 
 </details>
 
@@ -452,8 +452,8 @@ _Proof._ We show $A$ and $B'$ are independent. The others follow by identical re
 
 $$
 \begin{aligned}
-  P(A \cap B') &= P(A) - P(A \cap B) &\quad&\text{(since } A = (A \cap B) \cup (A \cap B') \text{)} \\
-               &= P(A) - P(A) \cdot P(B) &\quad&\text{(by independence)} \\
+  P(A \cap B') &= P(A) - P(A \cap B) &\quad&\mathrm{(since } A = (A \cap B) \cup (A \cap B') \mathrm{)} \\
+               &= P(A) - P(A) \cdot P(B) &\quad&\mathrm{(by independence)} \\
                &= P(A)(1 - P(B)) \\
                &= P(A) \cdot P(B') \quad \square
 \end{aligned}
@@ -470,7 +470,7 @@ Two fair coins are tossed. Let $A$ = "first coin is heads" and $B$ = "second coi
 Now $A'$ = "first coin is tails" and $B'$ = "second coin is heads":
 
 - $P(A') = \frac{1}{2}$, $P(B') = \frac{1}{2}$,
-  $P(A' \cap B') = P(\text{tails, heads}) = \frac{1}{4}$.
+  $P(A' \cap B') = P(\mathrm{tails, heads}) = \frac{1}{4}$.
 - $P(A') \cdot P(B') = \frac{1}{4} = P(A' \cap B')$. Independent. $\checkmark$
 
 </details>
@@ -581,8 +581,8 @@ The denominator is $P(E)$ computed via the law of total probability.
 
 A disease affects 1% of a population. A test has:
 
-- Sensitivity (true positive rate): $P(\text{positive} \mid \text{disease}) = 0.95$.
-- False positive rate: $P(\text{positive} \mid \text{no disease}) = 0.02$.
+- Sensitivity (true positive rate): $P(\mathrm{positive} \mid \mathrm{disease}) = 0.95$.
+- False positive rate: $P(\mathrm{positive} \mid \mathrm{no disease}) = 0.02$.
 
 A person tests positive. What is the probability they actually have the disease?
 
@@ -664,12 +664,12 @@ Root -- 4/6 (R)
 Verification: all path probabilities sum to $\frac{12 + 8 + 8 + 2}{30} = \frac{30}{30} = 1$.
 $\checkmark$
 
-- $P(\text{both red}) = \frac{12}{30} = \frac{2}{5}$.
-- $P(\text{both blue}) = \frac{2}{30} = \frac{1}{15}$.
-- $P(\text{same colour}) = \frac{12}{30} + \frac{2}{30} = \frac{14}{30} = \frac{7}{15}$.
-- $P(\text{different colours}) = \frac{8}{30} + \frac{8}{30} = \frac{16}{30} = \frac{8}{15}$.
+- $P(\mathrm{both red}) = \frac{12}{30} = \frac{2}{5}$.
+- $P(\mathrm{both blue}) = \frac{2}{30} = \frac{1}{15}$.
+- $P(\mathrm{same colour}) = \frac{12}{30} + \frac{2}{30} = \frac{14}{30} = \frac{7}{15}$.
+- $P(\mathrm{different colours}) = \frac{8}{30} + \frac{8}{30} = \frac{16}{30} = \frac{8}{15}$.
 
-Note: $P(\text{same}) + P(\text{different}) = 1$, as expected since these events are complements.
+Note: $P(\mathrm{same}) + P(\mathrm{different}) = 1$, as expected since these events are complements.
 
 </details>
 
@@ -740,7 +740,7 @@ At least two heads means 2 or 3 heads:
 
 $$
 \begin{aligned}
-  P(\text{at least 2 heads}) = \frac{4}{8} = \frac{1}{2}
+  P(\mathrm{at least 2 heads}) = \frac{4}{8} = \frac{1}{2}
 \end{aligned}
 $$
 
@@ -748,7 +748,7 @@ Alternatively, using the binomial formula:
 
 $$
 \begin{aligned}
-  P(\text{at least 2 heads}) = \binom{3}{2}\left(\frac{1}{2}\right)^3 + \binom{3}{3}\left(\frac{1}{2}\right)^3 = \frac{3}{8} + \frac{1}{8} = \frac{1}{2}
+  P(\mathrm{at least 2 heads}) = \binom{3}{2}\left(\frac{1}{2}\right)^3 + \binom{3}{3}\left(\frac{1}{2}\right)^3 = \frac{3}{8} + \frac{1}{8} = \frac{1}{2}
 \end{aligned}
 $$
 
@@ -793,11 +793,11 @@ Method 2 (complement):
 
 $$
 \begin{aligned}
-  P(\text{different}) &= 1 - P(\text{same}) \\
-                     &= 1 - P(\text{both white}) - P(\text{both black}) \\
-  P(\text{both white}) &= \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} \\
-  P(\text{both black}) &= \frac{6}{10} \times \frac{5}{9} = \frac{30}{90} \\
-  P(\text{different}) &= 1 - \frac{12}{90} - \frac{30}{90} = \frac{48}{90} = \frac{8}{15} \quad \checkmark
+  P(\mathrm{different}) &= 1 - P(\mathrm{same}) \\
+                     &= 1 - P(\mathrm{both white}) - P(\mathrm{both black}) \\
+  P(\mathrm{both white}) &= \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} \\
+  P(\mathrm{both black}) &= \frac{6}{10} \times \frac{5}{9} = \frac{30}{90} \\
+  P(\mathrm{different}) &= 1 - \frac{12}{90} - \frac{30}{90} = \frac{48}{90} = \frac{8}{15} \quad \checkmark
 \end{aligned}
 $$
 
@@ -881,15 +881,15 @@ The three colours are mutually exclusive cases, so by the addition rule:
 
 $$
 \begin{aligned}
-  P(\text{all red}) &= \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} = \frac{60}{720} = \frac{1}{12} \\
-  P(\text{all green}) &= \frac{3}{10} \times \frac{2}{9} \times \frac{1}{8} = \frac{6}{720} = \frac{1}{120} \\
-  P(\text{all blue}) &= \frac{2}{10} \times \frac{1}{9} \times \frac{0}{8} = 0
+  P(\mathrm{all red}) &= \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} = \frac{60}{720} = \frac{1}{12} \\
+  P(\mathrm{all green}) &= \frac{3}{10} \times \frac{2}{9} \times \frac{1}{8} = \frac{6}{720} = \frac{1}{120} \\
+  P(\mathrm{all blue}) &= \frac{2}{10} \times \frac{1}{9} \times \frac{0}{8} = 0
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-  P(\text{all same colour}) = \frac{1}{12} + \frac{1}{120} + 0 = \frac{10}{120} + \frac{1}{120} = \frac{11}{120}
+  P(\mathrm{all same colour}) = \frac{1}{12} + \frac{1}{120} + 0 = \frac{10}{120} + \frac{1}{120} = \frac{11}{120}
 \end{aligned}
 $$
 
@@ -903,7 +903,7 @@ probability that they also take Physics?
 
 $$
 \begin{aligned}
-  P(\text{Physics} \mid \text{Maths}) = \frac{P(\text{Physics} \cap \text{Maths})}{P(\text{Maths})} = \frac{0.30}{0.60} = 0.5
+  P(\mathrm{Physics} \mid \mathrm{Maths}) = \frac{P(\mathrm{Physics} \cap \mathrm{Maths})}{P(\mathrm{Maths})} = \frac{0.30}{0.60} = 0.5
 \end{aligned}
 $$
 
@@ -979,7 +979,7 @@ $$
 
 12. **Question:** A test for a condition has a sensitivity of 90% and a specificity of 95%. The
 condition prevalence in the population is 1%. Find the positive predictive value
-$P(\text{condition} \mid \text{positive})$.
+$P(\mathrm{condition} \mid \mathrm{positive})$.
 <details>
 <summary>Answer</summary>
 

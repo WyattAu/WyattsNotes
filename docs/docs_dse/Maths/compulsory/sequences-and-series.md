@@ -52,7 +52,7 @@ An **arithmetic sequence** (or arithmetic progression, AP) is a sequence where t
 between consecutive terms is constant. This constant difference is denoted $d$:
 
 $$
-a_{n+1} - a_n = d \quad \text{for all } n
+a_{n+1} - a_n = d \quad \mathrm{for all } n
 $$
 
 The first term is $a_1$. The sequence is: $a_1, \; a_1 + d, \; a_1 + 2d, \; \ldots$
@@ -99,7 +99,7 @@ Subtracting: $7d = 21 \implies d = 3$. Then $a_1 = 17 - 12 = 5$.
 **Theorem.** In an arithmetic sequence, terms equidistant from the ends sum to the same constant:
 
 $$
-a_k + a_{n-k+1} = a_1 + a_n \quad \text{for all } k = 1, 2, \ldots, n
+a_k + a_{n-k+1} = a_1 + a_n \quad \mathrm{for all } k = 1, 2, \ldots, n
 $$
 
 **Proof.**
@@ -180,7 +180,7 @@ A **geometric sequence** (or geometric progression, GP) is a sequence where the 
 terms is constant. This constant ratio is denoted $r$:
 
 $$
-\frac{a_{n+1}}{a_n} = r \quad \text{for all } n, \quad r \neq 0
+\frac{a_{n+1}}{a_n} = r \quad \mathrm{for all } n, \quad r \neq 0
 $$
 
 The sequence is: $a_1, \; a_1 r, \; a_1 r^2, \; \ldots$
@@ -381,7 +381,7 @@ A **recurrence relation** defines each term of a sequence in terms of preceding 
 form is a **first-order recurrence**:
 
 $$
-a_{n+1} = f(a_n), \quad a_1 \text{ given}
+a_{n+1} = f(a_n), \quad a_1 \mathrm{ given}
 $$
 
 Arithmetic and geometric sequences are special cases:
@@ -464,13 +464,13 @@ Since $a_n \gt 0$, $L = 2$.
   - The deposits are an arithmetic sequence with $a_1 = 1200$, $d = 300$, and $n=5$ years of deposits.
   - The total amount deposited is the sum of the series, $S_5$.
   - First, find the deposit in the 5th year: $a_5 = a_1 + (5-1)d = 1200 + 4(300) = 2400$.
-  - Now, find the sum: $S_5 = \frac{n}{2}(a_1 + a_5) = \frac{5}{2}(1200 + 2400) = 2.5(3600) = \text{USD } 9,000$.
+  - Now, find the sum: $S_5 = \frac{n}{2}(a_1 + a_5) = \frac{5}{2}(1200 + 2400) = 2.5(3600) = \mathrm{USD } 9,000$.
 - **Part 2: Calculate investment growth (Geometric Sequence)**
-  - The principal for the investment is $P = \text{USD } 9,000$.
+  - The principal for the investment is $P = \mathrm{USD } 9,000$.
   - The annual interest rate is $i = 0.06$, so the common ratio is $r = 1.06$.
   - The time period is $t = 10$ years.
   - The future value is given by the compound interest formula $FV = P(1+i)^t$.
-  - $FV = 9000(1.06)^{10} \approx 9000(1.790847) \approx \text{USD } 16,117.62$.
+  - $FV = 9000(1.06)^{10} \approx 9000(1.790847) \approx \mathrm{USD } 16,117.62$.
 
 <b>If you get this wrong, you should focus on:</b> Separating a multi-stage problem, calculating the
 sum of a finite arithmetic series, and applying the formula for compound interest (a geometric
@@ -497,7 +497,7 @@ sequence application).
 - As $n \to \infty$, $Q_{n+1} \to L$ and $Q_n \to L$.
   $$ L = 0.5L + 10 $$
   $$ 0.5L = 10 $$
-  $$ L = \frac{10}{0.5} = 20 \text{ mg} $$
+  $$ L = \frac{10}{0.5} = 20 \mathrm{ mg} $$
 - The limiting amount of the drug in the body, measured just after taking the dose, is 20 mg. The amount will then fluctuate between 20mg (just after the dose) and 10mg (just before the next dose). The question asks for the limiting amount, which in this context usually refers to the peak steady-state level.
 
 <b>If you get this wrong, you should focus on:</b> Modeling real-world scenarios with recurrence
@@ -845,15 +845,15 @@ the terms are not consecutive.
 - This problem can be broken into two parts: the sum of your deposits and the sum of the bank's bonuses.
 - **Part 1: Sum of your deposits.**
   - You deposit 100 each month for 24 months.
-  - Total Deposits = $100 \times 24 = \text{USD } 2,400$.
+  - Total Deposits = $100 \times 24 = \mathrm{USD } 2,400$.
 - **Part 2: Sum of the bank's bonuses.**
   - The bonuses form an arithmetic sequence: 1, 2, 3, ..., 24.
   - We need to find the sum of this arithmetic series, $S_{24}$.
   - $a_1 = 1$, $a_{24} = 24$, $n=24$.
-  - $S_{24} = \frac{n}{2}(a_1 + a_n) = \frac{24}{2}(1 + 24) = 12(25) = \text{USD } 300$.
+  - $S_{24} = \frac{n}{2}(a_1 + a_n) = \frac{24}{2}(1 + 24) = 12(25) = \mathrm{USD } 300$.
 - **Part 3: Total amount.**
   - Total Amount = Total Deposits + Total Bonuses
-  - Total Amount = $2,400 + 300 = \text{USD } 2,700$.
+  - Total Amount = $2,400 + 300 = \mathrm{USD } 2,700$.
 
 <b>If you get this wrong, you should focus on:</b> Breaking a word problem into its constituent
 parts and recognizing how to apply the formula for the sum of a simple arithmetic series.
@@ -919,7 +919,7 @@ change the starting and ending indices of a sum to match a known formula.
   - Let's examine the limit of the terms $a_n = \frac{n^n}{n!}$.
   - Write out the term: $a_n = \frac{n \cdot n \cdot n \cdots n}{1 \cdot 2 \cdot 3 \cdots n} = \left(\frac{n}{1}\right) \left(\frac{n}{2}\right) \cdots \left(\frac{n}{n}\right)$.
   - Each factor $(\frac{n}{k})$ is $\ge 1$. The first factor is $n$.
-  - So, $a_n = \frac{n}{1} \cdot (\text{product of terms } \ge 1) \ge n$.
+  - So, $a_n = \frac{n}{1} \cdot (\mathrm{product of terms } \ge 1) \ge n$.
   - As $n \to \infty$, $a_n \to \infty$ because $a_n \ge n$.
   - Since $\lim_{n\to\infty} a_n \ne 0$, the series diverges by the Test for Divergence.
 - **Method 2: Ratio Test**

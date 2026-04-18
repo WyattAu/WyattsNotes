@@ -37,7 +37,7 @@ $$
 where $N$ is the neutron number.
 
 **Definition.** A **nuclide** is a specific atom characterised by its atomic number, mass number,
-and energy state, denoted as $\prescript{A}{}{Z}\text{X}$.
+and energy state, denoted as $\prescript{A}{}{Z}\mathrm{X}$.
 
 ### Isotopes
 
@@ -49,14 +49,14 @@ properties (different mass, different nuclear stability).
 
 | Element  | Isotope                | $Z$  | $A$  | $N$  | Natural Abundance   |
 | -------- | ---------------------- | ---- | ---- | ---- | ------------------- |
-| Hydrogen | $\text{H}$ (protium)   | $1$  | $1$  | $0$  | $99.985\%$          |
-| Hydrogen | $\text{D}$ (deuterium) | $1$  | $2$  | $1$  | $0.015\%$           |
-| Hydrogen | $\text{T}$ (tritium)   | $1$  | $3$  | $2$  | Trace (radioactive) |
-| Carbon   | $\text{C}$-12          | $6$  | $12$ | $6$  | $98.89\%$           |
-| Carbon   | $\text{C}$-13          | $6$  | $13$ | $7$  | $1.11\%$            |
-| Carbon   | $\text{C}$-14          | $6$  | $14$ | $8$  | Trace (radioactive) |
-| Chlorine | $\text{Cl}$-35         | $17$ | $35$ | $18$ | $75.77\%$           |
-| Chlorine | $\text{Cl}$-37         | $17$ | $37$ | $20$ | $24.23\%$           |
+| Hydrogen | $\mathrm{H}$ (protium)   | $1$  | $1$  | $0$  | $99.985\%$          |
+| Hydrogen | $\mathrm{D}$ (deuterium) | $1$  | $2$  | $1$  | $0.015\%$           |
+| Hydrogen | $\mathrm{T}$ (tritium)   | $1$  | $3$  | $2$  | Trace (radioactive) |
+| Carbon   | $\mathrm{C}$-12          | $6$  | $12$ | $6$  | $98.89\%$           |
+| Carbon   | $\mathrm{C}$-13          | $6$  | $13$ | $7$  | $1.11\%$            |
+| Carbon   | $\mathrm{C}$-14          | $6$  | $14$ | $8$  | Trace (radioactive) |
+| Chlorine | $\mathrm{Cl}$-35         | $17$ | $35$ | $18$ | $75.77\%$           |
+| Chlorine | $\mathrm{Cl}$-37         | $17$ | $37$ | $20$ | $24.23\%$           |
 
 ### Relative Atomic Mass
 
@@ -65,13 +65,13 @@ element relative to $1/12$ the mass of a carbon-12 atom, taking into account the
 of all isotopes.
 
 $$
-A_r = \sum_{i} (\text{isotope mass})_i \times (\text{fractional abundance})_i
+A_r = \sum_{i} (\mathrm{isotope mass})_i \times (\mathrm{fractional abundance})_i
 $$
 
 :::info[Example — Chlorine]
 
-Chlorine has two naturally occurring isotopes: $\text{Cl}$-35 ($75.77\%$, mass
-$\approx 34.97\text{ u}$) and $\text{Cl}$-37 ($24.23\%$, mass $\approx 36.97\text{ u}$).
+Chlorine has two naturally occurring isotopes: $\mathrm{Cl}$-35 ($75.77\%$, mass
+$\approx 34.97\mathrm{ u}$) and $\mathrm{Cl}$-37 ($24.23\%$, mass $\approx 36.97\mathrm{ u}$).
 
 $$
 A_r = (34.97 \times 0.7577) + (36.97 \times 0.2423) = 26.50 + 8.96 = 35.46
@@ -81,8 +81,8 @@ $$
 
 ### The Nucleus
 
-The nucleus is extremely small relative to the atom ($\approx 10^{-15}\text{ m}$ diameter vs
-$\approx 10^{-10}\text{ m}$ for the atom). It contains over $99.9\%$ of the atom's mass. Nuclear
+The nucleus is extremely small relative to the atom ($\approx 10^{-15}\mathrm{ m}$ diameter vs
+$\approx 10^{-10}\mathrm{ m}$ for the atom). It contains over $99.9\%$ of the atom's mass. Nuclear
 stability depends on the neutron-to-proton ratio:
 
 - Light elements ($Z \lt 20$): stable when $N \approx Z$
@@ -176,21 +176,21 @@ $$
 **Full notation** — write every subshell explicitly:
 
 $$
-\text{Fe}: 1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6
+\mathrm{Fe}: 1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6
 $$
 
 **Noble gas core notation** — replace the inner-shell electrons with the preceding noble gas symbol
 in brackets:
 
 $$
-\text{Fe}: [\text{Ar}]\, 4s^2\, 3d^6
+\mathrm{Fe}: [\mathrm{Ar}]\, 4s^2\, 3d^6
 $$
 
 :::warning
 
 Always write subshells in order of increasing $n$ first, then $l$ (i.e., $4s^2\, 3d^6$, not
 $3d^6\, 4s^2$). When writing configurations for ions, remove electrons from the highest $n$ value
-first: $\text{Fe}^{2+}$ is $[\text{Ar}]\, 3d^6$, not $[\text{Ar}]\, 4s^2\, 3d^4$.
+first: $\mathrm{Fe}^{2+}$ is $[\mathrm{Ar}]\, 3d^6$, not $[\mathrm{Ar}]\, 4s^2\, 3d^4$.
 
 :::
 
@@ -201,11 +201,11 @@ causes exceptions in chromium, copper, molybdenum, silver, and gold:
 
 | Element     | Expected configuration                | Actual configuration                     | Reason                    |
 | ----------- | ------------------------------------- | ---------------------------------------- | ------------------------- |
-| $\text{Cr}$ | $[\text{Ar}]\, 4s^2\, 3d^4$           | $[\text{Ar}]\, 4s^1\, 3d^5$              | Half-filled $d$-subshell  |
-| $\text{Cu}$ | $[\text{Ar}]\, 4s^2\, 3d^9$           | $[\text{Ar}]\, 4s^1\, 3d^{10}$           | Fully-filled $d$-subshell |
-| $\text{Mo}$ | $[\text{Kr}]\, 5s^2\, 4d^4$           | $[\text{Kr}]\, 5s^1\, 4d^5$              | Half-filled $d$-subshell  |
-| $\text{Ag}$ | $[\text{Kr}]\, 5s^2\, 4d^9$           | $[\text{Kr}]\, 5s^1\, 4d^{10}$           | Fully-filled $d$-subshell |
-| $\text{Au}$ | $[\text{Xe}]\, 6s^2\, 4f^{14}\, 5d^9$ | $[\text{Xe}]\, 6s^1\, 4f^{14}\, 5d^{10}$ | Fully-filled $d$-subshell |
+| $\mathrm{Cr}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^4$           | $[\mathrm{Ar}]\, 4s^1\, 3d^5$              | Half-filled $d$-subshell  |
+| $\mathrm{Cu}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^9$           | $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$           | Fully-filled $d$-subshell |
+| $\mathrm{Mo}$ | $[\mathrm{Kr}]\, 5s^2\, 4d^4$           | $[\mathrm{Kr}]\, 5s^1\, 4d^5$              | Half-filled $d$-subshell  |
+| $\mathrm{Ag}$ | $[\mathrm{Kr}]\, 5s^2\, 4d^9$           | $[\mathrm{Kr}]\, 5s^1\, 4d^{10}$           | Fully-filled $d$-subshell |
+| $\mathrm{Au}$ | $[\mathrm{Xe}]\, 6s^2\, 4f^{14}\, 5d^9$ | $[\mathrm{Xe}]\, 6s^1\, 4f^{14}\, 5d^{10}$ | Fully-filled $d$-subshell |
 
 ### Orbital Diagrams
 
@@ -269,11 +269,11 @@ The IB uses IUPAC group numbers $1$--$18$:
 
 ### Effective Nuclear Charge
 
-**Definition.** The **effective nuclear charge** ($Z_{\text{eff}}$) is the net positive charge
+**Definition.** The **effective nuclear charge** ($Z_{\mathrm{eff}}$) is the net positive charge
 experienced by an electron, after accounting for shielding by other electrons:
 
 $$
-Z_{\text{eff}} = Z - S
+Z_{\mathrm{eff}} = Z - S
 $$
 
 where $Z$ is the actual nuclear charge and $S$ is the shielding constant.
@@ -286,7 +286,7 @@ effectively than electrons in the same shell.
 
 | Trend                     | Explanation                                                               |
 | ------------------------- | ------------------------------------------------------------------------- |
-| Decreases across a period | $Z_{\text{eff}}$ increases; electrons are pulled closer to the nucleus    |
+| Decreases across a period | $Z_{\mathrm{eff}}$ increases; electrons are pulled closer to the nucleus    |
 | Increases down a group    | Additional electron shells increase the average distance from the nucleus |
 
 **Definition.** **Atomic radius** is half the distance between the nuclei of two bonded atoms of the
@@ -306,7 +306,7 @@ nuclei of adjacent atoms in the solid or liquid), which is significantly larger 
 
 :::info[Example — Isoelectronic series]
 
-$\text{O}^{2-} \gt \text{F}^- \gt \text{Na}^+ \gt \text{Mg}^{2+} \gt \text{Al}^{3+}$
+$\mathrm{O}^{2-} \gt \mathrm{F}^- \gt \mathrm{Na}^+ \gt \mathrm{Mg}^{2+} \gt \mathrm{Al}^{3+}$
 
 All have the neon configuration ($1s^2\, 2s^2\, 2p^6$, $10$ electrons). The nuclear charge increases
 from $Z = 8$ to $Z = 13$, so the radius decreases.
@@ -319,12 +319,12 @@ from $Z = 8$ to $Z = 13$, so the radius decreases.
 one mole of electrons from one mole of gaseous atoms:
 
 $$
-\text{X}(g) \to \text{X}^+(g) + e^- \qquad \Delta H = IE_1
+\mathrm{X}(g) \to \mathrm{X}^+(g) + e^- \qquad \Delta H = IE_1
 $$
 
 | Trend                     | Explanation                                              |
 | ------------------------- | -------------------------------------------------------- |
-| Increases across a period | $Z_{\text{eff}}$ increases; electrons held more tightly  |
+| Increases across a period | $Z_{\mathrm{eff}}$ increases; electrons held more tightly  |
 | Decreases down a group    | Electrons are farther from the nucleus and more shielded |
 
 **Deviations from the general trend across a period:**
@@ -350,10 +350,10 @@ shell. This reveals the electron configuration.
 
 For aluminium ($1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^1$):
 
-- $IE_1 = 578\text{ kJ/mol}$ (removes $3p$ electron)
-- $IE_2 = 1817\text{ kJ/mol}$ (removes $3s$ electron)
-- $IE_3 = 2745\text{ kJ/mol}$ (removes $3s$ electron)
-- $IE_4 = 11577\text{ kJ/mol}$ (removes $2p$ electron — large jump!)
+- $IE_1 = 578\mathrm{ kJ/mol}$ (removes $3p$ electron)
+- $IE_2 = 1817\mathrm{ kJ/mol}$ (removes $3s$ electron)
+- $IE_3 = 2745\mathrm{ kJ/mol}$ (removes $3s$ electron)
+- $IE_4 = 11577\mathrm{ kJ/mol}$ (removes $2p$ electron — large jump!)
 
 The jump from $IE_3$ to $IE_4$ confirms that aluminium has three valence electrons.
 
@@ -365,14 +365,14 @@ The jump from $IE_3$ to $IE_4$ confirms that aluminium has three valence electro
 added to one mole of gaseous atoms:
 
 $$
-\text{X}(g) + e^- \to \text{X}^-(g) \qquad \Delta H = EA
+\mathrm{X}(g) + e^- \to \mathrm{X}^-(g) \qquad \Delta H = EA
 $$
 
 A more negative $EA$ indicates a greater tendency to accept an electron.
 
 | Trend                                           | Explanation                                                  |
 | ----------------------------------------------- | ------------------------------------------------------------ |
-| Generally becomes more negative across a period | Increasing $Z_{\text{eff}}$ attracts electrons more strongly |
+| Generally becomes more negative across a period | Increasing $Z_{\mathrm{eff}}$ attracts electrons more strongly |
 | Generally becomes less negative down a group    | Increased distance and shielding reduce the nuclear pull     |
 
 Noble gases have positive (endothermic) electron affinities because the added electron enters a new,
@@ -385,7 +385,7 @@ electrons in a covalent bond. The Pauling scale is the most common.
 
 | Trend                     | Explanation                      |
 | ------------------------- | -------------------------------- |
-| Increases across a period | Increasing $Z_{\text{eff}}$      |
+| Increases across a period | Increasing $Z_{\mathrm{eff}}$      |
 | Decreases down a group    | Increased distance and shielding |
 
 | Scale   | Most electronegative | Least electronegative |
@@ -432,12 +432,12 @@ small atomic radius.
 ### Chemical Properties
 
 All alkali metals have the outer electron configuration $ns^1$. The single valence electron is
-easily lost, forming $\text{M}^+$ ions.
+easily lost, forming $\mathrm{M}^+$ ions.
 
 #### Reaction with Water
 
 $$
-2\text{M}(s) + 2\text{H}_2\text{O}(l) \to 2\text{MOH}(aq) + \text{H}_2(g)
+2\mathrm{M}(s) + 2\mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{MOH}(aq) + \mathrm{H}_2(g)
 $$
 
 Reactivity increases down the group:
@@ -458,20 +458,20 @@ Alkali metals burn in oxygen to form oxides:
 
 | Metal  | Product with limited O$_2$        | Product with excess O$_2$          |
 | ------ | --------------------------------- | ---------------------------------- |
-| Li     | $\text{Li}_2\text{O}$ (oxide)     | $\text{Li}_2\text{O}$              |
-| Na     | $\text{Na}_2\text{O}$ (oxide)     | $\text{Na}_2\text{O}_2$ (peroxide) |
-| K      | $\text{K}_2\text{O}_2$ (peroxide) | $\text{KO}_2$ (superoxide)         |
+| Li     | $\mathrm{Li}_2\mathrm{O}$ (oxide)     | $\mathrm{Li}_2\mathrm{O}$              |
+| Na     | $\mathrm{Na}_2\mathrm{O}$ (oxide)     | $\mathrm{Na}_2\mathrm{O}_2$ (peroxide) |
+| K      | $\mathrm{K}_2\mathrm{O}_2$ (peroxide) | $\mathrm{KO}_2$ (superoxide)         |
 | Rb, Cs | Superoxides form readily          | Superoxides                        |
 
 #### Hydroxides
 
-All Group 1 hydroxides ($\text{MOH}$) are strong bases and highly soluble in water:
+All Group 1 hydroxides ($\mathrm{MOH}$) are strong bases and highly soluble in water:
 
 $$
-\text{MOH}(s) \to \text{M}^+(aq) + \text{OH}^-(aq)
+\mathrm{MOH}(s) \to \mathrm{M}^+(aq) + \mathrm{OH}^-(aq)
 $$
 
-Basicity increases down the group (solubility increases, so $[\text{OH}^-]$ is higher).
+Basicity increases down the group (solubility increases, so $[\mathrm{OH}^-]$ is higher).
 
 ### Flame Tests
 
@@ -479,11 +479,11 @@ Alkali metal ions produce characteristic flame colours due to electron transitio
 
 | Ion           | Flame colour                                     |
 | ------------- | ------------------------------------------------ |
-| $\text{Li}^+$ | Crimson red                                      |
-| $\text{Na}^+$ | Yellow                                           |
-| $\text{K}^+$  | Lilac (viewed through cobalt glass to filter Na) |
-| $\text{Rb}^+$ | Red-violet                                       |
-| $\text{Cs}^+$ | Blue                                             |
+| $\mathrm{Li}^+$ | Crimson red                                      |
+| $\mathrm{Na}^+$ | Yellow                                           |
+| $\mathrm{K}^+$  | Lilac (viewed through cobalt glass to filter Na) |
+| $\mathrm{Rb}^+$ | Red-violet                                       |
+| $\mathrm{Cs}^+$ | Blue                                             |
 
 ### Uses
 
@@ -491,7 +491,7 @@ Alkali metal ions produce characteristic flame colours due to electron transitio
 | ----- | ----------------------------------------------------- |
 | Li    | Batteries, psychiatric medication (lithium carbonate) |
 | Na    | Street lamps (Na vapour), NaK coolant                 |
-| K     | Fertilisers ($\text{KNO}_3$), potash                  |
+| K     | Fertilisers ($\mathrm{KNO}_3$), potash                  |
 
 ---
 
@@ -514,15 +514,15 @@ forces as the number of electrons (and therefore polarizability) increases.
 ### Chemical Properties
 
 All halogens have the outer electron configuration $ns^2\, np^5$. They gain one electron to form
-$\text{X}^-$ ions, achieving a noble gas configuration.
+$\mathrm{X}^-$ ions, achieving a noble gas configuration.
 
 #### Reactivity Trend
 
 Reactivity **decreases** down the group. This is because atomic radius increases and
-$Z_{\text{eff}}$ on the incoming electron decreases, so electron affinity becomes less favourable.
+$Z_{\mathrm{eff}}$ on the incoming electron decreases, so electron affinity becomes less favourable.
 
 $$
-\text{F}_2 \gt \text{Cl}_2 \gt \text{Br}_2 \gt \text{I}_2
+\mathrm{F}_2 \gt \mathrm{Cl}_2 \gt \mathrm{Br}_2 \gt \mathrm{I}_2
 $$
 
 #### Displacement Reactions
@@ -530,24 +530,24 @@ $$
 A more reactive halogen displaces a less reactive halogen from its halide solution:
 
 $$
-\text{Cl}_2(aq) + 2\text{KBr}(aq) \to 2\text{KCl}(aq) + \text{Br}_2(aq)
+\mathrm{Cl}_2(aq) + 2\mathrm{KBr}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{Br}_2(aq)
 $$
 
 $$
-\text{Br}_2(aq) + 2\text{KI}(aq) \to 2\text{KBr}(aq) + \text{I}_2(aq)
+\mathrm{Br}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KBr}(aq) + \mathrm{I}_2(aq)
 $$
 
 $$
-\text{Cl}_2(aq) + 2\text{KI}(aq) \to 2\text{KCl}(aq) + \text{I}_2(aq)
+\mathrm{Cl}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{I}_2(aq)
 $$
 
-But: $\text{Br}_2$ cannot displace $\text{Cl}^-$ and $\text{I}_2$ cannot displace $\text{Br}^-$ or
-$\text{Cl}^-$.
+But: $\mathrm{Br}_2$ cannot displace $\mathrm{Cl}^-$ and $\mathrm{I}_2$ cannot displace $\mathrm{Br}^-$ or
+$\mathrm{Cl}^-$.
 
 #### Reaction with Alkali Metals
 
 $$
-2\text{M}(s) + \text{X}_2(g) \to 2\text{MX}(s)
+2\mathrm{M}(s) + \mathrm{X}_2(g) \to 2\mathrm{MX}(s)
 $$
 
 These are vigorous, exothermic reactions forming ionic halides.
@@ -556,36 +556,36 @@ These are vigorous, exothermic reactions forming ionic halides.
 
 | Halide        | Reagent                              | Observation                                                    |
 | ------------- | ------------------------------------ | -------------------------------------------------------------- |
-| $\text{Cl}^-$ | $\text{AgNO}_3$(aq) + dilute HNO$_3$ | White precipitate ($\text{AgCl}$), soluble in dilute NH$_3$    |
-| $\text{Br}^-$ | $\text{AgNO}_3$(aq) + dilute HNO$_3$ | Cream precipitate ($\text{AgBr}$), partially soluble in NH$_3$ |
-| $\text{I}^-$  | $\text{AgNO}_3$(aq) + dilute HNO$_3$ | Yellow precipitate ($\text{AgI}$), insoluble in NH$_3$         |
+| $\mathrm{Cl}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | White precipitate ($\mathrm{AgCl}$), soluble in dilute NH$_3$    |
+| $\mathrm{Br}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | Cream precipitate ($\mathrm{AgBr}$), partially soluble in NH$_3$ |
+| $\mathrm{I}^-$  | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | Yellow precipitate ($\mathrm{AgI}$), insoluble in NH$_3$         |
 
 Dilute HNO$_3$ is added first to remove any carbonate or hydroxide ions that would also form
-precipitates with $\text{Ag}^+$.
+precipitates with $\mathrm{Ag}^+$.
 
 #### Uses
 
 | Halogen       | Use                                                  |
 | ------------- | ---------------------------------------------------- |
-| $\text{F}_2$  | Fluoridation of water, Teflon (PTFE) production      |
-| $\text{Cl}_2$ | Water purification, PVC, bleach ($\text{NaClO}$)     |
-| $\text{Br}_2$ | Flame retardants, brominated compounds, photography  |
-| $\text{I}_2$  | Antiseptics, iodised salt, thyroid hormone synthesis |
+| $\mathrm{F}_2$  | Fluoridation of water, Teflon (PTFE) production      |
+| $\mathrm{Cl}_2$ | Water purification, PVC, bleach ($\mathrm{NaClO}$)     |
+| $\mathrm{Br}_2$ | Flame retardants, brominated compounds, photography  |
+| $\mathrm{I}_2$  | Antiseptics, iodised salt, thyroid hormone synthesis |
 
 #### Interhalogens
 
 **Definition.** **Interhalogens** are compounds formed between two different halogen atoms. The more
 electronegative halogen is the negative end of the molecule.
 
-General formula: $\text{XX}'_n$ where $n = 1, 3, 5, 7$ (depending on the size of the central
+General formula: $\mathrm{XX}'_n$ where $n = 1, 3, 5, 7$ (depending on the size of the central
 halogen).
 
 | Example        | Type        | Structure              |
 | -------------- | ----------- | ---------------------- |
-| $\text{ClF}$   | Diatomic    | Linear                 |
-| $\text{BrF}_3$ | Triatomic   | T-shaped               |
-| $\text{IF}_5$  | Pentaatomic | Square pyramidal       |
-| $\text{IF}_7$  | Heptaatomic | Pentagonal bipyramidal |
+| $\mathrm{ClF}$   | Diatomic    | Linear                 |
+| $\mathrm{BrF}_3$ | Triatomic   | T-shaped               |
+| $\mathrm{IF}_5$  | Pentaatomic | Square pyramidal       |
+| $\mathrm{IF}_7$  | Heptaatomic | Pentagonal bipyramidal |
 
 Interhalogens are generally more reactive than the parent halogens because the bonds are polar.
 
@@ -601,11 +601,11 @@ chemically inert under standard conditions. They exist as monatomic gases.
 | Element | Configuration               | Boiling point (K) | First IE (kJ/mol) |
 | ------- | --------------------------- | ----------------- | ----------------- |
 | He      | $1s^2$                      | $4.2$             | $2372$            |
-| Ne      | $[\text{He}]\, 2s^2\, 2p^6$ | $27.1$            | $2081$            |
-| Ar      | $[\text{Ne}]\, 3s^2\, 3p^6$ | $87.3$            | $1521$            |
-| Kr      | $[\text{Ar}]\, 4s^2\, 4p^6$ | $119.8$           | $1351$            |
-| Xe      | $[\text{Kr}]\, 5s^2\, 5p^6$ | $165.0$           | $1170$            |
-| Rn      | $[\text{Xe}]\, 6s^2\, 6p^6$ | $211.0$           | $1037$            |
+| Ne      | $[\mathrm{He}]\, 2s^2\, 2p^6$ | $27.1$            | $2081$            |
+| Ar      | $[\mathrm{Ne}]\, 3s^2\, 3p^6$ | $87.3$            | $1521$            |
+| Kr      | $[\mathrm{Ar}]\, 4s^2\, 4p^6$ | $119.8$           | $1351$            |
+| Xe      | $[\mathrm{Kr}]\, 5s^2\, 5p^6$ | $165.0$           | $1170$            |
+| Rn      | $[\mathrm{Xe}]\, 6s^2\, 6p^6$ | $211.0$           | $1037$            |
 
 ### Boiling Point Trend
 
@@ -617,8 +617,8 @@ London dispersion.
 
 Under extreme conditions, the heavier noble gases can form compounds:
 
-- **Xenon** forms $\text{XeF}_2$, $\text{XeF}_4$, $\text{XeF}_6$, $\text{XeO}_3$, $\text{XeO}_4$
-- **Krypton** forms $\text{KrF}_2$ (extremely reactive)
+- **Xenon** forms $\mathrm{XeF}_2$, $\mathrm{XeF}_4$, $\mathrm{XeF}_6$, $\mathrm{XeO}_3$, $\mathrm{XeO}_4$
+- **Krypton** forms $\mathrm{KrF}_2$ (extremely reactive)
 - **Argon** forms very unstable compounds under extreme conditions
 
 Xenon compounds exist because its ionization energy is low enough that highly electronegative
@@ -643,8 +643,8 @@ fluorine and oxygen can remove or share electrons.
 **Definition.** A **transition metal** is an element that has a partially filled $d$-subshell in
 either its atom or any of its common oxidation states.
 
-This definition excludes scandium ($\text{Sc}^{3+}$: $[\text{Ar}]$) and zinc ($\text{Zn}^{2+}$:
-$[\text{Ar}]\, 3d^{10}$) as transition metals in their common oxidation states, though they are in
+This definition excludes scandium ($\mathrm{Sc}^{3+}$: $[\mathrm{Ar}]$) and zinc ($\mathrm{Zn}^{2+}$:
+$[\mathrm{Ar}]\, 3d^{10}$) as transition metals in their common oxidation states, though they are in
 the $d$-block.
 
 ### Physical Properties
@@ -681,7 +681,7 @@ decreases. Higher oxidation states become more stable with oxygen (oxoanions) th
 via coordinate (dative covalent) bonds.
 
 $$
-[\text{Cu}(\text{H}_2\text{O})_6]^{2+}, \quad [\text{Ag}(\text{NH}_3)_2]^+, \quad [\text{Fe}(\text{CN})_6]^{4-}
+[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}, \quad [\mathrm{Ag}(\mathrm{NH}_3)_2]^+, \quad [\mathrm{Fe}(\mathrm{CN})_6]^{4-}
 $$
 
 ### Ligands
@@ -691,9 +691,9 @@ central metal ion to form a coordinate bond.
 
 | Type of ligand | Examples                                                          | Denticity | Bonds donated |
 | -------------- | ----------------------------------------------------------------- | --------- | ------------- |
-| Monodentate    | $\text{H}_2\text{O}$, $\text{NH}_3$, $\text{Cl}^-$, $\text{CN}^-$ | $1$       | $1$           |
-| Bidentate      | Ethylenediamine (en), oxalate ($\text{C}_2\text{O}_4^{2-}$)       | $2$       | $2$           |
-| Hexadentate    | EDTA ($\text{EDTA}^{4-}$)                                         | $6$       | $6$           |
+| Monodentate    | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, $\mathrm{Cl}^-$, $\mathrm{CN}^-$ | $1$       | $1$           |
+| Bidentate      | Ethylenediamine (en), oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$)       | $2$       | $2$           |
+| Hexadentate    | EDTA ($\mathrm{EDTA}^{4-}$)                                         | $6$       | $6$           |
 
 ### Coordination Number
 
@@ -702,9 +702,9 @@ the central metal ion.
 
 | Coordination number | Geometry      | Example                                                            |
 | ------------------- | ------------- | ------------------------------------------------------------------ |
-| $4$                 | Tetrahedral   | $[\text{CoCl}_4]^{2-}$                                             |
-| $4$                 | Square planar | $[\text{Cu(NH}_3)_4]^{2+}$ (sometimes), $[\text{Ni(CN)}_4]^{2-}$   |
-| $6$                 | Octahedral    | $[\text{Cu}(\text{H}_2\text{O})_6]^{2+}$, $[\text{Fe(CN)}_6]^{4-}$ |
+| $4$                 | Tetrahedral   | $[\mathrm{CoCl}_4]^{2-}$                                             |
+| $4$                 | Square planar | $[\mathrm{Cu(NH}_3)_4]^{2+}$ (sometimes), $[\mathrm{Ni(CN)}_4]^{2-}$   |
+| $6$                 | Octahedral    | $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$, $[\mathrm{Fe(CN)}_6]^{4-}$ |
 
 ### Colour of Transition Metal Complexes
 
@@ -724,7 +724,7 @@ $$
 **Spectrochemical series** (increasing $\Delta$):
 
 $$
-\text{I}^- \lt \text{Br}^- \lt \text{Cl}^- \lt \text{F}^- \lt \text{H}_2\text{O} \lt \text{NH}_3 \lt \text{en} \lt \text{CN}^- \lt \text{CO}
+\mathrm{I}^- \lt \mathrm{Br}^- \lt \mathrm{Cl}^- \lt \mathrm{F}^- \lt \mathrm{H}_2\mathrm{O} \lt \mathrm{NH}_3 \lt \mathrm{en} \lt \mathrm{CN}^- \lt \mathrm{CO}
 $$
 
 Ligands that produce larger splitting are called **strong-field ligands**; those producing smaller
@@ -732,16 +732,16 @@ splitting are **weak-field ligands**.
 
 | Complex ion                                             | Colour observed | Colour absorbed |
 | ------------------------------------------------------- | --------------- | --------------- |
-| $[\text{Cu}(\text{H}_2\text{O})_6]^{2+}$                | Blue            | Orange/red      |
-| $[\text{Cu}(\text{NH}_3)_4(\text{H}_2\text{O})_2]^{2+}$ | Deep blue       | Yellow/orange   |
-| $[\text{Co}(\text{H}_2\text{O})_6]^{2+}$                | Pink            | Green           |
-| $[\text{CoCl}_4]^{2-}$                                  | Blue            | Yellow/orange   |
+| $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                | Blue            | Orange/red      |
+| $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$ | Deep blue       | Yellow/orange   |
+| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                | Pink            | Green           |
+| $[\mathrm{CoCl}_4]^{2-}$                                  | Blue            | Yellow/orange   |
 
 :::warning
 
-A substance is colourless if either: (a) it has no $d$-electrons (e.g., $\text{Sc}^{3+}$,
-$[\text{Ti}(\text{H}_2\text{O})_6]^{4+}$ has $d^0$), or (b) it has a full $d$-subshell (e.g.,
-$\text{Zn}^{2+}$, $[\text{Cu}(\text{NH}_3)_4]^+$ has $d^{10}$). In both cases, there are no $d$-$d$
+A substance is colourless if either: (a) it has no $d$-electrons (e.g., $\mathrm{Sc}^{3+}$,
+$[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{4+}$ has $d^0$), or (b) it has a full $d$-subshell (e.g.,
+$\mathrm{Zn}^{2+}$, $[\mathrm{Cu}(\mathrm{NH}_3)_4]^+$ has $d^{10}$). In both cases, there are no $d$-$d$
 transitions possible.
 
 :::
@@ -755,8 +755,8 @@ intermediate complexes, providing alternative reaction pathways with lower activ
 
 | Catalyst   | Reaction                                                                     |
 | ---------- | ---------------------------------------------------------------------------- |
-| Fe         | Haber process: $\text{N}_2 + 3\text{H}_2 \rightleftharpoons 2\text{NH}_3$    |
-| V$_2$O$_5$ | Contact process: $2\text{SO}_2 + \text{O}_2 \to 2\text{SO}_3$                |
+| Fe         | Haber process: $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3$    |
+| V$_2$O$_5$ | Contact process: $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$                |
 | Ni         | Hydrogenation of alkenes                                                     |
 | Pt/Pd      | Catalytic converters (oxidation of CO and hydrocarbons, reduction of NO$_x$) |
 
@@ -764,8 +764,8 @@ intermediate complexes, providing alternative reaction pathways with lower activ
 
 | Catalyst                        | Reaction                                           |
 | ------------------------------- | -------------------------------------------------- |
-| $\text{Fe}^{2+}/\text{Fe}^{3+}$ | Fenton's reagent (oxidation of organic pollutants) |
-| $\text{Mn}^{2+}$                | Decomposition of $\text{H}_2\text{O}_2$            |
+| $\mathrm{Fe}^{2+}/\mathrm{Fe}^{3+}$ | Fenton's reagent (oxidation of organic pollutants) |
+| $\mathrm{Mn}^{2+}$                | Decomposition of $\mathrm{H}_2\mathrm{O}_2$            |
 
 ### Magnetic Properties
 
@@ -774,8 +774,8 @@ Transition metals and their complexes can be **paramagnetic** (attracted to a ma
 
 | Property     | Condition                      | Example                                             |
 | ------------ | ------------------------------ | --------------------------------------------------- |
-| Paramagnetic | Unpaired $d$-electrons present | $[\text{Fe}(\text{H}_2\text{O})_6]^{3+}$ ($d^5$)    |
-| Diamagnetic  | All $d$-electrons paired       | $[\text{Zn}(\text{H}_2\text{O})_6]^{2+}$ ($d^{10}$) |
+| Paramagnetic | Unpaired $d$-electrons present | $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ ($d^5$)    |
+| Diamagnetic  | All $d$-electrons paired       | $[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($d^{10}$) |
 
 The number of unpaired electrons determines the magnetic moment (measured in Bohr magnetons,
 $\mu_B$):
@@ -797,13 +797,13 @@ levels. When they fall back to lower levels, they emit photons with energies cor
 energy differences:
 
 $$
-\Delta E = E_{\text{higher}} - E_{\text{lower}} = h\nu = \frac{hc}{\lambda}
+\Delta E = E_{\mathrm{higher}} - E_{\mathrm{lower}} = h\nu = \frac{hc}{\lambda}
 $$
 
 where:
 
-- $h = 6.626 \times 10^{-34}\text{ J}\cdot\text{s}$ (Planck's constant)
-- $c = 3.00 \times 10^8\text{ m/s}$ (speed of light)
+- $h = 6.626 \times 10^{-34}\mathrm{ J}\cdot\mathrm{s}$ (Planck's constant)
+- $c = 3.00 \times 10^8\mathrm{ m/s}$ (speed of light)
 - $\lambda$ = wavelength of emitted light
 - $\nu$ = frequency
 
@@ -823,15 +823,15 @@ lower energy level:
 
 | Series   | Final $n$ | Spectral region | Wavelength range       |
 | -------- | --------- | --------------- | ---------------------- |
-| Lyman    | $1$       | Ultraviolet     | $< 400\text{ nm}$      |
-| Balmer   | $2$       | Visible         | $400$--$700\text{ nm}$ |
-| Paschen  | $3$       | Infrared        | $> 700\text{ nm}$      |
-| Brackett | $4$       | Infrared        | $> 700\text{ nm}$      |
+| Lyman    | $1$       | Ultraviolet     | $< 400\mathrm{ nm}$      |
+| Balmer   | $2$       | Visible         | $400$--$700\mathrm{ nm}$ |
+| Paschen  | $3$       | Infrared        | $> 700\mathrm{ nm}$      |
+| Brackett | $4$       | Infrared        | $> 700\mathrm{ nm}$      |
 
 The energy levels of hydrogen are given by:
 
 $$
-E_n = -\frac{13.6\text{ eV}}{n^2} = -\frac{2.18 \times 10^{-18}\text{ J}}{n^2}
+E_n = -\frac{13.6\mathrm{ eV}}{n^2} = -\frac{2.18 \times 10^{-18}\mathrm{ J}}{n^2}
 $$
 
 For the Balmer series (transitions to $n = 2$), the first four lines correspond to:
@@ -849,7 +849,7 @@ Lines in each series converge at the series limit (the ionization energy). As $n
 energy levels get closer together and transitions approach a continuum:
 
 $$
-E_{\infty} = 0\text{ J} \quad (\text{ionization threshold})
+E_{\infty} = 0\mathrm{ J} \quad (\mathrm{ionization threshold})
 $$
 
 ### Significance
@@ -889,7 +889,7 @@ proportional to natural abundance.
 
 :::info[Example — Boron]
 
-Boron has two isotopes: $\text{B}$-10 ($19.9\%$) and $\text{B}$-11 ($80.1\%$).
+Boron has two isotopes: $\mathrm{B}$-10 ($19.9\%$) and $\mathrm{B}$-11 ($80.1\%$).
 
 The mass spectrum shows peaks at $m/z = 10$ and $m/z = 11$ with relative heights in the ratio
 $19.9 : 80.1$, approximately $1 : 4$.
@@ -902,14 +902,14 @@ $$
 
 #### Molecular Ion
 
-The **molecular ion peak** ($\text{M}^+$) corresponds to the intact molecule with one electron
+The **molecular ion peak** ($\mathrm{M}^+$) corresponds to the intact molecule with one electron
 removed. Its $m/z$ value gives the molecular mass.
 
 $$
-\text{CH}_4 + e^- \to \text{CH}_4^{+\bullet} + 2e^-
+\mathrm{CH}_4 + e^- \to \mathrm{CH}_4^{+\bullet} + 2e^-
 $$
 
-The molecular ion peak for $\text{CH}_4$ appears at $m/z = 16$.
+The molecular ion peak for $\mathrm{CH}_4$ appears at $m/z = 16$.
 
 #### Fragmentation
 
@@ -918,10 +918,10 @@ pattern is characteristic of the molecule and can be used to identify it.
 
 | Fragment $m/z$ | Likely species                                       | Common origin                           |
 | -------------- | ---------------------------------------------------- | --------------------------------------- |
-| $15$           | $\text{CH}_3^+$                                      | Loss of H from $\text{CH}_4^{+\bullet}$ |
-| $29$           | $\text{C}_2\text{H}_5^+$ or $\text{CHO}^+$           | Ethanol, aldehydes                      |
-| $43$           | $\text{C}_3\text{H}_7^+$ or $\text{CH}_3\text{CO}^+$ | Ketones, propanol                       |
-| $77$           | $\text{C}_6\text{H}_5^+$                             | Benzene ring                            |
+| $15$           | $\mathrm{CH}_3^+$                                      | Loss of H from $\mathrm{CH}_4^{+\bullet}$ |
+| $29$           | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$           | Ethanol, aldehydes                      |
+| $43$           | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ | Ketones, propanol                       |
+| $77$           | $\mathrm{C}_6\mathrm{H}_5^+$                             | Benzene ring                            |
 
 ### Determining Molecular Formula from Isotope Peaks
 
@@ -929,18 +929,18 @@ For molecules containing chlorine or bromine, the isotope patterns are distincti
 
 | Element | Isotopes                       | Approximate ratio |
 | ------- | ------------------------------ | ----------------- |
-| Cl      | $\text{Cl}$-35, $\text{Cl}$-37 | $3 : 1$           |
-| Br      | $\text{Br}$-79, $\text{Br}$-81 | $1 : 1$           |
+| Cl      | $\mathrm{Cl}$-35, $\mathrm{Cl}$-37 | $3 : 1$           |
+| Br      | $\mathrm{Br}$-79, $\mathrm{Br}$-81 | $1 : 1$           |
 
-A molecule with one chlorine atom shows an $\text{M}$ and $\text{M}+2$ peak in a $3:1$ ratio. A
-molecule with one bromine atom shows an $\text{M}$ and $\text{M}+2$ peak in a $1:1$ ratio.
+A molecule with one chlorine atom shows an $\mathrm{M}$ and $\mathrm{M}+2$ peak in a $3:1$ ratio. A
+molecule with one bromine atom shows an $\mathrm{M}$ and $\mathrm{M}+2$ peak in a $1:1$ ratio.
 
 :::info[Example — Chlorobenzene]
 
-Chlorobenzene ($\text{C}_6\text{H}_5\text{Cl}$) shows:
+Chlorobenzene ($\mathrm{C}_6\mathrm{H}_5\mathrm{Cl}$) shows:
 
-- $\text{M}^+$ at $m/z = 112$ ($\text{C}_6\text{H}_5{}^{35}\text{Cl}$)
-- $\text{M}+2$ at $m/z = 114$ ($\text{C}_6\text{H}_5{}^{37}\text{Cl}$)
+- $\mathrm{M}^+$ at $m/z = 112$ ($\mathrm{C}_6\mathrm{H}_5{}^{35}\mathrm{Cl}$)
+- $\mathrm{M}+2$ at $m/z = 114$ ($\mathrm{C}_6\mathrm{H}_5{}^{37}\mathrm{Cl}$)
 - Ratio of peak heights: approximately $3:1$
 
 :::
@@ -952,9 +952,9 @@ molecules with the same nominal mass but different molecular formulas:
 
 | Species                        | Exact mass (u) |
 | ------------------------------ | -------------- |
-| $\text{C}_2\text{H}_4\text{O}$ | $44.0262$      |
-| $\text{CO}_2$                  | $43.9898$      |
-| $\text{N}_2\text{O}$           | $44.0011$      |
+| $\mathrm{C}_2\mathrm{H}_4\mathrm{O}$ | $44.0262$      |
+| $\mathrm{CO}_2$                  | $43.9898$      |
+| $\mathrm{N}_2\mathrm{O}$           | $44.0011$      |
 
 ---
 
@@ -983,7 +983,7 @@ many-electron atom.
 
 5. Electrons in shells **$n-2$ or lower** contribute $1.00$ each.
 
-:::info[Example — $Z_{\text{eff}}$ for a $3p$ electron in chlorine ($Z = 17$)]
+:::info[Example — $Z_{\mathrm{eff}}$ for a $3p$ electron in chlorine ($Z = 17$)]
 
 Configuration: $(1s)^2(2s, 2p)^8(3s, 3p)^7$
 
@@ -995,11 +995,11 @@ For a $3p$ electron:
 
 $$ S = 2.10 + 6.80 + 2.00 = 10.90 $$
 
-$$ Z\_{\text{eff}} = 17 - 10.90 = 6.10 $$
+$$ Z\_{\mathrm{eff}} = 17 - 10.90 = 6.10 $$
 
 :::
 
-:::info[Example — $Z_{\text{eff}}$ for a $3d$ electron in scandium ($Z = 21$)]
+:::info[Example — $Z_{\mathrm{eff}}$ for a $3d$ electron in scandium ($Z = 21$)]
 
 Configuration: $(1s)^2(2s, 2p)^8(3s, 3p)^8(3d)^1(4s)^2$
 
@@ -1012,9 +1012,9 @@ For the $3d$ electron:
 
 $$ S = 0 + 8.00 + 10.00 = 18.00 $$
 
-$$ Z\_{\text{eff}} = 21 - 18.00 = 3.00 $$
+$$ Z\_{\mathrm{eff}} = 21 - 18.00 = 3.00 $$
 
-The low $Z_{\text{eff}}$ on the $3d$ electron explains why the $4s$ orbital fills before $3d$ — the
+The low $Z_{\mathrm{eff}}$ on the $3d$ electron explains why the $4s$ orbital fills before $3d$ — the
 $4s$ electron experiences a higher effective nuclear charge.
 
 :::
@@ -1027,7 +1027,7 @@ electrons from inner shells.
 For aluminium ($Z = 13$):
 
 $$
-\underbrace{IE_1, IE_2, IE_3}_{\text{valence } 3s^2\, 3p^1} \ll IE_4, IE_5, \ldots, IE_{11} \ll IE_{12}, IE_{13}
+\underbrace{IE_1, IE_2, IE_3}_{\mathrm{valence } 3s^2\, 3p^1} \ll IE_4, IE_5, \ldots, IE_{11} \ll IE_{12}, IE_{13}
 $$
 
 | Ionization number | Electron removed | Approximate IE (kJ/mol) | Shell           |
@@ -1057,7 +1057,7 @@ $$
 \frac{1}{\lambda} = R_H \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)
 $$
 
-where $R_H = 1.097 \times 10^7\text{ m}^{-1}$ is the Rydberg constant, $n_i$ is the initial energy
+where $R_H = 1.097 \times 10^7\mathrm{ m}^{-1}$ is the Rydberg constant, $n_i$ is the initial energy
 level, and $n_f$ is the final energy level ($n_i \gt n_f$ for emission).
 
 :::info[Example — Wavelength of the first Balmer line]
@@ -1065,11 +1065,11 @@ level, and $n_f$ is the final energy level ($n_i \gt n_f$ for emission).
 For the transition $n = 3 \to n = 2$:
 
 $$
-\frac{1}{\lambda} = 1.097 \times 10^7 \left(\frac{1}{4} - \frac{1}{9}\right) = 1.097 \times 10^7 \times 0.1389 = 1.524 \times 10^6\text{ m}^{-1}
+\frac{1}{\lambda} = 1.097 \times 10^7 \left(\frac{1}{4} - \frac{1}{9}\right) = 1.097 \times 10^7 \times 0.1389 = 1.524 \times 10^6\mathrm{ m}^{-1}
 $$
 
 $$
-\lambda = \frac{1}{1.524 \times 10^6} = 6.56 \times 10^{-7}\text{ m} = 656\text{ nm}
+\lambda = \frac{1}{1.524 \times 10^6} = 6.56 \times 10^{-7}\mathrm{ m} = 656\mathrm{ nm}
 $$
 
 This corresponds to the red line in the Balmer series (H$\alpha$).
@@ -1085,13 +1085,13 @@ $$
 For the $n = 3 \to n = 2$ transition:
 
 $$
-E = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{6.56 \times 10^{-7}} = 3.03 \times 10^{-19}\text{ J}
+E = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{6.56 \times 10^{-7}} = 3.03 \times 10^{-19}\mathrm{ J}
 $$
 
 Converting to electron-volts:
 
 $$
-E = \frac{3.03 \times 10^{-19}}{1.602 \times 10^{-19}} = 1.89\text{ eV}
+E = \frac{3.03 \times 10^{-19}}{1.602 \times 10^{-19}} = 1.89\mathrm{ eV}
 $$
 
 #### Number of Spectral Lines
@@ -1112,8 +1112,8 @@ For $n = 4$: $N = 6$ spectral lines.
 
 (a) Define the term **relative atomic mass**. (2 marks)
 
-(b) Naturally occurring boron consists of two isotopes, $\text{B}$-10 and $\text{B}$-11. The
-relative atomic mass of boron is $10.81$. Calculate the percentage abundance of $\text{B}$-10. (2
+(b) Naturally occurring boron consists of two isotopes, $\mathrm{B}$-10 and $\mathrm{B}$-11. The
+relative atomic mass of boron is $10.81$. Calculate the percentage abundance of $\mathrm{B}$-10. (2
 marks)
 
 **Markscheme:**
@@ -1121,8 +1121,8 @@ marks)
 (a) The weighted mean mass of an atom of an element relative to $1/12$ the mass of an atom of
 carbon-12, based on the abundance of isotopes in a naturally occurring sample. (2 marks)
 
-(b) Let $x$ = fractional abundance of $\text{B}$-10, so $(1 - x)$ = fractional abundance of
-$\text{B}$-11.
+(b) Let $x$ = fractional abundance of $\mathrm{B}$-10, so $(1 - x)$ = fractional abundance of
+$\mathrm{B}$-11.
 
 $$
 10.81 = 10x + 11(1 - x)
@@ -1140,7 +1140,7 @@ $$
 x = 0.19
 $$
 
-Percentage abundance of $\text{B}$-10 = $19\%$. (1 mark for setup, 1 mark for answer)
+Percentage abundance of $\mathrm{B}$-10 = $19\%$. (1 mark for setup, 1 mark for answer)
 
 ---
 
@@ -1151,7 +1151,7 @@ ionization energy of magnesium is lower than that of aluminium.
 
 **Markscheme:**
 
-Na ($1s^2\, 2s^2\, 2p^6\, 3s^1$) to Mg ($1s^2\, 2s^2\, 2p^6\, 3s^2$): $Z_{\text{eff}}$ increases
+Na ($1s^2\, 2s^2\, 2p^6\, 3s^1$) to Mg ($1s^2\, 2s^2\, 2p^6\, 3s^2$): $Z_{\mathrm{eff}}$ increases
 across the period, so the $3s$ electrons in Mg are held more tightly. (1 mark)
 
 Mg ($3s^2$) to Al ($3s^2\, 3p^1$): the electron removed from Al is a $3p$ electron, which is at a
@@ -1164,21 +1164,21 @@ Also: Mg has a stable filled $3s$ subshell configuration. (1 mark)
 
 ### Question 3 (SL — 4 marks)
 
-(a) State the electron configuration of $\text{Fe}^{2+}$ using noble gas notation. (1 mark)
+(a) State the electron configuration of $\mathrm{Fe}^{2+}$ using noble gas notation. (1 mark)
 
 (b) Describe the trend in atomic radius across Period 3 and explain this trend in terms of effective
 nuclear charge. (3 marks)
 
 **Markscheme:**
 
-(a) $[\text{Ar}]\, 3d^6$ (1 mark; note: electrons are removed from $4s$ before $3d$)
+(a) $[\mathrm{Ar}]\, 3d^6$ (1 mark; note: electrons are removed from $4s$ before $3d$)
 
 (b) Atomic radius decreases from Na to Ar. (1 mark)
 
 Across a period, the nuclear charge ($Z$) increases by one proton per element, but the additional
 electrons enter the same shell and provide only partial shielding. (1 mark)
 
-Therefore $Z_{\text{eff}}$ increases across the period, pulling the electron cloud closer to the
+Therefore $Z_{\mathrm{eff}}$ increases across the period, pulling the electron cloud closer to the
 nucleus and decreasing the atomic radius. (1 mark)
 
 ---
@@ -1193,11 +1193,11 @@ the mass spectrum.
 Two peaks are observed at $m/z = 35$ and $m/z = 37$. (1 mark)
 
 The heights of the peaks are in the approximate ratio $3:1$, reflecting the natural abundances of
-$\text{Cl}$-35 ($75.77\%$) and $\text{Cl}$-37 ($24.23\%$). (1 mark)
+$\mathrm{Cl}$-35 ($75.77\%$) and $\mathrm{Cl}$-37 ($24.23\%$). (1 mark)
 
-The sample is diatomic ($\text{Cl}_2$), so additional peaks appear at $m/z = 70$
-($^{35}\text{Cl}$--$^{35}\text{Cl}$), $m/z = 72$ ($^{35}\text{Cl}$--$^{37}\text{Cl}$), and
-$m/z = 74$ ($^{37}\text{Cl}$--$^{37}\text{Cl}$) in the ratio $9:6:1$. (1 mark)
+The sample is diatomic ($\mathrm{Cl}_2$), so additional peaks appear at $m/z = 70$
+($^{35}\mathrm{Cl}$--$^{35}\mathrm{Cl}$), $m/z = 72$ ($^{35}\mathrm{Cl}$--$^{37}\mathrm{Cl}$), and
+$m/z = 74$ ($^{37}\mathrm{Cl}$--$^{37}\mathrm{Cl}$) in the ratio $9:6:1$. (1 mark)
 
 ---
 
@@ -1231,8 +1231,8 @@ much more energy to remove. This is an inner shell electron. (1 mark)
 (a) Explain what is meant by the term **ligand** and give one example of a bidentate ligand. (2
 marks)
 
-(b) The complex $[\text{Co}(\text{NH}_3)_6]^{3+}$ is yellow but
-$[\text{Co}(\text{H}_2\text{O})_6]^{3+}$ is blue. Explain this difference. (2 marks)
+(b) The complex $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ is yellow but
+$[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ is blue. Explain this difference. (2 marks)
 
 (c) Explain why transition metals often show catalytic activity, using the Haber process as an
 example. (2 marks)
@@ -1241,18 +1241,18 @@ example. (2 marks)
 
 (a) A ligand is a molecule or ion that can donate a lone pair of electrons to a central metal ion
 via a coordinate bond. (1 mark) Example of bidentate ligand: ethylenediamine (en) or oxalate ion
-($\text{C}_2\text{O}_4^{2-}$). (1 mark)
+($\mathrm{C}_2\mathrm{O}_4^{2-}$). (1 mark)
 
-(b) $\text{NH}_3$ is a stronger-field ligand than $\text{H}_2\text{O}$ on the spectrochemical
-series, so it causes greater $d$-orbital splitting ($\Delta$) in $[\text{Co}(\text{NH}_3)_6]^{3+}$.
+(b) $\mathrm{NH}_3$ is a stronger-field ligand than $\mathrm{H}_2\mathrm{O}$ on the spectrochemical
+series, so it causes greater $d$-orbital splitting ($\Delta$) in $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$.
 (1 mark) A larger $\Delta$ means higher-energy photons are absorbed, so the complementary colour
 transmitted is different (yellow vs blue). (1 mark)
 
 (c) Transition metals have variable oxidation states, allowing them to form intermediate compounds
 with reactants. This provides an alternative reaction pathway with a lower activation energy. (1
-mark) In the Haber process, iron catalyses the reaction by adsorbing $\text{N}_2$ and $\text{H}_2$
-onto its surface, weakening the $\text{N}\equiv\text{N}$ triple bond and facilitating the formation
-of $\text{NH}_3$. (1 mark)
+mark) In the Haber process, iron catalyses the reaction by adsorbing $\mathrm{N}_2$ and $\mathrm{H}_2$
+onto its surface, weakening the $\mathrm{N}\equiv\mathrm{N}$ triple bond and facilitating the formation
+of $\mathrm{NH}_3$. (1 mark)
 
 ---
 
@@ -1275,7 +1275,7 @@ that the first three electrons are removed from the valence shell and the fourth
 inner shell. This is consistent with Group 13, and aluminium is the element in Period 3, Group 13.
 (1 mark)
 
-(b) $[\text{Ne}]\, 3s^1$ (1 mark; removing two electrons from the $3s^2\, 3p^1$ configuration)
+(b) $[\mathrm{Ne}]\, 3s^1$ (1 mark; removing two electrons from the $3s^2\, 3p^1$ configuration)
 
 (c) $IE_4$ removes an electron from the $n = 2$ shell, which is closer to the nucleus and
 experiences much less shielding. The effective nuclear charge on inner-shell electrons is much
@@ -1295,11 +1295,11 @@ $$
 $$
 
 $$
-= 1.097 \times 10^7 \times \frac{21}{100} = 2.304 \times 10^6\text{ m}^{-1}
+= 1.097 \times 10^7 \times \frac{21}{100} = 2.304 \times 10^6\mathrm{ m}^{-1}
 $$
 
 $$
-\lambda = \frac{1}{2.304 \times 10^6} = 4.34 \times 10^{-7}\text{ m} = 434\text{ nm}
+\lambda = \frac{1}{2.304 \times 10^6} = 4.34 \times 10^{-7}\mathrm{ m} = 434\mathrm{ nm}
 $$
 
 (2 marks for correct substitution and calculation)
@@ -1321,7 +1321,7 @@ the trend statement AND the reasoning.
 
 When writing electron configurations for transition metal ions, always remove electrons from the
 $ns$ orbital first (highest principal quantum number), NOT from the $(n-1)d$ orbital. So
-$\text{Fe}^{3+}$ is $[\text{Ar}]\, 3d^5$, not $[\text{Ar}]\, 4s^2\, 3d^3$.
+$\mathrm{Fe}^{3+}$ is $[\mathrm{Ar}]\, 3d^5$, not $[\mathrm{Ar}]\, 4s^2\, 3d^3$.
 
 :::
 
@@ -1329,7 +1329,7 @@ $\text{Fe}^{3+}$ is $[\text{Ar}]\, 3d^5$, not $[\text{Ar}]\, 4s^2\, 3d^3$.
 
 Do not confuse atomic radius trends with ionic radius trends. When comparing ionic radii within an
 isoelectronic series, the ion with the largest nuclear charge has the smallest radius. For example,
-$\text{Na}^+$ is smaller than $\text{F}^-$ even though $\text{Na}$ has a larger atomic radius than
-$\text{F}$.
+$\mathrm{Na}^+$ is smaller than $\mathrm{F}^-$ even though $\mathrm{Na}$ has a larger atomic radius than
+$\mathrm{F}$.
 
 :::

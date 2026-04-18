@@ -310,8 +310,8 @@ This is $A \odot B$ (XNOR). The expression is now in minimal SOP form.
 NAND alone can implement all other gates:
 
 - NOT: Connect both inputs of NAND to the same signal:
-  $\text{NAND}(A, A) = \overline{A \cdot A} = \overline{A}$
-- AND: NAND followed by NOT: $\text{NOT}(\text{NAND}(A, B)) = A \cdot B$
+  $\mathrm{NAND}(A, A) = \overline{A \cdot A} = \overline{A}$
+- AND: NAND followed by NOT: $\mathrm{NOT}(\mathrm{NAND}(A, B)) = A \cdot B$
 - OR: Use De Morgan's: $A + B = \overline{\overline{A} \cdot \overline{B}}$. Feed $\overline{A}$ and
   $\overline{B}$ (each from a NAND-as-NOT) into a NAND gate.
 
@@ -326,8 +326,8 @@ gate to combine them. Total: 3 NAND gates.
 
 NOR alone can implement all other gates:
 
-- NOT: Connect both inputs to the same signal: $\text{NOR}(A, A) = \overline{A + A} = \overline{A}$
-- OR: NOR followed by NOT: $\text{NOT}(\text{NOR}(A, B)) = A + B$
+- NOT: Connect both inputs to the same signal: $\mathrm{NOR}(A, A) = \overline{A + A} = \overline{A}$
+- OR: NOR followed by NOT: $\mathrm{NOT}(\mathrm{NOR}(A, B)) = A + B$
 - AND: Use De Morgan's: $A \cdot B = \overline{\overline{A} + \overline{B}}$. Feed $\overline{A}$
   and $\overline{B}$ (each from a NOR-as-NOT) into a NOR gate.
 
@@ -598,9 +598,9 @@ carry-in from a previous stage.
 | 1   | 0   | 1   | 0     |
 | 1   | 1   | 0   | 1     |
 
-The sum bit follows the XOR pattern: $\text{Sum} = A \oplus B$
+The sum bit follows the XOR pattern: $\mathrm{Sum} = A \oplus B$
 
-The carry bit follows the AND pattern: $\text{Carry} = A \cdot B$
+The carry bit follows the AND pattern: $\mathrm{Carry} = A \cdot B$
 
 **Circuit implementation:** One XOR gate and one AND gate.
 
@@ -631,9 +631,9 @@ The 1s appear at $(0,01)$, $(0,10)$, $(1,00)$, $(1,11)$. No two adjacent 1s shar
 the standard sense. Each 1 is isolated (adjacent cells are 0). Therefore, no simplification is
 possible, and the SOP form is the sum of minterms:
 
-$$\text{Sum} = \overline{A} \cdot \overline{B} \cdot C_{in} + \overline{A} \cdot B \cdot \overline{C_{in}} + A \cdot \overline{B} \cdot \overline{C_{in}} + A \cdot B \cdot C_{in}$$
+$$\mathrm{Sum} = \overline{A} \cdot \overline{B} \cdot C_{in} + \overline{A} \cdot B \cdot \overline{C_{in}} + A \cdot \overline{B} \cdot \overline{C_{in}} + A \cdot B \cdot C_{in}$$
 
-$$\text{Sum} = A \oplus B \oplus C_{in}$$
+$$\mathrm{Sum} = A \oplus B \oplus C_{in}$$
 
 **Carry-out derivation via K-map:**
 

@@ -213,8 +213,8 @@ $$v_2 = \frac{m_1 u_1 + m_2 u_2 + m_1 e(u_1 - u_2)}{m_1 + m_2}$$
 <details>
 <summary>Worked Example: Direct elastic collision</summary>
 
-A particle of mass $2\,\text{kg}$ moving at $5\,\text{m s}^{-1}$ collides directly with a stationary
-particle of mass $3\,\text{kg}$. The coefficient of restitution is $e = 0.6$. Find the velocities
+A particle of mass $2\,\mathrm{kg}$ moving at $5\,\mathrm{m s}^{-1}$ collides directly with a stationary
+particle of mass $3\,\mathrm{kg}$. The coefficient of restitution is $e = 0.6$. Find the velocities
 after collision.
 
 Momentum: $2(5) + 3(0) = 2v_1 + 3v_2 \implies 2v_1 + 3v_2 = 10$ ... (i)
@@ -222,9 +222,9 @@ Momentum: $2(5) + 3(0) = 2v_1 + 3v_2 \implies 2v_1 + 3v_2 = 10$ ... (i)
 Restitution: $v_2 - v_1 = 0.6(5 - 0) = 3 \implies v_2 = v_1 + 3$ ... (ii)
 
 Substituting (ii) into (i):
-$2v_1 + 3(v_1 + 3) = 10 \implies 5v_1 + 9 = 10 \implies v_1 = 0.2\,\text{m s}^{-1}$.
+$2v_1 + 3(v_1 + 3) = 10 \implies 5v_1 + 9 = 10 \implies v_1 = 0.2\,\mathrm{m s}^{-1}$.
 
-$v_2 = 0.2 + 3 = 3.2\,\text{m s}^{-1}$.
+$v_2 = 0.2 + 3 = 3.2\,\mathrm{m s}^{-1}$.
 </details>
 
 ---
@@ -293,18 +293,18 @@ the line of centres) and the tangential direction (perpendicular to the line of 
 <details>
 <summary>Worked Example: Oblique collision with a wall</summary>
 
-A sphere hits a smooth vertical wall with velocity $(6, -4)\,\text{m s}^{-1}$. The coefficient of
+A sphere hits a smooth vertical wall with velocity $(6, -4)\,\mathrm{m s}^{-1}$. The coefficient of
 restitution is $e = 0.5$. Find the velocity after impact and the angle of reflection.
 
 The wall is vertical (along the $y$-axis), so the $x$-component is normal to the wall.
 
-$v_x = -e \times 6 = -3\,\text{m s}^{-1}$ (reversed and reduced).
+$v_x = -e \times 6 = -3\,\mathrm{m s}^{-1}$ (reversed and reduced).
 
-$v_y = -4\,\text{m s}^{-1}$ (unchanged).
+$v_y = -4\,\mathrm{m s}^{-1}$ (unchanged).
 
-Velocity after impact: $(-3, -4)\,\text{m s}^{-1}$.
+Velocity after impact: $(-3, -4)\,\mathrm{m s}^{-1}$.
 
-Speed: $\sqrt{9 + 16} = 5\,\text{m s}^{-1}$.
+Speed: $\sqrt{9 + 16} = 5\,\mathrm{m s}^{-1}$.
 
 Angle of incidence: $\alpha = \arctan(4/6) = \arctan(2/3)$.
 
@@ -319,13 +319,13 @@ Note: $\tan\beta = 4/3 = \dfrac{\tan\alpha}{e} = \dfrac{2/3}{0.5} = 4/3$. ✓
 
 $$\boxed{\bar{x} = \frac{\displaystyle\sum m_i x_i}{\displaystyle\sum m_i}, \qquad \bar{y} = \frac{\displaystyle\sum m_i y_i}{\displaystyle\sum m_i}}$$
 
-$$\boxed{\bar{y}_{\text{semicircle}} = \frac{4r}{3\pi}, \qquad \bar{x}_{\text{sector}} = \frac{2r\sin\alpha}{3\alpha}}$$
+$$\boxed{\bar{y}_{\mathrm{semicircle}} = \frac{4r}{3\pi}, \qquad \bar{x}_{\mathrm{sector}} = \frac{2r\sin\alpha}{3\alpha}}$$
 
 $$\boxed{e = -\frac{v_1 - v_2}{u_1 - u_2}}$$
 
 $$\boxed{\Delta KE = \frac{1}{2}\mu(u_1 - u_2)^2(1 - e^2), \quad \mu = \frac{m_1 m_2}{m_1 + m_2}}$$
 
-$$\boxed{\text{Oblique wall impact: } v_{\text{normal}} = -e \cdot u_{\text{normal}}, \quad v_{\text{tangential}} = u_{\text{tangential}}}$$
+$$\boxed{\mathrm{Oblique wall impact: } v_{\mathrm{normal}} = -e \cdot u_{\mathrm{normal}}, \quad v_{\mathrm{tangential}} = u_{\mathrm{tangential}}}$$
 
 ---
 
@@ -350,25 +350,25 @@ Section 2.1.
 
 <details>
 <summary>Problem 2</summary>
-A particle of mass $3\,\text{kg}$ moving at $8\,\text{m s}^{-1}$ collides directly with a particle of mass $5\,\text{kg}$ moving at $2\,\text{m s}^{-1}$ in the opposite direction. The coefficient of restitution is $e = 0.5$. Find the velocities after collision and the kinetic energy loss.
+A particle of mass $3\,\mathrm{kg}$ moving at $8\,\mathrm{m s}^{-1}$ collides directly with a particle of mass $5\,\mathrm{kg}$ moving at $2\,\mathrm{m s}^{-1}$ in the opposite direction. The coefficient of restitution is $e = 0.5$. Find the velocities after collision and the kinetic energy loss.
 </details>
 
 <details>
 <summary>Solution 2</summary>
-Taking the direction of the $3\,\text{kg}$ particle as positive: $u_1 = 8$, $u_2 = -2$.
+Taking the direction of the $3\,\mathrm{kg}$ particle as positive: $u_1 = 8$, $u_2 = -2$.
 
 Momentum: $3(8) + 5(-2) = 3v_1 + 5v_2 \implies 3v_1 + 5v_2 = 14$ ... (i)
 
 Restitution: $v_2 - v_1 = 0.5(8 - (-2)) = 5 \implies v_2 = v_1 + 5$ ... (ii)
 
 Substituting into (i):
-$3v_1 + 5(v_1 + 5) = 14 \implies 8v_1 = -11 \implies v_1 = -1.375\,\text{m s}^{-1}$.
+$3v_1 + 5(v_1 + 5) = 14 \implies 8v_1 = -11 \implies v_1 = -1.375\,\mathrm{m s}^{-1}$.
 
-$v_2 = -1.375 + 5 = 3.625\,\text{m s}^{-1}$.
+$v_2 = -1.375 + 5 = 3.625\,\mathrm{m s}^{-1}$.
 
 $\mu = \dfrac{3 \times 5}{8} = \dfrac{15}{8}$.
 
-$\Delta KE = \dfrac{1}{2} \times \dfrac{15}{8} \times (10)^2 \times (1 - 0.25) = \dfrac{15}{16} \times 100 \times 0.75 = \dfrac{1125}{16} \approx 70.3\,\text{J}$.
+$\Delta KE = \dfrac{1}{2} \times \dfrac{15}{8} \times (10)^2 \times (1 - 0.25) = \dfrac{15}{16} \times 100 \times 0.75 = \dfrac{1125}{16} \approx 70.3\,\mathrm{J}$.
 
 **If you get this wrong, revise:**
 [Direct collision of two particles](#53-direct-collision-of-two-particles) — Section 5.3.
@@ -376,14 +376,14 @@ $\Delta KE = \dfrac{1}{2} \times \dfrac{15}{8} \times (10)^2 \times (1 - 0.25) =
 
 <details>
 <summary>Problem 3</summary>
-Find the centre of mass of a uniform semicircular lamina of radius $5\,\text{cm}$.
+Find the centre of mass of a uniform semicircular lamina of radius $5\,\mathrm{cm}$.
 </details>
 
 <details>
 <summary>Solution 3</summary>
-$\bar{y} = \dfrac{4r}{3\pi} = \dfrac{4 \times 5}{3\pi} = \dfrac{20}{3\pi} \approx 2.12\,\text{cm}$.
+$\bar{y} = \dfrac{4r}{3\pi} = \dfrac{4 \times 5}{3\pi} = \dfrac{20}{3\pi} \approx 2.12\,\mathrm{cm}$.
 
-The centre of mass lies on the axis of symmetry at a distance $\dfrac{20}{3\pi}\,\text{cm}$ from the
+The centre of mass lies on the axis of symmetry at a distance $\dfrac{20}{3\pi}\,\mathrm{cm}$ from the
 diameter.
 
 **If you get this wrong, revise:** [Semicircular lamina](#22-semicircular-lamina) — Section 2.2.
@@ -414,7 +414,7 @@ Similarly $\bar{y} = 2a$.
 
 <details>
 <summary>Problem 5</summary>
-A sphere hits a smooth horizontal floor with speed $10\,\text{m s}^{-1}$ at an angle of $60^\circ$ to the horizontal. The coefficient of restitution is $e = 0.8$. Find the speed and angle of the sphere immediately after impact.
+A sphere hits a smooth horizontal floor with speed $10\,\mathrm{m s}^{-1}$ at an angle of $60^\circ$ to the horizontal. The coefficient of restitution is $e = 0.8$. Find the speed and angle of the sphere immediately after impact.
 </details>
 
 <details>
@@ -427,7 +427,7 @@ After impact: $v_y = -e \times u_y = 0.8 \times 5\sqrt{3} = 4\sqrt{3}$ (upward).
 
 $v_x = 5$ (unchanged).
 
-Speed $= \sqrt{25 + 48} = \sqrt{73} \approx 8.54\,\text{m s}^{-1}$.
+Speed $= \sqrt{25 + 48} = \sqrt{73} \approx 8.54\,\mathrm{m s}^{-1}$.
 
 Angle to horizontal:
 $\theta = \arctan\!\left(\dfrac{4\sqrt{3}}{5}\right) = \arctan(1.386) \approx 54.2^\circ$.
@@ -461,7 +461,7 @@ Centre of mass: $(1.5, 1)$.
 
 <details>
 <summary>Problem 7</summary>
-Two smooth spheres $A$ (mass $2\,\text{kg}$) and $B$ (mass $3\,\text{kg}$) collide. Before collision, $A$ has velocity $(3\mathbf{i} + 2\mathbf{j})\,\text{m s}^{-1}$ and $B$ has velocity $(\mathbf{i} - \mathbf{j})\,\text{m s}^{-1}$. The line of centres at impact is parallel to $\mathbf{i}$. The coefficient of restitution is $e = 0.6$. Find the velocities after collision.
+Two smooth spheres $A$ (mass $2\,\mathrm{kg}$) and $B$ (mass $3\,\mathrm{kg}$) collide. Before collision, $A$ has velocity $(3\mathbf{i} + 2\mathbf{j})\,\mathrm{m s}^{-1}$ and $B$ has velocity $(\mathbf{i} - \mathbf{j})\,\mathrm{m s}^{-1}$. The line of centres at impact is parallel to $\mathbf{i}$. The coefficient of restitution is $e = 0.6$. Find the velocities after collision.
 </details>
 
 <details>
@@ -480,9 +480,9 @@ From (i): $2v_{An} + 3(v_{An} + 1.2) = 9 \implies 5v_{An} + 3.6 = 9 \implies v_{
 
 $v_{Bn} = 1.08 + 1.2 = 2.28$.
 
-Velocity of $A$: $(1.08\mathbf{i} + 2\mathbf{j})\,\text{m s}^{-1}$.
+Velocity of $A$: $(1.08\mathbf{i} + 2\mathbf{j})\,\mathrm{m s}^{-1}$.
 
-Velocity of $B$: $(2.28\mathbf{i} - \mathbf{j})\,\text{m s}^{-1}$.
+Velocity of $B$: $(2.28\mathbf{i} - \mathbf{j})\,\mathrm{m s}^{-1}$.
 
 **If you get this wrong, revise:**
 [Two spheres in oblique collision](#72-two-spheres-in-oblique-collision) — Section 7.2.
@@ -490,7 +490,7 @@ Velocity of $B$: $(2.28\mathbf{i} - \mathbf{j})\,\text{m s}^{-1}$.
 
 <details>
 <summary>Problem 8</summary>
-A uniform lamina is made from a rectangle $ABCD$ where $AB = 8\,\text{cm}$ and $BC = 6\,\text{cm}$, with a triangle $BCE$ removed where $E$ is the midpoint of $AD$. Find the centre of mass of the remaining lamina, taking $A$ as the origin with $AB$ along the $x$-axis.
+A uniform lamina is made from a rectangle $ABCD$ where $AB = 8\,\mathrm{cm}$ and $BC = 6\,\mathrm{cm}$, with a triangle $BCE$ removed where $E$ is the midpoint of $AD$. Find the centre of mass of the remaining lamina, taking $A$ as the origin with $AB$ along the $x$-axis.
 </details>
 
 <details>
@@ -503,9 +503,9 @@ $\bar{x} = \dfrac{8 + 8 + 4}{3} = \dfrac{20}{3}$, $\bar{y} = \dfrac{0 + 6 + 6}{3
 
 Remaining area $= 48 - 12 = 36$.
 
-$\bar{x} = \dfrac{48 \times 4 - 12 \times 20/3}{36} = \dfrac{192 - 80}{36} = \dfrac{112}{36} = \dfrac{28}{9} \approx 3.11\,\text{cm}$.
+$\bar{x} = \dfrac{48 \times 4 - 12 \times 20/3}{36} = \dfrac{192 - 80}{36} = \dfrac{112}{36} = \dfrac{28}{9} \approx 3.11\,\mathrm{cm}$.
 
-$\bar{y} = \dfrac{48 \times 3 - 12 \times 4}{36} = \dfrac{144 - 48}{36} = \dfrac{96}{36} = \dfrac{8}{3} \approx 2.67\,\text{cm}$.
+$\bar{y} = \dfrac{48 \times 3 - 12 \times 4}{36} = \dfrac{144 - 48}{36} = \dfrac{96}{36} = \dfrac{8}{3} \approx 2.67\,\mathrm{cm}$.
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.

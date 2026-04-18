@@ -47,19 +47,19 @@ A **fold expression** reduces a parameter pack using a binary operator [N4950 §
 C++17. Fold expressions come in four forms:
 
 $$
-\text{unary right fold: } (pack \ op \ ...)
+\mathrm{unary right fold: } (pack \ op \ ...)
 $$
 
 $$
-\text{unary left fold: } (\ldots \ op \ pack)
+\mathrm{unary left fold: } (\ldots \ op \ pack)
 $$
 
 $$
-\text{binary right fold: } (pack \ op \ \ldots \ op \ init)
+\mathrm{binary right fold: } (pack \ op \ \ldots \ op \ init)
 $$
 
 $$
-\text{binary left fold: } (init \ op \ \ldots \ op \ pack)
+\mathrm{binary left fold: } (init \ op \ \ldots \ op \ pack)
 $$
 
 ```cpp
@@ -148,8 +148,8 @@ For a pack $(e_1, e_2, e_3)$ and operator $\oplus$:
 | ------------ | ----------------------- | -------------------------------------------------- | ------------------------ |
 | Unary right  | `(pack op ...)`         | $e_1 \oplus (e_2 \oplus e_3)$                      | `(a + (b + c))`          |
 | Unary left   | `(... op pack)`         | $(e_1 \oplus e_2) \oplus e_3$                      | `((a + b) + c)`          |
-| Binary right | `(pack op ... op init)` | $e_1 \oplus (e_2 \oplus (e_3 \oplus \text{init}))$ | `(a + (b + (c + init)))` |
-| Binary left  | `(init op ... op pack)` | $((\text{init} \oplus e_1) \oplus e_2) \oplus e_3$ | `(((init + a) + b) + c)` |
+| Binary right | `(pack op ... op init)` | $e_1 \oplus (e_2 \oplus (e_3 \oplus \mathrm{init}))$ | `(a + (b + (c + init)))` |
+| Binary left  | `(init op ... op pack)` | $((\mathrm{init} \oplus e_1) \oplus e_2) \oplus e_3$ | `(((init + a) + b) + c)` |
 
 For a single-element pack $(e_1)$:
 
@@ -157,8 +157,8 @@ For a single-element pack $(e_1)$:
 | ------------ | ------------------------ |
 | Unary right  | $e_1$                    |
 | Unary left   | $e_1$                    |
-| Binary right | $e_1 \oplus \text{init}$ |
-| Binary left  | $\text{init} \oplus e_1$ |
+| Binary right | $e_1 \oplus \mathrm{init}$ |
+| Binary left  | $\mathrm{init} \oplus e_1$ |
 
 For an empty pack `()`:
 
@@ -220,7 +220,7 @@ $e_1 \oplus (e_2 \oplus (\ldots \oplus e_n))$.
 
 For a pack of size $n + 1$, the Standard specifies that the first element is the left operand of the
 operator, and the remaining elements form the right operand via a nested fold:
-$e_1 \oplus (\text{fold of } (e_2, \ldots, e_{n+1}))$.
+$e_1 \oplus (\mathrm{fold of } (e_2, \ldots, e_{n+1}))$.
 
 By the inductive hypothesis, the inner fold evaluates to
 $e_2 \oplus (e_3 \oplus (\ldots \oplus e_{n+1}))$.
@@ -321,10 +321,10 @@ Binary folds include an explicit initial value (`init`) that participates in the
 forms are:
 
 **Binary left fold** `(init op ... op pack)`:
-$$((\text{init} \oplus e_1) \oplus e_2) \oplus \ldots \oplus e_n$$
+$$((\mathrm{init} \oplus e_1) \oplus e_2) \oplus \ldots \oplus e_n$$
 
 **Binary right fold** `(pack op ... op init)`:
-$$e_1 \oplus (e_2 \oplus (\ldots \oplus (e_n \oplus \text{init})))$$
+$$e_1 \oplus (e_2 \oplus (\ldots \oplus (e_n \oplus \mathrm{init})))$$
 
 ```cpp
 #include <iostream>

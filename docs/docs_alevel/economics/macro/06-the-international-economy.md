@@ -45,7 +45,7 @@ Home has absolute advantage in Cloth ($2 \lt{} 6$). Foreign has absolute advanta
 
 **Opportunity costs:**
 
-$$\text{OC of Cloth in terms of Wine:}$$
+$$\mathrm{OC of Cloth in terms of Wine:}$$
 
 - Home: $\frac{a_C}{a_W} = \frac{2}{4} = 0.5$ units of Wine per unit of Cloth
 - Foreign: $\frac{a_C}{a_W} = \frac{6}{3} = 2.0$ units of Wine per unit of Cloth
@@ -53,7 +53,7 @@ $$\text{OC of Cloth in terms of Wine:}$$
 Home has a **comparative advantage** in Cloth (lower OC: 0.5 &lt; 2.0). Foreign has a comparative
 advantage in Wine.
 
-$$\text{OC of Wine in terms of Cloth:}$$
+$$\mathrm{OC of Wine in terms of Cloth:}$$
 
 - Home: $\frac{a_W}{a_C} = \frac{4}{2} = 2$ units of Cloth per unit of Wine
 - Foreign: $\frac{a_W}{a_C} = \frac{3}{6} = 0.5$ units of Cloth per unit of Wine
@@ -77,7 +77,7 @@ _Specialisation:_
 **World output increases**: 400C → 600C (+200) and 350W → 400W (+50). Both countries gain if they
 trade at an exchange rate between the two opportunity cost ratios:
 
-$$0.5 \text{ W/C} \lt{} \text{World price } p \lt{} 2.0 \text{ W/C}$$
+$$0.5 \mathrm{ W/C} \lt{} \mathrm{World price } p \lt{} 2.0 \mathrm{ W/C}$$
 
 For example, at $p = 1$ (1 unit of Wine for 1 unit of Cloth):
 
@@ -115,7 +115,7 @@ country exports labour-intensive goods.
 
 The **terms of trade (ToT)** measure the ratio of a country's export prices to its import prices:
 
-$$\text{ToT} = \frac{\text{Index of Export Prices}}{\text{Index of Import Prices}} \times 100$$
+$$\mathrm{ToT} = \frac{\mathrm{Index of Export Prices}}{\mathrm{Index of Import Prices}} \times 100$$
 
 ### 2.2 Interpretation
 
@@ -134,7 +134,7 @@ Base year (2020): Export price index = 100, Import price index = 100. ToT = 100.
 
 2024: Export prices rose by 15%, Import prices rose by 25%.
 
-$$\text{ToT}_{2024} = \frac{115}{125} \times 100 = 92$$
+$$\mathrm{ToT}_{2024} = \frac{115}{125} \times 100 = 92$$
 
 Terms of trade deteriorated by 8%. The country needs to export 8.7% more (115/105 = 1.087) just to
 buy the same quantity of imports as in 2020.
@@ -171,7 +171,7 @@ links exchange rates to macroeconomic policy objectives and requires evaluation 
 
 The **exchange rate** is the price of one currency in terms of another.
 
-$$\text{Spot rate: } e = \frac{\text{units of domestic currency}}{\text{one unit of foreign currency}}$$
+$$\mathrm{Spot rate: } e = \frac{\mathrm{units of domestic currency}}{\mathrm{one unit of foreign currency}}$$
 
 A **depreciation** of the pound means $e$ rises (more pounds per dollar — the pound is weaker). An
 **appreciation** means $e$ falls (fewer pounds per dollar — the pound is stronger).
@@ -182,9 +182,9 @@ A **depreciation** of the pound means $e$ rises (more pounds per dollar — the 
 
 The central bank commits to buying and selling currency to maintain $e = \bar{e}$.
 
-$$\text{If } e \gt{} \bar{e} \text{ (depreciation pressure): central bank sells foreign reserves, buys domestic currency}$$
+$$\mathrm{If } e \gt{} \bar{e} \mathrm{ (depreciation pressure): central bank sells foreign reserves, buys domestic currency}$$
 
-$$\text{If } e \lt{} \bar{e} \text{ (appreciation pressure): central bank buys foreign reserves, sells domestic currency}$$
+$$\mathrm{If } e \lt{} \bar{e} \mathrm{ (appreciation pressure): central bank buys foreign reserves, sells domestic currency}$$
 
 Advantages: certainty for trade and investment, discipline on monetary policy (cannot inflate away
 the peg), reduces speculative volatility.
@@ -197,7 +197,7 @@ Wednesday).
 
 The exchange rate is determined by market forces (supply and demand for the currency).
 
-$$e^* : \text{Supply of } £ = \text{Demand for } £$$
+$$e^* : \mathrm{Supply of } £ = \mathrm{Demand for } £$$
 
 Advantages: automatic adjustment to BoP imbalances (deficit → depreciation → exports cheaper,
 imports dearer → deficit narrows), independent monetary policy, no need for large reserves.
@@ -214,7 +214,7 @@ $$\bar{e}_{\min} \lt{} e \lt{} \bar{e}_{\max}$$
 
 ### 3.3 Determinants of Floating Exchange Rates
 
-$$e = f(P, r, Y, Y^*, \text{expectations, speculation})$$
+$$e = f(P, r, Y, Y^*, \mathrm{expectations, speculation})$$
 
 | Factor                   | Mechanism                                                                                                                                |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -284,7 +284,7 @@ production → $|E_X| + |E_M| \gt{} 1$ → the current account **improves**.
 
 The path of the current account traces a **J-shape**:
 
-$$CA \text{ falls initially, then rises above the starting level}$$
+$$CA \mathrm{ falls initially, then rises above the starting level}$$
 
 :::tip
 Exam Technique When asked about the effect of a depreciation on the current account, always
@@ -364,7 +364,7 @@ war, reshoring) reflects these tensions.
 
 **Composite indicators:**
 
-- **HDI** ($0 \leq \text{HDI} \leq 1$): health + education + income
+- **HDI** ($0 \leq \mathrm{HDI} \leq 1$): health + education + income
 - **Multidimensional Poverty Index (MPI)**: health, education, and living standards
 - **Genuine Progress Indicator (GPI)**: adjusts GDP for environmental costs, inequality, and unpaid
   work
@@ -448,7 +448,7 @@ imports from a member country (due to preferential tariffs). This reduces effici
 Consumer surplus falls by more than producer surplus and government revenue increase → **net welfare
 loss** (deadweight loss from inefficient domestic production and reduced consumption).
 
-$$\text{DWL} = \frac{1}{2} \times (P_w + t - P_w) \times (Q_d^{domestic} - Q_s^{domestic}) = \frac{1}{2} t \times \Delta Q$$
+$$\mathrm{DWL} = \frac{1}{2} \times (P_w + t - P_w) \times (Q_d^{domestic} - Q_s^{domestic}) = \frac{1}{2} t \times \Delta Q$$
 
 ## 8. Problem Set
 

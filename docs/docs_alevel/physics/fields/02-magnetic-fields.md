@@ -48,7 +48,7 @@ current: thumb (force), index (field), middle (current).
 magnetic flux density that produces a force of 1 N on a wire of length 1 m carrying a current of 1 A
 perpendicular to the field.
 
-$$\boxed{1\,\text{T} = 1\,\text{N A}^{-1}\,\text{m}^{-1}}$$
+$$\boxed{1\,\mathrm{T} = 1\,\mathrm{N A}^{-1}\,\mathrm{m}^{-1}}$$
 
 ### Magnetic Force on a Moving Charge
 
@@ -142,7 +142,7 @@ the surface.
 
 **Definition.** The weber is the SI unit of magnetic flux; 1 Wb = 1 T m$^2$.
 
-$$\boxed{1\,\text{Wb} = 1\,\text{T}\,\text{m}^2}$$
+$$\boxed{1\,\mathrm{Wb} = 1\,\mathrm{T}\,\mathrm{m}^2}$$
 
 ### Faraday's Law
 
@@ -257,7 +257,7 @@ $B \to 0$, as expected.
 **Statement.** Ampere's circuital law: the line integral of $\mathbf{B}$ around any closed Amperian
 loop equals $\mu_0$ times the net current threading that loop:
 
-$$\boxed{\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\text{enc}}}$$
+$$\boxed{\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enc}}}$$
 
 This is one of Maxwell's equations. It is the magnetic analogue of Gauss's law for electric fields.
 Where Gauss's law exploits symmetry to find $E$ from enclosed charge, Ampere's law exploits symmetry
@@ -316,7 +316,7 @@ head-on (repel).
 
 Setting $I_1 = I_2 = 1$ A and $d = 1$ m:
 
-$$\frac{F}{L} = \frac{\mu_0}{2\pi} = \frac{4\pi \times 10^{-7}}{2\pi} = 2 \times 10^{-7}\ \text{N m}^{-1}$$
+$$\frac{F}{L} = \frac{\mu_0}{2\pi} = \frac{4\pi \times 10^{-7}}{2\pi} = 2 \times 10^{-7}\ \mathrm{N m}^{-1}$$
 
 The ampere is defined such that this force is exactly $2 \times 10^{-7}$ N per metre of length.
 
@@ -384,7 +384,7 @@ $$v_{\perp} = v\sin\theta, \qquad v_{\parallel} = v\cos\theta$$
 The perpendicular component produces circular motion (radius $r = mv_{\perp}/(Bq)$, period
 $T = 2\pi m/(Bq)$), while the parallel component is unaffected. The particle traces a helix with:
 
-$$\boxed{\text{pitch} = v_{\parallel}\,T = \frac{2\pi m v_{\parallel}}{Bq}}$$
+$$\boxed{\mathrm{pitch} = v_{\parallel}\,T = \frac{2\pi m v_{\parallel}}{Bq}}$$
 
 The pitch is the axial distance travelled per revolution. A faster parallel component or larger mass
 gives a more stretched helix; a stronger field or larger charge gives a tighter helix.
@@ -534,7 +534,7 @@ compounds by mass signature), carbon dating ($^{14}$C/$^{12}$C ratio), trace ele
 <summary>Worked Example: Separating Neon Isotopes</summary>
 Singly ionised neon atoms pass through a velocity selector with $E = 1.5 \times 10^5$ V m$^{-1}$ and
 $B_1 = 0.50$ T, then enter a deflection chamber with $B_2 = 0.50$ T. Find the detector separation
-between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \text{u} = 1.66 \times 10^{-27}$ kg.)
+between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
 
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
@@ -784,7 +784,7 @@ to a 240 V AC supply. The secondary delivers 5.0 A to a load. Calculate (a) the 
 <summary>Problem 17</summary>
 Singly ionised neon atoms pass through a velocity selector with $E = 1.5 \times 10^5$ V m$^{-1}$ and
 $B_1 = 0.50$ T, then enter a deflection chamber with $B_2 = 0.50$ T. Find the separation on the
-detector between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \text{u} = 1.66 \times 10^{-27}$ kg.)
+detector between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
 
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
@@ -816,7 +816,7 @@ m $= 6.53$ cm.
 $T = \frac{2\pi m}{Bq} = \frac{2\pi \times 1.67 \times 10^{-27}}{0.40 \times 1.60 \times 10^{-19}} = \frac{1.05 \times 10^{-26}}{6.4 \times 10^{-20}} = 1.64 \times 10^{-7}$
 s.
 
-$\text{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
+$\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
 
 <b>If you get this wrong, revise:</b>
 [Charged Particles in Crossed Fields](#8-charged-particles-in-crossed-fields)

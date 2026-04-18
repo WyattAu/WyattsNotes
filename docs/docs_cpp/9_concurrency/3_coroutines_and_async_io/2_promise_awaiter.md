@@ -29,7 +29,7 @@ The C++ coroutine mechanism consists of three interacting components [N4950 §9.
 The relationship between these three is:
 
 $$
-\text{Caller} \xrightarrow{\text{invoke}} \text{Coroutine} \xleftrightarrow{\text{promise\_type}} \text{Caller} \xleftrightarrow{\text{awaiter}} \text{co\_await}
+\mathrm{Caller} \xrightarrow{\mathrm{invoke}} \mathrm{Coroutine} \xleftrightarrow{\mathrm{promise\_type}} \mathrm{Caller} \xleftrightarrow{\mathrm{awaiter}} \mathrm{co\_await}
 $$
 
 ## `co_await` Expression Semantics [N4950 §9.5.4.3]

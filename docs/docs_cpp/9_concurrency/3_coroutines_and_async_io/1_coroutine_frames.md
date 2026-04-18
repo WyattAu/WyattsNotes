@@ -196,7 +196,7 @@ liveness analysis to minimize frame size [N4950 §9.5.4].
 The total frame size $S$ can be expressed as:
 
 $$
-S = \text{sizeof}(\text{promise\_type}) + \sum_{i \in \text{live params}} \text{sizeof}(p_i) + \sum_{j \in \text{live locals}} \text{sizeof}(l_j) + \text{padding}
+S = \mathrm{sizeof}(\mathrm{promise\_type}) + \sum_{i \in \mathrm{live params}} \mathrm{sizeof}(p_i) + \sum_{j \in \mathrm{live locals}} \mathrm{sizeof}(l_j) + \mathrm{padding}
 $$
 
 ### Frame Size Analysis
@@ -247,20 +247,20 @@ suspension point introduces a new state, and the coroutine transitions between s
 [N4950 §9.5.4]:
 
 $$
-\text{States} = \{S_0, S_1, \ldots, S_n, S_{\text{done}}\}
+\mathrm{States} = \{S_0, S_1, \ldots, S_n, S_{\mathrm{done}}\}
 $$
 
 where $S_0$ is the initial state (before the first suspension point), $S_i$ corresponds to the
-$i$-th suspension point, and $S_{\text{done}}$ is the terminal state.
+$i$-th suspension point, and $S_{\mathrm{done}}$ is the terminal state.
 
 The state machine for a coroutine with $n$ suspension points has the following transitions:
 
 $$
-S_i \xrightarrow{\text{resume}} S_{i+1} \quad \text{for } i \in \{0, \ldots, n-1\}
+S_i \xrightarrow{\mathrm{resume}} S_{i+1} \quad \mathrm{for } i \in \{0, \ldots, n-1\}
 $$
 
 $$
-S_n \xrightarrow{\text{resume}} S_{\text{done}}
+S_n \xrightarrow{\mathrm{resume}} S_{\mathrm{done}}
 $$
 
 At each state, the state machine executes the code segment between the previous suspension point and
@@ -307,7 +307,7 @@ By default, the coroutine frame is **dynamically allocated** on the heap using t
 `operator new` [N4950 §9.5.4]. The compiler generates a call equivalent to:
 
 $$
-\text{frame} = ::\operatorname{new}\bigl(\text{sizeof(frame)}\bigr)
+\mathrm{frame} = ::\operatorname{new}\bigl(\mathrm{sizeof(frame)}\bigr)
 $$
 
 There are two guaranteed elision scenarios where the compiler **may not** allocate on the heap

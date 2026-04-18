@@ -203,7 +203,7 @@ of two large prime numbers.
 RSA encryption with OAEP:
 
 $$
-\text{Ciphertext} = (\text{Plaintext} \| \text{Label})^{e} \mod n
+\mathrm{Ciphertext} = (\mathrm{Plaintext} \| \mathrm{Label})^{e} \mod n
 $$
 
 Where $e$ is the public exponent (typically 65537) and $n$ is the modulus (product of two primes $p$
@@ -299,11 +299,11 @@ A cryptographic hash function maps arbitrary-length input to a fixed-length outp
 following properties:
 
 1. **Preimage resistance**: Given hash $h$, it is infeasible to find $m$ such that
-   $\text{Hash}(m) = h$
+   $\mathrm{Hash}(m) = h$
 2. **Second preimage resistance**: Given $m_1$, it is infeasible to find $m_2 \neq m_1$ such that
-   $\text{Hash}(m_1) = \text{Hash}(m_2)$
+   $\mathrm{Hash}(m_1) = \mathrm{Hash}(m_2)$
 3. **Collision resistance**: It is infeasible to find any pair $m_1 \neq m_2$ such that
-   $\text{Hash}(m_1) = \text{Hash}(m_2)$
+   $\mathrm{Hash}(m_1) = \mathrm{Hash}(m_2)$
 
 ### SHA Family
 
@@ -337,7 +337,7 @@ expensive.
 
 - **Design**: Blowfish-based, adaptive cost parameter
 - **Salt**: 128-bit random salt embedded in output
-- **Cost factor**: $2^{\text{cost}}$ iterations (default 10 = 1024 iterations, recommended 12+)
+- **Cost factor**: $2^{\mathrm{cost}}$ iterations (default 10 = 1024 iterations, recommended 12+)
 - **Output**: 60 characters (e.g., `$2b$12$R9h/cIPz0gi...`)
 
 ```python
@@ -421,11 +421,11 @@ A MAC provides integrity and authenticity for a message. The sender and receiver
 HMAC (Hash-based MAC, RFC 2104) uses a cryptographic hash function with a secret key:
 
 $$
-\text{HMAC}(K, m) = H\Big((K' \oplus \text{opad}) \;\|\; H\big((K' \oplus \text{ipad}) \;\|\; m\big)\Big)
+\mathrm{HMAC}(K, m) = H\Big((K' \oplus \mathrm{opad}) \;\|\; H\big((K' \oplus \mathrm{ipad}) \;\|\; m\big)\Big)
 $$
 
-Where $K'$ is the key padded to the block size, $\text{opad} = \text{0x5c}...$, and
-$\text{ipad} = \text{0x36}...$.
+Where $K'$ is the key padded to the block size, $\mathrm{opad} = \mathrm{0x5c}...$, and
+$\mathrm{ipad} = \mathrm{0x36}...$.
 
 ```python
 import hmac

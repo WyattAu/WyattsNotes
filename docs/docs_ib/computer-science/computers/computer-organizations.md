@@ -477,7 +477,7 @@ frequently accessed data and instructions to reduce the average time to access m
 - **Cache hit:** The data or instruction the CPU needs is found in the cache. This is fast.
 - **Cache miss:** The data is not in the cache and must be fetched from main memory. This is slower.
 - **Hit rate:** The percentage of memory accesses that are cache hits.
-- **Miss rate:** $1 - \text{hit rate}$.
+- **Miss rate:** $1 - \mathrm{hit rate}$.
 
 ### Worked Example: Cache Hit Rate Calculation
 
@@ -491,31 +491,31 @@ time for all 10,000 accesses if there were no cache.
 **a) Hit rate:**
 
 $$
-\text{Hit rate} = \frac{\text{Cache hits}}{\text{Total accesses}} = \frac{8500}{10000} = 0.85 = 85\%
+\mathrm{Hit rate} = \frac{\mathrm{Cache hits}}{\mathrm{Total accesses}} = \frac{8500}{10000} = 0.85 = 85\%
 $$
 
 **b) Average Memory Access Time (AMAT):**
 
 $$
-\text{AMAT} = (\text{Hit rate} \times \text{Hit time}) + (\text{Miss rate} \times \text{Miss penalty})
+\mathrm{AMAT} = (\mathrm{Hit rate} \times \mathrm{Hit time}) + (\mathrm{Miss rate} \times \mathrm{Miss penalty})
 $$
 
 The miss penalty is the time to fetch from main memory: 50 ns.
 
 $$
-\text{AMAT} = (0.85 \times 2) + (0.15 \times 50) = 1.7 + 7.5 = 9.2 \text{ ns}
+\mathrm{AMAT} = (0.85 \times 2) + (0.15 \times 50) = 1.7 + 7.5 = 9.2 \mathrm{ ns}
 $$
 
 **c) Without cache (all accesses from main memory):**
 
 $$
-\text{Total time} = 10000 \times 50 = 500,000 \text{ ns}
+\mathrm{Total time} = 10000 \times 50 = 500,000 \mathrm{ ns}
 $$
 
 **With cache:**
 
 $$
-\text{Total time} = 8500 \times 2 + 1500 \times 50 = 17000 + 75000 = 92,000 \text{ ns}
+\mathrm{Total time} = 8500 \times 2 + 1500 \times 50 = 17000 + 75000 = 92,000 \mathrm{ ns}
 $$
 
 The cache reduces total access time by approximately 82%.

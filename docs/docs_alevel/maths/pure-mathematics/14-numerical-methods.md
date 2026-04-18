@@ -560,7 +560,7 @@ Use the trapezium rule with 6 strips to approximate $\displaystyle\int_1^4 \ln x
 <summary>Solution 8</summary>
 $h = 0.5$. Values: $\ln 1 = 0$, $\ln 1.5 \approx 0.4055$, $\ln 2 \approx 0.6931$, $\ln 2.5 \approx 0.9163$, $\ln 3 \approx 1.0986$, $\ln 3.5 \approx 1.2528$, $\ln 4 \approx 1.3863$.
 
-$$\text{Approx} = \frac{0.5}{2}[0 + 2(0.4055+0.6931+0.9163+1.0986+1.2528) + 1.3863]$$
+$$\mathrm{Approx} = \frac{0.5}{2}[0 + 2(0.4055+0.6931+0.9163+1.0986+1.2528) + 1.3863]$$
 $$= 0.25[0 + 2(4.3663) + 1.3863] = 0.25[8.7326 + 1.3863] = 0.25 \times 10.1189 \approx 2.5297$$
 
 (Exact: $[x\ln x - x]_1^4 = 4\ln 4 - 4 + 1 = 8\ln 2 - 3 \approx 2.5452$.)
@@ -652,7 +652,7 @@ $[0,2]$ and hence bound the error in your approximation.
 $y_0 = f(0) = 1$, $y_1 = f(0.5) = 1/1.25 = 0.8$, $y_2 = f(1) = 0.5$,
 $y_3 = f(1.5) = 1/3.25 \approx 0.3077$, $y_4 = f(2) = 0.2$.
 
-$$\text{Approx} = \frac{0.5}{2}[1 + 2(0.8 + 0.5 + 0.3077) + 0.2] = 0.25[1 + 2(1.6077) + 0.2] = 0.25 \times 4.4154 \approx 1.1039$$
+$$\mathrm{Approx} = \frac{0.5}{2}[1 + 2(0.8 + 0.5 + 0.3077) + 0.2] = 0.25[1 + 2(1.6077) + 0.2] = 0.25 \times 4.4154 \approx 1.1039$$
 
 (Exact value: $\arctan 2 \approx 1.1071$.)
 
@@ -751,7 +751,7 @@ approximately $1/2$.
 <summary>Solution 15</summary>
 (a) $h = 0.5$. $y_0 = \sqrt{0} = 0$, $y_1 = \sqrt{0.5} \approx 0.7071$, $y_2 = \sqrt{1} = 1$.
 
-$$\text{Approx} = \frac{0.5}{2}[0 + 2(0.7071) + 1] = 0.25 \times 2.4142 = 0.6036$$
+$$\mathrm{Approx} = \frac{0.5}{2}[0 + 2(0.7071) + 1] = 0.25 \times 2.4142 = 0.6036$$
 
 (b) Exact: $2/3 \approx 0.6667$. Actual error: $|0.6667 - 0.6036| = 0.0631$.
 

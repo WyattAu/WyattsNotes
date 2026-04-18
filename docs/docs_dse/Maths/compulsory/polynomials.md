@@ -140,7 +140,7 @@ $$
 To find the coefficient of $x^k$, set $r = k$ and evaluate:
 
 $$
-[\text{coefficient of } x^k] = \binom{n}{k} a^{n-k} b^k
+[\mathrm{coefficient of } x^k] = \binom{n}{k} a^{n-k} b^k
 $$
 
 <details>
@@ -474,8 +474,8 @@ The constant term is $84$.
 <details>
 <summary>Answer</summary>
 By the Remainder Theorem:
-- $f(1) = 2 + a + b - 6 = -4 \implies a + b = 0 \quad \text{(i)}$
-- $f(-2) = -16 + 4a - 2b - 6 = 30 \implies 4a - 2b = 52 \implies 2a - b = 26 \quad \text{(ii)}$
+- $f(1) = 2 + a + b - 6 = -4 \implies a + b = 0 \quad \mathrm{(i)}$
+- $f(-2) = -16 + 4a - 2b - 6 = 30 \implies 4a - 2b = 52 \implies 2a - b = 26 \quad \mathrm{(ii)}$
 
 Adding (i) and (ii): $3a = 26 \implies a = \dfrac{26}{3}$.
 
@@ -486,8 +486,8 @@ From (i): $b = -\dfrac{26}{3}$.
 <details>
 <summary>Answer</summary>
 By the Factor Theorem:
-- $f(3) = 27 + 9a + 3b + c = 0 \quad \text{(i)}$
-- $f(-1) = -1 + a - b + c = 0 \quad \text{(ii)}$
+- $f(3) = 27 + 9a + 3b + c = 0 \quad \mathrm{(i)}$
+- $f(-1) = -1 + a - b + c = 0 \quad \mathrm{(ii)}$
 
 Since $(x-3)(x+1) = x^2 - 2x - 3$ is a factor, write $f(x) = (x^2 - 2x - 3)(x - d)$ for some constant $d$.
 
@@ -502,7 +502,7 @@ Also $f(3) = 0$ gives $27 + 9a + 3b + c = 0$.
 
 Using $f(-1) = 0$: $-1 + a - b + c = 0$.
 
-Subtracting (ii) from (i): $28 + 8a + 4b = 0 \implies 7 + 2a + b = 0 \quad \text{(iii)}$.
+Subtracting (ii) from (i): $28 + 8a + 4b = 0 \implies 7 + 2a + b = 0 \quad \mathrm{(iii)}$.
 
 From (ii): $a - b + c = 1$.
 
@@ -582,8 +582,8 @@ $$
 8. **Question:** The remainder when $f(x) = x^3 + px^2 + qx + 6$ is divided by $(x-1)$ is $12$. The remainder when $f(x)$ is divided by $(x+1)$ is $18$. Find $p$ and $q$.
 <details>
 <summary>Answer</summary>
-- $f(1) = 1 + p + q + 6 = 12 \implies p + q = 5 \quad \text{(i)}$
-- $f(-1) = -1 + p - q + 6 = 18 \implies p - q = 13 \quad \text{(ii)}$
+- $f(1) = 1 + p + q + 6 = 12 \implies p + q = 5 \quad \mathrm{(i)}$
+- $f(-1) = -1 + p - q + 6 = 18 \implies p - q = 13 \quad \mathrm{(ii)}$
 
 Adding: $2p = 18 \implies p = 9$.
 

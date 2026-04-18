@@ -338,8 +338,8 @@ This paper tests problem-solving and mathematical reasoning on HL extension mate
 
 | Mistake                                  | Correction                                                                      |
 | :--------------------------------------- | :------------------------------------------------------------------------------ |
-| $P(A \text{ or } B) = P(A) + P(B)$       | Only if mutually exclusive; otherwise $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| $P(A \text{ and } B) = P(A) \times P(B)$ | Only if independent; otherwise use conditional probability                      |
+| $P(A \mathrm{ or } B) = P(A) + P(B)$       | Only if mutually exclusive; otherwise $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| $P(A \mathrm{ and } B) = P(A) \times P(B)$ | Only if independent; otherwise use conditional probability                      |
 | Confusing $\mu$ and $\bar{x}$            | $\mu$ is the population mean; $\bar{x}$ is the sample mean                      |
 
 ---

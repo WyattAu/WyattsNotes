@@ -139,10 +139,10 @@ A box plot displays:
 
 ### 3.3 Outlier detection
 
-An outlier is a value that lies more than $1.5 \times \text{IQR}$ below $Q_1$ or above $Q_3$:
+An outlier is a value that lies more than $1.5 \times \mathrm{IQR}$ below $Q_1$ or above $Q_3$:
 
-$$\text{Lower fence} = Q_1 - 1.5 \times \text{IQR}$$
-$$\text{Upper fence} = Q_3 + 1.5 \times \text{IQR}$$
+$$\mathrm{Lower fence} = Q_1 - 1.5 \times \mathrm{IQR}$$
+$$\mathrm{Upper fence} = Q_3 + 1.5 \times \mathrm{IQR}$$
 
 Values outside these fences are potential outliers.
 
@@ -246,26 +246,26 @@ median lies between them.
 
 ### 7.1 The IQR method — mild and extreme outliers
 
-As introduced in Section 3.3, the $1.5 \times \text{IQR}$ rule defines fences. Some boards further
+As introduced in Section 3.3, the $1.5 \times \mathrm{IQR}$ rule defines fences. Some boards further
 distinguish between mild and extreme outliers:
 
-- **Mild outlier**: a value between $1.5 \times \text{IQR}$ and $3 \times \text{IQR}$ from the
+- **Mild outlier**: a value between $1.5 \times \mathrm{IQR}$ and $3 \times \mathrm{IQR}$ from the
   nearest quartile.
-- **Extreme outlier**: a value more than $3 \times \text{IQR}$ from the nearest quartile.
+- **Extreme outlier**: a value more than $3 \times \mathrm{IQR}$ from the nearest quartile.
 
-$$\text{Extreme lower fence} = Q_1 - 3 \times \text{IQR}$$
-$$\text{Extreme upper fence} = Q_3 + 3 \times \text{IQR}$$
+$$\mathrm{Extreme lower fence} = Q_1 - 3 \times \mathrm{IQR}$$
+$$\mathrm{Extreme upper fence} = Q_3 + 3 \times \mathrm{IQR}$$
 
 ### 7.2 The modified z-score method
 
 The modified z-score uses the **median absolute deviation** (MAD). For a dataset
 $x_1, x_2, \ldots, x_n$ with median $\tilde{x}$:
 
-$$\text{MAD} = \text{median}\left(|x_i - \tilde{x}|\right)$$
+$$\mathrm{MAD} = \mathrm{median}\left(|x_i - \tilde{x}|\right)$$
 
 The modified z-score for each observation is:
 
-$$M_i = \frac{0.6745\left(x_i - \tilde{x}\right)}{\text{MAD}}$$
+$$M_i = \frac{0.6745\left(x_i - \tilde{x}\right)}{\mathrm{MAD}}$$
 
 An observation is flagged as an outlier if $|M_i| \gt{} 3.5$.
 
@@ -499,7 +499,7 @@ $n = 9$ (odd). $Q_2 = 5$th value $= 8$.
 Lower half: $\{2, 3, 5, 7\}$. $Q_1 = (3+5)/2 = 4$. Upper half: $\{11, 14, 18, 23\}$.
 $Q_3 = (14+18)/2 = 16$.
 
-$\text{IQR} = 16 - 4 = 12$.
+$\mathrm{IQR} = 16 - 4 = 12$.
 
 Lower fence: $4 - 1.5(12) = -14$. Upper fence: $16 + 1.5(12) = 34$.
 
@@ -647,9 +647,9 @@ at 42. Calculate the IQR, the upper fence, and describe the skewness of the dist
 
 <details>
 <summary>Solution 12</summary>
-$\text{IQR} = Q_3 - Q_1 = 25 - 12 = 13$.
+$\mathrm{IQR} = Q_3 - Q_1 = 25 - 12 = 13$.
 
-Upper fence $= Q_3 + 1.5 \times \text{IQR} = 25 + 1.5 \times 13 = 25 + 19.5 = 44.5$.
+Upper fence $= Q_3 + 1.5 \times \mathrm{IQR} = 25 + 1.5 \times 13 = 25 + 19.5 = 44.5$.
 
 Skewness: $Q_3 - Q_2 = 25 - 18 = 7$ and $Q_2 - Q_1 = 18 - 12 = 6$.
 
@@ -730,7 +730,7 @@ $$Q_1 = 20 + \left(15 - 8\right) \cdot \frac{10}{15} = 20 + 7 \cdot \frac{10}{15
 
 $$Q_3 = 30 + \left(45 - 23\right) \cdot \frac{10}{22} = 30 + 22 \cdot \frac{10}{22} = 30 + 10 = 40$$
 
-$\text{IQR} = Q_3 - Q_1 = 40 - 24.67 = 15.33$.
+$\mathrm{IQR} = Q_3 - Q_1 = 40 - 24.67 = 15.33$.
 
 **If you get this wrong, revise:**
 [Interpolation from Grouped Data](#10-interpolation-from-grouped-data) — Section 10.
@@ -745,7 +745,7 @@ modified z-score method to determine whether the value 48 is an outlier.
 
 <details>
 <summary>Solution 15</summary>
-$\tilde{x} = 12$ (median). $\text{MAD} = 4$.
+$\tilde{x} = 12$ (median). $\mathrm{MAD} = 4$.
 
 For $x = 48$:
 $$M = \frac{0.6745(48 - 12)}{4} = \frac{0.6745 \times 36}{4} = \frac{24.282}{4} = 6.07$$

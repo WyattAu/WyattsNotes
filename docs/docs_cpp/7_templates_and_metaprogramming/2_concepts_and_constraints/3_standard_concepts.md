@@ -157,7 +157,7 @@ conversion (via `static_cast<To>(declval<From>())`), making it more permissive.
 The iterator concepts in `<iterator>` [N4950 §18.4.4] form a refinement hierarchy:
 
 $$
-\text{input\_iterator} \prec \text{forward\_iterator} \prec \text{bidirectional\_iterator} \prec \text{random\_access\_iterator} \prec \text{contiguous\_iterator}
+\mathrm{input\_iterator} \prec \mathrm{forward\_iterator} \prec \mathrm{bidirectional\_iterator} \prec \mathrm{random\_access\_iterator} \prec \mathrm{contiguous\_iterator}
 $$
 
 | Concept                       | Key Requirements                                                                       |

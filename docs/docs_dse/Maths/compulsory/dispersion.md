@@ -88,7 +88,7 @@ datasets can share the same mean yet have very different spreads.
 
 $$
 \begin{aligned}
-  \text{Range} = \text{Maximum value} - \text{Minimum value}
+  \mathrm{Range} = \mathrm{Maximum value} - \mathrm{Minimum value}
 \end{aligned}
 $$
 
@@ -111,7 +111,7 @@ The **quartiles** divide an ordered dataset into four equal parts:
 
 $$
 \begin{aligned}
-  \text{IQR} = Q_3 - Q_1
+  \mathrm{IQR} = Q_3 - Q_1
 \end{aligned}
 $$
 
@@ -203,7 +203,7 @@ We work with class intervals instead.
   classes. For example, if raw intervals are $10$--$19$ and $20$--$29$, the class boundaries are
   $9.5$--$19.5$ and $19.5$--$29.5$.
 - **Class width**: The difference between the upper and lower class boundaries.
-- **Class mark (midpoint)**: $x_i = \dfrac{\text{lower boundary} + \text{upper boundary}}{2}$, used
+- **Class mark (midpoint)**: $x_i = \dfrac{\mathrm{lower boundary} + \mathrm{upper boundary}}{2}$, used
   as the representative value for all data in the class.
 
 ### Mean of Grouped Data
@@ -279,7 +279,7 @@ widths are unequal, the height of each bar is the **frequency density**:
 
 $$
 \begin{aligned}
-  \text{Frequency density} = \frac{\text{Frequency}}{\text{Class width}}
+  \mathrm{Frequency density} = \frac{\mathrm{Frequency}}{\mathrm{Class width}}
 \end{aligned}
 $$
 
@@ -294,7 +294,7 @@ For a dataset $X$ and constants $a, b$:
 
 $$
 \begin{aligned}
-  \text{Var}(aX + b) = a^2 \text{Var}(X)
+  \mathrm{Var}(aX + b) = a^2 \mathrm{Var}(X)
 \end{aligned}
 $$
 
@@ -305,7 +305,7 @@ For the mean: $\overline{aX+b} = a\bar{x} + b$.
 
 <details>
 <summary>Examples</summary>
-- If $\bar{x} = 50$ and $\sigma^2 = 16$, then for $Y = 3X - 4$: $\bar{y} = 3(50)-4 = 146$ and $\text{Var}(Y) = 9 \times 16 = 144$.
+- If $\bar{x} = 50$ and $\sigma^2 = 16$, then for $Y = 3X - 4$: $\bar{y} = 3(50)-4 = 146$ and $\mathrm{Var}(Y) = 9 \times 16 = 144$.
 - Temperatures recorded in Celsius have mean $25$ and standard deviation $3$. In Fahrenheit ($F = 1.8C + 32$): mean $= 1.8(25)+32 = 77$, standard deviation $= 1.8 \times 3 = 5.4$.
 </details>
 
@@ -356,7 +356,7 @@ different units or with vastly different means:
 
 $$
 \begin{aligned}
-  \text{CV} = \frac{\sigma}{\bar{x}} \times 100\%
+  \mathrm{CV} = \frac{\sigma}{\bar{x}} \times 100\%
 \end{aligned}
 $$
 
@@ -381,7 +381,7 @@ $Q_1$, $Q_2$ (median), $Q_3$, and maximum.
 3. Extend "whiskers" to the minimum and maximum values.
 
 **Identifying outliers:** A data point is considered a potential outlier if it falls below
-$Q_1 - 1.5 \times \text{IQR}$ or above $Q_3 + 1.5 \times \text{IQR}$.
+$Q_1 - 1.5 \times \mathrm{IQR}$ or above $Q_3 + 1.5 \times \mathrm{IQR}$.
 
 <details>
 <summary>Examples</summary>
@@ -422,7 +422,7 @@ transformed dataset $Y = \dfrac{X - 20}{6}$.
 <summary>Answer</summary>
 
 - $\bar{y} = \frac{1}{6}(20) - \frac{20}{6} = \frac{20-20}{6} = 0$.
-- $\text{Var}(Y) = \left(\frac{1}{6}\right)^2 \times 36 = \frac{1}{36} \times 36 = 1$.
+- $\mathrm{Var}(Y) = \left(\frac{1}{6}\right)^2 \times 36 = \frac{1}{36} \times 36 = 1$.
 </details>
 
 3. **Question:** For the grouped frequency distribution below, find the mean and standard deviation
@@ -536,9 +536,9 @@ Estimate the median weight from the cumulative frequency distribution.
 - Using linear interpolation within the class:
   $$
   \begin{aligned}
-    \text{Median} &= 139.5 + \frac{25-20}{40-20} \times (159.5 - 139.5) \\
+    \mathrm{Median} &= 139.5 + \frac{25-20}{40-20} \times (159.5 - 139.5) \\
                   &= 139.5 + \frac{5}{20} \times 20 \\
-                  &= 139.5 + 5 = 144.5 \text{ g}
+                  &= 139.5 + 5 = 144.5 \mathrm{ g}
   \end{aligned}
   $$
 </details>

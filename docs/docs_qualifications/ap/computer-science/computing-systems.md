@@ -144,7 +144,7 @@ Base-16 representation, using digits 0--9 and A--F.
 
 Conversion: group binary digits in groups of 4 from right to left.
 
-$10110110_2 = \text{B6}_{16}$
+$10110110_2 = \mathrm{B6}_{16}$
 
 **Uses of hexadecimal:** Colour codes (#RRGGBB in HTML/CSS), memory addresses, MAC addresses, error
 codes, assembly language.
@@ -164,11 +164,11 @@ An image is a grid of pixels. Each pixel's colour is represented by binary value
 - **Colour depth:** Number of bits per pixel (1 bit = 2 colours, 24 bits = 16,777,216 colours).
 - **Resolution:** Width $\times$ height in pixels.
 
-$$\text{File size (bits)} = \text{width} \times \text{height} \times \text{colour depth}$$
+$$\mathrm{File size (bits)} = \mathrm{width} \times \mathrm{height} \times \mathrm{colour depth}$$
 
 **Worked example.** A $1920 \times 1080$ image with 24-bit colour:
 
-$$1920 \times 1080 \times 24 = 49766400 \text{ bits} \approx 5.93 \text{ MB}$$
+$$1920 \times 1080 \times 24 = 49766400 \mathrm{ bits} \approx 5.93 \mathrm{ MB}$$
 
 #### Representing Sound
 
@@ -178,7 +178,7 @@ Sound is digitised by sampling the amplitude of an analogue wave at regular inte
 - **Bit depth:** Bits per sample. CD quality: 16-bit.
 - **Channels:** Mono (1) or stereo (2).
 
-$$\text{File size (bits)} = \text{sample rate} \times \text{bit depth} \times \text{duration} \times \text{channels}$$
+$$\mathrm{File size (bits)} = \mathrm{sample rate} \times \mathrm{bit depth} \times \mathrm{duration} \times \mathrm{channels}$$
 
 **Worked Example.** A 2-minute stereo recording at 48000 Hz with 16-bit depth.
 
@@ -273,15 +273,15 @@ This requires: 2 NOT gates, 2 AND gates, 1 OR gate.
 
 **Half adder:** Adds two single bits. Produces sum and carry.
 
-$$\text{Sum} = A \oplus B$$
+$$\mathrm{Sum} = A \oplus B$$
 
-$$\text{Carry} = A \cdot B$$
+$$\mathrm{Carry} = A \cdot B$$
 
 **Full adder:** Adds two bits and a carry-in. Produces sum and carry-out.
 
-$$\text{Sum} = A \oplus B \oplus C_{\text{in}}$$
+$$\mathrm{Sum} = A \oplus B \oplus C_{\mathrm{in}}$$
 
-$$C_{\text{out}} = (A \cdot B) + (C_{\text{in}} \cdot (A \oplus B))$$
+$$C_{\mathrm{out}} = (A \cdot B) + (C_{\mathrm{in}} \cdot (A \oplus B))$$
 
 **Why full adders matter.** A full adder can be chained to add multi-bit numbers. To add two 8-bit
 numbers, chain 8 full adders: the carry-out of each stage becomes the carry-in of the next. The

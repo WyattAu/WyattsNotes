@@ -68,7 +68,7 @@ For **binary operators**, the choice between member and non-member affects impli
 
 Consider a class `Int` with an `explicit` constructor and a member `operator+`:
 
-$$\text{For } \texttt{a + b} \text{ where the left operand is not of class type:}$$
+$$\mathrm{For } \texttt{a + b} \mathrm{ where the left operand is not of class type:}$$
 
 1. Name lookup finds the candidate functions: member `Int::operator+` and non-member `operator+`.
 2. If only a member overload exists, the left operand must undergo implicit conversion to `Int`.

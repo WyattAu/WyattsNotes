@@ -25,12 +25,12 @@ $\sum I = 0$.
 
 **The sum of currents entering a junction equals the sum of currents leaving it.**
 
-$$\sum I_{\text{in}} = \sum I_{\text{out}}$$
+$$\sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}$$
 
 **Derivation from charge conservation.** Charge cannot accumulate at a junction (in steady state).
 The rate of charge flowing in must equal the rate flowing out:
 
-$$\frac{dQ_{\text{in}}}{dt} = \frac{dQ_{\text{out}}}{dt} \implies \sum I_{\text{in}} = \sum I_{\text{out}}$$
+$$\frac{dQ_{\mathrm{in}}}{dt} = \frac{dQ_{\mathrm{out}}}{dt} \implies \sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}$$
 
 $\square$
 
@@ -48,7 +48,7 @@ $$\sum \mathcal{E} = \sum V$$
 energy gained from sources must equal the total energy lost to components. Otherwise, energy would
 be created or destroyed:
 
-$$\frac{W_{\text{gained}}}{Q} = \frac{W_{\text{lost}}}{Q} \implies \sum \mathcal{E} = \sum IR$$
+$$\frac{W_{\mathrm{gained}}}{Q} = \frac{W_{\mathrm{lost}}}{Q} \implies \sum \mathcal{E} = \sum IR$$
 
 $\square$
 
@@ -72,7 +72,7 @@ $$V = I(R_1 + R_2 + \cdots + R_n)$$
 
 The equivalent resistance is:
 
-$$\boxed{R_{\text{series}} = R_1 + R_2 + \cdots + R_n}$$
+$$\boxed{R_{\mathrm{series}} = R_1 + R_2 + \cdots + R_n}$$
 
 ### Parallel Combination
 
@@ -84,13 +84,13 @@ $$I = I_1 + I_2 + \cdots + I_n = \frac{V}{R_1} + \frac{V}{R_2} + \cdots + \frac{
 
 $$I = V\left(\frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}\right)$$
 
-The equivalent resistance satisfies $V/R_{\text{parallel}} = I$:
+The equivalent resistance satisfies $V/R_{\mathrm{parallel}} = I$:
 
-$$\boxed{\frac{1}{R_{\text{parallel}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}}$$
+$$\boxed{\frac{1}{R_{\mathrm{parallel}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}}$$
 
 For two resistors in parallel:
 
-$$R_{\text{parallel}} = \frac{R_1 R_2}{R_1 + R_2}$$
+$$R_{\mathrm{parallel}} = \frac{R_1 R_2}{R_1 + R_2}$$
 
 **Proof.** $\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} = \frac{R_1 + R_2}{R_1 R_2}$, hence
 $R = \frac{R_1 R_2}{R_1 + R_2}$. $\square$
@@ -109,28 +109,28 @@ voltage, determined by the ratio of resistances.
 A **potential divider** consists of two or more resistors in series across a voltage supply. The
 voltage is divided in proportion to the resistances.
 
-For two resistors $R_1$ and $R_2$ in series across supply $V_{\text{in}}$:
+For two resistors $R_1$ and $R_2$ in series across supply $V_{\mathrm{in}}$:
 
-$$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2}$$
+$$V_{\mathrm{out}} = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$$
 
-**Derivation.** The current through both resistors is $I = V_{\text{in}}/(R_1 + R_2)$. The p.d.
+**Derivation.** The current through both resistors is $I = V_{\mathrm{in}}/(R_1 + R_2)$. The p.d.
 across $R_2$ is:
 
-$$V_{\text{out}} = IR_2 = \frac{V_{\text{in}}}{R_1 + R_2} \cdot R_2 = V_{\text{in}} \cdot \frac{R_2}{R_1 + R_2}$$
+$$V_{\mathrm{out}} = IR_2 = \frac{V_{\mathrm{in}}}{R_1 + R_2} \cdot R_2 = V_{\mathrm{in}} \cdot \frac{R_2}{R_1 + R_2}$$
 
 $\square$
 
 ### Potentiometer
 
 A **potentiometer** is a continuous potential divider — a single resistive track with a sliding
-contact. It can provide any output voltage from 0 to $V_{\text{in}}$.
+contact. It can provide any output voltage from 0 to $V_{\mathrm{in}}$.
 
 ### Potential Divider with a Sensor
 
 A thermistor or LDR can replace one resistor, creating a voltage that varies with temperature or
 light intensity:
 
-$$V_{\text{out}} = V_{\text{in}} \cdot \frac{R_{\text{sensor}}}{R_{\text{fixed}} + R_{\text{sensor}}}$$
+$$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac{R_{\mathrm{sensor}}}{R_{\mathrm{fixed}} + R_{\mathrm{sensor}}}$$
 
 :::warning
 Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
@@ -193,21 +193,21 @@ $$r = \frac{V_1 - V_2}{I_2 - I_1}$$
 **Thevenin's Theorem.** Any linear circuit with two terminals can be replaced by an equivalent
 circuit consisting of:
 
-- A single voltage source $V_{\text{Th}}$ (the Thevenin voltage)
-- A single series resistance $R_{\text{Th}}$ (the Thevenin resistance)
+- A single voltage source $V_{\mathrm{Th}}$ (the Thevenin voltage)
+- A single series resistance $R_{\mathrm{Th}}$ (the Thevenin resistance)
 
-### Finding $V_{\text{Th}}$
+### Finding $V_{\mathrm{Th}}$
 
 The Thevenin voltage is the open-circuit voltage between the two terminals (i.e., the voltage when
 nothing is connected across them).
 
-### Finding $R_{\text{Th}}$
+### Finding $R_{\mathrm{Th}}$
 
 The Thevenin resistance is the resistance between the two terminals when all independent voltage
 sources are replaced by short circuits (and current sources by open circuits).
 
 **Intuition.** Thevenin's theorem is powerful because it lets you simplify any complex circuit into
-a simple source-resistor pair. Once you know $V_{\text{Th}}$ and $R_{\text{Th}}$, you can predict
+a simple source-resistor pair. Once you know $V_{\mathrm{Th}}$ and $R_{\mathrm{Th}}$, you can predict
 the behaviour of the circuit for any load.
 
 <details>
@@ -215,11 +215,11 @@ the behaviour of the circuit for any load.
 Find the Thevenin equivalent of a circuit with a 12 V battery in series with two parallel resistors
 $R_1 = 6\,\Omega$ and $R_2 = 3\,\Omega$, across terminals A and B that are across $R_2$.
 
-**Answer.** $V_{\text{Th}}$ = open-circuit voltage across $R_2$ = potential divider:
-$V_{\text{Th}} = 12 \times \frac{3}{6+3} = 4.0$ V.
+**Answer.** $V_{\mathrm{Th}}$ = open-circuit voltage across $R_2$ = potential divider:
+$V_{\mathrm{Th}} = 12 \times \frac{3}{6+3} = 4.0$ V.
 
-$R_{\text{Th}}$ = resistance between A and B with the 12 V source shorted:
-$R_{\text{Th}} = R_1 \| R_2 = \frac{6 \times 3}{6+3} = 2.0$ $\Omega$.
+$R_{\mathrm{Th}}$ = resistance between A and B with the 12 V source shorted:
+$R_{\mathrm{Th}} = R_1 \| R_2 = \frac{6 \times 3}{6+3} = 2.0$ $\Omega$.
 
 The circuit is equivalent to a 4.0 V source with $2.0\,\Omega$ internal resistance.
 
@@ -252,11 +252,11 @@ The p.d. across $R_1$: $V_{R_1} = I_1 R_1$. The p.d. across $R_3$: $V_{R_3} = I_
 
 For the galvanometer p.d. to be zero:
 
-$$I_1 R_1 = I_2 R_3 \quad \text{...(i)}$$
+$$I_1 R_1 = I_2 R_3 \quad \mathrm{...(i)}$$
 
 Similarly, considering the other path:
 
-$$I_1 R_2 = I_2 R_4 \quad \text{...(ii)}$$
+$$I_1 R_2 = I_2 R_4 \quad \mathrm{...(ii)}$$
 
 Dividing (i) by (ii):
 
@@ -311,15 +311,15 @@ short-circuited, current sources open-circuited).
 
 Thevenin and Norton equivalents are related by:
 
-$$I_N = \frac{V_{\text{Th}}}{R_{\text{Th}}}, \qquad R_N = R_{\text{Th}}$$
+$$I_N = \frac{V_{\mathrm{Th}}}{R_{\mathrm{Th}}}, \qquad R_N = R_{\mathrm{Th}}$$
 
-A voltage source $V_{\text{Th}}$ in series with $R_{\text{Th}}$ is equivalent to a current source
+A voltage source $V_{\mathrm{Th}}$ in series with $R_{\mathrm{Th}}$ is equivalent to a current source
 $I_N$ in parallel with $R_N$.
 
-**Proof.** For the Thevenin equivalent: open-circuit voltage $= V_{\text{Th}}$, short-circuit
-current $= V_{\text{Th}}/R_{\text{Th}}$. For the Norton equivalent: short-circuit current $= I_N$,
-open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\text{Th}}/R_{\text{Th}}$ and
-$R_N = R_{\text{Th}}$. $\square$
+**Proof.** For the Thevenin equivalent: open-circuit voltage $= V_{\mathrm{Th}}$, short-circuit
+current $= V_{\mathrm{Th}}/R_{\mathrm{Th}}$. For the Norton equivalent: short-circuit current $= I_N$,
+open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}}$ and
+$R_N = R_{\mathrm{Th}}$. $\square$
 
 :::tip
 Exam Technique Source transformations are useful for simplifying circuits step by step.
@@ -349,7 +349,7 @@ Assign loop currents $I_1$ (loop 1, clockwise) and $I_2$ (loop 2, clockwise).
 
 Expanding:
 
-$$12 = 10I_1 - 6I_2 \quad \text{...(i)}$$ $$6 = -6I_1 + 8I_2 \quad \text{...(ii)}$$
+$$12 = 10I_1 - 6I_2 \quad \mathrm{...(i)}$$ $$6 = -6I_1 + 8I_2 \quad \mathrm{...(ii)}$$
 
 From (i): $I_2 = (10I_1 - 12)/6$.
 
@@ -374,7 +374,7 @@ For a circuit with $b$ branches and $n$ nodes:
 ### Ideal vs Real Instruments
 
 An **ideal voltmeter** has infinite resistance ($R_V \to \infty$) and draws zero current. A **real
-voltmeter** has finite resistance (typically $10\,\text{k}\Omega$ to $10\,\text{M}\Omega$ for
+voltmeter** has finite resistance (typically $10\,\mathrm{k}\Omega$ to $10\,\mathrm{M}\Omega$ for
 digital meters).
 
 An **ideal ammeter** has zero resistance ($R_A \to 0$) and drops zero voltage. A **real ammeter**
@@ -385,39 +385,39 @@ has finite (but small) resistance.
 When a voltmeter of resistance $R_V$ is connected across a resistor $R_2$ in a potential divider,
 the parallel combination changes the circuit:
 
-$$R_{\text{eff}} = \frac{R_2 R_V}{R_2 + R_V}$$
+$$R_{\mathrm{eff}} = \frac{R_2 R_V}{R_2 + R_V}$$
 
 The measured voltage is:
 
-$$V_{\text{measured}} = V_{\text{in}} \cdot \frac{R_{\text{eff}}}{R_1 + R_{\text{eff}}}$$
+$$V_{\mathrm{measured}} = V_{\mathrm{in}} \cdot \frac{R_{\mathrm{eff}}}{R_1 + R_{\mathrm{eff}}}$$
 
-which is always less than the true voltage $V_{\text{true}} = V_{\text{in}} \cdot R_2/(R_1 + R_2)$.
+which is always less than the true voltage $V_{\mathrm{true}} = V_{\mathrm{in}} \cdot R_2/(R_1 + R_2)$.
 
-**Proof that loading always reduces the reading.** Since $R_{\text{eff}} \lt R_2$ (parallel
-resistance is less than the smallest), and $V_{\text{out}}$ is an increasing function of the lower
-resistance in the divider, we have $V_{\text{measured}} \lt V_{\text{true}}$. $\square$
+**Proof that loading always reduces the reading.** Since $R_{\mathrm{eff}} \lt R_2$ (parallel
+resistance is less than the smallest), and $V_{\mathrm{out}}$ is an increasing function of the lower
+resistance in the divider, we have $V_{\mathrm{measured}} \lt V_{\mathrm{true}}$. $\square$
 
 ### Voltmeter Multiplier
 
 To extend the range of a galvanometer (full-scale current $I_g$, internal resistance $R_g$) to
-measure voltage up to $V_{\text{range}}$:
+measure voltage up to $V_{\mathrm{range}}$:
 
 A series "multiplier" resistor $R_s$ is added so that at full scale:
 
-$$V_{\text{range}} = I_g(R_g + R_s)$$
+$$V_{\mathrm{range}} = I_g(R_g + R_s)$$
 
-$$\boxed{R_s = \frac{V_{\text{range}}}{I_g} - R_g}$$
+$$\boxed{R_s = \frac{V_{\mathrm{range}}}{I_g} - R_g}$$
 
 ### Ammeter Shunt
 
-To extend the range of a galvanometer to measure current up to $I_{\text{range}}$:
+To extend the range of a galvanometer to measure current up to $I_{\mathrm{range}}$:
 
-A parallel "shunt" resistor $R_{\text{shunt}}$ diverts excess current so that $I_g$ flows through
+A parallel "shunt" resistor $R_{\mathrm{shunt}}$ diverts excess current so that $I_g$ flows through
 the galvanometer:
 
-$$I_g R_g = (I_{\text{range}} - I_g) R_{\text{shunt}}$$
+$$I_g R_g = (I_{\mathrm{range}} - I_g) R_{\mathrm{shunt}}$$
 
-$$\boxed{R_{\text{shunt}} = \frac{R_g \cdot I_g}{I_{\text{range}} - I_g}}$$
+$$\boxed{R_{\mathrm{shunt}} = \frac{R_g \cdot I_g}{I_{\mathrm{range}} - I_g}}$$
 
 <details>
 <summary>Example: Ammeter Shunt Calculation</summary>
@@ -426,7 +426,7 @@ A galvanometer has $R_g = 50\,\Omega$ and full-scale current $I_g = 1.0$ mA. Cal
 resistance to convert it to a 0--5 A ammeter.
 
 **Answer.**
-$R_{\text{shunt}} = \frac{50 \times 1.0 \times 10^{-3}}{5.0 - 1.0 \times 10^{-3}} = \frac{0.050}{4.999} = 0.0100\,\Omega$.
+$R_{\mathrm{shunt}} = \frac{50 \times 1.0 \times 10^{-3}}{5.0 - 1.0 \times 10^{-3}} = \frac{0.050}{4.999} = 0.0100\,\Omega$.
 
 Note the very small shunt resistance — most current bypasses the galvanometer.
 
@@ -434,8 +434,8 @@ Note the very small shunt resistance — most current bypasses the galvanometer.
 
 :::warning
 Common Pitfall A voltmeter with insufficiently high resistance can significantly alter
-the circuit it is measuring. Always ensure $R_V \gg R_{\text{circuit}}$ (rule of thumb:
-$R_V \gt 10 \times R_{\text{circuit}}$ for less than 10% loading error).
+the circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule of thumb:
+$R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
 :::
 
 ## Problem Set
@@ -458,7 +458,7 @@ $R = 2.0$ $\Omega$.
 A potential divider consists of a 10 k$\Omega$ and a 5.0 k$\Omega$ resistor in series across a 9.0 V
 supply. Calculate the output voltage across the 5.0 k$\Omega$ resistor.
 
-**Answer.** $V_{\text{out}} = 9.0 \times \frac{5.0}{10 + 5.0} = 9.0 \times \frac{1}{3} = 3.0$ V.
+**Answer.** $V_{\mathrm{out}} = 9.0 \times \frac{5.0}{10 + 5.0} = 9.0 \times \frac{1}{3} = 3.0$ V.
 
 <b>If you get this wrong, revise:</b> [Potential Dividers](#3-potential-dividers)
 
@@ -543,9 +543,9 @@ $\mathcal{E} = 6.0 + 1.5(1.71) = 6.0 + 2.57 = 8.57$ V $\approx 8.6$ V.
 Find the Thevenin equivalent of a voltage divider with $R_1 = 8\,\Omega$ and $R_2 = 4\,\Omega$
 across a 24 V supply, with terminals across $R_2$.
 
-**Answer.** $V_{\text{Th}} = 24 \times \frac{4}{8+4} = 24 \times \frac{1}{3} = 8.0$ V.
+**Answer.** $V_{\mathrm{Th}} = 24 \times \frac{4}{8+4} = 24 \times \frac{1}{3} = 8.0$ V.
 
-$R_{\text{Th}} = R_1 \| R_2 = \frac{8 \times 4}{8+4} = \frac{32}{12} = 2.67\,\Omega$.
+$R_{\mathrm{Th}} = R_1 \| R_2 = \frac{8 \times 4}{8+4} = \frac{32}{12} = 2.67\,\Omega$.
 
 <b>If you get this wrong, revise:</b> [Thevenin's Theorem](#5-thevenins-theorem)
 
@@ -558,7 +558,7 @@ a 3 $\Omega$ resistor across a 12 V supply. Calculate: (a) the total resistance,
 from the supply, (c) the p.d. across the parallel combination.
 
 **Answer.** (a) $R_{\parallel} = \frac{6 \times 6}{6+6} = 3\,\Omega$.
-$R_{\text{total}} = 3 + 3 = 6\,\Omega$.
+$R_{\mathrm{total}} = 3 + 3 = 6\,\Omega$.
 
 (b) $I = 12/6 = 2.0$ A.
 
@@ -591,9 +591,9 @@ In the circuit below, find the current through each resistor: $R_1 = 2\,\Omega$ 
 $R_2 = 4\,\Omega$ in parallel, connected in series with $R_3 = 3\,\Omega$, across a 10 V supply.
 
 **Answer.** $R_{\parallel} = \frac{2 \times 4}{2+4} = \frac{8}{6} = 1.33\,\Omega$.
-$R_{\text{total}} = 1.33 + 3 = 4.33\,\Omega$.
+$R_{\mathrm{total}} = 1.33 + 3 = 4.33\,\Omega$.
 
-$I_{\text{total}} = 10/4.33 = 2.31$ A.
+$I_{\mathrm{total}} = 10/4.33 = 2.31$ A.
 
 $V_{\parallel} = 2.31 \times 1.33 = 3.07$ V.
 
@@ -621,15 +621,15 @@ circuit, its resistance should be very low (ideally zero).
 
 <details>
 <summary>Problem 11</summary>
-A potential divider circuit uses a 15 V supply with $R_1 = 10\,\text{k}\Omega$ and a thermistor as
+A potential divider circuit uses a 15 V supply with $R_1 = 10\,\mathrm{k}\Omega$ and a thermistor as
 $R_2$. The thermistor has resistance 2000 $\Omega$ at $25^\circ\mathrm{C}$ and 500 $\Omega$ at $50^\circ\mathrm{C}$. Calculate
-$V_{\text{out}}$ at each temperature.
+$V_{\mathrm{out}}$ at each temperature.
 
 **Answer.** At $25^\circ\mathrm{C}$:
-$V_{\text{out}} = 15 \times \frac{2000}{10000 + 2000} = 15 \times \frac{2}{12} = 2.50$ V.
+$V_{\mathrm{out}} = 15 \times \frac{2000}{10000 + 2000} = 15 \times \frac{2}{12} = 2.50$ V.
 
 At $50^\circ\mathrm{C}$:
-$V_{\text{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{10500} = 0.714$ V.
+$V_{\mathrm{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{10500} = 0.714$ V.
 
 <b>If you get this wrong, revise:</b> [Potential Dividers](#3-potential-dividers)
 
@@ -650,7 +650,7 @@ $R > r$.)
 At $R = r$: $I = \mathcal{E}/(2r)$. Power to load:
 $P = (\mathcal{E}/2r)^2 \cdot r = \mathcal{E}^2/(4r)$. Total power from cell:
 $\mathcal{E} \cdot \mathcal{E}/(2r) = \mathcal{E}^2/(2r)$. Efficiency
-$= P_{\text{load}}/P_{\text{total}} = 1/2 = 50\%$.
+$= P_{\mathrm{load}}/P_{\mathrm{total}} = 1/2 = 50\%$.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
 
@@ -668,9 +668,9 @@ A Wheatstone bridge has $R_1 = 120\,\Omega$, $R_2 = 180\,\Omega$, and $R_3 = 200
 
 <details>
 <summary>Problem 14</summary>
-A circuit has a Thevenin equivalent of $V_{\text{Th}} = 20$ V and $R_{\text{Th}} = 5\,\Omega$. Find the Norton equivalent.
+A circuit has a Thevenin equivalent of $V_{\mathrm{Th}} = 20$ V and $R_{\mathrm{Th}} = 5\,\Omega$. Find the Norton equivalent.
 
-**Answer.** $I_N = V_{\text{Th}}/R_{\text{Th}} = 20/5 = 4.0$ A. $R_N = R_{\text{Th}} = 5\,\Omega$.
+**Answer.** $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}} = 20/5 = 4.0$ A. $R_N = R_{\mathrm{Th}} = 5\,\Omega$.
 
 The Norton equivalent is a 4.0 A current source in parallel with $5\,\Omega$.
 
@@ -680,13 +680,13 @@ The Norton equivalent is a 4.0 A current source in parallel with $5\,\Omega$.
 
 <details>
 <summary>Problem 15</summary>
-A potential divider with $R_1 = 10\,\text{k}\Omega$ and $R_2 = 10\,\text{k}\Omega$ across a 12 V supply is measured with a voltmeter of resistance $R_V = 10\,\text{k}\Omega$ across $R_2$. Calculate the loading error.
+A potential divider with $R_1 = 10\,\mathrm{k}\Omega$ and $R_2 = 10\,\mathrm{k}\Omega$ across a 12 V supply is measured with a voltmeter of resistance $R_V = 10\,\mathrm{k}\Omega$ across $R_2$. Calculate the loading error.
 
-**Answer.** True voltage: $V_{\text{true}} = 12 \times \frac{10}{20} = 6.00$ V.
+**Answer.** True voltage: $V_{\mathrm{true}} = 12 \times \frac{10}{20} = 6.00$ V.
 
-$R_{\text{eff}} = \frac{10 \times 10}{10 + 10} = 5.0\,\text{k}\Omega$.
+$R_{\mathrm{eff}} = \frac{10 \times 10}{10 + 10} = 5.0\,\mathrm{k}\Omega$.
 
-$V_{\text{measured}} = 12 \times \frac{5.0}{10 + 5.0} = 12 \times \frac{1}{3} = 4.00$ V.
+$V_{\mathrm{measured}} = 12 \times \frac{5.0}{10 + 5.0} = 12 \times \frac{1}{3} = 4.00$ V.
 
 Loading error $= \frac{6.00 - 4.00}{6.00} \times 100 = 33.3\%$.
 
@@ -700,7 +700,7 @@ Loading error $= \frac{6.00 - 4.00}{6.00} \times 100 = 33.3\%$.
 A galvanometer has $R_g = 100\,\Omega$ and full-scale deflection at $I_g = 50\,\mu$A. Calculate the multiplier resistance needed to convert it into a voltmeter with range 0--50 V.
 
 **Answer.**
-$R_s = \frac{V_{\text{range}}}{I_g} - R_g = \frac{50}{50 \times 10^{-6}} - 100 = 10^6 - 100 \approx 1.0\,\text{M}\Omega$.
+$R_s = \frac{V_{\mathrm{range}}}{I_g} - R_g = \frac{50}{50 \times 10^{-6}} - 100 = 10^6 - 100 \approx 1.0\,\mathrm{M}\Omega$.
 
 <b>If you get this wrong, revise:</b>
 [Measuring Instruments and Loading Effects](#9-measuring-instruments-and-loading-effects)

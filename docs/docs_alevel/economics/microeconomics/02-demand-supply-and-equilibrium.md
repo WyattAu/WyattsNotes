@@ -36,7 +36,7 @@ consumer solves:
 $$
 \begin{aligned}
 \max_{x,y} \quad & U(x, y) \\
-\text{s.t.} \quad & P_x \cdot x + P_y \cdot y = M
+\mathrm{s.t.} \quad & P_x \cdot x + P_y \cdot y = M
 \end{aligned}
 $$
 
@@ -52,7 +52,7 @@ $$\frac{\partial \mathcal{L}}{\partial y} = \frac{\partial U}{\partial y} - \lam
 
 Therefore:
 
-$$\frac{MU_x}{MU_y} = \frac{P_x}{P_y} \implies \text{MRS}_{xy} = \frac{P_x}{P_y}$$
+$$\frac{MU_x}{MU_y} = \frac{P_x}{P_y} \implies \mathrm{MRS}_{xy} = \frac{P_x}{P_y}$$
 
 This equates the marginal rate of substitution (the consumer's internal valuation) with the price
 ratio (the market's valuation). Solving for $x$ as a function of $P_x$ (holding other parameters
@@ -119,7 +119,7 @@ where $MC(Q) = C'(Q)$ is marginal cost. Second-order condition requires $C''(Q) 
 rising). The **supply curve** of a competitive firm is the portion of its $MC$ curve above the
 average variable cost (AVC) curve.
 
-$$Q_s(P) = MC^{-1}(P) \quad \text{for } P \geq \min AVC$$
+$$Q_s(P) = MC^{-1}(P) \quad \mathrm{for } P \geq \min AVC$$
 
 ### 2.3 Market Supply
 
@@ -183,52 +183,52 @@ allocating resources without central direction. It performs three functions:
 
 We define the **price elasticity of demand** as:
 
-$$\text{PED} = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q_d / Q_d}{\Delta P / P} = \frac{P}{Q_d} \cdot \frac{\Delta Q_d}{\Delta P}$$
+$$\mathrm{PED} = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q_d / Q_d}{\Delta P / P} = \frac{P}{Q_d} \cdot \frac{\Delta Q_d}{\Delta P}$$
 
-Since the demand curve slopes downward, $\text{PED} \lt{} 0$. We often state the _absolute value_
-$|\text{PED}|$.
+Since the demand curve slopes downward, $\mathrm{PED} \lt{} 0$. We often state the _absolute value_
+$|\mathrm{PED}|$.
 
 **Classification:**
 
 | Value                             | Description         | Interpretation               |
 | --------------------------------- | ------------------- | ---------------------------- |
-| $\text{PED} = 0$                  | Perfectly inelastic | Vertical demand curve        |
-| $0 \lt{} \text{PED} \lt{} 1$      | Inelastic           | %$\Delta Q$ &lt; %$\Delta P$ |
-| $\text{PED} = 1$                  | Unit elastic        | %$\Delta Q$ = %$\Delta P$    |
-| $1 \lt{} \text{PED} \lt{} \infty$ | Elastic             | %$\Delta Q$ &gt; %$\Delta P$ |
-| $\text{PED} = \infty$             | Perfectly elastic   | Horizontal demand curve      |
+| $\mathrm{PED} = 0$                  | Perfectly inelastic | Vertical demand curve        |
+| $0 \lt{} \mathrm{PED} \lt{} 1$      | Inelastic           | %$\Delta Q$ &lt; %$\Delta P$ |
+| $\mathrm{PED} = 1$                  | Unit elastic        | %$\Delta Q$ = %$\Delta P$    |
+| $1 \lt{} \mathrm{PED} \lt{} \infty$ | Elastic             | %$\Delta Q$ &gt; %$\Delta P$ |
+| $\mathrm{PED} = \infty$             | Perfectly elastic   | Horizontal demand curve      |
 
 ### 4.2 PED and Total Revenue
 
 **Total revenue** is $TR = P \times Q$.
 
-$$\frac{d(TR)}{dP} = Q + P \cdot \frac{dQ}{dP} = Q\left(1 + \frac{P}{Q} \cdot \frac{dQ}{dP}\right) = Q(1 + \text{PED})$$
+$$\frac{d(TR)}{dP} = Q + P \cdot \frac{dQ}{dP} = Q\left(1 + \frac{P}{Q} \cdot \frac{dQ}{dP}\right) = Q(1 + \mathrm{PED})$$
 
 Since PED < 0:
 
-- If $|\text{PED}| \gt{} 1$ (elastic): $\frac{d(TR)}{dP} \lt{} 0$. Price increase $\Rightarrow$
+- If $|\mathrm{PED}| \gt{} 1$ (elastic): $\frac{d(TR)}{dP} \lt{} 0$. Price increase $\Rightarrow$
   revenue _falls_.
-- If $|\text{PED}| \lt{} 1$ (inelastic): $\frac{d(TR)}{dP} \gt{} 0$. Price increase $\Rightarrow$
+- If $|\mathrm{PED}| \lt{} 1$ (inelastic): $\frac{d(TR)}{dP} \gt{} 0$. Price increase $\Rightarrow$
   revenue _rises_.
-- If $|\text{PED}| = 1$ (unit elastic): $\frac{d(TR)}{dP} = 0$. Revenue is _maximised_.
+- If $|\mathrm{PED}| = 1$ (unit elastic): $\frac{d(TR)}{dP} = 0$. Revenue is _maximised_.
 
-**Proposition: Total revenue is maximised where $|\text{PED}| = 1$.**
+**Proposition: Total revenue is maximised where $|\mathrm{PED}| = 1$.**
 
-_Proof._ We showed $\frac{d(TR)}{dP} = Q(1 + \text{PED})$. Setting $\frac{d(TR)}{dP} = 0$:
-$1 + \text{PED} = 0$, so $\text{PED} = -1$, i.e., $|\text{PED}| = 1$. The second derivative confirms
+_Proof._ We showed $\frac{d(TR)}{dP} = Q(1 + \mathrm{PED})$. Setting $\frac{d(TR)}{dP} = 0$:
+$1 + \mathrm{PED} = 0$, so $\mathrm{PED} = -1$, i.e., $|\mathrm{PED}| = 1$. The second derivative confirms
 this is a maximum (for downward-sloping demand). $\blacksquare$
 
 ### 4.3 PED Varies Along a Linear Demand Curve
 
 **Proposition:** For a linear demand curve $Q = a - bP$, PED varies from $0$ (at the quantity axis)
-to $-\infty$ (at the price axis), with $|\text{PED}| = 1$ at the midpoint.
+to $-\infty$ (at the price axis), with $|\mathrm{PED}| = 1$ at the midpoint.
 
 _Proof._ $P = \frac{a - Q}{b}$, so:
 
-$$\text{PED} = \frac{P}{Q} \cdot \frac{dQ}{dP} = \frac{P}{Q} \cdot (-b) = \frac{-bP}{Q} = \frac{-b(a - Q)/b}{Q} = -\frac{a - Q}{Q} = -\frac{a}{Q} + 1$$
+$$\mathrm{PED} = \frac{P}{Q} \cdot \frac{dQ}{dP} = \frac{P}{Q} \cdot (-b) = \frac{-bP}{Q} = \frac{-b(a - Q)/b}{Q} = -\frac{a - Q}{Q} = -\frac{a}{Q} + 1$$
 
-At the midpoint, $Q = a/2$: $\text{PED} = -\frac{a}{a/2} + 1 = -1$. As $Q \to 0$ (price axis):
-$\text{PED} \to -\infty$ (perfectly elastic). As $Q \to a$ (quantity axis): $\text{PED} \to 0$
+At the midpoint, $Q = a/2$: $\mathrm{PED} = -\frac{a}{a/2} + 1 = -1$. As $Q \to 0$ (price axis):
+$\mathrm{PED} \to -\infty$ (perfectly elastic). As $Q \to a$ (quantity axis): $\mathrm{PED} \to 0$
 (perfectly inelastic). $\blacksquare$
 
 ### 4.4 Determinants of PED
@@ -243,7 +243,7 @@ $\text{PED} \to -\infty$ (perfectly elastic). As $Q \to a$ (quantity axis): $\te
 
 ### 4.5 Income Elasticity of Demand (YED)
 
-$$\text{YED} = \frac{\%\Delta Q_d}{\%\Delta Y} = \frac{\Delta Q_d / Q_d}{\Delta Y / Y}$$
+$$\mathrm{YED} = \frac{\%\Delta Q_d}{\%\Delta Y} = \frac{\Delta Q_d / Q_d}{\Delta Y / Y}$$
 
 | YED         | Type of Good       | Example                            |
 | ----------- | ------------------ | ---------------------------------- |
@@ -253,7 +253,7 @@ $$\text{YED} = \frac{\%\Delta Q_d}{\%\Delta Y} = \frac{\Delta Q_d / Q_d}{\Delta 
 
 ### 4.6 Cross-Price Elasticity of Demand (XED)
 
-$$\text{XED}_{AB} = \frac{\%\Delta Q_A}{\%\Delta P_B}$$
+$$\mathrm{XED}_{AB} = \frac{\%\Delta Q_A}{\%\Delta P_B}$$
 
 | XED     | Relationship | Example            |
 | ------- | ------------ | ------------------ |
@@ -266,7 +266,7 @@ The _magnitude_ of XED indicates the closeness of the relationship — relevant 
 
 ### 4.7 Price Elasticity of Supply (PES)
 
-$$\text{PES} = \frac{\%\Delta Q_s}{\%\Delta P} = \frac{\Delta Q_s / Q_s}{\Delta P / P}$$
+$$\mathrm{PES} = \frac{\%\Delta Q_s}{\%\Delta P} = \frac{\Delta Q_s / Q_s}{\Delta P / P}$$
 
 **Determinants of PES:**
 
@@ -318,7 +318,7 @@ where $P_s(Q)$ is the inverse supply function.
 :::info
 Board-Specific Note Edexcel (9EC0) emphasises elasticity calculations using the midpoint
 (arc elasticity) formula:
-$\text{PED} = \frac{\Delta Q}{\Delta P} \times \frac{(P_1 + P_2)/2}{(Q_1 + Q_2)/2}$. CIE typically
+$\mathrm{PED} = \frac{\Delta Q}{\Delta P} \times \frac{(P_1 + P_2)/2}{(Q_1 + Q_2)/2}$. CIE typically
 uses the point elasticity formula. Check your board's preference.
 :::
 
@@ -344,7 +344,7 @@ $100 - 2P = 20 + 3P \Rightarrow 80 = 5P \Rightarrow P^* = 16$, $Q^* = 68$. CS = 
 
 **Problem 3.** A linear demand curve passes through points $(P, Q) = (10, 50)$ and
 $(P, Q) = (20, 30)$. Calculate PED at each point using the point elasticity formula. At what point
-is $|\text{PED}| = 1$?
+is $|\mathrm{PED}| = 1$?
 
 <details>
 <summary>Hint</summary>
@@ -368,7 +368,7 @@ and producers, and the deadweight loss.
 With tax, supply shifts up: $P_s = P_d - 3$, so $Q_S = 2(P_d - 3) - 30 = 2P_d - 36$. New equilibrium: $120 - P_d = 2P_d - 36 \Rightarrow 156 = 3P_d \Rightarrow P_d = 52$. $P_s = 49$. $Q^* = 68$. Tax burden on consumers: $52 - 50 = 2$ (out of £3). Tax burden on producers: $50 - 49 = 1$. DWL $= \frac{1}{2} \times 3 \times (70 - 68) = 3$.
 </details>
 
-**Problem 6.** Prove that if demand is perfectly inelastic ($\text{PED} = 0$), the full burden of a
+**Problem 6.** Prove that if demand is perfectly inelastic ($\mathrm{PED} = 0$), the full burden of a
 specific tax falls on consumers. Prove that if demand is perfectly elastic, the full burden falls on
 producers.
 
@@ -418,7 +418,7 @@ $P_A = 20$, $P_B = 10$.
 
 <details>
 <summary>Hint</summary>
-$\text{XED}_{BA} = \frac{\partial Q_B / \partial P_A \times P_A}{Q_B}$. $\partial Q_B / \partial P_A = 1$. At $P_A = 20$, $P_B = 10$: $Q_B = 80 - 20 + 20 = 80$. XED $= 1 \times 20/80 = 0.25$. Positive, so $A$ and $B$ are weak substitutes.
+$\mathrm{XED}_{BA} = \frac{\partial Q_B / \partial P_A \times P_A}{Q_B}$. $\partial Q_B / \partial P_A = 1$. At $P_A = 20$, $P_B = 10$: $Q_B = 80 - 20 + 20 = 80$. XED $= 1 \times 20/80 = 0.25$. Positive, so $A$ and $B$ are weak substitutes.
 </details>
 
 **Problem 12.** Evaluate the usefulness of elasticity concepts for government policymakers. In your
@@ -465,7 +465,7 @@ $P^*$ definitely increases. Quantity could increase or decrease depending on whi
 
 **Example.** "The price of coffee rises. Explain the effect on the market for tea."
 
-**Correct analysis.** Coffee and tea are substitutes ($\text{XED} \gt{} 0$). A rise in the price of
+**Correct analysis.** Coffee and tea are substitutes ($\mathrm{XED} \gt{} 0$). A rise in the price of
 coffee shifts the demand curve for tea to the **right** (increase in demand for tea). At the
 original price, there is now excess demand for tea. The price of tea rises, and the quantity of tea
 traded increases. This is a **shift** in the demand curve, not a movement along it.
@@ -510,7 +510,7 @@ increase or decrease depending on the choke price and the extent of the shortage
 The distribution of a tax burden between consumers and producers depends on the **relative price
 elasticities** of demand and supply:
 
-$$\frac{\text{Burden on consumers}}{\text{Burden on producers}} = \frac{|\text{PES}|}{|\text{PED}|}$$
+$$\frac{\mathrm{Burden on consumers}}{\mathrm{Burden on producers}} = \frac{|\mathrm{PES}|}{|\mathrm{PED}|}$$
 
 The more inelastic side bears a greater share of the tax burden.
 
@@ -529,11 +529,11 @@ $P_s = 56.67$. $Q^* = 83.3$.
 
 Consumer burden: $66.67 - 60 = 6.67$ (out of 10). Producer burden: $60 - 56.67 = 3.33$.
 
-Ratio: $6.67/3.33 = 2$. Check: $|\text{PES}| = (dQ_S/dP)(P/Q) = 2(60/90) = 1.33$.
-$|\text{PED}| = (dQ_D/dP)(P/Q) = |-1|(60/90) = 0.67$. Ratio $= 1.33/0.67 = 2$. $\square$
+Ratio: $6.67/3.33 = 2$. Check: $|\mathrm{PES}| = (dQ_S/dP)(P/Q) = 2(60/90) = 1.33$.
+$|\mathrm{PED}| = (dQ_D/dP)(P/Q) = |-1|(60/90) = 0.67$. Ratio $= 1.33/0.67 = 2$. $\square$
 
 Deadweight loss:
-$\text{DWL} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times 10 \times (90 - 83.3) = 33.5$.
+$\mathrm{DWL} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times 10 \times (90 - 83.3) = 33.5$.
 
 ## 12. Income and Cross-Price Elasticity: Applications
 
@@ -597,7 +597,7 @@ in quantity demanded and the effect on total revenue.
 
 <details>
 <summary>Hint</summary>
-$\%\Delta Q_d = \text{PED} \times \%\Delta P = -0.4 \times 10 = -4\%$. Quantity falls by 4%. Since $|\text{PED}| \lt{} 1$ (inelastic), revenue rises. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue increases by 5.6%.
+$\%\Delta Q_d = \mathrm{PED} \times \%\Delta P = -0.4 \times 10 = -4\%$. Quantity falls by 4%. Since $|\mathrm{PED}| \lt{} 1$ (inelastic), revenue rises. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue increases by 5.6%.
 </details>
 
 **Problem 3.** The government imposes a $£5$ per unit tax on a good with demand $Q_D = 100 - P$ and
@@ -614,7 +614,7 @@ demand elastic or inelastic?
 
 <details>
 <summary>Hint</summary>
-Original quantity $= 200/10 = 20$. PED (midpoint) $= \frac{(15-20)/17.5}{(12-10)/11} = \frac{-0.286}{0.182} = -1.57$. $|\text{PED}| \gt{} 1$, so demand is elastic.
+Original quantity $= 200/10 = 20$. PED (midpoint) $= \frac{(15-20)/17.5}{(12-10)/11} = \frac{-0.286}{0.182} = -1.57$. $|\mathrm{PED}| \gt{} 1$, so demand is elastic.
 </details>
 
 **Problem 5.** Demand for electric cars is $Q_D = 50 + 0.5Y - 3P$ where $Y$ is income. When $Y = 40$

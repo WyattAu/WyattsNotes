@@ -183,7 +183,7 @@ When determining a physical quantity from the gradient of a straight-line graph:
 2. Draw the **worst acceptable line** (the steepest/shallowest line consistent with the error bars).
 3. The uncertainty in the gradient is:
 
-$$\Delta m = \frac{|m_{\text{best}} - m_{\text{worst}}|}{2}$$
+$$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
 
 ### Error Bars
 
@@ -263,9 +263,9 @@ The period of a pendulum is given by $T = 2\pi\sqrt{L/g}$. A student plots $T^2$
 obtains a gradient of $4.05$ s$^2$ m$^{-1}$ with an uncertainty of $\pm 0.10$ s$^2$ m$^{-1}$.
 Calculate $g$ and its uncertainty.
 
-**Answer.** $g = 4\pi^2/\text{gradient} = 39.48/4.05 = 9.75$ m s$^{-2}$.
+**Answer.** $g = 4\pi^2/\mathrm{gradient} = 39.48/4.05 = 9.75$ m s$^{-2}$.
 
-$\Delta g/g = \Delta(\text{gradient})/\text{gradient} = 0.10/4.05 = 0.0247 = 2.5\%$.
+$\Delta g/g = \Delta(\mathrm{gradient})/\mathrm{gradient} = 0.10/4.05 = 0.0247 = 2.5\%$.
 $\Delta g = 9.75 \times 0.025 = 0.24$ m s$^{-2}$.
 
 Result: $g = 9.75 \pm 0.24$ m s$^{-2}$.
@@ -383,7 +383,7 @@ For the first row: $\Delta T^2 = 2 \times (0.03/1.26) \times 1.59 = 0.076 \appro
 From a line of best fit through $(L, T^2)$, the gradient is $m = 4.08$ s$^2$ m$^{-1}$. The worst
 acceptable line gives $m = 3.95$ s$^2$ m$^{-1}$.
 
-$$g = \frac{4\pi^2}{m} = \frac{39.48}{4.08} = 9.68 \text{ m s}^{-2}$$
+$$g = \frac{4\pi^2}{m} = \frac{39.48}{4.08} = 9.68 \mathrm{ m s}^{-2}$$
 
 Uncertainty in the gradient: $\Delta m = (4.08 - 3.95)/2 = 0.065$ s$^2$ m$^{-1}$.
 
@@ -391,7 +391,7 @@ Since $g = 4\pi^2 / m$ and $g \propto 1/m$:
 
 $$\frac{\Delta g}{g} = \frac{\Delta m}{m} = \frac{0.065}{4.08} = 0.016 = 1.6\%$$
 
-$$\Delta g = 9.68 \times 0.016 = 0.15 \text{ m s}^{-2}$$
+$$\Delta g = 9.68 \times 0.016 = 0.15 \mathrm{ m s}^{-2}$$
 
 Result: $g = 9.68 \pm 0.15$ m s$^{-2}$, which is consistent with the accepted value of $9.81$ m
 s$^{-2}$.
@@ -490,7 +490,7 @@ point's error bar does not overlap with the line of best fit, either:
 The worst acceptable line is the steepest (or shallowest) straight line that still passes through
 all the error bars. The uncertainty in the gradient is:
 
-$$\Delta m = \frac{|m_{\text{best}} - m_{\text{worst}}|}{2}$$
+$$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
 
 :::warning
 Common Pitfall When error bars are not shown on a graph, examiners typically assume the

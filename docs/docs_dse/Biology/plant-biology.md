@@ -20,24 +20,24 @@ for nearly all life on Earth.
 
 **Overall equation:**
 
-$$6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow{\text{light, chlorophyll}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$$
+$$6\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{light, chlorophyll}} \mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2$$
 
-This is a redox process: $\text{CO}_2$ is reduced to glucose (gain of electrons), and
-$\text{H}_2\text{O}$ is oxidised to $\text{O}_2$ (loss of electrons).
+This is a redox process: $\mathrm{CO}_2$ is reduced to glucose (gain of electrons), and
+$\mathrm{H}_2\mathrm{O}$ is oxidised to $\mathrm{O}_2$ (loss of electrons).
 
 ### Leaf Structure and Adaptations
 
 The leaf is the primary photosynthetic organ. Its structure is optimised for maximising light
-absorption, $\text{CO}_2$ uptake, and water exchange.
+absorption, $\mathrm{CO}_2$ uptake, and water exchange.
 
 | Structure          | Adaptation for Photosynthesis                                                                        |
 | ------------------ | ---------------------------------------------------------------------------------------------------- |
 | Large surface area | Maximises light absorption                                                                           |
-| Thin and flat      | Short diffusion distance for $\text{CO}_2$ and light                                                 |
+| Thin and flat      | Short diffusion distance for $\mathrm{CO}_2$ and light                                                 |
 | Waxy cuticle       | Reduces water loss by evaporation                                                                    |
 | Palisade mesophyll | Densely packed cells at the top of the leaf; rich in chloroplasts; main site of photosynthesis       |
-| Spongy mesophyll   | Loosely packed with air spaces; facilitates gas exchange ($\text{CO}_2$ diffusion to palisade cells) |
-| Stomata            | Pores in the lower epidermis; allow $\text{CO}_2$ to enter and $\text{O}_2$ to exit                  |
+| Spongy mesophyll   | Loosely packed with air spaces; facilitates gas exchange ($\mathrm{CO}_2$ diffusion to palisade cells) |
+| Stomata            | Pores in the lower epidermis; allow $\mathrm{CO}_2$ to enter and $\mathrm{O}_2$ to exit                  |
 | Veins (xylem)      | Supply water to mesophyll cells                                                                      |
 | Veins (phloem)     | Transport sugars (products of photosynthesis) away from the leaf                                     |
 | Chloroplasts       | Contain chlorophyll and other pigments; site of the light-dependent and light-independent reactions  |
@@ -54,10 +54,10 @@ absorption, $\text{CO}_2$ uptake, and water exchange.
 
 **Location:** Thylakoid membranes of the chloroplast.
 
-**Requirements:** Light energy, water ($\text{H}_2\text{O}$), $\text{NADP}^+$, ADP, inorganic
-phosphate ($\text{P}_i$).
+**Requirements:** Light energy, water ($\mathrm{H}_2\mathrm{O}$), $\mathrm{NADP}^+$, ADP, inorganic
+phosphate ($\mathrm{P}_i$).
 
-**Products:** ATP, NADPH, $\text{O}_2$ (waste product).
+**Products:** ATP, NADPH, $\mathrm{O}_2$ (waste product).
 
 **Process:**
 
@@ -68,66 +68,66 @@ phosphate ($\text{P}_i$).
 2. **Photolysis of water:** The excited electron leaves P680, creating a positive charge. Water
    molecules are split by the enzyme water-splitting complex to replace the electron:
 
-$$2\text{H}_2\text{O} \to 4\text{H}^+ + 4e^- + \text{O}_2$$
+$$2\mathrm{H}_2\mathrm{O} \to 4\mathrm{H}^+ + 4e^- + \mathrm{O}_2$$
 
-The $\text{O}_2$ is released as a by-product. This is the source of atmospheric oxygen.
+The $\mathrm{O}_2$ is released as a by-product. This is the source of atmospheric oxygen.
 
 3. **Electron transport chain (ETC):** The high-energy electron passes through a series of electron
    carriers embedded in the thylakoid membrane (plastoquinone, cytochrome b6f complex,
    plastocyanin). As electrons move through the chain, energy is released and used to pump
-   $\text{H}^+$ ions from the stroma into the thylakoid lumen, creating a proton gradient.
+   $\mathrm{H}^+$ ions from the stroma into the thylakoid lumen, creating a proton gradient.
 
-4. **Chemiosmosis:** $\text{H}^+$ ions accumulate in the thylakoid lumen, creating a proton gradient
-   (electrochemical gradient). $\text{H}^+$ ions flow back into the stroma through ATP synthase,
-   driving the synthesis of ATP from ADP and $\text{P}_i$. This is called **photophosphorylation**.
+4. **Chemiosmosis:** $\mathrm{H}^+$ ions accumulate in the thylakoid lumen, creating a proton gradient
+   (electrochemical gradient). $\mathrm{H}^+$ ions flow back into the stroma through ATP synthase,
+   driving the synthesis of ATP from ADP and $\mathrm{P}_i$. This is called **photophosphorylation**.
 
 5. **Photoexcitation of Photosystem I (PSI):** Light energy excites another electron in PSI (P700).
    The electron from PSII replaces the electron lost by P700.
 
 6. **NADP$^+$ reduction:** The excited electron from PSI, along with a proton from the stroma,
-   reduces $\text{NADP}^+$ to NADPH via the enzyme ferredoxin-NADP$^+$ reductase (FNR).
+   reduces $\mathrm{NADP}^+$ to NADPH via the enzyme ferredoxin-NADP$^+$ reductase (FNR).
 
 **Summary equation for light-dependent reactions:**
 
-$$2\text{H}_2\text{O} + 2\text{NADP}^+ + 3\text{ADP} + 3\text{P}_i \xrightarrow{\text{light}} 2\text{NADPH} + 3\text{ATP} + \text{O}_2$$
+$$2\mathrm{H}_2\mathrm{O} + 2\mathrm{NADP}^+ + 3\mathrm{ADP} + 3\mathrm{P}_i \xrightarrow{\mathrm{light}} 2\mathrm{NADPH} + 3\mathrm{ATP} + \mathrm{O}_2$$
 
 ### Light-Independent Reactions (Calvin Cycle)
 
 **Location:** Stroma of the chloroplast.
 
-**Requirements:** $\text{CO}_2$, ATP, NADPH (produced by the light-dependent reactions).
+**Requirements:** $\mathrm{CO}_2$, ATP, NADPH (produced by the light-dependent reactions).
 
 **Products:** Triose phosphate (G3P, a 3-carbon sugar), which is used to make glucose and other
 organic compounds.
 
 **Process:**
 
-1. **Carbon fixation:** $\text{CO}_2$ diffuses into the leaf through stomata and enters the
+1. **Carbon fixation:** $\mathrm{CO}_2$ diffuses into the leaf through stomata and enters the
    chloroplast stroma. The enzyme **RuBisCO** (ribulose-1,5-bisphosphate carboxylase/oxygenase)
-   catalyses the reaction between $\text{CO}_2$ and ribulose-1,5-bisphosphate (RuBP, a 5-carbon
+   catalyses the reaction between $\mathrm{CO}_2$ and ribulose-1,5-bisphosphate (RuBP, a 5-carbon
    compound):
 
-$$\text{CO}_2 + \text{RuBP (5C)} \to \text{Unstable 6C intermediate} \to 2 \times \text{GP (glycerate-3-phosphate, 3C)}$$
+$$\mathrm{CO}_2 + \mathrm{RuBP (5C)} \to \mathrm{Unstable 6C intermediate} \to 2 \times \mathrm{GP (glycerate-3-phosphate, 3C)}$$
 
 2. **Reduction:** GP is reduced to triose phosphate (TP, also called G3P) using ATP and NADPH from
    the light-dependent reactions:
 
-$$\text{GP} + \text{ATP} + \text{NADPH} \to \text{TP} + \text{NADP}^+ + \text{ADP} + \text{P}_i$$
+$$\mathrm{GP} + \mathrm{ATP} + \mathrm{NADPH} \to \mathrm{TP} + \mathrm{NADP}^+ + \mathrm{ADP} + \mathrm{P}_i$$
 
-3. **Regeneration of RuBP:** For every 6 $\text{CO}_2$ molecules fixed, 12 molecules of TP are
+3. **Regeneration of RuBP:** For every 6 $\mathrm{CO}_2$ molecules fixed, 12 molecules of TP are
    produced. Of these, 10 molecules of TP (total 30 carbons) are used to regenerate 6 molecules of
    RuBP (total 30 carbons), consuming 6 ATP. The remaining 2 molecules of TP (total 6 carbons) are
    the net product and can be used to make one molecule of glucose (6C):
 
-$$2 \times \text{TP (3C each)} \to \text{Glucose (6C)}$$
+$$2 \times \mathrm{TP (3C each)} \to \mathrm{Glucose (6C)}$$
 
 **Net equation for the Calvin cycle (per 3 turns):**
 
-$$3\text{CO}_2 + 9\text{ATP} + 6\text{NADPH} \to \text{TP} + 9\text{ADP} + 8\text{P}_i + 6\text{NADP}^+$$
+$$3\mathrm{CO}_2 + 9\mathrm{ATP} + 6\mathrm{NADPH} \to \mathrm{TP} + 9\mathrm{ADP} + 8\mathrm{P}_i + 6\mathrm{NADP}^+$$
 
 **Per glucose (6 turns):**
 
-$$6\text{CO}_2 + 18\text{ATP} + 12\text{NADPH} \to \text{C}_6\text{H}_{12}\text{O}_6 + 18\text{ADP} + 18\text{P}_i + 12\text{NADP}^+$$
+$$6\mathrm{CO}_2 + 18\mathrm{ATP} + 12\mathrm{NADPH} \to \mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 18\mathrm{ADP} + 18\mathrm{P}_i + 12\mathrm{NADP}^+$$
 
 ### Limiting Factors of Photosynthesis
 
@@ -137,23 +137,23 @@ process at any given time. The rate of photosynthesis is determined by the slowe
 | Factor                      | Effect on Rate                                                                                                  |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Light intensity             | Increases rate up to a plateau (light saturation point); beyond this, another factor is limiting                |
-| $\text{CO}_2$ concentration | Increases rate up to a plateau; low $\text{CO}_2$ limits carbon fixation by RuBisCO                             |
+| $\mathrm{CO}_2$ concentration | Increases rate up to a plateau; low $\mathrm{CO}_2$ limits carbon fixation by RuBisCO                             |
 | Temperature                 | Increases rate up to the optimum (approximately 25-30 degrees C for most plants); beyond this, enzymes denature |
-| Water availability          | Severe water shortage closes stomata, reducing $\text{CO}_2$ uptake; usually not limiting except in drought     |
+| Water availability          | Severe water shortage closes stomata, reducing $\mathrm{CO}_2$ uptake; usually not limiting except in drought     |
 
 **Interpreting limiting factor graphs:**
 
-- On a graph of photosynthetic rate vs light intensity at two different $\text{CO}_2$
-  concentrations, the curve with higher $\text{CO}_2$ plateaus at a higher rate. At low light
+- On a graph of photosynthetic rate vs light intensity at two different $\mathrm{CO}_2$
+  concentrations, the curve with higher $\mathrm{CO}_2$ plateaus at a higher rate. At low light
   intensity, both curves rise at the same rate (light is the limiting factor). At higher light
-  intensity, the curves diverge ($\text{CO}_2$ becomes limiting for the lower curve).
+  intensity, the curves diverge ($\mathrm{CO}_2$ becomes limiting for the lower curve).
 - On a graph of rate vs temperature, the rate increases to an optimum then drops sharply. The drop
   is due to denaturation of RuBisCO and other Calvin cycle enzymes.
 
 :::info
 At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
-can bind $\text{O}_2$ instead of $\text{CO}_2$ (oxygenase activity), which does not produce glucose
-and wastes energy. This is more significant at high temperatures and low $\text{CO}_2$
+can bind $\mathrm{O}_2$ instead of $\mathrm{CO}_2$ (oxygenase activity), which does not produce glucose
+and wastes energy. This is more significant at high temperatures and low $\mathrm{CO}_2$
 concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration.
 :::
 
@@ -179,7 +179,7 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 
 **Opening:**
 
-1. Light stimulates guard cells to actively transport $\text{K}^+$ ions into the cell
+1. Light stimulates guard cells to actively transport $\mathrm{K}^+$ ions into the cell
 2. This lowers the water potential inside the guard cell
 3. Water enters by osmosis from neighbouring epidermal cells
 4. The guard cell becomes turgid and swells
@@ -188,7 +188,7 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 **Closing:**
 
 1. Abscisic acid (ABA) is produced in response to water stress
-2. $\text{K}^+$ ions leave the guard cell; water follows by osmosis
+2. $\mathrm{K}^+$ ions leave the guard cell; water follows by osmosis
 3. The guard cell becomes flaccid
 4. The guard cells collapse together, closing the stoma
 
@@ -197,7 +197,7 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 | Factor        | Effect                                                                        |
 | ------------- | ----------------------------------------------------------------------------- |
 | Light         | Opens stomata (blue light is particularly effective via blue-light receptors) |
-| $\text{CO}_2$ | High $\text{CO}_2$ closes stomata; low $\text{CO}_2$ opens them               |
+| $\mathrm{CO}_2$ | High $\mathrm{CO}_2$ closes stomata; low $\mathrm{CO}_2$ opens them               |
 | Temperature   | Moderate warmth opens stomata; extreme heat may close them (water stress)     |
 | Water supply  | Abundant water keeps stomata open; drought causes closure via ABA             |
 | Time of day   | Most plants open stomata during the day and close at night (circadian rhythm) |
@@ -205,17 +205,17 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 
 ### Gas Exchange Through Stomata
 
-During the day, photosynthesis is occurring and $\text{CO}_2$ is being consumed. The concentration
-of $\text{CO}_2$ inside the leaf is lower than in the atmosphere, so $\text{CO}_2$ diffuses in
-through the stomata. $\text{O}_2$, produced as a by-product of photolysis, diffuses out through the
+During the day, photosynthesis is occurring and $\mathrm{CO}_2$ is being consumed. The concentration
+of $\mathrm{CO}_2$ inside the leaf is lower than in the atmosphere, so $\mathrm{CO}_2$ diffuses in
+through the stomata. $\mathrm{O}_2$, produced as a by-product of photolysis, diffuses out through the
 stomata.
 
-$$\text{CO}_2 \text{ (atmosphere)} \to \text{stomata} \to \text{air spaces} \to \text{mesophyll cells} \to \text{chloroplasts}$$
+$$\mathrm{CO}_2 \mathrm{ (atmosphere)} \to \mathrm{stomata} \to \mathrm{air spaces} \to \mathrm{mesophyll cells} \to \mathrm{chloroplasts}$$
 
-$$\text{O}_2 \text{ (chloroplasts)} \to \text{mesophyll cells} \to \text{air spaces} \to \text{stomata} \to \text{atmosphere}$$
+$$\mathrm{O}_2 \mathrm{ (chloroplasts)} \to \mathrm{mesophyll cells} \to \mathrm{air spaces} \to \mathrm{stomata} \to \mathrm{atmosphere}$$
 
 At night, when photosynthesis stops but respiration continues, the direction of gas exchange
-reverses: the plant takes in $\text{O}_2$ and releases $\text{CO}_2$.
+reverses: the plant takes in $\mathrm{O}_2$ and releases $\mathrm{CO}_2$.
 
 ---
 
@@ -254,7 +254,7 @@ Xylem tissue consists of several cell types:
 primarily through the stomata of leaves.
 
 Transpiration is NOT simply "water loss." It is a consequence of gas exchange -- stomata must be
-open for $\text{CO}_2$ uptake during photosynthesis, and water vapour inevitably diffuses out
+open for $\mathrm{CO}_2$ uptake during photosynthesis, and water vapour inevitably diffuses out
 through the same open stomata.
 
 **Factors affecting the rate of transpiration:**
@@ -474,9 +474,9 @@ After a pollen grain lands on a compatible stigma, the following sequence occurs
    haploid) to form the triploid endosperm (3n). The endosperm is a nutritive tissue that provides
    food for the developing embryo.
 
-$$\text{Male gamete (n)} + \text{Egg cell (n)} \to \text{Zygote (2n)}$$
+$$\mathrm{Male gamete (n)} + \mathrm{Egg cell (n)} \to \mathrm{Zygote (2n)}$$
 
-$$\text{Male gamete (n)} + 2 \times \text{Polar nuclei (n + n)} \to \text{Endosperm (3n)}$$
+$$\mathrm{Male gamete (n)} + 2 \times \mathrm{Polar nuclei (n + n)} \to \mathrm{Endosperm (3n)}$$
 
 #### Seed and Fruit Formation
 
@@ -603,7 +603,7 @@ NAA (naphthaleneacetic acid).
 **Effects of auxins:**
 
 1. **Cell elongation:** Auxins stimulate cell elongation in shoots by:
-   - Activating proton pumps ($\text{H}^+$-ATPases) in the cell membrane, pumping $\text{H}^+$ into
+   - Activating proton pumps ($\mathrm{H}^+$-ATPases) in the cell membrane, pumping $\mathrm{H}^+$ into
      the cell wall
    - Lowering pH in the cell wall activates enzymes (expansins) that break cross-links between
      cellulose microfibrils
@@ -706,7 +706,7 @@ towards light but roots bend away from it when auxin redistributes.
    directly expended on water movement through the xylem.
 
 3. **Writing that transpiration is "wasteful":** Transpiration is a necessary consequence of gas
-   exchange. Stomata must be open for $\text{CO}_2$ uptake, and water vapour inevitably escapes.
+   exchange. Stomata must be open for $\mathrm{CO}_2$ uptake, and water vapour inevitably escapes.
    Transpiration also has benefits: it provides evaporative cooling, drives the transpiration stream
    (and thus mineral transport), and maintains turgor.
 

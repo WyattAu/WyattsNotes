@@ -20,15 +20,15 @@ invalidation rules, and algorithm compatibility constraints.
 The C++ standard defines six **iterator categories** [N4950 §25.3], forming a refinement hierarchy:
 
 $$
-\text{input} \subset \text{forward} \subset \text{bidirectional} \subset \text{random-access}
+\mathrm{input} \subset \mathrm{forward} \subset \mathrm{bidirectional} \subset \mathrm{random-access}
 $$
 
 $$
-\text{output} \quad (\text{not comparable with input})
+\mathrm{output} \quad (\mathrm{not comparable with input})
 $$
 
 $$
-\text{contiguous} \subset \text{random-access}
+\mathrm{contiguous} \subset \mathrm{random-access}
 $$
 
 Each category adds capabilities:

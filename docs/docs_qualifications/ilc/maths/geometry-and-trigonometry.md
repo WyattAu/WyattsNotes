@@ -232,9 +232,9 @@ For a right-angled triangle with angle $\theta$:
 
 | Ratio        | Definition                                  |
 | ------------ | ------------------------------------------- |
-| $\sin\theta$ | $\frac{\text{opposite}}{\text{hypotenuse}}$ |
-| $\cos\theta$ | $\frac{\text{adjacent}}{\text{hypotenuse}}$ |
-| $\tan\theta$ | $\frac{\text{opposite}}{\text{adjacent}}$   |
+| $\sin\theta$ | $\frac{\mathrm{opposite}}{\mathrm{hypotenuse}}$ |
+| $\cos\theta$ | $\frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}$ |
+| $\tan\theta$ | $\frac{\mathrm{opposite}}{\mathrm{adjacent}}$   |
 
 ### The Unit Circle (OL/HL)
 
@@ -505,7 +505,7 @@ $A = \frac{1}{2} \times b \times h = \frac{1}{2}ab\sin C$.
 **Example (HL):** In $\triangle ABC$, $a = 8$, $b = 6$, and $C = 50^\circ$. Find the area.
 
 $$
-A = \frac{1}{2}(8)(6)\sin 50° = 24 \times 0.766 = 18.39 \text{ square units}
+A = \frac{1}{2}(8)(6)\sin 50° = 24 \times 0.766 = 18.39 \mathrm{ square units}
 $$
 
 ### R-Addition Formula (HL)
@@ -615,7 +615,7 @@ Since the scalar triple product is $-16 \neq 0$, the vectors are not coplanar.
 The area of triangle $\triangle ABC$ with position vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$:
 
 $$
-\text{Area} = \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}|
+\mathrm{Area} = \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}|
 $$
 
 where $\overrightarrow{AB} = \mathbf{b} - \mathbf{a}$ and

@@ -15,7 +15,7 @@ $6.022 \times 10^{23}$ elementary entities (atoms, molecules, ions, etc.).
 ### Avogadro's Constant
 
 $$
-N_A = 6.022 \times 10^{23}\text{ mol}^{-1}
+N_A = 6.022 \times 10^{23}\mathrm{ mol}^{-1}
 $$
 
 The number of particles $N$ in $n$ moles:
@@ -26,7 +26,7 @@ $$
 
 ### Molar Mass
 
-The **molar mass** $M$ is the mass of one mole of a substance, expressed in $\text{g/mol}$.
+The **molar mass** $M$ is the mass of one mole of a substance, expressed in $\mathrm{g/mol}$.
 
 $$
 n = \frac{m}{M}
@@ -49,14 +49,14 @@ where $m$ is the mass in grams.
 
 :::info[Example]
 
-Calculate the number of molecules in $5.0\text{ g}$ of water.
+Calculate the number of molecules in $5.0\mathrm{ g}$ of water.
 
 $$
-n = \frac{m}{M} = \frac{5.0}{18.02} = 0.278\text{ mol}
+n = \frac{m}{M} = \frac{5.0}{18.02} = 0.278\mathrm{ mol}
 $$
 
 $$
-N = 0.278 \times 6.022 \times 10^{23} = 1.67 \times 10^{23}\text{ molecules}
+N = 0.278 \times 6.022 \times 10^{23} = 1.67 \times 10^{23}\mathrm{ molecules}
 $$
 
 :::
@@ -74,7 +74,7 @@ The **empirical formula** gives the simplest whole-number ratio of atoms in a co
 The **molecular formula** gives the actual number of atoms of each element in a molecule.
 
 $$
-\text{Molecular formula} = (\text{Empirical formula})_n
+\mathrm{Molecular formula} = (\mathrm{Empirical formula})_n
 $$
 
 where $n$ is an integer.
@@ -100,7 +100,7 @@ empirical formula.
 
 Empirical formula: CH$_2$O.
 
-If the molar mass is $180\text{ g/mol}$, the molecular formula is:
+If the molar mass is $180\mathrm{ g/mol}$, the molecular formula is:
 
 $$
 n = \frac{180}{30.03} = 6
@@ -124,17 +124,17 @@ To find the number of water molecules:
 
 :::info[Example]
 
-$12.5\text{ g}$ of hydrated copper(II) sulfate, CuSO$_4$$\cdot$xH$_2$O, is heated to give
-$8.0\text{ g}$ of anhydrous CuSO$_4$. Find $x$.
+$12.5\mathrm{ g}$ of hydrated copper(II) sulfate, CuSO$_4$$\cdot$xH$_2$O, is heated to give
+$8.0\mathrm{ g}$ of anhydrous CuSO$_4$. Find $x$.
 
-Mass of water lost $= 12.5 - 8.0 = 4.5\text{ g}$.
-
-$$
-n(\text{CuSO}_4) = \frac{8.0}{159.61} = 0.0501\text{ mol}
-$$
+Mass of water lost $= 12.5 - 8.0 = 4.5\mathrm{ g}$.
 
 $$
-n(\text{H}_2\text{O}) = \frac{4.5}{18.02} = 0.250\text{ mol}
+n(\mathrm{CuSO}_4) = \frac{8.0}{159.61} = 0.0501\mathrm{ mol}
+$$
+
+$$
+n(\mathrm{H}_2\mathrm{O}) = \frac{4.5}{18.02} = 0.250\mathrm{ mol}
 $$
 
 $$
@@ -211,24 +211,24 @@ the maximum amount of product formed.
 
 :::info[Example]
 
-$5.0\text{ g}$ of iron reacts with $3.0\text{ g}$ of sulfur: Fe + S $\to$ FeS.
+$5.0\mathrm{ g}$ of iron reacts with $3.0\mathrm{ g}$ of sulfur: Fe + S $\to$ FeS.
 
 $$
-n(\text{Fe}) = \frac{5.0}{55.85} = 0.0895\text{ mol}
+n(\mathrm{Fe}) = \frac{5.0}{55.85} = 0.0895\mathrm{ mol}
 $$
 
 $$
-n(\text{S}) = \frac{3.0}{32.07} = 0.0936\text{ mol}
+n(\mathrm{S}) = \frac{3.0}{32.07} = 0.0936\mathrm{ mol}
 $$
 
 Stoichiometric ratio is 1:1, so Fe is the limiting reagent (fewer moles).
 
 $$
-n(\text{FeS}) = 0.0895\text{ mol}
+n(\mathrm{FeS}) = 0.0895\mathrm{ mol}
 $$
 
 $$
-m(\text{FeS}) = 0.0895 \times 87.91 = 7.87\text{ g}
+m(\mathrm{FeS}) = 0.0895 \times 87.91 = 7.87\mathrm{ g}
 $$
 
 :::
@@ -236,15 +236,15 @@ $$
 ### Percentage Yield
 
 $$
-\text{Percentage yield} = \frac{\text{actual yield}}{\text{theoretical yield}} \times 100\%
+\mathrm{Percentage yield} = \frac{\mathrm{actual yield}}{\mathrm{theoretical yield}} \times 100\%
 $$
 
 :::info[Example]
 
-If $6.5\text{ g}$ of FeS was actually produced in the previous example:
+If $6.5\mathrm{ g}$ of FeS was actually produced in the previous example:
 
 $$
-\text{Percentage yield} = \frac{6.5}{7.87} \times 100\% = 82.6\%
+\mathrm{Percentage yield} = \frac{6.5}{7.87} \times 100\% = 82.6\%
 $$
 
 :::
@@ -298,30 +298,30 @@ where:
 - $P$ = pressure (Pa)
 - $V$ = volume (m$^3$)
 - $n$ = number of moles
-- $R$ = universal gas constant $= 8.314\text{ J/(mol}\cdot\text{K)}$
+- $R$ = universal gas constant $= 8.314\mathrm{ J/(mol}\cdot\mathrm{K)}$
 - $T$ = temperature (K)
 
 ### Molar Volume
 
-At STP ($0\degree\text{C}$, $100\text{ kPa}$), one mole of any ideal gas occupies $22.7\text{ L}$.
+At STP ($0\degree\mathrm{C}$, $100\mathrm{ kPa}$), one mole of any ideal gas occupies $22.7\mathrm{ L}$.
 
-At RTP ($25\degree\text{C}$, $100\text{ kPa}$), one mole occupies $24.8\text{ L}$.
+At RTP ($25\degree\mathrm{C}$, $100\mathrm{ kPa}$), one mole occupies $24.8\mathrm{ L}$.
 
 :::info[Example]
 
-Calculate the volume occupied by $2.5\text{ mol}$ of gas at $25\degree\text{C}$ and
-$1.2\text{ atm}$.
+Calculate the volume occupied by $2.5\mathrm{ mol}$ of gas at $25\degree\mathrm{C}$ and
+$1.2\mathrm{ atm}$.
 
 $$
-P = 1.2 \times 101325 = 121590\text{ Pa}
-$$
-
-$$
-T = 298\text{ K}
+P = 1.2 \times 101325 = 121590\mathrm{ Pa}
 $$
 
 $$
-V = \frac{nRT}{P} = \frac{2.5 \times 8.314 \times 298}{121590} = \frac{6194.2}{121590} = 0.0509\text{ m}^3 = 50.9\text{ L}
+T = 298\mathrm{ K}
+$$
+
+$$
+V = \frac{nRT}{P} = \frac{2.5 \times 8.314 \times 298}{121590} = \frac{6194.2}{121590} = 0.0509\mathrm{ m}^3 = 50.9\mathrm{ L}
 $$
 
 :::
@@ -362,39 +362,39 @@ $$
 c = \frac{n}{V}
 $$
 
-where $c$ is in $\text{mol/L}$ (or M), $n$ in mol, and $V$ in L.
+where $c$ is in $\mathrm{mol/L}$ (or M), $n$ in mol, and $V$ in L.
 
 #### Molality
 
 $$
-b = \frac{n_{\text{solute}}}{m_{\text{solvent}}}
+b = \frac{n_{\mathrm{solute}}}{m_{\mathrm{solvent}}}
 $$
 
-where $b$ is in $\text{mol/kg}$.
+where $b$ is in $\mathrm{mol/kg}$.
 
 #### Mass Percentage
 
 $$
-\% = \frac{m_{\text{solute}}}{m_{\text{solution}}} \times 100\%
+\% = \frac{m_{\mathrm{solute}}}{m_{\mathrm{solution}}} \times 100\%
 $$
 
 #### Parts Per Million (ppm)
 
 $$
-\text{ppm} = \frac{m_{\text{solute}}}{m_{\text{solution}}} \times 10^6
+\mathrm{ppm} = \frac{m_{\mathrm{solute}}}{m_{\mathrm{solution}}} \times 10^6
 $$
 
 :::info[Example]
 
-What is the concentration of a solution made by dissolving $10.0\text{ g}$ of NaCl in enough water
-to make $250\text{ mL}$ of solution?
+What is the concentration of a solution made by dissolving $10.0\mathrm{ g}$ of NaCl in enough water
+to make $250\mathrm{ mL}$ of solution?
 
 $$
-n = \frac{10.0}{58.44} = 0.171\text{ mol}
+n = \frac{10.0}{58.44} = 0.171\mathrm{ mol}
 $$
 
 $$
-c = \frac{0.171}{0.250} = 0.684\text{ mol/L}
+c = \frac{0.171}{0.250} = 0.684\mathrm{ mol/L}
 $$
 
 :::
@@ -407,10 +407,10 @@ $$
 
 :::info[Example]
 
-What volume of $6.0\text{ M}$ HCl is needed to make $500\text{ mL}$ of $0.50\text{ M}$ HCl?
+What volume of $6.0\mathrm{ M}$ HCl is needed to make $500\mathrm{ mL}$ of $0.50\mathrm{ M}$ HCl?
 
 $$
-V_1 = \frac{c_2 V_2}{c_1} = \frac{0.50 \times 500}{6.0} = 41.7\text{ mL}
+V_1 = \frac{c_2 V_2}{c_1} = \frac{0.50 \times 500}{6.0} = 41.7\mathrm{ mL}
 $$
 
 :::
@@ -432,21 +432,21 @@ standard solution.
 
 :::info[Example]
 
-$25.0\text{ mL}$ of NaOH is titrated with $0.100\text{ M}$ HCl. The endpoint is reached at
-$20.0\text{ mL}$ of HCl. Find the concentration of NaOH.
+$25.0\mathrm{ mL}$ of NaOH is titrated with $0.100\mathrm{ M}$ HCl. The endpoint is reached at
+$20.0\mathrm{ mL}$ of HCl. Find the concentration of NaOH.
 
 $$
-\text{NaOH} + \text{HCl} \to \text{NaCl} + \text{H}_2\text{O}
+\mathrm{NaOH} + \mathrm{HCl} \to \mathrm{NaCl} + \mathrm{H}_2\mathrm{O}
 $$
 
 $$
-n(\text{HCl}) = 0.100 \times 0.0200 = 0.00200\text{ mol}
+n(\mathrm{HCl}) = 0.100 \times 0.0200 = 0.00200\mathrm{ mol}
 $$
 
-Stoichiometry 1:1, so $n(\text{NaOH}) = 0.00200\text{ mol}$.
+Stoichiometry 1:1, so $n(\mathrm{NaOH}) = 0.00200\mathrm{ mol}$.
 
 $$
-c(\text{NaOH}) = \frac{0.00200}{0.0250} = 0.0800\text{ M}
+c(\mathrm{NaOH}) = \frac{0.00200}{0.0250} = 0.0800\mathrm{ M}
 $$
 
 :::
@@ -470,66 +470,66 @@ Empirical formula: Na$_2$SO$_3$.
 
 ### Question 2 (Paper 2 style)
 
-$10.0\text{ g}$ of calcium carbonate (CaCO$_3$) is heated until completely decomposed: CaCO$_3$
+$10.0\mathrm{ g}$ of calcium carbonate (CaCO$_3$) is heated until completely decomposed: CaCO$_3$
 $\to$ CaO + CO$_2$.
 
 **(a)** Calculate the volume of CO$_2$ produced at RTP.
 
 $$
-n(\text{CaCO}_3) = \frac{10.0}{100.09} = 0.0999\text{ mol}
+n(\mathrm{CaCO}_3) = \frac{10.0}{100.09} = 0.0999\mathrm{ mol}
 $$
 
 $$
-n(\text{CO}_2) = 0.0999\text{ mol}
+n(\mathrm{CO}_2) = 0.0999\mathrm{ mol}
 $$
 
 $$
-V = n \times 24.8 = 0.0999 \times 24.8 = 2.48\text{ L}
+V = n \times 24.8 = 0.0999 \times 24.8 = 2.48\mathrm{ L}
 $$
 
 **(b)** Calculate the mass of CaO produced.
 
 $$
-m(\text{CaO}) = 0.0999 \times 56.08 = 5.60\text{ g}
+m(\mathrm{CaO}) = 0.0999 \times 56.08 = 5.60\mathrm{ g}
 $$
 
 ### Question 3 (Paper 1 style)
 
-A gas at $300\text{ K}$ and $1.5\text{ atm}$ occupies $4.0\text{ L}$. What volume does it occupy at
-$350\text{ K}$ and $2.0\text{ atm}$?
+A gas at $300\mathrm{ K}$ and $1.5\mathrm{ atm}$ occupies $4.0\mathrm{ L}$. What volume does it occupy at
+$350\mathrm{ K}$ and $2.0\mathrm{ atm}$?
 
 $$
 \frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
 $$
 
 $$
-V_2 = \frac{P_1 V_1 T_2}{P_2 T_1} = \frac{1.5 \times 4.0 \times 350}{2.0 \times 300} = \frac{2100}{600} = 3.5\text{ L}
+V_2 = \frac{P_1 V_1 T_2}{P_2 T_1} = \frac{1.5 \times 4.0 \times 350}{2.0 \times 300} = \frac{2100}{600} = 3.5\mathrm{ L}
 $$
 
 ### Question 4 (Paper 2 style)
 
-$3.0\text{ g}$ of magnesium reacts with excess hydrochloric acid: Mg + 2HCl $\to$ MgCl$_2$ + H$_2$.
+$3.0\mathrm{ g}$ of magnesium reacts with excess hydrochloric acid: Mg + 2HCl $\to$ MgCl$_2$ + H$_2$.
 
 **(a)** Calculate the moles of hydrogen gas produced.
 
 $$
-n(\text{Mg}) = \frac{3.0}{24.31} = 0.123\text{ mol}
+n(\mathrm{Mg}) = \frac{3.0}{24.31} = 0.123\mathrm{ mol}
 $$
 
 $$
-n(\text{H}_2) = 0.123\text{ mol} \text{ (1:1 ratio)}
+n(\mathrm{H}_2) = 0.123\mathrm{ mol} \mathrm{ (1:1 ratio)}
 $$
 
 **(b)** Calculate the volume of H$_2$ at STP.
 
 $$
-V = 0.123 \times 22.7 = 2.79\text{ L}
+V = 0.123 \times 22.7 = 2.79\mathrm{ L}
 $$
 
-**(c)** If only $2.5\text{ L}$ of H$_2$ was collected, calculate the percentage yield.
+**(c)** If only $2.5\mathrm{ L}$ of H$_2$ was collected, calculate the percentage yield.
 
 $$
-\text{Percentage yield} = \frac{2.5}{2.79} \times 100\% = 89.6\%
+\mathrm{Percentage yield} = \frac{2.5}{2.79} \times 100\% = 89.6\%
 $$
 
 ---
@@ -545,7 +545,7 @@ $$
 | Boyle's law      | $P_1V_1 = P_2V_2$                                        |
 | Charles's law    | $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$                    |
 | Dilution         | $c_1V_1 = c_2V_2$                                        |
-| Percentage yield | $\dfrac{\text{actual}}{\text{theoretical}} \times 100\%$ |
+| Percentage yield | $\dfrac{\mathrm{actual}}{\mathrm{theoretical}} \times 100\%$ |
 
 :::tip[Exam Strategy]
 
@@ -564,13 +564,13 @@ molar volume at STP is 22.7 L/mol and at RTP is 24.8 L/mol.
 For a mixture of non-reacting gases:
 
 $$
-P_{\text{total}} = P_1 + P_2 + P_3 + \cdots
+P_{\mathrm{total}} = P_1 + P_2 + P_3 + \cdots
 $$
 
 The partial pressure of each gas:
 
 $$
-P_i = x_i \times P_{\text{total}}
+P_i = x_i \times P_{\mathrm{total}}
 $$
 
 where $x_i$ is the mole fraction of gas $i$.
@@ -589,7 +589,7 @@ $$
 Compare the rates of diffusion of He (4 g/mol) and O$_2$ (32 g/mol).
 
 $$
-\frac{r_{\text{He}}}{r_{\text{O}_2}} = \sqrt{\frac{32}{4}} = \sqrt{8} = 2.83
+\frac{r_{\mathrm{He}}}{r_{\mathrm{O}_2}} = \sqrt{\frac{32}{4}} = \sqrt{8} = 2.83
 $$
 
 Helium diffuses about 2.83 times faster than oxygen.
@@ -612,10 +612,10 @@ $$
 
 :::info[Example]
 
-A gas has a density of $1.43\text{ g/L}$ at STP. Find its molar mass.
+A gas has a density of $1.43\mathrm{ g/L}$ at STP. Find its molar mass.
 
 $$
-M = \frac{\rho RT}{P} = \frac{1.43 \times 8.314 \times 273}{101325} = \frac{3247}{101325} = 0.0320\text{ kg/mol} = 32.0\text{ g/mol}
+M = \frac{\rho RT}{P} = \frac{1.43 \times 8.314 \times 273}{101325} = \frac{3247}{101325} = 0.0320\mathrm{ kg/mol} = 32.0\mathrm{ g/mol}
 $$
 
 The gas is likely O$_2$.
@@ -631,7 +631,7 @@ The gas is likely O$_2$.
 | From            | To              | Method                                        |
 | --------------- | --------------- | --------------------------------------------- |
 | Molarity        | Mass percentage | $c \times M \times 100 / (1000\rho)$          |
-| Mass percentage | Molarity        | $(\%\text{/}100) \times \rho \times 1000 / M$ |
+| Mass percentage | Molarity        | $(\%\mathrm{/}100) \times \rho \times 1000 / M$ |
 | Molarity        | ppm             | $c \times M \times 10^6 / 1000\rho$           |
 
 ### Colligative Properties
@@ -667,17 +667,17 @@ constants, and $m$ is molality.
 
 :::info[Example]
 
-$12.5\text{ g}$ of hydrated magnesium sulfate, MgSO$_4$$\cdot$xH$_2$O, is heated to constant mass of
-$6.1\text{ g}$.
+$12.5\mathrm{ g}$ of hydrated magnesium sulfate, MgSO$_4$$\cdot$xH$_2$O, is heated to constant mass of
+$6.1\mathrm{ g}$.
 
-Mass of water lost $= 12.5 - 6.1 = 6.4\text{ g}$.
-
-$$
-n(\text{MgSO}_4) = \frac{6.1}{120.37} = 0.0507\text{ mol}
-$$
+Mass of water lost $= 12.5 - 6.1 = 6.4\mathrm{ g}$.
 
 $$
-n(\text{H}_2\text{O}) = \frac{6.4}{18.02} = 0.355\text{ mol}
+n(\mathrm{MgSO}_4) = \frac{6.1}{120.37} = 0.0507\mathrm{ mol}
+$$
+
+$$
+n(\mathrm{H}_2\mathrm{O}) = \frac{6.4}{18.02} = 0.355\mathrm{ mol}
 $$
 
 $$
@@ -694,7 +694,7 @@ Formula: MgSO$_4$$\cdot$7H$\_2$O (Epsom salt).
 
 ### Question 5 (Paper 2 style)
 
-$20.0\text{ cm}^3$ of $0.100\text{ M}$ sulfuric acid is titrated with $0.200\text{ M}$ sodium
+$20.0\mathrm{ cm}^3$ of $0.100\mathrm{ M}$ sulfuric acid is titrated with $0.200\mathrm{ M}$ sodium
 hydroxide.
 
 **(a)** Write the balanced equation.
@@ -704,13 +704,13 @@ H$_2$SO$_4$ + 2NaOH $\to$ Na$_2$SO$_4$ + 2H$_2$O
 **(b)** Calculate the volume of NaOH needed to reach the equivalence point.
 
 $$
-n(\text{H}_2\text{SO}_4) = 0.100 \times 0.0200 = 0.00200\text{ mol}
+n(\mathrm{H}_2\mathrm{SO}_4) = 0.100 \times 0.0200 = 0.00200\mathrm{ mol}
 $$
 
-Mole ratio: $n(\text{NaOH}) = 2 \times n(\text{H}_2\text{SO}_4) = 0.00400\text{ mol}$.
+Mole ratio: $n(\mathrm{NaOH}) = 2 \times n(\mathrm{H}_2\mathrm{SO}_4) = 0.00400\mathrm{ mol}$.
 
 $$
-V(\text{NaOH}) = \frac{0.00400}{0.200} = 0.0200\text{ L} = 20.0\text{ cm}^3
+V(\mathrm{NaOH}) = \frac{0.00400}{0.200} = 0.0200\mathrm{ L} = 20.0\mathrm{ cm}^3
 $$
 
 **(c)** What is the pH at the equivalence point?
@@ -721,37 +721,37 @@ The salt Na$_2$SO$_4$ is formed from a strong acid and strong base. The solution
 
 Which contains the greatest number of molecules?
 
-A. $1\text{ g}$ of H$_2$ B. $1\text{ g}$ of O$_2$ C. $1\text{ g}$ of N$_2$ D. $1\text{ g}$ of CO$_2$
+A. $1\mathrm{ g}$ of H$_2$ B. $1\mathrm{ g}$ of O$_2$ C. $1\mathrm{ g}$ of N$_2$ D. $1\mathrm{ g}$ of CO$_2$
 
-**Answer: A.** Since $n = m/M$, and H$_2$ has the smallest molar mass (2 g/mol), $1\text{ g}$ of
-H$_2$ gives $0.5\text{ mol}$, which is more moles (and thus more molecules) than the others.
+**Answer: A.** Since $n = m/M$, and H$_2$ has the smallest molar mass (2 g/mol), $1\mathrm{ g}$ of
+H$_2$ gives $0.5\mathrm{ mol}$, which is more moles (and thus more molecules) than the others.
 
 ### Question 7 (Paper 2 style)
 
 Ammonia gas is produced by the reaction: N$_2$(g) + 3H$_2$(g) $\to$ 2NH$_3$(g).
 
-If $56.0\text{ g}$ of N$_2$ reacts with excess H$_2$ at $400\degree\text{C}$ and $200\text{ atm}$:
+If $56.0\mathrm{ g}$ of N$_2$ reacts with excess H$_2$ at $400\degree\mathrm{C}$ and $200\mathrm{ atm}$:
 
 **(a)** Calculate the moles of NH$_3$ produced (assuming 100% yield).
 
 $$
-n(\text{N}_2) = \frac{56.0}{28.02} = 2.00\text{ mol}
+n(\mathrm{N}_2) = \frac{56.0}{28.02} = 2.00\mathrm{ mol}
 $$
 
 $$
-n(\text{NH}_3) = 2 \times 2.00 = 4.00\text{ mol}
+n(\mathrm{NH}_3) = 2 \times 2.00 = 4.00\mathrm{ mol}
 $$
 
 **(b)** Calculate the volume of NH$_3$ at these conditions.
 
 $$
-V = \frac{nRT}{P} = \frac{4.00 \times 8.314 \times 673}{200 \times 101325} = \frac{22390}{20265000} = 1.105 \times 10^{-3}\text{ m}^3 = 1.105\text{ L}
+V = \frac{nRT}{P} = \frac{4.00 \times 8.314 \times 673}{200 \times 101325} = \frac{22390}{20265000} = 1.105 \times 10^{-3}\mathrm{ m}^3 = 1.105\mathrm{ L}
 $$
 
-**(c)** If the actual yield is $3.20\text{ mol}$, calculate the percentage yield.
+**(c)** If the actual yield is $3.20\mathrm{ mol}$, calculate the percentage yield.
 
 $$
-\text{Percentage yield} = \frac{3.20}{4.00} \times 100\% = 80.0\%
+\mathrm{Percentage yield} = \frac{3.20}{4.00} \times 100\% = 80.0\%
 $$
 
 ---
@@ -765,38 +765,38 @@ reagent is added, and the unreacted portion is titrated.
 
 :::info[Example]
 
-An antacid tablet contains CaCO$_3$. The tablet is dissolved in $50.0\text{ cm}^3$ of
-$0.200\text{ M}$ HCl (excess). The remaining acid requires $30.0\text{ cm}^3$ of $0.100\text{ M}$
+An antacid tablet contains CaCO$_3$. The tablet is dissolved in $50.0\mathrm{ cm}^3$ of
+$0.200\mathrm{ M}$ HCl (excess). The remaining acid requires $30.0\mathrm{ cm}^3$ of $0.100\mathrm{ M}$
 NaOH for neutralisation.
 
 **Step 1**: Total moles of HCl added:
 
 $$
-n(\text{HCl}_{\text{total}}) = 0.200 \times 0.0500 = 0.0100\text{ mol}
+n(\mathrm{HCl}_{\mathrm{total}}) = 0.200 \times 0.0500 = 0.0100\mathrm{ mol}
 $$
 
 **Step 2**: Moles of HCl that reacted with NaOH:
 
 $$
-n(\text{HCl}_{\text{unreacted}}) = n(\text{NaOH}) = 0.100 \times 0.0300 = 0.00300\text{ mol}
+n(\mathrm{HCl}_{\mathrm{unreacted}}) = n(\mathrm{NaOH}) = 0.100 \times 0.0300 = 0.00300\mathrm{ mol}
 $$
 
 **Step 3**: Moles of HCl that reacted with CaCO$_3$:
 
 $$
-n(\text{HCl}_{\text{reacted}}) = 0.0100 - 0.00300 = 0.00700\text{ mol}
+n(\mathrm{HCl}_{\mathrm{reacted}}) = 0.0100 - 0.00300 = 0.00700\mathrm{ mol}
 $$
 
 **Step 4**: Moles of CaCO$_3$ (ratio 1:2 with HCl):
 
 $$
-n(\text{CaCO}_3) = \frac{0.00700}{2} = 0.00350\text{ mol}
+n(\mathrm{CaCO}_3) = \frac{0.00700}{2} = 0.00350\mathrm{ mol}
 $$
 
 **Step 5**: Mass of CaCO$_3$:
 
 $$
-m = 0.00350 \times 100.09 = 0.350\text{ g}
+m = 0.00350 \times 100.09 = 0.350\mathrm{ g}
 $$
 
 :::
@@ -815,16 +815,16 @@ Gravimetric analysis determines the amount of an analyte by measuring mass.
 :::info[Example]
 
 A solution contains sulfate ions. BaCl$_2$ is added to precipitate BaSO$_4$. The precipitate is
-filtered, dried, and weighed at $0.582\text{ g}$.
+filtered, dried, and weighed at $0.582\mathrm{ g}$.
 
 $$
-n(\text{BaSO}_4) = \frac{0.582}{233.39} = 0.00249\text{ mol}
+n(\mathrm{BaSO}_4) = \frac{0.582}{233.39} = 0.00249\mathrm{ mol}
 $$
 
 Since 1 mol BaSO$_4$ contains 1 mol SO$_4^{2-}$:
 
 $$
-m(\text{SO}_4^{2-}) = 0.00249 \times 96.06 = 0.239\text{ g}
+m(\mathrm{SO}_4^{2-}) = 0.00249 \times 96.06 = 0.239\mathrm{ g}
 $$
 
 :::
@@ -858,60 +858,60 @@ Real gases deviate from ideal behaviour at high pressure and low temperature bec
 
 ### Question 8 (Paper 1 style)
 
-What volume of $0.500\text{ M}$ H$_2$SO$_4$ is required to completely neutralise $25.0\text{ cm}^3$
-of $0.400\text{ M}$ NaOH?
+What volume of $0.500\mathrm{ M}$ H$_2$SO$_4$ is required to completely neutralise $25.0\mathrm{ cm}^3$
+of $0.400\mathrm{ M}$ NaOH?
 
 $$
-\text{H}_2\text{SO}_4 + 2\text{NaOH} \to \text{Na}_2\text{SO}_4 + 2\text{H}_2\text{O}
-$$
-
-$$
-n(\text{NaOH}) = 0.400 \times 0.0250 = 0.0100\text{ mol}
+\mathrm{H}_2\mathrm{SO}_4 + 2\mathrm{NaOH} \to \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}
 $$
 
 $$
-n(\text{H}_2\text{SO}_4) = \frac{0.0100}{2} = 0.00500\text{ mol}
+n(\mathrm{NaOH}) = 0.400 \times 0.0250 = 0.0100\mathrm{ mol}
 $$
 
 $$
-V(\text{H}_2\text{SO}_4) = \frac{0.00500}{0.500} = 0.0100\text{ L} = 10.0\text{ cm}^3
+n(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.0100}{2} = 0.00500\mathrm{ mol}
+$$
+
+$$
+V(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.00500}{0.500} = 0.0100\mathrm{ L} = 10.0\mathrm{ cm}^3
 $$
 
 ### Question 9 (Paper 2 style)
 
-A mixture of NaHCO$_3$ and NaCl has a total mass of $4.68\text{ g}$. When heated, only NaHCO$_3$
+A mixture of NaHCO$_3$ and NaCl has a total mass of $4.68\mathrm{ g}$. When heated, only NaHCO$_3$
 decomposes:
 
 $$
-2\text{NaHCO}_3 \to \text{Na}_2\text{CO}_3 + \text{H}_2\text{O} + \text{CO}_2
+2\mathrm{NaHCO}_3 \to \mathrm{Na}_2\mathrm{CO}_3 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2
 $$
 
-The mass loss is $1.32\text{ g}$. Find the percentage of NaHCO$_3$ in the mixture.
+The mass loss is $1.32\mathrm{ g}$. Find the percentage of NaHCO$_3$ in the mixture.
 
-The mass loss is due to H$_2$O + CO$_2$ ($18 + 44 = 62\text{ g/mol}$ for each 2 mol NaHCO$_3$, or
-$31\text{ g/mol}$ per mole of NaHCO$_3$).
-
-$$
-n(\text{NaHCO}_3) = \frac{1.32}{31} = 0.0426\text{ mol}
-$$
+The mass loss is due to H$_2$O + CO$_2$ ($18 + 44 = 62\mathrm{ g/mol}$ for each 2 mol NaHCO$_3$, or
+$31\mathrm{ g/mol}$ per mole of NaHCO$_3$).
 
 $$
-m(\text{NaHCO}_3) = 0.0426 \times 84.01 = 3.58\text{ g}
+n(\mathrm{NaHCO}_3) = \frac{1.32}{31} = 0.0426\mathrm{ mol}
 $$
 
 $$
-\%\text{NaHCO}_3 = \frac{3.58}{4.68} \times 100\% = 76.5\%
+m(\mathrm{NaHCO}_3) = 0.0426 \times 84.01 = 3.58\mathrm{ g}
+$$
+
+$$
+\%\mathrm{NaHCO}_3 = \frac{3.58}{4.68} \times 100\% = 76.5\%
 $$
 
 ### Question 10 (Paper 1 style)
 
 Avogadro's constant is $6.02 \times 10^{23}$. What is the number of oxygen atoms in
-$0.050\text{ mol}$ of Al$_2$(SO$_4$)$_3$?
+$0.050\mathrm{ mol}$ of Al$_2$(SO$_4$)$_3$?
 
 $$
-n(\text{O}) = 0.050 \times 12 = 0.60\text{ mol}
+n(\mathrm{O}) = 0.050 \times 12 = 0.60\mathrm{ mol}
 $$
 
 $$
-\text{Number of O atoms} = 0.60 \times 6.02 \times 10^{23} = 3.61 \times 10^{23}
+\mathrm{Number of O atoms} = 0.60 \times 6.02 \times 10^{23} = 3.61 \times 10^{23}
 $$

@@ -221,7 +221,7 @@ only the original message.
 
 **Encapsulation sequence:**
 
-$$\text{Data} \xrightarrow{\text{Transport}} \text{Segment} \xrightarrow{\text{Internet}} \text{Packet} \xrightarrow{\text{Link}} \text{Frame}$$
+$$\mathrm{Data} \xrightarrow{\mathrm{Transport}} \mathrm{Segment} \xrightarrow{\mathrm{Internet}} \mathrm{Packet} \xrightarrow{\mathrm{Link}} \mathrm{Frame}$$
 
 **Decapsulation at receiver:** Frame $\to$ Packet $\to$ Segment $\to$ Data.
 
@@ -289,7 +289,7 @@ Well-known ports are standardised so that services can be found at predictable a
 
 An **IPv4 address** is a 32-bit number, written as four decimal numbers separated by dots:
 
-$$\text{Example: } 192.168.1.1$$
+$$\mathrm{Example: } 192.168.1.1$$
 
 Each number ranges from 0 to 255 (8 bits each, total 32 bits).
 
@@ -305,7 +305,7 @@ $192.168.1.1 = 11000000.10101000.00000001.00000001$.
 
 An **IPv6 address** is a 128-bit number, written as eight groups of hexadecimal:
 
-$$\text{Example: } 2001:0db8:85a3:0000:0000:8a2e:0370:7334$$
+$$\mathrm{Example: } 2001:0db8:85a3:0000:0000:8a2e:0370:7334$$
 
 Total possible IPv6 addresses: $2^{128} \approx 3.4 \times 10^{38}$.
 
@@ -324,7 +324,7 @@ Example: `2001:0db8:0000:0000:0000:0000:0000:0001` becomes `2001:db8::1`.
 A **MAC (Media Access Control) address** is a 48-bit unique identifier assigned to a network
 interface card by the manufacturer. It is written as six pairs of hexadecimal digits:
 
-$$\text{Example: } 00:1A:2B:3C:4D:5E$$
+$$\mathrm{Example: } 00:1A:2B:3C:4D:5E$$
 
 **Difference between IP and MAC addresses:**
 

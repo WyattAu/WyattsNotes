@@ -25,7 +25,7 @@ $k_B = 1.381 \times 10^{-23}$ J K$^{-1}$.
 **Absolute zero** is 0 K, the lowest possible temperature at which particles have minimum thermal
 energy.
 
-**Conversion:** $T(\text{K}) = T(°\text{C}) + 273.15$
+**Conversion:** $T(\mathrm{K}) = T(°\mathrm{C}) + 273.15$
 
 ### Triple Point of Water
 
@@ -135,13 +135,13 @@ Hence $C_p > C_v$.
 At constant temperature, the pressure of a fixed mass of gas is inversely proportional to its
 volume:
 
-$$pV = \text{constant} \quad (T \text{ constant})$$
+$$pV = \mathrm{constant} \quad (T \mathrm{ constant})$$
 
 ### Charles's Law
 
 At constant pressure, the volume is directly proportional to the absolute temperature:
 
-$$V = \text{constant} \times T \quad (p \text{ constant})$$
+$$V = \mathrm{constant} \times T \quad (p \mathrm{ constant})$$
 
 ### The Ideal Gas Equation
 
@@ -187,11 +187,11 @@ $$F = \frac{\Delta p}{\Delta t} = \frac{2mv_x}{2L/v_x} = \frac{mv_x^2}{L}$$
 
 For $N$ particles, the total force on one wall:
 
-$$F_{\text{total}} = \sum_{i=1}^{N} \frac{mv_{x,i}^2}{L} = \frac{m}{L}\sum_{i=1}^{N}v_{x,i}^2$$
+$$F_{\mathrm{total}} = \sum_{i=1}^{N} \frac{mv_{x,i}^2}{L} = \frac{m}{L}\sum_{i=1}^{N}v_{x,i}^2$$
 
 The pressure on the wall:
 
-$$p = \frac{F_{\text{total}}}{L^2} = \frac{m}{L^3}\sum_{i=1}^{N}v_{x,i}^2 = \frac{mN}{V}\langle v_x^2\rangle$$
+$$p = \frac{F_{\mathrm{total}}}{L^2} = \frac{m}{L^3}\sum_{i=1}^{N}v_{x,i}^2 = \frac{mN}{V}\langle v_x^2\rangle$$
 
 where $\langle v_x^2\rangle = \frac{1}{N}\sum v_{x,i}^2$ is the mean square velocity in the
 $x$-direction.
@@ -222,13 +222,13 @@ temperature**, not on the type of gas molecule.
 
 The **root mean square speed** is defined as:
 
-$$\boxed{v_{\text{rms}} = \sqrt{\langle v^2\rangle}}$$
+$$\boxed{v_{\mathrm{rms}} = \sqrt{\langle v^2\rangle}}$$
 
 From $\langle E_k\rangle = \frac{1}{2}m\langle v^2\rangle = \frac{3}{2}k_BT$:
 
-$$\frac{1}{2}mv_{\text{rms}}^2 = \frac{3}{2}k_BT$$
+$$\frac{1}{2}mv_{\mathrm{rms}}^2 = \frac{3}{2}k_BT$$
 
-$$\boxed{v_{\text{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M_r}}$$
+$$\boxed{v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M_r}}$$
 
 where $M_r$ is the molar mass.
 
@@ -241,7 +241,7 @@ $\propto 1/\sqrt{M_r}$).
 Calculate the rms speed of oxygen molecules ($M_r = 0.032$ kg mol$^{-1}$) at 300 K.
 
 **Answer.**
-$v_{\text{rms}} = \sqrt{\frac{3RT}{M_r}} = \sqrt{\frac{3 \times 8.31 \times 300}{0.032}} = \sqrt{233719} = 483$
+$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M_r}} = \sqrt{\frac{3 \times 8.31 \times 300}{0.032}} = \sqrt{233719} = 483$
 m s$^{-1}$.
 
 </details>
@@ -290,13 +290,13 @@ $$f(v) = 4\pi\left(\frac{m}{2\pi k_BT}\right)^{3/2} v^2 \exp\!\left(-\frac{mv^2}
 The distribution is characterised by three speeds, all proportional to $\sqrt{k_BT/m}$ but with
 different numerical prefactors:
 
-$$v_p = \sqrt{\frac{2k_BT}{m}} \qquad \langle v \rangle = \sqrt{\frac{8k_BT}{\pi m}} \qquad v_{\text{rms}} = \sqrt{\frac{3k_BT}{m}}$$
+$$v_p = \sqrt{\frac{2k_BT}{m}} \qquad \langle v \rangle = \sqrt{\frac{8k_BT}{\pi m}} \qquad v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}}$$
 
-**Ordering:** $v_p < \langle v \rangle < v_{\text{rms}}$
+**Ordering:** $v_p < \langle v \rangle < v_{\mathrm{rms}}$
 
 **Intuition.** The distribution is not symmetric -- it has a long tail towards high speeds. The most
 probable speed $v_p$ sits at the peak, but the tail of fast molecules pulls the mean and rms above
-the peak. Numerically: $v_p : \langle v \rangle : v_{\text{rms}} = 1 : 1.128 : 1.225$.
+the peak. Numerically: $v_p : \langle v \rangle : v_{\mathrm{rms}} = 1 : 1.128 : 1.225$.
 
 As temperature increases, the distribution broadens and the peak shifts right (faster molecules),
 but the area under the curve stays normalised to 1 (total probability). As mass increases, the
@@ -314,7 +314,7 @@ use of all three speed measures.
 Compare the rms speeds of helium ($M_r = 4$) and carbon dioxide ($M_r = 44$) at 300 K.
 
 **Answer.**
-$\frac{v_{\text{rms}}(\text{He})}{v_{\text{rms}}(\text{CO}_2)} = \sqrt{\frac{M_r(\text{CO}_2)}{M_r(\text{He})}} = \sqrt{\frac{44}{4}} = \sqrt{11} \approx 3.32$.
+$\frac{v_{\mathrm{rms}}(\mathrm{He})}{v_{\mathrm{rms}}(\mathrm{CO}_2)} = \sqrt{\frac{M_r(\mathrm{CO}_2)}{M_r(\mathrm{He})}} = \sqrt{\frac{44}{4}} = \sqrt{11} \approx 3.32$.
 
 Helium molecules move about 3.3 times faster than CO$_2$ molecules at the same temperature. This is
 why helium escapes from the atmosphere faster than heavier gases (atmospheric escape).
@@ -333,8 +333,8 @@ where $d$ is the molecular diameter and $n = N/V$ is the number density.
 **Derivation sketch.** Consider one molecule of diameter $d$ moving through stationary target
 molecules of number density $n$. The moving molecule sweeps out a cylinder of cross-sectional area
 $\pi d^2$ per unit time. It collides with any target molecule whose centre lies within this
-cylinder. The collision frequency is $f = n\pi d^2 v_{\text{rel}}$ where $v_{\text{rel}}$ is the
-mean relative speed. For a thermal distribution, $v_{\text{rel}} = \sqrt{2}\,\langle v\rangle$
+cylinder. The collision frequency is $f = n\pi d^2 v_{\mathrm{rel}}$ where $v_{\mathrm{rel}}$ is the
+mean relative speed. For a thermal distribution, $v_{\mathrm{rel}} = \sqrt{2}\,\langle v\rangle$
 (factor from relative velocity of two Maxwellian distributions), giving:
 
 $$\lambda = \frac{\langle v\rangle}{f} = \frac{\langle v\rangle}{\sqrt{2}\,\pi d^2 n \langle v\rangle} = \frac{1}{\sqrt{2}\,\pi d^2 n}$$
@@ -390,7 +390,7 @@ mol.
 Calculate the rms speed of nitrogen molecules ($M_r = 0.028$ kg mol$^{-1}$) at 250 K.
 
 **Answer.**
-$v_{\text{rms}} = \sqrt{\frac{3 \times 8.31 \times 250}{0.028}} = \sqrt{\frac{6232.5}{0.028}} = \sqrt{222{,}589} = 472$
+$v_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 250}{0.028}} = \sqrt{\frac{6232.5}{0.028}} = \sqrt{222{,}589} = 472$
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
@@ -442,9 +442,9 @@ $c = Q/(m\Delta T) = 96{,}000/(0.80 \times 60) = 2000$ J kg$^{-1}$ K$^{-1}$.
 <summary>Problem 8</summary>
 Explain why the rms speed of hydrogen molecules is greater than that of oxygen molecules at the same temperature.
 
-**Answer.** $v_{\text{rms}} = \sqrt{3k_BT/m}$. At the same temperature, $k_BT$ is the same. Since
+**Answer.** $v_{\mathrm{rms}} = \sqrt{3k_BT/m}$. At the same temperature, $k_BT$ is the same. Since
 hydrogen has a smaller molecular mass ($m_H \ll m_O$), the rms speed is greater. Specifically,
-$v_{\text{rms}}(H_2)/v_{\text{rms}}(O_2) = \sqrt{m_O/m_H} = \sqrt{32/2} = 4$.
+$v_{\mathrm{rms}}(H_2)/v_{\mathrm{rms}}(O_2) = \sqrt{m_O/m_H} = \sqrt{32/2} = 4$.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
 
@@ -452,7 +452,7 @@ $v_{\text{rms}}(H_2)/v_{\text{rms}}(O_2) = \sqrt{m_O/m_H} = \sqrt{32/2} = 4$.
 
 <details>
 <summary>Problem 9</summary>
-250 g of water at 90°C is poured into a 150 g copper calorimeter at 20°C. The final temperature is 75°C. Calculate the specific heat capacity of copper. ($c_{\text{water}} = 4200$ J kg$^{-1}$ K$^{-1}$.)
+250 g of water at 90°C is poured into a 150 g copper calorimeter at 20°C. The final temperature is 75°C. Calculate the specific heat capacity of copper. ($c_{\mathrm{water}} = 4200$ J kg$^{-1}$ K$^{-1}$.)
 
 **Answer.** Energy lost by water = energy gained by copper calorimeter:
 
@@ -470,7 +470,7 @@ $15{,}750 = 8.25\,c_c$. $c_c = 1909$ J kg$^{-1}$ K$^{-1}$.
 <summary>Problem 10</summary>
 A sealed container holds gas at 300 K. The container is heated until the rms speed of the molecules doubles. What is the new temperature?
 
-**Answer.** $v_{\text{rms}} \propto \sqrt{T}$. If $v_{\text{rms}}$ doubles: $2 = \sqrt{T_2/T_1}$.
+**Answer.** $v_{\mathrm{rms}} \propto \sqrt{T}$. If $v_{\mathrm{rms}}$ doubles: $2 = \sqrt{T_2/T_1}$.
 $T_2/T_1 = 4$. $T_2 = 4 \times 300 = 1200$ K.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
@@ -480,15 +480,15 @@ $T_2/T_1 = 4$. $T_2 = 4 \times 300 = 1200$ K.
 <details>
 <summary>Problem 11</summary>
 
-Calculate the ratio $v_p : \langle v \rangle : v_{\text{rms}}$ for an ideal gas, showing that
-$v_p < \langle v \rangle < v_{\text{rms}}$.
+Calculate the ratio $v_p : \langle v \rangle : v_{\mathrm{rms}}$ for an ideal gas, showing that
+$v_p < \langle v \rangle < v_{\mathrm{rms}}$.
 
 **Answer.** All three speeds are of the form $c\sqrt{k_BT/m}$ with different constants:
 
 $v_p = \sqrt{2} \approx 1.414$, $\langle v \rangle = \sqrt{8/\pi} \approx 1.596$,
-$v_{\text{rms}} = \sqrt{3} \approx 1.732$.
+$v_{\mathrm{rms}} = \sqrt{3} \approx 1.732$.
 
-The ratios are $v_p : \langle v \rangle : v_{\text{rms}} = 1 : 1.128 : 1.225$. The ordering holds
+The ratios are $v_p : \langle v \rangle : v_{\mathrm{rms}} = 1 : 1.128 : 1.225$. The ordering holds
 because the Maxwell-Boltzmann distribution has a long tail: the most probable speed sits at the
 peak, but the asymmetric tail pulls the mean and rms progressively higher.
 
@@ -501,10 +501,10 @@ peak, but the asymmetric tail pulls the mean and rms progressively higher.
 <summary>Problem 12</summary>
 
 A container holds helium at 400 K and nitrogen at 400 K. Calculate the ratio of their rms speeds.
-($M_r(\text{He}) = 4$, $M_r(\text{N}_2) = 28$.)
+($M_r(\mathrm{He}) = 4$, $M_r(\mathrm{N}_2) = 28$.)
 
 **Answer.**
-$\frac{v_{\text{rms}}(\text{He})}{v_{\text{rms}}(\text{N}_2)} = \sqrt{\frac{M_r(\text{N}_2)}{M_r(\text{He})}} = \sqrt{\frac{28}{4}} = \sqrt{7} \approx 2.65$.
+$\frac{v_{\mathrm{rms}}(\mathrm{He})}{v_{\mathrm{rms}}(\mathrm{N}_2)} = \sqrt{\frac{M_r(\mathrm{N}_2)}{M_r(\mathrm{He})}} = \sqrt{\frac{28}{4}} = \sqrt{7} \approx 2.65$.
 
 At the same temperature, lighter helium molecules move 2.65 times faster than nitrogen molecules.
 
@@ -558,7 +558,7 @@ $\langle E_k\rangle = \frac{3}{2}k_BT = \frac{3}{2} \times 1.381 \times 10^{-23}
 J.
 
 (b) Total internal energy per molecule (5 DOF):
-$U_{\text{per molecule}} = \frac{5}{2}k_BT = \frac{5}{2} \times 1.381 \times 10^{-23} \times 350 = 1.21 \times 10^{-20}$
+$U_{\mathrm{per molecule}} = \frac{5}{2}k_BT = \frac{5}{2} \times 1.381 \times 10^{-23} \times 350 = 1.21 \times 10^{-20}$
 J.
 
 (c) Total for 2.0 mol:
@@ -575,7 +575,7 @@ $\approx 14.5$ kJ.
 A gas at 300 K is compressed adiabatically to half its original volume. If $\gamma = 1.4$, estimate
 the final temperature.
 
-**Answer.** For an adiabatic process: $TV^{\gamma-1} = \text{const}$.
+**Answer.** For an adiabatic process: $TV^{\gamma-1} = \mathrm{const}$.
 
 $T_1 V_1^{\gamma - 1} = T_2 V_2^{\gamma - 1}$.
 
@@ -593,8 +593,8 @@ escape in an adiabatic process).
 <summary>Problem 17</summary>
 
 10 g of ice at $-10$°C is heated until it becomes steam at 110°C at 1 atm pressure. Calculate the
-total energy required. Data: $c_{\text{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$, $c_{\text{water}} = 4200$
-J kg$^{-1}$ K$^{-1}$, $c_{\text{steam}} = 2010$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J
+total energy required. Data: $c_{\mathrm{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4200$
+J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{steam}} = 2010$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J
 kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$.
 
 **Answer.** Break into 5 stages:
@@ -605,7 +605,7 @@ kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$.
 4. Boiling at 100°C: $Q_4 = 0.010 \times 2.26 \times 10^6 = 22{,}600$ J
 5. Steam 100°C to 110°C: $Q_5 = 0.010 \times 2010 \times 10 = 201$ J
 
-$Q_{\text{total}} = 210 + 3340 + 4200 + 22{,}600 + 201 = 30{,}551$ J $\approx 30.6$ kJ.
+$Q_{\mathrm{total}} = 210 + 3340 + 4200 + 22{,}600 + 201 = 30{,}551$ J $\approx 30.6$ kJ.
 
 Note that vaporisation ($Q_4$) dominates -- it requires about 7 times more energy than heating water
 through the same temperature range ($Q_3$).
@@ -621,9 +621,9 @@ Explain why the temperature of a gas does not change during an isothermal expans
 gas does work on its surroundings.
 
 **Answer.** During isothermal expansion, the gas does work on the surroundings
-($W_{\text{by}} > 0$). By the first law: $\Delta U = Q + W_{\text{on}} = Q - W_{\text{by}}$. For the
+($W_{\mathrm{by}} > 0$). By the first law: $\Delta U = Q + W_{\mathrm{on}} = Q - W_{\mathrm{by}}$. For the
 internal energy to remain constant ($\Delta U = 0$, since $U$ depends only on $T$ for an ideal gas),
-we need $Q = W_{\text{by}}$. Heat must flow into the gas from the surroundings at exactly the rate
+we need $Q = W_{\mathrm{by}}$. Heat must flow into the gas from the surroundings at exactly the rate
 at which the gas does work. The expansion is carried out slowly enough (quasi-statically) that
 thermal equilibrium is maintained throughout. If the expansion were adiabatic instead, the gas would
 cool.
@@ -659,11 +659,11 @@ their rms speeds.
 **Answer.** From the kinetic theory result $\langle E_k\rangle = \frac{3}{2}k_BT$, the average
 translational kinetic energy depends only on temperature. Since both gases are at the same $T$:
 
-$\langle E_k\rangle(\text{He}) = \langle E_k\rangle(\text{Ar}) = \frac{3}{2} \times 1.381 \times 10^{-23} \times 500 = 1.036 \times 10^{-20}$
+$\langle E_k\rangle(\mathrm{He}) = \langle E_k\rangle(\mathrm{Ar}) = \frac{3}{2} \times 1.381 \times 10^{-23} \times 500 = 1.036 \times 10^{-20}$
 J.
 
 Rms speed ratio:
-$\frac{v_{\text{rms}}(\text{He})}{v_{\text{rms}}(\text{Ar})} = \sqrt{\frac{M_r(\text{Ar})}{M_r(\text{He})}} = \sqrt{\frac{40}{4}} = \sqrt{10} \approx 3.16$.
+$\frac{v_{\mathrm{rms}}(\mathrm{He})}{v_{\mathrm{rms}}(\mathrm{Ar})} = \sqrt{\frac{M_r(\mathrm{Ar})}{M_r(\mathrm{He})}} = \sqrt{\frac{40}{4}} = \sqrt{10} \approx 3.16$.
 
 Helium atoms move $\sqrt{10}$ times faster than argon atoms, despite having the same average kinetic
 energy. This is because kinetic energy depends on $mv^2$, so lighter atoms must move faster to have

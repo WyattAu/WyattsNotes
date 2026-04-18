@@ -32,11 +32,11 @@ The `std::memory_order` enum [N4950 §31.7.5] defines six values:
 Memory orderings form a strict hierarchy from weakest to strongest:
 
 $$
-\text{relaxed} \subset \text{consume} \subset \text{acquire} \subset \text{acq\_rel} \subset \text{seq\_cst}
+\mathrm{relaxed} \subset \mathrm{consume} \subset \mathrm{acquire} \subset \mathrm{acq\_rel} \subset \mathrm{seq\_cst}
 $$
 
 $$
-\text{relaxed} \subset \text{release} \subset \text{acq\_rel} \subset \text{seq\_cst}
+\mathrm{relaxed} \subset \mathrm{release} \subset \mathrm{acq\_rel} \subset \mathrm{seq\_cst}
 $$
 
 Using a stronger ordering than necessary is always safe but may incur performance penalties. Using a
@@ -47,7 +47,7 @@ weaker ordering than required results in undefined behavior.
 Relaxed atomics guarantee **atomicity only**: the operation is indivisible, but there are no
 ordering constraints with respect to other memory operations.
 
-$$\text{relaxed: } \text{atomicity} \wedge \neg\text{ordering}$$
+$$\mathrm{relaxed: } \mathrm{atomicity} \wedge \neg\mathrm{ordering}$$
 
 Use cases:
 
@@ -114,17 +114,17 @@ void reader() {
 **Acquire** semantics [N4950 §31.7.5] prevent memory operations **after** the atomic operation from
 being reordered **before** it:
 
-$$\text{acquire: } \forall\, w \text{ after } \text{load}: w \nrightarrow \text{before load}$$
+$$\mathrm{acquire: } \forall\, w \mathrm{ after } \mathrm{load}: w \nrightarrow \mathrm{before load}$$
 
 **Release** semantics prevent memory operations **before** the atomic operation from being reordered
 **after** it:
 
-$$\text{release: } \forall\, r \text{ before } \text{store}: r \nrightarrow \text{after store}$$
+$$\mathrm{release: } \forall\, r \mathrm{ before } \mathrm{store}: r \nrightarrow \mathrm{after store}$$
 
 When a release store synchronizes-with an acquire load, a **synchronizes-with** relationship is
 established [N4950 §31.7.5]:
 
-$$\text{store}_{\text{release}}(x) \xrightarrow{\text{sw}} \text{load}_{\text{acquire}}(x)$$
+$$\mathrm{store}_{\mathrm{release}}(x) \xrightarrow{\mathrm{sw}} \mathrm{load}_{\mathrm{acquire}}(x)$$
 
 This creates a happens-before edge, and all memory operations sequenced-before the release store are
 visible to all operations sequenced-after the acquire load.
@@ -170,27 +170,27 @@ load.
 Formally [N4950 §6.9.2.2]:
 
 $$
-A \xrightarrow{\text{sb}} B \implies A \xrightarrow{\text{hb}} B
+A \xrightarrow{\mathrm{sb}} B \implies A \xrightarrow{\mathrm{hb}} B
 $$
 
 $$
-A \xrightarrow{\text{sw}} B \implies A \xrightarrow{\text{hb}} B
+A \xrightarrow{\mathrm{sw}} B \implies A \xrightarrow{\mathrm{hb}} B
 $$
 
 $$
-A \xrightarrow{\text{hb}} B \implies \text{all side effects of } A \text{ visible to } B
+A \xrightarrow{\mathrm{hb}} B \implies \mathrm{all side effects of } A \mathrm{ visible to } B
 $$
 
 ## Sequentially Consistent Ordering
 
 `memory_order_seq_cst` [N4950 §31.7.5] provides the strongest guarantee: there exists a total order
-$\text{S}$ over all `seq_cst` operations such that:
+$\mathrm{S}$ over all `seq_cst` operations such that:
 
-1. Every `seq_cst` operation in $\text{S}$ is consistent with the happens-before order.
-2. Every `seq_cst` load reads either the last preceding `seq_cst` store in $\text{S}$ or a value
+1. Every `seq_cst` operation in $\mathrm{S}$ is consistent with the happens-before order.
+2. Every `seq_cst` load reads either the last preceding `seq_cst` store in $\mathrm{S}$ or a value
    written by a non-`seq_cst` store.
 
-$$\forall\, a, b \in \text{seq\_cst ops}: a \lt_{\text{total}} b \text{ or } b \lt_{\text{total}} a$$
+$$\forall\, a, b \in \mathrm{seq\_cst ops}: a \lt_{\mathrm{total}} b \mathrm{ or } b \lt_{\mathrm{total}} a$$
 
 On x86, `seq_cst` stores require a `MFENCE` (or `LOCK XCHG`), and `seq_cst` loads require `LFENCE`
 on some implementations. On ARM, `seq_cst` operations use `dmb ish` barriers.

@@ -141,7 +141,7 @@ The **ABA problem** occurs in lock-free algorithms when a value changes from $A$
 $A$ between a thread's load and its CAS. The CAS succeeds because the value is still $A$, but the
 intermediate change may have invalidated invariants:
 
-$$\text{Load}(A) \to \text{Other thread: } A \to B \to A \to \text{CAS}(A, C) \text{ succeeds — incorrectly}$$
+$$\mathrm{Load}(A) \to \mathrm{Other thread: } A \to B \to A \to \mathrm{CAS}(A, C) \mathrm{ succeeds — incorrectly}$$
 
 `compare_exchange_weak` may fail spuriously (return `false` even when the expected value matches),
 which can help in some ABA scenarios but does not fully solve the problem. Full solutions include:

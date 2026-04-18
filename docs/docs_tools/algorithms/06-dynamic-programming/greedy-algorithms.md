@@ -158,7 +158,7 @@ def huffman(frequencies):
 
 ### Expected Code Length
 
-$$L = \sum_{i=1}^{n} f_i \cdot \text{len}(c_i)$$
+$$L = \sum_{i=1}^{n} f_i \cdot \mathrm{len}(c_i)$$
 
 For a source with entropy $H = -\sum f_i \log_2 f_i$, Huffman coding satisfies $H \le L \lt H + 1$
 (one bit per symbol worse than the theoretical minimum).

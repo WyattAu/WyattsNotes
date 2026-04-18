@@ -206,7 +206,7 @@ For rational functions $\displaystyle\frac{P(x)}{Q(x)}$ where $P$ and $Q$ are po
 
 - If $\deg P \lt \deg Q$: $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = 0$
 - If $\deg P = \deg Q$:
-  $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = \frac{\text{leading coeff of } P}{\text{leading coeff of } Q}$
+  $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = \frac{\mathrm{leading coeff of } P}{\mathrm{leading coeff of } Q}$
 - If $\deg P \gt \deg Q$: the limit is $\pm\infty$
 
 **Why this works.** For large $x$, the leading term dominates. Dividing numerator and denominator by
@@ -482,7 +482,7 @@ The general approach is:
 1. Start with $|f(x) - L|$ and try to bound it in terms of $|x - a|$.
 2. If $f$ involves products, use the "restrict delta" technique: bound each factor separately.
 3. If $f$ involves roots, rationalise and use the fact that $\sqrt{x} + \sqrt{a} \ge \sqrt{a}$.
-4. Choose $\delta = \min(\text{bound}, \epsilon / \text{constant})$ to handle both the restriction
+4. Choose $\delta = \min(\mathrm{bound}, \epsilon / \mathrm{constant})$ to handle both the restriction
    and the $\epsilon$ requirement.
 
 ## Continuity (CED Unit 1)

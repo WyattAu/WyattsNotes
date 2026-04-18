@@ -43,12 +43,12 @@ We derive this from three channels:
 **1. Wealth effect (Pigou effect):** A higher price level reduces the real value of money balances
 and other financial assets. Households feel less wealthy and reduce consumption:
 
-$$P \uparrow \Rightarrow \frac{M}{P} \downarrow \Rightarrow \text{Real wealth } \downarrow \Rightarrow C \downarrow \Rightarrow AD \downarrow$$
+$$P \uparrow \Rightarrow \frac{M}{P} \downarrow \Rightarrow \mathrm{Real wealth } \downarrow \Rightarrow C \downarrow \Rightarrow AD \downarrow$$
 
 **2. Interest rate effect (Keynes effect):** A higher price level increases the demand for money
 (more money needed for transactions). This raises interest rates, which reduces investment:
 
-$$P \uparrow \Rightarrow \text{Money demand } \uparrow \Rightarrow r \uparrow \Rightarrow I \downarrow \Rightarrow AD \downarrow$$
+$$P \uparrow \Rightarrow \mathrm{Money demand } \uparrow \Rightarrow r \uparrow \Rightarrow I \downarrow \Rightarrow AD \downarrow$$
 
 **3. Exchange rate effect (Mundell-Fleming):** A higher price level (relative to other countries)
 makes exports less competitive and imports more attractive. The exchange rate may also depreciate,
@@ -62,7 +62,7 @@ A more rigorous derivation combines the goods market (IS curve) and money market
 curve gives the combinations of $Y$ and $r$ where planned expenditure equals output. The LM curve
 gives combinations where real money supply equals real money demand:
 
-$$\text{IS: } Y = C(Y - T) + I(r) + G + (X - M)$$ $$\text{LM: } \frac{M^s}{P} = L(Y, r)$$
+$$\mathrm{IS: } Y = C(Y - T) + I(r) + G + (X - M)$$ $$\mathrm{LM: } \frac{M^s}{P} = L(Y, r)$$
 
 An increase in $P$ reduces real money balances $M^s/P$, shifting the LM curve leftward. This raises
 $r$, which reduces $I$ and hence $Y$ along the IS curve. The AD curve is the set of $(Y, P)$ pairs
@@ -92,7 +92,7 @@ The horizontal shift of the AD curve equals $\Delta Y = k \times \Delta A$, wher
 initial change in autonomous spending and $k$ is the multiplier. For example, if the government
 increases spending by £50bn and $k = 2$, the AD curve shifts right by £100bn at every price level.
 
-$$\text{AD shifts right by } k \cdot \Delta A \text{ at every } P$$
+$$\mathrm{AD shifts right by } k \cdot \Delta A \mathrm{ at every } P$$
 
 **Real-world example — the COVID-19 fiscal response.** In 2020, the UK government introduced the
 furlough scheme costing approximately £70bn. With an estimated multiplier of 0.6-1.5 (lower than
@@ -150,7 +150,7 @@ output or natural output).
 flexible. A change in the general price level changes _all_ nominal prices proportionally, leaving
 real variables unchanged. Money is neutral: it affects only nominal variables, not real output.
 
-$$P \uparrow \Rightarrow w \uparrow \text{ proportionally} \Rightarrow \frac{w}{P} \text{ unchanged} \Rightarrow Y \text{ unchanged}$$
+$$P \uparrow \Rightarrow w \uparrow \mathrm{ proportionally} \Rightarrow \frac{w}{P} \mathrm{ unchanged} \Rightarrow Y \mathrm{ unchanged}$$
 
 Therefore, the LRAS curve is vertical at $Y^*$. $\blacksquare$
 
@@ -248,7 +248,7 @@ sectors, reduced business investment, and weaker growth in total factor producti
 
 ### 3.1 Short-Run Equilibrium
 
-$$AD = SRAS \quad \text{at } (Y_{SR}, P_{SR})$$
+$$AD = SRAS \quad \mathrm{at } (Y_{SR}, P_{SR})$$
 
 If $Y_{SR} = Y^*$: the economy is at full employment. If $Y_{SR} > Y^*$: the economy is above full
 employment (overheating, inflationary gap). If $Y_{SR} < Y^*$: the economy is below full employment
@@ -265,7 +265,7 @@ price level rises, output falls back to $Y^*$. Conversely, if $Y_{SR} < Y^*$: hi
 downward pressure on wages $\Rightarrow$ SRAS shifts right $\Rightarrow$ price level falls, output
 rises to $Y^*$. $\blacksquare$
 
-$$\text{Long-run equilibrium: } AD = SRAS = LRAS \text{ at } (Y^*, P_{LR})$$
+$$\mathrm{Long-run equilibrium: } AD = SRAS = LRAS \mathrm{ at } (Y^*, P_{LR})$$
 
 ### 3.3 Demand-Side Shocks
 

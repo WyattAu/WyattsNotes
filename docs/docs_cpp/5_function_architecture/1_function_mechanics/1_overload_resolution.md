@@ -170,8 +170,8 @@ and only if all of the following hold:
 Let $V \subseteq C$ be the set of viable functions. A function $f \in V$ is the **best viable
 function** if and only if for every other $g \in V \setminus \{f\}$:
 
-- $\text{ICS}_f(i) \preceq \text{ICS}_g(i)$ for all argument positions $i$ (not worse).
-- $\text{ICS}_f(j) \prec \text{ICS}_g(j)$ for at least one argument position $j$ (strictly better).
+- $\mathrm{ICS}_f(i) \preceq \mathrm{ICS}_g(i)$ for all argument positions $i$ (not worse).
+- $\mathrm{ICS}_f(j) \prec \mathrm{ICS}_g(j)$ for at least one argument position $j$ (strictly better).
 
 Where $\preceq$ denotes "no worse than" and $\prec$ denotes "strictly better" in the conversion
 ranking hierarchy. If no unique best viable function exists, the call is ambiguous [N4950
@@ -545,7 +545,7 @@ int main() {
 
 **Proof that `debug(T*)` is more specialized than `debug(T)`:**
 
-1. Let $A = \text{debug}(T*)$ and $B = \text{debug}(T)$.
+1. Let $A = \mathrm{debug}(T*)$ and $B = \mathrm{debug}(T)$.
 2. Can $A$ accept every type that $B$ can accept? No. $A$ requires a pointer type; $B$ accepts any
    type. So $A$ is not at least as specialized as $B$.
 3. Can $B$ accept every type that $A$ can accept? Yes. Every `T*` is also a valid `T` (where `T`
@@ -656,11 +656,11 @@ argument and no worse for any argument, then $f_1$ is selected.
 **Proof:**
 
 1. Let $k$ be the number of arguments. For each argument $i \in \{1, \ldots, k\}$, let
-   $\text{ICS}_{f_1}(i)$ and $\text{ICS}_{f_2}(i)$ be the implicit conversion sequences for $f_1$
+   $\mathrm{ICS}_{f_1}(i)$ and $\mathrm{ICS}_{f_2}(i)$ be the implicit conversion sequences for $f_1$
    and $f_2$ respectively.
 
-2. By the premise, $\exists j$ such that $\text{ICS}_{f_1}(j) \prec \text{ICS}_{f_2}(j)$ (strictly
-   better) and $\forall i, \text{ICS}_{f_1}(i) \preceq \text{ICS}_{f_2}(i)$ (no worse).
+2. By the premise, $\exists j$ such that $\mathrm{ICS}_{f_1}(j) \prec \mathrm{ICS}_{f_2}(j)$ (strictly
+   better) and $\forall i, \mathrm{ICS}_{f_1}(i) \preceq \mathrm{ICS}_{f_2}(i)$ (no worse).
 
 3. By [N4950 §12.4.3.2], this is exactly the definition of "better viable function."
 

@@ -68,7 +68,7 @@ during reallocation [N4950 §20.2.4]. If an element's move constructor might thr
 back to copying:
 
 $$
-\text{move\_if\_noexcept}(x) = \begin{cases} \text{std::move}(x) & \text{if } T\text{'s move is noexcept or not copyable} \\ x & \text{otherwise (lvalue copy)} \end{cases}
+\mathrm{move\_if\_noexcept}(x) = \begin{cases} \mathrm{std::move}(x) & \mathrm{if } T\mathrm{'s move is noexcept or not copyable} \\ x & \mathrm{otherwise (lvalue copy)} \end{cases}
 $$
 
 ```cpp

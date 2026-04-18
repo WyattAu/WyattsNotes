@@ -409,7 +409,7 @@ Find the area of the region inside $r = 3\cos\theta$ and outside $r = 1+\cos\the
 
 <details>
 <summary>Hint 6</summary>
-Find the intersection angles by solving $3\cos\theta = 1+\cos\theta$. Then integrate $r_{\text{outer}}^2 - r_{\text{inner}}^2$.
+Find the intersection angles by solving $3\cos\theta = 1+\cos\theta$. Then integrate $r_{\mathrm{outer}}^2 - r_{\mathrm{inner}}^2$.
 </details>
 
 <details>

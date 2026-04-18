@@ -40,9 +40,9 @@ degrades. Any distributed system must tolerate partitions, which means the real 
 The PACELC theorem (Abadi, 2012) extends CAP: when there is **no** partition (the EL part), the
 system must choose between **L**atency and **C**onsistency:
 
-$$\text{PA} \to \text{EL} : \text{when no partition, prefer availability and latency over consistency}$$
+$$\mathrm{PA} \to \mathrm{EL} : \mathrm{when no partition, prefer availability and latency over consistency}$$
 
-$$\text{PC} \to \text{EC} : \text{when no partition, prefer consistency, accepting higher latency}$$
+$$\mathrm{PC} \to \mathrm{EC} : \mathrm{when no partition, prefer consistency, accepting higher latency}$$
 
 This captures a nuance that CAP misses: even during normal operation (no partition), systems make
 consistency-latency trade-offs. DynamoDB defaults to eventual consistency for low latency but can be

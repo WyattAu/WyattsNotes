@@ -206,7 +206,7 @@ Genes on the same chromosome tend to be inherited together (linked). The recombi
 measures the distance between linked genes:
 
 $$
-\text{Recombination frequency} = \frac{\text{Number of recombinant offspring}}{\text{Total offspring}} \times 100
+\mathrm{Recombination frequency} = \frac{\mathrm{Number of recombinant offspring}}{\mathrm{Total offspring}} \times 100
 $$
 
 - $1\%$ recombination = 1 map unit (centimorgan, cM).
@@ -405,7 +405,7 @@ them: genes that are farther apart are more likely to be separated by crossing o
 **Recombination frequency:** The percentage of offspring that are recombinant (have a non-parental
 combination of alleles).
 
-$$\text{Recombination frequency} = \frac{\text{Number of recombinant offspring}}{\text{Total offspring}} \times 100$$
+$$\mathrm{Recombination frequency} = \frac{\mathrm{Number of recombinant offspring}}{\mathrm{Total offspring}} \times 100$$
 
 - 1% recombination = 1 centimorgan (cM) or 1 map unit.
 - Maximum recombination frequency of 50% means the genes are effectively unlinked (on different
@@ -519,7 +519,7 @@ Epigenetics refers to heritable changes in gene expression that do not involve c
 sequence. Epigenetic modifications can be influenced by environmental factors and can sometimes be
 passed to offspring.
 
-**DNA methylation:** Methyl groups ($-\text{CH}_3$) are added to cytosine bases, typically in CpG
+**DNA methylation:** Methyl groups ($-\mathrm{CH}_3$) are added to cytosine bases, typically in CpG
 islands near gene promoters. Methylation generally silences gene expression by preventing
 transcription factors from binding.
 

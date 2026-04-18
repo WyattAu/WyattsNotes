@@ -24,7 +24,7 @@ at that point.
 **Principle of Superposition.** When two or more waves overlap, the resultant displacement at any
 point is the **algebraic sum** of the individual displacements:
 
-$$y_{\text{total}} = y_1 + y_2 + y_3 + \cdots$$
+$$y_{\mathrm{total}} = y_1 + y_2 + y_3 + \cdots$$
 
 This principle is valid for linear waves (small amplitudes). It is a direct consequence of the
 linearity of the wave equation.
@@ -46,21 +46,21 @@ $$y_1 = A\sin(\omega t), \qquad y_2 = A\sin(\omega t + \Delta\phi)$$
 
 The resultant is:
 
-$$y_{\text{total}} = A\sin(\omega t) + A\sin(\omega t + \Delta\phi)$$
+$$y_{\mathrm{total}} = A\sin(\omega t) + A\sin(\omega t + \Delta\phi)$$
 
 Using the trigonometric identity
 $\sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}$:
 
-$$y_{\text{total}} = 2A\cos\left(\frac{\Delta\phi}{2}\right)\sin\left(\omega t + \frac{\Delta\phi}{2}\right)$$
+$$y_{\mathrm{total}} = 2A\cos\left(\frac{\Delta\phi}{2}\right)\sin\left(\omega t + \frac{\Delta\phi}{2}\right)$$
 
 The resultant amplitude is:
 
-$$A_{\text{resultant}} = 2A\left|\cos\frac{\Delta\phi}{2}\right|$$
+$$A_{\mathrm{resultant}} = 2A\left|\cos\frac{\Delta\phi}{2}\right|$$
 
 - **Constructive interference**:
-  $\Delta\phi = 0, 2\pi, 4\pi, \ldots \implies A_{\text{resultant}} = 2A$
+  $\Delta\phi = 0, 2\pi, 4\pi, \ldots \implies A_{\mathrm{resultant}} = 2A$
 - **Destructive interference**:
-  $\Delta\phi = \pi, 3\pi, 5\pi, \ldots \implies A_{\text{resultant}} = 0$
+  $\Delta\phi = \pi, 3\pi, 5\pi, \ldots \implies A_{\mathrm{resultant}} = 0$
 
 ## 2. Path Difference and Phase Difference
 
@@ -233,8 +233,8 @@ net energy transfer.
 
 Consider two identical waves travelling in opposite directions:
 
-$$y_1 = A\sin(kx - \omega t) \quad \text{(travelling in } +x\text{)}$$
-$$y_2 = A\sin(kx + \omega t) \quad \text{(travelling in } -x\text{)}$$
+$$y_1 = A\sin(kx - \omega t) \quad \mathrm{(travelling in } +x\mathrm{)}$$
+$$y_2 = A\sin(kx + \omega t) \quad \mathrm{(travelling in } -x\mathrm{)}$$
 
 By superposition:
 
@@ -308,7 +308,7 @@ A closed end is a displacement **node** (pressure antinode). An open end is a di
 - **Fundamental**: $L = \lambda_1/4$, so $f_1 = v/(4L)$.
 - **3rd harmonic** (first overtone): $L = 3\lambda_3/4$, so $f_3 = 3v/(4L) = 3f_1$.
 
-$$\boxed{f_n = \frac{nv}{4L}, \quad n = 1, 3, 5, \ldots \text{ (odd harmonics only)}}$$
+$$\boxed{f_n = \frac{nv}{4L}, \quad n = 1, 3, 5, \ldots \mathrm{ (odd harmonics only)}}$$
 
 Only odd harmonics are present because an even number of quarter-wavelengths would require a node at
 the open end, which contradicts the boundary condition.
@@ -317,7 +317,7 @@ the open end, which contradicts the boundary condition.
 
 Both ends are displacement antinodes.
 
-$$\boxed{f_n = \frac{nv}{2L}, \quad n = 1, 2, 3, \ldots \text{ (all harmonics)}}$$
+$$\boxed{f_n = \frac{nv}{2L}, \quad n = 1, 2, 3, \ldots \mathrm{ (all harmonics)}}$$
 
 ## Problem Set
 
@@ -394,9 +394,9 @@ The next harmonic is the 3rd: $f_3 = 3f_1 = 300$ Hz. (No 2nd harmonic exists for
 Two waves meet at a point. Wave 1 has amplitude 3.0 mm and wave 2 has amplitude 4.0 mm. If they are
 in phase, what is the resultant amplitude? If they are in antiphase?
 
-**Answer.** In phase: $A_{\text{resultant}} = 3.0 + 4.0 = 7.0$ mm.
+**Answer.** In phase: $A_{\mathrm{resultant}} = 3.0 + 4.0 = 7.0$ mm.
 
-In antiphase: $A_{\text{resultant}} = |3.0 - 4.0| = 1.0$ mm.
+In antiphase: $A_{\mathrm{resultant}} = |3.0 - 4.0| = 1.0$ mm.
 
 <b>If you get this wrong, revise:</b>
 [Constructive and Destructive Interference](#constructive-and-destructive-interference)

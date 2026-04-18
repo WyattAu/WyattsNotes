@@ -76,7 +76,7 @@ Coroutines enable natural expression of data pipelines where each stage can susp
 independently:
 
 $$
-\text{source} \xrightarrow{\text{co\_await}} \text{transform}_1 \xrightarrow{\text{co\_await}} \text{transform}_2 \xrightarrow{\text{co\_await}} \text{sink}
+\mathrm{source} \xrightarrow{\mathrm{co\_await}} \mathrm{transform}_1 \xrightarrow{\mathrm{co\_await}} \mathrm{transform}_2 \xrightarrow{\mathrm{co\_await}} \mathrm{sink}
 $$
 
 Each stage is a coroutine that reads from the previous stage and writes to the next, with suspension

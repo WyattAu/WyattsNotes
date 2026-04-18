@@ -193,7 +193,7 @@ standard defines single precision (32-bit) and double precision (64-bit).
 **Value calculation:**
 
 $$
-\text{Value} = (-1)^S \times 2^{E - 127} \times (1 + M)
+\mathrm{Value} = (-1)^S \times 2^{E - 127} \times (1 + M)
 $$
 
 Where `S` is the sign bit, `E` is the exponent (stored as unsigned with bias 127), and `M` is the
@@ -225,7 +225,7 @@ Step 3: Assemble.
 
 $S\ E\ M = 1\ 10000001\ 10101000000000000000000$
 
-In hex: $1\ 1000\ 0001\ 1010\ 1000\ 0000\ 0000\ 0000\ 0000 = \text{C0D40000}_{16}$
+In hex: $1\ 1000\ 0001\ 1010\ 1000\ 0000\ 0000\ 0000\ 0000 = \mathrm{C0D40000}_{16}$
 
 </details>
 
@@ -769,11 +769,11 @@ text and better on data with repeated patterns.
 ### Compression Ratio Calculations
 
 $$
-\text{Compression Ratio} = \frac{\text{Original Size}}{\text{Compressed Size}}
+\mathrm{Compression Ratio} = \frac{\mathrm{Original Size}}{\mathrm{Compressed Size}}
 $$
 
 $$
-\text{Space Savings (\%)} = \left(1 - \frac{\text{Compressed Size}}{\text{Original Size}}\right) \times 100\%
+\mathrm{Space Savings (\%)} = \left(1 - \frac{\mathrm{Compressed Size}}{\mathrm{Original Size}}\right) \times 100\%
 $$
 
 <details>
@@ -937,7 +937,7 @@ One's complement: $01\ 01110\ 1101_2 = 365$
 
 Verify: $(650 + 365) \mod 256 = 1015 \mod 256 = 243$. This should be all 1s (255) for valid.
 
-Actually, the standard checksum method: checksum = $(2^{16} - 1 - \text{sum}) \mod (2^{16})$ for
+Actually, the standard checksum method: checksum = $(2^{16} - 1 - \mathrm{sum}) \mod (2^{16})$ for
 16-bit, or equivalently the one's complement of the sum. The receiver adds all bytes including
 checksum; if no errors, the result is all 1s (e.g., 255 for 8-bit, 65535 for 16-bit).
 
@@ -1294,49 +1294,49 @@ Answer:
 (a)
 
 $$
-\text{Size (bits)} = 3840 \times 2160 \times 24 = 198180480 \text{ bits}
+\mathrm{Size (bits)} = 3840 \times 2160 \times 24 = 198180480 \mathrm{ bits}
 $$
 
 $$
-\text{Size (bytes)} = \frac{198180480}{8} = 24772560 \text{ bytes}
+\mathrm{Size (bytes)} = \frac{198180480}{8} = 24772560 \mathrm{ bytes}
 $$
 
 $$
-\text{Size (MB)} = \frac{24772560}{1024 \times 1024} \approx 23.63 \text{ MB}
+\mathrm{Size (MB)} = \frac{24772560}{1024 \times 1024} \approx 23.63 \mathrm{ MB}
 $$
 
 (b)
 
 $$
-\text{Duration} = 5 \times 60 = 300 \text{ s}
+\mathrm{Duration} = 5 \times 60 = 300 \mathrm{ s}
 $$
 
 $$
-\text{Size (bits)} = 48000 \times 24 \times 300 \times 2 = 691200000 \text{ bits}
+\mathrm{Size (bits)} = 48000 \times 24 \times 300 \times 2 = 691200000 \mathrm{ bits}
 $$
 
 $$
-\text{Size (bytes)} = \frac{691200000}{8} = 86400000 \text{ bytes}
+\mathrm{Size (bytes)} = \frac{691200000}{8} = 86400000 \mathrm{ bytes}
 $$
 
 $$
-\text{Size (MB)} = \frac{86400000}{1024 \times 1024} \approx 82.40 \text{ MB}
+\mathrm{Size (MB)} = \frac{86400000}{1024 \times 1024} \approx 82.40 \mathrm{ MB}
 $$
 
 (c)
 
 $$
-\text{Size (bits)} = 320000 \times 300 = 96000000 \text{ bits}
+\mathrm{Size (bits)} = 320000 \times 300 = 96000000 \mathrm{ bits}
 $$
 
 $$
-\text{Size (MB)} = \frac{96000000}{8 \times 1024 \times 1024} \approx 11.44 \text{ MB}
+\mathrm{Size (MB)} = \frac{96000000}{8 \times 1024 \times 1024} \approx 11.44 \mathrm{ MB}
 $$
 
 (d)
 
 $$
-\text{Compression ratio} = \frac{82.40}{11.44} \approx 7.2 : 1
+\mathrm{Compression ratio} = \frac{82.40}{11.44} \approx 7.2 : 1
 $$
 
 </details>

@@ -170,13 +170,13 @@ Tests are based on code paths, branches, and conditions.
 
 **Definition:** The percentage of executable statements that have been executed by the test suite.
 
-$$\text{Statement coverage} = \frac{\text{Statements executed}}{\text{Total statements}} \times 100\%$$
+$$\mathrm{Statement coverage} = \frac{\mathrm{Statements executed}}{\mathrm{Total statements}} \times 100\%$$
 
 ### Branch (Decision) Coverage
 
 **Definition:** The percentage of decision outcomes (true/false branches) that have been taken.
 
-$$\text{Branch coverage} = \frac{\text{Branches taken}}{\text{Total branches}} \times 100\%$$
+$$\mathrm{Branch coverage} = \frac{\mathrm{Branches taken}}{\mathrm{Total branches}} \times 100\%$$
 
 **Theorem.** 100% statement coverage does not imply 100% branch coverage.
 

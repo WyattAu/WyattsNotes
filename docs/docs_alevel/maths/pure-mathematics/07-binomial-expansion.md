@@ -244,7 +244,7 @@ The general term is $T_{r+1} = \binom{12}{r}(2x)^r = \binom{12}{r} 2^r x^r$.
 
 Set $r = 5$:
 
-$$\text{Coefficient} = \binom{12}{5} 2^5 = 792 \cdot 32 = 25344$$
+$$\mathrm{Coefficient} = \binom{12}{5} 2^5 = 792 \cdot 32 = 25344$$
 
 </details>
 
@@ -407,7 +407,7 @@ Summing over all valid $k$ gives the left-hand side. $\blacksquare$
 When expanding $(a + bx)^n$ with non-integer $n$, we write it as
 $a^n\left(1 + \frac{bx}{a}\right)^n$. The expansion is valid when:
 
-$$\left|\frac{bx}{a}\right| \lt 1 \quad \text{i.e.,} \quad |x| \lt \left|\frac{a}{b}\right|$$
+$$\left|\frac{bx}{a}\right| \lt 1 \quad \mathrm{i.e.,} \quad |x| \lt \left|\frac{a}{b}\right|$$
 
 :::warning
 Always state the range of validity when working with non-integer powers. Marks are
@@ -419,7 +419,7 @@ routinely deducted for omitting this.
 When a question asks for the expansion of a product of two binomial expressions, such as
 $(1 + px)^a(1 + qx)^b$, each factor has its own validity range:
 
-$$|px| \lt 1 \quad \text{and} \quad |qx| \lt 1$$
+$$|px| \lt 1 \quad \mathrm{and} \quad |qx| \lt 1$$
 
 The combined expansion is valid only where **both** individual expansions are valid. This means the
 overall validity is the **intersection** of the two ranges, which is always the **more restrictive**
@@ -590,9 +590,9 @@ Coefficient of $x^3$: $\frac{n(n-1)(n-2)}{6}a^3$
 
 Ratio $1 : 4 : 12$:
 
-$$\frac{n(n-1)}{2}a^2 = 4na \implies \frac{(n-1)a}{2} = 4 \implies (n-1)a = 8 \quad \text{--- (1)}$$
+$$\frac{n(n-1)}{2}a^2 = 4na \implies \frac{(n-1)a}{2} = 4 \implies (n-1)a = 8 \quad \mathrm{--- (1)}$$
 
-$$\frac{n(n-1)(n-2)}{6}a^3 = 12na \implies \frac{(n-1)(n-2)a^2}{6} = 12 \quad \text{--- (2)}$$
+$$\frac{n(n-1)(n-2)}{6}a^3 = 12na \implies \frac{(n-1)(n-2)a^2}{6} = 12 \quad \mathrm{--- (2)}$$
 
 From (1): $a = \frac{8}{n-1}$. Substitute into (2):
 

@@ -190,7 +190,7 @@ $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$. This is a cancellation of t
 **Proof of the chain rule.** Let $u = g(x)$ and define:
 
 $$
-k(h) = \frac{f(u + h) - f(u)}{h} - f'(u) \quad \text{when } h \ne 0, \quad k(0) = 0
+k(h) = \frac{f(u + h) - f(u)}{h} - f'(u) \quad \mathrm{when } h \ne 0, \quad k(0) = 0
 $$
 
 Then $\displaystyle\lim_{h \to 0} k(h) = 0$ and $f(u+h) - f(u) = [f'(u) + k(h)] \cdot h$ for all
@@ -490,7 +490,7 @@ $$
 When $x = 6$: $y = \sqrt{100 - 36} = 8$. Given $\frac{dx}{dt} = 1$:
 
 $$
-2(6)(1) + 2(8)\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{12}{16} = -\frac{3}{4} \text{ ft/s}
+2(6)(1) + 2(8)\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{12}{16} = -\frac{3}{4} \mathrm{ ft/s}
 $$
 
 The negative sign confirms the top is sliding down.
@@ -499,7 +499,7 @@ The negative sign confirms the top is sliding down.
 
 :::info[Example]
 
-A spherical balloon is inflated at a rate of $10 \text{ cm}^3/\text{s}$. How fast is the radius
+A spherical balloon is inflated at a rate of $10 \mathrm{ cm}^3/\mathrm{s}$. How fast is the radius
 increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 $$
@@ -507,7 +507,7 @@ $$
 $$
 
 $$
-10 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{10}{100\pi} = \frac{1}{10\pi} \text{ cm/s}
+10 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{10}{100\pi} = \frac{1}{10\pi} \mathrm{ cm/s}
 $$
 
 :::
@@ -533,7 +533,7 @@ $$
 $$
 
 $$
-\frac{d\theta}{dt} = -\frac{2}{12} = -\frac{1}{6} \text{ rad/s}
+\frac{d\theta}{dt} = -\frac{2}{12} = -\frac{1}{6} \mathrm{ rad/s}
 $$
 
 The angle is decreasing at $\frac{1}{6}$ rad/s.
@@ -696,10 +696,10 @@ $$
 $$
 
 $$
-\frac{d^2A}{dx^2} = -2 \lt 0 \quad \text{(confirms maximum)}
+\frac{d^2A}{dx^2} = -2 \lt 0 \quad \mathrm{(confirms maximum)}
 $$
 
-So $x = 50$, $y = 50$, and the maximum area is $2500 \text{ ft}^2$.
+So $x = 50$, $y = 50$, and the maximum area is $2500 \mathrm{ ft}^2$.
 
 :::
 
@@ -708,7 +708,7 @@ So $x = 50$, $y = 50$, and the maximum area is $2500 \text{ ft}^2$.
 Find the minimum value of $f(x) = x + \frac{4}{x}$ for $x \gt 0$.
 
 $$
-f'(x) = 1 - \frac{4}{x^2} = 0 \implies x^2 = 4 \implies x = 2 \text{ (since } x \gt 0)
+f'(x) = 1 - \frac{4}{x^2} = 0 \implies x^2 = 4 \implies x = 2 \mathrm{ (since } x \gt 0)
 $$
 
 $$
@@ -716,7 +716,7 @@ f(2) = 2 + 2 = 4
 $$
 
 $$
-f''(2) = \frac{8}{8} = 1 \gt 0 \quad \text{(confirms minimum)}
+f''(2) = \frac{8}{8} = 1 \gt 0 \quad \mathrm{(confirms minimum)}
 $$
 
 The minimum value is $4$ at $x = 2$.
@@ -725,7 +725,7 @@ The minimum value is $4$ at $x = 2$.
 
 :::info[Example]
 
-A rectangular box with a square base has volume $500 \text{ cm}^3$. The material for the base costs
+A rectangular box with a square base has volume $500 \mathrm{ cm}^3$. The material for the base costs
 twice as much as the material for the sides. Minimise the cost of the material.
 
 Let the base have side length $x$ cm and height $h$ cm. Let the cost per unit area of the sides be
@@ -741,11 +741,11 @@ $$
 $$
 
 $$
-4x^3 = 2000 \implies x^3 = 500 \implies x = \sqrt[3]{500} \approx 7.937 \text{ cm}
+4x^3 = 2000 \implies x^3 = 500 \implies x = \sqrt[3]{500} \approx 7.937 \mathrm{ cm}
 $$
 
 $$
-h = \frac{500}{500^{2/3}} = 500^{1/3} = \sqrt[3]{500} \approx 7.937 \text{ cm}
+h = \frac{500}{500^{2/3}} = 500^{1/3} = \sqrt[3]{500} \approx 7.937 \mathrm{ cm}
 $$
 
 The cost is minimised when the box is a cube. $\frac{d^2C}{dx^2} = 4c + \frac{4000c}{x^3} \gt 0$,
@@ -769,7 +769,7 @@ points **or** at endpoints.
 Find the absolute maximum and minimum of $f(x) = x^3 - 3x^2 + 4$ on $[-1, 4]$.
 
 $$
-f'(x) = 3x^2 - 6x = 3x(x - 2) = 0 \implies x = 0 \text{ or } x = 2
+f'(x) = 3x^2 - 6x = 3x(x - 2) = 0 \implies x = 0 \mathrm{ or } x = 2
 $$
 
 $f(-1) = -1 - 3 + 4 = 0$, $f(0) = 4$, $f(2) = 8 - 12 + 4 = 0$, $f(4) = 64 - 48 + 4 = 20$.
@@ -803,7 +803,7 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 
 1. Find $\displaystyle\frac{dy}{dx}$ for $e^{xy} + y = x^2$ using implicit differentiation.
 
-2. A spherical balloon is inflated at a rate of $10 \text{ cm}^3/\text{s}$. How fast is the radius
+2. A spherical balloon is inflated at a rate of $10 \mathrm{ cm}^3/\mathrm{s}$. How fast is the radius
    increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 3. Find all critical points of $f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1$ and classify them using the
@@ -825,7 +825,7 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 
 10. Find $\displaystyle\frac{d^2y}{dx^2}$ for $x^3 + y^3 = 6xy$ at the point $(3, 3)$.
 
-11. A rectangular box with a square base has volume $500 \text{ cm}^3$. The material for the base
+11. A rectangular box with a square base has volume $500 \mathrm{ cm}^3$. The material for the base
     costs twice as much as the material for the sides. Minimise the cost of the material.
 
 12. Prove that the derivative of $f(x) = x^3$ is $f'(x) = 3x^2$ from first principles.
@@ -835,7 +835,7 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 14. Find the inflection points of $f(x) = x^4 - 6x^2 + 4$.
 
 15. A conical tank (vertex pointing down) has radius 5 ft at the top and height 10 ft. Water is
-    pumped in at 3 $\text{ft}^3/\text{min}$. How fast is the water level rising when the water is 6
+    pumped in at 3 $\mathrm{ft}^3/\mathrm{min}$. How fast is the water level rising when the water is 6
     ft deep?
 
 16. Find the dimensions of the rectangle of maximum area that can be inscribed in a semicircle of

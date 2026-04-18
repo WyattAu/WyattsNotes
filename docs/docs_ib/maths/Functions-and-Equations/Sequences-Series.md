@@ -69,11 +69,11 @@ The 5th term of an arithmetic sequence is $17$ and the 12th term is $38$. Find t
 the common difference.
 
 $$
-u_5 = u_1 + 4d = 17 \quad \text{(1)}
+u_5 = u_1 + 4d = 17 \quad \mathrm{(1)}
 $$
 
 $$
-u_{12} = u_1 + 11d = 38 \quad \text{(2)}
+u_{12} = u_1 + 11d = 38 \quad \mathrm{(2)}
 $$
 
 (2) $-$ (1): $7d = 21 \implies d = 3$.
@@ -516,11 +516,11 @@ The sum of the first three terms of a geometric sequence is $52$. The sum of the
 $4732$. Find the common ratio and the first term.
 
 $$
-S_3 = \frac{u_1(r^3 - 1)}{r - 1} = 52 \quad \text{(1)}
+S_3 = \frac{u_1(r^3 - 1)}{r - 1} = 52 \quad \mathrm{(1)}
 $$
 
 $$
-S_6 = \frac{u_1(r^6 - 1)}{r - 1} = 4732 \quad \text{(2)}
+S_6 = \frac{u_1(r^6 - 1)}{r - 1} = 4732 \quad \mathrm{(2)}
 $$
 
 Dividing (2) by (1):
@@ -829,11 +829,11 @@ A geometric series has first term $a$ and common ratio $r$. The sum of the first
 and the sum to infinity is $32$. Find $a$ and $r$.
 
 $$
-a + ar + ar^2 = 28 \quad \text{(1)}
+a + ar + ar^2 = 28 \quad \mathrm{(1)}
 $$
 
 $$
-\frac{a}{1-r} = 32 \implies a = 32(1-r) \quad \text{(2)}
+\frac{a}{1-r} = 32 \implies a = 32(1-r) \quad \mathrm{(2)}
 $$
 
 Substituting (2) into (1):

@@ -42,7 +42,7 @@ maximises an objective function subject to constraints.
 We define the **opportunity cost** of a decision as the value of the next-best alternative forgone
 as a result of that decision.
 
-$$\text{Opportunity cost of } A = \max_{B \neq A} \{U(B)\}$$
+$$\mathrm{Opportunity cost of } A = \max_{B \neq A} \{U(B)\}$$
 
 where $U(B)$ is the utility (or value) of alternative $B$. This is not the sum of all alternatives —
 only the single best one that was rejected.
@@ -104,7 +104,7 @@ with income $M$:
 $$
 \begin{aligned}
 \max_{x,y} \quad & U(x, y) \\
-\text{s.t.} \quad & P_x \cdot x + P_y \cdot y \leq M \\
+\mathrm{s.t.} \quad & P_x \cdot x + P_y \cdot y \leq M \\
 & x \geq 0, \quad y \geq 0
 \end{aligned}
 $$
@@ -133,7 +133,7 @@ Consider an economy that produces two goods, $X$ and $Y$, using a fixed quantity
 define the **production possibility frontier (PPF)** as the set of all maximum combinations of $X$
 and $Y$ that the economy can produce when all resources are fully and efficiently employed.
 
-$$\text{PPF} = \{(x, y) : x = f_X(L_X), \; y = f_Y(L_Y), \; L_X + L_Y = \bar{L}, \; f'_X, f'_Y > 0\}$$
+$$\mathrm{PPF} = \{(x, y) : x = f_X(L_X), \; y = f_Y(L_Y), \; L_X + L_Y = \bar{L}, \; f'_X, f'_Y > 0\}$$
 
 where $L_X$ and $L_Y$ are the quantities of labour allocated to goods $X$ and $Y$ respectively, and
 $\bar{L}$ is total labour available.
@@ -190,16 +190,16 @@ We define two types of efficiency:
 **Productive efficiency**: achieved when the economy is producing on the PPF (not inside it). All
 resources are fully employed and used in their most productive applications.
 
-$$\text{Productive efficiency} \iff (x, y) \in \text{PPF}$$
+$$\mathrm{Productive efficiency} \iff (x, y) \in \mathrm{PPF}$$
 
 **Allocative efficiency**: achieved when the economy is producing the combination of goods that
 _society values most_. This requires that the marginal rate of transformation equals the marginal
 rate of substitution:
 
-$$\text{MRT}_{XY} = \text{MRS}_{XY}$$
+$$\mathrm{MRT}_{XY} = \mathrm{MRS}_{XY}$$
 
-where $\text{MRT}_{XY} = \left|\frac{dy}{dx}\right|$ is the slope of the PPF and
-$\text{MRS}_{XY} = \frac{MU_X}{MU_Y}$ is the ratio of marginal utilities.
+where $\mathrm{MRT}_{XY} = \left|\frac{dy}{dx}\right|$ is the slope of the PPF and
+$\mathrm{MRS}_{XY} = \frac{MU_X}{MU_Y}$ is the ratio of marginal utilities.
 
 A point inside the PPF represents inefficiency — resources are unemployed or misallocated. A point
 outside the PPF is unattainable given current resources and technology.
@@ -327,12 +327,12 @@ essay questions frequently ask students to assess the relative merits of differe
 A **positive statement** is a claim about what _is_ — it can be tested against evidence and is
 either true or false.
 
-$$\text{Example: "A 10\% increase in the minimum wage reduces employment by 2\%."}$$
+$$\mathrm{Example: "A 10\% increase in the minimum wage reduces employment by 2\%."}$$
 
 A **normative statement** is a claim about what _ought to be_ — it involves value judgements and
 cannot be tested.
 
-$$\text{Example: "The government should increase the minimum wage."}$$
+$$\mathrm{Example: "The government should increase the minimum wage."}$$
 
 ### 3.2 The Distinction Matters
 

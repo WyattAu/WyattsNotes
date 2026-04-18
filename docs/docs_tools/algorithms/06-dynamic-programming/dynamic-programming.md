@@ -99,7 +99,7 @@ def house_robber(nums):
 Given coins of different denominations and a target amount, find the minimum number of coins needed
 to make that amount. Return -1 if it is not possible.
 
-$$dp[i] = \min(dp[i], dp[i - coin] + 1) \quad \text{for each coin}$$
+$$dp[i] = \min(dp[i], dp[i - coin] + 1) \quad \mathrm{for each coin}$$
 
 ```python
 def coin_change(coins, amount):
@@ -151,8 +151,8 @@ Find the length of the longest subsequence common to two strings.
 
 $$
 dp[i][j] = \begin{cases}
-dp[i-1][j-1] + 1 & \text{if } s_1[i-1] = s_2[j-1] \\
-\max(dp[i-1][j], dp[i][j-1]) & \text{otherwise}
+dp[i-1][j-1] + 1 & \mathrm{if } s_1[i-1] = s_2[j-1] \\
+\max(dp[i-1][j], dp[i][j-1]) & \mathrm{otherwise}
 \end{cases}
 $$
 
@@ -202,10 +202,10 @@ Minimum number of operations (insert, delete, replace) to transform one string i
 
 $$
 dp[i][j] = \begin{cases}
-j & \text{if } i = 0 \\
-i & \text{if } j = 0 \\
-dp[i-1][j-1] & \text{if } s_1[i-1] = s_2[j-1] \\
-1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \text{otherwise}
+j & \mathrm{if } i = 0 \\
+i & \mathrm{if } j = 0 \\
+dp[i-1][j-1] & \mathrm{if } s_1[i-1] = s_2[j-1] \\
+1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm{otherwise}
 \end{cases}
 $$
 
@@ -249,7 +249,7 @@ def edit_distance(s1, s2):
 Given items with weights and values, and a knapsack with capacity $W$, maximise the total value
 without exceeding the capacity.
 
-$$dp[i][w] = \max(dp[i-1][w], dp[i-1][w - weight_i] + value_i) \quad \text{if } weight_i \le w$$
+$$dp[i][w] = \max(dp[i-1][w], dp[i-1][w - weight_i] + value_i) \quad \mathrm{if } weight_i \le w$$
 
 ```python
 def knapsack_01(weights, values, capacity):

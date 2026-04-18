@@ -25,19 +25,19 @@ Since the circumference of a circle is $2\pi r$, a full revolution is $2\pi$ rad
 ### Conversion Between Degrees and Radians
 
 $$
-\pi \text{ rad} = 180°
+\pi \mathrm{ rad} = 180°
 $$
 
 To convert from degrees to radians:
 
 $$
-\theta_{\text{rad}} = \theta_{\text{deg}} \times \frac{\pi}{180}
+\theta_{\mathrm{rad}} = \theta_{\mathrm{deg}} \times \frac{\pi}{180}
 $$
 
 To convert from radians to degrees:
 
 $$
-\theta_{\text{deg}} = \theta_{\text{rad}} \times \frac{180}{\pi}
+\theta_{\mathrm{deg}} = \theta_{\mathrm{rad}} \times \frac{180}{\pi}
 $$
 
 ### Arc Length
@@ -66,13 +66,13 @@ length and the area of the sector.
 Arc length:
 
 $$
-s = r\theta = 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78 \text{ cm}
+s = r\theta = 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78 \mathrm{ cm}
 $$
 
 Sector area:
 
 $$
-A = \frac{1}{2}r^2\theta = \frac{1}{2}(25)\left(\frac{3\pi}{4}\right) = \frac{75\pi}{8} \approx 29.45 \text{ cm}^2
+A = \frac{1}{2}r^2\theta = \frac{1}{2}(25)\left(\frac{3\pi}{4}\right) = \frac{75\pi}{8} \approx 29.45 \mathrm{ cm}^2
 $$
 
 ## Trigonometric Functions
@@ -80,9 +80,9 @@ $$
 ### Right-Angle Definitions
 
 $$
-\sin \theta = \frac{\text{opposite}}{\text{hypotenuse}}, \quad
-\cos \theta = \frac{\text{adjacent}}{\text{hypotenuse}}, \quad
-\tan \theta = \frac{\text{opposite}}{\text{adjacent}} = \frac{\sin \theta}{\cos \theta}
+\sin \theta = \frac{\mathrm{opposite}}{\mathrm{hypotenuse}}, \quad
+\cos \theta = \frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}, \quad
+\tan \theta = \frac{\mathrm{opposite}}{\mathrm{adjacent}} = \frac{\sin \theta}{\cos \theta}
 $$
 
 ### Reciprocal Trigonometric Functions
@@ -309,9 +309,9 @@ For $x$ in the appropriate domain:
 
 $$
 \begin{aligned}
-\sin(\arcsin x) &= x, \quad \text{for } -1 \le x \le 1\\
-\cos(\arccos x) &= x, \quad \text{for } -1 \le x \le 1\\
-\tan(\arctan x) &= x, \quad \text{for all real } x
+\sin(\arcsin x) &= x, \quad \mathrm{for } -1 \le x \le 1\\
+\cos(\arccos x) &= x, \quad \mathrm{for } -1 \le x \le 1\\
+\tan(\arctan x) &= x, \quad \mathrm{for all real } x
 \end{aligned}
 $$
 
@@ -319,9 +319,9 @@ The reverse compositions are only true on restricted domains:
 
 $$
 \begin{aligned}
-\arcsin(\sin x) &= x, \quad \text{for } -\frac{\pi}{2} \le x \le \frac{\pi}{2}\\
-\arccos(\cos x) &= x, \quad \text{for } 0 \le x \le \pi\\
-\arctan(\tan x) &= x, \quad \text{for } -\frac{\pi}{2} \lt x \lt \frac{\pi}{2}
+\arcsin(\sin x) &= x, \quad \mathrm{for } -\frac{\pi}{2} \le x \le \frac{\pi}{2}\\
+\arccos(\cos x) &= x, \quad \mathrm{for } 0 \le x \le \pi\\
+\arctan(\tan x) &= x, \quad \mathrm{for } -\frac{\pi}{2} \lt x \lt \frac{\pi}{2}
 \end{aligned}
 $$
 
@@ -377,7 +377,7 @@ Used when you know:
 ### Area of a Triangle
 
 $$
-\text{Area} = \frac{1}{2}ab\sin C
+\mathrm{Area} = \frac{1}{2}ab\sin C
 $$
 
 ### Worked Example: Sine Rule
@@ -387,7 +387,7 @@ $$
 **Solution:**
 
 $$
-b = \frac{8\sin 30°}{\sin 45°} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \text{ cm}
+b = \frac{8\sin 30°}{\sin 45°} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
 $$
 
 ### Worked Example: Cosine Rule
@@ -423,7 +423,7 @@ Given sides $a$ and $b$ and angle $A$ (where $a$ is opposite $A$):
 When $\sin B = k$ where $0 \lt k \lt 1$, there are two possible values for $B$:
 
 $$
-B_1 = \arcsin(k) \quad \text{and} \quad B_2 = 180° - \arcsin(k)
+B_1 = \arcsin(k) \quad \mathrm{and} \quad B_2 = 180° - \arcsin(k)
 $$
 
 Both may be valid since $B_1 + B_2 = 180^\circ$ (so if $A + B_1 \lt 180^\circ$, check whether
@@ -478,7 +478,7 @@ $$
 Since $b \lt a$, there is only one solution: $B \approx 37.2^\circ$, so $C = 77.8^\circ$.
 
 $$
-\text{Area} = \frac{1}{2}(12)(8)\sin 77.8° \approx 47.0 \text{ square units}
+\mathrm{Area} = \frac{1}{2}(12)(8)\sin 77.8° \approx 47.0 \mathrm{ square units}
 $$
 
 ### Worked Example: Bearing Problem
@@ -494,7 +494,7 @@ $180° - 60° = 120^\circ$.
 Using the cosine rule:
 
 $$
-AC = \sqrt{15^2 + 20^2 - 2(15)(20)\cos 120°} = \sqrt{225 + 400 + 300} = \sqrt{925} = 5\sqrt{37} \approx 30.4 \text{ km}
+AC = \sqrt{15^2 + 20^2 - 2(15)(20)\cos 120°} = \sqrt{225 + 400 + 300} = \sqrt{925} = 5\sqrt{37} \approx 30.4 \mathrm{ km}
 $$
 
 To find the bearing, find angle $C$:
@@ -511,8 +511,8 @@ The bearing from $C$ to $A$ is $360° - 110° - 25.3° \approx 225^\circ$.
 
 $$
 \begin{aligned}
-\sin\theta &= k \implies \theta = \arcsin(k) + 2n\pi \text{ or } \theta = \pi - \arcsin(k) + 2n\pi\\
-\cos\theta &= k \implies \theta = \arccos(k) + 2n\pi \text{ or } \theta = -\arccos(k) + 2n\pi\\
+\sin\theta &= k \implies \theta = \arcsin(k) + 2n\pi \mathrm{ or } \theta = \pi - \arcsin(k) + 2n\pi\\
+\cos\theta &= k \implies \theta = \arccos(k) + 2n\pi \mathrm{ or } \theta = -\arccos(k) + 2n\pi\\
 \tan\theta &= k \implies \theta = \arctan(k) + n\pi
 \end{aligned}
 $$
@@ -552,7 +552,7 @@ $$
 $$
 
 $$
-u = -\frac{1}{2} \text{ or } u = 1
+u = -\frac{1}{2} \mathrm{ or } u = 1
 $$
 
 - $\cos x = -\frac{1}{2} \implies x = \frac{2\pi}{3}, \frac{4\pi}{3}$
@@ -627,7 +627,7 @@ R = \sqrt{3^2 + 4^2} = 5
 $$
 
 $$
-\tan\alpha = \frac{4}{3} \implies \alpha = \arctan\frac{4}{3} \approx 0.927 \text{ rad}
+\tan\alpha = \frac{4}{3} \implies \alpha = \arctan\frac{4}{3} \approx 0.927 \mathrm{ rad}
 $$
 
 So $3\sin x + 4\cos x = 5\sin(x + 0.927)$.
@@ -699,7 +699,7 @@ standard approach is:
 Multiply numerator and denominator by $1 - \cos x$:
 
 $$
-\frac{\sin x(1 - \cos x)}{(1 + \cos x)(1 - \cos x)} = \frac{\sin x(1 - \cos x)}{1 - \cos^2 x} = \frac{\sin x(1 - \cos x)}{\sin^2 x} = \frac{1 - \cos x}{\sin x} = \text{RHS}
+\frac{\sin x(1 - \cos x)}{(1 + \cos x)(1 - \cos x)} = \frac{\sin x(1 - \cos x)}{1 - \cos^2 x} = \frac{\sin x(1 - \cos x)}{\sin^2 x} = \frac{1 - \cos x}{\sin x} = \mathrm{RHS}
 $$
 
 ### Worked Example: Proof Using Identities
@@ -711,7 +711,7 @@ $$
 Using $\cos 2x = 1 - 2\sin^2 x$ and $\sin 2x = 2\sin x\cos x$:
 
 $$
-\frac{1 - (1 - 2\sin^2 x)}{2\sin x\cos x} = \frac{2\sin^2 x}{2\sin x\cos x} = \frac{\sin x}{\cos x} = \tan x = \text{RHS}
+\frac{1 - (1 - 2\sin^2 x)}{2\sin x\cos x} = \frac{2\sin^2 x}{2\sin x\cos x} = \frac{\sin x}{\cos x} = \tan x = \mathrm{RHS}
 $$
 
 ### Worked Example: Proof with Compound Angles
@@ -723,7 +723,7 @@ $$
 Expand $\sin(A + B)$ and split the fraction:
 
 $$
-\frac{\sin A \cos B + \cos A \sin B}{\cos A \cos B} = \frac{\sin A}{\cos A} + \frac{\sin B}{\cos B} = \tan A + \tan B = \text{RHS}
+\frac{\sin A \cos B + \cos A \sin B}{\cos A \cos B} = \frac{\sin A}{\cos A} + \frac{\sin B}{\cos B} = \tan A + \tan B = \mathrm{RHS}
 $$
 
 ## Common Pitfalls
@@ -774,7 +774,7 @@ exact arc length of the sector.
 Using the sector area formula $A = \frac{1}{2}r^2\theta$:
 
 $$
-48 = \frac{1}{2}(64)\theta \implies 48 = 32\theta \implies \theta = \frac{3}{2} \text{ rad}
+48 = \frac{1}{2}(64)\theta \implies 48 = 32\theta \implies \theta = \frac{3}{2} \mathrm{ rad}
 $$
 
 Arc length $s = r\theta = 8 \times \frac{3}{2} = 12$ cm.
@@ -865,7 +865,7 @@ $$
 Starting from the LHS:
 
 $$
-\tan^2 x - \sin^2 x = \frac{\sin^2 x}{\cos^2 x} - \sin^2 x = \sin^2 x\left(\frac{1}{\cos^2 x} - 1\right) = \sin^2 x \cdot \frac{1 - \cos^2 x}{\cos^2 x} = \sin^2 x \cdot \frac{\sin^2 x}{\cos^2 x} = \tan^2 x \sin^2 x = \text{RHS}
+\tan^2 x - \sin^2 x = \frac{\sin^2 x}{\cos^2 x} - \sin^2 x = \sin^2 x\left(\frac{1}{\cos^2 x} - 1\right) = \sin^2 x \cdot \frac{1 - \cos^2 x}{\cos^2 x} = \sin^2 x \cdot \frac{\sin^2 x}{\cos^2 x} = \tan^2 x \sin^2 x = \mathrm{RHS}
 $$
 
 </details>

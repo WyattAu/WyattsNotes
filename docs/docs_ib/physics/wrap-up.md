@@ -28,10 +28,10 @@ slug: wrap
   - $v_x = u_x = 69.28$ m/s (since $a_x = 0$)
   - $v_y = u_y + a_y t = 40.0 - 9.8(9.25) = -50.65$ m/s
   - $v_z = u_z + a_z t = 0 + 2.00(9.25) = 18.5$ m/s
-- **Final Speed:** Use Pythagoras in 3D: $v_{\text{final}} = \sqrt{v_x^2 + v_y^2 + v_z^2}$.
-  - $v_{\text{final}} = \sqrt{69.28^2 + (-50.65)^2 + 18.5^2} = 87.8$ m/s.
+- **Final Speed:** Use Pythagoras in 3D: $v_{\mathrm{final}} = \sqrt{v_x^2 + v_y^2 + v_z^2}$.
+  - $v_{\mathrm{final}} = \sqrt{69.28^2 + (-50.65)^2 + 18.5^2} = 87.8$ m/s.
 - **Total Horizontal Distance:** Use Pythagoras on the horizontal displacements $s_x = u_x t = 641$ m and $s_z = \frac{1}{2} a_z t^2 = 85.6$ m.
-  - $d_{\text{horiz}} = \sqrt{s_x^2 + s_z^2} = \sqrt{641^2 + 85.6^2} = 647$ m.
+  - $d_{\mathrm{horiz}} = \sqrt{s_x^2 + s_z^2} = \sqrt{641^2 + 85.6^2} = 647$ m.
 
 <b>If you get this wrong, you should focus on:</b> The principle of vector independence (treating x, y, and z motion separately), using the correct signs for vector quantities (like vertical displacement and velocity), and combining vector components using Pythagoras.
 </details>
@@ -43,17 +43,17 @@ slug: wrap
 
 - **Strategy:** A three-part problem: (1) Work-energy to find speed before collision, (2) Conservation of momentum for the collision, (3) Work-energy to find the final stopping distance.
 - **Part 1: Speed before collision.**
-  - Use the work-energy principle: $\Delta E_k = W_{\text{gravity}} + W_{\text{friction}}$.
-  - $W_{\text{gravity}} = mgh = (2.0)(9.8)(3.0 \sin 25^\circ) = 24.85$ J.
-  - $W_{\text{friction}} = -f_k d = -(\mu_d N)d = -(\mu_d mg \cos 25^\circ)d = -(0.20)(2.0)(9.8)\cos 25^\circ(3.0) = -10.66$ J.
+  - Use the work-energy principle: $\Delta E_k = W_{\mathrm{gravity}} + W_{\mathrm{friction}}$.
+  - $W_{\mathrm{gravity}} = mgh = (2.0)(9.8)(3.0 \sin 25^\circ) = 24.85$ J.
+  - $W_{\mathrm{friction}} = -f_k d = -(\mu_d N)d = -(\mu_d mg \cos 25^\circ)d = -(0.20)(2.0)(9.8)\cos 25^\circ(3.0) = -10.66$ J.
   - $\frac{1}{2}(2.0)v_1^2 = 24.85 - 10.66 = 14.19$ J $\implies v_1 = 3.77$ m/s.
 - **Part 2: Speed after collision.**
   - Conservation of momentum: $m_1 v_1 = (m_1 + m_2) v_f$.
   - $(2.0)(3.77) = (3.0) v_f \implies v_f = 2.51$ m/s.
 - **Part 3: Final stopping distance (x).**
   - The initial kinetic energy of the combined mass is $E_k = \frac{1}{2}(3.0)(2.51^2) = 9.45$ J.
-  - This energy is dissipated by the net work done on the block, which is $(W_{\text{gravity}} + W_{\text{friction}})$.
-  - $W_{\text{net}} = (M g \sin 25^\circ)x - (\mu_d M g \cos 25^\circ)x = \Delta E_k = -9.45$ J.
+  - This energy is dissipated by the net work done on the block, which is $(W_{\mathrm{gravity}} + W_{\mathrm{friction}})$.
+  - $W_{\mathrm{net}} = (M g \sin 25^\circ)x - (\mu_d M g \cos 25^\circ)x = \Delta E_k = -9.45$ J.
   - $( (3)(9.8)\sin 25^\circ - 0.2(3)(9.8)\cos 25^\circ ) x = 9.45$.
   - $(12.43 - 5.33)x = 9.45 \implies 7.1x = 9.45 \implies x = 1.33$ m.
 
@@ -69,7 +69,7 @@ slug: wrap
 - **For the block (mass m):** The net force is the weight minus tension:
   - $mg - T = ma$ (Eq. 1)
 - **For the disk (mass M):** The net torque is the torque from tension minus the frictional torque:
-  - $\tau_{\text{net}} = I\alpha \implies TR - \tau_f = (\frac{1}{2}MR^2)\alpha$ (Eq. 2)
+  - $\tau_{\mathrm{net}} = I\alpha \implies TR - \tau_f = (\frac{1}{2}MR^2)\alpha$ (Eq. 2)
 - **Solve the system:**
   - From Eq. 1, substitute $a = \alpha R$ to get $T = mg - m\alpha R$.
   - Substitute this expression for T into Eq. 2:
@@ -133,10 +133,10 @@ slug: wrap
 
 - **Strategy:** In thermal equilibrium, the power absorbed by the planet equals the power radiated by it.
 - **Power Absorbed:** The planet absorbs energy over its cross-sectional area (a disk of area $\pi R^2$), accounting for the albedo.
-  - $P_{\text{in}} = (1 - \text{albedo}) \cdot S \cdot (\pi R^2) = (1 - 0.25) \cdot 1500 \cdot \pi R^2 = 1125 \pi R^2$.
+  - $P_{\mathrm{in}} = (1 - \mathrm{albedo}) \cdot S \cdot (\pi R^2) = (1 - 0.25) \cdot 1500 \cdot \pi R^2 = 1125 \pi R^2$.
 - **Power Radiated:** The planet radiates energy from its entire surface area (a sphere of area $4\pi R^2$), according to the Stefan-Boltzmann law.
-  - $P_{\text{out}} = e \sigma A T^4 = 0.80 \cdot \sigma \cdot (4\pi R^2) \cdot T^4$.
-  - **Equilibrium:** Set $P_{\text{in}} = P_{\text{out}}$.
+  - $P_{\mathrm{out}} = e \sigma A T^4 = 0.80 \cdot \sigma \cdot (4\pi R^2) \cdot T^4$.
+  - **Equilibrium:** Set $P_{\mathrm{in}} = P_{\mathrm{out}}$.
     - $1125 \pi R^2 = 0.80 \cdot \sigma \cdot 4\pi R^2 \cdot T^4$.
     - The $\pi R^2$ term cancels.
     - $1125 = 3.2 \sigma T^4$.
@@ -147,27 +147,27 @@ slug: wrap
 <b>If you get this wrong, you should focus on:</b> Distinguishing between the area of absorption ($\pi R^2$) and the area of radiation ($4\pi R^2$), and correctly applying both albedo and emissivity in the energy balance equation.
 </details>
 
-3. **Question (HL Only):** 0.50 moles of a monatomic ideal gas undergo a cycle: A->B (isobaric expansion from V to 2V at $2\text{x}10^5$ Pa), B->C (isochoric cooling to original temperature T_A), C->A (isothermal compression). Find (i) the net work done and (ii) the cycle's efficiency.
+3. **Question (HL Only):** 0.50 moles of a monatomic ideal gas undergo a cycle: A->B (isobaric expansion from V to 2V at $2\mathrm{x}10^5$ Pa), B->C (isochoric cooling to original temperature T_A), C->A (isothermal compression). Find (i) the net work done and (ii) the cycle's efficiency.
 
 <details>
 <summary>Answer</summary>
 
-- **Strategy:** Calculate work and heat transfer for each leg of the cycle. Net work is the sum of work done. Efficiency is $W_{\text{net}} / Q_{\text{in}}$.
+- **Strategy:** Calculate work and heat transfer for each leg of the cycle. Net work is the sum of work done. Efficiency is $W_{\mathrm{net}} / Q_{\mathrm{in}}$.
 - **Part (i): Net Work Done**
   - $W_{AB} = P\Delta V = P_A(2V_A - V_A) = P_A V_A$.
   - $W_{BC} = 0$ (isochoric).
   - $W_{CA} = nRT_A \ln(V_A/V_C) = P_A V_A \ln(1/2) = -P_A V_A \ln(2)$.
-  - $W_{\text{net}} = W_{AB} + W_{BC} + W_{CA} = P_A V_A (1 - \ln(2))$.
+  - $W_{\mathrm{net}} = W_{AB} + W_{BC} + W_{CA} = P_A V_A (1 - \ln(2))$.
   - To find a value, let's find $P_AV_A$. Let $T_A = 300$ K. $P_AV_A = nRT_A = 0.5(8.31)(300) = 1246.5$ J.
-  - $W_{\text{net}} = 1246.5 (1 - \ln(2)) \approx 382.8$ J.
+  - $W_{\mathrm{net}} = 1246.5 (1 - \ln(2)) \approx 382.8$ J.
 - **Part (ii): Efficiency**
   - Heat is added only during the isobaric expansion A->B, where both volume and temperature increase.
-  - $Q_{\text{in}} = Q_{AB} = \Delta U_{AB} + W_{AB}$.
+  - $Q_{\mathrm{in}} = Q_{AB} = \Delta U_{AB} + W_{AB}$.
   - $\Delta U_{AB} = \frac{3}{2}nR(T_B - T_A) = \frac{3}{2}nR(2T_A - T_A) = \frac{3}{2}nRT_A = \frac{3}{2}P_A V_A$.
-  - $Q_{\text{in}} = \frac{3}{2}P_A V_A + P_A V_A = \frac{5}{2}P_A V_A = \frac{5}{2}(1246.5) = 3116.25$ J.
-  - $\eta = \frac{W_{\text{net}}}{Q_{\text{in}}} = \frac{P_A V_A (1 - \ln 2)}{\frac{5}{2}P_A V_A} = \frac{2}{5}(1 - \ln 2) \approx 0.123$ or 12.3%.
+  - $Q_{\mathrm{in}} = \frac{3}{2}P_A V_A + P_A V_A = \frac{5}{2}P_A V_A = \frac{5}{2}(1246.5) = 3116.25$ J.
+  - $\eta = \frac{W_{\mathrm{net}}}{Q_{\mathrm{in}}} = \frac{P_A V_A (1 - \ln 2)}{\frac{5}{2}P_A V_A} = \frac{2}{5}(1 - \ln 2) \approx 0.123$ or 12.3%.
 
-<b>If you get this wrong, you should focus on:</b> Applying the correct formulas for work and internal energy for each type of thermodynamic process (isobaric, isochoric, isothermal), and correctly identifying which stages of the cycle involve heat input ($Q_{\text{in}}$).
+<b>If you get this wrong, you should focus on:</b> Applying the correct formulas for work and internal energy for each type of thermodynamic process (isobaric, isochoric, isothermal), and correctly identifying which stages of the cycle involve heat input ($Q_{\mathrm{in}}$).
 </details>
 
 </details>
@@ -187,12 +187,12 @@ slug: wrap
   - $v(t) = -x_0 \omega_1 \sin(\omega_1 t) \implies v(0.20) = -2.0 \sin(4) = 1.514$ m/s.
 - **Collision:** Momentum is conserved horizontally. $m_1 v_1 = (m_1+m_2)v_f$.
   - $(0.50)(1.514) = (0.80)v_f \implies v_f = 0.946$ m/s.
-- **New SHM:** New mass $M=0.80$ kg. At the instant after collision, the system has energy $E_{\text{total}} = \frac{1}{2}M v_f^2 + \frac{1}{2}k x^2$.
-  - $E_{\text{total}} = \frac{1}{2}(0.80)(0.946)^2 + \frac{1}{2}(200)(-0.0654)^2 = 0.358 + 0.428 = 0.786$ J.
-- **New Amplitude (A'):** The total energy is also $E_{\text{total}} = \frac{1}{2}k(A')^2$.
-  - $A' = \sqrt{2 E_{\text{total}} / k} = \sqrt{2 \cdot 0.786 / 200} = 0.0887$ m.
-- **New Max Speed ($v'_{\text{max}}$):** The total energy is also $E_{\text{total}} = \frac{1}{2}M(v'_{\text{max}})^2$.
-  - $v'_{\text{max}} = \sqrt{2 E_{\text{total}} / M} = \sqrt{2 \cdot 0.786 / 0.80} = 1.40$ m/s.
+- **New SHM:** New mass $M=0.80$ kg. At the instant after collision, the system has energy $E_{\mathrm{total}} = \frac{1}{2}M v_f^2 + \frac{1}{2}k x^2$.
+  - $E_{\mathrm{total}} = \frac{1}{2}(0.80)(0.946)^2 + \frac{1}{2}(200)(-0.0654)^2 = 0.358 + 0.428 = 0.786$ J.
+- **New Amplitude (A'):** The total energy is also $E_{\mathrm{total}} = \frac{1}{2}k(A')^2$.
+  - $A' = \sqrt{2 E_{\mathrm{total}} / k} = \sqrt{2 \cdot 0.786 / 200} = 0.0887$ m.
+- **New Max Speed ($v'_{\mathrm{max}}$):** The total energy is also $E_{\mathrm{total}} = \frac{1}{2}M(v'_{\mathrm{max}})^2$.
+  - $v'_{\mathrm{max}} = \sqrt{2 E_{\mathrm{total}} / M} = \sqrt{2 \cdot 0.786 / 0.80} = 1.40$ m/s.
 
 <b>If you get this wrong, you should focus on:</b> Applying conservation laws at the correct instant. Momentum is conserved _during_ the collision; energy is conserved _before_ and _after_ but not during an inelastic collision. Correctly calculating the total energy of an oscillator that has both KE and PE.
 </details>
@@ -204,14 +204,14 @@ slug: wrap
 
 - **Strategy:** Use the grating equation to find the wavelength measured by the grating ($\lambda'$). Compare this to the proper wavelength ($\lambda$) using the Doppler shift formula.
 - **Part 1: Find observed wavelength ($\lambda'$).**
-  - Grating spacing $d = \frac{1}{500 \text{ lines/mm}} = 2.0 \times 10^{-6}$ m.
+  - Grating spacing $d = \frac{1}{500 \mathrm{ lines/mm}} = 2.0 \times 10^{-6}$ m.
   - From $d \sin\theta = n\lambda'$, we get:
   - $\lambda' = \frac{d \sin\theta}{n} = \frac{(2.0 \times 10^{-6}) \sin(35.0^\circ)}{2} = 5.736 \times 10^{-7}$ m or 573.6 nm.
 - **Part 2: Use Doppler shift for light.**
   - Since the observed wavelength (573.6 nm) is shorter than the proper wavelength (600 nm), this is a blueshift, confirming the source is approaching.
   - Use the approximation $\frac{\Delta\lambda}{\lambda} \approx \frac{v}{c}$. The negative sign is handled by convention; here we use magnitudes.
   - $\Delta \lambda = 600 - 573.6 = 26.4$ nm.
-  - $v \approx c \frac{\Delta\lambda}{\lambda} = (3.0 \times 10^8) \frac{26.4 \text{ nm}}{600 \text{ nm}} = 1.32 \times 10^7$ m/s.
+  - $v \approx c \frac{\Delta\lambda}{\lambda} = (3.0 \times 10^8) \frac{26.4 \mathrm{ nm}}{600 \mathrm{ nm}} = 1.32 \times 10^7$ m/s.
 
 <b>If you get this wrong, you should focus on:</b> Chaining two separate wave concepts, correctly calculating the grating spacing from lines/mm, and applying the Doppler shift equation with the correct interpretation of blueshift vs. redshift.
 </details>
@@ -228,14 +228,14 @@ slug: wrap
 
 - **Strategy:** The work done by an external force (thrusters) equals the change in the satellite's total mechanical energy. First, derive the formula for total energy in a circular orbit.
 - **Total Energy in Orbit:**
-  - The total energy is $E_{\text{total}} = E_k + E_p$.
+  - The total energy is $E_{\mathrm{total}} = E_k + E_p$.
   - The gravitational force provides the centripetal force: $\frac{GMm}{r^2} = \frac{mv^2}{r}$, which gives the kinetic energy: $E_k = \frac{1}{2}mv^2 = \frac{GMm}{2r}$.
   - The potential energy is $E_p = -\frac{GMm}{r}$.
-  - So, $E_{\text{total}} = \frac{GMm}{2r} - \frac{GMm}{r} = -\frac{GMm}{2r}$.
+  - So, $E_{\mathrm{total}} = \frac{GMm}{2r} - \frac{GMm}{r} = -\frac{GMm}{2r}$.
 - **Calculate Energy Change:**
-  - $E_{\text{initial}} (\text{at } r=2R) = -\frac{GMm}{2(2R)} = -\frac{GMm}{4R}$.
-  - $E_{\text{final}} (\text{at } r=3R) = -\frac{GMm}{2(3R)} = -\frac{GMm}{6R}$.
-- **Work Done:** $W = \Delta E = E_{\text{final}} - E_{\text{initial}}$.
+  - $E_{\mathrm{initial}} (\mathrm{at } r=2R) = -\frac{GMm}{2(2R)} = -\frac{GMm}{4R}$.
+  - $E_{\mathrm{final}} (\mathrm{at } r=3R) = -\frac{GMm}{2(3R)} = -\frac{GMm}{6R}$.
+- **Work Done:** $W = \Delta E = E_{\mathrm{final}} - E_{\mathrm{initial}}$.
   - $W = \left(-\frac{GMm}{6R}\right) - \left(-\frac{GMm}{4R}\right) = GMm \left(\frac{1}{4R} - \frac{1}{6R}\right)$.
   - $W = GMm \left(\frac{3 - 2}{12R}\right) = \frac{GMm}{12R}$.
 
@@ -265,17 +265,17 @@ slug: wrap
 <summary>Answer</summary>
 
 - **Strategy:** Determine the magnetic flux as a function of time. Use Faraday's Law to find the induced EMF. Use Ohm's Law for current. Use RMS values to find the average power.
-- **Part 1: Find Peak EMF ($\varepsilon_{\text{max}}$).**
+- **Part 1: Find Peak EMF ($\varepsilon_{\mathrm{max}}$).**
   - Magnetic flux linkage is $\Phi = NBA \cos(\theta) = NBA \cos(\omega t)$.
   - Induced EMF is $\varepsilon = - \frac{d\Phi}{dt} = -NBA(-\omega \sin(\omega t)) = NBA\omega \sin(\omega t)$.
   - The peak EMF occurs when $\sin(\omega t) = 1$:
-  - $\varepsilon_{\text{max}} = NBA\omega = (50)(0.40)(0.10 \times 0.050)(30) = 3.0$ V.
-- **Part 2: Find Peak Current ($I_{\text{max}}$).**
-  - $I_{\text{max}} = \frac{\varepsilon_{\text{max}}}{R} = \frac{3.0 \text{ V}}{2.0 \Omega} = 1.5$ A.
-- **Part 3: Find Average Power ($P_{\text{avg}}$).**
-  - Average power is calculated using RMS values: $P_{\text{avg}} = I_{\text{rms}}^2 R$.
-  - $I_{\text{rms}} = \frac{I_{\text{max}}}{\sqrt{2}} = \frac{1.5}{\sqrt{2}}$ A.
-  - $P_{\text{avg}} = \left(\frac{1.5}{\sqrt{2}}\right)^2 (2.0) = \frac{2.25}{2} \times 2.0 = 2.25$ W.
+  - $\varepsilon_{\mathrm{max}} = NBA\omega = (50)(0.40)(0.10 \times 0.050)(30) = 3.0$ V.
+- **Part 2: Find Peak Current ($I_{\mathrm{max}}$).**
+  - $I_{\mathrm{max}} = \frac{\varepsilon_{\mathrm{max}}}{R} = \frac{3.0 \mathrm{ V}}{2.0 \Omega} = 1.5$ A.
+- **Part 3: Find Average Power ($P_{\mathrm{avg}}$).**
+  - Average power is calculated using RMS values: $P_{\mathrm{avg}} = I_{\mathrm{rms}}^2 R$.
+  - $I_{\mathrm{rms}} = \frac{I_{\mathrm{max}}}{\sqrt{2}} = \frac{1.5}{\sqrt{2}}$ A.
+  - $P_{\mathrm{avg}} = \left(\frac{1.5}{\sqrt{2}}\right)^2 (2.0) = \frac{2.25}{2} \times 2.0 = 2.25$ W.
 
 <b>If you get this wrong, you should focus on:</b> The relationship between flux and EMF (Faraday's Law as a derivative), the difference between peak and RMS values for sinusoidal currents/voltages, and the correct formulas for average power.
 </details>
@@ -314,10 +314,10 @@ slug: wrap
   - The activity has dropped to half its initial value ($0.125 = 0.250/2$), so exactly one half-life of C-14 has passed.
   - Age of wood = 5730 years.
 - **Part 2: Half-life of isotope X.**
-  - $T_{1/2, X} = \frac{\ln 2}{\lambda_X} = \frac{\ln 2}{3.85 \times 10^{-12} \text{ s}^{-1}} = 1.80 \times 10^{11}$ s.
+  - $T_{1/2, X} = \frac{\ln 2}{\lambda_X} = \frac{\ln 2}{3.85 \times 10^{-12} \mathrm{ s}^{-1}} = 1.80 \times 10^{11}$ s.
 - **Part 3: Compare the timescales.**
-  - Convert the wood's age to seconds: Age = $5730 \text{ yr} \times (3.156 \times 10^7 \text{ s/yr}) = 1.81 \times 10^{11}$ s.
-  - Number of half-lives of X = $\frac{\text{Age of wood}}{T_{1/2, X}} = \frac{1.81 \times 10^{11} \text{ s}}{1.80 \times 10^{11} \text{ s}} \approx 1.0$.
+  - Convert the wood's age to seconds: Age = $5730 \mathrm{ yr} \times (3.156 \times 10^7 \mathrm{ s/yr}) = 1.81 \times 10^{11}$ s.
+  - Number of half-lives of X = $\frac{\mathrm{Age of wood}}{T_{1/2, X}} = \frac{1.81 \times 10^{11} \mathrm{ s}}{1.80 \times 10^{11} \mathrm{ s}} \approx 1.0$.
   - The age of the wood is equal to approximately 1.0 half-life of isotope X.
 
 <b>If you get this wrong, you should focus on:</b> The definition of half-life in terms of activity, the relationship between half-life and decay constant ($T_{1/2} = \ln(2)/\lambda$), and performing consistent unit conversions.
@@ -330,7 +330,7 @@ slug: wrap
 
 - **Strategy:** Use Wien's Law to find the star's surface temperature from its peak wavelength. Then, use the Stefan-Boltzmann Law with the given luminosity and calculated temperature to find its radius. The Balmer line information is contextual, confirming the star is hot enough for these laws to be applicable.
 - **Part 1: Surface Temperature (T).**
-  - From Wien's Law: $\lambda_{\text{max}} T = 2.9 \times 10^{-3}$ m·K.
+  - From Wien's Law: $\lambda_{\mathrm{max}} T = 2.9 \times 10^{-3}$ m·K.
   - $T = \frac{2.9 \times 10^{-3}}{400 \times 10^{-9}} = 7250$ K.
 - **Part 2: Radius of the Star (R).**
   - From the Stefan-Boltzmann Law: $L = \sigma A T^4 = \sigma (4\pi R^2) T^4$.

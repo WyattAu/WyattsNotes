@@ -195,7 +195,7 @@ Modern desktop platforms support dual-channel memory. The memory controller has 
 the theoretical peak bandwidth:
 
 $$
-Bandwidth = \frac{MT/s \times 8 \text{ bytes} \times channels}{1000}
+Bandwidth = \frac{MT/s \times 8 \mathrm{ bytes} \times channels}{1000}
 $$
 
 | Configuration              | DDR5-6000 Bandwidth |

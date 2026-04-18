@@ -36,11 +36,11 @@ condition is `true`, the discarded statement (if present) is the `else` branch. 
 The critical difference from `if`:
 
 $$
-\text{`if (cond)`} : \text{both branches must be well-formed}
+\mathrm{`if (cond)`} : \mathrm{both branches must be well-formed}
 $$
 
 $$
-\text{`if constexpr (cond)`} : \text{only the taken branch must be well-formed}
+\mathrm{`if constexpr (cond)`} : \mathrm{only the taken branch must be well-formed}
 $$
 
 ```cpp
@@ -348,11 +348,11 @@ compile time. If any argument is not a constant expression, the program is ill-f
 `consteval` specifier guarantees zero runtime overhead:
 
 $$
-\text{`constexpr`} : \text{compile-time if possible, runtime otherwise}
+\mathrm{`constexpr`} : \mathrm{compile-time if possible, runtime otherwise}
 $$
 
 $$
-\text{`consteval`} : \text{compile-time always, error otherwise}
+\mathrm{`consteval`} : \mathrm{compile-time always, error otherwise}
 $$
 
 ```cpp

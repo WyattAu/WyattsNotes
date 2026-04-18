@@ -23,7 +23,7 @@ giving the fundamental conversion:
 
 $$
 \begin{aligned}
-  180^\circ = \pi \text{ rad}
+  180^\circ = \pi \mathrm{ rad}
 \end{aligned}
 $$
 
@@ -31,8 +31,8 @@ To convert between the two units:
 
 $$
 \begin{aligned}
-  \theta_{\text{rad}} &= \theta_{\text{deg}} \times \frac{\pi}{180} \\[4pt]
-  \theta_{\text{deg}} &= \theta_{\text{rad}} \times \frac{180}{\pi}
+  \theta_{\mathrm{rad}} &= \theta_{\mathrm{deg}} \times \frac{\pi}{180} \\[4pt]
+  \theta_{\mathrm{deg}} &= \theta_{\mathrm{rad}} \times \frac{180}{\pi}
 \end{aligned}
 $$
 
@@ -80,7 +80,7 @@ The area of a segment (the region between a chord and its arc) is:
 
 $$
 \begin{aligned}
-  \text{Area of segment} = \frac{1}{2}r^2(\theta - \sin\theta)
+  \mathrm{Area of segment} = \frac{1}{2}r^2(\theta - \sin\theta)
 \end{aligned}
 $$
 
@@ -105,9 +105,9 @@ The three primary trigonometric ratios are:
 
 $$
 \begin{aligned}
-  \sin\theta &= \frac{\text{Opposite}}{\text{Hypotenuse}} = \frac{O}{H} \\[4pt]
-  \cos\theta &= \frac{\text{Adjacent}}{\text{Hypotenuse}} = \frac{A}{H} \\[4pt]
-  \tan\theta &= \frac{\text{Opposite}}{\text{Adjacent}} = \frac{O}{A}
+  \sin\theta &= \frac{\mathrm{Opposite}}{\mathrm{Hypotenuse}} = \frac{O}{H} \\[4pt]
+  \cos\theta &= \frac{\mathrm{Adjacent}}{\mathrm{Hypotenuse}} = \frac{A}{H} \\[4pt]
+  \tan\theta &= \frac{\mathrm{Opposite}}{\mathrm{Adjacent}} = \frac{O}{A}
 \end{aligned}
 $$
 
@@ -297,7 +297,7 @@ in $[-90^\circ, 90^\circ]$:
 
 $$
 \begin{aligned}
-  \theta = 360^\circ n + \alpha \quad \text{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{Z}
+  \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{Z}
 \end{aligned}
 $$
 
@@ -383,12 +383,12 @@ side-angle-side (SAS) configurations.
 
 $$
 \begin{aligned}
-  \text{Area} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
+  \mathrm{Area} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
 \end{aligned}
 $$
 
 This is derived from the standard formula
-$\text{Area} = \frac{1}{2} \times \text{base} \times \text{height}$, where the height is expressed
+$\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height}$, where the height is expressed
 using a trigonometric ratio.
 
 ### Bearings

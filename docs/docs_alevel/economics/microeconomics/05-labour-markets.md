@@ -51,7 +51,7 @@ The labour demand curve shifts when:
 
 ### 1.3 Elasticity of Demand for Labour
 
-$$\text{PED}_L = \frac{\%\Delta L}{\%\Delta w}$$
+$$\mathrm{PED}_L = \frac{\%\Delta L}{\%\Delta w}$$
 
 **Determinants:**
 
@@ -89,7 +89,7 @@ supply $\downarrow$.
 
 **Net effect:**
 
-$$\frac{\partial L}{\partial w} = \underbrace{\text{Substitution effect}}_{> 0} + \underbrace{\text{Income effect}}_{< 0}$$
+$$\frac{\partial L}{\partial w} = \underbrace{\mathrm{Substitution effect}}_{> 0} + \underbrace{\mathrm{Income effect}}_{< 0}$$
 
 - At low wages: substitution effect dominates $\Rightarrow$ labour supply slopes upward
 - At high wages: income effect dominates $\Rightarrow$ labour supply bends backward
@@ -128,7 +128,7 @@ earnings.
 **Economic rent**: any payment above transfer earnings. For labour, economic rent is the area above
 the supply curve and below the wage.
 
-$$\text{Economic rent} = \int_0^{L^*} [w^* - w_s(L)] \, dL$$
+$$\mathrm{Economic rent} = \int_0^{L^*} [w^* - w_s(L)] \, dL$$
 
 ## 4. Monopsony
 
@@ -174,7 +174,7 @@ competitive point). At this lower $L$, the supply curve gives a lower $w$. $\bla
 
 ### 4.4 Deadweight Loss of Monopsony
 
-$$\text{DWL} = \int_{L_m}^{L_c} [MRP_L(L) - S_L(L)] \, dL - (w_m - S_L(L_m)) \cdot (L_c - L_m)$$
+$$\mathrm{DWL} = \int_{L_m}^{L_c} [MRP_L(L) - S_L(L)] \, dL - (w_m - S_L(L_m)) \cdot (L_c - L_m)$$
 
 The DWL triangle lies between the MRP curve and the supply curve from $L_m$ to $L_c$.
 
@@ -340,7 +340,7 @@ impact of declining union membership on wage inequality.
 
 In a competitive labour market, a minimum wage $w_{min} > w^*$ creates unemployment:
 
-$$\text{Unemployment} = S_L(w_{min}) - D_L(w_{min})$$
+$$\mathrm{Unemployment} = S_L(w_{min}) - D_L(w_{min})$$
 
 The minimum wage is a **price floor**. The DWL is the area of the triangle between the demand and
 supply curves from $D_L(w_{min})$ to $S_L(w_{min})$.
@@ -454,7 +454,7 @@ optimal level and the appropriate balance between national and regional rates re
 productivity. We model investment in human capital (education, training) analogously to physical
 capital investment:
 
-$$\text{Net present value of education} = \sum_{t=1}^{T} \frac{E_t - C_t}{(1 + r)^t} - C_0$$
+$$\mathrm{Net present value of education} = \sum_{t=1}^{T} \frac{E_t - C_t}{(1 + r)^t} - C_0$$
 
 where $E_t$ = earnings premium from education in year $t$, $C_t$ = costs of education in year $t$,
 $C_0$ = initial (upfront) cost, $r$ = discount rate, $T$ = working life.
@@ -576,7 +576,7 @@ forces that perpetuate unequal outcomes:
 
 The **Oaxaca-Blinder decomposition** (1973) separates the gender (or racial) pay gap into two parts:
 
-$$\bar{w}_m - \bar{w}_f = \underbrace{\bar{X}_m \hat{\beta}_m - \bar{X}_f \hat{\beta}_m}_{\text{Explained (characteristics)}} + \underbrace{\bar{X}_f \hat{\beta}_m - \bar{X}_f \hat{\beta}_f}_{\text{Unexplained (discrimination)}}$$
+$$\bar{w}_m - \bar{w}_f = \underbrace{\bar{X}_m \hat{\beta}_m - \bar{X}_f \hat{\beta}_m}_{\mathrm{Explained (characteristics)}} + \underbrace{\bar{X}_f \hat{\beta}_m - \bar{X}_f \hat{\beta}_f}_{\mathrm{Unexplained (discrimination)}}$$
 
 The "explained" portion captures differences in observable characteristics (education, experience,
 occupation, hours). The "unexplained" portion is attributed to discrimination (different returns to
@@ -638,7 +638,7 @@ loss.
 
 <details>
 <summary>Hint</summary>
-$MCL = 20 + 4L$. Monopsony: $120 - 4L = 20 + 4L \Rightarrow 8L = 100 \Rightarrow L_m = 12.5$, $w_m = 45$. Competitive: $120 - 4L = 20 + 2L \Rightarrow 6L = 100 \Rightarrow L_c = 16.67$, $w_c = 53.33$. DWL $= \frac{1}{2}(w_c - w_m)(L_c - L_m) + \text{area above supply}$. More precisely: DWL $= \int_{12.5}^{16.67} [(120 - 4L) - (20 + 2L)] dL = \int_{12.5}^{16.67} [100 - 6L] dL = [100L - 3L^2]_{12.5}^{16.67} = 1667 - 833.7 - 1250 + 468.75 = 52.08$.
+$MCL = 20 + 4L$. Monopsony: $120 - 4L = 20 + 4L \Rightarrow 8L = 100 \Rightarrow L_m = 12.5$, $w_m = 45$. Competitive: $120 - 4L = 20 + 2L \Rightarrow 6L = 100 \Rightarrow L_c = 16.67$, $w_c = 53.33$. DWL $= \frac{1}{2}(w_c - w_m)(L_c - L_m) + \mathrm{area above supply}$. More precisely: DWL $= \int_{12.5}^{16.67} [(120 - 4L) - (20 + 2L)] dL = \int_{12.5}^{16.67} [100 - 6L] dL = [100L - 3L^2]_{12.5}^{16.67} = 1667 - 833.7 - 1250 + 468.75 = 52.08$.
 </details>
 
 **Problem 3.** Prove that a minimum wage set at the competitive wage in a monopsony labour market

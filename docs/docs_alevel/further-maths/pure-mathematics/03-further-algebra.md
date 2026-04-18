@@ -355,7 +355,7 @@ covers summation in the context of mathematical induction.
 
 ## 7. Summary of Key Results
 
-$$\boxed{P(c) = R \quad \text{(Remainder Theorem)}}$$
+$$\boxed{P(c) = R \quad \mathrm{(Remainder Theorem)}}$$
 
 $$\boxed{\frac{px + q}{(ax + b)(x^2 + cx + d)} = \frac{A}{ax + b} + \frac{Bx + C}{x^2 + cx + d}}$$
 

@@ -127,7 +127,7 @@ The **natural logarithm** is the logarithm with base $e$, written $\ln x = \log_
 
 **Theorem.** For all $a \gt{} 0$, $a \neq 1$, and all $x \gt{} 0$:
 
-$$(\text{i})\quad a^{\log_a x} = x \qquad (\text{ii})\quad \log_a(a^x) = x$$
+$$(\mathrm{i})\quad a^{\log_a x} = x \qquad (\mathrm{ii})\quad \log_a(a^x) = x$$
 
 **Proof of (i).** Let $y = \log_a x$. By definition, $a^y = x$. Substituting $y = \log_a x$:
 $a^{\log_a x} = x$. $\blacksquare$
@@ -473,7 +473,7 @@ Model: $N = N_0 e^{-kt}$ where $N_0 = 200$.
 
 Half-life: $t_{1/2} = \dfrac{\ln 2}{k} = 8 \implies k = \dfrac{\ln 2}{8}$.
 
-$$N = 200 \cdot e^{-25\ln 2/8} = 200 \cdot 2^{-25/8} \approx 200 \cdot 0.1146 \approx 22.9 \text{ g}$$
+$$N = 200 \cdot e^{-25\ln 2/8} = 200 \cdot 2^{-25/8} \approx 200 \cdot 0.1146 \approx 22.9 \mathrm{ g}$$
 
 **If you get this wrong, revise:** [Exponential Modelling](#8-exponential-modelling) — Section 8.2.
 
@@ -544,7 +544,7 @@ $$-10k = \ln(4/7) \implies k = \frac{\ln(7/4)}{10} \approx 0.0560$$
 
 For $T = 35$: $35 = 20 + 70e^{-kt} \implies 15 = 70e^{-kt} \implies e^{-kt} = 3/14$.
 
-$$-kt = \ln(3/14) \implies t = \frac{\ln(14/3)}{k} = \frac{10\ln(14/3)}{\ln(7/4)} \approx 27.5 \text{ minutes}$$
+$$-kt = \ln(3/14) \implies t = \frac{\ln(14/3)}{k} = \frac{10\ln(14/3)}{\ln(7/4)} \approx 27.5 \mathrm{ minutes}$$
 
 **If you get this wrong, revise:** [Exponential Modelling](#8-exponential-modelling) — Section 8.
 

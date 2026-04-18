@@ -201,7 +201,7 @@ Most modern central banks use **inflation targeting with discretion**:
 - **Flexibility** to respond to shocks (the target is symmetric — deviations above and below are
   equally undesirable)
 
-$$\text{UK (1992–present), NZ (1990–present), Canada (1991–present), Eurozone (2003–present)}$$
+$$\mathrm{UK (1992–present), NZ (1990–present), Canada (1991–present), Eurozone (2003–present)}$$
 
 :::info
 Board-Specific Note AQA (Paper 2) typically asks students to evaluate the effectiveness of
@@ -242,7 +242,7 @@ regime.
 3. **Rational expectations**: agents use all available information, including understanding of the
    policy regime, when forming expectations
 
-$$\text{Policy change} \Rightarrow \text{Expectations change} \Rightarrow \text{Behaviour changes} \Rightarrow \text{Old model parameters invalid}$$
+$$\mathrm{Policy change} \Rightarrow \mathrm{Expectations change} \Rightarrow \mathrm{Behaviour changes} \Rightarrow \mathrm{Old model parameters invalid}$$
 
 ## 4. Post-2008 Policy Debates
 
@@ -251,7 +251,7 @@ $$\text{Policy change} \Rightarrow \text{Expectations change} \Rightarrow \text{
 The **zero lower bound** is the constraint that nominal interest rates cannot fall significantly
 below zero (since holding cash pays zero nominal interest).
 
-$$i \geq 0 \text{ (approximately)}$$
+$$i \geq 0 \mathrm{ (approximately)}$$
 
 When the equilibrium real interest rate is negative (as during a severe recession), the central bank
 cannot cut rates far enough to stimulate the economy. The economy is caught in a **liquidity trap**
@@ -271,13 +271,13 @@ long-term interest rates when the policy rate is at the ZLB.
 
 **Mechanism:**
 
-$$\text{Central bank buys bonds} \Rightarrow \text{bond prices rise} \Rightarrow \text{bond yields fall} \Rightarrow \text{long-term interest rates fall}$$
+$$\mathrm{Central bank buys bonds} \Rightarrow \mathrm{bond prices rise} \Rightarrow \mathrm{bond yields fall} \Rightarrow \mathrm{long-term interest rates fall}$$
 
-$$\Rightarrow \text{cheaper borrowing for firms and households} \Rightarrow \text{investment and consumption increase}$$
+$$\Rightarrow \mathrm{cheaper borrowing for firms and households} \Rightarrow \mathrm{investment and consumption increase}$$
 
-$$\Rightarrow \text{asset prices rise (portfolio rebalancing)} \Rightarrow \text{wealth effect} \Rightarrow \text{consumption increases}$$
+$$\Rightarrow \mathrm{asset prices rise (portfolio rebalancing)} \Rightarrow \mathrm{wealth effect} \Rightarrow \mathrm{consumption increases}$$
 
-$$\Rightarrow \text{exchange rate may depreciate} \Rightarrow \text{exports increase}$$
+$$\Rightarrow \mathrm{exchange rate may depreciate} \Rightarrow \mathrm{exports increase}$$
 
 **UK QE programme**: The Bank of England purchased £875 billion of assets between 2009 and 2021,
 expanding the monetary base from ~£100bn to ~£800bn.
@@ -419,7 +419,7 @@ Mitchell, argues:
    can always meet obligations denominated in that currency by creating money. The constraint is not
    solvency but inflation.
 
-$$\text{Government can always pay} \iff \text{debt denominated in own currency}$$
+$$\mathrm{Government can always pay} \iff \mathrm{debt denominated in own currency}$$
 
 2. **Functional finance** (Lerner, 1943): fiscal policy should be used to achieve full employment
    and price stability, regardless of the deficit. The deficit is not a target — real outcomes are.
@@ -538,7 +538,7 @@ macroeconomic objectives simultaneously.
 
 Instead of targeting inflation, the central bank could target the **growth rate of nominal GDP**:
 
-$$\text{Target: } \Delta(NGDP) = \Delta(Real\ GDP) + \pi = \text{constant (e.g., 5\%)}$$
+$$\mathrm{Target: } \Delta(NGDP) = \Delta(Real\ GDP) + \pi = \mathrm{constant (e.g., 5\%)}$$
 
 ### 7.2 Advantages over Inflation Targeting
 

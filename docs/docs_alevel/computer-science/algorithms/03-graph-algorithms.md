@@ -65,7 +65,7 @@ def a_star(graph, source, goal, h):
 
 | Property     | Definition                                               | Effect                          |
 | ------------ | -------------------------------------------------------- | ------------------------------- |
-| Admissible   | $h(v) \leq \text{true cost}(v, \text{goal})$ for all $v$ | Guarantees optimal path         |
+| Admissible   | $h(v) \leq \mathrm{true cost}(v, \mathrm{goal})$ for all $v$ | Guarantees optimal path         |
 | Consistent   | $h(v) \leq w(v, u) + h(u)$ for all edges $(v, u)$        | No re-expansion of nodes        |
 | Inadmissible | Overestimates true cost                                  | Faster but may not find optimal |
 
@@ -74,7 +74,7 @@ def a_star(graph, source, goal, h):
 **Proof.** When A* selects a goal node for expansion, its $g$-value is optimal. If not, there exists
 a suboptimal path to the goal with cost $g' \gt{} g^*$. Let $v$ be the first node on this suboptimal
 path not yet expanded. By admissibility:
-$f(v) = g(v) + h(v) \leq g^* + h(v) \leq g^* + \text{true}(v, \text{goal}) \leq g^* + (g' - g(v)) = g'$.
+$f(v) = g(v) + h(v) \leq g^* + h(v) \leq g^* + \mathrm{true}(v, \mathrm{goal}) \leq g^* + (g' - g(v)) = g'$.
 Since A\* expands the node with minimum $f$, it would expand $v$ before the goal on the suboptimal
 path — contradiction. $\square$
 
@@ -223,7 +223,7 @@ Find shortest paths between **all pairs** of vertices.
 
 ### Algorithm
 
-$$\text{dist}^{(k)}[i][j] = \min\left(\text{dist}^{(k-1)}[i][j],\ \text{dist}^{(k-1)}[i][k] + \text{dist}^{(k-1)}[k][j]\right)$$
+$$\mathrm{dist}^{(k)}[i][j] = \min\left(\mathrm{dist}^{(k-1)}[i][j],\ \mathrm{dist}^{(k-1)}[i][k] + \mathrm{dist}^{(k-1)}[k][j]\right)$$
 
 ```python
 def floyd_warshall(graph):
@@ -247,7 +247,7 @@ def floyd_warshall(graph):
 **Complexity:** $O(V^3)$ time, $O(V^2)$ space.
 
 **Handles:** Negative weights (but not negative cycles — detect by checking if
-$\text{dist}[i][i] \lt{} 0$).
+$\mathrm{dist}[i][i] \lt{} 0$).
 
 ---
 
@@ -421,9 +421,9 @@ near-optimal solutions.
 <summary>Answer</summary>
 
 After running Floyd-Warshall, check the diagonal of the distance matrix. If
-$\text{dist}[i][i] \lt{} 0$ for any vertex $i$, there exists a negative cycle through $i$.
+$\mathrm{dist}[i][i] \lt{} 0$ for any vertex $i$, there exists a negative cycle through $i$.
 
-**Proof.** $\text{dist}[i][i]$ represents the shortest path from $i$ back to $i$. If this is
+**Proof.** $\mathrm{dist}[i][i]$ represents the shortest path from $i$ back to $i$. If this is
 negative, there exists a cycle with total weight $\lt{} 0$ through vertex $i$. This cycle can be
 traversed repeatedly to make the shortest path arbitrarily negative, meaning shortest paths are
 undefined. $\square$

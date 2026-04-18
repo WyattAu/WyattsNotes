@@ -180,7 +180,7 @@ repeats all five steps 50 times.
 
 The savings are proportional to:
 
-$$\text{savings} \propto \text{template\_complexity} \times (\text{num\_TUs} - 1)$$
+$$\mathrm{savings} \propto \mathrm{template\_complexity} \times (\mathrm{num\_TUs} - 1)$$
 
 For a project with 1000 `.cpp` files that all include a heavy templated utility header, the
 compilation time reduction can reach 20--40% for the affected templates [N4950 §13.9.3].
@@ -203,9 +203,9 @@ deduction and standard library internals:
 For a project with $N = 500$ translation units, the total wall-clock time for this template alone
 is:
 
-- **Without `extern template`:** $500 \times 28\text{ms} = 14{,}000\text{ms} = 14\text{s}$
+- **Without `extern template`:** $500 \times 28\mathrm{ms} = 14{,}000\mathrm{ms} = 14\mathrm{s}$
 - **With `extern template`:**
-  $499 \times 3\text{ms} + 1 \times 28\text{ms} = 1525\text{ms} \approx 1.5\text{s}$
+  $499 \times 3\mathrm{ms} + 1 \times 28\mathrm{ms} = 1525\mathrm{ms} \approx 1.5\mathrm{s}$
 
 The savings compound multiplicatively across multiple template instantiations. In real-world
 codebases with dozens of heavy template headers, `extern template` can reduce total build times by

@@ -27,7 +27,7 @@ DNA is a double-stranded helix composed of nucleotides.
 - Adenine (A) pairs with Thymine (T) -- two hydrogen bonds.
 - Cytosine (C) pairs with Guanine (G) -- three hydrogen bonds.
 
-**Chargaff's rule:** $[\text{A}] = [\text{T}]$ and $[\text{C}] = [\text{G}]$.
+**Chargaff's rule:** $[\mathrm{A}] = [\mathrm{T}]$ and $[\mathrm{C}] = [\mathrm{G}]$.
 
 ### DNA Replication (HL)
 
@@ -228,15 +228,15 @@ p = 1 - 0.4 = 0.6
 $$
 
 $$
-p^2 = 0.36 \quad (\text{homozygous dominant})
+p^2 = 0.36 \quad (\mathrm{homozygous dominant})
 $$
 
 $$
-2pq = 2(0.6)(0.4) = 0.48 \quad (\text{heterozygous})
+2pq = 2(0.6)(0.4) = 0.48 \quad (\mathrm{heterozygous})
 $$
 
 $$
-q^2 = 0.16 \quad (\text{homozygous recessive})
+q^2 = 0.16 \quad (\mathrm{homozygous recessive})
 $$
 
 So 36% are homozygous dominant, 48% are heterozygous, and 16% are homozygous recessive.
@@ -251,7 +251,7 @@ $$
 $$
 
 Compare to the critical value at the appropriate degrees of freedom
-($\text{df} = \text{number of genotypes} - \text{number of alleles}$).
+($\mathrm{df} = \mathrm{number of genotypes} - \mathrm{number of alleles}$).
 
 **Worked Example: Hardy-Weinberg with multiple alleles.**
 

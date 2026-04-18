@@ -45,22 +45,22 @@ complete electron transfer from a metal atom to a non-metal atom.
 The driving force is the attainment of noble gas electron configurations:
 
 $$
-\text{Na}(s) \to \text{Na}^+(g) + e^- \quad \Delta H_{\text{at}}^\circ = +108\text{ kJ/mol}
+\mathrm{Na}(s) \to \mathrm{Na}^+(g) + e^- \quad \Delta H_{\mathrm{at}}^\circ = +108\mathrm{ kJ/mol}
 $$
 
 $$
-\frac{1}{2}\text{Cl}_2(g) \to \text{Cl}(g) \quad \Delta H_{\text{at}}^\circ = +122\text{ kJ/mol}
+\frac{1}{2}\mathrm{Cl}_2(g) \to \mathrm{Cl}(g) \quad \Delta H_{\mathrm{at}}^\circ = +122\mathrm{ kJ/mol}
 $$
 
 $$
-\text{Cl}(g) + e^- \to \text{Cl}^-(g) \quad \Delta H_{\text{EA}} = -349\text{ kJ/mol}
+\mathrm{Cl}(g) + e^- \to \mathrm{Cl}^-(g) \quad \Delta H_{\mathrm{EA}} = -349\mathrm{ kJ/mol}
 $$
 
 $$
-\text{Na}^+(g) + \text{Cl}^-(g) \to \text{NaCl}(s) \quad \Delta H_{\text{LE}} = -787\text{ kJ/mol}
+\mathrm{Na}^+(g) + \mathrm{Cl}^-(g) \to \mathrm{NaCl}(s) \quad \Delta H_{\mathrm{LE}} = -787\mathrm{ kJ/mol}
 $$
 
-**Definition.** **Lattice energy** ($\Delta H_{\text{LE}}$) is the enthalpy change when one mole of
+**Definition.** **Lattice energy** ($\Delta H_{\mathrm{LE}}$) is the enthalpy change when one mole of
 an ionic solid is formed from its gaseous ions. It is always exothermic. A more negative lattice
 energy indicates a stronger ionic bond.
 
@@ -69,13 +69,13 @@ energy indicates a stronger ionic bond.
 The Born-Lande equation captures the key variables:
 
 $$
-\Delta H_{\text{LE}} \propto -\frac{|z^+| \cdot |z^-|}{r_+ + r_-}
+\Delta H_{\mathrm{LE}} \propto -\frac{|z^+| \cdot |z^-|}{r_+ + r_-}
 $$
 
 | Factor            | Effect on Lattice Energy | Example                      |
 | ----------------- | ------------------------ | ---------------------------- |
-| Higher ion charge | More negative (stronger) | $\text{MgO} \gt \text{NaCl}$ |
-| Smaller ion radii | More negative (stronger) | $\text{LiF} \gt \text{NaF}$  |
+| Higher ion charge | More negative (stronger) | $\mathrm{MgO} \gt \mathrm{NaCl}$ |
+| Smaller ion radii | More negative (stronger) | $\mathrm{LiF} \gt \mathrm{NaF}$  |
 
 | Compound | z⁺  | z⁻  | r⁺ + r⁻ (pm) | Lattice Energy (kJ/mol) |
 | -------- | --- | --- | ------------ | ----------------------- |
@@ -96,26 +96,26 @@ measurable quantities.
 For NaCl:
 
 $$
-\Delta H_f^\circ = \Delta H_{\text{at}}^\circ(\text{Na}) + \frac{1}{2}\Delta H_{\text{at}}^\circ(\text{Cl}_2) + \text{IE}_1(\text{Na}) + \text{EA}_1(\text{Cl}) + \Delta H_{\text{LE}}
+\Delta H_f^\circ = \Delta H_{\mathrm{at}}^\circ(\mathrm{Na}) + \frac{1}{2}\Delta H_{\mathrm{at}}^\circ(\mathrm{Cl}_2) + \mathrm{IE}_1(\mathrm{Na}) + \mathrm{EA}_1(\mathrm{Cl}) + \Delta H_{\mathrm{LE}}
 $$
 
 Rearranging for lattice energy:
 
 $$
-\Delta H_{\text{LE}} = \Delta H_f^\circ - \Delta H_{\text{at}}^\circ(\text{Na}) - \frac{1}{2}\Delta H_{\text{at}}^\circ(\text{Cl}_2) - \text{IE}_1(\text{Na}) - \text{EA}_1(\text{Cl})
+\Delta H_{\mathrm{LE}} = \Delta H_f^\circ - \Delta H_{\mathrm{at}}^\circ(\mathrm{Na}) - \frac{1}{2}\Delta H_{\mathrm{at}}^\circ(\mathrm{Cl}_2) - \mathrm{IE}_1(\mathrm{Na}) - \mathrm{EA}_1(\mathrm{Cl})
 $$
 
 Substituting values:
 
 $$
-\Delta H_{\text{LE}} = -411 - 108 - 122 - 496 - (-349) = -788\text{ kJ/mol}
+\Delta H_{\mathrm{LE}} = -411 - 108 - 122 - 496 - (-349) = -788\mathrm{ kJ/mol}
 $$
 
 :::info[IB Exam Tip]
 
 When constructing a Born-Haber cycle diagram, every arrow must be labelled with the correct enthalpy
-term. The most common error is confusing $\Delta H_{\text{at}}^\circ$ (atomisation of the solid
-element) with $\Delta H_{\text{sub}}$ (sublimation) -- for metals they are the same quantity, but
+term. The most common error is confusing $\Delta H_{\mathrm{at}}^\circ$ (atomisation of the solid
+element) with $\Delta H_{\mathrm{sub}}$ (sublimation) -- for metals they are the same quantity, but
 the terminology matters.
 
 :::
@@ -222,7 +222,7 @@ The Pauling scale assigns fluorine (the most electronegative element) a value of
 
 ### Classifying Bond Type by Electronegativity Difference
 
-| $\Delta\text{EN}$ | Bond Classification   |
+| $\Delta\mathrm{EN}$ | Bond Classification   |
 | ----------------- | --------------------- |
 | 0.0               | Non-polar covalent    |
 | 0.1 -- 1.7        | Polar covalent        |
@@ -231,7 +231,7 @@ The Pauling scale assigns fluorine (the most electronegative element) a value of
 :::info[IB Exam Tip]
 
 The threshold of 1.7 is a guideline, not an absolute boundary. For example, H-Cl has
-$\Delta\text{EN} = 0.9$ (polar covalent), but Al-Cl has $\Delta\text{EN} = 1.55$ (still considered
+$\Delta\mathrm{EN} = 0.9$ (polar covalent), but Al-Cl has $\Delta\mathrm{EN} = 1.55$ (still considered
 covalent in AlCl$_3$, a molecular compound). Always consider the compound's actual properties.
 
 :::
@@ -245,7 +245,7 @@ The **molecular dipole moment** ($\mu$) is the vector sum of all individual bond
 can have polar bonds but be non-polar overall if the bond dipoles cancel by symmetry.
 
 $$
-\vec{\mu}_{\text{net}} = \sum \vec{\mu}_i
+\vec{\mu}_{\mathrm{net}} = \sum \vec{\mu}_i
 $$
 
 | Molecule | Bond Dipoles | Molecular Dipole | Reason                               |
@@ -378,7 +378,7 @@ When an ionic compound dissolves in a polar solvent like water, the ions interac
 dipoles. This is the force responsible for the solvation of ions.
 
 $$
-\text{Na}^+ \cdots \delta^-\text{O}(\text{H}_2\text{O}) \qquad \text{Cl}^- \cdots \delta^+\text{H}(\text{H}_2\text{O})
+\mathrm{Na}^+ \cdots \delta^-\mathrm{O}(\mathrm{H}_2\mathrm{O}) \qquad \mathrm{Cl}^- \cdots \delta^+\mathrm{H}(\mathrm{H}_2\mathrm{O})
 $$
 
 ### Trends in Boiling Points
@@ -415,7 +415,7 @@ adopting geometries that maximise the angles between them.
 The repulsion order is:
 
 $$
-\text{lone pair--lone pair} \gt \text{lone pair--bond pair} \gt \text{bond pair--bond pair}
+\mathrm{lone pair--lone pair} \gt \mathrm{lone pair--bond pair} \gt \mathrm{bond pair--bond pair}
 $$
 
 This is because lone pairs are held by only one nucleus and occupy more space, while bonding pairs
@@ -608,7 +608,7 @@ Three equivalent resonance structures, each with one C=O double bond and two C-O
 actual bond order is 1.33 for each C-O bond.
 
 $$
-\text{Bond length measured: } 136\text{ pm (between } 123\text{ pm for C=O and } 143\text{ pm for C-O)}
+\mathrm{Bond length measured: } 136\mathrm{ pm (between } 123\mathrm{ pm for C=O and } 143\mathrm{ pm for C-O)}
 $$
 
 ### Benzene (C$_6$H$_6$)
@@ -641,7 +641,7 @@ by comparing the number of valence electrons in the free atom with the number as
 structure.
 
 $$
-\text{Formal charge} = V - N_B - \frac{N_L}{2}
+\mathrm{Formal charge} = V - N_B - \frac{N_L}{2}
 $$
 
 where:
@@ -653,7 +653,7 @@ where:
 Equivalently:
 
 $$
-\text{Formal charge} = V - (\text{number of bonds}) - (\text{number of lone pair electrons})
+\mathrm{Formal charge} = V - (\mathrm{number of bonds}) - (\mathrm{number of lone pair electrons})
 $$
 
 **Rules for choosing the best Lewis structure:**
@@ -668,10 +668,10 @@ $$
 Sulfur has 6 valence electrons. With four single bonds to oxygen and no lone pairs:
 
 $$
-\text{FC}(\text{S}) = 6 - 4 - 0 = +2
+\mathrm{FC}(\mathrm{S}) = 6 - 4 - 0 = +2
 $$
 
-Each singly-bonded oxygen: $\text{FC} = 6 - 1 - 6 = -1$
+Each singly-bonded oxygen: $\mathrm{FC} = 6 - 1 - 6 = -1$
 
 Total charge: $+2 + 4(-1) = -2$. This is valid but has large formal charges. Adding double bonds
 reduces the formal charges.
@@ -679,12 +679,12 @@ reduces the formal charges.
 With two S=O double bonds:
 
 $$
-\text{FC}(\text{S}) = 6 - 6 - 0 = 0
+\mathrm{FC}(\mathrm{S}) = 6 - 6 - 0 = 0
 $$
 
-The two double-bonded oxygens: $\text{FC} = 6 - 2 - 4 = 0$
+The two double-bonded oxygens: $\mathrm{FC} = 6 - 2 - 4 = 0$
 
-The two single-bonded oxygens: $\text{FC} = 6 - 1 - 6 = -1$
+The two single-bonded oxygens: $\mathrm{FC} = 6 - 1 - 6 = -1$
 
 Total charge: $0 + 0 + 2(-1) = -2$. This is the preferred structure.
 
@@ -735,7 +735,7 @@ O$_2$ and F$_2$, the energy gap is large enough that s-p mixing is negligible.
 #### Bond Order from MO Theory
 
 $$
-\text{Bond order} = \frac{1}{2}(N_{\text{bonding}} - N_{\text{antibonding}})
+\mathrm{Bond order} = \frac{1}{2}(N_{\mathrm{bonding}} - N_{\mathrm{antibonding}})
 $$
 
 | Molecule | Bonding Electrons | Antibonding Electrons | Bond Order | Stability   |
@@ -894,8 +894,8 @@ Calculate the lattice energy of calcium fluoride, CaF$_2$, using the following d
 | Quantity                            | Value (kJ/mol) |
 | ----------------------------------- | -------------- |
 | $\Delta H_f^\circ$(CaF$_2$)         | -1220          |
-| $\Delta H_{\text{at}}^\circ$(Ca)    | +178           |
-| $\Delta H_{\text{at}}^\circ$(F$_2$) | +159           |
+| $\Delta H_{\mathrm{at}}^\circ$(Ca)    | +178           |
+| $\Delta H_{\mathrm{at}}^\circ$(F$_2$) | +159           |
 | IE$_1$(Ca)                          | +590           |
 | IE$_2$(Ca)                          | +1145          |
 | EA$_1$(F)                           | -328           |
@@ -903,20 +903,20 @@ Calculate the lattice energy of calcium fluoride, CaF$_2$, using the following d
 **Markscheme:**
 
 $$
-\Delta H_f^\circ = \Delta H_{\text{at}}^\circ(\text{Ca}) + \Delta H_{\text{at}}^\circ(\text{F}_2) + \text{IE}_1 + \text{IE}_2 + 2 \times \text{EA}_1(\text{F}) + \Delta H_{\text{LE}}
+\Delta H_f^\circ = \Delta H_{\mathrm{at}}^\circ(\mathrm{Ca}) + \Delta H_{\mathrm{at}}^\circ(\mathrm{F}_2) + \mathrm{IE}_1 + \mathrm{IE}_2 + 2 \times \mathrm{EA}_1(\mathrm{F}) + \Delta H_{\mathrm{LE}}
 $$
 
 $$
--1220 = 178 + 159 + 590 + 1145 + 2(-328) + \Delta H_{\text{LE}}
+-1220 = 178 + 159 + 590 + 1145 + 2(-328) + \Delta H_{\mathrm{LE}}
 $$
 
 $$
 
--1220 = 1416 + \Delta H_{\text{LE}}
+-1220 = 1416 + \Delta H_{\mathrm{LE}}
 $$
 
 $$
-\Delta H_{\text{LE}} = -1220 - 1416 = -2636\text{ kJ/mol}
+\Delta H_{\mathrm{LE}} = -1220 - 1416 = -2636\mathrm{ kJ/mol}
 $$
 
 (6 marks for correct cycle setup, correct substitution of all values, and correct arithmetic.)
@@ -1031,7 +1031,7 @@ expected trend. (3 marks)
 ### IMF Strength Ranking
 
 $$
-\text{Ion-dipole} \gt \text{Hydrogen bonding} \gt \text{Dipole-dipole} \gt \text{London dispersion}
+\mathrm{Ion-dipole} \gt \mathrm{Hydrogen bonding} \gt \mathrm{Dipole-dipole} \gt \mathrm{London dispersion}
 $$
 
 ### VSEPR Quick Reference

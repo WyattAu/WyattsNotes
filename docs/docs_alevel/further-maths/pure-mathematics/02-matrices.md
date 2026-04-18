@@ -302,7 +302,7 @@ when $\mathbf{A}$ is applied first.
 :::tip
 To find the matrix of a combined transformation, multiply the matrices in reverse order of
 application. If the question says "reflect then rotate," compute
-$\mathbf{R}_{\text{rot}} \times \mathbf{R}_{\text{ref}}$.
+$\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$.
 :::
 
 <details>
@@ -446,13 +446,13 @@ $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$.
 
 $$\boxed{\det(\mathbf{AB}) = \det(\mathbf{A})\det(\mathbf{B})}$$
 
-$$\boxed{\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})}\operatorname{adj}(\mathbf{A}) \quad \text{when } \det(\mathbf{A}) \neq 0}$$
+$$\boxed{\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})}\operatorname{adj}(\mathbf{A}) \quad \mathrm{when } \det(\mathbf{A}) \neq 0}$$
 
-$$\boxed{\text{Rotation by } \theta: \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}}$$
+$$\boxed{\mathrm{Rotation by } \theta: \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}}$$
 
-$$\boxed{\text{Reflection in } y = (\tan\theta)x: \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}}$$
+$$\boxed{\mathrm{Reflection in } y = (\tan\theta)x: \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}}$$
 
-$$\boxed{\det(\mathbf{A} - \lambda\mathbf{I}) = 0 \implies \text{eigenvalues of } \mathbf{A}}$$
+$$\boxed{\det(\mathbf{A} - \lambda\mathbf{I}) = 0 \implies \mathrm{eigenvalues of } \mathbf{A}}$$
 
 ---
 
@@ -566,7 +566,7 @@ Original area: $\dfrac{1}{2} \times 2 \times 1 = 1$.
 Image area using the determinant formula:
 $\dfrac{1}{2}\left|6 \cdot 2 - 0 \cdot 1\right| = \dfrac{1}{2} \times 12 = 6$.
 
-$\det(\mathbf{T}) = 6$, and $|\det(\mathbf{T})| \times \text{original area} = 6 \times 1 = 6$. ✓
+$\det(\mathbf{T}) = 6$, and $|\det(\mathbf{T})| \times \mathrm{original area} = 6 \times 1 = 6$. ✓
 
 </details>
 

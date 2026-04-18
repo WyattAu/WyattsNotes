@@ -33,13 +33,13 @@ Reading bottom to top: $11001000_2$.
 **Hexadecimal:** Base-16 using digits 0-9 and A-F. Used for memory addresses, colour codes, and MAC
 addresses.
 
-$$\text{A}3_{16} = 10 \times 16 + 3 = 163_{10}$$
+$$\mathrm{A}3_{16} = 10 \times 16 + 3 = 163_{10}$$
 
 **Binary to hex:** Group binary digits in fours from the right.
 
-$$11010110_2 = 1101 \; 0110 = \text{D}6_{16}$$
+$$11010110_2 = 1101 \; 0110 = \mathrm{D}6_{16}$$
 
-**Worked Example.** Convert $\text{FF}_{16}$ to binary and decimal.
+**Worked Example.** Convert $\mathrm{FF}_{16}$ to binary and decimal.
 
 Binary: $11111111_2$. Decimal: $15 \times 16 + 15 = 255$.
 
@@ -203,12 +203,12 @@ C = 67 = 01000011, a = 97 = 01100001, t = 116 = 01110100.
 
 **Example:** A $1920 \times 1080$ image with 24-bit colour depth:
 
-$$1920 \times 1080 \times 24 / 8 = 6220800 \text{ bytes} \approx 5.93 \text{ MB}$$
+$$1920 \times 1080 \times 24 / 8 = 6220800 \mathrm{ bytes} \approx 5.93 \mathrm{ MB}$$
 
 **Worked Example.** An image has 4 megapixels (4,000,000 pixels) and a file size of 6 MB. What is
 the colour depth?
 
-$\text{Colour depth} = \frac{6 \times 1024 \times 1024 \times 8}{4000000} = \frac{50331648}{4000000}
+$\mathrm{Colour depth} = \frac{6 \times 1024 \times 1024 \times 8}{4000000} = \frac{50331648}{4000000}
 \approx 12.58$
 bits.
 
@@ -217,7 +217,7 @@ This suggests approximately 12-bit colour, though in practice this would be roun
 **Worked Example.** A bitmap image is $640 \times 480$ with a file size of 600 KB. What is the colour
 depth?
 
-$\text{Colour depth} = \frac{600 \times 1024 \times 8}{640 \times 480} = \frac{4915200}{307200} = 16$
+$\mathrm{Colour depth} = \frac{600 \times 1024 \times 8}{640 \times 480} = \frac{4915200}{307200} = 16$
 bits per pixel.
 
 **Vector images:** Images described by mathematical equations (coordinates, lines, curves). Scale
@@ -248,7 +248,7 @@ without loss of quality. Smaller file sizes for simple images.
 
 **Example:** A 3-minute stereo (2 channels) audio file at CD quality:
 
-$$44100 \times 180 \times 16 \times 2 = 254016000 \text{ bits} \approx 30.2 \text{ MB}$$
+$$44100 \times 180 \times 16 \times 2 = 254016000 \mathrm{ bits} \approx 30.2 \mathrm{ MB}$$
 
 **Nyquist theorem.** The sample rate must be at least twice the highest frequency to accurately
 reproduce the sound. Human hearing goes up to about 20,000 Hz, so 44,100 Hz is sufficient.
@@ -260,7 +260,7 @@ $22050 \times 300 \times 16 = 105840000$ bits $\approx 12.6$ MB.
 **Worked Example.** A 4-minute stereo audio file at 48,000 Hz has a file size of 41 MB. Calculate the
 bit depth.
 
-$\text{Bit depth} = \frac{41 \times 1024 \times 1024 \times 8}{48000 \times 240 \times 2} = \frac{343932928}{23040000} \approx 14.9$
+$\mathrm{Bit depth} = \frac{41 \times 1024 \times 1024 \times 8}{48000 \times 240 \times 2} = \frac{343932928}{23040000} \approx 14.9$
 bits.
 
 This is approximately 16-bit (the file likely has metadata/header overhead too).
@@ -682,7 +682,7 @@ restores the saved state, and resumes the calculation. The user does not notice 
 
 2. Calculate the file size of a $1280 \times 720$ image with 32-bit colour depth.
 
-3. A 5-minute audio recording uses a sample rate of $22050 \text{ Hz}$ with 16-bit depth and is
+3. A 5-minute audio recording uses a sample rate of $22050 \mathrm{ Hz}$ with 16-bit depth and is
    mono. Calculate the file size in MB.
 
 4. Explain the difference between lossy and lossless compression with examples.
@@ -691,7 +691,7 @@ restores the saved state, and resumes the calculation. The user does not notice 
 
 6. Explain why cache memory improves CPU performance.
 
-7. Convert $\text{FF}_{16}$ to binary and decimal.
+7. Convert $\mathrm{FF}_{16}$ to binary and decimal.
 
 8. Explain three functions of an operating system with examples.
 

@@ -22,7 +22,7 @@ among the most important equations in physics.
 
 ### Gauss's Law for Electricity
 
-$$\oint \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\text{enclosed}}}{\varepsilon_0}$$
+$$\oint \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\mathrm{enclosed}}}{\varepsilon_0}$$
 
 **Meaning.** The total electric flux through any closed surface equals the total charge enclosed,
 divided by $\varepsilon_0$. Electric charges are the sources (and sinks) of electric field lines.
@@ -43,7 +43,7 @@ around a closed loop. This is the mathematical form of Faraday's law of inductio
 
 ### Ampere-Maxwell Law
 
-$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\text{enclosed}} + \mu_0\varepsilon_0\frac{d\Phi_E}{dt}$$
+$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enclosed}} + \mu_0\varepsilon_0\frac{d\Phi_E}{dt}$$
 
 **Definition.** The displacement current $I_d = \varepsilon_0\,d\Phi_E/dt$ is a quantity
 proportional to the rate of change of electric flux through a surface. It is not a flow of charge
@@ -79,10 +79,10 @@ $I = 0$).
 
 In free space, Maxwell's equations become:
 
-$$\oint \mathbf{E} \cdot d\mathbf{A} = 0 \quad \text{(no charges)}$$
-$$\oint \mathbf{B} \cdot d\mathbf{A} = 0 \quad \text{(no monopoles)}$$
-$$\oint \mathbf{E} \cdot d\mathbf{l} = -\frac{d\Phi_B}{dt} \quad \text{(Faraday)}$$
-$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0\varepsilon_0\frac{d\Phi_E}{dt} \quad \text{(Ampere-Maxwell, no currents)}$$
+$$\oint \mathbf{E} \cdot d\mathbf{A} = 0 \quad \mathrm{(no charges)}$$
+$$\oint \mathbf{B} \cdot d\mathbf{A} = 0 \quad \mathrm{(no monopoles)}$$
+$$\oint \mathbf{E} \cdot d\mathbf{l} = -\frac{d\Phi_B}{dt} \quad \mathrm{(Faraday)}$$
+$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0\varepsilon_0\frac{d\Phi_E}{dt} \quad \mathrm{(Ampere-Maxwell, no currents)}$$
 
 Consider a plane wave propagating in the $x$-direction, with $\mathbf{E} = E_y\,\hat{\mathbf{j}}$
 and $\mathbf{B} = B_z\,\hat{\mathbf{k}}$.
@@ -128,9 +128,9 @@ $$\frac{\partial^2 B_z}{\partial x^2} = \mu_0\varepsilon_0\frac{\partial^2 B_z}{
 
 $$c = \frac{1}{\sqrt{\mu_0\varepsilon_0}} = \frac{1}{\sqrt{4\pi \times 10^{-7} \times 8.854 \times 10^{-12}}}$$
 
-$$c = \frac{1}{\sqrt{1.113 \times 10^{-17}}} = \frac{1}{3.337 \times 10^{-9}} = 2.998 \times 10^8 \text{ m s}^{-1}$$
+$$c = \frac{1}{\sqrt{1.113 \times 10^{-17}}} = \frac{1}{3.337 \times 10^{-9}} = 2.998 \times 10^8 \mathrm{ m s}^{-1}$$
 
-$$\boxed{c \approx 3.00 \times 10^8 \text{ m s}^{-1}}$$
+$$\boxed{c \approx 3.00 \times 10^8 \mathrm{ m s}^{-1}}$$
 
 **This was one of the greatest triumphs of theoretical physics.** Maxwell derived the speed of light
 from purely electrical and magnetic constants — proving that light is an electromagnetic wave.
@@ -144,9 +144,9 @@ $\mu_0$ and $\varepsilon_0$.
 
 Starting from the two coupled first-order equations derived above:
 
-$$\frac{\partial E_y}{\partial x} = -\frac{\partial B_z}{\partial t} \quad \text{... (i)}$$
+$$\frac{\partial E_y}{\partial x} = -\frac{\partial B_z}{\partial t} \quad \mathrm{... (i)}$$
 
-$$\frac{\partial B_z}{\partial x} = \mu_0\varepsilon_0\frac{\partial E_y}{\partial t} \quad \text{... (ii)}$$
+$$\frac{\partial B_z}{\partial x} = \mu_0\varepsilon_0\frac{\partial E_y}{\partial t} \quad \mathrm{... (ii)}$$
 
 For a plane wave $E_y = E_0\sin(kx - \omega t)$, equation (i) gives:
 
@@ -184,9 +184,9 @@ from a small device.
 
 Since EM waves carry momentum, they exert pressure on surfaces. For a wave with intensity $I$:
 
-$$P = \frac{I}{c} \quad \text{(total absorption)}$$
+$$P = \frac{I}{c} \quad \mathrm{(total absorption)}$$
 
-$$P = \frac{2I}{c} \quad \text{(perfect reflection)}$$
+$$P = \frac{2I}{c} \quad \mathrm{(perfect reflection)}$$
 
 **Real-world example.** Solar radiation at Earth's orbit has intensity $\approx 1360$ W m$^{-2}$.
 The radiation pressure on a perfectly reflecting solar sail is
@@ -422,7 +422,7 @@ isotopic masses and abundances.
 **Real-world example.** In a mass spectrometer with $B = 0.50$ T and $V = 10,000$ V, singly-charged
 carbon-12 ions ($m = 12 \times 1.66 \times 10^{-27}$ kg) follow a semicircular path of radius:
 
-$$r = \frac{1}{0.50}\sqrt{\frac{2 \times 1.99 \times 10^{-26} \times 10000}{1.60 \times 10^{-19}}} = 2.0 \times 0.0500 = 0.100 \text{ m} = 10.0 \text{ cm}$$
+$$r = \frac{1}{0.50}\sqrt{\frac{2 \times 1.99 \times 10^{-26} \times 10000}{1.60 \times 10^{-19}}} = 2.0 \times 0.0500 = 0.100 \mathrm{ m} = 10.0 \mathrm{ cm}$$
 
 Carbon-13 ions ($m = 13 \times 1.66 \times 10^{-27}$ kg) would be deflected to a radius
 $\sqrt{13/12} \times 10.0 \approx 10.4$ cm — the two isotopes are clearly separated on the detector.
@@ -495,7 +495,7 @@ higher-energy particles.
 ### The Relativistic Limit
 
 As particles approach a significant fraction of $c$, their relativistic mass increases
-($m_{\text{rel}} = \gamma m$). Since $f = qB/(2\pi m)$, the cyclotron frequency decreases. The
+($m_{\mathrm{rel}} = \gamma m$). Since $f = qB/(2\pi m)$, the cyclotron frequency decreases. The
 alternating `EMF` falls out of sync, and the particle is no longer accelerated efficiently. The
 **synchrocyclotron** solves this by varying the frequency of the alternating `EMF` to match the
 decreasing cyclotron frequency.

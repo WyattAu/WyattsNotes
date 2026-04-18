@@ -414,7 +414,7 @@ Population growth drives:
 
 ### Climate Change
 
-Burning fossil fuels releases $\text{CO}_2$, $\text{CH}_4$ (methane), and $\text{N}_2\text{O}$
+Burning fossil fuels releases $\mathrm{CO}_2$, $\mathrm{CH}_4$ (methane), and $\mathrm{N}_2\mathrm{O}$
 (nitrous oxide) -- greenhouse gases that trap infrared radiation, increasing global temperatures.
 
 **Consequences for biodiversity:**
@@ -426,7 +426,7 @@ Burning fossil fuels releases $\text{CO}_2$, $\text{CH}_4$ (methane), and $\text
   at different rates for different species, disrupting food webs. For example, if insects emerge
   earlier due to warming but the birds that feed on them do not adjust their breeding time, the
   birds may miss the peak food supply for their chicks.
-- **Ocean acidification:** Dissolved $\text{CO}_2$ forms carbonic acid, lowering ocean pH. This
+- **Ocean acidification:** Dissolved $\mathrm{CO}_2$ forms carbonic acid, lowering ocean pH. This
   impairs the ability of corals, molluscs, and other calcifying organisms to build their calcium
   carbonate shells and skeletons.
 - **Coral bleaching:** Increased water temperature causes corals to expel their symbiotic algae
@@ -585,14 +585,14 @@ of carbon between the atmosphere, biosphere, oceans, and geosphere.
 
 | Process          | Description                                                                                                             | Carbon Flux                               |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| Photosynthesis   | Plants, algae, and cyanobacteria convert atmospheric $\text{CO}_2$ into organic compounds (glucose) using light energy  | Removes $\text{CO}_2$ from the atmosphere |
-| Respiration      | All living organisms break down organic molecules, releasing $\text{CO}_2$ as a by-product                              | Returns $\text{CO}_2$ to the atmosphere   |
-| Combustion       | Burning fossil fuels (coal, oil, natural gas) and biomass releases stored carbon as $\text{CO}_2$                       | Returns $\text{CO}_2$ to the atmosphere   |
-| Decomposition    | Decomposers break down dead organic matter, releasing $\text{CO}_2$                                                     | Returns $\text{CO}_2$ to the atmosphere   |
-| Ocean absorption | Oceans dissolve $\text{CO}_2$ from the atmosphere (forming carbonic acid, bicarbonate, and carbonate ions)              | Removes $\text{CO}_2$ from the atmosphere |
+| Photosynthesis   | Plants, algae, and cyanobacteria convert atmospheric $\mathrm{CO}_2$ into organic compounds (glucose) using light energy  | Removes $\mathrm{CO}_2$ from the atmosphere |
+| Respiration      | All living organisms break down organic molecules, releasing $\mathrm{CO}_2$ as a by-product                              | Returns $\mathrm{CO}_2$ to the atmosphere   |
+| Combustion       | Burning fossil fuels (coal, oil, natural gas) and biomass releases stored carbon as $\mathrm{CO}_2$                       | Returns $\mathrm{CO}_2$ to the atmosphere   |
+| Decomposition    | Decomposers break down dead organic matter, releasing $\mathrm{CO}_2$                                                     | Returns $\mathrm{CO}_2$ to the atmosphere   |
+| Ocean absorption | Oceans dissolve $\mathrm{CO}_2$ from the atmosphere (forming carbonic acid, bicarbonate, and carbonate ions)              | Removes $\mathrm{CO}_2$ from the atmosphere |
 | Sedimentation    | Dead marine organisms (with calcium carbonate shells) settle to the ocean floor, forming limestone over geological time | Removes carbon from the short-term cycle  |
 | Fossilisation    | Organic matter is buried and compressed over millions of years, forming fossil fuels (coal, oil, natural gas)           | Stores carbon long-term                   |
-| Deforestation    | Removal of trees reduces photosynthesis; burning releases stored carbon                                                 | Returns $\text{CO}_2$ to the atmosphere   |
+| Deforestation    | Removal of trees reduces photosynthesis; burning releases stored carbon                                                 | Returns $\mathrm{CO}_2$ to the atmosphere   |
 
 **Carbon reservoirs:**
 
@@ -607,25 +607,25 @@ of carbon between the atmosphere, biosphere, oceans, and geosphere.
 ### The Nitrogen Cycle
 
 Nitrogen is essential for amino acids, proteins, nucleic acids, and ATP. The atmosphere is
-approximately 78% $\text{N}_2$ gas, but this form is unavailable to most organisms because the
-triple bond in $\text{N}_2$ is very strong and requires significant energy to break.
+approximately 78% $\mathrm{N}_2$ gas, but this form is unavailable to most organisms because the
+triple bond in $\mathrm{N}_2$ is very strong and requires significant energy to break.
 
 **Key processes:**
 
 | Process                        | Description                                                                                         | Organisms Involved                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Nitrogen fixation              | Atmospheric $\text{N}_2$ is converted to ammonia ($\text{NH}_3$)                                    | Nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_; cyanobacteria); lightning |
-| Nitrification                  | Ammonia ($\text{NH}_3$) is converted to nitrite ($\text{NO}_2^-$) then to nitrate ($\text{NO}_3^-$) | _Nitrosomonas_ (ammonia to nitrite); _Nitrobacter_ (nitrite to nitrate)                                          |
-| Absorption                     | Plants absorb nitrate ($\text{NO}_3^-$) (and some ammonium, $\text{NH}_4^+$) through their roots    | Plant root cells                                                                                                 |
+| Nitrogen fixation              | Atmospheric $\mathrm{N}_2$ is converted to ammonia ($\mathrm{NH}_3$)                                    | Nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_; cyanobacteria); lightning |
+| Nitrification                  | Ammonia ($\mathrm{NH}_3$) is converted to nitrite ($\mathrm{NO}_2^-$) then to nitrate ($\mathrm{NO}_3^-$) | _Nitrosomonas_ (ammonia to nitrite); _Nitrobacter_ (nitrite to nitrate)                                          |
+| Absorption                     | Plants absorb nitrate ($\mathrm{NO}_3^-$) (and some ammonium, $\mathrm{NH}_4^+$) through their roots    | Plant root cells                                                                                                 |
 | Assimilation                   | Plants incorporate nitrogen into amino acids, proteins, nucleic acids, and other organic compounds  | Plants                                                                                                           |
 | Feeding                        | Animals obtain nitrogen by eating plants or other animals                                           | Animals                                                                                                          |
-| Decomposition / ammonification | Decomposers break down dead organisms and urea/excreted waste, releasing ammonia ($\text{NH}_3$)    | Decomposer bacteria and fungi                                                                                    |
-| Denitrification                | Nitrate ($\text{NO}_3^-$) is converted back to $\text{N}_2$ gas, returning it to the atmosphere     | Denitrifying bacteria (e.g., _Pseudomonas_, _Paracoccus_)                                                        |
+| Decomposition / ammonification | Decomposers break down dead organisms and urea/excreted waste, releasing ammonia ($\mathrm{NH}_3$)    | Decomposer bacteria and fungi                                                                                    |
+| Denitrification                | Nitrate ($\mathrm{NO}_3^-$) is converted back to $\mathrm{N}_2$ gas, returning it to the atmosphere     | Denitrifying bacteria (e.g., _Pseudomonas_, _Paracoccus_)                                                        |
 
 :::warning
-A common DSE error is writing that plants absorb nitrogen gas ($\text{N}_2$) from the
+A common DSE error is writing that plants absorb nitrogen gas ($\mathrm{N}_2$) from the
 atmosphere. Plants cannot use atmospheric nitrogen directly. They can only absorb nitrogen in the
-form of nitrate ($\text{NO}_3^-$) or ammonium ($\text{NH}_4^+$) ions through their roots.
+form of nitrate ($\mathrm{NO}_3^-$) or ammonium ($\mathrm{NH}_4^+$) ions through their roots.
 Atmospheric nitrogen must first be fixed by bacteria or lightning.
 :::
 
@@ -685,7 +685,7 @@ driven by solar energy and gravity.
    appear in the same question.
 
 6. **Writing that nitrogen gas can be directly absorbed by plants:** Plants can only absorb nitrogen
-   in the form of nitrate ($\text{NO}_3^-$) or ammonium ($\text{NH}_4^+$). Atmospheric $\text{N}_2$
+   in the form of nitrate ($\mathrm{NO}_3^-$) or ammonium ($\mathrm{NH}_4^+$). Atmospheric $\mathrm{N}_2$
    must first be fixed by nitrogen-fixing bacteria or lightning.
 
 7. **Confusing primary and secondary succession:** Primary succession occurs on bare, lifeless
@@ -757,25 +757,25 @@ nitrogen directly.
 Bacteria play essential roles at multiple stages of the nitrogen cycle:
 
 **Nitrogen-fixing bacteria** (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_
-free-living in soil; cyanobacteria in water) convert atmospheric nitrogen gas ($\text{N}_2$) into
-ammonia ($\text{NH}_3$) through the enzyme nitrogenase. This is nitrogen fixation.
+free-living in soil; cyanobacteria in water) convert atmospheric nitrogen gas ($\mathrm{N}_2$) into
+ammonia ($\mathrm{NH}_3$) through the enzyme nitrogenase. This is nitrogen fixation.
 
 **Nitrifying bacteria** convert ammonia to nitrate in two stages: _Nitrosomonas_ converts ammonia to
-nitrite ($\text{NO}_2^-$), and _Nitrobacter_ converts nitrite to nitrate ($\text{NO}_3^-$). This is
+nitrite ($\mathrm{NO}_2^-$), and _Nitrobacter_ converts nitrite to nitrate ($\mathrm{NO}_3^-$). This is
 nitrification. Nitrate is the form of nitrogen most readily absorbed by plants.
 
 **Denitrifying bacteria** (e.g., _Pseudomonas_) convert nitrate in the soil back into nitrogen gas
-($\text{N}_2$), which returns to the atmosphere. This is denitrification. It occurs under anaerobic
+($\mathrm{N}_2$), which returns to the atmosphere. This is denitrification. It occurs under anaerobic
 conditions (waterlogged soil).
 
 **Decomposer bacteria** break down dead organisms and urea, releasing ammonia into the soil through
 ammonification.
 
-Plants cannot use atmospheric nitrogen gas ($\text{N}_2$) directly because the triple bond between
-the two nitrogen atoms in $\text{N}_2$ is extremely strong (approximately 945 kJ/mol) and requires a
+Plants cannot use atmospheric nitrogen gas ($\mathrm{N}_2$) directly because the triple bond between
+the two nitrogen atoms in $\mathrm{N}_2$ is extremely strong (approximately 945 kJ/mol) and requires a
 large input of energy to break. Plants lack the enzyme nitrogenase needed to break this bond. Only
 certain bacteria (and archaea) possess this enzyme. Plants can only absorb nitrogen in soluble ionic
-forms: nitrate ($\text{NO}_3^-$) and ammonium ($\text{NH}_4^+$).
+forms: nitrate ($\mathrm{NO}_3^-$) and ammonium ($\mathrm{NH}_4^+$).
 
 </details>
 

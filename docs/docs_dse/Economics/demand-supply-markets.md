@@ -180,7 +180,7 @@ Price rose from 16 to 22; quantity rose from 68 to 86.
 
 PED measures the responsiveness of quantity demanded to a change in price:
 
-$$\text{PED} = \frac{\%\ \text{change in quantity demanded}}{\%\ \text{change in price}} = \frac{\Delta Q / Q}{\Delta P / P}$$
+$$\mathrm{PED} = \frac{\%\ \mathrm{change in quantity demanded}}{\%\ \mathrm{change in price}} = \frac{\Delta Q / Q}{\Delta P / P}$$
 
 Since demand curves slope downward, PED is usually negative. By convention, we often report the
 **absolute value**.
@@ -207,7 +207,7 @@ Since demand curves slope downward, PED is usually negative. By convention, we o
 
 ### PED and Total Revenue
 
-$$\text{Total Revenue (TR)} = P \times Q$$
+$$\mathrm{Total Revenue (TR)} = P \times Q$$
 
 | PED                    | Price Increase | Price Decrease |
 | ---------------------- | -------------- | -------------- |
@@ -225,11 +225,11 @@ price if demand is inelastic. This is a very common exam question.
 The price of a good increases from USD 50 to USD 60. Quantity demanded falls from 200 to 160 units.
 Calculate PED.
 
-$$\%\ \text{change in } Q = \frac{160 - 200}{200} \times 100\% = -20\%$$
+$$\%\ \mathrm{change in } Q = \frac{160 - 200}{200} \times 100\% = -20\%$$
 
-$$\%\ \text{change in } P = \frac{60 - 50}{50} \times 100\% = 20\%$$
+$$\%\ \mathrm{change in } P = \frac{60 - 50}{50} \times 100\% = 20\%$$
 
-$$\text{PED} = \frac{-20\%}{20\%} = -1$$
+$$\mathrm{PED} = \frac{-20\%}{20\%} = -1$$
 
 PED = 1 (unit elastic by initial-value method). Note: total revenue changes from
 $50 \times 200 = 10{,}000$ to $60 \times 160 = 9{,}600$ (a decrease of 400). The rule "PED = 1
@@ -245,7 +245,7 @@ constant TR.
 
 PES measures the responsiveness of quantity supplied to a change in price:
 
-$$\text{PES} = \frac{\%\ \text{change in quantity supplied}}{\%\ \text{change in price}} = \frac{\Delta Q / Q}{\Delta P / P}$$
+$$\mathrm{PES} = \frac{\%\ \mathrm{change in quantity supplied}}{\%\ \mathrm{change in price}} = \frac{\Delta Q / Q}{\Delta P / P}$$
 
 PES is usually positive because supply curves slope upward.
 
@@ -273,11 +273,11 @@ PES is usually positive because supply curves slope upward.
 
 Price rises from USD 40 to USD 50. Quantity supplied rises from 300 to 450 units. Calculate PES.
 
-$$\%\ \text{change in } Q = \frac{450 - 300}{300} \times 100\% = 50\%$$
+$$\%\ \mathrm{change in } Q = \frac{450 - 300}{300} \times 100\% = 50\%$$
 
-$$\%\ \text{change in } P = \frac{50 - 40}{40} \times 100\% = 25\%$$
+$$\%\ \mathrm{change in } P = \frac{50 - 40}{40} \times 100\% = 25\%$$
 
-$$\text{PES} = \frac{50\%}{25\%} = 2$$
+$$\mathrm{PES} = \frac{50\%}{25\%} = 2$$
 
 Supply is elastic (PES = 2 &gt; 1).
 
@@ -289,7 +289,7 @@ Supply is elastic (PES = 2 &gt; 1).
 
 YED measures the responsiveness of quantity demanded to a change in income:
 
-$$\text{YED} = \frac{\%\ \text{change in quantity demanded}}{\%\ \text{change in income}}$$
+$$\mathrm{YED} = \frac{\%\ \mathrm{change in quantity demanded}}{\%\ \mathrm{change in income}}$$
 
 ### Categories
 
@@ -308,7 +308,7 @@ $$\text{YED} = \frac{\%\ \text{change in quantity demanded}}{\%\ \text{change in
 XED measures the responsiveness of quantity demanded of one good to a change in the price of another
 good:
 
-$$\text{XED} = \frac{\%\ \text{change in quantity demanded of good A}}{\%\ \text{change in price of good B}}$$
+$$\mathrm{XED} = \frac{\%\ \mathrm{change in quantity demanded of good A}}{\%\ \mathrm{change in price of good B}}$$
 
 ### Categories
 
@@ -367,9 +367,9 @@ elasticity:
 - If demand is **inelastic** relative to supply: consumers bear most of the tax burden
 - If supply is **inelastic** relative to demand: producers bear most of the tax burden
 
-$$\text{Consumer burden} = P_{\text{after tax}} - P_{\text{before tax}}$$
+$$\mathrm{Consumer burden} = P_{\mathrm{after tax}} - P_{\mathrm{before tax}}$$
 
-$$\text{Producer burden} = P_{\text{before tax}} - P_{\text{after tax (net)}}$$
+$$\mathrm{Producer burden} = P_{\mathrm{before tax}} - P_{\mathrm{after tax (net)}}$$
 
 ### Worked Example 6
 
@@ -401,9 +401,9 @@ Producer burden $= 60 - 55 = 5$ per unit
 A subsidy shifts the supply curve downward (rightward). Consumers pay less and producers receive
 more.
 
-$$\text{Consumer benefit} = P_{\text{before}} - P_{\text{after}}$$
+$$\mathrm{Consumer benefit} = P_{\mathrm{before}} - P_{\mathrm{after}}$$
 
-$$\text{Producer benefit} = (P_{\text{after}} + \text{subsidy}) - P_{\text{before}}$$
+$$\mathrm{Producer benefit} = (P_{\mathrm{after}} + \mathrm{subsidy}) - P_{\mathrm{before}}$$
 
 ---
 
@@ -423,7 +423,7 @@ or benefit.
 
 **Negative externality (external cost):** The social cost exceeds the private cost.
 
-$$\text{MSC} = \text{MPC} + \text{MEC}$$
+$$\mathrm{MSC} = \mathrm{MPC} + \mathrm{MEC}$$
 
 Where MSC = marginal social cost, MPC = marginal private cost, MEC = marginal external cost.
 
@@ -431,7 +431,7 @@ Example: pollution from a factory affects the health of nearby residents.
 
 **Positive externality (external benefit):** The social benefit exceeds the private benefit.
 
-$$\text{MSB} = \text{MPB} + \text{MEB}$$
+$$\mathrm{MSB} = \mathrm{MPB} + \mathrm{MEB}$$
 
 Where MSB = marginal social benefit, MPB = marginal private benefit, MEB = marginal external
 benefit.
@@ -517,7 +517,7 @@ $P = 51.43$, $Q = 300 - 5(51.43) = 42.86$
 **Question 2:** A 20% increase in the price of good `A` causes a 10% decrease in the quantity
 demanded of good `B`. What is the relationship between the goods?
 
-$\text{XED} = \frac{-10\%}{20\%} = -0.5$
+$\mathrm{XED} = \frac{-10\%}{20\%} = -0.5$
 
 Since XED is negative, goods `A` and `B` are **complements**.
 
@@ -702,7 +702,7 @@ National income can be measured in three ways:
 2. **Income method:** Sum of all incomes (wages, rent, interest, profit)
 3. **Expenditure method:** Sum of all spending
 
-$$\text{GDP} = C + I + G + (X - M)$$
+$$\mathrm{GDP} = C + I + G + (X - M)$$
 
 Where:
 
@@ -843,9 +843,9 @@ $Q = 200 - 4(42.67) = 29.33$
 
 Tax revenue $= 8 \times 29.33 = 234.67$
 
-Deadweight loss $= \frac{1}{2} \times \text{tax} \times (\text{original Q} - \text{new Q})$
+Deadweight loss $= \frac{1}{2} \times \mathrm{tax} \times (\mathrm{original Q} - \mathrm{new Q})$
 
-$\text{DWL} = \frac{1}{2} \times 8 \times (40 - 29.33) = \frac{1}{2} \times 8 \times 10.67 = 42.67$
+$\mathrm{DWL} = \frac{1}{2} \times 8 \times (40 - 29.33) = \frac{1}{2} \times 8 \times 10.67 = 42.67$
 
 **Question 6:** Explain why a monopoly causes allocative inefficiency.
 

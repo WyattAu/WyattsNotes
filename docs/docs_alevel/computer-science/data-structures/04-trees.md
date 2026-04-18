@@ -164,7 +164,7 @@ def bst_min(node):
 
 **Proof.** Cases 1 and 2 are trivial — removing a leaf or replacing with a single child maintains
 ordering. For case 3: the in-order successor $s$ is the smallest key in the right subtree, so
-$s \gt{} \text{root.key}$ and all keys in the left subtree are $\lt{} \text{root.key} \lt{} s$.
+$s \gt{} \mathrm{root.key}$ and all keys in the left subtree are $\lt{} \mathrm{root.key} \lt{} s$.
 After replacing root's key with $s$'s key and deleting $s$ from the right subtree (which is case 1
 or 2), the BST property holds. $\square$
 

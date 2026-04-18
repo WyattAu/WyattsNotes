@@ -18,7 +18,7 @@ slug: geometry-and-trigonometry
 The three primary trigonometric functions for an angle $\theta$ in a right-angled triangle are:
 
 $$
-\sin\theta = \frac{\text{opposite}}{\text{hypotenuse}}, \quad \cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}}, \quad \tan\theta = \frac{\text{opposite}}{\text{adjacent}}
+\sin\theta = \frac{\mathrm{opposite}}{\mathrm{hypotenuse}}, \quad \cos\theta = \frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}, \quad \tan\theta = \frac{\mathrm{opposite}}{\mathrm{adjacent}}
 $$
 
 On the unit circle (radius 1), the point at angle $\theta$ from the positive $x$-axis has
@@ -52,7 +52,7 @@ $$
 Angles can be measured in radians. One full revolution is $2\pi$ radians.
 
 $$
-\pi \text{ radians} = 180°
+\pi \mathrm{ radians} = 180°
 $$
 
 **Why radians?** In calculus, the derivative formula $\frac{d}{dx}[\sin x] = \cos x$ holds only when
@@ -82,21 +82,21 @@ $$
 **Example:** Find the length of the arc and the area of the sector for a circle of radius 8 cm with
 an angle of $\dfrac{5\pi}{6}$ radians.
 
-Arc length: $s = 8 \times \dfrac{5\pi}{6} = \dfrac{20\pi}{3} \approx 20.94 \text{ cm}$.
+Arc length: $s = 8 \times \dfrac{5\pi}{6} = \dfrac{20\pi}{3} \approx 20.94 \mathrm{ cm}$.
 
 Sector area:
-$A = \dfrac{1}{2} \times 64 \times \dfrac{5\pi}{6} = \dfrac{160\pi}{6} = \dfrac{80\pi}{3} \approx 83.78 \text{ cm}^2$.
+$A = \dfrac{1}{2} \times 64 \times \dfrac{5\pi}{6} = \dfrac{160\pi}{6} = \dfrac{80\pi}{3} \approx 83.78 \mathrm{ cm}^2$.
 
-**Example:** A sector of a circle of radius 6 cm has an area of $24\pi \text{ cm}^2$. Find the
+**Example:** A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm}^2$. Find the
 perimeter of the sector.
 
 $$
 \frac{1}{2} \times 36 \times \theta = 24\pi \implies \theta = \frac{48\pi}{36} = \frac{4\pi}{3}
 $$
 
-Arc length: $s = 6 \times \frac{4\pi}{3} = 8\pi \text{ cm}$.
+Arc length: $s = 6 \times \frac{4\pi}{3} = 8\pi \mathrm{ cm}$.
 
-Perimeter = $2r + s = 12 + 8\pi \text{ cm}$.
+Perimeter = $2r + s = 12 + 8\pi \mathrm{ cm}$.
 
 ### Trigonometric Identities
 
@@ -345,7 +345,7 @@ $$
 $$
 
 $$
-A = \arcsin(0.6372) \approx 39.6° \quad \text{or} \quad A = 180° - 39.6° = 140.4°
+A = \arcsin(0.6372) \approx 39.6° \quad \mathrm{or} \quad A = 180° - 39.6° = 140.4°
 $$
 
 Both values are valid since $A + B = 39.6° + 55° = 94.6° < 180^\circ$ and
@@ -394,11 +394,11 @@ $$
 $$
 
 where $\tan\alpha = \dfrac{-\sqrt{3}}{2}$, so
-$\alpha = -\arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx -0.714 \text{ rad}$.
+$\alpha = -\arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx -0.714 \mathrm{ rad}$.
 
 Maximum value is $\sqrt{7}$, occurring when $\sin(\theta + \alpha) = 1$, i.e.,
 $\theta + \alpha = \dfrac{\pi}{2}$, so
-$\theta = \dfrac{\pi}{2} + \arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx 2.285 \text{ rad}$.
+$\theta = \dfrac{\pi}{2} + \arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx 2.285 \mathrm{ rad}$.
 
 **Example:** Express $5\sin\theta - 12\cos\theta$ in the form $R\sin(\theta - \alpha)$ and find its
 maximum value.
@@ -554,7 +554,7 @@ $$
 
 $$(5x + 9)(x - 1) = 0$$
 
-$$x = -\frac{9}{5} \text{ or } x = 1$$
+$$x = -\frac{9}{5} \mathrm{ or } x = 1$$
 
 When $x = 1$: $y = 3$. When $x = -\dfrac{9}{5}$: $y = -\dfrac{13}{5}$.
 
@@ -739,7 +739,7 @@ $$
 
 4. Find the equation of the tangent to $x^2 + y^2 + 4x - 6y + 9 = 0$ at the point $(-2, 3)$.
 
-5. A sector of a circle of radius 6 cm has an area of $24\pi \text{ cm}^2$. Find the perimeter of
+5. A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm}^2$. Find the perimeter of
    the sector.
 
 6. Prove that $\sin 3\theta = 3\sin\theta - 4\sin^3\theta$.

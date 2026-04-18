@@ -17,11 +17,11 @@ date: 2026-04-08T00:00:00.000Z
 
 The rate of reaction measures how fast reactants are consumed or products are formed.
 
-$$\text{Rate} = \frac{\text{change in amount (mol)}}{\text{change in time (s)}}$$
+$$\mathrm{Rate} = \frac{\mathrm{change in amount (mol)}}{\mathrm{change in time (s)}}$$
 
-For a reaction $a\text{A} + b\text{B} \to c\text{C} + d\text{D}$:
+For a reaction $a\mathrm{A} + b\mathrm{B} \to c\mathrm{C} + d\mathrm{D}$:
 
-$$\text{Rate} = -\frac{1}{a}\frac{d[\text{A}]}{dt} = -\frac{1}{b}\frac{d[\text{B}]}{dt} = \frac{1}{c}\frac{d[\text{C}]}{dt} = \frac{1}{d}\frac{d[\text{D}]}{dt}$$
+$$\mathrm{Rate} = -\frac{1}{a}\frac{d[\mathrm{A}]}{dt} = -\frac{1}{b}\frac{d[\mathrm{B}]}{dt} = \frac{1}{c}\frac{d[\mathrm{C}]}{dt} = \frac{1}{d}\frac{d[\mathrm{D}]}{dt}$$
 
 The negative sign indicates that reactant concentrations decrease over time.
 
@@ -44,7 +44,7 @@ Rate is typically expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration p
 
 | Method            | Measured Quantity               | Suitable Reactions                                    |
 | ----------------- | ------------------------------- | ----------------------------------------------------- |
-| Collection of gas | Volume of gas over time         | Reactions producing gas ($\text{CO}_2$, $\text{H}_2$) |
+| Collection of gas | Volume of gas over time         | Reactions producing gas ($\mathrm{CO}_2$, $\mathrm{H}_2$) |
 | Mass loss         | Mass of flask over time         | Reactions producing gas                               |
 | Titration         | Concentration at time intervals | Reactions where aliquots can be quenched              |
 | Colorimetry       | Absorbance over time            | Reactions involving colour change                     |
@@ -94,7 +94,7 @@ Increasing temperature increases the kinetic energy of particles. More particles
 $\geq E_a$ (activation energy), so more successful collisions occur per unit time. This is the
 dominant effect. The increased collision frequency is a secondary, minor effect.
 
-**Approximate rule:** Rate roughly doubles for every $10^\circ\text{C}$ rise in temperature.
+**Approximate rule:** Rate roughly doubles for every $10^\circ\mathrm{C}$ rise in temperature.
 
 ### Surface Area of Solid Reactants
 
@@ -132,7 +132,7 @@ energy at any given temperature.
 
 The minimum energy that colliding particles must have for a successful reaction.
 
-$$\text{Reactants} \xrightarrow{E_a} \text{Products}$$
+$$\mathrm{Reactants} \xrightarrow{E_a} \mathrm{Products}$$
 
 On an energy profile diagram, $E_a$ is the energy difference between the reactants and the peak
 (transition state).
@@ -141,8 +141,8 @@ On an energy profile diagram, $E_a$ is the energy difference between the reactan
 
 A catalyst provides an alternative pathway with lower $E_a$:
 
-$$\text{Reactants} \xrightarrow{E_a \text{ (uncatalysed)}} \text{Products}$$
-$$\text{Reactants} \xrightarrow{E_a \text{ (catalysed)}} \text{Products}$$
+$$\mathrm{Reactants} \xrightarrow{E_a \mathrm{ (uncatalysed)}} \mathrm{Products}$$
+$$\mathrm{Reactants} \xrightarrow{E_a \mathrm{ (catalysed)}} \mathrm{Products}$$
 
 The catalysed pathway has a lower energy barrier, so more particles have sufficient energy to react.
 
@@ -169,7 +169,7 @@ When temperature increases:
 - The area under the curve remains constant (same number of particles).
 - A larger fraction of particles has energy $\geq E_a$.
 
-$$\frac{\text{Fraction with } E \geq E_a \text{ at } T_2}{\text{Fraction with } E \geq E_a \text{ at } T_1} \gt 1 \quad \text{when } T_2 \gt T_1$$
+$$\frac{\mathrm{Fraction with } E \geq E_a \mathrm{ at } T_2}{\mathrm{Fraction with } E \geq E_a \mathrm{ at } T_1} \gt 1 \quad \mathrm{when } T_2 \gt T_1$$
 
 ### Effect of a Catalyst
 
@@ -243,17 +243,17 @@ Catalytic converters reduce the emission of toxic gases from car exhausts.
 
 1. **Oxidation of CO:**
 
-$$2\text{CO} + \text{O}_2 \xrightarrow{\text{Pt, Pd}} 2\text{CO}_2$$
+$$2\mathrm{CO} + \mathrm{O}_2 \xrightarrow{\mathrm{Pt, Pd}} 2\mathrm{CO}_2$$
 
 2. **Oxidation of unburnt hydrocarbons (e.g., octane):**
 
-$$2\text{C}_8\text{H}_{18} + 25\text{O}_2 \xrightarrow{\text{Pt, Pd}} 16\text{CO}_2 + 18\text{H}_2\text{O}$$
+$$2\mathrm{C}_8\mathrm{H}_{18} + 25\mathrm{O}_2 \xrightarrow{\mathrm{Pt, Pd}} 16\mathrm{CO}_2 + 18\mathrm{H}_2\mathrm{O}$$
 
 3. **Reduction of nitrogen oxides:**
 
-$$2\text{NO} \xrightarrow{\text{Rh}} \text{N}_2 + \text{O}_2$$
+$$2\mathrm{NO} \xrightarrow{\mathrm{Rh}} \mathrm{N}_2 + \mathrm{O}_2$$
 
-$$2\text{NO}_2 \xrightarrow{\text{Rh}} \text{N}_2 + 2\text{O}_2$$
+$$2\mathrm{NO}_2 \xrightarrow{\mathrm{Rh}} \mathrm{N}_2 + 2\mathrm{O}_2$$
 
 ### Catalysts Used
 
@@ -265,7 +265,7 @@ $$2\text{NO}_2 \xrightarrow{\text{Rh}} \text{N}_2 + 2\text{O}_2$$
 - **Lead poisoning:** Lead compounds in "leaded" petrol coat and deactivate the catalyst. This is
   why unleaded petrol is required for cars with catalytic converters.
 - **Temperature dependence:** The converter only works efficiently at high temperatures (above about
-  $300^\circ\text{C}$). It is ineffective during cold starts.
+  $300^\circ\mathrm{C}$). It is ineffective during cold starts.
 - **Sulfur poisoning:** Sulfur compounds in fuel can also poison the catalyst.
 
 ---
@@ -280,8 +280,8 @@ Enzymes are protein molecules that catalyse specific biochemical reactions.
 
 1. **Specificity:** Each enzyme catalyses only one reaction (or a small group of reactions).
 2. **Efficiency:** Enzymes can increase reaction rates by factors of $10^6$ to $10^{12}$.
-3. **Optimum temperature:** Most enzymes work best around $37^\circ\text{C}$ (body temperature).
-   Above about $45^\circ\text{C}$, the enzyme denatures (loses its 3D structure) and activity drops
+3. **Optimum temperature:** Most enzymes work best around $37^\circ\mathrm{C}$ (body temperature).
+   Above about $45^\circ\mathrm{C}$, the enzyme denatures (loses its 3D structure) and activity drops
    sharply.
 4. **Optimum pH:** Each enzyme has an optimal pH. Pepsin (stomach) works at pH ~2; trypsin
    (intestine) works at pH ~8.
@@ -298,7 +298,7 @@ for further catalysis.
 ### Effect of Temperature on Enzyme Activity
 
 - Below optimum: rate increases with temperature (standard kinetic effect).
-- At optimum (~$37^\circ\text{C}$): maximum rate.
+- At optimum (~$37^\circ\mathrm{C}$): maximum rate.
 - Above optimum: enzyme denatures, rate drops rapidly.
 - At very high temperatures: complete loss of activity.
 
@@ -314,9 +314,9 @@ for further catalysis.
 
 ### Definition
 
-For a reaction $a\text{A} + b\text{B} \to \text{products}$, the rate equation is:
+For a reaction $a\mathrm{A} + b\mathrm{B} \to \mathrm{products}$, the rate equation is:
 
-$$\text{Rate} = k[\text{A}]^m[\text{B}]^n$$
+$$\mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$$
 
 Where:
 
@@ -334,17 +334,17 @@ the stoichiometric coefficients $a$ and $b$.
 
 **Zero order:** Rate is independent of concentration.
 
-$$\text{Rate} = k$$
+$$\mathrm{Rate} = k$$
 
-Concentration decreases linearly with time: $[\text{A}] = [\text{A}]_0 - kt$
+Concentration decreases linearly with time: $[\mathrm{A}] = [\mathrm{A}]_0 - kt$
 
 **First order:** Rate is directly proportional to concentration.
 
-$$\text{Rate} = k[\text{A}]$$
+$$\mathrm{Rate} = k[\mathrm{A}]$$
 
 **Second order:** Rate is proportional to the square of concentration.
 
-$$\text{Rate} = k[\text{A}]^2$$
+$$\mathrm{Rate} = k[\mathrm{A}]^2$$
 
 ### Determining Order from Initial Rates
 
@@ -354,9 +354,9 @@ If doubling [A] doubles the rate: first order with respect to A. If doubling [A]
 rate: second order with respect to A. If doubling [A] has no effect on the rate: zero order with
 respect to A.
 
-**Worked example 1:** For the reaction $\text{A} + \text{B} \to \text{C}$:
+**Worked example 1:** For the reaction $\mathrm{A} + \mathrm{B} \to \mathrm{C}$:
 
-| Experiment | $[\text{A}]$ (mol/dm$^3$) | $[\text{B}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
+| Experiment | $[\mathrm{A}]$ (mol/dm$^3$) | $[\mathrm{B}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
 | ---------- | ------------------------- | ------------------------- | ------------------------------------- |
 | 1          | 0.10                      | 0.10                      | $2.0 \times 10^{-4}$                  |
 | 2          | 0.20                      | 0.10                      | $4.0 \times 10^{-4}$                  |
@@ -375,21 +375,21 @@ Comparing experiments 1 and 3: [A] constant, [B] doubles, rate quadruples.
 
 Order with respect to B = 2 (second order).
 
-Rate equation: $\text{Rate} = k[\text{A}][\text{B}]^2$
+Rate equation: $\mathrm{Rate} = k[\mathrm{A}][\mathrm{B}]^2$
 
 Using experiment 1:
 
-$k = \dfrac{\text{Rate}}{[\text{A}][\text{B}]^2} = \dfrac{2.0 \times 10^{-4}}{0.10 \times (0.10)^2} = \dfrac{2.0 \times 10^{-4}}{0.0010} = 0.20 \text{ dm}^6 \text{ mol}^{-2} \text{ s}^{-1}$
+$k = \dfrac{\mathrm{Rate}}{[\mathrm{A}][\mathrm{B}]^2} = \dfrac{2.0 \times 10^{-4}}{0.10 \times (0.10)^2} = \dfrac{2.0 \times 10^{-4}}{0.0010} = 0.20 \mathrm{ dm}^6 \mathrm{ mol}^{-2} \mathrm{ s}^{-1}$
 
 Check with experiment 3:
-$\text{Rate} = 0.20 \times 0.10 \times (0.20)^2 = 0.20 \times 0.10 \times 0.040 = 8.0 \times 10^{-4}$.
+$\mathrm{Rate} = 0.20 \times 0.10 \times (0.20)^2 = 0.20 \times 0.10 \times 0.040 = 8.0 \times 10^{-4}$.
 Correct.
 
 </details>
 
-**Worked example 2:** For the reaction $\text{X} + 2\text{Y} \to \text{Z}$:
+**Worked example 2:** For the reaction $\mathrm{X} + 2\mathrm{Y} \to \mathrm{Z}$:
 
-| Experiment | $[\text{X}]$ (mol/dm$^3$) | $[\text{Y}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
+| Experiment | $[\mathrm{X}]$ (mol/dm$^3$) | $[\mathrm{Y}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
 | ---------- | ------------------------- | ------------------------- | ------------------------------------- |
 | 1          | 0.20                      | 0.10                      | $6.0 \times 10^{-3}$                  |
 | 2          | 0.40                      | 0.10                      | $1.2 \times 10^{-2}$                  |
@@ -402,9 +402,9 @@ Exp 1 vs 2: [X] doubles, rate doubles. First order in X.
 
 Exp 1 vs 3: [Y] doubles, rate unchanged. Zero order in Y.
 
-Rate equation: $\text{Rate} = k[\text{X}]$
+Rate equation: $\mathrm{Rate} = k[\mathrm{X}]$
 
-$k = \dfrac{6.0 \times 10^{-3}}{0.20} = 0.030 \text{ s}^{-1}$
+$k = \dfrac{6.0 \times 10^{-3}}{0.20} = 0.030 \mathrm{ s}^{-1}$
 
 </details>
 
@@ -415,10 +415,10 @@ The units of $k$ depend on the overall order of reaction.
 | Overall Order | Rate Equation                    | Units of $k$               |
 | ------------- | -------------------------------- | -------------------------- |
 | 0             | Rate = $k$                       | mol dm$^{-3}$ s$^{-1}$     |
-| 1             | Rate = $k[\text{A}]$             | s$^{-1}$                   |
-| 2             | Rate = $k[\text{A}]^2$           | dm$^3$ mol$^{-1}$ s$^{-1}$ |
-| 3             | Rate = $k[\text{A}]^3$           | dm$^6$ mol$^{-2}$ s$^{-1}$ |
-| 1 + 2 = 3     | Rate = $k[\text{A}][\text{B}]^2$ | dm$^6$ mol$^{-2}$ s$^{-1}$ |
+| 1             | Rate = $k[\mathrm{A}]$             | s$^{-1}$                   |
+| 2             | Rate = $k[\mathrm{A}]^2$           | dm$^3$ mol$^{-1}$ s$^{-1}$ |
+| 3             | Rate = $k[\mathrm{A}]^3$           | dm$^6$ mol$^{-2}$ s$^{-1}$ |
+| 1 + 2 = 3     | Rate = $k[\mathrm{A}][\mathrm{B}]^2$ | dm$^6$ mol$^{-2}$ s$^{-1}$ |
 
 ---
 
@@ -451,7 +451,7 @@ A plot of $\ln k$ (y-axis) vs $1/T$ (x-axis) gives a straight line:
 - Gradient = $-E_a / R$
 - y-intercept = $\ln A$
 
-From the gradient: $E_a = -\text{gradient} \times R$
+From the gradient: $E_a = -\mathrm{gradient} \times R$
 
 ### Two-Temperature Form
 
@@ -459,8 +459,8 @@ If the rate constant is known at two temperatures:
 
 $$\ln\left(\frac{k_2}{k_1}\right) = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
 
-**Worked example 3:** The rate constant for a reaction is $3.46 \times 10^{-5} \text{ s}^{-1}$ at
-$298 \text{ K}$ and $1.50 \times 10^{-3} \text{ s}^{-1}$ at $350 \text{ K}$. Calculate $E_a$.
+**Worked example 3:** The rate constant for a reaction is $3.46 \times 10^{-5} \mathrm{ s}^{-1}$ at
+$298 \mathrm{ K}$ and $1.50 \times 10^{-3} \mathrm{ s}^{-1}$ at $350 \mathrm{ K}$. Calculate $E_a$.
 
 <details>
 <summary>Answer</summary>
@@ -471,13 +471,13 @@ $$\ln(43.35) = \frac{E_a}{8.314}(0.003356 - 0.002857)$$
 
 $$3.770 = \frac{E_a}{8.314}(0.000499)$$
 
-$$E_a = \frac{3.770 \times 8.314}{0.000499} = \frac{31.34}{0.000499} = 62800 \text{ J/mol} = 62.8 \text{ kJ/mol}$$
+$$E_a = \frac{3.770 \times 8.314}{0.000499} = \frac{31.34}{0.000499} = 62800 \mathrm{ J/mol} = 62.8 \mathrm{ kJ/mol}$$
 
 </details>
 
-**Worked example 4:** A reaction has $E_a = 75.0 \text{ kJ/mol}$. The rate constant at
-$300 \text{ K}$ is $2.50 \times 10^{-3} \text{ s}^{-1}$. Calculate the rate constant at
-$320 \text{ K}$.
+**Worked example 4:** A reaction has $E_a = 75.0 \mathrm{ kJ/mol}$. The rate constant at
+$300 \mathrm{ K}$ is $2.50 \times 10^{-3} \mathrm{ s}^{-1}$. Calculate the rate constant at
+$320 \mathrm{ K}$.
 
 <details>
 <summary>Answer</summary>
@@ -490,7 +490,7 @@ $$\ln\left(\frac{k_2}{2.50 \times 10^{-3}}\right) = 9022 \times 0.000208 = 1.877
 
 $$\frac{k_2}{2.50 \times 10^{-3}} = e^{1.877} = 6.534$$
 
-$$k_2 = 6.534 \times 2.50 \times 10^{-3} = 1.63 \times 10^{-2} \text{ s}^{-1}$$
+$$k_2 = 6.534 \times 2.50 \times 10^{-3} = 1.63 \times 10^{-2} \mathrm{ s}^{-1}$$
 
 </details>
 
@@ -503,12 +503,12 @@ $$k_2 = 6.534 \times 2.50 \times 10^{-3} = 1.63 \times 10^{-2} \text{ s}^{-1}$$
 The iodine clock reaction is a classic experiment for measuring initial rates. The reaction involves
 the oxidation of iodide ions by an oxidising agent (e.g., peroxydisulfate):
 
-$$\text{S}_2\text{O}_8^{2-} + 2\text{I}^- \to 2\text{SO}_4^{2-} + \text{I}_2$$
+$$\mathrm{S}_2\mathrm{O}_8^{2-} + 2\mathrm{I}^- \to 2\mathrm{SO}_4^{2-} + \mathrm{I}_2$$
 
 A small, fixed amount of sodium thiosulfate and starch are added. The thiosulfate reacts with iodine
 as it forms:
 
-$$\text{I}_2 + 2\text{S}_2\text{O}_3^{2-} \to 2\text{I}^- + \text{S}_4\text{O}_6^{2-}$$
+$$\mathrm{I}_2 + 2\mathrm{S}_2\mathrm{O}_3^{2-} \to 2\mathrm{I}^- + \mathrm{S}_4\mathrm{O}_6^{2-}$$
 
 Once all the thiosulfate is consumed, free iodine accumulates and reacts with starch to produce a
 blue-black colour.
@@ -517,14 +517,14 @@ blue-black colour.
 
 The time for the colour change ($t$) is measured. The rate is proportional to $1/t$:
 
-$$\text{Rate} \propto \frac{1}{t}$$
+$$\mathrm{Rate} \propto \frac{1}{t}$$
 
 By varying the concentration of one reactant while keeping others constant, the order with respect
 to each reactant can be determined.
 
 ### Example Data Analysis
 
-| Experiment | $[\text{S}_2\text{O}_8^{2-}]$ (mol/dm$^3$) | $[\text{I}^-]$ (mol/dm$^3$) | Time (s) |
+| Experiment | $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ (mol/dm$^3$) | $[\mathrm{I}^-]$ (mol/dm$^3$) | Time (s) |
 | ---------- | ------------------------------------------ | --------------------------- | -------- |
 | 1          | 0.040                                      | 0.040                       | 48       |
 | 2          | 0.080                                      | 0.040                       | 24       |
@@ -533,12 +533,12 @@ to each reactant can be determined.
 <details>
 <summary>Answer</summary>
 
-Exp 1 vs 2: $[\text{S}_2\text{O}_8^{2-}]$ doubles, time halves, rate doubles. First order in
-$\text{S}_2\text{O}_8^{2-}$.
+Exp 1 vs 2: $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ doubles, time halves, rate doubles. First order in
+$\mathrm{S}_2\mathrm{O}_8^{2-}$.
 
-Exp 1 vs 3: $[\text{I}^-]$ doubles, time halves, rate doubles. First order in $\text{I}^-$.
+Exp 1 vs 3: $[\mathrm{I}^-]$ doubles, time halves, rate doubles. First order in $\mathrm{I}^-$.
 
-Rate equation: $\text{Rate} = k[\text{S}_2\text{O}_8^{2-}][\text{I}^-]$
+Rate equation: $\mathrm{Rate} = k[\mathrm{S}_2\mathrm{O}_8^{2-}][\mathrm{I}^-]$
 
 Overall order = 2.
 
@@ -576,10 +576,10 @@ Overall order = 2.
 ### Problem 1
 
 For the reaction
-$2\text{NO}_{(g)} + 2\text{H}_{2(g)} \to \text{N}_{2(g)} + 2\text{H}_2\text{O}_{(g)}$, the following
+$2\mathrm{NO}_{(g)} + 2\mathrm{H}_{2(g)} \to \mathrm{N}_{2(g)} + 2\mathrm{H}_2\mathrm{O}_{(g)}$, the following
 data were obtained:
 
-| Experiment | $[\text{NO}]$ (mol/dm$^3$) | $[\text{H}_2]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
+| Experiment | $[\mathrm{NO}]$ (mol/dm$^3$) | $[\mathrm{H}_2]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
 | ---------- | -------------------------- | --------------------------- | ------------------------------------- |
 | 1          | 0.010                      | 0.010                       | $1.2 \times 10^{-5}$                  |
 | 2          | 0.020                      | 0.010                       | $4.8 \times 10^{-5}$                  |
@@ -593,11 +593,11 @@ Determine the rate equation, the rate constant, and the overall order.
 Exp 1 vs 2: [NO] doubles, rate quadruples ($1.2 \times 10^{-5} \to 4.8 \times 10^{-5}$). Second
 order in NO.
 
-Exp 1 vs 3: $[\text{H}_2]$ doubles, rate doubles. First order in $\text{H}_2$.
+Exp 1 vs 3: $[\mathrm{H}_2]$ doubles, rate doubles. First order in $\mathrm{H}_2$.
 
-Rate equation: $\text{Rate} = k[\text{NO}]^2[\text{H}_2]$
+Rate equation: $\mathrm{Rate} = k[\mathrm{NO}]^2[\mathrm{H}_2]$
 
-$k = \dfrac{1.2 \times 10^{-5}}{(0.010)^2 \times 0.010} = \dfrac{1.2 \times 10^{-5}}{1.0 \times 10^{-6}} = 12.0 \text{ dm}^6 \text{ mol}^{-2} \text{ s}^{-1}$
+$k = \dfrac{1.2 \times 10^{-5}}{(0.010)^2 \times 0.010} = \dfrac{1.2 \times 10^{-5}}{1.0 \times 10^{-6}} = 12.0 \mathrm{ dm}^6 \mathrm{ mol}^{-2} \mathrm{ s}^{-1}$
 
 Overall order = $2 + 1 = 3$
 
@@ -605,9 +605,9 @@ Overall order = $2 + 1 = 3$
 
 ### Problem 2
 
-The rate constant for a first-order reaction is $5.00 \times 10^{-4} \text{ s}^{-1}$ at
-$300 \text{ K}$. The activation energy is $65.0 \text{ kJ/mol}$. Calculate the rate constant at
-$320 \text{ K}$.
+The rate constant for a first-order reaction is $5.00 \times 10^{-4} \mathrm{ s}^{-1}$ at
+$300 \mathrm{ K}$. The activation energy is $65.0 \mathrm{ kJ/mol}$. Calculate the rate constant at
+$320 \mathrm{ K}$.
 
 <details>
 <summary>Answer</summary>
@@ -618,7 +618,7 @@ $$= 7820 \times (0.003333 - 0.003125) = 7820 \times 0.000208 = 1.627$$
 
 $$\frac{k_2}{5.00 \times 10^{-4}} = e^{1.627} = 5.089$$
 
-$$k_2 = 5.089 \times 5.00 \times 10^{-4} = 2.54 \times 10^{-3} \text{ s}^{-1}$$
+$$k_2 = 5.089 \times 5.00 \times 10^{-4} = 2.54 \times 10^{-3} \mathrm{ s}^{-1}$$
 
 </details>
 
@@ -626,7 +626,7 @@ $$k_2 = 5.089 \times 5.00 \times 10^{-4} = 2.54 \times 10^{-3} \text{ s}^{-1}$$
 
 In an iodine clock experiment, the following data were collected:
 
-| Experiment | $[\text{S}_2\text{O}_8^{2-}]$ (mol/dm$^3$) | $[\text{I}^-]$ (mol/dm$^3$) | Time (s) |
+| Experiment | $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ (mol/dm$^3$) | $[\mathrm{I}^-]$ (mol/dm$^3$) | Time (s) |
 | ---------- | ------------------------------------------ | --------------------------- | -------- |
 | 1          | 0.020                                      | 0.020                       | 60       |
 | 2          | 0.040                                      | 0.020                       | 30       |
@@ -637,13 +637,13 @@ Determine the order with respect to each reactant and the overall order.
 <details>
 <summary>Answer</summary>
 
-Exp 1 vs 2: $[\text{S}_2\text{O}_8^{2-}]$ doubles, time halves. Rate doubles. First order in
-$\text{S}_2\text{O}_8^{2-}$.
+Exp 1 vs 2: $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ doubles, time halves. Rate doubles. First order in
+$\mathrm{S}_2\mathrm{O}_8^{2-}$.
 
-Exp 1 vs 3: $[\text{I}^-]$ doubles, time becomes $60/4 = 15$ s. Rate quadruples. Second order in
-$\text{I}^-$.
+Exp 1 vs 3: $[\mathrm{I}^-]$ doubles, time becomes $60/4 = 15$ s. Rate quadruples. Second order in
+$\mathrm{I}^-$.
 
-Rate equation: $\text{Rate} = k[\text{S}_2\text{O}_8^{2-}][\text{I}^-]^2$
+Rate equation: $\mathrm{Rate} = k[\mathrm{S}_2\mathrm{O}_8^{2-}][\mathrm{I}^-]^2$
 
 Overall order = $1 + 2 = 3$
 
@@ -651,8 +651,8 @@ Overall order = $1 + 2 = 3$
 
 ### Problem 4
 
-Sketch and label the Maxwell-Boltzmann distribution curves at $T_1 = 300 \text{ K}$ and
-$T_2 = 400 \text{ K}$ on the same axes. Mark the activation energy $E_a$ and shade the area
+Sketch and label the Maxwell-Boltzmann distribution curves at $T_1 = 300 \mathrm{ K}$ and
+$T_2 = 400 \mathrm{ K}$ on the same axes. Mark the activation energy $E_a$ and shade the area
 representing particles with energy $\geq E_a$ at each temperature. Explain why the rate increases
 with temperature in terms of the distribution.
 
@@ -696,9 +696,9 @@ the equilibrium yield of products remain the same.
 
 ### Problem 6
 
-A reaction has the rate equation $\text{Rate} = k[\text{P}]^2[\text{Q}]$. At a certain temperature,
-when $[\text{P}] = 0.30 \text{ mol/dm}^3$ and $[\text{Q}] = 0.20 \text{ mol/dm}^3$, the rate is
-$1.08 \times 10^{-2} \text{ mol dm}^{-3} \text{ s}^{-1}$. Calculate the rate constant and its units.
+A reaction has the rate equation $\mathrm{Rate} = k[\mathrm{P}]^2[\mathrm{Q}]$. At a certain temperature,
+when $[\mathrm{P}] = 0.30 \mathrm{ mol/dm}^3$ and $[\mathrm{Q}] = 0.20 \mathrm{ mol/dm}^3$, the rate is
+$1.08 \times 10^{-2} \mathrm{ mol dm}^{-3} \mathrm{ s}^{-1}$. Calculate the rate constant and its units.
 
 If the concentration of P is tripled and the concentration of Q is doubled, by what factor does the
 rate increase?
@@ -706,9 +706,9 @@ rate increase?
 <details>
 <summary>Answer</summary>
 
-$$k = \frac{\text{Rate}}{[\text{P}]^2[\text{Q}]} = \frac{1.08 \times 10^{-2}}{(0.30)^2 \times 0.20} = \frac{1.08 \times 10^{-2}}{0.09 \times 0.20} = \frac{1.08 \times 10^{-2}}{0.018} = 0.60 \text{ dm}^6 \text{ mol}^{-2} \text{ s}^{-1}$$
+$$k = \frac{\mathrm{Rate}}{[\mathrm{P}]^2[\mathrm{Q}]} = \frac{1.08 \times 10^{-2}}{(0.30)^2 \times 0.20} = \frac{1.08 \times 10^{-2}}{0.09 \times 0.20} = \frac{1.08 \times 10^{-2}}{0.018} = 0.60 \mathrm{ dm}^6 \mathrm{ mol}^{-2} \mathrm{ s}^{-1}$$
 
-New rate factor: $[\text{P}]$ triples (factor of $3^2 = 9$), $[\text{Q}]$ doubles (factor of 2).
+New rate factor: $[\mathrm{P}]$ triples (factor of $3^2 = 9$), $[\mathrm{Q}]$ doubles (factor of 2).
 
 Overall factor = $9 \times 2 = 18$.
 
@@ -792,7 +792,7 @@ its initial value.
 
 ### Zero-Order Half-Life
 
-$$t_{1/2} = \frac{[\text{A}]_0}{2k}$$
+$$t_{1/2} = \frac{[\mathrm{A}]_0}{2k}$$
 
 The half-life depends on the initial concentration. It increases as concentration decreases.
 
@@ -807,7 +807,7 @@ Radioactive decay is a first-order process.
 
 ### Second-Order Half-Life
 
-$$t_{1/2} = \frac{1}{k[\text{A}]_0}$$
+$$t_{1/2} = \frac{1}{k[\mathrm{A}]_0}$$
 
 The half-life depends on the initial concentration. It increases as concentration decreases.
 
@@ -827,9 +827,9 @@ to 0.200 mol/dm$^3$ in 120 s. Calculate the half-life and the rate constant.
 
 The concentration halves twice: $0.800 \to 0.400 \to 0.200$.
 
-Two half-lives = 120 s, so $t_{1/2} = 60 \text{ s}$.
+Two half-lives = 120 s, so $t_{1/2} = 60 \mathrm{ s}$.
 
-$k = \dfrac{0.693}{t_{1/2}} = \dfrac{0.693}{60} = 0.01155 \text{ s}^{-1}$
+$k = \dfrac{0.693}{t_{1/2}} = \dfrac{0.693}{60} = 0.01155 \mathrm{ s}^{-1}$
 
 </details>
 
@@ -841,34 +841,34 @@ $k = \dfrac{0.693}{t_{1/2}} = \dfrac{0.693}{60} = 0.01155 \text{ s}^{-1}$
 
 A straight line with negative gradient when concentration is plotted against time.
 
-$$[\text{A}] = [\text{A}]_0 - kt$$
+$$[\mathrm{A}] = [\mathrm{A}]_0 - kt$$
 
 ### First-Order
 
-A curve where a plot of $\ln[\text{A}]$ vs time gives a straight line with gradient $-k$.
+A curve where a plot of $\ln[\mathrm{A}]$ vs time gives a straight line with gradient $-k$.
 
-$$\ln[\text{A}] = \ln[\text{A}]_0 - kt$$
+$$\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$$
 
-Alternatively, a plot of $\log_{10}[\text{A}]$ vs time gives a straight line with gradient
+Alternatively, a plot of $\log_{10}[\mathrm{A}]$ vs time gives a straight line with gradient
 $-k/2.303$.
 
 ### Second-Order
 
-A curve where a plot of $1/[\text{A}]$ vs time gives a straight line with gradient $+k$.
+A curve where a plot of $1/[\mathrm{A}]$ vs time gives a straight line with gradient $+k$.
 
-$$\frac{1}{[\text{A}]} = \frac{1}{[\text{A}]_0} + kt$$
+$$\frac{1}{[\mathrm{A}]} = \frac{1}{[\mathrm{A}]_0} + kt$$
 
 ### Summary
 
 | Order  | Linear Plot            | Gradient |
 | ------ | ---------------------- | -------- |
-| Zero   | $[\text{A}]$ vs $t$    | $-k$     |
-| First  | $\ln[\text{A}]$ vs $t$ | $-k$     |
-| Second | $1/[\text{A}]$ vs $t$  | $+k$     |
+| Zero   | $[\mathrm{A}]$ vs $t$    | $-k$     |
+| First  | $\ln[\mathrm{A}]$ vs $t$ | $-k$     |
+| Second | $1/[\mathrm{A}]$ vs $t$  | $+k$     |
 
 **Worked example 9:** The following data were collected for the decomposition of a substance X:
 
-| Time (s) | $[\text{X}]$ (mol/dm$^3$) | $\ln[\text{X}]$ | $1/[\text{X}]$ |
+| Time (s) | $[\mathrm{X}]$ (mol/dm$^3$) | $\ln[\mathrm{X}]$ | $1/[\mathrm{X}]$ |
 | -------- | ------------------------- | --------------- | -------------- |
 | 0        | 0.100                     | $-2.303$        | 10.0           |
 | 30       | 0.0707                    | $-2.649$        | 14.1           |
@@ -881,17 +881,17 @@ Determine the order of reaction.
 <details>
 <summary>Answer</summary>
 
-Check if $\ln[\text{X}]$ vs $t$ is linear:
+Check if $\ln[\mathrm{X}]$ vs $t$ is linear:
 
 Gradient from first and last points:
-$\dfrac{-3.689 - (-2.303)}{120 - 0} = \dfrac{-1.386}{120} = -0.01155 \text{ s}^{-1}$
+$\dfrac{-3.689 - (-2.303)}{120 - 0} = \dfrac{-1.386}{120} = -0.01155 \mathrm{ s}^{-1}$
 
 Check intermediate: $\dfrac{-2.649 - (-2.303)}{30} = -0.01153$,
 $\dfrac{-2.996 - (-2.649)}{30} = -0.01157$.
 
-The gradients are consistent (all approximately $-0.0116 \text{ s}^{-1}$), confirming first order.
+The gradients are consistent (all approximately $-0.0116 \mathrm{ s}^{-1}$), confirming first order.
 
-$k = 0.0116 \text{ s}^{-1}$
+$k = 0.0116 \mathrm{ s}^{-1}$
 
 </details>
 
@@ -930,9 +930,9 @@ Powdering the solid increases surface area, further increasing the rate.
 
 | Equation                                  | Use                              |
 | ----------------------------------------- | -------------------------------- |
-| $\text{Rate} = k[\text{A}]^m[\text{B}]^n$ | Rate equation                    |
+| $\mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$ | Rate equation                    |
 | $\ln k = \ln A - E_a/(RT)$                | Arrhenius equation (linear form) |
 | $\ln(k_2/k_1) = (E_a/R)(1/T_1 - 1/T_2)$   | Two-temperature Arrhenius        |
 | $t_{1/2} = 0.693/k$                       | First-order half-life            |
-| $\ln[\text{A}] = \ln[\text{A}]_0 - kt$    | First-order integrated rate law  |
-| $\text{Rate} \propto 1/t$                 | Clock reaction initial rate      |
+| $\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$    | First-order integrated rate law  |
+| $\mathrm{Rate} \propto 1/t$                 | Clock reaction initial rate      |

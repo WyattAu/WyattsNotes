@@ -108,7 +108,7 @@ because:
 
 **Thomas Piketty (2014)**: if the rate of return on capital ($r$) exceeds the rate of economic
 growth ($g$), i.e., $r > g$, then wealth inequality will tend to increase over time. Historically,
-$r \approx 4\text{--}5\%$ while $g \approx 1\text{--}2\%$, suggesting growing inequality.
+$r \approx 4\mathrm{--}5\%$ while $g \approx 1\mathrm{--}2\%$, suggesting growing inequality.
 
 ### 2.3 Global Inequality
 
@@ -127,7 +127,7 @@ clothing). The World Bank defines extreme absolute poverty as living on less tha
 **Relative poverty**: a condition where individuals have significantly less income than the median.
 The OECD defines relative poverty as income below 60% of the median household income (equivalised).
 
-$$\text{Relative poverty line} = 0.6 \times \text{median household income}$$
+$$\mathrm{Relative poverty line} = 0.6 \times \mathrm{median household income}$$
 
 ### 3.2 Measuring Poverty
 
@@ -160,7 +160,7 @@ For a progressive tax system:
 **Effective marginal tax rate (EMTR)**: the total rate at which additional income is taxed when all
 benefits and means-tested withdrawals are included.
 
-$$\text{EMTR} = \text{income tax MTR} + \text{NI MTR} + \text{benefit withdrawal rate}$$
+$$\mathrm{EMTR} = \mathrm{income tax MTR} + \mathrm{NI MTR} + \mathrm{benefit withdrawal rate}$$
 
 High EMTRs (poverty traps) occur when means-tested benefits are withdrawn as income rises, creating
 disincentives to work.

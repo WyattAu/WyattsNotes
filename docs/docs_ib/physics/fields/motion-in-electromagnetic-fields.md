@@ -222,11 +222,11 @@ the field. Find the radius and period of the circular path.
 **Solution:**
 
 $$
-r = \frac{m_e v}{|q| B} = \frac{(9.11 \times 10^{-31})(3.0 \times 10^6)}{(1.60 \times 10^{-19})(0.50)} = 3.42 \times 10^{-5} \text{ m} = 34.2 \text{ \mu m}
+r = \frac{m_e v}{|q| B} = \frac{(9.11 \times 10^{-31})(3.0 \times 10^6)}{(1.60 \times 10^{-19})(0.50)} = 3.42 \times 10^{-5} \mathrm{ m} = 34.2 \mathrm{ \mu m}
 $$
 
 $$
-T = \frac{2\pi m_e}{|q| B} = \frac{2\pi (9.11 \times 10^{-31})}{(1.60 \times 10^{-19})(0.50)} = 7.16 \times 10^{-11} \text{ s}
+T = \frac{2\pi m_e}{|q| B} = \frac{2\pi (9.11 \times 10^{-31})}{(1.60 \times 10^{-19})(0.50)} = 7.16 \times 10^{-11} \mathrm{ s}
 $$
 
 **Exam tip:** When dealing with electrons, remember that the charge is negative. Use the magnitude
@@ -288,7 +288,7 @@ selected?
 **Solution:**
 
 $$
-v = \frac{E}{B} = \frac{1.5 \times 10^5}{0.050} = 3.0 \times 10^6 \text{ m/s}
+v = \frac{E}{B} = \frac{1.5 \times 10^5}{0.050} = 3.0 \times 10^6 \mathrm{ m/s}
 $$
 
 **Exam tip:** The velocity selector does not depend on the charge or mass of the particle — only on
@@ -348,7 +348,7 @@ $$
 **Question:** In a mass spectrometer, singly charged ions ($q = +e = 1.60 \times 10^{-19}$ C) are
 accelerated through $V = 5000$ V and enter a magnetic field of $B = 0.20$ T. Two isotopes are
 detected at radii of $r_1 = 10.2$ cm and $r_2 = 10.8$ cm. Calculate the mass of each isotope in
-atomic mass units (u), where $1 \text{ u} = 1.66 \times 10^{-27}$ kg.
+atomic mass units (u), where $1 \mathrm{ u} = 1.66 \times 10^{-27}$ kg.
 
 **Solution:**
 
@@ -357,11 +357,11 @@ Using $\frac{m}{q} = \frac{B^2 r^2}{2V}$:
 **Isotope 1:**
 
 $$
-m_1 = \frac{q B^2 r_1^2}{2V} = \frac{(1.60 \times 10^{-19})(0.20)^2(0.102)^2}{2(5000)} = \frac{(1.60 \times 10^{-19})(0.04)(0.0104)}{10000} = 6.67 \times 10^{-26} \text{ kg}
+m_1 = \frac{q B^2 r_1^2}{2V} = \frac{(1.60 \times 10^{-19})(0.20)^2(0.102)^2}{2(5000)} = \frac{(1.60 \times 10^{-19})(0.04)(0.0104)}{10000} = 6.67 \times 10^{-26} \mathrm{ kg}
 $$
 
 $$
-m_1 = \frac{6.67 \times 10^{-26}}{1.66 \times 10^{-27}} = 40.2 \text{ u}
+m_1 = \frac{6.67 \times 10^{-26}}{1.66 \times 10^{-27}} = 40.2 \mathrm{ u}
 $$
 
 This is consistent with calcium-40.
@@ -369,11 +369,11 @@ This is consistent with calcium-40.
 **Isotope 2:**
 
 $$
-m_2 = \frac{(1.60 \times 10^{-19})(0.04)(0.108)^2}{10000} = \frac{(1.60 \times 10^{-19})(0.04)(0.01166)}{10000} = 7.47 \times 10^{-26} \text{ kg}
+m_2 = \frac{(1.60 \times 10^{-19})(0.04)(0.108)^2}{10000} = \frac{(1.60 \times 10^{-19})(0.04)(0.01166)}{10000} = 7.47 \times 10^{-26} \mathrm{ kg}
 $$
 
 $$
-m_2 = \frac{7.47 \times 10^{-26}}{1.66 \times 10^{-27}} = 45.0 \text{ u}
+m_2 = \frac{7.47 \times 10^{-26}}{1.66 \times 10^{-27}} = 45.0 \mathrm{ u}
 $$
 
 This is consistent with scandium-45.
@@ -481,25 +481,25 @@ cyclotron frequency? c) What is the maximum kinetic energy of the protons in ele
 **a) Maximum radius:**
 
 $$
-r_{\max} = \frac{m_p v_{\max}}{qB} = \frac{(1.67 \times 10^{-27})(2.0 \times 10^7)}{(1.60 \times 10^{-19})(1.2)} = \frac{3.34 \times 10^{-20}}{1.92 \times 10^{-19}} = 0.174 \text{ m} = 17.4 \text{ cm}
+r_{\max} = \frac{m_p v_{\max}}{qB} = \frac{(1.67 \times 10^{-27})(2.0 \times 10^7)}{(1.60 \times 10^{-19})(1.2)} = \frac{3.34 \times 10^{-20}}{1.92 \times 10^{-19}} = 0.174 \mathrm{ m} = 17.4 \mathrm{ cm}
 $$
 
 **b) Cyclotron frequency:**
 
 $$
-f = \frac{qB}{2\pi m_p} = \frac{(1.60 \times 10^{-19})(1.2)}{2\pi(1.67 \times 10^{-27})} = \frac{1.92 \times 10^{-19}}{1.05 \times 10^{-26}} = 1.83 \times 10^7 \text{ Hz} = 18.3 \text{ MHz}
+f = \frac{qB}{2\pi m_p} = \frac{(1.60 \times 10^{-19})(1.2)}{2\pi(1.67 \times 10^{-27})} = \frac{1.92 \times 10^{-19}}{1.05 \times 10^{-26}} = 1.83 \times 10^7 \mathrm{ Hz} = 18.3 \mathrm{ MHz}
 $$
 
 **c) Maximum kinetic energy:**
 
 $$
-E_k = \frac{1}{2}m_p v_{\max}^2 = \frac{1}{2}(1.67 \times 10^{-27})(2.0 \times 10^7)^2 = 3.34 \times 10^{-13} \text{ J}
+E_k = \frac{1}{2}m_p v_{\max}^2 = \frac{1}{2}(1.67 \times 10^{-27})(2.0 \times 10^7)^2 = 3.34 \times 10^{-13} \mathrm{ J}
 $$
 
 Converting to electron-volts:
 
 $$
-E_k = \frac{3.34 \times 10^{-13}}{1.60 \times 10^{-19}} = 2.09 \times 10^6 \text{ eV} = 2.09 \text{ MeV}
+E_k = \frac{3.34 \times 10^{-13}}{1.60 \times 10^{-19}} = 2.09 \times 10^6 \mathrm{ eV} = 2.09 \mathrm{ MeV}
 $$
 
 **Key insight:** The cyclotron frequency is independent of the proton's speed and radius. The
@@ -520,7 +520,7 @@ $r_2 = 12.5$ cm. Calculate the mass of each isotope in atomic mass units.
 **Step 1:** Find the selected velocity:
 
 $$
-v = \frac{E}{B_1} = \frac{6.0 \times 10^4}{0.20} = 3.0 \times 10^5 \text{ m/s}
+v = \frac{E}{B_1} = \frac{6.0 \times 10^4}{0.20} = 3.0 \times 10^5 \mathrm{ m/s}
 $$
 
 **Step 2:** Use $r = \frac{mv}{qB_2}$ to find each mass:
@@ -528,21 +528,21 @@ $$
 **Isotope 1:**
 
 $$
-m_1 = \frac{qB_2 r_1}{v} = \frac{(1.60 \times 10^{-19})(0.50)(0.116)}{3.0 \times 10^5} = 3.09 \times 10^{-26} \text{ kg}
+m_1 = \frac{qB_2 r_1}{v} = \frac{(1.60 \times 10^{-19})(0.50)(0.116)}{3.0 \times 10^5} = 3.09 \times 10^{-26} \mathrm{ kg}
 $$
 
 $$
-m_1 = \frac{3.09 \times 10^{-26}}{1.66 \times 10^{-27}} = 18.6 \text{ u}
+m_1 = \frac{3.09 \times 10^{-26}}{1.66 \times 10^{-27}} = 18.6 \mathrm{ u}
 $$
 
 **Isotope 2:**
 
 $$
-m_2 = \frac{(1.60 \times 10^{-19})(0.50)(0.125)}{3.0 \times 10^5} = 3.33 \times 10^{-26} \text{ kg}
+m_2 = \frac{(1.60 \times 10^{-19})(0.50)(0.125)}{3.0 \times 10^5} = 3.33 \times 10^{-26} \mathrm{ kg}
 $$
 
 $$
-m_2 = \frac{3.33 \times 10^{-26}}{1.66 \times 10^{-27}} = 20.1 \text{ u}
+m_2 = \frac{3.33 \times 10^{-26}}{1.66 \times 10^{-27}} = 20.1 \mathrm{ u}
 $$
 
 These correspond to neon-20 (20.2 u) and neon-22 (21.9 u) — the slight discrepancy is due to

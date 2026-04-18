@@ -246,7 +246,7 @@ $\sin\theta_{\max} = n_1\cos\theta_c = n_1\sqrt{1 - \sin^2\theta_c} = n_1\sqrt{1
 
 The **numerical aperture** is:
 
-$$\text{NA} = \sqrt{n_1^2 - n_2^2}$$
+$$\mathrm{NA} = \sqrt{n_1^2 - n_2^2}$$
 
 ### Signal Degradation
 
@@ -364,7 +364,7 @@ Calculate the critical angle at the core-cladding boundary and the numerical ape
 
 **Answer.** $\theta_c = \arcsin(1.45/1.50) = \arcsin(0.9667) = 75.2^\circ$.
 
-$\text{NA} = \sqrt{1.50^2 - 1.45^2} = \sqrt{2.25 - 2.1025} = \sqrt{0.1475} = 0.384$.
+$\mathrm{NA} = \sqrt{1.50^2 - 1.45^2} = \sqrt{2.25 - 2.1025} = \sqrt{0.1475} = 0.384$.
 
 <b>If you get this wrong, revise:</b>
 [Acceptance Angle and Numerical Aperture](#acceptance-angle-and-numerical-aperture)
@@ -394,7 +394,7 @@ the opposite face and determine whether TIR occurs.
 $\sin\theta_2 = 0.5/1.50 = 0.333$. $\theta_2 = 19.5^\circ$.
 
 For a rectangular block with parallel faces, the angle of incidence at the opposite face equals the
-angle of refraction at the first face: $\theta_{\text{opposite}} = 19.5^\circ$.
+angle of refraction at the first face: $\theta_{\mathrm{opposite}} = 19.5^\circ$.
 
 Since $19.5° < \theta_c = 41.8^\circ$, TIR does not occur. The ray emerges from the block.
 
@@ -475,7 +475,7 @@ angle for a water-glass boundary (if it exists). (b) A ray in the glass strikes 
 boundary at $55^\circ$ to the normal. Determine what happens.
 
 **Answer.** (a) For TIR to be possible, light must travel from denser to less dense. Since
-$n_{\text{glass}} = 1.50 > n_{\text{water}} = 1.33$, TIR is possible for light going from glass to
+$n_{\mathrm{glass}} = 1.50 > n_{\mathrm{water}} = 1.33$, TIR is possible for light going from glass to
 water. $\theta_c = \arcsin(1.33/1.50) = \arcsin(0.887) = 62.5^\circ$.
 
 (b) Since $55° < 62.5^\circ$, the angle of incidence is below the critical angle. Refraction occurs.
@@ -493,21 +493,21 @@ $\theta_2 = \arcsin(0.924) = 67.5^\circ$. The ray refracts into the water, bendi
 A swimming pool appears shallower than it actually is. A pool of true depth 2.0 m is viewed from
 above. (a) Calculate the apparent depth when viewed from directly above. (b) Calculate the apparent
 depth when viewed at an angle of $30^\circ$ to the vertical (from the normal). Take
-$n_{\text{water}} = 1.33$.
+$n_{\mathrm{water}} = 1.33$.
 
 **Answer.** (a) For near-normal viewing, the apparent depth is given by:
-$d_{\text{apparent}} = d_{\text{real}} / n = 2.0 / 1.33 = 1.50$ m.
+$d_{\mathrm{apparent}} = d_{\mathrm{real}} / n = 2.0 / 1.33 = 1.50$ m.
 
 (b) At an angle of $30^\circ$ to the vertical, a ray from the bottom of the pool refracts at the surface.
 Using Snell's law: $1.33 \times \sin\theta_1 = 1.00 \times \sin\theta_2$, where $\theta_1$ is the
 angle in water from the normal. The apparent position is found by tracing the refracted ray back.
 For a pool of depth $d$ and viewing angle $\theta_2$:
 
-$d_{\text{apparent}} = d \cdot \frac{\cos\theta_2}{\cos\theta_1}$
+$d_{\mathrm{apparent}} = d \cdot \frac{\cos\theta_2}{\cos\theta_1}$
 
 where $\theta_1 = \arcsin(\sin 30° / 1.33) = \arcsin(0.376) = 22.1^\circ$.
 
-$d_{\text{apparent}} = 2.0 \times \frac{\cos 30°}{\cos 22.1°} = 2.0 \times \frac{0.866}{0.927} = 2.0 \times 0.934 = 1.87$
+$d_{\mathrm{apparent}} = 2.0 \times \frac{\cos 30°}{\cos 22.1°} = 2.0 \times \frac{0.866}{0.927} = 2.0 \times 0.934 = 1.87$
 m.
 
 Note that the pool appears deeper when viewed at an angle than when viewed from directly above.

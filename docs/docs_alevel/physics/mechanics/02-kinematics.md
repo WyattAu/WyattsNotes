@@ -170,7 +170,7 @@ $\int_0^6 (6t - t^2)\,dt = [3t^2 - t^3/3]_0^6 = 108 - 72 = 36$ m.
 A body in **free fall** moves under the influence of gravity alone (neglecting air resistance). Near
 the Earth's surface, all objects experience the same gravitational acceleration:
 
-$$g \approx 9.81 \text{ m s}^{-2}$$
+$$g \approx 9.81 \mathrm{ m s}^{-2}$$
 
 This was established by Galileo's experiments and is a consequence of the equivalence principle
 (mass cancels in $F = ma = mg$).
@@ -195,7 +195,7 @@ We assume:
 This is the central insight. Since gravity acts vertically, it produces **no horizontal
 acceleration**. Therefore:
 
-- **Horizontal**: $a_x = 0 \implies v_x = \text{const} = v_0\cos\theta$
+- **Horizontal**: $a_x = 0 \implies v_x = \mathrm{const} = v_0\cos\theta$
 - **Vertical**: $a_y = -g \implies$ the motion is uniformly accelerated
 
 ### Deriving the Parabolic Trajectory
@@ -225,7 +225,7 @@ combined with constant vertical acceleration.
 ### Maximum Height
 
 At maximum height, the vertical velocity is zero: $v_y = v_0\sin\theta - gt = 0$, giving
-$t_{\text{peak}} = \frac{v_0\sin\theta}{g}$.
+$t_{\mathrm{peak}} = \frac{v_0\sin\theta}{g}$.
 
 $$H = v_0\sin\theta \cdot \frac{v_0\sin\theta}{g} - \frac{1}{2}g\left(\frac{v_0\sin\theta}{g}\right)^2 = \frac{v_0^2\sin^2\theta}{2g}$$
 
@@ -280,12 +280,12 @@ force depends on the object's speed and shape, and typically increases with spee
 **Terminal velocity.** For an object falling vertically under gravity with air resistance, the drag
 force increases with speed. Eventually, the drag force equals the weight of the object:
 
-$$F_{\text{drag}} = mg$$
+$$F_{\mathrm{drag}} = mg$$
 
 At this point the net force is zero, the acceleration is zero, and the object falls at a constant
 speed called the **terminal velocity** $v_T$:
 
-$$\boxed{v_T \text{ is reached when } F_{\text{drag}} = mg \implies a = 0}$$
+$$\boxed{v_T \mathrm{ is reached when } F_{\mathrm{drag}} = mg \implies a = 0}$$
 
 The $v$-$t$ graph for a falling object reaching terminal velocity shows the velocity increasing with
 a decreasing gradient (decreasing acceleration) until it asymptotically approaches $v_T$.
@@ -395,7 +395,7 @@ component.
 **Example.** A river flows east at $3.0$ m s$^{-1}$. A boat heads north at $5.0$ m s$^{-1}$ relative
 to the water. The boat's velocity relative to the ground is:
 
-$$\mathbf{v}_{\text{ground}} = (3.0\ \text{east}) + (5.0\ \text{north})$$
+$$\mathbf{v}_{\mathrm{ground}} = (3.0\ \mathrm{east}) + (5.0\ \mathrm{north})$$
 
 Speed relative to ground: $v = \sqrt{3^2 + 5^2} = \sqrt{34} = 5.83$ m s$^{-1}$.
 
@@ -431,7 +431,7 @@ from A to B is perpendicular to the relative velocity: $\mathbf{r}_{BA} \cdot \m
 Ship A sails north at $10$ m s$^{-1}$ and is at position $(0, 0)$ m. Ship B sails east at $10$ m
 s$^{-1}$ and is at position $(200, 0)$ m. Will they collide?
 
-$\mathbf{v}_{BA} = \mathbf{v}_B - \mathbf{v}_A = (10\ \text{east}) - (10\ \text{north}) = (10, -10)$
+$\mathbf{v}_{BA} = \mathbf{v}_B - \mathbf{v}_A = (10\ \mathrm{east}) - (10\ \mathrm{north}) = (10, -10)$
 m s$^{-1}$.
 
 The position of B relative to A is $(200, 0)$. The relative velocity $(10, -10)$ is **not** parallel
@@ -496,7 +496,7 @@ $t = \sqrt{\frac{80}{9.81}} = 2.86$ s.
 <summary>Problem 4</summary>
 Derive the equation $s = ut + \frac{1}{2}at^2$ from the definition of velocity as a derivative, assuming constant acceleration.
 
-**Answer.** $v = \frac{ds}{dt}$ and $a = \frac{dv}{dt} = \text{const}$. Integrating:
+**Answer.** $v = \frac{ds}{dt}$ and $a = \frac{dv}{dt} = \mathrm{const}$. Integrating:
 $\int_0^t a\,dt' = \int_u^v dv'$, giving $v = u + at$. Then $ds/dt = u + at$. Integrating:
 $\int_0^s ds' = \int_0^t (u + at')\,dt' = [ut' + \frac{1}{2}at'^2]_0^t = ut + \frac{1}{2}at^2$.
 $\square$

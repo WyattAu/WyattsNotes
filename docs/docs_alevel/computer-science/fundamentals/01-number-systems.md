@@ -107,7 +107,7 @@ Group: $101\ 1101\ 1011$
 
 Pad left group: $0101\ 1101\ 1011$
 
-Convert: $5\ \text{D}\ \text{B} = 5DB_{16}$
+Convert: $5\ \mathrm{D}\ \mathrm{B} = 5DB_{16}$
 </details>
 
 #### Hexadecimal to Binary
@@ -189,7 +189,7 @@ $$[-2^{n-1},\ 2^{n-1} - 1]$$
 The representation of a non-negative integer $x$ is simply its standard $n$-bit binary
 representation. The representation of a negative integer $-x$ (where $x \gt{} 0$) is:
 
-$$\text{TwosComp}_n(-x) = 2^n - x$$
+$$\mathrm{TwosComp}_n(-x) = 2^n - x$$
 
 ### Derivation: Why $\bar{x} + 1$ Works
 
@@ -608,15 +608,15 @@ the valid range, excluding $-2^{n-1}$).
 <details>
 <summary>Hint</summary>
 
-Start with $\text{TwosComp}(x) = 2^n - x$. Apply the operation again.
+Start with $\mathrm{TwosComp}(x) = 2^n - x$. Apply the operation again.
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Let $y = \text{TwosComp}_n(x) = 2^n - x$.
+Let $y = \mathrm{TwosComp}_n(x) = 2^n - x$.
 
-$\text{TwosComp}_n(y) = 2^n - y = 2^n - (2^n - x) = x$. ✓
+$\mathrm{TwosComp}_n(y) = 2^n - y = 2^n - (2^n - x) = x$. ✓
 
 The exception is $x = -2^{n-1}$, whose two's complement is
 $2^n - (-2^{n-1}) = 2^n + 2^{n-1} = 2^{n-1} \cdot 3$, which exceeds $n$ bits. In $n$-bit arithmetic,

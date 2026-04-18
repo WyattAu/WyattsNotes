@@ -48,7 +48,7 @@ graph TD
 In set notation:
 
 $$
-\text{expression} = \underbrace{\text{glvalue}}_{\text{lvalue} \cup \text{xvalue}} \;\cup\; \underbrace{\text{rvalue}}_{\text{prvalue} \cup \text{xvalue}}
+\mathrm{expression} = \underbrace{\mathrm{glvalue}}_{\mathrm{lvalue} \cup \mathrm{xvalue}} \;\cup\; \underbrace{\mathrm{rvalue}}_{\mathrm{prvalue} \cup \mathrm{xvalue}}
 $$
 
 The xvalue category occupies the intersection — it is both a glvalue (it has identity) and an rvalue
@@ -205,15 +205,15 @@ simultaneously.
 The compound categories are unions:
 
 $$
-\text{glvalue} = \text{lvalue} \cup \text{xvalue}
+\mathrm{glvalue} = \mathrm{lvalue} \cup \mathrm{xvalue}
 $$
 
 $$
-\text{rvalue} = \text{prvalue} \cup \text{xvalue}
+\mathrm{rvalue} = \mathrm{prvalue} \cup \mathrm{xvalue}
 $$
 
 $$
-\text{expression} = \text{lvalue} \cup \text{xvalue} \cup \text{prvalue}
+\mathrm{expression} = \mathrm{lvalue} \cup \mathrm{xvalue} \cup \mathrm{prvalue}
 $$
 
 ### Formal Definitions [N4950 S7.2.1]
@@ -323,7 +323,7 @@ rules [N4950 S11.3.2]:
 The rules are:
 
 $$
-T\&\& \to T\&, \quad T\&\& \to T\&\&, \quad \text{everything else} \to T\&
+T\&\& \to T\&, \quad T\&\& \to T\&\&, \quad \mathrm{everything else} \to T\&
 $$
 
 More concisely: **only `T&& &&` collapses to `T&&`; all other combinations collapse to `T&`.**

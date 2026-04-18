@@ -53,7 +53,7 @@ Always use multiple indicators.
 **GDP per capita** — total output divided by population. Usually adjusted for purchasing power
 parity (PPP) to account for differences in price levels between countries.
 
-$$\text{GDP per capita (PPP)} = \frac{\text{GDP (PPP)}}{\text{Population}}$$
+$$\mathrm{GDP per capita (PPP)} = \frac{\mathrm{GDP (PPP)}}{\mathrm{Population}}$$
 
 **GNI per capita** — GDP plus net income from abroad (remittances, profits from overseas
 investments). The World Bank uses GNI per capita to classify countries:
@@ -69,13 +69,13 @@ investments). The World Bank uses GNI per capita to classify countries:
 
 The HDI, published by the UNDP, is a composite index combining three dimensions:
 
-$$\text{HDI} = \frac{(\text{Health Index} + \text{Education Index} + \text{Income Index})}{3}$$
+$$\mathrm{HDI} = \frac{(\mathrm{Health Index} + \mathrm{Education Index} + \mathrm{Income Index})}{3}$$
 
 - **Health**: life expectancy at birth
 - **Education**: mean years of schooling + expected years of schooling
 - **Income**: GNI per capita (PPP, log-transformed)
 
-$$0 \leq \text{HDI} \leq 1$$
+$$0 \leq \mathrm{HDI} \leq 1$$
 
 | HDI range  | Category              |
 | ---------- | --------------------- |
@@ -93,7 +93,7 @@ all the income).
 The Gini coefficient is derived from the **Lorenz curve**, which plots the cumulative share of
 income received by the cumulative share of the population (ordered from poorest to richest).
 
-$$\text{Gini} = \frac{A}{A + B}$$
+$$\mathrm{Gini} = \frac{A}{A + B}$$
 
 where $A$ is the area between the line of perfect equality and the Lorenz curve, and $B$ is the area
 under the Lorenz curve.
@@ -150,7 +150,7 @@ $$\frac{Y}{L} = A \cdot f\left(\frac{K}{L}\right)$$
 3. **Technological progress** ($\Delta A$): improvements in knowledge, techniques, and efficiency.
    The only source of sustained long-run growth in per capita income.
 
-$$\boxed{\text{Long-run growth in } y = Y/L \text{ requires technological progress}}$$
+$$\boxed{\mathrm{Long-run growth in } y = Y/L \mathrm{ requires technological progress}}$$
 
 ### 3.2 Human Capital
 
@@ -193,7 +193,7 @@ abundant natural resources (oil, minerals) often grow more slowly than resource-
 
 The poverty trap is a self-reinforcing mechanism that prevents escape from poverty:
 
-$$\text{Low income} \to \text{Low savings} \to \text{Low investment} \to \text{Low productivity} \to \text{Low income}$$
+$$\mathrm{Low income} \to \mathrm{Low savings} \to \mathrm{Low investment} \to \mathrm{Low productivity} \to \mathrm{Low income}$$
 
 Without external intervention (aid, FDI, debt relief), countries can be trapped in a low-level
 equilibrium.
@@ -238,7 +238,7 @@ demographic dividend (if jobs are created) or a source of instability (if not).
 Replace imports with domestic production behind tariff walls. Used in Latin America (Brazil,
 Argentina) and India (pre-1991).
 
-$$\text{Tariffs} \to \text{Protected domestic industries grow} \to \text{Self-sufficiency}$$
+$$\mathrm{Tariffs} \to \mathrm{Protected domestic industries grow} \to \mathrm{Self-sufficiency}$$
 
 - **Advantages**: protects infant industries, reduces dependence on imports, retains foreign
   exchange.
@@ -251,7 +251,7 @@ $$\text{Tariffs} \to \text{Protected domestic industries grow} \to \text{Self-su
 Focus on producing goods for export. Used by East Asian "tiger" economies (South Korea, Taiwan,
 Singapore, Hong Kong).
 
-$$\text{Export incentives} \to \text{Access to world markets} \to \text{Economies of scale} \to \text{Growth}$$
+$$\mathrm{Export incentives} \to \mathrm{Access to world markets} \to \mathrm{Economies of scale} \to \mathrm{Growth}$$
 
 - **Advantages**: access to large world markets, competitive pressure drives efficiency, export
   earnings finance further investment.
@@ -326,7 +326,7 @@ Developing countries typically have a comparative advantage in:
 **Definition.** The **Prebisch-Singer hypothesis** states that the terms of trade for primary
 commodity exporters tend to deteriorate relative to manufactured goods exporters over the long run.
 
-$$\frac{P_{\text{primary}}}{P_{\text{manufactured}}} \text{ falls over time}$$
+$$\frac{P_{\mathrm{primary}}}{P_{\mathrm{manufactured}}} \mathrm{ falls over time}$$
 
 **Causes:**
 
@@ -373,8 +373,8 @@ liberalisation must be reciprocal and sequenced appropriately.
 The **environmental Kuznets curve (EKC)** hypothesises an inverted-U relationship between
 environmental degradation and income per capita:
 
-$$\text{At low income: degradation increases with growth}$$
-$$\text{At high income: degradation decreases as societies invest in environmental protection}$$
+$$\mathrm{At low income: degradation increases with growth}$$
+$$\mathrm{At high income: degradation decreases as societies invest in environmental protection}$$
 
 This suggests that environmental problems may resolve themselves as countries develop — but this is
 controversial. Some pollutants (e.g., local air pollution) follow the EKC pattern; others (e.g.,
@@ -427,7 +427,7 @@ environmental sustainability:
 
 Rostow proposed that all countries pass through five stages of economic development:
 
-$$\boxed{\text{Traditional society} \to \text{Preconditions for take-off} \to \text{Take-off} \to \text{Drive to maturity} \to \text{Age of high mass consumption}}$$
+$$\boxed{\mathrm{Traditional society} \to \mathrm{Preconditions for take-off} \to \mathrm{Take-off} \to \mathrm{Drive to maturity} \to \mathrm{Age of high mass consumption}}$$
 
 | Stage                        | Characteristics                                                                |
 | ---------------------------- | ------------------------------------------------------------------------------ |
@@ -477,7 +477,7 @@ modern sector reinvests its profits, expanding capacity and absorbing more worke
 until the surplus labour is exhausted (the **Lewis turning point**), after which wages rise in both
 sectors.
 
-$$\text{Profits in modern sector} \to \text{Reinvestment} \to \text{Expansion} \to \text{More workers absorbed}$$
+$$\mathrm{Profits in modern sector} \to \mathrm{Reinvestment} \to \mathrm{Expansion} \to \mathrm{More workers absorbed}$$
 
 **Limitations:** assumes unlimited surplus labour in agriculture, ignores urban unemployment,
 assumes wages in the modern sector are constant until the turning point, does not account for terms
@@ -490,7 +490,7 @@ richer countries (because they have less capital per worker and therefore higher
 investment). This implies that, all else equal, developing countries should "catch up" to developed
 countries.
 
-$$\text{If } A \text{ and } s \text{ are the same: poor countries grow faster}$$
+$$\mathrm{If } A \mathrm{ and } s \mathrm{ are the same: poor countries grow faster}$$
 
 In practice, convergence is **conditional**, not absolute — it only occurs among countries with
 similar institutions, policies, and human capital. This explains why some developing countries

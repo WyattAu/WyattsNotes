@@ -214,7 +214,7 @@ height of the left subtree.
 
 ### Balance Factor
 
-$$\text{bf}(v) = \text{height}(v.\text{right}) - \text{height}(v.\text{left})$$
+$$\mathrm{bf}(v) = \mathrm{height}(v.\mathrm{right}) - \mathrm{height}(v.\mathrm{left})$$
 
 After every insertion or deletion, we walk back up from the modified node to the root, rebalancing
 as needed. The balance factor must be in $\{-1, 0, 1\}$ for every node.
@@ -423,7 +423,7 @@ internal nodes has height at most $2 \log_2(n+1)$.
 
 **Proof sketch**: the shortest path from root to leaf has only black nodes (length = bh), and the
 longest has alternating red-black (length = 2 \cdot bh). Since at least half the nodes on any
-root-to-leaf path are black, the height $h \le 2 \cdot \text{bh}$. A tree with black-height $b$ has
+root-to-leaf path are black, the height $h \le 2 \cdot \mathrm{bh}$. A tree with black-height $b$ has
 at least $2^b - 1$ internal nodes, so $n \ge 2^{h/2} - 1$, giving $h \le 2 \log_2(n+1)$.
 
 ### Node Definition
@@ -847,17 +847,17 @@ class SplayTree:
 ### Amortised Analysis
 
 The splay operation has amortised cost $O(\log n)$ using the **potential method**. Define the
-potential of node $x$ with rank $r(x) = \lfloor \log_2(\text{size}(x)) \rfloor$. The amortised cost
-of a splay is bounded by $1 + 3(r(\text{root}) - r(x)) = O(\log n)$.
+potential of node $x$ with rank $r(x) = \lfloor \log_2(\mathrm{size}(x)) \rfloor$. The amortised cost
+of a splay is bounded by $1 + 3(r(\mathrm{root}) - r(x)) = O(\log n)$.
 
 The **access lemma** states that the amortised cost of splaying node $x$ is at most
-$3(\log_2 n - \log_2(\text{size}(x))) + 1$, which means frequently accessed nodes move toward the
+$3(\log_2 n - \log_2(\mathrm{size}(x))) + 1$, which means frequently accessed nodes move toward the
 root and become cheaper to access.
 
 ### Static Optimality Theorem
 
 For any sequence of $m$ accesses on a splay tree with $n$ nodes, the total access time is
-$O(m \log n + \text{OPT})$ where OPT is the optimal access time using any static binary search tree.
+$O(m \log n + \mathrm{OPT})$ where OPT is the optimal access time using any static binary search tree.
 This means splay trees are within a constant factor of optimal for any access pattern.
 
 ## Treaps

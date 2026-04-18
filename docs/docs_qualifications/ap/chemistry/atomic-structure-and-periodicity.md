@@ -40,9 +40,9 @@ Rutherford derived that the closest approach distance $d$ for a head-on collisio
 
 $$d = \frac{k \cdot Z_1 Z_2 e^2}{K}$$
 
-where $K$ is the kinetic energy of the alpha particle. For $5.5 \text{ MeV}$ alpha particles on
-gold, $d \approx 3 \times 10^{-14} \text{ m}$, which is much smaller than the atomic radius of about
-$10^{-10} \text{ m}$. This confirms that the nucleus is extremely small compared to the atom.
+where $K$ is the kinetic energy of the alpha particle. For $5.5 \mathrm{ MeV}$ alpha particles on
+gold, $d \approx 3 \times 10^{-14} \mathrm{ m}$, which is much smaller than the atomic radius of about
+$10^{-10} \mathrm{ m}$. This confirms that the nucleus is extremely small compared to the atom.
 
 ### Subatomic Particles
 
@@ -54,22 +54,22 @@ $10^{-10} \text{ m}$. This confirms that the nucleus is extremely small compared
 
 The nucleus contains over 99.9% of the atom's mass but occupies only about $10^{-12}$ of its volume.
 The electron cloud defines the size of the atom, with a typical radius of about
-$1 \text{
-\AA} = 10^{-10} \text{ m}$.
+$1 \mathrm{
+\AA} = 10^{-10} \mathrm{ m}$.
 
 ### Isotopes and Average Atomic Mass
 
 Isotopes are atoms of the same element with different numbers of neutrons. The average atomic mass
 shown on the periodic table is the weighted average of all naturally occurring isotopes:
 
-$$\text{Average atomic mass} = \sum f_i \cdot m_i$$
+$$\mathrm{Average atomic mass} = \sum f_i \cdot m_i$$
 
 where $f_i$ is the fractional abundance and $m_i$ is the mass of isotope $i$.
 
 **Worked Example.** Chlorine has two isotopes: Cl-35 (75.77%, 34.969 amu) and Cl-37 (24.23%, 36.966
 amu). Calculate the average atomic mass.
 
-$$\text{Average} = 0.7577 \times 34.969 + 0.2423 \times 36.966 = 26.496 + 8.958 = 35.454 \text{ amu}$$
+$$\mathrm{Average} = 0.7577 \times 34.969 + 0.2423 \times 36.966 = 26.496 + 8.958 = 35.454 \mathrm{ amu}$$
 
 This matches the value on the periodic table (35.45).
 
@@ -173,16 +173,16 @@ minimises electron-electron repulsion and maximises total spin, which is energet
 **Notation types:**
 
 - Full: $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^{10} 4p^6$
-- Noble gas core: $[\text{Ar}]\,4s^2 3d^{10} 4p^6$
+- Noble gas core: $[\mathrm{Ar}]\,4s^2 3d^{10} 4p^6$
 - Orbital diagram: boxes with up/down arrows
 
 ### Exceptions to Aufbau
 
-**Chromium ($Z = 24$):** $[\text{Ar}]\,4s^1 3d^5$ (half-filled d subshell is more stable)
+**Chromium ($Z = 24$):** $[\mathrm{Ar}]\,4s^1 3d^5$ (half-filled d subshell is more stable)
 
-**Copper ($Z = 29$):** $[\text{Ar}]\,4s^1 3d^{10}$ (fully filled d subshell is more stable)
+**Copper ($Z = 29$):** $[\mathrm{Ar}]\,4s^1 3d^{10}$ (fully filled d subshell is more stable)
 
-Similar exceptions occur for Mo ($4d^5$) and $\text{Ag}$ ($4d^{10}$).
+Similar exceptions occur for Mo ($4d^5$) and $\mathrm{Ag}$ ($4d^{10}$).
 
 The stability of half-filled and fully filled d subshells arises from exchange energy: electrons
 with parallel spins in different orbitals are slightly lower in energy than paired electrons. A
@@ -193,7 +193,7 @@ half-filled ($d^5$) or fully filled ($d^{10}$) subshell maximises this exchange 
 Write the electron configuration for Fe ($Z = 26$).
 
 $$
-\text{Fe}: [\text{Ar}]\,4s^2 3d^6
+\mathrm{Fe}: [\mathrm{Ar}]\,4s^2 3d^6
 $$
 
 Orbital diagram for $3d^6$:
@@ -214,16 +214,16 @@ The 4s electrons fill first but are written after 3d by convention.
 When forming cations, **remove $4s$ electrons before $3d$ electrons**, even though $4s$ fills first.
 This is because once the 3d subshell is occupied, its energy drops below that of 4s.
 
-**Example:** $\text{Fe}^{2+}$: $[\text{Ar}]\,3d^6$ (remove the two 4s electrons)
+**Example:** $\mathrm{Fe}^{2+}$: $[\mathrm{Ar}]\,3d^6$ (remove the two 4s electrons)
 
-**Example:** $\text{Fe}^{3+}$: $[\text{Ar}]\,3d^5$ (remove two 4s and one 3d electron)
+**Example:** $\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\,3d^5$ (remove two 4s and one 3d electron)
 
-**Example:** $\text{Cu}^+$: $[\text{Ar}]\,3d^{10}$
+**Example:** $\mathrm{Cu}^+$: $[\mathrm{Ar}]\,3d^{10}$
 
-**Worked Example.** Write the electron configuration for $\text{Mn}^{2+}$ ($Z = 25$).
+**Worked Example.** Write the electron configuration for $\mathrm{Mn}^{2+}$ ($Z = 25$).
 
-Neutral Mn: $[\text{Ar}]\,4s^2 3d^5$. Remove the two 4s electrons first: $\text{Mn}^{2+}$:
-$[\text{Ar}]\,3d^5$. Note that $\text{Mn}^{2+}$ has a half-filled d subshell, which is particularly
+Neutral Mn: $[\mathrm{Ar}]\,4s^2 3d^5$. Remove the two 4s electrons first: $\mathrm{Mn}^{2+}$:
+$[\mathrm{Ar}]\,3d^5$. Note that $\mathrm{Mn}^{2+}$ has a half-filled d subshell, which is particularly
 stable. This explains why Mn$^{2+}$ is a common oxidation state for manganese.
 
 ## Electromagnetic Radiation and Atomic Spectra (CED Unit 1)
@@ -236,15 +236,15 @@ $$
 E = h\nu = \frac{hc}{\lambda}
 $$
 
-where $h = 6.626 \times 10^{-34} \text{ J}\cdot\text{s}$ (Planck's constant),
-$c = 3.00 \times 10^8 \text{ m/s}$, $\nu$ is frequency, and $\lambda$ is wavelength.
+where $h = 6.626 \times 10^{-34} \mathrm{ J}\cdot\mathrm{s}$ (Planck's constant),
+$c = 3.00 \times 10^8 \mathrm{ m/s}$, $\nu$ is frequency, and $\lambda$ is wavelength.
 
 ### The Bohr Model for Hydrogen
 
 The energy levels of hydrogen are:
 
 $$
-E_n = -\frac{13.6 \text{ eV}}{n^2} = -\frac{2.18 \times 10^{-18} \text{ J}}{n^2}
+E_n = -\frac{13.6 \mathrm{ eV}}{n^2} = -\frac{2.18 \times 10^{-18} \mathrm{ J}}{n^2}
 $$
 
 The energy is negative because the electron is bound to the nucleus. The ground state ($n = 1$) has
@@ -253,7 +253,7 @@ the most negative (lowest) energy. As $n \to \infty$, $E_n \to 0$, which is the 
 The radius of the $n$th orbit:
 
 $$
-r_n = n^2 a_0 = n^2 \times 0.529 \text{ \AA}
+r_n = n^2 a_0 = n^2 \times 0.529 \mathrm{ \AA}
 $$
 
 where $a_0$ is the Bohr radius.
@@ -268,7 +268,7 @@ $$\frac{ke^2}{r^2} = \frac{mv^2}{r}$$
 Solving for $r_n$ and substituting into the total energy
 $E = KE + PE = \frac{1}{2}mv^2 - \frac{ke^2}{r}$:
 
-$$E_n = -\frac{mk^2e^4}{2n^2\hbar^2} = -\frac{13.6 \text{ eV}}{n^2}$$
+$$E_n = -\frac{mk^2e^4}{2n^2\hbar^2} = -\frac{13.6 \mathrm{ eV}}{n^2}$$
 
 This derivation shows that the quantised energy levels arise directly from the quantisation of
 angular momentum.
@@ -281,7 +281,7 @@ $$
 \frac{1}{\lambda} = R_H\!\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)
 $$
 
-where $R_H = 1.097 \times 10^7 \text{ m}^{-1}$ is the Rydberg constant.
+where $R_H = 1.097 \times 10^7 \mathrm{ m}^{-1}$ is the Rydberg constant.
 
 For emission: $n_i \gt n_f$ (photon released).
 
@@ -304,11 +304,11 @@ Calculate the wavelength of light emitted when an electron in hydrogen drops fro
 $n = 2$.
 
 $$
-\frac{1}{\lambda} = (1.097 \times 10^7)\!\left(\frac{1}{4} - \frac{1}{16}\right) = (1.097 \times 10^7)(0.1875) = 2.057 \times 10^6 \text{ m}^{-1}
+\frac{1}{\lambda} = (1.097 \times 10^7)\!\left(\frac{1}{4} - \frac{1}{16}\right) = (1.097 \times 10^7)(0.1875) = 2.057 \times 10^6 \mathrm{ m}^{-1}
 $$
 
 $$
-\lambda = \frac{1}{2.057 \times 10^6} = 4.86 \times 10^{-7} \text{ m} = 486 \text{ nm}
+\lambda = \frac{1}{2.057 \times 10^6} = 4.86 \times 10^{-7} \mathrm{ m} = 486 \mathrm{ nm}
 $$
 
 This is in the visible region (blue-green), part of the Balmer series.
@@ -316,7 +316,7 @@ This is in the visible region (blue-green), part of the Balmer series.
 The energy of the photon:
 
 $$
-E = \frac{hc}{\lambda} = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{4.86 \times 10^{-7}} = 4.09 \times 10^{-19} \text{ J} = 2.56 \text{ eV}
+E = \frac{hc}{\lambda} = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{4.86 \times 10^{-7}} = 4.09 \times 10^{-19} \mathrm{ J} = 2.56 \mathrm{ eV}
 $$
 
 :::
@@ -332,7 +332,7 @@ corresponds to a transition between two specific energy levels.
 Einstein's explanation: light consists of photons, each with energy $E = h\nu$.
 
 $$
-KE_{\text{max}} = h\nu - \phi
+KE_{\mathrm{max}} = h\nu - \phi
 $$
 
 where $\phi$ is the work function (minimum energy to eject an electron).
@@ -348,30 +348,30 @@ more photons arrive per unit time) but not their maximum kinetic energy.
 
 ### Worked Example: Photoelectric Effect
 
-The work function of sodium is $2.28 \text{ eV}$. Calculate the maximum kinetic energy of electrons
-ejected by light of wavelength $400 \text{ nm}$.
+The work function of sodium is $2.28 \mathrm{ eV}$. Calculate the maximum kinetic energy of electrons
+ejected by light of wavelength $400 \mathrm{ nm}$.
 
-$$E = \frac{hc}{\lambda} = \frac{1240 \text{ eV}\cdot\text{nm}}{400 \text{ nm}} = 3.10 \text{ eV}$$
+$$E = \frac{hc}{\lambda} = \frac{1240 \mathrm{ eV}\cdot\mathrm{nm}}{400 \mathrm{ nm}} = 3.10 \mathrm{ eV}$$
 
-$$KE_{\text{max}} = 3.10 - 2.28 = 0.82 \text{ eV}$$
+$$KE_{\mathrm{max}} = 3.10 - 2.28 = 0.82 \mathrm{ eV}$$
 
 ## Periodic Trends (CED Unit 1)
 
-### Effective Nuclear Charge ($Z_{\text{eff}}$)
+### Effective Nuclear Charge ($Z_{\mathrm{eff}}$)
 
 $$
-Z_{\text{eff}} = Z - S
+Z_{\mathrm{eff}} = Z - S
 $$
 
-where $Z$ is the atomic number and $S$ is the shielding constant. $Z_{\text{eff}}$ increases across
+where $Z$ is the atomic number and $S$ is the shielding constant. $Z_{\mathrm{eff}}$ increases across
 a period (less shielding, same number of shells) and stays roughly constant down a group (more
 shielding offsets more protons).
 
-The concept of $Z_{\text{eff}}$ is the key to understanding all periodic trends. Across a period,
+The concept of $Z_{\mathrm{eff}}$ is the key to understanding all periodic trends. Across a period,
 $Z$ increases by one per element but the shielding increases very little (electrons in the same
-shell do not shield each other effectively), so $Z_{\text{eff}}$ increases significantly. Down a
+shell do not shield each other effectively), so $Z_{\mathrm{eff}}$ increases significantly. Down a
 group, $Z$ increases but the additional inner shells provide substantial shielding, so
-$Z_{\text{eff}}$ remains approximately constant.
+$Z_{\mathrm{eff}}$ remains approximately constant.
 
 ### Key Periodic Trends
 
@@ -389,7 +389,7 @@ The first ionization energy ($IE_1$) is the energy required to remove the outerm
 gaseous atom:
 
 $$
-\text{X}(g) \to \text{X}^+(g) + e^- \quad \Delta H = IE_1
+\mathrm{X}(g) \to \mathrm{X}^+(g) + e^- \quad \Delta H = IE_1
 $$
 
 **Exceptions:** $IE_1$ decreases from Group 2 to 13 (s to p; the p electron is higher in energy and
@@ -426,7 +426,7 @@ ionic bonding; small differences ($\lt 0.4$) lead to nonpolar covalent bonding.
 The energy change when an electron is added to a gaseous atom:
 
 $$
-\text{X}(g) + e^- \to \text{X}^-(g) \quad \Delta H = EA
+\mathrm{X}(g) + e^- \to \mathrm{X}^-(g) \quad \Delta H = EA
 $$
 
 More negative EA = greater attraction for the added electron. Group 17 elements have the most
@@ -442,25 +442,25 @@ repulsion, allowing the remaining electrons to be pulled closer to the nucleus.
 repulsion.
 
 **Isoelectronic series** (same number of electrons): ionic radius decreases with increasing nuclear
-charge. For example: $\text{O}^{2-} \gt \text{F}^- \gt \text{Na}^+ \gt \text{Mg}^{2+}$ (all have 10
+charge. For example: $\mathrm{O}^{2-} \gt \mathrm{F}^- \gt \mathrm{Na}^+ \gt \mathrm{Mg}^{2+}$ (all have 10
 electrons, but nuclear charge increases from 8 to 12).
 
 ### Worked Example: Isoelectronic Radius Comparison
 
-Arrange in order of increasing ionic radius: $\text{Na}^+$, $\text{Mg}^{2+}$, $\text{F}^-$,
-$\text{O}^{2-}$.
+Arrange in order of increasing ionic radius: $\mathrm{Na}^+$, $\mathrm{Mg}^{2+}$, $\mathrm{F}^-$,
+$\mathrm{O}^{2-}$.
 
 All four ions have 10 electrons (isoelectronic with Ne). The nuclear charges are: O (8), F (9), Na
 (11), Mg (12). Higher nuclear charge pulls electrons closer, giving a smaller radius.
 
-Order: $\text{Mg}^{2+} \lt \text{Na}^+ \lt \text{F}^- \lt \text{O}^{2-}$.
+Order: $\mathrm{Mg}^{2+} \lt \mathrm{Na}^+ \lt \mathrm{F}^- \lt \mathrm{O}^{2-}$.
 
 ### Worked Example: Successive Ionization Energies
 
 The first five ionization energies of aluminium ($Z = 13$) are: 578, 1817, 2745, 11578, and 14842
 kJ/mol. Explain the pattern.
 
-Al: $[\text{Ne}]\,3s^2 3p^1$. The first three electrons are removed from the n=3 shell (relatively
+Al: $[\mathrm{Ne}]\,3s^2 3p^1$. The first three electrons are removed from the n=3 shell (relatively
 easy). The large jump between the third (2745) and fourth (11578) IE occurs because the fourth
 electron must be removed from the n=2 shell, which is much closer to the nucleus and less shielded.
 This confirms aluminium has three valence electrons (Group 13).
@@ -502,18 +502,18 @@ with all electrons paired are **diamagnetic** (weakly repelled by a magnetic fie
 
 ### Worked Example: Magnetic Properties
 
-Determine the magnetic properties of $\text{Cr}^{3+}$.
+Determine the magnetic properties of $\mathrm{Cr}^{3+}$.
 
-$\text{Cr}^{3+}$: $[\text{Ar}]\,3d^3$. Three unpaired electrons in the 3d subshell (one in each of
-three orbitals, following Hund's rule). Therefore, $\text{Cr}^{3+}$ is paramagnetic.
+$\mathrm{Cr}^{3+}$: $[\mathrm{Ar}]\,3d^3$. Three unpaired electrons in the 3d subshell (one in each of
+three orbitals, following Hund's rule). Therefore, $\mathrm{Cr}^{3+}$ is paramagnetic.
 
 ### Worked Example: Predicting Magnetic Properties
 
-Predict the magnetic properties of $\text{Zn}^{2+}$ and $\text{Fe}^{3+}$.
+Predict the magnetic properties of $\mathrm{Zn}^{2+}$ and $\mathrm{Fe}^{3+}$.
 
-$\text{Zn}^{2+}$: $[\text{Ar}]\,3d^{10}$. All 3d orbitals are fully paired. Diamagnetic.
+$\mathrm{Zn}^{2+}$: $[\mathrm{Ar}]\,3d^{10}$. All 3d orbitals are fully paired. Diamagnetic.
 
-$\text{Fe}^{3+}$: $[\text{Ar}]\,3d^5$. Five unpaired electrons (one in each 3d orbital, maximising
+$\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\,3d^5$. Five unpaired electrons (one in each 3d orbital, maximising
 parallel spins by Hund's rule). Paramagnetic, and strongly so because of the five unpaired
 electrons.
 
@@ -527,10 +527,10 @@ the highest occupied d subshell.
 
 | Element | Configuration               | Valence Electrons |
 | ------- | --------------------------- | ----------------- |
-| Sc      | $[\text{Ar}]\,4s^2 3d^1$    | 3                 |
-| Ti      | $[\text{Ar}]\,4s^2 3d^2$    | 4                 |
-| Fe      | $[\text{Ar}]\,4s^2 3d^6$    | 8                 |
-| Cu      | $[\text{Ar}]\,4s^1 3d^{10}$ | 11                |
+| Sc      | $[\mathrm{Ar}]\,4s^2 3d^1$    | 3                 |
+| Ti      | $[\mathrm{Ar}]\,4s^2 3d^2$    | 4                 |
+| Fe      | $[\mathrm{Ar}]\,4s^2 3d^6$    | 8                 |
+| Cu      | $[\mathrm{Ar}]\,4s^1 3d^{10}$ | 11                |
 
 ### Common Oxidation States of Transition Metals
 
@@ -545,18 +545,18 @@ Transition metals can lose different numbers of electrons, giving multiple oxida
 
 ### Worked Example: Transition Metal Ion Configurations
 
-Write the electron configurations for Fe, $\text{Fe}^{2+}$, and $\text{Fe}^{3+}$. Explain why
-$\text{Fe}^{3+}$ is particularly stable.
+Write the electron configurations for Fe, $\mathrm{Fe}^{2+}$, and $\mathrm{Fe}^{3+}$. Explain why
+$\mathrm{Fe}^{3+}$ is particularly stable.
 
-Fe: $[\text{Ar}]\,4s^2 3d^6$.
+Fe: $[\mathrm{Ar}]\,4s^2 3d^6$.
 
-$\text{Fe}^{2+}$: $[\text{Ar}]\,3d^6$ (remove 4s electrons).
+$\mathrm{Fe}^{2+}$: $[\mathrm{Ar}]\,3d^6$ (remove 4s electrons).
 
-$\text{Fe}^{3+}$: $[\text{Ar}]\,3d^5$ (remove 4s and one 3d electron).
+$\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\,3d^5$ (remove 4s and one 3d electron).
 
-$\text{Fe}^{3+}$ has a half-filled 3d subshell ($d^5$), which is particularly stable due to maximum
-exchange energy (all five electrons have parallel spins). This explains why $\text{Fe}^{3+}$ is more
-common and more stable than $\text{Fe}^{2+}$ in many compounds.
+$\mathrm{Fe}^{3+}$ has a half-filled 3d subshell ($d^5$), which is particularly stable due to maximum
+exchange energy (all five electrons have parallel spins). This explains why $\mathrm{Fe}^{3+}$ is more
+common and more stable than $\mathrm{Fe}^{2+}$ in many compounds.
 
 ### Worked Example: Periodic Trend Prediction
 
@@ -564,14 +564,14 @@ Without consulting a data table, arrange the following in order of increasing fi
 energy: Na, Al, Cl, Ar.
 
 Na (Group 1) has the lowest IE (one valence electron, far from nucleus, well shielded). Al
-(Group 13) is next (s to p dip, lower than Mg). Cl (Group 17) is higher (high $Z_{\text{eff}}$,
+(Group 13) is next (s to p dip, lower than Mg). Cl (Group 17) is higher (high $Z_{\mathrm{eff}}$,
 nearly full shell). Ar (Group 18) has the highest IE (full shell, very stable configuration).
 
 Order: Na &lt; Al &lt; Cl &lt; Ar.
 
 ### Derivation: Ionization Energy Across a Period
 
-The first ionization energy generally increases across a period because $Z_{\text{eff}}$ increases
+The first ionization energy generally increases across a period because $Z_{\mathrm{eff}}$ increases
 while the principal quantum number $n$ stays the same. The outermost electron is held more tightly.
 
 The decrease from Group 2 to Group 13 occurs because the Group 13 electron enters a p subshell,
@@ -579,18 +579,18 @@ which is higher in energy and more effectively shielded than the s subshell of G
 
 The decrease from Group 15 to Group 16 occurs because the Group 16 electron pairs with another
 electron in the same p orbital, creating electron-electron repulsion (pairing energy) that offsets
-the increase in $Z_{\text{eff}}$.
+the increase in $Z_{\mathrm{eff}}$.
 
 ## Summary Table: Periodic Trends Explained
 
 | Trend             | Direction                  | Explanation                                                      |
 | ----------------- | -------------------------- | ---------------------------------------------------------------- |
-| Atomic radius     | Decreases L to R           | Increasing $Z_{\text{eff}}$ pulls electrons closer               |
+| Atomic radius     | Decreases L to R           | Increasing $Z_{\mathrm{eff}}$ pulls electrons closer               |
 | Atomic radius     | Increases top to bottom    | Additional shells outweigh increased nuclear charge              |
-| Ionization energy | Increases L to R           | Higher $Z_{\text{eff}}$ makes electrons harder to remove         |
+| Ionization energy | Increases L to R           | Higher $Z_{\mathrm{eff}}$ makes electrons harder to remove         |
 | Ionization energy | Decreases top to bottom    | Outer electrons are further from nucleus and more shielded       |
-| Electron affinity | Generally increases L to R | Greater $Z_{\text{eff}}$ increases attraction for added electron |
-| Electronegativity | Increases L to R           | Greater $Z_{\text{eff}}$ increases pull on bonding electrons     |
+| Electron affinity | Generally increases L to R | Greater $Z_{\mathrm{eff}}$ increases attraction for added electron |
+| Electronegativity | Increases L to R           | Greater $Z_{\mathrm{eff}}$ increases pull on bonding electrons     |
 | Electronegativity | Decreases top to bottom    | Greater distance from nucleus reduces pull on bonding electrons  |
 
 ## Common Pitfalls
@@ -609,7 +609,7 @@ the increase in $Z_{\text{eff}}$.
    atoms require the quantum mechanical model.
 7. **Using the wrong sign for energy.** Energy levels are negative (bound states); transitions to
    higher levels require energy input.
-8. **Confusing effective nuclear charge with nuclear charge.** $Z_{\text{eff}}$ accounts for
+8. **Confusing effective nuclear charge with nuclear charge.** $Z_{\mathrm{eff}}$ accounts for
    shielding; it is always less than $Z$.
 9. **Assuming ionization energy always increases across a period.** The dips at Group 13 and Group
    16 are important exceptions.
@@ -630,13 +630,13 @@ the increase in $Z_{\text{eff}}$.
 
 4. Explain why the first ionization energy of oxygen is less than that of nitrogen.
 
-5. Arrange the following in order of increasing atomic radius: $\text{Mg}^{2+}$, $\text{Na}^+$,
-   $\text{F}^-$, $\text{O}^{2-}$.
+5. Arrange the following in order of increasing atomic radius: $\mathrm{Mg}^{2+}$, $\mathrm{Na}^+$,
+   $\mathrm{F}^-$, $\mathrm{O}^{2-}$.
 
-6. The work function of potassium is $2.30 \text{ eV}$. What is the maximum kinetic energy of
-   electrons ejected by light of wavelength $400 \text{ nm}$?
+6. The work function of potassium is $2.30 \mathrm{ eV}$. What is the maximum kinetic energy of
+   electrons ejected by light of wavelength $400 \mathrm{ nm}$?
 
-7. Write the electron configurations for $\text{Cr}^{3+}$ and $\text{Cu}^+$.
+7. Write the electron configurations for $\mathrm{Cr}^{3+}$ and $\mathrm{Cu}^+$.
 
 8. Calculate the energy of the $n = 3$ level of hydrogen in joules and electron-volts.
 
@@ -644,8 +644,8 @@ the increase in $Z_{\text{eff}}$.
 
 10. Which element has the higher electronegativity, and why: P or Cl?
 
-11. For the isoelectronic series $\text{N}^{3-}$, $\text{O}^{2-}$, $\text{F}^-$, $\text{Na}^+$,
-    $\text{Mg}^{2+}$, arrange the ions in order of increasing radius and explain the trend.
+11. For the isoelectronic series $\mathrm{N}^{3-}$, $\mathrm{O}^{2-}$, $\mathrm{F}^-$, $\mathrm{Na}^+$,
+    $\mathrm{Mg}^{2+}$, arrange the ions in order of increasing radius and explain the trend.
 
 12. Explain, in terms of effective nuclear charge, why atomic radius decreases across a period.
 
@@ -662,17 +662,17 @@ the increase in $Z_{\text{eff}}$.
 
 17. Explain why the electron affinity of chlorine is more negative than that of fluorine.
 
-18. A photon with energy $10.2 \text{ eV}$ is absorbed by a hydrogen atom in the ground state. To
+18. A photon with energy $10.2 \mathrm{ eV}$ is absorbed by a hydrogen atom in the ground state. To
     what energy level is the electron excited?
 
-19. Write the electron configuration for $\text{Co}^{2+}$ and state the number of unpaired
+19. Write the electron configuration for $\mathrm{Co}^{2+}$ and state the number of unpaired
     electrons.
 
 20. Explain, using the concept of shielding, why the atomic radius increases down Group 2 despite
     increasing nuclear charge.
 
-21. Determine whether each of the following is paramagnetic or diamagnetic: (a) $\text{Zn}^{2+}$ (b)
-    $\text{Fe}^{2+}$ (c) $\text{O}^{2-}$ (d) Ne.
+21. Determine whether each of the following is paramagnetic or diamagnetic: (a) $\mathrm{Zn}^{2+}$ (b)
+    $\mathrm{Fe}^{2+}$ (c) $\mathrm{O}^{2-}$ (d) Ne.
 
 22. Calculate the frequency and wavelength of light emitted when an electron in hydrogen drops from
     $n = 6$ to $n = 2$. Identify the spectral series.
@@ -683,7 +683,7 @@ the increase in $Z_{\text{eff}}$.
 24. Explain why the atomic radius of gallium is nearly the same as that of aluminium, despite
     gallium being in the period below aluminium.
 
-25. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \text{ m/s}$.
+25. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \mathrm{ m/s}$.
     (Electron mass = $9.11 \times 10^{-31}$ kg.)
 
 26. Explain why potassium has a lower first ionization energy than argon, despite having a higher
@@ -695,7 +695,7 @@ the increase in $Z_{\text{eff}}$.
 28. Calculate the energy difference (in joules) between the $n = 1$ and $n = 2$ energy levels of the
     hydrogen atom.
 
-29. A student writes the electron configuration of Cu as $[\text{Ar}]\,4s^2 3d^9$. Identify the
+29. A student writes the electron configuration of Cu as $[\mathrm{Ar}]\,4s^2 3d^9$. Identify the
     error and write the correct configuration.
 
 30. Explain why the atomic radius of Ga (gallium) is similar to that of Al (aluminium), despite Ga

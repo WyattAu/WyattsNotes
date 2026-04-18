@@ -67,9 +67,9 @@ B+ Tree (all data in leaves, leaves linked):
 
 For a B+ tree with fan-out $f$ (number of children per internal node) and height $h$:
 
-$$\text{Max entries} = f^h$$
+$$\mathrm{Max entries} = f^h$$
 
-$$\text{Height} = \lceil \log_f N \rceil$$
+$$\mathrm{Height} = \lceil \log_f N \rceil$$
 
 In practice:
 
@@ -434,21 +434,21 @@ Bitmap Scan (sequential I/O):
 **Nested Loop Join:**
 
 - For each row in the outer table, look up matching rows in the inner table using an index
-- Cost: $O(N_{\text{outer}} \times \log N_{\text{inner}})$ with index on inner
+- Cost: $O(N_{\mathrm{outer}} \times \log N_{\mathrm{inner}})$ with index on inner
 - Best for: small outer table, indexed inner table, or when only a few rows match
 
 **Hash Join:**
 
 - Build an in-memory hash table from the inner (smaller) table, then probe with the outer table
-- Cost: $O(N_{\text{inner}} + N_{\text{outer}})$
+- Cost: $O(N_{\mathrm{inner}} + N_{\mathrm{outer}})$
 - Best for: large tables, equi-joins, when the inner table fits in memory (work_mem)
 - Fallback: if the hash table exceeds `work_mem`, spills to disk (slow)
 
 **Merge Join:**
 
 - Both inputs must be sorted on the join key; merge in a single pass
-- Cost: $O(N_{\text{outer}} \log N_{\text{outer}} + N_{\text{inner}} \log N_{\text{inner}})$ for
-  sorting, $O(N_{\text{outer}} + N_{\text{inner}})$ for merge
+- Cost: $O(N_{\mathrm{outer}} \log N_{\mathrm{outer}} + N_{\mathrm{inner}} \log N_{\mathrm{inner}})$ for
+  sorting, $O(N_{\mathrm{outer}} + N_{\mathrm{inner}})$ for merge
 - Best for: pre-sorted inputs, large result sets, range joins
 
 ### Understanding Cost Estimates

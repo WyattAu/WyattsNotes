@@ -99,7 +99,7 @@ $$P\!\left(\bigcap_{i=1}^{n} A_i\right) = P(A_1) \cdot P(A_2|A_1) \cdot P(A_3|A_
 
 **Definition.** The conditional probability of $A$ given $B$ is
 
-$$P(A|B) = \frac{P(A \cap B)}{P(B)} \quad \text{for } P(B) > 0$$
+$$P(A|B) = \frac{P(A \cap B)}{P(B)} \quad \mathrm{for } P(B) > 0$$
 
 **Intuition.** $P(A|B)$ is the probability of $A$ occurring **given that we already know $B$ has
 occurred**. Knowing $B$ has happened changes our sample space from $\Omega$ to $B$, and we measure
@@ -223,9 +223,9 @@ all paths leading to it (addition rule for mutually exclusive paths).
 
 **Example.** A bag contains 3 red and 2 blue balls. Two balls are drawn without replacement.
 
-$$P(\text{both red}) = \frac{3}{5} \times \frac{2}{4} = \frac{6}{20} = \frac{3}{10}$$
+$$P(\mathrm{both red}) = \frac{3}{5} \times \frac{2}{4} = \frac{6}{20} = \frac{3}{10}$$
 
-$$P(\text{one of each}) = \frac{3}{5} \times \frac{2}{4} + \frac{2}{5} \times \frac{3}{4} = \frac{6}{20} + \frac{6}{20} = \frac{12}{20} = \frac{3}{5}$$
+$$P(\mathrm{one of each}) = \frac{3}{5} \times \frac{2}{4} + \frac{2}{5} \times \frac{3}{4} = \frac{6}{20} + \frac{6}{20} = \frac{12}{20} = \frac{3}{5}$$
 
 ---
 
@@ -243,7 +243,7 @@ $n! = n(n-1)(n-2)\cdots 1$, with $0! = 1$.
 ### 7.3 Probability with equally likely outcomes
 
 When all outcomes are equally likely:
-$P(A) = \dfrac{|A|}{|\Omega|} = \dfrac{\text{number of favourable outcomes}}{\text{total number of outcomes}}$.
+$P(A) = \dfrac{|A|}{|\Omega|} = \dfrac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}$.
 
 ---
 
@@ -336,27 +336,27 @@ Find the probability of drawing exactly 2 red balls.
 
 There are $\binom{3}{2} = 3$ ways to arrange the two red draws among three positions: RRB, RBR, BRR.
 
-$$P(\text{RRB}) = \frac{2}{5} \times \frac{1}{4} \times \frac{3}{3} = \frac{6}{60} = \frac{1}{10}$$
+$$P(\mathrm{RRB}) = \frac{2}{5} \times \frac{1}{4} \times \frac{3}{3} = \frac{6}{60} = \frac{1}{10}$$
 
-$$P(\text{RBR}) = \frac{2}{5} \times \frac{3}{4} \times \frac{1}{3} = \frac{6}{60} = \frac{1}{10}$$
+$$P(\mathrm{RBR}) = \frac{2}{5} \times \frac{3}{4} \times \frac{1}{3} = \frac{6}{60} = \frac{1}{10}$$
 
-$$P(\text{BRR}) = \frac{3}{5} \times \frac{2}{4} \times \frac{1}{3} = \frac{6}{60} = \frac{1}{10}$$
+$$P(\mathrm{BRR}) = \frac{3}{5} \times \frac{2}{4} \times \frac{1}{3} = \frac{6}{60} = \frac{1}{10}$$
 
-$$P(\text{exactly 2 red}) = \frac{1}{10} + \frac{1}{10} + \frac{1}{10} = \frac{3}{10}$$
+$$P(\mathrm{exactly 2 red}) = \frac{1}{10} + \frac{1}{10} + \frac{1}{10} = \frac{3}{10}$$
 
 ### 9.3 At least and at most problems
 
 For "at least $k$" problems, it is often easier to compute the complement:
-$P(\text{at least } k) = 1 - P(\text{at most } k-1)$.
+$P(\mathrm{at least } k) = 1 - P(\mathrm{at most } k-1)$.
 
-**Example.** A fair coin is tossed 4 times. Find $P(\text{at least 3 heads})$.
+**Example.** A fair coin is tossed 4 times. Find $P(\mathrm{at least 3 heads})$.
 
-$$P(\text{at least 3 heads}) = P(\text{exactly 3 heads}) + P(\text{exactly 4 heads})$$
+$$P(\mathrm{at least 3 heads}) = P(\mathrm{exactly 3 heads}) + P(\mathrm{exactly 4 heads})$$
 
 $$= \binom{4}{3}\left(\frac{1}{2}\right)^4 + \binom{4}{4}\left(\frac{1}{2}\right)^4 = \frac{4}{16} + \frac{1}{16} = \frac{5}{16}$$
 
 Alternatively:
-$P(\text{at least 3 heads}) = 1 - P(\text{at most 2 heads}) = 1 - \frac{11}{16} = \frac{5}{16}$.
+$P(\mathrm{at least 3 heads}) = 1 - P(\mathrm{at most 2 heads}) = 1 - \frac{11}{16} = \frac{5}{16}$.
 
 ### 9.4 Conditional probability from tree diagrams
 
@@ -394,7 +394,7 @@ function $p(x) = P(X = x)$, defined for all $x \in \mathbb{R}$.
 **Properties of a PMF.** A function $p \colon \mathbb{R} \to [0, 1]$ is a valid PMF if and only if:
 
 1. $p(x) \geq 0$ for all $x$.
-2. $\displaystyle\sum_{\text{all } x} p(x) = 1$.
+2. $\displaystyle\sum_{\mathrm{all } x} p(x) = 1$.
 
 **Proof.** Property 1 follows from non-negativity of probability. Property 2 follows because the
 events $\\{X = x\\}$ for all possible values of $x$ form a partition of $\Omega$, so their
@@ -413,19 +413,19 @@ $\lim_{x \to +\infty} F(x) = 1$.
 
 **Definition.** The **expected value** (mean) of a discrete random variable $X$ is
 
-$$E(X) = \mu = \sum_{\text{all } x} x \cdot p(x)$$
+$$E(X) = \mu = \sum_{\mathrm{all } x} x \cdot p(x)$$
 
 **Definition.** The **variance** of $X$ is
 
-$$\text{Var}(X) = \sigma^2 = E\!\left[(X - \mu)^2\right] = \sum_{\text{all } x} (x - \mu)^2 \cdot p(x)$$
+$$\mathrm{Var}(X) = \sigma^2 = E\!\left[(X - \mu)^2\right] = \sum_{\mathrm{all } x} (x - \mu)^2 \cdot p(x)$$
 
 An equivalent computational formula is:
 
-$$\text{Var}(X) = E(X^2) - [E(X)]^2$$
+$$\mathrm{Var}(X) = E(X^2) - [E(X)]^2$$
 
 **Proof of the computational formula:**
 
-$$\text{Var}(X) = E\!\left[(X - \mu)^2\right] = E(X^2 - 2\mu X + \mu^2) = E(X^2) - 2\mu E(X) + \mu^2 = E(X^2) - \mu^2. \quad \blacksquare$$
+$$\mathrm{Var}(X) = E\!\left[(X - \mu)^2\right] = E(X^2 - 2\mu X + \mu^2) = E(X^2) - 2\mu E(X) + \mu^2 = E(X^2) - \mu^2. \quad \blacksquare$$
 
 ### 10.5 Worked example
 
@@ -447,10 +447,10 @@ $$E(X^2) = 1\!\cdot\!\tfrac{1}{12} + 4\!\cdot\!\tfrac{1}{6} + 9\!\cdot\!\tfrac{1
 
 $$= \tfrac{1 + 8 + 27 + 48 + 50 + 36}{12} = \tfrac{170}{12} = \tfrac{85}{6}$$
 
-$$\text{Var}(X) = E(X^2) - [E(X)]^2 = \tfrac{85}{6} - \tfrac{49}{4} = \tfrac{170 - 147}{12} = \tfrac{23}{12} \approx 1.917$$
+$$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \tfrac{85}{6} - \tfrac{49}{4} = \tfrac{170 - 147}{12} = \tfrac{23}{12} \approx 1.917$$
 
 :::info
-For a fair die, $E(X) = 3.5$ and $\text{Var}(X) = 35/12 \approx 2.917$. The biased die above
+For a fair die, $E(X) = 3.5$ and $\mathrm{Var}(X) = 35/12 \approx 2.917$. The biased die above
 has the same mean but smaller variance, meaning its outcomes are more concentrated around the
 centre.
 :::
@@ -551,7 +551,7 @@ Two coins are tossed. Given that at least one is heads, find the probability tha
 
 <details>
 <summary>Solution 6</summary>
-$\Omega = \{HH, HT, TH, TT\}$. $A = \{\text{at least one heads}\} = \{HH, HT, TH\}$. $B = \{\text{both heads}\} = \{HH\}$.
+$\Omega = \{HH, HT, TH, TT\}$. $A = \{\mathrm{at least one heads}\} = \{HH, HT, TH\}$. $B = \{\mathrm{both heads}\} = \{HH\}$.
 
 $P(B|A) = P(B \cap A)/P(A) = P(B)/P(A) = (1/4)/(3/4) = 1/3$.
 
@@ -652,7 +652,7 @@ Ways to get a flush: choose suit (4 ways), then 5 cards from that suit ($\binom{
 
 Total flushes: $4 \times 1287 = 5148$.
 
-$P(\text{flush}) = 5148/2598960 \approx 0.00198 \approx 0.2\%$.
+$P(\mathrm{flush}) = 5148/2598960 \approx 0.00198 \approx 0.2\%$.
 
 **If you get this wrong, revise:** [Counting Principles](#7-counting-principles) — Section 7.
 
@@ -660,7 +660,7 @@ $P(\text{flush}) = 5148/2598960 \approx 0.00198 \approx 0.2\%$.
 
 <details>
 <summary>Problem 13</summary>
-A discrete random variable $X$ has PMF $p(x) = kx$ for $x \in \{1, 2, 3, 4, 5\}$ and $p(x) = 0$ otherwise. Find the constant $k$, then find $E(X)$ and $\text{Var}(X)$.
+A discrete random variable $X$ has PMF $p(x) = kx$ for $x \in \{1, 2, 3, 4, 5\}$ and $p(x) = 0$ otherwise. Find the constant $k$, then find $E(X)$ and $\mathrm{Var}(X)$.
 </details>
 
 <details>
@@ -671,7 +671,7 @@ $$E(X) = \sum_{x=1}^{5} x \cdot \frac{x}{15} = \frac{1 + 4 + 9 + 16 + 25}{15} = 
 
 $$E(X^2) = \sum_{x=1}^{5} x^2 \cdot \frac{x}{15} = \frac{1 + 8 + 27 + 64 + 125}{15} = \frac{225}{15} = 15$$
 
-$$\text{Var}(X) = E(X^2) - [E(X)]^2 = 15 - \frac{121}{9} = \frac{135 - 121}{9} = \frac{14}{9}$$
+$$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = 15 - \frac{121}{9} = \frac{135 - 121}{9} = \frac{14}{9}$$
 
 **If you get this wrong, revise:**
 [Discrete Random Variables](#10-discrete-random-variables-and-probability-mass-functions) —
@@ -802,7 +802,7 @@ function. The given CDF has a linear portion, which indicates this CDF actually 
 
 Assuming the problem intended a discrete distribution, the PMF from the jumps is:
 
-$$p(1) = \frac{1}{4}, \quad p(2) = \frac{1}{4}, \quad p(3) = \frac{1}{4}, \quad p(x) = 0 \text{ otherwise}$$
+$$p(1) = \frac{1}{4}, \quad p(2) = \frac{1}{4}, \quad p(3) = \frac{1}{4}, \quad p(x) = 0 \mathrm{ otherwise}$$
 
 **Check:** $1/4 + 1/4 + 1/4 = 3/4 \neq 1$. This indicates the continuous portion $F(x) = x/4$ on
 $[0,1)$ contributes probability $1/4$ spread over a continuum, confirming this is not a purely

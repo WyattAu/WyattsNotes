@@ -70,29 +70,29 @@ calculus or other methods.
 
 :::info[Example]
 
-A car accelerates from rest at $2\text{ m/s}^2$ for $6$ seconds. Find the distance travelled.
+A car accelerates from rest at $2\mathrm{ m/s}^2$ for $6$ seconds. Find the distance travelled.
 
 $u = 0$, $a = 2$, $t = 6$.
 
 $$
-s = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\text{ m}
+s = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\mathrm{ m}
 $$
 
 :::
 
 :::info[Example]
 
-A ball is thrown vertically upward at $15\text{ m/s}$. Find the maximum height reached and the time
+A ball is thrown vertically upward at $15\mathrm{ m/s}$. Find the maximum height reached and the time
 to reach it.
 
 At maximum height, $v = 0$.
 
 $$
-v^2 = u^2 + 2as \implies 0 = 225 + 2(-9.81)s \implies s = \frac{225}{19.62} \approx 11.47\text{ m}
+v^2 = u^2 + 2as \implies 0 = 225 + 2(-9.81)s \implies s = \frac{225}{19.62} \approx 11.47\mathrm{ m}
 $$
 
 $$
-v = u + at \implies 0 = 15 - 9.81t \implies t = \frac{15}{9.81} \approx 1.53\text{ s}
+v = u + at \implies 0 = 15 - 9.81t \implies t = \frac{15}{9.81} \approx 1.53\mathrm{ s}
 $$
 
 :::
@@ -142,20 +142,20 @@ contribution is negative.
 
 :::info[Example]
 
-A car travels at $20\text{ m/s}$ for $5\text{ s}$, then decelerates uniformly to rest in
-$4\text{ s}$.
+A car travels at $20\mathrm{ m/s}$ for $5\mathrm{ s}$, then decelerates uniformly to rest in
+$4\mathrm{ s}$.
 
 **Total displacement**:
 
-Rectangle: $20 \times 5 = 100\text{ m}$.
+Rectangle: $20 \times 5 = 100\mathrm{ m}$.
 
-Triangle: $\dfrac{1}{2} \times 20 \times 4 = 40\text{ m}$.
+Triangle: $\dfrac{1}{2} \times 20 \times 4 = 40\mathrm{ m}$.
 
-Total $= 140\text{ m}$.
+Total $= 140\mathrm{ m}$.
 
-**Total distance** $= 140\text{ m}$ (no reversal).
+**Total distance** $= 140\mathrm{ m}$ (no reversal).
 
-**Average velocity** $= \dfrac{140}{9} \approx 15.6\text{ m/s}$.
+**Average velocity** $= \dfrac{140}{9} \approx 15.6\mathrm{ m/s}$.
 
 :::
 
@@ -168,7 +168,7 @@ Total $= 140\text{ m}$.
 Near the Earth's surface, all objects in free fall accelerate at approximately:
 
 $$
-g \approx 9.81\text{ m/s}^2
+g \approx 9.81\mathrm{ m/s}^2
 $$
 
 This value varies slightly with location and altitude.
@@ -196,14 +196,14 @@ $$
 
 :::info[Example]
 
-An object is dropped from a height of $45\text{ m}$. Find the speed just before it hits the ground.
+An object is dropped from a height of $45\mathrm{ m}$. Find the speed just before it hits the ground.
 
 $$
 v^2 = u^2 + 2as = 0 + 2(9.81)(45) = 882.9
 $$
 
 $$
-v = \sqrt{882.9} \approx 29.7\text{ m/s}
+v = \sqrt{882.9} \approx 29.7\mathrm{ m/s}
 $$
 
 :::
@@ -237,7 +237,7 @@ x = u\cos\theta \cdot t
 $$
 
 $$
-v_x = u\cos\theta \quad (\text{constant})
+v_x = u\cos\theta \quad (\mathrm{constant})
 $$
 
 **Vertical** (uniform acceleration):
@@ -295,29 +295,29 @@ trajectories differ in height).
 
 :::info[Example]
 
-A ball is thrown at $20\text{ m/s}$ at $30\degree$ above the horizontal from ground level.
+A ball is thrown at $20\mathrm{ m/s}$ at $30\degree$ above the horizontal from ground level.
 
 **Time of flight**:
 
 $$
-t = \frac{2(20)\sin 30\degree}{9.81} = \frac{2(20)(0.5)}{9.81} = \frac{20}{9.81} \approx 2.04\text{ s}
+t = \frac{2(20)\sin 30\degree}{9.81} = \frac{2(20)(0.5)}{9.81} = \frac{20}{9.81} \approx 2.04\mathrm{ s}
 $$
 
 **Maximum height**:
 
 $$
-H = \frac{(20\sin 30\degree)^2}{2(9.81)} = \frac{100}{19.62} \approx 5.10\text{ m}
+H = \frac{(20\sin 30\degree)^2}{2(9.81)} = \frac{100}{19.62} \approx 5.10\mathrm{ m}
 $$
 
 **Range**:
 
 $$
-R = \frac{(20)^2 \sin 60\degree}{9.81} = \frac{400 \times 0.866}{9.81} \approx 35.3\text{ m}
+R = \frac{(20)^2 \sin 60\degree}{9.81} = \frac{400 \times 0.866}{9.81} \approx 35.3\mathrm{ m}
 $$
 
 **Speed at maximum height**:
 
-At maximum height, $v_y = 0$, so speed $= v_x = 20\cos 30\degree \approx 17.3\text{ m/s}$.
+At maximum height, $v_y = 0$, so speed $= v_x = 20\cos 30\degree \approx 17.3\mathrm{ m/s}$.
 
 :::
 
@@ -350,7 +350,7 @@ Without air resistance, all objects fall at the same rate. With air resistance:
 - Objects reach a **terminal velocity** when drag equals weight.
 - $F_d = mg$ at terminal velocity.
 - Heavier objects (with same shape and size) have a higher terminal velocity.
-- A skydiver reaches terminal velocity of about $55\text{ m/s}$ (belly-down) or $90\text{ m/s}$
+- A skydiver reaches terminal velocity of about $55\mathrm{ m/s}$ (belly-down) or $90\mathrm{ m/s}$
   (head-down).
 
 ### Effect on Projectiles
@@ -376,82 +376,82 @@ the range and maximum height of projectiles.
 
 ### Question 1 (Paper 1 style)
 
-A car starts from rest and accelerates uniformly at $3\text{ m/s}^2$ for $8\text{ s}$. It then
-travels at constant velocity for $12\text{ s}$ and finally decelerates uniformly to rest in
-$4\text{ s}$.
+A car starts from rest and accelerates uniformly at $3\mathrm{ m/s}^2$ for $8\mathrm{ s}$. It then
+travels at constant velocity for $12\mathrm{ s}$ and finally decelerates uniformly to rest in
+$4\mathrm{ s}$.
 
 **(a)** Find the total distance travelled.
 
-Phase 1: $s_1 = \dfrac{1}{2}(3)(64) = 96\text{ m}$. Final velocity $= 24\text{ m/s}$.
+Phase 1: $s_1 = \dfrac{1}{2}(3)(64) = 96\mathrm{ m}$. Final velocity $= 24\mathrm{ m/s}$.
 
-Phase 2: $s_2 = 24 \times 12 = 288\text{ m}$.
+Phase 2: $s_2 = 24 \times 12 = 288\mathrm{ m}$.
 
-Phase 3: $s_3 = \dfrac{1}{2}(24)(4) = 48\text{ m}$.
+Phase 3: $s_3 = \dfrac{1}{2}(24)(4) = 48\mathrm{ m}$.
 
-Total $= 96 + 288 + 48 = 432\text{ m}$.
+Total $= 96 + 288 + 48 = 432\mathrm{ m}$.
 
 **(b)** Find the average speed.
 
-Total time $= 8 + 12 + 4 = 24\text{ s}$.
+Total time $= 8 + 12 + 4 = 24\mathrm{ s}$.
 
-Average speed $= \dfrac{432}{24} = 18\text{ m/s}$.
+Average speed $= \dfrac{432}{24} = 18\mathrm{ m/s}$.
 
 ### Question 2 (Paper 2 style)
 
-A stone is thrown horizontally from a cliff $80\text{ m}$ high with a speed of $15\text{ m/s}$.
+A stone is thrown horizontally from a cliff $80\mathrm{ m}$ high with a speed of $15\mathrm{ m/s}$.
 
 **(a)** Find the time to reach the ground.
 
 Vertical:
-$h = \dfrac{1}{2}gt^2 \implies 80 = \dfrac{1}{2}(9.81)t^2 \implies t = \sqrt{\dfrac{160}{9.81}} \approx 4.04\text{ s}$.
+$h = \dfrac{1}{2}gt^2 \implies 80 = \dfrac{1}{2}(9.81)t^2 \implies t = \sqrt{\dfrac{160}{9.81}} \approx 4.04\mathrm{ s}$.
 
 **(b)** Find the horizontal distance from the base of the cliff.
 
 $$
-x = 15 \times 4.04 = 60.6\text{ m}
+x = 15 \times 4.04 = 60.6\mathrm{ m}
 $$
 
 **(c)** Find the velocity (magnitude and direction) just before impact.
 
-Horizontal: $v_x = 15\text{ m/s}$ (constant).
+Horizontal: $v_x = 15\mathrm{ m/s}$ (constant).
 
-Vertical: $v_y = gt = 9.81 \times 4.04 = 39.6\text{ m/s}$.
-
-$$
-v = \sqrt{15^2 + 39.6^2} = \sqrt{225 + 1568.2} = \sqrt{1793.2} \approx 42.4\text{ m/s}
-$$
+Vertical: $v_y = gt = 9.81 \times 4.04 = 39.6\mathrm{ m/s}$.
 
 $$
-\theta = \arctan\!\left(\frac{39.6}{15}\right) = \arctan(2.64) \approx 69.3\degree \text{ below horizontal}
+v = \sqrt{15^2 + 39.6^2} = \sqrt{225 + 1568.2} = \sqrt{1793.2} \approx 42.4\mathrm{ m/s}
+$$
+
+$$
+\theta = \arctan\!\left(\frac{39.6}{15}\right) = \arctan(2.64) \approx 69.3\degree \mathrm{ below horizontal}
 $$
 
 ### Question 3 (Paper 1 style)
 
-A projectile is launched from ground level with speed $25\text{ m/s}$ at an angle of $50\degree$
+A projectile is launched from ground level with speed $25\mathrm{ m/s}$ at an angle of $50\degree$
 above the horizontal.
 
 **(a)** Calculate the maximum height.
 
 $$
-H = \frac{(25\sin 50\degree)^2}{2(9.81)} = \frac{(19.15)^2}{19.62} = \frac{366.7}{19.62} \approx 18.7\text{ m}
+H = \frac{(25\sin 50\degree)^2}{2(9.81)} = \frac{(19.15)^2}{19.62} = \frac{366.7}{19.62} \approx 18.7\mathrm{ m}
 $$
 
 **(b)** Calculate the range.
 
 $$
-R = \frac{25^2 \sin 100\degree}{9.81} = \frac{625 \times 0.9848}{9.81} \approx 62.7\text{ m}
+R = \frac{25^2 \sin 100\degree}{9.81} = \frac{625 \times 0.9848}{9.81} \approx 62.7\mathrm{ m}
 $$
 
 ### Question 4 (Paper 2 style)
 
-A ball is dropped from rest from a height of $20\text{ m}$. At the same instant, a second ball is
+A ball is dropped from rest from a height of $20\mathrm{ m}$. At the same instant, a second ball is
 thrown vertically upward from the ground with speed $v$.
 
-Determine the value of $v$ for which the two balls meet at a height of $10\text{ m}$.
+Determine the value of $v$ for which the two balls meet at a height of $10\mathrm{ m}$.
 
 **Ball 1** (dropped): $y_1 = 20 - \dfrac{1}{2}gt^2$
 
-At $y_1 = 10$: $10 = 20 - 4.905t^2 \implies t^2 = \dfrac{10}{4.905} \implies t = 1.428\text{ s}$.
+At $y_1 = 10$: $10 = 20 - 4.905t^2 \implies t^2 = \dfrac{10}{4.905} \implies t = 1.428\mathrm{ s}$.
 
 **Ball 2** (thrown up): $y_2 = vt - \dfrac{1}{2}gt^2$
 
@@ -466,7 +466,7 @@ $$
 $$
 
 $$
-1.428v = 20 \implies v = 14.0\text{ m/s}
+1.428v = 20 \implies v = 14.0\mathrm{ m/s}
 $$
 
 ---
@@ -515,14 +515,14 @@ to the ground is the vector sum of its velocity in still water and the river cur
 
 :::info[Example]
 
-A boat can travel at $4\text{ m/s}$ in still water. It needs to cross a river $100\text{ m}$ wide
-flowing at $3\text{ m/s}$.
+A boat can travel at $4\mathrm{ m/s}$ in still water. It needs to cross a river $100\mathrm{ m}$ wide
+flowing at $3\mathrm{ m/s}$.
 
 **(a)** If the boat heads directly across, how far downstream does it land?
 
-Time to cross: $t = \dfrac{100}{4} = 25\text{ s}$.
+Time to cross: $t = \dfrac{100}{4} = 25\mathrm{ s}$.
 
-Downstream drift: $d = 3 \times 25 = 75\text{ m}$.
+Downstream drift: $d = 3 \times 25 = 75\mathrm{ m}$.
 
 **(b)** What heading should the boat take to land directly across?
 
@@ -534,9 +534,9 @@ $$
 
 The boat heads $48.6\degree$ upstream from the perpendicular.
 
-Velocity across: $v_{\text{across}} = 4\cos 48.6\degree = 2.65\text{ m/s}$.
+Velocity across: $v_{\mathrm{across}} = 4\cos 48.6\degree = 2.65\mathrm{ m/s}$.
 
-Time to cross: $t = \dfrac{100}{2.65} = 37.7\text{ s}$.
+Time to cross: $t = \dfrac{100}{2.65} = 37.7\mathrm{ s}$.
 
 :::
 
@@ -562,7 +562,7 @@ $$
 
 :::info[Example]
 
-A particle moves with acceleration $a = 6t\text{ m/s}^2$. At $t = 0$, $v = 2\text{ m/s}$ and
+A particle moves with acceleration $a = 6t\mathrm{ m/s}^2$. At $t = 0$, $v = 2\mathrm{ m/s}$ and
 $s = 0$.
 
 $$
@@ -605,27 +605,27 @@ For a curved velocity-time graph:
 The total stopping distance of a vehicle consists of:
 
 1. **Thinking distance**: distance travelled during the driver's reaction time.
-   $$d_{\text{think}} = v \times t_r$$
+   $$d_{\mathrm{think}} = v \times t_r$$
 
-2. **Braking distance**: distance travelled while braking. $$d_{\text{brake}} = \frac{v^2}{2a}$$
+2. **Braking distance**: distance travelled while braking. $$d_{\mathrm{brake}} = \frac{v^2}{2a}$$
 
-Total stopping distance $= d_{\text{think}} + d_{\text{brake}}$.
+Total stopping distance $= d_{\mathrm{think}} + d_{\mathrm{brake}}$.
 
 :::info[Example]
 
-A car travels at $30\text{ m/s}$ ($108\text{ km/h}$). The driver's reaction time is $0.7\text{ s}$
-and the maximum deceleration is $8\text{ m/s}^2$.
+A car travels at $30\mathrm{ m/s}$ ($108\mathrm{ km/h}$). The driver's reaction time is $0.7\mathrm{ s}$
+and the maximum deceleration is $8\mathrm{ m/s}^2$.
 
 $$
-d_{\text{think}} = 30 \times 0.7 = 21\text{ m}
-$$
-
-$$
-d_{\text{brake}} = \frac{30^2}{2 \times 8} = \frac{900}{16} = 56.25\text{ m}
+d_{\mathrm{think}} = 30 \times 0.7 = 21\mathrm{ m}
 $$
 
 $$
-d_{\text{total}} = 21 + 56.25 = 77.25\text{ m}
+d_{\mathrm{brake}} = \frac{30^2}{2 \times 8} = \frac{900}{16} = 56.25\mathrm{ m}
+$$
+
+$$
+d_{\mathrm{total}} = 21 + 56.25 = 77.25\mathrm{ m}
 $$
 
 :::
@@ -636,7 +636,7 @@ $$
 
 ### Question 5 (Paper 2 style)
 
-A ball is thrown from the top of a $40\text{ m}$ building with initial velocity $15\text{ m/s}$ at
+A ball is thrown from the top of a $40\mathrm{ m}$ building with initial velocity $15\mathrm{ m/s}$ at
 $30\degree$ above the horizontal.
 
 **(a)** Find the time for the ball to reach the ground.
@@ -660,27 +660,27 @@ t = \frac{7.5 \pm \sqrt{56.25 + 784.8}}{9.81} = \frac{7.5 \pm 28.97}{9.81}
 $$
 
 $$
-t = \frac{36.47}{9.81} = 3.72\text{ s}
+t = \frac{36.47}{9.81} = 3.72\mathrm{ s}
 $$
 
 **(b)** Find the horizontal range.
 
 $$
-x = 15\cos 30\degree \times 3.72 = 12.99 \times 3.72 = 48.3\text{ m}
+x = 15\cos 30\degree \times 3.72 = 12.99 \times 3.72 = 48.3\mathrm{ m}
 $$
 
 **(c)** Find the velocity (magnitude and direction) when the ball hits the ground.
 
-Horizontal: $v_x = 15\cos 30\degree = 12.99\text{ m/s}$.
+Horizontal: $v_x = 15\cos 30\degree = 12.99\mathrm{ m/s}$.
 
-Vertical: $v_y = 7.5 - 9.81(3.72) = 7.5 - 36.49 = -28.99\text{ m/s}$.
-
-$$
-v = \sqrt{12.99^2 + 28.99^2} = \sqrt{168.7 + 840.4} = \sqrt{1009.1} = 31.8\text{ m/s}
-$$
+Vertical: $v_y = 7.5 - 9.81(3.72) = 7.5 - 36.49 = -28.99\mathrm{ m/s}$.
 
 $$
-\theta = \arctan\!\left(\frac{28.99}{12.99}\right) = 65.9\degree \text{ below horizontal}
+v = \sqrt{12.99^2 + 28.99^2} = \sqrt{168.7 + 840.4} = \sqrt{1009.1} = 31.8\mathrm{ m/s}
+$$
+
+$$
+\theta = \arctan\!\left(\frac{28.99}{12.99}\right) = 65.9\degree \mathrm{ below horizontal}
 $$
 
 ### Question 6 (Paper 1 style)
@@ -697,12 +697,12 @@ A. $\sqrt{2gH}$ B. $\sqrt{2g(H-h)}$ C. $\sqrt{2gH - 2gh}$ D. $\sqrt{2g(H+h)}$
 ### Question 7 (Paper 2 style)
 
 Two cars are travelling on a straight road. Car `A` is travelling at a constant speed of
-$20\text{ m/s}$. Car `B`, initially at rest $50\text{ m}$ behind Car `A`, accelerates at
-$2\text{ m/s}^2$.
+$20\mathrm{ m/s}$. Car `B`, initially at rest $50\mathrm{ m}$ behind Car `A`, accelerates at
+$2\mathrm{ m/s}^2$.
 
 **(a)** How long does it take for Car `B` to catch up with Car `A`?
 
-Let $t = 0$ when Car `B` starts. Car `A` has a $50\text{ m}$ head start.
+Let $t = 0$ when Car `B` starts. Car `A` has a $50\mathrm{ m}$ head start.
 
 Position of Car `A`: $s_A = 20t + 50$
 
@@ -714,12 +714,12 @@ $$
 t = \frac{20 \pm \sqrt{400 + 200}}{2} = \frac{20 \pm 24.49}{2}
 $$
 
-$t = 22.25\text{ s}$.
+$t = 22.25\mathrm{ s}$.
 
 **(b)** What is the speed of Car `B` at this moment?
 
 $$
-v_B = 2 \times 22.25 = 44.5\text{ m/s}
+v_B = 2 \times 22.25 = 44.5\mathrm{ m/s}
 $$
 
 ---
@@ -754,15 +754,15 @@ $$
 
 A particle moves with position vector $\vec{r}(t) = (2t^2 - 3t)\hat{i} + (t^3 - 4)\hat{j}$ metres.
 
-**(a)** Find the velocity at $t = 2\text{ s}$.
+**(a)** Find the velocity at $t = 2\mathrm{ s}$.
 
 $$
 \vec{v} = (4t - 3)\hat{i} + 3t^2\hat{j}
 $$
 
-At $t = 2$: $\vec{v} = 5\hat{i} + 12\hat{j}\text{ m/s}$.
+At $t = 2$: $\vec{v} = 5\hat{i} + 12\hat{j}\mathrm{ m/s}$.
 
-Speed $= \sqrt{25 + 144} = \sqrt{169} = 13\text{ m/s}$.
+Speed $= \sqrt{25 + 144} = \sqrt{169} = 13\mathrm{ m/s}$.
 
 **(b)** Find the acceleration.
 
@@ -772,7 +772,7 @@ $$
 
 The acceleration is not constant (depends on $t$).
 
-At $t = 2$: $\vec{a} = 4\hat{i} + 12\hat{j}\text{ m/s}^2$.
+At $t = 2$: $\vec{a} = 4\hat{i} + 12\hat{j}\mathrm{ m/s}^2$.
 
 :::
 
@@ -822,7 +822,7 @@ $$
 
 ### Question 8 (Paper 2 style)
 
-A particle moves along a straight line. Its acceleration is given by $a = 4 - 2t\text{ m/s}^2$.
+A particle moves along a straight line. Its acceleration is given by $a = 4 - 2t\mathrm{ m/s}^2$.
 
 **(a)** Find the time when the particle is momentarily at rest.
 
@@ -830,17 +830,17 @@ $$
 v = \int_0^t (4-2t')\,dt' = 4t - t^2
 $$
 
-When $v = 0$: $t(4 - t) = 0 \implies t = 0$ or $t = 4\text{ s}$.
+When $v = 0$: $t(4 - t) = 0 \implies t = 0$ or $t = 4\mathrm{ s}$.
 
-**(b)** Find the displacement at $t = 4\text{ s}$.
+**(b)** Find the displacement at $t = 4\mathrm{ s}$.
 
 $$
-s = \int_0^4 (4t - t^2)\,dt = \left[2t^2 - \frac{t^3}{3}\right]_0^4 = 32 - \frac{64}{3} = \frac{32}{3}\text{ m}
+s = \int_0^4 (4t - t^2)\,dt = \left[2t^2 - \frac{t^3}{3}\right]_0^4 = 32 - \frac{64}{3} = \frac{32}{3}\mathrm{ m}
 $$
 
-**(c)** Find the distance travelled between $t = 0$ and $t = 4\text{ s}$.
+**(c)** Find the distance travelled between $t = 0$ and $t = 4\mathrm{ s}$.
 
-Since $v \ge 0$ for $0 \le t \le 4$, the distance equals the displacement: $\dfrac{32}{3}\text{ m}$.
+Since $v \ge 0$ for $0 \le t \le 4$, the distance equals the displacement: $\dfrac{32}{3}\mathrm{ m}$.
 
 ### Question 9 (Paper 1 style)
 
@@ -852,22 +852,22 @@ $2\theta = 90\degree$, so $\theta = 45\degree$.
 
 ### Question 10 (Paper 2 style)
 
-An object is released from a hot air balloon ascending at $5\text{ m/s}$. At the moment of release,
-the balloon is at a height of $120\text{ m}$.
+An object is released from a hot air balloon ascending at $5\mathrm{ m/s}$. At the moment of release,
+the balloon is at a height of $120\mathrm{ m}$.
 
 **(a)** Find the maximum height reached by the object.
 
-At release: $u_y = 5\text{ m/s}$, $s_y = 120\text{ m}$.
+At release: $u_y = 5\mathrm{ m/s}$, $s_y = 120\mathrm{ m}$.
 
 $$
 v_y^2 = u_y^2 - 2g \cdot \Delta s \implies 0 = 25 - 2(9.81)\Delta s
 $$
 
 $$
-\Delta s = \frac{25}{19.62} = 1.27\text{ m}
+\Delta s = \frac{25}{19.62} = 1.27\mathrm{ m}
 $$
 
-Maximum height $= 120 + 1.27 = 121.3\text{ m}$.
+Maximum height $= 120 + 1.27 = 121.3\mathrm{ m}$.
 
 **(b)** Find the time to reach the ground.
 
@@ -878,13 +878,13 @@ $$
 At ground: $4.905t^2 - 5t - 120 = 0$.
 
 $$
-t = \frac{5 + \sqrt{25 + 2354}}{9.81} = \frac{5 + 48.72}{9.81} = 5.48\text{ s}
+t = \frac{5 + \sqrt{25 + 2354}}{9.81} = \frac{5 + 48.72}{9.81} = 5.48\mathrm{ s}
 $$
 
 **(c)** Find the velocity just before impact.
 
 $$
-v_y = 5 - 9.81(5.48) = 5 - 53.76 = -48.76\text{ m/s}
+v_y = 5 - 9.81(5.48) = 5 - 53.76 = -48.76\mathrm{ m/s}
 $$
 
-Speed $= 48.8\text{ m/s}$ (downward).
+Speed $= 48.8\mathrm{ m/s}$ (downward).

@@ -85,11 +85,11 @@ when the resource itself is destroyed.
 This makes `monotonic_buffer_resource` ideal for scenarios with many short-lived allocations:
 
 $$
-\text{allocate}(n) = O(1) \quad \text{deallocate}(n) = O(1) \text{ (no-op)}
+\mathrm{allocate}(n) = O(1) \quad \mathrm{deallocate}(n) = O(1) \mathrm{ (no-op)}
 $$
 
 $$
-\text{destroy}() = O(1) \text{ (releases all buffers at once)}
+\mathrm{destroy}() = O(1) \mathrm{ (releases all buffers at once)}
 $$
 
 ```cpp

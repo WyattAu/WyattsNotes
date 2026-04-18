@@ -183,7 +183,7 @@ _Base case._ $n = 0$: returns 1 = $0!$. ✓
 
 _Inductive step._ Assume `factorial(k) = k!` for all $k \leq n$. Then:
 
-$$\text{factorial}(n+1) = (n+1) \times \text{factorial}(n) = (n+1) \times n! = (n+1)!$$
+$$\mathrm{factorial}(n+1) = (n+1) \times \mathrm{factorial}(n) = (n+1) \times n! = (n+1)!$$
 
 ✓ $\square$
 
@@ -393,8 +393,8 @@ def is_palindrome(s):
     return is_palindrome(s[1:-1])
 ```
 
-**Termination.** Variant function: $V(s) = \text{len}(s)$. Each recursive call:
-$V(s[1:-1]) = \text{len}(s) - 2 \lt{} V(s)$ for $\text{len}(s) \geq 2$. Since $V$ is a non-negative
+**Termination.** Variant function: $V(s) = \mathrm{len}(s)$. Each recursive call:
+$V(s[1:-1]) = \mathrm{len}(s) - 2 \lt{} V(s)$ for $\mathrm{len}(s) \geq 2$. Since $V$ is a non-negative
 integer that strictly decreases, the function must reach a base case. ✓
 
 </details>

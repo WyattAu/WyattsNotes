@@ -280,7 +280,7 @@ tissues. It is the interface for exchange of substances between maternal and foe
 
 | Function           | Description                                                                                                                    |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Gas exchange       | $\text{O}_2$ diffuses from maternal blood to foetal blood; $\text{CO}_2$ diffuses from foetal blood to maternal blood          |
+| Gas exchange       | $\mathrm{O}_2$ diffuses from maternal blood to foetal blood; $\mathrm{CO}_2$ diffuses from foetal blood to maternal blood          |
 | Nutrient transfer  | Glucose, amino acids, fatty acids, vitamins, and minerals diffuse from maternal to foetal blood                                |
 | Waste removal      | Urea, uric acid, and creatinine diffuse from foetal blood to maternal blood for excretion                                      |
 | Hormone production | Produces progesterone (maintains endometrium), oestrogen, hCG (maintains corpus luteum), relaxin, and human placental lactogen |
@@ -318,7 +318,7 @@ cellular processes.
 - Blood glucose concentration (approximately 90 mg/100 cm cubed)
 - Blood water potential (osmotic balance)
 - Blood pH (approximately 7.35-7.45)
-- $\text{CO}_2$ concentration in the blood
+- $\mathrm{CO}_2$ concentration in the blood
 - Ion concentrations (Na$^+$, K$^+$, Ca$^{2+}$)
 
 ### Negative Feedback
@@ -634,7 +634,7 @@ their removal is not excretion.
 
 | Substance                     | Source of Production                           | Organ of Excretion                   | Method of Excretion                             |
 | ----------------------------- | ---------------------------------------------- | ------------------------------------ | ----------------------------------------------- |
-| $\text{CO}_2$                 | Cellular respiration                           | Lungs                                | Exhaled during breathing                        |
+| $\mathrm{CO}_2$                 | Cellular respiration                           | Lungs                                | Exhaled during breathing                        |
 | Urea                          | Deamination of excess amino acids in the liver | Kidneys                              | Filtered from blood, excreted in urine          |
 | Water                         | Various metabolic reactions                    | Kidneys, skin, lungs                 | Urine, sweat, exhaled breath                    |
 | Mineral salts (Na$^+$, K$^+$) | Various                                        | Kidneys, skin                        | Urine, sweat                                    |
@@ -646,12 +646,12 @@ their removal is not excretion.
 The liver plays a central role in processing and detoxifying substances:
 
 1. **Deamination:** Excess amino acids cannot be stored. The liver removes the amino group
-   ($\text{NH}_2$) from amino acids, converting it to ammonia ($\text{NH}_3$, highly toxic), which
+   ($\mathrm{NH}_2$) from amino acids, converting it to ammonia ($\mathrm{NH}_3$, highly toxic), which
    is then converted to urea (less toxic) via the ornithine cycle in the liver:
 
-$$\text{Amino acid} \to \text{Keto acid} + \text{NH}_3$$
+$$\mathrm{Amino acid} \to \mathrm{Keto acid} + \mathrm{NH}_3$$
 
-$$2\text{NH}_3 + \text{CO}_2 \to \text{CO(NH}_2)_2 + \text{H}_2\text{O}$$
+$$2\mathrm{NH}_3 + \mathrm{CO}_2 \to \mathrm{CO(NH}_2)_2 + \mathrm{H}_2\mathrm{O}$$
 
 2. **Detoxification:** The liver converts harmful substances into less harmful ones:
    - Alcohol (ethanol) is oxidised to ethanal (by alcohol dehydrogenase), then to ethanoic acid,
@@ -671,7 +671,7 @@ excretory organ compared to the kidneys -- its primary function is thermoregulat
 
 1. **Confusing excretion and egestion:** This is one of the most common DSE errors. Egestion
    (removal of faeces) is not excretion. Faeces have never been absorbed into the body's metabolic
-   processes. $\text{CO}_2$ from respiration and urea from deamination are excretory products.
+   processes. $\mathrm{CO}_2$ from respiration and urea from deamination are excretory products.
 
 2. **Writing that the umbilical artery carries oxygenated blood:** The umbilical ARTERY carries
    deoxygenated blood from the foetus to the placenta. The umbilical VEIN carries oxygenated blood
@@ -825,7 +825,7 @@ directions, maintaining a concentration gradient along the entire length of the 
 maximising exchange efficiency.
 
 (5) Selective permeability: The placental barrier allows the passage of small molecules (glucose,
-amino acids, $\text{O}_2$, $\text{CO}_2$, urea, antibodies) but prevents the passage of large
+amino acids, $\mathrm{O}_2$, $\mathrm{CO}_2$, urea, antibodies) but prevents the passage of large
 molecules (most proteins, blood cells) and many pathogens. However, some harmful substances can
 cross (alcohol, drugs, some viruses like HIV and rubella).
 

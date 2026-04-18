@@ -17,7 +17,7 @@ sidebar_position: 5
 We define **supply-side policies** as government policies designed to increase the productive
 capacity of the economy by shifting the long-run aggregate supply (LRAS) curve to the right.
 
-$$\text{LRAS shifts right: } Y^* \uparrow \Rightarrow P \downarrow, Y \uparrow$$
+$$\mathrm{LRAS shifts right: } Y^* \uparrow \Rightarrow P \downarrow, Y \uparrow$$
 
 Unlike demand-side policies (fiscal and monetary policy), which aim to manage AD to smooth the
 business cycle, supply-side policies aim to raise the economy's **potential output** — improving the
@@ -33,7 +33,7 @@ raise output above potential in the long run (LRAS is vertical). Only by increas
 itself — through better technology, more capital, a more skilled workforce, or more efficient
 markets — can the economy produce more goods and services sustainably. $\blacksquare$
 
-$$\text{Long-run growth} = f(\Delta K, \Delta L, \Delta A)$$
+$$\mathrm{Long-run growth} = f(\Delta K, \Delta L, \Delta A)$$
 
 where $K$ = capital, $L$ = labour, $A$ = total factor productivity (technology and efficiency).
 
@@ -70,7 +70,7 @@ all, not how many hours).
 
 **Reduction in corporation tax** to incentivise investment:
 
-$$I = I(r, \tau_c) \quad \text{where } \frac{\partial I}{\partial \tau_c} < 0$$
+$$I = I(r, \tau_c) \quad \mathrm{where } \frac{\partial I}{\partial \tau_c} < 0$$
 
 A lower corporation tax rate $\tau_c$ increases the after-tax return on investment, encouraging
 firms to invest in capital. The UK reduced corporation tax from 28% (2010) to 19% (2017), partially
@@ -81,11 +81,11 @@ rate of 0%, revenue is zero. As the rate rises, revenue initially increases. Bey
 $t^*$, further increases reduce revenue because the tax base shrinks (people work less, evade more,
 or relocate).
 
-$$R = t \cdot B(t) \quad \text{where } \frac{dB}{dt} \lt 0 \text{ for } t \gt t^*$$
+$$R = t \cdot B(t) \quad \mathrm{where } \frac{dB}{dt} \lt 0 \mathrm{ for } t \gt t^*$$
 
 where $R$ is tax revenue, $t$ is the tax rate, and $B(t)$ is the tax base.
 
-$$\frac{dR}{dt} = B(t) + t \cdot \frac{dB}{dt} = 0 \quad \text{at the revenue-maximising rate } t^*$$
+$$\frac{dR}{dt} = B(t) + t \cdot \frac{dB}{dt} = 0 \quad \mathrm{at the revenue-maximising rate } t^*$$
 
 The key debate is where the UK sits relative to $t^*$. Most empirical estimates (including the IFS
 and OBR) suggest that for income tax, the UK is to the **left** of $t^*$ — meaning tax cuts would
@@ -115,7 +115,7 @@ demand and a stable regulatory environment before committing to investment, rega
 unemployment (real-wage unemployment). Reducing union power (e.g., secret ballots, restrictions on
 strikes) allows wages to adjust to market-clearing levels.
 
-$$w > w^* \Rightarrow \text{labour demand } < \text{labour supply} \Rightarrow \text{unemployment}$$
+$$w > w^* \Rightarrow \mathrm{labour demand } < \mathrm{labour supply} \Rightarrow \mathrm{unemployment}$$
 
 **Reducing employment protection legislation**: Making it easier to hire and fire workers reduces
 firms' perceived risk of taking on new employees, potentially increasing employment. However, it may
@@ -148,7 +148,7 @@ Arguments against:
 
 **Deregulation**: removing barriers to entry, reducing red tape, and simplifying regulations.
 
-$$\text{Fewer barriers} \Rightarrow \text{more firms enter} \Rightarrow \text{more competition} \Rightarrow \text{lower prices, higher quality, more innovation}$$
+$$\mathrm{Fewer barriers} \Rightarrow \mathrm{more firms enter} \Rightarrow \mathrm{more competition} \Rightarrow \mathrm{lower prices, higher quality, more innovation}$$
 
 Example: The Big Bang (1986) deregulated London's financial markets, contributing to the growth of
 the City as a global financial centre.
@@ -199,7 +199,7 @@ Anti-competitive practices include:
 - **Predatory pricing**: setting prices below cost to drive out competitors
 - **Abuse of market power**: exclusionary practices by dominant firms
 
-$$\text{More competition} \Rightarrow P \downarrow, Q \uparrow, \text{consumer surplus } \uparrow, \text{deadweight loss } \downarrow$$
+$$\mathrm{More competition} \Rightarrow P \downarrow, Q \uparrow, \mathrm{consumer surplus } \uparrow, \mathrm{deadweight loss } \downarrow$$
 
 ## 3. Interventionist Supply-Side Policies
 
@@ -262,7 +262,7 @@ real-world examples. OCR (H460) links education policy to labour market outcomes
 
 Public investment in transport, broadband, energy, and communications:
 
-$$\text{Better infrastructure} \Rightarrow \text{lower transport/communication costs} \Rightarrow \text{higher productivity}$$
+$$\mathrm{Better infrastructure} \Rightarrow \mathrm{lower transport/communication costs} \Rightarrow \mathrm{higher productivity}$$
 
 The UK's Northern Powerhouse Rail, HS2 (now partially cancelled), and gigabit broadband rollout are
 examples.
@@ -276,7 +276,7 @@ while also improving long-run productivity.
 Government funding for basic research (which private firms underprovide due to positive
 externalities):
 
-$$\text{Social return to R\&D} > \text{private return to R\&D}$$
+$$\mathrm{Social return to R\&D} > \mathrm{private return to R\&D}$$
 
 Policies: R&D tax credits, direct funding for universities, patent protection, research councils.
 
@@ -327,7 +327,7 @@ market vs intervention dichotomy.
 innovation, and human development indices, while maintaining lower inequality than the UK and US.
 Unemployment rates are comparable to or lower than the UK average.
 
-$$\text{Nordic model}: \text{flexibility} + \text{security} + \text{investment} \Rightarrow \text{high } h, \text{ high } A, \text{ low inequality}$$
+$$\mathrm{Nordic model}: \mathrm{flexibility} + \mathrm{security} + \mathrm{investment} \Rightarrow \mathrm{high } h, \mathrm{ high } A, \mathrm{ low inequality}$$
 
 **Evaluation.** The Nordic model suggests that market-oriented and interventionist policies are not
 mutually exclusive — they can be **complementary**. High taxes fund the education and infrastructure
@@ -364,7 +364,7 @@ Market-oriented policies tend to be most effective when:
 - Externalities are minimal (private and social costs/benefits are aligned)
 - Institutions are strong (property rights, rule of law, contract enforcement)
 
-$$\text{Market efficiency} \propto \frac{\text{Competition} \times \text{Information} \times \text{Institutions}}{\text{Externalities} \times \text{Market power}}$$
+$$\mathrm{Market efficiency} \propto \frac{\mathrm{Competition} \times \mathrm{Information} \times \mathrm{Institutions}}{\mathrm{Externalities} \times \mathrm{Market power}}$$
 
 Interventionist policies tend to be most effective when:
 
@@ -375,7 +375,7 @@ Interventionist policies tend to be most effective when:
 - Equity objectives require redistribution (regional policy, progressive education funding)
 - The government has a strong track record of effective implementation
 
-$$\text{Intervention effectiveness} \propto \frac{\text{Market failure severity} \times \text{State capacity}}{\text{Government failure risk} \times \text{Implementation cost}}$$
+$$\mathrm{Intervention effectiveness} \propto \frac{\mathrm{Market failure severity} \times \mathrm{State capacity}}{\mathrm{Government failure risk} \times \mathrm{Implementation cost}}$$
 
 The crucial insight is that **the optimal policy mix varies by sector and context**. Financial
 services may benefit most from deregulation and competition, while education and infrastructure
@@ -424,9 +424,9 @@ is now lower.
 **Productivity growth** (a key supply-side objective) also shifts the Phillips curve left by
 reducing cost-push inflation:
 
-$$\text{Productivity } \uparrow \Rightarrow \text{unit labour costs } \downarrow \Rightarrow \text{SRAS shifts right} \Rightarrow P \downarrow$$
+$$\mathrm{Productivity } \uparrow \Rightarrow \mathrm{unit labour costs } \downarrow \Rightarrow \mathrm{SRAS shifts right} \Rightarrow P \downarrow$$
 
-$$\pi_{\text{new}} = \pi_{\text{old}} - \Delta(\text{productivity})$$
+$$\pi_{\mathrm{new}} = \pi_{\mathrm{old}} - \Delta(\mathrm{productivity})$$
 
 ### 4.4 General Evaluation of Supply-Side Policies
 
@@ -468,7 +468,7 @@ politically motivated "picking winners" (subsidising declining industries for el
 regulatory capture (industries influencing the regulators meant to control them), and implementation
 failure (ambitious infrastructure projects that go over budget and under-deliver, such as HS2).
 
-$$\text{Net benefit of supply-side policy} = \text{Efficiency gain} - \text{Cost} - \text{Distributional loss} - \text{Government failure risk}$$
+$$\mathrm{Net benefit of supply-side policy} = \mathrm{Efficiency gain} - \mathrm{Cost} - \mathrm{Distributional loss} - \mathrm{Government failure risk}$$
 
 :::tip
 Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
@@ -483,9 +483,9 @@ therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE)
 
 The key metric for evaluating supply-side policies is **productivity growth**:
 
-$$\text{Labour productivity} = \frac{Y}{L} = \frac{\text{Output}}{\text{Hours worked}}$$
+$$\mathrm{Labour productivity} = \frac{Y}{L} = \frac{\mathrm{Output}}{\mathrm{Hours worked}}$$
 
-$$\text{Total factor productivity (TFP)} = \frac{Y}{K^\alpha L^{1-\alpha}}$$
+$$\mathrm{Total factor productivity (TFP)} = \frac{Y}{K^\alpha L^{1-\alpha}}$$
 
 TFP captures the efficiency with which capital and labour are combined — it reflects technology,
 institutions, and know-how. Long-run growth in living standards depends primarily on TFP growth.

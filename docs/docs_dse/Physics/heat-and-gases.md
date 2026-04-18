@@ -19,9 +19,9 @@ substance. Three temperature scales are in common use:
 
 | Scale      | Symbol | Unit             | Absolute Zero | Key Reference Points                                              |
 | ---------- | ------ | ---------------- | ------------- | ----------------------------------------------------------------- |
-| Celsius    | $T_C$  | $^\circ\text{C}$ | $-273.15$     | $0^\circ\text{C}$ (ice point), $100^\circ\text{C}$ (steam point)  |
+| Celsius    | $T_C$  | $^\circ\mathrm{C}$ | $-273.15$     | $0^\circ\mathrm{C}$ (ice point), $100^\circ\mathrm{C}$ (steam point)  |
 | Kelvin     | $T$    | K                | $0$           | Same interval as Celsius, shifted by $273.15$                     |
-| Fahrenheit | $T_F$  | $^\circ\text{F}$ | $-459.67$     | $32^\circ\text{F}$ (ice point), $212^\circ\text{F}$ (steam point) |
+| Fahrenheit | $T_F$  | $^\circ\mathrm{F}$ | $-459.67$     | $32^\circ\mathrm{F}$ (ice point), $212^\circ\mathrm{F}$ (steam point) |
 
 The **Kelvin** is the SI unit of temperature and is defined by fixing the Boltzmann constant
 $k_B = 1.380649 \times 10^{-23}$ J/K.
@@ -46,11 +46,11 @@ $$T_F = \frac{9}{5}(T - 273.15) + 32$$
 
 ### Worked Example 1
 
-Convert $37^\circ\text{C}$ (normal human body temperature) to Kelvin and Fahrenheit.
+Convert $37^\circ\mathrm{C}$ (normal human body temperature) to Kelvin and Fahrenheit.
 
-$$T = 37 + 273.15 = 310.15 \text{ K}$$
+$$T = 37 + 273.15 = 310.15 \mathrm{ K}$$
 
-$$T_F = \frac{9}{5}(37) + 32 = 66.6 + 32 = 98.6^\circ\text{F}$$
+$$T_F = \frac{9}{5}(37) + 32 = 66.6 + 32 = 98.6^\circ\mathrm{F}$$
 
 ### Thermometric Properties
 
@@ -59,24 +59,24 @@ continuously with temperature. Common thermometric properties include:
 
 | Thermometer Type       | Thermometric Property                                       | Range                             |
 | ---------------------- | ----------------------------------------------------------- | --------------------------------- |
-| Liquid-in-glass        | Length of liquid column (thermal expansion)                 | $-39$ to $350^\circ\text{C}$ (Hg) |
-| Gas thermometer        | Pressure at constant volume, or volume at constant pressure | $-270$ to $1500^\circ\text{C}$    |
-| Thermocouple           | EMF between two junctions at different temperatures         | $-200$ to $1500^\circ\text{C}$    |
-| Resistance thermometer | Electrical resistance of a metal (e.g., platinum)           | $-200$ to $850^\circ\text{C}$     |
+| Liquid-in-glass        | Length of liquid column (thermal expansion)                 | $-39$ to $350^\circ\mathrm{C}$ (Hg) |
+| Gas thermometer        | Pressure at constant volume, or volume at constant pressure | $-270$ to $1500^\circ\mathrm{C}$    |
+| Thermocouple           | EMF between two junctions at different temperatures         | $-200$ to $1500^\circ\mathrm{C}$    |
+| Resistance thermometer | Electrical resistance of a metal (e.g., platinum)           | $-200$ to $850^\circ\mathrm{C}$     |
 
 ### Calibration of a Thermometer
 
 To calibrate an arbitrary thermometer, two fixed points are needed:
 
 1. **Lower fixed point** (ice point): temperature of pure melting ice at standard pressure
-   ($0^\circ\text{C}$)
+   ($0^\circ\mathrm{C}$)
 2. **Upper fixed point** (steam point): temperature of pure boiling water at standard pressure
-   ($100^\circ\text{C}$)
+   ($100^\circ\mathrm{C}$)
 
-If $X_0$ is the thermometric property at $0^\circ\text{C}$ and $X_{100}$ at $100^\circ\text{C}$,
+If $X_0$ is the thermometric property at $0^\circ\mathrm{C}$ and $X_{100}$ at $100^\circ\mathrm{C}$,
 then the temperature corresponding to a property value $X$ is:
 
-$$\theta = \frac{X - X_0}{X_{100} - X_0} \times 100^\circ\text{C}$$
+$$\theta = \frac{X - X_0}{X_{100} - X_0} \times 100^\circ\mathrm{C}$$
 
 This formula assumes the thermometric property varies **linearly** with temperature, which is an
 approximation. Different thermometers will agree exactly at the two fixed points but may differ at
@@ -90,7 +90,7 @@ volume. As pressure approaches zero (low-density limit), all real gases behave i
 scale is independent of the particular gas used.
 
 The absolute zero of temperature ($0$ K) is the theoretical temperature at which all thermal motion
-ceases. On the Celsius scale this corresponds to $-273.15^\circ\text{C}$.
+ceases. On the Celsius scale this corresponds to $-273.15^\circ\mathrm{C}$.
 
 ---
 
@@ -131,7 +131,7 @@ Key distinction: **Temperature** is a state variable (depends only on the state 
 ### Definition
 
 The **specific heat capacity** $c$ of a substance is the amount of heat required to raise the
-temperature of $1$ kg of the substance by $1$ K (or $1^\circ\text{C}$, since the intervals are
+temperature of $1$ kg of the substance by $1$ K (or $1^\circ\mathrm{C}$, since the intervals are
 identical).
 
 $$c = \frac{Q}{m\Delta T}$$
@@ -140,9 +140,9 @@ where:
 
 - $Q$ = heat energy supplied (J)
 - $m$ = mass (kg)
-- $\Delta T$ = temperature change (K or $^\circ\text{C}$)
+- $\Delta T$ = temperature change (K or $^\circ\mathrm{C}$)
 
-The SI unit is $\text{J kg}^{-1}\text{ K}^{-1}$.
+The SI unit is $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.
 
 The **molar heat capacity** $C$ is the heat required per mole per kelvin:
 
@@ -152,7 +152,7 @@ where $M$ is the molar mass.
 
 ### Common Specific Heat Capacities
 
-| Substance        | Specific Heat Capacity ($\text{J kg}^{-1}\text{ K}^{-1}$) |
+| Substance        | Specific Heat Capacity ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$) |
 | ---------------- | --------------------------------------------------------- |
 | Water            | $4186$                                                    |
 | Ice              | $2100$                                                    |
@@ -168,10 +168,10 @@ coastal climates are more moderate than inland climates.
 
 ### Heat Capacity of an Object
 
-The **heat capacity** $C_{\text{obj}}$ of a body is the heat required to raise its temperature by
+The **heat capacity** $C_{\mathrm{obj}}$ of a body is the heat required to raise its temperature by
 $1$ K:
 
-$$C_{\text{obj}} = mc$$
+$$C_{\mathrm{obj}} = mc$$
 
 ### Derivation from the First Law
 
@@ -184,7 +184,7 @@ specific heat capacity depends on whether the process is at constant volume or c
 
 ### Worked Example 2
 
-A $2.0$ kg copper block at $100^\circ\text{C}$ is placed in $0.5$ kg of water at $20^\circ\text{C}$.
+A $2.0$ kg copper block at $100^\circ\mathrm{C}$ is placed in $0.5$ kg of water at $20^\circ\mathrm{C}$.
 Find the final temperature, assuming no heat loss to the surroundings.
 
 Heat lost by copper $=$ heat gained by water:
@@ -201,16 +201,16 @@ $$77000 + 41860 = 2093T_f + 770T_f$$
 
 $$118860 = 2863T_f$$
 
-$$T_f = 41.5^\circ\text{C}$$
+$$T_f = 41.5^\circ\mathrm{C}$$
 
 ### Worked Example 3
 
-An electric heater rated at $2000$ W heats $3.0$ kg of water from $25^\circ\text{C}$ to
-$75^\circ\text{C}$. How long does it take, assuming $80\%$ of the energy is absorbed by the water?
+An electric heater rated at $2000$ W heats $3.0$ kg of water from $25^\circ\mathrm{C}$ to
+$75^\circ\mathrm{C}$. How long does it take, assuming $80\%$ of the energy is absorbed by the water?
 
 Energy required by the water:
 
-$$Q = mc\Delta T = 3.0 \times 4186 \times (75 - 25) = 627900 \text{ J}$$
+$$Q = mc\Delta T = 3.0 \times 4186 \times (75 - 25) = 627900 \mathrm{ J}$$
 
 Energy supplied by the heater:
 
@@ -220,7 +220,7 @@ With $80\%$ efficiency:
 
 $$0.80 \times 2000 \times t = 627900$$
 
-$$t = \frac{627900}{1600} = 392.4 \text{ s} = 6.5 \text{ minutes}$$
+$$t = \frac{627900}{1600} = 392.4 \mathrm{ s} = 6.5 \mathrm{ minutes}$$
 
 ### Method of Mixtures Experiment
 
@@ -230,15 +230,15 @@ $$t = \frac{627900}{1600} = 392.4 \text{ s} = 6.5 \text{ minutes}$$
 
 1. Measure the mass $m_s$ of the solid.
 2. Heat the solid in a water bath to a known temperature $T_s$ (e.g., by boiling water so
-   $T_s \approx 100^\circ\text{C}$).
+   $T_s \approx 100^\circ\mathrm{C}$).
 3. Quickly transfer the solid to an insulated calorimeter containing water of mass $m_w$ at
    temperature $T_w$.
 4. Stir and record the maximum temperature $T_f$.
 5. Apply the principle of calorimetry (heat lost $=$ heat gained):
 
-$$m_s c_s (T_s - T_f) = (m_w c_w + C_{\text{cal}})(T_f - T_w)$$
+$$m_s c_s (T_s - T_f) = (m_w c_w + C_{\mathrm{cal}})(T_f - T_w)$$
 
-where $C_{\text{cal}}$ is the heat capacity of the calorimeter.
+where $C_{\mathrm{cal}}$ is the heat capacity of the calorimeter.
 
 **Sources of error:**
 
@@ -259,8 +259,8 @@ temperature change.
 
 | Quantity                             | Symbol | Unit               | Definition                                             |
 | ------------------------------------ | ------ | ------------------ | ------------------------------------------------------ |
-| Specific latent heat of fusion       | $l_f$  | $\text{J kg}^{-1}$ | Heat to melt $1$ kg of solid at its melting point      |
-| Specific latent heat of vaporization | $l_v$  | $\text{J kg}^{-1}$ | Heat to vaporise $1$ kg of liquid at its boiling point |
+| Specific latent heat of fusion       | $l_f$  | $\mathrm{J kg}^{-1}$ | Heat to melt $1$ kg of solid at its melting point      |
+| Specific latent heat of vaporization | $l_v$  | $\mathrm{J kg}^{-1}$ | Heat to vaporise $1$ kg of liquid at its boiling point |
 
 The heat involved in a phase change of mass $m$:
 
@@ -270,7 +270,7 @@ where $l$ is the appropriate specific latent heat.
 
 ### Common Latent Heats
 
-| Substance | $l_f$ ($\text{kJ kg}^{-1}$) | $l_v$ ($\text{kJ kg}^{-1}$) | Melting Point ($^\circ\text{C}$) | Boiling Point ($^\circ\text{C}$) |
+| Substance | $l_f$ ($\mathrm{kJ kg}^{-1}$) | $l_v$ ($\mathrm{kJ kg}^{-1}$) | Melting Point ($^\circ\mathrm{C}$) | Boiling Point ($^\circ\mathrm{C}$) |
 | --------- | --------------------------- | --------------------------- | -------------------------------- | -------------------------------- |
 | Water     | $334$                       | $2260$                      | $0$                              | $100$                            |
 | Ethanol   | $109$                       | $846$                       | $-114$                           | $78$                             |
@@ -286,13 +286,13 @@ enough to allow the regular solid structure to break down.
 
 A heating curve plots temperature against time as a substance is heated at a constant rate:
 
-1. **Solid phase**: temperature rises steadily (slope depends on $c_{\text{solid}}$).
+1. **Solid phase**: temperature rises steadily (slope depends on $c_{\mathrm{solid}}$).
 2. **Melting**: temperature remains constant at the melting point while latent heat of fusion is
    absorbed.
-3. **Liquid phase**: temperature rises steadily (slope depends on $c_{\text{liquid}}$).
+3. **Liquid phase**: temperature rises steadily (slope depends on $c_{\mathrm{liquid}}$).
 4. **Boiling**: temperature remains constant at the boiling point while latent heat of vaporisation
    is absorbed.
-5. **Gas phase**: temperature rises steadily (slope depends on $c_{\text{gas}}$).
+5. **Gas phase**: temperature rises steadily (slope depends on $c_{\mathrm{gas}}$).
 
 The flat regions on the heating curve correspond to phase transitions where all the supplied heat
 goes into changing the molecular arrangement rather than increasing kinetic energy.
@@ -315,66 +315,66 @@ increases.
 
 ### Worked Example 4
 
-How much energy is required to convert $500$ g of ice at $-20^\circ\text{C}$ to steam at
-$110^\circ\text{C}$?
+How much energy is required to convert $500$ g of ice at $-20^\circ\mathrm{C}$ to steam at
+$110^\circ\mathrm{C}$?
 
 The calculation proceeds in five stages:
 
-**Stage 1:** Heat ice from $-20^\circ\text{C}$ to $0^\circ\text{C}$:
+**Stage 1:** Heat ice from $-20^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
 
-$$Q_1 = mc\Delta T = 0.5 \times 2100 \times 20 = 21000 \text{ J}$$
+$$Q_1 = mc\Delta T = 0.5 \times 2100 \times 20 = 21000 \mathrm{ J}$$
 
-**Stage 2:** Melt ice at $0^\circ\text{C}$:
+**Stage 2:** Melt ice at $0^\circ\mathrm{C}$:
 
-$$Q_2 = ml_f = 0.5 \times 334000 = 167000 \text{ J}$$
+$$Q_2 = ml_f = 0.5 \times 334000 = 167000 \mathrm{ J}$$
 
-**Stage 3:** Heat water from $0^\circ\text{C}$ to $100^\circ\text{C}$:
+**Stage 3:** Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
-$$Q_3 = mc\Delta T = 0.5 \times 4186 \times 100 = 209300 \text{ J}$$
+$$Q_3 = mc\Delta T = 0.5 \times 4186 \times 100 = 209300 \mathrm{ J}$$
 
-**Stage 4:** Vaporise water at $100^\circ\text{C}$:
+**Stage 4:** Vaporise water at $100^\circ\mathrm{C}$:
 
-$$Q_4 = ml_v = 0.5 \times 2260000 = 1130000 \text{ J}$$
+$$Q_4 = ml_v = 0.5 \times 2260000 = 1130000 \mathrm{ J}$$
 
-**Stage 5:** Heat steam from $100^\circ\text{C}$ to $110^\circ\text{C}$
-($c_{\text{steam}} \approx 2010$ $\text{J kg}^{-1}\text{K}^{-1}$):
+**Stage 5:** Heat steam from $100^\circ\mathrm{C}$ to $110^\circ\mathrm{C}$
+($c_{\mathrm{steam}} \approx 2010$ $\mathrm{J kg}^{-1}\mathrm{K}^{-1}$):
 
-$$Q_5 = mc\Delta T = 0.5 \times 2010 \times 10 = 10050 \text{ J}$$
+$$Q_5 = mc\Delta T = 0.5 \times 2010 \times 10 = 10050 \mathrm{ J}$$
 
 **Total energy:**
 
-$$Q_{\text{total}} = 21000 + 167000 + 209300 + 1130000 + 10050 = 1537350 \text{ J} \approx 1.54 \text{ MJ}$$
+$$Q_{\mathrm{total}} = 21000 + 167000 + 209300 + 1130000 + 10050 = 1537350 \mathrm{ J} \approx 1.54 \mathrm{ MJ}$$
 
 ### Worked Example 5
 
-$200$ g of ice at $0^\circ\text{C}$ is added to $400$ g of water at $50^\circ\text{C}$ in an
+$200$ g of ice at $0^\circ\mathrm{C}$ is added to $400$ g of water at $50^\circ\mathrm{C}$ in an
 insulated container. Find the final temperature and state of the mixture.
 
 First, check whether all the ice can melt. The heat available from the water cooling to
-$0^\circ\text{C}$:
+$0^\circ\mathrm{C}$:
 
-$$Q_{\text{available}} = m_w c_w \Delta T = 0.4 \times 4186 \times 50 = 83720 \text{ J}$$
+$$Q_{\mathrm{available}} = m_w c_w \Delta T = 0.4 \times 4186 \times 50 = 83720 \mathrm{ J}$$
 
 Heat required to melt all the ice:
 
-$$Q_{\text{melt}} = m_i l_f = 0.2 \times 334000 = 66800 \text{ J}$$
+$$Q_{\mathrm{melt}} = m_i l_f = 0.2 \times 334000 = 66800 \mathrm{ J}$$
 
-Since $Q_{\text{available}} \gt Q_{\text{melt}}$, all the ice melts and the mixture warms above
-$0^\circ\text{C}$.
+Since $Q_{\mathrm{available}} \gt Q_{\mathrm{melt}}$, all the ice melts and the mixture warms above
+$0^\circ\mathrm{C}$.
 
 Remaining heat after melting:
 
-$$Q_{\text{remaining}} = 83720 - 66800 = 16920 \text{ J}$$
+$$Q_{\mathrm{remaining}} = 83720 - 66800 = 16920 \mathrm{ J}$$
 
 This heat warms the total mass of water ($0.2 + 0.4 = 0.6$ kg):
 
-$$Q_{\text{remaining}} = m_{\text{total}} c_w \Delta T$$
+$$Q_{\mathrm{remaining}} = m_{\mathrm{total}} c_w \Delta T$$
 
 $$16920 = 0.6 \times 4186 \times T_f$$
 
-$$T_f = \frac{16920}{2511.6} = 6.7^\circ\text{C}$$
+$$T_f = \frac{16920}{2511.6} = 6.7^\circ\mathrm{C}$$
 
-The final mixture is all liquid water at $6.7^\circ\text{C}$.
+The final mixture is all liquid water at $6.7^\circ\mathrm{C}$.
 
 ### Determining Specific Latent Heat by Electrical Method
 
@@ -385,7 +385,7 @@ electrical heater.
 
 1. Place crushed ice in a funnel with a heating coil immersed in it.
 2. Allow the ice to start melting and collect the water that drips through for a few minutes before
-   starting the timer (to ensure the ice is already at $0^\circ\text{C}$).
+   starting the timer (to ensure the ice is already at $0^\circ\mathrm{C}$).
 3. Turn on the heater of known power $P$ for a measured time $t$.
 4. Collect the meltwater produced during this time and measure its mass $m$.
 5. The specific latent heat of fusion is:
@@ -443,9 +443,9 @@ $$\frac{dQ}{dt} = -kA\frac{dT}{dx}$$
 
 where:
 
-- $k$ = thermal conductivity ($\text{W m}^{-1}\text{ K}^{-1}$)
-- $A$ = cross-sectional area ($\text{m}^2$)
-- $\frac{dT}{dx}$ = temperature gradient ($\text{K m}^{-1}$)
+- $k$ = thermal conductivity ($\mathrm{W m}^{-1}\mathrm{ K}^{-1}$)
+- $A$ = cross-sectional area ($\mathrm{m}^2$)
+- $\frac{dT}{dx}$ = temperature gradient ($\mathrm{K m}^{-1}$)
 
 The negative sign indicates that heat flows from high to low temperature.
 
@@ -455,7 +455,7 @@ $$\frac{Q}{t} = kA\frac{T_1 - T_2}{d}$$
 
 #### Thermal Conductivities
 
-| Material             | $k$ ($\text{W m}^{-1}\text{ K}^{-1}$) |
+| Material             | $k$ ($\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) |
 | -------------------- | ------------------------------------- |
 | Copper               | $385$                                 |
 | Aluminium            | $205$                                 |
@@ -474,7 +474,7 @@ insulation, etc.) into a single figure:
 
 $$U = \frac{Q}{A \cdot t \cdot \Delta T}$$
 
-Unit: $\text{W m}^{-2}\text{ K}^{-1}$.
+Unit: $\mathrm{W m}^{-2}\mathrm{ K}^{-1}$.
 
 For a composite wall with layers of thickness $d_1, d_2, \ldots$ and thermal conductivities
 $k_1, k_2, \ldots$ (neglecting surface air films):
@@ -535,8 +535,8 @@ $$P = \sigma A T^4$$
 
 where:
 
-- $\sigma = 5.67 \times 10^{-8}$ $\text{W m}^{-2}\text{ K}^{-4}$ (Stefan-Boltzmann constant)
-- $A$ = surface area ($\text{m}^2$)
+- $\sigma = 5.67 \times 10^{-8}$ $\mathrm{W m}^{-2}\mathrm{ K}^{-4}$ (Stefan-Boltzmann constant)
+- $A$ = surface area ($\mathrm{m}^2$)
 - $T$ = absolute temperature (K)
 
 For a body that is not a perfect black body, we introduce the **emissivity** $e$ ($0 \le e \le 1$):
@@ -550,7 +550,7 @@ $e \approx 0.8$ to $0.95$; polished, light surfaces have $e \approx 0.1$ to $0.3
 
 For a body at temperature $T_1$ in surroundings at temperature $T_2$ (where $T_1 \gt T_2$):
 
-$$P_{\text{net}} = e\sigma A(T_1^4 - T_2^4)$$
+$$P_{\mathrm{net}} = e\sigma A(T_1^4 - T_2^4)$$
 
 #### Black Body Radiation
 
@@ -564,9 +564,9 @@ Key features of the black body radiation spectrum:
 - The wavelength at which the radiation is most intense is inversely proportional to $T$ (Wien's
   displacement law):
 
-$$\lambda_{\text{max}} T = b$$
+$$\lambda_{\mathrm{max}} T = b$$
 
-where $b = 2.898 \times 10^{-3}$ $\text{m K}$ (Wien's constant).
+where $b = 2.898 \times 10^{-3}$ $\mathrm{m K}$ (Wien's constant).
 
 - As temperature increases, the peak wavelength shifts to shorter wavelengths (higher frequencies).
   This explains why objects glow red, then orange, then yellow, then white as they get hotter.
@@ -576,7 +576,7 @@ where $b = 2.898 \times 10^{-3}$ $\text{m K}$ (Wien's constant).
 The Sun has a surface temperature of approximately $5778$ K. At what wavelength does its radiation
 peak?
 
-$$\lambda_{\text{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{5778} = 5.01 \times 10^{-7} \text{ m} = 501 \text{ nm}$$
+$$\lambda_{\mathrm{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{5778} = 5.01 \times 10^{-7} \mathrm{ m} = 501 \mathrm{ nm}$$
 
 This is in the green-blue region of the visible spectrum, consistent with the Sun appearing
 yellowish-white (the combined effect of all wavelengths, modified by atmospheric scattering).
@@ -586,7 +586,7 @@ yellowish-white (the combined effect of all wavelengths, modified by atmospheric
 When the temperature difference is not too large, the rate of heat loss from a body to its
 surroundings is approximately proportional to the temperature difference:
 
-$$\frac{dQ}{dt} \propto (T_{\text{body}} - T_{\text{surr}})$$
+$$\frac{dQ}{dt} \propto (T_{\mathrm{body}} - T_{\mathrm{surr}})$$
 
 Or, for a body of heat capacity $C$:
 
@@ -613,18 +613,18 @@ radiation becomes significant and the cooling is faster than predicted by Newton
 
 | Quantity            | Symbol | Unit                   | Definition                |
 | ------------------- | ------ | ---------------------- | ------------------------- |
-| Pressure            | $p$    | Pa ($\text{N m}^{-2}$) | Force per unit area       |
-| Volume              | $V$    | $\text{m}^3$           | Space occupied by the gas |
+| Pressure            | $p$    | Pa ($\mathrm{N m}^{-2}$) | Force per unit area       |
+| Volume              | $V$    | $\mathrm{m}^3$           | Space occupied by the gas |
 | Temperature         | $T$    | K                      | Absolute temperature      |
 | Amount of substance | $n$    | mol                    | Number of moles           |
-| Molar mass          | $M$    | $\text{kg mol}^{-1}$   | Mass per mole             |
+| Molar mass          | $M$    | $\mathrm{kg mol}^{-1}$   | Mass per mole             |
 
 ### Standard Temperature and Pressure (STP)
 
 | Standard          | Temperature                    | Pressure                |
 | ----------------- | ------------------------------ | ----------------------- |
-| STP (IUPAC, 1982) | $273.15$ K ($0^\circ\text{C}$) | $100$ kPa ($1$ bar)     |
-| STP (traditional) | $273.15$ K ($0^\circ\text{C}$) | $101.325$ kPa ($1$ atm) |
+| STP (IUPAC, 1982) | $273.15$ K ($0^\circ\mathrm{C}$) | $100$ kPa ($1$ bar)     |
+| STP (traditional) | $273.15$ K ($0^\circ\mathrm{C}$) | $101.325$ kPa ($1$ atm) |
 
 **Molar volume at STP (IUPAC):** $V_m = 22.7$ L/mol **Molar volume at traditional STP:**
 $V_m = 22.4$ L/mol
@@ -634,7 +634,7 @@ $V_m = 22.4$ L/mol
 **Statement:** For a fixed mass of gas at constant temperature, the pressure is inversely
 proportional to the volume.
 
-$$p \propto \frac{1}{V} \quad (\text{at constant } T, n)$$
+$$p \propto \frac{1}{V} \quad (\mathrm{at constant } T, n)$$
 
 $$p_1 V_1 = p_2 V_2$$
 
@@ -649,19 +649,19 @@ $$p_1 V_1 = p_2 V_2$$
 **Statement:** For a fixed mass of gas at constant pressure, the volume is directly proportional to
 the absolute temperature.
 
-$$V \propto T \quad (\text{at constant } p, n)$$
+$$V \propto T \quad (\mathrm{at constant } p, n)$$
 
 $$\frac{V_1}{T_1} = \frac{V_2}{T_2}$$
 
 **Critical point:** Temperature must be in Kelvin. If Celsius is used, the graph of $V$ vs $T_C$ is
-a straight line that extrapolates to $V = 0$ at $T_C = -273.15^\circ\text{C}$.
+a straight line that extrapolates to $V = 0$ at $T_C = -273.15^\circ\mathrm{C}$.
 
 ### Gay-Lussac's Law (Pressure-Temperature Law)
 
 **Statement:** For a fixed mass of gas at constant volume, the pressure is directly proportional to
 the absolute temperature.
 
-$$p \propto T \quad (\text{at constant } V, n)$$
+$$p \propto T \quad (\mathrm{at constant } V, n)$$
 
 $$\frac{p_1}{T_1} = \frac{p_2}{T_2}$$
 
@@ -672,7 +672,7 @@ pressure increases as temperature increases at constant volume).
 
 Combining Boyle's Law and Charles's Law:
 
-$$\frac{pV}{T} = \text{constant} \quad (\text{for fixed } n)$$
+$$\frac{pV}{T} = \mathrm{constant} \quad (\mathrm{for fixed } n)$$
 
 $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 
@@ -682,16 +682,16 @@ The **ideal gas equation** unifies all gas laws:
 
 $$pV = nRT$$
 
-where $R = 8.314$ $\text{J mol}^{-1}\text{ K}^{-1}$ is the universal molar gas constant.
+where $R = 8.314$ $\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$ is the universal molar gas constant.
 
 Alternative forms:
 
-In terms of the number of molecules $N = nN_A$ (where $N_A = 6.022 \times 10^{23}$ $\text{mol}^{-1}$
+In terms of the number of molecules $N = nN_A$ (where $N_A = 6.022 \times 10^{23}$ $\mathrm{mol}^{-1}$
 is Avogadro's number):
 
 $$pV = Nk_BT$$
 
-where $k_B = R / N_A = 1.381 \times 10^{-23}$ $\text{J K}^{-1}$ is Boltzmann's constant.
+where $k_B = R / N_A = 1.381 \times 10^{-23}$ $\mathrm{J K}^{-1}$ is Boltzmann's constant.
 
 In terms of mass and density:
 
@@ -703,24 +703,24 @@ where $\rho = m/V$ is the density.
 
 ### Worked Example 6
 
-A gas occupies $5.0 \times 10^{-3}$ $\text{m}^3$ at $2.0 \times 10^5$ Pa and $300$ K. It is
-compressed to $2.0 \times 10^{-3}$ $\text{m}^3$ and the pressure increases to $5.0 \times 10^5$ Pa.
+A gas occupies $5.0 \times 10^{-3}$ $\mathrm{m}^3$ at $2.0 \times 10^5$ Pa and $300$ K. It is
+compressed to $2.0 \times 10^{-3}$ $\mathrm{m}^3$ and the pressure increases to $5.0 \times 10^5$ Pa.
 Find the new temperature.
 
 $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 
 $$T_2 = \frac{p_2 V_2 T_1}{p_1 V_1} = \frac{(5.0 \times 10^5)(2.0 \times 10^{-3})(300)}{(2.0 \times 10^5)(5.0 \times 10^{-3})}$$
 
-$$T_2 = \frac{3000}{1000} = 300 \text{ K}$$
+$$T_2 = \frac{3000}{1000} = 300 \mathrm{ K}$$
 
 ### Worked Example 7
 
-Find the number of moles of gas in a $2.0$ L container at $25^\circ\text{C}$ and $1.01 \times 10^5$
+Find the number of moles of gas in a $2.0$ L container at $25^\circ\mathrm{C}$ and $1.01 \times 10^5$
 Pa.
 
 $$n = \frac{pV}{RT} = \frac{(1.01 \times 10^5)(2.0 \times 10^{-3})}{(8.314)(298.15)}$$
 
-$$n = \frac{202}{2478.9} = 0.0815 \text{ mol}$$
+$$n = \frac{202}{2478.9} = 0.0815 \mathrm{ mol}$$
 
 ### Experimental Verification of Gas Laws
 
@@ -809,11 +809,11 @@ $$F_x = \frac{\Delta p_x}{\Delta t} = \frac{2mv_x}{2L/v_x} = \frac{mv_x^2}{L}$$
 
 **Total force from all $N$ molecules:**
 
-$$F_{\text{total}} = \sum_{i=1}^{N} \frac{mv_{x,i}^2}{L} = \frac{m}{L}\sum_{i=1}^{N} v_{x,i}^2$$
+$$F_{\mathrm{total}} = \sum_{i=1}^{N} \frac{mv_{x,i}^2}{L} = \frac{m}{L}\sum_{i=1}^{N} v_{x,i}^2$$
 
 **Pressure on the wall:**
 
-$$p = \frac{F_{\text{total}}}{L^2} = \frac{m}{L^3}\sum_{i=1}^{N} v_{x,i}^2 = \frac{mN}{V}\langle v_x^2 \rangle$$
+$$p = \frac{F_{\mathrm{total}}}{L^2} = \frac{m}{L^3}\sum_{i=1}^{N} v_{x,i}^2 = \frac{mN}{V}\langle v_x^2 \rangle$$
 
 where $\langle v_x^2 \rangle = \frac{1}{N}\sum_{i=1}^{N} v_{x,i}^2$ is the mean square velocity in
 the $x$-direction.
@@ -850,22 +850,22 @@ energy of molecules.
 
 The **root mean square (rms) speed** is defined as:
 
-$$v_{\text{rms}} = \sqrt{\langle v^2 \rangle}$$
+$$v_{\mathrm{rms}} = \sqrt{\langle v^2 \rangle}$$
 
 From the kinetic theory:
 
-$$v_{\text{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
+$$v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
 
 where $M$ is the molar mass ($M = N_A m$).
 
 ### Worked Example 8
 
-Find the rms speed of nitrogen molecules ($M = 28.0$ $\text{g/mol} = 0.0280$ $\text{kg/mol}$) at
+Find the rms speed of nitrogen molecules ($M = 28.0$ $\mathrm{g/mol} = 0.0280$ $\mathrm{kg/mol}$) at
 room temperature ($300$ K).
 
-$$v_{\text{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.0280}}$$
+$$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.0280}}$$
 
-$$v_{\text{rms}} = \sqrt{\frac{7482.6}{0.0280}} = \sqrt{267235.7} = 517 \text{ m/s}$$
+$$v_{\mathrm{rms}} = \sqrt{\frac{7482.6}{0.0280}} = \sqrt{267235.7} = 517 \mathrm{ m/s}$$
 
 ### Maxwell-Boltzmann Speed Distribution
 
@@ -886,11 +886,11 @@ Key features of the distribution:
 
     $$\langle v \rangle = \sqrt{\frac{8k_BT}{\pi m}} = \sqrt{\frac{8RT}{\pi M}}$$
 
-  - **Root mean square speed** $v_{\text{rms}}$:
+  - **Root mean square speed** $v_{\mathrm{rms}}$:
 
-    $$v_{\text{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
+    $$v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
 
-- The relationship: $v_p : \langle v \rangle : v_{\text{rms}} = 1 : 1.128 : 1.225$
+- The relationship: $v_p : \langle v \rangle : v_{\mathrm{rms}} = 1 : 1.128 : 1.225$
 - As temperature increases, the distribution broadens and shifts to higher speeds.
 - As molar mass increases (heavier molecules), the distribution shifts to lower speeds.
 
@@ -918,7 +918,7 @@ $$\gamma = \frac{C_p}{C_V}$$
 
 ### Molar Heat Capacities of Gases
 
-| Type      | $C_V$ ($\text{J mol}^{-1}\text{ K}^{-1}$) | $C_p$ ($\text{J mol}^{-1}\text{ K}^{-1}$) | $\gamma = C_p/C_V$ |
+| Type      | $C_V$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $C_p$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $\gamma = C_p/C_V$ |
 | --------- | ----------------------------------------- | ----------------------------------------- | ------------------ |
 | Monatomic | $12.5$                                    | $20.8$                                    | $1.67$             |
 | Diatomic  | $20.8$                                    | $29.1$                                    | $1.40$             |
@@ -962,9 +962,9 @@ on the surroundings.
 
 For an adiabatic process:
 
-$$pV^\gamma = \text{constant}$$
+$$pV^\gamma = \mathrm{constant}$$
 
-$$TV^{\gamma - 1} = \text{constant}$$
+$$TV^{\gamma - 1} = \mathrm{constant}$$
 
 ### Worked Example 9
 
@@ -973,7 +973,7 @@ the work done and the heat absorbed.
 
 $$W = nRT\ln\left(\frac{V_2}{V_1}\right) = 2.0 \times 8.314 \times 300 \times \ln\left(\frac{15.0}{5.0}\right)$$
 
-$$W = 4988.4 \times \ln(3) = 4988.4 \times 1.099 = 5482 \text{ J}$$
+$$W = 4988.4 \times \ln(3) = 4988.4 \times 1.099 = 5482 \mathrm{ J}$$
 
 Since the process is isothermal, $\Delta U = 0$, so $Q = W = 5482$ J.
 
@@ -1007,7 +1007,7 @@ and rise to the top.
 
 - The boiling point of a liquid depends on the external pressure.
 - At higher altitudes (lower atmospheric pressure), water boils at a temperature below
-  $100^\circ\text{C}$.
+  $100^\circ\mathrm{C}$.
 - In a pressure cooker, the high pressure raises the boiling point, allowing food to cook faster.
 
 ### Distinction Between Evaporation and Boiling
@@ -1027,28 +1027,28 @@ and rise to the top.
 ### Mistake 1: Confusing Heat and Temperature
 
 Heat and temperature are fundamentally different quantities. A large mass of water at
-$50^\circ\text{C}$ contains more thermal energy than a small mass of water at $90^\circ\text{C}$.
+$50^\circ\mathrm{C}$ contains more thermal energy than a small mass of water at $90^\circ\mathrm{C}$.
 Temperature measures the _average_ kinetic energy per particle; heat is the total energy transferred
 due to a temperature difference.
 
 ### Mistake 2: Using Celsius in Gas Law Calculations
 
 All gas law calculations require temperature in **Kelvin**. Using Celsius will produce incorrect
-results. For example, doubling the Celsius temperature from $20^\circ\text{C}$ to $40^\circ\text{C}$
+results. For example, doubling the Celsius temperature from $20^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$
 is NOT a doubling of the absolute temperature ($293$ K to $313$ K).
 
 ### Mistake 3: Forgetting to Account for the Calorimeter
 
 In method of mixtures experiments, the calorimeter itself absorbs heat. Ignoring the calorimeter's
-heat capacity $C_{\text{cal}}$ leads to an overestimate of the specific heat capacity of the sample.
+heat capacity $C_{\mathrm{cal}}$ leads to an overestimate of the specific heat capacity of the sample.
 The correct energy balance is:
 
-$$m_s c_s (T_s - T_f) = (m_w c_w + C_{\text{cal}})(T_f - T_w)$$
+$$m_s c_s (T_s - T_f) = (m_w c_w + C_{\mathrm{cal}})(T_f - T_w)$$
 
 ### Mistake 4: Assuming All Ice Melts (or All Water Freezes)
 
 When mixing ice and water, always check whether the available heat is sufficient to melt all the ice
-before assuming the final state is all liquid. If not, the final temperature is $0^\circ\text{C}$
+before assuming the final state is all liquid. If not, the final temperature is $0^\circ\mathrm{C}$
 and the system is a mixture of ice and water.
 
 ### Mistake 5: Wrong Sign Convention in the First Law
@@ -1062,9 +1062,9 @@ throughout.
 The most probable speed, mean speed, and rms speed are different. For Maxwell-Boltzmann
 distributions:
 
-$$v_p = \sqrt{\frac{2RT}{M}}, \quad \langle v \rangle = \sqrt{\frac{8RT}{\pi M}}, \quad v_{\text{rms}} = \sqrt{\frac{3RT}{M}}$$
+$$v_p = \sqrt{\frac{2RT}{M}}, \quad \langle v \rangle = \sqrt{\frac{8RT}{\pi M}}, \quad v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}}$$
 
-The relationship is $v_p \lt \langle v \rangle \lt v_{\text{rms}}$. In DSE problems, pay attention
+The relationship is $v_p \lt \langle v \rangle \lt v_{\mathrm{rms}}$. In DSE problems, pay attention
 to which speed the question asks for.
 
 ### Mistake 7: Applying Boyle's Law When Temperature Changes
@@ -1077,13 +1077,13 @@ $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 ### Mistake 8: Units in Thermal Conductivity Problems
 
 When using Fourier's law, ensure all quantities are in SI units: $k$ in
-$\text{W m}^{-1}\text{ K}^{-1}$, $A$ in $\text{m}^2$, $d$ in $\text{m}$, $\Delta T$ in K. A common
+$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$, $A$ in $\mathrm{m}^2$, $d$ in $\mathrm{m}$, $\Delta T$ in K. A common
 error is using centimetres for thickness without converting to metres.
 
 ### Mistake 9: Mixing Up Specific Heat Capacity and Heat Capacity
 
-Specific heat capacity $c$ is per unit mass ($\text{J kg}^{-1}\text{ K}^{-1}$). Heat capacity $C$ is
-for the entire object ($\text{J K}^{-1}$). They are related by $C = mc$. Using one in place of the
+Specific heat capacity $c$ is per unit mass ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$). Heat capacity $C$ is
+for the entire object ($\mathrm{J K}^{-1}$). They are related by $C = mc$. Using one in place of the
 other is a frequent error.
 
 ### Mistake 10: Incorrect U-Value Calculation
@@ -1104,20 +1104,20 @@ Do not add the U-values of individual layers directly.
 The surface temperature of the Sun is approximately $5778$ K. Express this in Celsius and
 Fahrenheit.
 
-$$T_C = 5778 - 273.15 = 5504.85^\circ\text{C}$$
+$$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
 
-$$T_F = \frac{9}{5}(5504.85) + 32 = 9908.73 + 32 = 9940.73^\circ\text{F}$$
+$$T_F = \frac{9}{5}(5504.85) + 32 = 9908.73 + 32 = 9940.73^\circ\mathrm{F}$$
 
 </details>
 
 <details>
 <summary>Question 2: Specific Heat Capacity Mixing</summary>
 
-A $0.3$ kg aluminium block at $200^\circ\text{C}$ is dropped into $1.0$ kg of oil at
-$25^\circ\text{C}$ contained in a copper calorimeter of mass $0.2$ kg at $25^\circ\text{C}$. The
-specific heat capacity of oil is $2100$ $\text{J kg}^{-1}\text{ K}^{-1}$. Find the final
-temperature. (Specific heat capacity of aluminium $= 900$ $\text{J kg}^{-1}\text{ K}^{-1}$, copper
-$= 385$ $\text{J kg}^{-1}\text{ K}^{-1}$.)
+A $0.3$ kg aluminium block at $200^\circ\mathrm{C}$ is dropped into $1.0$ kg of oil at
+$25^\circ\mathrm{C}$ contained in a copper calorimeter of mass $0.2$ kg at $25^\circ\mathrm{C}$. The
+specific heat capacity of oil is $2100$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$. Find the final
+temperature. (Specific heat capacity of aluminium $= 900$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$, copper
+$= 385$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.)
 
 Heat lost by aluminium $=$ heat gained by oil $+$ heat gained by calorimeter:
 
@@ -1133,70 +1133,70 @@ $$54000 + 54425 = 2177T_f + 270T_f$$
 
 $$108425 = 2447T_f$$
 
-$$T_f = 44.3^\circ\text{C}$$
+$$T_f = 44.3^\circ\mathrm{C}$$
 
 </details>
 
 <details>
 <summary>Question 3: Latent Heat with Phase Change</summary>
 
-$100$ g of steam at $100^\circ\text{C}$ is passed into $500$ g of water at $20^\circ\text{C}$. Find
+$100$ g of steam at $100^\circ\mathrm{C}$ is passed into $500$ g of water at $20^\circ\mathrm{C}$. Find
 the final temperature and state.
 
 **Step 1:** Check if all steam condenses.
 
-Heat released if all steam condenses and cools to $0^\circ\text{C}$:
+Heat released if all steam condenses and cools to $0^\circ\mathrm{C}$:
 
-$$Q_{\text{max}} = m_s l_v + m_s c_w (100 - 0) = 0.1 \times 2260000 + 0.1 \times 4186 \times 100$$
+$$Q_{\mathrm{max}} = m_s l_v + m_s c_w (100 - 0) = 0.1 \times 2260000 + 0.1 \times 4186 \times 100$$
 
-$$Q_{\text{max}} = 226000 + 41860 = 267860 \text{ J}$$
+$$Q_{\mathrm{max}} = 226000 + 41860 = 267860 \mathrm{ J}$$
 
-Heat required to warm water from $20^\circ\text{C}$ to $100^\circ\text{C}$:
+Heat required to warm water from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
-$$Q_{\text{warm}} = m_w c_w (100 - 20) = 0.5 \times 4186 \times 80 = 167440 \text{ J}$$
+$$Q_{\mathrm{warm}} = m_w c_w (100 - 20) = 0.5 \times 4186 \times 80 = 167440 \mathrm{ J}$$
 
-Since $Q_{\text{max}} \gt Q_{\text{warm}}$, all the steam condenses and the final temperature is
-above $20^\circ\text{C}$ but we need to check if it reaches $100^\circ\text{C}$.
+Since $Q_{\mathrm{max}} \gt Q_{\mathrm{warm}}$, all the steam condenses and the final temperature is
+above $20^\circ\mathrm{C}$ but we need to check if it reaches $100^\circ\mathrm{C}$.
 
-Actually, $Q_{\text{warm}} = 167440$ J is less than the latent heat of condensation alone ($226000$
-J), so only part of the steam condenses. The final temperature is $100^\circ\text{C}$.
+Actually, $Q_{\mathrm{warm}} = 167440$ J is less than the latent heat of condensation alone ($226000$
+J), so only part of the steam condenses. The final temperature is $100^\circ\mathrm{C}$.
 
 Let $m$ be the mass of steam that condenses:
 
 $$m \times l_v = 167440$$
 
-$$m = \frac{167440}{2260000} = 0.0741 \text{ kg} = 74.1 \text{ g}$$
+$$m = \frac{167440}{2260000} = 0.0741 \mathrm{ kg} = 74.1 \mathrm{ g}$$
 
-The final mixture is $174.1$ g of water and $25.9$ g of steam at $100^\circ\text{C}$.
+The final mixture is $174.1$ g of water and $25.9$ g of steam at $100^\circ\mathrm{C}$.
 
 </details>
 
 <details>
 <summary>Question 4: Thermal Conductivity</summary>
 
-A glass window of area $1.5$ $\text{m}^2$ and thickness $5.0$ mm has an indoor surface temperature
-of $20^\circ\text{C}$ and an outdoor surface temperature of $5^\circ\text{C}$. Find the rate of heat
-loss through the window. (Thermal conductivity of glass $= 0.8$ $\text{W m}^{-1}\text{ K}^{-1}$.)
+A glass window of area $1.5$ $\mathrm{m}^2$ and thickness $5.0$ mm has an indoor surface temperature
+of $20^\circ\mathrm{C}$ and an outdoor surface temperature of $5^\circ\mathrm{C}$. Find the rate of heat
+loss through the window. (Thermal conductivity of glass $= 0.8$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$.)
 
 $$\frac{Q}{t} = kA\frac{T_1 - T_2}{d} = 0.8 \times 1.5 \times \frac{20 - 5}{0.005}$$
 
-$$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \text{ W}$$
+$$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \mathrm{ W}$$
 
 </details>
 
 <details>
 <summary>Question 5: U-Value of Composite Wall</summary>
 
-A wall consists of a $10$ cm brick layer ($k = 0.6$ $\text{W m}^{-1}\text{ K}^{-1}$) and a $5$ cm
-layer of insulation ($k = 0.04$ $\text{W m}^{-1}\text{ K}^{-1}$). Find the U-value.
+A wall consists of a $10$ cm brick layer ($k = 0.6$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) and a $5$ cm
+layer of insulation ($k = 0.04$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$). Find the U-value.
 
-$$R_{\text{brick}} = \frac{d_1}{k_1} = \frac{0.10}{0.6} = 0.1667 \text{ m}^2\text{ K/W}$$
+$$R_{\mathrm{brick}} = \frac{d_1}{k_1} = \frac{0.10}{0.6} = 0.1667 \mathrm{ m}^2\mathrm{ K/W}$$
 
-$$R_{\text{insulation}} = \frac{d_2}{k_2} = \frac{0.05}{0.04} = 1.25 \text{ m}^2\text{ K/W}$$
+$$R_{\mathrm{insulation}} = \frac{d_2}{k_2} = \frac{0.05}{0.04} = 1.25 \mathrm{ m}^2\mathrm{ K/W}$$
 
-$$\frac{1}{U} = 0.1667 + 1.25 = 1.4167 \text{ m}^2\text{ K/W}$$
+$$\frac{1}{U} = 0.1667 + 1.25 = 1.4167 \mathrm{ m}^2\mathrm{ K/W}$$
 
-$$U = \frac{1}{1.4167} = 0.706 \text{ W m}^{-2}\text{ K}^{-1}$$
+$$U = \frac{1}{1.4167} = 0.706 \mathrm{ W m}^{-2}\mathrm{ K}^{-1}$$
 
 </details>
 
@@ -1211,45 +1211,45 @@ $$P = 5.67 \times 10^{-8} \times 4\pi(0.05)^2 \times (500)^4$$
 
 $$P = 5.67 \times 10^{-8} \times 0.03142 \times 6.25 \times 10^{10}$$
 
-$$P = 5.67 \times 10^{-8} \times 1.963 \times 10^9 = 111.3 \text{ W}$$
+$$P = 5.67 \times 10^{-8} \times 1.963 \times 10^9 = 111.3 \mathrm{ W}$$
 
 </details>
 
 <details>
 <summary>Question 7: Gas Law Combined</summary>
 
-A gas cylinder contains $10$ L of oxygen at $20^\circ\text{C}$ and $1.5 \times 10^6$ Pa. If the
-temperature rises to $80^\circ\text{C}$ and the pressure valve releases gas to maintain
-$1.5 \times 10^6$ Pa, what volume of gas (measured at $20^\circ\text{C}$ and $1.01 \times 10^5$ Pa)
+A gas cylinder contains $10$ L of oxygen at $20^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa. If the
+temperature rises to $80^\circ\mathrm{C}$ and the pressure valve releases gas to maintain
+$1.5 \times 10^6$ Pa, what volume of gas (measured at $20^\circ\mathrm{C}$ and $1.01 \times 10^5$ Pa)
 escapes?
 
-The gas that remains in the cylinder at $80^\circ\text{C}$ and $1.5 \times 10^6$ Pa occupies $10$ L.
+The gas that remains in the cylinder at $80^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa occupies $10$ L.
 
 Moles remaining:
 
-$$n_r = \frac{pV}{RT} = \frac{1.5 \times 10^6 \times 0.010}{8.314 \times 353.15} = \frac{15000}{2936.7} = 5.108 \text{ mol}$$
+$$n_r = \frac{pV}{RT} = \frac{1.5 \times 10^6 \times 0.010}{8.314 \times 353.15} = \frac{15000}{2936.7} = 5.108 \mathrm{ mol}$$
 
 Initial moles:
 
-$$n_i = \frac{1.5 \times 10^6 \times 0.010}{8.314 \times 293.15} = \frac{15000}{2437.5} = 6.154 \text{ mol}$$
+$$n_i = \frac{1.5 \times 10^6 \times 0.010}{8.314 \times 293.15} = \frac{15000}{2437.5} = 6.154 \mathrm{ mol}$$
 
 Moles escaped:
 
-$$\Delta n = 6.154 - 5.108 = 1.046 \text{ mol}$$
+$$\Delta n = 6.154 - 5.108 = 1.046 \mathrm{ mol}$$
 
-Volume at STP conditions ($20^\circ\text{C}$, $1.01 \times 10^5$ Pa):
+Volume at STP conditions ($20^\circ\mathrm{C}$, $1.01 \times 10^5$ Pa):
 
-$$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} = \frac{2548.5}{101000} = 0.0252 \text{ m}^3 = 25.2 \text{ L}$$
+$$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} = \frac{2548.5}{101000} = 0.0252 \mathrm{ m}^3 = 25.2 \mathrm{ L}$$
 
 </details>
 
 <details>
 <summary>Question 8: RMS Speed Comparison</summary>
 
-Compare the rms speeds of hydrogen ($M = 2.0$ $\text{g/mol}$) and oxygen ($M = 32.0$ $\text{g/mol}$)
+Compare the rms speeds of hydrogen ($M = 2.0$ $\mathrm{g/mol}$) and oxygen ($M = 32.0$ $\mathrm{g/mol}$)
 at the same temperature.
 
-$$\frac{v_{\text{rms,H}_2}}{v_{\text{rms,O}_2}} = \sqrt{\frac{M_{\text{O}_2}}{M_{\text{H}_2}}} = \sqrt{\frac{32.0}{2.0}} = \sqrt{16} = 4$$
+$$\frac{v_{\mathrm{rms,H}_2}}{v_{\mathrm{rms,O}_2}} = \sqrt{\frac{M_{\mathrm{O}_2}}{M_{\mathrm{H}_2}}} = \sqrt{\frac{32.0}{2.0}} = \sqrt{16} = 4$$
 
 Hydrogen molecules move four times faster than oxygen molecules at the same temperature. This is
 consistent with the observation that lighter gases diffuse more rapidly (Graham's law).
@@ -1268,25 +1268,25 @@ $$W = p\Delta V$$
 
 First, find $p$:
 
-$$p = \frac{nRT}{V_1} = \frac{1.0 \times 8.314 \times 300}{0.010} = 249420 \text{ Pa}$$
+$$p = \frac{nRT}{V_1} = \frac{1.0 \times 8.314 \times 300}{0.010} = 249420 \mathrm{ Pa}$$
 
-$$W = 249420 \times (0.020 - 0.010) = 2494.2 \text{ J}$$
+$$W = 249420 \times (0.020 - 0.010) = 2494.2 \mathrm{ J}$$
 
 **Change in internal energy** (for a monatomic ideal gas, $C_V = \frac{3}{2}R$):
 
 Find the final temperature:
 
-$$\frac{V_1}{T_1} = \frac{V_2}{T_2} \implies T_2 = \frac{V_2 T_1}{V_1} = \frac{20 \times 300}{10} = 600 \text{ K}$$
+$$\frac{V_1}{T_1} = \frac{V_2}{T_2} \implies T_2 = \frac{V_2 T_1}{V_1} = \frac{20 \times 300}{10} = 600 \mathrm{ K}$$
 
-$$\Delta U = nC_V\Delta T = 1.0 \times \frac{3}{2} \times 8.314 \times (600 - 300) = 12.471 \times 300 = 3741.3 \text{ J}$$
+$$\Delta U = nC_V\Delta T = 1.0 \times \frac{3}{2} \times 8.314 \times (600 - 300) = 12.471 \times 300 = 3741.3 \mathrm{ J}$$
 
 **Heat supplied:**
 
-$$Q = \Delta U + W = 3741.3 + 2494.2 = 6235.5 \text{ J}$$
+$$Q = \Delta U + W = 3741.3 + 2494.2 = 6235.5 \mathrm{ J}$$
 
 Alternatively, using $C_p = \frac{5}{2}R$:
 
-$$Q = nC_p\Delta T = 1.0 \times \frac{5}{2} \times 8.314 \times 300 = 6235.5 \text{ J}$$
+$$Q = nC_p\Delta T = 1.0 \times \frac{5}{2} \times 8.314 \times 300 = 6235.5 \mathrm{ J}$$
 
 </details>
 
@@ -1302,15 +1302,15 @@ $$p_1 V_1^\gamma = p_2 V_2^\gamma$$
 
 $$p_2 = p_1\left(\frac{V_1}{V_2}\right)^\gamma = 4.0 \times 10^5 \times \left(\frac{5.0}{10.0}\right)^{1.4}$$
 
-$$p_2 = 4.0 \times 10^5 \times (0.5)^{1.4} = 4.0 \times 10^5 \times 0.3789 = 1.516 \times 10^5 \text{ Pa}$$
+$$p_2 = 4.0 \times 10^5 \times (0.5)^{1.4} = 4.0 \times 10^5 \times 0.3789 = 1.516 \times 10^5 \mathrm{ Pa}$$
 
 **Initial temperature:**
 
-$$T_1 = \frac{p_1 V_1}{nR} = \frac{4.0 \times 10^5 \times 0.0050}{2.0 \times 8.314} = \frac{2000}{16.628} = 120.3 \text{ K}$$
+$$T_1 = \frac{p_1 V_1}{nR} = \frac{4.0 \times 10^5 \times 0.0050}{2.0 \times 8.314} = \frac{2000}{16.628} = 120.3 \mathrm{ K}$$
 
 **Final temperature:**
 
-$$T_2 = \frac{p_2 V_2}{nR} = \frac{1.516 \times 10^5 \times 0.010}{2.0 \times 8.314} = \frac{1516}{16.628} = 91.1 \text{ K}$$
+$$T_2 = \frac{p_2 V_2}{nR} = \frac{1.516 \times 10^5 \times 0.010}{2.0 \times 8.314} = \frac{1516}{16.628} = 91.1 \mathrm{ K}$$
 
 The temperature drops because the gas does work on its surroundings without any heat input.
 
@@ -1319,14 +1319,14 @@ The temperature drops because the gas does work on its surroundings without any 
 <details>
 <summary>Question 11: Newton's Law of Cooling</summary>
 
-A body cools from $80^\circ\text{C}$ to $60^\circ\text{C}$ in $5$ minutes in a room at
-$20^\circ\text{C}$. How long will it take to cool from $60^\circ\text{C}$ to $40^\circ\text{C}$?
+A body cools from $80^\circ\mathrm{C}$ to $60^\circ\mathrm{C}$ in $5$ minutes in a room at
+$20^\circ\mathrm{C}$. How long will it take to cool from $60^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$?
 
 Using Newton's law of cooling:
 
 $$T(t) = T_s + (T_0 - T_s)e^{-t/\tau}$$
 
-For the first interval ($80^\circ\text{C}$ to $60^\circ\text{C}$ in $300$ s):
+For the first interval ($80^\circ\mathrm{C}$ to $60^\circ\mathrm{C}$ in $300$ s):
 
 $$60 = 20 + (80 - 20)e^{-300/\tau}$$
 
@@ -1336,9 +1336,9 @@ $$e^{-300/\tau} = \frac{2}{3}$$
 
 $$\frac{-300}{\tau} = \ln\left(\frac{2}{3}\right)$$
 
-$$\tau = \frac{-300}{\ln(2/3)} = \frac{-300}{-0.4055} = 739.8 \text{ s}$$
+$$\tau = \frac{-300}{\ln(2/3)} = \frac{-300}{-0.4055} = 739.8 \mathrm{ s}$$
 
-For the second interval ($60^\circ\text{C}$ to $40^\circ\text{C}$):
+For the second interval ($60^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$):
 
 $$40 = 20 + (60 - 20)e^{-t/\tau}$$
 
@@ -1348,7 +1348,7 @@ $$e^{-t/\tau} = \frac{1}{2}$$
 
 $$\frac{-t}{739.8} = \ln\left(\frac{1}{2}\right) = -0.693$$
 
-$$t = 739.8 \times 0.693 = 512.7 \text{ s} \approx 8.5 \text{ minutes}$$
+$$t = 739.8 \times 0.693 = 512.7 \mathrm{ s} \approx 8.5 \mathrm{ minutes}$$
 
 </details>
 
@@ -1358,7 +1358,7 @@ $$t = 739.8 \times 0.693 = 512.7 \text{ s} \approx 8.5 \text{ minutes}$$
 A star has a surface temperature of $3500$ K. (a) At what wavelength does it radiate most intensely?
 (b) In what region of the electromagnetic spectrum is this?
 
-$$\lambda_{\text{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{3500} = 8.28 \times 10^{-7} \text{ m} = 828 \text{ nm}$$
+$$\lambda_{\mathrm{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{3500} = 8.28 \times 10^{-7} \mathrm{ m} = 828 \mathrm{ nm}$$
 
 This is in the **near-infrared** region (visible light extends from approximately $380$ nm to $750$
 nm). Such stars appear reddish to the eye because the tail of the distribution extends into the red
@@ -1378,57 +1378,57 @@ $$\lambda = \frac{1}{\sqrt{2}\pi d^2 n}$$
 
 where $n$ is the number density. At STP, $n = \frac{p}{k_BT}$:
 
-$$n = \frac{1.01 \times 10^5}{1.381 \times 10^{-23} \times 273.15} = 2.68 \times 10^{25} \text{ m}^{-3}$$
+$$n = \frac{1.01 \times 10^5}{1.381 \times 10^{-23} \times 273.15} = 2.68 \times 10^{25} \mathrm{ m}^{-3}$$
 
 $$\lambda = \frac{1}{\sqrt{2}\pi(3.6 \times 10^{-10})^2 \times 2.68 \times 10^{25}}$$
 
 $$\lambda = \frac{1}{1.414 \times 3.14159 \times 1.296 \times 10^{-19} \times 2.68 \times 10^{25}}$$
 
-$$\lambda = \frac{1}{1.537 \times 10^{7}} = 6.51 \times 10^{-8} \text{ m} = 65.1 \text{ nm}$$
+$$\lambda = \frac{1}{1.537 \times 10^{7}} = 6.51 \times 10^{-8} \mathrm{ m} = 65.1 \mathrm{ nm}$$
 
 </details>
 
 <details>
 <summary>Question 14: Density of a Gas</summary>
 
-Find the density of nitrogen gas ($M = 28.0$ $\text{g/mol}$) at $25^\circ\text{C}$ and
+Find the density of nitrogen gas ($M = 28.0$ $\mathrm{g/mol}$) at $25^\circ\mathrm{C}$ and
 $1.01 \times 10^5$ Pa.
 
 $$\rho = \frac{pM}{RT} = \frac{(1.01 \times 10^5)(0.0280)}{(8.314)(298.15)}$$
 
-$$\rho = \frac{2828}{2478.9} = 1.141 \text{ kg/m}^3$$
+$$\rho = \frac{2828}{2478.9} = 1.141 \mathrm{ kg/m}^3$$
 
 </details>
 
 <details>
 <summary>Question 15: Complete Energy Balance with Phase Change</summary>
 
-A $500$ W heater is used to heat $0.5$ kg of ice at $-10^\circ\text{C}$ in an insulated container.
-How long does it take to convert all the ice to steam at $100^\circ\text{C}$? Assume $100\%$
+A $500$ W heater is used to heat $0.5$ kg of ice at $-10^\circ\mathrm{C}$ in an insulated container.
+How long does it take to convert all the ice to steam at $100^\circ\mathrm{C}$? Assume $100\%$
 efficiency.
 
-**Stage 1:** Heat ice from $-10^\circ\text{C}$ to $0^\circ\text{C}$:
+**Stage 1:** Heat ice from $-10^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
 
-$$Q_1 = 0.5 \times 2100 \times 10 = 10500 \text{ J}$$
+$$Q_1 = 0.5 \times 2100 \times 10 = 10500 \mathrm{ J}$$
 
-**Stage 2:** Melt ice at $0^\circ\text{C}$:
+**Stage 2:** Melt ice at $0^\circ\mathrm{C}$:
 
-$$Q_2 = 0.5 \times 334000 = 167000 \text{ J}$$
+$$Q_2 = 0.5 \times 334000 = 167000 \mathrm{ J}$$
 
-**Stage 3:** Heat water from $0^\circ\text{C}$ to $100^\circ\text{C}$:
+**Stage 3:** Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
-$$Q_3 = 0.5 \times 4186 \times 100 = 209300 \text{ J}$$
+$$Q_3 = 0.5 \times 4186 \times 100 = 209300 \mathrm{ J}$$
 
-**Stage 4:** Vaporise water at $100^\circ\text{C}$:
+**Stage 4:** Vaporise water at $100^\circ\mathrm{C}$:
 
-$$Q_4 = 0.5 \times 2260000 = 1130000 \text{ J}$$
+$$Q_4 = 0.5 \times 2260000 = 1130000 \mathrm{ J}$$
 
 **Total energy:**
 
-$$Q_{\text{total}} = 10500 + 167000 + 209300 + 1130000 = 1516800 \text{ J}$$
+$$Q_{\mathrm{total}} = 10500 + 167000 + 209300 + 1130000 = 1516800 \mathrm{ J}$$
 
 **Time:**
 
-$$t = \frac{Q_{\text{total}}}{P} = \frac{1516800}{500} = 3033.6 \text{ s} = 50.6 \text{ minutes}$$
+$$t = \frac{Q_{\mathrm{total}}}{P} = \frac{1516800}{500} = 3033.6 \mathrm{ s} = 50.6 \mathrm{ minutes}$$
 
 </details>

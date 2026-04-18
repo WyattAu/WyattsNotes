@@ -39,7 +39,7 @@ $r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$.
 ### 1.1 Definition
 
 **Definition.** A discrete random variable $X$ follows a **Poisson distribution** with parameter
-$\lambda$ (where $\lambda > 0$), written $X \sim \text{Po}(\lambda)$, if
+$\lambda$ (where $\lambda > 0$), written $X \sim \mathrm{Po}(\lambda)$, if
 
 $$P(X = r) = \frac{e^{-\lambda}\lambda^r}{r!}, \quad r = 0, 1, 2, \ldots$$
 
@@ -53,7 +53,7 @@ when:
 ### 1.2 Derivation as a Limit of the Binomial
 
 **Theorem.** If $n \to \infty$ and $p \to 0$ such that $np = \lambda$ remains constant, then
-$B(n, p) \to \text{Po}(\lambda)$.
+$B(n, p) \to \mathrm{Po}(\lambda)$.
 
 ### Proof
 
@@ -85,7 +85,7 @@ E(X) &= \sum_{r=0}^{\infty}r\cdot\frac{e^{-\lambda}\lambda^r}{r!} = \sum_{r=1}^{
 \end{aligned}
 $$
 
-### 1.4 Proof that $\text{Var}(X) = \lambda$
+### 1.4 Proof that $\mathrm{Var}(X) = \lambda$
 
 ### Proof
 
@@ -100,17 +100,17 @@ $$
 
 Since $E(X^2) = E(X(X-1)) + E(X) = \lambda^2 + \lambda$:
 
-$$\text{Var}(X) = E(X^2) - [E(X)]^2 = \lambda^2 + \lambda - \lambda^2 = \lambda \quad \blacksquare$$
+$$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \lambda^2 + \lambda - \lambda^2 = \lambda \quad \blacksquare$$
 
-$$\boxed{E(X) = \text{Var}(X) = \lambda}$$
+$$\boxed{E(X) = \mathrm{Var}(X) = \lambda}$$
 
 This is the defining property of the Poisson distribution: the mean equals the variance.
 
 ### 1.5 Additivity of Poisson distributions
 
-If $X \sim \text{Po}(\lambda)$ and $Y \sim \text{Po}(\mu)$ are independent, then
+If $X \sim \mathrm{Po}(\lambda)$ and $Y \sim \mathrm{Po}(\mu)$ are independent, then
 
-$$\boxed{X + Y \sim \text{Po}(\lambda + \mu)}$$
+$$\boxed{X + Y \sim \mathrm{Po}(\lambda + \mu)}$$
 
 ### 1.6 Cumulative probabilities
 
@@ -126,7 +126,7 @@ $$P(X > r) = 1 - P(X \leq r)$$ $$P(a \leq X \leq b) = P(X \leq b) - P(X \leq a-1
 
 The procedure mirrors binomial hypothesis testing:
 
-1. Define $X$ and state $X \sim \text{Po}(\lambda_0)$ under $H_0$
+1. Define $X$ and state $X \sim \mathrm{Po}(\lambda_0)$ under $H_0$
 2. State $H_0: \lambda = \lambda_0$ and $H_1$
 3. State the significance level $\alpha$
 4. Find the critical region
@@ -136,14 +136,14 @@ The procedure mirrors binomial hypothesis testing:
 **Example.** A call centre receives an average of 3.2 calls per minute. In a particular minute, 7
 calls are received. Test at the 5% significance level whether the rate has increased.
 
-$X \sim \text{Po}(3.2)$. $H_0: \lambda = 3.2$, $H_1: \lambda > 3.2$.
+$X \sim \mathrm{Po}(3.2)$. $H_0: \lambda = 3.2$, $H_1: \lambda > 3.2$.
 
 $P(X \geq 7) = 1 - P(X \leq 6) = 1 - 0.9554 = 0.0446 < 0.05$.
 
 Reject $H_0$. There is sufficient evidence that the rate has increased.
 
 **Example.** Find the critical region for a two-tailed test at the 5% level with
-$X \sim \text{Po}(5)$.
+$X \sim \mathrm{Po}(5)$.
 
 Lower tail: $P(X \leq 0) = e^{-5} \approx 0.0067 \leq 0.025$. $P(X \leq 1) = 0.0404 > 0.025$. So
 $X \leq 0$.
@@ -160,7 +160,7 @@ Critical region: $X \leq 0$ or $X \geq 11$.
 ### 2.1 Definition
 
 **Definition.** A discrete random variable $X$ follows a **geometric distribution** with parameter
-$p$ (where $0 < p \leq 1$), written $X \sim \text{Geo}(p)$, if $X$ is the number of the trial on
+$p$ (where $0 < p \leq 1$), written $X \sim \mathrm{Geo}(p)$, if $X$ is the number of the trial on
 which the first success occurs:
 
 $$P(X = r) = (1-p)^{r-1}p, \quad r = 1, 2, 3, \ldots$$
@@ -173,7 +173,7 @@ Each trial is independent with probability $p$ of success.
 
 $$
 \begin{aligned}
-E(X) &= \sum_{r=1}^{\infty}r\,q^{r-1}p \quad \text{where } q = 1-p
+E(X) &= \sum_{r=1}^{\infty}r\,q^{r-1}p \quad \mathrm{where } q = 1-p
 \end{aligned}
 $$
 
@@ -188,7 +188,7 @@ Therefore:
 
 $$E(X) = p \cdot \frac{1}{(1-q)^2} = p \cdot \frac{1}{p^2} = \frac{1}{p} \quad \blacksquare$$
 
-### 2.3 Proof that $\text{Var}(X) = \frac{1-p}{p^2}$
+### 2.3 Proof that $\mathrm{Var}(X) = \frac{1-p}{p^2}$
 
 ### Proof
 
@@ -209,11 +209,11 @@ So $E(X(X-1)) = p\,q\cdot\frac{2}{(1-q)^3} = p\,q\cdot\frac{2}{p^3} = \frac{2q}{
 $$
 \begin{aligned}
 E(X^2) &= \frac{2q}{p^2} + \frac{1}{p} = \frac{2q + p}{p^2} = \frac{2(1-p) + p}{p^2} = \frac{2-p}{p^2} \\[4pt]
-\text{Var}(X) &= E(X^2) - [E(X)]^2 = \frac{2-p}{p^2} - \frac{1}{p^2} = \frac{1-p}{p^2} \quad \blacksquare
+\mathrm{Var}(X) &= E(X^2) - [E(X)]^2 = \frac{2-p}{p^2} - \frac{1}{p^2} = \frac{1-p}{p^2} \quad \blacksquare
 \end{aligned}
 $$
 
-$$\boxed{E(X) = \frac{1}{p}, \qquad \text{Var}(X) = \frac{1-p}{p^2}}$$
+$$\boxed{E(X) = \frac{1}{p}, \qquad \mathrm{Var}(X) = \frac{1-p}{p^2}}$$
 
 ### 2.4 The memoryless property
 
@@ -225,8 +225,8 @@ $$P(X > m + n \mid X > m) = P(X > n)$$
 
 $$
 \begin{aligned}
-P(X > m + n \mid X > m) &= \frac{P(X > m+n \text{ and } X > m)}{P(X > m)} \\
-&= \frac{P(X > m+n)}{P(X > m)} \quad \text{(since } X > m+n \implies X > m\text{)} \\
+P(X > m + n \mid X > m) &= \frac{P(X > m+n \mathrm{ and } X > m)}{P(X > m)} \\
+&= \frac{P(X > m+n)}{P(X > m)} \quad \mathrm{(since } X > m+n \implies X > m\mathrm{)} \\
 &= \frac{1 - P(X \leq m+n)}{1 - P(X \leq m)}
 \end{aligned}
 $$
@@ -254,10 +254,10 @@ $$P(X \leq r) = 1 - q^r = 1 - (1-p)^r$$
 **Example.** A bag contains red and blue balls. The probability of drawing a red ball is $p$. In an
 experiment, the first red ball is drawn on the 10th draw. Test at the 5% level whether $p = 0.3$.
 
-$X \sim \text{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so $p$
+$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so $p$
 may be smaller).
 
-$p\text{-value} = P(X \geq 10) = (1-0.3)^{10-1} = 0.7^9 \approx 0.0404 < 0.05$.
+$p\mathrm{-value} = P(X \geq 10) = (1-0.3)^{10-1} = 0.7^9 \approx 0.0404 < 0.05$.
 
 Reject $H_0$. There is sufficient evidence that $p < 0.3$.
 
@@ -276,17 +276,17 @@ Critical region: $X \geq 10$.
 
 | Situation                                         | Distribution                 |
 | ------------------------------------------------- | ---------------------------- |
-| Number of events in a fixed interval, rare events | Poisson $\text{Po}(\lambda)$ |
-| Number of trials until first success              | Geometric $\text{Geo}(p)$    |
+| Number of events in a fixed interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
+| Number of trials until first success              | Geometric $\mathrm{Geo}(p)$    |
 | Fixed number of trials, counting successes        | Binomial $B(n, p)$           |
 
 ### 3.2 Poisson as approximation to Binomial
 
 When $n$ is large and $p$ is small such that $np \leq 10$:
 
-$$B(n, p) \approx \text{Po}(np)$$
+$$B(n, p) \approx \mathrm{Po}(np)$$
 
-**Example.** $X \sim B(200, 0.02)$. Then $\lambda = np = 4$, so $X \approx \text{Po}(4)$.
+**Example.** $X \sim B(200, 0.02)$. Then $\lambda = np = 4$, so $X \approx \mathrm{Po}(4)$.
 
 $P(X \leq 2) \approx e^{-4}\left(1 + 4 + \frac{16}{2}\right) = 13e^{-4} \approx 0.2381$.
 
@@ -315,9 +315,9 @@ A factory produces items with defects occurring at an average rate of 2.5 per ho
 
 <details>
 <summary>Solution 1</summary>
-For one hour: $X \sim \text{Po}(2.5)$. $P(X=4) = \dfrac{e^{-2.5}(2.5)^4}{4!} = \dfrac{0.08209 \times 39.0625}{24} \approx 0.1336$.
+For one hour: $X \sim \mathrm{Po}(2.5)$. $P(X=4) = \dfrac{e^{-2.5}(2.5)^4}{4!} = \dfrac{0.08209 \times 39.0625}{24} \approx 0.1336$.
 
-For two hours: $Y \sim \text{Po}(5)$ (by additivity).
+For two hours: $Y \sim \mathrm{Po}(5)$ (by additivity).
 $P(Y > 6) = 1 - P(Y \leq 6) = 1 - 0.7622 = 0.2378$.
 
 **If you get this wrong, revise:** [Cumulative probabilities](#16-cumulative-probabilities) —
@@ -332,7 +332,7 @@ A die is rolled repeatedly until a 6 appears. Find the probability that the firs
 
 <details>
 <summary>Solution 2</summary>
-$X \sim \text{Geo}(1/6)$. $P(X=5) = \left(\dfrac{5}{6}\right)^4 \cdot \dfrac{1}{6} = \dfrac{625}{1296} \cdot \dfrac{1}{6} \approx 0.0804$.
+$X \sim \mathrm{Geo}(1/6)$. $P(X=5) = \left(\dfrac{5}{6}\right)^4 \cdot \dfrac{1}{6} = \dfrac{625}{1296} \cdot \dfrac{1}{6} \approx 0.0804$.
 
 $P(X > 10) = \left(\dfrac{5}{6}\right)^{10-1} \cdot \left(\dfrac{5}{6}\right)^0 \cdot 1 = \left(\dfrac{5}{6}\right)^{10} \approx 0.1615$.
 
@@ -345,7 +345,7 @@ Wait: $P(X > 10) = 1 - P(X \leq 10) = 1 - (1-q^{10}) = q^{10} = (5/6)^{10} \appr
 
 <details>
 <summary>Problem 3</summary>
-Prove that $E(X) = \lambda$ for $X \sim \text{Po}(\lambda)$, showing all steps of the summation.
+Prove that $E(X) = \lambda$ for $X \sim \mathrm{Po}(\lambda)$, showing all steps of the summation.
 </details>
 
 <details>
@@ -363,12 +363,12 @@ Section 1.3.
 
 <details>
 <summary>Problem 4</summary>
-The number of emails received per hour follows $\text{Po}(8)$. Find the probability of receiving between 6 and 12 emails (inclusive) in a given hour.
+The number of emails received per hour follows $\mathrm{Po}(8)$. Find the probability of receiving between 6 and 12 emails (inclusive) in a given hour.
 </details>
 
 <details>
 <summary>Solution 4</summary>
-$X \sim \text{Po}(8)$. $P(6 \leq X \leq 12) = P(X \leq 12) - P(X \leq 5)$.
+$X \sim \mathrm{Po}(8)$. $P(6 \leq X \leq 12) = P(X \leq 12) - P(X \leq 5)$.
 
 $P(X \leq 12) \approx 0.9362$, $P(X \leq 5) \approx 0.1912$.
 
@@ -388,7 +388,7 @@ A manufacturer claims that on average 1 in 20 items is defective. In a batch of 
 <summary>Solution 5</summary>
 $X \sim B(500, 1/20)$. $\lambda = np = 500/20 = 25$.
 
-$X \approx \text{Po}(25)$. $P(X \leq 35) = \sum_{r=0}^{35}\dfrac{e^{-25}(25)^r}{r!} \approx 0.8878$.
+$X \approx \mathrm{Po}(25)$. $P(X \leq 35) = \sum_{r=0}^{35}\dfrac{e^{-25}(25)^r}{r!} \approx 0.8878$.
 
 **If you get this wrong, revise:**
 [Poisson as approximation to Binomial](#32-poisson-as-approximation-to-binomial) — Section 3.2.
@@ -418,7 +418,7 @@ A shop receives an average of 6 customers per 30 minutes. Find the critical regi
 
 <details>
 <summary>Solution 7</summary>
-Under $H_0$: $X \sim \text{Po}(6)$.
+Under $H_0$: $X \sim \mathrm{Po}(6)$.
 
 $P(X \geq 10) = 1 - P(X \leq 9) = 1 - 0.9161 = 0.0839 > 0.05$.
 $P(X \geq 11) = 1 - P(X \leq 10) = 1 - 0.9574 = 0.0426 < 0.05$.
@@ -432,7 +432,7 @@ Section 1.7.
 
 <details>
 <summary>Problem 8</summary>
-$X \sim \text{Geo}(p)$. Find $P(X = 3 \mid X > 1)$ and show it equals $P(X = 2)$.
+$X \sim \mathrm{Geo}(p)$. Find $P(X = 3 \mid X > 1)$ and show it equals $P(X = 2)$.
 </details>
 
 <details>
@@ -449,14 +449,14 @@ the distribution of the remaining trials is the same as starting fresh.
 
 <details>
 <summary>Problem 9</summary>
-The number of accidents per week at a junction follows $\text{Po}(3)$. After new traffic lights are installed, 8 accidents are observed in one week. Test at the 5% level whether the rate has increased.
+The number of accidents per week at a junction follows $\mathrm{Po}(3)$. After new traffic lights are installed, 8 accidents are observed in one week. Test at the 5% level whether the rate has increased.
 </details>
 
 <details>
 <summary>Solution 9</summary>
-$X \sim \text{Po}(3)$. $H_0: \lambda = 3$, $H_1: \lambda > 3$. $\alpha = 0.05$.
+$X \sim \mathrm{Po}(3)$. $H_0: \lambda = 3$, $H_1: \lambda > 3$. $\alpha = 0.05$.
 
-$p\text{-value} = P(X \geq 8) = 1 - P(X \leq 7) = 1 - 0.9881 = 0.0119 < 0.05$.
+$p\mathrm{-value} = P(X \geq 8) = 1 - P(X \leq 7) = 1 - 0.9881 = 0.0119 < 0.05$.
 
 Reject $H_0$. There is sufficient evidence that the accident rate has increased.
 
@@ -472,7 +472,7 @@ Section 1.7.
 
 <details>
 <summary>Problem 10</summary>
-If $X \sim \text{Geo}(p)$, find $E(X(X-1))$ and hence verify that $\text{Var}(X) = \dfrac{1-p}{p^2}$.
+If $X \sim \mathrm{Geo}(p)$, find $E(X(X-1))$ and hence verify that $\mathrm{Var}(X) = \dfrac{1-p}{p^2}$.
 </details>
 
 <details>
@@ -486,10 +486,10 @@ $E(X(X-1)) = pq \cdot \dfrac{2}{p^3} = \dfrac{2q}{p^2}$.
 
 $E(X^2) = E(X(X-1)) + E(X) = \dfrac{2q}{p^2} + \dfrac{1}{p} = \dfrac{2q+p}{p^2} = \dfrac{2-p}{p^2}$.
 
-$\text{Var}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$. $\blacksquare$
+$\mathrm{Var}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$. $\blacksquare$
 
 **If you get this wrong, revise:**
-[Proof that $\text{Var}(X) = \frac{1-p}{p^2}$](#23-proof-that-varx--frac1-pp2) — Section 2.3.
+[Proof that $\mathrm{Var}(X) = \frac{1-p}{p^2}$](#23-proof-that-varx--frac1-pp2) — Section 2.3.
 
 </details>
 

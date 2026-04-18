@@ -87,11 +87,11 @@ p = 1 - 0.4 = 0.6
 $$
 
 $$
-p^2 = (0.6)^2 = 0.36 \implies 360 \text{ individuals (AA)}
+p^2 = (0.6)^2 = 0.36 \implies 360 \mathrm{ individuals (AA)}
 $$
 
 $$
-2pq = 2(0.6)(0.4) = 0.48 \implies 480 \text{ individuals (Aa)}
+2pq = 2(0.6)(0.4) = 0.48 \implies 480 \mathrm{ individuals (Aa)}
 $$
 
 Check: $360 + 480 + 160 = 1000$.
@@ -665,7 +665,7 @@ estimating divergence times that complements the fossil record.
 If gene X in species A and species B differs by 60 nucleotide substitutions, and the estimated
 mutation rate for gene X is 2 substitutions per million years, then:
 
-$$\text{Time since divergence} = \frac{60}{2 \times 2} = 15 \text{ million years}$$
+$$\mathrm{Time since divergence} = \frac{60}{2 \times 2} = 15 \mathrm{ million years}$$
 
 The factor of 2 accounts for the fact that substitutions have accumulated along both lineages since
 divergence.

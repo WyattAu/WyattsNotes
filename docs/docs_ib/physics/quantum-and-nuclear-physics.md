@@ -309,7 +309,7 @@ The **matrix of cofactors** (cofactor matrix) has entries $C_{ij}$. The **adjuga
 **adjoint**) matrix is the transpose of the cofactor matrix:
 
 $$
-\text{adj}(\mathbf{A}) = \mathbf{C}^T
+\mathrm{adj}(\mathbf{A}) = \mathbf{C}^T
 $$
 
 ### 2.4 Properties of Determinants
@@ -423,16 +423,16 @@ $$
 For a $3 \times 3$ matrix $\mathbf{A}$, the inverse is given by:
 
 $$
-\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \text{adj}(\mathbf{A})
+\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \mathrm{adj}(\mathbf{A})
 $$
 
-where $\text{adj}(\mathbf{A})$ is the adjugate (transpose of the cofactor matrix).
+where $\mathrm{adj}(\mathbf{A})$ is the adjugate (transpose of the cofactor matrix).
 
 **Step-by-step procedure:**
 
 1. Compute the determinant of $\mathbf{A}$. If $\det(\mathbf{A}) = 0$, the inverse does not exist.
 2. Form the matrix of cofactors $\mathbf{C}$ where $C_{ij} = (-1)^{i+j} M_{ij}$.
-3. Transpose the cofactor matrix to get the adjugate: $\text{adj}(\mathbf{A}) = \mathbf{C}^T$.
+3. Transpose the cofactor matrix to get the adjugate: $\mathrm{adj}(\mathbf{A}) = \mathbf{C}^T$.
 4. Divide every entry of the adjugate by $\det(\mathbf{A})$.
 
 **Example.** Find the inverse of:
@@ -460,7 +460,7 @@ $$
 Cofactor matrix: $\mathbf{C} = \begin{pmatrix} 1 & 3 & -1 \\ -2 & 1 & 2 \\ 6 & -3 & 1 \end{pmatrix}$
 
 **Step 3:**
-$\text{adj}(\mathbf{A}) = \mathbf{C}^T = \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$
+$\mathrm{adj}(\mathbf{A}) = \mathbf{C}^T = \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$
 
 **Step 4:**
 $\mathbf{A}^{-1} = \frac{1}{7} \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$
@@ -789,7 +789,7 @@ The image is a parallelogram with adjacent sides $\begin{pmatrix} a \\ c \end{pm
 $\begin{pmatrix} b \\ d \end{pmatrix}$. The area of this parallelogram is:
 
 $$
-\text{Area} = |ad - bc| = |\det(\mathbf{A})|
+\mathrm{Area} = |ad - bc| = |\det(\mathbf{A})|
 $$
 
 Since any region can be tiled by small squares, and the transformation is linear (preserving ratios
@@ -849,14 +849,14 @@ $$
 \lambda^2 - (a + d)\lambda + (ad - bc) = 0
 $$
 
-The coefficient $a + d = \text{tr}(\mathbf{A})$ is the **trace** of $\mathbf{A}$, and
+The coefficient $a + d = \mathrm{tr}(\mathbf{A})$ is the **trace** of $\mathbf{A}$, and
 $ad - bc = \det(\mathbf{A})$. So the characteristic equation for a $2 \times 2$ matrix is:
 
 $$
-\lambda^2 - \text{tr}(\mathbf{A})\lambda + \det(\mathbf{A}) = 0
+\lambda^2 - \mathrm{tr}(\mathbf{A})\lambda + \det(\mathbf{A}) = 0
 $$
 
-**Key identities:** For a $2 \times 2$ matrix, $\lambda_1 + \lambda_2 = \text{tr}(\mathbf{A})$ and
+**Key identities:** For a $2 \times 2$ matrix, $\lambda_1 + \lambda_2 = \mathrm{tr}(\mathbf{A})$ and
 $\lambda_1 \lambda_2 = \det(\mathbf{A})$.
 
 ### 5.3 Finding Eigenvalues and Eigenvectors
@@ -1285,7 +1285,7 @@ eigenvalues satisfy $|\lambda| \lt 1$, so they decay to zero as $n \to \infty$.
 | ------------------------- | ----------------------------------------------------------------------------------- | ---------------- | --- |
 | 2x2 determinant           | $\det \begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$                       |
 | 2x2 inverse               | $\frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$                  |
-| General inverse           | $\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \text{adj}(\mathbf{A})$               |
+| General inverse           | $\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \mathrm{adj}(\mathbf{A})$               |
 | Rotation matrix           | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ |
 | Characteristic equation   | $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$                                          |
 | Diagonalization           | $\mathbf{A} = \mathbf{PDP}^{-1}$                                                    |

@@ -67,7 +67,7 @@ $3 \times 10^9 \times 2 = 6 \times 10^9$ bases (6 billion bases per diploid cell
 
 If the average distance between bases is 0.34 nm, the total length of DNA in one cell is:
 
-$6 \times 10^9 \times 0.34 \times 10^{-9} \text{ m} = 2.04 \text{ m}$.
+$6 \times 10^9 \times 0.34 \times 10^{-9} \mathrm{ m} = 2.04 \mathrm{ m}$.
 
 This 2 metres of DNA is packed into a nucleus that is only about 10 micrometres in diameter,
 demonstrating the remarkable efficiency of DNA packaging.

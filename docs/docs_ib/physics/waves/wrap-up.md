@@ -25,7 +25,7 @@ Determine the period of these small radial oscillations.
   second derivative of the potential energy function (which relates to the restoring force) is
   positive, indicating a stable equilibrium. The "spring constant" of this effective potential well
   will give us the period.
-- **1. Effective Potential Energy ($U_{\text{eff}}$):**
+- **1. Effective Potential Energy ($U_{\mathrm{eff}}$):**
   - The system has gravitational potential energy ($U_g$) and rotational kinetic energy ($E_k$). For
     a given angular momentum _L_, the total energy is:
   - $U_g = -\frac{GMm}{r}$
@@ -33,32 +33,32 @@ Determine the period of these small radial oscillations.
   - $E_k = \frac{1}{2}mv^2 = \frac{L^2}{2mr^2}$.
   - The effective potential energy combines the true potential with the "potential" of the angular
     momentum barrier:
-  - $U_{\text{eff}}(r) = U_g + E_k = -\frac{GMm}{r} + \frac{L^2}{2mr^2}$.
+  - $U_{\mathrm{eff}}(r) = U_g + E_k = -\frac{GMm}{r} + \frac{L^2}{2mr^2}$.
 - **2. Find Stable Orbit Radius:**
   - Equilibrium occurs where the net force is zero, which is where the derivative of the potential
-    is zero: $\frac{dU_{\text{eff}}}{dr} = 0$.
+    is zero: $\frac{dU_{\mathrm{eff}}}{dr} = 0$.
   - $\frac{d}{dr}\left(-\frac{GMm}{r} + \frac{L^2}{2mr^2}\right) = \frac{GMm}{r^2} - \frac{L^2}{mr^3} = 0$.
   - This gives the stable radius R:
     $\frac{GMm}{R^2} = \frac{L^2}{mR^3} \implies R = \frac{L^2}{GMm^2}$. This confirms the circular
     orbit condition.
 - **3. Find the "Effective Spring Constant" (k_eff):**
   - For small oscillations, the restoring force is
-    $F_{\text{restore}} = - \frac{dU_{\text{eff}}}{dr}$. For SHM, we need
-    $F \approx -k_{\text{eff}}x$. This corresponds to the second derivative of the potential energy,
+    $F_{\mathrm{restore}} = - \frac{dU_{\mathrm{eff}}}{dr}$. For SHM, we need
+    $F \approx -k_{\mathrm{eff}}x$. This corresponds to the second derivative of the potential energy,
     Taylor expanding around R:
-    $U_{\text{eff}}(R+x) \approx U_{\text{eff}}(R) + \frac{1}{2} U''_{\text{eff}}(R) x^2$.
-  - So, $k_{\text{eff}} = \frac{d^2U_{\text{eff}}}{dr^2}$ evaluated at $r=R$.
-  - $U''_{\text{eff}}(r) = \frac{d}{dr}\left(\frac{GMm}{r^2} - \frac{L^2}{mr^3}\right) = -\frac{2GMm}{r^3} + \frac{3L^2}{mr^4}$.
+    $U_{\mathrm{eff}}(R+x) \approx U_{\mathrm{eff}}(R) + \frac{1}{2} U''_{\mathrm{eff}}(R) x^2$.
+  - So, $k_{\mathrm{eff}} = \frac{d^2U_{\mathrm{eff}}}{dr^2}$ evaluated at $r=R$.
+  - $U''_{\mathrm{eff}}(r) = \frac{d}{dr}\left(\frac{GMm}{r^2} - \frac{L^2}{mr^3}\right) = -\frac{2GMm}{r^3} + \frac{3L^2}{mr^4}$.
   - At $r=R$, we substitute $L^2 = GMm^2R$:
-  - $k_{\text{eff}} = -\frac{2GMm}{R^3} + \frac{3(GMm^2R)}{mR^4} = -\frac{2GMm}{R^3} + \frac{3GMm}{R^3} = \frac{GMm}{R^3}$.
+  - $k_{\mathrm{eff}} = -\frac{2GMm}{R^3} + \frac{3(GMm^2R)}{mR^4} = -\frac{2GMm}{R^3} + \frac{3GMm}{R^3} = \frac{GMm}{R^3}$.
 - **4. Find the Period of Oscillation:**
-  - The effective restoring force is $F = -k_{\text{eff}}x$, which is the definition of SHM.
+  - The effective restoring force is $F = -k_{\mathrm{eff}}x$, which is the definition of SHM.
   - The angular frequency of this SHM is
-    $\omega_{\text{osc}} = \sqrt{\frac{k_{\text{eff}}}{m}} = \sqrt{\frac{GMm/R^3}{m}} = \sqrt{\frac{GM}{R^3}}$.
+    $\omega_{\mathrm{osc}} = \sqrt{\frac{k_{\mathrm{eff}}}{m}} = \sqrt{\frac{GMm/R^3}{m}} = \sqrt{\frac{GM}{R^3}}$.
   - Notice that the orbital angular speed is
-    $\omega_{\text{orb}} = \frac{v}{R} = \frac{\sqrt{GM/R}}{R} = \sqrt{\frac{GM}{R^3}}$.
+    $\omega_{\mathrm{orb}} = \frac{v}{R} = \frac{\sqrt{GM/R}}{R} = \sqrt{\frac{GM}{R^3}}$.
   - The angular frequencies are identical. Therefore, the period of small radial oscillations is:
-  - $T_{\text{osc}} = \frac{2\pi}{\omega_{\text{osc}}} = 2\pi\sqrt{\frac{R^3}{GM}}$. This is exactly
+  - $T_{\mathrm{osc}} = \frac{2\pi}{\omega_{\mathrm{osc}}} = 2\pi\sqrt{\frac{R^3}{GM}}$. This is exactly
     the same as the orbital period (Kepler's Third Law).
 
 <b>If you get this wrong, you should focus on:</b> The concept of effective potential energy in orbital mechanics, using calculus to find stable equilibrium points ($U'(r)=0$) and the effective spring constant ($k=U''(r)$), and the fundamental connection between the restoring force and the conditions for SHM.
@@ -133,7 +133,7 @@ first-order double-slit fringe relative to the central double-slit fringe?
   - The central maximum of the single-slit pattern extends from its first minimum on one side to the
     first minimum on the other.
   - Location of first single-slit minimum:
-    $b \sin\theta_1 = \lambda \implies \sin\theta_1 = \frac{600 \text{ nm}}{1200 \text{ nm}} = 0.5 \implies \theta_1 = 30^\circ$.
+    $b \sin\theta_1 = \lambda \implies \sin\theta_1 = \frac{600 \mathrm{ nm}}{1200 \mathrm{ nm}} = 0.5 \implies \theta_1 = 30^\circ$.
   - The central max spans from -30° to +30°.
   - Now find the angles of the double-slit bright fringes: $d \sin\theta_2 = m\lambda$.
   - $\sin\theta_2 = \frac{m\lambda}{d} = \frac{m(600)}{3600} = \frac{m}{6}$.
@@ -147,10 +147,10 @@ first-order double-slit fringe relative to the central double-slit fringe?
   - The intensity of the double-slit pattern is modulated by the single-slit diffraction envelope.
   - Intensity is proportional to amplitude squared, $I \propto A^2$. The intensity of the
     double-slit fringes is approximately
-    $I_{\text{double}} \approx \cos^2(\frac{\pi d \sin\theta}{\lambda})$. The single-slit envelope
-    intensity is $I_{\text{single}} \propto \left(\frac{\sin(\beta/2)}{\beta/2}\right)^2$ where
+    $I_{\mathrm{double}} \approx \cos^2(\frac{\pi d \sin\theta}{\lambda})$. The single-slit envelope
+    intensity is $I_{\mathrm{single}} \propto \left(\frac{\sin(\beta/2)}{\beta/2}\right)^2$ where
     $\beta = \frac{2\pi b \sin\theta}{\lambda}$.
-  - The central fringe ($m=0, \theta=0$) has relative intensity $I_0 = I_{\text{max}}$.
+  - The central fringe ($m=0, \theta=0$) has relative intensity $I_0 = I_{\mathrm{max}}$.
   - The first-order fringe ($m=1$) occurs at $\sin\theta = \lambda/d = 1/6$.
   - At this angle, the intensity from the single-slit envelope is reduced. Let's find the reduction
     factor.
@@ -184,7 +184,7 @@ to the star.
     m/s. (The velocity is not needed for the distance, but it's part of a full analysis).
 - **2. Surface Temperature (T):**
   - Use Wien's Law:
-    $T = \frac{2.9 \times 10^{-3}}{\lambda_{\text{max}}} = \frac{2.9 \times 10^{-3}}{500 \times 10^{-9}} = 5800$
+    $T = \frac{2.9 \times 10^{-3}}{\lambda_{\mathrm{max}}} = \frac{2.9 \times 10^{-3}}{500 \times 10^{-9}} = 5800$
     K.
 - **3. Luminosity (L):**
   - Use the Stefan-Boltzmann Law: $L = \sigma A T^4 = \sigma (4\pi R^2) T^4$.
@@ -225,7 +225,7 @@ This is one of the most frequently used equations in IB Physics. It applies to a
 
 A sound wave has a frequency of $440$ Hz and a wavelength of $0.78$ m. What is its speed?
 
-$$v = f\lambda = (440)(0.78) = 343 \text{ m s}^{-1}$$
+$$v = f\lambda = (440)(0.78) = 343 \mathrm{ m s}^{-1}$$
 
 (This is close to the speed of sound in air at room temperature.)
 
@@ -294,9 +294,9 @@ through a prism.
 **Diffraction** is the spreading of a wave when it passes through an aperture or around an obstacle.
 The amount of diffraction depends on the relationship between the wavelength and the gap size:
 
-- **Maximum diffraction** occurs when $\lambda \approx \text{gap size}$ (or
-  $\lambda \geq \text{gap size}$)
-- **Minimum diffraction** occurs when $\lambda \ll \text{gap size}$
+- **Maximum diffraction** occurs when $\lambda \approx \mathrm{gap size}$ (or
+  $\lambda \geq \mathrm{gap size}$)
+- **Minimum diffraction** occurs when $\lambda \ll \mathrm{gap size}$
 
 ### Single-Slit Diffraction
 
@@ -327,7 +327,7 @@ where $D$ is the diameter of the aperture.
 A telescope with a mirror of diameter $0.10$ m observes light of wavelength $550$ nm. What is the
 minimum angular separation it can resolve?
 
-$$\theta = \frac{1.22 \times 550 \times 10^{-9}}{0.10} = 6.71 \times 10^{-6} \text{ rad} \approx 0.00038^\circ$$
+$$\theta = \frac{1.22 \times 550 \times 10^{-9}}{0.10} = 6.71 \times 10^{-6} \mathrm{ rad} \approx 0.00038^\circ$$
 
 > **Exam Tip:** Diffraction is often the limiting factor on the resolving power of optical
 > instruments. A larger aperture gives better resolution. This is why astronomical telescopes use
@@ -353,7 +353,7 @@ relationship) and have the same frequency.
 
 For two slits separated by distance $d$, with the screen at distance $D$ from the slits:
 
-$$\text{Fringe spacing: } s = \frac{\lambda D}{d}$$
+$$\mathrm{Fringe spacing: } s = \frac{\lambda D}{d}$$
 
 This formula uses the **small angle approximation**
 ($\sin\theta \approx \tan\theta \approx \theta$), which is valid when $D \gg d$.
@@ -363,7 +363,7 @@ This formula uses the **small angle approximation**
 Light of wavelength $600$ nm passes through two slits separated by $0.50$ mm. The screen is $2.0$ m
 away. Calculate the fringe spacing.
 
-$$s = \frac{\lambda D}{d} = \frac{(600 \times 10^{-9})(2.0)}{0.50 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{5.0 \times 10^{-4}} = 2.4 \times 10^{-3} \text{ m} = 2.4 \text{ mm}$$
+$$s = \frac{\lambda D}{d} = \frac{(600 \times 10^{-9})(2.0)}{0.50 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{5.0 \times 10^{-4}} = 2.4 \times 10^{-3} \mathrm{ m} = 2.4 \mathrm{ mm}$$
 
 ### Thin Film Interference
 
@@ -423,12 +423,12 @@ $$f_n = \frac{nv}{4L}, \quad n = 1, 3, 5, \ldots$$
 A guitar string of length $0.65$ m has a fundamental frequency of $330$ Hz. What is the speed of
 waves on the string?
 
-$$v = f_1 \times 2L = (330)(1.30) = 429 \text{ m s}^{-1}$$
+$$v = f_1 \times 2L = (330)(1.30) = 429 \mathrm{ m s}^{-1}$$
 
-If the string has a mass per unit length of $\mu = 3.5 \times 10^{-3} \text{ kg m}^{-1}$, what
+If the string has a mass per unit length of $\mu = 3.5 \times 10^{-3} \mathrm{ kg m}^{-1}$, what
 tension is required?
 
-$$T = \mu v^2 = (3.5 \times 10^{-3})(429)^2 = 644 \text{ N}$$
+$$T = \mu v^2 = (3.5 \times 10^{-3})(429)^2 = 644 \mathrm{ N}$$
 
 > **Exam Tip:** A closed pipe cannot produce even harmonics ($n = 2, 4, 6, \ldots$). If an IB
 > question asks about the "second harmonic" of a closed pipe, the answer is the third harmonic
@@ -473,11 +473,11 @@ s$^{-1}$.
 
 **Observer stationary, ambulance approaching:**
 
-$$f' = f\left(\frac{v}{v - v_s}\right) = 800\left(\frac{343}{343 - 30}\right) = 800\left(\frac{343}{313}\right) = 877 \text{ Hz}$$
+$$f' = f\left(\frac{v}{v - v_s}\right) = 800\left(\frac{343}{343 - 30}\right) = 800\left(\frac{343}{313}\right) = 877 \mathrm{ Hz}$$
 
 **Observer stationary, ambulance moving away:**
 
-$$f' = f\left(\frac{v}{v + v_s}\right) = 800\left(\frac{343}{343 + 30}\right) = 800\left(\frac{343}{373}\right) = 736 \text{ Hz}$$
+$$f' = f\left(\frac{v}{v + v_s}\right) = 800\left(\frac{343}{343 + 30}\right) = 800\left(\frac{343}{373}\right) = 736 \mathrm{ Hz}$$
 
 > **Exam Tip:** For the Doppler effect, always identify whether the source, the observer, or both
 > are moving. The formula changes depending on this. Also remember that the wave speed $v$ is always

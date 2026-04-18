@@ -65,13 +65,13 @@ The mean (12.1) is significantly higher than the median (8) due to the outlier $
 ### Range
 
 $$
-\text{Range} = x_{\max} - x_{\min}
+\mathrm{Range} = x_{\max} - x_{\min}
 $$
 
 ### Interquartile Range (IQR)
 
 $$
-\text{IQR} = Q_3 - Q_1
+\mathrm{IQR} = Q_3 - Q_1
 $$
 
 where $Q_1$ is the first quartile (25th percentile) and $Q_3$ is the third quartile (75th
@@ -96,7 +96,7 @@ $$
 ### Standard Deviation
 
 $$
-\sigma = \sqrt{\sigma^2} \quad \text{or} \quad s = \sqrt{s^2}
+\sigma = \sqrt{\sigma^2} \quad \mathrm{or} \quad s = \sqrt{s^2}
 $$
 
 ### Computational Formula
@@ -154,7 +154,7 @@ where $m_i$ is the midpoint of class $i$.
 Use linear interpolation within the median class:
 
 $$
-\text{Median} \approx L + \left(\frac{\frac{n}{2} - F}{f}\right) \times w
+\mathrm{Median} \approx L + \left(\frac{\frac{n}{2} - F}{f}\right) \times w
 $$
 
 where:
@@ -182,7 +182,7 @@ Cumulative frequencies: $5, 17, 35, 45, 50$.
 Median is in the $40 \le m \lt 60$ class ($F = 17$, $f = 18$).
 
 $$
-\text{Median} \approx 40 + \left(\frac{25 - 17}{18}\right) \times 20 = 40 + \frac{8}{18} \times 20 = 40 + 8.89 = 48.89 \text{ g}
+\mathrm{Median} \approx 40 + \left(\frac{25 - 17}{18}\right) \times 20 = 40 + \frac{8}{18} \times 20 = 40 + 8.89 = 48.89 \mathrm{ g}
 $$
 
 :::
@@ -206,7 +206,7 @@ A box-and-whisker plot displays the **five-number summary**:
 A value is a potential outlier if it falls outside:
 
 $$
-Q_1 - 1.5 \times \text{IQR} \quad \text{or} \quad Q_3 + 1.5 \times \text{IQR}
+Q_1 - 1.5 \times \mathrm{IQR} \quad \mathrm{or} \quad Q_3 + 1.5 \times \mathrm{IQR}
 $$
 
 ### Interpreting Box Plots
@@ -244,7 +244,7 @@ Using the grouped data from the previous example:
 To find $Q_1$ (at $12.5$): interpolate between $(20, 5)$ and $(40, 17)$.
 
 $$
-Q_1 \approx 20 + \frac{12.5 - 5}{17 - 5} \times 20 = 20 + 12.5 = 32.5 \text{ g}
+Q_1 \approx 20 + \frac{12.5 - 5}{17 - 5} \times 20 = 20 + 12.5 = 32.5 \mathrm{ g}
 $$
 
 :::
@@ -333,7 +333,7 @@ $$
 ### Coefficient of Determination ($r^2$)
 
 $$
-r^2 = \frac{\text{explained variation}}{\text{total variation}}
+r^2 = \frac{\mathrm{explained variation}}{\mathrm{total variation}}
 $$
 
 $r^2$ represents the proportion of variance in $y$ explained by the linear relationship with $x$.
@@ -469,7 +469,7 @@ where $O_i$ are observed frequencies and $E_i$ are expected frequencies.
 **Expected frequency**:
 
 $$
-E_{ij} = \frac{(\text{row } i \text{ total}) \times (\text{column } j \text{ total})}{\text{grand total}}
+E_{ij} = \frac{(\mathrm{row } i \mathrm{ total}) \times (\mathrm{column } j \mathrm{ total})}{\mathrm{grand total}}
 $$
 
 **Degrees of freedom**: $\nu = (r-1)(c-1)$ where $r$ is the number of rows and $c$ is the number of
@@ -487,17 +487,17 @@ Test whether gender and favourite subject are independent:
 
 Expected frequencies:
 
-$E(\text{Male, Maths}) = \dfrac{70 \times 50}{150} = 23.33$
+$E(\mathrm{Male, Maths}) = \dfrac{70 \times 50}{150} = 23.33$
 
-$E(\text{Male, Science}) = \dfrac{70 \times 45}{150} = 21.00$
+$E(\mathrm{Male, Science}) = \dfrac{70 \times 45}{150} = 21.00$
 
-$E(\text{Male, English}) = \dfrac{70 \times 55}{150} = 25.67$
+$E(\mathrm{Male, English}) = \dfrac{70 \times 55}{150} = 25.67$
 
-$E(\text{Female, Maths}) = \dfrac{80 \times 50}{150} = 26.67$
+$E(\mathrm{Female, Maths}) = \dfrac{80 \times 50}{150} = 26.67$
 
-$E(\text{Female, Science}) = \dfrac{80 \times 45}{150} = 24.00$
+$E(\mathrm{Female, Science}) = \dfrac{80 \times 45}{150} = 24.00$
 
-$E(\text{Female, English}) = \dfrac{80 \times 55}{150} = 29.33$
+$E(\mathrm{Female, English}) = \dfrac{80 \times 55}{150} = 29.33$
 
 $$
 \chi^2 = \frac{(30-23.33)^2}{23.33} + \frac{(25-21)^2}{21} + \frac{(15-25.67)^2}{25.67} + \frac{(20-26.67)^2}{26.67} + \frac{(20-24)^2}{24} + \frac{(40-29.33)^2}{29.33}
@@ -575,7 +575,7 @@ $Q_1$: median of lower half $= \dfrac{0.46 + 0.48}{2} = 0.47$.
 
 $Q_3$: median of upper half $= \dfrac{0.63 + 0.65}{2} = 0.64$.
 
-$\text{IQR} = 0.64 - 0.47 = 0.17$.
+$\mathrm{IQR} = 0.64 - 0.47 = 0.17$.
 
 Lower fence: $0.47 - 1.5(0.17) = 0.215$. Minimum $= 0.38$.
 
@@ -585,8 +585,8 @@ No outliers.
 
 ### Question 3 (Paper 1 style)
 
-A researcher claims that the mean height of a population is $170\text{ cm}$. A sample of 25 people
-gives $\bar{x} = 173\text{ cm}$ with $s = 8\text{ cm}$. Test this claim at the 5% significance
+A researcher claims that the mean height of a population is $170\mathrm{ cm}$. A sample of 25 people
+gives $\bar{x} = 173\mathrm{ cm}$ with $s = 8\mathrm{ cm}$. Test this claim at the 5% significance
 level.
 
 $H_0: \mu = 170$ vs $H_1: \mu \neq 170$.
@@ -602,7 +602,7 @@ Critical value (two-tailed, 5%) $\approx 2.064$.
 Since $|1.875| \lt 2.064$, we do not reject $H_0$.
 
 There is insufficient evidence at the 5% level to reject the claim that the mean height is
-$170\text{ cm}$.
+$170\mathrm{ cm}$.
 
 ---
 
@@ -721,7 +721,7 @@ Group B: $n = 25$, $\bar{x} = 68$, $s = 10$
 **(a)** Find the overall mean.
 
 $$
-\bar{x}_{\text{overall}} = \frac{30 \times 72 + 25 \times 68}{55} = \frac{2160 + 1700}{55} = \frac{3860}{55} = 70.2
+\bar{x}_{\mathrm{overall}} = \frac{30 \times 72 + 25 \times 68}{55} = \frac{2160 + 1700}{55} = \frac{3860}{55} = 70.2
 $$
 
 **(b)** Comment on the spread of the two groups.
@@ -794,7 +794,7 @@ Skewness measures the asymmetry of the distribution.
 The **Pearson coefficient of skewness**:
 
 $$
-\text{Skewness} = \frac{3(\bar{x} - Q_2)}{s}
+\mathrm{Skewness} = \frac{3(\bar{x} - Q_2)}{s}
 $$
 
 ### Kurtosis

@@ -204,7 +204,7 @@ $$(x - a)^2 + (mx + c - b)^2 = r^2$$
 
 Expanding gives a quadratic in $x$:
 
-$$(1 + m^2)x^2 + \text{(linear term)} + \text{(constant)} = 0$$
+$$(1 + m^2)x^2 + \mathrm{(linear term)} + \mathrm{(constant)} = 0$$
 
 This quadratic has:
 
@@ -282,11 +282,11 @@ $$d = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}$$
 _Proof (Area method)._ Let $P(x_0, y_0)$ be the point and let $A$ and $B$ be two convenient points
 on the line. The triangle $PAB$ has area:
 
-$$\text{Area} = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times |AB| \times d$$
+$$\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height} = \frac{1}{2} \times |AB| \times d$$
 
 where $d$ is the perpendicular distance from $P$ to the line. Rearranging:
 
-$$d = \frac{2 \times \text{Area}}{|AB|}$$
+$$d = \frac{2 \times \mathrm{Area}}{|AB|}$$
 
 Choose $A$ and $B$ where the line meets the axes: set $y = 0$ to get $A\left(-\frac{c}{a}, 0\right)$
 and set $x = 0$ to get $B\left(0, -\frac{c}{b}\right)$. Then:
@@ -295,7 +295,7 @@ $$|AB| = \sqrt{\frac{c^2}{a^2} + \frac{c^2}{b^2}} = \frac{|c|\sqrt{a^2 + b^2}}{|
 
 The area of $\triangle PAB$ can also be computed using the determinant formula:
 
-$$\text{Area} = \frac{1}{2}\left|x_0\left(0 - \left(-\frac{c}{b}\right)\right) + \left(-\frac{c}{a}\right)\left(\left(-\frac{c}{b}\right) - y_0\right) + 0 \cdot (y_0 - 0)\right|$$
+$$\mathrm{Area} = \frac{1}{2}\left|x_0\left(0 - \left(-\frac{c}{b}\right)\right) + \left(-\frac{c}{a}\right)\left(\left(-\frac{c}{b}\right) - y_0\right) + 0 \cdot (y_0 - 0)\right|$$
 
 This simplifies to $\frac{|ax_0 + by_0 + c| \cdot |c|}{2|ab|}$. Therefore:
 
@@ -436,7 +436,7 @@ $$
 \end{aligned}
 $$
 
-Subtract (1) from (2): $2D + 2E = -20 \implies D + E = -10 \quad \text{(i)}$.
+Subtract (1) from (2): $2D + 2E = -20 \implies D + E = -10 \quad \mathrm{(i)}$.
 
 Subtract (1) from (3): $4D = -24 \implies D = -6$.
 
@@ -625,9 +625,9 @@ point $(4, 3)$.
 <summary>Solution</summary>
 The centre is $(2, -1)$. The gradient of the radius from $(2, -1)$ to $(4, 3)$ is:
 
-$$m_{\text{radius}} = \frac{3 - (-1)}{4 - 2} = \frac{4}{2} = 2$$
+$$m_{\mathrm{radius}} = \frac{3 - (-1)}{4 - 2} = \frac{4}{2} = 2$$
 
-The tangent is perpendicular: $m_{\text{tangent}} = -\frac{1}{2}$.
+The tangent is perpendicular: $m_{\mathrm{tangent}} = -\frac{1}{2}$.
 
 $$y - 3 = -\frac{1}{2}(x - 4) \implies 2y - 6 = -x + 4 \implies x + 2y - 10 = 0$$
 
@@ -740,14 +740,14 @@ Area of $\triangle PAB$ using the determinant formula:
 
 $$
 \begin{aligned}
-\text{Area} &= \frac{1}{2}\left| x_P(y_A - y_B) + x_A(y_B - y_P) + x_B(y_P - y_A) \right| \\
+\mathrm{Area} &= \frac{1}{2}\left| x_P(y_A - y_B) + x_A(y_B - y_P) + x_B(y_P - y_A) \right| \\
 &= \frac{1}{2}\left| 1\!\left(0 - \frac{5}{4}\right) + \frac{5}{3}\!\left(\frac{5}{4} - 7\right) + 0\!\left(7 - 0\right) \right| \\
 &= \frac{1}{2}\left| -\frac{5}{4} + \frac{5}{3} \cdot \frac{-23}{4} \right| \\
 &= \frac{1}{2}\left| -\frac{5}{4} - \frac{115}{12} \right| = \frac{1}{2}\left|\frac{-15 - 115}{12}\right| = \frac{1}{2} \cdot \frac{130}{12} = \frac{65}{12}
 \end{aligned}
 $$
 
-Since $\text{Area} = \frac{1}{2} \times |AB| \times d$:
+Since $\mathrm{Area} = \frac{1}{2} \times |AB| \times d$:
 
 $$\frac{65}{12} = \frac{1}{2} \times \frac{25}{12} \times d \implies d = \frac{65 \times 2}{25} = \frac{130}{25} = \frac{26}{5}$$
 
@@ -806,13 +806,13 @@ Substitute into $x^2 + y^2 + Dx + Ey + F = 0$:
 
 $$
 \begin{aligned}
-A(0, 1)&: \quad 0 + 1 + 0 + E + F = 0 \implies E + F = -1 \quad \text{(1)} \\
-B(2, 3)&: \quad 4 + 9 + 2D + 3E + F = 0 \implies 2D + 3E + F = -13 \quad \text{(2)} \\
-C(4, 1)&: \quad 16 + 1 + 4D + E + F = 0 \implies 4D + E + F = -17 \quad \text{(3)}
+A(0, 1)&: \quad 0 + 1 + 0 + E + F = 0 \implies E + F = -1 \quad \mathrm{(1)} \\
+B(2, 3)&: \quad 4 + 9 + 2D + 3E + F = 0 \implies 2D + 3E + F = -13 \quad \mathrm{(2)} \\
+C(4, 1)&: \quad 16 + 1 + 4D + E + F = 0 \implies 4D + E + F = -17 \quad \mathrm{(3)}
 \end{aligned}
 $$
 
-Subtract (1) from (2): $2D + 2E = -12 \implies D + E = -6 \quad \text{(i)}$.
+Subtract (1) from (2): $2D + 2E = -12 \implies D + E = -6 \quad \mathrm{(i)}$.
 
 Subtract (1) from (3): $4D = -16 \implies D = -4$.
 
@@ -859,9 +859,9 @@ The point is $\left(\frac{7}{2}, -2 + \frac{5\sqrt{3}}{2}\right)$.
 
 The radius from $(1, -2)$ to this point has gradient:
 
-$$m_{\text{radius}} = \frac{-2 + \frac{5\sqrt{3}}{2} - (-2)}{\frac{7}{2} - 1} = \frac{\frac{5\sqrt{3}}{2}}{\frac{5}{2}} = \sqrt{3}$$
+$$m_{\mathrm{radius}} = \frac{-2 + \frac{5\sqrt{3}}{2} - (-2)}{\frac{7}{2} - 1} = \frac{\frac{5\sqrt{3}}{2}}{\frac{5}{2}} = \sqrt{3}$$
 
-Tangent gradient: $m_{\text{tangent}} = -\frac{1}{\sqrt{3}} = -\frac{\sqrt{3}}{3}$.
+Tangent gradient: $m_{\mathrm{tangent}} = -\frac{1}{\sqrt{3}} = -\frac{\sqrt{3}}{3}$.
 
 Using point-slope form:
 
@@ -903,7 +903,7 @@ $$-20m^2 + 48m = 0$$
 
 $$-4m(5m - 12) = 0$$
 
-$$m = 0 \quad \text{or} \quad m = \frac{12}{5}$$
+$$m = 0 \quad \mathrm{or} \quad m = \frac{12}{5}$$
 
 **Case $m = 0$:** Line $y = 0$. Substituting back:
 $(1)x^2 - 6x + 9 = 0 \implies (x-3)^2 = 0 \implies x = 3$. Tangency point: $(3, 0)$.

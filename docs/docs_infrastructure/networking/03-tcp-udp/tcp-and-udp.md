@@ -228,7 +228,7 @@ Client                          Server
 
 The endpoint that sends the first FIN enters the `FIN-WAIT-2` state. The endpoint that sends the
 second FIN enters the `LAST-ACK` state. After sending the final ACK, the first endpoint enters
-`TIME-WAIT` and waits for $2 \times \text{MSL}$ (Maximum Segment Lifetime, typically 60 seconds per
+`TIME-WAIT` and waits for $2 \times \mathrm{MSL}$ (Maximum Segment Lifetime, typically 60 seconds per
 MSL, so 120 seconds total) before releasing the connection.
 
 **Why TIME-WAIT?**
@@ -355,15 +355,15 @@ cat /proc/net/netstat | awk '{print $17, $18}' | tail -1
 the Jacobson/Karels algorithm (RFC 6298):
 
 $$
-\text{RTT}_{\text{srtt}} = (1 - \alpha) \times \text{RTT}_{\text{srtt}} + \alpha \times \text{RTT}_{\text{latest}}
+\mathrm{RTT}_{\mathrm{srtt}} = (1 - \alpha) \times \mathrm{RTT}_{\mathrm{srtt}} + \alpha \times \mathrm{RTT}_{\mathrm{latest}}
 $$
 
 $$
-\text{RTT}_{\text{rttvar}} = (1 - \beta) \times \text{RTT}_{\text{rttvar}} + \beta \times |\text{RTT}_{\text{srtt}} - \text{RTT}_{\text{latest}}|
+\mathrm{RTT}_{\mathrm{rttvar}} = (1 - \beta) \times \mathrm{RTT}_{\mathrm{rttvar}} + \beta \times |\mathrm{RTT}_{\mathrm{srtt}} - \mathrm{RTT}_{\mathrm{latest}}|
 $$
 
 $$
-\text{RTO} = \text{RTT}_{\text{srtt}} + 4 \times \text{RTT}_{\text{rttvar}}
+\mathrm{RTO} = \mathrm{RTT}_{\mathrm{srtt}} + 4 \times \mathrm{RTT}_{\mathrm{rttvar}}
 $$
 
 Where $\alpha = 0.125$ and $\beta = 0.25$. The minimum RTO is 200 ms (RFC 6298) and the maximum is
@@ -397,10 +397,10 @@ The original TCP header has a 16-bit window field, limiting the window to 65,535
 bandwidth-delay products (e.g., satellite links, long-haul fiber), this limits throughput.
 
 The **Window Scaling** option (RFC 7323) allows the window to be scaled by a factor of
-$2^{\text{scale}}$, where scale ranges from 0 to 14:
+$2^{\mathrm{scale}}$, where scale ranges from 0 to 14:
 
 $$
-\text{Effective Window} = \text{Window} \times 2^{\text{scale factor}}
+\mathrm{Effective Window} = \mathrm{Window} \times 2^{\mathrm{scale factor}}
 $$
 
 With a scale factor of 14, the maximum window is $65,535 \times 16,384 = 1,073,725,440$ bytes (~1
@@ -409,10 +409,10 @@ GB).
 The bandwidth-delay product (BDP) determines the minimum window size needed to keep the pipe full:
 
 $$
-\text{BDP} = \text{bandwidth} \times \text{RTT}
+\mathrm{BDP} = \mathrm{bandwidth} \times \mathrm{RTT}
 $$
 
-For a 10 Gbps link with 100 ms RTT: $\text{BDP} = 10 \times 10^9 \times 0.1 = 10^9$ bytes (~953 MB).
+For a 10 Gbps link with 100 ms RTT: $\mathrm{BDP} = 10 \times 10^9 \times 0.1 = 10^9$ bytes (~953 MB).
 Without window scaling, the 65,535-byte window would limit throughput to $65,535 / 0.1 = 655,350$
 bytes/s (~5.2 Mbps) -- a 1923x underutilization.
 
@@ -441,13 +441,13 @@ The congestion window (`cwnd`) is a sender-side variable that limits the amount 
 data in the network. The effective sending window is:
 
 $$
-\text{Window} = \min(\text{rwnd}, \text{cwnd})
+\mathrm{Window} = \min(\mathrm{rwnd}, \mathrm{cwnd})
 $$
 
 Throughput is then:
 
 $$
-\text{Throughput} = \frac{\min(\text{rwnd}, \text{cwnd})}{\text{RTT}}
+\mathrm{Throughput} = \frac{\min(\mathrm{rwnd}, \mathrm{cwnd})}{\mathrm{RTT}}
 $$
 
 #### Slow Start
@@ -471,7 +471,7 @@ transitions to congestion avoidance when loss is detected.
 
 When `cwnd` reaches `ssthresh`, TCP switches to congestion avoidance. Instead of doubling every RTT,
 `cwnd` increases by approximately 1 MSS per RTT (linear growth). For each ACK received, `cwnd`
-increases by $\text{MSS} \times (\text{MSS} / \text{cwnd})$.
+increases by $\mathrm{MSS} \times (\mathrm{MSS} / \mathrm{cwnd})$.
 
 This is much slower than slow start but prevents the sender from aggressively probing for available
 bandwidth after the initial ramp-up.
@@ -568,7 +568,7 @@ three-way handshake.
 **MSS (Maximum Segment Size):** Advertised during the handshake. Each side announces the largest
 segment it can receive. The effective MSS is the minimum of both ends' MSS values minus IP and TCP
 header overhead. On Ethernet with no options:
-$\text{MSS} = 1500 - 20 (\text{IP}) - 20 (\text{TCP}) = 1460$ bytes.
+$\mathrm{MSS} = 1500 - 20 (\mathrm{IP}) - 20 (\mathrm{TCP}) = 1460$ bytes.
 
 **Timestamps:** Enable accurate RTT measurement (needed for RTTM, since only one RTT sample per
 window is possible without timestamps) and PAWS (Protection Against Wrapped Sequences, which
@@ -758,7 +758,7 @@ sysctl net.ipv4.tcp_retries2            # 15 (retries for established connection
 
 4. **Misunderstanding `cwnd` and `rwnd`.** `cwnd` limits sending based on network congestion. `rwnd`
    limits sending based on receiver buffer space. Throughput is limited by
-   $\min(\text{rwnd}, \text{cwnd}) / \text{RTT}$. A full receiver buffer (`rwnd = 0`) stops the
+   $\min(\mathrm{rwnd}, \mathrm{cwnd}) / \mathrm{RTT}$. A full receiver buffer (`rwnd = 0`) stops the
    sender even if the network is idle.
 
 5. **UDP without application-level reliability.** If your UDP application needs reliable delivery,

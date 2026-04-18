@@ -72,7 +72,7 @@ Let $f(x) = e^x$. Then $f^{(n)}(x) = e^x$ for all $n$, so $f^{(n)}(0) = 1$ for a
 
 $$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots = \sum_{n=0}^{\infty}\frac{x^n}{n!}$$
 
-$$\boxed{e^x = \sum_{n=0}^{\infty}\frac{x^n}{n!}} \quad \text{for all } x \in \mathbb{R}$$
+$$\boxed{e^x = \sum_{n=0}^{\infty}\frac{x^n}{n!}} \quad \mathrm{for all } x \in \mathbb{R}$$
 
 $\square$
 
@@ -88,7 +88,7 @@ At $x = 0$: $0, 1, 0, -1, 0, 1, 0, -1, \ldots$
 
 $$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$$
 
-$$\boxed{\sin x = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}} \quad \text{for all } x \in \mathbb{R}$$
+$$\boxed{\sin x = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}} \quad \mathrm{for all } x \in \mathbb{R}$$
 
 $\square$
 
@@ -100,7 +100,7 @@ Let $f(x) = \cos x$. The derivatives cycle: $\cos x$, $-\sin x$, $-\cos x$, $\si
 
 At $x = 0$: $1, 0, -1, 0, 1, 0, -1, 0, \ldots$
 
-$$\boxed{\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}} \quad \text{for all } x \in \mathbb{R}$$
+$$\boxed{\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}} \quad \mathrm{for all } x \in \mathbb{R}$$
 
 ### 2.4 Natural logarithm
 
@@ -110,7 +110,7 @@ $f'(x) = \dfrac{1}{1+x}$, $f''(x) = -\dfrac{1}{(1+x)^2}$, $f'''(x) = \dfrac{2}{(
 
 $f^{(n)}(x) = \dfrac{(-1)^{n-1}(n-1)!}{(1+x)^n}$, so $f^{(n)}(0) = (-1)^{n-1}(n-1)!$.
 
-$$\boxed{\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots = \sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}} \quad \text{for } -1 < x \leq 1$$
+$$\boxed{\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots = \sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}} \quad \mathrm{for } -1 < x \leq 1$$
 
 **Radius of convergence:** 1. The series also converges at $x = 1$ (alternating harmonic series).
 
@@ -126,7 +126,7 @@ where $\dbinom{n}{k} = \dfrac{n(n-1)(n-2)\cdots(n-k+1)}{k!}$.
 
 ### 2.6 Arctangent
 
-$$\boxed{\arctan x = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}} \quad \text{for } |x| \leq 1$$
+$$\boxed{\arctan x = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots = \sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}} \quad \mathrm{for } |x| \leq 1$$
 
 **Radius of convergence:** 1. Converges at $x = \pm 1$ by the alternating series test.
 
@@ -189,7 +189,7 @@ Let $u = x - 1$, so $\ln x = \ln(1 + u)$.
 
 $$\ln(1+u) = u - \frac{u^2}{2} + \frac{u^3}{3} - \cdots$$
 
-$$\boxed{\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots} \quad \text{for } 0 < x \leq 2$$
+$$\boxed{\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots} \quad \mathrm{for } 0 < x \leq 2$$
 
 ---
 
@@ -252,7 +252,7 @@ $S_N = \dfrac{1 - x^{N+1}}{1 - x}$ (standard formula).
 
 Since $|x| < 1$: $x^{N+1} \to 0$ as $N \to \infty$, so $S_N \to \dfrac{1}{1-x}$.
 
-$$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \text{for } |x| < 1}$$
+$$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 
 $\square$
 

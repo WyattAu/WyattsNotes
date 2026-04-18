@@ -43,7 +43,7 @@ The electric field between the plates is uniform:
 $$E = \frac{Q}{\varepsilon_0 A}$$
 
 (This comes from Gauss's law:
-$\oint \mathbf{E} \cdot d\mathbf{A} = Q_{\text{enclosed}}/\varepsilon_0$, applied to a Gaussian
+$\oint \mathbf{E} \cdot d\mathbf{A} = Q_{\mathrm{enclosed}}/\varepsilon_0$, applied to a Gaussian
 surface enclosing one plate.)
 
 The p.d. between the plates is:
@@ -91,25 +91,25 @@ line through the origin). This area is a triangle of base $Q$ and height $V$: $E
 
 For a parallel plate capacitor, the energy per unit volume between the plates:
 
-$$u = \frac{E}{\text{volume}} = \frac{\frac{1}{2}CV^2}{Ad} = \frac{\frac{1}{2}\frac{\varepsilon_0 A}{d} \cdot V^2}{Ad} = \frac{\varepsilon_0 V^2}{2d^2} = \frac{1}{2}\varepsilon_0 E_{\text{field}}^2$$
+$$u = \frac{E}{\mathrm{volume}} = \frac{\frac{1}{2}CV^2}{Ad} = \frac{\frac{1}{2}\frac{\varepsilon_0 A}{d} \cdot V^2}{Ad} = \frac{\varepsilon_0 V^2}{2d^2} = \frac{1}{2}\varepsilon_0 E_{\mathrm{field}}^2$$
 
 ## 4. Capacitors in Series and Parallel
 
 ### Parallel Combination
 
-$$C_{\text{total}} = C_1 + C_2 + \cdots + C_n$$
+$$C_{\mathrm{total}} = C_1 + C_2 + \cdots + C_n$$
 
 **Proof.** All capacitors have the same p.d. $V$. Total charge:
 $Q = Q_1 + Q_2 + \cdots = C_1 V + C_2 V + \cdots = (C_1 + C_2 + \cdots)V$. Since
-$Q = C_{\text{total}} V$: $C_{\text{total}} = C_1 + C_2 + \cdots$ $\square$
+$Q = C_{\mathrm{total}} V$: $C_{\mathrm{total}} = C_1 + C_2 + \cdots$ $\square$
 
 ### Series Combination
 
-$$\frac{1}{C_{\text{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_n}$$
+$$\frac{1}{C_{\mathrm{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_n}$$
 
 **Proof.** All capacitors store the same charge $Q$. Total p.d.:
 $V = V_1 + V_2 + \cdots = Q/C_1 + Q/C_2 + \cdots = Q(1/C_1 + 1/C_2 + \cdots)$. Since
-$V = Q/C_{\text{total}}$: $1/C_{\text{total}} = 1/C_1 + 1/C_2 + \cdots$ $\square$
+$V = Q/C_{\mathrm{total}}$: $1/C_{\mathrm{total}} = 1/C_1 + 1/C_2 + \cdots$ $\square$
 
 :::warning
 Common Pitfall Note the "mirror" relationship with resistors: capacitors in parallel add
@@ -256,26 +256,26 @@ $$E_b = \frac{\sigma_b}{\varepsilon_0}$$
 
 The net field inside the dielectric is therefore:
 
-$$E_{\text{eff}} = E_0 - E_b = E_0 - \frac{\sigma_b}{\varepsilon_0}$$
+$$E_{\mathrm{eff}} = E_0 - E_b = E_0 - \frac{\sigma_b}{\varepsilon_0}$$
 
-### Derivation of $E_{\text{eff}} = E_0/\varepsilon_r$
+### Derivation of $E_{\mathrm{eff}} = E_0/\varepsilon_r$
 
 The **polarisation** $\mathbf{P}$ of the dielectric is defined as the dipole moment per unit volume.
 For a linear, isotropic dielectric, the polarisation is proportional to the effective field:
 
-$$P = \chi_e \varepsilon_0 E_{\text{eff}}$$
+$$P = \chi_e \varepsilon_0 E_{\mathrm{eff}}$$
 
 where $\chi_e$ is the **electric susceptibility** of the material.
 
 The bound surface charge density is related to the polarisation by $\sigma_b = P$, so:
 
-$$E_{\text{eff}} = E_0 - \frac{P}{\varepsilon_0} = E_0 - \chi_e E_{\text{eff}}$$
+$$E_{\mathrm{eff}} = E_0 - \frac{P}{\varepsilon_0} = E_0 - \chi_e E_{\mathrm{eff}}$$
 
 Rearranging:
 
-$$E_{\text{eff}}(1 + \chi_e) = E_0$$
+$$E_{\mathrm{eff}}(1 + \chi_e) = E_0$$
 
-$$\boxed{E_{\text{eff}} = \frac{E_0}{1 + \chi_e}}$$
+$$\boxed{E_{\mathrm{eff}} = \frac{E_0}{1 + \chi_e}}$$
 
 The **relative permittivity** (dielectric constant) is defined as:
 
@@ -283,7 +283,7 @@ $$\varepsilon_r = 1 + \chi_e$$
 
 Therefore:
 
-$$\boxed{E_{\text{eff}} = \frac{E_0}{\varepsilon_r}}$$
+$$\boxed{E_{\mathrm{eff}} = \frac{E_0}{\varepsilon_r}}$$
 
 This is the key result: the dielectric reduces the internal electric field by a factor of
 $\varepsilon_r$.
@@ -292,7 +292,7 @@ $\varepsilon_r$.
 
 The p.d. between the plates with a dielectric inserted is:
 
-$$V = E_{\text{eff}} \cdot d = \frac{E_0}{\varepsilon_r} \cdot d = \frac{V_0}{\varepsilon_r}$$
+$$V = E_{\mathrm{eff}} \cdot d = \frac{E_0}{\varepsilon_r} \cdot d = \frac{V_0}{\varepsilon_r}$$
 
 Since the charge $Q$ on the plates is unchanged (assuming the capacitor was isolated before
 insertion), the new capacitance is:
@@ -323,7 +323,7 @@ for instance.
 
 The maximum p.d. a capacitor can tolerate is:
 
-$$V_{\text{max}} = E_{\text{breakdown}} \cdot d$$
+$$V_{\mathrm{max}} = E_{\mathrm{breakdown}} \cdot d$$
 
 ### Common Dielectrics
 
@@ -353,7 +353,7 @@ Two distinct cases must be considered:
 has been charged and disconnected from the supply. Since $Q$ is constant and $C$ increases by
 $\varepsilon_r$, the energy **decreases**:
 
-$$E_{\text{new}} = \frac{Q^2}{2C_{\text{new}}} = \frac{Q^2}{2\varepsilon_r C_0} = \frac{E_0}{\varepsilon_r}$$
+$$E_{\mathrm{new}} = \frac{Q^2}{2C_{\mathrm{new}}} = \frac{Q^2}{2\varepsilon_r C_0} = \frac{E_0}{\varepsilon_r}$$
 
 The "missing" energy is extracted by the work done pulling the dielectric into the field (the
 polarised dielectric is attracted into the gap).
@@ -362,7 +362,7 @@ polarised dielectric is attracted into the gap).
 capacitor remains connected to the battery. Since $V$ is constant and $C$ increases by
 $\varepsilon_r$, the energy **increases**:
 
-$$E_{\text{new}} = \frac{1}{2}C_{\text{new}}V^2 = \frac{1}{2}\varepsilon_r C_0 V^2 = \varepsilon_r E_0$$
+$$E_{\mathrm{new}} = \frac{1}{2}C_{\mathrm{new}}V^2 = \frac{1}{2}\varepsilon_r C_0 V^2 = \varepsilon_r E_0$$
 
 The additional energy comes from the battery, which supplies extra charge
 $Q' = (\varepsilon_r - 1)CV$ to the plates.
@@ -464,16 +464,16 @@ J $= 37.5$ mJ.
 
 Consider a series $RC$ circuit where the output is taken across the capacitor:
 
-$$V_{\text{in}} = V_R + V_C = IR + \frac{Q}{C}$$
+$$V_{\mathrm{in}} = V_R + V_C = IR + \frac{Q}{C}$$
 
 If $RC \gg T$ (the time constant is much larger than the period of the input signal), then
-$V_R \gg V_C$ at all times during one cycle, so $V_{\text{in}} \approx V_R = IR$. Since $I = dQ/dt$:
+$V_R \gg V_C$ at all times during one cycle, so $V_{\mathrm{in}} \approx V_R = IR$. Since $I = dQ/dt$:
 
-$$V_{\text{in}} \approx RC\frac{dV_C}{dt}$$
+$$V_{\mathrm{in}} \approx RC\frac{dV_C}{dt}$$
 
 Therefore:
 
-$$V_{\text{out}} = V_C \approx \frac{1}{RC}\int_0^t V_{\text{in}}\,dt$$
+$$V_{\mathrm{out}} = V_C \approx \frac{1}{RC}\int_0^t V_{\mathrm{in}}\,dt$$
 
 The output is approximately the integral of the input. For a square wave input, the output
 approximates a triangular wave.
@@ -482,16 +482,16 @@ approximates a triangular wave.
 
 Consider a series $RC$ circuit where the output is taken across the resistor:
 
-$$V_{\text{in}} = \frac{Q}{C} + IR$$
+$$V_{\mathrm{in}} = \frac{Q}{C} + IR$$
 
 If $RC \ll T$ (the time constant is much smaller than the period), then $V_C \gg V_R$, so
-$V_{\text{in}} \approx V_C = Q/C$. The current is:
+$V_{\mathrm{in}} \approx V_C = Q/C$. The current is:
 
-$$I = \frac{dQ}{dt} = C\frac{dV_C}{dt} \approx C\frac{dV_{\text{in}}}{dt}$$
+$$I = \frac{dQ}{dt} = C\frac{dV_C}{dt} \approx C\frac{dV_{\mathrm{in}}}{dt}$$
 
 Therefore:
 
-$$V_{\text{out}} = V_R = IR \approx RC\frac{dV_{\text{in}}}{dt}$$
+$$V_{\mathrm{out}} = V_R = IR \approx RC\frac{dV_{\mathrm{in}}}{dt}$$
 
 The output is approximately the derivative of the input. For a square wave input, the output
 produces sharp spikes at the transitions.
@@ -522,9 +522,9 @@ with the load acts as a **smoothing filter**:
 
 The **ripple voltage** is approximately:
 
-$$\Delta V \approx \frac{I_{\text{load}}}{fC}$$
+$$\Delta V \approx \frac{I_{\mathrm{load}}}{fC}$$
 
-where $I_{\text{load}}$ is the load current and $f$ is the frequency of the rectified AC. A larger
+where $I_{\mathrm{load}}$ is the load current and $f$ is the frequency of the rectified AC. A larger
 $C$ produces smaller ripple, hence smoother DC output.
 
 ### Flash Photography
@@ -579,7 +579,7 @@ $$C = -\frac{1}{mR}$$
 - Uncertainty in the gradient of the $\ln(V)$ vs $t$ graph (from the line of best fit).
 - Systematic errors: the voltmeter has its own resistance $R_V$ in parallel with the capacitor. If
   $R_V$ is not much larger than $R$, the effective discharge resistance is
-  $R_{\text{eff}} = \frac{R \cdot R_V}{R + R_V}$, leading to a systematic underestimate of $C$.
+  $R_{\mathrm{eff}} = \frac{R \cdot R_V}{R + R_V}$, leading to a systematic underestimate of $C$.
 
 :::tip
 Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
@@ -638,7 +638,7 @@ F $= 354$ pF.
 
 <details>
 <summary>Problem 3</summary>
-A $470\,\mu$F capacitor is charged through a $100\,\text{k}\Omega$ resistor from a 6.0 V supply. Calculate: (a) the time constant, (b) the charge after 20 s, (c) the current after 20 s.
+A $470\,\mu$F capacitor is charged through a $100\,\mathrm{k}\Omega$ resistor from a 6.0 V supply. Calculate: (a) the time constant, (b) the charge after 20 s, (c) the current after 20 s.
 
 **Answer.** (a) $\tau = RC = 100 \times 10^3 \times 470 \times 10^{-6} = 47.0$ s.
 
@@ -656,7 +656,7 @@ A $= 39.2\,\mu$A.
 
 <details>
 <summary>Problem 4</summary>
-A $220\,\mu$F capacitor charged to 10 V discharges through a $50\,\text{k}\Omega$ resistor. Calculate: (a) the time constant, (b) the p.d. across the capacitor after 15 s, (c) the time for the p.d. to fall to 3.0 V.
+A $220\,\mu$F capacitor charged to 10 V discharges through a $50\,\mathrm{k}\Omega$ resistor. Calculate: (a) the time constant, (b) the p.d. across the capacitor after 15 s, (c) the time for the p.d. to fall to 3.0 V.
 
 **Answer.** (a) $\tau = 50 \times 10^3 \times 220 \times 10^{-6} = 11.0$ s.
 
@@ -673,10 +673,10 @@ $t = 11 \times 1.204 = 13.2$ s.
 <summary>Problem 5</summary>
 Two capacitors, $C_1 = 10\,\mu$F and $C_2 = 20\,\mu$F, are connected (a) in parallel and (b) in series. Calculate the equivalent capacitance in each case.
 
-**Answer.** (a) $C_{\text{parallel}} = 10 + 20 = 30\,\mu$F.
+**Answer.** (a) $C_{\mathrm{parallel}} = 10 + 20 = 30\,\mu$F.
 
-(b) $\frac{1}{C_{\text{series}}} = \frac{1}{10} + \frac{1}{20} = \frac{3}{20}$.
-$C_{\text{series}} = 6.67\,\mu$F.
+(b) $\frac{1}{C_{\mathrm{series}}} = \frac{1}{10} + \frac{1}{20} = \frac{3}{20}$.
+$C_{\mathrm{series}} = 6.67\,\mu$F.
 
 <b>If you get this wrong, revise:</b>
 [Capacitors in Series and Parallel](#4-capacitors-in-series-and-parallel)
@@ -685,7 +685,7 @@ $C_{\text{series}} = 6.67\,\mu$F.
 
 <details>
 <summary>Problem 6</summary>
-A capacitor is charged to 50 V and then discharged through a $200\,\text{k}\Omega$ resistor. After 30 s, the p.d. is 18 V. Calculate the capacitance.
+A capacitor is charged to 50 V and then discharged through a $200\,\mathrm{k}\Omega$ resistor. After 30 s, the p.d. is 18 V. Calculate the capacitance.
 
 **Answer.** $V = V_0 e^{-t/RC}$. $18 = 50 e^{-30/(200000 \times C)}$. $0.36 = e^{-30/(200000C)}$.
 $\ln 0.36 = -30/(200000C)$. $-1.022 = -30/(200000C)$.
@@ -727,7 +727,7 @@ $= 44.2\,\mu$J.
 
 <details>
 <summary>Problem 9</summary>
-An uncharged $100\,\mu$F capacitor in series with a $500\,\text{k}\Omega$ resistor is connected to a 20 V supply. How long does it take for the capacitor to charge to 15 V?
+An uncharged $100\,\mu$F capacitor in series with a $500\,\mathrm{k}\Omega$ resistor is connected to a 20 V supply. How long does it take for the capacitor to charge to 15 V?
 
 **Answer.** $15 = 20(1 - e^{-t/\tau})$. $0.75 = 1 - e^{-t/\tau}$. $e^{-t/\tau} = 0.25$.
 $-t/\tau = \ln 0.25 = -1.386$. $\tau = RC = 500 \times 10^3 \times 100 \times 10^{-6} = 50$ s.
@@ -739,7 +739,7 @@ $t = 1.386 \times 50 = 69.3$ s.
 
 <details>
 <summary>Problem 10</summary>
-A $47\,\mu$F capacitor charged to 24 V discharges through a $33\,\text{k}\Omega$ resistor. Calculate: (a) the initial energy stored, (b) the time constant, (c) the energy remaining after one time constant.
+A $47\,\mu$F capacitor charged to 24 V discharges through a $33\,\mathrm{k}\Omega$ resistor. Calculate: (a) the initial energy stored, (b) the time constant, (c) the energy remaining after one time constant.
 
 **Answer.** (a)
 $E_0 = \frac{1}{2}CV^2 = \frac{1}{2} \times 47 \times 10^{-6} \times 576 = 1.354 \times 10^{-2}$ J
@@ -810,7 +810,7 @@ J. Energy dissipated as heat in the connecting wires and radiated as EM waves.
 
 <details>
 <summary>Problem 13</summary>
-A $100\,\mu$F capacitor with air ($\varepsilon_r = 1.0$) between the plates is in series with a $10\,\text{k}\Omega$ resistor and connected to a $12$ V supply. The capacitor charges fully. While still connected to the supply, a dielectric with $\varepsilon_r = 3.0$ is inserted between the plates. Calculate: (a) the time constant before and after insertion, (b) the charge on the capacitor before and after insertion, (c) the energy stored before and after insertion.
+A $100\,\mu$F capacitor with air ($\varepsilon_r = 1.0$) between the plates is in series with a $10\,\mathrm{k}\Omega$ resistor and connected to a $12$ V supply. The capacitor charges fully. While still connected to the supply, a dielectric with $\varepsilon_r = 3.0$ is inserted between the plates. Calculate: (a) the time constant before and after insertion, (b) the charge on the capacitor before and after insertion, (c) the energy stored before and after insertion.
 
 **Answer.** (a) Before: $\tau_1 = RC = 10 \times 10^3 \times 100 \times 10^{-6} = 1.0$ s. After
 insertion, the capacitance becomes $C' = \varepsilon_r C = 3.0 \times 100 = 300\,\mu$F.
@@ -848,11 +848,11 @@ J/m$^3$.
 
 (c) For A (vacuum): the limiting factor is not the dielectric but rather practical considerations;
 for an ideal vacuum the breakdown field is effectively infinite. In practice, field emission limits
-vacuum capacitors to roughly $20$ -- $40$ MV/m. For B (mica): $E_{\text{max}} = 160 \times 10^6$
+vacuum capacitors to roughly $20$ -- $40$ MV/m. For B (mica): $E_{\mathrm{max}} = 160 \times 10^6$
 V/m.
-$V_{\text{max}} = E_{\text{max}} \cdot d = 160 \times 10^6 \times 5.0 \times 10^{-4} = 8.0 \times 10^4$
+$V_{\mathrm{max}} = E_{\mathrm{max}} \cdot d = 160 \times 10^6 \times 5.0 \times 10^{-4} = 8.0 \times 10^4$
 V $= 80$ kV. The energy stored at maximum:
-$E_B = \frac{1}{2}C_B V_{\text{max}}^2 = \frac{1}{2} \times 1.062 \times 10^{-9} \times 6.4 \times 10^9 = 3.40$
+$E_B = \frac{1}{2}C_B V_{\mathrm{max}}^2 = \frac{1}{2} \times 1.062 \times 10^{-9} \times 6.4 \times 10^9 = 3.40$
 J.
 
 <b>If you get this wrong, revise:</b> [Dielectrics in Detail](#8-dielectrics-in-detail)
@@ -865,14 +865,14 @@ Four capacitors are connected as follows: $C_1 = 10\,\mu$F and $C_2 = 20\,\mu$F 
 
 **Answer.** (a) $C_{12} = \frac{10 \times 20}{10 + 20} = 6.67\,\mu$F (series).
 $C_{123} = C_{12} + C_3 = 6.67 + 30 = 36.67\,\mu$F (parallel).
-$C_{\text{total}} = \frac{36.67 \times 15}{36.67 + 15} = \frac{550}{51.67} = 10.6\,\mu$F.
+$C_{\mathrm{total}} = \frac{36.67 \times 15}{36.67 + 15} = \frac{550}{51.67} = 10.6\,\mu$F.
 
 (b)
-$Q_{\text{total}} = C_{\text{total}} \times V = 10.6 \times 10^{-6} \times 100 = 1.06 \times 10^{-3}$
-C. Since $C_4$ is in series with the rest, $Q_4 = Q_{\text{total}} = 1.06$ mC.
+$Q_{\mathrm{total}} = C_{\mathrm{total}} \times V = 10.6 \times 10^{-6} \times 100 = 1.06 \times 10^{-3}$
+C. Since $C_4$ is in series with the rest, $Q_4 = Q_{\mathrm{total}} = 1.06$ mC.
 
-(c) $V_{123} = Q_{\text{total}} / C_{123} = 1.06 \times 10^{-3} / (36.67 \times 10^{-6}) = 28.9$ V.
-Check: $V_4 = Q_{\text{total}}/C_4 = 1.06 \times 10^{-3}/(15 \times 10^{-6}) = 70.7$ V.
+(c) $V_{123} = Q_{\mathrm{total}} / C_{123} = 1.06 \times 10^{-3} / (36.67 \times 10^{-6}) = 28.9$ V.
+Check: $V_4 = Q_{\mathrm{total}}/C_4 = 1.06 \times 10^{-3}/(15 \times 10^{-6}) = 70.7$ V.
 $28.9 + 70.7 = 99.6 \approx 100$ V (rounding).
 
 (d) $C_3$ is in parallel with the $C_1$--$C_2$ combination, so $V_3 = V_{123} = 28.9$ V.
@@ -885,7 +885,7 @@ $Q_3 = C_3 V_3 = 30 \times 10^{-6} \times 28.9 = 8.67 \times 10^{-4}$ C $= 867\,
 
 <details>
 <summary>Problem 16</summary>
-A student investigates an unknown capacitor by charging it to $10.0$ V and measuring the p.d. during discharge through a $47\,\text{k}\Omega$ resistor. The following data are recorded:
+A student investigates an unknown capacitor by charging it to $10.0$ V and measuring the p.d. during discharge through a $47\,\mathrm{k}\Omega$ resistor. The following data are recorded:
 
 | $t$ (s) | $V$ (V) |
 | ------- | ------- |

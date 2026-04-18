@@ -131,7 +131,7 @@ Quadratic equations take the form $ax^2 + bx + c = 0$. Methods of solution inclu
 #### Method 1: Factorisation
 
 $$
-x^2 - 5x + 6 = 0 \implies (x - 2)(x - 3) = 0 \implies x = 2 \text{ or } x = 3
+x^2 - 5x + 6 = 0 \implies (x - 2)(x - 3) = 0 \implies x = 2 \mathrm{ or } x = 3
 $$
 
 #### Method 2: Quadratic Formula (OL/HL)
@@ -161,7 +161,7 @@ x = \frac{-3 \pm \sqrt{9 + 40}}{4} = \frac{-3 \pm 7}{4}
 $$
 
 $$
-x = 1 \text{ or } x = -\frac{5}{2}
+x = 1 \mathrm{ or } x = -\frac{5}{2}
 $$
 
 #### Method 3: Completing the Square (HL)
@@ -239,7 +239,7 @@ $$
 $$
 
 $$
-(x - 2)(x - 3) = 0 \implies x = 2 \text{ or } x = 3
+(x - 2)(x - 3) = 0 \implies x = 2 \mathrm{ or } x = 3
 $$
 
 Solutions: $(2, 3)$ and $(3, 2)$.

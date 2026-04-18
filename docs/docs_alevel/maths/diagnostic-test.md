@@ -155,8 +155,8 @@ $x=1$: $y'' = 6 \gt{} 0$, minimum at $(1, 0)$. $x=-1$: $y'' = -6 \lt{} 0$, maxim
 </details>
 
 <details>
-<summary>Q14. A sphere's radius increases at $3\,\text{cm/s}$. Find $dV/dt$ when $r = 5\,\text{cm}$.</summary>
-$V = \dfrac{4}{3}\pi r^3$. $\dfrac{dV}{dt} = 4\pi r^2\dfrac{dr}{dt} = 4\pi(25)(3) = 300\pi\,\text{cm}^3/\text{s}$.
+<summary>Q14. A sphere's radius increases at $3\,\mathrm{cm/s}$. Find $dV/dt$ when $r = 5\,\mathrm{cm}$.</summary>
+$V = \dfrac{4}{3}\pi r^3$. $\dfrac{dV}{dt} = 4\pi r^2\dfrac{dr}{dt} = 4\pi(25)(3) = 300\pi\,\mathrm{cm}^3/\mathrm{s}$.
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/alevel/maths/pure-mathematics/differentiation)
@@ -282,7 +282,7 @@ $P(A|B) = 0.3/0.5 = 0.6$. $P(A \cup B) = 0.6+0.5-0.3 = 0.8$.
 </details>
 
 <details>
-<summary>Q27. A bag has 5 red and 3 blue balls. Two are drawn without replacement. Find $P(\text{both red})$.</summary>
+<summary>Q27. A bag has 5 red and 3 blue balls. Two are drawn without replacement. Find $P(\mathrm{both red})$.</summary>
 $P = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
 
 **If you get this wrong, revise:**
@@ -290,7 +290,7 @@ $P = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
 </details>
 
 <details>
-<summary>Q28. A disease affects 2% of the population. A test is 95% accurate. Find $P(\text{disease} \mid \text{positive})$.</summary>
+<summary>Q28. A disease affects 2% of the population. A test is 95% accurate. Find $P(\mathrm{disease} \mid \mathrm{positive})$.</summary>
 $P(T^+|D) = 0.95$, $P(T^+|D') = 0.05$. $P(T^+) = 0.95(0.02) + 0.05(0.98) = 0.019 + 0.049 = 0.068$.
 
 $P(D|T^+) = 0.019/0.068 = 19/68 \approx 0.279$.
@@ -318,7 +318,7 @@ $P(X \gt{} 108) = P(Z \gt{} 8/8) = P(Z \gt{} 1) = 1 - 0.8413 = 0.1587$.
 </details>
 
 <details>
-<summary>Q31. $X \sim \text{Po}(5)$. Find $P(X \leq 3)$.</summary>
+<summary>Q31. $X \sim \mathrm{Po}(5)$. Find $P(X \leq 3)$.</summary>
 $P(X \leq 3) = e^{-5}\left(1+5+\dfrac{25}{2}+\dfrac{125}{6}\right) = e^{-5}(1+5+12.5+20.833) = 39.333 \times 0.00674 \approx 0.2650$.
 
 **If you get this wrong, revise:**
@@ -353,22 +353,22 @@ Type II: Failing to reject $H_0$ when $H_0$ is false (false negative).
 ### Kinematics
 
 <details>
-<summary>Q34. A car accelerates from $15\,\text{m/s}$ to $35\,\text{m/s}$ over $200\,\text{m}$. Find the acceleration.</summary>
-$v^2 = u^2 + 2as \implies 1225 = 225 + 400a \implies a = 1000/400 = 2.5\,\text{m/s}^2$.
+<summary>Q34. A car accelerates from $15\,\mathrm{m/s}$ to $35\,\mathrm{m/s}$ over $200\,\mathrm{m}$. Find the acceleration.</summary>
+$v^2 = u^2 + 2as \implies 1225 = 225 + 400a \implies a = 1000/400 = 2.5\,\mathrm{m/s}^2$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/alevel/maths/mechanics/kinematics)
 </details>
 
 <details>
-<summary>Q35. A projectile is launched at $25\,\text{m/s}$ at $50^\circ$ above horizontal. Find the maximum height.</summary>
-$H = \dfrac{(25\sin 50°)^2}{2(9.8)} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{19.6} \approx 18.71\,\text{m}$.
+<summary>Q35. A projectile is launched at $25\,\mathrm{m/s}$ at $50^\circ$ above horizontal. Find the maximum height.</summary>
+$H = \dfrac{(25\sin 50°)^2}{2(9.8)} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{19.6} \approx 18.71\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/alevel/maths/mechanics/kinematics)
 </details>
 
 <details>
 <summary>Q36. A particle has velocity $v = 4t - t^2$ m/s. Find the total distance travelled from $t=0$ to $t=4$.</summary>
-$v=0$ at $t=0,4$. For $0<t<4$: $v>0$. $s = \int_0^4(4t-t^2)\,dt = [2t^2-t^3/3]_0^4 = 32-64/3 = 32/3 \approx 10.67\,\text{m}$.
+$v=0$ at $t=0,4$. For $0<t<4$: $v>0$. $s = \int_0^4(4t-t^2)\,dt = [2t^2-t^3/3]_0^4 = 32-64/3 = 32/3 \approx 10.67\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/alevel/maths/mechanics/kinematics)
 </details>
@@ -376,18 +376,18 @@ $v=0$ at $t=0,4$. For $0<t<4$: $v>0$. $s = \int_0^4(4t-t^2)\,dt = [2t^2-t^3/3]_0
 ### Forces and Newton's Laws
 
 <details>
-<summary>Q37. A $5\,\text{kg}$ block on a rough surface ($\mu=0.4$) is pushed by $30\,\text{N}$ horizontally. Find the acceleration.</summary>
-$R = 49\,\text{N}$. $F_{\max} = 19.6\,\text{N}$. $a = (30-19.6)/5 = 10.4/5 = 2.08\,\text{m/s}^2$.
+<summary>Q37. A $5\,\mathrm{kg}$ block on a rough surface ($\mu=0.4$) is pushed by $30\,\mathrm{N}$ horizontally. Find the acceleration.</summary>
+$R = 49\,\mathrm{N}$. $F_{\max} = 19.6\,\mathrm{N}$. $a = (30-19.6)/5 = 10.4/5 = 2.08\,\mathrm{m/s}^2$.
 
 **If you get this wrong, revise:**
 [Forces and Newton's Laws](/docs/alevel/maths/mechanics/forces-and-newtons-laws)
 </details>
 
 <details>
-<summary>Q38. Masses $8\,\text{kg}$ and $5\,\text{kg}$ hang over a smooth pulley. Find the acceleration and tension.</summary>
-$8g-T=8a$, $T-5g=5a$. Adding: $3g=13a \implies a = 3g/13 \approx 2.26\,\text{m/s}^2$.
+<summary>Q38. Masses $8\,\mathrm{kg}$ and $5\,\mathrm{kg}$ hang over a smooth pulley. Find the acceleration and tension.</summary>
+$8g-T=8a$, $T-5g=5a$. Adding: $3g=13a \implies a = 3g/13 \approx 2.26\,\mathrm{m/s}^2$.
 
-$T = 5(g+a) = 5(9.8+2.26) = 60.3\,\text{N}$.
+$T = 5(g+a) = 5(9.8+2.26) = 60.3\,\mathrm{N}$.
 
 **If you get this wrong, revise:**
 [Forces and Newton's Laws](/docs/alevel/maths/mechanics/forces-and-newtons-laws)
@@ -396,16 +396,16 @@ $T = 5(g+a) = 5(9.8+2.26) = 60.3\,\text{N}$.
 ### Moments
 
 <details>
-<summary>Q39. A uniform beam of length $6\,\text{m}$ and weight $300\,\text{N}$ is supported at both ends. A $200\,\text{N}$ load is $2\,\text{m}$ from the left end. Find the reactions.</summary>
-Moments about left end: $R_R \times 6 = 300 \times 3 + 200 \times 2 = 1300 \implies R_R = 216.7\,\text{N}$.
+<summary>Q39. A uniform beam of length $6\,\mathrm{m}$ and weight $300\,\mathrm{N}$ is supported at both ends. A $200\,\mathrm{N}$ load is $2\,\mathrm{m}$ from the left end. Find the reactions.</summary>
+Moments about left end: $R_R \times 6 = 300 \times 3 + 200 \times 2 = 1300 \implies R_R = 216.7\,\mathrm{N}$.
 
-$R_L = 500 - 216.7 = 283.3\,\text{N}$.
+$R_L = 500 - 216.7 = 283.3\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Moments](/docs/alevel/maths/mechanics/moments)
 </details>
 
 <details>
-<summary>Q40. Find the centre of mass of masses $3\,\text{kg}$, $4\,\text{kg}$, $5\,\text{kg}$ at $(0,0)$, $(6,0)$, $(3,4)$.</summary>
+<summary>Q40. Find the centre of mass of masses $3\,\mathrm{kg}$, $4\,\mathrm{kg}$, $5\,\mathrm{kg}$ at $(0,0)$, $(6,0)$, $(3,4)$.</summary>
 $\bar{x} = \dfrac{0+24+15}{12} = 39/12 = 3.25$. $\bar{y} = \dfrac{0+0+20}{12} = 5/3 \approx 1.67$.
 
 **If you get this wrong, revise:** [Moments](/docs/alevel/maths/mechanics/moments)
@@ -414,16 +414,16 @@ $\bar{x} = \dfrac{0+24+15}{12} = 39/12 = 3.25$. $\bar{y} = \dfrac{0+0+20}{12} = 
 ### Energy and Work
 
 <details>
-<summary>Q41. A car of mass $1000\,\text{kg}$ has engine power $40\,\text{kW}$. Find the maximum speed against a resistance of $500\,\text{N}$.</summary>
-$P = Fv \implies 40000 = 500v \implies v = 80\,\text{m/s}$.
+<summary>Q41. A car of mass $1000\,\mathrm{kg}$ has engine power $40\,\mathrm{kW}$. Find the maximum speed against a resistance of $500\,\mathrm{N}$.</summary>
+$P = Fv \implies 40000 = 500v \implies v = 80\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:**
 [Energy and Work](/docs/alevel/maths/mechanics/energy-and-work)
 </details>
 
 <details>
-<summary>Q42. A $2\,\text{kg}$ ball is dropped from $15\,\text{m}$. Find its speed just before impact using energy conservation.</summary>
-$mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2(9.8)(15)} = \sqrt{294} \approx 17.1\,\text{m/s}$.
+<summary>Q42. A $2\,\mathrm{kg}$ ball is dropped from $15\,\mathrm{m}$. Find its speed just before impact using energy conservation.</summary>
+$mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2(9.8)(15)} = \sqrt{294} \approx 17.1\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:**
 [Energy and Work](/docs/alevel/maths/mechanics/energy-and-work)
@@ -432,25 +432,25 @@ $mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2(9.8)(15)} = \sqrt{294} \approx 17.1
 ### Momentum
 
 <details>
-<summary>Q43. A $4\,\text{kg}$ body moving at $6\,\text{m/s}$ collides with a $2\,\text{kg}$ body at rest. They stick together. Find the common velocity.</summary>
-$4(6) + 2(0) = 6v \implies v = 4\,\text{m/s}$.
+<summary>Q43. A $4\,\mathrm{kg}$ body moving at $6\,\mathrm{m/s}$ collides with a $2\,\mathrm{kg}$ body at rest. They stick together. Find the common velocity.</summary>
+$4(6) + 2(0) = 6v \implies v = 4\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Momentum](/docs/alevel/maths/mechanics/momentum)
 </details>
 
 <details>
-<summary>Q44. A ball hits a wall at $10\,\text{m/s}$ and rebounds at $7\,\text{m/s}$. If its mass is $0.15\,\text{kg}$, find the impulse.</summary>
-$J = m(v-u) = 0.15(-7-10) = 0.15(-17) = -2.55\,\text{Ns}$. Magnitude: $2.55\,\text{Ns}$.
+<summary>Q44. A ball hits a wall at $10\,\mathrm{m/s}$ and rebounds at $7\,\mathrm{m/s}$. If its mass is $0.15\,\mathrm{kg}$, find the impulse.</summary>
+$J = m(v-u) = 0.15(-7-10) = 0.15(-17) = -2.55\,\mathrm{Ns}$. Magnitude: $2.55\,\mathrm{Ns}$.
 
 **If you get this wrong, revise:** [Momentum](/docs/alevel/maths/mechanics/momentum)
 </details>
 
 <details>
-<summary>Q45. Two bodies ($3\,\text{kg}$ at $5\,\text{m/s}$, $2\,\text{kg}$ at $-3\,\text{m/s}$) collide with $e=0.5$. Find the velocities after collision.</summary>
+<summary>Q45. Two bodies ($3\,\mathrm{kg}$ at $5\,\mathrm{m/s}$, $2\,\mathrm{kg}$ at $-3\,\mathrm{m/s}$) collide with $e=0.5$. Find the velocities after collision.</summary>
 Momentum: $15-6 = 3v_1+2v_2 \implies 3v_1+2v_2 = 9$.
 Restitution: $v_2-v_1 = 0.5(5-(-3)) = 4 \implies v_2 = v_1+4$.
 
-$3v_1+2(v_1+4) = 9 \implies 5v_1 = 1 \implies v_1 = 0.2\,\text{m/s}$, $v_2 = 4.2\,\text{m/s}$.
+$3v_1+2(v_1+4) = 9 \implies 5v_1 = 1 \implies v_1 = 0.2\,\mathrm{m/s}$, $v_2 = 4.2\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Momentum](/docs/alevel/maths/mechanics/momentum)
 </details>

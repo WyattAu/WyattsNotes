@@ -33,9 +33,9 @@ $(\cos\theta, \sin\theta)$.
 
 **Definition.**
 
-$$\cos\theta = \text{the } x\text{-coordinate of the point on the unit circle at angle } \theta$$
+$$\cos\theta = \mathrm{the } x\mathrm{-coordinate of the point on the unit circle at angle } \theta$$
 
-$$\sin\theta = \text{the } y\text{-coordinate of the point on the unit circle at angle } \theta$$
+$$\sin\theta = \mathrm{the } y\mathrm{-coordinate of the point on the unit circle at angle } \theta$$
 
 $$\tan\theta = \frac{\sin\theta}{\cos\theta} \quad (\cos\theta \neq 0)$$
 
@@ -48,16 +48,16 @@ with period $2\pi$.
 **Definition.** One _radian_ is the angle subtended at the centre of a circle by an arc equal in
 length to the radius.
 
-$$\theta\text{ (radians)} = \frac{\text{arc length}}{r}$$
+$$\theta\mathrm{ (radians)} = \frac{\mathrm{arc length}}{r}$$
 
 The full circle: $2\pi$ radians $= 360^\circ$, so $\pi$ radians $= 180^\circ$.
 
 **Theorem (Arc length and sector area).** For a sector of radius $r$ and angle $\theta$ (in
 radians):
 
-$$\text{Arc length } s = r\theta$$
+$$\mathrm{Arc length } s = r\theta$$
 
-$$\text{Sector area } A = \frac{1}{2}r^2\theta$$
+$$\mathrm{Sector area } A = \frac{1}{2}r^2\theta$$
 
 _Proof._ By definition, $\theta = s/r$, so $s = r\theta$. The sector is a fraction
 $\frac{\theta}{2\pi}$ of the full circle (area $\pi r^2$), so
@@ -198,7 +198,7 @@ integration.
 
 $$
 \begin{aligned}
-\sin\theta = a &\implies \theta = \arcsin(a) + 2n\pi \text{ or } \pi - \arcsin(a) + 2n\pi \\
+\sin\theta = a &\implies \theta = \arcsin(a) + 2n\pi \mathrm{ or } \pi - \arcsin(a) + 2n\pi \\
 \cos\theta = a &\implies \theta = \pm\arccos(a) + 2n\pi \\
 \tan\theta = a &\implies \theta = \arctan(a) + n\pi
 \end{aligned}
@@ -384,11 +384,11 @@ $\tan\alpha = \dfrac{-4}{3}$, so $\alpha = -\arctan\dfrac{4}{3}$.
 
 Maximum $= 5$ when $\theta + \alpha = \frac{\pi}{2}$:
 
-$$\theta = \frac{\pi}{2} - \alpha = \frac{\pi}{2} + \arctan\frac{4}{3} \approx 2.214 \text{ rad}$$
+$$\theta = \frac{\pi}{2} - \alpha = \frac{\pi}{2} + \arctan\frac{4}{3} \approx 2.214 \mathrm{ rad}$$
 
 Minimum $= -5$ when $\theta + \alpha = \frac{3\pi}{2}$:
 
-$$\theta = \frac{3\pi}{2} - \alpha = \frac{3\pi}{2} + \arctan\frac{4}{3} \approx 5.356 \text{ rad}$$
+$$\theta = \frac{3\pi}{2} - \alpha = \frac{3\pi}{2} + \arctan\frac{4}{3} \approx 5.356 \mathrm{ rad}$$
 
 </details>
 
@@ -407,9 +407,9 @@ $$\sqrt{2}\sin\!\left(\theta + \frac{\pi}{4}\right) = 1$$
 
 $$\sin\!\left(\theta + \frac{\pi}{4}\right) = \frac{1}{\sqrt{2}} = \sin\frac{\pi}{4}$$
 
-$$\theta + \frac{\pi}{4} = \frac{\pi}{4} + 2n\pi \quad \text{or} \quad \theta + \frac{\pi}{4} = \frac{3\pi}{4} + 2n\pi$$
+$$\theta + \frac{\pi}{4} = \frac{\pi}{4} + 2n\pi \quad \mathrm{or} \quad \theta + \frac{\pi}{4} = \frac{3\pi}{4} + 2n\pi$$
 
-$$\theta = 2n\pi \quad \text{or} \quad \theta = \frac{\pi}{2} + 2n\pi$$
+$$\theta = 2n\pi \quad \mathrm{or} \quad \theta = \frac{\pi}{2} + 2n\pi$$
 
 For $0 \leq \theta \lt{} 2\pi$: $\theta = 0$ or $\theta = \frac{\pi}{2}$.
 
@@ -619,7 +619,7 @@ Comparing coefficients: $R\cos\alpha = 4$ and $R\sin\alpha = 3$.
 
 $$R^2 = 4^2 + 3^2 = 25 \implies R = 5$$
 
-$$\tan\alpha = \frac{3}{4} \implies \alpha = \arctan\left(\frac{3}{4}\right) \approx 0.6435 \text{ rad}$$
+$$\tan\alpha = \frac{3}{4} \implies \alpha = \arctan\left(\frac{3}{4}\right) \approx 0.6435 \mathrm{ rad}$$
 
 $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
 
@@ -744,7 +744,7 @@ $$\tan\!\left(A + \frac{\pi}{4}\right) = \frac{\tan A + \tan\frac{\pi}{4}}{1 - \
 
 ---
 
-**Problem 10.** The area of a sector is $20\text{ cm}^2$ and the arc length is $10\text{ cm}$. Find
+**Problem 10.** The area of a sector is $20\mathrm{ cm}^2$ and the arc length is $10\mathrm{ cm}$. Find
 the radius and the angle.
 
 <details>
@@ -753,7 +753,7 @@ $$s = r\theta = 10 \implies \theta = \frac{10}{r}$$
 
 $$A = \frac{1}{2}r^2\theta = \frac{1}{2}r^2 \cdot \frac{10}{r} = 5r = 20 \implies r = 4$$
 
-$$\theta = \frac{10}{4} = 2.5 \text{ radians}$$
+$$\theta = \frac{10}{4} = 2.5 \mathrm{ radians}$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)
@@ -800,7 +800,7 @@ $\tan\alpha = \dfrac{5}{2}$.
 
 The maximum occurs when $\sin(\theta + \alpha) = 1$, i.e., $\theta + \alpha = \frac{\pi}{2}$.
 
-$$\theta = \frac{\pi}{2} - \alpha = \frac{\pi}{2} - \arctan\frac{5}{2} \approx 0.3805 \text{ rad}$$
+$$\theta = \frac{\pi}{2} - \alpha = \frac{\pi}{2} - \arctan\frac{5}{2} \approx 0.3805 \mathrm{ rad}$$
 
 Since $\arctan\frac{5}{2} \approx 1.1903 < \frac{\pi}{2}$, this $\theta$ is positive and is the
 smallest positive value.
@@ -840,7 +840,7 @@ $$2\sin\!\left(\theta + \frac{\pi}{3}\right) = 1$$
 
 $$\sin\!\left(\theta + \frac{\pi}{3}\right) = \frac{1}{2}$$
 
-$$\theta + \frac{\pi}{3} = \frac{\pi}{6} + 2n\pi \quad \text{or} \quad \theta + \frac{\pi}{3} = \frac{5\pi}{6} + 2n\pi$$
+$$\theta + \frac{\pi}{3} = \frac{\pi}{6} + 2n\pi \quad \mathrm{or} \quad \theta + \frac{\pi}{3} = \frac{5\pi}{6} + 2n\pi$$
 
 Case 1: $\theta = \frac{\pi}{6} - \frac{\pi}{3} + 2n\pi = -\frac{\pi}{6} + 2n\pi$.
 
