@@ -112,6 +112,12 @@ const THEME_SYNC_SCRIPT = `
 `;
 
 export default function Root({ children }: { children: React.ReactNode }): React.ReactElement {
+  // Cloudflare Web Analytics beacon token.
+  // Set this via environment variable CF_ANALYTICS_TOKEN.
+  // Create a site at: Cloudflare Dashboard > Analytics & Logs > Web Analytics > Add a site
+  // Then set CF_ANALYTICS_TOKEN in each deploy workflow's secrets.
+  const cfToken = process.env.CF_ANALYTICS_TOKEN || '';
+
   return (
     <>
       {children}
@@ -133,6 +139,13 @@ export default function Root({ children }: { children: React.ReactNode }): React
         }}
       />
       <script dangerouslySetInnerHTML={{ __html: THEME_SYNC_SCRIPT }} />
+      {cfToken && (
+        <script
+          defer
+          src={`https://static.cloudflareinsights.com/beacon.min.js`}
+          data-cf-beacon={JSON.stringify({ token: cfToken, spa: true })}
+        />
+      )}
     </>
   );
 }
