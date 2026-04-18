@@ -23,7 +23,7 @@ You must know when to use the sample variance formula (dividing by $n-1$) versus
 population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
 :::
 
----
+<hr />
 
 ## 1. Measures of Central Tendency
 
@@ -75,7 +75,7 @@ For skewed distributions, the median is a better measure of central tendency tha
 mean. A few extreme values can pull the mean far from the centre of the data.
 :::
 
----
+<hr />
 
 ## 2. Variance and Standard Deviation
 
@@ -116,7 +116,7 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 = \frac{\sum x_i^2 - n\bar{
 The division by $n-1$ (Bessel's correction) accounts for the fact that $\bar{x}$ is estimated from
 the same data, losing one degree of freedom.
 
----
+<hr />
 
 ## 3. Quartiles, IQR, and Box Plots
 
@@ -151,7 +151,7 @@ Different boards may define outliers differently. Always check your board's conv
 Some use $1.5 \times$ IQR, others use different multipliers.
 :::
 
----
+<hr />
 
 ## 4. Coding Data
 
@@ -180,7 +180,7 @@ find the mean and standard deviation, then decode back. Remember: adding a const
 but does not affect the spread.
 :::
 
----
+<hr />
 
 ## 5. Frequency Tables and Grouped Data
 
@@ -195,7 +195,7 @@ $$\bar{x} = \frac{\sum f_i x_i}{\sum f_i}, \qquad \sigma^2 = \frac{\sum f_i x_i^
 Use the **midpoint** of each class as the representative value. This introduces an approximation
 since we lose information about the distribution within each class.
 
----
+<hr />
 
 ## 6. Skewness
 
@@ -240,7 +240,7 @@ For a unimodal distribution:
 The mean is pulled in the direction of the longer tail, while the mode remains at the peak and the
 median lies between them.
 
----
+<hr />
 
 ## 7. Outliers in Depth
 
@@ -283,7 +283,7 @@ z-score for normally distributed data.
 | IQR ($1.5 \times$) | Standard at A-level; easy to apply from quartiles | Less effective with very small samples  |
 | Modified z-score   | Robust to multiple or clustered outliers          | Requires computing the MAD, less common |
 
----
+<hr />
 
 ## 8. Box Plots — Drawing and Interpreting
 
@@ -329,7 +329,7 @@ such as "distribution A has a higher median" is incomplete without also addressi
 compare.
 :::
 
----
+<hr />
 
 ## 9. Comparing Distributions
 
@@ -378,7 +378,7 @@ When asked to compare two distributions in an exam, structure your response arou
 
 Always relate numerical comparisons to the original context of the data.
 
----
+<hr />
 
 ## 10. Interpolation from Grouped Data
 
@@ -429,7 +429,7 @@ Linear interpolation assumes data are uniformly distributed within each class. T
 approximation; the true quantile may differ if the data are not uniformly spread within the class.
 :::
 
----
+<hr />
 
 ## Problem Set
 

@@ -23,7 +23,7 @@ All boards provide trigonometric identities in the formula booklet, but not thei
 You need to know _which_ identities exist and how to apply them.
 :::
 
----
+<hr />
 
 ## 1. The Unit Circle Definitions
 
@@ -63,7 +63,7 @@ _Proof._ By definition, $\theta = s/r$, so $s = r\theta$. The sector is a fracti
 $\frac{\theta}{2\pi}$ of the full circle (area $\pi r^2$), so
 $A = \frac{\theta}{2\pi} \cdot \pi r^2 = \frac{1}{2}r^2\theta$. $\blacksquare$
 
----
+<hr />
 
 ## 2. Fundamental Identities
 
@@ -85,7 +85,7 @@ Dividing by $\sin^2\theta$ (where $\sin\theta \neq 0$):
 
 $$\cot^2\theta + 1 = \cosec^2\theta$$
 
----
+<hr />
 
 ## 3. Compound Angle Formulas
 
@@ -154,7 +154,7 @@ $$
 _Proof._ Replace $B$ with $-B$ in the sum formulas, using $\sin(-B) = -\sin B$ and
 $\cos(-B) = \cos B$. $\blacksquare$
 
----
+<hr />
 
 ## 4. Double Angle Formulas
 
@@ -184,7 +184,7 @@ _Intuition._ The double angle formulas express functions of $2A$ purely in terms
 $A$. They are the algebraic backbone of many trigonometric manipulations and are essential for
 integration.
 
----
+<hr />
 
 ## 5. Solving Trigonometric Equations
 
@@ -226,7 +226,7 @@ Solutions: $\theta = 0, \frac{\pi}{3}, \frac{5\pi}{3}$.
 
 </details>
 
----
+<hr />
 
 ## 6. Small Angle Approximations
 
@@ -254,7 +254,7 @@ The small angle approximations are only valid when $\theta$ is in **radians**, n
 degrees. This is a very common exam error.
 :::
 
----
+<hr />
 
 ## 7. Half-Angle Formulas
 
@@ -324,7 +324,7 @@ $$\sin\frac{\pi}{8} = \sqrt{\frac{1 - \cos\frac{\pi}{4}}{2}} = \sqrt{\frac{1 - \
 
 </details>
 
----
+<hr />
 
 ## 8. R-Addition Formula (Harmonic Form)
 
@@ -415,7 +415,7 @@ For $0 \leq \theta \lt{} 2\pi$: $\theta = 0$ or $\theta = \frac{\pi}{2}$.
 
 </details>
 
----
+<hr />
 
 ## 9. Trigonometric Identities: Proof Strategies
 
@@ -512,7 +512,7 @@ $$
 
 </details>
 
----
+<hr />
 
 ## 10. Trigonometric Graphs
 
@@ -569,7 +569,7 @@ Since the period is $\pi$, the second cycle repeats with all $x$-values shifted 
 
 </details>
 
----
+<hr />
 
 ## 11. Problem Set
 
@@ -587,7 +587,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Double angle formulas](#4-double-angle-formulas)
 
----
+<hr />
 
 **Problem 2.** Solve $\sin 2x = \sin x$ for $0 \leq x < 2\pi$.
 
@@ -606,7 +606,7 @@ Solutions: $x = 0, \frac{\pi}{3}, \pi, \frac{5\pi}{3}$.
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
 
----
+<hr />
 
 **Problem 3.** Express $4\sin\theta - 3\cos\theta$ in the form $R\sin(\theta - \alpha)$, where
 $R > 0$ and $0 < \alpha < \frac{\pi}{2}$.
@@ -626,7 +626,7 @@ $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
----
+<hr />
 
 **Problem 4.** Find the exact value of $\sin 75^\circ$.
 
@@ -639,7 +639,7 @@ $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
----
+<hr />
 
 **Problem 5.** Prove that $\frac{1 - \cos 2\theta}{\sin 2\theta} = \tan\theta$.
 
@@ -655,7 +655,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Double angle formulas](#4-double-angle-formulas)
 
----
+<hr />
 
 **Problem 6.** A sector of a circle of radius 8 cm has an angle of 1.2 radians. Find the arc length
 and the area of the sector.
@@ -669,7 +669,7 @@ Area: $A = \frac{1}{2}r^2\theta = \frac{1}{2}(64)(1.2) = 38.4$ cm².
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)
 
----
+<hr />
 
 **Problem 7.** Solve $3\cos^2 x + 2\sin x - 2 = 0$ for $-\pi \leq x \leq \pi$.
 
@@ -696,7 +696,7 @@ Solutions: $x \approx -2.802, -0.340, \frac{\pi}{2}$.
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
 
----
+<hr />
 
 **Problem 8.** Use small angle approximations to estimate $\frac{\sin 0.05}{\cos 0.05}$.
 
@@ -713,7 +713,7 @@ $$\frac{\sin 0.05}{\cos 0.05} \approx \frac{0.05}{0.99875} \approx 0.05006$$
 </details>
 <b>If you get this wrong, revise:</b> [Small angle approximations](#6-small-angle-approximations)
 
----
+<hr />
 
 **Problem 9.** Prove that $\dfrac{1 + \sin 2A}{\cos 2A} = \tan\!\left(A + \dfrac{\pi}{4}\right)$.
 
@@ -742,7 +742,7 @@ $$\tan\!\left(A + \frac{\pi}{4}\right) = \frac{\tan A + \tan\frac{\pi}{4}}{1 - \
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
----
+<hr />
 
 **Problem 10.** The area of a sector is $20\mathrm{ cm}^2$ and the arc length is $10\mathrm{ cm}$. Find
 the radius and the angle.
@@ -758,7 +758,7 @@ $$\theta = \frac{10}{4} = 2.5 \mathrm{ radians}$$
 </details>
 <b>If you get this wrong, revise:</b> [Radian measure](#11-radian-measure)
 
----
+<hr />
 
 **Problem 11.** Find the exact value of $\cos\dfrac{\pi}{12}$ using a half-angle formula.
 
@@ -784,7 +784,7 @@ and one can check that $\dfrac{\sqrt{2+\sqrt{3}}}{2} = \dfrac{\sqrt{6}+\sqrt{2}}
 </details>
 <b>If you get this wrong, revise:</b> [Half-angle formulas](#7-half-angle-formulas)
 
----
+<hr />
 
 **Problem 12.** Find the maximum value of $2\sin\theta + 5\cos\theta$ and the smallest positive
 value of $\theta$ at which it occurs.
@@ -808,7 +808,7 @@ smallest positive value.
 </details>
 <b>If you get this wrong, revise:</b> [R-addition formula](#8-r-addition-formula-harmonic-form)
 
----
+<hr />
 
 **Problem 13.** Prove that $\dfrac{\sin 3A}{\sin A} - \dfrac{\cos 3A}{\cos A} = 2$.
 
@@ -828,7 +828,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Proof strategies](#9-trigonometric-identities-proof-strategies)
 
----
+<hr />
 
 **Problem 14.** Solve $\sin\theta + \sqrt{3}\cos\theta = 1$ for $0 \leq \theta \lt{} 2\pi$.
 
@@ -855,7 +855,7 @@ Solutions: $\theta = \frac{\pi}{2}$ or $\theta = \frac{11\pi}{6}$.
 </details>
 <b>If you get this wrong, revise:</b> [R-addition formula](#8-r-addition-formula-harmonic-form)
 
----
+<hr />
 
 **Problem 15.** Prove that $\dfrac{1 - \tan^2 A}{1 + \tan^2 A} = \cos 2A$.
 

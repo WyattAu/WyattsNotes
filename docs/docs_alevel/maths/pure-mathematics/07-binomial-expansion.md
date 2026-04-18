@@ -23,7 +23,7 @@ AQA provides the binomial expansion formula in the formula booklet. Edexcel does
 memorise it.
 :::
 
----
+<hr />
 
 ## 1. Pascal's Triangle
 
@@ -41,7 +41,7 @@ $$
 
 Each entry is the sum of the two entries above it.
 
----
+<hr />
 
 ## 2. Binomial Coefficients
 
@@ -84,7 +84,7 @@ _Proof._ Consider a set of $n$ elements, with one distinguished element $x$. To 
 
 Total: $\binom{n-1}{r-1} + \binom{n-1}{r}$. $\blacksquare$
 
----
+<hr />
 
 ## 3. The Binomial Theorem
 
@@ -132,7 +132,7 @@ $$= 32x^5 - 240x^4 + 720x^3 - 1080x^2 + 810x - 243$$
 
 </details>
 
----
+<hr />
 
 ## 4. General Binomial Expansion
 
@@ -196,7 +196,7 @@ Valid for $\left|\frac{x}{4}\right| \lt 1$, i.e., $|x| \lt 4$.
 
 </details>
 
----
+<hr />
 
 ## 5. Finding Specific Terms
 
@@ -266,7 +266,7 @@ Coefficient of $x^3$: $\frac{135}{16}$.
 
 </details>
 
----
+<hr />
 
 ## 6. Binomial Approximation and Error Estimation
 
@@ -319,7 +319,7 @@ error in $\sqrt[3]{28}$ is at most $3 \times 6.2 \times 10^{-7} \approx 1.9 \tim
 
 </details>
 
----
+<hr />
 
 ## 7. Relationships Between Binomial Coefficients
 
@@ -398,7 +398,7 @@ Alternatively, we can count by cases: choose $k$ women and $m - k$ men. The numb
 $k$ women is $\binom{r}{k}$, and the number of ways to choose $m - k$ men is $\binom{n-r}{m-k}$.
 Summing over all valid $k$ gives the left-hand side. $\blacksquare$
 
----
+<hr />
 
 ## 8. Validity of General Binomial Expansion
 
@@ -487,7 +487,7 @@ $$\frac{3}{(1-x)(2+x)} = \frac{3}{2} + \frac{3}{4}x + \frac{9}{8}x^2 + \cdots$$
 
 </details>
 
----
+<hr />
 
 ## 9. Problem Set
 
@@ -502,7 +502,7 @@ $$= 1 + 12x + 54x^2 + 108x^3 + 81x^4$$
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
----
+<hr />
 
 **Problem 2.** Find the coefficient of $x^3$ in the expansion of $(2 - x)^6$.
 
@@ -517,7 +517,7 @@ Coefficient of $x^3$: $-160$.
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
----
+<hr />
 
 **Problem 3.** Expand $(1 + x)^{-2}$ up to the term in $x^3$, stating the range of validity.
 
@@ -535,7 +535,7 @@ Valid for $|x| \lt 1$.
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
----
+<hr />
 
 **Problem 4.** Find the coefficient of $x^2$ in the expansion of $(1 - 2x)^5(1 + 3x)^4$.
 
@@ -556,7 +556,7 @@ Total: $54 - 120 + 40 = -26$.
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
----
+<hr />
 
 **Problem 5.** Use the binomial expansion to estimate $\sqrt{1.05}$ to 5 decimal places.
 
@@ -575,7 +575,7 @@ To 5 d.p.: $1.02470$.
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
----
+<hr />
 
 **Problem 6.** In the expansion of $(1 + ax)^n$, the coefficients of $x$, $x^2$, and $x^3$ are in
 the ratio $1 : 4 : 12$. Find $a$ and $n$.
@@ -611,7 +611,7 @@ $a = \frac{8}{-8} = -1$.
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
----
+<hr />
 
 **Problem 7.** Prove that $\sum_{r=0}^{n} \binom{n}{r} = 2^n$.
 
@@ -629,7 +629,7 @@ $n$-element set, which is $2^n$ (each element can either be included or excluded
 </details>
 <b>If you get this wrong, revise:</b> [Binomial coefficients](#2-binomial-coefficients)
 
----
+<hr />
 
 **Problem 8.** Expand $\frac{1}{(1 + x)(1 - 2x)}$ in ascending powers of $x$ up to $x^3$, stating
 the range of validity.
@@ -655,7 +655,7 @@ Valid for $|x| \lt \frac{1}{2}$ (the more restrictive condition).
 </details>
 <b>If you get this wrong, revise:</b> [General binomial expansion](#4-general-binomial-expansion)
 
----
+<hr />
 
 **Problem 9.** Given that the expansion of $(1 + kx)^{10}$ in ascending powers of $x$ has a
 coefficient of $x^3$ equal to $1080$, find the value of $k$.
@@ -673,7 +673,7 @@ $$k = \sqrt[3]{9}$$
 </details>
 <b>If you get this wrong, revise:</b> [Binomial theorem](#3-the-binomial-theorem)
 
----
+<hr />
 
 **Problem 10.** Prove that $\sum_{r=0}^{n} (-1)^r \binom{n}{r} = 0$ for $n \geq 1$.
 
@@ -692,7 +692,7 @@ remove one element).
 </details>
 <b>If you get this wrong, revise:</b> [Binomial coefficients](#2-binomial-coefficients)
 
----
+<hr />
 
 **Problem 11.** Find the coefficient of $x^3$ in the expansion of $(1 + x)^{-3}(1 - 2x)^{-1}$ up to
 $x^3$, stating the range of validity.
@@ -720,7 +720,7 @@ $|x| \lt 1/2$.
 </details>
 <b>If you get this wrong, revise:</b> [Validity of general binomial expansion](#8-validity-of-general-binomial-expansion)
 
----
+<hr />
 
 **Problem 12.** Use the binomial expansion to approximate $\sqrt[3]{126}$ to 4 decimal places.
 Estimate the error in your approximation.
@@ -756,7 +756,7 @@ which is negligible for 4 decimal places. The approximation $5.0133$ is reliable
 </details>
 <b>If you get this wrong, revise:</b> [Binomial approximation and error estimation](#6-binomial-approximation-and-error-estimation)
 
----
+<hr />
 
 **Problem 13.** Evaluate $\sum_{r=0}^{10} r\binom{10}{r}$.
 
@@ -775,7 +775,7 @@ $$10(1+1)^9 = \sum_{r=0}^{10} r\binom{10}{r} = 10 \times 512 = 5120$$ ✓
 </details>
 <b>If you get this wrong, revise:</b> [Relationships between binomial coefficients](#7-relationships-between-binomial-coefficients)
 
----
+<hr />
 
 **Problem 14.** In the expansion of $(2 + 3x)^{2n}$, the ratio of the coefficient of $x^3$ to the
 coefficient of $x$ is $11 : 1$. Find the value of $n$.
@@ -842,7 +842,7 @@ achieved for any positive integer $n$ with $(2+3x)^{2n}$.
 </details>
 <b>If you get this wrong, revise:</b> [Finding specific terms](#5-finding-specific-terms)
 
----
+<hr />
 
 **Problem 15.** Expand $\frac{2}{(1+x)^2(1-2x)}$ in ascending powers of $x$ up to $x^2$, stating the
 range of validity.

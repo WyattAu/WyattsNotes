@@ -31,7 +31,7 @@ Both are memoryless. The Poisson process links all three distributions: Poisson 
 exponential measures inter-arrival times, and geometric counts trials until the first event.
 :::
 
----
+<hr />
 
 ## 1. Continuous Random Variables
 
@@ -95,7 +95,7 @@ $Q_3$ satisfies $F(Q_3) = 0.75$.
 
 **The interquartile range** is $\mathrm{IQR} = Q_3 - Q_1$.
 
----
+<hr />
 
 ## 2. The Exponential Distribution
 
@@ -207,7 +207,7 @@ $$F(x) = 1 - e^{-\lambda x} = p \implies x = -\frac{1}{\lambda}\ln(1-p)$$
 
 The median is $x_{0.5} = -\dfrac{\ln(0.5)}{\lambda} = \dfrac{\ln 2}{\lambda}$.
 
----
+<hr />
 
 ## 3. Worked Examples
 
@@ -244,7 +244,7 @@ For $0 \leq x \leq 1$: $F(x) = \int_0^x 2t\,dt = x^2$.
 
 For $x < 0$: $F(x) = 0$. For $x > 1$: $F(x) = 1$.
 
----
+<hr />
 
 ## 4. Hypothesis Testing with the Exponential Distribution
 
@@ -261,7 +261,7 @@ $z = \dfrac{420 - 200}{\sqrt{4000}} = \dfrac{220}{63.25} = 3.48$.
 
 $|z| = 3.48 > 1.96$, so reject $H_0$.
 
----
+<hr />
 
 ## Problems
 
@@ -447,7 +447,7 @@ Section 1.5.
 
 </details>
 
----
+<hr />
 
 ## 5. Memoryless Property: Detailed Proof and Interpretation
 
@@ -503,7 +503,7 @@ The memoryless property means:
 - This property makes exponential models appropriate for random failure mechanisms (electronic
   components) but inappropriate for wear-out mechanisms (mechanical parts).
 
----
+<hr />
 
 ## 6. Poisson-Exponential Connection: Inter-Arrival Times
 
@@ -552,7 +552,7 @@ $P(N \geq 3) = 1 - P(N \leq 2) = 1 - e^{-2.5}(1 + 2.5 + 2.5^2/2) = 1 - 0.0821 \t
 Median
 $= \dfrac{\ln 2}{\lambda} = \dfrac{\ln 2}{5} \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
 
----
+<hr />
 
 ## 7. The Continuous Uniform Distribution
 
@@ -582,7 +582,7 @@ $$\boxed{\mathrm{Var}(X) = \frac{(b-a)^2}{12}} \quad \blacksquare$$
 
 $$F(x) = \begin{cases} 0 & x \lt{} a \\ \dfrac{x - a}{b - a} & a \leq x \leq b \\ 1 & x > b \end{cases}$$
 
----
+<hr />
 
 ## 8. Mixture Distributions
 
@@ -616,7 +616,7 @@ $P(X > 100) = 0.7\,e^{-0.01 \times 100} + 0.3\,e^{-0.002 \times 100} = 0.7e^{-1}
 
 $\approx 0.2575 + 0.2456 = 0.5031$.
 
----
+<hr />
 
 ## 9. Common Pitfalls
 
@@ -653,7 +653,7 @@ measured in **hours**. If you want the probability of waiting more than 20 minut
 hours: $t = 1/3$ hours. Using $t = 20$ directly would give $P(T > 20) = e^{-100}$, which is
 essentially zero and clearly wrong.
 
----
+<hr />
 
 ## 10. Problem Set
 

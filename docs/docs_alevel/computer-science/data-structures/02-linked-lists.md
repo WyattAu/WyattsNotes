@@ -31,7 +31,7 @@ class Node:
         self.next = None
 ```
 
----
+<hr />
 
 ## 2. Singly Linked List
 
@@ -147,7 +147,7 @@ def search(head, value):
 **Proof.** In the worst case, the target is at the tail or absent. The algorithm visits every node
 exactly once, performing $O(1)$ work per node. Total: $O(n)$. $\square$
 
----
+<hr />
 
 ## 3. Doubly Linked List
 
@@ -223,7 +223,7 @@ Board-specific
 - **Edexcel** covers basic singly linked list operations
 :::
 
----
+<hr />
 
 ## 4. Linked Lists vs Arrays
 
@@ -263,7 +263,7 @@ Exam tip When asked "when would you use a linked list instead of an array?", foc
 - When random access is not needed
 :::
 
----
+<hr />
 
 ## 5. Circular Linked List
 
@@ -282,7 +282,7 @@ head → [3|•] → [7|•] → [1|•] → [9|•] ↩
 **Traversal termination:** Must track the starting node explicitly, since there is no `None`
 sentinel.
 
----
+<hr />
 
 ## 6. Sentinel Nodes
 
@@ -302,7 +302,7 @@ def insert_sorted_with_sentinel(sentinel, value):
 **Advantage:** No special case for inserting into an empty list — the sentinel always exists, and
 its `next` points to the first real node (or `None` if the list is empty).
 
----
+<hr />
 
 ## Problem Set
 
@@ -487,7 +487,7 @@ For revision on queues, see
 [Stacks and Queues](/docs/alevel/computer-science/data-structures/stacks-and-queues).
 </details>
 
----
+<hr />
 
 ## Problems
 

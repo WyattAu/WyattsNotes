@@ -25,7 +25,7 @@ involved in developing software, from initial conception through to deployment a
 5. **Deployment** — Release to users
 6. **Maintenance** — Fix bugs, add features, adapt to changes
 
----
+<hr />
 
 ## 2. Waterfall Model
 
@@ -62,7 +62,7 @@ Analysis → Design → Implementation → Testing → Deployment → Maintenanc
 - Customer sees the product only at the end
 - Testing is a single phase — bugs found late are expensive to fix
 
----
+<hr />
 
 ## 3. Agile Methodology
 
@@ -111,7 +111,7 @@ A specific Agile methodology with defined roles, events, and artefacts.
 | Risk                 | Low — issues found early                   |
 | Best for             | Evolving requirements, innovative projects |
 
----
+<hr />
 
 ## 4. Spiral Model
 
@@ -153,7 +153,7 @@ Objectives          Development
 - Requires risk assessment expertise
 - Expensive for small projects
 
----
+<hr />
 
 ## 5. Rapid Application Development (RAD)
 
@@ -175,7 +175,7 @@ speed. Uses workshops, focus groups, and iterative user testing.
 - Short timeframes
 - User interface-intensive applications
 
----
+<hr />
 
 ## 6. Comparison of Methodologies
 
@@ -200,7 +200,7 @@ Board-specific
 - **Edexcel** covers SDLC phases and development methodologies
 :::
 
----
+<hr />
 
 ## 7. UML Diagrams
 
@@ -247,7 +247,7 @@ Show interactions between actors (users) and the system.
 | State diagram     | Show states and transitions of an object    |
 | Component diagram | Show system components and dependencies     |
 
----
+<hr />
 
 ## Problem Set
 
@@ -472,7 +472,7 @@ For revision on testing, see
 
 </details>
 
----
+<hr />
 
 ## 8. Worked Example: Waterfall vs Agile for a Hospital System
 
@@ -527,7 +527,7 @@ feedback.
 | Staff feedback             | Only at deployment                      | Every 2 weeks                                |
 | Best fit if...             | Requirements are fully known and stable | Requirements are partially known or evolving |
 
----
+<hr />
 
 ## 9. Risk Management in the SDLC
 
@@ -566,7 +566,7 @@ feedback.
 | Performance issues at scale     | Low        | High   | Load testing in each sprint                     |
 | Third-party API downtime        | Medium     | Medium | Implement caching and fallback mechanisms       |
 
----
+<hr />
 
 ## 10. Common Pitfalls
 
@@ -580,7 +580,7 @@ feedback.
 | Scope creep                                  | Uncontrolled addition of features delays delivery | Use a prioritised backlog, freeze scope for each sprint               |
 | Poor documentation                           | Knowledge lost when team members leave            | Maintain essential docs (architecture, API, deployment) even in Agile |
 
----
+<hr />
 
 ## 11. Additional Problem Set
 

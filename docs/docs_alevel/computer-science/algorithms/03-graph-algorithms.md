@@ -24,7 +24,7 @@ $O((V + E)\log V)$ with a binary heap). The key improvement is $O(1)$ amortised 
 Run Dijkstra from both the source and target simultaneously. The search terminates when the two
 frontiers meet. This can reduce the search space significantly in practice.
 
----
+<hr />
 
 ## 2. A\* Search Algorithm
 
@@ -87,7 +87,7 @@ path — contradiction. $\square$
 | Euclidean    | Straight-line distance         | Yes         |
 | General      | MST cost to goal (precomputed) | Yes         |
 
----
+<hr />
 
 ## 3. Minimum Spanning Tree Algorithms
 
@@ -145,7 +145,7 @@ Board-specific **AQA** requires Dijkstra's shortest path algorithm with trace ta
 covers basic graph traversal (BFS, DFS) and shortest path.
 :::
 
----
+<hr />
 
 ## 4. Travelling Salesman Problem (TSP)
 
@@ -213,7 +213,7 @@ def two_opt(path, dist_matrix):
 
 **Complexity:** Each iteration is $O(n^2)$. Typically converges in few iterations.
 
----
+<hr />
 
 ## 5. Floyd-Warshall Algorithm
 
@@ -249,7 +249,7 @@ def floyd_warshall(graph):
 **Handles:** Negative weights (but not negative cycles — detect by checking if
 $\mathrm{dist}[i][i] \lt{} 0$).
 
----
+<hr />
 
 ## 6. Algorithm Selection Guide
 
@@ -264,7 +264,7 @@ $\mathrm{dist}[i][i] \lt{} 0$).
 | Topological sort                 | DFS               | $O(V + E)$           |
 | TSP (approximate)                | Nearest neighbour | $O(n^2)$             |
 
----
+<hr />
 
 ## Problem Set
 
@@ -469,7 +469,7 @@ For revision on graphs, see
 [Graphs](/docs/alevel/computer-science/data-structures/graphs).
 </details>
 
----
+<hr />
 
 ## Problems
 

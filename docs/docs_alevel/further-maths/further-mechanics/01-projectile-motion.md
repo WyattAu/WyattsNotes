@@ -32,7 +32,7 @@ acceleration is $g = 9.8\,\mathrm{m s}^{-2}$ acting vertically downward. Take ca
 conventions — define upward as positive at the start and be consistent.
 :::
 
----
+<hr />
 
 ## 1. Equations of Motion
 
@@ -62,7 +62,7 @@ $$\dot{y} = V\sin\theta - gt$$
 
 $$\ddot{y} = -g$$
 
----
+<hr />
 
 ## 2. The Trajectory Equation
 
@@ -86,7 +86,7 @@ $$\boxed{y = x\tan\theta - \frac{gx^2}{2V^2\cos^2\theta}}$$
 Since this has the form $y = ax - bx^2$ (with $a = \tan\theta$ and
 $b = \frac{g}{2V^2\cos^2\theta}$), the trajectory is a parabola opening downward. $\blacksquare$
 
----
+<hr />
 
 ## 3. Key Results
 
@@ -139,7 +139,7 @@ both produce $R = \dfrac{V^2\sin 2\theta}{g}$. However, the trajectories are dif
 angle gives a higher but shorter arc.
 :::
 
----
+<hr />
 
 ## 4. Projection on Inclined Planes
 
@@ -195,7 +195,7 @@ plane and $n$ perpendicular:
 
 The projectile lands on the plane when $n = 0$.
 
----
+<hr />
 
 ## 5. Velocity at Any Point
 
@@ -209,7 +209,7 @@ The direction of motion is at angle $\phi$ to the horizontal where:
 
 $$\tan\phi = \frac{v_y}{v_x} = \frac{V\sin\theta - gt}{V\cos\theta} = \tan\theta - \frac{gt}{V\cos\theta}$$
 
----
+<hr />
 
 ## Problems
 
@@ -409,7 +409,7 @@ Section 2.
 
 </details>
 
----
+<hr />
 
 ## 6. Maximum Range: Rigorous Proof from the Trajectory Equation
 
@@ -439,7 +439,7 @@ So the maximum is confirmed. Substituting $\theta = 45^\circ$:
 
 $$R_{\max} = \frac{V^2\sin 90°}{g} = \frac{V^2}{g}$$
 
----
+<hr />
 
 ## 7. Projectile from a Height: Full Trajectory Analysis
 
@@ -526,7 +526,7 @@ $= \sqrt{12.99^2 + 32.19^2} = \sqrt{168.7 + 1036.2} = \sqrt{1204.9} \approx 34.7
 
 **Angle below horizontal:** $\arctan(32.19/12.99) \approx 68.1^\circ$.
 
----
+<hr />
 
 ## 8. Worked Example: Range on an Inclined Plane
 
@@ -549,7 +549,7 @@ $$= \frac{1800 \times 0.3290 \times (1.4281 - 0.3640)}{9.8} = \frac{1800 \times 
 
 $$T = \frac{x}{V\cos\theta} = \frac{64.3}{30\cos 55°} = \frac{64.3}{17.21} \approx 3.74\,\mathrm{s}$$
 
----
+<hr />
 
 ## 9. Time of Flight Derivation for Inclined Planes
 
@@ -567,7 +567,7 @@ Similarly:
 
 $$\boxed{T = \frac{2V\cos\theta(\tan\theta + \tan\alpha)}{g} = \frac{2V\sin(\theta + \alpha)}{g\cos\alpha}}$$
 
----
+<hr />
 
 ## 10. Common Pitfalls
 
@@ -615,7 +615,7 @@ Always check that your answer makes physical sense:
 - The angle of impact should be steeper than the angle of projection (for horizontal ground
   launches)
 
----
+<hr />
 
 ## 11. Problem Set
 

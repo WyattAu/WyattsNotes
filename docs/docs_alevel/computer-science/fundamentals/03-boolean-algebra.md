@@ -78,7 +78,7 @@ We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:
 | 1   | 0   | 0                  |
 | 1   | 1   | 0                  |
 
----
+<hr />
 
 ## 2. Boolean Algebra Laws
 
@@ -150,7 +150,7 @@ Expanding:
 $= \bar{A}A + \bar{A}\bar{B} + AB + B\bar{B} = 0 + \bar{A}\bar{B} + AB + 0 = AB + \bar{A}\bar{B} = A \odot B$.
 $\square$
 
----
+<hr />
 
 ## 3. Karnaugh Maps (K-Maps)
 
@@ -296,7 +296,7 @@ Board-specific
 - **Edexcel** covers truth tables, logic gates, and Boolean algebra
 :::
 
----
+<hr />
 
 ## 4. Logic Gate Diagrams
 
@@ -318,7 +318,7 @@ Exam technique When drawing logic circuits from a Boolean expression:
 4. Label all intermediate and output signals
 :::
 
----
+<hr />
 
 ## 5. Adder Circuits
 
@@ -411,7 +411,7 @@ $\Delta$ (typically 2-3 gate delays). Total delay for the $n$-bit ripple-carry a
 This is the primary disadvantage: the worst-case delay is proportional to the number of bits. Faster
 adders (carry-lookahead, carry-select) reduce this to $O(\log n)$.
 
----
+<hr />
 
 ## 6. D-Type Flip-Flop
 
@@ -432,7 +432,7 @@ D-type flip-flops are the fundamental building blocks of:
 - **Counters:** D-FFs with feedback logic
 - **Memory cells:** SRAM cells use cross-coupled inverters (latches)
 
----
+<hr />
 
 ## 7. Drawing and Simplifying Logic Circuits
 
@@ -450,7 +450,7 @@ Exam technique For K-maps with don't-care conditions (X), treat X as 1 if it hel
 larger group, and 0 otherwise. This minimises the expression.
 :::
 
----
+<hr />
 
 ## Problem Set
 

@@ -23,7 +23,7 @@ The formula booklet gives the formula for PMCC and the least squares regression 
 must be able to interpret these and understand their limitations.
 :::
 
----
+<hr />
 
 ## 1. Pearson's Product Moment Correlation Coefficient (PMCC)
 
@@ -69,7 +69,7 @@ where linearity breaks down.
 prediction is imprecise — a student studying 10 hours could score anywhere on a wide range. This
 illustrates that even a moderate $r$ does not guarantee accurate individual predictions.
 
----
+<hr />
 
 ## 2. Spearman's Rank Correlation Coefficient
 
@@ -111,7 +111,7 @@ rank is the natural choice regardless of whether PMCC could technically be compu
 psychology study measuring agreement between two raters on a Likert scale, Spearman's is the
 standard choice.
 
----
+<hr />
 
 ## 3. Least Squares Regression
 
@@ -143,7 +143,7 @@ $$\boxed{b = \frac{S_{xy}}{S_{xx}} = \frac{\sum x_i y_i - n\bar{x}\bar{y}}{\sum 
 
 $$\boxed{a = \bar{y} - b\bar{x}}$$
 
----
+<hr />
 
 ## 4. The Regression Line Passes Through $(\bar{x}, \bar{y})$
 
@@ -160,7 +160,7 @@ So $(\bar{x}, \bar{y})$ lies on the regression line. $\blacksquare$
 — the best-fit line should balance the data around it, just as the mean balances a univariate
 dataset.
 
----
+<hr />
 
 ## 5. Interpreting Regression
 
@@ -236,7 +236,7 @@ effects that linear models cannot capture.
 this range are unreliable. In exam questions, you will typically lose marks if you extrapolate
 without commenting on the limitation.
 
----
+<hr />
 
 ## 6. Coding in Regression
 
@@ -274,7 +274,7 @@ The gradient $b = 70$ means each additional GBP spent on advertising is associat
 of GBP 70 in revenue. The PMCC calculated from the coded data would be identical to the PMCC from
 the original data.
 
----
+<hr />
 
 ## Problem Set
 

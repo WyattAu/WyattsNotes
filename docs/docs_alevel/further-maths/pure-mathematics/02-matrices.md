@@ -26,7 +26,7 @@ transformations of the plane and space.
 | OCR (A) | Paper 1 | 2D transformations, $3\times3$ matrices                 |
 | CIE     | P1      | 2D and basic 3D transformations, inverses, determinants |
 
----
+<hr />
 
 ## 1. Matrix Notation and Operations
 
@@ -72,7 +72,7 @@ Matrix multiplication is not commutative. Always check the order: $\mathbf{AB}$ 
 is applied first.
 :::
 
----
+<hr />
 
 ## 2. Determinants
 
@@ -125,7 +125,7 @@ $$
 Composing two transformations multiplies their area/volume scaling factors, which is why
 determinants multiply.
 
----
+<hr />
 
 ## 3. Inverse Matrices
 
@@ -191,7 +191,7 @@ $$\mathbf{A}^{-1} = \frac{1}{7}\begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 
 
 </details>
 
----
+<hr />
 
 ## 4. Solving Systems of Linear Equations
 
@@ -234,7 +234,7 @@ $$\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \frac{1}{7}\begin{pmatrix} 1 & -2 
 
 </details>
 
----
+<hr />
 
 ## 5. Matrix Transformations in 2D
 
@@ -323,7 +323,7 @@ transformation.
 
 </details>
 
----
+<hr />
 
 ## 6. Matrix Transformations in 3D
 
@@ -361,7 +361,7 @@ $\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & -1 \end{pmatrix}$
 
 Each has $\det = -1$, confirming orientation reversal.
 
----
+<hr />
 
 ## 7. Eigenvalues and Eigenvectors
 
@@ -440,7 +440,7 @@ $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$.
 
 </details>
 
----
+<hr />
 
 ## 8. Summary of Key Results
 
@@ -454,7 +454,7 @@ $$\boxed{\mathrm{Reflection in } y = (\tan\theta)x: \begin{pmatrix} \cos 2\theta
 
 $$\boxed{\det(\mathbf{A} - \lambda\mathbf{I}) = 0 \implies \mathrm{eigenvalues of } \mathbf{A}}$$
 
----
+<hr />
 
 ## Problems
 
@@ -481,7 +481,7 @@ This confirms $\mathbf{AB} \neq \mathbf{BA}$.
 
 </details>
 
----
+<hr />
 
 **Problem 2.** Find the determinant and inverse of
 $\mathbf{A} = \begin{pmatrix} 2 & 1 & 3 \\ 0 & -1 & 2 \\ 1 & 0 & 1 \end{pmatrix}$.
@@ -516,7 +516,7 @@ $$\mathbf{A}^{-1} = \frac{1}{3}\begin{pmatrix} -1 & -1 & 4 \\ 2 & -1 & -4 \\ 1 &
 
 </details>
 
----
+<hr />
 
 **Problem 3.** Find the matrix representing a reflection in the line $y = \sqrt{3}\,x$, and verify
 that $\mathbf{M}^2 = \mathbf{I}$.
@@ -541,7 +541,7 @@ $$\mathbf{M}^2 = \begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqr
 
 </details>
 
----
+<hr />
 
 **Problem 4.** The triangle with vertices $(0, 0)$, $(2, 0)$, $(0, 1)$ is transformed by the matrix
 $\mathbf{T} = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$. Find the coordinates of the vertices of
@@ -570,7 +570,7 @@ $\det(\mathbf{T}) = 6$, and $|\det(\mathbf{T})| \times \mathrm{original area} = 
 
 </details>
 
----
+<hr />
 
 **Problem 5.** Solve the system of equations using matrices:
 
@@ -604,7 +604,7 @@ So $x = \dfrac{4}{5}$, $y = 3$, $z = \dfrac{8}{5}$.
 
 </details>
 
----
+<hr />
 
 **Problem 6.** Find the single $2 \times 2$ matrix that represents an enlargement by scale factor 2
 about the origin followed by a rotation of $90^\circ$ anticlockwise. Show that this is equivalent to a
@@ -639,7 +639,7 @@ because scalar multiples of the identity commute with all matrices.
 
 </details>
 
----
+<hr />
 
 **Problem 7.** AQA only. Find the eigenvalues and corresponding eigenvectors of
 $\mathbf{A} = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$, and write down a matrix $\mathbf{P}$
@@ -674,7 +674,7 @@ $$\mathbf{P} = \begin{pmatrix} 4 & 1 \\ 1 & -1 \end{pmatrix}, \quad \mathbf{D} =
 
 </details>
 
----
+<hr />
 
 **Problem 8.** AQA only. The matrix $\mathbf{A} = \begin{pmatrix} 3 & -2 \\ 1 & 0 \end{pmatrix}$ has
 eigenvalues 1 and 2. Use this to compute $\mathbf{A}^5$ without multiplying matrices five times.
@@ -710,7 +710,7 @@ $$\mathbf{A}^5 = \mathbf{P}\mathbf{D}^5\mathbf{P}^{-1} = \begin{pmatrix} 1 & 2 \
 
 </details>
 
----
+<hr />
 
 **Problem 9.** Find the $3 \times 3$ matrix representing a rotation of $90^\circ$ anticlockwise about the
 $z$-axis. Verify that this matrix has determinant 1 and that it maps
@@ -736,7 +736,7 @@ The $x$-axis is correctly rotated to the $y$-axis by a $90^\circ$ anticlockwise 
 
 </details>
 
----
+<hr />
 
 **Problem 10.** Prove that if $\mathbf{A}$ and $\mathbf{B}$ are non-singular $n \times n$ matrices,
 then $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$.

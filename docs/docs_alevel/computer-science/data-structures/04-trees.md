@@ -40,7 +40,7 @@ more subtrees, each of which is itself a tree.
 new node as a child of an existing node adds exactly one edge. So a tree with $n$ nodes has
 $(n-1) + 1 - 1 = n - 1$ edges. $\square$
 
----
+<hr />
 
 ## 2. Binary Trees
 
@@ -72,7 +72,7 @@ $h \geq \lceil \log_2(n+1) \rceil - 1 = \lfloor \log_2 n \rfloor$. $\square$
 | Complete | All levels except possibly the last are completely filled; last level filled left to right |
 | Perfect  | All internal nodes have 2 children; all leaves at the same depth                           |
 
----
+<hr />
 
 ## 3. Binary Search Trees (BST)
 
@@ -168,7 +168,7 @@ $s \gt{} \mathrm{root.key}$ and all keys in the left subtree are $\lt{} \mathrm{
 After replacing root's key with $s$'s key and deleting $s$ from the right subtree (which is case 1
 or 2), the BST property holds. $\square$
 
----
+<hr />
 
 ## 4. Tree Traversals
 
@@ -238,7 +238,7 @@ inductive hypothesis, each subtree's output is sorted. Hence the full output is 
 - Level-order: 8, 3, 10, 1, 6, 14, 4, 7, 13
 </details>
 
----
+<hr />
 
 ## 5. Heaps and Heap Sort
 
@@ -323,7 +323,7 @@ $$T(n) = O(n) + \sum_{i=2}^{n} O(\log i) = O(n) + O\left(\sum_{i=1}^{n} \log i\r
 **Space:** $O(1)$ — in-place. **Stability:** Not stable (swaps can change relative order of equal
 elements). $\square$
 
----
+<hr />
 
 ## 6. Balanced BSTs (Overview)
 
@@ -343,7 +343,7 @@ Board-specific A Level exams typically only require understanding of basic BSTs 
 AVL trees and red-black trees are mentioned for context but not examined in detail.
 :::
 
----
+<hr />
 
 ## Problem Set
 
@@ -606,7 +606,7 @@ Parent of node 5 (index 4): parent index = $\lfloor(4-1)/2\rfloor = 1$ → value
 For revision on sorting, see
 [Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms).
 
----
+<hr />
 
 ## Problems
 

@@ -24,7 +24,7 @@ distributions, and the normal distribution function. You must know when to use e
 how to find probabilities.
 :::
 
----
+<hr />
 
 ## 1. Discrete Random Variables
 
@@ -41,7 +41,7 @@ probabilities $P(X = x_i) = p_i$ satisfying:
 $$E(X) = \mu = \sum x_i\,p_i$$
 $$\mathrm{Var}(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2\,p_i - \mu^2$$
 
----
+<hr />
 
 ## 2. The Binomial Distribution
 
@@ -127,7 +127,7 @@ Now $E(X^2) = E(X(X-1)) + E(X) = n(n-1)p^2 + np$.
 
 $$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p) \quad \blacksquare$$
 
----
+<hr />
 
 ## 3. The Normal Distribution
 
@@ -178,7 +178,7 @@ Always apply the continuity correction when approximating a discrete distributio
 direction.
 :::
 
----
+<hr />
 
 ## 4. The Poisson Distribution
 
@@ -290,7 +290,7 @@ complementary: Poisson handles the case of many trials with rare success, while 
 case of many trials with moderate success probability.
 :::
 
----
+<hr />
 
 ## 5. Choosing the Right Distribution
 
@@ -300,7 +300,7 @@ case of many trials with moderate success probability.
 | Events in continuous interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
 | Continuous, bell-shaped                    | Normal $N(\mu,\sigma^2)$     |
 
----
+<hr />
 
 ## 6. Coding of Random Variables
 
@@ -356,7 +356,7 @@ $$\mathrm{SD}(Y) = |a|\,\mathrm{SD}(X)$$
 The absolute value ensures the standard deviation remains non-negative regardless of the sign of
 $a$.
 
----
+<hr />
 
 ## Problem Set
 

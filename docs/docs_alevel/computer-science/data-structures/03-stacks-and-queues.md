@@ -98,7 +98,7 @@ Exam tip Stack push/pop always operate at the **head** of the linked list (not t
 $O(1)$ time. Pushing at the tail would require traversal.
 :::
 
----
+<hr />
 
 ## 2. Queues (FIFO)
 
@@ -196,7 +196,7 @@ Board-specific
 - **Edexcel** covers stack and queue ADTs with pseudocode
 :::
 
----
+<hr />
 
 ## 3. Applications of Stacks
 
@@ -320,7 +320,7 @@ Verification: $5 + ((1 + 2) \times 4) - 3 = 5 + 12 - 3 = 14$ ✓
 Result: `3 4 + 5 *` ✓
 </details>
 
----
+<hr />
 
 ## 4. Applications of Queues
 
@@ -338,7 +338,7 @@ Operating systems use queues to manage print jobs, CPU scheduling (round-robin),
 Queues buffer data between producers and consumers operating at different speeds (e.g., keyboard
 buffer, network packet buffer).
 
----
+<hr />
 
 ## 5. Priority Queues
 
@@ -356,7 +356,7 @@ dequeued in priority order (highest first, or lowest first).
 | Linked list    | $O(1)$ or $O(n)$ | $O(1)$ or $O(n)$ | Depends on approach         |
 | Binary heap    | $O(\log n)$      | $O(\log n)$      | Optimal for general use     |
 
----
+<hr />
 
 ## 6. Stack vs Queue Comparison
 
@@ -368,7 +368,7 @@ dequeued in priority order (highest first, or lowest first).
 | Peek      | top element          | front element              |
 | Use cases | Recursion, undo, RPN | BFS, scheduling, buffering |
 
----
+<hr />
 
 ## Problem Set
 
@@ -586,7 +586,7 @@ For revision on complexity analysis, see
 [Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis).
 </details>
 
----
+<hr />
 
 ## Problems
 

@@ -32,7 +32,7 @@ requirements and to identify defects.
 | Focus    | Conformance to specification         | Meets user needs and expectations    |
 | Activity | Reviews, inspections, walkthroughs   | Testing with real-world scenarios    |
 
----
+<hr />
 
 ## 2. Levels of Testing
 
@@ -102,7 +102,7 @@ Board-specific
 - **Edexcel** covers testing types and test data design
 :::
 
----
+<hr />
 
 ## 3. Black-Box Testing
 
@@ -157,7 +157,7 @@ Test the transitions between states of a system that can be in different states.
 
 Example: A login system has states: Logged Out → Authenticating → Logged In → Locked.
 
----
+<hr />
 
 ## 4. White-Box Testing
 
@@ -197,7 +197,7 @@ but only 50% branch coverage (the false branch of the if-statement is never take
 
 **Theorem.** 100% path coverage is infeasible for programs with loops (exponentially many paths).
 
----
+<hr />
 
 ## 5. Test-Driven Development (TDD)
 
@@ -214,7 +214,7 @@ but only 50% branch coverage (the false branch of the if-statement is never take
 - Confidence in refactoring
 - Self-documenting code through tests
 
----
+<hr />
 
 ## 6. Traceability
 
@@ -229,7 +229,7 @@ Requirement → Design → Code → Test Case → Test Result
 
 A **traceability matrix** maps each requirement to the test cases that verify it.
 
----
+<hr />
 
 ## Problem Set
 
@@ -471,7 +471,7 @@ For revision on software development, see
 
 </details>
 
----
+<hr />
 
 ## 7. Worked Examples: Writing Test Cases
 
@@ -535,7 +535,7 @@ A stack has a maximum capacity of 5 elements. Operations: `push(item)`, `pop()`,
 | Pop then push        | Push 5, pop 1, push 1          | Stack has 5 items, no error |
 | Order preserved      | Push 1, 2, 3; pop twice        | Returns 3, then 2           |
 
----
+<hr />
 
 ## 8. Test-Driven Development Workflow
 
@@ -616,7 +616,7 @@ def test_is_prime():
 | Living documentation   | Tests demonstrate how the code is intended to be used                             |
 | Smaller code           | Writing only enough code to pass the test discourages over-engineering            |
 
----
+<hr />
 
 ## 9. Common Pitfalls
 
@@ -629,7 +629,7 @@ def test_is_prime():
 | Ignoring non-functional testing | Performance, security, and usability bugs reach production           | Include load tests, security scans, and user acceptance tests                    |
 | Over-reliance on code coverage  | 100% coverage does not mean 100% correctness                         | Combine coverage metrics with manual test design (equivalence partitioning, BVA) |
 
----
+<hr />
 
 ## 10. Additional Problem Set
 

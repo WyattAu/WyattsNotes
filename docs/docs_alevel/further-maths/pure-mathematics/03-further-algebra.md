@@ -26,7 +26,7 @@ differences.
 | OCR (A) | Paper 1 | All topics; summation of series emphasised               |
 | CIE     | P1/P3   | Summation of series required; partial fractions in depth |
 
----
+<hr />
 
 ## 1. Polynomial Division and the Remainder Theorem
 
@@ -82,7 +82,7 @@ Adding (i) and (ii): $4a = 8 \implies a = 2$. Then $b = 3$.
 $P(x) = x^3 + 2x^2 + 3x - 6$.
 </details>
 
----
+<hr />
 
 ## 2. Partial Fractions with Irreducible Quadratics
 
@@ -153,7 +153,7 @@ AQA requires all three types of partial fractions with irreducible quadratics. E
 OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3.
 :::
 
----
+<hr />
 
 ## 3. Roots of Polynomial Equations
 
@@ -222,7 +222,7 @@ $\alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{-4}{2} = -2$.
 $$\alpha^2 + \beta^2 + \gamma^2 = \left(\frac{3}{2}\right)^2 - 2(-2) = \frac{9}{4} + 4 = \frac{25}{4}$$
 </details>
 
----
+<hr />
 
 ## 4. Summation of Series
 
@@ -272,7 +272,7 @@ $$\boxed{\sum_{r=1}^{n} r(r+1)(r+2) = \frac{n(n+1)(n+2)(n+3)}{4}}$$
 
 In general, $\displaystyle\sum_{r=1}^{n} \binom{r+k}{k+1} = \binom{n+k+1}{k+2}$.
 
----
+<hr />
 
 ## 5. Further Summation Techniques
 
@@ -315,7 +315,7 @@ $$\sum_{r=1}^{n} r \cdot a_r = \sum_{r=1}^{n} r[f(r) - f(r-1)] = nf(n) - \sum_{r
 
 This is known as the _summation by parts_ technique.
 
----
+<hr />
 
 ## 6. Proofs of Standard Summation Formulae
 
@@ -351,7 +351,7 @@ summation formulae. Edexcel FP2 requires summation of series including method of
 covers summation in the context of mathematical induction.
 :::
 
----
+<hr />
 
 ## 7. Summary of Key Results
 
@@ -365,7 +365,7 @@ $$\boxed{\sum_{r=1}^{n} r = \frac{n(n+1)}{2}, \quad \sum_{r=1}^{n} r^2 = \frac{n
 
 $$\boxed{\sum_{r=1}^{n} [g(r) - g(r+1)] = g(1) - g(n+1)}$$
 
----
+<hr />
 
 ## Problems
 
@@ -394,7 +394,7 @@ Setting $x = 1$: $2 + 3 + 4 = 5A + (B - 1)(3) = 6 + 3B - 3 \implies 9 = 3 + 3B \
 $$\frac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)} = \frac{6/5}{x + 2} + \frac{2x - 1}{x^2 + 2x + 5}$$
 </details>
 
----
+<hr />
 
 **Problem 2.** The equation $x^3 - 4x^2 + x + 6 = 0$ has roots $\alpha, \beta, \gamma$. Find the
 value of $\dfrac{1}{\alpha\beta} + \dfrac{1}{\alpha\gamma} + \dfrac{1}{\beta\gamma}$.
@@ -413,7 +413,7 @@ $\alpha + \beta + \gamma = \dfrac{-(-4)}{1} = 4$ and $\alpha\beta\gamma = \dfrac
 $$\frac{1}{\alpha\beta} + \frac{1}{\alpha\gamma} + \frac{1}{\beta\gamma} = \frac{\alpha + \beta + \gamma}{\alpha\beta\gamma} = \frac{4}{-6} = -\frac{2}{3}$$
 </details>
 
----
+<hr />
 
 **Problem 3.** Express $\dfrac{3x + 1}{(x^2 + 1)(x^2 + 4)}$ in partial fractions.
 
@@ -447,7 +447,7 @@ From $B + D = 0$ and $4B + D = 1$: $3B = 1 \implies B = \dfrac{1}{3}, D = -\dfra
 $$\frac{3x + 1}{(x^2 + 1)(x^2 + 4)} = \frac{x + 1/3}{x^2 + 1} + \frac{-x - 1/3}{x^2 + 4}$$
 </details>
 
----
+<hr />
 
 **Problem 4.** Find $\displaystyle\sum_{r=1}^{n} \frac{2}{r(r+1)(r+2)}$.
 
@@ -471,7 +471,7 @@ $$\sum_{r=1}^{n}\left[\frac{1}{r(r+1)} - \frac{1}{(r+1)(r+2)}\right] = \frac{1}{
 $$= \frac{1}{2} - \frac{1}{(n+1)(n+2)}$$
 </details>
 
----
+<hr />
 
 **Problem 5.** The equation $3x^3 + px^2 + qx + 12 = 0$ has roots $\alpha, \beta, \gamma$ such that
 $\alpha + \beta + \gamma = 4$ and $\alpha\beta\gamma = -4$. Find $p$, $q$, and
@@ -507,7 +507,7 @@ product = $-6$ ✗.
 $p = -12$ and $q = 3S$ where $S$ requires more information about the roots.
 </details>
 
----
+<hr />
 
 **Problem 6.** Find $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+3)}$.
 
@@ -530,7 +530,7 @@ $\dfrac{1}{1} + \dfrac{1}{2} + \dfrac{1}{3} - \dfrac{1}{n+1} - \dfrac{1}{n+2} - 
 $$= \frac{1}{3}\left(\frac{11}{6} - \frac{1}{n+1} - \frac{1}{n+2} - \frac{1}{n+3}\right) = \frac{11}{18} - \frac{1}{3}\!\left(\frac{1}{n+1} + \frac{1}{n+2} + \frac{1}{n+3}\right)$$
 </details>
 
----
+<hr />
 
 **Problem 7.** The polynomial $P(x) = x^4 + ax^3 + bx^2 + cx + d$ has roots
 $\alpha, \beta, \gamma,
@@ -559,7 +559,7 @@ We need $\gamma\delta$. Since we don't have $\gamma\delta$ directly, $b = -13 + 
 $a = 2$ and $b$ depends on $\gamma\delta$ (which requires further information to determine).
 </details>
 
----
+<hr />
 
 **Problem 8.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r(r+1) = \frac{n(n+1)(n+2)}{3}$
 for all $n \in \mathbb{Z}^+$.
@@ -584,7 +584,7 @@ $$= \frac{(k+1)(k+2)[k + 3]}{3} = \frac{(k+1)(k+2)(k+3)}{3}$$
 ✓ $\square$
 </details>
 
----
+<hr />
 
 **Problem 9.** Express $\dfrac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2}$ in partial fractions.
 
@@ -611,7 +611,7 @@ Comparing coefficients:
 $$\frac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2} = \frac{1}{x^2 + 2x + 3} + \frac{x - 1}{(x^2 + 2x + 3)^2}$$
 </details>
 
----
+<hr />
 
 **Problem 10.** The cubic equation $x^3 + px^2 + qx + r = 0$ has roots $\alpha, \beta, \gamma$ where
 $\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$, $q$, and $r$ in terms of $\alpha$, and hence

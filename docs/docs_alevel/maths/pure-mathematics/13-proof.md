@@ -23,7 +23,7 @@ Proof questions appear on every paper. You must be able to identify the appropri
 method and execute it clearly, with every step justified.
 :::
 
----
+<hr />
 
 ## 1. Proof by Deduction
 
@@ -57,7 +57,7 @@ $$2S_n = n[2a + (n-1)d] \implies S_n = \frac{n}{2}[2a + (n-1)d] \quad \blacksqua
 
 $$(a-b)(a+b) = a^2 + ab - ab - b^2 = a^2 - b^2 \quad \blacksquare$$
 
----
+<hr />
 
 ## 2. Proof by Contradiction
 
@@ -112,7 +112,7 @@ $$2^{a/b} = 3 \implies 2^a = 3^b$$
 
 Since $2^a$ is even and $3^b$ is odd, this is a contradiction. $\blacksquare$
 
----
+<hr />
 
 ## 3. Proof by Exhaustion
 
@@ -152,7 +152,7 @@ Proof by exhaustion is only valid when the number of cases is genuinely finite a
 manageable. You cannot use exhaustion for "all integers" or "all real numbers."
 :::
 
----
+<hr />
 
 ## 4. Disproof by Counterexample
 
@@ -170,7 +170,7 @@ roots (discriminant $= -4 \lt{} 0$).
 **Claim.** "If $n$ is prime, then $2^n - 1$ is prime." Counterexample: $n = 11$ is prime, but
 $2^{11}-1 = 2047 = 23 \times 89$.
 
----
+<hr />
 
 ## 5. Proof by Mathematical Induction
 
@@ -292,7 +292,7 @@ $(k+1)! = (k+1) \cdot k! \gt{} (k+1) \cdot 2^k \geq 5 \cdot 2^k \gt{} 2 \cdot 2^
 
 Since $k \geq 4$, we have $k+1 \geq 5 \gt{} 2$. ✓ $\blacksquare$
 
----
+<hr />
 
 ## 6. Proof Structures and Logic
 
@@ -307,7 +307,7 @@ Since $k \geq 4$, we have $k+1 \geq 5 \gt{} 2$. ✓ $\blacksquare$
 - The **converse** of $P \implies Q$ is $Q \implies P$ (not logically equivalent).
 - The **contrapositive** of $P \implies Q$ is $\neg Q \implies \neg P$ (logically equivalent).
 
----
+<hr />
 
 ## Problem Set
 

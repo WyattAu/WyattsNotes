@@ -87,7 +87,7 @@ class StaticArray:
         return self._size
 ```
 
----
+<hr />
 
 ## 2. Two-Dimensional Arrays
 
@@ -131,7 +131,7 @@ $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$
 **Proof.** The address is computed with two multiplications and two additions:
 $b + (i \cdot n + j) \cdot s$. All are constant-time operations. $\square$
 
----
+<hr />
 
 ## 3. Static vs Dynamic Arrays
 
@@ -194,7 +194,7 @@ class DynamicArray:
 | Append       | N/A (fixed size)  | $O(1)$ amortised         |
 | Memory waste | Exact allocation  | Up to 2× allocated       |
 
----
+<hr />
 
 ## 4. Records (Structs)
 
@@ -264,7 +264,7 @@ Board-specific
 - **Edexcel** covers arrays and records with pseudocode implementations
 :::
 
----
+<hr />
 
 ## 5. Bounds Checking
 
@@ -280,7 +280,7 @@ Pitfall In C and C++, array access is **not** bounds-checked by default. Accessi
 bounds checking.
 :::
 
----
+<hr />
 
 ## 6. Arrays of Records
 
@@ -301,7 +301,7 @@ def average_grade(student):
 **Complexity.** Accessing field $f$ of record $i$ in an array: $O(1)$ — compute array offset, then
 add field offset.
 
----
+<hr />
 
 ## Problem Set
 
@@ -404,7 +404,7 @@ For revision on searching, see
 [Searching Algorithms](/docs/alevel/computer-science/algorithms/searching-algorithms).
 </details>
 
----
+<hr />
 
 ## Problems
 

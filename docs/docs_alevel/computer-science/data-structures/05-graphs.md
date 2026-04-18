@@ -38,7 +38,7 @@ $E \subseteq V \times V$.
 **Proof.** Each edge contributes 1 to the degree of each of its two endpoints. Summing degrees
 counts each edge exactly twice. $\square$
 
----
+<hr />
 
 ## 2. Graph Representations
 
@@ -107,7 +107,7 @@ Board-specific
 - **Edexcel** covers basic graph representations and traversals
 :::
 
----
+<hr />
 
 ## 3. Graph Traversals
 
@@ -184,7 +184,7 @@ def dfs(graph, start):
 | Memory         | $O(V)$ (queue)             | $O(V)$ (recursion stack)                                |
 | Use cases      | Shortest path, level order | Cycle detection, topological sort, connected components |
 
----
+<hr />
 
 ## 4. Dijkstra's Algorithm
 
@@ -247,7 +247,7 @@ Pitfall Dijkstra's algorithm **does not work** with negative edge weights. Use t
 Bellman-Ford algorithm instead for graphs that may contain negative weights.
 :::
 
----
+<hr />
 
 ## 5. Minimum Spanning Tree (MST)
 
@@ -346,7 +346,7 @@ from non-MST vertices, and the algorithm selects the minimum-weight crossing edg
 
 **Complexity:** $O((V + E) \log V)$ with a binary heap.
 
----
+<hr />
 
 ## 6. Topological Sort
 
@@ -376,7 +376,7 @@ def topological_sort(graph):
 
 **Complexity:** $O(V + E)$.
 
----
+<hr />
 
 ## Problem Set
 

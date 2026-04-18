@@ -88,7 +88,7 @@ Solution: $x = 2$, $y = 3$.
 
 </details>
 
----
+<hr />
 
 ## 2. Linear-Quadratic Simultaneous Equations
 
@@ -134,7 +134,7 @@ $\Delta = 496 > 0$, so the line intersects the circle at two points.
 :::tip Always substitute the _linear_ equation into the _quadratic_ one. The reverse would create a
 quadratic in both variables, which is harder to solve. :::
 
----
+<hr />
 
 ## 3. Algebraic Inequalities
 
@@ -191,7 +191,7 @@ Solution: $x \in (-\infty, -3) \cup [4, \infty)$.
 
 </details>
 
----
+<hr />
 
 ## 4. Graphical Inequalities
 
@@ -229,7 +229,7 @@ $x = 2$, $y = 4$. So the third vertex is $(2, 4)$.
 
 </details>
 
----
+<hr />
 
 ## 5. Rigorous Treatment of Inequality Manipulation
 
@@ -265,7 +265,7 @@ _Intuition._ Consider $a = 2$, $b = 4$. Then $\frac{1}{2} > \frac{1}{4}$. The sm
 number, the larger its reciprocal — like how slicing a cake into more pieces makes each piece
 smaller.
 
----
+<hr />
 
 ## 6. Polynomial Equations
 
@@ -340,7 +340,7 @@ So $f(x) = (x - 1)(2x - 1)(x + 2)$.
 $f(x) = x^n + \cdots + c$, the possible rational roots are $\pm 1, \pm 2, \ldots$ (factors of $c$).
 :::
 
----
+<hr />
 
 ## 7. Systems of Three Linear Equations
 
@@ -428,7 +428,7 @@ Solution: $x = \frac{1}{2}, \; y = \frac{5}{2}, \; z = \frac{5}{2}$.
 
 </details>
 
----
+<hr />
 
 ## 8. Modulus Inequalities
 
@@ -493,7 +493,7 @@ No real solution from this case.
 inequality $|f(x)| \lt g(x)$ only makes sense when $g(x) \gt 0$, and squaring preserves the
 direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$. :::
 
----
+<hr />
 
 ## 9. Absolute Value (Modulus) Properties
 
@@ -554,7 +554,7 @@ In all cases, $|a + b| \leq |a| + |b|$. $\blacksquare$
 _Intuition._ On the number line, going from the origin to $a + b$ directly covers at most as much
 distance as going from the origin to $a$ and then from $a$ to $a + b$.
 
----
+<hr />
 
 ## 10. Problem Set
 
@@ -584,7 +584,7 @@ Solutions: $(3, 4)$ and $\left(\frac{24}{5}, -\frac{7}{5}\right)$.
 </details>
 <b>If you get this wrong, revise:</b> [Linear-quadratic simultaneous equations](#2-linear-quadratic-simultaneous-equations)
 
----
+<hr />
 
 **Problem 2.** Solve $\frac{3}{x - 1} > \frac{2}{x + 1}$.
 
@@ -614,7 +614,7 @@ Solution: $-5 < x < -1$ or $x > 1$.
 </details>
 <b>If you get this wrong, revise:</b> [Inequalities involving fractions](#33-inequalities-involving-fractions)
 
----
+<hr />
 
 **Problem 3.** Show that the simultaneous equations $x + 2y = 1$ and $2x + 4y = 3$ have no solution.
 
@@ -632,7 +632,7 @@ $c_1 \cdot 2 \neq c_2 \cdot 1$ ($2 \neq 3$), they are distinct parallel lines.
 </details>
 <b>If you get this wrong, revise:</b> [Linear simultaneous equations](#1-linear-simultaneous-equations)
 
----
+<hr />
 
 **Problem 4.** Solve the inequality $x^2 - 2x - 15 \leq 0$.
 
@@ -647,7 +647,7 @@ $$-3 \leq x \leq 5$$
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic inequalities](./02-quadratics.md)
 
----
+<hr />
 
 **Problem 5.** Solve the inequality $\frac{1}{x} \leq \frac{1}{x - 2}$.
 
@@ -678,7 +678,7 @@ Solution: $x \in (-\infty, 0) \cup (2, \infty)$.
 </details>
 <b>If you get this wrong, revise:</b> [Reciprocals reverse order](#54-reciprocals-reverse-order-for-positive-numbers)
 
----
+<hr />
 
 **Problem 6.** Find the vertices of the region defined by $x \geq 0$, $y \geq 0$, $2x + y \leq 8$,
 and $x + 2y \leq 8$.
@@ -696,7 +696,7 @@ Vertices: $(0, 0)$, $(4, 0)$, $(0, 4)$, and $\left(\frac{8}{3}, \frac{8}{3}\righ
 </details>
 <b>If you get this wrong, revise:</b> [Graphical inequalities](#4-graphical-inequalities)
 
----
+<hr />
 
 **Problem 7.** Prove that if $a > b > 0$, then $a^2 > b^2$.
 
@@ -712,7 +712,7 @@ $\blacksquare$
 </details>
 <b>If you get this wrong, revise:</b> [Rigorous treatment](#5-rigorous-treatment-of-inequality-manipulation)
 
----
+<hr />
 
 **Problem 8.** Solve the inequality $|2x - 3| \leq 5$.
 
@@ -727,7 +727,7 @@ Dividing by 2: $-1 \leq x \leq 4$.
 </details>
 <b>If you get this wrong, revise:</b> [Modulus function](./05-functions.md)
 
----
+<hr />
 
 **Problem 9.** Given that $x^2 + px + q = 0$ has roots $\alpha$ and $\beta$, and
 $\alpha + \beta = 6$ and $\alpha\beta = 8$, find $p$ and $q$.
@@ -744,7 +744,7 @@ $8$. ✓
 </details>
 <b>If you get this wrong, revise:</b> [Quadratics](./02-quadratics.md)
 
----
+<hr />
 
 **Problem 10.** Solve $x^4 - 5x^2 + 4 = 0$ by treating it as a quadratic in $x^2$.
 
@@ -765,7 +765,7 @@ Solutions: $x = -2, -1, 1, 2$.
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic formula](./02-quadratics.md)
 
----
+<hr />
 
 **Problem 11.** Given that $(x - 2)$ is a factor of $f(x) = x^3 + ax^2 + bx - 12$, and $f(1) = -6$,
 find $a$ and $b$. Hence fully factorise $f(x)$.
@@ -796,7 +796,7 @@ $$f(x) = (x - 2)(x^2 - x + 6)$$
 </details>
 <b>If you get this wrong, revise:</b> [Polynomial equations](#6-polynomial-equations)
 
----
+<hr />
 
 **Problem 12.** Solve the system of equations:
 
@@ -833,7 +833,7 @@ Solution: $x = \frac{13}{7}, \; y = \frac{17}{7}, \; z = \frac{12}{7}$.
 </details>
 <b>If you get this wrong, revise:</b> [Systems of three linear equations](#7-systems-of-three-linear-equations)
 
----
+<hr />
 
 **Problem 13.** Solve $|x^2 - 3x + 1| \geq 2$.
 
@@ -862,7 +862,7 @@ for all real $x$. No solution from this case.
 </details>
 <b>If you get this wrong, revise:</b> [Modulus inequalities](#8-modulus-inequalities)
 
----
+<hr />
 
 **Problem 14.** Find the area of the region defined by $x \geq 0$, $y \geq 0$, $3x + 2y \leq 12$,
 and $x + y \geq 3$.
@@ -888,7 +888,7 @@ $$= \frac{1}{2}\left| 9 - 24 \right| = \frac{15}{2}$$
 </details>
 <b>If you get this wrong, revise:</b> [Graphical inequalities](#4-graphical-inequalities)
 
----
+<hr />
 
 **Problem 15.** Solve the simultaneous equations $x^2 + xy = 10$ and $y^2 + xy = 15$.
 

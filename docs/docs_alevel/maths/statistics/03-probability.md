@@ -23,7 +23,7 @@ Probability questions test logical reasoning as much as formula recall. Always d
 clearly and draw a diagram before calculating.
 :::
 
----
+<hr />
 
 ## 1. Kolmogorov's Axioms
 
@@ -37,7 +37,7 @@ clearly and draw a diagram before calculating.
 These three axioms are the foundation of all probability theory. Every theorem in probability can be
 derived from them.
 
----
+<hr />
 
 ## 2. Basic Probability Results
 
@@ -91,7 +91,7 @@ $\blacksquare$
 
 $$P\!\left(\bigcap_{i=1}^{n} A_i\right) = P(A_1) \cdot P(A_2|A_1) \cdot P(A_3|A_1 \cap A_2) \cdots P(A_n|A_1 \cap \cdots \cap A_{n-1})$$
 
----
+<hr />
 
 ## 3. Conditional Probability
 
@@ -123,7 +123,7 @@ $$P\!\left(\bigcup_i A_i \,\middle|\, B\right) = \frac{P\!\left(\left(\bigcup_i 
 **Proof.** This follows from applying the complement rule within the conditional probability
 measure, which is justified by the theorem above. $\blacksquare$
 
----
+<hr />
 
 ## 4. Bayes' Theorem
 
@@ -153,7 +153,7 @@ positive, what is the probability the patient actually has the disease?" Always 
 clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$).
 :::
 
----
+<hr />
 
 ## 5. Independence
 
@@ -202,7 +202,7 @@ $A$, $B$, $C$ are pairwise independent but not mutually independent since
 $P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$.
 :::
 
----
+<hr />
 
 ## 6. Venn Diagrams and Tree Diagrams
 
@@ -227,7 +227,7 @@ $$P(\mathrm{both red}) = \frac{3}{5} \times \frac{2}{4} = \frac{6}{20} = \frac{3
 
 $$P(\mathrm{one of each}) = \frac{3}{5} \times \frac{2}{4} + \frac{2}{5} \times \frac{3}{4} = \frac{6}{20} + \frac{6}{20} = \frac{12}{20} = \frac{3}{5}$$
 
----
+<hr />
 
 ## 7. Counting Principles
 
@@ -245,7 +245,7 @@ $n! = n(n-1)(n-2)\cdots 1$, with $0! = 1$.
 When all outcomes are equally likely:
 $P(A) = \dfrac{|A|}{|\Omega|} = \dfrac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}$.
 
----
+<hr />
 
 ## 8. Venn Diagrams for Three Events
 
@@ -309,7 +309,7 @@ overlap).
 
 **Check:** $5 + 3 + 1 + 2 + 9 + 5 + 4 + 11 = 40$. $\checkmark$
 
----
+<hr />
 
 ## 9. Multi-Stage Experiments and Tree Diagrams
 
@@ -368,7 +368,7 @@ To find a conditional probability $P(X|Y)$ from a tree diagram:
 4. Sum the relevant path probabilities to get $P(X \cap Y)$.
 5. $P(X|Y) = P(X \cap Y)/P(Y)$.
 
----
+<hr />
 
 ## 10. Discrete Random Variables and Probability Mass Functions
 
@@ -455,7 +455,7 @@ has the same mean but smaller variance, meaning its outcomes are more concentrat
 centre.
 :::
 
----
+<hr />
 
 ## Problem Set
 

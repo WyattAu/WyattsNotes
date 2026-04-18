@@ -31,7 +31,7 @@ The formula booklet lists hyperbolic identities and the logarithmic forms of the
 hyperbolic functions. CIE requires the derivation of these logarithmic forms.
 :::
 
----
+<hr />
 
 ## 1. Definitions
 
@@ -74,7 +74,7 @@ $$\sinh(-x) = -\sinh x \quad (\mathrm{odd function})$$
 
 $$\cosh(-x) = \cosh x \quad (\mathrm{even function})$$
 
----
+<hr />
 
 ## 2. Hyperbolic Identities
 
@@ -151,7 +151,7 @@ Osborn's rule is a useful mnemonic but should not replace understanding. Always 
 identities by direct computation from the exponential definitions when in doubt.
 :::
 
----
+<hr />
 
 ## 3. Inverse Hyperbolic Functions
 
@@ -224,7 +224,7 @@ $$e^{2y}(1-x) = 1+x \implies e^{2y} = \frac{1+x}{1-x}$$
 
 $$2y = \ln\!\left(\frac{1+x}{1-x}\right) \implies y = \frac{1}{2}\ln\!\left(\frac{1+x}{1-x}\right) \quad \blacksquare$$
 
----
+<hr />
 
 ## 4. Calculus with Hyperbolic Functions
 
@@ -305,7 +305,7 @@ $\dfrac{1}{\sqrt{x^2-a^2}}$, the inverse hyperbolic functions provide the most e
 and Edexcel FP2 frequently test these.
 :::
 
----
+<hr />
 
 ## 5. Connection to Circular Functions
 
@@ -344,7 +344,7 @@ $$\sinh x = \tan(\mathrm{gd}\,x), \quad \cosh x = \sec(\mathrm{gd}\,x), \quad \t
 
 $$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac{\pi}{2}$$
 
----
+<hr />
 
 ## 6. Summary of Key Results
 
@@ -362,7 +362,7 @@ $$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac{\pi}{2}
 | $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac{1}{\sqrt{x^2+1}}$ | $\int\dfrac{dx}{\sqrt{x^2+a^2}} = \mathrm{arsinh}\dfrac{x}{a}+C$      |
 | $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$        | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$ |
 
----
+<hr />
 
 ## Problems
 

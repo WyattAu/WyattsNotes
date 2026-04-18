@@ -62,7 +62,7 @@ input).
 
 $\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$
 
----
+<hr />
 
 ## 2. DFA-NFA Equivalence
 
@@ -96,7 +96,7 @@ Board-specific
 - **Edexcel** covers finite state machines and basic automata theory
 :::
 
----
+<hr />
 
 ## 3. Regular Expressions
 
@@ -141,7 +141,7 @@ Choose $s = a^p b^p$. By condition 1, $y$ consists only of $a$'s. Pumping ($i = 
 $xz = a^{p-|y|}b^p$. Since $|y| \geq 1$, $p - |y| \neq p$, so $a^{p-|y|}b^p \notin L$.
 Contradiction. $\square$
 
----
+<hr />
 
 ## 4. Turing Machines
 
@@ -191,7 +191,7 @@ $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
 | $q_3$ | $\sqcup$ | $\sqcup$ | $S$  | $q_{accept}$ |
 | $q_3$ | $b$      | $b$      | $S$  | $q_{reject}$ |
 
----
+<hr />
 
 ## 5. The Church-Turing Thesis
 
@@ -204,7 +204,7 @@ programming languages) can compute exactly the same set of functions as a Turing
 This is a **thesis**, not a theorem — it cannot be proven because "effectively computable" is an
 informal concept. However, no counterexample has ever been found.
 
----
+<hr />
 
 ## 6. The Halting Problem
 
@@ -237,7 +237,7 @@ Both cases lead to contradictions, so $H$ cannot exist. $\square$
 machine that accepts when $M$ halts on $w$, but it cannot always reject when $M$ doesn't halt (it
 would have to run forever).
 
----
+<hr />
 
 ## 7. Decidable and Undecidable Problems
 
@@ -248,7 +248,7 @@ would have to run forever).
 | Undecidable    | No TM can solve it for all inputs                     | Halting problem (full) |
 | Unrecognisable | No TM even semi-decides it                            | Complement of halting  |
 
----
+<hr />
 
 ## 8. P vs NP
 
@@ -305,7 +305,7 @@ A problem is **NP-complete** if:
 | Sudoku (n×n)      | Verify solution in $O(n^2)$  |
 | Graph 3-colouring | Verify colouring in $O(V+E)$ |
 
----
+<hr />
 
 ## Problem Set
 

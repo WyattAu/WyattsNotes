@@ -31,7 +31,7 @@ on percentages or proportions. Always check the conditions (expected frequency $
 applying the test. The formula booklet provides the chi-squared distribution table.
 :::
 
----
+<hr />
 
 ## 1. The Chi-Squared Distribution
 
@@ -60,7 +60,7 @@ $\nu$ degrees of freedom, the critical value $\chi^2_{\alpha,\nu}$ satisfies:
 
 $$P(\chi^2_\nu > \chi^2_{\alpha,\nu}) = \alpha$$
 
----
+<hr />
 
 ## 2. Goodness of Fit Test
 
@@ -156,7 +156,7 @@ Since $1.973 < 7.815$, **do not reject** $H_0$.
 
 There is insufficient evidence to suggest the data does not follow a Poisson distribution.
 
----
+<hr />
 
 ## 3. Test for Independence
 
@@ -226,7 +226,7 @@ Since $37.88 > 9.488$, **reject** $H_0$.
 
 There is strong evidence that age group and preferred news source are not independent.
 
----
+<hr />
 
 ## 4. Chi-Squared Test Procedure Summary
 
@@ -243,7 +243,7 @@ Never use percentages or proportions in the chi-squared test — always use raw
 frequencies. The test relies on the multinomial distribution, which requires count data.
 :::
 
----
+<hr />
 
 ## Problems
 
@@ -465,7 +465,7 @@ a normal distribution.
 
 </details>
 
----
+<hr />
 
 ## 5. Yates' Correction: When and Why
 
@@ -494,7 +494,7 @@ This reduces the test statistic, making it harder to reject $H_0$.
 Yates' correction can be **overly conservative** — it may fail to detect a real association. For
 very small samples, Fisher's exact test is preferred (but this is beyond the A-Level syllabus).
 
----
+<hr />
 
 ## 6. Worked Examples
 
@@ -587,7 +587,7 @@ $$= 15.21 + 5.07 + 7.605 + 2.535 = 30.42$$
 
 Still highly significant ($30.42 > 6.635$).
 
----
+<hr />
 
 ## 7. Degrees of Freedom: Systematic Calculation
 
@@ -626,7 +626,7 @@ accounting for constraints. In a contingency table:
 
 This gives $(r-1)(c-1)$ free cells.
 
----
+<hr />
 
 ## 8. Interpretation: What "Significant" Means
 
@@ -655,7 +655,7 @@ A significant chi-squared test tells you the observed data is unlikely under $H_
 tell you **how** the data differs or whether the difference is meaningful. Always inspect the
 observed vs expected frequencies to understand the nature of any discrepancy.
 
----
+<hr />
 
 ## 9. Relationship to the Normal Approximation
 
@@ -684,7 +684,7 @@ $$z = \frac{\chi^2 - \nu}{\sqrt{2\nu}} \sim N(0,1) \quad \mathrm{approximately}$
 
 This approximation is useful when chi-squared tables do not list the required $\nu$ value.
 
----
+<hr />
 
 ## 10. Common Pitfalls
 
@@ -723,7 +723,7 @@ The chi-squared test is inherently one-tailed (right-tailed only). Large values 
 discrepancy from $H_0$. Small values (close to 0) indicate good fit and are **not** significant.
 There is no such thing as a "left-tailed" chi-squared test.
 
----
+<hr />
 
 ## 11. Problem Set
 

@@ -32,7 +32,7 @@ two common conventions for the support: $r = 1, 2, 3, \ldots$ (number of trials)
 $r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$.
 :::
 
----
+<hr />
 
 ## 1. The Poisson Distribution
 
@@ -153,7 +153,7 @@ $P(X \geq 11) = 1 - 0.9830 = 0.0170 \leq 0.025$. So $X \geq 11$.
 
 Critical region: $X \leq 0$ or $X \geq 11$.
 
----
+<hr />
 
 ## 2. The Geometric Distribution
 
@@ -268,7 +268,7 @@ $P(X \geq 9) = 0.7^8 \approx 0.0576 > 0.05$. $P(X \geq 10) = 0.7^9 \approx 0.040
 
 Critical region: $X \geq 10$.
 
----
+<hr />
 
 ## 3. Modelling with Poisson and Geometric Distributions
 
@@ -304,7 +304,7 @@ not confuse this with the normal approximation to the binomial, which requires $
 $n(1-p) > 5$.
 :::
 
----
+<hr />
 
 ## Problems
 

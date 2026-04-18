@@ -23,7 +23,7 @@ Momentum is a vector quantity. Always define a positive direction and be consist
 signs.
 :::
 
----
+<hr />
 
 ## 1. Linear Momentum
 
@@ -35,7 +35,7 @@ $$\mathbf{p} = m\mathbf{v}$$
 
 Momentum is a vector with SI units kg m/s.
 
----
+<hr />
 
 ## 2. Conservation of Momentum
 
@@ -62,7 +62,7 @@ So $\mathbf{p}_A + \mathbf{p}_B = \mathrm{constant}$. $\blacksquare$
 an equal and opposite reaction). If two bodies collide, the momentum gained by one equals the
 momentum lost by the other.
 
----
+<hr />
 
 ## 3. Impulse
 
@@ -92,7 +92,7 @@ The impulse equals the area under a force-time graph. For a variable force:
 
 $$J = \int_{t_1}^{t_2}F(t)\,dt$$
 
----
+<hr />
 
 ## 4. Collisions
 
@@ -108,7 +108,7 @@ $$m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$$
 Resolve momentum into perpendicular components. Conservation applies in each direction
 independently.
 
----
+<hr />
 
 ## 5. Coefficient of Restitution
 
@@ -182,7 +182,7 @@ An exam question may ask you to justify $e \leq 1$. The key argument is that kin
 energy cannot increase during a collision.
 :::
 
----
+<hr />
 
 ## 6. The Impulse-Momentum Theorem
 
@@ -229,7 +229,7 @@ equation) and conservation of momentum (an algebraic constraint). It tells us ex
 momentum a force transfers over a given time interval.
 :::
 
----
+<hr />
 
 ## 7. Conservation of Momentum in Two Dimensions
 
@@ -286,7 +286,7 @@ $\sin\theta = 0.75$, $\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6
 $\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated speeds
 are not exactly consistent with momentum conservation — a useful check in exam problems.
 
----
+<hr />
 
 ## 8. Two-Dimensional Collisions Between Particles
 
@@ -357,7 +357,7 @@ $|v_A| = \sqrt{v_{A,\parallel}^2 + v_{A,\perp}^2} = \sqrt{\left(\frac{9\sqrt{3}}
 **Speed of $B$:** $|v_B| = v_{B,\parallel} = \frac{12\sqrt{3}}{5} \approx 4.16\,\mathrm{m/s}$ (moves
 along the line of centres only).
 
----
+<hr />
 
 ## 9. Oblique Collisions with a Surface
 
@@ -427,7 +427,7 @@ $$J = m(v_n - u_n) = m(-e\,u\cos\alpha - u\cos\alpha) = -m(1+e)\,u\cos\alpha$$
 
 The magnitude of the impulse is $m(1+e)\,u\cos\alpha$.
 
----
+<hr />
 
 ## Problem Set
 

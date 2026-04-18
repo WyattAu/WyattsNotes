@@ -76,7 +76,7 @@ Board-specific **AQA** emphasises batch, real-time, and distributed systems. **E
 systems in particular depth.
 :::
 
----
+<hr />
 
 ## 2. Process Management
 
@@ -188,7 +188,7 @@ regain control and decide whether to switch processes.
 | **Multiprocessing** | Multiple CPUs or cores execute processes simultaneously              |
 | **Multithreading**  | A single process has multiple threads sharing the same address space |
 
----
+<hr />
 
 ## 3. Memory Management
 
@@ -263,7 +263,7 @@ The TLB is a small, fast hardware cache that stores recent virtual-to-physical a
 The TLB is typically **fully associative** or **set-associative** because it must support fast
 lookup regardless of the page number.
 
----
+<hr />
 
 ## 4. File Systems
 
@@ -325,7 +325,7 @@ Permissions are typically represented as a 9-bit string (e.g., `rwxr-xr--` = 755
 Modern OSes use a hierarchical tree structure with a root directory (`/` on Linux/macOS, drive
 letters on Windows).
 
----
+<hr />
 
 ## 5. Device Management
 
@@ -380,7 +380,7 @@ processes can continue without waiting. The most common example is a **print spo
 
 Spooling decouples fast processes from slow devices.
 
----
+<hr />
 
 ## 6. Security and Management
 
@@ -435,7 +435,7 @@ The OS provides mechanisms to defend against malicious software:
 | **Sandboxing**      | Runs untrusted code in an isolated environment                    |
 | **Code signing**    | Verifies that software has not been tampered with                 |
 
----
+<hr />
 
 ## Problem Set
 

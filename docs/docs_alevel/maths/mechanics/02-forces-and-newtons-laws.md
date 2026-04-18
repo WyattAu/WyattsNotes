@@ -23,7 +23,7 @@ Always draw a clear free body diagram before writing any equations. The quality 
 diagram determines the quality of your solution.
 :::
 
----
+<hr />
 
 ## 1. Newton's Laws of Motion
 
@@ -58,7 +58,7 @@ normal reaction from the table are **not** a Third Law pair (both act on the boo
 pair of the weight is the gravitational pull of the book on the Earth.
 :::
 
----
+<hr />
 
 ## 2. Types of Forces
 
@@ -86,7 +86,7 @@ See Section 4.
 
 Applied forces in the direction of motion (thrust) or opposing motion (drag/resistance).
 
----
+<hr />
 
 ## 3. Free Body Diagrams and Resolving Forces
 
@@ -107,7 +107,7 @@ For a plane inclined at angle $\alpha$ to the horizontal:
 
 At equilibrium perpendicular to the plane: $R = mg\cos\alpha$.
 
----
+<hr />
 
 ## 4. Friction
 
@@ -148,7 +148,7 @@ body can rest on an inclined plane without sliding.
 
 On the point of sliding: $mg\sin\alpha = \mu mg\cos\alpha \implies \tan\alpha = \mu$. $\blacksquare$
 
----
+<hr />
 
 ## 5. Connected Particles
 
@@ -174,7 +174,7 @@ Adding: $2g = 8a \implies a = g/4 = 2.45\,\mathrm{m/s}^2$. $T = 3(g/4 + g) = 15g
 The same method applies, but gravity must be resolved into components parallel and perpendicular to
 the plane.
 
----
+<hr />
 
 ## 6. Pulleys
 
@@ -183,7 +183,7 @@ For a smooth, light pulley:
 - The tension is the same on both sides of the string.
 - The pulley only changes the direction of the tension.
 
----
+<hr />
 
 ## 7. Newton's Third Law -- Detailed Treatment
 
@@ -238,7 +238,7 @@ Note that $W$ and $R$ are **not** a Third Law pair (both act on the block, and t
 types of force). In this case, applying Newton's Second Law to the block gives $R - mg = ma$, so
 $R = m(g + a) \gt{} mg$.
 
----
+<hr />
 
 ## 8. Friction -- Detailed Treatment
 
@@ -318,7 +318,7 @@ Friction always opposes **relative motion** (or the tendency to move). When sett
 - If the direction of motion is unknown, assume one direction. If $a$ comes out negative, reverse
   the assumed direction and recalculate with friction reversed.
 
----
+<hr />
 
 ## 9. Pulley Systems
 
@@ -390,7 +390,7 @@ Adding:
 
 $$a = \frac{m_1 g(\sin\alpha - \mu_1\cos\alpha) - m_2 g(\sin\beta + \mu_2\cos\beta)}{m_1 + m_2}$$
 
----
+<hr />
 
 ## 10. Inclined Planes with Friction
 
@@ -477,7 +477,7 @@ horizontal force can move the block up the slope (pushing horizontally jams the 
 surface).
 :::
 
----
+<hr />
 
 ## 11. Equilibrium of Rigid Bodies
 
@@ -563,7 +563,7 @@ $$V_A + 42.5g \times 0.5 = 50g$$
 
 $$V_A = 50g - 21.25g = 28.75g = 281.75\,\mathrm{N}$$
 
----
+<hr />
 
 ## Problem Set
 

@@ -63,7 +63,7 @@ these frameworks because:
 - **Public trust** in technology depends on ethical practice
 - **Exam requirements** mandate that you can discuss and evaluate these issues
 
----
+<hr />
 
 ## 2. Legislation
 
@@ -474,7 +474,7 @@ for payment (including paying through data provision), the content must:
 If faulty digital content causes damage to a consumer's device (e.g., malware corrupts a computer's
 hard drive), the consumer can claim compensation for the damage from the trader.
 
----
+<hr />
 
 ## 3. Ethical Frameworks
 
@@ -632,7 +632,7 @@ subjected to detriment for internal disclosure, or if the evidence would be dest
   that Facebook knew its platforms harmed teenagers' mental health and that it prioritised
   engagement over safety. Her disclosures led to Congressional hearings and regulatory action.
 
----
+<hr />
 
 ## 4. Specific Ethical Issues
 
@@ -936,7 +936,7 @@ speech through their content moderation policies. Key questions:
 | Compatibility         | May create vendor lock-in                                         | Standards-based, interoperable                                                                    |
 | Quality               | Varies: commercial pressure may lead to rushed releases           | Varies: community-driven quality may be higher or lower depending on project maturity             |
 
----
+<hr />
 
 ## 5. Moral Dilemmas
 
@@ -1118,7 +1118,7 @@ and when crimes are likely to occur, or to identify individuals who are likely t
 | Deontology     | Predictive policing treats individuals as a means (data points) rather than ends in themselves. It violates the duty to treat people as innocent until proven guilty.             |
 | Virtue ethics  | A virtuous police force would use data with humility, recognise the limitations of predictions, and ensure that policing is fair and proportionate.                               |
 
----
+<hr />
 
 ## 6. Exam Practice
 

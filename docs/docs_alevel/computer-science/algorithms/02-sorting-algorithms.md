@@ -20,7 +20,7 @@ name).
 
 **In-place:** A sort is **in-place** if it uses $O(1)$ extra memory (excluding the input array).
 
----
+<hr />
 
 ## 2. Bubble Sort
 
@@ -76,7 +76,7 @@ $$\sum_{i=0}^{n-2}(n - 1 - i) = \sum_{k=1}^{n-1} k = \frac{n(n-1)}{2} = O(n^2)$$
 
 $\square$
 
----
+<hr />
 
 ## 3. Insertion Sort
 
@@ -129,7 +129,7 @@ $$T(n) = \sum_{i=1}^{n-1} \frac{i}{2} = \frac{1}{2}\sum_{i=1}^{n-1} i = \frac{1}
 
 $\square$
 
----
+<hr />
 
 ## 4. Merge Sort
 
@@ -197,7 +197,7 @@ $$T(n) = O(n \log n)$$
 
 **Space:** $O(n)$ — the merge step requires a temporary array. **Stable:** Yes (merge uses `<=`).
 
----
+<hr />
 
 ## 5. Quick Sort
 
@@ -274,7 +274,7 @@ $$T(n) = T(n-1) + O(n) = \sum_{k=1}^{n} O(k) = O(n^2)$$
 $n/2$. The recurrence is $T(n) = T(n/2) + O(n)$ on average, giving $T(n) = O(n \log n)$ by the
 Master Theorem.
 
----
+<hr />
 
 ## 6. Comparison Table
 
@@ -286,7 +286,7 @@ Master Theorem.
 | Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | $O(\log n)$ | No     |
 | Heap Sort      | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$      | No     |
 
----
+<hr />
 
 ## 7. The $\Omega(n \log n)$ Lower Bound for Comparison-Based Sorting
 
@@ -316,7 +316,7 @@ are asymptotically optimal among comparison-based sorts. Non-comparison sorts (r
 sort) can beat $O(n \log n)$ but have restrictions on key types.
 :::
 
----
+<hr />
 
 ## Problem Set
 

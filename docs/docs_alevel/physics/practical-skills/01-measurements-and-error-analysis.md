@@ -126,7 +126,7 @@ $\square$
 The same rule applies for division ($z = x/y$) since $\\ln z = \\ln x - \\ln y$ gives
 $\\Delta z/z = \\Delta x/x + \\Delta y/y$ (uncertainties always add).
 
----
+<hr />
 
 #### Addition/Subtraction: $z = x \pm y$
 

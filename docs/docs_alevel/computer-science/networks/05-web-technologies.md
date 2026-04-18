@@ -58,7 +58,7 @@ interlinked documents accessed via browsers using URLs, HTTP, and HTML.
 | POP3     | Post Office Protocol v3     | 110   | Retrieving email (download)  |
 | IMAP     | Internet Message Access Pr  | 143   | Accessing email on server    |
 
----
+<hr />
 
 ## 2. HTML and CSS
 
@@ -223,7 +223,7 @@ box-sizing: border-box;
 }
 ```
 
----
+<hr />
 
 ## 3. JavaScript and Client-Side Scripting
 
@@ -292,7 +292,7 @@ function validateForm(event) {
 - **XSS risk:** Uns sanitised input inserted into the DOM enables script injection.
 - **Same-origin policy:** Browsers restrict cross-domain access to prevent attacks.
 
----
+<hr />
 
 ## 4. HTTP and HTTPS
 
@@ -365,7 +365,7 @@ Set-Cookie: session_id=abc123; HttpOnly; Secure; SameSite=Strict
 A **session** is server-side state. The server stores the session and sends the session ID as a
 cookie. On subsequent requests, the cookie identifies the session.
 
----
+<hr />
 
 ## 5. Search Engine Optimisation (SEO)
 
@@ -394,7 +394,7 @@ cookie. On subsequent requests, the cookie identifies the session.
 - **Domain authority:** Metric predicting ranking based on age, backlinks, trust.
 - **Social signals:** Engagement on social media can indirectly improve rankings.
 
----
+<hr />
 
 ## 6. Web Security
 
@@ -462,7 +462,7 @@ critical actions.
 7. **Content Security Policy:** Restrict script sources to prevent XSS.
 8. **Regular audits:** Automated scanning and penetration testing.
 
----
+<hr />
 
 ## Problem Set
 

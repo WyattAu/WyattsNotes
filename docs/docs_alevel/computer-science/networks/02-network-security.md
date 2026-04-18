@@ -31,7 +31,7 @@ The three core principles of information security:
 2. **Integrity:** Data is accurate and has not been tampered with
 3. **Availability:** Data and services are accessible when needed
 
----
+<hr />
 
 ## 2. Symmetric Encryption
 
@@ -61,7 +61,7 @@ Symmetric encryption requires both parties to share the same secret key. Distrib
 securely is a fundamental challenge — if the key is intercepted during exchange, the encryption is
 compromised.
 
----
+<hr />
 
 ## 3. Asymmetric Encryption
 
@@ -132,7 +132,7 @@ By the Chinese Remainder Theorem: $M^{ed} \equiv M \pmod{n}$. ✓ $\square$
 | 3072 bits | ~128 bits      | High security        |
 | 4096 bits | ~150 bits      | Very high security   |
 
----
+<hr />
 
 ## 4. Digital Signatures
 
@@ -159,7 +159,7 @@ received message.
 **Correctness:** Since only the sender knows the private key, only they could have produced $S$. If
 the message was altered, $H(M)$ would differ, and verification would fail.
 
----
+<hr />
 
 ## 5. Hash Functions
 
@@ -205,7 +205,7 @@ user gets a unique salt, making rainbow tables useless.
 **Key stretching:** Use slow hash functions (bcrypt, PBKDF2, Argon2) that deliberately take many
 iterations, making brute-force attacks impractical.
 
----
+<hr />
 
 ## 6. Firewalls
 
@@ -235,7 +235,7 @@ Board-specific
 - **Edexcel** covers network security fundamentals including encryption and firewalls
 :::
 
----
+<hr />
 
 ## Problem Set
 
@@ -447,7 +447,7 @@ This always evaluates to true, granting access without valid credentials.
 For revision on network fundamentals, see
 [Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals).
 
----
+<hr />
 
 ## 7. Worked Examples: Firewall Rules and Encryption
 
@@ -497,7 +497,7 @@ WPA2-Personal (PSK) uses a pre-shared key:
 The PSK is never transmitted over the air. An attacker capturing the handshake can attempt an
 offline brute-force attack against the PSK.
 
----
+<hr />
 
 ## 8. SQL Injection Prevention in Detail
 
@@ -534,7 +534,7 @@ cursor.execute(
 5. **Web Application Firewall (WAF):** A secondary defence that inspects HTTP requests for known
    injection patterns
 
----
+<hr />
 
 ## 9. DDoS Attack Types
 
@@ -553,7 +553,7 @@ the server encodes state in the SYN-ACK without allocating memory until the ACK 
 **DNS amplification** exploits the large response-to-request ratio of DNS queries. A 60-byte request
 can generate a 4000-byte response, providing a ~66x amplification factor.
 
----
+<hr />
 
 ## 10. Common Pitfalls
 
@@ -566,7 +566,7 @@ can generate a 4000-byte response, providing a ~66x amplification factor.
 | Confusing hashing with encryption        | Hashes are one-way; encryption is reversible                                             | Hash passwords, encrypt data that needs to be retrieved |
 | Firewall rules in wrong order            | Rules are evaluated top-to-bottom; a broad allow before a specific deny defeats the deny | Place specific rules first, default deny last           |
 
----
+<hr />
 
 ## 11. Additional Problem Set
 

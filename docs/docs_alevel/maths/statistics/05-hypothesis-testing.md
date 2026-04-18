@@ -23,7 +23,7 @@ Hypothesis testing requires clear, structured answers. Always state your hypothe
 statistic, critical value/region, comparison, and conclusion in context.
 :::
 
----
+<hr />
 
 ## 1. Hypotheses
 
@@ -48,7 +48,7 @@ direction) is a form of $p$-hacking and is statistically invalid. The tail direc
 before the experiment.
 :::
 
----
+<hr />
 
 ## 2. Critical Values and Significance Levels
 
@@ -79,7 +79,7 @@ $P(X \geq 12) \approx 0.0176$, $P(X \geq 11) \approx 0.0592$.
 
 Critical region: $X \geq 12$. Actual significance level: 1.76%.
 
----
+<hr />
 
 ## 3. Type I and Type II Errors
 
@@ -104,7 +104,7 @@ negatives). There is always a trade-off between Type I and Type II errors.
 error is acquitting a guilty person. Making the standard of proof higher (beyond reasonable doubt)
 reduces Type I errors but increases Type II errors. You cannot eliminate both simultaneously.
 
----
+<hr />
 
 ## 4. Hypothesis Testing Procedure
 
@@ -124,7 +124,7 @@ Alternatively: 1–3. Same as above. 4. Calculate the **$p$-value**: the probabi
 result at least as extreme as the observed value, assuming $H_0$ is true. 5. If $p$-value
 $\lt{} \alpha$, reject $H_0$. Otherwise, do not reject $H_0$. 6. Conclude in context.
 
----
+<hr />
 
 ## 5. Binomial Hypothesis Tests
 
@@ -148,7 +148,7 @@ Critical region: $X \geq 15$. Since $X = 15$ is in the critical region, we **rej
 
 There is sufficient evidence at the 5% level that the coin is biased towards heads.
 
----
+<hr />
 
 ## 6. Normal Hypothesis Tests
 
@@ -175,7 +175,7 @@ For large $n$: $\hat{p} \sim N\!\left(p, \dfrac{p(1-p)}{n}\right)$ approximately
 
 Test statistic: $z = \dfrac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$.
 
----
+<hr />
 
 ## 7. Interpreting Results
 
@@ -185,7 +185,7 @@ data does not provide sufficient evidence against $H_0$. The test may lack power
 effect too weak).
 :::
 
----
+<hr />
 
 ## 8. One-Tailed vs Two-Tailed Tests in Depth
 
@@ -243,7 +243,7 @@ For the same $\alpha$, a one-tailed test has **greater power** than a two-tailed
 alternative in the predicted direction, because the critical value is closer to the null value.
 However, a one-tailed test has **zero power** to detect an effect in the opposite direction.
 
----
+<hr />
 
 ## 9. Binomial Tests with Normal Approximation
 
@@ -296,7 +296,7 @@ Two-tailed critical values: $\pm 1.96$. Since $|1.770| \lt{} 1.96$, **do not rej
 
 There is insufficient evidence at the 5% level that the proportion of bus users has changed.
 
----
+<hr />
 
 ## 10. Confidence Intervals
 
@@ -346,7 +346,7 @@ $$95\%\mathrm{ CI} = 0.483 \pm 0.0894 = (0.394, 0.573)$$
 Since $p_0 = 0.4$ lies inside $(0.394, 0.573)$, we do not reject $H_0: p = 0.4$ at the 5% level.
 This is consistent with the hypothesis test result in Section 9.3.
 
----
+<hr />
 
 ## 11. Interpreting p-Values
 
@@ -409,7 +409,7 @@ Since $0.0916 \gt{} 0.05$, we do not reject $H_0$ at the 5% level.
 observing a sample mean at least as far from 50 mm as 50.8 mm. This is not unusual enough to provide
 convincing evidence against $H_0$.
 
----
+<hr />
 
 ## Problem Set
 

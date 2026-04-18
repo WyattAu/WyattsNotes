@@ -26,7 +26,7 @@ polynomial equations.
 | OCR (A) | Paper 1 | De Moivre, exponential form, roots of unity                 |
 | CIE     | P1      | Loci required; exponential form and roots of unity in depth |
 
----
+<hr />
 
 ## 1. Review of A Level Complex Numbers
 
@@ -91,7 +91,7 @@ Polar form:
 $z = 2\!\left(\cos\!\left(-\dfrac{\pi}{3}\right) + i\sin\!\left(-\dfrac{\pi}{3}\right)\right)$.
 </details>
 
----
+<hr />
 
 ## 2. De Moivre's Theorem
 
@@ -171,7 +171,7 @@ $$
 $$
 </details>
 
----
+<hr />
 
 ## 3. Roots of Unity
 
@@ -228,7 +228,7 @@ $1 \cdot \left(-\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}\,i\right)\left(-\dfrac{1}{2} 
 ✓
 </details>
 
----
+<hr />
 
 ## 4. Exponential Form
 
@@ -293,7 +293,7 @@ CIE and Edexcel FP2 require the exponential form. AQA accepts it but also works 
 with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem.
 :::
 
----
+<hr />
 
 ## 5. Loci in the Argand Diagram
 
@@ -363,7 +363,7 @@ quadrant. Within the first quadrant, the closest point is where the circle meets
 setting $y = 0$, $x^2 + 4 = 9 \implies x = \sqrt{5}$. So $|z| = \sqrt{5}$.
 </details>
 
----
+<hr />
 
 ## 6. Complex Transformations
 
@@ -429,7 +429,7 @@ AQA places significant emphasis on complex transformations including $w = f(z)$ 
 Edexcel and OCR cover this topic with less depth. CIE focuses more on loci than on transformations.
 :::
 
----
+<hr />
 
 ## 7. Summary of Key Results
 
@@ -447,7 +447,7 @@ $$\boxed{|z - a| = r \iff \mathrm{circle centre } a \mathrm{ radius } r}$$
 
 $$\boxed{\arg(z - a) = \alpha \iff \mathrm{half-line from } a \mathrm{ at angle } \alpha}$$
 
----
+<hr />
 
 ## Problems
 
@@ -471,7 +471,7 @@ $\arg(z) = \pi - \arctan\!\left(\dfrac{1}{\sqrt{3}}\right) = \pi - \dfrac{\pi}{6
 $$z^5 = 2^5\!\left(\cos\frac{25\pi}{6} + i\sin\frac{25\pi}{6}\right) = 32\!\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right) = 32\!\left(\frac{\sqrt{3}}{2} + \frac{1}{2}\,i\right) = 16\sqrt{3} + 16i$$
 </details>
 
----
+<hr />
 
 **Problem 2.** Use De Moivre's theorem to prove that
 $\cos 4\theta = 8\cos^4\theta - 8\cos^2\theta + 1$.
@@ -503,7 +503,7 @@ $$
 $$
 </details>
 
----
+<hr />
 
 **Problem 3.** Find all solutions to $z^4 = 16i$, expressing each in the form $a + bi$.
 
@@ -530,7 +530,7 @@ k = 3:\quad z_3 &= 2\!\left(\cos\frac{13\pi}{8} + i\sin\frac{13\pi}{8}\right) = 
 $$
 </details>
 
----
+<hr />
 
 **Problem 4.** The fifth roots of unity are $\omega^0, \omega^1, \omega^2, \omega^3, \omega^4$ where
 $\omega = e^{2\pi i/5}$. Show that $1 + \omega + \omega^2 + \omega^3 + \omega^4 = 0$ and deduce that
@@ -564,7 +564,7 @@ Since $\cos\frac{6\pi}{5} = \cos\frac{4\pi}{5}$ and $\cos\frac{8\pi}{5} = \cos\f
 $$1 + 2\cos\frac{2\pi}{5} + 2\cos\frac{4\pi}{5} = 0 \implies \cos\frac{2\pi}{5} + \cos\frac{4\pi}{5} = -\frac{1}{2} \quad \square$$
 </details>
 
----
+<hr />
 
 **Problem 5.** Sketch on separate Argand diagrams the loci given by (a) $|z - 1 - i| = |z - 3 + i|$,
 and (b) $\arg(z - 2) = \dfrac{\pi}{3}$. Find the complex number(s) satisfying both conditions
@@ -598,7 +598,7 @@ from the half-line.
 **Answer:** No complex number satisfies both conditions simultaneously.
 </details>
 
----
+<hr />
 
 **Problem 6.** Find the image of the circle $|z| = 2$ under the transformation
 $w = \dfrac{z + 1}{z - 1}$.
@@ -642,7 +642,7 @@ This is a circle with centre $\left(\dfrac{5}{3}, 0\right)$ and radius $\dfrac{4
 $w$-plane.
 </details>
 
----
+<hr />
 
 **Problem 7.** Express $\dfrac{(1+i)^6}{(1-i\sqrt{3})^4}$ in the form $a + bi$.
 
@@ -665,7 +665,7 @@ So:
 $\dfrac{1}{2}\,e^{5\pi i/6} = \dfrac{1}{2}\!\left(\cos\dfrac{5\pi}{6} + i\sin\dfrac{5\pi}{6}\right) = \dfrac{1}{2}\!\left(-\dfrac{\sqrt{3}}{2} + \dfrac{1}{2}\,i\right) = -\dfrac{\sqrt{3}}{4} + \dfrac{1}{4}\,i$
 </details>
 
----
+<hr />
 
 **Problem 8.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = z^2$. The
 region $R$ in the $z$-plane is defined by $1 \leq |z| \leq 2$ and
@@ -690,7 +690,7 @@ The image is the region in the first quadrant of the $w$-plane between the circl
 $|w| = 4$, bounded by the rays $\arg(w) = 0$ and $\arg(w) = \dfrac{\pi}{2}$.
 </details>
 
----
+<hr />
 
 **Problem 9.** Solve the equation $z^3 + z^2 + z + 1 = 0$ by recognising it as a geometric series,
 and hence show that $\cos\dfrac{2\pi}{4} + \cos\dfrac{4\pi}{4} + \cos\dfrac{6\pi}{4} = -1$.
@@ -724,7 +724,7 @@ $\cos\dfrac{2\pi}{4} + \cos\dfrac{4\pi}{4} + \cos\dfrac{6\pi}{4} = \cos\dfrac{\p
 ✓ $\square$
 </details>
 
----
+<hr />
 
 **Problem 10.** (a) Show that
 $\dfrac{1}{e^{i\theta} - 1} = -\dfrac{1}{2} - \dfrac{i}{2}\cot\dfrac{\theta}{2}$ for

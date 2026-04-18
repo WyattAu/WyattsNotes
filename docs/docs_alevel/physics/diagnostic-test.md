@@ -438,7 +438,7 @@ $= -1/(RC) = -0.125$. $\tau = RC = 1/0.125 = 8.0$ s.
 [Capacitance](/docs/alevel/physics/electricity/capacitance)
 </details>
 
----
+<hr />
 
 ## Scoring
 

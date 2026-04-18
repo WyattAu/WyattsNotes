@@ -122,7 +122,7 @@ Result: `1 10000001 10100000000000000000000`
 
 </details>
 
----
+<hr />
 
 ## 3. Normalisation
 
@@ -149,7 +149,7 @@ In IEEE 754: $e = -3$, $E = -3 + 127 = 124 = 01111100_2$.
 
 </details>
 
----
+<hr />
 
 ## 4. Floating-Point Arithmetic and Errors
 
@@ -198,7 +198,7 @@ $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 :::warning Pitfall Never use `==` to compare floating-point numbers. Instead, check if
 $|a - b| \lt{} \epsilon$ for some tolerance. :::
 
----
+<hr />
 
 ## 5. CIE Simplified 8-Bit Floating Point
 
@@ -239,7 +239,7 @@ Result: `1 1011 101`
 
 </details>
 
----
+<hr />
 
 ## 6. Fixed-Point vs Floating-Point Comparison
 
@@ -253,7 +253,7 @@ Result: `1 1011 101`
 | Rounding errors | Predictable                 | Less predictable near boundaries        |
 | Use case        | Financial, embedded systems | Scientific computing, graphics          |
 
----
+<hr />
 
 ## Problem Set
 
@@ -469,7 +469,7 @@ $\frac{3.33 \times 10^{-7}}{1/3} = 3.33 \times 10^{-7} \times 3 = 10^{-6} = 0.00
 
 </details>
 
----
+<hr />
 
 ## 7. IEEE 754 Double Precision (64-bit)
 
@@ -508,7 +508,7 @@ $$(-1)^S \times 1.M \times 2^{E - 1023}$$
 | Min normal      | ~$1.2 \times 10^{-38}$                | ~$2.2 \times 10^{-308}$                |
 | Machine epsilon | $2^{-23} \approx 1.19 \times 10^{-7}$ | $2^{-52} \approx 2.22 \times 10^{-16}$ |
 
----
+<hr />
 
 ## 8. Special Values in Detail
 
@@ -573,7 +573,7 @@ True
 
 To check for NaN, use `math.isnan(x)` — never use `x == float('nan')`.
 
----
+<hr />
 
 ## 9. Precision Loss Examples
 
@@ -616,7 +616,7 @@ epsilon = 1e-9
 print(abs(x - y) < epsilon)  # True
 ```
 
----
+<hr />
 
 ## 10. Common Pitfalls
 
@@ -630,7 +630,7 @@ print(abs(x - y) < epsilon)  # True
 | Ignoring denormalised numbers      | Assuming all numbers have 24-bit precision             | Denormalised numbers near zero have fewer significant bits     |
 | Mixing single and double precision | Implicit conversions can lose precision                | Be consistent with precision throughout the calculation        |
 
----
+<hr />
 
 ## 11. Additional Problem Set
 

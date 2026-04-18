@@ -31,7 +31,7 @@ integration by parts repeatedly, derive and use reduction formulae, and set up v
 integrals correctly. CIE places particular emphasis on parametric volumes of revolution.
 :::
 
----
+<hr />
 
 ## 1. Integration by Parts (Advanced)
 
@@ -150,7 +150,7 @@ $$\boxed{I_n = x^n e^x - nI_{n-1}}$$
 
 With $I_0 = e^x + C$.
 
----
+<hr />
 
 ## 2. Integration Using Partial Fractions
 
@@ -202,7 +202,7 @@ $x = 0$: $1 = A$. $x = 1$: $1 = C$. $x = 2$: $1 = A + 2B + 2C = 1 + 2B + 2 \impl
 
 $$\int\left(\frac{1}{x} - \frac{1}{x-1} + \frac{1}{(x-1)^2}\right)dx = \ln|x| - \ln|x-1| - \frac{1}{x-1} + C$$
 
----
+<hr />
 
 ## 3. Inverse Trigonometric Integration
 
@@ -255,7 +255,7 @@ $\dfrac{1}{\sqrt{a^2-x^2}}$ (gives $\arcsin$), and $\dfrac{1}{a^2-x^2}$ (gives a
 The square root makes the difference.
 :::
 
----
+<hr />
 
 ## 4. Differentiation of Inverse Trigonometric Functions
 
@@ -297,7 +297,7 @@ $$\frac{dy}{dx} = \frac{1}{\cos y} = \frac{1}{\sqrt{1-x^2}} \quad \blacksquare$$
 **Example.**
 $\dfrac{d}{dx}\arctan\!\left(\dfrac{x}{2}\right) = \dfrac{1/2}{1 + x^2/4} = \dfrac{2}{4+x^2}$.
 
----
+<hr />
 
 ## 5. Volumes of Revolution
 
@@ -343,7 +343,7 @@ Using $\sin^3 t = \sin t(1-\cos^2 t)$ and the substitution $u = \cos t$:
 
 $$= 8\pi\int_{-1}^{1}(1-u^2)\,du = 8\pi\left[u - \frac{u^3}{3}\right]_{-1}^1 = 8\pi\left(\frac{2}{3} - \left(-\frac{2}{3}\right)\right) = \frac{32\pi}{3}$$
 
----
+<hr />
 
 ## 6. Arc Length and Surface Area of Revolution
 
@@ -412,7 +412,7 @@ length but surface area appears less frequently. AQA covers both in Paper 1. OCR
 length in Paper 1.
 :::
 
----
+<hr />
 
 ## 7. Summary of Key Results
 
@@ -426,7 +426,7 @@ length in Paper 1.
 | Vol. about $x$-axis                             | $\pi\displaystyle\int_a^b y^2\,dx$                           |
 | Arc length                                      | $\displaystyle\int\sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx$ |
 
----
+<hr />
 
 ## Problems
 

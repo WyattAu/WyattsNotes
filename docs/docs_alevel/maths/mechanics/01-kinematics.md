@@ -23,7 +23,7 @@ The formula booklet lists the SUVAT equations. You must be able to select the co
 equation and apply it to multi-stage problems.
 :::
 
----
+<hr />
 
 ## 1. Fundamental Quantities
 
@@ -40,7 +40,7 @@ $$v = \frac{ds}{dt}, \qquad a = \frac{dv}{dt} = \frac{d^2s}{dt^2}$$
 
 $$s = \int v\,dt, \qquad v = \int a\,dt$$
 
----
+<hr />
 
 ## 2. The SUVAT Equations
 
@@ -111,7 +111,7 @@ Always write down what you know and what you need. Choose the equation that cont
 known quantities and the unknown. Draw a diagram with positive direction clearly marked.
 :::
 
----
+<hr />
 
 ## 3. Motion Graphs
 
@@ -189,7 +189,7 @@ The acceleration is $a = dv/dt = 6t - 18 = 6(t - 3)$.
 Displacement at key times: $s(0) = 0$, $s(2) = 8 - 36 + 48 = 20$, $s(4) = 64 - 144 + 96 = 16$,
 $s(6) = 216 - 324 + 144 = 36$.
 
----
+<hr />
 
 ## 4. Projectiles
 
@@ -297,7 +297,7 @@ ground, and the angle for maximum range is **less** than $45^\circ$ (derived via
 core syllabus).
 :::
 
----
+<hr />
 
 ## 5. Variable Acceleration
 
@@ -390,7 +390,7 @@ $s(3) = 27 - 18 = 9\,\mathrm{m}$.
 Distance
 $= |s(4/3) - s(0)| + |s(3) - s(4/3)| = |-32/27| + |9 - (-32/27)| = 32/27 + 275/27 = 307/27 \approx 11.37\,\mathrm{m}$.
 
----
+<hr />
 
 ## Problem Set
 

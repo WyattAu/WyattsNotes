@@ -18,7 +18,7 @@ slug: sequences-and-series
 | OCR (A)    | Paper 1    | Arithmetic and geometric progressions                                |
 | CIE (9709) | P1, P3     | Sequences and series; P3 includes $\Sigma$ notation more extensively |
 
----
+<hr />
 
 ## 1. Sequences and Series: Definitions
 
@@ -31,7 +31,7 @@ $\sum_{n=1}^{N} a_n = a_1 + a_2 + \cdots + a_N$.
 **Definition.** A sequence defined by $a_{n+1} = f(a_n)$ with an initial value $a_1$ is a
 _recurrence relation_ (or _iterative sequence_).
 
----
+<hr />
 
 ## 2. Arithmetic Sequences
 
@@ -93,7 +93,7 @@ $$S_{20} = \frac{20}{2}(2 \times 3 + 19 \times 4) = 10(6 + 76) = 10 \times 82 = 
 
 </details>
 
----
+<hr />
 
 ## 3. Geometric Sequences
 
@@ -181,7 +181,7 @@ $$S_\infty = \frac{1}{1 - \frac{1}{2}} = 2$$
 
 </details>
 
----
+<hr />
 
 ## 4. Sigma Notation
 
@@ -210,7 +210,7 @@ _Proof of $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$._ This is the arithmetic series 
 $d = 1$, $n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)}{2}$.
 $\blacksquare$
 
----
+<hr />
 
 ## 5. Recurrence Relations
 
@@ -228,7 +228,7 @@ becomes periodic.
 
 $u_2 = \frac{1}{2}$, $u_3 = 2$, $u_4 = \frac{1}{2}$, ... This is periodic with period 2.
 
----
+<hr />
 
 ## 6. Arithmetic Mean and Geometric Mean
 
@@ -280,7 +280,7 @@ Minimum value is 4, achieved at $x = 2$.
 
 </details>
 
----
+<hr />
 
 ## 7. Sigma Notation — Method of Differences
 
@@ -359,7 +359,7 @@ identify the cancellation pattern before simplifying. Be especially careful when
 denominator is larger than 1 (e.g., $k(k+2)$), as not all terms cancel in a simple pairwise fashion.
 :::
 
----
+<hr />
 
 ## 8. Arithmetic-Geometric Sequences
 
@@ -431,7 +431,7 @@ The total present value is 435000.
 
 </details>
 
----
+<hr />
 
 ## 9. Proof of Sum Formulas
 
@@ -503,7 +503,7 @@ $n = 3$: $(1+2+3)^2 = 36 = 1 + 8 + 27 = 1^3 + 2^3 + 3^3$ ✓
 This can also be visualised geometrically: a square of side $\frac{n(n+1)}{2}$ can be decomposed
 into nested gnomons (L-shaped regions) that correspond to $1^3, 2^3, \ldots, n^3$.
 
----
+<hr />
 
 ## 10. Problem Set
 
@@ -522,7 +522,7 @@ $a = 17 - 12 = 5$.
 </details>
 <b>If you get this wrong, revise:</b> [Arithmetic sequences](#2-arithmetic-sequences)
 
----
+<hr />
 
 **Problem 2.** Evaluate $\sum_{k=1}^{50} (3k - 1)$.
 
@@ -535,7 +535,7 @@ $$S = \frac{50}{2}(2 + 149) = 25 \times 151 = 3775$$
 </details>
 <b>If you get this wrong, revise:</b> [Sigma notation](#4-sigma-notation)
 
----
+<hr />
 
 **Problem 3.** A geometric series has first term 5 and sum to infinity 25. Find the common ratio.
 
@@ -548,7 +548,7 @@ $$\frac{5}{1 - r} = 25 \implies 1 - r = \frac{1}{5} \implies r = \frac{4}{5}$$
 </details>
 <b>If you get this wrong, revise:</b> [Sum to infinity](#33-sum-to-infinity)
 
----
+<hr />
 
 **Problem 4.** Find the sum of the first 10 terms of the geometric series $2 - 6 + 18 - 54 + \cdots$
 
@@ -561,7 +561,7 @@ $$S_{10} = \frac{2(1 - (-3)^{10})}{1 - (-3)} = \frac{2(1 - 59049)}{4} = \frac{2(
 </details>
 <b>If you get this wrong, revise:</b> [Sum of finite geometric series](#32-sum-of-a-finite-geometric-series)
 
----
+<hr />
 
 **Problem 5.** Show that $\sum_{k=1}^{n} (4k + 1) = n(2n + 3)$.
 
@@ -580,7 +580,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Sigma notation](#4-sigma-notation)
 
----
+<hr />
 
 **Problem 6.** Given $u_1 = 3$ and $u_{n+1} = \frac{u_n + 1}{u_n - 1}$, find $u_2$, $u_3$, $u_4$,
 and $u_5$. Comment on the sequence.
@@ -600,7 +600,7 @@ The sequence is periodic: $3, 2, 3, 2, 3, 2, \ldots$ with period 2.
 </details>
 <b>If you get this wrong, revise:</b> [Recurrence relations](#5-recurrence-relations)
 
----
+<hr />
 
 **Problem 7.** The first three terms of a geometric sequence are $x, x + 4, x + 12$. Find $x$ and
 the common ratio.
@@ -620,7 +620,7 @@ The sequence is $4, 8, 16, \ldots$ with $r = 2$.
 </details>
 <b>If you get this wrong, revise:</b> [Geometric sequences](#3-geometric-sequences)
 
----
+<hr />
 
 **Problem 8.** A ball is dropped from a height of 10 m. Each bounce reaches 80% of the previous
 height. Find the total distance travelled before the ball comes to rest.
@@ -640,7 +640,7 @@ Total distance = $10 + 2 \times 40 = 90$ m.
 </details>
 <b>If you get this wrong, revise:</b> [Sum to infinity](#33-sum-to-infinity)
 
----
+<hr />
 
 **Problem 9.** Find the least value of $n$ such that the sum of the first $n$ terms of
 $3 + 6 + 12 + 24 + \cdots$ exceeds 10000.
@@ -664,7 +664,7 @@ $S_{12} = 3(4096 - 1) = 12285 > 10000$. ✓
 </details>
 <b>If you get this wrong, revise:</b> [Sum of finite geometric series](#32-sum-of-a-finite-geometric-series)
 
----
+<hr />
 
 **Problem 10.** Prove that $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$.
 
@@ -692,7 +692,7 @@ This is the formula for $n + 1$. ✓ $\blacksquare$
 </details>
 <b>If you get this wrong, revise:</b> [Proof by induction](./13-proof.md)
 
----
+<hr />
 
 **Problem 11.** Given that $x \gt{} 0$, find the minimum value of $x^2 + \frac{9}{x^2}$ and state
 the value of $x$ at which it occurs.
@@ -713,7 +713,7 @@ Minimum value is 6, achieved at $x = \sqrt{3}$.
 </details>
 <b>If you get this wrong, revise:</b> [AM-GM inequality](#6-arithmetic-mean-and-geometric-mean)
 
----
+<hr />
 
 **Problem 12.** Evaluate $\sum_{k=1}^{n} \frac{2}{(k+1)(k+3)}$ using the method of differences.
 
@@ -742,7 +742,7 @@ $$= \frac{1}{2} + \frac{1}{3} - \frac{1}{n+2} - \frac{1}{n+3} = \frac{5}{6} - \f
 </details>
 <b>If you get this wrong, revise:</b> [Method of differences](#7-sigma-notation--method-of-differences)
 
----
+<hr />
 
 **Problem 13.** Find the sum to infinity of the arithmetic-geometric series whose terms are
 $1, \; 4 \times \tfrac{1}{2}, \; 7 \times \tfrac{1}{4}, \; 10 \times \tfrac{1}{8}, \; \ldots$
@@ -766,7 +766,7 @@ $$= 2 + 6 = 8$$
 </details>
 <b>If you get this wrong, revise:</b> [Arithmetic-geometric sequences](#8-arithmetic-geometric-sequences)
 
----
+<hr />
 
 **Problem 14.** Find $\sum_{k=1}^{n} k(k-1)$ in closed form, and verify your answer for $n = 4$.
 
@@ -790,7 +790,7 @@ Formula: $\frac{4 \times 5 \times 3}{3} = 20$. ✓
 </details>
 <b>If you get this wrong, revise:</b> [Sigma notation](#4-sigma-notation)
 
----
+<hr />
 
 **Problem 15.** A sequence satisfies $u_{n+1} = 3u_n + 2$ with $u_1 = 1$. Find a closed-form
 expression for $u_n$ and verify it for $n = 1, 2, 3$.

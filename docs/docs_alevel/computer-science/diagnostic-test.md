@@ -17,7 +17,7 @@ relevant revision page for further study.
 
 **Recommended time:** 90 minutes.
 
----
+<hr />
 
 ## Fundamentals
 
@@ -74,7 +74,7 @@ phase, the PC is copied to the MAR so the CPU can read the instruction at that a
 [Computer Architecture](/docs/alevel/computer-science/fundamentals/computer-architecture)
 </details>
 
----
+<hr />
 
 ## Data Structures
 
@@ -146,7 +146,7 @@ $\alpha = 200/50 = 4.0$.
 **Revision:** [Hash Tables](/docs/alevel/computer-science/data-structures/hash-tables)
 </details>
 
----
+<hr />
 
 ## Algorithms
 
@@ -220,7 +220,7 @@ $T(n) = \Theta(n \log n)$.
 [Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis)
 </details>
 
----
+<hr />
 
 ## Programming
 
@@ -294,7 +294,7 @@ modification), and string interning (memory efficiency through reuse).
 [Data Representation in Programming](/docs/alevel/computer-science/programming/data-representation-in-programming)
 </details>
 
----
+<hr />
 
 ## Software Engineering
 
@@ -357,7 +357,7 @@ is never taken).
 **Revision:** [Testing](/docs/alevel/computer-science/software-engineering/testing)
 </details>
 
----
+<hr />
 
 ## Networks
 
@@ -446,7 +446,7 @@ with), **A**vailability (data accessible when needed).
 **Revision:** [Network Security](/docs/alevel/computer-science/networks/network-security)
 </details>
 
----
+<hr />
 
 ## Databases
 
@@ -511,7 +511,7 @@ HAVING AVG(score) > 80;
 [Relational Databases](/docs/alevel/computer-science/databases/relational-databases)
 </details>
 
----
+<hr />
 
 ## Theory of Computation
 
@@ -578,7 +578,7 @@ theorem) because "effectively computable" is an informal concept.
 [Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
 </details>
 
----
+<hr />
 
 ## Scoring
 

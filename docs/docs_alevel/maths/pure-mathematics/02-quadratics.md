@@ -18,7 +18,7 @@ slug: quadratics
 | OCR (A)    | Paper 1 | Includes set notation for solution sets           |
 | CIE (9709) | P1      | Quadratic equations, discriminant, inequalities   |
 
----
+<hr />
 
 ## 1. The Quadratic Function
 
@@ -31,7 +31,7 @@ where $a, b, c \in \mathbb{R}$ and $a \neq 0$.
 The graph of $y = ax^2 + bx + c$ is a _parabola_ — a symmetrical U-shaped curve (opening upwards if
 $a > 0$, downwards if $a < 0$). The axis of symmetry is the vertical line $x = -\frac{b}{2a}$.
 
----
+<hr />
 
 ## 2. Completing the Square
 
@@ -100,7 +100,7 @@ $4$.
 
 </details>
 
----
+<hr />
 
 ## 3. The Quadratic Formula
 
@@ -136,7 +136,7 @@ Before applying the formula, check whether the equation can be solved more easil
 factorisation. Always check the discriminant first.
 :::
 
----
+<hr />
 
 ## 4. The Discriminant
 
@@ -244,7 +244,7 @@ is $y = 0$, confirming the $x$-axis is tangent to the curve.
 
 </details>
 
----
+<hr />
 
 ## 5. Solving Quadratic Equations
 
@@ -261,7 +261,7 @@ Useful when the quadratic doesn't factorise easily and you want to understand th
 
 Always works (when $\Delta \geq 0$), but can be computationally heavier.
 
----
+<hr />
 
 ## 6. Quadratic Inequalities
 
@@ -384,7 +384,7 @@ Solution: $x \in \left[-1, \frac{5}{2}\right]$.
 
 </details>
 
----
+<hr />
 
 ## 7. Simultaneous Equations (Linear-Quadratic)
 
@@ -420,7 +420,7 @@ between a line and a parabola: $\Delta > 0$ means 2 intersections, $\Delta = 0$ 
 $\Delta < 0$ means no intersection.
 :::
 
----
+<hr />
 
 ## 8. Quadratics in Disguise
 
@@ -486,7 +486,7 @@ discriminant is non-negative.
 
 </details>
 
----
+<hr />
 
 ## 9. Vieta's Formulas
 
@@ -609,7 +609,7 @@ The required equation is $x^2 - Sx + P = 0$, i.e., $x^2 - 21x + 4 = 0$.
 
 </details>
 
----
+<hr />
 
 ## 10. Applying Quadratic Theory to Other Equations
 
@@ -692,7 +692,7 @@ Solution: $x = 4$.
 
 </details>
 
----
+<hr />
 
 ## 11. Problem Set
 
@@ -715,7 +715,7 @@ Minimum value is $-5$, occurring at $x = 2$.
 </details>
 <b>If you get this wrong, revise:</b> [Completing the square](#2-completing-the-square)
 
----
+<hr />
 
 **Problem 2.** Solve $2x^2 + 5x - 4 = 0$, giving your answer in the form $a \pm b\sqrt{c}$.
 
@@ -729,7 +729,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic formula](#3-the-quadratic-formula)
 
----
+<hr />
 
 **Problem 3.** Find the range of values of $k$ for which $kx^2 - 6x + 4 = 0$ has real roots.
 
@@ -751,7 +751,7 @@ linear equation).
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant](#4-the-discriminant)
 
----
+<hr />
 
 **Problem 4.** Solve the inequality $x^2 - 3x - 10 > 0$.
 
@@ -768,7 +768,7 @@ In set notation: $x \in (-\infty, -2) \cup (5, \infty)$.
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic inequalities](#6-quadratic-inequalities)
 
----
+<hr />
 
 **Problem 5.** Solve the simultaneous equations $y = x - 1$ and $x^2 + y^2 = 13$.
 
@@ -792,7 +792,7 @@ $x = -2$: $y = -3$. Point: $(-2, -3)$.
 </details>
 <b>If you get this wrong, revise:</b> [Simultaneous equations](#7-simultaneous-equations-linear-quadratic)
 
----
+<hr />
 
 **Problem 6.** The function $f(x) = px^2 + qx + r$ has a minimum value of $-5$ at $x = 2$, and
 passes through the point $(0, 7)$. Find $p$, $q$, and $r$.
@@ -818,7 +818,7 @@ Therefore $p = 3$, $q = -12$, $r = 7$.
 </details>
 <b>If you get this wrong, revise:</b> [Completing the square](#2-completing-the-square)
 
----
+<hr />
 
 **Problem 7.** Show that $x^2 + 4x + 9 > 0$ for all real $x$.
 
@@ -836,7 +836,7 @@ parabola is always above the $x$-axis.
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant](#4-the-discriminant)
 
----
+<hr />
 
 **Problem 8.** Express $\frac{2x^2 - 8x + 5}{x - 3}$ in the form $Ax + B + \frac{C}{x - 3}$.
 
@@ -855,7 +855,7 @@ Therefore $A = 2$, $B = -2$, $C = -1$.
 </details>
 <b>If you get this wrong, revise:</b> [Polynomial division](./01-algebraic-expressions.md)
 
----
+<hr />
 
 **Problem 9.** Find the equation of the tangent to the curve $y = x^2 - 4x + 3$ at the point where
 $x = 1$.
@@ -873,7 +873,7 @@ $$y - 0 = -2(x - 1) \implies y = -2x + 2$$
 </details>
 <b>If you get this wrong, revise:</b> [Differentiation](./10-differentiation.md)
 
----
+<hr />
 
 **Problem 10.** Prove that the equation $x^2 + 2kx + k^2 + 1 = 0$ has no real roots for any real
 value of $k$.
@@ -893,7 +893,7 @@ Since $\Delta = -4 < 0$ for all $k \in \mathbb{R}$, there are no real roots. $\b
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant](#4-the-discriminant)
 
----
+<hr />
 
 **Problem 11.** A rectangle has length $(x + 5)$ cm and width $(x + 2)$ cm. The area is
 $30\mathrm{ cm}^2$. Find $x$.
@@ -913,7 +913,7 @@ $$x = \frac{-7 + \sqrt{129}}{2} \approx 2.18$$
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic formula](#3-the-quadratic-formula)
 
----
+<hr />
 
 **Problem 12.** Given $f(x) = x^2 - 6x + 14$, find the range of $f$ and solve $f(x) \leq 10$.
 
@@ -932,7 +932,7 @@ $$3 - \sqrt{5} \leq x \leq 3 + \sqrt{5}$$
 </details>
 <b>If you get this wrong, revise:</b> [Completing the square](#2-completing-the-square) and [Quadratic inequalities](#6-quadratic-inequalities)
 
----
+<hr />
 
 **Problem 13.** Solve $x^4 - 13x^2 + 36 = 0$.
 
@@ -951,7 +951,7 @@ Solution: $x \in \{-3, -2, 2, 3\}$.
 </details>
 <b>If you get this wrong, revise:</b> [Quadratics in disguise](#8-quadratics-in-disguise)
 
----
+<hr />
 
 **Problem 14.** The roots of $3x^2 - 5x + 1 = 0$ are $\alpha$ and $\beta$. Without solving the
 equation, find $\alpha^2 + \beta^2$ and $\alpha^3 + \beta^3$.
@@ -967,7 +967,7 @@ $\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = \frac{
 </details>
 <b>If you get this wrong, revise:</b> [Vieta's formulas](#9-vietas-formulas)
 
----
+<hr />
 
 **Problem 15.** Solve $4^{2x} - 5 \cdot 4^x + 4 = 0$.
 
@@ -986,7 +986,7 @@ Solution: $x = 0$ or $x = 1$.
 </details>
 <b>If you get this wrong, revise:</b> [Applying quadratic theory](#10-applying-quadratic-theory-to-other-equations)
 
----
+<hr />
 
 **Problem 16.** The curve $y = (k - 2)x^2 + 3x + k - 4$ is tangent to the $x$-axis. Find the
 possible values of $k$.
@@ -1011,7 +1011,7 @@ $\frac{6 \pm \sqrt{13}}{2} \neq 2$ (because $6 \pm \sqrt{13} \neq 4$), both valu
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant and graph shape](#41-discriminant-and-graph-shape)
 
----
+<hr />
 
 **Problem 17.** Solve the inequality $x^2 + 2x - 8 \leq 0$ using a sign chart, giving your answer in
 set notation.
@@ -1037,7 +1037,7 @@ Solution: $x \in [-4, 2]$.
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic inequalities](#6-quadratic-inequalities)
 
----
+<hr />
 
 **Problem 18.** Solve $2\sin^2\theta + 3\sin\theta - 2 = 0$ for $0 \leq \theta < 2\pi$.
 

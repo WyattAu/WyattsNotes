@@ -18,7 +18,7 @@ slug: functions
 | OCR (A)    | Paper 1, 2 | Includes composite functions                     |
 | CIE (9709) | P1         | Functions, domain, range, inverse                |
 
----
+<hr />
 
 ## 1. Definitions
 
@@ -47,7 +47,7 @@ Domain: $[-2, 1) \cup (1, \infty)$.
 
 </details>
 
----
+<hr />
 
 ## 2. Composition of Functions
 
@@ -77,7 +77,7 @@ When computing $f \circ g$, always apply $g$ first, then $f$. Think of it as rea
 right to left: $(f \circ g)(x) = f(g(x))$.
 :::
 
----
+<hr />
 
 ## 3. Inverse Functions
 
@@ -145,7 +145,7 @@ $\mathbb{R} \setminus \{2\}$, which equals the domain of $f^{-1}$. ✓
 _Proof._ If $(a, b)$ lies on $y = f(x)$, then $b = f(a)$, so $a = f^{-1}(b)$, meaning $(b, a)$ lies
 on $y = f^{-1}(x)$. Swapping coordinates is reflection in $y = x$. $\blacksquare$
 
----
+<hr />
 
 ## 4. The Modulus Function
 
@@ -202,7 +202,7 @@ Solutions: $x = \frac{1}{3}$ and $x = 5$.
 
 </details>
 
----
+<hr />
 
 ## 5. Transformations of Graphs
 
@@ -263,7 +263,7 @@ Apply horizontal transformations first (inside the function), then vertical tran
 (outside). The order inside-out matters.
 :::
 
----
+<hr />
 
 ## 6. Even and Odd Functions
 
@@ -307,7 +307,7 @@ $g(-x) = \cos((-x)^2) = \cos(x^2) = g(x)$. So $g$ is even.
 
 </details>
 
----
+<hr />
 
 ## 7. Composite Function Domain and Range
 
@@ -340,7 +340,7 @@ $\mathrm{dom}(g \circ f) = (1, \infty)$.
 
 </details>
 
----
+<hr />
 
 ## 8. Self-Inverse Functions
 
@@ -364,7 +364,7 @@ $$f(f(x)) = \frac{a \cdot \frac{ax+b}{cx-a} + b}{c \cdot \frac{ax+b}{cx-a} - a} 
 
 $\blacksquare$ (provided $a^2 + bc \neq 0$).
 
----
+<hr />
 
 ## 9. Modulus Inequalities with Functions
 
@@ -411,7 +411,7 @@ Solution: $x \leq -1/3$ or $x \geq 3$, i.e., $x \in (-\infty, -1/3] \cup [3, \in
 
 </details>
 
----
+<hr />
 
 ## 10. Transformation Order — Why It Matters
 
@@ -445,7 +445,7 @@ Note: the horizontal shift is 2 (not 4), because $2x - 4 = 2(x - 2)$.
 
 </details>
 
----
+<hr />
 
 ## 11. Problem Set
 
@@ -468,7 +468,7 @@ $f^{-1}(x) = \frac{1}{x - 2} + 3$, domain $x \neq 2$.
 </details>
 <b>If you get this wrong, revise:</b> [Inverse functions](#3-inverse-functions)
 
----
+<hr />
 
 **Problem 2.** Given $f(x) = x^2 - 4x + 9$ for $x \geq 2$, find $f^{-1}(x)$.
 
@@ -489,7 +489,7 @@ $f^{-1}(x) = \sqrt{x - 5} + 2$, domain $x \geq 5$.
 </details>
 <b>If you get this wrong, revise:</b> [Inverse functions](#3-inverse-functions)
 
----
+<hr />
 
 **Problem 3.** Solve $|3x + 1| = 2x + 5$.
 
@@ -510,7 +510,7 @@ Solutions: $x = -\frac{6}{5}$ and $x = 4$.
 </details>
 <b>If you get this wrong, revise:</b> [Modulus equations](#41-solving-modulus-equations)
 
----
+<hr />
 
 **Problem 4.** Given $f(x) = 2x - 1$ and $g(x) = x^2 + 3$, find $(g \circ f)(x)$ and solve
 $(g \circ f)(x) = 12$.
@@ -526,7 +526,7 @@ $x = 2$ or $x = -1$.
 </details>
 <b>If you get this wrong, revise:</b> [Composition](#2-composition-of-functions)
 
----
+<hr />
 
 **Problem 5.** The graph of $y = f(x)$ passes through $(0, 1)$ and $(3, -2)$. State the coordinates
 of the corresponding points on: (a) $y = f(x + 2)$ (b) $y = -f(x)$ (c) $y = f(2x)$ (d)
@@ -546,7 +546,7 @@ $\left(\frac{3}{2}, -2\right)$.
 </details>
 <b>If you get this wrong, revise:</b> [Transformations](#5-transformations-of-graphs)
 
----
+<hr />
 
 **Problem 6.** The function $f$ is defined by $f(x) = x^3 - 3x + 1$. Show that $f$ is not injective
 on $\mathbb{R}$, and find the largest interval containing $x = 0$ on which $f$ is injective.
@@ -568,7 +568,7 @@ $[-1, 1]$.
 </details>
 <b>If you get this wrong, revise:</b> [Injectivity](#3-inverse-functions) and [Differentiation](./10-differentiation.md)
 
----
+<hr />
 
 **Problem 7.** Solve the inequality $|x - 3| > |2x + 1|$.
 
@@ -592,7 +592,7 @@ $$-4 < x < \frac{2}{3}$$
 </details>
 <b>If you get this wrong, revise:</b> [Modulus function](#4-the-modulus-function)
 
----
+<hr />
 
 **Problem 8.** Given $f(x) = e^{2x}$ and $g(x) = \ln(x + 1)$, find $f^{-1}$, $g^{-1}$, and the
 domain of $f \circ g$.
@@ -614,7 +614,7 @@ Domain of $f \circ g$: we need $x + 1 > 0$ (for $g$), so $x > -1$.
 </details>
 <b>If you get this wrong, revise:</b> [Composition](#2-composition-of-functions) and [Inverse functions](#3-inverse-functions)
 
----
+<hr />
 
 **Problem 9.** Sketch the graph of $y = |x^2 - 4|$, showing the coordinates of all points where the
 graph meets the axes.
@@ -637,7 +637,7 @@ reflected above the $x$-axis.
 </details>
 <b>If you get this wrong, revise:</b> [Modulus function](#4-the-modulus-function) and [Transformations](#5-transformations-of-graphs)
 
----
+<hr />
 
 **Problem 10.** Prove that $f: [0, \infty) \to [0, \infty)$ defined by $f(x) = x^2 + 4x$ is
 bijective, and find $f^{-1}$.
@@ -658,7 +658,7 @@ $f^{-1}(x) = -2 + \sqrt{4 + x} = \sqrt{x + 4} - 2$, domain $x \geq 0$.
 </details>
 <b>If you get this wrong, revise:</b> [Inverse functions](#3-inverse-functions)
 
----
+<hr />
 
 **Problem 11.** Classify each function as even, odd, or neither: (a) $f(x) = x^4 - x^2$ (b)
 $g(x) = x^3 + x$ (c) $h(x) = x + 1$ (d) $k(x) = |x|$
@@ -676,7 +676,7 @@ $g(x) = x^3 + x$ (c) $h(x) = x + 1$ (d) $k(x) = |x|$
 </details>
 <b>If you get this wrong, revise:</b> [Even and odd functions](#6-even-and-odd-functions)
 
----
+<hr />
 
 **Problem 12.** Given $f(x) = 2x + 3$ with domain $\mathbb{R}$ and $g(x) = \sqrt{x - 1}$ with domain
 $[1, \infty)$, find the domain of $f \circ g$ and $g \circ f$.
@@ -691,7 +691,7 @@ $\{x \in \mathbb{R} : f(x) \geq 1\} = \{x : 2x + 3 \geq 1\} = \{x : x \geq -1\} 
 </details>
 <b>If you get this wrong, revise:</b> [Composite function domain](#7-composite-function-domain-and-range)
 
----
+<hr />
 
 **Problem 13.** Verify that $f(x) = \frac{3x + 2}{x - 3}$ is self-inverse.
 
@@ -704,7 +704,7 @@ Since $f(f(x)) = x$, $f$ is self-inverse. ✓
 </details>
 <b>If you get this wrong, revise:</b> [Self-inverse functions](#8-self-inverse-functions)
 
----
+<hr />
 
 **Problem 14.** Solve the inequality $|x^2 - 5x + 6| \geq |x - 2|$.
 
@@ -727,7 +727,7 @@ Solution: $x \in (-\infty, 2] \cup [4, \infty)$.
 </details>
 <b>If you get this wrong, revise:</b> [Modulus inequalities](#9-modulus-inequalities-with-functions)
 
----
+<hr />
 
 **Problem 15.** The graph of $y = f(x)$ passes through $(1, 3)$ and $(-2, 5)$. State the coordinates
 of the corresponding points on the graph of $y = 2f(3x - 1) + 4$.

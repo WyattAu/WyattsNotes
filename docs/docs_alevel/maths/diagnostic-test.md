@@ -19,7 +19,7 @@ solutions.
 - **Equipment:** Calculator permitted where indicated.
 - **Scoring:** Each question is worth 1 mark. Use your results to identify weak areas for revision.
 
----
+<hr />
 
 ## Pure Mathematics
 
@@ -237,7 +237,7 @@ $x_1 = 1.5-(-0.125/5.75) = 1.5+0.0217 = 1.5217$.
 [Numerical Methods](/docs/alevel/maths/pure-mathematics/numerical-methods)
 </details>
 
----
+<hr />
 
 ## Statistics
 
@@ -346,7 +346,7 @@ Type II: Failing to reject $H_0$ when $H_0$ is false (false negative).
 [Hypothesis Testing](/docs/alevel/maths/statistics/hypothesis-testing)
 </details>
 
----
+<hr />
 
 ## Mechanics
 
@@ -455,7 +455,7 @@ $3v_1+2(v_1+4) = 9 \implies 5v_1 = 1 \implies v_1 = 0.2\,\mathrm{m/s}$, $v_2 = 4
 **If you get this wrong, revise:** [Momentum](/docs/alevel/maths/mechanics/momentum)
 </details>
 
----
+<hr />
 
 ## Scoring and Revision Guide
 

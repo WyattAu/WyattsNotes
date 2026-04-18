@@ -23,7 +23,7 @@ The formula booklet provides standard integrals. You must know how to apply inte
 techniques and when to use each method.
 :::
 
----
+<hr />
 
 ## 1. Integration as Area: Riemann Sums
 
@@ -49,7 +49,7 @@ infinitely thin), the approximation becomes exact.
 contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is the total change
 (displacement).
 
----
+<hr />
 
 ## 2. The Fundamental Theorem of Calculus
 
@@ -78,7 +78,7 @@ mathematics. It connects the two seemingly unrelated operations of differentiati
 change) and integration (finding areas).
 :::
 
----
+<hr />
 
 ## 3. Standard Integrals
 
@@ -117,7 +117,7 @@ $$\int \sec^2 x\,dx = \tan x + C$$
 | $\sin x$            | $-\cos x + C$              |
 | $\sec^2 x$          | $\tan x + C$               |
 
----
+<hr />
 
 ## 4. Definite Integration and Areas
 
@@ -151,7 +151,7 @@ $$A = \int_a^b [f(x) - g(x)]\,dx$$
 
 $$A = \int_{t_1}^{t_2} y\,\frac{dx}{dt}\,dt$$
 
----
+<hr />
 
 ## 5. Integration by Substitution
 
@@ -191,7 +191,7 @@ For a definite integral, you can either:
 - Substitute back to $x$ before evaluating, or
 - Change the limits: when $x = a$, $u = g(a)$; when $x = b$, $u = g(b)$.
 
----
+<hr />
 
 ## 6. Integration by Parts
 
@@ -239,7 +239,7 @@ $$I_n = x^n e^x - n\int x^{n-1} e^x\,dx = x^n e^x - nI_{n-1}$$
 
 This gives $I_n = x^n e^x - nI_{n-1}$, allowing us to reduce any $I_n$ to $I_0 = e^x + C$.
 
----
+<hr />
 
 ## 7. The Trapezium Rule
 
@@ -290,7 +290,7 @@ In exams, more strips means better accuracy. The trapezium rule always underesti
 concave-down functions and overestimates for concave-up functions.
 :::
 
----
+<hr />
 
 ## 8. Further Techniques
 
@@ -311,7 +311,7 @@ $\displaystyle\int \frac{1}{x^2-1}\,dx = \int \frac{1}{2}\left(\frac{1}{x-1} - \
 
 $$\int \tan x\,dx = \int \frac{\sin x}{\cos x}\,dx = -\ln|\cos x| + C = \ln|\sec x| + C$$
 
----
+<hr />
 
 ## Problem Set
 

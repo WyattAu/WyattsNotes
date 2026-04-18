@@ -47,7 +47,7 @@ z = str(42)        # z = "42"
 :::warning Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
 `round(3.9)` for rounding. :::
 
----
+<hr />
 
 ## 2. Selection (Conditional Statements)
 
@@ -85,7 +85,7 @@ def classify_grade(score):
 Some languages (not Python without `match`/`case` in 3.10+) provide switch statements for multi-way
 branching.
 
----
+<hr />
 
 ## 3. Iteration
 
@@ -153,7 +153,7 @@ function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode f
 local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
 requires subroutines with parameters. :::
 
----
+<hr />
 
 ## 4. Recursion
 
@@ -245,7 +245,7 @@ def hanoi(n, source, target, auxiliary):
 $T(n) = 2T(n-1) + 1 = 2(2T(n-2)+1)+1 = 4T(n-2)+3 = \cdots = 2^n T(0) + (2^n - 1) = \Theta(2^n)$.
 Minimum moves = $2^n - 1$. $\square$
 
----
+<hr />
 
 ## 5. Procedures and Functions
 
@@ -283,7 +283,7 @@ modify_list(my_list)
 print(my_list)  # [1, 2, 3, 4]
 ```
 
----
+<hr />
 
 ## Problem Set
 
@@ -492,7 +492,7 @@ def countdown(n):
 For revision on data structures that use recursion, see
 [Trees](/docs/alevel/computer-science/data-structures/trees).
 
----
+<hr />
 
 ## 6. Worked Examples: Nested Loops and Input Validation
 
@@ -565,7 +565,7 @@ Output:
    5  10  15  20  25
 ```
 
----
+<hr />
 
 ## 7. Recursion Trace Walkthrough
 
@@ -636,7 +636,7 @@ returns 5
 Note: `fib(3)` is computed twice, `fib(2)` is computed three times. This redundancy is why naive
 recursive Fibonacci is $O(\phi^n)$ — it recomputes the same subproblems repeatedly.
 
----
+<hr />
 
 ## 8. Common Pitfalls
 
@@ -715,7 +715,7 @@ def add_item(item, items=None):
     return items
 ```
 
----
+<hr />
 
 ## 9. Additional Problem Set
 

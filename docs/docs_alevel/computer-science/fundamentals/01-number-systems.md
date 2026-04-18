@@ -127,7 +127,7 @@ Result: $001111110111_2 = 11111110111_2$
 Since $8 = 2^3$, each octal digit maps to exactly 3 binary digits. Convert by grouping in 3s (or
 multiplying/dividing by 8).
 
----
+<hr />
 
 ## 2. Binary Arithmetic
 
@@ -171,7 +171,7 @@ $1011_2 = 11_{10}$, $0110_2 = 6_{10}$, $10001_2 = 17_{10}$. Correct. ✓
 
 Binary subtraction can be performed using two's complement (see below).
 
----
+<hr />
 
 ## 3. Two's Complement Representation
 
@@ -278,7 +278,7 @@ Board-specific
 - **OCR:** Requires understanding of sign and magnitude as well as two's complement.
 :::
 
----
+<hr />
 
 ## 4. Fixed-Point Binary Representation
 
@@ -317,7 +317,7 @@ Value: $13.375_{10}$
 Range: $[0,\ 31.875]$, Precision: $0.125$
 </details>
 
----
+<hr />
 
 ## 5. Binary Coded Decimal (BCD)
 
@@ -349,7 +349,7 @@ Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$
 is $00010010_2$, NOT $1100_2$.
 :::
 
----
+<hr />
 
 ## 6. Character Encoding
 
@@ -417,7 +417,7 @@ Split: $\underbrace{0010}_{x} \underbrace{000010}_{xx} \underbrace{101100}_{xx}$
 Result: `11100010 10000010 10101100` = `E2 82 AC` in hex.
 </details>
 
----
+<hr />
 
 ## 7. Representing Negative Numbers: Other Methods
 
@@ -437,7 +437,7 @@ Pitfall Sign and magnitude is rarely used in practice because:
 3. The range is asymmetric
 :::
 
----
+<hr />
 
 ## Problem Set
 

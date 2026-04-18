@@ -23,7 +23,7 @@ The principle of moments is fundamental. Always state clearly the point about wh
 taking moments, and include the direction (clockwise/anticlockwise) of each moment.
 :::
 
----
+<hr />
 
 ## 1. Definition of a Moment
 
@@ -57,7 +57,7 @@ bars on stubborn bolts.
 - **Clockwise** moments are typically taken as positive (or negative — be consistent).
 - **Anticlockwise** moments have the opposite sign.
 
----
+<hr />
 
 ## 2. Principle of Moments
 
@@ -105,7 +105,7 @@ clever point (often where an unknown force acts) can simplify calculations by el
 unknown from the moment equation.
 :::
 
----
+<hr />
 
 ## 3. Equilibrium Conditions
 
@@ -117,7 +117,7 @@ For a body in equilibrium under coplanar forces:
 
 These three conditions are both necessary and sufficient for equilibrium.
 
----
+<hr />
 
 ## 3.1 Couples and Torque
 
@@ -179,7 +179,7 @@ $$\sum \tau_i = 0$$
 This condition is independent of the translational equilibrium conditions, since couples contribute
 zero net force.
 
----
+<hr />
 
 ## 3.2 Ladders Against Walls
 
@@ -234,7 +234,7 @@ This gives $R_w = \left(\dfrac{W}{2} + P\alpha\right)\cot\theta$, and the requir
 increases accordingly. The higher the person climbs (larger $\alpha$), the more friction is needed —
 climb too high and the ladder slips.
 
----
+<hr />
 
 ## 3.3 Non-Uniform Beams
 
@@ -260,7 +260,7 @@ So the centre of mass is $d_B = \dfrac{R_A L}{W}$ from end $B$.
 4. Once $x$ is known, solve subsequent parts of the question as you would for a uniform beam, with
    the weight acting at $x$ instead of at the midpoint.
 
----
+<hr />
 
 ## 3.4 Frameworks and Trusses
 
@@ -299,7 +299,7 @@ choosing the right joint to start with — look for joints where you have at mos
 since you can only write two equilibrium equations per joint.
 :::
 
----
+<hr />
 
 ## 4. Centre of Mass
 
@@ -392,7 +392,7 @@ This is extremely useful for L-shapes, T-shapes, and shapes with circular or tri
 | Uniform circular lamina     | Centre of the circle                                     |
 | Uniform semicircular lamina | $\dfrac{4r}{3\pi}$ from the flat side                    |
 
----
+<hr />
 
 ## 5. Tilting and Toppling
 
@@ -432,7 +432,7 @@ slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$,
 first, which matches our calculation.
 :::
 
----
+<hr />
 
 ## Problem Set
 

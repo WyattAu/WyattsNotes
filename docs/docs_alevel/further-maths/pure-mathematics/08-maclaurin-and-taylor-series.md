@@ -32,7 +32,7 @@ Taylor series about $x = a$. The formula booklet lists the standard Maclaurin se
 able to derive them and apply them.
 :::
 
----
+<hr />
 
 ## 1. Maclaurin Series
 
@@ -60,7 +60,7 @@ In general, $f^{(n)}(0) = n!\,a_n$, giving $a_n = \dfrac{f^{(n)}(0)}{n!}$.
 
 Substituting back gives the Maclaurin series.
 
----
+<hr />
 
 ## 2. Standard Maclaurin Series
 
@@ -144,7 +144,7 @@ $|x| < 1$, integrate term by term.
 | $(1+x)^n$   | $\displaystyle\sum_{k=0}^{\infty}\binom{n}{k}x^k$                 | $               | x   | < 1$    |
 | $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}$    | $               | x   | \leq 1$ |
 
----
+<hr />
 
 ## 3. Taylor Series About $x = a$
 
@@ -191,7 +191,7 @@ $$\ln(1+u) = u - \frac{u^2}{2} + \frac{u^3}{3} - \cdots$$
 
 $$\boxed{\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots} \quad \mathrm{for } 0 < x \leq 2$$
 
----
+<hr />
 
 ## 4. Interval and Radius of Convergence
 
@@ -261,7 +261,7 @@ The geometric series is the foundation for many other series. The Maclaurin seri
 $\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it.
 :::
 
----
+<hr />
 
 ## 5. Applications
 
@@ -325,7 +325,7 @@ $$\frac{f(x)}{g(x)} \approx \frac{f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2}{g'(a)(x-
 Taking $x \to a$ gives $\dfrac{f'(a)}{g'(a)}$, which is L'Hôpital's rule. The series approach often
 gives more information (higher-order terms) than applying L'Hôpital's rule repeatedly.
 
----
+<hr />
 
 ## 6. Key Results and Pitfalls
 
@@ -356,7 +356,7 @@ $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$).
 pattern.
 :::
 
----
+<hr />
 
 ## Problems
 

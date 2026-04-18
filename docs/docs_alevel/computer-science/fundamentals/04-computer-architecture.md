@@ -30,7 +30,7 @@ Both instructions and data reside in the same memory. The CPU fetches instructio
 decodes them, and executes them. This is the **stored program concept** — the machine can modify its
 own instructions (though modern systems typically prevent this for security).
 
----
+<hr />
 
 ## 2. Harvard Architecture
 
@@ -56,7 +56,7 @@ cache is split into instruction cache and data cache (Harvard), while main memor
 Neumann).
 :::
 
----
+<hr />
 
 ## 3. CPU Components
 
@@ -109,7 +109,7 @@ The number varies by architecture (e.g., ARM has 16, x86-64 has 16).
 - **Stack Pointer (SP):** Points to the top of the call stack
 - **Link Register (LR):** Stores the return address for function calls (ARM-specific)
 
----
+<hr />
 
 ## 4. The Fetch-Decode-Execute Cycle
 
@@ -175,7 +175,7 @@ instruction.
    - Set flags in status register (zero, negative, carry, overflow)
 </details>
 
----
+<hr />
 
 ## 5. The Bus System
 
@@ -198,7 +198,7 @@ components.
 - Data bus width determines how many bits transferred per bus operation
 - A 32-bit address bus with byte-addressable memory can address $2^{32} = 4$ GiB
 
----
+<hr />
 
 ## 6. Cache Memory
 
@@ -259,7 +259,7 @@ $$\mathrm{Set} = \mathrm{Block address} \bmod s$$
 - **FIFO (First In, First Out):** Evict the oldest line
 - **Random:** Evict a random line
 
----
+<hr />
 
 ## 7. Virtual Memory and Paging
 
@@ -302,7 +302,7 @@ When the CPU accesses a virtual page that is not in physical memory:
 4. The page table is updated
 5. The instruction is restarted
 
----
+<hr />
 
 ## 8. Pipelining
 
@@ -345,7 +345,7 @@ _Solutions:_ Branch prediction (static or dynamic), delayed branch, branch targe
 
 _Solutions:_ Duplicate resources, stalling.
 
----
+<hr />
 
 ## 9. RISC vs CISC
 
@@ -378,7 +378,7 @@ Board-specific All A Level boards require understanding of RISC vs CISC principl
 internal micro-operations).
 :::
 
----
+<hr />
 
 ## Problem Set
 

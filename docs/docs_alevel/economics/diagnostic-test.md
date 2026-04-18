@@ -12,7 +12,7 @@ slug: economics-diagnostic-test
 This diagnostic test covers all A Level Economics micro and macro topics. Each question tests a
 specific concept, requires 2–5 steps, and includes a revision redirect to the relevant topic.
 
----
+<hr />
 
 ## Part A: Microeconomics (22 Questions)
 
@@ -277,7 +277,7 @@ The optimal level of pollution is where **marginal social cost of pollution = ma
 <i>Revision: [Market Failure](/docs/alevel/economics/microeconomics/market-failure)</i>
 </details>
 
----
+<hr />
 
 ## Part B: Macroeconomics (23 Questions)
 

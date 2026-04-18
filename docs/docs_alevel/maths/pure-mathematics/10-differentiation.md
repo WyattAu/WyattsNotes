@@ -23,7 +23,7 @@ The formula booklet lists derivatives of standard functions. You must know how t
 product, quotient, and chain rules, and how to find stationary points.
 :::
 
----
+<hr />
 
 ## 1. The Derivative from First Principles
 
@@ -45,7 +45,7 @@ there. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous
 differentiable.
 :::
 
----
+<hr />
 
 ## 2. Derivative of $x^n$ from First Principles
 
@@ -73,7 +73,7 @@ binomial theorem or logarithmic differentiation.
 **Intuition.** The power rule says: "bring the power down and reduce it by one." This works because
 the leading-order term in $(x+h)^n - x^n$ is $nx^{n-1}h$, and dividing by $h$ leaves $nx^{n-1}$.
 
----
+<hr />
 
 ## 3. The Product Rule
 
@@ -106,7 +106,7 @@ $$= f(x) \cdot g'(x) + g(x) \cdot f'(x) \quad \blacksquare$$
 and $v$ by $\delta v$, the change in area is approximately $v\,\delta u + u\,\delta v$ (the two thin
 strips along the edges; the corner piece $\delta u\,\delta v$ is negligible).
 
----
+<hr />
 
 ## 4. The Quotient Rule
 
@@ -129,7 +129,7 @@ The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Gettin
 the wrong way around is one of the most common errors in A Level mathematics.
 :::
 
----
+<hr />
 
 ## 5. The Chain Rule
 
@@ -153,7 +153,7 @@ multiply by the derivative of the inner function." Think of it as a gearing mech
 in $x$ causes a turn in $u$, which causes a turn in $y$, and the overall effect is the product of
 the two gear ratios.
 
----
+<hr />
 
 ## 6. Derivatives of Standard Functions
 
@@ -211,7 +211,7 @@ $$\frac{d}{dx}\tan x = \frac{d}{dx}\left(\frac{\sin x}{\cos x}\right) = \frac{\c
 | $\cos x$ | $-\sin x$  |
 | $\tan x$ | $\sec^2 x$ |
 
----
+<hr />
 
 ## 7. Second Derivatives and Stationary Points
 
@@ -253,7 +253,7 @@ point could still be a maximum, minimum, or inflection. Always use a nature tabl
 of $f'$ on either side) if the second derivative test is inconclusive.
 :::
 
----
+<hr />
 
 ## 8. Connected Rates of Change
 
@@ -276,7 +276,7 @@ At $r = 5$, $\dfrac{dr}{dt} = 2$:
 
 $$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\mathrm{cm}^2\mathrm{/s}$$
 
----
+<hr />
 
 ## 9. Increasing and Decreasing Functions
 
@@ -300,7 +300,7 @@ inequality. When asked to "show that a function is increasing", verify that $f'(
 $\geq 0$) on the given interval.
 :::
 
----
+<hr />
 
 ## 10. Points of Inflection
 
@@ -313,7 +313,7 @@ point of inflection at $x = 0$, but $f'(0) = 0$ in this case. Consider $f(x) = x
 $f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$.
 :::
 
----
+<hr />
 
 ## 11. Differentiation of Parametric Equations
 
@@ -329,7 +329,7 @@ $$\frac{dy}{dx} = \frac{2\cos t}{-2\sin t} = -\cot t$$
 
 At $t = \pi/4$: $\dfrac{dy}{dx} = -\cot(\pi/4) = -1$.
 
----
+<hr />
 
 ## 12. Implicit Differentiation
 
@@ -340,7 +340,7 @@ $x$, treating $y$ as a function of $x$.
 
 Differentiating: $2x + 2y\dfrac{dy}{dx} = 0$, so $\dfrac{dy}{dx} = -\dfrac{x}{y}$.
 
----
+<hr />
 
 ## Problem Set
 

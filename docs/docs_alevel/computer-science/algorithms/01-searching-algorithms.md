@@ -55,7 +55,7 @@ $x$. Therefore, at least $n$ comparisons are necessary in the worst case. $\squa
 | Average | $n/2$       | $O(n)$ |
 | Worst   | $n$         | $O(n)$ |
 
----
+<hr />
 
 ## 2. Binary Search
 
@@ -184,7 +184,7 @@ with pseudocode. **OCR (A)** requires linear and binary search; may also cover h
 **Edexcel** covers linear and binary search algorithms.
 :::
 
----
+<hr />
 
 ## 3. Comparison of Search Algorithms
 
@@ -197,7 +197,7 @@ with pseudocode. **OCR (A)** requires linear and binary search; may also cover h
 | Data structure        | Array, list   | Array (random access) |
 | Works on linked list? | Yes           | No (no random access) |
 
----
+<hr />
 
 ## 4. Variants
 
@@ -227,7 +227,7 @@ Exam tip For exam questions, always state the precondition (sorted array) for bi
 and trace through the algorithm step by step. Show the low, high, mid values at each iteration.
 :::
 
----
+<hr />
 
 ## Problem Set
 
@@ -377,7 +377,7 @@ For revision on sorting, see
 [Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms).
 </details>
 
----
+<hr />
 
 ## Problems
 

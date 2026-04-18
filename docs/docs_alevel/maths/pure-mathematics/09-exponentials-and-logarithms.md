@@ -23,7 +23,7 @@ The formula booklet gives the laws of logarithms and the derivatives of $e^x$ an
 You must know how to use them and where they come from.
 :::
 
----
+<hr />
 
 ## 1. The Number $e$
 
@@ -65,7 +65,7 @@ $\lim_{n\to\infty}(1+1/n)^n$", substitute a large value of $n$ (e.g., $n=10^6$) 
 appropriately.
 :::
 
----
+<hr />
 
 ## 2. The Derivative of $e^x$
 
@@ -110,7 +110,7 @@ proportional to its current size — this is precisely the behaviour of $e^{kt}$
 appears everywhere in nature: compound interest, radioactive decay, population dynamics, and cooling
 are all governed by exponential functions.
 
----
+<hr />
 
 ## 3. Logarithms as Inverses of Exponentials
 
@@ -135,7 +135,7 @@ $a^{\log_a x} = x$. $\blacksquare$
 **Proof of (ii).** Let $y = a^x$. Then $\log_a y = \log_a(a^x)$. By definition of the logarithm as
 inverse, $\log_a(a^x) = x$. $\blacksquare$
 
----
+<hr />
 
 ## 4. Laws of Logarithms
 
@@ -177,7 +177,7 @@ Common errors:
 - $(\log_a x)^n \neq n\log_a x$ (the power law applies to the argument, not the log itself)
 :::
 
----
+<hr />
 
 ## 5. Change of Base Formula
 
@@ -201,7 +201,7 @@ constant multiples of each other. If you think of $\log_a x$ as "how many times 
 base $a$ to reach $x$?", then $\log_a b / \log_a c$ tells you the ratio of the "number of steps" in
 base $a$ to reach $b$ versus $c$. The formula shows this ratio is independent of $a$.
 
----
+<hr />
 
 ## 6. The Natural Logarithm as an Area
 
@@ -237,7 +237,7 @@ naturally from calculus, whereas $\log_{10}$ is an artefact of our base-10 numbe
 Since $1/t$ decreases as $t$ grows, each additional unit of $x$ contributes less area. This is why
 $\ln x$ grows so slowly — it takes $e^{10} \approx 22026$ to reach $\ln x = 10$.
 
----
+<hr />
 
 ## 7. Solving Exponential Equations
 
@@ -279,7 +279,7 @@ When substituting $u = a^x$ or $u = \ln x$, always check the domain. For $u = a^
 have $u \gt{} 0$; for $u = \ln x$ we have $x \gt{} 0$. Always reject invalid solutions.
 :::
 
----
+<hr />
 
 ## 8. Exponential Modelling
 
@@ -332,7 +332,7 @@ In modelling questions, always:
 4. State the complete model before answering the question
 :::
 
----
+<hr />
 
 ## 9. Graphs of Exponential and Logarithmic Functions
 
@@ -360,7 +360,7 @@ $y = \ln(x-a)$ (horizontal translation) follow from standard transformation rule
 **Intuition.** The graphs of $y = e^x$ and $y = \ln x$ are reflections of each other in the line
 $y = x$, since they are inverse functions.
 
----
+<hr />
 
 ## 10. Logarithmic Differentiation
 
@@ -379,7 +379,7 @@ Never try to differentiate $f(x)^{g(x)}$ directly using the power rule or the ex
 rule alone — it requires logarithmic differentiation or rewriting as $e^{g(x)\ln f(x)}$.
 :::
 
----
+<hr />
 
 ## Problem Set
 

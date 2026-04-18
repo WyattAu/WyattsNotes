@@ -22,7 +22,7 @@ delete, and search.
 Given a key $k$, compute $\mathrm{index} = h(k) \bmod m$, where $h$ is the hash function and $m$ is
 the table size. Store the key-value pair at this index.
 
----
+<hr />
 
 ## 2. Hash Functions
 
@@ -70,7 +70,7 @@ def polynomial_hash(s, p=31, m=10**9 + 7):
     return h
 ```
 
----
+<hr />
 
 ## 3. Collisions
 
@@ -85,7 +85,7 @@ at least one collision must occur.
 **Proof.** By the pigeonhole principle: $n$ keys mapped to $m$ buckets where $n \gt{} m$ means at
 least one bucket contains $\lceil n/m \rceil \geq 2$ keys. $\square$
 
----
+<hr />
 
 ## 4. Collision Resolution: Chaining
 
@@ -144,7 +144,7 @@ $n \cdot (1/m) = n/m$. $\square$
 
 **Proof.** $m$ bucket headers plus $n$ nodes, each storing a key, value, and pointer. $\square$
 
----
+<hr />
 
 ## 5. Collision Resolution: Open Addressing
 
@@ -234,7 +234,7 @@ clustering.
 **Requirement:** $h_2(k) \neq 0$ and $h_2(k)$ is coprime with $m$. Common choice:
 $h_2(k) = 1 + (k \bmod (m - 1))$.
 
----
+<hr />
 
 ## 6. Load Factor and Resizing
 
@@ -255,7 +255,7 @@ new table of size $\approx 2m$ and rehash all keys.
 powers of 2 is dominated by the last resize: $\sum_{k=0}^{\log n} 2^k \cdot O(1) = O(n)$. Amortised
 per insertion: $O(1)$. $\square$
 
----
+<hr />
 
 ## 7. Comparison of Collision Resolution Methods
 
@@ -277,7 +277,7 @@ Board-specific
 - **Edexcel** covers hash tables and collision resolution methods
 :::
 
----
+<hr />
 
 ## Problem Set
 
@@ -455,7 +455,7 @@ For revision on complexity, see
 
 </details>
 
----
+<hr />
 
 ## Problems
 

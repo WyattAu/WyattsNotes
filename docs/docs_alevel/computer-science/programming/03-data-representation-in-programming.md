@@ -52,7 +52,7 @@ def approx_equal(a, b, epsilon=1e-9):
 
 :::
 
----
+<hr />
 
 ## 2. Pointers and References
 
@@ -103,7 +103,7 @@ append_one(my_list)
 print(my_list)  # [0, 1]
 ```
 
----
+<hr />
 
 ## 3. Strings
 
@@ -146,7 +146,7 @@ representation with specific detail on compression (lossy vs lossless). **Edexce
 representation fundamentals including number systems and character encoding.
 :::
 
----
+<hr />
 
 ## 4. File Handling
 
@@ -202,7 +202,7 @@ with open("file.txt", "r") as f:
 # File is automatically closed here
 ```
 
----
+<hr />
 
 ## 5. Exception Handling
 
@@ -272,7 +272,7 @@ class InsufficientFundsError(Exception):
         super().__init__(f"Insufficient funds: balance={balance}, requested={amount}")
 ```
 
----
+<hr />
 
 ## Problem Set
 

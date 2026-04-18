@@ -43,7 +43,7 @@ $$f(n) = o(g(n)) \iff \lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$$
 
 $$f(n) = \omega(g(n)) \iff \lim_{n \to \infty} \frac{f(n)}{g(n)} = \infty$$
 
----
+<hr />
 
 ## 2. The Complexity Hierarchy
 
@@ -85,7 +85,7 @@ space complexity analysis. **OCR (A)** requires Big-O notation; may require comp
 performance. **Edexcel** covers time and space complexity with Big-O notation.
 :::
 
----
+<hr />
 
 ## 3. Best, Average, and Worst Case
 
@@ -113,7 +113,7 @@ Pitfall Average case assumes a **uniform distribution** of inputs. Real-world da
 not be uniformly distributed. Always state the distribution assumption when discussing average case.
 :::
 
----
+<hr />
 
 ## 4. Analyzing Recursive Algorithms
 
@@ -151,7 +151,7 @@ $f(n) = O(n) = O(n^{1.585 - 0.585}) = O(n^{c - \epsilon})$. Case 1: $T(n) = \The
 $a = 2, b = 2, c = 1$. $f(n) = O(n^2) = \Omega(n^{1+1}) = \Omega(n^{c+\epsilon})$. Check regularity:
 $2(n/2)^2 = n^2/2 \leq c \cdot n^2$ for $c = 1/2$. Case 3: $T(n) = \Theta(n^2)$.
 
----
+<hr />
 
 ## 5. Amortized Analysis
 
@@ -202,7 +202,7 @@ capacity/2, else 0.
 
 Amortised cost per operation: $O(3) = O(1)$. $\square$
 
----
+<hr />
 
 ## 6. Practical Analysis
 
@@ -228,7 +228,7 @@ when $O(n)$ is achievable with more complex algorithms.
 | $10^6$ | 20         | $2 \times 10^7$    |
 | $10^9$ | 30         | $3 \times 10^{10}$ |
 
----
+<hr />
 
 ## Problem Set
 
@@ -417,7 +417,7 @@ For revision on specific algorithm complexities, see
 [Searching Algorithms](/docs/alevel/computer-science/algorithms/searching-algorithms).
 </details>
 
----
+<hr />
 
 ## Problems
 

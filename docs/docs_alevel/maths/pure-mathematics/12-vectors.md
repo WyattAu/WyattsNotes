@@ -23,7 +23,7 @@ The formula booklet gives the scalar product formula. You must be comfortable wo
 and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation.
 :::
 
----
+<hr />
 
 ## 1. Vectors in 2D and 3D
 
@@ -44,7 +44,7 @@ $x$- and $y$-axes respectively. In 3D, $\mathbf{k} = \begin{pmatrix}0\\0\\1\end{
 The **position vector** of a point $P$ relative to an origin $O$ is the vector
 $\overrightarrow{OP}$, written as $\mathbf{r}_P$ or simply $\mathbf{p}$.
 
----
+<hr />
 
 ## 2. Magnitude, Unit Vectors, Direction Cosines
 
@@ -73,7 +73,7 @@ respectively.
 
 Note: $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
----
+<hr />
 
 ## 3. Vector Addition
 
@@ -130,7 +130,7 @@ $\overrightarrow{BC} = \begin{pmatrix}-2\\5\\-2\end{pmatrix}$.
 $\overrightarrow{AB} + \overrightarrow{BC} = \begin{pmatrix}1\\3\\2\end{pmatrix} = \overrightarrow{AC}$,
 confirming the triangle law in 3D.
 
----
+<hr />
 
 ## 4. The Scalar (Dot) Product
 
@@ -181,7 +181,7 @@ $\mathbf{a}\cdot\mathbf{b} = |\mathbf{a}| \cdot (\mathrm{shadow of }\mathbf{b}\m
 If they are perpendicular, the shadow is zero. If they point the same way, the dot product is
 positive; if opposite, negative.
 
----
+<hr />
 
 ## 5. Vector Equation of a Line
 
@@ -237,7 +237,7 @@ $$\mathbf{r} = \begin{pmatrix}2\\-1\\3\end{pmatrix} + t\begin{pmatrix}3\\2\\-5\e
 
 To check: at $t = 0$ we get $P$; at $t = 1$ we get $\begin{pmatrix}5\\1\\-2\end{pmatrix} = Q$. ✓
 
----
+<hr />
 
 ## 6. Intersection of Lines
 
@@ -263,7 +263,7 @@ $\mathbf{r}_2 = \mathbf{a}_2 + s\mathbf{b}_2$:
 
 To verify skewness, show that the system of equations for $t$ and $s$ is inconsistent.
 
----
+<hr />
 
 ## 7. Angle Between Two Vectors
 
@@ -273,7 +273,7 @@ $$\cos\theta = \frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}||\mathbf{b}|}$$
 
 The angle between two **lines** is found using the direction vectors.
 
----
+<hr />
 
 ## 8. Distance from a Point to a Line
 
@@ -319,7 +319,7 @@ $Q = \begin{pmatrix}1+10/3\\5/3\\2-5/3\end{pmatrix} = \begin{pmatrix}13/3\\5/3\\
 
 $d = \left|\begin{pmatrix}1/3\\2/3\\-2/3\end{pmatrix}\right| = \sqrt{\dfrac{1}{9} + \dfrac{4}{9} + \dfrac{4}{9}} = \sqrt{\dfrac{9}{9}} = 1$.
 
----
+<hr />
 
 ## 9. Scalar Triple Product
 
@@ -374,7 +374,7 @@ $= 2(12+2) + 0 + 1(2) = 28 + 2 = 30$.
 
 Volume $= |30| = 30$ cubic units.
 
----
+<hr />
 
 ## 10. Vector Proof Techniques
 
@@ -455,7 +455,7 @@ $\overrightarrow{CM} = \mathbf{m} - \mathbf{c} = \dfrac{\mathbf{a} + \mathbf{b}}
 = \dfrac{1}{2}\overrightarrow{CA} + \dfrac{1}{2}\overrightarrow{CB}$.
 $\blacksquare$
 
----
+<hr />
 
 ## Problem Set
 

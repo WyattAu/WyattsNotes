@@ -23,7 +23,7 @@ The formula booklet gives the Newton-Raphson formula and the trapezium/Simpson's
 must know when each method is applicable and its limitations.
 :::
 
----
+<hr />
 
 ## 1. Locating Roots: Sign Change
 
@@ -50,7 +50,7 @@ $f(1) = 1$, but no root.
 of crossing zero. If you walk from a point below sea level to one above sea level, you must cross
 sea level at some point — provided the ground is continuous (no teleporting).
 
----
+<hr />
 
 ## 2. Fixed-Point Iteration
 
@@ -118,7 +118,7 @@ The closer $|g'(\alpha)|$ is to zero, the faster the convergence. When $g'(\alph
 iteration achieves quadratic convergence (similar to Newton-Raphson), since the leading error term
 in the Taylor expansion vanishes.
 
----
+<hr />
 
 ## 3. Newton-Raphson Method
 
@@ -244,7 +244,7 @@ The error is multiplied by $2/3$ each step (linear, not quadratic). Compare: sta
 with $f'(\alpha) \neq 0$ would give roughly 1, then 2, then 4, then 8 correct digits. Here each step
 only adds a fixed fraction of a digit.
 
----
+<hr />
 
 ## 4. The Trapezium Rule
 
@@ -326,7 +326,7 @@ $$n \gt{} \sqrt{\frac{1^3 \times 2}{12 \times 10^{-4}}} = \sqrt{\frac{2}{0.0012}
 So $n = 42$ strips suffice (rounding up to the nearest even number, which is convenient if one later
 wishes to compare with Simpson's rule).
 
----
+<hr />
 
 ## 5. Simpson's Rule
 
@@ -360,7 +360,7 @@ Simpson's rule requires an **even** number of strips. The trapezium rule works w
 number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$).
 :::
 
----
+<hr />
 
 ## 6. Comparison of Methods
 
@@ -373,7 +373,7 @@ number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$
 | Trapezium rule | $O(1/n^2)$  | Any $f$            | Integration  |
 | Simpson's rule | $O(1/n^4)$  | Even $n$ strips    | Integration  |
 
----
+<hr />
 
 ## 7. Comparison of Root-Finding Methods
 
@@ -419,7 +419,7 @@ Newton-Raphson requires both $f$ and $f'$ per step (two evaluations), but its qu
 means it needs far fewer steps in total. For high accuracy requirements, Newton-Raphson is
 overwhelmingly more efficient despite the higher per-step cost.
 
----
+<hr />
 
 ## Problem Set
 

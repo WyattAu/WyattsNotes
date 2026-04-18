@@ -49,7 +49,7 @@ class BankAccount:
 | Creation | Defined by programmer | Created at runtime        |
 | Memory   | One copy of methods   | Own copy of instance vars |
 
----
+<hr />
 
 ## 2. Encapsulation
 
@@ -92,7 +92,7 @@ Exam tip In exams, always justify why encapsulation is important. Focus on data 
 (preventing invalid states) and implementation flexibility.
 :::
 
----
+<hr />
 
 ## 3. Inheritance
 
@@ -164,7 +164,7 @@ class Cat(Animal):
 `super()` calls the parent class's method, enabling extension (not replacement) of inherited
 behaviour.
 
----
+<hr />
 
 ## 4. Polymorphism
 
@@ -217,7 +217,7 @@ class definitions with attributes and methods; constructor/destructor understand
 covers OOP with pseudocode; emphasises encapsulation and data hiding.
 :::
 
----
+<hr />
 
 ## 5. Abstract Classes and Interfaces
 
@@ -250,7 +250,7 @@ An **interface** is a contract specifying methods a class must implement, withou
 implementation. In Python, interfaces are typically simulated using abstract classes with only
 abstract methods.
 
----
+<hr />
 
 ## 6. Association, Aggregation, and Composition
 
@@ -303,7 +303,7 @@ When a `House` is destroyed, its `Room` objects are also destroyed.
 | Aggregation  | Independent  | Independent          | Department-Teacher |
 | Composition  | Dependent    | Part dies with whole | House-Room         |
 
----
+<hr />
 
 ## 7. SOLID Principles
 
@@ -334,7 +334,7 @@ class EmailService:
 
 Each class has a single responsibility.
 
----
+<hr />
 
 ## Problem Set
 

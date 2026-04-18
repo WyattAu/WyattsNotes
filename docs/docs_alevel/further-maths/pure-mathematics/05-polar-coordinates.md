@@ -30,7 +30,7 @@ Polar coordinates appear in Edexcel FP2 and CIE P2. OCR (A) does not cover this 
 covers the essentials in Paper 1. The formula booklet provides the area formula.
 :::
 
----
+<hr />
 
 ## 1. Converting Between Cartesian and Polar
 
@@ -76,7 +76,7 @@ When converting from Cartesian to polar, always check the quadrant of the point.
 calculator value of $\arctan(y/x)$ alone is insufficient for points in quadrants II and III.
 :::
 
----
+<hr />
 
 ## 2. Polar Equations of Curves
 
@@ -138,7 +138,7 @@ A **logarithmic spiral** has equation $r = ae^{b\theta}$.
 The logarithmic spiral appears frequently in nature (shells, hurricanes) because the angle between
 the radius and the tangent is constant.
 
----
+<hr />
 
 ## 3. Sketching Polar Curves
 
@@ -177,7 +177,7 @@ A limacon $r = a + b\cos\theta$ has an inner loop if $b > a$, a dimple if $a < b
 :::
 - Cardioid: $a = b$ (boundary between inner loop and dimpled)
 
----
+<hr />
 
 ## 4. Area Enclosed by a Polar Curve
 
@@ -235,7 +235,7 @@ The area formula uses $r^2$, not $r$. When computing the area between two curves
 subtract $r_2^2$ from $r_1^2$, not $r_2$ from $r_1$.
 :::
 
----
+<hr />
 
 ## 5. Tangents to Polar Curves
 
@@ -293,7 +293,7 @@ $$\frac{dr}{d\theta}\sin\theta + r\cos\theta = 0$$
 
 $$\frac{dr}{d\theta}\cos\theta - r\sin\theta = 0$$
 
----
+<hr />
 
 ## 6. Summary of Key Results
 
@@ -304,7 +304,7 @@ $$\frac{dr}{d\theta}\cos\theta - r\sin\theta = 0$$
 | Area                      | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$                     |
 | Gradient                  | $\dfrac{dy}{dx} = \dfrac{r'\sin\theta + r\cos\theta}{r'\cos\theta - r\sin\theta}$ |
 
----
+<hr />
 
 ## Problems
 

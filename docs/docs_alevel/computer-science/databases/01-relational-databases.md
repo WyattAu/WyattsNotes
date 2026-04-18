@@ -36,7 +36,7 @@ A **relational database** organises data into **relations** (tables), each consi
 - **Foreign key:** An attribute that references the primary key of another relation, establishing a
   relationship.
 
----
+<hr />
 
 ## 2. SQL
 
@@ -134,7 +134,7 @@ UPDATE Students SET age = 19 WHERE student_id = 101;
 DELETE FROM Students WHERE student_id = 101;
 ```
 
----
+<hr />
 
 ## 3. Normalisation
 
@@ -262,7 +262,7 @@ Board-specific
 - **Edexcel** covers SQL fundamentals and basic normalisation
 :::
 
----
+<hr />
 
 ## 4. ACID Properties
 
@@ -289,7 +289,7 @@ COMMIT;
 - **Isolation:** Other transactions see either the old or new balances, not an intermediate state
 - **Durability:** After COMMIT, the new balances persist even if the server crashes
 
----
+<hr />
 
 ## 5. Entity-Relationship Diagrams
 
@@ -312,7 +312,7 @@ Resolved into:
 [Student] --1---[Enrolment]---Many-- [Course]
 ```
 
----
+<hr />
 
 ## Problem Set
 
@@ -546,7 +546,7 @@ BCNF (which eliminates redundancy but loses the FD $AB \to C$). In practice, 3NF
 when dependency preservation is critical.
 </details>
 
----
+<hr />
 
 ## Problems
 

@@ -25,7 +25,7 @@ including oblique impacts.
 | OCR (A)    | Paper 2 | Centres of mass; direct and oblique collisions       |
 | CIE (9231) | M2      | Centres of mass covered; collisions in M2            |
 
----
+<hr />
 
 ## 1. Centre of Mass of a Uniform Lamina
 
@@ -72,7 +72,7 @@ $$\boxed{\bar{x} = \frac{x_1 + x_2 + x_3}{3}, \qquad \bar{y} = \frac{y_1 + y_2 +
 
 $\square$
 
----
+<hr />
 
 ## 2. Centre of Mass of Standard Shapes
 
@@ -106,7 +106,7 @@ For a uniform circular arc of radius $r$ subtending angle $2\alpha$ at the centr
 
 $$\boxed{\bar{x} = \frac{r\sin\alpha}{\alpha}}$$
 
----
+<hr />
 
 ## 3. Centre of Mass of Composite Bodies
 
@@ -140,7 +140,7 @@ $$= \frac{32a^3 - 4\pi a^3 - 16a^3/3}{a^2(16 - 2\pi)} = \frac{a(96 - 12\pi - 16)
 $$= \frac{a(80 - 12\pi)}{48 - 6\pi} = \frac{a(40 - 6\pi)}{24 - 3\pi}$$
 </details>
 
----
+<hr />
 
 ## 4. Centre of Mass of Frameworks
 
@@ -167,7 +167,7 @@ For a body suspended from a point $P$ to hang in equilibrium, the centre of mass
 directly below $P$. If suspended from a second point $Q$, $G$ must be directly below $Q$. The
 intersection of the two vertical lines through $P$ and $Q$ gives $G$.
 
----
+<hr />
 
 ## 5. Elastic Collisions
 
@@ -227,7 +227,7 @@ $2v_1 + 3(v_1 + 3) = 10 \implies 5v_1 + 9 = 10 \implies v_1 = 0.2\,\mathrm{m s}^
 $v_2 = 0.2 + 3 = 3.2\,\mathrm{m s}^{-1}$.
 </details>
 
----
+<hr />
 
 ## 6. Kinetic Energy Loss in Collisions
 
@@ -254,7 +254,7 @@ $\Delta KE = \dfrac{1}{2}\mu(u_1 - u_2)^2$ (maximum energy loss for coalescence)
 
 $\square$
 
----
+<hr />
 
 ## 7. Oblique Impacts
 
@@ -313,7 +313,7 @@ Angle of reflection: $\beta = \arctan(4/3)$.
 Note: $\tan\beta = 4/3 = \dfrac{\tan\alpha}{e} = \dfrac{2/3}{0.5} = 4/3$. ✓
 </details>
 
----
+<hr />
 
 ## 8. Summary of Key Results
 
@@ -327,7 +327,7 @@ $$\boxed{\Delta KE = \frac{1}{2}\mu(u_1 - u_2)^2(1 - e^2), \quad \mu = \frac{m_1
 
 $$\boxed{\mathrm{Oblique wall impact: } v_{\mathrm{normal}} = -e \cdot u_{\mathrm{normal}}, \quad v_{\mathrm{tangential}} = u_{\mathrm{tangential}}}$$
 
----
+<hr />
 
 ## Problems
 

@@ -23,7 +23,7 @@ Energy methods are often simpler than force methods for problems where only init
 final states matter (no time information needed).
 :::
 
----
+<hr />
 
 ## 1. Work Done
 
@@ -50,7 +50,7 @@ The SI unit of work is the joule (J) = newton-metre (Nm).
 **Intuition.** Work is energy transferred by a force. No work is done if the force is perpendicular
 to the motion (e.g., the normal reaction does no work on a body sliding on a horizontal surface).
 
----
+<hr />
 
 ## 2. Kinetic Energy
 
@@ -72,7 +72,7 @@ $$W = \int_0^s F\,ds' = \int_0^v mv'\,dv' = \frac{1}{2}mv^2$$
 
 This work equals the kinetic energy gained: $\mathrm{KE} = \tfrac{1}{2}mv^2$. $\blacksquare$
 
----
+<hr />
 
 ## 3. Gravitational Potential Energy
 
@@ -117,7 +117,7 @@ $$mgh = \frac{1}{2}m(\sqrt{gr})^2 + mg(2r) \implies h = \frac{5}{2}r$$
 
 The entry height must be at least $2.5r$ above the bottom of the loop.
 
----
+<hr />
 
 ## 4. Conservation of Energy
 
@@ -163,7 +163,7 @@ $$\frac{1}{2}(3 + 5)v^2 = 39.2 \implies 4v^2 = 39.2 \implies v \approx 3.13\,\ma
 Compare with the force method: $a = \frac{5-3}{5+3}(9.8) = 2.45\,\mathrm{m/s}^2$, then
 $v = \sqrt{2(2.45)(2)} \approx 3.13\,\mathrm{m/s}$. The energy method avoids solving for tension.
 
----
+<hr />
 
 ## 5. Power
 
@@ -232,7 +232,7 @@ $$P_{\mathrm{avg}} = \frac{\frac{1}{2}mv^2}{t} = \frac{1}{2}Fv$$
 This is half the instantaneous power $Fv$ at the end, since velocity increases linearly from $0$ to
 $v$ while force remains constant. For constant power $P$, the average power equals $P$ throughout.
 
----
+<hr />
 
 ## 6. Elastic Potential Energy
 
@@ -303,7 +303,7 @@ $$E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}mv_{\max}^2$$
 
 This gives $v_{\max} = A\sqrt{k/m}$, the maximum speed at the equilibrium position.
 
----
+<hr />
 
 ## Problem Set
 

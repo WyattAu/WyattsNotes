@@ -45,7 +45,7 @@ A LAN using wireless communication (Wi-Fi, IEEE 802.11 standards).
 | PAN   | Personal (room)  | Individual          | Bluetooth devices  |
 | MAN   | City             | Single provider     | City-wide cable TV |
 
----
+<hr />
 
 ## 2. Network Topologies
 
@@ -86,7 +86,7 @@ Devices form a circular loop. Data travels in one direction.
 | Scalability   | High            | Low            | Low            | Low            |
 | Cable failure | Isolates device | Multiple paths | Entire network | Entire network |
 
----
+<hr />
 
 ## 3. The OSI Model
 
@@ -125,7 +125,7 @@ Physical:     [Bits on wire]
 | Internet       | Network                            | IP, ICMP             |
 | Network Access | Data Link, Physical                | Ethernet, Wi-Fi      |
 
----
+<hr />
 
 ## 4. TCP vs UDP
 
@@ -171,7 +171,7 @@ Board-specific Know specific use cases for each protocol:
 
 This establishes a reliable connection before data transfer begins.
 
----
+<hr />
 
 ## 5. IP Addressing
 
@@ -220,7 +220,7 @@ Subnet masks divide an IP address into **network** and **host** portions.
 Private addresses are not routable on the internet. **NAT** (Network Address Translation) translates
 private addresses to a public address at the router.
 
----
+<hr />
 
 ## 6. DNS (Domain Name System)
 
@@ -255,7 +255,7 @@ Root DNS servers (.)
 5. Resolver queries the authoritative server → returns the IP address
 6. Result is cached for future use
 
----
+<hr />
 
 ## 7. Common Protocols
 
@@ -272,7 +272,7 @@ Root DNS servers (.)
 | SSH      | Application | 22    | Secure remote access        |
 | Telnet   | Application | 23    | Remote access (unencrypted) |
 
----
+<hr />
 
 ## Problem Set
 
@@ -504,7 +504,7 @@ For revision on network security, see
 
 </details>
 
----
+<hr />
 
 ## 8. Worked Examples: Subnetting and CIDR
 
@@ -569,7 +569,7 @@ Now with `/25`:
 
 Different network addresses — different subnets.
 
----
+<hr />
 
 ## 9. Protocol Deep Dive
 
@@ -624,7 +624,7 @@ a certificate, and all traffic is encrypted. Modern browsers flag HTTP sites as 
 SMTP is a push protocol — the sender pushes the message to the receiver's mail server. For
 receiving, POP3 or IMAP is used.
 
----
+<hr />
 
 ## 10. Common Pitfalls
 
@@ -637,7 +637,7 @@ receiving, POP3 or IMAP is used.
 | Confusing SSH with Telnet                   | Both provide remote access, but only SSH encrypts           | Never use Telnet on untrusted networks                          |
 | Off-by-one in subnet boundaries             | Including the network or broadcast address as a usable host | First usable = network + 1, last usable = broadcast - 1         |
 
----
+<hr />
 
 ## 11. Additional Problem Set
 

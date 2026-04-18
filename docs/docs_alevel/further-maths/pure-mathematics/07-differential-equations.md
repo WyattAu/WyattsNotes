@@ -33,7 +33,7 @@ focuses on first-order equations with growth and decay modelling. The formula bo
 integrating factor formula on Edexcel; AQA and OCR students must know it.
 :::
 
----
+<hr />
 
 ## 1. First-Order ODEs: Separable Equations
 
@@ -93,7 +93,7 @@ $$\boxed{y = \frac{Ae^x}{1 + Ae^x}}$$
 But note $y = 0$ and $y = 1$ are also solutions (equilibrium solutions), corresponding to $A = 0$
 and the limiting case $A \to \infty$.
 
----
+<hr />
 
 ## 2. First-Order ODEs: Integrating Factor Method
 
@@ -179,7 +179,7 @@ The constant of integration in $\mu = e^{\int P\,dx}$ can be omitted (absorbed i
 Always choose the simplest antiderivative.
 :::
 
----
+<hr />
 
 ## 3. Second-Order Linear ODEs with Constant Coefficients
 
@@ -264,7 +264,7 @@ Auxiliary: $m^2 + 2m + 5 = 0 \implies m = \dfrac{-2 \pm \sqrt{4-20}}{2} = -1 \pm
 
 $$y = e^{-x}(A\cos 2x + B\sin 2x)$$
 
----
+<hr />
 
 ## 4. Non-Homogeneous Second-Order ODEs: Particular Solutions
 
@@ -352,7 +352,7 @@ $4p = 3 \implies p = \dfrac{3}{4}$. $4q - 3 = 2 \implies q = \dfrac{5}{4}$.
 
 $$\boxed{y = (A + Bx)e^{2x} + \frac{3}{4}x + \frac{5}{4}}$$
 
----
+<hr />
 
 ## 5. Growth and Decay Models
 
@@ -418,7 +418,7 @@ $S = 10e^{-t/20}$.
 
 After 20 minutes: $S(20) = 10e^{-1} \approx 3.68$ kg.
 
----
+<hr />
 
 ## 6. Proof of the General Solution of the Second-Order Homogeneous ODE
 
@@ -457,7 +457,7 @@ Therefore $y = (A + Bx)e^{mx}$ is the general solution.
 
 $\square$
 
----
+<hr />
 
 ## Problems
 

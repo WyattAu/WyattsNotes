@@ -31,7 +31,7 @@ Centripetal force is not a separate force — it is the resultant of the physica
 include "centripetal force" on a free body diagram.
 :::
 
----
+<hr />
 
 ## 1. Angular Quantities
 
@@ -64,7 +64,7 @@ For uniform circular motion:
 
 $$\boxed{\omega = \frac{2\pi}{T} = 2\pi f}$$
 
----
+<hr />
 
 ## 2. Centripetal Acceleration
 
@@ -97,7 +97,7 @@ By Newton's second law:
 
 $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 
----
+<hr />
 
 ## 3. Motion in Horizontal Circles
 
@@ -151,7 +151,7 @@ $\sin\phi = a/r$.
 
 $$\frac{v^2}{a} = \frac{R\sin\phi}{m} = \frac{g\sin\phi}{\cos\phi} = g\tan\phi = \frac{ga}{h}$$
 
----
+<hr />
 
 ## 4. Motion in Vertical Circles
 
@@ -231,7 +231,7 @@ $g\cos\theta = 2g(1-\cos\theta) \implies \cos\theta = 2 - 2\cos\theta \implies 3
 
 $$\boxed{\theta = \arccos\!\left(\frac{2}{3}\right) \approx 48.2°}$$
 
----
+<hr />
 
 ## 5. Non-uniform Circular Motion
 
@@ -246,7 +246,7 @@ $$a = \sqrt{a_c^2 + a_t^2}$$
 The resultant force has a radial component providing $a_c$ and a tangential component providing
 $a_t$.
 
----
+<hr />
 
 ## Problems
 
@@ -466,7 +466,7 @@ Section 4.
 
 </details>
 
----
+<hr />
 
 ## 6. Vertical Circles: Energy Method — Full Derivation
 
@@ -520,7 +520,7 @@ the top.
 The speed at the top is: $v_{\mathrm{top}}^2 = v_0^2 - 2gr(2) = 5gr - 4gr = gr$, confirming
 $v_{\mathrm{top}} = \sqrt{gr}$.
 
----
+<hr />
 
 ## 7. Banked Tracks: Maximum and Minimum Speed
 
@@ -573,7 +573,7 @@ The optimum speed (no friction needed) is
 $v_{\mathrm{opt}} = \sqrt{80 \times 9.8 \times \tan 30°} = \sqrt{452.6} \approx 21.3\,\mathrm{m s}^{-1}$,
 which lies between $v_{\min}$ and $v_{\max}$ as expected.
 
----
+<hr />
 
 ## 8. Conical Pendulum: Detailed Derivation of the Period
 
@@ -615,7 +615,7 @@ Key observations:
 - As $\alpha \to 90^\circ$, the period $\to 0$ (impractical: requires infinite speed)
 - A larger angle $\alpha$ means a faster rotation (shorter period)
 
----
+<hr />
 
 ## 9. Worked Example: Motorcyclist on a Vertical Loop
 
@@ -658,7 +658,7 @@ The negative sign confirms the track pushes **inward** (downward at this point) 
 circular path. This is expected: at this speed, the motorcyclist would fly off without the track
 pushing them inward.
 
----
+<hr />
 
 ## 10. Common Pitfalls
 
@@ -698,7 +698,7 @@ $R$, it means the contact force acts in the opposite direction to what you assum
 $\omega = v/r$ is only valid when $v$ is the tangential speed and $r$ is the radius of the circular
 path. In a conical pendulum, the radius of the circle is $L\sin\alpha$, not $L$.
 
----
+<hr />
 
 ## 11. Problem Set
 

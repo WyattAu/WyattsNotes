@@ -18,7 +18,7 @@ slug: coordinates-and-geometry
 | OCR (A)    | Paper 1 | Similar coverage                         |
 | CIE (9709) | P1      | Coordinate geometry of lines and circles |
 
----
+<hr />
 
 ## 1. The Coordinate Plane
 
@@ -45,7 +45,7 @@ $$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \blacksquare$$
 
 $$M = \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$$
 
----
+<hr />
 
 ## 2. Straight Lines
 
@@ -117,7 +117,7 @@ $$2y + 2 = -3x + 12 \implies 3x + 2y - 10 = 0$$
 
 </details>
 
----
+<hr />
 
 ## 3. Circles
 
@@ -189,7 +189,7 @@ Centre: $(3, -2)$, Radius: $5$.
 
 </details>
 
----
+<hr />
 
 ## 4. Intersection of a Line and a Circle
 
@@ -249,7 +249,7 @@ $$3x + 4y = 25$$
 
 </details>
 
----
+<hr />
 
 ## 5. Angle in a Semicircle
 
@@ -270,7 +270,7 @@ Product: $\frac{-(x^2 - r^2)}{x^2 - r^2} = -1$ (for $x \neq \pm r$).
 
 Since the product of gradients is $-1$, $AP \perp BP$. $\blacksquare$
 
----
+<hr />
 
 ## 6. Distance from a Point to a Line
 
@@ -344,7 +344,7 @@ The absolute value in the numerator ensures the distance is always non-negative.
 $ax_0 + by_0 + c$ tells you which side of the line the point lies on.
 :::
 
----
+<hr />
 
 ## 7. Intersection of Two Circles
 
@@ -395,7 +395,7 @@ Since $|r_1 - r_2| = 2 < 5 < 6 = r_1 + r_2$, the circles intersect at two points
 
 </details>
 
----
+<hr />
 
 ## 8. Equation of a Circle Through Three Points
 
@@ -453,7 +453,7 @@ consistent with $AC$ being a diameter.
 
 </details>
 
----
+<hr />
 
 ## 9. Parametric Equations of a Circle
 
@@ -513,7 +513,7 @@ $y = -1 \pm \sqrt{5}$.
 
 </details>
 
----
+<hr />
 
 ## 10. Problem Set
 
@@ -528,7 +528,7 @@ $$y - 5 = \frac{2}{3}(x - 2) \implies 3y - 15 = 2x - 4 \implies 2x - 3y + 11 = 0
 </details>
 <b>If you get this wrong, revise:</b> [Equation of a line](#22-equation-of-a-line)
 
----
+<hr />
 
 **Problem 2.** Find the centre and radius of the circle $x^2 + y^2 + 8x - 6y - 24 = 0$.
 
@@ -547,7 +547,7 @@ Centre: $(-4, 3)$, Radius: $7$.
 </details>
 <b>If you get this wrong, revise:</b> [Expanded form](#32-expanded-form)
 
----
+<hr />
 
 **Problem 3.** Show that the line $y = x + 1$ is a tangent to the circle $x^2 + y^2 = 1$.
 
@@ -581,7 +581,7 @@ $4c^2 - 8(c^2 - 1) = 0 \implies -4c^2 + 8 = 0 \implies c = \pm\sqrt{2}$.
 </details>
 <b>If you get this wrong, revise:</b> [Tangent condition](#41-the-tangent-condition)
 
----
+<hr />
 
 **Problem 4.** Find the point of intersection of the lines $3x + 2y = 7$ and $x - y = 1$.
 
@@ -598,7 +598,7 @@ Intersection: $\left(\frac{9}{5}, \frac{4}{5}\right)$.
 </details>
 <b>If you get this wrong, revise:</b> [Linear simultaneous equations](./03-equations-and-inequalities.md)
 
----
+<hr />
 
 **Problem 5.** The points $A(1, 2)$, $B(5, 4)$, and $C(3, 8)$ form a triangle. Show that $ABC$ is a
 right-angled triangle.
@@ -616,7 +616,7 @@ Since $m_{AB} \cdot m_{BC} = -1$, $AB \perp BC$, so $\angle B = 90^\circ$. $\bla
 </details>
 <b>If you get this wrong, revise:</b> [Parallel and perpendicular lines](#23-parallel-and-perpendicular-lines)
 
----
+<hr />
 
 **Problem 6.** Find the equation of the tangent to the circle $(x - 2)^2 + (y + 1)^2 = 20$ at the
 point $(4, 3)$.
@@ -634,7 +634,7 @@ $$y - 3 = -\frac{1}{2}(x - 4) \implies 2y - 6 = -x + 4 \implies x + 2y - 10 = 0$
 </details>
 <b>If you get this wrong, revise:</b> [Equation of a tangent](#42-equation-of-a-tangent-to-a-circle)
 
----
+<hr />
 
 **Problem 7.** Find the shortest distance from the point $(3, 1)$ to the line $2x - y + 4 = 0$.
 
@@ -649,7 +649,7 @@ $$d = \frac{|2(3) - 1(1) + 4|}{\sqrt{4 + 1}} = \frac{|6 - 1 + 4|}{\sqrt{5}} = \f
 </details>
 <b>If you get this wrong, revise:</b> [Distance formula](#1-the-coordinate-plane)
 
----
+<hr />
 
 **Problem 8.** A circle has equation $x^2 + y^2 - 4x + 6y + 4 = 0$. Find the equation of the tangent
 at the point where $x = 1$.
@@ -677,7 +677,7 @@ $$\sqrt{2}\,x - 4y - 12 - 7\sqrt{2} = 0$$
 </details>
 <b>If you get this wrong, revise:</b> [Equation of a tangent](#42-equation-of-a-tangent-to-a-circle)
 
----
+<hr />
 
 **Problem 9.** Two circles $C_1: x^2 + y^2 = 9$ and $C_2: (x - 5)^2 + y^2 = 4$ intersect at points
 $P$ and $Q$. Find the length of $PQ$.
@@ -704,7 +704,7 @@ So $PQ = 0$; the circles touch at exactly one point.
 </details>
 <b>If you get this wrong, revise:</b> [Intersection of line and circle](#4-intersection-of-a-line-and-a-circle)
 
----
+<hr />
 
 **Problem 10.** Find the equation of the perpendicular bisector of the segment joining $A(1, 7)$ and
 $B(5, -1)$.
@@ -722,7 +722,7 @@ $$y - 3 = \frac{1}{2}(x - 3) \implies 2y - 6 = x - 3 \implies x - 2y + 3 = 0$$
 </details>
 <b>If you get this wrong, revise:</b> [Perpendicular lines](#23-parallel-and-perpendicular-lines)
 
----
+<hr />
 
 **Problem 11.** Derive the perpendicular distance formula
 $d = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}$ using the area method for the point $P(1, 7)$ and
@@ -757,7 +757,7 @@ $d = \frac{|3(1) + 4(7) - 5|}{\sqrt{9+16}} = \frac{|3 + 28 - 5|}{5} = \frac{26}{
 </details>
 <b>If you get this wrong, revise:</b> [Distance from a point to a line](#6-distance-from-a-point-to-a-line)
 
----
+<hr />
 
 **Problem 12.** Two circles $C_1: x^2 + y^2 + 2x - 8y + 8 = 0$ and
 $C_2: x^2 + y^2 - 4x + 4y - 8 = 0$ intersect at $P$ and $Q$. Find the equation of the common chord
@@ -795,7 +795,7 @@ $$PQ = 2\sqrt{\frac{236}{45}} = 2 \cdot \frac{2\sqrt{59}}{3\sqrt{5}} = \frac{4\s
 </details>
 <b>If you get this wrong, revise:</b> [Intersection of two circles](#7-intersection-of-two-circles)
 
----
+<hr />
 
 **Problem 13.** Find the equation of the circle passing through the three points $A(0, 1)$,
 $B(2, 3)$, and $C(4, 1)$.
@@ -828,7 +828,7 @@ $|AC| = 4 = 2r$.
 </details>
 <b>If you get this wrong, revise:</b> [Circle through three points](#8-equation-of-a-circle-through-three-points)
 
----
+<hr />
 
 **Problem 14.** A circle $C$ has parametric equations $x = 1 + 5\cos\theta$, $y = -2 + 5\sin\theta$.
 
@@ -876,7 +876,7 @@ $$x + \sqrt{3}\,y + 4 - 2\sqrt{3} = 0$$
 </details>
 <b>If you get this wrong, revise:</b> [Parametric equations of a circle](#9-parametric-equations-of-a-circle)
 
----
+<hr />
 
 **Problem 15.** The circle $C$ has equation $x^2 + y^2 - 6x - 4y + 9 = 0$. The line $L$ passes
 through the origin and is tangent to $C$. Find the possible equations of $L$ and the coordinates of

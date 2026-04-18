@@ -31,7 +31,7 @@ scalar triple product for volumes. CIE places particular emphasis on intersectio
 planes.
 :::
 
----
+<hr />
 
 ## 1. Review of A Level Vectors
 
@@ -46,7 +46,7 @@ Key results from A Level:
 
 This chapter extends all of these ideas into three dimensions and introduces new operations.
 
----
+<hr />
 
 ## 2. Vectors in 3D
 
@@ -80,7 +80,7 @@ where $\alpha$, $\beta$, $\gamma$ are the angles $\mathbf{a}$ makes with the $x$
 
 $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
----
+<hr />
 
 ## 3. Scalar (Dot) Product
 
@@ -104,7 +104,7 @@ where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$.
   (distributive)
 - $\mathbf{a}\cdot\mathbf{b} = 0 \iff \mathbf{a} \perp \mathbf{b}$ (when neither is zero)
 
----
+<hr />
 
 ## 4. Vector (Cross) Product
 
@@ -168,7 +168,7 @@ The cross product is **not** commutative:
 $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is only defined in 3D.
 :::
 
----
+<hr />
 
 ## 5. Equation of a Line in 3D
 
@@ -214,7 +214,7 @@ $\lambda = 4/3$.
 
 Check equation 3: $2(4/3) = 4-(-1/3) \implies 8/3 = 13/3$. **Not consistent** — the lines are skew.
 
----
+<hr />
 
 ## 6. Equation of a Plane
 
@@ -276,7 +276,7 @@ To find the line of intersection of $a_1 x + b_1 y + c_1 z = d_1$ and $a_2 x + b
 1. The direction is $\mathbf{d} = \mathbf{n}_1 \times \mathbf{n}_2$.
 2. Find a point satisfying both equations (set one variable to zero and solve).
 
----
+<hr />
 
 ## 7. Distance from a Point to a Plane
 
@@ -312,7 +312,7 @@ $\square$
 
 $D = \dfrac{|2(1)-1(2)+2(3)-5|}{\sqrt{4+1+4}} = \dfrac{|2-2+6-5|}{3} = \dfrac{1}{3}$.
 
----
+<hr />
 
 ## 8. Scalar Triple Product
 
@@ -363,7 +363,7 @@ $C$, $D$ are coplanar, then
 $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
 :::
 
----
+<hr />
 
 ## 9. Distance Between Two Skew Lines
 
@@ -376,7 +376,7 @@ $$\boxed{D = \frac{|(\mathbf{a}_2 - \mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf
 the common perpendicular is $\mathbf{d}_1 \times \mathbf{d}_2$. The formula projects the vector
 between any point on each line onto this perpendicular direction.
 
----
+<hr />
 
 ## 10. Key Results Summary
 
@@ -391,7 +391,7 @@ between any point on each line onto this perpendicular direction.
 | Parallelepiped volume | $V =                                                                                                   | \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})                          | $   |
 | Skew line distance    | $D = \dfrac{                                                                                           | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | }{  | \mathbf{d}\_1\times\mathbf{d}\_2 | }$          |
 
----
+<hr />
 
 ## Problems
 

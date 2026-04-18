@@ -18,7 +18,7 @@ slug: algebraic-expressions
 | OCR (A)    | Paper 1 | Similar coverage                            |
 | CIE (9709) | P1      | Surds, quadratics, factor theorem           |
 
----
+<hr />
 
 ## 1. Surds
 
@@ -88,7 +88,7 @@ _Proof._ The contrapositive: if $p$ is odd, then $p^2$ is odd. If $p = 2k + 1$, 
 
 _Intuition._ This proof exploits the structure of divisibility: the number 2 has a unique prime factorisation, and squaring preserves parity. The contradiction arises because $2$ "forces" factors of 2 into both $p$ and $q$, making the fraction reducible.
 
----
+<hr />
 
 ## 2. Indices (Exponent Laws)
 
@@ -129,7 +129,7 @@ The extension to rational and real exponents requires more sophisticated machine
 
 _Intuition._ Exponentiation is repeated multiplication, so multiplying two powers of the same base adds the counts. Just as $3 \times 5$ counts $3 + 5$ groups of size 1, $a^3 \cdot a^5$ counts $3 + 5 = 8$ factors of $a$.
 
----
+<hr />
 
 ## 3. Algebraic Manipulation
 
@@ -171,7 +171,7 @@ $$
 
 A cubic $ax^3 + bx^2 + cx + d$ can be factorised by finding one root $\alpha$ (using the Factor Theorem), then dividing by $(x - \alpha)$ to obtain a quadratic, which can then be factorised.
 
----
+<hr />
 
 ## 4. Polynomial Division
 
@@ -209,7 +209,7 @@ _Intuition._ This is exactly analogous to integer division: $47 = 5 \times 9 + 2
 
 The structural analogy is deep. Both are instances of a _Euclidean domain_ — an algebraic structure where we can perform division with remainder. In $\mathbb{Z}$, the "degree" is the absolute value; in $\mathbb{R}[x]$, the degree is the polynomial degree. The algorithm is the same: at each step, eliminate the leading term.
 
----
+<hr />
 
 ## 5. The Factor Theorem and Remainder Theorem
 
@@ -264,7 +264,7 @@ x^3 - 3x^2 + 4 &= (x - 2)(x^2 - x - 2) \\
 $$
 </details>
 
----
+<hr />
 
 ## 6. Simplifying Algebraic Fractions
 
@@ -288,7 +288,7 @@ $$
 \end{aligned}
 $$
 
----
+<hr />
 
 ## 7. Problem Set
 
@@ -306,7 +306,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Rationalising denominators](#11-rationalising-the-denominator)
 
----
+<hr />
 
 **Problem 2.** Solve $(2^{x})^3 \cdot 2^{4-x} = 128$.
 
@@ -324,7 +324,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Laws of indices](#2-indices-exponent-laws)
 
----
+<hr />
 
 **Problem 3.** Factorise fully $x^3 - 6x^2 + 11x - 6$.
 
@@ -343,7 +343,7 @@ $$
 </details>
 <b>If you get this wrong, revise:</b> [Factor theorem](#52-the-factor-theorem)
 
----
+<hr />
 
 **Problem 4.** When $f(x) = 2x^3 + ax^2 + bx - 12$ is divided by $(x - 1)$ the remainder is $-6$, and $(x + 2)$ is a factor. Find $a$ and $b$.
 
@@ -374,7 +374,7 @@ Adding (1) and (2): $3a = 18$, so $a = 6$. Then $b = 4 - 6 = -2$.
 </details>
 <b>If you get this wrong, revise:</b> [Remainder theorem](#51-the-remainder-theorem)
 
----
+<hr />
 
 **Problem 5.** Simplify $\left(\frac{8x^6}{27y^3}\right)^{-2/3}$.
 
@@ -392,7 +392,7 @@ Since $27^{1/3} = 3$ and $8^{1/3} = 2$.
 </details>
 <b>If you get this wrong, revise:</b> [Laws of indices](#2-indices-exponent-laws)
 
----
+<hr />
 
 **Problem 6.** Express $\frac{2x + 1}{x^2 + x - 6}$ in partial fractions.
 
@@ -415,7 +415,7 @@ $$\frac{2x + 1}{(x + 3)(x - 2)} = \frac{1}{x + 3} + \frac{1}{x - 2}$$
 </details>
 <b>If you get this wrong, revise:</b> [Algebraic fractions](#6-simplifying-algebraic-fractions)
 
----
+<hr />
 
 **Problem 7.** Given $f(x) = x^4 - x^3 - 7x^2 + x + 6$, show that $(x - 1)$, $(x + 1)$, and $(x - 3)$ are all factors, and hence factorise $f(x)$ completely.
 
@@ -445,7 +445,7 @@ $$f(x) = (x - 1)(x + 1)(x - 3)(x + 2)$$
 </details>
 <b>If you get this wrong, revise:</b> [Factor theorem](#52-the-factor-theorem)
 
----
+<hr />
 
 **Problem 8.** Prove that $\sqrt{3}$ is irrational.
 
@@ -473,7 +473,7 @@ So $3 \mid q^2$, hence $3 \mid q$. But $\gcd(p, q) = 1$ and both are divisible b
 </details>
 <b>If you get this wrong, revise:</b> [Irrationality of surds](#12-irrationality-of-sqrt2)
 
----
+<hr />
 
 **Problem 9.** Divide $3x^3 + 5x^2 - 10x + 8$ by $x + 2$. State the quotient and remainder.
 
@@ -493,7 +493,7 @@ Verification: $(x + 2)(3x^2 - x - 8) + 24 = 3x^3 - x^2 - 8x + 6x^2 - 2x - 16 + 2
 </details>
 <b>If you get this wrong, revise:</b> [Polynomial division](#4-polynomial-division)
 
----
+<hr />
 
 **Problem 10.** Solve $\frac{3}{x + 1} - \frac{1}{x - 2} = 1$.
 
@@ -513,7 +513,7 @@ Discriminant: $\Delta = 9 - 20 = -11 < 0$. No real solutions.
 </details>
 <b>If you get this wrong, revise:</b> [Algebraic fractions](#6-simplifying-algebraic-fractions) and [Quadratics](./02-quadratics.md)
 
----
+<hr />
 
 **Problem 11.** Given that $x^3 + ax^2 + bx + c$ is exactly divisible by $(x - 1)^2$ and leaves remainder $12$ when divided by $(x + 2)$, find $a$, $b$, and $c$.
 
@@ -550,7 +550,7 @@ $$b = -3 - \frac{8}{3} = -\frac{17}{3}, \quad c = 2 + \frac{4}{3} = \frac{10}{3}
 </details>
 <b>If you get this wrong, revise:</b> [Remainder and Factor theorems](#5-the-factor-theorem-and-remainder-theorem)
 
----
+<hr />
 
 **Problem 12.** Simplify $\frac{x^2 - 9}{x^2 + 5x + 6} \div \frac{x^2 - 4x + 3}{x^2 - x - 6}$.
 
@@ -570,7 +570,7 @@ for $x \neq -3, -2, 1, 3$.
 </details>
 <b>If you get this wrong, revise:</b> [Factorisation](#32-factorisation) and [Algebraic fractions](#6-simplifying-algebraic-fractions)
 
----
+<hr />
 
 **Problem 13.** Find the value of $k$ such that $x^2 + kx + (k + 3)$ is a perfect square.
 
