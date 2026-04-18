@@ -92,13 +92,13 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-          sitemap: {
-      lastmod: 'date',
-      changefreq: 'weekly',
-      priority: 0.7,
-      ignorePatterns: ['/tags/**'],
-    },
-    } satisfies Preset.Options,
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.7,
+          ignorePatterns: ['/tags/**'],
+        },
+      } satisfies Preset.Options,
     ],
   ],
   plugins: [
