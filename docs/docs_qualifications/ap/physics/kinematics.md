@@ -826,3 +826,117 @@ between two points is not the same as the instantaneous slope.
 20. The position of a particle is given by $x(t) = 2t^3 - 9t^2 + 12t + 1$ (m). Find (a) the times
     when the particle changes direction, (b) the total distance travelled between $t = 0$ and
     $t = 4 \mathrm{ s}$, and (c) the average velocity and average speed over this interval.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Two-object kinematics with relative motion</summary>
+
+A ball is thrown vertically upward from ground level with initial velocity $20 \mathrm{ m/s}$. One second later, a second ball is dropped from a height of $50 \mathrm{ m}$. At what height above the ground do the two balls meet? Take $g = 9.8 \mathrm{ m/s^2}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Ball 1 (thrown up at $t = 0$): $y_1 = 20t - 4.9t^2$.
+
+Ball 2 (dropped at $t = 1$): $y_2 = 50 - 4.9(t - 1)^2$ for $t \ge 1$.
+
+Set $y_1 = y_2$: $20t - 4.9t^2 = 50 - 4.9(t^2 - 2t + 1) = 50 - 4.9t^2 + 9.8t - 4.9 = 45.1 - 4.9t^2 + 9.8t$.
+
+$20t = 45.1 + 9.8t$, so $10.2t = 45.1$, $t = 4.42 \mathrm{ s}$.
+
+Height: $y_1 = 20(4.42) - 4.9(4.42)^2 = 88.4 - 95.7 = -7.3 \mathrm{ m}$.
+
+This is negative, meaning the balls don't meet before ball 1 hits the ground. Ball 1 lands when $y_1 = 0$: $20t - 4.9t^2 = 0$, $t = 20/4.9 = 4.08 \mathrm{ s}$.
+
+Since $4.42 > 4.08$, ball 1 has already landed. The balls do not meet in the air.
+
+</details>
+
+<details>
+<summary>Question 2: Projectile motion with angle optimization</summary>
+
+A football is kicked from ground level with speed $25 \mathrm{ m/s}$. At what angle should it be kicked to maximise the range? Calculate the maximum range and the time of flight.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+For maximum range on level ground, the launch angle is $45^\circ$.
+
+Range: $R = \frac{v^2 \sin(2\theta)}{g} = \frac{25^2 \sin(90^\circ)}{9.8} = \frac{625}{9.8} = 63.8 \mathrm{ m}$.
+
+Time of flight: $T = \frac{2v \sin\theta}{g} = \frac{2 \times 25 \times \sin(45^\circ)}{9.8} = \frac{35.36}{9.8} = 3.61 \mathrm{ s}$.
+
+</details>
+
+<details>
+<summary>Question 3: Kinematics with calculus</summary>
+
+The velocity of a particle is given by $v(t) = 6t^2 - 18t + 12 \mathrm{ m/s}$ for $0 \le t \le 4 \mathrm{ s}$. Find the total distance travelled and the displacement.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Set $v = 0$: $6t^2 - 18t + 12 = 0$, $t^2 - 3t + 2 = 0$, $(t-1)(t-2) = 0$. Direction changes at $t = 1$ and $t = 2$.
+
+Acceleration: $a = dv/dt = 12t - 18$.
+
+Displacement = $\int_0^4 v \, dt = [2t^3 - 9t^2 + 12t]_0^4 = 128 - 144 + 48 = 32 \mathrm{ m}$.
+
+Total distance = $\int_0^1 v \, dt + |\int_1^2 v \, dt| + \int_2^4 v \, dt$.
+
+$\int_0^1 = [2 - 9 + 12] = 5$.
+$\int_1^2 = [16 - 36 + 24] - [2 - 9 + 12] = 4 - 5 = -1$, absolute value = 1.
+$\int_2^4 = [128 - 144 + 48] - [16 - 36 + 24] = 32 - 44 = -12$, absolute value = 12.
+
+Total distance = $5 + 1 + 12 = 18 \mathrm{ m}$.
+
+Displacement = 32 m, total distance = 18 m.
+
+</details>
+
+<details>
+<summary>Question 4: Free fall with air resistance (conceptual)</summary>
+
+Explain qualitatively how the motion of a falling object differs with and without air resistance. Sketch velocity-time graphs for both cases and label the terminal velocity.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Without air resistance: Velocity increases linearly with time ($v = gt$). The graph is a straight line through the origin.
+
+With air resistance: As the object falls, air resistance (drag) increases with speed. Net force = weight - drag decreases. Acceleration decreases. Eventually, drag equals weight (net force = 0), and the object reaches terminal velocity ($v_T$). The velocity-time graph curves upward, approaching $v_T$ asymptotically. It is concave down, starting steep and becoming flat.
+
+Terminal velocity depends on mass, cross-sectional area, drag coefficient, and air density. A heavier object with smaller area reaches a higher terminal velocity.
+
+</details>
+
+<details>
+<summary>Question 5: Relative motion in two dimensions</summary>
+
+A boat can travel at $5 \mathrm{ m/s}$ in still water. It needs to cross a river that is $100 \mathrm{ m}$ wide, flowing at $3 \mathrm{ m/s}$. If the boat heads directly across the river, how far downstream is it carried? What heading should the boat take to land directly across from the starting point?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Heading directly across: Time to cross = $100 / 5 = 20 \mathrm{ s}$.
+Downstream distance = $3 \times 20 = 60 \mathrm{ m}$.
+
+To land directly across: The boat must angle upstream so its upstream component cancels the current. Let $\theta$ be the angle upstream from the line perpendicular to the bank.
+
+$5\sin\theta = 3$, so $\sin\theta = 3/5 = 0.6$, $\theta = 36.9^\circ$.
+
+Velocity across river: $5\cos\theta = 5 \times 0.8 = 4 \mathrm{ m/s}$.
+Time to cross: $100 / 4 = 25 \mathrm{ s}$.
+
+</details>

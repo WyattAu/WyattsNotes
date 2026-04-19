@@ -11,9 +11,7 @@ slug: thermal-properties
 
 ## Thermal Properties
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 1. Temperature Scales
 
@@ -53,11 +51,9 @@ $$\boxed{\langle x^2\rangle^{1/2} \propto \sqrt{t}}$$
 This is a hallmark signature of Brownian motion and provided the first direct evidence for the
 existence of atoms and molecules.
 
-:::info
-Board Coverage AQA: Brownian motion is required practical observation. Edexcel: Explanation
+:::info Board Coverage AQA: Brownian motion is required practical observation. Edexcel: Explanation
 in terms of molecular bombardment. OCR (A): Historical context and Einstein's analysis. CIE:
-Qualitative and quantitative treatment.
-:::
+Qualitative and quantitative treatment. :::
 
 ## 2. Specific Heat Capacity
 
@@ -82,12 +78,10 @@ $$\boxed{Q = mL}$$
 increasing kinetic energy, so the temperature remains constant despite energy input. Vaporisation
 requires much more energy than fusion because gas molecules are completely separated.
 
-:::warning
-Common Pitfall Do not confuse specific heat capacity (which raises temperature) with
+:::warning Common Pitfall Do not confuse specific heat capacity (which raises temperature) with
 latent heat (which changes state at constant temperature). In a heating curve, the flat sections are
 phase changes (latent heat), and the sloped sections are temperature changes (specific heat
-capacity).
-:::
+capacity). :::
 
 ### Internal Energy
 
@@ -274,11 +268,9 @@ $\square$
 moment of inertia. For a diatomic molecule, rotation about the bond axis does not count (moment of
 inertia is negligible), leaving only 2 rotational DOF.
 
-:::warning
-Common Pitfall At A-Level, vibrational DOF are not considered (they are significant only
+:::warning Common Pitfall At A-Level, vibrational DOF are not considered (they are significant only
 at high temperatures). The equipartition theorem applies to each fully-excited quadratic DOF. At
-room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6.
-:::
+room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6. :::
 
 ## 7. Maxwell-Boltzmann Speed Distribution
 
@@ -302,11 +294,9 @@ As temperature increases, the distribution broadens and the peak shifts right (f
 but the area under the curve stays normalised to 1 (total probability). As mass increases, the
 distribution narrows and shifts left (heavier molecules move more slowly at the same temperature).
 
-:::info
-Board Coverage AQA: Qualitative understanding of the distribution shape. Edexcel: Comparison
+:::info Board Coverage AQA: Qualitative understanding of the distribution shape. Edexcel: Comparison
 of speeds at different temperatures. OCR (A): Ratio of speeds for different gases. CIE: Quantitative
-use of all three speed measures.
-:::
+use of all three speed measures. :::
 
 <details>
 <summary>Example: Speed Ratio for Different Gases</summary>
@@ -423,7 +413,7 @@ $\frac{1}{2}m\langle v^2\rangle = \frac{3}{2}k_BT$.
 Since $\langle E_k\rangle = \frac{1}{2}m\langle v^2\rangle$: $\langle E_k\rangle = \frac{3}{2}k_BT$.
 
 <b>If you get this wrong, revise:</b>
-[Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv-nk_bt-from-kinetic-theory)
+[Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv--nk_bt-from-kinetic-theory)
 
 </details>
 
@@ -470,8 +460,8 @@ $15{,}750 = 8.25\,c_c$. $c_c = 1909$ J kg$^{-1}$ K$^{-1}$.
 <summary>Problem 10</summary>
 A sealed container holds gas at 300 K. The container is heated until the rms speed of the molecules doubles. What is the new temperature?
 
-**Answer.** $v_{\mathrm{rms}} \propto \sqrt{T}$. If $v_{\mathrm{rms}}$ doubles: $2 = \sqrt{T_2/T_1}$.
-$T_2/T_1 = 4$. $T_2 = 4 \times 300 = 1200$ K.
+**Answer.** $v_{\mathrm{rms}} \propto \sqrt{T}$. If $v_{\mathrm{rms}}$ doubles:
+$2 = \sqrt{T_2/T_1}$. $T_2/T_1 = 4$. $T_2 = 4 \times 300 = 1200$ K.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
 
@@ -526,7 +516,7 @@ the rate of momentum transfer, both the collision rate and the impulse per colli
 pressure increases. From the ideal gas law: at constant $V$, $p \propto T$.
 
 <b>If you get this wrong, revise:</b>
-[Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv-nk_bt-from-kinetic-theory)
+[Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv--nk_bt-from-kinetic-theory)
 
 </details>
 
@@ -593,9 +583,9 @@ escape in an adiabatic process).
 <summary>Problem 17</summary>
 
 10 g of ice at $-10$°C is heated until it becomes steam at 110°C at 1 atm pressure. Calculate the
-total energy required. Data: $c_{\mathrm{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4200$
-J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{steam}} = 2010$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J
-kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$.
+total energy required. Data: $c_{\mathrm{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$,
+$c_{\mathrm{water}} = 4200$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{steam}} = 2010$ J kg$^{-1}$ K$^{-1}$,
+$L_f = 3.34 \times 10^5$ J kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$.
 
 **Answer.** Break into 5 stages:
 
@@ -621,12 +611,12 @@ Explain why the temperature of a gas does not change during an isothermal expans
 gas does work on its surroundings.
 
 **Answer.** During isothermal expansion, the gas does work on the surroundings
-($W_{\mathrm{by}} > 0$). By the first law: $\Delta U = Q + W_{\mathrm{on}} = Q - W_{\mathrm{by}}$. For the
-internal energy to remain constant ($\Delta U = 0$, since $U$ depends only on $T$ for an ideal gas),
-we need $Q = W_{\mathrm{by}}$. Heat must flow into the gas from the surroundings at exactly the rate
-at which the gas does work. The expansion is carried out slowly enough (quasi-statically) that
-thermal equilibrium is maintained throughout. If the expansion were adiabatic instead, the gas would
-cool.
+($W_{\mathrm{by}} > 0$). By the first law: $\Delta U = Q + W_{\mathrm{on}} = Q - W_{\mathrm{by}}$.
+For the internal energy to remain constant ($\Delta U = 0$, since $U$ depends only on $T$ for an
+ideal gas), we need $Q = W_{\mathrm{by}}$. Heat must flow into the gas from the surroundings at
+exactly the rate at which the gas does work. The expansion is carried out slowly enough
+(quasi-statically) that thermal equilibrium is maintained throughout. If the expansion were
+adiabatic instead, the gas would cool.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
 
@@ -670,6 +660,6 @@ energy. This is because kinetic energy depends on $mv^2$, so lighter atoms must 
 the same energy.
 
 <b>If you get this wrong, revise:</b>
-[Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv-nk_bt-from-kinetic-theory)
+[Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv--nk_bt-from-kinetic-theory)
 
 </details>

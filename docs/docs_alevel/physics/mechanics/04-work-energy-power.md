@@ -11,9 +11,7 @@ slug: work-energy-power
 
 ## Work, Energy and Power
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
 
 ## 1. Work Done by a Force
 
@@ -175,11 +173,9 @@ twice the speed requires **four times** the braking distance. This quadratic dep
 consequence of energy conservation: kinetic energy scales as $v^2$, so removing that energy requires
 friction to act over a distance proportional to $v^2$.
 
-:::warning
-Common Pitfall Students sometimes write "energy is lost" when friction acts. Energy is
+:::warning Common Pitfall Students sometimes write "energy is lost" when friction acts. Energy is
 never lost -- it is transferred from mechanical to thermal (internal) energy. The total energy of
-the closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases.
-:::
+the closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases. :::
 
 <details>
 <summary>Example: Braking distance comparison</summary>
@@ -231,12 +227,10 @@ $$\boxed{P_{\mathrm{avg}} = \frac{F(u + v)}{2}}$$
 This is useful because it relates power to the initial and final velocities directly, without
 needing to know the distance or time separately.
 
-:::tip
-Exam Technique When asked for "the power developed by the engine" as a car accelerates,
+:::tip Exam Technique When asked for "the power developed by the engine" as a car accelerates,
 specify whether you mean instantaneous power ($P = Fv$) or average power ($P = Fs/t$). The
 instantaneous power at the end of the acceleration is $Fv_{\mathrm{final}}$, while the average power
-over the whole acceleration is $F(u+v)/2$.
-:::
+over the whole acceleration is $F(u+v)/2$. :::
 
 **Definition.** The **efficiency** of an energy transfer is:
 
@@ -316,7 +310,7 @@ Electrical power: $P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{\eta} = \frac{2943}
 
 Current: $I = \frac{P_{\mathrm{in}}}{V} = \frac{3679}{240} = 15.3$ A.
 
-<b>If you get this wrong, revise:</b> [Efficiency](#7-efficiency)
+<b>If you get this wrong, revise:</b> [Efficiency](#6-power)
 
 </details>
 
@@ -363,7 +357,7 @@ Power output: $P = Fv = 684 \times 20 = 13{,}680$ W.
 Fuel power: $P_{\mathrm{fuel}} = P/\eta = 13{,}680/0.25 = 54{,}700$ W $= 54.7$ kW.
 
 <b>If you get this wrong, revise:</b> [Power and Velocity](#power-and-velocity) and
-[Efficiency](#7-efficiency)
+[Efficiency](#6-power)
 
 </details>
 
@@ -417,9 +411,10 @@ total elastic potential energy stored.
 **Answer.** (a) For series: $1/k_{\mathrm{eff}} = 1/200 + 1/300 = 5/600$. $k_{\mathrm{eff}} = 120$ N
 m$^{-1}$.
 
-Extension: $x = F/k_{\mathrm{eff}} = k_{\mathrm{eff}} \times 0.10 / k_{\mathrm{eff}} = 0.10$ m. (Each
-spring shares the same force: $F = k_1 x_1 = k_2 x_2$. $x_1 = F/k_1 = 0.10 \times 120/200 = 0.060$
-m, $x_2 = 0.10 \times 120/300 = 0.040$ m. Total $= 0.100$ m, confirming consistency.)
+Extension: $x = F/k_{\mathrm{eff}} = k_{\mathrm{eff}} \times 0.10 / k_{\mathrm{eff}} = 0.10$ m.
+(Each spring shares the same force: $F = k_1 x_1 = k_2 x_2$.
+$x_1 = F/k_1 = 0.10 \times 120/200 = 0.060$ m, $x_2 = 0.10 \times 120/300 = 0.040$ m. Total
+$= 0.100$ m, confirming consistency.)
 
 (b) $E_e = \frac{1}{2}k_{\mathrm{eff}}x^2 = \frac{1}{2}(120)(0.010) = 0.60$ J.
 
@@ -435,8 +430,8 @@ J.
 <details>
 <summary>Problem 12</summary>
 
-A block of mass $3.0$ kg is projected up a rough incline at $30^\circ$ with speed $8.0$ m s$^{-1}$. The
-coefficient of friction is $0.20$. Use energy methods to find how far up the incline it travels
+A block of mass $3.0$ kg is projected up a rough incline at $30^\circ$ with speed $8.0$ m s$^{-1}$.
+The coefficient of friction is $0.20$. Use energy methods to find how far up the incline it travels
 before stopping.
 
 **Answer.** Initial KE: $\frac{1}{2}(3.0)(64) = 96$ J. Gain in PE:
@@ -472,8 +467,8 @@ s$^{-1}$.
 
 Vertical force = $mg + ma = 70(9.81 + 0.625) = 731$ N.
 
-$P_{\mathrm{max}} = Fv = 731 \times 2.5 = 1828$ W. The minimum instantaneous power is the power at the
-start (when $v = 0$): $P_{\mathrm{min}} = 0$. Power increases linearly with speed.
+$P_{\mathrm{max}} = Fv = 731 \times 2.5 = 1828$ W. The minimum instantaneous power is the power at
+the start (when $v = 0$): $P_{\mathrm{min}} = 0$. Power increases linearly with speed.
 
 <b>If you get this wrong, revise:</b> [Power and Velocity](#power-and-velocity)
 
@@ -559,7 +554,7 @@ energy wasted per second, (d) the total electrical energy consumed to lift the c
 (d) Time to lift 12 m: $t = 12/0.80 = 15$ s. Total electrical energy =
 $P_{\mathrm{in}} \times t = 1847 \times 15 = 27{,}705$ J $= 27.7$ kJ.
 
-<b>If you get this wrong, revise:</b> [Efficiency](#7-efficiency)
+<b>If you get this wrong, revise:</b> [Efficiency](#6-power)
 
 </details>
 

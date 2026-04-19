@@ -808,3 +808,101 @@ genes, each with a dominant and recessive allele.
   1/16.
 
 This confirms the 9:3:3:1 ratio.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Monohybrid cross</summary>
+
+In pea plants, tall stems (T) are dominant over short stems (t). A heterozygous tall plant is crossed with a short plant. What are the expected genotype and phenotype ratios of the offspring?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Parental cross: $Tt \times tt$.
+
+Gametes: $T$, $t$ and $t$, $t$.
+
+Punnett square:
+
+| | T | t |
+|---|---|---|
+| t | Tt | tt |
+| t | Tt | tt |
+
+Genotype ratio: 1 Tt : 1 tt (50% : 50%).
+Phenotype ratio: 1 tall : 1 short (50% : 50%).
+
+</details>
+
+<details>
+<summary>Question 2: Sex-linked inheritance</summary>
+
+Red-green colour blindness is caused by a recessive allele on the X chromosome. A carrier female ($X^NX^n$) and a normal male ($X^NY$) have children. What is the probability that their son will be colour blind?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Punnett square:
+
+| | $X^N$ | Y |
+|---|---|---|
+| $X^N$ | $X^NX^N$ | $X^NY$ |
+| $X^n$ | $X^NX^n$ | $X^nY$ |
+
+Each child has a 50% chance of being a boy. For sons: 50% normal ($X^NY$), 50% colour blind ($X^nY$).
+
+Probability of a colour blind son = P(son) $\times$ P(colour blind | son) = $0.5 \times 0.5 = 0.25$ (25%).
+
+</details>
+
+<details>
+<summary>Question 3: DNA and protein synthesis</summary>
+
+Describe the process of transcription. Explain how mRNA is used to produce a protein at the ribosome.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Transcription: The enzyme RNA polymerase binds to the DNA at the start of a gene. It unwinds the double helix and uses one strand as a template to build a complementary mRNA molecule. The base pairing rules are A-U (instead of A-T) and C-G. Once complete, the mRNA detaches and leaves the nucleus through a nuclear pore.
+
+Translation (protein synthesis): The mRNA attaches to a ribosome. Transfer RNA (tRNA) molecules bring amino acids to the ribosome, matching their anticodon to the codon on the mRNA. The ribosome joins the amino acids together with peptide bonds, forming a polypeptide chain. The chain folds into a functional protein.
+
+</details>
+
+<details>
+<summary>Question 4: Natural selection and antibiotic resistance</summary>
+
+Explain how the overuse of antibiotics has led to the development of antibiotic-resistant bacteria, using the concept of natural selection.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+In any bacterial population, random mutations occur. Some bacteria may acquire a mutation that provides resistance to an antibiotic. When antibiotics are used, susceptible bacteria are killed, but resistant bacteria survive. These survivors reproduce, passing the resistance allele to their offspring. Over time, the proportion of resistant bacteria in the population increases. Overuse of antibiotics creates a strong selection pressure that favours resistant strains. This is natural selection in action: the antibiotic acts as the selective pressure, and resistance is the advantageous trait.
+
+</details>
+
+<details>
+<summary>Question 5: Genetic variation</summary>
+
+Describe two sources of genetic variation and explain why genetic variation is important for the survival of a species.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+1. Mutation: a random change in the DNA sequence that can create new alleles.
+2. Sexual reproduction: meiosis produces gametes with different combinations of alleles through independent assortment and crossing over. Random fertilisation further increases variation.
+
+Genetic variation is important because it provides the raw material for natural selection. If the environment changes (e.g., new disease, climate change), some individuals may possess advantageous alleles that allow them to survive and reproduce. Without variation, a species cannot adapt and is more vulnerable to extinction.
+
+</details>

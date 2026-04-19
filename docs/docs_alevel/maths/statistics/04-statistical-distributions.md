@@ -18,11 +18,9 @@ slug: statistical-distributions
 | OCR (A)    | Paper 1, 2 | Binomial in P1; normal and Poisson in P2 |
 | CIE (9709) | P1, P6     | Binomial in P1; normal and Poisson in P6 |
 
-:::info
-The formula booklet gives the probability mass function for the Binomial and Poisson
+:::info The formula booklet gives the probability mass function for the Binomial and Poisson
 distributions, and the normal distribution function. You must know when to use each distribution and
-how to find probabilities.
-:::
+how to find probabilities. :::
 
 <hr />
 
@@ -76,7 +74,8 @@ By linearity of expectation: $E(X) = \sum E(X_i) = np$. $\blacksquare$
 
 $\mathrm{Var}(X_i) = E(X_i^2) - [E(X_i)]^2 = p - p^2 = p(1-p)$.
 
-Since the $X_i$ are independent: $\mathrm{Var}(X) = \sum \mathrm{Var}(X_i) = np(1-p)$. $\blacksquare$
+Since the $X_i$ are independent: $\mathrm{Var}(X) = \sum \mathrm{Var}(X_i) = np(1-p)$.
+$\blacksquare$
 
 ### 2.4 Properties
 
@@ -172,11 +171,9 @@ $$B(n, p) \approx N(np, np(1-p))$$
 with **continuity correction**:
 $P(X \leq k) \approx P\!\left(Z \lt{} \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)$.
 
-:::warning
-Always apply the continuity correction when approximating a discrete distribution
+:::warning Always apply the continuity correction when approximating a discrete distribution
 (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the inequality
-direction.
-:::
+direction. :::
 
 <hr />
 
@@ -261,11 +258,9 @@ in any interval of length $t$ follows $\mathrm{Po}(\lambda t)$.
 Typical applications include: calls arriving at a call centre per hour, typing errors per page,
 radioactive decays per second, and cars passing a checkpoint per minute.
 
-:::tip
-To check whether a scenario fits the Poisson model, verify that the rate is approximately
+:::tip To check whether a scenario fits the Poisson model, verify that the rate is approximately
 constant over the interval and that events do not cluster. If events tend to occur in bursts, the
-Poisson model is not appropriate.
-:::
+Poisson model is not appropriate. :::
 
 ### 4.7 Poisson approximation to the Binomial
 
@@ -283,22 +278,20 @@ conditions $n \gt{} 50$ and $p \lt{} 0.1$ are practical thresholds that ensure:
 
 The approximation improves as $n$ increases and $p$ decreases while $\lambda = np$ remains fixed.
 
-:::warning
-The Poisson approximation is only appropriate when $p$ is small. When $p$ is not small
+:::warning The Poisson approximation is only appropriate when $p$ is small. When $p$ is not small
 and $n$ is large, use the normal approximation (Section 3.6) instead. The two approximations are
 complementary: Poisson handles the case of many trials with rare success, while normal handles the
-case of many trials with moderate success probability.
-:::
+case of many trials with moderate success probability. :::
 
 <hr />
 
 ## 5. Choosing the Right Distribution
 
-| Situation                                  | Distribution                 |
-| ------------------------------------------ | ---------------------------- |
-| Fixed $n$ trials, success/failure          | Binomial $B(n,p)$            |
+| Situation                                  | Distribution                   |
+| ------------------------------------------ | ------------------------------ |
+| Fixed $n$ trials, success/failure          | Binomial $B(n,p)$              |
 | Events in continuous interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
-| Continuous, bell-shaped                    | Normal $N(\mu,\sigma^2)$     |
+| Continuous, bell-shaped                    | Normal $N(\mu,\sigma^2)$       |
 
 <hr />
 
@@ -341,11 +334,9 @@ $$
 
 Note how the terms $2abE(X)$ and $b^2$ cancel between $E(Y^2)$ and $[E(Y)]^2$.
 
-:::info
-Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
+:::info Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
 $a$ (a scale change) affects variance, and it does so by a factor of $a^2$. This is why variance is
-measured in **squared units** of the original variable.
-:::
+measured in **squared units** of the original variable. :::
 
 ### 6.4 Effect on standard deviation
 
@@ -626,7 +617,7 @@ Then $E(X^2) = E(X(X-1)) + E(X) = n(n-1)p^2 + np$.
 $\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p)$.
 
 **If you get this wrong, revise:**
-[Direct derivation of $\mathrm{Var}(X) = np(1-p)$ from the PMF](#26-direct-derivation-of-varx--np1-p-from-the-pmf)
+[Direct derivation of $\mathrm{Var}(X) = np(1-p)$ from the PMF](#26-direct-derivation-of-mathrmvarx--np1-p-from-the-pmf)
 — Section 2.6.
 
 </details>

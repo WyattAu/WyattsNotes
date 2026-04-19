@@ -746,3 +746,86 @@ is converted back to pyruvate (by the enzyme lactate dehydrogenase). The pyruvat
 oxidised through the Krebs cycle (if oxygen is available) or converted back to glucose
 (gluconeogenesis). This process requires oxygen, explaining the continued heavy breathing after
 exercise stops.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Photosynthesis rate factors</summary>
+
+A student investigates the effect of light intensity on the rate of photosynthesis in pond weed. Describe the shape of the graph produced and explain why the rate plateaus.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The graph shows the rate of photosynthesis increasing linearly at low light intensity, then curving and eventually plateauing. At low light, light is the limiting factor and more light means more energy for the light-dependent reactions. The rate plateaus when another factor (such as $\mathrm{CO}_2$ concentration or temperature) becomes limiting -- increasing light intensity further has no effect because the Calvin cycle cannot work any faster.
+
+</details>
+
+<details>
+<summary>Question 2: Respiration equations</summary>
+
+Write the word equation for aerobic respiration. A student claims that plants do not carry out respiration. Evaluate this claim.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Glucose + oxygen $\to$ carbon dioxide + water (+ energy released).
+
+The claim is incorrect. Plants carry out both photosynthesis (during the day) and respiration (continuously, day and night). During the day, the rate of photosynthesis typically exceeds respiration, so there is a net release of oxygen. At night, only respiration occurs, so plants take in oxygen and release carbon dioxide.
+
+</details>
+
+<details>
+<summary>Question 3: Investigating respiration rate</summary>
+
+Describe an experiment using respirometers to measure the rate of aerobic respiration in germinating seeds. Explain the purpose of the soda lime and the control.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Germinating seeds are placed in a respirometer with soda lime (to absorb $\mathrm{CO}_2$). As seeds respire, they consume $\mathrm{O}_2$ and release $\mathrm{CO}_2$. The soda lime absorbs the $\mathrm{CO}_2$, so the only gas change is a reduction in $\mathrm{O}_2$. The coloured liquid in the capillary tube moves towards the seeds as oxygen is consumed. The rate of movement gives the respiration rate.
+
+A control respirometer contains dead seeds (boiled). Any movement in the control accounts for non-biological changes in gas volume (e.g., temperature or pressure changes). The experimental result is corrected by subtracting the control movement.
+
+</details>
+
+<details>
+<summary>Question 4: Uses of glucose in plants</summary>
+
+List three ways that plants use the glucose produced by photosynthesis, and for each use, explain why it is important for the plant.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+1. Respiration: glucose is broken down to release energy (ATP) for cellular processes.
+2. Storage: glucose is converted to starch for storage in leaves (temporarily) and in storage organs like potatoes.
+3. Cell walls: glucose is converted to cellulose, which makes up the cell wall for structural support.
+4. Making other substances: glucose can be converted to lipids for seed oils, amino acids for proteins, and chlorophyll.
+
+(Any three with explanations.)
+
+</details>
+
+<details>
+<summary>Question 5: Fermentation in yeast</summary>
+
+Describe how yeast is used in the production of bread and beer, explaining the role of fermentation in each process.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+In bread-making, yeast carries out anaerobic respiration (fermentation), converting glucose to ethanol and carbon dioxide. The $\mathrm{CO}_2$ gets trapped in the dough, causing it to rise, giving bread its light, airy texture. The ethanol evaporates during baking.
+
+In beer production, yeast ferments sugars in the wort (malted barley extract), producing ethanol and $\mathrm{CO}_2$. The ethanol is the desired product (alcohol in the beer), and the $\mathrm{CO}_2$ provides carbonation. The process is carried out in anaerobic conditions to ensure fermentation rather than aerobic respiration.
+
+</details>

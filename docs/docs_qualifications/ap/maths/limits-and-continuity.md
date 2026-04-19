@@ -823,3 +823,109 @@ achievable -- it depends on whether the one-sided limits can be made to agree.
 
 18. Determine whether $\displaystyle\lim_{x \to 0} \frac{1}{x^2}\sin\!\left(\frac{1}{x}\right)$
     exists.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Epsilon-delta proof</summary>
+
+Using the epsilon-delta definition, prove that $\displaystyle\lim_{x \to 2} (3x - 1) = 5$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+We need to show: for every $\epsilon \gt 0$, there exists a $\delta \gt 0$ such that if $0 \lt |x - 2| \lt \delta$, then $|(3x - 1) - 5| \lt \epsilon$.
+
+$|(3x - 1) - 5| = |3x - 6| = 3|x - 2|$.
+
+We need $3|x - 2| \lt \epsilon$, so $|x - 2| \lt \epsilon/3$.
+
+Choose $\delta = \epsilon/3$. Then if $0 \lt |x - 2| \lt \delta$:
+
+$|(3x - 1) - 5| = 3|x - 2| \lt 3\delta = 3(\epsilon/3) = \epsilon$.
+
+Therefore, $\displaystyle\lim_{x \to 2} (3x - 1) = 5$.
+
+</details>
+
+<details>
+<summary>Question 2: Limits involving trigonometric functions</summary>
+
+Evaluate $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x \sin x}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Multiply numerator and denominator by $1 + \cos x$:
+
+$\displaystyle\lim_{x \to 0} \frac{(1 - \cos x)(1 + \cos x)}{x \sin x(1 + \cos x)} = \lim_{x \to 0} \frac{\sin^2 x}{x \sin x(1 + \cos x)}$
+
+$= \lim_{x \to 0} \frac{\sin x}{x(1 + \cos x)} = \lim_{x \to 0} \frac{\sin x}{x} \cdot \frac{1}{1 + \cos x} = 1 \cdot \frac{1}{1 + 1} = \frac{1}{2}$.
+
+</details>
+
+<details>
+<summary>Question 3: Continuity of a piecewise function</summary>
+
+Determine whether the following function is continuous at $x = 1$:
+
+$$f(x) = \begin{cases} \frac{x^2 - 1}{x - 1} & \text{if } x \ne 1 \\ 4 & \text{if } x = 1 \end{cases}$$
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Check three conditions:
+
+1. $f(1) = 4$ (defined).
+2. $\displaystyle\lim_{x \to 1} f(x) = \lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x + 1) = 2$.
+3. $\lim_{x \to 1} f(x) = 2 \ne f(1) = 4$.
+
+Since the limit does not equal the function value, $f$ is NOT continuous at $x = 1$. To make it continuous, $f(1)$ should be redefined as $2$.
+
+</details>
+
+<details>
+<summary>Question 4: Intermediate Value Theorem application</summary>
+
+Prove that the equation $x^5 - 5x + 1 = 0$ has at least one root in the interval $(0, 1)$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Let $f(x) = x^5 - 5x + 1$. This is a polynomial, so it is continuous everywhere.
+
+$f(0) = 0 - 0 + 1 = 1 \gt 0$.
+
+$f(1) = 1 - 5 + 1 = -3 \lt 0$.
+
+Since $f$ is continuous on $[0, 1]$ and $f(0) \gt 0$ and $f(1) \lt 0$, by the Intermediate Value Theorem, there exists at least one $c \in (0, 1)$ such that $f(c) = 0$.
+
+</details>
+
+<details>
+<summary>Question 5: Squeeze theorem</summary>
+
+Evaluate $\displaystyle\lim_{x \to 0} x^2 \sin\!\left(\frac{1}{x}\right)$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Since $-1 \le \sin\!\left(\frac{1}{x}\right) \le 1$ for all $x \ne 0$:
+
+$-x^2 \le x^2 \sin\!\left(\frac{1}{x}\right) \le x^2$.
+
+$\displaystyle\lim_{x \to 0} (-x^2) = 0$ and $\displaystyle\lim_{x \to 0} x^2 = 0$.
+
+By the Squeeze Theorem: $\displaystyle\lim_{x \to 0} x^2 \sin\!\left(\frac{1}{x}\right) = 0$.
+
+</details>

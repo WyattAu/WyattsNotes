@@ -11,9 +11,7 @@ slug: superposition-and-interference
 
 ## Superposition and Interference
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 1. The Principle of Superposition
 
@@ -104,11 +102,9 @@ have a constant phase relationship. This requires:
 - Same frequency (and hence wavelength)
 - Constant phase difference
 
-:::warning
-Common Pitfall Two waves from independent sources (e.g., two light bulbs) are generally
+:::warning Common Pitfall Two waves from independent sources (e.g., two light bulbs) are generally
 not coherent because the phase difference fluctuates randomly. Interference requires coherent
-sources, typically produced by splitting a single wave.
-:::
+sources, typically produced by splitting a single wave. :::
 
 ## 3. Young's Double Slit Experiment
 
@@ -163,11 +159,9 @@ visible.
 
 The first minimum of the single-slit pattern occurs at $\sin\theta = \lambda/a$.
 
-:::tip
-Exam Technique When asked to describe Young's experiment, always mention: coherent source
+:::tip Exam Technique When asked to describe Young's experiment, always mention: coherent source
 (single slit before the double slit), narrow slits, monochromatic light, and the small-angle
-approximation. Quote the fringe spacing formula and explain each variable.
-:::
+approximation. Quote the fringe spacing formula and explain each variable. :::
 
 <details>
 <summary>Example: Young's Double Slit</summary>
@@ -216,11 +210,9 @@ or equal to $d/\lambda$).
 | Maxima brightness | Low            | High                                        |
 | Missing orders    | None (ideally) | Possible (if slit width effects considered) |
 
-:::tip
-Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$, take the
+:::tip Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$, take the
 integer part, then note that orders $+n$ and $-n$ are both visible (plus the zeroth order). Total
-visible maxima $= 2n_{\max} + 1$.
-:::
+visible maxima $= 2n_{\max} + 1$. :::
 
 ## 5. Stationary Waves
 
@@ -412,7 +404,7 @@ of maximum can be seen on each side of the central maximum?
 $n_{\max} = d/\lambda = 3.33 \times 10^{-6} / 540 \times 10^{-9} = 6.17$. So the highest visible
 order is $n = 6$. Total visible maxima $= 2(6) + 1 = 13$.
 
-<b>If you get this wrong, revise:</b> [Maximum number of orders](#maximum-number-of-orders)
+<b>If you get this wrong, revise:</b> [Maximum number of orders](#4-diffraction-gratings)
 
 </details>
 

@@ -299,8 +299,8 @@ receptors in the cytoplasm or nucleus.
     the outcome depends on the specific pathway and cell type.
 11. **Confusing GPCRs and RTKs.** GPCRs use G-proteins and second messengers; RTKs dimerize and
     autophosphorylate, often activating the MAP kinase cascade.
-12. **Thinking all second messengers are the same.** cAMP, $\mathrm{Ca}^{2+}$, $\mathrm{IP}_3$, and DAG
-    have different roles and activate different downstream pathways.
+12. **Thinking all second messengers are the same.** cAMP, $\mathrm{Ca}^{2+}$, $\mathrm{IP}_3$, and
+    DAG have different roles and activate different downstream pathways.
 13. **Confusing exocytosis and endocytosis direction.** Exocytosis releases materials out of the
     cell; endocytosis brings materials in.
 14. **Forgetting that the cell membrane is selectively permeable, not fully permeable.** Only small,
@@ -402,9 +402,9 @@ region of higher water potential (lower solute concentration) to a region of low
 osmosis in cells that need to regulate water movement quickly (e.g., kidney cells).
 
 **Active transport:** Moves substances against their concentration gradient, requiring energy from
-ATP hydrolysis. The $\mathrm{Na}^+/\mathrm{K}^+$ pump is the classic example: it uses one ATP to pump 3
-$\mathrm{Na}^+$ out and 2 $\mathrm{K}^+$ in against their gradients. This pump is essential for
-maintaining the resting membrane potential, which is critical for nerve impulse transmission and
+ATP hydrolysis. The $\mathrm{Na}^+/\mathrm{K}^+$ pump is the classic example: it uses one ATP to
+pump 3 $\mathrm{Na}^+$ out and 2 $\mathrm{K}^+$ in against their gradients. This pump is essential
+for maintaining the resting membrane potential, which is critical for nerve impulse transmission and
 muscle contraction.
 
 **Cotransport (secondary active transport):** Uses the energy stored in an ion gradient (established
@@ -534,11 +534,11 @@ coordination (e.g., synchronous contraction of heart muscle cells).
 **Worked Example: Why gap junctions are essential in cardiac muscle.**
 
 Cardiac muscle cells (cardiomyocytes) are connected by gap junctions that form intercalated discs.
-These gap junctions allow ions (especially $\mathrm{Ca}^{2+}$) to flow freely between adjacent cells,
-so an action potential generated in one cell can spread rapidly to all connected cells. This ensures
-that the entire heart muscle contracts as a coordinated unit (a functional syncytium). Without gap
-junctions, the heart would not beat in a synchronised manner, leading to ineffective pumping and
-potential arrhythmias.
+These gap junctions allow ions (especially $\mathrm{Ca}^{2+}$) to flow freely between adjacent
+cells, so an action potential generated in one cell can spread rapidly to all connected cells. This
+ensures that the entire heart muscle contracts as a coordinated unit (a functional syncytium).
+Without gap junctions, the heart would not beat in a synchronised manner, leading to ineffective
+pumping and potential arrhythmias.
 
 ## Review: Plant Cell Structures in Detail
 
@@ -733,3 +733,117 @@ multiple drugs to prevent resistance.
 | Cell wall       | Structural support, protection                      | Plants, fungi, bacteria |
 | Centrioles      | Organise microtubules, mitotic spindle              | Animals                 |
 | Plasmodesmata   | Intercellular communication in plants               | Plants                  |
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Predicting the effect of a metabolic inhibitor on a secretory protein</summary>
+
+A researcher adds brefeldin A to pancreatic cells. This drug blocks the transport of vesicles from
+the ER to the Golgi apparatus. Describe the effect on insulin production and explain which
+organelles would accumulate the insulin.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Insulin would be synthesised on ribosomes bound to the rough ER and enter the ER lumen, where it
+would begin to fold. However, transport vesicles could not carry insulin from the ER to the Golgi
+apparatus. The insulin would accumulate inside the rough ER, causing it to dilate. The Golgi
+apparatus would not receive the protein, so no secretory vesicles would form and no insulin would be
+exported from the cell. The cell would still produce mRNA and translate the protein, but the
+secretory pathway would be blocked at the ER-to-Golgi transport step.
+
+</details>
+
+<details>
+<summary>Question 2: Comparing transport mechanisms in different conditions</summary>
+
+A cell has an internal $\mathrm{K}^+$ concentration of $140 \mathrm{ mM}$ and an external
+$\mathrm{K}^+$ concentration of $5 \mathrm{ mM}$. The membrane potential is $-70 \mathrm{ mV}$
+(inside negative). Predict the direction of $\mathrm{K}^+$ movement through (a) a $\mathrm{K}^+$
+leak channel and (b) the $\mathrm{Na}^+/\mathrm{K}^+$ pump, and explain your reasoning.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Through a $\mathrm{K}^+$ leak channel (passive transport): $\mathrm{K}^+$ would move out of the
+cell. The concentration gradient favours outward movement (140 mM inside vs 5 mM outside). The
+electrical gradient also favours outward movement because the inside of the cell is negative,
+repelling the positive $\mathrm{K}^+$ ions. Both gradients drive $\mathrm{K}^+$ out of the cell.
+
+(b) Through the $\mathrm{Na}^+/\mathrm{K}^+$ pump (active transport): The pump moves $\mathrm{K}^+$
+into the cell against its concentration gradient. This requires ATP hydrolysis. The pump
+continuously transports $2 \mathrm{ K}^+$ in and $3 \mathrm{ Na}^+$ out per ATP consumed,
+maintaining the resting membrane potential and the concentration gradients.
+
+</details>
+
+<details>
+<summary>Question 3: Endosymbiotic theory and antibiotic evidence</summary>
+
+Explain how the observation that the antibiotic streptomycin inhibits protein synthesis in both
+bacteria and mitochondria, but not in the cytoplasm of eukaryotic cells, provides evidence for the
+endosymbiotic theory.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Streptomycin targets the 70S ribosomes found in prokaryotes. Mitochondria also have 70S ribosomes,
+while eukaryotic cytoplasmic ribosomes are 80S. The fact that streptomycin inhibits mitochondrial
+protein synthesis but not cytoplasmic protein synthesis in eukaryotic cells demonstrates that
+mitochondrial ribosomes are prokaryotic in nature. This supports the endosymbiotic theory, which
+proposes that mitochondria evolved from free-living prokaryotes that were engulfed by an ancestral
+eukaryotic cell. The prokaryotic ribosomes were retained, along with circular DNA, binary fission,
+and a double membrane.
+
+</details>
+
+<details>
+<summary>Question 4: Signal transduction and cholera toxin</summary>
+
+Cholera toxin modifies a G-protein so that it cannot hydrolyse GTP to GDP. Explain the downstream
+effects on the cAMP pathway in intestinal cells and why this leads to severe diarrhoea.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Normally, a G-protein is activated when it binds GTP and is inactivated when it hydrolyses GTP to
+GDP. Cholera toxin prevents GTP hydrolysis, locking the G-protein in its active state. The
+constitutively active G-protein continuously activates adenylyl cyclase, which produces excessive
+cAMP. Elevated cAMP activates protein kinase A (PKA), which phosphorylates and opens CFTR chloride
+channels. Massive amounts of $\mathrm{Cl}^-$ are secreted into the intestinal lumen. $\mathrm{Na}^+$
+and water follow by osmosis, producing large volumes of watery diarrhoea. This demonstrates how
+disrupting the normal "off" switch in a signaling pathway can have severe physiological
+consequences.
+
+</details>
+
+<details>
+<summary>Question 5: Water potential and plant cell behaviour</summary>
+
+A plant cell has a solute potential of $-800 \mathrm{ kPa}$ and a pressure potential of
+$400 \mathrm{ kPa}$. The cell is placed in a solution with a water potential of
+$-500 \mathrm{ kPa}$. Calculate the cell's water potential and predict the direction of water
+movement.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Cell water potential: $\psi = \psi_s + \psi_p = -800 + 400 = -400 \mathrm{ kPa}$.
+
+The cell water potential ($-400 \mathrm{ kPa}$) is higher (less negative) than the solution water
+potential ($-500 \mathrm{ kPa}$). Water moves from higher water potential to lower water potential,
+so water will move from the cell into the surrounding solution. The cell will lose water, the
+pressure potential will decrease, and the cell may become plasmolysed if enough water is lost.
+
+</details>

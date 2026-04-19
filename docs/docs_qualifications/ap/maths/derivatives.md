@@ -840,3 +840,113 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 
 16. Find the dimensions of the rectangle of maximum area that can be inscribed in a semicircle of
     radius $r$.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Implicit differentiation</summary>
+
+Find $\frac{dy}{dx}$ for the curve $x^3 + y^3 = 6xy$. Then find the equation of the tangent line at the point $(3, 3)$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Differentiate implicitly: $3x^2 + 3y^2 \frac{dy}{dx} = 6y + 6x \frac{dy}{dx}$.
+
+$3y^2 \frac{dy}{dx} - 6x \frac{dy}{dx} = 6y - 3x^2$.
+
+$\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}$.
+
+At $(3, 3)$: $\frac{dy}{dx} = \frac{6 - 9}{9 - 6} = \frac{-3}{3} = -1$.
+
+Tangent line: $y - 3 = -1(x - 3)$, so $y = -x + 6$.
+
+</details>
+
+<details>
+<summary>Question 2: Related rates</summary>
+
+A spherical balloon is being inflated at a rate of $100 \mathrm{ cm^3/s}$. How fast is the radius increasing when the radius is $10 \mathrm{ cm}$?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$V = \frac{4}{3}\pi r^3$. Differentiate with respect to time: $\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$.
+
+$100 = 4\pi(10)^2 \frac{dr}{dt} = 400\pi \frac{dr}{dt}$.
+
+$\frac{dr}{dt} = \frac{100}{400\pi} = \frac{1}{4\pi} \approx 0.080 \mathrm{ cm/s}$.
+
+</details>
+
+<details>
+<summary>Question 3: L'Hopital's rule</summary>
+
+Evaluate $\displaystyle\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+This is $0/0$. Apply L'Hopital's rule:
+
+$\displaystyle\lim_{x \to 0} \frac{e^x - 1}{2x}$.
+
+Still $0/0$. Apply again:
+
+$\displaystyle\lim_{x \to 0} \frac{e^x}{2} = \frac{1}{2}$.
+
+Alternatively, this is the coefficient of $x^2/2!$ in the Taylor series of $e^x$, confirming the answer.
+
+</details>
+
+<details>
+<summary>Question 4: Optimisation with constraint</summary>
+
+A rectangular box with a square base and no top is to have a volume of $108 \mathrm{ cm^3}$. Find the dimensions that minimise the surface area.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Let base side = $x$, height = $h$. Volume: $x^2 h = 108$, so $h = 108/x^2$.
+
+Surface area: $S = x^2 + 4xh = x^2 + 4x(108/x^2) = x^2 + 432/x$.
+
+$\frac{dS}{dx} = 2x - 432/x^2 = 0$, so $2x = 432/x^2$, $x^3 = 216$, $x = 6 \mathrm{ cm}$.
+
+$h = 108/36 = 3 \mathrm{ cm}$.
+
+$\frac{d^2S}{dx^2} = 2 + 864/x^3 \gt 0$ at $x = 6$, confirming minimum.
+
+Dimensions: $6 \times 6 \times 3 \mathrm{ cm}$, minimum surface area $= 36 + 432/6 = 108 \mathrm{ cm^2}$.
+
+</details>
+
+<details>
+<summary>Question 5: Mean Value Theorem</summary>
+
+Verify that the function $f(x) = x^3 - 3x + 1$ satisfies the conditions of the Mean Value Theorem on $[-2, 2]$, and find all values of $c$ that satisfy the conclusion.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$f$ is a polynomial, so it is continuous on $[-2, 2]$ and differentiable on $(-2, 2)$.
+
+$f(2) = 8 - 6 + 1 = 3$. $f(-2) = -8 + 6 + 1 = -1$.
+
+$f'(c) = \frac{f(2) - f(-2)}{2 - (-2)} = \frac{3 - (-1)}{4} = 1$.
+
+$f'(x) = 3x^2 - 3 = 1$, so $3x^2 = 4$, $x^2 = 4/3$, $x = \pm 2/\sqrt{3} \approx \pm 1.155$.
+
+Both values are in $(-2, 2)$. The MVT is satisfied at $c = 2/\sqrt{3}$ and $c = -2/\sqrt{3}$.
+
+</details>

@@ -25,12 +25,10 @@ geometric distribution counts the number of trials until the first success.
 | OCR (A)    | Paper 2 | Poisson and geometric                   |
 | CIE (9231) | S2      | Poisson covered; geometric not required |
 
-:::info
-The formula booklet provides the Poisson PMF. You must know when to apply each distribution
+:::info The formula booklet provides the Poisson PMF. You must know when to apply each distribution
 and how to carry out hypothesis testing with discrete distributions. The geometric distribution has
 two common conventions for the support: $r = 1, 2, 3, \ldots$ (number of trials) or
-$r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$.
-:::
+$r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$. :::
 
 <hr />
 
@@ -239,11 +237,9 @@ $$
 \frac{1 - (1-q^{m+n})}{1 - (1-q^m)} = \frac{q^{m+n}}{q^m} = q^n = 1 - (1-q^n) = P(X > n) \quad \blacksquare
 $$
 
-:::info
-This is a remarkable property. It means that if you have already waited $m$ trials without
+:::info This is a remarkable property. It means that if you have already waited $m$ trials without
 success, the probability of waiting at least $n$ more trials is exactly the same as if you were
-starting fresh. The process "forgets" its history.
-:::
+starting fresh. The process "forgets" its history. :::
 
 ### 2.5 Cumulative distribution function
 
@@ -254,8 +250,8 @@ $$P(X \leq r) = 1 - q^r = 1 - (1-p)^r$$
 **Example.** A bag contains red and blue balls. The probability of drawing a red ball is $p$. In an
 experiment, the first red ball is drawn on the 10th draw. Test at the 5% level whether $p = 0.3$.
 
-$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so $p$
-may be smaller).
+$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so
+$p$ may be smaller).
 
 $p\mathrm{-value} = P(X \geq 10) = (1-0.3)^{10-1} = 0.7^9 \approx 0.0404 < 0.05$.
 
@@ -274,11 +270,11 @@ Critical region: $X \geq 10$.
 
 ### 3.1 When to use each
 
-| Situation                                         | Distribution                 |
-| ------------------------------------------------- | ---------------------------- |
+| Situation                                         | Distribution                   |
+| ------------------------------------------------- | ------------------------------ |
 | Number of events in a fixed interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
 | Number of trials until first success              | Geometric $\mathrm{Geo}(p)$    |
-| Fixed number of trials, counting successes        | Binomial $B(n, p)$           |
+| Fixed number of trials, counting successes        | Binomial $B(n, p)$             |
 
 ### 3.2 Poisson as approximation to Binomial
 
@@ -298,11 +294,9 @@ Before applying the Poisson distribution, verify:
 2. Events are independent
 3. At most one event can occur in a sufficiently small sub-interval
 
-:::warning
-The Poisson approximation to the binomial is used when $n \geq 50$ and $np \leq 5$. Do
+:::warning The Poisson approximation to the binomial is used when $n \geq 50$ and $np \leq 5$. Do
 not confuse this with the normal approximation to the binomial, which requires $np > 5$ and
-$n(1-p) > 5$.
-:::
+$n(1-p) > 5$. :::
 
 <hr />
 
@@ -388,7 +382,8 @@ A manufacturer claims that on average 1 in 20 items is defective. In a batch of 
 <summary>Solution 5</summary>
 $X \sim B(500, 1/20)$. $\lambda = np = 500/20 = 25$.
 
-$X \approx \mathrm{Po}(25)$. $P(X \leq 35) = \sum_{r=0}^{35}\dfrac{e^{-25}(25)^r}{r!} \approx 0.8878$.
+$X \approx \mathrm{Po}(25)$.
+$P(X \leq 35) = \sum_{r=0}^{35}\dfrac{e^{-25}(25)^r}{r!} \approx 0.8878$.
 
 **If you get this wrong, revise:**
 [Poisson as approximation to Binomial](#32-poisson-as-approximation-to-binomial) — Section 3.2.
@@ -489,7 +484,8 @@ $E(X^2) = E(X(X-1)) + E(X) = \dfrac{2q}{p^2} + \dfrac{1}{p} = \dfrac{2q+p}{p^2} 
 $\mathrm{Var}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$. $\blacksquare$
 
 **If you get this wrong, revise:**
-[Proof that $\mathrm{Var}(X) = \frac{1-p}{p^2}$](#23-proof-that-varx--frac1-pp2) — Section 2.3.
+[Proof that $\mathrm{Var}(X) = \frac{1-p}{p^2}$](#23-proof-that-mathrmvarx--frac1-pp2) — Section
+2.3.
 
 </details>
 

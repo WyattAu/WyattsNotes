@@ -801,3 +801,135 @@ range 8.3--10.0)
 
 **Answer: C.** A weak acid-strong base titration has an equivalence point with pH $\gt$ 7, so
 phenolphthalein is appropriate.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: ICE Table and $K_c$ Calculation</summary>
+
+For the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$, $1.00\mathrm{ mol}$ of $\mathrm{N}_2\mathrm{O}_4$ is placed in a $2.00\mathrm{ L}$ flask at $350\mathrm{ K}$. At equilibrium, the concentration of $\mathrm{NO}_2$ is $0.200\mathrm{ mol/L}$. Calculate $K_c$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Initial $[\mathrm{N}_2\mathrm{O}_4] = 1.00 / 2.00 = 0.500\mathrm{ mol/L}$
+
+| | $\mathrm{N}_2\mathrm{O}_4$ | $\mathrm{NO}_2$ |
+|---|---|---|
+| Initial | $0.500$ | $0$ |
+| Change | $-0.100$ | $+0.200$ |
+| Equilibrium | $0.400$ | $0.200$ |
+
+Since $[\mathrm{NO}_2]_{\mathrm{eq}} = 0.200\mathrm{ mol/L}$ and it increases by $2x$, $x = 0.100$.
+
+$$K_c = \frac{[\mathrm{NO}_2]^2}{[\mathrm{N}_2\mathrm{O}_4]} = \frac{(0.200)^2}{0.400} = \frac{0.0400}{0.400} = 0.100$$
+
+</details>
+
+<details>
+<summary>Question 2: Le Chatelier's Principle</summary>
+
+For the exothermic reaction $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$, predict and explain the effect of each change on the equilibrium yield of $\mathrm{NH}_3$:
+
+(a) Increasing pressure
+
+(b) Increasing temperature
+
+(c) Adding a catalyst
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) There are 4 moles of gas on the left and 2 on the right. Increasing pressure shifts the equilibrium to the right (fewer moles of gas), **increasing** the yield of $\mathrm{NH}_3$.
+
+(b) The forward reaction is exothermic ($\Delta H \lt 0$). Increasing temperature shifts the equilibrium to the left (endothermic direction), **decreasing** the yield of $\mathrm{NH}_3$.
+
+(c) A catalyst increases the rate of both forward and reverse reactions equally. It does **not** change the equilibrium position or the yield of $\mathrm{NH}_3$. It only helps the system reach equilibrium faster.
+
+</details>
+
+<details>
+<summary>Question 3: Buffer pH Calculation</summary>
+
+A buffer solution is prepared by mixing $100\mathrm{ mL}$ of $0.20\mathrm{ M}$ $\mathrm{CH}_3\mathrm{COOH}$ ($\mathrm{p}K_a = 4.76$) with $50\mathrm{ mL}$ of $0.20\mathrm{ M}$ $\mathrm{NaOH}$. Calculate the pH of the resulting buffer.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The $\mathrm{NaOH}$ reacts with $\mathrm{CH}_3\mathrm{COOH}$:
+
+$$n(\mathrm{CH}_3\mathrm{COOH})_{\mathrm{initial}} = 0.100 \times 0.20 = 0.0200\mathrm{ mol}$$
+
+$$n(\mathrm{NaOH}) = 0.050 \times 0.20 = 0.0100\mathrm{ mol}$$
+
+After reaction:
+
+$$n(\mathrm{CH}_3\mathrm{COOH})_{\mathrm{remaining}} = 0.0200 - 0.0100 = 0.0100\mathrm{ mol}$$
+
+$$n(\mathrm{CH}_3\mathrm{COO}^-)_{\mathrm{formed}} = 0.0100\mathrm{ mol}$$
+
+Total volume = $150\mathrm{ mL} = 0.150\mathrm{ L}$:
+
+$$[\mathrm{CH}_3\mathrm{COOH}] = \frac{0.0100}{0.150} = 0.0667\mathrm{ M}$$
+
+$$[\mathrm{CH}_3\mathrm{COO}^-] = \frac{0.0100}{0.150} = 0.0667\mathrm{ M}$$
+
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 4.76 + \log\frac{0.0667}{0.0667} = 4.76 + \log(1) = 4.76$$
+
+</details>
+
+<details>
+<summary>Question 4: Solubility Product and Common Ion Effect</summary>
+
+The $K_{sp}$ of $\mathrm{PbCl}_2$ is $1.7 \times 10^{-5}$ at $25\degree\mathrm{C}$.
+
+(a) Calculate the molar solubility of $\mathrm{PbCl}_2$ in pure water.
+
+(b) Calculate the molar solubility of $\mathrm{PbCl}_2$ in $0.10\mathrm{ M}$ $\mathrm{NaCl}$ solution.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Let $s$ = molar solubility of $\mathrm{PbCl}_2$:
+
+$$\mathrm{PbCl}_2(s) \rightleftharpoons \mathrm{Pb}^{2+}(aq) + 2\mathrm{Cl}^-(aq)$$
+
+$$K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{Cl}^-]^2 = s \times (2s)^2 = 4s^3$$
+
+$$s^3 = \frac{1.7 \times 10^{-5}}{4} = 4.25 \times 10^{-6}$$
+
+$$s = 1.62 \times 10^{-2}\mathrm{ mol/L}$$
+
+(b) In $0.10\mathrm{ M}$ $\mathrm{NaCl}$, $[\mathrm{Cl}^-]_{\mathrm{initial}} = 0.10\mathrm{ M}$:
+
+$$K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{Cl}^-]^2 = s \times (0.10 + 2s)^2 \approx s \times (0.10)^2$$
+
+$$s = \frac{1.7 \times 10^{-5}}{0.010} = 1.7 \times 10^{-3}\mathrm{ mol/L}$$
+
+The solubility decreases significantly due to the common ion effect.
+
+</details>
+
+<details>
+<summary>Question 5: Weak Acid pH</summary>
+
+Calculate the pH of a $0.050\mathrm{ M}$ solution of $\mathrm{HF}$. ($K_a = 6.8 \times 10^{-4}$)
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$[\mathrm{H}^+] = \sqrt{K_a \times c} = \sqrt{6.8 \times 10^{-4} \times 0.050} = \sqrt{3.4 \times 10^{-5}} = 5.83 \times 10^{-3}\mathrm{ mol/L}$$
+
+$$\mathrm{pH} = -\log(5.83 \times 10^{-3}) = 2.23$$
+</details>
+

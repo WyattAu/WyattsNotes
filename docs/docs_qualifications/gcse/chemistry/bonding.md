@@ -768,3 +768,87 @@ points compared to London forces, and London forces increase with molar mass.
 24. Compare and contrast the bonding in sodium chloride, diamond, and copper. Your answer should
     include the types of particles present, the forces between them, and how these forces account
     for the electrical conductivity of each substance.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Ionic vs covalent bonding</summary>
+
+Explain the difference between ionic and covalent bonding. Use sodium chloride and water as examples.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Ionic bonding involves the transfer of electrons from a metal to a non-metal, forming positive and negative ions held together by electrostatic attraction. In NaCl, sodium transfers one electron to chlorine, forming $\mathrm{Na}^+$ and $\mathrm{Cl}^-$.
+
+Covalent bonding involves the sharing of electron pairs between non-metal atoms. In water ($\mathrm{H}_2\mathrm{O}$), oxygen shares electrons with two hydrogen atoms, forming two covalent bonds.
+
+</details>
+
+<details>
+<summary>Question 2: Dot-cross diagrams</summary>
+
+Draw dot-cross diagrams for (a) magnesium oxide ($\mathrm{MgO}$) and (b) carbon dioxide ($\mathrm{CO}_2$).
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $\mathrm{MgO}$: $\mathrm{Mg}$ donates 2 electrons (shown as x) to $\mathrm{O}$, forming $\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$. The diagram shows the oxide ion with 8 electrons (6 of its own + 2 from Mg) and the magnesium ion with none in its outer shell.
+
+(b) $\mathrm{CO}_2$: $\mathrm{O}=\mathrm{C}=\mathrm{O}$. Each oxygen shares 2 electron pairs with carbon (double bonds). Carbon shares 4 electrons total (2 with each oxygen), achieving a full outer shell of 8.
+
+</details>
+
+<details>
+<summary>Question 3: Properties of ionic compounds</summary>
+
+Sodium chloride has a high melting point, conducts electricity when molten but not when solid, and dissolves in water. Explain these properties in terms of its structure and bonding.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+High melting point: the ionic bonds between $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ in the giant ionic lattice are strong and require a lot of energy to break.
+
+Conducts when molten but not solid: in the solid state, ions are fixed in position and cannot move. When molten, the lattice breaks down and ions are free to move, carrying charge.
+
+Dissolves in water: water molecules are polar. The $\delta^+$ hydrogen atoms are attracted to $\mathrm{Cl}^-$ ions and the $\delta^-$ oxygen atoms to $\mathrm{Na}^+$ ions, pulling ions away from the lattice.
+
+</details>
+
+<details>
+<summary>Question 4: Simple covalent molecules vs giant covalent structures</summary>
+
+Compare the structure and properties of methane ($\mathrm{CH}_4$) and diamond. Explain why diamond is much harder and has a much higher melting point.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Methane is a simple covalent molecule with weak London forces between molecules. It has a low melting point and is a gas at room temperature.
+
+Diamond has a giant covalent (macromolecular) structure where each carbon atom is covalently bonded to four others in a tetrahedral arrangement. The entire structure is one giant molecule held together by strong covalent bonds throughout. Breaking these bonds requires enormous energy, so diamond has a very high melting point and is extremely hard.
+
+</details>
+
+<details>
+<summary>Question 5: Metallic bonding</summary>
+
+Explain why metals are good conductors of electricity and are malleable, using the concept of metallic bonding.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+In metallic bonding, metal atoms lose their outer electrons to form positive ions surrounded by a "sea" of delocalised electrons. These free electrons can move throughout the structure, carrying electrical charge, making metals good conductors.
+
+Metals are malleable because the layers of positive ions can slide over each other when a force is applied. The delocalised electrons adjust their positions to maintain the metallic bonds between the layers, so the metal does not shatter. This is different from ionic compounds, where layers of ions of the same charge repel when forced to slide.
+
+</details>

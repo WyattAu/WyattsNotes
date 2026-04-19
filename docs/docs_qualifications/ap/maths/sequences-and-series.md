@@ -729,3 +729,109 @@ $$
 
 12. Use the alternating series estimation theorem to bound the error in approximating
     $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{n^3}$ by its first 10 terms.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Taylor series expansion</summary>
+
+Find the first four nonzero terms of the Maclaurin series for $f(x) = \ln(1 + x)$ and use it to approximate $\ln(1.1)$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$f(0) = \ln(1) = 0$.
+
+$f'(x) = \frac{1}{1+x}$, $f'(0) = 1$.
+
+$f''(x) = \frac{-1}{(1+x)^2}$, $f''(0) = -1$.
+
+$f'''(x) = \frac{2}{(1+x)^3}$, $f'''(0) = 2$.
+
+$f^{(4)}(x) = \frac{-6}{(1+x)^4}$, $f^{(4)}(0) = -6$.
+
+Maclaurin series: $\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots$
+
+For $\ln(1.1)$ with $x = 0.1$: $\ln(1.1) \approx 0.1 - 0.005 + 0.000333 - 0.000025 = 0.095308$.
+
+Actual: $\ln(1.1) \approx 0.09531$. The approximation is accurate to 5 decimal places.
+
+</details>
+
+<details>
+<summary>Question 2: Ratio test</summary>
+
+Determine the radius of convergence of $\displaystyle\sum_{n=0}^{\infty} \frac{(2x)^n}{n!}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$a_n = \frac{2^n x^n}{n!}$.
+
+$\displaystyle L = \lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \lim_{n \to \infty} \left|\frac{2^{n+1} x^{n+1} / (n+1)!}{2^n x^n / n!}\right| = \lim_{n \to \infty} \frac{2|x|}{n+1} = 0$.
+
+Since $L = 0 \lt 1$ for all $x$, the radius of convergence is $R = \infty$. The series converges for all real $x$. (This is the Maclaurin series for $e^{2x}$.)
+
+</details>
+
+<details>
+<summary>Question 3: Alternating series</summary>
+
+Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{\sqrt{n}}$ converges absolutely, converges conditionally, or diverges.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Alternating series test: $a_n = \frac{1}{\sqrt{n}}$ is positive, decreasing, and $\lim_{n \to \infty} \frac{1}{\sqrt{n}} = 0$. The alternating series converges.
+
+Absolute convergence: $\sum \frac{1}{\sqrt{n}}$ is a p-series with $p = 1/2 \lt 1$, so it diverges.
+
+Therefore, the series converges conditionally (but not absolutely).
+
+</details>
+
+<details>
+<summary>Question 4: Power series representation</summary>
+
+Find the power series representation for $\displaystyle\frac{1}{(1-x)^2}$ and determine its interval of convergence.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+We know $\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$ for $|x| \lt 1$.
+
+Differentiate both sides: $\frac{1}{(1-x)^2} = \sum_{n=1}^{\infty} nx^{n-1} = \sum_{n=0}^{\infty} (n+1)x^n$.
+
+Interval of convergence: $|x| \lt 1$, or $(-1, 1)$.
+
+Check endpoints: at $x = 1$, series is $\sum (n+1)$ which diverges. At $x = -1$, series is $\sum (-1)^n(n+1)$ which diverges by the divergence test.
+
+</details>
+
+<details>
+<summary>Question 5: Telescoping series</summary>
+
+Evaluate $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Partial fraction decomposition: $\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$.
+
+$S_N = \sum_{n=1}^{N} \left(\frac{1}{n} - \frac{1}{n+1}\right) = 1 - \frac{1}{2} + \frac{1}{2} - \frac{1}{3} + \frac{1}{3} - \cdots - \frac{1}{N+1}$.
+
+All intermediate terms cancel (telescoping): $S_N = 1 - \frac{1}{N+1}$.
+
+$\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = \lim_{N \to \infty} \left(1 - \frac{1}{N+1}\right) = 1$.
+
+</details>

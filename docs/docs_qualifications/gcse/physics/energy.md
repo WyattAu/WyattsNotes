@@ -796,3 +796,79 @@ input goes directly into kinetic energy, producing a rapid temperature rise.
 20. A bungee cord of natural length 20 m has spring constant 40 N/m. A jumper of mass 75 kg falls
     from a bridge. Find the maximum speed of the jumper during the fall. (Hint: the maximum speed
     occurs when the acceleration is zero, i.e., when the net force is zero.)
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Gravitational potential energy</summary>
+
+A $60 \mathrm{ kg}$ climber ascends a $15 \mathrm{ m}$ cliff. Calculate the change in gravitational potential energy. Take $g = 9.8 \mathrm{ N/kg}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\Delta E_p = mgh = 60 \times 9.8 \times 15 = 8820 \mathrm{ J}$.
+
+</details>
+
+<details>
+<summary>Question 2: Kinetic energy and speed</summary>
+
+A car of mass $800 \mathrm{ kg}$ is travelling at $20 \mathrm{ m/s}$. Calculate its kinetic energy. If the brakes apply a force of $4000 \mathrm{ N}$, calculate the stopping distance.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$E_k = \frac{1}{2}mv^2 = 0.5 \times 800 \times 400 = 160,000 \mathrm{ J}$.
+
+Work done by brakes = $F \times d = E_k$: $4000 \times d = 160,000$, $d = 40 \mathrm{ m}$.
+
+</details>
+
+<details>
+<summary>Question 3: Conservation of energy on a roller coaster</summary>
+
+A roller coaster car starts from rest at the top of a hill $30 \mathrm{ m}$ high. Calculate its speed at the bottom of the hill, assuming no energy is lost to friction.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$mgh = \frac{1}{2}mv^2$, so $v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 30} = \sqrt{588} = 24.2 \mathrm{ m/s}$.
+
+</details>
+
+<details>
+<summary>Question 4: Work done and power</summary>
+
+A motor lifts a $200 \mathrm{ kg}$ load through a height of $8 \mathrm{ m}$ in $10 \mathrm{ s}$. Calculate (a) the work done and (b) the power of the motor.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Work $= F \times d = mg \times h = 200 \times 9.8 \times 8 = 15,680 \mathrm{ J}$.
+
+(b) Power $= W/t = 15,680/10 = 1568 \mathrm{ W}$.
+
+</details>
+
+<details>
+<summary>Question 5: Specific heat capacity</summary>
+
+$2.0 \mathrm{ kg}$ of water is heated from $20^\circ\mathrm{C}$ to $80^\circ\mathrm{C}$. The specific heat capacity of water is $4200 \mathrm{ J/(kg\cdot^\circ C)}$. Calculate the energy required.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\Delta E = mc\Delta T = 2.0 \times 4200 \times (80 - 20) = 2.0 \times 4200 \times 60 = 504,000 \mathrm{ J} = 504 \mathrm{ kJ}$.
+
+</details>

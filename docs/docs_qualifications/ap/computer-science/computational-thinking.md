@@ -834,3 +834,185 @@ Result: index 5. Correct.
 25. Write a detailed trace table for the binary search algorithm when searching for 23 in the list
     [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]. Show the values of low, high, mid, and list[mid] at
     each step.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Pseudocode tracing</summary>
+
+Trace the following pseudocode and determine the output when `n = 5`:
+
+```
+PROCEDURE mystery(n)
+{
+    result <- 1
+    i <- 1
+    REPEAT UNTIL (i > n)
+    {
+        result <- result * i
+        i <- i + 1
+    }
+    RETURN(result)
+}
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Tracing with n = 5:
+- Start: result = 1, i = 1
+- Iteration 1: result = 1*1 = 1, i = 2. 2 &gt; 5? No.
+- Iteration 2: result = 1*2 = 2, i = 3. 3 &gt; 5? No.
+- Iteration 3: result = 2*3 = 6, i = 4. 4 &gt; 5? No.
+- Iteration 4: result = 6*4 = 24, i = 5. 5 &gt; 5? No.
+- Iteration 5: result = 24*5 = 120, i = 6. 6 &gt; 5? Yes. Loop ends.
+
+Output: 120 (this computes 5!, factorial of 5).
+
+</details>
+
+<details>
+<summary>Question 2: Procedure with side effects</summary>
+
+Consider the following pseudocode. What does `calculate(list)` return, and what is the value of `list` after the call?
+
+```
+list <- [3, 1, 4, 1, 5]
+
+PROCEDURE calculate(lst)
+{
+    total <- 0
+    FOR EACH item IN lst
+    {
+        total <- total + item
+        REMOVE(lst, 1)
+    }
+    RETURN(total)
+}
+
+result <- calculate(list)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+This question tests understanding of how modifying a list during iteration affects the result. In AP CSP pseudocode, `REMOVE(lst, 1)` removes the element at index 1.
+
+The exact behavior depends on the specification. In most implementations, modifying a list during iteration is undefined or removes elements as it goes:
+
+- Iteration 1: item = 3 (index 1), total = 3, remove index 1. List becomes [3, 4, 1, 5].
+- Iteration 2: item = 4 (new index 1), total = 7, remove index 1. List becomes [3, 1, 5].
+- Iteration 3: item = 1 (new index 1), total = 8, remove index 1. List becomes [3, 5].
+- Iteration 4: item = 5 (new index 1), total = 13, remove index 1. List becomes [3].
+
+Return value: 13. The list after the call: [3].
+
+This demonstrates why modifying a collection during iteration leads to unpredictable results.
+
+</details>
+
+<details>
+<summary>Question 3: Abstraction levels</summary>
+
+A program manages a school's grading system. Describe three levels of abstraction, specifying what details are hidden at each level.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Level 1 (highest): The school administrator interface. Hides: database queries, grade calculation algorithms, data storage format. The user only sees buttons like "Add Student" and "Generate Report".
+
+Level 2 (middle): The grading logic module. Hides: individual assignment scoring details, how grades are stored in memory. Exposes procedures like `calculateGPA(studentID)` and `addClassGrade(studentID, courseID, grade)`.
+
+Level 3 (lowest): The data storage layer. Hides: file system operations, database query language, indexing. Exposes procedures like `save(record)` and `retrieve(key)`.
+
+Each level builds on the one below it, hiding implementation details and exposing only the necessary interface.
+
+</details>
+
+<details>
+<summary>Question 4: Binary search pseudocode</summary>
+
+Write AP CSP pseudocode for a binary search that returns the index of `target` in sorted `list`, or 0 if not found.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```
+PROCEDURE binarySearch(list, target)
+{
+    low <- 1
+    high <- LENGTH(list)
+    
+    REPEAT UNTIL (low > high)
+    {
+        mid <- (low + high) / 2
+        IF (list[mid] = target)
+        {
+            RETURN(mid)
+        }
+        ELSE IF (list[mid] < target)
+        {
+            low <- mid + 1
+        }
+        ELSE
+        {
+            high <- mid - 1
+        }
+    }
+    
+    RETURN(0)
+}
+```
+
+Note: AP CSP uses 1-based indexing, so indices start at 1. The loop continues until `low &gt; high`, indicating the target was not found.
+
+</details>
+
+<details>
+<summary>Question 5: Decomposition of a problem</summary>
+
+Decompose the problem "find the most common word in a text file" into subproblems. Write pseudocode for each subproblem.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Subproblems:
+1. Read the file and split it into individual words.
+2. Clean each word (remove punctuation, convert to lowercase).
+3. Count the frequency of each word.
+4. Find the word with the highest count.
+
+```
+PROCEDURE findMostCommonWord(filename)
+{
+    text <- readFile(filename)
+    words <- split(text, " ")
+    cleanedWords <- []
+    
+    FOR EACH word IN words
+    {
+        cleaned <- toLowerCase(removePunctuation(word))
+        IF (LENGTH(cleaned) > 0)
+        {
+            APPEND(cleanedWords, cleaned)
+        }
+    }
+    
+    counts <- countFrequencies(cleanedWords)
+    RETURN(findMaxKey(counts)
+}
+```
+
+This decomposition separates concerns: file I/O, string processing, counting, and finding the maximum.
+
+</details>

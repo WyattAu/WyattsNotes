@@ -782,3 +782,81 @@ change, it would create energy from nothing, violating the first law of thermody
 
 30. Explain why transformers only work with AC and not DC. What would happen if you connected a
     transformer to a DC supply?
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Electromagnetic induction</summary>
+
+A bar magnet is pushed into a coil of wire connected to a galvanometer. Describe what happens to the galvanometer needle and explain why. What happens if the magnet is held stationary inside the coil?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The galvanometer needle deflects. As the magnet moves into the coil, the magnetic flux through the coil changes. According to Faraday's law, a changing magnetic flux induces an electromotive force (EMF) in the coil, causing a current to flow. The needle returns to zero when the magnet is held stationary because there is no change in magnetic flux, so no EMF is induced.
+
+</details>
+
+<details>
+<summary>Question 2: Transformer calculation</summary>
+
+A step-down transformer has 2000 turns on the primary coil and 100 turns on the secondary coil. The primary voltage is $240 \mathrm{ V}$. Calculate the secondary voltage and explain why the transformer is described as step-down.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\frac{V_p}{V_s} = \frac{N_p}{N_s}$, so $V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12 \mathrm{ V}$.
+
+It is a step-down transformer because the secondary voltage ($12 \mathrm{ V}$) is lower than the primary voltage ($240 \mathrm{ V}$). There are fewer turns on the secondary coil than the primary.
+
+</details>
+
+<details>
+<summary>Question 3: Motor effect</summary>
+
+Explain how a DC motor works. Describe the role of the split-ring commutator.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+A current-carrying coil in a magnetic field experiences a force (motor effect). The force on opposite sides of the coil acts in opposite directions, causing the coil to rotate. The split-ring commutator reverses the direction of current in the coil every half-turn, ensuring that the forces always act in the same rotational direction, so the coil continues to spin.
+
+</details>
+
+<details>
+<summary>Question 4: Magnetic field of a wire</summary>
+
+Describe the magnetic field pattern around a straight current-carrying wire. Explain how you would use the right-hand grip rule to determine the direction of the field.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The magnetic field consists of concentric circles centred on the wire. The field is strongest close to the wire and weakens with distance.
+
+Right-hand grip rule: grip the wire with your right hand, with your thumb pointing in the direction of conventional current. Your fingers curl in the direction of the magnetic field lines.
+
+</details>
+
+<details>
+<summary>Question 5: Uses of electromagnets</summary>
+
+Describe how an electromagnet works and give two examples of its use in everyday devices.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+An electromagnet is a coil of wire (solenoid) wrapped around an iron core. When current flows through the coil, a magnetic field is produced. The iron core becomes magnetised by induction, greatly strengthening the magnetic field. When the current is switched off, the iron loses most of its magnetism.
+
+Examples: (1) Electric bells -- the electromagnet attracts a metal striker. (2) Scrap yard cranes -- the electromagnet picks up and releases metal objects. (3) Relays in circuits.
+
+</details>

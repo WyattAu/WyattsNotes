@@ -825,3 +825,123 @@ $$
 Since both $\Delta H$ and $\Delta S$ are negative, the reaction is spontaneous at low temperatures.
 It becomes non-spontaneous above $1094\mathrm{ K}$. Since the calculated "temperature" is negative,
 $\Delta G^\circ$ is negative at all positive temperatures — the reaction is always spontaneous.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Calorimetry Calculation</summary>
+
+$50.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ $\mathrm{HCl}$ is mixed with $50.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ $\mathrm{NaOH}$ in a calorimeter. The temperature increases from $22.0\degree\mathrm{C}$ to $28.8\degree\mathrm{C}$. Calculate the enthalpy of neutralisation per mole of water formed.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$q = mc\Delta T = 100.0 \times 4.18 \times 6.8 = 2842\mathrm{ J} = 2.842\mathrm{ kJ}$$
+
+$$n(\mathrm{H}_2\mathrm{O}) = 0.0500 \times 1.0 = 0.0500\mathrm{ mol}$$
+
+$$\Delta H = -\frac{2.842}{0.0500} = -56.8\mathrm{ kJ/mol}$$
+
+</details>
+
+<details>
+<summary>Question 2: Hess's Law with Formation Enthalpies</summary>
+
+Using standard enthalpies of formation, calculate $\Delta H_r^\circ$ for the combustion of propane:
+
+$$\mathrm{C}_3\mathrm{H}_8(g) + 5\mathrm{O}_2(g) \to 3\mathrm{CO}_2(g) + 4\mathrm{H}_2\mathrm{O}(l)$$
+
+Given: $\Delta H_f^\circ(\mathrm{C}_3\mathrm{H}_8) = -104\mathrm{ kJ/mol}$, $\Delta H_f^\circ(\mathrm{CO}_2) = -394\mathrm{ kJ/mol}$, $\Delta H_f^\circ(\mathrm{H}_2\mathrm{O}) = -286\mathrm{ kJ/mol}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$\Delta H_r^\circ = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})$$
+
+$$= [3(-394) + 4(-286)] - [(-104) + 5(0)]$$
+
+$$= (-1182 - 1144) - (-104) = -2326 + 104 = -2222\mathrm{ kJ/mol}$$
+
+</details>
+
+<details>
+<summary>Question 3: Bond Enthalpy Calculation</summary>
+
+Using average bond enthalpies, calculate $\Delta H$ for the reaction:
+
+$$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$$
+
+Given: $\mathrm{N} \equiv \mathrm{N} = 945\mathrm{ kJ/mol}$, $\mathrm{H}-\mathrm{H} = 436\mathrm{ kJ/mol}$, $\mathrm{N}-\mathrm{H} = 391\mathrm{ kJ/mol}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Bonds broken: $1(\mathrm{N} \equiv \mathrm{N}) + 3(\mathrm{H}-\mathrm{H}) = 945 + 3(436) = 945 + 1308 = 2253\mathrm{ kJ/mol}$
+
+Bonds formed: $6(\mathrm{N}-\mathrm{H}) = 6 \times 391 = 2346\mathrm{ kJ/mol}$
+
+$$\Delta H = 2253 - 2346 = -93\mathrm{ kJ/mol}$$
+
+The actual value is $-92\mathrm{ kJ/mol}$, so the bond enthalpy approximation is close.
+
+</details>
+
+<details>
+<summary>Question 4: Gibbs Free Energy and Spontaneity</summary>
+
+For the decomposition of calcium carbonate:
+
+$$\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$$
+
+$\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +161\mathrm{ J/(mol \cdot K)}$.
+
+(a) Calculate $\Delta G$ at $298\mathrm{ K}$ and state whether the reaction is spontaneous.
+
+(b) Calculate the minimum temperature at which the reaction becomes spontaneous.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $$\Delta G = \Delta H - T\Delta S = 178000 - 298 \times 161 = 178000 - 47978 = +130\,022\mathrm{ J/mol} = +130\mathrm{ kJ/mol}$$
+
+Since $\Delta G \gt 0$, the reaction is **not spontaneous** at $298\mathrm{ K}$.
+
+(b) At $\Delta G = 0$:
+
+$$T = \frac{\Delta H}{\Delta S} = \frac{178000}{161} = 1106\mathrm{ K}$$
+
+The reaction becomes spontaneous above $1106\mathrm{ K}$ (approximately $833\degree\mathrm{C}$).
+
+</details>
+
+<details>
+<summary>Question 5: Entropy Change Prediction</summary>
+
+Predict the sign of $\Delta S$ for each of the following processes and explain:
+
+(a) $\mathrm{NH}_4\mathrm{Cl}(s) \to \mathrm{NH}_3(g) + \mathrm{HCl}(g)$
+
+(b) $2\mathrm{NO}(g) + \mathrm{O}_2(g) \to 2\mathrm{NO}_2(g)$
+
+(c) $\mathrm{NaCl}(s) \to \mathrm{Na}^+(aq) + \mathrm{Cl}^-(aq)$
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) **Positive** $\Delta S$: One mole of solid produces two moles of gas, significantly increasing disorder.
+
+(b) **Negative** $\Delta S$: Three moles of gas produce two moles of gas, decreasing the number of gaseous particles and thus disorder.
+
+(c) **Positive** $\Delta S$: An ordered solid lattice breaks apart into freely moving hydrated ions in solution, increasing disorder.
+</details>
+

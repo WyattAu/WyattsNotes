@@ -716,3 +716,81 @@ This matches copper ($A_r \approx 63.5$). The isotopes are Cu-63 and Cu-65.
 
 20. Write balanced equations for the reactions of: (a) lithium with water, (b) fluorine with
     potassium bromide solution, (c) calcium with oxygen.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Electron configuration and reactivity</summary>
+
+Sodium has the electron configuration 2, 8, 1. Explain why sodium is highly reactive and describe what happens when sodium reacts with chlorine. Include the electron transfers in your answer.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Sodium has one electron in its outer shell. It is highly reactive because it can easily lose this single outer electron to achieve a stable noble gas electron configuration (2, 8). When sodium reacts with chlorine, sodium loses its outer electron to form a $\mathrm{Na}^+$ ion, and chlorine gains this electron to form a $\mathrm{Cl}^-$ ion. The electrostatic attraction between these oppositely charged ions forms ionic bonds in sodium chloride ($\mathrm{NaCl}$).
+
+</details>
+
+<details>
+<summary>Question 2: Relative atomic mass calculation</summary>
+
+Chlorine has two isotopes: $\mathrm{Cl}$-35 (75.8% abundance) and $\mathrm{Cl}$-37 (24.2% abundance). Calculate the relative atomic mass of chlorine.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$A_r = (35 \times 75.8 + 37 \times 24.2) / 100 = (2653 + 895.4) / 100 = 3548.4 / 100 = 35.48$.
+
+The relative atomic mass of chlorine is 35.5 (to 1 decimal place).
+
+</details>
+
+<details>
+<summary>Question 3: Periodic trends</summary>
+
+Explain why the melting point of sodium is higher than that of neon, but lower than that of magnesium. Refer to the types of bonding in your answer.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Neon is a noble gas with a full outer shell. It exists as individual atoms held together only by weak London forces, so it has a very low melting point. Sodium is a metal with metallic bonding (positive ions in a sea of delocalised electrons), which requires more energy to overcome. Magnesium has stronger metallic bonding than sodium because it has two delocalised electrons per atom (compared to one for sodium) and a smaller atomic radius, resulting in stronger electrostatic attraction and a higher melting point.
+
+</details>
+
+<details>
+<summary>Question 4: Flame tests and emission spectra</summary>
+
+Describe how a flame test can be used to identify metal ions. Explain why different metals produce different flame colours.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+A clean platinum or nichrome wire is dipped into a sample and held in a Bunsen flame. The flame colour is observed and compared to known colours: lithium (crimson), sodium (yellow), potassium (lilac), calcium (orange-red), copper (blue-green).
+
+Different metals produce different colours because when they are heated, their electrons absorb energy and move to higher energy levels. When the electrons fall back to lower levels, they emit light of specific wavelengths (colours) that are characteristic of that element. Each element has a unique arrangement of electron energy levels, so the wavelengths emitted are unique.
+
+</details>
+
+<details>
+<summary>Question 5: Group 1 and Group 7 trends</summary>
+
+Describe the trends in reactivity down Group 1 (alkali metals) and down Group 7 (halogens). Explain these trends in terms of atomic structure.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Group 1: Reactivity increases down the group. As you go down, the atomic radius increases and the outer electron is further from the nucleus, shielded by more inner shells. The attraction between the nucleus and the outer electron decreases, so it is easier to lose the outer electron. Cesium is more reactive than lithium.
+
+Group 7: Reactivity decreases down the group. As you go down, the atomic radius increases. Although there is a stronger nuclear charge, the increased distance and shielding make it harder for the atom to attract an additional electron. Fluorine is more reactive than iodine.
+
+</details>

@@ -1399,3 +1399,160 @@ toward the products.
 | $m = \frac{ItM}{nF}$                                                        | Faraday's law (mass deposited)           |
 | $\mathrm{Efficiency} = \frac{\Delta G^\circ}{\Delta H^\circ} \times 100\%$    | Fuel cell theoretical efficiency         |
 | $E^\circ_{\mathrm{cell}} = \frac{\Delta G^\circ}{-nF} = \frac{RT}{nF}\ln K$   | Thermodynamic relationships              |
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Predicting Spontaneous Redox Reactions</summary>
+
+Given the following standard reduction potentials:
+
+| Half-Reaction | $E^\circ$ (V) |
+|---|---|
+| $\mathrm{Fe}^{3+} + e^- \rightleftharpoons \mathrm{Fe}^{2+}$ | $+0.77$ |
+| $\mathrm{I}_2 + 2e^- \rightleftharpoons 2\mathrm{I}^-$ | $+0.54$ |
+| $\mathrm{Br}_2 + 2e^- \rightleftharpoons 2\mathrm{Br}^-$ | $+1.07$ |
+| $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$ | $-0.76$ |
+
+(a) Will $\mathrm{Fe}^{3+}$ oxidise $\mathrm{I}^-$ to $\mathrm{I}_2$? Calculate $E^\circ_{\mathrm{cell}}$.
+
+(b) Will $\mathrm{Br}_2$ oxidise $\mathrm{Fe}^{2+}$ to $\mathrm{Fe}^{3+}$? Calculate $E^\circ_{\mathrm{cell}}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Cathode (reduction): $\mathrm{Fe}^{3+} + e^- \to \mathrm{Fe}^{2+}$, $E^\circ = +0.77\mathrm{ V}$
+
+Anode (oxidation): $2\mathrm{I}^- \to \mathrm{I}_2 + 2e^-$, $E^\circ = +0.54\mathrm{ V}$
+
+$$E^\circ_{\mathrm{cell}} = 0.77 - 0.54 = +0.23\mathrm{ V}$$
+
+Since $E^\circ_{\mathrm{cell}} \gt 0$, yes, $\mathrm{Fe}^{3+}$ will spontaneously oxidise $\mathrm{I}^-$.
+
+(b) Cathode (reduction): $\mathrm{Br}_2 + 2e^- \to 2\mathrm{Br}^-$, $E^\circ = +1.07\mathrm{ V}$
+
+Anode (oxidation): $\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$, $E^\circ = +0.77\mathrm{ V}$
+
+$$E^\circ_{\mathrm{cell}} = 1.07 - 0.77 = +0.30\mathrm{ V}$$
+
+Since $E^\circ_{\mathrm{cell}} \gt 0$, yes, $\mathrm{Br}_2$ will spontaneously oxidise $\mathrm{Fe}^{2+}$.
+
+</details>
+
+<details>
+<summary>Question 2: Electrolysis of Aqueous Solutions</summary>
+
+An aqueous solution of $\mathrm{CuSO}_4$ is electrolysed using inert graphite electrodes.
+
+(a) Write the half-equation at the cathode and identify the product.
+
+(b) Write the half-equation at the anode and identify the product.
+
+(c) What observation would you make at each electrode?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Copper(II) ions are below aluminium in the reactivity series, so $\mathrm{Cu}^{2+}$ is preferentially discharged over $\mathrm{H}_2\mathrm{O}$:
+
+$$\mathrm{Cu}^{2+}(aq) + 2e^- \to \mathrm{Cu}(s)$$
+
+Product: orange-brown solid (copper metal) deposits on the cathode.
+
+(b) Sulfate ions are not discharged; water is oxidised instead:
+
+$$2\mathrm{H}_2\mathrm{O}(l) \to \mathrm{O}_2(g) + 4\mathrm{H}^+(aq) + 4e^-$$
+
+Product: colourless oxygen gas bubbles at the anode.
+
+(c) Cathode: orange-brown coating of copper forms on the electrode. The blue colour of the solution fades as $\mathrm{Cu}^{2+}$ is removed. Anode: colourless gas bubbles (oxygen) are evolved.
+
+</details>
+
+<details>
+<summary>Question 3: Nernst Equation Application</summary>
+
+A galvanic cell is constructed as:
+
+$$\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(0.0010\mathrm{ M}) \parallel \mathrm{Cu}^{2+}(0.10\mathrm{ M}) \mid \mathrm{Cu}(s)$$
+
+Given $E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\mathrm{ V}$ and $E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\mathrm{ V}$, calculate the cell potential at $298\mathrm{ K}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$E^\circ_{\mathrm{cell}} = 0.34 - (-0.76) = +1.10\mathrm{ V}$$
+
+Overall reaction: $\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)$, $n = 2$
+
+$$Q = \frac{[\mathrm{Zn}^{2+}]}{[\mathrm{Cu}^{2+}]} = \frac{0.0010}{0.10} = 0.010$$
+
+$$E_{\mathrm{cell}} = E^\circ_{\mathrm{cell}} - \frac{0.0592}{n}\log_{10} Q = 1.10 - \frac{0.0592}{2}\log_{10}(0.010)$$
+
+$$= 1.10 - 0.0296 \times (-2) = 1.10 + 0.0592 = 1.16\mathrm{ V}$$
+
+</details>
+
+<details>
+<summary>Question 4: Faraday's Law Calculation</summary>
+
+What mass of aluminium is deposited when a current of $5.00\mathrm{ A}$ is passed through molten $\mathrm{Al}_2\mathrm{O}_3$ for $2.00$ hours?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$Q = It = 5.00 \times 2.00 \times 3600 = 36000\mathrm{ C}$$
+
+$$n_e = \frac{Q}{F} = \frac{36000}{96500} = 0.373\mathrm{ mol of } e^-$$
+
+For $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$, $n = 3$:
+
+$$n(\mathrm{Al}) = \frac{n_e}{3} = \frac{0.373}{3} = 0.124\mathrm{ mol}$$
+
+$$m(\mathrm{Al}) = 0.124 \times 26.98 = 3.35\mathrm{ g}$$
+
+</details>
+
+<details>
+<summary>Question 5: Balancing Redox in Basic Solution</summary>
+
+Balance the following equation in basic solution:
+
+$$\mathrm{MnO}_4^- + \mathrm{SO}_3^{2-} \to \mathrm{MnO}_2 + \mathrm{SO}_4^{2-}$$
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Reduction half-reaction (in acidic conditions):
+
+$$\mathrm{MnO}_4^- + 4\mathrm{H}^+ + 3e^- \to \mathrm{MnO}_2 + 2\mathrm{H}_2\mathrm{O}$$
+
+Oxidation half-reaction (in acidic conditions):
+
+$$\mathrm{SO}_3^{2-} + \mathrm{H}_2\mathrm{O} \to \mathrm{SO}_4^{2-} + 2\mathrm{H}^+ + 2e^-$$
+
+Multiply reduction by 2 and oxidation by 3 to balance electrons:
+
+$$2\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 6e^- \to 2\mathrm{MnO}_2 + 4\mathrm{H}_2\mathrm{O}$$
+
+$$3\mathrm{SO}_3^{2-} + 3\mathrm{H}_2\mathrm{O} \to 3\mathrm{SO}_4^{2-} + 6\mathrm{H}^+ + 6e^-$$
+
+Add both half-reactions:
+
+$$2\mathrm{MnO}_4^- + 3\mathrm{SO}_3^{2-} + 2\mathrm{H}^+ \to 2\mathrm{MnO}_2 + 3\mathrm{SO}_4^{2-} + \mathrm{H}_2\mathrm{O}$$
+
+Now convert to basic conditions by adding $2\mathrm{OH}^-$ to both sides:
+
+$$2\mathrm{MnO}_4^- + 3\mathrm{SO}_3^{2-} + \mathrm{H}_2\mathrm{O} \to 2\mathrm{MnO}_2 + 3\mathrm{SO}_4^{2-} + 2\mathrm{OH}^-$$
+</details>
+

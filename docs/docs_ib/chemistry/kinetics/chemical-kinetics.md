@@ -915,3 +915,139 @@ $\mathrm{I}^- + \mathrm{S}_2\mathrm{O}_8^{2-} \to \mathrm{IS}_2\mathrm{O}_8^{3-}
 Step 2 (fast): $\mathrm{IS}_2\mathrm{O}_8^{3-} + \mathrm{I}^- \to \mathrm{I}_2 + 2\mathrm{SO}_4^{2-}$
 
 The slow step involves one molecule of each reactant, matching the rate equation.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Determining Rate Equation from Initial Rates</summary>
+
+For the reaction $\mathrm{A} + 2\mathrm{B} \to \mathrm{C}$, the following data was obtained:
+
+| Experiment | $[\mathrm{A}]$ (mol/L) | $[\mathrm{B}]$ (mol/L) | Initial Rate (mol/L/s) |
+|---|---|---|---|
+| 1 | $0.10$ | $0.10$ | $1.2 \times 10^{-3}$ |
+| 2 | $0.20$ | $0.10$ | $2.4 \times 10^{-3}$ |
+| 3 | $0.10$ | $0.20$ | $4.8 \times 10^{-3}$ |
+
+(a) Determine the rate equation.
+
+(b) Calculate the rate constant $k$.
+
+(c) What are the units of $k$?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Comparing experiments 1 and 2: doubling $[\mathrm{A}]$ doubles the rate, so order in $\mathrm{A} = 1$.
+
+Comparing experiments 1 and 3: doubling $[\mathrm{B}]$ quadruples the rate, so order in $\mathrm{B} = 2$.
+
+$$\mathrm{Rate} = k[\mathrm{A}][\mathrm{B}]^2$$
+
+(b) From experiment 1:
+
+$$1.2 \times 10^{-3} = k(0.10)(0.10)^2 = k(0.001)$$
+
+$$k = \frac{1.2 \times 10^{-3}}{0.001} = 1.2\mathrm{ L}^2/(\mathrm{mol}^2 \cdot \mathrm{s})$$
+
+(c) Units of $k$: $\mathrm{L}^2/(\mathrm{mol}^2 \cdot \mathrm{s})$
+
+</details>
+
+<details>
+<summary>Question 2: Activation Energy from Arrhenius Equation</summary>
+
+The rate constant for a first-order reaction is $4.0 \times 10^{-3}\mathrm{ s}^{-1}$ at $300\mathrm{ K}$ and $2.5 \times 10^{-2}\mathrm{ s}^{-1}$ at $350\mathrm{ K}$. Calculate the activation energy.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$\ln\!\left(\frac{k_2}{k_1}\right) = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
+
+$$\ln\!\left(\frac{2.5 \times 10^{-2}}{4.0 \times 10^{-3}}\right) = \frac{E_a}{8.314}\left(\frac{1}{300} - \frac{1}{350}\right)$$
+
+$$\ln(6.25) = \frac{E_a}{8.314}(0.000476)$$
+
+$$1.833 = \frac{E_a}{8.314}(0.000476)$$
+
+$$E_a = \frac{1.833 \times 8.314}{0.000476} = 32000\mathrm{ J/mol} = 32.0\mathrm{ kJ/mol}$$
+
+</details>
+
+<details>
+<summary>Question 3: First-Order Kinetics and Half-Life</summary>
+
+A first-order reaction has a rate constant of $0.050\mathrm{ min}^{-1}$.
+
+(a) Calculate the half-life.
+
+(b) If the initial concentration is $0.80\mathrm{ M}$, what is the concentration after $20\mathrm{ minutes}$?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $$t_{1/2} = \frac{0.693}{k} = \frac{0.693}{0.050} = 13.9\mathrm{ min}$$
+
+(b) $$\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt = \ln(0.80) - 0.050 \times 20$$
+
+$$\ln[\mathrm{A}] = -0.223 - 1.000 = -1.223$$
+
+$$[\mathrm{A}] = e^{-1.223} = 0.294\mathrm{ M}$$
+
+</details>
+
+<details>
+<summary>Question 4: Reaction Mechanism Analysis</summary>
+
+The overall reaction $2\mathrm{NO}_2(g) + \mathrm{F}_2(g) \to 2\mathrm{NO}_2\mathrm{F}(g)$ has the proposed mechanism:
+
+Step 1 (slow): $\mathrm{NO}_2 + \mathrm{F}_2 \to \mathrm{NO}_2\mathrm{F} + \mathrm{F}$
+
+Step 2 (fast): $\mathrm{NO}_2 + \mathrm{F} \to \mathrm{NO}_2\mathrm{F}$
+
+(a) Identify the rate-determining step.
+
+(b) Write the rate equation for the overall reaction.
+
+(c) Identify any intermediates.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Step 1 is the rate-determining step (slowest step).
+
+(b) The rate equation is determined by the slow step:
+
+$$\mathrm{Rate} = k[\mathrm{NO}_2][\mathrm{F}_2]$$
+
+(c) The intermediate is the fluorine atom ($\mathrm{F}$), which is produced in step 1 and consumed in step 2. It does not appear in the overall reaction or the rate equation.
+
+</details>
+
+<details>
+<summary>Question 5: Effect of Temperature on Rate</summary>
+
+A reaction at $300\mathrm{ K}$ has a rate constant of $2.0 \times 10^{-3}\mathrm{ s}^{-1}$. The activation energy is $50.0\mathrm{ kJ/mol}$. Calculate the rate constant at $320\mathrm{ K}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$\ln\!\left(\frac{k_{320}}{k_{300}}\right) = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
+
+$$= \frac{50000}{8.314}\left(\frac{1}{300} - \frac{1}{320}\right) = 6014 \times 0.000208 = 1.251$$
+
+$$\frac{k_{320}}{2.0 \times 10^{-3}} = e^{1.251} = 3.494$$
+
+$$k_{320} = 3.494 \times 2.0 \times 10^{-3} = 6.99 \times 10^{-3}\mathrm{ s}^{-1}$$
+</details>
+

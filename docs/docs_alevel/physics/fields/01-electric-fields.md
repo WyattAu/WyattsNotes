@@ -11,9 +11,7 @@ slug: electric-fields
 
 ## Electric Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 ## 1. Coulomb's Law
 
@@ -75,11 +73,9 @@ screened by conductors (Faraday cages), whereas gravitational fields cannot. Thi
 are two types of electric charge that can rearrange themselves to cancel external fields, but there
 is only one type of mass.
 
-:::info
-Board Coverage AQA: Comparison table is an expected synoptic link with gravitational fields
+:::info Board Coverage AQA: Comparison table is an expected synoptic link with gravitational fields
 (Paper 2). Edexcel: Explicit comparison required in CP3. OCR (A): Potential energy comparison is
-commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4.
-:::
+commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4. :::
 
 ## 2. Electric Field Strength
 
@@ -150,12 +146,10 @@ $E_{\mathrm{total}} = \sigma/\varepsilon_0$. Outside the plates, the fields canc
 $E_{\mathrm{total}} = 0$. This is the ideal parallel-plate capacitor field, and it justifies the
 formula $E = V/d$ for the uniform field region.
 
-:::info
-Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
+:::info Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
 parallel plates is given. Edexcel: Only the uniform field result $E = V/d$ is required. OCR (A):
 Gauss's law may appear as extension material in Module 6. CIE: The infinite plane result is not in
-the syllabus but is useful for understanding parallel plates.
-:::
+the syllabus but is useful for understanding parallel plates. :::
 
 ## 3. Electric Potential
 
@@ -224,12 +218,10 @@ as the area under the force--distance curve ($W = \int F\,dr$), the energy in a 
 area under the voltage--charge curve. Both represent stored field energy, and both can be recovered
 as useful work when the system returns to its equilibrium state.
 
-:::info
-Board Coverage AQA: Energy stored in capacitors is required (6.4.3). Edexcel: Required in
+:::info Board Coverage AQA: Energy stored in capacitors is required (6.4.3). Edexcel: Required in
 Topic 11 (capacitor energy and charging/discharging graphs). OCR (A): Required in 6.3.2, including
 deriving energy from the area under a $V$--$Q$ graph. CIE: Required in P3 (Chapter 22), including
-the three equivalent forms.
-:::
+the three equivalent forms. :::
 
 ## 4. Relationship Between $E$ and $V$: $E = -dV/dr$
 
@@ -297,6 +289,7 @@ $t = L/v = 0.050/3.0 \times 10^7 = 1.67 \times 10^{-9}$ s.
 
 $y = \frac{1}{2}at^2 = \frac{1}{2} \times 8.78 \times 10^{14} \times (1.67 \times 10^{-9})^2 = 1.22 \times 10^{-3}$
 m $= 1.22$ mm.
+
 </details>
 
 ## 6. Real-World Applications of Electric Fields
@@ -317,21 +310,19 @@ achieved in laboratory demonstrations.
   outward for a positively charged dome.
 - When the field at the surface exceeds the breakdown strength of air ($E \approx 3 \times 10^6$ V
   m$^{-1}$ at STP), spark discharge occurs to any nearby grounded object.
-- The potential at breakdown is $V_{\mathrm{breakdown}} = E_{\mathrm{breakdown}} \times r$. Larger domes
-  reach higher breakdown potentials because the same surface charge density produces a weaker field
-  on a larger sphere ($E = \sigma/\varepsilon_0$ for a sphere).
+- The potential at breakdown is $V_{\mathrm{breakdown}} = E_{\mathrm{breakdown}} \times r$. Larger
+  domes reach higher breakdown potentials because the same surface charge density produces a weaker
+  field on a larger sphere ($E = \sigma/\varepsilon_0$ for a sphere).
 
 **Safety demonstration.** A person touching the dome while standing on an insulating platform also
 acquires a high potential. Their hair stands on end because each strand acquires the same sign of
 charge, and strands repel each other via Coulomb's law — a vivid demonstration of electrostatic
 repulsion.
 
-:::info
-Board Coverage AQA: Van de Graaff generators are a specified practical context (required
+:::info Board Coverage AQA: Van de Graaff generators are a specified practical context (required
 practical 10). Edexcel: Mentioned in CP3 and CP6 as an example of charge accumulation and high
 potential. OCR (A): Can appear in Paper 2 as a context question. CIE: Not explicitly named but the
-underlying physics (field of a sphere, potential, discharge) is examined in P4.
-:::
+underlying physics (field of a sphere, potential, discharge) is examined in P4. :::
 
 ### Inkjet Printers
 
@@ -376,12 +367,10 @@ The collection efficiency depends on the drift velocity of charged particles, wh
 both the charge acquired by the particle and the electric field strength. The Deutsch--Anderson
 equation relates collection efficiency $\eta$ to plate area, gas flow rate, and drift velocity.
 
-:::info
-Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
+:::info Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
 in Paper 2. Edexcel: Listed as an application in CP3. OCR (A): May appear as an unseen context
 question in Paper 2 requiring application of field and force principles. CIE: Industrial
-applications of electric fields are examinable in P4.
-:::
+applications of electric fields are examinable in P4. :::
 
 ## Problem Set
 
@@ -395,6 +384,7 @@ $F = \frac{kq_1 q_2}{r^2} = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6} \ti
 N (attractive).
 
 <b>If you get this wrong, revise:</b> [Coulomb's Law](#1-coulombs-law)
+
 </details>
 
 <details>
@@ -406,6 +396,7 @@ $E = \frac{kQ}{r^2} = \frac{8.99 \times 10^9 \times 8.0 \times 10^{-6}}{0.01} = 
 N C$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
+
 </details>
 
 <details>
@@ -417,6 +408,7 @@ $V = \frac{kQ}{r} = \frac{8.99 \times 10^9 \times 2.0 \times 10^{-6}}{0.050} = \
 V $= 360$ kV.
 
 <b>If you get this wrong, revise:</b> [Electric Potential](#3-electric-potential)
+
 </details>
 
 <details>
@@ -427,7 +419,8 @@ Starting from $E = -dV/dr$, derive the electric field of a point charge from its
 $E = -\frac{dV}{dr} = -\frac{Q}{4\pi\varepsilon_0} \cdot \frac{d}{dr}\left(\frac{1}{r}\right) = -\frac{Q}{4\pi\varepsilon_0}\left(-\frac{1}{r^2}\right) = \frac{Q}{4\pi\varepsilon_0 r^2}$.
 
 <b>If you get this wrong, revise:</b>
-[Relationship Between $E$ and $V$](#4-relationship-between-e-and-v-e--dvdr)
+[Relationship Between $E$ and $V$](#4-relationship-between-e-and-v-e---dvdr)
+
 </details>
 
 <details>
@@ -440,6 +433,7 @@ field strength and the force on a proton between the plates.
 $F = qE = 1.60 \times 10^{-19} \times 25000 = 4.0 \times 10^{-15}$ N.
 
 <b>If you get this wrong, revise:</b> [Uniform Electric Field](#uniform-electric-field)
+
 </details>
 
 <details>
@@ -455,6 +449,7 @@ $E_k = qV = qEd = 1.60 \times 10^{-19} \times 3.0 \times 10^4 \times 0.050 = 2.4
 
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field)
+
 </details>
 
 <details>
@@ -467,6 +462,7 @@ $U = \frac{kq_1 q_2}{r} = \frac{8.99 \times 10^9 \times 4.0 \times 10^{-6} \time
 J.
 
 <b>If you get this wrong, revise:</b> [Electric Potential Energy](#electric-potential-energy)
+
 </details>
 
 <details>
@@ -486,6 +482,7 @@ $\tan\theta = v_y/v = 5.62 \times 10^6 / 2.0 \times 10^7 = 0.281$. $\theta = 15.
 
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field)
+
 </details>
 
 <details>
@@ -502,6 +499,7 @@ By symmetry, the fields from the three charges cancel out (they are 120° apart 
 magnitude). $E_{\mathrm{net}} = 0$.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
+
 </details>
 
 <details>
@@ -510,13 +508,15 @@ A small charged sphere of mass 0.50 g is suspended by a thread in a uniform hori
 field of $5.0 \times 10^3$ V m$^{-1}$. The thread makes an angle of $15^\circ$ with the vertical.
 Calculate the charge on the sphere.
 
-**Answer.** Resolving horizontally: $qE = T\sin 15^\circ$. Resolving vertically: $mg = T\cos 15^\circ$.
+**Answer.** Resolving horizontally: $qE = T\sin 15^\circ$. Resolving vertically:
+$mg = T\cos 15^\circ$.
 
 $\tan 15° = \frac{qE}{mg}$.
 $q = \frac{mg\tan 15°}{E} = \frac{0.50 \times 10^{-3} \times 9.81 \times 0.2679}{5000} = \frac{1.314 \times 10^{-3}}{5000} = 2.63 \times 10^{-7}$
 C $= 263$ nC.
 
 <b>If you get this wrong, revise:</b> [Electric Field Strength](#2-electric-field-strength)
+
 </details>
 
 <details>
@@ -538,6 +538,7 @@ V $= 900$ kV.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge),
 [Electric Potential](#3-electric-potential), [Van de Graaff Generator](#van-de-graaff-generator)
+
 </details>
 
 <details>
@@ -562,6 +563,7 @@ plates when pulling them apart. This mechanical work is stored as additional ele
 
 <b>If you get this wrong, revise:</b>
 [Energy Stored in a Charged Capacitor](#energy-stored-in-a-charged-capacitor)
+
 </details>
 
 <details>
@@ -582,6 +584,7 @@ $= 10$ ms.
 <b>If you get this wrong, revise:</b>
 [Charged Particle Motion in a Uniform Electric Field](#5-charged-particle-motion-in-a-uniform-electric-field),
 [Electrostatic Precipitator](#electrostatic-precipitator)
+
 </details>
 
 <details>
@@ -613,6 +616,7 @@ Taking the solution outside both charges: $x = \frac{0.80 + 0.566}{2} = 0.683$ m
 The zero-field point is at $x = 0.683$ m on the x-axis.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
+
 </details>
 
 <details>
@@ -636,6 +640,7 @@ becoming significant at macroscopic scales where charges cancel almost perfectly
 
 <b>If you get this wrong, revise:</b> [Coulomb's Law](#1-coulombs-law),
 [Comparison with Gravity](#comparison-with-gravity)
+
 </details>
 
 ## Board-Specific Notes

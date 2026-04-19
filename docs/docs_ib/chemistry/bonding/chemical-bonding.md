@@ -1061,3 +1061,101 @@ $$
 | 4       | sp$^3$        | Tetrahedral          |
 | 5       | sp$^3$d       | Trigonal bipyramidal |
 | 6       | sp$^3$d$^2$   | Octahedral           |
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Lattice Energy Comparison</summary>
+
+Explain why $\mathrm{MgO}$ has a much higher lattice energy ($-3795\mathrm{ kJ/mol}$) than $\mathrm{NaCl}$ ($-787\mathrm{ kJ/mol}$), even though the ionic radii of $\mathrm{Mg}^{2+}$ and $\mathrm{Na}^+$ are similar.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Lattice energy depends on the product of ionic charges and inversely on the sum of ionic radii:
+
+$$\Delta H_{\mathrm{LE}} \propto -\frac{|z^+| \cdot |z^-|}{r_+ + r_-}$$
+
+In $\mathrm{MgO}$, both ions are doubly charged ($\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$), so $|z^+| \cdot |z^-| = 2 \times 2 = 4$. In $\mathrm{NaCl}$, both ions are singly charged ($\mathrm{Na}^+$ and $\mathrm{Cl}^-$), so $|z^+| \cdot |z^-| = 1 \times 1 = 1$. The electrostatic attraction is approximately four times stronger for $\mathrm{MgO}$. Additionally, $\mathrm{O}^{2-}$ is smaller than $\mathrm{Cl}^-$, further increasing the lattice energy.
+
+</details>
+
+<details>
+<summary>Question 2: VSEPR and Molecular Polarity</summary>
+
+Determine the molecular geometry and polarity of $\mathrm{BrF}_3$ and $\mathrm{XeF}_4$. Justify your answers using VSEPR theory.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**$\mathrm{BrF}_3$:** $\mathrm{Br}$ has 7 valence electrons, each $\mathrm{F}$ contributes 1 bonding pair. Total domains = 3 bonding pairs + 2 lone pairs = 5 domains. This is $\mathrm{AX}_3\mathrm{E}_2$ (T-shaped). The bond dipoles do not cancel due to the asymmetric shape and lone pairs, so $\mathrm{BrF}_3$ is **polar**.
+
+**$\mathrm{XeF}_4$:** $\mathrm{Xe}$ has 8 valence electrons, each $\mathrm{F}$ contributes 1 bonding pair. Total domains = 4 bonding pairs + 2 lone pairs = 6 domains. The lone pairs occupy positions 180$^\circ$ apart (axial). This is $\mathrm{AX}_4\mathrm{E}_2$ (square planar). The four bond dipoles cancel by symmetry, so $\mathrm{XeF}_4$ is **non-polar**.
+
+</details>
+
+<details>
+<summary>Question 3: Boiling Point Trends</summary>
+
+Explain why $\mathrm{H}_2\mathrm{O}$ ($100\degree\mathrm{C}$) has a much higher boiling point than $\mathrm{H}_2\mathrm{S}$ ($-60\degree\mathrm{C}$), despite $\mathrm{H}_2\mathrm{S}$ having a higher molar mass.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\mathrm{H}_2\mathrm{O}$ can form extensive hydrogen bonding because oxygen is highly electronegative and has two lone pairs. Each water molecule can form up to four hydrogen bonds, creating a strong three-dimensional network. $\mathrm{H}_2\mathrm{S}$ cannot form hydrogen bonds because sulfur is not electronegative enough (EN = 2.6 vs O = 3.5). $\mathrm{H}_2\mathrm{S}$ molecules are held together only by weaker dipole-dipole interactions and London dispersion forces. The hydrogen bonding in water requires significantly more energy to overcome, resulting in a much higher boiling point.
+
+</details>
+
+<details>
+<summary>Question 4: MO Theory and Bond Order</summary>
+
+Use molecular orbital theory to determine the bond order of $\mathrm{O}_2$, $\mathrm{O}_2^+$, and $\mathrm{O}_2^{2-}$. Arrange them in order of increasing bond length.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+For $\mathrm{O}_2$ (12 valence electrons, O$_2$/F$_2$ ordering):
+
+$$\sigma_{2s}^2\; \sigma^{*2}_{2s}\; \sigma^2_{2p_z}\; \pi^2_{2p_x} = \pi^2_{2p_y}\; \pi^{*1}_{2p_x} = \pi^{*1}_{2p_y}$$
+
+Bonding electrons = 8, Antibonding electrons = 4:
+
+$$\text{Bond order} = \frac{8 - 4}{2} = 2$$
+
+$\mathrm{O}_2^+$ (11 valence electrons): Bonding = 8, Antibonding = 3:
+
+$$\text{Bond order} = \frac{8 - 3}{2} = 2.5$$
+
+$\mathrm{O}_2^{2-}$ (14 valence electrons): Bonding = 8, Antibonding = 6:
+
+$$\text{Bond order} = \frac{8 - 6}{2} = 1$$
+
+Higher bond order means shorter bond length:
+
+$$\mathrm{O}_2^{2-} \lt \mathrm{O}_2 \lt \mathrm{O}_2^+$$
+
+(increasing bond length order)
+
+</details>
+
+<details>
+<summary>Question 5: Hybridization and Bonding in Ethene</summary>
+
+Describe the bonding in ethene ($\mathrm{C}_2\mathrm{H}_4$), including the hybridization of each carbon atom, the types of bonds formed, and the molecular geometry.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Each carbon in ethene has 3 electron domains (2 C-H bonds + 1 C=C bond), so each carbon is $sp^2$ hybridised. The three $sp^2$ hybrid orbitals form sigma bonds: two C-H sigma bonds and one C-C sigma bond. The remaining unhybridized $p$ orbital on each carbon overlaps side-to-side to form a pi ($\pi$) bond. The molecule is trigonal planar around each carbon with bond angles of approximately $120^\circ$, and the entire molecule is planar. The C=C double bond consists of one sigma bond and one pi bond. The pi bond restricts rotation about the C=C bond.
+</details>
+

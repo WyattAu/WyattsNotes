@@ -11,9 +11,7 @@ slug: current-and-resistance
 
 ## Current and Resistance
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 1. Electric Current
 
@@ -174,11 +172,9 @@ resistant to current flow.
 | Silicon    | $6.4 \times 10^{2}$      |
 | Glass      | $\sim 10^{12}$           |
 
-:::warning
-Common Pitfall Resistivity is a property of the material. Resistance is a property of a
+:::warning Common Pitfall Resistivity is a property of the material. Resistance is a property of a
 particular component. A long thin copper wire has high resistance but copper still has low
-resistivity.
-:::
+resistivity. :::
 
 ## 5. I-V Characteristics
 
@@ -242,10 +238,8 @@ The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour 
 
 $$1 \mathrm{ kWh} = 1000 \mathrm{ W} \times 3600 \mathrm{ s} = 3.6 \times 10^6 \mathrm{ J}$$
 
-:::tip
-Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
-current). For resistors in parallel, use $P = V^2/R$ (same voltage).
-:::
+:::tip Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
+current). For resistors in parallel, use $P = V^2/R$ (same voltage). :::
 
 ## 7. Temperature Dependence of Resistance
 
@@ -276,8 +270,8 @@ $$\rho = \frac{m_e}{ne^2\tau} \propto T$$
 $$\boxed{R(T) = R_0\left[1 + \alpha(T - T_0)\right]}$$
 
 where $R_0$ is the resistance at reference temperature $T_0$ and $\alpha$ is the **temperature
-coefficient of resistance**. For copper, $\alpha \approx 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$; for
-tungsten, $\alpha \approx 4.5 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$.
+coefficient of resistance**. For copper, $\alpha \approx 3.9 \times 10^{-3}$
+$^\circ\mathrm{C}^{-1}$; for tungsten, $\alpha \approx 4.5 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$.
 
 This is a linear approximation valid over moderate temperature ranges. The full relationship is not
 perfectly linear, but for A-level purposes the linear model suffices.
@@ -306,8 +300,8 @@ where $B$ is a material constant (typically 3000--5000 K).
 <details>
 <summary>Example: Resistance of Copper at Elevated Temperature</summary>
 
-A copper wire has resistance 10.0 $\Omega$ at 20$^\circ\mathrm{C}$. Calculate its resistance at 80$^\circ\mathrm{C}$.
-($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$.)
+A copper wire has resistance 10.0 $\Omega$ at 20$^\circ\mathrm{C}$. Calculate its resistance at
+80$^\circ\mathrm{C}$. ($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$.)
 
 **Answer.**
 
@@ -324,12 +318,10 @@ positive feedback loop.
 
 </details>
 
-:::warning
-Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
+:::warning Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
 _positive_ temperature coefficient ($R$ increases with $T$). Semiconductors (thermistors) have a
 _negative_ temperature coefficient ($R$ decreases with $T$). The physical mechanism is entirely
-different: in metals, $\tau$ changes; in semiconductors, $n$ changes.
-:::
+different: in metals, $\tau$ changes; in semiconductors, $n$ changes. :::
 
 ## 8. Superconductivity
 
@@ -508,17 +500,13 @@ where $n$ is much smaller, $V_H$ is much larger and easier to measure.
 
 </details>
 
-:::warning
-Common Pitfall In the Hall effect formula $V_H = BI/(nqd)$, $d$ is the thickness in the
+:::warning Common Pitfall In the Hall effect formula $V_H = BI/(nqd)$, $d$ is the thickness in the
 direction of the magnetic field, not the width of the conductor perpendicular to the current. Sketch
-the geometry carefully.
-:::
+the geometry carefully. :::
 
-:::tip
-Exam Technique When asked to determine whether a semiconductor is n-type or p-type using the
+:::tip Exam Technique When asked to determine whether a semiconductor is n-type or p-type using the
 Hall effect, focus on the _sign_ of the Hall voltage. Electrons (negative charge) deflect to one
-side, holes (positive charge) deflect to the opposite side.
-:::
+side, holes (positive charge) deflect to the opposite side. :::
 
 ## 10. Power Transmission
 
@@ -593,11 +581,9 @@ why high-voltage transmission is essential.
 
 </details>
 
-:::tip
-Exam Technique When calculating transmission losses, remember to include both the outward and
+:::tip Exam Technique When calculating transmission losses, remember to include both the outward and
 return cables (total length $= 2L$). Also remember that the voltage in $P = IV$ is the transmission
-voltage, not the voltage drop across the line resistance.
-:::
+voltage, not the voltage drop across the line resistance. :::
 
 ## Problem Set
 
@@ -634,7 +620,7 @@ Calculate the drift velocity of electrons in a silver wire of diameter 1.0 mm ca
 $v_d = \frac{I}{nAe} = \frac{5.0}{5.9 \times 10^{28} \times 7.85 \times 10^{-7} \times 1.60 \times 10^{-19}} = \frac{5.0}{7.42 \times 10^3} = 6.74 \times 10^{-4}$
 m s$^{-1}$.
 
-<b>If you get this wrong, revise:</b> [Derivation of $I = nAev_d$](#derivation-of-i-naev_d)
+<b>If you get this wrong, revise:</b> [Derivation of $I = nAev_d$](#derivation-of-i--naev_d)
 
 </details>
 
@@ -712,8 +698,8 @@ gradient $= \rho/A = 5.0$. $\rho = 5.0 \times 1.26 \times 10^{-7} = 6.3 \times 1
 Two resistors of 6 $\Omega$ and 3 $\Omega$ are connected in series across a 9 V battery. Calculate
 the current and the power dissipated in each resistor.
 
-**Answer.** Total resistance $R_{\mathrm{total}} = 6 + 3 = 9$ $\Omega$. Current $I = V/R = 9/9 = 1.0$
-A.
+**Answer.** Total resistance $R_{\mathrm{total}} = 6 + 3 = 9$ $\Omega$. Current
+$I = V/R = 9/9 = 1.0$ A.
 
 Power in 6 $\Omega$: $P = I^2R = 1^2 \times 6 = 6$ W.
 
@@ -732,8 +718,8 @@ thermistor at each temperature.
 **Answer.** At $20^\circ\mathrm{C}$: $R_{\mathrm{total}} = 2000 + 500 = 2500$ $\Omega$.
 $V_T = \frac{2000}{2500} \times 6.0 = 4.80$ V.
 
-At $80^\circ\mathrm{C}$: $R_{\mathrm{total}} = 400 + 500 = 900$ $\Omega$. $V_T = \frac{400}{900} \times 6.0 = 2.67$
-V.
+At $80^\circ\mathrm{C}$: $R_{\mathrm{total}} = 400 + 500 = 900$ $\Omega$.
+$V_T = \frac{400}{900} \times 6.0 = 2.67$ V.
 
 <b>If you get this wrong, revise:</b> [I-V Characteristics](#5-i-v-characteristics)
 
@@ -742,9 +728,10 @@ V.
 <details>
 <summary>Problem 11</summary>
 
-A copper wire has resistance 5.00 $\Omega$ at 20$^\circ\mathrm{C}$. The temperature coefficient of resistance for
-copper is $\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$. Calculate: (a) the resistance at 100$^\circ\mathrm{C}$, (b)
-the temperature at which the resistance doubles, (c) the resistance at $-40^\circ\mathrm{C}$.
+A copper wire has resistance 5.00 $\Omega$ at 20$^\circ\mathrm{C}$. The temperature coefficient of
+resistance for copper is $\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$. Calculate: (a) the
+resistance at 100$^\circ\mathrm{C}$, (b) the temperature at which the resistance doubles, (c) the
+resistance at $-40^\circ\mathrm{C}$.
 
 **Answer.** (a)
 $R = 5.00 \times [1 + 3.9 \times 10^{-3} \times (100 - 20)] = 5.00 \times [1 + 0.312] = 5.00 \times 1.312 = 6.56$
@@ -867,11 +854,11 @@ Doping increased conductivity by over 5 orders of magnitude.
 <details>
 <summary>Problem 16</summary>
 
-A copper wire of length 1.00 m and diameter 0.50 mm has resistance $R_0$ at $20^\circ\mathrm{C}$. It is uniformly
-stretched to 1.50 times its original length. (a) Calculate the ratio $R'/R_0$ of the new resistance
-to the original resistance. (b) If the original resistance was 0.087 $\Omega$, what is the new
-resistance? (c) The wire is now at a temperature of $60^\circ\mathrm{C}$. What is its resistance?
-($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$.)
+A copper wire of length 1.00 m and diameter 0.50 mm has resistance $R_0$ at $20^\circ\mathrm{C}$. It
+is uniformly stretched to 1.50 times its original length. (a) Calculate the ratio $R'/R_0$ of the
+new resistance to the original resistance. (b) If the original resistance was 0.087 $\Omega$, what
+is the new resistance? (c) The wire is now at a temperature of $60^\circ\mathrm{C}$. What is its
+resistance? ($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$.)
 
 **Answer.** (a) Volume conservation: $A_0 L_0 = A' L'$, so $A' = A_0 L_0/L' = A_0/1.50$.
 
@@ -891,11 +878,12 @@ $\Omega$.
 <details>
 <summary>Problem 17</summary>
 
-An NTC thermistor with $B = 3900$ K has resistance $R_0 = 5000$ $\Omega$ at $T_0 = 298$ K (25$^\circ\mathrm{C}$).
-It is connected in a potential divider circuit with a $10{,}000$ $\Omega$ fixed resistor and a 9.0 V
-supply. (a) Calculate the thermistor resistance at $50^\circ\mathrm{C}$ (323 K). (b) Calculate the output voltage
-across the thermistor at $25^\circ\mathrm{C}$ and at $50^\circ\mathrm{C}$. (c) Calculate the output voltage across the fixed
-resistor at each temperature.
+An NTC thermistor with $B = 3900$ K has resistance $R_0 = 5000$ $\Omega$ at $T_0 = 298$ K
+(25$^\circ\mathrm{C}$). It is connected in a potential divider circuit with a $10{,}000$ $\Omega$
+fixed resistor and a 9.0 V supply. (a) Calculate the thermistor resistance at $50^\circ\mathrm{C}$
+(323 K). (b) Calculate the output voltage across the thermistor at $25^\circ\mathrm{C}$ and at
+$50^\circ\mathrm{C}$. (c) Calculate the output voltage across the fixed resistor at each
+temperature.
 
 **Answer.** (a) $R = R_0 \exp[B(1/T - 1/T_0)] = 5000 \times \exp[3900 \times (1/323 - 1/298)]$
 
@@ -911,10 +899,11 @@ $V_T = \frac{5000}{15{,}000} \times 9.0 = 3.00$ V.
 At $50^\circ\mathrm{C}$: $R_{\mathrm{total}} = 1813 + 10{,}000 = 11{,}813$ $\Omega$.
 $V_T = \frac{1813}{11{,}813} \times 9.0 = 1.38$ V.
 
-(c) At $25^\circ\mathrm{C}$: $V_R = 9.0 - 3.00 = 6.00$ V. (Or $V_R = \frac{10{,}000}{15{,}000} \times 9.0 = 6.00$
-V.)
+(c) At $25^\circ\mathrm{C}$: $V_R = 9.0 - 3.00 = 6.00$ V. (Or
+$V_R = \frac{10{,}000}{15{,}000} \times 9.0 = 6.00$ V.)
 
-At $50^\circ\mathrm{C}$: $V_R = 9.0 - 1.38 = 7.62$ V. (Or $V_R = \frac{10{,}000}{11{,}813} \times 9.0 = 7.62$ V.)
+At $50^\circ\mathrm{C}$: $V_R = 9.0 - 1.38 = 7.62$ V. (Or
+$V_R = \frac{10{,}000}{11{,}813} \times 9.0 = 7.62$ V.)
 
 <b>If you get this wrong, revise:</b>
 [Temperature Dependence of Resistance](#7-temperature-dependence-of-resistance)
@@ -924,14 +913,16 @@ At $50^\circ\mathrm{C}$: $V_R = 9.0 - 1.38 = 7.62$ V. (Or $V_R = \frac{10{,}000}
 <details>
 <summary>Problem 18</summary>
 
-A battery with e.m.f. $\mathcal{E} = 12.0$ V and internal resistance $r_0 = 0.50$ $\Omega$ at $20^\circ\mathrm{C}$
-is connected to an external load of $R_L = 5.0$ $\Omega$. The internal resistance has a positive
-temperature coefficient of $\alpha_r = 4.0 \times 10^{-3}$ $^\circ\mathrm{C}^{-1}$. (a) Calculate the current
-and power delivered to the load at $20^\circ\mathrm{C}$. (b) If the battery warms up to $60^\circ\mathrm{C}$ during operation,
+A battery with e.m.f. $\mathcal{E} = 12.0$ V and internal resistance $r_0 = 0.50$ $\Omega$ at
+$20^\circ\mathrm{C}$ is connected to an external load of $R_L = 5.0$ $\Omega$. The internal
+resistance has a positive temperature coefficient of $\alpha_r = 4.0 \times 10^{-3}$
+$^\circ\mathrm{C}^{-1}$. (a) Calculate the current and power delivered to the load at
+$20^\circ\mathrm{C}$. (b) If the battery warms up to $60^\circ\mathrm{C}$ during operation,
 calculate the new current and power delivered to the load. (c) Calculate the power dissipated within
 the battery at each temperature.
 
-**Answer.** (a) At $20^\circ\mathrm{C}$: $r = 0.50$ $\Omega$. Total resistance $= 0.50 + 5.0 = 5.50$ $\Omega$.
+**Answer.** (a) At $20^\circ\mathrm{C}$: $r = 0.50$ $\Omega$. Total resistance $= 0.50 + 5.0 = 5.50$
+$\Omega$.
 
 $I = \mathcal{E}/R_{\mathrm{total}} = 12.0/5.50 = 2.18$ A.
 $P_L = I^2 R_L = (2.18)^2 \times 5.0 = 23.8$ W.

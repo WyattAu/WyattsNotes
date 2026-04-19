@@ -763,3 +763,106 @@ grade databases.
 
 18. A company has a web server that must be accessible from the Internet. Describe three security
     measures they should implement and explain how each protects the server.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Subnet mask calculation</summary>
+
+A company has the IP address `192.168.10.0/24`. They need to create 6 subnets. Calculate the new subnet mask, the number of usable hosts per subnet, and the network address of the first three subnets.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Current: /24 means 8 bits for hosts (256 addresses). To create 6 subnets, need $2^n \ge 6$, so $n = 3$ bits borrowed (8 subnets).
+
+New subnet mask: /27 (24 + 3) = 255.255.255.224.
+
+Usable hosts per subnet: $2^{32-27} - 2 = 2^5 - 2 = 30$ hosts.
+
+Subnet addresses:
+- Subnet 1: 192.168.10.0/27 (hosts .1 to .30)
+- Subnet 2: 192.168.10.32/27 (hosts .33 to .62)
+- Subnet 3: 192.168.10.64/27 (hosts .65 to .94)
+
+</details>
+
+<details>
+<summary>Question 2: TCP vs UDP scenario analysis</summary>
+
+For each of the following applications, explain whether TCP or UDP is more appropriate and justify your choice: (a) online banking, (b) live video streaming, (c) DNS lookup, (d) email.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Online banking: TCP. Requires reliable, ordered delivery. A lost packet could mean a missing transaction.
+
+(b) Live video streaming: UDP. Speed is more important than reliability. A dropped frame is acceptable; a delayed frame causes stuttering. TCP's retransmission would cause unacceptable lag.
+
+(c) DNS lookup: UDP. DNS queries are small (fit in one packet) and need fast responses. The overhead of TCP's three-way handshake is unnecessary for simple queries.
+
+(d) Email: TCP. Email must be delivered reliably and in order. Losing an email message is unacceptable.
+
+</details>
+
+<details>
+<summary>Question 3: Bandwidth and latency calculation</summary>
+
+A file of size 50 MB must be transferred over a network with bandwidth of 100 Mbps and a round-trip latency of 40 ms. TCP requires a three-way handshake before data transfer. Calculate the total time for the transfer, assuming no packet loss and ignoring protocol overhead.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Three-way handshake time: 1.5 round trips = $1.5 \times 40 = 60 \mathrm{ ms}$.
+
+Data transfer time: $50 \mathrm{ MB} = 50 \times 8 = 400 \mathrm{ Mb}$. Time = $400 / 100 = 4 \mathrm{ seconds} = 4000 \mathrm{ ms}$.
+
+Total time: $60 + 4000 = 4060 \mathrm{ ms} \approx 4.06 \mathrm{ seconds}$.
+
+Note: This is a simplified calculation. In practice, TCP slow start, window size limitations, and protocol overhead would increase the transfer time.
+
+</details>
+
+<details>
+<summary>Question 4: OSI model layer analysis</summary>
+
+For each of the following, identify which OSI layer is primarily responsible: (a) encrypting data for transmission, (b) determining the best route for a packet, (c) detecting and correcting bit errors, (d) formatting data into packets.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Encrypting data: Layer 6 (Presentation). Handles data encryption, compression, and format translation.
+
+(b) Best route for a packet: Layer 3 (Network). Routers operate at this layer, using IP addresses and routing tables.
+
+(c) Detecting and correcting bit errors: Layer 2 (Data Link). Uses checksums and CRC to detect errors in frames.
+
+(d) Formatting data into packets: Layer 4 (Transport). TCP/UDP add headers to create segments/datagrams.
+
+</details>
+
+<details>
+<summary>Question 5: Security attack identification</summary>
+
+A user clicks on a link in an email that appears to be from their bank. The link takes them to a website that looks identical to their bank's login page. When they enter their credentials, the information is sent to an attacker's server. Identify the type of attack and describe two defences.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+This is a **phishing attack** (specifically, spear phishing if targeted). The attacker creates a fraudulent website that mimics the legitimate one to steal credentials.
+
+Two defences:
+1. **Two-factor authentication (2FA):** Even if the attacker obtains the password, they cannot log in without the second factor (e.g., SMS code, authenticator app).
+2. **Email filtering and user education:** Spam filters can detect and block phishing emails. Training users to verify URLs (check for HTTPS, look for misspellings in the domain) reduces the success rate of phishing attacks.
+
+</details>

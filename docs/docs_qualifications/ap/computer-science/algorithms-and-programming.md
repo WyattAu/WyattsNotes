@@ -754,3 +754,98 @@ for (int i = 0; i < n; i++) {
 
 18. Explain the concept of divide and conquer using merge sort as an example. What are the three
     steps, and what is the recurrence relation?
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Time complexity of nested loops</summary>
+
+Analyze the time complexity of the following code:
+
+```java
+for (int i = 1; i <= n; i = i * 2) {
+    for (int j = 0; j < n; j++) {
+        System.out.println(i + j);
+    }
+}
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The outer loop runs $\log_2(n)$ times because `i` doubles each iteration. The inner loop runs $n$ times for each outer iteration. Total: $O(n \log n)$.
+
+</details>
+
+<details>
+<summary>Question 2: Binary search trace</summary>
+
+Trace binary search on `[2, 5, 8, 12, 16, 23, 38]` searching for `7`. Show `low`, `high`, and `mid` at each step.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Step 1: low=0, high=6, mid=3. arr[3]=12 &gt; 7, high=2.
+Step 2: low=0, high=2, mid=1. arr[1]=5 &lt; 7, low=2.
+Step 3: low=2, high=2, mid=2. arr[2]=8 &gt; 7, high=1.
+Step 4: low=2 &gt; high=1. Not found, return -1.
+
+</details>
+
+<details>
+<summary>Question 3: Recursive algorithm</summary>
+
+What does `mystery(27)` return and what is the time complexity?
+
+```java
+int mystery(int n) {
+    if (n <= 1) return 1;
+    return mystery(n / 3) + n;
+}
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+mystery(27) = mystery(9) + 27 = (mystery(3) + 9) + 27 = ((mystery(1) + 3) + 9) + 27 = 40.
+
+Time complexity: $O(\log n)$ since n is divided by 3 each call.
+
+</details>
+
+<details>
+<summary>Question 4: Selection sort trace</summary>
+
+Trace selection sort on `[64, 25, 12, 22, 11]`. Show the array after each pass and count swaps.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Pass 1: Min=11 (idx 4), swap with 0: `[11, 25, 12, 22, 64]`. 1 swap.
+Pass 2: Min=12 (idx 2), swap with 1: `[11, 12, 25, 22, 64]`. 1 swap.
+Pass 3: Min=22 (idx 3), swap with 2: `[11, 12, 22, 25, 64]`. 1 swap.
+Pass 4: Already sorted. 0 swaps. Total: 3 swaps.
+
+</details>
+
+<details>
+<summary>Question 5: Merge sort comparisons</summary>
+
+What is the maximum number of comparisons merge sort makes for 8 elements?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Using $C(n) = 2C(n/2) + n - 1$: $C(1)=0$, $C(2)=1$, $C(4)=5$, $C(8)=17$. Maximum 17 comparisons.
+
+</details>

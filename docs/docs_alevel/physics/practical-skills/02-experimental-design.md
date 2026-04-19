@@ -11,9 +11,7 @@ slug: experimental-design
 
 ## Experimental Design
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
 
 ## 1. Key Principles of Experimental Design
 
@@ -43,7 +41,7 @@ independent variable.
 | Independent | Length of pendulum, $L$       | Vary with a metre rule from 0.2 m to 1.0 m      |
 | Dependent   | Period, $T$                   | Measure with a stopwatch (time 20 oscillations) |
 | Control     | Mass of bob                   | Use the same bob throughout                     |
-| Control     | Amplitude (angle of release)  | Keep below $5^\circ$                                 |
+| Control     | Amplitude (angle of release)  | Keep below $5^\circ$                            |
 | Control     | String material and thickness | Use inextensible string                         |
 
 **Example 2 — Investigating the effect of temperature on the resistance of a thermistor:**
@@ -56,10 +54,8 @@ independent variable.
 | Control     | Immersion depth    | Thermistor fully submerged at fixed depth |
 | Control     | Heating rate       | Heat slowly, allow thermal equilibrium    |
 
-:::warning
-Common Pitfall Students often confuse the independent and dependent variables. A reliable
-mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable."
-:::
+:::warning Common Pitfall Students often confuse the independent and dependent variables. A reliable
+mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable." :::
 
 ### Control Variables in Depth
 
@@ -78,10 +74,8 @@ to the independent variable or the uncontrolled factor.
 4. **Monitoring and recording** — if a variable cannot be perfectly controlled, at least measure it
    so its effect can be assessed
 
-:::info
-Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
-Paper 5 Q1 (Planning)
-:::
+:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
+Paper 5 Q1 (Planning) :::
 
 - **AQA** and **Edexcel** tend to ask students to identify variables from a given method. Practice
   reading a method description and extracting all three types.
@@ -166,9 +160,7 @@ Validity has two aspects that examiners distinguish:
    conditions? For example, results obtained with a 1 mm copper wire may not apply to a 5 mm
    aluminium wire.
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
 
 - **AQA** emphasises the distinction between validity and reliability in 6-mark practical questions.
 - **Edexcel** Core Practicals require students to comment on the validity of their conclusions.
@@ -200,8 +192,7 @@ include:
 
 $$\boxed{\mathrm{True value} = \mathrm{measured value} \pm \mathrm{uncertainty}}$$
 
-:::warning
-Common Pitfall Do not confuse these three terms. An experiment can be reliable
+:::warning Common Pitfall Do not confuse these three terms. An experiment can be reliable
 (consistent) but invalid (measuring the wrong thing), or valid but inaccurate (systematic error).
 :::
 
@@ -263,9 +254,7 @@ is critical:
 - **Number of repeats:** At least 3 repeats at each value. If time allows, more repeats improve the
   reliability of the mean.
 
-:::info
-Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5 :::
 
 - **AQA** often provides a method and asks students to identify improvements — focus on range,
   intervals, and repeats.
@@ -281,18 +270,18 @@ Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
 
 ### Measuring Instruments
 
-| Instrument       | Typical Range    | Resolution        | Common Use                  |
-| ---------------- | ---------------- | ----------------- | --------------------------- |
-| Metre rule       | 0–100 cm         | 1 mm              | Lengths                     |
-| Vernier calipers | 0–15 cm          | 0.01 mm           | Internal/external diameters |
-| Micrometer       | 0–25 mm          | 0.001 mm          | Wire diameters              |
-| Digital balance  | 0–200 g          | 0.01 g            | Mass                        |
-| Stopwatch        | 0–60 min         | 0.01 s            | Time intervals              |
+| Instrument       | Typical Range                  | Resolution        | Common Use                  |
+| ---------------- | ------------------------------ | ----------------- | --------------------------- |
+| Metre rule       | 0–100 cm                       | 1 mm              | Lengths                     |
+| Vernier calipers | 0–15 cm                        | 0.01 mm           | Internal/external diameters |
+| Micrometer       | 0–25 mm                        | 0.001 mm          | Wire diameters              |
+| Digital balance  | 0–200 g                        | 0.01 g            | Mass                        |
+| Stopwatch        | 0–60 min                       | 0.01 s            | Time intervals              |
 | Thermometer      | $-10$ to $110^\circ\mathrm{C}$ | 1°C or 0.1°C      | Temperature                 |
-| Voltmeter        | 0–20 V           | 0.01 V or 0.1 V   | Potential difference        |
-| Ammeter          | 0–10 A           | 0.01 A or 0.1 A   | Current                     |
-| Signal generator | 1 Hz – 1 MHz     | 1 Hz              | AC frequency                |
-| Data logger      | Various          | Depends on sensor | Continuous recording        |
+| Voltmeter        | 0–20 V                         | 0.01 V or 0.1 V   | Potential difference        |
+| Ammeter          | 0–10 A                         | 0.01 A or 0.1 A   | Current                     |
+| Signal generator | 1 Hz – 1 MHz                   | 1 Hz              | AC frequency                |
+| Data logger      | Various                        | Depends on sensor | Continuous recording        |
 
 ### Choosing the Right Instrument
 
@@ -365,9 +354,7 @@ When asked to write a risk assessment, structure your answer as follows:
 3. **Describe the control measure** — "Use a low-voltage (e.g., 12 V) power supply instead of mains,
    and ensure all connections are insulated."
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5 :::
 
 - **AQA** requires a risk assessment as part of the 12 required practicals. Risk assessments are
   assessed in written papers.
@@ -380,11 +367,9 @@ Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5
 
 :::
 
-:::warning
-Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
+:::warning Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
 hazards exist. Examiners award marks for identifying the _most significant_ hazards and providing
-specific, practical control measures. "Be careful" is never an acceptable control measure.
-:::
+specific, practical control measures. "Be careful" is never an acceptable control measure. :::
 
 ## 5. Evaluating Experiments
 
@@ -461,9 +446,7 @@ When a graph is plotted, check:
 - Plot $\lambda$ vs $1/f$; gradient $= v$ (wave speed)
 - Largest uncertainty: measuring wavelength from a frozen ripple pattern
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5 :::
 
 - **AQA** Required Practical 5 uses a falling object to determine `g`; Required Practical 8 uses a
   potentiometer or voltmeter/ammeter method for internal resistance.
@@ -476,11 +459,9 @@ Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5
 
 :::
 
-:::tip
-Exam Technique When asked "how could you improve this experiment?", always be specific.
+:::tip Exam Technique When asked "how could you improve this experiment?", always be specific.
 Instead of "use a more accurate instrument", say "use a micrometer instead of a ruler to measure the
-wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm."
-:::
+wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm." :::
 
 ## Problem Set
 
@@ -503,6 +484,7 @@ Measure diameter at multiple positions.
 
 <b>If you get this wrong, revise:</b>
 [Key Principles of Experimental Design](#1-key-principles-of-experimental-design)
+
 </details>
 
 <details>
@@ -517,6 +499,7 @@ $\sim 0.2$ s (at the start and end), giving a percentage uncertainty of $\sim 0.
 period uncertainty is reduced by a factor of 20.
 
 <b>If you get this wrong, revise:</b> [Improving Precision](#improving-precision)
+
 </details>
 
 <details>
@@ -530,6 +513,7 @@ immersion depth, heating rate, method of measurement.
 
 <b>If you get this wrong, revise:</b>
 [Independent, Dependent, and Control Variables](#independent-dependent-and-control-variables)
+
 </details>
 
 <details>
@@ -542,6 +526,7 @@ $\sim 1$ mm. The reading of 1.0 mm is an approximation. A **micrometer** (resolu
 should be used, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm.
 
 <b>If you get this wrong, revise:</b> [Measuring Instruments](#measuring-instruments)
+
 </details>
 
 <details>
@@ -550,12 +535,13 @@ A student obtains data points that do not lie on a straight line when plotting $
 a pendulum. Suggest three possible reasons and how to investigate each.
 
 **Answer.** (1) **Large angle oscillations**: the formula $T = 2\pi\sqrt{L/g}$ assumes small angles.
-For angles $> 10^\circ$, the period increases. Solution: use smaller angles ($< 5^\circ$) and repeat. (2)
-**String not ideal**: the string may stretch or have mass. Solution: use a lighter, inextensible
-string. (3) **Air resistance**: damping affects the period at large amplitudes. Solution: use a
-denser bob to minimise air resistance effects.
+For angles $> 10^\circ$, the period increases. Solution: use smaller angles ($< 5^\circ$) and
+repeat. (2) **String not ideal**: the string may stretch or have mass. Solution: use a lighter,
+inextensible string. (3) **Air resistance**: damping affects the period at large amplitudes.
+Solution: use a denser bob to minimise air resistance effects.
 
-<b>If you get this wrong, revise:</b> [Evaluating Experiments](#4-evaluating-experiments)
+<b>If you get this wrong, revise:</b> [Evaluating Experiments](#5-evaluating-experiments)
+
 </details>
 
 <details>
@@ -572,6 +558,7 @@ speed of sound depends on temperature).
 
 <b>If you get this wrong, revise:</b>
 [Reliability, Validity, and Accuracy](#reliability-validity-and-accuracy)
+
 </details>
 
 <details>
@@ -592,6 +579,7 @@ allow sufficient time for thermal equilibrium before each reading, and stir the 
 continuously.
 
 <b>If you get this wrong, revise:</b> [Accuracy in Depth](#accuracy-in-depth)
+
 </details>
 
 <details>
@@ -608,6 +596,7 @@ diffraction. The laser is directed at a slit, and the diffraction pattern is obs
 | Electrical equipment | Experimenter         | Low        | Check mains connections are insulated; keep liquids away from the laser power supply                                                                                          |
 
 <b>If you get this wrong, revise:</b> [Risk Assessment](#4-risk-assessment)
+
 </details>
 
 <details>
@@ -628,6 +617,7 @@ change $r$ during the experiment), and take readings quickly to minimise changes
 internal state.
 
 <b>If you get this wrong, revise:</b> [Evaluating Graphs](#evaluating-graphs)
+
 </details>
 
 <details>
@@ -666,6 +656,7 @@ the wire obeys Hooke's law throughout the range used.
 
 <b>If you get this wrong, revise:</b>
 [Worked Example: Planning an Experiment to Determine `g`](#worked-example-planning-an-experiment-to-determine-g)
+
 </details>
 
 <details>
@@ -696,4 +687,5 @@ value $= (343 - 336) / 343 \times 100 = 2.0\%$.
 eliminate human reaction time entirely.
 
 <b>If you get this wrong, revise:</b> [Reliability in Depth](#reliability-in-depth)
+
 </details>

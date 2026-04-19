@@ -716,3 +716,170 @@ are applied. In a normal cell, the red and green signals appear on separate chro
 cell, a fused yellow signal appears on the Philadelphia chromosome, confirming the t(9;22)(q34;q11)
 translocation. This test is both sensitive and specific, and results can be obtained within 24-48
 hours.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Three-point cross and gene mapping</summary>
+
+Genes D, E, and F are linked in the order D--E--F. A test cross of a trihybrid individual
+($\mathrm{DEF/def}$) produces the following offspring: $\mathrm{DEF} = 400$, $\mathrm{def} = 380$,
+$\mathrm{DEf} = 60$, $\mathrm{deF} = 70$, $\mathrm{Def} = 20$, $\mathrm{dEF} = 30$,
+$\mathrm{DeF} = 15$, $\mathrm{dEf} = 25$. Calculate the recombination frequencies between each pair
+of genes and draw the genetic map.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Total offspring: $400 + 380 + 60 + 70 + 20 + 30 + 15 + 25 = 1000$.
+
+Parental types (most frequent): $\mathrm{DEF}$ (400) and $\mathrm{def}$ (380).
+
+Double crossovers (least frequent): $\mathrm{DeF}$ (15) and $\mathrm{dEf}$ (25).
+
+Single crossover between D and E: $\mathrm{DEf}$ (60) and $\mathrm{deF}$ (70).
+
+Single crossover between E and F: $\mathrm{Def}$ (20) and $\mathrm{dEF}$ (30).
+
+Recombination frequency D-E:
+$$\frac{60 + 70 + 15 + 25}{1000} \times 100 = \frac{170}{1000} \times 100 = 17.0\%$$
+
+Recombination frequency E-F:
+$$\frac{20 + 30 + 15 + 25}{1000} \times 100 = \frac{90}{1000} \times 100 = 9.0\%$$
+
+Recombination frequency D-F:
+$$\frac{60 + 70 + 20 + 30 + 15 + 25}{1000} \times 100 = \frac{220}{1000} \times 100 = 22.0\%$$
+
+Genetic map: D ---17.0 cM--- E ---9.0 cM--- F
+
+Note that D-F distance (22.0 cM) equals D-E (17.0) + E-F (9.0) = 26.0 cM minus double crossovers
+($2 \times 4.0 = 8.0\%$), because double crossovers restore the parental arrangement for the outer
+markers. Using corrected distance: D-F = $22.0 + 2 \times 4.0 = 26.0$ cM.
+
+</details>
+
+<details>
+<summary>Question 2: Hardy-Weinberg with selection</summary>
+
+In a population, cystic fibrosis (autosomal recessive) has an incidence of 1 in 2500. If individuals
+with cystic fibrosis have a fitness of 0 (they do not reproduce), what will the frequency of the
+cystic fibrosis allele be after one generation of selection?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Current frequency: $q^2 = 1/2500 = 0.0004$, so $q = 0.02$ and $p = 0.98$.
+
+Genotype frequencies before selection: $p^2 = 0.9604$, $2pq = 0.0392$, $q^2 = 0.0004$.
+
+Fitness values: $w_{AA} = 1$, $w_{Aa} = 1$, $w_{aa} = 0$.
+
+Mean fitness: $\bar{w} = p^2(1) + 2pq(1) + q^2(0) = 0.9604 + 0.0392 = 0.9996$.
+
+After selection, the frequency of the recessive allele is:
+$$q' = \frac{pq \cdot w_{Aa} + q^2 \cdot w_{aa}}{2\bar{w}} = \frac{0.98 \times 0.02 \times 1 + 0.0004 \times 0}{2 \times 0.9996} = \frac{0.0196}{1.9992} \approx 0.0098$$
+
+After one generation of selection, the allele frequency drops from $q = 0.02$ to
+$q' \approx 0.0098$. The frequency approximately halves because homozygous recessive individuals are
+eliminated, removing two copies of the allele per affected individual.
+
+</details>
+
+<details>
+<summary>Question 3: Epistasis dihybrid cross</summary>
+
+In summer squash, white colour (W) is dominant over yellow (w), and disc-shaped fruit (D) is
+dominant over sphere-shaped (d). When a white disc plant is crossed with a yellow sphere plant, all
+F1 offspring are white disc. The F2 generation shows a ratio of 12 white : 3 yellow disc : 1 yellow
+sphere. Explain the genetic basis for this ratio and determine the genotypes of the F2 phenotypes.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+This is an example of dominant epistasis, where the dominant allele at one gene (W) masks the
+expression of alleles at the other gene (D/d).
+
+The 12:3:1 ratio arises because:
+
+- Any genotype with at least one W allele is white (regardless of D/d):
+  $9 \mathrm{ W\_D\_} + 3 \mathrm{ W\_dd} = 12$ white.
+- Genotypes that are $\mathrm{wwD\_}$ are yellow disc: 3 yellow disc.
+- Genotype $\mathrm{wwdd}$ is yellow sphere: 1 yellow sphere.
+
+F2 genotypes:
+
+- White: $\mathrm{WWDD}$, $\mathrm{WWDd}$, $\mathrm{WWdd}$, $\mathrm{WwDD}$, $\mathrm{WwDd}$,
+  $\mathrm{Wwdd}$
+- Yellow disc: $\mathrm{wwDD}$, $\mathrm{wwDd}$
+- Yellow sphere: $\mathrm{wwdd}$
+
+The W gene is epistatic to the D gene. When the dominant W allele is present, the D gene's
+expression is completely masked, and all fruits appear white regardless of whether they carry D or d
+alleles.
+
+</details>
+
+<details>
+<summary>Question 4: Nondisjunction in meiosis I vs meiosis II</summary>
+
+A woman with normal karyotype (46, XX) has a child with Klinefelter syndrome (47, XXY). Explain two
+different mechanisms by which this could occur: (a) nondisjunction in meiosis I of oogenesis and (b)
+nondisjunction in meiosis II. In each case, show the gametes produced and the resulting zygote.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Nondisjunction in meiosis I: Homologous X chromosomes fail to separate. One secondary oocyte
+receives both X chromosomes (XX) and the other receives none (O). After meiosis II, the XX cell
+produces two XX gametes. When fertilised by a normal Y sperm, the zygote is XXY (Klinefelter).
+
+Meiosis I: XX and O (instead of X and X). Meiosis II: XX $\to$ XX and XX; O $\to$ O and O. Gametes:
+XX, XX, O, O.
+
+Zygote: XX (egg) + Y (sperm) = XXY.
+
+(b) Nondisjunction in meiosis II: Meiosis I proceeds normally, producing secondary oocytes with one
+X each. In meiosis II, sister chromatids fail to separate in one cell, producing one XX gamete and
+one O gamete from that cell. When fertilised by a normal Y sperm, the XX gamete produces XXY.
+
+Meiosis I: X and X (normal). Meiosis II: one X cell divides normally (X and X), the other has
+nondisjunction (XX and O). Gametes: X, X, XX, O.
+
+Zygote: XX (egg) + Y (sperm) = XXY.
+
+</details>
+
+<details>
+<summary>Question 5: Sex-linked cross with probability</summary>
+
+A woman who is a carrier for haemophilia ($X^HX^h$) and a man with normal clotting ($X^HY$) have two
+children. What is the probability that both children are sons, both are colourblind, and both are
+unaffected by haemophilia?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Each child's sex is independent with P(son) = 1/2.
+
+For each son, the probability of being affected (having haemophilia) is 1/2 (the son receives either
+$X^H$ or $X^h$ from the carrier mother and Y from the father).
+
+For each son, the probability of being unaffected is 1/2.
+
+Probability that both children are sons AND both are unaffected:
+$$P = \left(\frac{1}{2}\right)^2 \times \left(\frac{1}{2}\right)^2 = \frac{1}{4} \times \frac{1}{4} = \frac{1}{16}$$
+
+Breaking this down: P(both sons) = $(1/2)(1/2) = 1/4$. Given both are sons, P(both unaffected) =
+$(1/2)(1/2) = 1/4$. Combined: $1/4 \times 1/4 = 1/16$.
+
+</details>

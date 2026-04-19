@@ -806,3 +806,135 @@ When HBr adds to propene (CH$_3$CH=CH$_2$):
 
 Markovnikov's rule states that the hydrogen adds to the carbon with more hydrogen atoms because this
 pathway proceeds through the more stable carbocation intermediate.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: IUPAC Nomenclature</summary>
+
+Name the following compound: $\mathrm{CH}_3\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{CH}(\mathrm{Cl})\mathrm{CH}_2\mathrm{CH}_3$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+1. Longest carbon chain: 6 carbons (hexane).
+2. Number from the end nearest the substituent with the lowest number.
+3. Substituents: methyl at C2, chloro at C4.
+
+Name: **4-chloro-2-methylhexane**.
+
+</details>
+
+<details>
+<summary>Question 2: Alkene Addition Reactions</summary>
+
+Describe the products formed when propene ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2$) reacts with each of the following:
+
+(a) $\mathrm{HBr}$
+
+(b) $\mathrm{Br}_2$ in $\mathrm{CCl}_4$
+
+(c) $\mathrm{H}_2\mathrm{O}$ with $\mathrm{H}_2\mathrm{SO}_4$ catalyst
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) By Markovnikov's rule, H adds to the less substituted carbon and Br adds to the more substituted carbon:
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_3$$
+
+Product: **2-bromopropane**.
+
+(b) Halogenation (anti addition):
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{Br}_2 \to \mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{Br}$$
+
+Product: **1,2-dibromopropane**.
+
+(c) Acid-catalysed hydration (Markovnikov addition):
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{H}^+} \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$$
+
+Product: **propan-2-ol**.
+
+</details>
+
+<details>
+<summary>Question 3: Comparing $S_N1$ and $S_N2$ Mechanisms</summary>
+
+For the reaction between 1-bromobutane and aqueous $\mathrm{NaOH}$:
+
+(a) Identify the mechanism and explain why.
+
+(b) State the rate equation.
+
+(c) Describe the stereochemical outcome.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) This is an $S_N2$ mechanism because 1-bromobutane is a primary halogenoalkane with minimal steric hindrance, and $\mathrm{OH}^-$ is a strong nucleophile. $S_N2$ is favoured for primary substrates with strong nucleophiles.
+
+(b) $$\mathrm{Rate} = k[\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}][\mathrm{OH}^-]$$
+
+(c) Inversion of configuration (Walden inversion) occurs at the carbon bearing the leaving group. The nucleophile attacks from the back of the C--Br bond, resulting in the product having the opposite configuration.
+
+</details>
+
+<details>
+<summary>Question 4: Polymer Identification</summary>
+
+A polymer has the repeating unit: $-[\mathrm{NH}(\mathrm{CH}_2)_6\mathrm{NHCO}(\mathrm{CH}_2)_4\mathrm{CO}]-$.
+
+(a) Identify the type of polymer.
+
+(b) Identify the two monomers.
+
+(c) State one use of this polymer.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) This is a **condensation polymer** (specifically a polyamide), identifiable by the amide linkages ($-\mathrm{NHCO}-$) in the repeating unit.
+
+(b) The monomers are:
+- **1,6-diaminohexane** ($\mathrm{H}_2\mathrm{N}(\mathrm{CH}_2)_6\mathrm{NH}_2$)
+- **hexanedioic acid** (adipic acid, $\mathrm{HOOC}(\mathrm{CH}_2)_4\mathrm{COOH}$)
+
+This polymer is **nylon-6,6**.
+
+(c) Uses include: clothing fibres, parachutes, ropes, carpets, and engineering plastics.
+
+</details>
+
+<details>
+<summary>Question 5: Alcohol Oxidation Pathway</summary>
+
+Describe the products formed when each of the following alcohols is oxidised with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$:
+
+(a) Propan-1-ol ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH}$)
+
+(b) Propan-2-ol ($\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$)
+
+(c) 2-methylpropan-2-ol ($(\mathrm{CH}_3)_3\mathrm{COH}$)
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Primary alcohol: oxidised first to propanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$), then further oxidised to propanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$). With acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ under reflux, the final product is **propanoic acid**.
+
+(b) Secondary alcohol: oxidised to propanone (acetone, $\mathrm{CH}_3\mathrm{COCH}_3$). The reaction stops at the ketone because ketones cannot be further oxidised.
+
+(c) Tertiary alcohol: tertiary alcohols **cannot be oxidised** by $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ because there is no hydrogen atom on the carbon bearing the $-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
+</details>
+

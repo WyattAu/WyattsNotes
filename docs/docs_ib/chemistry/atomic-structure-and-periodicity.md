@@ -1333,3 +1333,100 @@ $\mathrm{Na}^+$ is smaller than $\mathrm{F}^-$ even though $\mathrm{Na}$ has a l
 $\mathrm{F}$.
 
 :::
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Calculating Relative Atomic Mass</summary>
+
+Naturally occurring boron consists of two isotopes: $\mathrm{B}$-10 ($19.9\%$ abundance, mass $10.01\mathrm{ u}$) and $\mathrm{B}$-11 ($80.1\%$ abundance, mass $11.01\mathrm{ u}$). Calculate the relative atomic mass of boron.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$A_r = (10.01 \times 0.199) + (11.01 \times 0.801) = 1.992 + 8.819 = 10.81$$
+
+The relative atomic mass of boron is $10.81\mathrm{ u}$.
+
+</details>
+
+<details>
+<summary>Question 2: Electron Configuration and Quantum Numbers</summary>
+
+(a) Write the electron configuration of $\mathrm{Cr}$ ($Z = 24$) using noble gas notation.
+
+(b) State the four quantum numbers for the last electron added to chromium.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Chromium is an exception to the Aufbau principle. A half-filled $d$-subshell is more stable:
+
+$$\mathrm{Cr}: [\mathrm{Ar}]\, 4s^1\, 3d^5$$
+
+(b) The last electron enters the $3d$ subshell:
+
+- Principal quantum number: $n = 3$
+- Azimuthal quantum number: $l = 2$ (for $d$-orbital)
+- Magnetic quantum number: $m_l = +2$ (one of $-2, -1, 0, +1, +2$)
+- Spin quantum number: $m_s = +\frac{1}{2}$ (Hund's rule: first five electrons have parallel spins)
+
+</details>
+
+<details>
+<summary>Question 3: Periodic Trends</summary>
+
+Explain why the first ionization energy of aluminium is lower than that of magnesium, but the first ionization energy of sulfur is lower than that of phosphorus.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+**Aluminium vs Magnesium:** Mg has the electron configuration $[\mathrm{Ne}]\, 3s^2$ with a stable, filled $3s$ subshell. Al has $[\mathrm{Ne}]\, 3s^2\, 3p^1$. The $3p$ electron in Al is at a higher energy level than the $3s$ electrons of Mg and is partially shielded by the $3s$ electrons, so it requires less energy to remove.
+
+**Sulfur vs Phosphorus:** P has the configuration $[\mathrm{Ne}]\, 3s^2\, 3p^3$ with a stable half-filled $3p$ subshell. S has $[\mathrm{Ne}]\, 3s^2\, 3p^4$, where the fourth $3p$ electron is paired with another electron in the same orbital. The paired electrons experience mutual repulsion, making the paired electron easier to remove.
+
+</details>
+
+<details>
+<summary>Question 4: Isoelectronic Series</summary>
+
+Arrange the following ions in order of increasing ionic radius and explain your reasoning: $\mathrm{O}^{2-}$, $\mathrm{F}^-$, $\mathrm{Na}^+$, $\mathrm{Mg}^{2+}$, $\mathrm{Al}^{3+}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+All five species are isoelectronic with the neon configuration ($1s^2\, 2s^2\, 2p^6$, 10 electrons).
+
+$$\mathrm{Al}^{3+} \lt \mathrm{Mg}^{2+} \lt \mathrm{Na}^+ \lt \mathrm{F}^- \lt \mathrm{O}^{2-}$$
+
+All have the same number of electrons, but the nuclear charge increases from $\mathrm{O}$ ($Z = 8$) to $\mathrm{Al}$ ($Z = 13$). A higher nuclear charge pulls the electron cloud closer to the nucleus, resulting in a smaller ionic radius.
+
+</details>
+
+<details>
+<summary>Question 5: Spectral Line Calculation</summary>
+
+Calculate the wavelength of the photon emitted when an electron in a hydrogen atom transitions from $n = 4$ to $n = 2$. Use the Rydberg equation with $R_H = 1.097 \times 10^7\mathrm{ m}^{-1}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$\frac{1}{\lambda} = R_H \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) = 1.097 \times 10^7 \left(\frac{1}{4} - \frac{1}{16}\right)$$
+
+$$\frac{1}{\lambda} = 1.097 \times 10^7 \times \left(\frac{4 - 1}{16}\right) = 1.097 \times 10^7 \times 0.1875 = 2.057 \times 10^6\mathrm{ m}^{-1}$$
+
+$$\lambda = \frac{1}{2.057 \times 10^6} = 4.86 \times 10^{-7}\mathrm{ m} = 486\mathrm{ nm}$$
+
+This corresponds to the cyan line in the Balmer series (visible region).
+</details>
+

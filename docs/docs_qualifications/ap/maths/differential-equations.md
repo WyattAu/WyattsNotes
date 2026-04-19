@@ -759,3 +759,118 @@ method would be.
 
 12. Use the improved Euler method (Heun's method) with $h = 0.5$ and two steps to approximate $y(1)$
     for $\frac{dy}{dx} = x - y$, $y(0) = 0$. Compare with the exact solution.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Separable differential equation</summary>
+
+Solve the differential equation $\frac{dy}{dx} = \frac{xy}{x^2 + 1}$ with the initial condition $y(0) = 2$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Separate variables: $\frac{dy}{y} = \frac{x}{x^2 + 1} \, dx$.
+
+Integrate: $\ln|y| = \frac{1}{2}\ln(x^2 + 1) + C$.
+
+$y = e^C \sqrt{x^2 + 1} = A\sqrt{x^2 + 1}$ where $A = e^C$.
+
+Using $y(0) = 2$: $2 = A\sqrt{1} = A$, so $A = 2$.
+
+$y = 2\sqrt{x^2 + 1}$.
+
+</details>
+
+<details>
+<summary>Question 2: Logistic growth model</summary>
+
+A population grows according to the logistic equation $\frac{dP}{dt} = 0.05P\!\left(1 - \frac{P}{1000}\right)$ with $P(0) = 100$. Find (a) the population at $t = 50$, and (b) the time when the population reaches half the carrying capacity.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Carrying capacity $K = 1000$, growth rate $r = 0.05$.
+
+Logistic solution: $P(t) = \frac{K}{1 + Ae^{-rt}}$ where $A = \frac{K - P_0}{P_0} = \frac{1000 - 100}{100} = 9$.
+
+$P(t) = \frac{1000}{1 + 9e^{-0.05t}}$.
+
+(a) $P(50) = \frac{1000}{1 + 9e^{-2.5}} = \frac{1000}{1 + 9(0.0821)} = \frac{1000}{1 + 0.739} = \frac{1000}{1.739} = 575$.
+
+(b) Half carrying capacity: $P = 500 = \frac{1000}{1 + 9e^{-0.05t}}$.
+
+$1 + 9e^{-0.05t} = 2$, $9e^{-0.05t} = 1$, $e^{-0.05t} = 1/9$.
+
+$t = \frac{\ln 9}{0.05} = \frac{2.197}{0.05} = 43.9$ time units.
+
+</details>
+
+<details>
+<summary>Question 3: Second-order linear DE</summary>
+
+Solve $y'' - 5y' + 6y = 0$ with $y(0) = 1$ and $y'(0) = 0$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Characteristic equation: $r^2 - 5r + 6 = 0$, $(r-2)(r-3) = 0$. $r = 2, 3$.
+
+General solution: $y = C_1 e^{2x} + C_2 e^{3x}$.
+
+$y(0) = C_1 + C_2 = 1$.
+$y'(0) = 2C_1 + 3C_2 = 0$.
+
+From the second equation: $C_1 = -3C_2/2$. Substituting: $-3C_2/2 + C_2 = 1$, $-C_2/2 = 1$, $C_2 = -2$, $C_1 = 3$.
+
+$y = 3e^{2x} - 2e^{3x}$.
+
+</details>
+
+<details>
+<summary>Question 4: Slope field interpretation</summary>
+
+The differential equation $\frac{dy}{dx} = x - y$ has a slope field. Identify the isocline (line where slopes are zero) and describe the long-term behaviour of solutions.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Zero slopes: $x - y = 0$, so $y = x$. This is the isocline where all slopes are zero (horizontal).
+
+For $y \gt x$ (above the line $y = x$): $dy/dx = x - y \lt 0$, so solutions decrease.
+
+For $y \lt x$ (below the line $y = x$): $dy/dx = x - y \gt 0$, so solutions increase.
+
+All solutions approach the line $y = x - 1$ as $x \to \infty$ (this can be verified by solving the DE: the general solution is $y = x - 1 + Ce^{-x}$, which approaches $x - 1$).
+
+The line $y = x - 1$ is a stable equilibrium solution.
+
+</details>
+
+<details>
+<summary>Question 5: Euler's method</summary>
+
+Use Euler's method with step size $h = 0.5$ to approximate $y(2)$ for $\frac{dy}{dx} = x + y$, $y(1) = 0$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$x_0 = 1$, $y_0 = 0$, $h = 0.5$. Need 2 steps.
+
+Step 1: $y_1 = y_0 + h \cdot f(x_0, y_0) = 0 + 0.5(1 + 0) = 0.5$ at $x_1 = 1.5$.
+
+Step 2: $y_2 = y_1 + h \cdot f(x_1, y_1) = 0.5 + 0.5(1.5 + 0.5) = 0.5 + 1.0 = 1.5$ at $x_2 = 2.0$.
+
+Euler's method approximation: $y(2) \approx 1.5$.
+
+</details>

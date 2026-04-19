@@ -737,3 +737,87 @@ piston must move 50 times further than the large piston. The work input equals t
 20. A football is kicked from the ground at $20 \mathrm{ m/s}$ at an angle of $35^{\circ}$ to the
     horizontal. Calculate the maximum height, the time of flight, and the horizontal range. (Assume
     $g = 9.8 \mathrm{ m/s}^2$ and ignore air resistance.)
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Resultant force and acceleration</summary>
+
+A $5 \mathrm{ kg}$ object is acted on by two forces: $20 \mathrm{ N}$ to the right and $8 \mathrm{ N}$ to the left. Calculate the resultant force and the acceleration.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Resultant force $= 20 - 8 = 12 \mathrm{ N}$ to the right.
+
+Acceleration $= F/m = 12/5 = 2.4 \mathrm{ m/s^2}$ to the right.
+
+</details>
+
+<details>
+<summary>Question 2: Weight and mass on the Moon</summary>
+
+An astronaut has a mass of $80 \mathrm{ kg}$ on Earth. The gravitational field strength on the Moon is $1.6 \mathrm{ N/kg}$. Calculate (a) the astronaut's weight on Earth and (b) the astronaut's weight on the Moon.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $W = mg = 80 \times 9.8 = 784 \mathrm{ N}$.
+
+(b) $W = mg = 80 \times 1.6 = 128 \mathrm{ N}$.
+
+Mass remains the same ($80 \mathrm{ kg}$) on both Earth and the Moon.
+
+</details>
+
+<details>
+<summary>Question 3: Stopping distance</summary>
+
+A car travelling at $30 \mathrm{ m/s}$ has a thinking distance of $21 \mathrm{ m}$ and a braking distance of $54 \mathrm{ m}$. Calculate the total stopping distance. Explain why the braking distance increases much more rapidly than the thinking distance when speed doubles.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Total stopping distance $= 21 + 54 = 75 \mathrm{ m}$.
+
+Thinking distance is proportional to speed ($d_t = vt$), so doubling speed doubles thinking distance. Braking distance is proportional to speed squared ($d_b \propto v^2$, since $KE \propto v^2$ and $W = Fd$), so doubling speed quadruples the braking distance. This is why speeding is so dangerous.
+
+</details>
+
+<details>
+<summary>Question 4: Hooke's Law</summary>
+
+A spring has a spring constant of $200 \mathrm{ N/m}$. Calculate the extension when a $50 \mathrm{ N}$ force is applied. Calculate the energy stored in the spring.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$F = ke$, so $e = F/k = 50/200 = 0.25 \mathrm{ m}$.
+
+Energy stored $= \frac{1}{2}ke^2 = 0.5 \times 200 \times 0.25^2 = 0.5 \times 200 \times 0.0625 = 6.25 \mathrm{ J}$.
+
+</details>
+
+<details>
+<summary>Question 5: Terminal velocity</summary>
+
+Explain why a skydiver reaches terminal velocity. Describe the forces acting on the skydiver at terminal velocity.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Initially, the skydiver accelerates downward due to gravity ($F = mg$). As speed increases, air resistance (drag) increases. Drag acts upward, opposing the motion. Eventually, the upward drag force equals the downward gravitational force, so the net force is zero and the skydiver stops accelerating. They continue at a constant speed called terminal velocity.
+
+At terminal velocity: weight $=$ drag. The skydiver is in equilibrium (Newton's first law).
+
+</details>

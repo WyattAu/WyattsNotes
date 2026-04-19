@@ -806,3 +806,87 @@ When a field is abandoned:
 6. Eventually, a mature woodland develops (the climax community in the British climate).
 
 This process can take 100--200 years or more, depending on the climate and soil conditions.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Food chain calculations</summary>
+
+A food chain consists of grass $\to$ rabbit $\to$ fox. If the grass produces $10,000 \mathrm{ kJ}$ of energy, calculate the energy available to the fox, assuming $10\%$ efficiency at each trophic level.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Grass: $10,000 \mathrm{ kJ}$.
+
+Rabbit (primary consumer): $10,000 \times 0.10 = 1,000 \mathrm{ kJ}$.
+
+Fox (secondary consumer): $1,000 \times 0.10 = 100 \mathrm{ kJ}$.
+
+Only $100 \mathrm{ kJ}$ of the original $10,000 \mathrm{ kJ}$ is available to the fox. The remaining energy is lost through respiration, excretion, and as heat.
+
+</details>
+
+<details>
+<summary>Question 2: Carbon cycle</summary>
+
+Describe the role of decomposition in the carbon cycle. Explain how deforestation might affect the balance of carbon dioxide in the atmosphere.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Decomposers break down dead organic matter, releasing $\mathrm{CO}_2$ back into the atmosphere through respiration. This recycles carbon that was stored in organisms.
+
+Deforestation reduces the number of trees available to absorb $\mathrm{CO}_2$ through photosynthesis. It also releases stored carbon (as $\mathrm{CO}_2$) when trees are burned or decompose. This increases the net $\mathrm{CO}_2$ in the atmosphere, contributing to the enhanced greenhouse effect and climate change.
+
+</details>
+
+<details>
+<summary>Question 3: Quadrat sampling</summary>
+
+A student uses a $1 \mathrm{ m}^2$ quadrat to estimate the population of daisies in a $50 \mathrm{ m} \times 20 \mathrm{ m}$ field. The quadrat is placed randomly 10 times, and the counts are: 3, 5, 2, 4, 6, 3, 4, 5, 2, 6. Estimate the total daisy population in the field.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Mean count per quadrat: $(3 + 5 + 2 + 4 + 6 + 3 + 4 + 5 + 2 + 6) / 10 = 40 / 10 = 4$ daisies per $\mathrm{m}^2$.
+
+Field area: $50 \times 20 = 1,000 \mathrm{ m}^2$.
+
+Estimated population: $4 \times 1,000 = 4,000$ daisies.
+
+</details>
+
+<details>
+<summary>Question 4: Water pollution and indicator species</summary>
+
+Explain how the presence or absence of mayfly nymphs in a river can indicate the level of water pollution.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Mayfly nymphs are indicator species for clean water. They are sensitive to low oxygen levels and chemical pollution (e.g., from fertilisers or sewage). If mayfly nymphs are present, the water is likely clean and well-oxygenated. If they are absent but species like bloodworms (which tolerate low oxygen) are present, the water is likely polluted. This makes them useful biological indicators for monitoring water quality.
+
+</details>
+
+<details>
+<summary>Question 5: Competition and adaptation</summary>
+
+Explain how two species of finch on the same island can avoid competing for the same food source, using the concept of adaptation.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The finches may have evolved different beak shapes adapted to different food sources. For example, one species may have a large, strong beak for cracking hard seeds, while another has a small, pointed beak for picking insects from bark. This is called resource partitioning. Over generations, natural selection favours individuals that exploit a niche not used by other species, reducing competition and allowing both species to coexist.
+
+</details>

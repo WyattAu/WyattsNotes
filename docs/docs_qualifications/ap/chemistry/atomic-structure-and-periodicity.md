@@ -41,8 +41,9 @@ Rutherford derived that the closest approach distance $d$ for a head-on collisio
 $$d = \frac{k \cdot Z_1 Z_2 e^2}{K}$$
 
 where $K$ is the kinetic energy of the alpha particle. For $5.5 \mathrm{ MeV}$ alpha particles on
-gold, $d \approx 3 \times 10^{-14} \mathrm{ m}$, which is much smaller than the atomic radius of about
-$10^{-10} \mathrm{ m}$. This confirms that the nucleus is extremely small compared to the atom.
+gold, $d \approx 3 \times 10^{-14} \mathrm{ m}$, which is much smaller than the atomic radius of
+about $10^{-10} \mathrm{ m}$. This confirms that the nucleus is extremely small compared to the
+atom.
 
 ### Subatomic Particles
 
@@ -223,8 +224,8 @@ This is because once the 3d subshell is occupied, its energy drops below that of
 **Worked Example.** Write the electron configuration for $\mathrm{Mn}^{2+}$ ($Z = 25$).
 
 Neutral Mn: $[\mathrm{Ar}]\,4s^2 3d^5$. Remove the two 4s electrons first: $\mathrm{Mn}^{2+}$:
-$[\mathrm{Ar}]\,3d^5$. Note that $\mathrm{Mn}^{2+}$ has a half-filled d subshell, which is particularly
-stable. This explains why Mn$^{2+}$ is a common oxidation state for manganese.
+$[\mathrm{Ar}]\,3d^5$. Note that $\mathrm{Mn}^{2+}$ has a half-filled d subshell, which is
+particularly stable. This explains why Mn$^{2+}$ is a common oxidation state for manganese.
 
 ## Electromagnetic Radiation and Atomic Spectra (CED Unit 1)
 
@@ -348,8 +349,8 @@ more photons arrive per unit time) but not their maximum kinetic energy.
 
 ### Worked Example: Photoelectric Effect
 
-The work function of sodium is $2.28 \mathrm{ eV}$. Calculate the maximum kinetic energy of electrons
-ejected by light of wavelength $400 \mathrm{ nm}$.
+The work function of sodium is $2.28 \mathrm{ eV}$. Calculate the maximum kinetic energy of
+electrons ejected by light of wavelength $400 \mathrm{ nm}$.
 
 $$E = \frac{hc}{\lambda} = \frac{1240 \mathrm{ eV}\cdot\mathrm{nm}}{400 \mathrm{ nm}} = 3.10 \mathrm{ eV}$$
 
@@ -363,9 +364,9 @@ $$
 Z_{\mathrm{eff}} = Z - S
 $$
 
-where $Z$ is the atomic number and $S$ is the shielding constant. $Z_{\mathrm{eff}}$ increases across
-a period (less shielding, same number of shells) and stays roughly constant down a group (more
-shielding offsets more protons).
+where $Z$ is the atomic number and $S$ is the shielding constant. $Z_{\mathrm{eff}}$ increases
+across a period (less shielding, same number of shells) and stays roughly constant down a group
+(more shielding offsets more protons).
 
 The concept of $Z_{\mathrm{eff}}$ is the key to understanding all periodic trends. Across a period,
 $Z$ increases by one per element but the shielding increases very little (electrons in the same
@@ -442,8 +443,8 @@ repulsion, allowing the remaining electrons to be pulled closer to the nucleus.
 repulsion.
 
 **Isoelectronic series** (same number of electrons): ionic radius decreases with increasing nuclear
-charge. For example: $\mathrm{O}^{2-} \gt \mathrm{F}^- \gt \mathrm{Na}^+ \gt \mathrm{Mg}^{2+}$ (all have 10
-electrons, but nuclear charge increases from 8 to 12).
+charge. For example: $\mathrm{O}^{2-} \gt \mathrm{F}^- \gt \mathrm{Na}^+ \gt \mathrm{Mg}^{2+}$ (all
+have 10 electrons, but nuclear charge increases from 8 to 12).
 
 ### Worked Example: Isoelectronic Radius Comparison
 
@@ -504,8 +505,8 @@ with all electrons paired are **diamagnetic** (weakly repelled by a magnetic fie
 
 Determine the magnetic properties of $\mathrm{Cr}^{3+}$.
 
-$\mathrm{Cr}^{3+}$: $[\mathrm{Ar}]\,3d^3$. Three unpaired electrons in the 3d subshell (one in each of
-three orbitals, following Hund's rule). Therefore, $\mathrm{Cr}^{3+}$ is paramagnetic.
+$\mathrm{Cr}^{3+}$: $[\mathrm{Ar}]\,3d^3$. Three unpaired electrons in the 3d subshell (one in each
+of three orbitals, following Hund's rule). Therefore, $\mathrm{Cr}^{3+}$ is paramagnetic.
 
 ### Worked Example: Predicting Magnetic Properties
 
@@ -513,9 +514,9 @@ Predict the magnetic properties of $\mathrm{Zn}^{2+}$ and $\mathrm{Fe}^{3+}$.
 
 $\mathrm{Zn}^{2+}$: $[\mathrm{Ar}]\,3d^{10}$. All 3d orbitals are fully paired. Diamagnetic.
 
-$\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\,3d^5$. Five unpaired electrons (one in each 3d orbital, maximising
-parallel spins by Hund's rule). Paramagnetic, and strongly so because of the five unpaired
-electrons.
+$\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\,3d^5$. Five unpaired electrons (one in each 3d orbital,
+maximising parallel spins by Hund's rule). Paramagnetic, and strongly so because of the five
+unpaired electrons.
 
 ## The d-Block and Valence Electrons (CED Unit 1)
 
@@ -525,8 +526,8 @@ For main group elements, valence electrons are those in the outermost s and p su
 transition metals, the valence electrons include the outermost s electrons and the d electrons of
 the highest occupied d subshell.
 
-| Element | Configuration               | Valence Electrons |
-| ------- | --------------------------- | ----------------- |
+| Element | Configuration                 | Valence Electrons |
+| ------- | ----------------------------- | ----------------- |
 | Sc      | $[\mathrm{Ar}]\,4s^2 3d^1$    | 3                 |
 | Ti      | $[\mathrm{Ar}]\,4s^2 3d^2$    | 4                 |
 | Fe      | $[\mathrm{Ar}]\,4s^2 3d^6$    | 8                 |
@@ -554,9 +555,9 @@ $\mathrm{Fe}^{2+}$: $[\mathrm{Ar}]\,3d^6$ (remove 4s electrons).
 
 $\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\,3d^5$ (remove 4s and one 3d electron).
 
-$\mathrm{Fe}^{3+}$ has a half-filled 3d subshell ($d^5$), which is particularly stable due to maximum
-exchange energy (all five electrons have parallel spins). This explains why $\mathrm{Fe}^{3+}$ is more
-common and more stable than $\mathrm{Fe}^{2+}$ in many compounds.
+$\mathrm{Fe}^{3+}$ has a half-filled 3d subshell ($d^5$), which is particularly stable due to
+maximum exchange energy (all five electrons have parallel spins). This explains why
+$\mathrm{Fe}^{3+}$ is more common and more stable than $\mathrm{Fe}^{2+}$ in many compounds.
 
 ### Worked Example: Periodic Trend Prediction
 
@@ -583,15 +584,15 @@ the increase in $Z_{\mathrm{eff}}$.
 
 ## Summary Table: Periodic Trends Explained
 
-| Trend             | Direction                  | Explanation                                                      |
-| ----------------- | -------------------------- | ---------------------------------------------------------------- |
+| Trend             | Direction                  | Explanation                                                        |
+| ----------------- | -------------------------- | ------------------------------------------------------------------ |
 | Atomic radius     | Decreases L to R           | Increasing $Z_{\mathrm{eff}}$ pulls electrons closer               |
-| Atomic radius     | Increases top to bottom    | Additional shells outweigh increased nuclear charge              |
+| Atomic radius     | Increases top to bottom    | Additional shells outweigh increased nuclear charge                |
 | Ionization energy | Increases L to R           | Higher $Z_{\mathrm{eff}}$ makes electrons harder to remove         |
-| Ionization energy | Decreases top to bottom    | Outer electrons are further from nucleus and more shielded       |
+| Ionization energy | Decreases top to bottom    | Outer electrons are further from nucleus and more shielded         |
 | Electron affinity | Generally increases L to R | Greater $Z_{\mathrm{eff}}$ increases attraction for added electron |
 | Electronegativity | Increases L to R           | Greater $Z_{\mathrm{eff}}$ increases pull on bonding electrons     |
-| Electronegativity | Decreases top to bottom    | Greater distance from nucleus reduces pull on bonding electrons  |
+| Electronegativity | Decreases top to bottom    | Greater distance from nucleus reduces pull on bonding electrons    |
 
 ## Common Pitfalls
 
@@ -644,8 +645,9 @@ the increase in $Z_{\mathrm{eff}}$.
 
 10. Which element has the higher electronegativity, and why: P or Cl?
 
-11. For the isoelectronic series $\mathrm{N}^{3-}$, $\mathrm{O}^{2-}$, $\mathrm{F}^-$, $\mathrm{Na}^+$,
-    $\mathrm{Mg}^{2+}$, arrange the ions in order of increasing radius and explain the trend.
+11. For the isoelectronic series $\mathrm{N}^{3-}$, $\mathrm{O}^{2-}$, $\mathrm{F}^-$,
+    $\mathrm{Na}^+$, $\mathrm{Mg}^{2+}$, arrange the ions in order of increasing radius and explain
+    the trend.
 
 12. Explain, in terms of effective nuclear charge, why atomic radius decreases across a period.
 
@@ -671,8 +673,8 @@ the increase in $Z_{\mathrm{eff}}$.
 20. Explain, using the concept of shielding, why the atomic radius increases down Group 2 despite
     increasing nuclear charge.
 
-21. Determine whether each of the following is paramagnetic or diamagnetic: (a) $\mathrm{Zn}^{2+}$ (b)
-    $\mathrm{Fe}^{2+}$ (c) $\mathrm{O}^{2-}$ (d) Ne.
+21. Determine whether each of the following is paramagnetic or diamagnetic: (a) $\mathrm{Zn}^{2+}$
+    (b) $\mathrm{Fe}^{2+}$ (c) $\mathrm{O}^{2-}$ (d) Ne.
 
 22. Calculate the frequency and wavelength of light emitted when an electron in hydrogen drops from
     $n = 6$ to $n = 2$. Identify the spectral series.
@@ -683,8 +685,8 @@ the increase in $Z_{\mathrm{eff}}$.
 24. Explain why the atomic radius of gallium is nearly the same as that of aluminium, despite
     gallium being in the period below aluminium.
 
-25. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \mathrm{ m/s}$.
-    (Electron mass = $9.11 \times 10^{-31}$ kg.)
+25. Calculate the de Broglie wavelength of an electron travelling at
+    $2.0 \times 10^6 \mathrm{ m/s}$. (Electron mass = $9.11 \times 10^{-31}$ kg.)
 
 26. Explain why potassium has a lower first ionization energy than argon, despite having a higher
     nuclear charge.
@@ -700,3 +702,144 @@ the increase in $Z_{\mathrm{eff}}$.
 
 30. Explain why the atomic radius of Ga (gallium) is similar to that of Al (aluminium), despite Ga
     being in the period below Al.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Electron configuration and periodic properties</summary>
+
+Element X has the electron configuration $[\mathrm{Ar}]4s^2 3d^{10} 4p^3$. Identify the element,
+state its period and group, and predict whether its atomic radius is larger or smaller than that of
+arsenic. Explain the trend.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Element X has 33 electrons: $2 + 8 + 8 + 2 + 10 + 3 = 33$. This is arsenic (As), in period 4 and
+group 15.
+
+Arsenic's atomic radius should be compared with itself -- the question asks relative to arsenic.
+Since element X IS arsenic, the radii are equal. However, if comparing with neighbours: arsenic is
+larger than selenium (Se, to its right) because atomic radius decreases across a period (increasing
+effective nuclear charge pulls electrons closer). Arsenic is smaller than germanium (Ge, to its
+left) for the same reason in reverse.
+
+The 3d electrons provide poor shielding, causing the 4p electrons to experience a higher effective
+nuclear charge than expected. This is why Ga has a similar radius to Al (the d-block contraction).
+
+</details>
+
+<details>
+<summary>Question 2: Photoelectric effect and photon energy</summary>
+
+Light with a wavelength of $200 \mathrm{ nm}$ is shone on a metal surface. The work function of the
+metal is $4.0 \mathrm{ eV}$. Calculate the kinetic energy of the ejected electrons in joules. If no
+electrons are ejected, explain why.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Energy of the photon:
+$$E = \frac{hc}{\lambda} = \frac{(6.626 \times 10^{-34} \mathrm{ J\cdot s})(3.00 \times 10^8 \mathrm{ m/s})}{200 \times 10^{-9} \mathrm{ m}} = 9.94 \times 10^{-19} \mathrm{ J}$$
+
+Convert to eV: $9.94 \times 10^{-19} / 1.602 \times 10^{-19} = 6.20 \mathrm{ eV}$.
+
+Kinetic energy of ejected electrons:
+$$KE = E_{\text{photon}} - \phi = 6.20 \mathrm{ eV} - 4.0 \mathrm{ eV} = 2.20 \mathrm{ eV}$$
+
+In joules: $2.20 \times 1.602 \times 10^{-19} = 3.52 \times 10^{-19} \mathrm{ J}$.
+
+Electrons are ejected because the photon energy ($6.20 \mathrm{ eV}$) exceeds the work function
+($4.0 \mathrm{ eV}$).
+
+</details>
+
+<details>
+<summary>Question 3: Ionization energy trends and exceptions</summary>
+
+Explain why the first ionization energy of oxygen ($1314 \mathrm{ kJ/mol}$) is lower than that of
+nitrogen ($1402 \mathrm{ kJ/mol}$), even though oxygen has a higher nuclear charge. Use electron
+configurations in your explanation.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Nitrogen has the electron configuration $1s^2 2s^2 2p^3$, with three unpaired electrons in the three
+$2p$ orbitals (Hund's rule). Each electron occupies a separate orbital, minimising electron-electron
+repulsion.
+
+Oxygen has the configuration $1s^2 2s^2 2p^4$. The fourth $2p$ electron must pair with an existing
+electron in one of the $2p$ orbitals. The paired electrons experience additional electron-electron
+repulsion, which makes it easier to remove one of them. This repulsion effect outweighs the
+increased nuclear charge in oxygen.
+
+This is a general trend: atoms with half-filled or fully-filled subshells (like N with $2p^3$) have
+higher ionization energies than their neighbours because these configurations are particularly
+stable.
+
+</details>
+
+<details>
+<summary>Question 4: Quantum numbers and orbitals</summary>
+
+An electron in a hydrogen atom has the quantum numbers $n = 4$, $l = 2$, $m_l = -1$, $m_s = +1/2$.
+Identify the orbital type and the maximum number of electrons that can occupy this subshell. Explain
+why $m_l = 4$ is not a valid quantum number for this electron.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The quantum number $l = 2$ corresponds to a d orbital. The subshell is $4d$.
+
+The maximum number of electrons in a d subshell is 10 (5 orbitals $\times$ 2 electrons each). The
+five orbitals have $m_l$ values of $-2, -1, 0, +1, +2$.
+
+The value $m_l = 4$ is not valid because $m_l$ must be an integer in the range from $-l$ to $+l$.
+Since $l = 2$, the valid values are $m_l = -2, -1, 0, +1, +2$. The value 4 exceeds this range.
+
+</details>
+
+<details>
+<summary>Question 5: Effective nuclear charge calculation</summary>
+
+Calculate the effective nuclear charge ($Z_{\mathrm{eff}}$) experienced by a valence electron in
+potassium ($Z = 19$) using Slater's rules. Compare this with the $Z_{\mathrm{eff}}$ for a valence
+electron in sodium ($Z = 11$) and explain the trend in atomic radius.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+For potassium: $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1$.
+
+Using Slater's rules for the $4s$ electron:
+
+- Electrons in the same group ($4s$): 0 (no other $4s$ electrons)
+- Electrons in the $n-1$ shell ($3s, 3p$): 8 electrons $\times$ 0.85 = 6.80
+- Electrons in the $n-2$ or lower shells ($1s, 2s, 2p$): 10 electrons $\times$ 1.00 = 10.00
+
+$Z_{\mathrm{eff}} = Z - S = 19 - (6.80 + 10.00) = 19 - 16.80 = 2.20$.
+
+For sodium: $1s^2 2s^2 2p^6 3s^1$.
+
+For the $3s$ electron:
+
+- Electrons in the $n-1$ shell ($2s, 2p$): 8 electrons $\times$ 0.85 = 6.80
+- Electrons in the $n-2$ or lower shells ($1s$): 2 electrons $\times$ 1.00 = 2.00
+
+$Z_{\mathrm{eff}} = 11 - (6.80 + 2.00) = 11 - 8.80 = 2.20$.
+
+Both have similar $Z_{\mathrm{eff}}$ for their valence electron, but potassium has an additional
+shell of inner electrons ($n = 3$ vs $n = 2$), making its valence electron farther from the nucleus.
+This is why K has a larger atomic radius than Na despite similar $Z_{\mathrm{eff}}$.
+
+</details>

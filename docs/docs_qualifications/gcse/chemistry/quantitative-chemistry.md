@@ -757,3 +757,103 @@ $$\mathrm{Percentage uncertainty} = \frac{0.05}{22.50} \times 100\% = 0.22\%$$
 | Dilution                 | $c_1 V_1 = c_2 V_2$                                                  | various    |
 | Percentage yield         | $\frac{\mathrm{actual}}{\mathrm{theoretical}} \times 100\%$              | %          |
 | Atom economy             | $\frac{M_r\mathrm{(desired)}}{\sum M_r\mathrm{(products)}} \times 100\%$ | %          |
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Moles and mass calculation</summary>
+
+Calculate the number of moles in $12.5 \mathrm{ g}$ of calcium carbonate ($\mathrm{CaCO}_3$). Then calculate the number of molecules.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$M_r(\mathrm{CaCO}_3) = 40 + 12 + 3(16) = 100$.
+
+Moles $= \frac{12.5}{100} = 0.125 \mathrm{ mol}$.
+
+Number of molecules $= 0.125 \times 6.02 \times 10^{23} = 7.53 \times 10^{22}$.
+
+</details>
+
+<details>
+<summary>Question 2: Titration calculation</summary>
+
+$25.0 \mathrm{ cm}^3$ of sodium hydroxide solution is titrated with $0.100 \mathrm{ mol/dm}^3$ hydrochloric acid. The average titre is $20.0 \mathrm{ cm}^3$. Calculate the concentration of the sodium hydroxide solution.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Moles of $\mathrm{HCl} = 0.100 \times 20.0/1000 = 0.00200 \mathrm{ mol}$.
+
+$\mathrm{NaOH} + \mathrm{HCl} \to \mathrm{NaCl} + \mathrm{H}_2\mathrm{O}$ (1:1 ratio)
+
+Moles of $\mathrm{NaOH} = 0.00200 \mathrm{ mol}$.
+
+Concentration of $\mathrm{NaOH} = \frac{0.00200}{25.0/1000} = \frac{0.00200}{0.0250} = 0.0800 \mathrm{ mol/dm}^3$.
+
+</details>
+
+<details>
+<summary>Question 3: Limiting reactant</summary>
+
+$6.0 \mathrm{ g}$ of magnesium reacts with $10.0 \mathrm{ g}$ of hydrochloric acid ($\mathrm{HCl}$): $\mathrm{Mg} + 2\mathrm{HCl} \to \mathrm{MgCl}_2 + \mathrm{H}_2$. Identify the limiting reactant and calculate the mass of hydrogen produced.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Moles of $\mathrm{Mg} = 6.0/24.3 = 0.247 \mathrm{ mol}$.
+Moles of $\mathrm{HCl} = 10.0/36.5 = 0.274 \mathrm{ mol}$.
+
+Required $\mathrm{HCl} = 2 \times 0.247 = 0.494 \mathrm{ mol}$. Only $0.274 \mathrm{ mol}$ available, so $\mathrm{HCl}$ is limiting.
+
+Moles of $\mathrm{H}_2 = 0.274/2 = 0.137 \mathrm{ mol}$.
+Mass of $\mathrm{H}_2 = 0.137 \times 2.0 = 0.274 \mathrm{ g}$.
+
+</details>
+
+<details>
+<summary>Question 4: Percentage yield</summary>
+
+When $10.0 \mathrm{ g}$ of calcium carbonate is heated, $4.20 \mathrm{ g}$ of calcium oxide is produced: $\mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$. Calculate the percentage yield.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Moles of $\mathrm{CaCO}_3 = 10.0/100 = 0.100 \mathrm{ mol}$.
+
+Theoretical moles of $\mathrm{CaO} = 0.100 \mathrm{ mol}$ (1:1 ratio).
+
+Theoretical mass of $\mathrm{CaO} = 0.100 \times 56 = 5.60 \mathrm{ g}$.
+
+Percentage yield $= (4.20/5.60) \times 100 = 75.0\%$.
+
+</details>
+
+<details>
+<summary>Question 5: Molar gas volume</summary>
+
+Calculate the volume of carbon dioxide produced (at room temperature and pressure) when $5.0 \mathrm{ g}$ of calcium carbonate reacts with excess hydrochloric acid. One mole of any gas occupies $24.0 \mathrm{ dm}^3$ at RTP.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\mathrm{CaCO}_3 + 2\mathrm{HCl} \to \mathrm{CaCl}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$.
+
+Moles of $\mathrm{CaCO}_3 = 5.0/100 = 0.050 \mathrm{ mol}$.
+
+Moles of $\mathrm{CO}_2 = 0.050 \mathrm{ mol}$ (1:1 ratio).
+
+Volume of $\mathrm{CO}_2 = 0.050 \times 24.0 = 1.2 \mathrm{ dm}^3$.
+
+</details>

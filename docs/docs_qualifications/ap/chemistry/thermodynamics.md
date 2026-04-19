@@ -75,12 +75,12 @@ $$
 \Delta H_{\mathrm{rxn}}^\circ = \sum n\Delta H_f^\circ(\mathrm{products}) - \sum m\Delta H_f^\circ(\mathrm{reactants})
 $$
 
-Standard conditions: $1 \mathrm{ atm}$, $298 \mathrm{ K}$ ($25^\circ\mathrm{C}$), pure substances in their
-most stable form. By convention, $\Delta H_f^\circ = 0$ for elements in their standard state.
+Standard conditions: $1 \mathrm{ atm}$, $298 \mathrm{ K}$ ($25^\circ\mathrm{C}$), pure substances in
+their most stable form. By convention, $\Delta H_f^\circ = 0$ for elements in their standard state.
 
-The standard state of an element is its most stable form at $1 \mathrm{ atm}$ and $25^\circ\mathrm{C}$:
-e.g., $\mathrm{O}_2(g)$, not $\mathrm{O}_3(g)$ or $\mathrm{O}_2(l)$; $\mathrm{C(graphite)}$, not
-$\mathrm{C(diamond)}$.
+The standard state of an element is its most stable form at $1 \mathrm{ atm}$ and
+$25^\circ\mathrm{C}$: e.g., $\mathrm{O}_2(g)$, not $\mathrm{O}_3(g)$ or $\mathrm{O}_2(l)$;
+$\mathrm{C(graphite)}$, not $\mathrm{C(diamond)}$.
 
 ### Hess's Law
 
@@ -100,7 +100,8 @@ that cannot be measured directly.
 Calculate $\Delta H^\circ$ for the reaction
 $\mathrm{C}(\mathrm{graphite}) + 2\mathrm{H}_2(g) \to \mathrm{CH}_4(g)$ using the following data:
 
-$\mathrm{C}(\mathrm{graphite}) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$, $\Delta H_1 = -393.5 \mathrm{ kJ/mol}$
+$\mathrm{C}(\mathrm{graphite}) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$,
+$\Delta H_1 = -393.5 \mathrm{ kJ/mol}$
 
 $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$,
 $\Delta H_2 = -285.8 \mathrm{ kJ/mol}$
@@ -123,7 +124,8 @@ $\Delta H = -285.8 \mathrm{ kJ/mol}$
 $\mathrm{CH}_3\mathrm{OH}(l) + \frac{3}{2}\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l)$,
 $\Delta H = -726.4 \mathrm{ kJ/mol}$
 
-Target: $\mathrm{C}(s) + 2\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{CH}_3\mathrm{OH}(l)$
+Target:
+$\mathrm{C}(s) + 2\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{CH}_3\mathrm{OH}(l)$
 
 Reverse equation 3 and add equations 1 and 2:
 
@@ -138,7 +140,8 @@ Sum: $\Delta H = -393.5 - 571.6 + 726.4 = -238.7 \mathrm{ kJ/mol}$
 
 ### Worked Example: Bond Enthalpy Calculation
 
-Estimate $\Delta H$ for $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$ using bond enthalpies.
+Estimate $\Delta H$ for $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$ using bond
+enthalpies.
 
 Bonds broken:
 $1 \mathrm{ N}\equiv\mathrm{N} (945) + 3 \mathrm{ H-H} (436) = 945 + 1308 = 2253 \mathrm{ kJ/mol}$
@@ -147,7 +150,8 @@ Bonds formed: $6 \mathrm{ N-H} (391) = 2346 \mathrm{ kJ/mol}$
 
 $$\Delta H \approx 2253 - 2346 = -93 \mathrm{ kJ/mol}$$
 
-(The exact value is $-92.2 \mathrm{ kJ/mol}$, showing that bond enthalpies give a good approximation.)
+(The exact value is $-92.2 \mathrm{ kJ/mol}$, showing that bond enthalpies give a good
+approximation.)
 
 :::info[Example]
 
@@ -159,11 +163,11 @@ $$
 
 Using standard enthalpies of formation (kJ/mol):
 
-| Substance                 | $\Delta H_f^\circ$ (kJ/mol) |
-| ------------------------- | --------------------------- |
+| Substance                     | $\Delta H_f^\circ$ (kJ/mol) |
+| ----------------------------- | --------------------------- |
 | $\mathrm{C}_3\mathrm{H}_8(g)$ | -103.8                      |
-| $\mathrm{O}_2(g)$           | 0                           |
-| $\mathrm{CO}_2(g)$          | -393.5                      |
+| $\mathrm{O}_2(g)$             | 0                           |
+| $\mathrm{CO}_2(g)$            | -393.5                      |
 | $\mathrm{H}_2\mathrm{O}(l)$   | -285.8                      |
 
 $$
@@ -190,7 +194,8 @@ environment. The approximation is most accurate when all species are in the gas 
 :::info[Example]
 
 Estimate $\Delta H$ for
-$\mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(g)$ using bond enthalpies.
+$\mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(g)$ using bond
+enthalpies.
 
 Bonds broken: $4 \mathrm{ C--H} (413) + 2 \mathrm{ O=O} (495) = 1648 + 990 = 2642 \mathrm{ kJ/mol}$
 
@@ -216,8 +221,8 @@ $$
 where $m$ is mass, $c$ is specific heat capacity (J/g$\cdot$K), and $\Delta T$ is the temperature
 change.
 
-The specific heat capacity of water is $4.18 \mathrm{ J/g}\cdot\mathrm{K}$. Water has an unusually high
-specific heat capacity because hydrogen bonds must be broken to increase its temperature.
+The specific heat capacity of water is $4.18 \mathrm{ J/g}\cdot\mathrm{K}$. Water has an unusually
+high specific heat capacity because hydrogen bonds must be broken to increase its temperature.
 
 ### Coffee-Cup Calorimetry (Constant Pressure)
 
@@ -259,8 +264,8 @@ $\Delta U$.
 ### Worked Example: Bomb Calorimetry with $\Delta H$ Conversion
 
 A bomb calorimeter with $C_{\mathrm{cal}} = 894 \mathrm{ J/K}$ is used to determine the enthalpy of
-combustion of glucose ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$). Burning $1.00 \mathrm{ g}$ raises the
-temperature by $3.02 \mathrm{ K}$. Calculate $\Delta U$ and $\Delta H$ per mole.
+combustion of glucose ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$). Burning $1.00 \mathrm{ g}$ raises
+the temperature by $3.02 \mathrm{ K}$. Calculate $\Delta U$ and $\Delta H$ per mole.
 
 Molar mass of glucose: $180.16 \mathrm{ g/mol}$.
 
@@ -282,8 +287,8 @@ solution rather than pure water.)
 
 When $50.0 \mathrm{ mL}$ of $1.00 \mathrm{ M } \mathrm{HCl}$ is mixed with $50.0 \mathrm{ mL}$ of
 $1.00 \mathrm{ M }$ $\mathrm{NaOH}$ in a coffee-cup calorimeter, the temperature rises from
-$25.0^\circ\mathrm{C}$ to $31.6^\circ\mathrm{C}$. Calculate $\Delta H$ per mole of $\mathrm{H}_2\mathrm{O}$
-formed.
+$25.0^\circ\mathrm{C}$ to $31.6^\circ\mathrm{C}$. Calculate $\Delta H$ per mole of
+$\mathrm{H}_2\mathrm{O}$ formed.
 
 Total mass: $50.0 + 50.0 = 100.0 \mathrm{ g}$ (assume density = $1.00 \mathrm{ g/mL}$,
 $c = 4.18 \mathrm{ J/g}\cdot\mathrm{K}$).
@@ -319,8 +324,8 @@ $$
 
 ### Factors Affecting Entropy
 
-- Phase changes: $S_{\mathrm{gas}} \gg S_{\mathrm{liquid}} \gt S_{\mathrm{solid}}$ (gases have many more
-  microstates because molecules are free to move in three dimensions)
+- Phase changes: $S_{\mathrm{gas}} \gg S_{\mathrm{liquid}} \gt S_{\mathrm{solid}}$ (gases have many
+  more microstates because molecules are free to move in three dimensions)
 - Temperature: higher $T$ means higher $S$ (more energy is distributed among more microstates)
 - Number of particles: more particles means higher $S$ (more microstates for more particles)
 - Dissolution: dissolving a solid usually increases $S$ (ions are dispersed in solution)
@@ -330,14 +335,16 @@ $$
 
 Predict the sign of $\Delta S^\circ$ for each reaction:
 
-(a) $2\mathrm{Na}(s) + \mathrm{Cl}_2(g) \to 2\mathrm{NaCl}(s)$: Negative (gas consumed, solid formed)
+(a) $2\mathrm{Na}(s) + \mathrm{Cl}_2(g) \to 2\mathrm{NaCl}(s)$: Negative (gas consumed, solid
+formed)
 
 (b) $\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$: Positive (gas produced)
 
-(c) $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$: Negative (4 moles gas to 2 moles gas)
+(c) $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$: Negative (4 moles gas to 2 moles
+gas)
 
-(d) $\mathrm{NH}_4\mathrm{NO}_3(s) \to \mathrm{N}_2\mathrm{O}(g) + 2\mathrm{H}_2\mathrm{O}(g)$: Positive (solid
-to 3 moles gas)
+(d) $\mathrm{NH}_4\mathrm{NO}_3(s) \to \mathrm{N}_2\mathrm{O}(g) + 2\mathrm{H}_2\mathrm{O}(g)$:
+Positive (solid to 3 moles gas)
 
 ### Standard Entropy Change
 
@@ -350,12 +357,13 @@ entropy because they are not perfect crystals at absolute zero under standard co
 
 ### The Third Law of Thermodynamics
 
-The entropy of a perfect crystal at absolute zero ($0 \mathrm{ K}$) is zero. This provides an absolute
-reference point for entropy, unlike enthalpy.
+The entropy of a perfect crystal at absolute zero ($0 \mathrm{ K}$) is zero. This provides an
+absolute reference point for entropy, unlike enthalpy.
 
 ### Worked Example: Standard Entropy Calculation
 
-Calculate $\Delta S^\circ$ for the reaction $\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$.
+Calculate $\Delta S^\circ$ for the reaction
+$\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$.
 
 Given: $S^\circ(\mathrm{CaCO}_3, s) = 92.9$, $S^\circ(\mathrm{CaO}, s) = 39.7$,
 $S^\circ(\mathrm{CO}_2, g) = 213.7 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
@@ -366,7 +374,8 @@ The positive $\Delta S^\circ$ is expected because a solid decomposes to produce 
 
 ### Worked Example: Entropy and Phase Changes
 
-Calculate $\Delta S$ for the vaporisation of $1.00 \mathrm{ mol}$ of water at $100^{\circ}\mathrm{C}$.
+Calculate $\Delta S$ for the vaporisation of $1.00 \mathrm{ mol}$ of water at
+$100^{\circ}\mathrm{C}$.
 
 $$\Delta H_{\mathrm{vap}} = 40.7 \mathrm{ kJ/mol}$$
 
@@ -378,7 +387,8 @@ This positive entropy change confirms that the gas phase has more disorder than 
 
 ### Worked Example: Entropy of Surroundings
 
-For the reaction $\mathrm{NH}_4\mathrm{NO}_3(s) \to \mathrm{N}_2\mathrm{O}(g) + 2\mathrm{H}_2\mathrm{O}(g)$ at
+For the reaction
+$\mathrm{NH}_4\mathrm{NO}_3(s) \to \mathrm{N}_2\mathrm{O}(g) + 2\mathrm{H}_2\mathrm{O}(g)$ at
 $298 \mathrm{ K}$:
 
 $\Delta H^\circ = -36.0 \mathrm{ kJ/mol}$ (exothermic, heat released to surroundings).
@@ -481,7 +491,8 @@ Above $1113 \mathrm{ K}$, $\Delta G \lt 0$ and the decomposition is spontaneous.
 
 For the reaction $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$ at $298 \mathrm{ K}$:
 
-$\Delta H^\circ = -92.2 \mathrm{ kJ/mol}$, $\Delta S^\circ = -198.8 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
+$\Delta H^\circ = -92.2 \mathrm{ kJ/mol}$,
+$\Delta S^\circ = -198.8 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 Calculate $\Delta G^\circ$ and $K$.
 
@@ -494,8 +505,8 @@ $K \gg 1$, confirming the reaction strongly favours products at $298 \mathrm{ K}
 ### Worked Example: Non-Standard Gibbs Free Energy
 
 Calculate $\Delta G$ for the reaction $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$ at
-$298 \mathrm{ K}$ when $P(\mathrm{N}_2) = 10.0 \mathrm{ atm}$, $P(\mathrm{H}_2) = 30.0 \mathrm{ atm}$,
-$P(\mathrm{NH}_3) = 0.500 \mathrm{ atm}$.
+$298 \mathrm{ K}$ when $P(\mathrm{N}_2) = 10.0 \mathrm{ atm}$,
+$P(\mathrm{H}_2) = 30.0 \mathrm{ atm}$, $P(\mathrm{NH}_3) = 0.500 \mathrm{ atm}$.
 
 $$Q = \frac{(0.500)^2}{(10.0)(30.0)^3} = \frac{0.250}{270000} = 9.26 \times 10^{-7}$$
 
@@ -532,7 +543,8 @@ reactants and low pressure of product drive the reaction forward.
    the system does work on the surroundings ($w \lt 0$).
 3. **Forgetting that $\Delta H_f^\circ = 0$ for elements in their standard state.** This is a
    convention.
-4. **Using the wrong sign convention for calorimetry.** $q_{\mathrm{rxn}} = -q_{\mathrm{surroundings}}$.
+4. **Using the wrong sign convention for calorimetry.**
+   $q_{\mathrm{rxn}} = -q_{\mathrm{surroundings}}$.
 5. **Confusing entropy of the system with entropy of the universe.** Spontaneity requires
    $\Delta S_{\mathrm{universe}} \gt 0$, not just $\Delta S_{\mathrm{system}} \gt 0$.
 6. **Incorrect units in the Gibbs equation.** $\Delta H$ is in kJ/mol; $\Delta S$ is in
@@ -546,16 +558,16 @@ reactants and low pressure of product drive the reaction forward.
 ## Practice Questions
 
 1. Calculate $\Delta H^\circ$ for
-   $2\mathrm{Fe}_2\mathrm{O}_3(s) + 3\mathrm{C}(s) \to 4\mathrm{Fe}(s) + 3\mathrm{CO}_2(g)$ using standard
-   enthalpies of formation.
+   $2\mathrm{Fe}_2\mathrm{O}_3(s) + 3\mathrm{C}(s) \to 4\mathrm{Fe}(s) + 3\mathrm{CO}_2(g)$ using
+   standard enthalpies of formation.
 
 2. When $3.50 \mathrm{ g}$ of $\mathrm{NaOH}$ is dissolved in $100.0 \mathrm{ g}$ of water in a
-   calorimeter, the temperature rises from $23.0^\circ\mathrm{C}$ to $36.5^\circ\mathrm{C}$. Calculate
-   $\Delta H$ per mole of $\mathrm{NaOH}$.
+   calorimeter, the temperature rises from $23.0^\circ\mathrm{C}$ to $36.5^\circ\mathrm{C}$.
+   Calculate $\Delta H$ per mole of $\mathrm{NaOH}$.
 
 3. For a reaction with $\Delta H = 125 \mathrm{ kJ/mol}$ and
-   $\Delta S = 200 \mathrm{ J/(mol}\cdot\mathrm{K)}$, find the temperature range where the reaction is
-   spontaneous.
+   $\Delta S = 200 \mathrm{ J/(mol}\cdot\mathrm{K)}$, find the temperature range where the reaction
+   is spontaneous.
 
 4. Given $\Delta G_f^\circ$ values: $\mathrm{NO}_2(g) = 51.3 \mathrm{ kJ/mol}$,
    $\mathrm{N}_2\mathrm{O}_4(g) = 97.8 \mathrm{ kJ/mol}$. Find $\Delta G^\circ$ and $K$ for
@@ -570,46 +582,49 @@ reactants and low pressure of product drive the reaction forward.
    $\Delta G = \Delta H - T\Delta S$.
 
 8. Calculate $\Delta S^\circ$ for the reaction
-   $2\mathrm{H}_2(g) + \mathrm{O}_2(g) \to 2\mathrm{H}_2\mathrm{O}(l)$ given: $S^\circ(\mathrm{H}_2) = 130.7$,
-   $S^\circ(\mathrm{O}_2) = 205.1$,
+   $2\mathrm{H}_2(g) + \mathrm{O}_2(g) \to 2\mathrm{H}_2\mathrm{O}(l)$ given:
+   $S^\circ(\mathrm{H}_2) = 130.7$, $S^\circ(\mathrm{O}_2) = 205.1$,
    $S^\circ(\mathrm{H}_2\mathrm{O}, l) = 69.9 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 9. A bomb calorimeter has $C_{\mathrm{cal}} = 850 \mathrm{ J/K}$. Burning $1.00 \mathrm{ g}$ of
-   naphthalene ($\mathrm{C}_{10}\mathrm{H}_8$) raises the temperature by $2.46 \mathrm{ K}$. Calculate the
-   enthalpy of combustion per mole of naphthalene.
+   naphthalene ($\mathrm{C}_{10}\mathrm{H}_8$) raises the temperature by $2.46 \mathrm{ K}$.
+   Calculate the enthalpy of combustion per mole of naphthalene.
 
-10. For the reaction $\mathrm{NH}_4\mathrm{NO}_3(s) \to \mathrm{N}_2\mathrm{O}(g) + 2\mathrm{H}_2\mathrm{O}(g)$,
-    $\Delta H^\circ = -36.0 \mathrm{ kJ/mol}$ and $\Delta S^\circ = 439 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
-    Is the reaction spontaneous at $298 \mathrm{ K}$? At what temperature does it become
-    nonspontaneous?
+10. For the reaction
+    $\mathrm{NH}_4\mathrm{NO}_3(s) \to \mathrm{N}_2\mathrm{O}(g) + 2\mathrm{H}_2\mathrm{O}(g)$,
+    $\Delta H^\circ = -36.0 \mathrm{ kJ/mol}$ and
+    $\Delta S^\circ = 439 \mathrm{ J/(mol}\cdot\mathrm{K)}$. Is the reaction spontaneous at
+    $298 \mathrm{ K}$? At what temperature does it become nonspontaneous?
 
-11. Explain why the dissolution of $\mathrm{NH}_4\mathrm{NO}_3$ in water is endothermic yet spontaneous
-    at room temperature.
+11. Explain why the dissolution of $\mathrm{NH}_4\mathrm{NO}_3$ in water is endothermic yet
+    spontaneous at room temperature.
 
 12. Calculate $\Delta G$ (not $\Delta G^\circ$) for the reaction
     $\mathrm{N}_2\mathrm{O}_4(g)
     \rightleftharpoons 2\mathrm{NO}_2(g)$ at $298 \mathrm{ K}$ when
     $P(\mathrm{N}_2\mathrm{O}_4) = 0.50
-    \mathrm{ atm}$ and $P(\mathrm{NO}_2) = 0.10 \mathrm{ atm}$. Given:
-    $\Delta G^\circ = 4.72
+    \mathrm{ atm}$ and
+    $P(\mathrm{NO}_2) = 0.10 \mathrm{ atm}$. Given: $\Delta G^\circ = 4.72
     \mathrm{ kJ/mol}$.
 
 13. Predict the sign of $\Delta S^\circ$ for each reaction and explain your reasoning: (a)
     $2\mathrm{Na}(s) + \mathrm{Cl}_2(g) \to 2\mathrm{NaCl}(s)$ (b)
     $\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$
 
-14. Calculate $\Delta H^\circ$ for the reaction $\mathrm{N}_2(g) + 2\mathrm{O}_2(g) \to 2\mathrm{NO}_2(g)$
-    using the following data: $\frac{1}{2}\mathrm{N}_2(g) + \mathrm{O}_2(g) \to \mathrm{NO}_2(g)$,
+14. Calculate $\Delta H^\circ$ for the reaction
+    $\mathrm{N}_2(g) + 2\mathrm{O}_2(g) \to 2\mathrm{NO}_2(g)$ using the following data:
+    $\frac{1}{2}\mathrm{N}_2(g) + \mathrm{O}_2(g) \to \mathrm{NO}_2(g)$,
     $\Delta H^\circ = 33.2
     \mathrm{ kJ/mol}$.
 
-15. A student calculates $\Delta G^\circ = -15 \mathrm{ kJ/mol}$ for a reaction at $298 \mathrm{ K}$ and
-    concludes that the reaction will reach completion. Explain why this conclusion may not be
+15. A student calculates $\Delta G^\circ = -15 \mathrm{ kJ/mol}$ for a reaction at $298 \mathrm{ K}$
+    and concludes that the reaction will reach completion. Explain why this conclusion may not be
     justified.
 
 16. Calculate $\Delta G^\circ$ at $500 \mathrm{ K}$ for a reaction with
-    $\Delta H^\circ = -50 \mathrm{ kJ/mol}$ and $\Delta S^\circ = -80 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
-    Is the reaction spontaneous at this temperature?
+    $\Delta H^\circ = -50 \mathrm{ kJ/mol}$ and
+    $\Delta S^\circ = -80 \mathrm{ J/(mol}\cdot\mathrm{K)}$. Is the reaction spontaneous at this
+    temperature?
 
 17. Using the data below, calculate the standard enthalpy change for the reaction
     $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$.
@@ -618,28 +633,30 @@ reactants and low pressure of product drive the reaction forward.
 18. Explain why a reaction with $\Delta H \gt 0$ and $\Delta S \gt 0$ is nonspontaneous at low
     temperatures but becomes spontaneous at high temperatures.
 
-19. Calculate the boiling point of $\mathrm{Br}_2$ given that $\mathrm{Br}_2(l) \to \mathrm{Br}_2(g)$ has
-    $\Delta H^\circ = 30.9 \mathrm{ kJ/mol}$ and $\Delta S^\circ = 93.2 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
+19. Calculate the boiling point of $\mathrm{Br}_2$ given that
+    $\mathrm{Br}_2(l) \to \mathrm{Br}_2(g)$ has $\Delta H^\circ = 30.9 \mathrm{ kJ/mol}$ and
+    $\Delta S^\circ = 93.2 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
-20. A calorimeter contains $200 \mathrm{ g}$ of water at $25.0^\circ\mathrm{C}$. When $5.00 \mathrm{ g}$
-    of $\mathrm{KOH}$ is dissolved, the temperature rises to $35.0^\circ\mathrm{C}$. Calculate the
-    enthalpy of solution of $\mathrm{KOH}$ in kJ/mol.
+20. A calorimeter contains $200 \mathrm{ g}$ of water at $25.0^\circ\mathrm{C}$. When
+    $5.00 \mathrm{ g}$ of $\mathrm{KOH}$ is dissolved, the temperature rises to
+    $35.0^\circ\mathrm{C}$. Calculate the enthalpy of solution of $\mathrm{KOH}$ in kJ/mol.
 
 21. For the reaction $2\mathrm{NO}(g) + \mathrm{O}_2(g) \to 2\mathrm{NO}_2(g)$, given
     $\Delta H^\circ = -114.1 \mathrm{ kJ/mol}$ and
-    $\Delta S^\circ = -146.5 \mathrm{ J/(mol}\cdot\mathrm{K)}$, calculate the temperature above which
-    the reaction is no longer spontaneous.
+    $\Delta S^\circ = -146.5 \mathrm{ J/(mol}\cdot\mathrm{K)}$, calculate the temperature above
+    which the reaction is no longer spontaneous.
 
 22. Using the following data, calculate $\Delta S^\circ$ for the reaction
-    $4\mathrm{Fe}(s) + 3\mathrm{O}_2(g) \to 2\mathrm{Fe}_2\mathrm{O}_3(s)$: $S^\circ(\mathrm{Fe}, s) = 27.3$,
-    $S^\circ(\mathrm{O}_2, g) = 205.1$,
+    $4\mathrm{Fe}(s) + 3\mathrm{O}_2(g) \to 2\mathrm{Fe}_2\mathrm{O}_3(s)$:
+    $S^\circ(\mathrm{Fe}, s) = 27.3$, $S^\circ(\mathrm{O}_2, g) = 205.1$,
     $S^\circ(\mathrm{Fe}_2\mathrm{O}_3, s) = 87.4 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 23. Calculate the normal boiling point of chloroform ($\mathrm{CHCl}_3$) given that
     $\mathrm{CHCl}_3(l) \to \mathrm{CHCl}_3(g)$ has $\Delta H^\circ = 31.4 \mathrm{ kJ/mol}$ and
     $\Delta S^\circ = 94.2 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
-24. For the reaction $\mathrm{C}(s) + \mathrm{H}_2\mathrm{O}(g) \to \mathrm{CO}(g) + \mathrm{H}_2(g)$,
+24. For the reaction
+    $\mathrm{C}(s) + \mathrm{H}_2\mathrm{O}(g) \to \mathrm{CO}(g) + \mathrm{H}_2(g)$,
     $\Delta H^\circ = 131.3 \mathrm{ kJ/mol}$ and
     $\Delta S^\circ = 133.7 \mathrm{ J/(mol}\cdot\mathrm{K)}$. Calculate the minimum temperature at
     which this reaction becomes spontaneous.
@@ -647,16 +664,17 @@ reactants and low pressure of product drive the reaction forward.
 25. Explain why the following statement is incorrect: "An exothermic reaction is always
     spontaneous."
 
-26. A bomb calorimeter with $C_{\mathrm{cal}} = 950 \mathrm{ J/K}$ is used to determine the enthalpy of
-    combustion of benzoic acid ($\mathrm{C}_7\mathrm{H}_6\mathrm{O}_2$). Burning $1.00 \mathrm{ g}$ raises
-    the temperature by $3.24 \mathrm{ K}$. Calculate the enthalpy of combustion per mole.
+26. A bomb calorimeter with $C_{\mathrm{cal}} = 950 \mathrm{ J/K}$ is used to determine the enthalpy
+    of combustion of benzoic acid ($\mathrm{C}_7\mathrm{H}_6\mathrm{O}_2$). Burning
+    $1.00 \mathrm{ g}$ raises the temperature by $3.24 \mathrm{ K}$. Calculate the enthalpy of
+    combustion per mole.
 
 27. Calculate $\Delta G^\circ$ and $K$ at $298 \mathrm{ K}$ for the reaction
     $\mathrm{H}_2(g) + \mathrm{I}_2(g) \to 2\mathrm{HI}(g)$ given:
     $\Delta G_f^\circ(\mathrm{HI}, g) = 1.7 \mathrm{ kJ/mol}$.
 
-28. For a certain reaction, $\Delta G^\circ = -5.4 \mathrm{ kJ/mol}$ at $300 \mathrm{ K}$. Calculate $K$
-    at this temperature and determine whether products or reactants are favoured.
+28. For a certain reaction, $\Delta G^\circ = -5.4 \mathrm{ kJ/mol}$ at $300 \mathrm{ K}$. Calculate
+    $K$ at this temperature and determine whether products or reactants are favoured.
 
 29. Calculate the work done when $2.00 \mathrm{ mol}$ of a gas expands from $5.0 \mathrm{ L}$ to
     $15.0 \mathrm{ L}$ against a constant external pressure of $1.00 \mathrm{ atm}$.
@@ -665,15 +683,183 @@ reactants and low pressure of product drive the reaction forward.
     $0^{\circ}\mathrm{C}$ even though the process is endothermic.
 
 31. Calculate the work done by the system and $\Delta U$ when $3.00 \mathrm{ L}$ of gas at
-    $2.00 \mathrm{ atm}$ expands against a constant external pressure of $0.50 \mathrm{ atm}$ to a final
-    volume of $8.00 \mathrm{ L}$.
+    $2.00 \mathrm{ atm}$ expands against a constant external pressure of $0.50 \mathrm{ atm}$ to a
+    final volume of $8.00 \mathrm{ L}$.
 
 32. Given $\Delta H_f^\circ(\mathrm{NH}_3, g) = -46.1 \mathrm{ kJ/mol}$,
     $\Delta H_f^\circ(\mathrm{NO}, g) = 90.3 \mathrm{ kJ/mol}$, and
-    $\Delta H_f^\circ(\mathrm{H}_2\mathrm{O}, g) = -241.8 \mathrm{ kJ/mol}$, calculate $\Delta H^\circ$
-    for the reaction $4\mathrm{NH}_3(g) + 5\mathrm{O}_2(g) \to 4\mathrm{NO}(g) + 6\mathrm{H}_2\mathrm{O}(g)$.
+    $\Delta H_f^\circ(\mathrm{H}_2\mathrm{O}, g) = -241.8 \mathrm{ kJ/mol}$, calculate
+    $\Delta H^\circ$ for the reaction
+    $4\mathrm{NH}_3(g) + 5\mathrm{O}_2(g) \to 4\mathrm{NO}(g) + 6\mathrm{H}_2\mathrm{O}(g)$.
 
 33. The standard entropy values are: $S^\circ(\mathrm{C}, s) = 5.7$,
-    $S^\circ(\mathrm{CO}_2, g) = 213.7$, $S^\circ(\mathrm{CO}, g) = 197.7 \mathrm{ J/(mol}\cdot\mathrm{K)}$.
-    Calculate $\Delta S^\circ$ for the reaction $\mathrm{C}(s) + \mathrm{CO}_2(g) \to 2\mathrm{CO}(g)$ and
-    comment on the sign.
+    $S^\circ(\mathrm{CO}_2, g) = 213.7$,
+    $S^\circ(\mathrm{CO}, g) = 197.7 \mathrm{ J/(mol}\cdot\mathrm{K)}$. Calculate $\Delta S^\circ$
+    for the reaction $\mathrm{C}(s) + \mathrm{CO}_2(g) \to 2\mathrm{CO}(g)$ and comment on the sign.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Hess's law and enthalpy of formation</summary>
+
+Given the following data, calculate the standard enthalpy of formation of
+$\mathrm{CH}_3\mathrm{OH}(l)$:
+
+- $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$, $\Delta H^\circ = -393.5 \mathrm{ kJ/mol}$
+- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$,
+  $\Delta H^\circ = -285.8 \mathrm{ kJ/mol}$
+- $\mathrm{CH}_3\mathrm{OH}(l) + \frac{3}{2}\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l)$,
+  $\Delta H^\circ = -726.4 \mathrm{ kJ/mol}$
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Target:
+$\mathrm{C}(s) + 2\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{CH}_3\mathrm{OH}(l)$
+
+Manipulate the given equations:
+
+(1) $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$,
+$\Delta H^\circ = -393.5 \mathrm{ kJ/mol}$ -- keep
+
+(2) $2\mathrm{H}_2(g) + \mathrm{O}_2(g) \to 2\mathrm{H}_2\mathrm{O}(l)$,
+$\Delta H^\circ = 2(-285.8) = -571.6 \mathrm{ kJ/mol}$ -- multiply by 2
+
+(3)
+$\mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) \to \mathrm{CH}_3\mathrm{OH}(l) + \frac{3}{2}\mathrm{O}_2(g)$,
+$\Delta H^\circ = +726.4 \mathrm{ kJ/mol}$ -- reverse
+
+Add (1) + (2) + (3):
+
+$\mathrm{C}(s) + 2\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{CH}_3\mathrm{OH}(l)$
+
+$\Delta H_f^\circ = -393.5 + (-571.6) + 726.4 = -238.7 \mathrm{ kJ/mol}$.
+
+</details>
+
+<details>
+<summary>Question 2: Gibbs free energy and spontaneity</summary>
+
+For the reaction
+$\mathrm{NH}_4\mathrm{NO}_3(s) \to \mathrm{N}_2\mathrm{O}(g) + 2\mathrm{H}_2\mathrm{O}(g)$,
+$\Delta H^\circ = -36.0 \mathrm{ kJ/mol}$ and $\Delta S^\circ = 347 \mathrm{ J/(mol\cdot K)}$.
+Calculate $\Delta G^\circ$ at $298 \mathrm{ K}$ and determine the temperature range over which the
+reaction is spontaneous.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -36,000 - 298 \times 347 = -36,000 - 103,406 = -139,406 \mathrm{ J/mol} = -139.4 \mathrm{ kJ/mol}$.
+
+Since $\Delta G^\circ \lt 0$ at $298 \mathrm{ K}$, the reaction is spontaneous at this temperature.
+
+The reaction is spontaneous when $\Delta G \lt 0$:
+
+$\Delta H - T\Delta S \lt 0$
+
+Since $\Delta H = -36.0 \mathrm{ kJ/mol}$ (negative) and $\Delta S = +347 \mathrm{ J/(mol\cdot K)}$
+(positive), both terms favour spontaneity. The reaction is spontaneous at all temperatures. There is
+no upper temperature limit because the $-T\Delta S$ term always contributes negatively to $\Delta G$
+when $\Delta S$ is positive.
+
+</details>
+
+<details>
+<summary>Question 3: Calorimetry and specific heat</summary>
+
+A $50.0 \mathrm{ g}$ sample of an unknown metal is heated to $100.0^\circ\mathrm{C}$ and then placed
+in $100.0 \mathrm{ g}$ of water at $25.0^\circ\mathrm{C}$ in a coffee-cup calorimeter. The final
+temperature of the mixture is $28.8^\circ\mathrm{C}$. Calculate the specific heat capacity of the
+metal. Assume no heat loss to the calorimeter.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Heat gained by water = heat lost by metal.
+
+$q_{\text{water}} = m_{\text{water}} \times c_{\text{water}} \times \Delta T_{\text{water}} = 100.0 \times 4.184 \times (28.8 - 25.0) = 100.0 \times 4.184 \times 3.8 = 1589.9 \mathrm{ J}$.
+
+$q_{\text{metal}} = m_{\text{metal}} \times c_{\text{metal}} \times \Delta T_{\text{metal}} = 50.0 \times c_{\text{metal}} \times (100.0 - 28.8) = 50.0 \times c_{\text{metal}} \times 71.2$.
+
+Setting equal: $1589.9 = 50.0 \times c_{\text{metal}} \times 71.2$.
+
+$c_{\text{metal}} = 1589.9 / 3560 = 0.447 \mathrm{ J/(g\cdot^\circ\mathrm{C})}$.
+
+This value is close to that of iron ($0.449 \mathrm{ J/(g\cdot^\circ\mathrm{C})}$), suggesting the
+unknown metal may be iron.
+
+</details>
+
+<details>
+<summary>Question 4: Entropy change of surroundings</summary>
+
+For the vaporisation of water at $100^\circ\mathrm{C}$ and $1 \mathrm{ atm}$:
+$\mathrm{H}_2\mathrm{O}(l) \to \mathrm{H}_2\mathrm{O}(g)$,
+$\Delta H_{\text{vap}} = 40.7 \mathrm{ kJ/mol}$. Calculate $\Delta S_{\text{system}}$,
+$\Delta S_{\text{surroundings}}$, and $\Delta S_{\text{universe}}$. Is the process spontaneous at
+this temperature?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\Delta S_{\text{system}} = \Delta H_{\text{vap}} / T = 40,700 / 373 = 109.1 \mathrm{ J/(mol\cdot K)}$.
+
+$\Delta S_{\text{surroundings}} = -\Delta H_{\text{vap}} / T = -40,700 / 373 = -109.1 \mathrm{ J/(mol\cdot K)}$.
+
+$\Delta S_{\text{universe}} = \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} = 109.1 + (-109.1) = 0 \mathrm{ J/(mol\cdot K)}$.
+
+At $100^\circ\mathrm{C}$ and $1 \mathrm{ atm}$, liquid and gaseous water are in equilibrium, so
+$\Delta G = 0$ and $\Delta S_{\text{universe}} = 0$. The process is at equilibrium, not spontaneous
+in either direction. Above $100^\circ\mathrm{C}$, vaporisation becomes spontaneous
+($\Delta S_{\text{universe}} \gt 0$).
+
+</details>
+
+<details>
+<summary>Question 5: Bond enthalpy calculation</summary>
+
+Using the following average bond enthalpies, estimate $\Delta H$ for the reaction
+$\mathrm{CH}_4(g) + 2\mathrm{Cl}_2(g) \to \mathrm{CH}_2\mathrm{Cl}_2(g) + 2\mathrm{HCl}(g)$:
+
+C-H: $413 \mathrm{ kJ/mol}$, Cl-Cl: $242 \mathrm{ kJ/mol}$, C-Cl: $339 \mathrm{ kJ/mol}$, H-Cl:
+$431 \mathrm{ kJ/mol}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Bonds broken (reactants):
+
+- 4 C-H bonds in $\mathrm{CH}_4$: $4 \times 413 = 1652 \mathrm{ kJ/mol}$
+- 2 Cl-Cl bonds: $2 \times 242 = 484 \mathrm{ kJ/mol}$
+
+Wait -- not all C-H bonds break. In $\mathrm{CH}_2\mathrm{Cl}_2$, two C-H bonds remain. So only 2
+C-H bonds break.
+
+Corrected bonds broken:
+
+- 2 C-H bonds: $2 \times 413 = 826 \mathrm{ kJ/mol}$
+- 2 Cl-Cl bonds: $2 \times 242 = 484 \mathrm{ kJ/mol}$
+- Total broken: $826 + 484 = 1310 \mathrm{ kJ/mol}$
+
+Bonds formed (products):
+
+- 2 C-Cl bonds: $2 \times 339 = 678 \mathrm{ kJ/mol}$
+- 2 H-Cl bonds: $2 \times 431 = 862 \mathrm{ kJ/mol}$
+- Total formed: $678 + 862 = 1540 \mathrm{ kJ/mol}$
+
+$\Delta H = \text{bonds broken} - \text{bonds formed} = 1310 - 1540 = -230 \mathrm{ kJ/mol}$.
+
+The reaction is exothermic because stronger bonds (H-Cl, C-Cl) are formed than are broken (C-H,
+Cl-Cl).
+
+</details>

@@ -739,3 +739,85 @@ is for slower, longer-lasting, widespread responses.
 30. **(Higher Tier)** A person has been drinking alcohol. Explain the sequence of events that occurs
     in their liver to detoxify the alcohol, and explain why excessive alcohol consumption can lead
     to liver disease.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Enzyme experiment analysis</summary>
+
+A student tests the effect of temperature on the rate of catalase activity using hydrogen peroxide and potato tissue. The results show that the rate increases from $10^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$ and then decreases rapidly. Explain the shape of the graph.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+From $10^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$: increasing temperature increases the kinetic energy of enzyme and substrate molecules, leading to more frequent successful collisions and a higher rate of reaction.
+
+Above $40^\circ\mathrm{C}$: the enzyme denatures because the high temperature breaks the bonds maintaining its tertiary structure. The active site changes shape and can no longer bind the substrate, so the rate drops rapidly. The optimum temperature is approximately $40^\circ\mathrm{C}$.
+
+</details>
+
+<details>
+<summary>Question 2: Digestive system</summary>
+
+Explain why the small intestine is well adapted for absorbing digested food molecules into the blood.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The small intestine has a large surface area due to: (1) its length (several metres), (2) villi (finger-like projections), and (3) microvilli on the villi surface cells. It has a single layer of epithelial cells, providing a short diffusion distance. It has a dense network of blood capillaries to carry away absorbed molecules and maintain a steep concentration gradient. It also has lacteals for absorbing fatty acids and glycerol into the lymphatic system.
+
+</details>
+
+<details>
+<summary>Question 3: Blood components</summary>
+
+Describe the functions of red blood cells, white blood cells, and platelets in the blood.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Red blood cells: transport oxygen (bound to haemoglobin) from the lungs to body tissues. Their biconcave disc shape increases surface area for gas exchange. They have no nucleus, maximising space for haemoglobin.
+
+White blood cells (phagocytes): defend against pathogens by phagocytosis (engulfing and digesting pathogens). Lymphocytes produce antibodies for specific immune defence.
+
+Platelets: cell fragments involved in blood clotting. They accumulate at wound sites and trigger the cascade of reactions that produces fibrin, forming a mesh that traps red blood cells and seals the wound.
+
+</details>
+
+<details>
+<summary>Question 4: Coronary heart disease</summary>
+
+Explain how a blockage in a coronary artery can lead to a heart attack, and describe two lifestyle factors that increase the risk.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+A blockage (caused by a thrombus/blood clot or atherosclerosis -- fatty deposits) in a coronary artery reduces or stops blood flow to part of the heart muscle. The cardiac muscle is deprived of oxygen and glucose (ischaemia), so it cannot respire aerobically. The muscle cells may be damaged or die (myocardial infarction), causing a heart attack.
+
+Risk factors: high-fat diet (leading to cholesterol deposits in arteries), smoking (damages artery walls and increases blood pressure), lack of exercise, obesity, high blood pressure, stress.
+
+</details>
+
+<details>
+<summary>Question 5: Nervous system reflex arc</summary>
+
+Describe the pathway of a reflex arc when a person touches a hot object. Explain why reflex actions are important for survival.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Pathway: stimulus (heat) $\to$ receptor (temperature receptor in skin) $\to$ sensory neuron $\to$ relay neuron (in spinal cord) $\to$ motor neuron $\to$ effector (muscle in arm) $\to$ response (hand is pulled away).
+
+Reflexes are important because they are fast (the pathway is short, bypassing the brain) and automatic, providing immediate protection from harmful stimuli before the brain has time to process the information. This prevents tissue damage.
+
+</details>

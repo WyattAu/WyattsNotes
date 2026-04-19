@@ -727,3 +727,110 @@ $$
 15. Find the area between the curves $y = \sin x$ and $y = \cos x$ for $0 \le x \le \pi/2$.
 
 16. Evaluate $\displaystyle\int_0^1 x^2 e^{-x}\, dx$ using the tabular method.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Integration by parts (tabular method)</summary>
+
+Evaluate $\displaystyle\int x^3 e^x \, dx$ using the tabular method.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Differentiate $x^3$ (column 1) and integrate $e^x$ (column 2) alternately with signs $+,-,+,-$:
+
+| Signs | $x^3$ | $e^x$ |
+|-------|-------|-------|
+| + | $x^3$ | $e^x$ |
+| - | $3x^2$ | $e^x$ |
+| + | $6x$ | $e^x$ |
+| - | $6$ | $e^x$ |
+| + | $0$ | $e^x$ |
+
+Result: $x^3 e^x - 3x^2 e^x + 6xe^x - 6e^x + C = e^x(x^3 - 3x^2 + 6x - 6) + C$.
+
+</details>
+
+<details>
+<summary>Question 2: Trigonometric substitution</summary>
+
+Evaluate $\displaystyle\int \frac{x^2}{\sqrt{9 - x^2}} \, dx$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Let $x = 3\sin\theta$, $dx = 3\cos\theta \, d\theta$, $\sqrt{9 - x^2} = 3\cos\theta$.
+
+$= \int \frac{9\sin^2\theta}{3\cos\theta} \cdot 3\cos\theta \, d\theta = 9\int \sin^2\theta \, d\theta = 9\int \frac{1 - \cos 2\theta}{2} \, d\theta$
+
+$= \frac{9}{2}\left(\theta - \frac{\sin 2\theta}{2}\right) + C = \frac{9}{2}\theta - \frac{9}{4}\sin 2\theta + C$.
+
+Since $\theta = \arcsin(x/3)$ and $\sin 2\theta = 2\sin\theta\cos\theta = \frac{2x\sqrt{9-x^2}}{9}$:
+
+$= \frac{9}{2}\arcsin\!\left(\frac{x}{3}\right) - \frac{x\sqrt{9-x^2}}{2} + C$.
+
+</details>
+
+<details>
+<summary>Question 3: Area between curves</summary>
+
+Find the area enclosed by the curves $y = x^2$ and $y = 2x + 3$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Intersection: $x^2 = 2x + 3$, $x^2 - 2x - 3 = 0$, $(x-3)(x+1) = 0$. $x = -1$ and $x = 3$.
+
+On $[-1, 3]$, $2x + 3 \ge x^2$.
+
+Area $= \int_{-1}^{3} [(2x + 3) - x^2] \, dx = \left[x^2 + 3x - \frac{x^3}{3}\right]_{-1}^{3}$
+
+$= (9 + 9 - 9) - (1 - 3 + 1/3) = 9 - (-5/3) = 9 + 5/3 = 32/3$ square units.
+
+</details>
+
+<details>
+<summary>Question 4: Improper integral</summary>
+
+Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^p} \, dx$ converges or diverges, and find its value when it converges.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\displaystyle\int_1^{\infty} \frac{1}{x^p} \, dx = \lim_{b \to \infty} \int_1^b x^{-p} \, dx$.
+
+For $p \ne 1$: $= \lim_{b \to \infty} \left[\frac{x^{1-p}}{1-p}\right]_1^b = \lim_{b \to \infty} \frac{b^{1-p} - 1}{1-p}$.
+
+- If $p \gt 1$: $1 - p \lt 0$, so $b^{1-p} \to 0$. Integral converges to $\frac{1}{p - 1}$.
+- If $p \lt 1$: $1 - p \gt 0$, so $b^{1-p} \to \infty$. Integral diverges.
+
+For $p = 1$: $\int_1^b \frac{1}{x} \, dx = \ln b \to \infty$. Diverges.
+
+The integral converges if and only if $p \gt 1$, with value $\frac{1}{p-1}$.
+
+</details>
+
+<details>
+<summary>Question 5: Volume of revolution</summary>
+
+Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$, $y = 0$, and $x = 4$ about the x-axis.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Using the disk method:
+
+$V = \pi \int_0^4 (\sqrt{x})^2 \, dx = \pi \int_0^4 x \, dx = \pi \left[\frac{x^2}{2}\right]_0^4 = \pi(8) = 8\pi$ cubic units.
+
+</details>

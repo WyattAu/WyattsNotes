@@ -747,3 +747,114 @@ the tension equals the total weight; at the bottom, it is zero.
 20. Two blocks ($m_1 = 3 \mathrm{ kg}$ on a table, $m_2 = 2 \mathrm{ kg}$ hanging) are connected by a
     string over a pulley. The table is frictionless. Calculate (a) the acceleration, (b) the
     tension, and (c) the speed after $m_2$ has fallen $0.5 \mathrm{ m}$ from rest.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Inclined plane with friction</summary>
+
+A block of mass $5 \mathrm{ kg}$ is placed on a $30^\circ$ incline. The coefficient of static friction is $0.4$ and the coefficient of kinetic friction is $0.3$. Determine (a) whether the block slides down, and (b) if it does, the acceleration down the incline.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Component of gravity along the incline: $mg\sin\theta = 5 \times 9.8 \times \sin(30^\circ) = 24.5 \mathrm{ N}$.
+
+Maximum static friction: $f_s = \mu_s N = 0.4 \times 5 \times 9.8 \times \cos(30^\circ) = 0.4 \times 42.4 = 17.0 \mathrm{ N}$.
+
+Since $24.5 \mathrm{ N} > 17.0 \mathrm{ N}$, the block slides.
+
+Kinetic friction: $f_k = \mu_k N = 0.3 \times 42.4 = 12.7 \mathrm{ N}$.
+
+Net force along incline: $F = 24.5 - 12.7 = 11.8 \mathrm{ N}$.
+
+Acceleration: $a = F/m = 11.8/5 = 2.36 \mathrm{ m/s^2}$.
+
+</details>
+
+<details>
+<summary>Question 2: Elevator apparent weight</summary>
+
+A person of mass $70 \mathrm{ kg}$ stands on a scale in an elevator. What does the scale read (a) when the elevator accelerates upward at $2 \mathrm{ m/s^2}$, (b) when it moves at constant velocity, and (c) when it decelerates at $3 \mathrm{ m/s^2}$ while moving upward?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The scale reads the normal force $N$.
+
+(a) Accelerating up: $N - mg = ma$, $N = m(g + a) = 70(9.8 + 2) = 826 \mathrm{ N}$. Scale reads $826 \mathrm{ N}$ (about $119\%$ of actual weight).
+
+(b) Constant velocity: $a = 0$, $N = mg = 70 \times 9.8 = 686 \mathrm{ N}$.
+
+(c) Decelerating upward (acceleration downward): $N = m(g - a) = 70(9.8 - 3) = 476 \mathrm{ N}$.
+
+</details>
+
+<details>
+<summary>Question 3: Connected masses with friction</summary>
+
+Two blocks, $m_1 = 4 \mathrm{ kg}$ and $m_2 = 6 \mathrm{ kg}$, are connected by a string over a frictionless pulley. $m_1$ rests on a horizontal table with $\mu_k = 0.2$, and $m_2$ hangs vertically. Find the acceleration and the tension in the string.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+For $m_2$: $m_2 g - T = m_2 a$.
+For $m_1$: $T - \mu_k m_1 g = m_1 a$.
+
+Adding: $m_2 g - \mu_k m_1 g = (m_1 + m_2)a$.
+
+$a = \frac{m_2 g - \mu_k m_1 g}{m_1 + m_2} = \frac{6 \times 9.8 - 0.2 \times 4 \times 9.8}{10} = \frac{58.8 - 7.84}{10} = \frac{50.96}{10} = 5.10 \mathrm{ m/s^2}$.
+
+$T = m_1 a + \mu_k m_1 g = 4(5.10) + 0.2(4)(9.8) = 20.4 + 7.84 = 28.2 \mathrm{ N}$.
+
+</details>
+
+<details>
+<summary>Question 4: Circular motion on a banked curve</summary>
+
+A curve of radius $50 \mathrm{ m}$ is banked at $15^\circ$. At what speed can a car negotiate this curve without relying on friction? If the car travels at $20 \mathrm{ m/s}$, what minimum coefficient of friction is required?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Without friction: $v^2 = rg\tan\theta = 50 \times 9.8 \times \tan(15^\circ) = 50 \times 9.8 \times 0.268 = 131.3$. $v = 11.5 \mathrm{ m/s}$.
+
+At $20 \mathrm{ m/s}$, friction must provide additional centripetal force. The horizontal component of normal force provides: $N\sin\theta = mv^2/r - f\cos\theta$. The vertical: $N\cos\theta + f\sin\theta = mg$.
+
+Solving simultaneously: $v^2 = \frac{rg(\tan\theta + \mu)}{1 - \mu\tan\theta}$.
+
+$400 = \frac{50 \times 9.8(0.268 + \mu)}{1 - 0.268\mu}$.
+
+$400(1 - 0.268\mu) = 490(0.268 + \mu) = 131.3 + 490\mu$.
+
+$400 - 107.2\mu = 131.3 + 490\mu$.
+
+$268.7 = 597.2\mu$, so $\mu = 0.45$.
+
+</details>
+
+<details>
+<summary>Question 5: Newton's third law pairs</summary>
+
+A book sits at rest on a table. Identify all action-reaction pairs involving the book. Explain why the normal force on the book is not the reaction force to gravity.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Action-reaction pairs (Newton's third law):
+1. Earth pulls book down (gravity) AND book pulls Earth up with equal magnitude.
+2. Table pushes book up (normal force) AND book pushes table down with equal magnitude.
+
+The normal force and gravity are NOT an action-reaction pair because they act on the SAME object (the book). Newton's third law pairs always act on DIFFERENT objects. The normal force on the book is a reaction to the book pressing on the table (pair 2), not to gravity (pair 1). The book is in equilibrium because these two forces (gravity and normal) balance, but they are not a third-law pair.
+
+</details>

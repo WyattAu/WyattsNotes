@@ -740,3 +740,99 @@ $2\mathrm{Cr} + (-14) = -2$, so $2\mathrm{Cr} = +12$, giving Cr = $+6$.
 
 20. Explain, using Le Chatelier's principle, why increasing the pressure increases the yield of
     ammonia in the Haber process.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Balancing equations</summary>
+
+Balance the following chemical equations:
+(a) $\mathrm{Fe} + \mathrm{O}_2 \to \mathrm{Fe}_2\mathrm{O}_3$
+(b) $\mathrm{Al} + \mathrm{HCl} \to \mathrm{AlCl}_3 + \mathrm{H}_2$
+(c) $\mathrm{C}_3\mathrm{H}_8 + \mathrm{O}_2 \to \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $4\mathrm{Fe} + 3\mathrm{O}_2 \to 2\mathrm{Fe}_2\mathrm{O}_3$
+(b) $2\mathrm{Al} + 6\mathrm{HCl} \to 2\mathrm{AlCl}_3 + 3\mathrm{H}_2$
+(c) $\mathrm{C}_3\mathrm{H}_8 + 5\mathrm{O}_2 \to 3\mathrm{CO}_2 + 4\mathrm{H}_2\mathrm{O}$
+
+</details>
+
+<details>
+<summary>Question 2: Types of chemical reactions</summary>
+
+Classify each of the following reactions as combination, decomposition, displacement, or combustion:
+(a) $2\mathrm{Mg} + \mathrm{O}_2 \to 2\mathrm{MgO}$
+(b) $2\mathrm{H}_2\mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O} + \mathrm{O}_2$
+(c) $\mathrm{Zn} + \mathrm{CuSO}_4 \to \mathrm{ZnSO}_4 + \mathrm{Cu}$
+(d) $\mathrm{CH}_4 + 2\mathrm{O}_2 \to \mathrm{CO}_2 + 2\mathrm{H}_2\mathrm{O}$
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Combination (two elements combine to form one compound).
+(b) Decomposition (one compound breaks down into simpler substances).
+(c) Displacement (zinc displaces copper from copper sulfate).
+(d) Combustion (hydrocarbon burns in oxygen to produce carbon dioxide and water).
+
+</details>
+
+<details>
+<summary>Question 3: Reactivity series predictions</summary>
+
+A student places pieces of zinc, copper, and magnesium into separate test tubes containing iron(II) sulfate solution. Predict what will happen in each test tube and explain your reasoning.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Using the reactivity series: potassium, sodium, calcium, magnesium, aluminium, (carbon), zinc, iron, (hydrogen), copper.
+
+Zinc: zinc is above iron in the reactivity series, so it will displace iron: $\mathrm{Zn} + \mathrm{FeSO}_4 \to \mathrm{ZnSO}_4 + \mathrm{Fe}$. The blue solution fades as iron is displaced.
+
+Copper: copper is below iron, so no reaction occurs. Copper cannot displace iron.
+
+Magnesium: magnesium is above iron, so it displaces iron: $\mathrm{Mg} + \mathrm{FeSO}_4 \to \mathrm{MgSO}_4 + \mathrm{Fe}$. This reaction is more vigorous than zinc's because magnesium is more reactive.
+
+</details>
+
+<details>
+<summary>Question 4: Exothermic and endothermic reactions</summary>
+
+Explain the difference between exothermic and endothermic reactions. Give one example of each and describe how the temperature changes.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Exothermic: energy is released to the surroundings. Temperature increases. Example: combustion of methane -- the products ($\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$) have less chemical energy than the reactants.
+
+Endothermic: energy is absorbed from the surroundings. Temperature decreases. Example: thermal decomposition of calcium carbonate -- energy is needed to break the bonds in $\mathrm{CaCO}_3$.
+
+</details>
+
+<details>
+<summary>Question 5: Le Chatelier's principle</summary>
+
+The Haber process: $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$, $\Delta H = -92 \mathrm{ kJ/mol}$. Explain the effect on the yield of ammonia of (a) increasing pressure, (b) increasing temperature, and (c) removing ammonia as it is formed.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) Increasing pressure: equilibrium shifts to the side with fewer gas molecules (4 mol reactants $\to$ 2 mol products). Yield of ammonia increases.
+
+(b) Increasing temperature: the forward reaction is exothermic, so increasing temperature shifts equilibrium in the endothermic (backward) direction. Yield of ammonia decreases, but the rate of reaction is faster.
+
+(c) Removing ammonia: reducing the concentration of a product shifts equilibrium to the right (forward direction) to replace the removed ammonia. Yield increases.
+
+</details>

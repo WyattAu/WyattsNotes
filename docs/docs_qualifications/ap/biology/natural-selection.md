@@ -728,3 +728,147 @@ The Kaibab squirrel and Abert's squirrel are found on opposite sides of the Gran
 descended from a common ancestor but became geographically isolated when the canyon formed. Over
 millions of years, the two populations accumulated genetic differences. They now differ in coat
 colour and skull morphology, and are considered separate subspecies (or possibly species).
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Hardy-Weinberg with multiple alleles</summary>
+
+In a population, the ABO blood group alleles have the following frequencies: $p(I^A) = 0.3$,
+$q(I^B) = 0.1$, $r(i) = 0.6$. Calculate the expected frequency of each blood type (A, B, AB, O)
+assuming Hardy-Weinberg equilibrium. What percentage of the population can donate blood to a person
+with type O blood?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Expected genotype frequencies:
+
+- Type A: $p^2 + 2pr = (0.3)^2 + 2(0.3)(0.6) = 0.09 + 0.36 = 0.45$ (45%)
+- Type B: $q^2 + 2qr = (0.1)^2 + 2(0.1)(0.6) = 0.01 + 0.12 = 0.13$ (13%)
+- Type AB: $2pq = 2(0.3)(0.1) = 0.06$ (6%)
+- Type O: $r^2 = (0.6)^2 = 0.36$ (36%)
+
+Check: $0.45 + 0.13 + 0.06 + 0.36 = 1.00$.
+
+A person with type O blood can only receive type O blood (no A or B antigens). Therefore, only
+individuals with blood type O (genotype $ii$) can donate to them: 36% of the population.
+
+</details>
+
+<details>
+<summary>Question 2: Directional selection and allele frequency change</summary>
+
+In a population of beetles, body colour is determined by a single gene with two alleles: B (brown,
+dominant) and b (green, recessive). The initial allele frequencies are $p = 0.5$, $q = 0.5$. Brown
+beetles have a fitness of 0.7 on light-coloured tree bark (they are more visible to predators),
+while green beetles have a fitness of 1.0. Calculate the allele frequencies after one generation of
+selection.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Fitness values: $w_{BB} = 0.7$, $w_{Bb} = 0.7$, $w_{bb} = 1.0$.
+
+Initial genotype frequencies: $p^2 = 0.25$, $2pq = 0.50$, $q^2 = 0.25$.
+
+Mean fitness: $\bar{w} = (0.25)(0.7) + (0.50)(0.7) + (0.25)(1.0) = 0.175 + 0.35 + 0.25 = 0.775$.
+
+New frequency of B:
+$$p' = \frac{p^2 \cdot w_{BB} + pq \cdot w_{Bb}}{\bar{w}} = \frac{0.25(0.7) + 0.25(0.7)}{0.775} = \frac{0.175 + 0.175}{0.775} = \frac{0.35}{0.775} \approx 0.452$$
+
+New frequency of b: $$q' = 1 - p' = 1 - 0.452 = 0.548$$
+
+After one generation, the recessive allele $b$ (green, favoured) has increased from 0.5 to 0.548,
+and the dominant allele $B$ (brown, selected against) has decreased from 0.5 to 0.452. This
+demonstrates directional selection against the brown phenotype.
+
+</details>
+
+<details>
+<summary>Question 3: Molecular clock and divergence time</summary>
+
+Two species of primates have a cytochrome c gene that differs by 8 nucleotide substitutions in a
+300-base-pair region. The known mutation rate for this gene is 1 substitution per 100 base pairs per
+million years. Estimate the time since these two species diverged from their common ancestor.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+First, calculate the substitution rate per base pair per million years:
+$$\text{Rate} = \frac{1 \text{ substitution}}{100 \text{ base pairs} \times 1 \text{ million years}} = 0.01 \text{ substitutions/bp/Myr}$$
+
+Total substitutions observed: 8 in 300 base pairs, so the substitution frequency per base pair is:
+$$\frac{8}{300} = 0.0267 \text{ substitutions/bp}$$
+
+Time since divergence (accounting for both lineages):
+$$\text{Time} = \frac{0.0267}{2 \times 0.01} = \frac{0.0267}{0.02} = 1.33 \text{ million years}$$
+
+The factor of 2 accounts for the fact that substitutions have accumulated along both lineages since
+divergence. The two species diverged approximately 1.33 million years ago.
+
+</details>
+
+<details>
+<summary>Question 4: Founder effect and genetic drift</summary>
+
+A mainland population of birds has allele frequencies $p(A) = 0.8$, $q(a) = 0.2$ for a gene
+controlling beak shape. Five birds colonise a new island. By chance, the founders have the
+genotypes: $AA$, $Aa$, $Aa$, $aa$, $Aa$. Calculate the allele frequencies in the founder population.
+Has genetic drift increased or decreased the frequency of allele $a$?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Count alleles in the founder population:
+
+$AA$: 2 copies of A $Aa$: 1 copy of A, 1 copy of a (three individuals: 3A + 3a) $aa$: 2 copies of a
+
+Total alleles: $5 \text{ birds} \times 2 = 10$ alleles.
+
+Number of A alleles: $2 + 3 = 5$. Number of a alleles: $3 + 2 = 5$.
+
+New allele frequencies: $p = 5/10 = 0.5$, $q = 5/10 = 0.5$.
+
+Genetic drift has dramatically increased the frequency of allele $a$ from $0.2$ on the mainland to
+$0.5$ on the island. This is an example of the founder effect: the small founding population does
+not represent the genetic diversity of the source population, and allele frequencies can shift
+substantially by chance alone.
+
+</details>
+
+<details>
+<summary>Question 5: Reproductive isolation classification</summary>
+
+Two species of frogs live in the same pond. Species A breeds in March, and species B breeds in June.
+When researchers artificially induce breeding at the same time and perform cross-fertilisation, the
+hybrid tadpoles develop normally but the adult hybrids are sterile. Classify each reproductive
+barrier and explain whether these two species are likely to remain distinct.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The temporal difference in breeding seasons (March vs June) is a **temporal isolation** barrier,
+which is a prezygotic barrier. It prevents the species from mating in nature because they reproduce
+at different times.
+
+The sterility of adult hybrids is a **reduced hybrid fertility** barrier, which is a postzygotic
+barrier. Even if fertilisation occurs (as in the artificial experiment), the hybrids cannot produce
+offspring.
+
+These two species are likely to remain distinct because they have both prezygotic and postzygotic
+barriers. The temporal isolation prevents interbreeding in nature most of the time, and even when
+hybrids are produced (artificially), they cannot contribute genes back to either parent population.
+The combination of barriers makes gene flow between the species extremely unlikely.
+
+</details>

@@ -708,3 +708,89 @@ with fewer hydrogen atoms relative to their carbon atoms.
 30. 5.0 g of a mixture of Mg and Zn reacts with excess acid to produce 2.4 dm$^3$ of H$_2$ at RTP.
     Calculate the percentage of Mg in the mixture if the Zn is in excess. (Hint: assume only Mg
     reacts.)
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Homologous series</summary>
+
+Explain what is meant by a homologous series. Describe two trends in physical properties as you go down the alkane series.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+A homologous series is a family of organic compounds with the same general formula, similar chemical properties, and successive members differing by $-\mathrm{CH}_2-$.
+
+Trends in alkanes: (1) boiling point increases down the series because longer molecules have stronger London forces between them. (2) Viscosity increases because longer chains become more entangled. (3) Flammability generally decreases as molecules get larger.
+
+</details>
+
+<details>
+<summary>Question 2: Alkane reactions</summary>
+
+Describe the complete combustion of butane ($\mathrm{C}_4\mathrm{H}_{10}$). Write the balanced equation and explain why incomplete combustion is dangerous.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Complete combustion: $2\mathrm{C}_4\mathrm{H}_{10} + 13\mathrm{O}_2 \to 8\mathrm{CO}_2 + 10\mathrm{H}_2\mathrm{O}$.
+
+Incomplete combustion occurs when there is insufficient oxygen, producing carbon monoxide ($\mathrm{CO}$) and/or carbon (soot) instead of $\mathrm{CO}_2$. Carbon monoxide is dangerous because it is a colourless, odourless gas that binds to haemoglobin in red blood cells, reducing their capacity to carry oxygen. This can lead to carbon monoxide poisoning and death.
+
+</details>
+
+<details>
+<summary>Question 3: Alkenes and addition reactions</summary>
+
+Describe the test to distinguish between an alkane and an alkene. Write an equation for the reaction of ethene with bromine water.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Add bromine water (orange-brown) to each hydrocarbon. Alkanes do not react with bromine water at room temperature -- the colour remains. Alkenes decolourise bromine water because the $\mathrm{C=C}$ double bond undergoes an addition reaction.
+
+$\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{Br}_2 \to \mathrm{CH}_2\mathrm{BrCH}_2\mathrm{Br}$ (1,2-dibromoethane).
+
+</details>
+
+<details>
+<summary>Question 4: Alcohols</summary>
+
+Describe the reaction of ethanol with sodium. Write the equation and name the type of reaction.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Ethanol reacts with sodium, producing sodium ethoxide and hydrogen gas. Effervescence is observed (bubbles of $\mathrm{H}_2$).
+
+$2\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + 2\mathrm{Na} \to 2\mathrm{CH}_3\mathrm{CH}_2\mathrm{ONa} + \mathrm{H}_2$
+
+This is a substitution reaction (the -OH hydrogen is replaced by sodium).
+
+</details>
+
+<details>
+<summary>Question 5: Polymers</summary>
+
+Explain how addition polymers are formed from monomers, using poly(ethene) as an example. Include the displayed formula of the repeating unit.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Addition polymers are formed when many small alkene monomers join together, opening their $\mathrm{C=C}$ double bonds. No other product is formed.
+
+For poly(ethene): many ethene molecules ($\mathrm{CH}_2=\mathrm{CH}_2$) join together. The double bond opens and single bonds form between adjacent monomers.
+
+Repeating unit: $-\mathrm{CH}_2-\mathrm{CH}_2-$ (displayed as a bracket with the repeating unit inside and n outside).
+
+</details>

@@ -720,3 +720,87 @@ $$\mathrm{Width of one cell} = \frac{0.5 \mathrm{ mm}}{10} = 0.05 \mathrm{ mm} =
 25. Explain how the structure of the cell membrane (phospholipid bilayer) relates to its function as
     a partially permeable barrier. Why can small non-polar molecules cross more easily than large
     polar molecules?
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Microscopy magnification</summary>
+
+A cell is observed under a microscope with an eyepiece lens of magnification $\times 10$ and an objective lens of magnification $\times 40$. The cell appears to be $4.8 \mathrm{ mm}$ wide in the image. Calculate the actual width of the cell in micrometres ($\mu$m).
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Total magnification $= 10 \times 40 = \times 400$.
+
+Actual size $= \frac{\text{Image size}}{\text{Magnification}} = \frac{4.8 \mathrm{ mm}}{400} = 0.012 \mathrm{ mm}$.
+
+Convert to micrometres: $0.012 \times 1000 = 12 \mathrm{ \mu m}$.
+
+</details>
+
+<details>
+<summary>Question 2: Osmosis in plant cells</summary>
+
+A plant cell with a solute potential of $-500 \mathrm{ kPa}$ and a pressure potential of $200 \mathrm{ kPa}$ is placed in a solution with a water potential of $-100 \mathrm{ kPa}$. Predict the direction of water movement and explain what will happen to the cell.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Cell water potential: $\psi = -500 + 200 = -300 \mathrm{ kPa}$.
+
+The solution has $\psi = -100 \mathrm{ kPa}$.
+
+Water moves from higher to lower water potential: from the solution ($-100 \mathrm{ kPa}$) into the cell ($-300 \mathrm{ kPa}$).
+
+The cell will gain water, increasing its pressure potential. The cell will become turgid. The cell wall will prevent bursting.
+
+</details>
+
+<details>
+<summary>Question 3: Prokaryotic vs eukaryotic cells</summary>
+
+A student examines two cells under a microscope. Cell A has a nucleus, mitochondria, and a cell wall made of cellulose. Cell B has no nucleus, no membrane-bound organelles, and a cell wall made of peptidoglycan. Identify each cell type and explain two differences between them.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Cell A is a plant cell (eukaryotic). Cell B is a bacterial cell (prokaryotic).
+
+Two differences: (1) Cell A has membrane-bound organelles (mitochondria); Cell B does not. (2) Cell A has a cell wall made of cellulose; Cell B has a cell wall made of peptidoglycan. (Other valid differences: DNA structure, size, ribosome type, etc.)
+
+</details>
+
+<details>
+<summary>Question 4: Enzyme activity and pH</summary>
+
+An enzyme has an optimum pH of 7. A student tests the rate of reaction at pH 5, pH 7, and pH 9. Predict the relative rates and explain the shape of the resulting graph.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+The rate is highest at pH 7 (the optimum). At pH 5 and pH 9, the rate is lower because changes in pH alter the ionisation of amino acid side chains in the active site, disrupting the enzyme's shape and reducing substrate binding. The graph is a bell-shaped curve, symmetric if the enzyme tolerates acid and alkali equally, peaking at pH 7.
+
+</details>
+
+<details>
+<summary>Question 5: Cell specialisation</summary>
+
+Explain how a root hair cell is specialised for its function of absorbing water and mineral ions from the soil.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Root hair cells have an elongated, finger-like projection that greatly increases the surface area for absorption. They have a large number of mitochondria to provide ATP for active transport of mineral ions against their concentration gradient. They have thin walls to reduce the diffusion distance for water uptake. Their permanent vacuole contains a high concentration of solutes to maintain a steep water potential gradient for osmosis.
+
+</details>

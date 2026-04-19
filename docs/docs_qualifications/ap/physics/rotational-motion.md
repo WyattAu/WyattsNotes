@@ -779,3 +779,108 @@ Always convert to SI units before calculating.
 20. Two flywheels ($I_1 = 2 \mathrm{ kg}\cdot\mathrm{m}^2$ spinning at $300 \mathrm{ rpm}$,
     $I_2 = 5 \mathrm{ kg}\cdot\mathrm{m}^2$ at rest) are coupled together. Calculate the final angular
     velocity and the energy lost in the coupling process.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Rolling without slipping down an incline</summary>
+
+A solid sphere of mass $2 \mathrm{ kg}$ and radius $0.1 \mathrm{ m}$ rolls without slipping down a $30^\circ$ incline from rest. Calculate (a) the acceleration of the centre of mass, (b) the angular acceleration, and (c) the speed after rolling $3 \mathrm{ m}$ along the incline.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+For a solid sphere, $I = \frac{2}{5}mr^2$.
+
+Acceleration: $a = \frac{g\sin\theta}{1 + I/(mr^2)} = \frac{g\sin\theta}{1 + 2/5} = \frac{9.8 \times 0.5}{1.4} = 3.5 \mathrm{ m/s^2}$.
+
+Angular acceleration: $\alpha = a/r = 3.5/0.1 = 35 \mathrm{ rad/s^2}$.
+
+Speed: $v^2 = 2ad = 2 \times 3.5 \times 3 = 21$, $v = 4.58 \mathrm{ m/s}$.
+
+</details>
+
+<details>
+<summary>Question 2: Conservation of angular momentum</summary>
+
+A figure skater with arms extended has a moment of inertia of $4.5 \mathrm{ kg\cdot m^2}$ and rotates at $2 \mathrm{ rad/s}$. When she pulls her arms in, her moment of inertia decreases to $1.5 \mathrm{ kg\cdot m^2}$. Calculate her new angular velocity and the ratio of her new kinetic energy to the original.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Conservation of angular momentum: $L = I_1\omega_1 = I_2\omega_2$.
+
+$\omega_2 = \frac{I_1\omega_1}{I_2} = \frac{4.5 \times 2}{1.5} = 6 \mathrm{ rad/s}$.
+
+KE ratio: $\frac{KE_2}{KE_1} = \frac{\frac{1}{2}I_2\omega_2^2}{\frac{1}{2}I_1\omega_1^2} = \frac{1.5 \times 36}{4.5 \times 4} = \frac{54}{18} = 3$.
+
+The kinetic energy triples. The extra energy comes from the work done by the skater in pulling her arms inward against the centrifugal tendency.
+
+</details>
+
+<details>
+<summary>Question 3: Torque and equilibrium of a beam</summary>
+
+A uniform beam of length $4 \mathrm{ m}$ and mass $20 \mathrm{ kg}$ is supported at its left end by a hinge and at a point $1 \mathrm{ m}$ from the right end by a cable making $30^\circ$ with the horizontal. A $50 \mathrm{ kg}$ mass hangs from the right end. Find the tension in the cable and the force exerted by the hinge.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Taking torques about the hinge (left end):
+
+Forces and distances from hinge:
+- Weight of beam: $20g$ at $2 \mathrm{ m}$.
+- Hanging mass: $50g$ at $4 \mathrm{ m}$.
+- Cable tension $T$ at $3 \mathrm{ m}$ from hinge, at $30^\circ$ above horizontal. Vertical component = $T\sin(30^\circ) = T/2$.
+
+Clockwise torques: $20g \times 2 + 50g \times 4 = 40g + 200g = 240g = 2352 \mathrm{ N\cdot m}$.
+
+Anticlockwise torque: $T\sin(30^\circ) \times 3 = 1.5T$.
+
+$1.5T = 2352$, so $T = 1568 \mathrm{ N}$.
+
+Hinge force: Horizontal = $T\cos(30^\circ) = 1568 \times 0.866 = 1358 \mathrm{ N}$ (outward). Vertical = $70g - T\sin(30^\circ) = 686 - 784 = -98 \mathrm{ N}$ (downward).
+
+</details>
+
+<details>
+<summary>Question 4: Physical pendulum</summary>
+
+A uniform rod of length $1.0 \mathrm{ m}$ and mass $2 \mathrm{ kg}$ is pivoted at one end and swings as a physical pendulum. Calculate the period of small oscillations.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Moment of inertia about the end: $I = \frac{1}{3}mL^2 = \frac{1}{3}(2)(1)^2 = 0.667 \mathrm{ kg\cdot m^2}$.
+
+Distance from pivot to centre of mass: $d = L/2 = 0.5 \mathrm{ m}$.
+
+Period: $T = 2\pi\sqrt{\frac{I}{mgd}} = 2\pi\sqrt{\frac{0.667}{2 \times 9.8 \times 0.5}} = 2\pi\sqrt{\frac{0.667}{9.8}} = 2\pi\sqrt{0.0681} = 2\pi \times 0.261 = 1.64 \mathrm{ s}$.
+
+</details>
+
+<details>
+<summary>Question 5: Angular momentum of a system</summary>
+
+A disk of mass $3 \mathrm{ kg}$ and radius $0.4 \mathrm{ m}$ rotates at $10 \mathrm{ rad/s}$. A $1 \mathrm{ kg}$ lump of clay is dropped onto the disk at a distance of $0.3 \mathrm{ m}$ from the centre and sticks. What is the new angular velocity?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Initial angular momentum: $L = I_{\text{disk}}\omega = \frac{1}{2}(3)(0.4)^2 \times 10 = 0.24 \times 10 = 2.4 \mathrm{ kg\cdot m^2/s}$.
+
+Final moment of inertia: $I_f = I_{\text{disk}} + mr^2 = 0.24 + 1(0.3)^2 = 0.24 + 0.09 = 0.33 \mathrm{ kg\cdot m^2}$.
+
+Conservation: $L_f = L_i$, $I_f\omega_f = 2.4$, $\omega_f = 2.4/0.33 = 7.27 \mathrm{ rad/s}$.
+
+</details>

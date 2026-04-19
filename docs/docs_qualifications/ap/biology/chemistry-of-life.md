@@ -54,7 +54,8 @@ Water is essential for life due to its unique properties:
 
 1. **Cohesion and adhesion:** H-bonds between water molecules (cohesion) and between water and other
    surfaces (adhesion). Enables capillary action and transpiration in plants.
-2. **High specific heat:** $4.18 \mathrm{ J/(g}\cdot^\circ\mathrm{C)}$. Moderates temperature changes.
+2. **High specific heat:** $4.18 \mathrm{ J/(g}\cdot^\circ\mathrm{C)}$. Moderates temperature
+   changes.
 3. **High heat of vaporization:** Requires significant energy to evaporate. Provides cooling through
    sweating.
 4. **Lower density as a solid:** Ice floats, insulating aquatic environments.
@@ -112,8 +113,8 @@ The bicarbonate buffer system responds:
 
 $$\mathrm{H}^+ + \mathrm{HCO}_3^- \to \mathrm{H}_2\mathrm{CO}_3 \to \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
 
-The excess $\mathrm{H}^+$ is consumed by reacting with $\mathrm{HCO}_3^-$. The resulting $\mathrm{CO}_2$
-is removed by increased breathing rate. Blood pH is maintained close to 7.4.
+The excess $\mathrm{H}^+$ is consumed by reacting with $\mathrm{HCO}_3^-$. The resulting
+$\mathrm{CO}_2$ is removed by increased breathing rate. Blood pH is maintained close to 7.4.
 
 ## Macromolecules (CED Unit 1)
 
@@ -449,8 +450,8 @@ energy from ATP hydrolysis.
     chains.
 
 20. A student measures enzyme activity at different temperatures and finds that the rate peaks at
-    $40^\circ\mathrm{C}$ and drops to zero at $60^\circ\mathrm{C}$. Explain these results with reference
-    to protein structure.
+    $40^\circ\mathrm{C}$ and drops to zero at $60^\circ\mathrm{C}$. Explain these results with
+    reference to protein structure.
 
 ## Review: Macromolecule Identification Tests
 
@@ -598,10 +599,10 @@ layers, which is essential for the function of cell membranes.
 ## Review: Carbohydrate Chemistry in Detail
 
 **Monosaccharides:** The simplest carbohydrates, with the general formula
-$\mathrm{C}_n(\mathrm{H}_2\mathrm{O})_n$. Glucose ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$) exists in two
-isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the position of the
-hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of the ring; in
-$\beta$-glucose, it is above. This apparently small difference has enormous consequences:
+$\mathrm{C}_n(\mathrm{H}_2\mathrm{O})_n$. Glucose ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$) exists
+in two isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the position
+of the hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of the
+ring; in $\beta$-glucose, it is above. This apparently small difference has enormous consequences:
 $\alpha$-glucose forms starch (digestible) and glycogen, while $\beta$-glucose forms cellulose
 (indigestible by most animals).
 
@@ -663,8 +664,8 @@ the inactive conformation, decreasing its activity.
 increases the affinity of the other active sites for the substrate. This produces a sigmoidal
 (S-shaped) velocity-vs-substrate curve rather than the hyperbolic curve predicted by the
 Michaelis-Menten equation. Haemoglobin (which is not an enzyme but a transport protein) shows
-cooperative binding of oxygen: binding of the first $\mathrm{O}_2$ molecule increases the affinity for
-subsequent $\mathrm{O}_2$ molecules.
+cooperative binding of oxygen: binding of the first $\mathrm{O}_2$ molecule increases the affinity
+for subsequent $\mathrm{O}_2$ molecules.
 
 **Feedback inhibition:** A common form of metabolic regulation where the end product of a pathway
 inhibits an enzyme early in the pathway. This prevents wasteful overproduction of the end product.
@@ -713,14 +714,14 @@ preventing overheating.
 Functional groups are specific groups of atoms within molecules that determine the characteristics
 of the molecule and how it reacts.
 
-| Functional Group | Structure | Found in                      | Properties                             |
-| ---------------- | --------- | ----------------------------- | -------------------------------------- |
-| Hydroxyl (-OH)   | -OH       | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds            |
-| Carbonyl (C=O)   | C=O       | Aldehydes, ketones, sugars    | Polar; reactive                        |
+| Functional Group | Structure | Found in                      | Properties                               |
+| ---------------- | --------- | ----------------------------- | ---------------------------------------- |
+| Hydroxyl (-OH)   | -OH       | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds              |
+| Carbonyl (C=O)   | C=O       | Aldehydes, ketones, sugars    | Polar; reactive                          |
 | Carboxyl (-COOH) | -COOH     | Amino acids, fatty acids      | Acts as an acid; releases $\mathrm{H}^+$ |
 | Amino (-NH$_2$)  | -NH$_2$   | Amino acids                   | Acts as a base; accepts $\mathrm{H}^+$   |
-| Phosphate        | -PO$_4$   | ATP, DNA, phospholipids       | Negative charge; energy transfer       |
-| Sulfhydryl (-SH) | -SH       | Cysteine (amino acid)         | Forms disulfide bridges in proteins    |
+| Phosphate        | -PO$_4$   | ATP, DNA, phospholipids       | Negative charge; energy transfer         |
+| Sulfhydryl (-SH) | -SH       | Cysteine (amino acid)         | Forms disulfide bridges in proteins      |
 
 **Worked Example:** The role of functional groups in amino acid behaviour.
 
@@ -731,3 +732,146 @@ negative charge. The R group (side chain) determines the specific properties of 
 nonpolar R groups are hydrophobic, while polar and charged R groups are hydrophilic. Cysteine
 contains a sulfhydryl group (-SH) that can form disulfide bridges with another cysteine, creating
 covalent cross-links that stabilise protein structure.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Chargaff's rules and DNA composition</summary>
+
+A double-stranded DNA molecule is found to be $18\%$ adenine. Calculate the percentage of each of
+the other three bases. If the DNA contains $10,000$ base pairs, how many hydrogen bonds hold the two
+strands together?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+By Chargaff's rules, $[\mathrm{A}] = [\mathrm{T}] = 18\%$.
+
+Since $\mathrm{A} + \mathrm{T} + \mathrm{G} + \mathrm{C} = 100\%$:
+$\mathrm{G} + \mathrm{C} = 100 - 18 - 18 = 64\%$.
+
+By Chargaff's rules, $[\mathrm{G}] = [\mathrm{C}] = 64 / 2 = 32\%$.
+
+So: $\mathrm{A} = 18\%$, $\mathrm{T} = 18\%$, $\mathrm{G} = 32\%$, $\mathrm{C} = 32\%$.
+
+Hydrogen bonds: A-T pairs have 2 H-bonds, G-C pairs have 3 H-bonds.
+
+Number of A-T pairs: $0.18 \times 10,000 = 1,800$ pairs, contributing $1,800 \times 2 = 3,600$
+H-bonds.
+
+Number of G-C pairs: $0.32 \times 10,000 = 3,200$ pairs, contributing $3,200 \times 3 = 9,600$
+H-bonds.
+
+Total hydrogen bonds: $3,600 + 9,600 = 13,200$.
+
+</details>
+
+<details>
+<summary>Question 2: Enzyme kinetics with an inhibitor</summary>
+
+An enzyme has $K_m = 4 \mathrm{ \mu M}$ and $V_{\max} = 20 \mathrm{ \mu mol/min}$. In the presence
+of a competitive inhibitor at $8 \mathrm{ \mu M}$, the apparent $K_m$ increases to
+$12 \mathrm{ \mu M}$. Calculate the reaction velocity at a substrate concentration of
+$6 \mathrm{ \mu M}$ both with and without the inhibitor.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Without inhibitor:
+$v = \frac{V_{\max}[S]}{K_m + [S]} = \frac{20 \times 6}{4 + 6} = \frac{120}{10} = 12 \mathrm{ \mu mol/min}$.
+
+With inhibitor:
+$v = \frac{V_{\max}[S]}{K_m^{app} + [S]} = \frac{20 \times 6}{12 + 6} = \frac{120}{18} = 6.67 \mathrm{ \mu mol/min}$.
+
+The competitive inhibitor reduces the reaction velocity from $12 \mathrm{ \mu mol/min}$ to
+$6.67 \mathrm{ \mu mol/min}$ at this substrate concentration. Note that $V_{\max}$ is unchanged; at
+very high substrate concentrations, both velocities would approach $20 \mathrm{ \mu mol/min}$.
+
+</details>
+
+<details>
+<summary>Question 3: pH and buffer calculations</summary>
+
+A buffer solution contains $0.10 \mathrm{ M}$ acetic acid ($\mathrm{CH}_3\mathrm{COOH}$,
+$\mathrm{p}K_a = 4.76$) and $0.20 \mathrm{ M}$ sodium acetate ($\mathrm{CH}_3\mathrm{COO}^-$).
+Calculate the pH of this buffer. If $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ is added to
+$1.0 \mathrm{ L}$ of this buffer, what is the new pH?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Using the Henderson-Hasselbalch equation:
+
+$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 4.76 + \log\frac{0.20}{0.10} = 4.76 + \log(2) = 4.76 + 0.301 = 5.06$.
+
+After adding $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ to $1.0 \mathrm{ L}$:
+
+The $\mathrm{HCl}$ reacts with the conjugate base:
+$\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{COOH}$.
+
+New $[\mathrm{CH}_3\mathrm{COO}^-] = 0.20 - 0.01 = 0.19 \mathrm{ M}$.
+
+New $[\mathrm{CH}_3\mathrm{COOH}] = 0.10 + 0.01 = 0.11 \mathrm{ M}$.
+
+New
+$\mathrm{pH} = 4.76 + \log\frac{0.19}{0.11} = 4.76 + \log(1.727) = 4.76 + 0.237 = 4.997 \approx 5.00$.
+
+The pH changed by only $0.06$ units, demonstrating the buffer's effectiveness.
+
+</details>
+
+<details>
+<summary>Question 4: Energy coupling and thermodynamics</summary>
+
+The phosphorylation of fructose-6-phosphate to fructose-1,6-bisphosphate has
+$\Delta G = +16.7 \mathrm{ kJ/mol}$ under cellular conditions. ATP hydrolysis has
+$\Delta G = -30.5 \mathrm{ kJ/mol}$. Calculate the overall $\Delta G$ when these reactions are
+coupled. Is the overall reaction spontaneous?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Overall $\Delta G = +16.7 + (-30.5) = -13.8 \mathrm{ kJ/mol}$.
+
+Since $\Delta G \lt 0$, the overall coupled reaction is spontaneous. The energy released by ATP
+hydrolysis ($-30.5 \mathrm{ kJ/mol}$) more than compensates for the energy required for the
+phosphorylation ($+16.7 \mathrm{ kJ/mol}$). This is how phosphofructokinase drives the committed
+step of glycolysis forward. The excess energy ($13.8 \mathrm{ kJ/mol}$) is released as heat.
+
+</details>
+
+<details>
+<summary>Question 5: Protein structure and denaturation</summary>
+
+A researcher discovers that a protein loses its biological activity when heated to
+$45^\circ\mathrm{C}$, but regains full activity when cooled back to $25^\circ\mathrm{C}$. When
+heated to $70^\circ\mathrm{C}$, the protein permanently loses activity even after cooling. Explain
+these observations with reference to the levels of protein structure.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+At $45^\circ\mathrm{C}$, the protein undergoes reversible denaturation. The secondary and tertiary
+structures are disrupted (hydrogen bonds, hydrophobic interactions, and ionic bonds break), causing
+the protein to unfold and lose its active site shape. However, the primary structure (amino acid
+sequence) remains intact. When cooled, these non-covalent interactions can re-form, allowing the
+protein to refold into its native, functional conformation.
+
+At $70^\circ\mathrm{C}$, the denaturation is irreversible. At this higher temperature, the protein
+may aggregate (unfolded proteins expose hydrophobic regions that stick together), or disulfide
+bridges (covalent bonds) may be disrupted. Once aggregated or covalently damaged, the protein cannot
+refold correctly upon cooling because the protein is trapped in incorrect, aggregated conformations.
+The loss of disulfide bridges is particularly significant because these covalent cross-links cannot
+spontaneously re-form in the correct positions without chaperone proteins.
+
+</details>

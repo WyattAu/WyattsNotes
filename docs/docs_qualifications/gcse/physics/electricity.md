@@ -778,3 +778,87 @@ $P_{\mathrm{peak}} = 2P_{\mathrm{avg}}$.
 
 30. Explain the difference between conventional current and electron flow. Why do we still use
     conventional current in circuit diagrams?
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Ohm's Law calculation</summary>
+
+A resistor has a resistance of $50 \Omega$. When a $12 \mathrm{ V}$ battery is connected across it, calculate (a) the current through the resistor and (b) the power dissipated.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $V = IR$, so $I = V/R = 12/50 = 0.24 \mathrm{ A}$.
+
+(b) $P = VI = 12 \times 0.24 = 2.88 \mathrm{ W}$.
+
+</details>
+
+<details>
+<summary>Question 2: Series and parallel circuits</summary>
+
+Two $6 \Omega$ resistors are connected in parallel, and this combination is connected in series with a $4 \Omega$ resistor to a $12 \mathrm{ V}$ supply. Calculate the total resistance, the total current, and the potential difference across each component.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Parallel combination: $1/R_p = 1/6 + 1/6 = 2/6 = 1/3$, so $R_p = 3 \Omega$.
+
+Total resistance: $R_{\text{total}} = 4 + 3 = 7 \Omega$.
+
+Total current: $I = V/R_{\text{total}} = 12/7 = 1.71 \mathrm{ A}$.
+
+PD across the $4 \Omega$ resistor: $V_4 = IR = 1.71 \times 4 = 6.86 \mathrm{ V}$.
+
+PD across the parallel combination: $V_p = 12 - 6.86 = 5.14 \mathrm{ V}$.
+
+</details>
+
+<details>
+<summary>Question 3: Cost of electricity</summary>
+
+A $2 \mathrm{ kW}$ heater is used for 5 hours per day for 30 days. If electricity costs $15 \mathrm{ p/kWh}$, calculate the total cost.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Energy used $= P \times t = 2 \times 5 \times 30 = 300 \mathrm{ kWh}$.
+
+Cost $= 300 \times 15 = 4500 \mathrm{ p} = \pounds 45.00$.
+
+</details>
+
+<details>
+<summary>Question 4: Current, charge, and time</summary>
+
+A torch bulb passes a current of $0.3 \mathrm{ A}$ for 2 minutes. Calculate the charge that flows through the bulb.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$Q = It = 0.3 \times 120 = 36 \mathrm{ C}$.
+
+</details>
+
+<details>
+<summary>Question 5: Potential difference and energy transfer</summary>
+
+A $10 \Omega$ resistor in a circuit has a current of $0.5 \mathrm{ A}$ flowing through it. Calculate the energy transferred by the resistor in 30 seconds.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$E = VIt = IR \times I \times t = I^2 Rt = 0.5^2 \times 10 \times 30 = 0.25 \times 10 \times 30 = 75 \mathrm{ J}$.
+
+</details>

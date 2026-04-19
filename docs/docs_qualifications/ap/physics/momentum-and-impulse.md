@@ -729,3 +729,108 @@ elastic (or that the problem states it is).
     velocity $-1\hat{i} + 4\hat{j}$ m/s. After the elastic collision, Object A moves with velocity
     $1\hat{i} + 3\hat{j}$ m/s. Find the final velocity of Object B and verify both momentum and KE
     conservation.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Perfectly inelastic collision</summary>
+
+A $1500 \mathrm{ kg}$ car travelling east at $20 \mathrm{ m/s}$ collides with a $2500 \mathrm{ kg}$ truck travelling west at $15 \mathrm{ m/s}$. They stick together after the collision. Find the velocity of the wreckage and the kinetic energy lost.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Taking east as positive: $p_i = 1500(20) + 2500(-15) = 30,000 - 37,500 = -7,500 \mathrm{ kg\cdot m/s}$.
+
+Final mass: $4000 \mathrm{ kg}$. $v_f = p_i / m_f = -7500/4000 = -1.875 \mathrm{ m/s}$ (westward).
+
+Initial KE: $\frac{1}{2}(1500)(20^2) + \frac{1}{2}(2500)(15^2) = 300,000 + 281,250 = 581,250 \mathrm{ J}$.
+
+Final KE: $\frac{1}{2}(4000)(1.875^2) = 7031 \mathrm{ J}$.
+
+Energy lost: $581,250 - 7,031 = 574,219 \mathrm{ J}$ (about 98.8% lost to deformation and heat).
+
+</details>
+
+<details>
+<summary>Question 2: Impulse and force-time graph</summary>
+
+A $0.15 \mathrm{ kg}$ baseball is hit by a bat. The force on the ball as a function of time is approximately triangular: it rises linearly from 0 to $6000 \mathrm{ N}$ in $1 \mathrm{ ms}$ and falls back to 0 in the next $1 \mathrm{ ms}$. Calculate the impulse, the change in velocity, and the average force.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Impulse = area under F-t graph = area of triangle = $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times 0.002 \times 6000 = 6 \mathrm{ N\cdot s}$.
+
+Change in velocity: $\Delta v = J/m = 6/0.15 = 40 \mathrm{ m/s}$.
+
+Average force: $F_{\text{avg}} = J/\Delta t = 6/0.002 = 3000 \mathrm{ N}$.
+
+</details>
+
+<details>
+<summary>Question 3: Elastic collision in 1D</summary>
+
+A ball of mass $2 \mathrm{ kg}$ moving at $5 \mathrm{ m/s}$ collides elastically with a stationary ball of mass $3 \mathrm{ kg}$. Calculate the final velocities of both balls.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+For an elastic collision:
+
+$v_1' = \frac{(m_1 - m_2)v_1 + 2m_2 v_2}{m_1 + m_2} = \frac{(2-3)(5) + 0}{5} = \frac{-5}{5} = -1 \mathrm{ m/s}$.
+
+$v_2' = \frac{(m_2 - m_1)v_2 + 2m_1 v_1}{m_1 + m_2} = \frac{0 + 2(2)(5)}{5} = \frac{20}{5} = 4 \mathrm{ m/s}$.
+
+The 2 kg ball bounces back at 1 m/s; the 3 kg ball moves forward at 4 m/s.
+
+Verification: $p_i = 2(5) = 10$. $p_f = 2(-1) + 3(4) = -2 + 12 = 10$. Momentum conserved.
+$KE_i = \frac{1}{2}(2)(25) = 25$. $KE_f = \frac{1}{2}(2)(1) + \frac{1}{2}(3)(16) = 1 + 24 = 25$. KE conserved.
+
+</details>
+
+<details>
+<summary>Question 4: Rocket propulsion (variable mass)</summary>
+
+A rocket ejects fuel at a rate of $100 \mathrm{ kg/s}$ with an exhaust velocity of $3000 \mathrm{ m/s}$ relative to the rocket. If the rocket has an initial mass of $50,000 \mathrm{ kg}$, what is the initial thrust and initial acceleration?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Thrust: $F = v_{\text{exhaust}} \times \frac{dm}{dt} = 3000 \times 100 = 300,000 \mathrm{ N}$.
+
+Initial acceleration: $a = F/m - g = 300,000/50,000 - 9.8 = 6 - 9.8 = -3.8 \mathrm{ m/s^2}$.
+
+The rocket cannot lift off from the ground with these parameters because the thrust ($300 \mathrm{ kN}$) is less than the weight ($490 \mathrm{ kN}$). It would need a higher fuel ejection rate or exhaust velocity.
+
+</details>
+
+<details>
+<summary>Question 5: Ballistic pendulum</summary>
+
+A $10 \mathrm{ g}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a $2 \mathrm{ kg}$ wooden block suspended as a pendulum. How high does the block rise after the collision?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Perfectly inelastic collision (momentum conserved, KE not conserved):
+
+$m_b v_b = (m_b + M)V$: $0.010 \times 400 = (0.010 + 2.0)V$, $4 = 2.01V$, $V = 1.99 \mathrm{ m/s}$.
+
+After collision, energy conserved (pendulum swings up):
+
+$\frac{1}{2}(m_b + M)V^2 = (m_b + M)gh$, $h = V^2/(2g) = 1.99^2/(2 \times 9.8) = 3.96/19.6 = 0.202 \mathrm{ m}$.
+
+The block rises approximately $20.2 \mathrm{ cm}$.
+
+</details>

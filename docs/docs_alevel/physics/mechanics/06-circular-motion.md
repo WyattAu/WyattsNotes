@@ -11,9 +11,7 @@ slug: circular-motion
 
 ## Circular Motion
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 1. Angular Quantities
 
@@ -34,11 +32,9 @@ $$\omega = \frac{2\pi}{T} = 2\pi f$$
 
 where $T$ is the period (time for one revolution) and $f$ is the frequency.
 
-:::info
-Board Coverage AQA, Edexcel, OCR (A), and CIE all require radian measure for angular
+:::info Board Coverage AQA, Edexcel, OCR (A), and CIE all require radian measure for angular
 quantities. AQA and Edexcel may accept degrees in some contexts but radians are expected in
-formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$.
-:::
+formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$. :::
 
 **Example.** A CD rotates at $480$ rpm. Converting:
 $\omega = 480 \times 2\pi/60 = 16\pi \approx 50.3$ rad s$^{-1}$. A point $0.06$ m from the centre
@@ -75,12 +71,10 @@ $\mathbf{a}(t) = -\omega^2 \mathbf{r}(t)$ is always antiparallel to the position
 it always points towards the centre, regardless of where the particle is on the circle. Even though
 the speed is constant, the _direction_ of velocity changes continuously, requiring acceleration.
 
-:::info
-Board Coverage AQA: Both geometric and calculus derivations are accepted. Edexcel: Geometric
+:::info Board Coverage AQA: Both geometric and calculus derivations are accepted. Edexcel: Geometric
 derivation is the standard approach; calculus is optional extension work. OCR (A): Either method
 accepted; the geometric proof appears more frequently in mark schemes. CIE: The geometric method is
-the primary derivation required; calculus is useful for STEP/matriculation preparation.
-:::
+the primary derivation required; calculus is useful for STEP/matriculation preparation. :::
 
 ### Method 2: Geometry
 
@@ -99,12 +93,10 @@ By Newton's second law, the net force producing centripetal acceleration is:
 
 $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 
-:::warning
-Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
+:::warning Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
 force resulting from whatever physical forces act on the body (tension, friction, gravity, normal
 reaction, etc.). Never draw "centripetal force" on a free body diagram — identify the actual
-force(s) providing the centripetal acceleration.
-:::
+force(s) providing the centripetal acceleration. :::
 
 ### Intuition: Circular Motion is NOT Equilibrium
 
@@ -113,13 +105,11 @@ constant. The velocity vector is changing _direction_. There is always a net inw
 cut the string, the particle does **not** fly radially outward — it moves tangentially (Newton's
 first law).
 
-:::warning
-Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
+:::warning Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
 frame, objects appear to be pushed outward, but this is a pseudo-force (fictitious force) arising
 because the frame itself is accelerating. In an inertial (laboratory) frame, no outward force
 exists. AQA and Edexcel may ask you to explain the difference; OCR (A) has featured this in
-multiple-choice questions.
-:::
+multiple-choice questions. :::
 
 ## 4. Applications
 
@@ -150,11 +140,9 @@ $$\boxed{T = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
 **Example.** A conical pendulum with $L = 1.0$ m and $\alpha = 30^\circ$ has period
 $T = 2\pi\sqrt{1.0 \times \cos 30°/9.81} = 2\pi\sqrt{0.0883} = 1.86$ s.
 
-:::info
-Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, typically
+:::info Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, typically
 as a multi-step calculation. OCR (A): Appears in Paper 2 with derivations required. CIE: Appears in
-P2; may be combined with energy considerations.
-:::
+P2; may be combined with energy considerations. :::
 
 ### Banked Curves
 
@@ -204,12 +192,10 @@ $$\boxed{v_{\min} = \sqrt{\frac{rg(\tan\theta - \mu)}{1 + \mu\tan\theta}}}$$
 assistance. At higher angles, velodromes use banking up to $45^\circ$ so cyclists can maintain speed
 through tight turns. The normal reaction alone provides the centripetal force at the design speed.
 
-:::info
-Board Coverage AQA: Banked curves without friction are standard; friction on banked curves
+:::info Board Coverage AQA: Banked curves without friction are standard; friction on banked curves
 is extension material. Edexcel: Both frictionless and friction cases may appear in CP2. OCR (A):
 Frictionless derivation is core; friction is stretch/challenge. CIE: Frictionless is required;
-friction on banked curves occasionally appears in P2 as a harder question.
-:::
+friction on banked curves occasionally appears in P2 as a harder question. :::
 
 ### Vertical Circles
 
@@ -290,8 +276,9 @@ m s$^{-1}$.
 A mass of $0.50$ kg on a string of length $1.0$ m is whirled in a vertical circle. What is the
 minimum speed at the lowest point for the mass to complete the circle?
 
-**Answer.** $v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5 \times 9.81 \times 1.0} = \sqrt{49.05} = 7.00$
-m s$^{-1}$.
+**Answer.**
+$v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5 \times 9.81 \times 1.0} = \sqrt{49.05} = 7.00$ m
+s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Vertical Circles](#vertical-circles)
 
@@ -456,12 +443,10 @@ $$\boxed{T_{\mathrm{bottom}} - T_{\mathrm{top}} = 6mg}$$
 
 This result is independent of the radius and speed -- it depends only on the mass and $g$.
 
-:::tip
-Exam Technique When asked about the difference between tension at the top and bottom of a
+:::tip Exam Technique When asked about the difference between tension at the top and bottom of a
 vertical circle, the answer is always $6mg$ (for a string). For a rod (which can push as well as
 pull), the minimum speed at the top is zero, not $\sqrt{gr}$, because the rod can support the weight
-even when the speed is zero.
-:::
+even when the speed is zero. :::
 
 <details>
 <summary>Example: Bucket of Water in a Vertical Circle</summary>
@@ -489,9 +474,7 @@ $T = mv_b^2/r + mg = 1.5 \times 39.24/0.80 + 14.7 = 73.6 + 14.7 = 88.3$ N.
 
 </details>
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 ## 6. Conical Pendulum -- Extended Analysis
 
@@ -534,12 +517,10 @@ regardless of the angle or string length. A larger angle $\alpha$ (wider circle)
 period (faster motion). As $\alpha \to 0$, the period approaches $T = 2\pi\sqrt{L/g}$, which is the
 period of a simple pendulum for small oscillations.
 
-:::warning
-Common Pitfall The period of a conical pendulum is $T = 2\pi\sqrt{L\cos\alpha/g}$, which
+:::warning Common Pitfall The period of a conical pendulum is $T = 2\pi\sqrt{L\cos\alpha/g}$, which
 is **shorter** than the small-angle simple pendulum period $T = 2\pi\sqrt{L/g}$. Do not confuse
 these two results. The conical pendulum has an additional $\cos\alpha$ factor because only the
-vertical component of tension balances gravity.
-:::
+vertical component of tension balances gravity. :::
 
 ## 7. Centrifugal Force -- Rotating Reference Frames
 
@@ -558,13 +539,11 @@ $$\boxed{F_{\mathrm{centrifugal}} = m\omega^2 r = \frac{mv^2}{r}}$$
 
 This has the same magnitude as the centripetal force but points in the opposite direction.
 
-:::warning
-Common Pitfall **Centrifugal force is not a real force.** It does not appear on free-body
+:::warning Common Pitfall **Centrifugal force is not a real force.** It does not appear on free-body
 diagrams in inertial frames. It is a mathematical convenience for analysing motion in rotating
 frames. In exams, always explain circular motion using centripetal force in an inertial frame unless
 explicitly asked about rotating frames. AQA and OCR (A) have specifically tested the distinction
-between centripetal and centrifugal descriptions.
-:::
+between centripetal and centrifugal descriptions. :::
 
 **Summary of the two descriptions:**
 
@@ -574,12 +553,10 @@ between centripetal and centrifugal descriptions.
 | Additional force       | None                                 | Centrifugal (fictitious, outward)    |
 | Passenger acceleration | Centripetal (inward)                 | Zero (apparent equilibrium)          |
 
-:::tip
-Exam Technique When asked "why do passengers feel thrown outward in a cornering car?", the
+:::tip Exam Technique When asked "why do passengers feel thrown outward in a cornering car?", the
 correct A-level answer is: "The passengers tend to continue in a straight line by Newton's first law
 while the car turns. No outward force acts on the passengers." Mentioning centrifugal force is
-acceptable only if you clearly state it is a fictitious force in a rotating frame.
-:::
+acceptable only if you clearly state it is a fictitious force in a rotating frame. :::
 
 ## Further Problems
 
@@ -609,7 +586,7 @@ $T_b = 0.40 \times 64.27/1.2 + 3.924 = 21.42 + 3.924 = 25.3$ N.
 (d) $T_b - T_t = 25.3 - 1.8 = 23.5$ N. $6mg = 6 \times 0.40 \times 9.81 = 23.5$ N. $\checkmark$
 
 <b>If you get this wrong, revise:</b>
-[Vertical Circles -- Detailed Analysis](#5-vertical-circles--detailed-analysis)
+[Vertical Circles -- Detailed Analysis](#5-vertical-circles----detailed-analysis)
 
 </details>
 
@@ -630,7 +607,7 @@ s.
 (d) $v = 2\pi r/T_{\mathrm{period}} = 2\pi \times 1.0/2.64 = 2.38$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
-[Conical Pendulum -- Extended Analysis](#6-conical-pendulum--extended-analysis)
+[Conical Pendulum -- Extended Analysis](#6-conical-pendulum----extended-analysis)
 
 </details>
 
@@ -647,7 +624,7 @@ Setting $N = 0$: $mg = mv^2/r$, so $v = \sqrt{gr} = \sqrt{9.81 \times 20} = \sqr
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
-[Vertical Circles -- Detailed Analysis](#5-vertical-circles--detailed-analysis)
+[Vertical Circles -- Detailed Analysis](#5-vertical-circles----detailed-analysis)
 
 </details>
 
@@ -677,7 +654,7 @@ $v^2 = v_b^2 - 2g \times 0.75 = 19.62 - 14.72 = 4.90$.
 $v = 2.21$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
-[Vertical Circles -- Detailed Analysis](#5-vertical-circles--detailed-analysis)
+[Vertical Circles -- Detailed Analysis](#5-vertical-circles----detailed-analysis)
 
 </details>
 
@@ -697,7 +674,7 @@ period, as expected.
 The ratio is $T_1:T_2 = 1.108:1$, or equivalently $T_2/T_1 = 0.902$.
 
 <b>If you get this wrong, revise:</b>
-[Conical Pendulum -- Extended Analysis](#6-conical-pendulum--extended-analysis)
+[Conical Pendulum -- Extended Analysis](#6-conical-pendulum----extended-analysis)
 
 </details>
 
@@ -720,6 +697,6 @@ At the bottom, by energy conservation: $v_b^2 = 0 + 4gr = 4gr$, so $v_b = 2\sqrt
 $T - mg = mv_b^2/r = 4mg$, so $T = 5mg$ (rod pulls inward with force $5mg$).
 
 <b>If you get this wrong, revise:</b>
-[Vertical Circles -- Detailed Analysis](#5-vertical-circles--detailed-analysis)
+[Vertical Circles -- Detailed Analysis](#5-vertical-circles----detailed-analysis)
 
 </details>

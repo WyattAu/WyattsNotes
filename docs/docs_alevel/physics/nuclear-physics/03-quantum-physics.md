@@ -11,9 +11,7 @@ slug: quantum-physics
 
 ## Quantum Physics
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 ## 1. The Photoelectric Effect
 
@@ -222,11 +220,9 @@ continuous spectrum). The dark lines are at the same frequencies as the emission
 A hot solid or dense gas emits a continuous spectrum (all frequencies), because the close proximity
 of atoms broadens the energy levels into bands.
 
-:::tip
-Exam Technique When calculating photon wavelengths from energy level transitions, first find
+:::tip Exam Technique When calculating photon wavelengths from energy level transitions, first find
 $\Delta E$ in joules, then use $\lambda = hc/\Delta E$. Remember to convert eV to joules:
-$1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
-:::
+$1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J. :::
 
 ## 5. Wave-Particle Duality — Deeper Analysis
 
@@ -306,13 +302,11 @@ the general inequality $\Delta x \cdot \Delta p \geq \hbar/2$.
 
 $\square$
 
-:::warning
-Common Pitfalls The uncertainty principle is often stated as "measurement disturbs the
+:::warning Common Pitfalls The uncertainty principle is often stated as "measurement disturbs the
 system." While this is a consequence, it is not the fundamental origin. The principle follows from
 the mathematics of wave superposition — it is intrinsic to the wave nature of matter, not an
 artifact of clumsy measurement. A particle **does not simultaneously possess** a well-defined
-position and a well-defined momentum.
-:::
+position and a well-defined momentum. :::
 
 ### Consequences of the Uncertainty Principle
 
@@ -499,12 +493,10 @@ $$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\mathrm{eV nm}}{4.9\,\mathrm{eV}} 
 
 which is in the UV — consistent with the observed UV emission from the Hg vapour.
 
-:::tip
-Exam Technique The Franck-Hertz experiment is often asked as "describe how the experiment
+:::tip Exam Technique The Franck-Hertz experiment is often asked as "describe how the experiment
 confirms quantised energy levels." The key points are: (1) the periodic current drops occur at
 multiples of $4.9$ V, (2) this corresponds to a fixed energy loss per collision, (3) the fixed
-energy loss can only be explained by discrete (quantised) energy levels in the Hg atom.
-:::
+energy loss can only be explained by discrete (quantised) energy levels in the Hg atom. :::
 
 ## 7. Wave Functions and Probability
 
@@ -527,11 +519,9 @@ $$\boxed{\int_{-\infty}^{\infty} |\psi(x)|^2\,dx = 1}$$
 This is the **normalisation condition**. A wave function that satisfies this condition is said to be
 **normalised**.
 
-:::warning
-Common Pitfalls $\psi(x)$ itself is not a probability — it can be negative or complex.
+:::warning Common Pitfalls $\psi(x)$ itself is not a probability — it can be negative or complex.
 Only $|\psi(x)|^2 = \psi^*(x)\psi(x)$ has physical meaning as a probability density. Also, $\psi(x)$
-is not directly measurable; only $|\psi(x)|^2$ is observable.
-:::
+is not directly measurable; only $|\psi(x)|^2$ is observable. :::
 
 ### Electron in a Box: 1D Infinite Potential Well
 
@@ -627,8 +617,7 @@ For the first three states:
 - **$n = 3$:** $|\psi_3(x)|^2 = (2/L)\sin^2(3\pi x/L)$. Two nodes at $x = L/3$ and $x = 2L/3$. Three
   maxima.
 
-:::warning
-Common Pitfalls The probability density $|\psi|^2$ can be zero at certain positions
+:::warning Common Pitfalls The probability density $|\psi|^2$ can be zero at certain positions
 (nodes), but the probability of finding the particle in an **interval** of finite width containing a
 node is not zero. When asked "what is the probability at position $x$," the correct answer is zero
 for any single point (probability densities are per unit length). Always integrate over an interval.
@@ -699,7 +688,7 @@ $f_0 = \phi/h = 2.28 \times 1.60 \times 10^{-19} / 6.63 \times 10^{-34} = 5.50 \
 $E_{k,\max} = hf - \phi = 6.63 \times 10^{-34} \times 8.0 \times 10^{14} - 2.28 \times 1.60 \times 10^{-19} = 5.304 \times 10^{-19} - 3.648 \times 10^{-19} = 1.66 \times 10^{-19}$
 J $= 1.04$ eV.
 
-<b>If you get this wrong, revise:</b> [Einstein's Explanation](#einstiens-explanation-1905)
+<b>If you get this wrong, revise:</b> [Einstein's Explanation](#einsteins-explanation-1905)
 
 </details>
 
@@ -788,7 +777,7 @@ energy should depend on intensity — but it depends on frequency. These observa
 the photon model: each photon has energy $hf$; one photon interacts with one electron; the photon
 must have enough energy ($hf \gt \phi$) to liberate the electron.
 
-<b>If you get this wrong, revise:</b> [Why wave theory fails](#why-wave-theory-fails)
+<b>If you get this wrong, revise:</b> [Why wave theory fails](#threshold-frequency)
 
 </details>
 
@@ -831,7 +820,7 @@ $y$-intercept of $-3.2 \times 10^{-19}$ J. Calculate Planck's constant and the w
 
 $y$-intercept $= -\phi = -3.2 \times 10^{-19}$ J. $\phi = 3.2 \times 10^{-19}$ J $= 2.0$ eV.
 
-<b>If you get this wrong, revise:</b> [Graphical analysis](#graphical-analysis)
+<b>If you get this wrong, revise:</b> [Graphical analysis](#stopping-potential)
 
 </details>
 

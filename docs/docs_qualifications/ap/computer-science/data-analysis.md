@@ -802,3 +802,114 @@ include identity theft, financial loss, and reputational damage.
 
 18. Write a Java method that counts the frequency of each character in a string and returns the
     results in a Map.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: 2D array traversal</summary>
+
+Write a Java method that finds the sum of all elements on the perimeter (border) of a 2D rectangular array. For example, in a 3x3 array, sum elements at positions (0,0), (0,1), (0,2), (1,0), (1,2), (2,0), (2,1), (2,2).
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```java
+public static int perimeterSum(int[][] arr) {
+    int sum = 0;
+    int rows = arr.length;
+    int cols = arr[0].length;
+    
+    for (int j = 0; j < cols; j++) {
+        sum += arr[0][j];         // top row
+        sum += arr[rows-1][j];    // bottom row
+    }
+    
+    for (int i = 1; i < rows - 1; i++) {
+        sum += arr[i][0];          // left column
+        sum += arr[i][cols-1];     // right column
+    }
+    
+    return sum;
+}
+```
+
+Time complexity: $O(r + c)$ where $r$ is rows and $c$ is columns.
+
+</details>
+
+<details>
+<summary>Question 2: ArrayList manipulation</summary>
+
+Given an `ArrayList<Integer>` containing the values `[3, 7, 2, 7, 5, 7, 1]`, write Java code that removes all occurrences of the value 7. Explain why iterating forward with a for-each loop would cause an error.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+```java
+for (int i = list.size() - 1; i >= 0; i--) {
+    if (list.get(i) == 7) {
+        list.remove(i);
+    }
+}
+// Result: [3, 2, 5, 1]
+```
+
+Iterating forward causes a `ConcurrentModificationException` with a for-each loop because removing an element shifts subsequent elements left, causing the iterator to skip elements. Iterating backwards avoids this because removing an element only affects indices greater than the current one.
+
+</details>
+
+<details>
+<summary>Question 3: Data encryption</summary>
+
+Explain the difference between hashing and encryption. Why is hashing preferred over encryption for storing passwords?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Hashing is a one-way function that produces a fixed-length output (hash) from input data. It cannot be reversed. Encryption is a two-way function: data is encrypted with a key and can be decrypted with the correct key.
+
+Hashing is preferred for passwords because: (1) Even if the database is compromised, attackers cannot reverse the hash to obtain the original password. (2) Passwords never need to be recovered in their original form -- only verification is needed (hash the input and compare). (3) Hashing with salt (adding random data before hashing) prevents rainbow table attacks.
+
+</details>
+
+<details>
+<summary>Question 4: Big-O analysis of combined operations</summary>
+
+An algorithm performs the following steps on an array of size $n$: (1) sorts the array using merge sort, (2) performs binary search on the sorted array $n$ times. What is the overall time complexity?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Step 1: Merge sort takes $O(n \log n)$.
+
+Step 2: Each binary search takes $O(\log n)$, and it is performed $n$ times: $n \times O(\log n) = O(n \log n)$.
+
+Overall: $O(n \log n) + O(n \log n) = O(n \log n)$.
+
+</details>
+
+<details>
+<summary>Question 5: Metadata and privacy</summary>
+
+A photographer uploads photos to a social media platform. Describe two types of metadata that might be embedded in the photos and explain the privacy risk each poses.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+1. **GPS location data (EXIF):** Many cameras and smartphones embed the latitude and longitude where the photo was taken. Privacy risk: this reveals the photographer's home address, daily routine, or location of sensitive places (schools, workplaces).
+
+2. **Timestamp:** The date and time the photo was taken. Privacy risk: combined with location data, it can reveal detailed patterns of the photographer's movements and schedule.
+
+Other examples include camera model, software version, and thumbnail previews. Users should strip metadata before sharing photos online.
+
+</details>

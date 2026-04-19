@@ -739,3 +739,142 @@ control integration.
 
 18. Explain three ways in which an operating system provides security. Give a concrete example for
     each.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Two's complement arithmetic</summary>
+
+Perform the following 8-bit two's complement addition: $-50 + 30$. Show the binary representation of each number, the addition, and determine whether overflow occurs.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+-50 in 8-bit two's complement: 50 = 00110010, invert = 11001101, add 1 = 11001110.
+30 in 8-bit two's complement: 00011110.
+
+Addition: 11001110 + 00011110 = 11101100.
+
+Convert result to decimal: 11101100 is negative (MSB = 1). Invert = 00010011, add 1 = 00010100 = 20. So the result is -20.
+
+Check: -50 + 30 = -20. Correct.
+
+No overflow occurred because a negative and a positive number were added (overflow can only occur when adding two numbers of the same sign).
+
+</details>
+
+<details>
+<summary>Question 2: Logic circuit simplification</summary>
+
+Simplify the Boolean expression $\bar{A}\cdot\bar{B}\cdot C + \bar{A}\cdot B\cdot C + A\cdot\bar{B}\cdot C$ using Boolean algebra identities.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\bar{A}\cdot\bar{B}\cdot C + \bar{A}\cdot B\cdot C + A\cdot\bar{B}\cdot C$
+
+Factor out C from the first two terms: $C(\bar{A}\cdot\bar{B} + \bar{A}\cdot B) + A\cdot\bar{B}\cdot C$
+
+Factor out $\bar{A}$ from the parenthesised expression: $C \cdot \bar{A}(\bar{B} + B) + A\cdot\bar{B}\cdot C$
+
+Since $\bar{B} + B = 1$: $C \cdot \bar{A} \cdot 1 + A\cdot\bar{B}\cdot C = \bar{A}\cdot C + A\cdot\bar{B}\cdot C$
+
+Factor out C: $C(\bar{A} + A\cdot\bar{B})$
+
+Using the distributive law: $C(\bar{A} + A)(\bar{A} + \bar{B})$
+
+Wait -- that's incorrect. Let me redo: $C(\bar{A} + A \cdot \bar{B})$. This doesn't simplify further using basic identities easily.
+
+Alternative approach -- try consensus: $\bar{A}C + A\bar{B}C$. The consensus of $\bar{A}$ and $\bar{B}$ with respect to $C$ is $\bar{A}\bar{B}$, which is not present, so no further simplification.
+
+The simplified expression is: $\bar{A} \cdot C + A \cdot \bar{B} \cdot C = C(\bar{A} + A \cdot \bar{B})$.
+
+</details>
+
+<details>
+<summary>Question 3: Number conversion</summary>
+
+Convert the decimal number 0.6875 to binary. Show the fractional conversion process.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Integer part: 0 = 0 in binary.
+
+Fractional part: multiply by 2 repeatedly:
+- 0.6875 $\times$ 2 = 1.375, digit = 1, remainder = 0.375
+- 0.375 $\times$ 2 = 0.75, digit = 0, remainder = 0.75
+- 0.75 $\times$ 2 = 1.5, digit = 1, remainder = 0.5
+- 0.5 $\times$ 2 = 1.0, digit = 1, remainder = 0 (done)
+
+Reading the digits top to bottom: 0.1011.
+
+So 0.6875 in decimal = 0.1011 in binary.
+
+Verification: $1 \times 2^{-1} + 0 \times 2^{-2} + 1 \times 2^{-3} + 1 \times 2^{-4} = 0.5 + 0 + 0.125 + 0.0625 = 0.6875$. Correct.
+
+</details>
+
+<details>
+<summary>Question 4: File size calculation</summary>
+
+A 5-minute video is recorded at 30 frames per second with a resolution of $1920 \times 1080$ pixels. Each pixel uses 24 bits for colour (RGB). Calculate the file size in gigabytes before compression. Express your answer to 2 significant figures.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Total frames: $30 \times 5 \times 60 = 9,000$ frames.
+
+Pixels per frame: $1920 \times 1080 = 2,073,600$ pixels.
+
+Bits per frame: $2,073,600 \times 24 = 49,766,400$ bits.
+
+Total bits: $49,766,400 \times 9,000 = 447,897,600,000$ bits.
+
+Convert to bytes: $447,897,600,000 / 8 = 55,987,200,000$ bytes.
+
+Convert to GB: $55,987,200,000 / (1024^3) = 55,987,200,000 / 1,073,741,824 \approx 52.15 \mathrm{ GB}$.
+
+Rounded to 2 significant figures: 52 GB. This demonstrates why video compression is essential.
+
+</details>
+
+<details>
+<summary>Question 5: De Morgan's Laws application</summary>
+
+Using De Morgan's Laws, convert the expression $\overline{A \cdot B + C \cdot D}$ into an expression that uses only AND and NOT operations.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$\overline{A \cdot B + C \cdot D}$
+
+Applying De Morgan's Law (distribute the NOT over the OR):
+$= \overline{A \cdot B} \cdot \overline{C \cdot D}$
+
+Applying De Morgan's Law to each term:
+$= (\bar{A} + \bar{B}) \cdot (\bar{C} + \bar{D})$
+
+Wait -- the question asks for only AND and NOT. Let me apply the other form:
+
+$\overline{A \cdot B + C \cdot D} = \overline{A \cdot B} \cdot \overline{C \cdot D}$
+
+To express using only AND and NOT, note that $\overline{X + Y} = \bar{X} \cdot \bar{Y}$ (De Morgan's). But the question says only AND and NOT. Since $\overline{A \cdot B} = \overline{A} + \overline{B}$, this introduces OR.
+
+Using only NAND (AND + NOT): $\overline{A \cdot B} = \mathrm{NAND}(A, B)$ and $\overline{C \cdot D} = \mathrm{NAND}(C, D)$.
+
+So: $\mathrm{NAND}(A, B) \cdot \mathrm{NAND}(C, D)$ -- but this uses AND.
+
+Actually, NAND(A, B) already uses AND and NOT: $\overline{A \cdot B}$. So the answer is: $\overline{A \cdot B} \cdot \overline{C \cdot D}$, which uses only AND (implicit in the NOT-AND) and NOT operations.
+
+</details>

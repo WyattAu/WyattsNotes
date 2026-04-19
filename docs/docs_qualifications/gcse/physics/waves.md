@@ -779,3 +779,85 @@ next trough, which is only half a wavelength.
 
 30. Describe an experiment to measure the speed of sound in air using two microphones connected to
     an oscilloscope. Explain how you would improve the accuracy of your measurement.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Wave speed calculation</summary>
+
+A wave has a frequency of $250 \mathrm{ Hz}$ and a wavelength of $1.5 \mathrm{ m}$. Calculate the wave speed.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$v = f\lambda = 250 \times 1.5 = 375 \mathrm{ m/s}$.
+
+</details>
+
+<details>
+<summary>Question 2: Electromagnetic spectrum</summary>
+
+Arrange the following in order of increasing wavelength: gamma rays, microwaves, visible light, X-rays, radio waves, ultraviolet, infrared. State which type has the highest frequency and which has the highest energy.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Increasing wavelength: gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, radio waves.
+
+Gamma rays have the highest frequency and the highest energy (since $E = hf$).
+
+Radio waves have the longest wavelength and the lowest frequency and energy.
+
+</details>
+
+<details>
+<summary>Question 3: Transverse and longitudinal waves</summary>
+
+Compare transverse and longitudinal waves, giving an example of each. Describe how vibrations differ in the two types.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Transverse waves: vibrations are perpendicular to the direction of energy transfer. Example: light waves, water waves (partially). They have peaks and troughs.
+
+Longitudinal waves: vibrations are parallel to the direction of energy transfer. Example: sound waves. They have compressions (high pressure) and rarefactions (low pressure).
+
+</details>
+
+<details>
+<summary>Question 4: Reflection and refraction</summary>
+
+A ray of light strikes a plane mirror at an angle of $35^\circ$ to the normal. Calculate the angle of reflection and draw a ray diagram.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+By the law of reflection, the angle of reflection equals the angle of incidence: $35^\circ$ to the normal.
+
+The angle between the incident ray and the mirror surface is $90^\circ - 35^\circ = 55^\circ$.
+
+</details>
+
+<details>
+<summary>Question 5: Speed of sound experiment</summary>
+
+Two students stand $150 \mathrm{ m}$ apart. One student claps two blocks of wood together, and the other starts a stopwatch when they see the clap and stops it when they hear the sound. The time recorded is $0.44 \mathrm{ s}$. Calculate the speed of sound.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Speed $= \text{distance}/\text{time} = 150/0.44 = 341 \mathrm{ m/s}$.
+
+This is close to the accepted value of approximately $343 \mathrm{ m/s}$ at $20^\circ\mathrm{C}$.
+
+</details>

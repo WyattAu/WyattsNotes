@@ -727,3 +727,95 @@ ensure you are consistent throughout the problem.
 20. Two springs with $k_1 = 200 \mathrm{ N/m}$ and $k_2 = 300 \mathrm{ N/m}$ are connected (a) in series
     and (b) in parallel. For each arrangement, find the effective spring constant, the period of
     oscillation for a $2 \mathrm{ kg}$ mass, and the energy stored when compressed $0.1 \mathrm{ m}$.
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Work-energy theorem with variable force</summary>
+
+A $3 \mathrm{ kg}$ object moves along the x-axis under the influence of a force $F(x) = 4x^2 - 2x \mathrm{ N}$ (where $x$ is in metres). Calculate the work done by this force as the object moves from $x = 0$ to $x = 3 \mathrm{ m}$ and the final speed if it started from rest.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$W = \int_0^3 F(x) \, dx = \int_0^3 (4x^2 - 2x) \, dx = \left[\frac{4x^3}{3} - x^2\right]_0^3 = \frac{4(27)}{3} - 9 = 36 - 9 = 27 \mathrm{ J}$.
+
+By the work-energy theorem: $W = \Delta KE = \frac{1}{2}mv^2 - 0$.
+
+$v = \sqrt{2W/m} = \sqrt{2 \times 27/3} = \sqrt{18} = 4.24 \mathrm{ m/s}$.
+
+</details>
+
+<details>
+<summary>Question 2: Conservation of energy with spring</summary>
+
+A $0.5 \mathrm{ kg}$ block slides on a frictionless surface and collides with a horizontal spring ($k = 200 \mathrm{ N/m}$). The block compresses the spring by $0.15 \mathrm{ m}$ before momentarily stopping. What was the speed of the block just before it hit the spring?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+All kinetic energy converts to elastic potential energy: $\frac{1}{2}mv^2 = \frac{1}{2}kx^2$.
+
+$v = x\sqrt{k/m} = 0.15\sqrt{200/0.5} = 0.15\sqrt{400} = 0.15 \times 20 = 3.0 \mathrm{ m/s}$.
+
+</details>
+
+<details>
+<summary>Question 3: Power and inclined plane</summary>
+
+A $60 \mathrm{ kg}$ person runs up a flight of stairs that is $10 \mathrm{ m}$ high in $8 \mathrm{ s}$. Calculate the average power output in watts and horsepower. Take $g = 9.8 \mathrm{ m/s^2}$ and $1 \mathrm{ hp} = 746 \mathrm{ W}$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Work done against gravity: $W = mgh = 60 \times 9.8 \times 10 = 5880 \mathrm{ J}$.
+
+Average power: $P = W/t = 5880/8 = 735 \mathrm{ W}$.
+
+In horsepower: $735/746 = 0.985 \mathrm{ hp}$.
+
+</details>
+
+<details>
+<summary>Question 4: Loop-the-loop energy analysis</summary>
+
+A block of mass $m$ starts from rest at height $h$ on a frictionless track and enters a circular loop of radius $R$. What is the minimum value of $h$ for the block to complete the loop? Express your answer in terms of $R$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+At the top of the loop, the minimum condition is that the normal force is zero, so centripetal acceleration is provided entirely by gravity: $mg = mv_{\text{top}}^2/R$, giving $v_{\text{top}}^2 = gR$.
+
+Energy conservation from start to top of loop (height $2R$):
+
+$mgh = mg(2R) + \frac{1}{2}mv_{\text{top}}^2 = 2mgR + \frac{1}{2}m(gR) = \frac{5}{2}mgR$.
+
+$h = \frac{5}{2}R = 2.5R$.
+
+</details>
+
+<details>
+<summary>Question 5: Work done by non-constant force on a curve</summary>
+
+A $2 \mathrm{ kg}$ object is moved from the origin to the point $(4, 3)$ by a force $\vec{F} = (3x\hat{i} + 2y\hat{j}) \mathrm{ N}$. Calculate the work done by this force.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$W = \int \vec{F} \cdot d\vec{r} = \int_0^4 3x \, dx + \int_0^3 2y \, dy$.
+
+$= \left[\frac{3x^2}{2}\right]_0^4 + \left[y^2\right]_0^3 = 24 + 9 = 33 \mathrm{ J}$.
+
+The force is conservative (it can be written as the negative gradient of a potential $U = -\frac{3}{2}x^2 - y^2$), so the work depends only on the endpoints, not the path taken.
+
+</details>

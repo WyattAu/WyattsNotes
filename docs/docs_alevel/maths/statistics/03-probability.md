@@ -18,10 +18,8 @@ slug: probability
 | OCR (A)    | Paper 1, 2 | Includes Venn diagrams and tree diagrams          |
 | CIE (9709) | P1, P6     | Probability in P1; conditional in P6              |
 
-:::info
-Probability questions test logical reasoning as much as formula recall. Always define events
-clearly and draw a diagram before calculating.
-:::
+:::info Probability questions test logical reasoning as much as formula recall. Always define events
+clearly and draw a diagram before calculating. :::
 
 <hr />
 
@@ -147,11 +145,9 @@ $$P(A) = \sum_{i=1}^{n}P(A|B_i)P(B_i)$$
 
 $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i)P(B_i)}$$
 
-:::tip
-Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
+:::tip Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
 positive, what is the probability the patient actually has the disease?" Always define events
-clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$).
-:::
+clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$). :::
 
 <hr />
 
@@ -178,11 +174,9 @@ $P(A \cap B) = P(A)P(B)$. $\blacksquare$
 **Intuition.** Independence means knowing $B$ occurred gives you **no information** about $A$. The
 probability of $A$ is the same whether or not $B$ has happened.
 
-:::warning
-"Independent" and "mutually exclusive" are **different** concepts. If $A$ and $B$ are
+:::warning "Independent" and "mutually exclusive" are **different** concepts. If $A$ and $B$ are
 mutually exclusive and both have positive probability, they are **not** independent (since
-$P(A \cap B) = 0 \neq P(A)P(B)$).
-:::
+$P(A \cap B) = 0 \neq P(A)P(B)$). :::
 
 ### 5.3 Pairwise and mutual independence
 
@@ -194,13 +188,11 @@ $$P(A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}) = P(A_{i_1}) \cdot P(A_{i_2})
 **Definition.** Events $A_1, A_2, \ldots, A_n$ are **pairwise independent** if every pair
 $(A_i, A_j)$ with $i \neq j$ is independent.
 
-:::warning
-Mutual independence is a **stronger** condition than pairwise independence. Pairwise
+:::warning Mutual independence is a **stronger** condition than pairwise independence. Pairwise
 independence does not imply mutual independence. For example, with two independent coin tosses, let
 $A$ = "first toss is heads", $B$ = "second toss is heads", $C$ = "both tosses are the same". Then
 $A$, $B$, $C$ are pairwise independent but not mutually independent since
-$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$.
-:::
+$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$. :::
 
 <hr />
 
@@ -449,11 +441,9 @@ $$= \tfrac{1 + 8 + 27 + 48 + 50 + 36}{12} = \tfrac{170}{12} = \tfrac{85}{6}$$
 
 $$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \tfrac{85}{6} - \tfrac{49}{4} = \tfrac{170 - 147}{12} = \tfrac{23}{12} \approx 1.917$$
 
-:::info
-For a fair die, $E(X) = 3.5$ and $\mathrm{Var}(X) = 35/12 \approx 2.917$. The biased die above
-has the same mean but smaller variance, meaning its outcomes are more concentrated around the
-centre.
-:::
+:::info For a fair die, $E(X) = 3.5$ and $\mathrm{Var}(X) = 35/12 \approx 2.917$. The biased die
+above has the same mean but smaller variance, meaning its outcomes are more concentrated around the
+centre. :::
 
 <hr />
 
@@ -619,8 +609,9 @@ This is a binomial scenario: $X \sim B(20, 0.05)$.
 
 $P(X=1) = \binom{20}{1}(0.05)^1(0.95)^{19} = 20 \times 0.05 \times 0.95^{19} \approx 0.3774$.
 
-**If you get this wrong, revise:** [Binomial Distribution](#41-binomial) — Statistical Distributions
-chapter.
+**If you get this wrong, revise:**
+[Binomial Distribution](statistical-distributions#2-the-binomial-distribution) — Statistical
+Distributions chapter.
 
 </details>
 

@@ -915,3 +915,115 @@ $$
 $$
 \mathrm{Number of O atoms} = 0.60 \times 6.02 \times 10^{23} = 3.61 \times 10^{23}
 $$
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Empirical and Molecular Formula</summary>
+
+A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen, and $53.3\%$ oxygen by mass. Its molar mass is approximately $180\mathrm{ g/mol}$. Determine the empirical and molecular formulas.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Convert percentages to moles:
+
+| Element | Mass (g) | Molar Mass (g/mol) | Moles | Ratio |
+|---|---|---|---|---|
+| C | $40.0$ | $12.01$ | $3.33$ | $1$ |
+| H | $6.7$ | $1.01$ | $6.63$ | $2$ |
+| O | $53.3$ | $16.00$ | $3.33$ | $1$ |
+
+Empirical formula: **$\mathrm{CH}_2\mathrm{O}$** (molar mass $= 30.03\mathrm{ g/mol}$)
+
+$$n = \frac{180}{30.03} \approx 6$$
+
+Molecular formula: **$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$** (glucose)
+
+</details>
+
+<details>
+<summary>Question 2: Limiting Reagent and Percentage Yield</summary>
+
+$8.0\mathrm{ g}$ of $\mathrm{CaCO}_3$ is heated with excess $\mathrm{HCl}$ according to:
+
+$$\mathrm{CaCO}_3 + 2\mathrm{HCl} \to \mathrm{CaCl}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
+
+(a) Calculate the theoretical volume of $\mathrm{CO}_2$ produced at RTP.
+
+(b) If only $1.60\mathrm{ L}$ of $\mathrm{CO}_2$ is collected, calculate the percentage yield.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $$n(\mathrm{CaCO}_3) = \frac{8.0}{100.09} = 0.0800\mathrm{ mol}$$
+
+$$n(\mathrm{CO}_2) = 0.0800\mathrm{ mol}$$ (1:1 ratio)
+
+$$V_{\mathrm{theoretical}} = 0.0800 \times 24.8 = 1.98\mathrm{ L}$$
+
+(b) $$\%\mathrm{ yield} = \frac{1.60}{1.98} \times 100\% = 80.8\%$$
+
+</details>
+
+<details>
+<summary>Question 3: Ideal Gas Law</summary>
+
+A gas occupies $3.00\mathrm{ L}$ at $350\mathrm{ K}$ and $150\mathrm{ kPa}$. What volume does it occupy at STP ($273\mathrm{ K}$, $100\mathrm{ kPa}$)?
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$
+
+$$V_2 = \frac{P_1 V_1 T_2}{P_2 T_1} = \frac{150 \times 3.00 \times 273}{100 \times 350} = \frac{122850}{35000} = 3.51\mathrm{ L}$$
+
+</details>
+
+<details>
+<summary>Question 4: Titration Calculation</summary>
+
+$25.0\mathrm{ cm}^3$ of sulfuric acid is titrated with $0.200\mathrm{ M}$ $\mathrm{NaOH}$. The endpoint is reached at $30.0\mathrm{ cm}^3$ of $\mathrm{NaOH}$. Calculate the concentration of the sulfuric acid.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$$\mathrm{H}_2\mathrm{SO}_4 + 2\mathrm{NaOH} \to \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}$$
+
+$$n(\mathrm{NaOH}) = 0.200 \times 0.0300 = 0.00600\mathrm{ mol}$$
+
+$$n(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.00600}{2} = 0.00300\mathrm{ mol}$$
+
+$$c(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.00300}{0.0250} = 0.120\mathrm{ mol/L}$$
+
+</details>
+
+<details>
+<summary>Question 5: Water of Crystallisation</summary>
+
+$6.44\mathrm{ g}$ of hydrated magnesium sulfate $\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$ is heated to constant mass of $3.14\mathrm{ g}$. Determine the value of $x$.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Mass of water lost $= 6.44 - 3.14 = 3.30\mathrm{ g}$
+
+$$n(\mathrm{MgSO}_4) = \frac{3.14}{120.37} = 0.0261\mathrm{ mol}$$
+
+$$n(\mathrm{H}_2\mathrm{O}) = \frac{3.30}{18.02} = 0.183\mathrm{ mol}$$
+
+$$x = \frac{0.183}{0.0261} = 7.01 \approx 7$$
+
+Formula: $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$ (Epsom salt)
+</details>
+
