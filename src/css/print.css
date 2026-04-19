@@ -1,0 +1,121 @@
+/* Print stylesheet for Wyatt's Notes */
+@media print {
+  /* Hide navigation, sidebar, footer, and interactive elements */
+  .navbar,
+  .sidebar,
+  .footer,
+  .theme-toggle,
+  .reading-progress,
+  .table-of-contents,
+  .pagination-nav,
+  .breadcrumb,
+  button[aria-label='Scroll to top'],
+  .clean-btn,
+  nav[class*='navbar'] {
+    display: none !important;
+  }
+
+  /* Reset layout for full-width printing */
+  .main-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  article {
+    max-width: 100% !important;
+  }
+
+  /* Ensure text is readable */
+  body {
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  /* Show link URLs in parentheses after the text */
+  a[href]::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.85em;
+    color: #555;
+    word-break: break-all;
+  }
+
+  a[href^='#']::after {
+    content: '';
+  }
+
+  a[href^='mailto:']::after {
+    content: '';
+  }
+
+  /* Page breaks */
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  pre,
+  blockquote,
+  table,
+  figure,
+  .math {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Code blocks */
+  pre {
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 9pt;
+  }
+
+  code {
+    font-size: 9pt;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #333;
+    padding: 4pt 6pt;
+  }
+
+  /* Math blocks */
+  .math-display {
+    overflow: visible;
+  }
+
+  /* Expand details/summary for printing */
+  details {
+    break-inside: avoid;
+  }
+
+  details > summary {
+    font-weight: bold;
+  }
+
+  /* Add page margins */
+  @page {
+    margin: 2cm;
+  }
+}
