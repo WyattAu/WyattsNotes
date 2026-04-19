@@ -98,6 +98,7 @@ const config: Config = {
   ],
 
   plugins: [
+    ['@site/plugins/service-worker', { enable: true }],
     [
       '@docusaurus/plugin-content-docs',
       {
