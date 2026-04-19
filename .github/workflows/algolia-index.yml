@@ -1,0 +1,36 @@
+name: Index to Algolia
+
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Site to index (all, main, academics, alevel, qualifications, programming)'
+        required: false
+        default: 'all'
+  schedule:
+    # Run daily at 06:00 UTC
+    - cron: '0 6 * * *'
+
+jobs:
+  index:
+    name: Index Content to Algolia
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Index to Algolia
+        run: node scripts/algolia-index.mjs
+        env:
+          ALGOLIA_WRITE_KEY: ${{ secrets.ALGOLIA_WRITE_KEY }}

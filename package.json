@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.14",
+    "@algolia/autocomplete-js": "^1.19.8",
     "@docusaurus/core": "^3.9.2",
     "@docusaurus/plugin-sitemap": "^3.9.2",
     "@docusaurus/preset-classic": "^3.9.2",
@@ -33,6 +34,7 @@
     "@fontsource/merriweather": "^5.2.9",
     "@mdx-js/react": "^3.1.0",
     "@r74tech/docusaurus-plugin-panzoom": "^2.4.0",
+    "algoliasearch": "^5.50.2",
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",
     "docusaurus-lunr-search": "^3.6.0",
