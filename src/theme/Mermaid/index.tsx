@@ -69,13 +69,14 @@ export default function Mermaid(props: Props): React.JSX.Element {
     return <div className={MermaidContainerClassName} style={{ minHeight: '1rem' }} />;
   }
 
-  // @ts-expect-error -- @docusaurus/ErrorBoundary types declare children as required
-  // but TS react JSX mode doesn't infer JSX children into Props.
-  return (
-    <ErrorBoundary fallback={() => <div />}>
-      <MermaidClientWrapper {...props} />
-    </ErrorBoundary>
-  );
+  // ErrorBoundaryProps declares `children` as required, but TS react JSX
+  // mode does not infer JSX children into the Props interface.
+  const boundaryProps = {
+    fallback: () => <div />,
+    children: <MermaidClientWrapper {...props} />,
+  } as React.ComponentProps<typeof ErrorBoundary>;
+
+  return <ErrorBoundary {...boundaryProps} />;
 }
 
 /**
