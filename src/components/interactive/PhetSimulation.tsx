@@ -21,10 +21,7 @@ export const PhetSimulation: React.FC<PhetSimulationProps> = ({
   return (
     <div className={styles.embedContainer}>
       <p className={styles.embedTitle}>{title}</p>
-      <div
-        className={styles.embedResponsive}
-        style={{ paddingBottom: `${aspectPadding}%` }}
-      >
+      <div className={styles.embedResponsive} style={{ paddingBottom: `${aspectPadding}%` }}>
         <iframe
           className={styles.embedIframe}
           src={src}

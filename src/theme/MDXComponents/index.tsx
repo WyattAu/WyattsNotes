@@ -7,9 +7,9 @@
  *   <DesmosGraph calculatorUrl="https://www.desmos.com/calculator/abc123" />
  */
 
+import { DesmosGraph } from '@site/src/components/interactive/DesmosGraph';
 import { Geogebra } from '@site/src/components/interactive/Geogebra';
 import { PhetSimulation } from '@site/src/components/interactive/PhetSimulation';
-import { DesmosGraph } from '@site/src/components/interactive/DesmosGraph';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type MDXComponentType = Record<string, any>;

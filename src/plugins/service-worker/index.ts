@@ -15,11 +15,10 @@
  *   ]
  */
 
-import type { DocusaurusConfig } from '@docusaurus/types';
-import type { Plugin } from '@docusaurus/types';
-import { generateSW } from 'workbox-build';
+import type { DocusaurusConfig, Plugin } from '@docusaurus/types';
 import fs from 'fs';
 import path from 'path';
+import { generateSW } from 'workbox-build';
 
 interface ServiceWorkerPluginOptions {
   enable?: boolean;
@@ -35,14 +34,14 @@ export default function serviceWorkerPlugin(
     name: 'service-worker-plugin',
 
     async postBuild({ outDir, baseUrl }) {
-      if (options.enable === false) return;
+      if (options.enable === false) {
+        return;
+      }
 
       const { count, size } = await generateSW({
         swDest: path.join(outDir, 'sw.js'),
         globDirectory: outDir,
-        globPatterns: [
-          '**/*.{js,css,html,svg,png,jpg,jpeg,gif,webp,ico,woff,woff2,ttf,eot}',
-        ],
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,jpeg,gif,webp,ico,woff,woff2,ttf,eot}'],
         skipWaiting: true,
         clientsClaim: true,
         maximumFileSizeToCacheInBytes: options.maximumFileSizeToCacheInBytes || 10 * 1024 * 1024,
@@ -101,11 +100,13 @@ export default function serviceWorkerPlugin(
 
       // Inject service worker registration into index.html
       const indexPath = path.join(outDir, 'index.html');
+
       if (fs.existsSync(indexPath)) {
         let indexContent = fs.readFileSync(indexPath, 'utf-8');
         const swRegister = `<script>
 if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('${baseUrl}sw.js')})}
 </script>`;
+
         indexContent = indexContent.replace('</head>', `${swRegister}</head>`);
         fs.writeFileSync(indexPath, indexContent, 'utf-8');
       }

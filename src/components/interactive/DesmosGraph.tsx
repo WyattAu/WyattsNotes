@@ -19,10 +19,7 @@ export const DesmosGraph: React.FC<DesmosGraphProps> = ({
   return (
     <div className={styles.embedContainer}>
       <p className={styles.embedTitle}>{title}</p>
-      <div
-        className={styles.embedResponsive}
-        style={{ paddingBottom: `${aspectPadding}%` }}
-      >
+      <div className={styles.embedResponsive} style={{ paddingBottom: `${aspectPadding}%` }}>
         <iframe
           className={styles.embedIframe}
           src={calculatorUrl}
