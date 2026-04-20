@@ -76,6 +76,10 @@ $$V = IR = 2 \times 2.16 = 4.33 \mathrm{ V}$$
 
 ## Series and Parallel Circuits
 
+<PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
+
+Build series and parallel circuits interactively and observe how current and voltage distribute across components.
+
 ### Series Circuits
 
 Current is the same through all components:

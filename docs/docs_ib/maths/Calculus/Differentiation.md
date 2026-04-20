@@ -530,6 +530,11 @@ At $x = 3$: $f''(3) = 6 \gt 0$, so local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 ### Concavity and Points of Inflection
 
+<!-- TODO: replace with a verified Desmos graph URL showing f(x), f'(x), f''(x) with interactive sliders -->
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Stationary Points and Concavity" />
+
+Use the sliders to adjust coefficients of a polynomial and observe how $f'(x)$ and $f''(x)$ determine stationary points and concavity.
+
 - $f$ is **concave up** on an interval if $f''(x) \gt 0$ (the graph curves upward).
 - $f$ is **concave down** on an interval if $f''(x) \lt 0$ (the graph curves downward).
 - A **point of inflection** occurs where the concavity changes, i.e., $f''(x)$ changes sign.

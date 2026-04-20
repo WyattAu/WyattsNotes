@@ -77,6 +77,10 @@ $\pi \mathrm{ rad}$).
 
 ### Reflection
 
+<PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
+
+Adjust frequency, amplitude, and damping to explore wave behaviour on a virtual string.
+
 Reflection occurs when a wave bounces off a boundary. The law of reflection states:
 
 - The angle of incidence equals the angle of reflection: $\theta_i = \theta_r$

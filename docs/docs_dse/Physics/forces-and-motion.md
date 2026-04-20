@@ -174,6 +174,10 @@ Maximum range occurs at $\theta = 45^\circ$, giving $R_{\max} = u^2/g$.
 
 Complementary angles ($\theta$ and $90^\circ - \theta$) produce the same range.
 
+<PhetSimulation simulationId="projectile-motion" title="Projectile Motion" />
+
+Explore how launch angle and initial speed affect the trajectory.
+
 ### Worked Example 4
 
 A ball is thrown from ground level with speed $20 \mathrm{ m/s}$ at $50^\circ$ above the horizontal.
@@ -269,6 +273,10 @@ $$\frac{GMm}{r^2} = \frac{mv^2}{r} \implies v = \sqrt{\frac{GM}{r}}$$
 $$T = \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r^3}{GM}}$$
 
 This is Kepler's third law: $T^2 \propto r^3$.
+
+<PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
+
+Visualise how orbital speed and period depend on the distance from the central body.
 
 ### Worked Example 6
 

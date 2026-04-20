@@ -126,6 +126,10 @@ $$\tau_{\max} = nBIA = 200 \times 0.3 \times 0.5 \times 0.004 = 0.12 \mathrm{ N\
 
 ### Faraday's Law
 
+<PhetSimulation simulationId="faraday" title="Faraday's Electromagnetic Lab" />
+
+Move magnets and coils to observe how changing magnetic flux induces an EMF.
+
 An EMF is induced in a circuit whenever there is a change in the magnetic flux linking the circuit:
 
 $$\varepsilon = -N\frac{d\Phi}{dt}$$

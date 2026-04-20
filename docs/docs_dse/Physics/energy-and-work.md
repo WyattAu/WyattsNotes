@@ -108,6 +108,10 @@ $$E_{k1} + E_{p1} = E_{k2} + E_{p2} + W_{\mathrm{lost}}$$
 
 where $W_{\mathrm{lost}}$ is the energy dissipated as thermal energy.
 
+<PhetSimulation simulationId="energy-skate-park" title="Energy Skate Park" />
+
+Observe the continuous interchange between kinetic and potential energy as the skater moves along the track.
+
 ### Worked Example 2
 
 A roller coaster car of mass $600 \mathrm{ kg}$ starts from rest at point `A`, $25 \mathrm{ m}$

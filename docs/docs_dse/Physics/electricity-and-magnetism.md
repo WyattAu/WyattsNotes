@@ -95,6 +95,10 @@ The field points **away** from a positive charge and **towards** a negative char
 
 ### Electric Field Lines
 
+<PhetSimulation simulationId="charges-and-fields" title="Charges and Fields" />
+
+Place positive and negative charges to visualise the resulting electric field lines and equipotential lines.
+
 Electric field lines are a visual representation of the electric field:
 
 - Field lines start on positive charges and end on negative charges
