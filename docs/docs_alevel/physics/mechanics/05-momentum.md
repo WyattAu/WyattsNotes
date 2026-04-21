@@ -13,11 +13,9 @@ slug: momentum
 
 :::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2 :::
 
-
 <PhetSimulation simulationId="collision-lab" title="Collision Lab" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Linear Momentum
 

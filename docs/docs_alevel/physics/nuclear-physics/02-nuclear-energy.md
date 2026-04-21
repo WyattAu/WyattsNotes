@@ -11,15 +11,11 @@ slug: nuclear-energy
 
 ## Nuclear Energy
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="nuclear-fission" title="Nuclear Fission" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Mass Defect and Binding Energy
 
@@ -68,8 +64,8 @@ This is the energy that would be required to completely separate the nucleus int
 protons and neutrons. Equivalently, it is the energy released when the nucleus is formed from its
 constituents.
 
-**Calculating mass defect.** Use atomic mass units (u), where $1\,\mathrm{u} = 1.661 \times 10^{-27}$
-kg, and $1\,\mathrm{u} \cdot c^2 = 931.5$ MeV.
+**Calculating mass defect.** Use atomic mass units (u), where
+$1\,\mathrm{u} = 1.661 \times 10^{-27}$ kg, and $1\,\mathrm{u} \cdot c^2 = 931.5$ MeV.
 
 <details>
 <summary>Example: Binding Energy of Helium-4</summary>
@@ -81,11 +77,9 @@ u.
 
 $E_b = 0.03040 \times 931.5 = 28.3$ MeV.
 
-:::info
-When using atomic masses (which include electrons), use the hydrogen atom mass
+:::info When using atomic masses (which include electrons), use the hydrogen atom mass
 $m_H = 1.00783$ u rather than the proton mass $m_p = 1.00728$ u. The electron binding energies
-cancel out.
-:::
+cancel out. :::
 
 </details>
 
@@ -232,11 +226,9 @@ For $\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\math
 - $E_b^{\mathrm{added}} \approx 4.9$ MeV while $E_f \approx 5.5$ MeV.
 - Since $E_b^{\mathrm{added}} \lt{} E_f$, thermal neutrons cannot induce fission.
 
-:::warning
-Common Pitfall Do not confuse "fissile" with "radioactive." U-238 is highly radioactive
+:::warning Common Pitfall Do not confuse "fissile" with "radioactive." U-238 is highly radioactive
 but is not fissile --- it cannot sustain a chain reaction with thermal neutrons. The only naturally
-occurring fissile isotope is U-235 (0.72\% of natural uranium).
-:::
+occurring fissile isotope is U-235 (0.72\% of natural uranium). :::
 
 ### Fast Fission of U-238
 
@@ -279,8 +271,8 @@ de-excite. Typically 2--3 are emitted per fission.
 that undergo beta decay to excited states above the neutron separation energy. Key precursors for
 U-235 thermal fission:
 
-| Precursor                       | Half-life | Yield per 100 fissions |
-| ------------------------------- | --------- | ---------------------- |
+| Precursor                         | Half-life | Yield per 100 fissions |
+| --------------------------------- | --------- | ---------------------- |
 | $\prescript{87}{}{35}\mathrm{Br}$ | 55.7 s    | 0.027                  |
 | $\prescript{137}{}{53}\mathrm{I}$ | 24.5 s    | 0.025                  |
 
@@ -321,12 +313,10 @@ The $\sim 200$ MeV released per U-235 fission is distributed as follows:
 | Anti-neutrinos                    | $\sim 12$      | Lost (escape reactor)      |
 | **Total recoverable**             | **$\sim 193$** |                            |
 
-:::warning
-Common Pitfall Approximately 12 MeV per fission ($\sim 6\%$) is carried away by
+:::warning Common Pitfall Approximately 12 MeV per fission ($\sim 6\%$) is carried away by
 anti-neutrinos, which interact so weakly that they escape the reactor entirely. When calculating
 thermal power output, use $\sim 200$ MeV total but $\sim 193$ MeV recoverable. The neutrino energy
-is unrecoverable.
-:::
+is unrecoverable. :::
 
 ### Breeder Reactors
 
@@ -341,8 +331,9 @@ $$\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\mathrm{
 
 $$\prescript{232}{}{90}\mathrm{Th} + \mathrm{n} \to \prescript{233}{}{90}\mathrm{Th} \to \prescript{233}{}{91}\mathrm{Pa} \to \prescript{233}{}{92}\mathrm{U}$$
 
-The breeding ratio $\mathrm{BR} = \mathrm{fissile atoms produced} / \mathrm{fissile atoms consumed}$. For
-BR $\gt{} 1$, the reactor is a net producer. Fast breeder reactors using liquid sodium achieve BR
+The breeding ratio
+$\mathrm{BR} = \mathrm{fissile atoms produced} / \mathrm{fissile atoms consumed}$. For BR $\gt{} 1$,
+the reactor is a net producer. Fast breeder reactors using liquid sodium achieve BR
 $\approx 1.2$--$1.3$. The thorium cycle is attractive because thorium is roughly $3\times$ more
 abundant than uranium and produces less long-lived transuranic waste.
 
@@ -354,8 +345,7 @@ abundant than uranium and produces less long-lived transuranic waste.
 | Intermediate (ILW) | Some shielding required       | Reactor components    | Engineered facilities    |
 | Low Level (LLW)    | Minimal radioactivity         | Contaminated clothing | Near-surface disposal    |
 
-:::tip
-Exam Technique When discussing nuclear waste, always connect half-life to disposal strategy.
+:::tip Exam Technique When discussing nuclear waste, always connect half-life to disposal strategy.
 Short half-life isotopes can be stored and left to decay. Long half-life isotopes (thousands to
 millions of years) require geological disposal relying on multiple barriers: waste form
 (vitrification), container (steel/copper), buffer (bentonite clay), and host rock (granite/clay).
@@ -398,11 +388,11 @@ its energy in a single collision. $\square$
 
 **Consequences for moderator choice:**
 
-| Moderator                                | $M/m_n$ | $\Delta E_{\max}/E$ | Collisions to thermalise |
-| ---------------------------------------- | ------- | ------------------- | ------------------------ |
+| Moderator                                  | $M/m_n$ | $\Delta E_{\max}/E$ | Collisions to thermalise |
+| ------------------------------------------ | ------- | ------------------- | ------------------------ |
 | Hydrogen ($\prescript{1}{}{1}\mathrm{H}$)  | 1       | 1.000               | $\sim 18$                |
 | Deuterium ($\prescript{2}{}{1}\mathrm{H}$) | 2       | 0.889               | $\sim 25$                |
-| Carbon-12                                | 12      | 0.284               | $\sim 115$               |
+| Carbon-12                                  | 12      | 0.284               | $\sim 115$               |
 
 The average logarithmic energy decrement per collision is $\xi$, and the number of collisions to
 thermalise from $E_0 = 2$ MeV to $E_{\mathrm{th}} = 0.025$ eV is $n = \ln(E_0/E_{\mathrm{th}})/\xi$.
@@ -429,11 +419,9 @@ The **effective** multiplication factor $k_{\mathrm{eff}}$ accounts for neutron 
 absorption: $k_{\mathrm{eff}} = k_{\infty} \cdot P_{\mathrm{non-leak}}$, where $k_{\infty}$ is the
 infinite-medium factor and $P_{\mathrm{non-leak}}$ is the non-leakage probability.
 
-:::tip
-Exam Technique When asked about reactor control, state the precise condition: "The reactor is
-critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce $k_{\mathrm{eff}}$ below 1
-for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for steady power."
-:::
+:::tip Exam Technique When asked about reactor control, state the precise condition: "The reactor is
+critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce $k_{\mathrm{eff}}$
+below 1 for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for steady power." :::
 
 ### Delayed Neutrons and Reactor Control
 
@@ -443,17 +431,17 @@ neutrons, controlling a reactor would be essentially impossible on human timesca
 **Theorem.** The reactor response time is governed by delayed neutrons, not the prompt neutron
 lifetime, provided $k_{\mathrm{eff}} \lt 1 + \beta$.
 
-_Proof._ The prompt neutron lifetime is $\ell \approx 10^{-4}$ s. If $k_{\mathrm{eff}} = 1.001$ (0.1\%
-supercritical) with only prompt neutrons, the power grows as:
+_Proof._ The prompt neutron lifetime is $\ell \approx 10^{-4}$ s. If $k_{\mathrm{eff}} = 1.001$
+(0.1\% supercritical) with only prompt neutrons, the power grows as:
 
 $$P(t) = P_0 \, e^{(k-1)t/\ell} = P_0 \, e^{0.001 \times t / 10^{-4}} = P_0 \, e^{10\,t}$$
 
 Power doubles every $\ln 2 / 10 \approx 0.069$ s. No mechanical system can respond this fast.
 
 With delayed neutrons (fraction $\beta \approx 0.0065$ for U-235), the reactor is "prompt
-subcritical" when $1 \lt k_{\mathrm{eff}} \lt 1 + \beta$. In this regime, the neutron population grows
-on the timescale of the longest-lived delayed precursor ($\sim 55$ s for Br-87), not the prompt
-lifetime. The effective time constant becomes:
+subcritical" when $1 \lt k_{\mathrm{eff}} \lt 1 + \beta$. In this regime, the neutron population
+grows on the timescale of the longest-lived delayed precursor ($\sim 55$ s for Br-87), not the
+prompt lifetime. The effective time constant becomes:
 
 $$\tau_{\mathrm{eff}} \approx \frac{\beta / \bar{\lambda}}{k_{\mathrm{eff}} - 1}$$
 
@@ -461,12 +449,10 @@ where $\bar{\lambda} \approx 0.08\,\mathrm{s}^{-1}$. For $k_{\mathrm{eff}} = 1.0
 $\tau_{\mathrm{eff}} \approx 0.0065 / (0.08 \times 0.001) \approx 81$ s --- easily manageable by
 mechanical control systems. $\square$
 
-:::warning
-Common Pitfall The reactor period is not the prompt neutron lifetime. The reactor
+:::warning Common Pitfall The reactor period is not the prompt neutron lifetime. The reactor
 responds on the timescale set by delayed neutrons ($\sim$tens of seconds), provided
-$k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the reactor become
-"prompt supercritical" and uncontrollable.
-:::
+$k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the reactor
+become "prompt supercritical" and uncontrollable. :::
 
 ### Coolant
 
@@ -505,12 +491,10 @@ for compact gamma shielding. **Water** provides both shielding and moderation in
 | Thermal efficiency  | $\sim 33\%$                         | $\sim 41\%$                                 |
 | Steam cycle         | Secondary loop (no boiling in core) | Direct (CO$_2$ heats water in boiler)       |
 
-:::tip
-Exam Technique For reactor comparison questions, the key trade-off is: PWRs use water as both
+:::tip Exam Technique For reactor comparison questions, the key trade-off is: PWRs use water as both
 moderator and coolant (simpler but lower efficiency), while AGRs separate them (graphite moderator,
 CO$_2$ coolant), allowing higher temperature and thus higher efficiency from
-$\eta \lt{} 1 - T_c/T_h$.
-:::
+$\eta \lt{} 1 - T_c/T_h$. :::
 
 ## 7. Nuclear Fusion
 
@@ -540,10 +524,8 @@ Fission is initiated by a neutral particle (neutron), so there is no Coulomb bar
 Fusion requires positively charged nuclei to approach within $\sim 10^{-15}$ m, requiring enormous
 kinetic energy to overcome the Coulomb repulsion.
 
-:::info
-Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
-require calculation of energy released from mass defect.
-:::
+:::info Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
+require calculation of energy released from mass defect. :::
 
 ## 8. Nuclear Fusion in Detail
 
@@ -581,9 +563,9 @@ $$\prescript{12}{}{6}\mathrm{C} \xrightarrow{+\mathrm{p}} \prescript{13}{}{7}\ma
 **Net reaction:** $4\mathrm{p} \to \prescript{4}{}{2}\mathrm{He} + 26.7$ MeV (identical to the pp
 chain).
 
-The CNO cycle rate scales as $\propto T^{16\mathrm{--}20}$ (for the slowest step) versus $\propto T^4$
-for the pp chain. At $T \gt{} 1.5 \times 10^7$ K the CNO cycle dominates. It also produces a steeper
-temperature gradient in the stellar core, driving convection in massive stars.
+The CNO cycle rate scales as $\propto T^{16\mathrm{--}20}$ (for the slowest step) versus
+$\propto T^4$ for the pp chain. At $T \gt{} 1.5 \times 10^7$ K the CNO cycle dominates. It also
+produces a steeper temperature gradient in the stellar core, driving convection in massive stars.
 
 ### The Lawson Criterion
 
@@ -599,12 +581,12 @@ $P_{\mathrm{fus}} = \frac{1}{4}n^2\langle\sigma v\rangle
 E_{\mathrm{fus}}$, where
 $\langle\sigma v\rangle$ is the reactivity (Maxwell-Boltzmann averaged) and the factor of $1/4$
 accounts for equal D and T densities. Power lost by thermal conduction is
-$P_{\mathrm{loss}} = 3nkT/\tau$. Setting $P_{\mathrm{fus}} \ge P_{\mathrm{loss}}$ and substituting the
-temperature-dependent $\langle\sigma v\rangle$ yields the Lawson criterion. The exact numerical
+$P_{\mathrm{loss}} = 3nkT/\tau$. Setting $P_{\mathrm{fus}} \ge P_{\mathrm{loss}}$ and substituting
+the temperature-dependent $\langle\sigma v\rangle$ yields the Lawson criterion. The exact numerical
 value depends on fuel choice and loss model.
 
-The triple product $nT\tau \gt{} 3 \times 10^{21}\,\mathrm{keV}\,\mathrm{s}\,\mathrm{m}^{-3}$ is sometimes
-quoted as an equivalent form.
+The triple product $nT\tau \gt{} 3 \times 10^{21}\,\mathrm{keV}\,\mathrm{s}\,\mathrm{m}^{-3}$ is
+sometimes quoted as an equivalent form.
 
 ### Tokamak Design
 
@@ -661,11 +643,9 @@ the iron core exceeds the Chandrasekhar limit ($\sim 1.4\,M_\odot$), it collapse
 supernova, whose energy drives the creation of elements heavier than iron via the s-process and
 r-process.
 
-:::warning
-Common Pitfall The "iron peak" is often simplified to "iron is the most stable nucleus."
+:::warning Common Pitfall The "iron peak" is often simplified to "iron is the most stable nucleus."
 Strictly, Ni-62 has the highest $E_b/A$ (8.7945 MeV/nucleon versus Fe-56's 8.7906 MeV/nucleon), but
-Fe-56 is produced in greater abundance because the alpha process favours nuclei with $N = Z$.
-:::
+Fe-56 is produced in greater abundance because the alpha process favours nuclei with $N = Z$. :::
 
 ## Problem Set
 

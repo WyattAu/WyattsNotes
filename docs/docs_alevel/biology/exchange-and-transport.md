@@ -481,9 +481,8 @@ Calculate the cardiac output at rest and during exercise. By what factor does ca
 
 **Answer.** At rest: cardiac output
 $= 65 \times 70 = 4550\ \mathrm{cm^3\ min^{-1}} = 4.55\ \mathrm{dm^3\ min^{-1}}$. During exercise:
-cardiac output
-$= 110 \times 160 = 17600\ \mathrm{cm^3\ min^{-1}} = 17.6\ \mathrm{dm^3\ min^{-1}}$. Factor of
-increase $= 17.6 / 4.55 \approx 3.9\times$.
+cardiac output $= 110 \times 160 = 17600\ \mathrm{cm^3\ min^{-1}} = 17.6\ \mathrm{dm^3\ min^{-1}}$.
+Factor of increase $= 17.6 / 4.55 \approx 3.9\times$.
 
 <b>If you get this wrong, revise:</b> [Cardiac Output](#54-cardiac-output)
 

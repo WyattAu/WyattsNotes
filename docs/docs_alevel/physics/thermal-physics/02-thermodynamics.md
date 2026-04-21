@@ -11,15 +11,11 @@ slug: thermodynamics
 
 ## Thermodynamics
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
-:::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="gas-properties" title="Gas Properties" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. The First Law of Thermodynamics
 
@@ -42,11 +38,9 @@ where:
 - $Q$ is the energy transferred to the system by heating (J) — positive if heat flows in
 - $W$ is the work done **on** the system (J) — positive if work is done on the system
 
-:::warning
-Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
+:::warning Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
 work done **by** the system. Always check which convention is being used. We use the "physics"
-convention where $W$ is work done on the system.
-:::
+convention where $W$ is work done on the system. :::
 
 **Intuition.** The first law is simply energy conservation applied to thermodynamic systems. You can
 increase a gas's internal energy either by heating it or by compressing it (doing work on it).
@@ -109,8 +103,8 @@ $$W_{\mathrm{by}} = p\Delta V = p(V_2 - V_1)$$
 
 The work done by the gas equals the **area under the $p$-$V$ curve**.
 
-In our convention (work done on system): $W_{\mathrm{on}} = -W_{\mathrm{by}} = -p\Delta V$ for constant
-pressure.
+In our convention (work done on system): $W_{\mathrm{on}} = -W_{\mathrm{by}} = -p\Delta V$ for
+constant pressure.
 
 ## 3. Thermodynamic Processes on $p$-$V$ Diagrams
 
@@ -130,8 +124,8 @@ From the first law: $\Delta U = Q$ (all heat goes into internal energy).
 
 ### Isothermal (Constant Temperature)
 
-For an ideal gas, $pV = nRT = \mathrm{const}$, so $pV = \mathrm{const}$ — a **hyperbola** on the $p$-$V$
-diagram.
+For an ideal gas, $pV = nRT = \mathrm{const}$, so $pV = \mathrm{const}$ — a **hyperbola** on the
+$p$-$V$ diagram.
 
 $$W_{\mathrm{by}} = \int_{V_1}^{V_2} p\,dV = \int_{V_1}^{V_2} \frac{nRT}{V}\,dV = nRT\ln\frac{V_2}{V_1}$$
 
@@ -236,11 +230,9 @@ $$\mathrm{COP}_{\mathrm{hp}} = \frac{Q_H}{W} = \frac{T_H}{T_H - T_C}$$
 
 Note that $\mathrm{COP}_{\mathrm{hp}} = \mathrm{COP}_{\mathrm{ref}} + 1$.
 
-:::warning
-Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
+:::warning Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
 refrigerator COP ($Q_C/W$). The key difference: efficiency is a fraction (always $\lt 1$), while COP
-can exceed 1 (you move more heat than the work you put in).
-:::
+can exceed 1 (you move more heat than the work you put in). :::
 
 ## 5. The Second Law of Thermodynamics
 
@@ -309,8 +301,7 @@ molecular arrangements (high $W$). Melting increases entropy because molecules g
 more configurations. Similarly, vaporisation produces a much larger entropy increase because gas
 molecules have far more positional freedom.
 
-:::tip
-Exam Technique When asked about the second law, state it clearly (Clausius or Kelvin form),
+:::tip Exam Technique When asked about the second law, state it clearly (Clausius or Kelvin form),
 give a consequence (no 100% efficient engine), and explain in terms of entropy if possible. On a
 $p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given temperature limits.
 :::
@@ -501,13 +492,13 @@ $n = p_1V_1/(RT) = 2.0 \times 10^5 \times 2.0 \times 10^{-3} / (8.31 \times 400)
 
 $W_{\mathrm{by}} = nRT\ln(V_2/V_1) = 0.120 \times 8.31 \times 400 \times \ln(4) = 553$ J.
 
-(b) $\Delta U = 0$ (isothermal, ideal gas), so $Q = -W_{\mathrm{on}} = W_{\mathrm{by}} = 553$ J (heat
-absorbed).
+(b) $\Delta U = 0$ (isothermal, ideal gas), so $Q = -W_{\mathrm{on}} = W_{\mathrm{by}} = 553$ J
+(heat absorbed).
 
 (c) $\Delta S_{\mathrm{gas}} = Q/T = 553/400 = 1.38$ J K$^{-1}$.
 
-(d) The surroundings lose heat $Q$ at temperature $T$, so $\Delta S_{\mathrm{surr}} = -Q/T = -1.38$ J
-K$^{-1}$. Total: $\Delta S_{\mathrm{universe}} = 0$ (reversible isothermal process).
+(d) The surroundings lose heat $Q$ at temperature $T$, so $\Delta S_{\mathrm{surr}} = -Q/T = -1.38$
+J K$^{-1}$. Total: $\Delta S_{\mathrm{universe}} = 0$ (reversible isothermal process).
 
 <b>If you get this wrong, revise:</b> [Isothermal](#isothermal-constant-temperature)
 
@@ -525,8 +516,8 @@ adiabatic pressure drops faster with increasing volume than the isothermal press
 
 Physically: in an isothermal expansion, heat flows in to maintain temperature, so the pressure drop
 is moderated. In an adiabatic expansion, no heat enters, so the gas cools
-($\Delta U = W_{\mathrm{on}} < 0$), and the pressure drops both due to increased volume and decreased
-temperature. The combined effect makes the adiabatic curve steeper.
+($\Delta U = W_{\mathrm{on}} < 0$), and the pressure drops both due to increased volume and
+decreased temperature. The combined effect makes the adiabatic curve steeper.
 
 At any given volume $V > V_0$ (expansion from $V_0$), the adiabatic pressure is lower than the
 isothermal pressure because the gas is colder.
@@ -546,8 +537,9 @@ Carnot efficiency, (b) the heat absorbed per cycle if the engine delivers 500 J 
 
 (b) $W = \eta \times Q_H$. $Q_H = W/\eta = 500/0.40 = 1250$ J. $Q_C = Q_H - W = 750$ J.
 
-(c) $\Delta S_{\mathrm{universe}} = -Q_H/T_H + Q_C/T_C = -1250/600 + 750/300 = -2.083 + 2.500 = 0.417$
-J K$^{-1}$ per cycle.
+(c)
+$\Delta S_{\mathrm{universe}} = -Q_H/T_H + Q_C/T_C = -1250/600 + 750/300 = -2.083 + 2.500 = 0.417$ J
+K$^{-1}$ per cycle.
 
 The positive entropy production confirms the engine is irreversible (if it were reversible,
 $\Delta S_{\mathrm{universe}} = 0$ and $\eta = \eta_{\mathrm{Carnot}}$).
@@ -563,8 +555,8 @@ $\Delta S_{\mathrm{universe}} = 0$ and $\eta = \eta_{\mathrm{Carnot}}$).
 Derive the relation $pV^{\gamma} = \mathrm{const}$ for a reversible adiabatic process starting from
 the first law and the ideal gas law.
 
-**Answer.** For an adiabatic process, $Q = 0$, so $\Delta U = W_{\mathrm{on}} = -p\,dV$ (infinitesimal
-work done on system).
+**Answer.** For an adiabatic process, $Q = 0$, so $\Delta U = W_{\mathrm{on}} = -p\,dV$
+(infinitesimal work done on system).
 
 For $n$ moles of ideal gas: $dU = nC_v\,dT$.
 

@@ -48,11 +48,9 @@ The ADL rule is the reason `std::cout << "hello"` works: the left operand has ty
 (in namespace `std`), and the right operand has type `const char[6]` (built-in type, no ADL
 contribution). ADL adds the namespace `std` to the search set, where `operator<<` is found.
 
-:::info
-Relevance ADL is essential for operator overloading and generic code. Without ADL, every
+:::info Relevance ADL is essential for operator overloading and generic code. Without ADL, every
 call to `operator<<`, `operator==`, or a custom swap function would require explicit namespace
-qualification, breaking generic programming.
-:::
+qualification, breaking generic programming. :::
 
 ## 1.2 ADL in Detail [N4950 §6.5.4.2]
 
@@ -171,7 +169,8 @@ Let $V \subseteq C$ be the set of viable functions. A function $f \in V$ is the 
 function** if and only if for every other $g \in V \setminus \{f\}$:
 
 - $\mathrm{ICS}_f(i) \preceq \mathrm{ICS}_g(i)$ for all argument positions $i$ (not worse).
-- $\mathrm{ICS}_f(j) \prec \mathrm{ICS}_g(j)$ for at least one argument position $j$ (strictly better).
+- $\mathrm{ICS}_f(j) \prec \mathrm{ICS}_g(j)$ for at least one argument position $j$ (strictly
+  better).
 
 Where $\preceq$ denotes "no worse than" and $\prec$ denotes "strictly better" in the conversion
 ranking hierarchy. If no unique best viable function exists, the call is ambiguous [N4950
@@ -377,8 +376,7 @@ int main() {
 }
 ```
 
-:::warning
-ADL can pull in unexpected overloads from associated namespaces. The "hidden friend"
+:::warning ADL can pull in unexpected overloads from associated namespaces. The "hidden friend"
 idiom — defining the operator as a friend inside the class — restricts the operator to being found
 only via ADL, preventing unintended overloads:
 
@@ -656,11 +654,12 @@ argument and no worse for any argument, then $f_1$ is selected.
 **Proof:**
 
 1. Let $k$ be the number of arguments. For each argument $i \in \{1, \ldots, k\}$, let
-   $\mathrm{ICS}_{f_1}(i)$ and $\mathrm{ICS}_{f_2}(i)$ be the implicit conversion sequences for $f_1$
-   and $f_2$ respectively.
+   $\mathrm{ICS}_{f_1}(i)$ and $\mathrm{ICS}_{f_2}(i)$ be the implicit conversion sequences for
+   $f_1$ and $f_2$ respectively.
 
-2. By the premise, $\exists j$ such that $\mathrm{ICS}_{f_1}(j) \prec \mathrm{ICS}_{f_2}(j)$ (strictly
-   better) and $\forall i, \mathrm{ICS}_{f_1}(i) \preceq \mathrm{ICS}_{f_2}(i)$ (no worse).
+2. By the premise, $\exists j$ such that $\mathrm{ICS}_{f_1}(j) \prec \mathrm{ICS}_{f_2}(j)$
+   (strictly better) and $\forall i, \mathrm{ICS}_{f_1}(i) \preceq \mathrm{ICS}_{f_2}(i)$ (no
+   worse).
 
 3. By [N4950 §12.4.3.2], this is exactly the definition of "better viable function."
 

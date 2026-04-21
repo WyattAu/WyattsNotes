@@ -67,7 +67,7 @@ semantic HTML improves accessibility, SEO, and code maintainability.
 | `<aside>`        | Sidebar, related content                         | `<div>`                 |
 | `<footer>`       | Footer information (copyright, links)            | `<div>`                 |
 | `<figure>`       | Self-contained content with optional caption     | `<div>`                 |
-| `<figcaption>`   | Caption for a `<figure>`                         | `<span>` or ``       |
+| `<figcaption>`   | Caption for a `<figure>`                         | `<span>` or ``          |
 | `<time>`         | Date/time                                        | `<span>`                |
 | `<mark>`         | Highlighted text                                 | `<span>`                |
 
@@ -202,18 +202,18 @@ Forms collect user input and submit it to a server for processing.
 
 CSS selectors determine which HTML elements are targeted by style rules.
 
-| Selector Type        | Syntax          | Description                             | Specificity |
-| -------------------- | --------------- | --------------------------------------- | ----------- |
-| **Universal**        | `*`             | Selects all elements                    | 0-0-0       |
-| **Element**          | `p`             | All `` elements                      | 0-0-1       |
-| **Class**            | `.highlight`    | Elements with `class="highlight"`       | 0-1-0       |
-| **ID**               | `#header`       | Element with `id="header"`              | 0-1-0-0     |
-| **Descendant**       | `div p`         | `` inside any `<div>`                | Additive    |
-| **Child**            | `div > p`       | `` that is a direct child of `<div>` | Additive    |
-| **Adjacent sibling** | `h1 + p`        | `` immediately after `<h1>`          | Additive    |
-| **Attribute**        | `[type="text"]` | Elements with matching attribute        | 0-1-0       |
-| **Pseudo-class**     | `a:hover`       | Element in a specific state             | 0-1-0       |
-| **Pseudo-element**   | `p::first-line` | Specific part of an element             | 0-0-1       |
+| Selector Type        | Syntax          | Description                        | Specificity |
+| -------------------- | --------------- | ---------------------------------- | ----------- |
+| **Universal**        | `*`             | Selects all elements               | 0-0-0       |
+| **Element**          | `p`             | All `` elements                    | 0-0-1       |
+| **Class**            | `.highlight`    | Elements with `class="highlight"`  | 0-1-0       |
+| **ID**               | `#header`       | Element with `id="header"`         | 0-1-0-0     |
+| **Descendant**       | `div p`         | ``inside any`<div>`                | Additive    |
+| **Child**            | `div > p`       | ``that is a direct child of`<div>` | Additive    |
+| **Adjacent sibling** | `h1 + p`        | ``immediately after`<h1>`          | Additive    |
+| **Attribute**        | `[type="text"]` | Elements with matching attribute   | 0-1-0       |
+| **Pseudo-class**     | `a:hover`       | Element in a specific state        | 0-1-0       |
+| **Pseudo-element**   | `p::first-line` | Specific part of an element        | 0-0-1       |
 
 **Specificity ordering (low to high):** Universal &lt; Element &lt; Class/Attribute/Pseudo-class
 &lt; ID &lt; Inline style &lt; `!important`
@@ -289,7 +289,7 @@ $$
 
 | Display Value  | Behaviour                                                           |
 | -------------- | ------------------------------------------------------------------- |
-| `block`        | Takes full width; starts on new line (e.g., `<div>`, ``)         |
+| `block`        | Takes full width; starts on new line (e.g., `<div>`, ``)            |
 | `inline`       | Takes only content width; flows within text (e.g., `<span>`, `<a>`) |
 | `inline-block` | Inline flow but respects width/height                               |
 | `flex`         | Flexbox container for flexible 1D layouts                           |
@@ -795,9 +795,10 @@ interface design.
 1. **Forgetting the DOCTYPE:** Without `<!DOCTYPE html>`, browsers render in quirks mode, which can
    cause inconsistent layout across browsers. Always include it as the first line.
 
-2. **Block vs inline elements:** Block elements (like `<div>`, ``) take full width and start on a
-   new line. Inline elements (like `<span>`, `<a>`) take only content width and flow within text.
-   You cannot set width/height on inline elements without changing their display type.
+2. **Block vs inline elements:** Block elements (like `<div>`,
+   ``) take full width and start on a new line. Inline elements (like `<span>`, `<a>`) take only
+   content width and flow within text. You cannot set width/height on inline elements without
+   changing their display type.
 
 3. **CSS specificity conflicts:** When multiple rules target the same element, the most specific
    rule wins. `!important` overrides everything but should be used sparingly. Understand the

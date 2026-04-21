@@ -17,16 +17,10 @@ approximation, and analysis that would otherwise be impossible. The Maclaurin se
 function about $x = 0$; the Taylor series generalises this to expansion about any point. Together
 they are among the most powerful tools in analysis and applied mathematics.
 
-
-<DesmosGraph
-  title="Taylor Series Approximation of e^x"
-  expressions={["e^x", "\sum_{n=0}^{N} \frac{x^n}{n!}"]}
-  width={800}
-  height={500}
-/>
+<DesmosGraph title="Taylor Series Approximation of e^x" expressions={["e^x", "\sum_{n=0}^{N}
+\frac{x^n}{n!}"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
-
 
 ### Board Coverage
 
@@ -37,11 +31,9 @@ Adjust the parameters in the graph above to explore the relationships between va
 | OCR (A) | Paper 1 | Maclaurin series; standard series; applications                                        |
 | CIE     | P2      | Maclaurin series; expansion of compound functions; range of validity                   |
 
-:::info
-All boards require the standard Maclaurin series. Edexcel and CIE additionally require
+:::info All boards require the standard Maclaurin series. Edexcel and CIE additionally require
 Taylor series about $x = a$. The formula booklet lists the standard Maclaurin series — you must be
-able to derive them and apply them.
-:::
+able to derive them and apply them. :::
 
 <hr />
 
@@ -267,10 +259,8 @@ $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 
 $\square$
 
-:::tip
-The geometric series is the foundation for many other series. The Maclaurin series for
-$\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it.
-:::
+:::tip The geometric series is the foundation for many other series. The Maclaurin series for
+$\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it. :::
 
 <hr />
 
@@ -340,8 +330,7 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
 
 ## 6. Key Results and Pitfalls
 
-:::warning
-**Common errors:**
+:::warning **Common errors:**
 
 1. **Wrong coefficients.** The Maclaurin coefficient of $x^n$ is $\dfrac{f^{(n)}(0)}{n!}$, not
    $f^{(n)}(0)$. Always divide by the factorial.
@@ -354,18 +343,15 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
    $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
 
 4. **Sign errors in alternating series.** $\sin x$ and $\cos x$ have alternating signs:
-$\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$).
-:::
+   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
 
-:::tip
-**Exam strategy:**
+:::tip **Exam strategy:**
 
 - Memorise the six standard series. Derive others from them by substitution and algebra.
 - For compound functions ($e^{x^2}\sin x$), multiply series term by term and collect like powers.
 - Always state the range of validity when asked.
 - To find a Maclaurin series efficiently, compute successive derivatives at $x = 0$ and look for the
-pattern.
-:::
+  pattern. :::
 
 <hr />
 
@@ -375,6 +361,7 @@ pattern.
 <summary>Problem 1</summary>
 
 Find the Maclaurin series of $f(x) = \cos 2x$ up to the $x^6$ term.
+
 </details>
 
 <details>
@@ -390,12 +377,14 @@ $\cos x = 1 - \dfrac{x^2}{2!} + \dfrac{x^4}{4!} - \dfrac{x^6}{6!} + \cdots$:
 $$\boxed{\cos 2x = 1 - 2x^2 + \frac{2x^4}{3} - \frac{4x^6}{45} + \cdots}$$
 
 **If you get this wrong, revise:** [Standard Series](#2-standard-maclaurin-series) — Section 2.
+
 </details>
 
 <details>
 <summary>Problem 2</summary>
 
 Find the Maclaurin series of $\ln(1 - x^2)$ up to the $x^6$ term, stating the range of validity.
+
 </details>
 
 <details>
@@ -411,6 +400,7 @@ when substituted, but here $-x^2 - x^4/2 - x^6/3 - \cdots$ at $x = 1$ is $-\sum 
 Valid for $-1 < x < 1$.
 
 **If you get this wrong, revise:** [Standard Series](#2-standard-maclaurin-series) — Section 2.
+
 </details>
 
 <details>
@@ -418,6 +408,7 @@ Valid for $-1 < x < 1$.
 
 Use the Maclaurin series for $e^x$ to show that
 $\displaystyle\sum_{n=0}^{\infty}\frac{2^n}{n!} = e^2$.
+
 </details>
 
 <details>
@@ -428,12 +419,14 @@ $e^x = \displaystyle\sum_{n=0}^{\infty}\dfrac{x^n}{n!}$.
 Setting $x = 2$: $e^2 = \displaystyle\sum_{n=0}^{\infty}\dfrac{2^n}{n!}$. $\blacksquare$
 
 **If you get this wrong, revise:** [Exponential Function](#21-exponential-function) — Section 2.1.
+
 </details>
 
 <details>
 <summary>Problem 4</summary>
 
 Find the Taylor series of $\sin x$ about $x = \dfrac{\pi}{3}$ up to the $(x - \pi/3)^3$ term.
+
 </details>
 
 <details>
@@ -447,12 +440,14 @@ $$\sin x = \frac{\sqrt{3}}{2} + \frac{1}{2}\left(x-\frac{\pi}{3}\right) - \frac{
 
 **If you get this wrong, revise:** [Taylor Series About $x = a$](#3-taylor-series-about-x--a) —
 Section 3.
+
 </details>
 
 <details>
 <summary>Problem 5</summary>
 
 Use series to evaluate $\displaystyle\lim_{x\to 0}\frac{\sin x - x}{x^3}$.
+
 </details>
 
 <details>
@@ -467,12 +462,14 @@ $x \to 0$.
 
 **If you get this wrong, revise:** [Evaluating Limits](#52-evaluating-limits-using-series) — Section
 5.2.
+
 </details>
 
 <details>
 <summary>Problem 6</summary>
 
 Find the Maclaurin series of $(1 + 2x)^{-1/2}$ up to the $x^3$ term and state the range of validity.
+
 </details>
 
 <details>
@@ -491,12 +488,14 @@ $$\boxed{(1+2x)^{-1/2} = 1 - x + \frac{3x^2}{2} - \frac{5x^3}{2} + \cdots}$$
 Valid for $|2x| < 1 \implies |x| < \dfrac{1}{2}$.
 
 **If you get this wrong, revise:** [Binomial Series](#25-binomial-series) — Section 2.5.
+
 </details>
 
 <details>
 <summary>Problem 7</summary>
 
 Find the radius of convergence of $\displaystyle\sum_{n=0}^{\infty}\frac{(2x)^n}{n^2 + 1}$.
+
 </details>
 
 <details>
@@ -510,12 +509,14 @@ as $n \to \infty$.
 $R = \dfrac{1}{2}$. The series converges for $\boxed{|x| < \dfrac{1}{2}}$.
 
 **If you get this wrong, revise:** [The Ratio Test](#42-the-ratio-test) — Section 4.2.
+
 </details>
 
 <details>
 <summary>Problem 8</summary>
 
 Find the Maclaurin series of $e^x \sin x$ up to the $x^5$ term.
+
 </details>
 
 <details>
@@ -543,12 +544,14 @@ $$\boxed{e^x \sin x = x + x^2 + \frac{x^3}{3} - \frac{x^5}{30} + \cdots}$$
 
 **If you get this wrong, revise:** [Compound Functions](#53-series-expansions-of-compound-functions)
 — Section 5.3.
+
 </details>
 
 <details>
 <summary>Problem 9</summary>
 
 Show that $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!} = \sin 1$.
+
 </details>
 
 <details>
@@ -559,12 +562,14 @@ $\sin x = \displaystyle\sum_{n=0}^{\infty}\dfrac{(-1)^n x^{2n+1}}{(2n+1)!}$.
 Setting $x = 1$: $\sin 1 = \displaystyle\sum_{n=0}^{\infty}\dfrac{(-1)^n}{(2n+1)!}$. $\blacksquare$
 
 **If you get this wrong, revise:** [Sine Function](#22-sine-function) — Section 2.2.
+
 </details>
 
 <details>
 <summary>Problem 10</summary>
 
 Use series to evaluate $\displaystyle\lim_{x\to 0}\frac{e^{-x^2} - 1}{x^2}$.
+
 </details>
 
 <details>
@@ -578,6 +583,7 @@ $\dfrac{e^{-x^2} - 1}{x^2} = -1 + \dfrac{x^2}{2} - \cdots \to \boxed{-1}$ as $x 
 
 **If you get this wrong, revise:** [Evaluating Limits](#52-evaluating-limits-using-series) — Section
 5.2.
+
 </details>
 
 :::

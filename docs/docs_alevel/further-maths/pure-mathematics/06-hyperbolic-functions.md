@@ -17,16 +17,11 @@ similarities with trigonometric functions. They arise naturally in the solution 
 equations, the description of hanging cables (catenary), special relativity, and many areas of
 physics and engineering.
 
-
-<DesmosGraph
-  title="Hyperbolic Functions: sinh, cosh, tanh"
-  expressions={["\sinh(x)=\frac{e^x-e^{-x}}{2}", "\cosh(x)=\frac{e^x+e^{-x}}{2}", "\tanh(x)=\frac{\sinh(x)}{\cosh(x)}"]}
-  width={800}
-  height={500}
-/>
+<DesmosGraph title="Hyperbolic Functions: sinh, cosh, tanh"
+expressions={["\sinh(x)=\frac{e^x-e^{-x}}{2}", "\cosh(x)=\frac{e^x+e^{-x}}{2}",
+"\tanh(x)=\frac{\sinh(x)}{\cosh(x)}"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
-
 
 ### Board Coverage
 
@@ -37,10 +32,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 | OCR (A)    | Paper 1 | Definitions and basic identities                           |
 | CIE (9231) | P2      | Full coverage including logarithmic forms of inverses      |
 
-:::info
-The formula booklet lists hyperbolic identities and the logarithmic forms of the inverse
-hyperbolic functions. CIE requires the derivation of these logarithmic forms.
-:::
+:::info The formula booklet lists hyperbolic identities and the logarithmic forms of the inverse
+hyperbolic functions. CIE requires the derivation of these logarithmic forms. :::
 
 <hr />
 
@@ -63,18 +56,17 @@ $$\boxed{\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}}$
 
 $$\mathrm{sech}\,x = \frac{1}{\cosh x}, \qquad \mathrm{cosech}\,x = \frac{1}{\sinh x}, \qquad \coth\,x = \frac{\cosh x}{\sinh x}$$
 
-:::warning
-Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals
+:::warning Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals
 use $\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$.
 :::
 
 ### 1.3 Domain and range
 
-| Function         | Domain       | Range         |
-| ---------------- | ------------ | ------------- |
-| $\sinh x$        | $\mathbb{R}$ | $\mathbb{R}$  |
-| $\cosh x$        | $\mathbb{R}$ | $[1, \infty)$ |
-| $\tanh x$        | $\mathbb{R}$ | $(-1, 1)$     |
+| Function           | Domain       | Range         |
+| ------------------ | ------------ | ------------- |
+| $\sinh x$          | $\mathbb{R}$ | $\mathbb{R}$  |
+| $\cosh x$          | $\mathbb{R}$ | $[1, \infty)$ |
+| $\tanh x$          | $\mathbb{R}$ | $(-1, 1)$     |
 | $\mathrm{sech}\,x$ | $\mathbb{R}$ | $(0, 1]$      |
 
 ### 1.4 Key values
@@ -157,10 +149,8 @@ $\sinh^2$ term flips sign.)
 $\cos 2x = \cos^2 x - \sin^2 x \xrightarrow{\mathrm{Osborn}} \cosh 2x = \cosh^2 x + \sinh^2 x$. (The
 $\sinh^2$ term flips sign, turning $-$ into $+$.)
 
-:::tip
-Osborn's rule is a useful mnemonic but should not replace understanding. Always verify
-identities by direct computation from the exponential definitions when in doubt.
-:::
+:::tip Osborn's rule is a useful mnemonic but should not replace understanding. Always verify
+identities by direct computation from the exponential definitions when in doubt. :::
 
 <hr />
 
@@ -297,8 +287,8 @@ $\displaystyle\int \frac{1}{\sqrt{x^2-4}}\,dx = \mathrm{arcosh}\!\left(\frac{x}{
 $x > 2$.
 
 **Example.**
-$\displaystyle\int \frac{1}{4-x^2}\,dx = \frac{1}{2}\mathrm{artanh}\!\left(\frac{x}{2}\right) + C$ for
-$|x| < 2$.
+$\displaystyle\int \frac{1}{4-x^2}\,dx = \frac{1}{2}\mathrm{artanh}\!\left(\frac{x}{2}\right) + C$
+for $|x| < 2$.
 
 ### 4.4 Integrals of hyperbolic functions
 
@@ -310,11 +300,9 @@ $$\int \mathrm{sech}^2\,x\,dx = \tanh x + C$$
 
 $$\int \tanh x\,dx = \ln(\cosh x) + C$$
 
-:::tip
-When you encounter an integral of the form $\dfrac{1}{\sqrt{x^2+a^2}}$ or
+:::tip When you encounter an integral of the form $\dfrac{1}{\sqrt{x^2+a^2}}$ or
 $\dfrac{1}{\sqrt{x^2-a^2}}$, the inverse hyperbolic functions provide the most elegant answer. CIE
-and Edexcel FP2 frequently test these.
-:::
+and Edexcel FP2 frequently test these. :::
 
 <hr />
 
@@ -365,10 +353,10 @@ $$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac{\pi}{2}
 | $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$    | $\ln(x+\sqrt{x^2-1}),\ x\geq 1$     |
 | $\tanh x$ | $\dfrac{\sinh x}{\cosh x}$ | $\dfrac{1}{2}\ln\dfrac{1+x}{1-x},\  | x   | <1$ |
 
-| Derivative                                                | Integral                                                            |
-| --------------------------------------------------------- | ------------------------------------------------------------------- |
-| $\dfrac{d}{dx}\sinh x = \cosh x$                          | $\int\cosh x\,dx = \sinh x+C$                                       |
-| $\dfrac{d}{dx}\cosh x = \sinh x$                          | $\int\sinh x\,dx = \cosh x+C$                                       |
+| Derivative                                                  | Integral                                                              |
+| ----------------------------------------------------------- | --------------------------------------------------------------------- |
+| $\dfrac{d}{dx}\sinh x = \cosh x$                            | $\int\cosh x\,dx = \sinh x+C$                                         |
+| $\dfrac{d}{dx}\cosh x = \sinh x$                            | $\int\sinh x\,dx = \cosh x+C$                                         |
 | $\dfrac{d}{dx}\tanh x = \mathrm{sech}^2\,x$                 | $\int\mathrm{sech}^2\,x\,dx = \tanh x+C$                              |
 | $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac{1}{\sqrt{x^2+1}}$ | $\int\dfrac{dx}{\sqrt{x^2+a^2}} = \mathrm{arsinh}\dfrac{x}{a}+C$      |
 | $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$        | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$ |
@@ -394,6 +382,7 @@ $\dfrac{e^x+e^{-x}}{2} = 3 \implies e^x + e^{-x} = 6 \implies e^{2x} - 6e^x + 1 
 $e^x = \dfrac{6\pm\sqrt{36-4}}{2} = 3\pm 2\sqrt{2}$.
 
 $x = \ln(3+2\sqrt{2})$ (taking the positive root for $x > 0$).
+
 </details>
 
 <details>
@@ -413,6 +402,7 @@ $\tanh 2x = \dfrac{\sinh 2x}{\cosh 2x} = \dfrac{2\sinh x\cosh x}{\cosh^2 x+\sinh
 Dividing numerator and denominator by $\cosh^2 x$:
 
 $= \dfrac{2\tanh x}{1+\tanh^2 x}. \quad \blacksquare$
+
 </details>
 
 <details>
@@ -432,6 +422,7 @@ Let $u = 2x$, $du = 2\,dx$.
 $\displaystyle\int\frac{1}{\sqrt{4x^2+9}}\,dx = \frac{1}{2}\int\frac{1}{\sqrt{u^2+9}}\,du = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{u}{3}\right)+C = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{2x}{3}\right)+C$.
 
 $= \dfrac{1}{2}\ln\!\left(\dfrac{2x}{3}+\sqrt{\dfrac{4x^2}{9}+1}\right)+C = \dfrac{1}{2}\ln\!\left(\dfrac{2x+\sqrt{4x^2+9}}{3}\right)+C$.
+
 </details>
 
 <details>
@@ -453,6 +444,7 @@ $(4\cosh x - 7)(\cosh x + 1) = 0$.
 $\cosh x = 7/4$ or $\cosh x = -1$ (rejected since $\cosh x \geq 1$).
 
 $\cosh x = 7/4 \implies x = \pm\ln\!\left(\dfrac{7}{4}+\sqrt{\dfrac{49}{16}-1}\right) = \pm\ln\!\left(\dfrac{7+\sqrt{33}}{4}\right)$.
+
 </details>
 
 <details>
@@ -470,6 +462,7 @@ Use the chain rule with $\dfrac{d}{dx}\mathrm{arcosh}\,u = \dfrac{1}{\sqrt{u^2-1
 $\dfrac{d}{dx}\mathrm{arcosh}(x^2+1) = \dfrac{1}{\sqrt{(x^2+1)^2-1}}\cdot 2x = \dfrac{2x}{\sqrt{x^4+2x^2}} = \dfrac{2x}{|x|\sqrt{x^2+2}}$.
 
 For $x > 0$: $\dfrac{2}{\sqrt{x^2+2}}$.
+
 </details>
 
 <details>
@@ -487,6 +480,7 @@ Use $\cosh 2x = 2\cosh^2 x - 1$ to express $\cosh^2 x$ in terms of $\cosh 2x$.
 $\cosh^2 x = \dfrac{\cosh 2x+1}{2}$.
 
 $\displaystyle\int\cosh^2 x\,dx = \int\frac{\cosh 2x+1}{2}\,dx = \frac{1}{2}\left(\frac{\sinh 2x}{2}+x\right)+C = \frac{\sinh 2x}{4}+\frac{x}{2}+C$.
+
 </details>
 
 <details>
@@ -510,6 +504,7 @@ Note that $\dfrac{d}{dx}\left(\dfrac{1}{\cosh^2 x}\right) = \dfrac{-2\sinh x}{\c
 
 So
 $\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx = \int\dfrac{\sinh x}{\cosh^3 x}\,dx = -\dfrac{1}{2\cosh^2 x}+C = -\dfrac{1}{2}\mathrm{sech}^2\,x+C$.
+
 </details>
 
 <details>
@@ -527,6 +522,7 @@ $\mathrm{arsinh}\,x = \ln(x+\sqrt{x^2+1})$. Compare this with $\ln(\sqrt{2}+1)$.
 $\mathrm{arsinh}\,1 = \ln(1+\sqrt{2}) = \ln(\sqrt{2}+1)$.
 
 Therefore $\ln(\sqrt{2}+1) = \mathrm{arsinh}\,1$, so $k = 1$ and $m = 1$.
+
 </details>
 
 <details>
@@ -544,6 +540,7 @@ Recognise the integrand as $\tanh x$. Alternatively, use the substitution $u = e
 $\dfrac{e^x-e^{-x}}{e^x+e^{-x}} = \tanh x$.
 
 $\displaystyle\int\tanh x\,dx = \ln(\cosh x)+C = \ln\!\left(\frac{e^x+e^{-x}}{2}\right)+C$.
+
 </details>
 
 <details>
@@ -566,6 +563,7 @@ $1+\left(\dfrac{dy}{dx}\right)^2 = 1+\sinh^2(x/a) = \cosh^2(x/a)$.
 $s = \displaystyle\int_{-b}^{b}\cosh(x/a)\,dx = \bigl[a\sinh(x/a)\bigr]_{-b}^b = a\sinh(b/a) - a\sinh(-b/a) = 2a\sinh(b/a)$.
 
 The length of the chain is $\boxed{2a\sinh(b/a)}$.
+
 </details>
 
 :::

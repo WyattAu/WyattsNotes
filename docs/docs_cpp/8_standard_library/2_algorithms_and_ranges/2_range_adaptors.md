@@ -101,11 +101,9 @@ int main() {
 }
 ```
 
-:::tip
-Views are so lightweight that they typically consist of just a few pointers and sizes stored
+:::tip Views are so lightweight that they typically consist of just a few pointers and sizes stored
 on the stack. The entire pipeline in the example above likely compiles to a tight loop with no heap
-allocations.
-:::
+allocations. :::
 
 ### View Composition with the Pipe Operator
 

@@ -51,6 +51,7 @@ $b = 1000$:
 | 4     | 50    | 1016–1019 |
 
 $A[3]$ is at $1000 + 3 \times 4 = 1012$. ✓
+
 </details>
 
 ### Operations and Complexity
@@ -124,6 +125,7 @@ $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$
 **Row-major:** 1, 2, 3, 4, 5, 6
 
 **Column-major:** 1, 3, 5, 2, 4, 6
+
 </details>
 
 **Theorem.** 2D array access takes $O(1)$ time.
@@ -241,6 +243,7 @@ Layout (on a 32-bit system with 4-byte alignment):
 | 10–11  | —     | 2    | padding |
 
 Total size: 12 bytes (not 7).
+
 </details>
 
 ### Records vs Arrays
@@ -252,8 +255,7 @@ Total size: 12 bytes (not 7).
 | Size         | Homogeneous              | Heterogeneous                 |
 | Use case     | Collections of same data | Grouping related attributes   |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** distinguishes between static arrays (fixed size, compile-time) and dynamic arrays (runtime
   sizing)
@@ -261,8 +263,7 @@ Board-specific
   emphasise static vs dynamic distinction
 - **OCR (A)** requires understanding of arrays, records, and file operations (sequential and random
   access files)
-- **Edexcel** covers arrays and records with pseudocode implementations
-:::
+- **Edexcel** covers arrays and records with pseudocode implementations :::
 
 <hr />
 
@@ -274,11 +275,9 @@ before accessing the element.
 Without bounds checking, an out-of-bounds access reads or writes arbitrary memory — a **buffer
 overflow** vulnerability.
 
-:::warning
-Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
+:::warning Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
 `A[-1]` or `A[n]` compiles but causes undefined behaviour. Python, Java, and C# perform automatic
-bounds checking.
-:::
+bounds checking. :::
 
 <hr />
 
@@ -312,6 +311,7 @@ the address of `A[7]`?
 <summary>Answer</summary>
 
 $\mathrm{addr}(A[7]) = 2000 + 7 \times 4 = 2000 + 28 = 2028$
+
 </details>
 
 **Problem 2.** A 2D array `A[4][5]` is stored in row-major order with base address 100. Each element
@@ -321,6 +321,7 @@ is 2 bytes. What is the address of `A[2][3]`?
 <summary>Answer</summary>
 
 $\mathrm{addr}(A[2][3]) = 100 + (2 \times 5 + 3) \times 2 = 100 + 13 \times 2 = 126$
+
 </details>
 
 **Problem 3.** The same array `A[4][5]` is stored in column-major order. What is the address of
@@ -330,6 +331,7 @@ $\mathrm{addr}(A[2][3]) = 100 + (2 \times 5 + 3) \times 2 = 100 + 13 \times 2 = 
 <summary>Answer</summary>
 
 $\mathrm{addr}(A[2][3]) = 100 + (3 \times 4 + 2) \times 2 = 100 + 14 \times 2 = 128$
+
 </details>
 
 **Problem 4.** A dynamic array starts at capacity 1 and doubles when full. After inserting 17
@@ -341,6 +343,7 @@ elements, what is the current capacity? How many total element copies have occur
 Capacity after 17 insertions: $32$ (doubled from 16 after the 16th insertion).
 
 Total copies: at capacities $1, 2, 4, 8, 16$ → $1 + 2 + 4 + 8 + 16 = 31$ copies.
+
 </details>
 
 **Problem 5.** Explain why inserting an element at the beginning of an array of $n$ elements takes
@@ -351,6 +354,7 @@ $O(n)$ time.
 
 All $n$ existing elements must be shifted one position to the right to make room at index 0. Each
 shift is a constant-time assignment, so the total cost is $n$ assignments = $O(n)$.
+
 </details>
 
 **Problem 6.** A record `Person` has fields: `name` (string, 20 bytes), `age` (int, 4 bytes),
@@ -366,6 +370,7 @@ shift is a constant-time assignment, so the total cost is $n$ assignments = $O(n
 
 Total: 28 bytes. (No padding needed at the end since the total is already a multiple of the largest
 alignment, 4.)
+
 </details>
 
 **Problem 7.** Prove that searching for a value in an unsorted array of $n$ elements requires
@@ -381,6 +386,7 @@ $n$ comparisons, giving $\Omega(n)$.
 
 More formally: an adversary can answer "no" to all $n-1$ comparisons. Only after checking all $n$
 elements can the algorithm correctly conclude that $x$ is absent.
+
 </details>
 
 **Problem 8.** Given an array `A[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3}`, trace a linear search for
@@ -402,6 +408,7 @@ Total comparisons: 6. The value 9 is at index 5.
 
 For revision on searching, see
 [Searching Algorithms](/docs/alevel/computer-science/algorithms/searching-algorithms).
+
 </details>
 
 <hr />
@@ -415,8 +422,9 @@ with size 10, what happens when you access `C[12]`?
 <details>
 <summary>Hint</summary>
 
-Use the address formula $\mathrm{addr}(A[i]) = b + i \times s$. For the out-of-bounds access, consider
-whether the language performs bounds checking.
+Use the address formula $\mathrm{addr}(A[i]) = b + i \times s$. For the out-of-bounds access,
+consider whether the language performs bounds checking.
+
 </details>
 
 <details>
@@ -432,6 +440,7 @@ If the array has size 10, valid indices are 0–9. Accessing `C[12]` is an **out
 In Python, Java, and C#, this raises an `IndexError`/exception. In C and C++, no bounds checking
 occurs, so the program reads whatever data happens to be at address 3012 — this is **undefined
 behaviour** and a potential buffer overflow vulnerability.
+
 </details>
 
 **Problem 2.** An array `A[8] = {15, 22, 8, 41, 3, 17, 56, 34}` is stored with base address 500.
@@ -441,6 +450,7 @@ Each element is 4 bytes. What is the value stored at address 512? Show your work
 <summary>Hint</summary>
 
 Work backwards from the address: find the index using the address formula, then look up the value.
+
 </details>
 
 <details>
@@ -453,6 +463,7 @@ $i \times 4 = 12$, so $i = 3$.
 $A[3] = 41$.
 
 The value stored at address 512 is **41**.
+
 </details>
 
 **Problem 3.** A record `Book` is defined with fields: `title` (string, 30 bytes), `pages` (int, 4
@@ -464,6 +475,7 @@ the offset of each field and the total size of the record.
 
 Place each field at an offset that is a multiple of its alignment requirement. Pad between fields if
 needed, and pad at the end to make the total a multiple of the largest alignment.
+
 </details>
 
 <details>
@@ -485,6 +497,7 @@ The `title` field occupies offsets 0–29. Offset 30 is not a multiple of 8 (req
 2 bytes of padding are added. After `pages` at offset 32 (4 bytes), offset 36 is not a multiple of
 8, so 4 more bytes of padding. After `available` at offset 48 (1 byte), 7 bytes of padding bring the
 total to 56 (a multiple of 8).
+
 </details>
 
 **Problem 4.** A nested record is defined: `Student` has fields `name` (20 bytes) and `exam` which
@@ -495,6 +508,7 @@ is the offset of `exam.score` within a `Student` record?
 <summary>Hint</summary>
 
 First calculate the offset of the `exam` field, then add the offset of `score` within `exam`.
+
 </details>
 
 <details>
@@ -516,6 +530,7 @@ Within `exam`:
 - `score`: offset 12 within exam, 4 bytes
 
 Offset of `exam.score` within `Student`: $20 + 12 = 32$.
+
 </details>
 
 **Problem 5.** A static array `S[100]` of integers (4 bytes each) is declared. A dynamic array `D`
@@ -527,6 +542,7 @@ used by `S` and `D`. Which uses more memory and why?
 
 The static array allocates exactly 100 slots. The dynamic array doubles at powers of 2 — what is the
 capacity after 100 insertions?
+
 </details>
 
 <details>
@@ -540,6 +556,7 @@ sequence is 1, 2, 4, 8, 16, 32, 64, 128). Memory used: $128 \times 4 = 512$ byte
 The dynamic array uses **112 more bytes** (28% more) because it pre-allocates extra capacity to
 achieve $O(1)$ amortised append. However, the static array cannot grow beyond 100 elements, while
 the dynamic array can continue to accept more.
+
 </details>
 
 **Problem 6.** Explain two advantages and two disadvantages of static arrays compared to dynamic
@@ -550,6 +567,7 @@ arrays. Your answer should reference memory allocation and performance.
 
 Consider where each type is stored (stack vs heap), whether the size can change, and the
 implications for performance and memory efficiency.
+
 </details>
 
 <details>
@@ -567,7 +585,7 @@ implications for performance and memory efficiency.
 1. **Fixed size:** Cannot grow or shrink. If you need more elements, you must create a new array and
    copy (or pick a larger size upfront, wasting memory).
 2. **Stack overflow risk:** Large static arrays stored on the stack can cause stack overflow. The
-   stack is typically limited (e.g., 1–8 MB), while the heap is much larger.
+stack is typically limited (e.g., 1–8 MB), while the heap is much larger.
 </details>
 
 **Problem 7.** Given the 2D array `M[3][4]` initialised as follows:
@@ -585,6 +603,7 @@ column 2.
 <summary>Hint</summary>
 
 Row 1 is `M[1][0]` through `M[1][3]`. Column 2 is `M[0][2]`, `M[1][2]`, `M[2][2]`.
+
 </details>
 
 <details>
@@ -613,6 +632,7 @@ OUTPUT col_sum
 ```
 
 $M[0][2] + M[1][2] + M[2][2] = 3 + 6 + 11 = 20$
+
 </details>
 
 **Problem 8.** A 3×3 matrix `A` is stored in row-major order with base address 1000. Each element is
@@ -631,6 +651,7 @@ What is the address of `A[2][1]`? What value is stored there?
 
 Use the row-major formula: $\mathrm{addr}(A[i][j]) = b + (i \cdot n + j) \cdot s$ where $n$ is the
 number of columns.
+
 </details>
 
 <details>
@@ -656,6 +677,7 @@ state of the array after the insertion.
 
 You need to shift elements from index 2 onwards one position to the right before placing the new
 value at index 2.
+
 </details>
 
 <details>
@@ -680,6 +702,7 @@ Trace:
 Result: `A = {10, 20, 25, 30, 40, 50}`, size = 6.
 
 This takes $O(n)$ time because $n - 2 = 3$ elements were shifted.
+
 </details>
 
 **Problem 10.** (Exam-style) A school needs to store data about 500 students. For each student, they
@@ -696,6 +719,7 @@ complexities.
 Consider which structure naturally combines the need for indexed access, heterogeneous fields (name,
 age, grades), and the ability to grow. Think about what "array of records" actually means — it
 combines arrays and records.
+
 </details>
 
 <details>
@@ -724,6 +748,7 @@ memory or running out of space. A dynamic array grows automatically with $O(1)$ 
 A linked list would also support insertion but would not provide $O(1)$ access by position (it would
 be $O(n)$), making it worse for operation (a). The array of records with dynamic sizing is therefore
 the optimal choice.
+
 </details>
 
 :::

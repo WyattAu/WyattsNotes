@@ -18,10 +18,8 @@ slug: numerical-methods
 | OCR (A)    | Paper 2 | Includes fixed-point iteration and convergence         |
 | CIE (9709) | P2, P3  | Numerical solutions of equations, integration in P2/P3 |
 
-:::info
-The formula booklet gives the Newton-Raphson formula and the trapezium/Simpson's rule. You
-must know when each method is applicable and its limitations.
-:::
+:::info The formula booklet gives the Newton-Raphson formula and the trapezium/Simpson's rule. You
+must know when each method is applicable and its limitations. :::
 
 <hr />
 
@@ -39,12 +37,10 @@ The sign change theorem tells us a root **exists** but says nothing about:
 - How many roots are in the interval (there could be 1, 3, 5, ...).
 - The exact location of the root.
 
-:::warning
-A sign change is **sufficient but not necessary** for a root. If $f(x) = x^2$, then
+:::warning A sign change is **sufficient but not necessary** for a root. If $f(x) = x^2$, then
 $f(-1) = f(1) = 1$ (no sign change), but there is a root at $x = 0$. Additionally, a sign change
 could arise from a **discontinuity** rather than a root: $f(x) = 1/x$ has $f(-1) = -1$ and
-$f(1) = 1$, but no root.
-:::
+$f(1) = 1$, but no root. :::
 
 **Intuition.** The sign change theorem is the Intermediate Value Theorem applied to the special case
 of crossing zero. If you walk from a point below sea level to one above sea level, you must cross
@@ -98,11 +94,9 @@ diverge.
 - $g(x) = \sqrt[3]{1-x}$: $g'(x) = \dfrac{-1}{3(1-x)^{2/3}}$. Near $\alpha$:
   $|g'(\alpha)| \approx 0.72 \lt{} 1$. **Converges.**
 
-:::tip
-In exams, if a question asks you to show that a particular rearrangement converges, compute
+:::tip In exams, if a question asks you to show that a particular rearrangement converges, compute
 $g'(x)$ at the root and show $|g'(\alpha)| \lt{} 1$. If asked why a rearrangement fails, show
-$|g'(\alpha)| \gt{} 1$.
-:::
+$|g'(\alpha)| \gt{} 1$. :::
 
 ### 2.4 Geometric interpretation
 
@@ -172,10 +166,8 @@ Newton-Raphson fails when:
 - $f'(x_n)$ is close to zero (the next iterate jumps far away).
 - The starting point is not close enough to the root.
 
-:::warning
-Always check that Newton-Raphson is converging. If the iterates oscillate or diverge, try
-a different starting point.
-:::
+:::warning Always check that Newton-Raphson is converging. If the iterates oscillate or diverge, try
+a different starting point. :::
 
 ### 3.4 Horizontal tangent failure
 
@@ -195,10 +187,8 @@ The root is near $\alpha \approx -2.10$, so the iterate has been sent in the wro
 next iterate $x_2$ will be pulled back, but convergence is erratic compared to a well-chosen
 starting point.
 
-:::warning
-Before applying Newton-Raphson, sketch $f(x)$ or compute $f'(x)$ to check that the
-tangent is not close to horizontal near your starting point.
-:::
+:::warning Before applying Newton-Raphson, sketch $f(x)$ or compute $f'(x)$ to check that the
+tangent is not close to horizontal near your starting point. :::
 
 ### 3.5 Slow convergence near inflection points
 
@@ -355,10 +345,8 @@ Doubling the number of strips reduces the error by a factor of 16 for Simpson's 
 trapezium rule. This is because quadratic approximations match the curvature of the function much
 better than linear ones.
 
-:::tip
-Simpson's rule requires an **even** number of strips. The trapezium rule works with any
-number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$).
-:::
+:::tip Simpson's rule requires an **even** number of strips. The trapezium rule works with any
+number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$). :::
 
 <hr />
 
@@ -401,11 +389,9 @@ In practice, numerical software often combines methods:
    favourable endpoint.
 3. **Verify** the result by checking $f(x_n)$ is sufficiently close to zero.
 
-:::info
-Newton-Raphson is the method of choice when derivatives are available and the function is
+:::info Newton-Raphson is the method of choice when derivatives are available and the function is
 well-behaved. Fixed-point iteration is useful when the problem naturally gives a contraction
-mapping. Bisection is the reliable fallback when nothing else is guaranteed to work.
-:::
+mapping. Bisection is the reliable fallback when nothing else is guaranteed to work. :::
 
 ### 7.3 Cost comparison
 

@@ -163,12 +163,12 @@ conditions.
 
 ### Types of Radiation
 
-| Type       | Symbol                          | Charge | Mass (u) | Penetrating Power | Ionising Power | Stopped By            |
-| :--------- | :------------------------------ | :----- | :------- | :---------------- | :------------- | :-------------------- |
+| Type       | Symbol                            | Charge | Mass (u) | Penetrating Power | Ionising Power | Stopped By            |
+| :--------- | :-------------------------------- | :----- | :------- | :---------------- | :------------- | :-------------------- |
 | Alpha      | $\alpha$ (${}^4_2\mathrm{He}$)    | +2e    | 4        | Low               | High           | Paper / few cm of air |
 | Beta-minus | $\beta^-$ (${}^0_{-1}\mathrm{e}$) | -1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
 | Beta-plus  | $\beta^+$ (${}^0_{+1}\mathrm{e}$) | +1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
-| Gamma      | $\gamma$                        | 0      | 0        | High              | Low            | Several cm of lead    |
+| Gamma      | $\gamma$                          | 0      | 0        | High              | Low            | Several cm of lead    |
 
 ### Decay Equations
 
@@ -506,8 +506,8 @@ diffraction is observable.
 ## Exam Tips for Nuclear and Quantum Physics
 
 1. **Always check units in nuclear problems.** Mass defect is often given in atomic mass units (u) —
-   convert to kg or use $1 \mathrm{ u} = 931.5$ MeV/c² directly. Energy may be in eV or MeV — convert
-   to joules when using SI formulae.
+   convert to kg or use $1 \mathrm{ u} = 931.5$ MeV/c² directly. Energy may be in eV or MeV —
+   convert to joules when using SI formulae.
 
 2. **Distinguish between activity, count rate, and number of nuclei.** Activity ($A = \lambda N$) is
    the rate of decay. Count rate is what a detector measures (always less than activity). $N$ is the

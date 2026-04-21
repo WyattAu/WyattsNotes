@@ -125,8 +125,8 @@ For example: ${}^{235}_{92}\mathrm{U}$ has 92 protons and 143 neutrons.
 
 Isotopes of an element have the same number of protons but different numbers of neutrons.
 
-| Isotope                        | Protons | Neutrons |
-| ------------------------------ | ------- | -------- |
+| Isotope                          | Protons | Neutrons |
+| -------------------------------- | ------- | -------- |
 | ${}^{1}_1\mathrm{H}$ (protium)   | 1       | 0        |
 | ${}^{2}_1\mathrm{H}$ (deuterium) | 1       | 1        |
 | ${}^{3}_1\mathrm{H}$ (tritium)   | 1       | 2        |
@@ -134,7 +134,8 @@ Isotopes of an element have the same number of protons but different numbers of 
 ### Nuclear Forces
 
 - **Strong nuclear force**: short-range attractive force between nucleons. Overcomes electrostatic
-  repulsion between protons. Range $\approx 1$--$3\mathrm{ fm}$ ($1\mathrm{ fm} = 10^{-15}\mathrm{ m}$).
+  repulsion between protons. Range $\approx 1$--$3\mathrm{ fm}$
+  ($1\mathrm{ fm} = 10^{-15}\mathrm{ m}$).
 - **Electrostatic (Coulomb) force**: repulsive between protons, long range.
 
 ### Nuclear Radius
@@ -161,14 +162,14 @@ $$
 
 ### Types of Radiation
 
-| Property       | Alpha ($\alpha$)          | Beta ($\beta^-$)      | Gamma ($\gamma$) |
-| -------------- | ------------------------- | --------------------- | ---------------- |
+| Property       | Alpha ($\alpha$)            | Beta ($\beta^-$)      | Gamma ($\gamma$) |
+| -------------- | --------------------------- | --------------------- | ---------------- |
 | Particle       | ${}^4_2\mathrm{He}$ nucleus | Electron ($e^-$)      | Photon           |
-| Charge         | $+2e$                     | $-e$                  | $0$              |
+| Charge         | $+2e$                       | $-e$                  | $0$              |
 | Mass           | $4\mathrm{ u}$              | $\approx 0$           | $0$              |
-| Speed          | $\approx 0.05c$           | Up to $\approx 0.99c$ | $c$              |
-| Penetration    | Paper                     | Aluminium (few mm)    | Lead (few cm)    |
-| Ionising power | High                      | Medium                | Low              |
+| Speed          | $\approx 0.05c$             | Up to $\approx 0.99c$ | $c$              |
+| Penetration    | Paper                       | Aluminium (few mm)    | Lead (few cm)    |
+| Ionising power | High                        | Medium                | Low              |
 
 ### Alpha Decay
 
@@ -337,8 +338,8 @@ The binding energy per nucleon curve shows:
 - Heavy nuclei (beyond Fe-56): fission increases binding energy per nucleon (releases energy).
 - Iron-56 has the highest binding energy per nucleon (most stable nucleus).
 
-| Nucleus                 | Binding Energy per Nucleon (MeV) |
-| ----------------------- | -------------------------------- |
+| Nucleus                   | Binding Energy per Nucleon (MeV) |
+| ------------------------- | -------------------------------- |
 | ${}^2_1\mathrm{H}$        | 1.11                             |
 | ${}^4_2\mathrm{He}$       | 7.07                             |
 | ${}^{56}_{26}\mathrm{Fe}$ | 8.79                             |
@@ -362,7 +363,8 @@ $$
 :::info[Example]
 
 Calculate the binding energy of the helium-4 nucleus. ($m_p = 1.00728\mathrm{ u}$,
-$m_n = 1.00867\mathrm{ u}$, $m_{\alpha} = 4.00151\mathrm{ u}$, $1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
+$m_n = 1.00867\mathrm{ u}$, $m_{\alpha} = 4.00151\mathrm{ u}$,
+$1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
 
 $$
 \Delta m = 2(1.00728) + 2(1.00867) - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039\mathrm{ u}
@@ -406,7 +408,9 @@ $$
 
 <PhetSimulation simulationId="photoelectric" title="Photoelectric Effect" />
 
-Shine light of different wavelengths and intensities onto a metal surface and observe the emission of photoelectrons. Investigate how frequency, intensity, and the work function affect the maximum kinetic energy.
+Shine light of different wavelengths and intensities onto a metal surface and observe the emission
+of photoelectrons. Investigate how frequency, intensity, and the work function affect the maximum
+kinetic energy.
 
 ### Phenomenon
 
@@ -605,18 +609,18 @@ $$
 
 ## Summary
 
-| Concept               | Formula                              |
-| --------------------- | ------------------------------------ |
+| Concept               | Formula                                |
+| --------------------- | -------------------------------------- |
 | Bohr energy levels    | $E_n = \dfrac{-13.6\mathrm{ eV}}{n^2}$ |
-| Photon energy         | $E = hf = \dfrac{hc}{\lambda}$       |
-| Half-life             | $t_{1/2} = \dfrac{\ln 2}{\lambda}$   |
-| Decay law             | $N = N_0 e^{-\lambda t}$             |
-| Activity              | $A = \lambda N$                      |
-| Mass-energy           | $E = mc^2$                           |
-| Binding energy        | $E_b = \Delta m \cdot c^2$           |
-| Photoelectric effect  | $E_{k,\max} = hf - \phi$             |
-| de Broglie wavelength | $\lambda = \dfrac{h}{mv}$            |
-| Nuclear radius        | $R = R_0 A^{1/3}$                    |
+| Photon energy         | $E = hf = \dfrac{hc}{\lambda}$         |
+| Half-life             | $t_{1/2} = \dfrac{\ln 2}{\lambda}$     |
+| Decay law             | $N = N_0 e^{-\lambda t}$               |
+| Activity              | $A = \lambda N$                        |
+| Mass-energy           | $E = mc^2$                             |
+| Binding energy        | $E_b = \Delta m \cdot c^2$             |
+| Photoelectric effect  | $E_{k,\max} = hf - \phi$               |
+| de Broglie wavelength | $\lambda = \dfrac{h}{mv}$              |
+| Nuclear radius        | $R = R_0 A^{1/3}$                      |
 
 :::tip[Exam Strategy]
 
@@ -677,8 +681,8 @@ The binding energy per nucleon curve reveals:
 Calculate the energy released when one nucleus of U-235 fissions into Ba-141 and Kr-92 with 3
 neutrons.
 
-Masses: U-235 = $235.0439\mathrm{ u}$, Ba-141 = $140.9139\mathrm{ u}$, Kr-92 = $91.8970\mathrm{ u}$, n =
-$1.00867\mathrm{ u}$.
+Masses: U-235 = $235.0439\mathrm{ u}$, Ba-141 = $140.9139\mathrm{ u}$, Kr-92 = $91.8970\mathrm{ u}$,
+n = $1.00867\mathrm{ u}$.
 
 Reactants: $235.0439 + 1.00867 = 236.0526\mathrm{ u}$
 

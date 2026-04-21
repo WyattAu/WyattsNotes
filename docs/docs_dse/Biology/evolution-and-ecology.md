@@ -44,12 +44,10 @@ gene).
 | Evidence                        | Discredited; no mechanism for inheritance of acquired traits            | Strongly supported by genetics, fossil record, molecular biology    |
 | Example                         | Giraffes stretch necks to reach leaves, longer necks inherited          | Giraffes with naturally longer necks survive and reproduce more     |
 
-:::info
-Lamarckism is not accepted by modern science. However, the field of epigenetics has revealed
+:::info Lamarckism is not accepted by modern science. However, the field of epigenetics has revealed
 that environmental factors can influence gene expression across generations without changing the DNA
 sequence itself. This is sometimes mistakenly conflated with Lamarckism, but epigenetic changes are
-reversible and do not create new alleles.
-:::
+reversible and do not create new alleles. :::
 
 ---
 
@@ -115,11 +113,9 @@ endemic, the heterozygote has a selective advantage -- this is **heterozygote ad
 polymorphism). The allele is maintained in the population at higher frequency than would be expected
 if it were purely deleterious.
 
-:::warning
-A common misconception is that antibiotic resistance develops because bacteria "need" to
+:::warning A common misconception is that antibiotic resistance develops because bacteria "need" to
 survive. Resistance arises from random pre-existing mutations; the antibiotic simply selects for
-resistant individuals. The mutation occurs regardless of the antibiotic's presence.
-:::
+resistant individuals. The mutation occurs regardless of the antibiotic's presence. :::
 
 ---
 
@@ -187,11 +183,9 @@ $$p = \frac{600}{1000} = 0.6$$
 
 $$q = \frac{400}{1000} = 0.4$$
 
-:::info
-In DSE exams, HWE calculations are almost always tested. Remember: you can always determine
+:::info In DSE exams, HWE calculations are almost always tested. Remember: you can always determine
 $q$ from $q^2$ (the homozygous recessive frequency), and then $p$ from $p = 1 - q$. The heterozygote
-frequency $2pq$ is the one most students miscalculate -- do not assume it equals $p + q$.
-:::
+frequency $2pq$ is the one most students miscalculate -- do not assume it equals $p + q$. :::
 
 ### Genetic Drift
 
@@ -251,12 +245,10 @@ New species arise without geographic separation. Common mechanisms include:
   same area (e.g., different host plants for insects).
 - **Sexual selection:** Different mating preferences or displays lead to reproductive isolation.
 
-:::info
-Polyploidy is extremely rare in animals but is a major driver of speciation in plants.
+:::info Polyploidy is extremely rare in animals but is a major driver of speciation in plants.
 Approximately 30-70% of flowering plant species are polyploid. In the DSE, questions about
 speciation typically focus on allopatric speciation, but you should be able to explain polyploidy as
-a mechanism of sympatric speciation in plants.
-:::
+a mechanism of sympatric speciation in plants. :::
 
 ---
 
@@ -397,12 +389,10 @@ common maternal ancestor of all living humans lived approximately 150,000-200,00
 Africa. This individual is called "Mitochondrial Eve" -- not the only woman alive at the time, but
 the only one whose matrilineal line has survived unbroken to the present day.
 
-:::info
-Mitochondrial Eve is a statistical concept, not a single individual who was the only human
+:::info Mitochondrial Eve is a statistical concept, not a single individual who was the only human
 female alive. Many other women lived at the same time, but their matrilineal lines happened to die
 out at some point. The Y-chromosomal Adam (the most recent common paternal ancestor) lived
-approximately 200,000-300,000 years ago, and the two individuals were not contemporaries.
-:::
+approximately 200,000-300,000 years ago, and the two individuals were not contemporaries. :::
 
 ---
 
@@ -531,11 +521,9 @@ Three idealised types:
   good chance of long life (e.g., many fish, marine invertebrates, annual plants, most insects).
   Typically associated with r-selection.
 
-:::warning
-Real survivorship curves rarely match idealised types exactly. Many species show
+:::warning Real survivorship curves rarely match idealised types exactly. Many species show
 intermediate patterns. When interpreting DSE exam questions, look for the general shape rather than
-trying to force a perfect classification.
-:::
+trying to force a perfect classification. :::
 
 ---
 
@@ -673,12 +661,10 @@ insufficient energy to sustain higher levels.
 
 $$\mathrm{Energy available at level } n = 0.1^n \times \mathrm{Energy at producer level}$$
 
-:::info
-The 10% rule is an approximation. Actual transfer efficiency ranges from about 5% to 20%
+:::info The 10% rule is an approximation. Actual transfer efficiency ranges from about 5% to 20%
 depending on the ecosystem and the organisms involved. Cold-blooded organisms are more
 energy-efficient than warm-blooded ones. In DSE calculations, use 10% unless the question specifies
-otherwise.
-:::
+otherwise. :::
 
 ### Nutrient Cycles
 
@@ -702,8 +688,8 @@ Key processes:
 
 Key processes:
 
-- Nitrogen fixation: atmospheric $\mathrm{N}_2$ (unreactive) converted to ammonia ($\mathrm{NH}_3$) by
-  nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes) or lightning
+- Nitrogen fixation: atmospheric $\mathrm{N}_2$ (unreactive) converted to ammonia ($\mathrm{NH}_3$)
+  by nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes) or lightning
 - Nitrification: ammonia converted to nitrite ($\mathrm{NO}_2^-$) by Nitrosomonas, then to nitrate
   ($\mathrm{NO}_3^-$) by Nitrobacter
 - Absorption: plants absorb nitrate through roots
@@ -784,11 +770,9 @@ $$\mathrm{NPP} = \mathrm{energy stored in plant biomass}$$
 - **Wetlands:** Land saturated with water (marshes, swamps, bogs); high productivity; important for
   water filtration and flood control
 
-:::info
-In DSE questions on biomes, you may be asked to interpret climate graphs (temperature and
+:::info In DSE questions on biomes, you may be asked to interpret climate graphs (temperature and
 precipitation plotted by month). Key features to identify: annual temperature range, wet and dry
-seasons, total precipitation. Match these to the biome descriptions above.
-:::
+seasons, total precipitation. Match these to the biome descriptions above. :::
 
 ---
 
@@ -895,11 +879,9 @@ Major causes (often remembered by the acronym HIPPO):
   sustainable use, fair sharing of benefits from genetic resources
 - **Ramsar Convention:** Protection of wetlands of international importance
 
-:::warning
-A common DSE exam pitfall is confusing bioaccumulation with biomagnification. Remember:
+:::warning A common DSE exam pitfall is confusing bioaccumulation with biomagnification. Remember:
 bioaccumulation is within an individual; biomagnification is across trophic levels. Both terms can
-appear in the same question.
-:::
+appear in the same question. :::
 
 ---
 
@@ -975,16 +957,14 @@ Key elements the DSE expects in ecology and evolution experimental design questi
    comparing means)
 8. **Evaluation:** Limitations, sources of error, improvements
 
-:::info
-The chi-squared test is commonly used in DSE to determine whether observed genotype
+:::info The chi-squared test is commonly used in DSE to determine whether observed genotype
 frequencies differ significantly from Hardy-Weinberg expected frequencies:
 
 $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 Where $O$ = observed frequency and $E$ = expected frequency. Compare the calculated value to the
 critical value at the appropriate degrees of freedom ($df = \mathrm{number of categories} - 1$) and
-significance level (typically $p = 0.05$).
-:::
+significance level (typically $p = 0.05$). :::
 
 ---
 

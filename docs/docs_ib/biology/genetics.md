@@ -241,8 +241,8 @@ PCR amplifies a specific DNA sequence exponentially without the need for living 
 | **Annealing**    | $50$--$65^\circ\mathrm{C}$ | Primers bind (anneal) to complementary sequences on each strand. |
 | **Extension**    | $72^\circ\mathrm{C}$       | Taq polymerase synthesises new DNA strands from the primers.     |
 
-Each cycle doubles the number of DNA copies. After $n$ cycles: $\mathrm{copies} = 2^n$ (starting from
-a double-stranded molecule). Typically $25$--$35$ cycles are run.
+Each cycle doubles the number of DNA copies. After $n$ cycles: $\mathrm{copies} = 2^n$ (starting
+from a double-stranded molecule). Typically $25$--$35$ cycles are run.
 
 ### Gel Electrophoresis
 
@@ -403,7 +403,8 @@ DNA produced is $54\;\mathrm{ng}$, calculate the approximate mass of one copy.
 <summary>Answer</summary>
 
 After $n$ cycles:
-$\mathrm{copies} = 10 \times 2^{30} \approx 10 \times 1.07 \times 10^9 = 1.07 \times 10^{10}$ copies.
+$\mathrm{copies} = 10 \times 2^{30} \approx 10 \times 1.07 \times 10^9 = 1.07 \times 10^{10}$
+copies.
 
 Mass of one double-stranded copy: $300 \times 660 \times 2 = 396000\;\mathrm{Da}$ (both strands).
 

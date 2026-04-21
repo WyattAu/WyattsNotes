@@ -144,19 +144,19 @@ Note: the comma operator `,` has special behavior in folds (see below).
 
 For a pack $(e_1, e_2, e_3)$ and operator $\oplus$:
 
-| Fold Form    | Syntax                  | Expansion                                          | Example with `+`         |
-| ------------ | ----------------------- | -------------------------------------------------- | ------------------------ |
-| Unary right  | `(pack op ...)`         | $e_1 \oplus (e_2 \oplus e_3)$                      | `(a + (b + c))`          |
-| Unary left   | `(... op pack)`         | $(e_1 \oplus e_2) \oplus e_3$                      | `((a + b) + c)`          |
+| Fold Form    | Syntax                  | Expansion                                            | Example with `+`         |
+| ------------ | ----------------------- | ---------------------------------------------------- | ------------------------ |
+| Unary right  | `(pack op ...)`         | $e_1 \oplus (e_2 \oplus e_3)$                        | `(a + (b + c))`          |
+| Unary left   | `(... op pack)`         | $(e_1 \oplus e_2) \oplus e_3$                        | `((a + b) + c)`          |
 | Binary right | `(pack op ... op init)` | $e_1 \oplus (e_2 \oplus (e_3 \oplus \mathrm{init}))$ | `(a + (b + (c + init)))` |
 | Binary left  | `(init op ... op pack)` | $((\mathrm{init} \oplus e_1) \oplus e_2) \oplus e_3$ | `(((init + a) + b) + c)` |
 
 For a single-element pack $(e_1)$:
 
-| Fold Form    | Result                   |
-| ------------ | ------------------------ |
-| Unary right  | $e_1$                    |
-| Unary left   | $e_1$                    |
+| Fold Form    | Result                     |
+| ------------ | -------------------------- |
+| Unary right  | $e_1$                      |
+| Unary left   | $e_1$                      |
 | Binary right | $e_1 \oplus \mathrm{init}$ |
 | Binary left  | $\mathrm{init} \oplus e_1$ |
 

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useEffect, useRef, type FC } from 'react';
 import styles from './styles.module.css';
 
 interface DesmosExpression {
@@ -28,10 +28,10 @@ interface DesmosGraphProps {
 function parseExpression(input: string): DesmosExpression {
   const expr: DesmosExpression = { latex: input };
 
-  // Extract single-letter parameter names (not x, y, e, i, pi).
   const paramRegex = /\b([a-df-wz])\b/g;
   const params = new Set<string>();
   let match;
+
   while ((match = paramRegex.exec(input)) !== null) {
     params.add(match[1]);
   }
@@ -46,12 +46,21 @@ function parseExpression(input: string): DesmosExpression {
 }
 
 const DESMOS_COLORS = [
-  '#c74440', '#2d70b3', '#388c46', '#6042a6',
-  '#000000', '#cf0000', '#0060bf', '#289728',
-  '#990099', '#ff6600', '#00b3b3', '#666666',
+  '#c74440',
+  '#2d70b3',
+  '#388c46',
+  '#6042a6',
+  '#000000',
+  '#cf0000',
+  '#0060bf',
+  '#289728',
+  '#990099',
+  '#ff6600',
+  '#00b3b3',
+  '#666666',
 ];
 
-export const DesmosGraph: React.FC<DesmosGraphProps> = ({
+export const DesmosGraph: FC<DesmosGraphProps> = ({
   expressions = [],
   calculatorUrl,
   title = 'Desmos Graph',
@@ -83,24 +92,30 @@ export const DesmosGraph: React.FC<DesmosGraphProps> = ({
 
   // Programmatic mode: load Desmos API and create calculator with expressions.
   useEffect(() => {
-    if (!containerRef.current || expressions.length === 0) return;
+    if (!containerRef.current || expressions.length === 0) {
+      return;
+    }
 
     let destroyed = false;
 
-    // Load the Desmos API script.
     const script = document.createElement('script');
+
     script.src =
       'https://www.desmos.com/api/v1.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6';
     script.async = true;
 
     script.onload = () => {
-      if (destroyed || !containerRef.current) return;
+      if (destroyed || !containerRef.current) {
+        return;
+      }
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const Desmos = (window as any).Desmos;
-      if (!Desmos) return;
 
-      // Create the calculator instance.
+      if (!Desmos) {
+        return;
+      }
+
       const calculator = Desmos.GraphingCalculator(containerRef.current, {
         keypad: false,
         expressions: false,
@@ -110,9 +125,9 @@ export const DesmosGraph: React.FC<DesmosGraphProps> = ({
         pointsOfInterest: true,
         trace: true,
       });
+
       calculatorRef.current = calculator;
 
-      // Add each expression.
       const parsedExpressions = expressions.map((expr) =>
         typeof expr === 'string' ? parseExpression(expr) : expr,
       );
@@ -134,15 +149,17 @@ export const DesmosGraph: React.FC<DesmosGraphProps> = ({
         calculator.setExpression(desmosExpr);
       });
 
-      // If any expressions have implicit parameters, also add them as sliders.
+      // Also add detected parameters as explicit sliders.
       const paramRegex = /\b([a-df-wz])\b/g;
       const addedParams = new Set<string>();
 
       expressions.forEach((expr) => {
         const input = typeof expr === 'string' ? expr : expr.latex || '';
         let paramMatch;
+
         while ((paramMatch = paramRegex.exec(input)) !== null) {
           const param = paramMatch[1];
+
           if (!addedParams.has(param) && param !== 'e' && param !== 'i') {
             addedParams.add(param);
             calculator.setExpression({

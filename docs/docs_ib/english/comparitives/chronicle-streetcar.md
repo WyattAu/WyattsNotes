@@ -254,11 +254,9 @@ Both texts depend heavily on dramatic irony:
   theatre respectively — both serve to implicate the audience or reader in the moral failure
   surrounding the central tragedy."
 
-:::tip
-Exam Tip For HL comparative essays, always address both the **similarities and differences**
+:::tip Exam Tip For HL comparative essays, always address both the **similarities and differences**
 between the texts. Stronger essays move beyond surface comparisons to explore how formal differences
-(novella vs play) shape the reader's experience of shared themes.
-:::
+(novella vs play) shape the reader's experience of shared themes. :::
 
 ## Truth and Memory
 
@@ -324,11 +322,9 @@ Both authors destabilise the concept of objective truth through their narrative 
   Blanche's psychological reality rather than objective fact. The audience sees the world as Blanche
   perceives it, making her unreliability both visible and sympathetic.
 
-:::tip
-When writing about truth and memory, consider how form determines access to truth. Marquez's
+:::tip When writing about truth and memory, consider how form determines access to truth. Marquez's
 fragmented journalism and Williams's subjective staging both prevent the audience from ever grasping
-a complete, objective account — and this is precisely the point.
-:::
+a complete, objective account — and this is precisely the point. :::
 
 ## Character Comparison: Eunice/Steve vs Clotilde Armenta
 

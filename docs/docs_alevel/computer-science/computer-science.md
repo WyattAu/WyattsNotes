@@ -12,7 +12,9 @@ sidebar_position: 4
 
 ## A Level Computer Science — Course Overview
 
-A Level Computer Science sits at the intersection of mathematics, engineering, and philosophy. It teaches you to think precisely about computation — what can be computed, how efficiently, and how to design systems that are correct, robust, and maintainable.
+A Level Computer Science sits at the intersection of mathematics, engineering, and philosophy. It
+teaches you to think precisely about computation — what can be computed, how efficiently, and how to
+design systems that are correct, robust, and maintainable.
 
 ### Board Coverage
 
@@ -33,12 +35,15 @@ A Level Computer Science sits at the intersection of mathematics, engineering, a
 
 ### Course Structure
 
-1. **Fundamentals** — Data representation (binary, two's complement, floating point), hardware architecture, Boolean logic
+1. **Fundamentals** — Data representation (binary, two's complement, floating point), hardware
+   architecture, Boolean logic
 2. **Data Structures** — Arrays, linked lists, stacks, queues, trees, graphs, hash tables
-3. **Algorithms** — Sorting, searching, graph algorithms, complexity analysis (Big-O), algorithmic paradigms
+3. **Algorithms** — Sorting, searching, graph algorithms, complexity analysis (Big-O), algorithmic
+   paradigms
 4. **Programming** — Constructs, OOP, functional programming paradigms, and a programming project
 5. **Computer Systems** — Processor architecture, memory hierarchy, operating systems, networking
-6. **Theory of Computation** — Finite state machines, Turing machines, decidability, computational complexity
+6. **Theory of Computation** — Finite state machines, Turing machines, decidability, computational
+   complexity
 7. **Databases** — Relational model, SQL, normalisation, transaction processing
 8. **Software Engineering** — Methodologies, testing, maintenance, agile development
 
@@ -58,7 +63,8 @@ A Level Computer Science sits at the intersection of mathematics, engineering, a
 Each topic page contains:
 
 1. **Precise definitions** — formal specifications of every concept
-2. **Proofs and correctness arguments** — why algorithms work, why data structures have the properties they do
+2. **Proofs and correctness arguments** — why algorithms work, why data structures have the
+   properties they do
 3. **Complexity analysis** — rigorous Big-O derivations, not just stating the result
 4. **Worked examples** — tracing through algorithms step by step
 5. **Multi-step problem set** — questions requiring synthesis of multiple topics

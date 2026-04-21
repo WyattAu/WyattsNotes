@@ -363,9 +363,9 @@ Overall evaluation depends on the quality of domestic regulation, the nature of 
 <details>
 <summary>Problem 5: Comparative Development Analysis</summary>
 
-Country X has GDP per capita (PPP) of $\$12000$ and HDI of 0.780. Country Y has GDP per capita
-(PPP) of $\$15000$ and HDI of 0.720. Explain how this is possible and what it implies for
-development policy.
+Country X has GDP per capita (PPP) of $\$12000$ and HDI of 0.780. Country Y has GDP per capita (PPP)
+of $\$15000$ and HDI of 0.720. Explain how this is possible and what it implies for development
+policy.
 
 Country Y has higher income per capita but lower human development. This divergence can occur
 because:

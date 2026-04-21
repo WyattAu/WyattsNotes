@@ -38,17 +38,20 @@ slug: wrap
 - **b) Total Energy for Ice/Water:**
   - 1. Heat ice from -15°C to 0°C: $Q_1 = mc_{\mathrm{ice}}\Delta T = (0.50)(2100)(15) = 15,750$ J.
   - 2. Melt ice at 0°C: $Q_2 = mL_f = (0.50)(3.3\times 10^5) = 165,000$ J.
-  - 3. Heat water from 0°C to 20°C: $Q_3 = mc_{\mathrm{water}}\Delta T = (0.50)(4200)(20) = 42,000$ J.
+  - 3. Heat water from 0°C to 20°C: $Q_3 = mc_{\mathrm{water}}\Delta T = (0.50)(4200)(20) = 42,000$
+       J.
   - Total Energy: $Q_{\mathrm{total}} = Q_1 + Q_2 + Q_3 = 15750 + 165000 + 42000 = 222,750$ J.
 - **c) Time to Transfer Energy:**
   - The net power available from the plate is the power it absorbs from the sun, which is 144 W. We
     assume all this power is conducted into the ice.
-  - Power is the rate of energy transfer: $P = \frac{Q}{t} \implies t = \frac{Q_{\mathrm{total}}}{P}$.
+  - Power is the rate of energy transfer:
+    $P = \frac{Q}{t} \implies t = \frac{Q_{\mathrm{total}}}{P}$.
   - $t = \frac{222750 \mathrm{ J}}{144 \mathrm{ W}} = 1547$ s (or about 25.8 minutes).
 
 <b>If you get this wrong, you should focus on:</b> Applying the energy balance principle for
 radiation, breaking down a phase change problem into its distinct heating and melting stages, and
 understanding the relationship between power and energy transfer over time ($P=E/t$).
+
 </details>
 
 2. **Question:** A sealed vertical cylinder with a frictionless piston contains 0.10 moles of a
@@ -84,6 +87,7 @@ understanding the relationship between power and energy transfer over time ($P=E
 <b>If you get this wrong, you should focus on:</b> Calculating pressure in a system with a piston,
 correctly applying the Ideal Gas Law, and using the First Law of Thermodynamics for a specific
 process (isobaric), remembering to calculate both the change in internal energy and the work done.
+
 </details>
 
 3. **Question (HL Only):** A Carnot engine operates between a hot reservoir at 600 K and a cold
@@ -117,6 +121,7 @@ process (isobaric), remembering to calculate both the change in internal energy 
 <b>If you get this wrong, you should focus on:</b> The distinction between a heat engine and a
 refrigerator, the correct formulas for Carnot efficiency and Carnot COP, and how the work output of
 an engine serves as the work input for another device.
+
 </details>
 
 4. **Question (HL Only):** 1.0 mole of a monatomic ideal gas is initially at state A (300 K,
@@ -128,9 +133,9 @@ an engine serves as the work input for another device.
 <details>
 <summary>Answer</summary>
 
-- **Strategy:** Use the adiabatic relation ($PV^\gamma = \mathrm{const.}$) to find the state variables
-  at B. For the entropy change, use the formula $\Delta S = \int \frac{dQ}{T}$ for the constant
-  volume process.
+- **Strategy:** Use the adiabatic relation ($PV^\gamma = \mathrm{const.}$) to find the state
+  variables at B. For the entropy change, use the formula $\Delta S = \int \frac{dQ}{T}$ for the
+  constant volume process.
 - **a) State B (after adiabatic compression):**
   - For a monatomic ideal gas, the adiabatic index $\gamma = 5/3$.
   - Initial volume $V_A = \frac{nRT_A}{P_A} = \frac{1.0(8.31)(300)}{1.0 \times 10^5} = 0.0249$ m³.
@@ -157,6 +162,7 @@ an engine serves as the work input for another device.
 process ($PV^\gamma=\mathrm{const.}$, $TV^{\gamma-1}=\mathrm{const.}$). Also, the formula for
 calculating entropy change during a process with a changing temperature, which requires integration
 or the logarithmic form.
+
 </details>
 
 5. **Question:** A circuit is constructed with a 12.0 V battery with an internal resistance of 0.50
@@ -174,7 +180,8 @@ or the logarithmic form.
 - **a) Equivalent Resistance:**
   - First, find the equivalent resistance of the parallel part ($R_p$):
     - $\frac{1}{R_p} = \frac{1}{3.0} + \frac{1}{6.0} = \frac{2+1}{6.0} = \frac{3.0}{6.0} = 0.5 \implies R_p = 2.0 \Omega$.
-  - Now, add the series resistor: $R_{\mathrm{external}} = 2.0 \Omega + R_p = 2.0 + 2.0 = 4.0 \Omega$.
+  - Now, add the series resistor:
+    $R_{\mathrm{external}} = 2.0 \Omega + R_p = 2.0 + 2.0 = 4.0 \Omega$.
 - **b) Total Current:**
   - The total resistance of the entire circuit is
     $R_{\mathrm{total}} = R_{\mathrm{external}} + r = 4.0 + 0.50 = 4.5 \Omega$.
@@ -199,6 +206,7 @@ or the logarithmic form.
 <b>If you get this wrong, you should focus on:</b> The rules for combining series and parallel
 resistors, the concept of internal resistance and terminal PD, and using the potential divider rule
 (or working backwards through the circuit) to find voltage/current for a specific component.
+
 </details>
 
 </details>
@@ -262,8 +270,8 @@ $$\mathrm{Fraction submerged} = \frac{\rho_{\mathrm{object}}}{\rho_{\mathrm{flui
 
 ### Worked Example: Floating Block
 
-A wooden block of density $600 \mathrm{ kg m}^{-3}$ and volume $0.0050 \mathrm{ m}^3$ floats in water
-($\rho = 1000 \mathrm{ kg m}^{-3}$).
+A wooden block of density $600 \mathrm{ kg m}^{-3}$ and volume $0.0050 \mathrm{ m}^3$ floats in
+water ($\rho = 1000 \mathrm{ kg m}^{-3}$).
 
 - **Fraction submerged:** $\frac{600}{1000} = 0.60$ (60% underwater)
 - **Volume submerged:** $0.60 \times 0.0050 = 0.0030 \mathrm{ m}^3$
@@ -301,8 +309,8 @@ $$A_1 v_1 = A_2 v_2$$
 ### Worked Example: Pipe Flow
 
 Water flows through a pipe that narrows from cross-sectional area $A_1 = 0.050 \mathrm{ m}^2$ to
-$A_2 = 0.020 \mathrm{ m}^2$. The water speed in the wider section is $2.0 \mathrm{ m s}^{-1}$ and the
-pressure there is $1.5 \times 10^5$ Pa.
+$A_2 = 0.020 \mathrm{ m}^2$. The water speed in the wider section is $2.0 \mathrm{ m s}^{-1}$ and
+the pressure there is $1.5 \times 10^5$ Pa.
 
 - **Speed in narrow section:**
   $v_2 = \frac{A_1 v_1}{A_2} = \frac{(0.050)(2.0)}{0.020} = 5.0 \mathrm{ m s}^{-1}$
@@ -456,15 +464,16 @@ kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$)
 
 ## Quick Reference: Key Formulas
 
-| Formula                                              | Application                     |
-| :--------------------------------------------------- | :------------------------------ |
-| $P = \frac{F}{A}$                                    | Pressure definition             |
-| $P = P_0 + \rho g h$                                 | Hydrostatic pressure            |
+| Formula                                                | Application                     |
+| :----------------------------------------------------- | :------------------------------ |
+| $P = \frac{F}{A}$                                      | Pressure definition             |
+| $P = P_0 + \rho g h$                                   | Hydrostatic pressure            |
 | $F_b = \rho_f V_{\mathrm{sub}} g$                      | Buoyant force (Archimedes)      |
 | $P + \frac{1}{2}\rho v^2 + \rho g h = \mathrm{const.}$ | Bernoulli's equation            |
-| $A_1 v_1 = A_2 v_2$                                  | Continuity equation             |
-| $PV = nRT$                                           | Ideal gas law                   |
+| $A_1 v_1 = A_2 v_2$                                    | Continuity equation             |
+| $PV = nRT$                                             | Ideal gas law                   |
 | $c_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}}$              | RMS molecular speed             |
-| $Q = mc\Delta T$                                     | Specific heat (no phase change) |
-| $Q = mL$                                             | Latent heat (phase change)      |
+| $Q = mc\Delta T$                                       | Specific heat (no phase change) |
+| $Q = mL$                                               | Latent heat (phase change)      |
+
 </details>

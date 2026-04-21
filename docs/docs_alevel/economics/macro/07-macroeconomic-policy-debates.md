@@ -64,12 +64,10 @@ $$\pi = \Delta M - \Delta V + \Delta Y \approx \Delta M - \Delta Y$$
 | Self-correction         | Slow or non-existent                     | Automatic, though may take time                              |
 | Government intervention | Essential for stability                  | Minimise — rules-based policy                                |
 
-:::info
-Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
+:::info Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
 (9708) Paper 4 often asks students to evaluate the effectiveness of demand-side policies, requiring
 them to contrast Keynesian and monetarist perspectives. Edexcel requires students to discuss the
-"battle of the economists" in the context of policy debates.
-:::
+"battle of the economists" in the context of policy debates. :::
 
 ### 1.4 Evaluation: The Keynesian-Monetarist Debate in Practice
 
@@ -145,6 +143,7 @@ $$i = 2 + 5 + 0.5(5 - 2) + 0.5(-3) = 2 + 5 + 1.5 - 1.5 = 7\%$$
 
 The Taylor Rule prescribes a 7% policy rate: above neutral (4%) to fight inflation, but moderated by
 the recessionary output gap.
+
 </details>
 
 ### 2.3 Arguments for Rules
@@ -203,14 +202,12 @@ Most modern central banks use **inflation targeting with discretion**:
 
 $$\mathrm{UK (1992–present), NZ (1990–present), Canada (1991–present), Eurozone (2003–present)}$$
 
-:::info
-Board-Specific Note AQA (Paper 2) typically asks students to evaluate the effectiveness of
+:::info Board-Specific Note AQA (Paper 2) typically asks students to evaluate the effectiveness of
 monetary policy and may require discussion of the transmission mechanism. Edexcel (Paper 3) often
 asks about the role of central bank independence in achieving macroeconomic objectives. OCR
 (Paper 3) may ask students to compare different monetary policy frameworks. CIE (9708) Paper 4
 expects students to evaluate the relative merits of rules vs discretion with reference to specific
-country examples.
-:::
+country examples. :::
 
 ## 3. The Lucas Critique
 
@@ -449,13 +446,11 @@ governments a "blank cheque" risks fiscal profligacy and loss of market confiden
 apply to countries that borrow in foreign currency (emerging markets — most developing countries).
 (5) Assumes away the crowding out channel and Ricardian equivalence too casually.
 
-:::warning
-Common Pitfall MMT is often caricatured as "deficits don't matter." This is a
+:::warning Common Pitfall MMT is often caricatured as "deficits don't matter." This is a
 misrepresentation. MMT argues that deficits should be used to achieve real objectives (full
 employment) and that the only constraint is inflation. It does not claim that unlimited deficits are
 harmless. However, the practical difficulty of knowing when inflation will emerge makes MMT's policy
-prescriptions risky.
-:::
+prescriptions risky. :::
 
 ### 5.3 Exam Technique: Evaluating Policy Frameworks
 
@@ -524,13 +519,11 @@ dollar, partially crowding out the fiscal stimulus.
 amplified. When they pull in opposite directions, they partially offset each other, and the net
 effect depends on the relative strength of each.
 
-:::info
-Board-Specific Note AQA Paper 2 (Section B) often requires students to evaluate the
+:::info Board-Specific Note AQA Paper 2 (Section B) often requires students to evaluate the
 effectiveness of policy mixes. Edexcel Paper 3 expects discussion of policy conflicts and
 trade-offs. OCR may ask about the role of the Treasury and `` `{BoE}` `` in coordinating policy. CIE
 Paper 4 frequently asks students to assess whether government intervention can achieve multiple
-macroeconomic objectives simultaneously.
-:::
+macroeconomic objectives simultaneously. :::
 
 ## 7. Nominal GDP Targeting: An Alternative Framework
 

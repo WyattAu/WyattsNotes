@@ -621,8 +621,8 @@ $$
 
 ### Question 5 (Paper 2 style)
 
-A particle moves in a straight line with acceleration $a(t) = 6t - 2\mathrm{ m/s}^2$. At $t = 0$, the
-velocity is $4\mathrm{ m/s}$ and the displacement is $0\mathrm{ m}$.
+A particle moves in a straight line with acceleration $a(t) = 6t - 2\mathrm{ m/s}^2$. At $t = 0$,
+the velocity is $4\mathrm{ m/s}$ and the displacement is $0\mathrm{ m}$.
 
 **(a)** Find the velocity function.
 

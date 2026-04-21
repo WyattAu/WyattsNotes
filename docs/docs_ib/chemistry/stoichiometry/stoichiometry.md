@@ -303,7 +303,8 @@ where:
 
 ### Molar Volume
 
-At STP ($0\degree\mathrm{C}$, $100\mathrm{ kPa}$), one mole of any ideal gas occupies $22.7\mathrm{ L}$.
+At STP ($0\degree\mathrm{C}$, $100\mathrm{ kPa}$), one mole of any ideal gas occupies
+$22.7\mathrm{ L}$.
 
 At RTP ($25\degree\mathrm{C}$, $100\mathrm{ kPa}$), one mole occupies $24.8\mathrm{ L}$.
 
@@ -495,8 +496,8 @@ $$
 
 ### Question 3 (Paper 1 style)
 
-A gas at $300\mathrm{ K}$ and $1.5\mathrm{ atm}$ occupies $4.0\mathrm{ L}$. What volume does it occupy at
-$350\mathrm{ K}$ and $2.0\mathrm{ atm}$?
+A gas at $300\mathrm{ K}$ and $1.5\mathrm{ atm}$ occupies $4.0\mathrm{ L}$. What volume does it
+occupy at $350\mathrm{ K}$ and $2.0\mathrm{ atm}$?
 
 $$
 \frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
@@ -508,7 +509,8 @@ $$
 
 ### Question 4 (Paper 2 style)
 
-$3.0\mathrm{ g}$ of magnesium reacts with excess hydrochloric acid: Mg + 2HCl $\to$ MgCl$_2$ + H$_2$.
+$3.0\mathrm{ g}$ of magnesium reacts with excess hydrochloric acid: Mg + 2HCl $\to$ MgCl$_2$ +
+H$_2$.
 
 **(a)** Calculate the moles of hydrogen gas produced.
 
@@ -536,15 +538,15 @@ $$
 
 ## Summary
 
-| Formula          | Expression                                               |
-| ---------------- | -------------------------------------------------------- |
-| Moles from mass  | $n = \dfrac{m}{M}$                                       |
-| Particles        | $N = nN_A$                                               |
-| Molarity         | $c = \dfrac{n}{V}$                                       |
-| Ideal gas        | $PV = nRT$                                               |
-| Boyle's law      | $P_1V_1 = P_2V_2$                                        |
-| Charles's law    | $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$                    |
-| Dilution         | $c_1V_1 = c_2V_2$                                        |
+| Formula          | Expression                                                   |
+| ---------------- | ------------------------------------------------------------ |
+| Moles from mass  | $n = \dfrac{m}{M}$                                           |
+| Particles        | $N = nN_A$                                                   |
+| Molarity         | $c = \dfrac{n}{V}$                                           |
+| Ideal gas        | $PV = nRT$                                                   |
+| Boyle's law      | $P_1V_1 = P_2V_2$                                            |
+| Charles's law    | $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$                        |
+| Dilution         | $c_1V_1 = c_2V_2$                                            |
 | Percentage yield | $\dfrac{\mathrm{actual}}{\mathrm{theoretical}} \times 100\%$ |
 
 :::tip[Exam Strategy]
@@ -628,11 +630,11 @@ The gas is likely O$_2$.
 
 ### Concentration Conversions
 
-| From            | To              | Method                                        |
-| --------------- | --------------- | --------------------------------------------- |
-| Molarity        | Mass percentage | $c \times M \times 100 / (1000\rho)$          |
+| From            | To              | Method                                          |
+| --------------- | --------------- | ----------------------------------------------- |
+| Molarity        | Mass percentage | $c \times M \times 100 / (1000\rho)$            |
 | Mass percentage | Molarity        | $(\%\mathrm{/}100) \times \rho \times 1000 / M$ |
-| Molarity        | ppm             | $c \times M \times 10^6 / 1000\rho$           |
+| Molarity        | ppm             | $c \times M \times 10^6 / 1000\rho$             |
 
 ### Colligative Properties
 
@@ -667,8 +669,8 @@ constants, and $m$ is molality.
 
 :::info[Example]
 
-$12.5\mathrm{ g}$ of hydrated magnesium sulfate, MgSO$_4$$\cdot$xH$_2$O, is heated to constant mass of
-$6.1\mathrm{ g}$.
+$12.5\mathrm{ g}$ of hydrated magnesium sulfate, MgSO$_4$$\cdot$xH$_2$O, is heated to constant mass
+of $6.1\mathrm{ g}$.
 
 Mass of water lost $= 12.5 - 6.1 = 6.4\mathrm{ g}$.
 
@@ -721,7 +723,8 @@ The salt Na$_2$SO$_4$ is formed from a strong acid and strong base. The solution
 
 Which contains the greatest number of molecules?
 
-A. $1\mathrm{ g}$ of H$_2$ B. $1\mathrm{ g}$ of O$_2$ C. $1\mathrm{ g}$ of N$_2$ D. $1\mathrm{ g}$ of CO$_2$
+A. $1\mathrm{ g}$ of H$_2$ B. $1\mathrm{ g}$ of O$_2$ C. $1\mathrm{ g}$ of N$_2$ D. $1\mathrm{ g}$
+of CO$_2$
 
 **Answer: A.** Since $n = m/M$, and H$_2$ has the smallest molar mass (2 g/mol), $1\mathrm{ g}$ of
 H$_2$ gives $0.5\mathrm{ mol}$, which is more moles (and thus more molecules) than the others.
@@ -730,7 +733,8 @@ H$_2$ gives $0.5\mathrm{ mol}$, which is more moles (and thus more molecules) th
 
 Ammonia gas is produced by the reaction: N$_2$(g) + 3H$_2$(g) $\to$ 2NH$_3$(g).
 
-If $56.0\mathrm{ g}$ of N$_2$ reacts with excess H$_2$ at $400\degree\mathrm{C}$ and $200\mathrm{ atm}$:
+If $56.0\mathrm{ g}$ of N$_2$ reacts with excess H$_2$ at $400\degree\mathrm{C}$ and
+$200\mathrm{ atm}$:
 
 **(a)** Calculate the moles of NH$_3$ produced (assuming 100% yield).
 
@@ -766,8 +770,8 @@ reagent is added, and the unreacted portion is titrated.
 :::info[Example]
 
 An antacid tablet contains CaCO$_3$. The tablet is dissolved in $50.0\mathrm{ cm}^3$ of
-$0.200\mathrm{ M}$ HCl (excess). The remaining acid requires $30.0\mathrm{ cm}^3$ of $0.100\mathrm{ M}$
-NaOH for neutralisation.
+$0.200\mathrm{ M}$ HCl (excess). The remaining acid requires $30.0\mathrm{ cm}^3$ of
+$0.100\mathrm{ M}$ NaOH for neutralisation.
 
 **Step 1**: Total moles of HCl added:
 
@@ -858,8 +862,8 @@ Real gases deviate from ideal behaviour at high pressure and low temperature bec
 
 ### Question 8 (Paper 1 style)
 
-What volume of $0.500\mathrm{ M}$ H$_2$SO$_4$ is required to completely neutralise $25.0\mathrm{ cm}^3$
-of $0.400\mathrm{ M}$ NaOH?
+What volume of $0.500\mathrm{ M}$ H$_2$SO$_4$ is required to completely neutralise
+$25.0\mathrm{ cm}^3$ of $0.400\mathrm{ M}$ NaOH?
 
 $$
 \mathrm{H}_2\mathrm{SO}_4 + 2\mathrm{NaOH} \to \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}
@@ -921,7 +925,8 @@ $$
 <details>
 <summary>Question 1: Empirical and Molecular Formula</summary>
 
-A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen, and $53.3\%$ oxygen by mass. Its molar mass is approximately $180\mathrm{ g/mol}$. Determine the empirical and molecular formulas.
+A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen, and $53.3\%$ oxygen by mass. Its molar mass
+is approximately $180\mathrm{ g/mol}$. Determine the empirical and molecular formulas.
 
 </details>
 
@@ -930,11 +935,11 @@ A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen, and $53.3\%$ oxygen by ma
 
 Convert percentages to moles:
 
-| Element | Mass (g) | Molar Mass (g/mol) | Moles | Ratio |
-|---|---|---|---|---|
-| C | $40.0$ | $12.01$ | $3.33$ | $1$ |
-| H | $6.7$ | $1.01$ | $6.63$ | $2$ |
-| O | $53.3$ | $16.00$ | $3.33$ | $1$ |
+| Element | Mass (g) | Molar Mass (g/mol) | Moles  | Ratio |
+| ------- | -------- | ------------------ | ------ | ----- |
+| C       | $40.0$   | $12.01$            | $3.33$ | $1$   |
+| H       | $6.7$    | $1.01$             | $6.63$ | $2$   |
+| O       | $53.3$   | $16.00$            | $3.33$ | $1$   |
 
 Empirical formula: **$\mathrm{CH}_2\mathrm{O}$** (molar mass $= 30.03\mathrm{ g/mol}$)
 
@@ -973,7 +978,8 @@ $$V_{\mathrm{theoretical}} = 0.0800 \times 24.8 = 1.98\mathrm{ L}$$
 <details>
 <summary>Question 3: Ideal Gas Law</summary>
 
-A gas occupies $3.00\mathrm{ L}$ at $350\mathrm{ K}$ and $150\mathrm{ kPa}$. What volume does it occupy at STP ($273\mathrm{ K}$, $100\mathrm{ kPa}$)?
+A gas occupies $3.00\mathrm{ L}$ at $350\mathrm{ K}$ and $150\mathrm{ kPa}$. What volume does it
+occupy at STP ($273\mathrm{ K}$, $100\mathrm{ kPa}$)?
 
 </details>
 
@@ -989,7 +995,9 @@ $$V_2 = \frac{P_1 V_1 T_2}{P_2 T_1} = \frac{150 \times 3.00 \times 273}{100 \tim
 <details>
 <summary>Question 4: Titration Calculation</summary>
 
-$25.0\mathrm{ cm}^3$ of sulfuric acid is titrated with $0.200\mathrm{ M}$ $\mathrm{NaOH}$. The endpoint is reached at $30.0\mathrm{ cm}^3$ of $\mathrm{NaOH}$. Calculate the concentration of the sulfuric acid.
+$25.0\mathrm{ cm}^3$ of sulfuric acid is titrated with $0.200\mathrm{ M}$ $\mathrm{NaOH}$. The
+endpoint is reached at $30.0\mathrm{ cm}^3$ of $\mathrm{NaOH}$. Calculate the concentration of the
+sulfuric acid.
 
 </details>
 
@@ -1009,7 +1017,8 @@ $$c(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.00300}{0.0250} = 0.120\mathrm{ mol/L}$$
 <details>
 <summary>Question 5: Water of Crystallisation</summary>
 
-$6.44\mathrm{ g}$ of hydrated magnesium sulfate $\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$ is heated to constant mass of $3.14\mathrm{ g}$. Determine the value of $x$.
+$6.44\mathrm{ g}$ of hydrated magnesium sulfate $\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$ is
+heated to constant mass of $3.14\mathrm{ g}$. Determine the value of $x$.
 
 </details>
 
@@ -1025,5 +1034,5 @@ $$n(\mathrm{H}_2\mathrm{O}) = \frac{3.30}{18.02} = 0.183\mathrm{ mol}$$
 $$x = \frac{0.183}{0.0261} = 7.01 \approx 7$$
 
 Formula: $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$ (Epsom salt)
-</details>
 
+</details>

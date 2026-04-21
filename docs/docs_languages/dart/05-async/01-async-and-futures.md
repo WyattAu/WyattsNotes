@@ -12,9 +12,13 @@ slug: async-and-futures
 
 ## Why Async Matters in Dart
 
-Dart runs on a **single-threaded event loop** with an isolated memory model. Unlike languages with threads (Java, C++, Rust), Dart uses **event-driven concurrency** — the single thread processes events from a queue, interleaving async operations without blocking.
+Dart runs on a **single-threaded event loop** with an isolated memory model. Unlike languages with
+threads (Java, C++, Rust), Dart uses **event-driven concurrency** — the single thread processes
+events from a queue, interleaving async operations without blocking.
 
-This design is fundamental to Flutter's architecture: the UI must remain responsive (60 fps) while performing I/O (network requests, file reads, database queries). If any operation blocks the thread, the entire UI freezes.
+This design is fundamental to Flutter's architecture: the UI must remain responsive (60 fps) while
+performing I/O (network requests, file reads, database queries). If any operation blocks the thread,
+the entire UI freezes.
 
 ```mermaid
 flowchart TD
@@ -32,7 +36,8 @@ flowchart TD
 
 ## Futures
 
-A `Future<T>` represents a value that will be available at some point in the future — either a value of type `T` or an error. It is Dart's equivalent of JavaScript's `Promise` or Rust's `Future`.
+A `Future<T>` represents a value that will be available at some point in the future — either a value
+of type `T` or an error. It is Dart's equivalent of JavaScript's `Promise` or Rust's `Future`.
 
 ### Creating Futures
 
@@ -66,7 +71,8 @@ Future<void> fail() {
 
 ### async/await
 
-The `async`/`await` syntax is syntactic sugar for working with Futures. `async` marks a function as asynchronous, and `await` suspends execution until the Future completes:
+The `async`/`await` syntax is syntactic sugar for working with Futures. `async` marks a function as
+asynchronous, and `await` suspends execution until the Future completes:
 
 ```dart
 // Without async/await (callback style)
@@ -166,13 +172,16 @@ Future<void> parallelNamed() async {
 
 :::tip
 
-Use `Future.wait` for independent async operations that can run concurrently. Use sequential `await` for dependent operations where the result of one is needed by the next.
+Use `Future.wait` for independent async operations that can run concurrently. Use sequential `await`
+for dependent operations where the result of one is needed by the next.
 
 :::
 
 ## Streams
 
-A `Stream<T>` is a sequence of asynchronous events. While a `Future<T>` delivers a single value, a `Stream<T>` delivers zero or more values over time. It is Dart's equivalent of Rust's `Stream` or JavaScript's `Observable`.
+A `Stream<T>` is a sequence of asynchronous events. While a `Future<T>` delivers a single value, a
+`Stream<T>` delivers zero or more values over time. It is Dart's equivalent of Rust's `Stream` or
+JavaScript's `Observable`.
 
 ### Stream Types
 
@@ -247,7 +256,9 @@ class EventBus {
 
 ## Isolates
 
-Dart's answer to threads. Each isolate has its own **memory heap and event loop** — there is no shared state between isolates. Communication is via **message passing** (ports), similar to Erlang processes or Rust's `mpsc` channels.
+Dart's answer to threads. Each isolate has its own **memory heap and event loop** — there is no
+shared state between isolates. Communication is via **message passing** (ports), similar to Erlang
+processes or Rust's `mpsc` channels.
 
 ```mermaid
 flowchart LR
@@ -329,7 +340,9 @@ final result = await compute(expensiveFunction, inputData);
 
 :::warning
 
-Isolates are **not threads**. They do not share memory. Data must be serialized (copied) when sent between isolates. For large data transfers, use `Isolate.exit()` (Dart 2.19+) to transfer ownership instead of copying.
+Isolates are **not threads**. They do not share memory. Data must be serialized (copied) when sent
+between isolates. For large data transfers, use `Isolate.exit()` (Dart 2.19+) to transfer ownership
+instead of copying.
 
 :::
 
@@ -366,7 +379,9 @@ void main() {
 
 :::info
 
-Microtasks run before the event loop processes the next event. All microtasks complete before any event from the event queue is processed. This is why `Future.then` callbacks (which schedule microtasks) run before `Future.delayed` callbacks (which schedule events).
+Microtasks run before the event loop processes the next event. All microtasks complete before any
+event from the event queue is processed. This is why `Future.then` callbacks (which schedule
+microtasks) run before `Future.delayed` callbacks (which schedule events).
 
 :::
 

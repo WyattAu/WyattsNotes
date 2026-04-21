@@ -26,10 +26,8 @@ slug: chemistry-acids-bases-electrochemistry
 - Acid: electron pair acceptor
 - Base: electron pair donor
 
-:::info
-In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
-the proton donor and proton acceptor in acid-base reactions.
-:::
+:::info In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
+the proton donor and proton acceptor in acid-base reactions. :::
 
 ### Conjugate Acid-Base Pairs
 
@@ -43,24 +41,22 @@ $$\mathrm{HA} + \mathrm{B} \rightleftharpoons \mathrm{A}^- + \mathrm{BH}^+$$
 
 ### Strong and Weak Acids
 
-| Property                   | Strong Acids                                          | Weak Acids                                                     |
-| -------------------------- | ----------------------------------------------------- | -------------------------------------------------------------- |
-| Degree of ionisation       | Nearly 100%                                           | Partial                                                        |
+| Property                   | Strong Acids                                                  | Weak Acids                                                               |
+| -------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Degree of ionisation       | Nearly 100%                                                   | Partial                                                                  |
 | Examples                   | $\mathrm{HCl}$, $\mathrm{HNO}_3$, $\mathrm{H}_2\mathrm{SO}_4$ | $\mathrm{CH}_3\mathrm{COOH}$, $\mathrm{H}_2\mathrm{CO}_3$, $\mathrm{HF}$ |
-| pH at same concentration   | Lower pH                                              | Higher pH                                                      |
-| Conductivity               | Higher                                                | Lower                                                          |
-| Reaction rate (same conc.) | Faster                                                | Slower                                                         |
+| pH at same concentration   | Lower pH                                                      | Higher pH                                                                |
+| Conductivity               | Higher                                                        | Lower                                                                    |
+| Reaction rate (same conc.) | Faster                                                        | Slower                                                                   |
 
-:::warning
-A strong acid is NOT the same as a concentrated acid. Strength refers to the degree of
+:::warning A strong acid is NOT the same as a concentrated acid. Strength refers to the degree of
 ionisation; concentration refers to the amount dissolved per unit volume. A dilute solution of a
-strong acid can have a higher pH than a concentrated solution of a weak acid.
-:::
+strong acid can have a higher pH than a concentrated solution of a weak acid. :::
 
 ### Common Strong Acids and Bases
 
-**Strong acids:** $\mathrm{HCl}$, $\mathrm{HBr}$, $\mathrm{HI}$, $\mathrm{HNO}_3$, $\mathrm{H}_2\mathrm{SO}_4$,
-$\mathrm{HClO}_4$
+**Strong acids:** $\mathrm{HCl}$, $\mathrm{HBr}$, $\mathrm{HI}$, $\mathrm{HNO}_3$,
+$\mathrm{H}_2\mathrm{SO}_4$, $\mathrm{HClO}_4$
 
 **Strong bases:** Group 1 hydroxides ($\mathrm{NaOH}$, $\mathrm{KOH}$), $\mathrm{Ba(OH)}_2$
 
@@ -126,12 +122,10 @@ $$x = 1.34 \times 10^{-3} \mathrm{ mol/dm}^3$$
 
 $$\mathrm{pH} = -\log_{10}(1.34 \times 10^{-3}) = 2.87$$
 
-:::tip
-For weak acid calculations, you can assume
-$[\mathrm{HA}]_{\mathrm{initial}} \approx [\mathrm{HA}]_{\mathrm{equilibrium}}$ only when the degree of
-ionisation is small (typically when $K_a \lt 10^{-4}$). This simplification is valid for most
-DSE-level problems.
-:::
+:::tip For weak acid calculations, you can assume
+$[\mathrm{HA}]_{\mathrm{initial}} \approx [\mathrm{HA}]_{\mathrm{equilibrium}}$ only when the degree
+of ionisation is small (typically when $K_a \lt 10^{-4}$). This simplification is valid for most
+DSE-level problems. :::
 
 ### pH Scale Summary
 
@@ -171,7 +165,8 @@ solution of known concentration.
 ### Worked Example 4
 
 $25.0 \mathrm{ cm}^3$ of $\mathrm{NaOH}$ solution is titrated with $0.100 \mathrm{ mol/dm}^3$
-$\mathrm{HCl}$. The average titre is $20.0 \mathrm{ cm}^3$. Find the concentration of $\mathrm{NaOH}$.
+$\mathrm{HCl}$. The average titre is $20.0 \mathrm{ cm}^3$. Find the concentration of
+$\mathrm{NaOH}$.
 
 $$\mathrm{HCl} + \mathrm{NaOH} \to \mathrm{NaCl} + \mathrm{H}_2\mathrm{O}$$
 
@@ -189,20 +184,20 @@ $$[\mathrm{NaOH}] = \frac{0.00200}{25.0/1000} = \frac{0.00200}{0.0250} = 0.0800 
 
 ### Solubility Rules
 
-| Soluble                                | Exceptions                                                           |
-| -------------------------------------- | -------------------------------------------------------------------- |
-| All Group 1 and ammonium salts         | —                                                                    |
-| All nitrates                           | —                                                                    |
+| Soluble                                | Exceptions                                                                   |
+| -------------------------------------- | ---------------------------------------------------------------------------- |
+| All Group 1 and ammonium salts         | —                                                                            |
+| All nitrates                           | —                                                                            |
 | All chlorides                          | $\mathrm{PbCl}_2$, $\mathrm{AgCl}$, $\mathrm{Hg}_2\mathrm{Cl}_2$ (insoluble) |
-| All sulphates                          | $\mathrm{BaSO}_4$, $\mathrm{PbSO}_4$, $\mathrm{CaSO}_4$ (slightly soluble) |
-| Sodium, potassium, ammonium carbonates | —                                                                    |
-| Sodium, potassium, ammonium hydroxides | —                                                                    |
+| All sulphates                          | $\mathrm{BaSO}_4$, $\mathrm{PbSO}_4$, $\mathrm{CaSO}_4$ (slightly soluble)   |
+| Sodium, potassium, ammonium carbonates | —                                                                            |
+| Sodium, potassium, ammonium hydroxides | —                                                                            |
 
-| Insoluble       | Exceptions                                               |
-| --------------- | -------------------------------------------------------- |
-| Most carbonates | Group 1 and ammonium                                     |
+| Insoluble       | Exceptions                                                   |
+| --------------- | ------------------------------------------------------------ |
+| Most carbonates | Group 1 and ammonium                                         |
 | Most hydroxides | Group 1, $\mathrm{Ba(OH)}_2$, $\mathrm{Ca(OH)}_2$ (slightly) |
-| Most oxides     | Group 1                                                  |
+| Most oxides     | Group 1                                                      |
 
 ### Methods of Salt Preparation
 
@@ -291,8 +286,8 @@ Oxidation numbers: $\mathrm{K} = +1$, $\mathrm{Mn} = +7$, $\mathrm{O} = -2$.
 
 ### Worked Example 7
 
-Balance the reaction: $\mathrm{MnO}_4^- + \mathrm{Fe}^{2+} \to \mathrm{Mn}^{2+} + \mathrm{Fe}^{3+}$ (in
-acidic solution)
+Balance the reaction: $\mathrm{MnO}_4^- + \mathrm{Fe}^{2+} \to \mathrm{Mn}^{2+} + \mathrm{Fe}^{3+}$
+(in acidic solution)
 
 **Reduction half-equation:**
 
@@ -374,27 +369,26 @@ $2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^-$)
 
 Halides ($\mathrm{Cl}^-$, $\mathrm{Br}^-$, $\mathrm{I}^-$): The halogen is discharged
 
-:::warning
-Concentration matters. In concentrated chloride solutions, $\mathrm{Cl}^-$ is discharged at
-the anode instead of $\mathrm{OH}^-$. In dilute chloride solutions, $\mathrm{OH}^-$ may be
-preferentially discharged.
-:::
+:::warning Concentration matters. In concentrated chloride solutions, $\mathrm{Cl}^-$ is discharged
+at the anode instead of $\mathrm{OH}^-$. In dilute chloride solutions, $\mathrm{OH}^-$ may be
+preferentially discharged. :::
 
 ### Worked Example 9
 
 Describe the electrolysis of concentrated aqueous $\mathrm{NaCl}$ using carbon electrodes.
 
-At the cathode: $\mathrm{Na}^+$ is above $\mathrm{H}^+$ in the discharge series, so $\mathrm{H}_2\mathrm{O}$
-is reduced:
+At the cathode: $\mathrm{Na}^+$ is above $\mathrm{H}^+$ in the discharge series, so
+$\mathrm{H}_2\mathrm{O}$ is reduced:
 
 $$2\mathrm{H}_2\mathrm{O} + 2e^- \to \mathrm{H}_2 + 2\mathrm{OH}^-$$
 
-At the anode: Concentrated $\mathrm{Cl}^-$ is discharged (halides above $\mathrm{OH}^-$ in concentrated
-solution):
+At the anode: Concentrated $\mathrm{Cl}^-$ is discharged (halides above $\mathrm{OH}^-$ in
+concentrated solution):
 
 $$2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$$
 
-Overall: $2\mathrm{H}_2\mathrm{O} + 2\mathrm{NaCl} \to \mathrm{H}_2 + \mathrm{Cl}_2 + 2\mathrm{NaOH}$
+Overall:
+$2\mathrm{H}_2\mathrm{O} + 2\mathrm{NaCl} \to \mathrm{H}_2 + \mathrm{Cl}_2 + 2\mathrm{NaOH}$
 
 ---
 
@@ -421,8 +415,8 @@ different substances liberated are proportional to their equivalent masses ($M/n
 
 ### Worked Example 10
 
-What mass of copper is deposited when a current of $2.0 \mathrm{ A}$ is passed through $\mathrm{CuSO}_4$
-solution for 30 minutes?
+What mass of copper is deposited when a current of $2.0 \mathrm{ A}$ is passed through
+$\mathrm{CuSO}_4$ solution for 30 minutes?
 
 $$Q = It = 2.0 \times 30 \times 60 = 3600 \mathrm{ C}$$
 
@@ -482,9 +476,9 @@ If $E^\circ_{\mathrm{cell}} \gt 0$, the reaction is spontaneous.
 
 ### Worked Example 12
 
-A cell is constructed from a $\mathrm{Zn}^{2+}/\mathrm{Zn}$ half-cell ($E^\circ = -0.76 \mathrm{ V}$) and
-a $\mathrm{Cu}^{2+}/\mathrm{Cu}$ half-cell ($E^\circ = +0.34 \mathrm{ V}$). Find the cell potential and
-write the overall equation.
+A cell is constructed from a $\mathrm{Zn}^{2+}/\mathrm{Zn}$ half-cell
+($E^\circ = -0.76 \mathrm{ V}$) and a $\mathrm{Cu}^{2+}/\mathrm{Cu}$ half-cell
+($E^\circ = +0.34 \mathrm{ V}$). Find the cell potential and write the overall equation.
 
 Copper has the more positive $E^\circ$, so reduction occurs at the copper electrode (cathode).
 
@@ -500,8 +494,8 @@ Overall: $\mathrm{Zn} + \mathrm{Cu}^{2+} \to \mathrm{Zn}^{2+} + \mathrm{Cu}$
 
 The electrochemical series ranks half-reactions by their standard electrode potentials:
 
-| Half-reaction                         | $E^\circ$ (V) |
-| ------------------------------------- | ------------- |
+| Half-reaction                             | $E^\circ$ (V) |
+| ----------------------------------------- | ------------- |
 | $\mathrm{Li}^+ + e^- \to \mathrm{Li}$     | -3.03         |
 | $\mathrm{K}^+ + e^- \to \mathrm{K}$       | -2.93         |
 | $\mathrm{Na}^+ + e^- \to \mathrm{Na}$     | -2.71         |
@@ -520,13 +514,13 @@ The electrochemical series ranks half-reactions by their standard electrode pote
 
 ## Summary Table
 
-| Topic          | Key Formula                                                                 | Key Concept                 |
-| -------------- | --------------------------------------------------------------------------- | --------------------------- |
-| pH             | $\mathrm{pH} = -\log_{10}[\mathrm{H}^+]$                                        | Measures acidity            |
-| $K_w$          | $K_w = [\mathrm{H}^+][\mathrm{OH}^-] = 10^{-14}$                                | Ionic product of water      |
+| Topic          | Key Formula                                                                       | Key Concept                 |
+| -------------- | --------------------------------------------------------------------------------- | --------------------------- |
+| pH             | $\mathrm{pH} = -\log_{10}[\mathrm{H}^+]$                                          | Measures acidity            |
+| $K_w$          | $K_w = [\mathrm{H}^+][\mathrm{OH}^-] = 10^{-14}$                                  | Ionic product of water      |
 | $K_a$          | $K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}$                        | Acid dissociation constant  |
-| Titration      | $c_1V_1 = c_2V_2$ (for 1:1 reactions)                                       | Concentration determination |
-| Faraday's Law  | $m = \frac{Q \times M}{nF}$                                                 | Mass from electrolysis      |
+| Titration      | $c_1V_1 = c_2V_2$ (for 1:1 reactions)                                             | Concentration determination |
+| Faraday's Law  | $m = \frac{Q \times M}{nF}$                                                       | Mass from electrolysis      |
 | Cell potential | $E^\circ_{\mathrm{cell}} = E^\circ_{\mathrm{cathode}} - E^\circ_{\mathrm{anode}}$ | Voltaic cell voltage        |
 
 ---
@@ -546,8 +540,8 @@ The electrochemical series ranks half-reactions by their standard electrode pote
 <summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** $25.0 \mathrm{ cm}^3$ of $0.200 \mathrm{ mol/dm}^3$ $\mathrm{H}_2\mathrm{SO}_4$ is
-neutralised by $\mathrm{NaOH}$ solution. If $20.0 \mathrm{ cm}^3$ of $\mathrm{NaOH}$ is required, find its
-concentration.
+neutralised by $\mathrm{NaOH}$ solution. If $20.0 \mathrm{ cm}^3$ of $\mathrm{NaOH}$ is required,
+find its concentration.
 
 $$\mathrm{H}_2\mathrm{SO}_4 + 2\mathrm{NaOH} \to \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}$$
 
@@ -557,8 +551,8 @@ Moles of $\mathrm{NaOH} = 2 \times 0.00500 = 0.0100 \mathrm{ mol}$
 
 $$[\mathrm{NaOH}] = \frac{0.0100}{0.0200} = 0.500 \mathrm{ mol/dm}^3$$
 
-**Question 2:** A current of $5.0 \mathrm{ A}$ is passed through molten $\mathrm{Al}_2\mathrm{O}_3$ for 2
-hours. What mass of aluminium is produced?
+**Question 2:** A current of $5.0 \mathrm{ A}$ is passed through molten $\mathrm{Al}_2\mathrm{O}_3$
+for 2 hours. What mass of aluminium is produced?
 
 $$Q = 5.0 \times 2 \times 3600 = 36000 \mathrm{ C}$$
 
@@ -576,8 +570,8 @@ $x = +6$
 
 Oxidation numbers: $\mathrm{K} = +1$, $\mathrm{Cr} = +6$, $\mathrm{O} = -2$.
 
-**Question 4:** Balance the reaction between $\mathrm{MnO}_4^-$ and $\mathrm{C}_2\mathrm{O}_4^{2-}$ in
-acidic solution.
+**Question 4:** Balance the reaction between $\mathrm{MnO}_4^-$ and $\mathrm{C}_2\mathrm{O}_4^{2-}$
+in acidic solution.
 
 Reduction: $\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$
 
@@ -592,9 +586,9 @@ $5\mathrm{C}_2\mathrm{O}_4^{2-} \to 10\mathrm{CO}_2 + 10e^-$
 Overall:
 $2\mathrm{MnO}_4^- + 5\mathrm{C}_2\mathrm{O}_4^{2-} + 16\mathrm{H}^+ \to 2\mathrm{Mn}^{2+} + 10\mathrm{CO}_2 + 8\mathrm{H}_2\mathrm{O}$
 
-**Question 5:** A cell is made from $\mathrm{Zn}^{2+}/\mathrm{Zn}$ ($E^\circ = -0.76 \mathrm{ V}$) and
-$\mathrm{Ag}^+/\mathrm{Ag}$ ($E^\circ = +0.80 \mathrm{ V}$). Write the overall equation and calculate the
-cell potential.
+**Question 5:** A cell is made from $\mathrm{Zn}^{2+}/\mathrm{Zn}$ ($E^\circ = -0.76 \mathrm{ V}$)
+and $\mathrm{Ag}^+/\mathrm{Ag}$ ($E^\circ = +0.80 \mathrm{ V}$). Write the overall equation and
+calculate the cell potential.
 
 Silver has the more positive $E^\circ$, so it is the cathode.
 
@@ -607,6 +601,7 @@ Anode: $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-$
 Multiply cathode by 2: $2\mathrm{Ag}^+ + 2e^- \to 2\mathrm{Ag}$
 
 Overall: $\mathrm{Zn} + 2\mathrm{Ag}^+ \to \mathrm{Zn}^{2+} + 2\mathrm{Ag}$
+
 </details>
 
 ---
@@ -629,12 +624,12 @@ A buffer can be made from:
 **Acidic buffer** (e.g., $\mathrm{CH}_3\mathrm{COOH}$ / $\mathrm{CH}_3\mathrm{COONa}$):
 
 When acid ($\mathrm{H}^+$) is added:
-$$\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{COOH}$$ The conjugate base neutralises
-the added $\mathrm{H}^+$.
+$$\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{COOH}$$ The conjugate base
+neutralises the added $\mathrm{H}^+$.
 
 When base ($\mathrm{OH}^-$) is added:
-$$\mathrm{CH}_3\mathrm{COOH} + \mathrm{OH}^- \to \mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}_2\mathrm{O}$$ The weak
-acid neutralises the added $\mathrm{OH}^-$.
+$$\mathrm{CH}_3\mathrm{COOH} + \mathrm{OH}^- \to \mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}_2\mathrm{O}$$
+The weak acid neutralises the added $\mathrm{OH}^-$.
 
 ### Henderson-Hasselbalch Equation
 
@@ -648,8 +643,8 @@ Where:
 
 ### Worked Example 12
 
-A buffer contains $0.1 \mathrm{ mol/dm}^3$ $\mathrm{CH}_3\mathrm{COOH}$ ($K_a = 1.8 \times 10^{-5}$) and
-$0.2 \mathrm{ mol/dm}^3$ $\mathrm{CH}_3\mathrm{COONa}$. Calculate the pH.
+A buffer contains $0.1 \mathrm{ mol/dm}^3$ $\mathrm{CH}_3\mathrm{COOH}$ ($K_a = 1.8 \times 10^{-5}$)
+and $0.2 \mathrm{ mol/dm}^3$ $\mathrm{CH}_3\mathrm{COONa}$. Calculate the pH.
 
 $$\mathrm{p}K_a = -\log_{10}(1.8 \times 10^{-5}) = 4.74$$
 
@@ -657,8 +652,8 @@ $$\mathrm{pH} = 4.74 + \log_{10}\left(\frac{0.2}{0.1}\right) = 4.74 + \log_{10}(
 
 ### Worked Example 13
 
-What is the pH of the buffer after adding $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ to $1 \mathrm{ dm}^3$ of
-the buffer in Worked Example 12?
+What is the pH of the buffer after adding $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ to
+$1 \mathrm{ dm}^3$ of the buffer in Worked Example 12?
 
 $\mathrm{HCl}$ reacts with $\mathrm{CH}_3\mathrm{COO}^-$:
 
@@ -671,8 +666,7 @@ $$\mathrm{pH} = 4.74 + \log_{10}\left(\frac{0.19}{0.11}\right) = 4.74 + \log_{10
 The pH changed from 5.04 to 4.98, a change of only 0.06. Without the buffer, adding
 $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ to $1 \mathrm{ dm}^3$ of water would give pH = 2.
 
-:::info
-Buffers are most effective when $[\mathrm{HA}] = [\mathrm{A}^-]$, i.e., when
+:::info Buffers are most effective when $[\mathrm{HA}] = [\mathrm{A}^-]$, i.e., when
 $\mathrm{pH} = \mathrm{p}K_a$. The effective buffering range is approximately $\mathrm{p}K_a \pm 1$.
 :::
 
@@ -700,8 +694,8 @@ $\mathrm{pH} = \mathrm{p}K_a$. The effective buffering range is approximately $\
 ### Worked Example 14
 
 $25.0 \mathrm{ cm}^3$ of $0.100 \mathrm{ mol/dm}^3$ ethanoic acid ($\mathrm{CH}_3\mathrm{COOH}$,
-$K_a = 1.8 \times 10^{-5}$) is titrated with $0.100 \mathrm{ mol/dm}^3$ $\mathrm{NaOH}$. Find the pH at
-the equivalence point.
+$K_a = 1.8 \times 10^{-5}$) is titrated with $0.100 \mathrm{ mol/dm}^3$ $\mathrm{NaOH}$. Find the pH
+at the equivalence point.
 
 At equivalence point: moles of $\mathrm{NaOH}$ = moles of $\mathrm{CH}_3\mathrm{COOH}$
 
@@ -747,7 +741,8 @@ At the cathode (reduction):
 
 $$\mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} + 4e^- \to 4\mathrm{OH}^-$$
 
-The $\mathrm{Fe}^{2+}$ reacts with $\mathrm{OH}^-$ and oxygen to form hydrated iron(III) oxide (rust):
+The $\mathrm{Fe}^{2+}$ reacts with $\mathrm{OH}^-$ and oxygen to form hydrated iron(III) oxide
+(rust):
 
 $$4\mathrm{Fe}^{2+} + 4\mathrm{OH}^- + \mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} \to 4\mathrm{Fe}(\mathrm{OH})_3$$
 
@@ -781,7 +776,8 @@ Iron (cathode): $\mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} + 4e^- \to 4\mathrm{OH}^
 $0.20 \mathrm{ mol/dm}^3$ $\mathrm{NH}_3$ ($K_b = 1.8 \times 10^{-5}$) with $100 \mathrm{ cm}^3$ of
 $0.10 \mathrm{ mol/dm}^3$ $\mathrm{HCl}$.
 
-$\mathrm{NH}_3$ reacts with $\mathrm{HCl}$: $\mathrm{NH}_3 + \mathrm{HCl} \to \mathrm{NH}_4^+ + \mathrm{Cl}^-$
+$\mathrm{NH}_3$ reacts with $\mathrm{HCl}$:
+$\mathrm{NH}_3 + \mathrm{HCl} \to \mathrm{NH}_4^+ + \mathrm{Cl}^-$
 
 Moles of $\mathrm{NH}_3 = 0.20 \times 0.100 = 0.0200 \mathrm{ mol}$
 
@@ -807,9 +803,9 @@ cathode. The iron oxidises more rapidly, accelerating the rusting process. This 
 **electrochemical corrosion** where the less reactive metal provides a surface for the reduction
 reaction.
 
-**Question 8:** A current of $4.0 \mathrm{ A}$ is passed through $\mathrm{CuSO}_4$ solution using copper
-electrodes. The mass of the anode decreased by $2.38 \mathrm{ g}$ after a certain time. Calculate the
-time for which the current was passed.
+**Question 8:** A current of $4.0 \mathrm{ A}$ is passed through $\mathrm{CuSO}_4$ solution using
+copper electrodes. The mass of the anode decreased by $2.38 \mathrm{ g}$ after a certain time.
+Calculate the time for which the current was passed.
 
 $$m = \frac{Q \times M}{nF}$$
 
@@ -818,6 +814,7 @@ $$2.38 = \frac{Q \times 63.5}{2 \times 96500}$$
 $$Q = \frac{2.38 \times 2 \times 96500}{63.5} = \frac{459340}{63.5} = 7234 \mathrm{ C}$$
 
 $$t = \frac{Q}{I} = \frac{7234}{4.0} = 1808.5 \mathrm{ s} \approx 30.1 \mathrm{ minutes}$$
+
 </details>
 
 :::

@@ -39,8 +39,8 @@ $$
 
 :::info[Example]
 
-A CD rotates at $200\mathrm{ rpm}$. Find the angular velocity in rad/s and the linear speed of a point
-$5\mathrm{ cm}$ from the centre.
+A CD rotates at $200\mathrm{ rpm}$. Find the angular velocity in rad/s and the linear speed of a
+point $5\mathrm{ cm}$ from the centre.
 
 $$
 \omega = 200 \times \frac{2\pi}{60} = \frac{400\pi}{60} = 20.9\mathrm{ rad/s}
@@ -224,8 +224,8 @@ $$
 
 :::info[Example]
 
-A $0.3\mathrm{ kg}$ ball on a string of length $0.8\mathrm{ m}$ is swung in a vertical circle. Find the
-minimum speed at the bottom for the ball to complete the circle.
+A $0.3\mathrm{ kg}$ ball on a string of length $0.8\mathrm{ m}$ is swung in a vertical circle. Find
+the minimum speed at the bottom for the ball to complete the circle.
 
 $$
 v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5(9.81)(0.8)} = \sqrt{39.24} = 6.26\mathrm{ m/s}
@@ -407,8 +407,8 @@ $$
 :::info[Example]
 
 A figure skater with arms extended has $I = 4.5\mathrm{ kg}\cdot\mathrm{m}^2$ and spins at
-$2\mathrm{ rad/s}$. She pulls her arms in, reducing $I$ to $1.5\mathrm{ kg}\cdot\mathrm{m}^2$. Find her
-new angular velocity.
+$2\mathrm{ rad/s}$. She pulls her arms in, reducing $I$ to $1.5\mathrm{ kg}\cdot\mathrm{m}^2$. Find
+her new angular velocity.
 
 $$
 I_1\omega_1 = I_2\omega_2
@@ -546,8 +546,8 @@ $$
 
 ### Question 3 (Paper 2 style)
 
-A $0.2\mathrm{ kg}$ ball is attached to a string of length $0.8\mathrm{ m}$ and whirled in a vertical
-circle.
+A $0.2\mathrm{ kg}$ ball is attached to a string of length $0.8\mathrm{ m}$ and whirled in a
+vertical circle.
 
 **(a)** Find the minimum speed at the top of the circle for the ball to maintain contact.
 
@@ -555,7 +555,8 @@ $$
 v_{\mathrm{min}} = \sqrt{gr} = \sqrt{9.81 \times 0.8} = \sqrt{7.85} = 2.80\mathrm{ m/s}
 $$
 
-**(b)** If the speed at the bottom is $8\mathrm{ m/s}$, find the tension in the string at the bottom.
+**(b)** If the speed at the bottom is $8\mathrm{ m/s}$, find the tension in the string at the
+bottom.
 
 $$
 T_{\mathrm{bottom}} = mg + \frac{mv^2}{r} = 0.2(9.81) + \frac{0.2(64)}{0.8} = 1.962 + 16 = 17.96\mathrm{ N}
@@ -767,8 +768,9 @@ $$
 
 ### Question 6 (Paper 2 style)
 
-A disc of mass $5\mathrm{ kg}$ and radius $0.2\mathrm{ m}$ rotates about its central axis. A constant
-torque of $0.5\mathrm{ N}\cdot\mathrm{m}$ is applied for $4\mathrm{ s}$, starting from rest.
+A disc of mass $5\mathrm{ kg}$ and radius $0.2\mathrm{ m}$ rotates about its central axis. A
+constant torque of $0.5\mathrm{ N}\cdot\mathrm{m}$ is applied for $4\mathrm{ s}$, starting from
+rest.
 
 **(a)** Find the angular acceleration.
 
@@ -836,9 +838,9 @@ $$
 
 ### Question 8 (Paper 1 style)
 
-A horizontal turntable of radius $0.5\mathrm{ m}$ rotates at $3\mathrm{ rad/s}$. A coin is placed on the
-turntable at a distance $0.3\mathrm{ m}$ from the centre. If the coefficient of static friction is
-$0.4$, does the coin slip?
+A horizontal turntable of radius $0.5\mathrm{ m}$ rotates at $3\mathrm{ rad/s}$. A coin is placed on
+the turntable at a distance $0.3\mathrm{ m}$ from the centre. If the coefficient of static friction
+is $0.4$, does the coin slip?
 
 $$
 a_c = \omega^2 r = 9 \times 0.3 = 2.7\mathrm{ m/s}^2

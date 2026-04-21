@@ -44,10 +44,8 @@ dynamic text = "hello";
 dynamic number = 22;
 ```
 
-:::tip
-The best practice is here is to avoid usage of `dynamic` and `Object` declaration, always use
-`var` or explicit typing.
-:::
+:::tip The best practice is here is to avoid usage of `dynamic` and `Object` declaration, always use
+`var` or explicit typing. :::
 
 ### Mutation Specifier
 
@@ -185,10 +183,8 @@ Only two number types exists in Dart, `int` and `double`. `int` represents 64-bi
 platforms, but is limited to 53-bit precision when compiled to JavaScript. `double` follows the IEEE
 754 standard and is also 64 bits.
 
-:::info
-These numbers are inherited from the `num` class, with operations and methods such as
-`abs()`, `floor()`, etc. Note that `num`, `double`, `int` cannot be extended.
-:::
+:::info These numbers are inherited from the `num` class, with operations and methods such as
+`abs()`, `floor()`, etc. Note that `num`, `double`, `int` cannot be extended. :::
 
 #### String Literals
 

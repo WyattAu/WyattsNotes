@@ -187,8 +187,9 @@ writes per thread.
    $T_2$ issues an RFO, invalidating $T_1$'s copy. $T_2$'s line transitions to **Modified**.
 5. Step 3 and step 4 alternate for every write, producing a **ping-pong** pattern.
 6. Each ping-pong costs ~40-100ns (inter-core coherence latency), versus ~1-4ns for an L1 hit.
-7. For $n$ writes per thread, total coherence cost is $\Theta(n \times \mathrm{coherence\_latency})$,
-   versus $\Theta(n \times \mathrm{L1\_latency})$ without false sharing.
+7. For $n$ writes per thread, total coherence cost is
+   $\Theta(n \times \mathrm{coherence\_latency})$, versus $\Theta(n \times \mathrm{L1\_latency})$
+   without false sharing.
 8. The speedup from eliminating false sharing is
    $\frac{\mathrm{coherence\_latency}}{\mathrm{L1\_latency}} \approx 10\mathrm{x}\mathrm{--}100\mathrm{x}$.
 
@@ -272,8 +273,7 @@ int main() {
 }
 ```
 
-:::tip
-On typical x86-64 systems, `sizeof(padded_counter)` will be 64 (one cache line), while
+:::tip On typical x86-64 systems, `sizeof(padded_counter)` will be 64 (one cache line), while
 `sizeof(unpadded_counter)` will be 4 (one int). With 8 threads, the unpadded counters occupy only 32
 bytes (fitting in a single cache line), while the padded counters occupy 512 bytes (8 cache lines).
 The padded version will typically be significantly faster due to the elimination of false sharing.
@@ -427,11 +427,9 @@ Parameters:
 - **RW:** 0 for read, 1 for write.
 - **Locality:** 0-3 (3 = keep in cache as long as possible).
 
-:::warning
-`__builtin_prefetch` is a hint, not a guarantee. Incorrect prefetching can degrade
+:::warning `__builtin_prefetch` is a hint, not a guarantee. Incorrect prefetching can degrade
 performance by evicting useful cache lines. Always benchmark with and without prefetching. The
-hardware prefetcher is often better than manual prefetching for simple patterns.
-:::
+hardware prefetcher is often better than manual prefetching for simple patterns. :::
 
 ## Write Propagation and Visibility
 

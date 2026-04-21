@@ -18,10 +18,8 @@ slug: momentum
 | OCR (A)    | Paper 1 | Includes 2D collisions         |
 | CIE (9709) | P4      | Momentum, impulse, restitution |
 
-:::info
-Momentum is a vector quantity. Always define a positive direction and be consistent with
-signs.
-:::
+:::info Momentum is a vector quantity. Always define a positive direction and be consistent with
+signs. :::
 
 <hr />
 
@@ -165,8 +163,8 @@ $u_1 - u_2 \gt{} 0$, so:
 $$e = \frac{v_2 - v_1}{u_1 - u_2} \geq 0$$
 
 **Proof of $e \leq 1$.** Kinetic energy cannot be created in a collision, so
-$\mathrm{KE}_{\mathrm{after}} \leq \mathrm{KE}_{\mathrm{before}}$, which means $\Delta\mathrm{KE} \geq 0$.
-From the energy loss formula in Section 5.3:
+$\mathrm{KE}_{\mathrm{after}} \leq \mathrm{KE}_{\mathrm{before}}$, which means
+$\Delta\mathrm{KE} \geq 0$. From the energy loss formula in Section 5.3:
 
 $$\Delta\mathrm{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2) \geq 0$$
 
@@ -177,10 +175,8 @@ $$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
 
 Combining both results: $0 \leq e \leq 1$. $\blacksquare$
 
-:::warning
-An exam question may ask you to justify $e \leq 1$. The key argument is that kinetic
-energy cannot increase during a collision.
-:::
+:::warning An exam question may ask you to justify $e \leq 1$. The key argument is that kinetic
+energy cannot increase during a collision. :::
 
 <hr />
 
@@ -223,11 +219,9 @@ $$J_y = \int_{t_1}^{t_2}F_y\,dt = \Delta p_y = m v_{y,\mathrm{final}} - m v_{y,\
 
 This is particularly useful for oblique impacts where the impulse acts in a specific direction.
 
-:::info
-The impulse-momentum theorem is the bridge between Newton's Second Law (a differential
+:::info The impulse-momentum theorem is the bridge between Newton's Second Law (a differential
 equation) and conservation of momentum (an algebraic constraint). It tells us exactly how much
-momentum a force transfers over a given time interval.
-:::
+momentum a force transfers over a given time interval. :::
 
 <hr />
 
@@ -256,10 +250,10 @@ $p_y$.
 
 ### 7.3 Worked example
 
-A particle of mass $3\,\mathrm{kg}$ moving at $4\,\mathrm{m/s}$ collides with a stationary particle of
-mass $2\,\mathrm{kg}$. The $3\,\mathrm{kg}$ particle is deflected through $30^\circ$ and the $2\,\mathrm{kg}$
-particle moves off at angle $\theta$ below the original line of motion. Both particles have speed
-$3\,\mathrm{m/s}$ after collision. Find $\theta$.
+A particle of mass $3\,\mathrm{kg}$ moving at $4\,\mathrm{m/s}$ collides with a stationary particle
+of mass $2\,\mathrm{kg}$. The $3\,\mathrm{kg}$ particle is deflected through $30^\circ$ and the
+$2\,\mathrm{kg}$ particle moves off at angle $\theta$ below the original line of motion. Both
+particles have speed $3\,\mathrm{m/s}$ after collision. Find $\theta$.
 
 **Solution.** Let the original direction be the positive $x$-axis.
 
@@ -316,9 +310,9 @@ Consequences:
 ### 8.3 Worked example
 
 Two smooth spheres $A$ (mass $3\,\mathrm{kg}$) and $B$ (mass $2\,\mathrm{kg}$) collide. Before
-collision, $A$ moves with velocity $5\,\mathrm{m/s}$ and $B$ is stationary. The line of centres makes
-an angle of $30^\circ$ with the direction of motion of $A$. Given $e = 0.6$, find the speed and direction
-of each sphere after collision.
+collision, $A$ moves with velocity $5\,\mathrm{m/s}$ and $B$ is stationary. The line of centres
+makes an angle of $30^\circ$ with the direction of motion of $A$. Given $e = 0.6$, find the speed
+and direction of each sphere after collision.
 
 **Solution.** Resolving parallel ($\parallel$) and perpendicular ($\perp$) to the line of centres:
 
@@ -393,8 +387,7 @@ $$\tan\beta = \frac{v_t}{|v_n|} = \frac{u\sin\alpha}{e\,u\cos\alpha} = \frac{\ta
 
 ### 9.3 Angle relationships
 
-:::info
-Since $0 \lt{} e \leq 1$, we have $\tan\beta = \dfrac{\tan\alpha}{e} \geq \tan\alpha$, so
+:::info Since $0 \lt{} e \leq 1$, we have $\tan\beta = \dfrac{\tan\alpha}{e} \geq \tan\alpha$, so
 $\beta \geq \alpha$. The particle always rebounds at an angle greater than or equal to the angle of
 incidence. Equality holds only when $e = 1$ (perfectly elastic), recovering the law of reflection.
 :::
@@ -558,7 +551,8 @@ A $3\,\mathrm{kg}$ particle moving at $6\,\mathrm{m/s}$ collides with a $2\,\mat
 Momentum: $3(6)+2(-3) = 3v_1+2v_2 \implies 12 = 3v_1+2v_2$.
 Restitution: $v_2 - v_1 = 0.6(6-(-3)) = 5.4 \implies v_2 = v_1 + 5.4$.
 
-$12 = 3v_1 + 2(v_1+5.4) = 5v_1 + 10.8 \implies v_1 = 0.24\,\mathrm{m/s}$. $v_2 = 5.64\,\mathrm{m/s}$.
+$12 = 3v_1 + 2(v_1+5.4) = 5v_1 + 10.8 \implies v_1 = 0.24\,\mathrm{m/s}$.
+$v_2 = 5.64\,\mathrm{m/s}$.
 
 $\mathrm{KE}_{\mathrm{before}} = \tfrac{1}{2}(3)(36) + \tfrac{1}{2}(2)(9) = 54 + 9 = 63\,\mathrm{J}$.
 $\mathrm{KE}_{\mathrm{after}} = \tfrac{1}{2}(3)(0.0576) + \tfrac{1}{2}(2)(31.81) = 0.086 + 31.81 = 31.90\,\mathrm{J}$.
@@ -680,8 +674,8 @@ $3\,v_y + 6\sqrt{3} = 0 \implies v_y = -2\sqrt{3}\,\mathrm{m/s}$.
 
 Speed: $|v| = \sqrt{(-2)^2 + (-2\sqrt{3})^2} = \sqrt{4 + 12} = \sqrt{16} = 4\,\mathrm{m/s}$.
 
-Direction: $\theta = \arctan\!\left(\frac{-2\sqrt{3}}{-2}\right) = \arctan(\sqrt{3}) = 60^\circ$ below
-the horizontal (south-west).
+Direction: $\theta = \arctan\!\left(\frac{-2\sqrt{3}}{-2}\right) = \arctan(\sqrt{3}) = 60^\circ$
+below the horizontal (south-west).
 
 **If you get this wrong, revise:**
 [Conservation of Momentum in Two Dimensions](#7-conservation-of-momentum-in-two-dimensions) —
@@ -778,9 +772,10 @@ If $e \gt{} 1$, then $e^2 \gt{} 1$ and $1 - e^2 \lt{} 0$.
 Since $\frac{1}{2} \gt{} 0$, $\frac{m_1m_2}{m_1+m_2} \gt{} 0$ (for positive masses), and
 $(u_1-u_2)^2 \geq 0$, we get $\Delta\mathrm{KE} \lt{} 0$.
 
-$\Delta\mathrm{KE} \lt{} 0$ means $\mathrm{KE}_{\mathrm{after}} \gt{} \mathrm{KE}_{\mathrm{before}}$, which
-would require kinetic energy to be created during the collision. This violates conservation of
-energy (no external work is done during the collision).
+$\Delta\mathrm{KE} \lt{} 0$ means
+$\mathrm{KE}_{\mathrm{after}} \gt{} \mathrm{KE}_{\mathrm{before}}$, which would require kinetic
+energy to be created during the collision. This violates conservation of energy (no external work is
+done during the collision).
 
 Therefore $e \leq 1$. $\blacksquare$
 
@@ -799,8 +794,8 @@ A ball is projected horizontally at $8\,\mathrm{m/s}$ from a height of $5\,\math
 Speed just before first impact: $v_y = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 5} = \sqrt{98} \approx 9.899\,\mathrm{m/s}$.
 Horizontal: $v_x = 8\,\mathrm{m/s}$ (constant).
 
-After first bounce: $v_{y,1} = e \cdot v_y = 0.75 \times 9.899 \approx 7.424\,\mathrm{m/s}$ (upward).
-$v_{x,1} = 8\,\mathrm{m/s}$.
+After first bounce: $v_{y,1} = e \cdot v_y = 0.75 \times 9.899 \approx 7.424\,\mathrm{m/s}$
+(upward). $v_{x,1} = 8\,\mathrm{m/s}$.
 
 Height reached after first bounce:
 $h_1 = \frac{v_{y,1}^2}{2g} = \frac{7.424^2}{19.6} = \frac{55.12}{19.6} \approx 2.812\,\mathrm{m}$.

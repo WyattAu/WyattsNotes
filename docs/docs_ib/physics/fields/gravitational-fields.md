@@ -106,15 +106,15 @@ $$
 
 where:
 
-$G$: Gravitational constant ($6.67 \times 10^{-11} \mathrm{ m}^3 \mathrm{ kg}^{-1} \mathrm{ s}^{-2}$)
+$G$: Gravitational constant
+($6.67 \times 10^{-11} \mathrm{ m}^3 \mathrm{ kg}^{-1} \mathrm{ s}^{-2}$)
 
 $m_1, m_2$: The mass of the two point masses
 
 $r$: The separation distance between the point mass, where bodies approximated to point masses are
 measured from the center
 
-:::info
-The IB uses the Newton's Universal Law of Gravitation published in 1687, where the equation
+:::info The IB uses the Newton's Universal Law of Gravitation published in 1687, where the equation
 only describes the magnitude of the force, the vector form is required to describe the force
 $\bm{F}$ on $m_2$ with the direction, with $\bm{r}$ being the separation displacement
 ($r= r_2 - r_1$) from $m_1$ to $m_2$:
@@ -125,19 +125,17 @@ $$
 \end{aligned}
 $$
 
-This describes the force in the inverse direction as the displacement vector from $m_1$
-:::
+This describes the force in the inverse direction as the displacement vector from $m_1$ :::
 
-:::warning
-IB extends Newton's Law of Universal Gravitation to include spherical masses with uniform
-density by assuming to be point mass.
-:::
+:::warning IB extends Newton's Law of Universal Gravitation to include spherical masses with uniform
+density by assuming to be point mass. :::
 
 ## Gravitational Field
 
 <PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
 
-Simulate gravitational interactions between a star, planet, and moon. Adjust the masses and observe how orbital speed, period, and gravitational force change.
+Simulate gravitational interactions between a star, planet, and moon. Adjust the masses and observe
+how orbital speed, period, and gravitational force change.
 
 A gravitational field ($g$) is a vector field with dimension of
 [acceleration](../space-time-and-motions/forces-and-momentums.md#acceleration), where the
@@ -313,11 +311,9 @@ $$
 Orbital speed is the required speed for an object to remain in stable orbit around a barycenter or a
 center of a body with significantly more mass.
 
-:::warning
-In IB, only the cases of orbiting a body with significantly more mass is present. The IB
+:::warning In IB, only the cases of orbiting a body with significantly more mass is present. The IB
 also assume all orbits to be circular instead of elliptic as stated by
-[Keplar's First Law](#first-law).
-:::
+[Keplar's First Law](#first-law). :::
 
 In a stable circular orbit, equivalent force in the opposite direction is required to balance the
 [centripetal force](../space-time-and-motions/forces-and-momentums.md#centripetal-force) $F_c$ of
@@ -333,8 +329,7 @@ $$
 \end{aligned}
 $$
 
-:::info
-IB does only consider the magnitude of orbital velocity, therefore, the equation above is
+:::info IB does only consider the magnitude of orbital velocity, therefore, the equation above is
 the one written in the formula booklet. The angle of orbital velocity is dependent on the angular
 position $\theta$ of the orbital body:
 
@@ -395,10 +390,8 @@ $$
 \end{aligned}
 $$
 
-:::info
-Since $\frac{4\pi^2}{GM}$ is constant for a given central body, this reduces to
-$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$.
-:::
+:::info Since $\frac{4\pi^2}{GM}$ is constant for a given central body, this reduces to
+$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$. :::
 
 ## Gravitational Field Inside a Spherical Shell
 
@@ -414,10 +407,8 @@ Qualitatively: for any point $P$ inside, the shell can be divided into pairs of 
 elements. A near-side element pulls more strongly (inverse-square law), but the corresponding
 far-side element has more mass (larger solid angle). These effects cancel exactly.
 
-:::warning
-The IB requires only qualitative understanding of the shell theorem. A full proof
-requires integration over the spherical shell.
-:::
+:::warning The IB requires only qualitative understanding of the shell theorem. A full proof
+requires integration over the spherical shell. :::
 
 ### Field Inside a Solid Sphere
 
@@ -494,8 +485,7 @@ A geostationary orbit must satisfy three conditions:
 
 1. Orbital period equals Earth's rotational period ($T = 86400$ s)
 2. Orbit lies in the equatorial plane
-3. Orbit is circular
-:::
+3. Orbit is circular :::
 
 The required orbital radius is found from Kepler's third law:
 
@@ -849,8 +839,8 @@ $$
 \end{aligned}
 $$
 
-**(b)** For escape, $E_{\mathrm{total}}$ must reach zero: $\Delta E = 0 - (-15.1 \times 10^6) = 15.1$
-MJ.
+**(b)** For escape, $E_{\mathrm{total}}$ must reach zero:
+$\Delta E = 0 - (-15.1 \times 10^6) = 15.1$ MJ.
 
 **(c)**
 

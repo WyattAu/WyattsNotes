@@ -71,10 +71,8 @@ $$
 
 where $\overline{z_2} = c - di$ is the _complex conjugate_ of $z_2$.
 
-:::warning
-When computing $\arg(z)$, always check the quadrant of $(a, b)$. The formula
-$\theta = \arctan(b/a)$ only gives the correct principal argument when $a > 0$.
-:::
+:::warning When computing $\arg(z)$, always check the quadrant of $(a, b)$. The formula
+$\theta = \arctan(b/a)$ only gives the correct principal argument when $a > 0$. :::
 
 <details>
 <summary>Worked Example: Modulus, argument, and polar form</summary>
@@ -89,6 +87,7 @@ $$\arg(z) = \arctan\!\left(\frac{-\sqrt{3}}{1}\right) = -\frac{\pi}{3}$$
 
 Polar form:
 $z = 2\!\left(\cos\!\left(-\dfrac{\pi}{3}\right) + i\sin\!\left(-\dfrac{\pi}{3}\right)\right)$.
+
 </details>
 
 <hr />
@@ -169,6 +168,7 @@ $$
 &= 32(0 + i) = 32i
 \end{aligned}
 $$
+
 </details>
 
 <hr />
@@ -226,6 +226,7 @@ Sum: $1 - \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}\,i - \dfrac{1}{2} - \dfrac{\sqrt{3}
 Product:
 $1 \cdot \left(-\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}\,i\right)\left(-\dfrac{1}{2} - \dfrac{\sqrt{3}}{2}\,i\right) = 1 \cdot \left(\dfrac{1}{4} + \dfrac{3}{4}\right) = 1 = (-1)^{3-1}$.
 ✓
+
 </details>
 
 <hr />
@@ -288,10 +289,8 @@ z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 \end{aligned}
 $$
 
-:::info
-CIE and Edexcel FP2 require the exponential form. AQA accepts it but also works extensively
-with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem.
-:::
+:::info CIE and Edexcel FP2 require the exponential form. AQA accepts it but also works extensively
+with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem. :::
 
 <hr />
 
@@ -326,16 +325,13 @@ Exam questions often require describing a _region_ defined by combining loci, su
 
 - $|z - 3| \leq 2$ and $\arg(z) \geq \dfrac{\pi}{4}$: the part of a disc in a sector.
 
-:::warning
-A half-line $\arg(z - a) = \alpha$ does _not_ include the point $a$. When shading
+:::warning A half-line $\arg(z - a) = \alpha$ does _not_ include the point $a$. When shading
 regions, be careful about whether boundaries are included (solid line) or excluded (dashed line).
 :::
 
-:::tip
-Always sketch loci problems. The algebraic description follows from the geometric picture.
+:::tip Always sketch loci problems. The algebraic description follows from the geometric picture.
 Common exam technique: identify the boundary (circle, line, half-line), then determine which side of
-the boundary is included by testing a point.
-:::
+the boundary is included by testing a point. :::
 
 <details>
 <summary>Worked Example: Describing a locus algebraically</summary>
@@ -361,6 +357,7 @@ $(x^2 + (y-2)^2) = 9$. The closest point on this circle to the origin lies along
 origin through the centre $(0,2)$, which is the $y$-axis. The point $(0, -1)$ is outside the first
 quadrant. Within the first quadrant, the closest point is where the circle meets the $x$-axis:
 setting $y = 0$, $x^2 + 4 = 9 \implies x = \sqrt{5}$. So $|z| = \sqrt{5}$.
+
 </details>
 
 <hr />
@@ -422,10 +419,10 @@ $$u^2 - u + v^2 = 0 \implies \left(u - \frac{1}{2}\right)^2 + v^2 = \frac{1}{4}$
 
 This is a circle with centre $\left(\dfrac{1}{2}, 0\right)$ and radius $\dfrac{1}{2}$ in the
 $w$-plane.
+
 </details>
 
-:::info
-AQA places significant emphasis on complex transformations including $w = f(z)$ mappings.
+:::info AQA places significant emphasis on complex transformations including $w = f(z)$ mappings.
 Edexcel and OCR cover this topic with less depth. CIE focuses more on loci than on transformations.
 :::
 
@@ -458,6 +455,7 @@ $a + bi$.
 <summary>Hint</summary>
 
 Find $|z|$ and $\arg(z)$ first. Then apply De Moivre's theorem.
+
 </details>
 
 <details>
@@ -469,6 +467,7 @@ The point $(-\sqrt{3}, 1)$ is in the second quadrant.
 $\arg(z) = \pi - \arctan\!\left(\dfrac{1}{\sqrt{3}}\right) = \pi - \dfrac{\pi}{6} = \dfrac{5\pi}{6}$.
 
 $$z^5 = 2^5\!\left(\cos\frac{25\pi}{6} + i\sin\frac{25\pi}{6}\right) = 32\!\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right) = 32\!\left(\frac{\sqrt{3}}{2} + \frac{1}{2}\,i\right) = 16\sqrt{3} + 16i$$
+
 </details>
 
 <hr />
@@ -480,6 +479,7 @@ $\cos 4\theta = 8\cos^4\theta - 8\cos^2\theta + 1$.
 <summary>Hint</summary>
 
 Expand $(\cos\theta + i\sin\theta)^4$ using the binomial theorem and equate real parts.
+
 </details>
 
 <details>
@@ -501,6 +501,7 @@ $$
 &= 8\cos^4\theta - 8\cos^2\theta + 1 \quad \square
 \end{aligned}
 $$
+
 </details>
 
 <hr />
@@ -511,6 +512,7 @@ $$
 <summary>Hint</summary>
 
 Write $16i = 16e^{i\pi/2}$ and use the roots formula.
+
 </details>
 
 <details>
@@ -528,6 +530,7 @@ k = 2:\quad z_2 &= 2\!\left(\cos\frac{9\pi}{8} + i\sin\frac{9\pi}{8}\right) = -\
 k = 3:\quad z_3 &= 2\!\left(\cos\frac{13\pi}{8} + i\sin\frac{13\pi}{8}\right) = \sqrt{2-\sqrt{2}} - i\sqrt{2+\sqrt{2}}
 \end{aligned}
 $$
+
 </details>
 
 <hr />
@@ -540,6 +543,7 @@ $\cos\dfrac{2\pi}{5} + \cos\dfrac{4\pi}{5} = -\dfrac{1}{2}$.
 <summary>Hint</summary>
 
 Sum the geometric series. Then separate real and imaginary parts.
+
 </details>
 
 <details>
@@ -562,6 +566,7 @@ $$1 + \cos\frac{2\pi}{5} + \cos\frac{4\pi}{5} + \cos\frac{6\pi}{5} + \cos\frac{8
 Since $\cos\frac{6\pi}{5} = \cos\frac{4\pi}{5}$ and $\cos\frac{8\pi}{5} = \cos\frac{2\pi}{5}$:
 
 $$1 + 2\cos\frac{2\pi}{5} + 2\cos\frac{4\pi}{5} = 0 \implies \cos\frac{2\pi}{5} + \cos\frac{4\pi}{5} = -\frac{1}{2} \quad \square$$
+
 </details>
 
 <hr />
@@ -574,6 +579,7 @@ simultaneously.
 <summary>Hint</summary>
 
 Part (a) is a perpendicular bisector. Part (b) is a half-line. Find their intersection.
+
 </details>
 
 <details>
@@ -596,6 +602,7 @@ the perpendicular bisector has slope 1, and they only meet at the point $(2, 0)$
 from the half-line.
 
 **Answer:** No complex number satisfies both conditions simultaneously.
+
 </details>
 
 <hr />
@@ -607,6 +614,7 @@ $w = \dfrac{z + 1}{z - 1}$.
 <summary>Hint</summary>
 
 Express $z$ in terms of $w$ and substitute $|z| = 2$.
+
 </details>
 
 <details>
@@ -640,6 +648,7 @@ $$\left(u - \frac{5}{3}\right)^2 + v^2 = \frac{16}{9}$$
 
 This is a circle with centre $\left(\dfrac{5}{3}, 0\right)$ and radius $\dfrac{4}{3}$ in the
 $w$-plane.
+
 </details>
 
 <hr />
@@ -650,6 +659,7 @@ $w$-plane.
 <summary>Hint</summary>
 
 Write each term in exponential form and use the laws of indices.
+
 </details>
 
 <details>
@@ -663,6 +673,7 @@ $$3\pi/2 + 4\pi/3 = \frac{9\pi + 8\pi}{6} = \frac{17\pi}{6} = 2\pi + \frac{5\pi}
 
 So:
 $\dfrac{1}{2}\,e^{5\pi i/6} = \dfrac{1}{2}\!\left(\cos\dfrac{5\pi}{6} + i\sin\dfrac{5\pi}{6}\right) = \dfrac{1}{2}\!\left(-\dfrac{\sqrt{3}}{2} + \dfrac{1}{2}\,i\right) = -\dfrac{\sqrt{3}}{4} + \dfrac{1}{4}\,i$
+
 </details>
 
 <hr />
@@ -675,6 +686,7 @@ $0 \leq \arg(z) \leq \dfrac{\pi}{4}$. Find and describe the image of $R$ under $
 <summary>Hint</summary>
 
 Under $w = z^2$, the modulus squares and the argument doubles.
+
 </details>
 
 <details>
@@ -688,6 +700,7 @@ If $z = re^{i\theta}$, then $w = r^2 e^{2i\theta}$.
 
 The image is the region in the first quadrant of the $w$-plane between the circles $|w| = 1$ and
 $|w| = 4$, bounded by the rays $\arg(w) = 0$ and $\arg(w) = \dfrac{\pi}{2}$.
+
 </details>
 
 <hr />
@@ -699,6 +712,7 @@ and hence show that $\cos\dfrac{2\pi}{4} + \cos\dfrac{4\pi}{4} + \cos\dfrac{6\pi
 <summary>Hint</summary>
 
 Factor $z^3 + z^2 + z + 1 = (z+1)(z^2+1)$. The roots are the 4th roots of unity excluding $z = 1$.
+
 </details>
 
 <details>
@@ -722,6 +736,7 @@ $0 - 1 + 0 = -1$. ✓
 Alternatively, the claim as stated uses
 $\cos\dfrac{2\pi}{4} + \cos\dfrac{4\pi}{4} + \cos\dfrac{6\pi}{4} = \cos\dfrac{\pi}{2} + \cos\pi + \cos\dfrac{3\pi}{2} = 0 + (-1) + 0 = -1$.
 ✓ $\square$
+
 </details>
 
 <hr />
@@ -738,6 +753,7 @@ $\omega = e^{2\pi i/n}$.
 
 For (a), multiply numerator and denominator by the conjugate $e^{-i\theta} - 1$ and use half-angle
 identities. For (b), use the result from (a) with $\theta = 2k\pi/n$.
+
 </details>
 
 <details>
@@ -762,6 +778,7 @@ The cotangent sum is zero by symmetry: $\cot\dfrac{k\pi}{n} = -\cot\dfrac{(n-k)\
 cancel in pairs.
 
 Therefore: $\displaystyle\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k} = \frac{n - 1}{2}$.
+
 </details>
 
 :::

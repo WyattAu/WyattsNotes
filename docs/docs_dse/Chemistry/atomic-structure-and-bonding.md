@@ -53,10 +53,8 @@ A mass spectrometer separates ions based on their mass-to-charge ratio ($m/z$). 
 3. **Deflection:** Ions are deflected by a magnetic field (lighter ions are deflected more)
 4. **Detection:** Ions hit a detector, producing a signal proportional to abundance
 
-:::info
-In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
-relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass.
-:::
+:::info In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
+relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass. :::
 
 ---
 
@@ -79,11 +77,9 @@ Electrons fill orbitals in order of increasing energy:
 
 $$1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p$$
 
-:::warning
-Note that $4s$ fills before $3d$, but $3d$ loses electrons before $4s$ when forming
+:::warning Note that $4s$ fills before $3d$, but $3d$ loses electrons before $4s$ when forming
 cations. This is because the $4s$ orbital is at a higher energy than $3d$ once electrons are in the
-$3d$ subshell.
-:::
+$3d$ subshell. :::
 
 ### Pauli Exclusion Principle
 
@@ -108,13 +104,12 @@ For transition metals, use the noble gas core notation:
 
 - Iron: $[\mathrm{Ar}]\, 4s^2\, 3d^6$
 - Copper ($Z = 29$): $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
-- Chromium ($Z = 24$): $[\mathrm{Ar}]\, 4s^1\, 3d^5$ (exception: half-full subshells are more stable)
+- Chromium ($Z = 24$): $[\mathrm{Ar}]\, 4s^1\, 3d^5$ (exception: half-full subshells are more
+  stable)
 
-:::tip
-Exceptions to remember: Cr is $4s^1\, 3d^5$ (not $4s^2\, 3d^4$) and Cu is $4s^1\, 3d^{10}$
+:::tip Exceptions to remember: Cr is $4s^1\, 3d^5$ (not $4s^2\, 3d^4$) and Cu is $4s^1\, 3d^{10}$
 (not $4s^2\, 3d^9$). These arise because half-filled and fully-filled $d$ subshells have extra
-stability.
-:::
+stability. :::
 
 ---
 
@@ -254,21 +249,19 @@ The Valence Shell Electron Pair Repulsion theory predicts molecular shapes based
 electron pairs around a central atom repel each other and arrange themselves as far apart as
 possible.
 
-| Electron Pairs    | Shape                | Bond Angle            | Example                        |
-| ----------------- | -------------------- | --------------------- | ------------------------------ |
+| Electron Pairs    | Shape                | Bond Angle            | Example                            |
+| ----------------- | -------------------- | --------------------- | ---------------------------------- |
 | 2 bonding pairs   | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$ |
-| 3 bonding pairs   | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$                  |
-| 2 bonding, 1 lone | Bent                 | $\lt 120^\circ$       | $\mathrm{SO}_2$                  |
-| 4 bonding pairs   | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$                  |
-| 3 bonding, 1 lone | Trigonal pyramidal   | $\lt 109.5^\circ$     | $\mathrm{NH}_3$                  |
+| 3 bonding pairs   | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$                    |
+| 2 bonding, 1 lone | Bent                 | $\lt 120^\circ$       | $\mathrm{SO}_2$                    |
+| 4 bonding pairs   | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$                    |
+| 3 bonding, 1 lone | Trigonal pyramidal   | $\lt 109.5^\circ$     | $\mathrm{NH}_3$                    |
 | 2 bonding, 2 lone | Bent                 | $\lt 109.5^\circ$     | $\mathrm{H}_2\mathrm{O}$           |
-| 5 bonding pairs   | Trigonal bipyramidal | $90^\circ, 120^\circ$ | $\mathrm{PCl}_5$                 |
-| 6 bonding pairs   | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                  |
+| 5 bonding pairs   | Trigonal bipyramidal | $90^\circ, 120^\circ$ | $\mathrm{PCl}_5$                   |
+| 6 bonding pairs   | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                    |
 
-:::info
-Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
-the nucleus. This reduces bond angles from the ideal values.
-:::
+:::info Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
+the nucleus. This reduces bond angles from the ideal values. :::
 
 ### Worked Example 5
 
@@ -339,11 +332,11 @@ Examples: $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, HF, DNA base pairing.
 
 ### Worked Example 6
 
-Explain why $\mathrm{H}_2\mathrm{O}$ has a higher boiling point than $\mathrm{H}_2\mathrm{S}$, despite
-$\mathrm{H}_2\mathrm{S}$ having a larger molecular mass.
+Explain why $\mathrm{H}_2\mathrm{O}$ has a higher boiling point than $\mathrm{H}_2\mathrm{S}$,
+despite $\mathrm{H}_2\mathrm{S}$ having a larger molecular mass.
 
-Both molecules have van der Waals forces, which are stronger for $\mathrm{H}_2\mathrm{S}$ (larger, more
-electrons).
+Both molecules have van der Waals forces, which are stronger for $\mathrm{H}_2\mathrm{S}$ (larger,
+more electrons).
 
 However, $\mathrm{H}_2\mathrm{O}$ can form hydrogen bonds between molecules (H bonded to O), while
 $\mathrm{H}_2\mathrm{S}$ cannot (S is not electronegative enough).
@@ -353,8 +346,8 @@ $\mathrm{H}_2\mathrm{S}$, resulting in a higher boiling point for water.
 
 ### Trends in Boiling Points of Group 17 Halogens
 
-| Halogen       | Boiling Point        | Explanation                                    |
-| ------------- | -------------------- | ---------------------------------------------- |
+| Halogen         | Boiling Point          | Explanation                                    |
+| --------------- | ---------------------- | ---------------------------------------------- |
 | $\mathrm{F}_2$  | $-188^\circ\mathrm{C}$ | Few electrons, weak van der Waals forces       |
 | $\mathrm{Cl}_2$ | $-34^\circ\mathrm{C}$  | More electrons, stronger van der Waals forces  |
 | $\mathrm{Br}_2$ | $59^\circ\mathrm{C}$   | Even more electrons                            |
@@ -405,7 +398,7 @@ Examples: steel (Fe + C), brass (Cu + Zn), bronze (Cu + Sn), solder (Sn + Pb)
 | Ionisation energy      | Energy to remove outermost electron     | Decreases down a group             |
 | Ionic bonding          | Transfer of electrons, giant lattice    | NaCl                               |
 | Covalent bonding       | Sharing of electrons                    | H-Cl, O=O                          |
-| VSEPR                  | Electron pair repulsion                 | Tetrahedral for $\mathrm{CH}_4$      |
+| VSEPR                  | Electron pair repulsion                 | Tetrahedral for $\mathrm{CH}_4$    |
 | Intermolecular forces  | van der Waals, dipole-dipole, H-bonding | H-bonding in water                 |
 | Metallic bonding       | Delocalised electrons                   | Malleability of metals             |
 
@@ -456,8 +449,8 @@ approximately $107^\circ$.
 
 **Question 5:** Explain why $\mathrm{SiO}_2$ has a very high melting point.
 
-$\mathrm{SiO}_2$ has a giant covalent structure. Each silicon atom is covalently bonded to four oxygen
-atoms, and each oxygen atom is bonded to two silicon atoms, forming a continuous 3D network.
+$\mathrm{SiO}_2$ has a giant covalent structure. Each silicon atom is covalently bonded to four
+oxygen atoms, and each oxygen atom is bonded to two silicon atoms, forming a continuous 3D network.
 Breaking this structure requires breaking many strong covalent bonds, which requires a large amount
 of energy, hence the very high melting point.
 
@@ -495,7 +488,8 @@ $$\Delta H = \sum(\mathrm{Bonds broken}) - \sum(\mathrm{Bonds formed})$$
 
 ### Worked Example 7
 
-Calculate the enthalpy change for the reaction: $\mathrm{H}_2(g) + \mathrm{Cl}_2(g) \to 2\mathrm{HCl}(g)$
+Calculate the enthalpy change for the reaction:
+$\mathrm{H}_2(g) + \mathrm{Cl}_2(g) \to 2\mathrm{HCl}(g)$
 
 Bonds broken:
 
@@ -527,11 +521,9 @@ Bonds formed:
 
 $$\Delta H = (1652 + 996) - (1490 + 1852) = 2648 - 3342 = -694 \mathrm{ kJ/mol}$$
 
-:::warning
-Bond enthalpies are average values. For precise calculations, use standard enthalpy of
+:::warning Bond enthalpies are average values. For precise calculations, use standard enthalpy of
 formation data instead. Bond enthalpy calculations are less accurate for reactions involving liquids
-or solids because they only account for gaseous state bonds.
-:::
+or solids because they only account for gaseous state bonds. :::
 
 ---
 
@@ -574,9 +566,9 @@ Factors affecting lattice energy:
 - **Ionic charge:** Higher charge leads to stronger attraction and larger lattice energy
 - **Ionic radius:** Smaller ions can get closer together, increasing lattice energy
 
-| Compound      | Ionic Charges | Lattice Energy Trend                   |
-| ------------- | ------------- | -------------------------------------- |
-| $\mathrm{NaCl}$ | +1, -1        | Lower                                  |
+| Compound        | Ionic Charges | Lattice Energy Trend                     |
+| --------------- | ------------- | ---------------------------------------- |
+| $\mathrm{NaCl}$ | +1, -1        | Lower                                    |
 | $\mathrm{MgO}$  | +2, -2        | Higher (about 4$\times$ $\mathrm{NaCl}$) |
 
 ---
@@ -636,21 +628,23 @@ Atomic radius decreases across the period because increasing nuclear charge pull
 
 ### Melting and Boiling Points
 
-| Element                          | Na  | Mg  | Al  | Si   | P   | S   | Cl   | Ar   |
-| -------------------------------- | --- | --- | --- | ---- | --- | --- | ---- | ---- |
+| Element                            | Na  | Mg  | Al  | Si   | P   | S   | Cl   | Ar   |
+| ---------------------------------- | --- | --- | --- | ---- | --- | --- | ---- | ---- |
 | Melting point ($^\circ\mathrm{C}$) | 98  | 650 | 660 | 1410 | 44  | 115 | -101 | -189 |
 
-- $\mathrm{Na}$, $\mathrm{Mg}$, $\mathrm{Al}$: Metallic bonding, increasing strength (more delocalised
-  electrons)
+- $\mathrm{Na}$, $\mathrm{Mg}$, $\mathrm{Al}$: Metallic bonding, increasing strength (more
+  delocalised electrons)
 - $\mathrm{Si}$: Giant covalent structure, very high melting point
-- $\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Simple molecular, weak van der Waals forces
+- $\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Simple molecular, weak van der Waals
+  forces
 
 ### Electrical Conductivity
 
 - $\mathrm{Na}$, $\mathrm{Mg}$, $\mathrm{Al}$: Good conductors (metallic bonding with delocalised
   electrons)
 - $\mathrm{Si}$: Semiconductor (conductivity increases with temperature)
-- $\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Non-conductors (no mobile charge carriers)
+- $\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Non-conductors (no mobile charge
+  carriers)
 
 ---
 
@@ -669,11 +663,12 @@ much less shielding. This requires significantly more energy, hence the large ju
 **Question 7:** Explain why the melting point of $\mathrm{MgO}$ is much higher than that of
 $\mathrm{NaCl}$.
 
-Both have giant ionic lattices, but $\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$ have higher charges than
-$\mathrm{Na}^+$ and $\mathrm{Cl}^-$. The electrostatic attraction is proportional to the product of the
-charges: $\mathrm{MgO}$ has $2 \times 2 = 4$ while $\mathrm{NaCl}$ has $1 \times 1 = 1$. Additionally,
-$\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$ are smaller ions, allowing them to get closer together. Both
-factors result in stronger ionic bonds and a higher melting point for $\mathrm{MgO}$.
+Both have giant ionic lattices, but $\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$ have higher charges
+than $\mathrm{Na}^+$ and $\mathrm{Cl}^-$. The electrostatic attraction is proportional to the
+product of the charges: $\mathrm{MgO}$ has $2 \times 2 = 4$ while $\mathrm{NaCl}$ has
+$1 \times 1 = 1$. Additionally, $\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$ are smaller ions, allowing
+them to get closer together. Both factors result in stronger ionic bonds and a higher melting point
+for $\mathrm{MgO}$.
 
 **Question 8:** Draw the dot-and-cross diagram for $\mathrm{CO}_2$ and explain why it is a linear
 molecule.
@@ -683,13 +678,14 @@ valence electrons). The molecule has no lone pairs on the central carbon atom. W
 pairs, the electron pair geometry and molecular shape are both **linear** with a bond angle of
 $180^\circ$.
 
-**Question 9:** Explain why $\mathrm{HF}$ has a higher boiling point than $\mathrm{HCl}$ despite having
-a lower molecular mass.
+**Question 9:** Explain why $\mathrm{HF}$ has a higher boiling point than $\mathrm{HCl}$ despite
+having a lower molecular mass.
 
-$\mathrm{HF}$ can form hydrogen bonds between molecules because hydrogen is bonded to fluorine (highly
-electronegative). $\mathrm{HCl}$ cannot form hydrogen bonds because chlorine is not electronegative
-enough. Hydrogen bonding in $\mathrm{HF}$ is much stronger than the van der Waals forces and dipole-
-dipole interactions in $\mathrm{HCl}$, resulting in a higher boiling point for $\mathrm{HF}$.
+$\mathrm{HF}$ can form hydrogen bonds between molecules because hydrogen is bonded to fluorine
+(highly electronegative). $\mathrm{HCl}$ cannot form hydrogen bonds because chlorine is not
+electronegative enough. Hydrogen bonding in $\mathrm{HF}$ is much stronger than the van der Waals
+forces and dipole- dipole interactions in $\mathrm{HCl}$, resulting in a higher boiling point for
+$\mathrm{HF}$.
 
 **Question 10:** Explain why diamond is an electrical insulator while graphite is a good conductor.
 
@@ -708,17 +704,17 @@ is because the electron is removed from the higher-energy $3p$ subshell. The dip
 because the electron is removed from a paired $3p$ orbital where electron-electron repulsion makes
 it easier to remove.
 
-**Question 12:** Write the electron configuration of $\mathrm{Cu}^+$ and explain why it is more stable
-than $\mathrm{Cu}^{2+}$ in some contexts.
+**Question 12:** Write the electron configuration of $\mathrm{Cu}^+$ and explain why it is more
+stable than $\mathrm{Cu}^{2+}$ in some contexts.
 
 $\mathrm{Cu}$ ($Z = 29$): $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$
 
 $\mathrm{Cu}^+$: $[\mathrm{Ar}]\, 3d^{10}$ (removing the $4s$ electron first)
 
 $\mathrm{Cu}^+$ has a completely filled $3d$ subshell, which is particularly stable due to the
-symmetrical distribution of electrons. However, $\mathrm{Cu}^{2+}$ ($3d^9$) is more common in aqueous
-chemistry because of the high hydration energy that compensates for the loss of the stable $3d^{10}$
-configuration.
+symmetrical distribution of electrons. However, $\mathrm{Cu}^{2+}$ ($3d^9$) is more common in
+aqueous chemistry because of the high hydration energy that compensates for the loss of the stable
+$3d^{10}$ configuration.
 
 </details>
 
@@ -731,20 +727,20 @@ configuration.
 Hybridisation is the concept of mixing atomic orbitals to form new hybrid orbitals that are
 equivalent in energy and suitable for bonding.
 
-| Hybridisation | Geometry             | Bond Angle            | Example                                 |
-| ------------- | -------------------- | --------------------- | --------------------------------------- |
+| Hybridisation | Geometry             | Bond Angle            | Example                                       |
+| ------------- | -------------------- | --------------------- | --------------------------------------------- |
 | $sp$          | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$, $\mathrm{C}_2\mathrm{H}_2$ |
 | $sp^2$        | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$, $\mathrm{C}_2\mathrm{H}_4$   |
-| $sp^3$        | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$, $\mathrm{NH}_3$            |
-| $sp^3d$       | Trigonal bipyramidal | $90^\circ, 120^\circ$ | $\mathrm{PCl}_5$                          |
-| $sp^3d^2$     | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                           |
+| $sp^3$        | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$, $\mathrm{NH}_3$              |
+| $sp^3d$       | Trigonal bipyramidal | $90^\circ, 120^\circ$ | $\mathrm{PCl}_5$                              |
+| $sp^3d^2$     | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                               |
 
 ### Worked Example 10
 
 Determine the hybridisation of the central atom in $\mathrm{SF}_4$.
 
-Sulphur has 6 valence electrons. In $\mathrm{SF}_4$, four are used for bonding with fluorine, leaving
-one lone pair. Total electron pairs = 5 (4 bonding + 1 lone pair).
+Sulphur has 6 valence electrons. In $\mathrm{SF}_4$, four are used for bonding with fluorine,
+leaving one lone pair. Total electron pairs = 5 (4 bonding + 1 lone pair).
 
 Hybridisation: $sp^3d$ (trigonal bipyramidal electron pair geometry, with the lone pair in an
 equatorial position, giving a "see-saw" molecular shape).
@@ -768,10 +764,8 @@ $$\mathrm{Bond order} = \frac{1}{2}(\mathrm{bonding electrons} - \mathrm{antibon
 - Bond order = 1.5: intermediate (e.g., $\mathrm{O}_2^-$)
 - Bond order = 0: no bond (molecule does not exist, e.g., $\mathrm{He}_2$)
 
-:::info
-Molecular orbital theory explains why $\mathrm{O}_2$ is paramagnetic (has unpaired electrons
-in antibonding orbitals), which cannot be explained by simple Lewis structures.
-:::
+:::info Molecular orbital theory explains why $\mathrm{O}_2$ is paramagnetic (has unpaired electrons
+in antibonding orbitals), which cannot be explained by simple Lewis structures. :::
 
 ### Intermolecular Forces in Detail
 
@@ -780,11 +774,11 @@ The strength of intermolecular forces directly affects physical properties:
 **Boiling points of hydrogen halides:**
 
 | Compound | Boiling Point ($^\circ\mathrm{C}$) | Dominant IMF                  |
-| -------- | -------------------------------- | ----------------------------- |
-| HF       | 19.5                             | Hydrogen bonding              |
-| HCl      | -84.9                            | Dipole-dipole + van der Waals |
-| HBr      | -67.0                            | Dipole-dipole + van der Waals |
-| HI       | -35.4                            | van der Waals                 |
+| -------- | ---------------------------------- | ----------------------------- |
+| HF       | 19.5                               | Hydrogen bonding              |
+| HCl      | -84.9                              | Dipole-dipole + van der Waals |
+| HBr      | -67.0                              | Dipole-dipole + van der Waals |
+| HI       | -35.4                              | van der Waals                 |
 
 HF has the highest boiling point due to hydrogen bonding. For HCl, HBr, and HI, boiling points
 increase with molecular mass (more electrons = stronger van der Waals forces), despite the
@@ -803,13 +797,13 @@ dissolves like."
 
 ### Allotropes of Carbon
 
-| Allotrope                   | Structure                 | Bonding                                                   | Properties                                               |
-| --------------------------- | ------------------------- | --------------------------------------------------------- | -------------------------------------------------------- |
-| Diamond                     | Tetrahedral 3D network    | Each C bonded to 4 others ($sp^3$)                        | Hardest natural substance, insulator, high melting point |
-| Graphite                    | Layered hexagonal sheets  | Each C bonded to 3 others ($sp^2$), delocalised electrons | Soft, conductor, lubricant, high melting point           |
-| Graphene                    | Single layer of graphite  | Each C bonded to 3 others ($sp^2$)                        | Strongest material known, conductor, transparent         |
+| Allotrope                     | Structure                 | Bonding                                                   | Properties                                               |
+| ----------------------------- | ------------------------- | --------------------------------------------------------- | -------------------------------------------------------- |
+| Diamond                       | Tetrahedral 3D network    | Each C bonded to 4 others ($sp^3$)                        | Hardest natural substance, insulator, high melting point |
+| Graphite                      | Layered hexagonal sheets  | Each C bonded to 3 others ($sp^2$), delocalised electrons | Soft, conductor, lubricant, high melting point           |
+| Graphene                      | Single layer of graphite  | Each C bonded to 3 others ($sp^2$)                        | Strongest material known, conductor, transparent         |
 | Fullerene ($\mathrm{C}_{60}$) | Hollow sphere (buckyball) | Each C bonded to 3 others                                 | Molecular solid, semiconductor                           |
-| Carbon nanotube             | Cylindrical graphene      | Each C bonded to 3 others                                 | Very strong, conductor                                   |
+| Carbon nanotube               | Cylindrical graphene      | Each C bonded to 3 others                                 | Very strong, conductor                                   |
 
 ### Worked Example 12
 

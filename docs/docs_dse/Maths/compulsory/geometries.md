@@ -689,9 +689,9 @@ coordinates of $D$ and the area of the rectangle.
 - Area $= AB \times BC = 4 \times 3 = 12$ square units.
 </details>
 
-11. **Question:** A solid metal cone has base radius $6\mathrm{ cm}$ and slant height $10\mathrm{ cm}$.
-A sector is cut from a circular sheet of metal to form the curved surface. Find (a) the angle of the
-sector, (b) the radius of the circular sheet, and (c) the area of the sector.
+11. **Question:** A solid metal cone has base radius $6\mathrm{ cm}$ and slant height
+$10\mathrm{ cm}$. A sector is cut from a circular sheet of metal to form the curved surface. Find
+(a) the angle of the sector, (b) the radius of the circular sheet, and (c) the area of the sector.
 <details>
 <summary>Answer</summary>
 

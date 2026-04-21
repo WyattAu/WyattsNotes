@@ -34,7 +34,8 @@ frames (like a car rounding a corner) are non-inertial.
 
 <PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
 
-Explore how net force, mass, and acceleration are related by applying forces to objects. Experiment with friction, applied forces, and different masses to see how they affect motion.
+Explore how net force, mass, and acceleration are related by applying forces to objects. Experiment
+with friction, applied forces, and different masses to see how they affect motion.
 
 ### Statement
 
@@ -299,8 +300,8 @@ The area under a force-time graph equals the impulse.
 
 :::info[Example]
 
-A $0.15\mathrm{ kg}$ cricket ball moving at $30\mathrm{ m/s}$ is hit back at $20\mathrm{ m/s}$ in the
-opposite direction in $0.01\mathrm{ s}$. Find the average force.
+A $0.15\mathrm{ kg}$ cricket ball moving at $30\mathrm{ m/s}$ is hit back at $20\mathrm{ m/s}$ in
+the opposite direction in $0.01\mathrm{ s}$. Find the average force.
 
 $$
 J = \Delta p = 0.15(20 - (-30)) = 0.15 \times 50 = 7.5\mathrm{ N}\cdot\mathrm{s}
@@ -330,8 +331,8 @@ $$
 
 :::info[Example]
 
-A $2\mathrm{ kg}$ object moving at $5\mathrm{ m/s}$ collides with a $3\mathrm{ kg}$ object at rest. After
-the collision, they stick together. Find the velocity after collision.
+A $2\mathrm{ kg}$ object moving at $5\mathrm{ m/s}$ collides with a $3\mathrm{ kg}$ object at rest.
+After the collision, they stick together. Find the velocity after collision.
 
 $$
 m_1 u_1 + m_2 u_2 = (m_1 + m_2)v
@@ -408,8 +409,9 @@ $$
 
 :::info[Example]
 
-A car of mass $1200\mathrm{ kg}$ accelerates from $15\mathrm{ m/s}$ to $25\mathrm{ m/s}$ in $6\mathrm{ s}$.
-The engine provides a constant driving force of $3000\mathrm{ N}$. Find the average friction force.
+A car of mass $1200\mathrm{ kg}$ accelerates from $15\mathrm{ m/s}$ to $25\mathrm{ m/s}$ in
+$6\mathrm{ s}$. The engine provides a constant driving force of $3000\mathrm{ N}$. Find the average
+friction force.
 
 $$
 \Delta E_k = \frac{1}{2}(1200)(625 - 225) = \frac{1}{2}(1200)(400) = 240000\mathrm{ J}
@@ -449,8 +451,8 @@ $$
 
 ### Question 1 (Paper 1 style)
 
-A $10\mathrm{ kg}$ box sits on a rough surface. A horizontal force of $60\mathrm{ N}$ is applied. The
-box accelerates at $4\mathrm{ m/s}^2$. Find the coefficient of kinetic friction.
+A $10\mathrm{ kg}$ box sits on a rough surface. A horizontal force of $60\mathrm{ N}$ is applied.
+The box accelerates at $4\mathrm{ m/s}^2$. Find the coefficient of kinetic friction.
 
 $$
 F_{\mathrm{net}} = F - f_k = ma
@@ -494,8 +496,9 @@ Lost: $270 - 115.7 = 154.3\mathrm{ J}$.
 
 ### Question 3 (Paper 2 style)
 
-A block of mass $4\mathrm{ kg}$ is placed on a rough inclined plane at $30\degree$ to the horizontal.
-The coefficient of static friction is $0.5$ and the coefficient of kinetic friction is $0.3$.
+A block of mass $4\mathrm{ kg}$ is placed on a rough inclined plane at $30\degree$ to the
+horizontal. The coefficient of static friction is $0.5$ and the coefficient of kinetic friction is
+$0.3$.
 
 **(a)** Determine whether the block slides.
 
@@ -517,8 +520,8 @@ $$
 
 ### Question 4 (Paper 1 style)
 
-A motor lifts a $500\mathrm{ kg}$ elevator through a height of $20\mathrm{ m}$ in $10\mathrm{ s}$. Find
-the power output of the motor.
+A motor lifts a $500\mathrm{ kg}$ elevator through a height of $20\mathrm{ m}$ in $10\mathrm{ s}$.
+Find the power output of the motor.
 
 $$
 P = \frac{mgh}{t} = \frac{500 \times 9.81 \times 20}{10} = 9810\mathrm{ W} = 9.81\mathrm{ kW}
@@ -531,16 +534,16 @@ $$
 | Law             | Statement                                                                     |
 | --------------- | ----------------------------------------------------------------------------- |
 | Newton's First  | An object continues at rest or constant velocity unless acted on by net force |
-| Newton's Second | $\vec{F}_{\mathrm{net}} = m\vec{a}$ or $\vec{F} = \dfrac{d\vec{p}}{dt}$         |
+| Newton's Second | $\vec{F}_{\mathrm{net}} = m\vec{a}$ or $\vec{F} = \dfrac{d\vec{p}}{dt}$       |
 | Newton's Third  | Every action has an equal and opposite reaction                               |
 
-| Quantity       | Formula                                     | Unit                         |
-| -------------- | ------------------------------------------- | ---------------------------- |
+| Quantity       | Formula                                     | Unit                             |
+| -------------- | ------------------------------------------- | -------------------------------- |
 | Momentum       | $\vec{p} = m\vec{v}$                        | $\mathrm{kg} \cdot \mathrm{m/s}$ |
 | Impulse        | $\vec{J} = \vec{F}\Delta t = \Delta\vec{p}$ | $\mathrm{N} \cdot \mathrm{s}$    |
-| Work           | $W = Fd\cos\theta$                          | $\mathrm{J}$                   |
-| Kinetic energy | $E_k = \dfrac{1}{2}mv^2$                    | $\mathrm{J}$                   |
-| Power          | $P = \dfrac{W}{t} = Fv$                     | $\mathrm{W}$                   |
+| Work           | $W = Fd\cos\theta$                          | $\mathrm{J}$                     |
+| Kinetic energy | $E_k = \dfrac{1}{2}mv^2$                    | $\mathrm{J}$                     |
+| Power          | $P = \dfrac{W}{t} = Fv$                     | $\mathrm{W}$                     |
 
 :::tip[Exam Strategy]
 
@@ -583,8 +586,8 @@ diagrams and apply Newton's second law to each body.
 
 :::info[Example]
 
-Mass $m_1 = 5\mathrm{ kg}$ hangs vertically. Mass $m_2 = 8\mathrm{ kg}$ is on a $30\degree$ incline with
-$\mu_k = 0.2$.
+Mass $m_1 = 5\mathrm{ kg}$ hangs vertically. Mass $m_2 = 8\mathrm{ kg}$ is on a $30\degree$ incline
+with $\mu_k = 0.2$.
 
 For $m_1$: $m_1 g - T = m_1 a$
 
@@ -670,9 +673,9 @@ Resolve into $x$ and $y$ components and apply conservation in each direction ind
 
 :::info[Example]
 
-A $3\mathrm{ kg}$ object moving at $4\mathrm{ m/s}$ collides with a stationary $2\mathrm{ kg}$ object.
-After the collision, the $3\mathrm{ kg}$ object moves at $2\mathrm{ m/s}$ at $30\degree$ above the
-original direction. Find the velocity of the $2\mathrm{ kg}$ object.
+A $3\mathrm{ kg}$ object moving at $4\mathrm{ m/s}$ collides with a stationary $2\mathrm{ kg}$
+object. After the collision, the $3\mathrm{ kg}$ object moves at $2\mathrm{ m/s}$ at $30\degree$
+above the original direction. Find the velocity of the $2\mathrm{ kg}$ object.
 
 **x-direction**: $3(4) = 3(2)\cos 30\degree + 2v_x$
 
@@ -734,9 +737,9 @@ $$
 ### Question 6 (Paper 2 style)
 
 Two objects, one of mass $m$ and the other of mass $3m$, collide head-on. The lighter object is
-moving at $6\mathrm{ m/s}$ and the heavier one at $2\mathrm{ m/s}$ in the opposite direction. After the
-collision, the lighter object moves at $2\mathrm{ m/s}$ in the opposite direction to its original
-motion.
+moving at $6\mathrm{ m/s}$ and the heavier one at $2\mathrm{ m/s}$ in the opposite direction. After
+the collision, the lighter object moves at $2\mathrm{ m/s}$ in the opposite direction to its
+original motion.
 
 **(a)** Find the velocity of the heavier object after the collision.
 
@@ -765,8 +768,8 @@ Since $24m \neq \dfrac{8m}{3}$, the collision is inelastic.
 
 ### Question 7 (Paper 1 style)
 
-A force of $F = 3t^2\mathrm{ N}$ acts on a $2\mathrm{ kg}$ object initially at rest. Find the velocity
-after $4\mathrm{ s}$.
+A force of $F = 3t^2\mathrm{ N}$ acts on a $2\mathrm{ kg}$ object initially at rest. Find the
+velocity after $4\mathrm{ s}$.
 
 $$
 F = ma \implies a = \frac{3t^2}{2} = 1.5t^2
@@ -851,7 +854,8 @@ $$
 ### Question 9 (Paper 1 style)
 
 A $5\mathrm{ kg}$ object experiences a force that varies with time: $F = 6t - 2\mathrm{ N}$ for
-$0 \le t \le 5\mathrm{ s}$. If the object starts from rest, what is its momentum at $t = 5\mathrm{ s}$?
+$0 \le t \le 5\mathrm{ s}$. If the object starts from rest, what is its momentum at
+$t = 5\mathrm{ s}$?
 
 $$
 \Delta p = \int_0^5 F\,dt = \int_0^5 (6t - 2)\,dt = [3t^2 - 2t]_0^5 = 75 - 10 = 65\mathrm{ kg}\cdot\mathrm{m/s}

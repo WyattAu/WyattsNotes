@@ -18,10 +18,8 @@ slug: energy-and-work
 | OCR (A)    | Paper 1 | Includes energy on inclined planes |
 | CIE (9709) | P1, P4  | Work-energy in P1; further in P4   |
 
-:::info
-Energy methods are often simpler than force methods for problems where only initial and
-final states matter (no time information needed).
-:::
+:::info Energy methods are often simpler than force methods for problems where only initial and
+final states matter (no time information needed). :::
 
 <hr />
 
@@ -153,8 +151,8 @@ Internal forces (such as tension in a connecting string) do equal and opposite w
 masses and cancel out. Only external forces and changes in GPE need be considered.
 
 **Example.** Two particles of masses $3\,\mathrm{kg}$ and $5\,\mathrm{kg}$ are connected by a light
-inextensible string over a smooth pulley. Released from rest, find the speed when the $5\,\mathrm{kg}$
-mass has descended $2\,\mathrm{m}$.
+inextensible string over a smooth pulley. Released from rest, find the speed when the
+$5\,\mathrm{kg}$ mass has descended $2\,\mathrm{m}$.
 
 Net GPE lost $= (5 - 3)(9.8)(2) = 39.2\,\mathrm{J}$. This equals total KE gained:
 
@@ -263,7 +261,8 @@ By integration:
 
 $$\mathrm{EPE} = \int_0^x kx'\,dx' = \left[\frac{1}{2}kx'^2\right]_0^x = \frac{1}{2}kx^2 \quad \blacksquare$$
 
-An equivalent form using the tension $T = kx$ at maximum extension is $\mathrm{EPE} = \frac{1}{2}Tx$.
+An equivalent form using the tension $T = kx$ at maximum extension is
+$\mathrm{EPE} = \frac{1}{2}Tx$.
 
 ### 6.3 Conservation of energy with springs
 
@@ -277,9 +276,9 @@ A bungee cord behaves like a spring. As a jumper falls, GPE converts to KE until
 taut. Once taut, the cord stretches and stores EPE. Energy oscillates between GPE, KE, and EPE until
 damping dissipates it.
 
-**Example.** A jumper of mass $75\,\mathrm{kg}$ leaps from a platform $50\,\mathrm{m}$ above a river.
-The cord has natural length $25\,\mathrm{m}$ and stiffness $200\,\mathrm{N/m}$. Find the lowest point
-reached ($g = 9.8\,\mathrm{m/s}^2$).
+**Example.** A jumper of mass $75\,\mathrm{kg}$ leaps from a platform $50\,\mathrm{m}$ above a
+river. The cord has natural length $25\,\mathrm{m}$ and stiffness $200\,\mathrm{N/m}$. Find the
+lowest point reached ($g = 9.8\,\mathrm{m/s}^2$).
 
 At the lowest point, speed $= 0$. If the total distance fallen is $d$ (where $d \gt{} 25$ since the
 cord must be stretched):
@@ -317,6 +316,7 @@ A car of mass $1200\,\mathrm{kg}$ accelerates from $10\,\mathrm{m/s}$ to $25\,\m
 $W = \Delta\mathrm{KE} = \tfrac{1}{2}(1200)(625 - 100) = 600 \times 525 = 315000\,\mathrm{J} = 315\,\mathrm{kJ}$.
 
 **If you get this wrong, revise:** [Work-Energy Principle](#41-statement) — Section 4.1.
+
 </details>
 
 <details>
@@ -332,6 +332,7 @@ $v = \sqrt{2gh} = \sqrt{2(9.8)(20)} = \sqrt{392} \approx 19.8\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+
 </details>
 
 <details>
@@ -346,6 +347,7 @@ At max speed: $P = Fv$ where $F = 400\,\mathrm{N}$ (driving force equals resista
 $60000 = 400v \implies v = 150\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
+
 </details>
 
 <details>
@@ -361,6 +363,7 @@ $\tfrac{1}{2}mv^2 = 117.6 - 40.75 = 76.85 \implies v^2 = 76.85/2 = 38.425 \impli
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+
 </details>
 
 <details>
@@ -375,6 +378,7 @@ $W = mgh = 500(9.8)(30) = 147000\,\mathrm{J}$.
 $P = W/t = 147000/45 = 3267\,\mathrm{W} \approx 3.27\,\mathrm{kW}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
+
 </details>
 
 <details>
@@ -388,6 +392,7 @@ Height dropped $= 1.5\,\mathrm{m}$. $mgh = \tfrac{1}{2}mv^2 \implies v = \sqrt{2
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+
 </details>
 
 <details>
@@ -405,6 +410,7 @@ $R = F - mg\sin\theta = 1333.3 - 800(9.8)(0.1) = 1333.3 - 784 = 549.3\,\mathrm{N
 
 **If you get this wrong, revise:** [Power and Inclined Planes](#53-power-and-inclined-planes) —
 Section 5.3.
+
 </details>
 
 <details>
@@ -419,6 +425,7 @@ The force varies from $0$ to $kx$. The work done (energy stored) is:
 $$\mathrm{EPE} = \int_0^x T\,dx' = \int_0^x kx'\,dx' = \frac{1}{2}kx^2$$
 
 **If you get this wrong, revise:** [Work Done](#11-definition-and-derivation) — Section 1.1.
+
 </details>
 
 <details>
@@ -438,6 +445,7 @@ $200 + 294 = \tfrac{1}{2}v^2 \implies v^2 = 988 \implies v \approx 31.4\,\mathrm
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+
 </details>
 
 <details>
@@ -454,6 +462,7 @@ $20v^2 + 5000v - 2000000 = 0 \implies v^2 + 250v - 100000 = 0$.
 $v = \dfrac{-250 + \sqrt{62500 + 400000}}{2} = \dfrac{-250 + \sqrt{462500}}{2} = \dfrac{-250 + 680.1}{2} = 215.1\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
+
 </details>
 
 <details>
@@ -474,6 +483,7 @@ $\tfrac{1}{2}(0.5)v^2 = 9 \implies v^2 = 36 \implies v = 6\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Elastic Potential Energy](#6-elastic-potential-energy) —
 Section 6.
+
 </details>
 
 <details>
@@ -494,6 +504,7 @@ $s = \frac{2}{3}\sqrt{\frac{2(5000)}{500}} \times 5^{3/2} = \frac{2}{3}\sqrt{20}
 
 **If you get this wrong, revise:**
 [Power in variable-force situations](#54-power-in-variable-force-situations) — Section 5.4.
+
 </details>
 
 <details>
@@ -510,16 +521,17 @@ point.
 
 $144 = 13.86d + 4.16d = 18.02d \implies d \approx 7.99\,\mathrm{m}$.
 
-**Coming back down:** Loss of GPE $= 2(9.8)(7.99\sin 45°) = 110.8\,\mathrm{J}$. Work against friction
-$= 0.3(2)(9.8)\cos 45° \times 7.99 = 33.2\,\mathrm{J}$.
+**Coming back down:** Loss of GPE $= 2(9.8)(7.99\sin 45°) = 110.8\,\mathrm{J}$. Work against
+friction $= 0.3(2)(9.8)\cos 45° \times 7.99 = 33.2\,\mathrm{J}$.
 
 $\tfrac{1}{2}(2)v^2 = 110.8 - 33.2 = 77.6 \implies v = \sqrt{77.6} \approx 8.81\,\mathrm{m/s}$.
 
-The return speed is less than $12\,\mathrm{m/s}$ because energy is lost to friction on both the up and
-down journey.
+The return speed is less than $12\,\mathrm{m/s}$ because energy is lost to friction on both the up
+and down journey.
 
 **If you get this wrong, revise:**
 [Conservation of Mechanical Energy](#43-conservation-of-mechanical-energy) — Section 4.3.
+
 </details>
 
 <details>
@@ -543,6 +555,7 @@ solution $x = 0$).
 
 **If you get this wrong, revise:**
 [Conservation of energy with springs](#63-conservation-of-energy-with-springs) — Section 6.3.
+
 </details>
 
 <details>
@@ -565,6 +578,7 @@ $0.98x = 25x^2 \implies x(25x - 0.98) = 0 \implies x = 0.0392\,\mathrm{m} = 3.92
 
 **If you get this wrong, revise:** [Elastic Potential Energy](#6-elastic-potential-energy) —
 Section 6.
+
 </details>
 
 <details>
@@ -594,6 +608,7 @@ $a = \frac{2074}{1500} \approx 1.38\,\mathrm{m/s}^2$.
 **If you get this wrong, revise:** [Power and Inclined Planes](#53-power-and-inclined-planes) —
 Section 5.3, and [Power in variable-force situations](#54-power-in-variable-force-situations) —
 Section 5.4.
+
 </details>
 
 :::

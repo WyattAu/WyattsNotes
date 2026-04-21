@@ -62,13 +62,11 @@ subsumption ordering.
 | `std::unsigned_integral<T>` | `T` is an unsigned integral type [§18.4.3] |
 | `std::floating_point<T>`    | `T` is a floating-point type [§18.4.3]     |
 
-:::info
-`std::regular` and `std::semiregular` The concept `std::regular<T>` [N4950 §18.4.6] models
+:::info `std::regular` and `std::semiregular` The concept `std::regular<T>` [N4950 §18.4.6] models
 types that behave like built-in values: they can be copied, default-constructed, and compared for
 equality. `int`, `double`, and `std::string` are all `std::regular`. `std::unique_ptr` is
 `std::movable` but not `std::regular` (not copyable). `std::mutex` is neither `std::movable` nor
-`std::copyable`. These concepts are the vocabulary types of generic programming.
-:::
+`std::copyable`. These concepts are the vocabulary types of generic programming. :::
 
 ## Understanding `std::derived_from` vs `std::is_base_of`
 
@@ -372,13 +370,11 @@ sum = 45
 product = 362880
 ```
 
-:::tip
-Using Range Concepts The `std::ranges` namespace provides range versions of many concepts.
+:::tip Using Range Concepts The `std::ranges` namespace provides range versions of many concepts.
 Prefer `std::ranges::range` over manually checking `begin()`/`end()`. Prefer
 `std::ranges::range_value_t<R>` over `typename R::value_type` (it works with proxy iterators). Range
 concepts are defined in `<ranges>` [N4950 §26.2] and compose naturally with the concepts in
-`<concepts>`.
-:::
+`<concepts>`. :::
 
 ## Range Concepts
 

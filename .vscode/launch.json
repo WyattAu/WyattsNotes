@@ -88,10 +88,7 @@
       "sourceMaps": true,
       "localRoot": "${workspaceFolder}",
       "remoteRoot": "/app", // For Docker compatibility
-      "resolveSourceMapLocations": [
-        "${workspaceFolder}/**",
-        "!**/node_modules/**"
-      ],
+      "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
       "presentation": {
         "group": "advanced",
         "hidden": true

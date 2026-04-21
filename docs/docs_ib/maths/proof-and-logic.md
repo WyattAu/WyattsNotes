@@ -123,11 +123,9 @@ Negate: "The function $f$ is continuous and differentiable."
 Let $C$: "$f$ is continuous." Let $D$: "$f$ is differentiable." The statement is $C \wedge D$. Its
 negation is $\neg C \vee \neg D$, i.e., "$f$ is either not continuous or not differentiable."
 
-:::info
-A common mistake is to negate "P and Q" as "not P and not Q." That is wrong. The negation of
+:::info A common mistake is to negate "P and Q" as "not P and not Q." That is wrong. The negation of
 "$f$ is continuous and differentiable" is NOT "$f$ is not continuous and not differentiable" — that
-is too strong.
-:::
+is too strong. :::
 
 ### 1.5 The Contrapositive
 
@@ -145,10 +143,8 @@ Compare with two other related statements that are NOT equivalent:
 - The **inverse** of $P \implies Q$ is $\neg P \implies \neg Q$ (not equivalent in general, but
   equivalent to the converse)
 
-:::danger
-The converse and inverse are logically equivalent to each other, but NOT to the original
-implication. Never confuse the contrapositive with the converse.
-:::
+:::danger The converse and inverse are logically equivalent to each other, but NOT to the original
+implication. Never confuse the contrapositive with the converse. :::
 
 **Worked Example:**
 
@@ -216,11 +212,9 @@ $$\neg\left(\forall \varepsilon \gt 0, \; \exists \delta \gt 0, \; P(\varepsilon
 The existential becomes universal and the universal becomes existential. This is the logical
 backbone of epsilon-delta definitions in analysis.
 
-:::warning
-When negating a statement with both $\forall$ and $\exists$, flip each quantifier and
+:::warning When negating a statement with both $\forall$ and $\exists$, flip each quantifier and
 negate the predicate. The order of quantifiers does NOT change — it remains the same sequence but
-with each quantifier flipped.
-:::
+with each quantifier flipped. :::
 
 <details>
 <summary>Worked Example: Negate $\forall n \in \mathbb{Z}^+, \; \exists p \mathrm{ prime}, \; p \gt n$</summary>
@@ -301,11 +295,9 @@ Since $2mn + m + n \in \mathbb{Z}$, the product is of the form $2k + 1$, hence o
 This method is especially powerful when the statement you want to prove is a negation itself ("there
 does not exist..." or "there are no...").
 
-:::info
-Proof by contradiction is logically equivalent to proving $\neg P \implies \mathrm{false}$,
+:::info Proof by contradiction is logically equivalent to proving $\neg P \implies \mathrm{false}$,
 which means $\neg P$ must be false, hence $P$ is true. It relies on the Law of Excluded Middle
-($P \vee \neg P$ must be true).
-:::
+($P \vee \neg P$ must be true). :::
 
 **Worked Example — $\sqrt{2}$ is irrational:**
 
@@ -327,11 +319,9 @@ But now both $a$ and $b$ are even, contradicting $\gcd(a, b) = 1$.
 
 Therefore our assumption is false, and $\sqrt{2}$ is irrational.
 
-:::note
-**Supporting lemma:** If $a^2$ is even, then $a$ is even. Proof by contrapositive: if $a$ is
+:::note **Supporting lemma:** If $a^2$ is even, then $a$ is even. Proof by contrapositive: if $a$ is
 odd, then $a = 2k+1$, so $a^2 = 4k^2 + 4k + 1 = 2(2k^2+2k) + 1$, which is odd. Hence if $a^2$ is
-even, $a$ cannot be odd, so $a$ is even.
-:::
+even, $a$ cannot be odd, so $a$ is even. :::
 
 <details>
 <summary>Exercise: Prove that $\sqrt{3}$ is irrational.</summary>
@@ -373,12 +363,10 @@ $n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$
 This is odd. Therefore, if $n$ is odd, $n^2$ is odd. By contrapositive, if $n^2$ is even, then $n$
 is even.
 
-:::tip
-**Direct proof vs. contrapositive vs. contradiction for the same statement:** You could prove
+:::tip **Direct proof vs. contrapositive vs. contradiction for the same statement:** You could prove
 "$n^2$ even implies $n$ even" by contradiction (assume $n^2$ even and $n$ odd, derive that $n^2$ is
 both even and odd). But the contrapositive proof is cleaner — it is a direct proof of the equivalent
-statement.
-:::
+statement. :::
 
 <details>
 <summary>Exercise: Prove that if $3n + 2$ is odd, then $n$ is odd (by contrapositive).</summary>
@@ -503,11 +491,9 @@ not just $P(k)$.
 **When to use strong induction:** When proving $P(k+1)$ requires not just $P(k)$ but some earlier
 case $P(j)$ where $j \lt k$.
 
-:::warning
-Weak and strong induction are logically equivalent — anything provable by one is provable
+:::warning Weak and strong induction are logically equivalent — anything provable by one is provable
 by the other. But strong induction can make certain proofs much more natural. Use it when the
-inductive step needs to reference cases earlier than just $k$.
-:::
+inductive step needs to reference cases earlier than just $k$. :::
 
 **Worked Example — Every integer $n \ge 2$ is a product of primes:**
 
@@ -582,10 +568,8 @@ Counterexample: $2$ is prime and $2$ is even.
 
 When $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681$, which is composite ($41 \times 41$).
 
-:::tip
-To prove a universal claim requires a general proof. To disprove it requires only one
-counterexample. This asymmetry is fundamental to mathematical logic.
-:::
+:::tip To prove a universal claim requires a general proof. To disprove it requires only one
+counterexample. This asymmetry is fundamental to mathematical logic. :::
 
 <details>
 <summary>Exercise: Disprove: "For all positive integers $a$ and $b$, $\gcd(a+b, a-b) = \gcd(a, b)$."</summary>
@@ -654,11 +638,9 @@ So $p_i \nmid N$ for all $i$. This contradicts that some $p_i$ divides $N$.
 
 Therefore, there are infinitely many primes. $\blacksquare$
 
-:::info
-An important subtlety: $N = p_1 p_2 \cdots p_n + 1$ is NOT necessarily prime itself. For
+:::info An important subtlety: $N = p_1 p_2 \cdots p_n + 1$ is NOT necessarily prime itself. For
 example, $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 + 1 = 30031 = 59 \times 509$. The proof only
-requires that $N$ has SOME prime factor not in the list.
-:::
+requires that $N$ has SOME prime factor not in the list. :::
 
 ### 3.3 $\log_2{3}$ is Irrational
 
@@ -755,11 +737,9 @@ $ax + by = (dm)x + (dn)y = d(mx + ny)$.
 
 Since $mx + ny \in \mathbb{Z}$, $d \mid (ax + by)$. $\blacksquare$
 
-:::note
-This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
+:::note This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
 called a **linear combination** of $a$ and $b$. The greatest common divisor $\gcd(a, b)$ can always
-be expressed as a linear combination of $a$ and $b$ (Bezout's identity).
-:::
+be expressed as a linear combination of $a$ and $b$ (Bezout's identity). :::
 
 ### 3.6 Inequality Proofs
 
@@ -869,11 +849,9 @@ $ac = (b + kn)(d + ln) = bd + bln + dkn + kln^2 = bd + n(bl + dk + kln)$.
 
 Therefore $n \mid (ac - bd)$, so $ac \equiv bd \pmod{n}$. $\blacksquare$
 
-:::warning
-Division does NOT work with congruences in general. From $ac \equiv bc \pmod{n}$, you can
+:::warning Division does NOT work with congruences in general. From $ac \equiv bc \pmod{n}$, you can
 only conclude $a \equiv b \pmod{n}$ if $\gcd(c, n) = 1$. For example, $6 \equiv 0 \pmod{3}$ and
-$3 \equiv 0 \pmod{3}$, but $\frac{6}{3} = 2 \not\equiv \frac{0}{0}$ (undefined).
-:::
+$3 \equiv 0 \pmod{3}$, but $\frac{6}{3} = 2 \not\equiv \frac{0}{0}$ (undefined). :::
 
 <details>
 <summary>Worked Example: Find the last two digits of $7^{100}$.</summary>
@@ -968,8 +946,8 @@ factor and repeat. By induction, the factorizations are identical. $\blacksquare
 **Definition:** $\gcd(a, b)$ is the greatest common divisor of $a$ and $b$ — the largest positive
 integer dividing both.
 
-**Definition:** $\mathrm{lcm}(a, b)$ is the least common multiple — the smallest positive integer that
-both $a$ and $b$ divide.
+**Definition:** $\mathrm{lcm}(a, b)$ is the least common multiple — the smallest positive integer
+that both $a$ and $b$ divide.
 
 **Key relationship:**
 
@@ -1068,11 +1046,9 @@ The conclusion ($\sqrt{2}$ is irrational) appears in the hypothesis. This proves
 **How to avoid:** Check that every step of your proof relies only on axioms, definitions, and
 previously established theorems — never on the statement you are proving.
 
-:::danger
-Circular reasoning is the most dangerous logical fallacy in mathematics because it can
+:::danger Circular reasoning is the most dangerous logical fallacy in mathematics because it can
 look convincing. Always verify that your proof does not contain the conclusion as an unstated
-assumption.
-:::
+assumption. :::
 
 ### 5.2 Assuming the Conclusion
 
@@ -1112,10 +1088,8 @@ fails.)
 Incorrect negation: "If it rains, the ground does not get wet." (This is a different implication
 entirely.)
 
-:::warning
-This is one of the most common errors on IB exams. Memorize: the negation of "$P$ implies
-$Q$" is "$P$ AND not $Q$."
-:::
+:::warning This is one of the most common errors on IB exams. Memorize: the negation of "$P$ implies
+$Q$" is "$P$ AND not $Q$." :::
 
 ### 5.4 Induction Base Case Errors
 
@@ -1171,11 +1145,9 @@ $P(k-1)$ or earlier, weak induction's hypothesis is insufficient.
 this is usually unnecessary and makes proofs harder to read. Use weak induction unless the structure
 of the problem clearly requires strong induction.
 
-:::tip
-**Rule of thumb:** If the statement for $n$ depends only on the statement for $n-1$ (like
+:::tip **Rule of thumb:** If the statement for $n$ depends only on the statement for $n-1$ (like
 $n! = n \cdot (n-1)!$), use weak induction. If it depends on earlier terms (like
-$F_n = F_{n-1} + F_{n-2}$), use strong induction.
-:::
+$F_n = F_{n-1} + F_{n-2}$), use strong induction. :::
 
 ### 5.6 Confusing Converse with Contrapositive
 
@@ -1209,12 +1181,10 @@ Showing $P$ is false does NOT disprove the implication.
 | $\forall x, \; \exists y, \; P(x,y)$ | $\exists x, \; \forall y, \; \neg P(x,y)$ |
 | $\exists x, \; \forall y, \; P(x,y)$ | $\forall x, \; \exists y, \; \neg P(x,y)$ |
 
-:::danger
-The order of quantifiers matters. "For every person, there exists a mother" is very
+:::danger The order of quantifiers matters. "For every person, there exists a mother" is very
 different from "There exists a person who is the mother of everyone." The negation of "for every x
 there exists y" is "there exists x such that for every y" — quantifiers flip but their order is
-preserved.
-:::
+preserved. :::
 
 ---
 

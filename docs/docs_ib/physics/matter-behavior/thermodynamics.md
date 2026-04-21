@@ -9,7 +9,8 @@ tags:
 
 <PhetSimulation simulationId="gas-properties" title="Gas Properties" />
 
-Investigate how pressure, volume, temperature, and the number of particles relate for an ideal gas. Pump in particles and observe how they behave under different conditions.
+Investigate how pressure, volume, temperature, and the number of particles relate for an ideal gas.
+Pump in particles and observe how they behave under different conditions.
 
 The ideal gas law states the relationship of ideal gas qualities:
 
@@ -174,8 +175,8 @@ $$
 \frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
 $$
 
-This follows directly from the ideal gas law since $\frac{PV}{T} = nR = \mathrm{constant}$ for a fixed
-amount of gas.
+This follows directly from the ideal gas law since $\frac{PV}{T} = nR = \mathrm{constant}$ for a
+fixed amount of gas.
 
 ---
 
@@ -270,8 +271,8 @@ more moderate climates than inland regions — water heats and cools slowly comp
 
 ### Worked Example: Specific Heat
 
-**Question:** 200 g of water at $20^\circ\mathrm{C}$ is heated until its temperature reaches $80^\circ\mathrm{C}$. How much
-energy is required? ($c_{\mathrm{water}} = 4186$ J kg⁻¹ K⁻¹)
+**Question:** 200 g of water at $20^\circ\mathrm{C}$ is heated until its temperature reaches
+$80^\circ\mathrm{C}$. How much energy is required? ($c_{\mathrm{water}} = 4186$ J kg⁻¹ K⁻¹)
 
 **Solution:**
 
@@ -315,10 +316,10 @@ breaking or forming intermolecular bonds, not increasing kinetic energy.
 
 ### Worked Example: Heating Curve
 
-**Question:** How much total energy is required to convert 500 g of ice at $-20^\circ\mathrm{C}$ to steam at
-$120^\circ\mathrm{C}$? Use: $c_{\mathrm{ice}} = 2090$ J kg⁻¹ K⁻¹, $c_{\mathrm{water}} = 4186$ J kg⁻¹ K⁻¹,
-$c_{\mathrm{steam}} = 2010$ J kg⁻¹ K⁻¹, $L_f = 3.34 \times 10^5$ J kg⁻¹, $L_v = 2.26 \times 10^6$ J
-kg⁻¹.
+**Question:** How much total energy is required to convert 500 g of ice at $-20^\circ\mathrm{C}$ to
+steam at $120^\circ\mathrm{C}$? Use: $c_{\mathrm{ice}} = 2090$ J kg⁻¹ K⁻¹,
+$c_{\mathrm{water}} = 4186$ J kg⁻¹ K⁻¹, $c_{\mathrm{steam}} = 2010$ J kg⁻¹ K⁻¹,
+$L_f = 3.34 \times 10^5$ J kg⁻¹, $L_v = 2.26 \times 10^6$ J kg⁻¹.
 
 **Solution:** Break the process into five stages:
 
@@ -709,9 +710,10 @@ Pa.
 <details>
 <summary>Question 2</summary>
 
-A 0.50 kg block of copper at $200^\circ\mathrm{C}$ is dropped into 1.0 kg of water at $20^\circ\mathrm{C}$ in an insulated
-container. Assuming no heat loss to the surroundings, calculate the final equilibrium temperature.
-($c_{\mathrm{copper}} = 385$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$)
+A 0.50 kg block of copper at $200^\circ\mathrm{C}$ is dropped into 1.0 kg of water at
+$20^\circ\mathrm{C}$ in an insulated container. Assuming no heat loss to the surroundings, calculate
+the final equilibrium temperature. ($c_{\mathrm{copper}} = 385$ J kg$^{-1}$ K$^{-1}$,
+$c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$)
 
 </details>
 
@@ -812,19 +814,21 @@ m/s.
 <details>
 <summary>Question 5</summary>
 
-300 g of ice at $-10^\circ\mathrm{C}$ is placed in 500 g of water at $40^\circ\mathrm{C}$ in an insulated container. Calculate
-the final temperature and state of the mixture. ($c_{\mathrm{ice}} = 2090$ J kg$^{-1}$ K$^{-1}$,
-$c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J kg$^{-1}$)
+300 g of ice at $-10^\circ\mathrm{C}$ is placed in 500 g of water at $40^\circ\mathrm{C}$ in an
+insulated container. Calculate the final temperature and state of the mixture.
+($c_{\mathrm{ice}} = 2090$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$,
+$L_f = 3.34 \times 10^5$ J kg$^{-1}$)
 
 </details>
 
 <details>
 <summary>Answer 5</summary>
 
-First, check if all the ice melts. Maximum heat the water can provide (cooling to $0^\circ\mathrm{C}$):
-$Q_{\mathrm{water, max}} = m_w c_w \Delta T = (0.500)(4186)(40) = 83720$ J.
+First, check if all the ice melts. Maximum heat the water can provide (cooling to
+$0^\circ\mathrm{C}$): $Q_{\mathrm{water, max}} = m_w c_w \Delta T = (0.500)(4186)(40) = 83720$ J.
 
-Heat needed to warm ice to $0^\circ\mathrm{C}$ and melt it: $Q_{\mathrm{ice, warm}} = (0.300)(2090)(10) = 6270$ J.
+Heat needed to warm ice to $0^\circ\mathrm{C}$ and melt it:
+$Q_{\mathrm{ice, warm}} = (0.300)(2090)(10) = 6270$ J.
 $Q_{\mathrm{ice, melt}} = (0.300)(3.34 \times 10^5) = 100200$ J. Total needed:
 $6270 + 100200 = 106470$ J.
 
@@ -835,8 +839,8 @@ $m_w c_w (40 - 0) = m_{\mathrm{ice}} c_{\mathrm{ice}} (10) + m L_f$.
 $83720 = 6270 + m(3.34 \times 10^5)$.
 $m = \frac{83720 - 6270}{3.34 \times 10^5} = \frac{77450}{334000} = 0.232$ kg $= 232$ g.
 
-Final state: 232 g of melted ice (water at $0^\circ\mathrm{C}$) + 68 g of unmelted ice, total water =
-$500 + 232 = 732$ g at $0^\circ\mathrm{C}$.
+Final state: 232 g of melted ice (water at $0^\circ\mathrm{C}$) + 68 g of unmelted ice, total water
+= $500 + 232 = 732$ g at $0^\circ\mathrm{C}$.
 
 </details>
 

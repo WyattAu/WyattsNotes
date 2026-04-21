@@ -77,11 +77,9 @@ int main() {
 }
 ```
 
-:::tip
-Relaxed ordering is the cheapest atomic operation on most architectures. On x86, `relaxed`
+:::tip Relaxed ordering is the cheapest atomic operation on most architectures. On x86, `relaxed`
 loads and stores compile to plain `mov` instructions. On ARM, `relaxed` loads use `ldar` and stores
-use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version).
-:::
+use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version). :::
 
 ### When Relaxed Is Insufficient: The Message Passing Idiom
 
@@ -195,11 +193,9 @@ $$\forall\, a, b \in \mathrm{seq\_cst ops}: a \lt_{\mathrm{total}} b \mathrm{ or
 On x86, `seq_cst` stores require a `MFENCE` (or `LOCK XCHG`), and `seq_cst` loads require `LFENCE`
 on some implementations. On ARM, `seq_cst` operations use `dmb ish` barriers.
 
-:::info
-`memory_order_seq_cst` is the **default** for all atomic operations if no memory order is
+:::info `memory_order_seq_cst` is the **default** for all atomic operations if no memory order is
 specified. This ensures maximum safety but may not be necessary in all cases. For
-performance-critical code, consider using weaker orderings where appropriate.
-:::
+performance-critical code, consider using weaker orderings where appropriate. :::
 
 ### The Store Buffering Problem (Why seq_cst Is Needed)
 
@@ -343,8 +339,7 @@ multi-core systems.
 | `seq_cst` store | `MFENCE` (or `XCHG`) | `stlr + dmb ish` | `lwsync + st + sync`      | No                    |
 | `acq_rel` RMW   | `LOCK XADD`          | `ldaxr+stlxr`    | `sync + ldar + st + sync` | No                    |
 
-:::tip
-On x86 (TSO model), acquire loads and release stores are "free" because the hardware already
+:::tip On x86 (TSO model), acquire loads and release stores are "free" because the hardware already
 provides those ordering guarantees. The only extra cost is for `seq_cst` stores (which require
 `MFENCE`). On ARM and POWER, acquire and release require explicit barrier instructions, so the
 performance difference between relaxed and acquire/release is significant on those architectures.
@@ -428,8 +423,7 @@ A release fence `F` synchronizes-with an acquire fence `G` if:
 This is more complex than direct acquire/release on atomic operations and is why fences are
 discouraged in favor of direct memory ordering on atomic loads and stores.
 
-:::info
-Fences are rarely needed in practice. Prefer acquire/release semantics on atomic loads and
+:::info Fences are rarely needed in practice. Prefer acquire/release semantics on atomic loads and
 stores directly, as they are more readable and equally efficient. Fences are primarily useful when
 interfacing with hardware or when the atomic operation itself is performed by non-standard means.
 :::

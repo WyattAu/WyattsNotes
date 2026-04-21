@@ -106,11 +106,9 @@ void expired_demo() {
 }
 ```
 
-:::warning
-Never use `expired()` followed by raw access. There is a race condition between checking
+:::warning Never use `expired()` followed by raw access. There is a race condition between checking
 `expired()` and using the object — the object could be destroyed by another thread between the check
-and the access. Always use `lock()` instead, which atomically checks and returns a `shared_ptr`.
-:::
+and the access. Always use `lock()` instead, which atomically checks and returns a `shared_ptr`. :::
 
 ### Formal Correctness: `expired()` vs `lock()` in Concurrent Code
 
@@ -364,11 +362,9 @@ root
 ~Node(root)
 ```
 
-:::warning
-`std::enable_shared_from_this` only works when the object is **originally** managed by a
+:::warning `std::enable_shared_from_this` only works when the object is **originally** managed by a
 `shared_ptr`. If the object is stack-allocated or managed by a `unique_ptr`, calling
-`shared_from_this()` is undefined behavior.
-:::
+`shared_from_this()` is undefined behavior. :::
 
 ## 4.6 `weak_ptr` as Observer in the Observer Pattern
 
@@ -477,12 +473,10 @@ public:
 };
 ```
 
-:::warning
-The callback in the observer pattern is invoked while holding the mutex. If the callback
+:::warning The callback in the observer pattern is invoked while holding the mutex. If the callback
 attempts to subscribe or unsubscribe, it will deadlock. To avoid this, copy the observer list before
 iterating, or use a recursive mutex. Alternatively, collect callbacks into a local vector under the
-lock, then invoke them after releasing the lock.
-:::
+lock, then invoke them after releasing the lock. :::
 
 ## 4.7 `weak_ptr` with `shared_ptr::reset()`
 
@@ -790,12 +784,10 @@ cache size after cleanup: 0
    used, least frequently used, time-based expiration). `weak_ptr` only provides automatic cleanup
    when the producer releases the value.
 
-:::info
-Relevance The weak cache pattern is most useful when the cache is a secondary store — the
+:::info Relevance The weak cache pattern is most useful when the cache is a secondary store — the
 primary owner (e.g., a data loader) produces `shared_ptr` values, and the cache holds `weak_ptr`
 references to avoid extending their lifetime. This is common in image loaders, texture caches in
-game engines, and database connection pools.
-:::
+game engines, and database connection pools. :::
 
 ## 4.13 Proof: `weak_ptr` Does Not Extend Object Lifetime
 

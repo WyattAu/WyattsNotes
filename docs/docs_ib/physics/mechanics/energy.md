@@ -90,7 +90,7 @@ where $G = 6.674 \times 10^{-11}\mathrm{ N}\cdot\mathrm{m}^2/\mathrm{kg}^2$.
 | --------------- | -------------------------- | --------------------------------------- |
 | Reference level | Arbitrary (usually ground) | Zero at infinity                        |
 | Sign            | Positive above reference   | Negative (bound state)                  |
-| Validity        | $h \ll R_{\mathrm{Earth}}$   | Any distance                            |
+| Validity        | $h \ll R_{\mathrm{Earth}}$ | Any distance                            |
 | Gradient        | $-\dfrac{dE_p}{dh} = -mg$  | $-\dfrac{dE_p}{dr} = -\dfrac{GMm}{r^2}$ |
 
 :::info[Example]
@@ -182,7 +182,8 @@ The area under the graph equals the elastic potential energy.
 
 <PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
 
-Observe how kinetic energy and gravitational potential energy interchange as a skater moves along a track. Try changing the skater's mass and the track shape to see how energy is conserved.
+Observe how kinetic energy and gravitational potential energy interchange as a skater moves along a
+track. Try changing the skater's mass and the track shape to see how energy is conserved.
 
 ### Principle
 
@@ -210,8 +211,8 @@ $$
 
 :::info[Example]
 
-A $2\mathrm{ kg}$ ball is dropped from a height of $10\mathrm{ m}$. Find its speed just before it hits
-the ground (ignoring air resistance).
+A $2\mathrm{ kg}$ ball is dropped from a height of $10\mathrm{ m}$. Find its speed just before it
+hits the ground (ignoring air resistance).
 
 $$
 E_k(\mathrm{top}) + E_p(\mathrm{top}) = E_k(\mathrm{bottom}) + E_p(\mathrm{bottom})
@@ -233,7 +234,8 @@ $$
 
 :::info[Example]
 
-A pendulum of length $1.5\mathrm{ m}$ is released from horizontal. Find its speed at the lowest point.
+A pendulum of length $1.5\mathrm{ m}$ is released from horizontal. Find its speed at the lowest
+point.
 
 Taking the lowest point as reference ($E_p = 0$):
 
@@ -304,8 +306,8 @@ where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (negative fo
 
 :::info[Example]
 
-A $3\mathrm{ kg}$ block slides down a $5\mathrm{ m}$ ramp inclined at $30\degree$ with $\mu_k = 0.2$.
-Find the speed at the bottom if it starts from rest.
+A $3\mathrm{ kg}$ block slides down a $5\mathrm{ m}$ ramp inclined at $30\degree$ with
+$\mu_k = 0.2$. Find the speed at the bottom if it starts from rest.
 
 $$
 mgh - \mu_k mg\cos\theta \cdot d = \frac{1}{2}mv^2
@@ -377,15 +379,15 @@ $P = f_{\mathrm{drag}} \cdot v_{\max}$.
 
 :::info[Example]
 
-A car engine produces $80\mathrm{ kW}$ of power. The total resistive force is $800\mathrm{ N}$ at the
-car's maximum speed. Find the maximum speed.
+A car engine produces $80\mathrm{ kW}$ of power. The total resistive force is $800\mathrm{ N}$ at
+the car's maximum speed. Find the maximum speed.
 
 $$
 P = Fv \implies 80000 = 800v \implies v = 100\mathrm{ m/s}
 $$
 
-This is $360\mathrm{ km/h}$, which is unrealistic for a car with $80\mathrm{ kW}$ — in practice, drag
-increases with $v^2$ so the maximum speed would be lower.
+This is $360\mathrm{ km/h}$, which is unrealistic for a car with $80\mathrm{ kW}$ — in practice,
+drag increases with $v^2$ so the maximum speed would be lower.
 
 :::
 
@@ -483,9 +485,9 @@ The total energy remains constant at all times.
 
 ### Question 1 (Paper 1 style)
 
-A roller coaster car of mass $500\mathrm{ kg}$ starts from rest at point `A` which is $30\mathrm{ m}$
-above the ground. It travels along the track to point `B` which is $10\mathrm{ m}$ above the ground.
-Neglecting friction, find its speed at `B`.
+A roller coaster car of mass $500\mathrm{ kg}$ starts from rest at point `A` which is
+$30\mathrm{ m}$ above the ground. It travels along the track to point `B` which is $10\mathrm{ m}$
+above the ground. Neglecting friction, find its speed at `B`.
 
 $$
 mgh_A = mgh_B + \frac{1}{2}mv_B^2
@@ -576,8 +578,8 @@ $$
 
 ### Question 5 (Paper 2 style)
 
-A $60\mathrm{ kg}$ person jumps from a platform $5\mathrm{ m}$ above a trampoline. The trampoline sags
-$0.5\mathrm{ m}$ at the lowest point. Find the spring constant of the trampoline.
+A $60\mathrm{ kg}$ person jumps from a platform $5\mathrm{ m}$ above a trampoline. The trampoline
+sags $0.5\mathrm{ m}$ at the lowest point. Find the spring constant of the trampoline.
 
 At the lowest point, all energy is elastic potential energy:
 
@@ -597,15 +599,15 @@ $$
 
 ## Summary
 
-| Energy Type                     | Formula                                                     |
-| ------------------------------- | ----------------------------------------------------------- |
-| Kinetic                         | $E_k = \dfrac{1}{2}mv^2$                                    |
-| Gravitational PE (near surface) | $E_p = mgh$                                                 |
-| Gravitational PE (universal)    | $E_p = -\dfrac{GMm}{r}$                                     |
-| Elastic PE                      | $E_e = \dfrac{1}{2}kx^2$                                    |
-| Conservation                    | $E_k + E_p + E_e = \mathrm{constant}$                         |
-| Work-energy theorem             | $W_{\mathrm{net}} = \Delta E_k$                               |
-| Power                           | $P = \dfrac{W}{t} = Fv$                                     |
+| Energy Type                     | Formula                                                         |
+| ------------------------------- | --------------------------------------------------------------- |
+| Kinetic                         | $E_k = \dfrac{1}{2}mv^2$                                        |
+| Gravitational PE (near surface) | $E_p = mgh$                                                     |
+| Gravitational PE (universal)    | $E_p = -\dfrac{GMm}{r}$                                         |
+| Elastic PE                      | $E_e = \dfrac{1}{2}kx^2$                                        |
+| Conservation                    | $E_k + E_p + E_e = \mathrm{constant}$                           |
+| Work-energy theorem             | $W_{\mathrm{net}} = \Delta E_k$                                 |
+| Power                           | $P = \dfrac{W}{t} = Fv$                                         |
 | Efficiency                      | $\eta = \dfrac{E_{\mathrm{out}}}{E_{\mathrm{in}}} \times 100\%$ |
 
 :::tip[Exam Strategy]
@@ -715,7 +717,8 @@ where $\tau$ is the torque and $\omega$ is the angular velocity.
 
 :::info[Example]
 
-A motor delivers a torque of $50\mathrm{ N}\cdot\mathrm{m}$ at $3000\mathrm{ rpm}$. Find the power output.
+A motor delivers a torque of $50\mathrm{ N}\cdot\mathrm{m}$ at $3000\mathrm{ rpm}$. Find the power
+output.
 
 $$
 \omega = 3000 \times \frac{2\pi}{60} = 314.2\mathrm{ rad/s}
@@ -811,8 +814,9 @@ $$
 
 ### Question 8 (Paper 1 style)
 
-A spring with $k = 500\mathrm{ N/m}$ is used to launch a $0.1\mathrm{ kg}$ projectile vertically. The
-spring is compressed $0.08\mathrm{ m}$. What is the maximum height reached above the launch point?
+A spring with $k = 500\mathrm{ N/m}$ is used to launch a $0.1\mathrm{ kg}$ projectile vertically.
+The spring is compressed $0.08\mathrm{ m}$. What is the maximum height reached above the launch
+point?
 
 $$
 \frac{1}{2}kx^2 = mgh

@@ -19,11 +19,9 @@ slug: quantum-physics
 metal surface when electromagnetic radiation of frequency greater than a threshold frequency is
 incident upon it.
 
-
 <PhetSimulation simulationId="photoelectric" title="Photoelectric Effect" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ### Observations
 

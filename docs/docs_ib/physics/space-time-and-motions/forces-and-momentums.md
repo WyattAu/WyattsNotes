@@ -212,13 +212,13 @@ distance covered during the 10.0 s of acceleration?
 - **c) New Driving Force:** To maintain a constant speed of 33.0 m/s, the car must be in equilibrium
   (zero acceleration). This means the net force is zero.
   - $F_{\mathrm{net}} = F_{\mathrm{drive}} - F_{\mathrm{resistive}} = 0$.
-  - Therefore, $F_{\mathrm{drive}} = F_{\mathrm{resistive}} = 800 \mathrm{ N}$. (This assumes resistive
-    force is constant, a simplification.)
+  - Therefore, $F_{\mathrm{drive}} = F_{\mathrm{resistive}} = 800 \mathrm{ N}$. (This assumes
+    resistive force is constant, a simplification.)
 - **d) Distance:** Use the kinematic equation $s = ut + \frac{1}{2}at^2$.
   - $s = (25.0 \mathrm{ m/s})(10.0 \mathrm{ s}) + \frac{1}{2}(0.800 \mathrm{ m/s}^2)(10.0 \mathrm{ s})^2 = 250 + 0.4(100) = 290 \mathrm{ m}$.
-    **If you get this wrong, you should focus on:** Applying Newton's First Law ($F_{\mathrm{net}}=0$
-    for constant velocity) and Second Law ($F_{\mathrm{net}}=ma$ for acceleration), and correctly
-    linking the resulting acceleration to kinematic equations.
+    **If you get this wrong, you should focus on:** Applying Newton's First Law
+    ($F_{\mathrm{net}}=0$ for constant velocity) and Second Law ($F_{\mathrm{net}}=ma$ for
+    acceleration), and correctly linking the resulting acceleration to kinematic equations.
 
 </details>
 
@@ -251,10 +251,11 @@ air (from launch until it returns to the ground)?
     $v = u + at \implies 0 = 45.6 - 9.8 t_{\mathrm{up}} \implies t_{\mathrm{up}} = 4.65 \mathrm{ s}$. -
     Time to fall from peak ($t_{\mathrm{down}}$):
     $s = \frac{1}{2}at^2 \implies 174.4 = \frac{1}{2}(9.8) t_{\mathrm{down}}^2 \implies t_{\mathrm{down}} = 5.97 \mathrm{ s}$. -
-    Total time: $T = t_1 + t_{\mathrm{up}} + t_{\mathrm{down}} = 3.0 + 4.65 + 5.97 = 13.6 \mathrm{ s}$.
-    **If you get this wrong, you should focus on:** Breaking multi-stage motion problems into
-    separate parts, calculating net force correctly in each stage, and using the final conditions of
-    one stage as the initial conditions for the next.
+    Total time:
+    $T = t_1 + t_{\mathrm{up}} + t_{\mathrm{down}} = 3.0 + 4.65 + 5.97 = 13.6 \mathrm{ s}$. **If you
+    get this wrong, you should focus on:** Breaking multi-stage motion problems into separate parts,
+    calculating net force correctly in each stage, and using the final conditions of one stage as
+    the initial conditions for the next.
 
 </details>
 
@@ -280,10 +281,10 @@ applied horizontal force and the tension in the rope.
     - $T = \frac{49}{\cos(35^\circ)} = 59.8 \mathrm{ N}$.
   - **Horizontal Equilibrium ($\Sigma F_x = 0$):** -
     $F_a - T_x = 0 \implies F_a = T \sin(35^\circ)$. -
-    $F_a = (59.8 \mathrm{ N}) \sin(35^\circ) = 34.3 \mathrm{ N}$. **If you get this wrong, you should
-    focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving vectors
-    into components using trigonometry, and setting up and solving simultaneous equations for the
-    vertical and horizontal forces.
+    $F_a = (59.8 \mathrm{ N}) \sin(35^\circ) = 34.3 \mathrm{ N}$. **If you get this wrong, you
+    should focus on:** The conditions for static equilibrium ($\Sigma F = 0$), correctly resolving
+    vectors into components using trigonometry, and setting up and solving simultaneous equations
+    for the vertical and horizontal forces.
 
 </details>
 
@@ -448,8 +449,8 @@ the muon "explain" its ability to reach the ground?
     "lives" for only a short time.
   - From the muon's perspective, the Earth and its atmosphere are rushing towards it at 0.995c. The
     distance of 10.0 km is **length contracted**.
-  - Contracted distance: $L = \frac{L_0}{\gamma} = \frac{10.0 \mathrm{ km}}{10.01} = 0.999$ km or 999
-    m.
+  - Contracted distance: $L = \frac{L_0}{\gamma} = \frac{10.0 \mathrm{ km}}{10.01} = 0.999$ km or
+    999 m.
   - Time to travel this contracted distance:
     $t' = \frac{L}{v} = \frac{999 \mathrm{ m}}{0.995 \times 3.0 \times 10^8 \mathrm{ m/s}} = 3.35 \times 10^{-6}$
     s = 3.35 μs.
@@ -508,8 +509,8 @@ Net force along the incline:
 $F_{\mathrm{net}} = F_{\parallel} - mg\sin 30° - f_k = 17.3 - 19.6 - 13.2 = -15.5$ N.
 
 The net force is negative (down the incline), meaning the block slides **down** despite the applied
-force. The acceleration is: $a = \frac{|F_{\mathrm{net}}|}{m} = \frac{15.5}{4.0} = 3.88$ m/s$^2$ down
-the incline.
+force. The acceleration is: $a = \frac{|F_{\mathrm{net}}|}{m} = \frac{15.5}{4.0} = 3.88$ m/s$^2$
+down the incline.
 
 ---
 
@@ -594,9 +595,9 @@ where $E_k$ increased).
 <details>
 <summary>Question 1</summary>
 
-A 2.0 kg block slides down a frictionless incline of angle $35^\circ$ from a height of 1.5 m. a) Find the
-speed of the block at the bottom of the incline. b) The block then slides across a rough horizontal
-surface with $\mu_k = 0.30$. How far does it travel before stopping?
+A 2.0 kg block slides down a frictionless incline of angle $35^\circ$ from a height of 1.5 m. a)
+Find the speed of the block at the bottom of the incline. b) The block then slides across a rough
+horizontal surface with $\mu_k = 0.30$. How far does it travel before stopping?
 
 </details>
 
@@ -669,8 +670,8 @@ center of the platform. What is the new angular speed?
 <summary>Answer 4</summary>
 
 $I_{\mathrm{disc}} = \frac{1}{2}(100)(2.0)^2 = 200$ kg m$^2$.
-$I_{\mathrm{person, initial}} = mr^2 = (60)(2.0)^2 = 240$ kg m$^2$. $I_{\mathrm{person, final}} = 0$ (at
-the center, $r = 0$).
+$I_{\mathrm{person, initial}} = mr^2 = (60)(2.0)^2 = 240$ kg m$^2$. $I_{\mathrm{person, final}} = 0$
+(at the center, $r = 0$).
 
 $I_i = 200 + 240 = 440$ kg m$^2$, $\omega_i = 1.5$ rad/s. $I_f = 200 + 0 = 200$ kg m$^2$.
 

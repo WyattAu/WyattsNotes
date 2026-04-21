@@ -25,11 +25,9 @@ determine unknown forces.
 | OCR (A)    | Paper 2 | Horizontal and vertical circles             |
 | CIE (9231) | M2      | Full coverage including vertical circles    |
 
-:::info
-Centripetal force is not a separate force — it is the resultant of the physical forces
+:::info Centripetal force is not a separate force — it is the resultant of the physical forces
 (tension, friction, normal reaction, weight) directed towards the centre of the circle. Never
-include "centripetal force" on a free body diagram.
-:::
+include "centripetal force" on a free body diagram. :::
 
 <hr />
 
@@ -134,8 +132,8 @@ $$\boxed{\tan\theta = \frac{v^2}{rg}}$$
 
 $$\boxed{v_{\mathrm{optimum}} = \sqrt{rg\tan\theta}}$$
 
-At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$, friction acts down the slope.
-If $v < v_{\mathrm{opt}}$, friction acts up the slope.
+At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$, friction acts down the
+slope. If $v < v_{\mathrm{opt}}$, friction acts up the slope.
 
 ### 3.3 Motion on the inside of a hollow sphere
 
@@ -558,8 +556,8 @@ angle is too shallow, the car can come to rest without sliding down.
 
 ### 7.2 Worked example: car on a banked curve with friction
 
-**Example.** A curve of radius $80\,\mathrm{m}$ is banked at $30^\circ$ with $\mu = 0.3$. Find the maximum
-and minimum safe speeds for a car on this curve.
+**Example.** A curve of radius $80\,\mathrm{m}$ is banked at $30^\circ$ with $\mu = 0.3$. Find the
+maximum and minimum safe speeds for a car on this curve.
 
 $v_{\max}^2 = \dfrac{80 \times 9.8(\sin 30° + 0.3\cos 30°)}{\cos 30° - 0.3\sin 30°} = \dfrac{784(0.5 + 0.2598)}{0.8660 - 0.15} = \dfrac{784 \times 0.7598}{0.7160}$
 
@@ -620,9 +618,9 @@ Key observations:
 ## 9. Worked Example: Motorcyclist on a Vertical Loop
 
 **Example.** A motorcyclist rides around a vertical circular track of radius $8\,\mathrm{m}$. The
-motorcycle and rider have combined mass $200\,\mathrm{kg}$. Find the minimum speed at the lowest point
-to complete the loop, the normal reaction at the top and bottom at this minimum speed, and the speed
-and reaction at a point $90^\circ$ from the bottom.
+motorcycle and rider have combined mass $200\,\mathrm{kg}$. Find the minimum speed at the lowest
+point to complete the loop, the normal reaction at the top and bottom at this minimum speed, and the
+speed and reaction at a point $90^\circ$ from the bottom.
 
 **Minimum speed at the bottom:**
 $v_{\min} = \sqrt{5gr} = \sqrt{5 \times 9.8 \times 8} = \sqrt{392} \approx 19.8\,\mathrm{m s}^{-1}$.

@@ -48,8 +48,7 @@ $$
 :::warning[Exam Tip] H$_2$SO$_4$ is a diprotic acid. The first dissociation is complete (strong),
 but the second dissociation is partial (weak):
 $\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$ with
-$K_a \approx 1.0 \times 10^{-2}$.
-:::
+$K_a \approx 1.0 \times 10^{-2}$. :::
 
 ---
 
@@ -256,7 +255,8 @@ $$
 <details>
 <summary>Worked Example 5: pH of a Weak Base</summary>
 
-Calculate the pH of $0.150\mathrm{ mol/L}$ NH$_3$ ($K_b = 1.8 \times 10^{-5}$) at $25\degree\mathrm{C}$.
+Calculate the pH of $0.150\mathrm{ mol/L}$ NH$_3$ ($K_b = 1.8 \times 10^{-5}$) at
+$25\degree\mathrm{C}$.
 
 $$
 \mathrm{NH}_3 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{NH}_4^+ + \mathrm{OH}^-
@@ -318,10 +318,9 @@ $K_w$ is **temperature dependent**:
 | 100                      | $5.13 \times 10^{-13}$ |
 
 :::warning[Exam Tip] At $50\degree\mathrm{C}$, pure water has $\mathrm{pH} = 6.63$ (not 7). This is
-because $K_w$ is larger, so $[\mathrm{H}^+] = [\mathrm{OH}^-] = \sqrt{K_w} \gt 10^{-7}$. The water is
-still **neutral** because $[\mathrm{H}^+] = [\mathrm{OH}^-]$. Neutral does not always mean pH = 7; it
-depends on temperature.
-:::
+because $K_w$ is larger, so $[\mathrm{H}^+] = [\mathrm{OH}^-] = \sqrt{K_w} \gt 10^{-7}$. The water
+is still **neutral** because $[\mathrm{H}^+] = [\mathrm{OH}^-]$. Neutral does not always mean pH =
+7; it depends on temperature. :::
 
 ---
 
@@ -426,7 +425,8 @@ Example: HCl + NH$_3$
 - **Equivalence point:** The volume where stoichiometrically equivalent amounts of acid and base
   have reacted. The pH at this point depends on the salt formed.
 - **Half-equivalence point:** The volume where half the acid/base has been neutralised. At this
-  point, $\mathrm{pH} = \mathrm{p}K_a$ (for weak acid titrations), because $[\mathrm{HA}] = [\mathrm{A}^-]$.
+  point, $\mathrm{pH} = \mathrm{p}K_a$ (for weak acid titrations), because
+  $[\mathrm{HA}] = [\mathrm{A}^-]$.
 
 ---
 
@@ -521,7 +521,8 @@ Initial moles:
 
 Adding $0.010\mathrm{ mol}$ HCl:
 
-- HCl reacts with CH$_3$COO$^-$: $\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{COOH}$
+- HCl reacts with CH$_3$COO$^-$:
+  $\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{COOH}$
 - $n(\mathrm{CH}_3\mathrm{COO}^-) = 0.075 - 0.010 = 0.065\mathrm{ mol}$
 - $n(\mathrm{CH}_3\mathrm{COOH}) = 0.100 + 0.010 = 0.110\mathrm{ mol}$
 
@@ -622,8 +623,8 @@ pH at equivalence point \lt 7.
 <details>
 <summary>Worked Example 9: Titration of Weak Acid with Strong Base</summary>
 
-$25.0\mathrm{ mL}$ of $0.100\mathrm{ mol/L}$ CH$_3$COOH ($K_a = 1.8 \times 10^{-5}$) is titrated with
-$0.100\mathrm{ mol/L}$ NaOH. Calculate the pH at the equivalence point.
+$25.0\mathrm{ mL}$ of $0.100\mathrm{ mol/L}$ CH$_3$COOH ($K_a = 1.8 \times 10^{-5}$) is titrated
+with $0.100\mathrm{ mol/L}$ NaOH. Calculate the pH at the equivalence point.
 
 At the equivalence point, moles of NaOH = moles of CH$_3$COOH:
 
@@ -707,8 +708,8 @@ This is a general result: at the half-equivalence point, $\mathrm{pH} = \mathrm{
    give 2 H$^+$ at normal concentrations because $K_{a2}$ is very small. Only the first dissociation
    contributes significantly.
 
-3. **pH + pOH = 14 only at $25\degree\mathrm{C}$:** At other temperatures, use the actual $K_w$ value.
-   $\mathrm{pH} + \mathrm{pOH} = \mathrm{p}K_w$.
+3. **pH + pOH = 14 only at $25\degree\mathrm{C}$:** At other temperatures, use the actual $K_w$
+   value. $\mathrm{pH} + \mathrm{pOH} = \mathrm{p}K_w$.
 
 4. **Buffer range:** A buffer is only effective within $\pm 1$ pH unit of its p$K_a$. Outside this
    range, the buffer capacity is essentially zero.

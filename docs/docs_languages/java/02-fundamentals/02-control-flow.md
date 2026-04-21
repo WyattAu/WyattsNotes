@@ -58,8 +58,7 @@ if (a > 0) {
 }
 ```
 
-:::warning
-Always use braces for `if`/`else` blocks, even when the body is a single statement. This
+:::warning Always use braces for `if`/`else` blocks, even when the body is a single statement. This
 eliminates the dangling else ambiguity entirely and prevents bugs when statements are added later.
 :::
 
@@ -109,12 +108,10 @@ The supported types for traditional switch are: `byte`, `short`, `char`, `int`, 
 classes (`Byte`, `Short`, `Character`, `Integer`), `String` (since Java 7), and enums (since Java
 5).
 
-:::danger
-The traditional switch has several design flaws: fall-through is error-prone, variables
+:::danger The traditional switch has several design flaws: fall-through is error-prone, variables
 declared in one `case` scope leak into subsequent cases, and the entire construct is
 statement-oriented (it cannot produce a value). These flaws motivated the introduction of switch
-expressions.
-:::
+expressions. :::
 
 ### Switch Expressions (Java 14+)
 
@@ -303,8 +300,7 @@ for (Iterator<String> it = names.iterator(); it.hasNext(); ) {
 }
 ```
 
-:::warning
-The enhanced for loop does not provide access to the index. If you need the index, use
+:::warning The enhanced for loop does not provide access to the index. If you need the index, use
 the traditional for loop. Additionally, the enhanced for loop does not allow modification of the
 collection during iteration (any structural modification throws `ConcurrentModificationException`).
 :::
@@ -327,13 +323,11 @@ do {
 The `do-while` loop guarantees at least one execution of the body. It is the correct choice when the
 loop body must run before the condition can be evaluated (e.g., reading input before validating it).
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §14.12](https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.12) defines the
 `while` statement.
 [JLS §14.13](https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.13) defines the
-`do` statement.
-:::
+`do` statement. :::
 
 ## break, continue, and Labeled Statements
 
@@ -387,13 +381,11 @@ for (int i = 0; i < rows; i++) {
 }
 ```
 
-:::info
-Labels follow the same naming rules as identifiers. A label is attached to a statement by
+:::info Labels follow the same naming rules as identifiers. A label is attached to a statement by
 prefixing it with `label:`. The label is only useful when referenced by a `break label;` or
 `continue label;` statement inside a nested loop. Labels cannot target arbitrary statements -- only
 loop and switch statements can be the target of `break`, and only loops can be the target of
-`continue`.
-:::
+`continue`. :::
 
 ## Exception Handling
 
@@ -446,11 +438,9 @@ graph TD
     style RuntimeException fill:#f39c12,color:#000
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §11.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-11.html#jls-11.1) defines the
-Throwable hierarchy and the distinction between unchecked and checked exceptions.
-:::
+Throwable hierarchy and the distinction between unchecked and checked exceptions. :::
 
 **Throwable** -- The root of the exception hierarchy. It carries a detail message and an optional
 cause (for chaining). Only instances of `Throwable` (or subclasses) can be thrown by `throw` or
@@ -583,11 +573,9 @@ try {
 5. If `finally` also throws an exception, it **replaces** any exception thrown in the `try` or
    `catch` block.
 
-:::danger
-If both the `try` block and the `finally` block throw exceptions, the exception from
+:::danger If both the `try` block and the `finally` block throw exceptions, the exception from
 `finally` replaces the original exception. This silently swallows the original error. Always ensure
-`finally` blocks cannot throw exceptions.
-:::
+`finally` blocks cannot throw exceptions. :::
 
 ```java
 // Dangerous: finally block that can throw
@@ -671,12 +659,10 @@ try (Reader r = new FailingReader()) {
 }
 ```
 
-:::info
-`AutoCloseable.close()` is declared to throw `Exception`. `Closeable` (a subinterface)
+:::info `AutoCloseable.close()` is declared to throw `Exception`. `Closeable` (a subinterface)
 narrows this to `IOException`. Any resource that needs cleanup should implement `AutoCloseable`. The
 compiler generates the equivalent of a `finally` block that calls `close()` on each declared
-resource in reverse order.
-:::
+resource in reverse order. :::
 
 ### Custom Exceptions
 
@@ -799,11 +785,9 @@ class SafeDataSource implements DataSource {
 // }
 ```
 
-:::warning
-The overriding rule: a method that overrides or implements another method cannot declare
+:::warning The overriding rule: a method that overrides or implements another method cannot declare
 checked exceptions that are broader than those declared in the supertype method. It can declare the
-same exceptions, narrower exceptions (subtypes), or no checked exceptions at all.
-:::
+same exceptions, narrower exceptions (subtypes), or no checked exceptions at all. :::
 
 ## Assertions
 
@@ -871,13 +855,11 @@ public void setName(String name) {
 }
 ```
 
-:::danger
-Never use assertions for validating public method arguments or for conditions that affect
+:::danger Never use assertions for validating public method arguments or for conditions that affect
 correctness in production. Since assertions can be disabled, a failed assertion would go undetected
 in production, leading to silent data corruption. Use `Objects.requireNonNull()`, explicit `if`
 checks with `IllegalArgumentException`, or framework-level validation (like `jakarta.validation`)
-for input validation.
-:::
+for input validation. :::
 
 ## Varargs (Variable Arity Parameters)
 
@@ -933,12 +915,10 @@ The compiler prefers the more specific overload (exact parameter count match) ov
 overload. When no exact match exists, the compiler performs varargs invocation by wrapping the
 arguments in an array.
 
-:::warning
-Be cautious with varargs when the parameter type is generic. A varargs parameter of type
+:::warning Be cautious with varargs when the parameter type is generic. A varargs parameter of type
 `T...` can cause heap pollution because the compiler creates a generic array, which is not
 type-safe. Use `@SafeVarargs` on methods that do not store the varargs array or pass it to untrusted
-code.
-:::
+code. :::
 
 ```java
 // Heap pollution example
@@ -1025,11 +1005,9 @@ String example = """
         """;
 ```
 
-:::info
-Text blocks produce standard `String` objects. At compile time, the text block is converted
+:::info Text blocks produce standard `String` objects. At compile time, the text block is converted
 to a `String` literal with `\n`, `\t`, and `\"` escape sequences. Text blocks are primarily
-syntactic convenience -- they do not introduce a new type.
-:::
+syntactic convenience -- they do not introduce a new type. :::
 
 ## Summary of Control Flow Design Principles
 

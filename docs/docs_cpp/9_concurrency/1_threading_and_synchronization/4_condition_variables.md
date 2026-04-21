@@ -491,11 +491,9 @@ int main() {
 }
 ```
 
-:::info
-`std::latch` is single-use: once the count reaches zero, it cannot be reset. Use
+:::info `std::latch` is single-use: once the count reaches zero, it cannot be reset. Use
 `std::barrier` when you need reusable phase synchronization. `std::latch` is ideal for
-startup/shutdown patterns and fork-join parallelism [N4950 §31.4.4.3].
-:::
+startup/shutdown patterns and fork-join parallelism [N4950 §31.4.4.3]. :::
 
 ## `std::flex_barrier` (C++20 Alternative)
 

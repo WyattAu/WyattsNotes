@@ -217,15 +217,11 @@ isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 
 ## Graphs of Trigonometric Functions
 
-{/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph
-  title="Trigonometric Functions: y = A sin(Bx + C) + D"
-  expressions={["A\sin(Bx+C)+D", "cos(x)", "tan(x)"]}
-  width={800}
-  height={500}
-/>
+{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Trigonometric Functions: y
+= A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "cos(x)", "tan(x)"]} width={800} height={500} />
 
-Use the sliders to adjust amplitude, period, and phase shift, and observe how each parameter affects the graph.
+Use the sliders to adjust amplitude, period, and phase shift, and observe how each parameter affects
+the graph.
 
 ### $y = \sin x$
 
@@ -398,8 +394,8 @@ $$
 $$
 
 This is derived from the standard formula
-$\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height}$, where the height is expressed
-using a trigonometric ratio.
+$\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height}$, where the height is
+expressed using a trigonometric ratio.
 
 ### Bearings
 
@@ -555,8 +551,8 @@ the slant edge $VA$ and the base.
 
 (a) The centre $O$ of the square base is the foot of the perpendicular from $V$. The diagonal
 $AC = 6\sqrt{2}$, so $AO = 3\sqrt{2}$. In $\triangle VOA$:
-$VO^2 = VA^2 - AO^2 = (5\sqrt{2})^2 - (3\sqrt{2})^2 = 50 - 18 = 32$.
-Height $VO = \sqrt{32} = 4\sqrt{2}$ cm.
+$VO^2 = VA^2 - AO^2 = (5\sqrt{2})^2 - (3\sqrt{2})^2 = 50 - 18 = 32$. Height
+$VO = \sqrt{32} = 4\sqrt{2}$ cm.
 
 (b) The angle between $VA$ and the base is $\angle VAO$.
 $\cos\angle VAO = \frac{AO}{VA} = \frac{3\sqrt{2}}{5\sqrt{2}} = \frac{3}{5}$.

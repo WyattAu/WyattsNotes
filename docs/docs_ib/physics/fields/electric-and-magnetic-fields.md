@@ -75,7 +75,8 @@ $$
 
 <PhetSimulation simulationId="charges-and-fields" title="Charges and Fields" />
 
-Place positive and negative charges on the canvas and observe the resulting electric field lines and equipotential surfaces. Drag a test charge to feel the force at different positions.
+Place positive and negative charges on the canvas and observe the resulting electric field lines and
+equipotential surfaces. Drag a test charge to feel the force at different positions.
 
 The electric field $\bm{E}$ with vector quantity of electrostatic force $\bm{F}$ exerted per unit of
 magnitude of charge, evaluated as:

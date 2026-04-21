@@ -166,10 +166,8 @@ If $r = 1$: $S_n = na \to \pm\infty$ (unless $a = 0$).
 
 If $r = -1$: $S_n = a - a + a - a + \cdots$, which oscillates and does not converge. $\blacksquare$
 
-:::warning
-The condition $|r| < 1$ is essential. A common mistake is to apply the sum-to-infinity
-formula when $|r| \geq 1$, which gives nonsense.
-:::
+:::warning The condition $|r| < 1$ is essential. A common mistake is to apply the sum-to-infinity
+formula when $|r| \geq 1$, which gives nonsense. :::
 
 <details>
 <summary>Example</summary>
@@ -353,8 +351,7 @@ $$= \frac{3}{4} - \frac{2n + 3}{2(n+1)(n+2)}$$
 
 </details>
 
-:::tip
-When using the method of differences, always write out the first few terms explicitly to
+:::tip When using the method of differences, always write out the first few terms explicitly to
 identify the cancellation pattern before simplifying. Be especially careful when the "gap" in the
 denominator is larger than 1 (e.g., $k(k+2)$), as not all terms cancel in a simple pairwise fashion.
 :::

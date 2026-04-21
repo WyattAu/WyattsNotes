@@ -78,7 +78,8 @@ $$V = IR = 2 \times 2.16 = 4.33 \mathrm{ V}$$
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
-Build series and parallel circuits interactively and observe how current and voltage distribute across components.
+Build series and parallel circuits interactively and observe how current and voltage distribute
+across components.
 
 ### Series Circuits
 

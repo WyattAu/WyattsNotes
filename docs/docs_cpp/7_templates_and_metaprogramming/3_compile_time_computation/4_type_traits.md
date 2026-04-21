@@ -121,12 +121,10 @@ int main() {
 }
 ```
 
-:::warning
-`std::enable_if` SFINAE is effective but produces terrible error messages and makes
+:::warning `std::enable_if` SFINAE is effective but produces terrible error messages and makes
 function signatures hard to read. In C++17 and later, prefer `if constexpr` for compile-time
 branching inside function bodies. In C++20, prefer **concepts** and **constraints** [N4950 §13.7.7]
-for the clearest syntax.
-:::
+for the clearest syntax. :::
 
 ## Tag Dispatch
 
@@ -288,12 +286,10 @@ int main() {
 
 ```
 
-:::tip
-Prefer `if constexpr` over `std::enable_if` when you have a single function that needs to
+:::tip Prefer `if constexpr` over `std::enable_if` when you have a single function that needs to
 handle multiple type categories. Prefer `std::enable_if` (or better, C++20 concepts) when different
 implementations should be entirely separate overloads. The `if constexpr` approach is generally
-easier to read, debug, and maintain.
-:::
+easier to read, debug, and maintain. :::
 
 ## Comparison: Tag Dispatch vs `if constexpr` vs Concepts
 
@@ -575,13 +571,11 @@ for_each output: [1] [2.5] [hello]
 transformed: [2] [5] [hello!]
 ```
 
-:::info
-Fold Expressions and index_sequence The pattern `(f(std::get<Is>(t)), ...)` is a **fold
+:::info Fold Expressions and index_sequence The pattern `(f(std::get<Is>(t)), ...)` is a **fold
 expression** [N4950 §7.5.6] that expands the comma operator over the parameter pack `Is`. This is
 the idiomatic way to iterate over a tuple at compile time. Without `index_sequence`, there is no way
 to iterate over a tuple's elements in a generic function, because tuples do not have a
-runtime-iterable interface.
-:::
+runtime-iterable interface. :::
 
 ## Unrolling a Tuple with `index_sequence`
 
@@ -739,11 +733,9 @@ Min version: 2.99.99
 1, 2, three
 ```
 
-:::tip
-`std::apply` for Tuple Unpacking `std::apply` [N4950 §20.14.4] is the standard library
+:::tip `std::apply` for Tuple Unpacking `std::apply` [N4950 §20.14.4] is the standard library
 utility that unpacks a tuple as arguments to a callable. It is implemented using the same
-`index_sequence` pattern shown above. Prefer `std::apply` over writing your own unpacking code.
-:::
+`index_sequence` pattern shown above. Prefer `std::apply` over writing your own unpacking code. :::
 
 ## Reflection Preview (C++26)
 
@@ -766,11 +758,9 @@ The key operations include:
   a class type.
 - `std::meta::name_of(info)` --- returns the name of the reflected entity as a `std::string_view`.
 
-:::warning
-C++26 Status Static reflection is approved for C++26 but the exact API is still being
+:::warning C++26 Status Static reflection is approved for C++26 but the exact API is still being
 finalized. The examples below follow the direction of P2996R9, which is the leading proposal.
-Compiler support may vary. Check the latest compiler documentation for current support.
-:::
+Compiler support may vary. Check the latest compiler documentation for current support. :::
 
 ### Code Example: Aggregate Introspection Pattern
 
@@ -904,14 +894,12 @@ Config (4 fields):
 Port via index: 8080
 ```
 
-:::tip
-When to Use Boost.PFR Boost.PFR works for **standard-layout aggregates** (plain structs with
+:::tip When to Use Boost.PFR Boost.PFR works for **standard-layout aggregates** (plain structs with
 public members, no virtual functions, no base classes, no custom constructors). It does not work for
 types with private members, virtual functions, or non-standard layout. If your types satisfy these
 constraints, Boost.PFR is a practical, header-only solution that requires no code generation or
 macro registration. For more complex types, wait for C++26 reflection or use a library like Magic
-Enum for enums.
-:::
+Enum for enums. :::
 
 ### Comparison: Current Approaches to Compile-Time Introspection
 

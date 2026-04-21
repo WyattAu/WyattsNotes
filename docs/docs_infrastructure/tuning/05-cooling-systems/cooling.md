@@ -87,12 +87,10 @@ coverage but risks air bubbles. Better for large IHS surfaces (Threadripper, EPY
 **Cross/X method:** Two thin lines forming a cross. Provides good coverage for rectangular IHS
 surfaces. Works well for Intel CPUs with their rectangular IHS.
 
-:::danger
-Liquid metal (galinstan) is electrically conductive and will short-circuit components if
+:::danger Liquid metal (galinstan) is electrically conductive and will short-circuit components if
 it spills onto the motherboard contacts or pins. It also reacts with aluminum, causing corrosion.
 Only use liquid metal on nickel-plated or copper surfaces. Apply a conformal coating (nail polish)
-around the IHS to contain spills.
-:::
+around the IHS to contain spills. :::
 
 ### When to Repaste
 
@@ -222,11 +220,9 @@ AIO coolers have finite lifespans. Common failure modes:
    Tilt the case to move bubbles to the radiator.
 4. **Fan failure:** Individual fans can fail. Replaceable in most AIOs.
 
-:::warning
-Always monitor pump RPM. Set an alarm in your monitoring software if pump RPM drops below
+:::warning Always monitor pump RPM. Set an alarm in your monitoring software if pump RPM drops below
 a threshold (typically 1000 RPM). A dead pump with active fans will cook a CPU in minutes under
-load.
-:::
+load. :::
 
 ---
 
@@ -487,14 +483,14 @@ PTM7950 requires a heat cycling process after application:
 
 ### Graphite Pads
 
-Graphite pads are anisotropic — they conduct heat well in the X-Y plane (along the pad surface)
-but poorly in the Z-axis (through the pad thickness). This makes them suitable for:
+Graphite pads are anisotropic — they conduct heat well in the X-Y plane (along the pad surface) but
+poorly in the Z-axis (through the pad thickness). This makes them suitable for:
 
 - Laptops with bare-die CPUs (where the pad conforms to the die and heat spreader)
 - Low-maintenance applications (no pumping out, no curing needed)
 
-They are less suitable for desktop tower coolers where the primary heat transfer is through the
-pad thickness (Z-axis).
+They are less suitable for desktop tower coolers where the primary heat transfer is through the pad
+thickness (Z-axis).
 
 ## Detailed Air Cooler Analysis
 
@@ -502,45 +498,44 @@ pad thickness (Z-axis).
 
 Computational Fluid Dynamics (CFD) analysis of tower coolers reveals the key airflow patterns:
 
-- **Front intake:** Air enters the front of the heatsink fin stack. Approximately 70–80% of the
-  air flows through the fin channels; 20–30% bypasses through gaps.
-- **Fin channel flow:** Air speed decreases as it moves through the fin stack due to friction.
-  The pressure drop is proportional to the square of the airflow velocity.
+- **Front intake:** Air enters the front of the heatsink fin stack. Approximately 70–80% of the air
+  flows through the fin channels; 20–30% bypasses through gaps.
+- **Fin channel flow:** Air speed decreases as it moves through the fin stack due to friction. The
+  pressure drop is proportional to the square of the airflow velocity.
 - **Heat transfer coefficient:** Higher at the front of the fin stack (cooler air) and lower at the
   rear (warmer air). This creates a temperature gradient across the fin stack.
-- **Bypass air:** Air that does not pass through the fin channels is wasted. This is why
-  shrouding (a cover that forces all air through the fins) improves performance.
+- **Bypass air:** Air that does not pass through the fin channels is wasted. This is why shrouding
+  (a cover that forces all air through the fins) improves performance.
 
 ### Optimizing Fan Configuration on Tower Coolers
 
-**Single fan (front mount):** The most common configuration. Airflow direction: front to back.
-The rear of the heatsink receives warmer air, reducing efficiency.
+**Single fan (front mount):** The most common configuration. Airflow direction: front to back. The
+rear of the heatsink receives warmer air, reducing efficiency.
 
 **Dual fan (push-pull):** Adds a second fan on the rear of the heatsink pulling air through.
-Improves thermals by 2–5 °C compared to single fan. Doubles the noise level (two fans instead
-of one).
+Improves thermals by 2–5 °C compared to single fan. Doubles the noise level (two fans instead of
+one).
 
-**Dual fan (both push, front):** Two fans mounted side by side on the front. Only useful for
-very wide heatsinks (140 mm+ width). Marginally better than single fan due to higher static
-pressure.
+**Dual fan (both push, front):** Two fans mounted side by side on the front. Only useful for very
+wide heatsinks (140 mm+ width). Marginally better than single fan due to higher static pressure.
 
 **Fan orientation (up vs. forward):** On tower coolers, the airflow direction matters:
 
 - **Horizontal (airflow front to back):** Standard orientation. Works well with rear exhaust fan.
-- **Vertical (airflow bottom to top):** Aligns with natural convection (hot air rises). Provides
-  1–3 °C improvement but may conflict with top-mounted case fans.
+- **Vertical (airflow bottom to top):** Aligns with natural convection (hot air rises). Provides 1–3
+  °C improvement but may conflict with top-mounted case fans.
 
 ### Fan Blade Design
 
 Fan blade design affects airflow, static pressure, and noise:
 
-| Design | Airflow | Static Pressure | Noise | Use Case |
-|--------|---------|----------------|-------|----------|
-| Standard | Good | Moderate | Moderate | Case exhaust |
-| High static pressure | Moderate | High | Moderate | Heatsinks, radiators |
-| High airflow | High | Low | Low-Moderate | Case intake |
-| Silent (FDB, low RPM) | Low | Low | Very Low | Quiet builds |
-| PWM-controlled | Variable | Variable | Variable | All scenarios |
+| Design                | Airflow  | Static Pressure | Noise        | Use Case             |
+| --------------------- | -------- | --------------- | ------------ | -------------------- |
+| Standard              | Good     | Moderate        | Moderate     | Case exhaust         |
+| High static pressure  | Moderate | High            | Moderate     | Heatsinks, radiators |
+| High airflow          | High     | Low             | Low-Moderate | Case intake          |
+| Silent (FDB, low RPM) | Low      | Low             | Very Low     | Quiet builds         |
+| PWM-controlled        | Variable | Variable        | Variable     | All scenarios        |
 
 Key blade parameters:
 
@@ -553,22 +548,22 @@ Key blade parameters:
 
 ### Pump Types
 
-| Pump Type | Location | Noise | Reliability | Flow Rate |
-|-----------|----------|-------|-------------|-----------|
-| Centrifugal (most common) | Cold plate | Low-Moderate | High | 60–120 L/h |
-| Peristaltic | External | High | Moderate | 30–80 L/h |
-| Axial | Cold plate | Moderate | Moderate | 80–150 L/h |
+| Pump Type                 | Location   | Noise        | Reliability | Flow Rate  |
+| ------------------------- | ---------- | ------------ | ----------- | ---------- |
+| Centrifugal (most common) | Cold plate | Low-Moderate | High        | 60–120 L/h |
+| Peristaltic               | External   | High         | Moderate    | 30–80 L/h  |
+| Axial                     | Cold plate | Moderate     | Moderate    | 80–150 L/h |
 
-Centrifugal pumps are the most common in AIO coolers. They use an impeller to push coolant
-radially outward, creating pressure that drives flow through the loop. The pump is typically
-integrated into the cold plate assembly.
+Centrifugal pumps are the most common in AIO coolers. They use an impeller to push coolant radially
+outward, creating pressure that drives flow through the loop. The pump is typically integrated into
+the cold plate assembly.
 
 ### Coolant Composition
 
 AIO coolant is typically a mixture of:
 
-- **Propylene glycol (30–40%):** Antifreeze and anti-corrosion agent. Lowers the freezing point
-  and raises the boiling point of water.
+- **Propylene glycol (30–40%):** Antifreeze and anti-corrosion agent. Lowers the freezing point and
+  raises the boiling point of water.
 - **Deionized water (60–70%):** Primary heat transfer fluid. Higher thermal conductivity than
   glycol.
 - **Anti-corrosion additives:** Inhibit galvanic corrosion between dissimilar metals (copper cold
@@ -579,24 +574,24 @@ AIO coolant is typically a mixture of:
 
 FPI (Fins Per Inch) determines the balance between surface area and airflow resistance:
 
-| FPI | Density | Fan Required | Use Case |
-|-----|---------|-------------|----------|
-| 12–16 | Low | Low-RPM fans | Quiet builds, large radiators |
-| 17–20 | Medium | Medium-RPM fans | Most builds |
-| 21–30 | High | High-RPM fans | Maximum cooling, loud |
+| FPI   | Density | Fan Required    | Use Case                      |
+| ----- | ------- | --------------- | ----------------------------- |
+| 12–16 | Low     | Low-RPM fans    | Quiet builds, large radiators |
+| 17–20 | Medium  | Medium-RPM fans | Most builds                   |
+| 21–30 | High    | High-RPM fans   | Maximum cooling, loud         |
 
-Low-FPI radiators (12–16 FPI) perform better with low-RPM fans because the airflow can penetrate
-the fin stack more easily. High-FPI radiators require high-static-pressure fans to push air through
-the dense fin stack, which generates more noise.
+Low-FPI radiators (12–16 FPI) perform better with low-RPM fans because the airflow can penetrate the
+fin stack more easily. High-FPI radiators require high-static-pressure fans to push air through the
+dense fin stack, which generates more noise.
 
 ### Cross-Flow vs. Down-Flow Radiator Mounting
 
-| Mounting | Airflow | Thermals | Tube Routing | Use Case |
-|----------|---------|----------|-------------|----------|
-| Top exhaust | Bottom to top | Good | Down and over | Standard |
-| Top intake | Top to bottom | Slightly worse | Down and over | Positive pressure, dust management |
-| Front intake | Front to back | Good | Side and up | Standard |
-| Side mount | Horizontal | Variable | Side | Specialty cases |
+| Mounting     | Airflow       | Thermals       | Tube Routing  | Use Case                           |
+| ------------ | ------------- | -------------- | ------------- | ---------------------------------- |
+| Top exhaust  | Bottom to top | Good           | Down and over | Standard                           |
+| Top intake   | Top to bottom | Slightly worse | Down and over | Positive pressure, dust management |
+| Front intake | Front to back | Good           | Side and up   | Standard                           |
+| Side mount   | Horizontal    | Variable       | Side          | Specialty cases                    |
 
 ## Custom Loop Design Considerations
 
@@ -607,8 +602,8 @@ Before purchasing components, plan the loop:
 1. **Calculate total thermal load:** Sum the TDP of all components (CPU + GPU + any additional
    blocks). This determines the radiator capacity needed.
 2. **Determine radiator capacity:** A general guideline is 120 mm of radiator per 100 W of heat
-   load. For a 250 W CPU + 350 W GPU = 600 W total, you need approximately 720 mm of radiator
-   (a 360 mm + 360 mm configuration).
+   load. For a 250 W CPU + 350 W GPU = 600 W total, you need approximately 720 mm of radiator (a 360
+   mm + 360 mm configuration).
 3. **Choose tube routing:** Minimize bends and tube length. Every 90-degree bend adds flow
    restriction.
 4. **Plan drain points:** Include a drain port at the lowest point of the loop for easy coolant
@@ -619,50 +614,50 @@ Before purchasing components, plan the loop:
 - **Minimize tube length.** Longer tubes add flow restriction and reduce flow rate.
 - **Avoid sharp bends.** Use 45-degree fittings instead of two 90-degree fittings.
 - **Route tubes away from heat sources** (VRMs, GPU backplate, motherboard chipset).
-- **Leave slack for maintenance.** Do not route tubes so tightly that removing a component
-  requires draining the loop.
-- **Use consistent tube material.** Mixing PETG and acrylic rigid tubing is fine, but do not
-  mix soft tubing and rigid tubing in the same run.
+- **Leave slack for maintenance.** Do not route tubes so tightly that removing a component requires
+  draining the loop.
+- **Use consistent tube material.** Mixing PETG and acrylic rigid tubing is fine, but do not mix
+  soft tubing and rigid tubing in the same run.
 
 ### Coolant Maintenance Schedule
 
-| Maintenance Task | Frequency | Notes |
-|-----------------|-----------|-------|
-| Check coolant level | Monthly | Top off if below minimum |
-| Check for discoloration/debris | Monthly | Cloudy or discolored coolant needs replacement |
-| Clean radiator fins | Quarterly | Use compressed air or soft brush |
-| Replace coolant | 12–18 months | Flush with distilled water before refilling |
-| Replace soft tubing | 24–36 months | PETG/acrylic rigid tubing does not need replacement |
-| Inspect blocks for corrosion | Annually | Remove blocks and inspect interior surfaces |
-| Clean pump/reservoir | Annually | Remove debris from pump impeller |
+| Maintenance Task               | Frequency    | Notes                                               |
+| ------------------------------ | ------------ | --------------------------------------------------- |
+| Check coolant level            | Monthly      | Top off if below minimum                            |
+| Check for discoloration/debris | Monthly      | Cloudy or discolored coolant needs replacement      |
+| Clean radiator fins            | Quarterly    | Use compressed air or soft brush                    |
+| Replace coolant                | 12–18 months | Flush with distilled water before refilling         |
+| Replace soft tubing            | 24–36 months | PETG/acrylic rigid tubing does not need replacement |
+| Inspect blocks for corrosion   | Annually     | Remove blocks and inspect interior surfaces         |
+| Clean pump/reservoir           | Annually     | Remove debris from pump impeller                    |
 
 ### Water Block Selection
 
-| Block Type | Restriction | Cooling Performance | Compatibility |
-|-----------|-------------|--------------------|---------------|
-| Full-cover GPU | High | Excellent | GPU-specific |
-| CPU block (universal) | Moderate | Good | Socket-specific |
-| Monoblock (CPU + VRM) | Moderate | Excellent | Motherboard-specific |
-| RAM block | Low | Minimal | DIMM-specific |
+| Block Type            | Restriction | Cooling Performance | Compatibility        |
+| --------------------- | ----------- | ------------------- | -------------------- |
+| Full-cover GPU        | High        | Excellent           | GPU-specific         |
+| CPU block (universal) | Moderate    | Good                | Socket-specific      |
+| Monoblock (CPU + VRM) | Moderate    | Excellent           | Motherboard-specific |
+| RAM block             | Low         | Minimal             | DIMM-specific        |
 
-Full-cover GPU blocks cool the GPU die, VRAM, and VRMs. They are the most effective but are
-specific to each GPU model. When upgrading your GPU, you need a new block.
+Full-cover GPU blocks cool the GPU die, VRAM, and VRMs. They are the most effective but are specific
+to each GPU model. When upgrading your GPU, you need a new block.
 
 ## Case Airflow Simulation
 
 ### Pressure Differential Analysis
 
-Case airflow is driven by the pressure differential between the inside and outside of the case.
-The net pressure depends on the fan configuration:
+Case airflow is driven by the pressure differential between the inside and outside of the case. The
+net pressure depends on the fan configuration:
 
 $$
 \Delta P = \sum P_{intake} - \sum P_{exhaust}
 $$
 
-- $\Delta P \gt 0$: Positive pressure. Air enters through filtered intakes, exits through
-  unfiltered exhausts. Dust management is better.
-- $\Delta P \lt 0$: Negative pressure. Air enters through unfiltered gaps, exits through
-  exhausts. Dust accumulates everywhere.
+- $\Delta P \gt 0$: Positive pressure. Air enters through filtered intakes, exits through unfiltered
+  exhausts. Dust management is better.
+- $\Delta P \lt 0$: Negative pressure. Air enters through unfiltered gaps, exits through exhausts.
+  Dust accumulates everywhere.
 - $\Delta P \approx 0$: Balanced pressure. Equal intake and exhaust. Good compromise.
 
 ### Measuring Case Airflow
@@ -674,6 +669,7 @@ $$
 $$
 
 Where:
+
 - $\dot{m}$ is the mass flow rate (kg/s)
 - $Q$ is the total heat load (W)
 - $c_p$ is the specific heat of air (1005 J/kg·K)
@@ -685,8 +681,8 @@ $$
 \dot{m} = \frac{500}{1005 \times 10} = 0.050 \mathrm{ kg/s} \approx 150 \mathrm{ CFM}
 $$
 
-If your total fan capacity (intake + exhaust) is less than 150 CFM, the case will have
-positive pressure (air cannot exhaust fast enough), and internal temperatures will rise.
+If your total fan capacity (intake + exhaust) is less than 150 CFM, the case will have positive
+pressure (air cannot exhaust fast enough), and internal temperatures will rise.
 
 ### Fan Placement Optimization
 
@@ -701,18 +697,18 @@ Bottom: 1x 120mm intake (filtered)     → GPU intake (if PSU shroud allows)
 
 1. Bottom intake fans should have dust filters.
 2. Rear exhaust should be directly behind the CPU cooler.
-3. Top exhaust fans should be offset from the CPU cooler to avoid pulling CPU exhaust back
-   into the case.
-4. Do not create competing airflow paths (e.g., front intake blowing directly against top
-   exhaust pulling in the same direction).
+3. Top exhaust fans should be offset from the CPU cooler to avoid pulling CPU exhaust back into the
+   case.
+4. Do not create competing airflow paths (e.g., front intake blowing directly against top exhaust
+   pulling in the same direction).
 
 ## Thermal Interface for GPUs
 
 ### GPU Direct Die vs. IHS
 
 Some GPUs (NVIDIA Founders Edition RTX 30/40 series) use a vapor chamber cold plate that makes
-direct contact with the GPU die. Others (most custom board partner cards) use a traditional
-copper IHS (Integrated Heat Spreader) soldered to the die.
+direct contact with the GPU die. Others (most custom board partner cards) use a traditional copper
+IHS (Integrated Heat Spreader) soldered to the die.
 
 - **Direct die contact:** Lower thermal resistance but more fragile. Thermal paste is applied
   directly to the bare die.
@@ -724,96 +720,94 @@ GPU memory and VRM areas use thermal pads (not paste). When repasting a GPU:
 
 1. Measure the existing pad thickness with calipers (typically 1.0–2.0 mm).
 2. Replace with pads of the exact same thickness. Thicker pads make better contact but increase
-  thermal resistance.
+   thermal resistance.
 3. Use high-quality pads (Thermalright, Fujipoly). Gelid GP-Extreme is a popular budget option.
 4. Ensure pads cover the entire contact area with no gaps.
 
 ### VRAM Thermal Considerations
 
-GDDR6/GDDR6X memory modules generate 0.5–1.0 W each. With 12–24 modules on a high-end GPU,
-VRAM contributes 6–24 W of heat. Inadequate VRAM cooling can cause memory clock throttling
-even when the GPU core temperature is acceptable.
+GDDR6/GDDR6X memory modules generate 0.5–1.0 W each. With 12–24 modules on a high-end GPU, VRAM
+contributes 6–24 W of heat. Inadequate VRAM cooling can cause memory clock throttling even when the
+GPU core temperature is acceptable.
 
 ## Environmental Factors
 
 ### Ambient Temperature Impact
 
-CPU temperature is the sum of the ambient temperature and the thermal rise from the CPU to
-ambient:
+CPU temperature is the sum of the ambient temperature and the thermal rise from the CPU to ambient:
 
 $$
 T_{CPU} = T_{ambient} + \Delta T_{CPU-ambient}
 $$
 
-If your room is 30 °C instead of 20 °C, your CPU will run 10 °C hotter for the same workload.
-This is significant — a CPU that runs at 75 °C in a 20 °C room will hit 85 °C in a 30 °C room.
+If your room is 30 °C instead of 20 °C, your CPU will run 10 °C hotter for the same workload. This
+is significant — a CPU that runs at 75 °C in a 20 °C room will hit 85 °C in a 30 °C room.
 
 ### Altitude Effects
 
-At higher altitudes, air density decreases, which reduces the cooling capacity of air-based
-cooling solutions:
+At higher altitudes, air density decreases, which reduces the cooling capacity of air-based cooling
+solutions:
 
-| Altitude | Air Density (vs. sea level) | Cooling Capacity Reduction |
-|----------|---------------------------|---------------------------|
-| 0 m (sea level) | 100% | 0% |
-| 1000 m | 88% | ~12% |
-| 2000 m | 78% | ~22% |
-| 3000 m | 69% | ~31% |
+| Altitude        | Air Density (vs. sea level) | Cooling Capacity Reduction |
+| --------------- | --------------------------- | -------------------------- |
+| 0 m (sea level) | 100%                        | 0%                         |
+| 1000 m          | 88%                         | ~12%                       |
+| 2000 m          | 78%                         | ~22%                       |
+| 3000 m          | 69%                         | ~31%                       |
 
-At 2000 m altitude, your cooling solution is approximately 22% less effective. This means a
-cooler rated for 250 W at sea level can only handle approximately 195 W at 2000 m. Plan
-accordingly if you live at high altitude.
+At 2000 m altitude, your cooling solution is approximately 22% less effective. This means a cooler
+rated for 250 W at sea level can only handle approximately 195 W at 2000 m. Plan accordingly if you
+live at high altitude.
 
 ## Detailed Fan Analysis
 
 ### Fan Curves and PWM Control
 
-PWM (Pulse Width Modulation) controls fan speed by rapidly switching the power on and off. The
-duty cycle determines the percentage of time the power is on:
+PWM (Pulse Width Modulation) controls fan speed by rapidly switching the power on and off. The duty
+cycle determines the percentage of time the power is on:
 
-| Duty Cycle | Effective Voltage (12V fan) | Approximate RPM |
-|-----------|---------------------------|-----------------|
-| 0% | 0 V | 0 RPM (stopped) |
-| 25% | 3 V | 25–30% of max RPM |
-| 50% | 6 V | 50–55% of max RPM |
-| 75% | 9 V | 75–80% of max RPM |
-| 100% | 12 V | 100% RPM |
+| Duty Cycle | Effective Voltage (12V fan) | Approximate RPM   |
+| ---------- | --------------------------- | ----------------- |
+| 0%         | 0 V                         | 0 RPM (stopped)   |
+| 25%        | 3 V                         | 25–30% of max RPM |
+| 50%        | 6 V                         | 50–55% of max RPM |
+| 75%        | 9 V                         | 75–80% of max RPM |
+| 100%       | 12 V                        | 100% RPM          |
 
-Modern 4-pin PWM fans maintain a constant 12V supply and use the PWM signal to control the fan
-motor directly. This provides smoother speed control and lower minimum speeds than 3-pin DC
-fans.
+Modern 4-pin PWM fans maintain a constant 12V supply and use the PWM signal to control the fan motor
+directly. This provides smoother speed control and lower minimum speeds than 3-pin DC fans.
 
 ### Fan Noise Spectrum
 
 Fan noise has multiple components:
 
-1. **Broadband noise (airflow):** The sound of air moving through the fan blades and heatsink
-   fins. This increases with RPM and airflow volume.
+1. **Broadband noise (airflow):** The sound of air moving through the fan blades and heatsink fins.
+   This increases with RPM and airflow volume.
 2. **Tonal noise (blade pass frequency):** A tonal component at the blade pass frequency (BPF):
 
 $$
 BPF = RPM \times N_{blades} / 60
 $$
 
-For a 2000 RPM fan with 9 blades, BPF = 300 Hz. This is in the range where human hearing is
-most sensitive (200–4000 Hz), making tonal noise particularly noticeable.
+For a 2000 RPM fan with 9 blades, BPF = 300 Hz. This is in the range where human hearing is most
+sensitive (200–4000 Hz), making tonal noise particularly noticeable.
 
-3. **Motor noise (bearing):** High-frequency whine from the bearing. FDB bearings produce the
-   least motor noise.
+3. **Motor noise (bearing):** High-frequency whine from the bearing. FDB bearings produce the least
+   motor noise.
 4. **Vibration noise:** Low-frequency noise from fan vibration transmitted through the case.
    Decoupled mounts (rubber grommets, silicone pads) reduce this.
 
 ### Acoustic Optimization Techniques
 
-1. **Use larger fans at lower RPM.** Two 140 mm fans at 800 RPM move the same air as one 120 mm
-   fan at 1600 RPM, but at significantly lower noise.
+1. **Use larger fans at lower RPM.** Two 140 mm fans at 800 RPM move the same air as one 120 mm fan
+   at 1600 RPM, but at significantly lower noise.
 2. **Enable fan curves.** Never run all fans at 100%. Match fan speed to actual cooling demand.
 3. **Decouple fans from the case.** Use rubber mounts or silicone grommets to prevent vibration
    transmission.
 4. **Use undervolting on CPU and GPU.** Lower voltage = lower heat = lower fan speed = lower noise.
 5. **Cable management.** Cables that obstruct airflow force fans to work harder, increasing noise.
-6. **Anti-vibration pads.** Place the case on anti-vibration pads if it is on a hard surface
-   (desk, floor).
+6. **Anti-vibration pads.** Place the case on anti-vibration pads if it is on a hard surface (desk,
+   floor).
 
 ## Thermal Design for Small Form Factor
 
@@ -821,8 +815,8 @@ most sensitive (200–4000 Hz), making tonal noise particularly noticeable.
 
 Small form factor (SFF) builds face unique thermal challenges:
 
-1. **Limited cooler height.** Many SFF cases restrict cooler height to 40–70 mm, eliminating
-   tower coolers.
+1. **Limited cooler height.** Many SFF cases restrict cooler height to 40–70 mm, eliminating tower
+   coolers.
 2. **Limited fan count.** SFF cases typically have 1–2 fan mounts, reducing airflow.
 3. **Higher component density.** Components are closer together, increasing internal temperatures.
 4. **Constrained airflow paths.** Shorter distance between intake and exhaust means air does not
@@ -830,17 +824,17 @@ Small form factor (SFF) builds face unique thermal challenges:
 
 ### SFF Cooling Strategies
 
-| Strategy | Description | Thermals | Noise |
-|----------|-------------|----------|-------|
-| Low-profile air cooler | Noctua NH-L9a-AM4, be quiet! LP | Moderate | Low |
-| AIO (120mm or 240mm) | Compact liquid cooling | Good | Moderate |
-| Desk-facing case | Case acts as convection surface | Good | Very Low |
-| Ducted airflow | Direct intake to CPU cooler | Good | Low |
+| Strategy               | Description                     | Thermals | Noise    |
+| ---------------------- | ------------------------------- | -------- | -------- |
+| Low-profile air cooler | Noctua NH-L9a-AM4, be quiet! LP | Moderate | Low      |
+| AIO (120mm or 240mm)   | Compact liquid cooling          | Good     | Moderate |
+| Desk-facing case       | Case acts as convection surface | Good     | Very Low |
+| Ducted airflow         | Direct intake to CPU cooler     | Good     | Low      |
 
 ### SFF-Specific Considerations
 
-- **Top-mount AIOs** in SFF cases should use intake airflow (pulling cool air from outside) for
-  the best thermals, even though this creates positive pressure.
+- **Top-mount AIOs** in SFF cases should use intake airflow (pulling cool air from outside) for the
+  best thermals, even though this creates positive pressure.
 - **Low-profile coolers** rely heavily on case airflow because their fin area is small. Ensure the
   case has good intake airflow.
 - **GPU blower-style coolers** exhaust heat directly out of the case, which is beneficial in SFF
@@ -869,11 +863,11 @@ echo 100 | sudo tee /sys/class/thermal/cooling_device0/cur_state
 
 ACPI defines thermal zones with trip points that trigger cooling actions:
 
-| Trip Point Type | Action | Typical Setting |
-|----------------|--------|----------------|
-| Passive | Throttle CPU (reduce P-state) | 85 °C |
-| Active (fan) | Increase fan speed | 60 °C, 70 °C, 80 °C |
-| Critical | Emergency shutdown | 100 °C |
+| Trip Point Type | Action                        | Typical Setting     |
+| --------------- | ----------------------------- | ------------------- |
+| Passive         | Throttle CPU (reduce P-state) | 85 °C               |
+| Active (fan)    | Increase fan speed            | 60 °C, 70 °C, 80 °C |
+| Critical        | Emergency shutdown            | 100 °C              |
 
 ### Cross-Platform Monitoring Script
 
@@ -911,33 +905,33 @@ When temperatures are higher than expected, check in this order:
    covers the entire IHS with a thin, even layer. Gaps or thick spots indicate poor contact.
 2. **Check mounting pressure.** The cooler should be firmly mounted with even pressure. Loose
    mounting creates air gaps that dramatically increase thermal resistance.
-3. **Verify fan operation.** Confirm all fans are spinning and in the correct direction. A
-   reversed fan (exhaust blowing in) can raise temperatures by 10–20 °C.
+3. **Verify fan operation.** Confirm all fans are spinning and in the correct direction. A reversed
+   fan (exhaust blowing in) can raise temperatures by 10–20 °C.
 4. **Check case airflow.** Ensure intake and exhaust paths are unobstructed. Remove side panels
    temporarily to see if temperatures drop significantly (indicating a case airflow problem).
 5. **Check ambient temperature.** A hot room directly raises all component temperatures.
-6. **Verify TIM quality.** Some thermal pastes degrade quickly (after 6 months) or were
-   improperly applied at the factory.
+6. **Verify TIM quality.** Some thermal pastes degrade quickly (after 6 months) or were improperly
+   applied at the factory.
 
 ### Uneven Core Temperatures
 
-On multi-core CPUs, it is normal for individual core temperatures to vary by 5–15 °C. The
-hottest core is typically the one closest to the VRMs or the one with the highest sustained
-load. However, if the variance exceeds 20 °C, check:
+On multi-core CPUs, it is normal for individual core temperatures to vary by 5–15 °C. The hottest
+core is typically the one closest to the VRMs or the one with the highest sustained load. However,
+if the variance exceeds 20 °C, check:
 
-1. **Cooler mounting.** Uneven mounting pressure causes one side of the IHS to have worse
-   contact than the other.
+1. **Cooler mounting.** Uneven mounting pressure causes one side of the IHS to have worse contact
+   than the other.
 2. **Thermal paste application.** An uneven application creates thick spots with higher thermal
    resistance.
-3. **Silicon quality.** Some cores simply run hotter due to manufacturing variance. This is
-   normal and cannot be fixed.
+3. **Silicon quality.** Some cores simply run hotter due to manufacturing variance. This is normal
+   and cannot be fixed.
 
 ### Temperature Spikes and Transients
 
-Modern CPUs can spike to high temperatures (20–30 °C above average) for brief periods during
-sudden load transitions. These spikes are caused by the CPU ramping from a low P-state to a high
-P-state before the cooling system can respond. They are normal and not cause for concern as long
-as average temperatures remain within safe limits.
+Modern CPUs can spike to high temperatures (20–30 °C above average) for brief periods during sudden
+load transitions. These spikes are caused by the CPU ramping from a low P-state to a high P-state
+before the cooling system can respond. They are normal and not cause for concern as long as average
+temperatures remain within safe limits.
 
 :::
 

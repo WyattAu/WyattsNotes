@@ -123,11 +123,9 @@ void utf8_code_point_iteration() {
 }
 ```
 
-:::info
-Before C++20, `u8` string literals produced `char` arrays. In C++20, they produce `char8_t`
+:::info Before C++20, `u8` string literals produced `char` arrays. In C++20, they produce `char8_t`
 arrays. This is a **breaking change** if your code passed `u8"..."` to APIs expecting `const char*`.
-Use `-fno-char8_t` on GCC/Clang to revert to the C++17 behavior during migration.
-:::
+Use `-fno-char8_t` on GCC/Clang to revert to the C++17 behavior during migration. :::
 
 ### Unicode Text Processing Challenges
 
@@ -146,12 +144,10 @@ A **grapheme cluster** is the smallest unit of text that a user perceives as a s
 family emoji (U+1F468 U+200D U+1F469 U+200D U+1F467 U+200D U+1F466) is encoded as **7 code points**
 with zero-width joiners between them.
 
-:::warning
-`std::u8string::size()` returns the **byte count**, not the character count, code point
+:::warning `std::u8string::size()` returns the **byte count**, not the character count, code point
 count, or grapheme cluster count. There is no standard library function to count code points or
 grapheme clusters. For production Unicode text processing, use a library like ICU, libunifex, or
-`std::text` (proposed for standardization).
-:::
+`std::text` (proposed for standardization). :::
 
 #### String Length and Iteration
 
@@ -217,15 +213,13 @@ void unicode_sorting_problem() {
 }
 ```
 
-:::tip
-For production Unicode-aware applications:
+:::tip For production Unicode-aware applications:
 
 - **Case conversion:** Use ICU (`u_strToUpper`), or the `utf8proc` library.
 - **Collation/sorting:** Use ICU's `Collator` with the appropriate locale.
 - **Normalization:** Use ICU or `utf8proc` to normalize strings to NFC or NFD before comparison.
 - **Text segmentation:** Use ICU's `BreakIterator` for grapheme cluster, word, and sentence
-boundaries.
-:::
+  boundaries. :::
 
 ### Encoding in Stream I/O
 
@@ -269,12 +263,10 @@ void write_utf8_file(const std::filesystem::path& path, std::string_view content
 }
 ```
 
-:::info
-On Linux and macOS, the default file encoding is UTF-8, so opening a file in text mode
+:::info On Linux and macOS, the default file encoding is UTF-8, so opening a file in text mode
 (`std::ios::in` without `std::ios::binary`) will correctly read and write UTF-8 text. On Windows,
 text mode performs CRLF ↔ LF translation, which corrupts binary data but is harmless for UTF-8 text
-(unless the text contains lone `0x0A` or `0x0D` bytes that are not line endings).
-:::
+(unless the text contains lone `0x0A` or `0x0D` bytes that are not line endings). :::
 
 ### UTF-16 and UTF-32 String Literals
 
@@ -403,12 +395,10 @@ void transcoding_demo() {
 }
 ```
 
-:::warning
-The transcoding functions above perform **no validation** of code point ranges. A
+:::warning The transcoding functions above perform **no validation** of code point ranges. A
 production implementation must reject overlong encodings (e.g., encoding `U+0000` as `0xC0 0x80`),
 surrogate code points (`U+D800..U+DFFF`), and code points exceeding `U+10FFFF`. The ICU library's
-`ucnv_convert` or the `utf8proc` library handle all these cases correctly.
-:::
+`ucnv_convert` or the `utf8proc` library handle all these cases correctly. :::
 
 ### Overlong Encodings and Security Implications
 
@@ -482,12 +472,10 @@ void normalization_pitfall() {
 }
 ```
 
-:::warning
-Always normalize strings to a consistent form (typically NFC) before comparing, hashing,
+:::warning Always normalize strings to a consistent form (typically NFC) before comparing, hashing,
 or using as map keys. Two strings that display identically may have different byte representations
 if they differ in normalization form. This is a common source of bugs in database lookups, file
-search, and authentication systems.
-:::
+search, and authentication systems. :::
 
 ### BOM (Byte Order Mark) Handling
 

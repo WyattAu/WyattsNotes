@@ -72,10 +72,8 @@ Clearly $f \circ g \neq g \circ f$.
 
 </details>
 
-:::warning
-When computing $f \circ g$, always apply $g$ first, then $f$. Think of it as reading
-right to left: $(f \circ g)(x) = f(g(x))$.
-:::
+:::warning When computing $f \circ g$, always apply $g$ first, then $f$. Think of it as reading
+right to left: $(f \circ g)(x) = f(g(x))$. :::
 
 <hr />
 
@@ -244,8 +242,7 @@ $y = f(ax)$, the same $y$-value occurs when $ax = x_0$, i.e., $x = \frac{x_0}{a}
 $(\frac{x_0}{a}, y_0)$ is on the new graph — a horizontal stretch by factor $\frac{1}{a}$.
 $\blacksquare$
 
-:::warning
-Horizontal transformations are "backwards": $f(x - a)$ shifts **right** (not left), and
+:::warning Horizontal transformations are "backwards": $f(x - a)$ shifts **right** (not left), and
 $f(ax)$ stretches by $\frac{1}{a}$ (not $a$). This is the single most common error in this topic.
 :::
 
@@ -258,10 +255,8 @@ $$y = af(x - p) + q$$
 represents: horizontal translation by $p$ (right), vertical stretch by factor $a$, vertical
 translation by $q$ (up).
 
-:::tip
-Apply horizontal transformations first (inside the function), then vertical transformations
-(outside). The order inside-out matters.
-:::
+:::tip Apply horizontal transformations first (inside the function), then vertical transformations
+(outside). The order inside-out matters. :::
 
 <hr />
 
@@ -316,8 +311,8 @@ $g(-x) = \cos((-x)^2) = \cos(x^2) = g(x)$. So $g$ is even.
 _Proof._ For $(g \circ f)(x) = g(f(x))$ to be defined, we need $x \in \mathrm{dom}(f)$ (so $f(x)$
 exists) AND $f(x) \in \mathrm{dom}(g)$ (so $g$ can accept $f(x)$ as input). $\blacksquare$
 
-The range of $g \circ f$ is the image under $g$ of the set $\{f(x) : x \in \mathrm{dom}(g \circ f)\}$,
-which is a subset of the range of $g$.
+The range of $g \circ f$ is the image under $g$ of the set
+$\{f(x) : x \in \mathrm{dom}(g \circ f)\}$, which is a subset of the range of $g$.
 
 <details>
 <summary>Example</summary>
@@ -425,10 +420,8 @@ vertical transformations interact differently.
 2. Apply vertical transformations **second**: vertical stretch by $|a|$, reflection if $a < 0$, then
    vertical shift $d$.
 
-:::warning
-Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$, NOT $-c$. The stretch
-"absorbs" part of the shift. This is the single most common error in transformation problems.
-:::
+:::warning Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$, NOT $-c$. The stretch
+"absorbs" part of the shift. This is the single most common error in transformation problems. :::
 
 <details>
 <summary>Example</summary>

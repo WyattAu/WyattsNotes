@@ -45,13 +45,11 @@ method definitions, constant pool entries), static fields, and runtime constant 
 Unlike PermGen, Metaspace uses native memory and can grow dynamically (bounded by
 `-XX:MaxMetaspaceSize`).
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §2.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-2.html#jls-2.5) defines the
 runtime data areas.
 [JLS §17.4](https://docs.oracle.com/javase/specs/jls/se21/html/jls-17.html#jls-17.4) specifies the
-memory model, which governs how threads interact through shared memory.
-:::
+memory model, which governs how threads interact through shared memory. :::
 
 ### Where Variables Live
 
@@ -86,13 +84,11 @@ directly on the stack or within object layouts on the heap. Primitives have no m
 | `char`    |          16 |            2 | `'\u0000'` | 0 to 65,535 (UTF-16 code unit) |
 | `boolean` |           1 |            ~ | `false`    | `true` or `false`              |
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §4.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2) defines primitive
 types and their values.
 [JLS §4.2.3](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2.3) specifies
-floating-point types and IEEE 754 conformance.
-:::
+floating-point types and IEEE 754 conformance. :::
 
 ### Integral Types
 
@@ -147,10 +143,8 @@ System.out.println(0.1 + 0.2);     // 0.30000000000000004
 System.out.println(0.1 + 0.2 == 0.3); // false
 ```
 
-:::warning
-Never use `==` or `!=` to compare floating-point values. Use `Math.abs(a - b) < epsilon`
-or `Double.compare(a, b)` instead. For monetary calculations, always use `BigDecimal`.
-:::
+:::warning Never use `==` or `!=` to compare floating-point values. Use `Math.abs(a - b) < epsilon`
+or `Double.compare(a, b)` instead. For monetary calculations, always use `BigDecimal`. :::
 
 ```java
 BigDecimal price = new BigDecimal("19.99");
@@ -233,11 +227,9 @@ System.out.println(c.equals(d)); // true  (same value)
 // The cache boundary can be adjusted with -XX:AutoBoxCacheMax=<size>
 ```
 
-:::warning
-**Always use `.equals()` to compare wrapper types.** Using `==` compares object identity,
+:::warning **Always use `.equals()` to compare wrapper types.** Using `==` compares object identity,
 not value. The cache makes `==` work for small values by coincidence, creating subtle bugs that only
-appear in production with larger values.
-:::
+appear in production with larger values. :::
 
 ### Performance Implications of Autoboxing
 
@@ -286,10 +278,8 @@ Integer boxed = 42;
 overloaded(boxed);  // prints "Integer" — reference matches reference
 ```
 
-:::danger
-Rule of thumb: use primitives everywhere unless you need `null` (to represent "no value")
-or you are working with a generic API that requires reference types.
-:::
+:::danger Rule of thumb: use primitives everywhere unless you need `null` (to represent "no value")
+or you are working with a generic API that requires reference types. :::
 
 ## Strings
 
@@ -378,14 +368,12 @@ System.out.println(a == f);        // false
 System.out.println(a.equals(f));   // true
 ```
 
-:::info
-JLS Reference
+:::info JLS Reference
 [JLS §3.10.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-3.html#jls-3.10.5) defines
 string literals.
 [JLS §5.1.7](https://docs.oracle.com/javase/specs/jls/se21/html/jls-5.html#jls-5.1.7) specifies
 boxing conversion, including the requirement that strings computed from constant expressions are
-interned.
-:::
+interned. :::
 
 ### Design Decision: Why the String Pool Exists
 
@@ -417,12 +405,10 @@ String result = sb.toString();
 // (which is rare — typically you'd use a local variable)
 ```
 
-:::warning
-**Never use `StringBuffer` in new code** unless you have a specific requirement for
+:::warning **Never use `StringBuffer` in new code** unless you have a specific requirement for
 thread-safe mutable string building (which is almost never). The synchronization overhead is
 unnecessary in the vast majority of use cases, and `StringBuffer` is essentially a legacy class
-retained for backward compatibility.
-:::
+retained for backward compatibility. :::
 
 ## Arrays
 
@@ -459,12 +445,10 @@ numbers[0] = 3.14;                     // ArrayStoreException at runtime!
 // The compile-time type says "Number", but the runtime type says "Integer[]"
 ```
 
-:::danger
-Array covariance breaks type safety. The JVM inserts an **array store check** at runtime
+:::danger Array covariance breaks type safety. The JVM inserts an **array store check** at runtime
 on every assignment to an array element to prevent type corruption. This check has a small but real
 performance cost. Generic collections (`List<Integer>`) are **invariant**, which is type-safe at
-compile time and requires no runtime checks.
-:::
+compile time and requires no runtime checks. :::
 
 ### Arrays vs ArrayList
 
@@ -520,11 +504,9 @@ var boxed = (Integer) 42; // inferred: Integer
 // var is strictly for local variables with initializers
 ```
 
-:::warning
-Do not use `var` when the type is not obvious from the right-hand side. The goal is
+:::warning Do not use `var` when the type is not obvious from the right-hand side. The goal is
 readability, not brevity. Prefer explicit types when the initializer is complex, when the type
-carries important semantic information, or when the inferred type might be surprising.
-:::
+carries important semantic information, or when the inferred type might be surprising. :::
 
 ## Type Promotion and Casting
 
@@ -561,12 +543,10 @@ char c = 'A';
 int code = c + 1;          // code = 66
 ```
 
-:::warning
-**Surprising widening**: `long` to `float` is a widening conversion per the JLS, but a
+:::warning **Surprising widening**: `long` to `float` is a widening conversion per the JLS, but a
 64-bit `long` has more precision than a 32-bit `float` (which has only 23 fraction bits). A large
 `long` value will lose low-order bits when converted to `float`. This is technically legal but often
-surprising.
-:::
+surprising. :::
 
 ### Explicit Casting (Narrowing)
 
@@ -684,11 +664,9 @@ if (obj instanceof String s && !s.isEmpty()) {
 }
 ```
 
-:::info
-The scope rules for pattern variables are defined by the "conditional AND" short-circuit
+:::info The scope rules for pattern variables are defined by the "conditional AND" short-circuit
 semantics. If `obj instanceof String s` is `false`, the right side of `&&` is never evaluated, so
-`s` cannot be used unsafely. The compiler verifies this using a concept called "flow analysis."
-:::
+`s` cannot be used unsafely. The compiler verifies this using a concept called "flow analysis." :::
 
 ## Records (Java 14+)
 
@@ -739,8 +717,7 @@ record NamedPoint(int x, int y, String name) implements Comparable<NamedPoint> {
 }
 ```
 
-:::warning
-Records cannot extend other classes (they implicitly extend `java.lang.Record`). Their
+:::warning Records cannot extend other classes (they implicitly extend `java.lang.Record`). Their
 fields are always `final`. Records are best suited for data carriers where immutability and
 structural equality are desired. They are not a replacement for mutable domain objects or entities.
 :::
@@ -859,12 +836,10 @@ ComplexNumber[] points = new ComplexNumber[1000];
 // vs. reference array: [ptr0, ptr1, ...] + 1000 separate heap objects
 ```
 
-:::info
-Value types are still a preview feature and the syntax is evolving. As of Java 23, the
+:::info Value types are still a preview feature and the syntax is evolving. As of Java 23, the
 feature is available behind `--enable-preview`. The exact syntax and semantics may change in future
 releases. The core idea remains: providing user-defined types with inline layout and value-based
-equality, eliminating the performance penalty of object identity.
-:::
+equality, eliminating the performance penalty of object identity. :::
 
 ### Identity vs Value Semantics
 

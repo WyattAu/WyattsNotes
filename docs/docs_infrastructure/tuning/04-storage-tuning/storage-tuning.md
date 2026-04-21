@@ -126,11 +126,9 @@ dramatically as data must be folded from SLC into the TLC/QLC area.
 | WD Black SN850X 2TB       | ~300 GB        | 6,600 MB/s      | 1,500 MB/s |
 | Crucial P3 Plus 2TB (QLC) | ~160 GB        | 5,000 MB/s      | 200 MB/s   |
 
-:::warning
-QLC SSDs with full SLC caches can experience catastrophic write speed drops — from 5,000
+:::warning QLC SSDs with full SLC caches can experience catastrophic write speed drops — from 5,000
 MB/s to under 200 MB/s. This is a fundamental limitation of QLC NAND, not a defect. Avoid QLC SSDs
-for write-heavy workloads (video editing, database, OS drive).
-:::
+for write-heavy workloads (video editing, database, OS drive). :::
 
 ### Wear Leveling
 
@@ -190,10 +188,8 @@ sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
 ```
 
-:::warning
-On ZFS, do not use `fstrim`. ZFS handles discard internally and the `autotrim` pool
-property controls TRIM behavior.
-:::
+:::warning On ZFS, do not use `fstrim`. ZFS handles discard internally and the `autotrim` pool
+property controls TRIM behavior. :::
 
 ### Over-Provisioning
 
@@ -248,11 +244,9 @@ ZFS eliminates many traditional RAID problems:
 - Self-healing repairs corrupted data from parity/mirror copies
 - Scrubbing proactively verifies all data integrity
 
-:::warning
-Never use hardware RAID with ZFS. ZFS needs direct access to individual disks to manage
+:::warning Never use hardware RAID with ZFS. ZFS needs direct access to individual disks to manage
 the storage pool. Hardware RAID hides the disks behind a virtual block device, which prevents ZFS
-from performing its error detection and correction.
-:::
+from performing its error detection and correction. :::
 
 ---
 
@@ -489,13 +483,13 @@ graph LR
     H --> I[NAND Flash]
 ```
 
-Each Submission Queue (SQ) and Completion Queue (CQ) pair is associated with a processing core.
-This eliminates the lock contention that plagues the single-queue AHCI model:
+Each Submission Queue (SQ) and Completion Queue (CQ) pair is associated with a processing core. This
+eliminates the lock contention that plagues the single-queue AHCI model:
 
 - **SQ (Submission Queue):** Ring buffer where the host posts commands. The host writes command
   entries to the tail of the queue and rings the doorbell register to notify the controller.
-- **CQ (Completion Queue):** Ring buffer where the controller posts completions. The host polls
-  or receives interrupts for completed commands.
+- **CQ (Completion Queue):** Ring buffer where the controller posts completions. The host polls or
+  receives interrupts for completed commands.
 
 Queue depth is configurable per queue, with a maximum of 65,535 entries per queue. Deeper queues
 allow the SSD controller to reorder and optimize I/O more effectively.
@@ -518,18 +512,18 @@ nvme id-ns /dev/nvme0n1
 
 ### NVMe End-to-End Data Protection
 
-NVMe supports optional end-to-end data protection using protection information (PI) appended to
-each logical block:
+NVMe supports optional end-to-end data protection using protection information (PI) appended to each
+logical block:
 
-| PI Type | Size | Protection |
-|---------|------|------------|
-| PI Type 0 | 0 bytes | No protection |
+| PI Type   | Size    | Protection                                            |
+| --------- | ------- | ----------------------------------------------------- |
+| PI Type 0 | 0 bytes | No protection                                         |
 | PI Type 1 | 8 bytes | Guard + Application Tag + Logical Block Reference Tag |
-| PI Type 2 | 4 bytes | Guard + Logical Block Reference Tag |
-| PI Type 3 | 8 bytes | Guard + Application Tag |
+| PI Type 2 | 4 bytes | Guard + Logical Block Reference Tag                   |
+| PI Type 3 | 8 bytes | Guard + Application Tag                               |
 
-Type 1 is the most comprehensive and is recommended for enterprise workloads where data integrity
-is critical.
+Type 1 is the most comprehensive and is recommended for enterprise workloads where data integrity is
+critical.
 
 ## SSD Firmware Management
 
@@ -557,11 +551,9 @@ sudo nvme fw-download /dev/nvme0n1 --fw=/path/to/firmware.bin --save
 - Before initial deployment of a new drive
 - When a security vulnerability is disclosed in the firmware
 
-:::warning
-Firmware updates are irreversible on most drives. A failed firmware update can brick
-the drive. Ensure the update process is not interrupted (connect the drive to a UPS, close all
-applications accessing the drive).
-:::
+:::warning Firmware updates are irreversible on most drives. A failed firmware update can brick the
+drive. Ensure the update process is not interrupted (connect the drive to a UPS, close all
+applications accessing the drive). :::
 
 ## Deep Dive: I/O Scheduler Internals
 
@@ -586,8 +578,8 @@ writes accumulates, the scheduler alternates between read and write batches to p
 
 ### bfq Scheduler
 
-BFQ (Budget Fair Queueing) assigns each process an I/O budget. A process can issue I/O until
-its budget is exhausted, then it must wait for other processes to use their budgets:
+BFQ (Budget Fair Queueing) assigns each process an I/O budget. A process can issue I/O until its
+budget is exhausted, then it must wait for other processes to use their budgets:
 
 - **Budget:** Measured in sectors served. Default is approximately 128 KB per budget slice.
 - **Weighting:** Higher-priority processes get larger budgets (configurable via cgroups).
@@ -728,13 +720,13 @@ fio --name=endurance-test --ioengine=libaio --iodepth=32 --rw=write \
 
 Key metrics to analyze from fio JSON output:
 
-| Metric | Description | Good Value |
-|--------|-------------|------------|
-| iops | I/O operations per second | Workload-dependent |
-| lat_ns | Latency in nanoseconds | p99 &lt; 1ms for NVMe |
-| clat_ns | Completion latency | Lower is better |
-| slat_ns | Submission latency | Should be &lt; 10 $\mu$s |
-| bw | Bandwidth in KB/s | Near theoretical max |
+| Metric   | Description                 | Good Value                                  |
+| -------- | --------------------------- | ------------------------------------------- |
+| iops     | I/O operations per second   | Workload-dependent                          |
+| lat_ns   | Latency in nanoseconds      | p99 &lt; 1ms for NVMe                       |
+| clat_ns  | Completion latency          | Lower is better                             |
+| slat_ns  | Submission latency          | Should be &lt; 10 $\mu$s                    |
+| bw       | Bandwidth in KB/s           | Near theoretical max                        |
 | cpu_util | CPU utilization during test | &lt; 80% (CPU should not be the bottleneck) |
 
 ## Storage Reliability Engineering
@@ -743,11 +735,11 @@ Key metrics to analyze from fio JSON output:
 
 Every storage medium has a specified UBER — the probability of an unrecoverable bit error:
 
-| Medium | UBER | Probability of reading error for 1 TB |
-|--------|------|---------------------------------------|
-| HDD | $10^{-14}$ | ~1 in 9 million full reads |
-| Enterprise SSD | $10^{-17}$ | ~1 in 9 billion full reads |
-| Enterprise NVMe | $10^{-17}$ | ~1 in 9 billion full reads |
+| Medium          | UBER       | Probability of reading error for 1 TB |
+| --------------- | ---------- | ------------------------------------- |
+| HDD             | $10^{-14}$ | ~1 in 9 million full reads            |
+| Enterprise SSD  | $10^{-17}$ | ~1 in 9 billion full reads            |
+| Enterprise NVMe | $10^{-17}$ | ~1 in 9 billion full reads            |
 
 While these numbers seem reassuring, they compound in large-scale deployments:
 
@@ -779,8 +771,8 @@ $$
 \mathrm{Lifespan} = \frac{3000 \times 2 \mathrm{ TB}}{2.0 \times 50 \mathrm{ GB/day}} \approx 164 \mathrm{ years}
 $$
 
-Modern TLC SSDs are extremely durable for typical workloads. QLC SSDs (100–1,000 P/E cycles)
-are the concern — at 500 P/E cycles and 50 GB/day with WAF 2.0:
+Modern TLC SSDs are extremely durable for typical workloads. QLC SSDs (100–1,000 P/E cycles) are the
+concern — at 500 P/E cycles and 50 GB/day with WAF 2.0:
 
 $$
 \mathrm{Lifespan} = \frac{500 \times 2 \mathrm{ TB}}{2.0 \times 50 \mathrm{ GB/day}} \approx 27 \mathrm{ years}
@@ -796,14 +788,14 @@ significantly reduce this.
 Intel Optane DC P5800X and P4800X drives are the gold standard for ZFS SLOG devices due to their
 consistent low latency regardless of workload:
 
-| Drive | Read Latency | Write Latency | Endurance | Capacity |
-|-------|-------------|--------------|-----------|----------|
-| Optane P5800X | 6 $\mu$s | 6 $\mu$s | 100 DWPD | 400 GB–1.6 TB |
-| Samsung PM9A3 | 25 $\mu$s | 45 $\mu$s | 3 DWPD | 960 GB–7.68 TB |
-| Intel P4510 | 40 $\mu$s | 60 $\mu$s | 1 DWPD | 1–8 TB |
+| Drive         | Read Latency | Write Latency | Endurance | Capacity       |
+| ------------- | ------------ | ------------- | --------- | -------------- |
+| Optane P5800X | 6 $\mu$s     | 6 $\mu$s      | 100 DWPD  | 400 GB–1.6 TB  |
+| Samsung PM9A3 | 25 $\mu$s    | 45 $\mu$s     | 3 DWPD    | 960 GB–7.68 TB |
+| Intel P4510   | 40 $\mu$s    | 60 $\mu$s     | 1 DWPD    | 1–8 TB         |
 
-DWPD (Drive Writes Per Day) measures endurance relative to capacity. A 100 DWPD drive can be
-written to 100 times its capacity every day for 5 years.
+DWPD (Drive Writes Per Day) measures endurance relative to capacity. A 100 DWPD drive can be written
+to 100 times its capacity every day for 5 years.
 
 ### L2ARC Sizing Guidelines
 
@@ -811,8 +803,8 @@ The optimal L2ARC size depends on the ARC size and the working set:
 
 - **Minimum useful L2ARC size:** Equal to the ARC size. Smaller L2ARC devices provide minimal
   benefit because the metadata overhead consumes too much of the available space.
-- **Recommended L2ARC size:** 3–10x the ARC size. This provides enough capacity for the L2ARC
-  to store a meaningful portion of the working set that overflows from the ARC.
+- **Recommended L2ARC size:** 3–10x the ARC size. This provides enough capacity for the L2ARC to
+  store a meaningful portion of the working set that overflows from the ARC.
 - **L2ARC for SSD pools:** Generally not recommended. The pool SSDs already provide low-latency
   access. L2ARC adds cost and complexity without significant benefit.
 
@@ -824,8 +816,8 @@ $$
 ARC_{metadata} \approx 70 \mathrm{ bytes} \times \mathrm{L2ARC\_entries}
 $$
 
-For a 1 TB L2ARC with 4 KB average block size, this is approximately 17.5 GB of ARC metadata.
-Ensure you have sufficient RAM to accommodate both the ARC and L2ARC metadata.
+For a 1 TB L2ARC with 4 KB average block size, this is approximately 17.5 GB of ARC metadata. Ensure
+you have sufficient RAM to accommodate both the ARC and L2ARC metadata.
 
 ## Storage Tiering Strategies
 
@@ -855,11 +847,11 @@ graph TD
 ZFS does not have native automatic tiering. You can implement manual tiering with:
 
 1. **Separate pools for each tier** with different storage devices.
-2. **Periodic scripts** that move data between tiers based on access patterns (using `zfs send`
-   and `zfs recv`).
+2. **Periodic scripts** that move data between tiers based on access patterns (using `zfs send` and
+   `zfs recv`).
 3. **L2ARC** as a read cache for the warm tier, backed by the hot tier.
-4. **ZFS special vdevs** for metadata, storing metadata on fast storage while data lives on
-  slower storage.
+4. **ZFS special vdevs** for metadata, storing metadata on fast storage while data lives on slower
+   storage.
 
 ## Power Management for Storage
 
@@ -891,10 +883,8 @@ hdparm -y /dev/sda     # Immediately enter standby
 hdparm -B 127 /dev/sda  # 1 (aggressive) to 255 (disabled)
 ```
 
-:::warning
-Frequent HDD spin-up/spin-down cycles increase wear. Set standby timeout to a
-reasonable value (15–30 minutes) rather than a short interval.
-:::
+:::warning Frequent HDD spin-up/spin-down cycles increase wear. Set standby timeout to a reasonable
+value (15–30 minutes) rather than a short interval. :::
 
 :::
 

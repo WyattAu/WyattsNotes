@@ -276,7 +276,7 @@ When evaluating a source, consider:
 > Source A is valuable because it was written by [person/role] who had direct experience of [event].
 > This means it provides a [first-hand/contemporary] perspective on [specific detail]. However, it
 > is limited because [reason — e.g. it reflects a particular political bias, it was written after >
-> the event, it only represents one viewpoint].
+> > the event, it only represents one viewpoint].
 
 ### Q4 Strategy: Synthesis
 

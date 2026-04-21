@@ -53,6 +53,7 @@ iterations.
 <summary>Example: Convert $1A3_{16}$ to denary</summary>
 
 $$1 \times 16^2 + 10 \times 16^1 + 3 \times 16^0 = 256 + 160 + 3 = 419_{10}$$
+
 </details>
 
 #### Denary to Base $b$ (Repeated Division)
@@ -93,6 +94,7 @@ This maintains the invariant. When $N_k = 0$, the representation is complete.
 | 8    | 1   | 1           | 0                     |
 
 Reading bottom to top: $156_{10} = 10011100_2$
+
 </details>
 
 #### Binary to Hexadecimal (and vice versa)
@@ -108,6 +110,7 @@ Group: $101\ 1101\ 1011$
 Pad left group: $0101\ 1101\ 1011$
 
 Convert: $5\ \mathrm{D}\ \mathrm{B} = 5DB_{16}$
+
 </details>
 
 #### Hexadecimal to Binary
@@ -120,6 +123,7 @@ Replace each hex digit with its 4-bit binary equivalent.
 $3 = 0011$, $F = 1111$, $7 = 0111$
 
 Result: $001111110111_2 = 11111110111_2$
+
 </details>
 
 #### Octal Conversions
@@ -165,6 +169,7 @@ $C_i$ is a Boolean function of $\{A_0, B_0, \ldots, A_{i-1}, B_{i-1}\}$ only. $\
 ```
 
 $1011_2 = 11_{10}$, $0110_2 = 6_{10}$, $10001_2 = 17_{10}$. Correct. ✓
+
 </details>
 
 ### Binary Subtraction
@@ -251,6 +256,7 @@ $-5 = 1011_2$ (since $2^4 - 5 = 11 = 1011_2$) $3 = 0011_2$
 $1110_2$ in two's complement: $-2$. Let us verify: $-5 + 3 = -2$. ✓
 
 No overflow (negative + positive never overflows).
+
 </details>
 
 <details>
@@ -268,15 +274,14 @@ $6 = 0110_2$, $5 = 0101_2$
 
 Result: $1011_2 = -5$ in two's complement. But $6 + 5 = 11$, which is outside the range $[-8, 7]$
 for 4 bits. Overflow detected: positive + positive yielded negative. ✓
+
 </details>
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA:** Requires two's complement for 8-bit and 16-bit numbers.
 - **CIE:** Requires two's complement for 8-bit numbers specifically.
-- **OCR:** Requires understanding of sign and magnitude as well as two's complement.
-:::
+- **OCR:** Requires understanding of sign and magnitude as well as two's complement. :::
 
 <hr />
 
@@ -315,6 +320,7 @@ $011_2 = 0 \times 2^{-1} + 1 \times 2^{-2} + 1 \times 2^{-3} = 0.375_{10}$
 Value: $13.375_{10}$
 
 Range: $[0,\ 31.875]$, Precision: $0.125$
+
 </details>
 
 <hr />
@@ -344,10 +350,8 @@ The codes $1010$ through $1111$ are **invalid** in BCD.
   bits in pure binary ($1111100111_2$)
 - BCD avoids rounding errors in decimal arithmetic — useful in financial systems
 
-:::warning
-Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$ in BCD
-is $00010010_2$, NOT $1100_2$.
-:::
+:::warning Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$ in BCD
+is $00010010_2$, NOT $1100_2$. :::
 
 <hr />
 
@@ -415,6 +419,7 @@ $0010\ 0000\ 1010\ 1100$
 Split: $\underbrace{0010}_{x} \underbrace{000010}_{xx} \underbrace{101100}_{xx}$
 
 Result: `11100010 10000010 10101100` = `E2 82 AC` in hex.
+
 </details>
 
 <hr />
@@ -429,13 +434,11 @@ magnitude.
 - Range for $n$ bits: $[-(2^{n-1} - 1),\ 2^{n-1} - 1]$
 - Two representations of zero: $+0 = 000\ldots0$ and $-0 = 100\ldots0$
 
-:::warning
-Pitfall Sign and magnitude is rarely used in practice because:
+:::warning Pitfall Sign and magnitude is rarely used in practice because:
 
 1. It has two representations of zero
 2. Addition requires different logic depending on the signs
-3. The range is asymmetric
-:::
+3. The range is asymmetric :::
 
 <hr />
 
@@ -447,12 +450,14 @@ Pitfall Sign and magnitude is rarely used in practice because:
 <summary>Hint</summary>
 
 Use the positional formula with $b = 16$. Remember $F = 15$.
+
 </details>
 
 <details>
 <summary>Answer</summary>
 
 $2 \times 256 + 15 \times 16 + 7 = 512 + 240 + 7 = 759_{10}$
+
 </details>
 
 **Problem 2.** Convert $314_{10}$ to binary and hexadecimal.
@@ -461,6 +466,7 @@ $2 \times 256 + 15 \times 16 + 7 = 512 + 240 + 7 = 759_{10}$
 <summary>Hint</summary>
 
 Use repeated division by 2, then group into 4-bit nibbles for hex.
+
 </details>
 
 <details>
@@ -469,6 +475,7 @@ Use repeated division by 2, then group into 4-bit nibbles for hex.
 Binary: $314 = 256 + 32 + 16 + 8 + 2 = 100111010_2$
 
 Hex: Group as $0001\ 0011\ 1010 = 13A_{16}$
+
 </details>
 
 **Problem 3.** Represent $-42$ in 8-bit two's complement. Verify by adding it to $+42$ and showing
@@ -478,6 +485,7 @@ the result is zero.
 <summary>Hint</summary>
 
 Find the binary of 42, flip all bits, add 1.
+
 </details>
 
 <details>
@@ -491,6 +499,7 @@ Add 1: $11010110_2$
 
 Verification: $00101010 + 11010110 = 100000000$. The carry out of 8 bits is discarded, leaving
 $00000000$. ✓
+
 </details>
 
 **Problem 4.** Perform the addition $10110110_2 + 01101011_2$ and interpret the result in 8-bit
@@ -500,6 +509,7 @@ unsigned and 8-bit two's complement.
 <summary>Hint</summary>
 
 Do the binary addition first. Then interpret based on the encoding scheme.
+
 </details>
 
 <details>
@@ -525,6 +535,7 @@ part. What is the range and precision? Convert $01011010.1010$ to denary.
 <summary>Hint</summary>
 
 Precision is $2^{-4}$. Range depends on whether signed or unsigned.
+
 </details>
 
 <details>
@@ -537,6 +548,7 @@ $01011010_2 = 64 + 16 + 8 + 2 = 90_{10}$
 $.1010_2 = 0.5 + 0.125 = 0.625_{10}$
 
 Value: $90.625_{10}$
+
 </details>
 
 **Problem 6.** Encode the string "Hi!" in ASCII (hex). Then explain how many bytes this would take
@@ -546,6 +558,7 @@ in UTF-8.
 <summary>Hint</summary>
 
 Look up each character's ASCII code point.
+
 </details>
 
 <details>
@@ -558,6 +571,7 @@ In ASCII hex: `48 69 21`
 
 Since all code points are below `U+007F`, UTF-8 uses 1 byte per character, so 3 bytes total. UTF-8
 encoding is identical to ASCII for these characters.
+
 </details>
 
 **Problem 7.** Encode the character 'ñ' (`U+00F1`) in UTF-8. Show each step.
@@ -566,6 +580,7 @@ encoding is identical to ASCII for these characters.
 <summary>Hint</summary>
 
 `U+00F1` falls in the 2-byte range `U+0080`–`U+07FF`. Use the pattern `110xxxxx 10xxxxxx`.
+
 </details>
 
 <details>
@@ -579,6 +594,7 @@ First byte: `110` + `00011` = `11000011` = $C3_{16}$ Second byte: `10` + `110001
 $B1_{16}$
 
 UTF-8: `C3 B1`
+
 </details>
 
 **Problem 8.** A student claims that $1101_2$ in 4-bit two's complement represents $-3$. Another
@@ -588,6 +604,7 @@ claims it represents $+13$. Who is correct? Explain.
 <summary>Hint</summary>
 
 What does the MSB tell you in two's complement?
+
 </details>
 
 <details>
@@ -600,6 +617,7 @@ Value: $- (2^4 - 13) = -(16 - 13) = -3$. ✓
 The second student is interpreting it as an unsigned number: $8 + 4 + 1 = 13$. This is also valid —
 the bit pattern is the same, but the interpretation differs. Context determines which encoding is
 used.
+
 </details>
 
 **Problem 9.** Prove that the two's complement of the two's complement of $x$ equals $x$ (for $x$ in
@@ -609,6 +627,7 @@ the valid range, excluding $-2^{n-1}$).
 <summary>Hint</summary>
 
 Start with $\mathrm{TwosComp}(x) = 2^n - x$. Apply the operation again.
+
 </details>
 
 <details>
@@ -622,6 +641,7 @@ The exception is $x = -2^{n-1}$, whose two's complement is
 $2^n - (-2^{n-1}) = 2^n + 2^{n-1} = 2^{n-1} \cdot 3$, which exceeds $n$ bits. In $n$-bit arithmetic,
 $2^n - (-2^{n-1}) \bmod 2^n = 2^{n-1}$, which is the bit pattern $100\ldots0$ — the same as
 $-2^{n-1}$. So $-2^{n-1}$ is its own two's complement.
+
 </details>
 
 **Problem 10.** In a system using 6-bit two's complement, what is the result of adding $-16$ and
@@ -631,6 +651,7 @@ $-15$? Does overflow occur?
 <summary>Hint</summary>
 
 Range of 6-bit two's complement is $[-32, 31]$. Compute $-16 + (-15) = -31$. Is this in range?
+
 </details>
 
 <details>
@@ -650,6 +671,7 @@ $-16 = 2^6 - 16 = 48 = 110000_2$ $-15 = 2^6 - 15 = 49 = 110001_2$
 Check: $-16 + (-15) = -31$. No overflow: $-31$ is in range $[-32, 31]$. ✓
 
 Both inputs are negative and the result is negative, so no overflow.
+
 </details>
 
 :::

@@ -41,7 +41,8 @@ through.
 
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
-Investigate electromagnetic induction by moving magnets through coils, changing magnetic fields, and observing the induced current and EMF in real time.
+Investigate electromagnetic induction by moving magnets through coils, changing magnetic fields, and
+observing the induced current and EMF in real time.
 
 Faraday's law of induction states that the electromotive force ($\epsilon$) is equal to the negative
 (according to Lenz's Law) rate of change of magnetic flux with time:
@@ -61,10 +62,8 @@ $$
     \epsilon = -N\frac{\Delta \Phi_B}{\Delta t}
 $$
 
-:::info
-One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
-generated to oppose the change in flux through the coil.
-:::
+:::info One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
+generated to oppose the change in flux through the coil. :::
 
 ## Lenz's Law
 
@@ -84,10 +83,8 @@ change in flux, it would create a runaway effect producing infinite energy.
    original field (same direction as the original field).
 4. Use the right-hand grip rule to find the current direction from the magnetic field direction.
 
-:::tip
-Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
-induced current, and (b) **why** it flows in that direction (to oppose the change in flux).
-:::
+:::tip Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
+induced current, and (b) **why** it flows in that direction (to oppose the change in flux). :::
 
 ## Motional EMF
 
@@ -181,11 +178,9 @@ $$
 - **Frequency** ($f$): number of complete cycles per second, $f = \frac{\omega}{2\pi}$
 - **Period** ($T$): time for one complete cycle, $T = \frac{1}{f}$
 
-:::tip
-Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
+:::tip Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
 average power in AC circuits:
-$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$
-:::
+$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$ :::
 
 ## Transformers
 
@@ -245,8 +240,8 @@ $$
 ### Worked Example 3: Transformer
 
 **Problem:** A step-down transformer has $2000$ turns on the primary and $100$ turns on the
-secondary. The primary voltage is $240\mathrm{ V}$ and the primary current is $2\mathrm{ A}$. Calculate
-the secondary voltage and current (assuming ideal).
+secondary. The primary voltage is $240\mathrm{ V}$ and the primary current is $2\mathrm{ A}$.
+Calculate the secondary voltage and current (assuming ideal).
 
 **Solution:**
 
@@ -298,11 +293,9 @@ solenoid.
 | Transformer ratio  | $\frac{V_s}{V_p} = \frac{N_s}{N_p}$          | —           |
 | Energy in inductor | $E = \frac{1}{2}LI^2$                        | J           |
 
-:::tip
-Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
+:::tip Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
 conservation. Make sure you can explain why Lenz's law is necessary (conservation of energy) and
-derive the motional EMF expression from Faraday's law.
-:::
+derive the motional EMF expression from Faraday's law. :::
 
 ---
 
@@ -326,9 +319,9 @@ Determine the direction of the induced current in the coil.
 ### Worked Example 5: Faraday's Law with Changing Area
 
 **Problem:** A square loop of side length $0.10\mathrm{ m}$ lies perpendicular to a uniform magnetic
-field of $0.40\mathrm{ T}$. The loop is pulled out of the field in $0.20\mathrm{ s}$, shrinking the area
-inside the field from $0.010\mathrm{ m}^2$ to zero. The loop has $50$ turns. Find the average induced
-EMF.
+field of $0.40\mathrm{ T}$. The loop is pulled out of the field in $0.20\mathrm{ s}$, shrinking the
+area inside the field from $0.010\mathrm{ m}^2$ to zero. The loop has $50$ turns. Find the average
+induced EMF.
 
 **Solution:**
 
@@ -366,8 +359,8 @@ $$
 ### Worked Example 7: Transformer Efficiency with Losses
 
 **Problem:** A transformer has $N_p = 4000$ and $N_s = 200$. The input power is $1200\mathrm{ W}$ at
-$V_p = 240\mathrm{ V}$. The output power measured at the secondary is $1140\mathrm{ W}$. Calculate: (a)
-the secondary voltage, (b) the secondary current, (c) the efficiency.
+$V_p = 240\mathrm{ V}$. The output power measured at the secondary is $1140\mathrm{ W}$. Calculate:
+(a) the secondary voltage, (b) the secondary current, (c) the efficiency.
 
 **Solution:**
 
@@ -379,13 +372,14 @@ the secondary voltage, (b) the secondary current, (c) the efficiency.
 
 ### Worked Example 8: Power Transmission — Step-Up Then Step-Down
 
-**Problem:** A power station generates $500\mathrm{ kW}$ at $5000\mathrm{ V}$. The power is transmitted
-through cables of total resistance $10\,\Omega$.
+**Problem:** A power station generates $500\mathrm{ kW}$ at $5000\mathrm{ V}$. The power is
+transmitted through cables of total resistance $10\,\Omega$.
 
 (a) Calculate the power loss if transmitted directly at $5000\mathrm{ V}$.
 
-(b) A step-up transformer raises the voltage to $50\,000\mathrm{ V}$ for transmission, and a step-down
-transformer reduces it back to $5000\mathrm{ V}$ at the consumer end. Calculate the power loss now.
+(b) A step-up transformer raises the voltage to $50\,000\mathrm{ V}$ for transmission, and a
+step-down transformer reduces it back to $5000\mathrm{ V}$ at the consumer end. Calculate the power
+loss now.
 
 **Solution:**
 
@@ -478,11 +472,9 @@ $$
 P = \frac{\pi(0.80)^2(300)^2(5.0 \times 10^{-3})(0.15)^4}{2(1.7 \times 10^{-8})} \approx 1.4 \times 10^{7}\mathrm{ W}
 $$
 
-:::warning
-This model assumes the entire disc is immersed in the field. In practice only a localized
+:::warning This model assumes the entire disc is immersed in the field. In practice only a localized
 region passes through the field gap, so actual dissipation is far lower. The key result is the
-scaling: $P \propto \omega^2$ and $P \propto R^4$.
-:::
+scaling: $P \propto \omega^2$ and $P \propto R^4$. :::
 
 ---
 
@@ -510,9 +502,9 @@ where $R$ is the total resistance of the motor windings.
 
 ### Startup vs Operating Speed
 
-- **At startup** ($\omega = 0$): $\epsilon_{\mathrm{back}} = 0$, so $I = V_{\mathrm{supply}}/R$. This is
-  the **maximum current** — it can be very large if $R$ is small, which is why motors often use a
-  **starter resistor** or electronic speed controller to limit initial current.
+- **At startup** ($\omega = 0$): $\epsilon_{\mathrm{back}} = 0$, so $I = V_{\mathrm{supply}}/R$.
+  This is the **maximum current** — it can be very large if $R$ is small, which is why motors often
+  use a **starter resistor** or electronic speed controller to limit initial current.
 - **At operating speed**: the back EMF increases with $\omega$ (since $\epsilon_{\mathrm{back}}$ is
   proportional to the rate of change of flux), reducing the net voltage and hence the current. The
   motor reaches a steady speed when the back EMF is large enough that the current produces just
@@ -540,8 +532,8 @@ Calculate: (a) the back EMF, (b) the mechanical power output, (c) the current at
 
 (b) $P_{\mathrm{mech}} = \epsilon_{\mathrm{back}} \cdot I = (100)(5.0) = 500\mathrm{ W}$
 
-(c) At startup, $\epsilon_{\mathrm{back}} = 0$, so $I_{\mathrm{startup}} = 120/4.0 = 30\mathrm{ A}$ — six
-times the operating current, confirming the need for startup protection.
+(c) At startup, $\epsilon_{\mathrm{back}} = 0$, so $I_{\mathrm{startup}} = 120/4.0 = 30\mathrm{ A}$
+— six times the operating current, confirming the need for startup protection.
 
 ---
 
@@ -599,8 +591,8 @@ $$
 
 ### Problem 2 (SL)
 
-A straight wire of length $0.60\mathrm{ m}$ moves at $8.0\mathrm{ m s}^{-1}$ at an angle of $30^\circ$ to a
-magnetic field of $0.25\mathrm{ T}$. Calculate the induced EMF.
+A straight wire of length $0.60\mathrm{ m}$ moves at $8.0\mathrm{ m s}^{-1}$ at an angle of
+$30^\circ$ to a magnetic field of $0.25\mathrm{ T}$. Calculate the induced EMF.
 
 <details>
 <summary>Solution</summary>
@@ -613,9 +605,9 @@ $$
 
 ### Problem 3 (SL)
 
-A step-up transformer converts $120\mathrm{ V}$ to $2400\mathrm{ V}$. The primary coil has $200$ turns.
-The secondary is connected to a load of $100\,\Omega$. Calculate: (a) the number of secondary turns,
-(b) the secondary current, (c) the primary current (ideal).
+A step-up transformer converts $120\mathrm{ V}$ to $2400\mathrm{ V}$. The primary coil has $200$
+turns. The secondary is connected to a load of $100\,\Omega$. Calculate: (a) the number of secondary
+turns, (b) the secondary current, (c) the primary current (ideal).
 
 <details>
 <summary>Solution</summary>
@@ -638,7 +630,8 @@ $$
 I_p = I_s \times \frac{N_s}{N_p} = 24 \times \frac{4000}{200} = 480\mathrm{ A}
 $$
 
-Check: $V_p I_p = 120 \times 480 = 57\,600\mathrm{ W}$, $V_s I_s = 2400 \times 24 = 57\,600\mathrm{ W}$.
+Check: $V_p I_p = 120 \times 480 = 57\,600\mathrm{ W}$,
+$V_s I_s = 2400 \times 24 = 57\,600\mathrm{ W}$.
 
 </details>
 
@@ -731,17 +724,17 @@ efficiency of the transmission system.
 
 (c) $\eta = (2.0 \times 10^6 - 5000)/(2.0 \times 10^6) = 99.75\%$
 
-Without transformers the current would be $500\mathrm{ A}$, giving $P_{\mathrm{loss}} = 2.0\mathrm{ MW}$ —
-all power would be lost.
+Without transformers the current would be $500\mathrm{ A}$, giving
+$P_{\mathrm{loss}} = 2.0\mathrm{ MW}$ — all power would be lost.
 
 </details>
 
 ### Problem 8 (HL)
 
 A DC motor operates from a $48\mathrm{ V}$ supply. The armature resistance is $2.0\,\Omega$. When
-driving a mechanical load at steady speed, the back EMF is $42\mathrm{ V}$. Calculate: (a) the current
-drawn, (b) the mechanical power output, (c) the power dissipated as heat, (d) the efficiency of the
-motor.
+driving a mechanical load at steady speed, the back EMF is $42\mathrm{ V}$. Calculate: (a) the
+current drawn, (b) the mechanical power output, (c) the power dissipated as heat, (d) the efficiency
+of the motor.
 
 <details>
 <summary>Solution</summary>
@@ -759,9 +752,9 @@ $126 + 18 = 48 \times 3.0 = 144\mathrm{ W}$)
 
 ### Problem 9 (HL)
 
-An inductor of $0.50\mathrm{ H}$ carries a current of $4.0\mathrm{ A}$. The current is reduced to zero
-in $0.020\mathrm{ s}$. Calculate: (a) the energy initially stored, (b) the average EMF induced during
-the decay.
+An inductor of $0.50\mathrm{ H}$ carries a current of $4.0\mathrm{ A}$. The current is reduced to
+zero in $0.020\mathrm{ s}$. Calculate: (a) the energy initially stored, (b) the average EMF induced
+during the decay.
 
 <details>
 <summary>Solution</summary>

@@ -84,11 +84,9 @@ At each price, we add up the quantities demanded by all consumers.
 | Expectations of future price ($\uparrow$) | $\uparrow$ (current demand)                            | Consumers stockpile before expected price rise         |
 | Population ($\uparrow$)                   | $\uparrow$                                             | UK population growth increases housing demand          |
 
-:::warning
-Common Pitfall "A rise in demand" means the _curve shifts right_. "A rise in quantity
+:::warning Common Pitfall "A rise in demand" means the _curve shifts right_. "A rise in quantity
 demanded" means a _movement along the curve_ due to a price change. These are fundamentally
-different. Examiners penalise imprecise language.
-:::
+different. Examiners penalise imprecise language. :::
 
 ## 2. Supply
 
@@ -158,15 +156,13 @@ equilibrium is restored.
 Therefore, the equilibrium is **stable**: any deviation sets in motion forces that restore
 equilibrium. $\blacksquare$
 
-:::tip
-Exam Technique When asked to "analyse the effect of X on equilibrium," use the three-step
+:::tip Exam Technique When asked to "analyse the effect of X on equilibrium," use the three-step
 framework:
 
 1. Identify whether X shifts demand or supply (and which direction)
 2. Show the shift on a diagram
 3. State the new equilibrium price and quantity
-4. Evaluate: what if both curves shift simultaneously?
-:::
+4. Evaluate: what if both curves shift simultaneously? :::
 
 ### 3.2 Price Mechanism (The Invisible Hand)
 
@@ -190,8 +186,8 @@ $|\mathrm{PED}|$.
 
 **Classification:**
 
-| Value                             | Description         | Interpretation               |
-| --------------------------------- | ------------------- | ---------------------------- |
+| Value                               | Description         | Interpretation               |
+| ----------------------------------- | ------------------- | ---------------------------- |
 | $\mathrm{PED} = 0$                  | Perfectly inelastic | Vertical demand curve        |
 | $0 \lt{} \mathrm{PED} \lt{} 1$      | Inelastic           | %$\Delta Q$ &lt; %$\Delta P$ |
 | $\mathrm{PED} = 1$                  | Unit elastic        | %$\Delta Q$ = %$\Delta P$    |
@@ -215,8 +211,8 @@ Since PED < 0:
 **Proposition: Total revenue is maximised where $|\mathrm{PED}| = 1$.**
 
 _Proof._ We showed $\frac{d(TR)}{dP} = Q(1 + \mathrm{PED})$. Setting $\frac{d(TR)}{dP} = 0$:
-$1 + \mathrm{PED} = 0$, so $\mathrm{PED} = -1$, i.e., $|\mathrm{PED}| = 1$. The second derivative confirms
-this is a maximum (for downward-sloping demand). $\blacksquare$
+$1 + \mathrm{PED} = 0$, so $\mathrm{PED} = -1$, i.e., $|\mathrm{PED}| = 1$. The second derivative
+confirms this is a maximum (for downward-sloping demand). $\blacksquare$
 
 ### 4.3 PED Varies Along a Linear Demand Curve
 
@@ -315,12 +311,10 @@ where $P_s(Q)$ is the inverse supply function.
 - Ceteris paribus is unrealistic — many variables change simultaneously
 - Doesn't account for behavioural biases (prospect theory, loss aversion)
 
-:::info
-Board-Specific Note Edexcel (9EC0) emphasises elasticity calculations using the midpoint
+:::info Board-Specific Note Edexcel (9EC0) emphasises elasticity calculations using the midpoint
 (arc elasticity) formula:
 $\mathrm{PED} = \frac{\Delta Q}{\Delta P} \times \frac{(P_1 + P_2)/2}{(Q_1 + Q_2)/2}$. CIE typically
-uses the point elasticity formula. Check your board's preference.
-:::
+uses the point elasticity formula. Check your board's preference. :::
 
 ## 7. Problem Set
 
@@ -368,9 +362,9 @@ and producers, and the deadweight loss.
 With tax, supply shifts up: $P_s = P_d - 3$, so $Q_S = 2(P_d - 3) - 30 = 2P_d - 36$. New equilibrium: $120 - P_d = 2P_d - 36 \Rightarrow 156 = 3P_d \Rightarrow P_d = 52$. $P_s = 49$. $Q^* = 68$. Tax burden on consumers: $52 - 50 = 2$ (out of £3). Tax burden on producers: $50 - 49 = 1$. DWL $= \frac{1}{2} \times 3 \times (70 - 68) = 3$.
 </details>
 
-**Problem 6.** Prove that if demand is perfectly inelastic ($\mathrm{PED} = 0$), the full burden of a
-specific tax falls on consumers. Prove that if demand is perfectly elastic, the full burden falls on
-producers.
+**Problem 6.** Prove that if demand is perfectly inelastic ($\mathrm{PED} = 0$), the full burden of
+a specific tax falls on consumers. Prove that if demand is perfectly elastic, the full burden falls
+on producers.
 
 <details>
 <summary>Hint</summary>
@@ -465,8 +459,8 @@ $P^*$ definitely increases. Quantity could increase or decrease depending on whi
 
 **Example.** "The price of coffee rises. Explain the effect on the market for tea."
 
-**Correct analysis.** Coffee and tea are substitutes ($\mathrm{XED} \gt{} 0$). A rise in the price of
-coffee shifts the demand curve for tea to the **right** (increase in demand for tea). At the
+**Correct analysis.** Coffee and tea are substitutes ($\mathrm{XED} \gt{} 0$). A rise in the price
+of coffee shifts the demand curve for tea to the **right** (increase in demand for tea). At the
 original price, there is now excess demand for tea. The price of tea rises, and the quantity of tea
 traded increases. This is a **shift** in the demand curve, not a movement along it.
 

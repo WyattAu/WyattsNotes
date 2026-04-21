@@ -438,12 +438,10 @@ end immediately; the CRT must unwind the environment.
 5. **OS Exit:** The CRT invokes the `exit` syscall (Linux) or `ExitProcess` API (Windows), returning
    control to the kernel.
 
-:::warning
-`std::terminate` vs `std::exit` If an exception escapes `main`, or an unjoinable
+:::warning `std::terminate` vs `std::exit` If an exception escapes `main`, or an unjoinable
 `std::thread` is destroyed, the CRT calls `std::terminate`. This calls `std::abort`, which kills the
 process **without** running static destructors or file buffer flushing. This often results in
-truncated logs or corrupted data files.
-:::
+truncated logs or corrupted data files. :::
 
 ### `std::exit` vs `std::quick_exit` vs `std::_Exit`
 
@@ -564,11 +562,9 @@ analogous to how `atexit` works for the main thread. If the main thread accesses
 destructors run during the normal termination sequence. On Windows, the mechanism is `DllMain` with
 `DLL_THREAD_DETACH`.
 
-:::warning
-Dynamic TLS has a significant first-access penalty (guard variable check, potential
+:::warning Dynamic TLS has a significant first-access penalty (guard variable check, potential
 initialization, destructor registration). On hot paths, prefer static TLS (constant initialization)
-or pass data explicitly via function parameters.
-:::
+or pass data explicitly via function parameters. :::
 
 ## DSO Constructor and Destructor Ordering
 
@@ -592,11 +588,9 @@ another DSO -- if the DSO ordering is wrong, the dependency may not yet be const
 "construct on first use" pattern (magic statics) mitigates this by deferring initialization to first
 access rather than load time.
 
-:::warning
-`LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
+:::warning `LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
 library's constructors still run in dependency order relative to other DSOs. If the preloaded
-library depends on symbols from the main executable, those symbols may not yet be initialized.
-:::
+library depends on symbols from the main executable, those symbols may not yet be initialized. :::
 
 ## The `main` Function Signature and Return Value
 
@@ -653,12 +647,10 @@ CRT:
 The heap is initialized during `__libc_start_main` (glibc) or `mainCRTStartup` (MSVC) before the
 `.init_array` processing. This ensures that global constructors can safely use `new`/`malloc`.
 
-:::warning
-The heap is **not** thread-safe at initialization time. If a global constructor spawns a
+:::warning The heap is **not** thread-safe at initialization time. If a global constructor spawns a
 thread that allocates memory, the thread may encounter a partially-initialized heap. In practice,
 this is safe on glibc and MSVC because the heap is fully initialized before `.init_array`
-processing, but it is a theoretical concern on custom CRTs.
-:::
+processing, but it is a theoretical concern on custom CRTs. :::
 
 ### `operator new` and the CRT
 
@@ -721,10 +713,8 @@ On Linux, the environment variables are located on the stack above `argv` (see t
 diagram in the startup sequence section). The CRT constructs `envp` from this data and passes it to
 `main` on platforms that support it.
 
-:::info
-Per [N4950 S6.6.1], the `main` function signature with `char* envp[]` as a third parameter
-is a common extension but not standard C++. Portable code should use `std::getenv()` instead.
-:::
+:::info Per [N4950 S6.6.1], the `main` function signature with `char* envp[]` as a third parameter
+is a common extension but not standard C++. Portable code should use `std::getenv()` instead. :::
 
 ## See Also
 

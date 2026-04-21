@@ -376,8 +376,8 @@ When two or more quantities are related by an equation, their rates of change ar
 
 :::info[Example]
 
-A spherical balloon is being inflated at a rate of $10\mathrm{ cm}^3\mathrm{/s}$. Find the rate at which
-the radius is increasing when the radius is $5\mathrm{ cm}$.
+A spherical balloon is being inflated at a rate of $10\mathrm{ cm}^3\mathrm{/s}$. Find the rate at
+which the radius is increasing when the radius is $5\mathrm{ cm}$.
 
 Volume of a sphere: $V = \dfrac{4}{3}\pi r^3$.
 
@@ -531,14 +531,12 @@ At $x = 3$: $f''(3) = 6 \gt 0$, so local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$.
 ### Concavity and Points of Inflection
 
 <!-- TODO: replace with a verified Desmos graph URL showing f(x), f'(x), f''(x) with interactive sliders -->
-<DesmosGraph
-  title="Stationary Points and Concavity"
-  expressions={["f(x)=x^3-3x+1", "\frac{d}{dx}f(x)"]}
-  width={800}
-  height={500}
-/>
 
-Use the sliders to adjust coefficients of a polynomial and observe how $f'(x)$ and $f''(x)$ determine stationary points and concavity.
+<DesmosGraph title="Stationary Points and Concavity" expressions={["f(x)=x^3-3x+1",
+"\frac{d}{dx}f(x)"]} width={800} height={500} />
+
+Use the sliders to adjust coefficients of a polynomial and observe how $f'(x)$ and $f''(x)$
+determine stationary points and concavity.
 
 - $f$ is **concave up** on an interval if $f''(x) \gt 0$ (the graph curves upward).
 - $f$ is **concave down** on an interval if $f''(x) \lt 0$ (the graph curves downward).
@@ -594,8 +592,8 @@ constraints.
 
 :::info[Example]
 
-A piece of wire $100\mathrm{ cm}$ long is bent to form a rectangle. Find the dimensions that maximise
-the area.
+A piece of wire $100\mathrm{ cm}$ long is bent to form a rectangle. Find the dimensions that
+maximise the area.
 
 Let the dimensions be $x$ and $y$. Then $2x + 2y = 100$, so $y = 50 - x$.
 
@@ -609,7 +607,8 @@ $$
 \frac{d^2A}{dx^2} = -2 \lt 0 \implies \mathrm{maximum}
 $$
 
-So $x = 25\mathrm{ cm}$, $y = 25\mathrm{ cm}$. The rectangle is a square with area $625\mathrm{ cm}^2$.
+So $x = 25\mathrm{ cm}$, $y = 25\mathrm{ cm}$. The rectangle is a square with area
+$625\mathrm{ cm}^2$.
 
 :::
 
@@ -716,7 +715,8 @@ $$
 ### Question 2 (Paper 2 style)
 
 A rectangular garden is to be constructed adjacent to a house, with the house forming one side of
-the rectangle. Fencing is required for the other three sides. $60\mathrm{ m}$ of fencing is available.
+the rectangle. Fencing is required for the other three sides. $60\mathrm{ m}$ of fencing is
+available.
 
 **(a)** If the side parallel to the house has length $x\mathrm{ m}$, show that the area is:
 
@@ -811,8 +811,8 @@ $$
 
 ### Question 5 (Paper 1 style)
 
-The radius of a circle is increasing at a rate of $0.5\mathrm{ cm/s}$. Find the rate of change of the
-area when the radius is $4\mathrm{ cm}$.
+The radius of a circle is increasing at a rate of $0.5\mathrm{ cm/s}$. Find the rate of change of
+the area when the radius is $4\mathrm{ cm}$.
 
 $$
 A = \pi r^2

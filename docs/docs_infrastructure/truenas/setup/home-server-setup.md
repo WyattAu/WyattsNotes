@@ -418,6 +418,7 @@ ZFS identifies drives by GUID, not by /dev/sdX names. This means drive reorderin
 pool import. However, if you are using a USB enclosure, drives may enumerate differently. Always use
 the TrueNAS web UI for pool management — never manually import with `zpool import` unless you know
 exactly what you are doing.
+
 </details>
 
 <details>
@@ -426,6 +427,7 @@ exactly what you are doing.
 The TrueNAS SCALE boot drive needs at least 32 GB. If you installed on a small USB flash drive, the
 system will fill it with logs and crashloop. Use a real SSD for the boot drive, not a cheap USB
 stick.
+
 </details>
 
 <details>
@@ -442,6 +444,7 @@ smartctl -i /dev/sda | grep "Rotation Rate"
 
 Reference: [WD SMR drive list](https://www.reddit.com/r/DataHoarder/wiki/smr) and similar
 community-maintained lists.
+
 </details>
 
 <details>
@@ -465,6 +468,7 @@ df -h /mnt/.ix-apps
 ```
 
 Clean up unused images and prune logs periodically.
+
 </details>
 
 ## Useful CLI Commands Reference

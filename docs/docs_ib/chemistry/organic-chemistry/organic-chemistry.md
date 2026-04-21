@@ -394,13 +394,13 @@ $$
 - **Racemisation** occurs (equal mixture of inverted and retained configuration).
 - Favoured by: tertiary substrates, weak nucleophiles, polar protic solvents.
 
-| Feature              | $S_N1$                         | $S_N2$                           |
-| -------------------- | ------------------------------ | -------------------------------- |
-| Steps                | Two (carbocation intermediate) | One (concerted)                  |
-| Rate law             | Rate $= k[\mathrm{RX}]$          | Rate $= k[\mathrm{RX}][\mathrm{Nu}]$ |
-| Stereochemistry      | Racemisation                   | Inversion                        |
-| Substrate preference | Tertiary                       | Primary                          |
-| Carbocation          | Yes                            | No                               |
+| Feature              | $S_N1$                         | $S_N2$                               |
+| -------------------- | ------------------------------ | ------------------------------------ |
+| Steps                | Two (carbocation intermediate) | One (concerted)                      |
+| Rate law             | Rate $= k[\mathrm{RX}]$        | Rate $= k[\mathrm{RX}][\mathrm{Nu}]$ |
+| Stereochemistry      | Racemisation                   | Inversion                            |
+| Substrate preference | Tertiary                       | Primary                              |
+| Carbocation          | Yes                            | No                                   |
 
 ### Elimination ($E1$ and $E2$)
 
@@ -565,8 +565,8 @@ $$
 
 **Mechanism**:
 
-1. The electron-rich benzene ring attacks the nitronium ion ($\mathrm{NO}_2^+$), forming a delocalised
-   carbocation intermediate.
+1. The electron-rich benzene ring attacks the nitronium ion ($\mathrm{NO}_2^+$), forming a
+   delocalised carbocation intermediate.
 
 2. The intermediate loses a proton to HSO$_4^-$, regenerating the aromatic system and forming
    nitrobenzene.
@@ -812,7 +812,8 @@ pathway proceeds through the more stable carbocation intermediate.
 <details>
 <summary>Question 1: IUPAC Nomenclature</summary>
 
-Name the following compound: $\mathrm{CH}_3\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{CH}(\mathrm{Cl})\mathrm{CH}_2\mathrm{CH}_3$.
+Name the following compound:
+$\mathrm{CH}_3\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{CH}(\mathrm{Cl})\mathrm{CH}_2\mathrm{CH}_3$.
 
 </details>
 
@@ -830,7 +831,8 @@ Name: **4-chloro-2-methylhexane**.
 <details>
 <summary>Question 2: Alkene Addition Reactions</summary>
 
-Describe the products formed when propene ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2$) reacts with each of the following:
+Describe the products formed when propene ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2$) reacts with
+each of the following:
 
 (a) $\mathrm{HBr}$
 
@@ -843,7 +845,8 @@ Describe the products formed when propene ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}
 <details>
 <summary>Answer</summary>
 
-(a) By Markovnikov's rule, H adds to the less substituted carbon and Br adds to the more substituted carbon:
+(a) By Markovnikov's rule, H adds to the less substituted carbon and Br adds to the more substituted
+carbon:
 
 $$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_3$$
 
@@ -879,18 +882,24 @@ For the reaction between 1-bromobutane and aqueous $\mathrm{NaOH}$:
 <details>
 <summary>Answer</summary>
 
-(a) This is an $S_N2$ mechanism because 1-bromobutane is a primary halogenoalkane with minimal steric hindrance, and $\mathrm{OH}^-$ is a strong nucleophile. $S_N2$ is favoured for primary substrates with strong nucleophiles.
+(a) This is an $S_N2$ mechanism because 1-bromobutane is a primary halogenoalkane with minimal
+steric hindrance, and $\mathrm{OH}^-$ is a strong nucleophile. $S_N2$ is favoured for primary
+substrates with strong nucleophiles.
 
-(b) $$\mathrm{Rate} = k[\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}][\mathrm{OH}^-]$$
+(b)
+$$\mathrm{Rate} = k[\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}][\mathrm{OH}^-]$$
 
-(c) Inversion of configuration (Walden inversion) occurs at the carbon bearing the leaving group. The nucleophile attacks from the back of the C--Br bond, resulting in the product having the opposite configuration.
+(c) Inversion of configuration (Walden inversion) occurs at the carbon bearing the leaving group.
+The nucleophile attacks from the back of the C--Br bond, resulting in the product having the
+opposite configuration.
 
 </details>
 
 <details>
 <summary>Question 4: Polymer Identification</summary>
 
-A polymer has the repeating unit: $-[\mathrm{NH}(\mathrm{CH}_2)_6\mathrm{NHCO}(\mathrm{CH}_2)_4\mathrm{CO}]-$.
+A polymer has the repeating unit:
+$-[\mathrm{NH}(\mathrm{CH}_2)_6\mathrm{NHCO}(\mathrm{CH}_2)_4\mathrm{CO}]-$.
 
 (a) Identify the type of polymer.
 
@@ -903,9 +912,11 @@ A polymer has the repeating unit: $-[\mathrm{NH}(\mathrm{CH}_2)_6\mathrm{NHCO}(\
 <details>
 <summary>Answer</summary>
 
-(a) This is a **condensation polymer** (specifically a polyamide), identifiable by the amide linkages ($-\mathrm{NHCO}-$) in the repeating unit.
+(a) This is a **condensation polymer** (specifically a polyamide), identifiable by the amide
+linkages ($-\mathrm{NHCO}-$) in the repeating unit.
 
 (b) The monomers are:
+
 - **1,6-diaminohexane** ($\mathrm{H}_2\mathrm{N}(\mathrm{CH}_2)_6\mathrm{NH}_2$)
 - **hexanedioic acid** (adipic acid, $\mathrm{HOOC}(\mathrm{CH}_2)_4\mathrm{COOH}$)
 
@@ -918,7 +929,8 @@ This polymer is **nylon-6,6**.
 <details>
 <summary>Question 5: Alcohol Oxidation Pathway</summary>
 
-Describe the products formed when each of the following alcohols is oxidised with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$:
+Describe the products formed when each of the following alcohols is oxidised with acidified
+$\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$:
 
 (a) Propan-1-ol ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH}$)
 
@@ -931,10 +943,15 @@ Describe the products formed when each of the following alcohols is oxidised wit
 <details>
 <summary>Answer</summary>
 
-(a) Primary alcohol: oxidised first to propanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$), then further oxidised to propanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$). With acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ under reflux, the final product is **propanoic acid**.
+(a) Primary alcohol: oxidised first to propanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$), then
+further oxidised to propanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$). With acidified
+$\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ under reflux, the final product is **propanoic acid**.
 
-(b) Secondary alcohol: oxidised to propanone (acetone, $\mathrm{CH}_3\mathrm{COCH}_3$). The reaction stops at the ketone because ketones cannot be further oxidised.
+(b) Secondary alcohol: oxidised to propanone (acetone, $\mathrm{CH}_3\mathrm{COCH}_3$). The reaction
+stops at the ketone because ketones cannot be further oxidised.
 
-(c) Tertiary alcohol: tertiary alcohols **cannot be oxidised** by $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ because there is no hydrogen atom on the carbon bearing the $-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
+(c) Tertiary alcohol: tertiary alcohols **cannot be oxidised** by
+$\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ because there is no hydrogen atom on the carbon bearing the
+$-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
+
 </details>
-

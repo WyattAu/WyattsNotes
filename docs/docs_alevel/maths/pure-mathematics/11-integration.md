@@ -18,10 +18,8 @@ slug: integration
 | OCR (A)    | Paper 1, 2 | Includes trapezium rule                                    |
 | CIE (9709) | P1, P2, P3 | Basic in P1; by parts/substitution in P2/P3; further in P3 |
 
-:::info
-The formula booklet provides standard integrals. You must know how to apply integration
-techniques and when to use each method.
-:::
+:::info The formula booklet provides standard integrals. You must know how to apply integration
+techniques and when to use each method. :::
 
 <hr />
 
@@ -49,14 +47,10 @@ infinitely thin), the approximation becomes exact.
 contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is the total change
 (displacement).
 
-{/* TODO: Replace with a real Desmos graph URL showing Riemann sums and area under a curve */}
-<DesmosGraph
-  title="Integration as Area Under a Curve"
-  expressions={["\int_{0}^{b} x^2 \, dx"]}
-  width={800}
-  height={500}
-/>
-Increase the number of rectangles to see how Riemann sums converge to the exact area under the curve. Compare the upper and lower sums as the partition gets finer.
+{/_ TODO: Replace with a real Desmos graph URL showing Riemann sums and area under a curve _/}
+<DesmosGraph title="Integration as Area Under a Curve" expressions={["\int_{0}^{b} x^2 \, dx"]}
+width={800} height={500} /> Increase the number of rectangles to see how Riemann sums converge to
+the exact area under the curve. Compare the upper and lower sums as the partition gets finer.
 
 <hr />
 
@@ -81,11 +75,9 @@ $$F(x) = G(x) + C \implies F(b) - F(a) = G(b) - G(a) = \int_a^b f(t)\,dt - 0$$
 
 Hence $\displaystyle\int_a^b f(x)\,dx = F(b) - F(a)$. $\blacksquare$
 
-:::info
-The Fundamental Theorem of Calculus is one of the most important results in all of
+:::info The Fundamental Theorem of Calculus is one of the most important results in all of
 mathematics. It connects the two seemingly unrelated operations of differentiation (finding rates of
-change) and integration (finding areas).
-:::
+change) and integration (finding areas). :::
 
 <hr />
 
@@ -144,11 +136,9 @@ If $f(x)$ changes sign on $[a,b]$, we must split the integral at each root:
 
 $$A = \int_a^b |f(x)|\,dx$$
 
-:::warning
-$\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
+:::warning $\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
 actual geometric area, take the absolute value and integrate separately over regions where $f$ is
-positive and negative.
-:::
+positive and negative. :::
 
 ### 4.3 Area between two curves
 
@@ -188,10 +178,8 @@ Let $u = x^2 + 1$, $du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
-:::tip
-When choosing a substitution, look for a function and its derivative. If you see
-$\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$.
-:::
+:::tip When choosing a substitution, look for a function and its derivative. If you see
+$\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$. :::
 
 ### 5.3 Definite integrals with substitution
 
@@ -225,10 +213,8 @@ i.e., $\displaystyle\int u\,dv = uv - \int v\,du$. $\blacksquare$
 Use the mnemonic **LIATE** (Logarithmic, Inverse trig, Algebraic, Trig, Exponential). Choose $u$
 from the leftmost category that appears.
 
-:::warning
-A common mistake is choosing the wrong assignment. If the integral gets more complicated
-after applying the formula, swap $u$ and $dv$.
-:::
+:::warning A common mistake is choosing the wrong assignment. If the integral gets more complicated
+after applying the formula, swap $u$ and $dv$. :::
 
 **Example.** Find $\displaystyle\int x e^x\,dx$.
 
@@ -294,10 +280,8 @@ $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-
 The error also depends on how curved the function is (via $f''$). For a straight line ($f'' = 0$),
 the trapezium rule is exact.
 
-:::tip
-In exams, more strips means better accuracy. The trapezium rule always underestimates for
-concave-down functions and overestimates for concave-up functions.
-:::
+:::tip In exams, more strips means better accuracy. The trapezium rule always underestimates for
+concave-down functions and overestimates for concave-up functions. :::
 
 <hr />
 
@@ -334,6 +318,7 @@ Evaluate $\displaystyle\int_0^2 (3x^2 - 4x + 1)\,dx$.
 $$\int_0^2 (3x^2 - 4x + 1)\,dx = \left[x^3 - 2x^2 + x\right]_0^2 = (8 - 8 + 2) - 0 = 2$$
 
 **If you get this wrong, revise:** [Standard Integrals](#3-standard-integrals) — Section 3.
+
 </details>
 
 <details>
@@ -351,6 +336,7 @@ $$A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac
 
 **If you get this wrong, revise:**
 [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.3.
+
 </details>
 
 <details>
@@ -368,6 +354,7 @@ $$\int \frac{2x}{x^2+3}\,dx = \int \frac{1}{u}\,du = \ln|u| + C = \ln(x^2+3) + C
 
 **If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) —
 Section 5.
+
 </details>
 
 <details>
@@ -384,6 +371,7 @@ $$\int x\sin x\,dx = -x\cos x + \int \cos x\,dx = -x\cos x + \sin x + C$$
 $$\left[-x\cos x + \sin x\right]_0^{\pi/2} = \left(0 + 1\right) - \left(0 + 0\right) = 1$$
 
 **If you get this wrong, revise:** [Integration by Parts](#6-integration-by-parts) — Section 6.
+
 </details>
 
 <details>
@@ -401,6 +389,7 @@ Error bound:
 $|E| \leq \dfrac{2^3}{12 \times 16} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
 
 **If you get this wrong, revise:** [The Trapezium Rule](#7-the-trapezium-rule) — Section 7.
+
 </details>
 
 <details>
@@ -416,6 +405,7 @@ $$\int \frac{u-1}{\sqrt{u}}\,du = \int(u^{1/2} - u^{-1/2})\,du = \frac{2}{3}u^{3
 
 **If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) —
 Section 5.
+
 </details>
 
 <details>
@@ -439,6 +429,7 @@ $$I_n = (n-1)\int_0^{\pi/2}\sin^{n-2}x(1-\sin^2 x)\,dx = (n-1)(I_{n-2} - I_n)$$
 $$I_n = (n-1)I_{n-2} - (n-1)I_n$$ $$nI_n = (n-1)I_{n-2}$$ $$I_n = \frac{n-1}{n}I_{n-2}$$
 
 **If you get this wrong, revise:** [Reduction Formulas](#64-reduction-formulas) — Section 6.4.
+
 </details>
 
 <details>
@@ -458,6 +449,7 @@ Total area = $\dfrac{5}{12} + \dfrac{8}{3} = \dfrac{5+32}{12} = \dfrac{37}{12}$.
 
 **If you get this wrong, revise:**
 [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.2.
+
 </details>
 
 <details>
@@ -484,6 +476,7 @@ $5I = e^{2x}(\sin x + 2\cos x)$.
 $$I = \frac{e^{2x}(\sin x + 2\cos x)}{5} + C$$
 
 **If you get this wrong, revise:** [Integration by Parts](#6-integration-by-parts) — Section 6.
+
 </details>
 
 <details>
@@ -501,6 +494,7 @@ $$\left[\frac{(\ln x)^2}{2}\right]_1^e = \frac{1}{2} - 0 = \frac{1}{2}$$
 
 **If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) —
 Section 5.
+
 </details>
 
 <details>
@@ -514,6 +508,7 @@ $$A = \int_{t=0}^{t=3} y\,\frac{dx}{dt}\,dt = \int_0^3 2t \cdot 2t\,dt = \int_0^
 
 **If you get this wrong, revise:**
 [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.4.
+
 </details>
 
 <details>
@@ -534,6 +529,7 @@ $x = -1$: $2 = 2A \implies A = 1$. $x = -3$: $-4 = -2B \implies B = 2$.
 $$\int \frac{1}{x+1} + \frac{2}{x+3}\,dx = \ln|x+1| + 2\ln|x+3| + C$$
 
 **If you get this wrong, revise:** [Partial Fractions](#82-partial-fractions) — Section 8.2.
+
 </details>
 
 <details>
@@ -556,6 +552,7 @@ $\blacksquare$
 
 **If you get this wrong, revise:**
 [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.
+
 </details>
 
 :::

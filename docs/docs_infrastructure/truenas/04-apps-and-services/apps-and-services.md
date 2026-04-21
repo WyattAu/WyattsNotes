@@ -201,11 +201,9 @@ eliminating the overhead of emulating hardware devices.
 | RNG     | VirtIO RNG                  | Built-in                     |
 | GPU     | VirtIO GPU                  | Built-in (Spice Guest Tools) |
 
-:::info
-For Windows VMs, download the `virtio-win` ISO from the Fedora project and attach it as a
+:::info For Windows VMs, download the `virtio-win` ISO from the Fedora project and attach it as a
 CD-ROM drive during installation. Install the VirtIO drivers before installing Windows, or use the
-`e1000` network driver temporarily and switch to VirtIO after driver installation.
-:::
+`e1000` network driver temporarily and switch to VirtIO after driver installation. :::
 
 ---
 
@@ -416,19 +414,19 @@ Every app should have resource limits configured to prevent resource starvation:
 # Example resource configuration in Helm values
 resources:
   requests:
-    cpu: "250m"
-    memory: "256Mi"
+    cpu: '250m'
+    memory: '256Mi'
   limits:
-    cpu: "2000m"
-    memory: "2048Mi"
+    cpu: '2000m'
+    memory: '2048Mi'
 ```
 
-| Resource | Request vs Limit | Recommendation |
-|----------|-----------------|----------------|
-| CPU request | Guaranteed minimum | 10–25% of typical usage |
-| CPU limit | Maximum allowed | 2–4x typical usage (allow bursts) |
-| Memory request | Guaranteed minimum | Match typical usage |
-| Memory limit | Maximum allowed (OOM if exceeded) | 1.5–2x typical usage |
+| Resource       | Request vs Limit                  | Recommendation                    |
+| -------------- | --------------------------------- | --------------------------------- |
+| CPU request    | Guaranteed minimum                | 10–25% of typical usage           |
+| CPU limit      | Maximum allowed                   | 2–4x typical usage (allow bursts) |
+| Memory request | Guaranteed minimum                | Match typical usage               |
+| Memory limit   | Maximum allowed (OOM if exceeded) | 1.5–2x typical usage              |
 
 ## Detailed App Configurations
 
@@ -451,8 +449,8 @@ tank/
 
 **Performance tuning:**
 
-1. Set the transcode directory to an SSD-backed dataset. Transcoding generates many small
-   temporary files that benefit from SSD latency.
+1. Set the transcode directory to an SSD-backed dataset. Transcoding generates many small temporary
+   files that benefit from SSD latency.
 2. Allocate sufficient memory (2–4 GB depending on library size).
 3. Enable hardware transcoding if available (Intel QuickSync or NVIDIA GPU).
 4. Set `PLEX_MEDIA_SERVER_USE_HARDWARE transcoding` environment variable.
@@ -464,7 +462,7 @@ tank/
 # In the app's Helm values, add GPU device allocation
 extraEnv:
   - name: PLEX_MEDIA_SERVER_USE_HARDWARE
-    value: "true"
+    value: 'true'
 hostGPU: true
 # Or for specific GPU:
 # nodeSelector:
@@ -475,11 +473,11 @@ hostGPU: true
 
 **Database selection:**
 
-| Database | Performance | Complexity | Recommendation |
-|----------|-----------|------------|---------------|
-| SQLite (built-in) | Poor for large installs | None | Small/personal only |
-| MariaDB | Good | Moderate | Medium installs |
-| PostgreSQL | Best | Moderate | Large installs |
+| Database          | Performance             | Complexity | Recommendation      |
+| ----------------- | ----------------------- | ---------- | ------------------- |
+| SQLite (built-in) | Poor for large installs | None       | Small/personal only |
+| MariaDB           | Good                    | Moderate   | Medium installs     |
+| PostgreSQL        | Best                    | Moderate   | Large installs      |
 
 **PostgreSQL tuning for Nextcloud:**
 
@@ -500,7 +498,7 @@ redis:
   enabled: true
   resources:
     limits:
-      memory: "128Mi"
+      memory: '128Mi'
 ```
 
 ### Home Assistant
@@ -534,10 +532,10 @@ extraVolumeMounts:
 scrape_configs:
   - job_name: 'truenas'
     static_configs:
-      - targets: ['truenas.local:9100']  # node-exporter
+      - targets: ['truenas.local:9100'] # node-exporter
   - job_name: 'smartmon'
     static_configs:
-      - targets: ['truenas.local:9633']  # smartmon-exporter
+      - targets: ['truenas.local:9633'] # smartmon-exporter
 ```
 
 **Grafana dashboard for TrueNAS:**
@@ -567,15 +565,15 @@ Key panels to include:
 # Vaultwarden security configuration
 extraEnv:
   - name: DOMAIN
-    value: "https://vault.example.com"
+    value: 'https://vault.example.com'
   - name: WEBSOCKET_ENABLED
-    value: "true"
+    value: 'true'
   - name: SHOW_PASSWORD_HINT
-    value: "false"
+    value: 'false'
   - name: LOG_FILE
-    value: "/data/vaultwarden.log"
+    value: '/data/vaultwarden.log'
   - name: LOG_LEVEL
-    value: "warn"
+    value: 'warn'
   - name: ADMIN_TOKEN
     valueFrom:
       secretKeyRef:
@@ -587,40 +585,39 @@ extraEnv:
 
 ### VM Creation Best Practices
 
-| Setting | Recommendation | Notes |
-|---------|---------------|-------|
-| CPU | Pin to specific cores | Reduces latency from scheduler migration |
-| Memory | Use balloon driver | Allows dynamic memory adjustment |
-| Disk | ZVOL with volblocksize=64K | Better performance than file-backed disk |
-| Network | VirtIO | 10x faster than emulated e1000 |
-| Boot | UEFI with OVMF | Required for modern OS |
-| Graphics | QXL or VirtIO-GPU | Use SPICE for best remote display |
-| TPM | Software TPM (swtpm) | Required for Windows 11 |
+| Setting  | Recommendation             | Notes                                    |
+| -------- | -------------------------- | ---------------------------------------- |
+| CPU      | Pin to specific cores      | Reduces latency from scheduler migration |
+| Memory   | Use balloon driver         | Allows dynamic memory adjustment         |
+| Disk     | ZVOL with volblocksize=64K | Better performance than file-backed disk |
+| Network  | VirtIO                     | 10x faster than emulated e1000           |
+| Boot     | UEFI with OVMF             | Required for modern OS                   |
+| Graphics | QXL or VirtIO-GPU          | Use SPICE for best remote display        |
+| TPM      | Software TPM (swtpm)       | Required for Windows 11                  |
 
 ### VM Storage Options
 
-| Option | Performance | Flexibility | Use Case |
-|--------|-----------|-------------|----------|
-| ZVOL | Best | Low (fixed size) | Production VMs, databases |
-| File-backed disk image | Good | High (thin provision) | Development VMs |
-| Virtio-FS | Best for shared files | Medium | Shared data between host and VM |
+| Option                 | Performance           | Flexibility           | Use Case                        |
+| ---------------------- | --------------------- | --------------------- | ------------------------------- |
+| ZVOL                   | Best                  | Low (fixed size)      | Production VMs, databases       |
+| File-backed disk image | Good                  | High (thin provision) | Development VMs                 |
+| Virtio-FS              | Best for shared files | Medium                | Shared data between host and VM |
 
 ### VM Network Configuration
 
-| Mode | Behavior | Use Case |
-|------|----------|----------|
-| VirtIO | Paravirtualized NIC, best performance | Most VMs |
-| E1000 | Emulated Intel NIC, broad compatibility | Legacy OS, PXE boot |
-| SR-IOV | Direct PCI passthrough of VF | High-performance networking |
+| Mode   | Behavior                                | Use Case                    |
+| ------ | --------------------------------------- | --------------------------- |
+| VirtIO | Paravirtualized NIC, best performance   | Most VMs                    |
+| E1000  | Emulated Intel NIC, broad compatibility | Legacy OS, PXE boot         |
+| SR-IOV | Direct PCI passthrough of VF            | High-performance networking |
 
 ### VM Backup Strategy
 
 1. **ZFS snapshot the ZVOL** before making changes to the VM.
 2. **Use `zfs send`** to replicate the VM's ZVOL to a backup pool.
-3. **Export the VM configuration** from the TrueNAS web UI and store it alongside the ZVOL
-   snapshot.
-4. **To restore:** Import the ZVOL, recreate the VM with the exported configuration, and
-   attach the ZVOL.
+3. **Export the VM configuration** from the TrueNAS web UI and store it alongside the ZVOL snapshot.
+4. **To restore:** Import the ZVOL, recreate the VM with the exported configuration, and attach the
+   ZVOL.
 
 ## Networking for Apps - Advanced
 
@@ -634,7 +631,7 @@ services:
     networks:
       - app-network
     ports:
-      - "8080:8080"
+      - '8080:8080'
 
   database:
     image: postgres:15
@@ -646,7 +643,7 @@ networks:
     driver: bridge
   internal-network:
     driver: bridge
-    internal: true  # No external access
+    internal: true # No external access
 ```
 
 ### DNS Resolution for Apps
@@ -801,7 +798,7 @@ name: my-custom-app
 version: 0.1.0
 description: My custom application
 type: application
-appVersion: "1.0.0"
+appVersion: '1.0.0'
 maintainers:
   - name: Your Name
 keywords:
@@ -833,7 +830,7 @@ service:
 
 ingress:
   enabled: false
-  className: ""
+  className: ''
   annotations: {}
   hosts: []
   tls: []
@@ -841,7 +838,7 @@ ingress:
 persistence:
   enabled: true
   size: 1Gi
-  storageClass: ""
+  storageClass: ''
   accessMode: ReadWriteOnce
 ```
 
@@ -855,8 +852,7 @@ TrueNAS apps can communicate with each other using Kubernetes service names:
 # App A connects to App B
 # In App A's values.yaml:
 config:
-  DATABASE_URL: "postgres://postgres-service:5432/mydb"
-
+  DATABASE_URL: 'postgres://postgres-service:5432/mydb'
 # Kubernetes resolves "postgres-service" to the internal ClusterIP
 # This works within the same namespace (ix-apps)
 ```

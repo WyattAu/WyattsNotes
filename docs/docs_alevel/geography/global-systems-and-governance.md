@@ -234,8 +234,8 @@ stocktake every five years to assess collective progress. Key challenges include
   microplastics contaminate the entire marine food web
 - **Deforestation**: approximately $10$ million hectares of forest lost annually, driven by
   agriculture, logging, and mining
-- **Biodiversity loss**: current extinction rates are estimated at $100$--$1000$ times the
-  natural background rate
+- **Biodiversity loss**: current extinction rates are estimated at $100$--$1000$ times the natural
+  background rate
 - **Ozone depletion**: successfully addressed by the Montreal Protocol (1987), which phased out CFCs
   — a rare example of effective global environmental governance
 

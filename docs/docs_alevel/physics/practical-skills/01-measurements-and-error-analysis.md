@@ -11,9 +11,7 @@ slug: measurements-and-error-analysis
 
 ## Measurements and Error Analysis
 
-:::info
-Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5
-:::
+:::info Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5 :::
 
 ## 1. Systematic and Random Errors
 
@@ -67,11 +65,9 @@ measurement or environmental variability.
 
 **Reduction:** Take multiple readings and calculate the mean. Use more precise instruments.
 
-:::warning
-Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
+:::warning Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
 scatter) but inaccurate (systematic error), or accurate (close to true value) but imprecise (large
-scatter). Neither is sufficient alone.
-:::
+scatter). Neither is sufficient alone. :::
 
 ## 2. Uncertainty Analysis
 
@@ -205,11 +201,9 @@ Many physical relationships can be linearised by choosing appropriate variables:
 | $y = ae^{bx}$        | $\ln y = bx + \ln a$      | $\ln y$ vs $x$        | $b$        | $\ln a$   |
 | $T = 2\pi\sqrt{L/g}$ | $T^2 = \frac{4\pi^2}{g}L$ | $T^2$ vs $L$          | $4\pi^2/g$ | $0$       |
 
-:::tip
-Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
+:::tip Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
 gradient, first find the gradient uncertainty using the worst line method, then divide by the
-best-fit gradient and multiply by 100%.
-:::
+best-fit gradient and multiply by 100%. :::
 
 ## Problem Set
 
@@ -492,11 +486,9 @@ all the error bars. The uncertainty in the gradient is:
 
 $$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
 
-:::warning
-Common Pitfall When error bars are not shown on a graph, examiners typically assume the
+:::warning Common Pitfall When error bars are not shown on a graph, examiners typically assume the
 uncertainty is $\pm$ half the smallest scale division of the measuring instrument used to obtain
-each data point. State this assumption explicitly.
-:::
+each data point. State this assumption explicitly. :::
 
 ## 8. Common Pitfalls
 

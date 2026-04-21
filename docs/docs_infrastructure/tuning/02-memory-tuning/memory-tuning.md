@@ -334,11 +334,9 @@ operation less penalizing.
 | SA (System Agent) | Uncore voltage (Intel)        | 0.9–1.1 V       | 1.1–1.25 V         |
 | VDDP              | SoC voltage (AMD)             | 0.9–1.0 V       | 1.0–1.1 V          |
 
-:::danger
-Never exceed 1.5 V on VDD/VDDQ for DDR5. Sustained operation above this voltage will cause
+:::danger Never exceed 1.5 V on VDD/VDDQ for DDR5. Sustained operation above this voltage will cause
 permanent damage to the DRAM chips. Even 1.45 V should only be used with active cooling on the
-DIMMs.
-:::
+DIMMs. :::
 
 ### Stability Testing After Changes
 
@@ -438,11 +436,9 @@ echo madvise | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
 echo always | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
 ```
 
-:::warning
-For database workloads (PostgreSQL, Redis, MongoDB), THP can cause latency spikes due to
+:::warning For database workloads (PostgreSQL, Redis, MongoDB), THP can cause latency spikes due to
 the kernel's khugepaged daemon defragmenting memory in the background. Database vendors recommend
-setting THP to `madvise` or `never`.
-:::
+setting THP to `madvise` or `never`. :::
 
 ### Huge Pages
 
@@ -709,10 +705,8 @@ swapon --show
 free -h
 ```
 
-:::warning
-Do not create a swap file on a ZFS dataset. ZFS does not support swap files due to its
-copy-on-write nature. Use a swap file on ext4/xfs or a dedicated swap partition instead.
-:::
+:::warning Do not create a swap file on a ZFS dataset. ZFS does not support swap files due to its
+copy-on-write nature. Use a swap file on ext4/xfs or a dedicated swap partition instead. :::
 
 ### NUMA Memory Policy Deep Dive
 

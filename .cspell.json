@@ -5231,13 +5231,6 @@
     "WLLN",
     "wmain"
   ],
-  "ignorePaths": [
-    "node_modules",
-    "build",
-    ".docusaurus",
-    ".cache",
-    "*.snap",
-    "package-lock.json"
-  ],
+  "ignorePaths": ["node_modules", "build", ".docusaurus", ".cache", "*.snap", "package-lock.json"],
   "enableFiletypes": ["mdx"]
 }

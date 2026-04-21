@@ -18,8 +18,8 @@ The DTM describes the historical shift from high birth rates and high death rate
 and low death rates as a country develops economically. It comprises five stages:
 
 **Stage 1 (High stationary):** High birth rates ($\approx 40$ per $1000$) and high death rates
-($\approx 40$ per $1000$). Population growth is minimal. Characteristic of pre-industrial
-societies where limited food supply, poor sanitation, and disease keep death rates high.
+($\approx 40$ per $1000$). Population growth is minimal. Characteristic of pre-industrial societies
+where limited food supply, poor sanitation, and disease keep death rates high.
 
 **Stage 2 (Early expanding):** Death rates fall rapidly due to improvements in agriculture (food
 supply), medicine (vaccination, antibiotics), sanitation, and public health. Birth rates remain
@@ -253,8 +253,8 @@ businesses.
 <details>
 <summary>Problem 1: Demographic Calculations</summary>
 
-Country A has a crude birth rate of $22$ per $1000$, a crude death rate of $8$ per $1000$, and
-a population of $50$ million. Calculate the natural increase rate and the natural increase per year.
+Country A has a crude birth rate of $22$ per $1000$, a crude death rate of $8$ per $1000$, and a
+population of $50$ million. Calculate the natural increase rate and the natural increase per year.
 
 Natural increase rate $= \mathrm{CBR} - \mathrm{CDR} = 22 - 8 = 14$ per $1000$, or $1.4\%$ per year.
 

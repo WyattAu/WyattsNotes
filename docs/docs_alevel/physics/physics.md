@@ -12,7 +12,9 @@ sidebar_position: 3
 
 ## A Level Physics — Course Overview
 
-A Level Physics is the study of the fundamental laws governing the universe, from the subatomic scale to the cosmological. The course develops mathematical modelling skills, experimental technique, and the ability to reason from first principles.
+A Level Physics is the study of the fundamental laws governing the universe, from the subatomic
+scale to the cosmological. The course develops mathematical modelling skills, experimental
+technique, and the ability to reason from first principles.
 
 ### Board Coverage
 
@@ -33,12 +35,14 @@ A Level Physics is the study of the fundamental laws governing the universe, fro
 #### Core Modules
 
 1. **Mechanics** — Kinematics, dynamics, energy, momentum, and circular motion
-2. **Waves** — Progressive and stationary waves, interference, diffraction, and the wave-particle duality
+2. **Waves** — Progressive and stationary waves, interference, diffraction, and the wave-particle
+   duality
 3. **Electricity** — Current, resistance, DC circuits, and electromagnetism
 4. **Fields** — Gravitational fields, electric fields, magnetic fields, and their unification
 5. **Thermal Physics** — Kinetic theory, ideal gas laws, and thermodynamic processes
 6. **Nuclear & Quantum Physics** — Radioactivity, nuclear decay, energy levels, and photoelectricity
-7. **Astrophysics** — Stellar evolution, cosmology, and observational astronomy (optional on some boards)
+7. **Astrophysics** — Stellar evolution, cosmology, and observational astronomy (optional on some
+   boards)
 
 ### Assessment
 
@@ -49,7 +53,8 @@ A Level Physics is the study of the fundamental laws governing the universe, fro
 | OCR (A) | Paper 1, 2, 3 | Written + practical endorsement |
 | CIE     | Paper 1–4     | Written + practical exam (P5)   |
 
-> All boards require a practical skills endorsement (pass/fail), assessed either through a portfolio (AQA, Edexcel, OCR) or a dedicated practical paper (CIE).
+> All boards require a practical skills endorsement (pass/fail), assessed either through a portfolio
+> (AQA, Edexcel, OCR) or a dedicated practical paper (CIE).
 
 ### How to Use These Notes
 

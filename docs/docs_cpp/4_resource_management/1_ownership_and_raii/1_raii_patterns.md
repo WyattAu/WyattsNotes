@@ -83,10 +83,8 @@ void process_file(const char* path) {
 }
 ```
 
-:::info
-Relevance RAII is why C++ programs do not need `try`/`finally` blocks. The destructor **is**
-the `finally`. This is the mechanism that enables exception-safe code without manual cleanup.
-:::
+:::info Relevance RAII is why C++ programs do not need `try`/`finally` blocks. The destructor **is**
+the `finally`. This is the mechanism that enables exception-safe code without manual cleanup. :::
 
 ## 1.3 MutexLock Example
 
@@ -110,10 +108,8 @@ void thread_safe_operation(std::mutex& mtx) {
 }
 ```
 
-:::tip
-In production code, prefer `std::lock_guard` or `std::scoped_lock` (C++17) over a hand-rolled
-MutexLock. They are the standard library's RAII wrappers for mutexes.
-:::
+:::tip In production code, prefer `std::lock_guard` or `std::scoped_lock` (C++17) over a hand-rolled
+MutexLock. They are the standard library's RAII wrappers for mutexes. :::
 
 ## 1.4 Standard Library RAII Wrappers
 
@@ -257,11 +253,9 @@ private:
 };
 ```
 
-:::info
-The move constructor and move assignment operator transfer ownership of the file descriptor.
+:::info The move constructor and move assignment operator transfer ownership of the file descriptor.
 The moved-from `Socket` has `fd_ == -1`, so its destructor is a no-op. This is the standard pattern
-for move-only RAII types that wrap non-copyable OS resources [N4950 §11.4.7].
-:::
+for move-only RAII types that wrap non-copyable OS resources [N4950 §11.4.7]. :::
 
 ## 1.6 Database Connection Wrapper
 
@@ -421,12 +415,10 @@ RAII is strictly more general than GC. GC only manages memory; RAII manages **an
 deterministic cleanup. A GC language like Java still needs `try`-with-resources or `using` blocks
 for non-memory resources (files, sockets, locks). In C++, RAII handles all of these uniformly.
 
-:::info
-The C++ destructor model is what makes RAII possible. Objects with automatic storage
+:::info The C++ destructor model is what makes RAII possible. Objects with automatic storage
 duration are destroyed in reverse order of construction when the scope exits, whether by normal flow
 of control or by exception propagation [N4950 §6.7.2]. This is a language guarantee, not a
-convention.
-:::
+convention. :::
 
 ## 1.10 RAII Rule of Thumb
 

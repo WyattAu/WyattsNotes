@@ -87,10 +87,8 @@ class Student:
 3. **Flexibility:** Internal implementation can change without affecting users
 4. **Maintainability:** Reduces coupling between components
 
-:::tip
-Exam tip In exams, always justify why encapsulation is important. Focus on data integrity
-(preventing invalid states) and implementation flexibility.
-:::
+:::tip Exam tip In exams, always justify why encapsulation is important. Focus on data integrity
+(preventing invalid states) and implementation flexibility. :::
 
 <hr />
 
@@ -209,13 +207,11 @@ program.
 
 This means: wherever a superclass object is expected, a subclass object should work correctly.
 
-:::info
-Board-specific **AQA** requires understanding of classes, objects, inheritance,
+:::info Board-specific **AQA** requires understanding of classes, objects, inheritance,
 polymorphism, encapsulation; uses pseudocode class definitions. **CIE (9618)** covers OOP
 principles; may require implementation in a specific language (Python/Pascal). **OCR (A)** requires
 class definitions with attributes and methods; constructor/destructor understanding. **Edexcel**
-covers OOP with pseudocode; emphasises encapsulation and data hiding.
-:::
+covers OOP with pseudocode; emphasises encapsulation and data hiding. :::
 
 <hr />
 
@@ -376,6 +372,7 @@ class Intern(Employee):
     def calculate_salary(self):
         return self.base_salary
 ```
+
 </details>
 
 **Problem 2.** Explain the difference between a class variable and an instance variable. Give an
@@ -396,6 +393,7 @@ class Dog:
 ```
 
 `Dog.species` is the same for all dogs. `dog1.name` and `dog2.name` are different.
+
 </details>
 
 **Problem 3.** Explain how polymorphism is demonstrated in the following code:
@@ -418,6 +416,7 @@ the actual type of the object:
 
 The same interface (`area()`) produces different behaviour for different types — this is **run-time
 polymorphism** (also called **dynamic dispatch**).
+
 </details>
 
 **Problem 4.** A student writes a `Square` class that inherits from `Rectangle`. The `Square`
@@ -446,6 +445,7 @@ proper subtype of `Rectangle` if `Rectangle` allows mutation of width and height
 
 **Solution:** Use composition instead (Square has-a Rectangle), or make Rectangle immutable, or use
 an interface-based approach.
+
 </details>
 
 **Problem 5.** Explain the difference between aggregation and composition with examples.
@@ -462,6 +462,7 @@ has `Engine` and `Wheel` objects. If the car is destroyed, its specific engine a
 destroyed (they don't make sense independently in this context).
 
 In code: Aggregation passes in existing objects. Composition creates objects internally.
+
 </details>
 
 **Problem 6.** Implement an abstract class `DataStructure` with abstract methods `insert`, `delete`,
@@ -504,6 +505,7 @@ class Stack(DataStructure):
                 return i
         return -1
 ```
+
 </details>
 
 **Problem 7.** Explain the Open/Closed Principle and give an example of a design that violates it,
@@ -546,6 +548,7 @@ class AreaCalculator:
 ```
 
 Adding a new shape requires only adding a new class — no modification to existing code.
+
 </details>
 
 **Problem 8.** What is the output of the following code? Explain the method resolution order.
@@ -587,6 +590,7 @@ base classes are searched for methods. For `D(B, C)`:
 2. `B` → has `greet`, returns "B"
 
 The MRO is D → B → C → A → object. Since `B` has `greet`, the search stops there.
+
 </details>
 
 **Problem 9.** Explain why multiple inheritance can lead to the "diamond problem" and how Python
@@ -618,6 +622,7 @@ If `D` calls `super().__init__()`, Python follows the MRO, ensuring each class's
 called exactly once.
 
 Languages like C++ resolve this differently (requiring explicit disambiguation).
+
 </details>
 
 **Problem 10.** Design a library system with classes for `Book`, `Member`, and `Library`. Use
@@ -685,6 +690,7 @@ class Library:
     def find_book(self, isbn):
         return self.__books.get(isbn)
 ```
+
 </details>
 
 For revision on programming fundamentals, see

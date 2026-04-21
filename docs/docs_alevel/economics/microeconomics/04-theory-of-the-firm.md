@@ -275,14 +275,12 @@ firm to enter a market that would otherwise be unprofitable (e.g., cross-subsidy
 segments). However, it raises equity concerns — poorer consumers (typically more price-elastic) may
 benefit from lower prices, while less elastic groups face higher prices.
 
-:::info
-Board-Specific Note Edexcel (A) often asks students to evaluate whether price discrimination
+:::info Board-Specific Note Edexcel (A) often asks students to evaluate whether price discrimination
 always reduces consumer welfare — the key is to recognise that _some_ consumers (the elastic group)
 may face lower prices. CIE (9708) requires calculation of profit under single-price vs
 discriminatory pricing. AQA Paper 2 frequently features questions on the ethics and fairness of
 price discrimination. OCR (A) may ask about the conditions necessary for each type of price
-discrimination to be feasible.
-:::
+discrimination to be feasible. :::
 
 #### Natural Monopoly
 
@@ -297,14 +295,12 @@ Examples: water supply, electricity distribution, railway networks.
 $MC \lt AC$. Regulatory options: average cost pricing ($P = AC$), price cap regulation, public
 ownership.
 
-:::info
-Board-Specific Note AQA emphasises the role of Ofwat (water) and Ofgem (energy) as UK
+:::info Board-Specific Note AQA emphasises the role of Ofwat (water) and Ofgem (energy) as UK
 regulators, including RPI-X price cap regulation. Edexcel requires understanding of how regulation
 can create **X-inefficiency** — the monopoly has no incentive to minimise costs if the regulator
 simply allows cost-plus pricing. CIE (9708) often asks students to compare **public ownership vs
 regulation** using efficiency criteria. OCR (A) focuses on the principal-agent problem between
-regulator and firm (information asymmetry).
-:::
+regulator and firm (information asymmetry). :::
 
 **Real-world example: UK water industry.** Thames Water and other regional water companies are
 natural monopolies covering specific geographic areas — it would be deeply inefficient to run
@@ -419,13 +415,11 @@ destructive price war that destroys margins for all) against competition (matchi
 prices to retain customers). This is a repeated game where the "punishment" for not matching prices
 is loss of market share to discounters.
 
-:::info
-Board-Specific Note AQA and Edexcel require students to explain how repeated interaction
+:::info Board-Specific Note AQA and Edexcel require students to explain how repeated interaction
 differs from a one-shot game in sustaining collusion. CIE (9708) may ask students to construct a
 payoff matrix and identify dominant strategies. OCR (A) has recently included questions on whether
 the prisoner's dilemma applies to real-world oligopolies where firms can communicate — a key
-evaluation point.
-:::
+evaluation point. :::
 
 #### Kinked Demand Curve Model (Sweezy, 1939)
 
@@ -514,13 +508,11 @@ contestable — new operators could enter any route. In practice, the incumbent 
 advantages (depots, driver knowledge, existing contracts), and many routes remained de facto
 monopolies. This illustrates the gap between theoretical contestability and real-world outcomes.
 
-:::info
-Board-Specific Note CIE (9708) frequently asks students to explain the difference between
+:::info Board-Specific Note CIE (9708) frequently asks students to explain the difference between
 contestable and competitive markets — the key distinction is that a contestable market may have only
 one firm but behaves as if competitive due to the threat of entry. AQA Paper 1 has included 25-mark
 questions on the extent to which UK supermarket markets are contestable. OCR (A) requires
-understanding of sunk costs as the key barrier to contestability.
-:::
+understanding of sunk costs as the key barrier to contestability. :::
 
 ## 5. Comparative Table of Market Structures
 
@@ -538,14 +530,12 @@ understanding of sunk costs as the key barrier to contestability.
 | **DWL**                   | None                     | Yes                  | Yes                       | Yes                        |
 | **Examples**              | Agricultural commodities | National rail, water | Restaurants, hairdressers | Supermarkets, banking, oil |
 
-:::info
-Board-Specific Note All boards require the comparative table but differ in emphasis. AQA
+:::info Board-Specific Note All boards require the comparative table but differ in emphasis. AQA
 focuses on the link between market structure and **economic efficiency**, often asking students to
 evaluate which structure is most efficient. Edexcel (A) requires analysis of how market structures
 affect **consumer and producer surplus**. CIE (9708) expects students to draw diagrams for each
 structure and annotate efficiency losses. OCR (A) frequently asks about **real-world markets that
-fall between categories** (e.g., is Amazon a monopoly or oligopoly?).
-:::
+fall between categories** (e.g., is Amazon a monopoly or oligopoly?). :::
 
 ## 6. Critical Evaluation
 
@@ -609,20 +599,16 @@ Traditional theory of the firm assumes profit maximisation. Behavioural economic
   but matching competitors' cuts quickly (consistent with the kinked demand curve, but explained by
   psychology rather than game theory).
 
-:::info
-Board-Specific Note AQA Paper 2 (25-mark essay questions) frequently requires students to
+:::info Board-Specific Note AQA Paper 2 (25-mark essay questions) frequently requires students to
 debate whether firms really maximise profit — behavioural objections are high-scoring evaluation
 points. CIE (9708) does not formally require behavioural economics but rewards students who mention
 satisficing as an alternative objective. Edexcel includes the principal-agent problem in its
-specification for market failure topics.
-:::
+specification for market failure topics. :::
 
-:::info
-Board-Specific Note CIE (9708) requires detailed diagrammatic analysis for each market
+:::info Board-Specific Note CIE (9708) requires detailed diagrammatic analysis for each market
 structure, including short-run and long-run equilibrium diagrams. AQA and Edexcel emphasise
 evaluation of real-world examples. OCR (A) often asks about the relationship between market
-structure and efficiency.
-:::
+structure and efficiency. :::
 
 ## 7. Problem Set
 

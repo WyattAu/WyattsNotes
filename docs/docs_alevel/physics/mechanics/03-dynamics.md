@@ -18,11 +18,9 @@ slug: dynamics
 Newton's three laws form the foundation of classical mechanics. They were first published in the
 _Principia Mathematica_ (1687).
 
-
 <PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ### Newton's First Law (Law of Inertia)
 

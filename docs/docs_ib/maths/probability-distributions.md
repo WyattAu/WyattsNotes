@@ -558,8 +558,8 @@ $$
 E(X) = \frac{r}{p}, \quad \mathrm{Var}(X) = \frac{r(1-p)}{p^2}
 $$
 
-Note the parallel with geometric: multiplying $r$ by a factor scales both $E(X)$ and $\mathrm{Var}(X)$
-by the same factor.
+Note the parallel with geometric: multiplying $r$ by a factor scales both $E(X)$ and
+$\mathrm{Var}(X)$ by the same factor.
 
 :::info[Example]
 
@@ -567,7 +567,8 @@ A coin has $P(\mathrm{heads}) = 0.4$. $X \sim \mathrm{NB}(3, 0.4)$ counts flips 
 
 $P(X = 7) = \dbinom{6}{2}(0.4)^3(0.6)^4 = 15 \times 0.064 \times 0.1296 \approx 0.1244$
 
-$E(X) = 3/0.4 = 7.5$, $\mathrm{Var}(X) = 3(0.6)/0.16 = 11.25$, $\sigma = \sqrt{11.25} \approx 3.354$.
+$E(X) = 3/0.4 = 7.5$, $\mathrm{Var}(X) = 3(0.6)/0.16 = 11.25$,
+$\sigma = \sqrt{11.25} \approx 3.354$.
 
 :::
 
@@ -825,32 +826,32 @@ $P(D \gt 0) = P\!\left(Z \gt \dfrac{0 - 14}{\sqrt{61}}\right) = P(Z \gt -1.793) 
 
 ### Discrete Distributions
 
-| Distribution        | Notation             | PMF                                 | $E(X)$         | $\mathrm{Var}(X)$       | Support           |
-| ------------------- | -------------------- | ----------------------------------- | -------------- | --------------------- | ----------------- |
-| Binomial            | $B(n, p)$            | $\dbinom{n}{x}p^x(1-p)^{n-x}$       | $np$           | $np(1-p)$             | $0, 1, \ldots, n$ |
+| Distribution        | Notation               | PMF                                 | $E(X)$         | $\mathrm{Var}(X)$     | Support           |
+| ------------------- | ---------------------- | ----------------------------------- | -------------- | --------------------- | ----------------- |
+| Binomial            | $B(n, p)$              | $\dbinom{n}{x}p^x(1-p)^{n-x}$       | $np$           | $np(1-p)$             | $0, 1, \ldots, n$ |
 | Poisson             | $\mathrm{Po}(\lambda)$ | $\dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$      | $\lambda$             | $0, 1, 2, \ldots$ |
 | Geometric (AHL)     | $\mathrm{Geo}(p)$      | $(1-p)^{x-1}p$                      | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$    | $1, 2, 3, \ldots$ |
 | Neg. Binomial (AHL) | $\mathrm{NB}(r, p)$    | $\dbinom{x-1}{r-1}p^r(1-p)^{x-r}$   | $\dfrac{r}{p}$ | $\dfrac{r(1-p)}{p^2}$ | $r, r+1, \ldots$  |
 
 ### Continuous Distributions
 
-| Distribution  | Notation           | PDF                                                            | $E(X)$           | $\mathrm{Var}(X)$       | Support             |
+| Distribution  | Notation           | PDF                                                            | $E(X)$           | $\mathrm{Var}(X)$     | Support             |
 | ------------- | ------------------ | -------------------------------------------------------------- | ---------------- | --------------------- | ------------------- |
 | Normal        | $N(\mu, \sigma^2)$ | $\dfrac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | $\mu$            | $\sigma^2$            | $(-\infty, \infty)$ |
 | Uniform (AHL) | $U(a, b)$          | $\dfrac{1}{b-a}$                                               | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ | $[a, b]$            |
 
 ### Key Relationships
 
-| Relationship                                                     | Condition                                              |
-| ---------------------------------------------------------------- | ------------------------------------------------------ |
-| $B(n, p) \approx \mathrm{Po}(np)$                                  | $n$ large, $p$ small, $np$ moderate                    |
-| $B(n, p) \approx N(np, np(1-p))$                                 | $np \ge 5$, $n(1-p) \ge 5$, with continuity correction |
-| $\mathrm{Geo}(p) = \mathrm{NB}(1, p)$                                | Special case                                           |
-| $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$                    | Independent Poisson variables                          |
-| $aX + bY \sim N(a\mu_X + b\mu_Y, a^2\sigma_X^2 + b^2\sigma_Y^2)$ | Independent normal variables                           |
-| $\bar{X}_n \approx N(\mu, \sigma^2/n)$                           | CLT, large $n$                                         |
-| $E(aX + bY) = aE(X) + bE(Y)$                                     | Always                                                 |
-| $\mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)$      | $X$, $Y$ independent                                   |
+| Relationship                                                      | Condition                                              |
+| ----------------------------------------------------------------- | ------------------------------------------------------ |
+| $B(n, p) \approx \mathrm{Po}(np)$                                 | $n$ large, $p$ small, $np$ moderate                    |
+| $B(n, p) \approx N(np, np(1-p))$                                  | $np \ge 5$, $n(1-p) \ge 5$, with continuity correction |
+| $\mathrm{Geo}(p) = \mathrm{NB}(1, p)$                             | Special case                                           |
+| $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$                   | Independent Poisson variables                          |
+| $aX + bY \sim N(a\mu_X + b\mu_Y, a^2\sigma_X^2 + b^2\sigma_Y^2)$  | Independent normal variables                           |
+| $\bar{X}_n \approx N(\mu, \sigma^2/n)$                            | CLT, large $n$                                         |
+| $E(aX + bY) = aE(X) + bE(Y)$                                      | Always                                                 |
+| $\mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)$ | $X$, $Y$ independent                                   |
 
 ---
 
@@ -879,7 +880,8 @@ $P(D \gt 0) = P\!\left(Z \gt \dfrac{0 - 14}{\sqrt{61}}\right) = P(Z \gt -1.793) 
 8. **Confidence interval interpretation**: A 95% CI does not mean there is a 95% probability that
    $\mu$ lies in the interval. It means 95% of similarly constructed intervals contain $\mu$.
 
-9. **Squaring constants in variance**: $\mathrm{Var}(3X) = 9\mathrm{Var}(X)$, not $3\mathrm{Var}(X)$.
+9. **Squaring constants in variance**: $\mathrm{Var}(3X) = 9\mathrm{Var}(X)$, not
+   $3\mathrm{Var}(X)$.
 
 :::tip[Exam Strategy]
 

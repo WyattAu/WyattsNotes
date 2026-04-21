@@ -25,11 +25,9 @@ tools are essential for geometry, mechanics, and physics at university level.
 | OCR (A) | Paper 1 | 3D vectors, scalar product, vector product, planes                        |
 | CIE     | P1      | 3D vectors, scalar product, vector product, lines, planes, intersections  |
 
-:::info
-All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
+:::info All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
 scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
-planes.
-:::
+planes. :::
 
 <hr />
 
@@ -163,8 +161,7 @@ $\mathbf{b}$, and its direction is given by the right-hand rule.
 - $\mathbf{i}\times\mathbf{j} = \mathbf{k}$, $\mathbf{j}\times\mathbf{k} = \mathbf{i}$,
   $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
-:::warning
-The cross product is **not** commutative:
+:::warning The cross product is **not** commutative:
 $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is only defined in 3D.
 :::
 
@@ -357,11 +354,9 @@ $\square$
 - $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$
   are coplanar
 
-:::info
-The scalar triple product being zero is a test for coplanarity. If four points $A$, $B$,
+:::info The scalar triple product being zero is a test for coplanarity. If four points $A$, $B$,
 $C$, $D$ are coplanar, then
-$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
-:::
+$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$. :::
 
 <hr />
 
@@ -401,6 +396,7 @@ between any point on each line onto this perpendicular direction.
 Given $\mathbf{a} = \begin{pmatrix}2\\-1\\3\end{pmatrix}$ and
 $\mathbf{b} = \begin{pmatrix}1\\4\\-2\end{pmatrix}$, find $\mathbf{a}\times\mathbf{b}$ and verify
 that it is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
+
 </details>
 
 <details>
@@ -413,12 +409,14 @@ Verify: $\mathbf{a}\cdot(\mathbf{a}\times\mathbf{b}) = 2(-10)+(-1)(7)+3(9) = -20
 $\mathbf{b}\cdot(\mathbf{a}\times\mathbf{b}) = 1(-10)+4(7)+(-2)(9) = -10+28-18 = 0$. ✓
 
 **If you get this wrong, revise:** [Vector Cross Product](#4-vector-cross-product) — Section 4.
+
 </details>
 
 <details>
 <summary>Problem 2</summary>
 
 Find the equation of the plane through $A(1, 2, 0)$, $B(0, 1, 3)$, $C(2, -1, 1)$.
+
 </details>
 
 <details>
@@ -436,12 +434,14 @@ $\mathbf{r}\cdot\mathbf{n} = \mathbf{a}\cdot\mathbf{n} = 2+2+0 = 4$.
 $\boxed{2x + y + z = 4}$
 
 **If you get this wrong, revise:** [Equation of a Plane](#6-equation-of-a-plane) — Section 6.
+
 </details>
 
 <details>
 <summary>Problem 3</summary>
 
 Find the distance from the point $P(3, 1, -2)$ to the plane $x + 2y - 2z = 6$.
+
 </details>
 
 <details>
@@ -453,6 +453,7 @@ $\boxed{D = 1}$.
 
 **If you get this wrong, revise:**
 [Distance from Point to Plane](#7-distance-from-a-point-to-a-plane) — Section 7.
+
 </details>
 
 <details>
@@ -461,6 +462,7 @@ $\boxed{D = 1}$.
 Find the shortest distance between the skew lines
 $\mathbf{r}_1 = \begin{pmatrix}0\\1\\-1\end{pmatrix} + \lambda\begin{pmatrix}1\\0\\2\end{pmatrix}$
 and $\mathbf{r}_2 = \begin{pmatrix}1\\0\\2\end{pmatrix} + \mu\begin{pmatrix}0\\1\\-1\end{pmatrix}$.
+
 </details>
 
 <details>
@@ -480,6 +482,7 @@ $D = \dfrac{0}{\sqrt{6}} = 0$. The lines actually **intersect** (not skew).
 
 **If you get this wrong, revise:** [Distance Between Skew Lines](#9-distance-between-two-skew-lines)
 — Section 9.
+
 </details>
 
 <details>
@@ -488,6 +491,7 @@ $D = \dfrac{0}{\sqrt{6}} = 0$. The lines actually **intersect** (not skew).
 Find the volume of the parallelepiped with edges $\mathbf{a} = \begin{pmatrix}1\\0\\2\end{pmatrix}$,
 $\mathbf{b} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$,
 $\mathbf{c} = \begin{pmatrix}2\\-1\\1\end{pmatrix}$.
+
 </details>
 
 <details>
@@ -500,12 +504,14 @@ $\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = 1(0)+0(-5)+2(-5) = -10$.
 $V = |-10| = \boxed{10}$.
 
 **If you get this wrong, revise:** [Scalar Triple Product](#8-scalar-triple-product) — Section 8.
+
 </details>
 
 <details>
 <summary>Problem 6</summary>
 
 Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
+
 </details>
 
 <details>
@@ -520,12 +526,14 @@ $\theta = \boxed{60°}$.
 
 **If you get this wrong, revise:** [Angle Between Two Planes](#64-angle-between-two-planes) —
 Section 6.4.
+
 </details>
 
 <details>
 <summary>Problem 7</summary>
 
 Show that the points $A(1, 2, 3)$, $B(3, 1, 2)$, $C(2, 3, 1)$, $D(0, 4, 4)$ are coplanar.
+
 </details>
 
 <details>
@@ -552,12 +560,14 @@ $\overrightarrow{AB}\cdot\begin{pmatrix}5\\1\\3\end{pmatrix} = 10-1-3 = 6 \neq 0
 The points are **not coplanar**.
 
 **If you get this wrong, revise:** [Scalar Triple Product](#8-scalar-triple-product) — Section 8.
+
 </details>
 
 <details>
 <summary>Problem 8</summary>
 
 Find the line of intersection of the planes $x + y + z = 6$ and $2x - y + z = 3$.
+
 </details>
 
 <details>
@@ -577,6 +587,7 @@ $$\boxed{\mathbf{r} = \begin{pmatrix}3\\3\\0\end{pmatrix} + \lambda\begin{pmatri
 
 **If you get this wrong, revise:** [Line of Intersection](#66-line-of-intersection-of-two-planes) —
 Section 6.6.
+
 </details>
 
 <details>
@@ -585,6 +596,7 @@ Section 6.6.
 Find the acute angle between the line
 $\mathbf{r} = \begin{pmatrix}1\\-1\\2\end{pmatrix} + \lambda\begin{pmatrix}3\\1\\-1\end{pmatrix}$
 and the plane $2x - y + 2z = 5$.
+
 </details>
 
 <details>
@@ -599,6 +611,7 @@ $\phi = \arcsin\!\left(\dfrac{1}{\sqrt{11}}\right) \approx \boxed{17.6°}$.
 
 **If you get this wrong, revise:**
 [Angle Between Line and Plane](#65-angle-between-a-line-and-a-plane) — Section 6.5.
+
 </details>
 
 <details>
@@ -607,6 +620,7 @@ $\phi = \arcsin\!\left(\dfrac{1}{\sqrt{11}}\right) \approx \boxed{17.6°}$.
 Find the shortest distance between the skew lines
 $\mathbf{r}_1 = \begin{pmatrix}1\\0\\0\end{pmatrix} + \lambda\begin{pmatrix}1\\2\\3\end{pmatrix}$
 and $\mathbf{r}_2 = \begin{pmatrix}0\\1\\0\end{pmatrix} + \mu\begin{pmatrix}2\\3\\4\end{pmatrix}$.
+
 </details>
 
 <details>
@@ -626,6 +640,7 @@ $D = \dfrac{3}{\sqrt{6}} = \dfrac{3\sqrt{6}}{6} = \boxed{\dfrac{\sqrt{6}}{2}}$.
 
 **If you get this wrong, revise:** [Distance Between Skew Lines](#9-distance-between-two-skew-lines)
 — Section 9.
+
 </details>
 
 :::

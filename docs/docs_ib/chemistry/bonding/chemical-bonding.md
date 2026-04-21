@@ -60,8 +60,8 @@ $$
 \mathrm{Na}^+(g) + \mathrm{Cl}^-(g) \to \mathrm{NaCl}(s) \quad \Delta H_{\mathrm{LE}} = -787\mathrm{ kJ/mol}
 $$
 
-**Definition.** **Lattice energy** ($\Delta H_{\mathrm{LE}}$) is the enthalpy change when one mole of
-an ionic solid is formed from its gaseous ions. It is always exothermic. A more negative lattice
+**Definition.** **Lattice energy** ($\Delta H_{\mathrm{LE}}$) is the enthalpy change when one mole
+of an ionic solid is formed from its gaseous ions. It is always exothermic. A more negative lattice
 energy indicates a stronger ionic bond.
 
 ### Factors Affecting Lattice Energy
@@ -72,8 +72,8 @@ $$
 \Delta H_{\mathrm{LE}} \propto -\frac{|z^+| \cdot |z^-|}{r_+ + r_-}
 $$
 
-| Factor            | Effect on Lattice Energy | Example                      |
-| ----------------- | ------------------------ | ---------------------------- |
+| Factor            | Effect on Lattice Energy | Example                          |
+| ----------------- | ------------------------ | -------------------------------- |
 | Higher ion charge | More negative (stronger) | $\mathrm{MgO} \gt \mathrm{NaCl}$ |
 | Smaller ion radii | More negative (stronger) | $\mathrm{LiF} \gt \mathrm{NaF}$  |
 
@@ -223,16 +223,17 @@ The Pauling scale assigns fluorine (the most electronegative element) a value of
 ### Classifying Bond Type by Electronegativity Difference
 
 | $\Delta\mathrm{EN}$ | Bond Classification   |
-| ----------------- | --------------------- |
-| 0.0               | Non-polar covalent    |
-| 0.1 -- 1.7        | Polar covalent        |
-| $\gt 1.7$         | Ionic (predominantly) |
+| ------------------- | --------------------- |
+| 0.0                 | Non-polar covalent    |
+| 0.1 -- 1.7          | Polar covalent        |
+| $\gt 1.7$           | Ionic (predominantly) |
 
 :::info[IB Exam Tip]
 
 The threshold of 1.7 is a guideline, not an absolute boundary. For example, H-Cl has
-$\Delta\mathrm{EN} = 0.9$ (polar covalent), but Al-Cl has $\Delta\mathrm{EN} = 1.55$ (still considered
-covalent in AlCl$_3$, a molecular compound). Always consider the compound's actual properties.
+$\Delta\mathrm{EN} = 0.9$ (polar covalent), but Al-Cl has $\Delta\mathrm{EN} = 1.55$ (still
+considered covalent in AlCl$_3$, a molecular compound). Always consider the compound's actual
+properties.
 
 :::
 
@@ -891,14 +892,14 @@ The carbonate ion, CO$_3^{2-}$, has a measured C-O bond length of 136 pm. Explai
 
 Calculate the lattice energy of calcium fluoride, CaF$_2$, using the following data:
 
-| Quantity                            | Value (kJ/mol) |
-| ----------------------------------- | -------------- |
-| $\Delta H_f^\circ$(CaF$_2$)         | -1220          |
+| Quantity                              | Value (kJ/mol) |
+| ------------------------------------- | -------------- |
+| $\Delta H_f^\circ$(CaF$_2$)           | -1220          |
 | $\Delta H_{\mathrm{at}}^\circ$(Ca)    | +178           |
 | $\Delta H_{\mathrm{at}}^\circ$(F$_2$) | +159           |
-| IE$_1$(Ca)                          | +590           |
-| IE$_2$(Ca)                          | +1145          |
-| EA$_1$(F)                           | -328           |
+| IE$_1$(Ca)                            | +590           |
+| IE$_2$(Ca)                            | +1145          |
+| EA$_1$(F)                             | -328           |
 
 **Markscheme:**
 
@@ -1067,7 +1068,9 @@ $$
 <details>
 <summary>Question 1: Lattice Energy Comparison</summary>
 
-Explain why $\mathrm{MgO}$ has a much higher lattice energy ($-3795\mathrm{ kJ/mol}$) than $\mathrm{NaCl}$ ($-787\mathrm{ kJ/mol}$), even though the ionic radii of $\mathrm{Mg}^{2+}$ and $\mathrm{Na}^+$ are similar.
+Explain why $\mathrm{MgO}$ has a much higher lattice energy ($-3795\mathrm{ kJ/mol}$) than
+$\mathrm{NaCl}$ ($-787\mathrm{ kJ/mol}$), even though the ionic radii of $\mathrm{Mg}^{2+}$ and
+$\mathrm{Na}^+$ are similar.
 
 </details>
 
@@ -1078,44 +1081,64 @@ Lattice energy depends on the product of ionic charges and inversely on the sum 
 
 $$\Delta H_{\mathrm{LE}} \propto -\frac{|z^+| \cdot |z^-|}{r_+ + r_-}$$
 
-In $\mathrm{MgO}$, both ions are doubly charged ($\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$), so $|z^+| \cdot |z^-| = 2 \times 2 = 4$. In $\mathrm{NaCl}$, both ions are singly charged ($\mathrm{Na}^+$ and $\mathrm{Cl}^-$), so $|z^+| \cdot |z^-| = 1 \times 1 = 1$. The electrostatic attraction is approximately four times stronger for $\mathrm{MgO}$. Additionally, $\mathrm{O}^{2-}$ is smaller than $\mathrm{Cl}^-$, further increasing the lattice energy.
+In $\mathrm{MgO}$, both ions are doubly charged ($\mathrm{Mg}^{2+}$ and $\mathrm{O}^{2-}$), so
+$|z^+| \cdot |z^-| = 2 \times 2 = 4$. In $\mathrm{NaCl}$, both ions are singly charged
+($\mathrm{Na}^+$ and $\mathrm{Cl}^-$), so $|z^+| \cdot |z^-| = 1 \times 1 = 1$. The electrostatic
+attraction is approximately four times stronger for $\mathrm{MgO}$. Additionally, $\mathrm{O}^{2-}$
+is smaller than $\mathrm{Cl}^-$, further increasing the lattice energy.
 
 </details>
 
 <details>
 <summary>Question 2: VSEPR and Molecular Polarity</summary>
 
-Determine the molecular geometry and polarity of $\mathrm{BrF}_3$ and $\mathrm{XeF}_4$. Justify your answers using VSEPR theory.
+Determine the molecular geometry and polarity of $\mathrm{BrF}_3$ and $\mathrm{XeF}_4$. Justify your
+answers using VSEPR theory.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-**$\mathrm{BrF}_3$:** $\mathrm{Br}$ has 7 valence electrons, each $\mathrm{F}$ contributes 1 bonding pair. Total domains = 3 bonding pairs + 2 lone pairs = 5 domains. This is $\mathrm{AX}_3\mathrm{E}_2$ (T-shaped). The bond dipoles do not cancel due to the asymmetric shape and lone pairs, so $\mathrm{BrF}_3$ is **polar**.
+**$\mathrm{BrF}_3$:** $\mathrm{Br}$ has 7 valence electrons, each $\mathrm{F}$ contributes 1 bonding
+pair. Total domains = 3 bonding pairs + 2 lone pairs = 5 domains. This is
+$\mathrm{AX}_3\mathrm{E}_2$ (T-shaped). The bond dipoles do not cancel due to the asymmetric shape
+and lone pairs, so $\mathrm{BrF}_3$ is **polar**.
 
-**$\mathrm{XeF}_4$:** $\mathrm{Xe}$ has 8 valence electrons, each $\mathrm{F}$ contributes 1 bonding pair. Total domains = 4 bonding pairs + 2 lone pairs = 6 domains. The lone pairs occupy positions 180$^\circ$ apart (axial). This is $\mathrm{AX}_4\mathrm{E}_2$ (square planar). The four bond dipoles cancel by symmetry, so $\mathrm{XeF}_4$ is **non-polar**.
+**$\mathrm{XeF}_4$:** $\mathrm{Xe}$ has 8 valence electrons, each $\mathrm{F}$ contributes 1 bonding
+pair. Total domains = 4 bonding pairs + 2 lone pairs = 6 domains. The lone pairs occupy positions
+180$^\circ$ apart (axial). This is $\mathrm{AX}_4\mathrm{E}_2$ (square planar). The four bond
+dipoles cancel by symmetry, so $\mathrm{XeF}_4$ is **non-polar**.
 
 </details>
 
 <details>
 <summary>Question 3: Boiling Point Trends</summary>
 
-Explain why $\mathrm{H}_2\mathrm{O}$ ($100\degree\mathrm{C}$) has a much higher boiling point than $\mathrm{H}_2\mathrm{S}$ ($-60\degree\mathrm{C}$), despite $\mathrm{H}_2\mathrm{S}$ having a higher molar mass.
+Explain why $\mathrm{H}_2\mathrm{O}$ ($100\degree\mathrm{C}$) has a much higher boiling point than
+$\mathrm{H}_2\mathrm{S}$ ($-60\degree\mathrm{C}$), despite $\mathrm{H}_2\mathrm{S}$ having a higher
+molar mass.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\mathrm{H}_2\mathrm{O}$ can form extensive hydrogen bonding because oxygen is highly electronegative and has two lone pairs. Each water molecule can form up to four hydrogen bonds, creating a strong three-dimensional network. $\mathrm{H}_2\mathrm{S}$ cannot form hydrogen bonds because sulfur is not electronegative enough (EN = 2.6 vs O = 3.5). $\mathrm{H}_2\mathrm{S}$ molecules are held together only by weaker dipole-dipole interactions and London dispersion forces. The hydrogen bonding in water requires significantly more energy to overcome, resulting in a much higher boiling point.
+$\mathrm{H}_2\mathrm{O}$ can form extensive hydrogen bonding because oxygen is highly
+electronegative and has two lone pairs. Each water molecule can form up to four hydrogen bonds,
+creating a strong three-dimensional network. $\mathrm{H}_2\mathrm{S}$ cannot form hydrogen bonds
+because sulfur is not electronegative enough (EN = 2.6 vs O = 3.5). $\mathrm{H}_2\mathrm{S}$
+molecules are held together only by weaker dipole-dipole interactions and London dispersion forces.
+The hydrogen bonding in water requires significantly more energy to overcome, resulting in a much
+higher boiling point.
 
 </details>
 
 <details>
 <summary>Question 4: MO Theory and Bond Order</summary>
 
-Use molecular orbital theory to determine the bond order of $\mathrm{O}_2$, $\mathrm{O}_2^+$, and $\mathrm{O}_2^{2-}$. Arrange them in order of increasing bond length.
+Use molecular orbital theory to determine the bond order of $\mathrm{O}_2$, $\mathrm{O}_2^+$, and
+$\mathrm{O}_2^{2-}$. Arrange them in order of increasing bond length.
 
 </details>
 
@@ -1149,13 +1172,19 @@ $$\mathrm{O}_2^{2-} \lt \mathrm{O}_2 \lt \mathrm{O}_2^+$$
 <details>
 <summary>Question 5: Hybridization and Bonding in Ethene</summary>
 
-Describe the bonding in ethene ($\mathrm{C}_2\mathrm{H}_4$), including the hybridization of each carbon atom, the types of bonds formed, and the molecular geometry.
+Describe the bonding in ethene ($\mathrm{C}_2\mathrm{H}_4$), including the hybridization of each
+carbon atom, the types of bonds formed, and the molecular geometry.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Each carbon in ethene has 3 electron domains (2 C-H bonds + 1 C=C bond), so each carbon is $sp^2$ hybridised. The three $sp^2$ hybrid orbitals form sigma bonds: two C-H sigma bonds and one C-C sigma bond. The remaining unhybridized $p$ orbital on each carbon overlaps side-to-side to form a pi ($\pi$) bond. The molecule is trigonal planar around each carbon with bond angles of approximately $120^\circ$, and the entire molecule is planar. The C=C double bond consists of one sigma bond and one pi bond. The pi bond restricts rotation about the C=C bond.
-</details>
+Each carbon in ethene has 3 electron domains (2 C-H bonds + 1 C=C bond), so each carbon is $sp^2$
+hybridised. The three $sp^2$ hybrid orbitals form sigma bonds: two C-H sigma bonds and one C-C sigma
+bond. The remaining unhybridized $p$ orbital on each carbon overlaps side-to-side to form a pi
+($\pi$) bond. The molecule is trigonal planar around each carbon with bond angles of approximately
+$120^\circ$, and the entire molecule is planar. The C=C double bond consists of one sigma bond and
+one pi bond. The pi bond restricts rotation about the C=C bond.
 
+</details>

@@ -508,11 +508,9 @@ echo 0 | sudo tee /sys/devices/system/cpu/smt/active
 echo 1 | sudo tee /sys/devices/system/cpu/smt/active
 ```
 
-:::warning
-Disabling SMT halves your logical core count. Ensure your workload can run within the
+:::warning Disabling SMT halves your logical core count. Ensure your workload can run within the
 physical core limit before disabling it. Some applications are licensed per logical core and will
-not work correctly with SMT disabled.
-:::
+not work correctly with SMT disabled. :::
 
 ### Security Considerations
 
@@ -661,11 +659,9 @@ Microcode updates can change CPU behavior in ways that affect performance measur
   frequencies to address stability issues (e.g., the Ice Lake PL1/PL2 fixes).
 - **Cache behavior changes:** Some updates modify L3 cache allocation or prefetcher behavior.
 
-:::warning
-Never benchmark a CPU before verifying the microcode version. A BIOS update that includes
+:::warning Never benchmark a CPU before verifying the microcode version. A BIOS update that includes
 a new microcode revision can invalidate months of tuning work if it changes turbo behavior or adds
-mitigation overhead.
-:::
+mitigation overhead. :::
 
 ### Forcing Microcode Reload
 
@@ -736,11 +732,9 @@ echo "8-15" > /sys/fs/cgroup/batch_jobs/cpuset.cpus
 echo $PID > /sys/fs/cgroup/batch_jobs/cgroup.procs
 ```
 
-:::info
-On server platforms with homogeneous cores (Xeon Scalable), ITD is less relevant because all
+:::info On server platforms with homogeneous cores (Xeon Scalable), ITD is less relevant because all
 cores have identical capabilities. ITD primarily benefits client and workstation platforms with
-big.LITTLE-style heterogeneous core layouts.
-:::
+big.LITTLE-style heterogeneous core layouts. :::
 
 ## AMD Precision Boost Overdrive 2
 
@@ -798,12 +792,10 @@ for offset in 5 10 15 20 25 30; do
 done
 ```
 
-:::warning
-A negative offset that is too aggressive causes WHEA (Windows Hardware Error
+:::warning A negative offset that is too aggressive causes WHEA (Windows Hardware Error
 Architecture) errors on Windows or Machine Check Exceptions (MCE) on Linux. These can cause silent
 data corruption. Always verify stability with both compute tests (Prime95, stress-ng) and memory
-tests (memtester) when changing voltage offsets.
-:::
+tests (memtester) when changing voltage offsets. :::
 
 ## Interpreting turbostat Output
 
@@ -948,11 +940,9 @@ points:
 - **Multi-core ratio** (MT/ST) indicates scaling efficiency. A ratio below `cores * 0.75` suggests
   memory bandwidth or thermal throttling issues.
 
-:::tip
-Always run Cinebench at least 3 times and report the median. The first run may be slower due
+:::tip Always run Cinebench at least 3 times and report the median. The first run may be slower due
 to caching effects. Let the CPU cool between runs (wait for temperatures to drop below 50C) to
-ensure consistent thermal conditions.
-:::
+ensure consistent thermal conditions. :::
 
 ### Geekbench vs Cinebench
 

@@ -47,8 +47,8 @@ neutrons (different $A$).
 Isotopes have identical chemical properties (same electron configuration) but different physical
 properties (different mass, different nuclear stability).
 
-| Element  | Isotope                | $Z$  | $A$  | $N$  | Natural Abundance   |
-| -------- | ---------------------- | ---- | ---- | ---- | ------------------- |
+| Element  | Isotope                  | $Z$  | $A$  | $N$  | Natural Abundance   |
+| -------- | ------------------------ | ---- | ---- | ---- | ------------------- |
 | Hydrogen | $\mathrm{H}$ (protium)   | $1$  | $1$  | $0$  | $99.985\%$          |
 | Hydrogen | $\mathrm{D}$ (deuterium) | $1$  | $2$  | $1$  | $0.015\%$           |
 | Hydrogen | $\mathrm{T}$ (tritium)   | $1$  | $3$  | $2$  | Trace (radioactive) |
@@ -199,8 +199,8 @@ first: $\mathrm{Fe}^{2+}$ is $[\mathrm{Ar}]\, 3d^6$, not $[\mathrm{Ar}]\, 4s^2\,
 Half-filled and fully-filled $d$-subshells are more stable due to symmetry and exchange energy. This
 causes exceptions in chromium, copper, molybdenum, silver, and gold:
 
-| Element     | Expected configuration                | Actual configuration                     | Reason                    |
-| ----------- | ------------------------------------- | ---------------------------------------- | ------------------------- |
+| Element       | Expected configuration                  | Actual configuration                       | Reason                    |
+| ------------- | --------------------------------------- | ------------------------------------------ | ------------------------- |
 | $\mathrm{Cr}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^4$           | $[\mathrm{Ar}]\, 4s^1\, 3d^5$              | Half-filled $d$-subshell  |
 | $\mathrm{Cu}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^9$           | $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$           | Fully-filled $d$-subshell |
 | $\mathrm{Mo}$ | $[\mathrm{Kr}]\, 5s^2\, 4d^4$           | $[\mathrm{Kr}]\, 5s^1\, 4d^5$              | Half-filled $d$-subshell  |
@@ -286,7 +286,7 @@ effectively than electrons in the same shell.
 
 | Trend                     | Explanation                                                               |
 | ------------------------- | ------------------------------------------------------------------------- |
-| Decreases across a period | $Z_{\mathrm{eff}}$ increases; electrons are pulled closer to the nucleus    |
+| Decreases across a period | $Z_{\mathrm{eff}}$ increases; electrons are pulled closer to the nucleus  |
 | Increases down a group    | Additional electron shells increase the average distance from the nucleus |
 
 **Definition.** **Atomic radius** is half the distance between the nuclei of two bonded atoms of the
@@ -322,10 +322,10 @@ $$
 \mathrm{X}(g) \to \mathrm{X}^+(g) + e^- \qquad \Delta H = IE_1
 $$
 
-| Trend                     | Explanation                                              |
-| ------------------------- | -------------------------------------------------------- |
-| Increases across a period | $Z_{\mathrm{eff}}$ increases; electrons held more tightly  |
-| Decreases down a group    | Electrons are farther from the nucleus and more shielded |
+| Trend                     | Explanation                                               |
+| ------------------------- | --------------------------------------------------------- |
+| Increases across a period | $Z_{\mathrm{eff}}$ increases; electrons held more tightly |
+| Decreases down a group    | Electrons are farther from the nucleus and more shielded  |
 
 **Deviations from the general trend across a period:**
 
@@ -370,10 +370,10 @@ $$
 
 A more negative $EA$ indicates a greater tendency to accept an electron.
 
-| Trend                                           | Explanation                                                  |
-| ----------------------------------------------- | ------------------------------------------------------------ |
+| Trend                                           | Explanation                                                    |
+| ----------------------------------------------- | -------------------------------------------------------------- |
 | Generally becomes more negative across a period | Increasing $Z_{\mathrm{eff}}$ attracts electrons more strongly |
-| Generally becomes less negative down a group    | Increased distance and shielding reduce the nuclear pull     |
+| Generally becomes less negative down a group    | Increased distance and shielding reduce the nuclear pull       |
 
 Noble gases have positive (endothermic) electron affinities because the added electron enters a new,
 higher-energy subshell.
@@ -385,7 +385,7 @@ electrons in a covalent bond. The Pauling scale is the most common.
 
 | Trend                     | Explanation                      |
 | ------------------------- | -------------------------------- |
-| Increases across a period | Increasing $Z_{\mathrm{eff}}$      |
+| Increases across a period | Increasing $Z_{\mathrm{eff}}$    |
 | Decreases down a group    | Increased distance and shielding |
 
 | Scale   | Most electronegative | Least electronegative |
@@ -456,12 +456,12 @@ farther from the nucleus and more shielded, so less energy is required to remove
 
 Alkali metals burn in oxygen to form oxides:
 
-| Metal  | Product with limited O$_2$        | Product with excess O$_2$          |
-| ------ | --------------------------------- | ---------------------------------- |
+| Metal  | Product with limited O$_2$            | Product with excess O$_2$              |
+| ------ | ------------------------------------- | -------------------------------------- |
 | Li     | $\mathrm{Li}_2\mathrm{O}$ (oxide)     | $\mathrm{Li}_2\mathrm{O}$              |
 | Na     | $\mathrm{Na}_2\mathrm{O}$ (oxide)     | $\mathrm{Na}_2\mathrm{O}_2$ (peroxide) |
-| K      | $\mathrm{K}_2\mathrm{O}_2$ (peroxide) | $\mathrm{KO}_2$ (superoxide)         |
-| Rb, Cs | Superoxides form readily          | Superoxides                        |
+| K      | $\mathrm{K}_2\mathrm{O}_2$ (peroxide) | $\mathrm{KO}_2$ (superoxide)           |
+| Rb, Cs | Superoxides form readily              | Superoxides                            |
 
 #### Hydroxides
 
@@ -477,8 +477,8 @@ Basicity increases down the group (solubility increases, so $[\mathrm{OH}^-]$ is
 
 Alkali metal ions produce characteristic flame colours due to electron transitions:
 
-| Ion           | Flame colour                                     |
-| ------------- | ------------------------------------------------ |
+| Ion             | Flame colour                                     |
+| --------------- | ------------------------------------------------ |
 | $\mathrm{Li}^+$ | Crimson red                                      |
 | $\mathrm{Na}^+$ | Yellow                                           |
 | $\mathrm{K}^+$  | Lilac (viewed through cobalt glass to filter Na) |
@@ -491,7 +491,7 @@ Alkali metal ions produce characteristic flame colours due to electron transitio
 | ----- | ----------------------------------------------------- |
 | Li    | Batteries, psychiatric medication (lithium carbonate) |
 | Na    | Street lamps (Na vapour), NaK coolant                 |
-| K     | Fertilisers ($\mathrm{KNO}_3$), potash                  |
+| K     | Fertilisers ($\mathrm{KNO}_3$), potash                |
 
 ---
 
@@ -541,8 +541,8 @@ $$
 \mathrm{Cl}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{I}_2(aq)
 $$
 
-But: $\mathrm{Br}_2$ cannot displace $\mathrm{Cl}^-$ and $\mathrm{I}_2$ cannot displace $\mathrm{Br}^-$ or
-$\mathrm{Cl}^-$.
+But: $\mathrm{Br}_2$ cannot displace $\mathrm{Cl}^-$ and $\mathrm{I}_2$ cannot displace
+$\mathrm{Br}^-$ or $\mathrm{Cl}^-$.
 
 #### Reaction with Alkali Metals
 
@@ -554,8 +554,8 @@ These are vigorous, exothermic reactions forming ionic halides.
 
 #### Halide Ion Tests
 
-| Halide        | Reagent                              | Observation                                                    |
-| ------------- | ------------------------------------ | -------------------------------------------------------------- |
+| Halide          | Reagent                                | Observation                                                      |
+| --------------- | -------------------------------------- | ---------------------------------------------------------------- |
 | $\mathrm{Cl}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | White precipitate ($\mathrm{AgCl}$), soluble in dilute NH$_3$    |
 | $\mathrm{Br}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | Cream precipitate ($\mathrm{AgBr}$), partially soluble in NH$_3$ |
 | $\mathrm{I}^-$  | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | Yellow precipitate ($\mathrm{AgI}$), insoluble in NH$_3$         |
@@ -565,10 +565,10 @@ precipitates with $\mathrm{Ag}^+$.
 
 #### Uses
 
-| Halogen       | Use                                                  |
-| ------------- | ---------------------------------------------------- |
+| Halogen         | Use                                                  |
+| --------------- | ---------------------------------------------------- |
 | $\mathrm{F}_2$  | Fluoridation of water, Teflon (PTFE) production      |
-| $\mathrm{Cl}_2$ | Water purification, PVC, bleach ($\mathrm{NaClO}$)     |
+| $\mathrm{Cl}_2$ | Water purification, PVC, bleach ($\mathrm{NaClO}$)   |
 | $\mathrm{Br}_2$ | Flame retardants, brominated compounds, photography  |
 | $\mathrm{I}_2$  | Antiseptics, iodised salt, thyroid hormone synthesis |
 
@@ -580,8 +580,8 @@ electronegative halogen is the negative end of the molecule.
 General formula: $\mathrm{XX}'_n$ where $n = 1, 3, 5, 7$ (depending on the size of the central
 halogen).
 
-| Example        | Type        | Structure              |
-| -------------- | ----------- | ---------------------- |
+| Example          | Type        | Structure              |
+| ---------------- | ----------- | ---------------------- |
 | $\mathrm{ClF}$   | Diatomic    | Linear                 |
 | $\mathrm{BrF}_3$ | Triatomic   | T-shaped               |
 | $\mathrm{IF}_5$  | Pentaatomic | Square pyramidal       |
@@ -598,9 +598,9 @@ Interhalogens are generally more reactive than the parent halogens because the b
 Noble gases have complete valence shells ($ns^2\, np^6$, except He which is $1s^2$), making them
 chemically inert under standard conditions. They exist as monatomic gases.
 
-| Element | Configuration               | Boiling point (K) | First IE (kJ/mol) |
-| ------- | --------------------------- | ----------------- | ----------------- |
-| He      | $1s^2$                      | $4.2$             | $2372$            |
+| Element | Configuration                 | Boiling point (K) | First IE (kJ/mol) |
+| ------- | ----------------------------- | ----------------- | ----------------- |
+| He      | $1s^2$                        | $4.2$             | $2372$            |
 | Ne      | $[\mathrm{He}]\, 2s^2\, 2p^6$ | $27.1$            | $2081$            |
 | Ar      | $[\mathrm{Ne}]\, 3s^2\, 3p^6$ | $87.3$            | $1521$            |
 | Kr      | $[\mathrm{Ar}]\, 4s^2\, 4p^6$ | $119.8$           | $1351$            |
@@ -617,7 +617,8 @@ London dispersion.
 
 Under extreme conditions, the heavier noble gases can form compounds:
 
-- **Xenon** forms $\mathrm{XeF}_2$, $\mathrm{XeF}_4$, $\mathrm{XeF}_6$, $\mathrm{XeO}_3$, $\mathrm{XeO}_4$
+- **Xenon** forms $\mathrm{XeF}_2$, $\mathrm{XeF}_4$, $\mathrm{XeF}_6$, $\mathrm{XeO}_3$,
+  $\mathrm{XeO}_4$
 - **Krypton** forms $\mathrm{KrF}_2$ (extremely reactive)
 - **Argon** forms very unstable compounds under extreme conditions
 
@@ -643,9 +644,9 @@ fluorine and oxygen can remove or share electrons.
 **Definition.** A **transition metal** is an element that has a partially filled $d$-subshell in
 either its atom or any of its common oxidation states.
 
-This definition excludes scandium ($\mathrm{Sc}^{3+}$: $[\mathrm{Ar}]$) and zinc ($\mathrm{Zn}^{2+}$:
-$[\mathrm{Ar}]\, 3d^{10}$) as transition metals in their common oxidation states, though they are in
-the $d$-block.
+This definition excludes scandium ($\mathrm{Sc}^{3+}$: $[\mathrm{Ar}]$) and zinc
+($\mathrm{Zn}^{2+}$: $[\mathrm{Ar}]\, 3d^{10}$) as transition metals in their common oxidation
+states, though they are in the $d$-block.
 
 ### Physical Properties
 
@@ -689,21 +690,21 @@ $$
 **Definition.** A **ligand** is a molecule or ion that can donate a lone pair of electrons to a
 central metal ion to form a coordinate bond.
 
-| Type of ligand | Examples                                                          | Denticity | Bonds donated |
-| -------------- | ----------------------------------------------------------------- | --------- | ------------- |
+| Type of ligand | Examples                                                                    | Denticity | Bonds donated |
+| -------------- | --------------------------------------------------------------------------- | --------- | ------------- |
 | Monodentate    | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, $\mathrm{Cl}^-$, $\mathrm{CN}^-$ | $1$       | $1$           |
-| Bidentate      | Ethylenediamine (en), oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$)       | $2$       | $2$           |
-| Hexadentate    | EDTA ($\mathrm{EDTA}^{4-}$)                                         | $6$       | $6$           |
+| Bidentate      | Ethylenediamine (en), oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$)             | $2$       | $2$           |
+| Hexadentate    | EDTA ($\mathrm{EDTA}^{4-}$)                                                 | $6$       | $6$           |
 
 ### Coordination Number
 
 **Definition.** The **coordination number** is the total number of coordinate bonds from ligands to
 the central metal ion.
 
-| Coordination number | Geometry      | Example                                                            |
-| ------------------- | ------------- | ------------------------------------------------------------------ |
-| $4$                 | Tetrahedral   | $[\mathrm{CoCl}_4]^{2-}$                                             |
-| $4$                 | Square planar | $[\mathrm{Cu(NH}_3)_4]^{2+}$ (sometimes), $[\mathrm{Ni(CN)}_4]^{2-}$   |
+| Coordination number | Geometry      | Example                                                                    |
+| ------------------- | ------------- | -------------------------------------------------------------------------- |
+| $4$                 | Tetrahedral   | $[\mathrm{CoCl}_4]^{2-}$                                                   |
+| $4$                 | Square planar | $[\mathrm{Cu(NH}_3)_4]^{2+}$ (sometimes), $[\mathrm{Ni(CN)}_4]^{2-}$       |
 | $6$                 | Octahedral    | $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$, $[\mathrm{Fe(CN)}_6]^{4-}$ |
 
 ### Colour of Transition Metal Complexes
@@ -730,19 +731,19 @@ $$
 Ligands that produce larger splitting are called **strong-field ligands**; those producing smaller
 splitting are **weak-field ligands**.
 
-| Complex ion                                             | Colour observed | Colour absorbed |
-| ------------------------------------------------------- | --------------- | --------------- |
-| $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                | Blue            | Orange/red      |
+| Complex ion                                                     | Colour observed | Colour absorbed |
+| --------------------------------------------------------------- | --------------- | --------------- |
+| $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                  | Blue            | Orange/red      |
 | $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$ | Deep blue       | Yellow/orange   |
-| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                | Pink            | Green           |
-| $[\mathrm{CoCl}_4]^{2-}$                                  | Blue            | Yellow/orange   |
+| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                  | Pink            | Green           |
+| $[\mathrm{CoCl}_4]^{2-}$                                        | Blue            | Yellow/orange   |
 
 :::warning
 
 A substance is colourless if either: (a) it has no $d$-electrons (e.g., $\mathrm{Sc}^{3+}$,
 $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{4+}$ has $d^0$), or (b) it has a full $d$-subshell (e.g.,
-$\mathrm{Zn}^{2+}$, $[\mathrm{Cu}(\mathrm{NH}_3)_4]^+$ has $d^{10}$). In both cases, there are no $d$-$d$
-transitions possible.
+$\mathrm{Zn}^{2+}$, $[\mathrm{Cu}(\mathrm{NH}_3)_4]^+$ has $d^{10}$). In both cases, there are no
+$d$-$d$ transitions possible.
 
 :::
 
@@ -753,27 +754,27 @@ intermediate complexes, providing alternative reaction pathways with lower activ
 
 **Heterogeneous catalysis** (catalyst in a different phase):
 
-| Catalyst   | Reaction                                                                     |
-| ---------- | ---------------------------------------------------------------------------- |
-| Fe         | Haber process: $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3$    |
-| V$_2$O$_5$ | Contact process: $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$                |
-| Ni         | Hydrogenation of alkenes                                                     |
-| Pt/Pd      | Catalytic converters (oxidation of CO and hydrocarbons, reduction of NO$_x$) |
+| Catalyst   | Reaction                                                                        |
+| ---------- | ------------------------------------------------------------------------------- |
+| Fe         | Haber process: $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3$ |
+| V$_2$O$_5$ | Contact process: $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$             |
+| Ni         | Hydrogenation of alkenes                                                        |
+| Pt/Pd      | Catalytic converters (oxidation of CO and hydrocarbons, reduction of NO$_x$)    |
 
 **Homogeneous catalysis** (catalyst in the same phase):
 
-| Catalyst                        | Reaction                                           |
-| ------------------------------- | -------------------------------------------------- |
+| Catalyst                            | Reaction                                           |
+| ----------------------------------- | -------------------------------------------------- |
 | $\mathrm{Fe}^{2+}/\mathrm{Fe}^{3+}$ | Fenton's reagent (oxidation of organic pollutants) |
-| $\mathrm{Mn}^{2+}$                | Decomposition of $\mathrm{H}_2\mathrm{O}_2$            |
+| $\mathrm{Mn}^{2+}$                  | Decomposition of $\mathrm{H}_2\mathrm{O}_2$        |
 
 ### Magnetic Properties
 
 Transition metals and their complexes can be **paramagnetic** (attracted to a magnetic field) or
 **diamagnetic** (weakly repelled).
 
-| Property     | Condition                      | Example                                             |
-| ------------ | ------------------------------ | --------------------------------------------------- |
+| Property     | Condition                      | Example                                                   |
+| ------------ | ------------------------------ | --------------------------------------------------------- |
 | Paramagnetic | Unpaired $d$-electrons present | $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ ($d^5$)    |
 | Diamagnetic  | All $d$-electrons paired       | $[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($d^{10}$) |
 
@@ -821,8 +822,8 @@ wavelengths on a continuous spectrum.
 The hydrogen emission spectrum shows several series, each corresponding to transitions to a specific
 lower energy level:
 
-| Series   | Final $n$ | Spectral region | Wavelength range       |
-| -------- | --------- | --------------- | ---------------------- |
+| Series   | Final $n$ | Spectral region | Wavelength range         |
+| -------- | --------- | --------------- | ------------------------ |
 | Lyman    | $1$       | Ultraviolet     | $< 400\mathrm{ nm}$      |
 | Balmer   | $2$       | Visible         | $400$--$700\mathrm{ nm}$ |
 | Paschen  | $3$       | Infrared        | $> 700\mathrm{ nm}$      |
@@ -916,19 +917,19 @@ The molecular ion peak for $\mathrm{CH}_4$ appears at $m/z = 16$.
 After ionization, the molecular ion often breaks apart into smaller fragments. The fragmentation
 pattern is characteristic of the molecule and can be used to identify it.
 
-| Fragment $m/z$ | Likely species                                       | Common origin                           |
-| -------------- | ---------------------------------------------------- | --------------------------------------- |
-| $15$           | $\mathrm{CH}_3^+$                                      | Loss of H from $\mathrm{CH}_4^{+\bullet}$ |
-| $29$           | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$           | Ethanol, aldehydes                      |
-| $43$           | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ | Ketones, propanol                       |
-| $77$           | $\mathrm{C}_6\mathrm{H}_5^+$                             | Benzene ring                            |
+| Fragment $m/z$ | Likely species                                               | Common origin                             |
+| -------------- | ------------------------------------------------------------ | ----------------------------------------- |
+| $15$           | $\mathrm{CH}_3^+$                                            | Loss of H from $\mathrm{CH}_4^{+\bullet}$ |
+| $29$           | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$             | Ethanol, aldehydes                        |
+| $43$           | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ | Ketones, propanol                         |
+| $77$           | $\mathrm{C}_6\mathrm{H}_5^+$                                 | Benzene ring                              |
 
 ### Determining Molecular Formula from Isotope Peaks
 
 For molecules containing chlorine or bromine, the isotope patterns are distinctive:
 
-| Element | Isotopes                       | Approximate ratio |
-| ------- | ------------------------------ | ----------------- |
+| Element | Isotopes                           | Approximate ratio |
+| ------- | ---------------------------------- | ----------------- |
 | Cl      | $\mathrm{Cl}$-35, $\mathrm{Cl}$-37 | $3 : 1$           |
 | Br      | $\mathrm{Br}$-79, $\mathrm{Br}$-81 | $1 : 1$           |
 
@@ -950,11 +951,11 @@ Chlorobenzene ($\mathrm{C}_6\mathrm{H}_5\mathrm{Cl}$) shows:
 High-resolution MS can determine exact masses to several decimal places, distinguishing between
 molecules with the same nominal mass but different molecular formulas:
 
-| Species                        | Exact mass (u) |
-| ------------------------------ | -------------- |
+| Species                              | Exact mass (u) |
+| ------------------------------------ | -------------- |
 | $\mathrm{C}_2\mathrm{H}_4\mathrm{O}$ | $44.0262$      |
-| $\mathrm{CO}_2$                  | $43.9898$      |
-| $\mathrm{N}_2\mathrm{O}$           | $44.0011$      |
+| $\mathrm{CO}_2$                      | $43.9898$      |
+| $\mathrm{N}_2\mathrm{O}$             | $44.0011$      |
 
 ---
 
@@ -1014,8 +1015,8 @@ $$ S = 0 + 8.00 + 10.00 = 18.00 $$
 
 $$ Z\_{\mathrm{eff}} = 21 - 18.00 = 3.00 $$
 
-The low $Z_{\mathrm{eff}}$ on the $3d$ electron explains why the $4s$ orbital fills before $3d$ — the
-$4s$ electron experiences a higher effective nuclear charge.
+The low $Z_{\mathrm{eff}}$ on the $3d$ electron explains why the $4s$ orbital fills before $3d$ —
+the $4s$ electron experiences a higher effective nuclear charge.
 
 :::
 
@@ -1244,15 +1245,15 @@ via a coordinate bond. (1 mark) Example of bidentate ligand: ethylenediamine (en
 ($\mathrm{C}_2\mathrm{O}_4^{2-}$). (1 mark)
 
 (b) $\mathrm{NH}_3$ is a stronger-field ligand than $\mathrm{H}_2\mathrm{O}$ on the spectrochemical
-series, so it causes greater $d$-orbital splitting ($\Delta$) in $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$.
-(1 mark) A larger $\Delta$ means higher-energy photons are absorbed, so the complementary colour
-transmitted is different (yellow vs blue). (1 mark)
+series, so it causes greater $d$-orbital splitting ($\Delta$) in
+$[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$. (1 mark) A larger $\Delta$ means higher-energy photons are
+absorbed, so the complementary colour transmitted is different (yellow vs blue). (1 mark)
 
 (c) Transition metals have variable oxidation states, allowing them to form intermediate compounds
 with reactants. This provides an alternative reaction pathway with a lower activation energy. (1
-mark) In the Haber process, iron catalyses the reaction by adsorbing $\mathrm{N}_2$ and $\mathrm{H}_2$
-onto its surface, weakening the $\mathrm{N}\equiv\mathrm{N}$ triple bond and facilitating the formation
-of $\mathrm{NH}_3$. (1 mark)
+mark) In the Haber process, iron catalyses the reaction by adsorbing $\mathrm{N}_2$ and
+$\mathrm{H}_2$ onto its surface, weakening the $\mathrm{N}\equiv\mathrm{N}$ triple bond and
+facilitating the formation of $\mathrm{NH}_3$. (1 mark)
 
 ---
 
@@ -1329,8 +1330,8 @@ $\mathrm{Fe}^{3+}$ is $[\mathrm{Ar}]\, 3d^5$, not $[\mathrm{Ar}]\, 4s^2\, 3d^3$.
 
 Do not confuse atomic radius trends with ionic radius trends. When comparing ionic radii within an
 isoelectronic series, the ion with the largest nuclear charge has the smallest radius. For example,
-$\mathrm{Na}^+$ is smaller than $\mathrm{F}^-$ even though $\mathrm{Na}$ has a larger atomic radius than
-$\mathrm{F}$.
+$\mathrm{Na}^+$ is smaller than $\mathrm{F}^-$ even though $\mathrm{Na}$ has a larger atomic radius
+than $\mathrm{F}$.
 
 :::
 
@@ -1339,7 +1340,9 @@ $\mathrm{F}$.
 <details>
 <summary>Question 1: Calculating Relative Atomic Mass</summary>
 
-Naturally occurring boron consists of two isotopes: $\mathrm{B}$-10 ($19.9\%$ abundance, mass $10.01\mathrm{ u}$) and $\mathrm{B}$-11 ($80.1\%$ abundance, mass $11.01\mathrm{ u}$). Calculate the relative atomic mass of boron.
+Naturally occurring boron consists of two isotopes: $\mathrm{B}$-10 ($19.9\%$ abundance, mass
+$10.01\mathrm{ u}$) and $\mathrm{B}$-11 ($80.1\%$ abundance, mass $11.01\mathrm{ u}$). Calculate the
+relative atomic mass of boron.
 
 </details>
 
@@ -1380,23 +1383,31 @@ $$\mathrm{Cr}: [\mathrm{Ar}]\, 4s^1\, 3d^5$$
 <details>
 <summary>Question 3: Periodic Trends</summary>
 
-Explain why the first ionization energy of aluminium is lower than that of magnesium, but the first ionization energy of sulfur is lower than that of phosphorus.
+Explain why the first ionization energy of aluminium is lower than that of magnesium, but the first
+ionization energy of sulfur is lower than that of phosphorus.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-**Aluminium vs Magnesium:** Mg has the electron configuration $[\mathrm{Ne}]\, 3s^2$ with a stable, filled $3s$ subshell. Al has $[\mathrm{Ne}]\, 3s^2\, 3p^1$. The $3p$ electron in Al is at a higher energy level than the $3s$ electrons of Mg and is partially shielded by the $3s$ electrons, so it requires less energy to remove.
+**Aluminium vs Magnesium:** Mg has the electron configuration $[\mathrm{Ne}]\, 3s^2$ with a stable,
+filled $3s$ subshell. Al has $[\mathrm{Ne}]\, 3s^2\, 3p^1$. The $3p$ electron in Al is at a higher
+energy level than the $3s$ electrons of Mg and is partially shielded by the $3s$ electrons, so it
+requires less energy to remove.
 
-**Sulfur vs Phosphorus:** P has the configuration $[\mathrm{Ne}]\, 3s^2\, 3p^3$ with a stable half-filled $3p$ subshell. S has $[\mathrm{Ne}]\, 3s^2\, 3p^4$, where the fourth $3p$ electron is paired with another electron in the same orbital. The paired electrons experience mutual repulsion, making the paired electron easier to remove.
+**Sulfur vs Phosphorus:** P has the configuration $[\mathrm{Ne}]\, 3s^2\, 3p^3$ with a stable
+half-filled $3p$ subshell. S has $[\mathrm{Ne}]\, 3s^2\, 3p^4$, where the fourth $3p$ electron is
+paired with another electron in the same orbital. The paired electrons experience mutual repulsion,
+making the paired electron easier to remove.
 
 </details>
 
 <details>
 <summary>Question 4: Isoelectronic Series</summary>
 
-Arrange the following ions in order of increasing ionic radius and explain your reasoning: $\mathrm{O}^{2-}$, $\mathrm{F}^-$, $\mathrm{Na}^+$, $\mathrm{Mg}^{2+}$, $\mathrm{Al}^{3+}$.
+Arrange the following ions in order of increasing ionic radius and explain your reasoning:
+$\mathrm{O}^{2-}$, $\mathrm{F}^-$, $\mathrm{Na}^+$, $\mathrm{Mg}^{2+}$, $\mathrm{Al}^{3+}$.
 
 </details>
 
@@ -1407,14 +1418,17 @@ All five species are isoelectronic with the neon configuration ($1s^2\, 2s^2\, 2
 
 $$\mathrm{Al}^{3+} \lt \mathrm{Mg}^{2+} \lt \mathrm{Na}^+ \lt \mathrm{F}^- \lt \mathrm{O}^{2-}$$
 
-All have the same number of electrons, but the nuclear charge increases from $\mathrm{O}$ ($Z = 8$) to $\mathrm{Al}$ ($Z = 13$). A higher nuclear charge pulls the electron cloud closer to the nucleus, resulting in a smaller ionic radius.
+All have the same number of electrons, but the nuclear charge increases from $\mathrm{O}$ ($Z = 8$)
+to $\mathrm{Al}$ ($Z = 13$). A higher nuclear charge pulls the electron cloud closer to the nucleus,
+resulting in a smaller ionic radius.
 
 </details>
 
 <details>
 <summary>Question 5: Spectral Line Calculation</summary>
 
-Calculate the wavelength of the photon emitted when an electron in a hydrogen atom transitions from $n = 4$ to $n = 2$. Use the Rydberg equation with $R_H = 1.097 \times 10^7\mathrm{ m}^{-1}$.
+Calculate the wavelength of the photon emitted when an electron in a hydrogen atom transitions from
+$n = 4$ to $n = 2$. Use the Rydberg equation with $R_H = 1.097 \times 10^7\mathrm{ m}^{-1}$.
 
 </details>
 
@@ -1428,5 +1442,5 @@ $$\frac{1}{\lambda} = 1.097 \times 10^7 \times \left(\frac{4 - 1}{16}\right) = 1
 $$\lambda = \frac{1}{2.057 \times 10^6} = 4.86 \times 10^{-7}\mathrm{ m} = 486\mathrm{ nm}$$
 
 This corresponds to the cyan line in the Balmer series (visible region).
-</details>
 
+</details>

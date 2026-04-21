@@ -646,11 +646,9 @@ For user home directories:
 | Authenticated     | User accounts required | High     | Production environments  |
 | Guest (anonymous) | No credentials needed  | Low      | Public file sharing only |
 
-:::warning
-Never enable guest access on shares containing sensitive data. Guest access bypasses all
+:::warning Never enable guest access on shares containing sensitive data. Guest access bypasses all
 authentication and authorization checks. Use it only for public read-only shares (e.g., a shared
-software repository).
-:::
+software repository). :::
 
 ---
 
@@ -747,15 +745,13 @@ midclt call smb.get_share sensitive-data | jq '.encrypt'
 Modern Intel and AMD CPUs with AES-NI instructions handle AES-128-GCM with minimal overhead. If your
 CPU lacks AES-NI (rare on anything newer than 2013), the performance penalty is significant.
 
-:::tip
-Use `smbstatus` on TrueNAS to verify that connections are actually using encryption:
+:::tip Use `smbstatus` on TrueNAS to verify that connections are actually using encryption:
 
 ```bash
 smbstatus -b | head -30
 ```
 
-The `Dialect` column should show `SMB3_11` or higher for encrypted connections.
-:::
+The `Dialect` column should show `SMB3_11` or higher for encrypted connections. :::
 
 ## NFSv4.2 Features
 
@@ -813,11 +809,9 @@ nfsstat -m | grep -E "rsize|wsize"
 mount -t nfs4 -o minorversion=2,pnfs truenas.local:/mnt/tank/data /mnt/nfs
 ```
 
-:::warning
-Large `rsize` and `wsize` values improve throughput for large sequential reads/writes but
+:::warning Large `rsize` and `wsize` values improve throughput for large sequential reads/writes but
 can increase latency for small random I/O. For mixed workloads, 1MB is a reasonable default. For
-metadata-heavy workloads (mail servers, source code repositories), consider 128K or 256K.
-:::
+metadata-heavy workloads (mail servers, source code repositories), consider 128K or 256K. :::
 
 ## iSCSI Target Configuration Deep Dive
 
@@ -849,11 +843,9 @@ midclt call iscsi.portal.create '{
 }'
 ```
 
-:::info
-Always use a dedicated network interface for iSCSI traffic. Sharing a NIC between iSCSI and
+:::info Always use a dedicated network interface for iSCSI traffic. Sharing a NIC between iSCSI and
 other services introduces latency and packet loss that directly impacts storage performance. If
-possible, use a separate VLAN or physical network for iSCSI.
-:::
+possible, use a separate VLAN or physical network for iSCSI. :::
 
 ### Extent Configuration
 
@@ -897,11 +889,9 @@ midclt call iscsi.initiatorgroup.update 1 '{
 }'
 ```
 
-:::warning
-CHAP secrets are transmitted in plain text in the TrueNAS API. Use the web UI for CHAP
+:::warning CHAP secrets are transmitted in plain text in the TrueNAS API. Use the web UI for CHAP
 configuration when possible, as it masks the secret. Never expose CHAP credentials in scripts
-checked into version control.
-:::
+checked into version control. :::
 
 ## Windows ACL Delegation Examples
 
@@ -987,11 +977,9 @@ Accessing the same ZFS dataset simultaneously via NFS and SMB causes locking and
 inconsistencies. NFS uses advisory locks while SMB uses mandatory locks. Files created via NFS may
 have permissions that SMB clients cannot interpret (POSIX vs Windows ACL mapping issues).
 
-:::warning
-If you must share data between NFS and SMB clients, use separate datasets with a
+:::warning If you must share data between NFS and SMB clients, use separate datasets with a
 replication or rsync pipeline to synchronize content. Alternatively, use SMB exclusively with
-Windows ACL support enabled.
-:::
+Windows ACL support enabled. :::
 
 ### Not Setting Up DNS Properly
 

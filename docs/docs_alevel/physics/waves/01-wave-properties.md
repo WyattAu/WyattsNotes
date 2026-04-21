@@ -11,15 +11,11 @@ slug: wave-properties
 
 ## Wave Properties
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Progressive Waves
 
@@ -126,20 +122,16 @@ The speed of sound in air at 20°C is approximately 343 m/s. For a concert A (44
 in air is $\lambda = 343/440 = 0.78$ m. Higher notes have shorter wavelengths; lower notes have
 longer wavelengths.
 
-:::warning
-Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
+:::warning Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
 propagate through vacuum via oscillating electric and magnetic fields. Sound waves are longitudinal
-and require a medium.
-:::
+and require a medium. :::
 
-:::tip
-Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
+:::tip Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
 representing air molecules. Show compressions (closely spaced) and rarefactions (widely spaced).
 Label both.
 
 Alternatively, plot displacement vs position — the graph looks sinusoidal, but positive displacement
-means particles moved to the right (in the direction of propagation), not upward.
-:::
+means particles moved to the right (in the direction of propagation), not upward. :::
 
 ## 3. Polarisation
 
@@ -165,9 +157,9 @@ $$\boxed{I = I_0 \cos^2\theta}$$
 where $I_0 = \frac{1}{2}\varepsilon_0 c E_0^2$ is the intensity of the polarised light incident on
 the analyser.
 
-**Intuition.** When $\theta = 0$, all light passes through. When $\theta = 90^\circ$, no light passes. At
-$\theta = 45^\circ$, the intensity is halved. This is a direct consequence of the vector nature of the
-electric field.
+**Intuition.** When $\theta = 0$, all light passes through. When $\theta = 90^\circ$, no light
+passes. At $\theta = 45^\circ$, the intensity is halved. This is a direct consequence of the vector
+nature of the electric field.
 
 ### Polarisation by Reflection (Brewster's Angle)
 
@@ -177,10 +169,8 @@ of incidence:
 
 $$\tan\theta_B = n_2/n_1$$
 
-:::info
-Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
-Edexcel covers qualitative polarisation.
-:::
+:::info Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
+Edexcel covers qualitative polarisation. :::
 
 ### Polarisation in Real Life
 
@@ -220,11 +210,9 @@ All EM waves are produced by accelerating charges. In order of increasing freque
 (oscillating currents in aerials), microwave (klystrons/magnetrons), infrared/visible/UV (atomic
 electron transitions), X-rays (electron deceleration), gamma rays (nuclear transitions).
 
-:::tip
-Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
+:::tip Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
 **U**ltraviolet, **X**-ray, **G**amma. Mnemonic: "**R**eal **M**en **I**n **V**ietnam **U**se
-**X**-ray **G**uns."
-:::
+**X**-ray **G**uns." :::
 
 ## 5. Intensity and Amplitude
 
@@ -302,9 +290,7 @@ while a 10 dB increase sounds roughly "twice as loud" to human ears.
 ratio is $10^{(60-30)/10} = 10^3 = 1000$, meaning conversation is 1000 times more intense than a
 whisper.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 All boards cover the inverse square law. The decibel scale is explicitly on CIE and sometimes
 appears in AQA context questions. Edexcel and OCR (A) focus more on $I \propto A^2$ and
@@ -334,11 +320,9 @@ $$\Delta\phi = \frac{2\pi}{\lambda}\Delta x$$
 - In phase: $\Delta\phi = 0, 2\pi, 4\pi, \ldots$ (integer multiples of $2\pi$)
 - Antiphase: $\Delta\phi = \pi, 3\pi, 5\pi, \ldots$ (odd multiples of $\pi$)
 
-:::tip
-Exam Technique Phase difference questions often require you to identify two points on a wave
+:::tip Exam Technique Phase difference questions often require you to identify two points on a wave
 graph and calculate $\Delta x$. Then use $\Delta\phi = 360° \times \Delta x / \lambda$ (using
-degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units.
-:::
+degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units. :::
 
 ### Phase Difference from Wave Equations
 
@@ -364,9 +348,7 @@ $t_1$ and $t_2$ is:
 
 $$\Delta\phi = \frac{\Delta t}{T} \times 360° = \frac{\Delta t}{T} \times 2\pi \mathrm{ rad}$$
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 AQA and OCR (A) frequently test phase difference from displacement--position graphs. CIE often
 combines phase difference with path difference in interference questions. Edexcel emphasises the
@@ -396,6 +378,7 @@ A sound wave has frequency 440 Hz and wavelength 0.78 m. Calculate the speed of 
 **Answer.** $v = f\lambda = 440 \times 0.78 = 343$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [The Wave Equation](#the-wave-equation)
+
 </details>
 
 <details>
@@ -406,6 +389,7 @@ Calculate the wavelength.
 **Answer.** $\lambda = \frac{c}{f} = \frac{3.00 \times 10^8}{97.4 \times 10^6} = 3.08$ m.
 
 <b>If you get this wrong, revise:</b> [The Wave Equation](#the-wave-equation)
+
 </details>
 
 <details>
@@ -421,6 +405,7 @@ After the second filter:
 $I = \frac{I_0}{2}\cos^2 30° = \frac{I_0}{2} \times \frac{3}{4} = \frac{3I_0}{8}$.
 
 <b>If you get this wrong, revise:</b> [Proof of Malus's Law](#proof-of-maluss-law)
+
 </details>
 
 <details>
@@ -433,6 +418,7 @@ difference in (a) radians and (b) degrees.
 (b) $\Delta\phi = \frac{0.15}{0.60} \times 360° = 90^\circ$.
 
 <b>If you get this wrong, revise:</b> [Phase and Phase Difference](#6-phase-and-phase-difference)
+
 </details>
 
 <details>
@@ -444,6 +430,7 @@ mm, what is the new intensity?
 W.
 
 <b>If you get this wrong, revise:</b> [Intensity and Amplitude](#5-intensity-and-amplitude)
+
 </details>
 
 <details>
@@ -455,6 +442,7 @@ source.
 
 <b>If you get this wrong, revise:</b>
 [Inverse Square Law for Point Sources](#inverse-square-law-for-point-sources)
+
 </details>
 
 <details>
@@ -466,6 +454,7 @@ $r_2 = 6.0$ m.
 
 <b>If you get this wrong, revise:</b>
 [Inverse Square Law for Point Sources](#inverse-square-law-for-point-sources)
+
 </details>
 
 <details>
@@ -476,6 +465,7 @@ direction. Calculate the transmitted intensity.
 **Answer.** $I = 120 \cos^2 60° = 120 \times 0.25 = 30$ W m$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Proof of Malus's Law](#proof-of-maluss-law)
+
 </details>
 
 <details>
@@ -489,6 +479,7 @@ $v = f\lambda = 31.8 \times 2.51 = 79.9$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Mathematical Description of a Progressive Wave](#mathematical-description-of-a-progressive-wave)
+
 </details>
 
 <details>
@@ -503,6 +494,7 @@ direction of travel, so their oscillation direction can be restricted.
 
 <b>If you get this wrong, revise:</b>
 [Transverse and Longitudinal Waves](#2-transverse-and-longitudinal-waves)
+
 </details>
 
 <details>
@@ -520,6 +512,7 @@ $$d = \frac{\Delta t \cdot v_P \cdot v_S}{v_P - v_S} = \frac{120 \times 6500 \ti
 
 <b>If you get this wrong, revise:</b>
 [Real-World Application: Seismic Waves](#real-world-application-seismic-waves)
+
 </details>
 
 <details>
@@ -532,13 +525,15 @@ middle filter is removed.
 **Answer.** With all three filters:
 
 - After filter 1 (vertical): $I_1 = I_0/2$, polarised vertically.
-- After filter 2 ($45^\circ$): $I_2 = (I_0/2)\cos^2 45° = (I_0/2)(1/2) = I_0/4$, polarised at $45^\circ$.
+- After filter 2 ($45^\circ$): $I_2 = (I_0/2)\cos^2 45° = (I_0/2)(1/2) = I_0/4$, polarised at
+  $45^\circ$.
 - After filter 3 (horizontal, $45^\circ$ from filter 2's axis):
   $I_3 = (I_0/4)\cos^2 45° = (I_0/4)(1/2) = I_0/8$.
 
 Without the middle filter (crossed polarisers): $I = (I_0/2)\cos^2 90° = 0$. No light passes.
 
 <b>If you get this wrong, revise:</b> [Proof of Malus's Law](#proof-of-maluss-law)
+
 </details>
 
 <details>
@@ -555,6 +550,7 @@ So $A_2 = A_1/4$.
 
 <b>If you get this wrong, revise:</b>
 [Amplitude and the Inverse Square Law](#amplitude-and-the-inverse-square-law)
+
 </details>
 
 <details>
@@ -574,6 +570,7 @@ $$\Delta f \approx \frac{2f_0 v}{c} = \frac{2 \times 5.0 \times 10^6 \times 0.80
 
 <b>If you get this wrong, revise:</b>
 [Real-World Application: Doppler Ultrasound](#real-world-application-doppler-ultrasound)
+
 </details>
 
 <details>
@@ -595,6 +592,7 @@ be the fully constructive case at $\Delta\phi = 0$).
 
 <b>If you get this wrong, revise:</b>
 [Phase Difference from Wave Equations](#phase-difference-from-wave-equations)
+
 </details>
 
 :::

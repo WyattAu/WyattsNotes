@@ -360,12 +360,10 @@ T address_taken() {
 NRVO is an optimization. At `-O0`, compilers typically do not perform it. Always ensure your move
 constructors are correct, because NRVO may not apply.
 
-:::warning
-NRVO can be inhibited by multiple return paths returning different named variables, by
+:::warning NRVO can be inhibited by multiple return paths returning different named variables, by
 returning a function parameter, or by certain compiler flags. Always write code that is correct even
 if NRVO fails — which means ensuring your move constructor is correct (or your copy constructor, as
-a fallback).
-:::
+a fallback). :::
 
 ## See Also
 
@@ -440,11 +438,9 @@ When a prvalue is bound to a `const T&` or a `T&&`, the lifetime of the material
 extended to match the lifetime of the reference [N4950 S11.4.7]. This is called **temporary lifetime
 extension**.
 
-:::warning
-Lifetime extension applies only when the reference is directly bound to the prvalue. If
+:::warning Lifetime extension applies only when the reference is directly bound to the prvalue. If
 the prvalue is passed through an intermediate function or stored in a member, lifetime extension
-does **not** propagate.
-:::
+does **not** propagate. :::
 
 ```cpp
 #include <iostream>

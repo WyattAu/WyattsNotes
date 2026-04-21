@@ -23,8 +23,7 @@ ZFS makes this rule easy to implement:
 3. **Tertiary copy (offsite):** Cloud storage via TrueNAS Cloud Sync or a remote NAS via ZFS
    replication.
 
-:::warning
-The 3-2-1 rule is a minimum, not a maximum. For critical data, consider extending to
+:::warning The 3-2-1 rule is a minimum, not a maximum. For critical data, consider extending to
 3-2-1-1-0: 3 copies, 2 media, 1 offsite, 1 air-gapped (disconnected), 0 errors (verified restores).
 :::
 
@@ -549,10 +548,8 @@ Store encryption keys in a secure, offsite location:
 2. **Physical copy:** Write the passphrase on paper and store in a safe deposit box.
 3. **Key escrow service:** Some password managers offer key escrow for trusted contacts.
 
-:::danger
-If you lose the encryption key, all data on the encrypted dataset is permanently
-irrecoverable. There is no backdoor. Always have a verified backup of the key.
-:::
+:::danger If you lose the encryption key, all data on the encrypted dataset is permanently
+irrecoverable. There is no backdoor. Always have a verified backup of the key. :::
 
 ## Backup Monitoring and Alerting
 
@@ -677,8 +674,7 @@ zfs get receive_resume_token backup/data
 zfs recv -s backup/data <<< "$(zfs get -H -o value receive_resume_token backup/data)"
 ```
 
-:::tip
-Resume tokens expire after approximately 5 minutes of inactivity in some implementations. For
+:::tip Resume tokens expire after approximately 5 minutes of inactivity in some implementations. For
 very large transfers over unreliable networks, consider using `mbuffer` as a network buffer to
 absorb short interruptions:
 
@@ -987,11 +983,9 @@ midclt call cloudsync.update 1 '{
 }'
 ```
 
-:::warning
-If you lose the encryption key, all cloud backups become permanently unrecoverable. Store
+:::warning If you lose the encryption key, all cloud backups become permanently unrecoverable. Store
 encryption keys in multiple secure locations: a password manager, a hardware security key, and a
-printed copy in a physical safe. Never store encryption keys alongside the backups themselves.
-:::
+printed copy in a physical safe. Never store encryption keys alongside the backups themselves. :::
 
 ### Compliance Considerations
 

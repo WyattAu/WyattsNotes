@@ -44,8 +44,8 @@ Determine the period of these small radial oscillations.
 - **3. Find the "Effective Spring Constant" (k_eff):**
   - For small oscillations, the restoring force is
     $F_{\mathrm{restore}} = - \frac{dU_{\mathrm{eff}}}{dr}$. For SHM, we need
-    $F \approx -k_{\mathrm{eff}}x$. This corresponds to the second derivative of the potential energy,
-    Taylor expanding around R:
+    $F \approx -k_{\mathrm{eff}}x$. This corresponds to the second derivative of the potential
+    energy, Taylor expanding around R:
     $U_{\mathrm{eff}}(R+x) \approx U_{\mathrm{eff}}(R) + \frac{1}{2} U''_{\mathrm{eff}}(R) x^2$.
   - So, $k_{\mathrm{eff}} = \frac{d^2U_{\mathrm{eff}}}{dr^2}$ evaluated at $r=R$.
   - $U''_{\mathrm{eff}}(r) = \frac{d}{dr}\left(\frac{GMm}{r^2} - \frac{L^2}{mr^3}\right) = -\frac{2GMm}{r^3} + \frac{3L^2}{mr^4}$.
@@ -58,10 +58,14 @@ Determine the period of these small radial oscillations.
   - Notice that the orbital angular speed is
     $\omega_{\mathrm{orb}} = \frac{v}{R} = \frac{\sqrt{GM/R}}{R} = \sqrt{\frac{GM}{R^3}}$.
   - The angular frequencies are identical. Therefore, the period of small radial oscillations is:
-  - $T_{\mathrm{osc}} = \frac{2\pi}{\omega_{\mathrm{osc}}} = 2\pi\sqrt{\frac{R^3}{GM}}$. This is exactly
-    the same as the orbital period (Kepler's Third Law).
+  - $T_{\mathrm{osc}} = \frac{2\pi}{\omega_{\mathrm{osc}}} = 2\pi\sqrt{\frac{R^3}{GM}}$. This is
+    exactly the same as the orbital period (Kepler's Third Law).
 
-<b>If you get this wrong, you should focus on:</b> The concept of effective potential energy in orbital mechanics, using calculus to find stable equilibrium points ($U'(r)=0$) and the effective spring constant ($k=U''(r)$), and the fundamental connection between the restoring force and the conditions for SHM.
+<b>If you get this wrong, you should focus on:</b> The concept of effective potential energy in
+orbital mechanics, using calculus to find stable equilibrium points ($U'(r)=0$) and the effective
+spring constant ($k=U''(r)$), and the fundamental connection between the restoring force and the
+conditions for SHM.
+
 </details>
 
 2. **Question (C.3 & C.4):** Two coherent point sources, S1 and S2, emit sound waves of wavelength
@@ -104,7 +108,10 @@ the connecting line be a displacement node or antinode for the standing wave? Ju
   - Since this location is an integer multiple of $\lambda/2$ from the fixed-end reflector, it must
     be a **displacement node**.
 
-<b>If you get this wrong, you should focus on:</b> Distinguishing between interference conditions in the near-field (between sources) and far-field (screen), the small angle approximation, and the conditions for nodes/antinodes in standing waves relative to a fixed boundary.
+<b>If you get this wrong, you should focus on:</b> Distinguishing between interference conditions in
+the near-field (between sources) and far-field (screen), the small angle approximation, and the
+conditions for nodes/antinodes in standing waves relative to a fixed boundary.
+
 </details>
 
 3. **Question (HL Only):** A single slit of width _b_ = 1.2 μm is illuminated by light of wavelength
@@ -160,7 +167,11 @@ first-order double-slit fringe relative to the central double-slit fringe?
   - The intensity of the first-order fringe is approximately **68.4%** of the central maximum's
     intensity.
 
-<b>If you get this wrong, you should focus on:</b> The concept of a diffraction envelope modulating an interference pattern, correctly applying the conditions for minima (single-slit) and maxima (double-slit), and understanding how to find the number of fringes within the central envelope. The intensity calculation is a very high-level synthesis step.
+<b>If you get this wrong, you should focus on:</b> The concept of a diffraction envelope modulating
+an interference pattern, correctly applying the conditions for minima (single-slit) and maxima
+(double-slit), and understanding how to find the number of fringes within the central envelope. The
+intensity calculation is a very high-level synthesis step.
+
 </details>
 
 4. **Question (C.5 & B.1 - HL Only):** A distant star is traveling directly away from an observer.
@@ -196,7 +207,7 @@ to the star.
   - $d = \sqrt{\frac{3.95 \times 10^{26}}{4\pi (1.0 \times 10^{-8})}} = \sqrt{3.14 \times 10^{33}} = 1.77 \times 10^{16}$
     m.
   - This is approximately 1.87 light-years.
-</details>
+  </details>
 
 ## Wave Properties, Reflection, Refraction, Diffraction, Interference, Standing Waves & Doppler Effect
 

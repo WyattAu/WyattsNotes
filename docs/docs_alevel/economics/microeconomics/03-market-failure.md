@@ -24,23 +24,19 @@ $$P \neq MSC \quad \mathrm{or equivalently} \quad MSB \neq MSC$$
 This leads to a **deadweight welfare loss**: the total surplus (consumer + producer + third-party)
 is not maximised.
 
-:::warning
-Common Pitfall Market failure does not mean the market has "failed" in a colloquial
+:::warning Common Pitfall Market failure does not mean the market has "failed" in a colloquial
 sense. It means the _outcome_ is suboptimal — there exists a reallocation that could make at least
-one person better off without making anyone worse off (Pareto improvement).
-:::
+one person better off without making anyone worse off (Pareto improvement). :::
 
 ## 2. Types of Market Failure
 
-:::info
-Board-Specific Note **AQA** requires detailed analysis of all four types of externality
+:::info Board-Specific Note **AQA** requires detailed analysis of all four types of externality
 (production/consumption, positive/negative) with diagrammatic welfare loss triangles. **Edexcel**
 emphasises the distinction between private and social costs/benefits using demand-supply diagrams.
 **CIE (9708)** covers market failure in the context of allocative efficiency and requires
 consumer/producer surplus, deadweight loss, and cost-benefit analysis. **OCR (A)** links market
 failure directly to government intervention and expects evaluation of whether intervention improves
-outcomes.
-:::
+outcomes. :::
 
 ### 2.1 Externalities
 
@@ -235,14 +231,12 @@ $$G = \frac{A}{A + B} = 2A = 1 - 2B$$
 
 ## 4. Government Intervention
 
-:::info
-Board-Specific Note **AQA** requires comparison of taxes, subsidies, regulation, and
+:::info Board-Specific Note **AQA** requires comparison of taxes, subsidies, regulation, and
 tradable permits with evaluation of each. **Edexcel** expects diagrammatic analysis showing the
 effect of Pigouvian taxes and subsidies on equilibrium. **CIE (9708)** covers government
 intervention alongside cost-benefit analysis and requires understanding of when intervention may
 fail. **OCR (A)** emphasises the link between market failure and government failure, requiring
-students to evaluate whether intervention worsens outcomes.
-:::
+students to evaluate whether intervention worsens outcomes. :::
 
 ### 4.1 Pigouvian Taxation
 
@@ -338,8 +332,7 @@ market failure worsens the outcome.
 6. **Principal-agent problems**: government officials (agents) may not act in the public's
    (principal's) interest
 
-:::tip
-Exam Technique When evaluating government intervention, always consider government failure. A
+:::tip Exam Technique When evaluating government intervention, always consider government failure. A
 strong answer acknowledges that government intervention is not automatically superior to the market
 — it depends on the relative severity of market failure vs government failure in each specific case.
 :::
@@ -355,12 +348,10 @@ education, healthcare, vaccinations.
 **Demerit goods**: goods that the government believes consumers _should_ consume less of. Examples:
 alcohol, tobacco, illegal drugs.
 
-:::warning
-Common Pitfall Merit and demerit goods are normative concepts — they depend on value
+:::warning Common Pitfall Merit and demerit goods are normative concepts — they depend on value
 judgements about what is "good" or "bad" for people. This is different from positive externalities
 (which are objective welfare effects on third parties). Many merit goods also generate positive
-externalities, but the concepts are distinct.
-:::
+externalities, but the concepts are distinct. :::
 
 ### Tragedy of the Commons
 

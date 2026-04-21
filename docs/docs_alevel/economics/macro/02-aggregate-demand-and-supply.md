@@ -32,11 +32,9 @@ $$AD = C + I + G + (X - M)$$
 The AD curve slopes **downward** from left to right (higher price level $\Rightarrow$ lower quantity
 of AD).
 
-:::info
-Board-Specific Note CIE (9708) and Edexcel (9EC0) require students to explain _all three_
+:::info Board-Specific Note CIE (9708) and Edexcel (9EC0) require students to explain _all three_
 channels of the downward-sloping AD curve. AQA often focuses on the interest rate and wealth
-effects. OCR may ask students to evaluate which channel is most significant in practice.
-:::
+effects. OCR may ask students to evaluate which channel is most significant in practice. :::
 
 We derive this from three channels:
 
@@ -127,8 +125,7 @@ where $Y^*$ is potential output, $P^e$ is the expected price level, and $\alpha 
 3. **Imperfect information** (Lucas, 1972): firms may confuse a general price increase with an
    increase in the relative price of their own product, and increase output in response.
 
-:::info
-Board-Specific Note AQA and Edexcel require students to explain sticky wages as the primary
+:::info Board-Specific Note AQA and Edexcel require students to explain sticky wages as the primary
 justification for the upward-sloping SRAS. CIE (9708) additionally tests the Lucas imperfect
 information model. OCR expects students to compare sticky-wage and sticky-price theories. New
 Classical economists (AQA Unit 4, CIE Paper 4) argue that SRAS is vertical even in the short run
@@ -154,14 +151,12 @@ $$P \uparrow \Rightarrow w \uparrow \mathrm{ proportionally} \Rightarrow \frac{w
 
 Therefore, the LRAS curve is vertical at $Y^*$. $\blacksquare$
 
-:::info
-Board-Specific Note Edexcel (9EC0) presents the LRAS as a _vertical line_ at the productive
+:::info Board-Specific Note Edexcel (9EC0) presents the LRAS as a _vertical line_ at the productive
 capacity of the economy. AQA uses the same vertical LRAS but emphasises the distinction between
 actual and potential growth. CIE (9708) may present an alternative diagram where LRAS is drawn as a
 curve becoming vertical at full employment — this is the _Keynesian AS curve_ and is acceptable only
 in CIE mark schemes. OCR expects students to explain _why_ LRAS is vertical using the classical
-dichotomy or factor mobility arguments.
-:::
+dichotomy or factor mobility arguments. :::
 
 #### Derivation of the LRAS from the Production Function
 
@@ -321,14 +316,12 @@ The classical self-correction mechanism rests on several assumptions that may no
    they may cut spending _further_, shifting AD leftward and deepening the downturn — the opposite
    of self-correction.
 
-:::info
-Board-Specific Note AQA (ECON4/7132) frequently asks 25-mark essays requiring evaluation of
+:::info Board-Specific Note AQA (ECON4/7132) frequently asks 25-mark essays requiring evaluation of
 the self-correcting mechanism. Edexcel (Paper 3) expects students to use AD/AS diagrams to
 illustrate both Keynesian and classical perspectives. CIE (9708 Paper 4) often asks students to
 discuss whether the economy can be left to self-correct. In all cases, examiners reward balanced
 argumentation: acknowledge the theoretical mechanism but critically assess its practical
-limitations.
-:::
+limitations. :::
 
 ## 4. The Multiplier
 
@@ -404,13 +397,11 @@ The multiplier model has several important limitations:
    spending. The IMF estimates are higher for economies in recession (1.5 or above) due to the zero
    lower bound on interest rates.
 
-:::info
-Board-Specific Note AQA (7132) Paper 2 often requires evaluation of the multiplier —
+:::info Board-Specific Note AQA (7132) Paper 2 often requires evaluation of the multiplier —
 students should discuss capacity constraints, crowding out, and the open economy multiplier. Edexcel
 (9EC0) Paper 2 expects students to calculate the multiplier and evaluate its effectiveness. CIE
 (9708) Paper 3 may ask students to calculate the multiplier from given data and discuss why it
-differs across countries.
-:::
+differs across countries. :::
 
 ## 5. The Accelerator Effect
 
@@ -463,25 +454,19 @@ evaluative answers:
    influenced by global supply chains, international capital flows, and exchange rate movements that
    the basic model treats only through the net exports component.
 
-:::info
-Board-Specific Note CIE (9708) Paper 4 essay questions often require students to evaluate
+:::info Board-Specific Note CIE (9708) Paper 4 essay questions often require students to evaluate
 the usefulness of the AD/AS model itself — a higher-order skill. AQA (7132) expects evaluation
 within the context of specific policy discussions (e.g., "Evaluate the view that fiscal policy is
 the most effective way to increase AD"). Edexcel (9EC0) Paper 3 may ask students to compare AD/AS
-with alternative models such as the Phillips Curve.
-:::
+with alternative models such as the Phillips Curve. :::
 
-:::warning
-Common Pitfall Students often confuse _shifts_ of AD/SRAS with _movements along_ the
+:::warning Common Pitfall Students often confuse _shifts_ of AD/SRAS with _movements along_ the
 curves. "An increase in the price level reduces AD" is WRONG — it causes a movement along the AD
-curve. "An increase in consumer confidence increases AD" is CORRECT — it shifts the AD curve.
-:::
+curve. "An increase in consumer confidence increases AD" is CORRECT — it shifts the AD curve. :::
 
-:::info
-Board-Specific Note Edexcel (9EC0) emphasises the distinction between AD and AS shifts. CIE
+:::info Board-Specific Note Edexcel (9EC0) emphasises the distinction between AD and AS shifts. CIE
 (9708) requires detailed diagrammatic analysis of equilibrium and shifts. AQA focuses on the
-multiplier and its policy implications.
-:::
+multiplier and its policy implications. :::
 
 ## 7. Problem Set
 

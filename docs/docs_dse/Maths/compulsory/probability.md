@@ -286,11 +286,9 @@ $$
 
 </details>
 
-:::info
-The addition rule generalises naturally. For any number of events, the key insight is: add
+:::info The addition rule generalises naturally. For any number of events, the key insight is: add
 all individual probabilities, subtract all pairwise intersections, add back all triple
-intersections, and so on, alternating signs.
-:::
+intersections, and so on, alternating signs. :::
 
 ## Conditional Probability
 
@@ -510,11 +508,9 @@ independent.
 
 </details>
 
-:::info
-When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
+:::info When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
 separately and compare. Do not assume independence from the problem description -- it must be
-verified or explicitly stated.
-:::
+verified or explicitly stated. :::
 
 ## Bayes' Theorem
 
@@ -669,7 +665,8 @@ $\checkmark$
 - $P(\mathrm{same colour}) = \frac{12}{30} + \frac{2}{30} = \frac{14}{30} = \frac{7}{15}$.
 - $P(\mathrm{different colours}) = \frac{8}{30} + \frac{8}{30} = \frac{16}{30} = \frac{8}{15}$.
 
-Note: $P(\mathrm{same}) + P(\mathrm{different}) = 1$, as expected since these events are complements.
+Note: $P(\mathrm{same}) + P(\mathrm{different}) = 1$, as expected since these events are
+complements.
 
 </details>
 

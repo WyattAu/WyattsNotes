@@ -47,10 +47,8 @@ Where:
 - $s$ = displacement
 - $t$ = time
 
-:::info
-These equations are only valid for **uniform acceleration**. When acceleration varies,
-calculus or graphical methods must be used.
-:::
+:::info These equations are only valid for **uniform acceleration**. When acceleration varies,
+calculus or graphical methods must be used. :::
 
 ### Worked Example 1
 
@@ -63,8 +61,8 @@ $$s = 0 + \frac{1}{2}(3)(5)^2 = \frac{1}{2}(3)(25) = 37.5 \mathrm{ m}$$
 
 ### Worked Example 2
 
-A ball is thrown vertically upwards with initial velocity $20 \mathrm{ m/s}$. Find the maximum height
-reached and the time taken to reach it.
+A ball is thrown vertically upwards with initial velocity $20 \mathrm{ m/s}$. Find the maximum
+height reached and the time taken to reach it.
 
 At maximum height, $v = 0$:
 
@@ -96,10 +94,8 @@ For a velocity-time graph:
 - Area under the graph = displacement
 - A straight line indicates uniform acceleration
 
-:::tip
-The area under a velocity-time graph gives displacement. For non-linear graphs, use counting
-squares or integration.
-:::
+:::tip The area under a velocity-time graph gives displacement. For non-linear graphs, use counting
+squares or integration. :::
 
 ### Free Fall
 
@@ -110,10 +106,8 @@ $$g \approx 9.81 \mathrm{ m/s}^2$$
 
 The acceleration is **downward** regardless of whether the object is moving up or down.
 
-:::warning
-Air resistance is neglected in ideal free-fall problems unless the question explicitly
-states otherwise.
-:::
+:::warning Air resistance is neglected in ideal free-fall problems unless the question explicitly
+states otherwise. :::
 
 ### Worked Example 3
 
@@ -152,15 +146,13 @@ Time of flight:
 
 $$T = \frac{2u\sin\theta}{g}$$
 
-:::info
-In projectile motion, the horizontal and vertical motions are **independent** of each other.
-They share only the common variable $t$ (time).
-:::
+:::info In projectile motion, the horizontal and vertical motions are **independent** of each other.
+They share only the common variable $t$ (time). :::
 
 ### Worked Example 4
 
-A ball is thrown with initial velocity $15 \mathrm{ m/s}$ at $30^\circ$ above the horizontal. Find the
-range and maximum height.
+A ball is thrown with initial velocity $15 \mathrm{ m/s}$ at $30^\circ$ above the horizontal. Find
+the range and maximum height.
 
 Horizontal component: $u_x = 15\cos 30^\circ = 12.99 \mathrm{ m/s}$
 
@@ -204,10 +196,8 @@ force on body `A`.
 
 $$F_{AB} = -F_{BA}$$
 
-:::warning
-Newton's third law pairs act on **different** bodies. Never add action-reaction pairs
-together as they do not act on the same object.
-:::
+:::warning Newton's third law pairs act on **different** bodies. Never add action-reaction pairs
+together as they do not act on the same object. :::
 
 ### Types of Forces
 
@@ -229,8 +219,8 @@ A free body diagram shows all the forces acting on a single object. Follow these
 
 ### Worked Example 5
 
-A block of mass $5 \mathrm{ kg}$ is placed on a smooth inclined plane at $30^\circ$ to the horizontal.
-Find the acceleration down the plane.
+A block of mass $5 \mathrm{ kg}$ is placed on a smooth inclined plane at $30^\circ$ to the
+horizontal. Find the acceleration down the plane.
 
 Forces parallel to the plane: $mg\sin\theta = 5(9.81)\sin 30^\circ = 24.525 \mathrm{ N}$
 
@@ -255,14 +245,13 @@ $$f_k = \mu_k N$$
 
 Where $\mu$ is the coefficient of friction and $N$ is the normal reaction force.
 
-:::tip
-$\mu_k \lt \mu_s$ is always true. Kinetic friction is less than the maximum static friction.
+:::tip $\mu_k \lt \mu_s$ is always true. Kinetic friction is less than the maximum static friction.
 :::
 
 ### Worked Example 6
 
-A $10 \mathrm{ kg}$ block rests on a rough horizontal surface with $\mu = 0.3$. A horizontal force of
-$40 \mathrm{ N}$ is applied. Does the block move?
+A $10 \mathrm{ kg}$ block rests on a rough horizontal surface with $\mu = 0.3$. A horizontal force
+of $40 \mathrm{ N}$ is applied. Does the block move?
 
 Normal reaction: $N = mg = 10 \times 9.81 = 98.1 \mathrm{ N}$
 
@@ -340,15 +329,13 @@ Or equivalently:
 
 $$E_{k1} + E_{p1} = E_{k2} + E_{p2} + W_{\mathrm{lost to friction}}$$
 
-:::info
-When applying conservation of energy, always identify all forms of energy at each point in
-the motion.
-:::
+:::info When applying conservation of energy, always identify all forms of energy at each point in
+the motion. :::
 
 ### Worked Example 7
 
-A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point `A`, $20 \mathrm{ m}$ above
-the ground. It descends to point `B`, $5 \mathrm{ m}$ above the ground. Find its speed at `B`,
+A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point `A`, $20 \mathrm{ m}$
+above the ground. It descends to point `B`, $5 \mathrm{ m}$ above the ground. Find its speed at `B`,
 neglecting friction.
 
 At `A`: $E_k = 0$, $E_p = 500 \times 9.81 \times 20 = 98100 \mathrm{ J}$
@@ -378,9 +365,11 @@ The SI unit of power is the watt (W), where $1 \mathrm{ W} = 1 \mathrm{ J/s}$.
 ### Worked Example 8
 
 A car of mass $1200 \mathrm{ kg}$ travels at a constant speed of $20 \mathrm{ m/s}$ up a slope of
-$\sin^{-1}(0.1)$. The total resistive force is $300 \mathrm{ N}$. Find the power output of the engine.
+$\sin^{-1}(0.1)$. The total resistive force is $300 \mathrm{ N}$. Find the power output of the
+engine.
 
-Component of weight along the slope: $mg\sin\theta = 1200 \times 9.81 \times 0.1 = 1177.2 \mathrm{ N}$
+Component of weight along the slope:
+$mg\sin\theta = 1200 \times 9.81 \times 0.1 = 1177.2 \mathrm{ N}$
 
 Total force the engine must overcome: $F = 1177.2 + 300 = 1477.2 \mathrm{ N}$
 
@@ -416,15 +405,14 @@ $$\mathrm{Impulse} = F\Delta t = \Delta p$$
 
 Impulse equals the change in momentum. The SI unit is N s.
 
-:::tip
-Impulse is the area under a force-time graph. For a variable force, use $J = \int F \, dt$.
+:::tip Impulse is the area under a force-time graph. For a variable force, use $J = \int F \, dt$.
 :::
 
 ### Worked Example 9
 
-A $0.15 \mathrm{ kg}$ cricket ball travelling at $30 \mathrm{ m/s}$ is hit back along the same line at
-$20 \mathrm{ m/s}$. If the bat is in contact with the ball for $0.005 \mathrm{ s}$, find the average
-force exerted.
+A $0.15 \mathrm{ kg}$ cricket ball travelling at $30 \mathrm{ m/s}$ is hit back along the same line
+at $20 \mathrm{ m/s}$. If the bat is in contact with the ball for $0.005 \mathrm{ s}$, find the
+average force exerted.
 
 Take the initial direction as positive.
 
@@ -444,15 +432,13 @@ magnitude of the average force is $1500 \mathrm{ N}$.
 **Perfectly inelastic collision:** The objects stick together after collision (maximum kinetic
 energy loss).
 
-:::info
-Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
-energy is only conserved in perfectly elastic collisions.
-:::
+:::info Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
+energy is only conserved in perfectly elastic collisions. :::
 
 ### Worked Example 10
 
-A $2 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides head-on with a $3 \mathrm{ kg}$ object at
-rest. If the collision is perfectly inelastic, find the common velocity after collision.
+A $2 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides head-on with a $3 \mathrm{ kg}$
+object at rest. If the collision is perfectly inelastic, find the common velocity after collision.
 
 By conservation of momentum:
 
@@ -466,8 +452,8 @@ $$v = 2 \mathrm{ m/s}$$
 
 ### Worked Example 11 (Elastic Collision)
 
-A $2 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides elastically with a $3 \mathrm{ kg}$ object
-at rest. Find the velocities after collision.
+A $2 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides elastically with a $3 \mathrm{ kg}$
+object at rest. Find the velocities after collision.
 
 Conservation of momentum:
 
@@ -499,14 +485,12 @@ $v_2 = 0$ (original situation) or $v_2 = 4 \mathrm{ m/s}$
 
 Therefore $v_1 = \frac{10 - 12}{2} = -1 \mathrm{ m/s}$
 
-The $2 \mathrm{ kg}$ object rebounds at $1 \mathrm{ m/s}$, and the $3 \mathrm{ kg}$ object moves forward
-at $4 \mathrm{ m/s}$.
+The $2 \mathrm{ kg}$ object rebounds at $1 \mathrm{ m/s}$, and the $3 \mathrm{ kg}$ object moves
+forward at $4 \mathrm{ m/s}$.
 
 ---
 
 ## Circular Motion
-
-
 
 <PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
 
@@ -537,11 +521,9 @@ The centripetal force required is:
 
 $$F_c = \frac{mv^2}{r} = m\omega^2 r$$
 
-:::warning
-Centripetal force is **not** a new force. It is the name given to the resultant force
+:::warning Centripetal force is **not** a new force. It is the name given to the resultant force
 directed towards the centre of the circle. It is provided by gravity, tension, friction, normal
-reaction, or a combination of these.
-:::
+reaction, or a combination of these. :::
 
 ### Worked Example 12
 
@@ -554,8 +536,8 @@ This force is provided by friction between the tyres and the road.
 
 ### Worked Example 13
 
-A particle of mass $0.5 \mathrm{ kg}$ is attached to a string of length $0.8 \mathrm{ m}$ and whirled in
-a horizontal circle at $3 \mathrm{ rev/s}$. Find the tension in the string.
+A particle of mass $0.5 \mathrm{ kg}$ is attached to a string of length $0.8 \mathrm{ m}$ and
+whirled in a horizontal circle at $3 \mathrm{ rev/s}$. Find the tension in the string.
 
 Angular velocity: $\omega = 2\pi \times 3 = 6\pi \mathrm{ rad/s}$
 
@@ -624,11 +606,9 @@ Orbital period:
 
 $$T = \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r^3}{GM}}$$
 
-:::info
-Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
-remaining above the same point on the equator. They orbit at approximately $42,300 \mathrm{ km}$ from
-the centre of the Earth.
-:::
+:::info Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
+remaining above the same point on the equator. They orbit at approximately $42,300 \mathrm{ km}$
+from the centre of the Earth. :::
 
 ### Worked Example 14
 
@@ -689,8 +669,8 @@ $$a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{(5 - 3)(9.81)}{3 + 5} = \frac{19.62
 
 $$T = \frac{2m_1m_2g}{m_1 + m_2} = \frac{2(3)(5)(9.81)}{8} = 36.79 \mathrm{ N}$$
 
-**Question 3:** A $0.5 \mathrm{ kg}$ ball is dropped from a height of $2 \mathrm{ m}$ onto a hard floor
-and rebounds to $1.5 \mathrm{ m}$. Find the impulse exerted by the floor.
+**Question 3:** A $0.5 \mathrm{ kg}$ ball is dropped from a height of $2 \mathrm{ m}$ onto a hard
+floor and rebounds to $1.5 \mathrm{ m}$. Find the impulse exerted by the floor.
 
 Velocity just before impact: $v = \sqrt{2gh} = \sqrt{2(9.81)(2)} = 6.26 \mathrm{ m/s}$ (downward)
 
@@ -700,9 +680,9 @@ Taking upward as positive: $\Delta p = 0.5(5.42 - (-6.26)) = 0.5(11.68) = 5.84 \
 
 Impulse $= 5.84 \mathrm{ N s}$ (upward)
 
-**Question 4:** A $3 \mathrm{ kg}$ object slides down a rough inclined plane of length $5 \mathrm{ m}$
-at $30^\circ$ to the horizontal. The coefficient of friction is $0.2$. Find the speed at the bottom
-if the object starts from rest.
+**Question 4:** A $3 \mathrm{ kg}$ object slides down a rough inclined plane of length
+$5 \mathrm{ m}$ at $30^\circ$ to the horizontal. The coefficient of friction is $0.2$. Find the
+speed at the bottom if the object starts from rest.
 
 Force down the plane: $mg\sin 30^\circ = 3(9.81)(0.5) = 14.715 \mathrm{ N}$
 
@@ -718,15 +698,16 @@ $$v^2 = u^2 + 2as = 0 + 2(3.205)(5) = 32.05$$
 
 $$v = 5.66 \mathrm{ m/s}$$
 
-**Question 5:** A satellite orbits the Earth at a height of $500 \mathrm{ km}$. Given the Earth's mass
-is $5.97 \times 10^{24} \mathrm{ kg}$ and radius is $6.37 \times 10^6 \mathrm{ m}$, find the orbital
-period.
+**Question 5:** A satellite orbits the Earth at a height of $500 \mathrm{ km}$. Given the Earth's
+mass is $5.97 \times 10^{24} \mathrm{ kg}$ and radius is $6.37 \times 10^6 \mathrm{ m}$, find the
+orbital period.
 
 $$r = 6.37 \times 10^6 + 500 \times 10^3 = 6.87 \times 10^6 \mathrm{ m}$$
 
 $$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.87 \times 10^6}} = \sqrt{5.79 \times 10^7} = 7611 \mathrm{ m/s}$$
 
 $$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.87 \times 10^6}{7611} = 5671 \mathrm{ s} = 94.5 \mathrm{ minutes}$$
+
 </details>
 
 ---
@@ -780,10 +761,8 @@ For a mass-spring system: $T = 2\pi\sqrt{\frac{m}{k}}$
 
 For a simple pendulum (small angle approximation): $T = 2\pi\sqrt{\frac{L}{g}}$
 
-:::info
-The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
-keep consistent time even as the swing gradually decreases.
-:::
+:::info The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
+keep consistent time even as the swing gradually decreases. :::
 
 ### Worked Example 15
 

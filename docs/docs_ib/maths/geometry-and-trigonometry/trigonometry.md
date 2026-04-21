@@ -160,20 +160,15 @@ For $y = a\sin(bx + c) + d$:
 - $c$ = horizontal phase shift (shift left by $\frac{c}{b}$)
 - $d$ = vertical shift
 
-:::tip
-Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
-and show at least one full period clearly.
-:::
+:::tip Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
+and show at least one full period clearly. :::
 
-{/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph
-  title="Trigonometric Functions: y = A sin(Bx + C) + D"
-  expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]}
-  width={800}
-  height={500}
-/>
+{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Trigonometric Functions: y
+= A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800}
+height={500} />
 
-Use the sliders to see how changing $a$, $b$, $c$, and $d$ in $y = a\sin(bx + c) + d$ affects the graph.
+Use the sliders to see how changing $a$, $b$, $c$, and $d$ in $y = a\sin(bx + c) + d$ affects the
+graph.
 
 ## Trigonometric Identities
 
@@ -348,11 +343,9 @@ $$
 \sin\theta = \sqrt{1 - \frac{1}{9}} = \frac{2\sqrt{2}}{3}
 $$
 
-:::tip
-Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
+:::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
 principal value -- you may need to find other solutions using the periodic properties or the ASTC
-rule.
-:::
+rule. :::
 
 ## Sine and Cosine Rules
 
@@ -459,9 +452,11 @@ $$
 
 Check both: $A + B_1 = 106.8° \lt 180^\circ$ and $A + B_2 = 153.2° \lt 180^\circ$. Both are valid.
 
-**Triangle 1:** $B = 66.8^\circ$, $C = 73.2^\circ$, $c_1 = \frac{7\sin 73.2°}{\sin 40°} \approx 10.4$
+**Triangle 1:** $B = 66.8^\circ$, $C = 73.2^\circ$,
+$c_1 = \frac{7\sin 73.2°}{\sin 40°} \approx 10.4$
 
-**Triangle 2:** $B = 113.2^\circ$, $C = 26.8^\circ$, $c_2 = \frac{7\sin 26.8°}{\sin 40°} \approx 4.89$
+**Triangle 2:** $B = 113.2^\circ$, $C = 26.8^\circ$,
+$c_2 = \frac{7\sin 26.8°}{\sin 40°} \approx 4.89$
 
 ## Non-Right-Angled Triangle Problems
 
@@ -493,8 +488,9 @@ $$
 
 ### Worked Example: Bearing Problem
 
-**Problem:** A ship sails from port $A$ on a bearing of $050^\circ$ for $15$ km to point $B$, then on a
-bearing of $110^\circ$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to $A$.
+**Problem:** A ship sails from port $A$ on a bearing of $050^\circ$ for $15$ km to point $B$, then
+on a bearing of $110^\circ$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to
+$A$.
 
 **Solution:**
 

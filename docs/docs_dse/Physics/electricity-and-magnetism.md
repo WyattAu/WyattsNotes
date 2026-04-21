@@ -50,11 +50,9 @@ Both objects end up with the same sign of charge.
 conductor. The conductor is earthed while the charged object is nearby, then the earth connection is
 removed. The conductor is left with a charge opposite to that of the inducing object.
 
-:::info
-In induction, the total charge of the isolated conductor remains zero during the process.
+:::info In induction, the total charge of the isolated conductor remains zero during the process.
 The earth connection allows charge to flow, so when the earth is disconnected, the conductor retains
-a net charge.
-:::
+a net charge. :::
 
 ### Coulomb's Law
 
@@ -68,7 +66,8 @@ Where:
 - $F$ = electrostatic force (N)
 - $Q_1$, $Q_2$ = magnitudes of the charges (C)
 - $r$ = distance between the charges (m)
-- $k = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9 \mathrm{ N m}^2\mathrm{/C}^2$ (Coulomb's constant)
+- $k = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9 \mathrm{ N m}^2\mathrm{/C}^2$ (Coulomb's
+  constant)
 - $\varepsilon_0 = 8.85 \times 10^{-12} \mathrm{ F/m}$ (permittivity of free space)
 
 In vector form (for the force on $Q_2$ due to $Q_1$):
@@ -97,7 +96,8 @@ The field points **away** from a positive charge and **towards** a negative char
 
 <PhetSimulation simulationId="charges-and-fields" title="Charges and Fields" />
 
-Place positive and negative charges to visualise the resulting electric field lines and equipotential lines.
+Place positive and negative charges to visualise the resulting electric field lines and
+equipotential lines.
 
 Electric field lines are a visual representation of the electric field:
 
@@ -159,9 +159,9 @@ The negative sign of $Q_2$ means the force is attractive.
 
 ### Worked Example 2
 
-A uniform electric field of strength $5000 \mathrm{ V/m}$ exists between two parallel plates separated
-by $4 \mathrm{ cm}$. Find the potential difference and the force on an electron placed between the
-plates.
+A uniform electric field of strength $5000 \mathrm{ V/m}$ exists between two parallel plates
+separated by $4 \mathrm{ cm}$. Find the potential difference and the force on an electron placed
+between the plates.
 
 $$V = Ed = 5000 \times 0.04 = 200 \mathrm{ V}$$
 
@@ -237,15 +237,15 @@ Where:
 **Common resistivities at $20^\circ\mathrm{C}$:**
 
 | Material  | Resistivity ($\Omega \mathrm{ m}$) |
-| --------- | -------------------------------- |
-| Silver    | $1.59 \times 10^{-8}$            |
-| Copper    | $1.68 \times 10^{-8}$            |
-| Gold      | $2.44 \times 10^{-8}$            |
-| Aluminium | $2.65 \times 10^{-8}$            |
-| Iron      | $9.71 \times 10^{-8}$            |
-| Nichrome  | $1.10 \times 10^{-6}$            |
-| Glass     | $\sim 10^{10} - 10^{14}$         |
-| Rubber    | $\sim 10^{13} - 10^{16}$         |
+| --------- | ---------------------------------- |
+| Silver    | $1.59 \times 10^{-8}$              |
+| Copper    | $1.68 \times 10^{-8}$              |
+| Gold      | $2.44 \times 10^{-8}$              |
+| Aluminium | $2.65 \times 10^{-8}$              |
+| Iron      | $9.71 \times 10^{-8}$              |
+| Nichrome  | $1.10 \times 10^{-6}$              |
+| Glass     | $\sim 10^{10} - 10^{14}$           |
+| Rubber    | $\sim 10^{13} - 10^{16}$           |
 
 ### Factors Affecting Resistance
 
@@ -266,11 +266,9 @@ thermistor), the resistance drops.
 **PTC (Positive Temperature Coefficient) thermistor:** Resistance increases as temperature
 increases.
 
-:::info
-NTC thermistors are commonly used in temperature sensing circuits. As the temperature rises,
+:::info NTC thermistors are commonly used in temperature sensing circuits. As the temperature rises,
 the resistance falls, causing more current to flow, which can be measured or used to trigger a
-circuit.
-:::
+circuit. :::
 
 ### Light-Dependent Resistor (LDR)
 
@@ -304,8 +302,8 @@ LDRs are used in light-sensitive switches, automatic street lights, and camera e
 
 ### Worked Example 3
 
-A copper wire has a length of $10 \mathrm{ m}$, a diameter of $0.5 \mathrm{ mm}$, and a resistivity of
-$1.68 \times 10^{-8} \Omega \mathrm{ m}$. Find its resistance.
+A copper wire has a length of $10 \mathrm{ m}$, a diameter of $0.5 \mathrm{ mm}$, and a resistivity
+of $1.68 \times 10^{-8} \Omega \mathrm{ m}$. Find its resistance.
 
 $$A = \pi r^2 = \pi \left(\frac{0.5 \times 10^{-3}}{2}\right)^2 = \pi (2.5 \times 10^{-4})^2 = \pi \times 6.25 \times 10^{-8} = 1.963 \times 10^{-7} \mathrm{ m}^2$$
 
@@ -342,10 +340,8 @@ For two resistors in parallel:
 
 $$R_{\mathrm{total}} = \frac{R_1 R_2}{R_1 + R_2}$$
 
-:::info
-In a parallel circuit, the total resistance is always less than the smallest individual
-resistance. Adding more parallel branches always decreases the total resistance.
-:::
+:::info In a parallel circuit, the total resistance is always less than the smallest individual
+resistance. Adding more parallel branches always decreases the total resistance. :::
 
 ### Combined Series and Parallel Circuits
 
@@ -437,9 +433,9 @@ $$P = I^2 R = (2.0)^2 \times 5.5 = 4 \times 5.5 = 22.0 \mathrm{ W}$$
 
 ### Worked Example 5
 
-A potential divider consists of $R_1 = 4 \mathrm{ k}\Omega$ and $R_2 = 6 \mathrm{ k}\Omega$ connected
-across a $12 \mathrm{ V}$ supply. Find the output voltage across $R_2$. A load resistance of
-$10 \mathrm{ k}\Omega$ is then connected across $R_2$. Find the new output voltage.
+A potential divider consists of $R_1 = 4 \mathrm{ k}\Omega$ and $R_2 = 6 \mathrm{ k}\Omega$
+connected across a $12 \mathrm{ V}$ supply. Find the output voltage across $R_2$. A load resistance
+of $10 \mathrm{ k}\Omega$ is then connected across $R_2$. Find the new output voltage.
 
 **Unloaded:**
 
@@ -503,8 +499,8 @@ $$\mathrm{Efficiency} = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}} \times 100\% = 
 
 ### Worked Example 6
 
-A $2 \mathrm{ kW}$ electric heater is used for $3$ hours per day. If the electricity rate is $\$0.90$
-per kWh, find the daily cost and the total energy consumed in one month (30 days).
+A $2 \mathrm{ kW}$ electric heater is used for $3$ hours per day. If the electricity rate is
+$\$0.90$ per kWh, find the daily cost and the total energy consumed in one month (30 days).
 
 Daily energy: $E = Pt = 2 \times 3 = 6 \mathrm{ kWh}$
 
@@ -580,8 +576,8 @@ $$\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d}$$
 ### Worked Example 7
 
 A wire carrying a current of $5 \mathrm{ A}$ is placed in a magnetic field of flux density
-$0.3 \mathrm{ T}$. The wire is $0.4 \mathrm{ m}$ long and makes an angle of $30^\circ$ with the field.
-Find the force on the wire.
+$0.3 \mathrm{ T}$. The wire is $0.4 \mathrm{ m}$ long and makes an angle of $30^\circ$ with the
+field. Find the force on the wire.
 
 $$F = BIL \sin\theta = 0.3 \times 5 \times 0.4 \times \sin 30^\circ$$
 
@@ -645,15 +641,13 @@ The direction of the induced EMF is such that it opposes the change producing it
 This is a consequence of conservation of energy. The induced current creates a magnetic field that
 opposes the change in flux that produced it.
 
-:::info
-To determine the direction of the induced current using Lenz's Law:
+:::info To determine the direction of the induced current using Lenz's Law:
 
 1. Identify whether the flux through the coil is increasing or decreasing
 2. If flux is increasing, the induced current creates a field to oppose the increase (opposing the
    external field)
 3. If flux is decreasing, the induced current creates a field to oppose the decrease (reinforcing
-the external field)
-:::
+   the external field) :::
 
 ### AC Generator
 
@@ -712,11 +706,9 @@ Real transformers have losses due to:
 - Hysteresis losses (repeated magnetisation and demagnetisation of the core)
 - Flux leakage (not all magnetic flux links both coils)
 
-:::tip
-Transformers only work with AC. A changing current in the primary is needed to produce a
+:::tip Transformers only work with AC. A changing current in the primary is needed to produce a
 changing magnetic flux, which induces an EMF in the secondary. DC produces a steady field and no
-induced EMF.
-:::
+induced EMF. :::
 
 ### Worked Example 9
 
@@ -843,10 +835,11 @@ Current through $12 \Omega$: $I_2 = \frac{V_p}{12} = \frac{3.6}{12} = 0.3 \mathr
 
 ### Worked Example 12: Power and Cost
 
-An electric kettle rated at $2000 \mathrm{ W}$, $220 \mathrm{ V}$ is used to boil $1.5 \mathrm{ kg}$ of
-water from $25^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Given the specific heat capacity of water is
-$4200 \mathrm{ J/(kg }^\circ\mathrm{C)}$ and the electricity rate is $\$0.90$ per kWh, find: (a) the
-time taken, (b) the cost, (c) the efficiency if $15\%$ of energy is lost to the surroundings.
+An electric kettle rated at $2000 \mathrm{ W}$, $220 \mathrm{ V}$ is used to boil $1.5 \mathrm{ kg}$
+of water from $25^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Given the specific heat capacity of
+water is $4200 \mathrm{ J/(kg }^\circ\mathrm{C)}$ and the electricity rate is $\$0.90$ per kWh,
+find: (a) the time taken, (b) the cost, (c) the efficiency if $15\%$ of energy is lost to the
+surroundings.
 
 **(a) Energy needed:**
 
@@ -875,8 +868,8 @@ $\mathrm{Cost} = \frac{555882}{3.6 \times 10^6} \times 0.90 = 0.1544 \times 0.90
 ### Worked Example 13: EMF and Internal Resistance
 
 A battery of unknown EMF $\varepsilon$ and internal resistance $r$ is connected to a variable
-resistor. When the resistance is $5 \Omega$, the current is $1.8 \mathrm{ A}$. When the resistance is
-$10 \Omega$, the current is $1.0 \mathrm{ A}$. Find $\varepsilon$ and $r$.
+resistor. When the resistance is $5 \Omega$, the current is $1.8 \mathrm{ A}$. When the resistance
+is $10 \Omega$, the current is $1.0 \mathrm{ A}$. Find $\varepsilon$ and $r$.
 
 Setting up two equations:
 
@@ -902,24 +895,24 @@ $$\varepsilon = 1.0(10 + 1.25) = 11.25 \mathrm{ V}$$
 
 ## Summary Table
 
-| Topic                     | Key Formula                                      | Key Concept                            |
-| ------------------------- | ------------------------------------------------ | -------------------------------------- |
-| Coulomb's Law             | $F = kQ_1 Q_2/r^2$                               | Inverse square law for electric forces |
-| Electric field            | $E = F/q = kQ/r^2$                               | Force per unit charge                  |
-| Uniform field             | $E = V/d$                                        | Parallel plates                        |
-| Ohm's Law                 | $V = IR$                                         | Linear I-V for ohmic conductors        |
-| Resistivity               | $R = \rho L/A$                                   | Material and geometry dependence       |
-| Series resistance         | $R = R_1 + R_2 + \cdots$                         | Same current                           |
-| Parallel resistance       | $1/R = 1/R_1 + 1/R_2 + \cdots$                   | Same voltage                           |
+| Topic                     | Key Formula                                          | Key Concept                            |
+| ------------------------- | ---------------------------------------------------- | -------------------------------------- |
+| Coulomb's Law             | $F = kQ_1 Q_2/r^2$                                   | Inverse square law for electric forces |
+| Electric field            | $E = F/q = kQ/r^2$                                   | Force per unit charge                  |
+| Uniform field             | $E = V/d$                                            | Parallel plates                        |
+| Ohm's Law                 | $V = IR$                                             | Linear I-V for ohmic conductors        |
+| Resistivity               | $R = \rho L/A$                                       | Material and geometry dependence       |
+| Series resistance         | $R = R_1 + R_2 + \cdots$                             | Same current                           |
+| Parallel resistance       | $1/R = 1/R_1 + 1/R_2 + \cdots$                       | Same voltage                           |
 | Potential divider         | $V_{\mathrm{out}} = V_{\mathrm{in}} R_2/(R_1 + R_2)$ | Voltage fraction                       |
-| Internal resistance       | $V = \varepsilon - Ir$                           | Lost volts                             |
-| Power                     | $P = IV = I^2 R = V^2/R$                         | Rate of energy transfer                |
-| Magnetic field (wire)     | $B = \mu_0 I/(2\pi r)$                           | Right-hand grip rule                   |
-| Magnetic field (solenoid) | $B = \mu_0 n I$                                  | Uniform field inside                   |
-| Force on wire             | $F = BIL \sin\theta$                             | Fleming's Left-Hand Rule               |
-| Faraday's Law             | $\varepsilon = -N d\Phi/dt$                      | Changing flux induces EMF              |
-| Transformer               | $V_s/V_p = N_s/N_p$                              | AC only, energy conservation           |
-| AC RMS                    | $V_{\mathrm{rms}} = V_0/\sqrt{2}$                  | Equivalent DC heating effect           |
+| Internal resistance       | $V = \varepsilon - Ir$                               | Lost volts                             |
+| Power                     | $P = IV = I^2 R = V^2/R$                             | Rate of energy transfer                |
+| Magnetic field (wire)     | $B = \mu_0 I/(2\pi r)$                               | Right-hand grip rule                   |
+| Magnetic field (solenoid) | $B = \mu_0 n I$                                      | Uniform field inside                   |
+| Force on wire             | $F = BIL \sin\theta$                                 | Fleming's Left-Hand Rule               |
+| Faraday's Law             | $\varepsilon = -N d\Phi/dt$                          | Changing flux induces EMF              |
+| Transformer               | $V_s/V_p = N_s/N_p$                                  | AC only, energy conservation           |
+| AC RMS                    | $V_{\mathrm{rms}} = V_0/\sqrt{2}$                    | Equivalent DC heating effect           |
 
 ---
 
@@ -944,8 +937,9 @@ $$\varepsilon = 1.0(10 + 1.25) = 11.25 \mathrm{ V}$$
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
-**Question 1:** Two small charged spheres, each carrying a charge of $+4 \times 10^{-8} \mathrm{ C}$,
-are separated by $0.05 \mathrm{ m}$ in a vacuum. Calculate the electrostatic force between them.
+**Question 1:** Two small charged spheres, each carrying a charge of
+$+4 \times 10^{-8} \mathrm{ C}$, are separated by $0.05 \mathrm{ m}$ in a vacuum. Calculate the
+electrostatic force between them.
 
 $$F = \frac{kQ_1 Q_2}{r^2} = \frac{(8.99 \times 10^9)(4 \times 10^{-8})^2}{(0.05)^2}$$
 
@@ -953,9 +947,9 @@ $$F = \frac{8.99 \times 10^9 \times 16 \times 10^{-16}}{0.0025} = \frac{1.4384 \
 
 The force is repulsive since both charges are positive.
 
-**Question 2:** A $2000 \mathrm{ W}$ heater, a $100 \mathrm{ W}$ lamp, and a $500 \mathrm{ W}$ fan are
-connected in parallel across a $220 \mathrm{ V}$ mains supply. Find the total current drawn and the
-total cost of running them for 5 hours at $\$0.90$ per kWh.
+**Question 2:** A $2000 \mathrm{ W}$ heater, a $100 \mathrm{ W}$ lamp, and a $500 \mathrm{ W}$ fan
+are connected in parallel across a $220 \mathrm{ V}$ mains supply. Find the total current drawn and
+the total cost of running them for 5 hours at $\$0.90$ per kWh.
 
 Total power: $P = 2000 + 100 + 500 = 2600 \mathrm{ W} = 2.6 \mathrm{ kW}$
 
@@ -966,8 +960,8 @@ Energy consumed: $E = Pt = 2.6 \times 5 = 13 \mathrm{ kWh}$
 Total cost: $\mathrm{Cost} = 13 \times 0.90 = \$11.70$
 
 **Question 3:** In a potential divider circuit, $R_1 = 10 \mathrm{ k}\Omega$ and
-$R_2 = 20 \mathrm{ k}\Omega$ are connected in series across a $9 \mathrm{ V}$ battery. A voltmeter of
-resistance $50 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading on the voltmeter.
+$R_2 = 20 \mathrm{ k}\Omega$ are connected in series across a $9 \mathrm{ V}$ battery. A voltmeter
+of resistance $50 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading on the voltmeter.
 
 The voltmeter acts as a load across $R_2$:
 
@@ -975,9 +969,9 @@ $$R_2 \parallel R_V = \frac{20 \times 50}{20 + 50} = \frac{1000}{70} = 14.29 \ma
 
 $$V_{\mathrm{out}} = 9 \times \frac{14.29}{10 + 14.29} = 9 \times \frac{14.29}{24.29} = 9 \times 0.5884 = 5.30 \mathrm{ V}$$
 
-**Question 4:** A cell of EMF $6 \mathrm{ V}$ and internal resistance $0.8 \Omega$ is connected to an
-external circuit consisting of a $4.2 \Omega$ resistor in series with a parallel combination of two
-$6 \Omega$ resistors. Find the current from the cell and the terminal PD.
+**Question 4:** A cell of EMF $6 \mathrm{ V}$ and internal resistance $0.8 \Omega$ is connected to
+an external circuit consisting of a $4.2 \Omega$ resistor in series with a parallel combination of
+two $6 \Omega$ resistors. Find the current from the cell and the terminal PD.
 
 Equivalent resistance of the parallel combination:
 
@@ -992,9 +986,9 @@ Current: $I = \frac{\varepsilon}{R_{\mathrm{total}}} = \frac{6}{8.0} = 0.75 \mat
 Terminal PD: $V = \varepsilon - Ir = 6 - 0.75 \times 0.8 = 6 - 0.6 = 5.4 \mathrm{ V}$
 
 **Question 5:** A rectangular coil of 100 turns, each of area $0.02 \mathrm{ m}^2$, is rotated at
-$50 \mathrm{ rev/s}$ in a uniform magnetic field of flux density $0.5 \mathrm{ T}$. The axis of rotation
-is perpendicular to the field. Find the peak EMF and the EMF when the plane of the coil makes an
-angle of $60^\circ$ with the field.
+$50 \mathrm{ rev/s}$ in a uniform magnetic field of flux density $0.5 \mathrm{ T}$. The axis of
+rotation is perpendicular to the field. Find the peak EMF and the EMF when the plane of the coil
+makes an angle of $60^\circ$ with the field.
 
 Angular frequency: $\omega = 2\pi f = 2\pi \times 50 = 100\pi \mathrm{ rad/s}$
 
@@ -1013,24 +1007,26 @@ the angle between the normal and the field is $30^\circ$, so:
 $$\varepsilon = \varepsilon_0 \sin 30^\circ = 314 \times 0.5 = 157 \mathrm{ V}$$
 
 **Question 6:** A step-down transformer with 2000 primary turns and 100 secondary turns is used to
-reduce the mains voltage of $220 \mathrm{ V}$ RMS to supply a device. If the device draws a current of
-$10 \mathrm{ A}$ and the transformer is $90\%$ efficient, find the secondary voltage, the primary
+reduce the mains voltage of $220 \mathrm{ V}$ RMS to supply a device. If the device draws a current
+of $10 \mathrm{ A}$ and the transformer is $90\%$ efficient, find the secondary voltage, the primary
 current, and the power loss.
 
 Secondary voltage: $V_s = 220 \times \frac{100}{2000} = 220 \times 0.05 = 11 \mathrm{ V}$
 
 Output power: $P_{\mathrm{out}} = V_s I_s = 11 \times 10 = 110 \mathrm{ W}$
 
-Input power: $P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{0.90} = \frac{110}{0.90} = 122.2 \mathrm{ W}$
+Input power:
+$P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{0.90} = \frac{110}{0.90} = 122.2 \mathrm{ W}$
 
 Primary current: $I_p = \frac{P_{\mathrm{in}}}{V_p} = \frac{122.2}{220} = 0.556 \mathrm{ A}$
 
-Power loss: $P_{\mathrm{loss}} = P_{\mathrm{in}} - P_{\mathrm{out}} = 122.2 - 110 = 12.2 \mathrm{ W}$
+Power loss:
+$P_{\mathrm{loss}} = P_{\mathrm{in}} - P_{\mathrm{out}} = 122.2 - 110 = 12.2 \mathrm{ W}$
 
 **Question 7:** An electron is accelerated from rest through a potential difference of
-$5000 \mathrm{ V}$ between two parallel plates separated by $2 \mathrm{ cm}$. Find the electric field
-strength, the force on the electron, and the velocity of the electron as it reaches the positive
-plate.
+$5000 \mathrm{ V}$ between two parallel plates separated by $2 \mathrm{ cm}$. Find the electric
+field strength, the force on the electron, and the velocity of the electron as it reaches the
+positive plate.
 
 Electric field: $E = \frac{V}{d} = \frac{5000}{0.02} = 2.5 \times 10^5 \mathrm{ V/m}$
 
@@ -1044,9 +1040,9 @@ $$v = \sqrt{\frac{2eV}{m_e}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 5
 $$v = \sqrt{\frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}}} = \sqrt{1.756 \times 10^{15}} = 4.19 \times 10^7 \mathrm{ m/s}$$
 
 **Question 8:** A straight wire of length $0.5 \mathrm{ m}$ carries a current of $8 \mathrm{ A}$ and
-lies perpendicular to a uniform magnetic field of flux density $0.4 \mathrm{ T}$. Calculate the force
-on the wire. If the wire is rotated so that it makes an angle of $45^\circ$ with the field, what is
-the new force?
+lies perpendicular to a uniform magnetic field of flux density $0.4 \mathrm{ T}$. Calculate the
+force on the wire. If the wire is rotated so that it makes an angle of $45^\circ$ with the field,
+what is the new force?
 
 Force when perpendicular ($\theta = 90^\circ$):
 
@@ -1080,8 +1076,8 @@ $$\varepsilon = 1.2 + 0.3 \times 2.67 = 1.2 + 0.8 = 2.0 \mathrm{ V}$$
 
 **Question 10:** A solenoid of length $0.3 \mathrm{ m}$ has 600 turns and carries a current of
 $4 \mathrm{ A}$. A straight wire running parallel to the axis of the solenoid at a distance of
-$0.02 \mathrm{ m}$ from it carries a current of $5 \mathrm{ A}$ in the same direction. Find the magnetic
-flux density inside the solenoid and the force per unit length on the wire.
+$0.02 \mathrm{ m}$ from it carries a current of $5 \mathrm{ A}$ in the same direction. Find the
+magnetic flux density inside the solenoid and the force per unit length on the wire.
 
 Magnetic flux density inside the solenoid:
 

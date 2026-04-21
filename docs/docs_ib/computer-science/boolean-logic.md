@@ -326,7 +326,8 @@ gate to combine them. Total: 3 NAND gates.
 
 NOR alone can implement all other gates:
 
-- NOT: Connect both inputs to the same signal: $\mathrm{NOR}(A, A) = \overline{A + A} = \overline{A}$
+- NOT: Connect both inputs to the same signal:
+  $\mathrm{NOR}(A, A) = \overline{A + A} = \overline{A}$
 - OR: NOR followed by NOT: $\mathrm{NOT}(\mathrm{NOR}(A, B)) = A + B$
 - AND: Use De Morgan's: $A \cdot B = \overline{\overline{A} + \overline{B}}$. Feed $\overline{A}$
   and $\overline{B}$ (each from a NOR-as-NOT) into a NOR gate.

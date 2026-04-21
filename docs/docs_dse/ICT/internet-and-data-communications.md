@@ -91,8 +91,7 @@ Every device is connected to every other device (full mesh) or to multiple devic
 | Failure impact | High fault tolerance; data can route around failed connections                                             |
 
 :::warning[Exam Tip] In exam questions, always discuss both advantages AND disadvantages of each
-topology. Star is the most common in modern LANs due to ease of management and fault isolation.
-:::
+topology. Star is the most common in modern LANs due to ease of management and fault isolation. :::
 
 ---
 
@@ -184,7 +183,7 @@ Key HTML tags:
 | `<head>`                          | Metadata, title, links to CSS/JS        |
 | `<body>`                          | Visible page content                    |
 | `<h1>` -- `<h6>`                  | Headings (h1 is largest)                |
-| ``                             | Paragraph                               |
+| ``                                | Paragraph                               |
 | `<a href="URL">`                  | Hyperlink                               |
 | `<img src="URL" alt="text">`      | Image                                   |
 | `<ul>`, `<ol>`, `<li>`            | Unordered list, ordered list, list item |
@@ -257,10 +256,8 @@ document.getElementById('myButton').onclick = function () {
 };
 ```
 
-:::info
-HTML = structure, CSS = style, JavaScript = behaviour. This three-way separation is a
-fundamental principle of web development.
-:::
+:::info HTML = structure, CSS = style, JavaScript = behaviour. This three-way separation is a
+fundamental principle of web development. :::
 
 ---
 
@@ -383,8 +380,7 @@ To register a domain:
 
 :::warning[Exam Tip] Fibre optics is immune to electromagnetic interference (EMI), supports the
 highest bandwidth and longest distances, but is the most expensive and difficult to install. Twisted
-pair is the cheapest but has the lowest bandwidth and is susceptible to EMI.
-:::
+pair is the cheapest but has the lowest bandwidth and is susceptible to EMI. :::
 
 ---
 
@@ -491,8 +487,7 @@ The OSI (Open Systems Interconnection) model has 7 layers:
 
 :::warning[Exam Tip] Memorise the OSI layers from top to bottom using mnemonics. Common one: **A**ll
 **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing (Application, Presentation, Session,
-Transport, Network, Data Link, Physical).
-:::
+Transport, Network, Data Link, Physical). :::
 
 ---
 

@@ -713,9 +713,7 @@ significant.
 | Context             | What biographical, historical, cultural, or literary context is relevant? How does context illuminate specific features of the poem?          |
 | Theme               | What is the poem's central concern? What proposition does it advance about that concern? How does the form shape the expression of the theme? |
 
-:::info
-For detailed examples of literary analysis applied to specific texts, see
+:::info For detailed examples of literary analysis applied to specific texts, see
 [A Streetcar Named Desire -- Close Reading and Analysis](streetcar-named-desire-analysis.md) and
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md).
-The analytical techniques described in this guide apply equally to prose and drama.
-:::
+The analytical techniques described in this guide apply equally to prose and drama. :::

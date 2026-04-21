@@ -78,12 +78,10 @@ $\square$
 | $O(2^n)$      | Exponential  | Subset enumeration, brute force |
 | $O(n!)$       | Factorial    | Permutation enumeration (TSP)   |
 
-:::info
-Board-specific **AQA** requires Big-O notation for standard algorithms (searching, sorting);
+:::info Board-specific **AQA** requires Big-O notation for standard algorithms (searching, sorting);
 focuses on time complexity. **CIE (9618)** covers Big-O, Big-Theta, and Big-Omega notation; requires
 space complexity analysis. **OCR (A)** requires Big-O notation; may require comparison of algorithm
-performance. **Edexcel** covers time and space complexity with Big-O notation.
-:::
+performance. **Edexcel** covers time and space complexity with Big-O notation. :::
 
 <hr />
 
@@ -108,8 +106,7 @@ where $P(I)$ is the probability of input $I$.
 | Average | $O(n \log n)$ | Random inputs (expected)      |
 | Worst   | $O(n^2)$      | Already sorted, min/max pivot |
 
-:::warning
-Pitfall Average case assumes a **uniform distribution** of inputs. Real-world data may
+:::warning Pitfall Average case assumes a **uniform distribution** of inputs. Real-world data may
 not be uniformly distributed. Always state the distribution assumption when discussing average case.
 :::
 
@@ -168,8 +165,8 @@ inputs).
 Compute the total cost of $n$ operations and divide by $n$.
 
 **Example: Dynamic array.** Total cost of $n$ insertions: $O(n)$ (proved in
-[Arrays and Records](/docs/alevel/computer-science/data-structures/arrays-and-records)).
-Amortised cost per insertion: $O(1)$.
+[Arrays and Records](/docs/alevel/computer-science/data-structures/arrays-and-records)). Amortised
+cost per insertion: $O(1)$.
 
 #### Accounting Method
 
@@ -244,6 +241,7 @@ For $n \geq 1$: $3n^2 + 7n + 4 \leq 3n^2 + 7n^2 + 4n^2 = 14n^2$.
 Choose $c = 14$ and $n_0 = 1$. ✓
 
 (More tightly: $c = 4, n_0 = 8$ also works.)
+
 </details>
 
 **Problem 2.** Prove that $n^2 \neq O(n)$.
@@ -259,6 +257,7 @@ any fixed $c$. Contradiction. $\square$
 
 Equivalently: $\lim_{n \to \infty} n^2 / n = \lim_{n \to \infty} n = \infty \neq 0$, so
 $n^2 \neq O(n)$.
+
 </details>
 
 **Problem 3.** Use the Master Theorem to solve $T(n) = 4T(n/2) + n^2 \log n$.
@@ -271,6 +270,7 @@ $a = 4$, $b = 2$, $c = \log_2 4 = 2$.
 $f(n) = n^2 \log n = n^c \log^1 n$.
 
 This is Case 2 with $k = 1$: $T(n) = \Theta(n^c \log^{k+1} n) = \Theta(n^2 \log^2 n)$.
+
 </details>
 
 **Problem 4.** Determine the time complexity of the following function:
@@ -298,6 +298,7 @@ Inner loop: $j$ takes values $1, 2, 4, 8, \ldots, 2^m \lt{} n$. Number of iterat
 $\lceil \log_2 n \rceil$.
 
 Total: $O(\log_3 n \cdot \log_2 n) = O(\log^2 n)$.
+
 </details>
 
 **Problem 5.** Show that $\log(n!) = \Theta(n \log n)$.
@@ -311,6 +312,7 @@ Total: $O(\log_3 n \cdot \log_2 n) = O(\log^2 n)$.
 $\log(n!) = \sum_{i=1}^{n} \log i \geq \sum_{i=\lceil n/2 \rceil}^{n} \log i \geq \frac{n}{2} \cdot \log(n/2) = \frac{n}{2}(\log n - 1) = \Omega(n \log n)$.
 
 Therefore: $\log(n!) = \Theta(n \log n)$. $\square$
+
 </details>
 
 **Problem 6.** A student claims that an algorithm with time complexity $O(n^3)$ is always slower
@@ -327,6 +329,7 @@ $n = 10$: A ≈ $1000 \times 100 \times 3.3 = 330,000$; B = $1000$. B is much fa
 
 The crossover point is where $n^3 = 1000n^2 \log n$, i.e., $n = 1000\log n$, which is at
 $n \approx 13,000$. Below this, B is faster.
+
 </details>
 
 **Problem 7.** Perform amortized analysis of a stack that supports push ($O(1)$), pop ($O(1)$), and
@@ -351,6 +354,7 @@ element. Pop and multipop use the stored credit ($\$1$ each), so their amortised
 - Multipop(k): actual = $k'$, $\Phi$ decreases by $k'$. Amortised = $k' - k' = 0$.
 
 All amortised costs: $O(1)$. $\square$
+
 </details>
 
 **Problem 8.** Determine the time complexity of the following recursive function:
@@ -375,6 +379,7 @@ $T(n) = 2(2T(n-2) + 1) + 1 = 4T(n-2) + 3 = 8T(n-3) + 7 = \cdots = 2^{n-1}T(1) + 
 $T(n) = \Theta(2^n)$.
 
 This is the Fibonacci-like recursion without memoization, leading to exponential time.
+
 </details>
 
 **Problem 9.** Rank the following functions in order of increasing growth rate: $n^{0.5}$,
@@ -415,6 +420,7 @@ $\square$
 For revision on specific algorithm complexities, see
 [Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms) and
 [Searching Algorithms](/docs/alevel/computer-science/algorithms/searching-algorithms).
+
 </details>
 
 <hr />
@@ -434,6 +440,7 @@ for i in range(n):
 
 Count the total number of times the inner loop body executes. When i = 0, the inner loop runs 0
 times. When i = 1, it runs 1 time. When i = 2, it runs 2 times. Sum this series.
+
 </details>
 
 <details>
@@ -447,6 +454,7 @@ The dominant term is $\frac{n^2}{2}$, so the time complexity is $O(n^2)$.
 
 The $\frac{1}{2}$ constant and the $-n$ term are dropped because Big-O ignores constant factors and
 lower-order terms.
+
 </details>
 
 **Problem 2.** Determine the Big-O time complexity of the following code fragment:
@@ -464,6 +472,7 @@ while i < n:
 
 The outer loop variable `i` doubles each iteration (1, 2, 4, 8, ...). How many times does the outer
 loop run? How many times does the inner loop run per outer iteration?
+
 </details>
 
 <details>
@@ -475,6 +484,7 @@ $\lceil \log_2 n \rceil$.
 **Inner loop:** Runs `n` times per outer iteration.
 
 **Total:** $n \times \log_2 n = O(n \log n)$.
+
 </details>
 
 **Problem 3.** Algorithm A has time complexity $O(n \log n)$ with a constant factor of 10, and
@@ -486,6 +496,7 @@ of $n$ is Algorithm A faster than Algorithm B?
 
 Algorithm A performs approximately $10n \log_2 n$ operations and Algorithm B performs approximately
 $n^2$ operations. Solve $10n \log_2 n < n^2$, which simplifies to $10 \log_2 n < n$.
+
 </details>
 
 <details>
@@ -508,6 +519,7 @@ Algorithm A becomes faster at approximately **$n = 60$**.
 
 This demonstrates that Big-O notation only describes asymptotic behaviour. For small inputs, the
 algorithm with the better Big-O complexity can be slower due to larger constant factors.
+
 </details>
 
 **Problem 4.** Compare the time complexities of the following pairs of algorithms and state which is
@@ -519,6 +531,7 @@ $O(n^3)$, (c) $O(n)$ vs $O(\log n)$.
 
 Use the limit test: if $\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$, then $f(n) = o(g(n))$, meaning
 $f$ grows strictly slower than $g$.
+
 </details>
 
 <details>
@@ -536,6 +549,7 @@ L'Hôpital's rule or the known hierarchy). So $\log n = o(n)$.
 
 **Summary (most to least efficient):**
 $O(\log n) \subset O(n) \subset O(n \log n) \subset O(n^3) \subset O(2^n)$.
+
 </details>
 
 **Problem 5.** Analyze the space complexity of the following function:
@@ -554,6 +568,7 @@ def create_matrix(n):
 
 Count the total number of elements stored. The matrix has `n` rows, each containing `2 * n`
 elements.
+
 </details>
 
 <details>
@@ -572,6 +587,7 @@ Each integer occupies $O(1)$ space, and the list overhead is also $O(1)$ per ele
 The dominant factor is the total number of stored values ($2n^2$). The variable `i`, the `row`
 reference, and the loop overhead all use $O(1)$ additional space and are negligible compared to the
 matrix itself.
+
 </details>
 
 **Problem 6.** Analyze the space complexity of the following recursive function:
@@ -588,6 +604,7 @@ def sum_recursive(arr, n):
 
 Recursive functions use stack space proportional to their recursion depth. How deep does the
 recursion go, and how much space does each stack frame use?
+
 </details>
 
 <details>
@@ -605,6 +622,7 @@ integer, $O(1)$), plus the return address and local variables — all $O(1)$ per
 the auxiliary space analysis since it is the input, not allocated by the function.
 
 Note: An iterative version of this function would use only $O(1)$ auxiliary space.
+
 </details>
 
 **Problem 7.** State the best-case, average-case, and worst-case time complexity of quicksort. For
@@ -615,6 +633,7 @@ each case, describe the type of input that produces that complexity and explain 
 
 Quicksort's performance depends on how the pivot partitions the array. Consider what happens when
 the pivot is the median element, a random element, and the minimum or maximum element.
+
 </details>
 
 <details>
@@ -629,6 +648,7 @@ the pivot is the median element, a random element, and the minimum or maximum el
 **Mitigation:** Randomised quicksort (choosing a random pivot) or median-of-three pivot selection
 makes the worst case extremely unlikely in practice, giving expected $O(n \log n)$ regardless of
 input.
+
 </details>
 
 **Problem 8.** Explain why binary search has $O(\log n)$ time complexity. In your answer, show how
@@ -639,6 +659,7 @@ the search range halves at each step and derive the maximum number of iterations
 
 Start with a range of size $n$. After each comparison, the range is reduced to at most half. After
 $k$ comparisons, the range size is at most $n / 2^k$. When does this become less than 1?
+
 </details>
 
 <details>
@@ -670,6 +691,7 @@ $$T(n) = \Theta(n^c \log^{k+1} n) = \Theta(\log n)$$
 $\log_2 n
 \approx 30$. This means binary search finds any element in a sorted billion-element array
 with at most 30 comparisons.
+
 </details>
 
 **Problem 9.** Determine the Big-O time complexity of the following recursive function:
@@ -689,6 +711,7 @@ def recursive_func(n):
 
 Set up the recurrence relation. The function does $O(n)$ work (the for loop) and then calls itself
 with $n/2$. This gives $T(n) = T(n/2) + O(n)$. Apply the Master Theorem.
+
 </details>
 
 <details>
@@ -716,6 +739,7 @@ $$T(n) = n + T(n/2) = n + n/2 + T(n/4) = n + n/2 + n/4 + \cdots + 1$$
 $$= n\left(1 + \frac{1}{2} + \frac{1}{4} + \cdots\right) = n \cdot 2 = 2n = O(n)$$
 
 **Time complexity: $O(n)$.**
+
 </details>
 
 **Problem 10.** (Exam-style) Two algorithms solve the same problem — counting inversions in an array
@@ -745,6 +769,7 @@ your reasoning.
 For Algorithm P, count the number of iterations of the nested loops. For Algorithm Q, recall that
 merge sort is $O(n \log n)$ and the modification to count inversions doesn't change the asymptotic
 complexity.
+
 </details>
 
 <details>
@@ -784,6 +809,7 @@ Algorithm Q is approximately **376 times faster** than Algorithm P for $n = 10{,
 $\approx 5 \times 10^{11}$ operations while Algorithm Q performs $\approx 20{,}000{,}000$ — a factor
 of 25,000×. This demonstrates the critical importance of choosing algorithms with better asymptotic
 complexity for large inputs.
+
 </details>
 
 :::

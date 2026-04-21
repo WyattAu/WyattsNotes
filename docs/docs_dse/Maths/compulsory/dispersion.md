@@ -203,8 +203,8 @@ We work with class intervals instead.
   classes. For example, if raw intervals are $10$--$19$ and $20$--$29$, the class boundaries are
   $9.5$--$19.5$ and $19.5$--$29.5$.
 - **Class width**: The difference between the upper and lower class boundaries.
-- **Class mark (midpoint)**: $x_i = \dfrac{\mathrm{lower boundary} + \mathrm{upper boundary}}{2}$, used
-  as the representative value for all data in the class.
+- **Class mark (midpoint)**: $x_i = \dfrac{\mathrm{lower boundary} + \mathrm{upper boundary}}{2}$,
+  used as the representative value for all data in the class.
 
 ### Mean of Grouped Data
 
@@ -527,6 +527,7 @@ multiplied by $2$ and then $5$ is added, find the new mean and new standard devi
    | 180 -- 199 | 2         |
 
 Estimate the median weight from the cumulative frequency distribution.
+
 <details>
 <summary>Answer</summary>
 
@@ -541,7 +542,7 @@ Estimate the median weight from the cumulative frequency distribution.
                   &= 139.5 + 5 = 144.5 \mathrm{ g}
   \end{aligned}
   $$
-</details>
+  </details>
 
 10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$, find $\sum x_i$, $\sum x_i^2$,
 the mean, and the population variance. Verify your variance using both the definition formula and
@@ -566,7 +567,7 @@ the computational formula.
     \sigma^2 &= \frac{334}{10} - \left(\frac{52}{10}\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
   \end{aligned}
   $$
-</details>
+  </details>
 
 11. **Question:** The weekly wages (in dollars) of $8$ workers in a small factory are
 $3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000$. The factory owner claims the average wage is

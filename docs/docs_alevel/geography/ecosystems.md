@@ -162,8 +162,8 @@ precipitation), vegetation, and fauna. The major terrestrial biomes are:
 **Location**: within $5^{\circ}$--$10^{\circ}$ of the equator (Amazon Basin, Congo Basin, Southeast
 Asia).
 
-**Climate**: hot ($25$--$28^{\circ}\mathrm{C}$ year-round), wet ($> 2000\;\mathrm{mm/year}$), no
-dry season. High humidity ($> 80\%$).
+**Climate**: hot ($25$--$28^{\circ}\mathrm{C}$ year-round), wet ($> 2000\;\mathrm{mm/year}$), no dry
+season. High humidity ($> 80\%$).
 
 **Structure**: multiple vertical layers:
 
@@ -282,8 +282,8 @@ growth and drainage. Low biodiversity but high endemism.
 <summary>Problem 1: Energy Flow Calculation</summary>
 
 A field of grass has an NPP of $20000\;\mathrm{kJ/m^2/year}$. Cattle grazing on the field consume
-$8000\;\mathrm{kJ/m^2/year}$. The cattle lose $6000\;\mathrm{kJ/m^2/year}$ through respiration
-and excretion. Calculate the ecological efficiency of energy transfer from the grass to the cattle.
+$8000\;\mathrm{kJ/m^2/year}$. The cattle lose $6000\;\mathrm{kJ/m^2/year}$ through respiration and
+excretion. Calculate the ecological efficiency of energy transfer from the grass to the cattle.
 
 $$\mathrm{Energy consumed by cattle} = 8000\;\mathrm{kJ/m^2/year}$$
 

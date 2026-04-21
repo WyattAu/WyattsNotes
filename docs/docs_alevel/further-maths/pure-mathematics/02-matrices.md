@@ -66,11 +66,9 @@ The $n \times n$ identity matrix $\mathbf{I}_n$ satisfies
 $\mathbf{A}\mathbf{I}_n = \mathbf{I}_n\mathbf{A} = \mathbf{A}$ for any
 $\mathbf{A} \in M_{m \times n}(\mathbb{R})$.
 
-:::warning
-Matrix multiplication is not commutative. Always check the order: $\mathbf{AB}$ means
+:::warning Matrix multiplication is not commutative. Always check the order: $\mathbf{AB}$ means
 "apply $\mathbf{B}$ first, then $\mathbf{A}$." When composing transformations, the rightmost matrix
-is applied first.
-:::
+is applied first. :::
 
 <hr />
 
@@ -162,10 +160,8 @@ Suppose $\mathbf{B}$ and $\mathbf{C}$ are both inverses of $\mathbf{A}$. Then:
 
 $$\mathbf{B} = \mathbf{B}\mathbf{I} = \mathbf{B}(\mathbf{AC}) = (\mathbf{BA})\mathbf{C} = \mathbf{IC} = \mathbf{C} \quad \square$$
 
-:::tip
-To verify your inverse, always check that $\mathbf{A}\mathbf{A}^{-1} = \mathbf{I}$. This
-catches sign errors and arithmetic mistakes immediately.
-:::
+:::tip To verify your inverse, always check that $\mathbf{A}\mathbf{A}^{-1} = \mathbf{I}$. This
+catches sign errors and arithmetic mistakes immediately. :::
 
 <details>
 <summary>Worked Example: $3\times3$ inverse</summary>
@@ -293,17 +289,13 @@ Note: $\det = 1$ for shears, so area is preserved.
 If transformation $\mathbf{A}$ is followed by transformation $\mathbf{B}$, the combined
 transformation is represented by $\mathbf{BA}$ (rightmost applied first).
 
-:::warning
-Order matters. A rotation followed by a reflection generally produces a different result
+:::warning Order matters. A rotation followed by a reflection generally produces a different result
 from a reflection followed by a rotation. The combined matrix is $\mathbf{BA}$ (not $\mathbf{AB}$)
-when $\mathbf{A}$ is applied first.
-:::
+when $\mathbf{A}$ is applied first. :::
 
-:::tip
-To find the matrix of a combined transformation, multiply the matrices in reverse order of
+:::tip To find the matrix of a combined transformation, multiply the matrices in reverse order of
 application. If the question says "reflect then rotate," compute
-$\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$.
-:::
+$\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$. :::
 
 <details>
 <summary>Worked Example: Combined transformation</summary>
@@ -327,10 +319,8 @@ transformation.
 
 ## 6. Matrix Transformations in 3D
 
-:::info
-3D transformations are required by AQA and appear on CIE P1. Edexcel and OCR focus primarily
-on 2D but may include basic $3\times3$ determinant and inverse calculations.
-:::
+:::info 3D transformations are required by AQA and appear on CIE P1. Edexcel and OCR focus primarily
+on 2D but may include basic $3\times3$ determinant and inverse calculations. :::
 
 ### 6.1 Rotations in 3D
 
@@ -365,10 +355,8 @@ Each has $\det = -1$, confirming orientation reversal.
 
 ## 7. Eigenvalues and Eigenvectors
 
-:::info
-Eigenvalues and eigenvectors are on the AQA syllabus only. Edexcel, OCR, and CIE do not
-require this topic at A Level.
-:::
+:::info Eigenvalues and eigenvectors are on the AQA syllabus only. Edexcel, OCR, and CIE do not
+require this topic at A Level. :::
 
 **Definition.** Let $\mathbf{A}$ be an $n \times n$ matrix. A scalar $\lambda$ is an _eigenvalue_ of
 $\mathbf{A}$ if there exists a non-zero vector $\mathbf{v}$ such that:
@@ -607,8 +595,8 @@ So $x = \dfrac{4}{5}$, $y = 3$, $z = \dfrac{8}{5}$.
 <hr />
 
 **Problem 6.** Find the single $2 \times 2$ matrix that represents an enlargement by scale factor 2
-about the origin followed by a rotation of $90^\circ$ anticlockwise. Show that this is equivalent to a
-single rotation of $90^\circ$ combined with an enlargement by factor 2.
+about the origin followed by a rotation of $90^\circ$ anticlockwise. Show that this is equivalent to
+a single rotation of $90^\circ$ combined with an enlargement by factor 2.
 
 <details>
 <summary>Hint</summary>
@@ -634,8 +622,8 @@ $\mathbf{E}\mathbf{R} = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatr
 Both give the same result:
 $\begin{pmatrix} 0 & -2 \\ 2 & 0 \end{pmatrix} = 2\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.
 
-This is a rotation by $90^\circ$ combined with an enlargement by factor 2, and the order is irrelevant
-because scalar multiples of the identity commute with all matrices.
+This is a rotation by $90^\circ$ combined with an enlargement by factor 2, and the order is
+irrelevant because scalar multiples of the identity commute with all matrices.
 
 </details>
 
@@ -712,8 +700,8 @@ $$\mathbf{A}^5 = \mathbf{P}\mathbf{D}^5\mathbf{P}^{-1} = \begin{pmatrix} 1 & 2 \
 
 <hr />
 
-**Problem 9.** Find the $3 \times 3$ matrix representing a rotation of $90^\circ$ anticlockwise about the
-$z$-axis. Verify that this matrix has determinant 1 and that it maps
+**Problem 9.** Find the $3 \times 3$ matrix representing a rotation of $90^\circ$ anticlockwise
+about the $z$-axis. Verify that this matrix has determinant 1 and that it maps
 $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ to $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$.
 
 <details>

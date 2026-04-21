@@ -74,13 +74,11 @@ The **central bank** (Bank of England, ECB, Federal Reserve) performs:
 
 5. **Issuer of currency**: has the monopoly on note issuance
 
-:::info
-Board-Specific Note AQA and Edexcel require detailed knowledge of the Bank of England's
+:::info Board-Specific Note AQA and Edexcel require detailed knowledge of the Bank of England's
 Monetary Policy Committee (MPC): 9 members, meets 8 times per year, sets the Bank Rate to achieve
 the 2% CPI inflation target. CIE (9708) focuses more on the _functions_ of central banks in general
 rather than a specific institution. OCR expects you to distinguish between the central bank's roles
-in monetary stability and financial stability, and to evaluate whether these roles can conflict.
-:::
+in monetary stability and financial stability, and to evaluate whether these roles can conflict. :::
 
 **Real-world example — the Bank of England during COVID-19 (2020):** In March 2020, the BoE cut Bank
 Rate from 0.75% to 0.1% (an emergency 0.65 percentage point cut) and launched a GBP 200 billion QE
@@ -109,11 +107,9 @@ Money serves three functions: medium of exchange, store of value, unit of accoun
 | **M2**                 | Cash + retail bank deposits (current accounts, instant-access savings)                     |
 | **M4 (broad money)**   | Cash + all retail and wholesale bank deposits + certificates of deposit                    |
 
-:::info
-Board-Specific Note The exact definitions vary by board and country. CIE (9708) uses M0, M1,
+:::info Board-Specific Note The exact definitions vary by board and country. CIE (9708) uses M0, M1,
 M2, M4. Edexcel emphasises M0 and M4. AQA focuses on broad vs narrow money. Always use the
-definitions in your specification.
-:::
+definitions in your specification. :::
 
 ### 2.2 Money Creation: The Money Multiplier
 
@@ -171,13 +167,11 @@ central bank sets the price of reserves (the interest rate) rather than the quan
 the endogenous money view. However, for exam purposes, the money multiplier remains the standard
 model on most A Level specifications.
 
-:::info
-Board-Specific Note AQA and Edexcel teach the traditional money multiplier model. CIE (9708)
+:::info Board-Specific Note AQA and Edexcel teach the traditional money multiplier model. CIE (9708)
 has recently moved towards acknowledging endogenous money but still primarily examines the
 multiplier approach. OCR tends to focus on the practical implications (why QE did not cause
 hyperinflation) rather than the theoretical debate. When answering, use the multiplier model but
-acknowledge its limitations for evaluation marks.
-:::
+acknowledge its limitations for evaluation marks. :::
 
 **Credit creation process (step-by-step balance sheets):**
 
@@ -247,13 +241,11 @@ need to cut rates to combat an impending downturn. The 2020 COVID recession foll
 causality is debated (the curve may have anticipated COVID-related disruptions). In the UK, the
 yield curve also inverted briefly in 2019, signalling expectations of BoE rate cuts.
 
-:::info
-Board-Specific Note AQA often asks students to explain the yield curve and its significance
+:::info Board-Specific Note AQA often asks students to explain the yield curve and its significance
 as a predictor. Edexcel may link the yield curve to business investment decisions (firms use
 long-term rates to evaluate projects). OCR emphasises the expectations theory and liquidity
 preference theory of the term structure. CIE generally does not examine the yield curve in depth but
-may ask about the relationship between bond prices and interest rates.
-:::
+may ask about the relationship between bond prices and interest rates. :::
 
 ## 4. Monetary Policy
 
@@ -310,14 +302,12 @@ understanding of each pathway:
    particularly relevant for small and medium-sized enterprises (SMEs) that depend on bank lending
    and cannot access capital markets directly.
 
-:::info
-Board-Specific Note AQA expects you to identify at least three transmission channels with
+:::info Board-Specific Note AQA expects you to identify at least three transmission channels with
 diagrams. Edexcel requires a clear chain of reasoning from the interest rate change to the final
 impact on AD, inflation, and employment. OCR is particularly interested in the _limitations_ of
 monetary policy transmission — time lags, interest elasticity, and the liquidity trap. CIE expects a
 more formal diagrammatic analysis using the IS-LM framework (though not all centres teach IS-LM, so
-check with your teacher).
-:::
+check with your teacher). :::
 
 **Evaluation — how effective is monetary policy?**
 
@@ -391,14 +381,12 @@ money supply, CPI inflation remained below the 2% target until mid-2021, when su
 disruptions and energy price shocks drove inflation higher. This illustrates that QE alone does not
 cause high inflation — the broader macroeconomic context matters.
 
-:::info
-Board-Specific Note AQA and Edexcel both require evaluation of QE. CIE (9708) Paper 4
+:::info Board-Specific Note AQA and Edexcel both require evaluation of QE. CIE (9708) Paper 4
 frequently includes questions on unconventional monetary policy. Key evaluation points: QE is less
 effective when banks are unwilling to lend (liquidity trap), the impact on the real economy is
 uncertain and hard to measure, and the exit strategy (quantitative tightening) is politically and
 economically risky. OCR may also ask about the interaction between QE and fiscal policy (monetary
-financing).
-:::
+financing). :::
 
 ## 5. Financial Markets
 
@@ -503,20 +491,16 @@ financial institutions ("too big to fail") has not been fully resolved. The fail
 in 2023 was resolved through a government-brokered takeover by UBS, reinforcing the perception that
 large banks will always be rescued.
 
-:::tip
-Exam Technique When analysing monetary policy, always distinguish between the _transmission
+:::tip Exam Technique When analysing monetary policy, always distinguish between the _transmission
 mechanism_ (how the policy affects the economy) and the _effectiveness_ (how well it works in
 practice). Consider time lags, the interest elasticity of investment, and the shape of the liquidity
-preference curve.
-:::
+preference curve. :::
 
-:::tip
-Exam Technique For evaluation questions (typically worth 12-25 marks), structure your answer
+:::tip Exam Technique For evaluation questions (typically worth 12-25 marks), structure your answer
 as: (1) identify the issue, (2) explain the mechanism with a diagram, (3) evaluate using
 **however/on the other hand/significantly** to introduce counterarguments, (4) conclude with a
 justified judgement. Always consider short-run vs long-run effects and the context (e.g., the state
-of the economy at the time).
-:::
+of the economy at the time). :::
 
 ## 7. Problem Set
 

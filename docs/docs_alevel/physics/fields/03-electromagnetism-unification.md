@@ -11,15 +11,11 @@ slug: electromagnetism-unification
 
 ## Electromagnetism Unification
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Maxwell's Equations (Integral Form)
 
@@ -69,9 +65,7 @@ restore this symmetry — and in doing so, predicted electromagnetic waves.
 oscillating electric and magnetic fields perpendicular to each other and to the direction of
 propagation, travelling at speed $c = 1/\sqrt{\mu_0\varepsilon_0}$ in vacuum.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA expects qualitative understanding of all four Maxwell's equations and their physical
 significance. Edexcel and CIE require the full derivation of $c$ from first principles. OCR (A)
@@ -215,9 +209,7 @@ From Maxwell's equations, EM waves have these properties:
 6. **Carry momentum**: radiation pressure $P = I/c$ for total absorption, $P = 2I/c$ for perfect
    reflection
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA and OCR (A) focus on the qualitative properties listed above. Edexcel and CIE may ask for the
 $E = cB$ relationship quantitatively. The Poynting vector is beyond most A Level syllabi but
@@ -246,11 +238,9 @@ Maxwell's unification showed that all these phenomena are described by the same 
 quantum nature of EM radiation (photons) would later be explained by Planck and Einstein, but the
 classical wave description remains valid and powerful.
 
-:::info
-Board Note The derivation of $c = 1/\sqrt{\mu_0\varepsilon_0}$ is required by Edexcel and
+:::info Board Note The derivation of $c = 1/\sqrt{\mu_0\varepsilon_0}$ is required by Edexcel and
 CIE. AQA and OCR (A) expect you to know the result and its significance but may not require the full
-derivation.
-:::
+derivation. :::
 
 ## 5. Faraday's Law — Applications and Lenz's Law Intuition
 
@@ -320,9 +310,7 @@ it provides smooth deceleration without mechanical contact.
 object, resistively heating it. Used in induction cooktops (where the pan itself becomes the heat
 source) and in industrial furnaces for melting metals.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA requires quantitative treatment of transformers (efficiency, turns ratio) and generators.
 Edexcel covers motional `EMF` in detail and includes the rotating coil derivation. CIE P4 requires
@@ -380,9 +368,7 @@ V.
 This tiny voltage in metals explains why Hall probes use **semiconductors** (with much lower $n$) to
 get measurable voltages.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 CIE P4 covers the Hall effect explicitly, including the derivation of $V_H = BI/(ntq)$. AQA mentions
 Hall probes as a method of measuring magnetic fields but does not require the full theory. Edexcel
@@ -433,9 +419,7 @@ $$r = \frac{1}{0.50}\sqrt{\frac{2 \times 1.99 \times 10^{-26} \times 10000}{1.60
 Carbon-13 ions ($m = 13 \times 1.66 \times 10^{-27}$ kg) would be deflected to a radius
 $\sqrt{13/12} \times 10.0 \approx 10.4$ cm — the two isotopes are clearly separated on the detector.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA covers the mass spectrometer quantitatively, including the derivation of $r = mv/(qB)$. Edexcel
 includes it as an application of circular motion in a magnetic field. CIE P4 covers it in detail,
@@ -510,9 +494,7 @@ decreasing cyclotron frequency.
 just 11 cm and accelerated protons to 80 keV. Modern cyclotrons in hospitals produce radioactive
 isotopes for PET scans by accelerating protons to energies of 10--20 MeV.
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
-:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
 
 AQA mentions the cyclotron briefly as an application of circular motion in magnetic fields. Edexcel
 does not typically require detailed knowledge. CIE P4 covers the cyclotron in moderate detail,

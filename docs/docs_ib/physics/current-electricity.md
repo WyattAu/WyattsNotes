@@ -129,8 +129,7 @@ where $L$ is the length of the plates.
 
 :::tip[Electron vs Proton Deflection] For the same field and entry speed, a proton is deflected
 $m_p/m_e \approx 1836$ times less than an electron. The direction of deflection is opposite for
-opposite charges.
-:::
+opposite charges. :::
 
 <details>
 <summary>Worked Example: Electron Deflection Between Parallel Plates</summary>
@@ -166,8 +165,9 @@ $$
 y = \frac{1}{2}at^2 = \frac{1}{2}(3.51 \times 10^{15})(1.67 \times 10^{-9})^2 = 4.9 \times 10^{-3}\mathrm{ m} = 4.9\mathrm{ mm}
 $$
 
-The electron deflects $4.9\mathrm{ mm}$ toward the positive plate. Since $y = 4.9\mathrm{ mm}$ is less
-than the half-separation of $10\mathrm{ mm}$, the electron exits the plates without striking them.
+The electron deflects $4.9\mathrm{ mm}$ toward the positive plate. Since $y = 4.9\mathrm{ mm}$ is
+less than the half-separation of $10\mathrm{ mm}$, the electron exits the plates without striking
+them.
 
 </details>
 
@@ -183,8 +183,8 @@ $$
 I = \frac{\Delta Q}{\Delta t}
 $$
 
-The SI unit is the ampere ($\mathrm{A}$), where $1\mathrm{ A} = 1\mathrm{ C s}^{-1}$. Conventional current
-flows from positive to negative terminal, opposite to the drift direction of electrons.
+The SI unit is the ampere ($\mathrm{A}$), where $1\mathrm{ A} = 1\mathrm{ C s}^{-1}$. Conventional
+current flows from positive to negative terminal, opposite to the drift direction of electrons.
 
 ### 2.2 Derivation of $I = nAev_d$
 
@@ -227,14 +227,13 @@ v_d = \frac{I}{nAe} = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^{-1
 $$
 
 This is extraordinarily slow. The signal (the electric field) propagates at a significant fraction
-of $c$, but the electrons themselves crawl.
-:::
+of $c$, but the electrons themselves crawl. :::
 
 <details>
 <summary>Worked Example: Drift Velocity in Aluminium</summary>
 
-An aluminium wire of diameter $0.50\mathrm{ mm}$ carries a current of $2.0\mathrm{ A}$. For aluminium,
-the free electron density is $n = 6.0 \times 10^{28}\mathrm{ m}^{-3}$.
+An aluminium wire of diameter $0.50\mathrm{ mm}$ carries a current of $2.0\mathrm{ A}$. For
+aluminium, the free electron density is $n = 6.0 \times 10^{28}\mathrm{ m}^{-3}$.
 
 Cross-sectional area:
 
@@ -304,14 +303,13 @@ $$
 where $L$ is the length and $A$ is the cross-sectional area. The SI unit of resistivity is
 $\Omega\,\mathrm{m}$.
 
-The inverse quantity is conductivity: $\sigma = 1/\rho$, with SI unit $\mathrm{S m}^{-1}$ (siemens per
-metre).
+The inverse quantity is conductivity: $\sigma = 1/\rho$, with SI unit $\mathrm{S m}^{-1}$ (siemens
+per metre).
 
 :::info[Data Booklet Resistivity Values] Copper:
 $\rho \approx 1.7 \times 10^{-8}\,\Omega\,\mathrm{m}$. Nichrome (alloy):
 $\rho \approx 1.1 \times 10^{-6}\,\Omega\,\mathrm{m}$. Semiconductors: $\rho$ spans many orders of
-magnitude.
-:::
+magnitude. :::
 
 ### 3.3 Factors Affecting Resistance
 
@@ -323,16 +321,17 @@ R_T = R_0[1 + \alpha(T - T_0)]
 $$
 
 where $\alpha$ is the temperature coefficient of resistance. For copper,
-$\alpha \approx 3.9 \times 10^{-3}\mathrm{ K}^{-1}$. The physical mechanism is that lattice vibrations
-(phonons) increase with temperature, scattering conduction electrons more frequently and reducing
-their mean free path.
+$\alpha \approx 3.9 \times 10^{-3}\mathrm{ K}^{-1}$. The physical mechanism is that lattice
+vibrations (phonons) increase with temperature, scattering conduction electrons more frequently and
+reducing their mean free path.
 
 For semiconductors, resistance decreases with temperature because more charge carriers are promoted
 across the band gap into the conduction band.
 
 **Material.** Different materials have vastly different resistivities. Conductors
 ($\rho \lt 10^{-4}\,\Omega\,\mathrm{m}$), semiconductors ($\rho$ between roughly $10^{-4}$ and
-$10^{6}\,\Omega\,\mathrm{m}$), and insulators ($\rho \gt 10^{6}\,\Omega\,\mathrm{m}$) form a continuum.
+$10^{6}\,\Omega\,\mathrm{m}$), and insulators ($\rho \gt 10^{6}\,\Omega\,\mathrm{m}$) form a
+continuum.
 
 **Geometry.** Longer conductors have greater resistance (more scattering centres along the path).
 Thicker conductors have lower resistance (more parallel conduction channels).
@@ -351,8 +350,8 @@ is symmetric about the origin.
 
 **Semiconductor diode.** The I-V curve is highly asymmetric. In forward bias (positive voltage
 across the diode in the direction of easy current flow), negligible current flows until the
-threshold voltage is reached (approximately $0.7\mathrm{ V}$ for silicon diodes), after which current
-rises steeply. In reverse bias, only a tiny leakage current flows until breakdown occurs.
+threshold voltage is reached (approximately $0.7\mathrm{ V}$ for silicon diodes), after which
+current rises steeply. In reverse bias, only a tiny leakage current flows until breakdown occurs.
 
 **Thermistor.** An NTC (negative temperature coefficient) thermistor has a resistance that decreases
 as temperature increases. As more current flows, self-heating reduces resistance, so the I-V curve
@@ -377,7 +376,8 @@ and the geometry; resistivity is an intrinsic property of the material alone.
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
-Build series and parallel circuits with resistors, light bulbs, and switches. Measure current and voltage at different points to verify Kirchhoff's laws and Ohm's law.
+Build series and parallel circuits with resistors, light bulbs, and switches. Measure current and
+voltage at different points to verify Kirchhoff's laws and Ohm's law.
 
 ### 4.1 Series Circuits
 
@@ -446,9 +446,10 @@ and potential drops across resistors are negative.
 <details>
 <summary>Worked Example: Kirchhoff's Laws</summary>
 
-Consider a circuit with two cells and three resistors. Cell 1 has emf $\varepsilon_1 = 12\mathrm{ V}$
-and cell 2 has emf $\varepsilon_2 = 6\mathrm{ V}$ (opposing). The resistors are $R_1 = 4\,\Omega$,
-$R_2 = 6\,\Omega$, and $R_3 = 2\,\Omega$, all in series with the cells.
+Consider a circuit with two cells and three resistors. Cell 1 has emf
+$\varepsilon_1 = 12\mathrm{ V}$ and cell 2 has emf $\varepsilon_2 = 6\mathrm{ V}$ (opposing). The
+resistors are $R_1 = 4\,\Omega$, $R_2 = 6\,\Omega$, and $R_3 = 2\,\Omega$, all in series with the
+cells.
 
 Applying KVL around the single loop (travelling clockwise):
 
@@ -468,9 +469,9 @@ $$
 I = 0.50\mathrm{ A}
 $$
 
-The p.d. across each resistor: $V_1 = 2.0\mathrm{ V}$, $V_2 = 3.0\mathrm{ V}$, $V_3 = 1.0\mathrm{ V}$.
-These sum to $6\mathrm{ V}$, which equals the net emf of $12 - 6 = 6\mathrm{ V}$, confirming energy
-conservation.
+The p.d. across each resistor: $V_1 = 2.0\mathrm{ V}$, $V_2 = 3.0\mathrm{ V}$,
+$V_3 = 1.0\mathrm{ V}$. These sum to $6\mathrm{ V}$, which equals the net emf of
+$12 - 6 = 6\mathrm{ V}$, confirming energy conservation.
 
 </details>
 
@@ -490,8 +491,8 @@ function of the physical quantity being sensed.
 
 **Sensing circuits.** An NTC thermistor in the lower position produces a p.d. that rises with
 temperature (since $R_2$ falls, but more current flows, and the voltage drop across the upper fixed
-resistor increases, so $V_{\mathrm{out}}$ measured across $R_2$ actually decreases). Careful analysis
-is needed depending on which component the output is measured across.
+resistor increases, so $V_{\mathrm{out}}$ measured across $R_2$ actually decreases). Careful
+analysis is needed depending on which component the output is measured across.
 
 A common configuration places the variable resistor (e.g., thermistor) as $R_1$ and measures
 $V_{\mathrm{out}}$ across $R_2$ (fixed). As temperature rises, $R_1$ decreases, so more of
@@ -649,8 +650,7 @@ $$
 
 :::warning[Efficiency at Maximum Power] At $R_L = r$, the efficiency is only 50% (half the power is
 dissipated in the internal resistance). In power distribution systems, $R_L \gt r$ is preferred for
-higher efficiency, even though less total power is delivered.
-:::
+higher efficiency, even though less total power is delivered. :::
 
 ### 5.4 Battery Configurations
 
@@ -826,8 +826,7 @@ which is always less than $R$. The measured p.d. is lower than the true p.d.
 :::tip[Minimising Measurement Error] For ammeters: use instruments with the smallest possible
 internal resistance. For voltmeters: use instruments with the largest possible internal resistance.
 A voltmeter is considered sufficiently ideal if $R_V \gt 100R$, where $R$ is the resistance across
-which it is connected.
-:::
+which it is connected. :::
 
 ### 7.3 Galvanometer as Ammeter and Voltmeter
 
@@ -864,8 +863,8 @@ $$
 \varepsilon = \frac{E_{\mathrm{chemical}}}{Q}
 $$
 
-For a cell that converts $E_{\mathrm{chemical}}$ joules of chemical energy when $Q$ coulombs of charge
-flow, the emf is $\varepsilon = E_{\mathrm{chemical}}/Q$.
+For a cell that converts $E_{\mathrm{chemical}}$ joules of chemical energy when $Q$ coulombs of
+charge flow, the emf is $\varepsilon = E_{\mathrm{chemical}}/Q$.
 
 A rechargeable cell can reverse this process: during charging, electrical energy is converted back
 to chemical energy. The charging voltage must exceed the emf to drive current through the cell
@@ -907,9 +906,9 @@ This method works for any circuit topology, regardless of complexity.
 <details>
 <summary>Worked Example: Multi-Loop Circuit</summary>
 
-Two cells are connected in parallel across a common load. Cell 1 has $\varepsilon_1 = 12\mathrm{ V}$,
-$r_1 = 1.0\,\Omega$. Cell 2 has $\varepsilon_2 = 10\mathrm{ V}$, $r_2 = 2.0\,\Omega$. The load
-resistor is $R_L = 5.0\,\Omega$.
+Two cells are connected in parallel across a common load. Cell 1 has
+$\varepsilon_1 = 12\mathrm{ V}$, $r_1 = 1.0\,\Omega$. Cell 2 has $\varepsilon_2 = 10\mathrm{ V}$,
+$r_2 = 2.0\,\Omega$. The load resistor is $R_L = 5.0\,\Omega$.
 
 Let $I_1$ be the current from cell 1, $I_2$ from cell 2, and $I_L$ through the load (all assumed
 clockwise through the load).
@@ -989,18 +988,18 @@ series to prevent excessive current when the diode conducts.
 :::info[IB Physics Data Booklet — Topic 5] The following are the key equations for current
 electricity found in the IB Physics data booklet:
 
-| Quantity                         | Equation                                                |
-| -------------------------------- | ------------------------------------------------------- |
-| Coulomb's law                    | $F = \dfrac{q_1 q_2}{4\pi\varepsilon_0 r^2}$            |
-| Electric field (point charge)    | $E = \dfrac{q}{4\pi\varepsilon_0 r^2}$                  |
-| Electric field (parallel plates) | $E = \dfrac{V}{d}$                                      |
-| Current (drift velocity)         | $I = nAev_d$                                            |
-| Ohm's law                        | $V = IR$                                                |
-| Resistance and resistivity       | $R = \dfrac{\rho L}{A}$                                 |
-| Power                            | $P = IV = I^2R = \dfrac{V^2}{R}$                        |
-| Internal resistance              | $V = \varepsilon - Ir$                                  |
+| Quantity                         | Equation                                                    |
+| -------------------------------- | ----------------------------------------------------------- |
+| Coulomb's law                    | $F = \dfrac{q_1 q_2}{4\pi\varepsilon_0 r^2}$                |
+| Electric field (point charge)    | $E = \dfrac{q}{4\pi\varepsilon_0 r^2}$                      |
+| Electric field (parallel plates) | $E = \dfrac{V}{d}$                                          |
+| Current (drift velocity)         | $I = nAev_d$                                                |
+| Ohm's law                        | $V = IR$                                                    |
+| Resistance and resistivity       | $R = \dfrac{\rho L}{A}$                                     |
+| Power                            | $P = IV = I^2R = \dfrac{V^2}{R}$                            |
+| Internal resistance              | $V = \varepsilon - Ir$                                      |
 | Potential divider                | $V_{\mathrm{out}} = V_{\mathrm{in}} \dfrac{R_2}{R_1 + R_2}$ |
-| Wheatstone bridge                | $\dfrac{R_1}{R_2} = \dfrac{R_3}{R_4}$                   |
+| Wheatstone bridge                | $\dfrac{R_1}{R_2} = \dfrac{R_3}{R_4}$                       |
 
 :::
 

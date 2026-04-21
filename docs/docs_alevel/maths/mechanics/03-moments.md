@@ -18,10 +18,8 @@ slug: moments
 | OCR (A)    | Paper 1 | Includes non-uniform bodies   |
 | CIE (9709) | P4      | Moments and equilibrium       |
 
-:::info
-The principle of moments is fundamental. Always state clearly the point about which you are
-taking moments, and include the direction (clockwise/anticlockwise) of each moment.
-:::
+:::info The principle of moments is fundamental. Always state clearly the point about which you are
+taking moments, and include the direction (clockwise/anticlockwise) of each moment. :::
 
 <hr />
 
@@ -45,7 +43,8 @@ friend balance you.
 **Crane counterweight.** Tower cranes have a heavy concrete counterweight on the short arm behind
 the tower. When a load is lifted on the long arm, the counterweight generates a restoring
 (anticlockwise) moment about the base to prevent the crane from tipping. The counterweight must
-satisfy $W_{\mathrm{load}} \times d_{\mathrm{long}} \lt W_{\mathrm{counter}} \times d_{\mathrm{short}}$.
+satisfy
+$W_{\mathrm{load}} \times d_{\mathrm{long}} \lt W_{\mathrm{counter}} \times d_{\mathrm{short}}$.
 
 **Spanner and bolt.** A spanner of length $0.2\,\mathrm{m}$ applies a force of $50\,\mathrm{N}$
 perpendicular to its length. The moment on the bolt is $50 \times 0.2 = 10\,\mathrm{Nm}$. A longer
@@ -99,11 +98,9 @@ $R_{\mathrm{left}} = W + P - R_{\mathrm{right}} = \dfrac{W}{2} + \dfrac{P(L-a)}{
 Notice that as the vehicle moves right ($a$ increases), $R_{\mathrm{right}}$ increases and
 $R_{\mathrm{left}}$ decreases — the bridge load redistributes continuously.
 
-:::warning
-The principle of moments applies about **any** point — not just the pivot. Choosing a
+:::warning The principle of moments applies about **any** point — not just the pivot. Choosing a
 clever point (often where an unknown force acts) can simplify calculations by eliminating that
-unknown from the moment equation.
-:::
+unknown from the moment equation. :::
 
 <hr />
 
@@ -164,10 +161,8 @@ $$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$$
 The direction of $\boldsymbol{\tau}$ is given by the right-hand rule and is perpendicular to the
 plane containing $\mathbf{r}$ and $\mathbf{F}$.
 
-:::info
-In A Level Maths, we work in 2D, so torque is effectively a signed scalar. Clockwise and
-anticlockwise are the only two directions you need to consider.
-:::
+:::info In A Level Maths, we work in 2D, so torque is effectively a signed scalar. Clockwise and
+anticlockwise are the only two directions you need to consider. :::
 
 ### 3.1.5 Equilibrium of couples
 
@@ -217,11 +212,9 @@ $$R_w = \frac{W}{2}\cot\theta, \qquad F = R_w, \qquad \mu_{\min} = \frac{R_w}{R_
 The minimum coefficient of friction depends only on the angle $\theta$. As the ladder becomes
 steeper ($\theta$ increases), $\cot\theta$ decreases and less friction is needed.
 
-:::warning
-If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
+:::warning If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
 the wall. This changes the vertical equilibrium to $R_g + F_w = W$ and adds complexity to the moment
-equation. Always read the question carefully to determine whether the wall is smooth or rough.
-:::
+equation. Always read the question carefully to determine whether the wall is smooth or rough. :::
 
 ### 3.2.4 Ladder with a person on it
 
@@ -293,11 +286,9 @@ To find the forces in the members of a framework:
 
 If you assume a rod is in tension and get a negative answer, the rod is in compression.
 
-:::info
-Framework problems are common in the mechanics section of the A Level exam. The key skill is
+:::info Framework problems are common in the mechanics section of the A Level exam. The key skill is
 choosing the right joint to start with — look for joints where you have at most two unknown forces,
-since you can only write two equilibrium equations per joint.
-:::
+since you can only write two equilibrium equations per joint. :::
 
 <hr />
 
@@ -328,16 +319,17 @@ where $M = \sum m_i$. Similarly for $\bar{y}$. $\blacksquare$
 
 ### 4.3.1 Worked example: composite lamina
 
-A uniform lamina consists of a rectangle $ABCD$ where $AB = 6\,\mathrm{cm}$ and $BC = 4\,\mathrm{cm}$,
-with an equilateral triangle $BCE$ attached to side $BC$ (each side of the triangle is
-$4\,\mathrm{cm}$). Find the centre of mass of the composite lamina.
+A uniform lamina consists of a rectangle $ABCD$ where $AB = 6\,\mathrm{cm}$ and
+$BC = 4\,\mathrm{cm}$, with an equilateral triangle $BCE$ attached to side $BC$ (each side of the
+triangle is $4\,\mathrm{cm}$). Find the centre of mass of the composite lamina.
 
 **Step 1: Treat as two separate bodies.**
 
 Rectangle: area $= 6 \times 4 = 24\,\mathrm{cm}^2$, centre at $(3, 2)$ from $A$.
 
-Equilateral triangle $BCE$ with side $4\,\mathrm{cm}$: height $= 4\sin 60° = 2\sqrt{3}\,\mathrm{cm}$.
-Area $= \frac{1}{2} \times 4 \times 2\sqrt{3} = 4\sqrt{3}\,\mathrm{cm}^2$.
+Equilateral triangle $BCE$ with side $4\,\mathrm{cm}$: height
+$= 4\sin 60° = 2\sqrt{3}\,\mathrm{cm}$. Area
+$= \frac{1}{2} \times 4 \times 2\sqrt{3} = 4\sqrt{3}\,\mathrm{cm}^2$.
 
 The centre of mass of the triangle is at $\frac{1}{3}$ of its height from $BC$. Taking $B$ as origin
 with $BA$ along the positive $x$-axis and $BC$ along the positive $y$-axis:
@@ -411,8 +403,8 @@ where $h$ is the height at which the force is applied and $d$ is half the base w
 
 ### 5.3 Worked example: toppling vs. sliding
 
-A uniform block of weight $500\,\mathrm{N}$, width $0.6\,\mathrm{m}$ and height $1.2\,\mathrm{m}$ sits on
-a rough surface with $\mu = 0.4$. A horizontal force $P$ is applied at the top of the block.
+A uniform block of weight $500\,\mathrm{N}$, width $0.6\,\mathrm{m}$ and height $1.2\,\mathrm{m}$
+sits on a rough surface with $\mu = 0.4$. A horizontal force $P$ is applied at the top of the block.
 Determine whether the block slides or topples first, and find the critical value of $P$.
 
 **Check sliding:** $P = \mu R = 0.4 \times 500 = 200\,\mathrm{N}$.
@@ -426,11 +418,9 @@ $P = \dfrac{150}{1.2} = 125\,\mathrm{N}$.
 
 Since $125 \lt 200$, the block **topples first** at $P = 125\,\mathrm{N}$.
 
-:::info
-A useful rule of thumb: if $\dfrac{h}{d} > \dfrac{1}{\mu}$, the body topples before it
+:::info A useful rule of thumb: if $\dfrac{h}{d} > \dfrac{1}{\mu}$, the body topples before it
 slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$, toppling occurs
-first, which matches our calculation.
-:::
+first, which matches our calculation. :::
 
 <hr />
 
@@ -620,8 +610,8 @@ A uniform ladder of length $6\,\mathrm{m}$ and weight $150\,\mathrm{N}$ rests ag
 <summary>Solution 10</summary>
 Let $R_w$ = reaction from wall (horizontal), $R_g$ = reaction from ground (vertical), $F$ = friction at ground.
 
-The man is $2\,\mathrm{m}$ from the top, so $4\,\mathrm{m}$ from the base. His horizontal distance from
-the base is $4\cos 55^\circ$.
+The man is $2\,\mathrm{m}$ from the top, so $4\,\mathrm{m}$ from the base. His horizontal distance
+from the base is $4\cos 55^\circ$.
 
 Horizontal: $R_w = F$. Vertical: $R_g = 150 + 800 = 950\,\mathrm{N}$.
 
@@ -681,13 +671,13 @@ Since $x > 5\,\mathrm{m}$ (the length of the beam), the centre of mass lies **be
 makes sense — the tension at $B$ is large relative to the load, suggesting the beam is heavier near
 end $B$.
 
-Wait — let us check: if the beam is $5\,\mathrm{m}$ long, the centre of mass must lie on the beam. Let
-us re-examine.
+Wait — let us check: if the beam is $5\,\mathrm{m}$ long, the centre of mass must lie on the beam.
+Let us re-examine.
 
 $2500 = 300x + 800 \implies x = \dfrac{1700}{300} = 5.67\,\mathrm{m}$.
 
-This is impossible for a $5\,\mathrm{m}$ beam. The given data is inconsistent — there must be an error
-in the problem statement. In an exam, you would state that no valid position exists.
+This is impossible for a $5\,\mathrm{m}$ beam. The given data is inconsistent — there must be an
+error in the problem statement. In an exam, you would state that no valid position exists.
 
 **If you get this wrong, revise:** [Non-Uniform Beams](#33-non-uniform-beams) — Section 3.3.
 
@@ -745,8 +735,8 @@ $120 \lt \dfrac{100}{h} \implies h \lt \dfrac{100}{120} = \dfrac{5}{6} \approx 0
 So the block will slide before it topples if $h \lt \dfrac{5}{6}\,\mathrm{m}$ (i.e., the force is
 applied below $\dfrac{5}{6}\,\mathrm{m}$ from the ground).
 
-For $h > \dfrac{5}{6}\,\mathrm{m}$, the block topples first. At $h = \dfrac{5}{6}\,\mathrm{m}$, sliding
-and toppling occur simultaneously.
+For $h > \dfrac{5}{6}\,\mathrm{m}$, the block topples first. At $h = \dfrac{5}{6}\,\mathrm{m}$,
+sliding and toppling occur simultaneously.
 
 **If you get this wrong, revise:** [Tilting and Toppling](#5-tilting-and-toppling) — Section 5.
 

@@ -650,13 +650,11 @@ equal elements.
 | Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes    | $O(n)$      |
 | Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | No     | $O(\log n)$ |
 
-:::info
-**HL Examination Tip:** When asked to choose a sorting algorithm for a given scenario,
+:::info **HL Examination Tip:** When asked to choose a sorting algorithm for a given scenario,
 consider the data size, whether the data is nearly sorted, memory constraints, and whether stability
 is required. Merge sort guarantees $O(n \log n)$ but uses extra space. Quick sort is often faster in
 practice but has a worst case of $O(n^2)$. Insertion sort is unbeatable for small or nearly sorted
-arrays.
-:::
+arrays. :::
 
 ## Data Structures
 
@@ -1177,11 +1175,9 @@ input sizes.
 **$O(n!)$ -- Factorial time:** Even faster growth than exponential. Examples: brute-force
 permutation generation, the naive traveling salesman solution.
 
-:::warning
-A critical distinction: $O(n \log n)$ is NOT the same as $O(n)$. For large $n$,
+:::warning A critical distinction: $O(n \log n)$ is NOT the same as $O(n)$. For large $n$,
 $n \log n$ is significantly larger than $n$. For example, when $n = 1000000$,
-$n \log_2 n \approx 20000000$, which is 20 times larger than $n$.
-:::
+$n \log_2 n \approx 20000000$, which is 20 times larger than $n$. :::
 
 ### Space Complexity
 
@@ -1399,9 +1395,7 @@ In the IB pseudocode, encapsulation is expressed using `PRIVATE` and `PUBLIC` ac
 Private attributes and methods can only be accessed within the class; public methods define the
 interface available to external code.
 
-:::note
-**HL Examination Note:** When asked to implement an ADT in an IB exam, you must include the
+:::note **HL Examination Note:** When asked to implement an ADT in an IB exam, you must include the
 class structure with `PRIVATE` and `PUBLIC` sections, a constructor, and all specified operations.
 Ensure preconditions are checked (e.g., do not pop from an empty stack). The choice of underlying
-data structure (array vs linked list) should be stated and justified.
-:::
+data structure (array vs linked list) should be stated and justified. :::

@@ -228,8 +228,8 @@ Client                          Server
 
 The endpoint that sends the first FIN enters the `FIN-WAIT-2` state. The endpoint that sends the
 second FIN enters the `LAST-ACK` state. After sending the final ACK, the first endpoint enters
-`TIME-WAIT` and waits for $2 \times \mathrm{MSL}$ (Maximum Segment Lifetime, typically 60 seconds per
-MSL, so 120 seconds total) before releasing the connection.
+`TIME-WAIT` and waits for $2 \times \mathrm{MSL}$ (Maximum Segment Lifetime, typically 60 seconds
+per MSL, so 120 seconds total) before releasing the connection.
 
 **Why TIME-WAIT?**
 
@@ -412,9 +412,9 @@ $$
 \mathrm{BDP} = \mathrm{bandwidth} \times \mathrm{RTT}
 $$
 
-For a 10 Gbps link with 100 ms RTT: $\mathrm{BDP} = 10 \times 10^9 \times 0.1 = 10^9$ bytes (~953 MB).
-Without window scaling, the 65,535-byte window would limit throughput to $65,535 / 0.1 = 655,350$
-bytes/s (~5.2 Mbps) -- a 1923x underutilization.
+For a 10 Gbps link with 100 ms RTT: $\mathrm{BDP} = 10 \times 10^9 \times 0.1 = 10^9$ bytes (~953
+MB). Without window scaling, the 65,535-byte window would limit throughput to
+$65,535 / 0.1 = 655,350$ bytes/s (~5.2 Mbps) -- a 1923x underutilization.
 
 ```bash
 # Check window scaling on Linux
@@ -758,8 +758,8 @@ sysctl net.ipv4.tcp_retries2            # 15 (retries for established connection
 
 4. **Misunderstanding `cwnd` and `rwnd`.** `cwnd` limits sending based on network congestion. `rwnd`
    limits sending based on receiver buffer space. Throughput is limited by
-   $\min(\mathrm{rwnd}, \mathrm{cwnd}) / \mathrm{RTT}$. A full receiver buffer (`rwnd = 0`) stops the
-   sender even if the network is idle.
+   $\min(\mathrm{rwnd}, \mathrm{cwnd}) / \mathrm{RTT}$. A full receiver buffer (`rwnd = 0`) stops
+   the sender even if the network is idle.
 
 5. **UDP without application-level reliability.** If your UDP application needs reliable delivery,
    you must implement acknowledgment, retransmission, and ordering yourself. QUIC is a transport

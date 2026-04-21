@@ -11,15 +11,11 @@ slug: capacitance
 
 ## Capacitance
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="capacitor-lab-basics" title="Capacitor Lab: Basics" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Capacitance
 
@@ -117,8 +113,7 @@ $$\frac{1}{C_{\mathrm{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{
 $V = V_1 + V_2 + \cdots = Q/C_1 + Q/C_2 + \cdots = Q(1/C_1 + 1/C_2 + \cdots)$. Since
 $V = Q/C_{\mathrm{total}}$: $1/C_{\mathrm{total}} = 1/C_1 + 1/C_2 + \cdots$ $\square$
 
-:::warning
-Common Pitfall Note the "mirror" relationship with resistors: capacitors in parallel add
+:::warning Common Pitfall Note the "mirror" relationship with resistors: capacitors in parallel add
 (like resistors in series), and capacitors in series add reciprocally (like resistors in parallel).
 :::
 
@@ -216,12 +211,10 @@ For discharging: $\frac{Q}{Q_0} = e^{-1} = 0.368$, so **36.8%** remains (63.2% i
 limits the charging current, and a large capacitance requires more charge — both increase the time
 needed. After $5\tau$, the capacitor is effectively fully charged or discharged.
 
-:::tip
-Exam Technique When asked to find the time constant from a graph: for charging, find the time
+:::tip Exam Technique When asked to find the time constant from a graph: for charging, find the time
 at which the curve reaches 63.2% of its final value. For discharging, find the time at which the
 curve drops to 36.8% of its initial value. Alternatively, find the time at which the tangent at
-$t = 0$ intersects the final value line.
-:::
+$t = 0$ intersects the final value line. :::
 
 ## 8. Dielectrics in Detail
 
@@ -345,11 +338,9 @@ $$V_{\mathrm{max}} = E_{\mathrm{breakdown}} \cdot d$$
 | Water (pure)    | 80              | $\approx 0.065$             |
 | Barium titanate | 1200 -- 10000   | 3                           |
 
-:::warning
-Common Pitfall A high $\varepsilon_r$ does not imply high dielectric strength. Water has
+:::warning Common Pitfall A high $\varepsilon_r$ does not imply high dielectric strength. Water has
 an enormous $\varepsilon_r = 80$ but a very low breakdown voltage ($\approx 65$ V/mm), so water is a
-poor practical dielectric for high-voltage capacitors despite its high permittivity.
-:::
+poor practical dielectric for high-voltage capacitors despite its high permittivity. :::
 
 ### Effect of Dielectric on Energy Stored
 
@@ -373,11 +364,9 @@ $$E_{\mathrm{new}} = \frac{1}{2}C_{\mathrm{new}}V^2 = \frac{1}{2}\varepsilon_r C
 The additional energy comes from the battery, which supplies extra charge
 $Q' = (\varepsilon_r - 1)CV$ to the plates.
 
-:::tip
-Exam Technique When a question asks about inserting a dielectric, always check whether the
+:::tip Exam Technique When a question asks about inserting a dielectric, always check whether the
 capacitor is isolated or connected to a supply. This completely determines whether $Q$ or $V$ is
-held constant, and therefore whether energy increases or decreases.
-:::
+held constant, and therefore whether energy increases or decreases. :::
 
 ## 9. Charge Sharing Between Capacitors
 
@@ -437,11 +426,9 @@ redistribution, a transient current flows through the connecting wires. The resi
 electromagnetic radiation. The "missing" energy is accounted for by Joule heating and radiative
 losses.
 
-:::warning
-Common Pitfall Energy is NOT conserved in charge-sharing problems. Charge is conserved,
+:::warning Common Pitfall Energy is NOT conserved in charge-sharing problems. Charge is conserved,
 but the system loses energy to the surroundings. Never assume $E_i = E_f$ when solving
-charge-sharing problems.
-:::
+charge-sharing problems. :::
 
 ### Worked Example
 
@@ -473,7 +460,8 @@ Consider a series $RC$ circuit where the output is taken across the capacitor:
 $$V_{\mathrm{in}} = V_R + V_C = IR + \frac{Q}{C}$$
 
 If $RC \gg T$ (the time constant is much larger than the period of the input signal), then
-$V_R \gg V_C$ at all times during one cycle, so $V_{\mathrm{in}} \approx V_R = IR$. Since $I = dQ/dt$:
+$V_R \gg V_C$ at all times during one cycle, so $V_{\mathrm{in}} \approx V_R = IR$. Since
+$I = dQ/dt$:
 
 $$V_{\mathrm{in}} \approx RC\frac{dV_C}{dt}$$
 
@@ -587,12 +575,10 @@ $$C = -\frac{1}{mR}$$
   $R_V$ is not much larger than $R$, the effective discharge resistance is
   $R_{\mathrm{eff}} = \frac{R \cdot R_V}{R + R_V}$, leading to a systematic underestimate of $C$.
 
-:::tip
-Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
+:::tip Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
 log of the voltage values and plot $\ln(V)$ vs $t$. Do NOT attempt to fit an exponential curve
 directly. The gradient gives you $-1/(RC)$, and since $R$ is known, you extract $C$. Show the
-log-linear transformation explicitly.
-:::
+log-linear transformation explicitly. :::
 
 ### Method 2: Repeating Capacitor (Ballistic Galvanometer)
 
@@ -877,8 +863,8 @@ $C_{\mathrm{total}} = \frac{36.67 \times 15}{36.67 + 15} = \frac{550}{51.67} = 1
 $Q_{\mathrm{total}} = C_{\mathrm{total}} \times V = 10.6 \times 10^{-6} \times 100 = 1.06 \times 10^{-3}$
 C. Since $C_4$ is in series with the rest, $Q_4 = Q_{\mathrm{total}} = 1.06$ mC.
 
-(c) $V_{123} = Q_{\mathrm{total}} / C_{123} = 1.06 \times 10^{-3} / (36.67 \times 10^{-6}) = 28.9$ V.
-Check: $V_4 = Q_{\mathrm{total}}/C_4 = 1.06 \times 10^{-3}/(15 \times 10^{-6}) = 70.7$ V.
+(c) $V_{123} = Q_{\mathrm{total}} / C_{123} = 1.06 \times 10^{-3} / (36.67 \times 10^{-6}) = 28.9$
+V. Check: $V_4 = Q_{\mathrm{total}}/C_4 = 1.06 \times 10^{-3}/(15 \times 10^{-6}) = 70.7$ V.
 $28.9 + 70.7 = 99.6 \approx 100$ V (rounding).
 
 (d) $C_3$ is in parallel with the $C_1$--$C_2$ combination, so $V_3 = V_{123} = 28.9$ V.

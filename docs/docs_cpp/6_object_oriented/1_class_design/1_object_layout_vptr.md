@@ -56,12 +56,10 @@ $$
 \mathrm{sizeof}(\texttt{Simple}) = 1 + 3\mathrm{(pad)} + 4 + 1 + 3\mathrm{(pad)} + 8 = 24
 $$
 
-:::tip
-Standard Layout A class with no virtual functions, no non-static data members of reference
+:::tip Standard Layout A class with no virtual functions, no non-static data members of reference
 type, and all non-static data members with the same access control is a **standard-layout class**
 [N4950 §11.4.1]. Such classes have a well-defined, portable memory layout and are compatible with C
-structs.
-:::
+structs. :::
 
 ## 1.2 The `this` Pointer [N4950 §11.4.3.2]
 
@@ -171,12 +169,10 @@ struct Derived : Empty {
 static_assert(sizeof(Derived) == sizeof(int));
 ```
 
-:::info
-Practical Importance EBO is exploited heavily by standard library implementations.
+:::info Practical Importance EBO is exploited heavily by standard library implementations.
 `std::allocator&lt;T&gt;` is typically an empty class, and
 `std::vector&lt;T, std::allocator&lt;T&gt;&gt;` inherits from it privately so that the allocator
-storage costs nothing.
-:::
+storage costs nothing. :::
 
 ### EBO Limitations
 

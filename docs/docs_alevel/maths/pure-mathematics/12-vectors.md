@@ -18,10 +18,8 @@ slug: vectors
 | OCR (A)    | Paper 1, 2 | Includes vector equations of lines                 |
 | CIE (9709) | P1, P2, P3 | 2D in P1; 3D and lines in P2/P3                    |
 
-:::info
-The formula booklet gives the scalar product formula. You must be comfortable working in 3D
-and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation.
-:::
+:::info The formula booklet gives the scalar product formula. You must be comfortable working in 3D
+and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation. :::
 
 <hr />
 
@@ -205,11 +203,9 @@ $$x = a_1 + tb_1, \quad y = a_2 + tb_2, \quad z = a_3 + tb_3$$
 
 In 2D, eliminating $t$: $\dfrac{x - a_1}{b_1} = \dfrac{y - a_2}{b_2}$.
 
-:::warning
-A vector equation of a line is not unique. Different points on the line can be used as
+:::warning A vector equation of a line is not unique. Different points on the line can be used as
 $\mathbf{a}$, and the direction vector $\mathbf{b}$ can be any non-zero scalar multiple of the
-direction. Always check your answer gives a point and direction consistent with the question.
-:::
+direction. Always check your answer gives a point and direction consistent with the question. :::
 
 ### 5.4 Vector equation of a line in 3D
 
@@ -223,11 +219,9 @@ The parametric form is:
 
 $$x = x_0 + td_1, \quad y = y_0 + td_2, \quad z = z_0 + td_3$$
 
-:::tip
-To convert from two points $A$ and $B$ to the vector equation, use $A$ as the position vector
+:::tip To convert from two points $A$ and $B$ to the vector equation, use $A$ as the position vector
 and $\overrightarrow{AB}$ as the direction vector. Alternatively, use $B$ and $\overrightarrow{BA}$
---- both give the same line.
-:::
+--- both give the same line. :::
 
 **Example.** Find the vector equation of the line through $P(2, -1, 3)$ and $Q(5, 1, -2)$.
 
@@ -299,11 +293,9 @@ $\overrightarrow{AP}$ and $\mathbf{d}$ whose magnitude equals the area of the pa
 span. Dividing by $|\mathbf{d}|$ (the base) gives the perpendicular height, i.e. the shortest
 distance.
 
-:::info
-When the cross product is not on your syllabus, use the dot-product method from Section 8.
+:::info When the cross product is not on your syllabus, use the dot-product method from Section 8.
 The cross-product formula is listed here for reference and is examined on CIE P3 and some OCR
-papers.
-:::
+papers. :::
 
 **Example using the dot-product method.** Find the distance from $P(4, 1, -1)$ to the line
 $\mathbf{r} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t\begin{pmatrix}2\\1\\-1\end{pmatrix}$.
@@ -358,8 +350,8 @@ $$V = \mathrm{base area} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \
 - **Coplanarity test:** $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ are coplanar if and only if
   $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = 0$ (the parallelepiped has zero volume).
 - **Volume of a tetrahedron:**
-  $V_{\mathrm{tet}} = \dfrac{1}{6}|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$, since a tetrahedron
-  is $\dfrac{1}{6}$ of a parallelepiped.
+  $V_{\mathrm{tet}} = \dfrac{1}{6}|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$, since a
+  tetrahedron is $\dfrac{1}{6}$ of a parallelepiped.
 
 **Example.** Find the volume of the parallelepiped with edges
 $\mathbf{a} = \begin{pmatrix}2\\0\\1\end{pmatrix}$,
@@ -430,11 +422,9 @@ $\overrightarrow{AD} = \overrightarrow{BC}$).
 1. Compute the relevant displacement vectors.
 2. Show opposite sides are equal as vectors (same components).
 
-:::tip
-To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
+:::tip To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
 magnitude. To show a **rectangle**, show that adjacent sides are perpendicular. A **square**
-requires both conditions.
-:::
+requires both conditions. :::
 
 ### 10.4 Using vectors in geometric proofs
 
@@ -682,8 +672,8 @@ Check:
 $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \dfrac{1}{9} + \dfrac{4}{9} + \dfrac{4}{9} = \dfrac{9}{9} = 1$.
 ✓
 
-The angles are $\alpha = \arccos(1/3) \approx 70.5^\circ$, $\beta = \arccos(-2/3) \approx 131.8^\circ$,
-$\gamma = \arccos(2/3) \approx 48.2^\circ$.
+The angles are $\alpha = \arccos(1/3) \approx 70.5^\circ$,
+$\beta = \arccos(-2/3) \approx 131.8^\circ$, $\gamma = \arccos(2/3) \approx 48.2^\circ$.
 
 **If you get this wrong, revise:** [Direction Cosines](#23-direction-cosines) — Section 2.3.
 

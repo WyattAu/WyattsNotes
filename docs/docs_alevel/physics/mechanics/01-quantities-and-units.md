@@ -11,9 +11,7 @@ slug: quantities-and-units
 
 ## Quantities and Units
 
-:::info
-Board Coverage AQA Paper 1 & 3 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1
-:::
+:::info Board Coverage AQA Paper 1 & 3 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1 :::
 
 ## 1. Physical Quantities and the SI System
 
@@ -39,9 +37,7 @@ varieties:
 | Amount of substance | $n$    | mole     | mol         |
 | Luminous intensity  | $I_v$  | candela  | cd          |
 
-:::info
-Note The candela is rarely encountered in A Level Physics. Focus on the first six.
-:::
+:::info Note The candela is rarely encountered in A Level Physics. Focus on the first six. :::
 
 ### Derived Units
 
@@ -63,13 +59,13 @@ $\mathsf{J}$ (luminous intensity).
 
 Some derived units have special names:
 
-| Derived Quantity | Name    | Symbol   | In Base Units                             |
-| ---------------- | ------- | -------- | ----------------------------------------- |
-| Force            | newton  | N        | $\mathrm{kg m s}^{-2}$                      |
-| Energy           | joule   | J        | $\mathrm{kg m}^2\mathrm{s}^{-2}$              |
-| Power            | watt    | W        | $\mathrm{kg m}^2\mathrm{s}^{-3}$              |
-| Pressure         | pascal  | Pa       | $\mathrm{kg m}^{-1}\mathrm{s}^{-2}$           |
-| Charge           | coulomb | C        | $\mathrm{A s}$                              |
+| Derived Quantity | Name    | Symbol   | In Base Units                                   |
+| ---------------- | ------- | -------- | ----------------------------------------------- |
+| Force            | newton  | N        | $\mathrm{kg m s}^{-2}$                          |
+| Energy           | joule   | J        | $\mathrm{kg m}^2\mathrm{s}^{-2}$                |
+| Power            | watt    | W        | $\mathrm{kg m}^2\mathrm{s}^{-3}$                |
+| Pressure         | pascal  | Pa       | $\mathrm{kg m}^{-1}\mathrm{s}^{-2}$             |
+| Charge           | coulomb | C        | $\mathrm{A s}$                                  |
 | Voltage          | volt    | V        | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-1}$ |
 | Resistance       | ohm     | $\Omega$ | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-2}$ |
 
@@ -115,10 +111,8 @@ $$
 
 Therefore $T = k\sqrt{l/g}$. Full analysis reveals $k = 2\pi$.
 
-:::tip
-Exam Technique Dimensional analysis is invaluable for checking your working. Get into the
-habit of verifying dimensions for every formula you derive in an exam.
-:::
+:::tip Exam Technique Dimensional analysis is invaluable for checking your working. Get into the
+habit of verifying dimensions for every formula you derive in an exam. :::
 
 ## 3. SI Prefixes
 
@@ -172,8 +166,7 @@ $$|\mathbf{F}| = \sqrt{F_x^2 + F_y^2}$$
   resolution or environmental factors. It affects precision but not accuracy. Random errors are
   reduced by taking repeated measurements.
 
-:::warning
-Common Pitfall Do not confuse precision with accuracy. A precise measurement is
+:::warning Common Pitfall Do not confuse precision with accuracy. A precise measurement is
 repeatable; an accurate measurement is close to the true value. You can have one without the other.
 :::
 
@@ -268,10 +261,8 @@ and the uncertainty should be quoted to at most 2 significant figures.
 (matching the uncertainty's one significant figure). We do not write $12.30 \pm 0.4$ cm — the
 trailing zero implies precision we do not have.
 
-:::tip
-Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$, write $9.8 \pm 0.2$ m
-s$^{-2}$ (round the uncertainty to 1 s.f. and match the result). This is what examiners expect.
-:::
+:::tip Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$, write $9.8 \pm 0.2$ m
+s$^{-2}$ (round the uncertainty to 1 s.f. and match the result). This is what examiners expect. :::
 
 ## 6. Determining Uncertainty from Repeated Measurements
 
@@ -481,11 +472,9 @@ interpreting measurements correctly.
 | Amount of substance | mole (mol)    | Defined by fixing the Avogadro constant $N_A = 6.022{,}140{,}76 \times 10^{23}$ mol$^{-1}$ |
 | Luminous intensity  | candela (cd)  | Defined by fixing the luminous efficacy $K_{cd} = 683$ lm W$^{-1}$                         |
 
-:::info
-Note Since 2019, all SI base units are defined in terms of fundamental physical constants.
+:::info Note Since 2019, all SI base units are defined in terms of fundamental physical constants.
 The values of $c$, $h$, $e$, $k_B$, $N_A$, and $\Delta\nu_{Cs}$ are now exact defined quantities,
-while the unit values are derived from them.
-:::
+while the unit values are derived from them. :::
 
 ## 9. Dimensional Analysis: Extended Worked Examples
 
@@ -720,8 +709,8 @@ $[2as] = (\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}) = \mathsf{L}^2\mathsf{T}^{-2}$.
 $\square$
 
 For $\mathsf{M}^{1/2}\mathsf{L}^{3/2}\mathsf{T}^{-1}$:
-$\sqrt{\mathrm{kg}} \cdot \mathrm{m}^{3/2} \cdot \mathrm{s}^{-1}$. An example is $\sqrt{G} \cdot M / r$
-where $G$ has units m$^3$ kg$^{-1}$ s$^{-2}$, giving
+$\sqrt{\mathrm{kg}} \cdot \mathrm{m}^{3/2} \cdot \mathrm{s}^{-1}$. An example is
+$\sqrt{G} \cdot M / r$ where $G$ has units m$^3$ kg$^{-1}$ s$^{-2}$, giving
 $[\sqrt{G}] = \mathrm{m}^{3/2}\mathrm{ kg}^{-1/2}\mathrm{ s}^{-1}$ and
 $[\sqrt{G} \cdot M] = \mathrm{m}^{3/2}\mathrm{ kg}^{1/2}\mathrm{ s}^{-1}$.
 

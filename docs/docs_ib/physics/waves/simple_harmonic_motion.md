@@ -160,7 +160,8 @@ Properties:
 
 <PhetSimulation simulationId="masses-and-springs" title="Masses and Springs" />
 
-Explore how mass, spring stiffness, and damping affect oscillations. Hang different masses from springs and observe how the period and amplitude change in real time.
+Explore how mass, spring stiffness, and damping affect oscillations. Hang different masses from
+springs and observe how the period and amplitude change in real time.
 
 Description: Mass $m$ attached to a spring of stiffness $k$. Equation of Motion: From Hooke's law:
 
@@ -211,7 +212,7 @@ $$
 | Period            | $T = 2\pi / \omega$                                              |
 | Kinetic Energy    | $K = \frac{1}{2}m\omega^2(A^2 - x^2)$                            |
 | Potential Energy  | $U = \frac{1}{2}m\omega^2 x^2$                                   |
-| Total Energy      | $E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2$                    |
+| Total Energy      | $E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2$                  |
 
 ## Derivation of the SHM Solution
 
@@ -279,8 +280,8 @@ introduces a systematic phase error of $\pm\pi/2$.
 
 ### Example 1: Period and Frequency of a Mass-Spring System
 
-A spring of stiffness $k = 200\mathrm{ N/m}$ has a $0.50\mathrm{ kg}$ mass attached. Find the period $T$
-and frequency $f$.
+A spring of stiffness $k = 200\mathrm{ N/m}$ has a $0.50\mathrm{ kg}$ mass attached. Find the period
+$T$ and frequency $f$.
 
 $$
 T = 2\pi \sqrt{\frac{m}{k}} = 2\pi \sqrt{\frac{0.50}{200}} = 2\pi(0.0500) = 0.314\mathrm{ s}
@@ -292,8 +293,8 @@ $$
 
 ### Example 2: Displacement and Velocity at a Given Time
 
-A mass-spring system has amplitude $A = 0.10\mathrm{ m}$ and period $T = 0.50\mathrm{ s}$. The mass is
-released from maximum displacement at $t = 0$. Find $x$ and $v$ at $t = 0.125\mathrm{ s}$.
+A mass-spring system has amplitude $A = 0.10\mathrm{ m}$ and period $T = 0.50\mathrm{ s}$. The mass
+is released from maximum displacement at $t = 0$. Find $x$ and $v$ at $t = 0.125\mathrm{ s}$.
 
 Angular frequency:
 
@@ -311,13 +312,13 @@ $$
 v(0.125) = -\omega A \sin(\omega t) = -4\pi(0.10)\sin\!\left(\frac{\pi}{2}\right) = -1.26\mathrm{ m/s}
 $$
 
-The mass passes through equilibrium at $t = T/4 = 0.125\mathrm{ s}$, moving in the negative direction
-with speed $|v| = \omega A = 1.26\mathrm{ m/s}$.
+The mass passes through equilibrium at $t = T/4 = 0.125\mathrm{ s}$, moving in the negative
+direction with speed $|v| = \omega A = 1.26\mathrm{ m/s}$.
 
 ### Example 3: Amplitude from Energy
 
-A $0.30\mathrm{ kg}$ mass oscillates on a spring with $k = 120\mathrm{ N/m}$. At equilibrium, the speed
-is $1.6\mathrm{ m/s}$. Determine the amplitude.
+A $0.30\mathrm{ kg}$ mass oscillates on a spring with $k = 120\mathrm{ N/m}$. At equilibrium, the
+speed is $1.6\mathrm{ m/s}$. Determine the amplitude.
 
 At $x = 0$, all energy is kinetic:
 
@@ -364,8 +365,8 @@ System A leads System B by $90^\circ$.
 
 ### Example 6: Energy Partition at a Given Displacement
 
-A mass-spring system has $A = 0.15\mathrm{ m}$, $k = 80.0\mathrm{ N/m}$, and $m = 0.20\mathrm{ kg}$. Find
-the kinetic energy, potential energy, and speed at $x = 0.090\mathrm{ m}$.
+A mass-spring system has $A = 0.15\mathrm{ m}$, $k = 80.0\mathrm{ N/m}$, and $m = 0.20\mathrm{ kg}$.
+Find the kinetic energy, potential energy, and speed at $x = 0.090\mathrm{ m}$.
 
 $$
 E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(80.0)(0.15)^2 = 0.900\mathrm{ J}
@@ -429,7 +430,8 @@ $\sin\phi_0 = -v_0/(\omega A)$ to resolve the correct quadrant.
 ### HL Example 1: Phase Angle Determination
 
 A $0.40\mathrm{ kg}$ mass on a spring with $k = 160\mathrm{ N/m}$ has initial conditions
-$x(0) = 0.060\mathrm{ m}$ and $v(0) = 1.20\mathrm{ m/s}$ (positive). Find the amplitude and phase angle.
+$x(0) = 0.060\mathrm{ m}$ and $v(0) = 1.20\mathrm{ m/s}$ (positive). Find the amplitude and phase
+angle.
 
 $$
 \omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0.40}} = 20.0\mathrm{ rad/s}
@@ -586,8 +588,8 @@ $\phi_0 = \pm\pi/2$, not $0$.
 ### 5. Small-Angle Approximation Validity
 
 $T = 2\pi\sqrt{L/g}$ relies on $\sin\theta \approx \theta$, accurate to within 1% for
-$\theta \lt 10^\circ$ and 0.1% for $\theta \lt 5^\circ$. Beyond approximately $15^\circ$, the true period exceeds
-the prediction and the motion is no longer strictly SHM.
+$\theta \lt 10^\circ$ and 0.1% for $\theta \lt 5^\circ$. Beyond approximately $15^\circ$, the true
+period exceeds the prediction and the motion is no longer strictly SHM.
 
 ### 6. Misidentifying Equilibrium Position
 
@@ -601,8 +603,8 @@ below its natural length. SHM occurs about this equilibrium, not the natural len
 
 ### Problem 1 (SL)
 
-A $0.25\mathrm{ kg}$ mass is attached to a spring with $k = 400\mathrm{ N/m}$. Calculate: (a) the period
-of oscillation, (b) the frequency, (c) the angular frequency.
+A $0.25\mathrm{ kg}$ mass is attached to a spring with $k = 400\mathrm{ N/m}$. Calculate: (a) the
+period of oscillation, (b) the frequency, (c) the angular frequency.
 
 <details>
 <summary>Solution</summary>
@@ -631,8 +633,8 @@ The period is longer on Mars due to the weaker gravitational field.
 
 ### Problem 3 (SL)
 
-A mass-spring system has amplitude $0.080\mathrm{ m}$ and spring constant $k = 500\mathrm{ N/m}$ with
-mass $0.50\mathrm{ kg}$. Find the kinetic energy and potential energy when the displacement is
+A mass-spring system has amplitude $0.080\mathrm{ m}$ and spring constant $k = 500\mathrm{ N/m}$
+with mass $0.50\mathrm{ kg}$. Find the kinetic energy and potential energy when the displacement is
 $0.040\mathrm{ m}$.
 
 <details>
@@ -656,9 +658,9 @@ At half the amplitude, the split is 75% kinetic, 25% potential (energy scales as
 
 ### Problem 4 (SL)
 
-Two identical pendulums are released simultaneously. Pendulum P is released from an angle of $5^\circ$
-and pendulum Q from an angle of $10^\circ$. Both are within the small-angle regime. Compare their
-periods.
+Two identical pendulums are released simultaneously. Pendulum P is released from an angle of
+$5^\circ$ and pendulum Q from an angle of $10^\circ$. Both are within the small-angle regime.
+Compare their periods.
 
 <details>
 <summary>Solution</summary>
@@ -678,7 +680,8 @@ is less accurate at $10^\circ$, but this difference is negligible at the IB leve
 ### Problem 5 (SL)
 
 A $2.0\mathrm{ kg}$ object on a spring oscillates with amplitude $0.30\mathrm{ m}$. At
-$x = 0.20\mathrm{ m}$, the speed is $2.0\mathrm{ m/s}$. Find the total energy and the spring constant.
+$x = 0.20\mathrm{ m}$, the speed is $2.0\mathrm{ m/s}$. Find the total energy and the spring
+constant.
 
 <details>
 <summary>Solution</summary>
@@ -704,8 +707,8 @@ $$
 ### Problem 6 (HL)
 
 A particle undergoes SHM with $\omega = 8.0\mathrm{ rad/s}$. At $t = 0$, $x = 0.030\mathrm{ m}$ and
-$v = -0.20\mathrm{ m/s}$. Determine the amplitude, the phase angle (cosine form), and the displacement
-at $t = 0.50\mathrm{ s}$.
+$v = -0.20\mathrm{ m/s}$. Determine the amplitude, the phase angle (cosine form), and the
+displacement at $t = 0.50\mathrm{ s}$.
 
 <details>
 <summary>Solution</summary>
@@ -735,9 +738,9 @@ $$
 
 ### Problem 7 (HL)
 
-A $0.60\mathrm{ kg}$ mass on a spring has total energy $0.48\mathrm{ J}$ and amplitude $0.040\mathrm{ m}$.
-(a) Find the spring constant. (b) Find the maximum speed. (c) Find the speed when
-$x = 0.020\mathrm{ m}$. (d) At what displacement is $K = U$?
+A $0.60\mathrm{ kg}$ mass on a spring has total energy $0.48\mathrm{ J}$ and amplitude
+$0.040\mathrm{ m}$. (a) Find the spring constant. (b) Find the maximum speed. (c) Find the speed
+when $x = 0.020\mathrm{ m}$. (d) At what displacement is $K = U$?
 
 <details>
 <summary>Solution</summary>
@@ -783,8 +786,8 @@ $$
 A = \frac{v_{\max}}{\omega} = \frac{3.13}{2.21} = 1.42\mathrm{ m}
 $$
 
-This corresponds to an angular amplitude of $0.71\mathrm{ rad} \approx 41^\circ$, exceeding the small-angle
-regime. The SHM model is approximate here.
+This corresponds to an angular amplitude of $0.71\mathrm{ rad} \approx 41^\circ$, exceeding the
+small-angle regime. The SHM model is approximate here.
 
 (b)
 
@@ -792,8 +795,8 @@ $$
 a_{\max} = \omega^2 A = (4.905)(1.42) = 6.97\mathrm{ m/s}^2
 $$
 
-(c) The release point is at $x = A = 1.42\mathrm{ m}$. A point $0.50\mathrm{ m}$ below corresponds to
-$x = A - 0.50 = 0.92\mathrm{ m}$.
+(c) The release point is at $x = A = 1.42\mathrm{ m}$. A point $0.50\mathrm{ m}$ below corresponds
+to $x = A - 0.50 = 0.92\mathrm{ m}$.
 
 $$
 v = \omega\sqrt{A^2 - x^2} = 2.21\sqrt{(1.42)^2 - (0.92)^2} = 2.21\sqrt{1.170} = 2.21(1.082) = 2.39\mathrm{ m/s}

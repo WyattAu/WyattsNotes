@@ -208,11 +208,9 @@ $$
 
 **Principal argument:** $\arg(z) \in (-\pi, \pi]$
 
-:::tip
-When finding $\arg(z)$, always draw a quick Argand diagram to check which quadrant the point
+:::tip When finding $\arg(z)$, always draw a quick Argand diagram to check which quadrant the point
 is in. A common mistake is to use the calculator value directly without adjusting for the correct
-quadrant.
-:::
+quadrant. :::
 
 ### Geometric Interpretation of Operations
 
@@ -221,15 +219,11 @@ quadrant.
 - **Negation ($-z$):** reflection in the origin
 - **Multiplication by $i$:** rotation $90^\circ$ anticlockwise
 
-{/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph
-  title="Complex Plane (Argand Diagram)"
-  expressions={["\left(a,b\right)"]}
-  width={800}
-  height={500}
-/>
+{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Complex Plane (Argand
+Diagram)" expressions={["\left(a,b\right)"]} width={800} height={500} />
 
-Drag points to see how addition, conjugation, and multiplication affect the position on the Argand diagram.
+Drag points to see how addition, conjugation, and multiplication affect the position on the Argand
+diagram.
 
 ## De Moivre's Theorem
 
@@ -352,10 +346,8 @@ $$
 | Polar     | $z = r(\cos\theta + i\sin\theta)$ | Multiplication, division  |
 | Euler     | $z = re^{i\theta}$                | Powers, roots (De Moivre) |
 
-:::tip
-Converting between forms is essential. A good strategy: always convert to polar/Euler form
-before raising to a power or finding roots, and convert back to Cartesian for the final answer.
-:::
+:::tip Converting between forms is essential. A good strategy: always convert to polar/Euler form
+before raising to a power or finding roots, and convert back to Cartesian for the final answer. :::
 
 ## Modulus-Argument Form Operations
 
@@ -539,8 +531,8 @@ $$
 z = z_1 + t(z_2 - z_1), \quad t \in \mathbb{R}
 $$
 
-Equivalently, a line with equation $\mathrm{Re}(\bar{a}\, z) = c$ for some complex constant $a \neq 0$
-and real constant $c$.
+Equivalently, a line with equation $\mathrm{Re}(\bar{a}\, z) = c$ for some complex constant
+$a \neq 0$ and real constant $c$.
 
 ### Perpendicular from the Origin to a Line
 
@@ -811,8 +803,8 @@ $z_2$ have the same argument.
 ### Calculator Mode Errors
 
 Ensure your calculator is in **radian mode** when working with arguments and complex exponentials.
-Using degree mode by mistake is a very common source of error, since $\pi/3$ radians is $60^\circ$ but
-entering $60$ in radian mode gives a completely different value.
+Using degree mode by mistake is a very common source of error, since $\pi/3$ radians is $60^\circ$
+but entering $60$ in radian mode gives a completely different value.
 
 ### Argument Normalisation
 
@@ -911,8 +903,8 @@ $$
 
 Find all complex numbers $z$ satisfying both $|z - 2| = 2$ and $\arg(z) = \pi/4$.
 
-**Solution:** The condition $\arg(z) = \pi/4$ means $z$ lies on the ray from the origin at $45^\circ$, so
-$z = t(1 + i)$ for $t \gt{} 0$.
+**Solution:** The condition $\arg(z) = \pi/4$ means $z$ lies on the ray from the origin at
+$45^\circ$, so $z = t(1 + i)$ for $t \gt{} 0$.
 
 Substituting into $|z - 2| = 2$:
 

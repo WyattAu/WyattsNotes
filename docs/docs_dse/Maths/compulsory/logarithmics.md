@@ -356,6 +356,7 @@ A solution has $[\mathrm{H}^+] = 2.5 \times 10^{-4}$ mol/L. Find its pH.
 $$
 \mathrm{pH} = -\log(2.5 \times 10^{-4}) = -\left(\log 2.5 + \log 10^{-4}\right) = -(\log 2.5 - 4) = 4 - \log 2.5 \approx 3.60
 $$
+
 </details>
 
 ### Richter Scale
@@ -380,6 +381,7 @@ An earthquake has amplitude $5000$ times the reference. Its magnitude is:
 $$
 M = \log_{10} 5000 = \log_{10}(5 \times 10^3) = 3 + \log_{10} 5 \approx 3.70
 $$
+
 </details>
 
 ### Compound Interest
@@ -501,15 +503,11 @@ The graph of $y = \log_a x$ has the following characteristics:
 - When $0 < a < 1$, the function is strictly decreasing and concave up.
 - The function is defined only for $x > 0$.
 
-{/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph
-  title="Logarithmic Functions"
-  expressions={["\log_{a}(x)", "rac{\ln(x)}{\ln(a)}"]}
-  width={800}
-  height={500}
-/>
+{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Logarithmic Functions"
+expressions={["\log_{a}(x)", "rac{\ln(x)}{\ln(a)}"]} width={800} height={500} />
 
-Adjust the base $a$ to see how the shape of the logarithmic curve changes between $a > 1$ and $0 < a < 1$.
+Adjust the base $a$ to see how the shape of the logarithmic curve changes between $a > 1$ and
+$0 < a < 1$.
 
 ### Transformations
 
@@ -573,8 +571,8 @@ Sketch $y = \log_2(x - 3) + 1$.
 - Let the expression equal $y$. By the change of base formula, $y = \log_9 27$.
 - Write bases and argument as powers of 3: $y = \dfrac{\log_3 27}{\log_3 9} = \dfrac{3}{2}$.
 - Alternatively: $\log_8 27 = \dfrac{\log 27}{\log 8} = \dfrac{3\log 3}{3\log 2}$ and
-  $\log_8 9 = \dfrac{2\log 3}{3\log 2}$, so the ratio is
-  $\dfrac{3\log 3 / (3\log 2)}{2\log 3 / (3\log 2)} = \dfrac{3}{2}$.
+$\log_8 9 = \dfrac{2\log 3}{3\log 2}$, so the ratio is
+$\dfrac{3\log 3 / (3\log 2)}{2\log 3 / (3\log 2)} = \dfrac{3}{2}$.
 </details>
 
 **Question 4.** The population of a bacteria culture grows exponentially. At 12:00, the population

@@ -42,14 +42,14 @@ Rate is typically expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration p
 
 ### Methods
 
-| Method            | Measured Quantity               | Suitable Reactions                                    |
-| ----------------- | ------------------------------- | ----------------------------------------------------- |
+| Method            | Measured Quantity               | Suitable Reactions                                        |
+| ----------------- | ------------------------------- | --------------------------------------------------------- |
 | Collection of gas | Volume of gas over time         | Reactions producing gas ($\mathrm{CO}_2$, $\mathrm{H}_2$) |
-| Mass loss         | Mass of flask over time         | Reactions producing gas                               |
-| Titration         | Concentration at time intervals | Reactions where aliquots can be quenched              |
-| Colorimetry       | Absorbance over time            | Reactions involving colour change                     |
-| Conductivity      | Conductance over time           | Reactions producing/ consuming ions                   |
-| Clock reaction    | Time for observable change      | Initial rate determination                            |
+| Mass loss         | Mass of flask over time         | Reactions producing gas                                   |
+| Titration         | Concentration at time intervals | Reactions where aliquots can be quenched                  |
+| Colorimetry       | Absorbance over time            | Reactions involving colour change                         |
+| Conductivity      | Conductance over time           | Reactions producing/ consuming ions                       |
+| Clock reaction    | Time for observable change      | Initial rate determination                                |
 
 ### Gas Collection Methods
 
@@ -57,11 +57,9 @@ Rate is typically expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration p
 2. **Inverted burette over water:** Useful for insoluble gases. Volume read from burette.
 3. **Mass loss method:** The flask is placed on a balance; the mass decreases as gas escapes.
 
-:::warning
-The mass loss method only works if the gas escapes the flask. If the flask is sealed, no
+:::warning The mass loss method only works if the gas escapes the flask. If the flask is sealed, no
 mass change occurs. Also, ensure the reaction does not produce heat that would affect the balance
-reading.
-:::
+reading. :::
 
 ### Concentration-Time Graphs
 
@@ -176,10 +174,8 @@ $$\frac{\mathrm{Fraction with } E \geq E_a \mathrm{ at } T_2}{\mathrm{Fraction w
 The $E_a$ line shifts to the left on the Maxwell-Boltzmann distribution. More particles now have
 energy $\geq E_a$ (the new, lower activation energy), so the rate increases.
 
-:::info
-A catalyst does NOT change the distribution itself. It only lowers the threshold. The curve
-shape remains the same at the same temperature.
-:::
+:::info A catalyst does NOT change the distribution itself. It only lowers the threshold. The curve
+shape remains the same at the same temperature. :::
 
 ### Key DSE Exam Points
 
@@ -281,8 +277,8 @@ Enzymes are protein molecules that catalyse specific biochemical reactions.
 1. **Specificity:** Each enzyme catalyses only one reaction (or a small group of reactions).
 2. **Efficiency:** Enzymes can increase reaction rates by factors of $10^6$ to $10^{12}$.
 3. **Optimum temperature:** Most enzymes work best around $37^\circ\mathrm{C}$ (body temperature).
-   Above about $45^\circ\mathrm{C}$, the enzyme denatures (loses its 3D structure) and activity drops
-   sharply.
+   Above about $45^\circ\mathrm{C}$, the enzyme denatures (loses its 3D structure) and activity
+   drops sharply.
 4. **Optimum pH:** Each enzyme has an optimal pH. Pepsin (stomach) works at pH ~2; trypsin
    (intestine) works at pH ~8.
 5. **Concentration dependence:** Rate increases with enzyme concentration (at fixed substrate
@@ -325,10 +321,8 @@ Where:
 - $n$ = order of reaction with respect to B
 - Overall order = $m + n$
 
-:::warning
-The orders $m$ and $n$ are determined experimentally. They are NOT necessarily equal to
-the stoichiometric coefficients $a$ and $b$.
-:::
+:::warning The orders $m$ and $n$ are determined experimentally. They are NOT necessarily equal to
+the stoichiometric coefficients $a$ and $b$. :::
 
 ### Order of Reaction
 
@@ -357,10 +351,10 @@ respect to A.
 **Worked example 1:** For the reaction $\mathrm{A} + \mathrm{B} \to \mathrm{C}$:
 
 | Experiment | $[\mathrm{A}]$ (mol/dm$^3$) | $[\mathrm{B}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
-| ---------- | ------------------------- | ------------------------- | ------------------------------------- |
-| 1          | 0.10                      | 0.10                      | $2.0 \times 10^{-4}$                  |
-| 2          | 0.20                      | 0.10                      | $4.0 \times 10^{-4}$                  |
-| 3          | 0.10                      | 0.20                      | $8.0 \times 10^{-4}$                  |
+| ---------- | --------------------------- | --------------------------- | ------------------------------------- |
+| 1          | 0.10                        | 0.10                        | $2.0 \times 10^{-4}$                  |
+| 2          | 0.20                        | 0.10                        | $4.0 \times 10^{-4}$                  |
+| 3          | 0.10                        | 0.20                        | $8.0 \times 10^{-4}$                  |
 
 Determine the rate equation and the rate constant.
 
@@ -390,10 +384,10 @@ Correct.
 **Worked example 2:** For the reaction $\mathrm{X} + 2\mathrm{Y} \to \mathrm{Z}$:
 
 | Experiment | $[\mathrm{X}]$ (mol/dm$^3$) | $[\mathrm{Y}]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
-| ---------- | ------------------------- | ------------------------- | ------------------------------------- |
-| 1          | 0.20                      | 0.10                      | $6.0 \times 10^{-3}$                  |
-| 2          | 0.40                      | 0.10                      | $1.2 \times 10^{-2}$                  |
-| 3          | 0.20                      | 0.20                      | $6.0 \times 10^{-3}$                  |
+| ---------- | --------------------------- | --------------------------- | ------------------------------------- |
+| 1          | 0.20                        | 0.10                        | $6.0 \times 10^{-3}$                  |
+| 2          | 0.40                        | 0.10                        | $1.2 \times 10^{-2}$                  |
+| 3          | 0.20                        | 0.20                        | $6.0 \times 10^{-3}$                  |
 
 <details>
 <summary>Answer</summary>
@@ -412,12 +406,12 @@ $k = \dfrac{6.0 \times 10^{-3}}{0.20} = 0.030 \mathrm{ s}^{-1}$
 
 The units of $k$ depend on the overall order of reaction.
 
-| Overall Order | Rate Equation                    | Units of $k$               |
-| ------------- | -------------------------------- | -------------------------- |
-| 0             | Rate = $k$                       | mol dm$^{-3}$ s$^{-1}$     |
-| 1             | Rate = $k[\mathrm{A}]$             | s$^{-1}$                   |
-| 2             | Rate = $k[\mathrm{A}]^2$           | dm$^3$ mol$^{-1}$ s$^{-1}$ |
-| 3             | Rate = $k[\mathrm{A}]^3$           | dm$^6$ mol$^{-2}$ s$^{-1}$ |
+| Overall Order | Rate Equation                        | Units of $k$               |
+| ------------- | ------------------------------------ | -------------------------- |
+| 0             | Rate = $k$                           | mol dm$^{-3}$ s$^{-1}$     |
+| 1             | Rate = $k[\mathrm{A}]$               | s$^{-1}$                   |
+| 2             | Rate = $k[\mathrm{A}]^2$             | dm$^3$ mol$^{-1}$ s$^{-1}$ |
+| 3             | Rate = $k[\mathrm{A}]^3$             | dm$^6$ mol$^{-2}$ s$^{-1}$ |
 | 1 + 2 = 3     | Rate = $k[\mathrm{A}][\mathrm{B}]^2$ | dm$^6$ mol$^{-2}$ s$^{-1}$ |
 
 ---
@@ -525,10 +519,10 @@ to each reactant can be determined.
 ### Example Data Analysis
 
 | Experiment | $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ (mol/dm$^3$) | $[\mathrm{I}^-]$ (mol/dm$^3$) | Time (s) |
-| ---------- | ------------------------------------------ | --------------------------- | -------- |
-| 1          | 0.040                                      | 0.040                       | 48       |
-| 2          | 0.080                                      | 0.040                       | 24       |
-| 3          | 0.040                                      | 0.080                       | 24       |
+| ---------- | ---------------------------------------------- | ----------------------------- | -------- |
+| 1          | 0.040                                          | 0.040                         | 48       |
+| 2          | 0.080                                          | 0.040                         | 24       |
+| 3          | 0.040                                          | 0.080                         | 24       |
 
 <details>
 <summary>Answer</summary>
@@ -576,14 +570,14 @@ Overall order = 2.
 ### Problem 1
 
 For the reaction
-$2\mathrm{NO}_{(g)} + 2\mathrm{H}_{2(g)} \to \mathrm{N}_{2(g)} + 2\mathrm{H}_2\mathrm{O}_{(g)}$, the following
-data were obtained:
+$2\mathrm{NO}_{(g)} + 2\mathrm{H}_{2(g)} \to \mathrm{N}_{2(g)} + 2\mathrm{H}_2\mathrm{O}_{(g)}$, the
+following data were obtained:
 
 | Experiment | $[\mathrm{NO}]$ (mol/dm$^3$) | $[\mathrm{H}_2]$ (mol/dm$^3$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
-| ---------- | -------------------------- | --------------------------- | ------------------------------------- |
-| 1          | 0.010                      | 0.010                       | $1.2 \times 10^{-5}$                  |
-| 2          | 0.020                      | 0.010                       | $4.8 \times 10^{-5}$                  |
-| 3          | 0.010                      | 0.020                       | $2.4 \times 10^{-5}$                  |
+| ---------- | ---------------------------- | ----------------------------- | ------------------------------------- |
+| 1          | 0.010                        | 0.010                         | $1.2 \times 10^{-5}$                  |
+| 2          | 0.020                        | 0.010                         | $4.8 \times 10^{-5}$                  |
+| 3          | 0.010                        | 0.020                         | $2.4 \times 10^{-5}$                  |
 
 Determine the rate equation, the rate constant, and the overall order.
 
@@ -627,10 +621,10 @@ $$k_2 = 5.089 \times 5.00 \times 10^{-4} = 2.54 \times 10^{-3} \mathrm{ s}^{-1}$
 In an iodine clock experiment, the following data were collected:
 
 | Experiment | $[\mathrm{S}_2\mathrm{O}_8^{2-}]$ (mol/dm$^3$) | $[\mathrm{I}^-]$ (mol/dm$^3$) | Time (s) |
-| ---------- | ------------------------------------------ | --------------------------- | -------- |
-| 1          | 0.020                                      | 0.020                       | 60       |
-| 2          | 0.040                                      | 0.020                       | 30       |
-| 3          | 0.020                                      | 0.040                       | 15       |
+| ---------- | ---------------------------------------------- | ----------------------------- | -------- |
+| 1          | 0.020                                          | 0.020                         | 60       |
+| 2          | 0.040                                          | 0.020                         | 30       |
+| 3          | 0.020                                          | 0.040                         | 15       |
 
 Determine the order with respect to each reactant and the overall order.
 
@@ -696,9 +690,11 @@ the equilibrium yield of products remain the same.
 
 ### Problem 6
 
-A reaction has the rate equation $\mathrm{Rate} = k[\mathrm{P}]^2[\mathrm{Q}]$. At a certain temperature,
-when $[\mathrm{P}] = 0.30 \mathrm{ mol/dm}^3$ and $[\mathrm{Q}] = 0.20 \mathrm{ mol/dm}^3$, the rate is
-$1.08 \times 10^{-2} \mathrm{ mol dm}^{-3} \mathrm{ s}^{-1}$. Calculate the rate constant and its units.
+A reaction has the rate equation $\mathrm{Rate} = k[\mathrm{P}]^2[\mathrm{Q}]$. At a certain
+temperature, when $[\mathrm{P}] = 0.30 \mathrm{ mol/dm}^3$ and
+$[\mathrm{Q}] = 0.20 \mathrm{ mol/dm}^3$, the rate is
+$1.08 \times 10^{-2} \mathrm{ mol dm}^{-3} \mathrm{ s}^{-1}$. Calculate the rate constant and its
+units.
 
 If the concentration of P is tripled and the concentration of Q is doubled, by what factor does the
 rate increase?
@@ -860,8 +856,8 @@ $$\frac{1}{[\mathrm{A}]} = \frac{1}{[\mathrm{A}]_0} + kt$$
 
 ### Summary
 
-| Order  | Linear Plot            | Gradient |
-| ------ | ---------------------- | -------- |
+| Order  | Linear Plot              | Gradient |
+| ------ | ------------------------ | -------- |
 | Zero   | $[\mathrm{A}]$ vs $t$    | $-k$     |
 | First  | $\ln[\mathrm{A}]$ vs $t$ | $-k$     |
 | Second | $1/[\mathrm{A}]$ vs $t$  | $+k$     |
@@ -869,12 +865,12 @@ $$\frac{1}{[\mathrm{A}]} = \frac{1}{[\mathrm{A}]_0} + kt$$
 **Worked example 9:** The following data were collected for the decomposition of a substance X:
 
 | Time (s) | $[\mathrm{X}]$ (mol/dm$^3$) | $\ln[\mathrm{X}]$ | $1/[\mathrm{X}]$ |
-| -------- | ------------------------- | --------------- | -------------- |
-| 0        | 0.100                     | $-2.303$        | 10.0           |
-| 30       | 0.0707                    | $-2.649$        | 14.1           |
-| 60       | 0.0500                    | $-2.996$        | 20.0           |
-| 90       | 0.0354                    | $-3.340$        | 28.3           |
-| 120      | 0.0250                    | $-3.689$        | 40.0           |
+| -------- | --------------------------- | ----------------- | ---------------- |
+| 0        | 0.100                       | $-2.303$          | 10.0             |
+| 30       | 0.0707                      | $-2.649$          | 14.1             |
+| 60       | 0.0500                      | $-2.996$          | 20.0             |
+| 90       | 0.0354                      | $-3.340$          | 28.3             |
+| 120      | 0.0250                      | $-3.689$          | 40.0             |
 
 Determine the order of reaction.
 
@@ -928,11 +924,11 @@ Powdering the solid increases surface area, further increasing the rate.
 
 ## Summary of Key Equations
 
-| Equation                                  | Use                              |
-| ----------------------------------------- | -------------------------------- |
+| Equation                                        | Use                              |
+| ----------------------------------------------- | -------------------------------- |
 | $\mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$ | Rate equation                    |
-| $\ln k = \ln A - E_a/(RT)$                | Arrhenius equation (linear form) |
-| $\ln(k_2/k_1) = (E_a/R)(1/T_1 - 1/T_2)$   | Two-temperature Arrhenius        |
-| $t_{1/2} = 0.693/k$                       | First-order half-life            |
-| $\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$    | First-order integrated rate law  |
-| $\mathrm{Rate} \propto 1/t$                 | Clock reaction initial rate      |
+| $\ln k = \ln A - E_a/(RT)$                      | Arrhenius equation (linear form) |
+| $\ln(k_2/k_1) = (E_a/R)(1/T_1 - 1/T_2)$         | Two-temperature Arrhenius        |
+| $t_{1/2} = 0.693/k$                             | First-order half-life            |
+| $\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$      | First-order integrated rate law  |
+| $\mathrm{Rate} \propto 1/t$                     | Clock reaction initial rate      |

@@ -367,7 +367,8 @@ A geographer investigates whether land use varies between two areas. The observe
 
 Calculate expected frequencies and the chi-squared statistic.
 
-Expected frequency: $E = \frac{\mathrm{row total} \times \mathrm{column total}}{\mathrm{grand total}}$
+Expected frequency:
+$E = \frac{\mathrm{row total} \times \mathrm{column total}}{\mathrm{grand total}}$
 
 | Land Use    | $E_A$                        | $E_B$                        |
 | ----------- | ---------------------------- | ---------------------------- |
@@ -382,9 +383,9 @@ $$= \frac{(45-37.5)^2}{37.5} + \frac{(30-37.5)^2}{37.5} + \frac{(20-27.5)^2}{27.
 
 $$= 1.5 + 1.5 + 2.045 + 2.045 + 1.25 + 1.25 + 1.667 + 1.667 = 12.924$$
 
-Degrees of freedom $= (4-1)(2-1) = 3$. Critical value at $p < 0.05$ for $\mathrm{df} = 3$ is $7.815$.
-Since $12.924 > 7.815$, the result is statistically significant. There is a significant association
-between land use and area.
+Degrees of freedom $= (4-1)(2-1) = 3$. Critical value at $p < 0.05$ for $\mathrm{df} = 3$ is
+$7.815$. Since $12.924 > 7.815$, the result is statistically significant. There is a significant
+association between land use and area.
 
 </details>
 
@@ -453,7 +454,7 @@ A GIS-based investigation could integrate multiple data layers:
 4. **Visualisation:**
    - Create maps showing catchment areas, demographic profiles, and changes in footfall
    - Produce 3D visualisations of the shopping centre's visibility and accessibility
-</details>
+   </details>
 
 <details>
 <summary>Problem 5: Fieldwork Evaluation</summary>

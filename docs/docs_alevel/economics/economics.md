@@ -12,7 +12,9 @@ sidebar_position: 5
 
 ## A Level Economics — Course Overview
 
-A Level Economics is the study of how societies allocate scarce resources. It develops a rigorous analytical framework for understanding markets, firms, governments, and the global economy. The course requires both mathematical fluency and the ability to construct clear, logical arguments.
+A Level Economics is the study of how societies allocate scarce resources. It develops a rigorous
+analytical framework for understanding markets, firms, governments, and the global economy. The
+course requires both mathematical fluency and the ability to construct clear, logical arguments.
 
 ### Board Coverage
 
@@ -35,11 +37,15 @@ A Level Economics is the study of how societies allocate scarce resources. It de
 
 The study of individual economic agents — consumers, firms, and markets:
 
-1. **Methodology & the Economic Problem** — Scarcity, choice, opportunity cost, positive vs normative economics
+1. **Methodology & the Economic Problem** — Scarcity, choice, opportunity cost, positive vs
+   normative economics
 2. **Demand, Supply & Market Equilibrium** — The price mechanism, elasticity, and market adjustment
-3. **Market Failure & Government Intervention** — Externalities, public goods, information asymmetry, and policy responses
-4. **Theory of the Firm** — Production, costs, market structures (perfect competition, monopoly, oligopoly, monopolistic competition)
-5. **Labour Markets** — Demand for and supply of labour, wage determination, trade unions, discrimination
+3. **Market Failure & Government Intervention** — Externalities, public goods, information
+   asymmetry, and policy responses
+4. **Theory of the Firm** — Production, costs, market structures (perfect competition, monopoly,
+   oligopoly, monopolistic competition)
+5. **Labour Markets** — Demand for and supply of labour, wage determination, trade unions,
+   discrimination
 6. **Distribution of Income & Wealth** — Inequality measurement, poverty, tax/transfer policies
 
 #### Macroeconomics

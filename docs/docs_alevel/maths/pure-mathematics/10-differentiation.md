@@ -18,10 +18,8 @@ slug: differentiation
 | OCR (A)    | Paper 1, 2 | Includes connected rates in P2                                   |
 | CIE (9709) | P1, P2, P3 | Basic differentiation in P1; product/quotient/chain in P2/P3     |
 
-:::info
-The formula booklet lists derivatives of standard functions. You must know how to apply the
-product, quotient, and chain rules, and how to find stationary points.
-:::
+:::info The formula booklet lists derivatives of standard functions. You must know how to apply the
+product, quotient, and chain rules, and how to find stationary points. :::
 
 <hr />
 
@@ -39,11 +37,9 @@ provided this limit exists. If it does, we say $f$ is **differentiable** at $x$.
 line through the points $(x, f(x))$ and $(x+h, f(x+h))$. As $h \to 0$, this secant approaches the
 tangent, so $f'(x)$ is the gradient of the tangent at $x$.
 
-:::info
-A function is differentiable at a point if and only if it is smooth (no sharp corners)
+:::info A function is differentiable at a point if and only if it is smooth (no sharp corners)
 there. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$ but not
-differentiable.
-:::
+differentiable. :::
 
 <hr />
 
@@ -124,10 +120,8 @@ By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 
 $$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2} \quad \blacksquare$$
 
-:::warning
-The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
-the wrong way around is one of the most common errors in A Level mathematics.
-:::
+:::warning The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
+the wrong way around is one of the most common errors in A Level mathematics. :::
 
 <hr />
 
@@ -247,20 +241,15 @@ $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 - If $f''(a) \lt{} 0$: $f(x) - f(a) \lt{} 0$ for $x \neq a$, so $f(a)$ is a **maximum**.
 - If $f''(a) = 0$: the test is inconclusive; use a nature table or higher derivatives.
 
-:::warning
-The second derivative test is **sufficient but not necessary**. If $f''(a) = 0$, the
+:::warning The second derivative test is **sufficient but not necessary**. If $f''(a) = 0$, the
 point could still be a maximum, minimum, or inflection. Always use a nature table (checking the sign
-of $f'$ on either side) if the second derivative test is inconclusive.
-:::
+of $f'$ on either side) if the second derivative test is inconclusive. :::
 
-{/* TODO: Replace with a real Desmos graph URL showing a function with its derivative and a movable tangent line */}
-<DesmosGraph
-  title="Function, Derivative, and Tangent Line"
-  expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]}
-  width={800}
-  height={500}
-/>
-Observe how the derivative relates to the gradient of the tangent line. Move the point along the curve to see how the tangent changes slope, and note where the derivative is zero at stationary points.
+{/_ TODO: Replace with a real Desmos graph URL showing a function with its derivative and a movable
+tangent line _/} <DesmosGraph title="Function, Derivative, and Tangent Line"
+expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the
+derivative relates to the gradient of the tangent line. Move the point along the curve to see how
+the tangent changes slope, and note where the derivative is zero at stationary points.
 
 <hr />
 
@@ -303,11 +292,9 @@ $f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$.
 For $x \gt{} 1$: $(x-1) \gt{} 0$ and $(x+1) \gt{} 0$, so $f'(x) \gt{} 0$. Hence $f$ is strictly
 increasing for $x \gt{} 1$.
 
-:::tip
-When asked to "find where a function is increasing", set $f'(x) \gt{} 0$ and solve the
+:::tip When asked to "find where a function is increasing", set $f'(x) \gt{} 0$ and solve the
 inequality. When asked to "show that a function is increasing", verify that $f'(x) \gt{} 0$ (or
-$\geq 0$) on the given interval.
-:::
+$\geq 0$) on the given interval. :::
 
 <hr />
 
@@ -316,11 +303,9 @@ $\geq 0$) on the given interval.
 A **point of inflection** is where the curve changes concavity (from concave up to concave down, or
 vice versa). This occurs where $f''(x) = 0$ and the sign of $f''(x)$ changes.
 
-:::warning
-A point of inflection does **not** require $f'(x) = 0$. For example, $f(x) = x^3$ has a
+:::warning A point of inflection does **not** require $f'(x) = 0$. For example, $f(x) = x^3$ has a
 point of inflection at $x = 0$, but $f'(0) = 0$ in this case. Consider $f(x) = x^3 + x$:
-$f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$.
-:::
+$f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$. :::
 
 <hr />
 
@@ -364,6 +349,7 @@ $$f'(x) = \lim_{h\to 0}\frac{\sqrt{x+h}-\sqrt{x}}{h} \cdot \frac{\sqrt{x+h}+\sqr
 
 **If you get this wrong, revise:**
 [The Derivative from First Principles](#1-the-derivative-from-first-principles) — Section 1.
+
 </details>
 
 <details>
@@ -383,6 +369,7 @@ $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 **If you get this wrong, revise:**
 [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
+
 </details>
 
 <details>
@@ -400,6 +387,7 @@ $$\frac{dy}{dx} = \frac{e^x(x^2+2x)\sin x - x^2 e^x \cos x}{\sin^2 x} = \frac{xe
 
 **If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and
 [The Product Rule](#3-the-product-rule) — Section 3.
+
 </details>
 
 <details>
@@ -416,6 +404,7 @@ $$\frac{dy}{dx} = \frac{y - x^2}{y^2 - x}$$
 
 **If you get this wrong, revise:** [Implicit Differentiation](#12-implicit-differentiation) —
 Section 12.
+
 </details>
 
 <details>
@@ -435,6 +424,7 @@ $$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \fra
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.
+
 </details>
 
 <details>
@@ -451,6 +441,7 @@ all $x \gt{} 0$, so $f$ is strictly increasing on $(0, \infty)$.
 
 **If you get this wrong, revise:**
 [Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
+
 </details>
 
 <details>
@@ -468,6 +459,7 @@ $$y - 1 = \frac{1}{e}(x - e) \implies y = \frac{x}{e}$$
 
 **If you get this wrong, revise:**
 [Derivatives of Standard Functions](#6-derivatives-of-standard-functions) — Section 6.
+
 </details>
 
 <details>
@@ -493,6 +485,7 @@ $t=-1$ is a **minimum**.
 
 **If you get this wrong, revise:**
 [Differentiation of Parametric Equations](#11-differentiation-of-parametric-equations) — Section 11.
+
 </details>
 
 <details>
@@ -507,6 +500,7 @@ $\sec x = \dfrac{1}{\cos x} = (\cos x)^{-1}$.
 $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \tan x \quad \blacksquare$$
 
 **If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
+
 </details>
 
 <details>
@@ -524,6 +518,7 @@ $f(2) = 2 + \dfrac{4}{2} = 4$.
 
 **If you get this wrong, revise:**
 [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
+
 </details>
 
 <details>
@@ -540,6 +535,7 @@ $\dfrac{dy}{du} = 3u^2$, $\dfrac{du}{dx} = \cos(2x^2+1) \cdot 4x$.
 $$\frac{dy}{dx} = 3\sin^2(2x^2+1) \cdot \cos(2x^2+1) \cdot 4x = 12x\sin^2(2x^2+1)\cos(2x^2+1)$$
 
 **If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
+
 </details>
 
 <details>
@@ -558,6 +554,7 @@ $f''(x) = 0$ when $x = 1$. But $f''(x) = 12(x-1)^2 \geq 0$ for all $x$ — the s
 (Note: $f(x) = (x-1)^4$, which is concave up everywhere.)
 
 **If you get this wrong, revise:** [Points of Inflection](#10-points-of-inflection) — Section 10.
+
 </details>
 
 <details>
@@ -578,6 +575,7 @@ decreasing on each branch.
 
 **If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and
 [Stationary Points](#72-stationary-points) — Section 7.2.
+
 </details>
 
 <details>
@@ -599,6 +597,7 @@ $$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{10
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.
+
 </details>
 
 :::

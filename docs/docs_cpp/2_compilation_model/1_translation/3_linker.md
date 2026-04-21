@@ -43,14 +43,12 @@ As the linker scans inputs (objects and libraries) from **left to right** on the
    - If a match is found, that specific member object is extracted and added to **E**.
    - If no match is found, the member object is ignored entirely.
 
-:::danger
-The Archive Order Trap Because static libraries are searched only to resolve _currently
+:::danger The Archive Order Trap Because static libraries are searched only to resolve _currently
 pending_ undefined symbols, order matters. If `LibA` depends on `LibB`, `LibA` must appear
 **before** `LibB` in the linker command.
 
 - Correct: `clang++ main.o -lA -lB`
-- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined).
-:::
+- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined). :::
 
 ### Weak vs. Strong vs. Common Symbols
 
@@ -294,8 +292,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
 endif()
 ```
 
-:::warning
-ICF can break programs that compare function pointers for identity. If `f()` and `g()`
+:::warning ICF can break programs that compare function pointers for identity. If `f()` and `g()`
 are folded into the same address, `&f == &g` becomes `true` even though they are distinct functions.
 This is rare but possible. Use `-Wl,--icf=safe` to fold only functions with identical relocations.
 :::
@@ -740,11 +737,9 @@ The linker rewrites every call to `malloc` to call `__wrap_malloc` instead. The 
 symbol is provided by the original library and can be called from within the wrapper. This mechanism
 does not require modifying the original source code.
 
-:::warning
-`--wrap` operates at the symbol level, not the function level. If `malloc` is inlined by
+:::warning `--wrap` operates at the symbol level, not the function level. If `malloc` is inlined by
 the compiler, the wrapper will not intercept the inlined call. Use `-fno-inline` on the wrapping TU
-or compile the wrapped TU separately without LTO.
-:::
+or compile the wrapped TU separately without LTO. :::
 
 ## See Also
 

@@ -37,12 +37,10 @@ $$\mathrm{Long-run growth} = f(\Delta K, \Delta L, \Delta A)$$
 
 where $K$ = capital, $L$ = labour, $A$ = total factor productivity (technology and efficiency).
 
-:::info
-Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
+:::info Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
 supply-side policies and requires evaluation of both. AQA emphasises the effect of supply-side
 policies on the Phillips curve. Edexcel links supply-side policy to productivity and
-competitiveness.
-:::
+competitiveness. :::
 
 ## 2. Market-Oriented Supply-Side Policies
 
@@ -92,12 +90,10 @@ and OBR) suggest that for income tax, the UK is to the **left** of $t^*$ — mea
 reduce revenue, not increase it. For corporation tax, the evidence is more contested; some studies
 suggest the UK may be closer to $t^*$ due to capital mobility.
 
-:::info
-Board-Specific Note CIE (9708) and Edexcel both require understanding of the Laffer curve.
+:::info Board-Specific Note CIE (9708) and Edexcel both require understanding of the Laffer curve.
 AQA tends to focus more on the income and substitution effects of tax changes rather than the Laffer
 curve explicitly, though it can be used in evaluation. OCR includes the Laffer curve in the context
-of fiscal policy.
-:::
+of fiscal policy. :::
 
 **Evaluation of tax reform.** The effectiveness of tax cuts as a supply-side tool depends on several
 factors. First, the **elasticity of the tax base** matters — if workers and firms are highly
@@ -176,12 +172,10 @@ and 1983. The short-term social costs were substantial, and some economists argu
 benefits were oversold — UK productivity growth remained below that of Germany and France for much
 of the period.
 
-:::info
-Board-Specific Note OCR (H460) specifically requires knowledge of Thatcherite reforms and
+:::info Board-Specific Note OCR (H460) specifically requires knowledge of Thatcherite reforms and
 their effects on the UK economy. Edexcel (A) references Thatcherism in the context of
 market-oriented policies. AQA and CIE may expect examples but do not mandate specific knowledge of
-the Thatcher era.
-:::
+the Thatcher era. :::
 
 ### 2.4 Competition Policy
 
@@ -251,12 +245,10 @@ has been criticised for incentivising rebadging existing training rather than cr
 opportunities. The key lesson is that **institutional quality matters as much as spending** — simply
 investing more in education without reforming how it is delivered yields diminishing returns.
 
-:::info
-Board-Specific Note Edexcel (A) expects candidates to discuss specific UK education policies
+:::info Board-Specific Note Edexcel (A) expects candidates to discuss specific UK education policies
 as examples of interventionist supply-side policy. CIE (9708) accepts any country example but
 rewards specificity. AQA does not mandate particular policy knowledge but values well-explained
-real-world examples. OCR (H460) links education policy to labour market outcomes.
-:::
+real-world examples. OCR (H460) links education policy to labour market outcomes. :::
 
 ### 3.2 Investment in Infrastructure
 
@@ -336,12 +328,10 @@ However, the model may not be directly transferable: Nordic countries have small
 populations, strong social trust, and distinct institutional histories. The UK's larger, more
 diverse population and different political culture may make the Nordic approach harder to implement.
 
-:::info
-Board-Specific Note AQA and Edexcel both value comparative analysis of different countries'
+:::info Board-Specific Note AQA and Edexcel both value comparative analysis of different countries'
 supply-side approaches. CIE (9708) rewards discussion of how different institutional frameworks
 affect policy effectiveness. OCR (H460) may ask students to compare UK policy with other countries.
-The Nordic model is a strong evaluative point for any board.
-:::
+The Nordic model is a strong evaluative point for any board. :::
 
 ## 4. Evaluation of Supply-Side Policies
 
@@ -382,13 +372,11 @@ services may benefit most from deregulation and competition, while education and
 require government leadership. A pragmatic approach selects the appropriate tool for each situation
 rather than adhering to a rigid ideological position.
 
-:::info
-Board-Specific Note AQA (7136) Paper 2 often asks candidates to evaluate the relative merits
+:::info Board-Specific Note AQA (7136) Paper 2 often asks candidates to evaluate the relative merits
 of market-oriented and interventionist supply-side policies. Edexcel (A) Paper 3 may present a
 scenario requiring analysis of both. CIE (9708) Paper 4 essays frequently require a balanced
 discussion. OCR (H460) emphasises the role of government in correcting market failure through
-supply-side policy. All boards reward nuanced answers that recognise context matters.
-:::
+supply-side policy. All boards reward nuanced answers that recognise context matters. :::
 
 ### 4.2 Supply-Side vs Demand-Side Policy
 
@@ -404,11 +392,9 @@ supply-side policy. All boards reward nuanced answers that recognise context mat
 supply-side policy to raise living standards in the long run. The two are complementary, not
 substitutes.
 
-:::tip
-Exam Technique The strongest evaluation answers recognise that supply-side policies take time
+:::tip Exam Technique The strongest evaluation answers recognise that supply-side policies take time
 to work. An economy in a deep recession needs immediate demand-side stimulus, not just long-run
-supply-side reforms. But sustained growth requires both. Always reference the time horizon.
-:::
+supply-side reforms. But sustained growth requires both. Always reference the time horizon. :::
 
 ### 4.3 Supply-Side Effects on the Phillips Curve
 
@@ -470,12 +456,10 @@ failure (ambitious infrastructure projects that go over budget and under-deliver
 
 $$\mathrm{Net benefit of supply-side policy} = \mathrm{Efficiency gain} - \mathrm{Cost} - \mathrm{Distributional loss} - \mathrm{Government failure risk}$$
 
-:::tip
-Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
+:::tip Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
 [policy] may [benefit] because [reason]. On the other hand, [counter-argument] because [reason].
 However, the overall impact depends on [contextual factor]. Therefore, [judgement]." This "however,
-therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE) responses.
-:::
+therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE) responses. :::
 
 ## 5. Measuring the Impact of Supply-Side Policies
 
@@ -532,12 +516,10 @@ This "productivity puzzle" has been attributed to:
 The UK lags behind comparable economies, suggesting scope for improvement through supply-side
 reforms that learn from international best practice.
 
-:::tip
-Exam Technique When evaluating supply-side policies, use international comparisons. "South
+:::tip Exam Technique When evaluating supply-side policies, use international comparisons. "South
 Korea achieved 7% annual growth for three decades by investing 5% of GDP in education" is more
 persuasive than abstract arguments. But always acknowledge differences in context — policies that
-work in one country may not transfer directly.
-:::
+work in one country may not transfer directly. :::
 
 ## 6. Problem Set
 

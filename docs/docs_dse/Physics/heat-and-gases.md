@@ -17,10 +17,10 @@ slug: heat-and-gases
 Temperature is a scalar quantity that measures the average kinetic energy of the particles in a
 substance. Three temperature scales are in common use:
 
-| Scale      | Symbol | Unit             | Absolute Zero | Key Reference Points                                              |
-| ---------- | ------ | ---------------- | ------------- | ----------------------------------------------------------------- |
+| Scale      | Symbol | Unit               | Absolute Zero | Key Reference Points                                                  |
+| ---------- | ------ | ------------------ | ------------- | --------------------------------------------------------------------- |
 | Celsius    | $T_C$  | $^\circ\mathrm{C}$ | $-273.15$     | $0^\circ\mathrm{C}$ (ice point), $100^\circ\mathrm{C}$ (steam point)  |
-| Kelvin     | $T$    | K                | $0$           | Same interval as Celsius, shifted by $273.15$                     |
+| Kelvin     | $T$    | K                  | $0$           | Same interval as Celsius, shifted by $273.15$                         |
 | Fahrenheit | $T_F$  | $^\circ\mathrm{F}$ | $-459.67$     | $32^\circ\mathrm{F}$ (ice point), $212^\circ\mathrm{F}$ (steam point) |
 
 The **Kelvin** is the SI unit of temperature and is defined by fixing the Boltzmann constant
@@ -57,8 +57,8 @@ $$T_F = \frac{9}{5}(37) + 32 = 66.6 + 32 = 98.6^\circ\mathrm{F}$$
 A thermometer works by exploiting a **thermometric property** -- a physical property that varies
 continuously with temperature. Common thermometric properties include:
 
-| Thermometer Type       | Thermometric Property                                       | Range                             |
-| ---------------------- | ----------------------------------------------------------- | --------------------------------- |
+| Thermometer Type       | Thermometric Property                                       | Range                               |
+| ---------------------- | ----------------------------------------------------------- | ----------------------------------- |
 | Liquid-in-glass        | Length of liquid column (thermal expansion)                 | $-39$ to $350^\circ\mathrm{C}$ (Hg) |
 | Gas thermometer        | Pressure at constant volume, or volume at constant pressure | $-270$ to $1500^\circ\mathrm{C}$    |
 | Thermocouple           | EMF between two junctions at different temperatures         | $-200$ to $1500^\circ\mathrm{C}$    |
@@ -153,15 +153,15 @@ where $M$ is the molar mass.
 ### Common Specific Heat Capacities
 
 | Substance        | Specific Heat Capacity ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$) |
-| ---------------- | --------------------------------------------------------- |
-| Water            | $4186$                                                    |
-| Ice              | $2100$                                                    |
-| Aluminium        | $900$                                                     |
-| Copper           | $385$                                                     |
-| Iron             | $449$                                                     |
-| Lead             | $128$                                                     |
-| Glass            | $840$                                                     |
-| Air (const. $p$) | $1005$                                                    |
+| ---------------- | ------------------------------------------------------------- |
+| Water            | $4186$                                                        |
+| Ice              | $2100$                                                        |
+| Aluminium        | $900$                                                         |
+| Copper           | $385$                                                         |
+| Iron             | $449$                                                         |
+| Lead             | $128$                                                         |
+| Glass            | $840$                                                         |
+| Air (const. $p$) | $1005$                                                        |
 
 Water has an exceptionally high specific heat capacity, which is why it is used as a coolant and why
 coastal climates are more moderate than inland climates.
@@ -184,8 +184,8 @@ specific heat capacity depends on whether the process is at constant volume or c
 
 ### Worked Example 2
 
-A $2.0$ kg copper block at $100^\circ\mathrm{C}$ is placed in $0.5$ kg of water at $20^\circ\mathrm{C}$.
-Find the final temperature, assuming no heat loss to the surroundings.
+A $2.0$ kg copper block at $100^\circ\mathrm{C}$ is placed in $0.5$ kg of water at
+$20^\circ\mathrm{C}$. Find the final temperature, assuming no heat loss to the surroundings.
 
 Heat lost by copper $=$ heat gained by water:
 
@@ -257,8 +257,8 @@ where $C_{\mathrm{cal}}$ is the heat capacity of the calorimeter.
 constant temperature. The word "latent" means hidden, because this heat does not produce a
 temperature change.
 
-| Quantity                             | Symbol | Unit               | Definition                                             |
-| ------------------------------------ | ------ | ------------------ | ------------------------------------------------------ |
+| Quantity                             | Symbol | Unit                 | Definition                                             |
+| ------------------------------------ | ------ | -------------------- | ------------------------------------------------------ |
 | Specific latent heat of fusion       | $l_f$  | $\mathrm{J kg}^{-1}$ | Heat to melt $1$ kg of solid at its melting point      |
 | Specific latent heat of vaporization | $l_v$  | $\mathrm{J kg}^{-1}$ | Heat to vaporise $1$ kg of liquid at its boiling point |
 
@@ -271,12 +271,12 @@ where $l$ is the appropriate specific latent heat.
 ### Common Latent Heats
 
 | Substance | $l_f$ ($\mathrm{kJ kg}^{-1}$) | $l_v$ ($\mathrm{kJ kg}^{-1}$) | Melting Point ($^\circ\mathrm{C}$) | Boiling Point ($^\circ\mathrm{C}$) |
-| --------- | --------------------------- | --------------------------- | -------------------------------- | -------------------------------- |
-| Water     | $334$                       | $2260$                      | $0$                              | $100$                            |
-| Ethanol   | $109$                       | $846$                       | $-114$                           | $78$                             |
-| Aluminium | $397$                       | $10500$                     | $660$                            | $2519$                           |
-| Copper    | $205$                       | $4730$                      | $1085$                           | $2562$                           |
-| Lead      | $23$                        | $871$                       | $327$                            | $1749$                           |
+| --------- | ----------------------------- | ----------------------------- | ---------------------------------- | ---------------------------------- |
+| Water     | $334$                         | $2260$                        | $0$                                | $100$                              |
+| Ethanol   | $109$                         | $846$                         | $-114$                             | $78$                               |
+| Aluminium | $397$                         | $10500$                       | $660$                              | $2519$                             |
+| Copper    | $205$                         | $4730$                        | $1085$                             | $2562$                             |
+| Lead      | $23$                          | $871$                         | $327$                              | $1749$                             |
 
 Note that $l_v \gg l_f$ for all substances. Vaporisation requires breaking most intermolecular bonds
 (particles gain enough energy to escape the liquid), whereas fusion only requires weakening them
@@ -456,16 +456,16 @@ $$\frac{Q}{t} = kA\frac{T_1 - T_2}{d}$$
 #### Thermal Conductivities
 
 | Material             | $k$ ($\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) |
-| -------------------- | ------------------------------------- |
-| Copper               | $385$                                 |
-| Aluminium            | $205$                                 |
-| Steel                | $50$                                  |
-| Glass                | $0.8$                                 |
-| Water                | $0.6$                                 |
-| Brick                | $0.6$-$0.8$                           |
-| Wood                 | $0.1$-$0.2$                           |
-| Air                  | $0.025$                               |
-| Expanded polystyrene | $0.03$-$0.04$                         |
+| -------------------- | ----------------------------------------- |
+| Copper               | $385$                                     |
+| Aluminium            | $205$                                     |
+| Steel                | $50$                                      |
+| Glass                | $0.8$                                     |
+| Water                | $0.6$                                     |
+| Brick                | $0.6$-$0.8$                               |
+| Wood                 | $0.1$-$0.2$                               |
+| Air                  | $0.025$                                   |
+| Expanded polystyrene | $0.03$-$0.04$                             |
 
 #### U-Value (Overall Heat Transfer Coefficient)
 
@@ -599,17 +599,13 @@ $$T(t) = T_s + (T_0 - T_s)e^{-t/\tau}$$
 
 where $\tau = C / (hA)$ is the time constant.
 
-:::info
-Newton's law of cooling is an approximation valid for small temperature differences and when
+:::info Newton's law of cooling is an approximation valid for small temperature differences and when
 radiation is not the dominant mechanism. At large temperature differences, the $T^4$ dependence of
-radiation becomes significant and the cooling is faster than predicted by Newton's law.
-:::
+radiation becomes significant and the cooling is faster than predicted by Newton's law. :::
 
 ---
 
 ## Gas Laws
-
-
 
 <PhetSimulation simulationId="gas-properties" title="Gas Properties" />
 
@@ -617,18 +613,18 @@ Explore the simulation above to develop intuition for this topic.
 
 ### Basic Definitions
 
-| Quantity            | Symbol | Unit                   | Definition                |
-| ------------------- | ------ | ---------------------- | ------------------------- |
+| Quantity            | Symbol | Unit                     | Definition                |
+| ------------------- | ------ | ------------------------ | ------------------------- |
 | Pressure            | $p$    | Pa ($\mathrm{N m}^{-2}$) | Force per unit area       |
 | Volume              | $V$    | $\mathrm{m}^3$           | Space occupied by the gas |
-| Temperature         | $T$    | K                      | Absolute temperature      |
-| Amount of substance | $n$    | mol                    | Number of moles           |
+| Temperature         | $T$    | K                        | Absolute temperature      |
+| Amount of substance | $n$    | mol                      | Number of moles           |
 | Molar mass          | $M$    | $\mathrm{kg mol}^{-1}$   | Mass per mole             |
 
 ### Standard Temperature and Pressure (STP)
 
-| Standard          | Temperature                    | Pressure                |
-| ----------------- | ------------------------------ | ----------------------- |
+| Standard          | Temperature                      | Pressure                |
+| ----------------- | -------------------------------- | ----------------------- |
 | STP (IUPAC, 1982) | $273.15$ K ($0^\circ\mathrm{C}$) | $100$ kPa ($1$ bar)     |
 | STP (traditional) | $273.15$ K ($0^\circ\mathrm{C}$) | $101.325$ kPa ($1$ atm) |
 
@@ -692,8 +688,8 @@ where $R = 8.314$ $\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$ is the universal molar g
 
 Alternative forms:
 
-In terms of the number of molecules $N = nN_A$ (where $N_A = 6.022 \times 10^{23}$ $\mathrm{mol}^{-1}$
-is Avogadro's number):
+In terms of the number of molecules $N = nN_A$ (where $N_A = 6.022 \times 10^{23}$
+$\mathrm{mol}^{-1}$ is Avogadro's number):
 
 $$pV = Nk_BT$$
 
@@ -710,8 +706,8 @@ where $\rho = m/V$ is the density.
 ### Worked Example 6
 
 A gas occupies $5.0 \times 10^{-3}$ $\mathrm{m}^3$ at $2.0 \times 10^5$ Pa and $300$ K. It is
-compressed to $2.0 \times 10^{-3}$ $\mathrm{m}^3$ and the pressure increases to $5.0 \times 10^5$ Pa.
-Find the new temperature.
+compressed to $2.0 \times 10^{-3}$ $\mathrm{m}^3$ and the pressure increases to $5.0 \times 10^5$
+Pa. Find the new temperature.
 
 $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 
@@ -721,8 +717,8 @@ $$T_2 = \frac{3000}{1000} = 300 \mathrm{ K}$$
 
 ### Worked Example 7
 
-Find the number of moles of gas in a $2.0$ L container at $25^\circ\mathrm{C}$ and $1.01 \times 10^5$
-Pa.
+Find the number of moles of gas in a $2.0$ L container at $25^\circ\mathrm{C}$ and
+$1.01 \times 10^5$ Pa.
 
 $$n = \frac{pV}{RT} = \frac{(1.01 \times 10^5)(2.0 \times 10^{-3})}{(8.314)(298.15)}$$
 
@@ -925,9 +921,9 @@ $$\gamma = \frac{C_p}{C_V}$$
 ### Molar Heat Capacities of Gases
 
 | Type      | $C_V$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $C_p$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $\gamma = C_p/C_V$ |
-| --------- | ----------------------------------------- | ----------------------------------------- | ------------------ |
-| Monatomic | $12.5$                                    | $20.8$                                    | $1.67$             |
-| Diatomic  | $20.8$                                    | $29.1$                                    | $1.40$             |
+| --------- | --------------------------------------------- | --------------------------------------------- | ------------------ |
+| Monatomic | $12.5$                                        | $20.8$                                        | $1.67$             |
+| Diatomic  | $20.8$                                        | $29.1$                                        | $1.40$             |
 
 ---
 
@@ -1033,21 +1029,21 @@ and rise to the top.
 ### Mistake 1: Confusing Heat and Temperature
 
 Heat and temperature are fundamentally different quantities. A large mass of water at
-$50^\circ\mathrm{C}$ contains more thermal energy than a small mass of water at $90^\circ\mathrm{C}$.
-Temperature measures the _average_ kinetic energy per particle; heat is the total energy transferred
-due to a temperature difference.
+$50^\circ\mathrm{C}$ contains more thermal energy than a small mass of water at
+$90^\circ\mathrm{C}$. Temperature measures the _average_ kinetic energy per particle; heat is the
+total energy transferred due to a temperature difference.
 
 ### Mistake 2: Using Celsius in Gas Law Calculations
 
 All gas law calculations require temperature in **Kelvin**. Using Celsius will produce incorrect
-results. For example, doubling the Celsius temperature from $20^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$
-is NOT a doubling of the absolute temperature ($293$ K to $313$ K).
+results. For example, doubling the Celsius temperature from $20^\circ\mathrm{C}$ to
+$40^\circ\mathrm{C}$ is NOT a doubling of the absolute temperature ($293$ K to $313$ K).
 
 ### Mistake 3: Forgetting to Account for the Calorimeter
 
 In method of mixtures experiments, the calorimeter itself absorbs heat. Ignoring the calorimeter's
-heat capacity $C_{\mathrm{cal}}$ leads to an overestimate of the specific heat capacity of the sample.
-The correct energy balance is:
+heat capacity $C_{\mathrm{cal}}$ leads to an overestimate of the specific heat capacity of the
+sample. The correct energy balance is:
 
 $$m_s c_s (T_s - T_f) = (m_w c_w + C_{\mathrm{cal}})(T_f - T_w)$$
 
@@ -1083,14 +1079,14 @@ $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 ### Mistake 8: Units in Thermal Conductivity Problems
 
 When using Fourier's law, ensure all quantities are in SI units: $k$ in
-$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$, $A$ in $\mathrm{m}^2$, $d$ in $\mathrm{m}$, $\Delta T$ in K. A common
-error is using centimetres for thickness without converting to metres.
+$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$, $A$ in $\mathrm{m}^2$, $d$ in $\mathrm{m}$, $\Delta T$ in K. A
+common error is using centimetres for thickness without converting to metres.
 
 ### Mistake 9: Mixing Up Specific Heat Capacity and Heat Capacity
 
-Specific heat capacity $c$ is per unit mass ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$). Heat capacity $C$ is
-for the entire object ($\mathrm{J K}^{-1}$). They are related by $C = mc$. Using one in place of the
-other is a frequent error.
+Specific heat capacity $c$ is per unit mass ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$). Heat capacity
+$C$ is for the entire object ($\mathrm{J K}^{-1}$). They are related by $C = mc$. Using one in place
+of the other is a frequent error.
 
 ### Mistake 10: Incorrect U-Value Calculation
 
@@ -1122,8 +1118,8 @@ $$T_F = \frac{9}{5}(5504.85) + 32 = 9908.73 + 32 = 9940.73^\circ\mathrm{F}$$
 A $0.3$ kg aluminium block at $200^\circ\mathrm{C}$ is dropped into $1.0$ kg of oil at
 $25^\circ\mathrm{C}$ contained in a copper calorimeter of mass $0.2$ kg at $25^\circ\mathrm{C}$. The
 specific heat capacity of oil is $2100$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$. Find the final
-temperature. (Specific heat capacity of aluminium $= 900$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$, copper
-$= 385$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.)
+temperature. (Specific heat capacity of aluminium $= 900$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$,
+copper $= 385$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.)
 
 Heat lost by aluminium $=$ heat gained by oil $+$ heat gained by calorimeter:
 
@@ -1146,8 +1142,8 @@ $$T_f = 44.3^\circ\mathrm{C}$$
 <details>
 <summary>Question 3: Latent Heat with Phase Change</summary>
 
-$100$ g of steam at $100^\circ\mathrm{C}$ is passed into $500$ g of water at $20^\circ\mathrm{C}$. Find
-the final temperature and state.
+$100$ g of steam at $100^\circ\mathrm{C}$ is passed into $500$ g of water at $20^\circ\mathrm{C}$.
+Find the final temperature and state.
 
 **Step 1:** Check if all steam condenses.
 
@@ -1164,8 +1160,8 @@ $$Q_{\mathrm{warm}} = m_w c_w (100 - 20) = 0.5 \times 4186 \times 80 = 167440 \m
 Since $Q_{\mathrm{max}} \gt Q_{\mathrm{warm}}$, all the steam condenses and the final temperature is
 above $20^\circ\mathrm{C}$ but we need to check if it reaches $100^\circ\mathrm{C}$.
 
-Actually, $Q_{\mathrm{warm}} = 167440$ J is less than the latent heat of condensation alone ($226000$
-J), so only part of the steam condenses. The final temperature is $100^\circ\mathrm{C}$.
+Actually, $Q_{\mathrm{warm}} = 167440$ J is less than the latent heat of condensation alone
+($226000$ J), so only part of the steam condenses. The final temperature is $100^\circ\mathrm{C}$.
 
 Let $m$ be the mass of steam that condenses:
 
@@ -1181,8 +1177,9 @@ The final mixture is $174.1$ g of water and $25.9$ g of steam at $100^\circ\math
 <summary>Question 4: Thermal Conductivity</summary>
 
 A glass window of area $1.5$ $\mathrm{m}^2$ and thickness $5.0$ mm has an indoor surface temperature
-of $20^\circ\mathrm{C}$ and an outdoor surface temperature of $5^\circ\mathrm{C}$. Find the rate of heat
-loss through the window. (Thermal conductivity of glass $= 0.8$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$.)
+of $20^\circ\mathrm{C}$ and an outdoor surface temperature of $5^\circ\mathrm{C}$. Find the rate of
+heat loss through the window. (Thermal conductivity of glass $= 0.8$
+$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$.)
 
 $$\frac{Q}{t} = kA\frac{T_1 - T_2}{d} = 0.8 \times 1.5 \times \frac{20 - 5}{0.005}$$
 
@@ -1193,8 +1190,8 @@ $$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \mathrm{ W}
 <details>
 <summary>Question 5: U-Value of Composite Wall</summary>
 
-A wall consists of a $10$ cm brick layer ($k = 0.6$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) and a $5$ cm
-layer of insulation ($k = 0.04$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$). Find the U-value.
+A wall consists of a $10$ cm brick layer ($k = 0.6$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) and a $5$
+cm layer of insulation ($k = 0.04$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$). Find the U-value.
 
 $$R_{\mathrm{brick}} = \frac{d_1}{k_1} = \frac{0.10}{0.6} = 0.1667 \mathrm{ m}^2\mathrm{ K/W}$$
 
@@ -1226,10 +1223,11 @@ $$P = 5.67 \times 10^{-8} \times 1.963 \times 10^9 = 111.3 \mathrm{ W}$$
 
 A gas cylinder contains $10$ L of oxygen at $20^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa. If the
 temperature rises to $80^\circ\mathrm{C}$ and the pressure valve releases gas to maintain
-$1.5 \times 10^6$ Pa, what volume of gas (measured at $20^\circ\mathrm{C}$ and $1.01 \times 10^5$ Pa)
-escapes?
+$1.5 \times 10^6$ Pa, what volume of gas (measured at $20^\circ\mathrm{C}$ and $1.01 \times 10^5$
+Pa) escapes?
 
-The gas that remains in the cylinder at $80^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa occupies $10$ L.
+The gas that remains in the cylinder at $80^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa occupies $10$
+L.
 
 Moles remaining:
 
@@ -1252,8 +1250,8 @@ $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} 
 <details>
 <summary>Question 8: RMS Speed Comparison</summary>
 
-Compare the rms speeds of hydrogen ($M = 2.0$ $\mathrm{g/mol}$) and oxygen ($M = 32.0$ $\mathrm{g/mol}$)
-at the same temperature.
+Compare the rms speeds of hydrogen ($M = 2.0$ $\mathrm{g/mol}$) and oxygen ($M = 32.0$
+$\mathrm{g/mol}$) at the same temperature.
 
 $$\frac{v_{\mathrm{rms,H}_2}}{v_{\mathrm{rms,O}_2}} = \sqrt{\frac{M_{\mathrm{O}_2}}{M_{\mathrm{H}_2}}} = \sqrt{\frac{32.0}{2.0}} = \sqrt{16} = 4$$
 
@@ -1326,7 +1324,8 @@ The temperature drops because the gas does work on its surroundings without any 
 <summary>Question 11: Newton's Law of Cooling</summary>
 
 A body cools from $80^\circ\mathrm{C}$ to $60^\circ\mathrm{C}$ in $5$ minutes in a room at
-$20^\circ\mathrm{C}$. How long will it take to cool from $60^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$?
+$20^\circ\mathrm{C}$. How long will it take to cool from $60^\circ\mathrm{C}$ to
+$40^\circ\mathrm{C}$?
 
 Using Newton's law of cooling:
 

@@ -40,11 +40,9 @@ For ionic compounds, the term **relative formula mass** is used, calculated the 
 
 $$M_r(\mathrm{NaCl}) = 23.0 + 35.5 = 58.5$$
 
-:::info
-DSE exams frequently ask you to calculate $M_r$ as a first step in larger stoichiometry
+:::info DSE exams frequently ask you to calculate $M_r$ as a first step in larger stoichiometry
 problems. Memorise the common values: H = 1.0, C = 12.0, N = 14.0, O = 16.0, Na = 23.0, Mg = 24.3,
-Al = 27.0, S = 32.1, Cl = 35.5, K = 39.1, Ca = 40.1, Fe = 55.8, Cu = 63.5, Zn = 65.4.
-:::
+Al = 27.0, S = 32.1, Cl = 35.5, K = 39.1, Ca = 40.1, Fe = 55.8, Cu = 63.5, Zn = 65.4. :::
 
 ---
 
@@ -67,13 +65,13 @@ unit g/mol.
 
 $$n = \frac{m}{M}$$
 
-| Substance         | Formula                 | $M_r$ | Molar Mass  |
-| ----------------- | ----------------------- | ----- | ----------- |
+| Substance         | Formula                     | $M_r$ | Molar Mass  |
+| ----------------- | --------------------------- | ----- | ----------- |
 | Water             | $\mathrm{H}_2\mathrm{O}$    | 18.0  | 18.0 g/mol  |
-| Carbon dioxide    | $\mathrm{CO}_2$           | 44.0  | 44.0 g/mol  |
-| Sodium chloride   | $\mathrm{NaCl}$           | 58.5  | 58.5 g/mol  |
+| Carbon dioxide    | $\mathrm{CO}_2$             | 44.0  | 44.0 g/mol  |
+| Sodium chloride   | $\mathrm{NaCl}$             | 58.5  | 58.5 g/mol  |
 | Sulfuric acid     | $\mathrm{H}_2\mathrm{SO}_4$ | 98.1  | 98.1 g/mol  |
-| Calcium carbonate | $\mathrm{CaCO}_3$         | 100.1 | 100.1 g/mol |
+| Calcium carbonate | $\mathrm{CaCO}_3$           | 100.1 | 100.1 g/mol |
 
 ### Molar Volume of Gas at STP
 
@@ -87,10 +85,8 @@ $$n = \frac{V}{V_m}$$
 
 Where $V_m$ = 22.4 dm$^3$/mol (STP) or 24.0 dm$^3$/mol (RTP).
 
-:::warning
-Pay close attention to whether the question specifies STP or RTP. Using the wrong molar
-volume is one of the most common errors in DSE stoichiometry questions.
-:::
+:::warning Pay close attention to whether the question specifies STP or RTP. Using the wrong molar
+volume is one of the most common errors in DSE stoichiometry questions. :::
 
 ---
 
@@ -141,7 +137,8 @@ $M_r(\mathrm{CH}_2\mathrm{O}) = 12.0 + 2(1.0) + 16.0 = 30.0$
 
 $n = \dfrac{180}{30.0} = 6$
 
-Molecular formula = $(\mathrm{CH}_2\mathrm{O})_6 = \mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$ (glucose)
+Molecular formula = $(\mathrm{CH}_2\mathrm{O})_6 = \mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$
+(glucose)
 
 </details>
 
@@ -286,7 +283,8 @@ both sides of a chemical equation.
 4. Balance O and H last.
 5. Check all atoms balance.
 
-**Worked example 8:** Balance: $\mathrm{Fe}_2\mathrm{O}_3 + \mathrm{CO} \to \mathrm{Fe} + \mathrm{CO}_2$
+**Worked example 8:** Balance:
+$\mathrm{Fe}_2\mathrm{O}_3 + \mathrm{CO} \to \mathrm{Fe} + \mathrm{CO}_2$
 
 <details>
 <summary>Answer</summary>
@@ -306,16 +304,16 @@ $$\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$$
 
 1 mol $\mathrm{N}_2$ reacts with 3 mol $\mathrm{H}_2$ to produce 2 mol $\mathrm{NH}_3$.
 
-**Worked example 9:** What mass of $\mathrm{NH}_3$ is produced when 28.0 g of $\mathrm{N}_2$ reacts with
-excess $\mathrm{H}_2$?
+**Worked example 9:** What mass of $\mathrm{NH}_3$ is produced when 28.0 g of $\mathrm{N}_2$ reacts
+with excess $\mathrm{H}_2$?
 
 <details>
 <summary>Answer</summary>
 
 Moles of $\mathrm{N}_2 = 28.0 / 28.0 = 1.00 \mathrm{ mol}$
 
-From the equation $\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$: 1 mol $\mathrm{N}_2$ produces 2 mol
-$\mathrm{NH}_3$
+From the equation $\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$: 1 mol $\mathrm{N}_2$ produces 2
+mol $\mathrm{NH}_3$
 
 Moles of $\mathrm{NH}_3 = 1.00 \times 2 = 2.00 \mathrm{ mol}$
 
@@ -337,7 +335,8 @@ maximum amount of product that can be formed.
 3. The smallest value corresponds to the limiting reagent.
 4. Use the limiting reagent to calculate the amount of product.
 
-**Worked example 10:** 10.0 g of $\mathrm{Al}$ is reacted with 30.0 g of $\mathrm{HCl}$ according to:
+**Worked example 10:** 10.0 g of $\mathrm{Al}$ is reacted with 30.0 g of $\mathrm{HCl}$ according
+to:
 
 $$2\mathrm{Al} + 6\mathrm{HCl} \to 2\mathrm{AlCl}_3 + 3\mathrm{H}_2$$
 
@@ -368,8 +367,8 @@ Volume at RTP = $0.411 \times 24.0 = 9.86 \mathrm{ dm}^3$
 
 $$\%\mathrm{ yield} = \frac{\mathrm{actual yield}}{\mathrm{theoretical yield}} \times 100\%$$
 
-**Worked example 11:** 10.0 g of $\mathrm{CaCO}_3$ is heated and 4.20 g of $\mathrm{CaO}$ is collected.
-Calculate the percentage yield.
+**Worked example 11:** 10.0 g of $\mathrm{CaCO}_3$ is heated and 4.20 g of $\mathrm{CaO}$ is
+collected. Calculate the percentage yield.
 
 $$\mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$$
 
@@ -402,13 +401,11 @@ $$PV = nRT$$
 | R      | Gas constant | 8.314 J/(mol K) or 0.0821 atm dm$^3$/(mol K) |
 | T      | Temperature  | K                                            |
 
-:::info
-At STP ($0^\circ\mathrm{C}$ = 273 K, 1 atm), using $PV = nRT$:
+:::info At STP ($0^\circ\mathrm{C}$ = 273 K, 1 atm), using $PV = nRT$:
 
 $V_m = \dfrac{nRT}{P} = \dfrac{1 \times 0.0821 \times 273}{1} = 22.4 \mathrm{ dm}^3$
 
-This confirms the molar volume at STP.
-:::
+This confirms the molar volume at STP. :::
 
 **Worked example 12:** Calculate the volume occupied by 5.00 g of $\mathrm{O}_2$ at 2.0 atm and
 $27^\circ\mathrm{C}$.
@@ -444,7 +441,8 @@ $$\mathrm{CaCO}_3 + 2\mathrm{HCl} \to \mathrm{CaCl}_2 + \mathrm{H}_2\mathrm{O} +
 
 Moles of $\mathrm{CaCO}_3 = 25.0 / 100.1 = 0.250 \mathrm{ mol}$
 
-1 mol $\mathrm{CaCO}_3$ produces 1 mol $\mathrm{CO}_2$, so moles of $\mathrm{CO}_2 = 0.250 \mathrm{ mol}$
+1 mol $\mathrm{CaCO}_3$ produces 1 mol $\mathrm{CO}_2$, so moles of
+$\mathrm{CO}_2 = 0.250 \mathrm{ mol}$
 
 Volume at RTP = $0.250 \times 24.0 = 6.00 \mathrm{ dm}^3$
 
@@ -491,9 +489,10 @@ $c(\mathrm{NaOH}) = \dfrac{0.00200}{25.0 / 1000} = \dfrac{0.00200}{0.0250} = 0.0
 
 </details>
 
-**Worked example 15:** 1.00 g of impure $\mathrm{Na}_2\mathrm{CO}_3$ is dissolved in water and made up
-to 250 cm$^3$. 25.0 cm$^3$ of this solution requires 21.5 cm$^3$ of 0.100 mol/dm$^3$ $\mathrm{HCl}$
-for complete reaction. Calculate the percentage purity of the $\mathrm{Na}_2\mathrm{CO}_3$.
+**Worked example 15:** 1.00 g of impure $\mathrm{Na}_2\mathrm{CO}_3$ is dissolved in water and made
+up to 250 cm$^3$. 25.0 cm$^3$ of this solution requires 21.5 cm$^3$ of 0.100 mol/dm$^3$
+$\mathrm{HCl}$ for complete reaction. Calculate the percentage purity of the
+$\mathrm{Na}_2\mathrm{CO}_3$.
 
 $$\mathrm{Na}_2\mathrm{CO}_3 + 2\mathrm{HCl} \to 2\mathrm{NaCl} + \mathrm{H}_2\mathrm{O} + \mathrm{CO}_2$$
 
@@ -593,9 +592,9 @@ $c = 20.0 / 40.0 = 0.500 \mathrm{ mol/dm}^3$
 ## Water of Crystallisation and Stoichiometry Combined
 
 **Worked example 18:** 5.00 g of hydrated magnesium sulfate,
-$\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$, is dissolved in water and made up to 250 cm$^3$. 25.0
-cm$^3$ of this solution requires 20.0 cm$^3$ of 0.100 mol/dm$^3$ $\mathrm{NaOH}$ to precipitate all
-the magnesium as $\mathrm{Mg(OH)}_2$. Find $x$.
+$\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$, is dissolved in water and made up to 250 cm$^3$.
+25.0 cm$^3$ of this solution requires 20.0 cm$^3$ of 0.100 mol/dm$^3$ $\mathrm{NaOH}$ to precipitate
+all the magnesium as $\mathrm{Mg(OH)}_2$. Find $x$.
 
 $$\mathrm{MgSO}_4 + 2\mathrm{NaOH} \to \mathrm{Mg(OH)}_2 + \mathrm{Na}_2\mathrm{SO}_4$$
 
@@ -619,9 +618,10 @@ Moles of water = $3.796 / 18.0 = 0.211 \mathrm{ mol}$
 $x = 0.211 / 0.0100 = 21.1$
 
 This is unrealistic for magnesium sulfate. The expected value is $x = 7$ for Epsom salt. The data
-likely has an issue. For $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$: $M_r = 120.4 + 7(18.0) = 246.4$.
-5.00 g would give $5.00/246.4 = 0.0203 \mathrm{ mol}$, and 25 cm$^3$ aliquot would need
-$0.00203 \times 2 = 0.00406 \mathrm{ mol}$ $\mathrm{NaOH}$, i.e. 40.6 cm$^3$ of 0.100 M NaOH.
+likely has an issue. For $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$:
+$M_r = 120.4 + 7(18.0) = 246.4$. 5.00 g would give $5.00/246.4 = 0.0203 \mathrm{ mol}$, and 25
+cm$^3$ aliquot would need $0.00203 \times 2 = 0.00406 \mathrm{ mol}$ $\mathrm{NaOH}$, i.e. 40.6
+cm$^3$ of 0.100 M NaOH.
 
 Revised problem: using titre of 40.6 cm$^3$:
 
@@ -700,8 +700,9 @@ Molecular formula = $\mathrm{Na}_2\mathrm{SO}_3$ (sodium sulfite)
 
 ### Problem 2
 
-25.0 cm$^3$ of 0.200 mol/dm$^3$ $\mathrm{H}_2\mathrm{SO}_4$ is completely neutralised by $\mathrm{KOH}$
-solution. If 40.0 cm$^3$ of $\mathrm{KOH}$ is required, what is the concentration of the $\mathrm{KOH}$?
+25.0 cm$^3$ of 0.200 mol/dm$^3$ $\mathrm{H}_2\mathrm{SO}_4$ is completely neutralised by
+$\mathrm{KOH}$ solution. If 40.0 cm$^3$ of $\mathrm{KOH}$ is required, what is the concentration of
+the $\mathrm{KOH}$?
 
 <details>
 <summary>Answer</summary>
@@ -718,9 +719,9 @@ $c(\mathrm{KOH}) = 0.0100 / (40.0 / 1000) = 0.0100 / 0.0400 = 0.250 \mathrm{ mol
 
 ### Problem 3
 
-When 8.40 g of hydrated sodium carbonate, $\mathrm{Na}_2\mathrm{CO}_3 \cdot x\mathrm{H}_2\mathrm{O}$, is
-heated to constant mass, 3.10 g of anhydrous $\mathrm{Na}_2\mathrm{CO}_3$ remains. Find the value of
-$x$.
+When 8.40 g of hydrated sodium carbonate,
+$\mathrm{Na}_2\mathrm{CO}_3 \cdot x\mathrm{H}_2\mathrm{O}$, is heated to constant mass, 3.10 g of
+anhydrous $\mathrm{Na}_2\mathrm{CO}_3$ remains. Find the value of $x$.
 
 <details>
 <summary>Answer</summary>
@@ -808,9 +809,9 @@ $\%\mathrm{ CaCO}_3 = \dfrac{0.400}{0.500} \times 100\% = 80.0\%$
 
 ### Problem 6
 
-A student prepares 500 cm$^3$ of 0.500 mol/dm$^3$ $\mathrm{H}_2\mathrm{SO}_4$ by diluting concentrated
-acid of density 1.84 g/cm$^3$ containing 98.0% $\mathrm{H}_2\mathrm{SO}_4$ by mass. What volume of the
-concentrated acid is required?
+A student prepares 500 cm$^3$ of 0.500 mol/dm$^3$ $\mathrm{H}_2\mathrm{SO}_4$ by diluting
+concentrated acid of density 1.84 g/cm$^3$ containing 98.0% $\mathrm{H}_2\mathrm{SO}_4$ by mass.
+What volume of the concentrated acid is required?
 
 <details>
 <summary>Answer</summary>
@@ -828,8 +829,8 @@ Volume of concentrated acid = $25.03 / 1.84 = 13.6 \mathrm{ cm}^3$
 ### Problem 7
 
 An organic compound contains only carbon, hydrogen, and oxygen. On complete combustion, 0.120 g of
-the compound produces 0.264 g of $\mathrm{CO}_2$ and 0.108 g of $\mathrm{H}_2\mathrm{O}$. Determine the
-empirical formula of the compound.
+the compound produces 0.264 g of $\mathrm{CO}_2$ and 0.108 g of $\mathrm{H}_2\mathrm{O}$. Determine
+the empirical formula of the compound.
 
 <details>
 <summary>Answer</summary>
@@ -858,7 +859,8 @@ Hmm, let me re-check. $0.375 \times 8 = 3$. So empirical formula =
 $\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$.
 
 But this seems large. Let me double check: $0.00600 / 0.00600 = 1$, $0.0120 / 0.00600 = 2$,
-$0.00225 / 0.00600 = 0.375$. Multiply by 8: 8, 16, 3. Yes, $\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$.
+$0.00225 / 0.00600 = 0.375$. Multiply by 8: 8, 16, 3. Yes,
+$\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$.
 
 Alternative approach with different ratios: multiply by $8/3$: $8/3 : 16/3 : 1$. No, that gives
 fractions. The correct simplest integer ratio is indeed 8:16:3, giving

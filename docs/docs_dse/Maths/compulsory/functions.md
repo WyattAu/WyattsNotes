@@ -354,15 +354,11 @@ $$
 y = a \cdot f\left(x - (-b)\right) + c
 $$
 
-{/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph
-  title="Graph Transformations"
-  expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]}
-  width={800}
-  height={500}
-/>
+{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Graph Transformations"
+expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]} width={800} height={500} />
 
-Use the sliders to explore how the parameters $a$, $b$, and $c$ transform the parent function, and observe the order in which each transformation is applied.
+Use the sliders to explore how the parameters $a$, $b$, and $c$ transform the parent function, and
+observe the order in which each transformation is applied.
 
 ### Individual Transformations
 
@@ -588,12 +584,12 @@ asymptote at $x = a$, the magnitude of $f(x)$ grows without bound.
 **Horizontal asymptotes** describe the end behaviour of $f(x)$ as $x \to \pm\infty$. Compare the
 degrees of $P$ and $Q$:
 
-| Condition               | Horizontal Asymptote                                                            |
-| ----------------------- | ------------------------------------------------------------------------------- |
-| $\deg P \lt \deg Q$     | $y = 0$ (the $x$-axis)                                                          |
+| Condition               | Horizontal Asymptote                                                                |
+| ----------------------- | ----------------------------------------------------------------------------------- |
+| $\deg P \lt \deg Q$     | $y = 0$ (the $x$-axis)                                                              |
 | $\deg P = \deg Q$       | $y = \frac{\mathrm{leading coefficient of } P}{\mathrm{leading coefficient of } Q}$ |
-| $\deg P = \deg Q + 1$   | Oblique asymptote (polynomial long division)                                    |
-| $\deg P \gt \deg Q + 1$ | No horizontal or oblique asymptote                                              |
+| $\deg P = \deg Q + 1$   | Oblique asymptote (polynomial long division)                                        |
+| $\deg P \gt \deg Q + 1$ | No horizontal or oblique asymptote                                                  |
 
 **Proof (horizontal asymptote when $\deg P = \deg Q$):** Let $P(x) = a_n x^n + \cdots$ and
 $Q(x) = b_n x^n + \cdots$. Then:
@@ -822,8 +818,8 @@ inverse functions of each other, and state the domain and range of $f^{-1}$.
 - To find the true inverse of $f(x) = \log_2(x + 3)$:
   - Set $y = \log_2(x + 3) \implies 2^y = x + 3 \implies x = 2^y - 3$.
   - $f^{-1}(x) = 2^x - 3$.
-- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all real values
-  for $x > -3$).
+- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all real
+  values for $x > -3$).
 - $\mathrm{range}(f^{-1}) = \mathrm{dom}(f) = (-3, \infty)$.
 </details>
 

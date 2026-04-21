@@ -98,11 +98,9 @@ $$
 | **Slot**   | Each virtual function occupies a fixed index in the vtable  |
 | **Thunks** | Compiler-generated stubs that adjust `this` before dispatch |
 
-:::info
-ABI Note The Itanium C++ ABI (used by GCC and Clang on all platforms except Windows)
+:::info ABI Note The Itanium C++ ABI (used by GCC and Clang on all platforms except Windows)
 mandates that the vptr is at offset 0 within the object (before any data members). MSVC uses a
-similar but incompatible layout on Windows.
-:::
+similar but incompatible layout on Windows. :::
 
 ### Vtable Structure Diagram
 
@@ -314,12 +312,10 @@ int main() {
 }
 ```
 
-:::warning
-The actual performance difference depends heavily on compiler optimization levels, CPU
+:::warning The actual performance difference depends heavily on compiler optimization levels, CPU
 branch prediction accuracy, and whether the compiler can **devirtualize** the call (see
 [Devirtualization](./3_devirtualization.md)). With `-O2` or `-O3`, modern compilers may eliminate
-the virtual dispatch entirely if the dynamic type is provable.
-:::
+the virtual dispatch entirely if the dynamic type is provable. :::
 
 ## 1.5 The `final` Keyword
 
@@ -386,10 +382,8 @@ struct Wrong : Base {
 };
 ```
 
-:::tip
-Best Practice Always use `override` on every function intended to override a base-class
-virtual function. This eliminates an entire class of bugs caused by signature mismatches.
-:::
+:::tip Best Practice Always use `override` on every function intended to override a base-class
+virtual function. This eliminates an entire class of bugs caused by signature mismatches. :::
 
 ## 1.7 Virtual Dispatch During Construction and Destruction
 
@@ -467,12 +461,10 @@ The vptr transitions through three states during `Derived` object construction:
 3. During `Derived` destruction: vptr is reset to `Base::vtable` -> `do_work()` calls
    `Base::do_work`
 
-:::warning
-Calling a pure virtual function from a constructor or destructor is **undefined
+:::warning Calling a pure virtual function from a constructor or destructor is **undefined
 behavior** [N4950 S11.9.3]. The pure virtual function has no definition to dispatch to (or the
 definition is not called). Some implementations call the pure virtual handler and terminate the
-program.
-:::
+program. :::
 
 ## 1.8 NVI (Non-Virtual Interface) Pattern
 

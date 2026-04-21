@@ -8,8 +8,7 @@ categories:
 slug: logic
 ---
 
-:::info
-TMUA Specification
+:::info TMUA Specification
 
 - The Logic of Arguments
 - Arg1 Understand and be able to use mathematical logic in simple situations:
@@ -48,8 +47,7 @@ TMUA Specification
 - Err1 Identifying errors in purported proofs.
 - Err2 Be aware of common mathematical errors in purported proofs; for example,
 - claiming 'if $ab = ac$, then $b = c$' or assuming 'if $\sin A = \sin B$, then $A = B$'
-- neither of which are valid deductions.
-:::
+- neither of which are valid deductions. :::
 
 # The Logic Of Arguments
 
@@ -154,7 +152,8 @@ A number is prime only if it is an integer
 
 A number is prime if and only if it is an integer
 
-- $\mathrm{Integer}\iff\mathrm{Prime}$ : False, all primes are integers, but not all integers are primes
+- $\mathrm{Integer}\iff\mathrm{Prime}$ : False, all primes are integers, but not all integers are
+  primes
 - Both statements must be true.
 
 A shape is a rectangle if it is a square
@@ -169,7 +168,8 @@ A shape is a rectangle only if it is a square
 
 A shape is a rectangle if and only if it is a square
 
-- $\mathrm{Square}\iff\mathrm{Rectangle}$ : False, because one of the two statements above are false.
+- $\mathrm{Square}\iff\mathrm{Rectangle}$ : False, because one of the two statements above are
+  false.
 
 A if B
 
@@ -319,10 +319,10 @@ The converse of $P \Rightarrow Q$ is $Q \Rightarrow P$:
 | F   | F   | T                 | T                 |
 
 The truth values differ in rows 2 and 3. This is why the converse of a true statement need not be
-true. For instance, "If a number is prime then it is odd" ($P = \mathrm{prime}$, $Q = \mathrm{odd}$) is
-false (witness $2$), but its converse "If a number is odd then it is prime" is also false (witness
-$9$). In contrast, "If a number is a square then it is a rectangle" is true, but its converse "If a
-number is a rectangle then it is a square" is false.
+true. For instance, "If a number is prime then it is odd" ($P = \mathrm{prime}$, $Q = \mathrm{odd}$)
+is false (witness $2$), but its converse "If a number is odd then it is prime" is also false
+(witness $9$). In contrast, "If a number is a square then it is a rectangle" is true, but its
+converse "If a number is a rectangle then it is a square" is false.
 
 # Quantifiers
 

@@ -15,7 +15,8 @@
 
 - Branch naming: `staging/feat/description`, `staging/fix/description`.
 - Test changes locally: `npm run build && npm run serve`.
-- Since `staging` branch is periodically reviewed and merged into `main` by admin, you are encourage to start a pull request against the staging branch.
+- Since `staging` branch is periodically reviewed and merged into `main` by admin, you are encourage
+  to start a pull request against the staging branch.
 - Use `npm run lint` and `npm run format` before committing.
 
 ### Formatting and Structure
@@ -52,17 +53,17 @@
     ```
 
 - **Static Assets** (`static/`):
-  - Use subfolders: `/img`, `/fonts`, `/pdfs`
-    \*\* For images: Prefer WebP format, use `_` for multiword names (`error_404.webp`)
+  - Use subfolders: `/img`, `/fonts`, `/pdfs` \*\* For images: Prefer WebP format, use `_` for
+    multiword names (`error_404.webp`)
 
 #### Sidebar Ordering
 
-Inorder to be consistent with the ordering of the sidebar, documents and folder containing documents should be prefix with `01-`, where `01` should replaced by the desire index on the sidebar.
+Inorder to be consistent with the ordering of the sidebar, documents and folder containing documents
+should be prefix with `01-`, where `01` should replaced by the desire index on the sidebar.
 
 #### Documentation Requirements
 
-- Front matter:
-  Use required metadata:
+- Front matter: Use required metadata:
 
   ```yaml
   ---

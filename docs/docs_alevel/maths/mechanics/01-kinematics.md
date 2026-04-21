@@ -18,10 +18,8 @@ slug: kinematics
 | OCR (A)    | Paper 1 | Includes variable acceleration |
 | CIE (9709) | P1, P4  | 1D in P1; 2D/projectiles in P4 |
 
-:::info
-The formula booklet lists the SUVAT equations. You must be able to select the correct
-equation and apply it to multi-stage problems.
-:::
+:::info The formula booklet lists the SUVAT equations. You must be able to select the correct
+equation and apply it to multi-stage problems. :::
 
 <hr />
 
@@ -91,11 +89,9 @@ Equation 4.)
 
 $$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \mathrm{(useful when } a \mathrm{ is unknown)}$$
 
-:::tip
-The key insight is that **all five SUVAT equations follow from two integrations** of the
+:::tip The key insight is that **all five SUVAT equations follow from two integrations** of the
 constant acceleration $a = dv/dt$, using the initial conditions $v(0) = u$ and $s(0) = 0$.
-Memorising the derivation means you can recover any formula you forget.
-:::
+Memorising the derivation means you can recover any formula you forget. :::
 
 ### 2.2 Summary
 
@@ -106,10 +102,8 @@ Memorising the derivation means you can recover any formula you forget.
 | $v^2 = u^2 + 2as$          | $v, u, a, s$ | $t$     |
 | $s = \frac{1}{2}(u+v)t$    | $s, u, v, t$ | $a$     |
 
-:::tip
-Always write down what you know and what you need. Choose the equation that contains all
-known quantities and the unknown. Draw a diagram with positive direction clearly marked.
-:::
+:::tip Always write down what you know and what you need. Choose the equation that contains all
+known quantities and the unknown. Draw a diagram with positive direction clearly marked. :::
 
 <hr />
 
@@ -163,11 +157,9 @@ integrating, or equivalently add the magnitudes of the areas above and below the
 The **gradient** of the tangent to a $v$-$t$ curve gives the instantaneous acceleration. For a
 straight-line $v$-$t$ graph, the acceleration is constant and equals the gradient of that line.
 
-:::warning
-Displacement $\neq$ distance. If a particle moves $10\,\mathrm{m}$ forwards and then
+:::warning Displacement $\neq$ distance. If a particle moves $10\,\mathrm{m}$ forwards and then
 $10\,\mathrm{m}$ backwards, its displacement is $0$ but its total distance is $20\,\mathrm{m}$. On a
-$v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas add (distance).
-:::
+$v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas add (distance). :::
 
 ### 3.6 Worked example: graphs
 
@@ -291,11 +283,9 @@ $$t = \frac{v\sin\theta + \sqrt{(v\sin\theta)^2 + 2gH}}{g}$$
 
 The horizontal range is then $R = v\cos\theta \cdot t$.
 
-:::tip
-When a projectile is launched from a height, the time of flight is **longer** than for level
-ground, and the angle for maximum range is **less** than $45^\circ$ (derived via calculus, but beyond the
-core syllabus).
-:::
+:::tip When a projectile is launched from a height, the time of flight is **longer** than for level
+ground, and the angle for maximum range is **less** than $45^\circ$ (derived via calculus, but
+beyond the core syllabus). :::
 
 <hr />
 
@@ -482,8 +472,8 @@ Show that the maximum range of a projectile on level ground is achieved at $45^\
 <summary>Solution 6</summary>
 $R = \dfrac{v^2 \sin 2\theta}{g}$. To maximise: $\dfrac{dR}{d\theta} = \dfrac{2v^2 \cos 2\theta}{g} = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45^\circ$.
 
-$\dfrac{d^2R}{d\theta^2} = -\dfrac{4v^2 \sin 2\theta}{g} \lt{} 0$ at $\theta = 45^\circ$, confirming a
-maximum. $\blacksquare$
+$\dfrac{d^2R}{d\theta^2} = -\dfrac{4v^2 \sin 2\theta}{g} \lt{} 0$ at $\theta = 45^\circ$, confirming
+a maximum. $\blacksquare$
 
 **If you get this wrong, revise:** [Range](#46-range) — Section 4.6.
 

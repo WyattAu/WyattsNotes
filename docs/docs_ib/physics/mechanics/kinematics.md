@@ -82,8 +82,8 @@ $$
 
 :::info[Example]
 
-A ball is thrown vertically upward at $15\mathrm{ m/s}$. Find the maximum height reached and the time
-to reach it.
+A ball is thrown vertically upward at $15\mathrm{ m/s}$. Find the maximum height reached and the
+time to reach it.
 
 At maximum height, $v = 0$.
 
@@ -103,7 +103,8 @@ $$
 
 <PhetSimulation simulationId="the-moving-man" title="The Moving Man" />
 
-Use this simulation to explore how displacement, velocity, and acceleration change as a man moves. Try creating different motion scenarios and observe how the graphs relate to one another.
+Use this simulation to explore how displacement, velocity, and acceleration change as a man moves.
+Try creating different motion scenarios and observe how the graphs relate to one another.
 
 ### Key Features
 
@@ -200,7 +201,8 @@ $$
 
 :::info[Example]
 
-An object is dropped from a height of $45\mathrm{ m}$. Find the speed just before it hits the ground.
+An object is dropped from a height of $45\mathrm{ m}$. Find the speed just before it hits the
+ground.
 
 $$
 v^2 = u^2 + 2as = 0 + 2(9.81)(45) = 882.9
@@ -519,8 +521,8 @@ to the ground is the vector sum of its velocity in still water and the river cur
 
 :::info[Example]
 
-A boat can travel at $4\mathrm{ m/s}$ in still water. It needs to cross a river $100\mathrm{ m}$ wide
-flowing at $3\mathrm{ m/s}$.
+A boat can travel at $4\mathrm{ m/s}$ in still water. It needs to cross a river $100\mathrm{ m}$
+wide flowing at $3\mathrm{ m/s}$.
 
 **(a)** If the boat heads directly across, how far downstream does it land?
 
@@ -617,8 +619,8 @@ Total stopping distance $= d_{\mathrm{think}} + d_{\mathrm{brake}}$.
 
 :::info[Example]
 
-A car travels at $30\mathrm{ m/s}$ ($108\mathrm{ km/h}$). The driver's reaction time is $0.7\mathrm{ s}$
-and the maximum deceleration is $8\mathrm{ m/s}^2$.
+A car travels at $30\mathrm{ m/s}$ ($108\mathrm{ km/h}$). The driver's reaction time is
+$0.7\mathrm{ s}$ and the maximum deceleration is $8\mathrm{ m/s}^2$.
 
 $$
 d_{\mathrm{think}} = 30 \times 0.7 = 21\mathrm{ m}
@@ -640,8 +642,8 @@ $$
 
 ### Question 5 (Paper 2 style)
 
-A ball is thrown from the top of a $40\mathrm{ m}$ building with initial velocity $15\mathrm{ m/s}$ at
-$30\degree$ above the horizontal.
+A ball is thrown from the top of a $40\mathrm{ m}$ building with initial velocity $15\mathrm{ m/s}$
+at $30\degree$ above the horizontal.
 
 **(a)** Find the time for the ball to reach the ground.
 
@@ -844,7 +846,8 @@ $$
 
 **(c)** Find the distance travelled between $t = 0$ and $t = 4\mathrm{ s}$.
 
-Since $v \ge 0$ for $0 \le t \le 4$, the distance equals the displacement: $\dfrac{32}{3}\mathrm{ m}$.
+Since $v \ge 0$ for $0 \le t \le 4$, the distance equals the displacement:
+$\dfrac{32}{3}\mathrm{ m}$.
 
 ### Question 9 (Paper 1 style)
 
@@ -856,8 +859,8 @@ $2\theta = 90\degree$, so $\theta = 45\degree$.
 
 ### Question 10 (Paper 2 style)
 
-An object is released from a hot air balloon ascending at $5\mathrm{ m/s}$. At the moment of release,
-the balloon is at a height of $120\mathrm{ m}$.
+An object is released from a hot air balloon ascending at $5\mathrm{ m/s}$. At the moment of
+release, the balloon is at a height of $120\mathrm{ m}$.
 
 **(a)** Find the maximum height reached by the object.
 

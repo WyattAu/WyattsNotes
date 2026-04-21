@@ -55,11 +55,9 @@ int main() {
 }
 ```
 
-:::warning
-Full specializations are **not** templates themselves --- they are concrete definitions.
+:::warning Full specializations are **not** templates themselves --- they are concrete definitions.
 They must be declared in the same namespace as the primary template. If you fully specialize a
-function template, you must specialize every overload that participates in overload resolution.
-:::
+function template, you must specialize every overload that participates in overload resolution. :::
 
 ### Full Specialization of Function Templates
 
@@ -292,8 +290,8 @@ struct Ambig<T* const> {};     // matches: T = const int
 type $U$: we get `const U*`. Does this match $B$ (`T* const`)? Yes, with $T = \mathrm{const }
 U$. Now
 replace `T` in $B$ with a unique type $V$: we get `V* const`. Does this match $A$ (`const T*`)? Yes,
-with $T = V \mathrm{ const}$. Since $A$ matches $B$ **and** $B$ matches $A$, neither is strictly more
-specialized. The program is ill-formed.
+with $T = V \mathrm{ const}$. Since $A$ matches $B$ **and** $B$ matches $A$, neither is strictly
+more specialized. The program is ill-formed.
 
 The fix is to provide a disambiguating specialization that is strictly more specialized than both:
 
@@ -728,11 +726,9 @@ int main() {
 }
 ```
 
-:::warning
-You cannot partially specialize a member template without partially specializing the
+:::warning You cannot partially specialize a member template without partially specializing the
 enclosing class template. Member templates can only be **fully** specialized. If you need partial
-specialization of a member, you must partially specialize the entire class.
-:::
+specialization of a member, you must partially specialize the entire class. :::
 
 ## Common Errors with Ambiguity
 

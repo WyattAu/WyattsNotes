@@ -12,9 +12,7 @@ sidebar_position: 9
 
 ## Properties of Materials
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1
-:::
+:::info Board Coverage AQA Paper 1 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1 :::
 
 The mechanical properties of materials — how they deform, stretch, compress, and break — are central
 to engineering and physics. This topic sits within the "Mechanics & Materials" strand on every A
@@ -40,12 +38,10 @@ proportional to extension — the straight-line region of the force-extension gr
 material returns to its original length when the force is removed. Beyond this point, the material
 undergoes **permanent (plastic) deformation**.
 
-:::warning
-Common Pitfall The limit of proportionality and the elastic limit are not the same point.
+:::warning Common Pitfall The limit of proportionality and the elastic limit are not the same point.
 For many materials (especially metals), the elastic limit lies slightly beyond the limit of
 proportionality. Between these two points the material still returns to its original shape, but $F$
-and $\Delta x$ are no longer linearly related.
-:::
+and $\Delta x$ are no longer linearly related. :::
 
 ### Springs in Series and Parallel
 
@@ -68,6 +64,7 @@ m$^{-1}$. A $10$ N weight is hung from the combination. Find the total extension
 $k = 120$ N m$^{-1}$.
 
 Extension: $\Delta x = F/k = 10/120 = 0.0833$ m $= 8.3$ cm.
+
 </details>
 
 ## 2. Stress and Strain
@@ -90,12 +87,10 @@ Strain is dimensionless (a ratio). It is often expressed as a percentage.
 
 **Definition.** **Breaking stress** is the stress at which a material fractures.
 
-:::info
-Board-Specific Note **CIE** often asks you to distinguish between tensile stress
+:::info Board-Specific Note **CIE** often asks you to distinguish between tensile stress
 (stretching) and compressive stress (squashing). **AQA** and **Edexcel** typically focus on tensile
 loading. **OCR (A)** may ask about compressive stress-strain behaviour of brittle materials like
-concrete.
-:::
+concrete. :::
 
 ## 3. Young's Modulus
 
@@ -120,12 +115,10 @@ under tensile loading. It has units of Pa (same as stress, since strain is dimen
 | Steel        | 200                   | Metal           |
 | Diamond      | 1200                  | Ceramic/Crystal |
 
-:::warning
-Common Pitfall A high Young's modulus means the material is **stiff**, not necessarily
+:::warning Common Pitfall A high Young's modulus means the material is **stiff**, not necessarily
 **strong**. Glass is stiffer than rubber ($E \approx 70$ GPa vs $0.01$ GPa) but rubber is
 **tougher** (absorbs more energy before breaking) because it can undergo much larger strains.
-Stiffness and strength are different properties.
-:::
+Stiffness and strength are different properties. :::
 
 ### Measuring Young's Modulus
 
@@ -157,6 +150,7 @@ GPa.
 
 (This is somewhat high for steel; typical values are 180–210 GPa — the discrepancy may indicate the
 wire has exceeded its limit of proportionality.)
+
 </details>
 
 ### Proof of Young's Modulus from Hooke's Law
@@ -228,13 +222,11 @@ Polymers show a wide range of behaviours:
 - **Thermoplastic polymers**: soften when heated, can be remoulded. Show viscoelastic behaviour
   (time-dependent response).
 
-:::info
-Board-Specific Note **AQA** emphasises the difference between brittle and ductile materials
+:::info Board-Specific Note **AQA** emphasises the difference between brittle and ductile materials
 and requires interpretation of force-extension graphs. **Edexcel** asks for quantitative analysis of
 stress-strain graphs including calculating the area under the graph (energy). **CIE** may ask you to
 sketch stress-strain curves for different material types and identify specific points. **OCR (A)**
-links material properties to engineering applications.
-:::
+links material properties to engineering applications. :::
 
 ## 5. Elastic Potential Energy
 
@@ -273,12 +265,10 @@ $$E_e = \frac{1}{2}\,E\,V\,\varepsilon^2 = \frac{1}{2}\,\sigma\,\varepsilon\,V$$
 
 $\square$
 
-:::warning
-Common Pitfall The formula $E_e = \frac{1}{2}F\,\Delta x$ only applies in the **linear
+:::warning Common Pitfall The formula $E_e = \frac{1}{2}F\,\Delta x$ only applies in the **linear
 (Hookean)** region. If the material has been loaded beyond the limit of proportionality, the energy
 stored is the area under the actual (non-linear) force-extension curve, which must be found by
-integration or by counting squares.
-:::
+integration or by counting squares. :::
 
 ## 6. Material Properties Comparison
 
@@ -382,11 +372,9 @@ millions of cycles. This is critical in aircraft wings, bridges, and engine comp
 elevated temperatures. It is important in power station components, turbine blades, and lead
 roofing.
 
-:::info
-Board-Specific Note Fatigue and creep are mentioned briefly on **Edexcel** and **OCR (A)**.
+:::info Board-Specific Note Fatigue and creep are mentioned briefly on **Edexcel** and **OCR (A)**.
 **AQA** focuses more on the core stress-strain behaviour. **CIE** may include these in
-application-style questions about engineering materials.
-:::
+application-style questions about engineering materials. :::
 
 ## Problems
 
@@ -401,6 +389,7 @@ applied, (b) the elastic potential energy stored.
 
 <b>If you get this wrong, revise:</b> [Hooke's Law](#1-hookes-law) and
 [Elastic Potential Energy](#5-elastic-potential-energy)
+
 </details>
 
 <details>
@@ -419,6 +408,7 @@ mm.
 
 <b>If you get this wrong, revise:</b> [Stress and Strain](#2-stress-and-strain) and
 [Young's Modulus](#3-youngs-modulus)
+
 </details>
 
 <details>
@@ -434,6 +424,7 @@ $\Delta x = F/k = 117.7/300 = 0.392$ m $= 39.2$ cm.
 
 <b>If you get this wrong, revise:</b>
 [Springs in Series and Parallel](#springs-in-series-and-parallel)
+
 </details>
 
 <details>
@@ -450,6 +441,7 @@ $\frac{\Delta L_{\mathrm{rubber}}}{\Delta L_{\mathrm{steel}}} = \frac{E_{\mathrm
 The rubber cord extends $40,000$ times more than the steel wire under the same load.
 
 <b>If you get this wrong, revise:</b> [Young's Modulus](#3-youngs-modulus)
+
 </details>
 
 <details>
@@ -460,6 +452,7 @@ breaking strain.
 **Answer.** $\varepsilon = \sigma/E = 50 \times 10^6 / 5.0 \times 10^9 = 0.010 = 1.0\%$.
 
 <b>If you get this wrong, revise:</b> [Young's Modulus](#3-youngs-modulus)
+
 </details>
 
 <details>
@@ -479,6 +472,7 @@ $E_{\mathrm{total}} \approx \frac{1}{2} \times 300 \times 4.0 \times 10^{-3} = 0
 estimate would account for the non-linear region, but this is a reasonable approximation.)
 
 <b>If you get this wrong, revise:</b> [Elastic Potential Energy](#5-elastic-potential-energy)
+
 </details>
 
 <details>
@@ -494,6 +488,7 @@ rather than failing suddenly, giving warning before collapse.
 
 <b>If you get this wrong, revise:</b>
 [Material Properties Comparison](#6-material-properties-comparison)
+
 </details>
 
 <details>
@@ -512,6 +507,7 @@ J.
 
 <b>If you get this wrong, revise:</b>
 [Proof of Energy Stored in a Wire](#proof-of-energy-stored-in-a-wire)
+
 </details>
 
 <details>
@@ -527,6 +523,7 @@ linear region, breaking point. No plastic region, no yield point.
 proportionality, elastic limit, yield point, UTS, necking, fracture.
 
 <b>If you get this wrong, revise:</b> [Stress-Strain Graphs](#4-stress-strain-graphs)
+
 </details>
 
 <details>
@@ -549,6 +546,7 @@ or too low.
    result too low.)
 
 <b>If you get this wrong, revise:</b> [Measuring Young's Modulus](#measuring-youngs-modulus)
+
 </details>
 
 :::

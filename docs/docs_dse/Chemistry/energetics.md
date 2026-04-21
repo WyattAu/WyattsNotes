@@ -60,10 +60,8 @@ By definition, $\Delta H_f^\circ$ of any element in its standard state = 0.
 
 $$\Delta H_f^\circ(\mathrm{C}_{(s,\mathrm{ graphite})}) = 0 \quad ; \quad \Delta H_f^\circ(\mathrm{H}_{2(g)}) = 0$$
 
-:::warning
-$\Delta H_f^\circ$ always refers to 1 mole of the compound formed. The definition
-involves formation FROM elements, not the other way around.
-:::
+:::warning $\Delta H_f^\circ$ always refers to 1 mole of the compound formed. The definition
+involves formation FROM elements, not the other way around. :::
 
 ### Standard Enthalpy of Combustion ($\Delta H_c^\circ$)
 
@@ -97,16 +95,16 @@ This is always endothermic (bonds must be broken).
 
 ### Key Reference Values
 
-| Substance                               | $\Delta H_f^\circ$ (kJ/mol) | $\Delta H_c^\circ$ (kJ/mol) |
-| --------------------------------------- | --------------------------- | --------------------------- |
-| $\mathrm{CO}_{2(g)}$                      | $-393.5$                    | --                          |
-| $\mathrm{H}_2\mathrm{O}_{(l)}$              | $-285.8$                    | --                          |
-| $\mathrm{H}_2\mathrm{O}_{(g)}$              | $-241.8$                    | --                          |
-| $\mathrm{CH}_{4(g)}$                      | $-74.8$                     | $-890.3$                    |
+| Substance                                     | $\Delta H_f^\circ$ (kJ/mol) | $\Delta H_c^\circ$ (kJ/mol) |
+| --------------------------------------------- | --------------------------- | --------------------------- |
+| $\mathrm{CO}_{2(g)}$                          | $-393.5$                    | --                          |
+| $\mathrm{H}_2\mathrm{O}_{(l)}$                | $-285.8$                    | --                          |
+| $\mathrm{H}_2\mathrm{O}_{(g)}$                | $-241.8$                    | --                          |
+| $\mathrm{CH}_{4(g)}$                          | $-74.8$                     | $-890.3$                    |
 | $\mathrm{C}_2\mathrm{H}_{5}\mathrm{OH}_{(l)}$ | $-277.7$                    | $-1367$                     |
-| $\mathrm{C}_3\mathrm{H}_{8(g)}$             | $-103.8$                    | $-2220$                     |
-| $\mathrm{NH}_{3(g)}$                      | $-46.0$                     | $-383$                      |
-| $\mathrm{NaOH}_{(aq)}$                    | $-470.1$                    | --                          |
+| $\mathrm{C}_3\mathrm{H}_{8(g)}$               | $-103.8$                    | $-2220$                     |
+| $\mathrm{NH}_{3(g)}$                          | $-46.0$                     | $-383$                      |
+| $\mathrm{NaOH}_{(aq)}$                        | $-470.1$                    | --                          |
 
 ---
 
@@ -163,7 +161,8 @@ $\Delta H_f^\circ(\mathrm{H}_2\mathrm{O}_{(l)}) = -285.8 \mathrm{ kJ/mol}$
 <details>
 <summary>Answer</summary>
 
-Using $\Delta H = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})$:
+Using
+$\Delta H = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})$:
 
 $$-1367 = [2(-393.5) + 3(-285.8)] - [\Delta H_f^\circ(\mathrm{C}_2\mathrm{H}_5\mathrm{OH}) + 3(0)]$$
 
@@ -183,7 +182,8 @@ $$3\mathrm{C}_{(s)} + 4\mathrm{H}_{2(g)} \to \mathrm{C}_3\mathrm{H}_{8(g)}$$
 
 Given: $\Delta H_c^\circ(\mathrm{C}_{(s)}) = -393.5 \mathrm{ kJ/mol}$ (same as
 $\Delta H_c^\circ(\mathrm{CO}_2)$ since combustion of C gives $\mathrm{CO}_2$),
-$\Delta H_c^\circ(\mathrm{H}_{2(g)}) = -285.8 \mathrm{ kJ/mol}$ (gives $\mathrm{H}_2\mathrm{O}_{(l)}$),
+$\Delta H_c^\circ(\mathrm{H}_{2(g)}) = -285.8 \mathrm{ kJ/mol}$ (gives
+$\mathrm{H}_2\mathrm{O}_{(l)}$),
 $\Delta H_c^\circ(\mathrm{C}_{3\mathrm{H}_{8(g)}}) = -2220 \mathrm{ kJ/mol}$.
 
 <details>
@@ -226,16 +226,14 @@ $$\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$$
 | C=C        | 614                        | O--H       | 464               |
 | C$\equiv$C | 839                        | H--H       | 436               |
 | C--O       | 358                        | O=O        | 498               |
-| C=O        | 805 (in $\mathrm{CO}_2$)     | N$\equiv$N | 945               |
+| C=O        | 805 (in $\mathrm{CO}_2$)   | N$\equiv$N | 945               |
 | C=O        | 743 (in aldehydes/ketones) | N--H       | 391               |
 | C--Cl      | 346                        | F--F       | 158               |
 | O--O       | 146                        | Cl--Cl     | 243               |
 
-:::warning
-Bond enthalpies give only **average** values. For reactions involving the gas phase, they
+:::warning Bond enthalpies give only **average** values. For reactions involving the gas phase, they
 give good estimates. For reactions involving liquids or aqueous solutions, additional energy changes
-(vaporisation, dissolution) are not accounted for, so the estimate is less accurate.
-:::
+(vaporisation, dissolution) are not accounted for, so the estimate is less accurate. :::
 
 **Worked example 4:** Estimate $\Delta H$ for the combustion of methane using bond enthalpies.
 
@@ -286,7 +284,8 @@ Bonds formed:
 
 $\Delta H = 2253 - 2346 = -93 \mathrm{ kJ/mol}$
 
-For 2 mol $\mathrm{NH}_3$: $\Delta H = -93 \mathrm{ kJ}$, so per mole of reaction: $-93 \mathrm{ kJ/mol}$.
+For 2 mol $\mathrm{NH}_3$: $\Delta H = -93 \mathrm{ kJ}$, so per mole of reaction:
+$-93 \mathrm{ kJ/mol}$.
 
 Accepted $\Delta H_f^\circ(\mathrm{NH}_{3(g)}) = -46.0 \mathrm{ kJ/mol}$, so
 $\Delta H = 2 \times (-46.0) = -92.0 \mathrm{ kJ/mol}$. The estimate is close.
@@ -369,8 +368,8 @@ Moles of $\mathrm{C}_2\mathrm{H}_5\mathrm{OH} = 1.50 / 46.1 = 0.0325 \mathrm{ mo
 
 $\Delta H_c = -\dfrac{21.32}{0.0325} = -656 \mathrm{ kJ/mol}$
 
-The accepted value is $-1367 \mathrm{ kJ/mol}$. The experimental value is much less exothermic due to
-heat losses to the surroundings and incomplete combustion.
+The accepted value is $-1367 \mathrm{ kJ/mol}$. The experimental value is much less exothermic due
+to heat losses to the surroundings and incomplete combustion.
 
 </details>
 
@@ -417,10 +416,8 @@ $$-411 = 377 + \Delta H_{\mathrm{latt}}$$
 
 $$\Delta H_{\mathrm{latt}} = -411 - 377 = -788 \mathrm{ kJ/mol}$$
 
-:::info
-Lattice energy is always exothermic (negative) because energy is released when oppositely
-charged ions come together.
-:::
+:::info Lattice energy is always exothermic (negative) because energy is released when oppositely
+charged ions come together. :::
 
 **Worked example 8:** Calculate the lattice energy of $\mathrm{MgO}$ given:
 
@@ -479,15 +476,15 @@ $$\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \to 2\mathrm{NH}_{3(g)} \quad \Delta S 
 
 Typical values (J mol$^{-1}$ K$^{-1}$):
 
-| Substance                  | $S^\circ$ (J mol$^{-1}$ K$^{-1}$) |
-| -------------------------- | --------------------------------- |
-| $\mathrm{C}_{(s)}$           | 5.7                               |
-| $\mathrm{NaCl}_{(s)}$        | 72.1                              |
+| Substance                      | $S^\circ$ (J mol$^{-1}$ K$^{-1}$) |
+| ------------------------------ | --------------------------------- |
+| $\mathrm{C}_{(s)}$             | 5.7                               |
+| $\mathrm{NaCl}_{(s)}$          | 72.1                              |
 | $\mathrm{H}_2\mathrm{O}_{(l)}$ | 69.9                              |
 | $\mathrm{H}_2\mathrm{O}_{(g)}$ | 188.7                             |
-| $\mathrm{CO}_{2(g)}$         | 213.6                             |
-| $\mathrm{N}_{2(g)}$          | 191.5                             |
-| $\mathrm{NH}_{3(g)}$         | 192.3                             |
+| $\mathrm{CO}_{2(g)}$           | 213.6                             |
+| $\mathrm{N}_{2(g)}$            | 191.5                             |
+| $\mathrm{NH}_{3(g)}$           | 192.3                             |
 
 ---
 
@@ -504,10 +501,8 @@ Where:
 - $T$ = temperature (K)
 - $\Delta S$ = entropy change (kJ mol$^{-1}$ K$^{-1}$)
 
-:::warning
-Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
-K$^{-1}$, convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000.
-:::
+:::warning Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
+K$^{-1}$, convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000. :::
 
 ### Feasibility of Reactions
 
@@ -552,7 +547,8 @@ Above $833^\circ\mathrm{C}$, the reaction becomes thermodynamically feasible.
 
 </details>
 
-**Worked example 10:** For the reaction $\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \to 2\mathrm{NH}_{3(g)}$:
+**Worked example 10:** For the reaction
+$\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \to 2\mathrm{NH}_{3(g)}$:
 
 $\Delta H = -92.0 \mathrm{ kJ/mol}$, $\Delta S = -0.199 \mathrm{ kJ mol}^{-1} \mathrm{ K}^{-1}$
 
@@ -662,8 +658,8 @@ $\Delta H = 2702 - 2825 = -123 \mathrm{ kJ/mol}$
 ### Problem 3
 
 50.0 cm$^3$ of 0.500 mol/dm$^3$ $\mathrm{HNO}_3$ is added to 50.0 cm$^3$ of 0.500 mol/dm$^3$
-$\mathrm{KOH}$. The temperature rises from $21.0^\circ\mathrm{C}$ to $24.2^\circ\mathrm{C}$. Calculate the
-enthalpy of neutralisation per mole of water formed.
+$\mathrm{KOH}$. The temperature rises from $21.0^\circ\mathrm{C}$ to $24.2^\circ\mathrm{C}$.
+Calculate the enthalpy of neutralisation per mole of water formed.
 
 <details>
 <summary>Answer</summary>
@@ -792,7 +788,8 @@ $\mathrm{H}_{2(g)} + \frac{1}{2}\mathrm{O}_{2(g)} \to \mathrm{H}_2\mathrm{O}_{(l
 <details>
 <summary>Answer</summary>
 
-Route: $\mathrm{C} + 2\mathrm{H}_2 + \frac{1}{2}\mathrm{O}_2 \xrightarrow{\Delta H} \mathrm{CH}_3\mathrm{OH}$
+Route:
+$\mathrm{C} + 2\mathrm{H}_2 + \frac{1}{2}\mathrm{O}_2 \xrightarrow{\Delta H} \mathrm{CH}_3\mathrm{OH}$
 
 Hess's Law cycle:
 
@@ -873,13 +870,13 @@ $\Delta H = -5.936 / 0.100 = -59.4 \mathrm{ kJ/mol}$
 
 ## Summary of Key Equations
 
-| Equation                                                                                      | Use                                |
-| --------------------------------------------------------------------------------------------- | ---------------------------------- |
+| Equation                                                                                          | Use                                |
+| ------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | $\Delta H = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})$ | Hess's Law (formation)             |
 | $\Delta H = \sum \Delta H_c^\circ(\mathrm{reactants}) - \sum \Delta H_c^\circ(\mathrm{products})$ | Hess's Law (combustion)            |
 | $\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$                    | Bond enthalpy estimate             |
-| $q = mc\Delta T$                                                                              | Calorimetry                        |
-| $\Delta H = -q/n$                                                                             | From calorimetry to molar enthalpy |
-| $\Delta G = \Delta H - T\Delta S$                                                             | Gibbs free energy                  |
-| $T = \Delta H / \Delta S$ (when $\Delta G = 0$)                                               | Feasibility temperature            |
-| $\Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{latt}} + \Delta H_{\mathrm{hyd}}$                      | Solution enthalpy                  |
+| $q = mc\Delta T$                                                                                  | Calorimetry                        |
+| $\Delta H = -q/n$                                                                                 | From calorimetry to molar enthalpy |
+| $\Delta G = \Delta H - T\Delta S$                                                                 | Gibbs free energy                  |
+| $T = \Delta H / \Delta S$ (when $\Delta G = 0$)                                                   | Feasibility temperature            |
+| $\Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{latt}} + \Delta H_{\mathrm{hyd}}$                    | Solution enthalpy                  |

@@ -181,7 +181,7 @@ export default function serviceWorkerPlugin(
   return {
     name: 'service-worker-plugin',
 
-    async postBuild({ outDir, baseUrl }) {
+    postBuild({ outDir, baseUrl }) {
       if (options.enable === false) {
         return;
       }
@@ -190,12 +190,14 @@ export default function serviceWorkerPlugin(
       const cacheVersion = Date.now().toString(36);
 
       // Build the service worker source with template substitutions.
-      const swSource = SERVICE_WORKER_SOURCE
-        .replace(/\{\{CACHE_ID\}\}/g, cacheId)
-        .replace(/\{\{CACHE_VERSION\}\}/g, cacheVersion);
+      const swSource = SERVICE_WORKER_SOURCE.replace(/\{\{CACHE_ID\}\}/g, cacheId).replace(
+        /\{\{CACHE_VERSION\}\}/g,
+        cacheVersion,
+      );
 
       // Write sw.js to the build output.
       const swPath = path.join(outDir, 'sw.js');
+
       fs.writeFileSync(swPath, swSource, 'utf-8');
 
       // Inject service worker registration into index.html.
@@ -212,6 +214,7 @@ if('serviceWorker'in navigator){window.addEventListener('load',function(){naviga
       }
 
       const swSize = Buffer.byteLength(swSource, 'utf-8');
+
       console.log(
         `Service worker generated: ${swPath} (${swSize} bytes, ${cacheId}, v${cacheVersion})`,
       );

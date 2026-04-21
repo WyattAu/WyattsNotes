@@ -32,11 +32,9 @@ $$\mathrm{Budget balance} = T - G$$
 - **Budget deficit**: $G > T$ (government spending exceeds revenue)
 - **Balanced budget**: $T = G$
 
-:::info
-Board-Specific Note CIE (9708) requires students to distinguish between the budget balance
+:::info Board-Specific Note CIE (9708) requires students to distinguish between the budget balance
 and the national debt. AQA and Edexcel may ask about the UK's fiscal rules (e.g., the fiscal mandate
-and supplementary target).
-:::
+and supplementary target). :::
 
 ## 2. Government Spending
 
@@ -60,12 +58,10 @@ Only $G$ in the AD equation ($AD = C + I + G + (X - M)$) represents spending on 
 Transfer payments are not directly part of $G$ — they affect $AD$ indirectly through their effect on
 disposable income and hence consumption ($C$).
 
-:::warning
-Common Pitfall Transfer payments (benefits, pensions) are NOT part of $G$ in the AD
+:::warning Common Pitfall Transfer payments (benefits, pensions) are NOT part of $G$ in the AD
 formula. They are a government outlay but not a purchase of goods and services. They affect $C$, not
 $G$ directly. However, exam questions sometimes use "government spending" loosely — always clarify
-what is meant.
-:::
+what is meant. :::
 
 ### 2.2 Government Spending as a Share of GDP
 
@@ -148,12 +144,10 @@ income):
 
 ATR falls with income because higher earners save a larger proportion of income. ✓ $\blacksquare$
 
-:::tip
-Exam Technique When asked to evaluate whether a tax is progressive or regressive, calculate
+:::tip Exam Technique When asked to evaluate whether a tax is progressive or regressive, calculate
 the ATR at different income levels. Never just state the marginal rate — a tax can have increasing
 marginal rates but still be regressive in practice (e.g., if there are generous allowances for high
-earners).
-:::
+earners). :::
 
 ### 3.3 Laffer Curve
 
@@ -198,12 +192,10 @@ $$\frac{D}{Y} = \frac{D_t}{Y_t}$$
 This is the preferred measure of debt sustainability, since a large absolute debt is manageable if
 GDP is also large.
 
-:::warning
-Common Pitfall Deficit and debt are different. A country can have a large debt but a
+:::warning Common Pitfall Deficit and debt are different. A country can have a large debt but a
 small (or zero) deficit if it is running a balanced budget. The deficit is a _flow_ (per year),
 while the debt is a _stock_ (accumulated). Reducing the deficit does _not_ reduce the debt — it
-merely slows the rate at which debt grows. Only a surplus reduces the debt.
-:::
+merely slows the rate at which debt grows. Only a surplus reduces the debt. :::
 
 ### 4.2 Debt Dynamics
 
@@ -321,11 +313,9 @@ prices, reducing private sector profitability.
 | Source of financing             | Domestic borrowing             | Foreign borrowing / monetary financing    |
 | Type of spending                | Current spending (consumption) | Capital spending (productivity-enhancing) |
 
-:::tip
-Exam Technique When evaluating fiscal policy, always consider crowding out. The strongest
+:::tip Exam Technique When evaluating fiscal policy, always consider crowding out. The strongest
 answer recognises that crowding out is less severe in a recession (Keynesian view) and more severe
-at full employment (Classical view). Reference the state of the economic cycle.
-:::
+at full employment (Classical view). Reference the state of the economic cycle. :::
 
 ## 7. Automatic Stabilisers
 

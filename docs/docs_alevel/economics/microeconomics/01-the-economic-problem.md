@@ -24,11 +24,9 @@ entrepreneurship) are finite.
 Scarcity is the fundamental constraint that makes economics a discipline. Without scarcity, every
 want could be satisfied simultaneously and there would be no need to choose, allocate, or optimise.
 
-:::info
-Board-Specific Note All four boards (AQA, Edexcel, OCR, CIE) place the economic problem at
+:::info Board-Specific Note All four boards (AQA, Edexcel, OCR, CIE) place the economic problem at
 the start of the syllabus. CIE (9708) Paper 1 frequently opens with MCQs testing precise definitions
-of scarcity and opportunity cost.
-:::
+of scarcity and opportunity cost. :::
 
 ### 1.2 Choice
 
@@ -47,12 +45,10 @@ $$\mathrm{Opportunity cost of } A = \max_{B \neq A} \{U(B)\}$$
 where $U(B)$ is the utility (or value) of alternative $B$. This is not the sum of all alternatives —
 only the single best one that was rejected.
 
-:::warning
-Common Pitfall Students often state that opportunity cost is "everything you give up."
+:::warning Common Pitfall Students often state that opportunity cost is "everything you give up."
 This is incorrect. It is the value of the _next-best_ alternative only. If you spend £10 on a book
 when your next-best option is a film ticket costing £10, the opportunity cost is the film ticket —
-not the book, not the £10 itself, and not the film ticket _plus_ a coffee.
-:::
+not the book, not the £10 itself, and not the film ticket _plus_ a coffee. :::
 
 <details>
 <summary>Example</summary>
@@ -64,6 +60,7 @@ A student has 3 hours of free time. Their options, ranked by preference:
 
 If the student chooses to study economics, the opportunity cost is playing football (utility 25),
 not television.
+
 </details>
 
 #### Opportunity Cost in Practice
@@ -116,14 +113,12 @@ consumer's optimal bundle — depends on the shape of the utility function and t
 minimum acceptable threshold, rather than optimising. This accounts for bounded rationality —
 limited cognitive capacity and information.
 
-:::info
-Board-Specific Note AQA (4.1.1.1) and Edexcel (Theme 1, 1.1.1) both require understanding of
+:::info Board-Specific Note AQA (4.1.1.1) and Edexcel (Theme 1, 1.1.1) both require understanding of
 rational decision making as the basis of economic behaviour. OCR (H460, Micro 1.1) places particular
 emphasis on _behavioural_ challenges to rationality — be prepared to discuss how bounded
 rationality, heuristics, and framing effects undermine the assumption of rational utility
 maximisation. CIE (9708) focuses more narrowly on the formal optimisation framework in Paper 2 essay
-questions.
-:::
+questions. :::
 
 ## 2. The Production Possibility Frontier
 
@@ -162,13 +157,11 @@ A **linear PPF** (straight line) arises when resources are perfectly adaptable �
 cost of $X$ in terms of $Y$ is constant. A **convex PPF** would imply decreasing opportunity cost —
 rare but possible if there are economies of scale.
 
-:::info
-Board-Specific Note AQA frequently asks students to explain _why_ the PPF is bowed outward
+:::info Board-Specific Note AQA frequently asks students to explain _why_ the PPF is bowed outward
 (concave) and to calculate opportunity cost from a numerical table or diagram. Edexcel (Theme 1)
 often presents PPF data in table form and asks students to plot and interpret. CIE (9708) may ask
 for a formal derivation or for students to identify the shape from a production function. OCR tends
-to focus more on the _policy implications_ of PPF shifts.
-:::
+to focus more on the _policy implications_ of PPF shifts. :::
 
 #### Evaluation of PPF Assumptions
 
@@ -219,6 +212,7 @@ where $x$ = guns, $y$ = butter (both in thousands of units).
 The opportunity cost of increasing guns from 5 to 6 is $100 - 36 - 75 = -11$ thousand butter. The
 opportunity cost of increasing guns from 0 to 1 is $100 - 1 - 100 = -1$ thousand butter. Opportunity
 cost rises as gun production increases.
+
 </details>
 
 #### Real-World Applications of PPF Efficiency
@@ -311,8 +305,7 @@ intervention remains one of the central debates in economics and depends on the 
 the effectiveness of institutions, the nature of the goods being produced, and societal values
 regarding equity and freedom.
 
-:::info
-Board-Specific Note AQA (4.1.1.3) requires students to understand the economic problem and
+:::info Board-Specific Note AQA (4.1.1.3) requires students to understand the economic problem and
 economic systems together, often asking 9-mark questions comparing market and command economies.
 Edexcel (Theme 1, 1.1.4) emphasises the role of the price mechanism in allocating resources and
 expects students to evaluate when government intervention improves outcomes. OCR (H460) expects
@@ -345,11 +338,9 @@ The positive-normative distinction is fundamental because:
 3. Policy debates often conflate the two — "X is bad" (normative) is different from "X causes Y"
    (positive).
 
-:::tip
-Exam Technique When asked "Is this statement positive or normative?", look for value-laden
+:::tip Exam Technique When asked "Is this statement positive or normative?", look for value-laden
 words: _should, ought, fair, unfair, too much, too little, best, worst_. These signal normative
-statements.
-:::
+statements. :::
 
 <details>
 <summary>Example: Classification</summary>
@@ -374,13 +365,11 @@ research agenda itself) is shaped by normative concerns. Economists who prioriti
 inequality are making a value judgement about what matters. The positive-normative distinction is
 therefore best understood as a continuum rather than a binary classification.
 
-:::info
-Board-Specific Note AQA (4.1.1.2) and Edexcel (Theme 1, 1.1.2) both explicitly test the
+:::info Board-Specific Note AQA (4.1.1.2) and Edexcel (Theme 1, 1.1.2) both explicitly test the
 positive-normative distinction, typically with 2-4 mark MCQs or short-answer questions asking
 students to classify statements. CIE (9708) may embed the distinction within longer essay questions.
 OCR often asks students to identify the positive and normative components within a single policy
-argument.
-:::
+argument. :::
 
 ## 4. Factors of Production
 
@@ -397,14 +386,12 @@ We define the four factors of production:
 whereas land and labour are not. Entrepreneurship is a form of human capital but is distinguished
 because it involves decision-making under uncertainty.
 
-:::info
-Board-Specific Note Edexcel (Theme 1, 1.1.1) lists the four factors of production and their
+:::info Board-Specific Note Edexcel (Theme 1, 1.1.1) lists the four factors of production and their
 rewards explicitly in the specification and frequently asks students to identify which factor is
 being described in a given scenario. AQA (4.1.1.1) covers factors of production within the broader
 topic of scarcity and choice. CIE (9708) expects students to distinguish between factor rewards and
 understand the concept of factor mobility. OCR (H460) may ask students to explain how changes in the
-quantity or quality of a factor of production affect the PPF.
-:::
+quantity or quality of a factor of production affect the PPF. :::
 
 ## 5. Specialisation and Division of Labour
 
@@ -454,13 +441,11 @@ gains of deep specialisation. On balance, the benefits of specialisation typical
 costs, but the distribution of those benefits is uneven and requires policy attention (retraining
 programmes, education systems, social safety nets).
 
-:::info
-Board-Specific Note AQA (4.1.1.4) and Edexcel (Theme 1, 1.1.3) both cover specialisation and
+:::info Board-Specific Note AQA (4.1.1.4) and Edexcel (Theme 1, 1.1.3) both cover specialisation and
 division of labour, with AQA placing more emphasis on the link to international trade and Edexcel
 focusing on the efficiency gains within firms. CIE (9708) Paper 2 may ask students to evaluate the
 effects of specialisation on an economy. OCR (H460) often links specialisation to broader questions
-about globalisation and its discontents.
-:::
+about globalisation and its discontents. :::
 
 ## 6. Critical Evaluation
 
@@ -478,12 +463,10 @@ about globalisation and its discontents.
 - Cannot capture dynamic changes (innovation, learning by doing)
 - Does not model the institutional framework that determines _how_ production decisions are made
 
-:::info
-Board-Specific Note CIE (9708) often asks students to apply the PPF to real economies —
+:::info Board-Specific Note CIE (9708) often asks students to apply the PPF to real economies —
 e.g., "Using a PPF diagram, explain how a country might reallocate resources from consumer goods to
 capital goods and evaluate the consequences." Focus on the trade-off between current consumption and
-future growth.
-:::
+future growth. :::
 
 #### Additional Evaluation Points
 

@@ -154,8 +154,8 @@ regulating climate through the greenhouse effect.
   ($\mathrm{HCO_3^-}$), carbonate ($\mathrm{CO_3^{2-}}$), and marine organisms
 - **Terrestrial biosphere**: approximately $2000\;\mathrm{GtC}$ in vegetation, soils, and litter
 - **Fossil fuels**: approximately $1000\;\mathrm{GtC}$ in coal, oil, and natural gas deposits
-- **Sedimentary rocks**: approximately $100000000\;\mathrm{GtC}$ in limestone, chalk, and
-  other carbonate rocks (the largest store, but very slow cycling)
+- **Sedimentary rocks**: approximately $100000000\;\mathrm{GtC}$ in limestone, chalk, and other
+  carbonate rocks (the largest store, but very slow cycling)
 
 ### Carbon Fluxes (Flows)
 

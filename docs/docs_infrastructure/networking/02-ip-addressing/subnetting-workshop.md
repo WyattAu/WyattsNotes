@@ -111,9 +111,9 @@ also uses `/31` for network equipment links per RFC 6164.
 
 ### Verifying with a Shortcut
 
-For the octet where the boundary falls, the "magic number" is $256 - \mathrm{mask\_octet}$. For `/26`,
-the mask in the fourth octet is `192`, so the magic number is $256 - 192 = 64$. Subnets start at
-multiples of 64: `.0`, `.64`, `.128`, `.192`. Our IP `.75` falls in the `.64` subnet.
+For the octet where the boundary falls, the "magic number" is $256 - \mathrm{mask\_octet}$. For
+`/26`, the mask in the fourth octet is `192`, so the magic number is $256 - 192 = 64$. Subnets start
+at multiples of 64: `.0`, `.64`, `.128`, `.192`. Our IP `.75` falls in the `.64` subnet.
 
 This shortcut works because the boundary octet always has a value that is a power of 2 (or 256 minus
 a power of 2).

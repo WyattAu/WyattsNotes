@@ -200,12 +200,10 @@ uterus, controlled by four hormones.
 - The LH surge is a self-amplifying cycle: more LH causes more oestrogen release, which causes more
   LH release, until ovulation occurs and the follicle is ruptured (breaking the feedback loop)
 
-:::info
-The switch from negative to positive feedback by oestrogen is a critical concept. At low
+:::info The switch from negative to positive feedback by oestrogen is a critical concept. At low
 concentrations, oestrogen inhibits the pituitary (negative feedback). At high concentrations
 sustained for approximately 36 hours, oestrogen stimulates the pituitary (positive feedback),
-causing the LH surge. The DSE frequently tests this distinction.
-:::
+causing the LH surge. The DSE frequently tests this distinction. :::
 
 ---
 
@@ -280,7 +278,7 @@ tissues. It is the interface for exchange of substances between maternal and foe
 
 | Function           | Description                                                                                                                    |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Gas exchange       | $\mathrm{O}_2$ diffuses from maternal blood to foetal blood; $\mathrm{CO}_2$ diffuses from foetal blood to maternal blood          |
+| Gas exchange       | $\mathrm{O}_2$ diffuses from maternal blood to foetal blood; $\mathrm{CO}_2$ diffuses from foetal blood to maternal blood      |
 | Nutrient transfer  | Glucose, amino acids, fatty acids, vitamins, and minerals diffuse from maternal to foetal blood                                |
 | Waste removal      | Urea, uric acid, and creatinine diffuse from foetal blood to maternal blood for excretion                                      |
 | Hormone production | Produces progesterone (maintains endometrium), oestrogen, hCG (maintains corpus luteum), relaxin, and human placental lactogen |
@@ -293,14 +291,12 @@ tissues. It is the interface for exchange of substances between maternal and foe
   umbilical vein (carries oxygenated blood from the placenta to the foetus)
 - Wrapped in Wharton's jelly (connective tissue that protects the blood vessels from compression)
 
-:::warning
-A critical point for DSE: the umbilical ARTERY carries deoxygenated blood (away from the
+:::warning A critical point for DSE: the umbilical ARTERY carries deoxygenated blood (away from the
 foetus to the placenta) and the umbilical VEIN carries oxygenated blood (from the placenta to the
 foetus). This is the OPPOSITE of the naming convention in the systemic circulation, where arteries
 carry oxygenated blood. The naming is based on direction of flow relative to the heart: arteries
 carry blood away from the heart, veins carry blood towards it. The umbilical arteries carry blood
-away from the foetal heart.
-:::
+away from the foetal heart. :::
 
 ---
 
@@ -337,11 +333,9 @@ normal range.
 
 The term "negative" refers to the fact that the response opposes (negates) the original stimulus.
 
-:::info
-Homeostasis maintains parameters within a normal range, not at a single fixed value. The set
+:::info Homeostasis maintains parameters within a normal range, not at a single fixed value. The set
 point is a target value, and the actual value fluctuates within narrow limits around it. In DSE exam
-answers, write "maintained within narrow limits" rather than "kept exactly constant."
-:::
+answers, write "maintained within narrow limits" rather than "kept exactly constant." :::
 
 ---
 
@@ -456,13 +450,11 @@ concentration must be tightly regulated because:
 | Glycogenolysis  | Conversion of glycogen to glucose-6-phosphate (then to free glucose in the liver)      | Liver, muscles | Glucagon, adrenaline |
 | Gluconeogenesis | Synthesis of glucose from non-carbohydrate precursors (amino acids, lactate, glycerol) | Liver only     | Glucagon             |
 
-:::warning
-A critical distinction: glycogenolysis occurs in both liver and muscle, but only the
+:::warning A critical distinction: glycogenolysis occurs in both liver and muscle, but only the
 liver can release free glucose into the blood. Muscle glycogenolysis produces glucose-6-phosphate,
 which is used directly by the muscle for respiration. Muscle lacks the enzyme glucose-6-phosphatase,
 which is required to convert glucose-6-phosphate to free glucose. The DSE often tests this
-distinction.
-:::
+distinction. :::
 
 ### Diabetes Mellitus
 
@@ -634,7 +626,7 @@ their removal is not excretion.
 
 | Substance                     | Source of Production                           | Organ of Excretion                   | Method of Excretion                             |
 | ----------------------------- | ---------------------------------------------- | ------------------------------------ | ----------------------------------------------- |
-| $\mathrm{CO}_2$                 | Cellular respiration                           | Lungs                                | Exhaled during breathing                        |
+| $\mathrm{CO}_2$               | Cellular respiration                           | Lungs                                | Exhaled during breathing                        |
 | Urea                          | Deamination of excess amino acids in the liver | Kidneys                              | Filtered from blood, excreted in urine          |
 | Water                         | Various metabolic reactions                    | Kidneys, skin, lungs                 | Urine, sweat, exhaled breath                    |
 | Mineral salts (Na$^+$, K$^+$) | Various                                        | Kidneys, skin                        | Urine, sweat                                    |
@@ -646,8 +638,8 @@ their removal is not excretion.
 The liver plays a central role in processing and detoxifying substances:
 
 1. **Deamination:** Excess amino acids cannot be stored. The liver removes the amino group
-   ($\mathrm{NH}_2$) from amino acids, converting it to ammonia ($\mathrm{NH}_3$, highly toxic), which
-   is then converted to urea (less toxic) via the ornithine cycle in the liver:
+   ($\mathrm{NH}_2$) from amino acids, converting it to ammonia ($\mathrm{NH}_3$, highly toxic),
+   which is then converted to urea (less toxic) via the ornithine cycle in the liver:
 
 $$\mathrm{Amino acid} \to \mathrm{Keto acid} + \mathrm{NH}_3$$
 

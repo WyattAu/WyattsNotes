@@ -156,12 +156,10 @@ Physical:     [Bits on wire]
 | Header      | 20+ bytes                 | 8 bytes                |
 | Use cases   | Web, email, file transfer | Streaming, gaming, DNS |
 
-:::info
-Board-specific Know specific use cases for each protocol:
+:::info Board-specific Know specific use cases for each protocol:
 
 - TCP: HTTP, HTTPS, FTP, SMTP, SSH
-- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP
-:::
+- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP :::
 
 ### TCP Three-Way Handshake
 

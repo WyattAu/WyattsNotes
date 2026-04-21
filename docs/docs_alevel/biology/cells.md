@@ -40,13 +40,13 @@ $d \approx 200\ \mathrm{nm}$, giving a maximum useful magnification of approxima
 light, giving a resolving power of approximately $0.2\ \mathrm{nm}$ and effective magnifications up
 to $\times 2000000$.
 
-| Feature       | Light Microscope           | Electron Microscope          |
-| ------------- | -------------------------- | ---------------------------- |
-| Resolution    | $\approx 200\ \mathrm{nm}$ | $\approx 0.2\ \mathrm{nm}$   |
-| Magnification | Up to $\times 1500$        | Up to $\times 2000000$ |
-| Specimen      | Living or dead             | Dead only (vacuum required)  |
-| Contrast      | Staining (dyes)            | Heavy metal staining         |
-| Cost          | Low                        | High                         |
+| Feature       | Light Microscope           | Electron Microscope         |
+| ------------- | -------------------------- | --------------------------- |
+| Resolution    | $\approx 200\ \mathrm{nm}$ | $\approx 0.2\ \mathrm{nm}$  |
+| Magnification | Up to $\times 1500$        | Up to $\times 2000000$      |
+| Specimen      | Living or dead             | Dead only (vacuum required) |
+| Contrast      | Staining (dyes)            | Heavy metal staining        |
+| Cost          | Low                        | High                        |
 
 **Transmission electron microscopy (TEM)**: electrons pass through thin sections; produces 2D images
 of internal ultrastructure.
@@ -79,9 +79,9 @@ centrifugation:
 3. **Differential centrifugation**: the filtrate is centrifuged at increasing speeds. At each step,
    the heaviest (densest) organelles form a pellet at the bottom of the tube:
 
-| Centrifugation Speed                    | Pellet                               | Supernatant Contains |
-| --------------------------------------- | ------------------------------------ | -------------------- |
-| Low ($1000\ \mathrm{g}$, 10 min)        | Nuclei                               | All other organelles |
+| Centrifugation Speed                 | Pellet                               | Supernatant Contains |
+| ------------------------------------ | ------------------------------------ | -------------------- |
+| Low ($1000\ \mathrm{g}$, 10 min)     | Nuclei                               | All other organelles |
 | Medium ($10000\ \mathrm{g}$, 20 min) | Mitochondria, lysosomes              | Lighter organelles   |
 | High ($100000\ \mathrm{g}$, 60 min)  | Ribosomes, microsomes (ER fragments) | Cytosol              |
 

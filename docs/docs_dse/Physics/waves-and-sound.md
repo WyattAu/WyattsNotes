@@ -65,7 +65,8 @@ $$\Delta\phi = \frac{2\pi \times 0.35}{1.4} = \frac{\pi}{2} = 90^\circ$$
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
-Experiment with wave speed, frequency, amplitude, and damping to see how they affect the wave pattern.
+Experiment with wave speed, frequency, amplitude, and damping to see how they affect the wave
+pattern.
 
 ### Reflection
 

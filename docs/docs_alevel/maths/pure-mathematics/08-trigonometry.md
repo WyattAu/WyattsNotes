@@ -18,10 +18,8 @@ slug: trigonometry
 | OCR (A)    | Paper 1, 2 | Includes small angle approximations                                      |
 | CIE (9709) | P1, P2, P3 | Trig functions in P1; identities and equations in P2; further trig in P3 |
 
-:::info
-All boards provide trigonometric identities in the formula booklet, but not their proofs.
-You need to know _which_ identities exist and how to apply them.
-:::
+:::info All boards provide trigonometric identities in the formula booklet, but not their proofs.
+You need to know _which_ identities exist and how to apply them. :::
 
 <hr />
 
@@ -249,10 +247,8 @@ $$\sin\theta \approx \theta, \quad \cos\theta \approx 1, \quad \tan\theta \appro
 _Intuition._ Near the origin, the curves $y = \sin\theta$ and $y = \tan\theta$ are almost
 indistinguishable from the line $y = \theta$. The curve $y = \cos\theta$ is nearly flat at $y = 1$.
 
-:::warning
-The small angle approximations are only valid when $\theta$ is in **radians**, not
-degrees. This is a very common exam error.
-:::
+:::warning The small angle approximations are only valid when $\theta$ is in **radians**, not
+degrees. This is a very common exam error. :::
 
 <hr />
 
@@ -298,7 +294,8 @@ Similarly:
 
 $$\tan\frac{\theta}{2} = \frac{1 - \cos\theta}{\sin\theta}$$
 
-_Proof._ $\frac{1 - \cos\theta}{\sin\theta} = \frac{1 - (1 - 2\sin^2\frac{\theta}{2})}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}} = \frac{2\sin^2\frac{\theta}{2}}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}} = \frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}} = \tan\frac{\theta}{2} \quad \blacksquare$
+_Proof._
+$\frac{1 - \cos\theta}{\sin\theta} = \frac{1 - (1 - 2\sin^2\frac{\theta}{2})}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}} = \frac{2\sin^2\frac{\theta}{2}}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}} = \frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}} = \tan\frac{\theta}{2} \quad \blacksquare$
 
 ### 7.3 Sign Determination
 
@@ -306,19 +303,19 @@ The $\pm$ in the sine and cosine half-angle formulas depends on the quadrant of 
 not the quadrant of $\theta$ itself. Always determine which quadrant $\frac{\theta}{2}$ lies in
 before choosing the sign.
 
-| Quadrant of $\frac{\theta}{2}$ | $\sin\frac{\theta}{2}$ | $\cos\frac{\theta}{2}$ |
-| --- | --- | --- |
-| I: $0 \lt{} \frac{\theta}{2} \lt{} \frac{\pi}{2}$ | $+$ | $+$ |
-| II: $\frac{\pi}{2} \lt{} \frac{\theta}{2} \lt{} \pi$ | $+$ | $-$ |
-| III: $\pi \lt{} \frac{\theta}{2} \lt{} \frac{3\pi}{2}$ | $-$ | $-$ |
-| IV: $\frac{3\pi}{2} \lt{} \frac{\theta}{2} \lt{} 2\pi$ | $-$ | $+$ |
+| Quadrant of $\frac{\theta}{2}$                         | $\sin\frac{\theta}{2}$ | $\cos\frac{\theta}{2}$ |
+| ------------------------------------------------------ | ---------------------- | ---------------------- |
+| I: $0 \lt{} \frac{\theta}{2} \lt{} \frac{\pi}{2}$      | $+$                    | $+$                    |
+| II: $\frac{\pi}{2} \lt{} \frac{\theta}{2} \lt{} \pi$   | $+$                    | $-$                    |
+| III: $\pi \lt{} \frac{\theta}{2} \lt{} \frac{3\pi}{2}$ | $-$                    | $-$                    |
+| IV: $\frac{3\pi}{2} \lt{} \frac{\theta}{2} \lt{} 2\pi$ | $-$                    | $+$                    |
 
 <details>
 <summary>Worked example</summary>
 Find the exact value of $\sin\frac{\pi}{8}$.
 
-Since $0 \lt{} \frac{\pi}{8} \lt{} \frac{\pi}{2}$ (first quadrant), $\sin\frac{\pi}{8} > 0$, so
-we take the positive root.
+Since $0 \lt{} \frac{\pi}{8} \lt{} \frac{\pi}{2}$ (first quadrant), $\sin\frac{\pi}{8} > 0$, so we
+take the positive root.
 
 $$\sin\frac{\pi}{8} = \sqrt{\frac{1 - \cos\frac{\pi}{4}}{2}} = \sqrt{\frac{1 - \frac{\sqrt{2}}{2}}{2}} = \sqrt{\frac{2 - \sqrt{2}}{4}} = \frac{\sqrt{2 - \sqrt{2}}}{2}$$
 
@@ -342,8 +339,8 @@ $$a\sin\theta + b\cos\theta = R\cos(\theta - \beta)$$
 
 where $R = \sqrt{a^2 + b^2}$ and $\tan\beta = \dfrac{a}{b}$.
 
-Both forms are equivalent; the choice between them is a matter of convenience depending on whether
-a sine or cosine expansion is more natural for the problem at hand.
+Both forms are equivalent; the choice between them is a matter of convenience depending on whether a
+sine or cosine expansion is more natural for the problem at hand.
 
 ### 8.2 Derivation
 
@@ -360,8 +357,8 @@ $R = \sqrt{a^2 + b^2}$.
 
 Dividing the second equation by the first: $\tan\alpha = \dfrac{b}{a}$. $\blacksquare$
 
-The cosine form is derived similarly by expanding $R\cos(\theta - \beta) = R\cos\theta\cos\beta + R\sin\theta\sin\beta$
-and equating coefficients.
+The cosine form is derived similarly by expanding
+$R\cos(\theta - \beta) = R\cos\theta\cos\beta + R\sin\theta\sin\beta$ and equating coefficients.
 
 ### 8.3 Applications: Maximum and Minimum
 
@@ -394,8 +391,8 @@ $$\theta = \frac{3\pi}{2} - \alpha = \frac{3\pi}{2} + \arctan\frac{4}{3} \approx
 
 ### 8.4 Solving Equations
 
-The R-addition formula converts $a\sin\theta + b\cos\theta = k$ into $R\sin(\theta + \alpha) = k$,
-a standard trigonometric equation.
+The R-addition formula converts $a\sin\theta + b\cos\theta = k$ into $R\sin(\theta + \alpha) = k$, a
+standard trigonometric equation.
 
 <details>
 <summary>Example: Solving an equation</summary>
@@ -434,8 +431,7 @@ $\tan\theta = \frac{\sin\theta}{\cos\theta}$, $\sec\theta = \frac{1}{\cos\theta}
 
 ### 9.3 Strategy 3: Use Known Identities
 
-Apply the Pythagorean identity, compound angle, or double angle formulas to create
-simplifications.
+Apply the Pythagorean identity, compound angle, or double angle formulas to create simplifications.
 
 ### 9.4 Strategy 4: Multiply by the Conjugate
 
@@ -518,18 +514,18 @@ $$
 
 ### 10.1 Key Features
 
-| Function | Period | Amplitude | Domain | Range |
-| -------- | ------ | --------- | ------ | ----- |
-| $\sin x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
-| $\cos x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
-| $\tan x$ | $\pi$ | undefined | $x \neq \frac{\pi}{2} + n\pi$ | $\mathbb{R}$ |
+| Function | Period | Amplitude | Domain                        | Range        |
+| -------- | ------ | --------- | ----------------------------- | ------------ |
+| $\sin x$ | $2\pi$ | $1$       | $\mathbb{R}$                  | $[-1, 1]$    |
+| $\cos x$ | $2\pi$ | $1$       | $\mathbb{R}$                  | $[-1, 1]$    |
+| $\tan x$ | $\pi$  | undefined | $x \neq \frac{\pi}{2} + n\pi$ | $\mathbb{R}$ |
 
 **Key values of $\sin$ and $\cos$:**
 
-| Angle | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
-| ----- | --- | --------------- | --------------- | --------------- | --------------- | ----- | --------------- | ----- |
-| $\sin$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$ | $0$ | $-1$ | $0$ |
-| $\cos$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ | $-1$ | $0$ | $1$ |
+| Angle  | $0$ | $\frac{\pi}{6}$      | $\frac{\pi}{4}$      | $\frac{\pi}{3}$      | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
+| ------ | --- | -------------------- | -------------------- | -------------------- | --------------- | ----- | ---------------- | ------ |
+| $\sin$ | $0$ | $\frac{1}{2}$        | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$             | $0$   | $-1$             | $0$    |
+| $\cos$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$        | $0$             | $-1$  | $0$              | $1$    |
 
 ### 10.2 Transformations
 
@@ -542,14 +538,11 @@ For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
 
 For $\tan$, the period is $\dfrac{\pi}{|B|}$ and amplitude is not defined.
 
-{/* TODO: Replace with a real Desmos graph URL showing y = A sin(Bx + C) + D with sliders for A, B, C, D */}
-<DesmosGraph
-  title="y = A sin(Bx + C) + D"
-  expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
-  width={800}
-  height={500}
-/>
-Use the sliders to adjust the amplitude, period, phase shift, and vertical translation of the trigonometric functions. Observe how each parameter affects the graph of $y = A\sin(Bx + C) + D$.
+{/_ TODO: Replace with a real Desmos graph URL showing y = A sin(Bx + C) + D with sliders for A, B,
+C, D _/} <DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
+width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
+vertical translation of the trigonometric functions. Observe how each parameter affects the graph of
+$y = A\sin(Bx + C) + D$.
 
 <details>
 <summary>Worked example</summary>
@@ -559,10 +552,11 @@ Describe the key features of $y = 2\sin\!\left(2x - \frac{\pi}{3}\right)$ for $0
 
 **Period:** $\dfrac{2\pi}{|B|} = \dfrac{2\pi}{2} = \pi$.
 
-**Phase shift:** $-\dfrac{C}{B} = -\dfrac{-\pi/3}{2} = \dfrac{\pi}{6}$ (shift right by $\frac{\pi}{6}$).
+**Phase shift:** $-\dfrac{C}{B} = -\dfrac{-\pi/3}{2} = \dfrac{\pi}{6}$ (shift right by
+$\frac{\pi}{6}$).
 
-**Key points.** The first cycle begins at $x = \frac{\pi}{6}$ (where the curve crosses the
-midline upward). Subsequent key points within $[0, 2\pi]$:
+**Key points.** The first cycle begins at $x = \frac{\pi}{6}$ (where the curve crosses the midline
+upward). Subsequent key points within $[0, 2\pi]$:
 
 - Maximum at $x = \frac{5\pi}{12}$ (value $2$)
 - Midline crossing (down) at $x = \frac{2\pi}{3}$
@@ -753,8 +747,8 @@ $$\tan\!\left(A + \frac{\pi}{4}\right) = \frac{\tan A + \tan\frac{\pi}{4}}{1 - \
 
 <hr />
 
-**Problem 10.** The area of a sector is $20\mathrm{ cm}^2$ and the arc length is $10\mathrm{ cm}$. Find
-the radius and the angle.
+**Problem 10.** The area of a sector is $20\mathrm{ cm}^2$ and the arc length is $10\mathrm{ cm}$.
+Find the radius and the angle.
 
 <details>
 <summary>Solution</summary>

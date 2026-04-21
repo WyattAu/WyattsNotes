@@ -41,8 +41,7 @@ False
 **Why:** $0.1$ cannot be represented exactly in binary floating point (like $1/3$ cannot be
 represented exactly in decimal).
 
-:::warning
-Pitfall Never use `==` to compare floating-point numbers. Use `abs(a - b) < epsilon` with
+:::warning Pitfall Never use `==` to compare floating-point numbers. Use `abs(a - b) < epsilon` with
 a small tolerance (e.g., `1e-9`).
 
 ```python
@@ -123,10 +122,8 @@ codes (e.g., UTF-8 or UTF-16).
 | Split            | `s.split(sep)` | $O(n)$                            |
 | Slice            | `s[a:b]`       | $O(b-a)$                          |
 
-:::warning
-Pitfall In Python, strings are **immutable** — you cannot modify individual characters.
-`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string.
-:::
+:::warning Pitfall In Python, strings are **immutable** — you cannot modify individual characters.
+`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string. :::
 
 ### String Immutability
 
@@ -137,14 +134,12 @@ Strings are immutable for several reasons:
 3. **Hashing:** Immutable strings can be used as dictionary keys (hash is stable)
 4. **Interning:** Python can reuse identical string objects, saving memory
 
-:::info
-Board-specific **AQA** requires ASCII, Unicode (UTF-8, UTF-16), image representation
+:::info Board-specific **AQA** requires ASCII, Unicode (UTF-8, UTF-16), image representation
 (pixels, colour depth, resolution), sound sampling (sample rate, bit depth). **CIE (9618)** covers
 similar topics but may emphasise different aspects; requires understanding of file sizes and
 capacity calculations. **OCR (A)** requires character encoding, image representation, and sound
 representation with specific detail on compression (lossy vs lossless). **Edexcel** covers data
-representation fundamentals including number systems and character encoding.
-:::
+representation fundamentals including number systems and character encoding. :::
 
 <hr />
 
@@ -289,6 +284,7 @@ are added, the result is $0.30000000000000004$, not exactly $0.3$.
 
 Solution: use `abs(a - b) < 1e-9` for comparison, or use the `decimal` module for exact decimal
 arithmetic.
+
 </details>
 
 **Problem 2.** What is the output of the following code? Explain.
@@ -313,6 +309,7 @@ True
 `a is b` returns `True` because they reference the same object.
 
 To avoid this: `b = a.copy()` or `b = a[:]`.
+
 </details>
 
 **Problem 3.** Write a function that reads a file and counts the occurrences of each word. Handle
@@ -334,6 +331,7 @@ def count_words(filename):
         print(f"Error: File '{filename}' not found.")
         return {}
 ```
+
 </details>
 
 **Problem 4.** Explain the difference between shallow copy and deep copy. Give an example where they
@@ -362,6 +360,7 @@ print(deep)     # [[1, 2], [3, 4]]   — unchanged
 
 The shallow copy shares the inner lists with the original. The deep copy has independent inner
 lists.
+
 </details>
 
 **Problem 5.** Write a function that safely divides two numbers, handling division by zero and
@@ -380,6 +379,7 @@ def safe_divide(a, b):
     except (TypeError, ValueError):
         return "Error: Non-numeric input"
 ```
+
 </details>
 
 **Problem 6.** Explain why strings are immutable in Python. What are the advantages and
@@ -410,11 +410,12 @@ for i in range(1000):
 # Efficient: O(n) — use join
 s = "".join(str(i) for i in range(1000))
 ```
+
 </details>
 
 **Problem 7.** A bitmap image has a resolution of $1920 \times 1080$ pixels and uses 24-bit colour
-depth. Calculate the uncompressed file size in MB (using $1 \mathrm{ MB} = 1024^2$ bytes). If lossless
-compression achieves a 3:1 ratio, what is the compressed file size in MB?
+depth. Calculate the uncompressed file size in MB (using $1 \mathrm{ MB} = 1024^2$ bytes). If
+lossless compression achieves a 3:1 ratio, what is the compressed file size in MB?
 
 <details>
 <summary>Answer</summary>
@@ -432,10 +433,11 @@ $\mathrm{File size} = 6,220,800 \div 1024^2 \approx 5.93 \mathrm{ MB}$
 **With 3:1 compression:**
 
 $\mathrm{Compressed size} = 5.93 \div 3 \approx 1.98 \mathrm{ MB}$
+
 </details>
 
-**Problem 8.** An audio file is recorded at a sample rate of $44,100 \mathrm{ Hz}$ with a bit depth of
-16 bits, for a duration of 3 minutes in stereo (2 channels). Calculate the file size in MB (using
+**Problem 8.** An audio file is recorded at a sample rate of $44,100 \mathrm{ Hz}$ with a bit depth
+of 16 bits, for a duration of 3 minutes in stereo (2 channels). Calculate the file size in MB (using
 $1 \mathrm{ MB} = 1024^2$ bytes).
 
 <details>
@@ -452,6 +454,7 @@ $\mathrm{File size} = 254,016,000 \mathrm{ bits}$
 $\mathrm{File size} = 254,016,000 \div 8 = 31,752,000 \mathrm{ bytes}$
 
 $\mathrm{File size} = 31,752,000 \div 1024^2 \approx 30.28 \mathrm{ MB}$
+
 </details>
 
 **Problem 9.** A text file contains the string `"Hello, 世界!"` (9 characters). ASCII uses 7 bits
@@ -482,11 +485,12 @@ mathematical symbols, or emoji. Unicode provides a universal character set of ov
 characters across 161 scripts, ensuring every character in every language can be uniquely encoded.
 UTF-8 is backwards compatible with ASCII, so existing ASCII text works without modification while
 gaining support for all other scripts.
+
 </details>
 
 **Problem 10.** A system stores 1000 images at 4K resolution ($3840 \times 2160$) with 32-bit colour
-depth. Calculate the total storage required in GB (using $1 \mathrm{ GB} = 1024^3$ bytes). If lossless
-compression achieves a 2:1 ratio, what is the compressed total size in GB?
+depth. Calculate the total storage required in GB (using $1 \mathrm{ GB} = 1024^3$ bytes). If
+lossless compression achieves a 2:1 ratio, what is the compressed total size in GB?
 
 <details>
 <summary>Answer</summary>
@@ -516,6 +520,7 @@ $\mathrm{1000 images} = 33,177,600,000 \mathrm{ bytes}$
 $\mathrm{In GB} = 33,177,600,000 \div 1024^3 \approx 30.9 \mathrm{ GB}$
 
 $\mathrm{Compressed} = 30.9 \div 2 \approx 15.45 \mathrm{ GB}$
+
 </details>
 
 For revision on number representation, see

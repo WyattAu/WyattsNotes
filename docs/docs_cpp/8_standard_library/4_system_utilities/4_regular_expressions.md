@@ -28,8 +28,7 @@ The library provides three main operations:
 | `std::regex_search(str, regex)`       | Returns `true` if **any part** of the string matches      |
 | `std::regex_replace(str, regex, fmt)` | Replaces all matches with a formatted string              |
 
-:::warning
-`std::regex` is notoriously slow on many standard library implementations (particularly
+:::warning `std::regex` is notoriously slow on many standard library implementations (particularly
 GCC's libstdc++, which uses a backtracking NFA engine). For production use with untrusted input,
 consider:
 
@@ -37,8 +36,7 @@ consider:
   to compile regex patterns at compile time.
 - **Hand-written parsers:** for simple patterns (e.g., email validation, URL parsing), a
   hand-written parser is often faster and more readable.
-- **RE2:** Google's regex library with guaranteed linear-time matching.
-:::
+- **RE2:** Google's regex library with guaranteed linear-time matching. :::
 
 ### `std::regex_match` and `std::regex_search`
 
@@ -120,10 +118,8 @@ void regex_replace_demo() {
 }
 ```
 
-:::info
-In the replacement string, `$&` refers to the entire match, `$1`..`$9` refer to capture
-groups, and `$$` is a literal `$`. These are defined in [N4950 §30.9.4].
-:::
+:::info In the replacement string, `$&` refers to the entire match, `$1`..`$9` refer to capture
+groups, and `$$` is a literal `$`. These are defined in [N4950 §30.9.4]. :::
 
 ### Email Validation with Regex
 
@@ -215,11 +211,9 @@ void catastrophic_backtracking_demo() {
 }
 ```
 
-:::warning
-Avoid nested quantifiers in regex patterns: `(a+)+`, `(a*)*`, `(a+)*`. These can trigger
+:::warning Avoid nested quantifiers in regex patterns: `(a+)+`, `(a*)*`, `(a+)*`. These can trigger
 exponential backtracking on inputs that nearly match. If you must use them, set a timeout or use a
-library with guaranteed linear-time matching (RE2, hyperscan).
-:::
+library with guaranteed linear-time matching (RE2, hyperscan). :::
 
 ### Regex Grammars and Flags
 

@@ -80,6 +80,7 @@ $9a - 3b = 9 \implies 3a - b = 3$ ... (ii)
 Adding (i) and (ii): $4a = 8 \implies a = 2$. Then $b = 3$.
 
 $P(x) = x^3 + 2x^2 + 3x - 6$.
+
 </details>
 
 <hr />
@@ -114,6 +115,7 @@ Setting $x = 0$: $5 = A + C \implies C = 4$.
 Setting $x = 1$: $8 = 2A + (B + C)(2) = 2 + 2(B + 4) \implies 2B + 10 = 6 \implies B = -2$.
 
 $$\frac{3x + 5}{(x + 1)(x^2 + 1)} = \frac{1}{x + 1} + \frac{-2x + 4}{x^2 + 1}$$
+
 </details>
 
 ### 2.2 Type 2: Repeated irreducible quadratic
@@ -146,12 +148,11 @@ Comparing coefficients:
 - $x^0$: $4B + D = 1 \implies 4 + D = 1 \implies D = -3$
 
 $$\frac{x^2 + 1}{(x^2 + 4)^2} = \frac{1}{x^2 + 4} - \frac{3}{(x^2 + 4)^2}$$
+
 </details>
 
-:::info
-AQA requires all three types of partial fractions with irreducible quadratics. Edexcel and
-OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3.
-:::
+:::info AQA requires all three types of partial fractions with irreducible quadratics. Edexcel and
+OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3. :::
 
 <hr />
 
@@ -220,6 +221,7 @@ From the relationships: $\alpha + \beta + \gamma = \dfrac{3}{2}$ and
 $\alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{-4}{2} = -2$.
 
 $$\alpha^2 + \beta^2 + \gamma^2 = \left(\frac{3}{2}\right)^2 - 2(-2) = \frac{9}{4} + 4 = \frac{25}{4}$$
+
 </details>
 
 <hr />
@@ -291,6 +293,7 @@ Using partial fractions: $\dfrac{1}{r(r+1)} = \dfrac{1}{r} - \dfrac{1}{r+1}$.
 $$\sum_{r=1}^{n}\left(\frac{1}{r} - \frac{1}{r+1}\right) = \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \cdots + \left(\frac{1}{n} - \frac{1}{n+1}\right)$$
 
 $$= 1 - \frac{1}{n+1} = \frac{n}{n+1}$$
+
 </details>
 
 <details>
@@ -305,6 +308,7 @@ $$\frac{1}{2}\sum_{r=1}^{n}\left(\frac{1}{r} - \frac{1}{r+2}\right) = \frac{1}{2
 Terms cancel in pairs. The surviving terms are $1 + \dfrac{1}{2} - \dfrac{1}{n+1} - \dfrac{1}{n+2}$.
 
 $$= \frac{1}{2}\left(\frac{3}{2} - \frac{1}{n+1} - \frac{1}{n+2}\right) = \frac{3}{4} - \frac{2n+3}{2(n+1)(n+2)}$$
+
 </details>
 
 ### 5.2 Summation of $r \cdot a_r$
@@ -345,11 +349,9 @@ $$= \frac{(k+1)^2[k^2 + 4(k+1)]}{4} = \frac{(k+1)^2(k+2)^2}{4} = \left[\frac{(k+
 
 ✓ $\square$
 
-:::info
-CIE places particular emphasis on the method of differences and requires proof of standard
+:::info CIE places particular emphasis on the method of differences and requires proof of standard
 summation formulae. Edexcel FP2 requires summation of series including method of differences. AQA
-covers summation in the context of mathematical induction.
-:::
+covers summation in the context of mathematical induction. :::
 
 <hr />
 
@@ -376,6 +378,7 @@ $$\boxed{\sum_{r=1}^{n} [g(r) - g(r+1)] = g(1) - g(n+1)}$$
 
 Since $x^2 + 2x + 5 = (x+1)^2 + 4$ has $\Delta = 4 - 20 < 0$, it is irreducible. Use the form
 $\dfrac{A}{x+2} + \dfrac{Bx + C}{x^2 + 2x + 5}$.
+
 </details>
 
 <details>
@@ -392,6 +395,7 @@ Setting $x = 0$: $4 = 5A + 2C = 6 + 2C \implies C = -1$.
 Setting $x = 1$: $2 + 3 + 4 = 5A + (B - 1)(3) = 6 + 3B - 3 \implies 9 = 3 + 3B \implies B = 2$.
 
 $$\frac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)} = \frac{6/5}{x + 2} + \frac{2x - 1}{x^2 + 2x + 5}$$
+
 </details>
 
 <hr />
@@ -403,6 +407,7 @@ value of $\dfrac{1}{\alpha\beta} + \dfrac{1}{\alpha\gamma} + \dfrac{1}{\beta\gam
 <summary>Hint</summary>
 
 $\dfrac{1}{\alpha\beta} + \dfrac{1}{\alpha\gamma} + \dfrac{1}{\beta\gamma} = \dfrac{\alpha + \beta + \gamma}{\alpha\beta\gamma}$.
+
 </details>
 
 <details>
@@ -411,6 +416,7 @@ $\dfrac{1}{\alpha\beta} + \dfrac{1}{\alpha\gamma} + \dfrac{1}{\beta\gamma} = \df
 $\alpha + \beta + \gamma = \dfrac{-(-4)}{1} = 4$ and $\alpha\beta\gamma = \dfrac{-6}{1} = -6$.
 
 $$\frac{1}{\alpha\beta} + \frac{1}{\alpha\gamma} + \frac{1}{\beta\gamma} = \frac{\alpha + \beta + \gamma}{\alpha\beta\gamma} = \frac{4}{-6} = -\frac{2}{3}$$
+
 </details>
 
 <hr />
@@ -422,6 +428,7 @@ $$\frac{1}{\alpha\beta} + \frac{1}{\alpha\gamma} + \frac{1}{\beta\gamma} = \frac
 
 Both $x^2 + 1$ and $x^2 + 4$ are irreducible. Use the form
 $\dfrac{Ax + B}{x^2 + 1} + \dfrac{Cx + D}{x^2 + 4}$.
+
 </details>
 
 <details>
@@ -445,6 +452,7 @@ From $A + C = 0$ and $4A + C = 3$: $3A = 3 \implies A = 1, C = -1$.
 From $B + D = 0$ and $4B + D = 1$: $3B = 1 \implies B = \dfrac{1}{3}, D = -\dfrac{1}{3}$.
 
 $$\frac{3x + 1}{(x^2 + 1)(x^2 + 4)} = \frac{x + 1/3}{x^2 + 1} + \frac{-x - 1/3}{x^2 + 4}$$
+
 </details>
 
 <hr />
@@ -457,6 +465,7 @@ $$\frac{3x + 1}{(x^2 + 1)(x^2 + 4)} = \frac{x + 1/3}{x^2 + 1} + \frac{-x - 1/3}{
 Use partial fractions to show that
 $\dfrac{2}{r(r+1)(r+2)} = \dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}$, then apply the method of
 differences.
+
 </details>
 
 <details>
@@ -469,6 +478,7 @@ This telescopes:
 $$\sum_{r=1}^{n}\left[\frac{1}{r(r+1)} - \frac{1}{(r+1)(r+2)}\right] = \frac{1}{1 \times 2} - \frac{1}{(n+1)(n+2)}$$
 
 $$= \frac{1}{2} - \frac{1}{(n+1)(n+2)}$$
+
 </details>
 
 <hr />
@@ -481,6 +491,7 @@ $\alpha\beta + \alpha\gamma + \beta\gamma$.
 <summary>Hint</summary>
 
 Use the relationships between roots and coefficients directly.
+
 </details>
 
 <details>
@@ -505,6 +516,7 @@ are $1, 1, 2$ (checking: sum = 4 ✓, product = 2 ≠ $-4$ ✗). The roots $-1, 
 product = $-6$ ✗.
 
 $p = -12$ and $q = 3S$ where $S$ requires more information about the roots.
+
 </details>
 
 <hr />
@@ -517,6 +529,7 @@ $p = -12$ and $q = 3S$ where $S$ requires more information about the roots.
 Use partial fractions:
 $\dfrac{1}{r(r+3)} = \dfrac{1}{3}\!\left(\dfrac{1}{r} - \dfrac{1}{r+3}\right)$. Three terms survive
 the telescoping.
+
 </details>
 
 <details>
@@ -528,6 +541,7 @@ The surviving terms are
 $\dfrac{1}{1} + \dfrac{1}{2} + \dfrac{1}{3} - \dfrac{1}{n+1} - \dfrac{1}{n+2} - \dfrac{1}{n+3}$.
 
 $$= \frac{1}{3}\left(\frac{11}{6} - \frac{1}{n+1} - \frac{1}{n+2} - \frac{1}{n+3}\right) = \frac{11}{18} - \frac{1}{3}\!\left(\frac{1}{n+1} + \frac{1}{n+2} + \frac{1}{n+3}\right)$$
+
 </details>
 
 <hr />
@@ -541,6 +555,7 @@ $\alpha\beta = 2$, find $a$ and $b$.
 <summary>Hint</summary>
 
 Use $\sum\alpha = -\dfrac{a}{1}$ and $\sum\alpha\beta = \dfrac{b}{1}$.
+
 </details>
 
 <details>
@@ -557,6 +572,7 @@ $= \alpha\beta + (\alpha + \beta)(\gamma + \delta) + \gamma\delta = 2 + (3)(-5) 
 We need $\gamma\delta$. Since we don't have $\gamma\delta$ directly, $b = -13 + \gamma\delta$.
 
 $a = 2$ and $b$ depends on $\gamma\delta$ (which requires further information to determine).
+
 </details>
 
 <hr />
@@ -568,6 +584,7 @@ for all $n \in \mathbb{Z}^+$.
 <summary>Hint</summary>
 
 Base case: $n = 1$. Inductive step: assume for $n = k$ and add the $(k+1)$-th term.
+
 </details>
 
 <details>
@@ -582,6 +599,7 @@ $$\sum_{r=1}^{k+1} r(r+1) = \frac{k(k+1)(k+2)}{3} + (k+1)(k+2)$$
 $$= \frac{(k+1)(k+2)[k + 3]}{3} = \frac{(k+1)(k+2)(k+3)}{3}$$
 
 ✓ $\square$
+
 </details>
 
 <hr />
@@ -592,6 +610,7 @@ $$= \frac{(k+1)(k+2)[k + 3]}{3} = \frac{(k+1)(k+2)(k+3)}{3}$$
 <summary>Hint</summary>
 
 Use the form $\dfrac{Ax + B}{x^2 + 2x + 3} + \dfrac{Cx + D}{(x^2 + 2x + 3)^2}$.
+
 </details>
 
 <details>
@@ -609,6 +628,7 @@ Comparing coefficients:
 - $x^0$: $3 + D = 2 \implies D = -1$
 
 $$\frac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2} = \frac{1}{x^2 + 2x + 3} + \frac{x - 1}{(x^2 + 2x + 3)^2}$$
+
 </details>
 
 <hr />
@@ -622,6 +642,7 @@ find the roots when $p = -6$.
 
 Substitute the root relationships into $\alpha + \beta + \gamma = -p$,
 $\alpha\beta + \alpha\gamma + \beta\gamma = q$, and $\alpha\beta\gamma = -r$.
+
 </details>
 
 <details>
@@ -638,6 +659,7 @@ When $p = -6$: $-6\alpha = -6 \implies \alpha = 1$.
 Then $q = 11$, $r = -6$, and the roots are $1, 2, 3$.
 
 Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
+
 </details>
 
 :::

@@ -11,15 +11,11 @@ slug: magnetic-fields
 
 ## Magnetic Fields
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
-:::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 **Definition.** A magnetic field is a region of space where a magnetic force acts on moving charges
 or magnetic materials.
@@ -38,8 +34,8 @@ $$\boxed{F = BIl\sin\theta}$$
 where $B$ is the magnetic flux density (T), $I$ is the current (A), $l$ is the length of wire in the
 field (m), and $\theta$ is the angle between the wire and the field direction.
 
-The force is maximum when the wire is perpendicular to the field ($\theta = 90^\circ$): $F = BIl$. The
-force is zero when the wire is parallel to the field ($\theta = 0^\circ$).
+The force is maximum when the wire is perpendicular to the field ($\theta = 90^\circ$): $F = BIl$.
+The force is zero when the wire is parallel to the field ($\theta = 0^\circ$).
 
 **Definition.** Fleming's left-hand rule relates the directions of force, magnetic field, and
 current: thumb (force), index (field), middle (current).
@@ -195,11 +191,9 @@ $$\boxed{\mathcal{E} = \mathcal{E}_0\sin(\omega t)}$$
 
 where the peak e.m.f. is $\mathcal{E}_0 = NBA\omega$.
 
-:::tip
-Exam Technique When asked about Lenz's law, always describe what the induced current does
+:::tip Exam Technique When asked about Lenz's law, always describe what the induced current does
 (creates a field to oppose the change) and identify the direction of the induced current using the
-right-hand grip rule.
-:::
+right-hand grip rule. :::
 
 ## 6. Biot-Savart Law and Ampere's Law
 
@@ -220,10 +214,8 @@ $$\mathbf{B} = \frac{\mu_0 I}{4\pi}\int \frac{d\mathbf{l} \times \hat{\mathbf{r}
 The direction of $d\mathbf{B}$ follows from the right-hand rule on
 $d\mathbf{l} \times \hat{\mathbf{r}}$.
 
-:::warning
-Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$, not
-$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction.
-:::
+:::warning Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$, not
+$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction. :::
 
 ### Field at the Centre of a Circular Loop
 
@@ -312,11 +304,9 @@ left-hand rule to wire 2 for the force direction:
 - **Same-direction currents** $\to$ attractive force
 - **Opposite-direction currents** $\to$ repulsive force
 
-:::tip
-Exam Technique To remember the direction: same-direction currents attract, opposite-direction
+:::tip Exam Technique To remember the direction: same-direction currents attract, opposite-direction
 currents repel. Think of it as two parallel beams of particles moving together (attract) versus
-head-on (repel).
-:::
+head-on (repel). :::
 
 ### Definition of the Ampere
 
@@ -365,11 +355,9 @@ that drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular t
 - $v = E/B$: straight line (velocity selector).
 - $v \gt E/B$: **prolate cycloid** (loops with self-intersections).
 
-:::warning
-Common Pitfall: the drift velocity $v_d = E/B$ is independent of the particle's initial
+:::warning Common Pitfall: the drift velocity $v_d = E/B$ is independent of the particle's initial
 velocity and charge. Even a stationary particle will drift at this speed. The drift direction is
-always $\mathbf{E} \times \mathbf{B}$, perpendicular to both fields.
-:::
+always $\mathbf{E} \times \mathbf{B}$, perpendicular to both fields. :::
 
 ### $\mathbf{E} \parallel \mathbf{B}$: Accelerating Helix
 
@@ -461,11 +449,9 @@ The time constant $\tau = L/R$ has the same physical meaning as $\tau = RC$ in c
 after one time constant, the current reaches $1 - e^{-1} \approx 63\%$ of its final value; after
 $5\tau$, it is within 1%.
 
-:::tip
-Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
+:::tip Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
 $RC\,dV_C/dt + V_C = V$. Both are first-order linear ODEs with exponential solutions. Use the same
-problem-solving framework for both.
-:::
+problem-solving framework for both. :::
 
 ### Transformers
 
@@ -822,7 +808,8 @@ m $= 6.53$ cm.
 $T = \frac{2\pi m}{Bq} = \frac{2\pi \times 1.67 \times 10^{-27}}{0.40 \times 1.60 \times 10^{-19}} = \frac{1.05 \times 10^{-26}}{6.4 \times 10^{-20}} = 1.64 \times 10^{-7}$
 s.
 
-$\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
+$\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$
+cm.
 
 <b>If you get this wrong, revise:</b>
 [Charged Particles in Crossed Fields](#8-charged-particles-in-crossed-fields)

@@ -45,12 +45,10 @@ Marxist-Leninist framework, viewed capitalist states as inherently imperialist a
 peaceful coexistence was at best a temporary tactical measure while the conditions for revolution
 matured.
 
-:::info
-For Paper 3 essays, the ideological dimension should not be treated as the sole cause of the
+:::info For Paper 3 essays, the ideological dimension should not be treated as the sole cause of the
 Cold War. Instead, it functioned as a lens through which both sides interpreted each other's
 actions, often amplifying mistrust and escalating tensions beyond what objective strategic interests
-alone would have produced.
-:::
+alone would have produced. :::
 
 The ideological clash manifested in diametrically opposed visions of the post-war international
 order. The United States favoured an open, multilateral economic system based on free trade and
@@ -137,15 +135,13 @@ American foreign policy from peacetime isolationism to permanent global engageme
 States now assumed the role of the principal defender of the "free world" against communist
 expansion -- a commitment that would define its foreign policy for the next four decades.
 
-:::note
-George F. Kennan's "Long Telegram" (1946) and his subsequent article published under the
+:::note George F. Kennan's "Long Telegram" (1946) and his subsequent article published under the
 pseudonym "X" in _Foreign Affairs_ (1947) provided the intellectual framework for containment.
 Kennan argued that Soviet behaviour was driven by a combination of Marxist-Leninist ideology and
 traditional Russian insecurity, and that the Soviet threat could be managed through "firm and
 vigilant containment of Russian expansive tendencies." Kennan later argued that he had advocated
 primarily for political and economic containment, not the militarised version that American policy
-ultimately adopted.
-:::
+ultimately adopted. :::
 
 ### 1.4 The Marshall Plan (1947)
 
@@ -1062,8 +1058,7 @@ multi-causal phenomenon that cannot be adequately explained by any single interp
 They will also recognise that historical interpretations are themselves products of their time and
 are shaped by the political and intellectual contexts in which they are produced.
 
-:::note
-When evaluating historiography in essays, avoid the trap of simply listing the three schools
+:::note When evaluating historiography in essays, avoid the trap of simply listing the three schools
 one after another. Instead, integrate historiographical analysis into your argument, using it to
 support or challenge specific points. The best essays will demonstrate that you understand not only
 what each school argues but why it argues it -- and what evidence supports or undermines its claims.

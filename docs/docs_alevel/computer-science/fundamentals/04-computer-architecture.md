@@ -50,11 +50,9 @@ its own bus.
 | Self-modifying code | Possible (in theory)      | Not possible                          |
 | Modern usage        | General-purpose computers | DSPs, microcontrollers, cache systems |
 
-:::info
-Board-specific Modern CPUs use a **modified Harvard architecture** at the cache level: L1
+:::info Board-specific Modern CPUs use a **modified Harvard architecture** at the cache level: L1
 cache is split into instruction cache and data cache (Harvard), while main memory is unified (Von
-Neumann).
-:::
+Neumann). :::
 
 <hr />
 
@@ -92,13 +90,11 @@ The CU orchestrates the fetch-decode-execute cycle by generating control signals
 | **CIR**  | Current Instruction Register | Holds the instruction currently being decoded      |
 | **IR**   | Instruction Register         | Synonym for CIR (board-dependent naming)           |
 
-:::info
-Board-specific
+:::info Board-specific
 
 - **AQA** uses: PC, MAR, MDR, ACC, CIR
 - **CIE** uses: PC, MAR, MDR, ACC, IR, B (B register as temporary)
-- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers
-:::
+- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers :::
 
 **General Purpose Registers (GPRs):** Additional registers for temporary storage during computation.
 The number varies by architecture (e.g., ARM has 16, x86-64 has 16).
@@ -173,7 +169,7 @@ instruction.
 3. **Execute:**
    - ACC ← ACC + 5
    - Set flags in status register (zero, negative, carry, overflow)
-</details>
+   </details>
 
 <hr />
 
@@ -372,11 +368,9 @@ cycles. Emphasis on hardware complexity.
 | Code density       | Lower (more instructions) | Higher (fewer instructions)   |
 | Power consumption  | Lower                     | Higher                        |
 
-:::info
-Board-specific All A Level boards require understanding of RISC vs CISC principles. ARM
+:::info Board-specific All A Level boards require understanding of RISC vs CISC principles. ARM
 (used in smartphones, Raspberry Pi) is RISC. Intel/AMD processors are CISC (but use RISC-like
-internal micro-operations).
-:::
+internal micro-operations). :::
 
 <hr />
 
@@ -389,6 +383,7 @@ memory?
 <summary>Hint</summary>
 
 Each address identifies one location, and each location holds one data bus width.
+
 </details>
 
 <details>
@@ -399,6 +394,7 @@ $2^{24} = 16,777,216$ locations
 Each location holds 16 bits = 2 bytes.
 
 Total addressable memory: $16,777,216 \times 2 = 33,554,432$ bytes = 32 MiB.
+
 </details>
 
 **Problem 2.** Describe what happens during the fetch phase of the fetch-decode-execute cycle.
@@ -408,6 +404,7 @@ Include all register transfers.
 <summary>Hint</summary>
 
 Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.
+
 </details>
 
 <details>
@@ -419,7 +416,7 @@ Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.
    via the data bus.
 3. The contents of the MDR are copied to the Current Instruction Register (CIR).
 4. The Program Counter is incremented by 1 (or by the instruction length, for variable-length ISAs)
-   to point to the next instruction.
+to point to the next instruction.
 </details>
 
 **Problem 3.** Explain how temporal and spatial locality contribute to cache effectiveness.
@@ -428,6 +425,7 @@ Four steps: MAR ← PC, read from memory, CIR ← MDR, PC ← PC + 1.
 <summary>Hint</summary>
 
 Give concrete examples of code patterns that exhibit each type of locality.
+
 </details>
 
 <details>
@@ -440,6 +438,7 @@ Similarly, the instruction bytes of the loop body are fetched from cache after t
 **Spatial locality:** When accessing `array[i]`, the cache loads a block (cache line) containing
 `array[i]` and several adjacent elements. Subsequent accesses to `array[i+1]`, `array[i+2]`, etc.,
 are cache hits because they are in the same cache line.
+
 </details>
 
 **Problem 4.** A system uses 32-bit virtual addresses with 4 KiB pages. How many entries are in the
@@ -449,6 +448,7 @@ page table? What is the size of each entry if physical addresses are 36 bits?
 <summary>Hint</summary>
 
 Number of virtual pages = $2^{32}/4096$. Each PTE stores a frame number and flags.
+
 </details>
 
 <details>
@@ -461,6 +461,7 @@ Physical frame number bits: $36 - 12 = 24$ bits
 PTE size: 24 bits (frame number) + flags (typically 8–12 bits) ≈ 4 bytes per entry.
 
 Total page table size: $1,048,576 \times 4 = 4$ MiB per process.
+
 </details>
 
 **Problem 5.** Explain why a 5-stage pipeline (fetch, decode, execute, memory, writeback) processing
@@ -470,6 +471,7 @@ Total page table size: $1,048,576 \times 4 = 4$ MiB per process.
 <summary>Hint</summary>
 
 After the pipeline fills, one instruction completes per cycle.
+
 </details>
 
 <details>
@@ -481,6 +483,7 @@ instruction completes per cycle. The last instruction finishes at cycle $5 + 99 
 Total: $5 + (100 - 1) = 104$ cycles, compared to $100 \times 5 = 500$ without pipelining.
 
 Speedup: $500/104 \approx 4.81\times$ (approaching the theoretical maximum of $5\times$).
+
 </details>
 
 **Problem 6.** Give an example of a data hazard in a pipeline and explain how forwarding can resolve
@@ -490,6 +493,7 @@ it.
 <summary>Hint</summary>
 
 Consider two consecutive instructions where the second uses the result of the first.
+
 </details>
 
 <details>
@@ -506,6 +510,7 @@ The ADD instruction produces R1 in the "writeback" stage, but the SUB instructio
 **Forwarding solution:** The result of ADD is available after the "execute" stage (as a computed
 value). Instead of waiting for writeback, the result is forwarded directly from the execute stage
 output to the decode stage input of SUB, eliminating the stall.
+
 </details>
 
 **Problem 7.** Compare Von Neumann and Harvard architectures. Why is the modified Harvard
@@ -515,6 +520,7 @@ architecture used in modern CPUs?
 <summary>Hint</summary>
 
 Consider bus contention and the practical need for unified main memory.
+
 </details>
 
 <details>
@@ -539,6 +545,7 @@ blocks. How many bits are needed for the tag, line number, and offset fields?
 <summary>Hint</summary>
 
 Offset = log₂(block size). Line = log₂(cache lines). Tag = remaining bits from block address.
+
 </details>
 
 <details>
@@ -551,6 +558,7 @@ Tag: $16 - 6 = 10$ bits
 
 Each cache line stores: 16 bytes (data) + 10 bits (tag) + 1 bit (valid) + 1 bit (dirty) ≈ 18 bytes
 total.
+
 </details>
 
 **Problem 9.** Explain the difference between a page fault and a TLB miss. Which is more expensive?
@@ -559,6 +567,7 @@ total.
 <summary>Hint</summary>
 
 One involves disk I/O; the other involves a slower but still RAM-speed lookup.
+
 </details>
 
 <details>
@@ -572,6 +581,7 @@ page table in main memory (a few extra memory accesses). Cost: ~10–100 cycles.
 ~100,000–10,000,000 cycles (disk access is ~10ms, while a CPU cycle is ~0.3ns).
 
 A page fault is orders of magnitude more expensive than a TLB miss.
+
 </details>
 
 **Problem 10.** A RISC processor has 32 registers, each 32 bits wide. How many bits are needed to
@@ -582,6 +592,7 @@ opcode field is 8 bits?
 <summary>Hint</summary>
 
 Register field size = log₂(32). Total instruction size = opcode + 3 register fields.
+
 </details>
 
 <details>
@@ -592,6 +603,7 @@ Register operand: $\log_2(32) = 5$ bits
 Instruction format: 8 (opcode) + 5 + 5 + 5 = 23 bits
 
 With 8-bit opcode: $2^8 = 256$ possible opcodes.
+
 </details>
 
 :::

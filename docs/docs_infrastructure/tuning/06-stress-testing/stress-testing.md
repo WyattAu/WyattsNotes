@@ -124,11 +124,9 @@ sudo apt install intel-mkl
 ./linpack_xeon64
 ```
 
-:::warning
-Linpack generates extreme power consumption — often exceeding the CPU's rated TDP by
+:::warning Linpack generates extreme power consumption — often exceeding the CPU's rated TDP by
 30–50%. This can push VRMs and PSU beyond their rated capacity. Only use Linpack for brief thermal
-profiling (5–10 minutes), not for extended stability testing.
-:::
+profiling (5–10 minutes), not for extended stability testing. :::
 
 ---
 
@@ -282,10 +280,8 @@ sudo badblocks -wsv /dev/sdX
 sudo badblocks -sv /dev/sdX
 ```
 
-:::warning
-`badblocks -w` is destructive — it overwrites all data on the device. Only use on
-unpartitioned drives or drives whose data you have backed up.
-:::
+:::warning `badblocks -w` is destructive — it overwrites all data on the device. Only use on
+unpartitioned drives or drives whose data you have backed up. :::
 
 ### CrystalDiskMark
 
@@ -620,13 +616,13 @@ Sample Intel Optimized LINPACK Benchmark input file
 
 y-cruncher supports multiple computation modes:
 
-| Mode | Stress Type | Duration | Best For |
-|------|-----------|----------|----------|
-| Pi (all) | Mixed compute | 15–60 min | General stability |
-| Pi - 25M | Light compute | 5 min | Quick smoke test |
-| Pi - 2.5B | Heavy compute | 30–60 min | Extended stability |
-| Benchmark | All modes | 10 min | Performance baseline |
-| Stress Test | AVX/FMA intensive | 15 min | Maximum heat |
+| Mode        | Stress Type       | Duration  | Best For             |
+| ----------- | ----------------- | --------- | -------------------- |
+| Pi (all)    | Mixed compute     | 15–60 min | General stability    |
+| Pi - 25M    | Light compute     | 5 min     | Quick smoke test     |
+| Pi - 2.5B   | Heavy compute     | 30–60 min | Extended stability   |
+| Benchmark   | All modes         | 10 min    | Performance baseline |
+| Stress Test | AVX/FMA intensive | 15 min    | Maximum heat         |
 
 ## GPU Stress Test Advanced Configurations
 
@@ -636,8 +632,8 @@ FurMark is a GPU power virus. Configure it for thermal verification:
 
 - **Resolution:** Use your native resolution for realistic thermal loads.
 - **Anti-aliasing:** 8x MSAA increases GPU load without changing the fundamental stress pattern.
-- **Time:** 15 minutes is sufficient for thermal verification. Running longer provides no
-  additional benefit and risks premature wear on the GPU's VRMs.
+- **Time:** 15 minutes is sufficient for thermal verification. Running longer provides no additional
+  benefit and risks premature wear on the GPU's VRMs.
 - **Post-processing:** Enable post-processing shaders to increase VRAM usage.
 
 ### 3DMark Stress Test Configuration
@@ -739,8 +735,8 @@ For extended stress tests, configure HWiNFO64 for comprehensive logging:
 4. Select all relevant sensors:
    - CPU: Temperature (all cores), Vcore, VID, Package Power, Power Limits, Multiplier, Core
      Utilization
-   - GPU: Temperature (edge, junction, memory), Power, Core Clock, Memory Clock, Fan Speed,
-     Hotspot Temperature
+   - GPU: Temperature (edge, junction, memory), Power, Core Clock, Memory Clock, Fan Speed, Hotspot
+     Temperature
    - Memory: Temperature, DRAM Voltage
    - Motherboard: VRM Temperature, System Temperature, +12V, +5V, +3.3V
    - Storage: Temperature, Available Spare, Media Wear Indicator
@@ -810,14 +806,14 @@ done
 
 ### Windows vs. Linux Stress Testing
 
-| Aspect | Windows | Linux |
-|--------|---------|-------|
-| CPU stress | Prime95, OCCT, AIDA64 | stress-ng, stress, mprime |
-| GPU stress | FurMark, 3DMark, Superposition | gpu_burn, glmark2 |
-| Memory stress | TestMem5, HCI MemTest, Karhu | MemTest86 (bootable), stress-ng --vm |
-| Storage stress | CrystalDiskMark, ATTO | fio, dd, badblocks |
-| Monitoring | HWiNFO64, MSI Afterburner OSD | turbostat, sensors, htop, iostat |
-| WHEA errors | HWiNFO64, Windows Event Viewer | mcelog (if available), dmesg |
+| Aspect         | Windows                        | Linux                                |
+| -------------- | ------------------------------ | ------------------------------------ |
+| CPU stress     | Prime95, OCCT, AIDA64          | stress-ng, stress, mprime            |
+| GPU stress     | FurMark, 3DMark, Superposition | gpu_burn, glmark2                    |
+| Memory stress  | TestMem5, HCI MemTest, Karhu   | MemTest86 (bootable), stress-ng --vm |
+| Storage stress | CrystalDiskMark, ATTO          | fio, dd, badblocks                   |
+| Monitoring     | HWiNFO64, MSI Afterburner OSD  | turbostat, sensors, htop, iostat     |
+| WHEA errors    | HWiNFO64, Windows Event Viewer | mcelog (if available), dmesg         |
 
 ### Bootable Stress Testing
 

@@ -26,11 +26,9 @@ determined.
 | OCR (A)    | Paper 2 | Projectiles on inclined planes                 |
 | CIE (9231) | M2      | Full coverage including inclined planes        |
 
-:::info
-In projectile motion, air resistance is always neglected unless stated otherwise. The only
+:::info In projectile motion, air resistance is always neglected unless stated otherwise. The only
 acceleration is $g = 9.8\,\mathrm{m s}^{-2}$ acting vertically downward. Take care with sign
-conventions — define upward as positive at the start and be consistent.
-:::
+conventions — define upward as positive at the start and be consistent. :::
 
 <hr />
 
@@ -130,14 +128,12 @@ $$R = V\cos\theta \cdot T = V\cos\theta \cdot \frac{2V\sin\theta}{g}$$
 
 $$\boxed{R = \frac{V^2\sin 2\theta}{g}}$$
 
-This is maximised when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$, giving $R_{\max} = \dfrac{V^2}{g}$.
-$\blacksquare$
+This is maximised when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$, giving
+$R_{\max} = \dfrac{V^2}{g}$. $\blacksquare$
 
-:::info
-For a given speed $V$, complementary angles give the same range: $\theta$ and $90° - \theta$
+:::info For a given speed $V$, complementary angles give the same range: $\theta$ and $90° - \theta$
 both produce $R = \dfrac{V^2\sin 2\theta}{g}$. However, the trajectories are different — the steeper
-angle gives a higher but shorter arc.
-:::
+angle gives a higher but shorter arc. :::
 
 <hr />
 
@@ -496,13 +492,14 @@ i.e.:
 
 $$\tan\theta = \frac{V\sin\theta}{V\cos\theta} = \frac{V\sqrt{1 - \frac{V^2}{V^2 + 2gh}}}{\frac{V^2}{\sqrt{V^2 + 2gh}}} = \frac{V}{\sqrt{V^2 + 2gh}}$$
 
-When $h = 0$, this reduces to $\tan\theta = 1$, i.e., $\theta = 45^\circ$ as expected. $\blacksquare$
+When $h = 0$, this reduces to $\tan\theta = 1$, i.e., $\theta = 45^\circ$ as expected.
+$\blacksquare$
 
 ### 7.5 Worked example: projectile from a cliff
 
-**Example.** A stone is thrown from a cliff $50\,\mathrm{m}$ high at $15\,\mathrm{m s}^{-1}$ at $30^\circ$
-above the horizontal. Find the time of flight, the horizontal range, the maximum height above
-ground, and the speed and direction of impact.
+**Example.** A stone is thrown from a cliff $50\,\mathrm{m}$ high at $15\,\mathrm{m s}^{-1}$ at
+$30^\circ$ above the horizontal. Find the time of flight, the horizontal range, the maximum height
+above ground, and the speed and direction of impact.
 
 **Time of flight:**
 
@@ -530,8 +527,8 @@ $= \sqrt{12.99^2 + 32.19^2} = \sqrt{168.7 + 1036.2} = \sqrt{1204.9} \approx 34.7
 
 ## 8. Worked Example: Range on an Inclined Plane
 
-**Example.** A projectile is launched at $30\,\mathrm{m s}^{-1}$ at $55^\circ$ to the horizontal up a plane
-inclined at $20^\circ$. Find the range on the plane and the time of flight.
+**Example.** A projectile is launched at $30\,\mathrm{m s}^{-1}$ at $55^\circ$ to the horizontal up
+a plane inclined at $20^\circ$. Find the range on the plane and the time of flight.
 
 Using the range formula:
 
@@ -654,8 +651,9 @@ From Section 7.4: $\theta = \arctan\!\left(\dfrac{V}{\sqrt{V^2 + 2gh}}\right)$.
 
 $\theta = \arctan\!\left(\dfrac{20}{\sqrt{400 + 196}}\right) = \arctan\!\left(\dfrac{20}{\sqrt{596}}\right) = \arctan\!\left(\dfrac{20}{24.41}\right) = \arctan(0.819) \approx 39.3^\circ$.
 
-This is less than $45^\circ$ because the projectile benefits from the extra "free" height gained from the
-elevated launch point, so a flatter trajectory maximises the horizontal component of velocity.
+This is less than $45^\circ$ because the projectile benefits from the extra "free" height gained
+from the elevated launch point, so a flatter trajectory maximises the horizontal component of
+velocity.
 
 </details>
 

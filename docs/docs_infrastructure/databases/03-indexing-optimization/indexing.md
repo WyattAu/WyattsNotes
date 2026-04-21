@@ -447,8 +447,8 @@ Bitmap Scan (sequential I/O):
 **Merge Join:**
 
 - Both inputs must be sorted on the join key; merge in a single pass
-- Cost: $O(N_{\mathrm{outer}} \log N_{\mathrm{outer}} + N_{\mathrm{inner}} \log N_{\mathrm{inner}})$ for
-  sorting, $O(N_{\mathrm{outer}} + N_{\mathrm{inner}})$ for merge
+- Cost: $O(N_{\mathrm{outer}} \log N_{\mathrm{outer}} + N_{\mathrm{inner}} \log N_{\mathrm{inner}})$
+  for sorting, $O(N_{\mathrm{outer}} + N_{\mathrm{inner}})$ for merge
 - Best for: pre-sorted inputs, large result sets, range joins
 
 ### Understanding Cost Estimates

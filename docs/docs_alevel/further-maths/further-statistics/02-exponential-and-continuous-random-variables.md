@@ -25,11 +25,9 @@ interval.
 | OCR (A)    | Paper 2 | Continuous RVs and exponential                       |
 | CIE (9231) | S2      | Both continuous RVs and exponential covered          |
 
-:::info
-The exponential distribution is the continuous counterpart to the geometric distribution.
+:::info The exponential distribution is the continuous counterpart to the geometric distribution.
 Both are memoryless. The Poisson process links all three distributions: Poisson counts events,
-exponential measures inter-arrival times, and geometric counts trials until the first event.
-:::
+exponential measures inter-arrival times, and geometric counts trials until the first event. :::
 
 <hr />
 
@@ -46,10 +44,8 @@ Probabilities are found by integration:
 
 $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 
-:::warning
-For a continuous random variable, $P(X = a) = 0$ for any single value $a$. This is why
-$P(a \leq X \leq b) = P(a < X < b)$ — the inequalities at individual points do not matter.
-:::
+:::warning For a continuous random variable, $P(X = a) = 0$ for any single value $a$. This is why
+$P(a \leq X \leq b) = P(a < X < b)$ — the inequalities at individual points do not matter. :::
 
 ### 1.2 Cumulative distribution function
 
@@ -178,12 +174,10 @@ $$
 
 This uses $P(X > x) = 1 - F(x) = e^{-\lambda x}$.
 
-:::info
-The memoryless property has important practical implications. If a component with an
+:::info The memoryless property has important practical implications. If a component with an
 exponentially distributed lifetime has been working for $s$ hours, the remaining lifetime has the
 same distribution as a brand new component. This means exponential lifetimes imply no "wear out"
-effect — which is why it is more appropriate for electronic components than mechanical ones.
-:::
+effect — which is why it is more appropriate for electronic components than mechanical ones. :::
 
 ### 2.6 Link to Poisson processes
 
@@ -248,8 +242,8 @@ For $x < 0$: $F(x) = 0$. For $x > 1$: $F(x) = 1$.
 
 ## 4. Hypothesis Testing with the Exponential Distribution
 
-**Example.** The lifetime of a component is modelled by $X \sim \mathrm{Exp}(\lambda)$. A sample of 10
-components gives a mean lifetime of 420 hours. Test at the 5% level whether $\lambda = 0.005$
+**Example.** The lifetime of a component is modelled by $X \sim \mathrm{Exp}(\lambda)$. A sample of
+10 components gives a mean lifetime of 420 hours. Test at the 5% level whether $\lambda = 0.005$
 against $H_1: \lambda \neq 0.005$.
 
 Under $H_0$: $E(X) = 1/\lambda = 200$ hours. Since $n$ is large, use the approximate normal
@@ -527,8 +521,8 @@ $\blacksquare$
 
 ### 6.2 Sum of inter-arrival times
 
-If $T_1, T_2, \ldots, T_n$ are $n$ independent inter-arrival times, each $\sim \mathrm{Exp}(\lambda)$,
-then the total time until the $n$-th event is:
+If $T_1, T_2, \ldots, T_n$ are $n$ independent inter-arrival times, each
+$\sim \mathrm{Exp}(\lambda)$, then the total time until the $n$-th event is:
 
 $$S_n = T_1 + T_2 + \cdots + T_n \sim \mathrm{Gamma}(n, \lambda)$$
 
@@ -640,8 +634,8 @@ formalism).
 
 ### Exponential rate vs mean
 
-$X \sim \mathrm{Exp}(\lambda)$ has mean $1/\lambda$. A common error is to confuse $\lambda$ (the rate)
-with the mean. If the mean lifetime is 200 hours, then $\lambda = 1/200 = 0.005$, not
+$X \sim \mathrm{Exp}(\lambda)$ has mean $1/\lambda$. A common error is to confuse $\lambda$ (the
+rate) with the mean. If the mean lifetime is 200 hours, then $\lambda = 1/200 = 0.005$, not
 $\lambda = 200$.
 
 Check: a larger $\lambda$ means shorter lifetimes on average (events happen more frequently).

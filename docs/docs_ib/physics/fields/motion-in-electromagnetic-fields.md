@@ -237,10 +237,10 @@ direction of the force.
 
 ## Helical Motion
 
-When a charged particle enters a magnetic field at an angle $\theta$ (not $90^\circ$) to the field, the
-velocity component parallel to $\bm{B}$ ($v_\parallel = v \cos\theta$) is unaffected by the magnetic
-force. Only the perpendicular component ($v_\perp = v \sin\theta$) causes circular motion. The
-result is a **helical** (spiral) path.
+When a charged particle enters a magnetic field at an angle $\theta$ (not $90^\circ$) to the field,
+the velocity component parallel to $\bm{B}$ ($v_\parallel = v \cos\theta$) is unaffected by the
+magnetic force. Only the perpendicular component ($v_\perp = v \sin\theta$) causes circular motion.
+The result is a **helical** (spiral) path.
 
 - The radius of the helix: $r = \frac{mv_\perp}{qB} = \frac{mv \sin\theta}{qB}$
 - The pitch (distance along the field per revolution):
@@ -553,8 +553,8 @@ simplified values.
 ## Common Pitfalls
 
 1. **Forgetting the angle in $F = qvB\sin\theta$.** If the question does not specify the angle, it
-   is usually $90^\circ$, making $\sin\theta = 1$. However, if the velocity has a component parallel to
-   $\bm{B}$, use $\sin\theta$ with the perpendicular component only.
+   is usually $90^\circ$, making $\sin\theta = 1$. However, if the velocity has a component parallel
+   to $\bm{B}$, use $\sin\theta$ with the perpendicular component only.
 
 2. **Sign of electron charge.** The Lorentz force on an electron is in the **opposite** direction to
    $\bm{v} \times \bm{B}$. Use the right-hand rule and then reverse the result, or use the left hand

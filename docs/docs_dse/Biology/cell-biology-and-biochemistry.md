@@ -144,11 +144,9 @@ The cell membrane (plasma membrane) is a phospholipid bilayer with embedded prot
 - Cholesterol: regulates membrane fluidity
 - Glycolipids and glycoproteins: involved in cell recognition
 
-:::info
-The cell membrane is selectively permeable: it allows some substances to pass through freely
-but restricts others. Small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$) diffuse through
-easily, while large or charged molecules require transport proteins.
-:::
+:::info The cell membrane is selectively permeable: it allows some substances to pass through freely
+but restricts others. Small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$) diffuse
+through easily, while large or charged molecules require transport proteins. :::
 
 ---
 
@@ -161,7 +159,8 @@ easily, while large or charged molecules require transport proteins.
 Movement of molecules from a region of higher concentration to a region of lower concentration,
 directly through the phospholipid bilayer.
 
-- Only for small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$, lipid-soluble substances)
+- Only for small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$, lipid-soluble
+  substances)
 - Net movement stops at equilibrium (dynamic equilibrium)
 - Rate depends on: concentration gradient, temperature, surface area, distance
 
@@ -169,8 +168,8 @@ directly through the phospholipid bilayer.
 
 Movement of molecules down their concentration gradient through transport proteins.
 
-- **Channel proteins:** Form hydrophilic pores for specific ions (e.g., $\mathrm{Na}^+$, $\mathrm{K}^+$,
-  $\mathrm{Ca}^{2+}$)
+- **Channel proteins:** Form hydrophilic pores for specific ions (e.g., $\mathrm{Na}^+$,
+  $\mathrm{K}^+$, $\mathrm{Ca}^{2+}$)
 - **Carrier proteins:** Bind to specific molecules, undergo conformational change, and release on
   the other side
 - Used for larger or polar molecules (e.g., glucose, amino acids, ions)
@@ -204,8 +203,8 @@ $\Psi = 0 \mathrm{ kPa}$. Adding solutes decreases water potential (makes it mor
 Movement of molecules against their concentration gradient (from low to high concentration),
 requiring ATP and carrier proteins.
 
-- Specific to certain molecules (e.g., $\mathrm{Na}^+/\mathrm{K}^+$ pump, absorption of minerals by root
-  hair cells)
+- Specific to certain molecules (e.g., $\mathrm{Na}^+/\mathrm{K}^+$ pump, absorption of minerals by
+  root hair cells)
 - Can become saturated at high concentrations (carrier proteins are limiting)
 - Inhibited by metabolic poisons (e.g., cyanide) that block ATP production
 
@@ -385,22 +384,21 @@ fit. This lowers the activation energy of the reaction.
 
 - Increasing enzyme concentration increases the rate (provided substrate is not limiting)
 
-:::warning
-Denaturation is **irreversible**. Once an enzyme is denatured by heat or extreme pH, it
+:::warning Denaturation is **irreversible**. Once an enzyme is denatured by heat or extreme pH, it
 cannot regain its function. This is different from a temporary decrease in activity at sub-optimal
-conditions.
-:::
+conditions. :::
 
 ### Worked Example 1
 
-An enzyme has an optimum temperature of $40^\circ\mathrm{C}$. At $20^\circ\mathrm{C}$, the reaction rate
-is $0.3$ units/s. At $40^\circ\mathrm{C}$, the rate is $1.2$ units/s. Calculate the Q10 (temperature
-coefficient).
+An enzyme has an optimum temperature of $40^\circ\mathrm{C}$. At $20^\circ\mathrm{C}$, the reaction
+rate is $0.3$ units/s. At $40^\circ\mathrm{C}$, the rate is $1.2$ units/s. Calculate the Q10
+(temperature coefficient).
 
 $$Q_{10} = \frac{\mathrm{Rate at }(T + 10)}{\mathrm{Rate at } T}$$
 
-Between $20^\circ\mathrm{C}$ and $30^\circ\mathrm{C}$: $Q_{10}$ might be approximately 2 (typical for
-biological reactions). Without the $30^\circ\mathrm{C}$ data, we can estimate the overall effect:
+Between $20^\circ\mathrm{C}$ and $30^\circ\mathrm{C}$: $Q_{10}$ might be approximately 2 (typical
+for biological reactions). Without the $30^\circ\mathrm{C}$ data, we can estimate the overall
+effect:
 
 From $20^\circ\mathrm{C}$ to $40^\circ\mathrm{C}$ (a $20^\circ\mathrm{C}$ increase):
 
@@ -467,10 +465,8 @@ For each glucose molecule (two turns of the cycle):
 | Oxidative phosphorylation (from FADH$_2$) | 4                       |
 | **Total**                                 | **approximately 36-38** |
 
-:::info
-The actual ATP yield may be less than 38 due to the cost of transporting NADH from
-glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 ATP per glucose.
-:::
+:::info The actual ATP yield may be less than 38 due to the cost of transporting NADH from
+glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 ATP per glucose. :::
 
 ---
 
@@ -479,7 +475,8 @@ glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 A
 ### Light-Dependent Reactions (Thylakoid Membrane)
 
 1. Light energy is absorbed by chlorophyll in Photosystem II
-2. Water is split (photolysis): $\mathrm{H}_2\mathrm{O} \to 2\mathrm{H}^+ + 2e^- + \frac{1}{2}\mathrm{O}_2$
+2. Water is split (photolysis):
+   $\mathrm{H}_2\mathrm{O} \to 2\mathrm{H}^+ + 2e^- + \frac{1}{2}\mathrm{O}_2$
 3. Electrons pass through the electron transport chain, generating ATP
 4. Light is absorbed by Photosystem I; electrons are re-energised
 5. Electrons reduce NADP$^+$ to NADPH
@@ -494,16 +491,16 @@ Products: ATP, NADPH, $\mathrm{O}_2$
 4. Some TP is used to make glucose and other organic compounds
 5. Most TP is used to regenerate RuBP (uses ATP)
 
-For every 3 $\mathrm{CO}_2$ molecules fixed: 1 molecule of triose phosphate (3C) is produced. It takes
-6 $\mathrm{CO}_2$ molecules to produce 1 molecule of glucose (6C).
+For every 3 $\mathrm{CO}_2$ molecules fixed: 1 molecule of triose phosphate (3C) is produced. It
+takes 6 $\mathrm{CO}_2$ molecules to produce 1 molecule of glucose (6C).
 
 ### Limiting Factors in Photosynthesis
 
-| Factor                      | Effect                                                             |
-| --------------------------- | ------------------------------------------------------------------ |
-| Light intensity             | Increases rate up to a plateau (light saturation point)            |
+| Factor                        | Effect                                                             |
+| ----------------------------- | ------------------------------------------------------------------ |
+| Light intensity               | Increases rate up to a plateau (light saturation point)            |
 | $\mathrm{CO}_2$ concentration | Increases rate up to a plateau                                     |
-| Temperature                 | Increases rate up to optimum, then decreases (enzyme denaturation) |
+| Temperature                   | Increases rate up to optimum, then decreases (enzyme denaturation) |
 
 ---
 
@@ -547,21 +544,21 @@ vesicle formation (endocytosis/exocytosis).
 **Question 2:** Explain the effect of increasing temperature on enzyme activity from
 $0^\circ\mathrm{C}$ to $60^\circ\mathrm{C}$.
 
-From $0^\circ\mathrm{C}$ to the optimum (approximately $37-40^\circ\mathrm{C}$): increasing temperature
-increases kinetic energy, leading to more frequent collisions between enzyme and substrate
-molecules, increasing the rate of reaction. Beyond the optimum temperature, the increased kinetic
-energy breaks the bonds maintaining the tertiary structure of the enzyme, causing the active site to
-change shape (denaturation). The substrate can no longer fit, and the reaction rate decreases
-sharply.
+From $0^\circ\mathrm{C}$ to the optimum (approximately $37-40^\circ\mathrm{C}$): increasing
+temperature increases kinetic energy, leading to more frequent collisions between enzyme and
+substrate molecules, increasing the rate of reaction. Beyond the optimum temperature, the increased
+kinetic energy breaks the bonds maintaining the tertiary structure of the enzyme, causing the active
+site to change shape (denaturation). The substrate can no longer fit, and the reaction rate
+decreases sharply.
 
 **Question 3:** Compare and contrast aerobic and anaerobic respiration.
 
 Similarities: Both begin with glycolysis; both produce ATP.
 
 Differences: Aerobic respiration requires oxygen and occurs in the mitochondria, producing
-approximately 36-38 ATP per glucose with $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$ as by-products.
-Anaerobic respiration occurs without oxygen, only in the cytoplasm, producing 2 ATP per glucose. In
-animals, it produces lactate; in yeast, it produces ethanol and $\mathrm{CO}_2$.
+approximately 36-38 ATP per glucose with $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$ as
+by-products. Anaerobic respiration occurs without oxygen, only in the cytoplasm, producing 2 ATP per
+glucose. In animals, it produces lactate; in yeast, it produces ethanol and $\mathrm{CO}_2$.
 
 </details>
 
@@ -846,11 +843,9 @@ When a ligand binds to a cell-surface receptor, it triggers a cascade of intrace
 3. **Cellular response:** The cell changes its activity (e.g., gene expression, metabolism,
    secretion)
 
-:::info
-Second messengers greatly amplify the signal. One receptor activation can produce many
+:::info Second messengers greatly amplify the signal. One receptor activation can produce many
 second messenger molecules, each of which can activate many enzyme molecules, creating a large
-response from a small stimulus.
-:::
+response from a small stimulus. :::
 
 ---
 
@@ -980,8 +975,8 @@ Where:
 
 ### Worked Example 4 (Water Potential)
 
-Calculate the water potential of a $0.3 \mathrm{ mol/dm}^3$ sucrose solution at $25^\circ\mathrm{C}$.
-($i = 1$ for sucrose)
+Calculate the water potential of a $0.3 \mathrm{ mol/dm}^3$ sucrose solution at
+$25^\circ\mathrm{C}$. ($i = 1$ for sucrose)
 
 $$\Psi_s = -iCRT = -(1)(0.3)(8.314)(298) = -743.3 \mathrm{ kPa}$$
 

@@ -194,7 +194,8 @@ $$
 
 A disease affects 1% of a population. A test has 99% sensitivity
 ($P(\mathrm{positive}|\mathrm{disease}) = 0.99$) and 95% specificity
-($P(\mathrm{negative}|\mathrm{no disease}) = 0.95$). What is $P(\mathrm{disease}|\mathrm{positive})$?
+($P(\mathrm{negative}|\mathrm{no disease}) = 0.95$). What is
+$P(\mathrm{disease}|\mathrm{positive})$?
 
 $$
 P(\mathrm{positive}) = 0.01 \times 0.99 + 0.99 \times 0.05 = 0.0099 + 0.0495 = 0.0594
@@ -651,9 +652,9 @@ Since $f(x) = \dfrac{3x^2}{8}$ is increasing on $[0, 2]$, the mode is $x = 2$.
 ## Summary
 
 | Distribution | Notation           | $E(X)$ | $\mathrm{Var}(X)$ |
-| ------------ | ------------------ | ------ | --------------- |
-| Binomial     | $B(n, p)$          | $np$   | $np(1-p)$       |
-| Normal       | $N(\mu, \sigma^2)$ | $\mu$  | $\sigma^2$      |
+| ------------ | ------------------ | ------ | ----------------- |
+| Binomial     | $B(n, p)$          | $np$   | $np(1-p)$         |
+| Normal       | $N(\mu, \sigma^2)$ | $\mu$  | $\sigma^2$        |
 
 | Key Formula             | Expression                                |
 | ----------------------- | ----------------------------------------- |
@@ -822,8 +823,8 @@ $$
 
 ### Question 8 (Paper 2 style)
 
-The heights of Year 12 students follow a normal distribution with mean $165\mathrm{ cm}$ and standard
-deviation $8\mathrm{ cm}$.
+The heights of Year 12 students follow a normal distribution with mean $165\mathrm{ cm}$ and
+standard deviation $8\mathrm{ cm}$.
 
 **(a)** What percentage of students are taller than $180\mathrm{ cm}$?
 

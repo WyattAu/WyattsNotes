@@ -10,16 +10,10 @@ slug: sequences-series
 
 A **sequence** is an ordered list of numbers. A **series** is the sum of the terms of a sequence.
 
-
-<DesmosGraph
-  title="Geometric Series Convergence"
-  expressions={["\sum_{k=0}^{n} ar^k", "\frac{a}{1-r}"]}
-  width={800}
-  height={500}
-/>
+<DesmosGraph title="Geometric Series Convergence" expressions={["\sum_{k=0}^{n} ar^k",
+"\frac{a}{1-r}"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
-
 
 ### Notation
 

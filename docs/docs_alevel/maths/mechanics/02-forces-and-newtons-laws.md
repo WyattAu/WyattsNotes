@@ -18,10 +18,8 @@ slug: forces-and-newtons-laws
 | OCR (A)    | Paper 1 | Includes inclined planes                              |
 | CIE (9709) | P1, P4  | Forces in P1; connected bodies, inclined planes in P4 |
 
-:::info
-Always draw a clear free body diagram before writing any equations. The quality of your
-diagram determines the quality of your solution.
-:::
+:::info Always draw a clear free body diagram before writing any equations. The quality of your
+diagram determines the quality of your solution. :::
 
 <hr />
 
@@ -52,11 +50,9 @@ A.
 **Implication.** Forces always come in pairs: action and reaction. They act on **different** bodies
 and are the same type of force.
 
-:::warning
-Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
+:::warning Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
 normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
-pair of the weight is the gravitational pull of the book on the Earth.
-:::
+pair of the weight is the gravitational pull of the book on the Earth. :::
 
 <hr />
 
@@ -131,10 +127,8 @@ $$F_{\max} = \mu R$$
 
 In A Level, we usually assume $\mu_s = \mu_k = \mu$.
 
-:::warning
-The friction force is not always $\mu R$. It adjusts to match the applied force up to the
-maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
-:::
+:::warning The friction force is not always $\mu R$. It adjusts to match the applied force up to the
+maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide. :::
 
 ### 4.3 Angle of friction
 
@@ -167,7 +161,8 @@ For two particles of masses $m_1$ and $m_2$ connected over a smooth pulley:
 
 For $5\,\mathrm{kg}$: $5g - T = 5a$. For $3\,\mathrm{kg}$: $T - 3g = 3a$.
 
-Adding: $2g = 8a \implies a = g/4 = 2.45\,\mathrm{m/s}^2$. $T = 3(g/4 + g) = 15g/4 = 36.75\,\mathrm{N}$.
+Adding: $2g = 8a \implies a = g/4 = 2.45\,\mathrm{m/s}^2$.
+$T = 3(g/4 + g) = 15g/4 = 36.75\,\mathrm{N}$.
 
 ### 5.2 On an inclined plane
 
@@ -209,9 +204,7 @@ A valid Third Law pair must satisfy **all** of the following criteria:
 
 ### 7.3 Common misconceptions
 
-:::warning
-The following are **not** Newton's Third Law pairs:
-:::
+:::warning The following are **not** Newton's Third Law pairs: :::
 
 | Situation             | Incorrect Pair (NOT Third Law)                | Why It Fails                                            | Correct Third Law Pair                               |
 | --------------------- | --------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
@@ -251,10 +244,8 @@ $$F = \mu R$$
 
 The word "limiting" is the signal to set $F = \mu R$ rather than $F \lt{} \mu R$.
 
-:::tip
-In exam questions, the phrases "on the point of slipping," "about to move," and "in limiting
-equilibrium" all mean the same thing: set $F = \mu R$.
-:::
+:::tip In exam questions, the phrases "on the point of slipping," "about to move," and "in limiting
+equilibrium" all mean the same thing: set $F = \mu R$. :::
 
 ### 8.2 Friction on a horizontal surface -- full analysis
 
@@ -277,11 +268,9 @@ $$P\cos\theta + \mu P\sin\theta = \mu mg$$
 
 $$P = \frac{\mu mg}{\cos\theta + \mu\sin\theta}$$
 
-:::warning
-Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
+:::warning Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
 friction. Applying a force at an angle **downward** increases $R$ and increases the maximum
-friction.
-:::
+friction. :::
 
 ### 8.3 Connected particles on rough surfaces
 
@@ -369,11 +358,9 @@ Combined with $m_2 g - T = m_2 a$:
 
 $$a = \frac{(m_2 - \mu m_1)g}{m_1 + m_2}$$
 
-:::warning
-If $m_2 \lt{} \mu m_1$, then $a \lt{} 0$, meaning the system does not move. The friction
+:::warning If $m_2 \lt{} \mu m_1$, then $a \lt{} 0$, meaning the system does not move. The friction
 force is not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and
-$T = m_2 g$.
-:::
+$T = m_2 g$. :::
 
 ### 9.4 Two particles on inclined planes with a pulley
 
@@ -445,10 +432,8 @@ $$P + \mu mg\cos\alpha - mg\sin\alpha = ma$$
 
 $$a = \frac{P}{m} - g(\sin\alpha - \mu\cos\alpha)$$
 
-:::tip
-The sign in front of the friction term $\mu mg\cos\alpha$ depends on the direction of motion
-(or the tendency to move). Always draw a clear diagram and think about which way friction acts.
-:::
+:::tip The sign in front of the friction term $\mu mg\cos\alpha$ depends on the direction of motion
+(or the tendency to move). Always draw a clear diagram and think about which way friction acts. :::
 
 ### 10.4 Block on an inclined plane with a horizontal applied force
 
@@ -471,11 +456,9 @@ $$P\cos\alpha - \mu P\sin\alpha = mg\sin\alpha + \mu mg\cos\alpha$$
 
 $$P = \frac{mg(\sin\alpha + \mu\cos\alpha)}{\cos\alpha - \mu\sin\alpha}$$
 
-:::warning
-If $\cos\alpha - \mu\sin\alpha \leq 0$, i.e. $\mu \geq \cot\alpha$, then no finite
+:::warning If $\cos\alpha - \mu\sin\alpha \leq 0$, i.e. $\mu \geq \cot\alpha$, then no finite
 horizontal force can move the block up the slope (pushing horizontally jams the block into the
-surface).
-:::
+surface). :::
 
 <hr />
 
@@ -512,11 +495,11 @@ the angle between $F_1$ and $F_2$, then:
 $$\frac{F_1}{\sin\theta_1} = \frac{F_2}{\sin\theta_2} = \frac{F_3}{\sin\theta_3}$$
 
 **Example.** A particle of mass $10\,\mathrm{kg}$ is suspended by two strings. One string makes an
-angle of $30^\circ$ with the vertical and the other makes an angle of $60^\circ$ with the vertical. Find the
-tensions.
+angle of $30^\circ$ with the vertical and the other makes an angle of $60^\circ$ with the vertical.
+Find the tensions.
 
-The three forces are: $T_1$ (at $30^\circ$ from vertical), $T_2$ (at $60^\circ$ from vertical), and weight
-$W = 10g$ (vertically downward).
+The three forces are: $T_1$ (at $30^\circ$ from vertical), $T_2$ (at $60^\circ$ from vertical), and
+weight $W = 10g$ (vertically downward).
 
 Angles between the forces: the angle between $T_1$ and $T_2$ is $30° + 60° = 90^\circ$.
 
@@ -538,8 +521,8 @@ This is equivalent to Lami's theorem and follows from the sine rule applied to t
 
 ### 11.5 Worked example -- beam in equilibrium
 
-A uniform beam $AB$ of length $4\,\mathrm{m}$ and mass $20\,\mathrm{kg}$ is hinged at $A$ and supported
-by a wire attached at $B$, making an angle of $30^\circ$ with the beam. A particle of mass
+A uniform beam $AB$ of length $4\,\mathrm{m}$ and mass $20\,\mathrm{kg}$ is hinged at $A$ and
+supported by a wire attached at $B$, making an angle of $30^\circ$ with the beam. A particle of mass
 $30\,\mathrm{kg}$ hangs from the beam at a point $1.5\,\mathrm{m}$ from $A$. Find the tension in the
 wire and the reaction at the hinge.
 
@@ -578,7 +561,8 @@ $R = mg = 5(9.8) = 49\,\mathrm{N}$. $F_{\max} = \mu R = 0.4(49) = 19.6\,\mathrm{
 
 Since $30 \gt{} 19.6$, the body slides. Friction $= 19.6\,\mathrm{N}$ (opposing motion).
 
-$F_{\mathrm{net}} = 30 - 19.6 = 10.4\,\mathrm{N}$. $a = F_{\mathrm{net}}/m = 10.4/5 = 2.08\,\mathrm{m/s}^2$.
+$F_{\mathrm{net}} = 30 - 19.6 = 10.4\,\mathrm{N}$.
+$a = F_{\mathrm{net}}/m = 10.4/5 = 2.08\,\mathrm{m/s}^2$.
 
 **If you get this wrong, revise:** [Friction](#4-friction) — Section 4.
 
@@ -825,7 +809,8 @@ A $7\,\mathrm{kg}$ block on a rough inclined plane (angle $= 35^\circ$, $\mu = 0
 <summary>Solution 15</summary>
 $R = mg\cos 35° = 7(9.8)(0.819) = 56.18\,\mathrm{N}$.
 
-$F = \mu R = 0.35(56.18) = 19.66\,\mathrm{N}$ (friction acts down the slope since the block moves up).
+$F = \mu R = 0.35(56.18) = 19.66\,\mathrm{N}$ (friction acts down the slope since the block moves
+up).
 
 Parallel to the plane: $80 - mg\sin 35° - F = ma$
 
@@ -987,8 +972,8 @@ $7.51 - 29.4 - 3a = 5a$
 
 $-21.89 = 8a \implies a = -2.74\,\mathrm{m/s}^2$
 
-Since $a \lt{} 0$, the assumption is wrong. The $5\,\mathrm{kg}$ block does not move down; instead the
-$3\,\mathrm{kg}$ mass descends and the $5\,\mathrm{kg}$ block moves up the slope.
+Since $a \lt{} 0$, the assumption is wrong. The $5\,\mathrm{kg}$ block does not move down; instead
+the $3\,\mathrm{kg}$ mass descends and the $5\,\mathrm{kg}$ block moves up the slope.
 
 Re-do with the $5\,\mathrm{kg}$ block moving up the slope (friction now acts down the slope):
 
@@ -1011,12 +996,12 @@ $-12.09 = 8a \implies a = -1.51\,\mathrm{m/s}^2$
 Since $a$ is still negative, the system does not move at all. The hanging mass is too light to
 overcome friction plus the component of weight down the slope.
 
-Check: the force trying to pull the $5\,\mathrm{kg}$ block up the slope is $3g = 29.4\,\mathrm{N}$. The
-force opposing this is $5g\sin 30° + \mu(5g\cos 30°) = 24.5 + 16.99 = 41.49\,\mathrm{N}$.
+Check: the force trying to pull the $5\,\mathrm{kg}$ block up the slope is $3g = 29.4\,\mathrm{N}$.
+The force opposing this is $5g\sin 30° + \mu(5g\cos 30°) = 24.5 + 16.99 = 41.49\,\mathrm{N}$.
 
 Since $29.4 \lt{} 41.49$, the system remains in equilibrium. The tension is
-$T = 3g = 29.4\,\mathrm{N}$, and friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\mathrm{N}$ (which is
-$\lt{} \mu R = 16.99\,\mathrm{N}$, confirming equilibrium).
+$T = 3g = 29.4\,\mathrm{N}$, and friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\mathrm{N}$ (which
+is $\lt{} \mu R = 16.99\,\mathrm{N}$, confirming equilibrium).
 
 **If you get this wrong, revise:**
 [Friction and the direction of motion](#84-friction-and-the-direction-of-motion) — Section 8.4.

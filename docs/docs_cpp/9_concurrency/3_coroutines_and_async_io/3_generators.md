@@ -152,12 +152,10 @@ Even Fibonacci numbers under 4,000,000:
 Sum: 4613732
 ```
 
-:::tip
-`std::generator` is composable with C++20 ranges. You can pipe a generator into
+:::tip `std::generator` is composable with C++20 ranges. You can pipe a generator into
 `std::views::filter`, `std::views::transform`, etc. However, be aware that range adaptors are eager
 on the iteration step — each `++it` call on the adapted view will advance the underlying generator
-by one element.
-:::
+by one element. :::
 
 ## See Also
 
@@ -419,11 +417,9 @@ int main() {
 | Memory usage (per element) | $\mathcal{O}(1)$ — no accumulation               |
 | Cache behavior             | Poor if frame is large and accessed infrequently |
 
-:::warning
-Heap allocation. Every `std::generator` coroutine frame is heap-allocated. For
+:::warning Heap allocation. Every `std::generator` coroutine frame is heap-allocated. For
 microsecond-latency systems, this can be a concern. C++26 is expected to add `std::generator` with
-allocator support to allow custom allocation strategies.
-:::
+allocator support to allow custom allocation strategies. :::
 
 ## Practical Example: State Machine Generator
 

@@ -11,10 +11,8 @@ slug: diagnostic-test
 
 ## A Level Physics — Diagnostic Test
 
-:::info
-Instructions This diagnostic test covers the entire A Level Physics syllabus. Attempt all 45
-questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes.
-:::
+:::info Instructions This diagnostic test covers the entire A Level Physics syllabus. Attempt all 45
+questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes. :::
 
 ## Section A: Mechanics (Questions 1–5)
 
@@ -22,8 +20,8 @@ questions. Each question has an answer and a revision redirect. Time allowed: 90
 <summary>Q1. A projectile is launched at 30 m s$^{-1}$ at 60° to the horizontal. What is its maximum height? ($g = 9.81$ m s$^{-2}$)</summary>
 **Answer.** $v_y = 30\sin 60° = 25.98$ m s$^{-1}$. $h_{\max} = v_y^2/(2g) = 675/19.62 = 34.4$ m.
 
-<b>If you get this wrong, revise:</b>
-[Kinematics](/docs/alevel/physics/mechanics/kinematics)
+<b>If you get this wrong, revise:</b> [Kinematics](/docs/alevel/physics/mechanics/kinematics)
+
 </details>
 
 <details>
@@ -32,6 +30,7 @@ questions. Each question has an answer and a revision redirect. Time allowed: 90
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Momentum](/docs/alevel/physics/mechanics/momentum)
+
 </details>
 
 <details>
@@ -40,6 +39,7 @@ s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Work, Energy, Power](/docs/alevel/physics/mechanics/work-energy-power)
+
 </details>
 
 <details>
@@ -48,6 +48,7 @@ s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion](/docs/alevel/physics/mechanics/circular-motion)
+
 </details>
 
 <details>
@@ -55,8 +56,8 @@ s$^{-1}$.
 **Answer.** $v_{\max} = \omega A = \frac{2\pi}{T} \times A = \frac{2\pi}{0.80} \times 0.040 = 0.314$
 m s$^{-1}$.
 
-<b>If you get this wrong, revise:</b>
-[Oscillations](/docs/alevel/physics/mechanics/oscillations)
+<b>If you get this wrong, revise:</b> [Oscillations](/docs/alevel/physics/mechanics/oscillations)
+
 </details>
 
 ## Section B: Waves (Questions 6–10)
@@ -69,6 +70,7 @@ m $= 2.18$ mm.
 
 <b>If you get this wrong, revise:</b>
 [Superposition and Interference](/docs/alevel/physics/waves/superposition-and-interference)
+
 </details>
 
 <details>
@@ -76,8 +78,8 @@ m $= 2.18$ mm.
 **Answer.** After first polariser: $I = 100$ W m$^{-2}$. After second:
 $I = 100\cos^2 45° = 100 \times 0.5 = 50$ W m$^{-2}$.
 
-<b>If you get this wrong, revise:</b>
-[Wave Properties](/docs/alevel/physics/waves/wave-properties)
+<b>If you get this wrong, revise:</b> [Wave Properties](/docs/alevel/physics/waves/wave-properties)
+
 </details>
 
 <details>
@@ -86,6 +88,7 @@ $I = 100\cos^2 45° = 100 \times 0.5 = 50$ W m$^{-2}$.
 
 <b>If you get this wrong, revise:</b>
 [Refraction and TIR](/docs/alevel/physics/waves/refraction-and-total-internal-reflection)
+
 </details>
 
 <details>
@@ -95,6 +98,7 @@ $f = v/\lambda = 320/0.80 = 400$ Hz.
 
 <b>If you get this wrong, revise:</b>
 [Superposition and Interference](/docs/alevel/physics/waves/superposition-and-interference)
+
 </details>
 
 <details>
@@ -104,6 +108,7 @@ $n_{\max} = d/\lambda = 1.667 \times 10^{-6}/500 \times 10^{-9} = 3.33$. Maximum
 
 <b>If you get this wrong, revise:</b>
 [Superposition and Interference](/docs/alevel/physics/waves/superposition-and-interference)
+
 </details>
 
 ## Section C: Electricity (Questions 11–15)
@@ -112,8 +117,8 @@ $n_{\max} = d/\lambda = 1.667 \times 10^{-6}/500 \times 10^{-9} = 3.33$. Maximum
 <summary>Q11. A 6 $\Omega$ and a 3 $\Omega$ resistor are in parallel. What is the equivalent resistance?</summary>
 **Answer.** $R = \frac{6 \times 3}{6 + 3} = 2.0\,\Omega$.
 
-<b>If you get this wrong, revise:</b>
-[DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
+<b>If you get this wrong, revise:</b> [DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
+
 </details>
 
 <details>
@@ -122,24 +127,24 @@ $n_{\max} = d/\lambda = 1.667 \times 10^{-6}/500 \times 10^{-9} = 3.33$. Maximum
 $E = \frac{1}{2}CV^2 = \frac{1}{2} \times 47 \times 10^{-6} \times 144 = 3.38 \times 10^{-3}$ J
 $= 3.38$ mJ.
 
-<b>If you get this wrong, revise:</b>
-[Capacitance](/docs/alevel/physics/electricity/capacitance)
+<b>If you get this wrong, revise:</b> [Capacitance](/docs/alevel/physics/electricity/capacitance)
+
 </details>
 
 <details>
 <summary>Q13. A cell of e.m.f. 9.0 V and internal resistance 1.5 $\Omega$ is connected to a 4.5 $\Omega$ load. What is the terminal p.d.?</summary>
 **Answer.** $I = 9.0/(4.5 + 1.5) = 1.5$ A. $V = \mathcal{E} - Ir = 9.0 - 1.5 \times 1.5 = 6.75$ V.
 
-<b>If you get this wrong, revise:</b>
-[DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
+<b>If you get this wrong, revise:</b> [DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
+
 </details>
 
 <details>
 <summary>Q14. A 100 $\mu$F capacitor discharges through a 50 k$\Omega$ resistor. What is the time constant?</summary>
 **Answer.** $\tau = RC = 50 \times 10^3 \times 100 \times 10^{-6} = 5.0$ s.
 
-<b>If you get this wrong, revise:</b>
-[Capacitance](/docs/alevel/physics/electricity/capacitance)
+<b>If you get this wrong, revise:</b> [Capacitance](/docs/alevel/physics/electricity/capacitance)
+
 </details>
 
 <details>
@@ -149,6 +154,7 @@ $R = \rho L/A = 1.7 \times 10^{-8} \times 10 / 7.85 \times 10^{-7} = 0.217\,\Ome
 
 <b>If you get this wrong, revise:</b>
 [Current and Resistance](/docs/alevel/physics/electricity/current-and-resistance)
+
 </details>
 
 ## Section D: Fields (Questions 16–22)
@@ -159,8 +165,8 @@ $R = \rho L/A = 1.7 \times 10^{-8} \times 10 / 7.85 \times 10^{-7} = 0.217\,\Ome
 $F = kq_1q_2/r^2 = 8.99 \times 10^9 \times 3 \times 10^{-6} \times 5 \times 10^{-6}/0.04 = 3.37$ N
 (attractive).
 
-<b>If you get this wrong, revise:</b>
-[Electric Fields](/docs/alevel/physics/fields/electric-fields)
+<b>If you get this wrong, revise:</b> [Electric Fields](/docs/alevel/physics/fields/electric-fields)
+
 </details>
 
 <details>
@@ -169,16 +175,16 @@ $F = kq_1q_2/r^2 = 8.99 \times 10^9 \times 3 \times 10^{-6} \times 5 \times 10^{
 $r = mv/(Be) = 9.11 \times 10^{-31} \times 4.0 \times 10^6/(0.50 \times 1.60 \times 10^{-19}) = 4.56 \times 10^{-5}$
 m.
 
-<b>If you get this wrong, revise:</b>
-[Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+<b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+
 </details>
 
 <details>
 <summary>Q18. A velocity selector has $E = 5.0 \times 10^5$ V m$^{-1}$ and $B = 0.20$ T. What velocity is selected?</summary>
 **Answer.** $v = E/B = 5.0 \times 10^5/0.20 = 2.5 \times 10^6$ m s$^{-1}$.
 
-<b>If you get this wrong, revise:</b>
-[Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+<b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+
 </details>
 
 <details>
@@ -189,22 +195,23 @@ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Electromagnetism Unification](/docs/alevel/physics/fields/electromagnetism-unification)
+
 </details>
 
 <details>
 <summary>Q20. What is the electric potential at 0.05 m from a $+2\,\mu$C charge?</summary>
 **Answer.** $V = kQ/r = 8.99 \times 10^9 \times 2 \times 10^{-6}/0.05 = 3.60 \times 10^5$ V.
 
-<b>If you get this wrong, revise:</b>
-[Electric Fields](/docs/alevel/physics/fields/electric-fields)
+<b>If you get this wrong, revise:</b> [Electric Fields](/docs/alevel/physics/fields/electric-fields)
+
 </details>
 
 <details>
 <summary>Q21. A coil of 150 turns experiences a flux change of 0.04 Wb in 0.02 s. What is the average induced e.m.f.?</summary>
 **Answer.** $\mathcal{E} = N\Delta\Phi/\Delta t = 150 \times 0.04/0.02 = 300$ V.
 
-<b>If you get this wrong, revise:</b>
-[Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+<b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+
 </details>
 
 <details>
@@ -213,8 +220,8 @@ m s$^{-1}$.
 linkage: $\mathcal{E} = -d(N\Phi)/dt$. **Lenz's law:** the direction of the induced current opposes
 the change in flux that produced it.
 
-<b>If you get this wrong, revise:</b>
-[Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+<b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
+
 </details>
 
 ## Section E: Thermal Physics (Questions 23–27)
@@ -227,6 +234,7 @@ s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Thermal Properties](/docs/alevel/physics/thermal-physics/thermal-properties)
+
 </details>
 
 <details>
@@ -235,6 +243,7 @@ s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Thermal Properties](/docs/alevel/physics/thermal-physics/thermal-properties)
+
 </details>
 
 <details>
@@ -245,6 +254,7 @@ J.
 
 <b>If you get this wrong, revise:</b>
 [Thermal Properties](/docs/alevel/physics/thermal-physics/thermal-properties)
+
 </details>
 
 <details>
@@ -253,6 +263,7 @@ J.
 
 <b>If you get this wrong, revise:</b>
 [Thermodynamics](/docs/alevel/physics/thermal-physics/thermodynamics)
+
 </details>
 
 <details>
@@ -261,6 +272,7 @@ J.
 
 <b>If you get this wrong, revise:</b>
 [Thermodynamics](/docs/alevel/physics/thermal-physics/thermodynamics)
+
 </details>
 
 ## Section F: Nuclear Physics (Questions 28–35)
@@ -272,6 +284,7 @@ $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}
 
 <b>If you get this wrong, revise:</b>
 [Radioactivity](/docs/alevel/physics/nuclear-physics/radioactivity)
+
 </details>
 
 <details>
@@ -280,6 +293,7 @@ $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}
 
 <b>If you get this wrong, revise:</b>
 [Radioactivity](/docs/alevel/physics/nuclear-physics/radioactivity)
+
 </details>
 
 <details>
@@ -288,6 +302,7 @@ $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}
 
 <b>If you get this wrong, revise:</b>
 [Quantum Physics](/docs/alevel/physics/nuclear-physics/quantum-physics)
+
 </details>
 
 <details>
@@ -298,6 +313,7 @@ m.
 
 <b>If you get this wrong, revise:</b>
 [Quantum Physics](/docs/alevel/physics/nuclear-physics/quantum-physics)
+
 </details>
 
 <details>
@@ -309,6 +325,7 @@ m $= 103$ nm.
 
 <b>If you get this wrong, revise:</b>
 [Quantum Physics](/docs/alevel/physics/nuclear-physics/quantum-physics)
+
 </details>
 
 <details>
@@ -321,6 +338,7 @@ release energy by fission — both processes move towards the iron peak.
 
 <b>If you get this wrong, revise:</b>
 [Nuclear Energy](/docs/alevel/physics/nuclear-physics/nuclear-energy)
+
 </details>
 
 <details>
@@ -330,6 +348,7 @@ $\lambda = \ln 2/t_{1/2} = 0.693/600 = 1.16 \times 10^{-3}$ s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Radioactivity](/docs/alevel/physics/nuclear-physics/radioactivity)
+
 </details>
 
 <details>
@@ -338,6 +357,7 @@ $\lambda = \ln 2/t_{1/2} = 0.693/600 = 1.16 \times 10^{-3}$ s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Quantum Physics](/docs/alevel/physics/nuclear-physics/quantum-physics)
+
 </details>
 
 ## Section G: Practical Skills (Questions 36–45)
@@ -349,6 +369,7 @@ Result: $4.53 \pm 0.02$ V.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
+
 </details>
 
 <details>
@@ -358,6 +379,7 @@ $2(0.2/3.0) + 0.3/4.0 = 0.133 + 0.075 = 0.208 = 20.8\%$.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
+
 </details>
 
 <details>
@@ -369,6 +391,7 @@ random errors affect precision.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
+
 </details>
 
 <details>
@@ -378,6 +401,7 @@ $n$ and the $y$-intercept is $\ln a$.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
+
 </details>
 
 <details>
@@ -386,6 +410,7 @@ $n$ and the $y$-intercept is $\ln a$.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
+
 </details>
 
 <details>
@@ -396,6 +421,7 @@ cross-sectional area.
 
 <b>If you get this wrong, revise:</b>
 [Experimental Design](/docs/alevel/physics/practical-skills/experimental-design)
+
 </details>
 
 <details>
@@ -408,6 +434,7 @@ period.
 
 <b>If you get this wrong, revise:</b>
 [Experimental Design](/docs/alevel/physics/practical-skills/experimental-design)
+
 </details>
 
 <details>
@@ -417,6 +444,7 @@ result is consistent with the accepted value at this level of uncertainty.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
+
 </details>
 
 <details>
@@ -425,8 +453,8 @@ result is consistent with the accepted value at this level of uncertainty.
 The current is reduced by a factor of $5.0/5.5 = 0.909$, an error of $\sim 9.1\%$. (The ammeter
 should ideally have zero resistance.)
 
-<b>If you get this wrong, revise:</b>
-[DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
+<b>If you get this wrong, revise:</b> [DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
+
 </details>
 
 <details>
@@ -434,8 +462,8 @@ should ideally have zero resistance.)
 **Answer.** For discharging: $I = I_0 e^{-t/RC}$, so $\ln I = \ln I_0 - t/(RC)$. Gradient
 $= -1/(RC) = -0.125$. $\tau = RC = 1/0.125 = 8.0$ s.
 
-<b>If you get this wrong, revise:</b>
-[Capacitance](/docs/alevel/physics/electricity/capacitance)
+<b>If you get this wrong, revise:</b> [Capacitance](/docs/alevel/physics/electricity/capacitance)
+
 </details>
 
 <hr />

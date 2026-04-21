@@ -387,19 +387,19 @@ the team understands what each alert means and what action to take.
 
 The TrueNAS dashboard provides real-time metrics for:
 
-| Category | Metrics | Refresh Rate |
-|----------|---------|-------------|
-| CPU | Per-core utilization, temperature, frequency | 2 seconds |
-| Memory | Used, free, cached, wired, swap | 2 seconds |
-| Network | Per-interface Rx/Tx throughput, errors | 2 seconds |
-| Disk | Per-disk I/O throughput, latency, queue depth | 2 seconds |
-| Pool | Per-pool I/O throughput, capacity, ARC stats | 5 seconds |
-| UPS | Battery level, load, estimated runtime | 5 seconds |
+| Category | Metrics                                       | Refresh Rate |
+| -------- | --------------------------------------------- | ------------ |
+| CPU      | Per-core utilization, temperature, frequency  | 2 seconds    |
+| Memory   | Used, free, cached, wired, swap               | 2 seconds    |
+| Network  | Per-interface Rx/Tx throughput, errors        | 2 seconds    |
+| Disk     | Per-disk I/O throughput, latency, queue depth | 2 seconds    |
+| Pool     | Per-pool I/O throughput, capacity, ARC stats  | 5 seconds    |
+| UPS      | Battery level, load, estimated runtime        | 5 seconds    |
 
 ### Historical Metrics
 
-TrueNAS stores historical metrics using RRDtool (Round Robin Database). Historical data is
-retained for approximately:
+TrueNAS stores historical metrics using RRDtool (Round Robin Database). Historical data is retained
+for approximately:
 
 - **1-minute resolution:** 24 hours
 - **5-minute resolution:** 7 days
@@ -423,34 +423,41 @@ The TrueNAS dashboard is customizable. Navigate to the dashboard and click the g
 Understanding SMART attributes in detail:
 
 **Reallocated Sector Count (ID 5):**
+
 - Count of sectors that have been reallocated due to read errors.
 - Any increase indicates the drive is failing. Plan for immediate replacement.
 - This is the single most important SMART attribute for HDDs.
 
 **Current Pending Sector Count (ID 197):**
+
 - Count of sectors that are unstable and awaiting reallocation.
 - Non-zero value means the drive has detected potential bad sectors.
 - If the count increases over time, the drive is deteriorating.
 
 **Uncorrectable Sector Count (ID 198):**
+
 - Count of sectors that could not be recovered after multiple read attempts.
 - Any non-zero value means data has been lost. Replace the drive immediately.
 
 **Command Timeout (ID 188):**
+
 - Count of aborted operations due to timeout.
 - Non-zero value can indicate cable issues, controller problems, or drive failure.
 
 **UDMA CRC Error Count (ID 199):**
+
 - Count of CRC errors on the UDMA interface.
 - Usually indicates a bad SATA/SAS cable or connector.
 - Replace the cable before replacing the drive.
 
 **Media Wear Indicator (ID 173, SSD-specific):**
+
 - Percentage of rated endurance used.
 - When this reaches 0%, the drive has reached its rated write endurance.
 - Most drives continue to function beyond 0% but with increased risk.
 
 **Available Spare (ID 232, SSD-specific):**
+
 - Percentage of spare blocks remaining.
 - When this drops below 10%, the drive is running out of spare blocks for wear leveling.
 - Plan for replacement.
@@ -497,23 +504,20 @@ During a scrub, ZFS reads every block in the pool and verifies its checksum:
 2. Compute the checksum of the read data.
 3. Compare computed vs. stored checksum.
 4. If they match: data is intact. Continue.
-5. If they do not match:
-   a. Read the redundant copy (mirror) or recompute from parity (RAIDZ).
-   b. Verify the corrected data.
-   c. Write the corrected data back to the bad block.
-   d. Log the error.
+5. If they do not match: a. Read the redundant copy (mirror) or recompute from parity (RAIDZ). b.
+   Verify the corrected data. c. Write the corrected data back to the bad block. d. Log the error.
 
 ### Scrub Performance Impact
 
-| Pool Type | Scrub Speed | I/O Impact |
-|-----------|------------|------------|
-| All-SSD | 500 MB/s – 2 GB/s | Low (SSDs handle concurrent scrub + workload) |
-| All-HDD | 50–150 MB/s | High (scrub consumes significant read bandwidth) |
-| Mirror (SSD) | 1–2 GB/s | Low |
-| RAIDZ2 (HDD) | 50–100 MB/s | High |
+| Pool Type    | Scrub Speed       | I/O Impact                                       |
+| ------------ | ----------------- | ------------------------------------------------ |
+| All-SSD      | 500 MB/s – 2 GB/s | Low (SSDs handle concurrent scrub + workload)    |
+| All-HDD      | 50–150 MB/s       | High (scrub consumes significant read bandwidth) |
+| Mirror (SSD) | 1–2 GB/s          | Low                                              |
+| RAIDZ2 (HDD) | 50–100 MB/s       | High                                             |
 
-During a scrub of an HDD pool, normal I/O performance can degrade by 30–50%. Schedule scrubs
-during off-peak hours.
+During a scrub of an HDD pool, normal I/O performance can degrade by 30–50%. Schedule scrubs during
+off-peak hours.
 
 ### Scrub Error Analysis
 
@@ -533,8 +537,8 @@ zpool status tank
 # errors        — Total checksum errors found
 ```
 
-If `unrepairable` is non-zero, you have experienced data corruption that could not be recovered
-from redundancy. Identify which files were affected and restore from backup.
+If `unrepairable` is non-zero, you have experienced data corruption that could not be recovered from
+redundancy. Identify which files were affected and restore from backup.
 
 ## Email Alerting Advanced Configuration
 
@@ -580,11 +584,11 @@ To: admin@example.com
 
 For environments with multiple administrators, route alerts based on severity:
 
-| Severity | Notification Method | Response Time |
-|----------|-------------------|---------------|
-| Critical | Email + SMS (via PagerDuty/Opsgenie) | Immediate |
-| Warning | Email | Within 4 hours |
-| Information | Email (daily digest) | Next business day |
+| Severity    | Notification Method                  | Response Time     |
+| ----------- | ------------------------------------ | ----------------- |
+| Critical    | Email + SMS (via PagerDuty/Opsgenie) | Immediate         |
+| Warning     | Email                                | Within 4 hours    |
+| Information | Email (daily digest)                 | Next business day |
 
 ## Prometheus Integration for TrueNAS
 
@@ -603,14 +607,14 @@ sudo cp node_exporter-1.7.0.linux-amd64/node_exporter /usr/local/bin/
 
 ### Key Metrics to Export
 
-| Metric | Source | Description |
-|--------|--------|-------------|
-| `zfs_arc_stats` | `/proc/spl/kstat/zfs/arcstats` | ARC hit ratio, size, metadata |
-| `zfs_pool_stats` | `zpool list` | Pool capacity, health, I/O |
-| `smartmon_device` | `smartctl` | Disk temperatures, health |
-| `node_cpu_seconds_total` | `/proc/stat` | CPU utilization |
-| `node_memory_MemAvailable_bytes` | `/proc/meminfo` | Available memory |
-| `node_filesystem_avail_bytes` | `statvfs` | Filesystem free space |
+| Metric                           | Source                         | Description                   |
+| -------------------------------- | ------------------------------ | ----------------------------- |
+| `zfs_arc_stats`                  | `/proc/spl/kstat/zfs/arcstats` | ARC hit ratio, size, metadata |
+| `zfs_pool_stats`                 | `zpool list`                   | Pool capacity, health, I/O    |
+| `smartmon_device`                | `smartctl`                     | Disk temperatures, health     |
+| `node_cpu_seconds_total`         | `/proc/stat`                   | CPU utilization               |
+| `node_memory_MemAvailable_bytes` | `/proc/meminfo`                | Available memory              |
+| `node_filesystem_avail_bytes`    | `statvfs`                      | Filesystem free space         |
 
 ### Grafana Dashboard JSON
 
@@ -665,11 +669,9 @@ When the UPS detects a power failure:
 2. **NUT notifies TrueNAS.** The UPS status changes to "OB" (on battery).
 3. **Timer starts.** TrueNAS waits for the configured delay (e.g., 5 minutes).
 4. **If power is restored within the delay:** Normal operation resumes. No shutdown.
-5. **If timer expires:** TrueNAS initiates shutdown:
-   a. Stop all services (SMB, NFS, apps).
-   b. Sync all ZFS pools (`zpool sync`).
-   c. Export all pools (`zpool export -a`).
-   d. Shutdown the system (`shutdown -p now`).
+5. **If timer expires:** TrueNAS initiates shutdown: a. Stop all services (SMB, NFS, apps). b. Sync
+   all ZFS pools (`zpool sync`). c. Export all pools (`zpool export -a`). d. Shutdown the system
+   (`shutdown -p now`).
 6. **UPS signals low battery:** UPS sends the final "LB" signal and shuts itself down.
 
 ### Multi-System UPS Monitoring
@@ -706,13 +708,13 @@ For environments with multiple systems, centralize logs using:
 
 TrueNAS retains logs according to:
 
-| Log Type | Default Retention | Location |
-|----------|------------------|----------|
-| System logs | 1 week | `/var/log/` |
-| Audit logs | Configurable | `/var/log/audit/` |
-| SMB logs | Configurable | `/var/log/samba4/` |
-| App logs | Configurable | Per-app |
-| Middleware logs | Configurable | Per-app |
+| Log Type        | Default Retention | Location           |
+| --------------- | ----------------- | ------------------ |
+| System logs     | 1 week            | `/var/log/`        |
+| Audit logs      | Configurable      | `/var/log/audit/`  |
+| SMB logs        | Configurable      | `/var/log/samba4/` |
+| App logs        | Configurable      | Per-app            |
+| Middleware logs | Configurable      | Per-app            |
 
 ### Log Analysis Scripts
 
@@ -759,6 +761,7 @@ T_{80\%} = \frac{0.8 \times C_{total} - C_{used}}{R_{growth}}
 $$
 
 Where:
+
 - $C_{total}$ is the total pool capacity
 - $C_{used}$ is the current used capacity
 - $R_{growth}$ is the daily growth rate
@@ -767,11 +770,11 @@ Where:
 
 ### Alert Tiers
 
-| Tier | Severity | Response | Channel |
-|------|----------|----------|---------|
-| P0 | Critical, data at risk | Immediate | PagerDuty, SMS |
-| P1 | Warning, performance degraded | Within 1 hour | Email, Slack |
-| P2 | Informational, non-urgent | Next business day | Daily digest |
+| Tier | Severity                      | Response          | Channel        |
+| ---- | ----------------------------- | ----------------- | -------------- |
+| P0   | Critical, data at risk        | Immediate         | PagerDuty, SMS |
+| P1   | Warning, performance degraded | Within 1 hour     | Email, Slack   |
+| P2   | Informational, non-urgent     | Next business day | Daily digest   |
 
 ### Alert Suppression
 
@@ -835,8 +838,9 @@ groups:
         labels:
           severity: warning
         annotations:
-          summary: "ZFS pool {{ $labels.pool }} is above 85% capacity"
-          description: "Pool {{ $labels.pool }} is using {{ $value | humanizePercentage }} of its capacity."
+          summary: 'ZFS pool {{ $labels.pool }} is above 85% capacity'
+          description:
+            'Pool {{ $labels.pool }} is using {{ $value | humanizePercentage }} of its capacity.'
 ```
 
 ## Log Analysis Deep Dive
@@ -891,21 +895,21 @@ tail -30 "$LOG" | awk -F',' '
 
 ### Capacity Planning Spreadsheet
 
-| Dataset | Current Usage | Monthly Growth | Months to 80% | Action Date |
-|---------|-------------|--------------|----------------|-------------|
-| tank/data | 4.2 TB | 50 GB | 12 | 2026-04 |
-| tank/media | 8.7 TB | 100 GB | 3 | 2025-07 |
-| tank/backups | 2.1 TB | 30 GB | 18 | 2027-08 |
+| Dataset      | Current Usage | Monthly Growth | Months to 80% | Action Date |
+| ------------ | ------------- | -------------- | ------------- | ----------- |
+| tank/data    | 4.2 TB        | 50 GB          | 12            | 2026-04     |
+| tank/media   | 8.7 TB        | 100 GB         | 3             | 2025-07     |
+| tank/backups | 2.1 TB        | 30 GB          | 18            | 2027-08     |
 
 ### When to Expand
 
-| Current Usage | Recommended Action |
-|---------------|-------------------|
-| &lt; 50% | Monitor monthly, no action needed |
-| 50–70% | Plan expansion within 6 months |
-| 70–80% | Order drives, schedule expansion |
-| 80–90% | Urgent: expand within 2 weeks |
-| &gt; 90% | Critical: expand immediately |
+| Current Usage | Recommended Action                |
+| ------------- | --------------------------------- |
+| &lt; 50%      | Monitor monthly, no action needed |
+| 50–70%        | Plan expansion within 6 months    |
+| 70–80%        | Order drives, schedule expansion  |
+| 80–90%        | Urgent: expand within 2 weeks     |
+| &gt; 90%      | Critical: expand immediately      |
 
 ### Expansion Methods
 

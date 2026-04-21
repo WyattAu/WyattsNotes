@@ -91,8 +91,8 @@ steep-sided mounds prone to violent explosive eruptions. Example: Mount Pelee (M
 Supervolcanoes produce eruptions exceeding $1000\;\mathrm{km^3}$ of ejecta (compared to
 $< 1\;\mathrm{km^3}$ for typical eruptions). They are not mountainous but rather large calderas
 formed when the ground collapses after a massive eruption. Example: Yellowstone (USA), Toba
-(Indonesia). The Toba eruption ($\approx 74000$ years ago) may have caused a volcanic winter and
-a human population bottleneck.
+(Indonesia). The Toba eruption ($\approx 74000$ years ago) may have caused a volcanic winter and a
+human population bottleneck.
 
 ## Earthquakes
 
@@ -301,9 +301,9 @@ $$\log_{10}(E_2 / E_1) = 1.5 \times (6.0 - 4.0) = 3.0$$
 
 $$E_2 / E_1 = 10^{3.0} = 1000$$
 
-A magnitude $6.0$ earthquake releases approximately $1000$ times more energy than a magnitude
-$4.0$ earthquake. The amplitude difference would be $10^{(6.0 - 4.0)} = 100$ times, but the energy
-release difference is far greater.
+A magnitude $6.0$ earthquake releases approximately $1000$ times more energy than a magnitude $4.0$
+earthquake. The amplitude difference would be $10^{(6.0 - 4.0)} = 100$ times, but the energy release
+difference is far greater.
 
 </details>
 

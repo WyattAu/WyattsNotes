@@ -71,12 +71,10 @@ int main() {
 }
 ```
 
-:::tip
-Use `extern template` in header files for templates that are instantiated with common types
+:::tip Use `extern template` in header files for templates that are instantiated with common types
 (e.g., `int`, `double`, `std::string`). Provide explicit instantiation definitions in a single
 `.cpp` file. This reduces compilation time and binary size without sacrificing the flexibility of
-templates.
-:::
+templates. :::
 
 ## Formal Semantics: Declaration vs Definition [N4950 §13.9.2]
 
@@ -107,7 +105,7 @@ now**, in this translation unit." The effect is that the translation unit emits 
 The key distinction from the Standard:
 
 > An entity that is the subject of an explicit instantiation declaration and that is also used other
-> than in an unevaluated operand is implicitly instantiated when the entity is odr-used [N4950
+> than in an unevaluated operand is implicitly instantiated when the entity is odr-used [N4950 >
 > §13.9.2/6].
 
 This means that an `extern template` declaration suppresses implicit instantiation **only for direct
@@ -468,12 +466,10 @@ Then include `fmt_inst.h` instead of `fmt/format.h` in your `.cpp` files. The te
 are still visible (through the include), but the `extern template` declarations suppress redundant
 instantiation.
 
-:::warning
-This approach requires that you keep your instantiation list in sync with actual usage.
+:::warning This approach requires that you keep your instantiation list in sync with actual usage.
 Forgetting to add a new type results in a linker error (if you only include `fmt_inst.h`) or a
 silent fallback to implicit instantiation (if the full header is also included). Always add both the
-declaration and the definition in the same commit.
-:::
+declaration and the definition in the same commit. :::
 
 ## Library Design Patterns with Explicit Instantiation
 

@@ -27,11 +27,9 @@ When the program runs, these counters increment. Upon process termination, the r
 counter data to raw profile files on the disk, which are then mapped back to the source code by
 analysis tools.
 
-:::warning
-Performance Overhead Instrumentation significantly increases binary size and execution
+:::warning Performance Overhead Instrumentation significantly increases binary size and execution
 time. Coverage builds should never be used for performance benchmarking or production release
-artifacts.
-:::
+artifacts. :::
 
 ## The Two Ecosystems
 

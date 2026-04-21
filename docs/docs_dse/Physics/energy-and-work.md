@@ -110,7 +110,8 @@ where $W_{\mathrm{lost}}$ is the energy dissipated as thermal energy.
 
 <PhetSimulation simulationId="energy-skate-park" title="Energy Skate Park" />
 
-Observe the continuous interchange between kinetic and potential energy as the skater moves along the track.
+Observe the continuous interchange between kinetic and potential energy as the skater moves along
+the track.
 
 ### Worked Example 2
 

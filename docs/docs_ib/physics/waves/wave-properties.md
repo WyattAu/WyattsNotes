@@ -10,7 +10,8 @@ slug: wave-properties
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
-Investigate how wave speed, frequency, wavelength, and amplitude are related. Experiment with different end conditions (fixed, loose, open) to observe standing waves and resonance.
+Investigate how wave speed, frequency, wavelength, and amplitude are related. Experiment with
+different end conditions (fixed, loose, open) to observe standing waves and resonance.
 
 ### What is a Wave?
 
@@ -112,12 +113,12 @@ pressure) and rarefactions (low pressure).
 
 ### Speed of Sound
 
-| Medium                       | Speed (m/s) |
-| ---------------------------- | ----------- |
+| Medium                         | Speed (m/s) |
+| ------------------------------ | ----------- |
 | Air at $20\degree\mathrm{C}$   | 343         |
 | Water at $20\degree\mathrm{C}$ | 1482        |
-| Steel                        | 5960        |
-| Glass                        | 5640        |
+| Steel                          | 5960        |
+| Glass                          | 5640        |
 
 The speed of sound in air depends on temperature:
 
@@ -165,15 +166,15 @@ the intensity. Decibels are logarithmic, so you cannot simply add them.
 
 ## Electromagnetic Spectrum
 
-| Region        | Wavelength Range                   | Frequency Range                                        |
-| ------------- | ---------------------------------- | ------------------------------------------------------ |
-| Radio waves   | $\gt 0.1\mathrm{ m}$                 | $\lt 3 \times 10^9\mathrm{ Hz}$                          |
+| Region        | Wavelength Range                       | Frequency Range                                          |
+| ------------- | -------------------------------------- | -------------------------------------------------------- |
+| Radio waves   | $\gt 0.1\mathrm{ m}$                   | $\lt 3 \times 10^9\mathrm{ Hz}$                          |
 | Microwaves    | $0.1\mathrm{ mm}$ to $0.1\mathrm{ m}$  | $3 \times 10^9$ to $3 \times 10^{12}\mathrm{ Hz}$        |
 | Infrared      | $700\mathrm{ nm}$ to $0.1\mathrm{ mm}$ | $3 \times 10^{12}$ to $4.3 \times 10^{14}\mathrm{ Hz}$   |
 | Visible light | $400\mathrm{ nm}$ to $700\mathrm{ nm}$ | $4.3 \times 10^{14}$ to $7.5 \times 10^{14}\mathrm{ Hz}$ |
 | Ultraviolet   | $10\mathrm{ nm}$ to $400\mathrm{ nm}$  | $7.5 \times 10^{14}$ to $3 \times 10^{16}\mathrm{ Hz}$   |
 | X-rays        | $0.01\mathrm{ nm}$ to $10\mathrm{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19}\mathrm{ Hz}$     |
-| Gamma rays    | $\lt 0.01\mathrm{ nm}$               | $\gt 3 \times 10^{19}\mathrm{ Hz}$                       |
+| Gamma rays    | $\lt 0.01\mathrm{ nm}$                 | $\gt 3 \times 10^{19}\mathrm{ Hz}$                       |
 
 ### Key Properties
 
@@ -244,8 +245,8 @@ $$
 
 :::info[Example]
 
-Light of wavelength $600\mathrm{ nm}$ passes through a double slit with separation $0.2\mathrm{ mm}$.
-The screen is $1.5\mathrm{ m}$ away. Find the fringe spacing.
+Light of wavelength $600\mathrm{ nm}$ passes through a double slit with separation
+$0.2\mathrm{ mm}$. The screen is $1.5\mathrm{ m}$ away. Find the fringe spacing.
 
 $$
 \Delta x = \frac{\lambda D}{d} = \frac{600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{9 \times 10^{-7}}{2 \times 10^{-4}} = 4.5 \times 10^{-3}\mathrm{ m} = 4.5\mathrm{ mm}
@@ -306,8 +307,8 @@ The closed end is a node, the open end is an antinode.
 
 :::info[Example]
 
-A string of length $0.75\mathrm{ m}$ has a fundamental frequency of $220\mathrm{ Hz}$. Find the speed of
-waves on the string.
+A string of length $0.75\mathrm{ m}$ has a fundamental frequency of $220\mathrm{ Hz}$. Find the
+speed of waves on the string.
 
 $$
 f_1 = \frac{v}{2L} \implies v = 2Lf_1 = 2(0.75)(220) = 330\mathrm{ m/s}
@@ -450,8 +451,8 @@ This is why astronomical telescopes use large mirrors and electron microscopes u
 
 :::info[Example]
 
-A telescope with a mirror of diameter $0.1\mathrm{ m}$ observes light of wavelength $550\mathrm{ nm}$.
-Find the minimum angular separation it can resolve.
+A telescope with a mirror of diameter $0.1\mathrm{ m}$ observes light of wavelength
+$550\mathrm{ nm}$. Find the minimum angular separation it can resolve.
 
 $$
 \theta_{\min} = 1.22 \times \frac{550 \times 10^{-9}}{0.1} = 6.71 \times 10^{-6}\mathrm{ rad}
@@ -501,9 +502,9 @@ $$
 
 ### Question 1 (Paper 1 style)
 
-Light of wavelength $590\mathrm{ nm}$ is incident on a double slit with separation $0.5\mathrm{ mm}$.
-The screen is $2\mathrm{ m}$ away. Find the distance from the central maximum to the third bright
-fringe.
+Light of wavelength $590\mathrm{ nm}$ is incident on a double slit with separation
+$0.5\mathrm{ mm}$. The screen is $2\mathrm{ m}$ away. Find the distance from the central maximum to
+the third bright fringe.
 
 $$
 x_3 = \frac{3\lambda D}{d} = \frac{3 \times 590 \times 10^{-9} \times 2}{0.5 \times 10^{-3}} = \frac{3.54 \times 10^{-6}}{5 \times 10^{-4}} = 7.08 \times 10^{-3}\mathrm{ m} = 7.08\mathrm{ mm}
@@ -540,8 +541,8 @@ nodes (including both ends) and 2 antinodes.
 
 ### Question 3 (Paper 1 style)
 
-An ambulance with siren at $800\mathrm{ Hz}$ moves away from a stationary observer at $20\mathrm{ m/s}$.
-What frequency does the observer hear? ($v_{\mathrm{sound}} = 340\mathrm{ m/s}$)
+An ambulance with siren at $800\mathrm{ Hz}$ moves away from a stationary observer at
+$20\mathrm{ m/s}$. What frequency does the observer hear? ($v_{\mathrm{sound}} = 340\mathrm{ m/s}$)
 
 $$
 f' = \frac{f}{1 + v_s/v_w} = \frac{800}{1 + 20/340} = \frac{800}{1.0588} = 756\mathrm{ Hz}
@@ -761,8 +762,8 @@ $$
 
 ### Question 7 (Paper 2 style)
 
-Two loudspeakers are $3\mathrm{ m}$ apart and emit sound of frequency $686\mathrm{ Hz}$ in phase. The
-speed of sound is $343\mathrm{ m/s}$.
+Two loudspeakers are $3\mathrm{ m}$ apart and emit sound of frequency $686\mathrm{ Hz}$ in phase.
+The speed of sound is $343\mathrm{ m/s}$.
 
 **(a)** Calculate the wavelength.
 
@@ -799,9 +800,9 @@ inversely proportional to the slit width.
 
 ### Question 9 (Paper 2 style)
 
-Unpolarised light of intensity $200\mathrm{ W/m}^2$ passes through three polarising filters. The first
-has its axis vertical. The second is at $30\degree$ to the vertical. The third is at $60\degree$ to
-the vertical.
+Unpolarised light of intensity $200\mathrm{ W/m}^2$ passes through three polarising filters. The
+first has its axis vertical. The second is at $30\degree$ to the vertical. The third is at
+$60\degree$ to the vertical.
 
 Find the intensity after each filter.
 

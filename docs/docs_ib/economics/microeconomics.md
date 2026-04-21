@@ -77,8 +77,8 @@ $$\mathrm{PED} = \frac{\% \Delta Q_d}{\% \Delta P}$$
 Since the demand curve slopes downward, PED is negative, but it is conventionally expressed as an
 absolute value.
 
-| PED Value                   | Classification      | Characteristics               |
-| --------------------------- | ------------------- | ----------------------------- |
+| PED Value                     | Classification      | Characteristics               |
+| ----------------------------- | ------------------- | ----------------------------- |
 | $\|\mathrm{PED}\| > 1$        | Elastic             | $\% \Delta Q_d > \% \Delta P$ |
 | $\|\mathrm{PED}\| = 1$        | Unit elastic        | $\% \Delta Q_d = \% \Delta P$ |
 | $\|\mathrm{PED}\| < 1$        | Inelastic           | $\% \Delta Q_d < \% \Delta P$ |
@@ -310,8 +310,8 @@ The change in total revenue is an increase of $\$250$.
 <summary>Problem 2: Negative Externality Diagram Analysis</summary>
 
 A chemical factory produces pollution with a marginal external cost of $\$8$ per unit at the current
-output level of $1000$ units. The market price is $\$20$ per unit, and the marginal private cost
-at this output is also $\$20$. Calculate the marginal social cost and explain the market failure.
+output level of $1000$ units. The market price is $\$20$ per unit, and the marginal private cost at
+this output is also $\$20$. Calculate the marginal social cost and explain the market failure.
 
 $\mathrm{MSC} = \mathrm{MPC} + \mathrm{MEC} = 20 + 8 = \$28$
 
@@ -370,9 +370,9 @@ during extreme events.
 <summary>Problem 5: Subsidy Welfare Analysis</summary>
 
 The government provides a $\$5$ per unit subsidy on solar panels. Before the subsidy, the
-equilibrium price was $\$100$ and the equilibrium quantity was $10000$ units. After the subsidy,
-the quantity increases to $14000$ units. Calculate the total cost of the subsidy to the
-government and discuss potential government failures.
+equilibrium price was $\$100$ and the equilibrium quantity was $10000$ units. After the subsidy, the
+quantity increases to $14000$ units. Calculate the total cost of the subsidy to the government and
+discuss potential government failures.
 
 Total subsidy cost $= \$5 \times 14000 = \$70000$.
 

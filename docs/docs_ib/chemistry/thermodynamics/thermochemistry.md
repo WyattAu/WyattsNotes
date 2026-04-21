@@ -32,10 +32,10 @@ Standard enthalpy changes are measured under standard conditions:
 
 ### Types of Enthalpy Change
 
-| Type                                | Symbol                         | Definition                                                                        |
-| ----------------------------------- | ------------------------------ | --------------------------------------------------------------------------------- |
-| Standard enthalpy of formation      | $\Delta H_f^\circ$             | Enthalpy change when 1 mol of compound forms from its elements in standard states |
-| Standard enthalpy of combustion     | $\Delta H_c^\circ$             | Enthalpy change when 1 mol of substance burns completely in oxygen                |
+| Type                                | Symbol                           | Definition                                                                        |
+| ----------------------------------- | -------------------------------- | --------------------------------------------------------------------------------- |
+| Standard enthalpy of formation      | $\Delta H_f^\circ$               | Enthalpy change when 1 mol of compound forms from its elements in standard states |
+| Standard enthalpy of combustion     | $\Delta H_c^\circ$               | Enthalpy change when 1 mol of substance burns completely in oxygen                |
 | Standard enthalpy of neutralisation | $\Delta H_{\mathrm{neut}}^\circ$ | Enthalpy change when 1 mol of water forms from acid-base reaction                 |
 | Standard enthalpy of atomisation    | $\Delta H_{\mathrm{at}}^\circ$   | Enthalpy change to form 1 mol of gaseous atoms from element in standard state     |
 
@@ -96,9 +96,9 @@ The negative sign accounts for the convention: heat lost by the reaction is gain
 
 :::info[Example]
 
-$50.0\mathrm{ mL}$ of $1.0\mathrm{ M}$ HCl is mixed with $50.0\mathrm{ mL}$ of $1.0\mathrm{ M}$ NaOH in a
-calorimeter. The temperature rises from $21.0\degree\mathrm{C}$ to $27.5\degree\mathrm{C}$. Calculate
-the enthalpy of neutralisation.
+$50.0\mathrm{ mL}$ of $1.0\mathrm{ M}$ HCl is mixed with $50.0\mathrm{ mL}$ of $1.0\mathrm{ M}$ NaOH
+in a calorimeter. The temperature rises from $21.0\degree\mathrm{C}$ to $27.5\degree\mathrm{C}$.
+Calculate the enthalpy of neutralisation.
 
 $$
 m = 100.0\mathrm{ g} \mathrm{ (assuming density of water)}
@@ -417,8 +417,9 @@ $$
 
 ### Question 2 (Paper 2 style)
 
-$25.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ HCl is added to $25.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ NaOH in a
-polystyrene cup. The temperature increases from $20.0\degree\mathrm{C}$ to $26.5\degree\mathrm{C}$.
+$25.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ HCl is added to $25.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$
+NaOH in a polystyrene cup. The temperature increases from $20.0\degree\mathrm{C}$ to
+$26.5\degree\mathrm{C}$.
 
 **(a)** Calculate the enthalpy change of neutralisation per mole of water formed.
 
@@ -467,14 +468,14 @@ H$_2$O(l) $\to$ Ca(OH)$_2$(s) D. N$_2$(g) + 3H$_2$(g) $\to$ 2NH$_3$(g)
 
 ## Summary
 
-| Formula                 | Expression                                                                          |
-| ----------------------- | ----------------------------------------------------------------------------------- |
-| Heat energy             | $q = mc\Delta T$                                                                    |
+| Formula                 | Expression                                                                              |
+| ----------------------- | --------------------------------------------------------------------------------------- |
+| Heat energy             | $q = mc\Delta T$                                                                        |
 | Enthalpy from formation | $\Delta H_r = \sum \Delta H_f(\mathrm{products}) - \sum \Delta H_f(\mathrm{reactants})$ |
 | From bond enthalpies    | $\Delta H = \sum(\mathrm{bonds broken}) - \sum(\mathrm{bonds formed})$                  |
 | Entropy change          | $\Delta S = \sum S(\mathrm{products}) - \sum S(\mathrm{reactants})$                     |
-| Gibbs free energy       | $\Delta G = \Delta H - T\Delta S$                                                   |
-| Equilibrium relation    | $\Delta G^\circ = -RT\ln K$                                                         |
+| Gibbs free energy       | $\Delta G = \Delta H - T\Delta S$                                                       |
+| Equilibrium relation    | $\Delta G^\circ = -RT\ln K$                                                             |
 
 :::tip[Exam Strategy]
 
@@ -618,9 +619,9 @@ Since $K \gt 1$, products are favoured at equilibrium.
 
 ### Question 5 (Paper 2 style)
 
-The enthalpy of combustion of methanol is $-726\mathrm{ kJ/mol}$. A spirit burner containing methanol
-is used to heat $200\mathrm{ g}$ of water from $20.0\degree\mathrm{C}$ to $65.0\degree\mathrm{C}$. The
-mass of methanol burned is $1.50\mathrm{ g}$.
+The enthalpy of combustion of methanol is $-726\mathrm{ kJ/mol}$. A spirit burner containing
+methanol is used to heat $200\mathrm{ g}$ of water from $20.0\degree\mathrm{C}$ to
+$65.0\degree\mathrm{C}$. The mass of methanol burned is $1.50\mathrm{ g}$.
 
 **(a)** Calculate the experimental enthalpy of combustion.
 
@@ -649,8 +650,8 @@ water; the calorimeter absorbs some heat.
 
 ### Question 6 (Paper 1 style)
 
-For the reaction: N$_2$O$_4$(g) $\rightleftharpoons$ 2NO$_2$(g), $\Delta H = +57\mathrm{ kJ/mol}$ and
-$\Delta S = +176\mathrm{ J/(mol}\cdot\mathrm{K)}$.
+For the reaction: N$_2$O$_4$(g) $\rightleftharpoons$ 2NO$_2$(g), $\Delta H = +57\mathrm{ kJ/mol}$
+and $\Delta S = +176\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 At what temperature does the reaction become spontaneous?
 
@@ -700,14 +701,14 @@ The enthalpy of atomisation is the enthalpy change to form one mole of gaseous a
 element in its standard state under standard conditions.
 
 | Element      | Standard State | $\Delta H_{\mathrm{at}}$ (kJ/mol) |
-| ------------ | -------------- | ------------------------------- |
-| Na           | Solid          | $+108$                          |
-| Mg           | Solid          | $+148$                          |
-| Al           | Solid          | $+330$                          |
-| Cl$_2$       | Gas            | $+122$                          |
-| H$_2$        | Gas            | $+218$                          |
-| C (graphite) | Solid          | $+717$                          |
-| O$_2$        | Gas            | $+249$                          |
+| ------------ | -------------- | --------------------------------- |
+| Na           | Solid          | $+108$                            |
+| Mg           | Solid          | $+148$                            |
+| Al           | Solid          | $+330$                            |
+| Cl$_2$       | Gas            | $+122$                            |
+| H$_2$        | Gas            | $+218$                            |
+| C (graphite) | Solid          | $+717$                            |
+| O$_2$        | Gas            | $+249$                            |
 
 ### Electron Affinity Trends
 
@@ -752,9 +753,9 @@ $$
 
 :::info[Example]
 
-$50\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ HCl and $50\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ NaOH are mixed in a
-calorimeter with heat capacity $15\mathrm{ J/K}$. The temperature rises from $20.0\degree\mathrm{C}$ to
-$26.8\degree\mathrm{C}$.
+$50\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ HCl and $50\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ NaOH are mixed
+in a calorimeter with heat capacity $15\mathrm{ J/K}$. The temperature rises from
+$20.0\degree\mathrm{C}$ to $26.8\degree\mathrm{C}$.
 
 $$
 q_{\mathrm{total}} = (100)(4.18)(6.8) + 15(6.8) = 2842.4 + 102 = 2944.4\mathrm{ J}
@@ -808,7 +809,8 @@ $$
 For the reaction: $\mathrm{N}_2\mathrm{O}(g) \to \mathrm{N}_2(g) + \mathrm{O}_2(g)$,
 $\Delta H = -163\mathrm{ kJ/mol}$ and $\Delta S = +149\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
-**(a)** Calculate $\Delta G^\circ$ at $298\mathrm{ K}$ and state whether the reaction is spontaneous.
+**(a)** Calculate $\Delta G^\circ$ at $298\mathrm{ K}$ and state whether the reaction is
+spontaneous.
 
 $$
 \Delta G^\circ = -163000 - 298 \times 149 = -163000 - 44402 = -207402\mathrm{ J/mol} = -207.4\mathrm{ kJ/mol}
@@ -831,7 +833,10 @@ $\Delta G^\circ$ is negative at all positive temperatures — the reaction is al
 <details>
 <summary>Question 1: Calorimetry Calculation</summary>
 
-$50.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ $\mathrm{HCl}$ is mixed with $50.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ $\mathrm{NaOH}$ in a calorimeter. The temperature increases from $22.0\degree\mathrm{C}$ to $28.8\degree\mathrm{C}$. Calculate the enthalpy of neutralisation per mole of water formed.
+$50.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ $\mathrm{HCl}$ is mixed with $50.0\mathrm{ cm}^3$ of
+$1.0\mathrm{ M}$ $\mathrm{NaOH}$ in a calorimeter. The temperature increases from
+$22.0\degree\mathrm{C}$ to $28.8\degree\mathrm{C}$. Calculate the enthalpy of neutralisation per
+mole of water formed.
 
 </details>
 
@@ -853,7 +858,9 @@ Using standard enthalpies of formation, calculate $\Delta H_r^\circ$ for the com
 
 $$\mathrm{C}_3\mathrm{H}_8(g) + 5\mathrm{O}_2(g) \to 3\mathrm{CO}_2(g) + 4\mathrm{H}_2\mathrm{O}(l)$$
 
-Given: $\Delta H_f^\circ(\mathrm{C}_3\mathrm{H}_8) = -104\mathrm{ kJ/mol}$, $\Delta H_f^\circ(\mathrm{CO}_2) = -394\mathrm{ kJ/mol}$, $\Delta H_f^\circ(\mathrm{H}_2\mathrm{O}) = -286\mathrm{ kJ/mol}$.
+Given: $\Delta H_f^\circ(\mathrm{C}_3\mathrm{H}_8) = -104\mathrm{ kJ/mol}$,
+$\Delta H_f^\circ(\mathrm{CO}_2) = -394\mathrm{ kJ/mol}$,
+$\Delta H_f^\circ(\mathrm{H}_2\mathrm{O}) = -286\mathrm{ kJ/mol}$.
 
 </details>
 
@@ -875,14 +882,16 @@ Using average bond enthalpies, calculate $\Delta H$ for the reaction:
 
 $$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$$
 
-Given: $\mathrm{N} \equiv \mathrm{N} = 945\mathrm{ kJ/mol}$, $\mathrm{H}-\mathrm{H} = 436\mathrm{ kJ/mol}$, $\mathrm{N}-\mathrm{H} = 391\mathrm{ kJ/mol}$.
+Given: $\mathrm{N} \equiv \mathrm{N} = 945\mathrm{ kJ/mol}$,
+$\mathrm{H}-\mathrm{H} = 436\mathrm{ kJ/mol}$, $\mathrm{N}-\mathrm{H} = 391\mathrm{ kJ/mol}$.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Bonds broken: $1(\mathrm{N} \equiv \mathrm{N}) + 3(\mathrm{H}-\mathrm{H}) = 945 + 3(436) = 945 + 1308 = 2253\mathrm{ kJ/mol}$
+Bonds broken:
+$1(\mathrm{N} \equiv \mathrm{N}) + 3(\mathrm{H}-\mathrm{H}) = 945 + 3(436) = 945 + 1308 = 2253\mathrm{ kJ/mol}$
 
 Bonds formed: $6(\mathrm{N}-\mathrm{H}) = 6 \times 391 = 2346\mathrm{ kJ/mol}$
 
@@ -910,7 +919,8 @@ $\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +161\mathrm{ J/(mol \cdot K)}$.
 <details>
 <summary>Answer</summary>
 
-(a) $$\Delta G = \Delta H - T\Delta S = 178000 - 298 \times 161 = 178000 - 47978 = +130\,022\mathrm{ J/mol} = +130\mathrm{ kJ/mol}$$
+(a)
+$$\Delta G = \Delta H - T\Delta S = 178000 - 298 \times 161 = 178000 - 47978 = +130\,022\mathrm{ J/mol} = +130\mathrm{ kJ/mol}$$
 
 Since $\Delta G \gt 0$, the reaction is **not spontaneous** at $298\mathrm{ K}$.
 
@@ -938,10 +948,13 @@ Predict the sign of $\Delta S$ for each of the following processes and explain:
 <details>
 <summary>Answer</summary>
 
-(a) **Positive** $\Delta S$: One mole of solid produces two moles of gas, significantly increasing disorder.
+(a) **Positive** $\Delta S$: One mole of solid produces two moles of gas, significantly increasing
+disorder.
 
-(b) **Negative** $\Delta S$: Three moles of gas produce two moles of gas, decreasing the number of gaseous particles and thus disorder.
+(b) **Negative** $\Delta S$: Three moles of gas produce two moles of gas, decreasing the number of
+gaseous particles and thus disorder.
 
-(c) **Positive** $\Delta S$: An ordered solid lattice breaks apart into freely moving hydrated ions in solution, increasing disorder.
+(c) **Positive** $\Delta S$: An ordered solid lattice breaks apart into freely moving hydrated ions
+in solution, increasing disorder.
+
 </details>
-

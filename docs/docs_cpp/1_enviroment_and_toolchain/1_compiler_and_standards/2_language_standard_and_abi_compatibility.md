@@ -81,11 +81,9 @@ clang++ -std=c++23 -stdlib=libc++ main.cpp
 clang++ -std=c++23 -stdlib=libstdc++ main.cpp
 ```
 
-:::warning
-Library Availability On Linux, using `-stdlib=libc++` requires the installation of
+:::warning Library Availability On Linux, using `-stdlib=libc++` requires the installation of
 specific library packages (e.g., `libc++-dev` and `libc++abi-dev` on Debian/Ubuntu). If these are
-missing, the linker will fail to find symbols.
-:::
+missing, the linker will fail to find symbols. :::
 
 ## Application Binary Interface (ABI)
 
@@ -452,11 +450,9 @@ stability since GCC 5.1.
 | GCC Linux $\leftrightarrow$ Clang Linux (`libstdc++`)      | Usually     | Same `libstdc++.so` must be used at runtime          |
 | MSVC 2019 $\leftrightarrow$ MSVC 2022                      | Usually     | MSVC STL aims for ABI stability, but not guaranteed  |
 
-:::warning
-Mixing Clang and GCC on Linux with the same `libstdc++` is generally safe for the same
+:::warning Mixing Clang and GCC on Linux with the same `libstdc++` is generally safe for the same
 C++ standard version. However, some ABI-affecting flags (like `-D_GLIBCXX_USE_CXX11_ABI`) must be
-consistent across all object files in the final binary.
-:::
+consistent across all object files in the final binary. :::
 
 ## MSVC ABI Differences
 

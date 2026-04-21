@@ -30,17 +30,17 @@ $\mathrm{H}_2\mathrm{O}$ is oxidised to $\mathrm{O}_2$ (loss of electrons).
 The leaf is the primary photosynthetic organ. Its structure is optimised for maximising light
 absorption, $\mathrm{CO}_2$ uptake, and water exchange.
 
-| Structure          | Adaptation for Photosynthesis                                                                        |
-| ------------------ | ---------------------------------------------------------------------------------------------------- |
-| Large surface area | Maximises light absorption                                                                           |
+| Structure          | Adaptation for Photosynthesis                                                                          |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| Large surface area | Maximises light absorption                                                                             |
 | Thin and flat      | Short diffusion distance for $\mathrm{CO}_2$ and light                                                 |
-| Waxy cuticle       | Reduces water loss by evaporation                                                                    |
-| Palisade mesophyll | Densely packed cells at the top of the leaf; rich in chloroplasts; main site of photosynthesis       |
+| Waxy cuticle       | Reduces water loss by evaporation                                                                      |
+| Palisade mesophyll | Densely packed cells at the top of the leaf; rich in chloroplasts; main site of photosynthesis         |
 | Spongy mesophyll   | Loosely packed with air spaces; facilitates gas exchange ($\mathrm{CO}_2$ diffusion to palisade cells) |
-| Stomata            | Pores in the lower epidermis; allow $\mathrm{CO}_2$ to enter and $\mathrm{O}_2$ to exit                  |
-| Veins (xylem)      | Supply water to mesophyll cells                                                                      |
-| Veins (phloem)     | Transport sugars (products of photosynthesis) away from the leaf                                     |
-| Chloroplasts       | Contain chlorophyll and other pigments; site of the light-dependent and light-independent reactions  |
+| Stomata            | Pores in the lower epidermis; allow $\mathrm{CO}_2$ to enter and $\mathrm{O}_2$ to exit                |
+| Veins (xylem)      | Supply water to mesophyll cells                                                                        |
+| Veins (phloem)     | Transport sugars (products of photosynthesis) away from the leaf                                       |
+| Chloroplasts       | Contain chlorophyll and other pigments; site of the light-dependent and light-independent reactions    |
 
 **Cross-section of a leaf (layers from top to bottom):**
 
@@ -77,9 +77,10 @@ The $\mathrm{O}_2$ is released as a by-product. This is the source of atmospheri
    plastocyanin). As electrons move through the chain, energy is released and used to pump
    $\mathrm{H}^+$ ions from the stroma into the thylakoid lumen, creating a proton gradient.
 
-4. **Chemiosmosis:** $\mathrm{H}^+$ ions accumulate in the thylakoid lumen, creating a proton gradient
-   (electrochemical gradient). $\mathrm{H}^+$ ions flow back into the stroma through ATP synthase,
-   driving the synthesis of ATP from ADP and $\mathrm{P}_i$. This is called **photophosphorylation**.
+4. **Chemiosmosis:** $\mathrm{H}^+$ ions accumulate in the thylakoid lumen, creating a proton
+   gradient (electrochemical gradient). $\mathrm{H}^+$ ions flow back into the stroma through ATP
+   synthase, driving the synthesis of ATP from ADP and $\mathrm{P}_i$. This is called
+   **photophosphorylation**.
 
 5. **Photoexcitation of Photosystem I (PSI):** Light energy excites another electron in PSI (P700).
    The electron from PSII replaces the electron lost by P700.
@@ -134,12 +135,12 @@ $$6\mathrm{CO}_2 + 18\mathrm{ATP} + 12\mathrm{NADPH} \to \mathrm{C}_6\mathrm{H}_
 A limiting factor is the factor that is closest to its minimum and therefore limits the rate of the
 process at any given time. The rate of photosynthesis is determined by the slowest of these factors.
 
-| Factor                      | Effect on Rate                                                                                                  |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Light intensity             | Increases rate up to a plateau (light saturation point); beyond this, another factor is limiting                |
-| $\mathrm{CO}_2$ concentration | Increases rate up to a plateau; low $\mathrm{CO}_2$ limits carbon fixation by RuBisCO                             |
-| Temperature                 | Increases rate up to the optimum (approximately 25-30 degrees C for most plants); beyond this, enzymes denature |
-| Water availability          | Severe water shortage closes stomata, reducing $\mathrm{CO}_2$ uptake; usually not limiting except in drought     |
+| Factor                        | Effect on Rate                                                                                                  |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Light intensity               | Increases rate up to a plateau (light saturation point); beyond this, another factor is limiting                |
+| $\mathrm{CO}_2$ concentration | Increases rate up to a plateau; low $\mathrm{CO}_2$ limits carbon fixation by RuBisCO                           |
+| Temperature                   | Increases rate up to the optimum (approximately 25-30 degrees C for most plants); beyond this, enzymes denature |
+| Water availability            | Severe water shortage closes stomata, reducing $\mathrm{CO}_2$ uptake; usually not limiting except in drought   |
 
 **Interpreting limiting factor graphs:**
 
@@ -150,12 +151,10 @@ process at any given time. The rate of photosynthesis is determined by the slowe
 - On a graph of rate vs temperature, the rate increases to an optimum then drops sharply. The drop
   is due to denaturation of RuBisCO and other Calvin cycle enzymes.
 
-:::info
-At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
-can bind $\mathrm{O}_2$ instead of $\mathrm{CO}_2$ (oxygenase activity), which does not produce glucose
-and wastes energy. This is more significant at high temperatures and low $\mathrm{CO}_2$
-concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration.
-:::
+:::info At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
+can bind $\mathrm{O}_2$ instead of $\mathrm{CO}_2$ (oxygenase activity), which does not produce
+glucose and wastes energy. This is more significant at high temperatures and low $\mathrm{CO}_2$
+concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration. :::
 
 ---
 
@@ -194,21 +193,21 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 
 ### Factors Affecting Stomatal Opening
 
-| Factor        | Effect                                                                        |
-| ------------- | ----------------------------------------------------------------------------- |
-| Light         | Opens stomata (blue light is particularly effective via blue-light receptors) |
-| $\mathrm{CO}_2$ | High $\mathrm{CO}_2$ closes stomata; low $\mathrm{CO}_2$ opens them               |
-| Temperature   | Moderate warmth opens stomata; extreme heat may close them (water stress)     |
-| Water supply  | Abundant water keeps stomata open; drought causes closure via ABA             |
-| Time of day   | Most plants open stomata during the day and close at night (circadian rhythm) |
-| Wind          | Strong wind may cause closure by increasing transpiration rate (water stress) |
+| Factor          | Effect                                                                        |
+| --------------- | ----------------------------------------------------------------------------- |
+| Light           | Opens stomata (blue light is particularly effective via blue-light receptors) |
+| $\mathrm{CO}_2$ | High $\mathrm{CO}_2$ closes stomata; low $\mathrm{CO}_2$ opens them           |
+| Temperature     | Moderate warmth opens stomata; extreme heat may close them (water stress)     |
+| Water supply    | Abundant water keeps stomata open; drought causes closure via ABA             |
+| Time of day     | Most plants open stomata during the day and close at night (circadian rhythm) |
+| Wind            | Strong wind may cause closure by increasing transpiration rate (water stress) |
 
 ### Gas Exchange Through Stomata
 
 During the day, photosynthesis is occurring and $\mathrm{CO}_2$ is being consumed. The concentration
 of $\mathrm{CO}_2$ inside the leaf is lower than in the atmosphere, so $\mathrm{CO}_2$ diffuses in
-through the stomata. $\mathrm{O}_2$, produced as a by-product of photolysis, diffuses out through the
-stomata.
+through the stomata. $\mathrm{O}_2$, produced as a by-product of photolysis, diffuses out through
+the stomata.
 
 $$\mathrm{CO}_2 \mathrm{ (atmosphere)} \to \mathrm{stomata} \to \mathrm{air spaces} \to \mathrm{mesophyll cells} \to \mathrm{chloroplasts}$$
 
@@ -335,12 +334,10 @@ Water moves up the xylem against gravity through three contributing mechanisms:
 - The narrow diameter of xylem vessels causes water to rise by capillarity
 - This contributes minimally to water transport in tall plants but is significant in small plants
 
-:::warning
-A common DSE pitfall is writing that root pressure is the main mechanism for water
+:::warning A common DSE pitfall is writing that root pressure is the main mechanism for water
 transport in tall trees. Root pressure alone can only push water a few metres. The cohesion-tension
 theory is the dominant mechanism in tall plants. Root pressure is supplementary and is only
-significant in small plants or under conditions of low transpiration.
-:::
+significant in small plants or under conditions of low transpiration. :::
 
 ### Phloem Structure and Function
 
@@ -603,8 +600,8 @@ NAA (naphthaleneacetic acid).
 **Effects of auxins:**
 
 1. **Cell elongation:** Auxins stimulate cell elongation in shoots by:
-   - Activating proton pumps ($\mathrm{H}^+$-ATPases) in the cell membrane, pumping $\mathrm{H}^+$ into
-     the cell wall
+   - Activating proton pumps ($\mathrm{H}^+$-ATPases) in the cell membrane, pumping $\mathrm{H}^+$
+     into the cell wall
    - Lowering pH in the cell wall activates enzymes (expansins) that break cross-links between
      cellulose microfibrils
    - The cell wall becomes more flexible and stretches as water enters the cell by osmosis
@@ -674,12 +671,10 @@ growth can be towards (positive tropism) or away from (negative tropism) the sti
 4. The upper side (lower auxin) elongates more than the lower side (higher auxin), causing the root
    to bend downwards
 
-:::warning
-The critical distinction for DSE is that auxin has opposite effects on cell elongation in
+:::warning The critical distinction for DSE is that auxin has opposite effects on cell elongation in
 shoots versus roots. In shoots, auxin promotes elongation (high concentration side grows more). In
 roots, auxin inhibits elongation (low concentration side grows more). This is why shoots bend
-towards light but roots bend away from it when auxin redistributes.
-:::
+towards light but roots bend away from it when auxin redistributes. :::
 
 ### Auxin and Gibberellin Interactions
 

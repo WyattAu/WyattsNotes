@@ -47,10 +47,8 @@ Since $f = \frac{1}{T}$, we can also write:
 
 $$v = \frac{\lambda}{T}$$
 
-:::info
-The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
-electromagnetic.
-:::
+:::info The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
+electromagnetic. :::
 
 ### Worked Example 1
 
@@ -103,11 +101,9 @@ $$n = \frac{c}{v}$$
 
 Where $c$ is the speed of light in vacuum and $v$ is the speed of light in the medium.
 
-:::info
-When a wave enters a denser medium (higher refractive index), it slows down and bends
+:::info When a wave enters a denser medium (higher refractive index), it slows down and bends
 **towards** the normal. When entering a less dense medium, it speeds up and bends **away** from the
-normal.
-:::
+normal. :::
 
 ### Total Internal Reflection
 
@@ -188,8 +184,8 @@ For a string of length $L$ fixed at both ends:
 
 ### Worked Example 4
 
-A string of length $0.8 \mathrm{ m}$ has a fundamental frequency of $220 \mathrm{ Hz}$. Find the wave
-speed and the frequency of the third harmonic.
+A string of length $0.8 \mathrm{ m}$ has a fundamental frequency of $220 \mathrm{ Hz}$. Find the
+wave speed and the frequency of the third harmonic.
 
 $$v = f_1 \times \lambda_1 = 220 \times 2(0.8) = 352 \mathrm{ m/s}$$
 
@@ -204,14 +200,14 @@ $$f_3 = 3f_1 = 3 \times 220 = 660 \mathrm{ Hz}$$
 Sound is a longitudinal mechanical wave that requires a medium to propagate. It cannot travel
 through a vacuum.
 
-| Property                           | Description                            |
-| ---------------------------------- | -------------------------------------- |
-| Speed in air at $20^\circ\mathrm{C}$ | Approximately $343 \mathrm{ m/s}$        |
-| Speed in water                     | Approximately $1480 \mathrm{ m/s}$       |
-| Speed in steel                     | Approximately $5960 \mathrm{ m/s}$       |
-| Audible range                      | $20 \mathrm{ Hz}$ to $20,000 \mathrm{ Hz}$ |
-| Infrasonic                         | Below $20 \mathrm{ Hz}$                  |
-| Ultrasonic                         | Above $20,000 \mathrm{ Hz}$              |
+| Property                             | Description                                |
+| ------------------------------------ | ------------------------------------------ |
+| Speed in air at $20^\circ\mathrm{C}$ | Approximately $343 \mathrm{ m/s}$          |
+| Speed in water                       | Approximately $1480 \mathrm{ m/s}$         |
+| Speed in steel                       | Approximately $5960 \mathrm{ m/s}$         |
+| Audible range                        | $20 \mathrm{ Hz}$ to $20,000 \mathrm{ Hz}$ |
+| Infrasonic                           | Below $20 \mathrm{ Hz}$                    |
+| Ultrasonic                           | Above $20,000 \mathrm{ Hz}$                |
 
 ### Intensity and Loudness
 
@@ -229,16 +225,14 @@ $$\beta = 10\log_{10}\left(\frac{I}{I_0}\right)$$
 
 Where $I_0 = 10^{-12} \mathrm{ W/m}^2$ is the threshold of hearing.
 
-:::warning
-Loudness is a subjective measure (perceived by the ear) while intensity is an objective
-physical quantity. A $10 \mathrm{ dB}$ increase corresponds to a $10\times$ increase in intensity, but
-is perceived as roughly a doubling of loudness.
-:::
+:::warning Loudness is a subjective measure (perceived by the ear) while intensity is an objective
+physical quantity. A $10 \mathrm{ dB}$ increase corresponds to a $10\times$ increase in intensity,
+but is perceived as roughly a doubling of loudness. :::
 
 ### Worked Example 5
 
-The intensity of one sound is $10^{-4} \mathrm{ W/m}^2$ and another is $10^{-2} \mathrm{ W/m}^2$. Find
-the difference in loudness level.
+The intensity of one sound is $10^{-4} \mathrm{ W/m}^2$ and another is $10^{-2} \mathrm{ W/m}^2$.
+Find the difference in loudness level.
 
 $$\Delta\beta = 10\log_{10}\left(\frac{10^{-2}}{10^{-4}}\right) = 10\log_{10}(100) = 10 \times 2 = 20 \mathrm{ dB}$$
 
@@ -260,15 +254,15 @@ $c = 3 \times 10^8 \mathrm{ m/s}$.
 
 ### EM Spectrum Summary
 
-| Type          | Wavelength Range                     | Frequency Range                                       | Source                       |
-| ------------- | ------------------------------------ | ----------------------------------------------------- | ---------------------------- |
-| Radio waves   | $\gt 0.1 \mathrm{ m}$                  | $\lt 3 \times 10^9 \mathrm{ Hz}$                        | Oscillating circuits         |
+| Type          | Wavelength Range                         | Frequency Range                                         | Source                       |
+| ------------- | ---------------------------------------- | ------------------------------------------------------- | ---------------------------- |
+| Radio waves   | $\gt 0.1 \mathrm{ m}$                    | $\lt 3 \times 10^9 \mathrm{ Hz}$                        | Oscillating circuits         |
 | Microwaves    | $0.1 \mathrm{ mm}$ to $0.1 \mathrm{ m}$  | $3 \times 10^9$ to $3 \times 10^{11} \mathrm{ Hz}$      | Magnetron                    |
 | Infrared      | $700 \mathrm{ nm}$ to $1 \mathrm{ mm}$   | $3 \times 10^{11}$ to $4 \times 10^{14} \mathrm{ Hz}$   | Hot objects                  |
 | Visible light | $400 \mathrm{ nm}$ to $700 \mathrm{ nm}$ | $4 \times 10^{14}$ to $7.5 \times 10^{14} \mathrm{ Hz}$ | Luminous objects             |
 | Ultraviolet   | $10 \mathrm{ nm}$ to $400 \mathrm{ nm}$  | $7.5 \times 10^{14}$ to $3 \times 10^{16} \mathrm{ Hz}$ | Hot objects, discharge tubes |
 | X-rays        | $0.01 \mathrm{ nm}$ to $10 \mathrm{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19} \mathrm{ Hz}$   | Electron bombardment         |
-| Gamma rays    | $\lt 0.01 \mathrm{ nm}$                | $\gt 3 \times 10^{19} \mathrm{ Hz}$                     | Radioactive decay            |
+| Gamma rays    | $\lt 0.01 \mathrm{ nm}$                  | $\gt 3 \times 10^{19} \mathrm{ Hz}$                     | Radioactive decay            |
 
 All EM waves:
 
@@ -279,11 +273,9 @@ All EM waves:
 - Obey the wave equation $c = f\lambda$
 - Can be reflected, refracted, and diffracted
 
-:::tip
-For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
+:::tip For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
 **R**adio, **M**icrowaves, **I**nfrared, **V**isible, **U**ltraviolet, **X**-rays, **G**amma rays
-(RMIVUXG).
-:::
+(RMIVUXG). :::
 
 ---
 
@@ -358,8 +350,8 @@ $$v = 60 \mathrm{ cm}$$
 
 $$m = \frac{v}{u} = \frac{60}{-30} = -2$$
 
-The image is real, inverted, and twice the size of the object, located $60 \mathrm{ cm}$ on the other
-side of the lens.
+The image is real, inverted, and twice the size of the object, located $60 \mathrm{ cm}$ on the
+other side of the lens.
 
 ---
 
@@ -384,11 +376,9 @@ internal reflection and travels along the fibre.
 - Medical endoscopy
 - Decorative lighting
 
-:::warning
-In exam questions, always check whether you need to calculate the critical angle or the
+:::warning In exam questions, always check whether you need to calculate the critical angle or the
 acceptance angle. The acceptance angle is the maximum angle at which light can enter the fibre and
-still undergo total internal reflection.
-:::
+still undergo total internal reflection. :::
 
 ### Worked Example 7
 
@@ -458,8 +448,8 @@ After the second filter: $I_2 = I_1\cos^2 60^\circ = 100 \times 0.25 = 25 \mathr
 <summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** Light of wavelength $600 \mathrm{ nm}$ is incident on a pair of slits separated by
-$0.2 \mathrm{ mm}$. The screen is $1.5 \mathrm{ m}$ away. Find the distance between the central maximum
-and the third bright fringe.
+$0.2 \mathrm{ mm}$. The screen is $1.5 \mathrm{ m}$ away. Find the distance between the central
+maximum and the third bright fringe.
 
 $$y = \frac{n\lambda D}{a} = \frac{3 \times 600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{2.7 \times 10^{-6}}{2 \times 10^{-4}} = 0.0135 \mathrm{ m} = 13.5 \mathrm{ mm}$$
 
@@ -474,24 +464,26 @@ $$\frac{1}{v} = -\frac{1}{15} - \frac{1}{25} = \frac{-5 - 3}{75} = -\frac{8}{75}
 
 $$v = -9.375 \mathrm{ cm}$$
 
-The image is virtual, upright, and $9.375 \mathrm{ cm}$ from the lens on the same side as the object.
+The image is virtual, upright, and $9.375 \mathrm{ cm}$ from the lens on the same side as the
+object.
 
 **Question 3:** The critical angle for a glass-air boundary is $42^\circ$. Find the refractive index
 of the glass.
 
 $$n = \frac{1}{\sin 42^\circ} = \frac{1}{0.669} = 1.49$$
 
-**Question 4:** Unpolarised light of intensity $300 \mathrm{ W/m}^2$ passes through a Polaroid filter.
-What is the transmitted intensity?
+**Question 4:** Unpolarised light of intensity $300 \mathrm{ W/m}^2$ passes through a Polaroid
+filter. What is the transmitted intensity?
 
 The first Polaroid reduces the intensity by half: $I = 150 \mathrm{ W/m}^2$.
 
-**Question 5:** A stationary wave is set up on a string of length $1.2 \mathrm{ m}$. The speed of the
-waves on the string is $24 \mathrm{ m/s}$. Find the frequency of the second harmonic.
+**Question 5:** A stationary wave is set up on a string of length $1.2 \mathrm{ m}$. The speed of
+the waves on the string is $24 \mathrm{ m/s}$. Find the frequency of the second harmonic.
 
 For the second harmonic: $\lambda_2 = L = 1.2 \mathrm{ m}$
 
 $$f_2 = \frac{v}{\lambda_2} = \frac{24}{1.2} = 20 \mathrm{ Hz}$$
+
 </details>
 
 ---
@@ -536,16 +528,14 @@ The observed frequency is lower than the source frequency.
 - **Astronomy:** Red shift indicates galaxies moving away from us; blue shift indicates approach
 - **Weather radar:** Doppler radar detects the movement of precipitation
 
-:::info
-Red shift occurs when a light source moves away from the observer. The observed wavelength
+:::info Red shift occurs when a light source moves away from the observer. The observed wavelength
 increases (shifts towards the red end of the spectrum). This is key evidence for the expansion of
-the universe.
-:::
+the universe. :::
 
 ### Worked Example 9
 
-A police car sounding a siren of frequency $500 \mathrm{ Hz}$ travels at $30 \mathrm{ m/s}$ towards a
-stationary observer. The speed of sound is $340 \mathrm{ m/s}$. Find the frequency heard by the
+A police car sounding a siren of frequency $500 \mathrm{ Hz}$ travels at $30 \mathrm{ m/s}$ towards
+a stationary observer. The speed of sound is $340 \mathrm{ m/s}$. Find the frequency heard by the
 observer.
 
 $$f' = f \left(\frac{v}{v - v_s}\right) = 500 \times \frac{340}{340 - 30} = 500 \times \frac{340}{310}$$
@@ -585,8 +575,8 @@ The attenuation of sound in a medium is often expressed in decibels per unit dis
 
 ### Worked Example 11
 
-A source emits sound with power $0.01 \mathrm{ W}$. Find the intensity at distances of $5 \mathrm{ m}$
-and $20 \mathrm{ m}$ from the source.
+A source emits sound with power $0.01 \mathrm{ W}$. Find the intensity at distances of
+$5 \mathrm{ m}$ and $20 \mathrm{ m}$ from the source.
 
 At $r = 5 \mathrm{ m}$:
 
@@ -637,10 +627,8 @@ Damping reduces the amplitude of oscillations over time by dissipating energy.
 - **Critical damping:** System returns to equilibrium in the shortest time without oscillating
 - **Over-damping:** System returns to equilibrium slowly without oscillating
 
-:::warning
-In real-world applications, some damping is often deliberately introduced to prevent
-excessive vibrations at resonance. Car shock absorbers and building dampers are examples.
-:::
+:::warning In real-world applications, some damping is often deliberately introduced to prevent
+excessive vibrations at resonance. Car shock absorbers and building dampers are examples. :::
 
 ---
 
@@ -672,15 +660,15 @@ All harmonics are present in an open pipe.
 
 ### Worked Example 12
 
-A closed pipe of length $0.85 \mathrm{ m}$ produces a fundamental frequency of $100 \mathrm{ Hz}$. Find
-the speed of sound.
+A closed pipe of length $0.85 \mathrm{ m}$ produces a fundamental frequency of $100 \mathrm{ Hz}$.
+Find the speed of sound.
 
 $$v = 4Lf_1 = 4 \times 0.85 \times 100 = 340 \mathrm{ m/s}$$
 
 ### Worked Example 13
 
-Find the frequency of the second harmonic that a closed pipe of length $0.5 \mathrm{ m}$ can support.
-Take the speed of sound as $340 \mathrm{ m/s}$.
+Find the frequency of the second harmonic that a closed pipe of length $0.5 \mathrm{ m}$ can
+support. Take the speed of sound as $340 \mathrm{ m/s}$.
 
 A closed pipe only supports odd harmonics. The "second harmonic" that exists is actually the 3rd
 harmonic:
@@ -724,16 +712,16 @@ $$\sin\theta_2 = \frac{1.33 \times 0.6428}{1.5} = \frac{0.855}{1.5} = 0.570$$
 $$\theta_2 = \sin^{-1}(0.570) = 34.7^\circ$$
 
 **Question 8:** A source of sound of frequency $600 \mathrm{ Hz}$ is placed on a moving train. The
-train moves towards a stationary observer at $25 \mathrm{ m/s}$. Speed of sound is $340 \mathrm{ m/s}$.
-What frequency does the observer hear?
+train moves towards a stationary observer at $25 \mathrm{ m/s}$. Speed of sound is
+$340 \mathrm{ m/s}$. What frequency does the observer hear?
 
 $$f' = f \left(\frac{v}{v - v_s}\right) = 600 \times \frac{340}{340 - 25} = 600 \times \frac{340}{315}$$
 
 $$f' = 600 \times 1.079 = 647.6 \mathrm{ Hz}$$
 
 **Question 9:** Two point sources are $3 \mathrm{ mm}$ apart and emit coherent light of wavelength
-$600 \mathrm{ nm}$. A screen is placed $2 \mathrm{ m}$ away. Find the separation between adjacent bright
-fringes.
+$600 \mathrm{ nm}$. A screen is placed $2 \mathrm{ m}$ away. Find the separation between adjacent
+bright fringes.
 
 $$y = \frac{\lambda D}{a} = \frac{600 \times 10^{-9} \times 2}{3 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{3 \times 10^{-3}} = 4 \times 10^{-4} \mathrm{ m} = 0.4 \mathrm{ mm}$$
 
@@ -759,16 +747,16 @@ $$v = 24 \mathrm{ cm}$$
 
 $$m = \frac{v}{u} = \frac{24}{-12} = -2$$
 
-The image is real, inverted, magnified ($2\times$), and located $24 \mathrm{ cm}$ from the lens on the
-opposite side.
+The image is real, inverted, magnified ($2\times$), and located $24 \mathrm{ cm}$ from the lens on
+the opposite side.
 
 **Question 12:** Calculate the speed of light in glass of refractive index $1.52$.
 
 $$v = \frac{c}{n} = \frac{3 \times 10^8}{1.52} = 1.97 \times 10^8 \mathrm{ m/s}$$
 
 **Question 13:** A sound source emits waves of frequency $440 \mathrm{ Hz}$ and wavelength
-$0.78 \mathrm{ m}$. The source moves towards a stationary observer at $20 \mathrm{ m/s}$. What frequency
-does the observer hear?
+$0.78 \mathrm{ m}$. The source moves towards a stationary observer at $20 \mathrm{ m/s}$. What
+frequency does the observer hear?
 
 $$v_{\mathrm{sound}} = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s}$$
 
@@ -787,8 +775,9 @@ bend causes the ray to strike at $85^\circ$ (instead of $90^\circ$ for a straigh
 $$\sin\theta_c = \sin 85^\circ = 0.996$$
 
 The core must have refractive index such that the critical angle is less than $85^\circ$, i.e.,
-$n_{\mathrm{core}}/n_{\mathrm{cladding}} \gt 1.004$. In practice, optical fibres are designed with much
-larger refractive index differences to accommodate bends.
+$n_{\mathrm{core}}/n_{\mathrm{cladding}} \gt 1.004$. In practice, optical fibres are designed with
+much larger refractive index differences to accommodate bends.
+
 </details>
 
 ---
@@ -820,8 +809,8 @@ between the two media. A gel is applied between the transducer and the skin to e
 ### Worked Example 14
 
 Ultrasound pulses are sent into the body and the echo from an organ returns after
-$40 \mathrm{ \mu s}$. The speed of ultrasound in tissue is $1540 \mathrm{ m/s}$. Find the depth of the
-organ.
+$40 \mathrm{ \mu s}$. The speed of ultrasound in tissue is $1540 \mathrm{ m/s}$. Find the depth of
+the organ.
 
 $$d = \frac{vt}{2} = \frac{1540 \times 40 \times 10^{-6}}{2} = \frac{0.0616}{2} = 0.0308 \mathrm{ m} = 3.08 \mathrm{ cm}$$
 

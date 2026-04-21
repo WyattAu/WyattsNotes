@@ -32,10 +32,10 @@ $$\mathrm{Real GDP} = \frac{\mathrm{Nominal GDP}}{\mathrm{GDP Deflator}} \times 
 
 Real GDP adjusts for price level changes and is a better measure of actual output growth.
 
-**GDP per capita** ($\mathrm{GDP} / \mathrm{Population}$) is used as a rough proxy for living standards
-but has significant limitations: it does not account for income distribution, non-market activities
-(subsistence farming, unpaid domestic work), environmental degradation, or the value of leisure
-time.
+**GDP per capita** ($\mathrm{GDP} / \mathrm{Population}$) is used as a rough proxy for living
+standards but has significant limitations: it does not account for income distribution, non-market
+activities (subsistence farming, unpaid domestic work), environmental degradation, or the value of
+leisure time.
 
 **Gross National Income (GNI)** measures the total income earned by a nation's residents regardless
 of where it is earned: $\mathrm{GNI} = \mathrm{GDP} + \mathrm{Net income from abroad}$.

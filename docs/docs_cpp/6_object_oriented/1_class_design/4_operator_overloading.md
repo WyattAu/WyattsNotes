@@ -377,10 +377,8 @@ int main() {
 }
 ```
 
-:::tip
-Prefer Prefix Prefix increment avoids creating a temporary copy. In performance-sensitive
-code, prefer `++it` over `it++` for iterators and counters.
-:::
+:::tip Prefer Prefix Prefix increment avoids creating a temporary copy. In performance-sensitive
+code, prefer `++it` over `it++` for iterators and counters. :::
 
 ## 4.7 Stream Insertion and Extraction Operators
 
@@ -714,11 +712,9 @@ int main() {
 }
 ```
 
-:::warning
-Do not overload `operator*`, `operator->`, or `operator bool` on custom types unless you
+:::warning Do not overload `operator*`, `operator->`, or `operator bool` on custom types unless you
 are implementing a smart pointer or proxy object. Overloading these operators on regular types
-creates confusing semantics that mislead readers into expecting pointer-like behavior.
-:::
+creates confusing semantics that mislead readers into expecting pointer-like behavior. :::
 
 ## Common Pitfalls
 

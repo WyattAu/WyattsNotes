@@ -54,12 +54,10 @@ frequent crossing over approximate independent assortment).
 In a heterozygote, one allele may mask the expression of another. The allele that is expressed is
 dominant; the allele that is masked is recessive.
 
-:::info
-Mendel's laws are idealisations that assume: (a) genes are on different chromosomes, (b)
+:::info Mendel's laws are idealisations that assume: (a) genes are on different chromosomes, (b)
 complete dominance, (c) no gene interaction, and (d) no linkage. Real organisms frequently violate
 one or more of these assumptions. The DSE syllabus expects you to recognise when Mendelian ratios do
-not hold and to explain why.
-:::
+not hold and to explain why. :::
 
 ### Monohybrid Crosses
 
@@ -214,11 +212,9 @@ Three alleles exist at the I locus:
 | I^A I^B  | AB        | A and B  | None           |
 | ii       | O         | None     | Anti-A, Anti-B |
 
-:::warning
-A common error is writing "three alleles" when the question asks about an individual's
+:::warning A common error is writing "three alleles" when the question asks about an individual's
 genotype. An individual always carries exactly two alleles. The phrase "multiple alleles" refers to
-the gene pool of the entire population, not to a single organism.
-:::
+the gene pool of the entire population, not to a single organism. :::
 
 **Worked calculation:**
 
@@ -351,12 +347,10 @@ When constructing genetic diagrams for DSE examinations, follow these convention
 6. Read off the genotypic and phenotypic ratios
 7. Answer the question using the ratios
 
-:::info
-The forked-line method is generally faster for dihybrid crosses when both genes show
+:::info The forked-line method is generally faster for dihybrid crosses when both genes show
 standard Mendelian ratios. Use a Punnett square when the genes are linked or when you need to show
 all individual genotypes. For X-linked crosses, always use a Punnett square since the gamete
-combinations differ between males and females.
-:::
+combinations differ between males and females. :::
 
 ---
 

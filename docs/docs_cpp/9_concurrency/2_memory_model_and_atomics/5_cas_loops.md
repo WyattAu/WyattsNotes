@@ -52,12 +52,10 @@ bool compare_exchange_strong(T& expected, T desired,
 On failure, `expected` is updated to the current value of the atomic variable, allowing the caller
 to recompute `desired` and retry.
 
-:::tip
-Use `compare_exchange_weak` inside CAS loops because spurious failures are harmless (the loop
+:::tip Use `compare_exchange_weak` inside CAS loops because spurious failures are harmless (the loop
 retries). Use `compare_exchange_strong` when you need to know whether the CAS actually failed due to
 a value mismatch (e.g., when you want to take a different action on real failure vs spurious
-failure).
-:::
+failure). :::
 
 ## When Weak CAS Is Preferable
 
@@ -182,13 +180,11 @@ int main() {
 }
 ```
 
-:::info
-This reference counting example uses `fetch_sub` with `memory_order_acq_rel` for the release
+:::info This reference counting example uses `fetch_sub` with `memory_order_acq_rel` for the release
 operation. The acquire semantics ensure that all accesses to the object (sequenced-before the
 release) are visible to the thread that performs the destruction. The release semantics ensure that
 the destruction itself is visible to other threads. The `fetch_sub` return value is checked against
-1 (not 0) because `fetch_sub` returns the **old** value [N4950 §31.7.2].
-:::
+1 (not 0) because `fetch_sub` returns the **old** value [N4950 §31.7.2]. :::
 
 ## CAS Loop Idioms Summary
 
@@ -199,11 +195,9 @@ the destruction itself is visible to other threads. The `fetch_sub` return value
 | **Remove from list**       | Load head, read next, CAS head to next | Lock-free stack pop            |
 | **Update with validation** | Load, validate invariants, CAS         | Lock-free queue (ABA-safe)     |
 
-:::tip
-When writing CAS loops, always update `desired` based on the new `expected` value after a
+:::tip When writing CAS loops, always update `desired` based on the new `expected` value after a
 failed CAS. The `compare_exchange_weak` function automatically updates `expected` to the current
-value on failure, so you can use it directly in the next iteration's computation.
-:::
+value on failure, so you can use it directly in the next iteration's computation. :::
 
 ## Lock-Free Stack Push and Pop
 

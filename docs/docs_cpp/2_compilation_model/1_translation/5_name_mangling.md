@@ -189,11 +189,9 @@ can exceed 1000 characters.
 nm -C ./app | awk '{ print length, $0 }' | sort -rn | head -20
 ```
 
-:::info
-Return Types The Itanium ABI generally does **not** encode the return type of a function, as
+:::info Return Types The Itanium ABI generally does **not** encode the return type of a function, as
 C++ does not support overloading based solely on return type. Exception: Template functions and
-`auto` return type deduction may trigger return type encoding.
-:::
+`auto` return type deduction may trigger return type encoding. :::
 
 ## 3. The Microsoft ABI (MSVC)
 
@@ -303,11 +301,9 @@ extern "C" void my_callback(int value) {
 c_library_register_callback(my_callback);
 ```
 
-:::warning
-Mixing function pointers with different linkage is undefined behavior [N4950 S10.5 p7]. A
+:::warning Mixing function pointers with different linkage is undefined behavior [N4950 S10.5 p7]. A
 function pointer of type `extern "C"` and one of type C++ linkage are different types, even if they
-have the same parameter and return types. Passing one where the other is expected is UB.
-:::
+have the same parameter and return types. Passing one where the other is expected is UB. :::
 
 ## 5. Inspection and Demangling Tools
 
@@ -651,11 +647,9 @@ This can cause subtle linker errors when a function is declared `noexcept` in on
 another. The mangled names differ, and the linker reports an undefined reference. The fix is to
 ensure the `noexcept` specification is consistent across all declarations.
 
-:::warning
-In C++17, `noexcept` became part of the type system. This means function pointer types
+:::warning In C++17, `noexcept` became part of the type system. This means function pointer types
 are different if their `noexcept` specification differs. A `void(*)(int)` and a
-`void(*)(int) noexcept` are different types and cannot be implicitly converted.
-:::
+`void(*)(int) noexcept` are different types and cannot be implicitly converted. :::
 
 ## 13. Practical Mangling Debugging Workflow
 

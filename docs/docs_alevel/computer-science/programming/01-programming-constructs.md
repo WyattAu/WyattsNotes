@@ -394,8 +394,8 @@ def is_palindrome(s):
 ```
 
 **Termination.** Variant function: $V(s) = \mathrm{len}(s)$. Each recursive call:
-$V(s[1:-1]) = \mathrm{len}(s) - 2 \lt{} V(s)$ for $\mathrm{len}(s) \geq 2$. Since $V$ is a non-negative
-integer that strictly decreases, the function must reach a base case. ✓
+$V(s[1:-1]) = \mathrm{len}(s) - 2 \lt{} V(s)$ for $\mathrm{len}(s) \geq 2$. Since $V$ is a
+non-negative integer that strictly decreases, the function must reach a base case. ✓
 
 </details>
 

@@ -572,7 +572,8 @@ $$
 5. **Angle between line and plane vs angle between line and normal.** The angle $\alpha$ between a
    line and a plane satisfies $\sin\alpha = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. The
    angle between the line and the **normal** satisfies
-   $\cos\phi = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. Note that $\alpha + \phi = 90^\circ$.
+   $\cos\phi = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}$. Note that
+   $\alpha + \phi = 90^\circ$.
 
 6. **Assuming skew lines intersect.** Two lines in 3D are generally skew (neither parallel nor
    intersecting). Always verify that a common solution exists for the parameters.

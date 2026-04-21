@@ -11,15 +11,11 @@ slug: dc-circuits
 
 ## DC Circuits
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
-:::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Kirchhoff's Laws
 
@@ -58,11 +54,9 @@ $$\frac{W_{\mathrm{gained}}}{Q} = \frac{W_{\mathrm{lost}}}{Q} \implies \sum \mat
 
 $\square$
 
-:::tip
-Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
+:::tip Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
 stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
-if current flows through the resistor in your chosen direction.
-:::
+if current flows through the resistor in your chosen direction. :::
 
 ## 2. Series and Parallel Resistors
 
@@ -138,11 +132,9 @@ light intensity:
 
 $$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac{R_{\mathrm{sensor}}}{R_{\mathrm{fixed}} + R_{\mathrm{sensor}}}$$
 
-:::warning
-Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
+:::warning Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
 changes the effective resistance. The simple divider formula no longer applies — you must
-recalculate the parallel combination of $R_2$ and the load.
-:::
+recalculate the parallel combination of $R_2$ and the load. :::
 
 ## 4. Internal Resistance
 
@@ -213,8 +205,8 @@ The Thevenin resistance is the resistance between the two terminals when all ind
 sources are replaced by short circuits (and current sources by open circuits).
 
 **Intuition.** Thevenin's theorem is powerful because it lets you simplify any complex circuit into
-a simple source-resistor pair. Once you know $V_{\mathrm{Th}}$ and $R_{\mathrm{Th}}$, you can predict
-the behaviour of the circuit for any load.
+a simple source-resistor pair. Once you know $V_{\mathrm{Th}}$ and $R_{\mathrm{Th}}$, you can
+predict the behaviour of the circuit for any load.
 
 <details>
 <summary>Example: Thevenin Equivalent</summary>
@@ -291,11 +283,9 @@ for balance.
 
 </details>
 
-:::warning
-Common Pitfall The Wheatstone bridge balance condition only holds when the galvanometer
+:::warning Common Pitfall The Wheatstone bridge balance condition only holds when the galvanometer
 current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's laws (or Thevenin
-analysis) to find the galvanometer current.
-:::
+analysis) to find the galvanometer current. :::
 
 ## 7. Norton's Theorem
 
@@ -319,19 +309,17 @@ Thevenin and Norton equivalents are related by:
 
 $$I_N = \frac{V_{\mathrm{Th}}}{R_{\mathrm{Th}}}, \qquad R_N = R_{\mathrm{Th}}$$
 
-A voltage source $V_{\mathrm{Th}}$ in series with $R_{\mathrm{Th}}$ is equivalent to a current source
-$I_N$ in parallel with $R_N$.
+A voltage source $V_{\mathrm{Th}}$ in series with $R_{\mathrm{Th}}$ is equivalent to a current
+source $I_N$ in parallel with $R_N$.
 
 **Proof.** For the Thevenin equivalent: open-circuit voltage $= V_{\mathrm{Th}}$, short-circuit
-current $= V_{\mathrm{Th}}/R_{\mathrm{Th}}$. For the Norton equivalent: short-circuit current $= I_N$,
-open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}}$ and
-$R_N = R_{\mathrm{Th}}$. $\square$
+current $= V_{\mathrm{Th}}/R_{\mathrm{Th}}$. For the Norton equivalent: short-circuit current
+$= I_N$, open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}}$
+and $R_N = R_{\mathrm{Th}}$. $\square$
 
-:::tip
-Exam Technique Source transformations are useful for simplifying circuits step by step.
+:::tip Exam Technique Source transformations are useful for simplifying circuits step by step.
 Convert a voltage source with series resistance to a Norton equivalent, combine parallel current
-sources, then convert back.
-:::
+sources, then convert back. :::
 
 ## 8. Multi-Loop Circuit Analysis
 
@@ -397,7 +385,8 @@ The measured voltage is:
 
 $$V_{\mathrm{measured}} = V_{\mathrm{in}} \cdot \frac{R_{\mathrm{eff}}}{R_1 + R_{\mathrm{eff}}}$$
 
-which is always less than the true voltage $V_{\mathrm{true}} = V_{\mathrm{in}} \cdot R_2/(R_1 + R_2)$.
+which is always less than the true voltage
+$V_{\mathrm{true}} = V_{\mathrm{in}} \cdot R_2/(R_1 + R_2)$.
 
 **Proof that loading always reduces the reading.** Since $R_{\mathrm{eff}} \lt R_2$ (parallel
 resistance is less than the smallest), and $V_{\mathrm{out}}$ is an increasing function of the lower
@@ -438,11 +427,9 @@ Note the very small shunt resistance — most current bypasses the galvanometer.
 
 </details>
 
-:::warning
-Common Pitfall A voltmeter with insufficiently high resistance can significantly alter
+:::warning Common Pitfall A voltmeter with insufficiently high resistance can significantly alter
 the circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule of thumb:
-$R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
-:::
+$R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error). :::
 
 ## Problem Set
 
@@ -676,7 +663,8 @@ A Wheatstone bridge has $R_1 = 120\,\Omega$, $R_2 = 180\,\Omega$, and $R_3 = 200
 <summary>Problem 14</summary>
 A circuit has a Thevenin equivalent of $V_{\mathrm{Th}} = 20$ V and $R_{\mathrm{Th}} = 5\,\Omega$. Find the Norton equivalent.
 
-**Answer.** $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}} = 20/5 = 4.0$ A. $R_N = R_{\mathrm{Th}} = 5\,\Omega$.
+**Answer.** $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}} = 20/5 = 4.0$ A.
+$R_N = R_{\mathrm{Th}} = 5\,\Omega$.
 
 The Norton equivalent is a 4.0 A current source in parallel with $5\,\Omega$.
 

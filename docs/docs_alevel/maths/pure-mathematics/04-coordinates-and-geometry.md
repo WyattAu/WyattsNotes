@@ -168,10 +168,8 @@ $$\left(x + \frac{D}{2}\right)^2 + \left(y + \frac{E}{2}\right)^2 = \frac{D^2 + 
 This is a circle with centre $\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius
 $\sqrt{\frac{D^2 + E^2}{4} - F}$, provided the right-hand side is positive. $\blacksquare$
 
-:::tip
-To find the centre and radius from the general form, always complete the square in $x$ and
-$y$. This is faster and less error-prone than memorising the formula.
-:::
+:::tip To find the centre and radius from the general form, always complete the square in $x$ and
+$y$. This is faster and less error-prone than memorising the formula. :::
 
 <details>
 <summary>Example</summary>
@@ -339,10 +337,8 @@ $$d = \frac{|3(5) + 4(-2) - 10|}{\sqrt{9 + 16}} = \frac{|15 - 8 - 10|}{\sqrt{25}
 
 </details>
 
-:::info
-The absolute value in the numerator ensures the distance is always non-negative. The sign of
-$ax_0 + by_0 + c$ tells you which side of the line the point lies on.
-:::
+:::info The absolute value in the numerator ensures the distance is always non-negative. The sign of
+$ax_0 + by_0 + c$ tells you which side of the line the point lies on. :::
 
 <hr />
 
@@ -416,11 +412,9 @@ $$
 Subtracting the first equation from the second and third eliminates $F$, yielding a $2 \times 2$
 system in $D$ and $E$. Solve for $D$ and $E$, then substitute back to find $F$.
 
-:::warning
-If the three points are collinear, the system has no solution (no circle passes through
+:::warning If the three points are collinear, the system has no solution (no circle passes through
 three collinear points). You can check collinearity by verifying that the gradient between the first
-two points equals the gradient between the second two.
-:::
+two points equals the gradient between the second two. :::
 
 <details>
 <summary>Worked example</summary>
