@@ -151,13 +151,6 @@ const config: Config = {
         media: '(prefers-color-scheme: dark)',
       },
     ],
-    mdx: {
-      components: {
-        DesmosGraph: require.resolve('./src/components/interactive/DesmosGraph.tsx'),
-        Geogebra: require.resolve('./src/components/interactive/Geogebra.tsx'),
-        PhetSimulation: require.resolve('./src/components/interactive/PhetSimulation.tsx'),
-      },
-    },
     image: 'img/WyattNotes/WyattsNotesSocialCard.jpg',
     navbar: {
       title: "Wyatt's Notes",
