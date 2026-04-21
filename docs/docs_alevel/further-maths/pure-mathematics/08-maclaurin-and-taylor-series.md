@@ -17,6 +17,12 @@ approximation, and analysis that would otherwise be impossible. The Maclaurin se
 function about $x = 0$; the Taylor series generalises this to expansion about any point. Together
 they are among the most powerful tools in analysis and applied mathematics.
 
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Taylor Series Approximation" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
+
 ### Board Coverage
 
 | Board   | Paper   | Notes                                                                                  |

@@ -16,6 +16,12 @@ Polar coordinates $(r, \theta)$ provide an alternative to Cartesian coordinates 
 describing points in the plane. Many curves that are complicated in Cartesian form have simple and
 elegant polar equations, making polar coordinates essential for advanced geometry and calculus.
 
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Polar Coordinate Curves" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
+
 ### Board Coverage
 
 | Board      | Paper   | Notes                                                |

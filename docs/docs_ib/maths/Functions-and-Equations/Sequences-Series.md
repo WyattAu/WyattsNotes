@@ -10,6 +10,12 @@ slug: sequences-series
 
 A **sequence** is an ordered list of numbers. A **series** is the sum of the terms of a sequence.
 
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Sequences and Series Explorer" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
+
 ### Notation
 
 - $u_n$ or $a_n$: the $n$-th term of a sequence

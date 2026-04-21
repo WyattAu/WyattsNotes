@@ -18,6 +18,12 @@ growth to electrical circuits. This chapter covers first-order equations (separa
 factor methods), second-order linear equations with constant coefficients, and modelling
 applications.
 
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Slope Field Explorer" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
+
 ### Board Coverage
 
 | Board   | Paper   | Notes                                                            |

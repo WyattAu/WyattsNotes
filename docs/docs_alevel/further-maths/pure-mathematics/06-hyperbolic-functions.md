@@ -17,6 +17,12 @@ similarities with trigonometric functions. They arise naturally in the solution 
 equations, the description of hanging cables (catenary), special relativity, and many areas of
 physics and engineering.
 
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Hyperbolic Functions" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
+
 ### Board Coverage
 
 | Board      | Paper   | Notes                                                      |

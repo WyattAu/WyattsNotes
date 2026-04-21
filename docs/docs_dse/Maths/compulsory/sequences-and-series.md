@@ -46,6 +46,12 @@ value below is the **lower limit**; the value above is the **upper limit**.
 
 ## Arithmetic Sequences
 
+
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Geometric Series Explorer" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
 ### Definition
 
 An **arithmetic sequence** (or arithmetic progression, AP) is a sequence where the difference
