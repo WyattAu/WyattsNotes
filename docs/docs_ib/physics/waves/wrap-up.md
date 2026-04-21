@@ -207,7 +207,8 @@ to the star.
   - $d = \sqrt{\frac{3.95 \times 10^{26}}{4\pi (1.0 \times 10^{-8})}} = \sqrt{3.14 \times 10^{33}} = 1.77 \times 10^{16}$
     m.
   - This is approximately 1.87 light-years.
-  </details>
+
+</details>
 
 ## Wave Properties, Reflection, Refraction, Diffraction, Interference, Standing Waves & Doppler Effect
 

@@ -454,7 +454,8 @@ A GIS-based investigation could integrate multiple data layers:
 4. **Visualisation:**
    - Create maps showing catchment areas, demographic profiles, and changes in footfall
    - Produce 3D visualisations of the shopping centre's visibility and accessibility
-   </details>
+
+</details>
 
 <details>
 <summary>Problem 5: Fieldwork Evaluation</summary>

@@ -169,7 +169,8 @@ instruction.
 3. **Execute:**
    - ACC ← ACC + 5
    - Set flags in status register (zero, negative, carry, overflow)
-   </details>
+
+</details>
 
 <hr />
 
