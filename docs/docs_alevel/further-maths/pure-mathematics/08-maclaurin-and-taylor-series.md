@@ -17,8 +17,7 @@ approximation, and analysis that would otherwise be impossible. The Maclaurin se
 function about $x = 0$; the Taylor series generalises this to expansion about any point. Together
 they are among the most powerful tools in analysis and applied mathematics.
 
-<DesmosGraph title="Taylor Series Approximation of e^x" expressions={["e^x", "\sum_{n=0}^{N}
-\frac{x^n}{n!}"]} width={800} height={500} />
+<DesmosGraph title="Taylor Series Approximation of e^x" expressions={["e^x", "sum_{n=0}^{N} x^n/n!"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

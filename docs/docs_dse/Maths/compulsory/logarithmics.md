@@ -503,8 +503,7 @@ The graph of $y = \log_a x$ has the following characteristics:
 - When $0 < a < 1$, the function is strictly decreasing and concave up.
 - The function is defined only for $x > 0$.
 
-{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Logarithmic Functions"
-expressions={["\log_{a}(x)", "rac{\ln(x)}{\ln(a)}"]} width={800} height={500} />
+<DesmosGraph title="Logarithmic Functions" expressions={["\log_{a}(x)", "rac{\ln(x)}{\ln(a)}"]} width={800} height={500} />
 
 Adjust the base $a$ to see how the shape of the logarithmic curve changes between $a > 1$ and
 $0 < a < 1$.

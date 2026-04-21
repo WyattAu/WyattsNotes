@@ -354,8 +354,7 @@ $$
 y = a \cdot f\left(x - (-b)\right) + c
 $$
 
-{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Graph Transformations"
-expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]} width={800} height={500} />
+<DesmosGraph title="Graph Transformations" expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]} width={800} height={500} />
 
 Use the sliders to explore how the parameters $a$, $b$, and $c$ transform the parent function, and
 observe the order in which each transformation is applied.

@@ -219,8 +219,7 @@ quadrant. :::
 - **Negation ($-z$):** reflection in the origin
 - **Multiplication by $i$:** rotation $90^\circ$ anticlockwise
 
-{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Complex Plane (Argand
-Diagram)" expressions={["\left(a,b\right)"]} width={800} height={500} />
+<DesmosGraph title="Complex Plane (Argand Diagram)" expressions={["\left(a,b\right)"]} width={800} height={500} />
 
 Drag points to see how addition, conjugation, and multiplication affect the position on the Argand
 diagram.

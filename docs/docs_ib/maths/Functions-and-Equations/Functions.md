@@ -316,8 +316,7 @@ Find the asymptotes of $\displaystyle f(x) = \frac{2x + 1}{x - 3}$.
 
 :::
 
-{/_ TODO: replace with verified Desmos graph URL _/} <DesmosGraph title="Function Graphing: Domain,
-Range, Asymptotes" expressions={["\frac{1}{x}", "x^2", "2^x", "\ln(x)"]} width={800} height={500} />
+<DesmosGraph title="Function Graphing: Domain, Range, Asymptotes" expressions={["\frac{1}{x}", "x^2", "2^x", "\ln(x)"]} width={800} height={500} />
 
 Use the sliders to adjust parameters and observe how the domain, range, and asymptotic behaviour
 change.

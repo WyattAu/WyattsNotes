@@ -18,8 +18,7 @@ growth to electrical circuits. This chapter covers first-order equations (separa
 factor methods), second-order linear equations with constant coefficients, and modelling
 applications.
 
-<DesmosGraph title="Slope Field Explorer" expressions={["\frac{dy}{dx}=x-y"]} width={800}
-height={500} />
+<DesmosGraph title="Slope Field Explorer" expressions={["dy/dx=x-y"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

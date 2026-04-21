@@ -17,9 +17,7 @@ similarities with trigonometric functions. They arise naturally in the solution 
 equations, the description of hanging cables (catenary), special relativity, and many areas of
 physics and engineering.
 
-<DesmosGraph title="Hyperbolic Functions: sinh, cosh, tanh"
-expressions={["\sinh(x)=\frac{e^x-e^{-x}}{2}", "\cosh(x)=\frac{e^x+e^{-x}}{2}",
-"\tanh(x)=\frac{\sinh(x)}{\cosh(x)}"]} width={800} height={500} />
+<DesmosGraph title="Hyperbolic Functions: sinh, cosh, tanh" expressions={["\sinh(x)=(e^x-e^{-x})/2", "\cosh(x)=(e^x+e^{-x})/2", "\tanh(x)=\sinh(x)/\cosh(x)"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

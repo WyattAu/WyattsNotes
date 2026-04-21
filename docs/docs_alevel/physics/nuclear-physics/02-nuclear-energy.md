@@ -77,9 +77,9 @@ u.
 
 $E_b = 0.03040 \times 931.5 = 28.3$ MeV.
 
-:::info When using atomic masses (which include electrons), use the hydrogen atom mass
+**Note.** When using atomic masses (which include electrons), use the hydrogen atom mass
 $m_H = 1.00783$ u rather than the proton mass $m_p = 1.00728$ u. The electron binding energies
-cancel out. :::
+cancel out.
 
 </details>
 

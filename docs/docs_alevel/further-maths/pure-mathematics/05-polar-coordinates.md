@@ -16,8 +16,7 @@ Polar coordinates $(r, \theta)$ provide an alternative to Cartesian coordinates 
 describing points in the plane. Many curves that are complicated in Cartesian form have simple and
 elegant polar equations, making polar coordinates essential for advanced geometry and calculus.
 
-<DesmosGraph title="Polar Coordinate Curves" expressions={["r=a\cos(\theta)", "r=a\sin(\theta)",
-"r=a(1+\cos(\theta))"]} width={800} height={500} />
+<DesmosGraph title="Polar Coordinate Curves" expressions={["r=a\cos(\theta)", "r=a\sin(\theta)", "r=a(1+\cos(\theta))"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
