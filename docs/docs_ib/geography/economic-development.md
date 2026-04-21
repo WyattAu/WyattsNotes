@@ -48,7 +48,7 @@ HDI scores range from 0 to 1. Countries are classified as: very high HDI ($\geq{
 <details>
 <summary>Common Pitfalls: GDP per Capita as a Development Measure</summary>
 
-GDP per capita is the most commonly cited development indicator but is deeply flawed. Equatorial Guinea has a GDP per capita of approximately $8000 (2023), ranking it as upper-middle income, yet over 70% of its population lives below the national poverty line. This discrepancy arises because oil revenues accrue to a small elite while the majority of the population is engaged in subsistence agriculture. GDP per capita captures average income, not its distribution. Always complement single economic indicators with social and composite indicators.
+GDP per capita is the most commonly cited development indicator but is deeply flawed. Equatorial Guinea has a GDP per capita of approximately USD 8000 (2023), ranking it as upper-middle income, yet over 70% of its population lives below the national poverty line. This discrepancy arises because oil revenues accrue to a small elite while the majority of the population is engaged in subsistence agriculture. GDP per capita captures average income, not its distribution. Always complement single economic indicators with social and composite indicators.
 
 </details>
 

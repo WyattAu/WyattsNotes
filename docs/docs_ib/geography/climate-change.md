@@ -130,7 +130,7 @@ At $2.0^\circ$C, impacts are significantly more severe:
 CCS involves capturing $\mathrm{CO_2}$ from point sources (power plants, industrial facilities) or directly from the atmosphere (direct air capture, DAC), compressing it, and transporting it to a storage site (typically deep saline aquifers or depleted oil and gas reservoirs), where it is injected and permanently sequestered underground.
 
 - **Current capacity:** approximately 40 million tonnes of $\mathrm{CO_2}$ captured per year globally (2023), representing a tiny fraction of annual emissions (approximately 0.1%)
-- **Limitations:** high cost (DAC is estimated to cost $250--600 per tonne of $\mathrm{CO_2}$, compared to approximately $50--150 for point-source CCS); energy-intensive; storage site availability and long-term liability for sequestered $\mathrm{CO_2}$; public acceptance concerns
+- **Limitations:** high cost (DAC is estimated to cost USD 250-600 per tonne of $\mathrm{CO_2}$, compared to approximately USD 50-150 for point-source CCS); energy-intensive; storage site availability and long-term liability for sequestered $\mathrm{CO_2}$; public acceptance concerns
 
 ### Renewable Energy
 
@@ -142,7 +142,7 @@ CCS involves capturing $\mathrm{CO_2}$ from point sources (power plants, industr
 | Nuclear | Generates electricity through nuclear fission | Approximately 440 GW | Low-carbon; reliable baseload; high energy density | High capital cost; radioactive waste; safety concerns (Chernobyl, Fukushima) |
 | Geothermal | Uses heat from Earth's interior | Approximately 15 GW | Reliable baseload; small land footprint | Limited to tectonically active regions; drilling costs |
 
-The International Energy Agency (IEA) estimates that achieving net-zero emissions by 2050 would require annual clean energy investment to increase from approximately $1.8 trillion (2023) to approximately $4.5 trillion by 2030.
+The International Energy Agency (IEA) estimates that achieving net-zero emissions by 2050 would require annual clean energy investment to increase from approximately USD 1.8 trillion (2023) to approximately USD 4.5 trillion by 2030.
 
 ### International Agreements
 
@@ -152,7 +152,7 @@ The International Energy Agency (IEA) estimates that achieving net-zero emission
 
 - **Nationally Determined Contributions (NDCs):** each country sets its own emission reduction targets, submitted every five years, with a "ratchet mechanism" requiring progressively more ambitious targets
 - **Global Stocktake:** a periodic assessment (first completed in 2023) of collective progress toward the Agreement's goals
-- **Climate finance:** developed countries committed to mobilising $100 billion per year in climate finance for developing countries (a target that was not met until 2022, two years late)
+- **Climate finance:** developed countries committed to mobilising USD 100 billion per year in climate finance for developing countries (a target that was not met until 2022, two years late)
 
 **Effectiveness.** As of 2023, current NDCs are insufficient to limit warming to $2.0^\circ$C, let alone $1.5^\circ$C. The UN Environment Programme's Emissions Gap Report (2023) estimates that implementing current NDCs would result in warming of approximately $2.5$--$2.9^\circ$C by 2100. The Agreement's reliance on voluntary national pledges, without enforcement mechanisms, is its principal weakness.
 
@@ -195,7 +195,7 @@ The UNFCCC (1992) establishes the principle of "common but differentiated respon
 
 "Loss and damage" refers to the irreversible impacts of climate change that cannot be adapted to -- for example, the permanent loss of territory due to sea level rise, or the extinction of species. Developing countries, particularly Small Island Developing States and Least Developed Countries, have advocated for a dedicated loss and damage finance mechanism for decades.
 
-At COP27 (2022), parties agreed to establish a Loss and Damage Fund, and at COP28 (2023), the fund was operationalised with initial pledges of approximately $700 million. However, this sum is negligible relative to estimated loss and damage costs: the UN estimates that annual loss and damage in developing countries will reach $290--580 billion by 2030.
+At COP27 (2022), parties agreed to establish a Loss and Damage Fund, and at COP28 (2023), the fund was operationalised with initial pledges of approximately USD 700 million. However, this sum is negligible relative to estimated loss and damage costs: the UN estimates that annual loss and damage in developing countries will reach USD 290-580 billion by 2030.
 
 <details>
 <summary>Case Study: The Maldives</summary>
@@ -213,7 +213,7 @@ The Maldives is an archipelago of 1192 coral islands in the Indian Ocean, with a
 
 Bangladesh (population approximately 170 million) is one of the most climate-vulnerable countries in the world. Approximately 80% of its land area is low-lying floodplain, and the country is regularly affected by cyclones, flooding, and sea level rise.
 
-- **Impacts:** the 2007 Cyclone Sidr killed approximately 3400 people and caused approximately $1.7 billion in damage. Sea level rise of approximately 3--8 mm per year (higher than the global average) is causing saltwater intrusion into the Ganges-Brahmaputra delta, reducing rice yields and contaminating drinking water. An estimated 20 million people in Bangladesh could be displaced by climate change by 2050.
+- **Impacts:** the 2007 Cyclone Sidr killed approximately 3400 people and caused approximately USD 1.7 billion in damage. Sea level rise of approximately 3--8 mm per year (higher than the global average) is causing saltwater intrusion into the Ganges-Brahmaputra delta, reducing rice yields and contaminating drinking water. An estimated 20 million people in Bangladesh could be displaced by climate change by 2050.
 - **Adaptation:** Bangladesh has invested in cyclone shelters (approximately 4000 built since the 1990s, which reduced Cyclone Sidr fatalities by over 90% compared to similar-magnitude cyclones in the 1970s), early warning systems, embankments, and floating agriculture (baira -- rafts of water hyacinth that support crops in flood-prone areas). Bangladesh's community-based adaptation programmes are widely regarded as models of good practice.
 
 </details>
