@@ -151,7 +151,17 @@ const config: Config = {
         media: '(prefers-color-scheme: dark)',
       },
     ],
-    image: 'img/WyattNotes/WyattsNotesSocialCard.jpg',
+    headTags: [
+      {
+        tagName: 'script',
+        attributes: {
+          src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
+          crossorigin: 'anonymous',
+          defer: true,
+        },
+      },
+    ],
+    image: 'img/WyattsNotes/WyattsNotesSocialCard.jpg',
     navbar: {
       title: "Wyatt's Notes",
       logo: {
