@@ -1,4 +1,4 @@
-import { useEffect, useRef, type FC } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './styles.module.css';
 
 interface DesmosExpression {
@@ -60,7 +60,7 @@ const DESMOS_COLORS = [
   '#666666',
 ];
 
-export const DesmosGraph: FC<DesmosGraphProps> = ({
+export const DesmosGraph: React.FC<DesmosGraphProps> = ({
   expressions = [],
   calculatorUrl,
   title = 'Desmos Graph',
