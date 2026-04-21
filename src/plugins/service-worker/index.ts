@@ -11,14 +11,13 @@
  *
  * Configuration (in docusaurus.config.ts):
  *   plugins: [
- *     ['@site/plugins/service-worker', { enable: true }],
+ *     [require.resolve('./src/plugins/service-worker'), { enable: true }],
  *   ]
  */
 
 import type { DocusaurusConfig, Plugin } from '@docusaurus/types';
 import fs from 'fs';
 import path from 'path';
-import { generateSW } from 'workbox-build';
 
 interface ServiceWorkerPluginOptions {
   enable?: boolean;
@@ -37,6 +36,11 @@ export default function serviceWorkerPlugin(
       if (options.enable === false) {
         return;
       }
+
+      // Defer workbox-build import to postBuild to avoid hanging at config
+      // evaluation time. workbox-build v7 pulls in baseline-browser-mapping
+      // which can block the Node.js event loop during initial import.
+      const { generateSW } = await import('workbox-build');
 
       const { count, size } = await generateSW({
         swDest: path.join(outDir, 'sw.js'),
