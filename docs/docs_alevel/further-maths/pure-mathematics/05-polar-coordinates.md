@@ -17,7 +17,12 @@ describing points in the plane. Many curves that are complicated in Cartesian fo
 elegant polar equations, making polar coordinates essential for advanced geometry and calculus.
 
 
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Polar Coordinate Curves" />
+<DesmosGraph
+  title="Polar Coordinate Curves"
+  expressions={["r=a\cos(\theta)", "r=a\sin(\theta)", "r=a(1+\cos(\theta))"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

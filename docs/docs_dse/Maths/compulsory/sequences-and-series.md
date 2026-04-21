@@ -48,7 +48,12 @@ value below is the **lower limit**; the value above is the **upper limit**.
 
 
 
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Geometric Series Explorer" />
+<DesmosGraph
+  title="Geometric Series: Partial Sums"
+  expressions={["\sum_{k=0}^{n} ar^k"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

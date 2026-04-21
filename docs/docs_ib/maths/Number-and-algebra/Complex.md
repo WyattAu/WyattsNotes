@@ -222,7 +222,12 @@ quadrant.
 - **Multiplication by $i$:** rotation $90^\circ$ anticlockwise
 
 {/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Explore the complex plane (Argand diagram) with points and operations" />
+<DesmosGraph
+  title="Complex Plane (Argand Diagram)"
+  expressions={["\left(a,b\right)"]}
+  width={800}
+  height={500}
+/>
 
 Drag points to see how addition, conjugation, and multiplication affect the position on the Argand diagram.
 

@@ -95,7 +95,12 @@ The vertex is at $(2, -5)$. Since $a = 3 \gt 0$, this is a minimum.
 The graph of $f(x) = ax^2 + bx + c$ is a parabola.
 
 <!-- TODO: replace with a verified Desmos graph URL showing a quadratic with sliders for a, b, c -->
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Quadratic Function Explorer" />
+<DesmosGraph
+  title="Quadratic Function Explorer"
+  expressions={["ax^2+bx+c", "-b/(2a)"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the sliders to see how $a$, $b$, and $c$ affect the shape, vertex, and roots of the parabola.
 

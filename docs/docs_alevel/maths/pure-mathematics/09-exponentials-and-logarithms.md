@@ -361,7 +361,12 @@ $y = \ln(x-a)$ (horizontal translation) follow from standard transformation rule
 $y = x$, since they are inverse functions.
 
 {/* TODO: Replace with a real Desmos graph URL showing e^x, ln(x), and their transformations */}
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Exponential and Logarithmic Function Graphs" />
+<DesmosGraph
+  title="e^x and ln(x) Graphs"
+  expressions={["e^x", "\ln(x)", "e^{-x}"]}
+  width={800}
+  height={500}
+/>
 Explore the relationship between $y = e^x$ and $y = \ln x$ as inverse functions reflected in $y = x$. Add transformations such as $y = e^{x+c}$ and $y = \ln(x - a)$ to see how they shift the curves.
 
 <hr />

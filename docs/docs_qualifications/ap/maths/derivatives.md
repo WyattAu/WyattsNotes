@@ -14,7 +14,12 @@ slug: derivatives
 The derivative of $f$ at $x = a$ is defined as:
 
 
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Derivatives and Tangent Lines" />
+<DesmosGraph
+  title="Derivatives and Tangent Lines"
+  expressions={["f(x)=x^3-3x", "f'(x)=3x^2-3"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

@@ -355,7 +355,12 @@ y = a \cdot f\left(x - (-b)\right) + c
 $$
 
 {/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Graph transformations: y = af(x + b) + c applied to a parent function" />
+<DesmosGraph
+  title="Graph Transformations"
+  expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]}
+  width={800}
+  height={500}
+/>
 
 Use the sliders to explore how the parameters $a$, $b$, and $c$ transform the parent function, and observe the order in which each transformation is applied.
 

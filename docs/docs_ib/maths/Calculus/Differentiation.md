@@ -531,7 +531,12 @@ At $x = 3$: $f''(3) = 6 \gt 0$, so local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$.
 ### Concavity and Points of Inflection
 
 <!-- TODO: replace with a verified Desmos graph URL showing f(x), f'(x), f''(x) with interactive sliders -->
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Stationary Points and Concavity" />
+<DesmosGraph
+  title="Stationary Points and Concavity"
+  expressions={["f(x)=x^3-3x+1", "\frac{d}{dx}f(x)"]}
+  width={800}
+  height={500}
+/>
 
 Use the sliders to adjust coefficients of a polynomial and observe how $f'(x)$ and $f''(x)$ determine stationary points and concavity.
 

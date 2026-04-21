@@ -173,7 +173,12 @@ $$
 $$
 
 {/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Explore area under a curve with Riemann sums" />
+<DesmosGraph
+  title="Integration as Area Under a Curve"
+  expressions={["\int_{a}^{b} f(x) \, dx"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the sliders to change the function and limits, and observe how the shaded area approximates the definite integral.
 

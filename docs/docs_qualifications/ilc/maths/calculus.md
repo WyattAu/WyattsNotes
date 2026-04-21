@@ -19,7 +19,12 @@ both levels.
 
 
 
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Differentiation" />
+<DesmosGraph
+  title="Differentiation: Tangent Lines"
+  expressions={["f(x)=x^3-3x^2+2", "f'(x)=3x^2-6x"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

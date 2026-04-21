@@ -18,7 +18,12 @@ equations, the description of hanging cables (catenary), special relativity, and
 physics and engineering.
 
 
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Hyperbolic Functions" />
+<DesmosGraph
+  title="Hyperbolic Functions: sinh, cosh, tanh"
+  expressions={["\sinh(x)=\frac{e^x-e^{-x}}{2}", "\cosh(x)=\frac{e^x+e^{-x}}{2}", "\tanh(x)=\frac{\sinh(x)}{\cosh(x)}"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

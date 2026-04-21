@@ -18,7 +18,12 @@ function about $x = 0$; the Taylor series generalises this to expansion about an
 they are among the most powerful tools in analysis and applied mathematics.
 
 
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Taylor Series Approximation" />
+<DesmosGraph
+  title="Taylor Series Approximation of e^x"
+  expressions={["e^x", "\sum_{n=0}^{N} \frac{x^n}{n!}"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

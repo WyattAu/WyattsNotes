@@ -468,7 +468,12 @@ why consecutive Fibonacci numbers are coprime: $\gcd(F_n, F_{n+1}) = F_1 = 1$.
 
 
 
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Graphs of Functions" />
+<DesmosGraph
+  title="Graphs of Common Functions"
+  expressions={["x^2", "x^3", "2^x", "\frac{1}{x}"]}
+  width={800}
+  height={500}
+/>
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 

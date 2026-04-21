@@ -50,7 +50,12 @@ contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is 
 (displacement).
 
 {/* TODO: Replace with a real Desmos graph URL showing Riemann sums and area under a curve */}
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Integration as Area: Riemann Sums" />
+<DesmosGraph
+  title="Integration as Area Under a Curve"
+  expressions={["\int_{0}^{b} x^2 \, dx"]}
+  width={800}
+  height={500}
+/>
 Increase the number of rectangles to see how Riemann sums converge to the exact area under the curve. Compare the upper and lower sums as the partition gets finer.
 
 <hr />

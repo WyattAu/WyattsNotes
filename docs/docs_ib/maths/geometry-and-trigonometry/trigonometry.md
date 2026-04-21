@@ -166,7 +166,12 @@ and show at least one full period clearly.
 :::
 
 {/* TODO: replace with verified Desmos graph URL */}
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Explore sin, cos, and tan with adjustable amplitude, period, and phase shift" />
+<DesmosGraph
+  title="Trigonometric Functions: y = A sin(Bx + C) + D"
+  expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]}
+  width={800}
+  height={500}
+/>
 
 Use the sliders to see how changing $a$, $b$, $c$, and $d$ in $y = a\sin(bx + c) + d$ affects the graph.
 

@@ -254,7 +254,12 @@ of $f'$ on either side) if the second derivative test is inconclusive.
 :::
 
 {/* TODO: Replace with a real Desmos graph URL showing a function with its derivative and a movable tangent line */}
-<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Function, Derivative, and Tangent Line" />
+<DesmosGraph
+  title="Function, Derivative, and Tangent Line"
+  expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]}
+  width={800}
+  height={500}
+/>
 Observe how the derivative relates to the gradient of the tangent line. Move the point along the curve to see how the tangent changes slope, and note where the derivative is zero at stationary points.
 
 <hr />
