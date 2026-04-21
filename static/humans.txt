@@ -1,0 +1,10 @@
+/* TEAM */
+Name: Wyatt Au
+Site: https://wyattsnotes.wyattau.com
+
+/* SITE */
+Last update: 2026/04/21
+Standards: HTML5, CSS3, JavaScript
+Framework: Docusaurus 3.9.2
+Software: React 19, TypeScript, KaTeX
+Components: PhET Interactive Simulations, Desmos, GeoGebra

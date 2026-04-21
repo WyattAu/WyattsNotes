@@ -3,3 +3,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://wyattsnotes.wyattau.com/sitemap.xml
+Sitemap: https://academics.wyattau.com/sitemap.xml
+Sitemap: https://alevel.wyattau.com/sitemap.xml
+Sitemap: https://qualifications.wyattau.com/sitemap.xml
+Sitemap: https://programming.wyattau.com/sitemap.xml
