@@ -506,6 +506,12 @@ at $4 \mathrm{ m/s}$.
 
 ## Circular Motion
 
+
+
+<PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Angular Quantities
 
 | Quantity             | Symbol   | SI Unit   | Relation                      |

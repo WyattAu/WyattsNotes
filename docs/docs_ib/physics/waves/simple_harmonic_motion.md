@@ -158,6 +158,10 @@ Properties:
 
 ### Mass-Spring System
 
+<PhetSimulation simulationId="masses-and-springs" title="Masses and Springs" />
+
+Explore how mass, spring stiffness, and damping affect oscillations. Hang different masses from springs and observe how the period and amplitude change in real time.
+
 Description: Mass $m$ attached to a spring of stiffness $k$. Equation of Motion: From Hooke's law:
 
 $$

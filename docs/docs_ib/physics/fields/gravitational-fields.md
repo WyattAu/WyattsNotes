@@ -135,6 +135,10 @@ density by assuming to be point mass.
 
 ## Gravitational Field
 
+<PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
+
+Simulate gravitational interactions between a star, planet, and moon. Adjust the masses and observe how orbital speed, period, and gravitational force change.
+
 A gravitational field ($g$) is a vector field with dimension of
 [acceleration](../space-time-and-motions/forces-and-momentums.md#acceleration), where the
 acceleration of each point determine the motion of bodies in the field.

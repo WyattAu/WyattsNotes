@@ -221,6 +221,11 @@ quadrant.
 - **Negation ($-z$):** reflection in the origin
 - **Multiplication by $i$:** rotation $90^\circ$ anticlockwise
 
+{/* TODO: replace with verified Desmos graph URL */}
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Explore the complex plane (Argand diagram) with points and operations" />
+
+Drag points to see how addition, conjugation, and multiplication affect the position on the Argand diagram.
+
 ## De Moivre's Theorem
 
 De Moivre's theorem states that for any integer $n$:

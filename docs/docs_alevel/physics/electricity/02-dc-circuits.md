@@ -15,6 +15,12 @@ slug: dc-circuits
 Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
+
+<PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Kirchhoff's Laws
 
 ### Kirchhoff's First Law (Current Law)

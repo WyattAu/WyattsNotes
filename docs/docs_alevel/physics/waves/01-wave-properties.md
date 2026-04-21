@@ -15,6 +15,12 @@ slug: wave-properties
 Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
+
+<PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Progressive Waves
 
 A **progressive wave** is a disturbance that transfers energy through a medium (or vacuum) without

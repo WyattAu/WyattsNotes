@@ -542,6 +542,10 @@ For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
 
 For $\tan$, the period is $\dfrac{\pi}{|B|}$ and amplitude is not defined.
 
+{/* TODO: Replace with a real Desmos graph URL showing y = A sin(Bx + C) + D with sliders for A, B, C, D */}
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Trigonometric Function Transformations" />
+Use the sliders to adjust the amplitude, period, phase shift, and vertical translation of the trigonometric functions. Observe how each parameter affects the graph of $y = A\sin(Bx + C) + D$.
+
 <details>
 <summary>Worked example</summary>
 Describe the key features of $y = 2\sin\!\left(2x - \frac{\pi}{3}\right)$ for $0 \leq x \leq 2\pi$.

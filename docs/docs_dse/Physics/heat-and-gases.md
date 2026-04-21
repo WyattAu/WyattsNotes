@@ -609,6 +609,12 @@ radiation becomes significant and the cooling is faster than predicted by Newton
 
 ## Gas Laws
 
+
+
+<PhetSimulation simulationId="gas-properties" title="Gas Properties" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Basic Definitions
 
 | Quantity            | Symbol | Unit                   | Definition                |

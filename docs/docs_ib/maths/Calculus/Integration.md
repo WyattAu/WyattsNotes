@@ -172,6 +172,11 @@ $$
 \mathrm{Total area} = \int_a^b |f(x)|\,dx
 $$
 
+{/* TODO: replace with verified Desmos graph URL */}
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Explore area under a curve with Riemann sums" />
+
+Adjust the sliders to change the function and limits, and observe how the shaded area approximates the definite integral.
+
 :::info[Examples]
 
 <details>

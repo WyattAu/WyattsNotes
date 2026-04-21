@@ -15,6 +15,12 @@ slug: magnetic-fields
 Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 :::
 
+
+<PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 **Definition.** A magnetic field is a region of space where a magnetic force acts on moving charges
 or magnetic materials.
 

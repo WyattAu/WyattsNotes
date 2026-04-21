@@ -13,6 +13,12 @@ slug: integrals
 
 An **antiderivative** of $f$ is a function $F$ such that $F' = f$. The **indefinite integral** is:
 
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Integration as Area" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
+
 $$
 \int f(x)\, dx = F(x) + C
 $$

@@ -15,6 +15,12 @@ slug: energy
 Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway P1 | WJEC P1
 :::
 
+
+<PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Energy Stores and Systems
 
 ### 1.1 The Concept of Energy

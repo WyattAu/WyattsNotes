@@ -180,6 +180,10 @@ The area under the graph equals the elastic potential energy.
 
 ## Conservation of Mechanical Energy
 
+<PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
+
+Observe how kinetic energy and gravitational potential energy interchange as a skater moves along a track. Try changing the skater's mass and the track shape to see how energy is conserved.
+
 ### Principle
 
 In a system with only conservative forces (gravity, elastic forces), the total mechanical energy is

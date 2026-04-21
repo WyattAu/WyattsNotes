@@ -15,6 +15,12 @@ slug: electricity
 Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P4 | WJEC P4
 :::
 
+
+<PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Electrical Circuits
 
 ### 1.1 Circuit Symbols

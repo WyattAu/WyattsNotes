@@ -55,6 +55,12 @@ $$\vec{R} = \vec{A} + \vec{B} \implies R_x = A_x + B_x, \quad R_y = A_y + B_y$$
 
 For constant acceleration $a$:
 
+
+<PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 $$v = u + at$$
 
 $$s = ut + \frac{1}{2}at^2$$

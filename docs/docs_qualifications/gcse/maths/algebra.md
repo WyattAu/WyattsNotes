@@ -466,6 +466,12 @@ why consecutive Fibonacci numbers are coprime: $\gcd(F_n, F_{n+1}) = F_1 = 1$.
 
 ## 5. Graphs of Functions
 
+
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Graphs of Functions" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
 ### 5.1 Linear Graphs
 
 The equation of a straight line is $y = mx + c$ where $m$ is the gradient and $c$ is the

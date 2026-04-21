@@ -13,6 +13,12 @@ slug: derivatives
 
 The derivative of $f$ at $x = a$ is defined as:
 
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Derivatives and Tangent Lines" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
+
 $$
 f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
 $$

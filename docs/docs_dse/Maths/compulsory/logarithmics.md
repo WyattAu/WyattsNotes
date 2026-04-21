@@ -501,6 +501,11 @@ The graph of $y = \log_a x$ has the following characteristics:
 - When $0 < a < 1$, the function is strictly decreasing and concave up.
 - The function is defined only for $x > 0$.
 
+{/* TODO: replace with verified Desmos graph URL */}
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Graph of y = log_a(x) with adjustable base a" />
+
+Adjust the base $a$ to see how the shape of the logarithmic curve changes between $a > 1$ and $0 < a < 1$.
+
 ### Transformations
 
 The standard transformations apply, following the same principles as for other

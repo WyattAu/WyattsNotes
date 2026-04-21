@@ -375,6 +375,10 @@ and the geometry; resistivity is an intrinsic property of the material alone.
 
 ## 4. Circuit Analysis
 
+<PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
+
+Build series and parallel circuits with resistors, light bulbs, and switches. Measure current and voltage at different points to verify Kirchhoff's laws and Ohm's law.
+
 ### 4.1 Series Circuits
 
 For components connected in series, the same current flows through each component. The total

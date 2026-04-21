@@ -39,6 +39,10 @@ through.
 
 ### Faraday's Law of Induction
 
+<PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
+
+Investigate electromagnetic induction by moving magnets through coils, changing magnetic fields, and observing the induced current and EMF in real time.
+
 Faraday's law of induction states that the electromotive force ($\epsilon$) is equal to the negative
 (according to Lenz's Law) rate of change of magnetic flux with time:
 

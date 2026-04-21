@@ -120,6 +120,12 @@ given and **not** asked for, then use the equation that doesn't contain it.
 - The **gradient** of a velocity-time graph gives the acceleration.
 - The **area under** a velocity-time graph gives the displacement.
 
+
+<PhetSimulation simulationId="the-moving-man" title="The Moving Man" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 For uniform acceleration, the $v$-$t$ graph is a straight line, and the area is a trapezium.
 
 For **non-constant acceleration**, the $v$-$t$ graph is curved, but the same three principles apply

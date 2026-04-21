@@ -14,6 +14,12 @@ slug: newtons-laws
 An object at rest stays at rest, and an object in motion stays in motion with the same speed and in
 the same direction, unless acted upon by a net external force.
 
+
+<PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ### Inertial Reference Frames
 
 Newton's laws are valid only in **inertial reference frames** -- frames that are not accelerating. A

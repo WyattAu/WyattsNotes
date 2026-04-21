@@ -16,6 +16,12 @@ Board Coverage
 AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
+
+<PhetSimulation simulationId="masses-and-springs" title="Masses and Springs" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Simple Harmonic Motion — Definition
 
 **Definition.** A body undergoes **simple harmonic motion (SHM)** if its acceleration is directly proportional to its displacement from a fixed point and is always directed towards that point:

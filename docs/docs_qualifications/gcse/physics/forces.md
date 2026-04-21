@@ -15,6 +15,12 @@ slug: forces
 Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P2 & P6 | WJEC P2
 :::
 
+
+<PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Force Diagrams and Vector Quantities
 
 ### 1.1 Scalars and Vectors

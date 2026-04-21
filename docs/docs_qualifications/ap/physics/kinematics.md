@@ -55,6 +55,12 @@ assumption of constant acceleration. If you understand the calculus, you underst
 
 ## One-Dimensional Kinematics
 
+
+
+<PhetSimulation simulationId="projectile-motion" title="Projectile Motion" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Constant Acceleration Equations
 
 When acceleration $a$ is constant, integrating twice yields:

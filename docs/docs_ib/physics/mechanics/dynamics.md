@@ -32,6 +32,10 @@ frames (like a car rounding a corner) are non-inertial.
 
 ## Newton's Second Law
 
+<PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
+
+Explore how net force, mass, and acceleration are related by applying forces to objects. Experiment with friction, applied forces, and different masses to see how they affect motion.
+
 ### Statement
 
 The net force acting on an object equals the rate of change of momentum:

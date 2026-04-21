@@ -17,6 +17,12 @@ both levels.
 
 ## Differentiation
 
+
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Differentiation" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
 ### The Derivative
 
 The derivative of a function $f(x)$ measures the instantaneous rate of change of $f$ with respect to

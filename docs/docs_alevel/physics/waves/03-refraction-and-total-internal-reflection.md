@@ -15,6 +15,12 @@ slug: refraction-and-total-internal-reflection
 Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
+
+<PhetSimulation simulationId="bending-light" title="Bending Light" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Refractive Index
 
 **Definition.** The **refractive index** $n$ of a medium is the ratio of the speed of light in

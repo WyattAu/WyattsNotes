@@ -17,6 +17,12 @@ syllabus.
 
 ## Electric Charge and Current
 
+
+
+<PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Electric Charge (OL/HL)
 
 - Charge is measured in coulombs (C).

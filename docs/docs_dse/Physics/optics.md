@@ -69,6 +69,12 @@ The image is inverted and magnified by a factor of 2.
 
 ## Refraction
 
+
+
+<PhetSimulation simulationId="bending-light" title="Bending Light" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Snell's Law
 
 When light passes from one medium to another:

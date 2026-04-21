@@ -16,6 +16,12 @@ Board Coverage
 AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 :::
 
+
+<PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Newton's Law of Gravitation
 
 **Newton's Law of Universal Gravitation.** Every particle in the universe attracts every other particle with a force that is:

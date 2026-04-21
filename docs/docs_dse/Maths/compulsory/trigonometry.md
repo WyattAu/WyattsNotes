@@ -217,6 +217,11 @@ isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 
 ## Graphs of Trigonometric Functions
 
+{/* TODO: replace with verified Desmos graph URL */}
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Graphs of sin x, cos x, and tan x with adjustable amplitude, period, and phase shift" />
+
+Use the sliders to adjust amplitude, period, and phase shift, and observe how each parameter affects the graph.
+
 ### $y = \sin x$
 
 | Property       | Value                                |

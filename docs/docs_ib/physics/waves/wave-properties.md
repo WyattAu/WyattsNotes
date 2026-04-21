@@ -8,6 +8,10 @@ slug: wave-properties
 
 ## Wave Fundamentals
 
+<PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
+
+Investigate how wave speed, frequency, wavelength, and amplitude are related. Experiment with different end conditions (fixed, loose, open) to observe standing waves and resonance.
+
 ### What is a Wave?
 
 A wave is a disturbance that transfers energy through a medium or space without transferring matter.

@@ -13,6 +13,12 @@ slug: superposition-and-interference
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
 
+
+<PhetSimulation simulationId="wave-interference" title="Wave Interference" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. The Principle of Superposition
 
 **Definition.** The principle of superposition states that when two or more waves overlap at a

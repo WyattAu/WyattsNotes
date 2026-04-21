@@ -15,6 +15,12 @@ slug: capacitance
 Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
+
+<PhetSimulation simulationId="capacitor-lab-basics" title="Capacitor Lab: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Capacitance
 
 **Definition.** The **capacitance** $C$ of a conductor is the charge stored per unit potential

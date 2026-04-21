@@ -13,6 +13,12 @@ slug: algebra-and-calculus
 
 ## Higher Algebra
 
+
+
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Graph Transformations" />
+
+Adjust the parameters in the graph above to explore the relationships between variables.
+
 ### Functions and Notation
 
 A function maps each element of a set (the domain) to exactly one element of another set (the

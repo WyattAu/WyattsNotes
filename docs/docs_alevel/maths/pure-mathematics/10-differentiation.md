@@ -253,6 +253,10 @@ point could still be a maximum, minimum, or inflection. Always use a nature tabl
 of $f'$ on either side) if the second derivative test is inconclusive.
 :::
 
+{/* TODO: Replace with a real Desmos graph URL showing a function with its derivative and a movable tangent line */}
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Function, Derivative, and Tangent Line" />
+Observe how the derivative relates to the gradient of the tangent line. Move the point along the curve to see how the tangent changes slope, and note where the derivative is zero at stationary points.
+
 <hr />
 
 ## 8. Connected Rates of Change

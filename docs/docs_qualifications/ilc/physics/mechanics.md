@@ -112,6 +112,12 @@ acceleration are negative. Be consistent throughout the calculation.
 A projectile moves under the influence of gravity alone (ignoring air resistance). Resolve the
 motion into horizontal and vertical components.
 
+
+<PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ### Key Principles
 
 - Horizontal: $a_x = 0$, so $v_x = u\cos\theta$ (constant).

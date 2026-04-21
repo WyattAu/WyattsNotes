@@ -13,6 +13,12 @@ slug: electricity
 
 ## Higher Electricity
 
+
+
+<PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Electric Charge and Current
 
 **Electric charge** is measured in coulombs (C). The elementary charge is

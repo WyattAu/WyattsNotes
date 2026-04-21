@@ -79,6 +79,12 @@ $W_F = Fd\cos\theta = 50 \times 4.0 \times \cos(-30^\circ) = 50 \times 4.0 \time
 
 The kinetic energy of an object of mass $m$ moving with speed $v$ is:
 
+
+<PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 $$
 K = \frac{1}{2}mv^2
 $$

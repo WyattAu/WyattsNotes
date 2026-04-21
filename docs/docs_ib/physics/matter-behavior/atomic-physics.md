@@ -404,6 +404,10 @@ $$
 
 ## The Photoelectric Effect
 
+<PhetSimulation simulationId="photoelectric" title="Photoelectric Effect" />
+
+Shine light of different wavelengths and intensities onto a metal surface and observe the emission of photoelectrons. Investigate how frequency, intensity, and the work function affect the maximum kinetic energy.
+
 ### Phenomenon
 
 When light above a certain frequency shines on a metal surface, electrons are emitted

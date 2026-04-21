@@ -15,6 +15,12 @@ slug: electromagnetism-unification
 Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 :::
 
+
+<PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Maxwell's Equations (Integral Form)
 
 Maxwell's four equations unify electricity and magnetism into a single coherent theory. They are

@@ -7,6 +7,10 @@ tags:
 
 ## Ideal Gas Law
 
+<PhetSimulation simulationId="gas-properties" title="Gas Properties" />
+
+Investigate how pressure, volume, temperature, and the number of particles relate for an ideal gas. Pump in particles and observe how they behave under different conditions.
+
 The ideal gas law states the relationship of ideal gas qualities:
 
 $$

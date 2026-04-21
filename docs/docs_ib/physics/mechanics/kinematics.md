@@ -101,6 +101,10 @@ $$
 
 ## Displacement-Time Graphs
 
+<PhetSimulation simulationId="the-moving-man" title="The Moving Man" />
+
+Use this simulation to explore how displacement, velocity, and acceleration change as a man moves. Try creating different motion scenarios and observe how the graphs relate to one another.
+
 ### Key Features
 
 | Feature           | Interpretation                   |

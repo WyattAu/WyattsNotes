@@ -13,6 +13,12 @@ slug: momentum-and-impulse
 
 The linear momentum of an object is:
 
+
+<PhetSimulation simulationId="collision-lab" title="Collision Lab" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 $$
 \vec{p} = m\vec{v}
 $$

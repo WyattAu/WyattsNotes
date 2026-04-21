@@ -91,6 +91,12 @@ neutrons to provide additional strong force to counteract the increasing electro
 
 ## Radioactivity
 
+
+
+<PhetSimulation simulationId="alpha-decay" title="Alpha Decay" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Nature of Radioactivity
 
 **Definition.** **Radioactivity** is the spontaneous disintegration of unstable nuclei with the

@@ -13,6 +13,12 @@ slug: work-energy-power
 
 :::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
 
+
+<PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Work Done by a Force
 
 **Definition.** The **work done** by a constant force $\mathbf{F}$ when its point of application

@@ -13,6 +13,12 @@ slug: electric-fields
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
+
+<PhetSimulation simulationId="charges-and-fields" title="Charges and Fields" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Coulomb's Law
 
 **Coulomb's Law.** The electrostatic force between two point charges $q_1$ and $q_2$ separated by

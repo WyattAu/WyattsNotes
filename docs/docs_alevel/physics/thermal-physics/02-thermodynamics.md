@@ -15,6 +15,12 @@ slug: thermodynamics
 Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
 :::
 
+
+<PhetSimulation simulationId="gas-properties" title="Gas Properties" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. The First Law of Thermodynamics
 
 **Definition.** The first law of thermodynamics states that the change in internal energy of a

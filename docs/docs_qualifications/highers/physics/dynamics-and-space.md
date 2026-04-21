@@ -13,6 +13,12 @@ slug: dynamics-and-space
 
 ## Higher Dynamics
 
+
+
+<PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
+
+Explore the simulation above to develop intuition for this topic.
+
 ### Motion in a Straight Line
 
 Displacement, velocity, and acceleration are related through the kinematic equations (covered in

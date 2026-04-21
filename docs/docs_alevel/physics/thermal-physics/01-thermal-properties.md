@@ -60,6 +60,12 @@ Qualitative and quantitative treatment. :::
 **Definition.** The **specific heat capacity** $c$ of a substance is the energy required to raise
 the temperature of 1 kg of the substance by 1 K:
 
+
+<PhetSimulation simulationId="energy-forms-and-changes" title="Energy Forms and Changes" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 $$\boxed{Q = mc\Delta T}$$
 
 SI unit: J kg$^{-1}$ K$^{-1}$.

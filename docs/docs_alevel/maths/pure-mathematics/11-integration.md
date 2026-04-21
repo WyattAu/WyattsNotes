@@ -49,6 +49,10 @@ infinitely thin), the approximation becomes exact.
 contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is the total change
 (displacement).
 
+{/* TODO: Replace with a real Desmos graph URL showing Riemann sums and area under a curve */}
+<DesmosGraph calculatorUrl="https://www.desmos.com/calculator" title="Integration as Area: Riemann Sums" />
+Increase the number of rectangles to see how Riemann sums converge to the exact area under the curve. Compare the upper and lower sums as the partition gets finer.
+
 <hr />
 
 ## 2. The Fundamental Theorem of Calculus

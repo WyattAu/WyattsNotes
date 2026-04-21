@@ -15,6 +15,12 @@ slug: magnetism-and-electromagnetism
 Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway P4 & P7 | WJEC P4
 :::
 
+
+<PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
+
+Explore the simulation above to develop intuition for this topic.
+
+
 ## 1. Magnets and Magnetic Fields
 
 ### 1.1 Magnetic Materials
