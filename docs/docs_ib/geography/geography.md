@@ -92,11 +92,11 @@ The notes in this section are organised into topical modules that mirror the IB 
 
 | Module | Content |
 |---|---|
-| [Population Distribution](/docs_ib/geography/population-distribution) | Demographic transition, migration, population policies, Malthus vs Boserup |
-| [Economic Development](/docs_ib/geography/economic-development) | Development indicators, theories of development, globalisation, TNCs |
-| [Urban Environments](/docs_ib/geography/urban-environments) | Urbanisation, urban models, megacities, sustainable cities |
-| [Freshwater Issues](/docs_ib/geography/freshwater-issues) | Water scarcity, hydrology, flood management, water quality |
-| [Climate Change](/docs_ib/geography/climate-change) | Evidence, causes, impacts, mitigation, adaptation |
-| [Geographic Skills](/docs_ib/geography/geographic-skills) | Map skills, data collection, statistics, GIS, fieldwork |
+| [Population Distribution](./population-distribution) | Demographic transition, migration, population policies, Malthus vs Boserup |
+| [Economic Development](./economic-development) | Development indicators, theories of development, globalisation, TNCs |
+| [Urban Environments](./urban-environments) | Urbanisation, urban models, megacities, sustainable cities |
+| [Freshwater Issues](./freshwater-issues) | Water scarcity, hydrology, flood management, water quality |
+| [Climate Change](./climate-change) | Evidence, causes, impacts, mitigation, adaptation |
+| [Geographic Skills](./geographic-skills) | Map skills, data collection, statistics, GIS, fieldwork |
 
 These modules cover the most commonly selected optional themes and the compulsory core extension. Students should consult their teacher to confirm which optional themes their school has selected for Paper 1.
