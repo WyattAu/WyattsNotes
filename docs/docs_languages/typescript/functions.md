@@ -1,6 +1,6 @@
 ---
 title: Functions
-description: A thorough examination of function types in TypeScript: annotations, overloading, callbacks, this typing, and real-world patterns.
+description: "A thorough examination of function types in TypeScript: annotations, overloading, callbacks, this typing, and real-world patterns."
 slug: typescript-functions
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

@@ -1,6 +1,6 @@
 ---
 title: Error Handling
-description: Type-safe error handling in TypeScript: the never type, unknown vs any, custom error classes, try/catch typing, assert functions, and the Result pattern.
+description: "Type-safe error handling in TypeScript: the never type, unknown vs any, custom error classes, try/catch typing, assert functions, and the Result pattern."
 slug: typescript-error-handling
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

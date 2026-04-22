@@ -1,6 +1,6 @@
 ---
 title: Types and Annotations
-description: A rigorous treatment of the TypeScript type system: primitive types, object types, union and intersection types, type narrowing, literal types, assertions, and inference rules.
+description: "A rigorous treatment of the TypeScript type system: primitive types, object types, union and intersection types, type narrowing, literal types, assertions, and inference rules."
 slug: typescript-types-and-annotations
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
