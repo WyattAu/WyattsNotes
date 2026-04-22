@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 /**
  * Cross-domain theme synchronization.
@@ -112,6 +112,25 @@ const THEME_SYNC_SCRIPT = `
 `;
 
 export default function Root({ children }: { children: React.ReactNode }): React.ReactElement {
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.Sentry) {
+      window.Sentry.init({
+        dsn: '',
+        environment: process.env.NODE_ENV || 'production',
+        sampleRate: 0.1,
+        tracesSampleRate: 0.05,
+        replaysSessionSampleRate: 0.01,
+        integrations: [
+          window.Sentry.browserTracingIntegration(),
+          window.Sentry.replayIntegration({
+            maskAllText: false,
+            blockAllMedia: false,
+          }),
+        ],
+      });
+    }
+  }, []);
+
   return (
     <>
       {children}
