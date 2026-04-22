@@ -179,7 +179,7 @@ $$
 \ln\left(\frac{K_2}{K_1}\right) = -\frac{\Delta H^\circ}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)
 $$
 
-This is analogous to the Arrhenius equation (see [Chemical Kinetics](./kinetics.md)).
+This is analogous to the Arrhenius equation (see [Chemical Kinetics](./chemical-kinetics)).
 
 ### Concentration / Pressure
 

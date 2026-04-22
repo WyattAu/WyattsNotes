@@ -116,7 +116,7 @@ $$
 1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p \lt 7s
 $$
 
-The $4s$ subshell fills before $3d$ because its energy is lower for $Z \le 20$. For $Z \gt 20$, the energies shift and $3d$ becomes lower -- this is important for transition metals (see [Transition Metals](./transition-metals.md)).
+The $4s$ subshell fills before $3d$ because its energy is lower for $Z \le 20$. For $Z \gt 20$, the energies shift and $3d$ becomes lower -- this is important for transition metals (see [Transition Metals](./transition-metals)).
 
 ### Pauli Exclusion Principle
 

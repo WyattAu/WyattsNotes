@@ -35,16 +35,16 @@ The four main examination boards divide the content differently across papers. T
 
 ## Core Modules
 
-1. **[Atomic Structure & Periodicity](./atomic-structure.md)** -- Subatomic particles, isotopes, mass spectrometry, electron configuration, ionisation energies, periodic trends.
-2. **[Bonding & Structure](./bonding-and-structure.md)** -- Ionic, covalent, and metallic bonding; intermolecular forces; VSEPR theory; giant covalent lattices; Born-Haber cycles.
-3. **[Quantitative Chemistry](./quantitative-chemistry.md)** -- The mole, stoichiometry, titrations, the ideal gas equation, thermochemical calculations.
-4. **[Chemical Kinetics](./kinetics.md)** -- Rate equations, the Arrhenius equation, collision theory, Maxwell-Boltzmann distributions, catalysis.
-5. **[Chemical Equilibrium](./equilibrium.md)** -- $K_c$, $K_p$, Le Chatelier's principle, solubility products, industrial processes.
-6. **[Acids, Bases & Buffers](./acids-bases.md)** -- pH, $K_a$, $K_b$, $K_w$, buffer solutions, titration curves, indicators.
-7. **[Thermodynamics & Energetics](./thermodynamics.md)** -- Hess's Law, entropy, Gibbs free energy, lattice enthalpy, Born-Haber cycles.
-8. **[Electrochemistry](./electrochemistry.md)** -- Redox, standard electrode potentials, electrochemical cells, electrolysis, Faraday's laws.
-9. **[Organic Chemistry](./organic-chemistry.md)** -- Nomenclature, mechanisms (substitution, addition, elimination), spectroscopy, chromatography.
-10. **[Transition Metals & Analytical Chemistry](./transition-metals.md)** -- d-block chemistry, complex ions, crystal field theory, catalysis, analytical techniques.
+1. **[Atomic Structure & Periodicity](./atomic-structure)** -- Subatomic particles, isotopes, mass spectrometry, electron configuration, ionisation energies, periodic trends.
+2. **[Bonding & Structure](./bonding-and-structure)** -- Ionic, covalent, and metallic bonding; intermolecular forces; VSEPR theory; giant covalent lattices; Born-Haber cycles.
+3. **[Quantitative Chemistry](./quantitative-chemistry)** -- The mole, stoichiometry, titrations, the ideal gas equation, thermochemical calculations.
+4. **[Chemical Kinetics](./chemical-kinetics)** -- Rate equations, the Arrhenius equation, collision theory, Maxwell-Boltzmann distributions, catalysis.
+5. **[Chemical Equilibrium](./chemical-equilibrium)** -- $K_c$, $K_p$, Le Chatelier's principle, solubility products, industrial processes.
+6. **[Acids, Bases & Buffers](./acids-bases)** -- pH, $K_a$, $K_b$, $K_w$, buffer solutions, titration curves, indicators.
+7. **[Thermodynamics & Energetics](./thermodynamics)** -- Hess's Law, entropy, Gibbs free energy, lattice enthalpy, Born-Haber cycles.
+8. **[Electrochemistry](./electrochemistry)** -- Redox, standard electrode potentials, electrochemical cells, electrolysis, Faraday's laws.
+9. **[Organic Chemistry](./organic-chemistry)** -- Nomenclature, mechanisms (substitution, addition, elimination), spectroscopy, chromatography.
+10. **[Transition Metals & Analytical Chemistry](./transition-metals)** -- d-block chemistry, complex ions, crystal field theory, catalysis, analytical techniques.
 
 ## Assessment Structure
 

@@ -249,7 +249,7 @@ The catalyst is in the same phase as the reactants, typically forming an interme
 | $\mathrm{SO}_4^{2-}$ | Add $\mathrm{HCl}$ + $\mathrm{BaCl}_2$ | White ppt |
 | $\mathrm{CO}_3^{2-}$ | Add dilute acid | Effervescence, gas turns limewater milky |
 
-For further analytical techniques (IR, MS, NMR, chromatography), see [Organic Chemistry](./organic-chemistry.md).
+For further analytical techniques (IR, MS, NMR, chromatography), see [Organic Chemistry](./organic-chemistry).
 
 ## Common Pitfalls
 

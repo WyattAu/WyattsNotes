@@ -89,7 +89,7 @@ $$
 \Delta H_\mathrm{lat} = -411 - 108 - 61 - 496 - (-349) = -411 - 108 - 61 - 496 + 349 = -727\,\mathrm{kJ/mol}
 $$
 
-See [Thermodynamics](./thermodynamics.md) for a more detailed treatment of Born-Haber cycles.
+See [Thermodynamics](./thermodynamics) for a more detailed treatment of Born-Haber cycles.
 
 ## Covalent Bonding
 

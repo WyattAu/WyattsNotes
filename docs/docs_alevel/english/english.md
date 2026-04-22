@@ -34,12 +34,12 @@ A-Level English Literature is offered by four principal examination boards in En
 
 The A-Level English Literature course, regardless of board, is organised around the following core areas of study:
 
-- **Drama** -- The analysis of plays as both literary texts and scripts for performance, encompassing Greek tragedy, Shakespearean drama, and modern theatre from Ibsen to Pinter. See [Drama](./drama) for detailed coverage.
-- **Prose** -- The study of novels and shorter fiction, attending to narrative technique, characterisation, setting, and the conventions of literary movements such as Realism, Modernism, and the Gothic. See [Prose](./prose).
-- **Poetry** -- Engagement with poetic form, verse technique, and the work of individual poets across periods from the Metaphysicals to the contemporary. See [Poetry](./poetry).
-- **Shakespeare** -- Focused study of at least one Shakespeare play, requiring detailed knowledge of language, structure, context, and critical reception. See [Shakespeare](./shakespeare).
-- **Critical Theory** -- The application of literary criticism and critical frameworks, including feminism, Marxism, psychoanalytic theory, and postcolonialism. AQA's NEA requires explicit engagement with the AQA Critical Anthology; other boards assess contextual and critical knowledge within examined papers. See [Critical Theory](./critical-theory).
-- **Unseen Texts** -- The ability to analyse previously unseen poetry, prose, or drama extracts under examination conditions. See [Unseen Texts](./unseen-texts).
+- **Drama** -- The analysis of plays as both literary texts and scripts for performance, encompassing Greek tragedy, Shakespearean drama, and modern theatre from Ibsen to Pinter. See [Drama](./a-level-english-drama) for detailed coverage.
+- **Prose** -- The study of novels and shorter fiction, attending to narrative technique, characterisation, setting, and the conventions of literary movements such as Realism, Modernism, and the Gothic. See [Prose](./a-level-english-prose).
+- **Poetry** -- Engagement with poetic form, verse technique, and the work of individual poets across periods from the Metaphysicals to the contemporary. See [Poetry](./a-level-english-poetry).
+- **Shakespeare** -- Focused study of at least one Shakespeare play, requiring detailed knowledge of language, structure, context, and critical reception. See [Shakespeare](./a-level-english-shakespeare).
+- **Critical Theory** -- The application of literary criticism and critical frameworks, including feminism, Marxism, psychoanalytic theory, and postcolonialism. AQA's NEA requires explicit engagement with the AQA Critical Anthology; other boards assess contextual and critical knowledge within examined papers. See [Critical Theory](./a-level-english-critical-theory).
+- **Unseen Texts** -- The ability to analyse previously unseen poetry, prose, or drama extracts under examination conditions. See [Unseen Texts](./a-level-english-unseen-texts).
 
 ## Assessment Structure
 

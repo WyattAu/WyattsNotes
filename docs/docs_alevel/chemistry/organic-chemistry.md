@@ -403,7 +403,7 @@ IR spectroscopy measures the absorption of infrared radiation by bonds, which vi
 
 ### Mass Spectrometry
 
-See [Atomic Structure](./atomic-structure.md) for the general principles. In organic chemistry, fragmentation patterns are diagnostic:
+See [Atomic Structure](./atomic-structure) for the general principles. In organic chemistry, fragmentation patterns are diagnostic:
 
 | Fragment | $m/z$ | Origin |
 |---|---|---|

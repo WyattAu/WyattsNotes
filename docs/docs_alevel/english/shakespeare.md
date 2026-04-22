@@ -145,7 +145,7 @@ Shakespeare's English is Early Modern English (not Old English or Middle English
 
 ### A Midsummer Night's Dream (c. 1595--96)
 
-See the discussion in [Drama](./drama). For A-Level study, key analytical points include:
+See the discussion in [Drama](./a-level-english-drama). For A-Level study, key analytical points include:
 
 - The play's tripartite structure (court, lovers, fairies, mechanicals) and the ways in which the four worlds interact, parody, and illuminate each other.
 - The theme of imagination and its relationship to reality: "The lunatic, the lover and the poet / Are of imagination all compact" (V.i).
@@ -155,7 +155,7 @@ See the discussion in [Drama](./drama). For A-Level study, key analytical points
 
 ### Twelfth Night (c. 1601--02)
 
-See the discussion in [Drama](./drama). For A-Level study, key analytical points include:
+See the discussion in [Drama](./a-level-english-drama). For A-Level study, key analytical points include:
 
 - The play's exploration of gender performativity: Viola/Cesario's disguise creates a fluid network of desires (Orsino loves Olivia, Olivia loves Cesario, Viola loves Orsino) that destabilises fixed categories of gender and sexuality.
 - The role of Feste as the play's wisest character: his songs ("What is love? 'Tis not hereafter," "When that I was and a little tiny boy") frame the play's action with melancholy and philosophical reflection.
@@ -164,7 +164,7 @@ See the discussion in [Drama](./drama). For A-Level study, key analytical points
 
 ### The Tempest (c. 1610--11)
 
-See the discussion in [Drama](./drama). For A-Level study, key analytical points include:
+See the discussion in [Drama](./a-level-english-drama). For A-Level study, key analytical points include:
 
 - Prospero as a figure for the author-artist: his magic as a metaphor for theatrical creation, his renunciation of magic as Shakespeare's farewell to the stage.
 - The play's engagement with colonialism: Caliban's claim -- "This island's mine, by Sycorax my mother" (I.ii) -- and Prospero's displacement of him raise urgent questions about conquest, enslavement, and cultural imperialism.
