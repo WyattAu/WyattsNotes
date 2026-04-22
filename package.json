@@ -35,7 +35,7 @@
     "@mdx-js/react": "^3.1.0",
     "@r74tech/docusaurus-plugin-panzoom": "^2.4.0",
     "algoliasearch": "^5.50.2",
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.5.0",
     "clsx": "^2.1.1",
     "docusaurus-plugin-image-zoom": "^3.0.1",
     "docusaurus-theme-redoc": "^2.5.0",
