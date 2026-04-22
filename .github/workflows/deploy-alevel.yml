@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --config docusaurus.alevel.config.ts
         env:
-          NODE_OPTIONS: --max-old-space-size=7000
+          NODE_OPTIONS: --max-old-space-size=7100
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
