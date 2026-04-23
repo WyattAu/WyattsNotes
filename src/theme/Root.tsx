@@ -113,9 +113,10 @@ const THEME_SYNC_SCRIPT = `
 
 export default function Root({ children }: { children: React.ReactNode }): React.ReactElement {
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.Sentry) {
+    const dsn = (window as any).__SENTRY_DSN__;
+    if (typeof window !== 'undefined' && window.Sentry && dsn) {
       window.Sentry.init({
-        dsn: '',
+        dsn,
         environment: process.env.NODE_ENV || 'production',
         sampleRate: 0.1,
         tracesSampleRate: 0.05,

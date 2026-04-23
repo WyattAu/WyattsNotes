@@ -50,6 +50,7 @@ jobs:
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
 
       - name: Install wrangler
         run: pnpm add -D wrangler

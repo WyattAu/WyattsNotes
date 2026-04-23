@@ -180,6 +180,10 @@ const config: Config = {
           defer: true,
         },
       },
+      {
+        tagName: 'script',
+        innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
+      },
     ],
     image: 'img/WyattNotes/WyattsNotesSocialCard.jpg',
     navbar: {
