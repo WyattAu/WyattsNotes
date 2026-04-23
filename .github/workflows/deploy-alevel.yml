@@ -55,7 +55,7 @@ jobs:
         run: pnpm add -D wrangler
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy build --project-name wyottsnotes-alevel
+        run: npx wrangler pages deploy build --project-name wyattsnotes-alevel
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: 26966ba2f4b3a12cb750cd615c8d0bcf
