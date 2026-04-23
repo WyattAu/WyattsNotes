@@ -28,6 +28,7 @@ const SITES = [
   { name: 'alevel', url: 'https://alevel.wyattau.com', indexName: 'wyattsnotes_alevel' },
   { name: 'qualifications', url: 'https://qualifications.wyattau.com', indexName: 'wyattsnotes_qualifications' },
   { name: 'programming', url: 'https://programming.wyattau.com', indexName: 'wyattsnotes_programming' },
+  { name: 'university', url: 'https://university.wyattau.com', indexName: 'wyattsnotes_university' },
 ];
 
 /**

@@ -376,7 +376,7 @@ macrofibrils. This creates a rigid, strong meshwork that resists tensile forces 
 cell from bursting under osmotic pressure. The $\beta$-1,4 bond also makes cellulose resistant to
 hydrolysis by most enzymes -- only cellulase (produced by some bacteria and fungi) can break it.
 
-<b>If you get this wrong, revise:</b> [Polysaccharides](#22-polysaccharides)
+<b>If you get this wrong, revise:</b> [Polysaccharides](#23-polysaccharides)
 
 </details>
 
@@ -427,7 +427,7 @@ is soluble and functions as an energy store. Cellulose has straight, unbranched 
 hydrogen-bonded microfibrils, making it insoluble and functioning as a structural material. Starch
 can be hydrolysed by amylase; cellulose cannot (except by cellulase).
 
-<b>If you get this wrong, revise:</b> [Polysaccharides](#22-polysaccharides)
+<b>If you get this wrong, revise:</b> [Polysaccharides](#23-polysaccharides)
 
 </details>
 

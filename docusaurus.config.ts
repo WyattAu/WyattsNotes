@@ -203,6 +203,11 @@ const config: Config = {
           position: 'right',
         },
         {
+          href: 'https://university.wyattau.com',
+          label: 'University',
+          position: 'right',
+        },
+        {
           href: 'https://programming.wyattau.com',
           label: 'Programming',
           position: 'right',
@@ -281,6 +286,27 @@ const config: Config = {
             {
               label: 'Dart',
               href: 'https://programming.wyattau.com/docs/languages/dart/intro',
+            },
+          ],
+        },
+        {
+          title: 'University',
+          items: [
+            {
+              label: 'Linear Algebra',
+              href: 'https://university.wyattau.com/docs/university/mathematics/linear-algebra',
+            },
+            {
+              label: 'Real Analysis',
+              href: 'https://university.wyattau.com/docs/university/mathematics/real-analysis',
+            },
+            {
+              label: 'Quantum Mechanics',
+              href: 'https://university.wyattau.com/docs/university/physics/quantum-mechanics',
+            },
+            {
+              label: 'Algorithms',
+              href: 'https://university.wyattau.com/docs/university/computing/algorithms-and-data-structures',
             },
           ],
         },

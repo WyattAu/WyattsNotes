@@ -77,7 +77,7 @@ and hence different $A$). They have identical chemical properties but different 
 
 The relative atomic mass is the weighted average of the isotopic masses:
 
-$$A_r = \sum (\text{isotope mass} \times \text{fractional abundance})$$
+$$A_r = \sum (\mathrm{isotope mass} \times \mathrm{fractional abundance})$$
 
 ### Worked Example 1
 
