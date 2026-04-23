@@ -3,7 +3,7 @@ title: Electric Fields
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
-slug: electric-fields
+slug: electric-fields-depth
 ---
 
 ## Electric Fields

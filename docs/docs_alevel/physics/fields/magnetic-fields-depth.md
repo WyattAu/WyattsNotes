@@ -3,7 +3,7 @@ title: Magnetic Fields
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
-slug: magnetic-fields
+slug: magnetic-fields-depth
 ---
 
 ## Magnetic Fields

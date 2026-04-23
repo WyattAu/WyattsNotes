@@ -3,7 +3,7 @@ title: Gravitational Fields
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
-slug: gravitational-fields
+slug: gravitational-fields-depth
 ---
 
 ## Gravitational Fields
