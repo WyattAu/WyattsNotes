@@ -25,8 +25,8 @@ $120^\circ$. The C=C bond length ($134\,\mathrm{pm}$) is shorter than the C--C s
 ($154\,\mathrm{pm}$) because the $\pi$ bond draws the atoms closer together.
 
 The $\pi$ bond restricts rotation about the C=C axis, which has two critical consequences: E/Z
-isomerism (discussed in the [introduction](./introduction)) and the existence of a substantial
-barrier to rotation ($\approx 270\,\mathrm{kJ/mol}$ for ethene).
+isomerism (discussed in the [introduction](./organic-chemistry-introduction)) and the existence of a
+substantial barrier to rotation ($\approx 270\,\mathrm{kJ/mol}$ for ethene).
 
 ### Physical Properties
 
