@@ -3,7 +3,7 @@ id: differentiation
 title: Differentiation
 description:
   IB Mathematics — differentiation rules, techniques, applications, and exam-style problems.
-slug: differentiation
+slug: differentiation-depth
 ---
 
 ## Limits and Continuity

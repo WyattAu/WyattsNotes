@@ -65,7 +65,7 @@ See [./physics-mechanics](./physics-mechanics) for detailed notes.
 - Standing waves and resonance
 - Doppler effect
 
-See [./physics-waves](./physics-waves) for detailed notes.
+See [./dse-physics-waves-and-sound](./dse-physics-waves-and-sound) for detailed notes.
 
 ### III. Electricity and Magnetism
 
@@ -81,7 +81,7 @@ See [./physics-waves](./physics-waves) for detailed notes.
 - Transformers and AC circuits
 - Domestic electricity
 
-See [./physics-electricity-and-magnetism](./physics-electricity-and-magnetism) for detailed notes.
+See [./electricity-and-magnetism](./electricity-and-magnetism) for detailed notes.
 
 ### IV. Thermal Physics
 
@@ -92,7 +92,7 @@ See [./physics-electricity-and-magnetism](./physics-electricity-and-magnetism) f
 - Ideal gas equation
 - Kinetic theory of gases
 
-See [./physics-thermal-physics](./physics-thermal-physics) for detailed notes.
+See [./heat-and-gases](./heat-and-gases) for detailed notes.
 
 ### V. Atomic Physics
 
@@ -107,7 +107,7 @@ See [./physics-thermal-physics](./physics-thermal-physics) for detailed notes.
 - Energy levels in atoms
 - Emission and absorption spectra
 
-See [./physics-atomic-physics](./physics-atomic-physics) for detailed notes.
+See [./nuclear-physics](./nuclear-physics) for detailed notes.
 
 ---
 

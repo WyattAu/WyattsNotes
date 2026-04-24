@@ -5,7 +5,7 @@ tags:
   - maths
 categories:
   - maths
-slug: Calculus
+slug: integration-depth
 ---
 
 ## Integration
