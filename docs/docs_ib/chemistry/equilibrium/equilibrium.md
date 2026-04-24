@@ -1,11 +1,10 @@
 ---
-id: equilibrium
 title: Chemical Equilibrium
-description:
-  IB Chemistry — dynamic equilibrium, Le Chatelier's principle, equilibrium constants, and acid-base
-  equilibrium.
+description: IB Chemistry — dynamic equilibrium, Le Chatelier's principle, equilibrium
+  constants, and acid-base equilibrium.
 slug: equilibrium
 ---
+
 
 ## Dynamic Equilibrium
 

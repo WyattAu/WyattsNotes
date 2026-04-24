@@ -1,14 +1,13 @@
 ---
 title: Abstraction and Data Management
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - CS
-categories:
-  - IB
-  - CS
+- IB
+- CS
 slug: abstraction-and-data-management
+description: Comprehensive guide to abstraction and data management for the International
+  Baccalaureate.
 ---
+
 
 ## Conceptual Models vs Physical Models
 

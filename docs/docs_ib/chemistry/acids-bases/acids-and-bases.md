@@ -1,14 +1,13 @@
 ---
-id: ib-chemistry-acids-and-bases
 title: Acids and Bases
-description:
-  IB Chemistry notes covering Bronsted-Lowry theory, pH calculations, Ka/Kb, buffers, titrations,
-  and indicators.
+description: IB Chemistry notes covering Bronsted-Lowry theory, pH calculations, Ka/Kb,
+  buffers, titrations, and indicators.
 slug: acids-and-bases
-date: 2026-04-08T00:00:00.000Z
-tags: [IB, Chemistry]
-categories: [IB, Chemistry]
+tags:
+- IB
+- Chemistry
 ---
+
 
 ## Bronsted-Lowry Theory
 

@@ -1,14 +1,12 @@
 ---
 title: Databases
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - CS
-categories:
-  - IB
-  - CS
+- IB
+- CS
 slug: databases
+description: Comprehensive guide to databases for the International Baccalaureate.
 ---
+
 
 ## Database Fundamentals
 

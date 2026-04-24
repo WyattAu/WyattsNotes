@@ -1,8 +1,9 @@
 ---
 title: Computer Science
 description: intro
-sidebar_position: 2
+slug: computer-science
 ---
+
 
 # Prelude
 

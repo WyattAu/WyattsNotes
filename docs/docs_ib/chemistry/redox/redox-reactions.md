@@ -1,14 +1,13 @@
 ---
-id: ib-chemistry-redox-reactions
 title: Redox Reactions
-description:
-  IB Chemistry notes covering oxidation states, half-equations, electrochemical cells, electrode
-  potentials, electrolysis, Faraday's laws, corrosion, and fuel cells.
+description: IB Chemistry notes covering oxidation states, half-equations, electrochemical
+  cells, electrode potentials, electrolysis, Faraday's laws, corrosion, and fuel cells.
 slug: redox-reactions
-date: 2026-04-08T00:00:00.000Z
-tags: [IB, Chemistry]
-categories: [IB, Chemistry]
+tags:
+- IB
+- Chemistry
 ---
+
 
 ## Oxidation States
 

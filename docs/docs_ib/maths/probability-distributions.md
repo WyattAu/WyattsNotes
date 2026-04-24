@@ -1,14 +1,13 @@
 ---
 title: Probability Distributions
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - Maths
-categories:
-  - IB
-  - Maths
+- IB
+- Maths
 slug: probability-distributions
+description: Comprehensive guide to probability distributions for the International
+  Baccalaureate.
 ---
+
 
 ## Discrete Random Variables
 

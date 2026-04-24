@@ -1,7 +1,9 @@
 ---
 title: Syllabus
-sidebar_position: 2
+slug: syllabus
+description: Comprehensive guide to syllabus for the International Baccalaureate.
 ---
+
 
 # IB Computer Science Syllabus Overview
 

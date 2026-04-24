@@ -1,14 +1,13 @@
 ---
 title: A Streetcar Named Desire — Close Reading and Analysis
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - English
-categories:
-  - IB
-  - English
+- IB
+- English
 slug: streetcar-named-desire-analysis
+description: Comprehensive guide to a streetcar named desire — close reading and analysis
+  for the International Baccalaureate.
 ---
+
 
 # A Streetcar Named Desire: Close Reading and Analysis
 

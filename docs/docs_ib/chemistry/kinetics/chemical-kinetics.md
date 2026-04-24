@@ -1,10 +1,10 @@
 ---
-id: chemical-kinetics
 title: Chemical Kinetics
-description:
-  IB Chemistry — rate of reaction, rate equations, activation energy, and collision theory.
+description: IB Chemistry — rate of reaction, rate equations, activation energy, and
+  collision theory.
 slug: chemical-kinetics
 ---
+
 
 ## Rate of Reaction
 

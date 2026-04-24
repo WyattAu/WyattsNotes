@@ -1,12 +1,11 @@
 ---
 title: Number and Algebra
-date: 2025-05-10T15:41:14.714Z
 tags:
-  - maths
-categories:
-  - maths
+- maths
 slug: number-algebra
+description: Comprehensive guide to number and algebra for the International Baccalaureate.
 ---
+
 
 ## Sets
 

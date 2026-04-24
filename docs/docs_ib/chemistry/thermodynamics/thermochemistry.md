@@ -1,9 +1,10 @@
 ---
-id: thermochemistry
 title: Thermochemistry
-description: IB Chemistry — enthalpy, Hess's law, bond enthalpies, calorimetry, and energy cycles.
+description: IB Chemistry — enthalpy, Hess's law, bond enthalpies, calorimetry, and
+  energy cycles.
 slug: thermochemistry
 ---
+
 
 ## Enthalpy Changes
 

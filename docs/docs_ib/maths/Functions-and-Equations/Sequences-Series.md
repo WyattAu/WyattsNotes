@@ -1,10 +1,10 @@
 ---
-id: sequences-series
 title: Sequences and Series
-description:
-  IB Mathematics — arithmetic and geometric sequences and series, sigma notation, binomial theorem.
+description: IB Mathematics — arithmetic and geometric sequences and series, sigma
+  notation, binomial theorem.
 slug: sequences-series
 ---
+
 
 ## Sequences and Series
 

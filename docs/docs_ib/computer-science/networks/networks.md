@@ -1,11 +1,11 @@
 ---
 title: Networks
-date: 2025-05-02T09:03:49.907Z
 tags:
-  - CS
-categories:
-  - CS
+- CS
+slug: networks
+description: Comprehensive guide to networks for the International Baccalaureate.
 ---
+
 
 ## Computer Network
 

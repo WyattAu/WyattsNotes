@@ -1,14 +1,12 @@
 ---
 title: Proof and Logic
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - Maths
-categories:
-  - IB
-  - Maths
+- IB
+- Maths
 slug: proof-and-logic
+description: Comprehensive guide to proof and logic for the International Baccalaureate.
 ---
+
 
 # Proof and Logic
 

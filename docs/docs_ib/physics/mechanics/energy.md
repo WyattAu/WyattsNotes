@@ -1,9 +1,10 @@
 ---
-id: energy
 title: Energy and Conservation
-description: IB Physics — kinetic energy, potential energy, conservation of energy, and power.
+description: IB Physics — kinetic energy, potential energy, conservation of energy,
+  and power.
 slug: energy
 ---
+
 
 ## Forms of Energy
 

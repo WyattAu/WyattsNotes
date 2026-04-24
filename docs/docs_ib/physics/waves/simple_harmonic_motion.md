@@ -1,12 +1,11 @@
 ---
 title: Simple Harmonic Motion
-date: 2025-07-07T00:33:35.322Z
 tags:
-  - physics
-categories:
-  - physics
+- physics
 slug: simple-harmonic-motion
+description: Comprehensive guide to simple harmonic motion for the International Baccalaureate.
 ---
+
 
 ## Specification
 

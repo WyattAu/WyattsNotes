@@ -1,12 +1,12 @@
 ---
 title: Spanish Civil War and Chinese Civil War
-date: 2025-05-04T21:58:22.561Z
 tags:
-  - history
-categories:
-  - history
+- history
 slug: spanish-civil-war-chinese-civil-war
+description: Comprehensive guide to spanish civil war and chinese civil war for the
+  International Baccalaureate.
 ---
+
 
 ## Brief
 

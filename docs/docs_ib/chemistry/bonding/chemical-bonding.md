@@ -1,14 +1,13 @@
 ---
 title: Chemical Bonding and Structure
-date: 2026-04-07T00:00:00.000Z
 tags:
-  - Chemistry
-  - IB
-categories:
-  - Chemistry
-  - IB
+- Chemistry
+- IB
 slug: chemical-bonding-and-structure
+description: Comprehensive guide to chemical bonding and structure for the International
+  Baccalaureate.
 ---
+
 
 ## Introduction
 

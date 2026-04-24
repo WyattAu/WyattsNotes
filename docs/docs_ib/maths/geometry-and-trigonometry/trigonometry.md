@@ -1,12 +1,11 @@
 ---
 title: Trigonometry
-date: 2025-05-14T11:42:14.853Z
 tags:
-  - maths
-categories:
-  - maths
+- maths
 slug: trigonometry
+description: Comprehensive guide to trigonometry for the International Baccalaureate.
 ---
+
 
 ## Radian Measure
 

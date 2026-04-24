@@ -1,7 +1,9 @@
 ---
 title: Gravitational Fields
-sidebar_position: 1
+slug: gravitational-fields
+description: Comprehensive guide to gravitational fields for the International Baccalaureate.
 ---
+
 
 ## Point Mass
 

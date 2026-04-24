@@ -1,9 +1,10 @@
 ---
-id: kinematics
 title: Kinematics
-description: IB Physics — motion, velocity, acceleration, projectiles, and kinematics equations.
+description: IB Physics — motion, velocity, acceleration, projectiles, and kinematics
+  equations.
 slug: kinematics
 ---
+
 
 ## Fundamental Quantities
 

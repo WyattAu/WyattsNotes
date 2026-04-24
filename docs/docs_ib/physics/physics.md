@@ -1,7 +1,9 @@
 ---
 title: Physics
-sidebar_position: 3
+slug: physics
+description: Comprehensive guide to physics for the International Baccalaureate.
 ---
+
 
 ## IB Physics -- Course Overview
 

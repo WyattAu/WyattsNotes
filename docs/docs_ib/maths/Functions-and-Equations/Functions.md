@@ -1,11 +1,10 @@
 ---
-id: functions
 title: Functions and Equations
-description:
-  IB Mathematics — functions, composite functions, inverse functions, transformations, and
-  equations.
+description: IB Mathematics — functions, composite functions, inverse functions, transformations,
+  and equations.
 slug: functions
 ---
+
 
 ## Function Notation
 

@@ -1,14 +1,12 @@
 ---
 title: Current Electricity
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - Physics
-categories:
-  - IB
-  - Physics
+- IB
+- Physics
 slug: current-electricity
+description: Comprehensive guide to current electricity for the International Baccalaureate.
 ---
+
 
 ## 1. Electric Fields
 

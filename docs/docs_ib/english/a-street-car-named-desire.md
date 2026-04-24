@@ -1,12 +1,12 @@
 ---
 title: A Streetcar Named Desire
-date: 2025-05-06T17:31:00.537Z
 tags:
-  - english
-categories:
-  - english
+- english
 slug: streetcar-named-desire
+description: Comprehensive guide to a streetcar named desire for the International
+  Baccalaureate.
 ---
+
 
 ## Author Context
 

@@ -1,12 +1,11 @@
 ---
 title: English
-date: 2025-07-07T00:48:30.040Z
 tags:
-  - english
-categories:
-  - english
+- english
 slug: english
+description: Comprehensive guide to english for the International Baccalaureate.
 ---
+
 
 ## IB English A: Language and Literature -- Course Overview
 

@@ -1,11 +1,11 @@
 ---
 title: System Design
-date: 2025-05-01T23:39:16.680Z
 tags:
-  - CS
-categories:
-  - CS
+- CS
+slug: system-design
+description: Comprehensive guide to system design for the International Baccalaureate.
 ---
+
 
 ## Design
 

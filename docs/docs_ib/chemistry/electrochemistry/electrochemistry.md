@@ -1,14 +1,12 @@
 ---
 title: Electrochemistry
-date: 2026-04-07T00:00:00.000Z
 tags:
-  - Chemistry
-  - IB
-categories:
-  - Chemistry
-  - IB
+- Chemistry
+- IB
 slug: electrochemistry
+description: Comprehensive guide to electrochemistry for the International Baccalaureate.
 ---
+
 
 ## 1. Redox Review (SL Topic 9)
 

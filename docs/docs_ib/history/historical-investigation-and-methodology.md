@@ -1,14 +1,13 @@
 ---
 title: Historical Investigation and Methodology
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - History
-categories:
-  - IB
-  - History
+- IB
+- History
 slug: historical-investigation-and-methodology
+description: Comprehensive guide to historical investigation and methodology for the
+  International Baccalaureate.
 ---
+
 
 # Historical Investigation and Methodology
 

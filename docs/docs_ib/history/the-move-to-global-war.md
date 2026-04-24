@@ -1,14 +1,12 @@
 ---
 title: The Move to Global War
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - History
-categories:
-  - IB
-  - History
+- IB
+- History
 slug: the-move-to-global-war
+description: Comprehensive guide to the move to global war for the International Baccalaureate.
 ---
+
 
 # The Move to Global War
 

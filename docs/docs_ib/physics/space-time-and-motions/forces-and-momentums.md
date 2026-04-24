@@ -1,7 +1,9 @@
 ---
 title: Forces and Momentums
-sidebar_position: 2
+slug: forces-and-momentums
+description: Comprehensive guide to forces and momentums for the International Baccalaureate.
 ---
+
 
 ## motion
 

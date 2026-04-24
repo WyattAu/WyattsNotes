@@ -1,14 +1,13 @@
 ---
 title: Poetry Analysis Guide for IB English
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - English
-categories:
-  - IB
-  - English
+- IB
+- English
 slug: poetry-analysis-guide
+description: Comprehensive guide to poetry analysis guide for ib english for the International
+  Baccalaureate.
 ---
+
 
 # Poetry Analysis Guide for IB English
 

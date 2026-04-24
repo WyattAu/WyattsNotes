@@ -1,12 +1,11 @@
 ---
 title: Wrap Up
-date: 2025-11-03T14:32:46.994Z
 tags:
-  - physics
-categories:
-  - physics
+- physics
 slug: wrap
+description: Comprehensive guide to wrap up for the International Baccalaureate.
 ---
+
 
 <details>
 <summary><strong>Theme A: Space, Time and Motion</strong></summary>

@@ -1,14 +1,13 @@
 ---
 title: IB English Assessment and Analytical Techniques
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - English
-categories:
-  - IB
-  - English
+- IB
+- English
 slug: ib-english-assessment-and-techniques
+description: Comprehensive guide to ib english assessment and analytical techniques
+  for the International Baccalaureate.
 ---
+
 
 # IB English Assessment and Analytical Techniques
 

@@ -1,12 +1,11 @@
 ---
 title: Vectors
-date: 2025-05-13T22:14:20.747Z
 tags:
-  - maths
-categories:
-  - maths
+- maths
 slug: vectors
+description: Comprehensive guide to vectors for the International Baccalaureate.
 ---
+
 
 ## Vector Line
 

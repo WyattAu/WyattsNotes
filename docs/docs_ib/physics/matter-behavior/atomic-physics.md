@@ -1,10 +1,10 @@
 ---
-id: atomic-physics
 title: Atomic and Nuclear Physics
-description:
-  IB Physics — atomic models, nuclear physics, radioactivity, and mass-energy equivalence.
+description: IB Physics — atomic models, nuclear physics, radioactivity, and mass-energy
+  equivalence.
 slug: atomic-physics
 ---
+
 
 ## Atomic Models
 

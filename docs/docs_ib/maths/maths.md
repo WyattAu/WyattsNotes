@@ -1,12 +1,11 @@
 ---
 title: Maths
-date: 2025-07-07T00:47:11.360Z
 tags:
-  - maths
-categories:
-  - maths
+- maths
 slug: maths
+description: Comprehensive guide to maths for the International Baccalaureate.
 ---
+
 
 ## IB Mathematics -- Analysis and Approaches (AA) -- Course Overview
 

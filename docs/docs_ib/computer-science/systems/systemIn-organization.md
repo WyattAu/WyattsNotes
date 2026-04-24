@@ -1,12 +1,12 @@
 ---
 title: System In Organizations
-sidebar_position: 1
 tags:
-  - CS
-categories:
-  - CS
-date: 2025-04-30T18:48:24.734Z
+- CS
+slug: systemIn-organization
+description: Comprehensive guide to system in organizations for the International
+  Baccalaureate.
 ---
+
 
 ## Planning and System Installation
 

@@ -1,14 +1,12 @@
 ---
 title: Boolean Logic
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - CS
-categories:
-  - IB
-  - CS
+- IB
+- CS
 slug: boolean-logic
+description: Comprehensive guide to boolean logic for the International Baccalaureate.
 ---
+
 
 ## Boolean Algebra Fundamentals
 

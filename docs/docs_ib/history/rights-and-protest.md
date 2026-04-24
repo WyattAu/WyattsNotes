@@ -1,14 +1,12 @@
 ---
 title: Rights and Protest
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - History
-categories:
-  - IB
-  - History
+- IB
+- History
 slug: rights-and-protest
+description: Comprehensive guide to rights and protest for the International Baccalaureate.
 ---
+
 
 # Rights and Protest
 

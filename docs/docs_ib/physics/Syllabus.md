@@ -1,7 +1,9 @@
 ---
 title: Syllabus
-sidebar_position: 2
+slug: Syllabus
+description: Comprehensive guide to syllabus for the International Baccalaureate.
 ---
+
 
 ### IB Physics HL Syllabus Overview
 

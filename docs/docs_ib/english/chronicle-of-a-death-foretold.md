@@ -1,12 +1,12 @@
 ---
 title: Chronicle of a Death Foretold
-date: 2025-05-06T17:29:55.298Z
 tags:
-  - english
-categories:
-  - english
+- english
 slug: chronicle-death-foretold
+description: Comprehensive guide to chronicle of a death foretold for the International
+  Baccalaureate.
 ---
+
 
 ## Author Context
 

@@ -1,9 +1,11 @@
 ---
 title: Induction
-date: 2025-04-28T11:28:34.281Z
 tags:
-  - physics
+- physics
+slug: Induction
+description: Comprehensive guide to induction for the International Baccalaureate.
 ---
+
 
 ## Magnetic Flux
 

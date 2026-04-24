@@ -1,9 +1,10 @@
 ---
-id: stoichiometry
 title: Stoichiometry
-description: IB Chemistry — moles, molar mass, empirical formulas, gas laws, and solution chemistry.
+description: IB Chemistry — moles, molar mass, empirical formulas, gas laws, and solution
+  chemistry.
 slug: stoichiometry
 ---
+
 
 ## The Mole Concept
 

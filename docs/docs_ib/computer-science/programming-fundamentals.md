@@ -1,14 +1,13 @@
 ---
 title: Programming Fundamentals
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - CS
-categories:
-  - IB
-  - CS
+- IB
+- CS
 slug: programming-fundamentals
+description: Comprehensive guide to programming fundamentals for the International
+  Baccalaureate.
 ---
+
 
 ## Variables, Constants, and Data Types
 

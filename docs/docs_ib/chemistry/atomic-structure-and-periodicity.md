@@ -1,14 +1,13 @@
 ---
 title: Atomic Structure and Periodicity
-date: 2026-04-07T00:00:00.000Z
 tags:
-  - Chemistry
-  - IB
-categories:
-  - Chemistry
-  - IB
+- Chemistry
+- IB
 slug: atomic-structure-and-periodicity
+description: Comprehensive guide to atomic structure and periodicity for the International
+  Baccalaureate.
 ---
+
 
 ## 1. Atomic Structure
 

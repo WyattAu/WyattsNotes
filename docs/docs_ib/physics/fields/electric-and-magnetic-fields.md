@@ -1,7 +1,10 @@
 ---
 title: Electric and Magnetic Fields
-sidebar_position: 2
+slug: electric-and-magnetic-fields
+description: Comprehensive guide to electric and magnetic fields for the International
+  Baccalaureate.
 ---
+
 
 ## Point Charge
 

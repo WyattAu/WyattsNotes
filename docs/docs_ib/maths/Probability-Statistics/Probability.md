@@ -1,10 +1,10 @@
 ---
-id: probability
 title: Probability
-description:
-  IB Mathematics — probability theory, conditional probability, Bayes theorem, and distributions.
+description: IB Mathematics — probability theory, conditional probability, Bayes theorem,
+  and distributions.
 slug: probability
 ---
+
 
 ## Probability Fundamentals
 

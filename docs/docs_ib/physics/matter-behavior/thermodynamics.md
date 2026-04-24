@@ -1,9 +1,11 @@
 ---
 title: Thermodynamics
-date: 2025-04-28T21:30:19.653Z
 tags:
-  - physics
+- physics
+slug: thermodynamics
+description: Comprehensive guide to thermodynamics for the International Baccalaureate.
 ---
+
 
 ## Ideal Gas Law
 

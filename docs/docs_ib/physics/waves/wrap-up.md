@@ -1,12 +1,11 @@
 ---
 title: Wrap Up
-date: 2025-11-03T18:15:54.335Z
 tags:
-  - physics
-categories:
-  - physics
+- physics
 slug: wrap
+description: Comprehensive guide to wrap up for the International Baccalaureate.
 ---
+
 
 ## C.1 Simple Harmonic Motion, C.2 Wave Model & C.3 Wave Phenomena
 

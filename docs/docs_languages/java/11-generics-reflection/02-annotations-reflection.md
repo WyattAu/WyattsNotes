@@ -652,7 +652,7 @@ match exactly. `invoke` allows implicit conversions as defined by the JVM's meth
 
 | Aspect         | MethodHandle                      | Reflection (Method)         |
 | -------------- | --------------------------------- | --------------------------- |
-| Performance    | Can be JIT-optimized,接近直接调用 | Slower, no JIT optimization |
+| Performance    | Can be JIT-optimized, close to direct invocation | Slower, no JIT optimization |
 | Access control | Checked at creation time          | Checked at every invocation |
 | Type safety    | Enforced at invoke time           | Weaker                      |
 | Flexibility    | Adapters for currying, binding    | No built-in adapters        |

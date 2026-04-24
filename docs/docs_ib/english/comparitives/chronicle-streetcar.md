@@ -1,12 +1,12 @@
 ---
 title: Chronicle and Streetcar Comparison
-date: 2025-05-08T18:05:31.814Z
 tags:
-  - english
-categories:
-  - english
+- english
 slug: chronicle-streetcar-comparison
+description: Comprehensive guide to chronicle and streetcar comparison for the International
+  Baccalaureate.
 ---
+
 
 ## Ideologies
 

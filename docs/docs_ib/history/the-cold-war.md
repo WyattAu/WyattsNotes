@@ -1,14 +1,12 @@
 ---
 title: The Cold War
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - History
-categories:
-  - IB
-  - History
+- IB
+- History
 slug: the-cold-war
+description: Comprehensive guide to the cold war for the International Baccalaureate.
 ---
+
 
 ## The Cold War: A Systems-Level Analysis (1945--1991)
 

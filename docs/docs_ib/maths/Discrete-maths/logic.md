@@ -1,12 +1,11 @@
 ---
 title: Logic
-date: 2025-08-01T02:44:51.120Z
 tags:
-  - maths
-categories:
-  - maths
+- maths
 slug: logic
+description: Comprehensive guide to logic for the International Baccalaureate.
 ---
+
 
 :::info TMUA Specification
 

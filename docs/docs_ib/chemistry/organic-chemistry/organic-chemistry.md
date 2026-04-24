@@ -1,10 +1,10 @@
 ---
-id: organic-chemistry
 title: Organic Chemistry
-description:
-  IB Chemistry — hydrocarbons, functional groups, reaction mechanisms, and polymer chemistry.
+description: IB Chemistry — hydrocarbons, functional groups, reaction mechanisms,
+  and polymer chemistry.
 slug: organic-chemistry
 ---
+
 
 ## Homologous Series and Naming
 

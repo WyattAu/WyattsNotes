@@ -1,12 +1,11 @@
 ---
 title: Complex Numbers
-date: 2025-05-15T18:59:48.120Z
 tags:
-  - maths
-categories:
-  - maths
+- maths
 slug: complex-numbers
+description: Comprehensive guide to complex numbers for the International Baccalaureate.
 ---
+
 
 ## Cartesian Form
 

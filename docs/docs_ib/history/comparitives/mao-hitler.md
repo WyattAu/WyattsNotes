@@ -1,12 +1,12 @@
 ---
 title: Mao and Hitler Authoritarian Regimes
-date: 2025-05-04T14:04:28.457Z
 tags:
-  - history
-categories:
-  - history
+- history
 slug: mao-hitler-authoritarian-regimes
+description: Comprehensive guide to mao and hitler authoritarian regimes for the International
+  Baccalaureate.
 ---
+
 
 ## Ideology
 

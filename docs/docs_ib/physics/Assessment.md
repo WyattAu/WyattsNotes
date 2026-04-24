@@ -1,7 +1,9 @@
 ---
 title: Assessment
-sidebar_position: 1
+slug: Assessment
+description: Comprehensive guide to assessment for the International Baccalaureate.
 ---
+
 
 ## Assessment Overview
 

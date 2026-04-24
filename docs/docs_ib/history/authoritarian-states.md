@@ -1,14 +1,12 @@
 ---
 title: Authoritarian States
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - History
-categories:
-  - IB
-  - History
+- IB
+- History
 slug: authoritarian-states
+description: Comprehensive guide to authoritarian states for the International Baccalaureate.
 ---
+
 
 # Authoritarian States (20th Century)
 

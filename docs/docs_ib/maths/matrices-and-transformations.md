@@ -1,14 +1,13 @@
 ---
 title: Matrices and Transformations
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - Maths
-categories:
-  - IB
-  - Maths
+- IB
+- Maths
 slug: matrices-and-transformations
+description: Comprehensive guide to matrices and transformations for the International
+  Baccalaureate.
 ---
+
 
 ## Matrices and Transformations
 

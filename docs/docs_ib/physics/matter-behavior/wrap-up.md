@@ -1,12 +1,11 @@
 ---
 title: Wrap Up
-date: 2025-11-03T16:19:14.697Z
 tags:
-  - physics
-categories:
-  - physics
+- physics
 slug: wrap
+description: Comprehensive guide to wrap up for the International Baccalaureate.
 ---
+
 
 <details>
 <summary><strong>B.1 Thermal Energy Transfers, B.2 Greenhouse Effect & B.3 Gas Laws</strong></summary>

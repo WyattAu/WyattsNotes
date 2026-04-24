@@ -1,14 +1,13 @@
 ---
 title: Algorithms and Data Structures
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - CS
-categories:
-  - IB
-  - CS
+- IB
+- CS
 slug: algorithms-and-data-structures
+description: Comprehensive guide to algorithms and data structures for the International
+  Baccalaureate.
 ---
+
 
 ## Algorithmic Thinking
 

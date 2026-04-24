@@ -1,11 +1,11 @@
 ---
 title: Computer Organizations
-date: 2025-05-01T23:58:50.146Z
 tags:
-  - CS
-categories:
-  - CS
+- CS
+slug: computer-organizations
+description: Comprehensive guide to computer organizations for the International Baccalaureate.
 ---
+
 
 ## Computer Architecture
 

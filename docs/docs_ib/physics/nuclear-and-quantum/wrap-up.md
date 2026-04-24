@@ -1,12 +1,11 @@
 ---
 title: Wrap Up
-date: 2025-11-04T00:28:40.132Z
 tags:
-  - physics
-categories:
-  - physics
+- physics
 slug: wrap
+description: Comprehensive guide to wrap up for the International Baccalaureate.
 ---
+
 
 <details>
 <summary><strong>E.1 Structure of the Atom, E.2 Quantum Physics & E.3 Radioactive Decay</strong></summary>

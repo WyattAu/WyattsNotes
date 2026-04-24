@@ -1,10 +1,10 @@
 ---
-id: differentiation
 title: Differentiation
-description:
-  IB Mathematics — differentiation rules, techniques, applications, and exam-style problems.
+description: IB Mathematics — differentiation rules, techniques, applications, and
+  exam-style problems.
 slug: differentiation-depth
 ---
+
 
 ## Limits and Continuity
 

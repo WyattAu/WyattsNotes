@@ -1,10 +1,10 @@
 ---
-id: integration-techniques
 title: Integration Techniques
-description:
-  IB Mathematics — integration techniques, definite integrals, area and volume, and applications.
+description: IB Mathematics — integration techniques, definite integrals, area and
+  volume, and applications.
 slug: integration-techniques
 ---
+
 
 ## Antidifferentiation Review
 

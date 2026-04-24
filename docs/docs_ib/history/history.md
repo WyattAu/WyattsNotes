@@ -1,12 +1,11 @@
 ---
 title: History
-date: 2025-07-07T00:47:56.128Z
 tags:
-  - history
-categories:
-  - history
+- history
 slug: history
+description: Comprehensive guide to history for the International Baccalaureate.
 ---
+
 
 ## IB History -- Course Overview
 

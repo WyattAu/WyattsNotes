@@ -1,7 +1,10 @@
 ---
 title: Motion in Electromagnetic Fields
-date: 2025-04-27T16:56:56.736Z
+slug: motion-in-electromagnetic-fields
+description: Comprehensive guide to motion in electromagnetic fields for the International
+  Baccalaureate.
 ---
+
 
 ## Uniform Fields
 

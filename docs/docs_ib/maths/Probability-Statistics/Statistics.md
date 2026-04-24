@@ -1,10 +1,10 @@
 ---
-id: statistics
 title: Statistics
-description:
-  IB Mathematics — descriptive statistics, correlation, regression, and hypothesis testing.
+description: IB Mathematics — descriptive statistics, correlation, regression, and
+  hypothesis testing.
 slug: statistics
 ---
+
 
 ## Measures of Central Tendency
 

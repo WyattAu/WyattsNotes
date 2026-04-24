@@ -1,10 +1,10 @@
 ---
-id: intro
 title: Introduction to IB Notes
-description: IB Diploma Programme notes covering Computer Science, Mathematics, and other subjects.
+description: IB Diploma Programme notes covering Computer Science, Mathematics, and
+  other subjects.
 slug: /intro
-sidebar_position: 1
 ---
+
 
 ## Abstract
 

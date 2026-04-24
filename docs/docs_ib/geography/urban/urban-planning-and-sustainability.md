@@ -221,7 +221,7 @@ collaborative, bottom-up processes.
 - **Public consultations and exhibitions:** presenting draft plans to the public for comment (the
   most basic form of participation).
 - **Community workshops and charrettes:** intensive design sessions where residents, planners,
-  architects, and developers collaborate on设计方案.
+  architects, and developers collaborate on design proposals.
 - **Participatory budgeting:** allowing citizens to decide how a portion of the municipal budget is
   allocated (pioneered in Porto Alegre, Brazil, in 1989).
 - **Citizen juries and assemblies:** randomly selected panels of citizens deliberate on specific

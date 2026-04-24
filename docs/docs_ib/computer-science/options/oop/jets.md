@@ -1,13 +1,12 @@
 ---
 title: JETS
-date: 2025-05-02T19:29:09.542Z
 tags:
-  - CS
-categories:
-  - CS
+- CS
 slug: jets
 draft: false
+description: Comprehensive guide to jets for the International Baccalaureate.
 ---
+
 
 # Java Examination Tool Sebset (JETS)
 

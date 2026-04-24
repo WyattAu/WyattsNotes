@@ -1,14 +1,13 @@
 ---
 title: Chronicle of a Death Foretold — Close Reading and Analysis
-date: 2026-04-09T00:00:00.000Z
 tags:
-  - IB
-  - English
-categories:
-  - IB
-  - English
+- IB
+- English
 slug: chronicle-of-a-death-foretold-analysis
+description: Comprehensive guide to chronicle of a death foretold — close reading
+  and analysis for the International Baccalaureate.
 ---
+
 
 # Chronicle of a Death Foretold: Close Reading and Analysis
 

@@ -1,12 +1,12 @@
 ---
-Title: Calculus
-Date: 2025-06-04T15:41:14.714Z
 tags:
-  - maths
-categories:
-  - maths
+- maths
 slug: integration-depth
+description: Comprehensive guide to untitled for the International Baccalaureate.
+title: Calculus
 ---
+
+
 
 ## Integration
 
