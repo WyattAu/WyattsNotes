@@ -61,7 +61,7 @@ const commonDocsPluginConfig = {
 
 const config: Config = {
   title: "Wyatt's Notes — Academics",
-  tagline: 'IB, DSE',
+  tagline: 'Beauty is the purge of clutter.',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
   url: 'https://academics.wyattau.com',
   baseUrl: '/',
