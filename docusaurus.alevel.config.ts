@@ -73,6 +73,21 @@ const config: Config = {
 
   staticDirectories: ['static'],
 
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {
+        src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
+        crossorigin: 'anonymous',
+        defer: true,
+      },
+    },
+    {
+      tagName: 'script',
+      innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
+    },
+  ],
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -139,20 +154,6 @@ const config: Config = {
         name: 'theme-color',
         content: '#2d2d2d',
         media: '(prefers-color-scheme: dark)',
-      },
-    ],
-    headTags: [
-      {
-        tagName: 'script',
-        attributes: {
-          src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
-          crossorigin: 'anonymous',
-          defer: true,
-        },
-      },
-      {
-        tagName: 'script',
-        innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
       },
     ],
     image: 'img/WyattsNotes/WyattsNotesSocialCard.jpg',
