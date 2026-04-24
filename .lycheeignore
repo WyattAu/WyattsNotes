@@ -1,0 +1,22 @@
+# Lychee link checker ignore file
+# https://github.com/lycheeverse/lychee#configuration
+
+# Filesystem paths that are directories, not files (Docusaurus resolves by slug)
+docs/docs_alevel/chemistry/chemical-kinetics
+docs/docs_ib/psychology/research-methods
+
+# Example/example.com URLs used in documentation code blocks
+https://example.com/*
+http://example.com/*
+
+# GitHub template URLs used in documentation
+https://github.com/example/*
+https://github.com/company/*
+https://github.com/janedoe/*
+https://github.com/microsoft/vcpkg*
+
+# Template URLs in code blocks
+https://github.com/cpm-cmake/CPM.cmake/releases/download/*
+
+# Known rate-limited or auth-gated sites (work in browser, fail in CI)
+https://acme-staging-v02.api.letsencrypt.org/*

@@ -27,7 +27,7 @@ brew tap dart-lang/dart
 brew install dart
 ```
 
-Or download the archive directly from https://dart.dev/get-dart/archive:
+Or download the archive directly from https://dart.dev/get-dart
 
 ```bash
 curl -O https://storage.googleapis.com/dart-archive/channels/stable/release/latest/sdk/dartsdk-macos-x64-release.zip
@@ -54,7 +54,7 @@ sudo apt install dart
 
 ### Windows
 
-Download the installer from https://dart.dev/get-dart/archive/windows. Run the `.exe` — it adds
+Download the installer from https://dart.dev/get-dart. Run the `.exe` — it adds
 `dart` to your PATH automatically. Verify with:
 
 ```bash

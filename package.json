@@ -24,11 +24,6 @@
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.20",
     "@algolia/autocomplete-js": "^1.19.8",
-    "@docusaurus/core": "^3.9.2",
-    "@docusaurus/plugin-sitemap": "^3.9.2",
-    "@docusaurus/preset-classic": "^3.9.2",
-    "@docusaurus/theme-live-codeblock": "^3.9.2",
-    "@docusaurus/theme-mermaid": "^3.9.2",
     "@fontsource/inter": "^5.2.6",
     "@fontsource/jetbrains-mono": "^5.2.6",
     "@fontsource/merriweather": "^5.2.9",
@@ -52,9 +47,14 @@
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
+    "@docusaurus/core": "^3.10.0",
     "@docusaurus/module-type-aliases": "^3.10.0",
-    "@docusaurus/tsconfig": "^3.9.2",
-    "@docusaurus/types": "^3.9.2",
+    "@docusaurus/plugin-sitemap": "^3.10.0",
+    "@docusaurus/preset-classic": "^3.10.0",
+    "@docusaurus/theme-live-codeblock": "^3.10.0",
+    "@docusaurus/theme-mermaid": "^3.10.0",
+    "@docusaurus/tsconfig": "^3.10.0",
+    "@docusaurus/types": "^3.10.0",
     "@tailwindcss/typography": "^0.5.16",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
@@ -73,7 +73,7 @@
     "prettier": "3.6.2",
     "prettier-plugin-organize-imports": "^4.1.0",
     "tailwindcss": "^4.1.11",
-    "typescript": "~5.8.3"
+    "typescript": "~5.9.3"
   },
   "browserslist": {
     "production": [
@@ -92,7 +92,8 @@
   },
   "pnpm": {
     "overrides": {
-      "fast-xml-parser": ">=4.5.4"
+      "fast-xml-parser": ">=4.5.4",
+      "webpackbar": "^7.0.0"
     }
   },
   "lint-staged": {

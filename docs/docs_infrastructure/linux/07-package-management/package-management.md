@@ -367,7 +367,7 @@ paru -Syu                 # update including AUR packages
 paru -Ss search_term      # search AUR
 
 # Manual AUR installation
-git clone https://aur.archlinux.org/package.git
+git clone https://aur.archlinux.org/packages/example
 cd package
 makepkg -si               # build and install
 ```
