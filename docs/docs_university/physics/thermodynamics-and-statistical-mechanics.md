@@ -50,9 +50,9 @@ body without external work.
 
 **Second Law (Kelvin-Planck Statement):** No cyclic process can convert heat entirely into work.
 
-**Theorem 1.1 (Carnot's Theorem).** No engine operating between two heat reservoirs is more efficient
-than a Carnot engine. All reversible engines operating between the same two reservoirs have the same
-efficiency.
+**Theorem 1.1 (Carnot's Theorem).** No engine operating between two heat reservoirs is more
+efficient than a Carnot engine. All reversible engines operating between the same two reservoirs
+have the same efficiency.
 
 **Proof.** Suppose engine $A$ (claimed more efficient than Carnot) operates between reservoirs at
 $T_h$ and $T_c$. Let $A$ extract heat $Q_h$ from the hot reservoir, do work $W$, and reject heat
@@ -73,9 +73,9 @@ $$\oint \frac{\delta Q}{T} \leq 0$$
 
 with equality if and only if the process is reversible.
 
-**Proof of entropy increase for irreversible processes.** Consider a system undergoing an irreversible
-process from state $1$ to state $2$, then returning via a reversible process. By the Clausius
-inequality:
+**Proof of entropy increase for irreversible processes.** Consider a system undergoing an
+irreversible process from state $1$ to state $2$, then returning via a reversible process. By the
+Clausius inequality:
 
 $$\int_1^2 \frac{\delta Q_{\mathrm{irrev}}}{T} + \int_2^1 \frac{\delta Q_{\mathrm{rev}}}{T} \leq 0$$
 
@@ -103,12 +103,12 @@ in a finite number of steps.
 The internal energy $U$ is the fundamental thermodynamic potential. By performing Legendre
 transformations on $U(S, V, N)$, we obtain the other potentials:
 
-| Potential | Symbol | Natural Variables | Differential |
-|---|---|---|---|
-| Internal energy | $U$ | $S, V, N$ | $dU = T\,dS - P\,dV + \mu\,dN$ |
-| Enthalpy | $H$ | $S, P, N$ | $dH = T\,dS + V\,dP + \mu\,dN$ |
-| Helmholtz free energy | $F$ | $T, V, N$ | $dF = -S\,dT - P\,dV + \mu\,dN$ |
-| Gibbs free energy | $G$ | $T, P, N$ | $dG = -S\,dT + V\,dP + \mu\,dN$ |
+| Potential             | Symbol | Natural Variables | Differential                    |
+| --------------------- | ------ | ----------------- | ------------------------------- |
+| Internal energy       | $U$    | $S, V, N$         | $dU = T\,dS - P\,dV + \mu\,dN$  |
+| Enthalpy              | $H$    | $S, P, N$         | $dH = T\,dS + V\,dP + \mu\,dN$  |
+| Helmholtz free energy | $F$    | $T, V, N$         | $dF = -S\,dT - P\,dV + \mu\,dN$ |
+| Gibbs free energy     | $G$    | $T, P, N$         | $dG = -S\,dT + V\,dP + \mu\,dN$ |
 
 The Legendre transforms are:
 
@@ -140,8 +140,8 @@ $$dG = -S\,dT + V\,dP + \mu\,dN$$
 - $U$: Total energy at constant entropy and volume.
 - $H$: Total energy plus the work needed to make room for the system ($PV$). Useful for
   constant-pressure processes (e.g., chemical reactions at atmospheric pressure).
-- $F$: The maximum work extractable from a system at constant temperature. Minimised at
-  equilibrium for systems in contact with a heat bath at fixed $T, V$.
+- $F$: The maximum work extractable from a system at constant temperature. Minimised at equilibrium
+  for systems in contact with a heat bath at fixed $T, V$.
 - $G$: The maximum non-expansion work extractable. Minimised at equilibrium for systems at fixed
   $T, P$.
 
@@ -286,8 +286,8 @@ This reduces to the Boltzmann formula when all accessible microstates are equall
 $p_i = 1/\Omega$.
 
 **Derivation from Boltzmann.** For $N$ identical systems distributed among $\Omega$ equally probable
-microstates, the most probable macrostate has $n_i = N/\Omega$ systems in each microstate. The number
-of ways to arrange this is:
+microstates, the most probable macrostate has $n_i = N/\Omega$ systems in each microstate. The
+number of ways to arrange this is:
 
 $$W = \frac{N!}{\prod_i n_i!}$$
 
@@ -332,7 +332,8 @@ derivatives of $G$, with all lower derivatives continuous.
 
 ### 6.2 The Clausius-Clapeyron Equation
 
-For a first-order phase transition between phases $\alpha$ and $\beta$ in equilibrium ($G_\alpha =
+For a first-order phase transition between phases $\alpha$ and $\beta$ in equilibrium
+($G_\alpha =
 G_\beta$):
 
 $$\frac{dP}{dT} = \frac{S_\beta - S_\alpha}{V_\beta - V_\alpha} = \frac{L}{T \Delta V}$$
@@ -347,7 +348,8 @@ $$\frac{dP}{dT} = \frac{S_\beta - S_\alpha}{V_\beta - V_\alpha} = \frac{L}{T \De
 
 $\blacksquare$
 
-**Application: liquid-gas coexistence.** Assuming the vapour is an ideal gas and $V_{\mathrm{gas}}
+**Application: liquid-gas coexistence.** Assuming the vapour is an ideal gas and
+$V_{\mathrm{gas}}
 \gg V_{\mathrm{liquid}}$:
 
 $$\frac{dP}{dT} \approx \frac{L}{T \cdot nRT/P} = \frac{PL}{nRT^2}$$
@@ -374,8 +376,8 @@ The critical point is at $T_c = 8a/(27Rb)$, $P_c = a/(27b^2)$, $v_c = 3b$.
 
 ### 7.1 Derivation from the Microcanonical Ensemble
 
-Consider a system $S$ in thermal contact with a large heat reservoir $R$ at temperature $T$. The total
-energy $E_{\mathrm{tot}} = E_S + E_R$ is conserved.
+Consider a system $S$ in thermal contact with a large heat reservoir $R$ at temperature $T$. The
+total energy $E_{\mathrm{tot}} = E_S + E_R$ is conserved.
 
 The probability that $S$ is in state $i$ with energy $E_i$ is proportional to the number of
 microstates of the reservoir:
@@ -419,15 +421,15 @@ $$U = -\frac{\partial \ln Z}{\partial \beta} = \frac{\varepsilon e^{-\beta\varep
 
 $$C = \frac{\partial U}{\partial T} = k_B \beta^2 \varepsilon^2 \frac{e^{\beta\varepsilon}}{(1 + e^{\beta\varepsilon})^2}$$
 
-At high $T$ ($\beta \to 0$): $U \to \varepsilon/2$ and $C \to 0$ (equipartition).
-At low $T$ ($\beta \to \infty$): $U \to 0$ and $C \to 0$ (Schottky anomaly).
+At high $T$ ($\beta \to 0$): $U \to \varepsilon/2$ and $C \to 0$ (equipartition). At low $T$
+($\beta \to \infty$): $U \to 0$ and $C \to 0$ (Schottky anomaly).
 
 ## 8. Partition Functions
 
 ### 8.1 Molecular Partition Function
 
-For a single molecule, the total partition function factors into contributions from different degrees
-of freedom:
+For a single molecule, the total partition function factors into contributions from different
+degrees of freedom:
 
 $$z = z_{\mathrm{trans}} \cdot z_{\mathrm{rot}} \cdot z_{\mathrm{vib}} \cdot z_{\mathrm{elec}}$$
 
@@ -541,8 +543,8 @@ degrees of freedom.
 
 Classical particles are distinguishable. Quantum particles are not. There are two types:
 
-- **Fermions** (half-integer spin): obey the **Pauli exclusion principle**; the total wavefunction is
-  antisymmetric under particle exchange.
+- **Fermions** (half-integer spin): obey the **Pauli exclusion principle**; the total wavefunction
+  is antisymmetric under particle exchange.
 - **Bosons** (integer spin): the total wavefunction is symmetric under particle exchange.
 
 ### 10.2 Fermi-Dirac Statistics
@@ -563,7 +565,8 @@ $$\langle n_i \rangle = -\frac{1}{\beta}\frac{\partial \ln \mathcal{Z}_i}{\parti
 
 $\blacksquare$
 
-**The Fermi energy** $\varepsilon_F$ is the chemical potential at $T = 0$: $f_{\mathrm{FD}}(\varepsilon)
+**The Fermi energy** $\varepsilon_F$ is the chemical potential at $T = 0$:
+$f_{\mathrm{FD}}(\varepsilon)
 = \Theta(\varepsilon_F - \varepsilon)$.
 
 **The Fermi temperature:** $T_F = \varepsilon_F / k_B$.
@@ -601,8 +604,8 @@ $$T_c = \frac{2\pi\hbar^2}{mk_B}\left(\frac{n}{\zeta(3/2)}\right)^{2/3}$$
 
 where $n = N/V$ is the particle density and $\zeta(3/2) \approx 2.612$.
 
-Below $T_c$, the chemical potential is essentially zero ($\mu \approx 0$), and a macroscopic fraction
-of particles condense into the ground state:
+Below $T_c$, the chemical potential is essentially zero ($\mu \approx 0$), and a macroscopic
+fraction of particles condense into the ground state:
 
 $$\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}$$
 
@@ -610,9 +613,9 @@ $$\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}$$
 
 $$N_{\mathrm{ex}} = \int_0^{\infty} \frac{g(\varepsilon)\,d\varepsilon}{e^{\beta\varepsilon} - 1} = V\left(\frac{mk_B T}{2\pi\hbar^2}\right)^{3/2} \zeta(3/2)$$
 
-This has a maximum value at $\mu = 0$. When $N \gt N_{\mathrm{ex}}^{\mathrm{max}}$, the excess particles
-must go to the ground state. Setting $N = N_{\mathrm{ex}}^{\mathrm{max}}$ at $T = T_c$ gives the
-critical temperature above. $\blacksquare$
+This has a maximum value at $\mu = 0$. When $N \gt N_{\mathrm{ex}}^{\mathrm{max}}$, the excess
+particles must go to the ground state. Setting $N = N_{\mathrm{ex}}^{\mathrm{max}}$ at $T = T_c$
+gives the critical temperature above. $\blacksquare$
 
 ### 10.5 Comparison of the Three Statistics
 
@@ -630,13 +633,13 @@ $$\varepsilon_F = \frac{\hbar^2}{2m_e}(3\pi^2 n)^{2/3} \approx 7.0 \times 10^{-1
 
 $$T_F = \frac{\varepsilon_F}{k_B} \approx 51000\ \mathrm{K}$$
 
-At room temperature ($T = 300$ K), $T/T_F \approx 0.006$, so the gas is deeply degenerate. The
-heat capacity is:
+At room temperature ($T = 300$ K), $T/T_F \approx 0.006$, so the gas is deeply degenerate. The heat
+capacity is:
 
 $$C_V \approx \frac{\pi^2}{2}Nk_B\frac{T}{T_F}$$
 
-This is much smaller than the classical prediction $C_V = \frac{3}{2}Nk_B$, explaining why
-electrons contribute negligibly to the heat capacity of metals at room temperature.
+This is much smaller than the classical prediction $C_V = \frac{3}{2}Nk_B$, explaining why electrons
+contribute negligibly to the heat capacity of metals at room temperature.
 
 ## 11. Grand Canonical Ensemble
 
@@ -661,7 +664,8 @@ This follows from the Euler relation for the grand potential $\Phi_G = -PV = F -
 
 **Key relations:**
 
-- Average particle number: $\langle N \rangle = \frac{1}{\beta}\frac{\partial \ln \Xi}{\partial \mu}\bigg|_{T,V}$
+- Average particle number:
+  $\langle N \rangle = \frac{1}{\beta}\frac{\partial \ln \Xi}{\partial \mu}\bigg|_{T,V}$
 - Pressure: $P = \frac{1}{\beta}\frac{\partial \ln \Xi}{\partial V}\bigg|_{T,\mu}$
 - Entropy: $S = k_B(\ln \Xi + \beta \langle E \rangle - \beta \mu \langle N \rangle)$
 
@@ -683,8 +687,10 @@ In the canonical ensemble:
 
 $$\langle E^2 \rangle - \langle E \rangle^2 = k_B T^2 C_V$$
 
-**Proof.** $\langle E^2 \rangle - \langle E \rangle^2 = \frac{\partial^2 \ln Z}{\partial \beta^2}
-= -\frac{\partial U}{\partial \beta} = k_B T^2 C_V$. $\blacksquare$
+**Proof.**
+$\langle E^2 \rangle - \langle E \rangle^2 = \frac{\partial^2 \ln Z}{\partial \beta^2}
+= -\frac{\partial U}{\partial \beta} = k_B T^2 C_V$.
+$\blacksquare$
 
 This is a manifestation of the **fluctuation-dissipation theorem**: the response of the system
 ($C_V$) is related to the equilibrium fluctuations.
@@ -739,8 +745,8 @@ The peak of $u(\lambda)$ occurs at:
 
 $$\lambda_{\mathrm{max}} T = 2.898 \times 10^{-3}\ \mathrm{m\cdot K}$$
 
-This follows from maximising $u(\lambda) = (8\pi h c / \lambda^5)(e^{hc/(\lambda k_B T)} - 1)^{-1}$ with
-respect to $\lambda$.
+This follows from maximising $u(\lambda) = (8\pi h c / \lambda^5)(e^{hc/(\lambda k_B T)} - 1)^{-1}$
+with respect to $\lambda$.
 
 ## 14. The Ising Model
 
@@ -760,12 +766,13 @@ external magnetic field.
 
 **Theorem 14.1 (Ising, 1925).** The 1D Ising model has no phase transition at $T \gt 0$.
 
-**Proof sketch.** Using the transfer matrix method, the partition function for $N$ spins with periodic
-boundary conditions is:
+**Proof sketch.** Using the transfer matrix method, the partition function for $N$ spins with
+periodic boundary conditions is:
 
 $$Z = \lambda_+^N + \lambda_-^N$$
 
-where $\lambda_\pm = e^{\beta J}\cosh(\beta h) \pm \sqrt{e^{2\beta J}\sinh^2(\beta h) + e^{-2\beta J}}$.
+where
+$\lambda_\pm = e^{\beta J}\cosh(\beta h) \pm \sqrt{e^{2\beta J}\sinh^2(\beta h) + e^{-2\beta J}}$.
 
 In the thermodynamic limit ($N \to \infty$), $Z \to \lambda_+^N$ (the larger eigenvalue dominates).
 
@@ -773,8 +780,8 @@ The magnetisation per spin is:
 
 $$m = \frac{1}{\beta}\frac{\partial \ln \lambda_+}{\partial h}$$
 
-For $h = 0$: $\lambda_+ = e^{\beta J} + e^{-\beta J} = 2\cosh(\beta J)$, and $m = 0$ for all $T \gt 0$.
-There is no spontaneous magnetisation, hence no phase transition. $\blacksquare$
+For $h = 0$: $\lambda_+ = e^{\beta J} + e^{-\beta J} = 2\cosh(\beta J)$, and $m = 0$ for all
+$T \gt 0$. There is no spontaneous magnetisation, hence no phase transition. $\blacksquare$
 
 ### 14.3 Mean-Field Approximation
 
@@ -814,12 +821,12 @@ $d_u = 4$.
 
 Near a critical point, thermodynamic quantities follow power laws:
 
-| Quantity | Power law | Exponent |
-|---|---|---|
-| Order parameter ($T \lt T_c$) | $\phi \propto (T_c - T)^\beta$ | $\beta$ |
-| Susceptibility | $\chi \propto |T - T_c|^{-\gamma}$ | $\gamma$ |
-| Specific heat | $C \propto |T - T_c|^{-\alpha}$ | $\alpha$ |
-| Correlation length | $\xi \propto |T - T_c|^{-\nu}$ | $\nu$ |
+| Quantity                      | Power law                                      | Exponent |
+| ----------------------------- | ---------------------------------------------- | -------- |
+| Order parameter ($T \lt T_c$) | $\phi \propto (T_c - T)^\beta$                 | $\beta$  |
+| Susceptibility                | $\chi \propto \lvert T - T_c \rvert^{-\gamma}$ | $\gamma$ |
+| Specific heat                 | $C \propto \lvert T - T_c \rvert^{-\alpha}$    | $\alpha$ |
+| Correlation length            | $\xi \propto \lvert T - T_c \rvert^{-\nu}$     | $\nu$    |
 
 The **scaling relations** (from the homogeneity hypothesis):
 
@@ -831,9 +838,7 @@ $$\gamma = (2 - \eta)\nu \quad \mathrm{(Fisher)}$$
 
 These are verified experimentally and by renormalisation group calculations.
 
-:::caution Common Pitfall
-The mean-field approximation overestimates $T_c$ and gives incorrect critical exponents. In 1D, it
-predicts a phase transition at $T_c = Jz/k_B$, whereas the exact solution shows no transition at
-$T \gt 0$. Mean-field theory is only reliable in high dimensions (where fluctuations are small) or
-for long-range interactions.
-:::
+:::caution Common Pitfall The mean-field approximation overestimates $T_c$ and gives incorrect
+critical exponents. In 1D, it predicts a phase transition at $T_c = Jz/k_B$, whereas the exact
+solution shows no transition at $T \gt 0$. Mean-field theory is only reliable in high dimensions
+(where fluctuations are small) or for long-range interactions. :::
