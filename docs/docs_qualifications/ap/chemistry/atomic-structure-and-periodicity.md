@@ -749,7 +749,7 @@ $$E = \frac{hc}{\lambda} = \frac{(6.626 \times 10^{-34} \mathrm{ J\cdot s})(3.00
 Convert to eV: $9.94 \times 10^{-19} / 1.602 \times 10^{-19} = 6.20 \mathrm{ eV}$.
 
 Kinetic energy of ejected electrons:
-$$KE = E_{\text{photon}} - \phi = 6.20 \mathrm{ eV} - 4.0 \mathrm{ eV} = 2.20 \mathrm{ eV}$$
+$$KE = E_{\mathrm{photon}} - \phi = 6.20 \mathrm{ eV} - 4.0 \mathrm{ eV} = 2.20 \mathrm{ eV}$$
 
 In joules: $2.20 \times 1.602 \times 10^{-19} = 3.52 \times 10^{-19} \mathrm{ J}$.
 

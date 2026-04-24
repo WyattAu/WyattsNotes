@@ -14,7 +14,7 @@ For strong monoprotic acids, $[\mathrm{H}^+]$ equals the acid concentration. For
 acids:
 
 $$
-[\mathrm{H}^+] = 2 \times [\text{acid}]
+[\mathrm{H}^+] = 2 \times [\mathrm{acid}]
 $$
 
 :::info[Example]
@@ -267,7 +267,7 @@ $$
 $$
 
 $$
-2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3 \quad \text{(catalysed by } \mathrm{V}_2\mathrm{O}_5)
+2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3 \quad \mathrm{(catalysed by } \mathrm{V}_2\mathrm{O}_5)
 $$
 
 $$
@@ -354,7 +354,7 @@ s = \sqrt{1.8 \times 10^{-10}} = 1.3 \times 10^{-5}\mathrm{ mol/L}
 $$
 
 $$
-\text{Solubility} = 1.3 \times 10^{-5} \times 143.32 = 1.9 \times 10^{-3}\mathrm{ g/L}
+\mathrm{Solubility} = 1.3 \times 10^{-5} \times 143.32 = 1.9 \times 10^{-3}\mathrm{ g/L}
 $$
 
 :::

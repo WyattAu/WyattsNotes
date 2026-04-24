@@ -132,15 +132,15 @@ $$
 :::info[Example]
 
 $$
-12.11 + 0.3 = 12.4 \quad \text{(one decimal place)}
+12.11 + 0.3 = 12.4 \quad \mathrm{(one decimal place)}
 $$
 
 $$
-3.24 \times 1.5 = 4.9 \quad \text{(two sig figs)}
+3.24 \times 1.5 = 4.9 \quad \mathrm{(two sig figs)}
 $$
 
 $$
-\log(2.0 \times 10^3) = 3.30 \quad \text{(two decimal places)}
+\log(2.0 \times 10^3) = 3.30 \quad \mathrm{(two decimal places)}
 $$
 
 :::
@@ -162,7 +162,7 @@ $$
 points. **Minimum gradient line** does the same for the opposite extremes.
 
 $$
-\Delta(\text{gradient}) = \frac{g_{\max} - g_{\min}}{2}
+\Delta(\mathrm{gradient}) = \frac{g_{\max} - g_{\min}}{2}
 $$
 
 The y-intercept uncertainty follows the same procedure using the maximum and minimum gradient lines
@@ -366,11 +366,11 @@ carbons.
 Deuterated solvents are used (e.g., $\mathrm{CDCl}_3$, $\mathrm{D}_2\mathrm{O}$). Residual proton
 peaks appear at known positions:
 
-| Solvent                    | Residual $\mathrm{^1H}$ $\delta$ (ppm) |
-| -------------------------- | -------------------------------------- |
-| $\mathrm{CDCl}_3$          | $7.26$                                 |
-| $\mathrm{D}_2\mathrm{O}$   | $4.79$                                 |
-| $\mathrm{DMSO}\text{-}d_6$ | $2.50$                                 |
+| Solvent                      | Residual $\mathrm{^1H}$ $\delta$ (ppm) |
+| ---------------------------- | -------------------------------------- |
+| $\mathrm{CDCl}_3$            | $7.26$                                 |
+| $\mathrm{D}_2\mathrm{O}$     | $4.79$                                 |
+| $\mathrm{DMSO}\mathrm{-}d_6$ | $2.50$                                 |
 
 ### Common Pitfalls
 

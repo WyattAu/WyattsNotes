@@ -206,11 +206,11 @@ $$
 When electrolysing aqueous solutions, water can also be oxidized or reduced:
 
 $$
-\text{At cathode (reduction): } 2\mathrm{H}_2\mathrm{O} + 2e^- \to \mathrm{H}_2 + 2\mathrm{OH}^- \qquad E^\circ = -0.83\mathrm{ V}
+\mathrm{At cathode (reduction): } 2\mathrm{H}_2\mathrm{O} + 2e^- \to \mathrm{H}_2 + 2\mathrm{OH}^- \qquad E^\circ = -0.83\mathrm{ V}
 $$
 
 $$
-\text{At anode (oxidation): } 2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^- \qquad E^\circ = -1.23\mathrm{ V}
+\mathrm{At anode (oxidation): } 2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^- \qquad E^\circ = -1.23\mathrm{ V}
 $$
 
 ### Discharge Rules (in Aqueous Solution)

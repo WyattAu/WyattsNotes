@@ -11,15 +11,11 @@ slug: electricity
 
 ## Electricity
 
-:::info
-Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P4 | WJEC P4
-:::
-
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P4 | WJEC P4 :::
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Electrical Circuits
 
@@ -244,7 +240,8 @@ you the rate at which it transfers energy.
 **Worked Example.** A 2 kW heater is used for 3 hours. Calculate the energy transferred and the cost
 at 15 p per kWh.
 
-$$\mathrm{Energy} = 2 \times 3 = 6 \mathrm{ kWh}$$ $$\mathrm{Cost} = 6 \times 15 = 90 \mathrm{ pence}$$
+$$\mathrm{Energy} = 2 \times 3 = 6 \mathrm{ kWh}$$
+$$\mathrm{Cost} = 6 \times 15 = 90 \mathrm{ pence}$$
 
 ### 4.5 Why the National Grid Uses High Voltages
 
@@ -496,10 +493,10 @@ $$P_{12} = I_{12}^2 \times 12 = 0.533^2 \times 12 = 3.41 \mathrm{ W}$$
 
 ## 9. Worked Example: Potential Divider with a Thermistor
 
-A potential divider circuit consists of a $10 \mathrm{ k}\Omega$ fixed resistor and an NTC thermistor
-in series with a $12 \mathrm{ V}$ supply. At $20^{\circ}\mathrm{C}$, the thermistor resistance is
-$10 \mathrm{ k}\Omega$. At $80^{\circ}\mathrm{C}$, the thermistor resistance is $1 \mathrm{ k}\Omega$. The
-output voltage is taken across the thermistor.
+A potential divider circuit consists of a $10 \mathrm{ k}\Omega$ fixed resistor and an NTC
+thermistor in series with a $12 \mathrm{ V}$ supply. At $20^{\circ}\mathrm{C}$, the thermistor
+resistance is $10 \mathrm{ k}\Omega$. At $80^{\circ}\mathrm{C}$, the thermistor resistance is
+$1 \mathrm{ k}\Omega$. The output voltage is taken across the thermistor.
 
 **At $20^{\circ}\mathrm{C}$:**
 
@@ -546,11 +543,11 @@ increased by a factor of 10, the power loss decreases by a factor of 100. If a p
 generates $500 \mathrm{ MW}$ and the cable resistance is $5 \mathrm{ }\Omega$:
 
 - At $25 \mathrm{ kV}$: $I = 20000 \mathrm{ A}$,
-  $P_{\mathrm{loss}} = 20000^2 \times 5 = 2 \times 10^9 \mathrm{ W}$ = 2000 MW (four times the generated
-  power -- absurd)
+  $P_{\mathrm{loss}} = 20000^2 \times 5 = 2 \times 10^9 \mathrm{ W}$ = 2000 MW (four times the
+  generated power -- absurd)
 - At $400 \mathrm{ kV}$: $I = 1250 \mathrm{ A}$,
-  $P_{\mathrm{loss}} = 1250^2 \times 5 = 7.8 \times 10^6 \mathrm{ W}$ = 7.8 MW (1.6% of generated power
-  -- feasible)
+  $P_{\mathrm{loss}} = 1250^2 \times 5 = 7.8 \times 10^6 \mathrm{ W}$ = 7.8 MW (1.6% of generated
+  power -- feasible)
 
 ## 13. Worked Example: Cost of Electrical Appliances
 
@@ -596,14 +593,14 @@ straight line because the filament heats up as the current increases.
 
 ## 15. Summary Table: Series vs Parallel Circuits
 
-| Property               | Series                                  | Parallel                                      |
-| ---------------------- | --------------------------------------- | --------------------------------------------- |
-| Current                | Same through all components             | Splits at junctions; adds up                  |
-| Voltage                | Splits across components; adds up       | Same across all branches                      |
+| Property               | Series                                    | Parallel                                        |
+| ---------------------- | ----------------------------------------- | ----------------------------------------------- |
+| Current                | Same through all components               | Splits at junctions; adds up                    |
+| Voltage                | Splits across components; adds up         | Same across all branches                        |
 | Resistance             | $R_{\mathrm{total}} = R_1 + R_2 + \cdots$ | $1/R_{\mathrm{total}} = 1/R_1 + 1/R_2 + \cdots$ |
-| If one component fails | Whole circuit breaks                    | Other branches continue working               |
+| If one component fails | Whole circuit breaks                      | Other branches continue working                 |
 | Adding more resistors  | Increases $R_{\mathrm{total}}$            | Decreases $R_{\mathrm{total}}$                  |
-| Example                | Old Christmas tree lights               | Household wiring                              |
+| Example                | Old Christmas tree lights                 | Household wiring                                |
 
 ## 16. Safety Features Summary
 
@@ -619,8 +616,9 @@ straight line because the filament heats up as the current increases.
 ## 17. Practice Questions (Additional)
 
 16. A circuit contains a $9 \mathrm{ V}$ battery, a $100 \mathrm{ }\Omega$ resistor in series with a
-    parallel combination of $200 \mathrm{ }\Omega$ and $300 \mathrm{ }\Omega$ resistors. Calculate the
-    current through each resistor and the power dissipated in the $200 \mathrm{ }\Omega$ resistor.
+    parallel combination of $200 \mathrm{ }\Omega$ and $300 \mathrm{ }\Omega$ resistors. Calculate
+    the current through each resistor and the power dissipated in the $200 \mathrm{ }\Omega$
+    resistor.
 
 17. A student connects an ammeter in parallel with a resistor. Explain why this is dangerous and
     what will happen.
@@ -629,15 +627,15 @@ straight line because the filament heats up as the current increases.
     external circuit. The terminal PD is $5.4 \mathrm{ V}$. Calculate the current and the external
     resistance.
 
-19. Design a potential divider circuit using a $9 \mathrm{ V}$ battery and two resistors that produces
-    an output voltage of $3 \mathrm{ V}$. Specify the values of both resistors.
+19. Design a potential divider circuit using a $9 \mathrm{ V}$ battery and two resistors that
+    produces an output voltage of $3 \mathrm{ V}$. Specify the values of both resistors.
 
 20. Explain the difference between a thermistor and an LDR. Describe a sensing circuit for each and
     explain how the output voltage changes as the sensed quantity changes.
 
-21. A hairdryer rated at $1800 \mathrm{ W}$ is connected to the $230 \mathrm{ V}$ mains. Calculate the
-    current it draws. If the mains cable has a resistance of $0.5 \mathrm{ }\Omega$, calculate the
-    power lost in the cable and the voltage reaching the hairdryer.
+21. A hairdryer rated at $1800 \mathrm{ W}$ is connected to the $230 \mathrm{ V}$ mains. Calculate
+    the current it draws. If the mains cable has a resistance of $0.5 \mathrm{ }\Omega$, calculate
+    the power lost in the cable and the voltage reaching the hairdryer.
 
 22. Three identical resistors, each of resistance $R$, are connected to a battery. Calculate the
     total resistance when they are connected (a) all in series, (b) all in parallel, and (c) two in
@@ -646,24 +644,24 @@ straight line because the filament heats up as the current increases.
 23. Explain why the resistance of a filament lamp increases with temperature, while the resistance
     of a thermistor (NTC) decreases with temperature.
 
-24. A mobile phone charger has an output of $5 \mathrm{ V}$ and $2 \mathrm{ A}$. If the phone battery
-    has a capacity of $3000 \mathrm{ mAh}$, how long does it take to charge from empty? Calculate the
-    energy transferred to the battery during a full charge.
+24. A mobile phone charger has an output of $5 \mathrm{ V}$ and $2 \mathrm{ A}$. If the phone
+    battery has a capacity of $3000 \mathrm{ mAh}$, how long does it take to charge from empty?
+    Calculate the energy transferred to the battery during a full charge.
 
-25. A circuit contains a variable resistor, a fixed resistor of $470 \mathrm{ }\Omega$, and an LED in
-    series with a $9 \mathrm{ V}$ battery. The LED requires a minimum current of $10 \mathrm{ mA}$ to
-    light and has a forward voltage drop of $2 \mathrm{ V}$. Calculate the range of resistance values
-    for the variable resistor that keeps the LED lit without exceeding a maximum current of
-    $20 \mathrm{ mA}$.
+25. A circuit contains a variable resistor, a fixed resistor of $470 \mathrm{ }\Omega$, and an LED
+    in series with a $9 \mathrm{ V}$ battery. The LED requires a minimum current of
+    $10 \mathrm{ mA}$ to light and has a forward voltage drop of $2 \mathrm{ V}$. Calculate the
+    range of resistance values for the variable resistor that keeps the LED lit without exceeding a
+    maximum current of $20 \mathrm{ mA}$.
 
 ## Extended Worked Examples
 
 ### Example 26: Energy and Cost of Household Appliances
 
 A household uses the following appliances daily: a $2 \mathrm{ kW}$ heater for 4 hours, six
-$10 \mathrm{ W}$ LED lights for 6 hours, a $200 \mathrm{ W}$ TV for 3 hours, and a $3 \mathrm{ kW}$ kettle
-for $0.5 \mathrm{ hours}$. Electricity costs $28 \mathrm{p}$ per kWh. Calculate the daily and monthly
-(30-day) cost.
+$10 \mathrm{ W}$ LED lights for 6 hours, a $200 \mathrm{ W}$ TV for 3 hours, and a $3 \mathrm{ kW}$
+kettle for $0.5 \mathrm{ hours}$. Electricity costs $28 \mathrm{p}$ per kWh. Calculate the daily and
+monthly (30-day) cost.
 
 **Step 1: Energy used by each appliance**
 
@@ -682,11 +680,9 @@ $$\mathrm{Daily cost} = 10.46 \times 28 = 292.9 \mathrm{ p} = \pounds 2.93$$
 
 $$\mathrm{Monthly cost} = 292.9 \times 30 = 8787 \mathrm{ p} = \pounds 87.87$$
 
-:::info
-The heater accounts for $8/10.46 = 76.5\%$ of the total energy cost. This is typical:
+:::info The heater accounts for $8/10.46 = 76.5\%$ of the total energy cost. This is typical:
 heating appliances dominate household electricity bills. Switching to a more efficient heater or
-improving insulation can significantly reduce costs.
-:::
+improving insulation can significantly reduce costs. :::
 
 ### Example 27: Parallel Circuit with Multiple Branches
 
@@ -742,10 +738,8 @@ $$P_{\mathrm{internal}} = I^2 r = 36 \times 1.5 = 54 \mathrm{ W}$$
 
 This energy is converted to heat inside the battery, which can cause it to overheat or even explode.
 
-:::warning
-A short circuit is extremely dangerous. The battery delivers its maximum current, and all
-the energy is dissipated as heat inside the battery. Never short-circuit a battery.
-:::
+:::warning A short circuit is extremely dangerous. The battery delivers its maximum current, and all
+the energy is dissipated as heat inside the battery. Never short-circuit a battery. :::
 
 ## Common Pitfalls Extended
 
@@ -757,8 +751,8 @@ series. Only add currents when they meet at a junction (Kirchhoff's first law).
 ### Pitfall 7: Forgetting to Subtract the LED/Component Voltage
 
 When calculating the required series resistor for an LED, the resistor voltage is the supply voltage
-_minus_ the LED forward voltage: $V_R = V_{\mathrm{supply}} - V_{\mathrm{LED}}$. Using just the supply
-voltage gives an incorrectly high resistance and the LED will not light.
+_minus_ the LED forward voltage: $V_R = V_{\mathrm{supply}} - V_{\mathrm{LED}}$. Using just the
+supply voltage gives an incorrectly high resistance and the LED will not light.
 
 ### Pitfall 8: Confusing AC and DC in Power Calculations
 
@@ -769,8 +763,8 @@ $P_{\mathrm{peak}} = 2P_{\mathrm{avg}}$.
 ## Additional Practice Problems
 
 26. A $12 \mathrm{ V}$ car battery has internal resistance $0.05 \Omega$. The starter motor draws
-    $200 \mathrm{ A}$. Calculate (a) the terminal PD, (b) the power delivered to the starter, and (c)
-    the power wasted in the battery.
+    $200 \mathrm{ A}$. Calculate (a) the terminal PD, (b) the power delivered to the starter, and
+    (c) the power wasted in the battery.
 
 27. Three identical resistors each of $R$ are connected to a battery. Calculate the total resistance
     for all possible arrangements and rank them from largest to smallest.
@@ -780,7 +774,8 @@ $P_{\mathrm{peak}} = 2P_{\mathrm{avg}}$.
 
 29. A student sets up a circuit with a thermistor and a fixed resistor in series with a
     $6 \mathrm{ V}$ battery. The thermistor has resistance $2000 \Omega$ at $20°\mathrm{C}$ and
-    $500 \Omega$ at $60°\mathrm{C}$. Calculate the voltage across the thermistor at each temperature.
+    $500 \Omega$ at $60°\mathrm{C}$. Calculate the voltage across the thermistor at each
+    temperature.
 
 30. Explain the difference between conventional current and electron flow. Why do we still use
     conventional current in circuit diagrams?
@@ -790,7 +785,8 @@ $P_{\mathrm{peak}} = 2P_{\mathrm{avg}}$.
 <details>
 <summary>Question 1: Ohm's Law calculation</summary>
 
-A resistor has a resistance of $50 \Omega$. When a $12 \mathrm{ V}$ battery is connected across it, calculate (a) the current through the resistor and (b) the power dissipated.
+A resistor has a resistance of $50 \Omega$. When a $12 \mathrm{ V}$ battery is connected across it,
+calculate (a) the current through the resistor and (b) the power dissipated.
 
 </details>
 
@@ -806,7 +802,9 @@ A resistor has a resistance of $50 \Omega$. When a $12 \mathrm{ V}$ battery is c
 <details>
 <summary>Question 2: Series and parallel circuits</summary>
 
-Two $6 \Omega$ resistors are connected in parallel, and this combination is connected in series with a $4 \Omega$ resistor to a $12 \mathrm{ V}$ supply. Calculate the total resistance, the total current, and the potential difference across each component.
+Two $6 \Omega$ resistors are connected in parallel, and this combination is connected in series with
+a $4 \Omega$ resistor to a $12 \mathrm{ V}$ supply. Calculate the total resistance, the total
+current, and the potential difference across each component.
 
 </details>
 
@@ -815,9 +813,9 @@ Two $6 \Omega$ resistors are connected in parallel, and this combination is conn
 
 Parallel combination: $1/R_p = 1/6 + 1/6 = 2/6 = 1/3$, so $R_p = 3 \Omega$.
 
-Total resistance: $R_{\text{total}} = 4 + 3 = 7 \Omega$.
+Total resistance: $R_{\mathrm{total}} = 4 + 3 = 7 \Omega$.
 
-Total current: $I = V/R_{\text{total}} = 12/7 = 1.71 \mathrm{ A}$.
+Total current: $I = V/R_{\mathrm{total}} = 12/7 = 1.71 \mathrm{ A}$.
 
 PD across the $4 \Omega$ resistor: $V_4 = IR = 1.71 \times 4 = 6.86 \mathrm{ V}$.
 
@@ -828,7 +826,8 @@ PD across the parallel combination: $V_p = 12 - 6.86 = 5.14 \mathrm{ V}$.
 <details>
 <summary>Question 3: Cost of electricity</summary>
 
-A $2 \mathrm{ kW}$ heater is used for 5 hours per day for 30 days. If electricity costs $15 \mathrm{ p/kWh}$, calculate the total cost.
+A $2 \mathrm{ kW}$ heater is used for 5 hours per day for 30 days. If electricity costs
+$15 \mathrm{ p/kWh}$, calculate the total cost.
 
 </details>
 
@@ -844,7 +843,8 @@ Cost $= 300 \times 15 = 4500 \mathrm{ p} = \pounds 45.00$.
 <details>
 <summary>Question 4: Current, charge, and time</summary>
 
-A torch bulb passes a current of $0.3 \mathrm{ A}$ for 2 minutes. Calculate the charge that flows through the bulb.
+A torch bulb passes a current of $0.3 \mathrm{ A}$ for 2 minutes. Calculate the charge that flows
+through the bulb.
 
 </details>
 
@@ -858,7 +858,8 @@ $Q = It = 0.3 \times 120 = 36 \mathrm{ C}$.
 <details>
 <summary>Question 5: Potential difference and energy transfer</summary>
 
-A $10 \Omega$ resistor in a circuit has a current of $0.5 \mathrm{ A}$ flowing through it. Calculate the energy transferred by the resistor in 30 seconds.
+A $10 \Omega$ resistor in a circuit has a current of $0.5 \mathrm{ A}$ flowing through it. Calculate
+the energy transferred by the resistor in 30 seconds.
 
 </details>
 

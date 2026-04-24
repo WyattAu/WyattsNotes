@@ -65,7 +65,7 @@ All 5 letters are distinct: $P_4^5 = \frac{5!}{1!} = 120$.
 
 When some objects are identical, divide by the factorial of the count of each repeated object:
 
-$$\text{Arrangements} = \frac{n!}{n_1!\, n_2!\, \cdots\, n_k!}$$
+$$\mathrm{Arrangements} = \frac{n!}{n_1!\, n_2!\, \cdots\, n_k!}$$
 
 ### Worked Example 4
 
@@ -199,7 +199,7 @@ Total: $210 + 70 + 5 = 285$.
 
 When it is easier to count the complement and subtract:
 
-$$\text{Desired count} = \text{Total} - \text{Undesired}$$
+$$\mathrm{Desired count} = \mathrm{Total} - \mathrm{Undesired}$$
 
 ### Worked Example 9
 

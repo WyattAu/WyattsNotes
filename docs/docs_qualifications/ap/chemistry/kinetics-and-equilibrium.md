@@ -730,7 +730,7 @@ Rate is first order in A.
 Comparing experiments 1 and 3: $[\mathrm{A}]$ is constant, $[\mathrm{B}]$ doubles, rate quadruples.
 Rate is second order in B.
 
-Rate law: $\text{Rate} = k[\mathrm{A}][\mathrm{B}]^2$.
+Rate law: $\mathrm{Rate} = k[\mathrm{A}][\mathrm{B}]^2$.
 
 Overall order: $1 + 2 = 3$.
 

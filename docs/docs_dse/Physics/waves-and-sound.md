@@ -94,11 +94,11 @@ When two coherent waves overlap, the resultant displacement is the sum of indivi
 
 **Constructive interference** (reinforcement) occurs when waves arrive in phase:
 
-$$\Delta\phi = 0, 2\pi, 4\pi, \ldots \quad \text{or} \quad \text{path difference} = n\lambda$$
+$$\Delta\phi = 0, 2\pi, 4\pi, \ldots \quad \mathrm{or} \quad \mathrm{path difference} = n\lambda$$
 
 **Destructive interference** (cancellation) occurs when waves arrive in antiphase:
 
-$$\Delta\phi = \pi, 3\pi, 5\pi, \ldots \quad \text{or} \quad \text{path difference} = (n + \tfrac{1}{2})\lambda$$
+$$\Delta\phi = \pi, 3\pi, 5\pi, \ldots \quad \mathrm{or} \quad \mathrm{path difference} = (n + \tfrac{1}{2})\lambda$$
 
 ### Worked Example 2
 
@@ -209,9 +209,9 @@ $$c = f\lambda$$
 | Radio waves   | $\gt 0.1 \mathrm{ m}$                  | Broadcasting, communication         |
 | Microwaves    | $1 \mathrm{ mm}$ to $0.1 \mathrm{ m}$  | Cooking, radar, satellite           |
 | Infrared      | $700 \mathrm{ nm}$ to $1 \mathrm{ mm}$ | Thermal imaging, remote controls    |
-| Visible light | $400\text{--}700 \mathrm{ nm}$         | Human vision                        |
-| Ultraviolet   | $10\text{--}400 \mathrm{ nm}$          | Sterilisation, fluorescence         |
-| X-rays        | $0.01\text{--}10 \mathrm{ nm}$         | Medical imaging, security           |
+| Visible light | $400\mathrm{--}700 \mathrm{ nm}$       | Human vision                        |
+| Ultraviolet   | $10\mathrm{--}400 \mathrm{ nm}$        | Sterilisation, fluorescence         |
+| X-rays        | $0.01\mathrm{--}10 \mathrm{ nm}$       | Medical imaging, security           |
 | Gamma rays    | $\lt 0.01 \mathrm{ nm}$                | Cancer treatment, nuclear processes |
 
 ### Worked Example 5

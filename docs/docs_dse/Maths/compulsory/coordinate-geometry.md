@@ -178,14 +178,14 @@ $$y - 4 = -\frac{3}{4}(x - 3) \implies 4(y - 4) = -3(x - 3) \implies 4y - 16 = -
 
 Given vertices $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$:
 
-$$\text{Area} = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$
+$$\mathrm{Area} = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$
 
 ### Area of a Polygon
 
 For a polygon with vertices $(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$ listed in order (clockwise
 or counterclockwise):
 
-$$\text{Area} = \frac{1}{2}\left|\sum_{i=1}^{n} (x_i y_{i+1} - x_{i+1} y_i)\right|$$
+$$\mathrm{Area} = \frac{1}{2}\left|\sum_{i=1}^{n} (x_i y_{i+1} - x_{i+1} y_i)\right|$$
 
 where $(x_{n+1}, y_{n+1}) = (x_1, y_1)$.
 
@@ -193,7 +193,7 @@ where $(x_{n+1}, y_{n+1}) = (x_1, y_1)$.
 
 Find the area of the triangle with vertices $A(1, 2)$, $B(5, 6)$, $C(3, -1)$.
 
-$$\text{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 + (-15) + (-12)| = \frac{1}{2}|-20| = 10$$
+$$\mathrm{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 + (-15) + (-12)| = \frac{1}{2}|-20| = 10$$
 
 ---
 
@@ -292,7 +292,7 @@ $$k - 3 = -1 - k \implies 2k = 2 \implies k = 1$$
 
 Using the shoelace formula with vertices in order:
 
-$\text{Area} = \frac{1}{2}|(0 \cdot 0 - 4 \cdot 0) + (4 \cdot 3 - 5 \cdot 0) + (5 \cdot 4 - 1 \cdot 3) + (1 \cdot 0 - 0 \cdot 4)|$
+$\mathrm{Area} = \frac{1}{2}|(0 \cdot 0 - 4 \cdot 0) + (4 \cdot 3 - 5 \cdot 0) + (5 \cdot 4 - 1 \cdot 3) + (1 \cdot 0 - 0 \cdot 4)|$
 
 $= \frac{1}{2}|0 + 12 + 17 + 0| = \frac{1}{2}(29) = 14.5$
 

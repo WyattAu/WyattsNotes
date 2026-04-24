@@ -149,7 +149,7 @@ lower polarising power, distorting the carbonate/nitrate ion less and making it 
 | Carbonates | Generally insoluble  |
 
 $$
-\mathrm{BaSO}_4 \text{ is very insoluble — used in barium meals (X-ray contrast).}
+\mathrm{BaSO}_4 \mathrm{ is very insoluble — used in barium meals (X-ray contrast).}
 $$
 
 ### Uses

@@ -94,7 +94,7 @@ equivalent hybrid orbitals that explain observed geometries.
 Count the regions of electron density (steric number) around the central atom:
 
 $$
-\text{Steric number} = \text{bonded atoms} + \text{lone pairs}
+\mathrm{Steric number} = \mathrm{bonded atoms} + \mathrm{lone pairs}
 $$
 
 | Steric number | Hybridization |
@@ -174,7 +174,7 @@ $$
 ### Bond Order
 
 $$
-\text{Bond order} = \frac{N_{\text{bonding}} - N_{\text{antibonding}}}{2}
+\mathrm{Bond order} = \frac{N_{\mathrm{bonding}} - N_{\mathrm{antibonding}}}{2}
 $$
 
 | Molecule        | Bond order | Bond type      | Magnetic         |

@@ -802,13 +802,13 @@ million years. Estimate the time since these two species diverged from their com
 <summary>Answer</summary>
 
 First, calculate the substitution rate per base pair per million years:
-$$\text{Rate} = \frac{1 \text{ substitution}}{100 \text{ base pairs} \times 1 \text{ million years}} = 0.01 \text{ substitutions/bp/Myr}$$
+$$\mathrm{Rate} = \frac{1 \mathrm{ substitution}}{100 \mathrm{ base pairs} \times 1 \mathrm{ million years}} = 0.01 \mathrm{ substitutions/bp/Myr}$$
 
 Total substitutions observed: 8 in 300 base pairs, so the substitution frequency per base pair is:
-$$\frac{8}{300} = 0.0267 \text{ substitutions/bp}$$
+$$\frac{8}{300} = 0.0267 \mathrm{ substitutions/bp}$$
 
 Time since divergence (accounting for both lineages):
-$$\text{Time} = \frac{0.0267}{2 \times 0.01} = \frac{0.0267}{0.02} = 1.33 \text{ million years}$$
+$$\mathrm{Time} = \frac{0.0267}{2 \times 0.01} = \frac{0.0267}{0.02} = 1.33 \mathrm{ million years}$$
 
 The factor of 2 accounts for the fact that substitutions have accumulated along both lineages since
 divergence. The two species diverged approximately 1.33 million years ago.
@@ -832,7 +832,7 @@ Count alleles in the founder population:
 
 $AA$: 2 copies of A $Aa$: 1 copy of A, 1 copy of a (three individuals: 3A + 3a) $aa$: 2 copies of a
 
-Total alleles: $5 \text{ birds} \times 2 = 10$ alleles.
+Total alleles: $5 \mathrm{ birds} \times 2 = 10$ alleles.
 
 Number of A alleles: $2 + 3 = 5$. Number of a alleles: $3 + 2 = 5$.
 

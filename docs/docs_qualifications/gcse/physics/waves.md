@@ -11,15 +11,11 @@ slug: waves
 
 ## Waves
 
-:::info
-Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3
-:::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3 :::
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Properties of Waves
 
@@ -522,12 +518,12 @@ The image is 30 cm from the lens, on the opposite side to the object (real image
 
 $$m = \frac{v}{u} = \frac{30}{15} = 2$$
 
-The image is 2 times larger than the object: $3 \times 2 = 6 \mathrm{ cm}$ tall. Since $m$ is positive
-and $v$ is positive, the image is real and inverted.
+The image is 2 times larger than the object: $3 \times 2 = 6 \mathrm{ cm}$ tall. Since $m$ is
+positive and $v$ is positive, the image is real and inverted.
 
 **Check:** The object is between $f$ and $2f$ (between 10 cm and 20 cm), so the image should be
-beyond $2f$, real, inverted, and magnified. Our result ($v = 30 \mathrm{ cm} \gt 2f = 20 \mathrm{ cm}$,
-inverted, $m = 2$) is consistent.
+beyond $2f$, real, inverted, and magnified. Our result
+($v = 30 \mathrm{ cm} \gt 2f = 20 \mathrm{ cm}$, inverted, $m = 2$) is consistent.
 
 ## 10. Worked Example: Using the Diffraction Grating Equation
 
@@ -614,13 +610,13 @@ wavefront to rotate.
 
 ## 15. Summary Table: Wave Behaviours
 
-| Behaviour    | What Happens                                | Key Equation                          | Everyday Example           |
-| ------------ | ------------------------------------------- | ------------------------------------- | -------------------------- |
-| Reflection   | Wave bounces off surface                    | $\theta_i = \theta_r$                 | Mirror, echo               |
-| Refraction   | Wave changes direction due to speed change  | $n_1\sin\theta_1 = n_2\sin\theta_2$   | Pencil in water looks bent |
+| Behaviour    | What Happens                                | Key Equation                            | Everyday Example           |
+| ------------ | ------------------------------------------- | --------------------------------------- | -------------------------- |
+| Reflection   | Wave bounces off surface                    | $\theta_i = \theta_r$                   | Mirror, echo               |
+| Refraction   | Wave changes direction due to speed change  | $n_1\sin\theta_1 = n_2\sin\theta_2$     | Pencil in water looks bent |
 | Diffraction  | Wave spreads through gap or around obstacle | Max when $\mathrm{gap} \approx \lambda$ | Sound around a corner      |
-| Interference | Waves superpose, creating pattern           | $\Delta x = n\lambda$ (constructive)  | Oil film colours           |
-| Polarisation | Oscillations restricted to one plane        | Only transverse waves                 | Sunglasses                 |
+| Interference | Waves superpose, creating pattern           | $\Delta x = n\lambda$ (constructive)    | Oil film colours           |
+| Polarisation | Oscillations restricted to one plane        | Only transverse waves                   | Sunglasses                 |
 
 ## 16. Worked Example: Refractive Index and Critical Angle
 
@@ -647,18 +643,18 @@ This is a reasonable value for the speed of sound in air at room temperature.
 
 ## 18. Practice Questions (Additional)
 
-16. Light of wavelength $480 \mathrm{ nm}$ passes through a diffraction grating with 400 lines per mm.
-    Calculate the angles of the first, second, and third order maxima. How many orders are visible
-    in total?
+16. Light of wavelength $480 \mathrm{ nm}$ passes through a diffraction grating with 400 lines per
+    mm. Calculate the angles of the first, second, and third order maxima. How many orders are
+    visible in total?
 
 17. An object is placed 20 cm from a concave lens of focal length 15 cm. Calculate the image
     distance and describe the image.
 
 18. Explain why two independent light sources cannot produce a stable interference pattern.
 
-19. A sound wave has frequency $250 \mathrm{ Hz}$ and intensity level $80 \mathrm{ dB}$ at a distance of
-    $3 \mathrm{ m}$ from the source. Calculate the intensity at $12 \mathrm{ m}$ and the new intensity
-    level in decibels.
+19. A sound wave has frequency $250 \mathrm{ Hz}$ and intensity level $80 \mathrm{ dB}$ at a
+    distance of $3 \mathrm{ m}$ from the source. Calculate the intensity at $12 \mathrm{ m}$ and the
+    new intensity level in decibels.
 
 20. Water waves in a ripple tank pass through a gap of width $4 \mathrm{ cm}$. The wavelength is
     $2 \mathrm{ cm}$. Describe the diffraction pattern observed. How would the pattern change if the
@@ -686,8 +682,8 @@ This is a reasonable value for the speed of sound in air at room temperature.
 ### Example 26: Combining Wave Properties
 
 A water wave has frequency $2.5 \mathrm{ Hz}$ and wavelength $0.4 \mathrm{ m}$. It travels from deep
-water (speed $1.0 \mathrm{ m/s}$) into shallow water where its speed is $0.6 \mathrm{ m/s}$. Calculate
-the new wavelength and explain what happens to the frequency and amplitude.
+water (speed $1.0 \mathrm{ m/s}$) into shallow water where its speed is $0.6 \mathrm{ m/s}$.
+Calculate the new wavelength and explain what happens to the frequency and amplitude.
 
 **Step 1: Verify the given data**
 
@@ -707,10 +703,8 @@ When the wave slows down and the wavelength decreases, the wave height (amplitud
 is conserved, and since the wave is moving more slowly, the energy is concentrated in a shorter
 wavelength.
 
-:::info
-This is analogous to light bending towards the normal when entering a denser medium. The
-decrease in wave speed causes the wavelength to decrease while the frequency remains constant.
-:::
+:::info This is analogous to light bending towards the normal when entering a denser medium. The
+decrease in wave speed causes the wavelength to decrease while the frequency remains constant. :::
 
 ### Example 27: Electromagnetic Spectrum Calculations
 
@@ -767,14 +761,14 @@ next trough, which is only half a wavelength.
 
 ## Additional Practice Problems
 
-26. Light travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of $35^\circ$.
-    Calculate the angle of refraction and state whether the light bends towards or away from the
-    normal.
+26. Light travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of
+    $35^\circ$. Calculate the angle of refraction and state whether the light bends towards or away
+    from the normal.
 
 27. A person standing $100 \mathrm{ m}$ from a cliff claps their hands. If the speed of sound is
-    $340 \mathrm{ m/s}$, how long does it take to hear the echo? What is the minimum distance between
-    the person and the cliff to hear a distinct echo (assuming the human ear can distinguish sounds
-    $0.1 \mathrm{ s}$ apart)?
+    $340 \mathrm{ m/s}$, how long does it take to hear the echo? What is the minimum distance
+    between the person and the cliff to hear a distinct echo (assuming the human ear can distinguish
+    sounds $0.1 \mathrm{ s}$ apart)?
 
 28. Compare the properties of transverse and longitudinal waves by completing a table with the
     following headings: direction of oscillation, direction of propagation, example, can be
@@ -791,7 +785,8 @@ next trough, which is only half a wavelength.
 <details>
 <summary>Question 1: Wave speed calculation</summary>
 
-A wave has a frequency of $250 \mathrm{ Hz}$ and a wavelength of $1.5 \mathrm{ m}$. Calculate the wave speed.
+A wave has a frequency of $250 \mathrm{ Hz}$ and a wavelength of $1.5 \mathrm{ m}$. Calculate the
+wave speed.
 
 </details>
 
@@ -805,14 +800,17 @@ $v = f\lambda = 250 \times 1.5 = 375 \mathrm{ m/s}$.
 <details>
 <summary>Question 2: Electromagnetic spectrum</summary>
 
-Arrange the following in order of increasing wavelength: gamma rays, microwaves, visible light, X-rays, radio waves, ultraviolet, infrared. State which type has the highest frequency and which has the highest energy.
+Arrange the following in order of increasing wavelength: gamma rays, microwaves, visible light,
+X-rays, radio waves, ultraviolet, infrared. State which type has the highest frequency and which has
+the highest energy.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Increasing wavelength: gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, radio waves.
+Increasing wavelength: gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, radio
+waves.
 
 Gamma rays have the highest frequency and the highest energy (since $E = hf$).
 
@@ -823,30 +821,35 @@ Radio waves have the longest wavelength and the lowest frequency and energy.
 <details>
 <summary>Question 3: Transverse and longitudinal waves</summary>
 
-Compare transverse and longitudinal waves, giving an example of each. Describe how vibrations differ in the two types.
+Compare transverse and longitudinal waves, giving an example of each. Describe how vibrations differ
+in the two types.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Transverse waves: vibrations are perpendicular to the direction of energy transfer. Example: light waves, water waves (partially). They have peaks and troughs.
+Transverse waves: vibrations are perpendicular to the direction of energy transfer. Example: light
+waves, water waves (partially). They have peaks and troughs.
 
-Longitudinal waves: vibrations are parallel to the direction of energy transfer. Example: sound waves. They have compressions (high pressure) and rarefactions (low pressure).
+Longitudinal waves: vibrations are parallel to the direction of energy transfer. Example: sound
+waves. They have compressions (high pressure) and rarefactions (low pressure).
 
 </details>
 
 <details>
 <summary>Question 4: Reflection and refraction</summary>
 
-A ray of light strikes a plane mirror at an angle of $35^\circ$ to the normal. Calculate the angle of reflection and draw a ray diagram.
+A ray of light strikes a plane mirror at an angle of $35^\circ$ to the normal. Calculate the angle
+of reflection and draw a ray diagram.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-By the law of reflection, the angle of reflection equals the angle of incidence: $35^\circ$ to the normal.
+By the law of reflection, the angle of reflection equals the angle of incidence: $35^\circ$ to the
+normal.
 
 The angle between the incident ray and the mirror surface is $90^\circ - 35^\circ = 55^\circ$.
 
@@ -855,14 +858,16 @@ The angle between the incident ray and the mirror surface is $90^\circ - 35^\cir
 <details>
 <summary>Question 5: Speed of sound experiment</summary>
 
-Two students stand $150 \mathrm{ m}$ apart. One student claps two blocks of wood together, and the other starts a stopwatch when they see the clap and stops it when they hear the sound. The time recorded is $0.44 \mathrm{ s}$. Calculate the speed of sound.
+Two students stand $150 \mathrm{ m}$ apart. One student claps two blocks of wood together, and the
+other starts a stopwatch when they see the clap and stops it when they hear the sound. The time
+recorded is $0.44 \mathrm{ s}$. Calculate the speed of sound.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Speed $= \text{distance}/\text{time} = 150/0.44 = 341 \mathrm{ m/s}$.
+Speed $= \mathrm{distance}/\mathrm{time} = 150/0.44 = 341 \mathrm{ m/s}$.
 
 This is close to the accepted value of approximately $343 \mathrm{ m/s}$ at $20^\circ\mathrm{C}$.
 

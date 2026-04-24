@@ -783,13 +783,13 @@ metal. Assume no heat loss to the calorimeter.
 
 Heat gained by water = heat lost by metal.
 
-$q_{\text{water}} = m_{\text{water}} \times c_{\text{water}} \times \Delta T_{\text{water}} = 100.0 \times 4.184 \times (28.8 - 25.0) = 100.0 \times 4.184 \times 3.8 = 1589.9 \mathrm{ J}$.
+$q_{\mathrm{water}} = m_{\mathrm{water}} \times c_{\mathrm{water}} \times \Delta T_{\mathrm{water}} = 100.0 \times 4.184 \times (28.8 - 25.0) = 100.0 \times 4.184 \times 3.8 = 1589.9 \mathrm{ J}$.
 
-$q_{\text{metal}} = m_{\text{metal}} \times c_{\text{metal}} \times \Delta T_{\text{metal}} = 50.0 \times c_{\text{metal}} \times (100.0 - 28.8) = 50.0 \times c_{\text{metal}} \times 71.2$.
+$q_{\mathrm{metal}} = m_{\mathrm{metal}} \times c_{\mathrm{metal}} \times \Delta T_{\mathrm{metal}} = 50.0 \times c_{\mathrm{metal}} \times (100.0 - 28.8) = 50.0 \times c_{\mathrm{metal}} \times 71.2$.
 
-Setting equal: $1589.9 = 50.0 \times c_{\text{metal}} \times 71.2$.
+Setting equal: $1589.9 = 50.0 \times c_{\mathrm{metal}} \times 71.2$.
 
-$c_{\text{metal}} = 1589.9 / 3560 = 0.447 \mathrm{ J/(g\cdot^\circ\mathrm{C})}$.
+$c_{\mathrm{metal}} = 1589.9 / 3560 = 0.447 \mathrm{ J/(g\cdot^\circ\mathrm{C})}$.
 
 This value is close to that of iron ($0.449 \mathrm{ J/(g\cdot^\circ\mathrm{C})}$), suggesting the
 unknown metal may be iron.
@@ -801,25 +801,25 @@ unknown metal may be iron.
 
 For the vaporisation of water at $100^\circ\mathrm{C}$ and $1 \mathrm{ atm}$:
 $\mathrm{H}_2\mathrm{O}(l) \to \mathrm{H}_2\mathrm{O}(g)$,
-$\Delta H_{\text{vap}} = 40.7 \mathrm{ kJ/mol}$. Calculate $\Delta S_{\text{system}}$,
-$\Delta S_{\text{surroundings}}$, and $\Delta S_{\text{universe}}$. Is the process spontaneous at
-this temperature?
+$\Delta H_{\mathrm{vap}} = 40.7 \mathrm{ kJ/mol}$. Calculate $\Delta S_{\mathrm{system}}$,
+$\Delta S_{\mathrm{surroundings}}$, and $\Delta S_{\mathrm{universe}}$. Is the process spontaneous
+at this temperature?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\Delta S_{\text{system}} = \Delta H_{\text{vap}} / T = 40,700 / 373 = 109.1 \mathrm{ J/(mol\cdot K)}$.
+$\Delta S_{\mathrm{system}} = \Delta H_{\mathrm{vap}} / T = 40,700 / 373 = 109.1 \mathrm{ J/(mol\cdot K)}$.
 
-$\Delta S_{\text{surroundings}} = -\Delta H_{\text{vap}} / T = -40,700 / 373 = -109.1 \mathrm{ J/(mol\cdot K)}$.
+$\Delta S_{\mathrm{surroundings}} = -\Delta H_{\mathrm{vap}} / T = -40,700 / 373 = -109.1 \mathrm{ J/(mol\cdot K)}$.
 
-$\Delta S_{\text{universe}} = \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} = 109.1 + (-109.1) = 0 \mathrm{ J/(mol\cdot K)}$.
+$\Delta S_{\mathrm{universe}} = \Delta S_{\mathrm{system}} + \Delta S_{\mathrm{surroundings}} = 109.1 + (-109.1) = 0 \mathrm{ J/(mol\cdot K)}$.
 
 At $100^\circ\mathrm{C}$ and $1 \mathrm{ atm}$, liquid and gaseous water are in equilibrium, so
-$\Delta G = 0$ and $\Delta S_{\text{universe}} = 0$. The process is at equilibrium, not spontaneous
-in either direction. Above $100^\circ\mathrm{C}$, vaporisation becomes spontaneous
-($\Delta S_{\text{universe}} \gt 0$).
+$\Delta G = 0$ and $\Delta S_{\mathrm{universe}} = 0$. The process is at equilibrium, not
+spontaneous in either direction. Above $100^\circ\mathrm{C}$, vaporisation becomes spontaneous
+($\Delta S_{\mathrm{universe}} \gt 0$).
 
 </details>
 
@@ -857,7 +857,7 @@ Bonds formed (products):
 - 2 H-Cl bonds: $2 \times 431 = 862 \mathrm{ kJ/mol}$
 - Total formed: $678 + 862 = 1540 \mathrm{ kJ/mol}$
 
-$\Delta H = \text{bonds broken} - \text{bonds formed} = 1310 - 1540 = -230 \mathrm{ kJ/mol}$.
+$\Delta H = \mathrm{bonds broken} - \mathrm{bonds formed} = 1310 - 1540 = -230 \mathrm{ kJ/mol}$.
 
 The reaction is exothermic because stronger bonds (H-Cl, C-Cl) are formed than are broken (C-H,
 Cl-Cl).

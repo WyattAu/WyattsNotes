@@ -123,7 +123,7 @@ $$a = r\cos\theta, \quad b = r\sin\theta$$
 
 **Cartesian to Polar:**
 
-$$r = \sqrt{a^2 + b^2}, \quad \theta = \arg(z) \text{ (using quadrant table)}$$
+$$r = \sqrt{a^2 + b^2}, \quad \theta = \arg(z) \mathrm{ (using quadrant table)}$$
 
 ### Multiplication and Division in Polar Form
 

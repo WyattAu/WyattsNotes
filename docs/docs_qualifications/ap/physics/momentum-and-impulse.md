@@ -13,11 +13,9 @@ slug: momentum-and-impulse
 
 The linear momentum of an object is:
 
-
 <PhetSimulation simulationId="collision-lab" title="Collision Lab" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 $$
 \vec{p} = m\vec{v}
@@ -81,9 +79,9 @@ This is the constant force that would produce the same impulse over the same tim
 
 :::info[Example]
 
-A $0.15 \mathrm{ kg}$ baseball pitched at $40 \mathrm{ m/s}$ is hit back at $50 \mathrm{ m/s}$ in the
-opposite direction. If the bat is in contact with the ball for $2.0 \mathrm{ ms}$, find the average
-force exerted by the bat.
+A $0.15 \mathrm{ kg}$ baseball pitched at $40 \mathrm{ m/s}$ is hit back at $50 \mathrm{ m/s}$ in
+the opposite direction. If the bat is in contact with the ball for $2.0 \mathrm{ ms}$, find the
+average force exerted by the bat.
 
 Take the initial direction as positive.
 
@@ -177,8 +175,9 @@ $$
 
 :::info[Example]
 
-A $1500 \mathrm{ kg}$ car traveling east at $20 \mathrm{ m/s}$ collides with a $2500 \mathrm{ kg}$ truck
-traveling west at $15 \mathrm{ m/s}$. They stick together. Find their velocity after the collision.
+A $1500 \mathrm{ kg}$ car traveling east at $20 \mathrm{ m/s}$ collides with a $2500 \mathrm{ kg}$
+truck traveling west at $15 \mathrm{ m/s}$. They stick together. Find their velocity after the
+collision.
 
 Take east as positive.
 
@@ -375,24 +374,24 @@ direction, and the rocket acquires equal and opposite momentum. This works equal
 
 ## Practice Questions
 
-1. A $0.50 \mathrm{ kg}$ ball hits a wall at $10 \mathrm{ m/s}$ and rebounds at $8.0 \mathrm{ m/s}$. If
-   the contact time is $0.020 \mathrm{ s}$, find the average force on the ball.
+1. A $0.50 \mathrm{ kg}$ ball hits a wall at $10 \mathrm{ m/s}$ and rebounds at $8.0 \mathrm{ m/s}$.
+   If the contact time is $0.020 \mathrm{ s}$, find the average force on the ball.
 
-2. A $10 \mathrm{ g}$ bullet embeds in a $2.0 \mathrm{ kg}$ wooden block on a frictionless surface. The
-   block then slides into a spring ($k = 200 \mathrm{ N/m}$) and compresses it $5.0 \mathrm{ cm}$. Find
-   the initial speed of the bullet.
+2. A $10 \mathrm{ g}$ bullet embeds in a $2.0 \mathrm{ kg}$ wooden block on a frictionless surface.
+   The block then slides into a spring ($k = 200 \mathrm{ N/m}$) and compresses it
+   $5.0 \mathrm{ cm}$. Find the initial speed of the bullet.
 
-3. Two ice skaters push off each other. Skater A ($60 \mathrm{ kg}$) moves at $2.0 \mathrm{ m/s}$ and
-   skater B ($40 \mathrm{ kg}$) moves at $3.0 \mathrm{ m/s}$. What was the initial momentum of the
-   system?
+3. Two ice skaters push off each other. Skater A ($60 \mathrm{ kg}$) moves at $2.0 \mathrm{ m/s}$
+   and skater B ($40 \mathrm{ kg}$) moves at $3.0 \mathrm{ m/s}$. What was the initial momentum of
+   the system?
 
 4. A $3.0 \mathrm{ kg}$ object moving at $4.0 \mathrm{ m/s}$ collides elastically with a
    $1.0 \mathrm{ kg}$ object moving at $-6.0 \mathrm{ m/s}$. Find the final velocities.
 
 5. Find the center of mass of a uniform rod of length $L$ and mass $M$.
 
-6. A $2000 \mathrm{ kg}$ cannon fires a $50 \mathrm{ kg}$ shell horizontally at $400 \mathrm{ m/s}$. What
-   is the recoil velocity of the cannon?
+6. A $2000 \mathrm{ kg}$ cannon fires a $50 \mathrm{ kg}$ shell horizontally at $400 \mathrm{ m/s}$.
+   What is the recoil velocity of the cannon?
 
 7. Prove that in a one-dimensional elastic collision with a stationary target, the relative velocity
    of approach equals the relative velocity of separation: $v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$.
@@ -443,8 +442,8 @@ $$v = \frac{J}{m} = \frac{112}{3} = 37.3 \mathrm{ m/s}$$
 
 ### Worked Example: Two-Dimensional Collision
 
-A $2 \mathrm{ kg}$ ball moving at $5 \mathrm{ m/s}$ strikes a stationary $3 \mathrm{ kg}$ ball. After the
-collision, the $2 \mathrm{ kg}$ ball moves at $30^{\circ}$ above the original direction at
+A $2 \mathrm{ kg}$ ball moving at $5 \mathrm{ m/s}$ strikes a stationary $3 \mathrm{ kg}$ ball.
+After the collision, the $2 \mathrm{ kg}$ ball moves at $30^{\circ}$ above the original direction at
 $3 \mathrm{ m/s}$. Find the velocity of the $3 \mathrm{ kg}$ ball.
 
 **Conservation of $x$-momentum:**
@@ -472,8 +471,8 @@ direction).
 
 ### Worked Example: Ballistic Pendulum
 
-A $10 \mathrm{ g}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a $2 \mathrm{ kg}$ wooden
-block hanging from a string. Find the maximum height the block reaches.
+A $10 \mathrm{ g}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a $2 \mathrm{ kg}$
+wooden block hanging from a string. Find the maximum height the block reaches.
 
 **Phase 1: Collision (conservation of momentum, perfectly inelastic).**
 
@@ -560,13 +559,13 @@ load.
 ## 16. Practice Questions (Additional)
 
 11. A $0.05 \mathrm{ kg}$ tennis ball hits a racket at $20 \mathrm{ m/s}$ and rebounds at
-    $25 \mathrm{ m/s}$ at an angle of $30^{\circ}$ from the original direction. If the contact time is
-    $5 \mathrm{ ms}$, find the average force exerted by the racket.
+    $25 \mathrm{ m/s}$ at an angle of $30^{\circ}$ from the original direction. If the contact time
+    is $5 \mathrm{ ms}$, find the average force exerted by the racket.
 
-12. A $5 \mathrm{ kg}$ object moving at $8 \mathrm{ m/s}$ collides with a $3 \mathrm{ kg}$ object moving
-    at $4 \mathrm{ m/s}$ in the same direction. After the collision, the $5 \mathrm{ kg}$ object moves
-    at $5 \mathrm{ m/s}$ in the same direction. Find the velocity of the $3 \mathrm{ kg}$ object and the
-    coefficient of restitution.
+12. A $5 \mathrm{ kg}$ object moving at $8 \mathrm{ m/s}$ collides with a $3 \mathrm{ kg}$ object
+    moving at $4 \mathrm{ m/s}$ in the same direction. After the collision, the $5 \mathrm{ kg}$
+    object moves at $5 \mathrm{ m/s}$ in the same direction. Find the velocity of the
+    $3 \mathrm{ kg}$ object and the coefficient of restitution.
 
 13. A force $F(t) = 12t - 3t^2$ (in N) acts on a $4 \mathrm{ kg}$ object initially moving at
     $2 \mathrm{ m/s}$. Find (a) the time when the object is at rest, (b) the impulse from $t = 0$ to
@@ -574,22 +573,22 @@ load.
 
 14. Two ice skaters of masses $50 \mathrm{ kg}$ and $70 \mathrm{ kg}$ stand facing each other on
     frictionless ice. They push off each other, and the $50 \mathrm{ kg}$ skater moves at
-    $3 \mathrm{ m/s}$. Find the velocity of the $70 \mathrm{ kg}$ skater and the total kinetic energy of
-    the system.
+    $3 \mathrm{ m/s}$. Find the velocity of the $70 \mathrm{ kg}$ skater and the total kinetic
+    energy of the system.
 
 15. A rocket burns fuel at a rate of $100 \mathrm{ kg/s}$ with an exhaust velocity of
     $2500 \mathrm{ m/s}$. The initial mass is $20000 \mathrm{ kg}$. Find (a) the thrust and (b) the
-    velocity after $60 \mathrm{ s}$ of burning, assuming the rocket starts from rest in deep space (no
-    gravity).
+    velocity after $60 \mathrm{ s}$ of burning, assuming the rocket starts from rest in deep space
+    (no gravity).
 
 ## Extended Worked Examples
 
 ### Example 16: Glancing Collision with Energy Analysis
 
-A $4 \mathrm{ kg}$ object moving at $6 \mathrm{ m/s}$ collides with a stationary $6 \mathrm{ kg}$ object
-on a frictionless surface. After the collision, the $6 \mathrm{ kg}$ object moves at $3 \mathrm{ m/s}$
-at $45^\circ$ to the original direction. Determine the final velocity of the $4 \mathrm{ kg}$ object and
-classify the collision.
+A $4 \mathrm{ kg}$ object moving at $6 \mathrm{ m/s}$ collides with a stationary $6 \mathrm{ kg}$
+object on a frictionless surface. After the collision, the $6 \mathrm{ kg}$ object moves at
+$3 \mathrm{ m/s}$ at $45^\circ$ to the original direction. Determine the final velocity of the
+$4 \mathrm{ kg}$ object and classify the collision.
 
 **Step 1: Conservation of momentum (x-direction)**
 
@@ -651,8 +650,9 @@ $$F_{\mathrm{avg}} = \frac{J}{\Delta t} = \frac{60}{4} = 15 \mathrm{ N}$$
 
 ### Example 18: Perfectly Inelastic Collision with Rotation
 
-A $0.1 \mathrm{ kg}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a wooden block of mass
-$1.9 \mathrm{ kg}$ suspended by a $2 \mathrm{ m}$ string. Find the maximum height the block rises.
+A $0.1 \mathrm{ kg}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a wooden block of
+mass $1.9 \mathrm{ kg}$ suspended by a $2 \mathrm{ m}$ string. Find the maximum height the block
+rises.
 
 **Step 1: Momentum conservation (perfectly inelastic collision)**
 
@@ -670,8 +670,8 @@ $$h = \frac{V^2}{2g} = \frac{400}{2 \times 9.8} = 20.4 \mathrm{ m}$$
 
 **Step 3: Check feasibility**
 
-The string length is only $2 \mathrm{ m}$, so the block cannot rise $20.4 \mathrm{ m}$. This means the
-block swings past the horizontal. Let us check the velocity at the top of the swing:
+The string length is only $2 \mathrm{ m}$, so the block cannot rise $20.4 \mathrm{ m}$. This means
+the block swings past the horizontal. Let us check the velocity at the top of the swing:
 
 At the top of a vertical circle, the block must have enough speed to maintain tension:
 
@@ -688,11 +688,9 @@ $$T = 2 \times \frac{321.6}{2} - 2 \times 9.8 = 321.6 - 19.6 = 302 \mathrm{ N}$$
 
 The tension is positive, so the block does indeed complete full vertical circles.
 
-:::info
-This is a classic ballistic pendulum problem with a twist: the bullet has enough energy to
+:::info This is a classic ballistic pendulum problem with a twist: the bullet has enough energy to
 make the block complete full vertical circles. In most textbook versions, the block only swings to a
-modest height.
-:::
+modest height. :::
 
 ## Common Pitfalls Extended
 
@@ -716,15 +714,16 @@ elastic (or that the problem states it is).
 ## Additional Practice Problems
 
 16. A $1500 \mathrm{ kg}$ car travelling at $20 \mathrm{ m/s}$ rear-ends a $2500 \mathrm{ kg}$ truck
-    travelling at $15 \mathrm{ m/s}$ in the same direction. The vehicles stick together. Calculate the
-    final velocity, the KE lost, and the impulse on each vehicle.
+    travelling at $15 \mathrm{ m/s}$ in the same direction. The vehicles stick together. Calculate
+    the final velocity, the KE lost, and the impulse on each vehicle.
 
-17. A tennis ball of mass $0.06 \mathrm{ kg}$ is struck by a racket. The force on the ball during the
-    $0.005 \mathrm{ s}$ contact is $F(t) = 1200 \sin(200\pi t)$ (N). Calculate the impulse and the
-    speed of the ball after impact if it was initially at rest.
+17. A tennis ball of mass $0.06 \mathrm{ kg}$ is struck by a racket. The force on the ball during
+    the $0.005 \mathrm{ s}$ contact is $F(t) = 1200 \sin(200\pi t)$ (N). Calculate the impulse and
+    the speed of the ball after impact if it was initially at rest.
 
-18. A $3 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides elastically with a $1 \mathrm{ kg}$
-    object at rest. Use the elastic collision formulas to find the final velocities of both objects.
+18. A $3 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides elastically with a
+    $1 \mathrm{ kg}$ object at rest. Use the elastic collision formulas to find the final velocities
+    of both objects.
 
 19. A $60 \mathrm{ kg}$ person standing on ice catches a $2 \mathrm{ kg}$ ball thrown at
     $15 \mathrm{ m/s}$. Calculate the person's velocity after catching the ball. If the person then
@@ -741,18 +740,22 @@ elastic (or that the problem states it is).
 <details>
 <summary>Question 1: Perfectly inelastic collision</summary>
 
-A $1500 \mathrm{ kg}$ car travelling east at $20 \mathrm{ m/s}$ collides with a $2500 \mathrm{ kg}$ truck travelling west at $15 \mathrm{ m/s}$. They stick together after the collision. Find the velocity of the wreckage and the kinetic energy lost.
+A $1500 \mathrm{ kg}$ car travelling east at $20 \mathrm{ m/s}$ collides with a $2500 \mathrm{ kg}$
+truck travelling west at $15 \mathrm{ m/s}$. They stick together after the collision. Find the
+velocity of the wreckage and the kinetic energy lost.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Taking east as positive: $p_i = 1500(20) + 2500(-15) = 30,000 - 37,500 = -7,500 \mathrm{ kg\cdot m/s}$.
+Taking east as positive:
+$p_i = 1500(20) + 2500(-15) = 30,000 - 37,500 = -7,500 \mathrm{ kg\cdot m/s}$.
 
 Final mass: $4000 \mathrm{ kg}$. $v_f = p_i / m_f = -7500/4000 = -1.875 \mathrm{ m/s}$ (westward).
 
-Initial KE: $\frac{1}{2}(1500)(20^2) + \frac{1}{2}(2500)(15^2) = 300,000 + 281,250 = 581,250 \mathrm{ J}$.
+Initial KE:
+$\frac{1}{2}(1500)(20^2) + \frac{1}{2}(2500)(15^2) = 300,000 + 281,250 = 581,250 \mathrm{ J}$.
 
 Final KE: $\frac{1}{2}(4000)(1.875^2) = 7031 \mathrm{ J}$.
 
@@ -763,25 +766,30 @@ Energy lost: $581,250 - 7,031 = 574,219 \mathrm{ J}$ (about 98.8% lost to deform
 <details>
 <summary>Question 2: Impulse and force-time graph</summary>
 
-A $0.15 \mathrm{ kg}$ baseball is hit by a bat. The force on the ball as a function of time is approximately triangular: it rises linearly from 0 to $6000 \mathrm{ N}$ in $1 \mathrm{ ms}$ and falls back to 0 in the next $1 \mathrm{ ms}$. Calculate the impulse, the change in velocity, and the average force.
+A $0.15 \mathrm{ kg}$ baseball is hit by a bat. The force on the ball as a function of time is
+approximately triangular: it rises linearly from 0 to $6000 \mathrm{ N}$ in $1 \mathrm{ ms}$ and
+falls back to 0 in the next $1 \mathrm{ ms}$. Calculate the impulse, the change in velocity, and the
+average force.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Impulse = area under F-t graph = area of triangle = $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times 0.002 \times 6000 = 6 \mathrm{ N\cdot s}$.
+Impulse = area under F-t graph = area of triangle =
+$\frac{1}{2} \times \mathrm{base} \times \mathrm{height} = \frac{1}{2} \times 0.002 \times 6000 = 6 \mathrm{ N\cdot s}$.
 
 Change in velocity: $\Delta v = J/m = 6/0.15 = 40 \mathrm{ m/s}$.
 
-Average force: $F_{\text{avg}} = J/\Delta t = 6/0.002 = 3000 \mathrm{ N}$.
+Average force: $F_{\mathrm{avg}} = J/\Delta t = 6/0.002 = 3000 \mathrm{ N}$.
 
 </details>
 
 <details>
 <summary>Question 3: Elastic collision in 1D</summary>
 
-A ball of mass $2 \mathrm{ kg}$ moving at $5 \mathrm{ m/s}$ collides elastically with a stationary ball of mass $3 \mathrm{ kg}$. Calculate the final velocities of both balls.
+A ball of mass $2 \mathrm{ kg}$ moving at $5 \mathrm{ m/s}$ collides elastically with a stationary
+ball of mass $3 \mathrm{ kg}$. Calculate the final velocities of both balls.
 
 </details>
 
@@ -797,32 +805,38 @@ $v_2' = \frac{(m_2 - m_1)v_2 + 2m_1 v_1}{m_1 + m_2} = \frac{0 + 2(2)(5)}{5} = \f
 The 2 kg ball bounces back at 1 m/s; the 3 kg ball moves forward at 4 m/s.
 
 Verification: $p_i = 2(5) = 10$. $p_f = 2(-1) + 3(4) = -2 + 12 = 10$. Momentum conserved.
-$KE_i = \frac{1}{2}(2)(25) = 25$. $KE_f = \frac{1}{2}(2)(1) + \frac{1}{2}(3)(16) = 1 + 24 = 25$. KE conserved.
+$KE_i = \frac{1}{2}(2)(25) = 25$. $KE_f = \frac{1}{2}(2)(1) + \frac{1}{2}(3)(16) = 1 + 24 = 25$. KE
+conserved.
 
 </details>
 
 <details>
 <summary>Question 4: Rocket propulsion (variable mass)</summary>
 
-A rocket ejects fuel at a rate of $100 \mathrm{ kg/s}$ with an exhaust velocity of $3000 \mathrm{ m/s}$ relative to the rocket. If the rocket has an initial mass of $50,000 \mathrm{ kg}$, what is the initial thrust and initial acceleration?
+A rocket ejects fuel at a rate of $100 \mathrm{ kg/s}$ with an exhaust velocity of
+$3000 \mathrm{ m/s}$ relative to the rocket. If the rocket has an initial mass of
+$50,000 \mathrm{ kg}$, what is the initial thrust and initial acceleration?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Thrust: $F = v_{\text{exhaust}} \times \frac{dm}{dt} = 3000 \times 100 = 300,000 \mathrm{ N}$.
+Thrust: $F = v_{\mathrm{exhaust}} \times \frac{dm}{dt} = 3000 \times 100 = 300,000 \mathrm{ N}$.
 
 Initial acceleration: $a = F/m - g = 300,000/50,000 - 9.8 = 6 - 9.8 = -3.8 \mathrm{ m/s^2}$.
 
-The rocket cannot lift off from the ground with these parameters because the thrust ($300 \mathrm{ kN}$) is less than the weight ($490 \mathrm{ kN}$). It would need a higher fuel ejection rate or exhaust velocity.
+The rocket cannot lift off from the ground with these parameters because the thrust
+($300 \mathrm{ kN}$) is less than the weight ($490 \mathrm{ kN}$). It would need a higher fuel
+ejection rate or exhaust velocity.
 
 </details>
 
 <details>
 <summary>Question 5: Ballistic pendulum</summary>
 
-A $10 \mathrm{ g}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a $2 \mathrm{ kg}$ wooden block suspended as a pendulum. How high does the block rise after the collision?
+A $10 \mathrm{ g}$ bullet travelling at $400 \mathrm{ m/s}$ embeds itself in a $2 \mathrm{ kg}$
+wooden block suspended as a pendulum. How high does the block rise after the collision?
 
 </details>
 
@@ -835,7 +849,8 @@ $m_b v_b = (m_b + M)V$: $0.010 \times 400 = (0.010 + 2.0)V$, $4 = 2.01V$, $V = 1
 
 After collision, energy conserved (pendulum swings up):
 
-$\frac{1}{2}(m_b + M)V^2 = (m_b + M)gh$, $h = V^2/(2g) = 1.99^2/(2 \times 9.8) = 3.96/19.6 = 0.202 \mathrm{ m}$.
+$\frac{1}{2}(m_b + M)V^2 = (m_b + M)gh$,
+$h = V^2/(2g) = 1.99^2/(2 \times 9.8) = 3.96/19.6 = 0.202 \mathrm{ m}$.
 
 The block rises approximately $20.2 \mathrm{ cm}$.
 

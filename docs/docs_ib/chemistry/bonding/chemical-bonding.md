@@ -1151,15 +1151,15 @@ $$\sigma_{2s}^2\; \sigma^{*2}_{2s}\; \sigma^2_{2p_z}\; \pi^2_{2p_x} = \pi^2_{2p_
 
 Bonding electrons = 8, Antibonding electrons = 4:
 
-$$\text{Bond order} = \frac{8 - 4}{2} = 2$$
+$$\mathrm{Bond order} = \frac{8 - 4}{2} = 2$$
 
 $\mathrm{O}_2^+$ (11 valence electrons): Bonding = 8, Antibonding = 3:
 
-$$\text{Bond order} = \frac{8 - 3}{2} = 2.5$$
+$$\mathrm{Bond order} = \frac{8 - 3}{2} = 2.5$$
 
 $\mathrm{O}_2^{2-}$ (14 valence electrons): Bonding = 8, Antibonding = 6:
 
-$$\text{Bond order} = \frac{8 - 6}{2} = 1$$
+$$\mathrm{Bond order} = \frac{8 - 6}{2} = 1$$
 
 Higher bond order means shorter bond length:
 

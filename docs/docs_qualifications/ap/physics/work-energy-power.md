@@ -56,14 +56,15 @@ energy are the same physical quantity.
 
 :::info[Example]
 
-A person pushes a $50 \mathrm{ N}$ crate across a floor for $4.0 \mathrm{ m}$ at an angle of $30^\circ$
-below horizontal. The coefficient of kinetic friction is $\mu_k = 0.3$. Find the work done by each
-force and the net work.
+A person pushes a $50 \mathrm{ N}$ crate across a floor for $4.0 \mathrm{ m}$ at an angle of
+$30^\circ$ below horizontal. The coefficient of kinetic friction is $\mu_k = 0.3$. Find the work
+done by each force and the net work.
 
 **Applied force:**
 $W_F = Fd\cos\theta = 50 \times 4.0 \times \cos(-30^\circ) = 50 \times 4.0 \times 0.866 = 173.2 \mathrm{ J}$
 
-**Normal force:** $N = mg - F\sin 30^\circ = 50 - 25 = 25 \mathrm{ N}$ (taking $mg = 50 \mathrm{ N}$).
+**Normal force:** $N = mg - F\sin 30^\circ = 50 - 25 = 25 \mathrm{ N}$ (taking
+$mg = 50 \mathrm{ N}$).
 
 **Friction:** $W_f = -f_k d = -\mu_k N d = -0.3 \times 25 \times 4.0 = -30 \mathrm{ J}$
 
@@ -79,11 +80,9 @@ $W_F = Fd\cos\theta = 50 \times 4.0 \times \cos(-30^\circ) = 50 \times 4.0 \time
 
 The kinetic energy of an object of mass $m$ moving with speed $v$ is:
 
-
 <PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 $$
 K = \frac{1}{2}mv^2
@@ -121,8 +120,8 @@ problems.
 
 :::info[Example]
 
-A $2.0 \mathrm{ kg}$ block initially at rest is pushed by a $12 \mathrm{ N}$ horizontal force across a
-frictionless surface for $5.0 \mathrm{ m}$. Find its final speed.
+A $2.0 \mathrm{ kg}$ block initially at rest is pushed by a $12 \mathrm{ N}$ horizontal force across
+a frictionless surface for $5.0 \mathrm{ m}$. Find its final speed.
 
 $$
 W_{\mathrm{net}} = 12 \times 5.0 = 60 \mathrm{ J}
@@ -215,8 +214,8 @@ where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (like fricti
 :::info[Example]
 
 A roller coaster car starts from rest at height $h = 20 \mathrm{ m}$, goes through a loop of radius
-$6.0 \mathrm{ m}$, and reaches a second hill of height $12 \mathrm{ m}$. Find the speed at the top of
-the loop (neglecting friction).
+$6.0 \mathrm{ m}$, and reaches a second hill of height $12 \mathrm{ m}$. Find the speed at the top
+of the loop (neglecting friction).
 
 Using conservation of energy from the start to the top of the loop (height $= 2R = 12 \mathrm{ m}$):
 
@@ -236,8 +235,8 @@ $$
 
 :::info[Example: With Friction]
 
-A $3.0 \mathrm{ kg}$ block slides down a $30^\circ$ incline of length $5.0 \mathrm{ m}$ from rest. The
-coefficient of kinetic friction is $\mu_k = 0.2$. Find the speed at the bottom.
+A $3.0 \mathrm{ kg}$ block slides down a $30^\circ$ incline of length $5.0 \mathrm{ m}$ from rest.
+The coefficient of kinetic friction is $\mu_k = 0.2$. Find the speed at the bottom.
 
 **Energy method:** $W_{\mathrm{nc}} = \Delta K + \Delta U$
 
@@ -281,8 +280,8 @@ When the force and velocity are not constant, average and instantaneous power di
 
 :::info[Example]
 
-A $1200 \mathrm{ kg}$ car accelerates from rest to $25 \mathrm{ m/s}$ in 8.0 s on a level road. If the
-engine provides constant power, what is that power?
+A $1200 \mathrm{ kg}$ car accelerates from rest to $25 \mathrm{ m/s}$ in 8.0 s on a level road. If
+the engine provides constant power, what is that power?
 
 **Energy method:**
 
@@ -375,15 +374,15 @@ mass.
 
 ## Practice Questions
 
-1. A $5.0 \mathrm{ kg}$ block slides $3.0 \mathrm{ m}$ down a $25^\circ$ frictionless incline. Find the
-   work done by gravity and the final speed.
+1. A $5.0 \mathrm{ kg}$ block slides $3.0 \mathrm{ m}$ down a $25^\circ$ frictionless incline. Find
+   the work done by gravity and the final speed.
 
 2. A spring with $k = 500 \mathrm{ N/m}$ is compressed $0.10 \mathrm{ m}$ and launches a
    $0.50 \mathrm{ kg}$ block on a frictionless surface. Find the maximum speed of the block and the
    maximum height it reaches on a frictionless incline.
 
-3. A $1000 \mathrm{ kg}$ elevator starts from rest and accelerates upward at $2.0 \mathrm{ m/s}^2$ for
-   $3.0 \mathrm{ s}$. Find the power output of the motor at $t = 3.0 \mathrm{ s}$.
+3. A $1000 \mathrm{ kg}$ elevator starts from rest and accelerates upward at $2.0 \mathrm{ m/s}^2$
+   for $3.0 \mathrm{ s}$. Find the power output of the motor at $t = 3.0 \mathrm{ s}$.
 
 4. A pendulum of length $1.5 \mathrm{ m}$ is released from horizontal. Find its speed at the lowest
    point (neglect air resistance).
@@ -394,15 +393,15 @@ mass.
 6. A car of mass $1500 \mathrm{ kg}$ travels at constant speed $20 \mathrm{ m/s}$ up a $10^\circ$
    incline. If the engine produces $50 \mathrm{ kW}$, find the frictional force.
 
-7. A satellite in circular orbit at altitude $500 \mathrm{ km}$ needs to escape Earth. What additional
-   speed must it acquire?
+7. A satellite in circular orbit at altitude $500 \mathrm{ km}$ needs to escape Earth. What
+   additional speed must it acquire?
 
 8. Derive the relationship $F = -\frac{dU}{dx}$ from the work-energy theorem for one-dimensional
    motion.
 
-9. A force $F(x) = 3x^2 - 2x$ (in N, with $x$ in m) acts on a $2.0 \mathrm{ kg}$ object. Find the work
-   done as the object moves from $x = 0$ to $x = 3.0 \mathrm{ m}$, and the speed at $x = 3.0$ m if the
-   object started from rest.
+9. A force $F(x) = 3x^2 - 2x$ (in N, with $x$ in m) acts on a $2.0 \mathrm{ kg}$ object. Find the
+   work done as the object moves from $x = 0$ to $x = 3.0 \mathrm{ m}$, and the speed at $x = 3.0$ m
+   if the object started from rest.
 
 10. A potential energy function is given by $U(x) = x^4 - 2x^2$ (in J, with $x$ in m). Find all
     equilibrium positions and classify each as stable, unstable, or neutral.
@@ -422,8 +421,9 @@ $+2.25 \mathrm{ J}$, which is stored as elastic potential energy.
 
 ### Worked Example: Non-Linear Force
 
-A force $F(x) = 3x^2 + 2x$ (in N, with $x$ in m) acts on a $2 \mathrm{ kg}$ object. Find the work done
-from $x = 0$ to $x = 3 \mathrm{ m}$ and the speed at $x = 3 \mathrm{ m}$ if the object starts from rest.
+A force $F(x) = 3x^2 + 2x$ (in N, with $x$ in m) acts on a $2 \mathrm{ kg}$ object. Find the work
+done from $x = 0$ to $x = 3 \mathrm{ m}$ and the speed at $x = 3 \mathrm{ m}$ if the object starts
+from rest.
 
 $$W = \int_0^3 (3x^2 + 2x)\, dx = \left[x^3 + x^2\right]_0^3 = 27 + 9 = 36 \mathrm{ J}$$
 
@@ -435,8 +435,8 @@ $$v_f = \sqrt{\frac{2W}{m}} = \sqrt{\frac{72}{2}} = \sqrt{36} = 6 \mathrm{ m/s}$
 
 ### Worked Example: Block-Spring System on a Frictionless Surface
 
-A $3 \mathrm{ kg}$ block slides on a frictionless surface at $4 \mathrm{ m/s}$ and strikes a spring with
-$k = 500 \mathrm{ N/m}$. Find the maximum compression of the spring.
+A $3 \mathrm{ kg}$ block slides on a frictionless surface at $4 \mathrm{ m/s}$ and strikes a spring
+with $k = 500 \mathrm{ N/m}$. Find the maximum compression of the spring.
 
 At maximum compression, all kinetic energy has been converted to elastic potential energy:
 
@@ -446,8 +446,8 @@ $$x = v\sqrt{\frac{m}{k}} = 4\sqrt{\frac{3}{500}} = 4 \times 0.0775 = 0.310 \mat
 
 ### Worked Example: Pendulum with Energy
 
-A pendulum of length $L = 1.5 \mathrm{ m}$ and mass $m = 0.5 \mathrm{ kg}$ is released from horizontal
-($\theta = 90^{\circ}$). Find the speed at the lowest point.
+A pendulum of length $L = 1.5 \mathrm{ m}$ and mass $m = 0.5 \mathrm{ kg}$ is released from
+horizontal ($\theta = 90^{\circ}$). Find the speed at the lowest point.
 
 The pendulum bob falls a height $h = L = 1.5 \mathrm{ m}$.
 
@@ -512,8 +512,8 @@ $$P(3) = F(3) \cdot v(3) = 18 \times \frac{27}{2} = 18 \times 13.5 = 243 \mathrm
 
 ### Worked Example: Power Needed to Climb at Constant Speed
 
-A $70 \mathrm{ kg}$ cyclist climbs a $6^{\circ}$ hill at $5 \mathrm{ m/s}$. The total resistive force
-(friction plus air resistance) is $20 \mathrm{ N}$. Find the power output.
+A $70 \mathrm{ kg}$ cyclist climbs a $6^{\circ}$ hill at $5 \mathrm{ m/s}$. The total resistive
+force (friction plus air resistance) is $20 \mathrm{ N}$. Find the power output.
 
 $$P = Fv = (mg\sin\theta + F_{\mathrm{resist}})v = (70 \times 9.8 \times \sin 6^{\circ} + 20) \times 5$$
 
@@ -555,8 +555,8 @@ difficulty of climbing even a modest gradient.
 ## Practice Questions (Additional)
 
 11. A $1.5 \mathrm{ kg}$ object slides from rest down a curved frictionless ramp of height
-    $3 \mathrm{ m}$ and enters a rough horizontal section with $\mu_k = 0.4$. How far does it slide on
-    the rough section before stopping?
+    $3 \mathrm{ m}$ and enters a rough horizontal section with $\mu_k = 0.4$. How far does it slide
+    on the rough section before stopping?
 
 12. A spring with $k = 800 \mathrm{ N/m}$ is compressed $0.10 \mathrm{ m}$ and launches a
     $0.2 \mathrm{ kg}$ ball vertically. Find the maximum height reached (a) on Earth and (b) on the
@@ -565,9 +565,9 @@ difficulty of climbing even a modest gradient.
 13. A force $F(x) = -kx + bx^3$ acts on a particle. Find the potential energy function $U(x)$ and
     identify the equilibrium positions.
 
-14. A $50 \mathrm{ kg}$ child on a swing is pushed to a height $0.8 \mathrm{ m}$ above the lowest point.
-    Find the speed at the lowest point and the speed when the swing is $0.4 \mathrm{ m}$ above the
-    lowest point.
+14. A $50 \mathrm{ kg}$ child on a swing is pushed to a height $0.8 \mathrm{ m}$ above the lowest
+    point. Find the speed at the lowest point and the speed when the swing is $0.4 \mathrm{ m}$
+    above the lowest point.
 
 15. The potential energy of a particle is $U(r) = \frac{A}{r} - \frac{B}{r^2}$ where $A$ and $B$ are
     positive constants. Find (a) the force, (b) the equilibrium position, and (c) whether the
@@ -577,9 +577,9 @@ difficulty of climbing even a modest gradient.
 
 ### Example 16: Power Dissipated by Air Resistance
 
-A car of mass $1500 \mathrm{ kg}$ travels at a constant $25 \mathrm{ m/s}$ on a level road. The engine
-produces a driving force of $1200 \mathrm{ N}$. Calculate the power output of the engine and the power
-dissipated by air resistance and rolling friction.
+A car of mass $1500 \mathrm{ kg}$ travels at a constant $25 \mathrm{ m/s}$ on a level road. The
+engine produces a driving force of $1200 \mathrm{ N}$. Calculate the power output of the engine and
+the power dissipated by air resistance and rolling friction.
 
 **Step 1: At constant speed, net force is zero**
 
@@ -599,7 +599,8 @@ If the car then accelerates to $30 \mathrm{ m/s}$ with the same driving force:
 
 $$F_{\mathrm{air}} \propto v^2$$
 
-Let $F_{\mathrm{air,25}} = F_{\mathrm{air}}(25)$ and $F_{\mathrm{roll}}$ be the constant rolling friction.
+Let $F_{\mathrm{air,25}} = F_{\mathrm{air}}(25)$ and $F_{\mathrm{roll}}$ be the constant rolling
+friction.
 
 At $25 \mathrm{ m/s}$: $F_{\mathrm{air}}(25) + F_{\mathrm{roll}} = 1200 \mathrm{ N}$
 
@@ -614,20 +615,18 @@ $$F_{\mathrm{total resist}}(30) = 1440 + 200 = 1640 \mathrm{ N}$$
 
 **Net force:** $F_{\mathrm{net}} = 1200 - 1640 = -440 \mathrm{ N}$
 
-The car cannot maintain $30 \mathrm{ m/s}$ with the same driving force -- air resistance increases too
-rapidly.
+The car cannot maintain $30 \mathrm{ m/s}$ with the same driving force -- air resistance increases
+too rapidly.
 
-:::info
-Air resistance (drag) force is given by $F_D = \frac{1}{2}\rho C_D A v^2$, where $\rho$ is
+:::info Air resistance (drag) force is given by $F_D = \frac{1}{2}\rho C_D A v^2$, where $\rho$ is
 air density, $C_D$ is the drag coefficient, and $A$ is the cross-sectional area. This quadratic
-dependence on velocity is why fuel consumption increases dramatically at high speeds.
-:::
+dependence on velocity is why fuel consumption increases dramatically at high speeds. :::
 
 ### Example 17: Energy in a Mass-Spring System with Gravity
 
-A $2 \mathrm{ kg}$ block hangs from a vertical spring with $k = 200 \mathrm{ N/m}$. The block is pulled
-down $0.15 \mathrm{ m}$ from equilibrium and released. Find the maximum speed and the maximum height
-above the release point.
+A $2 \mathrm{ kg}$ block hangs from a vertical spring with $k = 200 \mathrm{ N/m}$. The block is
+pulled down $0.15 \mathrm{ m}$ from equilibrium and released. Find the maximum speed and the maximum
+height above the release point.
 
 **Step 1: Find the equilibrium extension**
 
@@ -652,14 +651,14 @@ $$v_{\max} = A\sqrt{\frac{k}{m}} = 0.15 \times \sqrt{\frac{200}{2}} = 0.15 \time
 
 **Step 4: Maximum height above release point**
 
-The block oscillates symmetrically about equilibrium, so it rises $0.15 \mathrm{ m}$ above equilibrium
-to $0.15 \mathrm{ m}$ above equilibrium, which is $0.15 + 0.15 = 0.30 \mathrm{ m}$ above the lowest
-point (the release point).
+The block oscillates symmetrically about equilibrium, so it rises $0.15 \mathrm{ m}$ above
+equilibrium to $0.15 \mathrm{ m}$ above equilibrium, which is $0.15 + 0.15 = 0.30 \mathrm{ m}$ above
+the lowest point (the release point).
 
 ### Example 18: Work Done Against a Non-Conservative Force
 
-A $5 \mathrm{ kg}$ block starts from rest at the top of a rough curved ramp of height $3 \mathrm{ m}$.
-At the bottom, its speed is $6 \mathrm{ m/s}$. Calculate the work done by friction.
+A $5 \mathrm{ kg}$ block starts from rest at the top of a rough curved ramp of height
+$3 \mathrm{ m}$. At the bottom, its speed is $6 \mathrm{ m/s}$. Calculate the work done by friction.
 
 **Step 1: Energy at the top**
 
@@ -673,7 +672,8 @@ $$E_{\mathrm{bottom}} = \frac{1}{2}mv^2 = \frac{1}{2} \times 5 \times 36 = 90 \m
 
 $$W_f = E_{\mathrm{bottom}} - E_{\mathrm{top}} = 90 - 147 = -57 \mathrm{ J}$$
 
-The friction does $-57 \mathrm{ J}$ of work (dissipates $57 \mathrm{ J}$ of mechanical energy as heat).
+The friction does $-57 \mathrm{ J}$ of work (dissipates $57 \mathrm{ J}$ of mechanical energy as
+heat).
 
 **Step 4: Effective coefficient of friction (if the ramp were straight)**
 
@@ -712,9 +712,9 @@ ensure you are consistent throughout the problem.
 
 ## Additional Practice Problems
 
-16. A $1200 \mathrm{ kg}$ car accelerates from $0$ to $30 \mathrm{ m/s}$ in $8 \mathrm{ s}$. Calculate (a)
-    the average power developed, (b) the instantaneous power at $t = 4 \mathrm{ s}$ assuming constant
-    acceleration, and (c) the total distance covered.
+16. A $1200 \mathrm{ kg}$ car accelerates from $0$ to $30 \mathrm{ m/s}$ in $8 \mathrm{ s}$.
+    Calculate (a) the average power developed, (b) the instantaneous power at $t = 4 \mathrm{ s}$
+    assuming constant acceleration, and (c) the total distance covered.
 
 17. A $0.5 \mathrm{ kg}$ ball is dropped from a height of $20 \mathrm{ m}$. On each bounce, it loses
     $20\%$ of its kinetic energy. Calculate the height after the first bounce, the velocity just
@@ -726,20 +726,23 @@ ensure you are consistent throughout the problem.
     $x = 3 \mathrm{ m}$ if the object is moving at $4 \mathrm{ m/s}$ at that point.
 
 19. A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point A, height
-    $30 \mathrm{ m}$. It goes through a loop of radius $10 \mathrm{ m}$ and then up a ramp to point B.
-    If $80\%$ of the initial PE is converted to KE at the top of the loop, calculate the normal
+    $30 \mathrm{ m}$. It goes through a loop of radius $10 \mathrm{ m}$ and then up a ramp to point
+    B. If $80\%$ of the initial PE is converted to KE at the top of the loop, calculate the normal
     force at the top of the loop and the maximum possible height of point B.
 
-20. Two springs with $k_1 = 200 \mathrm{ N/m}$ and $k_2 = 300 \mathrm{ N/m}$ are connected (a) in series
-    and (b) in parallel. For each arrangement, find the effective spring constant, the period of
-    oscillation for a $2 \mathrm{ kg}$ mass, and the energy stored when compressed $0.1 \mathrm{ m}$.
+20. Two springs with $k_1 = 200 \mathrm{ N/m}$ and $k_2 = 300 \mathrm{ N/m}$ are connected (a) in
+    series and (b) in parallel. For each arrangement, find the effective spring constant, the period
+    of oscillation for a $2 \mathrm{ kg}$ mass, and the energy stored when compressed
+    $0.1 \mathrm{ m}$.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Work-energy theorem with variable force</summary>
 
-A $3 \mathrm{ kg}$ object moves along the x-axis under the influence of a force $F(x) = 4x^2 - 2x \mathrm{ N}$ (where $x$ is in metres). Calculate the work done by this force as the object moves from $x = 0$ to $x = 3 \mathrm{ m}$ and the final speed if it started from rest.
+A $3 \mathrm{ kg}$ object moves along the x-axis under the influence of a force
+$F(x) = 4x^2 - 2x \mathrm{ N}$ (where $x$ is in metres). Calculate the work done by this force as
+the object moves from $x = 0$ to $x = 3 \mathrm{ m}$ and the final speed if it started from rest.
 
 </details>
 
@@ -757,7 +760,9 @@ $v = \sqrt{2W/m} = \sqrt{2 \times 27/3} = \sqrt{18} = 4.24 \mathrm{ m/s}$.
 <details>
 <summary>Question 2: Conservation of energy with spring</summary>
 
-A $0.5 \mathrm{ kg}$ block slides on a frictionless surface and collides with a horizontal spring ($k = 200 \mathrm{ N/m}$). The block compresses the spring by $0.15 \mathrm{ m}$ before momentarily stopping. What was the speed of the block just before it hit the spring?
+A $0.5 \mathrm{ kg}$ block slides on a frictionless surface and collides with a horizontal spring
+($k = 200 \mathrm{ N/m}$). The block compresses the spring by $0.15 \mathrm{ m}$ before momentarily
+stopping. What was the speed of the block just before it hit the spring?
 
 </details>
 
@@ -773,7 +778,9 @@ $v = x\sqrt{k/m} = 0.15\sqrt{200/0.5} = 0.15\sqrt{400} = 0.15 \times 20 = 3.0 \m
 <details>
 <summary>Question 3: Power and inclined plane</summary>
 
-A $60 \mathrm{ kg}$ person runs up a flight of stairs that is $10 \mathrm{ m}$ high in $8 \mathrm{ s}$. Calculate the average power output in watts and horsepower. Take $g = 9.8 \mathrm{ m/s^2}$ and $1 \mathrm{ hp} = 746 \mathrm{ W}$.
+A $60 \mathrm{ kg}$ person runs up a flight of stairs that is $10 \mathrm{ m}$ high in
+$8 \mathrm{ s}$. Calculate the average power output in watts and horsepower. Take
+$g = 9.8 \mathrm{ m/s^2}$ and $1 \mathrm{ hp} = 746 \mathrm{ W}$.
 
 </details>
 
@@ -791,18 +798,22 @@ In horsepower: $735/746 = 0.985 \mathrm{ hp}$.
 <details>
 <summary>Question 4: Loop-the-loop energy analysis</summary>
 
-A block of mass $m$ starts from rest at height $h$ on a frictionless track and enters a circular loop of radius $R$. What is the minimum value of $h$ for the block to complete the loop? Express your answer in terms of $R$.
+A block of mass $m$ starts from rest at height $h$ on a frictionless track and enters a circular
+loop of radius $R$. What is the minimum value of $h$ for the block to complete the loop? Express
+your answer in terms of $R$.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-At the top of the loop, the minimum condition is that the normal force is zero, so centripetal acceleration is provided entirely by gravity: $mg = mv_{\text{top}}^2/R$, giving $v_{\text{top}}^2 = gR$.
+At the top of the loop, the minimum condition is that the normal force is zero, so centripetal
+acceleration is provided entirely by gravity: $mg = mv_{\mathrm{top}}^2/R$, giving
+$v_{\mathrm{top}}^2 = gR$.
 
 Energy conservation from start to top of loop (height $2R$):
 
-$mgh = mg(2R) + \frac{1}{2}mv_{\text{top}}^2 = 2mgR + \frac{1}{2}m(gR) = \frac{5}{2}mgR$.
+$mgh = mg(2R) + \frac{1}{2}mv_{\mathrm{top}}^2 = 2mgR + \frac{1}{2}m(gR) = \frac{5}{2}mgR$.
 
 $h = \frac{5}{2}R = 2.5R$.
 
@@ -811,7 +822,8 @@ $h = \frac{5}{2}R = 2.5R$.
 <details>
 <summary>Question 5: Work done by non-constant force on a curve</summary>
 
-A $2 \mathrm{ kg}$ object is moved from the origin to the point $(4, 3)$ by a force $\vec{F} = (3x\hat{i} + 2y\hat{j}) \mathrm{ N}$. Calculate the work done by this force.
+A $2 \mathrm{ kg}$ object is moved from the origin to the point $(4, 3)$ by a force
+$\vec{F} = (3x\hat{i} + 2y\hat{j}) \mathrm{ N}$. Calculate the work done by this force.
 
 </details>
 
@@ -822,6 +834,7 @@ $W = \int \vec{F} \cdot d\vec{r} = \int_0^4 3x \, dx + \int_0^3 2y \, dy$.
 
 $= \left[\frac{3x^2}{2}\right]_0^4 + \left[y^2\right]_0^3 = 24 + 9 = 33 \mathrm{ J}$.
 
-The force is conservative (it can be written as the negative gradient of a potential $U = -\frac{3}{2}x^2 - y^2$), so the work depends only on the endpoints, not the path taken.
+The force is conservative (it can be written as the negative gradient of a potential
+$U = -\frac{3}{2}x^2 - y^2$), so the work depends only on the endpoints, not the path taken.
 
 </details>

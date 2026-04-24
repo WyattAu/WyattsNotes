@@ -64,7 +64,7 @@ Find the value of $k$ for which $x^2 + 2kx + k + 6 = 0$ has equal roots.
 
 $$\Delta = (2k)^2 - 4(1)(k + 6) = 4k^2 - 4k - 24 = 0$$
 
-$$k^2 - k - 6 = 0 \implies (k - 3)(k + 2) = 0 \implies k = 3 \text{ or } k = -2$$
+$$k^2 - k - 6 = 0 \implies (k - 3)(k + 2) = 0 \implies k = 3 \mathrm{ or } k = -2$$
 
 ---
 

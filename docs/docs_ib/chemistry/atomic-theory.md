@@ -184,11 +184,11 @@ For transition metal ions, electrons are removed from the $ns$ orbital **before*
 orbital:
 
 $$
-\mathrm{Fe}^{2+}: [\mathrm{Ar}]\, 3d^6 \quad (\text{not } 4s^2\, 3d^4)
+\mathrm{Fe}^{2+}: [\mathrm{Ar}]\, 3d^6 \quad (\mathrm{not } 4s^2\, 3d^4)
 $$
 
 $$
-\mathrm{Cu}^+: [\mathrm{Ar}]\, 3d^{10} \quad (\text{not } 4s^1\, 3d^9)
+\mathrm{Cu}^+: [\mathrm{Ar}]\, 3d^{10} \quad (\mathrm{not } 4s^1\, 3d^9)
 $$
 
 ### Common Pitfalls
@@ -214,15 +214,15 @@ $$
 The total number of nodes for an orbital with quantum numbers $n$ and $l$ is:
 
 $$
-\text{total nodes} = n - 1
+\mathrm{total nodes} = n - 1
 $$
 
 $$
-\text{angular nodes} = l
+\mathrm{angular nodes} = l
 $$
 
 $$
-\text{radial nodes} = n - l - 1
+\mathrm{radial nodes} = n - l - 1
 $$
 
 :::info[Example]
@@ -315,7 +315,7 @@ $$
 A large jump between successive ionization energies indicates removal from a new inner shell:
 
 $$
-IE_1 \lt IE_2 \lt IE_3 \ll IE_4 \quad \text{(large jump at } IE_4 \text{ for Al)}
+IE_1 \lt IE_2 \lt IE_3 \ll IE_4 \quad \mathrm{(large jump at } IE_4 \mathrm{ for Al)}
 $$
 
 This reveals the number of valence electrons.

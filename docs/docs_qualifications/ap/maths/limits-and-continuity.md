@@ -482,8 +482,8 @@ The general approach is:
 1. Start with $|f(x) - L|$ and try to bound it in terms of $|x - a|$.
 2. If $f$ involves products, use the "restrict delta" technique: bound each factor separately.
 3. If $f$ involves roots, rationalise and use the fact that $\sqrt{x} + \sqrt{a} \ge \sqrt{a}$.
-4. Choose $\delta = \min(\mathrm{bound}, \epsilon / \mathrm{constant})$ to handle both the restriction
-   and the $\epsilon$ requirement.
+4. Choose $\delta = \min(\mathrm{bound}, \epsilon / \mathrm{constant})$ to handle both the
+   restriction and the $\epsilon$ requirement.
 
 ## Continuity (CED Unit 1)
 
@@ -551,10 +551,8 @@ at least one zero in $(a, b)$.
 If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains both an absolute maximum and an
 absolute minimum on $[a, b]$.
 
-:::warning
-The EVT requires continuity on a **closed** interval. The function $f(x) = \frac{1}{x}$
-on $(0, 1)$ has no maximum, despite being continuous.
-:::
+:::warning The EVT requires continuity on a **closed** interval. The function $f(x) = \frac{1}{x}$
+on $(0, 1)$ has no maximum, despite being continuous. :::
 
 ### Boundedness Theorem
 
@@ -836,7 +834,8 @@ Using the epsilon-delta definition, prove that $\displaystyle\lim_{x \to 2} (3x 
 <details>
 <summary>Answer</summary>
 
-We need to show: for every $\epsilon \gt 0$, there exists a $\delta \gt 0$ such that if $0 \lt |x - 2| \lt \delta$, then $|(3x - 1) - 5| \lt \epsilon$.
+We need to show: for every $\epsilon \gt 0$, there exists a $\delta \gt 0$ such that if
+$0 \lt |x - 2| \lt \delta$, then $|(3x - 1) - 5| \lt \epsilon$.
 
 $|(3x - 1) - 5| = |3x - 6| = 3|x - 2|$.
 
@@ -873,7 +872,7 @@ $= \lim_{x \to 0} \frac{\sin x}{x(1 + \cos x)} = \lim_{x \to 0} \frac{\sin x}{x}
 
 Determine whether the following function is continuous at $x = 1$:
 
-$$f(x) = \begin{cases} \frac{x^2 - 1}{x - 1} & \text{if } x \ne 1 \\ 4 & \text{if } x = 1 \end{cases}$$
+$$f(x) = \begin{cases} \frac{x^2 - 1}{x - 1} & \mathrm{if } x \ne 1 \\ 4 & \mathrm{if } x = 1 \end{cases}$$
 
 </details>
 
@@ -886,7 +885,8 @@ Check three conditions:
 2. $\displaystyle\lim_{x \to 1} f(x) = \lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x + 1) = 2$.
 3. $\lim_{x \to 1} f(x) = 2 \ne f(1) = 4$.
 
-Since the limit does not equal the function value, $f$ is NOT continuous at $x = 1$. To make it continuous, $f(1)$ should be redefined as $2$.
+Since the limit does not equal the function value, $f$ is NOT continuous at $x = 1$. To make it
+continuous, $f(1)$ should be redefined as $2$.
 
 </details>
 
@@ -906,7 +906,8 @@ $f(0) = 0 - 0 + 1 = 1 \gt 0$.
 
 $f(1) = 1 - 5 + 1 = -3 \lt 0$.
 
-Since $f$ is continuous on $[0, 1]$ and $f(0) \gt 0$ and $f(1) \lt 0$, by the Intermediate Value Theorem, there exists at least one $c \in (0, 1)$ such that $f(c) = 0$.
+Since $f$ is continuous on $[0, 1]$ and $f(0) \gt 0$ and $f(1) \lt 0$, by the Intermediate Value
+Theorem, there exists at least one $c \in (0, 1)$ such that $f(c) = 0$.
 
 </details>
 

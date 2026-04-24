@@ -755,7 +755,7 @@ Moles of $\mathrm{KClO}_3$: $5.00 / 122.55 = 0.0408 \mathrm{ mol}$.
 Moles of $\mathrm{O}_2$: $0.0408 \times 3/2 = 0.0612 \mathrm{ mol}$.
 
 Partial pressure of $\mathrm{O}_2$:
-$P_{\mathrm{O}_2} = P_{\text{total}} - P_{\mathrm{H}_2\mathrm{O}} = 760 - 23.8 = 736.2 \mathrm{ mmHg} = 0.969 \mathrm{ atm}$.
+$P_{\mathrm{O}_2} = P_{\mathrm{total}} - P_{\mathrm{H}_2\mathrm{O}} = 760 - 23.8 = 736.2 \mathrm{ mmHg} = 0.969 \mathrm{ atm}$.
 
 Volume using ideal gas law:
 $V = \frac{nRT}{P} = \frac{0.0612 \times 0.0821 \times 298}{0.969} = \frac{1.496}{0.969} = 1.54 \mathrm{ L}$.

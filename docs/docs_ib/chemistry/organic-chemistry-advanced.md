@@ -17,7 +17,7 @@ concentration of the substrate.
 intermediate.
 
 $$
-\mathrm{(CH_3)_3C\text{-}Br} \to \mathrm{(CH_3)_3C^+} + \mathrm{Br}^-
+\mathrm{(CH_3)_3C\mathrm{-}Br} \to \mathrm{(CH_3)_3C^+} + \mathrm{Br}^-
 $$
 
 **Step 2** (fast): Nucleophilic attack on the planar carbocation.
@@ -26,7 +26,7 @@ $$
 \mathrm{(CH_3)_3C^+} + \mathrm{OH}^- \to \mathrm{(CH_3)_3COH}
 $$
 
-**Rate law**: $\text{rate} = k[\text{substrate}]$ (first order)
+**Rate law**: $\mathrm{rate} = k[\mathrm{substrate}]$ (first order)
 
 **Characteristics:**
 
@@ -46,10 +46,10 @@ $$
 side as the leaving group departs.
 
 $$
-\mathrm{OH}^- + \mathrm{CH_3\text{-}Br} \to \mathrm{TS} \to \mathrm{CH_3OH} + \mathrm{Br}^-
+\mathrm{OH}^- + \mathrm{CH_3\mathrm{-}Br} \to \mathrm{TS} \to \mathrm{CH_3OH} + \mathrm{Br}^-
 $$
 
-**Rate law**: $\text{rate} = k[\text{substrate}][\text{nucleophile}]$ (second order)
+**Rate law**: $\mathrm{rate} = k[\mathrm{substrate}][\mathrm{nucleophile}]$ (second order)
 
 **Characteristics:**
 
@@ -72,7 +72,7 @@ Two-step mechanism via a carbocation intermediate (same intermediate as SN1):
 **Step 2**: Base removes a proton from an adjacent carbon, forming a double bond.
 
 $$
-\text{rate} = k[\text{substrate}]
+\mathrm{rate} = k[\mathrm{substrate}]
 $$
 
 ### E2 Mechanism (Bimolecular Elimination)
@@ -81,7 +81,7 @@ Concerted mechanism: the base removes a proton while the leaving group departs, 
 bond in a single step.
 
 $$
-\text{rate} = k[\text{substrate}][\text{base}]
+\mathrm{rate} = k[\mathrm{substrate}][\mathrm{base}]
 $$
 
 ### Comparing SN1, SN2, E1, E2
@@ -100,11 +100,11 @@ $$
 When multiple alkenes can form, the **more substituted** (more stable) alkene is the major product:
 
 $$
-\mathrm{CH_3CH_2CH(CH_3)CH_2Br} \xrightarrow{\text{E2}} \mathrm{CH_3CH_2C(CH_3)=CH_2} \text{ (minor, Hofmann)}
+\mathrm{CH_3CH_2CH(CH_3)CH_2Br} \xrightarrow{\mathrm{E2}} \mathrm{CH_3CH_2C(CH_3)=CH_2} \mathrm{ (minor, Hofmann)}
 $$
 
 $$
-\mathrm{CH_3CH_2CH(CH_3)CH_2Br} \xrightarrow{\text{E2}} \mathrm{CH_3CH=C(CH_3)CH_3} \text{ (major, Zaitsev)}
+\mathrm{CH_3CH_2CH(CH_3)CH_2Br} \xrightarrow{\mathrm{E2}} \mathrm{CH_3CH=C(CH_3)CH_3} \mathrm{ (major, Zaitsev)}
 $$
 
 ### Common Pitfalls
@@ -238,7 +238,7 @@ $\mathrm{H}_2\mathrm{O}$ or $\mathrm{HCl}$). Two types:
 Formed from a diol and a dicarboxylic acid:
 
 $$
-\text{diol} + \text{dicarboxylic acid} \to \text{polyester} + \mathrm{H}_2\mathrm{O}
+\mathrm{diol} + \mathrm{dicarboxylic acid} \to \mathrm{polyester} + \mathrm{H}_2\mathrm{O}
 $$
 
 :::info[Example — PET (polyethylene terephthalate)]
@@ -246,7 +246,7 @@ $$
 Monomers: ethane-1,2-diol and benzene-1,4-dicarboxylic acid.
 
 $$
-n\mathrm{HOCH_2CH_2OH} + n\mathrm{HOOC\text{-}C_6H_4\text{-}COOH} \to \text{PET} + 2n\mathrm{H}_2\mathrm{O}
+n\mathrm{HOCH_2CH_2OH} + n\mathrm{HOOC\mathrm{-}C_6H_4\mathrm{-}COOH} \to \mathrm{PET} + 2n\mathrm{H}_2\mathrm{O}
 $$
 
 Uses: fibres (clothing), bottles, food containers.
@@ -258,7 +258,7 @@ Uses: fibres (clothing), bottles, food containers.
 Formed from a diamine and a dicarboxylic acid:
 
 $$
-\text{diamine} + \text{dicarboxylic acid} \to \text{polyamide} + \mathrm{H}_2\mathrm{O}
+\mathrm{diamine} + \mathrm{dicarboxylic acid} \to \mathrm{polyamide} + \mathrm{H}_2\mathrm{O}
 $$
 
 :::info[Example — Nylon-6,6]
@@ -266,7 +266,7 @@ $$
 Monomers: hexane-1,6-diamine and hexanedioic acid.
 
 $$
-n\mathrm{H_2N(CH_2)_6NH_2} + n\mathrm{HOOC(CH_2)_4COOH} \to \text{Nylon-6,6} + 2n\mathrm{H}_2\mathrm{O}
+n\mathrm{H_2N(CH_2)_6NH_2} + n\mathrm{HOOC(CH_2)_4COOH} \to \mathrm{Nylon-6,6} + 2n\mathrm{H}_2\mathrm{O}
 $$
 
 Uses: textiles, ropes, parachutes, engineering plastics.
@@ -278,7 +278,7 @@ Uses: textiles, ropes, parachutes, engineering plastics.
 An aromatic polyamide (aramid) with exceptional strength:
 
 $$
-\text{benzene-1,4-diamine} + \text{benzene-1,4-dicarboxylic acid} \to \text{Kevlar}
+\mathrm{benzene-1,4-diamine} + \mathrm{benzene-1,4-dicarboxylic acid} \to \mathrm{Kevlar}
 $$
 
 The rigid aromatic rings and strong hydrogen bonding between chains give Kevlar its high tensile

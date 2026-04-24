@@ -67,7 +67,7 @@ $$\bar{x} \approx \frac{\sum f_i x_i}{\sum f_i}$$
 1. Calculate cumulative frequencies to identify the median class.
 2. Use linear interpolation within the median class:
 
-$$\text{Median} \approx L + \left(\frac{\frac{n}{2} - F}{f}\right) \cdot w$$
+$$\mathrm{Median} \approx L + \left(\frac{\frac{n}{2} - F}{f}\right) \cdot w$$
 
 where $L$ is the lower boundary of the median class, $F$ is the cumulative frequency before the
 median class, $f$ is the frequency of the median class, and $w$ is the class width.
@@ -77,7 +77,7 @@ median class, $f$ is the frequency of the median class, and $w$ is the class wid
 In a histogram, the area of each bar represents the frequency, not the height. The height (frequency
 density) is:
 
-$$\text{Frequency density} = \frac{\text{Frequency}}{\text{Class width}}$$
+$$\mathrm{Frequency density} = \frac{\mathrm{Frequency}}{\mathrm{Class width}}$$
 
 ---
 
@@ -221,7 +221,7 @@ $$\frac{n!}{n_1!\, n_2!\, \cdots\, n_k!}$$
 
 When outcomes are equally likely:
 
-$$P(\text{event}) = \frac{\text{number of favourable outcomes}}{\text{total number of outcomes}}$$
+$$P(\mathrm{event}) = \frac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}$$
 
 ---
 
@@ -331,9 +331,9 @@ $a = 5.667 - 0.914 \times 3.5 = 2.467$. Line: $y = 2.47 + 0.91x$.
 $r = 16/\sqrt{17.5 \times 23.33} = 16/\sqrt{408.3} = 16/20.21 = 0.792$.
 
 **Problem 3:**
-$P(\text{both red}) = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
-$P(\text{2nd red} \mid \text{1st blue}) = \dfrac{5}{7}$ (after removing one blue, 5 red remain out
-of 7).
+$P(\mathrm{both red}) = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
+$P(\mathrm{2nd red} \mid \mathrm{1st blue}) = \dfrac{5}{7}$ (after removing one blue, 5 red remain
+out of 7).
 
 **Problem 4:**
 $P(D \mid +) = \dfrac{0.99 \times 0.02}{0.99 \times 0.02 + 0.03 \times 0.98} = \dfrac{0.0198}{0.0198 + 0.0294} = \dfrac{0.0198}{0.0492} \approx 0.402$.

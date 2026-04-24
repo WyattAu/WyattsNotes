@@ -267,7 +267,7 @@ $\mathrm{range}(f) = (0, 1]$.
 
 Critical points at $x = 3$ and $x = -1$:
 
-$$f(x) = \begin{cases} -(x - 3) + -(x + 1) = -2x + 2 & \text{if } x \lt -1 \\ -(x - 3) + (x + 1) = 4 & \text{if } -1 \leqslant x \leqslant 3 \\ (x - 3) + (x + 1) = 2x - 2 & \text{if } x \gt 3 \end{cases}$$
+$$f(x) = \begin{cases} -(x - 3) + -(x + 1) = -2x + 2 & \mathrm{if } x \lt -1 \\ -(x - 3) + (x + 1) = 4 & \mathrm{if } -1 \leqslant x \leqslant 3 \\ (x - 3) + (x + 1) = 2x - 2 & \mathrm{if } x \gt 3 \end{cases}$$
 
 For $x \lt -1$: $f(x) = -2x + 2$, which is decreasing (as $x$ increases towards $-1$). As
 $x \to -1^-$: $f(x) \to 4$.
