@@ -85,11 +85,12 @@ const config: Config = {
       attributes: {
         src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
         crossorigin: 'anonymous',
-        defer: true,
+        defer: 'defer',
       },
     },
     {
       tagName: 'script',
+      attributes: {},
       innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
     },
   ],
