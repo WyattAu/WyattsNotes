@@ -206,7 +206,7 @@ manipulation.
   sine and cosine rules
 - [Vectors](geometry-and-trigonometry/vectors.md) -- vector operations, scalar and cross products,
   lines and planes
-- [Integration](Calculus/Integration.md) -- antiderivatives, definite integration, area, integration
-  techniques
+- [Integration](calculus/integration-depth) -- antiderivatives, definite integration, area,
+  integration techniques
 - [Logic (Discrete Maths)](Discrete-maths/logic.md) -- propositional logic, truth tables, proof
 - [Maths Index](maths.md) -- overview of all mathematics notes
