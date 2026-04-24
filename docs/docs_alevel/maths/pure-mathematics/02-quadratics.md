@@ -127,10 +127,12 @@ form. Every step is reversible, so the formula is necessary and sufficient: it g
 and no extraneous ones.
 
 :::info Edexcel provides the quadratic formula in the formula booklet. AQA and OCR (A) do not — you
-must memorise it. :::
+must memorise it.
+:::
 
 :::tip Before applying the formula, check whether the equation can be solved more easily by
-factorisation. Always check the discriminant first. :::
+factorisation. Always check the discriminant first.
+:::
 
 <hr />
 
@@ -272,7 +274,8 @@ quadratic across the real line.
 
 :::warning A critical error in inequalities: when multiplying or dividing both sides by a negative
 number, you must **reverse** the inequality sign. This is because multiplication by $-1$ is
-order-reversing: if $a < b$, then $-a > -b$. :::
+order-reversing: if $a < b$, then $-a > -b$.
+:::
 
 **Theorem.** If $m < 0$ and $a < b$, then $ma > mb$.
 
@@ -352,7 +355,8 @@ non-negative when $a > 0$ and always non-positive when $a < 0$, with equality on
    non-strict ($\geq$, $\leq$) conditions.
 
 :::tip When the inequality is non-strict ($\geq$ or $\leq$), include the roots of the numerator but
-**never** include points where the denominator is zero. :::
+**never** include points where the denominator is zero.
+:::
 
 <details>
 <summary>Example</summary>
@@ -408,7 +412,8 @@ to the line cutting the parabola twice.
 
 :::tip The discriminant of the resulting quadratic tells you the number of intersection points
 between a line and a parabola: $\Delta > 0$ means 2 intersections, $\Delta = 0$ means tangent,
-$\Delta < 0$ means no intersection. :::
+$\Delta < 0$ means no intersection.
+:::
 
 <hr />
 
@@ -434,7 +439,8 @@ it to the quadratic $az^2 + bz + c = 0$.
 
 :::warning After solving the reduced quadratic for $z$, you must substitute back to find $x$.
 Discard any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires
-$z \geq 0$, $z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
+$z \geq 0$, $z = p^x$ requires $z > 0$). Always verify solutions in the original equation.
+:::
 
 <details>
 <summary>Example</summary>
@@ -657,7 +663,8 @@ and squaring both sides.
 
 :::warning Squaring both sides of an equation is **not reversible** — it can introduce extraneous
 solutions. You must always substitute every candidate solution back into the **original** equation
-to verify it. :::
+to verify it.
+:::
 
 <details>
 <summary>Example</summary>

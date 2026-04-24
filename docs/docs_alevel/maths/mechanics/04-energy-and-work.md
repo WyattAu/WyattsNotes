@@ -19,7 +19,8 @@ slug: energy-and-work
 | CIE (9709) | P1, P4  | Work-energy in P1; further in P4   |
 
 :::info Energy methods are often simpler than force methods for problems where only initial and
-final states matter (no time information needed). :::
+final states matter (no time information needed).
+:::
 
 <hr />
 

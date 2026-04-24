@@ -33,7 +33,8 @@ MAX_STUDENTS = 40
 ```
 
 :::info In DSE ICT, constants are typically written in UPPER_CASE to distinguish them from
-variables. Using constants improves code readability and reduces errors. :::
+variables. Using constants improves code readability and reduces errors.
+:::
 
 ### Input and Output
 
@@ -164,7 +165,8 @@ while True:
 
 :::warning Be careful with WHILE loops to avoid infinite loops. Always ensure the loop condition
 will eventually become False. A common mistake is forgetting to update the loop variable inside the
-loop body. :::
+loop body.
+:::
 
 ### Worked Example 1
 
@@ -264,7 +266,8 @@ print("Total:", total)  # Output: Total: 30
 ```
 
 :::tip Avoid using global variables where possible. They make code harder to debug and maintain.
-Instead, pass values as parameters and return results. :::
+Instead, pass values as parameters and return results.
+:::
 
 ### Worked Example 3
 
@@ -508,7 +511,8 @@ with open("data.txt", "r") as file:
 - `"r"`: read (default)
 - `"w"`: write (overwrites existing content)
 - `"a"`: append (adds to existing content)
-- `"r+"`: read and write :::
+- `"r+"`: read and write
+:::
 
 ---
 
@@ -592,7 +596,8 @@ Normalisation is the process of organising data to minimise redundancy and depen
 - No transitive dependencies (non-key attributes do not depend on other non-key attributes)
 
 :::tip A simple check for 3NF: every non-key field must depend on the key, the whole key, and
-nothing but the key. :::
+nothing but the key.
+:::
 
 ### Worked Example 5
 
@@ -682,7 +687,8 @@ WHERE Score < 50;
 ```
 
 :::warning Be very careful with UPDATE and DELETE without a WHERE clause. They will modify or delete
-ALL records in the table. Always double-check your WHERE clause before executing. :::
+ALL records in the table. Always double-check your WHERE clause before executing.
+:::
 
 ### Data Query Language (DQL)
 

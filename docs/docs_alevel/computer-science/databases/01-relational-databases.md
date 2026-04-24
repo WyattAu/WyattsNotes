@@ -258,7 +258,8 @@ it).
   least 3NF
 - **OCR (A)** requires SQL, normalisation to BCNF (Boyce-Codd Normal Form — more advanced than other
   boards), and ER diagrams
-- **Edexcel** covers SQL fundamentals and basic normalisation :::
+- **Edexcel** covers SQL fundamentals and basic normalisation
+:::
 
 <hr />
 

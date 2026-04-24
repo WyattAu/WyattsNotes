@@ -48,7 +48,8 @@ pending_ undefined symbols, order matters. If `LibA` depends on `LibB`, `LibA` m
 **before** `LibB` in the linker command.
 
 - Correct: `clang++ main.o -lA -lB`
-- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined). :::
+- Incorrect: `clang++ main.o -lB -lA` (Linker fails: Symbols in A are undefined).
+:::
 
 ### Weak vs. Strong vs. Common Symbols
 
@@ -739,7 +740,8 @@ does not require modifying the original source code.
 
 :::warning `--wrap` operates at the symbol level, not the function level. If `malloc` is inlined by
 the compiler, the wrapper will not intercept the inlined call. Use `-fno-inline` on the wrapping TU
-or compile the wrapped TU separately without LTO. :::
+or compile the wrapped TU separately without LTO.
+:::
 
 ## See Also
 

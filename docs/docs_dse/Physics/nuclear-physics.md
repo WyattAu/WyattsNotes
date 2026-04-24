@@ -69,7 +69,8 @@ Examples:
 - Isotones: $\prescript{14}{}{6}\mathrm{C}$ and $\prescript{15}{}{7}\mathrm{N}$ (both have $N = 8$)
 
 :::info In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
-reactions can distinguish between isotopes of the same element. :::
+reactions can distinguish between isotopes of the same element.
+:::
 
 ### Nuclear Forces
 
@@ -209,7 +210,8 @@ Every nuclear decay must satisfy:
 
 :::warning A common mistake is forgetting to include the neutrino or antineutrino in beta decay
 equations. While DSE exams sometimes omit them for simplicity, always check whether the question
-requires them. Also, ensure $A$ and $Z$ balance on both sides of every decay equation. :::
+requires them. Also, ensure $A$ and $Z$ balance on both sides of every decay equation.
+:::
 
 ---
 
@@ -315,7 +317,8 @@ $$t_{1/2} = \frac{\ln 2}{|\mathrm{slope}|}$$
 
 :::info In DSE exams, half-life determination from graphs is a frequent question. For a log-linear
 plot, remember the slope is negative: $|\mathrm{slope}| = \lambda$. Always check the axes carefully
--- count rate is proportional to activity but is lower due to detector efficiency. :::
+-- count rate is proportional to activity but is lower due to detector efficiency.
+:::
 
 ### Relationship Between Activity and Mass
 
@@ -335,7 +338,8 @@ because:
 
 - The detector only captures a fraction of emitted radiation (solid angle)
 - Not all radiation reaches the detector (absorption by air, source holder)
-- The detector has less than 100% efficiency :::
+- The detector has less than 100% efficiency
+:::
 
 ---
 
@@ -543,7 +547,8 @@ $$Q = [m(\prescript{2}{}{1}\mathrm{H}) + m(\prescript{3}{}{1}\mathrm{H}) - m(\pr
 
 :::info In DSE calculations, always convert masses to the same units (preferably u) before computing
 the Q-value. Use $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$ for the energy conversion. Remember that
-the Q-value is shared among all products as kinetic energy (and possibly photons). :::
+the Q-value is shared among all products as kinetic energy (and possibly photons).
+:::
 
 ---
 
@@ -658,7 +663,8 @@ semiconductor material (e.g., silicon or germanium).
 
 :::info In DSE exams, the GM tube is the most important detector. Know its construction, operation
 principle, dead time, and limitations. Be prepared to explain why a GM tube cannot distinguish
-between alpha and beta radiation. :::
+between alpha and beta radiation.
+:::
 
 ---
 
@@ -758,7 +764,8 @@ Where $\mu$ is the linear attenuation coefficient.
 :::warning Never use lead shielding for beta radiation. High-Z materials like lead produce
 bremsstrahlung (breaking radiation) when beta particles decelerate rapidly, creating X-rays that are
 more penetrating than the original beta particles. Use aluminium or perspex for beta shielding
-instead. :::
+instead.
+:::
 
 ---
 
@@ -936,7 +943,8 @@ Given a decay equation, identify the missing particle. Check:
 :::info In DSE Paper 1B, nuclear physics typically appears in structured questions requiring
 calculations and explanations. In Paper 2, it appears as multiple-choice questions testing concepts,
 definitions, and quick calculations. Practise balancing decay equations and calculating binding
-energy -- these are high-frequency topics. :::
+energy -- these are high-frequency topics.
+:::
 
 ### Key Formulae Summary
 
@@ -1074,7 +1082,8 @@ The ancient wood is approximately $19,000$ years old.
 
 :::info An alternative approach: since $\frac{A}{A_0} = 0.1 = \frac{1}{10}$, we need to find how
 many half-lives correspond to this fraction. $2^n = 10$ gives $n = \frac{\ln 10}{\ln 2} = 3.32$
-half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods give the same result. :::
+half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods give the same result.
+:::
 
 ### Worked Example 5: Nuclear Fission Energy
 
@@ -1265,7 +1274,8 @@ Where $m(\prescript{1}{}{1}\mathrm{H})$ is the atomic mass of hydrogen (proton +
 :::warning In DSE exams, always read the question carefully to determine whether nuclear masses or
 atomic masses are provided. Mixing the two conventions will lead to incorrect results. When in
 doubt, use atomic masses (the more common convention in exam questions) and note that the electron
-masses approximately cancel. :::
+masses approximately cancel.
+:::
 
 ### Mistake 8: Assuming All Radiation Is Equally Harmful
 

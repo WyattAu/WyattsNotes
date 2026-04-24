@@ -371,7 +371,8 @@ DELETE FROM Student WHERE studentID = 2;
 ```
 
 :::warning DELETE FROM Student without WHERE deletes all rows but keeps the table structure. DROP
-TABLE Student deletes both the data and the table structure. Be certain which one you intend. :::
+TABLE Student deletes both the data and the table structure. Be certain which one you intend.
+:::
 
 ### Queries: SELECT
 

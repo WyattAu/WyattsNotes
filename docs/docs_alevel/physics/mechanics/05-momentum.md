@@ -390,7 +390,8 @@ The parallel component is unchanged because the wall exerts no force parallel to
 $u$ and rebounding with the normal component reduced by factor $e$: the impulse is
 $J = m(1+e)u\cos\alpha$ perpendicular to the wall, and the rebound angle $\beta$ satisfies
 $\tan\beta = \frac{u\sin\alpha}{eu\cos\alpha} = \frac{\tan\alpha}{e}$, which is greater than
-$\alpha$ when $e \lt 1$. :::
+$\alpha$ when $e \lt 1$.
+:::
 
 <details>
 <summary>Example: Ball Hitting a Wall at an Angle</summary>
@@ -456,7 +457,8 @@ relative speed is unchanged -- the bodies bounce off each other just as fast as 
 :::warning Common Pitfall The coefficient of restitution applies along the **line of centres** (the
 line joining the centres of the two bodies at the moment of impact). In oblique collisions, only the
 components along this line are used in the restitution equation. The perpendicular components are
-governed by the smoothness of the surfaces. :::
+governed by the smoothness of the surfaces.
+:::
 
 ## 9. Bouncing Ball: Proof that $e = \sqrt{h'/h}$
 
@@ -485,7 +487,8 @@ $\square$
 :::tip Exam Technique This result provides a quick experimental method to determine $e$: drop a ball
 from a known height, measure the rebound height, and compute $e = \sqrt{h'/h}$. This is often tested
 in practical exams. For successive bounces, the heights form a geometric sequence:
-$h,\ e^2h,\ e^4h,\ \ldots$ :::
+$h,\ e^2h,\ e^4h,\ \ldots$
+:::
 
 ## 10. Explosions and Rocket Propulsion
 
@@ -549,7 +552,8 @@ without reducing $m_0$.
 extension material. Edexcel CP2: Explosions appear in the momentum topic; the rocket equation is not
 explicitly required but may appear in context. OCR (A): Explosions are core; rocket propulsion is
 stretch material. CIE P2: Explosions are required; the rocket equation occasionally appears as a
-challenging problem. :::
+challenging problem.
+:::
 
 ## Further Problems
 

@@ -54,7 +54,8 @@ A mass spectrometer separates ions based on their mass-to-charge ratio ($m/z$). 
 4. **Detection:** Ions hit a detector, producing a signal proportional to abundance
 
 :::info In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
-relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass. :::
+relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass.
+:::
 
 ---
 
@@ -79,7 +80,8 @@ $$1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6
 
 :::warning Note that $4s$ fills before $3d$, but $3d$ loses electrons before $4s$ when forming
 cations. This is because the $4s$ orbital is at a higher energy than $3d$ once electrons are in the
-$3d$ subshell. :::
+$3d$ subshell.
+:::
 
 ### Pauli Exclusion Principle
 
@@ -109,7 +111,8 @@ For transition metals, use the noble gas core notation:
 
 :::tip Exceptions to remember: Cr is $4s^1\, 3d^5$ (not $4s^2\, 3d^4$) and Cu is $4s^1\, 3d^{10}$
 (not $4s^2\, 3d^9$). These arise because half-filled and fully-filled $d$ subshells have extra
-stability. :::
+stability.
+:::
 
 ---
 
@@ -261,7 +264,8 @@ possible.
 | 6 bonding pairs   | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                    |
 
 :::info Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
-the nucleus. This reduces bond angles from the ideal values. :::
+the nucleus. This reduces bond angles from the ideal values.
+:::
 
 ### Worked Example 5
 
@@ -523,7 +527,8 @@ $$\Delta H = (1652 + 996) - (1490 + 1852) = 2648 - 3342 = -694 \mathrm{ kJ/mol}$
 
 :::warning Bond enthalpies are average values. For precise calculations, use standard enthalpy of
 formation data instead. Bond enthalpy calculations are less accurate for reactions involving liquids
-or solids because they only account for gaseous state bonds. :::
+or solids because they only account for gaseous state bonds.
+:::
 
 ---
 
@@ -765,7 +770,8 @@ $$\mathrm{Bond order} = \frac{1}{2}(\mathrm{bonding electrons} - \mathrm{antibon
 - Bond order = 0: no bond (molecule does not exist, e.g., $\mathrm{He}_2$)
 
 :::info Molecular orbital theory explains why $\mathrm{O}_2$ is paramagnetic (has unpaired electrons
-in antibonding orbitals), which cannot be explained by simple Lewis structures. :::
+in antibonding orbitals), which cannot be explained by simple Lewis structures.
+:::
 
 ### Intermolecular Forces in Detail
 

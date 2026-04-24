@@ -46,7 +46,8 @@ description: Comprehensive guide to logic for the International Baccalaureate.
 - Err1 Identifying errors in purported proofs.
 - Err2 Be aware of common mathematical errors in purported proofs; for example,
 - claiming 'if $ab = ac$, then $b = c$' or assuming 'if $\sin A = \sin B$, then $A = B$'
-- neither of which are valid deductions. :::
+- neither of which are valid deductions.
+:::
 
 # The Logic Of Arguments
 

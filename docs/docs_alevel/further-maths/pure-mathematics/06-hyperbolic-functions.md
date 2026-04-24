@@ -31,7 +31,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 | CIE (9231) | P2      | Full coverage including logarithmic forms of inverses      |
 
 :::info The formula booklet lists hyperbolic identities and the logarithmic forms of the inverse
-hyperbolic functions. CIE requires the derivation of these logarithmic forms. :::
+hyperbolic functions. CIE requires the derivation of these logarithmic forms.
+:::
 
 <hr />
 
@@ -148,7 +149,8 @@ $\cos 2x = \cos^2 x - \sin^2 x \xrightarrow{\mathrm{Osborn}} \cosh 2x = \cosh^2 
 $\sinh^2$ term flips sign, turning $-$ into $+$.)
 
 :::tip Osborn's rule is a useful mnemonic but should not replace understanding. Always verify
-identities by direct computation from the exponential definitions when in doubt. :::
+identities by direct computation from the exponential definitions when in doubt.
+:::
 
 <hr />
 
@@ -300,7 +302,8 @@ $$\int \tanh x\,dx = \ln(\cosh x) + C$$
 
 :::tip When you encounter an integral of the form $\dfrac{1}{\sqrt{x^2+a^2}}$ or
 $\dfrac{1}{\sqrt{x^2-a^2}}$, the inverse hyperbolic functions provide the most elegant answer. CIE
-and Edexcel FP2 frequently test these. :::
+and Edexcel FP2 frequently test these.
+:::
 
 <hr />
 

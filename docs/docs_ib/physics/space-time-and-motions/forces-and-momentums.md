@@ -154,7 +154,8 @@ The measure of a solid body's resistance to [angular acceleration](#angular-acce
 
 :::warning The IB syllabus only consider the moment of inertia of rigid body with approximated
 geometry as a system of discrete particles, as well as moment of inertia that is determined by
-closed-form expressions. :::
+closed-form expressions.
+:::
 
 ### Angular Momentum
 

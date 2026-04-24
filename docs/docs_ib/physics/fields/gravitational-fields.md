@@ -127,10 +127,12 @@ $$
 \end{aligned}
 $$
 
-This describes the force in the inverse direction as the displacement vector from $m_1$ :::
+This describes the force in the inverse direction as the displacement vector from $m_1$
+:::
 
 :::warning IB extends Newton's Law of Universal Gravitation to include spherical masses with uniform
-density by assuming to be point mass. :::
+density by assuming to be point mass.
+:::
 
 ## Gravitational Field
 
@@ -315,7 +317,8 @@ center of a body with significantly more mass.
 
 :::warning In IB, only the cases of orbiting a body with significantly more mass is present. The IB
 also assume all orbits to be circular instead of elliptic as stated by
-[Keplar's First Law](#first-law). :::
+[Keplar's First Law](#first-law).
+:::
 
 In a stable circular orbit, equivalent force in the opposite direction is required to balance the
 [centripetal force](../space-time-and-motions/forces-and-momentums.md#centripetal-force) $F_c$ of
@@ -393,7 +396,8 @@ $$
 $$
 
 :::info Since $\frac{4\pi^2}{GM}$ is constant for a given central body, this reduces to
-$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$. :::
+$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$.
+:::
 
 ## Gravitational Field Inside a Spherical Shell
 
@@ -410,7 +414,8 @@ elements. A near-side element pulls more strongly (inverse-square law), but the 
 far-side element has more mass (larger solid angle). These effects cancel exactly.
 
 :::warning The IB requires only qualitative understanding of the shell theorem. A full proof
-requires integration over the spherical shell. :::
+requires integration over the spherical shell.
+:::
 
 ### Field Inside a Solid Sphere
 

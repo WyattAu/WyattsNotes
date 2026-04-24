@@ -61,7 +61,8 @@ By definition, $\Delta H_f^\circ$ of any element in its standard state = 0.
 $$\Delta H_f^\circ(\mathrm{C}_{(s,\mathrm{ graphite})}) = 0 \quad ; \quad \Delta H_f^\circ(\mathrm{H}_{2(g)}) = 0$$
 
 :::warning $\Delta H_f^\circ$ always refers to 1 mole of the compound formed. The definition
-involves formation FROM elements, not the other way around. :::
+involves formation FROM elements, not the other way around.
+:::
 
 ### Standard Enthalpy of Combustion ($\Delta H_c^\circ$)
 
@@ -233,7 +234,8 @@ $$\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$$
 
 :::warning Bond enthalpies give only **average** values. For reactions involving the gas phase, they
 give good estimates. For reactions involving liquids or aqueous solutions, additional energy changes
-(vaporisation, dissolution) are not accounted for, so the estimate is less accurate. :::
+(vaporisation, dissolution) are not accounted for, so the estimate is less accurate.
+:::
 
 **Worked example 4:** Estimate $\Delta H$ for the combustion of methane using bond enthalpies.
 
@@ -417,7 +419,8 @@ $$-411 = 377 + \Delta H_{\mathrm{latt}}$$
 $$\Delta H_{\mathrm{latt}} = -411 - 377 = -788 \mathrm{ kJ/mol}$$
 
 :::info Lattice energy is always exothermic (negative) because energy is released when oppositely
-charged ions come together. :::
+charged ions come together.
+:::
 
 **Worked example 8:** Calculate the lattice energy of $\mathrm{MgO}$ given:
 
@@ -502,7 +505,8 @@ Where:
 - $\Delta S$ = entropy change (kJ mol$^{-1}$ K$^{-1}$)
 
 :::warning Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
-K$^{-1}$, convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000. :::
+K$^{-1}$, convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000.
+:::
 
 ### Feasibility of Reactions
 

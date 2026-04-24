@@ -46,7 +46,8 @@ matured.
 :::info For Paper 3 essays, the ideological dimension should not be treated as the sole cause of the
 Cold War. Instead, it functioned as a lens through which both sides interpreted each other's
 actions, often amplifying mistrust and escalating tensions beyond what objective strategic interests
-alone would have produced. :::
+alone would have produced.
+:::
 
 The ideological clash manifested in diametrically opposed visions of the post-war international
 order. The United States favoured an open, multilateral economic system based on free trade and
@@ -139,7 +140,8 @@ Kennan argued that Soviet behaviour was driven by a combination of Marxist-Lenin
 traditional Russian insecurity, and that the Soviet threat could be managed through "firm and
 vigilant containment of Russian expansive tendencies." Kennan later argued that he had advocated
 primarily for political and economic containment, not the militarised version that American policy
-ultimately adopted. :::
+ultimately adopted.
+:::
 
 ### 1.4 The Marshall Plan (1947)
 

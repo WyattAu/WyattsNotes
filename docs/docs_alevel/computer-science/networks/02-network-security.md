@@ -231,7 +231,8 @@ traffic based on predetermined security rules.
   specific protocol details
 - **OCR (A)** requires understanding of encryption, digital certificates, authentication methods,
   and network security protocols
-- **Edexcel** covers network security fundamentals including encryption and firewalls :::
+- **Edexcel** covers network security fundamentals including encryption and firewalls
+:::
 
 <hr />
 

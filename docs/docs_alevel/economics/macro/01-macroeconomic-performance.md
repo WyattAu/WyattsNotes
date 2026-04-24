@@ -51,7 +51,8 @@ adjust market prices to factor costs. $\blacksquare$
 :::warning Common Pitfall GDP counts _market transactions_. Unpaid work (household chores, volunteer
 work) is excluded. Illegal activities are also excluded (though some countries now include estimates
 of the shadow economy). This means GDP underestimates total economic activity, particularly in
-countries with large informal sectors. :::
+countries with large informal sectors.
+:::
 
 ### 1.3 Real vs Nominal GDP
 
@@ -109,7 +110,8 @@ significant debt accumulation.
 across countries. CIE (9708) may ask students to interpret GDP data from developing economies. OCR
 requires understanding of the difference between **GDP** (output within borders) and **GNI** (income
 earned by nationals, including net income from abroad). GNI is particularly relevant for countries
-like the Philippines or India, where remittances are a large share of national income. :::
+like the Philippines or India, where remittances are a large share of national income.
+:::
 
 ### 1.7 Evaluation: GDP as a Performance Indicator
 
@@ -192,7 +194,8 @@ loop.
 questions. AQA may ask for an evaluation of which measure is more accurate. CIE tends to focus on
 CPI alone but may ask about measurement issues more broadly. OCR may ask about the implications of
 using RPI for index-linked bonds — since RPI overstates inflation, bondholders receive higher
-payments, increasing government debt costs. :::
+payments, increasing government debt costs.
+:::
 
 ### 2.3 Causes of Inflation
 
@@ -258,7 +261,8 @@ remained sticky due to persistent wage growth.
 and cost-push causes of inflation using real-world data. CIE (9708) may present students with a
 data-response question featuring inflation statistics from a specific country. OCR has previously
 examined the role of supply-side shocks in causing stagflation (rising inflation with falling
-output). :::
+output).
+:::
 
 ### 2.6 Evaluation: The Costs of Inflation
 
@@ -347,7 +351,8 @@ Causes include:
 and frequently tests causes and remedies. Edexcel emphasises the role of the NMW in causing
 real-wage unemployment. CIE (9708) uses the term "demand-deficient" rather than "cyclical" and may
 ask about hysteresis. OCR has examined the relationship between structural unemployment and regional
-policy in the UK. :::
+policy in the UK.
+:::
 
 ### 3.3 Costs of Unemployment
 
@@ -390,7 +395,8 @@ policy response:
 data-response questions. CIE (9708) may ask students to evaluate the effectiveness of government
 intervention in the labour market. OCR has examined the distinction between unemployment and
 economic inactivity, which is highly relevant to the COVID case (furloughed workers were technically
-employed, not unemployed or inactive). :::
+employed, not unemployed or inactive).
+:::
 
 ### 3.5 Evaluation: Unemployment Statistics
 
@@ -457,7 +463,8 @@ financial accounts (borrowing from abroad or selling assets).
 :::info Board-Specific Note AQA and Edexcel both require students to calculate the current account
 balance from data and evaluate whether a deficit is a problem. CIE (9708) may ask about the
 relationship between the current account and the exchange rate. OCR has examined the Marshall-Lerner
-condition and the J-curve effect in the context of current account adjustment. :::
+condition and the J-curve effect in the context of current account adjustment.
+:::
 
 ### 4.3 Real-World Application: The UK's Persistent Current Account Deficit
 
@@ -561,7 +568,8 @@ hysteresis and how it relates to the Phillips curve (if unemployment rises above
 may rise, shifting the LRPC right). CIE (9708) may present a data-response question showing
 inflation and unemployment data and ask students to interpret it using Phillips curve theory. OCR
 has examined the role of supply shocks in causing stagflation and the breakdown of the simple
-Phillips curve relationship. :::
+Phillips curve relationship.
+:::
 
 ### 5.5 Evaluation: The Phillips Curve Trade-Off
 
@@ -605,7 +613,8 @@ These objectives often conflict:
 
 :::tip Exam Technique When asked about macroeconomic performance, always use data. Reference the
 most recent ONS figures for UK GDP growth, inflation rate, unemployment rate, and current account
-balance. Examiners reward application of theory to real data. :::
+balance. Examiners reward application of theory to real data.
+:::
 
 ### 6.1 Evaluation: Conflicts Between Macroeconomic Objectives
 
@@ -636,7 +645,8 @@ hand... on the other hand... however... therefore"** structure. Here is a worked
 evaluation throughout. Edexcel's Paper 3 requires evaluation of policy effectiveness. CIE (9708)
 data-response questions (Part b, 8 marks; Part c, 12 marks) require analysis and evaluation of
 extract data. OCR's Component 3 requires a 20-mark essay with a clear conclusion. All boards reward
-the use of real-world data and counterarguments. :::
+the use of real-world data and counterarguments.
+:::
 
 ## 7. Problem Set
 

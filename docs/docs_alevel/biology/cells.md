@@ -65,7 +65,8 @@ reconstruction without the need for physical sectioning.
 :::warning Common Pitfall Students often confuse magnification with resolution. Magnification is how
 much larger the image appears; resolution is the ability to distinguish two closely spaced objects
 as separate. Increasing magnification without increasing resolution produces a larger but blurry
-image -- no additional detail is revealed. :::
+image -- no additional detail is revealed.
+:::
 
 ### 1.3 Cell Fractionation
 
@@ -113,7 +114,8 @@ animals, plants, fungi, and protists.
 :::warning Common Pitfall The "S" in ribosome sizes (70S, 80S) stands for Svedberg units, which
 measure sedimentation rate during centrifugation -- not molecular weight. Svedberg units are not
 additive: $50\mathrm{S} + 30\mathrm{S} = 70\mathrm{S}$ is a coincidence of sedimentation rates, not
-molecular masses. :::
+molecular masses.
+:::
 
 ### 2.2 Prokaryotic Cell Structure
 
@@ -199,7 +201,8 @@ enzymes (lipases, proteases, nucleases) optimised for pH $\approx 5$. They funct
 
 :::warning Common Pitfall Plant cells do have lysosomes, though they are sometimes called vacuoles
 with hydrolytic activity. However, plant cells also have a large permanent vacuole, which is a
-distinct structure with different functions (turgor, storage, waste isolation). :::
+distinct structure with different functions (turgor, storage, waste isolation).
+:::
 
 ### 3.6 Other Organelles
 
@@ -338,7 +341,8 @@ reproduction.
 
 :::warning Common Pitfall Students often write that chromosomes "replicate" during mitosis.
 Replication occurs during the S phase of interphase, _before_ mitosis begins. By the time mitosis
-starts, each chromosome already consists of two identical sister chromatids. :::
+starts, each chromosome already consists of two identical sister chromatids.
+:::
 
 ### 6.2 The Cell Cycle
 

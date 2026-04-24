@@ -124,14 +124,16 @@ longer wavelengths.
 
 :::warning Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
 propagate through vacuum via oscillating electric and magnetic fields. Sound waves are longitudinal
-and require a medium. :::
+and require a medium.
+:::
 
 :::tip Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
 representing air molecules. Show compressions (closely spaced) and rarefactions (widely spaced).
 Label both.
 
 Alternatively, plot displacement vs position — the graph looks sinusoidal, but positive displacement
-means particles moved to the right (in the direction of propagation), not upward. :::
+means particles moved to the right (in the direction of propagation), not upward.
+:::
 
 ## 3. Polarisation
 
@@ -170,7 +172,8 @@ of incidence:
 $$\tan\theta_B = n_2/n_1$$
 
 :::info Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
-Edexcel covers qualitative polarisation. :::
+Edexcel covers qualitative polarisation.
+:::
 
 ### Polarisation in Real Life
 
@@ -212,7 +215,8 @@ electron transitions), X-rays (electron deceleration), gamma rays (nuclear trans
 
 :::tip Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
 **U**ltraviolet, **X**-ray, **G**amma. Mnemonic: "**R**eal **M**en **I**n **V**ietnam **U**se
-**X**-ray **G**uns." :::
+**X**-ray **G**uns."
+:::
 
 ## 5. Intensity and Amplitude
 
@@ -322,7 +326,8 @@ $$\Delta\phi = \frac{2\pi}{\lambda}\Delta x$$
 
 :::tip Exam Technique Phase difference questions often require you to identify two points on a wave
 graph and calculate $\Delta x$. Then use $\Delta\phi = 360° \times \Delta x / \lambda$ (using
-degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units. :::
+degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units.
+:::
 
 ### Phase Difference from Wave Equations
 

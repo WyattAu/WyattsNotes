@@ -32,7 +32,8 @@ Each function that may participate in exception handling has two tables embedded
 | **Unwind table**                       | Lists every call site in the function so the unwinder can determine whether the function has a cleanup (destructor call) at each point. |
 
 :::info On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` blocks when no
-exception is thrown. The tables are consulted only during unwinding. :::
+exception is thrown. The tables are consulted only during unwinding.
+:::
 
 ### Alternative Exception Models
 
@@ -242,7 +243,8 @@ runtime overhead compared to equivalent code without exception handling.
 $\square$
 
 :::tip If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
-errors. This confirms that exception-neutral code has zero overhead in the normal path. :::
+errors. This confirms that exception-neutral code has zero overhead in the normal path.
+:::
 
 ## 1.5 Performance Comparison: Throw/Catch vs Error Codes
 
@@ -391,7 +393,8 @@ int main() {
 ```
 
 :::warning Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
-static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception. :::
+static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception.
+:::
 
 ## 1.7 Cross-Thread Exception Propagation with `std::exception_ptr`
 

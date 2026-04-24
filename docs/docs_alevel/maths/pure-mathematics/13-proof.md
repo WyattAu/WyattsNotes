@@ -19,7 +19,8 @@ slug: proof
 | CIE (9709) | P1, P2, P3 | Various methods across papers                                 |
 
 :::info Proof questions appear on every paper. You must be able to identify the appropriate proof
-method and execute it clearly, with every step justified. :::
+method and execute it clearly, with every step justified.
+:::
 
 <hr />
 
@@ -146,7 +147,8 @@ So not all primes less than 10 are odd. The claim is **false**. The counterexamp
 All five cases confirmed. $\blacksquare$
 
 :::warning Proof by exhaustion is only valid when the number of cases is genuinely finite and
-manageable. You cannot use exhaustion for "all integers" or "all real numbers." :::
+manageable. You cannot use exhaustion for "all integers" or "all real numbers."
+:::
 
 <hr />
 
@@ -182,7 +184,8 @@ To prove a statement $P(n)$ for all integers $n \geq n_0$:
 :::info The principle of mathematical induction is equivalent to the well-ordering principle: every
 non-empty set of positive integers has a least element. If $P(n_0)$ is true but some $P(m)$ with
 $m \gt{} n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least element,
-contradicting the inductive step. :::
+contradicting the inductive step.
+:::
 
 ### 5.2 Sum of the first $n$ integers
 

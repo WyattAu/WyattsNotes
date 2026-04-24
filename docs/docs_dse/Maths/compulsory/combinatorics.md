@@ -215,7 +215,8 @@ $$
 \end{aligned}
 $$
 
-This is just inclusion-exclusion divided by $|S|$. :::
+This is just inclusion-exclusion divided by $|S|$.
+:::
 
 <details>
 <summary>Examples</summary>
@@ -300,7 +301,8 @@ $$
 :::warning Only apply the division by 2 when the problem explicitly states that reflections are
 equivalent. For problems involving people seated at a round table, clockwise and anticlockwise
 orderings are distinct -- a seating where person $A$ has person $B$ on their left is different from
-person $B$ on their right. :::
+person $B$ on their right.
+:::
 
 <details>
 <summary>Examples</summary>

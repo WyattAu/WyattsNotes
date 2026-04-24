@@ -82,7 +82,8 @@ proteins, and PCR-based methods to quantify allele variation.
 :::warning Common Pitfall Students often equate species richness with species diversity. Richness is
 only one component. Simpson's Index incorporates both richness and evenness, giving a more accurate
 measure of diversity. A community dominated by one species with many rare species has low diversity
-despite high richness. :::
+despite high richness.
+:::
 
 ### 1.5 Sampling Methods
 
@@ -158,7 +159,8 @@ is preferred.
 structures** share a common evolutionary origin (e.g., the pentadactyl limb in mammals, birds,
 reptiles, and amphibians). **Analogous structures** perform a similar function but have different
 evolutionary origins (e.g., the wings of insects and birds). Only homologous structures are
-informative for cladistics. :::
+informative for cladistics.
+:::
 
 ## 3. Evolution
 
@@ -295,7 +297,8 @@ suggesting the population is approximately in equilibrium.
 :::warning Common Pitfall Students sometimes think Hardy-Weinberg equilibrium means no evolution is
 occurring. It describes the theoretical conditions under which allele frequencies remain constant.
 If a population deviates from H-W, this is evidence that evolutionary forces (selection, drift, gene
-flow, mutation, non-random mating) are acting. :::
+flow, mutation, non-random mating) are acting.
+:::
 
 ## Practice Problems
 

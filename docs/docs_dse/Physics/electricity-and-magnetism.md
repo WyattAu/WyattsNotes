@@ -52,7 +52,8 @@ removed. The conductor is left with a charge opposite to that of the inducing ob
 
 :::info In induction, the total charge of the isolated conductor remains zero during the process.
 The earth connection allows charge to flow, so when the earth is disconnected, the conductor retains
-a net charge. :::
+a net charge.
+:::
 
 ### Coulomb's Law
 
@@ -268,7 +269,8 @@ increases.
 
 :::info NTC thermistors are commonly used in temperature sensing circuits. As the temperature rises,
 the resistance falls, causing more current to flow, which can be measured or used to trigger a
-circuit. :::
+circuit.
+:::
 
 ### Light-Dependent Resistor (LDR)
 
@@ -341,7 +343,8 @@ For two resistors in parallel:
 $$R_{\mathrm{total}} = \frac{R_1 R_2}{R_1 + R_2}$$
 
 :::info In a parallel circuit, the total resistance is always less than the smallest individual
-resistance. Adding more parallel branches always decreases the total resistance. :::
+resistance. Adding more parallel branches always decreases the total resistance.
+:::
 
 ### Combined Series and Parallel Circuits
 
@@ -647,7 +650,8 @@ opposes the change in flux that produced it.
 2. If flux is increasing, the induced current creates a field to oppose the increase (opposing the
    external field)
 3. If flux is decreasing, the induced current creates a field to oppose the decrease (reinforcing
-   the external field) :::
+   the external field)
+:::
 
 ### AC Generator
 
@@ -708,7 +712,8 @@ Real transformers have losses due to:
 
 :::tip Transformers only work with AC. A changing current in the primary is needed to produce a
 changing magnetic flux, which induces an EMF in the secondary. DC produces a steady field and no
-induced EMF. :::
+induced EMF.
+:::
 
 ### Worked Example 9
 

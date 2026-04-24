@@ -165,7 +165,8 @@ int main() {
 
 :::info The C++ standard guarantees amortized $O(1)$ `push_back` [N4950 §22.3.11.5 Table 80], but
 the exact growth factor is implementation-defined. A factor of 2 is common, and some implementations
-(e.g., Facebook's folly) use 1.5 to reduce peak memory usage. :::
+(e.g., Facebook's folly) use 1.5 to reduce peak memory usage.
+:::
 
 ### Iterator, Pointer, and Reference Invalidation Rules
 
@@ -232,7 +233,8 @@ int main() {
 :::warning After any operation that may cause reallocation (e.g., `push_back` when
 `size() == capacity()`), **all** iterators, pointers, and references into the vector are
 invalidated. Dereferencing them is undefined behavior. Use `reserve()` proactively if you need
-stable iterators. :::
+stable iterators.
+:::
 
 ### `std::deque`: Segment-Based Memory, No Reallocation
 
@@ -303,7 +305,8 @@ int main() {
 
 :::tip Use `std::deque` when you need efficient insertion at both ends. Use `std::vector` when you
 only need efficient insertion at the end, as `std::vector` has better cache locality and lower
-memory overhead per element. :::
+memory overhead per element.
+:::
 
 Invalidation rules for `std::deque` differ from `std::vector` [N4950 §22.3.8.4 Table 77]:
 
@@ -378,7 +381,8 @@ int main() {
 
 :::info `std::list::splice` is the only standard container operation that transfers ownership of
 nodes between containers. The spliced elements' iterators, pointers, and references remain valid and
-now refer to the same elements within the destination container [N4950 §22.3.9.5]. :::
+now refer to the same elements within the destination container [N4950 §22.3.9.5].
+:::
 
 ### `std::array`: Fixed-Size, Zero Overhead
 
@@ -510,7 +514,8 @@ satisfy the container requirements in [N4950 §22.2] because its elements are no
 :::warning `std::vector&lt;bool>` is widely regarded as a design mistake. Scott Meyers' "Effective
 STL" (Item 18) recommends using `std::deque&lt;bool>` or `boost::dynamic_bitset` instead. For new
 code, consider `std::vector&lt;uint8_t>` if you need addressable elements, or a dedicated bitset
-library if you need compact storage. :::
+library if you need compact storage.
+:::
 
 ### `std::vector` Exception Safety: Strong Guarantee for `push_back`
 

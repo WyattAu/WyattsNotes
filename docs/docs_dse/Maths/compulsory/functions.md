@@ -383,7 +383,8 @@ first, then the vertical scaling, then the vertical shift.
 
 :::info Horizontal transformations operate on $x$ **before** the function is evaluated; vertical
 transformations operate on $f(x)$ **after** the function is evaluated. This is why the horizontal
-shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right). :::
+shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
+:::
 
 <details>
 <summary>Examples</summary>
@@ -533,7 +534,8 @@ To solve $\frac{f(x)}{g(x)} \gt 0$ (or $\lt$, $\geq$, $\leq$):
 
 :::warning **Critical pitfall:** When multiplying both sides of an inequality by an expression
 involving $x$, the direction of the inequality flips if that expression is negative. Instead of
-multiplying through, use a sign chart. :::
+multiplying through, use a sign chart.
+:::
 
 <details>
 <summary>Examples</summary>

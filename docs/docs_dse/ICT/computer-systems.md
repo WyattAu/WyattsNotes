@@ -35,7 +35,8 @@ sub-components:
 | **Status Register (Flags)**       | Stores flags such as Zero, Carry, Negative, Overflow from ALU operations |
 
 :::info Registers are the fastest memory in a computer system — orders of magnitude faster than RAM.
-A typical CPU has a small number of general-purpose registers (8--32 in most architectures). :::
+A typical CPU has a small number of general-purpose registers (8--32 in most architectures).
+:::
 
 ### Memory Types
 
@@ -66,7 +67,8 @@ A typical CPU has a small number of general-purpose registers (8--32 in most arc
 
 :::warning[Exam Tip] When comparing storage, consider all five criteria: speed, capacity, cost per
 GB, volatility, and durability. HDDs are cheaper per GB but slower and more fragile (moving parts).
-SSDs are faster with no moving parts but more expensive per GB. :::
+SSDs are faster with no moving parts but more expensive per GB.
+:::
 
 ---
 
@@ -189,7 +191,8 @@ memory.
 :::warning[Exam Tip] The DSE syllabus focuses on Von Neumann. Know why it has a bottleneck (CPU
 waits for memory) and how Harvard architecture addresses this. Most modern CPUs use a modified
 Harvard architecture internally (separate L1 caches for instructions and data) while presenting a
-Von Neumann model externally. :::
+Von Neumann model externally.
+:::
 
 ---
 
@@ -360,7 +363,8 @@ Each decimal digit (0--9) is represented by its 4-bit binary equivalent.
 :::warning[Exam Tip] BCD is different from pure binary. The decimal number 15 in pure binary is
 `1111`, but in BCD it is `0001 0101` (each decimal digit encoded separately). BCD wastes some bit
 patterns (1010--1111 are invalid) but is useful for displays and financial calculations where each
-decimal digit must be preserved exactly. :::
+decimal digit must be preserved exactly.
+:::
 
 ### Conversions
 
@@ -427,7 +431,8 @@ $185_{10} = 000110000101_{BCD}$
 
 :::info Key difference: ASCII uses 1 byte per character and covers only English and basic symbols.
 Unicode covers all writing systems but uses more storage. UTF-8 is the most widely used encoding on
-the internet. :::
+the internet.
+:::
 
 ### Image Representation
 

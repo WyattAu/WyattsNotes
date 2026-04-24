@@ -240,7 +240,8 @@ classical wave description remains valid and powerful.
 
 :::info Board Note The derivation of $c = 1/\sqrt{\mu_0\varepsilon_0}$ is required by Edexcel and
 CIE. AQA and OCR (A) expect you to know the result and its significance but may not require the full
-derivation. :::
+derivation.
+:::
 
 ## 5. Faraday's Law — Applications and Lenz's Law Intuition
 

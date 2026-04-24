@@ -12,7 +12,8 @@ slug: diagnostic-test
 ## A Level Physics — Diagnostic Test
 
 :::info Instructions This diagnostic test covers the entire A Level Physics syllabus. Attempt all 45
-questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes. :::
+questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes.
+:::
 
 ## Section A: Mechanics (Questions 1–5)
 

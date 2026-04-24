@@ -806,4 +806,5 @@ Before submitting any essay, perform a structural audit:
 [Streetcar Named Desire -- Close Reading and Analysis](streetcar-named-desire-analysis.md),
 [Chronicle of a Death Foretold](chronicle-of-a-death-foretold.md),
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md),
-and the [comparative analysis](comparitives/chronicle-streetcar.md). :::
+and the [comparative analysis](comparitives/chronicle-streetcar.md).
+:::

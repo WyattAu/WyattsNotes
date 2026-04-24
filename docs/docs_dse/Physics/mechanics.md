@@ -48,7 +48,8 @@ Where:
 - $t$ = time
 
 :::info These equations are only valid for **uniform acceleration**. When acceleration varies,
-calculus or graphical methods must be used. :::
+calculus or graphical methods must be used.
+:::
 
 ### Worked Example 1
 
@@ -95,7 +96,8 @@ For a velocity-time graph:
 - A straight line indicates uniform acceleration
 
 :::tip The area under a velocity-time graph gives displacement. For non-linear graphs, use counting
-squares or integration. :::
+squares or integration.
+:::
 
 ### Free Fall
 
@@ -107,7 +109,8 @@ $$g \approx 9.81 \mathrm{ m/s}^2$$
 The acceleration is **downward** regardless of whether the object is moving up or down.
 
 :::warning Air resistance is neglected in ideal free-fall problems unless the question explicitly
-states otherwise. :::
+states otherwise.
+:::
 
 ### Worked Example 3
 
@@ -147,7 +150,8 @@ Time of flight:
 $$T = \frac{2u\sin\theta}{g}$$
 
 :::info In projectile motion, the horizontal and vertical motions are **independent** of each other.
-They share only the common variable $t$ (time). :::
+They share only the common variable $t$ (time).
+:::
 
 ### Worked Example 4
 
@@ -197,7 +201,8 @@ force on body `A`.
 $$F_{AB} = -F_{BA}$$
 
 :::warning Newton's third law pairs act on **different** bodies. Never add action-reaction pairs
-together as they do not act on the same object. :::
+together as they do not act on the same object.
+:::
 
 ### Types of Forces
 
@@ -330,7 +335,8 @@ Or equivalently:
 $$E_{k1} + E_{p1} = E_{k2} + E_{p2} + W_{\mathrm{lost to friction}}$$
 
 :::info When applying conservation of energy, always identify all forms of energy at each point in
-the motion. :::
+the motion.
+:::
 
 ### Worked Example 7
 
@@ -433,7 +439,8 @@ magnitude of the average force is $1500 \mathrm{ N}$.
 energy loss).
 
 :::info Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
-energy is only conserved in perfectly elastic collisions. :::
+energy is only conserved in perfectly elastic collisions.
+:::
 
 ### Worked Example 10
 
@@ -523,7 +530,8 @@ $$F_c = \frac{mv^2}{r} = m\omega^2 r$$
 
 :::warning Centripetal force is **not** a new force. It is the name given to the resultant force
 directed towards the centre of the circle. It is provided by gravity, tension, friction, normal
-reaction, or a combination of these. :::
+reaction, or a combination of these.
+:::
 
 ### Worked Example 12
 
@@ -608,7 +616,8 @@ $$T = \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r^3}{GM}}$$
 
 :::info Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
 remaining above the same point on the equator. They orbit at approximately $42,300 \mathrm{ km}$
-from the centre of the Earth. :::
+from the centre of the Earth.
+:::
 
 ### Worked Example 14
 
@@ -762,7 +771,8 @@ For a mass-spring system: $T = 2\pi\sqrt{\frac{m}{k}}$
 For a simple pendulum (small angle approximation): $T = 2\pi\sqrt{\frac{L}{g}}$
 
 :::info The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
-keep consistent time even as the swing gradually decreases. :::
+keep consistent time even as the swing gradually decreases.
+:::
 
 ### Worked Example 15
 

@@ -77,7 +77,8 @@ Efficiency is not constant across the load range. Typical efficiency curves show
 
 :::info When selecting a PSU, aim for your typical system load to fall within the 40--70% range of
 the PSU's rated capacity. This places you near peak efficiency while maintaining headroom for
-transient spikes. :::
+transient spikes.
+:::
 
 ### 80 PLUS Certification
 
@@ -117,7 +118,8 @@ The ATX power supply specification is maintained by Intel. Key versions include:
 
 :::info ATX 3.0/3.1 compliance is particularly important for modern high-power GPUs (RTX 4090,
 RTX 5090) that can draw extremely high transient loads. Non-ATX 3.0 units may trigger OPP during
-these transients, causing system shutdowns under load. :::
+these transients, causing system shutdowns under load.
+:::
 
 ---
 
@@ -151,7 +153,8 @@ on one rail while another hits its limit.
 
 :::info For most users, single-rail is simpler and eliminates OCP tripping as a concern. Multi-rail
 designs are preferred in enterprise and server environments where cable management and fault
-isolation are critical. The quality of the PSU matters far more than the rail configuration. :::
+isolation are critical. The quality of the PSU matters far more than the rail configuration.
+:::
 
 ### Connectors
 
@@ -168,7 +171,8 @@ isolation are critical. The quality of the PSU matters far more than the rail co
 
 :::warning Never use Molex-to-SATA adapters. SATA connectors are rated for 4.5 A, but the contact
 resistance of cheap adapters can cause excessive voltage drop and heating at the SATA end. This is a
-documented fire hazard. Use native SATA connectors or replace the PSU. :::
+documented fire hazard. Use native SATA connectors or replace the PSU.
+:::
 
 ### Modular vs Non-Modular vs Semi-Modular
 
@@ -247,7 +251,8 @@ capacitor lifespan. This is why PSU temperature rating and fan curves matter.
 
 :::info A PSU that is 10 years old may still work, but its ripple performance, hold-up time, and
 transient response have likely degraded. For high-end systems, consider replacing PSUs older than
-7--8 years, especially if they use non-Japanese capacitors. :::
+7--8 years, especially if they use non-Japanese capacitors.
+:::
 
 ### Headroom Recommendations
 
@@ -360,7 +365,8 @@ group-regulated PSUs unsuitable for modern systems where the load is almost enti
 
 :::warning Avoid any PSU that uses group regulation. Nearly all modern PC power draw is on the +12 V
 rail (CPU, GPU, fans, pumps). With group regulation, the lightly-loaded +3.3 V and +5 V rails will
-have their voltages pushed out of specification, potentially damaging connected devices. :::
+have their voltages pushed out of specification, potentially damaging connected devices.
+:::
 
 ### Active PFC vs Passive PFC
 
@@ -420,7 +426,8 @@ designs, each virtual rail has its own OCP setting. In single-rail designs, OCP 
 :::info OCP is the most common protection to cause false trips in multi-rail PSUs. If you connect
 too many GPU power cables to the same rail segment, OCP may trigger even though the total PSU
 capacity has not been exceeded. Distributing cables across different rail segments (or using a
-single-rail unit) resolves this. :::
+single-rail unit) resolves this.
+:::
 
 ### OPP (Over Power Protection)
 
@@ -452,7 +459,8 @@ that monitor each rail for sudden current surges characteristic of short circuit
 
 :::warning If your PSU repeatedly trips SCP or OCP, do not disable these protections or bypass them.
 This indicates a genuine fault — either a short circuit in a component, a damaged cable, or a
-failing PSU. Continued operation risks fire and total system destruction. :::
+failing PSU. Continued operation risks fire and total system destruction.
+:::
 
 ---
 
@@ -598,7 +606,8 @@ Changing BCLK affects multiple subsystems simultaneously:
 system. On Intel platforms, BCLK overclocking above 103--105 MHz is rarely stable because the PCIe
 and DMI buses diverge from their specifications. Use the multiplier for CPU overclocking and the
 memory ratio for RAM overclocking. Reserve BCLK adjustments for fine-tuning when the multiplier
-limits have been reached. :::
+limits have been reached.
+:::
 
 ### FCLK (Infinity Fabric)
 
@@ -677,7 +686,8 @@ more CPU subsystems (clocks, core voltage, cache) to reduce power consumption wh
 
 :::info For overclocking and stability testing, disable C-states. They introduce voltage and
 frequency transitions that can cause instability during stress tests. For daily use, enable them —
-the power savings are significant (10--40 W at idle on modern CPUs). :::
+the power savings are significant (10--40 W at idle on modern CPUs).
+:::
 
 ### EIST / SpeedStep
 
@@ -723,7 +733,8 @@ DDR4-2133 to DDR4-2666, or DDR5-4800), regardless of the kit's rated capability.
 
 :::info XMP/EXPO profiles are overclocking settings. They exceed JEDEC specifications and require
 manual enabling. Memory running on XMP/EXPO is technically overclocked, though the manufacturer has
-validated the kit at those settings. :::
+validated the kit at those settings.
+:::
 
 ### Frequency
 
@@ -785,7 +796,8 @@ Memory is commonly advertised as "CL16-18-18-38" meaning CL=16, tRCD=18, tRP=18,
 significantly hotter than DDR4 due to higher density and the on-die PMIC (Power Management IC). Some
 kits specify 1.40--1.45 V in their XMP profiles. For daily use, keep VDIMM at or below the kit's
 rated XMP voltage. The absolute maximum recommended by most memory manufacturers is 1.50 V, but
-longevity at that voltage is not guaranteed. :::
+longevity at that voltage is not guaranteed.
+:::
 
 ### Memory Training
 
@@ -818,7 +830,8 @@ the memory controller frequency.
 
 :::info For gaming and general use, Gear 1 at DDR5-6000 is typically the sweet spot. Gear 2 becomes
 worthwhile only when running DDR5-6400 or higher, and even then the improvement depends on the
-application. Always benchmark both configurations. :::
+application. Always benchmark both configurations.
+:::
 
 ---
 
@@ -854,7 +867,8 @@ Performance gains vary by game and resolution. At 1080p, gains are typically 1--
 gains can reach 5--15% in certain titles. Not all games benefit.
 
 :::info Enable Resizable BAR. There is no downside and the performance gains are free. Ensure Above
-4G Decoding is also enabled, as ReBAR requires it. :::
+4G Decoding is also enabled, as ReBAR requires it.
+:::
 
 ### PCIe Lane Allocation
 
@@ -902,7 +916,8 @@ Windows Storage Spaces) and ties the array to the specific platform.
 
 :::warning NVMe RAID 0 provides no redundancy. If any drive fails, all data is lost. The performance
 gain over a single NVMe SSD is marginal in most consumer workloads. Use RAID 0 only for scratch
-space or workloads where the data is disposable and rebuildable. :::
+space or workloads where the data is disposable and rebuildable.
+:::
 
 ### SATA Mode
 
@@ -915,7 +930,8 @@ space or workloads where the data is disposable and rebuildable. :::
 
 :::warning Switching SATA mode after installing an OS will cause a boot failure. The OS storage
 driver is tied to the SATA mode selected during installation. If you need to change SATA mode,
-reinstall the OS or pre-load the appropriate driver before switching. :::
+reinstall the OS or pre-load the appropriate driver before switching.
+:::
 
 ### Boot Order
 
@@ -932,7 +948,8 @@ Common boot order configurations:
 
 :::info Modern UEFI implementations use a boot priority list rather than a simple order. Boot
 entries can be added, removed, and reordered. Hard drive boot entries are specific to partitions,
-not physical drives. Removing a drive does not leave a stale boot entry (unlike legacy BIOS). :::
+not physical drives. Removing a drive does not leave a stale boot entry (unlike legacy BIOS).
+:::
 
 ### CSM (Compatibility Support Module)
 
@@ -965,7 +982,8 @@ device passthrough.
 
 :::info VT-x/AMD-V and VT-d/IOMMU are separate settings. You need both enabled for full
 virtualization support. Some boards group these under a single "Virtualization" toggle; others
-expose them individually. :::
+expose them individually.
+:::
 
 ### USB Configuration
 
@@ -1103,7 +1121,8 @@ silicon.
 :::info For daily-use overclocking, aim for temperatures no higher than 80--85 C under sustained
 full load. This provides thermal headroom for ambient temperature fluctuations and ensures the
 cooling system is not operating at its limit. If you cannot keep temperatures below 85 C, your
-overclock is limited by cooling, not silicon. :::
+overclock is limited by cooling, not silicon.
+:::
 
 ### Silicon Lottery
 
@@ -1165,7 +1184,8 @@ Clearing CMOS resets all BIOS settings to factory defaults. Methods, in order of
 :::warning Clearing CMOS erases all BIOS settings including boot order, fan curves, overclocking
 profiles, and RAID configurations. RAID arrays configured through the chipset are not destroyed (the
 data remains), but the RAID metadata may need to be re-imported. Document your settings before
-clearing CMOS. :::
+clearing CMOS.
+:::
 
 ### No-Post Debugging
 
@@ -1281,7 +1301,8 @@ BIOS versions are not universally forward or backward compatible:
 
 :::warning Never interrupt a BIOS flash. If the flash is interrupted (power loss, accidental reset),
 the SPI flash will be corrupted and the board will not POST. Recovery requires BIOS flashback (if
-available) or an external SPI programmer. Always use a UPS when flashing BIOS. :::
+available) or an external SPI programmer. Always use a UPS when flashing BIOS.
+:::
 
 ### Dual BIOS Boards
 

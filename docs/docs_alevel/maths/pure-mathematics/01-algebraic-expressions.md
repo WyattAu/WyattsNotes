@@ -66,7 +66,8 @@ $$
 
 :::warning A common error is to "rationalise" by splitting the fraction:
 $\frac{a + b\sqrt{c}}{d} \neq \frac{a}{d} + b\sqrt{\frac{c}{d}}$ in general. Always distribute the
-denominator correctly. :::
+denominator correctly.
+:::
 
 ### 1.2 Irrationality of $\sqrt{2}$
 
@@ -313,7 +314,8 @@ $$\frac{ab + ac}{ad + ae} = \frac{a(b + c)}{a(d + e)} = \frac{b + c}{d + e}$$
 
 :::warning You can only cancel _factors_, not terms. $\frac{x + 3}{x}$ is NOT equal to $3$. The $x$
 in the denominator is a factor of the whole expression, but the $x$ in the numerator is only one
-term. :::
+term.
+:::
 
 ### 6.2 Addition and Subtraction
 

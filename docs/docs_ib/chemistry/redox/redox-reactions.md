@@ -450,7 +450,8 @@ anion and water compete for oxidation at the anode.
 
 :::warning[Exam Tip] The rules above are simplified. In reality, the product at an electrode depends
 on the relative electrode potentials and concentrations (overpotential effects). For IB exams, use
-the rules as stated. :::
+the rules as stated.
+:::
 
 ### Faraday's Laws
 
@@ -606,7 +607,8 @@ $\mathrm{Fe}_2\mathrm{O}_3 \cdot n\mathrm{H}_2\mathrm{O}$.
 
 :::warning[Exam Tip] The key distinction: **galvanising** (Zn coating) provides both barrier and
 sacrificial protection. **Tin plating** provides only barrier protection and actually accelerates
-rusting if the coating is damaged, because Sn is less reactive than Fe and Fe becomes the anode. :::
+rusting if the coating is damaged, because Sn is less reactive than Fe and Fe becomes the anode.
+:::
 
 ---
 

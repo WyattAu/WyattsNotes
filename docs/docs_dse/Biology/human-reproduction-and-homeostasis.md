@@ -203,7 +203,8 @@ uterus, controlled by four hormones.
 :::info The switch from negative to positive feedback by oestrogen is a critical concept. At low
 concentrations, oestrogen inhibits the pituitary (negative feedback). At high concentrations
 sustained for approximately 36 hours, oestrogen stimulates the pituitary (positive feedback),
-causing the LH surge. The DSE frequently tests this distinction. :::
+causing the LH surge. The DSE frequently tests this distinction.
+:::
 
 ---
 
@@ -296,7 +297,8 @@ foetus to the placenta) and the umbilical VEIN carries oxygenated blood (from th
 foetus). This is the OPPOSITE of the naming convention in the systemic circulation, where arteries
 carry oxygenated blood. The naming is based on direction of flow relative to the heart: arteries
 carry blood away from the heart, veins carry blood towards it. The umbilical arteries carry blood
-away from the foetal heart. :::
+away from the foetal heart.
+:::
 
 ---
 
@@ -335,7 +337,8 @@ The term "negative" refers to the fact that the response opposes (negates) the o
 
 :::info Homeostasis maintains parameters within a normal range, not at a single fixed value. The set
 point is a target value, and the actual value fluctuates within narrow limits around it. In DSE exam
-answers, write "maintained within narrow limits" rather than "kept exactly constant." :::
+answers, write "maintained within narrow limits" rather than "kept exactly constant."
+:::
 
 ---
 
@@ -454,7 +457,8 @@ concentration must be tightly regulated because:
 liver can release free glucose into the blood. Muscle glycogenolysis produces glucose-6-phosphate,
 which is used directly by the muscle for respiration. Muscle lacks the enzyme glucose-6-phosphatase,
 which is required to convert glucose-6-phosphate to free glucose. The DSE often tests this
-distinction. :::
+distinction.
+:::
 
 ### Diabetes Mellitus
 

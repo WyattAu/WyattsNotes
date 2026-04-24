@@ -96,7 +96,8 @@ No change in $A$ or $Z$. Gamma rays are weakly ionising but highly penetrating (
 lead or concrete).
 
 :::warning Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
-number changes. A neutron becomes a proton, so the total nucleon count is unchanged. :::
+number changes. A neutron becomes a proton, so the total nucleon count is unchanged.
+:::
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
 
@@ -174,7 +175,8 @@ remaining nuclei, so it decreases exponentially.
 
 :::tip Exam Technique On a log-linear graph of activity vs time, radioactive decay appears as a
 straight line with gradient $=-\lambda$. The half-life can be found by finding the time for the
-activity to halve at any point on the curve. :::
+activity to halve at any point on the curve.
+:::
 
 ### Radiation Detection
 
@@ -212,7 +214,8 @@ Sources of background radiation include:
 :::warning Common Pitfall The count rate measured by a GM tube is always less than the true activity
 because: (1) the detector only intercepts a fraction of emitted radiation (solid angle factor), and
 (2) not all radiation that enters the tube produces a count (detection efficiency is typically 1-2%
-for gamma rays). Never assume count rate equals activity. :::
+for gamma rays). Never assume count rate equals activity.
+:::
 
 #### Scintillation Detector
 
@@ -241,7 +244,8 @@ The gradient of the straight line gives $-\lambda$, and then $t_{1/2} = \ln 2 / 
 
 :::tip Exam Technique When describing an experimental method for determining half-life, always
 mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
-readings at regular intervals, and (4) using a log-linear graph for greater accuracy. :::
+readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
+:::
 
 #### Practical Considerations
 
@@ -253,7 +257,8 @@ readings at regular intervals, and (4) using a log-linear graph for greater accu
 
 :::info Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
 discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
-method. :::
+method.
+:::
 
 ## Problem Set
 
@@ -435,7 +440,8 @@ by the essentially constant uranium in the ground beneath.
 :::warning Common Pitfall In a decay chain, the half-life of the parent determines the overall rate
 only when the parent is much longer-lived than all daughters. If a short-lived daughter precedes a
 long-lived daughter, the long-lived daughter accumulates and can become the dominant radiological
-hazard. :::
+hazard.
+:::
 
 ## 5. Applications of Radioactivity
 
@@ -482,7 +488,8 @@ activity to fall to half its initial value, combining both physical decay and bi
 $$\frac{1}{t_{\mathrm{eff}}} = \frac{1}{t_{\mathrm{physical}}} + \frac{1}{t_{\mathrm{biological}}}$$
 
 :::info Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
-explicitly tested by AQA or CIE at A Level. :::
+explicitly tested by AQA or CIE at A Level.
+:::
 
 ## 6. Case Studies
 
@@ -523,7 +530,8 @@ timelines and informing public health responses.
 :::tip Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
 which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
 ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
-internally, gamma externally). :::
+internally, gamma externally).
+:::
 
 ## Additional Problems
 

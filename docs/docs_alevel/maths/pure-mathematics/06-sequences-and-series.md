@@ -167,7 +167,8 @@ If $r = 1$: $S_n = na \to \pm\infty$ (unless $a = 0$).
 If $r = -1$: $S_n = a - a + a - a + \cdots$, which oscillates and does not converge. $\blacksquare$
 
 :::warning The condition $|r| < 1$ is essential. A common mistake is to apply the sum-to-infinity
-formula when $|r| \geq 1$, which gives nonsense. :::
+formula when $|r| \geq 1$, which gives nonsense.
+:::
 
 <details>
 <summary>Example</summary>

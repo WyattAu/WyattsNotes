@@ -226,7 +226,8 @@ of atoms broadens the energy levels into bands.
 
 :::tip Exam Technique When calculating photon wavelengths from energy level transitions, first find
 $\Delta E$ in joules, then use $\lambda = hc/\Delta E$. Remember to convert eV to joules:
-$1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J. :::
+$1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
+:::
 
 ## 5. Wave-Particle Duality — Deeper Analysis
 
@@ -310,7 +311,8 @@ $\square$
 system." While this is a consequence, it is not the fundamental origin. The principle follows from
 the mathematics of wave superposition — it is intrinsic to the wave nature of matter, not an
 artifact of clumsy measurement. A particle **does not simultaneously possess** a well-defined
-position and a well-defined momentum. :::
+position and a well-defined momentum.
+:::
 
 ### Consequences of the Uncertainty Principle
 
@@ -500,7 +502,8 @@ which is in the UV — consistent with the observed UV emission from the Hg vapo
 :::tip Exam Technique The Franck-Hertz experiment is often asked as "describe how the experiment
 confirms quantised energy levels." The key points are: (1) the periodic current drops occur at
 multiples of $4.9$ V, (2) this corresponds to a fixed energy loss per collision, (3) the fixed
-energy loss can only be explained by discrete (quantised) energy levels in the Hg atom. :::
+energy loss can only be explained by discrete (quantised) energy levels in the Hg atom.
+:::
 
 ## 7. Wave Functions and Probability
 
@@ -525,7 +528,8 @@ This is the **normalisation condition**. A wave function that satisfies this con
 
 :::warning Common Pitfalls $\psi(x)$ itself is not a probability — it can be negative or complex.
 Only $|\psi(x)|^2 = \psi^*(x)\psi(x)$ has physical meaning as a probability density. Also, $\psi(x)$
-is not directly measurable; only $|\psi(x)|^2$ is observable. :::
+is not directly measurable; only $|\psi(x)|^2$ is observable.
+:::
 
 ### Electron in a Box: 1D Infinite Potential Well
 

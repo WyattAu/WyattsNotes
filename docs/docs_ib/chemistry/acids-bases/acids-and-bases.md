@@ -47,7 +47,8 @@ $$
 :::warning[Exam Tip] H$_2$SO$_4$ is a diprotic acid. The first dissociation is complete (strong),
 but the second dissociation is partial (weak):
 $\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$ with
-$K_a \approx 1.0 \times 10^{-2}$. :::
+$K_a \approx 1.0 \times 10^{-2}$.
+:::
 
 ---
 
@@ -319,7 +320,8 @@ $K_w$ is **temperature dependent**:
 :::warning[Exam Tip] At $50\degree\mathrm{C}$, pure water has $\mathrm{pH} = 6.63$ (not 7). This is
 because $K_w$ is larger, so $[\mathrm{H}^+] = [\mathrm{OH}^-] = \sqrt{K_w} \gt 10^{-7}$. The water
 is still **neutral** because $[\mathrm{H}^+] = [\mathrm{OH}^-]$. Neutral does not always mean pH =
-7; it depends on temperature. :::
+7; it depends on temperature.
+:::
 
 ---
 

@@ -363,7 +363,8 @@ constructors are correct, because NRVO may not apply.
 :::warning NRVO can be inhibited by multiple return paths returning different named variables, by
 returning a function parameter, or by certain compiler flags. Always write code that is correct even
 if NRVO fails — which means ensuring your move constructor is correct (or your copy constructor, as
-a fallback). :::
+a fallback).
+:::
 
 ## See Also
 
@@ -440,7 +441,8 @@ extension**.
 
 :::warning Lifetime extension applies only when the reference is directly bound to the prvalue. If
 the prvalue is passed through an intermediate function or stored in a member, lifetime extension
-does **not** propagate. :::
+does **not** propagate.
+:::
 
 ```cpp
 #include <iostream>

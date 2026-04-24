@@ -293,7 +293,8 @@ $f = \bar{A}\bar{B} + \bar{B}C + AB$
   algebraic methods (not Karnaugh maps)
 - **OCR (A)** requires truth tables, logic gate diagrams, and construction of half adder / full
   adder circuits
-- **Edexcel** covers truth tables, logic gates, and Boolean algebra :::
+- **Edexcel** covers truth tables, logic gates, and Boolean algebra
+:::
 
 <hr />
 
@@ -313,7 +314,8 @@ Standard symbols:
 1. Identify the order of operations (parentheses first)
 2. Draw inputs on the left
 3. Work rightward, one gate at a time
-4. Label all intermediate and output signals :::
+4. Label all intermediate and output signals
+:::
 
 <hr />
 
@@ -443,7 +445,8 @@ D-type flip-flops are the fundamental building blocks of:
 4. Draw the circuit from the simplified expression
 
 :::tip Exam technique For K-maps with don't-care conditions (X), treat X as 1 if it helps make a
-larger group, and 0 otherwise. This minimises the expression. :::
+larger group, and 0 otherwise. This minimises the expression.
+:::
 
 <hr />
 

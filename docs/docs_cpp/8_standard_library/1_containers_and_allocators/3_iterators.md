@@ -189,7 +189,8 @@ int main() {
 
 :::info The standard library provides `std::default_sentinel` (used with `std::counted_iterator`)
 and `std::unreachable_sentinel` (a sentinel that never compares equal to any iterator, used as a
-hint to the optimizer that a loop will not reach it) [N4950 §25.5]. :::
+hint to the optimizer that a loop will not reach it) [N4950 §25.5].
+:::
 
 ### `std::counted_iterator` and `std::default_sentinel`
 

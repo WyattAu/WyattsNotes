@@ -29,7 +29,8 @@ analysis tools.
 
 :::warning Performance Overhead Instrumentation significantly increases binary size and execution
 time. Coverage builds should never be used for performance benchmarking or production release
-artifacts. :::
+artifacts.
+:::
 
 ## The Two Ecosystems
 

@@ -127,7 +127,8 @@ where $L$ is the length of the plates.
 
 :::tip[Electron vs Proton Deflection] For the same field and entry speed, a proton is deflected
 $m_p/m_e \approx 1836$ times less than an electron. The direction of deflection is opposite for
-opposite charges. :::
+opposite charges.
+:::
 
 <details>
 <summary>Worked Example: Electron Deflection Between Parallel Plates</summary>
@@ -225,7 +226,8 @@ v_d = \frac{I}{nAe} = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^{-1
 $$
 
 This is extraordinarily slow. The signal (the electric field) propagates at a significant fraction
-of $c$, but the electrons themselves crawl. :::
+of $c$, but the electrons themselves crawl.
+:::
 
 <details>
 <summary>Worked Example: Drift Velocity in Aluminium</summary>
@@ -307,7 +309,8 @@ per metre).
 :::info[Data Booklet Resistivity Values] Copper:
 $\rho \approx 1.7 \times 10^{-8}\,\Omega\,\mathrm{m}$. Nichrome (alloy):
 $\rho \approx 1.1 \times 10^{-6}\,\Omega\,\mathrm{m}$. Semiconductors: $\rho$ spans many orders of
-magnitude. :::
+magnitude.
+:::
 
 ### 3.3 Factors Affecting Resistance
 
@@ -648,7 +651,8 @@ $$
 
 :::warning[Efficiency at Maximum Power] At $R_L = r$, the efficiency is only 50% (half the power is
 dissipated in the internal resistance). In power distribution systems, $R_L \gt r$ is preferred for
-higher efficiency, even though less total power is delivered. :::
+higher efficiency, even though less total power is delivered.
+:::
 
 ### 5.4 Battery Configurations
 
@@ -824,7 +828,8 @@ which is always less than $R$. The measured p.d. is lower than the true p.d.
 :::tip[Minimising Measurement Error] For ammeters: use instruments with the smallest possible
 internal resistance. For voltmeters: use instruments with the largest possible internal resistance.
 A voltmeter is considered sufficiently ideal if $R_V \gt 100R$, where $R$ is the resistance across
-which it is connected. :::
+which it is connected.
+:::
 
 ### 7.3 Galvanometer as Ammeter and Voltmeter
 

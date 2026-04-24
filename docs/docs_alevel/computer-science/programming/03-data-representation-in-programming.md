@@ -123,7 +123,8 @@ codes (e.g., UTF-8 or UTF-16).
 | Slice            | `s[a:b]`       | $O(b-a)$                          |
 
 :::warning Pitfall In Python, strings are **immutable** — you cannot modify individual characters.
-`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string. :::
+`s[0] = 'x'` raises a `TypeError`. Use `s = 'x' + s[1:]` to create a new string.
+:::
 
 ### String Immutability
 
@@ -139,7 +140,8 @@ Strings are immutable for several reasons:
 similar topics but may emphasise different aspects; requires understanding of file sizes and
 capacity calculations. **OCR (A)** requires character encoding, image representation, and sound
 representation with specific detail on compression (lossy vs lossless). **Edexcel** covers data
-representation fundamentals including number systems and character encoding. :::
+representation fundamentals including number systems and character encoding.
+:::
 
 <hr />
 

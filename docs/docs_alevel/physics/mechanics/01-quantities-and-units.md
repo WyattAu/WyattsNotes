@@ -112,7 +112,8 @@ $$
 Therefore $T = k\sqrt{l/g}$. Full analysis reveals $k = 2\pi$.
 
 :::tip Exam Technique Dimensional analysis is invaluable for checking your working. Get into the
-habit of verifying dimensions for every formula you derive in an exam. :::
+habit of verifying dimensions for every formula you derive in an exam.
+:::
 
 ## 3. SI Prefixes
 
@@ -262,7 +263,8 @@ and the uncertainty should be quoted to at most 2 significant figures.
 trailing zero implies precision we do not have.
 
 :::tip Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$, write $9.8 \pm 0.2$ m
-s$^{-2}$ (round the uncertainty to 1 s.f. and match the result). This is what examiners expect. :::
+s$^{-2}$ (round the uncertainty to 1 s.f. and match the result). This is what examiners expect.
+:::
 
 ## 6. Determining Uncertainty from Repeated Measurements
 
@@ -474,7 +476,8 @@ interpreting measurements correctly.
 
 :::info Note Since 2019, all SI base units are defined in terms of fundamental physical constants.
 The values of $c$, $h$, $e$, $k_B$, $N_A$, and $\Delta\nu_{Cs}$ are now exact defined quantities,
-while the unit values are derived from them. :::
+while the unit values are derived from them.
+:::
 
 ## 9. Dimensional Analysis: Extended Worked Examples
 

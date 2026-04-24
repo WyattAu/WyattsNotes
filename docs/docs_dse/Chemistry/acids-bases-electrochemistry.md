@@ -27,7 +27,8 @@ slug: chemistry-acids-bases-electrochemistry
 - Base: electron pair donor
 
 :::info In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
-the proton donor and proton acceptor in acid-base reactions. :::
+the proton donor and proton acceptor in acid-base reactions.
+:::
 
 ### Conjugate Acid-Base Pairs
 
@@ -51,7 +52,8 @@ $$\mathrm{HA} + \mathrm{B} \rightleftharpoons \mathrm{A}^- + \mathrm{BH}^+$$
 
 :::warning A strong acid is NOT the same as a concentrated acid. Strength refers to the degree of
 ionisation; concentration refers to the amount dissolved per unit volume. A dilute solution of a
-strong acid can have a higher pH than a concentrated solution of a weak acid. :::
+strong acid can have a higher pH than a concentrated solution of a weak acid.
+:::
 
 ### Common Strong Acids and Bases
 
@@ -125,7 +127,8 @@ $$\mathrm{pH} = -\log_{10}(1.34 \times 10^{-3}) = 2.87$$
 :::tip For weak acid calculations, you can assume
 $[\mathrm{HA}]_{\mathrm{initial}} \approx [\mathrm{HA}]_{\mathrm{equilibrium}}$ only when the degree
 of ionisation is small (typically when $K_a \lt 10^{-4}$). This simplification is valid for most
-DSE-level problems. :::
+DSE-level problems.
+:::
 
 ### pH Scale Summary
 
@@ -371,7 +374,8 @@ Halides ($\mathrm{Cl}^-$, $\mathrm{Br}^-$, $\mathrm{I}^-$): The halogen is disch
 
 :::warning Concentration matters. In concentrated chloride solutions, $\mathrm{Cl}^-$ is discharged
 at the anode instead of $\mathrm{OH}^-$. In dilute chloride solutions, $\mathrm{OH}^-$ may be
-preferentially discharged. :::
+preferentially discharged.
+:::
 
 ### Worked Example 9
 

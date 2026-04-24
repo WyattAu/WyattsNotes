@@ -690,7 +690,8 @@ The tension is positive, so the block does indeed complete full vertical circles
 
 :::info This is a classic ballistic pendulum problem with a twist: the bullet has enough energy to
 make the block complete full vertical circles. In most textbook versions, the block only swings to a
-modest height. :::
+modest height.
+:::
 
 ## Common Pitfalls Extended
 

@@ -57,7 +57,8 @@ $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 :::warning Common Pitfall The two forces in a Newton's third law pair act on **different bodies**.
 They do **not** cancel. The normal reaction from a table on a book and the book's weight are **not**
 a third law pair (both act on the book). The third law pair of the book's weight is the
-gravitational pull of the book on the Earth. :::
+gravitational pull of the book on the Earth.
+:::
 
 ## 2. Weight and Mass
 
@@ -145,12 +146,14 @@ the centre of a circular path, responsible for maintaining circular motion.
 
 :::warning Common Pitfall Centripetal force is **not** a separate force. It is the **net radial
 component** of the real forces acting on the body (tension, friction, gravity, normal reaction,
-etc.). Never draw "centripetal force" as an additional arrow on a free body diagram. :::
+etc.). Never draw "centripetal force" as an additional arrow on a free body diagram.
+:::
 
 :::tip Exam Technique When solving circular motion problems, always start with a free body diagram
 showing only the real forces. Then resolve forces towards the centre of the circle and apply
 $F_c = mv^2/r$. The centripetal force is always provided by one or more of the forces already on
-your diagram. :::
+your diagram.
+:::
 
 <details>
 <summary>Example: Car on a Banked Curve</summary>
@@ -400,7 +403,8 @@ $$mg - kv^2 = ma$$
 At terminal velocity: $v_T = \sqrt{\frac{mg}{k}}$.
 
 :::info Board Note CIE and Edexcel may expect you to know both drag models qualitatively. AQA
-focuses on the qualitative description of terminal velocity. :::
+focuses on the qualitative description of terminal velocity.
+:::
 
 ## Problem Set
 

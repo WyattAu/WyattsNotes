@@ -92,7 +92,8 @@ concatenation, and Kleene star.
   expressions as heavily
 - **OCR (A)** requires finite state machines, state transition diagrams, regular expressions, and
   understanding of decidability
-- **Edexcel** covers finite state machines and basic automata theory :::
+- **Edexcel** covers finite state machines and basic automata theory
+:::
 
 <hr />
 

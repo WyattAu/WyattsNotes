@@ -281,7 +281,8 @@ for 4 bits. Overflow detected: positive + positive yielded negative. ✓
 
 - **AQA:** Requires two's complement for 8-bit and 16-bit numbers.
 - **CIE:** Requires two's complement for 8-bit numbers specifically.
-- **OCR:** Requires understanding of sign and magnitude as well as two's complement. :::
+- **OCR:** Requires understanding of sign and magnitude as well as two's complement.
+:::
 
 <hr />
 
@@ -351,7 +352,8 @@ The codes $1010$ through $1111$ are **invalid** in BCD.
 - BCD avoids rounding errors in decimal arithmetic — useful in financial systems
 
 :::warning Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$ in BCD
-is $00010010_2$, NOT $1100_2$. :::
+is $00010010_2$, NOT $1100_2$.
+:::
 
 <hr />
 
@@ -438,7 +440,8 @@ magnitude.
 
 1. It has two representations of zero
 2. Addition requires different logic depending on the signs
-3. The range is asymmetric :::
+3. The range is asymmetric
+:::
 
 <hr />
 

@@ -32,7 +32,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 
 :::info All boards require the standard Maclaurin series. Edexcel and CIE additionally require
 Taylor series about $x = a$. The formula booklet lists the standard Maclaurin series — you must be
-able to derive them and apply them. :::
+able to derive them and apply them.
+:::
 
 <hr />
 
@@ -259,7 +260,8 @@ $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 $\square$
 
 :::tip The geometric series is the foundation for many other series. The Maclaurin series for
-$\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it. :::
+$\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it.
+:::
 
 <hr />
 
@@ -342,7 +344,8 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
    $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
 
 4. **Sign errors in alternating series.** $\sin x$ and $\cos x$ have alternating signs:
-   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
+   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$).
+:::
 
 :::tip **Exam strategy:**
 
@@ -350,7 +353,8 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
 - For compound functions ($e^{x^2}\sin x$), multiply series term by term and collect like powers.
 - Always state the range of validity when asked.
 - To find a Maclaurin series efficiently, compute successive derivatives at $x = 0$ and look for the
-  pattern. :::
+  pattern.
+:::
 
 <hr />
 

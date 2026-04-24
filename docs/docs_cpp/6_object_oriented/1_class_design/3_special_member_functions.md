@@ -45,7 +45,8 @@ exact rules are [N4950 §11.4.5.3]:
 :::warning C++11 vs C++14+ Move Generation In C++11, if any SMF is user-declared, the move
 constructor and move assignment are **not** implicitly declared. In C++14 and later, this remains
 true — the Standard was not changed. The critical point: declaring a destructor suppresses implicit
-move generation. :::
+move generation.
+:::
 
 ## 3.3 `= default` and `= delete`
 

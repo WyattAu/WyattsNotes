@@ -90,7 +90,8 @@ step 3
 :::info The function `my_coroutine` is a coroutine because its body contains `co_await`. The
 compiler generates a `promise_type` lookup, allocates a coroutine frame, and transforms the function
 body into a state machine. The `promise_type` member alias tells the compiler which promise type to
-use [N4950 §9.5.2]. :::
+use [N4950 §9.5.2].
+:::
 
 ## Stackless vs Stackful Coroutines
 
@@ -321,7 +322,8 @@ There are two guaranteed elision scenarios where the compiler **may not** alloca
 :::warning The standard does not require that the compiler actually perform elision — it only
 _permits_ it. In practice, most major compilers (GCC 12+, Clang 16+, MSVC 19.30+) do elide the
 allocation in simple cases, but for complex promise types or when the handle escapes, heap
-allocation occurs. Always profile if allocation overhead is a concern. :::
+allocation occurs. Always profile if allocation overhead is a concern.
+:::
 
 ### Heap Allocation Elision (HALO)
 
@@ -529,7 +531,8 @@ If `destroy()` is never called and no other mechanism cleans up, the frame leaks
 
 :::tip RAII wrappers In production code, wrap `std::coroutine_handle` in an RAII type (e.g.,
 `std::unique_ptr` with a custom deleter, or a dedicated `coroutine` class) to ensure `destroy()` is
-called even if an exception propagates. :::
+called even if an exception propagates.
+:::
 
 ## Complete Example: Handle Lifecycle Management
 

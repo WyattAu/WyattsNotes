@@ -254,7 +254,8 @@ clang++ -std=c++23 -O3 test.cpp -o infra_test
 ```
 
 :::warning If you are using MSVC, replace `clang++` with `cl.exe` and ensure you have the latest
-Visual Studio 2022 installed. :::
+Visual Studio 2022 installed.
+:::
 
 **Success Criteria:**
 

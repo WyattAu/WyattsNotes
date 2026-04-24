@@ -108,7 +108,8 @@ have a constant phase relationship. This requires:
 
 :::warning Common Pitfall Two waves from independent sources (e.g., two light bulbs) are generally
 not coherent because the phase difference fluctuates randomly. Interference requires coherent
-sources, typically produced by splitting a single wave. :::
+sources, typically produced by splitting a single wave.
+:::
 
 ## 3. Young's Double Slit Experiment
 
@@ -165,7 +166,8 @@ The first minimum of the single-slit pattern occurs at $\sin\theta = \lambda/a$.
 
 :::tip Exam Technique When asked to describe Young's experiment, always mention: coherent source
 (single slit before the double slit), narrow slits, monochromatic light, and the small-angle
-approximation. Quote the fringe spacing formula and explain each variable. :::
+approximation. Quote the fringe spacing formula and explain each variable.
+:::
 
 <details>
 <summary>Example: Young's Double Slit</summary>
@@ -216,7 +218,8 @@ or equal to $d/\lambda$).
 
 :::tip Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$, take the
 integer part, then note that orders $+n$ and $-n$ are both visible (plus the zeroth order). Total
-visible maxima $= 2n_{\max} + 1$. :::
+visible maxima $= 2n_{\max} + 1$.
+:::
 
 ## 5. Stationary Waves
 

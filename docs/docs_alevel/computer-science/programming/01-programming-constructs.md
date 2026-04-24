@@ -45,7 +45,8 @@ z = str(42)        # z = "42"
 ```
 
 :::warning Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
-`round(3.9)` for rounding. :::
+`round(3.9)` for rounding.
+:::
 
 <hr />
 
@@ -151,7 +152,8 @@ while True:
 and `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
 function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
 local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
-requires subroutines with parameters. :::
+requires subroutines with parameters.
+:::
 
 <hr />
 

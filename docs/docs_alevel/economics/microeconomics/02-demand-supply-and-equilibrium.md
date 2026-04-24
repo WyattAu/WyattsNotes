@@ -86,7 +86,8 @@ At each price, we add up the quantities demanded by all consumers.
 
 :::warning Common Pitfall "A rise in demand" means the _curve shifts right_. "A rise in quantity
 demanded" means a _movement along the curve_ due to a price change. These are fundamentally
-different. Examiners penalise imprecise language. :::
+different. Examiners penalise imprecise language.
+:::
 
 ## 2. Supply
 
@@ -162,7 +163,8 @@ framework:
 1. Identify whether X shifts demand or supply (and which direction)
 2. Show the shift on a diagram
 3. State the new equilibrium price and quantity
-4. Evaluate: what if both curves shift simultaneously? :::
+4. Evaluate: what if both curves shift simultaneously?
+:::
 
 ### 3.2 Price Mechanism (The Invisible Hand)
 
@@ -314,7 +316,8 @@ where $P_s(Q)$ is the inverse supply function.
 :::info Board-Specific Note Edexcel (9EC0) emphasises elasticity calculations using the midpoint
 (arc elasticity) formula:
 $\mathrm{PED} = \frac{\Delta Q}{\Delta P} \times \frac{(P_1 + P_2)/2}{(Q_1 + Q_2)/2}$. CIE typically
-uses the point elasticity formula. Check your board's preference. :::
+uses the point elasticity formula. Check your board's preference.
+:::
 
 ## 7. Problem Set
 

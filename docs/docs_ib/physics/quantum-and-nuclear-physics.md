@@ -35,7 +35,8 @@ rows and the same number of columns. A matrix with the same number of rows as co
 **square matrix**; such a matrix is said to be of order $n$ (or $n \times n$).
 
 :::info The dimension of a matrix is sometimes called its **shape** or **size**. Throughout these
-notes, we use $m \times n$ to denote $m$ rows and $n$ columns. :::
+notes, we use $m \times n$ to denote $m$ rows and $n$ columns.
+:::
 
 ### 1.3 Matrix Operations
 
@@ -86,7 +87,8 @@ $\mathbf{A}$ with the $j$-th column of $\mathbf{B}$.
 
 :::warning Matrix multiplication is defined **only when** the number of columns of $\mathbf{A}$
 equals the number of rows of $\mathbf{B}$. The resulting matrix has the same number of rows as
-$\mathbf{A}$ and the same number of columns as $\mathbf{B}$. :::
+$\mathbf{A}$ and the same number of columns as $\mathbf{B}$.
+:::
 
 **Example.** Compute $\mathbf{AB}$ where:
 
@@ -136,7 +138,8 @@ $k, l \in \mathbb{R}$.
 4. **Scalar compatibility:** $k(\mathbf{AB}) = (k\mathbf{A})\mathbf{B} = \mathbf{A}(k\mathbf{B})$
 
 :::danger Matrix multiplication is **NOT commutative**: $\mathbf{AB} \neq \mathbf{BA}$ in general.
-This is one of the most important differences between matrix algebra and ordinary algebra. :::
+This is one of the most important differences between matrix algebra and ordinary algebra.
+:::
 
 Furthermore, the **cancellation law** does not hold in general. It is possible that
 $\mathbf{AB} = \mathbf{AC}$ but $\mathbf{B} \neq \mathbf{C}$ (for example, if $\mathbf{A}$ is the
@@ -321,7 +324,8 @@ Let $\mathbf{A}$ and $\mathbf{B}$ be $n \times n$ matrices and $k \in \mathbb{R}
 
 :::note Property 2 is particularly powerful: it tells us that
 $\det(\mathbf{AB}) = \det(\mathbf{BA})$ even though $\mathbf{AB} \neq \mathbf{BA}$ in general.
-However, $\det(\mathbf{A} + \mathbf{B}) \neq \det(\mathbf{A}) + \det(\mathbf{B})$ in general. :::
+However, $\det(\mathbf{A} + \mathbf{B}) \neq \det(\mathbf{A}) + \det(\mathbf{B})$ in general.
+:::
 
 ### 2.5 Geometric Interpretation
 
@@ -355,7 +359,8 @@ precisely when $ad = bc$, i.e., the rows (and columns) are linearly dependent.
 
 :::tip Singularity can be understood geometrically: a singular matrix represents a transformation
 that collapses the space. For instance, a $2 \times 2$ singular matrix maps the entire plane onto a
-line or a point, so areas become zero. :::
+line or a point, so areas become zero.
+:::
 
 ---
 
@@ -687,7 +692,8 @@ $$
 
 :::warning The order of multiplication matters. $\mathbf{BA}$ means "apply $\mathbf{A}$ first, then
 $\mathbf{B}$." The product $\mathbf{AB}$ (if it represents a valid composition) would mean "apply
-$\mathbf{B}$ first, then $\mathbf{A}$," which is generally a different transformation. :::
+$\mathbf{B}$ first, then $\mathbf{A}$," which is generally a different transformation.
+:::
 
 **Example.** Find the matrix representing a reflection in the $x$-axis followed by a rotation of
 $90^{\circ}$ anticlockwise.
@@ -1084,7 +1090,8 @@ $$
 
 :::warning Cramer's Rule becomes computationally expensive for large systems ($O(n!)$ operations for
 the determinants vs. $O(n^3)$ for Gaussian elimination). It is primarily useful for small systems
-and theoretical proofs. :::
+and theoretical proofs.
+:::
 
 ### 6.3 Cryptography: The Hill Cipher
 

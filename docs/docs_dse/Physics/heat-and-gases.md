@@ -601,7 +601,8 @@ where $\tau = C / (hA)$ is the time constant.
 
 :::info Newton's law of cooling is an approximation valid for small temperature differences and when
 radiation is not the dominant mechanism. At large temperature differences, the $T^4$ dependence of
-radiation becomes significant and the cooling is faster than predicted by Newton's law. :::
+radiation becomes significant and the cooling is faster than predicted by Newton's law.
+:::
 
 ---
 

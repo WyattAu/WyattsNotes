@@ -228,7 +228,8 @@ For $\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\math
 
 :::warning Common Pitfall Do not confuse "fissile" with "radioactive." U-238 is highly radioactive
 but is not fissile --- it cannot sustain a chain reaction with thermal neutrons. The only naturally
-occurring fissile isotope is U-235 (0.72\% of natural uranium). :::
+occurring fissile isotope is U-235 (0.72\% of natural uranium).
+:::
 
 ### Fast Fission of U-238
 
@@ -316,7 +317,8 @@ The $\sim 200$ MeV released per U-235 fission is distributed as follows:
 :::warning Common Pitfall Approximately 12 MeV per fission ($\sim 6\%$) is carried away by
 anti-neutrinos, which interact so weakly that they escape the reactor entirely. When calculating
 thermal power output, use $\sim 200$ MeV total but $\sim 193$ MeV recoverable. The neutrino energy
-is unrecoverable. :::
+is unrecoverable.
+:::
 
 ### Breeder Reactors
 
@@ -421,7 +423,8 @@ infinite-medium factor and $P_{\mathrm{non-leak}}$ is the non-leakage probabilit
 
 :::tip Exam Technique When asked about reactor control, state the precise condition: "The reactor is
 critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce $k_{\mathrm{eff}}$
-below 1 for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for steady power." :::
+below 1 for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for steady power."
+:::
 
 ### Delayed Neutrons and Reactor Control
 
@@ -452,7 +455,8 @@ mechanical control systems. $\square$
 :::warning Common Pitfall The reactor period is not the prompt neutron lifetime. The reactor
 responds on the timescale set by delayed neutrons ($\sim$tens of seconds), provided
 $k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the reactor
-become "prompt supercritical" and uncontrollable. :::
+become "prompt supercritical" and uncontrollable.
+:::
 
 ### Coolant
 
@@ -494,7 +498,8 @@ for compact gamma shielding. **Water** provides both shielding and moderation in
 :::tip Exam Technique For reactor comparison questions, the key trade-off is: PWRs use water as both
 moderator and coolant (simpler but lower efficiency), while AGRs separate them (graphite moderator,
 CO$_2$ coolant), allowing higher temperature and thus higher efficiency from
-$\eta \lt{} 1 - T_c/T_h$. :::
+$\eta \lt{} 1 - T_c/T_h$.
+:::
 
 ## 7. Nuclear Fusion
 
@@ -525,7 +530,8 @@ Fusion requires positively charged nuclei to approach within $\sim 10^{-15}$ m, 
 kinetic energy to overcome the Coulomb repulsion.
 
 :::info Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
-require calculation of energy released from mass defect. :::
+require calculation of energy released from mass defect.
+:::
 
 ## 8. Nuclear Fusion in Detail
 
@@ -645,7 +651,8 @@ r-process.
 
 :::warning Common Pitfall The "iron peak" is often simplified to "iron is the most stable nucleus."
 Strictly, Ni-62 has the highest $E_b/A$ (8.7945 MeV/nucleon versus Fe-56's 8.7906 MeV/nucleon), but
-Fe-56 is produced in greater abundance because the alpha process favours nuclei with $N = Z$. :::
+Fe-56 is produced in greater abundance because the alpha process favours nuclei with $N = Z$.
+:::
 
 ## Problem Set
 

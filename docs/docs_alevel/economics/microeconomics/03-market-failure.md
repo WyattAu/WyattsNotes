@@ -26,7 +26,8 @@ is not maximised.
 
 :::warning Common Pitfall Market failure does not mean the market has "failed" in a colloquial
 sense. It means the _outcome_ is suboptimal — there exists a reallocation that could make at least
-one person better off without making anyone worse off (Pareto improvement). :::
+one person better off without making anyone worse off (Pareto improvement).
+:::
 
 ## 2. Types of Market Failure
 
@@ -36,7 +37,8 @@ emphasises the distinction between private and social costs/benefits using deman
 **CIE (9708)** covers market failure in the context of allocative efficiency and requires
 consumer/producer surplus, deadweight loss, and cost-benefit analysis. **OCR (A)** links market
 failure directly to government intervention and expects evaluation of whether intervention improves
-outcomes. :::
+outcomes.
+:::
 
 ### 2.1 Externalities
 
@@ -236,7 +238,8 @@ tradable permits with evaluation of each. **Edexcel** expects diagrammatic analy
 effect of Pigouvian taxes and subsidies on equilibrium. **CIE (9708)** covers government
 intervention alongside cost-benefit analysis and requires understanding of when intervention may
 fail. **OCR (A)** emphasises the link between market failure and government failure, requiring
-students to evaluate whether intervention worsens outcomes. :::
+students to evaluate whether intervention worsens outcomes.
+:::
 
 ### 4.1 Pigouvian Taxation
 
@@ -351,7 +354,8 @@ alcohol, tobacco, illegal drugs.
 :::warning Common Pitfall Merit and demerit goods are normative concepts — they depend on value
 judgements about what is "good" or "bad" for people. This is different from positive externalities
 (which are objective welfare effects on third parties). Many merit goods also generate positive
-externalities, but the concepts are distinct. :::
+externalities, but the concepts are distinct.
+:::
 
 ### Tragedy of the Commons
 

@@ -27,7 +27,8 @@ determine unknown forces.
 
 :::info Centripetal force is not a separate force — it is the resultant of the physical forces
 (tension, friction, normal reaction, weight) directed towards the centre of the circle. Never
-include "centripetal force" on a free body diagram. :::
+include "centripetal force" on a free body diagram.
+:::
 
 <hr />
 

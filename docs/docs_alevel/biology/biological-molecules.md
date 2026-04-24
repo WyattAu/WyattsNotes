@@ -44,7 +44,8 @@ $\mathrm{H_2S}$ ($-60\ ^\circ\mathrm{C}$).
 are intermolecular forces -- they are much weaker ($\approx 20\ \mathrm{kJ\ mol^{-1}}$) than
 covalent bonds ($\approx 350\ \mathrm{kJ\ mol^{-1}}$). They form between a hydrogen atom covalently
 bonded to a highly electronegative atom (N, O, or F) and a lone pair on a neighbouring
-electronegative atom. :::
+electronegative atom.
+:::
 
 ## 2. Carbohydrates
 
@@ -101,7 +102,8 @@ chains bundle into **microfibrils**, which provide tremendous tensile strength.
 
 :::warning Common Pitfall Students often state that cellulose has $\alpha$-1,4 glycosidic bonds. It
 has $\beta$-1,4 glycosidic bonds. The $\beta$ configuration is what causes the alternate rotation
-and enables the hydrogen bonding between chains that gives cellulose its strength. :::
+and enables the hydrogen bonding between chains that gives cellulose its strength.
+:::
 
 ### 2.4 Testing for Carbohydrates
 
@@ -221,7 +223,8 @@ colour is proportional to protein concentration.
 
 :::warning Common Pitfall The Biuret test does not detect individual amino acids -- only peptide
 bonds. A solution of free amino acids will not give a positive Biuret test (or only a very weak one
-for dipeptides). :::
+for dipeptides).
+:::
 
 ## 5. Nucleic Acids
 
@@ -276,7 +279,8 @@ immediate energy transfer molecule that must be continuously regenerated through
 respiration or photosynthesis.
 
 :::warning Common Pitfall ATP is not used for long-term energy storage. Glycogen (animals) and
-starch (plants) are the long-term energy stores. ATP is regenerated within seconds of use. :::
+starch (plants) are the long-term energy stores. ATP is regenerated within seconds of use.
+:::
 
 ## 6. Enzymes
 

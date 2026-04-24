@@ -209,7 +209,8 @@ $$
 
 :::tip When finding $\arg(z)$, always draw a quick Argand diagram to check which quadrant the point
 is in. A common mistake is to use the calculator value directly without adjusting for the correct
-quadrant. :::
+quadrant.
+:::
 
 ### Geometric Interpretation of Operations
 
@@ -345,7 +346,8 @@ $$
 | Euler     | $z = re^{i\theta}$                | Powers, roots (De Moivre) |
 
 :::tip Converting between forms is essential. A good strategy: always convert to polar/Euler form
-before raising to a power or finding roots, and convert back to Cartesian for the final answer. :::
+before raising to a power or finding roots, and convert back to Cartesian for the final answer.
+:::
 
 ## Modulus-Argument Form Operations
 

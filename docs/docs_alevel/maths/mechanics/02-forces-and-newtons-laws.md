@@ -19,7 +19,8 @@ slug: forces-and-newtons-laws
 | CIE (9709) | P1, P4  | Forces in P1; connected bodies, inclined planes in P4 |
 
 :::info Always draw a clear free body diagram before writing any equations. The quality of your
-diagram determines the quality of your solution. :::
+diagram determines the quality of your solution.
+:::
 
 <hr />
 
@@ -52,7 +53,8 @@ and are the same type of force.
 
 :::warning Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
 normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
-pair of the weight is the gravitational pull of the book on the Earth. :::
+pair of the weight is the gravitational pull of the book on the Earth.
+:::
 
 <hr />
 
@@ -128,7 +130,8 @@ $$F_{\max} = \mu R$$
 In A Level, we usually assume $\mu_s = \mu_k = \mu$.
 
 :::warning The friction force is not always $\mu R$. It adjusts to match the applied force up to the
-maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide. :::
+maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
+:::
 
 ### 4.3 Angle of friction
 
@@ -245,7 +248,8 @@ $$F = \mu R$$
 The word "limiting" is the signal to set $F = \mu R$ rather than $F \lt{} \mu R$.
 
 :::tip In exam questions, the phrases "on the point of slipping," "about to move," and "in limiting
-equilibrium" all mean the same thing: set $F = \mu R$. :::
+equilibrium" all mean the same thing: set $F = \mu R$.
+:::
 
 ### 8.2 Friction on a horizontal surface -- full analysis
 
@@ -270,7 +274,8 @@ $$P = \frac{\mu mg}{\cos\theta + \mu\sin\theta}$$
 
 :::warning Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
 friction. Applying a force at an angle **downward** increases $R$ and increases the maximum
-friction. :::
+friction.
+:::
 
 ### 8.3 Connected particles on rough surfaces
 
@@ -360,7 +365,8 @@ $$a = \frac{(m_2 - \mu m_1)g}{m_1 + m_2}$$
 
 :::warning If $m_2 \lt{} \mu m_1$, then $a \lt{} 0$, meaning the system does not move. The friction
 force is not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and
-$T = m_2 g$. :::
+$T = m_2 g$.
+:::
 
 ### 9.4 Two particles on inclined planes with a pulley
 
@@ -433,7 +439,8 @@ $$P + \mu mg\cos\alpha - mg\sin\alpha = ma$$
 $$a = \frac{P}{m} - g(\sin\alpha - \mu\cos\alpha)$$
 
 :::tip The sign in front of the friction term $\mu mg\cos\alpha$ depends on the direction of motion
-(or the tendency to move). Always draw a clear diagram and think about which way friction acts. :::
+(or the tendency to move). Always draw a clear diagram and think about which way friction acts.
+:::
 
 ### 10.4 Block on an inclined plane with a horizontal applied force
 
@@ -458,7 +465,8 @@ $$P = \frac{mg(\sin\alpha + \mu\cos\alpha)}{\cos\alpha - \mu\sin\alpha}$$
 
 :::warning If $\cos\alpha - \mu\sin\alpha \leq 0$, i.e. $\mu \geq \cot\alpha$, then no finite
 horizontal force can move the block up the slope (pushing horizontally jams the block into the
-surface). :::
+surface).
+:::
 
 <hr />
 

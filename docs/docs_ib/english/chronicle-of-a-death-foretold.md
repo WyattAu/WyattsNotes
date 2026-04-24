@@ -778,4 +778,5 @@ expectations."**
 :::tip When practising these questions, write under timed conditions. For SL, aim for a complete
 essay in 55 minutes. For HL, aim for 100 minutes to allow for integration of a third text. See
 [ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques.md) for detailed time
-management strategies. :::
+management strategies.
+:::

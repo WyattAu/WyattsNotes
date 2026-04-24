@@ -325,7 +325,8 @@ New species arise without geographic separation. Mechanisms include:
 :::info In the DSE, allopatric speciation is the most commonly tested form. When answering questions
 on speciation, always clearly identify the geographic barrier, explain how gene flow is interrupted,
 describe the different selection pressures on each population, and explain how reproductive
-isolation arises. :::
+isolation arises.
+:::
 
 ---
 
@@ -624,7 +625,8 @@ triple bond in $\mathrm{N}_2$ is very strong and requires significant energy to 
 :::warning A common DSE error is writing that plants absorb nitrogen gas ($\mathrm{N}_2$) from the
 atmosphere. Plants cannot use atmospheric nitrogen directly. They can only absorb nitrogen in the
 form of nitrate ($\mathrm{NO}_3^-$) or ammonium ($\mathrm{NH}_4^+$) ions through their roots.
-Atmospheric nitrogen must first be fixed by bacteria or lightning. :::
+Atmospheric nitrogen must first be fixed by bacteria or lightning.
+:::
 
 ### The Water Cycle
 

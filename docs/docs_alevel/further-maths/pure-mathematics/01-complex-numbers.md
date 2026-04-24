@@ -72,7 +72,8 @@ $$
 where $\overline{z_2} = c - di$ is the _complex conjugate_ of $z_2$.
 
 :::warning When computing $\arg(z)$, always check the quadrant of $(a, b)$. The formula
-$\theta = \arctan(b/a)$ only gives the correct principal argument when $a > 0$. :::
+$\theta = \arctan(b/a)$ only gives the correct principal argument when $a > 0$.
+:::
 
 <details>
 <summary>Worked Example: Modulus, argument, and polar form</summary>
@@ -290,7 +291,8 @@ z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 $$
 
 :::info CIE and Edexcel FP2 require the exponential form. AQA accepts it but also works extensively
-with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem. :::
+with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem.
+:::
 
 <hr />
 
@@ -331,7 +333,8 @@ regions, be careful about whether boundaries are included (solid line) or exclud
 
 :::tip Always sketch loci problems. The algebraic description follows from the geometric picture.
 Common exam technique: identify the boundary (circle, line, half-line), then determine which side of
-the boundary is included by testing a point. :::
+the boundary is included by testing a point.
+:::
 
 <details>
 <summary>Worked Example: Describing a locus algebraically</summary>

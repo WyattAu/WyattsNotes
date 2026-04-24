@@ -98,7 +98,8 @@ requirements.
 - **CIE (9618)** covers testing strategies; requires test plans and test data design
 - **OCR (A)** requires unit, integration, system, and acceptance testing; may require traceability
   between requirements and tests
-- **Edexcel** covers testing types and test data design :::
+- **Edexcel** covers testing types and test data design
+:::
 
 <hr />
 

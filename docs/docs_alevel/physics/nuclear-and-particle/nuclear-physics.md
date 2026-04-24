@@ -46,7 +46,8 @@ radius of $\sim 10^{-10}$ m).
 
 :::warning Common Pitfall The distance of closest approach is an *upper bound* on the nuclear radius,
 not the radius itself. The alpha particle never actually touches the nucleus (the strong nuclear force
-has a very short range). :::
+has a very short range).
+:::
 
 ## 2. Nuclear Structure
 
@@ -187,7 +188,8 @@ $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 No change in $A$ or $Z$. Weakly ionising, highly penetrating (requires thick lead or concrete).
 
 :::warning Common Pitfall In $\beta^-$ decay, $A$ does not change — only $Z$. The neutron becomes a
-proton, so the total nucleon count is unchanged. Do not write $A - 1$ for beta decay. :::
+proton, so the total nucleon count is unchanged. Do not write $A - 1$ for beta decay.
+:::
 
 ## 6. Exponential Decay Law and Half-Life
 

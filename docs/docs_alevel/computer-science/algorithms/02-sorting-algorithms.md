@@ -312,7 +312,8 @@ in the worst case. $\square$
 
 :::info Board-specific This lower bound explains why merge sort and quick sort (both $O(n \log n)$)
 are asymptotically optimal among comparison-based sorts. Non-comparison sorts (radix sort, counting
-sort) can beat $O(n \log n)$ but have restrictions on key types. :::
+sort) can beat $O(n \log n)$ but have restrictions on key types.
+:::
 
 <hr />
 

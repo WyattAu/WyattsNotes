@@ -221,7 +221,8 @@ int main() {
 - Mark leaf classes and leaf overrides as `final`.
 - Prefer local objects over heap-allocated objects where possible.
 - Use PGO for hot code paths where the dynamic type distribution is predictable.
-- Compile with `-O2` or `-O3` (required for most devirtualization passes). :::
+- Compile with `-O2` or `-O3` (required for most devirtualization passes).
+:::
 
 ## 3.6 Devirtualization Barriers
 
@@ -382,7 +383,8 @@ cl /O2 /GL main.cpp factory.cpp /link /LTCG
 
 :::warning LTO can increase link time significantly for large projects (minutes to tens of minutes).
 For CI builds, consider using ThinLTO (`-flto=thin` on Clang), which performs parallel LTO with
-lower memory usage at the cost of slightly less aggressive optimization. :::
+lower memory usage at the cost of slightly less aggressive optimization.
+:::
 
 ## 3.8 `final` and Its Effect on vtable Layout
 

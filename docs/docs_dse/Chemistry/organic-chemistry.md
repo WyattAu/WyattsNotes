@@ -181,7 +181,8 @@ $$\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$$
 :::warning The product mixture from chlorination of methane is a mixture of
 $\mathrm{CH}_3\mathrm{Cl}$, $\mathrm{CH}_2\mathrm{Cl}_2$, $\mathrm{CHCl}_3$, and $\mathrm{CCl}_4$
 because the substitution can continue on the same carbon atom. Controlling the ratio of methane to
-chlorine influences the proportion of products. :::
+chlorine influences the proportion of products.
+:::
 
 #### Cracking of Hydrocarbons
 
@@ -238,7 +239,8 @@ together) based on the atomic number of substituents:
 
 :::info E/Z isomerism is a type of **stereoisomerism**. Stereoisomers have the same structural
 formula but different spatial arrangements of atoms. For E/Z isomerism to occur, each carbon of the
-C=C must have two different substituents. :::
+C=C must have two different substituents.
+:::
 
 #### Physical Properties
 
@@ -295,7 +297,8 @@ The minor product, 1-bromopropane ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\math
 in smaller amounts.
 
 :::tip Markovnikov's Rule can be remembered as "the rich get richer": the carbon with more H atoms
-gets the additional H. :::
+gets the additional H.
+:::
 
 #### Industrial Importance of Alkenes
 
@@ -436,7 +439,8 @@ Product: phenylethanone (acetophenone).
 
 :::info Friedel-Crafts reactions cannot be used on benzene rings that already bear strongly
 electron-withdrawing groups (e.g., $-\mathrm{NO}_2$) because these deactivate the ring towards
-electrophilic attack. :::
+electrophilic attack.
+:::
 
 ---
 
@@ -677,7 +681,8 @@ $$n\mathrm{CH}_2=\mathrm{CHX} \to \left[\mathrm{--CH}_2\mathrm{--CHX--}\right]_n
 
 :::tip When drawing addition polymers, always show the repeating unit in square brackets with n
 outside. Include enough of the structure to show the pattern clearly (typically at least two
-repeating units). :::
+repeating units).
+:::
 
 ### 4.2 Condensation Polymerisation
 
@@ -771,7 +776,8 @@ Reduction is the addition of hydrogen or removal of oxygen.
 
 :::info $\mathrm{NaBH}_4$ is a milder reducing agent than $\mathrm{LiAlH}_4$. $\mathrm{NaBH}_4$ can
 reduce aldehydes and ketones but not carboxylic acids. $\mathrm{LiAlH}_4$ is more reactive and can
-reduce carboxylic acids, esters, and amides. :::
+reduce carboxylic acids, esters, and amides.
+:::
 
 ### 5.3 Hydrolysis of Esters
 

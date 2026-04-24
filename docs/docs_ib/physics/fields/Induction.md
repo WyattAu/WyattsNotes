@@ -65,7 +65,8 @@ $$
 $$
 
 :::info One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
-generated to oppose the change in flux through the coil. :::
+generated to oppose the change in flux through the coil.
+:::
 
 ## Lenz's Law
 
@@ -86,7 +87,8 @@ change in flux, it would create a runaway effect producing infinite energy.
 4. Use the right-hand grip rule to find the current direction from the magnetic field direction.
 
 :::tip Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
-induced current, and (b) **why** it flows in that direction (to oppose the change in flux). :::
+induced current, and (b) **why** it flows in that direction (to oppose the change in flux).
+:::
 
 ## Motional EMF
 
@@ -182,7 +184,8 @@ $$
 
 :::tip Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
 average power in AC circuits:
-$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$ :::
+$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$
+:::
 
 ## Transformers
 
@@ -297,7 +300,8 @@ solenoid.
 
 :::tip Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
 conservation. Make sure you can explain why Lenz's law is necessary (conservation of energy) and
-derive the motional EMF expression from Faraday's law. :::
+derive the motional EMF expression from Faraday's law.
+:::
 
 ---
 
@@ -476,7 +480,8 @@ $$
 
 :::warning This model assumes the entire disc is immersed in the field. In practice only a localized
 region passes through the field gap, so actual dissipation is far lower. The key result is the
-scaling: $P \propto \omega^2$ and $P \propto R^4$. :::
+scaling: $P \propto \omega^2$ and $P \propto R^4$.
+:::
 
 ---
 

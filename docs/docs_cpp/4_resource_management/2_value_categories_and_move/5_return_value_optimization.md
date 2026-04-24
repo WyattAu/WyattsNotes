@@ -493,7 +493,8 @@ std::string wrapped_return() {
 of the most performance-critical aspects of C++. In a well-written C++ program, objects are
 constructed in place (RVO), moved between scopes (move constructors), and swapped (swap idiom).
 Copies are the exception, not the rule. Understanding the fallback chain (RVO → NRVO → implicit move
-→ copy) is essential for writing code that is both correct and efficient. :::
+→ copy) is essential for writing code that is both correct and efficient.
+:::
 
 ## 8.6 RVO in Other Contexts
 

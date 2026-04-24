@@ -10,7 +10,8 @@ slug: web-technologies
 ---
 
 :::info Board-specific This topic is examined by Edexcel (P1, Topic 5) only. Other boards cover some
-of these concepts within their networking modules. :::
+of these concepts within their networking modules.
+:::
 
 ## 1. The Internet and the World Wide Web
 

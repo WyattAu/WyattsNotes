@@ -178,7 +178,8 @@ resistant to current flow.
 
 :::warning Common Pitfall Resistivity is a property of the material. Resistance is a property of a
 particular component. A long thin copper wire has high resistance but copper still has low
-resistivity. :::
+resistivity.
+:::
 
 ## 5. I-V Characteristics
 
@@ -243,7 +244,8 @@ The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour 
 $$1 \mathrm{ kWh} = 1000 \mathrm{ W} \times 3600 \mathrm{ s} = 3.6 \times 10^6 \mathrm{ J}$$
 
 :::tip Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
-current). For resistors in parallel, use $P = V^2/R$ (same voltage). :::
+current). For resistors in parallel, use $P = V^2/R$ (same voltage).
+:::
 
 ## 7. Temperature Dependence of Resistance
 
@@ -325,7 +327,8 @@ positive feedback loop.
 :::warning Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
 _positive_ temperature coefficient ($R$ increases with $T$). Semiconductors (thermistors) have a
 _negative_ temperature coefficient ($R$ decreases with $T$). The physical mechanism is entirely
-different: in metals, $\tau$ changes; in semiconductors, $n$ changes. :::
+different: in metals, $\tau$ changes; in semiconductors, $n$ changes.
+:::
 
 ## 8. Superconductivity
 
@@ -506,11 +509,13 @@ where $n$ is much smaller, $V_H$ is much larger and easier to measure.
 
 :::warning Common Pitfall In the Hall effect formula $V_H = BI/(nqd)$, $d$ is the thickness in the
 direction of the magnetic field, not the width of the conductor perpendicular to the current. Sketch
-the geometry carefully. :::
+the geometry carefully.
+:::
 
 :::tip Exam Technique When asked to determine whether a semiconductor is n-type or p-type using the
 Hall effect, focus on the _sign_ of the Hall voltage. Electrons (negative charge) deflect to one
-side, holes (positive charge) deflect to the opposite side. :::
+side, holes (positive charge) deflect to the opposite side.
+:::
 
 ## 10. Power Transmission
 
@@ -587,7 +592,8 @@ why high-voltage transmission is essential.
 
 :::tip Exam Technique When calculating transmission losses, remember to include both the outward and
 return cables (total length $= 2L$). Also remember that the voltage in $P = IV$ is the transmission
-voltage, not the voltage drop across the line resistance. :::
+voltage, not the voltage drop across the line resistance.
+:::
 
 ## Problem Set
 

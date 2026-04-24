@@ -339,7 +339,8 @@ To guarantee $O(\log n)$ operations, we need **balanced** BSTs:
 | B-tree    | $O(\log_b n)$           | Used in databases              |
 
 :::info Board-specific A Level exams typically only require understanding of basic BSTs and heaps.
-AVL trees and red-black trees are mentioned for context but not examined in detail. :::
+AVL trees and red-black trees are mentioned for context but not examined in detail.
+:::
 
 <hr />
 

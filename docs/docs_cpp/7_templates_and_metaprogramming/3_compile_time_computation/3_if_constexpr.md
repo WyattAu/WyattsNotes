@@ -122,7 +122,8 @@ int main() {
 does not participate in the One Definition Rule (ODR) for the discarded path. However, the
 non-discarded path is still subject to all normal C++ rules. Be careful with side effects in
 `if constexpr` branches --- a discarded branch that would have had a side effect does not execute,
-but a taken branch with a side effect does execute at runtime. :::
+but a taken branch with a side effect does execute at runtime.
+:::
 
 ## Type-Safe `to_string` with `if constexpr`
 
@@ -275,7 +276,8 @@ Output:
 full/partial template specialization for dispatching based on type properties because it keeps all
 logic in a single function body, avoids code duplication, and is easier to maintain. Specialization
 is still necessary when different types require fundamentally different function signatures or
-return types. :::
+return types.
+:::
 
 ## `constexpr` Functions
 
@@ -396,7 +398,8 @@ compile time and runtime. Use `consteval` when the function is intended only for
 computation and should never appear in the generated binary. `consteval` functions can call other
 `consteval` and `constexpr` functions, but a `constexpr` function cannot call a `consteval` function
 with a non-constant argument (because the `consteval` function would fail its compile-time
-requirement). :::
+requirement).
+:::
 
 ## `constinit` --- Compile-Time Initialization (C++20)
 
@@ -534,7 +537,8 @@ allocations must be **transient** --- they must be deallocated before the end of
 evaluation. The result of a `constexpr` function must not contain heap allocations
 (pointers/references to the heap). This is why `constexpr std::vector<int> v{1, 2, 3};` is valid as
 a local variable in a constexpr context, but you cannot return a heap-allocated vector and use it as
-a template argument. C++23 relaxes this further for non-transient allocations in some contexts. :::
+a template argument. C++23 relaxes this further for non-transient allocations in some contexts.
+:::
 
 ## `consteval` for Compile-Time String Parsing
 

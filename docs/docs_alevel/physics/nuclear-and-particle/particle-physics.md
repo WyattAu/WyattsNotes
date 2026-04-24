@@ -140,7 +140,8 @@ In all particle interactions, the following quantities are **always conserved**:
 
 :::warning Common Pitfall Strangeness is conserved by the strong and electromagnetic interactions but
 **not** by the weak interaction. Strange particles are always produced in pairs (associated production)
-via the strong interaction (conserving $S$) but decay individually via the weak interaction. :::
+via the strong interaction (conserving $S$) but decay individually via the weak interaction.
+:::
 
 <details>
 <summary>Worked Example: Conservation Check</summary>

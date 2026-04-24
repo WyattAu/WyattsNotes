@@ -19,7 +19,8 @@ slug: momentum
 | CIE (9709) | P4      | Momentum, impulse, restitution |
 
 :::info Momentum is a vector quantity. Always define a positive direction and be consistent with
-signs. :::
+signs.
+:::
 
 <hr />
 
@@ -176,7 +177,8 @@ $$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
 Combining both results: $0 \leq e \leq 1$. $\blacksquare$
 
 :::warning An exam question may ask you to justify $e \leq 1$. The key argument is that kinetic
-energy cannot increase during a collision. :::
+energy cannot increase during a collision.
+:::
 
 <hr />
 
@@ -221,7 +223,8 @@ This is particularly useful for oblique impacts where the impulse acts in a spec
 
 :::info The impulse-momentum theorem is the bridge between Newton's Second Law (a differential
 equation) and conservation of momentum (an algebraic constraint). It tells us exactly how much
-momentum a force transfers over a given time interval. :::
+momentum a force transfers over a given time interval.
+:::
 
 <hr />
 

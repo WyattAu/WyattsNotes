@@ -132,7 +132,8 @@ $\Delta = 496 > 0$, so the line intersects the circle at two points.
 </details>
 
 :::tip Always substitute the _linear_ equation into the _quadratic_ one. The reverse would create a
-quadratic in both variables, which is harder to solve. :::
+quadratic in both variables, which is harder to solve.
+:::
 
 <hr />
 
@@ -152,7 +153,8 @@ inequality.
 
 :::warning The most common error in inequalities is forgetting to reverse the sign when
 multiplying/dividing by a negative number. Always check the sign of the multiplier before
-proceeding. :::
+proceeding.
+:::
 
 ### 3.2 Quadratic Inequalities
 
@@ -491,7 +493,8 @@ No real solution from this case.
 
 :::warning When squaring both sides of an inequality, both sides must be non-negative. The
 inequality $|f(x)| \lt g(x)$ only makes sense when $g(x) \gt 0$, and squaring preserves the
-direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$. :::
+direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$.
+:::
 
 <hr />
 

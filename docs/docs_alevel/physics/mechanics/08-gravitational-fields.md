@@ -380,7 +380,8 @@ at the surface (for a uniform sphere).
 
 :::warning Common Pitfall Satellites in low Earth orbit are NOT in "zero gravity." The gravitational
 field strength at 300 km altitude is still about 89% of its surface value. Astronauts experience
-weightlessness because they are in free fall, not because gravity is absent. :::
+weightlessness because they are in free fall, not because gravity is absent.
+:::
 
 ## 10. Geostationary Orbits
 
@@ -432,7 +433,8 @@ medium Earth orbits for better geometric accuracy.
 :::warning Common Pitfall A geostationary orbit is NOT the same as a geosynchronous orbit. A
 geosynchronous orbit has period 24 hours but can be inclined or elliptical, so the satellite appears
 to trace a figure-eight in the sky. Geostationary implies geosynchronous AND equatorial AND
-circular. :::
+circular.
+:::
 
 ## 11. Gravitational Potential Energy — Taylor Expansion
 
@@ -480,7 +482,8 @@ escape, enough energy must be added to raise $E_{\mathrm{total}}$ to zero.
 :::tip Exam Technique When asked why $E_p = -GMm/r$ is negative, explain: we define $V = 0$ at
 infinity, so bringing masses together releases energy (the system loses potential energy). The
 negative sign reflects this. The formula $E_p = mgh$ is only a special case for small heights near
-the surface. :::
+the surface.
+:::
 
 ## 12. Escape Velocity — Extended Discussion
 

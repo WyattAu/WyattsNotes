@@ -145,12 +145,14 @@ straight line. Two approaches are available:
 whether the curve crosses the time axis. If it does, the velocity changes sign and you must split
 the calculation: the **area above** the axis is positive displacement, the **area below** is
 negative displacement. The total distance is the sum of absolute areas; the net displacement is
-their algebraic sum. :::
+their algebraic sum.
+:::
 
 :::warning Common Pitfall Students often draw a tangent to a curve incorrectly by placing the ruler
 away from the point of interest. Always place the ruler so it just touches the curve **at the
 point** where you need the gradient, then extend it to read two clear coordinates for
-$\Delta y / \Delta x$. :::
+$\Delta y / \Delta x$.
+:::
 
 <details>
 <summary>Example: Finding displacement from a curved v-t graph</summary>
@@ -173,7 +175,8 @@ This was established by Galileo's experiments and is a consequence of the equiva
 (mass cancels in $F = ma = mg$).
 
 :::info Board Note Some boards use $g = 9.8$ m s$^{-2}$ or $g = 10$ m s$^{-2}$ in numerical
-problems. Always use the value specified in the question. :::
+problems. Always use the value specified in the question.
+:::
 
 ## 5. Projectile Motion
 
@@ -289,7 +292,8 @@ a decreasing gradient (decreasing acceleration) until it asymptotically approach
 
 :::warning Common Pitfall Terminal velocity does **not** mean the object has stopped accelerating
 because it has run out of force. The forces are balanced: weight down equals drag up. The
-acceleration is zero because the **net** force is zero, not because no forces act. :::
+acceleration is zero because the **net** force is zero, not because no forces act.
+:::
 
 ## 6. Non-Uniform Acceleration
 
@@ -327,7 +331,8 @@ $t$.
 displacement -- to decide which calculus method to use. If $a$ is a function of $t$, integrate
 $dv/dt$ directly. If $a$ is a function of $s$, use $a = v\,dv/ds$ and integrate with respect to $s$.
 If $a$ is a function of $v$, rewrite as $dt/dv = 1/f(v)$ and integrate to find $t(v)$, then invert
-if possible. :::
+if possible.
+:::
 
 ### Derivation of $v^2 = u^2 + 2as$ by Integration
 
@@ -400,7 +405,8 @@ with speed $v_b$ (relative to water) can:
 
 :::warning Common Pitfall The boat's speed $v_b$ is always relative to the water, not relative to
 the ground. The ground speed is the vector sum of the boat's water-relative velocity and the current
-velocity. Never add the magnitudes directly unless the velocities are in the same direction. :::
+velocity. Never add the magnitudes directly unless the velocities are in the same direction.
+:::
 
 ### Relative Velocity and Closest Approach
 

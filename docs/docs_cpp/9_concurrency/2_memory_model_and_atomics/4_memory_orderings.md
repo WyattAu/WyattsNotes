@@ -79,7 +79,8 @@ int main() {
 
 :::tip Relaxed ordering is the cheapest atomic operation on most architectures. On x86, `relaxed`
 loads and stores compile to plain `mov` instructions. On ARM, `relaxed` loads use `ldar` and stores
-use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version). :::
+use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version).
+:::
 
 ### When Relaxed Is Insufficient: The Message Passing Idiom
 
@@ -195,7 +196,8 @@ on some implementations. On ARM, `seq_cst` operations use `dmb ish` barriers.
 
 :::info `memory_order_seq_cst` is the **default** for all atomic operations if no memory order is
 specified. This ensures maximum safety but may not be necessary in all cases. For
-performance-critical code, consider using weaker orderings where appropriate. :::
+performance-critical code, consider using weaker orderings where appropriate.
+:::
 
 ### The Store Buffering Problem (Why seq_cst Is Needed)
 

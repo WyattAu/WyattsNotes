@@ -33,7 +33,8 @@ $$
 \end{aligned}
 $$
 
-![Coulombs_law](/img/physics/CoulombsLaw.png) :::
+![Coulombs_law](/img/physics/CoulombsLaw.png)
+:::
 
 Where the constant $k$ is named Coulomb's constant and is equal to:
 

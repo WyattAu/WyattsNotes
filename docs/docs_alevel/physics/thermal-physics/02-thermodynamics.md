@@ -40,7 +40,8 @@ where:
 
 :::warning Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
 work done **by** the system. Always check which convention is being used. We use the "physics"
-convention where $W$ is work done on the system. :::
+convention where $W$ is work done on the system.
+:::
 
 **Intuition.** The first law is simply energy conservation applied to thermodynamic systems. You can
 increase a gas's internal energy either by heating it or by compressing it (doing work on it).
@@ -232,7 +233,8 @@ Note that $\mathrm{COP}_{\mathrm{hp}} = \mathrm{COP}_{\mathrm{ref}} + 1$.
 
 :::warning Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
 refrigerator COP ($Q_C/W$). The key difference: efficiency is a fraction (always $\lt 1$), while COP
-can exceed 1 (you move more heat than the work you put in). :::
+can exceed 1 (you move more heat than the work you put in).
+:::
 
 ## 5. The Second Law of Thermodynamics
 

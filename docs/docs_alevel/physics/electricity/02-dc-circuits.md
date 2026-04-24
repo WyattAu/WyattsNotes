@@ -56,7 +56,8 @@ $\square$
 
 :::tip Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
 stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
-if current flows through the resistor in your chosen direction. :::
+if current flows through the resistor in your chosen direction.
+:::
 
 ## 2. Series and Parallel Resistors
 
@@ -134,7 +135,8 @@ $$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac{R_{\mathrm{sensor}}}{R_{\mathrm
 
 :::warning Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
 changes the effective resistance. The simple divider formula no longer applies — you must
-recalculate the parallel combination of $R_2$ and the load. :::
+recalculate the parallel combination of $R_2$ and the load.
+:::
 
 ## 4. Internal Resistance
 
@@ -285,7 +287,8 @@ for balance.
 
 :::warning Common Pitfall The Wheatstone bridge balance condition only holds when the galvanometer
 current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's laws (or Thevenin
-analysis) to find the galvanometer current. :::
+analysis) to find the galvanometer current.
+:::
 
 ## 7. Norton's Theorem
 
@@ -319,7 +322,8 @@ and $R_N = R_{\mathrm{Th}}$. $\square$
 
 :::tip Exam Technique Source transformations are useful for simplifying circuits step by step.
 Convert a voltage source with series resistance to a Norton equivalent, combine parallel current
-sources, then convert back. :::
+sources, then convert back.
+:::
 
 ## 8. Multi-Loop Circuit Analysis
 
@@ -429,7 +433,8 @@ Note the very small shunt resistance — most current bypasses the galvanometer.
 
 :::warning Common Pitfall A voltmeter with insufficiently high resistance can significantly alter
 the circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule of thumb:
-$R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error). :::
+$R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
+:::
 
 ## Problem Set
 

@@ -47,7 +47,8 @@ gene).
 :::info Lamarckism is not accepted by modern science. However, the field of epigenetics has revealed
 that environmental factors can influence gene expression across generations without changing the DNA
 sequence itself. This is sometimes mistakenly conflated with Lamarckism, but epigenetic changes are
-reversible and do not create new alleles. :::
+reversible and do not create new alleles.
+:::
 
 ---
 
@@ -115,7 +116,8 @@ if it were purely deleterious.
 
 :::warning A common misconception is that antibiotic resistance develops because bacteria "need" to
 survive. Resistance arises from random pre-existing mutations; the antibiotic simply selects for
-resistant individuals. The mutation occurs regardless of the antibiotic's presence. :::
+resistant individuals. The mutation occurs regardless of the antibiotic's presence.
+:::
 
 ---
 
@@ -185,7 +187,8 @@ $$q = \frac{400}{1000} = 0.4$$
 
 :::info In DSE exams, HWE calculations are almost always tested. Remember: you can always determine
 $q$ from $q^2$ (the homozygous recessive frequency), and then $p$ from $p = 1 - q$. The heterozygote
-frequency $2pq$ is the one most students miscalculate -- do not assume it equals $p + q$. :::
+frequency $2pq$ is the one most students miscalculate -- do not assume it equals $p + q$.
+:::
 
 ### Genetic Drift
 
@@ -248,7 +251,8 @@ New species arise without geographic separation. Common mechanisms include:
 :::info Polyploidy is extremely rare in animals but is a major driver of speciation in plants.
 Approximately 30-70% of flowering plant species are polyploid. In the DSE, questions about
 speciation typically focus on allopatric speciation, but you should be able to explain polyploidy as
-a mechanism of sympatric speciation in plants. :::
+a mechanism of sympatric speciation in plants.
+:::
 
 ---
 
@@ -392,7 +396,8 @@ the only one whose matrilineal line has survived unbroken to the present day.
 :::info Mitochondrial Eve is a statistical concept, not a single individual who was the only human
 female alive. Many other women lived at the same time, but their matrilineal lines happened to die
 out at some point. The Y-chromosomal Adam (the most recent common paternal ancestor) lived
-approximately 200,000-300,000 years ago, and the two individuals were not contemporaries. :::
+approximately 200,000-300,000 years ago, and the two individuals were not contemporaries.
+:::
 
 ---
 
@@ -523,7 +528,8 @@ Three idealised types:
 
 :::warning Real survivorship curves rarely match idealised types exactly. Many species show
 intermediate patterns. When interpreting DSE exam questions, look for the general shape rather than
-trying to force a perfect classification. :::
+trying to force a perfect classification.
+:::
 
 ---
 
@@ -664,7 +670,8 @@ $$\mathrm{Energy available at level } n = 0.1^n \times \mathrm{Energy at produce
 :::info The 10% rule is an approximation. Actual transfer efficiency ranges from about 5% to 20%
 depending on the ecosystem and the organisms involved. Cold-blooded organisms are more
 energy-efficient than warm-blooded ones. In DSE calculations, use 10% unless the question specifies
-otherwise. :::
+otherwise.
+:::
 
 ### Nutrient Cycles
 
@@ -772,7 +779,8 @@ $$\mathrm{NPP} = \mathrm{energy stored in plant biomass}$$
 
 :::info In DSE questions on biomes, you may be asked to interpret climate graphs (temperature and
 precipitation plotted by month). Key features to identify: annual temperature range, wet and dry
-seasons, total precipitation. Match these to the biome descriptions above. :::
+seasons, total precipitation. Match these to the biome descriptions above.
+:::
 
 ---
 
@@ -881,7 +889,8 @@ Major causes (often remembered by the acronym HIPPO):
 
 :::warning A common DSE exam pitfall is confusing bioaccumulation with biomagnification. Remember:
 bioaccumulation is within an individual; biomagnification is across trophic levels. Both terms can
-appear in the same question. :::
+appear in the same question.
+:::
 
 ---
 
@@ -964,7 +973,8 @@ $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 Where $O$ = observed frequency and $E$ = expected frequency. Compare the calculated value to the
 critical value at the appropriate degrees of freedom ($df = \mathrm{number of categories} - 1$) and
-significance level (typically $p = 0.05$). :::
+significance level (typically $p = 0.05$).
+:::
 
 ---
 

@@ -151,7 +151,8 @@ A practical method uses conducting paper with electrodes painted on:
 
 :::warning Common Pitfall Equipotential lines and field lines are perpendicular, but this does NOT mean
 the field is zero on an equipotential. The field is non-zero and perpendicular; only the component
-tangent to the surface is zero. :::
+tangent to the surface is zero.
+:::
 
 ## 5. Motion of Charged Particles in Uniform Fields
 
@@ -236,7 +237,8 @@ plates, closer spacing, and lower acceleration voltage.
 
 :::warning Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
 (which determines beam speed) with the deflection voltage $V_d$ (which determines deflection). The
-deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$. :::
+deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$.
+:::
 
 ## 7. Electric Fields of Extended Charge Distributions
 

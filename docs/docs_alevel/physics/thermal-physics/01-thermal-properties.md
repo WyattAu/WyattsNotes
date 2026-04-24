@@ -53,7 +53,8 @@ existence of atoms and molecules.
 
 :::info Board Coverage AQA: Brownian motion is required practical observation. Edexcel: Explanation
 in terms of molecular bombardment. OCR (A): Historical context and Einstein's analysis. CIE:
-Qualitative and quantitative treatment. :::
+Qualitative and quantitative treatment.
+:::
 
 ## 2. Specific Heat Capacity
 
@@ -85,7 +86,8 @@ requires much more energy than fusion because gas molecules are completely separ
 :::warning Common Pitfall Do not confuse specific heat capacity (which raises temperature) with
 latent heat (which changes state at constant temperature). In a heating curve, the flat sections are
 phase changes (latent heat), and the sloped sections are temperature changes (specific heat
-capacity). :::
+capacity).
+:::
 
 ### Internal Energy
 
@@ -274,7 +276,8 @@ inertia is negligible), leaving only 2 rotational DOF.
 
 :::warning Common Pitfall At A-Level, vibrational DOF are not considered (they are significant only
 at high temperatures). The equipartition theorem applies to each fully-excited quadratic DOF. At
-room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6. :::
+room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6.
+:::
 
 ## 7. Maxwell-Boltzmann Speed Distribution
 
@@ -300,7 +303,8 @@ distribution narrows and shifts left (heavier molecules move more slowly at the 
 
 :::info Board Coverage AQA: Qualitative understanding of the distribution shape. Edexcel: Comparison
 of speeds at different temperatures. OCR (A): Ratio of speeds for different gases. CIE: Quantitative
-use of all three speed measures. :::
+use of all three speed measures.
+:::
 
 <details>
 <summary>Example: Speed Ratio for Different Gases</summary>

@@ -136,7 +136,8 @@ displacement $d$ depends on the thickness $t$ of the slab:
 $$d = t \cdot \sin\theta_1 \left(1 - \frac{\cos\theta_1}{\sqrt{n^2 - \sin^2\theta_1}}\right)$$
 
 :::info Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
-2 (core practical) | CIE P2 :::
+2 (core practical) | CIE P2
+:::
 
 ## 3. Total Internal Reflection
 
@@ -167,7 +168,8 @@ $\sin\theta_2 < \sin\theta_1 \leq 1$ for all $\theta_1$, so refraction always oc
 
 :::warning Common Pitfall TIR can only occur when light travels from a denser medium to a less dense
 medium. Light going from air into glass can never undergo TIR, no matter how large the angle of
-incidence. :::
+incidence.
+:::
 
 <details>
 <summary>Example: Critical Angle of Glass</summary>
@@ -256,7 +258,8 @@ Two main effects degrade the signal in optical fibres:
 
 :::tip Exam Technique When asked about advantages of optical fibres over copper cables, mention:
 higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking risk,
-lower signal loss over long distances. :::
+lower signal loss over long distances.
+:::
 
 ### Types of Optical Fibre
 
@@ -300,7 +303,8 @@ periscopes because TIR gives 100% reflection (no absorption by a metallic coatin
 reflective surface is protected inside the glass, making it resistant to scratches and tarnishing.
 
 :::info Board Coverage AQA Paper 2 (optical fibres in required practical) | Edexcel CP6 (medical
-physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2 :::
+physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
+:::
 
 ## Problem Set
 

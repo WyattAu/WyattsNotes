@@ -57,7 +57,8 @@ $$G = 1 - 2B$$
 
 :::info International Comparisons (2023 estimates)
 
-- Denmark: 0.28 | Germany: 0.31 | UK: 0.35 | USA: 0.40 | Brazil: 0.52 | South Africa: 0.63 :::
+- Denmark: 0.28 | Germany: 0.31 | UK: 0.35 | USA: 0.40 | Brazil: 0.52 | South Africa: 0.63
+:::
 
 ### 1.3 Limitations of the Gini Coefficient
 
@@ -216,7 +217,8 @@ exists some $t^* \in (0, 1)$ that maximises revenue.
 
 :::warning Common Pitfall The Laffer curve is a theoretical concept — there is no consensus on where
 $t^*$ lies. Most empirical estimates for developed economies suggest that income tax rates are below
-the revenue-maximising rate, meaning tax cuts would _reduce_ revenue. :::
+the revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
+:::
 
 ### 5.3 Evaluating the Trade-Off
 
@@ -238,7 +240,8 @@ the revenue-maximising rate, meaning tax cuts would _reduce_ revenue. :::
 
 :::tip Exam Technique When asked to evaluate inequality policies, consider: effectiveness (does it
 reduce inequality?), efficiency (does it create disincentives?), equity (is it fair?), fiscal cost
-(can the government afford it?), and unintended consequences (does it create poverty traps?). :::
+(can the government afford it?), and unintended consequences (does it create poverty traps?).
+:::
 
 ## 6. Critical Evaluation
 
@@ -262,7 +265,8 @@ reduce inequality?), efficiency (does it create disincentives?), equity (is it f
 :::info Board-Specific Note AQA requires detailed knowledge of the Lorenz curve and Gini
 coefficient, including calculations. Edexcel emphasises poverty measures and government policy. CIE
 covers inequality in the context of development economics. OCR (A) links distribution to market
-failure and government intervention. :::
+failure and government intervention.
+:::
 
 ## 7. Formal Derivations
 

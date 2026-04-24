@@ -637,7 +637,8 @@ $T = 2\pi/\omega_p = 26.2 \mathrm{ s}$.
 
 :::info Precession occurs because the torque (due to gravity) is perpendicular to the angular
 momentum vector. Instead of tipping over, the angular momentum vector rotates horizontally. This is
-the same principle behind gyrocompasses and spacecraft attitude control. :::
+the same principle behind gyrocompasses and spacecraft attitude control.
+:::
 
 ### Example 17: Moment of Inertia of a Composite Object
 

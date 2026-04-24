@@ -90,7 +90,8 @@ than at the previous level, explaining why food chains are typically limited to 
 :::warning Common Pitfall Students often state that "90% of energy is lost" at each trophic level.
 The precise figure varies (typically 80%--90% is lost, 10%--20% is transferred). The key point is
 that the loss is substantial and cumulative, which is why food chains are short. The lost energy is
-not "wasted" -- it is dissipated as heat according to the second law of thermodynamics. :::
+not "wasted" -- it is dissipated as heat according to the second law of thermodynamics.
+:::
 
 ## 2. Populations
 
@@ -393,7 +394,8 @@ to withstand and recover from disturbances.
 :::warning Common Pitfall Students often present in situ and ex situ conservation as alternatives.
 They are complementary strategies. In situ is generally preferred because it conserves the entire
 ecosystem and evolutionary processes, but ex situ is essential as a backup for species whose habitat
-has been destroyed or whose population is too small to survive in the wild. :::
+has been destroyed or whose population is too small to survive in the wild.
+:::
 
 ## Practice Problems
 

@@ -67,7 +67,8 @@ $$\pi = \Delta M - \Delta V + \Delta Y \approx \Delta M - \Delta Y$$
 :::info Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
 (9708) Paper 4 often asks students to evaluate the effectiveness of demand-side policies, requiring
 them to contrast Keynesian and monetarist perspectives. Edexcel requires students to discuss the
-"battle of the economists" in the context of policy debates. :::
+"battle of the economists" in the context of policy debates.
+:::
 
 ### 1.4 Evaluation: The Keynesian-Monetarist Debate in Practice
 
@@ -207,7 +208,8 @@ monetary policy and may require discussion of the transmission mechanism. Edexce
 asks about the role of central bank independence in achieving macroeconomic objectives. OCR
 (Paper 3) may ask students to compare different monetary policy frameworks. CIE (9708) Paper 4
 expects students to evaluate the relative merits of rules vs discretion with reference to specific
-country examples. :::
+country examples.
+:::
 
 ## 3. The Lucas Critique
 
@@ -450,7 +452,8 @@ apply to countries that borrow in foreign currency (emerging markets — most de
 misrepresentation. MMT argues that deficits should be used to achieve real objectives (full
 employment) and that the only constraint is inflation. It does not claim that unlimited deficits are
 harmless. However, the practical difficulty of knowing when inflation will emerge makes MMT's policy
-prescriptions risky. :::
+prescriptions risky.
+:::
 
 ### 5.3 Exam Technique: Evaluating Policy Frameworks
 
@@ -523,7 +526,8 @@ effect depends on the relative strength of each.
 effectiveness of policy mixes. Edexcel Paper 3 expects discussion of policy conflicts and
 trade-offs. OCR may ask about the role of the Treasury and `` `{BoE}` `` in coordinating policy. CIE
 Paper 4 frequently asks students to assess whether government intervention can achieve multiple
-macroeconomic objectives simultaneously. :::
+macroeconomic objectives simultaneously.
+:::
 
 ## 7. Nominal GDP Targeting: An Alternative Framework
 

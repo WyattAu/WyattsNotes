@@ -19,7 +19,8 @@ slug: trigonometry
 | CIE (9709) | P1, P2, P3 | Trig functions in P1; identities and equations in P2; further trig in P3 |
 
 :::info All boards provide trigonometric identities in the formula booklet, but not their proofs.
-You need to know _which_ identities exist and how to apply them. :::
+You need to know _which_ identities exist and how to apply them.
+:::
 
 <hr />
 
@@ -248,7 +249,8 @@ _Intuition._ Near the origin, the curves $y = \sin\theta$ and $y = \tan\theta$ a
 indistinguishable from the line $y = \theta$. The curve $y = \cos\theta$ is nearly flat at $y = 1$.
 
 :::warning The small angle approximations are only valid when $\theta$ is in **radians**, not
-degrees. This is a very common exam error. :::
+degrees. This is a very common exam error.
+:::
 
 <hr />
 

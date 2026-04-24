@@ -48,7 +48,8 @@ Since $f = \frac{1}{T}$, we can also write:
 $$v = \frac{\lambda}{T}$$
 
 :::info The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
-electromagnetic. :::
+electromagnetic.
+:::
 
 ### Worked Example 1
 
@@ -103,7 +104,8 @@ Where $c$ is the speed of light in vacuum and $v$ is the speed of light in the m
 
 :::info When a wave enters a denser medium (higher refractive index), it slows down and bends
 **towards** the normal. When entering a less dense medium, it speeds up and bends **away** from the
-normal. :::
+normal.
+:::
 
 ### Total Internal Reflection
 
@@ -227,7 +229,8 @@ Where $I_0 = 10^{-12} \mathrm{ W/m}^2$ is the threshold of hearing.
 
 :::warning Loudness is a subjective measure (perceived by the ear) while intensity is an objective
 physical quantity. A $10 \mathrm{ dB}$ increase corresponds to a $10\times$ increase in intensity,
-but is perceived as roughly a doubling of loudness. :::
+but is perceived as roughly a doubling of loudness.
+:::
 
 ### Worked Example 5
 
@@ -275,7 +278,8 @@ All EM waves:
 
 :::tip For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
 **R**adio, **M**icrowaves, **I**nfrared, **V**isible, **U**ltraviolet, **X**-rays, **G**amma rays
-(RMIVUXG). :::
+(RMIVUXG).
+:::
 
 ---
 
@@ -378,7 +382,8 @@ internal reflection and travels along the fibre.
 
 :::warning In exam questions, always check whether you need to calculate the critical angle or the
 acceptance angle. The acceptance angle is the maximum angle at which light can enter the fibre and
-still undergo total internal reflection. :::
+still undergo total internal reflection.
+:::
 
 ### Worked Example 7
 
@@ -530,7 +535,8 @@ The observed frequency is lower than the source frequency.
 
 :::info Red shift occurs when a light source moves away from the observer. The observed wavelength
 increases (shifts towards the red end of the spectrum). This is key evidence for the expansion of
-the universe. :::
+the universe.
+:::
 
 ### Worked Example 9
 
@@ -628,7 +634,8 @@ Damping reduces the amplitude of oscillations over time by dissipating energy.
 - **Over-damping:** System returns to equilibrium slowly without oscillating
 
 :::warning In real-world applications, some damping is often deliberately introduced to prevent
-excessive vibrations at resonance. Car shock absorbers and building dampers are examples. :::
+excessive vibrations at resonance. Car shock absorbers and building dampers are examples.
+:::
 
 ---
 

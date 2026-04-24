@@ -128,7 +128,8 @@ int main() {
 
 :::tip `std::make_unique` (C++14) is implemented essentially as shown above. The variadic template +
 perfect forwarding pattern (`Args&&... args` with `std::forward<Args>(args)...`) is one of the most
-important idioms in modern C++ template programming. :::
+important idioms in modern C++ template programming.
+:::
 
 ## Variadic Class Templates
 

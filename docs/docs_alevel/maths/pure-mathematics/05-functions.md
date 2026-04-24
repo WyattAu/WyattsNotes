@@ -73,7 +73,8 @@ Clearly $f \circ g \neq g \circ f$.
 </details>
 
 :::warning When computing $f \circ g$, always apply $g$ first, then $f$. Think of it as reading
-right to left: $(f \circ g)(x) = f(g(x))$. :::
+right to left: $(f \circ g)(x) = f(g(x))$.
+:::
 
 <hr />
 
@@ -256,7 +257,8 @@ represents: horizontal translation by $p$ (right), vertical stretch by factor $a
 translation by $q$ (up).
 
 :::tip Apply horizontal transformations first (inside the function), then vertical transformations
-(outside). The order inside-out matters. :::
+(outside). The order inside-out matters.
+:::
 
 <hr />
 
@@ -421,7 +423,8 @@ vertical transformations interact differently.
    vertical shift $d$.
 
 :::warning Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$, NOT $-c$. The stretch
-"absorbs" part of the shift. This is the single most common error in transformation problems. :::
+"absorbs" part of the shift. This is the single most common error in transformation problems.
+:::
 
 <details>
 <summary>Example</summary>

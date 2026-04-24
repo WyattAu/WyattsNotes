@@ -179,7 +179,8 @@ friction to act over a distance proportional to $v^2$.
 
 :::warning Common Pitfall Students sometimes write "energy is lost" when friction acts. Energy is
 never lost -- it is transferred from mechanical to thermal (internal) energy. The total energy of
-the closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases. :::
+the closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases.
+:::
 
 <details>
 <summary>Example: Braking distance comparison</summary>
@@ -234,7 +235,8 @@ needing to know the distance or time separately.
 :::tip Exam Technique When asked for "the power developed by the engine" as a car accelerates,
 specify whether you mean instantaneous power ($P = Fv$) or average power ($P = Fs/t$). The
 instantaneous power at the end of the acceleration is $Fv_{\mathrm{final}}$, while the average power
-over the whole acceleration is $F(u+v)/2$. :::
+over the whole acceleration is $F(u+v)/2$.
+:::
 
 **Definition.** The **efficiency** of an energy transfer is:
 

@@ -58,7 +58,8 @@ As the price of a good increases, the quantity demanded decreases, and vice vers
 | Successful advertising               | Demand shifts right |
 
 :::tip Remember: a change in the good's own price causes movement **along** the curve. A change in
-any other factor causes a **shift** of the curve. DSE exams frequently test this distinction. :::
+any other factor causes a **shift** of the curve. DSE exams frequently test this distinction.
+:::
 
 ### Individual Demand vs Market Demand
 
@@ -104,7 +105,8 @@ incentivising producers to supply more.
 | Expectation of future price increase       | Supply shifts left (withhold stock) |
 
 :::warning A common exam mistake is confusing "increase in quantity supplied" (movement along) with
-"increase in supply" (shift). Be precise with terminology. :::
+"increase in supply" (shift). Be precise with terminology.
+:::
 
 ### Market Supply
 
@@ -212,7 +214,8 @@ $$\mathrm{Total Revenue (TR)} = P \times Q$$
 | Unit elastic (PED = 1) | TR unchanged   | TR unchanged   |
 
 :::tip If a firm wants to increase revenue, it should lower price if demand is elastic and raise
-price if demand is inelastic. This is a very common exam question. :::
+price if demand is inelastic. This is a very common exam question.
+:::
 
 ### Worked Example 3
 
@@ -577,7 +580,8 @@ Marginal product starts to diminish after the 3rd worker. Negative marginal prod
 - MC passes below ATC when ATC is falling, and above ATC when ATC is rising
 
 :::info The MC curve always intersects the AVC and ATC curves at their minimum points. This is
-because when MC \lt ATC, it pulls ATC down; when MC \gt ATC, it pulls ATC up. :::
+because when MC \lt ATC, it pulls ATC down; when MC \gt ATC, it pulls ATC up.
+:::
 
 ### Revenue
 
@@ -678,7 +682,8 @@ Maximum profit: TR - TC = 250 - 185 = USD 65.
 
 :::warning A monopoly does NOT set the highest possible price. It sets the profit-maximising price
 where MR = MC. Setting the highest price would reduce quantity sold too much and lower total
-revenue. :::
+revenue.
+:::
 
 ---
 

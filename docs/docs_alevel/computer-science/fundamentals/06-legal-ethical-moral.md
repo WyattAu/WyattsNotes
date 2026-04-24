@@ -14,7 +14,8 @@ slug: legal-ethical-moral-issues
 :::info Board-specific AQA Paper 2 | Edexcel P2 | OCR (A) Paper 2 | CIE Paper 2 This topic is
 mandatory across all four major A-Level boards. AQA and OCR tend to ask structured questions
 requiring you to apply legislation to scenarios. CIE and Edexcel favour longer-essay style responses
-evaluating the impact of technology on society. :::
+evaluating the impact of technology on society.
+:::
 
 ### Definition
 
@@ -44,7 +45,8 @@ cultures, whereas laws aim for consistency within a jurisdiction.
 
 :::warning Exam questions often ask you to "evaluate the legal and ethical implications" of a
 scenario. "Legal" means identify the specific Act and explain how it applies. "Ethical" means apply
-an ethical framework or professional code. Do not confuse the two. :::
+an ethical framework or professional code. Do not confuse the two.
+:::
 
 ### Why This Matters for Computer Scientists
 
@@ -67,7 +69,8 @@ these frameworks because:
 
 :::info Board-specific AQA explicitly names this Act. OCR (A) and Edexcel also require detailed
 knowledge. CIE does not specify UK legislation but expects awareness of computer misuse laws
-generally. :::
+generally.
+:::
 
 **Definition.** The **Computer Misuse Act 1990** (CMA) is a UK Act of Parliament that criminalises
 unauthorised access to computer systems and unauthorised modification of computer material. It was
@@ -102,12 +105,14 @@ Act 2015.
 
 :::warning Common exam pitfall: s.1 requires only that access is unauthorised. The defendant does
 not need to have damaged or stolen anything. Merely guessing a password and gaining entry is
-sufficient for conviction. Distinguish s.1 (access only) from s.3 (impairment/damage). :::
+sufficient for conviction. Distinguish s.1 (access only) from s.3 (impairment/damage).
+:::
 
 ### 2.2 Data Protection Act 2018 and UK GDPR
 
 :::info Board-specific Mandatory for AQA, OCR (A), Edexcel, and CIE. This is the most frequently
-tested piece of legislation across all boards. :::
+tested piece of legislation across all boards.
+:::
 
 **Definition.** The **Data Protection Act 2018** (DPA 2018) is the UK's implementation of the EU
 General Data Protection Regulation (GDPR). Following Brexit, the UK operates under "UK GDPR" which
@@ -192,12 +197,14 @@ The ICO can impose:
 :::warning A common exam question asks about the difference between a data controller and a data
 processor. The controller decides _why_ and _how_ data is processed; the processor carries out the
 processing on the controller's behalf. Both have obligations under UK GDPR, but the controller bears
-primary responsibility. :::
+primary responsibility.
+:::
 
 ### 2.3 Copyright, Designs and Patents Act 1988
 
 :::info Board-specific AQA and OCR (A) explicitly require this. Edexcel covers intellectual property
-under its "Impacts of Computing" topic. CIE expects general understanding of software copyright. :::
+under its "Impacts of Computing" topic. CIE expects general understanding of software copyright.
+:::
 
 **Definition.** The **Copyright, Designs and Patents Act 1988** (CDPA) is the primary UK legislation
 governing intellectual property rights. It grants creators automatic protection of their original
@@ -325,7 +332,8 @@ government.
 
 :::info Board-specific OCR (A) explicitly references algorithmic bias. AQA includes this under its
 "Ethical, Legal, and Environmental Impacts" topic. Edexcel covers discrimination in automated
-systems. :::
+systems.
+:::
 
 **Definition.** The **Equality Act 2010** consolidates previous anti-discrimination legislation (
 including the Race Relations Act, Sex Discrimination Act, and Disability Discrimination Act). It
@@ -541,7 +549,8 @@ The key virtues include: honesty, justice, courage, temperance, prudence, compas
 
 :::warning Exam questions often ask you to "apply an ethical framework" to a scenario. You must name
 the framework, explain its core principle, and then apply it to the specific case. Simply stating
-"it is wrong" without grounding your answer in a framework will not score well. :::
+"it is wrong" without grounding your answer in a framework will not score well.
+:::
 
 ### 3.5 Professional Codes of Conduct
 
@@ -702,7 +711,8 @@ Profiling raises concerns about:
 :::warning There is a mathematical result known as **impossibility of simultaneous fairness:** it is
 generally impossible to satisfy multiple fairness definitions simultaneously when base rates differ
 between groups. This means that choosing a fairness definition is itself an ethical decision, not a
-purely technical one. :::
+purely technical one.
+:::
 
 #### Mitigation Strategies
 
@@ -1104,7 +1114,8 @@ and when crimes are likely to occur, or to identify individuals who are likely t
 
 :::info Board-specific The following questions are structured to match the style of AQA, OCR (A),
 Edexcel, and CIE examination papers. AQA and OCR favour structured questions with specific marks for
-specific points. Edexcel and CIE favour extended discussion questions requiring evaluation. :::
+specific points. Edexcel and CIE favour extended discussion questions requiring evaluation.
+:::
 
 ### Question 1 (AQA-style, 6 marks)
 

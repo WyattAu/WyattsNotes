@@ -177,7 +177,8 @@ appear redder.
 - **Edexcel** emphasises the period--luminosity relation for Cepheids and the use of Type Ia
   supernovae as standard candles.
 - **OCR (A)** includes parallax, standard candles, and black body radiation in the Turning Points
-  option. :::
+  option.
+:::
 
 ## 2. Stellar Evolution
 
@@ -317,7 +318,8 @@ the Sun compressed into a sphere smaller than a small city.
   Chandrasekhar limit.
 - **Edexcel** emphasises supernovae including light curves, and the use of standard candles.
 - **OCR (A)** covers neutron stars and black holes, including the Schwarzschild radius derivation,
-  in the Turning Points option. :::
+  in the Turning Points option.
+:::
 
 ## 3. Cosmology
 
@@ -434,7 +436,8 @@ $$1 + z = \frac{a_{\mathrm{now}}}{a_{\mathrm{then}}}$$
 
 - **AQA** requires understanding of Hubble's law, the CMB, and evidence for the Big Bang.
 - **Edexcel** includes the Doppler effect for electromagnetic radiation and redshift calculations.
-- **OCR (A)** covers Olbers' paradox and its resolution in the Turning Points option. :::
+- **OCR (A)** covers Olbers' paradox and its resolution in the Turning Points option.
+:::
 
 ## 4. Telescopes and Observational Astronomy
 
@@ -588,7 +591,8 @@ parabolic dishes.
 - **AQA** requires comparison of reflecting and refracting telescopes, and the Rayleigh criterion.
 - **Edexcel** emphasises angular magnification and the advantages of large-diameter telescopes.
 - **OCR (A)** covers radio telescopes and the comparison of ground-based and space-based
-  observatories. :::
+  observatories.
+:::
 
 ## 5. Problems
 

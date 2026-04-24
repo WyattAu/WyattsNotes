@@ -98,7 +98,8 @@ solid angle, and these two effects cancel exactly. $\square$
 
 :::warning Common Pitfall The shell theorem applies only to spherically symmetric mass distributions.
 Earth is approximately but not perfectly spherical (equatorial bulge), so $g$ varies slightly with
-latitude even at sea level. :::
+latitude even at sea level.
+:::
 
 ### Field Strength at Altitude
 
@@ -193,7 +194,8 @@ Calculate the escape velocity from Mars ($M = 6.42 \times 10^{23}$ kg, $R = 3.39
 
 :::warning Common Pitfall Escape velocity is independent of the mass and direction of launch of the
 projectile. A 1 kg ball and a $10^6$ kg rocket both need the same speed. However, the required kinetic
-energy $E_k = \frac{1}{2}mv_e^2$ scales with mass. :::
+energy $E_k = \frac{1}{2}mv_e^2$ scales with mass.
+:::
 
 ## 5. Orbital Mechanics
 
@@ -328,7 +330,8 @@ $$v = \sqrt{\frac{GM}{r}} = \frac{2\pi r}{T} = 3070\ \mathrm{m\,s}^{-1}$$
 
 :::warning Common Pitfall A geosynchronous orbit has period 24 hours but may be inclined or elliptical.
 Geostationary is a stricter condition: geosynchronous AND equatorial AND circular. GPS satellites are
-neither — they use medium Earth orbits at 20,200 km altitude with 12-hour periods. :::
+neither — they use medium Earth orbits at 20,200 km altitude with 12-hour periods.
+:::
 
 ### Applications
 

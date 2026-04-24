@@ -55,7 +55,8 @@ independent variable.
 | Control     | Heating rate       | Heat slowly, allow thermal equilibrium    |
 
 :::warning Common Pitfall Students often confuse the independent and dependent variables. A reliable
-mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable." :::
+mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable."
+:::
 
 ### Control Variables in Depth
 
@@ -75,7 +76,8 @@ to the independent variable or the uncontrolled factor.
    so its effect can be assessed
 
 :::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
-Paper 5 Q1 (Planning) :::
+Paper 5 Q1 (Planning)
+:::
 
 - **AQA** and **Edexcel** tend to ask students to identify variables from a given method. Practice
   reading a method description and extracting all three types.
@@ -369,7 +371,8 @@ When asked to write a risk assessment, structure your answer as follows:
 
 :::warning Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
 hazards exist. Examiners award marks for identifying the _most significant_ hazards and providing
-specific, practical control measures. "Be careful" is never an acceptable control measure. :::
+specific, practical control measures. "Be careful" is never an acceptable control measure.
+:::
 
 ## 5. Evaluating Experiments
 
@@ -461,7 +464,8 @@ When a graph is plotted, check:
 
 :::tip Exam Technique When asked "how could you improve this experiment?", always be specific.
 Instead of "use a more accurate instrument", say "use a micrometer instead of a ruler to measure the
-wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm." :::
+wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm."
+:::
 
 ## Problem Set
 

@@ -50,7 +50,8 @@ contribution). ADL adds the namespace `std` to the search set, where `operator<<
 
 :::info Relevance ADL is essential for operator overloading and generic code. Without ADL, every
 call to `operator<<`, `operator==`, or a custom swap function would require explicit namespace
-qualification, breaking generic programming. :::
+qualification, breaking generic programming.
+:::
 
 ## 1.2 ADL in Detail [N4950 §6.5.4.2]
 

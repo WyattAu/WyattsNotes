@@ -52,7 +52,8 @@ its own bus.
 
 :::info Board-specific Modern CPUs use a **modified Harvard architecture** at the cache level: L1
 cache is split into instruction cache and data cache (Harvard), while main memory is unified (Von
-Neumann). :::
+Neumann).
+:::
 
 <hr />
 
@@ -94,7 +95,8 @@ The CU orchestrates the fetch-decode-execute cycle by generating control signals
 
 - **AQA** uses: PC, MAR, MDR, ACC, CIR
 - **CIE** uses: PC, MAR, MDR, ACC, IR, B (B register as temporary)
-- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers :::
+- **OCR** uses: PC, MAR, MDR, ACC, CIR, and may reference index registers
+:::
 
 **General Purpose Registers (GPRs):** Additional registers for temporary storage during computation.
 The number varies by architecture (e.g., ARM has 16, x86-64 has 16).
@@ -371,7 +373,8 @@ cycles. Emphasis on hardware complexity.
 
 :::info Board-specific All A Level boards require understanding of RISC vs CISC principles. ARM
 (used in smartphones, Raspberry Pi) is RISC. Intel/AMD processors are CISC (but use RISC-like
-internal micro-operations). :::
+internal micro-operations).
+:::
 
 <hr />
 

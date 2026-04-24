@@ -479,7 +479,8 @@ int main() {
 ```
 
 :::tip If a constructor can fail, throwing an exception is the **only** way to signal the error.
-Error codes cannot be returned from a constructor. :::
+Error codes cannot be returned from a constructor.
+:::
 
 ### The "Destructor Must Never Throw" Rule
 
@@ -577,7 +578,8 @@ int main() {
 
 :::warning Swallowing exceptions in destructors is a **last resort**. If cleanup truly cannot fail,
 make the destructor `noexcept` and ensure cleanup operations are themselves `noexcept`. Use RAII
-wrappers that handle errors internally rather than propagating them from destructors. :::
+wrappers that handle errors internally rather than propagating them from destructors.
+:::
 
 ### Summary
 

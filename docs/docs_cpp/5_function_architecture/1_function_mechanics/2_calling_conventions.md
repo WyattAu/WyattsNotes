@@ -216,7 +216,8 @@ variables without modifying RSP, avoiding the overhead of stack pointer manipula
 
 :::warning Non-leaf functions (functions that call other functions) must NOT use the red zone.
 Signal handlers and interrupt contexts may clobber the red zone. Compiler flags like `-mno-red-zone`
-(used in OS kernels and JIT compilers) disable this optimization. :::
+(used in OS kernels and JIT compilers) disable this optimization.
+:::
 
 ```cpp
 // Leaf function: no CALL instruction, may use the red zone
@@ -507,7 +508,8 @@ extern "C" long takes_seven(long a, long b, long c, long d,
 
 :::warning Alignment violations cause crashes on SIMD instructions (e.g., `movaps` requires 16-byte
 alignment). If you see a `SIGSEGV` inside a function that uses SIMD, check for stack misalignment.
-Compiler flags like `-mstackrealign` (MSVC) or `-mno-sse` (GCC) can help diagnose these issues. :::
+Compiler flags like `-mstackrealign` (MSVC) or `-mno-sse` (GCC) can help diagnose these issues.
+:::
 
 ## 2.9 Debugging Calling Convention Mismatches
 

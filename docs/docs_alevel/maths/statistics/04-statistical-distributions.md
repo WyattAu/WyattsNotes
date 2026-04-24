@@ -20,7 +20,8 @@ slug: statistical-distributions
 
 :::info The formula booklet gives the probability mass function for the Binomial and Poisson
 distributions, and the normal distribution function. You must know when to use each distribution and
-how to find probabilities. :::
+how to find probabilities.
+:::
 
 <hr />
 
@@ -173,7 +174,8 @@ $P(X \leq k) \approx P\!\left(Z \lt{} \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)
 
 :::warning Always apply the continuity correction when approximating a discrete distribution
 (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the inequality
-direction. :::
+direction.
+:::
 
 <hr />
 
@@ -260,7 +262,8 @@ radioactive decays per second, and cars passing a checkpoint per minute.
 
 :::tip To check whether a scenario fits the Poisson model, verify that the rate is approximately
 constant over the interval and that events do not cluster. If events tend to occur in bursts, the
-Poisson model is not appropriate. :::
+Poisson model is not appropriate.
+:::
 
 ### 4.7 Poisson approximation to the Binomial
 
@@ -281,7 +284,8 @@ The approximation improves as $n$ increases and $p$ decreases while $\lambda = n
 :::warning The Poisson approximation is only appropriate when $p$ is small. When $p$ is not small
 and $n$ is large, use the normal approximation (Section 3.6) instead. The two approximations are
 complementary: Poisson handles the case of many trials with rare success, while normal handles the
-case of many trials with moderate success probability. :::
+case of many trials with moderate success probability.
+:::
 
 <hr />
 
@@ -336,7 +340,8 @@ Note how the terms $2abE(X)$ and $b^2$ cancel between $E(Y^2)$ and $[E(Y)]^2$.
 
 :::info Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
 $a$ (a scale change) affects variance, and it does so by a factor of $a^2$. This is why variance is
-measured in **squared units** of the original variable. :::
+measured in **squared units** of the original variable.
+:::
 
 ### 6.4 Effect on standard deviation
 

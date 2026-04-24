@@ -288,7 +288,8 @@ $$
 
 :::info The addition rule generalises naturally. For any number of events, the key insight is: add
 all individual probabilities, subtract all pairwise intersections, add back all triple
-intersections, and so on, alternating signs. :::
+intersections, and so on, alternating signs.
+:::
 
 ## Conditional Probability
 
@@ -510,7 +511,8 @@ independent.
 
 :::info When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
 separately and compare. Do not assume independence from the problem description -- it must be
-verified or explicitly stated. :::
+verified or explicitly stated.
+:::
 
 ## Bayes' Theorem
 

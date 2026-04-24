@@ -76,7 +76,8 @@ int main() {
 
 :::warning `std::atomic_ref` requires that the referenced object's alignment is at least
 `alignof(std::atomic<T>)`. For many types this is the same as `alignof(T)`, but for types smaller
-than the platform's native word size, `alignof(std::atomic<T>)` may be larger. :::
+than the platform's native word size, `alignof(std::atomic<T>)` may be larger.
+:::
 
 ## Atomic Operations
 
@@ -229,7 +230,8 @@ int main() {
 :::warning This lock-free stack has a known ABA problem in `pop()`: if between the `load` and the
 `compare_exchange_weak`, another thread pops `old_head`, pushes new nodes, and then pushes
 `old_head` back, the CAS will succeed but `next` will be stale. In production code, use hazard
-pointers or tagged pointers to prevent ABA. :::
+pointers or tagged pointers to prevent ABA.
+:::
 
 ## Spinlock Using `std::atomic_flag`
 
@@ -281,7 +283,8 @@ int main() {
 :::info A spinlock is lock-free by the above definition: at least one thread (the one currently
 holding the lock) makes progress. However, spinlocks waste CPU cycles while spinning. They are
 appropriate only when the critical section is very short and contention is expected to be low. For
-longer critical sections, prefer `std::mutex` which blocks the thread and yields the CPU. :::
+longer critical sections, prefer `std::mutex` which blocks the thread and yields the CPU.
+:::
 
 ## See Also
 
@@ -334,7 +337,8 @@ void memory_order_overview() {
 :::warning `memory_order_consume` is effectively deprecated in practice. Most compilers (GCC, Clang,
 MSVC) treat it as `memory_order_acquire` because implementing true dependency ordering correctly is
 extremely complex and was found to have specification issues. Do not use `memory_order_consume` —
-use `memory_order_acquire` instead. :::
+use `memory_order_acquire` instead.
+:::
 
 ## `compare_exchange` in Detail
 
@@ -440,7 +444,8 @@ void atomic_wait_notify_demo() {
 :::info `atomic::wait()` is implemented using `futex(2)` on Linux, `WaitOnAddress` on Windows, and
 `ulock` on macOS. These are kernel-assisted waiting mechanisms that avoid busy-waiting. The waiting
 thread is descheduled until a notification arrives, consuming zero CPU cycles. This is fundamentally
-more efficient than a spinlock for high-contention or long waits. :::
+more efficient than a spinlock for high-contention or long waits.
+:::
 
 ## `std::atomic&lt;void*&gt;` and Pointer Atomics
 
@@ -497,7 +502,8 @@ void atomic_bool_flag_demo() {
 
 :::warning Use `std::atomic_flag` when you need the lock-free guarantee. `std::atomic&lt;bool&gt;`
 is **not** guaranteed to be lock-free on all platforms, though it is on virtually all modern
-hardware. Check `std::atomic&lt;bool&gt;::is_always_lock_free` at compile time. :::
+hardware. Check `std::atomic&lt;bool&gt;::is_always_lock_free` at compile time.
+:::
 
 ## `std::atomic&lt;shared_ptr&gt;` and `std::atomic&lt;weak_ptr&gt;` (C++20)
 
@@ -620,7 +626,8 @@ public:
 :::warning The 48/16 split assumes x86-64's current 48-bit virtual address space. On AArch64, the
 address space may use more bits in the future (LVA support). This tagged pointer approach is
 platform-specific. For a portable solution, use a separate `std::atomic&lt;uint64_t&gt;` tag
-alongside the pointer, or use hazard pointers. :::
+alongside the pointer, or use hazard pointers.
+:::
 
 ## Common Pitfalls
 

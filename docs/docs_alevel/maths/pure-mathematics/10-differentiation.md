@@ -19,7 +19,8 @@ slug: differentiation
 | CIE (9709) | P1, P2, P3 | Basic differentiation in P1; product/quotient/chain in P2/P3     |
 
 :::info The formula booklet lists derivatives of standard functions. You must know how to apply the
-product, quotient, and chain rules, and how to find stationary points. :::
+product, quotient, and chain rules, and how to find stationary points.
+:::
 
 <hr />
 
@@ -39,7 +40,8 @@ tangent, so $f'(x)$ is the gradient of the tangent at $x$.
 
 :::info A function is differentiable at a point if and only if it is smooth (no sharp corners)
 there. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$ but not
-differentiable. :::
+differentiable.
+:::
 
 <hr />
 
@@ -121,7 +123,8 @@ By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 $$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2} \quad \blacksquare$$
 
 :::warning The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
-the wrong way around is one of the most common errors in A Level mathematics. :::
+the wrong way around is one of the most common errors in A Level mathematics.
+:::
 
 <hr />
 
@@ -243,7 +246,8 @@ $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 
 :::warning The second derivative test is **sufficient but not necessary**. If $f''(a) = 0$, the
 point could still be a maximum, minimum, or inflection. Always use a nature table (checking the sign
-of $f'$ on either side) if the second derivative test is inconclusive. :::
+of $f'$ on either side) if the second derivative test is inconclusive.
+:::
 
 <DesmosGraph title="Function, Derivative, and Tangent Line"
 expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the
@@ -293,7 +297,8 @@ increasing for $x \gt{} 1$.
 
 :::tip When asked to "find where a function is increasing", set $f'(x) \gt{} 0$ and solve the
 inequality. When asked to "show that a function is increasing", verify that $f'(x) \gt{} 0$ (or
-$\geq 0$) on the given interval. :::
+$\geq 0$) on the given interval.
+:::
 
 <hr />
 
@@ -304,7 +309,8 @@ vice versa). This occurs where $f''(x) = 0$ and the sign of $f''(x)$ changes.
 
 :::warning A point of inflection does **not** require $f'(x) = 0$. For example, $f(x) = x^3$ has a
 point of inflection at $x = 0$, but $f'(0) = 0$ in this case. Consider $f(x) = x^3 + x$:
-$f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$. :::
+$f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$.
+:::
 
 <hr />
 

@@ -19,7 +19,8 @@ slug: vectors
 | CIE (9709) | P1, P2, P3 | 2D in P1; 3D and lines in P2/P3                    |
 
 :::info The formula booklet gives the scalar product formula. You must be comfortable working in 3D
-and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation. :::
+and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation.
+:::
 
 <hr />
 
@@ -205,7 +206,8 @@ In 2D, eliminating $t$: $\dfrac{x - a_1}{b_1} = \dfrac{y - a_2}{b_2}$.
 
 :::warning A vector equation of a line is not unique. Different points on the line can be used as
 $\mathbf{a}$, and the direction vector $\mathbf{b}$ can be any non-zero scalar multiple of the
-direction. Always check your answer gives a point and direction consistent with the question. :::
+direction. Always check your answer gives a point and direction consistent with the question.
+:::
 
 ### 5.4 Vector equation of a line in 3D
 
@@ -221,7 +223,8 @@ $$x = x_0 + td_1, \quad y = y_0 + td_2, \quad z = z_0 + td_3$$
 
 :::tip To convert from two points $A$ and $B$ to the vector equation, use $A$ as the position vector
 and $\overrightarrow{AB}$ as the direction vector. Alternatively, use $B$ and $\overrightarrow{BA}$
---- both give the same line. :::
+--- both give the same line.
+:::
 
 **Example.** Find the vector equation of the line through $P(2, -1, 3)$ and $Q(5, 1, -2)$.
 
@@ -295,7 +298,8 @@ distance.
 
 :::info When the cross product is not on your syllabus, use the dot-product method from Section 8.
 The cross-product formula is listed here for reference and is examined on CIE P3 and some OCR
-papers. :::
+papers.
+:::
 
 **Example using the dot-product method.** Find the distance from $P(4, 1, -1)$ to the line
 $\mathbf{r} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t\begin{pmatrix}2\\1\\-1\end{pmatrix}$.
@@ -424,7 +428,8 @@ $\overrightarrow{AD} = \overrightarrow{BC}$).
 
 :::tip To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
 magnitude. To show a **rectangle**, show that adjacent sides are perpendicular. A **square**
-requires both conditions. :::
+requires both conditions.
+:::
 
 ### 10.4 Using vectors in geometric proofs
 

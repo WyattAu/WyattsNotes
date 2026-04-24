@@ -429,7 +429,8 @@ Parameters:
 
 :::warning `__builtin_prefetch` is a hint, not a guarantee. Incorrect prefetching can degrade
 performance by evicting useful cache lines. Always benchmark with and without prefetching. The
-hardware prefetcher is often better than manual prefetching for simple patterns. :::
+hardware prefetcher is often better than manual prefetching for simple patterns.
+:::
 
 ## Write Propagation and Visibility
 

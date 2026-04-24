@@ -193,7 +193,8 @@ where the peak e.m.f. is $\mathcal{E}_0 = NBA\omega$.
 
 :::tip Exam Technique When asked about Lenz's law, always describe what the induced current does
 (creates a field to oppose the change) and identify the direction of the induced current using the
-right-hand grip rule. :::
+right-hand grip rule.
+:::
 
 ## 6. Biot-Savart Law and Ampere's Law
 
@@ -215,7 +216,8 @@ The direction of $d\mathbf{B}$ follows from the right-hand rule on
 $d\mathbf{l} \times \hat{\mathbf{r}}$.
 
 :::warning Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$, not
-$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction. :::
+$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction.
+:::
 
 ### Field at the Centre of a Circular Loop
 
@@ -306,7 +308,8 @@ left-hand rule to wire 2 for the force direction:
 
 :::tip Exam Technique To remember the direction: same-direction currents attract, opposite-direction
 currents repel. Think of it as two parallel beams of particles moving together (attract) versus
-head-on (repel). :::
+head-on (repel).
+:::
 
 ### Definition of the Ampere
 
@@ -357,7 +360,8 @@ that drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular t
 
 :::warning Common Pitfall: the drift velocity $v_d = E/B$ is independent of the particle's initial
 velocity and charge. Even a stationary particle will drift at this speed. The drift direction is
-always $\mathbf{E} \times \mathbf{B}$, perpendicular to both fields. :::
+always $\mathbf{E} \times \mathbf{B}$, perpendicular to both fields.
+:::
 
 ### $\mathbf{E} \parallel \mathbf{B}$: Accelerating Helix
 
@@ -451,7 +455,8 @@ $5\tau$, it is within 1%.
 
 :::tip Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
 $RC\,dV_C/dt + V_C = V$. Both are first-order linear ODEs with exponential solutions. Use the same
-problem-solving framework for both. :::
+problem-solving framework for both.
+:::
 
 ### Transformers
 

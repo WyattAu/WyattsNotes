@@ -841,4 +841,5 @@ These are verified experimentally and by renormalisation group calculations.
 :::caution Common Pitfall The mean-field approximation overestimates $T_c$ and gives incorrect
 critical exponents. In 1D, it predicts a phase transition at $T_c = Jz/k_B$, whereas the exact
 solution shows no transition at $T \gt 0$. Mean-field theory is only reliable in high dimensions
-(where fluctuations are small) or for long-range interactions. :::
+(where fluctuations are small) or for long-range interactions.
+:::

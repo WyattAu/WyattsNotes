@@ -125,8 +125,7 @@ $$\frac{(x - 2)^2}{(x - 2)(x + 2)} = \frac{x - 2}{x + 2}$$
 $$\frac{2(x^2 - 4)}{(x + 2)^2} = \frac{2(x - 2)(x + 2)}{(x + 2)^2} = \frac{2(x - 2)}{x + 2}$$
 
 ::warning When cancelling factors in algebraic fractions, always factorise first. Never cancel
-individual terms across addition or subtraction.
-:::
+individual terms across addition or subtraction. :::
 
 ## 2. Solving Equations
 
@@ -660,8 +659,7 @@ this is always divisible by 8 is **false**. For example, when $n = 1$: $1 + 4 - 
 divisible by 8.
 
 ::warning Not every claim about numbers is true. When asked to prove something, first check whether
-the statement is actually correct with a small example.
-:::
+the statement is actually correct with a small example. :::
 
 ### 7.3 Disproof by Counterexample
 

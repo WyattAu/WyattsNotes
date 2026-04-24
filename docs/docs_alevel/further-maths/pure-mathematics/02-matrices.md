@@ -68,7 +68,8 @@ $\mathbf{A} \in M_{m \times n}(\mathbb{R})$.
 
 :::warning Matrix multiplication is not commutative. Always check the order: $\mathbf{AB}$ means
 "apply $\mathbf{B}$ first, then $\mathbf{A}$." When composing transformations, the rightmost matrix
-is applied first. :::
+is applied first.
+:::
 
 <hr />
 
@@ -161,7 +162,8 @@ Suppose $\mathbf{B}$ and $\mathbf{C}$ are both inverses of $\mathbf{A}$. Then:
 $$\mathbf{B} = \mathbf{B}\mathbf{I} = \mathbf{B}(\mathbf{AC}) = (\mathbf{BA})\mathbf{C} = \mathbf{IC} = \mathbf{C} \quad \square$$
 
 :::tip To verify your inverse, always check that $\mathbf{A}\mathbf{A}^{-1} = \mathbf{I}$. This
-catches sign errors and arithmetic mistakes immediately. :::
+catches sign errors and arithmetic mistakes immediately.
+:::
 
 <details>
 <summary>Worked Example: $3\times3$ inverse</summary>
@@ -291,11 +293,13 @@ transformation is represented by $\mathbf{BA}$ (rightmost applied first).
 
 :::warning Order matters. A rotation followed by a reflection generally produces a different result
 from a reflection followed by a rotation. The combined matrix is $\mathbf{BA}$ (not $\mathbf{AB}$)
-when $\mathbf{A}$ is applied first. :::
+when $\mathbf{A}$ is applied first.
+:::
 
 :::tip To find the matrix of a combined transformation, multiply the matrices in reverse order of
 application. If the question says "reflect then rotate," compute
-$\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$. :::
+$\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$.
+:::
 
 <details>
 <summary>Worked Example: Combined transformation</summary>
@@ -320,7 +324,8 @@ transformation.
 ## 6. Matrix Transformations in 3D
 
 :::info 3D transformations are required by AQA and appear on CIE P1. Edexcel and OCR focus primarily
-on 2D but may include basic $3\times3$ determinant and inverse calculations. :::
+on 2D but may include basic $3\times3$ determinant and inverse calculations.
+:::
 
 ### 6.1 Rotations in 3D
 
@@ -356,7 +361,8 @@ Each has $\det = -1$, confirming orientation reversal.
 ## 7. Eigenvalues and Eigenvectors
 
 :::info Eigenvalues and eigenvectors are on the AQA syllabus only. Edexcel, OCR, and CIE do not
-require this topic at A Level. :::
+require this topic at A Level.
+:::
 
 **Definition.** Let $\mathbf{A}$ be an $n \times n$ matrix. A scalar $\lambda$ is an _eigenvalue_ of
 $\mathbf{A}$ if there exists a non-zero vector $\mathbf{v}$ such that:

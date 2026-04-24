@@ -682,7 +682,8 @@ $$\mathrm{Monthly cost} = 292.9 \times 30 = 8787 \mathrm{ p} = \pounds 87.87$$
 
 :::info The heater accounts for $8/10.46 = 76.5\%$ of the total energy cost. This is typical:
 heating appliances dominate household electricity bills. Switching to a more efficient heater or
-improving insulation can significantly reduce costs. :::
+improving insulation can significantly reduce costs.
+:::
 
 ### Example 27: Parallel Circuit with Multiple Branches
 
@@ -739,7 +740,8 @@ $$P_{\mathrm{internal}} = I^2 r = 36 \times 1.5 = 54 \mathrm{ W}$$
 This energy is converted to heat inside the battery, which can cause it to overheat or even explode.
 
 :::warning A short circuit is extremely dangerous. The battery delivers its maximum current, and all
-the energy is dissipated as heat inside the battery. Never short-circuit a battery. :::
+the energy is dissipated as heat inside the battery. Never short-circuit a battery.
+:::
 
 ## Common Pitfalls Extended
 

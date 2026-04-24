@@ -59,7 +59,8 @@ Rate is typically expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration p
 
 :::warning The mass loss method only works if the gas escapes the flask. If the flask is sealed, no
 mass change occurs. Also, ensure the reaction does not produce heat that would affect the balance
-reading. :::
+reading.
+:::
 
 ### Concentration-Time Graphs
 
@@ -175,7 +176,8 @@ The $E_a$ line shifts to the left on the Maxwell-Boltzmann distribution. More pa
 energy $\geq E_a$ (the new, lower activation energy), so the rate increases.
 
 :::info A catalyst does NOT change the distribution itself. It only lowers the threshold. The curve
-shape remains the same at the same temperature. :::
+shape remains the same at the same temperature.
+:::
 
 ### Key DSE Exam Points
 
@@ -322,7 +324,8 @@ Where:
 - Overall order = $m + n$
 
 :::warning The orders $m$ and $n$ are determined experimentally. They are NOT necessarily equal to
-the stoichiometric coefficients $a$ and $b$. :::
+the stoichiometric coefficients $a$ and $b$.
+:::
 
 ### Order of Reaction
 

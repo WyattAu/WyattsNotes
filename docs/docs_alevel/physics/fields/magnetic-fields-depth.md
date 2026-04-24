@@ -50,7 +50,8 @@ $$\boxed{F = Bqv}$$
 
 :::warning Common Pitfall The magnetic force is always perpendicular to both $\mathbf{v}$ and
 $\mathbf{B}$. It does no work ($\mathbf{F} \cdot \mathbf{v} = 0$), so a magnetic field alone cannot
-change the speed of a charged particle — only its direction. :::
+change the speed of a charged particle — only its direction.
+:::
 
 ## 3. Circular Motion in a Magnetic Field
 
@@ -158,7 +159,8 @@ work must be done to maintain the flux change, and this work appears as electric
 
 :::tip Exam Technique When applying Lenz's law: (1) identify the direction of the change in flux, (2)
 determine the field direction that would oppose this change, (3) use the right-hand grip rule to find
-the induced current direction. :::
+the induced current direction.
+:::
 
 ### Motional e.m.f.
 

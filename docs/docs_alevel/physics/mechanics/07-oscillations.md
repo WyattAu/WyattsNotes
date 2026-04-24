@@ -156,7 +156,8 @@ This is SHM in the variable $\theta$ with angular frequency $\omega = \sqrt{g/L}
 $$\boxed{T = 2\pi\sqrt{\frac{L}{g}}}$$
 
 :::warning Common Pitfall The period of a simple pendulum is **independent of mass** and
-**independent of amplitude** (for small oscillations). These are classic exam questions. :::
+**independent of amplitude** (for small oscillations). These are classic exam questions.
+:::
 
 ## 6. Phase Relationships
 
@@ -209,7 +210,8 @@ resonance).
 
 :::tip Exam Technique In exam questions about damping and resonance, remember: more damping $\to$
 lower maximum amplitude $\to$ broader resonance curve. Less damping $\to$ higher peak $\to$ narrower
-curve. :::
+curve.
+:::
 
 ## Problem Set
 
@@ -399,7 +401,8 @@ left, and once moving right.
 
 :::tip Exam Technique When asked to sketch $E_k$ and $E_p$ against time, draw two sinusoidal curves
 at twice the displacement frequency, exactly out of phase, oscillating between $0$ and
-$E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$. :::
+$E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$.
+:::
 
 ## 10. Damping — Time Constant and Displacement-Time Graphs
 
@@ -464,7 +467,8 @@ $E \propto A^2$.
 :::warning Common Pitfall Critical damping is the fastest return **without oscillation**, not the
 fastest overall. A lightly damped system passes through equilibrium sooner but overshoots. Heavy
 damping is slower than critical — adding more damping beyond the critical value makes the system
-**slower**, not faster. :::
+**slower**, not faster.
+:::
 
 **Application.** Car shock absorbers are designed to be critically damped: after hitting a bump, the
 car body returns to equilibrium as quickly as possible without bouncing up and down.
@@ -524,7 +528,8 @@ field, enabling detailed internal imaging without ionising radiation.
 :::tip Exam Technique More damping $\to$ lower peak amplitude, broader resonance curve, peak shifts
 slightly below $f_0$. Less damping $\to$ higher, sharper peak closer to $f_0$. When sketching
 resonance curves for different damping levels, always label the natural frequency $f_0$ and show the
-amplitude axis clearly. :::
+amplitude axis clearly.
+:::
 
 ## 12. Phasor Diagrams for SHM
 

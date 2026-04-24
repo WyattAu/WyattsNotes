@@ -552,7 +552,8 @@ If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains both an abs
 absolute minimum on $[a, b]$.
 
 :::warning The EVT requires continuity on a **closed** interval. The function $f(x) = \frac{1}{x}$
-on $(0, 1)$ has no maximum, despite being continuous. :::
+on $(0, 1)$ has no maximum, despite being continuous.
+:::
 
 ### Boundedness Theorem
 

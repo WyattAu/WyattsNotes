@@ -19,7 +19,8 @@ slug: moments
 | CIE (9709) | P4      | Moments and equilibrium       |
 
 :::info The principle of moments is fundamental. Always state clearly the point about which you are
-taking moments, and include the direction (clockwise/anticlockwise) of each moment. :::
+taking moments, and include the direction (clockwise/anticlockwise) of each moment.
+:::
 
 <hr />
 
@@ -100,7 +101,8 @@ $R_{\mathrm{left}}$ decreases — the bridge load redistributes continuously.
 
 :::warning The principle of moments applies about **any** point — not just the pivot. Choosing a
 clever point (often where an unknown force acts) can simplify calculations by eliminating that
-unknown from the moment equation. :::
+unknown from the moment equation.
+:::
 
 <hr />
 
@@ -162,7 +164,8 @@ The direction of $\boldsymbol{\tau}$ is given by the right-hand rule and is perp
 plane containing $\mathbf{r}$ and $\mathbf{F}$.
 
 :::info In A Level Maths, we work in 2D, so torque is effectively a signed scalar. Clockwise and
-anticlockwise are the only two directions you need to consider. :::
+anticlockwise are the only two directions you need to consider.
+:::
 
 ### 3.1.5 Equilibrium of couples
 
@@ -214,7 +217,8 @@ steeper ($\theta$ increases), $\cot\theta$ decreases and less friction is needed
 
 :::warning If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
 the wall. This changes the vertical equilibrium to $R_g + F_w = W$ and adds complexity to the moment
-equation. Always read the question carefully to determine whether the wall is smooth or rough. :::
+equation. Always read the question carefully to determine whether the wall is smooth or rough.
+:::
 
 ### 3.2.4 Ladder with a person on it
 
@@ -288,7 +292,8 @@ If you assume a rod is in tension and get a negative answer, the rod is in compr
 
 :::info Framework problems are common in the mechanics section of the A Level exam. The key skill is
 choosing the right joint to start with — look for joints where you have at most two unknown forces,
-since you can only write two equilibrium equations per joint. :::
+since you can only write two equilibrium equations per joint.
+:::
 
 <hr />
 
@@ -420,7 +425,8 @@ Since $125 \lt 200$, the block **topples first** at $P = 125\,\mathrm{N}$.
 
 :::info A useful rule of thumb: if $\dfrac{h}{d} > \dfrac{1}{\mu}$, the body topples before it
 slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$, toppling occurs
-first, which matches our calculation. :::
+first, which matches our calculation.
+:::
 
 <hr />
 

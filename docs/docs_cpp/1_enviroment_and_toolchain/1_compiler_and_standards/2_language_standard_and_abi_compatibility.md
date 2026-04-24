@@ -83,7 +83,8 @@ clang++ -std=c++23 -stdlib=libstdc++ main.cpp
 
 :::warning Library Availability On Linux, using `-stdlib=libc++` requires the installation of
 specific library packages (e.g., `libc++-dev` and `libc++abi-dev` on Debian/Ubuntu). If these are
-missing, the linker will fail to find symbols. :::
+missing, the linker will fail to find symbols.
+:::
 
 ## Application Binary Interface (ABI)
 
@@ -452,7 +453,8 @@ stability since GCC 5.1.
 
 :::warning Mixing Clang and GCC on Linux with the same `libstdc++` is generally safe for the same
 C++ standard version. However, some ABI-affecting flags (like `-D_GLIBCXX_USE_CXX11_ABI`) must be
-consistent across all object files in the final binary. :::
+consistent across all object files in the final binary.
+:::
 
 ## MSVC ABI Differences
 

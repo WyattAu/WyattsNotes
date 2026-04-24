@@ -30,7 +30,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 | CIE (9231) | P2      | Full coverage: curves, area, tangents                |
 
 :::info Polar coordinates appear in Edexcel FP2 and CIE P2. OCR (A) does not cover this topic. AQA
-covers the essentials in Paper 1. The formula booklet provides the area formula. :::
+covers the essentials in Paper 1. The formula booklet provides the area formula.
+:::
 
 <hr />
 
@@ -74,7 +75,8 @@ $\theta = \pi - \arctan(1) = 3\pi/4$.
 The polar coordinates are $(3\sqrt{2}, 3\pi/4)$.
 
 :::warning When converting from Cartesian to polar, always check the quadrant of the point. The
-calculator value of $\arctan(y/x)$ alone is insufficient for points in quadrants II and III. :::
+calculator value of $\arctan(y/x)$ alone is insufficient for points in quadrants II and III.
+:::
 
 <hr />
 
@@ -172,7 +174,8 @@ the radius and the tangent is constant.
 
 - Inner loop: $b > a$
 - Dimpled: $a < 2b$ (with $b < a$)
-- Convex: $a \geq 2b$ :::
+- Convex: $a \geq 2b$
+:::
 - Cardioid: $a = b$ (boundary between inner loop and dimpled)
 
 <hr />
@@ -229,7 +232,8 @@ The area between curves $r_1(\theta)$ (outer) and $r_2(\theta)$ (inner) from $\a
 $$A = \frac{1}{2}\int_\alpha^\beta \bigl[r_1^2(\theta) - r_2^2(\theta)\bigr]\,d\theta$$
 
 :::warning The area formula uses $r^2$, not $r$. When computing the area between two curves,
-subtract $r_2^2$ from $r_1^2$, not $r_2$ from $r_1$. :::
+subtract $r_2^2$ from $r_1^2$, not $r_2$ from $r_1$.
+:::
 
 <hr />
 

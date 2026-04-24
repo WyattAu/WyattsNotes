@@ -65,7 +65,8 @@ approximately $10^{-9}$ per base per replication.
 :::warning Common Pitfall DNA polymerase can only add nucleotides to the $3'$ end of a growing
 strand. It cannot initiate synthesis de novo -- it requires a pre-existing $3'-\mathrm{OH}$ group,
 which is provided by the RNA primer. Students often forget to mention primase and primers when
-describing replication. :::
+describing replication.
+:::
 
 ## 2. Protein Synthesis
 
@@ -161,7 +162,8 @@ producing a completely non-functional protein.
 :::warning Common Pitfall Students often state that "mutations are always harmful." Most mutations
 are neutral (silent mutations, mutations in non-coding DNA). Some are harmful (cause genetic
 disorders), and a few are beneficial (provide the variation upon which natural selection acts). The
-harmful mutations are eliminated by selection; beneficial ones may increase in frequency. :::
+harmful mutations are eliminated by selection; beneficial ones may increase in frequency.
+:::
 
 ## 4. Meiosis
 
@@ -283,7 +285,8 @@ but reduced production of red pigment.
 :::warning Common Pitfall Students often confuse co-dominance and incomplete dominance. In
 co-dominance, both alleles produce their full product (both A and B antigens are present). In
 incomplete dominance, the heterozygote produces less of the dominant product (an intermediate
-phenotype). The genetic ratios for both are 1:2:1, but the phenotypic expression differs. :::
+phenotype). The genetic ratios for both are 1:2:1, but the phenotypic expression differs.
+:::
 
 ## 6. Gene Expression and Epigenetics
 
@@ -341,7 +344,8 @@ offspring with brown coats and normal weight. A methyl-poor diet produces yellow
 Epigenetic changes are reversible modifications to gene expression that do not alter the DNA
 sequence itself. Mutations are permanent changes to the nucleotide sequence. Epigenetic marks can be
 passed to daughter cells during mitosis (and in some cases meiosis), but they can also be removed by
-environmental changes. :::
+environmental changes.
+:::
 
 ## Practice Problems
 

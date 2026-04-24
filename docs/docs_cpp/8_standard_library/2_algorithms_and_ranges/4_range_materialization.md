@@ -134,7 +134,8 @@ int main() {
 
 :::tip Prefer `std::ranges::to&lt;std::vector>()` when you need to consume a view multiple times,
 pass it to a non-range API, or decouple its lifetime from the source. The cost is $O(n)$ for the
-materialization, but you gain ownership and stability. :::
+materialization, but you gain ownership and stability.
+:::
 
 ### Materialization with Different Containers
 
@@ -518,7 +519,8 @@ int main() {
 
 :::warning The C++ standard's range machinery includes **borrowed range** detection [N4950 §26.5.2].
 Some views (like `std::views::filter`) are not borrowing views --- they cannot outlive their source.
-Always ensure the source outlives the view when materializing. :::
+Always ensure the source outlives the view when materializing.
+:::
 
 #### Double Materialization Cost
 

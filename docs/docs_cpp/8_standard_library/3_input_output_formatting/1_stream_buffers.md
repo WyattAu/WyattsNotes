@@ -110,7 +110,8 @@ void spanbuf_demo() {
 
 :::tip Prefer `std::spanbuf` over `std::stringbuf` when you need to write formatted output into a
 fixed-size pre-allocated buffer (e.g., a network packet buffer or embedded flash region). It avoids
-heap allocation entirely. :::
+heap allocation entirely.
+:::
 
 ### Locale Facets
 
@@ -167,7 +168,8 @@ void locale_facet_demo() {
 `""` locale (empty string) selects the user's preferred locale from environment variables (`LC_ALL`,
 `LC_NUMERIC`, `LANG`). Be aware that locale-sensitive operations are **not** thread-safe in the
 standard: `std::locale::global()` modifies a global variable and is not safe to call concurrently
-[N4950 §30.3.1.3]. :::
+[N4950 §30.3.1.3].
+:::
 
 ### Custom Stream Buffer
 
@@ -252,11 +254,13 @@ Output (example):
 
 :::tip This pattern is used in production logging frameworks. The `overflow` override is called for
 each character written to the stream. Buffering the line and flushing on `\n` gives you control over
-the output format. For thread-safe logging, wrap the `sputn` call in a mutex. :::
+the output format. For thread-safe logging, wrap the `sputn` call in a mutex.
+:::
 
 :::warning Always override `sync()` in addition to `overflow()`. The `sync()` method is called by
 `std::flush` and `std::endl`. If you only override `overflow()`, manually flushed output (via
-`std::flush`) will not reach your sink. :::
+`std::flush`) will not reach your sink.
+:::
 
 ### Connecting Stream Buffers to Streams
 
@@ -404,7 +408,8 @@ void buffer_mode_demo() {
 :::warning Flushing `std::cout` on every write (unitbuf mode) can severely degrade performance in
 I/O-heavy code. Each flush results in a `write()` system call, which is orders of magnitude slower
 than writing to the in-memory buffer. Only use unitbuf for logging where immediate visibility is
-critical. :::
+critical.
+:::
 
 ### `std::ios::sync_with_stdio`
 
@@ -439,7 +444,8 @@ void sync_demo() {
 :::warning Once `sync_with_stdio(false)` is called, it cannot be reversed (the standard says the
 effect is irreversible once any standard stream has been used). This is a common pattern in
 competitive programming for fast I/O, but it is dangerous in library code because it affects the
-entire process. Never call it in a library. :::
+entire process. Never call it in a library.
+:::
 
 ### Custom Input Stream Buffer
 

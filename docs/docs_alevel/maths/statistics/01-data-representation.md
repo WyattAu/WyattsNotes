@@ -19,7 +19,8 @@ slug: data-representation
 | CIE (9709) | P1, P6  | Data handling in P1; further statistics in P6 |
 
 :::info You must know when to use the sample variance formula (dividing by $n-1$) versus the
-population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data. :::
+population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
+:::
 
 <hr />
 
@@ -69,7 +70,8 @@ mode.
 - The mode is useful for categorical data.
 
 :::warning For skewed distributions, the median is a better measure of central tendency than the
-mean. A few extreme values can pull the mean far from the centre of the data. :::
+mean. A few extreme values can pull the mean far from the centre of the data.
+:::
 
 <hr />
 
@@ -99,7 +101,8 @@ $$
 $$
 
 :::tip This formula is computationally more efficient and is the one you should use in exams. Just
-remember: "mean of squares minus square of mean." :::
+remember: "mean of squares minus square of mean."
+:::
 
 ### 2.3 Sample variance
 
@@ -141,7 +144,8 @@ $$\mathrm{Upper fence} = Q_3 + 1.5 \times \mathrm{IQR}$$
 Values outside these fences are potential outliers.
 
 :::warning Different boards may define outliers differently. Always check your board's convention.
-Some use $1.5 \times$ IQR, others use different multipliers. :::
+Some use $1.5 \times$ IQR, others use different multipliers.
+:::
 
 <hr />
 
@@ -168,7 +172,8 @@ Hence $\sigma_y = \sigma_x/|c|$. $\blacksquare$
 
 :::tip Coding makes computation easier when data values are large. Always work with coded data to
 find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean
-but does not affect the spread. :::
+but does not affect the spread.
+:::
 
 <hr />
 
@@ -215,7 +220,8 @@ $$S_2 = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$$
 
 :::info Pearson's first coefficient is more commonly examined at A-level. The second coefficient is
 useful when quartiles are already known and the standard deviation has not been calculated. Both
-give the same sign of skewness but may differ in magnitude. :::
+give the same sign of skewness but may differ in magnitude.
+:::
 
 ### 6.3 Relationship between measures of central tendency
 
@@ -260,7 +266,8 @@ An observation is flagged as an outlier if $|M_i| \gt{} 3.5$.
 :::tip The modified z-score is more robust than the standard z-score because it uses the median and
 MAD, which are themselves resistant to outliers. The factor $0.6745$ is the $0.75$-quantile of the
 standard normal distribution, so the modified z-score is on a comparable scale to the standard
-z-score for normally distributed data. :::
+z-score for normally distributed data.
+:::
 
 ### 7.3 Choosing an outlier method
 
@@ -286,7 +293,8 @@ To construct a box plot:
 
 :::warning The whiskers extend to the most extreme data values _within_ the fences, not to the
 fences themselves. If no values lie outside the fences, the whiskers extend to the minimum and
-maximum of the dataset. :::
+maximum of the dataset.
+:::
 
 ### 8.2 Interpreting skewness from a box plot
 
@@ -309,7 +317,8 @@ When two or more box plots are drawn on the same scale, compare:
 
 :::warning When comparing distributions, always comment on both location and spread. A statement
 such as "distribution A has a higher median" is incomplete without also addressing how the spreads
-compare. :::
+compare.
+:::
 
 <hr />
 
@@ -345,7 +354,8 @@ of each group. To compare two distributions:
 
 :::tip To read a value from an ogive: draw a horizontal line from the desired cumulative frequency
 to the curve, then drop a vertical line to the $x$-axis. The reverse process gives the cumulative
-frequency for a given $x$-value. :::
+frequency for a given $x$-value.
+:::
 
 ### 9.3 Structuring a comparison
 

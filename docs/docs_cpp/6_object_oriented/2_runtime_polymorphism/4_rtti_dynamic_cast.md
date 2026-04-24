@@ -56,7 +56,8 @@ at runtime.
 :::warning RTTI Overhead Disabling RTTI (`-fno-rtti`) reduces binary size (by removing type_info
 metadata) and may enable further optimizations. However, it also makes `dynamic_cast` and `typeid`
 unavailable for polymorphic types. Disabling RTTI does **not** eliminate the vtable or vptr --
-virtual dispatch still works. :::
+virtual dispatch still works.
+:::
 
 ## 4.2 `dynamic_cast<T*>(ptr)` -- Safe Downcast
 
@@ -183,7 +184,8 @@ Cast failed: std::bad_cast
 
 :::info `dynamic_cast<T&>` cannot return `nullptr` because references cannot be null. Throwing an
 exception is the only way to signal failure. This is why `dynamic_cast` on pointers is generally
-preferred -- it allows the caller to check for failure without exception overhead. :::
+preferred -- it allows the caller to check for failure without exception overhead.
+:::
 
 ## 4.4 `typeid` Operator
 
@@ -242,7 +244,8 @@ Key points:
 
 :::warning The `name()` member of `std::type_info` returns an implementation-defined string. It is
 useful for debugging but should not be parsed or compared. Use `std::type_index` for type
-comparisons. :::
+comparisons.
+:::
 
 ## 4.5 RTTI and `dynamic_cast` for the Visitor Pattern
 
@@ -344,7 +347,8 @@ int main() {
 for small, stable type hierarchies. However, adding a new derived type requires updating every
 `dynamic_cast` chain. The Visitor pattern localizes changes: adding a new visitor doesn't modify
 existing types, and adding a new type doesn't modify existing visitors (it only requires extending
-the visitor interface). :::
+the visitor interface).
+:::
 
 ## 4.6 `dynamic_cast` with Multiple and Virtual Inheritance
 

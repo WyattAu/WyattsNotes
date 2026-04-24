@@ -48,7 +48,8 @@ The standard defines three clocks [N4950 §29.5.7]:
 
 :::warning `system_clock::now()` can jump backwards if the system clock is adjusted (e.g., NTP
 synchronization, manual correction). **Never use `system_clock` for measuring elapsed time** — it
-can produce negative durations. Use `steady_clock` for all elapsed-time measurements. :::
+can produce negative durations. Use `steady_clock` for all elapsed-time measurements.
+:::
 
 ### Durations
 
@@ -103,7 +104,8 @@ void duration_arithmetic() {
 
 :::info `std::chrono::duration_cast&lt;D>(d)` performs a truncating conversion. Use
 `std::chrono::floor&lt;D>()`, `std::chrono::ceil&lt;D>()`, or `std::chrono::round&lt;D>()` (C++17)
-for rounding conversions. These are declared in `<chrono>` [N4950 §29.5.4]. :::
+for rounding conversions. These are declared in `<chrono>` [N4950 §29.5.4].
+:::
 
 ### Measuring Elapsed Time
 
@@ -167,7 +169,8 @@ void timer_class_demo() {
 
 :::tip The Timer class uses RAII — the elapsed time is printed in the destructor, so it works
 correctly even when the scope is exited via an exception. This pattern is used in many C++
-benchmarking and logging frameworks. :::
+benchmarking and logging frameworks.
+:::
 
 ### Calendar and Timezone Support (C++20)
 
@@ -273,7 +276,8 @@ void format_time_demo() {
 :::info The timezone database (`tzdb`) is loaded from the system's IANA timezone database (typically
 `/usr/share/zoneinfo/` on Linux). On systems without a system timezone database, the C++ runtime may
 provide a minimal built-in database. Call `std::chrono::reload_tzdb()` to reload the database after
-a system update. :::
+a system update.
+:::
 
 ## See Also
 
@@ -359,7 +363,8 @@ void ratio_details() {
 :::warning `std::common_type_t<seconds, seconds>` is `seconds`, not `int`. The `Rep` type is
 preserved. But `std::common_type_t<seconds, milliseconds>` is `milliseconds` because milliseconds
 has a finer period. The common type always has the **shortest** (finest) period among the inputs
-[N4950 §29.5.3]. :::
+[N4950 §29.5.3].
+:::
 
 ### Duration Literals and User-Defined Literals
 
@@ -459,7 +464,8 @@ void time_t_conversion() {
 :::warning `std::time_t` has only 1-second resolution. Converting `time_point` → `time_t` →
 `time_point` loses sub-second precision. On systems where `time_t` is 32-bit, dates beyond
 2038-01-19 cannot be represented (the Year 2038 problem). Modern 64-bit systems use a 64-bit
-`time_t`. :::
+`time_t`.
+:::
 
 ### C++20 Calendar: `year_month_day` Arithmetic
 
@@ -557,7 +563,8 @@ void sleep_demo() {
 
 :::warning `sleep_for` and `sleep_until` can oversleep due to OS scheduling. The actual sleep
 duration is a lower bound, not a guarantee. For high-precision timing (sub-millisecond), use
-busy-waiting with `std::chrono::steady_clock` or OS-specific spin loops. :::
+busy-waiting with `std::chrono::steady_clock` or OS-specific spin loops.
+:::
 
 ### Common Pitfalls
 

@@ -36,7 +36,8 @@ Dynamic equilibrium is established when:
 - Equilibrium can be approached from either direction.
 
 :::warning Equilibrium can only be established in a closed system. If a product is allowed to escape
-(e.g., a gas leaving an open container), equilibrium will never be reached. :::
+(e.g., a gas leaving an open container), equilibrium will never be reached.
+:::
 
 ---
 
@@ -100,7 +101,8 @@ pressure.
 :::warning Adding an inert gas at constant volume does NOT change the equilibrium position, because
 the partial pressures (and therefore concentrations) of the reacting gases remain unchanged. Adding
 an inert gas at constant total pressure does shift equilibrium towards the side with more moles of
-gas, because the partial pressures of the reacting gases decrease. :::
+gas, because the partial pressures of the reacting gases decrease.
+:::
 
 #### Change in Temperature
 
@@ -374,7 +376,8 @@ $$\mathrm{H}_2\mathrm{S}_2\mathrm{O}_{7(l)} + \mathrm{H}_2\mathrm{O}_{(l)} \to 2
 
 :::info $\mathrm{SO}_3$ is NOT dissolved directly in water because the reaction is highly exothermic
 and would produce a corrosive mist of $\mathrm{H}_2\mathrm{SO}_4$ droplets that is difficult to
-condense. :::
+condense.
+:::
 
 ### Le Chatelier's Principle in the Contact Process
 

@@ -172,7 +172,8 @@ int main() {
 
 :::warning Performance Note The above implementation allocates temporary strings for each
 comparison. For performance-critical code, implement a locale-aware character-by-character
-comparison that avoids allocation. :::
+comparison that avoids allocation.
+:::
 
 ## See Also
 

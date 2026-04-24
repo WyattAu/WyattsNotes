@@ -27,7 +27,8 @@ tools are essential for geometry, mechanics, and physics at university level.
 
 :::info All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
 scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
-planes. :::
+planes.
+:::
 
 <hr />
 
@@ -356,7 +357,8 @@ $\square$
 
 :::info The scalar triple product being zero is a test for coplanarity. If four points $A$, $B$,
 $C$, $D$ are coplanar, then
-$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$. :::
+$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
+:::
 
 <hr />
 

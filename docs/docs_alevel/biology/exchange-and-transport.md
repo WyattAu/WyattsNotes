@@ -106,7 +106,8 @@ $500 \times 15 = 7500\ \mathrm{cm^3\ min^{-1}}$.
 :::warning Common Pitfall Students often confuse tidal volume with vital capacity. Vital capacity is
 the maximum volume of air that can be exhaled after a maximum inhalation
 ($\approx 4500\ \mathrm{cm^3}$). Residual volume is the air remaining in the lungs after maximum
-exhalation ($\approx 1500\ \mathrm{cm^3}$). :::
+exhalation ($\approx 1500\ \mathrm{cm^3}$).
+:::
 
 ## 3. Gas Exchange in Other Organisms
 
@@ -214,7 +215,8 @@ Phloem consists of:
 a model with limitations. Translocation is faster than predicted by simple diffusion, and some
 solutes appear to move bidirectionally, which the model does not easily explain. The current
 consensus is that mass flow is the primary mechanism but is supplemented by cytoplasmic streaming
-and active transport. :::
+and active transport.
+:::
 
 ### 4.3 Transpiration
 
@@ -285,7 +287,8 @@ pressure to open the SL valves); aortic pressure peaks during ejection and falls
 
 :::warning Common Pitfall Students often describe the ventricles contracting from top to bottom.
 They contract from the base (apex) upwards, which efficiently pushes blood towards the arteries at
-the top of the heart. :::
+the top of the heart.
+:::
 
 ### 5.4 Cardiac Output
 

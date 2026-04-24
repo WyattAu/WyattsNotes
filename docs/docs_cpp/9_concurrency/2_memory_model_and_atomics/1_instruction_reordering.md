@@ -181,7 +181,8 @@ $$\mathrm{control dependency: } \mathrm{if } (x) \{ y = 1; \}$$
 :::warning Control dependencies do **not** prevent reordering on all architectures. On x86, control
 dependencies provide ordering, but on ARM and POWER, the processor may speculatively execute the
 dependent load before the controlling branch is resolved. Always use explicit memory ordering
-(acquire/release) rather than relying on control dependencies. :::
+(acquire/release) rather than relying on control dependencies.
+:::
 
 ### Data Dependencies as Ordering
 
@@ -302,7 +303,8 @@ relationships.
 
 :::warning The following program demonstrates how the absence of proper memory ordering can lead to
 unexpected results. It contains intentional data races and is for educational purposes only. Do not
-write code like this in production. :::
+write code like this in production.
+:::
 
 ```cpp
 #include <iostream>
@@ -337,7 +339,8 @@ int main() {
 compiler may reorder `data = 42` after `ready = true`, or the hardware may reorder the stores due to
 store buffering. On x86, stores are not reordered with other stores (TSO), so this particular
 example would likely work on x86 but fail on ARM. This is a common source of subtle cross-platform
-bugs. :::
+bugs.
+:::
 
 The fix is to use `std::atomic&lt;bool&gt;` with release/acquire ordering:
 

@@ -79,7 +79,8 @@ int main() {
 
 :::tip For CPU-bound work, creating $\approx N_{\mathrm{optimal}}$ threads is a reasonable starting
 point. For I/O-bound work, you may benefit from more threads since they spend time waiting rather
-than computing. :::
+than computing.
+:::
 
 ## Joining and Detaching
 
@@ -96,7 +97,8 @@ A `std::thread` object is in one of two states relative to an OS thread [N4950 �
 
 :::warning Calling `join()` or `detach()` on a thread that is not joinable results in
 `std::system_error`. Destroying a joinable `std::thread` calls `std::terminate()` [N4950
-§31.4.4.1.3]. Always ensure a thread is either joined or detached before destruction. :::
+§31.4.4.1.3]. Always ensure a thread is either joined or detached before destruction.
+:::
 
 ## RAII-Based Thread Guard
 
@@ -185,7 +187,8 @@ int main() {
 
 :::info `std::jthread` automatically passes its internal `std::stop_token` as the **first** argument
 of the callable if the callable accepts a `std::stop_token` as its first parameter [N4950
-§31.4.4.4.2]. :::
+§31.4.4.4.2].
+:::
 
 ## Thread-Safe Worker Pool with `jthread` + `stop_token`
 
@@ -329,7 +332,8 @@ void native_handle_demo() {
 
 :::warning `native_handle()` is optional — the C++ standard allows it to return a default value if
 the implementation does not support native handles. Always check the documentation for your standard
-library implementation. Code using `native_handle()` is inherently non-portable. :::
+library implementation. Code using `native_handle()` is inherently non-portable.
+:::
 
 ## Thread Arguments and Race Conditions
 
@@ -370,7 +374,8 @@ void race_condition_demo() {
 :::warning The default behavior copies arguments into internal storage **before** the thread starts
 executing. This means even if the original variable is destroyed before the thread accesses it, the
 copy is safe. However, if you explicitly pass `std::ref` or `std::cref`, you bypass this protection
-and must ensure the referenced object outlives the thread. :::
+and must ensure the referenced object outlives the thread.
+:::
 
 ## `std::jthread` with Return Value via `std::promise`
 
@@ -416,7 +421,8 @@ void promise_future_demo() {
 :::info When a `std::jthread` is detached, it runs independently. The `std::promise` (or
 `std::shared_ptr` to captured data) keeps the necessary state alive until the thread completes.
 However, detached threads are hard to reason about — you cannot join them, and they may outlive
-`main()`, causing undefined behavior. Prefer joining whenever possible. :::
+`main()`, causing undefined behavior. Prefer joining whenever possible.
+:::
 
 ## `std::stop_callback` — Reactive Cancellation
 
@@ -454,7 +460,8 @@ void stop_callback_demo() {
 :::warning `std::stop_callback`'s destructor deregisters the callback. If the `stop_callback` object
 is destroyed before the stop is requested, the callback will never fire. Ensure the `stop_callback`
 object outlives the expected stop request. The callback itself is invoked synchronously from the
-thread that calls `request_stop()`, not from the worker thread. :::
+thread that calls `request_stop()`, not from the worker thread.
+:::
 
 ## Thread Stack Size
 
@@ -491,7 +498,8 @@ void stack_size_info() {
 :::warning If a thread exceeds its stack size, the result is a stack overflow — typically a
 `SIGSEGV` on POSIX or an access violation on Windows. This is especially common with deep recursion
 or large local variables in thread functions. Use heap allocation for large buffers, not stack
-allocation. :::
+allocation.
+:::
 
 ## `std::jthread` Constructor Variants
 

@@ -135,7 +135,8 @@ int main() {
 
 :::tip `monotonic_buffer_resource` is perfect for parsing, JSON processing, AST construction, and
 any scenario where many objects are created and destroyed together. Since individual `deallocate`
-calls are no-ops, allocation is extremely fast. :::
+calls are no-ops, allocation is extremely fast.
+:::
 
 ### `std::pmr::unsynchronized_pool_resource`
 
@@ -267,7 +268,8 @@ int main() {
 :::warning When using `monotonic_buffer_resource`, remember that `deallocate` is a no-op. If you
 create container A, then container B, and A still holds references to memory allocated from B's
 objects, those references may dangle if B is destroyed and its memory is recycled. Arena allocation
-is safest when all allocations share the same lifetime scope. :::
+is safest when all allocations share the same lifetime scope.
+:::
 
 ### Integration Pattern: Dependency Injection of Memory Resources
 
@@ -468,7 +470,8 @@ int main() {
 :::info The performance advantage of `synchronized_pool_resource` over `new_delete_resource()` in
 multi-threaded code comes from reduced contention: each thread typically allocates from its own
 thread-local pool chunk, and the global heap lock is only contended when a new chunk is needed. For
-single-threaded code, `unsynchronized_pool_resource` is strictly faster. :::
+single-threaded code, `unsynchronized_pool_resource` is strictly faster.
+:::
 
 ### Common Pitfalls
 

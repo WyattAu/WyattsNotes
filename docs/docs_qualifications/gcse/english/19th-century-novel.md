@@ -12,7 +12,8 @@ slug: 19th-century-novel
 ## The 19th-Century Novel
 
 :::info Board Coverage AQA Paper 1 Section B | Edexcel Paper 2 Component 1 | OCR Paper 2 Section A |
-WJEC/Eduqas Paper 2 Section A :::
+WJEC/Eduqas Paper 2 Section A
+:::
 
 ## 1. The 19th-Century Novel as a Genre
 

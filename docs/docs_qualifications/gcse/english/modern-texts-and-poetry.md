@@ -12,7 +12,8 @@ slug: modern-texts-and-poetry
 ## Modern Texts and Poetry
 
 :::info Board Coverage AQA Paper 2 | Edexcel Paper 1 Component 2 (Modern Prose/Drama) and Paper 2
-(Poetry) | OCR Paper 2 | WJEC/Eduqas Paper 2 :::
+(Poetry) | OCR Paper 2 | WJEC/Eduqas Paper 2
+:::
 
 ## 1. Modern Texts (Post-1914)
 

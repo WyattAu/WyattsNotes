@@ -79,7 +79,8 @@ is only one type of mass.
 
 :::info Board Coverage AQA: Comparison table is an expected synoptic link with gravitational fields
 (Paper 2). Edexcel: Explicit comparison required in CP3. OCR (A): Potential energy comparison is
-commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4. :::
+commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4.
+:::
 
 ## 2. Electric Field Strength
 
@@ -153,7 +154,8 @@ formula $E = V/d$ for the uniform field region.
 :::info Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
 parallel plates is given. Edexcel: Only the uniform field result $E = V/d$ is required. OCR (A):
 Gauss's law may appear as extension material in Module 6. CIE: The infinite plane result is not in
-the syllabus but is useful for understanding parallel plates. :::
+the syllabus but is useful for understanding parallel plates.
+:::
 
 ## 3. Electric Potential
 
@@ -225,7 +227,8 @@ as useful work when the system returns to its equilibrium state.
 :::info Board Coverage AQA: Energy stored in capacitors is required (6.4.3). Edexcel: Required in
 Topic 11 (capacitor energy and charging/discharging graphs). OCR (A): Required in 6.3.2, including
 deriving energy from the area under a $V$--$Q$ graph. CIE: Required in P3 (Chapter 22), including
-the three equivalent forms. :::
+the three equivalent forms.
+:::
 
 ## 4. Relationship Between $E$ and $V$: $E = -dV/dr$
 
@@ -326,7 +329,8 @@ repulsion.
 :::info Board Coverage AQA: Van de Graaff generators are a specified practical context (required
 practical 10). Edexcel: Mentioned in CP3 and CP6 as an example of charge accumulation and high
 potential. OCR (A): Can appear in Paper 2 as a context question. CIE: Not explicitly named but the
-underlying physics (field of a sphere, potential, discharge) is examined in P4. :::
+underlying physics (field of a sphere, potential, discharge) is examined in P4.
+:::
 
 ### Inkjet Printers
 
@@ -374,7 +378,8 @@ equation relates collection efficiency $\eta$ to plate area, gas flow rate, and 
 :::info Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
 in Paper 2. Edexcel: Listed as an application in CP3. OCR (A): May appear as an unseen context
 question in Paper 2 requiring application of field and force principles. CIE: Industrial
-applications of electric fields are examinable in P4. :::
+applications of electric fields are examinable in P4.
+:::
 
 ## Problem Set
 

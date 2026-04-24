@@ -620,7 +620,8 @@ too rapidly.
 
 :::info Air resistance (drag) force is given by $F_D = \frac{1}{2}\rho C_D A v^2$, where $\rho$ is
 air density, $C_D$ is the drag coefficient, and $A$ is the cross-sectional area. This quadratic
-dependence on velocity is why fuel consumption increases dramatically at high speeds. :::
+dependence on velocity is why fuel consumption increases dramatically at high speeds.
+:::
 
 ### Example 17: Energy in a Mass-Spring System with Gravity
 

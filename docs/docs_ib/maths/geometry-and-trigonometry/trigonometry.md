@@ -160,7 +160,8 @@ For $y = a\sin(bx + c) + d$:
 - $d$ = vertical shift
 
 :::tip Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
-and show at least one full period clearly. :::
+and show at least one full period clearly.
+:::
 
 <DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
 
@@ -342,7 +343,8 @@ $$
 
 :::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
 principal value -- you may need to find other solutions using the periodic properties or the ASTC
-rule. :::
+rule.
+:::
 
 ## Sine and Cosine Rules
 

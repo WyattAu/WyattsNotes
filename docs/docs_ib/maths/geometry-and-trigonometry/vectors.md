@@ -434,7 +434,8 @@ $$
 
 :::tip Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
 your answer by substituting the point back into both equations. Common errors include sign mistakes
-in the cross product and forgetting to take the absolute value in distance formulas. :::
+in the cross product and forgetting to take the absolute value in distance formulas.
+:::
 
 ---
 

@@ -19,7 +19,8 @@ slug: probability
 | CIE (9709) | P1, P6     | Probability in P1; conditional in P6              |
 
 :::info Probability questions test logical reasoning as much as formula recall. Always define events
-clearly and draw a diagram before calculating. :::
+clearly and draw a diagram before calculating.
+:::
 
 <hr />
 
@@ -147,7 +148,8 @@ $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i)P(B_i)}$$
 
 :::tip Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
 positive, what is the probability the patient actually has the disease?" Always define events
-clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$). :::
+clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$).
+:::
 
 <hr />
 
@@ -176,7 +178,8 @@ probability of $A$ is the same whether or not $B$ has happened.
 
 :::warning "Independent" and "mutually exclusive" are **different** concepts. If $A$ and $B$ are
 mutually exclusive and both have positive probability, they are **not** independent (since
-$P(A \cap B) = 0 \neq P(A)P(B)$). :::
+$P(A \cap B) = 0 \neq P(A)P(B)$).
+:::
 
 ### 5.3 Pairwise and mutual independence
 
@@ -192,7 +195,8 @@ $(A_i, A_j)$ with $i \neq j$ is independent.
 independence does not imply mutual independence. For example, with two independent coin tosses, let
 $A$ = "first toss is heads", $B$ = "second toss is heads", $C$ = "both tosses are the same". Then
 $A$, $B$, $C$ are pairwise independent but not mutually independent since
-$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$. :::
+$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$.
+:::
 
 <hr />
 
@@ -443,7 +447,8 @@ $$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \tfrac{85}{6} - \tfrac{49}{4} = \tfrac{1
 
 :::info For a fair die, $E(X) = 3.5$ and $\mathrm{Var}(X) = 35/12 \approx 2.917$. The biased die
 above has the same mean but smaller variance, meaning its outcomes are more concentrated around the
-centre. :::
+centre.
+:::
 
 <hr />
 

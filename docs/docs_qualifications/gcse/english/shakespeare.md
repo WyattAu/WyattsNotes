@@ -12,7 +12,8 @@ slug: shakespeare
 ## Shakespeare
 
 :::info Board Coverage AQA Paper 1 Section A | Edexcel Paper 1 Component 1 | OCR Paper 1 Section A
-(with Pre-1900 Poetry) | WJEC/Eduqas Paper 1 Section A :::
+(with Pre-1900 Poetry) | WJEC/Eduqas Paper 1 Section A
+:::
 
 ## 1. Why Shakespeare Is Compulsory
 

@@ -704,7 +704,8 @@ is conserved, and since the wave is moving more slowly, the energy is concentrat
 wavelength.
 
 :::info This is analogous to light bending towards the normal when entering a denser medium. The
-decrease in wave speed causes the wavelength to decrease while the frequency remains constant. :::
+decrease in wave speed causes the wavelength to decrease while the frequency remains constant.
+:::
 
 ### Example 27: Electromagnetic Spectrum Calculations
 
