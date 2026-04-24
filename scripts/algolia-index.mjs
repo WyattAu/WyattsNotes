@@ -48,8 +48,8 @@ async function getSitemapUrls(baseUrl) {
 
   while ((match = locRegex.exec(text)) !== null) {
     const url = match[1];
-    // Skip non-content pages (404, search, tags, etc.)
-    if (url.includes('/404') || url.includes('/search') || url.includes('/tags')) {
+    // Skip non-content pages (404, search, tags, privacy, etc.)
+    if (url.includes('/404') || url.includes('/search') || url.includes('/tags') || url.includes('/privacy')) {
       continue;
     }
     urls.push(url);
@@ -126,9 +126,7 @@ async function indexSite(client, site) {
   const urls = await getSitemapUrls(site.url);
   console.log(`[${site.name}] Found ${urls.length} pages to index`);
 
-  const index = client.initIndex(site.indexName);
   const records = [];
-  const batchSize = 50;
 
   for (let i = 0; i < urls.length; i += 5) {
     // Fetch 5 pages concurrently
@@ -157,30 +155,26 @@ async function indexSite(client, site) {
 
   console.log(`\r[${site.name}] Processed ${records.length}/${urls.length} pages`);
 
-  // Push to Algolia in batches
-  for (let i = 0; i < records.length; i += batchSize) {
-    const batch = records.slice(i, i + batchSize);
-    await index.saveObjects(batch);
-    process.stdout.write(`\r[${site.name}] Indexed ${Math.min(i + batchSize, records.length)}/${records.length} records`);
-  }
-
-  console.log(`\r[${site.name}] Indexed ${records.length} records to ${site.indexName}`);
+  // Push to Algolia (v5 API: saveObjects takes { indexName, objects })
+  await client.saveObjects({ indexName: site.indexName, objects: records });
+  console.log(`[${site.name}] Indexed ${records.length} records to ${site.indexName}`);
   return records.length;
 }
 
 async function main() {
   const client = algoliasearch(APP_ID, WRITE_KEY);
 
-  // Configure indices
+  // Configure indices (v5 API: setSettings takes { indexName, indexSettings })
   for (const site of SITES) {
-    const index = client.initIndex(site.indexName);
-    await index.setSettings({
-      searchableAttributes: ['title', 'section', 'content', 'hierarchy.lvl0', 'hierarchy.lvl1'],
-      attributesToHighlight: ['title', 'content'],
-      attributesToSnippet: ['content:20'],
-      attributesToRetrieve: ['title', 'url', 'section', 'hierarchy'],
-      ranking: ['words', 'typo', 'attribute', 'proximity', 'exact', 'custom'],
-      customRanking: ['desc(weight.page_rank)', 'desc(weight.position)'],
+    await client.setSettings({
+      indexName: site.indexName,
+      indexSettings: {
+        searchableAttributes: ['title', 'section', 'content', 'hierarchy.lvl0', 'hierarchy.lvl1'],
+        attributesToHighlight: ['title', 'content'],
+        attributesToSnippet: ['content:20'],
+        attributesToRetrieve: ['title', 'url', 'section', 'hierarchy'],
+        customRanking: ['desc(weight.page_rank)', 'desc(weight.position)'],
+      },
     });
     console.log(`Configured index: ${site.indexName}`);
   }
