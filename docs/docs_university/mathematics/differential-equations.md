@@ -29,8 +29,9 @@ An ODE is:
 
 ### 1.3 Initial and Boundary Value Problems
 
-An **initial value problem (IVP)** specifies the value of the function (and possibly its derivatives)
-at a single point. A **boundary value problem (BVP)** specifies conditions at two or more points.
+An **initial value problem (IVP)** specifies the value of the function (and possibly its
+derivatives) at a single point. A **boundary value problem (BVP)** specifies conditions at two or
+more points.
 
 ## 2. First-Order ODEs
 
@@ -44,8 +45,8 @@ Integrating both sides: $\int \frac{dy}{h(y)} = \int g(x)\, dx + C$.
 
 **Example.** Solve $\frac{dy}{dx} = xy$.
 
-Separating: $\frac{dy}{y} = x\, dx$. Integrating: $\ln|y| = \frac{x^2}{2} + C$.
-Thus $y = Ce^{x^2/2}$ where $C \neq 0$, plus the trivial solution $y = 0$.
+Separating: $\frac{dy}{y} = x\, dx$. Integrating: $\ln|y| = \frac{x^2}{2} + C$. Thus
+$y = Ce^{x^2/2}$ where $C \neq 0$, plus the trivial solution $y = 0$.
 
 ### 2.2 Linear First-Order Equations
 
@@ -57,7 +58,7 @@ $$\frac{dy}{dx} + P(x)y = Q(x)$$
 
 $$y(x) = e^{-\int P(x)\, dx}\left(\int Q(x) e^{\int P(x)\, dx}\, dx + C\right)$$
 
-*Proof.* Multiply both sides by $\mu(x) = e^{\int P(x)\, dx}$:
+_Proof._ Multiply both sides by $\mu(x) = e^{\int P(x)\, dx}$:
 
 $$\frac{d}{dx}(\mu y) = \mu \frac{dy}{dx} + \mu P y = \mu \frac{dy}{dx} + \mu' y = \mu\left(\frac{dy}{dx} + Py\right) = \mu Q$$
 
@@ -67,31 +68,35 @@ Integrating: $\mu y = \int \mu Q\, dx + C$. Solving for $y$ gives the result. $\
 
 **Problem.** Solve $y' + \frac{2}{x}y = x^2$ for $x > 0$.
 
-*Solution.* $P(x) = 2/x$, $Q(x) = x^2$.
+_Solution._ $P(x) = 2/x$, $Q(x) = x^2$.
 
 $\mu(x) = e^{\int 2/x\, dx} = e^{2\ln x} = x^2$.
 
-$y = x^{-2}\left(\int x^2 \cdot x^2\, dx + C\right) = x^{-2}\left(\frac{x^5}{5} + C\right) = \frac{x^3}{5} + \frac{C}{x^2}$. $\blacksquare$
+$y = x^{-2}\left(\int x^2 \cdot x^2\, dx + C\right) = x^{-2}\left(\frac{x^5}{5} + C\right) = \frac{x^3}{5} + \frac{C}{x^2}$.
+$\blacksquare$
 
 ### 2.4 Exact Equations
 
-The ODE $M(x, y)\, dx + N(x, y)\, dy = 0$ is **exact** if $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$.
+The ODE $M(x, y)\, dx + N(x, y)\, dy = 0$ is **exact** if
+$\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$.
 
 When exact, there exists $\Psi(x, y)$ such that $\frac{\partial \Psi}{\partial x} = M$ and
 $\frac{\partial \Psi}{\partial y} = N$, and the solution is $\Psi(x, y) = C$.
 
-**Theorem 2.2.** If $M$ and $N$ have continuous partial derivatives on a simply connected domain $D$,
-then $M\, dx + N\, dy = 0$ is exact if and only if $M_y = N_x$.
+**Theorem 2.2.** If $M$ and $N$ have continuous partial derivatives on a simply connected domain
+$D$, then $M\, dx + N\, dy = 0$ is exact if and only if $M_y = N_x$.
 
-*Proof.* If exact, $M = \Psi_x$ and $N = \Psi_y$, so $M_y = \Psi_{xy} = \Psi_{yx} = N_x$ by Clairaut.
-Conversely, if $M_y = N_x$, define $\Psi(x, y) = \int_{x_0}^x M(t, y)\, dt + \int_{y_0}^y N(x_0, s)\, ds$.
-Then $\Psi_x = M(x, y)$ and $\Psi_y = \int_{x_0}^x M_y(t, y)\, dt + N(x_0, y) = \int_{x_0}^x N_x(t, y)\, dt + N(x_0, y) = N(x, y) - N(x_0, y) + N(x_0, y) = N(x, y)$. $\blacksquare$
+_Proof._ If exact, $M = \Psi_x$ and $N = \Psi_y$, so $M_y = \Psi_{xy} = \Psi_{yx} = N_x$ by
+Clairaut. Conversely, if $M_y = N_x$, define
+$\Psi(x, y) = \int_{x_0}^x M(t, y)\, dt + \int_{y_0}^y N(x_0, s)\, ds$. Then $\Psi_x = M(x, y)$ and
+$\Psi_y = \int_{x_0}^x M_y(t, y)\, dt + N(x_0, y) = \int_{x_0}^x N_x(t, y)\, dt + N(x_0, y) = N(x, y) - N(x_0, y) + N(x_0, y) = N(x, y)$.
+$\blacksquare$
 
 ### 2.5 Worked Example: Exact Equation
 
 **Problem.** Solve $(2xy + 3)\, dx + (x^2 - 1)\, dy = 0$.
 
-*Solution.* $M = 2xy + 3$, $N = x^2 - 1$. Check: $M_y = 2x = N_x$. Exact.
+_Solution._ $M = 2xy + 3$, $N = x^2 - 1$. Check: $M_y = 2x = N_x$. Exact.
 
 $\Psi_x = 2xy + 3 \implies \Psi = x^2 y + 3x + h(y)$.
 
@@ -104,9 +109,11 @@ Solution: $x^2 y + 3x - y = C$. $\blacksquare$
 If $M_y \neq N_x$, one can sometimes find an **integrating factor** $\mu(x, y)$ such that
 $(\mu M)_y = (\mu N)_x$.
 
-**Case 1:** If $\frac{M_y - N_x}{N}$ depends only on $x$, then $\mu(x) = e^{\int \frac{M_y - N_x}{N}\, dx}$.
+**Case 1:** If $\frac{M_y - N_x}{N}$ depends only on $x$, then
+$\mu(x) = e^{\int \frac{M_y - N_x}{N}\, dx}$.
 
-**Case 2:** If $\frac{N_x - M_y}{M}$ depends only on $y$, then $\mu(y) = e^{\int \frac{N_x - M_y}{M}\, dy}$.
+**Case 2:** If $\frac{N_x - M_y}{M}$ depends only on $y$, then
+$\mu(y) = e^{\int \frac{N_x - M_y}{M}\, dy}$.
 
 ### 2.7 Bernoulli Equations
 
@@ -120,15 +127,15 @@ $$\frac{dv}{dx} + (1 - n)P(x)v = (1 - n)Q(x)$$
 
 **Example.** Solve $y' + y = y^2 e^x$.
 
-Here $n = 2$, so set $v = y^{-1}$. Then $v' = -y^{-2}y'$, and the equation becomes
-$v' - v = -e^x$. Integrating factor: $e^{-x}$. So $(v e^{-x})' = -1$, giving $ve^{-x} = -x + C$,
-$v = -xe^x + Ce^x$, and $y = 1/(C - x)e^x$.
+Here $n = 2$, so set $v = y^{-1}$. Then $v' = -y^{-2}y'$, and the equation becomes $v' - v = -e^x$.
+Integrating factor: $e^{-x}$. So $(v e^{-x})' = -1$, giving $ve^{-x} = -x + C$, $v = -xe^x + Ce^x$,
+and $y = 1/(C - x)e^x$.
 
 ### 2.8 Existence and Uniqueness
 
-**Theorem 2.3 (Picard-Lindel\"{o}f).** If $f$ and $\partial f/\partial y$ are continuous on a
-rectangle containing $(x_0, y_0)$, then the IVP $y' = f(x, y)$, $y(x_0) = y_0$ has a unique solution
-in some neighbourhood of $x_0$.
+**Theorem 2.3 (Picard-Lindelöf).** If $f$ and $\partial f/\partial y$ are continuous on a rectangle
+containing $(x_0, y_0)$, then the IVP $y' = f(x, y)$, $y(x_0) = y_0$ has a unique solution in some
+neighbourhood of $x_0$.
 
 ### 2.9 Substitution Methods
 
@@ -168,13 +175,14 @@ $$r^2 + ar + b = 0$$
 
 **Case 2: Repeated root $r$.** $y_h = c_1 e^{rx} + c_2 x e^{rx}$.
 
-**Case 3: Complex conjugate roots $r = \alpha \pm i\beta$.** $y_h = e^{\alpha x}(c_1 \cos(\beta x) + c_2 \sin(\beta x))$.
+**Case 3: Complex conjugate roots $r = \alpha \pm i\beta$.**
+$y_h = e^{\alpha x}(c_1 \cos(\beta x) + c_2 \sin(\beta x))$.
 
 ### 3.3 Worked Example: Homogeneous Equation
 
 **Problem.** Solve $y'' - 5y' + 6y = 0$ with $y(0) = 1$, $y'(0) = 0$.
 
-*Solution.* Characteristic equation: $r^2 - 5r + 6 = (r-2)(r-3) = 0$. Roots: $r = 2, 3$.
+_Solution._ Characteristic equation: $r^2 - 5r + 6 = (r-2)(r-3) = 0$. Roots: $r = 2, 3$.
 
 $y_h = c_1 e^{2x} + c_2 e^{3x}$.
 
@@ -187,26 +195,25 @@ $y = 3e^{2x} - 2e^{3x}$. $\blacksquare$
 For equations $y'' + ay' + by = g(x)$ where $g(x)$ is a polynomial, exponential, sine, cosine, or
 products of these, guess the form of $y_p$ and solve for coefficients.
 
-| $g(x)$ | Guess for $y_p$ |
-|--------|-----------------|
-| $P_n(x)$ | $A_n x^n + \cdots + A_0$ |
-| $e^{ax}$ | $Ae^{ax}$ |
-| $\sin(bx)$ or $\cos(bx)$ | $A\sin(bx) + B\cos(bx)$ |
-| $e^{ax} P_n(x)$ | $e^{ax}(A_n x^n + \cdots + A_0)$ |
-| $e^{ax}\sin(bx)$ or $e^{ax}\cos(bx)$ | $e^{ax}(A\sin(bx) + B\cos(bx))$ |
+| $g(x)$                               | Guess for $y_p$                  |
+| ------------------------------------ | -------------------------------- |
+| $P_n(x)$                             | $A_n x^n + \cdots + A_0$         |
+| $e^{ax}$                             | $Ae^{ax}$                        |
+| $\sin(bx)$ or $\cos(bx)$             | $A\sin(bx) + B\cos(bx)$          |
+| $e^{ax} P_n(x)$                      | $e^{ax}(A_n x^n + \cdots + A_0)$ |
+| $e^{ax}\sin(bx)$ or $e^{ax}\cos(bx)$ | $e^{ax}(A\sin(bx) + B\cos(bx))$  |
 
-**Rule.** If any term of the guess is a solution of the homogeneous equation, multiply by $x$
-(or $x^2$ if already multiplied by $x$).
+**Rule.** If any term of the guess is a solution of the homogeneous equation, multiply by $x$ (or
+$x^2$ if already multiplied by $x$).
 
 ### 3.5 Worked Example: Undetermined Coefficients
 
 **Problem.** Solve $y'' - y = 2e^x$.
 
-*Solution.* Homogeneous: $r^2 - 1 = 0$, roots $\pm 1$. $y_h = c_1 e^x + c_2 e^{-x}$.
+_Solution._ Homogeneous: $r^2 - 1 = 0$, roots $\pm 1$. $y_h = c_1 e^x + c_2 e^{-x}$.
 
-Since $e^x$ is a homogeneous solution, guess $y_p = Axe^x$.
-$y_p' = Ae^x + Axe^x$, $y_p'' = 2Ae^x + Axe^x$.
-$y_p'' - y_p = (2Ae^x + Axe^x) - Axe^x = 2Ae^x = 2e^x$, so $A = 1$.
+Since $e^x$ is a homogeneous solution, guess $y_p = Axe^x$. $y_p' = Ae^x + Axe^x$,
+$y_p'' = 2Ae^x + Axe^x$. $y_p'' - y_p = (2Ae^x + Axe^x) - Axe^x = 2Ae^x = 2e^x$, so $A = 1$.
 
 $y = c_1 e^x + c_2 e^{-x} + xe^x$. $\blacksquare$
 
@@ -219,17 +226,18 @@ $$y_p = -y_1 \int \frac{y_2 g}{W}\, dx + y_2 \int \frac{y_1 g}{W}\, dx$$
 
 where $W = W(y_1, y_2) = y_1 y_2' - y_2 y_1'$.
 
-*Proof.* Seek $y_p = u_1(x)y_1(x) + u_2(x)y_2(x)$. Impose the constraint $u_1'y_1 + u_2'y_2 = 0$.
+_Proof._ Seek $y_p = u_1(x)y_1(x) + u_2(x)y_2(x)$. Impose the constraint $u_1'y_1 + u_2'y_2 = 0$.
 Then $y_p' = u_1 y_1' + u_2 y_2'$ and $y_p'' = u_1' y_1' + u_1 y_1'' + u_2' y_2' + u_2 y_2''$.
-Substituting into the ODE: $(u_1'y_1' + u_2'y_2') + u_1(y_1'' + py_1' + qy_1) + u_2(y_2'' + py_2' + qy_2) = g$.
-Since $y_1, y_2$ satisfy the homogeneous equation, this reduces to $u_1'y_1' + u_2'y_2' = g$.
-Together with $u_1'y_1 + u_2'y_2 = 0$, solving gives the formulas above. $\blacksquare$
+Substituting into the ODE:
+$(u_1'y_1' + u_2'y_2') + u_1(y_1'' + py_1' + qy_1) + u_2(y_2'' + py_2' + qy_2) = g$. Since
+$y_1, y_2$ satisfy the homogeneous equation, this reduces to $u_1'y_1' + u_2'y_2' = g$. Together
+with $u_1'y_1 + u_2'y_2 = 0$, solving gives the formulas above. $\blacksquare$
 
 ### 3.7 Worked Example: Variation of Parameters
 
 **Problem.** Solve $y'' + y = \tan x$ using variation of parameters.
 
-*Solution.* $y_1 = \cos x$, $y_2 = \sin x$. $W = \cos x \cdot \cos x - \sin x \cdot (-\sin x) = 1$.
+_Solution._ $y_1 = \cos x$, $y_2 = \sin x$. $W = \cos x \cdot \cos x - \sin x \cdot (-\sin x) = 1$.
 
 $u_1' = -\frac{y_2 g}{W} = -\sin x \tan x = -\frac{\sin^2 x}{\cos x} = -(1 - \cos^2 x)/\cos x = -\sec x + \cos x$.
 
@@ -275,11 +283,12 @@ So $\lambda$ is an eigenvalue of $A$ and $\mathbf{v}$ is the corresponding eigen
 $$\mathbf{x} = c_1 \mathbf{v}_1 e^{\lambda_1 t} + \cdots + c_n \mathbf{v}_n e^{\lambda_n t}$$
 
 **Case 2: $A$ has a repeated eigenvalue $\lambda$ with algebraic multiplicity $m$ and geometric
-multiplicity $k \lt{} m$.** Include terms involving $t^j e^{\lambda t}$ where generalized eigenvectors
-fill out the solution space.
+multiplicity $k \lt{} m$.** Include terms involving $t^j e^{\lambda t}$ where generalized
+eigenvectors fill out the solution space.
 
-**Case 3: Complex eigenvalues $\lambda = \alpha \pm i\beta$ with eigenvector $\mathbf{v} = \mathbf{a} \pm i\mathbf{b}$.**
-The real solutions are $e^{\alpha t}(\mathbf{a}\cos(\beta t) - \mathbf{b}\sin(\beta t))$ and
+**Case 3: Complex eigenvalues $\lambda = \alpha \pm i\beta$ with eigenvector
+$\mathbf{v} = \mathbf{a} \pm i\mathbf{b}$.** The real solutions are
+$e^{\alpha t}(\mathbf{a}\cos(\beta t) - \mathbf{b}\sin(\beta t))$ and
 $e^{\alpha t}(\mathbf{a}\sin(\beta t) + \mathbf{b}\cos(\beta t))$.
 
 ### 4.3 The Matrix Exponential
@@ -296,16 +305,20 @@ where $e^{Dt} = \mathrm{diag}(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
 
 **Problem.** Solve $\mathbf{x}' = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}\mathbf{x}$.
 
-*Solution.* Characteristic equation: $\det(A - \lambda I) = \lambda^2 + 3\lambda + 2 = (\lambda + 1)(\lambda + 2) = 0$.
-Eigenvalues: $\lambda_1 = -1$, $\lambda_2 = -2$.
+_Solution._ Characteristic equation:
+$\det(A - \lambda I) = \lambda^2 + 3\lambda + 2 = (\lambda + 1)(\lambda + 2) = 0$. Eigenvalues:
+$\lambda_1 = -1$, $\lambda_2 = -2$.
 
-For $\lambda_1 = -1$: $(A + I)\mathbf{v} = \begin{pmatrix} 1 & 1 \\ -2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0}$.
+For $\lambda_1 = -1$:
+$(A + I)\mathbf{v} = \begin{pmatrix} 1 & 1 \\ -2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0}$.
 $\mathbf{v}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
-For $\lambda_2 = -2$: $(A + 2I)\mathbf{v} = \begin{pmatrix} 2 & 1 \\ -2 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0}$.
+For $\lambda_2 = -2$:
+$(A + 2I)\mathbf{v} = \begin{pmatrix} 2 & 1 \\ -2 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0}$.
 $\mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 
-$\mathbf{x}(t) = c_1 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-t} + c_2 \begin{pmatrix} 1 \\ -2 \end{pmatrix} e^{-2t}$. $\blacksquare$
+$\mathbf{x}(t) = c_1 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-t} + c_2 \begin{pmatrix} 1 \\ -2 \end{pmatrix} e^{-2t}$.
+$\blacksquare$
 
 ## 5. Laplace Transforms
 
@@ -324,32 +337,34 @@ $|f(t)| \leq Me^{at}$ for some $M, a > 0$.
 
 **Theorem 5.2 (First Shifting).** $\mathcal{L}\{e^{at}f(t)\} = F(s - a)$.
 
-**Theorem 5.3 (Second Shifting).** $\mathcal{L}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$,
-where $u_c(t)$ is the unit step function.
+**Theorem 5.3 (Second Shifting).** $\mathcal{L}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$, where $u_c(t)$ is
+the unit step function.
 
 **Theorem 5.4 (Derivative).** $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$.
 
-**Theorem 5.5 (n-th Derivative).** $\mathcal{L}\{f^{(n)}(t)\} = s^n F(s) - s^{n-1}f(0) - \cdots - f^{(n-1)}(0)$.
+**Theorem 5.5 (n-th Derivative).**
+$\mathcal{L}\{f^{(n)}(t)\} = s^n F(s) - s^{n-1}f(0) - \cdots - f^{(n-1)}(0)$.
 
-**Theorem 5.6 (Integration).** $\mathcal{L}\left\{\int_0^t f(\tau)\, d\tau\right\} = \frac{F(s)}{s}$.
+**Theorem 5.6 (Integration).**
+$\mathcal{L}\left\{\int_0^t f(\tau)\, d\tau\right\} = \frac{F(s)}{s}$.
 
 **Theorem 5.7 (Convolution).** $\mathcal{L}\{f * g\} = F(s)G(s)$, where
 $(f * g)(t) = \int_0^t f(\tau)g(t - \tau)\, d\tau$.
 
 ### 5.3 Common Laplace Transforms
 
-| $f(t)$ | $F(s) = \mathcal{L}\{f(t)\}$ |
-|--------|-------------------------------|
-| $1$ | $1/s$ |
-| $t^n$ | $n!/s^{n+1}$ |
-| $e^{at}$ | $1/(s - a)$ |
-| $t^n e^{at}$ | $n!/(s - a)^{n+1}$ |
-| $\sin(bt)$ | $b/(s^2 + b^2)$ |
-| $\cos(bt)$ | $s/(s^2 + b^2)$ |
-| $e^{at}\sin(bt)$ | $b/((s-a)^2 + b^2)$ |
-| $e^{at}\cos(bt)$ | $(s-a)/((s-a)^2 + b^2)$ |
-| $u_c(t)$ | $e^{-cs}/s$ |
-| $\delta(t - c)$ | $e^{-cs}$ |
+| $f(t)$           | $F(s) = \mathcal{L}\{f(t)\}$ |
+| ---------------- | ---------------------------- |
+| $1$              | $1/s$                        |
+| $t^n$            | $n!/s^{n+1}$                 |
+| $e^{at}$         | $1/(s - a)$                  |
+| $t^n e^{at}$     | $n!/(s - a)^{n+1}$           |
+| $\sin(bt)$       | $b/(s^2 + b^2)$              |
+| $\cos(bt)$       | $s/(s^2 + b^2)$              |
+| $e^{at}\sin(bt)$ | $b/((s-a)^2 + b^2)$          |
+| $e^{at}\cos(bt)$ | $(s-a)/((s-a)^2 + b^2)$      |
+| $u_c(t)$         | $e^{-cs}/s$                  |
+| $\delta(t - c)$  | $e^{-cs}$                    |
 
 ### 5.4 Solving IVPs with Laplace Transforms
 
@@ -363,7 +378,7 @@ $(f * g)(t) = \int_0^t f(\tau)g(t - \tau)\, d\tau$.
 
 **Problem.** Solve $y'' + 4y = \sin(2t)$, $y(0) = 0$, $y'(0) = 0$.
 
-*Solution.* Taking Laplace transforms:
+_Solution._ Taking Laplace transforms:
 
 $s^2 Y + 4Y = \frac{2}{s^2 + 4}$
 
@@ -371,7 +386,8 @@ $(s^2 + 4)Y = \frac{2}{s^2 + 4}$
 
 $Y = \frac{2}{(s^2 + 4)^2}$
 
-To invert, use the convolution theorem: $\mathcal{L}^{-1}\left\{\frac{1}{s^2 + 4}\right\} = \frac{1}{2}\sin(2t)$.
+To invert, use the convolution theorem:
+$\mathcal{L}^{-1}\left\{\frac{1}{s^2 + 4}\right\} = \frac{1}{2}\sin(2t)$.
 
 $y(t) = \frac{1}{2}\sin(2t) * \frac{1}{2}\sin(2t) = \frac{1}{4}\int_0^t \sin(2\tau)\sin(2(t - \tau))\, d\tau$
 
@@ -385,8 +401,9 @@ $y(t) = \frac{\sin(2t) - 2t\cos(2t)}{16}$. $\blacksquare$
 
 ### 5.6 The Dirac Delta Function
 
-The **Dirac delta function** $\delta(t - c)$ satisfies $\int_0^{\infty} \delta(t - c)f(t)\, dt = f(c)$
-for continuous $f$. It models an instantaneous impulse.
+The **Dirac delta function** $\delta(t - c)$ satisfies
+$\int_0^{\infty} \delta(t - c)f(t)\, dt = f(c)$ for continuous $f$. It models an instantaneous
+impulse.
 
 $\mathcal{L}\{\delta(t - c)\} = e^{-cs}$.
 
@@ -402,13 +419,13 @@ power series $y = \sum_{n=0}^{\infty} a_n (x - x_0)^n$ and solve for the coeffic
 
 ### 6.2 Ordinary and Regular Singular Points
 
-$x_0$ is an **ordinary point** if $p$ and $q$ are analytic at $x_0$. It is a **regular singular point**
-if $(x - x_0)p(x)$ and $(x - x_0)^2 q(x)$ are analytic at $x_0$.
+$x_0$ is an **ordinary point** if $p$ and $q$ are analytic at $x_0$. It is a **regular singular
+point** if $(x - x_0)p(x)$ and $(x - x_0)^2 q(x)$ are analytic at $x_0$.
 
 ### 6.3 Frobenius Method
 
-At a regular singular point $x_0 = 0$, substitute $y = \sum_{n=0}^{\infty} a_n x^{n + r}$.
-The **indicial equation** determines the possible values of $r$.
+At a regular singular point $x_0 = 0$, substitute $y = \sum_{n=0}^{\infty} a_n x^{n + r}$. The
+**indicial equation** determines the possible values of $r$.
 
 **Theorem 6.1.** If the roots $r_1 \geq r_2$ of the indicial equation differ by a non-integer, there
 are two linearly independent solutions of the form $x^{r_1}\sum a_n x^n$ and $x^{r_2}\sum b_n x^n$.
@@ -419,8 +436,8 @@ Bessel's equation of order $\nu$:
 
 $$x^2 y'' + xy' + (x^2 - \nu^2)y = 0$$
 
-For $\nu \notin \mathbb{Z}$, the solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel functions of
-the first kind). For $\nu = n \in \mathbb{N}$, the second solution is the Weber function $Y_n(x)$.
+For $\nu \notin \mathbb{Z}$, the solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel functions of the
+first kind). For $\nu = n \in \mathbb{N}$, the second solution is the Weber function $Y_n(x)$.
 
 ## 7. Fourier Series
 
@@ -450,14 +467,16 @@ $$\frac{1}{\pi}\int_{-\pi}^{\pi} |f(x)|^2\, dx = \frac{a_0^2}{2} + \sum_{n=1}^{\
 
 For functions defined on $[0, L]$:
 
-- **Cosine series** (even extension): $a_n = \frac{2}{L}\int_0^L f(x)\cos\frac{n\pi x}{L}\, dx$, $b_n = 0$.
-- **Sine series** (odd extension): $a_n = 0$, $b_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\, dx$.
+- **Cosine series** (even extension): $a_n = \frac{2}{L}\int_0^L f(x)\cos\frac{n\pi x}{L}\, dx$,
+  $b_n = 0$.
+- **Sine series** (odd extension): $a_n = 0$,
+  $b_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\, dx$.
 
 ### 7.5 Worked Example
 
 **Problem.** Find the Fourier series of $f(x) = x$ on $(-\pi, \pi)$, extended $2\pi$-periodically.
 
-*Solution.* $f$ is odd, so $a_n = 0$ for all $n$.
+_Solution._ $f$ is odd, so $a_n = 0$ for all $n$.
 
 $b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} x\sin(nx)\, dx = \frac{2}{\pi}\int_0^{\pi} x\sin(nx)\, dx$.
 
@@ -493,11 +512,10 @@ $$X T' = \alpha^2 X'' T \implies \frac{T'}{\alpha^2 T} = \frac{X''}{X} = -\lambd
 
 This gives two ODEs:
 
-$$X'' + \lambda X = 0, \quad X(0) = X(L) = 0$$
-$$T' + \alpha^2 \lambda T = 0$$
+$$X'' + \lambda X = 0, \quad X(0) = X(L) = 0$$ $$T' + \alpha^2 \lambda T = 0$$
 
-The boundary value problem for $X$ has solutions only for $\lambda_n = (n\pi/L)^2$, $n = 1, 2, 3, \ldots$,
-with $X_n(x) = \sin(n\pi x/L)$.
+The boundary value problem for $X$ has solutions only for $\lambda_n = (n\pi/L)^2$,
+$n = 1, 2, 3, \ldots$, with $X_n(x) = \sin(n\pi x/L)$.
 
 The corresponding $T_n(t) = e^{-\alpha^2 (n\pi/L)^2 t}$.
 
@@ -505,14 +523,15 @@ By superposition:
 
 $$u(x, t) = \sum_{n=1}^{\infty} b_n \sin\frac{n\pi x}{L} e^{-\alpha^2 (n\pi/L)^2 t}$$
 
-where $b_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\, dx$ (the sine series coefficients of $f$).
+where $b_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\, dx$ (the sine series coefficients of
+$f$).
 
 ### 8.4 Worked Example: Heat Equation
 
 **Problem.** Solve $u_t = u_{xx}$ for $0 \lt{} x \lt{} \pi$, $t > 0$, with $u(0, t) = u(\pi, t) = 0$
 and $u(x, 0) = \sin(2x) + 3\sin(5x)$.
 
-*Solution.* Here $\alpha = 1$ and $L = \pi$. The initial condition is already a sine series.
+_Solution._ Here $\alpha = 1$ and $L = \pi$. The initial condition is already a sine series.
 
 $\lambda_n = n^2$, $X_n = \sin(nx)$, $T_n = e^{-n^2 t}$.
 
@@ -559,7 +578,7 @@ bounded domain attains its maximum and minimum on the boundary.
 
 **Theorem 8.2 (Uniqueness).** The Dirichlet problem for Laplace's equation has at most one solution.
 
-*Proof.* If $u_1$ and $u_2$ are two solutions with the same boundary data, then $v = u_1 - u_2$ is
+_Proof._ If $u_1$ and $u_2$ are two solutions with the same boundary data, then $v = u_1 - u_2$ is
 harmonic with $v = 0$ on $\partial\Omega$. By the maximum principle, $v \equiv 0$. $\blacksquare$
 
 ### 8.9 Worked Example: Wave Equation
@@ -567,7 +586,7 @@ harmonic with $v = 0$ on $\partial\Omega$. By the maximum principle, $v \equiv 0
 **Problem.** A string of length $\pi$ with fixed ends is plucked: $u(x, 0) = x(\pi - x)$,
 $u_t(x, 0) = 0$. Find $u(x, t)$.
 
-*Solution.* With $c = 1$ and $L = \pi$: $a_n = \frac{2}{\pi}\int_0^{\pi} x(\pi - x)\sin(nx)\, dx$,
+_Solution._ With $c = 1$ and $L = \pi$: $a_n = \frac{2}{\pi}\int_0^{\pi} x(\pi - x)\sin(nx)\, dx$,
 $b_n = 0$ (since $g = 0$).
 
 Integrating by parts twice:
@@ -578,9 +597,11 @@ $= 0 + \frac{1}{n}\left[\frac{(\pi - 2x)\sin(nx)}{n}\right]_0^{\pi} + \frac{2}{n
 
 $= 0 + \frac{2}{n^2}\left[-\frac{\cos(nx)}{n}\right]_0^{\pi} = \frac{2}{n^3}(1 - (-1)^n)$
 
-For even $n$: $a_n = 0$. For odd $n = 2k + 1$: $a_n = \frac{2}{\pi} \cdot \frac{4}{n^3} = \frac{8}{\pi n^3}$.
+For even $n$: $a_n = 0$. For odd $n = 2k + 1$:
+$a_n = \frac{2}{\pi} \cdot \frac{4}{n^3} = \frac{8}{\pi n^3}$.
 
-$u(x, t) = \frac{8}{\pi}\sum_{k=0}^{\infty} \frac{\sin((2k+1)x)}{(2k+1)^3}\cos((2k+1)t)$. $\blacksquare$
+$u(x, t) = \frac{8}{\pi}\sum_{k=0}^{\infty} \frac{\sin((2k+1)x)}{(2k+1)^3}\cos((2k+1)t)$.
+$\blacksquare$
 
 ## 9. Stability and Phase Plane Analysis
 
@@ -594,61 +615,50 @@ $\mathbf{f}(\mathbf{x}^*) = \mathbf{0}$.
 Let $A = J\mathbf{f}(\mathbf{x}^*)$ be the Jacobian at the critical point. The eigenvalues of $A$
 determine the local stability:
 
-| Eigenvalues of $A$ | Type | Stability |
-|---|---|---|
-| Both real, negative | Stable node | Asymptotically stable |
-| Both real, positive | Unstable node | Unstable |
-| Real, opposite signs | Saddle point | Unstable |
-| Complex, $\mathrm{Re}(\lambda) \lt{} 0$ | Stable spiral | Asymptotically stable |
-| Complex, $\mathrm{Re}(\lambda) > 0$ | Unstable spiral | Unstable |
-| Purely imaginary | Center | (Marginally) stable |
+| Eigenvalues of $A$                      | Type            | Stability             |
+| --------------------------------------- | --------------- | --------------------- |
+| Both real, negative                     | Stable node     | Asymptotically stable |
+| Both real, positive                     | Unstable node   | Unstable              |
+| Real, opposite signs                    | Saddle point    | Unstable              |
+| Complex, $\mathrm{Re}(\lambda) \lt{} 0$ | Stable spiral   | Asymptotically stable |
+| Complex, $\mathrm{Re}(\lambda) > 0$     | Unstable spiral | Unstable              |
+| Purely imaginary                        | Center          | (Marginally) stable   |
 
 ### 9.3 Lyapunov Stability
 
-**Definition.** A critical point $\mathbf{x}^*$ is **stable** if for every $\varepsilon > 0$,
-there exists $\delta > 0$ such that $\|\mathbf{x}(0) - \mathbf{x}^*\| \lt{} \delta$ implies
+**Definition.** A critical point $\mathbf{x}^*$ is **stable** if for every $\varepsilon > 0$, there
+exists $\delta > 0$ such that $\|\mathbf{x}(0) - \mathbf{x}^*\| \lt{} \delta$ implies
 $\|\mathbf{x}(t) - \mathbf{x}^*\| \lt{} \varepsilon$ for all $t > 0$.
 
-It is **asymptotically stable** if it is stable and $\mathbf{x}(t) \to \mathbf{x}^*$ as $t \to \infty$.
+It is **asymptotically stable** if it is stable and $\mathbf{x}(t) \to \mathbf{x}^*$ as
+$t \to \infty$.
 
-**Theorem 9.1 (Lyapunov).** If there exists a continuously differentiable function $V$ (a
-**Lyapunov function**) such that $V(\mathbf{x}^*) = 0$, $V(\mathbf{x}) > 0$ for $\mathbf{x} \neq \mathbf{x}^*$,
-and $\dot{V} \leq 0$ in a neighbourhood of $\mathbf{x}^*$, then $\mathbf{x}^*$ is stable.
-If $\dot{V} \lt{} 0$ for $\mathbf{x} \neq \mathbf{x}^*$, then $\mathbf{x}^*$ is asymptotically stable.
+**Theorem 9.1 (Lyapunov).** If there exists a continuously differentiable function $V$ (a **Lyapunov
+function**) such that $V(\mathbf{x}^*) = 0$, $V(\mathbf{x}) > 0$ for $\mathbf{x} \neq \mathbf{x}^*$,
+and $\dot{V} \leq 0$ in a neighbourhood of $\mathbf{x}^*$, then $\mathbf{x}^*$ is stable. If
+$\dot{V} \lt{} 0$ for $\mathbf{x} \neq \mathbf{x}^*$, then $\mathbf{x}^*$ is asymptotically stable.
 
 ## 10. Common Pitfalls
 
-:::caution Common Pitfall
-When using undetermined coefficients, always check whether your guess overlaps with the homogeneous
-solution. For $y'' - 4y = e^{2x}$, guessing $y_p = Ae^{2x}$ fails because $e^{2x}$ satisfies the
-homogeneous equation. You must use $y_p = Axe^{2x}$ instead.
-:::
+:::caution Common Pitfall When using undetermined coefficients, always check whether your guess
+overlaps with the homogeneous solution. For $y'' - 4y = e^{2x}$, guessing $y_p = Ae^{2x}$ fails
+because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead. :::
 
-:::caution Common Pitfall
-The Laplace transform of $y'(t)$ is $sY(s) - y(0)$, not $sY(s)$. The initial conditions are
-built into the transform. Forgetting them leads to incorrect solutions.
-:::
+:::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$, not $sY(s)$. The
+initial conditions are built into the transform. Forgetting them leads to incorrect solutions. :::
 
-:::caution Common Pitfall
-Separation of variables can miss solutions. When dividing by $h(y)$ to separate, check whether
-$h(y) = 0$ gives any valid solutions. For example, solving $y' = y^2$ by separating gives
-$y = -1/(x + C)$, but misses the solution $y = 0$.
-:::
+:::caution Common Pitfall Separation of variables can miss solutions. When dividing by $h(y)$ to
+separate, check whether $h(y) = 0$ gives any valid solutions. For example, solving $y' = y^2$ by
+separating gives $y = -1/(x + C)$, but misses the solution $y = 0$. :::
 
-:::caution Common Pitfall
-The Fourier series of a function converges to the function only at points of continuity. At jump
-discontinuities, it converges to the midpoint of the jump. The Gibbs phenomenon causes overshoots
-near jumps that do not vanish as more terms are added.
-:::
+:::caution Common Pitfall The Fourier series of a function converges to the function only at points
+of continuity. At jump discontinuities, it converges to the midpoint of the jump. The Gibbs
+phenomenon causes overshoots near jumps that do not vanish as more terms are added. :::
 
-:::caution Common Pitfall
-When solving PDEs by separation of variables, the boundary conditions determine the eigenvalues.
-Using the wrong boundary conditions (e.g., Neumann instead of Dirichlet) leads to a completely
-different set of eigenfunctions and eigenvalues.
-:::
+:::caution Common Pitfall When solving PDEs by separation of variables, the boundary conditions
+determine the eigenvalues. Using the wrong boundary conditions (e.g., Neumann instead of Dirichlet)
+leads to a completely different set of eigenfunctions and eigenvalues. :::
 
-:::caution Common Pitfall
-Not every first-order ODE can be solved analytically. Equations like $y' = x^2 + y^2$ have no
-closed-form solution in terms of elementary functions. Numerical methods (Euler, Runge-Kutta) may
-be necessary.
-:::
+:::caution Common Pitfall Not every first-order ODE can be solved analytically. Equations like
+$y' = x^2 + y^2$ have no closed-form solution in terms of elementary functions. Numerical methods
+(Euler, Runge-Kutta) may be necessary. :::
