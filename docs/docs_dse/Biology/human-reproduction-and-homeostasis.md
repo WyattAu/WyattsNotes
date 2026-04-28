@@ -130,6 +130,23 @@ decades). Meiosis II is completed in minutes to hours after fertilisation.
 | Result                     | Four functional sperm                         | One functional ovum                                      |
 | Mitochondrial contribution | Mitochondria in middle piece of sperm         | Ovum provides all mitochondria to zygote                 |
 
+**Worked Example**
+
+Starting with one primary spermatocyte and one primary oocyte, both of which complete meiosis, how many functional gametes are produced in total? Explain the difference in outcomes.
+
+<details>
+<summary>Solution</summary>
+
+- **Spermatogenesis:** One primary spermatocyte undergoes meiosis I (producing 2 secondary spermatocytes) then meiosis II (producing 4 spermatids). All 4 spermatids differentiate into functional sperm. Total: **4 functional gametes**.
+
+- **Oogenesis:** One primary oocyte undergoes meiosis I (producing 1 secondary oocyte + 1 polar body). The secondary oocyte undergoes meiosis II (producing 1 ovum + 1 second polar body). The first polar body may also divide. Total: **1 functional gamete (ovum) + 2--3 polar bodies**.
+
+- **Difference:** Cytokinesis is equal in spermatogenesis (4 equal-sized cells) but unequal in oogenesis (almost all cytoplasm goes to the ovum). The ovum needs abundant cytoplasm and nutrients to support early embryonic development, so polar bodies receive minimal cytoplasm and degenerate.
+
+- **Arrest points in oogenesis:** Unlike spermatogenesis where meiosis proceeds without arrest, oogenesis has two arrest points: prophase I (from foetal development until puberty, lasting decades) and metaphase II (from ovulation until fertilisation, lasting approximately 24 hours or until the secondary oocyte degenerates). This means a single cycle of oogenesis can span decades, while spermatogenesis takes approximately 74 days.
+
+</details>
+
 ---
 
 ## The Menstrual Cycle and Hormonal Control
@@ -205,6 +222,31 @@ concentrations, oestrogen inhibits the pituitary (negative feedback). At high co
 sustained for approximately 36 hours, oestrogen stimulates the pituitary (positive feedback),
 causing the LH surge. The DSE frequently tests this distinction.
 :::
+
+### Worked Example: Hormone Levels at Day 20
+
+A blood test shows the following hormone levels in a 28-day menstrual cycle:
+
+- Oestrogen: moderate
+- Progesterone: high
+- FSH: low
+- LH: low
+
+What stage of the menstrual cycle is this, and explain the relationships between these hormone levels?
+
+<details>
+<summary>Solution</summary>
+
+This is the **luteal phase** (days 15-28). The high progesterone is produced by the corpus luteum, which formed after ovulation. The moderate oestrogen is also secreted by the corpus luteum.
+
+The high progesterone (and oestrogen) exerts **negative feedback** on the anterior pituitary, inhibiting FSH and LH secretion. This prevents new follicle development and ensures no second ovulation occurs during the current cycle.
+
+Key relationships:
+- High progesterone indicates the corpus luteum is active
+- Low FSH and LH are a consequence of negative feedback from progesterone and oestrogen
+- This contrasts with the follicular phase, where FSH is rising and stimulating follicle development, and with day 14, where the oestrogen-triggered LH surge causes ovulation
+
+</details>
 
 ---
 
@@ -300,6 +342,26 @@ carry blood away from the heart, veins carry blood towards it. The umbilical art
 away from the foetal heart.
 :::
 
+**Worked Example**
+
+A pregnant woman's blood glucose is consistently elevated at 200 mg/100 cm cubed due to uncontrolled gestational diabetes. Explain the effects on the foetus, with reference to placental exchange and foetal hormonal responses.
+
+<details>
+<summary>Solution</summary>
+
+1. **Glucose transfer across the placenta:** Glucose crosses the placenta from maternal blood to foetal blood by facilitated diffusion down its concentration gradient. With maternal blood glucose at 200 mg/100 cm cubed and normal foetal blood glucose at approximately 90 mg/100 cm cubed, the steep gradient drives excessive glucose transfer to the foetus.
+
+2. **Foetal blood glucose rises:** The foetus receives more glucose than normal, causing foetal hyperglycaemia.
+
+3. **Foetal insulin response:** The foetal pancreas responds to high blood glucose by secreting insulin (beta cells of the islets of Langerhans). Insulin stimulates foetal cells to take up glucose and convert it to glycogen and fat.
+
+4. **Effects on the foetus:**
+   - **Macrosomia (excessive growth):** High glucose plus high insulin promotes fat deposition and growth. The baby may be born significantly larger than normal (birth weight &gt; 4 kg).
+   - **Neonatal hypoglycaemia:** After delivery, the maternal glucose supply is cut off, but the baby continues producing high insulin temporarily. This causes a rapid drop in blood glucose after birth, which can be dangerous if untreated.
+   - **Respiratory distress:** High insulin can inhibit surfactant production in foetal lungs, leading to breathing difficulties after birth.
+
+</details>
+
 ---
 
 ## Homeostasis Principles
@@ -381,6 +443,33 @@ The hypothalamus contains the body's thermoregulatory centre. It receives input 
 | Too hot   | Thermoreceptors | Skin arterioles, sweat glands, muscles             | Vasodilation, sweating, reduced metabolism                  | Temperature decreases |
 | Too cold  | Thermoreceptors | Skin arterioles, skeletal muscles, adrenal medulla | Vasoconstriction, shivering, increased thyroxine/adrenaline | Temperature increases |
 
+**Worked Example**
+
+On a hot summer day, a person exercises vigorously outdoors and their body temperature rises to 39.5 degrees C. Describe the negative feedback mechanisms that restore body temperature to normal, and explain why sweating alone may not be sufficient during intense exercise.
+
+<details>
+<summary>Solution</summary>
+
+**Negative feedback responses to the rise in body temperature:**
+
+1. **Detection:** Central thermoreceptors in the hypothalamus detect the rise in blood temperature (above the set point of 37 degrees C). Peripheral thermoreceptors in the skin also detect the high external temperature.
+
+2. **Vasodilation:** The hypothalamus sends nerve impulses to the arterioles supplying the skin, causing them to dilate. More blood flows near the skin surface, and heat is lost from the blood by radiation to the surrounding air.
+
+3. **Sweating:** The hypothalamus stimulates sweat glands to secrete sweat onto the skin surface. As water in sweat evaporates, it absorbs latent heat of vaporisation (approximately 2.4 kJ per gram) from the body surface, cooling the skin and the blood flowing through it.
+
+4. **Increased respiration:** Breathing rate increases, so more heat is lost from the body in exhaled warm, moist air.
+
+5. **Decreased metabolic rate:** The hypothalamus reduces the stimulation of metabolic heat production, reducing the body's internal heat generation.
+
+6. **Return to normal:** As body temperature falls back towards 37 degrees C, the thermoreceptors detect the change and the hypothalamus reduces its signals to the effectors. Vasodilation decreases, sweating slows, and body temperature stabilises.
+
+**Why sweating alone may not be sufficient during intense exercise:**
+
+During vigorous exercise, skeletal muscle respiration generates large amounts of heat as a by-product. This heat production can exceed the rate of heat loss through sweating alone, especially in humid conditions where evaporation is slower (the air is already saturated with water vapour). The body may also be losing water and electrolytes through sweat faster than they are replaced, eventually reducing sweat production and the ability to cool. In extreme cases, this can lead to heat stroke (body temperature exceeds 40 degrees C, which is a medical emergency).
+
+</details>
+
 ---
 
 ## Blood Glucose Regulation
@@ -460,34 +549,37 @@ which is required to convert glucose-6-phosphate to free glucose. The DSE often 
 distinction.
 :::
 
-### Diabetes Mellitus
+**Worked Example**
 
-**Type 1 Diabetes (insulin-dependent diabetes):**
+A student runs a 400-metre sprint. During the race, her blood glucose initially rises slightly, then begins to decrease. Explain the hormonal and metabolic changes that occur before, during, and after the race.
 
-- Autoimmune destruction of the beta cells in the islets of Langerhans
-- No insulin (or very little insulin) is produced
-- Usually develops in childhood or adolescence
-- Treated with insulin injections (insulin cannot be taken orally because it is a peptide hormone
-  and would be digested by proteases in the stomach and small intestine)
+<details>
+<summary>Solution</summary>
 
-**Type 2 Diabetes (non-insulin-dependent diabetes):**
+**Before the race (anticipation):**
 
-- Body cells become less responsive to insulin (insulin resistance); beta cells may also produce
-  less insulin over time
-- Strongly correlated with obesity, physical inactivity, and poor diet
-- Usually develops in adulthood (but increasingly diagnosed in younger individuals)
-- Treated with dietary control, exercise, weight loss, oral medication (e.g., metformin), and
-  sometimes insulin
+- The sympathetic nervous system is activated by anticipation of exercise.
+- Adrenaline is released from the adrenal medulla.
+- Adrenaline stimulates glycogenolysis in the liver and muscles.
+- The liver releases glucose into the blood, causing a slight rise in blood glucose.
 
-**Symptoms of diabetes:**
+**During the race (intense exercise):**
 
-- High blood glucose (hyperglycaemia)
-- Glucose in urine (glycosuria): kidneys cannot reabsorb all glucose when the concentration exceeds
-  the renal threshold (approximately 180 mg/100 cm cubed)
-- Frequent urination (polyuria): excess water follows glucose osmotically
-- Excessive thirst (polydipsia): dehydration from polyuria
-- Weight loss: body breaks down fat and protein for energy instead of glucose
-- Fatigue: cells cannot use glucose efficiently
+- Muscle cells take up glucose and use it for aerobic and anaerobic respiration.
+- Blood glucose decreases as muscles consume glucose faster than the liver supplies it.
+- As blood glucose drops below the set point, alpha cells detect the change and secrete glucagon.
+- Glucagon stimulates glycogenolysis and gluconeogenesis in the liver to replenish blood glucose.
+- Adrenaline continues to promote glycogenolysis.
+- Insulin secretion is suppressed (adrenaline and sympathetic activity inhibit insulin release).
+
+**After the race (recovery):**
+
+- Adrenaline levels drop as sympathetic nervous system activity decreases.
+- Glucagon continues to maintain blood glucose as glycogen stores are replenished.
+- As blood glucose rises, insulin secretion resumes, promoting glycogenesis in the liver and muscles.
+- Blood glucose returns to the normal range as uptake and production are rebalanced.
+
+</details>
 
 ---
 
@@ -613,6 +705,44 @@ and released from the posterior pituitary gland.
 | Normal hydration    | Normal                | Normal    | Normal       | Normal              |
 | Excess water intake | High                  | Low       | High         | Low                 |
 
+**Worked Example**
+
+A person takes part in a marathon on a hot day. They drink water at regular intervals but still become mildly dehydrated by the end of the race. Compare the osmoregulatory responses that would occur at three points: (a) at the start of the race when well hydrated, (b) mid-race when mildly dehydrated, and (c) after the race when they drink a large volume of water.
+
+<details>
+<summary>Solution</summary>
+
+**(a) At the start -- well hydrated (normal blood water potential):**
+
+- Blood water potential is normal; osmoreceptors in the hypothalamus are stimulated at a baseline level.
+- ADH is released at a moderate level from the posterior pituitary.
+- The collecting duct has moderate water permeability (moderate number of aquaporin channels).
+- Urine is produced at a normal rate with normal concentration.
+- Sweat production is high (due to exercise and heat), causing gradual water loss.
+
+**(b) Mid-race -- mildly dehydrated (low blood water potential):**
+
+- Water loss through sweat exceeds water intake, reducing blood volume and increasing blood solute concentration (lowering blood water potential).
+- Osmoreceptors in the hypothalamus detect the decrease in blood water potential and increase their firing rate.
+- The hypothalamus stimulates the posterior pituitary to release more ADH.
+- ADH binds to receptors on collecting duct cells, triggering insertion of more aquaporin channels into the cell membrane.
+- More water is reabsorbed from the collecting duct by osmosis into the concentrated medullary tissue fluid.
+- Urine volume decreases (oliguria) and urine becomes more concentrated (darker yellow).
+- Thirst is also stimulated, motivating the person to drink more.
+
+**(c) After the race -- excess water intake (high blood water potential):**
+
+- The person drinks a large volume of water, which is absorbed from the small intestine into the blood.
+- Blood water potential increases (blood becomes more dilute).
+- Osmoreceptors in the hypothalamus detect the increase in blood water potential and decrease their firing rate.
+- The hypothalamus reduces stimulation of the posterior pituitary; ADH secretion decreases.
+- With less ADH, collecting duct cells remove aquaporin channels from their membranes.
+- The collecting duct becomes less permeable to water; less water is reabsorbed.
+- A large volume of dilute urine is produced (diuresis) to excrete the excess water.
+- Blood water potential gradually returns to normal.
+
+</details>
+
 ---
 
 ## Excretion
@@ -660,6 +790,35 @@ $$2\mathrm{NH}_3 + \mathrm{CO}_2 \to \mathrm{CO(NH}_2)_2 + \mathrm{H}_2\mathrm{O
 The skin excretes water, urea, salts, and lactic acid through sweat. Sweat is produced by sweat
 glands in the dermis and reaches the skin surface through pores. However, the skin is a minor
 excretory organ compared to the kidneys -- its primary function is thermoregulation.
+
+**Worked Example**
+
+A person with liver failure has a reduced ability to carry out deamination and detoxification. Explain the specific consequences for the composition of their blood, and predict the symptoms that would result.
+
+<details>
+<summary>Solution</summary>
+
+**Consequences for blood composition:**
+
+1. **Elevated blood urea (uraemia):** Without adequate deamination, excess amino acids cannot be properly processed. The ornithine cycle is impaired, so ammonia ($\mathrm{NH}_3$) is not efficiently converted to urea. Toxic ammonia accumulates in the blood, and even the urea that is produced may not be adequately excreted. Both ammonia and urea levels rise in the blood.
+
+2. **Accumulation of toxins:** Without proper detoxification, harmful substances that would normally be broken down by the liver accumulate. This includes alcohol, drugs, and other metabolic by-products that the liver would normally process.
+
+3. **Reduced plasma protein synthesis:** The liver synthesises many plasma proteins (e.g., albumin). Liver failure reduces protein synthesis, lowering plasma protein concentration and reducing blood osmotic pressure (leading to tissue fluid accumulation/oedema).
+
+4. **Reduced bile production:** The liver produces bile, which contains bile pigments (bilirubin) from haemoglobin breakdown. Liver failure reduces bile production, causing bilirubin to accumulate in the blood (jaundice -- yellowing of the skin and eyes).
+
+5. **Altered blood glucose:** The liver plays a key role in blood glucose regulation (glycogenesis, glycogenolysis, gluconeogenesis). Liver failure impairs these processes, causing unstable blood glucose levels.
+
+**Predicted symptoms:**
+
+- **Jaundice:** Yellowing of the skin and sclera (whites of the eyes) due to bilirubin accumulation in the blood.
+- **Confusion and neurological symptoms (hepatic encephalopathy):** Ammonia is highly toxic to the brain. Elevated blood ammonia crosses the blood-brain barrier and impairs brain function, causing confusion, drowsiness, and in severe cases, coma.
+- **Oedema:** Reduced plasma protein (especially albumin) lowers blood osmotic pressure, causing fluid to accumulate in tissues (swelling in the legs and abdomen).
+- **Fatigue:** Impaired glucose regulation and accumulation of toxins reduce energy availability and increase feelings of tiredness.
+- **Excessive bleeding:** The liver synthesises clotting factors. Liver failure reduces their production, leading to impaired blood clotting and easy bruising.
+
+</details>
 
 ---
 
@@ -710,119 +869,319 @@ excretory organ compared to the kidneys -- its primary function is thermoregulat
 
 ---
 
-## Practice Problems
+## Problem Set
+
+The following problems cover the full range of topics in this chapter. Attempt each problem before revealing the solution. If your answer differs significantly from the solution, use the cross-reference to revisit the relevant theory section. Pay particular attention to the **Common Pitfalls** section above, as DSE examiners frequently test these points.
+
+### Problem 1: Sperm Structure and Function
+
+Explain how the structure of a sperm cell is adapted for its function of reaching and fertilising the ovum. Refer to at least three specific parts of the sperm in your answer.
 
 <details>
-<summary>Question 1: Menstrual Cycle Hormones</summary>
+<summary>Solution</summary>
 
-A woman has a tumour on her anterior pituitary gland that prevents the secretion of FSH and LH.
+- **Head (acrosome):** The acrosome is a vesicle at the tip of the head containing hydrolytic enzymes (acrosin, hyaluronidase). These enzymes digest the zona pellucida surrounding the ovum, allowing the sperm to penetrate and reach the oocyte membrane. The haploid nucleus (23 chromosomes) in the head delivers the paternal genetic material. The streamlined, oval shape of the head reduces resistance as the sperm swims through the female reproductive tract.
 
-(a) Explain the effect on her menstrual cycle.
+- **Middle piece (mitochondria):** The middle piece is packed with mitochondria arranged in a helix. These mitochondria carry out aerobic respiration to produce large amounts of ATP, which powers the movement of the tail. The high energy supply is essential because the sperm must swim through the cervix, uterus, and oviduct to reach the ovum -- a journey that can take several hours. The centriole at the base of the head also originates from the middle piece.
 
-(b) Explain why her ovaries would produce very little oestrogen and progesterone.
+- **Tail (flagellum):** The long, whip-like flagellum propels the sperm through the female reproductive tract by undulating movements. The tail's lashing action is driven by ATP from the mitochondria in the middle piece, enabling the sperm to travel the considerable distance to the site of fertilisation in the oviduct. The tail contains microtubules arranged in a 9+2 arrangement (9 pairs surrounding a central pair), which slide past each other to produce the bending motion.
 
-(a) Without FSH, no follicles would develop in the ovaries. Without LH, ovulation would not occur
-and the corpus luteum would not form. The menstrual cycle would be disrupted: there would be no
-follicular development, no ovulation, and no luteal phase. If the woman had previously been
-menstruating, she would stop having periods (amenorrhoea).
-
-(b) Oestrogen is produced by the developing follicle. Without FSH to stimulate follicle development,
-no follicles mature and therefore very little oestrogen is produced. Progesterone is produced by the
-corpus luteum. Without LH to trigger ovulation and maintain the corpus luteum, no corpus luteum
-forms and therefore very little progesterone is produced. Both hormones depend on the anterior
-pituitary hormones (FSH and LH) for their production.
+**If you get this wrong, revise:** [Male Reproductive System](#male-reproductive-system)
 
 </details>
 
+### Problem 2: Oogenesis Timing
+
+A female baby is born with approximately 1--2 million primary oocytes, but only about 400 will be ovulated during her entire reproductive lifetime. Explain why most primary oocytes never complete meiosis, and describe when meiosis is actually completed for those that are ovulated.
+
 <details>
-<summary>Question 2: Blood Glucose Regulation</summary>
+<summary>Solution</summary>
 
-After a 12-hour fast, a student's blood glucose concentration is 85 mg/100 cm cubed. She then drinks
-a glucose solution. Her blood glucose concentration rises to 150 mg/100 cm cubed after 30 minutes
-and returns to 90 mg/100 cm cubed after 2 hours.
+- **Why most never complete meiosis:** All primary oocytes are formed during foetal development and arrest at prophase I. Each month from puberty to menopause (approximately 30--40 years), typically only one primary oocyte resumes meiosis and is ovulated. The vast majority of primary oocytes undergo atresia (degeneration) and never resume meiosis. Only approximately 400 out of 1--2 million are ovulated over a lifetime. This is an important contrast with spermatogenesis, which is continuous and produces millions of sperm daily from puberty onwards.
 
-Explain the hormonal mechanisms responsible for the changes in blood glucose concentration.
+- **When meiosis is completed:** Meiosis I is completed just before ovulation, producing a secondary oocyte and the first polar body. The secondary oocyte begins meiosis II but arrests at metaphase II. Meiosis II is only completed if fertilisation occurs -- the entry of a sperm triggers completion of meiosis II, producing the ovum and the second polar body. If no sperm fertilises the secondary oocyte within approximately 24 hours, it degenerates without completing meiosis.
 
-At 85 mg/100 cm cubed (after fasting): Blood glucose is slightly below the set point but within the
-normal range. Glucagon may be slightly elevated, stimulating glycogenolysis and gluconeogenesis to
-maintain blood glucose.
+- **Biological significance of this arrangement:** The long arrest at prophase I means that by the time a woman reaches menopause, her remaining oocytes have been in meiotic arrest for decades. This prolonged arrest is thought to contribute to the increased incidence of chromosomal abnormalities (e.g., Down syndrome) in babies born to older mothers, as the meiotic machinery has had more time to accumulate errors.
 
-After drinking the glucose solution (rising to 150 mg/100 cm cubed): Glucose is absorbed from the
-small intestine into the blood, raising blood glucose above the set point. This is detected by the
-beta cells of the islets of Langerhans in the pancreas. Beta cells secrete insulin into the blood.
-
-Insulin stimulates: (1) uptake of glucose by liver and muscle cells via facilitated diffusion and
-GLUT4 transporter translocation; (2) glycogenesis -- conversion of glucose to glycogen in the liver
-and muscles; (3) increased rate of glucose respiration in cells; (4) inhibition of glucagon
-secretion from alpha cells.
-
-These actions reduce blood glucose concentration back towards the set point.
-
-Return to 90 mg/100 cm cubed after 2 hours: As blood glucose falls back towards normal, the stimulus
-for insulin secretion decreases. Insulin secretion decreases (negative feedback). Blood glucose
-stabilises near the set point.
+**If you get this wrong, revise:** [Oogenesis](#oogenesis) and [Comparison of Spermatogenesis and Oogenesis](#comparison-of-spermatogenesis-and-oogenesis)
 
 </details>
 
+### Problem 3: Menstrual Cycle Hormone Levels
+
+On day 20 of a normal 28-day menstrual cycle, a blood test shows high progesterone and moderate oestrogen levels. Explain the source and roles of these hormones at this stage, and describe what would happen to their levels if fertilisation does not occur.
+
 <details>
-<summary>Question 3: Osmoregulation</summary>
+<summary>Solution</summary>
 
-A person drinks 2 litres of water in 30 minutes. Describe and explain the sequence of events that
-follows to restore blood water potential to normal.
+- **Source on day 20 (luteal phase):** Progesterone is produced by the corpus luteum (the structure formed from the ruptured follicle after ovulation on day 14). Moderate oestrogen is also produced by the corpus luteum.
 
-1. The large volume of water is absorbed from the small intestine into the blood, increasing blood
-   volume and diluting the blood (increasing blood water potential / decreasing solute
-   concentration).
+- **Roles on day 20:**
+  - Progesterone maintains the thickened, vascularised endometrium (secretory phase), keeping it ready for potential implantation.
+  - Progesterone inhibits FSH and LH secretion via negative feedback, preventing new follicle development and further ovulation.
+  - Oestrogen helps maintain the endometrium alongside progesterone.
 
-2. Osmoreceptors in the hypothalamus detect the increase in blood water potential (decreased
-   stimulation).
+- **If fertilisation does not occur:**
+  - The corpus luteum degenerates around day 25--28 (it has a lifespan of approximately 12--14 days without hCG). This degeneration is called luteolysis.
+  - Progesterone and oestrogen levels drop sharply as the corpus luteum degenerates.
+  - The drop in progesterone causes the thickened endometrium to break down and be shed (menstruation, days 1--5 of the next cycle).
+  - The drop in progesterone and oestrogen removes the negative feedback on FSH, so FSH levels begin to rise, initiating follicle development for the next cycle.
+  - The cycle begins again with menstruation marking day 1.
 
-3. The hypothalamus reduces its stimulation of the posterior pituitary gland. Less ADH is released
-   into the blood. ADH concentration in the blood decreases.
+- **If fertilisation does occur (for contrast):**
+  - The embryo implants in the endometrium around day 6--7.
+  - The implanted embryo (trophoblast cells) produces hCG (human chorionic gonadotropin).
+  - hCG maintains the corpus luteum, preventing its degeneration.
+  - The corpus luteum continues to secrete progesterone and oestrogen, maintaining the endometrium throughout pregnancy.
+  - This is the basis of pregnancy tests, which detect hCG in urine.
 
-4. With less ADH, the collecting duct cells remove aquaporin channels from their cell membranes. The
-   collecting duct becomes less permeable to water.
-
-5. Less water is reabsorbed from the collecting duct into the medullary tissue fluid by osmosis.
-   More water remains in the filtrate.
-
-6. A large volume of dilute urine is produced (diuresis). The dilute urine has a high water content
-   and low solute concentration.
-
-7. As water is excreted, blood volume decreases and blood water potential returns to normal. The
-   osmoreceptors in the hypothalamus detect the return to normal and ADH secretion adjusts
-   accordingly.
+**If you get this wrong, revise:** [Phases of the Menstrual Cycle](#phases-of-the-menstrual-cycle) and [Hormonal Interactions](#hormonal-interactions)
 
 </details>
 
+### Problem 4: Fertilisation and the Cortical Reaction
+
+Describe the sequence of events from the moment a sperm reaches the zona pellucida to the formation of the diploid zygote. Explain why the cortical reaction is essential.
+
 <details>
-<summary>Question 4: Placenta Function</summary>
+<summary>Solution</summary>
 
-Explain how the structure of the placenta is adapted for efficient exchange of substances between
-the maternal and foetal circulations.
+1. **Acrosome reaction:** The sperm binds to specific receptors (ZP3 glycoproteins) on the zona pellucida. This binding triggers the acrosome to release hydrolytic enzymes (acrosin, hyaluronidase) that digest the zona pellucida, creating a path for the sperm to penetrate.
 
-The placenta is adapted for efficient exchange through several structural features:
+2. **Penetration:** The sperm penetrates the zona pellucida using a combination of enzyme action and mechanical force from the lashing tail. It reaches the vitelline membrane (oocyte membrane).
 
-(1) Large surface area: The chorionic villi form numerous finger-like projections that extend into
-the maternal blood-filled spaces (intervillous spaces), greatly increasing the surface area
-available for exchange.
+3. **Membrane fusion:** The sperm membrane fuses with the oocyte membrane. The sperm nucleus and centriole begin to enter the oocyte cytoplasm.
 
-(2) Thin diffusion barrier: The tissue separating maternal and foetal blood is very thin (the foetal
-capillary endothelium, a thin layer of connective tissue, and the trophoblast epithelium), providing
-a short diffusion distance.
+4. **Cortical reaction (critical step):** Contact between the sperm and oocyte membranes triggers a wave of calcium release ($\mathrm{Ca}^{2+}$) across the ovum. This calcium wave causes cortical granules (vesicles just beneath the membrane) to fuse with the oocyte membrane and release their contents into the space between the vitelline membrane and the zona pellucida. The enzymes from the cortical granules:
+   - Cross-link glycoproteins in the zona pellucida, hardening it (the zona reaction).
+   - Remove the ZP3 receptors, preventing any additional sperm from binding.
+   - These changes make the zona pellucida impermeable to other sperm.
 
-(3) Rich blood supply: Both maternal and foetal blood flows are maintained at high rates. Maternal
-blood flows slowly through the intervillous spaces (bathing the villi), while foetal blood flows
-through the capillaries inside the villi. This maintains a steep concentration gradient for
-diffusion.
+5. **Why the cortical reaction is essential:** It prevents **polyspermy** -- fertilisation by more than one sperm. If polyspermy occurred, the zygote would have more than 46 chromosomes (triploidy or polyploidy), which is typically lethal. The cortical reaction is a fast block (chemical) to polyspermy, complementing the initial electrical block caused by depolarisation of the oocyte membrane upon sperm entry.
 
-(4) Countercurrent exchange: In some regions, maternal and foetal blood flows in opposite
-directions, maintaining a concentration gradient along the entire length of the villus and
-maximising exchange efficiency.
+6. **Completion of meiosis II:** The calcium wave also triggers the secondary oocyte to complete meiosis II, producing the ovum (with the maternal haploid nucleus) and the second polar body.
 
-(5) Selective permeability: The placental barrier allows the passage of small molecules (glucose,
-amino acids, $\mathrm{O}_2$, $\mathrm{CO}_2$, urea, antibodies) but prevents the passage of large
-molecules (most proteins, blood cells) and many pathogens. However, some harmful substances can
-cross (alcohol, drugs, some viruses like HIV and rubella).
+7. **Nuclear fusion:** The sperm nucleus and ovum nucleus migrate towards each other, their nuclear envelopes break down, and the chromosomes intermingle. The diploid zygote (2n = 46) is formed, containing genetic material from both parents.
+
+**If you get this wrong, revise:** [Fertilisation](#fertilisation)
+
+</details>
+
+### Problem 5: Placental Exchange
+
+Explain why maternal and foetal blood do not mix in the placenta. Describe the structure of the placental barrier and explain why it is important that the two blood supplies remain separate.
+
+<details>
+<summary>Solution</summary>
+
+- **Structure of the placental barrier:** Maternal blood and foetal blood are separated by the placental barrier, which consists of: (1) trophoblast epithelium (outer layer of chorionic villi), (2) connective tissue, and (3) foetal capillary endothelium. Exchange occurs by diffusion across this thin barrier. Substances move from maternal blood in the intervillous spaces, through the barrier, into the foetal capillaries inside the chorionic villi (and vice versa).
+
+- **Why they do not mix:**
+  - The foetal and maternal circulations are completely separate closed systems.
+  - The chorionic villi are bathed in maternal blood, but the foetal blood flows inside capillaries within the villi, separated by the placental barrier.
+
+- **Why separation is important:**
+  - **Blood group incompatibility:** If maternal and foetal blood mixed, the mother's immune system could attack foetal red blood cells (e.g., in Rh incompatibility, where an Rh-negative mother carries an Rh-positive foetus). The barrier limits this interaction, although small amounts of foetal blood cells can occasionally cross, potentially sensitising the mother's immune system.
+  - **Pressure differences:** Maternal blood pressure is much higher than foetal blood pressure. Mixing could damage delicate foetal blood vessels and cause haemorrhage.
+  - **Selective exchange:** The barrier allows selective passage of small molecules (nutrients, gases, waste, antibodies) while preventing passage of large molecules, blood cells, and many pathogens. This protects the foetus from many infections while still allowing beneficial substances to pass.
+  - **Maintaining concentration gradients:** Because the blood supplies do not mix, concentration gradients for diffusion are maintained. If blood mixed, the concentrations would equalise and efficient exchange would be impossible.
+
+**If you get this wrong, revise:** [Placenta and Umbilical Cord](#placenta-and-umbilical-cord)
+
+</details>
+
+### Problem 6: Thermoregulation in the Cold
+
+A person is standing outside on a cold winter day. Describe the involuntary physiological responses that occur to maintain body temperature, and explain how each response helps to raise or conserve heat.
+
+<details>
+<summary>Solution</summary>
+
+1. **Stimulus:** Peripheral thermoreceptors in the skin detect the drop in external temperature. Central thermoreceptors in the hypothalamus detect the drop in blood temperature.
+
+2. **Vasoconstriction:** Arterioles supplying the skin constrict (narrow), reducing blood flow near the body surface. Less heat is lost by radiation from the skin surface. More blood is diverted to deeper organs where heat is conserved. The skin may appear pale and feel cold to the touch.
+
+3. **Shivering:** Rapid, involuntary contractions of skeletal muscles generate heat through increased metabolic rate (respiration releases heat as a by-product). Shivering can increase heat production by up to five times the resting rate. This is a significant source of additional heat production and one of the most important thermoregulatory responses in cold conditions.
+
+4. **Increased metabolic rate:** The hypothalamus stimulates the adrenal medulla to release adrenaline and the thyroid gland to release thyroxine. These hormones increase the basal metabolic rate of cells throughout the body, increasing heat production from cellular respiration. Thyroxine acts more slowly (over hours to days) but provides a sustained increase in metabolic heat production.
+
+5. **Piloerection:** Hair erector muscles contract, causing body hairs to stand erect. This traps a layer of still air next to the skin, which acts as an insulating layer (reducing heat loss by convection). Air is a poor conductor of heat, so this trapped layer significantly reduces heat loss. This response is more effective in furry animals than in humans, but the mechanism is conserved.
+
+6. **Behavioural responses (although the question asks about involuntary physiological responses):** Note that behavioural responses such as curling up, putting on clothes, and seeking warmth are also important thermoregulatory mechanisms, but these are voluntary (controlled by the cerebral cortex) rather than involuntary (controlled by the hypothalamus).
+
+7. **Negative feedback:** As body temperature returns to 37 degrees C, the thermoreceptors detect the change and the hypothalamus reduces its signals to the effectors, reducing the thermoregulatory responses.
+
+**If you get this wrong, revise:** [Responses to Cold](#responses-to-cold-when-body-temperature-drops)
+
+</details>
+
+### Problem 7: Insulin and Glucagon Comparison
+
+Compare and contrast the roles of insulin and glucagon in regulating blood glucose concentration. For each hormone, state the cell type that produces it, the stimulus for its secretion, and the specific metabolic pathways it affects.
+
+<details>
+<summary>Solution</summary>
+
+| Feature             | Insulin                                                     | Glucagon                                                         |
+| ------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------- |
+| Producing cell      | Beta cells of islets of Langerhans (pancreas)               | Alpha cells of islets of Langerhans (pancreas)                  |
+| Stimulus            | Blood glucose rises above set point (e.g., after a meal)    | Blood glucose falls below set point (e.g., between meals)       |
+| Pathways stimulated | Glycogenesis (glucose to glycogen); glucose respiration      | Glycogenolysis (glycogen to glucose); gluconeogenesis           |
+| Pathways inhibited  | Glycogenolysis; gluconeogenesis                             | Glycogenesis                                                    |
+| Net effect          | Lowers blood glucose                                        | Raises blood glucose                                             |
+| Target organs       | Liver, muscle cells                                         | Liver only                                                      |
+
+**Similarities:** Both are produced by the islets of Langerhans in the pancreas. Both are involved in negative feedback loops to maintain blood glucose at approximately 90 mg/100 cm cubed. Both act on the liver.
+
+**Key differences:** Insulin lowers blood glucose by promoting storage and utilisation; glucagon raises it by promoting release from stores and synthesis from non-carbohydrate precursors. Insulin acts on both liver and muscle; glucagon acts primarily on the liver (muscle lacks glucagon receptors).
+
+**Antagonistic relationship:** Insulin and glucagon are antagonistic hormones -- they have opposing effects on blood glucose. When one is high, the other is low. After a meal, insulin is high and glucagon is low (insulin dominance). Between meals or during fasting, glucagon is high and insulin is low (glucagon dominance). This antagonism ensures precise control of blood glucose concentration from both directions.
+
+**Additional note on adrenaline:** Adrenaline (from the adrenal medulla) has a similar effect to glucagon (stimulates glycogenolysis) but is released in response to stress or exercise rather than blood glucose concentration directly. Adrenaline acts on both liver and muscle, whereas glucagon acts only on the liver.
+
+**If you get this wrong, revise:** [Hormonal Control](#hormonal-control) and [Glycogenesis, Glycogenolysis, and Gluconeogenesis](#glycogenesis-glycogenolysis-and-gluconeogenesis)
+
+</details>
+
+### Problem 8: Type 1 Diabetes
+
+A person with Type 1 diabetes forgets to take their insulin injection before eating a large meal rich in carbohydrates. Explain the sequence of events that follows and why this situation is dangerous.
+
+<details>
+<summary>Solution</summary>
+
+1. **Carbohydrate digestion and absorption:** The meal is digested and glucose is absorbed from the small intestine into the blood. Blood glucose concentration rises significantly above the normal set point.
+
+2. **No insulin response:** In Type 1 diabetes, the beta cells of the islets of Langerhans have been destroyed (autoimmune destruction), so no insulin is secreted regardless of blood glucose levels. Without insulin:
+   - Cells cannot take up glucose efficiently (glucose uptake requires insulin-stimulated GLUT4 transporter translocation in muscle and fat cells).
+   - Glycogenesis does not occur (glucose is not converted to glycogen for storage).
+   - Cells continue to break down fat and protein for energy instead of using glucose.
+
+3. **Hyperglycaemia:** Blood glucose concentration continues to rise, potentially reaching dangerous levels (well above the renal threshold of 180 mg/100 cm cubed).
+
+4. **Glycosuria and polyuria:** The kidneys cannot reabsorb all the glucose. Excess glucose appears in the urine (glycosuria). Glucose in the filtrate lowers the water potential of the tubular fluid, reducing water reabsorption by osmosis. Large volumes of dilute urine are produced (polyuria).
+
+5. **Dehydration and polydipsia:** Excessive water loss through polyuria leads to dehydration, triggering excessive thirst (polydipsia).
+
+6. **Ketoacidosis (dangerous complication):** As cells cannot use glucose, the body breaks down fat for energy (lipolysis). Fat breakdown produces fatty acids, which are converted in the liver to ketones (e.g., acetoacetic acid, acetone). Ketones are acidic and accumulate in the blood, lowering blood pH below the normal range of 7.35--7.45. This condition is called diabetic ketoacidosis (DKA). Symptoms include deep, rapid breathing (Kussmaul breathing, as the body attempts to exhale $\mathrm{CO}_2$ to raise blood pH), sweet-smelling breath (acetone on the breath), nausea, vomiting, abdominal pain, and dehydration. Severe ketoacidosis can lead to coma and death if untreated.
+
+7. **Long-term complications of repeated hyperglycaemia:** Even if acute ketoacidosis does not occur, chronically elevated blood glucose damages blood vessels (causing atherosclerosis, increasing the risk of heart attack and stroke), damages small blood vessels in the retina (diabetic retinopathy, leading to blindness), damages the glomeruli in the kidneys (diabetic nephropathy, leading to kidney failure), and damages peripheral nerves (diabetic neuropathy, causing numbness, tingling, and poor wound healing, particularly in the feet). These long-term complications emphasise the importance of maintaining blood glucose within the normal range through proper insulin therapy.
+
+**If you get this wrong, revise:** [Diabetes Mellitus](#diabetes-mellitus) and [Negative Feedback Loop for Blood Glucose](#negative-feedback-loop-for-blood-glucose)
+
+</details>
+
+### Problem 9: Loop of Henle and ADH
+
+Explain how the Loop of Henle creates and maintains a concentration gradient in the medulla of the kidney. Then explain how this gradient is used by ADH to regulate water reabsorption.
+
+<details>
+<summary>Solution</summary>
+
+**Creating the medullary gradient (countercurrent multiplier):**
+
+1. **Descending limb:** The descending limb is permeable to water but impermeable to salts. As filtrate flows down, water moves out by osmosis into the increasingly concentrated medullary tissue fluid. The filtrate becomes progressively more concentrated as it descends. By the bottom of the loop, the filtrate concentration approaches that of the medullary tissue fluid (approximately 1200 mOsm/kg).
+
+2. **Ascending limb (thin segment):** The thin ascending limb is permeable to salts (Na$^+$ and Cl$^-$) but impermeable to water. Na$^+$ and Cl$^-$ diffuse passively out into the medullary tissue fluid.
+
+3. **Ascending limb (thick segment):** The thick ascending limb actively transports Na$^+$ and Cl$^-$ out of the filtrate into the medullary tissue fluid (using ATP from many mitochondria in the cells of the thick ascending limb). This active transport is the primary driver of the countercurrent multiplier. The filtrate becomes progressively more dilute as it ascends.
+
+4. **Countercurrent effect:** Because the descending and ascending limbs run in opposite directions (counter-current arrangement), the active transport of salts out of the ascending limb continually adds to the concentration of the medullary tissue fluid at every level. The water loss from the descending limb also concentrates the medullary tissue fluid. This arrangement multiplies (amplifies) the osmotic gradient, creating a gradient from approximately 300 mOsm/kg at the cortex to approximately 1200 mOsm/kg at the bottom of the medulla. The longer the Loop of Henle, the steeper the gradient that can be maintained (desert animals like kangaroo rats have very long loops).
+
+**How ADH uses this gradient:**
+
+5. When ADH is present (high blood concentration/low water potential), it binds to receptors on the collecting duct cells and triggers a second messenger (cAMP) cascade, leading to the insertion of aquaporin (water channel) proteins into the luminal membrane of the collecting duct cells.
+
+6. As filtrate flows down the collecting duct through the medulla, water moves out by osmosis into the concentrated medullary tissue fluid (down the water potential gradient created by the Loop of Henle). The water enters the vasa recta (capillaries surrounding the nephron) and is returned to the bloodstream.
+
+7. The steeper the medullary gradient (more concentrated medulla), the more water can be reabsorbed from the collecting duct, producing more concentrated urine. Without a medullary gradient, ADH would have no effect -- there would be no osmotic gradient to drive water reabsorption.
+
+8. Without ADH, the collecting duct remains impermeable to water (aquaporins are removed from the membrane and stored in vesicles inside the cells), and dilute urine is produced regardless of the medullary gradient. The gradient is maintained regardless of ADH because the Loop of Henle operates continuously.
+
+**If you get this wrong, revise:** [Selective Reabsorption -- Loop of Henle](#selective-reabsorption) and [The Role of ADH](#the-role-of-adh)
+
+</details>
+
+### Problem 10: Excretion vs Egestion
+
+A student claims: "Defaecation is a form of excretion because waste material is being removed from the body." Evaluate this claim with reference to the definitions of excretion and egestion, and give specific examples of true excretory products.
+
+<details>
+<summary>Solution</summary>
+
+The claim is **incorrect**. Excretion and egestion are fundamentally different processes:
+
+- **Excretion** is the removal of **metabolic waste products** -- substances that have been produced by metabolic reactions within the body cells. These substances have been part of the body's internal metabolism. Examples include:
+  - $\mathrm{CO}_2$ (produced by cellular respiration, excreted by lungs)
+  - Urea (produced by deamination of excess amino acids in the liver, excreted by kidneys)
+  - Bile pigments/bilirubin (produced by breakdown of haemoglobin, excreted via the liver into the intestine)
+  - Water and mineral salts (by-products of various metabolic reactions)
+
+- **Egestion (defaecation)** is the removal of **undigested food material (faeces)** from the body through the anus. Faeces consist of material that was never absorbed into the body -- it passed through the digestive system as a tube (the gut lumen is technically outside the body). Since faeces were never part of the body's metabolic processes, their removal is not excretion.
+
+- **Why this distinction matters:** In exam questions, confusing egestion with excretion would be marked wrong. For example, stating that the large intestine is an excretory organ because it eliminates faeces would be incorrect. The large intestine absorbs water and salts but does not excrete metabolic waste -- the substances in faeces (e.g., fibre, dead bacteria, undigested food) were never metabolised by the body.
+
+- **Common exam traps:**
+  - The anus is NOT an excretory organ -- it is involved in egestion.
+  - The lungs ARE excretory organs because they remove $\mathrm{CO}_2$ (a metabolic waste product of respiration).
+  - The skin IS an excretory organ (minor) because it removes water, urea, salts, and lactic acid (metabolic waste products) in sweat. However, the skin's PRIMARY function is thermoregulation, not excretion.
+  - The kidneys are the PRIMARY excretory organs, removing urea, excess water, excess mineral salts, and other metabolic wastes in urine.
+
+**If you get this wrong, revise:** [Excretion -- Definition](#definition) and [Common Pitfalls](#common-pitfalls)
+
+---
+
+## Key Equations and Processes Summary
+
+**Hormonal control of the menstrual cycle:**
+
+- FSH (anterior pituitary) stimulates follicle development and oestrogen production
+- Oestrogen (follicle/corpus luteum) stimulates endometrial thickening; negative feedback on FSH at low levels; positive feedback on LH at high levels
+- LH (anterior pituitary) triggers ovulation and maintains corpus luteum
+- Progesterone (corpus luteum) maintains endometrium; negative feedback on FSH and LH
+- hCG (embryo) maintains corpus luteum in early pregnancy
+
+**Blood glucose regulation:**
+
+- Insulin (beta cells): stimulates glycogenesis, inhibits glycogenolysis and gluconeogenesis, increases glucose uptake -- net effect: lowers blood glucose
+- Glucagon (alpha cells): stimulates glycogenolysis and gluconeogenesis -- net effect: raises blood glucose
+- Adrenaline (adrenal medulla): stimulates glycogenolysis in liver and muscles -- rapid raise of blood glucose
+
+**Osmoregulation:**
+
+- High blood solute concentration / low water potential: osmoreceptors in hypothalamus detect change; posterior pituitary releases ADH; collecting duct becomes more permeable to water (aquaporin insertion); concentrated urine produced
+- Low blood solute concentration / high water potential: osmoreceptors reduce stimulation; ADH decreases; collecting duct becomes less permeable; dilute urine produced
+
+**Deamination and urea synthesis:**
+
+$$\mathrm{Amino acid} \to \mathrm{Keto acid} + \mathrm{NH}_3$$
+
+$$2\mathrm{NH}_3 + \mathrm{CO}_2 \to \mathrm{CO(NH}_2)_2 + \mathrm{H}_2\mathrm{O}$$
+
+**Quick reference: commonly confused pairs**
+
+| Concept | First item | Second item | Key difference |
+| --- | --- | --- | --- |
+| Excretion vs egestion | Removal of metabolic waste (urea, $\mathrm{CO}_2$) | Removal of undigested food (faeces) | Faeces were never part of metabolism |
+| Umbilical artery vs vein | Carries **deoxygenated** blood (foetus to placenta) | Carries **oxygenated** blood (placenta to foetus) | Named by direction of flow from the heart |
+| Insulin vs glucagon | From beta cells; **lowers** blood glucose | From alpha cells; **raises** blood glucose | Insulin stores, glucagon releases |
+| Glycogenesis vs glycogenolysis | Glucose to glycogen (storage) | Glycogen to glucose (release) | Opposite processes |
+| Spermatogenesis vs oogenesis | Begins at puberty; continuous; 4 functional gametes | Begins in foetus; arrested; 1 functional gamete | Timing, continuity, and yield differ |
+| Vasodilation vs vasoconstriction | Arterioles dilate; heat **lost** | Arterioles constrict; heat **conserved** | Opposite thermoregulatory responses |
+| Negative vs positive feedback | Response **opposes** the change | Response **amplifies** the change | Most homeostasis uses negative; LH surge uses positive |
+| Diabetes mellitus type 1 vs type 2 | No insulin produced (autoimmune) | Insulin resistance (lifestyle-linked) | Different cause, age of onset, and treatment |
+
+**Exam checklist -- can you explain each of the following without looking?**
+
+- Why the corpus luteum degenerates if fertilisation does not occur
+- Why oestrogen has both negative and positive feedback effects on the pituitary
+- Why the acrosome reaction and cortical reaction are both necessary for successful fertilisation
+- Why maternal and foetal blood do not mix in the placenta
+- Why ADH is produced in the hypothalamus but released from the posterior pituitary
+- Why the loop of Henle creates a medullary concentration gradient
+- Why muscle cannot release glucose into the blood but the liver can
+- Why insulin cannot be taken orally
+- Why glucose appears in the urine of a person with uncontrolled diabetes
+- Why deamination is necessary and why ammonia must be converted to urea
 
 </details>
