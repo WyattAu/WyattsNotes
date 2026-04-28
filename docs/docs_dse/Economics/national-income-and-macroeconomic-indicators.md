@@ -200,6 +200,25 @@ All three approaches yield the same GDP figure because every unit of output is e
 someone (expenditure approach), generates income for someone (income approach), or represents value
 created at some stage of production (value-added approach).
 
+<details>
+<summary>Worked Example: Value-Added Approach</summary>
+
+A car manufacturer's production chain:
+
+| Stage          | Sales Value (USD) | Intermediate Inputs (USD) | Value Added (USD) |
+| -------------- | ----------------- | ------------------------ | ----------------- |
+| Steel mill     | 5,000             | 0                        | 5,000             |
+| Glass factory  | 2,000             | 0                        | 2,000             |
+| Tyre factory   | 1,500             | 0                        | 1,500             |
+| Car assembly   | 20,000            | 8,500                    | 11,500            |
+| **Total**      | **28,500**        | **8,500**                | **20,000**        |
+
+GDP = sum of value added = `5,000 + 2,000 + 1,500 + 11,500 = 20,000`.
+
+Alternatively, value of final output (car) = USD 20,000. Same result.
+
+</details>
+
 ---
 
 ## GDP Per Capita and Standard of Living
@@ -319,6 +338,29 @@ to the business cycle and is the primary target of macroeconomic stabilisation p
 **Seasonal unemployment** is predictable and occurs in industries where demand fluctuates with the
 seasons (agriculture, tourism, retail during holidays). It is not usually considered a policy
 problem.
+
+<details>
+<summary>Worked Example: Unemployment Rate Calculations</summary>
+
+An economy has a working-age population of 8 million. Employed = 4.8 million. Unemployed = 0.3 million.
+The rest are not in the labour force.
+
+Labour force = `4.8 + 0.3 = 5.1` million.
+
+Unemployment rate = `0.3 / 5.1 \times 100\% = 5.88\%`.
+
+Labour force participation rate = `5.1 / 8.0 \times 100\% = 63.75\%`.
+
+If 0.1 million discouraged workers start looking for work:
+
+New labour force = 5.2 million. New unemployed = 0.4 million.
+
+New unemployment rate = `0.4 / 5.2 \times 100\% = 7.69\%`.
+
+The unemployment rate **rises** even though no one lost a job, because previously uncounted
+individuals now enter the labour force as unemployed.
+
+</details>
 
 ### Natural Rate of Unemployment (NRU)
 
@@ -902,5 +944,258 @@ The average tax rate increases with income (11.25% to 14.25%), so this system is
 because of the exemption. The flat rate alone would be proportional, but the fixed exemption makes
 lower-income earners effectively pay a lower average rate. The exemption functions as a progressive
 element.
+
+</details>
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: GDP Expenditure Approach</summary>
+
+An economy has the following data (USD billion):
+
+- Consumption: 900, Government spending on goods and services: 250
+- Gross fixed capital formation: 200, Change in inventories: 30
+- Exports: 350, Imports: 400
+- Social security payments: 100, Wages: 700
+
+(a) Calculate GDP. (b) Calculate net exports. (c) Which items are excluded from GDP calculation?
+
+<details>
+<summary>Solution</summary>
+
+(a) GDP = C + I + G + (X - M) = `900 + (200 + 30) + 250 + (350 - 400) = 900 + 230 + 250 + (-50) = 1330`.
+
+(b) Net exports = `350 - 400 = -50` billion (trade deficit).
+
+(c) Social security payments (transfer payments -- not payment for current production) and wages (part of
+income approach, not expenditure approach -- including them would double count).
+
+</details>
+
+If you get this wrong, revise: [Methods of Measuring GDP](#methods-of-measuring-gdp)
+
+</details>
+
+<details>
+<summary>Problem 2: Nominal vs Real GDP</summary>
+
+An economy produces only two goods:
+
+| Good | 2023 Price | 2023 Qty | 2024 Price | 2024 Qty |
+| ---- | ---------- | -------- | ---------- | -------- |
+| X    | 5          | 200      | 6          | 220      |
+| Y    | 10         | 100      | 12         | 90       |
+
+Using 2023 as the base year:
+
+(a) Calculate nominal and real GDP for both years. (b) Calculate the GDP deflator and inflation rate
+for 2024. (c) Calculate the real GDP growth rate.
+
+<details>
+<summary>Solution</summary>
+
+(a) Nominal 2023 = `5 \times 200 + 10 \times 100 = 1000 + 1000 = 2000`.
+Nominal 2024 = `6 \times 220 + 12 \times 90 = 1320 + 1080 = 2400`.
+Real 2023 = `5 \times 200 + 10 \times 100 = 2000`.
+Real 2024 = `5 \times 220 + 10 \times 90 = 1100 + 900 = 2000`.
+
+(b) GDP deflator 2023 = `2000/2000 \times 100 = 100`.
+GDP deflator 2024 = `2400/2000 \times 100 = 120`.
+Inflation rate = `(120 - 100)/100 \times 100\% = 20\%`.
+
+(c) Real GDP growth = `(2000 - 2000)/2000 \times 100\% = 0\%`.
+
+Real output did not grow; the entire increase in nominal GDP was due to inflation.
+
+</details>
+
+If you get this wrong, revise: [Nominal GDP vs Real GDP](#nominal-gdp-vs-real-gdp)
+
+</details>
+
+<details>
+<summary>Problem 3: CPI Calculation</summary>
+
+A household's basket (base year quantities): 40 kg rice at USD 3/kg, 20 kg chicken at USD 10/kg, 1
+month rent at USD 2000.
+
+Current year prices: rice USD 4/kg, chicken USD 12/kg, rent USD 2200.
+
+(a) Calculate the CPI. (b) Calculate the inflation rate. (c) Identify one limitation of this CPI
+measurement.
+
+<details>
+<summary>Solution</summary>
+
+(a) Base year cost = `40 \times 3 + 20 \times 10 + 1 \times 2000 = 120 + 200 + 2000 = 2320`.
+Current year cost = `40 \times 4 + 20 \times 12 + 1 \times 2200 = 160 + 240 + 2200 = 2600`.
+CPI = `2600/2320 \times 100 = 112.07`.
+
+(b) Inflation rate = `(112.07 - 100)/100 \times 100\% = 12.07\%`.
+
+(c) **Substitution bias:** The CPI assumes the household buys the same quantities regardless of price
+changes. If chicken rises from 10 to 12, the household may substitute toward fish or pork. The CPI
+overstates the true cost of living increase.
+
+</details>
+
+If you get this wrong, revise: [Measurement: Consumer Price Index (CPI)](#measurement-consumer-price-index-cpi)
+
+</details>
+
+<details>
+<summary>Problem 4: GDP vs GNP</summary>
+
+Country K has GDP of USD 500 billion. Its residents earn USD 80 billion from investments abroad. Foreign
+residents earn USD 30 billion from investments within Country K.
+
+(a) Calculate GNP. (b) Does Country K have positive or negative net factor income from abroad? (c) Why
+might GDP and GNP differ significantly for Hong Kong?
+
+<details>
+<summary>Solution</summary>
+
+(a) GNP = GDP + Net factor income from abroad = `500 + (80 - 30) = 550` billion.
+
+(b) Positive: `80 - 30 = +50` billion. Residents earn more from abroad than foreigners earn
+domestically.
+
+(c) Hong Kong has massive overseas investments (mainland China, Southeast Asia) generating large income
+inflows. At the same time, foreign firms operating in Hong Kong remit profits abroad. Historically,
+Hong Kong's GNP exceeds its GDP because net factor income from abroad has been positive -- Hong Kong
+residents earn more from overseas investments than foreign residents earn in Hong Kong.
+
+</details>
+
+If you get this wrong, revise: [GDP vs GNP vs GNI](#gdp-vs-gnp-vs-gni)
+
+</details>
+
+<details>
+<summary>Problem 5: Types of Unemployment</summary>
+
+Classify each of the following as frictional, structural, cyclical, or seasonal unemployment, and explain:
+
+(a) A construction worker is laid off during the winter due to bad weather.
+(b) A bank teller loses her job because ATMs and online banking have reduced the need for tellers.
+(c) A recent university graduate is searching for her first job.
+(d) A factory worker is laid off because the economy is in a recession.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Seasonal** -- the layoff is due to predictable seasonal fluctuation in construction demand.
+
+(b) **Structural** -- technological change (ATMs, online banking) has permanently reduced demand for bank
+tellers. The worker's skills do not match the available jobs. Retraining would be needed.
+
+(c) **Frictional** -- the graduate is moving between jobs (from education to employment). This is a
+normal part of a dynamic labour market and is short-term.
+
+(d) **Cyclical** -- the layoff is due to insufficient aggregate demand during a recession. The worker
+may be rehired when the economy recovers.
+
+</details>
+
+If you get this wrong, revise: [Types of Unemployment](#types-of-unemployment)
+
+</details>
+
+<details>
+<summary>Problem 6: Business Cycle Analysis</summary>
+
+An economy's potential GDP is USD 800 billion. The following data shows actual GDP and unemployment:
+
+| Year | Actual GDP | Unemployment Rate |
+| ---- | ---------- | ----------------- |
+| 2021 | 760        | 7.5%             |
+| 2022 | 720        | 9.5%             |
+| 2023 | 800        | 5.0%             |
+| 2024 | 840        | 3.5%             |
+
+The natural rate of unemployment is 5%.
+
+(a) Identify the type of gap in each year. (b) Using Okun's law (1% above NRU = 2% below potential GDP),
+estimate the 2022 GDP gap.
+
+<details>
+<summary>Solution</summary>
+
+(a) 2021: Recessionary gap (760 \lt 800). 2022: Recessionary gap (720 \lt 800). 2023: No gap
+(800 = 800). 2024: Inflationary gap (840 \gt 800).
+
+(b) 2022: Unemployment above NRU = `9.5\% - 5\% = 4.5\%`.
+
+Estimated GDP gap = `2 \times 4.5\% \times 800 = 72`.
+
+Actual GDP gap = `800 - 720 = 80`. The Okun's law estimate (72) is close but not exact, as Okun's
+law is an empirical approximation.
+
+</details>
+
+If you get this wrong, revise: [Business Cycle](#business-cycle)
+
+</details>
+
+<details>
+<summary>Problem 7: Phillips Curve</summary>
+
+An economy is at the natural rate of unemployment (5%) with 2% inflation. The government uses
+expansionary policy to reduce unemployment to 3%.
+
+(a) What happens to inflation in the short run? (b) What happens in the long run? (c) Illustrate this
+process using the Phillips curve framework.
+
+<details>
+<summary>Solution</summary>
+
+(a) In the short run, unemployment falls to 3% and inflation rises above 2% (movement along the SRPC).
+Tighter labour markets push up wages, which firms pass on as higher prices.
+
+(b) In the long run, workers realise inflation has risen and demand higher nominal wages to compensate.
+Higher wages shift the SRAS curve left, returning unemployment to 5% but at a higher inflation rate.
+The economy moves up along the vertical LRPC. The long-run trade-off disappears.
+
+(c) Starting at the intersection of SRPC1 and LRPC (5% unemployment, 2% inflation), the policy moves
+the economy left along SRPC1 to (3%, higher inflation). Over time, expectations adjust and SRPC1
+shifts up to SRPC2. The economy returns to 5% unemployment but at a higher inflation rate. This
+demonstrates the accelerationist hypothesis.
+
+</details>
+
+If you get this wrong, revise: [Phillips Curve](#phillips-curve)
+
+</details>
+
+<details>
+<summary>Problem 8: Automatic Stabilisers</summary>
+
+Explain how progressive income tax and unemployment benefits act as automatic stabilisers during (a) a
+recession and (b) an economic boom. Why are automatic stabilisers considered superior to discretionary
+fiscal policy in some respects?
+
+<details>
+<summary>Solution</summary>
+
+(a) **Recession:** Incomes fall, pushing taxpayers into lower brackets. Tax revenue falls
+automatically, leaving households with more disposable income than under a flat tax. More people claim
+unemployment benefits, providing income support. Both effects cushion the fall in aggregate demand.
+
+(b) **Boom:** Incomes rise, pushing taxpayers into higher brackets. Tax revenue rises automatically,
+dampening spending growth. Fewer people claim unemployment benefits. Both effects prevent
+overheating.
+
+**Advantages over discretionary policy:**
+- No legislative delay (act immediately)
+- Self-financing (surpluses in booms fund deficits in recessions)
+- No political negotiation needed
+- More predictable, reducing uncertainty
+
+</details>
+
+If you get this wrong, revise: [Automatic Stabilisers](#automatic-stabilisers)
 
 </details>

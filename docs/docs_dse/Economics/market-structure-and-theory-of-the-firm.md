@@ -114,6 +114,33 @@ Diagram description: The `MC` curve intersects the horizontal `P = MR = AR` line
 `Q*`, the `ATC` curve lies below the price line. The rectangular area between the `ATC` curve and
 the price line, from 0 to `Q*`, represents supernormal profit.
 
+<details>
+<summary>Worked Example: Supernormal Profit in Perfect Competition</summary>
+
+A perfectly competitive firm has `TC = 200 + 20Q + 2Q^2`. The market price is `P = 60`.
+
+`MC = dTC/dQ = 20 + 4Q`
+
+Set `P = MC`: `60 = 20 + 4Q`, so `Q = 10`.
+
+`ATC = 200/10 + 20 + 2(10) = 20 + 20 + 20 = 60`.
+
+Since `P = ATC = 60`, the firm earns **normal profit** only.
+
+Now suppose the market price rises to `P = 80`:
+
+Set `P = MC`: `80 = 20 + 4Q`, so `Q = 15`.
+
+`ATC = 200/15 + 20 + 2(15) = 13.33 + 20 + 30 = 63.33`.
+
+Since `P = 80 \gt ATC = 63.33`, the firm earns **supernormal profit**.
+
+Supernormal profit per unit = `80 - 63.33 = 16.67`
+
+Total supernormal profit = `15 \times 16.67 = 250`.
+
+</details>
+
 **Case 2: Normal profit** (`P = ATC` at the profit-maximising output)
 
 | Condition | Result                         |
@@ -143,6 +170,35 @@ variable costs and minimises losses by producing zero output.
 
 The firm shuts down immediately. Loss = total fixed cost. Producing would increase the loss beyond
 fixed cost.
+
+<details>
+<summary>Worked Example: Shutdown Decision</summary>
+
+A perfectly competitive firm has `TC = 500 + 30Q + Q^2`.
+
+`TVC = 30Q + Q^2`, `TFC = 500`.
+
+`AVC = 30 + Q`, `MC = 30 + 2Q`.
+
+Minimum `AVC` occurs as `Q` approaches 0: `min AVC = 30`.
+
+Shutdown price = 30.
+
+At `P = 25`: Since `P = 25 \lt AVC_{\min} = 30`, the firm **shuts down**. Loss = TFC = 500.
+
+At `P = 40`: Set `P = MC`: `40 = 30 + 2Q`, `Q = 5`.
+
+`ATC = 500/5 + 30 + 5 = 100 + 35 = 135`.
+
+Loss = `5 \times (40 - 135) = 5 \times (-95) = -475`.
+
+If the firm shuts down instead, loss = TFC = 500. Since `-475 \gt -500`, the firm should **continue
+producing** -- losing 475 is better than losing 500.
+
+The firm covers `AVC = 30 + 5 = 35` per unit and contributes `40 - 35 = 5` per unit toward fixed
+costs, recovering `5 \times 5 = 25` of fixed costs.
+
+</details>
 
 ### Long-Run Equilibrium
 
@@ -296,6 +352,23 @@ the monopolist can earn supernormal profit indefinitely. This is the key differe
 competition, where long-run equilibrium yields only normal profit.
 
 $$\mathrm{Supernormal profit} = Q_m \times (P_m - \mathrm{ATC}(Q_m))$$
+
+<details>
+<summary>Worked Example: Monopoly Profit Maximisation</summary>
+
+A monopolist faces demand `P = 120 - Q` and has `TC = 100 + 10Q + 2Q^2`.
+
+`TR = 120Q - Q^2`. `MR = 120 - 2Q`. `MC = 10 + 4Q`.
+
+Set `MR = MC`: `120 - 2Q = 10 + 4Q`, so `6Q = 110`, `Q_m = 18.33`.
+
+`P_m = 120 - 18.33 = 101.67`.
+
+`ATC = 100/18.33 + 10 + 2(18.33) = 5.45 + 10 + 36.67 = 52.12`.
+
+Supernormal profit = `18.33 \times (101.67 - 52.12) = 18.33 \times 49.55 = 908.4`.
+
+</details>
 
 ### Inefficiency of Monopoly
 
@@ -509,6 +582,30 @@ to the right of `Q*`, showing excess capacity.
 | Allocative efficiency | No: `P \gt MC`. The markup reflects market power from product differentiation.                  |
 | Dynamic efficiency    | Potentially yes: supernormal profit in the short run and competitive pressure drive innovation. |
 | Consumer welfare      | Ambiguous: consumers pay higher prices than under perfect competition but benefit from variety. |
+
+<details>
+<summary>Worked Example: Excess Capacity in Monopolistic Competition</summary>
+
+A monopolistically competitive firm has demand `P = 60 - Q` and `TC = 50 + 10Q + 0.5Q^2`.
+
+`MR = 60 - 2Q`. `MC = 10 + Q`.
+
+Set `MR = MC`: `60 - 2Q = 10 + Q`, `3Q = 50`, `Q^* = 16.67`.
+
+`P = 60 - 16.67 = 43.33`.
+
+`ATC = 50/16.67 + 10 + 0.5(16.67) = 3.0 + 10 + 8.33 = 21.33`.
+
+Since `P = 43.33 \gt ATC = 21.33`, the firm earns supernormal profit in the short run.
+
+To find `ATC_{\min}`: `MC = ATC` means `10 + Q = 50/Q + 10 + 0.5Q`, so `0.5Q = 50/Q`, `Q^2 = 100`,
+`Q_{ATC_{\min}} = 10`.
+
+Excess capacity = `10 - 16.67` -- wait, `16.67 \gt 10` here, which suggests the firm produces beyond
+the minimum ATC. This is because at `Q = 16.67`, the firm has supernormal profit. In the long run, entry
+would shift demand left until `P = ATC` at a `Q` less than 10, creating excess capacity.
+
+</details>
 
 ### Advertising and Non-Price Competition
 
@@ -1171,5 +1268,275 @@ increasing from 0. The supply function is valid for all positive prices.
 For `P \gt 0`: `Q = P/10`.
 
 (d) At `P = 30`: `Q = 30/10 = 3` units.
+
+</details>
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: Identifying Market Structures</summary>
+
+For each of the following markets, identify the most appropriate market structure and explain your
+reasoning with reference to the characteristics discussed in this file.
+
+(a) Fresh vegetables at a wet market in Hong Kong
+(b) Electricity supply in Hong Kong (CLP Power)
+(c) Restaurants in Causeway Bay
+(d) Smartphone operating systems globally
+
+<details>
+<summary>Solution</summary>
+
+(a) **Perfect competition** (approximately). Many sellers, homogeneous product (vegetables are largely
+undifferentiated), no barriers to entry (anyone can set up a stall), price-taking behaviour.
+
+(b) **Monopoly**. Single seller (CLP Power has an exclusive franchise), unique product, very high
+barriers to entry (natural monopoly due to huge infrastructure costs), price maker.
+
+(c) **Monopolistic competition**. Many restaurants, differentiated products (cuisine, location, service,
+ambiance), low barriers to entry (new restaurants can open relatively easily), some price-setting
+power through differentiation.
+
+(d) **Oligopoly**. A few dominant firms (Android/Google, Apple iOS), high barriers to entry (network
+effects, app ecosystems, development costs), mutual interdependence.
+
+</details>
+
+If you get this wrong, revise: [Overview of Market Structures](#overview-of-market-structures)
+
+</details>
+
+<details>
+<summary>Problem 2: Perfect Competition Long-Run Entry</summary>
+
+In a perfectly competitive industry, each firm has `TC = 100 + 5Q + Q^2`. The current market price is
+`P = 30`.
+
+(a) Find each firm's profit-maximising output and profit. (b) In the long run, will firms enter or
+exit? What will the long-run equilibrium price be?
+
+<details>
+<summary>Solution</summary>
+
+(a) `MC = 5 + 2Q`. Set `P = MC`: `30 = 5 + 2Q`, `Q = 12.5`.
+
+`ATC = 100/12.5 + 5 + 12.5 = 8 + 5 + 12.5 = 25.5`.
+
+Profit per unit = `30 - 25.5 = 4.5`. Total profit = `12.5 \times 4.5 = 56.25`.
+
+The firm earns supernormal profit.
+
+(b) Supernormal profit attracts entry. New firms enter, increasing industry supply, which drives the
+price down. Entry continues until `P = ATC_{\min}`.
+
+`ATC_{\min}`: `MC = ATC` means `5 + 2Q = 100/Q + 5 + Q`, so `Q = 100/Q`, `Q^2 = 100`, `Q = 10`.
+
+`ATC_{\min} = 100/10 + 5 + 10 = 25`.
+
+Long-run equilibrium price = 25. Each firm produces `Q = 10` and earns normal profit.
+
+</details>
+
+If you get this wrong, revise: [Long-Run Equilibrium](#long-run-equilibrium)
+
+</details>
+
+<details>
+<summary>Problem 3: Monopoly Deadweight Loss</summary>
+
+A monopolist faces demand `P = 80 - 0.5Q` and has `TC = 40 + 10Q`.
+
+(a) Find the profit-maximising price and output. (b) Find the competitive price and output (where
+`P = MC`). (c) Calculate the deadweight loss.
+
+<details>
+<summary>Solution</summary>
+
+(a) `TR = 80Q - 0.5Q^2`. `MR = 80 - Q`. `MC = 10`.
+
+Set `MR = MC`: `80 - Q = 10`, `Q_m = 70`. `P_m = 80 - 35 = 45`.
+
+(b) Competitive: `P = MC`: `80 - 0.5Q = 10`, `0.5Q = 70`, `Q_c = 140`. `P_c = 10`.
+
+(c) `MC` at `Q_m = 70` is 10.
+
+`DWL = 0.5 \times (45 - 10) \times (140 - 70) = 0.5 \times 35 \times 70 = 1225`.
+
+</details>
+
+If you get this wrong, revise: [Inefficiency of Monopoly](#inefficiency-of-monopoly)
+
+</details>
+
+<details>
+<summary>Problem 4: Third-Degree Price Discrimination</summary>
+
+A museum charges different prices to adults and students. Demand: `P_A = 50 - Q_A`,
+`P_S = 30 - Q_S`. `MC = 5` (constant).
+
+(a) If the museum cannot price discriminate, find the optimal single price and profit. (b) If it can
+price discriminate, find the price for each group and total profit. (c) Which group has more elastic
+demand?
+
+<details>
+<summary>Solution</summary>
+
+(a) Without discrimination, we need aggregate demand. `Q_A = 50 - P`, `Q_S = 30 - P`.
+
+For `P \le 30`: `Q = 80 - 2P`, so `P = 40 - 0.5Q`, `MR = 40 - Q`.
+
+Set `MR = MC`: `40 - Q = 5`, `Q = 35`. `P = 40 - 17.5 = 22.5`.
+
+`TR = 22.5 \times 35 = 787.5`. `TC = 5 \times 35 = 175`. Profit = 612.5.
+
+(b) Adults: `MR_A = 50 - 2Q_A`. Set `MR_A = 5`: `Q_A = 22.5`. `P_A = 27.5`.
+
+Students: `MR_S = 30 - 2Q_S`. Set `MR_S = 5`: `Q_S = 12.5`. `P_S = 17.5`.
+
+Total `Q = 35`. `TR = 27.5 \times 22.5 + 17.5 \times 12.5 = 618.75 + 218.75 = 837.5`.
+
+Profit = `837.5 - 175 = 662.5`.
+
+(c) Students face a lower price (`17.5` vs `27.5`), so students have **more elastic demand**. They are
+more price-sensitive, so the monopolist charges them less.
+
+</details>
+
+If you get this wrong, revise: [Price Discrimination](#price-discrimination)
+
+</details>
+
+<details>
+<summary>Problem 5: Game Theory — Nash Equilibrium</summary>
+
+Two firms, Alpha and Beta, compete on advertising spend. Each can choose High or Low advertising. The
+payoff matrix (annual profit in USD million):
+
+|                 | Beta: High Ad | Beta: Low Ad |
+| --------------- | ------------- | ------------ |
+| Alpha: High Ad  | 5, 5          | 15, 2        |
+| Alpha: Low Ad   | 2, 15         | 10, 10       |
+
+(a) Does either firm have a dominant strategy? (b) Find the Nash equilibrium. (c) Is there a
+Pareto-superior outcome? Explain.
+
+<details>
+<summary>Solution</summary>
+
+(a) If Beta chooses High: Alpha gets 5 (High) vs 2 (Low). Alpha prefers High.
+If Beta chooses Low: Alpha gets 15 (High) vs 10 (Low). Alpha prefers High.
+High is a dominant strategy for Alpha. By symmetry, High is a dominant strategy for Beta.
+
+(b) Nash equilibrium: (High Ad, High Ad) with payoffs (5, 5).
+
+(c) (Low Ad, Low Ad) with payoffs (10, 10) is Pareto superior -- both firms are better off. But neither
+will choose Low because the incentive to deviate to High is too strong (prisoner's dilemma).
+
+</details>
+
+If you get this wrong, revise: [Game Theory and Strategic Behaviour](#game-theory-and-strategic-behaviour)
+
+</details>
+
+<details>
+<summary>Problem 6: Kinked Demand Curve</summary>
+
+An oligopolistic firm faces a kinked demand curve. Above the current price `P^* = 50`, demand is given
+by `P = 60 - 0.5Q`. Below `P^*`, demand is given by `P = 70 - Q`.
+
+(a) Find the quantity at the kink. (b) Derive the `MR` above and below the kink. (c) If `MC` increases
+from 20 to 30, will the firm change its price? Explain.
+
+<details>
+<summary>Solution</summary>
+
+(a) Above the kink: at `P = 50`, `50 = 60 - 0.5Q`, `Q = 20`. Below the kink: at `P = 50`,
+`50 = 70 - Q`, `Q = 20`. Both segments meet at `(Q, P) = (20, 50)`. The kink is at `Q^* = 20`.
+
+(b) Above the kink: `P = 60 - 0.5Q`, `TR = 60Q - 0.5Q^2`, `MR = 60 - Q`.
+At `Q = 20`: `MR = 40`.
+
+Below the kink: `P = 70 - Q`, `TR = 70Q - Q^2`, `MR = 70 - 2Q`.
+At `Q = 20`: `MR = 30`.
+
+The `MR` gap is from 30 to 40 at `Q = 20`.
+
+(c) As long as `MC` stays between 30 and 40, the profit-maximising output and price do not change. Since
+`MC = 20` is below the gap and `MC = 30` is at the bottom of the gap, the firm continues to produce at
+`Q = 20`, `P = 50`. This illustrates **price rigidity** under the kinked demand curve model.
+
+</details>
+
+If you get this wrong, revise: [The Kinked Demand Curve Model](#the-kinked-demand-curve-model)
+
+</details>
+
+<details>
+<summary>Problem 7: Natural Monopoly Regulation</summary>
+
+A natural monopoly has `TC = 300 + 5Q` and faces demand `P = 45 - 0.5Q`.
+
+(a) Find the unregulated monopoly output, price, and profit. (b) If the government forces `P = MC`,
+find output, price, and profit/loss. (c) If the government forces `P = ATC`, find output and price.
+
+<details>
+<summary>Solution</summary>
+
+(a) `MR = 45 - Q`. `MC = 5`. Set `MR = MC`: `45 - Q = 5`, `Q = 40`. `P = 45 - 20 = 25`.
+
+`TR = 25 \times 40 = 1000`. `TC = 300 + 200 = 500`. Profit = 500.
+
+(b) Allocative efficiency: `P = MC`: `45 - 0.5Q = 5`, `Q = 80`. `P = 5`.
+
+`TR = 400`. `TC = 300 + 400 = 700`. Loss = -300. The government must subsidise the firm.
+
+(c) `P = ATC`: `45 - 0.5Q = 300/Q + 5`. Multiply by `Q`: `45Q - 0.5Q^2 = 300 + 5Q`.
+
+`0.5Q^2 - 40Q + 300 = 0`. `Q^2 - 80Q + 600 = 0`.
+
+Using the quadratic formula: `Q = (80 \pm \sqrt{6400 - 2400}) / 2 = (80 \pm 63.2) / 2`.
+
+`Q = 71.6` (taking the larger root). `P = 45 - 35.8 = 9.2`.
+
+</details>
+
+If you get this wrong, revise: [Natural Monopoly: Detailed Analysis](#natural-monopoly-detailed-analysis)
+
+</details>
+
+<details>
+<summary>Problem 8: Contestable Markets</summary>
+
+A single firm operates as a monopoly on a small island, producing electricity with `TC = 200 + 2Q`.
+Demand is `P = 20 - Q`. There are no sunk costs -- any firm can enter and exit at zero cost.
+
+(a) If the firm acts as an unregulated monopolist, what price does it charge? (b) If the market is
+perfectly contestable, what price will the firm charge? Explain. (c) Compare the output under both
+scenarios.
+
+<details>
+<summary>Solution</summary>
+
+(a) Unregulated: `MR = 20 - 2Q`. `MC = 2`. Set `MR = MC`: `20 - 2Q = 2`, `Q = 9`. `P = 11`.
+
+(b) If the market is perfectly contestable, the threat of entry forces the firm to charge `P = ATC`
+(normal profit) to avoid attracting entrants. `ATC = 200/Q + 2`.
+
+`P = ATC`: `20 - Q = 200/Q + 2`. `Q^2 - 18Q + 200 = 0`. Discriminant = `324 - 800 = -476 \lt 0`.
+
+No real solution exists. The firm can always undercut any potential entrant because its costs are lower
+(due to economies of scale). However, contestable market theory predicts the firm will charge the
+lowest price consistent with zero economic profit for a potential entrant. The potential entrant's cost
+is also `TC = 200 + 2Q` (same technology, no sunk costs), so the threat of entry forces `P` down
+towards `MC = 2`, the competitive price. At `P = 2`, `Q = 18`.
+
+(c) Unregulated monopoly: `Q = 9`. Contestable market: `Q = 18`. Contestability doubles output and
+halves the price, approaching the competitive outcome despite there being only one firm.
+
+</details>
+
+If you get this wrong, revise: [Contestable Markets Theory](#contestable-markets-theory)
 
 </details>

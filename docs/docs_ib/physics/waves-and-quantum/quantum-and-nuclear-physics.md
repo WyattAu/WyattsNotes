@@ -98,6 +98,20 @@ where $\theta$ is the scattering angle and $\dfrac{h}{m_e c} = 2.43 \times 10^{-
 **Compton wavelength** of the electron. This demonstrates the particle nature of electromagnetic
 radiation.
 
+<details>
+<summary>Worked Example: Compton Scattering</summary>
+
+An X-ray photon of wavelength $0.0500\,\mathrm{nm}$ is scattered at $90^\circ$ by a free electron.
+Find the wavelength of the scattered photon.
+
+$$\Delta\lambda = \frac{h}{m_e c}(1 - \cos\theta) = (2.43 \times 10^{-12})(1 - \cos 90^\circ)$$
+
+$$\Delta\lambda = (2.43 \times 10^{-12})(1 - 0) = 2.43 \times 10^{-12}\,\mathrm{m} = 0.00243\,\mathrm{nm}$$
+
+$$\lambda' = 0.0500 + 0.00243 = 0.05243\,\mathrm{nm}$$
+
+</details>
+
 ---
 
 ## Wave-Particle Duality
@@ -186,6 +200,36 @@ $$\lambda = 656\,\mathrm{nm}$$
 
 This is the characteristic red line of the hydrogen spectrum ($\mathrm{H}\alpha$).
 
+<details>
+<summary>Worked Example: Hydrogen Spectral Lines</summary>
+
+An electron in a hydrogen atom transitions from $n = 4$ to $n = 2$.
+
+**Find the energy, wavelength, and frequency of the emitted photon.**
+
+Energy of levels:
+
+$$E_4 = \frac{-13.6}{16} = -0.85\,\mathrm{eV}, \quad E_2 = \frac{-13.6}{4} = -3.40\,\mathrm{eV}$$
+
+Photon energy:
+
+$$\Delta E = E_4 - E_2 = -0.85 - (-3.40) = 2.55\,\mathrm{eV}$$
+
+Wavelength:
+
+$$\lambda = \frac{hc}{\Delta E} = \frac{1240}{2.55} = 486\,\mathrm{nm}$$
+
+Frequency:
+
+$$f = \frac{c}{\lambda} = \frac{3.0 \times 10^8}{486 \times 10^{-9}} = 6.17 \times 10^{14}\,\mathrm{Hz}$$
+
+This is the blue-green $\mathrm{H}\beta$ line in the Balmer series.
+
+**Is the electron excited or de-excited?** The electron moves from a higher energy level ($n = 4$)
+to a lower one ($n = 2$), so this is de-excitation and a photon is emitted.
+
+</details>
+
 ---
 
 ## Radioactive Decay
@@ -231,6 +275,30 @@ $800\,\mathrm{Bq}$. Find the activity after $15.81\,\mathrm{years}$.
 Number of half-lives: $n = 15.81 / 5.27 = 3$.
 
 $$A = 800 \times \left(\frac{1}{2}\right)^3 = 100\,\mathrm{Bq}$$
+
+<details>
+<summary>Worked Example: Decay Constant and Half-Life</summary>
+
+A radioactive isotope has a half-life of $8.0\,\mathrm{days}$. A sample contains $4.0 \times 10^{15}$
+undecayed nuclei at $t = 0$.
+
+**(a) Find the decay constant.**
+
+$$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{8.0 \times 24 \times 3600} = 1.00 \times 10^{-6}\,\mathrm{s}^{-1}$$
+
+**(b) Find the initial activity.**
+
+$$A_0 = \lambda N_0 = (1.00 \times 10^{-6})(4.0 \times 10^{15}) = 4.0 \times 10^9\,\mathrm{Bq}$$
+
+**(c) How long until the activity falls to $1.0 \times 10^8\,\mathrm{Bq}$?**
+
+$$A = A_0 e^{-\lambda t} \implies 1.0 \times 10^8 = 4.0 \times 10^9 \times e^{-(1.00 \times 10^{-6})t}$$
+
+$$e^{-(1.00 \times 10^{-6})t} = 0.025 \implies -(1.00 \times 10^{-6})t = \ln(0.025)$$
+
+$$t = \frac{-3.689}{1.00 \times 10^{-6}} = 3.69 \times 10^6\,\mathrm{s} \approx 42.7\,\mathrm{days}$$
+
+</details>
 
 ---
 
@@ -334,6 +402,29 @@ $$\Delta m = 236.0526 - 235.8373 = 0.2153\,\mathrm{u}$$
 
 $$E = 0.2153 \times 931.5 \approx 200.6\,\mathrm{MeV}$$
 
+<details>
+<summary>Worked Example: Binding Energy per Nucleon</summary>
+
+Calculate the binding energy per nucleon of lithium-7
+($^7_3\mathrm{Li}$).
+
+Given: $m_p = 1.00728\,\mathrm{u}$, $m_n = 1.00867\,\mathrm{u}$,
+$m_{\mathrm{Li-7}} = 7.01600\,\mathrm{u}$, $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
+
+Lithium-7 has $Z = 3$ protons and $N = 4$ neutrons.
+
+$$\Delta m = 3(1.00728) + 4(1.00867) - 7.01600 = 3.02184 + 4.03468 - 7.01600 = 0.04052\,\mathrm{u}$$
+
+$$E_b = 0.04052 \times 931.5 = 37.74\,\mathrm{MeV}$$
+
+$$\frac{E_b}{A} = \frac{37.74}{7} = 5.39\,\mathrm{MeV/nucleon}$$
+
+This is lower than the binding energy per nucleon of helium-4 ($7.07\,\mathrm{MeV/nucleon}$), which
+reflects the exceptional stability of the helium nucleus (an "alpha particle" with a filled shell
+structure).
+
+</details>
+
 ---
 
 ## Heisenberg Uncertainty Principle
@@ -357,6 +448,26 @@ $$\Delta E \cdot \Delta t \ge \frac{\hbar}{2}$$
 
 This allows virtual particle-antiparticle pairs to briefly exist, provided $\Delta E \cdot \Delta t$
 is sufficiently small.
+
+<details>
+<summary>Worked Example: Heisenberg Uncertainty Principle</summary>
+
+An electron is confined within a region of width $\Delta x = 1.0 \times 10^{-10}\,\mathrm{m}$ (roughly
+the diameter of a hydrogen atom).
+
+**Find the minimum uncertainty in its momentum.**
+
+$$\Delta p \ge \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2(1.0 \times 10^{-10})} = 5.28 \times 10^{-25}\,\mathrm{kg\,m/s}$$
+
+**Find the corresponding minimum uncertainty in velocity.**
+
+$$\Delta v = \frac{\Delta p}{m_e} = \frac{5.28 \times 10^{-25}}{9.11 \times 10^{-31}} = 5.80 \times 10^5\,\mathrm{m/s}$$
+
+This is a significant fraction of the speed of light, showing that confining an electron to atomic
+dimensions implies a very large uncertainty in its velocity -- consistent with the probabilistic
+nature of electron behaviour in atoms.
+
+</details>
 
 ---
 
@@ -517,3 +628,320 @@ $7.5$--$8.8\,\mathrm{MeV/nucleon}$. Do not assume that fission of elements light
 absorbs energy; the actual threshold depends on the specific reaction.
 
 :::
+
+---
+
+## Problem Set
+
+### Problem 1
+
+Light of wavelength $250\,\mathrm{nm}$ is incident on a sodium surface with work function
+$\Phi = 2.28\,\mathrm{eV}$. Find the maximum kinetic energy of the emitted photoelectrons and the
+stopping potential.
+
+<details>
+<summary>Solution</summary>
+
+Photon energy:
+
+$$E = \frac{hc}{\lambda} = \frac{1240}{250} = 4.96\,\mathrm{eV}$$
+
+Maximum kinetic energy:
+
+$$E_{k,\max} = E - \Phi = 4.96 - 2.28 = 2.68\,\mathrm{eV}$$
+
+Stopping potential:
+
+$$eV_s = E_{k,\max} \implies V_s = 2.68\,\mathrm{V}$$
+
+**If you get this wrong, revise:** The Photoelectric Effect section.
+
+</details>
+
+### Problem 2
+
+Find the de Broglie wavelength of a neutron moving at $2.0 \times 10^4\,\mathrm{m/s}$.
+($m_n = 1.675 \times 10^{-27}\,\mathrm{kg}$)
+
+<details>
+<summary>Solution</summary>
+
+$$\lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{(1.675 \times 10^{-27})(2.0 \times 10^4)} = \frac{6.626 \times 10^{-34}}{3.35 \times 10^{-23}}$$
+
+$$\lambda = 1.98 \times 10^{-11}\,\mathrm{m} = 0.0198\,\mathrm{nm}$$
+
+This is comparable to X-ray wavelengths, explaining why neutron diffraction is used to study crystal
+structures.
+
+**If you get this wrong, revise:** Wave-Particle Duality section.
+
+</details>
+
+### Problem 3
+
+A hydrogen atom absorbs a photon of wavelength $97.3\,\mathrm{nm}$. Determine the transition involved
+(initial and final energy levels).
+
+<details>
+<summary>Solution</summary>
+
+Photon energy:
+
+$$E = \frac{1240}{97.3} = 12.75\,\mathrm{eV}$$
+
+Energy levels: $E_n = -13.6/n^2$.
+
+The photon is absorbed, so the electron moves to a higher level:
+
+$$\Delta E = E_{n_f} - E_{n_i} = 12.75\,\mathrm{eV}$$
+
+If the electron starts from $n = 1$ ($E_1 = -13.6\,\mathrm{eV}$):
+
+$$E_{n_f} = -13.6 + 12.75 = -0.85\,\mathrm{eV}$$
+
+$$-0.85 = \frac{-13.6}{n_f^2} \implies n_f^2 = 16 \implies n_f = 4$$
+
+The transition is $n = 1 \to n = 4$ (absorption, Lyman series).
+
+**If you get this wrong, revise:** Atomic Energy Levels section.
+
+</details>
+
+### Problem 4
+
+Strontium-90 has a half-life of $28.8\,\mathrm{years}$. A sample initially contains $2.0 \times 10^{20}$
+atoms. How many atoms remain after $100\,\mathrm{years}$? What is the activity at that time?
+
+<details>
+<summary>Solution</summary>
+
+Decay constant:
+
+$$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{28.8 \times 365.25 \times 24 \times 3600} = 7.64 \times 10^{-10}\,\mathrm{s}^{-1}$$
+
+Number remaining:
+
+$$N = N_0 e^{-\lambda t}$$
+
+$$t = 100 \times 365.25 \times 24 \times 3600 = 3.156 \times 10^9\,\mathrm{s}$$
+
+$$\lambda t = (7.64 \times 10^{-10})(3.156 \times 10^9) = 2.411$$
+
+$$N = 2.0 \times 10^{20} \times e^{-2.411} = 2.0 \times 10^{20} \times 0.0897 = 1.79 \times 10^{19}$$
+
+Activity:
+
+$$A = \lambda N = (7.64 \times 10^{-10})(1.79 \times 10^{19}) = 1.37 \times 10^{10}\,\mathrm{Bq}$$
+
+**If you get this wrong, revise:** Radioactive Decay section.
+
+</details>
+
+### Problem 5
+
+Complete the following nuclear equation and identify the type of decay:
+
+$$^{234}_{90}\mathrm{Th} \to ^{234}_{91}\mathrm{Pa} + \,?$$
+
+<details>
+<summary>Solution</summary>
+
+Conserving mass number: $234 = 234 + A \implies A = 0$
+
+Conserving atomic number: $90 = 91 + Z \implies Z = -1$
+
+The emitted particle has $A = 0$ and $Z = -1$, which is an electron: $e^{-}$ (or
+$\beta^{-}$).
+
+This is **beta-minus decay**, in which a neutron converts to a proton, emitting an electron and an
+antineutrino:
+
+$$^{234}_{90}\mathrm{Th} \to ^{234}_{91}\mathrm{Pa} + e^{-} + \bar{\nu}_e$$
+
+**If you get this wrong, revise:** Types of Radioactive Decay table.
+
+</details>
+
+### Problem 6
+
+Calculate the binding energy of carbon-12 ($^{12}_{6}\mathrm{C}$).
+Given: $m_p = 1.00728\,\mathrm{u}$, $m_n = 1.00867\,\mathrm{u}$,
+$m_{\mathrm{C-12}} = 12.00000\,\mathrm{u}$ (by definition of the atomic mass unit),
+$1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
+
+<details>
+<summary>Solution</summary>
+
+Carbon-12 has $Z = 6$ protons and $N = 6$ neutrons.
+
+$$\Delta m = 6(1.00728) + 6(1.00867) - 12.00000 = 6.04368 + 6.05202 - 12.00000 = 0.09570\,\mathrm{u}$$
+
+$$E_b = 0.09570 \times 931.5 = 89.1\,\mathrm{MeV}$$
+
+$$\frac{E_b}{A} = \frac{89.1}{12} = 7.43\,\mathrm{MeV/nucleon}$$
+
+**If you get this wrong, revise:** Mass-Energy Equivalence section.
+
+</details>
+
+### Problem 7
+
+Find the minimum energy a photon must have to produce an electron-positron pair. If the photon has
+exactly this energy, can pair production occur? Explain.
+
+<details>
+<summary>Solution</summary>
+
+Minimum energy:
+
+$$E_{\min} = 2m_e c^2 = 2(0.511\,\mathrm{MeV}) = 1.022\,\mathrm{MeV}$$
+
+If the photon has exactly $1.022\,\mathrm{MeV}$, pair production **cannot** occur in free space
+because momentum cannot be conserved. The photon has momentum $p = E/c$, but the electron-positron
+pair at rest has zero momentum. A nearby nucleus must be present to absorb the recoil momentum. The
+photon energy must be **greater than** $1.022\,\mathrm{MeV}$ for pair production to actually occur.
+
+**If you get this wrong, revise:** Pair Production section.
+
+</details>
+
+### Problem 8
+
+An electron is confined in a one-dimensional box of length $L = 0.50\,\mathrm{nm}$. Find the energy
+of the ground state and the first excited state. What is the wavelength of a photon emitted when the
+electron transitions from $n = 2$ to $n = 1$?
+
+<details>
+<summary>Solution</summary>
+
+Ground state ($n = 1$):
+
+$$E_1 = \frac{h^2}{8mL^2} = \frac{(6.626 \times 10^{-34})^2}{8(9.109 \times 10^{-31})(0.50 \times 10^{-9})^2}$$
+
+$$E_1 = \frac{4.390 \times 10^{-67}}{1.822 \times 10^{-49}} = 2.41 \times 10^{-18}\,\mathrm{J} = 15.0\,\mathrm{eV}$$
+
+First excited state ($n = 2$):
+
+$$E_2 = 4E_1 = 60.0\,\mathrm{eV}$$
+
+Photon energy for $n = 2 \to n = 1$:
+
+$$\Delta E = 60.0 - 15.0 = 45.0\,\mathrm{eV}$$
+
+Wavelength:
+
+$$\lambda = \frac{1240}{45.0} = 27.6\,\mathrm{nm}$$
+
+This is in the ultraviolet region.
+
+**If you get this wrong, revise:** Particle in a Box section.
+
+</details>
+
+### Problem 9
+
+A sample of wood from an archaeological site has $^{14}\mathrm{C}$ activity that is $35\%$ of the
+activity of a living sample. Estimate the age of the wood. ($t_{1/2}$ of $^{14}\mathrm{C} = 5730\,\mathrm{years}$)
+
+<details>
+<summary>Solution</summary>
+
+$$N = N_0 e^{-\lambda t} \implies 0.35 = e^{-\lambda t}$$
+
+$$-\lambda t = \ln(0.35) = -1.050$$
+
+$$t = \frac{1.050}{\lambda} = \frac{1.050 \times t_{1/2}}{\ln 2} = \frac{1.050 \times 5730}{0.693} = 8680\,\mathrm{years}$$
+
+The wood is approximately $8700\,\mathrm{years}$ old.
+
+**If you get this wrong, revise:** Carbon Dating section.
+
+</details>
+
+### Problem 10
+
+In a Compton scattering experiment, a photon is scattered at $180^\circ$ (backscattered) by a free
+electron. If the incident photon has wavelength $0.0100\,\mathrm{nm}$, find the wavelength of the
+scattered photon and the kinetic energy transferred to the electron.
+
+<details>
+<summary>Solution</summary>
+
+Wavelength shift:
+
+$$\Delta\lambda = \frac{h}{m_e c}(1 - \cos 180^\circ) = (2.43 \times 10^{-12})(1 - (-1)) = 4.86 \times 10^{-12}\,\mathrm{m}$$
+
+$$\lambda' = 0.0100 \times 10^{-9} + 4.86 \times 10^{-12} = 1.486 \times 10^{-11}\,\mathrm{m} = 0.01486\,\mathrm{nm}$$
+
+Energy of incident photon:
+
+$$E_i = \frac{1240}{0.0100} = 124000\,\mathrm{eV} = 124\,\mathrm{keV}$$
+
+Energy of scattered photon:
+
+$$E_f = \frac{1240}{0.01486} = 83446\,\mathrm{eV} = 83.4\,\mathrm{keV}$$
+
+Kinetic energy of electron:
+
+$$E_k = E_i - E_f = 124 - 83.4 = 40.6\,\mathrm{keV}$$
+
+**If you get this wrong, revise:** Compton Scattering section.
+
+</details>
+
+### Problem 11
+
+A proton is confined within a nucleus of radius approximately $5.0 \times 10^{-15}\,\mathrm{m}$.
+Estimate the minimum kinetic energy of the proton using the Heisenberg uncertainty principle.
+($m_p = 1.67 \times 10^{-27}\,\mathrm{kg}$)
+
+<details>
+<summary>Solution</summary>
+
+$$\Delta x \approx 5.0 \times 10^{-15}\,\mathrm{m}$$
+
+$$\Delta p \ge \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2(5.0 \times 10^{-15})} = 1.055 \times 10^{-20}\,\mathrm{kg\,m/s}$$
+
+Using $E_k \approx \frac{(\Delta p)^2}{2m}$:
+
+$$E_k \approx \frac{(1.055 \times 10^{-20})^2}{2(1.67 \times 10^{-27})} = \frac{1.113 \times 10^{-40}}{3.34 \times 10^{-27}} = 3.33 \times 10^{-14}\,\mathrm{J}$$
+
+$$E_k \approx \frac{3.33 \times 10^{-14}}{1.602 \times 10^{-19}} \approx 208\,\mathrm{keV}$$
+
+This shows that confinement energy of nucleons is on the order of MeV, consistent with nuclear
+binding energies.
+
+**If you get this wrong, revise:** Heisenberg Uncertainty Principle section.
+
+</details>
+
+### Problem 12
+
+A nuclear power plant produces $3.0 \times 10^9\,\mathrm{W}$ of thermal power. Each fission of
+$^{235}\mathrm{U}$ releases approximately $200\,\mathrm{MeV}$. Calculate the number of fissions per
+second and the mass of $^{235}\mathrm{U}$ consumed per day.
+
+<details>
+<summary>Solution</summary>
+
+Energy per fission:
+
+$$E_{\mathrm{fission}} = 200\,\mathrm{MeV} = 200 \times 1.602 \times 10^{-13} = 3.20 \times 10^{-11}\,\mathrm{J}$$
+
+Fissions per second:
+
+$$\mathrm{Rate} = \frac{P}{E_{\mathrm{fission}}} = \frac{3.0 \times 10^9}{3.20 \times 10^{-11}} = 9.38 \times 10^{19}\,\mathrm{fissions/s}$$
+
+Fissions per day:
+
+$$N = 9.38 \times 10^{19} \times 86400 = 8.10 \times 10^{24}$$
+
+Mass of $^{235}\mathrm{U}$ (molar mass $\approx 235\,\mathrm{g/mol}$):
+
+$$m = \frac{N \times 235}{N_A} = \frac{8.10 \times 10^{24} \times 235}{6.022 \times 10^{23}} = \frac{1.904 \times 10^{27}}{6.022 \times 10^{23}} \approx 3160\,\mathrm{g} \approx 3.2\,\mathrm{kg}$$
+
+Approximately $3.2\,\mathrm{kg}$ of $^{235}\mathrm{U}$ is consumed per day.
+
+**If you get this wrong, revise:** Nuclear Fission and Mass-Energy Equivalence sections.
+
+</details>

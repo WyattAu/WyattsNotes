@@ -253,6 +253,31 @@ Xylem tissue consists of several cell types:
 **Definition:** Transpiration is the loss of water vapour from the aerial parts of a plant,
 primarily through the stomata of leaves.
 
+### Worked Example: Transpiration Rate Calculation
+
+A potometer was used to measure water uptake by a leafy shoot. The bubble moved 12 mm along the capillary tube in 5 minutes. The capillary tube has a diameter of 0.8 mm.
+
+(a) Calculate the volume of water taken up in 5 minutes.
+
+(b) Calculate the rate of water uptake in mm cubed/hour.
+
+(c) State two assumptions when using a potometer to estimate transpiration rate.
+
+<details>
+<summary>Solution</summary>
+
+(a) Radius of capillary tube = $0.8 / 2 = 0.4$ mm = $0.4 \times 10^{-3}$ m
+
+Cross-sectional area = $\pi r^2 = \pi \times (0.4)^2 = 0.503 \mathrm{ mm}^2$
+
+Volume = area $\times$ distance = $0.503 \times 12 = 6.03 \mathrm{ mm}^3$
+
+(b) Rate = $6.03 / 5 \times 60 = 72.4 \mathrm{ mm}^3\mathrm{/hour}$
+
+(c) 1. All water taken up is lost through transpiration (some is used in photosynthesis and growth). 2. The cutting of the shoot has not damaged xylem vessels. 3. Environmental conditions in the lab are similar to natural conditions.
+
+</details>
+
 Transpiration is NOT simply "water loss." It is a consequence of gas exchange -- stomata must be
 open for $\mathrm{CO}_2$ uptake during photosynthesis, and water vapour inevitably diffuses out
 through the same open stomata.
@@ -738,123 +763,202 @@ towards light but roots bend away from it when auxin redistributes.
     of sap through the sieve tubes is driven by a pressure gradient and is a passive, bulk flow
     process.
 
+### Worked Example: Translocation and Ringing
+
+A scientist applies a ring of bark (including the phloem) around the trunk of a tree. After several weeks, a swelling is observed above the ring and the leaves begin to wilt. Explain these observations.
+
+<details>
+<summary>Solution</summary>
+
+The bark ring removes the phloem but leaves the xylem intact. The xylem continues to transport water and minerals from the roots to the leaves (so initially the leaves do not wilt from water shortage).
+
+However, the phloem is the pathway for translocation of organic solutes (sucrose) from the leaves (source) to the roots and lower parts (sink). With the phloem severed, sucrose produced by photosynthesis cannot be transported downwards. The sucrose accumulates in the phloem above the ring, causing the swelling (accumulated sugars create osmotic pressure, drawing in water).
+
+Over time, the roots are deprived of sucrose (their energy source). Without adequate organic nutrients, root cells cannot carry out active transport effectively. Water and mineral uptake decreases, leading to reduced water transport in the xylem and wilting of the leaves.
+
+</details>
+
+### Worked Example: Phototropism Experiment
+
+Design an experiment to demonstrate that auxin is responsible for phototropism in shoot tips. Include a control and expected results.
+
+<details>
+<summary>Solution</summary>
+
+Use several coleoptiles (oat seedling shoot tips) of similar age and size:
+
+- **Group A (control):** Intact coleoptile, unilateral light. Expected: bends towards light.
+- **Group B:** Tip removed, unilateral light. Expected: no bending (no auxin source).
+- **Group C:** Tip removed, replaced with plain agar block, unilateral light. Expected: no bending (no auxin in agar).
+- **Group D:** Tip removed, agar block with auxin (IAA) placed asymmetrically on one side, uniform light. Expected: bends away from the auxin side.
+- **Group E:** Intact coleoptile with opaque cap over tip, unilateral light. Expected: no bending (light blocked from tip).
+
+Conclusion: Bending requires both the shoot tip (auxin source) and light reaching the tip (causing auxin redistribution). When auxin is applied asymmetrically, it causes bending even without a light gradient, confirming auxin is responsible.
+
+</details>
+
 ---
 
-## Practice Problems
+## Problem Set
+
+**Problem 1:** Describe how water moves from the soil into the xylem of a plant root. Explain the role of the Casparian strip.
+
+If you get this wrong, revise: Transport in Plants -- The Transpiration Stream
 
 <details>
-<summary>Question 1: Transpiration and Water Transport</summary>
+<summary>Solution</summary>
 
-Describe how water moves from the soil into the xylem of a plant root. Explain the role of the
-Casparian strip.
+Water enters root hair cells by osmosis. The root hair cell has a lower water potential than the soil solution (because the cytoplasm contains solutes). Water moves down the water potential gradient from the soil into the root hair cell.
 
-Water enters root hair cells by osmosis. The root hair cell has a lower water potential than the
-soil solution (because the cytoplasm contains solutes such as mineral ions and sugars). Water moves
-down the water potential gradient from the soil into the root hair cell.
+Water then moves across the root cortex via three pathways: apoplastic (through cell walls), symplastic (through cytoplasm via plasmodesmata), and vacuolar (through vacuoles).
 
-Water then moves across the root cortex towards the xylem via three pathways: the apoplastic pathway
-(through cell walls), the symplastic pathway (through the cytoplasm via plasmodesmata), and the
-vacuolar pathway (through vacuoles).
-
-When water reaches the endodermis, the Casparian strip (a band of suberin in the radial and
-transverse cell walls of endodermal cells) blocks the apoplastic pathway. Water and dissolved
-minerals are forced to cross the cell membrane of the endodermal cells and enter the symplastic
-pathway. This is significant because it allows the plant to selectively control which substances
-enter the xylem -- only substances that can cross the selectively permeable membrane are admitted.
-
-Once inside the endodermal cells, water passes into the pericycle and then into the xylem. Mineral
-ions are actively transported into the xylem, lowering its water potential, which draws more water
-in by osmosis. This creates root pressure, which contributes to the upward movement of water in the
-xylem.
+When water reaches the endodermis, the Casparian strip (a band of suberin in the radial cell walls) blocks the apoplastic pathway. Water and dissolved minerals are forced to cross the cell membrane of endodermal cells and enter the symplastic pathway. This allows the plant to selectively control which substances enter the xylem -- only substances that can cross the selectively permeable membrane are admitted.
 
 </details>
 
+**Problem 2:** A student investigates the effect of light intensity on the rate of photosynthesis at two temperatures: 15 degrees C and 25 degrees C. At low light intensity, both curves have the same slope, but the 25 degrees C curve plateaus at a higher rate. Explain these observations.
+
+If you get this wrong, revise: Plant Nutrition -- Limiting Factors of Photosynthesis
+
 <details>
-<summary>Question 2: Photosynthesis Limiting Factors</summary>
+<summary>Solution</summary>
 
-A student investigates the effect of light intensity on the rate of photosynthesis at two different
-temperatures: 15 degrees C and 25 degrees C. The results show that at low light intensity, both
-curves have the same slope, but the 25 degrees C curve plateaus at a higher rate than the 15 degrees
-C curve.
+At low light intensity, light is the limiting factor for both temperatures. The rate of the light-dependent reactions is limited by available light energy, so the rate is the same regardless of temperature. Temperature does not matter because the light reactions are not temperature-limited at this point.
 
-Explain these observations.
-
-At low light intensity, light is the limiting factor for both temperatures. The rate of the
-light-dependent reactions is limited by the amount of light energy available, so the rate of
-photosynthesis is the same at both temperatures. The temperature does not matter because the light
-reactions are not temperature-limited at this point.
-
-As light intensity increases, the rate of photosynthesis increases until another factor becomes
-limiting. At 15 degrees C, the enzyme-catalysed reactions of the Calvin cycle (light-independent
-reactions) are limited by the lower temperature. The enzymes (including RuBisCO) have lower kinetic
-energy and fewer enzyme-substrate collisions occur, so the rate plateaus at a lower level.
-
-At 25 degrees C, the Calvin cycle enzymes are closer to their optimum temperature, so they can
-operate at a faster rate. The light-independent reactions can keep up with the higher ATP and NADPH
-supply from the light-dependent reactions, allowing the overall rate to plateau at a higher level.
-Temperature, not light, becomes the limiting factor at high light intensities.
+As light intensity increases, the rate plateaus as another factor becomes limiting. At 15 degrees C, Calvin cycle enzymes have lower kinetic energy and fewer enzyme-substrate collisions occur, so the rate plateaus at a lower level. At 25 degrees C, enzymes are closer to their optimum, so they can keep up with the higher ATP and NADPH supply from the light-dependent reactions, allowing a higher plateau. Temperature, not light, becomes the limiting factor at high light intensities.
 
 </details>
 
+**Problem 3:** Explain the mechanism of double fertilisation in flowering plants. Why is this process unique to angiosperms?
+
+If you get this wrong, revise: Plant Reproduction -- Fertilisation
+
 <details>
-<summary>Question 3: Translocation</summary>
+<summary>Solution</summary>
 
-A scientist applies a ring of bark (including the phloem) around the trunk of a tree, removing a 2
-cm wide strip of bark down to the xylem. After several weeks, a swelling is observed above the ring,
-and the leaves begin to wilt.
+After a pollen grain lands on a compatible stigma, it germinates and produces a pollen tube that grows down the style to the ovule. The pollen tube carries two male gametes.
 
-Explain these observations.
+**First fertilisation:** One male gamete fuses with the egg cell to form the diploid zygote (2n), which develops into the embryo.
 
-The bark ring removes the phloem but leaves the xylem intact. The xylem continues to transport water
-and minerals from the roots to the leaves (so initially, the leaves do not wilt from water
-shortage).
+**Second fertilisation:** The second male gamete fuses with the two polar nuclei (each haploid) to form the triploid endosperm (3n), which is a nutritive tissue that provides food for the developing embryo.
 
-However, the phloem is the pathway for translocation of organic solutes (sucrose) from the leaves
-(source) to the roots and lower parts of the plant (sink). With the phloem severed, sucrose produced
-by photosynthesis in the leaves cannot be transported downwards. The sucrose accumulates in the
-phloem above the ring, causing the swelling (the accumulated sugars create osmotic pressure, drawing
-in water and causing the tissue to swell).
-
-Over time, the roots are deprived of sucrose (their energy source). Without an adequate supply of
-organic nutrients, root cells cannot carry out active transport effectively. Water and mineral
-uptake by the roots decreases, leading to reduced water transport in the xylem and wilting of the
-leaves. Eventually, if the ring is not repaired, the roots die and the tree dies.
+This is unique to flowering plants (angiosperms) because no other plant group has double fertilisation. In gymnosperms (e.g., conifers), only one fertilisation event occurs, producing the zygote. The endosperm in gymnosperms is haploid (1n), not triploid.
 
 </details>
 
+**Problem 4:** Explain how auxin controls phototropism in shoots. Why does the same hormone have the opposite effect in roots?
+
+If you get this wrong, revise: Growth and Development -- Tropisms (Phototropism; Geotropism)
+
 <details>
-<summary>Question 4: Phototropism Mechanism</summary>
+<summary>Solution</summary>
 
-Design an experiment to demonstrate that auxin is responsible for phototropism in shoot tips.
+In shoots, auxin (IAA) is produced in the shoot tip and transported downwards. Unilateral light causes auxin to accumulate on the shaded side (lateral redistribution). The higher auxin concentration on the shaded side stimulates more cell elongation, causing the shoot to bend towards the light.
 
-Hypothesis: Auxin produced in the shoot tip is redistributed unevenly in response to unilateral
-light, causing differential growth and bending towards light.
+In roots, auxin also redistributes to the lower side in response to gravity (geotropism). However, high auxin concentration **inhibits** cell elongation in roots (unlike shoots where it promotes elongation). The upper side (lower auxin) elongates more than the lower side (higher auxin), causing the root to bend downwards.
 
-Method:
+The opposite effect of auxin on shoots vs roots is due to different tissue sensitivities and different threshold concentrations for the auxin response in each cell type.
 
-1. Use several coleoptiles (shoot tips) of oat seedlings of similar age and size.
-2. Divide into the following experimental groups:
-   - Group A: Control -- intact coleoptile, illuminated from one side.
-   - Group B: Coleoptile with the tip removed, illuminated from one side.
-   - Group C: Coleoptile with the tip removed and replaced with an agar block (containing no auxin),
-     illuminated from one side.
-   - Group D: Coleoptile with the tip removed and replaced with an agar block containing auxin
-     (IAA), placed asymmetrically on one side, illuminated from all sides (uniform light).
-   - Group E: Coleoptile with an opaque cap placed over the tip, illuminated from one side.
-3. Observe and record the direction and degree of bending after 24-48 hours.
+</details>
 
-Expected results:
+**Problem 5:** Describe the mass flow (pressure flow) hypothesis of phloem translocation. What evidence supports this model?
 
-- Group A: Bends towards the light (positive phototropism).
-- Group B: Does not bend (no auxin source).
-- Group C: Does not bend (no auxin in the agar block).
-- Group D: Bends away from the side with the auxin block (demonstrates that auxin alone, without a
-  light gradient, can cause differential elongation).
-- Group E: Does not bend (light cannot reach the tip to cause auxin redistribution).
+If you get this wrong, revise: Transport in Plants -- Translocation
 
-Conclusion: The bending response requires both the shoot tip (source of auxin) and light reaching
-the tip (causing auxin redistribution). When auxin is applied asymmetrically, it causes bending even
-without a light gradient, confirming that auxin is the substance responsible for the differential
-growth.
+<details>
+<summary>Solution</summary>
+
+1. **Loading at the source:** Sucrose is actively loaded into sieve tube elements, lowering their water potential.
+2. **Water enters by osmosis** from the xylem, increasing turgor pressure at the source.
+3. **Mass flow:** The pressure gradient between source (high pressure) and sink (low pressure) drives bulk flow of sap through sieve tubes.
+4. **Unloading at the sink:** Sucrose is removed (by diffusion or active transport), raising water potential.
+5. **Water leaves by osmosis** from sieve tubes into surrounding cells, reducing turgor pressure at the sink.
+
+**Evidence:** Sieve tube sap has high sugar concentration (up to 30% sucrose); aphids feeding on phloem exude sugary sap; ringing experiments cause swelling above the ring; there is a measurable pressure gradient between source and sink.
+
+</details>
+
+**Problem 6:** Explain the roles of gibberellins in seed germination, using barley as an example.
+
+If you get this wrong, revise: Growth and Development -- Gibberellins
+
+<details>
+<summary>Solution</summary>
+
+In barley seeds, the embryo produces gibberellins upon imbibition (water absorption). The gibberellins diffuse to the aleurone layer (a protein-rich tissue surrounding the endosperm). Gibberellins stimulate the aleurone cells to produce **amylase** enzymes, which are secreted into the endosperm. Amylase breaks down starch (a stored polysaccharide) into maltose (a disaccharide) and then glucose (a monosaccharide). These sugars are absorbed by the embryo and used as an energy source for growth until the seedling can carry out photosynthesis.
+
+This mechanism explains why gibberellins can reverse genetic dwarfism: dwarf plants have a mutation that reduces gibberellin production, and applying external gibberellin restores normal stem elongation.
+
+</details>
+
+**Problem 7:** Compare the structure and function of xylem and phloem.
+
+If you get this wrong, revise: Transport in Plants -- Xylem Structure and Function; Phloem Structure and Function; Comparison of Xylem and Phloem
+
+<details>
+<summary>Solution</summary>
+
+| Feature | Xylem | Phloem |
+|---|---|---|
+| Direction | Upwards (one-way) | Source to sink (bidirectional) |
+| Substance | Water and minerals | Organic solutes (mainly sucrose) |
+| Cell status | Dead at maturity | Living at maturity |
+| Cell walls | Thick, lignified | Thin, not lignified |
+| Cross-walls | No cross-walls (vessels) or pits (tracheids) | Sieve plates with pores |
+| Mechanism | Transpiration pull (passive) + root pressure | Mass flow (active loading, passive transport) |
+| Supporting cells | Fibres, parenchyma | Companion cells (metabolic support) |
+
+</details>
+
+**Problem 8:** Describe how stomata open and close. Name two environmental factors that affect stomatal aperture.
+
+If you get this wrong, revise: Gas Exchange in Plants -- Mechanism of Stomatal Opening and Closing; Factors Affecting Stomatal Opening
+
+<details>
+<summary>Solution</summary>
+
+**Opening:** Light stimulates guard cells to actively transport K$^+$ ions into the cell. This lowers the water potential inside the guard cell. Water enters by osmosis from neighbouring epidermal cells. The guard cell becomes turgid and swells. The unevenly thickened cell wall (radially arranged cellulose microfibrils) causes the guard cells to bow apart, opening the stoma.
+
+**Closing:** Abscisic acid (ABA) is produced in response to water stress. K$^+$ ions leave the guard cell; water follows by osmosis. The guard cell becomes flaccid and collapses together, closing the stoma.
+
+Environmental factors: (1) Light -- opens stomata; (2) CO$_2$ concentration -- high CO$_2$ closes them; (3) Temperature -- moderate warmth opens, extreme heat may close (water stress); (4) Water availability -- drought causes closure via ABA.
+
+</details>
+
+**Problem 9:** Explain why sexual reproduction is advantageous for flowering plants compared to asexual reproduction (vegetative propagation).
+
+If you get this wrong, revise: Plant Reproduction -- Sexual Reproduction; Asexual Reproduction in Plants
+
+<details>
+<summary>Solution</summary>
+
+Sexual reproduction produces genetically diverse offspring through meiosis (crossing over, independent assortment) and random fertilisation. Genetic diversity provides several advantages:
+
+1. **Disease resistance:** Not all offspring are susceptible to the same pathogens, reducing the risk of the entire population being wiped out by a single disease.
+2. **Adaptability:** Genetic variation allows some individuals to survive environmental changes (e.g., drought, temperature change), enabling the population to adapt over generations.
+3. **Evolutionary potential:** New combinations of alleles can produce traits that are advantageous in changing environments, driving natural selection.
+
+In contrast, vegetative propagation produces genetically identical clones. While this is fast and requires only one parent, the entire population is vulnerable to the same disease or environmental change.
+
+</details>
+
+**Problem 10:** Explain how the Calvin cycle depends on the light-dependent reactions. What would happen to the Calvin cycle if light were suddenly switched off?
+
+If you get this wrong, revise: Plant Nutrition -- Light-Dependent Reactions; Light-Independent Reactions (Calvin Cycle)
+
+<details>
+<summary>Solution</summary>
+
+The Calvin cycle depends on the light-dependent reactions for two products: **ATP** and **NADPH**. ATP provides the energy for carbon fixation (RuBisCO combining CO$_2$ with RuBP) and for regenerating RuBP. NADPH provides the reducing power (electrons and H$^+$) to reduce GP to TP (glycerate-3-phosphate to triose phosphate).
+
+If light were switched off:
+
+1. No ATP would be produced (photophosphorylation stops)
+2. No NADPH would be produced (NADP$^+$ cannot be reduced)
+3. GP could not be reduced to TP -- GP would accumulate
+4. RuBP could not be regenerated (requires ATP)
+5. Carbon fixation would stop (no RuBP available)
+6. No glucose or other organic compounds would be produced
+7. Existing TP and RuBP would be used up quickly, and the Calvin cycle would cease.
 
 </details>

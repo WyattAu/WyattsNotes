@@ -153,6 +153,37 @@ $$D = 1 - \frac{2900}{100(99)} = 1 - \frac{2900}{9900} = 1 - 0.2929 = 0.7071$$
 
 Simpson's Diversity Index = 0.707 (relatively high diversity).
 
+### Worked Example: Interpreting Simpson's Index
+
+Two woodland areas were surveyed:
+
+Woodland A: 50 oak, 40 birch, 5 ash, 5 beech (total N = 100)
+
+Woodland B: 25 oak, 25 birch, 25 ash, 25 beech (total N = 100)
+
+(a) Calculate Simpson's Diversity Index for each woodland.
+
+(b) Both woodlands have the same species richness (4 species). Which has higher biodiversity and why?
+
+<details>
+<summary>Solution</summary>
+
+**Woodland A:** $N = 100$
+
+$\sum n(n-1) = 50(49) + 40(39) + 5(4) + 5(4) = 2450 + 1560 + 20 + 20 = 4050$
+
+$D = 1 - 4050 / (100 \times 99) = 1 - 0.4091 = 0.5909$
+
+**Woodland B:** $N = 100$
+
+$\sum n(n-1) = 25(24) \times 4 = 600 \times 4 = 2400$
+
+$D = 1 - 2400 / (100 \times 99) = 1 - 0.2424 = 0.7576$
+
+Woodland B has higher biodiversity (D = 0.758 vs D = 0.591) because species evenness is higher -- all four species are equally abundant. Woodland A is dominated by oak and birch (low evenness), which lowers its diversity index despite having the same richness.
+
+</details>
+
 ### Why Measure Biodiversity?
 
 - **Monitoring ecosystem health:** High diversity generally indicates a healthy, stable ecosystem.
@@ -633,6 +664,31 @@ Atmospheric nitrogen must first be fixed by bacteria or lightning.
 The water cycle describes the continuous movement of water between the atmosphere, land, and oceans,
 driven by solar energy and gravity.
 
+### Worked Example: Nitrogen Cycle Process Identification
+
+For each description, identify the nitrogen cycle process and the organism(s) involved:
+
+(a) Atmospheric N$_2$ is converted to NH$_3$ in root nodules of legumes.
+
+(b) NH$_3$ is converted to NO$_2^-$ then to NO$_3^-$ in the soil.
+
+(c) NO$_3^-$ is converted back to N$_2$ gas in waterlogged soil.
+
+(d) Dead organisms are broken down, releasing NH$_3$.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Nitrogen fixation** by _Rhizobium_ (nitrogen-fixing bacteria in root nodules). The enzyme nitrogenase catalyses this energy-intensive reaction.
+
+(b) **Nitrification** by _Nitrosomonas_ (ammonia to nitrite) followed by _Nitrobacter_ (nitrite to nitrate). These are chemoautotrophic bacteria that obtain energy from the oxidation reactions.
+
+(c) **Denitrification** by _Pseudomonas_ (denitrifying bacteria). This occurs under anaerobic conditions (waterlogged soil) and returns nitrogen to the atmosphere, reducing soil fertility.
+
+(d) **Ammonification** (decomposition) by decomposer bacteria and fungi. They break down proteins and nucleic acids in dead organisms and urea in waste, releasing ammonia into the soil.
+
+</details>
+
 **Key processes:**
 
 | Process          | Description                                                                                                                                |
@@ -709,150 +765,163 @@ driven by solar energy and gravity.
 
 ---
 
-## Practice Problems
+## Problem Set
+
+**Problem 1:** Calculate Simpson's Diversity Index for a pond community with the following organisms: 60 water boatmen, 30 pond skaters, 5 dragonfly nymphs, 3 mayfly nymphs, and 2 water beetles.
+
+If you get this wrong, revise: Biodiversity Measurement -- Simpson's Diversity Index
 
 <details>
-<summary>Question 1: Simpson's Diversity Index</summary>
+<summary>Solution</summary>
 
-Two woodland areas were surveyed. The results are shown below:
+$N = 60 + 30 + 5 + 3 + 2 = 100$
 
-Woodland A: 50 oak trees, 40 birch trees, 5 ash trees, 5 beech trees
+$\sum n(n-1) = 60(59) + 30(29) + 5(4) + 3(2) + 2(1) = 3540 + 870 + 20 + 6 + 2 = 4438$
 
-Woodland B: 20 oak trees, 20 birch trees, 20 ash trees, 20 beech trees
+$D = 1 - \frac{4438}{100(99)} = 1 - \frac{4438}{9900} = 1 - 0.4483 = 0.5517$
 
-(a) Calculate Simpson's Diversity Index for each woodland.
-
-(b) Which woodland has higher biodiversity? Explain your answer.
-
-**Woodland A:**
-
-N = 50 + 40 + 5 + 5 = 100
-
-Sum of n(n-1) = 50(49) + 40(39) + 5(4) + 5(4) = 2450 + 1560 + 20 + 20 = 4050
-
-D = 1 - 4050 / (100 x 99) = 1 - 4050/9900 = 1 - 0.4091 = 0.5909
-
-**Woodland B:**
-
-N = 20 + 20 + 20 + 20 = 80
-
-Sum of n(n-1) = 20(19) + 20(19) + 20(19) + 20(19) = 380 + 380 + 380 + 380 = 1520
-
-D = 1 - 1520 / (80 x 79) = 1 - 1520/6320 = 1 - 0.2405 = 0.7595
-
-(b) Woodland B has higher biodiversity (D = 0.760 vs D = 0.591). Both woodlands have the same
-species richness (4 species), but Woodland B has higher species evenness (all species equally
-abundant) while Woodland A is dominated by oak and birch trees. Simpson's Diversity Index accounts
-for both richness and evenness, so Woodland B scores higher.
+This indicates moderate diversity. The pond is dominated by water boatmen (60% of individuals), which lowers evenness and therefore the diversity index. A more even distribution would increase D.
 
 </details>
 
+**Problem 2:** Describe the role of bacteria in the nitrogen cycle. Explain why plants cannot use atmospheric nitrogen directly.
+
+If you get this wrong, revise: Biogeochemical Cycles -- The Nitrogen Cycle
+
 <details>
-<summary>Question 2: Nitrogen Cycle</summary>
+<summary>Solution</summary>
 
-Describe the role of bacteria in the nitrogen cycle. Explain why plants cannot use atmospheric
-nitrogen directly.
+Bacteria play essential roles:
 
-Bacteria play essential roles at multiple stages of the nitrogen cycle:
+- **Nitrogen-fixing bacteria** (_Rhizobium_ in root nodules; _Azotobacter_ free-living; cyanobacteria): convert N$_2$ to NH$_3$ (nitrogen fixation).
+- **Nitrifying bacteria** (_Nitrosomonas_: NH$_3$ to NO$_2^-$; _Nitrobacter_: NO$_2^-$ to NO$_3^-$): nitrification.
+- **Denitrifying bacteria** (_Pseudomonas_): convert NO$_3^-$ back to N$_2$ (denitrification, anaerobic).
+- **Decomposer bacteria:** break down dead organisms and waste, releasing NH$_3$ (ammonification).
 
-**Nitrogen-fixing bacteria** (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_
-free-living in soil; cyanobacteria in water) convert atmospheric nitrogen gas ($\mathrm{N}_2$) into
-ammonia ($\mathrm{NH}_3$) through the enzyme nitrogenase. This is nitrogen fixation.
-
-**Nitrifying bacteria** convert ammonia to nitrate in two stages: _Nitrosomonas_ converts ammonia to
-nitrite ($\mathrm{NO}_2^-$), and _Nitrobacter_ converts nitrite to nitrate ($\mathrm{NO}_3^-$). This
-is nitrification. Nitrate is the form of nitrogen most readily absorbed by plants.
-
-**Denitrifying bacteria** (e.g., _Pseudomonas_) convert nitrate in the soil back into nitrogen gas
-($\mathrm{N}_2$), which returns to the atmosphere. This is denitrification. It occurs under
-anaerobic conditions (waterlogged soil).
-
-**Decomposer bacteria** break down dead organisms and urea, releasing ammonia into the soil through
-ammonification.
-
-Plants cannot use atmospheric nitrogen gas ($\mathrm{N}_2$) directly because the triple bond between
-the two nitrogen atoms in $\mathrm{N}_2$ is extremely strong (approximately 945 kJ/mol) and requires
-a large input of energy to break. Plants lack the enzyme nitrogenase needed to break this bond. Only
-certain bacteria (and archaea) possess this enzyme. Plants can only absorb nitrogen in soluble ionic
-forms: nitrate ($\mathrm{NO}_3^-$) and ammonium ($\mathrm{NH}_4^+$).
+Plants cannot use atmospheric N$_2$ because the triple bond between nitrogen atoms (~945 kJ/mol) is extremely strong and requires significant energy to break. Plants lack the enzyme nitrogenase. They can only absorb nitrogen as NO$_3^-$ or NH$_4^+$ ions through their roots.
 
 </details>
 
+**Problem 3:** A species of tree frog is endangered due to deforestation. Discuss the relative merits of in situ and ex situ conservation strategies for this species.
+
+If you get this wrong, revise: Conservation Strategies -- In Situ Conservation; Ex Situ Conservation
+
 <details>
-<summary>Question 3: Conservation Strategies</summary>
+<summary>Solution</summary>
 
-A species of tree frog is endangered due to deforestation in a tropical rainforest. Discuss the
-relative merits of in situ and ex situ conservation strategies for this species.
+**In situ** (establishing a protected area): Preserves the entire ecosystem, including the frog's food sources, breeding sites, and microhabitat. Allows natural evolutionary processes. Wildlife corridors connect fragmented habitats, enabling gene flow. Most sustainable long-term approach. Limitation: habitat may already be too degraded; enforcement challenges.
 
-**In situ conservation strategies:**
+**Ex situ** (captive breeding in zoos): Provides immediate protection from habitat destruction. Allows controlled breeding for genetic diversity. Tissue samples can be cryopreserved. Limitation: maintaining correct microhabitat conditions in captivity is difficult; captive-bred frogs may lose survival behaviours; limited space.
 
-Establishing a protected area (national park or nature reserve) in the frog's remaining habitat
-would protect the ecosystem as a whole, including the frog's food sources, breeding sites, and
-microhabitat conditions. This approach maintains the natural ecological interactions and allows the
-frog to continue evolving in its natural environment. Wildlife corridors could connect fragmented
-habitat patches, allowing gene flow between isolated populations and reducing inbreeding. Legal
-protection would prevent further deforestation and hunting. Reforestation of degraded areas adjacent
-to existing habitat would expand the available habitat over time.
-
-Advantages: preserves the entire ecosystem; allows natural evolutionary processes; most sustainable
-long-term approach.
-
-Limitations: habitat may already be too degraded; protected areas require enforcement and may face
-pressure from logging, agriculture, or mining; climate change may render the protected habitat
-unsuitable in the future.
-
-**Ex situ conservation strategies:**
-
-Captive breeding programmes in zoos could increase the population of the frog in controlled
-conditions, protecting it from immediate threats in the wild. Eggs and tadpoles could be reared in
-controlled environments with optimal temperature, humidity, and food supply. Tissue samples could be
-cryopreserved for future genetic studies or cloning. If suitable habitat is restored, captive-bred
-frogs could be reintroduced to the wild.
-
-Advantages: provides immediate protection from habitat destruction; allows controlled breeding to
-maximise genetic diversity; can serve as an educational and research resource.
-
-Limitations: maintaining the correct microhabitat conditions in captivity is extremely difficult for
-specialist species; captive-bred frogs may lose behaviours needed for survival in the wild; limited
-space for large populations; does not address the root cause (habitat loss).
-
-**Best approach:** A combination of both. In situ conservation addresses the root cause (habitat
-protection and restoration) and is the long-term goal. Ex situ conservation provides a safety net to
-prevent extinction while habitat is being restored.
+**Best approach:** A combination -- in situ addresses the root cause (habitat protection) as the long-term goal, while ex situ provides a safety net to prevent extinction during habitat restoration.
 
 </details>
 
+**Problem 4:** A river changes course over thousands of years, dividing a population of beetles into two separate populations. Describe how this could lead to allopatric speciation.
+
+If you get this wrong, revise: Natural Selection and Speciation -- Allopatric Speciation
+
 <details>
-<summary>Question 4: Speciation</summary>
+<summary>Solution</summary>
 
-A river changes course over many thousands of years, dividing a population of a species of beetle
-into two separate populations on opposite banks. Describe how this could lead to the formation of
-two new species.
+1. The river creates a geographic barrier, physically separating the population and preventing gene flow.
 
-1. The river changing course creates a geographic barrier, physically separating the original beetle
-   population into two subpopulations on opposite banks. This prevents gene flow between the two
-   populations (individuals cannot cross the river to mate).
+2. Each subpopulation experiences different environmental conditions (vegetation, predators, climate).
 
-2. Each subpopulation is now subject to potentially different environmental conditions on each bank
-   (different vegetation, predators, climate, soil conditions).
+3. Different selection pressures favour different traits (e.g., darker colouration on one bank, lighter on the other).
 
-3. Different selection pressures act on each population. For example, if one bank has darker soil,
-   beetles with darker colouration may have better camouflage from predators and higher survival. On
-   the other bank with lighter soil, lighter-coloured beetles may be favoured.
+4. Over generations, natural selection and genetic drift cause allele frequencies to diverge in each population.
 
-4. Over many generations, natural selection favours different traits in each population.
-   Additionally, random mutations occur independently in each population, and genetic drift
-   (especially if the populations are small) causes random changes in allele frequencies.
+5. Reproductive isolation mechanisms accumulate (e.g., different mating behaviours, mechanical isolation, hybrid inviability).
 
-5. Over time, the genetic and phenotypic differences between the two populations accumulate. They
-   may evolve different mating behaviours, food preferences, or physical characteristics.
+6. Even if the river dries up, the populations can no longer interbreed successfully. They are now separate species (allopatric speciation).
 
-6. Eventually, reproductive isolation mechanisms develop. If the river dries up and the two
-   populations come back into contact, they may no longer be able to interbreed successfully due to
-   accumulated genetic differences (e.g., incompatible mating behaviours, mechanical isolation, or
-   hybrid inviability).
+</details>
 
-7. At this point, the two populations are considered separate species. This is allopatric speciation
-   driven by geographic isolation.
+**Problem 5:** Explain the difference between primary and secondary succession, giving an example of each.
+
+If you get this wrong, revise: Ecological Succession -- Primary Succession; Secondary Succession
+
+<details>
+<summary>Solution</summary>
+
+**Primary succession** occurs on bare, lifeless substrate with no soil (e.g., newly formed volcanic rock, sand dunes). Pioneer species are lichens and autotrophic bacteria. Soil forms gradually from rock weathering and organic matter accumulation. It is very slow (centuries to millennia). Example: colonisation of volcanic island Surtsey (Iceland).
+
+**Secondary succession** occurs where soil already exists after a disturbance (e.g., forest fire, abandoned farmland). Pioneer species are grasses and fast-growing herbs. It is much faster (decades) because soil and some organisms already exist. Example: regrowth after a forest fire.
+
+</details>
+
+**Problem 6:** Distinguish between stabilising, directional, and disruptive selection, providing an example of each.
+
+If you get this wrong, revise: Natural Selection and Speciation -- Types of Natural Selection
+
+<details>
+<summary>Solution</summary>
+
+**Stabilising selection** favours intermediate phenotypes and selects against extremes. The mean is unchanged but variation decreases. Example: human birth weight (very low and very high have higher mortality).
+
+**Directional selection** favours one extreme phenotype, shifting the mean in one direction. Example: peppered moth during industrial pollution (dark form favoured).
+
+**Disruptive selection** favours both extremes and selects against intermediates, potentially splitting the population. Example: African seedcracker finch (large and small beaks favoured, intermediate disadvantageous).
+
+</details>
+
+**Problem 7:** Explain the process of eutrophication and its effects on aquatic ecosystems.
+
+If you get this wrong, revise: Human Impact -- Pollution (Eutrophication)
+
+<details>
+<summary>Solution</summary>
+
+1. Excess nutrients (nitrates and phosphates from fertilisers, sewage) enter a water body.
+2. Nutrient enrichment causes rapid algal growth (algal bloom).
+3. The algal layer blocks light, killing submerged aquatic plants.
+4. Algae die and are decomposed by bacteria, which consume dissolved oxygen through aerobic respiration.
+5. Dissolved oxygen levels drop (hypoxia or anoxia).
+6. Fish and other aquatic organisms die.
+7. Decomposition of dead organisms further consumes oxygen, worsening the problem.
+
+</details>
+
+**Problem 8:** Explain what is meant by bioaccumulation and biomagnification, using mercury as an example.
+
+If you get this wrong, revise: Human Impact -- Pollution (Bioaccumulation vs Biomagnification)
+
+<details>
+<summary>Solution</summary>
+
+**Bioaccumulation** is the accumulation of a substance within a single organism over its lifetime. Mercury absorbed from water or food accumulates in the body tissues (especially the liver and brain) faster than it can be excreted.
+
+**Biomagnification** is the increasing concentration of a substance at each successive trophic level. Mercury concentration increases from plankton to small fish to large fish to birds of prey. At each level, organisms consume many prey items, accumulating all the mercury those prey contained.
+
+Key distinction: bioaccumulation is within one organism; biomagnification is across the food chain. Mercury is particularly problematic because it is fat-soluble, persistent, and toxic to the nervous system.
+
+</details>
+
+**Problem 9:** Describe three types of fossil evidence that support the theory of evolution.
+
+If you get this wrong, revise: Evolution Evidence -- The Fossil Record
+
+<details>
+<summary>Solution</summary>
+
+1. **Transitional fossils:** Show intermediate characteristics between ancestral and descendant groups. Example: _Archaeopteryx_ (feathered dinosaur with teeth and long bony tail -- intermediate between reptiles and birds); _Tiktaalik_ (fish with limb-like fins -- intermediate between fish and tetrapods).
+
+2. **Sequential appearance in rock layers:** Fossils in deeper (older) rock layers are simpler and less similar to modern organisms, while fossils in shallower (younger) layers are more complex and similar to modern organisms. This demonstrates gradual change over time.
+
+3. **Biogeographic patterns:** Fossil distributions match continental drift patterns (e.g., identical Mesosaurus fossils found in both South America and Africa, supporting that these continents were once joined).
+
+</details>
+
+**Problem 10:** Explain two ways in which climate change threatens biodiversity, and suggest one conservation strategy to mitigate each threat.
+
+If you get this wrong, revise: Human Impact -- Climate Change; Conservation Strategies
+
+<details>
+<summary>Solution</summary>
+
+1. **Range shifts:** As temperatures rise, species move towards poles or to higher elevations to track suitable conditions. Species that cannot move fast enough or have nowhere to go (e.g., Arctic species) are at risk of extinction. **Mitigation:** Establish wildlife corridors connecting protected areas, allowing species to migrate in response to changing conditions.
+
+2. **Ocean acidification:** Dissolved CO$_2$ forms carbonic acid, lowering ocean pH. This impairs the ability of corals, molluscs, and other calcifying organisms to build calcium carbonate shells and skeletons, threatening coral reef ecosystems. **Mitigation:** Reduce CO$_2$ emissions (transition to renewable energy); establish marine protected areas to reduce additional stress on coral reefs.
 
 </details>

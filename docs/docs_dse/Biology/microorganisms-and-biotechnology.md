@@ -206,6 +206,32 @@ micrometres). Electron microscopy is required to visualise viruses.
 **Definition:** Antibiotics are chemical substances produced by microorganisms (usually fungi or
 bacteria) that kill or inhibit the growth of other microorganisms.
 
+### Worked Example: Antibiotic Action
+
+A student investigates the effect of two antibiotics (penicillin and streptomycin) on two species of bacteria (_Staphylococcus aureus_ and _Escherichia coli_). The results are shown as zones of inhibition (clear area around the antibiotic disc):
+
+| Antibiotic    | Zone of inhibition for _S. aureus_ (mm) | Zone of inhibition for _E. coli_ (mm) |
+| ------------- | -------------------------------------- | ------------------------------------ |
+| Penicillin    | 25                                     | 0                                    |
+| Streptomycin  | 18                                     | 20                                   |
+
+(a) Explain why penicillin is effective against _S. aureus_ but not _E. coli_.
+
+(b) Explain why streptomycin is effective against both species.
+
+(c) Why are antibiotics not effective against viruses?
+
+<details>
+<summary>Solution</summary>
+
+(a) Penicillin inhibits cell wall synthesis by targeting peptidoglycan. _S. aureus_ is a Gram-positive bacterium with a thick peptidoglycan cell wall, making it susceptible. _E. coli_ is a Gram-negative bacterium with a thinner peptidoglycan layer protected by an outer membrane, which limits penicillin's access to its target.
+
+(b) Streptomycin inhibits protein synthesis by binding to the 30S ribosomal subunit. Both _S. aureus_ and _E. coli_ have 70S ribosomes (with 30S subunits) that are the target of streptomycin. Since all bacteria have similar ribosomes, streptomycin can affect both species.
+
+(c) Viruses have no cell wall (so cell wall-targeting antibiotics like penicillin are irrelevant) and no ribosomes (so protein synthesis-targeting antibiotics like streptomycin are irrelevant). Viruses use the host cell's ribosomes and machinery to replicate. Antibiotics target bacterial-specific structures and processes that viruses do not possess.
+
+</details>
+
 **Discovery:** Alexander Fleming discovered penicillin in 1928 from the mould _Penicillium notatum_.
 
 | Antibiotic   | Source                     | Mechanism                                 |
@@ -603,6 +629,27 @@ varies between individuals.
 | Gene therapy                 | Treats genetic disorders at source             | Somatic vs germline; off-target effects; cost         |
 | Genetically modified animals | Better models for research; pharmaceuticals    | Animal welfare; environmental release concerns        |
 
+### Worked Example: Genetic Engineering Process
+
+A scientist wants to produce human insulin using genetically engineered _E. coli_ bacteria.
+
+(a) Explain why reverse transcriptase is used to obtain the insulin gene rather than cutting it directly from human DNA.
+
+(b) Explain the role of the plasmid in this process.
+
+(c) How are transformed bacteria identified from non-transformed ones?
+
+<details>
+<summary>Solution</summary>
+
+(a) Human genomic DNA contains introns (non-coding regions) that are transcribed into pre-mRNA but are spliced out during mRNA processing. Bacteria (prokaryotes) lack the splicing machinery to remove introns. Reverse transcriptase is used to make complementary DNA (cDNA) from mature mRNA, which already has introns removed. The cDNA contains only exons (coding sequences) and can be directly expressed in bacteria.
+
+(b) The plasmid acts as a vector -- a carrier that transfers the insulin gene into the bacterial cell. The same restriction enzyme cuts both the insulin cDNA and the plasmid, producing complementary sticky ends. DNA ligase joins them, creating a recombinant plasmid. The plasmid also contains a promoter sequence (so bacterial RNA polymerase can transcribe the gene) and a marker gene (e.g., antibiotic resistance) for selection.
+
+(c) The plasmid contains a marker gene for antibiotic resistance (e.g., ampicillin resistance). After transformation, bacteria are grown on agar containing the antibiotic. Only bacteria that have successfully taken up the plasmid (with the antibiotic resistance gene) survive. Non-transformed bacteria (without the plasmid) die on the antibiotic-containing medium.
+
+</details>
+
 **Somatic gene therapy:** Modifying body cells to treat disease. Changes are NOT passed to
 offspring.
 
@@ -652,13 +699,9 @@ Currently not permitted in most countries due to ethical concerns.
 
 ---
 
-## Practice Problems
+## Problem Set
 
-<details>
-<summary>Question 1: Bacterial Population Growth</summary>
-
-A culture of bacteria divides by binary fission every 20 minutes. The initial population is 500
-bacteria.
+**Problem 1:** A culture of bacteria divides by binary fission every 20 minutes. The initial population is 500 bacteria.
 
 (a) Calculate the population after 2 hours.
 
@@ -666,19 +709,22 @@ bacteria.
 
 (c) How long does it take for the population to reach 32,000?
 
+If you get this wrong, revise: Classification of Microorganisms -- Bacteria (Reproduction; Growth curve)
+
+<details>
+<summary>Solution</summary>
+
 (a) Number of divisions in 2 hours (120 minutes): $n = 120 / 20 = 6$
 
-Population = $500 \times 2^6 = 500 \times 64 = 32,000$
+Population = $500 \times 2^6 = 500 \times 64 = 32{,}000$
 
 (b) Number of divisions in 3 hours (180 minutes): $n = 180 / 20 = 9$
 
-Population = $500 \times 2^9 = 500 \times 512 = 256,000$
+Population = $500 \times 2^9 = 500 \times 512 = 256{,}000$
 
-(c) We need $500 \times 2^n = 32,000$
+(c) We need $500 \times 2^n = 32{,}000$
 
-$2^n = 32,000 / 500 = 64$
-
-$2^n = 64 = 2^6$
+$2^n = 32{,}000 / 500 = 64 = 2^6$
 
 $n = 6$
 
@@ -686,251 +732,157 @@ Time = $6 \times 20 = 120$ minutes = 2 hours.
 
 </details>
 
+**Problem 2:** Explain how antibiotic resistance develops in a bacterial population. Use the concepts of genetic variation, natural selection, and inheritance in your answer.
+
+If you get this wrong, revise: Harmful Microorganisms -- Antibiotic Resistance
+
 <details>
-<summary>Question 2: Antibiotic Resistance</summary>
+<summary>Solution</summary>
 
-Explain how antibiotic resistance develops in a bacterial population. Use the concepts of genetic
-variation, natural selection, and inheritance in your answer.
+1. **Genetic variation:** Within any bacterial population, random mutations occur during DNA replication. Some bacteria may acquire a mutation that gives them resistance (e.g., a gene for beta-lactamase). Resistance genes can also be transferred via plasmids during conjugation.
 
-1. **Genetic variation:** Within any bacterial population, random mutations occur during DNA
-   replication. Some bacteria may acquire a mutation that gives them resistance to a particular
-   antibiotic (e.g., a gene for beta-lactamase enzyme that breaks down penicillin). Resistance genes
-   can also be transferred between bacteria via plasmids during conjugation.
+2. **Selection pressure:** When an antibiotic is administered, it creates a selection pressure. Susceptible bacteria are killed or their growth is inhibited.
 
-2. **Selection pressure:** When an antibiotic is administered, it creates a selection pressure.
-   Bacteria that are susceptible to the antibiotic are killed or their growth is inhibited.
+3. **Natural selection:** Bacteria carrying the resistance gene survive the antibiotic treatment. These resistant bacteria have a selective advantage and can continue to grow and reproduce.
 
-3. **Natural selection:** Bacteria that carry the resistance gene survive the antibiotic treatment.
-   These resistant bacteria have a selective advantage -- they can continue to grow and reproduce in
-   the presence of the antibiotic, while competing susceptible bacteria are eliminated.
-
-4. **Inheritance:** The resistant bacteria reproduce by binary fission, passing the resistance gene
-   to all their offspring (vertical gene transfer). The resistance gene can also be transferred to
-   other bacteria via conjugation (horizontal gene transfer), spreading resistance through the
-   population.
-
-5. Over time, the resistant strain becomes the dominant strain in the population. The antibiotic
-   becomes ineffective against this resistant strain.
-
-This process is an example of evolution by natural selection occurring rapidly (within hours or days
-due to the short generation time of bacteria).
+4. **Inheritance:** Resistant bacteria reproduce by binary fission, passing the resistance gene to all offspring (vertical transmission). The gene can also be transferred to other bacteria via conjugation (horizontal transmission), spreading resistance through the population.
 
 </details>
 
-<details>
-<summary>Question 3: PCR Calculation</summary>
-
-A scientist wants to amplify a segment of DNA using PCR. She starts with 10 DNA molecules and runs
-30 cycles.
+**Problem 3:** A scientist starts with 10 DNA molecules and runs 30 cycles of PCR.
 
 (a) How many DNA molecules will be present after 30 cycles?
 
-(b) If the DNA segment is 300 base pairs long, what is the total number of base pairs of amplified
-DNA produced?
+(b) If the DNA segment is 300 base pairs long, what is the total number of base pairs of amplified DNA produced?
 
-(c) If each base pair has a mass of approximately $660 \mathrm{ g/mol}$, calculate the total mass of
-the amplified DNA in grams. (Avogadro's number = $6.02 \times 10^{23}$)
+If you get this wrong, revise: Biotechnology -- Polymerase Chain Reaction (PCR)
 
-(a) After 30 cycles: $N = 10 \times 2^{30} = 10 \times 1,073,741,824 = 10,737,418,240$ DNA molecules
+<details>
+<summary>Solution</summary>
 
-(b) Total base pairs = $10,737,418,240 \times 300 = 3.221 \times 10^{12}$ base pairs
+(a) After 30 cycles: $N = 10 \times 2^{30} = 10 \times 1{,}073{,}741{,}824 = 10{,}737{,}418{,}240$ DNA molecules
 
-(c) Each DNA molecule is double-stranded, so we have $10,737,418,240$ molecules, each with 300 base
-pairs.
-
-Molar mass per molecule = $300 \times 660 = 198,000 \mathrm{ g/mol}$
-
-Number of moles = $10,737,418,240 / (6.02 \times 10^{23}) = 1.783 \times 10^{-14} \mathrm{ mol}$
-
-Mass = $1.783 \times 10^{-14} \times 198,000 = 3.531 \times 10^{-9} \mathrm{ g}$
-
-Or approximately 3.53 nanograms.
+(b) Total base pairs = $10{,}737{,}418{,}240 \times 300 = 3.221 \times 10^{12}$ base pairs
 
 </details>
 
+**Problem 4:** Describe the steps involved in producing human insulin using genetically engineered bacteria. Explain why cDNA is used rather than genomic DNA.
+
+If you get this wrong, revise: Biotechnology -- Genetic Engineering; Example: Production of Human Insulin
+
 <details>
-<summary>Question 4: Genetic Engineering -- Human Insulin</summary>
+<summary>Solution</summary>
 
-Describe the steps involved in producing human insulin using genetically engineered bacteria.
+1. mRNA is extracted from human pancreatic beta cells. Reverse transcriptase synthesises cDNA from the mRNA (removing introns).
+2. The same restriction enzyme cuts both the insulin cDNA and a bacterial plasmid, producing complementary sticky ends.
+3. DNA ligase seals the cDNA into the plasmid, creating a recombinant plasmid.
+4. The recombinant plasmid is introduced into _E. coli_ by transformation (heat shock or electroporation).
+5. Transformed bacteria are selected using a marker gene (antibiotic resistance) on the plasmid.
+6. Successfully transformed bacteria are cultured in large fermenters, producing human insulin.
 
-1. **Isolation of the insulin gene:** mRNA is extracted from human pancreatic beta cells. Reverse
-   transcriptase is used to synthesise complementary DNA (cDNA) from the mRNA template. This removes
-   introns (non-coding regions) that bacteria cannot process.
-
-2. **Cutting the DNA:** The same restriction enzyme (e.g., EcoRI) is used to cut both the insulin
-   cDNA and a bacterial plasmid vector. This produces complementary sticky ends on both the gene and
-   the plasmid.
-
-3. **Ligation:** The insulin cDNA is mixed with the cut plasmid. The complementary sticky ends
-   base-pair by hydrogen bonding. DNA ligase enzyme is added to form phosphodiester bonds, sealing
-   the gene into the plasmid. This creates a recombinant plasmid.
-
-4. **Transformation:** The recombinant plasmid is introduced into _E. coli_ bacteria. This is
-   typically done using a heat shock technique or electroporation.
-
-5. **Selection:** The plasmid contains a marker gene (e.g., antibiotic resistance to ampicillin).
-   Bacteria are grown on agar containing ampicillin. Only bacteria that have successfully taken up
-   the plasmid survive.
-
-6. **Culture and expression:** Successfully transformed bacteria are cultured in large fermenters.
-   The bacteria transcribe the insulin gene and translate it into the insulin protein using their
-   own ribosomes and cellular machinery.
-
-7. **Harvesting and purification:** The bacteria produce insulin in the fermentation broth. The
-   insulin is extracted, purified, and processed into a form suitable for human use.
+cDNA is used because genomic DNA contains introns that bacteria cannot splice out. cDNA contains only the coding sequence (exons) and can be directly expressed in bacteria.
 
 </details>
 
+**Problem 5:** Explain how _Vibrio cholerae_ causes severe diarrhoea and why oral rehydration solution (ORS) is an effective treatment.
+
+If you get this wrong, revise: Harmful Microorganisms -- Cholera as a Case Study; Body's Defence Mechanisms
+
 <details>
-<summary>Question 5: Cholera and Oral Rehydration Therapy</summary>
+<summary>Solution</summary>
 
-Explain how _Vibrio cholerae_ causes severe diarrhoea and why oral rehydration solution (ORS) is an
-effective treatment.
+_Vibrio cholerae_ attaches to the intestinal epithelium and produces a cholera toxin. This toxin causes chloride ion channels to remain open, leading to continuous secretion of Cl$^-$ into the intestinal lumen. This lowers the water potential in the lumen, causing water to follow by osmosis from the blood and tissues into the intestine. Result: severe watery diarrhoea and rapid dehydration.
 
-**How _Vibrio cholerae_ causes diarrhoea:**
-
-1. The bacterium is ingested via contaminated water or food and survives passage through the stomach
-   to reach the small intestine.
-
-2. The bacteria attach to the intestinal epithelium and begin to multiply.
-
-3. They produce a **cholera toxin** (an enterotoxin).
-
-4. The toxin causes the chloride ion channels on the intestinal epithelial cells to remain
-   permanently open.
-
-5. Chloride ions (Cl$^-$) are continuously secreted into the intestinal lumen.
-
-6. This increases the solute concentration in the lumen, lowering its water potential.
-
-7. Water moves from the blood and tissues into the intestinal lumen by osmosis (down the water
-   potential gradient).
-
-8. The result is a large volume of watery diarrhoea (up to 20 litres per day), leading to severe
-   dehydration, loss of electrolytes, and potentially death.
-
-**Why ORS is effective:**
-
-Oral rehydration solution contains:
-
-- **Water:** To rehydrate
-- **Glucose:** To facilitate the co-transport of Na$^+$ across the intestinal epithelium
-- **Sodium (Na$^+$), potassium (K$^+$), and chloride (Cl$^-$):** To replace lost electrolytes
-
-The sodium-glucose co-transporter (SGLT1) on the intestinal epithelial cells transports Na$^+$ and
-glucose together from the lumen into the cell (active secondary transport). The increased solute
-concentration inside the cells causes water to follow by osmosis from the lumen into the cells, and
-then into the blood. This rehydrates the patient even though the intestinal lining is still
-secreting chloride ions due to the toxin.
+ORS is effective because it contains glucose and Na$^+$. The sodium-glucose co-transporter (SGLT1) on intestinal epithelial cells actively co-transports Na$^+$ and glucose from the lumen into the cell. Water follows by osmosis into the cells and then into the blood. This rehydrates the patient even though the cholera toxin is still causing Cl$^-$ secretion.
 
 </details>
 
+**Problem 6:** For each of the following statements, identify whether it applies to bacteria, fungi, or viruses: (a) Has a cell wall (b) Contains ribosomes (c) Can reproduce independently outside a host (d) Stores genetic material as RNA (e) Has a true nucleus (f) Can be killed by antibiotics.
+
+If you get this wrong, revise: Classification of Microorganisms -- Comparison of Microorganisms
+
 <details>
-<summary>Question 6: Distinguishing Bacteria, Fungi, and Viruses</summary>
+<summary>Solution</summary>
 
-For each of the following statements, identify whether it applies to bacteria, fungi, or viruses.
-Each may apply to more than one.
-
-(a) Has a cell wall (b) Contains ribosomes (c) Can reproduce independently outside a host (d) Stores
-genetic material as RNA (e) Has a true nucleus (f) Can be killed by antibiotics (g) Is affected by
-the immune system (h) Undergoes binary fission
-
-(a) Bacteria (peptidoglycan) and fungi (chitin). Viruses have no cell wall. (b) Bacteria (70S) and
-fungi (80S). Viruses have no ribosomes. (c) Bacteria and fungi. Viruses require a host cell. (d)
-Viruses (some have RNA). Bacteria and fungi always have DNA. (e) Fungi only. Bacteria have a
-nucleoid region; viruses have none. (f) Bacteria only. Fungi are treated with antifungals; viruses
-are unaffected by antibiotics. (g) Bacteria, fungi, and viruses. The immune system responds to all
-pathogens. (h) Bacteria only. Fungi reproduce by spores or budding; viruses replicate inside host
-cells.
+(a) Bacteria (peptidoglycan) and fungi (chitin). Viruses have no cell wall.
+(b) Bacteria (70S) and fungi (80S). Viruses have no ribosomes.
+(c) Bacteria and fungi. Viruses require a host cell.
+(d) Viruses (some have RNA). Bacteria and fungi always have DNA.
+(e) Fungi only. Bacteria have a nucleoid region; viruses have none.
+(f) Bacteria only. Fungi are treated with antifungals; viruses are unaffected by antibiotics.
 
 </details>
 
-<details>
-<summary>Question 7: GM Crops Evaluation</summary>
+**Problem 7:** A country is considering allowing cultivation of Bt cotton. Discuss two benefits and two risks.
 
-A country is considering whether to allow the cultivation of Bt cotton (genetically modified to
-produce a toxin that kills bollworm pests). Discuss the benefits and potential risks.
+If you get this wrong, revise: Biotechnology -- Genetically Modified (GM) Crops
+
+<details>
+<summary>Solution</summary>
 
 **Benefits:**
 
-- **Reduced pesticide use:** Bt cotton produces its own insecticide (Bt toxin), reducing the need
-  for chemical pesticide sprays. This lowers costs for farmers and reduces chemical runoff into the
-  environment.
-- **Increased yield:** By reducing pest damage, crop yields are higher and more reliable.
-- **Economic benefit:** Lower input costs (less pesticide) and higher yields can increase farmers'
-  incomes.
-- **Health benefit:** Reduced exposure to chemical pesticides by farm workers.
-- **Environmental benefit:** Less pesticide spray means less harm to non-target insects (e.g.,
-  pollinators like bees) and less soil/water contamination.
+1. Reduced pesticide use: Bt cotton produces its own Bt toxin, reducing chemical sprays. This lowers costs and reduces environmental harm to non-target organisms.
+2. Increased yield: By reducing pest damage, crop yields are higher and more reliable, increasing farmer income.
 
-**Risks and concerns:**
+**Risks:**
 
-- **Development of resistance:** Over time, bollworm populations may evolve resistance to the Bt
-  toxin, rendering the GM crop ineffective. This is similar to antibiotic resistance in bacteria.
-- **Gene flow:** The Bt gene could be transferred to wild relatives through cross-pollination,
-  potentially creating "superweeds" that are toxic to non-pest insects.
-- **Impact on non-target organisms:** The Bt toxin could potentially harm beneficial insects,
-  although studies suggest the toxin is specific to certain pest groups.
-- **Biodiversity reduction:** Large-scale monocultures of a single GM variety reduce genetic
-  diversity, making the crop more vulnerable to new diseases.
-- **Economic dependency:** Farmers must purchase new GM seeds each year (patented seeds cannot be
-  saved), creating dependency on biotechnology companies.
-- **Unknown long-term effects:** Potential impacts on ecosystems and human health that have not yet
-  been observed in the relatively short period GM crops have been grown.
+1. Development of resistance: Bollworm populations may evolve resistance to Bt toxin, rendering the crop ineffective (similar to antibiotic resistance).
+2. Gene flow: The Bt gene could transfer to wild relatives through cross-pollination, potentially creating "superweeds" that harm non-target insects.
 
 </details>
 
-<details>
-<summary>Question 8: Cloning Techniques</summary>
+**Problem 8:** Compare natural cloning, plant tissue culture cloning, and animal cloning by nuclear transfer. Give one advantage and one disadvantage of each.
 
-Compare natural cloning, plant tissue culture cloning, and animal cloning by nuclear transfer.
-Include two advantages and two disadvantages for each.
+If you get this wrong, revise: Biotechnology -- Cloning
+
+<details>
+<summary>Solution</summary>
 
 **Natural cloning (asexual reproduction):**
+Advantage: Rapid population increase (no mate needed). Disadvantage: No genetic variation, so the population is vulnerable to the same disease.
 
-Mechanism: A single parent produces genetically identical offspring without gamete fusion.
+**Plant tissue culture:**
+Advantage: Large numbers of identical, disease-free plants can be produced quickly. Disadvantage: All plants are genetically identical (same disease susceptibility); requires sterile lab conditions.
 
-Advantages:
+**Animal cloning (SCNT):**
+Advantage: Can reproduce animals with desirable traits; could help conserve endangered species. Disadvantage: Very low success rate; cloned animals often have health problems; ethical concerns about animal welfare.
 
-- Rapid population increase (no need to find a mate)
-- All offspring have the same desirable traits as the parent
+</details>
 
-Disadvantages:
+**Problem 9:** Explain the lytic cycle of a bacteriophage. Why are viruses not considered living organisms?
 
-- No genetic variation, so the entire population is vulnerable to the same disease or environmental
-  change
-- Cannot adapt to changing conditions through genetic recombination
+If you get this wrong, revise: Classification of Microorganisms -- Viruses (Reproduction; Comparison table)
 
-**Plant tissue culture cloning:**
+<details>
+<summary>Solution</summary>
 
-Mechanism: Explants are grown on nutrient media with hormones to produce callus, which
-differentiates into plantlets.
+**Lytic cycle:**
 
-Advantages:
+1. **Attachment:** The bacteriophage attaches to specific receptor proteins on the bacterial cell surface.
+2. **Injection:** Viral DNA is injected into the host cell.
+3. **Replication:** The virus uses the host cell's ribosomes, enzymes, and raw materials to replicate its DNA and synthesise viral proteins.
+4. **Assembly:** New viral particles are assembled inside the host cell.
+5. **Release:** The host cell lyses (bursts), releasing new phages that infect other cells.
 
-- Large numbers of identical plants can be produced quickly
-- Disease-free plants can be produced from meristem tissue
-- Rare and endangered plant species can be conserved
+**Viruses are not living** because they do not carry out any life processes independently: they do not respire, feed, grow, excrete, or reproduce on their own. They are obligate intracellular parasites that can only replicate inside a host cell, using the host's machinery.
 
-Disadvantages:
+</details>
 
-- All plants are genetically identical (susceptible to the same diseases)
-- Requires sterile laboratory conditions and skilled technicians
+**Problem 10:** Describe how yoghurt is produced, naming the microorganism involved and the chemical change that occurs.
 
-**Animal cloning by somatic cell nuclear transfer (SCNT):**
+If you get this wrong, revise: Useful Microorganisms -- Food Production (Yoghurt)
 
-Mechanism: A nucleus from a body cell is transferred into an enucleated egg cell, which develops
-into an embryo and is implanted into a surrogate.
+<details>
+<summary>Solution</summary>
 
-Advantages:
+Yoghurt is produced using _Lactobacillus bulgaricus_ and _Streptococcus thermophilus_. The process:
 
-- Can reproduce animals with desirable traits (e.g., high milk yield)
-- Could help conserve endangered species
-
-Disadvantages:
-
-- Very low success rate (many failed attempts per successful clone)
-- Cloned animals often have health problems (premature aging, immune defects)
-- Ethical concerns about animal welfare
+1. Milk is pasteurised (heated to ~72 degrees C for 15 seconds) to kill harmful bacteria.
+2. Milk is cooled to ~40-45 degrees C (optimal for the bacteria).
+3. Starter culture is added.
+4. The bacteria ferment lactose (milk sugar) to lactic acid. The chemical equation: lactose + H$_2$O $\to$ 4 lactic acid.
+5. Lactic acid lowers the pH, causing milk proteins (casein) to coagulate, giving yoghurt its thick texture.
+6. Yoghurt is refrigerated to slow further fermentation.
 
 </details>

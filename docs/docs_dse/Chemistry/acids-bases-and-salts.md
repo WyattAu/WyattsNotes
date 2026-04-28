@@ -341,6 +341,83 @@ $$\mathrm{ZnCO_3} \xrightarrow{\Delta} \mathrm{ZnO} + \mathrm{CO_2}$$
 
 ---
 
+## Additional Worked Examples
+
+### Worked Example: Weak Acid pH
+
+Calculate the pH of a $0.10 \mathrm{ mol/dm^3}$ solution of ethanoic acid ($K_a = 1.8 \times 10^{-5}$).
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{CH_3COOH} \rightleftharpoons \mathrm{H^+} + \mathrm{CH_3COO^-}$
+
+$$K_a = \frac{[\mathrm{H^+}]^2}{[\mathrm{CH_3COOH}]} = \frac{x^2}{0.10}$$
+
+$$x = \sqrt{1.8 \times 10^{-6}} = 1.34 \times 10^{-3} \mathrm{ mol/dm^3}$$
+
+$$\mathrm{pH} = -\log_{10}(1.34 \times 10^{-3}) = 2.87$$
+
+</details>
+
+### Worked Example: Titration with Diprotic Acid
+
+$25.0 \mathrm{ cm^3}$ of $\mathrm{NaOH}$ solution is titrated with $0.100 \mathrm{ mol/dm^3}$ $\mathrm{H_2SO_4}$. The average titre is $18.75 \mathrm{ cm^3}$. Find the concentration of $\mathrm{NaOH}$.
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{H_2SO_4} + 2\mathrm{NaOH} \to \mathrm{Na_2SO_4} + 2\mathrm{H_2O}$$
+
+$$n(\mathrm{H_2SO_4}) = 0.100 \times \frac{18.75}{1000} = 1.875 \times 10^{-3} \mathrm{ mol}$$
+
+$$n(\mathrm{NaOH}) = 2 \times 1.875 \times 10^{-3} = 3.750 \times 10^{-3} \mathrm{ mol}$$
+
+$$[\mathrm{NaOH}] = \frac{3.750 \times 10^{-3}}{25.0/1000} = 0.150 \mathrm{ mol/dm^3}$$
+
+</details>
+
+### Worked Example: Limiting Reactant with Carbonate
+
+$3.00 \mathrm{ g}$ of $\mathrm{MgCO_3}$ is added to $50.0 \mathrm{ cm^3}$ of $2.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$. Calculate the volume of $\mathrm{CO_2}$ produced at RTP.
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{MgCO_3} + 2\mathrm{HCl} \to \mathrm{MgCl_2} + \mathrm{H_2O} + \mathrm{CO_2}$$
+
+$$n(\mathrm{MgCO_3}) = \frac{3.00}{84.3} = 0.0356 \mathrm{ mol}$$
+
+$$n(\mathrm{HCl}) = 2.00 \times 0.0500 = 0.100 \mathrm{ mol}$$
+
+$\mathrm{HCl}$ needed for $0.0356 \mathrm{ mol}$ $\mathrm{MgCO_3}$: $2 \times 0.0356 = 0.0712 \mathrm{ mol}$. Since $0.100 \mathrm{ mol}$ is available, $\mathrm{MgCO_3}$ is the limiting reactant.
+
+$$n(\mathrm{CO_2}) = 0.0356 \mathrm{ mol}$$
+
+$$V(\mathrm{CO_2}) = 0.0356 \times 24.0 = 0.854 \mathrm{ dm^3}$$
+
+</details>
+
+### Worked Example: Choosing a Salt Preparation Method
+
+A student wants to prepare pure, dry crystals of lead(II) iodide. Describe the method and write the relevant equation.
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{PbI_2}$ is insoluble, so the **precipitation method** is used:
+
+1. Prepare aqueous solutions of lead(II) nitrate and potassium iodide.
+2. Mix the two solutions: $\mathrm{Pb(NO_3)_2}(aq) + 2\mathrm{KI}(aq) \to \mathrm{PbI_2}(s) + 2\mathrm{KNO_3}(aq)$
+3. A bright yellow precipitate of $\mathrm{PbI_2}$ forms.
+4. Filter the precipitate.
+5. Wash with distilled water to remove soluble impurities.
+6. Dry between filter papers.
+
+</details>
+
+---
+
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
@@ -390,5 +467,153 @@ $[\mathrm{H^+}] \lt 0.10 \mathrm{ mol/dm^3}$, giving a pH greater than 1.0.
 Titration method: react $\mathrm{NaOH}$ with $\mathrm{HCl}$ using a suitable indicator (methyl
 orange or phenolphthalein). Both reactants are soluble, and the salt $\mathrm{NaCl}$ is soluble,
 so evaporation of the neutralised solution yields pure crystals.
+
+</details>
+
+---
+
+## Problem Set
+
+**Problem 1:** Calculate the pH of $0.0050 \mathrm{ mol/dm^3}$ $\mathrm{HNO_3}$.
+
+*If you get this wrong, revise: Strong and Weak Acids*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{HNO_3}$ is a strong monoprotic acid: $[\mathrm{H^+}] = 0.0050 \mathrm{ mol/dm^3}$
+
+$$\mathrm{pH} = -\log_{10}(0.0050) = 2.30$$
+
+</details>
+
+**Problem 2:** A solution has $\mathrm{pH} = 4.55$. Find $[\mathrm{H^+}]$ and $[\mathrm{OH^-}]$.
+
+*If you get this wrong, revise: The pH Scale*
+
+<details>
+<summary>Solution</summary>
+
+$$[\mathrm{H^+}] = 10^{-4.55} = 2.82 \times 10^{-5} \mathrm{ mol/dm^3}$$
+
+$$[\mathrm{OH^-}] = \frac{10^{-14}}{2.82 \times 10^{-5}} = 3.55 \times 10^{-10} \mathrm{ mol/dm^3}$$
+
+</details>
+
+**Problem 3:** Which indicator should be used for titrating ethanoic acid with sodium hydroxide? Explain your choice.
+
+*If you get this wrong, revise: Indicators*
+
+<details>
+<summary>Solution</summary>
+
+Phenolphthalein (pH range 8.3--10.0). Ethanoic acid is a weak acid and $\mathrm{NaOH}$ is a strong base, so the equivalence point has $\mathrm{pH} \gt 7$. Phenolphthalein changes colour within this alkaline range. Methyl orange (3.1--4.4) would change colour too early, before the equivalence point.
+
+</details>
+
+**Problem 4:** Write the ionic equation for the reaction between barium chloride and sodium sulphate.
+
+*If you get this wrong, revise: Ionic Equations*
+
+<details>
+<summary>Solution</summary>
+
+Full: $\mathrm{BaCl_2}(aq) + \mathrm{Na_2SO_4}(aq) \to \mathrm{BaSO_4}(s) + 2\mathrm{NaCl}(aq)$
+
+Ionic: $\mathrm{Ba^{2+}}(aq) + \mathrm{SO_4^{2-}}(aq) \to \mathrm{BaSO_4}(s)$
+
+$\mathrm{Na^+}$ and $\mathrm{Cl^-}$ are spectator ions.
+
+</details>
+
+**Problem 5:** Describe how to prepare pure, dry lead(II) sulphate.
+
+*If you get this wrong, revise: Salt Preparation Methods*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{PbSO_4}$ is insoluble, so use precipitation:
+
+1. Mix aqueous lead(II) nitrate with aqueous sodium sulphate
+2. $\mathrm{Pb(NO_3)_2}(aq) + \mathrm{Na_2SO_4}(aq) \to \mathrm{PbSO_4}(s) + 2\mathrm{NaNO_3}(aq)$
+3. White precipitate forms; filter, wash with distilled water, and dry
+
+</details>
+
+**Problem 6:** $10.0 \mathrm{ g}$ of $\mathrm{CaCO_3}$ is heated strongly. Calculate the mass of $\mathrm{CaO}$ produced and the volume of $\mathrm{CO_2}$ at RTP.
+
+*If you get this wrong, revise: Thermal Decomposition of Carbonates*
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{CaCO_3} \xrightarrow{\Delta} \mathrm{CaO} + \mathrm{CO_2}$$
+
+$$n(\mathrm{CaCO_3}) = \frac{10.0}{100} = 0.100 \mathrm{ mol}$$
+
+$$m(\mathrm{CaO}) = 0.100 \times 56.1 = 5.61 \mathrm{ g}$$
+
+$$V(\mathrm{CO_2}) = 0.100 \times 24.0 = 2.40 \mathrm{ dm^3}$$
+
+</details>
+
+**Problem 7:** Explain why zinc oxide is described as amphoteric, giving equations for its reaction with both an acid and a base.
+
+*If you get this wrong, revise: Common Pitfalls*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{ZnO}$ reacts with both acids and bases:
+
+With acid: $\mathrm{ZnO} + 2\mathrm{HCl} \to \mathrm{ZnCl_2} + \mathrm{H_2O}$
+
+With base: $\mathrm{ZnO} + 2\mathrm{NaOH} \to \mathrm{Na_2ZnO_2} + \mathrm{H_2O}$
+
+</details>
+
+**Problem 8:** $25.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with $25.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$. What is the pH of the resulting solution?
+
+*If you get this wrong, revise: Neutralisation*
+
+<details>
+<summary>Solution</summary>
+
+$n(\mathrm{HCl}) = 0.200 \times 0.0250 = 0.00500 \mathrm{ mol}$
+
+$n(\mathrm{NaOH}) = 0.200 \times 0.0250 = 0.00500 \mathrm{ mol}$
+
+Equal moles of strong monoprotic acid and strong monoprotic base exactly neutralise each other. The product $\mathrm{NaCl}$ is a neutral salt, so $\mathrm{pH} = 7$.
+
+</details>
+
+**Problem 9:** State the solubility rules for chlorides, sulphates, and carbonates, including exceptions.
+
+*If you get this wrong, revise: Solubility Rules*
+
+<details>
+<summary>Solution</summary>
+
+**Chlorides:** most soluble. Exceptions: $\mathrm{AgCl}$, $\mathrm{PbCl_2}$, $\mathrm{Hg_2Cl_2}$ (insoluble).
+
+**Sulphates:** most soluble. Exceptions: $\mathrm{BaSO_4}$, $\mathrm{PbSO_4}$ (insoluble); $\mathrm{CaSO_4}$ (slightly soluble).
+
+**Carbonates:** most insoluble. Exceptions: Group 1 and $\mathrm{NH_4^+}$ salts are soluble.
+
+</details>
+
+**Problem 10:** A student tests an unknown solution with litmus (turns red), then adds magnesium ribbon and observes bubbling. The gas produced turns limewater milky. Identify the unknown solution and write two equations for the reactions observed.
+
+*If you get this wrong, revise: Properties of Acids and Carbonates*
+
+<details>
+<summary>Solution</summary>
+
+The solution is an acid (red litmus). The gas from the metal reaction turns limewater milky, confirming $\mathrm{CO_2}$, so the acid contains carbonate or the metal is reacting to produce $\mathrm{H_2}$ while a separate carbonate reaction produces $\mathrm{CO_2}$. However, since magnesium reacts with acid to produce $\mathrm{H_2}$ (not $\mathrm{CO_2}$), the limewater must have turned milky due to $\mathrm{CO_2}$ already dissolved in the acid. The unknown solution is likely carbonic acid ($\mathrm{H_2CO_3}$) or a solution of $\mathrm{CO_2}$ in water.
+
+Reaction with Mg: $\mathrm{Mg} + 2\mathrm{H^+} \to \mathrm{Mg^{2+}} + \mathrm{H_2}$
+
+Limewater: $\mathrm{CO_2} + \mathrm{Ca(OH)_2} \to \mathrm{CaCO_3}(s) + \mathrm{H_2O}$
 
 </details>

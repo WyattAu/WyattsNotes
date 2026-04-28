@@ -84,7 +84,12 @@ $$A_r = \sum (\mathrm{isotope mass} \times \mathrm{fractional abundance})$$
 Boron has two isotopes: $\mathrm{^{10}B}$ (19.9% abundance) and $\mathrm{^{11}B}$ (80.1% abundance).
 Calculate the relative atomic mass.
 
+<details>
+<summary>Solution</summary>
+
 $$A_r = 10 \times 0.199 + 11 \times 0.801 = 1.99 + 8.811 = 10.80$$
+
+</details>
 
 ### Mass Spectrometry
 
@@ -119,9 +124,14 @@ with parallel spins before pairing.
 
 Write the electron configurations of:
 
+<details>
+<summary>Solution</summary>
+
 - Potassium ($Z = 19$): $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^1$
 - Iron ($Z = 26$): $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6$ or $[\mathrm{Ar}]\, 4s^2\, 3d^6$
 - Copper ($Z = 29$): $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
+
+</details>
 
 ### Exceptions to Remember
 
@@ -171,6 +181,9 @@ $$\mathrm{X}(g) \to \mathrm{X}^+(g) + e^-$$
 
 Explain why the first ionisation energy of sulfur is lower than that of phosphorus.
 
+<details>
+<summary>Solution</summary>
+
 Phosphorus ($Z = 15$): $[\mathrm{Ne}]\, 3s^2\, 3p^3$. All three $3p$ electrons are unpaired.
 
 Sulfur ($Z = 16$): $[\mathrm{Ne}]\, 3s^2\, 3p^4$. One of the $3p$ orbitals now contains a paired
@@ -178,6 +191,8 @@ electron.
 
 The fourth $3p$ electron in sulfur experiences electron-electron repulsion from its paired partner,
 making it easier to remove than the unpaired $3p$ electron in phosphorus.
+
+</details>
 
 ---
 
@@ -191,10 +206,15 @@ is removed from a new, inner shell (closer to the nucleus, less shielded).
 The first five ionisation energies of an element are: 578, 1817, 2745, 11577, and 14842 kJ/mol.
 Identify the element and its group.
 
+<details>
+<summary>Solution</summary>
+
 The large jump between the 3rd and 4th ionisation energies indicates that the first three electrons
 are valence electrons and the fourth is from an inner shell. The element has three valence
 electrons, placing it in **Group 13**. With a first ionisation energy of 578 kJ/mol, this is
 **aluminium**.
+
+</details>
 
 ---
 
@@ -241,16 +261,28 @@ bond.
 
 ---
 
-<details>
-<summary>Exam-Style Practice Questions</summary>
+## Problem Set
 
-**Question 1:** The first four ionisation energies of an element are 738, 1451, 7733, and 10540
+**Problem 1:** The first four ionisation energies of an element are 738, 1451, 7733, and 10540
 kJ/mol. To which group does this element belong?
+
+*If you get this wrong, revise: Ionisation Energy and Group Identification*
+
+<details>
+<summary>Solution</summary>
 
 The large jump between the 2nd and 3rd ionisation energies indicates that the first two electrons
 are valence electrons. The element has two valence electrons, placing it in **Group 2**.
 
-**Question 2:** Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$.
+</details>
+
+**Problem 2:** Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$.
+Which ion is relatively more stable and why?
+
+*If you get this wrong, revise: Electron Configuration*
+
+<details>
+<summary>Solution</summary>
 
 Fe ($Z = 26$): $[\mathrm{Ar}]\, 4s^2\, 3d^6$
 
@@ -260,13 +292,27 @@ $\mathrm{Fe}^{3+}$: remove two $4s$ and one $3d$: $[\mathrm{Ar}]\, 3d^5$
 
 $\mathrm{Fe}^{3+}$ is relatively stable due to its half-filled $3d^5$ configuration.
 
-**Question 3:** Neon has three naturally occurring isotopes: $\mathrm{^{20}Ne}$ (90.48%),
+</details>
+
+**Problem 3:** Neon has three naturally occurring isotopes: $\mathrm{^{20}Ne}$ (90.48%),
 $\mathrm{^{21}Ne}$ (0.27%), and $\mathrm{^{22}Ne}$ (9.25%). Calculate the relative atomic mass of
 neon.
 
+*If you get this wrong, revise: Isotopes and Relative Atomic Mass*
+
+<details>
+<summary>Solution</summary>
+
 $$A_r = 20 \times 0.9048 + 21 \times 0.0027 + 22 \times 0.0925 = 18.096 + 0.0567 + 2.035 = 20.188$$
 
-**Question 4:** Explain why the first ionisation energy of sodium is much lower than that of neon.
+</details>
+
+**Problem 4:** Explain why the first ionisation energy of sodium is much lower than that of neon.
+
+*If you get this wrong, revise: Ionisation Energy and Electron Configuration*
+
+<details>
+<summary>Solution</summary>
 
 Sodium ($Z = 11$) has electron configuration $[\mathrm{Ne}]\, 3s^1$. The single $3s$ electron is in
 a new shell further from the nucleus and is well shielded by the inner 10 electrons. It is
@@ -275,13 +321,108 @@ relatively easy to remove.
 Neon ($Z = 10$) has a stable noble gas configuration $1s^2\, 2s^2\, 2p^6$ with a full outer shell.
 Removing an electron requires breaking this stable arrangement, which requires much more energy.
 
-**Question 5:** The electron transition from $n = 3$ to $n = 2$ in a hydrogen atom emits a photon.
+</details>
+
+**Problem 5:** The electron transition from $n = 3$ to $n = 2$ in a hydrogen atom emits a photon.
 Calculate the wavelength of this photon. ($E_n = -2.18 \times 10^{-18}/n^2 \mathrm{ J}$)
+
+*If you get this wrong, revise: Bohr Model*
+
+<details>
+<summary>Solution</summary>
 
 $$\Delta E = E_3 - E_2 = \frac{-2.18 \times 10^{-18}}{9} - \frac{-2.18 \times 10^{-18}}{4} = -2.42 \times 10^{-19} + 5.45 \times 10^{-19} = 3.03 \times 10^{-19} \mathrm{ J}$$
 
 $$\lambda = \frac{hc}{\Delta E} = \frac{(6.63 \times 10^{-34})(3.0 \times 10^8)}{3.03 \times 10^{-19}} = \frac{1.989 \times 10^{-25}}{3.03 \times 10^{-19}} = 6.56 \times 10^{-7} \mathrm{ m} = 656 \mathrm{ nm}$$
 
 This is in the red region of the visible spectrum (the H-alpha line).
+
+</details>
+
+**Problem 6:** Write the electron configuration of $\mathrm{Cu}^{2+}$ and explain why the $4s$
+electrons are removed before the $3d$ electrons.
+
+*If you get this wrong, revise: Electron Configuration and Exceptions*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{Cu}$ ($Z = 29$): $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$
+
+When forming $\mathrm{Cu}^{2+}$, both the $4s$ electron and one $3d$ electron are removed:
+
+$\mathrm{Cu}^{2+}$: $[\mathrm{Ar}]\, 3d^9$
+
+Once the $3d$ subshell is occupied, it is at a lower energy than the $4s$ subshell. Therefore,
+$4s$ electrons are removed first when forming cations, even though the $4s$ subshell fills before
+$3d$.
+
+</details>
+
+**Problem 7:** An element has the following first seven ionisation energies (kJ/mol): 789, 1577,
+3232, 4356, 16091, 19784, and 23793. Identify the group of this element.
+
+*If you get this wrong, revise: Ionisation Energy and Group Identification*
+
+<details>
+<summary>Solution</summary>
+
+Looking at the jumps: 789 to 1577 (small), 1577 to 3232 (moderate), 3232 to 4356 (moderate),
+4356 to 16091 (**very large**).
+
+The large jump between the 4th and 5th ionisation energies means the first four electrons are
+valence electrons. The element has four valence electrons, placing it in **Group 14**.
+
+</details>
+
+**Problem 8:** Explain why argon has a higher first ionisation energy than chlorine, even though
+chlorine has a greater nuclear charge.
+
+*If you get this wrong, revise: Ionisation Energy Dips Across a Period*
+
+<details>
+<summary>Solution</summary>
+
+Chlorine ($Z = 17$): $[\mathrm{Ne}]\, 3s^2\, 3p^5$. The last electron enters a $3p$ orbital that
+already contains one electron, so it experiences electron-electron repulsion, making it relatively
+easy to remove.
+
+Argon ($Z = 18$): $[\mathrm{Ne}]\, 3s^2\, 3p^6$. All $3p$ orbitals are fully occupied. The
+additional proton in argon's nucleus (compared to chlorine) increases the effective nuclear charge
+significantly. Although there is some repulsion from paired electrons, the increased nuclear charge
+dominates, making argon's outer electrons harder to remove.
+
+</details>
+
+**Problem 9:** Calculate the relative atomic mass of silicon given its three isotopes:
+$\mathrm{^{28}Si}$ (92.2%), $\mathrm{^{29}Si}$ (4.7%), and $\mathrm{^{30}Si}$ (3.1%).
+
+*If you get this wrong, revise: Isotopes and Relative Atomic Mass*
+
+<details>
+<summary>Solution</summary>
+
+$$A_r = 28 \times 0.922 + 29 \times 0.047 + 30 \times 0.031 = 25.816 + 1.363 + 0.930 = 28.11$$
+
+</details>
+
+**Problem 10:** Define electronegativity and explain the trend in electronegativity across Period 3
+from sodium to chlorine.
+
+*If you get this wrong, revise: Electronegativity and Periodic Trends*
+
+<details>
+<summary>Solution</summary>
+
+Electronegativity is the ability of an atom to attract the bonding pair of electrons in a covalent
+bond.
+
+Across Period 3 from Na to Cl, electronegativity increases. This is because the nuclear charge
+increases by one proton each element while the shielding remains roughly the same (same number of
+inner shells). The increased effective nuclear charge pulls bonding electrons more strongly,
+increasing the atom's ability to attract shared electrons.
+
+Sodium (EN $= 0.9$, lowest) to chlorine (EN $= 3.0$, highest in Period 3). Argon, being a noble
+gas, does not typically form covalent bonds and is not assigned an electronegativity value.
 
 </details>

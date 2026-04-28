@@ -852,12 +852,231 @@ monopoly restricts output to maximise profit, creating a deadweight loss. In per
 
 </details>
 
-:::
+---
 
-:::
+## Problem Set
 
-:::
+<details>
+<summary>Problem 1: Market Equilibrium with Shifts</summary>
 
-:::
+Given $Q_D = 150 - 3P$ and $Q_S = 2P - 30$.
 
-:::
+(a) Find the equilibrium price and quantity. (b) If demand increases by 60 units at every price (new
+$Q_D = 210 - 3P$), find the new equilibrium. (c) If both demand and supply increase by 60 units, what
+happens to equilibrium quantity? What about price?
+
+<details>
+<summary>Solution</summary>
+
+(a) `150 - 3P = 2P - 30`, `180 = 5P`, `P = 36`. `Q = 150 - 108 = 42`.
+
+(b) `210 - 3P = 2P - 30`, `240 = 5P`, `P = 48`. `Q = 210 - 144 = 66`.
+
+Price rises from 36 to 48; quantity rises from 42 to 66.
+
+(c) New supply: `Q_S = 2P + 30`. `210 - 3P = 2P + 30`, `180 = 5P`, `P = 36`. `Q = 210 - 108 = 102`.
+
+Quantity rises (42 to 102), but price returns to 36. When both curves shift right by the same
+amount, price is unchanged and quantity increases.
+
+</details>
+
+If you get this wrong, revise: [Changes in Equilibrium](#changes-in-equilibrium)
+
+</details>
+
+<details>
+<summary>Problem 2: PED and Total Revenue</summary>
+
+A shop sells Good G at USD 20 per unit, selling 500 units per week. When the price is raised to USD
+24, sales fall to 400 units per week.
+
+(a) Calculate PED. (b) Did total revenue increase or decrease? (c) Should the shop raise or lower the
+price to maximise revenue?
+
+<details>
+<summary>Solution</summary>
+
+(a) `% change in Q = (400-500)/500 \times 100\% = -20\%`.
+`% change in P = (24-20)/20 \times 100\% = 20\%`.
+`PED = -20/20 = -1` (unit elastic).
+
+(b) TR before = `20 \times 500 = 10,000`. TR after = `24 \times 400 = 9,600`. TR **decreased** by
+400.
+
+(c) Since demand is unit elastic (PED = -1), the shop is already at the revenue-maximising price. Raising
+or lowering the price would both decrease total revenue.
+
+</details>
+
+If you get this wrong, revise: [PED and Total Revenue](#ped-and-total-revenue)
+
+</details>
+
+<details>
+<summary>Problem 3: Cross Elasticity</summary>
+
+When the price of coffee rises by 10%, the quantity demanded of tea rises by 6%. When the price of milk
+rises by 15%, the quantity demanded of coffee falls by 3%.
+
+(a) What is the relationship between coffee and tea? (b) What is the relationship between coffee and
+milk? (c) If the price of coffee is expected to rise, what should a tea producer do?
+
+<details>
+<summary>Solution</summary>
+
+(a) XED = `6/10 = 0.6 \gt 0`. Coffee and tea are **substitutes**.
+
+(b) XED = `-3/15 = -0.2 \lt 0`. Coffee and milk are **complements**.
+
+(c) A tea producer should increase production. The expected rise in coffee prices will shift demand for
+tea to the right (consumers substitute from coffee to tea), increasing both the price and quantity of
+tea.
+
+</details>
+
+If you get this wrong, revise: [Cross Elasticity of Demand (XED)](#cross-elasticity-of-demand-xed)
+
+</details>
+
+<details>
+<summary>Problem 4: Price Ceiling</summary>
+
+The market for rental housing has demand $Q_D = 500 - 2P$ and supply $Q_S = 100 + 3P$ (quantity in
+units, price in USD hundred).
+
+(a) Find the equilibrium rent and quantity. (b) The government imposes a rent ceiling of USD 40 (hundred).
+Find the resulting shortage. (c) What problems might arise?
+
+<details>
+<summary>Solution</summary>
+
+(a) `500 - 2P = 100 + 3P`, `400 = 5P`, `P = 80` (hundred). `Q = 500 - 160 = 340`.
+
+(b) At `P = 40`: `Q_D = 500 - 80 = 420`. `Q_S = 100 + 120 = 220`.
+Shortage = `420 - 220 = 200` units.
+
+(c) Problems: black market (landlords sublet at above-ceiling prices), reduced quality and
+maintenance (landlords cut costs), reduced supply in the long run (landlords convert properties),
+inefficient allocation (units not rented to those who value them most).
+
+</details>
+
+If you get this wrong, revise: [Price Controls](#price-controls)
+
+</details>
+
+<details>
+<summary>Problem 5: Tax Incidence</summary>
+
+Demand: $Q_D = 300 - 5P$. Supply: $Q_S = 4P - 60$. A specific tax of USD 6 per unit is imposed on
+producers.
+
+(a) Find the original equilibrium. (b) Find the new equilibrium after the tax. (c) Calculate the
+burden on consumers and producers. (d) Who bears more of the tax burden and why?
+
+<details>
+<summary>Solution</summary>
+
+(a) `300 - 5P = 4P - 60`, `360 = 9P`, `P = 40`. `Q = 300 - 200 = 100`.
+
+(b) Supply shifts: `Q_S = 4(P-6) - 60 = 4P - 84`.
+`300 - 5P = 4P - 84`, `384 = 9P`, `P = 42.67` (consumers pay).
+Producers receive `42.67 - 6 = 36.67`. `Q = 300 - 213.3 = 86.67`.
+
+(c) Consumer burden per unit = `42.67 - 40 = 2.67`. Producer burden per unit = `40 - 36.67 = 3.33`.
+
+(d) Producers bear **more** of the burden (3.33 vs 2.67) because supply is relatively less elastic than
+demand (producers are less responsive to price changes than consumers).
+
+</details>
+
+If you get this wrong, revise: [Tax Incidence (Burden)](#tax-incidence-burden)
+
+</details>
+
+<details>
+<summary>Problem 6: Income Elasticity</summary>
+
+When average income rises by 10%, the quantity demanded of bus rides falls by 5% while the quantity
+demanded of restaurant meals rises by 15%.
+
+(a) Classify bus rides and restaurant meals by type of good. (b) During an economic recession (falling
+incomes), what happens to demand for each good? (c) Why is this distinction important for businesses?
+
+<details>
+<summary>Solution</summary>
+
+(a) Bus rides: `YED = -5/10 = -0.5 \lt 0`. **Inferior good**.
+Restaurant meals: `YED = 15/10 = 1.5 \gt 1`. **Luxury (normal) good**.
+
+(b) During a recession (falling incomes): Demand for bus rides **increases** (people switch from taxis
+to buses). Demand for restaurant meals **decreases** (people cut back on luxuries).
+
+(c) Businesses need to anticipate how demand changes with the business cycle. Bus operators should
+prepare for higher demand during recessions; restaurants should plan for lower demand and may need to
+adjust pricing or offer promotions.
+
+</details>
+
+If you get this wrong, revise: [Income Elasticity of Demand (YED)](#income-elasticity-of-demand-yed)
+
+</details>
+
+<details>
+<summary>Problem 7: Subsidy Analysis</summary>
+
+Demand: $Q_D = 200 - 2P$. Supply: $Q_S = 3P - 80$. The government provides a subsidy of USD 5 per unit
+to producers.
+
+(a) Find the original equilibrium. (b) Find the new equilibrium after the subsidy. (c) How much does
+the subsidy cost the government? (d) Who benefits more from the subsidy -- consumers or producers?
+
+<details>
+<summary>Solution</summary>
+
+(a) `200 - 2P = 3P - 80`, `280 = 5P`, `P = 56`. `Q = 200 - 112 = 88`.
+
+(b) Supply shifts down: `Q_S = 3(P+5) - 80 = 3P - 65`.
+`200 - 2P = 3P - 65`, `265 = 5P`, `P = 53` (consumers pay).
+Producers receive `53 + 5 = 58`. `Q = 200 - 106 = 94`.
+
+(c) Government cost = `5 \times 94 = 470`.
+
+(d) Consumer benefit per unit = `56 - 53 = 3`. Total consumer benefit = `3 \times 94 = 282`.
+Producer benefit per unit = `58 - 56 = 2`. Total producer benefit = `2 \times 94 = 188`.
+Consumers benefit more (282 vs 188) because demand is more elastic than supply in this case.
+
+</details>
+
+If you get this wrong, revise: [Subsidies](#subsidies)
+
+</details>
+
+<details>
+<summary>Problem 8: Negative Externality</summary>
+
+A factory producing chemicals has `MPC = 10 + Q`. The marginal external cost is `MEC = 8`. Demand is
+`P = 60 - Q`.
+
+(a) Find the market equilibrium output and price. (b) Find the socially optimal output and price. (c)
+Calculate the deadweight loss. (d) What per-unit tax would achieve the social optimum?
+
+<details>
+<summary>Solution</summary>
+
+(a) Market: `10 + Q = 60 - Q`, `2Q = 50`, `Q = 25`. `P = 35`.
+
+(b) Social optimum: `MSC = MPC + MEC = 10 + Q + 8 = 18 + Q`.
+`18 + Q = 60 - Q`, `2Q = 42`, `Q = 21`. `P = 39` (price consumers pay).
+Producers receive `39 - 8 = 31`.
+
+(c) DWL = `0.5 \times 8 \times (25 - 21) = 0.5 \times 8 \times 4 = 16`.
+
+(d) Pigouvian tax = `MEC = 8` per unit. This shifts the supply curve up from `MPC` to `MSC`.
+
+</details>
+
+If you get this wrong, revise: [Market Failure](#market-failure)
+
+</details>

@@ -532,6 +532,23 @@ takes 6 $\mathrm{CO}_2$ molecules to produce 1 molecule of glucose (6C).
 - When describing biochemical pathways (respiration, photosynthesis), name the specific location of
   each stage.
 
+### Worked Example: Cell Membrane Structure
+
+Explain how the fluid mosaic model of the cell membrane accounts for the following properties: (a) selective permeability, (b) ability of cells to communicate, (c) flexibility for phagocytosis.
+
+If you get this wrong, revise: Cell Organelles -- Cell Membrane
+
+<details>
+<summary>Solution</summary>
+
+(a) **Selective permeability:** The phospholipid bilayer allows small, non-polar molecules (O$_2$, CO$_2$) to diffuse through freely, while blocking large or charged molecules. Channel and carrier proteins provide selective pathways for specific ions and polar molecules (e.g., glucose via carrier proteins, Na$^+$ via channel proteins). Cholesterol modulates fluidity, maintaining permeability at different temperatures.
+
+(b) **Cell communication:** Glycoproteins and glycolipids on the cell surface act as recognition markers (e.g., MHC proteins for immune recognition, hormone receptors). Extrinsic proteins on the outer surface can bind signalling molecules, triggering intracellular responses via signal transduction.
+
+(c) **Flexibility:** The phospholipid molecules can move laterally within the bilayer (fluid nature), allowing the membrane to bend and change shape. This enables vesicle formation during endocytosis (phagocytosis) and exocytosis, and allows cells to change shape (e.g., red blood cells squeezing through capillaries).
+
+</details>
+
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
@@ -995,10 +1012,152 @@ $$\Psi_s = -(2)(0.2)(8.314)(293) = -974.4 \mathrm{ kPa}$$
 
 $\Psi = -974.0 \mathrm{ kPa}$
 
-:::
+---
 
-:::
+## Problem Set
 
-:::
+**Problem 1:** Describe three structural differences between prokaryotic and eukaryotic cells, and explain how each difference relates to the cell's function.
 
-:::
+If you get this wrong, revise: Cell Structure -- Prokaryotic vs Eukaryotic Cells
+
+<details>
+<summary>Solution</summary>
+
+1. **Nucleus:** Eukaryotic cells have a true nucleus with a nuclear envelope, while prokaryotic cells have a nucleoid region (no membrane). The nuclear envelope in eukaryotes separates transcription from translation, allowing mRNA processing (splicing, capping, poly-A tail), enabling more complex gene regulation.
+
+2. **Mitochondria:** Eukaryotic cells have mitochondria for aerobic respiration (high ATP yield via oxidative phosphorylation), while prokaryotic cells carry out respiration on their cell membrane (less efficient, limited surface area). Mitochondria provide a large internal surface area (cristae) for the electron transport chain.
+
+3. **Ribosomes:** Eukaryotic cells have 80S ribosomes (larger), while prokaryotic cells have 70S ribosomes (smaller). This difference is the basis of antibiotic specificity -- drugs like tetracycline target 70S ribosomes in bacteria without affecting eukaryotic 80S ribosomes.
+
+</details>
+
+**Problem 2:** A red blood cell is placed in a 0.5 mol/dm$^3$ sucrose solution. Predict what will happen to the cell and explain your reasoning. (The water potential of the red blood cell cytoplasm is approximately -700 kPa.)
+
+If you get this wrong, revise: Membrane Transport -- Osmosis; Water Potential and Osmosis Calculations
+
+<details>
+<summary>Solution</summary>
+
+The water potential of the 0.5 mol/dm$^3$ sucrose solution is:
+
+$\Psi_s = -iCRT = -(1)(0.5)(8.314)(298) = -1238.8 \mathrm{ kPa}$
+
+Since the solution has a more negative water potential (-1238.8 kPa) than the cell cytoplasm (-700 kPa), water will move out of the cell by osmosis (from higher to lower water potential). The red blood cell will lose water, shrink, and become crenated (wrinkled appearance).
+
+</details>
+
+**Problem 3:** Explain the effect of increasing temperature on enzyme activity from 0 degrees C to 60 degrees C. Refer to kinetic energy, collision frequency, and enzyme structure in your answer.
+
+If you get this wrong, revise: Enzymes -- Factors Affecting Enzyme Activity
+
+<details>
+<summary>Solution</summary>
+
+From 0 degrees C to the optimum (~37-40 degrees C): increasing temperature increases the kinetic energy of both enzyme and substrate molecules, leading to more frequent effective collisions between them. The rate of reaction increases as more enzyme-substrate complexes form per unit time.
+
+Beyond the optimum temperature, the increased kinetic energy breaks the hydrogen bonds, ionic bonds, and other weak interactions maintaining the tertiary structure of the enzyme. The active site changes shape (denaturation), and the substrate can no longer bind. Since denaturation is irreversible, the reaction rate decreases sharply and the enzyme is permanently inactivated.
+
+</details>
+
+**Problem 4:** A cell in the G1 phase of the cell cycle has 46 chromosomes. How many chromosomes and DNA molecules are present at the end of S phase, during metaphase of mitosis, and after cytokinesis?
+
+If you get this wrong, revise: Cell Division -- Mitosis; The Cell Cycle
+
+<details>
+<summary>Solution</summary>
+
+End of S phase: 46 chromosomes, 92 DNA molecules (each chromosome has been replicated into two sister chromatids, but chromosome count remains 46 because sister chromatids are still joined at the centromere).
+
+Metaphase of mitosis: 46 chromosomes (each with 2 chromatids), 92 DNA molecules. The chromosomes are aligned at the metaphase plate with spindle fibres attached to centromeres.
+
+After cytokinesis: 46 chromosomes, 46 DNA molecules. Each daughter cell receives 46 single-chromatid chromosomes (the chromatids separated during anaphase). The chromosome number is the same as the original cell, maintaining genetic continuity.
+
+</details>
+
+**Problem 5:** Compare the structure and function of DNA and mRNA.
+
+If you get this wrong, revise: DNA Replication; Protein Synthesis
+
+<details>
+<summary>Solution</summary>
+
+**Structure:** DNA is double-stranded (double helix) with a deoxyribose sugar and thymine as a base. mRNA is single-stranded with a ribose sugar and uracil replacing thymine. DNA is very long (entire genome), while mRNA is a shorter copy of a single gene.
+
+**Function:** DNA stores genetic information long-term in the nucleus. mRNA carries a transient copy of the genetic information from the nucleus to the ribosomes in the cytoplasm for protein synthesis (translation). DNA is self-replicating; mRNA is not.
+
+**Stability:** DNA is chemically stable (deoxyribose is less reactive than ribose; double-stranded structure provides protection). mRNA is short-lived (ribose is more reactive; single-stranded structure is vulnerable to nucleases), allowing rapid changes in gene expression.
+
+</details>
+
+**Problem 6:** Describe the stages of mitosis and explain their significance in ensuring genetic continuity.
+
+If you get this wrong, revise: Cell Division -- Stages of Mitosis
+
+<details>
+<summary>Solution</summary>
+
+**Prophase:** Chromatin condenses into visible chromosomes (each consisting of two sister chromatids joined at the centromere). The nuclear envelope breaks down, spindle fibres form, and centrioles move to opposite poles. Significance: organises and packages the genetic material for even distribution.
+
+**Metaphase:** Chromosomes align at the metaphase plate (cell equator) with spindle fibres attached to centromeres. Significance: ensures each daughter cell receives one copy of each chromosome.
+
+**Anaphase:** Sister chromatids separate at the centromeres and are pulled to opposite poles by shortening spindle fibres. Significance: the critical step that distributes identical genetic material to each daughter cell.
+
+**Telophase:** Chromosomes decondense, nuclear envelopes reform, nucleoli reappear, and spindle fibres break down. Significance: re-establishes the interphase state in each daughter cell.
+
+**Cytokinesis:** The cytoplasm divides, producing two separate daughter cells, each genetically identical to the parent cell.
+
+</details>
+
+**Problem 7:** Explain how vaccination provides immunity against a disease, referring to both the primary and secondary immune responses.
+
+If you get this wrong, revise: Immune System -- Specific (Adaptive) Immunity; Primary vs Secondary Immune Response
+
+<details>
+<summary>Solution</summary>
+
+A vaccine contains a weakened or dead form of the pathogen (or specific antigens). When introduced into the body, it triggers a **primary immune response**: B cells are activated by the antigen, divide by mitosis, and differentiate into plasma cells (which secrete antibodies) and memory B cells. T helper cells are also activated and support the B cell response.
+
+If the person is later exposed to the actual pathogen, memory B cells recognise the antigen and rapidly divide, producing large quantities of antibodies in a **secondary response**. The secondary response is faster (1-3 days vs 5-10 days), produces more antibodies (mainly IgG), and lasts longer. The pathogen is destroyed before it can cause symptoms, providing active artificial immunity.
+
+</details>
+
+**Problem 8:** Describe the role of the Golgi apparatus in protein processing and transport.
+
+If you get this wrong, revise: Cell Organelles -- Golgi Apparatus
+
+<details>
+<summary>Solution</summary>
+
+The Golgi apparatus receives proteins from the rough ER in transport vesicles. It modifies these proteins by adding carbohydrate groups (glycosylation) to form glycoproteins. It sorts proteins based on their destination and packages them into secretory vesicles. Different vesicles are targeted to different locations: some fuse with the cell membrane for export (exocytosis), some become lysosomes (in animal cells), and others are transported to other organelles. The Golgi acts as a processing and distribution centre, ensuring proteins reach their correct destinations.
+
+</details>
+
+**Problem 9:** Calculate the water potential of a 0.15 mol/dm$^3$ NaCl solution at 25 degrees C. ($i = 2$ for NaCl.) Determine whether a plant cell with $\Psi = -800 \mathrm{ kPa}$ and $\Psi_p = 200 \mathrm{ kPa}$ would gain or lose water in this solution.
+
+If you get this wrong, revise: Water Potential and Osmosis Calculations
+
+<details>
+<summary>Solution</summary>
+
+$\Psi_s = -iCRT = -(2)(0.15)(8.314)(298) = -742.5 \mathrm{ kPa}$
+
+Since there is no pressure applied to the external solution: $\Psi_{\mathrm{solution}} = -742.5 \mathrm{ kPa}$
+
+For the plant cell:
+
+$\Psi_{\mathrm{cell}} = \Psi_s + \Psi_p = -800 + 200 = -600 \mathrm{ kPa}$
+
+Since $\Psi_{\mathrm{solution}}$ (-742.5 kPa) is more negative than $\Psi_{\mathrm{cell}}$ (-600 kPa), water moves from the cell (higher water potential) into the solution (lower water potential). The plant cell would lose water.
+
+</details>
+
+**Problem 10:** Explain how the structure of the mitochondrion is adapted to its function in aerobic respiration.
+
+If you get this wrong, revise: Cell Organelles -- Mitochondria; Cellular Respiration
+
+<details>
+<summary>Solution</summary>
+
+The mitochondrion has a double membrane. The inner membrane is folded into cristae, providing a large surface area for the electron transport chain and ATP synthase. The intermembrane space between the two membranes allows protons to accumulate, creating the electrochemical gradient needed for chemiosmosis. The matrix contains enzymes for the Krebs cycle, mitochondrial DNA (allowing the mitochondrion to produce some of its own proteins), and ribosomes. The small volume of the matrix ensures high concentrations of substrates and enzymes, maximising the rate of the Krebs cycle. These features collectively maximise the rate of ATP production through oxidative phosphorylation.
+
+</details>

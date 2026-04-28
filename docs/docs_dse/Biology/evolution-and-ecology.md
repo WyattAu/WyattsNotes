@@ -985,7 +985,16 @@ significance level (typically $p = 0.05$).
 In a population of 10,000 people in a malaria-endemic region, 160 people have sickle cell disease
 (HbS/HbS).
 
-**(a) Calculate the frequency of the HbS allele.**
+**(a)** Calculate the frequency of the HbS allele.
+
+**(b)** Calculate the number of heterozygous carriers (HbA/HbS) in the population.
+
+**(c)** Explain why the HbS allele frequency is higher in this region than in non-malarial regions.
+
+If you get this wrong, revise: Genetics of Evolution -- Hardy-Weinberg Equilibrium
+
+<details>
+<summary>Solution</summary>
 
 Sickle cell disease is homozygous recessive, so:
 
@@ -995,124 +1004,98 @@ $$q = \sqrt{0.016} = 0.1265$$
 
 Frequency of HbS = 0.1265 (or 12.65%)
 
-**(b) Calculate the number of heterozygous carriers (HbA/HbS) in the population.**
-
 $$p = 1 - 0.1265 = 0.8735$$
 
 $$2pq = 2(0.8735)(0.1265) = 0.2210$$
 
 Number of heterozygotes = $0.2210 \times 10000 = 2210$ people
 
-**(c) Explain why the HbS allele frequency is higher in this region than in non-malarial regions.**
+In malaria-endemic regions, heterozygous individuals (HbA/HbS) have resistance to malaria, giving them a selective advantage over homozygous normal individuals (susceptible to malaria) and homozygous recessive individuals (sickle cell disease). This is heterozygote advantage (balanced polymorphism), maintaining the HbS allele at higher frequency.
 
-In malaria-endemic regions, heterozygous individuals (HbA/HbS) have resistance to malaria, giving
-them a selective advantage over homozygous normal individuals (who are susceptible to malaria) and
-homozygous recessive individuals (who have sickle cell disease). This is heterozygote advantage
-(balanced polymorphism), which maintains the HbS allele at higher frequency in the population.
+</details>
 
 ### Worked Example 2: Ecological Pyramid Calculations
 
 A grassland ecosystem has the following energy values at each trophic level:
 
-- Producers: 50,000 kJ/m squared/year
-- Primary consumers: 5,000 kJ/m squared/year
-- Secondary consumers: 400 kJ/m squared/year
+- Producers: 50,000 kJ/m$^2$/year
+- Primary consumers: 5,000 kJ/m$^2$/year
+- Secondary consumers: 400 kJ/m$^2$/year
 
-**(a) Calculate the percentage energy transfer from producers to primary consumers.**
+**(a)** Calculate the percentage energy transfer from producers to primary consumers.
 
-$$\mathrm{Transfer efficiency} = \frac{5000}{50000} \times 100\% = 10\%$$
+**(b)** Calculate the percentage energy transfer from primary consumers to secondary consumers.
 
-**(b) Calculate the percentage energy transfer from primary consumers to secondary consumers.**
+**(c)** Explain why a fifth trophic level is unlikely in this ecosystem.
 
-$$\mathrm{Transfer efficiency} = \frac{400}{5000} \times 100\% = 8\%$$
+If you get this wrong, revise: Ecosystem Ecology -- The 10% Rule; Ecological Pyramids
 
-**(c) Explain why the transfer efficiency from primary to secondary consumers is lower than from
-producers to primary consumers.**
+<details>
+<summary>Solution</summary>
 
-Primary consumers (herbivores) are generally less efficient at converting food into biomass than the
-direct absorption of sunlight by producers. Also, not all plant biomass is edible or digestible
-(cellulose, lignin). Secondary consumers are carnivores, which tend to have higher metabolic rates
-and thus lose more energy as heat through respiration relative to the energy they assimilate.
+(a) $\mathrm{Transfer efficiency} = \frac{5000}{50000} \times 100\% = 10\%$
 
-**(d) Explain why a fifth trophic level is unlikely in this ecosystem.**
+(b) $\mathrm{Transfer efficiency} = \frac{400}{5000} \times 100\% = 8\%$
 
-At the secondary consumer level, only 400 kJ/m squared/year is available. A tertiary consumer would
-receive approximately 10% of this: 40 kJ/m squared/year. A quaternary consumer (fifth trophic level)
-would receive only about 4 kJ/m squared/year, which is insufficient to sustain a viable population.
-This demonstrates the energy limitation on food chain length.
+(c) At the secondary consumer level, only 400 kJ/m$^2$/year is available. A tertiary consumer would receive approximately 10% of this: 40 kJ/m$^2$/year. A quaternary consumer (fifth trophic level) would receive only about 4 kJ/m$^2$/year, which is insufficient to sustain a viable population. This demonstrates the energy limitation on food chain length.
+
+</details>
 
 ### Worked Example 3: Population Growth
 
-A bacterial population starts with 100 cells and has a growth rate of $r = 0.5$ per hour under ideal
-conditions.
+A bacterial population starts with 100 cells and has a growth rate of $r = 0.5$ per hour under ideal conditions.
 
-**(a) Calculate the population size after 6 hours (exponential growth).**
+**(a)** Calculate the population size after 6 hours (exponential growth).
 
-$$N = N_0 \times e^{rt}$$
+**(b)** If the carrying capacity is 5,000 cells, calculate the population size after 6 hours using the logistic growth model.
 
-$$N = 100 \times e^{0.5 \times 6} = 100 \times e^3 = 100 \times 20.09 = 2009 \mathrm{ cells}$$
+If you get this wrong, revise: Population Ecology -- Population Growth Models; Carrying Capacity
 
-**(b) If the carrying capacity of the environment is 5,000 cells, calculate the population size
-after 6 hours using the logistic growth model.**
+<details>
+<summary>Solution</summary>
 
-$$N = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) e^{-rt}}$$
+(a) $N = N_0 \times e^{rt} = 100 \times e^{0.5 \times 6} = 100 \times e^3 = 100 \times 20.09 = 2009$ cells
 
-$$N = \frac{5000}{1 + \left(\frac{5000 - 100}{100}\right) e^{-0.5 \times 6}}$$
+(b) Using the logistic equation:
 
-$$N = \frac{5000}{1 + 49 \times e^{-3}}$$
+$$N = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) e^{-rt}} = \frac{5000}{1 + \left(\frac{5000 - 100}{100}\right) e^{-0.5 \times 6}}$$
 
-$$N = \frac{5000}{1 + 49 \times 0.0498}$$
+$$N = \frac{5000}{1 + 49 \times e^{-3}} = \frac{5000}{1 + 49 \times 0.0498} = \frac{5000}{1 + 2.44} = \frac{5000}{3.44} = 1453 \mathrm{ cells}$$
 
-$$N = \frac{5000}{1 + 2.44} = \frac{5000}{3.44} = 1453 \mathrm{ cells}$$
+The logistic model predicts fewer cells (1,453 vs 2,009) because it accounts for the limiting effect of carrying capacity -- as the population grows, resources become scarcer and the growth rate decreases.
 
-**(c) Compare the two results and explain the difference.**
-
-The exponential model predicts 2,009 cells, while the logistic model predicts 1,453 cells. The
-logistic model accounts for the limiting effect of carrying capacity -- as the population grows,
-resources become scarcer and the growth rate decreases. The exponential model assumes unlimited
-resources, which is unrealistic in nature.
+</details>
 
 ### Worked Example 4: Chi-Squared Test for Hardy-Weinberg
 
-A population of 1,000 plants is surveyed for flower colour. Red flowers (RR) are dominant, white
-flowers (rr) are recessive. The observed numbers are:
+A population of 1,000 plants is surveyed for flower colour. Red flowers (RR) are dominant, white flowers (rr) are recessive. The observed numbers are: Red (RR and Rr): 840; White (rr): 160.
 
-- Red (RR and Rr): 840
-- White (rr): 160
+**(a)** Calculate the expected numbers under Hardy-Weinberg equilibrium.
 
-**(a) Calculate the expected numbers under Hardy-Weinberg equilibrium.**
+**(b)** Interpret the result.
 
-$$q^2 = \frac{160}{1000} = 0.16$$
+If you get this wrong, revise: Genetics of Evolution -- Hardy-Weinberg Equilibrium; DSE Exam Focus
 
-$$q = 0.4, \quad p = 0.6$$
+<details>
+<summary>Solution</summary>
+
+$$q^2 = \frac{160}{1000} = 0.16, \quad q = 0.4, \quad p = 0.6$$
 
 Expected frequencies: $p^2 = 0.36$, $2pq = 0.48$, $q^2 = 0.16$
 
-Expected numbers (total = 1000):
+Expected numbers: RR = $0.36 \times 1000 = 360$; Rr = $0.48 \times 1000 = 480$; rr = $0.16 \times 1000 = 160$
 
-- RR: $0.36 \times 1000 = 360$
-- Rr: $0.48 \times 1000 = 480$
-- rr: $0.16 \times 1000 = 160$
+Red (RR + Rr): $360 + 480 = 840$; White (rr): 160
 
-Note: we cannot distinguish RR from Rr phenotypically, so we combine them:
+$$\chi^2 = \frac{(840 - 840)^2}{840} + \frac{(160 - 160)^2}{160} = 0$$
 
-- Red (RR + Rr): $360 + 480 = 840$
-- White (rr): 160
+The chi-squared value is 0, which is less than the critical value of 3.84 (for $df = 1$ at $p = 0.05$). There is no significant difference between observed and expected frequencies. The population is in Hardy-Weinberg equilibrium for this trait.
 
-Degrees of freedom = $2 - 1 = 1$ (two phenotype categories)
-
-$$\chi^2 = \frac{(840 - 840)^2}{840} + \frac{(160 - 160)^2}{160} = 0 + 0 = 0$$
-
-**(b) Interpret the result.**
-
-The chi-squared value is 0, which is less than the critical value of 3.84 (for $df = 1$ at
-$p = 0.05$). There is no significant difference between observed and expected frequencies. The
-population is in Hardy-Weinberg equilibrium for this trait.
+</details>
 
 ### Worked Example 5: Eutrophication Data Interpretation
 
-The following data show dissolved oxygen (DO) levels in a lake at different distances from a point
-where agricultural fertiliser runoff enters:
+The following data show dissolved oxygen (DO) levels in a lake at different distances from a point where agricultural fertiliser runoff enters:
 
 | Distance from runoff source (km) | DO concentration (mg/L) |
 | -------------------------------- | ----------------------- |
@@ -1123,35 +1106,24 @@ where agricultural fertiliser runoff enters:
 | 10.0                             | 8.5                     |
 | 15.0                             | 8.6                     |
 
-**(a) Describe the trend shown in the data.**
+**(a)** Describe the trend and explain the biological processes responsible.
 
-Dissolved oxygen concentration increases with distance from the runoff source. The DO level is
-lowest (2.1 mg/L) closest to the runoff point and approaches approximately 8.5-8.6 mg/L at distances
-of 10 km or more.
+**(b)** A DO level below 4 mg/L is harmful to most fish. Over what distance range would fish be adversely affected?
 
-**(b) Explain the biological processes responsible for this trend.**
+**(c)** Suggest two strategies to reduce the impact.
 
-At the runoff source, high nutrient concentration (nitrates and phosphates) stimulates rapid algal
-growth (algal bloom). When algae die, decomposers (bacteria) break them down through aerobic
-respiration, consuming large amounts of dissolved oxygen. This causes hypoxia (low DO) near the
-source. As distance increases, nutrient concentration decreases (diluted and dispersed), algal
-growth is less excessive, less decomposition occurs, and DO levels recover towards normal saturation
-levels.
+If you get this wrong, revise: Human Impact -- Pollution (Eutrophication)
 
-**(c) A DO level below 4 mg/L is considered harmful to most fish species. Over what distance range
-would fish be adversely affected?**
+<details>
+<summary>Solution</summary>
 
-From the data, DO is below 4 mg/L at distances of 0.5 km (2.1 mg/L) and 1.0 km (3.4 mg/L). At 2.0
-km, DO is 5.8 mg/L, which is above the threshold. Therefore, fish would be adversely affected within
-approximately 0-1.5 km of the runoff source.
+(a) DO increases with distance from the runoff source. At the source, high nutrient concentration stimulates rapid algal growth (algal bloom). When algae die, decomposers break them down through aerobic respiration, consuming dissolved oxygen and causing hypoxia. As distance increases, nutrient concentration decreases (dilution), algal growth is less excessive, and DO levels recover.
 
-**(d) Suggest two strategies to reduce the impact of fertiliser runoff on the lake.**
+(b) DO is below 4 mg/L at 0.5 km (2.1 mg/L) and 1.0 km (3.4 mg/L). At 2.0 km, DO is 5.8 mg/L (above threshold). Fish would be adversely affected within approximately 0-1.5 km of the runoff source.
 
-1. **Create buffer zones (riparian zones):** Plant vegetation strips along the edges of the lake and
-   waterways. Plants absorb nutrients from runoff before they reach the water body.
-2. **Regulate fertiliser application:** Implement laws restricting the amount and timing of
-   fertiliser use on nearby farmland (e.g., no application before heavy rain; use slow-release
-   fertilisers).
+(c) 1. Create buffer zones (riparian zones): plant vegetation strips along the lake edge to absorb nutrients before they reach the water. 2. Regulate fertiliser application: restrict the amount and timing of fertiliser use on nearby farmland (e.g., no application before heavy rain; use slow-release fertilisers).
+
+</details>
 
 ---
 
@@ -1189,3 +1161,196 @@ approximately 0-1.5 km of the runoff source.
   bloom, death and decomposition, oxygen depletion, organism death.
 - Remember that energy flow is unidirectional and always decreasing, while nutrient cycles are
   cyclic.
+
+---
+
+## Problem Set
+
+**Problem 1:** In a population of butterflies, 64% have white wings (recessive, ww) and 36% have coloured wings (dominant, W\*). Calculate the allele frequencies and the proportion of heterozygotes.
+
+If you get this wrong, revise: Genetics of Evolution -- Allele Frequency Calculations
+
+<details>
+<summary>Solution</summary>
+
+$q^2 = 0.64$, so $q = \sqrt{0.64} = 0.8$.
+
+$p = 1 - 0.8 = 0.2$.
+
+$2pq = 2(0.2)(0.8) = 0.32$.
+
+The proportion of heterozygotes (Ww) is 0.32, or 32%.
+
+Note that the heterozygote frequency (32%) is higher than the homozygous dominant frequency ($p^2 = 0.04$, or 4%), even though coloured butterflies are less common. This is a common result when one allele is rare.
+
+</details>
+
+**Problem 2:** Explain how Darwin's theory of natural selection accounts for the development of antibiotic resistance in bacteria. Use the terms "variation," "selection pressure," "differential survival," and "inheritance" in your answer.
+
+If you get this wrong, revise: Natural Selection -- Darwin's Theory; Classic Examples (Antibiotic resistance)
+
+<details>
+<summary>Solution</summary>
+
+1. **Variation:** Within any bacterial population, random mutations occur during DNA replication. Some bacteria may acquire a mutation that confers resistance to a particular antibiotic (e.g., a gene for beta-lactamase enzyme).
+
+2. **Selection pressure:** When an antibiotic is administered, it creates a strong selection pressure. The antibiotic kills or inhibits susceptible bacteria.
+
+3. **Differential survival:** Bacteria carrying the resistance allele survive the antibiotic treatment and continue to reproduce, while susceptible bacteria die. The resistant bacteria have higher fitness in the presence of the antibiotic.
+
+4. **Inheritance:** The resistance gene is passed to offspring during binary fission (vertical transmission) and can also be transferred to other bacteria via plasmids during conjugation (horizontal transmission). Over generations, the resistant allele increases in frequency.
+
+The key point is that the mutation arises randomly, not because the bacteria "need" it. The antibiotic merely selects for pre-existing resistant individuals.
+
+</details>
+
+**Problem 3:** A volcanic island is formed in the ocean. Describe the process of primary succession that would occur on this island over thousands of years.
+
+If you get this wrong, revise: Community Ecology -- Ecological Succession
+
+<details>
+<summary>Solution</summary>
+
+1. **Pioneer species:** Lichens colonise the bare volcanic rock first. They require no soil, absorb water and minerals directly from the rock, and can tolerate extreme conditions.
+
+2. **Soil formation:** Lichens secrete acids that slowly break down the rock surface, beginning soil formation. Dead lichens contribute organic matter.
+
+3. **Mosses and liverworts:** As a thin soil layer accumulates, mosses colonise. They further contribute organic matter when they die, deepening the soil.
+
+4. **Grasses and herbs:** As soil deepens, grasses and herbaceous plants establish. Their roots help bind soil and retain water.
+
+5. **Shrubs and small trees:** As soil becomes deeper and more nutrient-rich, woody plants establish.
+
+6. **Climax community:** After hundreds to thousands of years, a relatively stable community (e.g., tropical forest, depending on climate) becomes established.
+
+</details>
+
+**Problem 4:** A food chain consists of grass $\to$ rabbit $\to$ fox. If the grass contains 20,000 kJ of energy, calculate the energy available to the fox. Explain the energy losses at each trophic level.
+
+If you get this wrong, revise: Ecosystem Ecology -- The 10% Rule; Trophic Levels
+
+<details>
+<summary>Solution</summary>
+
+Using the 10% rule:
+
+- Grass (producer): 20,000 kJ
+- Rabbit (primary consumer): $20,000 \times 0.10 = 2,000$ kJ
+- Fox (secondary consumer): $2,000 \times 0.10 = 200$ kJ
+
+Energy losses at each level are due to: respiration (heat), excretion (waste), undigested material (faeces), and energy used for movement and maintenance. The 90% loss at each step explains why food chains rarely exceed 4-5 trophic levels.
+
+</details>
+
+**Problem 5:** Distinguish between homologous and analogous structures, providing one example of each. Explain the evolutionary significance of each type.
+
+If you get this wrong, revise: Evidence for Evolution (Detailed) -- Homologous vs Analogous Structures
+
+<details>
+<summary>Solution</summary>
+
+**Homologous structures:** Derived from a common ancestor; similar underlying anatomy but may serve different functions. Example: the pentadactyl limb in humans (grasping), bats (flying), and whales (swimming) -- all share the same basic bone arrangement. Significance: indicates **divergent evolution** from a common ancestor.
+
+**Analogous structures:** Similar function but different evolutionary origins. Example: the wing of a bird (modified forelimb with bones) and the wing of an insect (exoskeleton extension with no bones). Significance: indicates **convergent evolution** -- unrelated species evolve similar traits independently due to similar environmental pressures.
+
+</details>
+
+**Problem 6:** Two species of finch live on the same island. One has a large beak and eats hard seeds; the other has a small beak and eats small seeds. If a drought causes only large, hard seeds to be available, predict what will happen to each population over several generations. Explain your reasoning.
+
+If you get this wrong, revise: Natural Selection -- Types of Natural Selection
+
+<details>
+<summary>Solution</summary>
+
+The large-beaked finch population will likely increase because:
+- The available food (hard seeds) matches their beak adaptation
+- They have higher survival and reproductive success
+- This is **directional selection** favouring the large beak phenotype
+
+The small-beaked finch population will likely decrease because:
+- They cannot efficiently crack hard seeds
+- They face increased competition and reduced food availability
+- Many individuals will starve or fail to reproduce
+
+If the drought persists long enough, the small-beaked species may go extinct on this island (competitive exclusion). If some individuals with slightly larger beaks exist due to genetic variation, the population may evolve larger beaks over generations. This demonstrates natural selection acting on heritable variation in response to an environmental change.
+
+</details>
+
+**Problem 7:** Describe the nitrogen cycle, naming the specific processes and the bacteria involved at each stage.
+
+If you get this wrong, revise: Ecosystem Ecology -- Nutrient Cycles (Nitrogen cycle)
+
+<details>
+<summary>Solution</summary>
+
+1. **Nitrogen fixation:** Atmospheric N$_2$ converted to NH$_3$ by nitrogen-fixing bacteria (_Rhizobium_ in root nodules of legumes, _Azotobacter_ free-living in soil, cyanobacteria) or lightning.
+
+2. **Nitrification:** NH$_3$ converted to NO$_2^-$ by _Nitrosomonas_, then to NO$_3^-$ by _Nitrobacter_.
+
+3. **Absorption:** Plants absorb NO$_3^-$ through their roots.
+
+4. **Assimilation:** Plants incorporate nitrogen into amino acids and proteins.
+
+5. **Feeding:** Animals obtain nitrogen by eating plants or other animals.
+
+6. **Ammonification:** Decomposer bacteria break down dead organisms and waste, releasing NH$_3$.
+
+7. **Denitrification:** Denitrifying bacteria (_Pseudomonas_) convert NO$_3^-$ back to N$_2$ under anaerobic conditions, returning it to the atmosphere.
+
+</details>
+
+**Problem 8:** Explain the process of allopatric speciation using an example of a river changing course and dividing a population of beetles.
+
+If you get this wrong, revise: Genetics of Evolution -- Speciation
+
+<details>
+<summary>Solution</summary>
+
+1. **Geographic isolation:** The river changing course creates a barrier, physically separating the beetle population into two subpopulations.
+
+2. **No gene flow:** The two subpopulations cannot interbreed across the river.
+
+3. **Different selection pressures:** Each bank may have different environmental conditions (vegetation, predators, soil), favouring different traits.
+
+4. **Independent evolution:** Natural selection, mutation, and genetic drift act independently on each population, causing allele frequencies to diverge.
+
+5. **Accumulation of differences:** Over many generations, genetic and phenotypic differences accumulate.
+
+6. **Reproductive isolation:** Even if the river dries up, accumulated differences (behavioural, mechanical, or genetic) may prevent successful interbreeding. At this point, two separate species exist.
+
+</details>
+
+**Problem 9:** Explain the difference between bioaccumulation and biomagnification, using DDT as an example.
+
+If you get this wrong, revise: Human Impact -- Pollution (Bioaccumulation vs Biomagnification)
+
+<details>
+<summary>Solution</summary>
+
+**Bioaccumulation** is the accumulation of a substance within a single organism over its lifetime. For example, DDT accumulates in the fatty tissues of an individual fish as it continuously absorbs DDT from contaminated water and food, faster than it can excrete it.
+
+**Biomagnification** is the increasing concentration of a substance at each successive trophic level in a food chain. For example, DDT concentration increases from plankton (low) to zooplankton to small fish to large fish to birds of prey (highest). At each trophic level, organisms consume many organisms from the level below, accumulating all the DDT those prey organisms contained.
+
+Key distinction: bioaccumulation is within one organism; biomagnification is across the food chain. Both can occur simultaneously.
+
+</details>
+
+**Problem 10:** A student measures Simpson's Diversity Index for two ponds. Pond A: D = 0.85. Pond B: D = 0.35. The student concludes that Pond A is healthier. Evaluate this conclusion and suggest what additional information would strengthen it.
+
+If you get this wrong, revise: Biodiversity Measurement -- Simpson's Diversity Index
+
+<details>
+<summary>Solution</summary>
+
+The conclusion is partially supported. A higher Simpson's Diversity Index (Pond A: D = 0.85) indicates greater biodiversity (more species, more evenly distributed) compared to Pond B (D = 0.35, which suggests one or a few species dominate). Higher biodiversity generally correlates with a healthier, more stable ecosystem.
+
+However, additional information would strengthen the conclusion:
+
+- **Abiotic factors:** Water pH, temperature, dissolved oxygen, pollutant levels
+- **Specific species present:** Presence of indicator species (e.g., stonefly larvae indicate clean water)
+- **Temporal data:** Measurements over time to show trends (declining biodiversity in Pond B?)
+- **Physical habitat:** Pond size, vegetation cover, surrounding land use
+
+Without this context, it is possible that Pond A has high diversity but is polluted with tolerant species, or that Pond B naturally has low diversity due to its size or location.
+
+</details>

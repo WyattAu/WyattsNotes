@@ -166,6 +166,27 @@ Cross: Rr x Rr yields 1 RR (red) : 2 Rr (pink) : 1 rr (white).
 The phenotypic ratio (1:2:1) matches the genotypic ratio directly. This is a hallmark of incomplete
 dominance.
 
+### Worked Example: Incomplete Dominance vs Codominance
+
+A red-flowered snapdragon (RR) is crossed with a white-flowered snapdragon (rr). The F1 offspring are self-pollinated.
+
+(a) State the genotype and phenotype of the F1 generation.
+
+(b) What phenotypic ratio is expected in the F2 generation?
+
+(c) If a roan shorthorn cow (RW) is crossed with a white cow (WW), what phenotypic ratio is expected? Explain why this is different from the snapdragon cross.
+
+<details>
+<summary>Solution</summary>
+
+(a) The F1 genotype is Rr. Since this is incomplete dominance, the phenotype is pink (intermediate between red and white).
+
+(b) F2 cross: Rr x Rr. The phenotypic ratio is 1 red (RR) : 2 pink (Rr) : 1 white (rr). This 1:2:1 ratio matches the genotypic ratio because the heterozygote has a distinct intermediate phenotype.
+
+(c) RW x WW produces: 1 roan (RW) : 1 white (WW). This is a 1:1 ratio, NOT 1:2:1. The difference is that coat colour in shorthorn cattle is **codominance**, not incomplete dominance. In codominance, both alleles are fully expressed simultaneously -- roan cattle have both red and white hairs. In incomplete dominance (snapdragons), the heterozygote is a blend (pink, a genuinely intermediate colour).
+
+</details>
+
 ### Codominance
 
 In codominance, both alleles are fully expressed simultaneously in the heterozygote. Neither allele
@@ -240,6 +261,26 @@ Gametes from man: I^B, i
 Possible genotypes: I^A I^B (AB), I^A i (A), I^B i (B), ii (O)
 
 Possible blood groups of child: A, B, AB, or O (all four are possible).
+
+### Worked Example: Epistasis Ratio Identification
+
+In a plant, gene A controls flower colour (A = pigment produced, a = no pigment) and gene B controls petal shape (B = normal petals, b = narrow petals). A plant with genotype AaBb is self-pollinated, and the following phenotypic ratio is observed: 9 coloured, normal : 3 coloured, narrow : 4 white. Identify the type of epistasis and explain.
+
+<details>
+<summary>Solution</summary>
+
+This is **recessive epistasis** (9:3:4 ratio).
+
+The gene A locus is epistatic over the B locus. When the plant is aa (homozygous recessive for A), no pigment is produced regardless of the B/b genotype, so the flowers are white. This masks the expression of petal shape.
+
+The 9:3:4 ratio breaks down as:
+- 9 A_B_ = coloured, normal petals
+- 3 A_bb = coloured, narrow petals
+- 4 aa\_\_ = white (includes 1 aaBB, 2 aaBb, 1 aabb)
+
+The 4 white category combines all genotypes that are aa, regardless of the B/b genotype. The aa genotype is epistatic because it masks the effect of the B locus.
+
+</details>
 
 ---
 
@@ -858,136 +899,176 @@ material within a patient's cells.
 
 ---
 
-## Practice Problems
+## Problem Set
 
-<details>
-<summary>Question 1: Monohybrid Cross with Pedigree Analysis</summary>
-
-Cystic fibrosis is an autosomal recessive disorder caused by a mutation in the CFTR gene. A couple
-has a child with cystic fibrosis. Neither parent has the disorder.
+**Problem 1:** Cystic fibrosis is an autosomal recessive disorder. A couple has a child with cystic fibrosis. Neither parent has the disorder.
 
 (a) What are the genotypes of the parents?
 
-(b) What is the probability that their next child will also have cystic fibrosis?
+(b) What is the probability that their next child will have cystic fibrosis?
 
 (c) What is the probability that their next child will be a carrier?
 
-(a) Both parents are carriers: Cc. They must each carry one recessive allele (c) because their
-affected child is cc, and each parent contributed one allele.
+If you get this wrong, revise: Mendelian Genetics -- Monohybrid Crosses; Terminology
 
-(b) Cross: Cc x Cc. P(cc) = 1/4 = 25%.
+<details>
+<summary>Solution</summary>
+
+(a) Both parents are carriers: Cc. They must each carry one recessive allele (c) because their affected child is cc, and each parent contributed one allele.
+
+(b) Cross: Cc x Cc. Punnett square gives: 1 CC : 2 Cc : 1 cc. P(cc) = 1/4 = 25%.
 
 (c) P(Cc) = 2/4 = 1/2 = 50%.
 
 </details>
 
-<details>
-<summary>Question 2: X-Linked Inheritance</summary>
-
-A woman with normal vision whose father was colour blind marries a man with normal vision. Colour
-blindness is X-linked recessive.
+**Problem 2:** A woman with normal vision whose father was colour blind marries a man with normal vision. Colour blindness is X-linked recessive.
 
 (a) What is the woman's genotype?
 
 (b) What proportion of their sons will be colour blind?
 
-(c) What proportion of their daughters will be colour blind?
+(c) What proportion of their daughters will be carriers?
 
-(d) What proportion of their daughters will be carriers?
+If you get this wrong, revise: Sex-Linked Inheritance -- X-Linked Inheritance; Red-Green Colour Blindness
 
-(a) The woman's father was colour blind (X^n Y), so he gave her X^n. Her mother could be X^N X^N or
-X^N X^n. The woman's genotype is X^N X^n (carrier).
+<details>
+<summary>Solution</summary>
 
-(b) The man is X^N Y. Cross: X^N X^n x X^N Y. Sons receive X from their mother: P(X^n Y) = 1/2. So
-50% of sons will be colour blind.
+(a) The woman's father was colour blind (X$^n$Y), so he gave her X$^n$. Her mother could be X$^N$X$^N$ or X$^N$X$^n$. The woman is X$^N$X$^n$ (carrier).
 
-(c) Daughters receive X^N from their father and either X^N or X^n from their mother. P(X^N X^n) =
-1/2 and P(X^N X^N) = 1/2. No daughters will be colour blind (they would need X^n from their father,
-which he does not have).
+(b) The man is X$^N$Y. Cross: X$^N$X$^n$ x X$^N$Y. Sons receive X from their mother: P(X$^n$Y) = 1/2. So 50% of sons will be colour blind.
 
-(d) P(X^N X^n) = 1/2. So 50% of daughters will be carriers.
+(c) Daughters receive X$^N$ from their father. P(X$^N$X$^n$) = 1/2. So 50% of daughters will be carriers.
 
 </details>
 
+**Problem 3:** In pea plants, round seeds (R) are dominant over wrinkled (r), and yellow seeds (Y) are dominant over green (y). Two double heterozygotes (RrYy) are crossed. Use the forked-line method to determine the probability of producing a wrinkled, green offspring.
+
+If you get this wrong, revise: Mendelian Genetics -- Dihybrid Crosses; The Forked-Line Method
+
 <details>
-<summary>Question 3: Epistasis</summary>
+<summary>Solution</summary>
 
-In a particular plant species, flower colour is determined by two genes. Gene P controls pigment
-production (P = pigment produced, p = no pigment). Gene R controls pigment type (R = red, r = blue).
-Both genes show simple dominance. A plant with genotype PpRr is self-pollinated.
+Using the forked-line method:
 
-(a) What phenotypic ratio is expected?
+P(wrinkled) = 1/4 (rr from Rr x Rr)
 
-(b) Explain the mechanism.
+P(green) = 1/4 (yy from Yy x Yy)
 
-(a) The phenotypic ratio is 9 red : 3 blue : 4 white (recessive epistasis).
+P(wrinkled, green) = 1/4 x 1/4 = 1/16
 
-(b) Gene P is epistatic over gene R. If the plant is pp (homozygous recessive for P), no pigment is
-produced regardless of the R/r genotype, so the flowers are white. If the plant is P* (at least one
-dominant P allele), pigment is produced and the R/r locus determines the colour: P_R* = red, P_rr =
-blue. This gives a 9:3:4 ratio from a PpRr x PpRr cross.
+This is consistent with the 9:3:3:1 dihybrid ratio, where wrinkled green corresponds to the 1/16 category.
 
 </details>
 
+**Problem 4:** In Labrador retrievers, gene B controls coat colour (B = black, b = brown) and gene E controls pigment deposition (E = pigment deposited, e = no pigment). A BbEe x BbEe cross produces a 9:3:4 phenotypic ratio. Explain this ratio and identify the epistatic gene.
+
+If you get this wrong, revise: Gene Interaction (Epistasis) -- Recessive Epistasis
+
 <details>
-<summary>Question 4: Genetic Engineering</summary>
+<summary>Solution</summary>
 
-Describe the steps involved in using genetic engineering to produce human growth hormone (HGH) in
-bacteria. Explain why cDNA is used rather than genomic DNA.
+The 9:3:4 ratio indicates **recessive epistasis**. Gene E is epistatic over gene B.
 
-1. mRNA encoding HGH is extracted from human pituitary gland cells (or cells that express HGH).
+- 9 B\_E\_ = black (pigment deposited, black colour)
+- 3 bbE\_ = brown (pigment deposited, brown colour)
+- 4 \_\_ee = yellow (no pigment deposited regardless of B/b genotype)
 
-2. Reverse transcriptase is used to synthesise complementary DNA (cDNA) from the HGH mRNA template.
-   This removes introns (non-coding regions) because bacteria lack the splicing machinery to remove
-   introns from eukaryotic pre-mRNA.
-
-3. The cDNA and a bacterial plasmid vector are both cut with the same restriction enzyme (e.g.,
-   EcoRI), producing complementary sticky ends.
-
-4. The HGH cDNA is mixed with the cut plasmid. Complementary sticky ends base-pair by hydrogen
-   bonding. DNA ligase seals the sugar-phosphate backbone, creating a recombinant plasmid.
-
-5. The recombinant plasmid is introduced into _E. coli_ bacteria by transformation (heat shock or
-   electroporation).
-
-6. Transformed bacteria are selected using a marker gene (e.g., ampicillin resistance) on the
-   plasmid. Only bacteria that have taken up the plasmid survive on ampicillin-containing agar.
-
-7. Successfully transformed bacteria are cultured in large fermenters. The bacterial cells
-   transcribe the HGH cDNA and translate it into the HGH protein.
-
-8. The HGH protein is extracted from the bacterial culture, purified, and packaged for medical use.
-
-cDNA is used because genomic DNA contains introns. Bacteria (prokaryotes) do not have spliceosomes
-and cannot remove introns from pre-mRNA. If genomic DNA were inserted, the bacterial ribosome would
-attempt to translate the intron sequences, producing a non-functional protein or no protein at all.
-cDNA contains only the exons (coding sequence) and produces a functional protein in bacteria.
+The 4 yellow includes: 1 BBee, 2 Bbee, 1 bbee. When the genotype is ee (homozygous recessive for E), no pigment is deposited, so the coat is yellow regardless of whether the B/b locus would normally produce black or brown. The E locus is epistatic because ee masks the expression of the B locus.
 
 </details>
 
+**Problem 5:** Describe the steps involved in producing human growth hormone (HGH) in bacteria. Explain why cDNA is used rather than genomic DNA.
+
+If you get this wrong, revise: Genetic Engineering Techniques -- Recombinant DNA Technology
+
 <details>
-<summary>Question 5: PCR and DNA Fingerprinting</summary>
+<summary>Solution</summary>
 
-A forensic scientist has a tiny blood stain from a crime scene. She wants to compare the DNA profile
-to that of a suspect.
+1. mRNA for HGH is extracted from human pituitary gland cells.
+2. Reverse transcriptase produces cDNA from the mRNA (removes introns).
+3. The cDNA and a plasmid are both cut with the same restriction enzyme, producing complementary sticky ends.
+4. DNA ligase seals the cDNA into the plasmid, creating a recombinant plasmid.
+5. The recombinant plasmid is introduced into _E. coli_ by transformation.
+6. Transformed bacteria are selected using a marker gene (antibiotic resistance).
+7. Bacteria are cultured; they transcribe and translate the HGH gene.
 
-(a) Explain why PCR is necessary before DNA fingerprinting.
+cDNA is used because genomic DNA contains introns. Bacteria lack spliceosomes and cannot remove introns from pre-mRNA. If genomic DNA were inserted, the ribosome would translate intron sequences, producing a non-functional protein.
 
-(b) After 30 cycles of PCR starting from 5 DNA molecules, how many DNA molecules will be present?
+</details>
 
-(c) Explain how gel electrophoresis separates DNA fragments.
+**Problem 6:** A forensic scientist has a tiny blood stain. After 30 cycles of PCR starting from 5 DNA molecules, how many DNA molecules will be present? Explain why PCR is necessary before DNA fingerprinting.
 
-(a) PCR is necessary because the amount of DNA in a tiny blood stain is far too small for direct
-analysis. PCR amplifies the specific STR loci to produce millions of copies, providing sufficient
-DNA for gel electrophoresis and comparison.
+If you get this wrong, revise: Genetic Engineering Techniques -- Polymerase Chain Reaction (PCR); DNA Fingerprinting
 
-(b) After 30 cycles: N = 5 x 2^30 = 5 x 1,073,741,824 = 5,368,709,120 DNA molecules.
+<details>
+<summary>Solution</summary>
 
-(c) During gel electrophoresis, an electric current is applied across an agarose gel. DNA fragments
-are negatively charged (due to the phosphate groups in the sugar-phosphate backbone) and migrate
-towards the positive electrode (anode). Smaller fragments move through the gel matrix more easily
-and travel further, while larger fragments encounter more resistance and travel shorter distances.
-This separates the fragments by size, producing a banding pattern (DNA fingerprint) that can be
-compared between samples.
+After 30 cycles: $N = 5 \times 2^{30} = 5 \times 1{,}073{,}741{,}824 = 5{,}368{,}709{,}120$ DNA molecules.
+
+PCR is necessary because the amount of DNA in a tiny blood stain is far too small for direct analysis. PCR amplifies specific STR loci to produce millions of copies, providing sufficient DNA for gel electrophoresis and comparison. Without PCR, the DNA profile could not be obtained from trace evidence.
+
+</details>
+
+**Problem 7:** Explain the difference between somatic and germline gene therapy. Why is germline gene therapy currently not permitted in most countries?
+
+If you get this wrong, revise: Gene Therapy -- Types of Gene Therapy
+
+<details>
+<summary>Solution</summary>
+
+**Somatic gene therapy** targets body cells (somatic cells). Changes are NOT passed to offspring. The treated individual benefits but the genetic change is not inherited. Example: treating SCID by introducing a functional gene into bone marrow cells.
+
+**Germline gene therapy** targets gametes or early embryos. Changes ARE passed to all future generations. It raises ethical concerns about consent (future generations cannot consent), equity (access to enhancement), and the possibility of "designer babies." Currently not permitted in most countries due to these unresolved ethical issues and the risk of off-target effects being inherited.
+
+</details>
+
+**Problem 8:** A man with blood group AB has a child with a woman of blood group O. What are the possible blood groups of their child? Show your working with a Punnett square.
+
+If you get this wrong, revise: Non-Mendelian Inheritance -- Multiple Alleles (ABO Blood Groups)
+
+<details>
+<summary>Solution</summary>
+
+The man is I$^A$I$^B$ (genotype AB). The woman is ii (genotype O).
+
+Gametes from man: I$^A$ or I$^B$. Gametes from woman: i only.
+
+|         | **I$^A$** | **I$^B$** |
+| ------- | --------- | --------- |
+| **i**   | I$^A$i    | I$^B$i    |
+
+Possible genotypes: I$^A$i (blood group A) or I$^B$i (blood group B).
+
+Possible blood groups of the child: A or B. Each has a 50% probability. Blood group AB and O are not possible.
+
+</details>
+
+**Problem 9:** A person has 46 chromosomes in their somatic cells. How many chromosomes and chromatids are present in each cell during (a) prophase of mitosis, (b) metaphase I of meiosis, (c) after meiosis II is complete?
+
+If you get this wrong, revise: Chromosome Mutations -- Numerical Changes; Cell Division (Meiosis)
+
+<details>
+<summary>Solution</summary>
+
+(a) **Prophase of mitosis:** 46 chromosomes, 92 chromatids. Each chromosome has been replicated into two sister chromatids joined at the centromere (replication occurs during S phase, before mitosis begins).
+
+(b) **Metaphase I of meiosis:** 46 chromosomes (23 homologous pairs), 92 chromatids. Homologous pairs are aligned at the metaphase plate. Each chromosome still consists of two chromatids.
+
+(c) **After meiosis II:** Each of the four daughter cells has 23 chromosomes, 23 chromatids (single-chromatid chromosomes). Sister chromatids separated during anaphase II, halving the chromosome number.
+
+</details>
+
+**Problem 10:** Explain the difference between a point mutation and a frameshift mutation. Give an example of how each type of mutation can affect a protein.
+
+If you get this wrong, revise: Gene Mutations -- Types of Gene Mutations
+
+<details>
+<summary>Solution</summary>
+
+A **point mutation** (substitution) replaces a single nucleotide with another. A missense point mutation changes one codon, potentially replacing one amino acid with another (e.g., sickle cell mutation: GAG to GTG, glutamic acid to valine in haemoglobin).
+
+A **frameshift mutation** is an insertion or deletion of nucleotides that is NOT a multiple of three. This shifts the reading frame of all codons downstream, typically changing every subsequent amino acid and often creating a premature stop codon. The resulting protein is usually completely non-functional (e.g., a 1-bp insertion in the CFTR gene causes cystic fibrosis).
 
 </details>

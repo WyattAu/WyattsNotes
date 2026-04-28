@@ -194,6 +194,26 @@ New equilibrium: `30 + 0.5Q = 80 - Q`, so `1.5Q = 50`, `Q = 33.33`, `P = 46.67`.
 The tax reduces output from 40 to 33.33 (closer to the social optimum). Tax revenue =
 `10 x 33.33 = 333.3`.
 
+<details>
+<summary>Worked Example: Calculating Pigouvian Tax and DWL</summary>
+
+A chemical plant has `MPC = 15 + Q` and `MEC = 12`. Demand: `P = 90 - Q`.
+
+Market equilibrium: `15 + Q = 90 - Q`, `Q^* = 37.5`, `P^* = 52.5`.
+
+Social optimum: `MSC = 15 + Q + 12 = 27 + Q`. Set `27 + Q = 90 - Q`, `Q_{opt} = 31.5`.
+
+Price consumers pay = `90 - 31.5 = 58.5`.
+Price producers receive = `15 + 31.5 = 46.5`.
+
+Pigouvian tax = `58.5 - 46.5 = 12` (= `MEC`).
+
+Tax revenue = `12 \times 31.5 = 378`.
+
+DWL = `0.5 \times 12 \times (37.5 - 31.5) = 0.5 \times 12 \times 6 = 36`.
+
+</details>
+
 ---
 
 ## Corrective Subsidies
@@ -231,6 +251,21 @@ A subsidy of `MEB = 15` per student shifts the demand curve up: `P = 65 - 0.1Q`.
 New equilibrium: `65 - 0.1Q = 10 + 0.1Q`, `Q = 275`. The subsidy achieves the social optimum.
 
 Government cost = `15 x 275 = 4,125`.
+
+<details>
+<summary>Worked Example: Subsidy for Vaccination</summary>
+
+Private demand for flu shots: `P = 30 - 0.1Q` (MPB). `MEB = 8`. Supply: `P = 4 + 0.1Q`.
+
+Market equilibrium: `30 - 0.1Q = 4 + 0.1Q`, `Q = 130`.
+
+Social optimum: `MSB = 38 - 0.1Q`. Set `MSB = MSC`: `38 - 0.1Q = 4 + 0.1Q`, `Q_{opt} = 170`.
+
+Subsidy = `MEB = 8` per vaccination. Government cost = `8 \times 170 = 1,360`.
+
+DWL without intervention = `0.5 \times 8 \times (170 - 130) = 0.5 \times 8 \times 40 = 160`.
+
+</details>
 
 ---
 
@@ -844,4 +879,258 @@ lead to an efficient outcome regardless of the initial allocation of property ri
   action problems make bargaining impractical (free-riding within the group of affected parties).
 - Information asymmetry may prevent efficient bargaining.
 - Income effects may change marginal valuations (if the factory must pay a large sum to the farmer,
-  the factory's willingness to pay for abatement may change).
+the factory's willingness to pay for abatement may change).
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: Negative Externality of Consumption</summary>
+
+Smoking in public places generates a negative externality. The private demand for cigarettes is
+`P = 20 - 0.02Q` (MPB). The marginal external cost of consumption is `MEC = 6`. Supply (MPC = MSC)
+is `P = 2 + 0.01Q`.
+
+(a) Find the market equilibrium quantity and price. (b) Find the socially optimal quantity. (c) What
+per-unit tax on consumers would achieve the social optimum? (d) Calculate the DWL without intervention.
+
+<details>
+<summary>Solution</summary>
+
+(a) Market: `MPB = MPC`: `20 - 0.02Q = 2 + 0.01Q`, `0.03Q = 18`, `Q = 600`. `P = 8`.
+
+(b) Social optimum: `MSB = MPB - MEC = 20 - 0.02Q - 6 = 14 - 0.02Q`.
+Set `MSB = MSC`: `14 - 0.02Q = 2 + 0.01Q`, `0.03Q = 12`, `Q = 400`.
+
+(c) Tax = `MEC = 6` per pack of cigarettes.
+
+(d) DWL = `0.5 \times 6 \times (600 - 400) = 0.5 \times 6 \times 200 = 600`.
+
+</details>
+
+If you get this wrong, revise: [Negative Externality of Consumption](#negative-externality-of-consumption)
+
+</details>
+
+<details>
+<summary>Problem 2: Public Goods Provision</summary>
+
+A village of 500 residents is considering building a street lighting system costing USD 25,000. Each
+resident values the lighting at USD 60.
+
+(a) Is it efficient to build the system? (b) Will the private market provide it? (c) How should the
+village fund it?
+
+<details>
+<summary>Solution</summary>
+
+(a) Total benefit = `500 \times 60 = 30,000`. Cost = `25,000`. Since `30,000 \gt 25,000`, it IS
+efficient (NPV = 5,000 \gt 0).
+
+(b) No -- street lighting is a **public good** (non-excludable, non-rivalrous). The free-rider problem
+means each resident hopes others will pay while they enjoy the benefit for free. Private provision will
+under-provide or not provide at all.
+
+(c) The village government should build the system and fund it through compulsory taxation. Each
+resident can be taxed `25,000/500 = 50`, which is less than their valuation (60). Everyone is better
+off.
+
+</details>
+
+If you get this wrong, revise: [Public Goods](#public-goods)
+
+</details>
+
+<details>
+<summary>Problem 3: Adverse Selection in Insurance</summary>
+
+An insurance market has two groups: low-risk (70% of population, expected claims USD 1,000/year) and
+high-risk (30%, expected claims USD 5,000/year). The insurer cannot distinguish between them.
+
+(a) What single premium must the insurer charge to break even? (b) Will low-risk customers buy at this
+premium? (c) What happens to the market over time?
+
+<details>
+<summary>Solution</summary>
+
+(a) Expected cost = `0.7 \times 1,000 + 0.3 \times 5,000 = 700 + 1,500 = 2,200`. Premium must be at
+least USD 2,200.
+
+(b) Low-risk customers have expected costs of USD 1,000 but must pay USD 2,200. Many will not buy
+(they can self-insure by saving USD 1,000/year). They are overpaying by USD 1,200.
+
+(c) Low-risk customers exit. Remaining pool has more high-risk customers. The insurer must raise the
+premium further. This "death spiral" may collapse the market entirely, leaving only high-risk
+customers at very high premiums.
+
+</details>
+
+If you get this wrong, revise: [Adverse Selection](#adverse-selection)
+
+</details>
+
+<details>
+<summary>Problem 4: Merit vs Demerit Goods</summary>
+
+For each of the following, classify as a merit good, a demerit good, or neither, and identify the type
+of market failure involved:
+
+(a) University education (b) Sugary drinks (c) Vaccination (d) Designer clothing (e) Cigarettes
+
+<details>
+<summary>Solution</summary>
+
+(a) **Merit good.** Positive externalities (educated workforce benefits society). Information problems
+(students underestimate long-term returns). Under-consumed.
+
+(b) **Demerit good.** Negative externalities (health costs to society from obesity/diabetes). Information
+problems (consumers underestimate long-term health risks). Over-consumed.
+
+(c) **Merit good.** Positive externalities (herd immunity). Information problems (individuals may not
+understand the full social benefit). Under-consumed.
+
+(d) **Neither.** No significant externality. Consumers are generally well-informed. Market allocation
+is efficient.
+
+(e) **Demerit good.** Negative externalities (second-hand smoke, healthcare costs). Information problems
+and addiction. Over-consumed.
+
+</details>
+
+If you get this wrong, revise: [Merit Goods and Demerit Goods](#merit-goods-and-demerit-goods)
+
+</details>
+
+<details>
+<summary>Problem 5: Cap and Trade Efficiency</summary>
+
+Two factories emit pollution. `MAC_A = 30 + 3Q_A` and `MAC_B = 10 + 5Q_B`. The government requires total
+abatement of 24 units.
+
+(a) If each factory must abate 12 units, what is the total cost? (b) If permits are tradeable, find the
+cost-minimising allocation. (c) How much does trading save?
+
+<details>
+<summary>Solution</summary>
+
+(a) Cost of A: `30(12) + 3(144)/2 = 360 + 216 = 576`.
+Cost of B: `10(12) + 5(144)/2 = 120 + 360 = 480`.
+Total = `576 + 480 = 1,056`.
+
+(b) Cost minimisation: `MAC_A = MAC_B`: `30 + 3Q_A = 10 + 5Q_B`, and `Q_A + Q_B = 24`, so `Q_B = 24 - Q_A`.
+`30 + 3Q_A = 10 + 5(24 - Q_A) = 130 - 5Q_A`. `8Q_A = 100`, `Q_A = 12.5`, `Q_B = 11.5`.
+Permit price = `30 + 3(12.5) = 67.5`.
+
+Cost of A: `30(12.5) + 3(156.25)/2 = 375 + 234.4 = 609.4`.
+Cost of B: `10(11.5) + 5(132.25)/2 = 115 + 330.6 = 445.6`.
+Total = `609.4 + 445.6 = 1,055`.
+
+(c) Savings = `1,056 - 1,055 = 1` (small saving here, but the principle holds: trading allows equalisation
+of marginal costs).
+
+</details>
+
+If you get this wrong, revise: [Tradable Pollution Permits (Cap and Trade)](#tradable-pollution-permits-cap-and-trade)
+
+</details>
+
+<details>
+<summary>Problem 6: Government Failure Evaluation</summary>
+
+"The government should ban all sugary drinks to solve the obesity problem." Evaluate this statement
+using economic concepts.
+
+<details>
+<summary>Solution</summary>
+
+**Market failure case for intervention:**
+
+- Sugary drinks have negative externalities (healthcare costs from obesity, diabetes).
+- Information asymmetry: consumers may not fully appreciate long-term health consequences.
+- Over-consumption relative to the social optimum.
+
+**Problems with a ban:**
+
+- Eliminates consumer choice entirely. Moderate consumers who are not harmed are penalised.
+- Creates a black market (as with alcohol prohibition).
+- Enforcement costs are significant.
+- Lost tax revenue and industry jobs.
+- Government failure: the government may overestimate the externality.
+
+**Better alternatives:**
+
+1. Pigouvian tax (sugar tax) -- reduces consumption while preserving choice and generating revenue.
+2. Information campaigns (health warnings, calorie labelling) -- addresses information asymmetry.
+3. Regulation (portion size limits, advertising restrictions to children) -- targeted measures.
+
+**Conclusion:** While intervention is justified, a blanket ban is disproportionate. Targeted measures
+(taxes, regulation, information) are more likely to improve net welfare.
+
+</details>
+
+If you get this wrong, revise: [Government Failure](#government-failure)
+
+</details>
+
+<details>
+<summary>Problem 7: Coase Theorem Application</summary>
+
+A nightclub generates noise that causes USD 8,000 of damage per year to a neighbouring hotel. The
+nightclub could install soundproofing at a cost of USD 3,000 per year to eliminate the noise.
+
+(a) What is the efficient outcome? (b) If the nightclub has the right to make noise, will the hotel pay
+for soundproofing? What is the range of payment? (c) What conditions must hold for the Coase theorem to
+apply? (d) Why might the Coase theorem fail in practice?
+
+<details>
+<summary>Solution</summary>
+
+(a) Install soundproofing. Cost (3,000) is less than damage avoided (8,000). Net social benefit = 5,000.
+
+(b) Yes. The hotel would pay up to USD 8,000 (damage avoided). The nightclub would accept any payment
+above USD 3,000 (cost of soundproofing). Any payment between 3,000 and 8,000 makes both parties
+better off.
+
+(c) Well-defined property rights, low transaction costs, small number of affected parties, no
+significant income effects.
+
+(d) In practice: many affected parties (collective action problems), high legal costs, uncertainty
+about damages, difficulty enforcing agreements, income effects.
+
+</details>
+
+If you get this wrong, revise: [The Coase Theorem](#the-coase-theorem)
+
+</details>
+
+<details>
+<summary>Problem 8: Cost-Benefit Analysis</summary>
+
+A government is considering building a new bridge costing USD 500 million. Benefits: reduced travel time
+worth USD 80 million/year for 10 years, increased economic activity worth USD 20 million/year for 10
+years. The social discount rate is 5%.
+
+(a) Calculate the NPV. (b) Should the bridge be built? (c) What are the limitations of this analysis?
+
+<details>
+<summary>Solution</summary>
+
+(a) Annual benefit = `80 + 20 = 100` million for 10 years.
+
+PV of benefits = `100 \times [1 - 1/(1.05)^{10}] / 0.05 = 100 \times [1 - 0.6139] / 0.05 = 100 \times 7.722 = 772.2` million.
+
+NPV = `772.2 - 500 = 272.2` million.
+
+(b) Yes. NPV is positive (272.2 \gt 0), so the bridge should be built.
+
+(c) Limitations: difficult to value reduced travel time accurately; may underestimate environmental
+costs (noise, visual impact); uncertain economic activity estimates; the discount rate choice
+significantly affects the result (a higher rate would reduce NPV); distributional effects (who gains
+and who loses) are not captured.
+
+</details>
+
+If you get this wrong, revise: [Cost-Benefit Analysis of Government Intervention](#cost-benefit-analysis-of-government-intervention)
+
+</details>

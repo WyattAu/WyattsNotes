@@ -52,7 +52,12 @@ $$A_r = \sum (\mathrm{isotope mass} \times \mathrm{fractional abundance})$$
 Chlorine has two isotopes: $\mathrm{^{35}Cl}$ (75.8% abundance) and $\mathrm{^{37}Cl}$ (24.2%
 abundance). Calculate the relative atomic mass of chlorine.
 
+<details>
+<summary>Solution</summary>
+
 $$A_r = 35 \times 0.758 + 37 \times 0.242 = 26.53 + 8.954 = 35.48$$
+
+</details>
 
 ---
 
@@ -88,11 +93,16 @@ with parallel spins before pairing.
 
 Write the electron configurations for the following elements:
 
+<details>
+<summary>Solution</summary>
+
 - Sodium ($Z = 11$): $1s^2\, 2s^2\, 2p^6\, 3s^1$ or $[\mathrm{Ne}]\, 3s^1$
 - Potassium ($Z = 19$): $[\mathrm{Ar}]\, 4s^1$
 - Iron ($Z = 26$): $[\mathrm{Ar}]\, 4s^2\, 3d^6$
 - Copper ($Z = 29$): $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
 - Chromium ($Z = 24$): $[\mathrm{Ar}]\, 4s^1\, 3d^5$ (exception: half-filled $d$ subshell)
+
+</details>
 
 ### Important: Removing Electrons
 
@@ -159,9 +169,14 @@ from a new inner shell.
 The first five ionisation energies of an element are: 578, 1817, 2745, 11577, and 14842 kJ/mol.
 Identify the element and its group.
 
+<details>
+<summary>Solution</summary>
+
 The large jump between the 3rd and 4th ionisation energies indicates the first three electrons are
 valence electrons and the fourth is from an inner shell. The element has three valence electrons,
 placing it in **Group 13**. With a first ionisation energy of 578 kJ/mol, this is **aluminium**.
+
+</details>
 
 ---
 
@@ -267,10 +282,15 @@ This disproportionation reaction produces sodium chloride and sodium chlorate(I)
 
 Explain why bromine is a liquid at room temperature while chlorine is a gas.
 
+<details>
+<summary>Solution</summary>
+
 Bromine atoms are larger than chlorine atoms and have more electrons. This results in stronger
 instantaneous dipole-induced dipole (London dispersion) forces between bromine molecules. These
 stronger intermolecular forces require more energy to overcome, giving bromine a higher boiling
 point ($59^\circ\mathrm{C}$) compared to chlorine ($-34^\circ\mathrm{C}$).
+
+</details>
 
 ---
 
@@ -341,16 +361,28 @@ subshell. Key properties:
 
 ---
 
-<details>
-<summary>Exam-Style Practice Questions</summary>
+## Problem Set
 
-**Question 1:** The first four ionisation energies of an element are 738, 1451, 7733, and 10540
+**Problem 1:** The first four ionisation energies of an element are 738, 1451, 7733, and 10540
 kJ/mol. To which group does this element belong?
+
+*If you get this wrong, revise: Successive Ionisation Energies*
+
+<details>
+<summary>Solution</summary>
 
 The large jump between the 2nd and 3rd ionisation energies indicates the first two electrons are
 valence electrons. The element has two valence electrons, placing it in **Group 2**.
 
-**Question 2:** Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$.
+</details>
+
+**Problem 2:** Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$.
+Which ion is relatively more stable and why?
+
+*If you get this wrong, revise: Electron Configuration — Removing Electrons*
+
+<details>
+<summary>Solution</summary>
 
 Fe ($Z = 26$): $[\mathrm{Ar}]\, 4s^2\, 3d^6$
 
@@ -360,12 +392,26 @@ $\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\, 3d^5$ (remove two $4s$ and one $3d$)
 
 $\mathrm{Fe}^{3+}$ is relatively stable due to its half-filled $3d^5$ configuration.
 
-**Question 3:** Neon has three naturally occurring isotopes: $\mathrm{^{20}Ne}$ (90.48%),
+</details>
+
+**Problem 3:** Neon has three naturally occurring isotopes: $\mathrm{^{20}Ne}$ (90.48%),
 $\mathrm{^{21}Ne}$ (0.27%), and $\mathrm{^{22}Ne}$ (9.25%). Calculate the relative atomic mass.
+
+*If you get this wrong, revise: Isotopes and Relative Atomic Mass*
+
+<details>
+<summary>Solution</summary>
 
 $$A_r = 20 \times 0.9048 + 21 \times 0.0027 + 22 \times 0.0925 = 18.096 + 0.0567 + 2.035 = 20.19$$
 
-**Question 4:** Explain why the first ionisation energy of sodium is much lower than that of neon.
+</details>
+
+**Problem 4:** Explain why the first ionisation energy of sodium is much lower than that of neon.
+
+*If you get this wrong, revise: Ionisation Energy and Electron Configuration*
+
+<details>
+<summary>Solution</summary>
 
 Sodium ($Z = 11$) has the configuration $[\mathrm{Ne}]\, 3s^1$. The single $3s$ electron is in a
 new shell, further from the nucleus and well shielded by the inner 10 electrons. It is relatively
@@ -374,8 +420,15 @@ easy to remove.
 Neon ($Z = 10$) has a stable noble gas configuration ($1s^2\, 2s^2\, 2p^6$). Removing an electron
 requires breaking this stable full outer shell, requiring much more energy.
 
-**Question 5:** Predict the products when chlorine gas is bubbled into a solution of potassium
+</details>
+
+**Problem 5:** Predict the products when chlorine gas is bubbled into a solution of potassium
 iodide.
+
+*If you get this wrong, revise: Group 17 — Displacement Reactions*
+
+<details>
+<summary>Solution</summary>
 
 Chlorine is more reactive than iodine, so it displaces iodine:
 
@@ -384,11 +437,84 @@ $$\mathrm{Cl_2} + 2\mathrm{KI} \to 2\mathrm{KCl} + \mathrm{I_2}$$
 The solution turns brown as iodine is liberated. Adding starch indicator produces a blue-black
 colour.
 
-**Question 6:** State and explain the trend in reactivity of the Group 1 metals with water.
+</details>
+
+**Problem 6:** State and explain the trend in reactivity of the Group 1 metals with water.
+
+*If you get this wrong, revise: Group 1 — Properties and Trends*
+
+<details>
+<summary>Solution</summary>
 
 Reactivity increases down Group 1. As you descend, the atomic radius increases and the outer
 electron is further from the nucleus with more electron shielding. This means the outer electron is
 less strongly attracted to the nucleus and is more easily lost, resulting in more vigorous
 reactions with water.
+
+</details>
+
+**Problem 7:** Explain why the thermal stability of Group 2 carbonates increases down the group.
+
+*If you get this wrong, revise: Group 2 — Thermal Decomposition*
+
+<details>
+<summary>Solution</summary>
+
+As you descend Group 2, the ionic radius of the metal cation increases. The larger cation has a
+lower charge density and polarises the carbonate anion less. The $\mathrm{CO_3^{2-}}$ ion is
+therefore less distorted and more thermally stable, requiring more energy to decompose. So
+$\mathrm{MgCO_3}$ decomposes readily on heating while $\mathrm{BaCO_3}$ is much more resistant
+to thermal decomposition.
+
+</details>
+
+**Problem 8:** Explain why the solubility of Group 2 hydroxides increases down the group while the
+solubility of Group 2 sulphates decreases.
+
+*If you get this wrong, revise: Group 2 — Solubility Trends*
+
+<details>
+<summary>Solution</summary>
+
+For hydroxides, as you descend Group 2, the lattice energy decreases (larger ions) but the
+hydration energy decreases more slowly. Since the hydration energy becomes more significant
+relative to lattice energy, dissolution becomes more favourable, so solubility increases.
+
+For sulphates, the opposite occurs: the lattice energy (which is large due to the doubly-charged
+$\mathrm{SO_4^{2-}}$ ion) decreases more slowly than the hydration energy as ionic size increases.
+This makes dissolution less favourable down the group, so solubility decreases.
+
+</details>
+
+**Problem 9:** The first seven ionisation energies of an element are: 789, 1577, 3232, 4356, 16091,
+19784, and 23793 kJ/mol. Identify the group of this element.
+
+*If you get this wrong, revise: Successive Ionisation Energies*
+
+<details>
+<summary>Solution</summary>
+
+Looking at the jumps: 789 to 1577 (small), 1577 to 3232 (moderate), 3232 to 4356 (moderate),
+4356 to 16091 (**very large**).
+
+The large jump between the 4th and 5th ionisation energies means the first four electrons are
+valence electrons. The element has four valence electrons, placing it in **Group 14**.
+
+</details>
+
+**Problem 10:** Use electronegativity values to classify the bond in hydrogen chloride
+($\mathrm{HCl}$). (EN of H $= 2.1$, EN of Cl $= 3.0$)
+
+*If you get this wrong, revise: Electronegativity*
+
+<details>
+<summary>Solution</summary>
+
+$$\Delta\mathrm{EN} = 3.0 - 2.1 = 0.9$$
+
+Since $0.5 \leqslant \Delta\mathrm{EN} \lt 1.7$, the bond in $\mathrm{HCl}$ is **polar covalent**.
+
+The shared electron pair is displaced towards the more electronegative chlorine atom, creating a
+dipole with a partial negative charge on Cl and a partial positive charge on H.
 
 </details>

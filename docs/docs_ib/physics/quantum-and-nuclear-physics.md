@@ -1,1323 +1,1172 @@
 ---
-title: Matrices and Transformations
+title: Quantum and Nuclear Physics
 tags:
 - IB
-- Maths
-slug: matrices-and-transformations
-description: Comprehensive guide to matrices and transformations for the International
-  Baccalaureate.
+- Physics
+slug: quantum-and-nuclear-physics
+description: "Comprehensive guide to quantum and nuclear physics for the International Baccalaureate."
 ---
 
 
-# Matrices and Transformations
+# Quantum and Nuclear Physics
 
-## 1. Matrix Fundamentals
 
-### 1.1 Definition and Notation
+## Part A: Quantum Physics (Topic 12, HL)
 
-A **matrix** is a rectangular array of numbers arranged in rows and columns. An $m \times n$ matrix
-$\mathbf{A}$ has $m$ rows and $n$ columns:
 
-$$
-\mathbf{A} = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}
-$$
+### 1. The Photoelectric Effect
 
-The entry in the $i$-th row and $j$-th column is denoted $a_{ij}$ or $(\mathbf{A})_{ij}$. The set of
-all $m \times n$ matrices with real entries is denoted $M_{m \times n}(\mathbb{R})$.
+#### 1.1 Phenomenon and Observations
 
-A **column vector** is an $m \times 1$ matrix, and a **row vector** is a $1 \times n$ matrix.
-Vectors in $\mathbb{R}^n$ are typically represented as column matrices.
+The **photoelectric effect** is the emission of electrons from a metal surface when electromagnetic radiation of sufficiently high frequency strikes it. Key observations from experiment:
 
-### 1.2 Matrix Dimensions
+- No electrons are emitted if the frequency of the incident light is below a certain **threshold frequency** $f_0$, regardless of intensity.
+- The maximum kinetic energy of emitted photoelectrons increases linearly with frequency above $f_0$.
+- The number of photoelectrons emitted per second is proportional to the intensity of the light.
+- Emission is instantaneous; there is no detectable time delay even at very low intensities.
 
-Two matrices are said to have the same **dimension** (or **order**) if they have the same number of
-rows and the same number of columns. A matrix with the same number of rows as columns is called a
-**square matrix**; such a matrix is said to be of order $n$ (or $n \times n$).
+These observations cannot be explained by classical wave theory, which predicts that energy depends on intensity (amplitude), not frequency.
 
-:::info The dimension of a matrix is sometimes called its **shape** or **size**. Throughout these
-notes, we use $m \times n$ to denote $m$ rows and $n$ columns.
-:::
+#### 1.2 Einstein's Explanation
 
-### 1.3 Matrix Operations
+Einstein proposed that light consists of discrete packets of energy called **photons**. Each photon carries energy:
 
-#### Addition
+$$E = hf$$
 
-If $\mathbf{A}$ and $\mathbf{B}$ are both $m \times n$ matrices, their sum $\mathbf{A} + \mathbf{B}$
-is the $m \times n$ matrix obtained by adding corresponding entries:
+where $h = 6.63 \times 10^{-34} \;\mathrm{J \cdot s}$ is Planck's constant and $f$ is the frequency of the radiation.
 
-$$
-(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij}
-$$
+A single photon can transfer all its energy to a single electron. The electron must overcome the **work function** $\phi$ of the metal to escape. The **maximum kinetic energy** of emitted photoelectrons is:
 
-Matrix addition is defined **only** when the two matrices have the same dimension.
+$$E_{k,\mathrm{max}} = hf - \phi$$
 
-**Example.** If $\mathbf{A} = \begin{pmatrix} 1 & 3 \\ 2 & -1 \end{pmatrix}$ and
-$\mathbf{B} = \begin{pmatrix} 4 & 0 \\ -3 & 5 \end{pmatrix}$, then:
+The threshold frequency corresponds to the minimum photon energy needed to liberate an electron:
 
-$$
-\mathbf{A} + \mathbf{B} = \begin{pmatrix} 1 + 4 & 3 + 0 \\ 2 + (-3) & -1 + 5 \end{pmatrix} = \begin{pmatrix} 5 & 3 \\ -1 & 4 \end{pmatrix}
-$$
+$$\phi = hf_0$$
 
-#### Scalar Multiplication
+so the equation can also be written:
 
-If $\mathbf{A}$ is an $m \times n$ matrix and $k \in \mathbb{R}$, the **scalar multiple**
-$k\mathbf{A}$ is the $m \times n$ matrix:
+$$E_{k,\mathrm{max}} = h(f - f_0)$$
 
-$$
-(k\mathbf{A})_{ij} = k \cdot a_{ij}
-$$
+The **stopping potential** $V_s$ is the minimum potential difference required to stop the most energetic photoelectrons:
 
-**Example.** If $k = 3$ and $\mathbf{A} = \begin{pmatrix} 1 & -2 \\ 4 & 0 \end{pmatrix}$, then:
+$$eV_s = E_{k,\mathrm{max}} = hf - \phi$$
 
-$$
-3\mathbf{A} = \begin{pmatrix} 3 & -6 \\ 12 & 0 \end{pmatrix}
-$$
+where $e$ is the elementary charge.
 
-#### Matrix Multiplication
+#### 1.3 Work Function Values
 
-If $\mathbf{A}$ is an $m \times p$ matrix and $\mathbf{B}$ is a $p \times n$ matrix, their product
-$\mathbf{AB}$ is the $m \times n$ matrix defined by:
-
-$$
-(\mathbf{AB})_{ij} = \sum_{k=1}^{p} a_{ik} b_{kj}
-$$
-
-That is, the entry in row $i$, column $j$ of the product is the **dot product** of the $i$-th row of
-$\mathbf{A}$ with the $j$-th column of $\mathbf{B}$.
-
-:::warning Matrix multiplication is defined **only when** the number of columns of $\mathbf{A}$
-equals the number of rows of $\mathbf{B}$. The resulting matrix has the same number of rows as
-$\mathbf{A}$ and the same number of columns as $\mathbf{B}$.
-:::
-
-**Example.** Compute $\mathbf{AB}$ where:
-
-$$
-\mathbf{A} = \begin{pmatrix} 2 & 1 \\ 0 & -3 \end{pmatrix}, \quad \mathbf{B} = \begin{pmatrix} 1 & 4 \\ -1 & 2 \end{pmatrix}
-$$
-
-$$
-\mathbf{AB} = \begin{pmatrix} (2)(1) + (1)(-1) & (2)(4) + (1)(2) \\ (0)(1) + (-3)(-1) & (0)(4) + (-3)(2) \end{pmatrix} = \begin{pmatrix} 1 & 10 \\ 3 & -6 \end{pmatrix}
-$$
-
-For contrast, compute $\mathbf{BA}$:
-
-$$
-\mathbf{BA} = \begin{pmatrix} (1)(2) + (4)(0) & (1)(1) + (4)(-3) \\ (-1)(2) + (2)(0) & (-1)(1) + (2)(-3) \end{pmatrix} = \begin{pmatrix} 2 & -11 \\ -2 & -7 \end{pmatrix}
-$$
-
-Since $\mathbf{AB} \neq \mathbf{BA}$, matrix multiplication is **not commutative** in general.
-
-### 1.4 Properties of Matrix Operations
-
-Let $\mathbf{A}, \mathbf{B}, \mathbf{C}$ be matrices of appropriate dimensions, and let
-$k, l \in \mathbb{R}$.
-
-**Addition properties:**
-
-1. **Commutativity:** $\mathbf{A} + \mathbf{B} = \mathbf{B} + \mathbf{A}$
-2. **Associativity:**
-   $(\mathbf{A} + \mathbf{B}) + \mathbf{C} = \mathbf{A} + (\mathbf{B} + \mathbf{C})$
-3. **Identity element:** $\mathbf{A} + \mathbf{O} = \mathbf{A}$, where $\mathbf{O}$ is the zero
-   matrix
-4. **Additive inverse:** $\mathbf{A} + (-\mathbf{A}) = \mathbf{O}$
-
-**Scalar multiplication properties:**
-
-1. $k(\mathbf{A} + \mathbf{B}) = k\mathbf{A} + k\mathbf{B}$
-2. $(k + l)\mathbf{A} = k\mathbf{A} + l\mathbf{A}$
-3. $(kl)\mathbf{A} = k(l\mathbf{A})$
-4. $1\mathbf{A} = \mathbf{A}$
-
-**Matrix multiplication properties:**
-
-1. **Associativity:** $(\mathbf{AB})\mathbf{C} = \mathbf{A}(\mathbf{BC})$ (when products are
-   defined)
-2. **Left distributivity:** $\mathbf{A}(\mathbf{B} + \mathbf{C}) = \mathbf{AB} + \mathbf{AC}$
-3. **Right distributivity:** $(\mathbf{A} + \mathbf{B})\mathbf{C} = \mathbf{AC} + \mathbf{BC}$
-4. **Scalar compatibility:** $k(\mathbf{AB}) = (k\mathbf{A})\mathbf{B} = \mathbf{A}(k\mathbf{B})$
-
-:::danger Matrix multiplication is **NOT commutative**: $\mathbf{AB} \neq \mathbf{BA}$ in general.
-This is one of the most important differences between matrix algebra and ordinary algebra.
-:::
-
-Furthermore, the **cancellation law** does not hold in general. It is possible that
-$\mathbf{AB} = \mathbf{AC}$ but $\mathbf{B} \neq \mathbf{C}$ (for example, if $\mathbf{A}$ is the
-zero matrix, or more subtly, if $\mathbf{A}$ is singular). Similarly, $\mathbf{AB} = \mathbf{O}$
-does not imply that $\mathbf{A} = \mathbf{O}$ or $\mathbf{B} = \mathbf{O}$.
-
-### 1.5 Identity and Zero Matrices
-
-The **identity matrix** $\mathbf{I}_n$ (or simply $\mathbf{I}$ when the dimension is clear) is the
-$n \times n$ matrix with 1s on the main diagonal and 0s elsewhere:
-
-$$
-\mathbf{I}_n = \begin{pmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{pmatrix}
-$$
-
-For any $m \times n$ matrix $\mathbf{A}$:
-
-$$
-\mathbf{I}_m \mathbf{A} = \mathbf{A} = \mathbf{A} \mathbf{I}_n
-$$
-
-The **zero matrix** $\mathbf{O}_{m \times n}$ is the $m \times n$ matrix with all entries equal to
-zero. For any matrix $\mathbf{A}$ of compatible dimension:
-
-$$
-\mathbf{O}\mathbf{A} = \mathbf{O} = \mathbf{A}\mathbf{O}
-$$
-
-### 1.6 Transpose
-
-The **transpose** of an $m \times n$ matrix $\mathbf{A}$, denoted $\mathbf{A}^T$, is the
-$n \times m$ matrix obtained by interchanging rows and columns:
-
-$$
-(\mathbf{A}^T)_{ij} = a_{ji}
-$$
-
-**Properties of the transpose:**
-
-1. $(\mathbf{A}^T)^T = \mathbf{A}$ (involution)
-2. $(\mathbf{A} + \mathbf{B})^T = \mathbf{A}^T + \mathbf{B}^T$
-3. $(k\mathbf{A})^T = k\mathbf{A}^T$
-4. $(\mathbf{AB})^T = \mathbf{B}^T \mathbf{A}^T$ (reversal rule)
-
-The reversal rule is particularly important and often surprising. Note that the order of
-multiplication reverses upon taking the transpose.
-
-**Proof of $(\mathbf{AB})^T = \mathbf{B}^T \mathbf{A}^T$:** Let $\mathbf{A}$ be $m \times p$ and
-$\mathbf{B}$ be $p \times n$. Then $\mathbf{AB}$ is $m \times n$, so $(\mathbf{AB})^T$ is
-$n \times m$. The $(i, j)$ entry of $(\mathbf{AB})^T$ equals the $(j, i)$ entry of $\mathbf{AB}$:
-
-$$
-((\mathbf{AB})^T)_{ij} = (\mathbf{AB})_{ji} = \sum_{k=1}^{p} a_{jk} b_{ki} = \sum_{k=1}^{p} (\mathbf{B}^T)_{ik} (\mathbf{A}^T)_{kj} = (\mathbf{B}^T \mathbf{A}^T)_{ij}
-$$
-
-This holds for all $i, j$, so $(\mathbf{AB})^T = \mathbf{B}^T \mathbf{A}^T$.
-
-### 1.7 Symmetric and Skew-Symmetric Matrices
-
-A square matrix $\mathbf{A}$ is **symmetric** if $\mathbf{A}^T = \mathbf{A}$, i.e.,
-$a_{ij} = a_{ji}$ for all $i, j$.
-
-A square matrix $\mathbf{A}$ is **skew-symmetric** (or **anti-symmetric**) if
-$\mathbf{A}^T = -\mathbf{A}$, i.e., $a_{ij} = -a_{ji}$ for all $i, j$.
-
-**Key facts:**
-
-- The diagonal entries of a skew-symmetric matrix are all zero (since $a_{ii} = -a_{ii}$ implies
-  $a_{ii} = 0$).
-- Every square matrix $\mathbf{A}$ can be uniquely expressed as
-  $\mathbf{A} = \mathbf{S} + \mathbf{K}$, where $\mathbf{S}$ is symmetric and $\mathbf{K}$ is
-  skew-symmetric. Specifically, $\mathbf{S} = \frac{1}{2}(\mathbf{A} + \mathbf{A}^T)$ and
-  $\mathbf{K} = \frac{1}{2}(\mathbf{A} - \mathbf{A}^T)$.
-- The sum of two symmetric matrices is symmetric. The sum of two skew-symmetric matrices is
-  skew-symmetric.
-
----
-
-## 2. Determinants
-
-### 2.1 The 2x2 Determinant
-
-For a $2 \times 2$ matrix $\mathbf{A} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, the
-**determinant** is:
-
-$$
-\det(\mathbf{A}) = |\mathbf{A}| = ad - bc
-$$
-
-**Example.** If $\mathbf{A} = \begin{pmatrix} 3 & 5 \\ 2 & 7 \end{pmatrix}$, then
-$\det(\mathbf{A}) = (3)(7) - (5)(2) = 21 - 10 = 11$.
-
-### 2.2 The 3x3 Determinant (Cofactor Expansion)
-
-For a $3 \times 3$ matrix:
-
-$$
-\mathbf{A} = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}
-$$
-
-The determinant can be computed by **cofactor expansion** along any row or column. Expanding along
-the first row:
-
-$$
-\det(\mathbf{A}) = a \begin{vmatrix} e & f \\ h & i \end{vmatrix} - b \begin{vmatrix} d & f \\ g & i \end{vmatrix} + c \begin{vmatrix} d & e \\ g & h \end{vmatrix}
-$$
-
-$$
-= a(ei - fh) - b(di - fg) + c(dh - eg)
-$$
-
-$$
-= aei + bfg + cdh - ceg - bdi - afh
-$$
-
-The signs follow a checkerboard pattern (called the **sign matrix**):
-
-$$
-\begin{pmatrix} + & - & + \\ - & + & - \\ + & - & + \end{pmatrix}
-$$
-
-Expanding along a different row or column yields the same result. Strategic choice of row or column
-(one with many zeros) simplifies computation.
-
-**Example.** Compute $\det(\mathbf{A})$ for:
-
-$$
-\mathbf{A} = \begin{pmatrix} 2 & 1 & 3 \\ 0 & -1 & 4 \\ 5 & 2 & 1 \end{pmatrix}
-$$
-
-Expanding along the first row:
-
-$$
-\det(\mathbf{A}) = 2 \begin{vmatrix} -1 & 4 \\ 2 & 1 \end{vmatrix} - 1 \begin{vmatrix} 0 & 4 \\ 5 & 1 \end{vmatrix} + 3 \begin{vmatrix} 0 & -1 \\ 5 & 2 \end{vmatrix}
-$$
-
-$$
-= 2(-1 - 8) - 1(0 - 20) + 3(0 + 5)
-$$
-
-$$
-= 2(-9) - 1(-20) + 3(5) = -18 + 20 + 15 = 17
-$$
-
-### 2.3 Cofactor and Minor Terminology
-
-The **minor** $M_{ij}$ of entry $a_{ij}$ is the determinant of the submatrix obtained by deleting
-row $i$ and column $j$.
-
-The **cofactor** $C_{ij}$ is:
-
-$$
-C_{ij} = (-1)^{i+j} M_{ij}
-$$
-
-The general cofactor expansion formula for an $n \times n$ matrix expanding along row $i$ is:
-
-$$
-\det(\mathbf{A}) = \sum_{j=1}^{n} a_{ij} C_{ij}
-$$
-
-The **matrix of cofactors** (cofactor matrix) has entries $C_{ij}$. The **adjugate** (or
-**adjoint**) matrix is the transpose of the cofactor matrix:
-
-$$
-\mathrm{adj}(\mathbf{A}) = \mathbf{C}^T
-$$
-
-### 2.4 Properties of Determinants
-
-Let $\mathbf{A}$ and $\mathbf{B}$ be $n \times n$ matrices and $k \in \mathbb{R}$.
-
-1. $\det(\mathbf{A}^T) = \det(\mathbf{A})$
-2. $\det(\mathbf{AB}) = \det(\mathbf{A}) \cdot \det(\mathbf{B})$
-3. $\det(k\mathbf{A}) = k^n \det(\mathbf{A})$ for an $n \times n$ matrix
-4. Swapping two rows (or columns) changes the sign of the determinant
-5. If two rows (or columns) are identical, $\det(\mathbf{A}) = 0$
-6. Multiplying a row (or column) by a scalar $k$ multiplies the determinant by $k$
-7. Adding a multiple of one row (or column) to another does not change the determinant
-8. If $\mathbf{A}$ has a row (or column) of zeros, then $\det(\mathbf{A}) = 0$
-9. $\det(\mathbf{A}^{-1}) = \frac{1}{\det(\mathbf{A})}$ when $\mathbf{A}$ is invertible
-
-:::note Property 2 is particularly powerful: it tells us that
-$\det(\mathbf{AB}) = \det(\mathbf{BA})$ even though $\mathbf{AB} \neq \mathbf{BA}$ in general.
-However, $\det(\mathbf{A} + \mathbf{B}) \neq \det(\mathbf{A}) + \det(\mathbf{B})$ in general.
-:::
-
-### 2.5 Geometric Interpretation
-
-The determinant has a profound geometric meaning. If $\mathbf{A}$ is a $2 \times 2$ matrix
-representing a linear transformation of $\mathbb{R}^2$, then $|\det(\mathbf{A})|$ is the **area
-scaling factor**: the area of any region is multiplied by $|\det(\mathbf{A})|$ under the
-transformation.
-
-For a $3 \times 3$ matrix, $|\det(\mathbf{A})|$ is the **volume scaling factor** in $\mathbb{R}^3$.
-
-The **sign** of the determinant indicates whether the transformation preserves or reverses
-orientation:
-
-- $\det(\mathbf{A}) \gt 0$: orientation is preserved
-- $\det(\mathbf{A}) \lt 0$: orientation is reversed (e.g., a reflection)
-- $\det(\mathbf{A}) = 0$: the transformation collapses dimension (maps $\mathbb{R}^n$ to a
-  lower-dimensional subspace)
-
-**Example.** The matrix $\mathbf{A} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}$ stretches the
-plane by a factor of 2 in the $x$-direction and 3 in the $y$-direction. The determinant is $6$,
-meaning areas are scaled by a factor of 6.
-
-### 2.6 Singular and Non-Singular Matrices
-
-A square matrix $\mathbf{A}$ is **singular** (or **non-invertible**) if $\det(\mathbf{A}) = 0$.
-
-A square matrix $\mathbf{A}$ is **non-singular** (or **invertible**) if $\det(\mathbf{A}) \neq 0$.
-
-For a $2 \times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$, the matrix is singular
-precisely when $ad = bc$, i.e., the rows (and columns) are linearly dependent.
-
-:::tip Singularity can be understood geometrically: a singular matrix represents a transformation
-that collapses the space. For instance, a $2 \times 2$ singular matrix maps the entire plane onto a
-line or a point, so areas become zero.
-:::
-
----
-
-## 3. Inverse Matrices
-
-### 3.1 Definition
-
-If $\mathbf{A}$ is a square matrix, an **inverse** of $\mathbf{A}$ is a matrix $\mathbf{A}^{-1}$
-such that:
-
-$$
-\mathbf{A}\mathbf{A}^{-1} = \mathbf{A}^{-1}\mathbf{A} = \mathbf{I}
-$$
-
-A matrix has an inverse if and only if it is **non-singular** (i.e., $\det(\mathbf{A}) \neq 0$).
-When it exists, the inverse is **unique**.
-
-**Proof of uniqueness.** Suppose $\mathbf{B}$ and $\mathbf{C}$ are both inverses of $\mathbf{A}$.
-Then:
-
-$$
-\mathbf{B} = \mathbf{BI} = \mathbf{B}(\mathbf{AC}) = (\mathbf{BA})\mathbf{C} = \mathbf{IC} = \mathbf{C}
-$$
-
-### 3.2 The 2x2 Inverse Formula
-
-For $\mathbf{A} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with
-$\det(\mathbf{A}) = ad - bc \neq 0$:
-
-$$
-\mathbf{A}^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}
-$$
-
-The formula swaps the diagonal entries and negates the off-diagonal entries, then divides by the
-determinant.
-
-**Verification:**
-$\mathbf{A}\mathbf{A}^{-1} = \frac{1}{ad - bc} \begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$
-
-$$
-= \frac{1}{ad - bc} \begin{pmatrix} ad - bc & -ab + ab \\ cd - cd & -bc + ad \end{pmatrix} = \frac{1}{ad - bc} \begin{pmatrix} ad - bc & 0 \\ 0 & ad - bc \end{pmatrix} = \mathbf{I}
-$$
-
-**Example.** Find the inverse of $\mathbf{A} = \begin{pmatrix} 3 & 7 \\ 2 & 5 \end{pmatrix}$.
-
-First, $\det(\mathbf{A}) = 15 - 14 = 1$. Since the determinant is non-zero, the inverse exists:
-
-$$
-\mathbf{A}^{-1} = \frac{1}{1} \begin{pmatrix} 5 & -7 \\ -2 & 3 \end{pmatrix} = \begin{pmatrix} 5 & -7 \\ -2 & 3 \end{pmatrix}
-$$
-
-### 3.3 The 3x3 Inverse (Adjugate Method)
-
-For a $3 \times 3$ matrix $\mathbf{A}$, the inverse is given by:
-
-$$
-\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \mathrm{adj}(\mathbf{A})
-$$
-
-where $\mathrm{adj}(\mathbf{A})$ is the adjugate (transpose of the cofactor matrix).
-
-**Step-by-step procedure:**
-
-1. Compute the determinant of $\mathbf{A}$. If $\det(\mathbf{A}) = 0$, the inverse does not exist.
-2. Form the matrix of cofactors $\mathbf{C}$ where $C_{ij} = (-1)^{i+j} M_{ij}$.
-3. Transpose the cofactor matrix to get the adjugate: $\mathrm{adj}(\mathbf{A}) = \mathbf{C}^T$.
-4. Divide every entry of the adjugate by $\det(\mathbf{A})$.
-
-**Example.** Find the inverse of:
-
-$$
-\mathbf{A} = \begin{pmatrix} 1 & 2 & 0 \\ 0 & 1 & 3 \\ 1 & 0 & 1 \end{pmatrix}
-$$
-
-**Step 1:** $\det(\mathbf{A}) = 1(1 - 0) - 2(0 - 3) + 0(0 - 1) = 1 + 6 + 0 = 7$.
-
-**Step 2:** Compute cofactors:
-
-$$
-C_{11} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1, \quad C_{12} = -\begin{vmatrix} 0 & 3 \\ 1 & 1 \end{vmatrix} = 3, \quad C_{13} = +\begin{vmatrix} 0 & 1 \\ 1 & 0 \end{vmatrix} = -1
-$$
-
-$$
-C_{21} = -\begin{vmatrix} 2 & 0 \\ 0 & 1 \end{vmatrix} = -2, \quad C_{22} = +\begin{vmatrix} 1 & 0 \\ 1 & 1 \end{vmatrix} = 1, \quad C_{23} = -\begin{vmatrix} 1 & 2 \\ 1 & 0 \end{vmatrix} = 2
-$$
-
-$$
-C_{31} = +\begin{vmatrix} 2 & 0 \\ 1 & 3 \end{vmatrix} = 6, \quad C_{32} = -\begin{vmatrix} 1 & 0 \\ 0 & 3 \end{vmatrix} = -3, \quad C_{33} = +\begin{vmatrix} 1 & 2 \\ 0 & 1 \end{vmatrix} = 1
-$$
-
-Cofactor matrix: $\mathbf{C} = \begin{pmatrix} 1 & 3 & -1 \\ -2 & 1 & 2 \\ 6 & -3 & 1 \end{pmatrix}$
-
-**Step 3:**
-$\mathrm{adj}(\mathbf{A}) = \mathbf{C}^T = \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$
-
-**Step 4:**
-$\mathbf{A}^{-1} = \frac{1}{7} \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$
-
-### 3.4 Solving Systems of Linear Equations
-
-Consider a system of $n$ linear equations in $n$ unknowns, which can be written in matrix form as:
-
-$$
-\mathbf{Ax} = \mathbf{b}
-$$
-
-where $\mathbf{A}$ is the $n \times n$ coefficient matrix, $\mathbf{x}$ is the column vector of
-unknowns, and $\mathbf{b}$ is the column vector of constants.
-
-If $\mathbf{A}$ is invertible, the unique solution is:
-
-$$
-\mathbf{x} = \mathbf{A}^{-1}\mathbf{b}
-$$
-
-**Example.** Solve the system:
-
-$$
-\begin{cases} 2x + y = 5 \\ x - y = 1 \end{cases}
-$$
-
-In matrix form:
-$\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 5 \\ 1 \end{pmatrix}$
-
-$\det(\mathbf{A}) = -2 - 1 = -3 \neq 0$, so:
-
-$$
-\mathbf{A}^{-1} = \frac{1}{-3} \begin{pmatrix} -1 & -1 \\ -1 & 2 \end{pmatrix} = \begin{pmatrix} \frac{1}{3} & \frac{1}{3} \\ \frac{1}{3} & -\frac{2}{3} \end{pmatrix}
-$$
-
-$$
-\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} \frac{1}{3} & \frac{1}{3} \\ \frac{1}{3} & -\frac{2}{3} \end{pmatrix} \begin{pmatrix} 5 \\ 1 \end{pmatrix} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}
-$$
-
-The solution is $x = 2$, $y = 1$.
-
-### 3.5 Conditions for Invertibility
-
-For a square matrix $\mathbf{A}$, the following are **equivalent** (any one implies all the others):
-
-1. $\mathbf{A}$ is invertible
-2. $\det(\mathbf{A}) \neq 0$
-3. $\mathbf{A}$ has full rank (rank $= n$)
-4. The rows of $\mathbf{A}$ are linearly independent
-5. The columns of $\mathbf{A}$ are linearly independent
-6. The system $\mathbf{Ax} = \mathbf{b}$ has a unique solution for every $\mathbf{b}$
-7. The only solution to $\mathbf{Ax} = \mathbf{0}$ is $\mathbf{x} = \mathbf{0}$ (trivial solution)
-8. $\mathbf{A}$ is row-equivalent to $\mathbf{I}_n$
-9. $\mathbf{A}$ does not have zero as an eigenvalue
-
-### 3.6 Properties of Inverses
-
-Let $\mathbf{A}$ and $\mathbf{B}$ be invertible $n \times n$ matrices and
-$k \in \mathbb{R} \setminus \{0\}$.
-
-1. $(\mathbf{A}^{-1})^{-1} = \mathbf{A}$
-2. $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$ (reversal rule)
-3. $(\mathbf{A}^T)^{-1} = (\mathbf{A}^{-1})^T$
-4. $(k\mathbf{A})^{-1} = \frac{1}{k}\mathbf{A}^{-1}$
-5. $\det(\mathbf{A}^{-1}) = \frac{1}{\det(\mathbf{A})}$
-
----
-
-## 4. Geometric Transformations (2D)
-
-A linear transformation $T: \mathbb{R}^2 \to \mathbb{R}^2$ can be represented by a $2 \times 2$
-matrix $\mathbf{A}$. The image of a point $(x, y)$ is obtained by:
-
-$$
-\begin{pmatrix} x' \\ y' \end{pmatrix} = \mathbf{A} \begin{pmatrix} x \\ y \end{pmatrix}
-$$
-
-The columns of $\mathbf{A}$ are the images of the basis vectors
-$\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$ respectively. This
-fact completely determines the transformation.
-
-### 4.1 Reflection Matrices
-
-Reflection in the $x$-axis maps $(x, y) \mapsto (x, -y)$:
-
-$$
-\mathbf{R}_x = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}, \quad \det(\mathbf{R}_x) = -1
-$$
-
-Reflection in the $y$-axis maps $(x, y) \mapsto (-x, y)$:
-
-$$
-\mathbf{R}_y = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}, \quad \det(\mathbf{R}_y) = -1
-$$
-
-Reflection in the line $y = x$ maps $(x, y) \mapsto (y, x)$:
-
-$$
-\mathbf{R}_{y=x} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \det(\mathbf{R}_{y=x}) = -1
-$$
-
-Reflection in the line $y = -x$ maps $(x, y) \mapsto (-y, -x)$:
-
-$$
-\mathbf{R}_{y=-x} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}, \quad \det(\mathbf{R}_{y=-x}) = -1
-$$
-
-Reflection in the line $y = x\tan\theta$ (a line through the origin making angle $\theta$ with the
-positive $x$-axis):
-
-$$
-\mathbf{R}_{\theta} = \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}
-$$
-
-**Key observation:** All reflections have $\det = -1$, confirming that they reverse orientation.
-Every reflection matrix is its own inverse (applying the same reflection twice returns to the
-original): $\mathbf{R}^2 = \mathbf{I}$.
-
-**Derivation of the general reflection formula.** To reflect a vector about a line through the
-origin at angle $\theta$, decompose the vector into components parallel and perpendicular to the
-line. The parallel component is preserved, and the perpendicular component is negated. This yields
-the matrix above.
-
-### 4.2 Rotation Matrices
-
-An **anticlockwise** rotation by angle $\theta$ about the origin is represented by:
-
-$$
-\mathbf{R}(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}
-$$
-
-**Verification.** The image of $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ is
-$\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$, which is the unit vector at angle
-$\theta$. The image of $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$ is
-$\begin{pmatrix} -\sin\theta \\ \cos\theta \end{pmatrix}$, which is the unit vector at angle
-$\theta + \frac{\pi}{2}$. Both are correct.
-
-**Properties of rotation matrices:**
-
-$$
-\det(\mathbf{R}(\theta)) = \cos^2\theta + \sin^2\theta = 1
-$$
-
-$$
-\mathbf{R}(\theta)^{-1} = \mathbf{R}(-\theta) = \mathbf{R}(\theta)^T = \begin{pmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{pmatrix}
-$$
-
-The inverse of a rotation by $\theta$ is a rotation by $-\theta$ (clockwise). This confirms that
-rotation matrices are **orthogonal**: $\mathbf{R}^T = \mathbf{R}^{-1}$.
-
-**Composition of rotations:**
-
-$$
-\mathbf{R}(\alpha)\mathbf{R}(\beta) = \mathbf{R}(\alpha + \beta)
-$$
-
-This can be verified by matrix multiplication and follows from the angle addition formulas:
-
-$$
-\begin{pmatrix} \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end{pmatrix} \begin{pmatrix} \cos\beta & -\sin\beta \\ \sin\beta & \cos\beta \end{pmatrix}
-$$
-
-$$
-= \begin{pmatrix} \cos\alpha\cos\beta - \sin\alpha\sin\beta & -\cos\alpha\sin\beta - \sin\alpha\cos\beta \\ \sin\alpha\cos\beta + \cos\alpha\sin\beta & -\sin\alpha\sin\beta + \cos\alpha\cos\beta \end{pmatrix}
-$$
-
-$$
-= \begin{pmatrix} \cos(\alpha + \beta) & -\sin(\alpha + \beta) \\ \sin(\alpha + \beta) & \cos(\alpha + \beta) \end{pmatrix} = \mathbf{R}(\alpha + \beta)
-$$
-
-**Common rotations:**
-
-| Angle         | Matrix                                           | Transformation            |
-| ------------- | ------------------------------------------------ | ------------------------- |
-| $90^{\circ}$  | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$  | $(x, y) \mapsto (-y, x)$  |
-| $180^{\circ}$ | $\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}$ | $(x, y) \mapsto (-x, -y)$ |
-| $270^{\circ}$ | $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$  | $(x, y) \mapsto (y, -x)$  |
-
-### 4.3 Enlargement (Dilation)
-
-An **enlargement** (or **dilation**) with centre at the origin and scale factor $k$ is represented
-by:
-
-$$
-\mathbf{D}(k) = \begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix} = k\mathbf{I}
-$$
-
-This maps $(x, y) \mapsto (kx, ky)$.
-
-$$
-\det(\mathbf{D}(k)) = k^2
-$$
-
-The area scaling factor is $k^2$. If $k \gt 0$, the transformation preserves orientation; if
-$k \lt 0$, it reverses orientation (equivalent to a dilation by $|k|$ combined with a rotation by
-$180^{\circ}$).
-
-A **non-uniform scaling** stretches by different factors in the $x$ and $y$ directions:
-
-$$
-\mathbf{S}(k_1, k_2) = \begin{pmatrix} k_1 & 0 \\ 0 & k_2 \end{pmatrix}
-$$
-
-with $\det = k_1 k_2$.
-
-### 4.4 Shear Transformations
-
-A **horizontal shear** with shear factor $k$ maps $(x, y) \mapsto (x + ky, y)$:
-
-$$
-\mathbf{H}_x(k) = \begin{pmatrix} 1 & k \\ 0 & 1 \end{pmatrix}, \quad \det(\mathbf{H}_x(k)) = 1
-$$
-
-A **vertical shear** with shear factor $k$ maps $(x, y) \mapsto (x, y + kx)$:
-
-$$
-\mathbf{H}_y(k) = \begin{pmatrix} 1 & 0 \\ k & 1 \end{pmatrix}, \quad \det(\mathbf{H}_y(k)) = 1
-$$
-
-Shears preserve area ($\det = 1$) but distort shapes.
-
-### 4.5 Composite Transformations
-
-When two transformations are applied in succession, the overall transformation is represented by the
-**product** of their matrices.
-
-If transformation $\mathbf{A}$ is applied first, followed by transformation $\mathbf{B}$, the
-overall transformation is $\mathbf{BA}$ (note the order: the second transformation is written on the
-left).
-
-$$
-\mathbf{x}' = \mathbf{B}(\mathbf{Ax}) = (\mathbf{BA})\mathbf{x}
-$$
-
-:::warning The order of multiplication matters. $\mathbf{BA}$ means "apply $\mathbf{A}$ first, then
-$\mathbf{B}$." The product $\mathbf{AB}$ (if it represents a valid composition) would mean "apply
-$\mathbf{B}$ first, then $\mathbf{A}$," which is generally a different transformation.
-:::
-
-**Example.** Find the matrix representing a reflection in the $x$-axis followed by a rotation of
-$90^{\circ}$ anticlockwise.
-
-$$
-\mathbf{R}(90^{\circ}) \cdot \mathbf{R}_x = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
-$$
-
-This is the matrix for reflection in $y = x$. So reflecting in the $x$-axis and then rotating
-$90^{\circ}$ anticlockwise is equivalent to a single reflection in the line $y = x$.
-
-**Example.** Find the matrix for a rotation of $60^{\circ}$ followed by an enlargement with scale
-factor 2.
-
-$$
-\mathbf{D}(2) \cdot \mathbf{R}(60^{\circ}) = 2 \begin{pmatrix} \cos 60^{\circ} & -\sin 60^{\circ} \\ \sin 60^{\circ} & \cos 60^{\circ} \end{pmatrix} = \begin{pmatrix} 1 & -\sqrt{3} \\ \sqrt{3} & 1 \end{pmatrix}
-$$
-
-### 4.6 Invariant Points and Lines
-
-An **invariant point** of a transformation $\mathbf{A}$ is a point $\mathbf{x}$ such that
-$\mathbf{Ax} = \mathbf{x}$, i.e., $(\mathbf{A} - \mathbf{I})\mathbf{x} = \mathbf{0}$. The origin is
-always an invariant point for any linear transformation (since $\mathbf{A}\mathbf{0} = \mathbf{0}$).
-
-A **line of invariant points** exists when $\det(\mathbf{A} - \mathbf{I}) = 0$, meaning
-$\mathbf{A} - \mathbf{I}$ is singular and the system
-$(\mathbf{A} - \mathbf{I})\mathbf{x} = \mathbf{0}$ has infinitely many solutions forming a line
-through the origin.
-
-An **invariant line** is a line that is mapped to itself (though individual points on the line may
-move to other points on the same line). Every line through the origin in the direction of an
-eigenvector is an invariant line.
-
-**Example.** Find the invariant points of
-$\mathbf{A} = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$.
-
-Solve
-$\begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x \\ y \end{pmatrix}$:
-
-$$
-3x + y = x \implies 2x + y = 0 \implies y = -2x
-$$
-
-$$
-2y = y \implies y = 0 \implies x = 0
-$$
-
-The only invariant point is the origin $(0, 0)$.
-
-**Example.** Find the invariant points of
-$\mathbf{A} = \begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}$.
-
-Solve $(\mathbf{A} - \mathbf{I})\mathbf{x} = \mathbf{0}$:
-
-$$
-\begin{pmatrix} 1 & -1 \\ 2 & -2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
-$$
-
-This gives $x - y = 0$, so $x = y$. The invariant points form the line $y = x$ (a line of invariant
-points through the origin).
-
-### 4.7 Area Scaling Factor
-
-For any $2 \times 2$ matrix $\mathbf{A}$ representing a linear transformation:
-
-- The **area scaling factor** is $|\det(\mathbf{A})|$.
-- If $\det(\mathbf{A}) = 1$, areas are preserved.
-- If $\det(\mathbf{A}) = -1$, areas are preserved but orientation is reversed.
-
-**Example.** If $\mathbf{A} = \begin{pmatrix} 3 & 2 \\ 1 & 4 \end{pmatrix}$, then
-$\det(\mathbf{A}) = 12 - 2 = 10$. Areas are scaled by a factor of 10.
-
-For a composite transformation $\mathbf{AB}$, the area scaling factor is
-$|\det(\mathbf{AB})| = |\det(\mathbf{A})| \cdot |\det(\mathbf{B})|$.
+| Metal | Work Function $\phi$ (eV) |
+|-------|--------------------------|
+| Cesium | 2.1 |
+| Sodium | 2.3 |
+| Potassium | 2.3 |
+| Zinc | 4.3 |
+| Copper | 4.7 |
+| Platinum | 5.6 |
 
 <details>
-<summary>Proof that the determinant equals the area scaling factor</summary>
+<summary>
+<b>Solution</b>
+</summary>
 
-Consider the unit square with vertices $(0, 0)$, $(1, 0)$, $(1, 1)$, $(0, 1)$. Under the
-transformation $\mathbf{A} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, these vertices map to:
+A metal surface with work function $\phi = 4.3 \;\mathrm{eV}$ is illuminated with light of wavelength $\lambda = 200 \;\mathrm{nm}$.
 
-$(0, 0) \mapsto (0, 0)$, $(1, 0) \mapsto (a, c)$, $(1, 1) \mapsto (a+b, c+d)$,
-$(0, 1) \mapsto (b, d)$
+Find: (a) the threshold frequency, (b) the maximum kinetic energy of photoelectrons in eV, and (c) the stopping potential.
 
-The image is a parallelogram with adjacent sides $\begin{pmatrix} a \\ c \end{pmatrix}$ and
-$\begin{pmatrix} b \\ d \end{pmatrix}$. The area of this parallelogram is:
+**(a) Threshold frequency:**
 
-$$
-\mathrm{Area} = |ad - bc| = |\det(\mathbf{A})|
-$$
+$$f_0 = \frac{\phi}{h} = \frac{4.3 \times 1.60 \times 10^{-19}}{6.63 \times 10^{-34}} = 1.04 \times 10^{15} \;\mathrm{Hz}$$
 
-Since any region can be tiled by small squares, and the transformation is linear (preserving ratios
-of areas), the area of any region is scaled by $|\det(\mathbf{A})|$.
+**(b) Photon energy:**
+
+$$E = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^{8}}{200 \times 10^{-9}} = 9.95 \times 10^{-19} \;\mathrm{J}$$
+
+Convert to eV: $E = 6.21 \;\mathrm{eV}$.
+
+Maximum kinetic energy:
+
+$$E_{k,\mathrm{max}} = 6.21 - 4.3 = 1.91 \;\mathrm{eV}$$
+
+**(c) Stopping potential:**
+
+$$V_s = \frac{E_{k,\mathrm{max}}}{e} = 1.91 \;\mathrm{V}$$
 
 </details>
 
----
 
-## 5. Eigenvalues and Eigenvectors (AHL)
+### 2. Wave-Particle Duality
 
-### 5.1 Definition
+#### 2.1 De Broglie Wavelength
 
-Let $\mathbf{A}$ be an $n \times n$ matrix. A scalar $\lambda$ is an **eigenvalue** of $\mathbf{A}$
-if there exists a non-zero vector $\mathbf{v}$ such that:
+Louis de Broglie proposed that all matter has wave-like properties. A particle with momentum $p$ has an associated wavelength:
 
-$$
-\mathbf{Av} = \lambda\mathbf{v}
-$$
+$$\lambda = \frac{h}{p} = \frac{h}{mv}$$
 
-The vector $\mathbf{v}$ is called an **eigenvector** of $\mathbf{A}$ corresponding to the eigenvalue
-$\lambda$.
+This duality is fundamental to quantum mechanics: light behaves as both a wave and a particle, and matter particles also exhibit wave behaviour.
 
-Geometrically, an eigenvector is a direction that is unchanged by the transformation (it may be
-stretched or compressed, but not rotated). The eigenvalue $\lambda$ is the scaling factor in that
-direction.
+For non-relativistic particles, $p = mv$, so:
 
-If $\mathbf{v}$ is an eigenvector, then so is any non-zero scalar multiple $k\mathbf{v}$
-(eigenvectors are determined only up to scalar multiplication). We typically describe eigenspaces
-(the set of all eigenvectors for a given eigenvalue, including the zero vector).
+$$\lambda = \frac{h}{mv}$$
 
-### 5.2 The Characteristic Equation
+For an electron accelerated through a potential difference $V$:
 
-The equation $\mathbf{Av} = \lambda\mathbf{v}$ can be rewritten as:
+$$eV = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2eV}{m_e}}$$
 
-$$
-(\mathbf{A} - \lambda\mathbf{I})\mathbf{v} = \mathbf{0}
-$$
+$$\lambda = \frac{h}{\sqrt{2m_e eV}}$$
 
-For a non-trivial solution ($\mathbf{v} \neq \mathbf{0}$) to exist, the matrix
-$\mathbf{A} - \lambda\mathbf{I}$ must be singular:
+#### 2.2 Evidence for Matter Waves
 
-$$
-\det(\mathbf{A} - \lambda\mathbf{I}) = 0
-$$
-
-This is the **characteristic equation** of $\mathbf{A}$. Its roots are the eigenvalues of
-$\mathbf{A}$.
-
-For a $2 \times 2$ matrix $\mathbf{A} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$:
-
-$$
-\det(\mathbf{A} - \lambda\mathbf{I}) = \det \begin{pmatrix} a - \lambda & b \\ c & d - \lambda \end{pmatrix} = (a - \lambda)(d - \lambda) - bc = 0
-$$
-
-$$
-\lambda^2 - (a + d)\lambda + (ad - bc) = 0
-$$
-
-The coefficient $a + d = \mathrm{tr}(\mathbf{A})$ is the **trace** of $\mathbf{A}$, and
-$ad - bc = \det(\mathbf{A})$. So the characteristic equation for a $2 \times 2$ matrix is:
-
-$$
-\lambda^2 - \mathrm{tr}(\mathbf{A})\lambda + \det(\mathbf{A}) = 0
-$$
-
-**Key identities:** For a $2 \times 2$ matrix, $\lambda_1 + \lambda_2 = \mathrm{tr}(\mathbf{A})$ and
-$\lambda_1 \lambda_2 = \det(\mathbf{A})$.
-
-### 5.3 Finding Eigenvalues and Eigenvectors
-
-**Example.** Find the eigenvalues and eigenvectors of
-$\mathbf{A} = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}$.
-
-**Step 1: Characteristic equation.**
-
-$$
-\det(\mathbf{A} - \lambda\mathbf{I}) = \det \begin{pmatrix} 4 - \lambda & 1 \\ 2 & 3 - \lambda \end{pmatrix} = (4 - \lambda)(3 - \lambda) - 2 = 0
-$$
-
-$$
-\lambda^2 - 7\lambda + 12 - 2 = \lambda^2 - 7\lambda + 10 = 0
-$$
-
-$$
-(\lambda - 5)(\lambda - 2) = 0
-$$
-
-The eigenvalues are $\lambda_1 = 5$ and $\lambda_2 = 2$.
-
-**Step 2: Find eigenvectors for $\lambda_1 = 5$.**
-
-Solve $(\mathbf{A} - 5\mathbf{I})\mathbf{v} = \mathbf{0}$:
-
-$$
-\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
-$$
-
-This gives $-x + y = 0$, so $y = x$. The eigenvectors are of the form
-$\begin{pmatrix} t \\ t \end{pmatrix} = t\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ for $t \neq 0$.
-
-**Step 3: Find eigenvectors for $\lambda_2 = 2$.**
-
-Solve $(\mathbf{A} - 2\mathbf{I})\mathbf{v} = \mathbf{0}$:
-
-$$
-\begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
-$$
-
-This gives $2x + y = 0$, so $y = -2x$. The eigenvectors are of the form
-$\begin{pmatrix} t \\ -2t \end{pmatrix} = t\begin{pmatrix} 1 \\ -2 \end{pmatrix}$ for $t \neq 0$.
-
-### 5.4 3x3 Eigenvalue Problems
-
-For $3 \times 3$ matrices, the characteristic equation is a cubic in $\lambda$:
-
-$$
-\det(\mathbf{A} - \lambda\mathbf{I}) = 0
-$$
-
-The cubic can be solved by factoring (looking for integer roots via the rational root theorem) or by
-using the formula. By the Fundamental Theorem of Algebra, every $n \times n$ matrix has exactly $n$
-eigenvalues (counting algebraic multiplicity), though some may be complex.
-
-**Example.** Find the eigenvalues of:
-
-$$
-\mathbf{A} = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 3 & -1 \\ 0 & -1 & 3 \end{pmatrix}
-$$
-
-$$
-\det(\mathbf{A} - \lambda\mathbf{I}) = \det \begin{pmatrix} 2 - \lambda & 0 & 0 \\ 0 & 3 - \lambda & -1 \\ 0 & -1 & 3 - \lambda \end{pmatrix}
-$$
-
-Expanding along the first row:
-
-$$
-(2 - \lambda) \det \begin{pmatrix} 3 - \lambda & -1 \\ -1 & 3 - \lambda \end{pmatrix} = (2 - \lambda)[(3 - \lambda)^2 - 1] = 0
-$$
-
-$$(2 - \lambda)(\lambda^2 - 6\lambda + 8) = (2 - \lambda)(\lambda - 2)(\lambda - 4) = 0$$
-
-$$-(\lambda - 2)^2(\lambda - 4) = 0$$
-
-The eigenvalues are $\lambda = 2$ (with algebraic multiplicity 2) and $\lambda = 4$.
-
-### 5.5 Diagonalization
-
-An $n \times n$ matrix $\mathbf{A}$ is **diagonalizable** if there exists an invertible matrix
-$\mathbf{P}$ and a diagonal matrix $\mathbf{D}$ such that:
-
-$$
-\mathbf{A} = \mathbf{PDP}^{-1}
-$$
-
-The matrix $\mathbf{P}$ has the eigenvectors of $\mathbf{A}$ as its columns, and $\mathbf{D}$ has
-the corresponding eigenvalues on its diagonal.
-
-**Conditions for diagonalizability:**
-
-- An $n \times n$ matrix with $n$ distinct eigenvalues is always diagonalizable.
-- A matrix is diagonalizable if and only if it has a full set of linearly independent eigenvectors
-  (i.e., the geometric multiplicity of each eigenvalue equals its algebraic multiplicity).
-- Not all matrices are diagonalizable. A matrix with a repeated eigenvalue may fail to be
-  diagonalizable if there are not enough linearly independent eigenvectors.
-
-**Example.** Diagonalize $\mathbf{A} = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}$.
-
-From the previous example, the eigenvalues are $\lambda_1 = 5$ with eigenvector
-$\begin{pmatrix} 1 \\ 1 \end{pmatrix}$, and $\lambda_2 = 2$ with eigenvector
-$\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
-
-$$
-\mathbf{P} = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}, \quad \mathbf{D} = \begin{pmatrix} 5 & 0 \\ 0 & 2 \end{pmatrix}
-$$
-
-Verify: $\det(\mathbf{P}) = -2 - 1 = -3$, so
-$\mathbf{P}^{-1} = \frac{1}{-3} \begin{pmatrix} -2 & -1 \\ -1 & 1 \end{pmatrix} = \begin{pmatrix} \frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & -\frac{1}{3} \end{pmatrix}$
-
-$$
-\mathbf{PDP}^{-1} = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix} \begin{pmatrix} 5 & 0 \\ 0 & 2 \end{pmatrix} \begin{pmatrix} \frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & -\frac{1}{3} \end{pmatrix}
-$$
-
-$$
-= \begin{pmatrix} 5 & 2 \\ 5 & -4 \end{pmatrix} \begin{pmatrix} \frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & -\frac{1}{3} \end{pmatrix} = \begin{pmatrix} \frac{10}{3} + \frac{2}{3} & \frac{5}{3} - \frac{2}{3} \\ \frac{10}{3} - \frac{4}{3} & \frac{5}{3} + \frac{4}{3} \end{pmatrix} = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} = \mathbf{A}
-$$
-
-### 5.6 Powers of Matrices
-
-Diagonalization makes it efficient to compute powers of matrices. If
-$\mathbf{A} = \mathbf{PDP}^{-1}$, then:
-
-$$
-\mathbf{A}^n = \mathbf{PD}^n\mathbf{P}^{-1}
-$$
-
-where $\mathbf{D}^n$ is simply the diagonal matrix with each diagonal entry raised to the $n$-th
-power.
-
-**Example.** Compute $\mathbf{A}^5$ where
-$\mathbf{A} = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}$.
-
-Using $\mathbf{A} = \mathbf{PDP}^{-1}$ from above:
-
-$$
-\mathbf{D}^5 = \begin{pmatrix} 5^5 & 0 \\ 0 & 2^5 \end{pmatrix} = \begin{pmatrix} 3125 & 0 \\ 0 & 32 \end{pmatrix}
-$$
-
-$$
-\mathbf{A}^5 = \mathbf{PD}^5\mathbf{P}^{-1} = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix} \begin{pmatrix} 3125 & 0 \\ 0 & 32 \end{pmatrix} \begin{pmatrix} \frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & -\frac{1}{3} \end{pmatrix}
-$$
-
-$$
-= \begin{pmatrix} 3125 & 32 \\ 3125 & -64 \end{pmatrix} \begin{pmatrix} \frac{2}{3} & \frac{1}{3} \\ \frac{1}{3} & -\frac{1}{3} \end{pmatrix}
-$$
-
-$$
-= \begin{pmatrix} \frac{6250 + 32}{3} & \frac{3125 - 32}{3} \\ \frac{6250 - 64}{3} & \frac{3125 + 64}{3} \end{pmatrix} = \begin{pmatrix} \frac{6282}{3} & \frac{3093}{3} \\ \frac{6186}{3} & \frac{3189}{3} \end{pmatrix} = \begin{pmatrix} 2094 & 1031 \\ 2062 & 1063 \end{pmatrix}
-$$
-
-### 5.7 Eigenvalues of Symmetric Matrices
-
-Symmetric matrices ($\mathbf{A}^T = \mathbf{A}$) have special properties:
-
-1. All eigenvalues of a real symmetric matrix are **real** (not complex).
-2. Eigenvectors corresponding to **distinct** eigenvalues are **orthogonal** (perpendicular).
-3. Every real symmetric matrix is **orthogonally diagonalizable**: $\mathbf{A} = \mathbf{QDQ}^T$
-   where $\mathbf{Q}$ is an orthogonal matrix ($\mathbf{Q}^{-1} = \mathbf{Q}^T$).
-
-These properties make symmetric matrices particularly important in applications like quadratic
-forms, principal component analysis, and physics.
-
----
-
-## 6. Applications
-
-### 6.1 Solving Simultaneous Equations: Gaussian Elimination
-
-**Gaussian elimination** is a systematic method for solving systems of linear equations by reducing
-the augmented matrix to row echelon form (or reduced row echelon form).
-
-**Elementary row operations:**
-
-1. Swap two rows ($R_i \leftrightarrow R_j$)
-2. Multiply a row by a non-zero scalar ($R_i \to kR_i$)
-3. Add a multiple of one row to another ($R_i \to R_i + kR_j$)
-
-**Example.** Solve the system:
-
-$$
-\begin{cases} x + 2y - z = 3 \\ 2x - y + z = 1 \\ 3x + y + 2z = 5 \end{cases}
-$$
-
-Augmented matrix:
-
-$$
-\left(\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 2 & -1 & 1 & 1 \\ 3 & 1 & 2 & 5 \end{array}\right)
-$$
-
-$R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - 3R_1$:
-
-$$
-\left(\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 0 & -5 & 3 & -5 \\ 0 & -5 & 5 & -4 \end{array}\right)
-$$
-
-$R_3 \to R_3 - R_2$:
-
-$$
-\left(\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 0 & -5 & 3 & -5 \\ 0 & 0 & 2 & 1 \end{array}\right)
-$$
-
-Back-substitution: $2z = 1 \implies z = \frac{1}{2}$. Then
-$-5y + \frac{3}{2} = -5 \implies -5y = -\frac{13}{2} \implies y = \frac{13}{10}$. Then
-$x + \frac{26}{10} - \frac{1}{2} = 3 \implies x = \frac{30}{10} - \frac{21}{10} = \frac{9}{10}$.
-
-The solution is $x = \frac{9}{10}$, $y = \frac{13}{10}$, $z = \frac{1}{2}$.
-
-### 6.2 Cramer's Rule
-
-**Cramer's Rule** provides a direct formula for solving a system $\mathbf{Ax} = \mathbf{b}$ when
-$\det(\mathbf{A}) \neq 0$. For a system of $n$ equations in $n$ unknowns:
-
-$$
-x_i = \frac{\det(\mathbf{A}_i)}{\det(\mathbf{A})}
-$$
-
-where $\mathbf{A}_i$ is the matrix obtained by replacing the $i$-th column of $\mathbf{A}$ with the
-vector $\mathbf{b}$.
-
-**Example.** Solve using Cramer's Rule:
-
-$$
-\begin{cases} 3x + 2y = 7 \\ x - y = 1 \end{cases}
-$$
-
-$\det(\mathbf{A}) = \det \begin{pmatrix} 3 & 2 \\ 1 & -1 \end{pmatrix} = -3 - 2 = -5$
-
-$$
-x = \frac{\det \begin{pmatrix} 7 & 2 \\ 1 & -1 \end{pmatrix}}{-5} = \frac{-7 - 2}{-5} = \frac{-9}{-5} = \frac{9}{5}
-$$
-
-$$
-y = \frac{\det \begin{pmatrix} 3 & 7 \\ 1 & 1 \end{pmatrix}}{-5} = \frac{3 - 7}{-5} = \frac{-4}{-5} = \frac{4}{5}
-$$
-
-:::warning Cramer's Rule becomes computationally expensive for large systems ($O(n!)$ operations for
-the determinants vs. $O(n^3)$ for Gaussian elimination). It is primarily useful for small systems
-and theoretical proofs.
-:::
-
-### 6.3 Cryptography: The Hill Cipher
-
-The **Hill cipher** is a polygraphic substitution cipher that uses matrix multiplication to encrypt
-blocks of text.
-
-**Encryption process:**
-
-1. Convert the message to numerical values (e.g., A = 0, B = 1, ..., Z = 25).
-2. Divide the message into blocks of size $n$.
-3. Multiply each block (as a column vector) by an $n \times n$ invertible key matrix $\mathbf{K}$,
-   working modulo 26.
-4. Convert the resulting numbers back to letters.
-
-**Decryption:** Multiply the ciphertext blocks by $\mathbf{K}^{-1}$ (mod 26).
-
-**Example.** Encrypt "HELP" using the key matrix
-$\mathbf{K} = \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix}$.
-
-H = 7, E = 4, L = 11, P = 15. Form two blocks: $\begin{pmatrix} 7 \\ 4 \end{pmatrix}$ and
-$\begin{pmatrix} 11 \\ 15 \end{pmatrix}$.
-
-Block 1:
-$\begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} 7 \\ 4 \end{pmatrix} = \begin{pmatrix} 21 + 20 \\ 7 + 8 \end{pmatrix} = \begin{pmatrix} 41 \\ 15 \end{pmatrix} \equiv \begin{pmatrix} 15 \\ 15 \end{pmatrix} \pmod{26}$,
-giving "PP".
-
-Block 2:
-$\begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} 11 \\ 15 \end{pmatrix} = \begin{pmatrix} 33 + 75 \\ 11 + 30 \end{pmatrix} = \begin{pmatrix} 108 \\ 41 \end{pmatrix} \equiv \begin{pmatrix} 4 \\ 15 \end{pmatrix} \pmod{26}$,
-giving "EP".
-
-Ciphertext: "PPEP".
-
-To decrypt, compute $\mathbf{K}^{-1} \pmod{26}$. $\det(\mathbf{K}) = 6 - 5 = 1$. The modular inverse
-of 1 modulo 26 is 1, so:
-
-$$
-\mathbf{K}^{-1} = \begin{pmatrix} 2 & -5 \\ -1 & 3 \end{pmatrix} \equiv \begin{pmatrix} 2 & 21 \\ 25 & 3 \end{pmatrix} \pmod{26}
-$$
+- **Electron diffraction**: Electrons directed at a thin crystal produce a diffraction pattern, confirming wave behaviour. The diffraction maxima occur at angles predicted by the de Broglie wavelength.
+- **Davisson-Germer experiment**: Demonstrated electron diffraction from a nickel crystal, confirming de Broglie's hypothesis.
 
 <details>
-<summary>Modular arithmetic for matrix inversion</summary>
+<summary>
+<b>Solution</b>
+</summary>
 
-Finding the modular inverse of a determinant is crucial. The modular inverse of $d$ modulo 26 exists
-if and only if $\gcd(d, 26) = 1$, i.e., $d$ is odd and not divisible by 13.
+An electron is accelerated from rest through a potential difference of $150 \;\mathrm{V}$.
 
-To find $d^{-1} \pmod{26}$, use the Extended Euclidean Algorithm or simply try values. For instance,
-$7^{-1} \equiv 15 \pmod{26}$ because $7 \times 15 = 105 \equiv 1 \pmod{26}$.
+Find its de Broglie wavelength.
 
-If the determinant shares a factor with 26, the key matrix is not invertible modulo 26 and cannot be
-used for the Hill cipher.
+Using the formula:
+
+$$\lambda = \frac{h}{\sqrt{2m_e eV}}$$
+
+$$\lambda = \frac{6.63 \times 10^{-34}}{\sqrt{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 150}}$$
+
+$$\lambda = \frac{6.63 \times 10^{-34}}{\sqrt{4.37 \times 10^{-47}}} = \frac{6.63 \times 10^{-34}}{6.61 \times 10^{-24}}$$
+
+$$\lambda = 1.00 \times 10^{-10} \;\mathrm{m} = 0.100 \;\mathrm{nm}$$
+
+This wavelength is comparable to atomic spacing in crystals, explaining why electron diffraction is observable.
 
 </details>
 
-### 6.4 Computer Graphics Transformations
 
-Matrices are fundamental in computer graphics for representing and composing transformations.
+### 3. Energy Levels and Spectral Lines
 
-**Homogeneous coordinates** extend $2 \times 2$ transformations to allow translations by using
-$3 \times 3$ matrices. A point $(x, y)$ is represented as
-$\begin{pmatrix} x \\ y \\ 1 \end{pmatrix}$.
+#### 3.1 Bohr Model of the Atom
 
-A translation by $(t_x, t_y)$ is:
+Bohr proposed that electrons orbit the nucleus only in certain **allowed energy levels**. The key postulates:
 
-$$
-\mathbf{T} = \begin{pmatrix} 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end{pmatrix}
-$$
+1. Electrons exist in stationary orbits without radiating energy.
+2. An electron can transition between levels by absorbing or emitting a photon with energy equal to the difference between the two levels.
 
-Combined with linear transformations (rotation, scaling, shearing) in the upper-left $2 \times 2$
-block, arbitrary affine transformations can be composed by matrix multiplication.
+The energy of the $n$-th level in hydrogen is:
 
-**Example.** Rotate by $45^{\circ}$ about the point $(2, 3)$:
+$$E_n = \frac{-13.6}{n^2} \;\mathrm{eV}$$
 
-1. Translate so that $(2, 3)$ moves to the origin:
-   $\mathbf{T}_1 = \begin{pmatrix} 1 & 0 & -2 \\ 0 & 1 & -3 \\ 0 & 0 & 1 \end{pmatrix}$
-2. Rotate by $45^{\circ}$:
-   $\mathbf{R} = \begin{pmatrix} \cos 45^{\circ} & -\sin 45^{\circ} & 0 \\ \sin 45^{\circ} & \cos 45^{\circ} & 0 \\ 0 & 0 & 1 \end{pmatrix}$
-3. Translate back:
-   $\mathbf{T}_2 = \begin{pmatrix} 1 & 0 & 2 \\ 0 & 1 & 3 \\ 0 & 0 & 1 \end{pmatrix}$
+where $n = 1, 2, 3, \ldots$ is the principal quantum number.
 
-Combined: $\mathbf{M} = \mathbf{T}_2 \mathbf{R} \mathbf{T}_1$
+#### 3.2 Emission and Absorption Spectra
 
-This demonstrates the power of matrix composition: a complex transformation is reduced to a single
-matrix multiplication.
+- **Emission spectrum**: When an excited electron drops from a higher level $n_i$ to a lower level $n_f$, it emits a photon of energy:
 
-### 6.5 Network Analysis: Adjacency Matrices
+$$hf = E_{n_i} - E_{n_f}$$
 
-An **adjacency matrix** $\mathbf{A}$ of a graph with $n$ vertices is an $n \times n$ matrix where
-$a_{ij} = 1$ if there is an edge from vertex $i$ to vertex $j$, and $a_{ij} = 0$ otherwise.
+$$\frac{1}{\lambda} = R \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
-**Key results:**
+where $R = 1.097 \times 10^{7} \;\mathrm{m^{-1}}$ is the Rydberg constant.
 
-- The $(i, j)$ entry of $\mathbf{A}^k$ gives the **number of walks of length $k$** from vertex $i$
-  to vertex $j$.
-- The sum of row $i$ gives the **out-degree** of vertex $i$.
-- The sum of column $j$ gives the **in-degree** of vertex $j$.
+- **Absorption spectrum**: When a photon of exactly the right energy is absorbed, an electron jumps from a lower to a higher energy level. This produces dark lines in a continuous spectrum.
 
-**Example.** Consider a graph with vertices $\{1, 2, 3, 4\}$ and edges
-$\{1 \to 2, 2 \to 3, 3 \to 4, 4 \to 1, 1 \to 3\}$.
+#### 3.3 Spectral Series in Hydrogen
 
-$$
-\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \end{pmatrix}
-$$
+| Series | Transition | Region |
+|--------|-----------|--------|
+| Lyman | $n \to 1$ | Ultraviolet |
+| Balmer | $n \to 2$ | Visible |
+| Paschen | $n \to 3$ | Infrared |
 
-$$
-\mathbf{A}^2 = \begin{pmatrix} 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 1 & 0 \end{pmatrix}
-$$
+#### 3.4 Line Width and Broadening
 
-The $(1, 4)$ entry of $\mathbf{A}^2$ is 1, meaning there is exactly 1 walk of length 2 from vertex 1
-to vertex 4 (namely, $1 \to 2 \to 4$).
+Spectral lines are not infinitely sharp. They are broadened by:
 
-### 6.6 Markov Chains
-
-A **Markov chain** is a stochastic process where the probability of moving to the next state depends
-only on the current state (the Markov property).
-
-A **transition matrix** $\mathbf{P}$ is a square matrix where:
-
-- Each entry $p_{ij} \geq 0$ represents the probability of transitioning from state $j$ to state
-  $i$.
-- Each column sums to 1: $\sum_i p_{ij} = 1$ for all $j$.
-
-If $\mathbf{s}_n$ is the state probability vector at step $n$, then:
-
-$$
-\mathbf{s}_{n+1} = \mathbf{P}\mathbf{s}_n
-$$
-
-and by induction:
-
-$$
-\mathbf{s}_n = \mathbf{P}^n \mathbf{s}_0
-$$
-
-A **steady state** (or **stationary distribution**) is a probability vector $\mathbf{s}$ such that
-$\mathbf{Ps} = \mathbf{s}$. This is an eigenvector of $\mathbf{P}$ with eigenvalue $\lambda = 1$.
-
-**Example.** A weather model has two states: Sunny (S) and Rainy (R). The transition probabilities
-are:
-
-- If sunny today, 70% chance sunny tomorrow, 30% chance rainy.
-- If rainy today, 40% chance sunny tomorrow, 60% chance rainy.
-
-$$
-\mathbf{P} = \begin{pmatrix} 0.7 & 0.4 \\ 0.3 & 0.6 \end{pmatrix}
-$$
-
-Find the steady state: solve $\mathbf{Ps} = \mathbf{s}$ with $s_1 + s_2 = 1$.
-
-$$
-\begin{pmatrix} 0.7 & 0.4 \\ 0.3 & 0.6 \end{pmatrix} \begin{pmatrix} s_1 \\ s_2 \end{pmatrix} = \begin{pmatrix} s_1 \\ s_2 \end{pmatrix}
-$$
-
-From the first row: $0.7s_1 + 0.4s_2 = s_1$, giving $-0.3s_1 + 0.4s_2 = 0$, so
-$s_1 = \frac{4}{3}s_2$.
-
-With $s_1 + s_2 = 1$:
-$\frac{4}{3}s_2 + s_2 = 1 \implies \frac{7}{3}s_2 = 1 \implies s_2 = \frac{3}{7}$ and
-$s_1 = \frac{4}{7}$.
-
-The long-term probability of sunny weather is $\frac{4}{7} \approx 57.1\%$.
+- **Natural broadening**: Due to the finite lifetime of excited states (Heisenberg uncertainty principle).
+- **Doppler broadening**: Due to the thermal motion of atoms.
+- **Pressure broadening**: Due to collisions between atoms.
 
 <details>
-<summary>Convergence of regular Markov chains</summary>
+<summary>
+<b>Solution</b>
+</summary>
 
-A Markov chain with transition matrix $\mathbf{P}$ is **regular** if some power $\mathbf{P}^m$ has
-all positive entries. For a regular Markov chain:
+A hydrogen atom in the excited state $n = 4$ transitions to the ground state $n = 1$.
 
-The matrix $\mathbf{P}^n$ converges to a matrix whose columns are all the same vector, which is the
-steady state vector $\mathbf{s}$. This means that regardless of the initial state, the system
-approaches the same long-term distribution.
+Find: (a) the energy of the emitted photon, and (b) its wavelength.
 
-The eigenvalue 1 is always present for a transition matrix (since columns sum to 1, the row vector
-$(1, 1, \ldots, 1)$ is a left eigenvector with eigenvalue 1). For a regular Markov chain, all other
-eigenvalues satisfy $|\lambda| \lt 1$, so they decay to zero as $n \to \infty$.
+**(a) Energy of the emitted photon:**
+
+$$E_4 = \frac{-13.6}{4^2} = -0.85 \;\mathrm{eV}$$
+
+$$E_1 = -13.6 \;\mathrm{eV}$$
+
+$$\Delta E = E_4 - E_1 = -0.85 - (-13.6) = 12.75 \;\mathrm{eV}$$
+
+**(b) Wavelength:**
+
+$$\lambda = \frac{hc}{\Delta E} = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^{8}}{12.75 \times 1.60 \times 10^{-19}}$$
+
+$$\lambda = \frac{1.99 \times 10^{-25}}{2.04 \times 10^{-18}} = 9.75 \times 10^{-8} \;\mathrm{m} = 97.5 \;\mathrm{nm}$$
+
+This is in the ultraviolet region (Lyman series).
 
 </details>
 
+
+### 4. Heisenberg Uncertainty Principle
+
+#### 4.1 Statement
+
+The Heisenberg uncertainty principle states that it is fundamentally impossible to simultaneously know both the position and momentum of a particle with arbitrary precision:
+
+$$\Delta x \, \Delta p \geq \frac{\hbar}{2}$$
+
+where $\hbar = \frac{h}{2\pi}$ is the reduced Planck constant, $\Delta x$ is the uncertainty in position, and $\Delta p$ is the uncertainty in momentum.
+
+An equivalent form relates energy and time:
+
+$$\Delta E \, \Delta t \geq \frac{\hbar}{2}$$
+
+#### 4.2 Implications
+
+- This is not a limitation of measurement instruments but a fundamental property of nature.
+- It explains why electrons cannot spiral into the nucleus in the Bohr model: confining an electron to a small volume gives it a large momentum uncertainty, preventing it from having zero kinetic energy.
+- It explains the natural broadening of spectral lines: a short-lived state has a large energy uncertainty.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+An electron is confined within a region of width $\Delta x = 1.0 \times 10^{-10} \;\mathrm{m}$ (approximately the diameter of a hydrogen atom).
+
+Estimate the minimum uncertainty in its momentum and velocity.
+
+Using the Heisenberg uncertainty principle:
+
+$$\Delta p \geq \frac{\hbar}{2 \, \Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 1.0 \times 10^{-10}} = 5.28 \times 10^{-25} \;\mathrm{kg \cdot m/s}$$
+
+$$\Delta v = \frac{\Delta p}{m_e} = \frac{5.28 \times 10^{-25}}{9.11 \times 10^{-31}} = 5.79 \times 10^{5} \;\mathrm{m/s}$$
+
+This is a significant fraction of the speed of light, showing that confining an electron to an atom-sized region results in a very uncertain velocity.
+
+</details>
+
+
+### 5. Compton Scattering
+
+#### 5.1 The Compton Effect
+
+When X-ray photons collide with loosely bound electrons (effectively free electrons), the scattered photon has a longer wavelength than the incident photon. This is **Compton scattering**, and it provides direct evidence for the particle nature of light.
+
+The change in wavelength depends only on the scattering angle $\theta$:
+
+$$\Delta\lambda = \lambda' - \lambda = \frac{h}{m_e c}(1 - \cos\theta)$$
+
+The quantity $\frac{h}{m_e c} = 2.43 \times 10^{-12} \;\mathrm{m}$ is called the **Compton wavelength** of the electron.
+
+#### 5.2 Interpretation
+
+The photon transfers some of its energy and momentum to the electron. Since $E = hf = hc/\lambda$, an increase in wavelength means a decrease in photon energy. The energy lost by the photon equals the kinetic energy gained by the electron.
+
+At $\theta = 0$ (no scattering), $\Delta\lambda = 0$.
+At $\theta = 180°$ (back-scattering), $\Delta\lambda = \frac{2h}{m_e c}$, the maximum shift.
+
+#### 5.3 Derivation Outline
+
+Using conservation of energy and momentum:
+
+$$hf + m_e c^2 = hf' + E_e$$
+
+$$\frac{hf}{c} = \frac{hf'}{c}\cos\theta + p_e \cos\phi$$
+
+$$0 = \frac{hf'}{c}\sin\theta - p_e \sin\phi$$
+
+Eliminating $\phi$ and using $E_e^2 = (p_e c)^2 + (m_e c^2)^2$ leads to the Compton formula.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+X-rays of wavelength $\lambda = 0.0500 \;\mathrm{nm}$ are Compton-scattered through an angle of $\theta = 90°$.
+
+Find: (a) the change in wavelength, (b) the wavelength of the scattered photon, and (c) the energy transferred to the electron.
+
+**(a) Change in wavelength:**
+
+$$\Delta\lambda = \frac{h}{m_e c}(1 - \cos 90°) = \frac{h}{m_e c}(1 - 0) = 2.43 \times 10^{-12} \;\mathrm{m}$$
+
+**(b) Scattered wavelength:**
+
+$$\lambda' = \lambda + \Delta\lambda = 5.00 \times 10^{-11} + 2.43 \times 10^{-12} = 5.24 \times 10^{-11} \;\mathrm{m}$$
+
+**(c) Energy transferred:**
+
+Incident photon energy:
+
+$$E = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^{8}}{5.00 \times 10^{-11}} = 3.98 \times 10^{-15} \;\mathrm{J}$$
+
+Scattered photon energy:
+
+$$E' = \frac{hc}{\lambda'} = \frac{1.99 \times 10^{-25}}{5.24 \times 10^{-11}} = 3.80 \times 10^{-15} \;\mathrm{J}$$
+
+Energy transferred to electron:
+
+$$\Delta E = E - E' = 3.98 \times 10^{-15} - 3.80 \times 10^{-15} = 1.8 \times 10^{-16} \;\mathrm{J}$$
+
+Converting: $\Delta E = 1125 \;\mathrm{eV}$.
+
+</details>
+
+
+### 6. Pair Production and Annihilation
+
+#### 6.1 Pair Production
+
+A photon can spontaneously convert into a particle-antiparticle pair (such as an electron and positron) when it passes near a nucleus. This process is called **pair production**.
+
+**Conditions:**
+- The photon energy must be at least equal to the combined rest energy of the particle and antiparticle:
+
+$$E_{\mathrm{photon}} \geq 2m_0 c^2$$
+
+- For electron-positron pair production: $E_{\mathrm{min}} = 2m_e c^2 = 2 \times 0.511 = 1.022 \;\mathrm{MeV}$.
+- Momentum must also be conserved, which is why pair production cannot occur in empty space -- a nearby nucleus (or electron) is required to absorb some momentum.
+
+#### 6.2 Pair Annihilation
+
+When a particle meets its antiparticle, they can annihilate, converting their combined rest mass energy into photon energy. For electron-positron annihilation:
+
+$$e^- + e^+ \to 2\gamma$$
+
+Two photons are produced (not one) to conserve both energy and momentum. Each photon has energy equal to the rest energy of the electron (or positron):
+
+$$E_\gamma = m_e c^2 = 0.511 \;\mathrm{MeV}$$
+
+If the particles have kinetic energy before annihilation, the photons share this additional energy.
+
+#### 6.3 Conservation Laws in Pair Processes
+
+- **Energy** is always conserved (including rest mass energy via $E = mc^2$).
+- **Momentum** is always conserved (hence the need for a nucleus in pair production, and two photons in annihilation).
+- **Charge** is always conserved (the total charge before and after the process is the same).
+
+
+### 7. The Schrodinger Equation (Qualitative)
+
+#### 7.1 Wave Function
+
+In quantum mechanics, the state of a particle is described by a **wave function** $\psi(x, t)$, which contains all information about the particle. The wave function itself is not directly observable, but its square modulus gives the **probability density**:
+
+$$P(x) = \lvert\psi(x)\rvert^2$$
+
+This means the probability of finding the particle in a small interval $dx$ around position $x$ is:
+
+$$dP = \lvert\psi(x)\rvert^2 \, dx$$
+
+#### 7.2 The Time-Independent Schrodinger Equation
+
+For a particle in a time-independent potential $V(x)$:
+
+$$-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi$$
+
+where $E$ is the total energy of the particle.
+
+This is a second-order differential equation. The allowed energy levels arise from the requirement that physically acceptable wave functions must be:
+- **Normalizable**: $\int_{-\infty}^{\infty}\lvert\psi\rvert^2 \, dx = 1$ (the particle must be somewhere).
+- **Continuous**: The wave function and its first derivative must be continuous everywhere.
+
+#### 7.3 Solutions for Common Potentials
+
+**Particle in a box** (infinite square well of width $L$):
+
+$$E_n = \frac{n^2 h^2}{8mL^2}, \quad n = 1, 2, 3, \ldots$$
+
+$$\psi_n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right)$$
+
+This quantization of energy arises naturally from the boundary conditions.
+
+#### 7.4 Interpretation
+
+- The wave function can be positive, negative, or complex. Only $\lvert\psi\rvert^2$ has physical meaning.
+- Nodes in the wave function correspond to positions where the probability of finding the particle is zero.
+- The ground state ($n = 1$) has the lowest possible energy, which is nonzero -- this is a purely quantum effect (zero-point energy).
+
+
+### 8. Quantum Tunnelling and Barrier Penetration
+
+#### 8.1 The Tunnelling Phenomenon
+
+In classical mechanics, a particle with energy $E$ less than a potential barrier of height $V_0$ cannot pass through it. In quantum mechanics, there is a non-zero probability that the particle will be found on the other side. This is **quantum tunnelling**.
+
+#### 8.2 Qualitative Description
+
+Inside the barrier ($E \lt V_0$), the wave function does not suddenly drop to zero. Instead, it decays exponentially:
+
+$$\psi(x) \propto e^{-\kappa x}$$
+
+where $\kappa = \sqrt{2m(V_0 - E)}/\hbar$.
+
+The probability of tunnelling depends on:
+- The **barrier height** $(V_0 - E)$: Higher barriers decrease the probability.
+- The **barrier width** $L$: Wider barriers dramatically decrease the probability.
+- The **particle mass** $m$: Heavier particles have lower tunnelling probability.
+
+The **transmission coefficient** (probability of tunnelling) is approximately:
+
+$$T \approx e^{-2\kappa L} = \exp\left(-\frac{2L}{\hbar}\sqrt{2m(V_0 - E)}\right)$$
+
+#### 8.3 Applications of Quantum Tunnelling
+
+- **Alpha decay**: An alpha particle inside a nucleus encounters a potential barrier due to the strong nuclear force. It tunnels through this barrier to escape.
+- **Scanning tunnelling microscope (STM)**: Uses tunnelling current between a sharp tip and a surface to create atomic-resolution images.
+- **Nuclear fusion in stars**: Protons tunnel through the Coulomb barrier to undergo fusion at temperatures lower than classically required.
+- **Flash memory**: Uses tunnelling of electrons through a thin insulating layer to store charge.
+
+
 ---
 
-## Summary of Key Results
+## Part B: Nuclear Physics (Topic 7)
 
-| Concept                   | Key Formula                                                                         |
-| ------------------------- | ----------------------------------------------------------------------------------- | ---------------- | --- |
-| 2x2 determinant           | $\det \begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$                       |
-| 2x2 inverse               | $\frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$                  |
-| General inverse           | $\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})} \mathrm{adj}(\mathbf{A})$             |
-| Rotation matrix           | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ |
-| Characteristic equation   | $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$                                          |
-| Diagonalization           | $\mathbf{A} = \mathbf{PDP}^{-1}$                                                    |
-| Matrix power              | $\mathbf{A}^n = \mathbf{PD}^n\mathbf{P}^{-1}$                                       |
-| Area scale factor         | $                                                                                   | \det(\mathbf{A}) | $   |
-| Reversal rule (transpose) | $(\mathbf{AB})^T = \mathbf{B}^T\mathbf{A}^T$                                        |
-| Reversal rule (inverse)   | $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$                               |
+
+### 9. Nuclear Structure
+
+#### 9.1 Nucleons
+
+The nucleus is composed of **nucleons**: protons and neutrons.
+
+| Property | Proton | Neutron |
+|----------|--------|---------|
+| Charge | $+e$ | $0$ |
+| Mass | $1.673 \times 10^{-27} \;\mathrm{kg}$ | $1.675 \times 10^{-27} \;\mathrm{kg}$ |
+| Spin | $1/2$ | $1/2$ |
+
+The **atomic number** $Z$ equals the number of protons and determines the element.
+The **mass number** (nucleon number) $A$ equals the total number of nucleons.
+The **neutron number** $N = A - Z$.
+
+#### 9.2 Nuclide Notation
+
+A nuclide is represented as:
+
+$$^{A}_{Z}\mathrm{X}$$
+
+where X is the chemical symbol. For example, carbon-12 is $^{12}_{6}\mathrm{C}$.
+
+#### 9.3 Isotopes
+
+**Isotopes** are atoms of the same element (same $Z$) with different numbers of neutrons (different $A$). For example:
+
+- $^{1}_{1}\mathrm{H}$ (protium), $^{2}_{1}\mathrm{H}$ (deuterium), $^{3}_{1}\mathrm{H}$ (tritium)
+- $^{235}_{92}\mathrm{U}$ and $^{238}_{92}\mathrm{U}$
+
+Isotopes have the same chemical properties but different nuclear properties (stability, decay modes).
+
+#### 9.4 Nuclear Forces
+
+The **strong nuclear force** binds nucleons together. Its properties:
+- Short range: effective only over distances of about $1$--$3 \;\mathrm{fm}$ ($10^{-15} \;\mathrm{m}$).
+- Attractive at distances above about $1 \;\mathrm{fm}$.
+- Very strong: about 100 times stronger than the electromagnetic force at short range.
+- Independent of charge: acts equally between proton-proton, neutron-neutron, and proton-neutron pairs.
+
+The **electromagnetic force** between protons (repulsive) competes with the strong force at short distances. For large nuclei, the Coulomb repulsion becomes significant, limiting the size of stable nuclei.
+
+
+### 10. Radioactive Decay
+
+#### 10.1 Alpha Decay
+
+An alpha particle ($^{4}_{2}\mathrm{\alpha}$, i.e., a helium-4 nucleus) is emitted:
+
+$$^{A}_{Z}\mathrm{X} \to {}^{A-4}_{Z-2}\mathrm{Y} + {}^{4}_{2}\mathrm{\alpha}$$
+
+Characteristics:
+- Alpha particles are heavy, doubly charged, and have a short range in matter (a few cm in air).
+- They cause intense ionisation along their path.
+- Typical energies: $4$--$9 \;\mathrm{MeV}$.
+- Occurs mainly in very heavy nuclei ($Z \gt 82$).
+
+#### 10.2 Beta Decay
+
+**Beta-minus decay** ($\beta^-$): A neutron converts to a proton, emitting an electron and an antineutrino:
+
+$$n \to p + e^- + \bar{\nu}_e$$
+
+$$^{A}_{Z}\mathrm{X} \to {}^{A}_{Z+1}\mathrm{Y} + e^- + \bar{\nu}_e$$
+
+This occurs when the neutron-to-proton ratio is too high.
+
+**Beta-plus decay** ($\beta^+$): A proton converts to a neutron, emitting a positron and a neutrino:
+
+$$p \to n + e^+ + \nu_e$$
+
+$$^{A}_{Z}\mathrm{X} \to {}^{A}_{Z-1}\mathrm{Y} + e^+ + \nu_e$$
+
+This occurs when the neutron-to-proton ratio is too low. Requires $2m_e c^2$ of energy.
+
+Characteristics of beta particles:
+- Much lighter than alpha particles.
+- Longer range in matter (up to a few metres in air, a few mm in aluminium).
+- Less ionising per unit path length than alpha particles.
+
+#### 10.3 Gamma Decay
+
+Gamma rays are high-energy photons emitted when a nucleus transitions from an excited state to a lower energy state:
+
+$$^{A}_{Z}\mathrm{X}^* \to {}^{A}_{Z}\mathrm{X} + \gamma$$
+
+Characteristics:
+- No change in $Z$ or $A$.
+- Highly penetrating (require thick lead or concrete to stop).
+- Weakly ionising compared to alpha and beta particles.
+- Often emitted following alpha or beta decay when the daughter nucleus is left in an excited state.
+
+#### 10.4 Penetration and Ionisation Summary
+
+| Radiation | Charge | Mass (u) | Penetrating Power | Ionising Power |
+|-----------|--------|----------|-------------------|----------------|
+| Alpha ($\alpha$) | $+2e$ | 4 | Low (paper) | High |
+| Beta ($\beta$) | $\pm e$ | $\approx 0.0005$ | Medium (aluminium) | Medium |
+| Gamma ($\gamma$) | 0 | 0 | High (lead) | Low |
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+Radium-226 undergoes alpha decay.
+
+Write the nuclear equation and identify the daughter nuclide.
+
+Radium has $Z = 88$, $A = 226$.
+
+$$^{226}_{88}\mathrm{Ra} \to {}^{A-4}_{Z-2}\mathrm{X} + {}^{4}_{2}\mathrm{\alpha}$$
+
+$$^{226}_{88}\mathrm{Ra} \to {}^{222}_{86}\mathrm{Rn} + {}^{4}_{2}\mathrm{\alpha}$$
+
+The daughter nuclide is radon-222 ($^{222}_{86}\mathrm{Rn}$).
+
+Check: $222 + 4 = 226$ and $86 + 2 = 88$. Both mass number and atomic number are conserved.
+
+</details>
+
+
+### 11. Half-Life and Decay Constant
+
+#### 11.1 The Decay Law
+
+Radioactive decay is a random process. For a large sample, the number of undecayed nuclei decreases exponentially:
+
+$$N = N_0 e^{-\lambda t}$$
+
+where:
+- $N$ is the number of undecayed nuclei at time $t$
+- $N_0$ is the initial number of nuclei
+- $\lambda$ is the **decay constant** (probability of decay per unit time)
+- $t$ is the elapsed time
+
+The **activity** $A$ (number of decays per unit time) is:
+
+$$A = \lambda N = \lambda N_0 e^{-\lambda t} = A_0 e^{-\lambda t}$$
+
+The SI unit of activity is the **becquerel** (Bq): $1 \;\mathrm{Bq} = 1 \;\mathrm{decay/s}$.
+
+#### 11.2 Half-Life
+
+The **half-life** $t_{1/2}$ is the time for half of the radioactive nuclei to decay:
+
+$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{\lambda}$$
+
+After $n$ half-lives, the fraction remaining is:
+
+$$\frac{N}{N_0} = \left(\frac{1}{2}\right)^n$$
+
+#### 11.3 Relationship Summary
+
+$$\lambda = \frac{\ln 2}{t_{1/2}} \quad , \quad t_{1/2} = \frac{\ln 2}{\lambda}$$
+
+$$N(t) = N_0 \cdot 2^{-t/t_{1/2}}$$
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+A sample of iodine-131 has a half-life of 8.04 days and an initial activity of $640 \;\mathrm{Bq}$.
+
+Find: (a) the decay constant, (b) the activity after 24 days, and (c) the time for the activity to drop to $40 \;\mathrm{Bq}$.
+
+**(a) Decay constant:**
+
+$$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{8.04 \times 24 \times 3600} = \frac{0.693}{6.95 \times 10^{5}} = 9.97 \times 10^{-7} \;\mathrm{s^{-1}}$$
+
+**(b) Activity after 24 days:**
+
+Number of half-lives: $n = 24 / 8.04 = 2.99 \approx 3$.
+
+$$A = 640 \times \left(\frac{1}{2}\right)^{3} = 640 \times 0.125 = 80 \;\mathrm{Bq}$$
+
+Or using the exponential formula:
+
+$$A = 640 \times e^{-9.97 \times 10^{-7} \times 24 \times 86400} = 640 \times e^{-2.07} = 640 \times 0.126 = 80.6 \;\mathrm{Bq}$$
+
+**(c) Time to reach 40 Bq:**
+
+$$40 = 640 \times e^{-\lambda t}$$
+
+$$e^{-\lambda t} = \frac{40}{640} = \frac{1}{16} = \left(\frac{1}{2}\right)^4$$
+
+So $n = 4$ half-lives:
+
+$$t = 4 \times 8.04 = 32.2 \;\mathrm{days}$$
+
+</details>
+
+
+### 12. Nuclear Equations and Conservation Laws
+
+#### 12.1 Conservation Laws
+
+In all nuclear reactions, the following quantities are conserved:
+
+1. **Mass number** (total number of nucleons): $A$
+2. **Atomic number** (total charge): $Z$
+3. **Total energy** (including rest mass energy): $E = mc^2$
+4. **Momentum**: $\sum \vec{p}_{\mathrm{before}} = \sum \vec{p}_{\mathrm{after}}$
+5. **Lepton number** (in beta decay)
+6. **Strangeness** (in some particle reactions)
+
+#### 12.2 Writing Nuclear Equations
+
+When writing nuclear equations, always verify conservation of $A$ and $Z$:
+
+**Example -- Beta-minus decay of carbon-14:**
+
+$$^{14}_{6}\mathrm{C} \to {}^{14}_{7}\mathrm{N} + {}^{0}_{-1}e + \bar{\nu}_e$$
+
+Check: $14 = 14 + 0$ and $6 = 7 + (-1)$. Both conserved.
+
+**Example -- Beta-plus decay of potassium-40:**
+
+$$^{40}_{19}\mathrm{K} \to {}^{40}_{18}\mathrm{Ar} + {}^{0}_{+1}e + \nu_e$$
+
+Check: $40 = 40 + 0$ and $19 = 18 + 1$. Both conserved.
+
+
+### 13. Binding Energy and Mass Defect
+
+#### 13.1 Mass Defect
+
+The **mass defect** $\Delta m$ is the difference between the mass of a nucleus and the sum of the masses of its individual nucleons:
+
+$$\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}$$
+
+In practice, atomic masses (including electrons) are used:
+
+$$\Delta m = Zm(\mathrm{^{1}_{1}H}) + Nm_n - m(\mathrm{atom})$$
+
+The mass defect is always positive for stable nuclei: the nucleus is less massive than its constituent nucleons.
+
+#### 13.2 Binding Energy
+
+The **binding energy** is the energy equivalent of the mass defect:
+
+$$E_b = \Delta m \, c^2$$
+
+This is the minimum energy required to completely separate a nucleus into its individual protons and neutrons. A larger binding energy per nucleon means a more tightly bound (more stable) nucleus.
+
+The **binding energy per nucleon** is:
+
+$$\frac{E_b}{A}$$
+
+#### 13.3 Binding Energy Curve
+
+The binding energy per nucleon curve has the following key features:
+
+- **Iron-56** ($^{56}_{26}\mathrm{Fe}$) has the highest binding energy per nucleon (approximately $8.8 \;\mathrm{MeV/nucleon}$), making it the most stable nucleus.
+- Light nuclei (up to $A \approx 20$): Binding energy per nucleon increases sharply. **Fusion** of light nuclei releases energy.
+- Heavy nuclei ($A \gt 56$): Binding energy per nucleon gradually decreases. **Fission** of heavy nuclei releases energy.
+- The peak around $A = 4$ (helium-4) is due to its particularly stable closed-shell configuration.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+Calculate the binding energy per nucleon of helium-4 ($^{4}_{2}\mathrm{He}$).
+
+Given data:
+- Mass of $^{4}_{2}\mathrm{He}$ atom: $4.002603 \;\mathrm{u}$
+- Mass of $^{1}_{1}\mathrm{H}$ atom: $1.007825 \;\mathrm{u}$
+- Mass of neutron: $1.008665 \;\mathrm{u}$
+- $1 \;\mathrm{u} = 931.5 \;\mathrm{MeV/c^2}$
+
+**Mass defect:**
+
+$$\Delta m = 2(1.007825) + 2(1.008665) - 4.002603$$
+
+$$\Delta m = 2.015650 + 2.017330 - 4.002603 = 0.030377 \;\mathrm{u}$$
+
+**Binding energy:**
+
+$$E_b = 0.030377 \times 931.5 = 28.30 \;\mathrm{MeV}$$
+
+**Binding energy per nucleon:**
+
+$$\frac{E_b}{A} = \frac{28.30}{4} = 7.07 \;\mathrm{MeV/nucleon}$$
+
+</details>
+
+
+### 14. Nuclear Fission and Fusion
+
+#### 14.1 Nuclear Fission
+
+**Fission** is the splitting of a heavy nucleus into two (or more) lighter nuclei, releasing energy. The most common example is the fission of uranium-235 by a thermal neutron:
+
+$$^{1}_{0}n + {}^{235}_{92}\mathrm{U} \to {}^{236}_{92}\mathrm{U}^* \to {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3{}^{1}_{0}n + \mathrm{energy}$$
+
+Key features:
+- The process releases approximately $200 \;\mathrm{MeV}$ per fission event.
+- On average, 2--3 neutrons are produced, enabling a **chain reaction**.
+- The daughter nuclei are not always the same; many different fission product pairs are possible.
+- The total mass of the products is less than the total mass of the reactants (mass converted to energy).
+
+#### 14.2 Chain Reactions
+
+A **chain reaction** occurs when neutrons from one fission event cause further fission events.
+
+- **Subcritical**: Average number of fissions per generation is less than 1. Reaction dies out.
+- **Critical**: Average number of fissions per generation equals 1. Steady reaction (nuclear reactor).
+- **Supercritical**: Average number of fissions per generation exceeds 1. Reaction grows (nuclear weapon or reactor startup).
+
+#### 14.3 Nuclear Fusion
+
+**Fusion** is the combining of light nuclei to form a heavier nucleus, releasing energy. Examples:
+
+$$^{2}_{1}\mathrm{H} + {}^{2}_{1}\mathrm{H} \to {}^{3}_{2}\mathrm{He} + {}^{1}_{0}n + 3.27 \;\mathrm{MeV}$$
+
+$$^{2}_{1}\mathrm{H} + {}^{3}_{1}\mathrm{H} \to {}^{4}_{2}\mathrm{He} + {}^{1}_{0}n + 17.6 \;\mathrm{MeV}$$
+
+Conditions for fusion:
+- Extremely high temperatures ($\sim 10^{8} \;\mathrm{K}$) to overcome electrostatic repulsion.
+- High particle density to increase collision rate.
+- Sufficient confinement time (Lawson criterion).
+
+#### 14.4 Fission vs Fusion Comparison
+
+| Property | Fission | Fusion |
+|----------|---------|--------|
+| Fuel | Uranium-235, Plutonium-239 | Deuterium, Tritium |
+| Products | Heavy radioactive isotopes | Helium (non-radioactive) |
+| Energy per event | ~200 MeV | ~17 MeV (per D-T reaction) |
+| Energy per nucleon | ~0.9 MeV | ~3.5 MeV |
+| By-products | Long-lived radioactive waste | Minimal radioactive waste |
+| Trigger | Neutron absorption | High temperature and pressure |
+
+
+### 15. Background Radiation and Detection
+
+#### 15.1 Sources of Background Radiation
+
+Background radiation is always present and comes from several sources:
+
+1. **Radon gas**: The largest natural source, seeping from the ground (especially granite areas).
+2. **Cosmic rays**: High-energy particles from space. Intensity increases with altitude.
+3. **Terrestrial radiation**: From radioactive isotopes in rocks and soil (uranium, thorium, potassium-40).
+4. **Internal radiation**: Radioactive isotopes within the body (carbon-14, potassium-40).
+5. **Artificial sources**: Medical procedures (X-rays), nuclear power, fallout from weapons testing.
+
+#### 15.2 Radiation Detection Methods
+
+**Geiger-Muller (GM) tube:**
+- Detects alpha, beta, and gamma radiation.
+- Each ionising event produces a pulse of current.
+- Cannot distinguish between radiation types or measure energy.
+- Has a "dead time" after each detection.
+
+**Scintillation counter:**
+- A scintillating material emits light when radiation passes through it.
+- A photomultiplier tube converts the light into an electrical signal.
+- Can measure the energy of the radiation.
+
+**Photographic film:**
+- Darkens when exposed to radiation.
+- Used in radiation badges for monitoring cumulative exposure.
+
+**Solid-state detector:**
+- Semiconductor device; radiation creates electron-hole pairs.
+- High resolution and good energy discrimination.
+
+
+### 16. Nuclear Power
+
+#### 16.1 Components of a Nuclear Reactor
+
+- **Fuel rods**: Contain fissionable material (enriched uranium-235).
+- **Moderator**: Slows down fast neutrons to thermal energies, increasing the probability of fission of U-235. Common moderators: water (light or heavy), graphite.
+- **Control rods**: Absorb neutrons (made of materials like boron or cadmium) to control the rate of the chain reaction.
+- **Coolant**: Transfers heat from the reactor core to the heat exchanger. Common coolants: water, liquid sodium, carbon dioxide.
+- **Containment**: A robust structure surrounding the reactor to prevent the release of radioactive material.
+
+#### 16.2 How a Reactor Works
+
+1. Fission reactions in the fuel rods produce heat.
+2. The coolant transfers this heat to a heat exchanger.
+3. The heat exchanger produces steam, which drives a turbine connected to a generator.
+4. Control rods are inserted or withdrawn to maintain a critical state.
+
+#### 16.3 Safety Considerations
+
+- **Multiple barriers**: Fuel cladding, primary cooling circuit, containment building.
+- **Emergency shutdown** (SCRAM): Control rods drop fully into the reactor.
+- **Decay heat**: Even after shutdown, fission products continue to produce heat, requiring continued cooling.
+- **Nuclear waste management**: Spent fuel is highly radioactive and must be stored safely for thousands of years.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+In a fission reaction, a uranium-235 nucleus absorbs a neutron and splits into barium-144 and krypton-89, releasing 3 neutrons.
+
+Calculate the energy released. Given masses:
+- $^{235}_{92}\mathrm{U}$: $235.043930 \;\mathrm{u}$
+- $^{1}_{0}n$: $1.008665 \;\mathrm{u}$
+- $^{144}_{56}\mathrm{Ba}$: $143.922953 \;\mathrm{u}$
+- $^{89}_{36}\mathrm{Kr}$: $88.917631 \;\mathrm{u}$
+
+**Reactant mass:**
+
+$$m_{\mathrm{reactants}} = 235.043930 + 1.008665 = 236.052595 \;\mathrm{u}$$
+
+**Product mass:**
+
+$$m_{\mathrm{products}} = 143.922953 + 88.917631 + 3 \times 1.008665$$
+
+$$m_{\mathrm{products}} = 143.922953 + 88.917631 + 3.025995 = 235.866579 \;\mathrm{u}$$
+
+**Mass defect:**
+
+$$\Delta m = 236.052595 - 235.866579 = 0.186016 \;\mathrm{u}$$
+
+**Energy released:**
+
+$$E = 0.186016 \times 931.5 = 173.3 \;\mathrm{MeV}$$
+
+</details>
+
 
 ---
 
-## Exam Tips for IB Mathematics
+## Problem Set
 
-**Common pitfalls to avoid:**
+### Problem 1
 
-When computing determinants, always check the sign pattern for cofactor expansion. A sign error is
-the most frequent mistake in 3x3 determinant problems. Remember the checkerboard pattern: $+$ in
-position $(1,1)$, then alternating.
+Light of wavelength $400 \;\mathrm{nm}$ is incident on a sodium surface with work function $2.3 \;\mathrm{eV}$. Determine whether photoelectrons are emitted and, if so, find the maximum kinetic energy in eV.
 
-For matrix multiplication, verify the dimensions are compatible before computing. The number of
-columns of the first matrix must equal the number of rows of the second.
+<details>
+<summary>
+<b>Solution</b>
+</summary>
 
-For composite transformations, remember that $\mathbf{BA}$ means "apply $\mathbf{A}$ first, then
-$\mathbf{B}$." The rightmost matrix is applied first.
+Photon energy:
 
-For eigenvalue problems, always verify your answers by checking that
-$\mathbf{Av} = \lambda\mathbf{v}$ holds for each eigenvalue-eigenvector pair.
+$$E = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^{8}}{400 \times 10^{-9}} = 4.97 \times 10^{-19} \;\mathrm{J} = 3.11 \;\mathrm{eV}$$
 
-For geometric interpretations, remember that $\det(\mathbf{A}) \lt 0$ means orientation reversal
-(reflection), and $\det(\mathbf{A}) = 0$ means the transformation collapses dimension (the matrix is
-singular).
+Since $E = 3.11 \;\mathrm{eV} \gt \phi = 2.3 \;\mathrm{eV}$, photoelectrons are emitted.
 
-**Time-saving strategies:**
+$$E_{k,\mathrm{max}} = 3.11 - 2.3 = 0.81 \;\mathrm{eV}$$
 
-For 3x3 determinants, expand along the row or column with the most zeros to minimize computation. If
-no row or column has zeros, consider creating zeros using row operations that do not change the
-determinant (adding multiples of one row to another).
+If you get this wrong, revise: Section 1.2 (Einstein's equation).
 
-When finding the inverse of a 2x2 matrix, always compute the determinant first. If it is zero, stop
--- the inverse does not exist.
+</details>
 
-For systems of equations, check whether the determinant of the coefficient matrix is zero before
-attempting to solve. If $\det(\mathbf{A}) = 0$, the system either has no solutions or infinitely
-many solutions (use Gaussian elimination to determine which).
+### Problem 2
+
+Find the de Broglie wavelength of a neutron moving at $2.00 \times 10^{4} \;\mathrm{m/s}$. (Neutron mass: $1.675 \times 10^{-27} \;\mathrm{kg}$.)
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+$$\lambda = \frac{h}{mv} = \frac{6.63 \times 10^{-34}}{1.675 \times 10^{-27} \times 2.00 \times 10^{4}}$$
+
+$$\lambda = \frac{6.63 \times 10^{-34}}{3.35 \times 10^{-23}} = 1.98 \times 10^{-11} \;\mathrm{m} = 0.0198 \;\mathrm{nm}$$
+
+If you get this wrong, revise: Section 2.1 (de Broglie wavelength).
+
+</details>
+
+### Problem 3
+
+A hydrogen atom makes a transition from $n = 3$ to $n = 2$. Calculate the wavelength of the emitted photon and identify the spectral series.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+$$E_3 = \frac{-13.6}{9} = -1.51 \;\mathrm{eV}$$
+
+$$E_2 = \frac{-13.6}{4} = -3.40 \;\mathrm{eV}$$
+
+$$\Delta E = -1.51 - (-3.40) = 1.89 \;\mathrm{eV}$$
+
+$$\lambda = \frac{hc}{\Delta E} = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^{8}}{1.89 \times 1.60 \times 10^{-19}}$$
+
+$$\lambda = \frac{1.99 \times 10^{-25}}{3.02 \times 10^{-19}} = 6.58 \times 10^{-7} \;\mathrm{m} = 658 \;\mathrm{nm}$$
+
+This is in the visible region (red light), part of the **Balmer series** ($n \to 2$).
+
+If you get this wrong, revise: Section 3.2 (emission spectra).
+
+</details>
+
+### Problem 4
+
+A proton is confined to a nucleus of diameter $1.6 \times 10^{-14} \;\mathrm{m}$. Estimate the minimum uncertainty in its momentum. (Proton mass: $1.67 \times 10^{-27} \;\mathrm{kg}$.)
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+$$\Delta p \geq \frac{\hbar}{2\,\Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 1.6 \times 10^{-14}} = 3.30 \times 10^{-21} \;\mathrm{kg \cdot m/s}$$
+
+The minimum uncertainty in velocity:
+
+$$\Delta v = \frac{\Delta p}{m_p} = \frac{3.30 \times 10^{-21}}{1.67 \times 10^{-27}} = 1.98 \times 10^{6} \;\mathrm{m/s}$$
+
+If you get this wrong, revise: Section 4.1 (Heisenberg uncertainty principle).
+
+</details>
+
+### Problem 5
+
+A photon with wavelength $0.100 \;\mathrm{nm}$ undergoes Compton scattering through $180°$. Find the wavelength of the scattered photon.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+$$\Delta\lambda = \frac{h}{m_e c}(1 - \cos 180°) = 2.43 \times 10^{-12}(1 - (-1)) = 4.86 \times 10^{-12} \;\mathrm{m}$$
+
+$$\lambda' = 0.100 \times 10^{-9} + 4.86 \times 10^{-12} = 1.049 \times 10^{-10} \;\mathrm{m} = 0.1049 \;\mathrm{nm}$$
+
+If you get this wrong, revise: Section 5.1 (Compton formula).
+
+</details>
+
+### Problem 6
+
+What is the minimum photon energy required for electron-positron pair production? Express your answer in MeV and calculate the corresponding maximum wavelength.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+$$E_{\mathrm{min}} = 2m_e c^2 = 2 \times 0.511 = 1.022 \;\mathrm{MeV}$$
+
+Maximum wavelength:
+
+$$\lambda_{\mathrm{max}} = \frac{hc}{E_{\mathrm{min}}} = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^{8}}{1.022 \times 10^{6} \times 1.60 \times 10^{-19}}$$
+
+$$\lambda_{\mathrm{max}} = \frac{1.99 \times 10^{-25}}{1.635 \times 10^{-13}} = 1.22 \times 10^{-12} \;\mathrm{m} = 1.22 \;\mathrm{pm}$$
+
+This is in the gamma-ray region of the electromagnetic spectrum.
+
+If you get this wrong, revise: Section 6.1 (pair production).
+
+</details>
+
+### Problem 7
+
+Strontium-90 undergoes beta-minus decay with a half-life of 28.8 years. A sample initially contains $5.0 \times 10^{20}$ atoms. How many atoms remain after 100 years?
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+Number of half-lives:
+
+$$n = \frac{100}{28.8} = 3.47$$
+
+Fraction remaining:
+
+$$\frac{N}{N_0} = \left(\frac{1}{2}\right)^{3.47} = 2^{-3.47} = 0.0888$$
+
+$$N = 5.0 \times 10^{20} \times 0.0888 = 4.4 \times 10^{19} \;\mathrm{atoms}$$
+
+Alternatively, using the exponential form:
+
+$$\lambda = \frac{\ln 2}{28.8 \times 365.25 \times 24 \times 3600} = 7.64 \times 10^{-10} \;\mathrm{s^{-1}}$$
+
+$$t = 100 \times 365.25 \times 24 \times 3600 = 3.156 \times 10^{9} \;\mathrm{s}$$
+
+$$N = N_0 e^{-\lambda t} = 5.0 \times 10^{20} \times e^{-2.41} = 5.0 \times 10^{20} \times 0.0898 = 4.5 \times 10^{19}$$
+
+If you get this wrong, revise: Section 11.2 (half-life).
+
+</details>
+
+### Problem 8
+
+Write balanced nuclear equations for the following:
+(a) Alpha decay of polonium-210.
+(b) Beta-minus decay of cobalt-60.
+(c) Gamma emission from an excited nucleus of cobalt-60.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+**(a)** Polonium has $Z = 84$:
+
+$$^{210}_{84}\mathrm{Po} \to {}^{206}_{82}\mathrm{Pb} + {}^{4}_{2}\mathrm{\alpha}$$
+
+Check: $210 = 206 + 4$ and $84 = 82 + 2$.
+
+**(b)** Cobalt has $Z = 27$:
+
+$$^{60}_{27}\mathrm{Co} \to {}^{60}_{28}\mathrm{Ni} + {}^{0}_{-1}e + \bar{\nu}_e$$
+
+Check: $60 = 60 + 0$ and $27 = 28 + (-1)$.
+
+**(c)** Gamma emission does not change $Z$ or $A$:
+
+$$^{60}_{27}\mathrm{Co}^* \to {}^{60}_{27}\mathrm{Co} + \gamma$$
+
+If you get this wrong, revise: Section 12.1 (conservation laws).
+
+</details>
+
+### Problem 9
+
+Calculate the binding energy per nucleon of uranium-235. Given:
+- Mass of $^{235}_{92}\mathrm{U}$: $235.043930 \;\mathrm{u}$
+- Mass of $^{1}_{1}\mathrm{H}$: $1.007825 \;\mathrm{u}$
+- Mass of neutron: $1.008665 \;\mathrm{u}$
+- $1 \;\mathrm{u} = 931.5 \;\mathrm{MeV/c^2}$
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+Number of protons: $Z = 92$, Number of neutrons: $N = 235 - 92 = 143$.
+
+**Mass defect:**
+
+$$\Delta m = 92(1.007825) + 143(1.008665) - 235.043930$$
+
+$$\Delta m = 92.719900 + 144.239095 - 235.043930 = 1.915065 \;\mathrm{u}$$
+
+**Binding energy:**
+
+$$E_b = 1.915065 \times 931.5 = 1784 \;\mathrm{MeV}$$
+
+**Binding energy per nucleon:**
+
+$$\frac{E_b}{A} = \frac{1784}{235} = 7.59 \;\mathrm{MeV/nucleon}$$
+
+This is less than the binding energy per nucleon of iron-56 (8.8 MeV/nucleon), confirming that uranium-235 can release energy through fission.
+
+If you get this wrong, revise: Section 13.2 (binding energy).
+
+</details>
+
+### Problem 10
+
+In a nuclear reactor, each fission of U-235 releases approximately $200 \;\mathrm{MeV}$ of energy. How many fissions per second are needed to produce a power output of $500 \;\mathrm{MW}$?
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+Energy per fission: $E_f = 200 \;\mathrm{MeV} = 200 \times 10^{6} \times 1.60 \times 10^{-19} = 3.20 \times 10^{-11} \;\mathrm{J}$.
+
+Power output: $P = 500 \;\mathrm{MW} = 5.00 \times 10^{8} \;\mathrm{W}$.
+
+Number of fissions per second:
+
+$$N = \frac{P}{E_f} = \frac{5.00 \times 10^{8}}{3.20 \times 10^{-11}} = 1.56 \times 10^{19} \;\mathrm{fissions/s}$$
+
+Mass of U-235 consumed per second:
+
+$$m = N \times m_{\mathrm{U-235}} = 1.56 \times 10^{19} \times 235 \times 1.66 \times 10^{-27} = 6.09 \times 10^{-6} \;\mathrm{kg/s}$$
+
+$$\approx 6.1 \;\mathrm{mg/s} \approx 0.52 \;\mathrm{kg/day}$$
+
+If you get this wrong, revise: Section 14.1 (nuclear fission).
+
+</details>
+
+### Problem 11
+
+An electron with kinetic energy $5.0 \;\mathrm{eV}$ approaches a rectangular potential barrier of height $10.0 \;\mathrm{eV}$ and width $0.50 \;\mathrm{nm}$. Estimate the transmission coefficient (probability of tunnelling).
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+First, find $\kappa$:
+
+$$\kappa = \frac{\sqrt{2m_e(V_0 - E)}}{\hbar}$$
+
+Convert energies to joules: $V_0 - E = 5.0 \;\mathrm{eV} = 8.0 \times 10^{-19} \;\mathrm{J}$.
+
+$$\kappa = \frac{\sqrt{2 \times 9.11 \times 10^{-31} \times 8.0 \times 10^{-19}}}{1.055 \times 10^{-34}}$$
+
+$$\kappa = \frac{\sqrt{1.458 \times 10^{-48}}}{1.055 \times 10^{-34}} = \frac{1.208 \times 10^{-24}}{1.055 \times 10^{-34}} = 1.145 \times 10^{10} \;\mathrm{m^{-1}}$$
+
+Transmission coefficient:
+
+$$T \approx e^{-2\kappa L} = e^{-2 \times 1.145 \times 10^{10} \times 0.50 \times 10^{-9}}$$
+
+$$T = e^{-11.45} = 1.06 \times 10^{-5}$$
+
+So the probability of tunnelling is approximately $0.001\%$.
+
+If you get this wrong, revise: Section 8.2 (quantum tunnelling).
+
+</details>
+
+### Problem 12
+
+A radioactive sample contains two isotopes: isotope A with half-life 6.0 hours and initial activity $200 \;\mathrm{Bq}$, and isotope B with half-life 12.0 hours and initial activity $100 \;\mathrm{Bq}$. Calculate the total activity of the sample after 24 hours.
+
+<details>
+<summary>
+<b>Solution</b>
+</summary>
+
+**Isotope A:**
+
+Number of half-lives: $n_A = 24 / 6.0 = 4.0$
+
+$$A_A = 200 \times \left(\frac{1}{2}\right)^{4} = 200 \times 0.0625 = 12.5 \;\mathrm{Bq}$$
+
+**Isotope B:**
+
+Number of half-lives: $n_B = 24 / 12.0 = 2.0$
+
+$$A_B = 100 \times \left(\frac{1}{2}\right)^{2} = 100 \times 0.25 = 25.0 \;\mathrm{Bq}$$
+
+**Total activity:**
+
+$$A_{\mathrm{total}} = 12.5 + 25.0 = 37.5 \;\mathrm{Bq}$$
+
+If you get this wrong, revise: Section 11.1 (decay law).
+
+</details>

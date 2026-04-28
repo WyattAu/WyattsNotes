@@ -87,6 +87,19 @@ The competition between the attractive strong nuclear force and the repulsive el
 (between protons) determines nuclear stability. Heavy nuclei with many protons require extra
 neutrons to provide additional strong force to counteract the increasing electrostatic repulsion.
 
+### Worked Example: Nuclear Notation
+
+How many protons, neutrons, and nucleons are in $\prescript{238}{}{92}\mathrm{U}$?
+
+<details>
+<summary>Solution</summary>
+
+- Protons: $Z = 92$
+- Neutrons: $N = A - Z = 238 - 92 = 146$
+- Nucleons: $A = 238$
+
+</details>
+
 ---
 
 ## Radioactivity
@@ -213,6 +226,22 @@ equations. While DSE exams sometimes omit them for simplicity, always check whet
 requires them. Also, ensure $A$ and $Z$ balance on both sides of every decay equation.
 :::
 
+### Worked Example: Balancing Decay Equations
+
+Complete the following decay equation:
+$\prescript{214}{}{84}\mathrm{Po} \to \prescript{210}{}{82}\mathrm{Pb} + \ ?$
+
+<details>
+<summary>Solution</summary>
+
+Check the nucleon number: $214 - 210 = 4$
+
+Check the proton number: $84 - 82 = 2$
+
+The missing particle has $A = 4$, $Z = 2$, which is an alpha particle: $\prescript{4}{}{2}\mathrm{He}$
+
+</details>
+
 ---
 
 ## Radioactive Decay
@@ -313,10 +342,10 @@ This is a straight line with:
 
 The half-life is then:
 
-$$t_{1/2} = \frac{\ln 2}{|\mathrm{slope}|}$$
+$$t_{1/2} = \frac{\ln 2}{\lvert\mathrm{slope}\rvert}$$
 
 :::info In DSE exams, half-life determination from graphs is a frequent question. For a log-linear
-plot, remember the slope is negative: $|\mathrm{slope}| = \lambda$. Always check the axes carefully
+plot, remember the slope is negative: $\lvert\mathrm{slope}\rvert = \lambda$. Always check the axes carefully
 -- count rate is proportional to activity but is lower due to detector efficiency.
 :::
 
@@ -974,6 +1003,9 @@ Radon-222 decays by alpha emission. Write the complete decay equation and calcul
 released if the mass of Rn-222 is $221.970$ u, the mass of Po-218 is $217.963$ u, and the mass of
 He-4 is $4.003$ u.
 
+<details>
+<summary>Solution</summary>
+
 **Decay equation:**
 
 $$\prescript{222}{}{86}\mathrm{Rn} \to \prescript{218}{}{84}\mathrm{Po} + \prescript{4}{}{2}\mathrm{He}$$
@@ -990,10 +1022,15 @@ This energy is shared as kinetic energy between the alpha particle and the polon
 nucleus, with most going to the alpha particle (due to conservation of momentum and the lighter mass
 of the alpha particle).
 
+</details>
+
 ### Worked Example 2: Half-Life Calculation
 
 A radioactive isotope has an initial activity of $800$ Bq. After $30$ minutes, the activity has
 fallen to $100$ Bq. Calculate the half-life of the isotope.
+
+<details>
+<summary>Solution</summary>
 
 **Method 1: Using the fraction remaining**
 
@@ -1023,6 +1060,8 @@ $$\lambda = 1.155 \times 10^{-3} \mathrm{ s}^{-1}$$
 
 $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.155 \times 10^{-3}} = 600 \mathrm{ s} = 10 \mathrm{ min}$$
 
+</details>
+
 ### Worked Example 3: Binding Energy per Nucleon
 
 Calculate the binding energy per nucleon of helium-4 ($\prescript{4}{}{2}\mathrm{He}$).
@@ -1032,6 +1071,9 @@ Given:
 - Mass of He-4 nucleus $= 4.001506$ u
 - Mass of proton $= 1.007276$ u
 - Mass of neutron $= 1.008665$ u
+
+<details>
+<summary>Solution</summary>
 
 **Step 1: Calculate the mass defect**
 
@@ -1051,11 +1093,16 @@ $$BE = \Delta m \times 931.5 \mathrm{ MeV} = 0.030376 \times 931.5 = 28.30 \math
 
 $$\frac{BE}{A} = \frac{28.30}{4} = 7.07 \mathrm{ MeV/nucleon}$$
 
+</details>
+
 ### Worked Example 4: Radiocarbon Dating
 
 A piece of ancient wood has a carbon-14 activity of $1.5$ Bq per gram of carbon. Living wood has a
 carbon-14 activity of $15.0$ Bq per gram of carbon. Calculate the age of the ancient wood. (Take
 $t_{1/2}$ of C-14 $= 5730$ years.)
+
+<details>
+<summary>Solution</summary>
 
 **Using the decay law:**
 
@@ -1085,6 +1132,8 @@ many half-lives correspond to this fraction. $2^n = 10$ gives $n = \frac{\ln 10}
 half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods give the same result.
 :::
 
+</details>
+
 ### Worked Example 5: Nuclear Fission Energy
 
 A nuclear power plant uses uranium-235 as fuel. Each fission of U-235 releases approximately $200$
@@ -1092,6 +1141,9 @@ MeV of energy. If the plant operates at a power output of $1000$ MW with an effi
 calculate:
 
 (a) The number of U-235 fissions per second (b) The mass of U-235 consumed per day
+
+<details>
+<summary>Solution</summary>
 
 **(a) Number of fissions per second:**
 
@@ -1121,11 +1173,16 @@ Mass consumed per day:
 
 $$m = N \times m_{\mathrm{U-235}} = 8.18 \times 10^{24} \times 3.90 \times 10^{-25} = 3.19 \mathrm{ kg/day}$$
 
+</details>
+
 ### Worked Example 6: Activity and Number of Nuclei
 
 A sample contains $5.0 \times 10^{20}$ atoms of cobalt-60 ($t_{1/2} = 5.27$ years). Calculate:
 
 (a) The decay constant (b) The initial activity (c) The activity after 2 years
+
+<details>
+<summary>Solution</summary>
 
 **(a) Decay constant:**
 
@@ -1147,10 +1204,15 @@ $$A = 2.08 \times 10^{12} \times e^{-0.263}$$
 
 $$A = 2.08 \times 10^{12} \times 0.769 = 1.60 \times 10^{12} \mathrm{ Bq}$$
 
+</details>
+
 ### Worked Example 7: Penetration and Shielding
 
 A gamma source emits radiation with a half-value thickness of $2.5$ cm in lead. How thick must the
 lead shield be to reduce the gamma intensity to $1/16$ of its original value?
+
+<details>
+<summary>Solution</summary>
 
 If the intensity is reduced to $1/16$, this corresponds to $4$ half-value thicknesses (since
 $2^4 = 16$):
@@ -1170,6 +1232,8 @@ $$\ln\left(\frac{1}{16}\right) = -0.277x$$
 $$-2.773 = -0.277x$$
 
 $$x = 10.0 \mathrm{ cm}$$
+
+</details>
 
 ---
 
@@ -1290,3 +1354,389 @@ The biological effect of radiation depends on:
 An alpha source outside the body is relatively harmless (stopped by skin). An alpha source inside
 the body (e.g., inhaled or ingested) is extremely dangerous due to the high ionising power
 concentrated in a small volume of tissue.
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: Balancing a Beta-Minus Decay Equation</summary>
+
+Complete the following beta-minus decay equation and identify the daughter nucleus:
+
+$\prescript{60}{}{27}\mathrm{Co} \to \ ? + e^- + \bar{\nu}_e$
+
+<details>
+<summary>Solution</summary>
+
+In beta-minus decay, $Z$ increases by 1 while $A$ stays the same.
+
+Daughter nucleus: $A = 60$, $Z = 27 + 1 = 28$
+
+$\prescript{60}{}{27}\mathrm{Co} \to \prescript{60}{}{28}\mathrm{Ni} + e^- + \bar{\nu}_e$
+
+The daughter is nickel-60 ($\prescript{60}{}{28}\mathrm{Ni}$).
+
+*If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ stays the same.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 2: Activity from Mass</summary>
+
+A sample of sodium-24 ($t_{1/2} = 15$ hours, molar mass $= 24 \mathrm{ g/mol}$) has a mass of
+$0.48 \mathrm{ g}$. Calculate its activity.
+
+<details>
+<summary>Solution</summary>
+
+$$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{15 \times 3600} = 1.283 \times 10^{-5} \mathrm{ s}^{-1}$$
+
+$$N = \frac{m}{M} N_A = \frac{0.48 \times 10^{-3}}{0.024} \times 6.02 \times 10^{23} = 0.02 \times 6.02 \times 10^{23} = 1.204 \times 10^{22}$$
+
+$$A = \lambda N = (1.283 \times 10^{-5})(1.204 \times 10^{22}) = 1.545 \times 10^{17} \mathrm{ Bq}$$
+
+*If you get this wrong, revise: Relationship between activity, decay constant, and number of nuclei
+($A = \lambda N$) and $N = \frac{m}{M}N_A$.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 3: Half-Life from Count Rate Data</summary>
+
+A GM tube measures a count rate of $400$ counts/s from a radioactive source. After $20$ minutes, the
+count rate is $100$ counts/s. The background count rate is $20$ counts/s. Calculate the half-life of
+the source.
+
+<details>
+<summary>Solution</summary>
+
+Subtract background:
+
+Initial: $R_0 = 400 - 20 = 380$ counts/s
+
+After 20 min: $R = 100 - 20 = 80$ counts/s
+
+$$\frac{R}{R_0} = \frac{80}{380} = 0.2105$$
+
+Using the decay law:
+
+$$0.2105 = e^{-\lambda \times 1200}$$
+
+$$\lambda = \frac{-\ln(0.2105)}{1200} = \frac{1.558}{1200} = 1.298 \times 10^{-3} \mathrm{ s}^{-1}$$
+
+$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.298 \times 10^{-3}} = 533.9 \mathrm{ s} = 8.90 \mathrm{ minutes}$$
+
+*If you get this wrong, revise: Background subtraction and half-life determination from count rate
+data.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 4: Q-Value of a Nuclear Reaction</summary>
+
+Calculate the Q-value of the fission reaction:
+
+$\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{144}{}{56}\mathrm{Ba} + \prescript{89}{}{36}\mathrm{Kr} + 3\prescript{1}{}{0}\mathrm{n}$
+
+Given: $m(\mathrm{n}) = 1.008665$ u, $m(\mathrm{U\text{-}235}) = 235.043930$ u,
+$m(\mathrm{Ba\text{-}144}) = 143.922953$ u, $m(\mathrm{Kr\text{-}89}) = 88.917630$ u.
+
+<details>
+<summary>Solution</summary>
+
+$$m_{\mathrm{reactants}} = 1.008665 + 235.043930 = 236.052595 \mathrm{ u}$$
+
+$$m_{\mathrm{products}} = 143.922953 + 88.917630 + 3(1.008665) = 143.922953 + 88.917630 + 3.025995 = 235.866578 \mathrm{ u}$$
+
+$$\Delta m = 236.052595 - 235.866578 = 0.186017 \mathrm{ u}$$
+
+$$Q = 0.186017 \times 931.5 = 173.2 \mathrm{ MeV}$$
+
+*If you get this wrong, revise: Q-value calculation — remember to account for all product particles
+including released neutrons.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 5: Comparing Binding Energies</summary>
+
+The binding energy per nucleon of deuterium ($\prescript{2}{}{1}\mathrm{H}$) is $1.11 \mathrm{ MeV/nucleon}$
+and that of helium-4 ($\prescript{4}{}{2}\mathrm{He}$) is $7.07 \mathrm{ MeV/nucleon}$. Calculate
+the energy released when two deuterium nuclei fuse to form helium-4:
+
+$2\prescript{2}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He}$
+
+<details>
+<summary>Solution</summary>
+
+Total binding energy of reactants:
+
+$$BE_{\mathrm{reactants}} = 2 \times 2 \times 1.11 = 4.44 \mathrm{ MeV}$$
+
+Total binding energy of product:
+
+$$BE_{\mathrm{product}} = 4 \times 7.07 = 28.28 \mathrm{ MeV}$$
+
+Energy released:
+
+$$Q = BE_{\mathrm{product}} - BE_{\mathrm{reactants}} = 28.28 - 4.44 = 23.84 \mathrm{ MeV}$$
+
+*If you get this wrong, revise: Binding energy per nucleon curve and how energy release relates to
+the increase in binding energy per nucleon.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 6: Radiation Shielding — Multiple HVTs</summary>
+
+A gamma source has a half-value thickness of $1.5 \mathrm{ cm}$ in concrete. What thickness of
+concrete is needed to reduce the intensity to $3\%$ of the original?
+
+<details>
+<summary>Solution</summary>
+
+$$\frac{I}{I_0} = 0.03$$
+
+$$0.03 = \left(\frac{1}{2}\right)^n$$
+
+$$n = \frac{\ln(1/0.03)}{\ln 2} = \frac{3.507}{0.693} = 5.06 \text{ half-value thicknesses}$$
+
+$$\mathrm{Thickness} = 5.06 \times 1.5 = 7.59 \mathrm{ cm} \approx 7.6 \mathrm{ cm}$$
+
+*If you get this wrong, revise: Half-value thickness and exponential attenuation.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 7: Fraction Remaining After Multiple Half-Lives</summary>
+
+A radioactive isotope has a half-life of $8$ days. What fraction of the original sample remains after
+30 days?
+
+<details>
+<summary>Solution</summary>
+
+Number of half-lives: $n = \frac{30}{8} = 3.75$
+
+$$\frac{N}{N_0} = \left(\frac{1}{2}\right)^{3.75} = \frac{1}{2^{3.75}} = \frac{1}{13.45} = 0.0743$$
+
+About $7.4\%$ of the original sample remains.
+
+Alternatively, using the exponential decay law:
+
+$$\frac{N}{N_0} = e^{-\lambda t} = e^{-(\ln 2 / 8) \times 30} = e^{-2.601} = 0.0743$$
+
+*If you get this wrong, revise: Fraction remaining after $n$ half-lives: $(1/2)^n$.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 8: Dose Calculation</summary>
+
+A patient receives a dose of $0.5 \mathrm{ mGy}$ from alpha radiation to a specific organ. Calculate
+the equivalent dose in mSv.
+
+<details>
+<summary>Solution</summary>
+
+$$H = D \times w_R = 0.5 \times 20 = 10 \mathrm{ mSv}$$
+
+*If you get this wrong, revise: Absorbed dose vs equivalent dose and radiation weighting factors.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 9: GM Tube Dead Time Correction</summary>
+
+A GM tube with a dead time of $200 \ \mu\mathrm{s}$ records a count rate of $5000$ counts/s from a
+source. Estimate the true count rate.
+
+<details>
+<summary>Solution</summary>
+
+The fraction of time the tube is dead:
+
+$$f = R_{\mathrm{measured}} \times \tau = 5000 \times 200 \times 10^{-6} = 1.0$$
+
+Since $f = 1.0$, the tube is dead $100\%$ of the time, which is physically impossible. This means
+the measured count rate of $5000$ counts/s is unreliable with this dead time.
+
+For a more realistic scenario, if the measured rate were $1000$ counts/s:
+
+$$f = 1000 \times 200 \times 10^{-6} = 0.2$$
+
+$$R_{\mathrm{true}} \approx \frac{R_{\mathrm{measured}}}{1 - f} = \frac{1000}{0.8} = 1250 \mathrm{ counts/s}$$
+
+*If you get this wrong, revise: GM tube dead time and its effect on measured count rates at high
+activities.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 10: Fusion vs Fission — Binding Energy Curve</summary>
+
+Explain, with reference to the binding energy per nucleon curve, why energy is released in both
+nuclear fission and nuclear fusion.
+
+<details>
+<summary>Solution</summary>
+
+The binding energy per nucleon curve has a peak around iron-56 ($\sim 8.8 \mathrm{ MeV/nucleon}$).
+
+- **Fusion:** Light nuclei (low $A$) have low binding energy per nucleon. When they fuse to form
+  heavier nuclei closer to the peak, the binding energy per nucleon **increases**. This means the
+  products are more tightly bound than the reactants, so energy is released.
+
+- **Fission:** Heavy nuclei (high $A$) have lower binding energy per nucleon than medium-mass nuclei
+  near the peak. When a heavy nucleus splits into two lighter nuclei closer to the peak, the total
+  binding energy **increases**. Energy is released because the products are more stable than the
+  parent.
+
+In both cases, energy is released because the products have a higher binding energy per nucleon
+(i.e., are more stable) than the reactants.
+
+*If you get this wrong, revise: The binding energy per nucleon curve and its interpretation.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 11: Radiocarbon Dating — Percentage Remaining</summary>
+
+An archaeological artefact has $35\%$ of the original C-14 remaining. How old is the artefact?
+($t_{1/2}$ of C-14 $= 5730$ years)
+
+<details>
+<summary>Solution</summary>
+
+$$\frac{N}{N_0} = 0.35 = e^{-\lambda t}$$
+
+$$\ln(0.35) = -\lambda t$$
+
+$$t = \frac{-\ln(0.35)}{\lambda} = \frac{-(-1.050)}{(\ln 2)/5730} = \frac{1.050}{1.209 \times 10^{-4}} = 8683 \mathrm{ years}$$
+
+The artefact is approximately $8700$ years old.
+
+*If you get this wrong, revise: Radiocarbon dating formula and the decay law.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 12: Moderator — Elastic Collision with Neutron</summary>
+
+Explain why a moderator with a small mass number (like graphite or heavy water) is more effective
+at slowing neutrons than a heavy material like lead.
+
+<details>
+<summary>Solution</summary>
+
+In an elastic head-on collision between a neutron (mass $m$) and a stationary nucleus (mass $M$), the
+fraction of kinetic energy transferred is:
+
+$$\frac{\Delta E_k}{E_k} = \frac{4mM}{(m + M)^2}$$
+
+This fraction is maximised when $M \approx m$ (i.e., when the moderator nucleus has a similar mass
+to the neutron).
+
+For hydrogen ($M \approx m$): $\frac{\Delta E_k}{E_k} = \frac{4m^2}{(2m)^2} = 1$ (100% energy transfer)
+
+For carbon-12 ($M = 12m$): $\frac{\Delta E_k}{E_k} = \frac{48m^2}{169m^2} = 0.284$ (28.4%)
+
+For lead-207 ($M = 207m$): $\frac{\Delta E_k}{E_k} = \frac{828m^2}{43264m^2} = 0.019$ (1.9%)
+
+A lighter moderator transfers much more energy per collision, so fewer collisions are needed to
+thermalise the neutrons.
+
+*If you get this wrong, revise: Nuclear reactor moderator and elastic collision energy transfer.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 13: Alpha Particle Speed from Q-Value</summary>
+
+In the alpha decay of Po-210 ($m = 209.9829$ u) to Pb-206 ($m = 205.9745$ u), the Q-value is
+$5.41 \mathrm{ MeV}$. Calculate the kinetic energy of the alpha particle ($m = 4.0026$ u).
+
+<details>
+<summary>Solution</summary>
+
+By conservation of momentum, the alpha particle and daughter nucleus move in opposite directions
+with equal momentum:
+
+$$m_\alpha v_\alpha = m_{\mathrm{Pb}} v_{\mathrm{Pb}}$$
+
+The kinetic energies are in the inverse ratio of the masses:
+
+$$\frac{E_{k,\alpha}}{E_{k,\mathrm{Pb}}} = \frac{m_{\mathrm{Pb}}}{m_\alpha} = \frac{206}{4} = 51.5$$
+
+Since $E_{k,\alpha} + E_{k,\mathrm{Pb}} = Q = 5.41 \mathrm{ MeV}$:
+
+$$E_{k,\alpha} = Q \times \frac{m_{\mathrm{Pb}}}{m_{\mathrm{Pb}} + m_\alpha} = 5.41 \times \frac{206}{210} = 5.31 \mathrm{ MeV}$$
+
+The alpha particle carries approximately $98\%$ of the total kinetic energy.
+
+*If you get this wrong, revise: Conservation of momentum in nuclear decay and the distribution of
+kinetic energy between products.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 14: Electron Capture</summary>
+
+Write the equation for electron capture by beryllium-7 and explain why electron capture is
+favoured over beta-plus decay for this isotope.
+
+<details>
+<summary>Solution</summary>
+
+$$\prescript{7}{}{4}\mathrm{Be} + e^- \to \prescript{7}{}{3}\mathrm{Li} + \nu_e$$
+
+Electron capture is favoured because:
+- Beta-plus decay requires $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$, creating a positron
+  and an additional electron
+- Electron capture only requires $m(\mathrm{parent}) \gt m(\mathrm{daughter})$ (since the
+  captured electron already exists)
+- For light nuclei like Be-7, the mass difference is too small to create a positron, so electron
+  capture is the only available decay mode
+
+*If you get this wrong, revise: Electron capture as an alternative to beta-plus decay and the
+condition $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$.*
+
+</details>
+</details>
+
+<details>
+<summary>Problem 15: Log-Linear Plot — Finding Decay Constant</summary>
+
+A log-linear plot of $\ln A$ versus $t$ for a radioactive source gives a straight line with gradient
+$-0.05 \mathrm{ min}^{-1}$. Find the decay constant and half-life.
+
+<details>
+<summary>Solution</summary>
+
+$$\ln A = \ln A_0 - \lambda t$$
+
+The gradient is $-\lambda = -0.05 \mathrm{ min}^{-1}$
+
+$$\lambda = 0.05 \mathrm{ min}^{-1} = \frac{0.05}{60} = 8.33 \times 10^{-4} \mathrm{ s}^{-1}$$
+
+$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{0.05} = 13.86 \mathrm{ min}$$
+
+*If you get this wrong, revise: Log-linear plots of radioactive decay — the gradient equals $-\lambda$,
+not $-t_{1/2}$.*
+
+</details>
+</details>

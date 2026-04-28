@@ -27,7 +27,12 @@ $$M_r = \sum A_r \mathrm{ of all atoms in the formula}$$
 
 Calculate the relative molecular mass of sulfuric acid ($\mathrm{H_2SO_4}$).
 
+<details>
+<summary>Solution</summary>
+
 $$M_r(\mathrm{H_2SO_4}) = 2(1) + 32 + 4(16) = 2 + 32 + 64 = 98$$
+
+</details>
 
 ---
 
@@ -56,6 +61,9 @@ where $m$ is the mass in grams and $M$ is the molar mass in $\mathrm{g/mol}$.
 
 How many moles are there in $24.5 \mathrm{ g}$ of $\mathrm{H_2SO_4}$?
 
+<details>
+<summary>Solution</summary>
+
 $$M(\mathrm{H_2SO_4}) = 98 \mathrm{ g/mol}$$
 
 $$n = \frac{m}{M} = \frac{24.5}{98} = 0.250 \mathrm{ mol}$$
@@ -63,6 +71,8 @@ $$n = \frac{m}{M} = \frac{24.5}{98} = 0.250 \mathrm{ mol}$$
 How many molecules does this correspond to?
 
 $$N = n \times N_A = 0.250 \times 6.02 \times 10^{23} = 1.51 \times 10^{23} \mathrm{ molecules}$$
+
+</details>
 
 ---
 
@@ -83,9 +93,14 @@ where $V$ is the volume of gas and $V_m$ is the molar volume.
 
 Calculate the volume occupied by $5.00 \mathrm{ g}$ of carbon dioxide at RTP.
 
+<details>
+<summary>Solution</summary>
+
 $$n = \frac{m}{M} = \frac{5.00}{44} = 0.1136 \mathrm{ mol}$$
 
 $$V = n \times V_m = 0.1136 \times 24.0 = 2.73 \mathrm{ dm^3}$$
+
+</details>
 
 ---
 
@@ -115,6 +130,9 @@ $$\mathrm{Molecular formula} = (\mathrm{Empirical formula})_n$$
 A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen, and $53.3\%$ oxygen by mass. Determine the
 empirical formula.
 
+<details>
+<summary>Solution</summary>
+
 | Element  | Mass (g) | Moles ($m/A_r$)       | Ratio (divide by smallest) |
 | -------- | -------- | ---------------------- | -------------------------- |
 | C        | 40.0     | $40.0/12 = 3.33$      | $3.33/3.33 = 1$           |
@@ -131,6 +149,8 @@ $$n = \frac{180}{30} = 6$$
 
 Molecular formula: $\mathrm{C_6H_{12}O_6}$ (glucose).
 
+</details>
+
 ---
 
 ## Percentage Composition
@@ -141,9 +161,14 @@ $$\%\mathrm{ element} = \frac{n \times A_r \mathrm{ of element}}{M_r \mathrm{ of
 
 Calculate the percentage by mass of nitrogen in ammonium nitrate ($\mathrm{NH_4NO_3}$).
 
+<details>
+<summary>Solution</summary>
+
 $$M_r(\mathrm{NH_4NO_3}) = 14 + 4(1) + 14 + 3(16) = 14 + 4 + 14 + 48 = 80$$
 
 $$\%\mathrm{N} = \frac{2 \times 14}{80} \times 100 = \frac{28}{80} \times 100 = 35.0\%$$
+
+</details>
 
 ---
 
@@ -164,6 +189,9 @@ and products.
 What mass of magnesium oxide is produced when $12.0 \mathrm{ g}$ of magnesium reacts completely
 with oxygen?
 
+<details>
+<summary>Solution</summary>
+
 $$2\mathrm{Mg} + \mathrm{O_2} \to 2\mathrm{MgO}$$
 
 Step 1: Moles of Mg:
@@ -178,6 +206,8 @@ Step 3: Mass of MgO:
 
 $$m(\mathrm{MgO}) = 0.494 \times (24.3 + 16) = 0.494 \times 40.3 = 19.9 \mathrm{ g}$$
 
+</details>
+
 ---
 
 ## Gas Volume Calculations
@@ -189,6 +219,9 @@ When one or more reactants/products are gases, use the molar volume at the relev
 Calculate the volume of carbon dioxide produced (at RTP) when $25.0 \mathrm{ g}$ of calcium carbonate
 decomposes on heating.
 
+<details>
+<summary>Solution</summary>
+
 $$\mathrm{CaCO_3} \xrightarrow{\Delta} \mathrm{CaO} + \mathrm{CO_2}$$
 
 $$n(\mathrm{CaCO_3}) = \frac{25.0}{100} = 0.250 \mathrm{ mol}$$
@@ -196,6 +229,8 @@ $$n(\mathrm{CaCO_3}) = \frac{25.0}{100} = 0.250 \mathrm{ mol}$$
 Molar ratio: $1 : 1$, so $n(\mathrm{CO_2}) = 0.250 \mathrm{ mol}$
 
 $$V(\mathrm{CO_2}) = 0.250 \times 24.0 = 6.00 \mathrm{ dm^3}$$
+
+</details>
 
 ---
 
@@ -215,6 +250,9 @@ where:
 What is the concentration of a solution prepared by dissolving $10.6 \mathrm{ g}$ of sodium carbonate
 ($\mathrm{Na_2CO_3}$) in water and making up to $250 \mathrm{ cm^3}$?
 
+<details>
+<summary>Solution</summary>
+
 $$M(\mathrm{Na_2CO_3}) = 2(23) + 12 + 3(16) = 106 \mathrm{ g/mol}$$
 
 $$n = \frac{10.6}{106} = 0.100 \mathrm{ mol}$$
@@ -222,6 +260,8 @@ $$n = \frac{10.6}{106} = 0.100 \mathrm{ mol}$$
 $$V = 250 \mathrm{ cm^3} = 0.250 \mathrm{ dm^3}$$
 
 $$c = \frac{0.100}{0.250} = 0.400 \mathrm{ mol/dm^3}$$
+
+</details>
 
 ### Mass Concentration
 
@@ -253,6 +293,9 @@ $25.0 \mathrm{ cm^3}$ of sodium hydroxide solution is titrated with $0.100 \math
 hydrochloric acid. The average titre is $21.5 \mathrm{ cm^3}$. Calculate the concentration of the
 sodium hydroxide solution.
 
+<details>
+<summary>Solution</summary>
+
 $$\mathrm{NaOH} + \mathrm{HCl} \to \mathrm{NaCl} + \mathrm{H_2O}$$
 
 Molar ratio: $1 : 1$
@@ -263,10 +306,15 @@ $$n(\mathrm{NaOH}) = 2.15 \times 10^{-3} \mathrm{ mol}$$
 
 $$c(\mathrm{NaOH}) = \frac{n}{V} = \frac{2.15 \times 10^{-3}}{25.0/1000} = \frac{2.15 \times 10^{-3}}{0.0250} = 0.0860 \mathrm{ mol/dm^3}$$
 
+</details>
+
 ### Worked Example 10
 
 $20.0 \mathrm{ cm^3}$ of sulphuric acid is titrated with $0.0500 \mathrm{ mol/dm^3}$ sodium
 hydroxide. The average titre is $30.0 \mathrm{ cm^3}$. Find the concentration of the sulphuric acid.
+
+<details>
+<summary>Solution</summary>
 
 $$\mathrm{H_2SO_4} + 2\mathrm{NaOH} \to \mathrm{Na_2SO_4} + 2\mathrm{H_2O}$$
 
@@ -277,6 +325,8 @@ $$n(\mathrm{NaOH}) = 0.0500 \times \frac{30.0}{1000} = 1.50 \times 10^{-3} \math
 $$n(\mathrm{H_2SO_4}) = \frac{1.50 \times 10^{-3}}{2} = 7.50 \times 10^{-4} \mathrm{ mol}$$
 
 $$c(\mathrm{H_2SO_4}) = \frac{7.50 \times 10^{-4}}{20.0/1000} = \frac{7.50 \times 10^{-4}}{0.0200} = 0.0375 \mathrm{ mol/dm^3}$$
+
+</details>
 
 ---
 
@@ -296,6 +346,9 @@ amount of product that can be formed.
 $5.0 \mathrm{ g}$ of zinc reacts with $25.0 \mathrm{ cm^3}$ of $2.0 \mathrm{ mol/dm^3}$ hydrochloric
 acid. Identify the limiting reactant and calculate the volume of hydrogen produced at RTP.
 
+<details>
+<summary>Solution</summary>
+
 $$\mathrm{Zn} + 2\mathrm{HCl} \to \mathrm{ZnCl_2} + \mathrm{H_2}$$
 
 Moles of Zn: $n = 5.0/65.4 = 0.0765 \mathrm{ mol}$
@@ -312,6 +365,8 @@ $$n(\mathrm{H_2}) = \frac{n(\mathrm{HCl})}{2} = \frac{0.0500}{2} = 0.0250 \mathr
 
 $$V(\mathrm{H_2}) = 0.0250 \times 24.0 = 0.600 \mathrm{ dm^3} = 600 \mathrm{ cm^3}$$
 
+</details>
+
 ---
 
 ## Percentage Yield
@@ -325,6 +380,9 @@ The theoretical yield is the maximum amount of product calculated from the limit
 $10.0 \mathrm{ g}$ of calcium carbonate is heated, and $4.80 \mathrm{ g}$ of calcium oxide is
 collected. Calculate the percentage yield.
 
+<details>
+<summary>Solution</summary>
+
 $$\mathrm{CaCO_3} \to \mathrm{CaO} + \mathrm{CO_2}$$
 
 $$n(\mathrm{CaCO_3}) = 10.0/100 = 0.100 \mathrm{ mol}$$
@@ -334,6 +392,8 @@ Theoretical $n(\mathrm{CaO}) = 0.100 \mathrm{ mol}$
 Theoretical $m(\mathrm{CaO}) = 0.100 \times 56 = 5.60 \mathrm{ g}$
 
 $$\%\mathrm{ yield} = \frac{4.80}{5.60} \times 100 = 85.7\%$$
+
+</details>
 
 ---
 
@@ -351,6 +411,9 @@ The formula indicates 5 moles of water per mole of $\mathrm{CuSO_4}$.
 $12.5 \mathrm{ g}$ of hydrated copper(II) sulphate ($\mathrm{CuSO_4 \cdot xH_2O}$) is heated to
 constant mass, leaving $8.00 \mathrm{ g}$ of anhydrous $\mathrm{CuSO_4}$. Find the value of $x$.
 
+<details>
+<summary>Solution</summary>
+
 $$M(\mathrm{CuSO_4}) = 64 + 32 + 64 = 160 \mathrm{ g/mol}$$
 
 Mass of water lost: $12.5 - 8.00 = 4.50 \mathrm{ g}$
@@ -362,6 +425,8 @@ $$n(\mathrm{CuSO_4}) = 8.00/160 = 0.0500 \mathrm{ mol}$$
 $$x = \frac{n(\mathrm{H_2O})}{n(\mathrm{CuSO_4})} = \frac{0.250}{0.0500} = 5$$
 
 The formula is $\mathrm{CuSO_4 \cdot 5H_2O}$.
+
+</details>
 
 ---
 
@@ -394,16 +459,27 @@ The formula is $\mathrm{CuSO_4 \cdot 5H_2O}$.
 
 ---
 
-<details>
-<summary>Exam-Style Practice Questions</summary>
+## Problem Set
 
-**Question 1:** Calculate the number of molecules in $3.20 \mathrm{ g}$ of oxygen gas ($\mathrm{O_2}$).
+**Problem 1:** Calculate the number of molecules in $3.20 \mathrm{ g}$ of oxygen gas ($\mathrm{O_2}$).
+
+*If you get this wrong, revise: The Mole Concept*
+
+<details>
+<summary>Solution</summary>
 
 $$n = \frac{3.20}{32} = 0.100 \mathrm{ mol}$$
 
 $$N = 0.100 \times 6.02 \times 10^{23} = 6.02 \times 10^{22} \mathrm{ molecules}$$
 
-**Question 2:** A compound contains $36.5\%$ Na, $25.4\%$ S, and $38.1\%$ O. Find its empirical formula.
+</details>
+
+**Problem 2:** A compound contains $36.5\%$ Na, $25.4\%$ S, and $38.1\%$ O. Find its empirical formula.
+
+*If you get this wrong, revise: Empirical and Molecular Formulae*
+
+<details>
+<summary>Solution</summary>
 
 | Element | Mass (g) | Moles       | Ratio     |
 | ------- | -------- | ----------- | --------- |
@@ -413,15 +489,29 @@ $$N = 0.100 \times 6.02 \times 10^{23} = 6.02 \times 10^{22} \mathrm{ molecules}
 
 Empirical formula: $\mathrm{Na_2SO_3}$
 
-**Question 3:** $2.40 \mathrm{ dm^3}$ of ammonia gas at RTP is dissolved in water to make
+</details>
+
+**Problem 3:** $2.40 \mathrm{ dm^3}$ of ammonia gas at RTP is dissolved in water to make
 $500 \mathrm{ cm^3}$ of solution. Calculate the concentration of the ammonia solution.
+
+*If you get this wrong, revise: Concentration (Molarity) and Molar Volume of Gas*
+
+<details>
+<summary>Solution</summary>
 
 $$n(\mathrm{NH_3}) = 2.40/24.0 = 0.100 \mathrm{ mol}$$
 
 $$c = 0.100/0.500 = 0.200 \mathrm{ mol/dm^3}$$
 
-**Question 4:** $15.0 \mathrm{ g}$ of $\mathrm{NaOH}$ is reacted with excess $\mathrm{H_2SO_4}$.
+</details>
+
+**Problem 4:** $15.0 \mathrm{ g}$ of $\mathrm{NaOH}$ is reacted with excess $\mathrm{H_2SO_4}$.
 Calculate the mass of $\mathrm{Na_2SO_4}$ produced.
+
+*If you get this wrong, revise: Reacting Mass Calculations*
+
+<details>
+<summary>Solution</summary>
 
 $$2\mathrm{NaOH} + \mathrm{H_2SO_4} \to \mathrm{Na_2SO_4} + 2\mathrm{H_2O}$$
 
@@ -431,8 +521,15 @@ $$n(\mathrm{Na_2SO_4}) = 0.375/2 = 0.1875 \mathrm{ mol}$$
 
 $$m(\mathrm{Na_2SO_4}) = 0.1875 \times 142 = 26.6 \mathrm{ g}$$
 
-**Question 5:** In a titration, $25.0 \mathrm{ cm^3}$ of $\mathrm{H_2SO_4}$ reacts with
+</details>
+
+**Problem 5:** In a titration, $25.0 \mathrm{ cm^3}$ of $\mathrm{H_2SO_4}$ reacts with
 $20.0 \mathrm{ cm^3}$ of $0.200 \mathrm{ mol/dm^3}$ $\mathrm{KOH}$. Find the concentration of the acid.
+
+*If you get this wrong, revise: Titration Calculations*
+
+<details>
+<summary>Solution</summary>
 
 $$\mathrm{H_2SO_4} + 2\mathrm{KOH} \to \mathrm{K_2SO_4} + 2\mathrm{H_2O}$$
 
@@ -442,8 +539,15 @@ $$n(\mathrm{H_2SO_4}) = 4.00 \times 10^{-3}/2 = 2.00 \times 10^{-3} \mathrm{ mol
 
 $$c(\mathrm{H_2SO_4}) = 2.00 \times 10^{-3}/0.0250 = 0.0800 \mathrm{ mol/dm^3}$$
 
-**Question 6:** $6.50 \mathrm{ g}$ of $\mathrm{Zn}$ reacts with $50.0 \mathrm{ cm^3}$ of
+</details>
+
+**Problem 6:** $6.50 \mathrm{ g}$ of $\mathrm{Zn}$ reacts with $50.0 \mathrm{ cm^3}$ of
 $2.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$. Calculate the maximum volume of $\mathrm{H_2}$ produced at RTP.
+
+*If you get this wrong, revise: Limiting Reactants and Gas Volume Calculations*
+
+<details>
+<summary>Solution</summary>
 
 $$\mathrm{Zn} + 2\mathrm{HCl} \to \mathrm{ZnCl_2} + \mathrm{H_2}$$
 
@@ -456,5 +560,80 @@ Divide by coefficients: Zn: $0.0994/1 = 0.0994$; HCl: $0.100/2 = 0.0500$
 HCl is limiting. $n(\mathrm{H_2}) = 0.0500 \mathrm{ mol}$
 
 $V(\mathrm{H_2}) = 0.0500 \times 24.0 = 1.20 \mathrm{ dm^3}$
+
+</details>
+
+**Problem 7:** Calculate the percentage of oxygen by mass in $\mathrm{CaCO_3}$.
+
+*If you get this wrong, revise: Percentage Composition*
+
+<details>
+<summary>Solution</summary>
+
+$$M_r(\mathrm{CaCO_3}) = 40 + 12 + 3(16) = 100$$
+
+$$\%\mathrm{O} = \frac{3 \times 16}{100} \times 100 = \frac{48}{100} \times 100 = 48.0\%$$
+
+</details>
+
+**Problem 8:** A compound has the empirical formula $\mathrm{CH_2O}$ and a molar mass of $150
+\mathrm{ g/mol}$. Determine the molecular formula.
+
+*If you get this wrong, revise: Empirical and Molecular Formulae*
+
+<details>
+<summary>Solution</summary>
+
+$$M_r(\mathrm{empirical}) = 12 + 2(1) + 16 = 30$$
+
+$$n = \frac{150}{30} = 5$$
+
+Molecular formula: $(\mathrm{CH_2O})_5 = \mathrm{C_5H_{10}O_5}$
+
+</details>
+
+**Problem 9:** $8.00 \mathrm{ g}$ of $\mathrm{Fe_2O_3}$ is reduced by excess carbon monoxide.
+Calculate the mass of iron produced and the volume of $\mathrm{CO_2}$ formed at RTP.
+
+$$\mathrm{Fe_2O_3} + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO_2}$$
+
+*If you get this wrong, revise: Reacting Mass Calculations and Gas Volume Calculations*
+
+<details>
+<summary>Solution</summary>
+
+$$n(\mathrm{Fe_2O_3}) = \frac{8.00}{160} = 0.0500 \mathrm{ mol}$$
+
+Molar ratio $\mathrm{Fe_2O_3} : \mathrm{Fe} : \mathrm{CO_2} = 1 : 2 : 3$
+
+$$n(\mathrm{Fe}) = 2 \times 0.0500 = 0.100 \mathrm{ mol}$$
+
+$$m(\mathrm{Fe}) = 0.100 \times 55.8 = 5.58 \mathrm{ g}$$
+
+$$n(\mathrm{CO_2}) = 3 \times 0.0500 = 0.150 \mathrm{ mol}$$
+
+$$V(\mathrm{CO_2}) = 0.150 \times 24.0 = 3.60 \mathrm{ dm^3}$$
+
+</details>
+
+**Problem 10:** $16.2 \mathrm{ g}$ of hydrated magnesium sulphate ($\mathrm{MgSO_4 \cdot xH_2O}$)
+is heated to constant mass, leaving $7.8 \mathrm{ g}$ of anhydrous $\mathrm{MgSO_4}$. Find $x$.
+
+*If you get this wrong, revise: Water of Crystallisation*
+
+<details>
+<summary>Solution</summary>
+
+$$M(\mathrm{MgSO_4}) = 24 + 32 + 4(16) = 120 \mathrm{ g/mol}$$
+
+Mass of water lost: $16.2 - 7.8 = 8.4 \mathrm{ g}$
+
+$$n(\mathrm{H_2O}) = \frac{8.4}{18} = 0.467 \mathrm{ mol}$$
+
+$$n(\mathrm{MgSO_4}) = \frac{7.8}{120} = 0.0650 \mathrm{ mol}$$
+
+$$x = \frac{0.467}{0.0650} = 7.18 \approx 7$$
+
+The formula is $\mathrm{MgSO_4 \cdot 7H_2O}$ (Epsom salt).
 
 </details>

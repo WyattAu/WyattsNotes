@@ -100,6 +100,34 @@ cloth): Cloth = $10 \times 8 = 80$ units
 Specialisation increases total world output by 30 units of rice and 15 units of cloth. Both
 countries can trade and be better off than before.
 
+<details>
+<summary>Worked Example: Calculating Gains from Trade</summary>
+
+Country X can produce either 80 tonnes of wheat or 40 tonnes of silk. Country Y can produce either 40
+tonnes of wheat or 80 tonnes of silk.
+
+**Opportunity costs:**
+
+Country X: 1 wheat = 40/80 = 0.5 silk; 1 silk = 80/40 = 2 wheat.
+
+Country Y: 1 wheat = 80/40 = 2 silk; 1 silk = 40/80 = 0.5 wheat.
+
+X has comparative advantage in wheat (0.5 silk vs 2 silk). Y has comparative advantage in silk.
+
+If each specialises fully: X produces 80 wheat, 0 silk. Y produces 0 wheat, 80 silk. Total: 80 wheat,
+80 silk.
+
+If they trade at 1 wheat = 1 silk (between 0.5 and 2), and X exports 30 wheat for 30 silk:
+
+X ends up with: 50 wheat, 30 silk. Before (half resources each): 40 wheat, 20 silk. Gains: +10 wheat,
++10 silk.
+
+Y ends up with: 30 wheat, 50 silk. Before: 20 wheat, 40 silk. Gains: +10 wheat, +10 silk.
+
+Both countries gain from trade.
+
+</details>
+
 ### Conditions for Comparative Advantage
 
 Comparative advantage arises from differences between countries in:
@@ -173,6 +201,24 @@ making it less competitive compared to domestically produced goods.
 **Deadweight loss of a tariff:**
 
 $$\mathrm{DWL} = \mathrm{Loss in consumer surplus} - \mathrm{Gain in producer surplus} - \mathrm{Tariff revenue}$$
+
+<details>
+<summary>Worked Example: Tariff Deadweight Loss</summary>
+
+A small country imports Good T at a world price of USD 20. At `P = 20`, domestic demand is 500 units and
+domestic supply is 200 units. A tariff of USD 5 per unit is imposed. At `P = 25`, domestic demand falls
+to 450 and domestic supply rises to 250.
+
+Imports before tariff: `500 - 200 = 300`.
+Imports after tariff: `450 - 250 = 200`.
+
+Tariff revenue: `5 \times 200 = 1000`.
+
+`DWL_{consumption} = 0.5 \times 50 \times 5 = 125` (triangle from reduced consumption).
+`DWL_{production} = 0.5 \times 50 \times 5 = 125` (triangle from inefficient domestic production).
+Total `DWL = 250`.
+
+</details>
 
 ### Quotas
 
@@ -973,5 +1019,259 @@ productive efficiency.
 
 This is a key criticism of preferential trade agreements (free trade areas, customs unions): they
 can create trade diversion that partially offsets the benefits of trade creation.
+
+</details>
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: Comparative Advantage with Numbers</summary>
+
+Country M can produce either 200 tonnes of coffee or 100 tonnes of tea. Country N can produce either
+100 tonnes of coffee or 200 tonnes of tea.
+
+(a) Which country has an absolute advantage in coffee? In tea? (b) Calculate the opportunity cost of
+each good in each country. (c) Which country has a comparative advantage in coffee? In tea? (d) If they
+specialise and trade at an exchange rate of 1 coffee = 1.5 tea, show that both gain.
+
+<details>
+<summary>Solution</summary>
+
+(a) Coffee: M (200 vs 100). Tea: N (200 vs 100).
+
+(b) M: 1 coffee = 0.5 tea; 1 tea = 2 coffee. N: 1 coffee = 2 tea; 1 tea = 0.5 coffee.
+
+(c) M has comparative advantage in coffee (0.5 tea vs 2 tea). N has comparative advantage in tea.
+
+(d) Before trade (half resources each): M: 100 coffee, 50 tea. N: 50 coffee, 100 tea.
+
+After specialisation: M: 200 coffee, 0 tea. N: 0 coffee, 200 tea.
+
+M exports 60 coffee for `60 \times 1.5 = 90` tea.
+
+M: 140 coffee, 90 tea (gains: +40 coffee, +40 tea).
+N: 60 coffee, 110 tea (gains: +10 coffee, +10 tea).
+
+Both gain.
+
+</details>
+
+If you get this wrong, revise: [Comparative Advantage](#comparative-advantage)
+
+</details>
+
+<details>
+<summary>Problem 2: Balance of Payments Calculation</summary>
+
+Country P has the following transactions (USD billion):
+
+- Exports of goods: 600, Imports of goods: 800
+- Exports of services: 250, Imports of services: 150
+- Investment income received: 120, Investment income paid: 80
+- Transfers received: 30, Transfers paid: 50
+- Net financial account (excl. reserves): +40
+
+(a) Calculate the current account balance. (b) Calculate the change in reserves. (c) Is the central bank
+buying or selling foreign currency?
+
+<details>
+<summary>Solution</summary>
+
+(a) Goods: `600 - 800 = -200`. Services: `250 - 150 = +100`. Primary income: `120 - 80 = +40`.
+Secondary income: `30 - 50 = -20`.
+
+Current account = `-200 + 100 + 40 - 20 = -80` (deficit of USD 80 billion).
+
+(b) `CA + FA = 0` (approximately). `-80 + 40 + (-R) = 0`, so `R = -40`.
+
+Reserves **decrease** by USD 40 billion (negative means reserves fall).
+
+(c) The central bank is **selling** foreign currency to support the domestic currency (or to finance the
+current account deficit).
+
+</details>
+
+If you get this wrong, revise: [Balance of Payments](#balance-of-payments)
+
+</details>
+
+<details>
+<summary>Problem 3: Exchange Rate Effects</summary>
+
+The exchange rate changes from 1 GBP = 10 HKD to 1 GBP = 11 HKD.
+
+(a) Has the GBP appreciated or depreciated against the HKD? By what percentage? (b) What is the effect on
+UK exports to Hong Kong? (c) What is the effect on the UK current account, assuming the Marshall-Lerner
+condition holds?
+
+<details>
+<summary>Solution</summary>
+
+(a) APPRECIATED. Previously 1 GBP bought 10 HKD, now 11 HKD. `% change = (11-10)/10 \times 100\% = 10\%`.
+
+(b) UK exports to HK become more expensive. A good costing GBP 100 previously cost HKD 1000, now costs
+HKD 1100. HK consumers buy less, so UK export volumes fall.
+
+(c) The UK current account is likely to **deteriorate**. More expensive exports reduce export revenue;
+cheaper imports (from HK perspective) increase import spending. Both effects reduce the trade surplus
+(or increase the deficit), assuming the Marshall-Lerner condition is satisfied.
+
+</details>
+
+If you get this wrong, revise: [Depreciation and Appreciation](#depreciation-and-appreciation)
+
+</details>
+
+<details>
+<summary>Problem 4: Marshall-Lerner Condition</summary>
+
+A country's price elasticity of demand for exports is 0.4 and for imports is 0.9.
+
+(a) Does the Marshall-Lerner condition hold? (b) If the country's currency depreciates, will the trade
+balance improve or worsen in the short run? (c) What is the minimum value of import elasticity needed
+for depreciation to improve the trade balance?
+
+<details>
+<summary>Solution</summary>
+
+(a) Sum = `|0.4| + |0.9| = 1.3`. Since `1.3 \gt 1`, the Marshall-Lerner condition **holds**.
+
+(b) Even though the ML condition holds, the trade balance may **worsen in the short run** due to the
+J-curve effect (quantities adjust slowly, price effect dominates initially). In the long run, quantities
+adjust and the trade balance improves.
+
+(c) We need `|0.4| + |e_M| \gt 1`, so `|e_M| \gt 0.6`. The import elasticity must exceed 0.6.
+
+</details>
+
+If you get this wrong, revise: [Marshall-Lerner Condition](#marshall-lerner-condition)
+
+</details>
+
+<details>
+<summary>Problem 5: Trade Policy Evaluation</summary>
+
+Country Z is considering joining a free trade area with Country W and Country V. Currently, Country Z
+imports Good G from Country W (the world's most efficient producer) at USD 15 per unit, paying a tariff
+of USD 5 (domestic price = USD 20). After the FTA, Country Z can import from Country V at USD 17 per
+unit, tariff-free (domestic price = USD 17).
+
+(a) Is this trade creation or trade diversion? (b) What is the effect on world efficiency?
+
+<details>
+<summary>Solution</summary>
+
+(a) This is **trade diversion**. Before the FTA, Z imported from W at a total cost of USD 20 (USD 15
+price + USD 5 tariff). After the FTA, Z imports from V at USD 17 (no tariff). The lower domestic price
+benefits Z consumers, but production has shifted from W (efficient, cost = 15) to V (less efficient,
+cost = 17).
+
+(b) World efficiency **decreases**. Resources that could produce Good G at USD 15 (in W) are now being
+used to produce it at USD 17 (in V). The world wastes USD 2 per unit of misallocated production.
+
+</details>
+
+If you get this wrong, revise: [Trade Barriers](#trade-barriers)
+
+</details>
+
+<details>
+<summary>Problem 6: Hong Kong Exchange Rate</summary>
+
+The US Federal Reserve raises interest rates significantly. Explain the effects on Hong Kong's economy
+given the Linked Exchange Rate System.
+
+<details>
+<summary>Solution</summary>
+
+Since the HKD is pegged to the USD, higher US interest rates force higher HKD interest rates to
+maintain the peg (to prevent capital outflows from HKD to USD assets).
+
+Effects on Hong Kong:
+
+1. **Borrowing costs rise:** Mortgage rates, business loan rates, and HIBOR increase, reducing
+   consumption and investment.
+2. **Property market pressure:** Higher mortgage costs reduce housing affordability, putting downward
+   pressure on property prices.
+3. **Economic slowdown:** Higher borrowing costs dampen aggregate demand, potentially slowing GDP
+   growth and increasing unemployment.
+4. **Capital inflows:** Higher HKD rates attract foreign capital, strengthening demand for HKD (but
+   capped at 7.75 by the convertibility undertaking).
+5. **Exports:** The stronger USD/HKD makes HK exports more expensive for foreign buyers, reducing export
+   demand. Tourism from mainland China becomes more expensive.
+6. **Inflation:** Lower import prices (stronger currency) reduce imported inflation.
+7. **No monetary autonomy:** The HKMA cannot lower rates to stimulate the economy even if HK enters a
+   recession -- it must follow the Fed.
+
+</details>
+
+If you get this wrong, revise: [Effects of Exchange Rate Changes on the Hong Kong Economy](#effects-of-exchange-rate-changes-on-the-hong-kong-economy)
+
+</details>
+
+<details>
+<summary>Problem 7: Terms of Trade and Welfare</summary>
+
+A country's export price index rises from 100 to 130, while its import price index rises from 100 to
+140 over the same period.
+
+(a) Has the TOT improved or deteriorated? (b) Is the country necessarily worse off? (c) Under what
+circumstances could the country be better off despite a deteriorating TOT?
+
+<details>
+<summary>Solution</summary>
+
+(a) Initial TOT = `100/100 \times 100 = 100`. New TOT = `130/140 \times 100 = 92.86`.
+
+TOT has **deteriorated** from 100 to 92.86.
+
+(b) Not necessarily. The TOT only measures price ratios, not volumes. If export volumes have increased
+substantially, total export revenue could still rise despite lower per-unit terms.
+
+(c) The country could be better off if:
+- Export volumes increased enough to offset the lower price ratio
+- Import prices fell in real terms (e.g., due to technological progress among trading partners)
+- The composition of trade shifted towards higher-value exports
+
+For example, if export volumes doubled while prices rose 30%, total export revenue rose significantly.
+Even though each unit of exports buys fewer imports than before, the country has many more units to
+trade.
+
+</details>
+
+If you get this wrong, revise: [Terms of Trade](#terms-of-trade)
+
+</details>
+
+<details>
+<summary>Problem 8: Tariff vs Quota</summary>
+
+A country imports 1000 units of Good K at a world price of USD 50. The government wants to reduce imports
+to 600 units.
+
+(a) If a tariff is used, what is the minimum tariff per unit? What happens to government revenue? (b)
+If a quota of 600 units is used, who receives the quota rent? (c) Which policy is more efficient? Why?
+
+<details>
+<summary>Solution</summary>
+
+(a) The tariff must raise the domestic price enough to reduce imports from 1000 to 600. The exact tariff
+depends on the elasticities of demand and supply. Government collects tariff revenue on the 600 units
+imported.
+
+(b) Under a quota, the quota rent = `(domestic price with quota - world price) \times 600`. This rent
+may go to: foreign producers (if they hold the licences), domestic importers (if they hold the
+licences), or the government (if licences are auctioned).
+
+(c) A tariff is generally more efficient because: (1) it generates government revenue that can be used
+to reduce other distortionary taxes; (2) the quota rent may go to foreign producers, worsening the
+country's terms of trade; (3) tariffs allow the market to determine who imports, allocating import
+rights to the most efficient importers.
+
+</details>
+
+If you get this wrong, revise: [Trade Barriers](#trade-barriers)
 
 </details>

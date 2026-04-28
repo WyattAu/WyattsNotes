@@ -166,6 +166,27 @@ The opportunity cost is INCREASING:
 - 4th unit of X: 20 units of Y (70 to 50)
 - 5th unit of X: 50 units of Y (50 to 0)
 
+<details>
+<summary>Worked Example: PPC with Constant Opportunity Cost</summary>
+
+An economy can produce either 300 computers or 600 mobile phones, using all resources. Assume constant
+opportunity cost.
+
+The PPC is a straight line from (0, 600) to (300, 0).
+
+Opportunity cost of 1 computer = `600/300 = 2` mobile phones.
+Opportunity cost of 1 mobile phone = `300/600 = 0.5` computers.
+
+Equation: `M = 600 - 2C` (where M = mobile phones, C = computers).
+
+If the economy produces 100 computers: `M = 600 - 200 = 400` mobile phones. This point is on the PPC
+(resources fully employed).
+
+If the economy produces 100 computers and 300 mobile phones: this is **inside** the PPC (M = 400 is
+the maximum), indicating underutilisation of resources.
+
+</details>
+
 ---
 
 ## Economic Efficiency
@@ -946,3 +967,266 @@ loss of economic welfare.
 | Information asymmetry  | Regulation (labelling, licensing), consumer protection laws |
 | Monopoly power         | Antitrust laws, price regulation, breaking up monopolies    |
 | Inequality             | Progressive taxation, welfare programmes, minimum wage      |
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: Opportunity Cost Calculation</summary>
+
+A farmer has 10 hectares of land. She can grow rice (yielding 5 tonnes per hectare, selling at USD 400
+per tonne) or maize (yielding 8 tonnes per hectare, selling at USD 250 per tonne).
+
+(a) What is the opportunity cost of growing rice on 1 hectare? (b) Which crop should she specialise in?
+Explain.
+
+<details>
+<summary>Solution</summary>
+
+(a) Revenue from 1 hectare of rice = `5 \times 400 = USD 2,000`.
+Revenue from 1 hectare of maize = `8 \times 250 = USD 2,000`.
+Opportunity cost of growing rice = USD 2,000 (maize revenue forgone).
+
+(b) The opportunity costs are equal (both give USD 2,000 per hectare). She has **no comparative
+advantage** in either crop. Specialisation would not increase total revenue. She should split her land
+based on market conditions (prices, demand).
+
+</details>
+
+If you get this wrong, revise: [Choice and Opportunity Cost](#choice-and-opportunity-cost)
+
+</details>
+
+<details>
+<summary>Problem 2: PPC Analysis</summary>
+
+An economy can produce capital goods (K) and consumer goods (C). The following combinations are
+possible:
+
+| Combination | K    | C    |
+| ----------- | ---- | ---- |
+| A           | 0    | 500  |
+| B           | 100  | 480  |
+| C           | 200  | 440  |
+| D           | 300  | 370  |
+| E           | 400  | 250  |
+| F           | 500  | 0    |
+
+(a) Calculate the opportunity cost of each 100-unit increase in K. (b) Is the PPC concave or linear?
+Explain. (c) If the economy is at point D and a new technology doubles the productivity of the capital
+goods industry, what happens to the PPC?
+
+<details>
+<summary>Solution</summary>
+
+(a) A to B: 20 C. B to C: 40 C. C to D: 70 C. D to E: 120 C. E to F: 250 C.
+The opportunity cost is **increasing**.
+
+(b) The PPC is **concave** (bowed outward). The increasing opportunity cost confirms this. Resources are
+not equally efficient at producing both goods.
+
+(c) The maximum K doubles from 500 to 1000. The PPC pivots outward on the C axis (the C intercept stays
+at 500). The economy can now produce more K for any given level of C, or more of both goods. This
+represents economic growth driven by technological progress in the capital goods sector.
+
+</details>
+
+If you get this wrong, revise: [Production Possibility Curve (PPC)](#production-possibility-curve-ppc)
+
+</details>
+
+<details>
+<summary>Problem 3: Positive vs Normative Statements</summary>
+
+Classify each statement as positive or normative:
+
+(a) "Raising the minimum wage by 10% will reduce employment by 2%."
+(b) "The government should provide free university education for all citizens."
+(c) "Hong Kong's GDP grew by 3.2% last year."
+(d) "Income inequality in Hong Kong is too high and must be reduced."
+(e) "A depreciation of the HKD will increase the price of imports."
+(f) "The elderly should receive larger subsidies for healthcare."
+
+<details>
+<summary>Solution</summary>
+
+(a) **Positive** -- testable hypothesis about cause and effect.
+(b) **Normative** -- uses "should" and reflects a value judgement.
+(c) **Positive** -- factual statement verifiable with data.
+(d) **Normative** -- "too high" is a value judgement.
+(e) **Positive** -- testable prediction about the effect of a policy change.
+(f) **Normative** -- uses "should" and reflects a value judgement.
+
+</details>
+
+If you get this wrong, revise: [Positive vs Normative Economics](#positive-vs-normative-economics)
+
+</details>
+
+<details>
+<summary>Problem 4: Economic and Accounting Profit</summary>
+
+An engineer quits her job (salary: HKD 500,000/year) to start a software company. She invests HKD
+800,000 of her savings (which earned 4% interest per year). In her first year: revenue = HKD 1,200,000,
+explicit costs (office rent, software licences, salaries of hired staff) = HKD 700,000.
+
+(a) Calculate accounting profit. (b) Calculate economic profit. (c) Was starting the company a good
+decision?
+
+<details>
+<summary>Solution</summary>
+
+(a) Accounting profit = `1,200,000 - 700,000 = HKD 500,000`.
+
+(b) Implicit costs: foregone salary = 500,000; foregone interest = `800,000 \times 4\% = 32,000`.
+Total implicit costs = 532,000.
+
+Economic profit = `1,200,000 - 700,000 - 532,000 = -32,000`.
+
+(c) Economic profit is **negative** (-32,000). Despite a positive accounting profit of 500,000, she
+is worse off than her best alternative (keeping her job and savings). She should return to her job
+unless she expects economic profit to become positive in future years.
+
+</details>
+
+If you get this wrong, revise: [Economic vs Accounting Profit](#economic-vs-accounting-profit)
+
+</details>
+
+<details>
+<summary>Problem 5: Economic Systems Comparison</summary>
+
+For each of the following decisions, explain how it would be made in (i) a market economy, (ii) a command
+economy, and (iii) a mixed economy:
+
+(a) How many cars to produce (b) How to allocate healthcare resources (c) What wages to pay teachers
+
+<details>
+<summary>Solution</summary>
+
+(a) **Market:** Consumer demand determines output. Firms produce where MR = MC. **Command:** A central
+planning agency sets production targets based on government priorities. **Mixed:** Market determines
+most output, but government may regulate (emission standards, safety requirements) or tax (excise duty).
+
+(b) **Market:** Private hospitals provide healthcare based on ability to pay. **Command:** Government
+allocates all healthcare resources, determining who gets treatment. **Mixed:** Government provides
+basic healthcare (public hospitals), while private healthcare operates alongside for those willing to
+pay.
+
+(c) **Market:** Wages are determined by supply and demand for teachers' skills. **Command:** Government
+sets all wages according to a national pay scale. **Mixed:** Public school teachers' wages are set by
+the government (with some negotiation); private school wages are determined by the market.
+
+</details>
+
+If you get this wrong, revise: [Economic Systems](#economic-systems)
+
+</details>
+
+<details>
+<summary>Problem 6: Marginal Analysis</summary>
+
+A student is deciding how many hours to study for an exam. The table shows the marginal benefit (MB) and
+marginal cost (MC) of each additional hour:
+
+| Hour | MB (marks) | MC (marks) |
+| ---- | ---------- | ---------- |
+| 1    | 25         | 5          |
+| 2    | 20         | 8          |
+| 3    | 15         | 12         |
+| 4    | 10         | 17         |
+| 5    | 5          | 23         |
+
+(a) How many hours should the student study? (b) What is the total net benefit? (c) If the student
+studies 5 hours, what is the marginal net benefit of the 5th hour?
+
+<details>
+<summary>Solution</summary>
+
+(a) The student should study as long as MB \gt MC.
+
+Hour 1: MB=25 \gt MC=5 -- study.
+Hour 2: MB=20 \gt MC=8 -- study.
+Hour 3: MB=15 \gt MC=12 -- study.
+Hour 4: MB=10 \lt MC=17 -- do NOT study.
+
+Optimal hours = 3.
+
+(b) Total MB of 3 hours = `25 + 20 + 15 = 60`. Total MC of 3 hours = `5 + 8 + 12 = 25`.
+Net benefit = `60 - 25 = 35` marks.
+
+(c) The 5th hour: marginal net benefit = `MB - MC = 5 - 23 = -18` marks. The student loses 18
+marks worth of benefit from studying the 5th hour (diminishing returns make additional study
+counterproductive).
+
+</details>
+
+If you get this wrong, revise: [Marginal Analysis](#marginal-analysis)
+
+</details>
+
+<details>
+<summary>Problem 7: Free Goods vs Economic Goods</summary>
+
+For each of the following, state whether it is a free good or an economic good, and explain:
+
+(a) Sea water at a beach (b) Bottled water at a convenience store (c) Sunlight in a desert
+(d) Clean air in a polluted city (e) Downloading a free software programme
+
+<details>
+<summary>Solution</summary>
+
+(a) **Free good** (in most contexts) -- abundant, no price, zero opportunity cost. Note: in a desert,
+bottled seawater would be an economic good.
+
+(b) **Economic good** -- scarce (limited supply at the store), positive price, positive opportunity cost.
+
+(c) **Free good** -- abundant, no price. Even in a desert, sunlight is not scarce (though shade is).
+
+(d) **Economic good** -- clean air is scarce in a polluted city. People pay for air purifiers and
+filters. Positive opportunity cost.
+
+(e) **Free good** (for the downloader) -- no price, zero marginal cost of distribution. However, the
+software itself required resources to develop (the developer's time), so it is not a free good from
+society's perspective. This illustrates that whether something is "free" depends on the perspective.
+
+</details>
+
+If you get this wrong, revise: [Free Goods vs Economic Goods](#free-goods-vs-economic-goods)
+
+</details>
+
+<details>
+<summary>Problem 8: Division of Labour</summary>
+
+A furniture factory employs 20 workers. Before division of labour, each worker performs all stages of
+production and produces 2 chairs per day (total: 40 chairs). After division of labour, each worker
+specialises in one stage and output rises to 5 chairs per worker per day (total: 100 chairs).
+
+(a) Calculate the percentage increase in labour productivity. (b) What are three advantages of this
+division of labour for the factory owner? (c) What are two potential disadvantages for the workers?
+
+<details>
+<summary>Solution</summary>
+
+(a) Before: `40/20 = 2` chairs per worker. After: `100/20 = 5` chairs per worker.
+Productivity increase = `(5-2)/2 \times 100\% = 150\%`.
+
+(b) Advantages for the owner:
+- Higher total output (100 vs 40) at the same labour cost
+- Lower average cost per chair (same total wage / more chairs)
+- Faster production (workers become skilled at their specific task)
+- Easier to replace absent workers (simplified tasks)
+
+(c) Disadvantages for workers:
+- Monotony and boredom from repetitive tasks
+- Vulnerability to unemployment (easier to replace specialised workers)
+- Less job satisfaction and sense of accomplishment
+- If demand falls, highly specialised workers cannot easily switch jobs
+
+</details>
+
+If you get this wrong, revise: [Division of Labour](#division-of-labour)
+
+</details>

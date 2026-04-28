@@ -388,6 +388,67 @@ At the cathode: $\mathrm{Ag^+} + e^- \to \mathrm{Ag}$ (silver deposits on the ob
 
 ---
 
+## Additional Worked Examples
+
+### Worked Example: Oxidation Numbers in a Polyatomic Ion
+
+Determine the oxidation number of nitrogen in the ammonium ion, $\mathrm{NH_4^+}$.
+
+<details>
+<summary>Solution</summary>
+
+$$x + 4(+1) = +1$$
+
+$$x + 4 = +1$$
+
+$$x = -3$$
+
+The oxidation number of nitrogen in $\mathrm{NH_4^+}$ is $-3$.
+
+</details>
+
+### Worked Example: Cell Potential and Spontaneity
+
+A cell is constructed from a $\mathrm{Mg}^{2+}/\mathrm{Mg}$ half-cell ($E^\circ = -2.37 \mathrm{ V}$) and a $\mathrm{Fe}^{2+}/\mathrm{Fe}$ half-cell ($E^\circ = -0.44 \mathrm{ V}$). Calculate the cell potential, write the overall equation, and state whether the reaction is spontaneous.
+
+<details>
+<summary>Solution</summary>
+
+Iron has the more positive $E^\circ$, so it undergoes reduction (cathode).
+
+$$E^\circ_{\mathrm{cell}} = -0.44 - (-2.37) = 1.93 \mathrm{ V}$$
+
+Cathode (reduction): $\mathrm{Fe}^{2+} + 2e^- \to \mathrm{Fe}$
+
+Anode (oxidation): $\mathrm{Mg} \to \mathrm{Mg}^{2+} + 2e^-$
+
+Overall: $\mathrm{Mg} + \mathrm{Fe}^{2+} \to \mathrm{Mg}^{2+} + \mathrm{Fe}$
+
+Since $E^\circ_{\mathrm{cell}} = +1.93 \mathrm{ V} \gt 0$, the reaction is spontaneous.
+
+</details>
+
+### Worked Example: Electrolysis of Aqueous $\mathrm{CuSO_4}$ with Active Electrodes
+
+Predict the products when aqueous $\mathrm{CuSO_4}$ is electrolysed using **copper** electrodes (instead of inert electrodes).
+
+<details>
+<summary>Solution</summary>
+
+At the cathode: Copper is less reactive than hydrogen, so copper is deposited.
+
+$$\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$
+
+At the anode: Since the anode is made of copper (not inert), the copper anode itself dissolves rather than $\mathrm{SO_4^{2-}}$ or $\mathrm{OH^-}$ being discharged.
+
+$$\mathrm{Cu} \to \mathrm{Cu}^{2+} + 2e^-$$
+
+The concentration of $\mathrm{CuSO_4}$ remains constant because copper dissolves from the anode at the same rate it deposits at the cathode. This is the principle of **electrolytic refining** of copper.
+
+</details>
+
+---
+
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
@@ -446,5 +507,157 @@ Magnesium is more reactive than iron. When attached to the iron pipeline, magnes
 sacrificial anode. It undergoes oxidation preferentially ($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$),
 supplying electrons to the iron and preventing iron from losing electrons. As long as magnesium
 remains, the iron is protected from corrosion.
+
+</details>
+
+---
+
+## Problem Set
+
+**Problem 1:** Determine the oxidation number of sulfur in $\mathrm{H_2SO_4}$ and in $\mathrm{SO_3^{2-}}$.
+
+*If you get this wrong, revise: Oxidation Numbers*
+
+<details>
+<summary>Solution</summary>
+
+In $\mathrm{H_2SO_4}$: $2(+1) + x + 4(-2) = 0 \Rightarrow x = +6$
+
+In $\mathrm{SO_3^{2-}}$: $x + 3(-2) = -2 \Rightarrow x - 6 = -2 \Rightarrow x = +4$
+
+</details>
+
+**Problem 2:** In the reaction $\mathrm{Fe_2O_3} + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO_2}$, identify the species oxidised, reduced, the oxidising agent, and the reducing agent.
+
+*If you get this wrong, revise: Oxidising and Reducing Agents*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{C}$ in $\mathrm{CO}$: oxidation number $+2 \to +4$ in $\mathrm{CO_2}$ (oxidation). $\mathrm{CO}$ is the reducing agent.
+
+$\mathrm{Fe}$ in $\mathrm{Fe_2O_3}$: oxidation number $+3 \to 0$ in $\mathrm{Fe}$ (reduction). $\mathrm{Fe_2O_3}$ is the oxidising agent.
+
+</details>
+
+**Problem 3:** Balance the following redox equation in acidic solution:
+
+$$\mathrm{Cr_2O_7^{2-}} + \mathrm{I^-} \to \mathrm{Cr^{3+}} + \mathrm{I_2}$$
+
+*If you get this wrong, revise: Balancing Redox Equations*
+
+<details>
+<summary>Solution</summary>
+
+Reduction: $\mathrm{Cr_2O_7^{2-}} + 14\mathrm{H^+} + 6e^- \to 2\mathrm{Cr^{3+}} + 7\mathrm{H_2O}$
+
+Oxidation: $2\mathrm{I^-} \to \mathrm{I_2} + 2e^-$
+
+Multiply oxidation by 3: $6\mathrm{I^-} \to 3\mathrm{I_2} + 6e^-$
+
+Combine: $\mathrm{Cr_2O_7^{2-}} + 14\mathrm{H^+} + 6\mathrm{I^-} \to 2\mathrm{Cr^{3+}} + 7\mathrm{H_2O} + 3\mathrm{I_2}$
+
+</details>
+
+**Problem 4:** Predict the products of electrolysis of aqueous $\mathrm{CuSO_4}$ using inert (carbon) electrodes. Write half-equations.
+
+*If you get this wrong, revise: Electrolysis of Aqueous Solutions*
+
+<details>
+<summary>Solution</summary>
+
+Cathode: $\mathrm{Cu}$ is below $\mathrm{H}$ in the reactivity series, so copper is deposited.
+
+$$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$$
+
+Anode: $\mathrm{SO_4^{2-}}$ is not a halide, so oxygen is produced.
+
+$$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$
+
+</details>
+
+**Problem 5:** A current of $0.500 \mathrm{ A}$ is passed through molten $\mathrm{PbBr_2}$ for $965 \mathrm{ s}$. Calculate the mass of lead deposited.
+
+*If you get this wrong, revise: Quantitative Electrolysis*
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{Pb^{2+}} + 2e^- \to \mathrm{Pb} \quad (z = 2)$$
+
+$$Q = 0.500 \times 965 = 482.5 \mathrm{ C}$$
+
+$$n(\mathrm{Pb}) = \frac{Q}{zF} = \frac{482.5}{2 \times 96500} = 2.50 \times 10^{-3} \mathrm{ mol}$$
+
+$$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{ g}$$
+
+</details>
+
+**Problem 6:** A cell is made from $\mathrm{Zn}^{2+}/\mathrm{Zn}$ ($E^\circ = -0.76 \mathrm{ V}$) and $\mathrm{Ag^+}/\mathrm{Ag}$ ($E^\circ = +0.80 \mathrm{ V}$). Calculate the cell potential and write the overall equation.
+
+*If you get this wrong, revise: Cell Voltage*
+
+<details>
+<summary>Solution</summary>
+
+Silver has the more positive $E^\circ$ (cathode, reduction):
+
+$$E^\circ_{\mathrm{cell}} = 0.80 - (-0.76) = 1.56 \mathrm{ V}$$
+
+Cathode: $2\mathrm{Ag^+} + 2e^- \to 2\mathrm{Ag}$
+
+Anode: $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$
+
+Overall: $\mathrm{Zn} + 2\mathrm{Ag^+} \to \mathrm{Zn^{2+}} + 2\mathrm{Ag}$
+
+</details>
+
+**Problem 7:** Explain why aluminium is extracted by electrolysis rather than reduction with carbon.
+
+*If you get this wrong, revise: Extraction of Metals*
+
+<details>
+<summary>Solution</summary>
+
+Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce $\mathrm{Al_2O_3}$ because aluminium has a stronger affinity for oxygen than carbon. Electrolysis of molten $\mathrm{Al_2O_3}$ (dissolved in cryolite) is required to force the reduction.
+
+</details>
+
+**Problem 8:** Why does the mass of the anode decrease when copper is purified by electrolysis using copper electrodes and $\mathrm{CuSO_4}$ solution?
+
+*If you get this wrong, revise: Electrolysis of Aqueous Solutions and Electroplating*
+
+<details>
+<summary>Solution</summary>
+
+The impure copper anode dissolves: $\mathrm{Cu} \to \mathrm{Cu^{2+}} + 2e^-$. Copper ions go into solution, so the anode loses mass. At the cathode, pure copper deposits: $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$. Impurities fall to the bottom as "anode sludge." This is the principle of electrolytic refining.
+
+</details>
+
+**Problem 9:** Calculate the volume of hydrogen gas (at r.t.p.) produced when a current of $3.00 \mathrm{ A}$ is passed through dilute $\mathrm{H_2SO_4}$ for $10.0 \mathrm{ minutes}$.
+
+*If you get this wrong, revise: Quantitative Electrolysis*
+
+<details>
+<summary>Solution</summary>
+
+$$Q = 3.00 \times 10.0 \times 60 = 1800 \mathrm{ C}$$
+
+Cathode: $2\mathrm{H^+} + 2e^- \to \mathrm{H_2} \quad (z = 2)$
+
+$$n(\mathrm{H_2}) = \frac{Q}{zF} = \frac{1800}{2 \times 96500} = 9.33 \times 10^{-3} \mathrm{ mol}$$
+
+$$V = 9.33 \times 10^{-3} \times 24.0 = 0.224 \mathrm{ dm^3} = 224 \mathrm{ cm^3}$$
+
+</details>
+
+**Problem 10:** Explain why iron pipes corrode faster when connected to copper plumbing.
+
+*If you get this wrong, revise: Rusting and Corrosion Prevention*
+
+<details>
+<summary>Solution</summary>
+
+Iron is more reactive than copper. When in electrical contact in the presence of water and oxygen, iron acts as the anode and copper as the cathode. Electrons flow from iron to copper. At the anode: $\mathrm{Fe} \to \mathrm{Fe^{2+}} + 2e^-$ (iron corrodes faster). At the cathode: $\mathrm{O_2} + 2\mathrm{H_2O} + 4e^- \to 4\mathrm{OH^-}$. This sets up an electrochemical cell that accelerates corrosion of the iron.
 
 </details>

@@ -199,6 +199,23 @@ The total increase in deposits forms a geometric series:
 
 $$\Delta D = 1,000 + 900 + 810 + 729 + \ldots = 1,000 \times \frac{1}{1 - 0.9} = \frac{1,000}{0.1} = 10,000$$
 
+<details>
+<summary>Worked Example: Money Creation Step by Step</summary>
+
+Suppose the required reserve ratio is 20% (rrr = 0.2). A customer deposits HKD 5,000 into Bank A.
+
+**Round 1:** Bank A keeps 1000 (20%) and lends out 4000.
+**Round 2:** The 4000 is deposited into Bank B. Bank B keeps 800 and lends out 3200.
+**Round 3:** The 3200 is deposited into Bank C. Bank C keeps 640 and lends out 2560.
+
+Money multiplier = `1/0.2 = 5`.
+
+Maximum increase in deposits = `5000 \times 5 = 25,000`.
+
+Total new loans = `25,000 - 5,000 = 20,000`.
+
+</details>
+
 ### Factors Limiting Credit Creation
 
 The actual money created is usually less than the theoretical maximum because:
@@ -329,6 +346,23 @@ $$m_{\mathrm{old}} = \frac{1}{0.1} = 10$$
 $$m_{\mathrm{new}} = \frac{1}{0.2} = 5$$
 
 The money multiplier falls from 10 to 5, significantly reducing the potential for credit creation.
+
+<details>
+<summary>Worked Example: Reserve Ratio Change and Money Supply</summary>
+
+The central bank raises the reserve ratio from 10% to 25%. Total deposits in the banking system are
+HKD 500 billion, with banks holding exactly the required reserves.
+
+Old multiplier = `1/0.1 = 10`. New multiplier = `1/0.25 = 4`.
+
+Old required reserves = `500 \times 0.1 = 50` billion.
+New required reserves = `500 \times 0.25 = 125` billion.
+
+The banking system now has a reserve shortfall of `125 - 50 = 75` billion. Banks must reduce lending
+by `75 \times 4 = 300` billion (using the new multiplier). The money supply contracts by up to HKD
+300 billion.
+
+</details>
 
 #### 3. Open Market Operations (OMO)
 
@@ -923,5 +957,226 @@ above full employment with rising inflation.
 Since the economy was operating above full employment with rising inflation, this contractionary
 monetary policy is appropriate. It cools down an overheating economy and brings inflation under
 control.
+
+</details>
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: Money Multiplier with Cash Leakages</summary>
+
+The required reserve ratio is 8%. An initial deposit of HKD 20,000 is made. The public holds cash equal
+to 25% of deposits.
+
+(a) Calculate the effective money multiplier. (b) Calculate the maximum increase in the money supply.
+(c) Explain why this is less than the simple multiplier would suggest.
+
+<details>
+<summary>Solution</summary>
+
+(a) With cash leakages: `m = 1/(rrr + c) = 1/(0.08 + 0.25) = 1/0.33 = 3.03`.
+
+(b) Maximum increase = `20,000 \times 3.03 = 60,606`.
+
+(c) The simple multiplier (no leakages) = `1/0.08 = 12.5`, giving `250,000`. Cash leakages drain
+money from the banking system at each round, reducing the base for further lending.
+
+</details>
+
+If you get this wrong, revise: [The Money Multiplier](#the-money-multiplier)
+
+</details>
+
+<details>
+<summary>Problem 2: Open Market Operations Calculation</summary>
+
+The central bank buys HKD 300 million worth of government bonds from commercial banks. The required
+reserve ratio is 5%.
+
+(a) What happens to bank reserves? (b) Calculate the maximum change in the money supply. (c) Is this
+expansionary or contractionary?
+
+<details>
+<summary>Solution</summary>
+
+(a) Reserves increase by HKD 300 million (the central bank pays by crediting bank reserves).
+
+(b) Money multiplier = `1/0.05 = 20`. Maximum increase = `300 \times 20 = 6,000` million (HKD 6
+billion).
+
+(c) **Expansionary** -- buying bonds injects reserves, expanding the money supply and lowering interest
+rates.
+
+</details>
+
+If you get this wrong, revise: [Open Market Operations (OMO)](#open-market-operations-omo)
+
+</details>
+
+<details>
+<summary>Problem 3: Real vs Nominal Interest Rates</summary>
+
+A bank offers 4% nominal interest on 1-year deposits. Inflation turns out to be 6%.
+
+(a) Calculate the real interest rate (approximate and exact). (b) Who benefits from this situation --
+borrowers or savers? (c) If a borrower takes a 1-year loan at 4% nominal, what is the real cost of the
+loan?
+
+<details>
+<summary>Solution</summary>
+
+(a) Approximate: `r = 4\% - 6\% = -2\%`.
+
+Exact: `(1 + r) = 1.04/1.06 = 0.9811`, so `r = -1.89\%`.
+
+(b) **Borrowers benefit.** They repay loans in money that is worth less than when they borrowed. The
+real value of their debt falls.
+
+(c) The real cost of the loan is `-1.89\%`. The borrower effectively pays back less in real terms than
+they received. This is a transfer of purchasing power from savers to borrowers.
+
+</details>
+
+If you get this wrong, revise: [Interest Rates](#interest-rates)
+
+</details>
+
+<details>
+<summary>Problem 4: Bank Balance Sheet and Lending</summary>
+
+Bank X has the following (HKD millions): Reserves = 150, Loans = 600, Securities = 250. Deposits = 900.
+The required reserve ratio is 12%.
+
+(a) Does the bank have excess reserves? (b) What is the maximum new loan the bank can make? (c) If the
+bank makes this loan and it is deposited in Bank Y (which had no excess reserves), what is the maximum
+total increase in the money supply for the whole system?
+
+<details>
+<summary>Solution</summary>
+
+(a) Required reserves = `900 \times 0.12 = 108`. Actual reserves = 150. Excess reserves = `150 - 108 =
+42`.
+
+(b) Maximum new loan = 42 million.
+
+(c) The 42 million becomes a new deposit in Bank Y. Bank Y must keep `42 \times 0.12 = 5.04` and can
+lend `36.96`. This process continues with multiplier `1/0.12 = 8.33`.
+
+Maximum total increase = `42 \times 8.33 = 350` million.
+
+</details>
+
+If you get this wrong, revise: [Money Creation by Commercial Banks](#money-creation-by-commercial-banks)
+
+</details>
+
+<details>
+<summary>Problem 5: HKMA and the Linked Exchange Rate</summary>
+
+Explain what the HKMA would do if there is upward pressure on the HKD (the exchange rate moves towards
+7.75). Trace the mechanism step by step.
+
+<details>
+<summary>Solution</summary>
+
+At the strong-side convertibility undertaking (7.75):
+
+1. Licensed banks sell USD to the HKMA at 7.75 HKD/USD
+2. The HKMA sells USD and receives HKD from the banks
+3. This **increases** the HKD money supply (HKD flows into the banking system)
+4. Increased HKD liquidity pushes interbank rates (HIBOR) **down**
+5. Lower HKD rates reduce the attractiveness of HKD assets to foreign investors
+6. Capital outflows reduce demand for HKD, easing the upward pressure
+7. The exchange rate moves back towards 7.80
+
+</details>
+
+If you get this wrong, revise: [The Hong Kong Monetary Authority (HKMA)](#the-hong-kong-monetary-authority-hkma)
+
+</details>
+
+<details>
+<summary>Problem 6: Functions of Money — Bitcoin Evaluation</summary>
+
+Evaluate Bitcoin against each of the four functions of money. Is Bitcoin likely to replace
+conventional money in the foreseeable future?
+
+<details>
+<summary>Solution</summary>
+
+**Medium of exchange:** Poor. Not widely accepted by merchants. Transaction processing can be slow
+and expensive.
+
+**Unit of account:** Poor. Extreme price volatility makes it impossible to set reliable prices or
+maintain accounts in Bitcoin.
+
+**Store of value:** Poor. Price can halve or double within months. Not reliable for storing purchasing
+power.
+
+**Standard of deferred payment:** Poor. No lender or borrower would denominate long-term contracts in
+a currency whose value is so unpredictable.
+
+**Conclusion:** Bitcoin does not perform the functions of money well. It functions more as a speculative
+asset or store of value hedge than as money. It is unlikely to replace conventional money unless its
+volatility decreases dramatically and acceptance increases significantly.
+
+</details>
+
+If you get this wrong, revise: [Functions of Money](#functions-of-money)
+
+</details>
+
+<details>
+<summary>Problem 7: M1 vs M2</summary>
+
+An economy has the following (HKD billions): Currency in circulation = 400, Demand deposits = 800,
+Savings deposits = 1200, Time deposits = 600.
+
+(a) Calculate M1. (b) Calculate M2. (c) If people move HKD 200 billion from savings deposits to demand
+deposits, what happens to M1 and M2?
+
+<details>
+<summary>Solution</summary>
+
+(a) M1 = Currency + Demand deposits = `400 + 800 = 1,200` billion.
+
+(b) M2 = M1 + Savings deposits + Time deposits = `1,200 + 1,200 + 600 = 3,000` billion.
+
+(c) Moving 200 from savings to demand deposits: M1 increases by 200 (to 1,400). M2 is unchanged
+(still 3,000) because both savings and demand deposits are components of M2.
+
+</details>
+
+If you get this wrong, revise: [Measures of Money Supply](#measures-of-money-supply)
+
+</details>
+
+<details>
+<summary>Problem 8: Transmission Mechanism</summary>
+
+The central bank raises the base rate by 0.75 percentage points. The economy is experiencing rising
+inflation. Explain the expected effects on consumption, investment, net exports, and inflation.
+
+<details>
+<summary>Solution</summary>
+
+**Consumption:** Higher lending rates make mortgages, car loans, and credit card borrowing more
+expensive. Disposable income falls for variable-rate borrowers. Consumption decreases, especially for
+big-ticket durables.
+
+**Investment:** Higher borrowing costs reduce the expected return on investment projects. Some marginal
+projects become unprofitable and are cancelled. Business investment decreases.
+
+**Net exports:** Higher rates attract foreign capital, appreciating the currency. Exports become more
+expensive for foreign buyers; imports become cheaper. Net exports decrease.
+
+**Inflation:** Reduced consumption, investment, and net exports all decrease aggregate demand. With
+less demand-pull pressure, inflation gradually falls toward the target.
+
+</details>
+
+If you get this wrong, revise: [Transmission Mechanism of Monetary Policy](#transmission-mechanism-of-monetary-policy)
 
 </details>

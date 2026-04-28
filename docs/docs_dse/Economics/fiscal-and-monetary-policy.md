@@ -145,6 +145,23 @@ $$\Delta Y = 2.5 \times 100 = 250$$
 National income increases by USD 250 billion. The initial USD 100 billion injection generates an
 additional USD 150 billion through the multiplier process.
 
+<details>
+<summary>Worked Example: Comparing Spending Multiplier and Tax Multiplier</summary>
+
+MPC = 0.6, MPT = 0.2, MPM = 0.1.
+
+Complex multiplier = `1/(0.4 + 0.2 + 0.1) = 1/0.7 = 1.43`.
+
+If government increases spending by USD 80 billion: `Delta Y = 1.43 \times 80 = 114.4` billion.
+
+If government cuts taxes by USD 80 billion: Tax multiplier = `-0.6 \times 1.43 = -0.86`.
+`Delta Y = -0.86 \times (-80) = 68.6` billion.
+
+The spending increase (114.4) is 67% more effective than the tax cut (68.6) because the full
+spending is injected, while only 60% of the tax cut is spent (the rest is saved).
+
+</details>
+
 If instead the government cut taxes by USD 100 billion:
 
 $$\Delta Y = -0.8 \times 2.5 \times (-100) = 200$$
@@ -802,3 +819,236 @@ during the 2008-09 Global Financial Crisis (economic stimulus packages), the 202
 (consumption vouchers, wage subsidies under the Anti-epidemic Fund), and the 2019 social unrest. The
 Consumption Voucher Scheme distributed HKD 10,000 to each permanent resident to stimulate domestic
 consumption during the pandemic-induced recession.
+
+---
+
+## Problem Set
+
+<details>
+<summary>Problem 1: Multiplier with Leakages</summary>
+
+An economy has MPC = 0.7, MPT = 0.15, MPM = 0.15.
+
+(a) Calculate the complex multiplier. (b) If the government increases spending by USD 40 billion, what
+is the total change in national income? (c) If the government cuts taxes by USD 40 billion, what is the
+total change? (d) Why is the spending increase more effective?
+
+<details>
+<summary>Solution</summary>
+
+(a) Multiplier = `1/(MPS + MPT + MPM) = 1/(0.3 + 0.15 + 0.15) = 1/0.6 = 1.67`.
+
+(b) `Delta Y = 1.67 \times 40 = 66.7` billion.
+
+(c) Tax multiplier = `-MPC \times k = -0.7 \times 1.67 = -1.17`.
+`Delta Y = -1.17 \times (-40) = 46.7` billion.
+
+(d) The full USD 40 billion is injected directly. With a tax cut, only `0.7 \times 40 = 28` billion is
+spent initially (the rest is saved).
+
+</details>
+
+If you get this wrong, revise: [The Multiplier Effect](#the-multiplier-effect)
+
+</details>
+
+<details>
+<summary>Problem 2: Balanced Budget Multiplier</summary>
+
+The government increases both spending and taxes by USD 100 billion. MPC = 0.75, MPT = 0.05, MPM = 0.1.
+
+(a) Calculate the spending multiplier and tax multiplier. (b) What is the net change in national
+income? (c) What is the balanced budget multiplier?
+
+<details>
+<summary>Solution</summary>
+
+(a) Multiplier = `1/(0.25 + 0.05 + 0.1) = 1/0.4 = 2.5`.
+Tax multiplier = `-0.75 \times 2.5 = -1.875`.
+
+(b) From spending: `2.5 \times 100 = 250`. From taxes: `-1.875 \times 100 = -187.5`.
+Net change = `250 - 187.5 = 62.5` billion.
+
+(c) Balanced budget multiplier = `62.5 / 100 = 0.625`. (Note: the balanced budget multiplier equals 1
+only in the simple model with no taxes or imports. With leakages, it is less than 1.)
+
+</details>
+
+If you get this wrong, revise: [Balanced Budget Multiplier](#common-pitfalls)
+
+</details>
+
+<details>
+<summary>Problem 3: Crowding Out</summary>
+
+The government runs a deficit of USD 60 billion in a small open economy. The MPC is 0.8.
+
+(a) Calculate the simple multiplier and the potential increase in GDP without crowding out. (b) If
+crowding out reduces private investment by USD 30 billion, what is the actual increase in GDP? (c) Why
+might crowding out be less severe in a small open economy?
+
+<details>
+<summary>Solution</summary>
+
+(a) Simple multiplier = `1/(1-0.8) = 5`. Potential GDP increase = `5 \times 60 = 300` billion.
+
+(b) The crowding out of USD 30 billion in investment has a multiplier effect: `5 \times 30 = 150`
+billion reduction. Actual GDP increase = `300 - 150 = 150` billion. (This is partial crowding out.)
+
+(c) In a small open economy with mobile capital (like Hong Kong), higher interest rates attract foreign
+capital inflows, which moderate the rise in domestic interest rates and reduce crowding out.
+
+</details>
+
+If you get this wrong, revise: [Government Debt and the Crowding-Out Effect](#government-debt-and-the-crowding-out-effect)
+
+</details>
+
+<details>
+<summary>Problem 4: Stagflation Policy Response</summary>
+
+An economy faces 10% inflation and 8% unemployment (NRU = 5%).
+
+(a) What type of macroeconomic problem is this? (b) Can demand-side policy solve it alone? (c) What
+policy mix would you recommend?
+
+<details>
+<summary>Solution</summary>
+
+(a) **Stagflation** -- simultaneous high inflation and high unemployment. This is caused by a leftward
+shift of SRAS (cost-push shock), not excess demand.
+
+(b) No. Expansionary policy would reduce unemployment but worsen inflation. Contractionary policy would
+reduce inflation but worsen unemployment. Demand-side tools cannot solve both simultaneously.
+
+(c) **Contractionary demand-side policy** (to reduce inflation) combined with **expansionary supply-side
+policy** (education, retraining, deregulation, infrastructure, R&D) to increase productive capacity and
+reduce structural unemployment. Supply-side policies shift LRAS right, reducing both inflation and
+unemployment.
+
+</details>
+
+If you get this wrong, revise: [Policy Conflicts and Trade-Offs](#policy-conflicts-and-trade-offs)
+
+</details>
+
+<details>
+<summary>Problem 5: Automatic Stabilisers</summary>
+
+During a recession, GDP falls by USD 200 billion. The economy has a progressive tax system with an
+average tax rate of 20% and unemployment benefits that automatically increase by USD 0.30 for every
+USD 1 of GDP lost.
+
+(a) By how much do tax revenues automatically fall? (b) By how much do unemployment benefits
+automatically increase? (c) What is the total automatic stabilisation effect?
+
+<details>
+<summary>Solution</summary>
+
+(a) Tax revenue fall = `0.20 \times 200 = 40` billion. This leaves more disposable income in the
+economy than would occur under a lump-sum tax.
+
+(b) Benefit increase = `0.30 \times 200 = 60` billion. This supports household incomes during the
+downturn.
+
+(c) Total automatic stabilisation = `40 + 60 = 100` billion. This is equivalent to an automatic
+fiscal stimulus of USD 100 billion, dampening the recession without any legislative action.
+
+</details>
+
+If you get this wrong, revise: [Automatic Stabilisers](#automatic-stabilisers)
+
+</details>
+
+<details>
+<summary>Problem 6: Supply-Side Policy Evaluation</summary>
+
+Evaluate the likely effectiveness of the following supply-side policies for reducing unemployment:
+
+(a) Reducing the minimum wage (b) Increasing government spending on retraining programmes (c) Reducing
+corporate tax rates (d) Signing free trade agreements
+
+<details>
+<summary>Solution</summary>
+
+(a) May reduce unemployment by making low-skilled labour cheaper for employers. However, it reduces
+workers' income and may increase poverty. Effective for reducing unemployment but at a welfare cost.
+
+(b) Addresses structural unemployment directly by improving workers' skills to match available jobs.
+Slow to take effect (training takes months to years) but addresses the root cause. High effectiveness
+for structural unemployment.
+
+(c) Increases after-tax returns on investment, encouraging firms to expand and hire more workers. May
+take time to translate into jobs. Effectiveness depends on whether firms invest domestically. Good for
+both structural and cyclical unemployment in the medium term.
+
+(d) Increases competitive pressure on domestic firms, forcing them to become more efficient. May create
+jobs in export sectors but destroy jobs in import-competing sectors. Net effect on employment depends
+on the elasticity of demand for exports and imports.
+
+</details>
+
+If you get this wrong, revise: [Supply-Side Policies](#supply-side-policies)
+
+</details>
+
+<details>
+<summary>Problem 7: Monetary Policy in Hong Kong</summary>
+
+The US Federal Reserve raises interest rates by 1 percentage point. Hong Kong is experiencing slow
+economic growth (1% real GDP growth).
+
+(a) What must the HKMA do? (b) What are the effects on Hong Kong's economy? (c) Can the Hong Kong
+government use fiscal policy to offset the contractionary monetary effect?
+
+<details>
+<summary>Solution</summary>
+
+(a) The HKMA must raise Hong Kong interest rates to maintain the linked exchange rate. Otherwise, capital
+would flow from HKD to USD assets, putting downward pressure on the HKD.
+
+(b) Higher interest rates reduce borrowing and spending, further slowing an already weak economy. Property
+prices face downward pressure. Exports become more expensive. The economy may enter a recession.
+
+(c) Yes. Since Hong Kong lacks independent monetary policy, fiscal policy becomes the primary
+stabilisation tool. The government could increase spending (infrastructure, consumption vouchers) or
+cut taxes to stimulate aggregate demand. Fiscal reserves provide the capacity for expansionary fiscal
+policy.
+
+</details>
+
+If you get this wrong, revise: [Hong Kong's Policy Constraints](#hong-kongs-policy-constraints)
+
+</details>
+
+<details>
+<summary>Problem 8: Policy Coordination</summary>
+
+Country Z's central bank is raising interest rates to combat inflation. At the same time, the
+government is increasing spending to reduce unemployment.
+
+(a) Describe the conflict between these two policies. (b) What are the likely effects on interest
+rates, investment, and inflation? (c) What would you advise?
+
+<details>
+<summary>Solution</summary>
+
+(a) The central bank's contractionary policy raises interest rates to reduce AD and inflation. The
+government's expansionary fiscal policy increases AD, raising output and inflation. These work at
+cross-purposes. The government's borrowing also pushes interest rates higher, amplifying the central
+bank's tightening.
+
+(b) Interest rates rise more than the central bank intended (due to both central bank action and
+government borrowing). Investment is squeezed from both sides (higher rates from monetary policy and
+crowding out from fiscal policy). The net effect on inflation is ambiguous -- it depends on which
+policy is stronger.
+
+(c) The policies should be coordinated. If inflation is the primary concern, fiscal policy should also
+be contractionary (reduce spending, raise taxes). If reducing unemployment is the priority, monetary
+policy should be expansionary. Mixed signals create uncertainty and undermine both policies.
+
+</details>
+
+If you get this wrong, revise: [Fiscal Policy vs Monetary Policy](#fiscal-policy-vs-monetary-policy)
+
+</details>

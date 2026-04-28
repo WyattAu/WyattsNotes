@@ -39,6 +39,27 @@ Average daily energy requirements:
 | Active adult female | 10000 - 12000   |
 | Growing teenager    | 10000 - 13000   |
 
+### Worked Example: Energy Requirements
+
+A 65 kg male office worker has a BMR of approximately 7000 kJ/day. His physical activity accounts for 3000 kJ/day and SDA accounts for 1000 kJ/day.
+
+(a) Calculate his total daily energy requirement.
+
+(b) If he starts marathon training and his physical activity doubles, what is his new total energy requirement?
+
+(c) Explain why athletes often consume high-carbohydrate diets before competition.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\mathrm{Total Energy} = \mathrm{BMR} + \mathrm{Physical Activity} + \mathrm{SDA} = 7000 + 3000 + 1000 = 11{,}000 \mathrm{ kJ/day}$
+
+(b) If physical activity doubles to 6000 kJ/day: $\mathrm{Total Energy} = 7000 + 6000 + 1000 = 14{,}000 \mathrm{ kJ/day}$. This is a 27% increase, demonstrating that physical activity is a major component for active individuals.
+
+(c) Carbohydrates are the primary energy source for exercise. A high-carbohydrate diet maximises glycogen stores in muscles and the liver, providing readily available energy during prolonged exercise. This spares protein from being broken down for energy, preserving muscle mass. Carbohydrates also yield more energy per unit of oxygen consumed than fats, making them more efficient during intense exercise.
+
+</details>
+
 ### Malnutrition
 
 **Undernutrition:** Insufficient intake of calories or specific nutrients.
@@ -149,6 +170,35 @@ The small intestine is the primary site of both digestion and absorption. It is 
 | Maltase            | Small intestine | Maltose   | Glucose                | ~7-8       |
 | Sucrase            | Small intestine | Sucrose   | Glucose + Fructose     | ~7-8       |
 | Lactase            | Small intestine | Lactose   | Glucose + Galactose    | ~7-8       |
+
+### Worked Example: Enzyme Digestion Pathway
+
+A student eats a meal containing starch, protein, and fat. Trace the complete digestion of each nutrient from the mouth to the small intestine, naming the enzyme(s), substrate(s), and product(s) at each stage.
+
+<details>
+<summary>Solution</summary>
+
+**Starch digestion:**
+
+1. Mouth: Salivary amylase breaks down starch into maltose (pH ~6.8)
+2. Stomach: No further starch digestion (acidic pH denatures salivary amylase)
+3. Small intestine (duodenum): Pancreatic amylase breaks down remaining starch into maltose (pH ~7-8)
+4. Small intestine (ileum): Maltase breaks down maltose into glucose
+
+**Protein digestion:**
+
+1. Mouth: No protein digestion
+2. Stomach: Pepsin breaks down proteins into polypeptides (pH ~2; pepsinogen activated by HCl)
+3. Small intestine (duodenum): Trypsin breaks down polypeptides into smaller peptides (pH ~8)
+4. Small intestine (ileum): Peptidases break down peptides into amino acids
+
+**Fat digestion:**
+
+1. Mouth and stomach: No significant fat digestion
+2. Small intestine (duodenum): Bile emulsifies fats into smaller droplets (physical, not enzymatic)
+3. Small intestine (duodenum): Pancreatic lipase breaks down fats into fatty acids and glycerol
+
+</details>
 
 ### Absorption
 
@@ -415,6 +465,31 @@ the plasma.
 Rh- mother carrying an Rh+ foetus may produce anti-D antibodies during a second pregnancy
 (haemolytic disease of the newborn).
 
+### Worked Example: Blood Transfusion Compatibility
+
+A hospital has the following blood supplies: 5 units of type A, 3 units of type B, 2 units of type AB, and 8 units of type O. Three patients arrive simultaneously:
+
+- Patient 1: Blood group A, needs 2 units
+- Patient 2: Blood group B, needs 1 unit
+- Patient 3: Blood group AB, needs 2 units
+
+(a) Which blood types can each patient safely receive?
+
+(b) Can all three patients be treated with the available supply? Justify your answer.
+
+<details>
+<summary>Solution</summary>
+
+(a) Using the blood group compatibility rules:
+
+- Patient 1 (blood group A, has anti-B antibodies): Can receive A or O (no foreign antigens to trigger anti-B)
+- Patient 2 (blood group B, has anti-A antibodies): Can receive B or O (no foreign antigens to trigger anti-A)
+- Patient 3 (blood group AB, has no antibodies): Can receive A, B, AB, or O (universal recipient)
+
+(b) Patient 1 needs 2 units: use 2 units of type A (3 remaining). Patient 2 needs 1 unit: use 1 unit of type B (2 remaining). Patient 3 needs 2 units: use 2 units of type AB (0 remaining). All patients can be treated. Remaining supply: 3 units A, 2 units B, 0 units AB, 8 units O. Alternatively, Patient 3 could receive O blood to conserve the limited AB supply.
+
+</details>
+
 ### Haemoglobin and Oxygen Transport
 
 Each haemoglobin molecule can carry up to 4 oxygen molecules:
@@ -561,6 +636,27 @@ Osmoregulation is the control of water balance in the body.
 | Dehydrated         | Low                   | High      | Low          | High                |
 | Well hydrated      | Normal                | Normal    | Normal       | Normal              |
 | Drunk excess water | High                  | Low       | High         | Low                 |
+
+### Worked Example: Osmoregulation and ADH
+
+A person drinks 2 litres of water within 30 minutes on a hot day after exercising. Describe the sequence of physiological events that restores their blood water potential to normal.
+
+<details>
+<summary>Solution</summary>
+
+1. Drinking 2 litres of water increases blood water potential (blood becomes more dilute)
+2. Osmoreceptors in the hypothalamus detect the increase in blood water potential
+3. The hypothalamus reduces its stimulation of the posterior pituitary gland
+4. Less ADH is released into the blood; ADH level decreases
+5. The collecting duct walls become less permeable to water (fewer aquaporin channels)
+6. Less water is reabsorbed from the collecting duct into the blood
+7. A large volume of dilute urine is produced (high volume, low concentration)
+8. Excess water is excreted, and blood water potential gradually returns to normal
+9. Once normal, osmoreceptors detect the restored water potential and ADH secretion returns to baseline
+
+Note: On a hot day after exercise, the person would also have lost water through sweating. This means the initial blood water potential may not have been as high as expected, and the osmoregulatory response would be moderated. The kidneys cannot excrete water faster than approximately 1 litre per hour, so drinking 2 litres in 30 minutes exceeds the maximum excretion rate.
+
+</details>
 
 ---
 
@@ -828,6 +924,37 @@ Blood glucose concentration is normally maintained at approximately **90 mg/100 
 
 This is an example of **negative feedback**.
 
+### Worked Example: Blood Glucose Regulation
+
+After a 12-hour fast, a student's blood glucose concentration is 85 mg/100 cm$^3$. They then drink a solution containing 50 g of glucose. Describe the hormonal response over the next 3 hours.
+
+<details>
+<summary>Solution</summary>
+
+**Immediately after drinking (0-30 minutes):**
+
+- Glucose is absorbed from the small intestine into the blood
+- Blood glucose concentration rises rapidly, exceeding the normal range of ~90 mg/100 cm$^3$
+- Beta cells in the islets of Langerhans detect the elevated blood glucose
+- Beta cells secrete more insulin; alpha cells secrete less glucagon
+
+**30 minutes to 2 hours:**
+
+- Insulin stimulates liver cells to take up glucose and convert it to glycogen (glycogenesis)
+- Insulin stimulates muscle cells to take up glucose and convert it to glycogen
+- Insulin increases the rate of glucose respiration in cells
+- Blood glucose concentration decreases back towards normal
+- As blood glucose falls, insulin secretion decreases (negative feedback)
+
+**2-3 hours:**
+
+- Blood glucose returns to approximately 90 mg/100 cm$^3$
+- If it drops below normal, alpha cells detect this and secrete glucagon
+- Glucagon stimulates the liver to convert glycogen back to glucose (glycogenolysis)
+- Blood glucose is maintained within the normal range by this negative feedback mechanism
+
+</details>
+
 ### Diabetes
 
 **Type 1 Diabetes (insulin-dependent):**
@@ -986,16 +1113,9 @@ The menstrual cycle is approximately 28 days and is controlled by four hormones:
 
 ---
 
-## Practice Problems
+## Problem Set
 
-<details>
-<summary>Question 1: Digestive Enzymes</summary>
-
-A student sets up an experiment to investigate the effect of pH on the activity of salivary amylase.
-Test tubes containing starch solution and amylase are incubated at different pH values. After 10
-minutes, the presence of starch is tested with iodine solution.
-
-The results are:
+**Problem 1:** A student sets up an experiment to investigate the effect of pH on the activity of salivary amylase. Test tubes containing starch solution and amylase are incubated at different pH values. After 10 minutes, the presence of starch is tested with iodine solution.
 
 | pH  | Starch remaining after 10 min |
 | --- | ----------------------------- |
@@ -1011,181 +1131,112 @@ The results are:
 
 (c) If the temperature were raised to 80 degrees C at pH 7, what would happen to the results? Why?
 
-(a) pH 7, because no starch remains after 10 minutes, indicating that amylase has completely broken
-down the starch into maltose. This is close to the optimum pH of salivary amylase (~6.8).
+If you get this wrong, revise: Digestive System -- The Mouth; Enzymes
 
-(b) At pH 3, the enzyme is in a highly acidic environment far from its optimum pH. The extreme pH
-alters the tertiary structure of the enzyme, changing the shape of the active site. The substrate
-can no longer bind to the active site, so the enzyme is denatured and cannot catalyse the reaction.
+<details>
+<summary>Solution</summary>
 
-(c) At 80 degrees C, the enzyme would be denatured by the high temperature. The increased kinetic
-energy would break the bonds maintaining the tertiary structure of the protein, permanently altering
-the active site shape. Starch would remain in all tubes because the enzyme can no longer function.
+(a) pH 7, because no starch remains after 10 minutes, indicating that amylase has completely broken down the starch into maltose. This is close to the optimum pH of salivary amylase (~6.8).
+
+(b) At pH 3, the enzyme is in a highly acidic environment far from its optimum pH. The extreme pH alters the tertiary structure of the enzyme, changing the shape of the active site. The substrate can no longer bind to the active site, so the enzyme is denatured and cannot catalyse the reaction.
+
+(c) At 80 degrees C, the enzyme would be denatured by the high temperature. The increased kinetic energy would break the bonds maintaining the tertiary structure of the protein, permanently altering the active site shape. Starch would remain in all tubes because the enzyme can no longer function.
 
 </details>
 
+**Problem 2:** Explain how the structure of an alveolus is adapted for efficient gas exchange. Refer to at least three structural features in your answer.
+
+If you get this wrong, revise: Gas Exchange -- Gas Exchange in the Alveoli
+
 <details>
-<summary>Question 2: Gas Exchange</summary>
+<summary>Solution</summary>
 
-Explain how the structure of an alveolus is adapted for efficient gas exchange. Refer to at least
-three structural features in your answer.
+1. **Large surface area:** Millions of alveoli in each lung provide a total surface area of approximately 70 m$^2$, maximising the area available for diffusion of O$_2$ and CO$_2$.
 
-1. **Large surface area:** Millions of alveoli in each lung provide a total surface area of
-   approximately 70 m$^2$, maximising the area available for diffusion of O$_2$ and CO$_2$.
+2. **Thin walls:** The alveolar epithelium is only one cell thick, and each alveolus is surrounded by a capillary wall that is also one cell thick. The total diffusion distance is approximately 1 micrometre, minimising the distance gases must travel.
 
-2. **Thin walls:** The alveolar epithelium is only one cell thick, and each alveolus is surrounded
-   by a capillary wall that is also one cell thick. The total diffusion distance is approximately 1
-   micrometre, minimising the distance gases must travel.
+3. **Dense capillary network:** Each alveolus is surrounded by many capillaries. Continuous blood flow maintains a steep concentration gradient by removing oxygenated blood and bringing deoxygenated blood to the alveoli.
 
-3. **Dense capillary network:** Each alveolus is surrounded by many capillaries. Continuous blood
-   flow maintains a steep concentration gradient by removing oxygenated blood and bringing
-   deoxygenated blood to the alveoli.
-
-4. **Moist inner surface:** The lining of the alveoli is moist, allowing gases to dissolve before
-   diffusing across the membrane.
+4. **Moist inner surface:** The lining of the alveoli is moist, allowing gases to dissolve before diffusing across the membrane.
 
 </details>
 
+**Problem 3:** A person produces 180 dm$^3$ of glomerular filtrate per day but only excretes 1.5 dm$^3$ of urine per day.
+
+(a) Calculate the percentage of filtrate that is reabsorbed.
+
+(b) Which part of the nephron is primarily responsible for this reabsorption? Explain the mechanism.
+
+If you get this wrong, revise: Excretion -- Ultrafiltration; Selective Reabsorption
+
 <details>
-<summary>Question 3: Nephron Function</summary>
+<summary>Solution</summary>
 
-A person produces 1800 cm$^3$ of glomerular filtrate per day but only excretes 1500 cm$^3$ of urine
-per day. State and explain which part of the nephron is primarily responsible for reabsorbing the
-difference.
+(a) Percentage reabsorbed = $\frac{180 - 1.5}{180} \times 100 = \frac{178.5}{180} \times 100 = 99.2\%$
 
-Volume reabsorbed = 1800 - 1500 = 300 cm$^3$/day.
-
-Wait -- let me reconsider. Normally, the kidneys produce about 180 dm$^3$ (180,000 cm$^3$) of
-filtrate per day but only about 1.5 dm$^3$ (1500 cm$^3$) of urine. Let me re-examine.
-
-The question states 1800 cm$^3$ of filtrate and 1500 cm$^3$ of urine. The volume reabsorbed is only
-300 cm$^3$, which is atypically low. In normal physiology, approximately 99% of filtrate is
-reabsorbed.
-
-The **proximal convoluted tubule (PCT)** is the primary site of reabsorption. It reabsorbs
-approximately 85% of the glomerular filtrate, including all glucose, all amino acids, most water,
-and most mineral ions. Water reabsorption in the PCT occurs by osmosis, following the active
-reabsorption of glucose, amino acids, and Na$^+$ ions.
-
-The loop of Henle, distal convoluted tubule, and collecting duct provide further fine-tuning of
-water and ion reabsorption, with the collecting duct being regulated by ADH for osmoregulation.
+(b) The **proximal convoluted tubule (PCT)** is the primary site of reabsorption. It reabsorbs approximately 85% of the glomerular filtrate, including all glucose (by active transport and co-transport), all amino acids (by active transport), most water (by osmosis following solute reabsorption), and most mineral ions (Na$^+$, K$^+$, Cl$^-$ by active transport). The loop of Henle, DCT, and collecting duct provide further fine-tuning, with the collecting duct regulated by ADH.
 
 </details>
 
+**Problem 4:** A patient with blood group B requires a blood transfusion. Explain why blood group O can be used but blood group A cannot.
+
+If you get this wrong, revise: Transport in Humans -- Blood Groups
+
 <details>
-<summary>Question 4: Blood Groups and Transfusion</summary>
+<summary>Solution</summary>
 
-A patient with blood group B requires a blood transfusion. Explain why blood group O can be used but
-blood group A cannot.
+Blood group O red blood cells have no antigens (A or B) on their surface. When transfused into a blood group B recipient, there are no foreign antigens for the recipient's anti-A antibodies to attack. Therefore, the donor red blood cells will not be destroyed.
 
-Blood group O red blood cells have no antigens (A or B) on their surface. When transfused into a
-blood group B recipient, there are no foreign antigens for the recipient's anti-A antibodies to
-attack. Therefore, the donor red blood cells will not be destroyed.
-
-Blood group A red blood cells carry A antigens on their surface. The blood group B recipient has
-anti-A antibodies in their plasma. When blood group A blood is transfused, the anti-A antibodies
-will bind to the A antigens on the donor red blood cells, causing **agglutination** (clumping) of
-the red blood cells. This blocks blood vessels and can be fatal. Therefore, blood group A cannot be
-safely transfused into a blood group B patient.
+Blood group A red blood cells carry A antigens on their surface. The blood group B recipient has anti-A antibodies in their plasma. When blood group A blood is transfused, the anti-A antibodies will bind to the A antigens on the donor red blood cells, causing **agglutination** (clumping) of the red blood cells. This blocks blood vessels and can be fatal.
 
 </details>
 
+**Problem 5:** Describe the roles of FSH, oestrogen, LH, and progesterone in the menstrual cycle.
+
+If you get this wrong, revise: Human Reproduction -- The Menstrual Cycle
+
 <details>
-<summary>Question 5: Menstrual Cycle Hormones</summary>
+<summary>Solution</summary>
 
-Describe the roles of FSH, oestrogen, LH, and progesterone in the menstrual cycle.
+**FSH** (Follicle-Stimulating Hormone): Produced by the anterior pituitary gland; stimulates the development of a follicle in the ovary; stimulates the follicle to produce oestrogen.
 
-**FSH (Follicle-Stimulating Hormone):**
+**Oestrogen:** Produced by the developing follicle; causes the endometrium to thicken; inhibits FSH production (negative feedback) at low levels; at high levels around day 12-13, stimulates LH release (positive feedback), triggering the LH surge.
 
-- Produced by the anterior pituitary gland
-- Stimulates the development of a Graafian follicle in the ovary
-- Stimulates the follicle to produce oestrogen
-- Secreted from days 1-14; peaks around day 5-6
+**LH** (Luteinising Hormone): Produced by the anterior pituitary gland; surges around day 14 due to positive feedback from high oestrogen; triggers ovulation (follicle ruptures, releasing the ovum); stimulates the follicle remnant to develop into the corpus luteum.
 
-**Oestrogen:**
-
-- Produced by the developing follicle in the ovary
-- Causes the endometrium to thicken and become more vascularised
-- Inhibits FSH production (negative feedback) at low levels, preventing multiple follicles from
-  developing
-- At high levels (around day 12-13), stimulates LH production (positive feedback), triggering the LH
-  surge
-
-**LH (Luteinising Hormone):**
-
-- Produced by the anterior pituitary gland
-- Surges around day 14 due to positive feedback from high oestrogen
-- Triggers ovulation: the follicle ruptures and releases the ovum
-- Stimulates the remnants of the follicle to develop into the corpus luteum
-
-**Progesterone:**
-
-- Produced by the corpus luteum (from day 15 onwards)
-- Maintains the thickened endometrium (keeps it ready for implantation)
-- Inhibits both FSH and LH production (negative feedback), preventing a new follicle from developing
-  and preventing further ovulation
-- If no implantation occurs, the corpus luteum degenerates around day 25-28, progesterone levels
-  drop, and the endometrium is shed (menstruation)
+**Progesterone:** Produced by the corpus luteum from day 15 onwards; maintains the thickened endometrium; inhibits both FSH and LH production (negative feedback); if no implantation occurs, the corpus luteum degenerates around day 25-28, progesterone drops, and menstruation begins.
 
 </details>
 
+**Problem 6:** A myelinated neuron has nodes of Ranvier spaced 1.5 mm apart. The action potential travels at 120 m/s in myelinated regions. An equivalent unmyelinated neuron conducts at 0.5 m/s. Compare the time for an impulse to travel 30 mm in each neuron.
+
+If you get this wrong, revise: Nervous Coordination -- Nerve Impulses
+
 <details>
-<summary>Question 6: Nervous System Calculation</summary>
+<summary>Solution</summary>
 
-A myelinated neuron has nodes of Ranvier spaced 1.5 mm apart. The action potential travels at 120
-m/s in the myelinated regions and takes 0.02 ms to cross each node. Calculate the speed of
-conduction in an equivalent unmyelinated neuron if the total conduction time for 30 mm is 0.6 ms.
+**Myelinated neuron:** The action potential jumps between nodes of Ranvier (saltatory conduction). Number of internodes = $30 / 1.5 = 20$. Time per internode = $1.5 \times 10^{-3} / 120 = 12.5 \times 10^{-6}$ s. Total internode time = $20 \times 12.5 \times 10^{-6} = 2.5 \times 10^{-4}$ s = 0.25 ms. The myelinated neuron is much faster because saltatory conduction skips the membrane between nodes.
 
-For the myelinated neuron over 30 mm:
+**Unmyelinated neuron:** Time = distance / speed = $30 \times 10^{-3} / 0.5 = 0.06$ s = 60 ms.
 
-Number of internodes = 30 / 1.5 = 20 internodes Number of nodes = 21
-
-Time on internodes = (30 mm - 21 nodes x ~0 mm) / 120 m/s
-
-More precisely, each internode is approximately 1.5 mm. Time per internode = 1.5 x 10$^{-3}$ / 120 =
-12.5 microseconds = 0.0125 ms.
-
-Total internode time = 20 x 0.0125 ms = 0.25 ms. Total node time = 21 x 0.02 ms = 0.42 ms. Total
-time = 0.25 + 0.42 = 0.67 ms.
-
-For the unmyelinated neuron: speed = distance / time = 30 mm / 0.6 ms = 30 x 10$^{-3}$ m / (0.6 x
-10$^{-3}$ s) = 50 m/s.
-
-The myelinated neuron is faster (effectively ~30 mm / 0.67 ms = ~44.8 m/s average, but note the
-internodal speed is much higher). The myelination allows faster transmission because the action
-potential jumps between nodes of Ranvier (saltatory conduction), rather than propagating
-continuously along the entire membrane.
+The myelinated neuron transmits the impulse approximately 240 times faster than the unmyelinated neuron over this distance (60 ms vs ~0.25 ms). This demonstrates why myelination is critical for rapid neural communication.
 
 </details>
 
+**Problem 7:** Explain why the oxygen dissociation curve shifts to the right during exercise. What is the significance of this shift?
+
+If you get this wrong, revise: Transport in Humans -- The Oxygen Dissociation Curve
+
 <details>
-<summary>Question 7: Oxygen Dissociation Curve</summary>
+<summary>Solution</summary>
 
-Explain why the oxygen dissociation curve shifts to the right during exercise. What is the
-significance of this shift?
+During exercise, respiration rate increases, producing more CO$_2$ as a waste product. Increased CO$_2$ raises blood $pCO_2$, which lowers blood pH (more H$^+$ ions from carbonic acid: $\mathrm{CO}_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-$). Muscle temperature also rises due to increased metabolic activity.
 
-During exercise:
-
-- Respiration rate increases, producing more CO$_2$ as a waste product
-- Increased CO$_2$ raises blood $pCO_2$, which lowers blood pH (more H$^+$ ions from carbonic acid:
-  CO$_2$ + H$_2$O $\rightleftharpoons$ H$_2$CO$_3$ $\rightleftharpoons$ H$^+$ + HCO$_3^-$)
-- Muscle temperature rises due to increased metabolic activity
-
-These factors (high $pCO_2$, low pH, high temperature) cause the oxygen dissociation curve to shift
-to the right (the Bohr effect). A rightward shift means that at any given $pO_2$, haemoglobin has a
-lower affinity for oxygen and releases more oxygen to the tissues.
-
-**Significance:** The actively respiring muscles need more oxygen. The rightward shift ensures that
-more oxygen is unloaded from haemoglobin precisely where and when it is needed most, improving the
-efficiency of oxygen delivery to working muscles.
+These factors (high $pCO_2$, low pH, high temperature) cause the oxygen dissociation curve to shift to the right (the Bohr effect). A rightward shift means that at any given $pO_2$, haemoglobin has a lower affinity for oxygen and releases more oxygen to the tissues. This ensures that more oxygen is unloaded precisely where and when it is needed most -- the actively respiring muscles.
 
 </details>
 
-<details>
-<summary>Question 8: Diabetes and Blood Glucose</summary>
-
-A person with Type 1 diabetes has a fasting blood glucose level of 280 mg/100 cm$^3$. The renal
-threshold for glucose is approximately 180 mg/100 cm$^3$.
+**Problem 8:** A person with Type 1 diabetes has a fasting blood glucose level of 280 mg/100 cm$^3$. The renal threshold for glucose is approximately 180 mg/100 cm$^3$.
 
 (a) Explain why glucose is present in the urine.
 
@@ -1193,95 +1244,47 @@ threshold for glucose is approximately 180 mg/100 cm$^3$.
 
 (c) How does insulin injection help to correct this condition?
 
-(a) The blood glucose concentration (280 mg/100 cm$^3$) exceeds the renal threshold (180 mg/100
-cm$^3$). The proximal convoluted tubule normally reabsorbs all glucose from the filtrate via carrier
-proteins. However, when the blood glucose level exceeds the renal threshold, the carrier proteins
-become saturated and cannot reabsorb all the glucose. The excess glucose remains in the filtrate and
-is excreted in the urine (glycosuria).
+If you get this wrong, revise: Hormonal Coordination -- Blood Glucose Regulation; Diabetes
 
-(b) The excess glucose in the filtrate lowers the water potential of the tubule fluid. As a result,
-less water is reabsorbed from the nephron by osmosis (water follows the glucose instead of being
-reabsorbed into the blood). This produces a large volume of dilute urine (polyuria). The loss of
-excess water from the body reduces blood volume and increases blood osmolarity, which is detected by
-osmoreceptors in the hypothalamus, triggering the thirst centre and causing the person to feel
-thirsty (polydipsia).
+<details>
+<summary>Solution</summary>
 
-(c) Insulin injections increase the amount of insulin in the blood. Insulin stimulates cells
-(especially liver and muscle cells) to take up glucose from the blood and convert it to glycogen.
-This lowers the blood glucose concentration. When blood glucose drops below the renal threshold, the
-kidneys can once again fully reabsorb all glucose from the filtrate, eliminating glucose from the
-urine and restoring normal water reabsorption.
+(a) The blood glucose concentration (280 mg/100 cm$^3$) exceeds the renal threshold (180 mg/100 cm$^3$). The proximal convoluted tubule normally reabsorbs all glucose from the filtrate via carrier proteins. However, when the blood glucose level exceeds the renal threshold, the carrier proteins become saturated and cannot reabsorb all the glucose. The excess glucose remains in the filtrate and is excreted in the urine (glycosuria).
+
+(b) The excess glucose in the filtrate lowers the water potential of the tubule fluid. Less water is reabsorbed from the nephron by osmosis, producing a large volume of dilute urine (polyuria). The loss of excess water reduces blood volume and increases blood osmolarity, which is detected by osmoreceptors in the hypothalamus, triggering thirst (polydipsia).
+
+(c) Insulin injections increase the amount of insulin in the blood. Insulin stimulates cells (especially liver and muscle cells) to take up glucose and convert it to glycogen. This lowers the blood glucose concentration. When blood glucose drops below the renal threshold, the kidneys can once again fully reabsorb all glucose, eliminating glucose from the urine and restoring normal water reabsorption.
 
 </details>
 
+**Problem 9:** Explain why the left ventricle has a thicker muscular wall than the right ventricle, and explain the role of valves in the heart.
+
+If you get this wrong, revise: Transport in Humans -- Structure of the Heart; Cardiac Cycle
+
 <details>
-<summary>Question 9: Heart and Circulation</summary>
+<summary>Solution</summary>
 
-Explain why the left ventricle has a thicker muscular wall than the right ventricle, and explain the
-role of valves in the heart.
+The left ventricle pumps oxygenated blood to the entire body through the systemic circulation. The systemic circulation has a much larger network of blood vessels and much higher resistance than the pulmonary circulation. To overcome this resistance and generate sufficient pressure, the left ventricle needs a thicker, more muscular wall. The right ventricle only pumps deoxygenated blood to the lungs via the shorter, lower-resistance pulmonary circuit, so its wall is thinner.
 
-**Left ventricle wall thickness:**
-
-The left ventricle pumps oxygenated blood to the entire body through the systemic circulation. The
-systemic circulation has a much larger network of blood vessels and much higher resistance than the
-pulmonary circulation. To overcome this resistance and generate sufficient pressure to drive blood
-through the entire body, the left ventricle needs a thicker, more muscular wall.
-
-The right ventricle only pumps deoxygenated blood to the lungs via the pulmonary circulation, which
-is a shorter circuit with lower resistance. Less pressure is needed, so the wall is thinner.
-
-**Role of heart valves:**
-
-Heart valves ensure one-way blood flow through the heart. They open when the pressure behind them is
-greater than the pressure in front, and they close when the pressure gradient reverses, preventing
-backflow.
-
-- **Atrioventricular (AV) valves** (tricuspid on the right, bicuspid/mitral on the left): Prevent
-  backflow from ventricles into atria during ventricular systole. The "lub" heart sound is caused by
-  these valves closing.
-- **Semilunar valves** (in the aorta and pulmonary artery): Prevent backflow from arteries into
-  ventricles during diastole. The "dub" heart sound is caused by these valves closing.
-
-If valves were absent or damaged, blood would flow backwards, reducing the efficiency of blood
-circulation.
+Heart valves ensure one-way blood flow. They open when the pressure behind them is greater than the pressure in front, and close when the pressure gradient reverses. **AV valves** (tricuspid and bicuspid) prevent backflow from ventricles into atria during ventricular systole ("lub" sound). **Semilunar valves** (in the aorta and pulmonary artery) prevent backflow from arteries into ventricles during diastole ("dub" sound).
 
 </details>
 
-<details>
-<summary>Question 10: Synapse Transmission</summary>
+**Problem 10:** Explain how a nerve impulse is transmitted across a synapse. Why is transmission in one direction only?
 
-Explain how a nerve impulse is transmitted across a synapse. Why is transmission in one direction
-only?
+If you get this wrong, revise: Nervous Coordination -- Synapses
+
+<details>
+<summary>Solution</summary>
 
 1. An action potential arrives at the pre-synaptic terminal knob.
-
-2. The depolarisation causes voltage-gated calcium (Ca$^{2+}$) ion channels to open. Ca$^{2+}$ ions
-   diffuse into the pre-synaptic terminal down their concentration gradient.
-
-3. The influx of Ca$^{2+}$ causes synaptic vesicles (containing neurotransmitter molecules) to move
-   towards and fuse with the pre-synaptic membrane. The neurotransmitter is released into the
-   synaptic cleft by exocytosis.
-
-4. The neurotransmitter diffuses across the synaptic cleft (~20 nm wide).
-
+2. Depolarisation causes voltage-gated Ca$^{2+}$ channels to open; Ca$^{2+}$ diffuses into the terminal.
+3. Ca$^{2+}$ causes synaptic vesicles to fuse with the pre-synaptic membrane, releasing neurotransmitter into the synaptic cleft (exocytosis).
+4. The neurotransmitter diffuses across the synaptic cleft (~20 nm).
 5. The neurotransmitter binds to specific receptor proteins on the post-synaptic membrane.
+6. This binding causes ion channels to open. If excitatory neurotransmitters (e.g., acetylcholine) are released, Na$^+$ flows in, depolarising the post-synaptic membrane and potentially triggering a new action potential.
+7. The neurotransmitter is quickly removed -- either broken down by enzymes (e.g., acetylcholinesterase) or taken back up by the pre-synaptic neuron (reuptake).
 
-6. This binding causes ion channels on the post-synaptic membrane to open. If excitatory
-   neurotransmitters (e.g., acetylcholine) are released, Na$^+$ ions flow in, depolarising the
-   post-synaptic membrane and potentially triggering a new action potential.
-
-7. The neurotransmitter is quickly removed from the synaptic cleft -- either broken down by enzymes
-   (e.g., acetylcholinesterase breaks down acetylcholine) or taken back up by the pre-synaptic
-   neuron (reuptake).
-
-**Unidirectional transmission:**
-
-Transmission across a synapse can only occur in one direction (from pre-synaptic to post-synaptic
-neuron) because:
-
-- Only the pre-synaptic terminal contains synaptic vesicles with neurotransmitter
-- Only the post-synaptic membrane has the specific receptor proteins for that neurotransmitter
-- Calcium channels, which trigger neurotransmitter release, are only present on the pre-synaptic
-  side
+**Unidirectional transmission** occurs because only the pre-synaptic terminal contains synaptic vesicles, only the post-synaptic membrane has the specific receptor proteins, and Ca$^{2+}$ channels (which trigger release) are only present on the pre-synaptic side.
 
 </details>

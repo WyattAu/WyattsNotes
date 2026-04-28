@@ -117,7 +117,12 @@ $$\mathrm{C_2H_4} + \mathrm{H_2O} \xrightarrow{\mathrm{H_3PO_4}} \mathrm{C_2H_5O
 
 Write the equation for the complete combustion of propene.
 
+<details>
+<summary>Solution</summary>
+
 $$2\mathrm{C_3H_6} + 9\mathrm{O_2} \to 6\mathrm{CO_2} + 6\mathrm{H_2O}$$
+
+</details>
 
 ---
 
@@ -181,21 +186,31 @@ A homologous series is a family of organic compounds with:
 
 Name the following compound: $\mathrm{CH_3CH(CH_3)CH_2CH_2OH}$
 
+<details>
+<summary>Solution</summary>
+
 Longest chain with $-\mathrm{OH}$: 4 carbons (butanol)
 
 Methyl substituent on carbon 2.
 
 Name: **2-methylbutan-1-ol**
 
+</details>
+
 ### Worked Example 3
 
 Name: $\mathrm{CH_3CHClCH_2CH_3}$
+
+<details>
+<summary>Solution</summary>
 
 Longest chain: 4 carbons (butane)
 
 Chloro substituent on carbon 2.
 
 Name: **2-chlorobutane**
+
+</details>
 
 ---
 
@@ -236,11 +251,16 @@ Same molecular formula but different functional groups.
 
 Draw and name all the structural isomers of $\mathrm{C_4H_8}$ that are alkenes.
 
+<details>
+<summary>Solution</summary>
+
 1. But-1-ene: $\mathrm{CH_2 = CHCH_2CH_3}$
 2. But-2-ene: $\mathrm{CH_3CH = CHCH_3}$
 3. 2-methylpropene: $\mathrm{CH_2 = C(CH_3)_2}$
 
 (But-2-ene also exists as cis and trans geometric isomers.)
+
+</details>
 
 ---
 
@@ -422,11 +442,16 @@ Formed from a diol and a dicarboxylic acid.
 
 Explain why starch is digestible by humans but cellulose is not.
 
+<details>
+<summary>Solution</summary>
+
 Both starch and cellulose are polymers of glucose. In starch, the glucose units are joined by
 alpha-glycosidic bonds, which can be broken by human digestive enzymes (amylase). In cellulose, the
 glucose units are joined by beta-glycosidic bonds, which humans cannot break down because they lack
 the appropriate enzyme (cellulase). Therefore, cellulose passes through the human digestive system
 undigested and acts as dietary fibre.
+
+</details>
 
 ---
 
@@ -463,45 +488,154 @@ undigested and acts as dietary fibre.
 
 ---
 
-<details>
-<summary>Exam-Style Practice Questions</summary>
+## Problem Set
 
-**Question 1:** Write the equation for the complete combustion of butane ($\mathrm{C_4H_{10}}$).
+**Problem 1:** Write the equation for the complete combustion of butane ($\mathrm{C_4H_{10}}$).
+
+*If you get this wrong, revise: Combustion of Alkanes*
+
+<details>
+<summary>Solution</summary>
 
 $$2\mathrm{C_4H_{10}} + 13\mathrm{O_2} \to 8\mathrm{CO_2} + 10\mathrm{H_2O}$$
 
-**Question 2:** Draw and name all the structural isomers of $\mathrm{C_3H_6O}$ that are aldehydes or
+</details>
+
+**Problem 2:** Draw and name all the structural isomers of $\mathrm{C_3H_6O}$ that are aldehydes or
 ketones.
+
+*If you get this wrong, revise: Isomerism — Functional Group Isomerism*
+
+<details>
+<summary>Solution</summary>
 
 1. Propanal (aldehyde): $\mathrm{CH_3CH_2CHO}$
 2. Propanone (ketone): $\mathrm{CH_3COCH_3}$
 
-**Question 3:** Ethene reacts with bromine water. Write the equation and state the observation.
+</details>
+
+**Problem 3:** Ethene reacts with bromine water. Write the equation and state the observation.
+
+*If you get this wrong, revise: Addition Reactions of Alkenes*
+
+<details>
+<summary>Solution</summary>
 
 $$\mathrm{CH_2 = CH_2} + \mathrm{Br_2} \to \mathrm{CH_2BrCH_2Br}$$
 
 Observation: The reddish-brown colour of bromine water is decolourised.
 
-**Question 4:** Write the equation for the esterification of ethanol with propanoic acid.
+</details>
+
+**Problem 4:** Write the equation for the esterification of ethanol with propanoic acid. Name the
+ester product.
+
+*If you get this wrong, revise: Esters — Formation and Naming*
+
+<details>
+<summary>Solution</summary>
 
 $$\mathrm{C_2H_5COOH} + \mathrm{CH_3CH_2OH} \rightleftharpoons \mathrm{C_2H_5COOCH_2CH_3} + \mathrm{H_2O}$$
 
-Product name: ethyl propanoate.
+Product name: ethyl propanoate (alkyl part from alcohol, -oate part from acid).
 
-**Question 5:** Describe the difference between addition polymerisation and condensation
+</details>
+
+**Problem 5:** Describe the difference between addition polymerisation and condensation
 polymerisation.
+
+*If you get this wrong, revise: Polymers and Plastics*
+
+<details>
+<summary>Solution</summary>
 
 In addition polymerisation, monomers with a $\mathrm{C = C}$ double bond open their double bonds
 and join together. No small molecule is eliminated. In condensation polymerisation, monomers with
 two different functional groups react, joining together with the elimination of a small molecule
 (such as water).
 
-**Question 6:** Explain why proteins can be hydrolysed but not in basic conditions at very high
-temperature.
+</details>
 
-Proteins are hydrolysed by breaking peptide bonds. This can be achieved by acid hydrolysis or by
-enzymatic hydrolysis (using proteases). In basic conditions, the peptide bonds can also be broken,
-but at very high temperatures, the amino acids themselves may decompose, denaturing the products.
-Acid hydrolysis is preferred in the laboratory as it completely breaks all peptide bonds.
+**Problem 6:** Name the compound $\mathrm{CH_3CH_2COCH_2CH_3}$ and classify the alcohol that would
+need to be oxidised to produce it.
+
+*If you get this wrong, revise: IUPAC Nomenclature and Reactions of Alcohols*
+
+<details>
+<summary>Solution</summary>
+
+Name: **pentan-3-one**
+
+A secondary alcohol (pentan-3-ol) would need to be oxidised to produce this ketone. Secondary
+alcohols oxidise to ketones (unlike primary alcohols, which oxidise to aldehydes and then
+carboxylic acids).
+
+</details>
+
+**Problem 7:** Write the equation for the reaction of ethanoic acid with sodium carbonate. State the
+observation.
+
+*If you get this wrong, revise: Carboxylic Acids — Reactions*
+
+<details>
+<summary>Solution</summary>
+
+$$2\mathrm{CH_3COOH} + \mathrm{Na_2CO_3} \to 2\mathrm{CH_3COONa} + \mathrm{H_2O} + \mathrm{CO_2}$$
+
+Observation: Effervescence (bubbling) as carbon dioxide gas is produced.
+
+</details>
+
+**Problem 8:** Explain why poly(ethene) is not biodegradable, and suggest one environmental
+advantage of using a biopolymer such as polylactic acid (PLA) instead.
+
+*If you get this wrong, revise: Environmental Impact of Plastics*
+
+<details>
+<summary>Solution</summary>
+
+Poly(ethene) consists of very long hydrocarbon chains with strong C-C bonds. Microorganisms lack
+the enzymes to break these bonds, so the polymer persists in the environment for hundreds of years.
+
+Biopolymers such as PLA are made from renewable resources (e.g., corn starch) and can be broken
+down by microorganisms into harmless products ($\mathrm{CO_2}$ and water) under the right
+conditions (composting). This reduces landfill accumulation and environmental pollution.
+
+</details>
+
+**Problem 9:** A compound has the molecular formula $\mathrm{C_4H_8O_2}$. It dissolves in water to
+give a solution of pH 3 and reacts with sodium to produce hydrogen gas. Identify the compound and
+explain your reasoning.
+
+*If you get this wrong, revise: Functional Groups and Carboxylic Acid Properties*
+
+<details>
+<summary>Solution</summary>
+
+The pH of 3 indicates the compound is a weak acid. The reaction with sodium to produce hydrogen
+confirms it contains an acidic $-\mathrm{OH}$ group. The molecular formula $\mathrm{C_4H_8O_2}$
+matches the general formula for a carboxylic acid ($\mathrm{C_nH_{2n}O_2}$).
+
+The compound is **butanoic acid** ($\mathrm{CH_3CH_2CH_2COOH}$). (The ester isomer, methyl
+propanoate, would not be acidic and would not react with sodium to produce hydrogen.)
+
+</details>
+
+**Problem 10:** Explain why the boiling point of propan-1-ol ($97^\circ\mathrm{C}$) is much higher
+than that of propane ($-42^\circ\mathrm{C}$), even though propane has a similar molar mass.
+
+*If you get this wrong, revise: Alcohols — Properties and Intermolecular Forces*
+
+<details>
+<summary>Solution</summary>
+
+Propan-1-ol molecules can form hydrogen bonds between the $-\mathrm{OH}$ group of one molecule and
+the lone pairs on the oxygen of another. Hydrogen bonding is a strong intermolecular force that
+requires significant energy to overcome.
+
+Propane molecules are non-polar and can only form weak van der Waals forces between molecules.
+These are much weaker than hydrogen bonds, so propane has a much lower boiling point despite
+having a similar molar mass ($\mathrm{C_3H_8} = 44 \mathrm{ g/mol}$ vs $\mathrm{C_3H_8O} = 60
+\mathrm{ g/mol}$).
 
 </details>

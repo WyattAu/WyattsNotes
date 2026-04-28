@@ -367,6 +367,63 @@ reverse activation energies are lowered, but $\Delta H$ remains unchanged.
 
 ---
 
+## Additional Worked Examples
+
+### Worked Example: Rate from a Graph
+
+The concentration of $\mathrm{H_2O_2}$ in a decomposition reaction was measured over time. At $t = 0$, $[\mathrm{H_2O_2}] = 0.80 \mathrm{ mol/dm^3}$. At $t = 60 \mathrm{ s}$, $[\mathrm{H_2O_2}] = 0.40 \mathrm{ mol/dm^3}$. Calculate the average rate of reaction in the first 60 seconds.
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{Rate} = \frac{\Delta[\mathrm{H_2O_2}]}{\Delta t} = \frac{0.80 - 0.40}{60 - 0} = \frac{0.40}{60} = 0.00667 \mathrm{ mol/(dm^3 \cdot s)}$$
+
+The rate is positive when expressed in terms of the decrease in reactant concentration (the negative sign is often omitted when stated as "rate of disappearance").
+
+</details>
+
+### Worked Example: Hess's Law with Combustion Data
+
+Using the following standard enthalpies of combustion, calculate $\Delta H_f^\circ$ for ethanol:
+
+- $\Delta H_c^\circ(\mathrm{C}) = -394 \mathrm{ kJ/mol}$
+- $\Delta H_c^\circ(\mathrm{H_2}) = -286 \mathrm{ kJ/mol}$
+- $\Delta H_c^\circ(\mathrm{C_2H_5OH}) = -1367 \mathrm{ kJ/mol}$
+
+<details>
+<summary>Solution</summary>
+
+Target: $2\mathrm{C}(s) + 3\mathrm{H_2}(g) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{C_2H_5OH}(l)$
+
+Using Hess's law: $\Delta H_f^\circ = \sum \Delta H_c^\circ(\mathrm{reactants}) - \Delta H_c^\circ(\mathrm{product})$
+
+$$\Delta H_f^\circ = [2(-394) + 3(-286)] - [-1367]$$
+
+$$\Delta H_f^\circ = [-788 - 858] - [-1367]$$
+
+$$\Delta H_f^\circ = -1646 + 1367 = -279 \mathrm{ kJ/mol}$$
+
+</details>
+
+### Worked Example: Calorimetry with Combustion
+
+$1.50 \mathrm{ g}$ of ethanol ($M = 46.0 \mathrm{ g/mol}$) is burned to heat $200 \mathrm{ g}$ of water from $20.0^\circ\mathrm{C}$ to $43.5^\circ\mathrm{C}$. Calculate the experimental enthalpy of combustion of ethanol.
+
+<details>
+<summary>Solution</summary>
+
+$$q = mc\Delta T = 200 \times 4.18 \times (43.5 - 20.0) = 200 \times 4.18 \times 23.5 = 19646 \mathrm{ J} = 19.6 \mathrm{ kJ}$$
+
+$$n(\mathrm{C_2H_5OH}) = \frac{1.50}{46.0} = 0.0326 \mathrm{ mol}$$
+
+$$\Delta H_c = -\frac{19.6}{0.0326} = -601 \mathrm{ kJ/mol}$$
+
+This is less exothermic than the literature value ($-1367 \mathrm{ kJ/mol}$) because significant heat is lost to the surroundings and the calorimeter in a school experiment.
+
+</details>
+
+---
+
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
@@ -426,5 +483,172 @@ The diagram should show:
 - Both curves ending at the same product energy level
 - The difference between peaks = reduction in $E_a$ by the catalyst
 - $\Delta H$ the same for both curves (product level below reactant level)
+
+</details>
+
+---
+
+## Problem Set
+
+**Problem 1:** Explain, using collision theory, why increasing the concentration of a reactant in solution increases the rate of reaction but does not change the activation energy.
+
+*If you get this wrong, revise: Collision Theory and Factors Affecting Rate*
+
+<details>
+<summary>Solution</summary>
+
+Increasing concentration means more particles per unit volume, increasing the collision frequency. More collisions per unit time means a higher rate. However, the minimum energy required for a successful collision ($E_a$) depends on the nature of the reactants and the bonds being broken, not on how many particles are present. Therefore, $E_a$ is unchanged.
+
+</details>
+
+**Problem 2:** A student measures the rate of $\mathrm{Mg} + 2\mathrm{HCl} \to \mathrm{MgCl_2} + \mathrm{H_2}$ by collecting gas. Suggest three ways to increase the initial rate.
+
+*If you get this wrong, revise: Factors Affecting the Rate of Reaction*
+
+<details>
+<summary>Solution</summary>
+
+1. Increase the concentration of $\mathrm{HCl}$ (more collisions per unit time)
+2. Use magnesium powder instead of ribbon (greater surface area)
+3. Increase the temperature (more particles have energy $\geqslant E_a$)
+4. Add a suitable catalyst if available
+
+Any three of the above.
+
+</details>
+
+**Problem 3:** Use standard enthalpies of formation to calculate $\Delta H$ for the combustion of propane:
+
+$$\mathrm{C_3H_8}(g) + 5\mathrm{O_2}(g) \to 3\mathrm{CO_2}(g) + 4\mathrm{H_2O}(l)$$
+
+Given: $\Delta H_f^\circ(\mathrm{C_3H_8}) = -104 \mathrm{ kJ/mol}$, $\Delta H_f^\circ(\mathrm{CO_2}) = -394 \mathrm{ kJ/mol}$, $\Delta H_f^\circ(\mathrm{H_2O}) = -286 \mathrm{ kJ/mol}$.
+
+*If you get this wrong, revise: Hess's Law*
+
+<details>
+<summary>Solution</summary>
+
+$$\Delta H = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})$$
+
+$$\Delta H = [3(-394) + 4(-286)] - [(-104) + 5(0)]$$
+
+$$\Delta H = [-1182 - 1144] - [-104]$$
+
+$$\Delta H = -2326 + 104 = -2222 \mathrm{ kJ/mol}$$
+
+</details>
+
+**Problem 4:** Use bond energies to estimate $\Delta H$ for the reaction $\mathrm{N_2} + 3\mathrm{H_2} \to 2\mathrm{NH_3}$.
+
+Given: $\mathrm{N \equiv N} = 945 \mathrm{ kJ/mol}$, $\mathrm{H - H} = 436 \mathrm{ kJ/mol}$, $\mathrm{N - H} = 391 \mathrm{ kJ/mol}$.
+
+*If you get this wrong, revise: Bond Energies*
+
+<details>
+<summary>Solution</summary>
+
+Bonds broken: $1 \times \mathrm{N \equiv N} + 3 \times \mathrm{H - H} = 945 + 3(436) = 945 + 1308 = 2253 \mathrm{ kJ/mol}$
+
+Bonds formed: $6 \times \mathrm{N - H} = 6(391) = 2346 \mathrm{ kJ/mol}$
+
+$$\Delta H = 2253 - 2346 = -93 \mathrm{ kJ/mol}$$
+
+The reaction is exothermic (actual value: $-92 \mathrm{ kJ/mol}$).
+
+</details>
+
+**Problem 5:** When $50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{HCl}$ is mixed with $50.0 \mathrm{ cm^3}$ of $1.00 \mathrm{ mol/dm^3}$ $\mathrm{NaOH}$ in a polystyrene cup, the temperature rises by $6.7^\circ\mathrm{C}$. Calculate the enthalpy of neutralisation per mole of water formed.
+
+*If you get this wrong, revise: Calorimetry*
+
+<details>
+<summary>Solution</summary>
+
+$$m = 50.0 + 50.0 = 100 \mathrm{ g}$$
+
+$$q = mc\Delta T = 100 \times 4.18 \times 6.7 = 2801 \mathrm{ J} = 2.80 \mathrm{ kJ}$$
+
+$$n(\mathrm{H_2O}) = 1.00 \times 0.0500 = 0.0500 \mathrm{ mol}$$
+
+$$\Delta H = -\frac{2.80}{0.0500} = -56.0 \mathrm{ kJ/mol}$$
+
+The negative sign indicates the reaction is exothermic.
+
+</details>
+
+**Problem 6:** Explain why a catalyst increases the rate of a reaction but does not change the enthalpy change of the reaction.
+
+*If you get this wrong, revise: Activation Energy Profile Diagrams*
+
+<details>
+<summary>Solution</summary>
+
+A catalyst provides an alternative pathway with a lower activation energy, so more particles have energy $\geqslant E_a$ and a greater proportion of collisions are effective. However, the catalyst does not change the energy levels of the reactants or products -- it only changes the energy barrier between them. Since $\Delta H$ depends only on the initial and final energy levels, it remains unchanged.
+
+</details>
+
+**Problem 7:** The enthalpy change for $\mathrm{C}(s) + \mathrm{O_2}(g) \to \mathrm{CO_2}(g)$ is $-394 \mathrm{ kJ/mol}$. The enthalpy change for $\mathrm{C}(s) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO}(g)$ is $-111 \mathrm{ kJ/mol}$ and for $\mathrm{CO}(g) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO_2}(g)$ is $-283 \mathrm{ kJ/mol}$. Show that these data are consistent with Hess's law.
+
+*If you get this wrong, revise: Hess's Law*
+
+<details>
+<summary>Solution</summary>
+
+Adding the two steps:
+
+$$\mathrm{C}(s) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO}(g) \quad \Delta H_1 = -111 \mathrm{ kJ/mol}$$
+
+$$\mathrm{CO}(g) + \tfrac{1}{2}\mathrm{O_2}(g) \to \mathrm{CO_2}(g) \quad \Delta H_2 = -283 \mathrm{ kJ/mol}$$
+
+Overall: $\mathrm{C}(s) + \mathrm{O_2}(g) \to \mathrm{CO_2}(g) \quad \Delta H = -111 + (-283) = -394 \mathrm{ kJ/mol}$
+
+This matches the direct route, confirming Hess's law.
+
+</details>
+
+**Problem 8:** $2.00 \mathrm{ g}$ of $\mathrm{CaO}$ is added to $100 \mathrm{ g}$ of water. The temperature rises from $20.0^\circ\mathrm{C}$ to $35.5^\circ\mathrm{C}$. Calculate the enthalpy of solution of $\mathrm{CaO}$.
+
+*If you get this wrong, revise: Calorimetry*
+
+<details>
+<summary>Solution</summary>
+
+$$q = mc\Delta T = 100 \times 4.18 \times (35.5 - 20.0) = 100 \times 4.18 \times 15.5 = 6479 \mathrm{ J} = 6.48 \mathrm{ kJ}$$
+
+$$n(\mathrm{CaO}) = \frac{2.00}{56.1} = 0.0356 \mathrm{ mol}$$
+
+$$\Delta H = -\frac{6.48}{0.0356} = -182 \mathrm{ kJ/mol}$$
+
+The dissolution of $\mathrm{CaO}$ is highly exothermic.
+
+</details>
+
+**Problem 9:** Explain why the rate of reaction between magnesium and dilute hydrochloric acid decreases as the reaction proceeds.
+
+*If you get this wrong, revise: Measuring Reaction Rate*
+
+<details>
+<summary>Solution</summary>
+
+As the reaction proceeds, the concentration of the reactants ($\mathrm{HCl}$ and $\mathrm{Mg}$) decreases. Lower concentration means fewer particles per unit volume and fewer collisions per unit time. The rate of reaction is proportional to the collision frequency, so the rate decreases. This is seen as a decreasing gradient on a concentration-vs-time graph.
+
+</details>
+
+**Problem 10:** Use bond energies to estimate $\Delta H$ for: $\mathrm{CH_4} + \mathrm{Cl_2} \to \mathrm{CH_3Cl} + \mathrm{HCl}$
+
+Given: $\mathrm{C - H} = 412$, $\mathrm{Cl - Cl} = 243$, $\mathrm{C - Cl} = 328$, $\mathrm{H - Cl} = 432 \mathrm{ kJ/mol}$.
+
+*If you get this wrong, revise: Bond Energies*
+
+<details>
+<summary>Solution</summary>
+
+Bonds broken: $1 \times \mathrm{C - H} + 1 \times \mathrm{Cl - Cl} = 412 + 243 = 655 \mathrm{ kJ/mol}$
+
+Bonds formed: $1 \times \mathrm{C - Cl} + 1 \times \mathrm{H - Cl} = 328 + 432 = 760 \mathrm{ kJ/mol}$
+
+$$\Delta H = 655 - 760 = -105 \mathrm{ kJ/mol}$$
+
+The reaction is exothermic.
 
 </details>

@@ -246,6 +246,21 @@ pulled towards the more electronegative atom, creating a **polar bond** with a d
 - Polar covalent: $0.5 \leqslant \Delta\mathrm{EN} \lt 1.7$ (e.g., H-Cl, H-O)
 - Ionic: $\Delta\mathrm{EN} \geqslant 1.7$ (e.g., Na-Cl)
 
+### Worked Example: Predicting Bond Polarity
+
+Use electronegativity values to predict the bond polarity of (a) $\mathrm{H_2O}$, (b) $\mathrm{CCl_4}$, and (c) $\mathrm{KBr}$. Given: $\mathrm{H} = 2.1$, $\mathrm{O} = 3.5$, $\mathrm{C} = 2.5$, $\mathrm{Cl} = 3.0$, $\mathrm{K} = 0.8$, $\mathrm{Br} = 2.8$.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\mathrm{H_2O}$: $\Delta\mathrm{EN} = 3.5 - 2.1 = 1.4$. This is polar covalent ($0.5 \leqslant 1.4 \lt 1.7$). The oxygen atom carries a partial negative charge ($\delta^-$) and hydrogen carries a partial positive charge ($\delta^+$).
+
+(b) $\mathrm{CCl_4}$: $\Delta\mathrm{EN} = 3.0 - 2.5 = 0.5$. Each C-Cl bond is polar covalent. However, because the molecule is tetrahedral and symmetrical, the individual bond dipoles cancel out. $\mathrm{CCl_4}$ is a non-polar molecule overall.
+
+(c) $\mathrm{KBr}$: $\Delta\mathrm{EN} = 2.8 - 0.8 = 2.0$. This is ionic ($\Delta\mathrm{EN} \geqslant 1.7$). Potassium transfers its electron to bromine, forming $\mathrm{K^+}$ and $\mathrm{Br^-}$.
+
+</details>
+
 ### Shapes of Molecules (VSEPR Theory)
 
 The Valence Shell Electron Pair Repulsion theory predicts molecular shapes based on the idea that
@@ -293,6 +308,19 @@ The bond angle is approximately $107^\circ$ (less than $109.5^\circ$ due to lone
 - Very high melting and boiling points (strong covalent bonds throughout)
 - Diamond: hard, insulator (all electrons in bonds)
 - Graphite: soft (layers can slide), conducts electricity (delocalised electrons)
+
+### Worked Example: Comparing Diamond, Graphite, and $\mathrm{SiO_2}$
+
+Explain why both diamond and $\mathrm{SiO_2}$ have very high melting points, but graphite has a lower (though still high) melting point and conducts electricity.
+
+<details>
+<summary>Solution</summary>
+
+**Diamond and $\mathrm{SiO_2}$:** Both have giant covalent (network) structures with strong covalent bonds in all three dimensions. Melting requires breaking these strong covalent bonds throughout the entire structure, which needs very high temperatures. Neither conducts electricity because all valence electrons are localised in covalent bonds.
+
+**Graphite:** Has a layered structure. Within each layer, strong covalent bonds hold atoms together (giving a high melting point). Between layers, only weak van der Waals forces act. The melting point is high because the in-plane covalent bonds must be broken, but it is slightly lower than diamond because the layers can slide. Graphite conducts electricity because each carbon atom has one delocalised electron (from the $p_z$ orbital) that is free to move within the layers.
+
+</details>
 
 ---
 
@@ -653,6 +681,59 @@ Atomic radius decreases across the period because increasing nuclear charge pull
 
 ---
 
+## Additional Worked Examples
+
+### Worked Example: Electron Configuration of an Ion
+
+Write the electron configuration of $\mathrm{S^{2-}}$ and explain why it has the same configuration as argon.
+
+<details>
+<summary>Solution</summary>
+
+Sulphur ($Z = 16$): $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^4$
+
+$\mathrm{S^{2-}}$ gains 2 electrons: $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6$
+
+This is the same as argon ($Z = 18$): $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6$
+
+Sulphur is in Group 16. By gaining 2 electrons to form $\mathrm{S^{2-}}$, it achieves the stable noble gas electron configuration of argon (a full outer shell of 8 electrons).
+
+</details>
+
+### Worked Example: Predicting Molecular Shape
+
+Predict the shape and bond angle of $\mathrm{SF_4}$.
+
+<details>
+<summary>Solution</summary>
+
+Sulphur has 6 valence electrons. In $\mathrm{SF_4}$, 4 are used in bonding with fluorine, leaving 1 lone pair.
+
+Total electron pairs = 5 (4 bonding + 1 lone pair)
+
+Electron pair geometry: **trigonal bipyramidal** ($sp^3d$ hybridisation)
+
+The lone pair occupies an equatorial position to minimise repulsion. The molecular shape is **see-saw** (disphenoidal).
+
+Bond angles: approximately $120^\circ$ (equatorial) and $90^\circ$ (axial-equatorial), both slightly reduced from ideal values due to lone pair repulsion.
+
+</details>
+
+### Worked Example: Intermolecular Forces Comparison
+
+Explain why propanone ($\mathrm{CH_3COCH_3}$, b.p. $56^\circ\mathrm{C}$) has a higher boiling point than propane ($\mathrm{CH_3CH_2CH_3}$, b.p. $-42^\circ\mathrm{C}$), but a lower boiling point than propan-1-ol ($\mathrm{CH_3CH_2CH_2OH}$, b.p. $97^\circ\mathrm{C}$).
+
+<details>
+<summary>Solution</summary>
+
+**Propanone vs. propane:** Propanone has a polar C=O bond, creating permanent dipole-dipole interactions between molecules. Propane is non-polar and has only weak van der Waals forces. Dipole-dipole forces are stronger than van der Waals forces, so propanone has a higher boiling point.
+
+**Propanone vs. propan-1-ol:** Propan-1-ol has an -OH group and can form hydrogen bonds between molecules. Propanone cannot form hydrogen bonds (it has no H bonded to N, O, or F). Hydrogen bonding is much stronger than dipole-dipole interactions, so propan-1-ol has a higher boiling point.
+
+</details>
+
+---
+
 ## Additional Practice Questions
 
 <details>
@@ -821,14 +902,317 @@ layers to slide over each other easily. This makes graphite soft and a good lubr
 all carbon atoms are covalently bonded in a rigid 3D tetrahedral network with no weak planes, making
 it extremely hard.
 
-:::
+---
 
-:::
+## Problem Set
 
-:::
+**Problem 1:** Boron has two isotopes: B-10 (19.9% abundance) and B-11 (80.1% abundance). Calculate the relative atomic mass of boron.
 
-:::
+*If you get this wrong, revise: Isotopes and Mass Spectrometry*
 
-:::
+<details>
+<summary>Solution</summary>
 
-:::
+$$A_r = \frac{10 \times 19.9 + 11 \times 80.1}{100} = \frac{199 + 881.1}{100} = \frac{1080.1}{100} = 10.81$$
+
+</details>
+
+**Problem 2:** Write the electron configuration of $\mathrm{Cu^{2+}}$ and explain why it is not $[\mathrm{Ar}]\, 3d^9$.
+
+*If you get this wrong, revise: Electron Configuration*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{Cu}$ ($Z = 29$): $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
+
+When forming $\mathrm{Cu^{2+}}$, both the $4s$ electron and one $3d$ electron are removed:
+
+$\mathrm{Cu^{2+}}$: $[\mathrm{Ar}]\, 3d^9$
+
+Note: this IS $3d^9$. The answer is that $\mathrm{Cu^{2+}}$ does have the configuration $[\mathrm{Ar}]\, 3d^9$. It loses the $4s$ electron first (as $4s$ is at higher energy once $3d$ is occupied), then one $3d$ electron. Despite losing the stable $3d^{10}$ configuration, the high hydration energy of $\mathrm{Cu^{2+}}$ in solution makes this oxidation favourable.
+
+</details>
+
+**Problem 3:** Explain why the first ionisation energy of magnesium ($738 \mathrm{ kJ/mol}$) is higher than that of sodium ($496 \mathrm{ kJ/mol}$), but the second ionisation energy of sodium ($4562 \mathrm{ kJ/mol}$) is much higher than that of magnesium ($1451 \mathrm{ kJ/mol}$).
+
+*If you get this wrong, revise: Ionisation Energy*
+
+<details>
+<summary>Solution</summary>
+
+**First IE:** $\mathrm{Mg}$ has a higher nuclear charge ($+12$ vs $+11$) and a smaller atomic radius. The outer electron is held more tightly, requiring more energy to remove.
+
+**Second IE:** $\mathrm{Na}$ has the configuration $[\mathrm{Ne}]\, 3s^1$. After losing the first electron ($\mathrm{Na^+} = [\mathrm{Ne}]$), the second electron must be removed from the stable noble gas core ($1s^2\, 2s^2\, 2p^6$), which requires a huge amount of energy. For $\mathrm{Mg}$, the second electron is still in the $3s$ subshell ($\mathrm{Mg^+} = [\mathrm{Ne}]\, 3s^1$), so it is much easier to remove.
+
+</details>
+
+**Problem 4:** Predict the shape and bond angle of $\mathrm{XeF_4}$.
+
+*If you get this wrong, revise: Shapes of Molecules (VSEPR Theory)*
+
+<details>
+<summary>Solution</summary>
+
+Xenon has 8 valence electrons. Four are used in bonding with fluorine, leaving 2 lone pairs.
+
+Total electron pairs = 6 (4 bonding + 2 lone pairs)
+
+Electron pair geometry: **octahedral** ($sp^3d^2$)
+
+The two lone pairs occupy opposite positions to minimise repulsion. The molecular shape is **square planar** with bond angles of $90^\circ$.
+
+</details>
+
+**Problem 5:** Explain why sodium chloride has a high melting point ($801^\circ\mathrm{C}$) while carbon tetrachloride ($\mathrm{CCl_4}$) is a liquid at room temperature (b.p. $77^\circ\mathrm{C}$).
+
+*If you get this wrong, revise: Ionic Bonding and Simple Molecular vs Giant Covalent*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{NaCl}$ has a giant ionic lattice. Strong electrostatic forces between $\mathrm{Na^+}$ and $\mathrm{Cl^-$ act throughout the entire lattice, requiring large amounts of energy to overcome.
+
+$\mathrm{CCl_4}$ is a simple molecular substance. The covalent bonds within each molecule are strong, but only weak van der Waals forces act between molecules. These weak intermolecular forces require little energy to overcome, resulting in a low boiling point.
+
+</details>
+
+**Problem 6:** Explain why ammonia ($\mathrm{NH_3}$, b.p. $-33^\circ\mathrm{C}$) has a higher boiling point than phosphine ($\mathrm{PH_3}$, b.p. $-88^\circ\mathrm{C}$), even though phosphine has a larger molecular mass.
+
+*If you get this wrong, revise: Hydrogen Bonding*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{NH_3}$ can form hydrogen bonds between molecules because hydrogen is bonded to nitrogen (highly electronegative, EN $= 3.0$). $\mathrm{PH_3}$ cannot form hydrogen bonds because phosphorus (EN $= 2.1$) is not electronegative enough. Hydrogen bonding is much stronger than the van der Waals forces in $\mathrm{PH_3}$, giving $\mathrm{NH_3}$ a higher boiling point despite its lower molecular mass.
+
+</details>
+
+**Problem 7:** Use bond enthalpies to calculate $\Delta H$ for the reaction:
+
+$$\mathrm{N_2} + 3\mathrm{H_2} \to 2\mathrm{NH_3}$$
+
+Given: $\mathrm{N \equiv N} = 945$, $\mathrm{H - H} = 436$, $\mathrm{N - H} = 391 \mathrm{ kJ/mol}$.
+
+*If you get this wrong, revise: Bond Enthalpy*
+
+<details>
+<summary>Solution</summary>
+
+Bonds broken: $1 \times \mathrm{N \equiv N} + 3 \times \mathrm{H - H} = 945 + 3(436) = 945 + 1308 = 2253 \mathrm{ kJ/mol}$
+
+Bonds formed: $6 \times \mathrm{N - H} = 6(391) = 2346 \mathrm{ kJ/mol}$
+
+$$\Delta H = 2253 - 2346 = -93 \mathrm{ kJ/mol}$$
+
+The reaction is exothermic.
+
+</details>
+
+**Problem 8:** Explain why metals are good conductors of electricity, whereas ionic solids are not.
+
+*If you get this wrong, revise: Metallic Bonding and Properties of Ionic Compounds*
+
+<details>
+<summary>Solution</summary>
+
+Metals have delocalised electrons that are free to move throughout the metallic lattice. When a potential difference is applied, these mobile electrons carry charge, allowing electrical conduction.
+
+In ionic solids, ions are held in fixed positions in the giant ionic lattice by strong electrostatic forces. Although ions are charged, they cannot move and therefore cannot carry charge. Ionic compounds only conduct when molten or dissolved, when ions are free to move.
+
+</details>
+
+**Problem 9:** Explain the trend in electrical conductivity across Period 3 (Na to Ar).
+
+*If you get this wrong, revise: Trends Across Period 3*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{Na}$, $\mathrm{Mg}$, $\mathrm{Al}$: Good conductors due to metallic bonding with delocalised electrons. Conductivity increases from $\mathrm{Na}$ to $\mathrm{Al}$ as more delocalised electrons per atom are available.
+
+$\mathrm{Si}$: Semiconductor; conductivity is much lower than metals but increases with temperature as more electrons are promoted to the conduction band.
+
+$\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Non-conductors. They are simple molecular or monatomic species with no mobile charge carriers.
+
+</details>
+
+**Problem 10:** Explain why graphite can conduct electricity but diamond cannot, even though both are forms of carbon.
+
+*If you get this wrong, revise: Allotropes of Carbon*
+
+<details>
+<summary>Solution</summary>
+
+In diamond, each carbon atom is bonded to four others in a rigid 3D tetrahedral network. All four valence electrons are used in covalent bonds; none are free to move.
+
+In graphite, each carbon atom is bonded to only three others in planar hexagonal layers ($sp^2$ hybridised). The fourth valence electron from each carbon is delocalised and free to move within the layers. These mobile electrons carry charge, allowing graphite to conduct electricity parallel to the layers.
+
+</details>
+
+**Problem 11:** Determine the hybridisation of the central atom in $\mathrm{BF_3}$ and $\mathrm{NF_3}$, and explain why their bond angles differ.
+
+*If you get this wrong, revise: Hybridisation and VSEPR Theory*
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{BF_3}$: Boron has 3 valence electrons, all used in bonding. 3 bonding pairs, 0 lone pairs. Hybridisation: $sp^2$. Shape: trigonal planar. Bond angle: $120^\circ$.
+
+$\mathrm{NF_3}$: Nitrogen has 5 valence electrons; 3 used in bonding, 1 lone pair. 4 electron pairs (3 bonding + 1 lone). Hybridisation: $sp^3$. Shape: trigonal pyramidal. Bond angle: approximately $107^\circ$ (less than $109.5^\circ$ due to lone pair repulsion).
+
+Despite both having formula $\mathrm{XF_3}$, the lone pair on $\mathrm{N}$ in $\mathrm{NF_3}$ causes a different geometry and smaller bond angle.
+
+</details>
+
+**Problem 12:** Explain why the melting point of $\mathrm{MgO}$ ($2852^\circ\mathrm{C}$) is much higher than that of $\mathrm{NaCl}$ ($801^\circ\mathrm{C}$).
+
+*If you get this wrong, revise: Giant Ionic Structures in Detail*
+
+<details>
+<summary>Solution</summary>
+
+Both have giant ionic lattices, but:
+
+1. **Ionic charges:** $\mathrm{Mg^{2+}}$ and $\mathrm{O^{2-}}$ have double charges compared to $\mathrm{Na^+}$ and $\mathrm{Cl^-}$. The electrostatic attraction is proportional to the product of charges: $2 \times 2 = 4$ for $\mathrm{MgO}$ vs $1 \times 1 = 1$ for $\mathrm{NaCl}$.
+
+2. **Ionic radii:** $\mathrm{Mg^{2+}}$ ($72 \mathrm{ pm}$) and $\mathrm{O^{2-}}$ ($140 \mathrm{ pm}$) are smaller than $\mathrm{Na^+}$ ($102 \mathrm{ pm}$) and $\mathrm{Cl^-}$ ($181 \mathrm{ pm}$). Smaller ions can get closer together, increasing the electrostatic attraction.
+
+Both factors give $\mathrm{MgO}$ much stronger ionic bonds and a much higher melting point.
+
+</details>
+
+**Problem 13:** Define the term "first ionisation energy" and explain why the first ionisation energy of sodium is lower than that of neon.
+
+*If you get this wrong, revise: Ionisation Energy*
+
+<details>
+<summary>Solution</summary>
+
+**First ionisation energy** is the energy required to remove one mole of electrons from one mole of gaseous atoms.
+
+Sodium ($Z = 11$, $[\mathrm{Ne}]\, 3s^1$) has its outermost electron in the 3s subshell, which is further from the nucleus and well-shielded by the neon core. The electron is relatively easy to remove.
+
+Neon ($Z = 10$, $1s^2\, 2s^2\, 2p^6$) has a stable noble gas configuration with a full outer shell. All electrons are in the n=2 shell, closer to the nucleus with less shielding. Removing an electron from a stable, fully-occupied shell requires significantly more energy.
+
+</details>
+
+**Problem 14:** Explain the term "dative covalent bond" and give an example.
+
+*If you get this wrong, revise: Covalent Bonding*
+
+<details>
+<summary>Solution</summary>
+
+A **dative covalent bond** (coordinate bond) is a covalent bond in which both electrons in the shared pair come from the same atom.
+
+Example: In the ammonium ion ($\mathrm{NH_4^+}$), the fourth N-H bond is a dative bond. The nitrogen atom of ammonia donates its lone pair to form a bond with $\mathrm{H^+}$ (which has no electrons):
+
+$$\mathrm{NH_3} + \mathrm{H^+} \to \mathrm{NH_4^+}$$
+
+Once formed, the dative bond is indistinguishable from the other three N-H bonds; all four N-H bonds are equivalent.
+
+</details>
+
+**Problem 15:** Explain why the boiling point of $\mathrm{CH_3CH_2OH}$ ($78^\circ\mathrm{C}$) is much higher than that of $\mathrm{CH_3OCH_3}$ ($-24^\circ\mathrm{C}$), even though both have the same molecular formula ($\mathrm{C_2H_6O}$).
+
+*If you get this wrong, revise: Hydrogen Bonding and Functional Group Isomerism*
+
+<details>
+<summary>Solution</summary>
+
+Both compounds are functional group isomers. $\mathrm{CH_3CH_2OH}$ (ethanol) has an -OH group that can form hydrogen bonds between molecules, requiring significant energy to overcome. $\mathrm{CH_3OCH_3}$ (methoxymethane, an ether) has no -OH group; although it has polar C-O bonds, it cannot form hydrogen bonds. Intermolecular forces in methoxymethane are limited to dipole-dipole interactions and van der Waals forces, which are much weaker than hydrogen bonding.
+
+</details>
+
+**Problem 16:** Describe the metallic bonding in sodium and explain why sodium has a lower melting point ($98^\circ\mathrm{C}$) than iron ($1538^\circ\mathrm{C}$).
+
+*If you get this wrong, revise: Metallic Bonding*
+
+<details>
+<summary>Solution</summary>
+
+In sodium, each atom donates one valence electron to form $\mathrm{Na^+}$ ions in a lattice, with delocalised electrons forming a "sea." The metallic bond is the electrostatic attraction between $\mathrm{Na^+}$ ions and the delocalised electrons.
+
+In iron, each atom donates two valence electrons (and some from the 3d subshell), forming $\mathrm{Fe^{2+}}$ ions. Iron has a higher charge on the cations and more delocalised electrons per atom, giving stronger metallic bonds. Also, iron ions are smaller than sodium ions, allowing closer packing and stronger electrostatic attraction. These factors give iron a much higher melting point.
+
+</details>
+
+**Problem 17:** Explain why the first ionisation energy decreases from Be to B and from N to O in Period 2.
+
+*If you get this wrong, revise: Ionisation Energy*
+
+<details>
+<summary>Solution</summary>
+
+**Be ($1s^2\, 2s^2$) to B ($1s^2\, 2s^2\, 2p^1$):** The electron removed from B is in the $2p$ subshell, which is at a slightly higher energy than the $2s$ subshell (from which Be's electron is removed). The $2p$ electron is less tightly held and requires less energy.
+
+**N ($1s^2\, 2s^2\, 2p^3$) to O ($1s^2\, 2s^2\, 2p^4$):** In N, each $2p$ orbital has one electron (Hund's rule). In O, one $2p$ orbital has two paired electrons. The paired electrons repel each other, making it easier to remove one of them from O compared to removing an unpaired electron from N.
+
+</details>
+
+**Problem 18:** Use the concept of electronegativity to explain why $\mathrm{HCl}$ is a polar molecule but $\mathrm{Cl_2}$ is not.
+
+*If you get this wrong, revise: Bond Polarity*
+
+<details>
+<summary>Solution</summary>
+
+In $\mathrm{HCl}$, chlorine ($\mathrm{EN} = 3.0$) is more electronegative than hydrogen ($\mathrm{EN} = 2.1$). The bonding electrons are pulled towards chlorine, creating a dipole with $\mathrm{Cl}^{\delta-}$ and $\mathrm{H}^{\delta+}$. Since the molecule is diatomic and the two atoms are different, the bond dipole does not cancel, making $\mathrm{HCl}$ a polar molecule.
+
+In $\mathrm{Cl_2}$, both atoms are identical (same electronegativity). The bonding electrons are shared equally, so there is no dipole. $\mathrm{Cl_2}$ is a non-polar molecule.
+
+</details>
+
+**Problem 19:** Explain the term "allotrope" and give two examples of allotropes of carbon.
+
+*If you get this wrong, revise: Allotropes of Carbon*
+
+<details>
+<summary>Solution</summary>
+
+An **allotrope** is a different structural form of the same element in the same physical state.
+
+Examples of carbon allotropes:
+
+1. **Diamond:** 3D tetrahedral network ($sp^3$), extremely hard, insulator
+2. **Graphite:** Layered hexagonal sheets ($sp^2$), soft, conducts electricity
+3. **Graphene:** Single layer of graphite, strongest known material
+4. **Fullerene ($\mathrm{C_{60}}$):** Hollow spherical molecule
+5. **Carbon nanotube:** Cylindrical graphene sheet
+
+Any two of the above.
+
+</details>
+
+**Problem 20:** Calculate the enthalpy change for the reaction $\mathrm{NH_3} + \mathrm{HCl} \to \mathrm{NH_4Cl}$ using bond enthalpies.
+
+Given: $\mathrm{N - H} = 391$, $\mathrm{H - Cl} = 432$, $\mathrm{N - H}$ (in $\mathrm{NH_4^+}$) $\approx 391$, $\mathrm{Cl^-}$ (ionic) -- treat $\mathrm{NH_4Cl}$ as ionic, so bond enthalpies are not directly applicable. Instead, state why bond enthalpies give a poor estimate for this reaction.
+
+*If you get this wrong, revise: Bond Enthalpy and Ionic Bonding*
+
+<details>
+<summary>Solution</summary>
+
+Bond enthalpies give a poor estimate because:
+
+1. $\mathrm{NH_4Cl}$ is an ionic solid, not a molecular gas. Bond enthalpies apply only to gaseous molecules.
+2. The reaction involves a change of state (gases forming a solid), and lattice energy is not accounted for.
+3. The actual enthalpy change would need to include: bond breaking in $\mathrm{NH_3}$ and $\mathrm{HCl}$ (endothermic), then lattice energy release for $\mathrm{NH_4Cl}$ (exothermic).
+
+The appropriate method is to use standard enthalpies of formation instead:
+
+$$\Delta H = \Delta H_f^\circ(\mathrm{NH_4Cl}) - \Delta H_f^\circ(\mathrm{NH_3}) - \Delta H_f^\circ(\mathrm{HCl})$$
+
+</details>
+
+**Problem 21:** Explain why helium has the highest first ionisation energy of all elements.
+
+*If you get this wrong, revise: Ionisation Energy and Periodic Trends*
+
+<details>
+<summary>Solution</summary>
+
+Helium has the electron configuration $1s^2$. Its outer electrons are in the first shell ($n = 1$), which is closest to the nucleus. There is minimal shielding (no inner shell electrons). The small atomic radius and high effective nuclear charge mean the electrons are very tightly held. Additionally, the $1s$ subshell is fully occupied, giving helium extra stability as a noble gas. These factors combine to give helium the highest first ionisation energy of all elements ($2372 \mathrm{ kJ/mol}$).
+
+</details>

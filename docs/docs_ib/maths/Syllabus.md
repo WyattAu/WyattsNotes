@@ -178,6 +178,167 @@ This is based on the IB Mathematics: Analysis and Approaches syllabus (first ass
 
 ---
 
+### Worked Examples
+
+### Worked Example: Arithmetic and Geometric Series (Topic 1)
+
+An arithmetic sequence has first term 5 and common difference 3. A geometric sequence has first term
+2 and common ratio 2. Find the smallest value of $n$ such that the sum of the first $n$ terms of the
+geometric sequence exceeds the sum of the first $n$ terms of the arithmetic sequence.
+
+<details>
+<summary>Solution</summary>
+
+- **Arithmetic sum:** $S_n = \dfrac{n}{2}(2(5) + (n-1)(3)) = \dfrac{n}{2}(10 + 3n - 3) = \dfrac{n(3n + 7)}{2}$
+- **Geometric sum:** $T_n = \dfrac{2(2^n - 1)}{2 - 1} = 2(2^n - 1) = 2^{n+1} - 2$
+- We need $2^{n+1} - 2 \gt \dfrac{n(3n + 7)}{2}$.
+- Testing values:
+  - $n = 4$: geometric $= 30$, arithmetic $= \dfrac{4(19)}{2} = 38$. Geometric is smaller.
+  - $n = 5$: geometric $= 62$, arithmetic $= \dfrac{5(22)}{2} = 55$. Geometric exceeds arithmetic.
+- **Answer:** $n = 5$
+
+</details>
+
+### Worked Example: Binomial Expansion (Topic 1)
+
+Expand $(1 + 2x)^5$ in ascending powers of $x$ up to and including the term in $x^3$.
+
+<details>
+<summary>Solution</summary>
+
+- Using the binomial theorem with $a = 1$, $b = 2x$, $n = 5$:
+- $(1 + 2x)^5 = 1 + 5(2x) + 10(2x)^2 + 10(2x)^3 + \cdots$
+- $= 1 + 10x + 40x^2 + 80x^3 + \cdots$
+
+</details>
+
+### Worked Example: Transformations of Functions (Topic 2)
+
+The graph of $y = f(x)$ passes through the point $(3, 5)$. Find the coordinates of the corresponding
+point on the graph of $y = -2f(x - 1) + 3$.
+
+<details>
+<summary>Solution</summary>
+
+- Apply transformations step by step:
+  1. $f(x) \to f(x - 1)$: translate right by 1: $(3, 5) \to (4, 5)$
+  2. $\to 2f(x - 1)$: vertical stretch by factor 2: $(4, 5) \to (4, 10)$
+  3. $\to -2f(x - 1)$: reflect in $x$-axis: $(4, 10) \to (4, -10)$
+  4. $\to -2f(x - 1) + 3$: translate up by 3: $(4, -10) \to (4, -7)$
+- **Answer:** $(4, -7)$
+
+</details>
+
+### Worked Example: Quadratic Inequalities (Topic 2)
+
+Solve the inequality $x^2 - 5x + 6 \lt 0$.
+
+<details>
+<summary>Solution</summary>
+
+- Factorise: $x^2 - 5x + 6 = (x - 2)(x - 3)$
+- The parabola opens upward (positive $x^2$ coefficient) with roots at $x = 2$ and $x = 3$.
+- The expression is negative between the roots: $2 \lt x \lt 3$
+
+</details>
+
+### Worked Example: Trigonometric Equations (Topic 3)
+
+Solve $\cos 2x = \cos x$ for $0 \le x \le \pi$.
+
+<details>
+<summary>Solution</summary>
+
+- Using $\cos 2x = 2\cos^2 x - 1$:
+- $2\cos^2 x - 1 = \cos x \implies 2\cos^2 x - \cos x - 1 = 0$
+- Let $u = \cos x$: $2u^2 - u - 1 = 0 \implies (2u + 1)(u - 1) = 0$
+- $u = -1/2$ or $u = 1$
+- $\cos x = -1/2 \implies x = 2\pi/3$ (only solution in $[0, \pi]$)
+- $\cos x = 1 \implies x = 0$
+- **Solutions:** $x = 0, 2\pi/3$
+
+</details>
+
+### Worked Example: Vector Line Intersection (Topic 3, HL)
+
+Find the point of intersection of the lines $\mathbf{r}_1 = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} +
+\lambda\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$ and $\mathbf{r}_2 = \begin{pmatrix} 3 \\ 0 \\ 1
+\end{pmatrix} + \mu\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$.
+
+<details>
+<summary>Solution</summary>
+
+- **Equate components:**
+  - $1 + 2\lambda = 3 + \mu$ ... (i)
+  - $2 - \lambda = \mu$ ... (ii)
+  - $3\lambda = 1 - \mu$ ... (iii)
+- **From (i) and (ii):** $1 + 2\lambda = 3 + 2 - \lambda \implies 3\lambda = 4 \implies \lambda = 4/3$
+- **From (ii):** $\mu = 2 - 4/3 = 2/3$
+- **Verify with (iii):** $3(4/3) = 4$ and $1 - 2/3 = 1/3$. These do not match, so the lines are **skew** (they do not intersect).
+
+If you get this wrong, revise: Vector equations of lines and intersection conditions (Topic 3).
+
+</details>
+
+### Worked Example: Probability with Venn Diagrams (Topic 4)
+
+In a survey, 60 people were asked whether they liked tea ($T$) and coffee ($C$). 35 liked tea, 40
+liked coffee, and 15 liked both. Find the probability that a randomly chosen person liked neither.
+
+<details>
+<summary>Solution</summary>
+
+- $n(T \cup C) = n(T) + n(C) - n(T \cap C) = 35 + 40 - 15 = 60$
+- Everyone liked at least one, so $n((T \cup C)') = 0$.
+- $P(\mathrm{neither}) = 0/60 = 0$
+
+</details>
+
+### Worked Example: Normal Distribution (Topic 4)
+
+Heights of a population are normally distributed with mean $170$ cm and standard deviation $8$ cm. Find
+the probability that a randomly selected person is between $162$ cm and $178$ cm tall.
+
+<details>
+<summary>Solution</summary>
+
+- **Standardise:**
+  - $z_1 = (162 - 170)/8 = -1.00$
+  - $z_2 = (178 - 170)/8 = 1.00$
+- $P(162 \lt X \lt 178) = P(-1 \lt Z \lt 1) = \Phi(1) - \Phi(-1) = 0.8413 - 0.1587 = 0.6826$
+
+</details>
+
+### Worked Example: Differentiation -- Quotient Rule (Topic 5)
+
+Find the equation of the normal to the curve $y = \dfrac{x^2 + 1}{x - 1}$ at the point where $x = 2$.
+
+<details>
+<summary>Solution</summary>
+
+- **Quotient rule:** $u = x^2 + 1$, $v = x - 1$. Then $u' = 2x$, $v' = 1$.
+- $\dfrac{dy}{dx} = \dfrac{2x(x - 1) - (x^2 + 1)}{(x - 1)^2} = \dfrac{2x^2 - 2x - x^2 - 1}{(x - 1)^2} = \dfrac{x^2 - 2x - 1}{(x - 1)^2}$
+- At $x = 2$: $\dfrac{dy}{dx} = \dfrac{4 - 4 - 1}{1} = -1$
+- **Point:** $y(2) = (4 + 1)/(2 - 1) = 5$, so the point is $(2, 5)$.
+- **Normal gradient:** $m_{\mathrm{normal}} = 1$ (negative reciprocal of $-1$).
+- **Normal equation:** $y - 5 = 1(x - 2) \implies y = x + 3$
+
+</details>
+
+### Worked Example: Volume of Revolution (Topic 5, HL)
+
+Find the volume generated when the region bounded by $y = \sqrt{x}$, the $x$-axis, and $x = 4$ is
+rotated $360$ degrees about the $x$-axis.
+
+<details>
+<summary>Solution</summary>
+
+- $V = \pi\displaystyle\int_0^4 (\sqrt{x})^2\,dx = \pi\displaystyle\int_0^4 x\,dx = \pi\left[\dfrac{x^2}{2}\right]_0^4 = \pi \times 8 = 8\pi$
+
+</details>
+
+---
+
 ### Notes by Level
 
 #### Standard Level (SL)
@@ -212,3 +373,177 @@ manipulation.
   integration techniques
 - [Logic (Discrete Maths)](Discrete-maths/logic.md) -- propositional logic, truth tables, proof
 - [Maths Index](maths.md) -- overview of all mathematics notes
+
+---
+
+## Problem Set
+
+### Number and Algebra
+
+1. Find the sum of the infinite geometric series $8 + 4 + 2 + 1 + \cdots$
+
+<details>
+<summary>Solution</summary>
+
+- $u_1 = 8$, $r = 4/8 = 0.5$. Since $|r| \lt 1$, the sum converges.
+- $S_\infty = \dfrac{8}{1 - 0.5} = 16$
+
+If you get this wrong, revise: Sum to infinity of geometric series (Topic 1).
+
+</details>
+
+2. Find the coefficient of $x^4$ in the expansion of $(1 - 3x)^8$.
+
+<details>
+<summary>Solution</summary>
+
+- General term: $\dbinom{8}{r}(-3x)^r$. For $x^4$, need $r = 4$.
+- $\dbinom{8}{4}(-3)^4 = 70 \times 81 = 5670$
+
+If you get this wrong, revise: Binomial theorem, finding specific coefficients (Topic 1).
+
+</details>
+
+### Functions
+
+3. The function $f(x) = 2x^3 - 3x^2 - 12x + 5$ has a local maximum and a local minimum. Find the
+   coordinates of both.
+
+<details>
+<summary>Solution</summary>
+
+- $f'(x) = 6x^2 - 6x - 12 = 6(x^2 - x - 2) = 6(x - 2)(x + 1)$
+- Stationary points at $x = 2$ and $x = -1$.
+- $f''(x) = 12x - 6$
+- At $x = -1$: $f''(-1) = -18 \lt 0$ (local max). $f(-1) = -2 - 3 + 12 + 5 = 12$. Point: $(-1, 12)$.
+- At $x = 2$: $f''(2) = 18 \gt 0$ (local min). $f(2) = 16 - 12 - 24 + 5 = -15$. Point: $(2, -15)$.
+
+If you get this wrong, revise: First and second derivative tests (Topic 5).
+
+</details>
+
+4. Find the inverse of $f(x) = \dfrac{3x + 2}{x - 1}$ and state its domain.
+
+<details>
+<summary>Solution</summary>
+
+- Let $y = \dfrac{3x + 2}{x - 1}$. Swap: $x = \dfrac{3y + 2}{y - 1}$.
+- $x(y - 1) = 3y + 2 \implies xy - x = 3y + 2 \implies xy - 3y = x + 2$
+- $y(x - 3) = x + 2 \implies f^{-1}(x) = \dfrac{x + 2}{x - 3}$
+- **Domain of $f^{-1}$:** $x \neq 3$ (i.e. $\mathbb{R} \setminus \\{3\\}$).
+
+If you get this wrong, revise: Finding inverse functions and domain restrictions (Topic 2).
+
+</details>
+
+### Geometry and Trigonometry
+
+5. Triangle $ABC$ has sides $a = 9$, $b = 7$, $c = 5$. Find the largest angle.
+
+<details>
+<summary>Solution</summary>
+
+- The largest angle is opposite the longest side, so angle $A$:
+- $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc} = \dfrac{49 + 25 - 81}{70} = \dfrac{-7}{70} = -0.1$
+- $A = \arccos(-0.1) = 95.7$ degrees
+
+If you get this wrong, revise: Cosine rule for finding an angle (Topic 3).
+
+</details>
+
+6. Find the area of a triangle with sides $6$ cm and $8$ cm and an included angle of $50$ degrees.
+
+<details>
+<summary>Solution</summary>
+
+- $A = \dfrac{1}{2}ab\sin C = \dfrac{1}{2}(6)(8)\sin 50^\circ = 24 \times 0.7660 = 18.4$ cm$^2$
+
+If you get this wrong, revise: Area of a triangle formula $A = \frac{1}{2}ab\sin C$ (Topic 3).
+
+</details>
+
+### Probability and Statistics
+
+7. A bag contains 4 red and 6 blue marbles. Three marbles are drawn without replacement. Find the
+   probability that exactly two are red.
+
+<details>
+<summary>Solution</summary>
+
+- Total ways to choose 3 from 10: $\dbinom{10}{3} = 120$
+- Ways to choose 2 red from 4 and 1 blue from 6: $\dbinom{4}{2} \times \dbinom{6}{1} = 6 \times 6 = 36$
+- $P = 36/120 = 3/10 = 0.3$
+
+If you get this wrong, revise: Combinations and probability (Topics 1, 4).
+
+</details>
+
+8. Scores on a test are normally distributed with $\mu = 65$ and $\sigma = 10$. The top 10% of
+   students receive an A grade. Find the minimum score for an A.
+
+<details>
+<summary>Solution</summary>
+
+- We need the 90th percentile: $P(X \lt c) = 0.90$
+- $P(Z \lt z) = 0.90 \implies z = 1.282$
+- $c = \mu + z\sigma = 65 + 1.282 \times 10 = 65 + 12.82 = 77.8$
+- **Minimum score for an A: $78$ (rounding up).**
+
+If you get this wrong, revise: Inverse normal distribution and percentiles (Topic 4).
+
+</details>
+
+### Calculus
+
+9. Find $\displaystyle\int_0^{\pi/2} \sin x \cos x\,dx$.
+
+<details>
+<summary>Solution</summary>
+
+- Let $u = \sin x$, $du = \cos x\,dx$:
+- $\displaystyle\int_0^{\pi/2} u\,du = \left[\dfrac{u^2}{2}\right]_0^{\pi/2} = \left[\dfrac{\sin^2 x}{2}\right]_0^{\pi/2} = \dfrac{1}{2} - 0 = \dfrac{1}{2}$
+
+If you get this wrong, revise: Integration by substitution (Topic 5).
+
+</details>
+
+10. Find the equation of the tangent to $y = \ln(x^2 + 1)$ at $x = 1$.
+
+<details>
+<summary>Solution</summary>
+
+- $\dfrac{dy}{dx} = \dfrac{2x}{x^2 + 1}$ (chain rule)
+- At $x = 1$: gradient $= 2/2 = 1$; $y = \ln 2$
+- Tangent: $y - \ln 2 = 1(x - 1) \implies y = x - 1 + \ln 2$
+
+If you get this wrong, revise: Chain rule and equation of a tangent (Topic 5).
+
+</details>
+
+11. Evaluate $\displaystyle\int_1^e \dfrac{\ln x}{x}\,dx$.
+
+<details>
+<summary>Solution</summary>
+
+- Substitution: let $u = \ln x$, $du = dx/x$.
+- When $x = 1$, $u = 0$; when $x = e$, $u = 1$.
+- $\displaystyle\int_0^1 u\,du = \left[\dfrac{u^2}{2}\right]_0^1 = \dfrac{1}{2}$
+
+If you get this wrong, revise: Integration by substitution (Topic 5).
+
+</details>
+
+12. Solve the differential equation $\dfrac{dy}{dx} = \dfrac{x}{y}$ given that $y = 2$ when $x = 1$.
+
+<details>
+<summary>Solution</summary>
+
+- **Separate variables:** $y\,dy = x\,dx$
+- **Integrate:** $\dfrac{y^2}{2} = \dfrac{x^2}{2} + C$
+- **Apply initial condition:** $4/2 = 1/2 + C \implies C = 3/2$
+- $y^2 = x^2 + 3$
+- Since $y = 2 \gt 0$ at $x = 1$: $y = \sqrt{x^2 + 3}$
+
+If you get this wrong, revise: Separable differential equations (HL, Topic 5).
+
+</details>

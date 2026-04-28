@@ -114,6 +114,25 @@ $E(X) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.4) = 0.1 + 0.4 + 0.9 + 1.6 = 3.0$
 
 :::
 
+<details>
+<summary>Worked Example: E(X) and Var(X) from a Table</summary>
+
+A random variable $X$ has the following PMF:
+
+| $x$        | 1   | 2   | 3   | 4   | 5   |
+| ---------- | --- | --- | --- | --- | --- |
+| $P(X = x)$ | 0.1 | 0.2 | 0.3 | 0.25 | 0.15 |
+
+$$E(X) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.25) + 5(0.15) = 0.1 + 0.4 + 0.9 + 1.0 + 0.75 = 3.15$$
+
+$$E(X^2) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.25) + 25(0.15) = 0.1 + 0.8 + 2.7 + 4.0 + 3.75 = 11.35$$
+
+$$\mathrm{Var}(X) = 11.35 - 3.15^2 = 11.35 - 9.9225 = 1.4275$$
+
+$$\sigma = \sqrt{1.4275} \approx 1.195$$
+
+</details>
+
 ---
 
 ## Binomial Distribution
@@ -225,6 +244,28 @@ $P(X \ge 7) \approx 0.0181$ and $P(X \ge 8) \approx 0.0042$, so the minimum pass
 
 :::
 
+<details>
+<summary>Worked Example: Binomial Probability with Normal Approximation</summary>
+
+A company manufactures light bulbs. On average, 8% are defective. A random sample of 100 bulbs is
+selected. Find the probability that more than 12 are defective.
+
+Let $X \sim B(100, 0.08)$.
+
+Check conditions for normal approximation: $np = 8 \ge 5$ and $n(1-p) = 92 \ge 5$.
+
+$$\mu = 100(0.08) = 8, \quad \sigma^2 = 100(0.08)(0.92) = 7.36, \quad \sigma = 2.713$$
+
+With continuity correction:
+
+$$P(X \gt 12) = P(X \ge 13) \approx P\!\left(Z \gt \frac{12.5 - 8}{2.713}\right) = P(Z \gt 1.659)$$
+
+$$\approx 1 - \Phi(1.659) \approx 1 - 0.9515 = 0.0485$$
+
+There is approximately a 4.85% chance that more than 12 bulbs are defective.
+
+</details>
+
 ---
 
 ## Poisson Distribution
@@ -314,6 +355,35 @@ $P(X \le 2) = (499/500)^{2000} + 2000(1/500)(499/500)^{1999} + \binom{2000}{2}(1
 This is computationally intensive but gives a result extremely close to 0.2381.
 
 :::
+
+<details>
+<summary>Worked Example: Poisson Distribution</summary>
+
+A call centre receives calls at a rate of $\lambda = 4.2$ per 10-minute interval.
+
+**(a) Find the probability of receiving exactly 6 calls in a 10-minute interval.**
+
+$$P(X = 6) = \frac{e^{-4.2} \cdot 4.2^6}{6!} = \frac{e^{-4.2} \times 5489.0}{720}$$
+
+$$= 7.624 \times e^{-4.2} \approx 7.624 \times 0.0150 \approx 0.1142$$
+
+**(b) Find the probability of receiving at most 3 calls.**
+
+$$P(X \le 3) = e^{-4.2}\!\left(1 + 4.2 + \frac{17.64}{2} + \frac{74.088}{6}\right) = e^{-4.2}(1 + 4.2 + 8.82 + 12.348)$$
+
+$$= 26.368 \times e^{-4.2} \approx 0.3954$$
+
+**(c) Over a full hour (six intervals), find the probability of more than 30 calls.**
+
+Over one hour: $Y \sim \mathrm{Po}(6 \times 4.2) = \mathrm{Po}(25.2)$.
+
+Using the normal approximation (since $\lambda$ is large):
+
+$$\mu = 25.2, \quad \sigma = \sqrt{25.2} = 5.020$$
+
+$$P(Y \gt 30) \approx P\!\left(Z \gt \frac{30.5 - 25.2}{5.020}\right) = P(Z \gt 1.056) \approx 0.1455$$
+
+</details>
 
 ---
 
@@ -419,6 +489,26 @@ $\approx 0.3665$
 Exact binomial: $P(X \le 30) \approx 0.3642$. The approximation is very close.
 
 :::
+
+<details>
+<summary>Worked Example: Normal Distribution with Unknown Parameters</summary>
+
+Heights of a population are normally distributed. The 90th percentile is $182\,\mathrm{cm}$ and the
+30th percentile is $164\,\mathrm{cm}$. Find the mean and standard deviation.
+
+$$P(X \le 182) = 0.90 \implies \frac{182 - \mu}{\sigma} = 1.282$$
+
+$$P(X \le 164) = 0.30 \implies \frac{164 - \mu}{\sigma} = -0.524$$
+
+Subtracting the second equation from the first:
+
+$$\frac{18}{\sigma} = 1.806 \implies \sigma = \frac{18}{1.806} = 9.97\,\mathrm{cm}$$
+
+From the first equation: $\mu = 182 - 1.282(9.97) = 182 - 12.78 = 169.2\,\mathrm{cm}$.
+
+So $\mu \approx 169\,\mathrm{cm}$ and $\sigma \approx 10\,\mathrm{cm}$.
+
+</details>
 
 ---
 
@@ -532,6 +622,29 @@ $P(X \gt 5) = (0.28)^5 \approx 0.00172$
 $E(X) = 1/0.72 \approx 1.389$ attempts.
 
 :::
+
+<details>
+<summary>Worked Example: Geometric Distribution</summary>
+
+A die is rolled repeatedly until a 6 appears.
+
+$X \sim \mathrm{Geo}(1/6)$.
+
+**(a) Find the probability that the first 6 appears on the 4th roll.**
+
+$$P(X = 4) = \left(\frac{5}{6}\right)^3 \times \frac{1}{6} = \frac{125}{1296} \approx 0.0965$$
+
+**(b) Find the probability that at least 10 rolls are needed.**
+
+$$P(X \ge 10) = (1 - p)^{10-1} = \left(\frac{5}{6}\right)^9 = 0.1938$$
+
+**(c) Find the expected number of rolls.**
+
+$$E(X) = \frac{1}{p} = \frac{1}{1/6} = 6$$
+
+On average, 6 rolls are needed to get the first 6.
+
+</details>
 
 ---
 
@@ -752,6 +865,26 @@ $P(X - Y \gt 0) = P\!\left(Z \gt \dfrac{0.2}{\sqrt{0.13}}\right) = P(Z \gt 0.555
 
 :::
 
+<details>
+<summary>Worked Example: Combining Random Variables</summary>
+
+$X \sim B(12, 0.3)$ and $Y \sim \mathrm{Po}(5)$ are independent. Find:
+
+**(a)** $E(3X - 2Y)$
+
+$$E(3X - 2Y) = 3E(X) - 2E(Y) = 3(12 \times 0.3) - 2(5) = 3(3.6) - 10 = 10.8 - 10 = 0.8$$
+
+**(b)** $\mathrm{Var}(3X - 2Y)$
+
+$$\mathrm{Var}(3X - 2Y) = 9\mathrm{Var}(X) + 4\mathrm{Var}(Y) = 9(12 \times 0.3 \times 0.7) + 4(5)$$
+
+$$= 9(2.52) + 20 = 22.68 + 20 = 42.68$$
+
+Note: the variance of the difference uses addition (plus signs for both terms), and the constants
+are squared.
+
+</details>
+
 ---
 
 ## IB Exam-Style Questions
@@ -890,3 +1023,294 @@ clearly state whether independence is assumed. For confidence intervals, state t
 interpret in context.
 
 :::
+
+---
+
+## Problem Set
+
+### Problem 1
+
+A discrete random variable $X$ has PMF $P(X = x) = \frac{x + 1}{15}$ for $x = 0, 1, 2, 3, 4$. Find
+$E(X)$, $\mathrm{Var}(X)$, and $P(X \ge 2)$.
+
+<details>
+<summary>Solution</summary>
+
+Verify: $\sum_{x=0}^{4}\frac{x+1}{15} = \frac{1+2+3+4+5}{15} = \frac{15}{15} = 1$.
+
+$$E(X) = 0\!\left(\frac{1}{15}\right) + 1\!\left(\frac{2}{15}\right) + 2\!\left(\frac{3}{15}\right) + 3\!\left(\frac{4}{15}\right) + 4\!\left(\frac{5}{15}\right)$$
+
+$$= \frac{0 + 2 + 6 + 12 + 20}{15} = \frac{40}{15} = \frac{8}{3} \approx 2.667$$
+
+$$E(X^2) = 0 + 1\!\left(\frac{2}{15}\right) + 4\!\left(\frac{3}{15}\right) + 9\!\left(\frac{4}{15}\right) + 16\!\left(\frac{5}{15}\right) = \frac{0 + 2 + 12 + 36 + 80}{15} = \frac{130}{15} = \frac{26}{3}$$
+
+$$\mathrm{Var}(X) = \frac{26}{3} - \left(\frac{8}{3}\right)^2 = \frac{26}{3} - \frac{64}{9} = \frac{78 - 64}{9} = \frac{14}{9} \approx 1.556$$
+
+$$P(X \ge 2) = \frac{3}{15} + \frac{4}{15} + \frac{5}{15} = \frac{12}{15} = \frac{4}{5} = 0.8$$
+
+**If you get this wrong, revise:** Discrete Random Variables section.
+
+</details>
+
+### Problem 2
+
+$X \sim B(25, 0.35)$. Find $P(X = 10)$, $P(X \le 5)$, and $P(X \ge 15)$.
+
+<details>
+<summary>Solution</summary>
+
+$$P(X = 10) = \binom{25}{10}(0.35)^{10}(0.65)^{15} \approx 0.1268$$
+
+$$P(X \le 5) = \sum_{x=0}^{5}\binom{25}{x}(0.35)^x(0.65)^{25-x} \approx 0.0334$$
+
+$$P(X \ge 15) = 1 - P(X \le 14) \approx 1 - 0.9752 = 0.0248$$
+
+**If you get this wrong, revise:** Binomial Distribution section.
+
+</details>
+
+### Problem 3
+
+A bookshop sells an average of 3.2 rare books per week. $X \sim \mathrm{Po}(3.2)$ is the number sold
+in a week. Find $P(X = 4)$, $P(X = 0)$, and $P(X \gt 5)$.
+
+<details>
+<summary>Solution</summary>
+
+$$P(X = 4) = \frac{e^{-3.2} \cdot 3.2^4}{4!} = \frac{104.858 \times e^{-3.2}}{24} \approx 0.1781$$
+
+$$P(X = 0) = e^{-3.2} \approx 0.0408$$
+
+$$P(X \gt 5) = 1 - P(X \le 5) = 1 - e^{-3.2}\!\left(1 + 3.2 + \frac{10.24}{2} + \frac{32.768}{6} + \frac{104.858}{24} + \frac{335.544}{120}\right)$$
+
+$$= 1 - e^{-3.2}(1 + 3.2 + 5.12 + 5.461 + 4.369 + 2.796) = 1 - e^{-3.2}(21.946) \approx 1 - 0.8955 = 0.1045$$
+
+**If you get this wrong, revise:** Poisson Distribution section.
+
+</details>
+
+### Problem 4
+
+Exam scores follow $N(65, 64)$ (mean 65, variance 64). Find the probability that a randomly chosen
+student scores above 75, and the score that is exceeded by only 10% of students.
+
+<details>
+<summary>Solution</summary>
+
+$\mu = 65$, $\sigma = \sqrt{64} = 8$.
+
+$$P(X \gt 75) = P\!\left(Z \gt \frac{75 - 65}{8}\right) = P(Z \gt 1.25) = 1 - \Phi(1.25) \approx 1 - 0.8944 = 0.1056$$
+
+For the 90th percentile (exceeded by only 10%):
+
+$$P(X \le x) = 0.90 \implies \frac{x - 65}{8} = 1.282 \implies x = 65 + 1.282(8) = 75.26$$
+
+A score of approximately 75.3 is exceeded by only 10% of students.
+
+**If you get this wrong, revise:** Normal Distribution section.
+
+</details>
+
+### Problem 5
+
+The waiting time for a train is uniformly distributed between 0 and 12 minutes. Find the probability
+that the waiting time is (a) less than 5 minutes, (b) between 7 and 10 minutes, (c) more than 8
+minutes given that it has already been 3 minutes.
+
+<details>
+<summary>Solution</summary>
+
+$X \sim U(0, 12)$.
+
+**(a)** $P(X \lt 5) = 5/12 \approx 0.4167$
+
+**(b)** $P(7 \lt X \lt 10) = (10 - 7)/12 = 3/12 = 0.25$
+
+**(c)** Given 3 minutes already waited, the remaining time is $U(0, 9)$ (memoryless property of the
+uniform distribution):
+
+$P(\mathrm{remaining} \gt 5) = 4/9 \approx 0.4444$
+
+Alternatively: $P(X \gt 8 \mid X \gt 3) = P(X \gt 8)/P(X \gt 3) = (4/12)/(9/12) = 4/9$.
+
+**If you get this wrong, revise:** Continuous Uniform Distribution section.
+
+</details>
+
+### Problem 6
+
+$X \sim \mathrm{Geo}(0.25)$. Find the smallest $n$ such that $P(X \le n) \ge 0.95$.
+
+<details>
+<summary>Solution</summary>
+
+$$P(X \le n) = 1 - (1 - p)^n = 1 - 0.75^n \ge 0.95$$
+
+$$0.75^n \le 0.05$$
+
+$$n \ln(0.75) \le \ln(0.05)$$
+
+$$n \ge \frac{\ln(0.05)}{\ln(0.75)} = \frac{-2.996}{-0.288} = 10.40$$
+
+So $n = 11$ trials are needed.
+
+**If you get this wrong, revise:** Geometric Distribution section.
+
+</details>
+
+### Problem 7
+
+$X \sim \mathrm{NB}(3, 0.2)$. Find $P(X = 8)$ and $\mathrm{Var}(X)$.
+
+<details>
+<summary>Solution</summary>
+
+$$P(X = 8) = \binom{7}{2}(0.2)^3(0.8)^5 = 21 \times 0.008 \times 0.32768 = 0.05505$$
+
+$$E(X) = \frac{3}{0.2} = 15$$
+
+$$\mathrm{Var}(X) = \frac{3(0.8)}{0.04} = \frac{2.4}{0.04} = 60$$
+
+$$\sigma = \sqrt{60} \approx 7.75$$
+
+**If you get this wrong, revise:** Negative Binomial Distribution section.
+
+</details>
+
+### Problem 8
+
+The masses of packets of sugar are normally distributed with mean $500\,\mathrm{g}$ and standard
+deviation $5\,\mathrm{g}$. A sample of 36 packets is selected. Find the probability that the sample
+mean is between $498\,\mathrm{g}$ and $503\,\mathrm{g}$.
+
+<details>
+<summary>Solution</summary>
+
+By the CLT:
+
+$$\bar{X} \sim N\!\left(500, \frac{25}{36}\right)$$
+
+$$\sigma_{\bar{X}} = \frac{5}{6} \approx 0.833$$
+
+$$P(498 \lt \bar{X} \lt 503) = P\!\left(\frac{498 - 500}{5/6} \lt Z \lt \frac{503 - 500}{5/6}\right) = P(-2.4 \lt Z \lt 3.6)$$
+
+$$= \Phi(3.6) - \Phi(-2.4) = 0.9998 - 0.0082 = 0.9916$$
+
+**If you get this wrong, revise:** Central Limit Theorem section.
+
+</details>
+
+### Problem 9
+
+A 95% confidence interval for the mean diameter of bolts is $(10.02\,\mathrm{mm}, 10.18\,\mathrm{mm})$
+based on a sample of size 50. The population standard deviation is known to be
+$\sigma = 0.4\,\mathrm{mm}$. Find the sample mean and verify the confidence interval.
+
+<details>
+<summary>Solution</summary>
+
+The sample mean is the midpoint of the interval:
+
+$$\bar{x} = \frac{10.02 + 10.18}{2} = 10.10\,\mathrm{mm}$$
+
+The margin of error is half the width:
+
+$$E = \frac{10.18 - 10.02}{2} = 0.08\,\mathrm{mm}$$
+
+Verify: $E = z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} = 1.960 \times \frac{0.4}{\sqrt{50}} = 1.960 \times 0.0566 = 0.1109$
+
+The calculated margin of error ($0.1109$) exceeds the stated margin ($0.08$). This suggests the
+confidence interval was constructed with a different confidence level or the stated $\sigma$ does
+not match the data. If we solve for the confidence level that gives $E = 0.08$:
+
+$$z_{\alpha/2} = \frac{0.08}{0.4/\sqrt{50}} = \frac{0.08}{0.0566} = 1.413$$
+
+This corresponds to approximately 84% confidence, not 95%.
+
+**If you get this wrong, revise:** Confidence Intervals section.
+
+</details>
+
+### Problem 10
+
+$X \sim B(15, 0.4)$ and $Y \sim B(20, 0.3)$ are independent. Find $E(X + Y)$,
+$\mathrm{Var}(X - Y)$, and $P(X + Y = 10)$.
+
+<details>
+<summary>Solution</summary>
+
+$$E(X) = 15(0.4) = 6, \quad E(Y) = 20(0.3) = 6$$
+
+$$E(X + Y) = 6 + 6 = 12$$
+
+$$\mathrm{Var}(X) = 15(0.4)(0.6) = 3.6, \quad \mathrm{Var}(Y) = 20(0.3)(0.7) = 4.2$$
+
+$$\mathrm{Var}(X - Y) = 3.6 + 4.2 = 7.8$$
+
+For $P(X + Y = 10)$, enumerate pairs $(x, y)$ where $x + y = 10$, $0 \le x \le 15$, $0 \le y \le 20$:
+
+This requires summing over $x = 0$ to $x = 10$:
+
+$$P(X + Y = 10) = \sum_{x=0}^{10} P(X = x)P(Y = 10 - x)$$
+
+This is computationally intensive without a GDC, but the key principle is clear: since $X$ and $Y$ are
+independent binomial variables with the same success probability ($p = 0.3$ and $p = 0.4$ differ,
+so the sum is **not** binomial), the distribution of $X + Y$ must be found by convolution.
+
+**If you get this wrong, revise:** Combining Random Variables section.
+
+</details>
+
+### Problem 11
+
+The lifetimes of batteries are normally distributed with mean $500\,\mathrm{hours}$ and standard
+deviation $50\,\mathrm{hours}$. Find the probability that a randomly selected battery lasts more than
+$550\,\mathrm{hours}$. If four batteries are selected independently, find the probability that at
+least three last more than $550\,\mathrm{hours}$.
+
+<details>
+<summary>Solution</summary>
+
+$$P(X \gt 550) = P\!\left(Z \gt \frac{550 - 500}{50}\right) = P(Z \gt 1) = 1 - 0.8413 = 0.1587$$
+
+Let $Y$ be the number (out of 4) lasting more than 550 hours. $Y \sim B(4, 0.1587)$.
+
+$$P(Y \ge 3) = P(Y = 3) + P(Y = 4)$$
+
+$$= \binom{4}{3}(0.1587)^3(0.8413) + (0.1587)^4$$
+
+$$= 4(0.003997)(0.8413) + 0.000635 = 0.01345 + 0.000635 = 0.01409$$
+
+Approximately 1.4% chance that at least three out of four batteries last more than 550 hours.
+
+**If you get this wrong, revise:** Normal Distribution and Binomial Distribution sections.
+
+</details>
+
+### Problem 12
+
+Use the Poisson approximation to the binomial to estimate the probability of getting 3 or more
+sixes when rolling a fair die 60 times.
+
+<details>
+<summary>Solution</summary>
+
+$X \sim B(60, 1/6)$. $\lambda = np = 60/6 = 10$.
+
+Approximate: $X \approx \mathrm{Po}(10)$.
+
+Check conditions: $n = 60 \ge 50$, $p = 1/6 \le 0.1$? No, $p = 0.167 \gt 0.1$. The Poisson
+approximation is less accurate here but still usable as an estimate.
+
+$$P(X \ge 3) = 1 - P(X \le 2) = 1 - e^{-10}\!\left(1 + 10 + \frac{100}{2}\right)$$
+
+$$= 1 - 61e^{-10} = 1 - 61(0.0000454) = 1 - 0.00277 = 0.9972$$
+
+Exact binomial: $P(X \le 2) = \binom{60}{0}(5/6)^{60} + \binom{60}{1}(1/6)(5/6)^{59} + \binom{60}{2}(1/6)^2(5/6)^{58}$
+
+This gives approximately $P(X \le 2) \approx 0.00268$, so $P(X \ge 3) \approx 0.9973$. The
+approximation is quite close despite $p \gt 0.1$ because $\lambda = 10$ is moderate.
+
+**If you get this wrong, revise:** Poisson as a Limit of the Binomial section.
+
+</details>

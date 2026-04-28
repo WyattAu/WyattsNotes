@@ -107,6 +107,36 @@ $$A \odot B = A \cdot B + \overline{A} \cdot \overline{B}$$
 These identities are essential when simplifying expressions that contain XOR/XNOR into standard
 forms suitable for implementation with basic gates or Karnaugh maps.
 
+### Worked Example: Constructing a Truth Table
+
+Construct the truth table for $F = (A + B) \cdot \overline{C}$.
+
+<details>
+<summary>Solution</summary>
+
+Build column by column, evaluating each sub-expression:
+
+| `A` | `B` | `C` | $A + B$ | $\overline{C}$ | $F = (A + B) \cdot \overline{C}$ |
+| --- | --- | --- | ------- | -------------- | ------------------------------ |
+| 0   | 0   | 0   | 0       | 1              | 0                              |
+| 0   | 0   | 1   | 0       | 0              | 0                              |
+| 0   | 1   | 0   | 1       | 1              | 1                              |
+| 0   | 1   | 1   | 1       | 0              | 0                              |
+| 1   | 0   | 0   | 1       | 1              | 1                              |
+| 1   | 0   | 1   | 1       | 0              | 0                              |
+| 1   | 1   | 0   | 1       | 1              | 1                              |
+| 1   | 1   | 1   | 1       | 0              | 0                              |
+
+Minterms (where $F = 1$): $\overline{A}B\overline{C}$, $A\overline{B}\overline{C}$, $AB\overline{C}$.
+
+SOP expression: $F = \overline{A}B\overline{C} + A\overline{B}\overline{C} + AB\overline{C}$
+
+This can be simplified: $F = (B + A) \cdot \overline{C}$ (which is the original expression, confirming
+our truth table is correct). Further simplification: the three minterms share $\overline{C}$, and the
+OR of the other terms is $B + A = A + B$, so $F = (A + B) \cdot \overline{C}$.
+
+</details>
+
 ## Truth Tables for Multiple Variables
 
 ### Three-Variable Truth Tables
@@ -204,6 +234,44 @@ $$\overline{A \cdot B \cdot C} = \overline{A} + \overline{B} + \overline{C}$$
 $$\overline{A + B + C} = \overline{A} \cdot \overline{B} \cdot \overline{C}$$
 
 The general rule: invert each variable, and swap AND with OR (or vice versa).
+
+### Worked Example: Applying De Morgan's Laws
+
+Simplify $F = \overline{A \cdot B + A \cdot C}$ using De Morgan's Laws.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1:** Apply De Morgan's to the outer NOT (treating $A \cdot B + A \cdot C$ as the inner
+expression):
+
+$$F = \overline{A \cdot B} \cdot \overline{A \cdot C}$$
+
+**Step 2:** Apply De Morgan's to each remaining term:
+
+$$F = (\overline{A} + \overline{B}) \cdot (\overline{A} + \overline{C})$$
+
+**Step 3:** Apply the distributive law:
+
+$$F = \overline{A} \cdot \overline{A} + \overline{A} \cdot \overline{C} + \overline{B} \cdot \overline{A} + \overline{B} \cdot \overline{C}$$
+
+**Step 4:** Simplify using idempotent law ($\overline{A} \cdot \overline{A} = \overline{A}$) and
+commutative:
+
+$$F = \overline{A} + \overline{A} \cdot \overline{C} + \overline{A} \cdot \overline{B} + \overline{B} \cdot \overline{C}$$
+
+**Step 5:** Apply absorption ($\overline{A} + \overline{A} \cdot \overline{C} = \overline{A}$):
+
+$$F = \overline{A} + \overline{A} \cdot \overline{B} + \overline{B} \cdot \overline{C}$$
+
+**Step 6:** Apply absorption again ($\overline{A} + \overline{A} \cdot \overline{B} = \overline{A}$):
+
+$$F = \overline{A} + \overline{B} \cdot \overline{C}$$
+
+The simplified expression requires 1 NOT, 1 AND, and 1 OR gate (3 gates total), compared to the
+original which requires 2 AND, 1 OR, and 1 NOT (4 gates total) -- or more if not shared.
+
+</details>
 
 ### Consensus Theorem
 
@@ -319,6 +387,39 @@ Apply De Morgan's in reverse: $F = \overline{\overline{A \cdot B} \cdot \overlin
 
 This requires two NAND gates for $\overline{A \cdot B}$ and $\overline{C \cdot D}$, and a third NAND
 gate to combine them. Total: 3 NAND gates.
+
+### Worked Example: Implementing a Function with NAND Gates Only
+
+Implement $F = A \cdot B + C$ using only NAND gates.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1:** Convert to NAND-NAND form. We need the expression in the form
+$\overline{X \cdot Y}$ where $X$ and $Y$ are themselves NAND expressions.
+
+The SOP form is $F = A \cdot B + C$. Apply De Morgan's in reverse:
+
+$$F = \overline{\overline{A \cdot B} \cdot \overline{C}}$$
+
+**Step 2:** Verify: $\overline{\overline{A \cdot B} \cdot \overline{C}} = \overline{\overline{A \cdot B}} + \overline{\overline{C}} = A \cdot B + C$. Correct.
+
+**Step 3:** Implement:
+
+- NAND gate 1: inputs $A, B$ → output $\overline{A \cdot B}$
+- NAND gate 2 (as NOT): inputs $\overline{A \cdot B}, \overline{A \cdot B}$ → output $A \cdot B$
+  (Wait, we do not need this -- the final NAND gate handles the OR.)
+
+Actually, the expression $\overline{\overline{A \cdot B} \cdot \overline{C}}$ needs $\overline{C}$.
+To get $\overline{C}$ from a NAND gate: NAND gate 2: inputs $C, C$ → output $\overline{C \cdot C} = \overline{C}$.
+
+- NAND gate 1: inputs $A, B$ → $\overline{A \cdot B}$
+- NAND gate 2: inputs $C, C$ → $\overline{C}$
+- NAND gate 3: inputs $\overline{A \cdot B}, \overline{C}$ → $\overline{\overline{A \cdot B} \cdot \overline{C}} = A \cdot B + C$
+
+Total: **3 NAND gates**.
+
+</details>
 
 ### NOR as a Universal Gate
 
@@ -468,6 +569,80 @@ So we add $A\overline{B}\overline{C}$.
 $$F = \overline{B}\overline{D} + \overline{A}\overline{C}D + A\overline{B}\overline{C}$$
 
 This requires three AND gates and one OR gate, for a total of 4 gates with 9 gate inputs.
+
+### Worked Example: 3-Variable K-Map with Don't Cares
+
+Minimize $F(A, B, C) = \sum(1, 3, 5) + d(0, 6)$ where $d$ denotes don't care conditions.
+
+<details>
+<summary>Solution</summary>
+
+The minterms are $m_1, m_3, m_5$. The don't cares are $m_0, m_6$. Place these on the K-map:
+
+|       | `BC` = 00 | `BC` = 01 | `BC` = 11 | `BC` = 10 |
+| ----- | --------- | --------- | --------- | --------- |
+| `A`=0 | X         | 1         | 1         | 0         |
+| `A`=1 | 0         | 1         | 0         | X         |
+
+**Without don't cares:**
+- $m_1, m_3$: group vertically → $\overline{A}C$ (columns 01 and 11, row A=0)
+- $m_5$: isolated → $A\overline{B}C$
+
+$F = \overline{A}C + A\overline{B}C$ (2 terms, 5 literals)
+
+**With don't cares:** Set $m_0$ (X at 0,00) to 1 and $m_6$ (X at 1,10) to 1 to form larger groups.
+
+- Group $(0,00)$ and $(0,01)$: if X=1, this gives $\overline{A}\overline{B}$
+- Group $(0,01)$ and $(0,11)$: gives $\overline{A}C$
+- Group $(1,01)$ and $(0,01)$: gives $\overline{B}C$
+- Group $(1,10)$: if X=1, can pair with $(1,11)$? No, $(1,11)=0$. Can pair with $(0,10)$? No, $(0,10)=0$.
+  So $(1,10)$ remains isolated as $AB\overline{C}$... but that is a single cell.
+
+Better approach: use $m_0$ and $m_1$ together → $\overline{A}\overline{B}$ (horizontal pair). Then $m_1$
+and $m_3$ → $\overline{A}C$ (horizontal pair). $m_1$ and $m_5$ → $\overline{B}C$ (vertical pair).
+
+Optimal grouping:
+- $\overline{B}C$: covers $m_1, m_5$ (2 cells)
+- $\overline{A}C$: covers $m_1, m_3$ (2 cells, $m_1$ overlaps)
+
+But $m_3$ is not covered by $\overline{B}C$. And $m_5$ is not covered by $\overline{A}C$. So we need
+both. Can we do better with don't cares?
+
+Set $m_0$ to 1: pair $m_0, m_1$ → $\overline{A}\overline{B}$. Set $m_6$ to 1: $m_6$ is isolated.
+
+Try: $\overline{B}C$ covers $m_1, m_5$. $\overline{A}\overline{B}$ covers $m_0, m_1$. $m_3$ is not
+covered yet. We need $\overline{A}C$ or $BC$ for $m_3$. $\overline{A}C$ also covers $m_1$.
+
+So: $F = \overline{B}C + \overline{A}\overline{B} + \overline{A}C$
+
+Check coverage: $m_0$ (don't care, covered by $\overline{A}\overline{B}$), $m_1$ (covered by all
+three), $m_3$ (covered by $\overline{A}C$), $m_5$ (covered by $\overline{B}C$), $m_6$ (don't care,
+not covered but that is OK).
+
+Actually, $\overline{A}C$ covers $m_1, m_3$ and $\overline{B}C$ covers $m_1, m_5$. Together they cover
+all required minterms ($m_1, m_3, m_5$). The don't care $m_0$ could be used to replace $\overline{A}C$
+with $\overline{A}\overline{B}$, but that only covers $m_0, m_1$, leaving $m_3$ uncovered.
+
+Best result with don't cares: $F = \overline{A}C + \overline{B}C$ (2 terms, 3 literals). Wait, let me
+check: $\overline{A}C + \overline{B}C = (\overline{A} + \overline{B}) \cdot C = \overline{A \cdot B} \cdot C$.
+
+Check: $m_1$ ($\overline{A}\overline{B}C$): $\overline{A \cdot B} \cdot C = \overline{0} \cdot 1 = 1$. Yes.
+$m_3$ ($\overline{A}BC$): $\overline{A \cdot B} \cdot C = \overline{0} \cdot 1 = 1$. Yes.
+$m_5$ ($A\overline{B}C$): $\overline{A \cdot B} \cdot C = \overline{0} \cdot 1 = 1$. Yes.
+
+Wait, that is wrong. $\overline{A \cdot B}$ when $A=0, B=1$: $\overline{0 \cdot 1} = \overline{0} = 1$. Correct.
+$\overline{A \cdot B}$ when $A=1, B=0$: $\overline{1 \cdot 0} = \overline{0} = 1$. Correct.
+
+So $F = \overline{A \cdot B} \cdot C$ = $\overline{A}C + \overline{B}C$.
+
+This covers $m_1, m_3, m_5$ with only 2 terms and 3 literals. No don't cares were even needed for
+this simplification -- the expression was already optimizable. But don't cares give us additional
+flexibility if we needed to cover $m_0$ or $m_6$.
+
+**Final answer:** $F = \overline{A}C + \overline{B}C$ (implemented as 2 NOT gates, 2 AND gates, 1 OR
+gate = 5 gates, or using NAND-NAND: 4 NAND gates).
+
+</details>
 
 ### K-Map Grouping Rules
 
@@ -659,6 +834,57 @@ first half adder computes $A \oplus B$ (partial sum) and $A \cdot B$ (partial ca
 half adder adds the partial sum and $C_{in}$ to get the final sum, and the final carry is the OR of
 the partial carry and the carry from the second half adder.
 
+### Worked Example: Building a Circuit from a Truth Table
+
+A voting system has three inputs (A, B, C -- each person votes yes=1 or no=0). The output is 1 if a
+majority votes yes (2 or 3 yes votes). Derive the Boolean expression and count the gates needed.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Truth table**
+
+| `A` | `B` | `C` | `F` (majority) |
+| --- | --- | --- | -------------- |
+| 0   | 0   | 0   | 0              |
+| 0   | 0   | 1   | 0              |
+| 0   | 1   | 0   | 0              |
+| 0   | 1   | 1   | 1              |
+| 1   | 0   | 0   | 0              |
+| 1   | 0   | 1   | 1              |
+| 1   | 1   | 0   | 1              |
+| 1   | 1   | 1   | 1              |
+
+**Step 2: K-map**
+
+|       | `BC` = 00 | `BC` = 01 | `BC` = 11 | `BC` = 10 |
+| ----- | --------- | --------- | --------- | --------- |
+| `A`=0 | 0         | 0         | 1         | 0         |
+| `A`=1 | 0         | 1         | 1         | 1         |
+
+**Step 3: Group**
+- $(0,11)$ and $(1,11)$: vertical pair → $BC$
+- $(1,01)$ and $(1,11)$: horizontal pair → $A \cdot C$
+- $(1,11)$ and $(1,10)$: horizontal pair → $A \cdot B$
+
+Essential prime implicants: $BC$, $AC$, $AB$ (each covers a minterm that no other group covers:
+$m_3$ only by $BC$, $m_5$ only by $AC$, $m_6$ only by $AB$).
+
+$$F = A \cdot B + A \cdot C + B \cdot C$$
+
+**Step 4: Gate count**
+- 3 AND gates (2-input each)
+- 1 OR gate (3-input)
+- Total: **4 gates**
+
+Alternative implementation using XOR:
+$$F = A \cdot B + C \cdot (A \oplus B)$$
+
+This uses 1 XOR gate, 2 AND gates, 1 OR gate = **4 gates** (same count, but uses XOR which may be
+cheaper in some implementations).
+
+</details>
+
 ### Ripple Carry Adder
 
 A ripple carry adder chains multiple full adders to add multi-bit numbers. The carry-out of each
@@ -717,3 +943,370 @@ When implementing a circuit, count the actual number of physical gates required.
 single gate, not two gates (even though it can be expressed as $A\overline{B} + \overline{A}B$). A
 NAND gate is a single gate, not an AND gate followed by a NOT gate. Physical gate count determines
 circuit cost and delay.
+
+## Problem Set
+
+**Problem 1:** Construct the truth table for $F = \overline{A} \cdot B + A \cdot \overline{B}$ and
+identify what logic gate this is equivalent to.
+
+<details>
+<summary>Solution</summary>
+
+| `A` | `B` | $\overline{A}$ | $\overline{B}$ | $\overline{A} \cdot B$ | $A \cdot \overline{B}$ | $F$ |
+| --- | --- | -------------- | -------------- | ---------------------- | ---------------------- | --- |
+| 0   | 0   | 1              | 1              | 0                      | 0                      | 0   |
+| 0   | 1   | 1              | 0              | 1                      | 0                      | 1   |
+| 1   | 0   | 0              | 1              | 0                      | 1                      | 1   |
+| 1   | 1   | 0              | 0              | 0                      | 0                      | 0   |
+
+$F = 1$ when $A \neq B$. This is the **XOR** gate: $F = A \oplus B$.
+
+</details>
+
+If you get this wrong, revise: [Basic Operators](#basic-operators)
+
+---
+
+**Problem 2:** Apply De Morgan's Laws to simplify $\overline{A \cdot (B + C)}$.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1:** Apply De Morgan's to the outer NOT:
+
+$$\overline{A \cdot (B + C)} = \overline{A} + \overline{B + C}$$
+
+**Step 2:** Apply De Morgan's to $\overline{B + C}$:
+
+$$= \overline{A} + \overline{B} \cdot \overline{C}$$
+
+Result: $\overline{A} + \overline{B} \cdot \overline{C}$
+
+Verify with $A=0, B=0, C=0$: LHS $= \overline{0 \cdot (0 + 0)} = \overline{0} = 1$. RHS
+$= 1 + 1 \cdot 1 = 1$. Match.
+
+Verify with $A=1, B=1, C=0$: LHS $= \overline{1 \cdot (1 + 0)} = \overline{1} = 0$. RHS
+$= 0 + 0 \cdot 1 = 0$. Match.
+
+</details>
+
+If you get this wrong, revise: [De Morgan's Laws](#de-morgans-laws)
+
+---
+
+**Problem 3:** Simplify $F = A + A \cdot B + A \cdot B \cdot C + A \cdot B \cdot C \cdot D$ using
+Boolean algebra identities.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1:** Apply absorption repeatedly. $A + A \cdot B = A$ (absorption):
+
+$$F = A + A \cdot B \cdot C + A \cdot B \cdot C \cdot D$$
+
+**Step 2:** Apply absorption again:
+
+$$F = A + A \cdot B \cdot C \cdot D$$
+
+**Step 3:** Apply absorption one more time:
+
+$$F = A$$
+
+Every term contains $A$ as a factor, so $A$ absorbs all of them. The entire expression simplifies to
+just $A$.
+
+</details>
+
+If you get this wrong, revise: [Boolean Identities](#boolean-identities-and-laws)
+
+---
+
+**Problem 4:** Minimize $F(A, B, C) = \sum(2, 3, 5, 6, 7)$ using a 3-variable K-map.
+
+<details>
+<summary>Solution</summary>
+
+Place minterms on the K-map:
+
+|       | `BC` = 00 | `BC` = 01 | `BC` = 11 | `BC` = 10 |
+| ----- | --------- | --------- | --------- | --------- |
+| `A`=0 | 0         | 0         | 1         | 1         |
+| `A`=1 | 0         | 1         | 1         | 1         |
+
+**Identify groups:**
+- $(0,10), (0,11), (1,10), (1,11)$: $2 \times 2$ square → $C$ (columns 10 and 11, variable B is
+  eliminated; both rows, variable A is eliminated)
+- $(1,01), (1,11), (1,10)$: three cells in row A=1 → not a valid group (must be power of 2). Instead:
+  $(1,01), (1,11)$ → $AC$, and $(1,10), (1,11)$ → $AB$
+
+But the $2 \times 2$ group already covers $m_2, m_3, m_6, m_7$. The only uncovered minterm is $m_5$.
+
+$m_5 = A\overline{B}C$. Group $(1,01)$ with $(1,11)$ → $AC$. Or group $(1,01)$ with $(0,01)$ →
+$\overline{B}C$.
+
+Best option: $\overline{B}C$ covers $m_5$ and also covers $m_1$ (which is 0, so no harm).
+
+$$F = C + \overline{B}C = C$$
+
+Wait -- check: does $F = C$ match all minterms? $m_2$ ($\overline{A}B\overline{C}$): $C = 0$.
+But $m_2$ should be 1! So $F \neq C$.
+
+The $2 \times 2$ group spanning columns 10 and 11 gives $C$? No. Columns 10 (BC=10) and 11 (BC=11):
+variable B changes. So the group gives $A \cdot C$ for row A=1... wait, I need to think more carefully.
+
+The $2 \times 2$ square covers cells $(0,10), (0,11), (1,10), (1,11)$. In row A=0, columns 10 and 11:
+$\overline{A}B\overline{C}$ and $\overline{A}BC$ → eliminates C → $\overline{A}B$. In row A=1:
+$AB\overline{C}$ and $ABC$ → $AB$. Together: $\overline{A}B + AB = B$.
+
+So the $2 \times 2$ group gives $B$, not $C$.
+
+Remaining: $m_5 = A\overline{B}C$. Group with $(0,01)$: $\overline{B}C$.
+
+$$F = B + \overline{B}C$$
+
+By absorption: $B + \overline{B}C = B + C$.
+
+**Final answer:** $F = B + C$
+
+Verify: $m_2$ ($\overline{A}B\overline{C}$): $B + C = 1 + 0 = 1$. Correct.
+$m_5$ ($A\overline{B}C$): $B + C = 0 + 1 = 1$. Correct.
+$m_0$ ($\overline{A}\overline{B}\overline{C}$): $B + C = 0 + 0 = 0$. Correct.
+
+</details>
+
+If you get this wrong, revise: [3-Variable K-Maps](#3-variable-k-map)
+
+---
+
+**Problem 5:** Convert the following truth table to both SOP and POS form:
+
+| `A` | `B` | `F` |
+| --- | --- | --- |
+| 0   | 0   | 1   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 1   |
+
+<details>
+<summary>Solution</summary>
+
+**SOP form** (from the 1s -- rows 00 and 11):
+
+$$F = \overline{A} \cdot \overline{B} + A \cdot B$$
+
+This is XNOR: $F = A \odot B$.
+
+**POS form** (from the 0s -- rows 01 and 10):
+
+Maxterm for row 01 ($A=0, B=1$): $A + \overline{B}$
+Maxterm for row 10 ($A=1, B=0$): $\overline{A} + B$
+
+$$F = (A + \overline{B}) \cdot (\overline{A} + B)$$
+
+**Verification:** Expand the POS: $(A + \overline{B})(\overline{A} + B) = A\overline{A} + AB + \overline{B}\overline{A} + \overline{B}B = 0 + AB + \overline{A}\overline{B} + 0 = AB + \overline{A}\overline{B}$.
+This matches the SOP. Both are correct.
+
+</details>
+
+If you get this wrong, revise: [Converting Between Representations](#converting-between-representations)
+
+---
+
+**Problem 6:** A 4-variable K-map has 1s at positions $m_0, m_2, m_8, m_{10}$. All other positions are
+0. What is the minimized expression?
+
+<details>
+<summary>Solution</summary>
+
+|         | `CD` = 00 | `CD` = 01 | `CD` = 11 | `CD` = 10 |
+| ------- | --------- | --------- | --------- | --------- |
+| `AB`=00 | 1         | 0         | 0         | 1         |
+| `AB`=01 | 0         | 0         | 0         | 0         |
+| `AB`=11 | 0         | 0         | 0         | 0         |
+| `AB`=10 | 1         | 0         | 0         | 1         |
+
+The four 1s are at the four corners: $(00,00), (00,10), (10,00), (10,10)$. The four corners form a
+valid $2 \times 2$ group because K-maps wrap around both edges.
+
+The four corners have: A varies (0 and 1), C varies (0 and 1), but B=0 and D=0 in all four.
+
+$$F = \overline{B} \cdot \overline{D}$$
+
+This is the classic "four corners" grouping. The expression requires only 2 NOT gates and 1 AND gate
+= **3 gates**.
+
+</details>
+
+If you get this wrong, revise: [4-Variable K-Maps](#4-variable-k-map)
+
+---
+
+**Problem 7:** Using only NAND gates, implement the NOT function, the AND function, and the OR
+function. Show the gate connections.
+
+<details>
+<summary>Solution</summary>
+
+**NOT from NAND:** Connect both inputs to the same signal.
+
+$\mathrm{NAND}(A, A) = \overline{A \cdot A} = \overline{A}$
+
+1 NAND gate.
+
+**AND from NAND:** NAND followed by NOT (NAND-as-NOT).
+
+$\mathrm{NAND}(\mathrm{NAND}(A, B)) = \overline{\overline{A \cdot B}} = A \cdot B$
+
+2 NAND gates.
+
+**OR from NAND:** Use De Morgan's: $A + B = \overline{\overline{A} \cdot \overline{B}}$
+
+- NAND gate 1: inputs $A, A$ → $\overline{A}$ (NOT)
+- NAND gate 2: inputs $B, B$ → $\overline{B}$ (NOT)
+- NAND gate 3: inputs $\overline{A}, \overline{B}$ → $\overline{\overline{A} \cdot \overline{B}} = A + B$
+
+3 NAND gates.
+
+</details>
+
+If you get this wrong, revise: [NAND as Universal Gate](#nand-as-a-universal-gate)
+
+---
+
+**Problem 8:** For the majority voting circuit $F = AB + AC + BC$, determine the output when:
+(a) A=1, B=1, C=0
+(b) A=0, B=1, C=1
+(c) A=0, B=0, C=1
+
+<details>
+<summary>Solution</summary>
+
+(a) $F = 1 \cdot 1 + 1 \cdot 0 + 1 \cdot 0 = 1 + 0 + 0 = 1$ (majority: 2 out of 3 yes)
+
+(b) $F = 0 \cdot 1 + 0 \cdot 1 + 1 \cdot 1 = 0 + 0 + 1 = 1$ (majority: 2 out of 3 yes)
+
+(c) $F = 0 \cdot 0 + 0 \cdot 1 + 0 \cdot 1 = 0 + 0 + 0 = 0$ (minority: 1 out of 3 yes)
+
+The output is 1 whenever at least two inputs are 1.
+
+</details>
+
+If you get this wrong, revise: [Boolean Algebra Fundamentals](#boolean-algebra-fundamentals)
+
+---
+
+**Problem 9:** A student writes: $\overline{A + B \cdot C} = \overline{A} + \overline{B} \cdot \overline{C}$.
+Is this correct? If not, find and fix the error.
+
+<details>
+<summary>Solution</summary>
+
+This is **incorrect**. The student applied De Morgan's only to $B \cdot C$ but not to the entire
+expression.
+
+**Correct application:**
+
+$$\overline{A + B \cdot C} = \overline{A} \cdot \overline{B \cdot C} = \overline{A} \cdot (\overline{B} + \overline{C})$$
+
+Verify with $A=0, B=1, C=1$:
+- LHS: $\overline{0 + 1 \cdot 1} = \overline{1} = 0$
+- Student's answer: $\overline{0} + \overline{1} \cdot \overline{1} = 1 + 0 = 1$ (wrong!)
+- Correct answer: $\overline{0} \cdot (\overline{1} + \overline{1}) = 1 \cdot (0 + 0) = 0$ (correct!)
+
+</details>
+
+If you get this wrong, revise: [De Morgan's Laws](#de-morgans-laws) and [Common Pitfalls](#common-pitfalls)
+
+---
+
+**Problem 10:** Explain why the consensus theorem allows the term $B \cdot C$ to be removed from
+$A \cdot B + \overline{A} \cdot C + B \cdot C$. Verify by checking all 8 input combinations.
+
+<details>
+<summary>Solution</summary>
+
+The consensus theorem states: $AB + \overline{A}C + BC = AB + \overline{A}C$.
+
+The term $BC$ is redundant because whenever $BC = 1$ (meaning $B=1$ and $C=1$), either $A=1$ (making
+$AB=1$) or $A=0$ (making $\overline{A}C=1$). So $BC = 1$ always coincides with at least one of the
+other terms being 1.
+
+**Verification:**
+
+| `A` | `B` | `C` | $AB$ | $\overline{A}C$ | $BC$ | $AB + \overline{A}C$ | $AB + \overline{A}C + BC$ |
+| --- | --- | --- | ---- | --------------- | ---- | --------------------- | ------------------------- |
+| 0   | 0   | 0   | 0    | 0               | 0    | 0                     | 0                         |
+| 0   | 0   | 1   | 0    | 1               | 0    | 1                     | 1                         |
+| 0   | 1   | 0   | 0    | 0               | 0    | 0                     | 0                         |
+| 0   | 1   | 1   | 0    | 1               | 1    | 1                     | 1                         |
+| 1   | 0   | 0   | 0    | 0               | 0    | 0                     | 0                         |
+| 1   | 0   | 1   | 0    | 0               | 0    | 0                     | 0                         |
+| 1   | 1   | 0   | 1    | 0               | 0    | 1                     | 1                         |
+| 1   | 1   | 1   | 1    | 0               | 1    | 1                     | 1                         |
+
+The last two columns are identical for all 8 rows, confirming that $BC$ is indeed redundant.
+
+</details>
+
+If you get this wrong, revise: [Consensus Theorem](#consensus-theorem)
+
+---
+
+**Problem 11:** Design a half subtractor. It has inputs A (minuend) and B (subtrahend), and outputs
+Diff (difference) and Borrow. Construct the truth table, derive Boolean expressions, and identify the
+gates needed.
+
+<details>
+<summary>Solution</summary>
+
+**Truth table** (binary subtraction: $0-0=0$, $1-0=1$, $1-1=0$, $0-1=1$ with borrow):
+
+| `A` | `B` | Diff | Borrow |
+| --- | --- | ---- | ------ |
+| 0   | 0   | 0    | 0      |
+| 0   | 1   | 1    | 1      |
+| 1   | 0   | 1    | 0      |
+| 1   | 1   | 0    | 0      |
+
+**Diff:** 1 when inputs differ → XOR: $\mathrm{Diff} = A \oplus B$
+
+**Borrow:** 1 only when $A=0, B=1$ → $\mathrm{Borrow} = \overline{A} \cdot B$
+
+**Gates needed:**
+- 1 XOR gate (for Diff)
+- 1 NOT gate (for $\overline{A}$)
+- 1 AND gate (for $\overline{A} \cdot B$)
+- Total: **3 gates**
+
+</details>
+
+If you get this wrong, revise: [Half Adder](#half-adder)
+
+---
+
+**Problem 12:** Given $F(A, B, C) = \sum(0, 2, 4, 6, 7)$, use a K-map to find the minimal SOP
+expression.
+
+<details>
+<summary>Solution</summary>
+
+|       | `BC` = 00 | `BC` = 01 | `BC` = 11 | `BC` = 10 |
+| ----- | --------- | --------- | --------- | --------- |
+| `A`=0 | 1         | 0         | 0         | 1         |
+| `A`=1 | 1         | 0         | 1         | 1         |
+
+**Groups:**
+- $(0,00), (0,10), (1,00), (1,10)$: four corners (wrap-around $2 \times 2$) → $\overline{C}$
+  (A and B both vary; C=0 in all four)
+- $(1,10), (1,11)$: horizontal pair → $AB$
+
+Check coverage: $m_0$ ($\overline{C}$), $m_2$ ($\overline{C}$), $m_4$ ($\overline{C}$), $m_6$ ($\overline{C}$
+and $AB$), $m_7$ ($AB$). All covered.
+
+$$F = \overline{C} + AB$$
+
+Gates: 1 NOT + 1 AND + 1 OR = **3 gates** (or using NAND-NAND: 3 NAND gates).
+
+</details>
+
+If you get this wrong, revise: [4-Variable K-Maps](#4-variable-k-map) and [K-Map Grouping Rules](#k-map-grouping-rules)

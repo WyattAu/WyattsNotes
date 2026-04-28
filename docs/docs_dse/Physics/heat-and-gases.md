@@ -48,9 +48,25 @@ $$T_F = \frac{9}{5}(T - 273.15) + 32$$
 
 Convert $37^\circ\mathrm{C}$ (normal human body temperature) to Kelvin and Fahrenheit.
 
+<details>
+<summary>Solution</summary>
+
 $$T = 37 + 273.15 = 310.15 \mathrm{ K}$$
 
 $$T_F = \frac{9}{5}(37) + 32 = 66.6 + 32 = 98.6^\circ\mathrm{F}$$
+
+</details>
+
+### Worked Example 1b
+
+The surface temperature of the Sun is approximately $5778 \mathrm{ K}$. Express this in Celsius.
+
+<details>
+<summary>Solution</summary>
+
+$$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
+
+</details>
 
 ### Thermometric Properties
 
@@ -187,6 +203,9 @@ specific heat capacity depends on whether the process is at constant volume or c
 A $2.0$ kg copper block at $100^\circ\mathrm{C}$ is placed in $0.5$ kg of water at
 $20^\circ\mathrm{C}$. Find the final temperature, assuming no heat loss to the surroundings.
 
+<details>
+<summary>Solution</summary>
+
 Heat lost by copper $=$ heat gained by water:
 
 $$m_c c_c (T_c - T_f) = m_w c_w (T_f - T_w)$$
@@ -203,10 +222,15 @@ $$118860 = 2863T_f$$
 
 $$T_f = 41.5^\circ\mathrm{C}$$
 
+</details>
+
 ### Worked Example 3
 
 An electric heater rated at $2000$ W heats $3.0$ kg of water from $25^\circ\mathrm{C}$ to
 $75^\circ\mathrm{C}$. How long does it take, assuming $80\%$ of the energy is absorbed by the water?
+
+<details>
+<summary>Solution</summary>
 
 Energy required by the water:
 
@@ -221,6 +245,8 @@ With $80\%$ efficiency:
 $$0.80 \times 2000 \times t = 627900$$
 
 $$t = \frac{627900}{1600} = 392.4 \mathrm{ s} = 6.5 \mathrm{ minutes}$$
+
+</details>
 
 ### Method of Mixtures Experiment
 
@@ -318,6 +344,9 @@ increases.
 How much energy is required to convert $500$ g of ice at $-20^\circ\mathrm{C}$ to steam at
 $110^\circ\mathrm{C}$?
 
+<details>
+<summary>Solution</summary>
+
 The calculation proceeds in five stages:
 
 **Stage 1:** Heat ice from $-20^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
@@ -345,10 +374,15 @@ $$Q_5 = mc\Delta T = 0.5 \times 2010 \times 10 = 10050 \mathrm{ J}$$
 
 $$Q_{\mathrm{total}} = 21000 + 167000 + 209300 + 1130000 + 10050 = 1537350 \mathrm{ J} \approx 1.54 \mathrm{ MJ}$$
 
+</details>
+
 ### Worked Example 5
 
 $200$ g of ice at $0^\circ\mathrm{C}$ is added to $400$ g of water at $50^\circ\mathrm{C}$ in an
 insulated container. Find the final temperature and state of the mixture.
+
+<details>
+<summary>Solution</summary>
 
 First, check whether all the ice can melt. The heat available from the water cooling to
 $0^\circ\mathrm{C}$:
@@ -375,6 +409,8 @@ $$16920 = 0.6 \times 4186 \times T_f$$
 $$T_f = \frac{16920}{2511.6} = 6.7^\circ\mathrm{C}$$
 
 The final mixture is all liquid water at $6.7^\circ\mathrm{C}$.
+
+</details>
 
 ### Determining Specific Latent Heat by Electrical Method
 
@@ -576,10 +612,15 @@ where $b = 2.898 \times 10^{-3}$ $\mathrm{m K}$ (Wien's constant).
 The Sun has a surface temperature of approximately $5778$ K. At what wavelength does its radiation
 peak?
 
+<details>
+<summary>Solution</summary>
+
 $$\lambda_{\mathrm{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{5778} = 5.01 \times 10^{-7} \mathrm{ m} = 501 \mathrm{ nm}$$
 
 This is in the green-blue region of the visible spectrum, consistent with the Sun appearing
 yellowish-white (the combined effect of all wavelengths, modified by atmospheric scattering).
+
+</details>
 
 #### Newton's Law of Cooling
 
@@ -710,20 +751,30 @@ A gas occupies $5.0 \times 10^{-3}$ $\mathrm{m}^3$ at $2.0 \times 10^5$ Pa and $
 compressed to $2.0 \times 10^{-3}$ $\mathrm{m}^3$ and the pressure increases to $5.0 \times 10^5$
 Pa. Find the new temperature.
 
+<details>
+<summary>Solution</summary>
+
 $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 
 $$T_2 = \frac{p_2 V_2 T_1}{p_1 V_1} = \frac{(5.0 \times 10^5)(2.0 \times 10^{-3})(300)}{(2.0 \times 10^5)(5.0 \times 10^{-3})}$$
 
 $$T_2 = \frac{3000}{1000} = 300 \mathrm{ K}$$
 
+</details>
+
 ### Worked Example 7
 
 Find the number of moles of gas in a $2.0$ L container at $25^\circ\mathrm{C}$ and
 $1.01 \times 10^5$ Pa.
 
+<details>
+<summary>Solution</summary>
+
 $$n = \frac{pV}{RT} = \frac{(1.01 \times 10^5)(2.0 \times 10^{-3})}{(8.314)(298.15)}$$
 
 $$n = \frac{202}{2478.9} = 0.0815 \mathrm{ mol}$$
+
+</details>
 
 ### Experimental Verification of Gas Laws
 
@@ -866,9 +917,14 @@ where $M$ is the molar mass ($M = N_A m$).
 Find the rms speed of nitrogen molecules ($M = 28.0$ $\mathrm{g/mol} = 0.0280$ $\mathrm{kg/mol}$) at
 room temperature ($300$ K).
 
+<details>
+<summary>Solution</summary>
+
 $$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.0280}}$$
 
 $$v_{\mathrm{rms}} = \sqrt{\frac{7482.6}{0.0280}} = \sqrt{267235.7} = 517 \mathrm{ m/s}$$
+
+</details>
 
 ### Maxwell-Boltzmann Speed Distribution
 
@@ -974,11 +1030,16 @@ $$TV^{\gamma - 1} = \mathrm{constant}$$
 $2.0$ moles of an ideal monatomic gas expand isothermally at $300$ K from $5.0$ L to $15.0$ L. Find
 the work done and the heat absorbed.
 
+<details>
+<summary>Solution</summary>
+
 $$W = nRT\ln\left(\frac{V_2}{V_1}\right) = 2.0 \times 8.314 \times 300 \times \ln\left(\frac{15.0}{5.0}\right)$$
 
 $$W = 4988.4 \times \ln(3) = 4988.4 \times 1.099 = 5482 \mathrm{ J}$$
 
 Since the process is isothermal, $\Delta U = 0$, so $Q = W = 5482$ J.
+
+</details>
 
 ---
 
@@ -1031,8 +1092,7 @@ and rise to the top.
 
 Heat and temperature are fundamentally different quantities. A large mass of water at
 $50^\circ\mathrm{C}$ contains more thermal energy than a small mass of water at
-$90^\circ\mathrm{C}$. Temperature measures the _average_ kinetic energy per particle; heat is the
-total energy transferred due to a temperature difference.
+$90^\circ\mathrm{C}$. Temperature measures the _average_ kinetic energy per particle; heat is the total energy transferred due to a temperature difference.
 
 ### Mistake 2: Using Celsius in Gas Law Calculations
 
@@ -1104,13 +1164,16 @@ Do not add the U-values of individual layers directly.
 <details>
 <summary>Question 1: Temperature Conversion</summary>
 
-The surface temperature of the Sun is approximately $5778$ K. Express this in Celsius and
-Fahrenheit.
+The surface temperature of the Sun is approximately $5778$ K. Express this in Celsius and Fahrenheit.
+
+<details>
+<summary>Solution</summary>
 
 $$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
 
 $$T_F = \frac{9}{5}(5504.85) + 32 = 9908.73 + 32 = 9940.73^\circ\mathrm{F}$$
 
+</details>
 </details>
 
 <details>
@@ -1121,6 +1184,9 @@ $25^\circ\mathrm{C}$ contained in a copper calorimeter of mass $0.2$ kg at $25^\
 specific heat capacity of oil is $2100$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$. Find the final
 temperature. (Specific heat capacity of aluminium $= 900$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$,
 copper $= 385$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.)
+
+<details>
+<summary>Solution</summary>
 
 Heat lost by aluminium $=$ heat gained by oil $+$ heat gained by calorimeter:
 
@@ -1139,12 +1205,16 @@ $$108425 = 2447T_f$$
 $$T_f = 44.3^\circ\mathrm{C}$$
 
 </details>
+</details>
 
 <details>
 <summary>Question 3: Latent Heat with Phase Change</summary>
 
 $100$ g of steam at $100^\circ\mathrm{C}$ is passed into $500$ g of water at $20^\circ\mathrm{C}$.
 Find the final temperature and state.
+
+<details>
+<summary>Solution</summary>
 
 **Step 1:** Check if all steam condenses.
 
@@ -1173,6 +1243,7 @@ $$m = \frac{167440}{2260000} = 0.0741 \mathrm{ kg} = 74.1 \mathrm{ g}$$
 The final mixture is $174.1$ g of water and $25.9$ g of steam at $100^\circ\mathrm{C}$.
 
 </details>
+</details>
 
 <details>
 <summary>Question 4: Thermal Conductivity</summary>
@@ -1182,10 +1253,14 @@ of $20^\circ\mathrm{C}$ and an outdoor surface temperature of $5^\circ\mathrm{C}
 heat loss through the window. (Thermal conductivity of glass $= 0.8$
 $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$.)
 
+<details>
+<summary>Solution</summary>
+
 $$\frac{Q}{t} = kA\frac{T_1 - T_2}{d} = 0.8 \times 1.5 \times \frac{20 - 5}{0.005}$$
 
 $$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \mathrm{ W}$$
 
+</details>
 </details>
 
 <details>
@@ -1193,6 +1268,9 @@ $$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \mathrm{ W}
 
 A wall consists of a $10$ cm brick layer ($k = 0.6$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) and a $5$
 cm layer of insulation ($k = 0.04$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$). Find the U-value.
+
+<details>
+<summary>Solution</summary>
 
 $$R_{\mathrm{brick}} = \frac{d_1}{k_1} = \frac{0.10}{0.6} = 0.1667 \mathrm{ m}^2\mathrm{ K/W}$$
 
@@ -1203,11 +1281,15 @@ $$\frac{1}{U} = 0.1667 + 1.25 = 1.4167 \mathrm{ m}^2\mathrm{ K/W}$$
 $$U = \frac{1}{1.4167} = 0.706 \mathrm{ W m}^{-2}\mathrm{ K}^{-1}$$
 
 </details>
+</details>
 
 <details>
 <summary>Question 6: Stefan-Boltzmann Law</summary>
 
 A spherical black body of radius $5.0$ cm is maintained at $500$ K. Find the power radiated.
+
+<details>
+<summary>Solution</summary>
 
 $$P = \sigma A T^4 = \sigma \times 4\pi r^2 \times T^4$$
 
@@ -1218,6 +1300,7 @@ $$P = 5.67 \times 10^{-8} \times 0.03142 \times 6.25 \times 10^{10}$$
 $$P = 5.67 \times 10^{-8} \times 1.963 \times 10^9 = 111.3 \mathrm{ W}$$
 
 </details>
+</details>
 
 <details>
 <summary>Question 7: Gas Law Combined</summary>
@@ -1226,6 +1309,9 @@ A gas cylinder contains $10$ L of oxygen at $20^\circ\mathrm{C}$ and $1.5 \times
 temperature rises to $80^\circ\mathrm{C}$ and the pressure valve releases gas to maintain
 $1.5 \times 10^6$ Pa, what volume of gas (measured at $20^\circ\mathrm{C}$ and $1.01 \times 10^5$
 Pa) escapes?
+
+<details>
+<summary>Solution</summary>
 
 The gas that remains in the cylinder at $80^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa occupies $10$
 L.
@@ -1247,6 +1333,7 @@ Volume at STP conditions ($20^\circ\mathrm{C}$, $1.01 \times 10^5$ Pa):
 $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} = \frac{2548.5}{101000} = 0.0252 \mathrm{ m}^3 = 25.2 \mathrm{ L}$$
 
 </details>
+</details>
 
 <details>
 <summary>Question 8: RMS Speed Comparison</summary>
@@ -1254,11 +1341,15 @@ $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} 
 Compare the rms speeds of hydrogen ($M = 2.0$ $\mathrm{g/mol}$) and oxygen ($M = 32.0$
 $\mathrm{g/mol}$) at the same temperature.
 
+<details>
+<summary>Solution</summary>
+
 $$\frac{v_{\mathrm{rms,H}_2}}{v_{\mathrm{rms,O}_2}} = \sqrt{\frac{M_{\mathrm{O}_2}}{M_{\mathrm{H}_2}}} = \sqrt{\frac{32.0}{2.0}} = \sqrt{16} = 4$$
 
 Hydrogen molecules move four times faster than oxygen molecules at the same temperature. This is
 consistent with the observation that lighter gases diffuse more rapidly (Graham's law).
 
+</details>
 </details>
 
 <details>
@@ -1266,6 +1357,9 @@ consistent with the observation that lighter gases diffuse more rapidly (Graham'
 
 $1.0$ mol of an ideal monatomic gas at $300$ K expands isobarically from $10$ L to $20$ L. Find the
 work done, the change in internal energy, and the heat supplied.
+
+<details>
+<summary>Solution</summary>
 
 **Work done:**
 
@@ -1294,12 +1388,16 @@ Alternatively, using $C_p = \frac{5}{2}R$:
 $$Q = nC_p\Delta T = 1.0 \times \frac{5}{2} \times 8.314 \times 300 = 6235.5 \mathrm{ J}$$
 
 </details>
+</details>
 
 <details>
 <summary>Question 10: Adiabatic Expansion</summary>
 
 $2.0$ mol of a diatomic ideal gas ($\gamma = 1.4$) expands adiabatically from $V_1 = 5.0$ L at
 $p_1 = 4.0 \times 10^5$ Pa to $V_2 = 10.0$ L. Find the final pressure and temperature.
+
+<details>
+<summary>Solution</summary>
 
 **Final pressure:**
 
@@ -1320,6 +1418,7 @@ $$T_2 = \frac{p_2 V_2}{nR} = \frac{1.516 \times 10^5 \times 0.010}{2.0 \times 8.
 The temperature drops because the gas does work on its surroundings without any heat input.
 
 </details>
+</details>
 
 <details>
 <summary>Question 11: Newton's Law of Cooling</summary>
@@ -1327,6 +1426,9 @@ The temperature drops because the gas does work on its surroundings without any 
 A body cools from $80^\circ\mathrm{C}$ to $60^\circ\mathrm{C}$ in $5$ minutes in a room at
 $20^\circ\mathrm{C}$. How long will it take to cool from $60^\circ\mathrm{C}$ to
 $40^\circ\mathrm{C}$?
+
+<details>
+<summary>Solution</summary>
 
 Using Newton's law of cooling:
 
@@ -1357,12 +1459,16 @@ $$\frac{-t}{739.8} = \ln\left(\frac{1}{2}\right) = -0.693$$
 $$t = 739.8 \times 0.693 = 512.7 \mathrm{ s} \approx 8.5 \mathrm{ minutes}$$
 
 </details>
+</details>
 
 <details>
 <summary>Question 12: Wien's Displacement Law</summary>
 
 A star has a surface temperature of $3500$ K. (a) At what wavelength does it radiate most intensely?
 (b) In what region of the electromagnetic spectrum is this?
+
+<details>
+<summary>Solution</summary>
 
 $$\lambda_{\mathrm{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{3500} = 8.28 \times 10^{-7} \mathrm{ m} = 828 \mathrm{ nm}$$
 
@@ -1371,12 +1477,16 @@ nm). Such stars appear reddish to the eye because the tail of the distribution e
 part of the visible spectrum.
 
 </details>
+</details>
 
 <details>
 <summary>Question 13: Mean Free Path (Extension)</summary>
 
 Oxygen molecules at STP have a molecular diameter of $3.6 \times 10^{-10}$ m. Estimate the mean free
 path.
+
+<details>
+<summary>Solution</summary>
 
 The mean free path is:
 
@@ -1393,6 +1503,7 @@ $$\lambda = \frac{1}{1.414 \times 3.14159 \times 1.296 \times 10^{-19} \times 2.
 $$\lambda = \frac{1}{1.537 \times 10^{7}} = 6.51 \times 10^{-8} \mathrm{ m} = 65.1 \mathrm{ nm}$$
 
 </details>
+</details>
 
 <details>
 <summary>Question 14: Density of a Gas</summary>
@@ -1400,10 +1511,14 @@ $$\lambda = \frac{1}{1.537 \times 10^{7}} = 6.51 \times 10^{-8} \mathrm{ m} = 65
 Find the density of nitrogen gas ($M = 28.0$ $\mathrm{g/mol}$) at $25^\circ\mathrm{C}$ and
 $1.01 \times 10^5$ Pa.
 
+<details>
+<summary>Solution</summary>
+
 $$\rho = \frac{pM}{RT} = \frac{(1.01 \times 10^5)(0.0280)}{(8.314)(298.15)}$$
 
 $$\rho = \frac{2828}{2478.9} = 1.141 \mathrm{ kg/m}^3$$
 
+</details>
 </details>
 
 <details>
@@ -1412,6 +1527,9 @@ $$\rho = \frac{2828}{2478.9} = 1.141 \mathrm{ kg/m}^3$$
 A $500$ W heater is used to heat $0.5$ kg of ice at $-10^\circ\mathrm{C}$ in an insulated container.
 How long does it take to convert all the ice to steam at $100^\circ\mathrm{C}$? Assume $100\%$
 efficiency.
+
+<details>
+<summary>Solution</summary>
 
 **Stage 1:** Heat ice from $-10^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
 
@@ -1437,4 +1555,5 @@ $$Q_{\mathrm{total}} = 10500 + 167000 + 209300 + 1130000 = 1516800 \mathrm{ J}$$
 
 $$t = \frac{Q_{\mathrm{total}}}{P} = \frac{1516800}{500} = 3033.6 \mathrm{ s} = 50.6 \mathrm{ minutes}$$
 
+</details>
 </details>
