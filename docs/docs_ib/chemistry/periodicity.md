@@ -11,7 +11,7 @@ slug: periodicity
 ### Effective Nuclear Charge
 
 $$
-Z_&lbrace;\mathrm&lbrace;eff&rbrace;&rbrace; = Z - S
+Z_{\mathrm{eff}} = Z - S
 $$
 
 $Z_{\mathrm{eff}}$ increases across a period (shielding increases slowly, $Z$ increases by 1 per
@@ -55,7 +55,7 @@ All have outer configuration $ns^1$. They lose one electron to form $\mathrm{M}^
 #### Reaction with Water
 
 $$
-2\mathrm&lbrace;M&rbrace;(s) + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to 2\mathrm&lbrace;MOH&rbrace;(aq) + \mathrm&lbrace;H&rbrace;_2(g)
+2\mathrm{M}(s) + 2\mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{MOH}(aq) + \mathrm{H}_2(g)
 $$
 
 Reactivity increases down the group as $IE_1$ decreases.
@@ -114,7 +114,7 @@ Reactivity increases down the group. Beryllium does not react with water. Magnes
 with steam. Calcium, strontium, and barium react with cold water.
 
 $$
-\mathrm&lbrace;M&rbrace;(s) + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to \mathrm&lbrace;M(OH)&rbrace;_2(aq) + \mathrm&lbrace;H&rbrace;_2(g)
+\mathrm{M}(s) + 2\mathrm{H}_2\mathrm{O}(l) \to \mathrm{M(OH)}_2(aq) + \mathrm{H}_2(g)
 $$
 
 #### Thermal Decomposition of Nitrates and Carbonates
@@ -122,13 +122,13 @@ $$
 Group 2 carbonates decompose on heating:
 
 $$
-\mathrm&lbrace;MCO&rbrace;_3(s) \to \mathrm&lbrace;MO&rbrace;(s) + \mathrm&lbrace;CO&rbrace;_2(g)
+\mathrm{MCO}_3(s) \to \mathrm{MO}(s) + \mathrm{CO}_2(g)
 $$
 
 Group 2 nitrates decompose differently:
 
 $$
-2\mathrm&lbrace;M(NO&rbrace;_3)_2(s) \to 2\mathrm&lbrace;MO&rbrace;(s) + 4\mathrm&lbrace;NO&rbrace;_2(g) + \mathrm&lbrace;O&rbrace;_2(g)
+2\mathrm{M(NO}_3)_2(s) \to 2\mathrm{MO}(s) + 4\mathrm{NO}_2(g) + \mathrm{O}_2(g)
 $$
 
 Thermal stability increases down the group. This is because the larger $\mathrm{M}^{2+}$ ion has
@@ -149,7 +149,7 @@ lower polarising power, distorting the carbonate/nitrate ion less and making it 
 | Carbonates | Generally insoluble  |
 
 $$
-\mathrm&lbrace;BaSO&rbrace;_4 \mathrm&lbrace; is very insoluble — used in barium meals (X-ray contrast).&rbrace;
+\mathrm{BaSO}_4 \mathrm{ is very insoluble — used in barium meals (X-ray contrast).}
 $$
 
 ### Uses
@@ -184,11 +184,11 @@ increases and electron affinity becomes less favourable.
 A more reactive halogen displaces a less reactive halogen from its halide:
 
 $$
-\mathrm&lbrace;Cl&rbrace;_2(aq) + 2\mathrm&lbrace;KBr&rbrace;(aq) \to 2\mathrm&lbrace;KCl&rbrace;(aq) + \mathrm&lbrace;Br&rbrace;_2(aq)
+\mathrm{Cl}_2(aq) + 2\mathrm{KBr}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{Br}_2(aq)
 $$
 
 $$
-\mathrm&lbrace;Br&rbrace;_2(aq) + 2\mathrm&lbrace;KI&rbrace;(aq) \to 2\mathrm&lbrace;KBr&rbrace;(aq) + \mathrm&lbrace;I&rbrace;_2(aq)
+\mathrm{Br}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KBr}(aq) + \mathrm{I}_2(aq)
 $$
 
 $\mathrm{Br}_2$ cannot displace $\mathrm{Cl}^-$; $\mathrm{I}_2$ cannot displace $\mathrm{Br}^-$ or
@@ -238,11 +238,11 @@ molecular).
 Aluminium oxide dissolves in both acids and bases:
 
 $$
-\mathrm&lbrace;Al&rbrace;_2\mathrm&lbrace;O&rbrace;_3(s) + 6\mathrm&lbrace;HCl&rbrace;(aq) \to 2\mathrm&lbrace;AlCl&rbrace;_3(aq) + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l)
+\mathrm{Al}_2\mathrm{O}_3(s) + 6\mathrm{HCl}(aq) \to 2\mathrm{AlCl}_3(aq) + 3\mathrm{H}_2\mathrm{O}(l)
 $$
 
 $$
-\mathrm&lbrace;Al&rbrace;_2\mathrm&lbrace;O&rbrace;_3(s) + 2\mathrm&lbrace;NaOH&rbrace;(aq) + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to 2\mathrm&lbrace;NaAl(OH)&rbrace;_4(aq)
+\mathrm{Al}_2\mathrm{O}_3(s) + 2\mathrm{NaOH}(aq) + 3\mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{NaAl(OH)}_4(aq)
 $$
 
 ### Highest Oxidation States of Period 3
@@ -303,7 +303,7 @@ The maximum oxidation state increases across the period to $\mathrm{Mn}$ ($+7$),
 A complex ion consists of a central metal ion surrounded by ligands:
 
 $$
-[\mathrm&lbrace;Cu&rbrace;(\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;)_6]^&lbrace;2+&rbrace;, \quad [\mathrm&lbrace;Ag&rbrace;(\mathrm&lbrace;NH&rbrace;_3)_2]^+, \quad [\mathrm&lbrace;Fe&rbrace;(\mathrm&lbrace;CN&rbrace;)_6]^&lbrace;3-&rbrace;
+[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}, \quad [\mathrm{Ag}(\mathrm{NH}_3)_2]^+, \quad [\mathrm{Fe}(\mathrm{CN})_6]^{3-}
 $$
 
 | Ligand type | Examples                                                   | Denticity |
@@ -318,13 +318,13 @@ Transition metal complexes are coloured due to $d$-$d$ transitions. The energy g
 $d$-orbitals corresponds to visible light:
 
 $$
-\Delta E = \frac&lbrace;hc&rbrace;&lbrace;\lambda&rbrace;
+\Delta E = \frac{hc}{\lambda}
 $$
 
 **Spectrochemical series** (increasing $\Delta$):
 
 $$
-\mathrm&lbrace;I&rbrace;^- \lt \mathrm&lbrace;Br&rbrace;^- \lt \mathrm&lbrace;Cl&rbrace;^- \lt \mathrm&lbrace;F&rbrace;^- \lt \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \lt \mathrm&lbrace;NH&rbrace;_3 \lt \mathrm&lbrace;en&rbrace; \lt \mathrm&lbrace;CN&rbrace;^- \lt \mathrm&lbrace;CO&rbrace;
+\mathrm{I}^- \lt \mathrm{Br}^- \lt \mathrm{Cl}^- \lt \mathrm{F}^- \lt \mathrm{H}_2\mathrm{O} \lt \mathrm{NH}_3 \lt \mathrm{en} \lt \mathrm{CN}^- \lt \mathrm{CO}
 $$
 
 ### Catalytic Properties

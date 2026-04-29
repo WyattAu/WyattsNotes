@@ -20,7 +20,7 @@ The **sample space** $\Omega$ (or $S$) is the set of all possible outcomes of an
 3. If $A_1, A_2, \ldots$ are mutually exclusive events, then:
 
 $$
-P\!\left(\bigcup_&lbrace;i=1&rbrace;^&lbrace;\infty&rbrace; A_i\right) = \sum_&lbrace;i=1&rbrace;^&lbrace;\infty&rbrace; P(A_i)
+P\!\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)
 $$
 
 ### Complementary Events
@@ -61,7 +61,7 @@ In a class of 40 students, 25 play football, 18 play basketball, and 8 play both
 probability that a randomly selected student plays at least one sport.
 
 $$
-P(F \cup B) = P(F) + P(B) - P(F \cap B) = \frac&lbrace;25&rbrace;&lbrace;40&rbrace; + \frac&lbrace;18&rbrace;&lbrace;40&rbrace; - \frac&lbrace;8&rbrace;&lbrace;40&rbrace; = \frac&lbrace;35&rbrace;&lbrace;40&rbrace; = \frac&lbrace;7&rbrace;&lbrace;8&rbrace;
+P(F \cup B) = P(F) + P(B) - P(F \cap B) = \frac{25}{40} + \frac{18}{40} - \frac{8}{40} = \frac{35}{40} = \frac{7}{8}
 $$
 
 :::
@@ -109,7 +109,7 @@ $P(A \cap B) = 0 \neq P(A) \cdot P(B)$).
 The probability of $A$ given that $B$ has occurred:
 
 $$
-P(A|B) = \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(B)&rbrace;
+P(A|B) = \frac{P(A \cap B)}{P(B)}
 $$
 
 ### Formula for Independence
@@ -126,7 +126,7 @@ A bag contains 5 red and 3 blue marbles. Two marbles are drawn without replaceme
 probability that both are red.
 
 $$
-P(\mathrm&lbrace;both red&rbrace;) = P(\mathrm&lbrace;first red&rbrace;) \cdot P(\mathrm&lbrace;second red&rbrace; | \mathrm&lbrace;first red&rbrace;) = \frac&lbrace;5&rbrace;&lbrace;8&rbrace; \cdot \frac&lbrace;4&rbrace;&lbrace;7&rbrace; = \frac&lbrace;20&rbrace;&lbrace;56&rbrace; = \frac&lbrace;5&rbrace;&lbrace;14&rbrace;
+P(\mathrm{both red}) = P(\mathrm{first red}) \cdot P(\mathrm{second red} | \mathrm{first red}) = \frac{5}{8} \cdot \frac{4}{7} = \frac{20}{56} = \frac{5}{14}
 $$
 
 :::
@@ -146,7 +146,7 @@ Paths giving exactly one defective:
 - First non-defective, second defective: $\dfrac{6}{10} \times \dfrac{4}{9} = \dfrac{24}{90}$
 
 $$
-P(\mathrm&lbrace;exactly one defective&rbrace;) = \frac&lbrace;24&rbrace;&lbrace;90&rbrace; + \frac&lbrace;24&rbrace;&lbrace;90&rbrace; = \frac&lbrace;48&rbrace;&lbrace;90&rbrace; = \frac&lbrace;8&rbrace;&lbrace;15&rbrace;
+P(\mathrm{exactly one defective}) = \frac{24}{90} + \frac{24}{90} = \frac{48}{90} = \frac{8}{15}
 $$
 
 :::
@@ -160,7 +160,7 @@ $$
 For events $A$ and $B$ with $P(B) \neq 0$:
 
 $$
-P(A|B) = \frac&lbrace;P(B|A) \cdot P(A)&rbrace;&lbrace;P(B)&rbrace;
+P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
 $$
 
 ### Extended Form
@@ -168,7 +168,7 @@ $$
 If $A_1, A_2, \ldots, A_n$ form a partition of $\Omega$:
 
 $$
-P(A_k|B) = \frac&lbrace;P(B|A_k) \cdot P(A_k)&rbrace;&lbrace;\displaystyle\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; P(B|A_i) \cdot P(A_i)&rbrace;
+P(A_k|B) = \frac{P(B|A_k) \cdot P(A_k)}{\displaystyle\sum_{i=1}^{n} P(B|A_i) \cdot P(A_i)}
 $$
 
 The denominator $P(B) = \displaystyle\sum_{i=1}^{n} P(B|A_i) \cdot P(A_i)$ is the **law of total
@@ -181,11 +181,11 @@ Machine `B` produces 30% with 3% defect rate. Machine `C` produces 20% with 1% d
 is found to be defective. What is the probability it came from machine `B`?
 
 $$
-P(\mathrm&lbrace;defective&rbrace;) = 0.5 \times 0.02 + 0.3 \times 0.03 + 0.2 \times 0.01 = 0.01 + 0.009 + 0.002 = 0.021
+P(\mathrm{defective}) = 0.5 \times 0.02 + 0.3 \times 0.03 + 0.2 \times 0.01 = 0.01 + 0.009 + 0.002 = 0.021
 $$
 
 $$
-P(B|\mathrm&lbrace;defective&rbrace;) = \frac&lbrace;0.3 \times 0.03&rbrace;&lbrace;0.021&rbrace; = \frac&lbrace;0.009&rbrace;&lbrace;0.021&rbrace; = \frac&lbrace;3&rbrace;&lbrace;7&rbrace;
+P(B|\mathrm{defective}) = \frac{0.3 \times 0.03}{0.021} = \frac{0.009}{0.021} = \frac{3}{7}
 $$
 
 :::
@@ -198,11 +198,11 @@ A disease affects 1% of a population. A test has 99% sensitivity
 $P(\mathrm{disease}|\mathrm{positive})$?
 
 $$
-P(\mathrm&lbrace;positive&rbrace;) = 0.01 \times 0.99 + 0.99 \times 0.05 = 0.0099 + 0.0495 = 0.0594
+P(\mathrm{positive}) = 0.01 \times 0.99 + 0.99 \times 0.05 = 0.0099 + 0.0495 = 0.0594
 $$
 
 $$
-P(\mathrm&lbrace;disease&rbrace;|\mathrm&lbrace;positive&rbrace;) = \frac&lbrace;0.01 \times 0.99&rbrace;&lbrace;0.0594&rbrace; = \frac&lbrace;0.0099&rbrace;&lbrace;0.0594&rbrace; \approx 0.167
+P(\mathrm{disease}|\mathrm{positive}) = \frac{0.01 \times 0.99}{0.0594} = \frac{0.0099}{0.0594} \approx 0.167
 $$
 
 :::warning[Exam Tip]
@@ -237,13 +237,13 @@ $$
 ### Variance
 
 $$
-\mathrm&lbrace;Var&rbrace;(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2 p_i - \mu^2
+\mathrm{Var}(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2 p_i - \mu^2
 $$
 
 ### Standard Deviation
 
 $$
-\sigma = \sqrt&lbrace;\mathrm&lbrace;Var&rbrace;(X)&rbrace;
+\sigma = \sqrt{\mathrm{Var}(X)}
 $$
 
 ### Properties of Expectation and Variance
@@ -255,7 +255,7 @@ E(aX + b) = aE(X) + b
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(aX + b) = a^2 \mathrm&lbrace;Var&rbrace;(X)
+\mathrm{Var}(aX + b) = a^2 \mathrm{Var}(X)
 $$
 
 For independent random variables $X$ and $Y$:
@@ -265,7 +265,7 @@ E(X + Y) = E(X) + E(Y)
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(X + Y) = \mathrm&lbrace;Var&rbrace;(X) + \mathrm&lbrace;Var&rbrace;(Y)
+\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)
 $$
 
 :::info[Example]
@@ -285,11 +285,11 @@ E(X^2) = 0(0.1) + 1(0.4) + 4(0.3) + 9(0.2) = 0 + 0.4 + 1.2 + 1.8 = 3.4
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84
+\mathrm{Var}(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84
 $$
 
 $$
-\sigma = \sqrt&lbrace;0.84&rbrace; \approx 0.917
+\sigma = \sqrt{0.84} \approx 0.917
 $$
 
 :::
@@ -310,7 +310,7 @@ A random variable $X$ follows a binomial distribution $X \sim B(n, p)$ if:
 ### Probability Mass Function
 
 $$
-P(X = x) = \binom&lbrace;n&rbrace;&lbrace;x&rbrace; p^x (1-p)^&lbrace;n-x&rbrace;
+P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
 $$
 
 for $x = 0, 1, 2, \ldots, n$.
@@ -322,11 +322,11 @@ E(X) = np
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(X) = np(1-p)
+\mathrm{Var}(X) = np(1-p)
 $$
 
 $$
-\sigma = \sqrt&lbrace;np(1-p)&rbrace;
+\sigma = \sqrt{np(1-p)}
 $$
 
 :::info[Example]
@@ -336,7 +336,7 @@ A fair coin is tossed 10 times. Find the probability of getting exactly 6 heads.
 $X \sim B(10, 0.5)$.
 
 $$
-P(X = 6) = \binom&lbrace;10&rbrace;&lbrace;6&rbrace;(0.5)^6(0.5)^4 = 210 \times (0.5)^&lbrace;10&rbrace; = \frac&lbrace;210&rbrace;&lbrace;1024&rbrace; \approx 0.205
+P(X = 6) = \binom{10}{6}(0.5)^6(0.5)^4 = 210 \times (0.5)^{10} = \frac{210}{1024} \approx 0.205
 $$
 
 :::
@@ -349,7 +349,7 @@ the probability of getting at least 10 correct.
 $X \sim B(20, 0.2)$.
 
 $$
-P(X \ge 10) = 1 - P(X \le 9) = 1 - \sum_&lbrace;x=0&rbrace;^&lbrace;9&rbrace;\binom&lbrace;20&rbrace;&lbrace;x&rbrace;(0.2)^x(0.8)^&lbrace;20-x&rbrace;
+P(X \ge 10) = 1 - P(X \le 9) = 1 - \sum_{x=0}^{9}\binom{20}{x}(0.2)^x(0.8)^{20-x}
 $$
 
 This is best computed using a GDC (calculator). The result is approximately $0.00026$.
@@ -359,7 +359,7 @@ This is best computed using a GDC (calculator). The result is approximately $0.0
 ### Cumulative Binomial Probabilities
 
 $$
-P(X \le k) = \sum_&lbrace;x=0&rbrace;^&lbrace;k&rbrace;\binom&lbrace;n&rbrace;&lbrace;x&rbrace;p^x(1-p)^&lbrace;n-x&rbrace;
+P(X \le k) = \sum_{x=0}^{k}\binom{n}{x}p^x(1-p)^{n-x}
 $$
 
 Most questions require using the cumulative binomial function on a GDC.
@@ -390,11 +390,11 @@ A continuous random variable $X$ follows a normal distribution $X \sim N(\mu, \s
 To find probabilities, convert to the **standard normal** $Z \sim N(0, 1)$:
 
 $$
-Z = \frac&lbrace;X - \mu&rbrace;&lbrace;\sigma&rbrace;
+Z = \frac{X - \mu}{\sigma}
 $$
 
 $$
-P(X \lt a) = P\!\left(Z \lt \frac&lbrace;a - \mu&rbrace;&lbrace;\sigma&rbrace;\right)
+P(X \lt a) = P\!\left(Z \lt \frac{a - \mu}{\sigma}\right)
 $$
 
 :::info[Example]
@@ -404,7 +404,7 @@ Given $X \sim N(50, 16)$, find $P(45 \lt X \lt 55)$.
 $\mu = 50$, $\sigma = 4$.
 
 $$
-P(45 \lt X \lt 55) = P\!\left(\frac&lbrace;45-50&rbrace;&lbrace;4&rbrace; \lt Z \lt \frac&lbrace;55-50&rbrace;&lbrace;4&rbrace;\right) = P(-1.25 \lt Z \lt 1.25)
+P(45 \lt X \lt 55) = P\!\left(\frac{45-50}{4} \lt Z \lt \frac{55-50}{4}\right) = P(-1.25 \lt Z \lt 1.25)
 $$
 
 $$
@@ -430,11 +430,11 @@ Heights of a population follow $N(170, 64)$ (in cm). Find the height that is at 
 $\mu = 170$, $\sigma = 8$.
 
 $$
-P(X \lt x) = 0.90 \implies \frac&lbrace;x - 170&rbrace;&lbrace;8&rbrace; = z_&lbrace;0.90&rbrace; = 1.282
+P(X \lt x) = 0.90 \implies \frac{x - 170}{8} = z_{0.90} = 1.282
 $$
 
 $$
-x = 170 + 1.282 \times 8 = 170 + 10.26 = 180.26 \mathrm&lbrace; cm&rbrace;
+x = 170 + 1.282 \times 8 = 170 + 10.26 = 180.26 \mathrm{ cm}
 $$
 
 :::
@@ -466,7 +466,7 @@ X + Y \sim N(2.3, 0.05)
 $$
 
 $$
-P(X + Y \gt 2.5) = P\!\left(Z \gt \frac&lbrace;2.5 - 2.3&rbrace;&lbrace;\sqrt&lbrace;0.05&rbrace;&rbrace;\right) = P(Z \gt 0.894) = 1 - 0.814 = 0.186
+P(X + Y \gt 2.5) = P\!\left(Z \gt \frac{2.5 - 2.3}{\sqrt{0.05}}\right) = P(Z \gt 0.894) = 1 - 0.814 = 0.186
 $$
 
 :::
@@ -491,15 +491,15 @@ $$
 ### Mean and Variance
 
 $$
-E(X) = \int_&lbrace;-\infty&rbrace;^&lbrace;\infty&rbrace; x f(x)\,dx
+E(X) = \int_{-\infty}^{\infty} x f(x)\,dx
 $$
 
 $$
-E(X^2) = \int_&lbrace;-\infty&rbrace;^&lbrace;\infty&rbrace; x^2 f(x)\,dx
+E(X^2) = \int_{-\infty}^{\infty} x^2 f(x)\,dx
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(X) = E(X^2) - [E(X)]^2
+\mathrm{Var}(X) = E(X^2) - [E(X)]^2
 $$
 
 ### Median
@@ -507,7 +507,7 @@ $$
 The median $m$ satisfies:
 
 $$
-\int_&lbrace;-\infty&rbrace;^&lbrace;m&rbrace; f(x)\,dx = 0.5
+\int_{-\infty}^{m} f(x)\,dx = 0.5
 $$
 
 :::info[Example]
@@ -523,19 +523,19 @@ $$
 Find $P(X \lt 0.5)$:
 
 $$
-P(X \lt 0.5) = \int_0^&lbrace;0.5&rbrace; 2x\,dx = [x^2]_0^&lbrace;0.5&rbrace; = 0.25
+P(X \lt 0.5) = \int_0^{0.5} 2x\,dx = [x^2]_0^{0.5} = 0.25
 $$
 
 Find $E(X)$:
 
 $$
-E(X) = \int_0^1 x \cdot 2x\,dx = \int_0^1 2x^2\,dx = \left[\frac&lbrace;2x^3&rbrace;&lbrace;3&rbrace;\right]_0^1 = \frac&lbrace;2&rbrace;&lbrace;3&rbrace;
+E(X) = \int_0^1 x \cdot 2x\,dx = \int_0^1 2x^2\,dx = \left[\frac{2x^3}{3}\right]_0^1 = \frac{2}{3}
 $$
 
 Find the median:
 
 $$
-\int_0^m 2x\,dx = 0.5 \implies m^2 = 0.5 \implies m = \frac&lbrace;1&rbrace;&lbrace;\sqrt&lbrace;2&rbrace;&rbrace; = \frac&lbrace;\sqrt&lbrace;2&rbrace;&rbrace;&lbrace;2&rbrace;
+\int_0^m 2x\,dx = 0.5 \implies m^2 = 0.5 \implies m = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}
 $$
 
 :::
@@ -573,13 +573,13 @@ A bag contains 7 red and 5 blue marbles. Three marbles are drawn without replace
 **(a)** Find the probability that all three are red.
 
 $$
-P = \frac&lbrace;7&rbrace;&lbrace;12&rbrace; \times \frac&lbrace;6&rbrace;&lbrace;11&rbrace; \times \frac&lbrace;5&rbrace;&lbrace;10&rbrace; = \frac&lbrace;210&rbrace;&lbrace;1320&rbrace; = \frac&lbrace;7&rbrace;&lbrace;44&rbrace;
+P = \frac{7}{12} \times \frac{6}{11} \times \frac{5}{10} = \frac{210}{1320} = \frac{7}{44}
 $$
 
 **(b)** Find the probability that exactly two are red.
 
 $$
-P = \binom&lbrace;3&rbrace;&lbrace;2&rbrace; \times \frac&lbrace;7&rbrace;&lbrace;12&rbrace; \times \frac&lbrace;6&rbrace;&lbrace;11&rbrace; \times \frac&lbrace;5&rbrace;&lbrace;10&rbrace; = 3 \times \frac&lbrace;210&rbrace;&lbrace;1320&rbrace; = \frac&lbrace;21&rbrace;&lbrace;44&rbrace;
+P = \binom{3}{2} \times \frac{7}{12} \times \frac{6}{11} \times \frac{5}{10} = 3 \times \frac{210}{1320} = \frac{21}{44}
 $$
 
 Wait, let me recalculate using a tree diagram approach:
@@ -589,7 +589,7 @@ Wait, let me recalculate using a tree diagram approach:
 - BRR: $\dfrac{5}{12} \times \dfrac{7}{11} \times \dfrac{6}{10} = \dfrac{7}{44}$
 
 $$
-P = \frac&lbrace;7&rbrace;&lbrace;44&rbrace; + \frac&lbrace;7&rbrace;&lbrace;44&rbrace; + \frac&lbrace;7&rbrace;&lbrace;44&rbrace; = \frac&lbrace;21&rbrace;&lbrace;44&rbrace;
+P = \frac{7}{44} + \frac{7}{44} + \frac{7}{44} = \frac{21}{44}
 $$
 
 ### Question 3 (Paper 2 style)
@@ -600,7 +600,7 @@ deviation 8 minutes.
 **(a)** Find the probability that a randomly selected person takes between 40 and 50 minutes.
 
 $$
-P(40 \lt X \lt 50) = P\!\left(\frac&lbrace;40-45&rbrace;&lbrace;8&rbrace; \lt Z \lt \frac&lbrace;50-45&rbrace;&lbrace;8&rbrace;\right) = P(-0.625 \lt Z \lt 0.625)
+P(40 \lt X \lt 50) = P\!\left(\frac{40-45}{8} \lt Z \lt \frac{50-45}{8}\right) = P(-0.625 \lt Z \lt 0.625)
 $$
 
 $$
@@ -610,11 +610,11 @@ $$
 **(b)** The fastest 10% of people receive a certificate. Find the maximum time to qualify.
 
 $$
-P(X \lt x) = 0.10 \implies \frac&lbrace;x - 45&rbrace;&lbrace;8&rbrace; = -1.282
+P(X \lt x) = 0.10 \implies \frac{x - 45}{8} = -1.282
 $$
 
 $$
-x = 45 - 1.282 \times 8 = 45 - 10.26 = 34.74 \mathrm&lbrace; minutes&rbrace;
+x = 45 - 1.282 \times 8 = 45 - 10.26 = 34.74 \mathrm{ minutes}
 $$
 
 ### Question 4 (Paper 1 style)
@@ -622,7 +622,7 @@ $$
 $X \sim B(15, 0.3)$. Find $P(X = 5)$.
 
 $$
-P(X = 5) = \binom&lbrace;15&rbrace;&lbrace;5&rbrace;(0.3)^5(0.7)^&lbrace;10&rbrace;
+P(X = 5) = \binom{15}{5}(0.3)^5(0.7)^{10}
 $$
 
 Using a GDC: $P(X = 5) \approx 0.206$.
@@ -634,13 +634,13 @@ A continuous random variable $X$ has PDF $f(x) = \dfrac{3x^2}{8}$ for $0 \le x \
 **(a)** Verify that $f(x)$ is a valid PDF.
 
 $$
-\int_0^2 \frac&lbrace;3x^2&rbrace;&lbrace;8&rbrace;\,dx = \frac&lbrace;3&rbrace;&lbrace;8&rbrace;\left[\frac&lbrace;x^3&rbrace;&lbrace;3&rbrace;\right]_0^2 = \frac&lbrace;3&rbrace;&lbrace;8&rbrace; \cdot \frac&lbrace;8&rbrace;&lbrace;3&rbrace; = 1
+\int_0^2 \frac{3x^2}{8}\,dx = \frac{3}{8}\left[\frac{x^3}{3}\right]_0^2 = \frac{3}{8} \cdot \frac{8}{3} = 1
 $$
 
 **(b)** Find $E(X)$.
 
 $$
-E(X) = \int_0^2 x \cdot \frac&lbrace;3x^2&rbrace;&lbrace;8&rbrace;\,dx = \int_0^2 \frac&lbrace;3x^3&rbrace;&lbrace;8&rbrace;\,dx = \frac&lbrace;3&rbrace;&lbrace;8&rbrace;\left[\frac&lbrace;x^4&rbrace;&lbrace;4&rbrace;\right]_0^2 = \frac&lbrace;3&rbrace;&lbrace;8&rbrace; \times 4 = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;
+E(X) = \int_0^2 x \cdot \frac{3x^2}{8}\,dx = \int_0^2 \frac{3x^3}{8}\,dx = \frac{3}{8}\left[\frac{x^4}{4}\right]_0^2 = \frac{3}{8} \times 4 = \frac{3}{2}
 $$
 
 **(c)** Find the mode.
@@ -682,11 +682,11 @@ The Poisson distribution models the number of events occurring in a fixed interv
 $X \sim \mathrm{Po}(\lambda)$ where $\lambda$ is the mean number of events.
 
 $$
-P(X = x) = \frac&lbrace;e^&lbrace;-\lambda&rbrace;\lambda^x&rbrace;&lbrace;x!&rbrace;, \quad x = 0, 1, 2, \ldots
+P(X = x) = \frac{e^{-\lambda}\lambda^x}{x!}, \quad x = 0, 1, 2, \ldots
 $$
 
 $$
-E(X) = \lambda, \quad \mathrm&lbrace;Var&rbrace;(X) = \lambda
+E(X) = \lambda, \quad \mathrm{Var}(X) = \lambda
 $$
 
 :::info[Example]
@@ -695,7 +695,7 @@ A call centre receives an average of 4 calls per minute. Find the probability of
 calls in a minute.
 
 $$
-P(X = 6) = \frac&lbrace;e^&lbrace;-4&rbrace; \cdot 4^6&rbrace;&lbrace;6!&rbrace; = \frac&lbrace;e^&lbrace;-4&rbrace; \cdot 4096&rbrace;&lbrace;720&rbrace; = \frac&lbrace;4096&rbrace;&lbrace;720 \times 54.60&rbrace; \approx 0.104
+P(X = 6) = \frac{e^{-4} \cdot 4^6}{6!} = \frac{e^{-4} \cdot 4096}{720} = \frac{4096}{720 \times 54.60} \approx 0.104
 $$
 
 :::
@@ -707,11 +707,11 @@ Models the number of trials until the first success.
 $X \sim \mathrm{Geo}(p)$ where $p$ is the probability of success on each trial.
 
 $$
-P(X = x) = (1-p)^&lbrace;x-1&rbrace;p, \quad x = 1, 2, 3, \ldots
+P(X = x) = (1-p)^{x-1}p, \quad x = 1, 2, 3, \ldots
 $$
 
 $$
-E(X) = \frac&lbrace;1&rbrace;&lbrace;p&rbrace;, \quad \mathrm&lbrace;Var&rbrace;(X) = \frac&lbrace;1-p&rbrace;&lbrace;p^2&rbrace;
+E(X) = \frac{1}{p}, \quad \mathrm{Var}(X) = \frac{1-p}{p^2}
 $$
 
 :::info[Example]
@@ -719,7 +719,7 @@ $$
 A die is rolled until a 6 appears. Find the probability that it takes exactly 4 rolls.
 
 $$
-P(X = 4) = \left(\frac&lbrace;5&rbrace;&lbrace;6&rbrace;\right)^3 \times \frac&lbrace;1&rbrace;&lbrace;6&rbrace; = \frac&lbrace;125&rbrace;&lbrace;1296&rbrace; \approx 0.0965
+P(X = 4) = \left(\frac{5}{6}\right)^3 \times \frac{1}{6} = \frac{125}{1296} \approx 0.0965
 $$
 
 :::
@@ -739,7 +739,7 @@ $$
 The number of ways to arrange $r$ objects from $n$ distinct objects (order matters):
 
 $$
-&lbrace;&rbrace;^nP_r = \frac&lbrace;n!&rbrace;&lbrace;(n-r)!&rbrace;
+{}^nP_r = \frac{n!}{(n-r)!}
 $$
 
 ### Combinations
@@ -747,7 +747,7 @@ $$
 The number of ways to choose $r$ objects from $n$ distinct objects (order does not matter):
 
 $$
-&lbrace;&rbrace;^nC_r = \binom&lbrace;n&rbrace;&lbrace;r&rbrace; = \frac&lbrace;n!&rbrace;&lbrace;r!(n-r)!&rbrace;
+{}^nC_r = \binom{n}{r} = \frac{n!}{r!(n-r)!}
 $$
 
 :::info[Example]
@@ -776,7 +776,7 @@ red marble is drawn.
 **(a)** Find the probability that exactly 3 draws are needed.
 
 $$
-P = \frac&lbrace;6&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;5&rbrace;&lbrace;9&rbrace; \times \frac&lbrace;4&rbrace;&lbrace;8&rbrace; = \frac&lbrace;120&rbrace;&lbrace;720&rbrace; = \frac&lbrace;1&rbrace;&lbrace;6&rbrace;
+P = \frac{6}{10} \times \frac{5}{9} \times \frac{4}{8} = \frac{120}{720} = \frac{1}{6}
 $$
 
 **(b)** Find the expected number of draws.
@@ -798,7 +798,7 @@ $P(X=6) = \dfrac{6}{10} \times \dfrac{5}{9} \times \dfrac{4}{8} \times \dfrac{3}
 $P(X=7) = \dfrac{6}{10} \times \dfrac{5}{9} \times \dfrac{4}{8} \times \dfrac{3}{7} \times \dfrac{2}{6} \times \dfrac{1}{5} \times \dfrac{4}{4} = \dfrac{1}{210}$
 
 $$
-E(X) = 1(0.4) + 2\!\left(\frac&lbrace;4&rbrace;&lbrace;15&rbrace;\right) + 3\!\left(\frac&lbrace;1&rbrace;&lbrace;6&rbrace;\right) + 4\!\left(\frac&lbrace;4&rbrace;&lbrace;42&rbrace;\right) + 5\!\left(\frac&lbrace;3&rbrace;&lbrace;42&rbrace;\right) + 6\!\left(\frac&lbrace;2&rbrace;&lbrace;105&rbrace;\right) + 7\!\left(\frac&lbrace;1&rbrace;&lbrace;210&rbrace;\right)
+E(X) = 1(0.4) + 2\!\left(\frac{4}{15}\right) + 3\!\left(\frac{1}{6}\right) + 4\!\left(\frac{4}{42}\right) + 5\!\left(\frac{3}{42}\right) + 6\!\left(\frac{2}{105}\right) + 7\!\left(\frac{1}{210}\right)
 $$
 
 $$
@@ -814,7 +814,7 @@ P(X \le 2) = P(X=0) + P(X=1) + P(X=2)
 $$
 
 $$
-= \binom&lbrace;12&rbrace;&lbrace;0&rbrace;(0.25)^0(0.75)^&lbrace;12&rbrace; + \binom&lbrace;12&rbrace;&lbrace;1&rbrace;(0.25)^1(0.75)^&lbrace;11&rbrace; + \binom&lbrace;12&rbrace;&lbrace;2&rbrace;(0.25)^2(0.75)^&lbrace;10&rbrace;
+= \binom{12}{0}(0.25)^0(0.75)^{12} + \binom{12}{1}(0.25)^1(0.75)^{11} + \binom{12}{2}(0.25)^2(0.75)^{10}
 $$
 
 $$
@@ -829,7 +829,7 @@ standard deviation $8\mathrm{ cm}$.
 **(a)** What percentage of students are taller than $180\mathrm{ cm}$?
 
 $$
-P(X \gt 180) = P\!\left(Z \gt \frac&lbrace;180-165&rbrace;&lbrace;8&rbrace;\right) = P(Z \gt 1.875) = 1 - 0.9696 = 0.0304
+P(X \gt 180) = P\!\left(Z \gt \frac{180-165}{8}\right) = P(Z \gt 1.875) = 1 - 0.9696 = 0.0304
 $$
 
 About $3.0\%$.

@@ -56,13 +56,13 @@ Niels Bohr proposed quantised electron orbits for hydrogen:
 3. Electrons can jump between orbits by absorbing or emitting photons:
 
 $$
-\Delta E = E_&lbrace;\mathrm&lbrace;higher&rbrace;&rbrace; - E_&lbrace;\mathrm&lbrace;lower&rbrace;&rbrace; = h\nu
+\Delta E = E_{\mathrm{higher}} - E_{\mathrm{lower}} = h\nu
 $$
 
 The energy levels of hydrogen:
 
 $$
-E_n = -\frac&lbrace;13.6\mathrm&lbrace; eV&rbrace;&rbrace;&lbrace;n^2&rbrace; = -\frac&lbrace;2.18 \times 10^&lbrace;-18&rbrace;\mathrm&lbrace; J&rbrace;&rbrace;&lbrace;n^2&rbrace;
+E_n = -\frac{13.6\mathrm{ eV}}{n^2} = -\frac{2.18 \times 10^{-18}\mathrm{ J}}{n^2}
 $$
 
 **Successes**: Explained the hydrogen emission spectrum, predicted the Rydberg formula, and
@@ -77,7 +77,7 @@ of spectral lines or the spectra of multi-electron atoms; could not explain the 
 Louis de Broglie proposed that all matter exhibits wave-particle duality:
 
 $$
-\lambda = \frac&lbrace;h&rbrace;&lbrace;p&rbrace; = \frac&lbrace;h&rbrace;&lbrace;mv&rbrace;
+\lambda = \frac{h}{p} = \frac{h}{mv}
 $$
 
 This explained why only certain orbits are stable: the electron wavelength must fit as a standing
@@ -89,7 +89,7 @@ wave around the orbit ($n\lambda = 2\pi r$).
 particle cannot both be known simultaneously with arbitrary precision:
 
 $$
-\Delta x \cdot \Delta p \ge \frac&lbrace;h&rbrace;&lbrace;4\pi&rbrace;
+\Delta x \cdot \Delta p \ge \frac{h}{4\pi}
 $$
 
 This means electrons cannot be described as orbiting in fixed paths. Instead, we describe regions of
@@ -100,7 +100,7 @@ probability.
 The Schrodinger equation describes the wave function $\Psi$ of an electron:
 
 $$
-\hat&lbrace;H&rbrace;\Psi = E\Psi
+\hat{H}\Psi = E\Psi
 $$
 
 where $\hat{H}$ is the Hamiltonian operator. The square of the wave function, $|\Psi|^2$, gives the
@@ -159,13 +159,13 @@ pairing.
 Full notation:
 
 $$
-\mathrm&lbrace;Fe&rbrace;: 1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6
+\mathrm{Fe}: 1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6
 $$
 
 Noble gas core notation:
 
 $$
-\mathrm&lbrace;Fe&rbrace;: [\mathrm&lbrace;Ar&rbrace;]\, 4s^2\, 3d^6
+\mathrm{Fe}: [\mathrm{Ar}]\, 4s^2\, 3d^6
 $$
 
 ### Exceptions to the Aufbau Principle
@@ -184,11 +184,11 @@ For transition metal ions, electrons are removed from the $ns$ orbital **before*
 orbital:
 
 $$
-\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace;: [\mathrm&lbrace;Ar&rbrace;]\, 3d^6 \quad (\mathrm&lbrace;not &rbrace; 4s^2\, 3d^4)
+\mathrm{Fe}^{2+}: [\mathrm{Ar}]\, 3d^6 \quad (\mathrm{not } 4s^2\, 3d^4)
 $$
 
 $$
-\mathrm&lbrace;Cu&rbrace;^+: [\mathrm&lbrace;Ar&rbrace;]\, 3d^&lbrace;10&rbrace; \quad (\mathrm&lbrace;not &rbrace; 4s^1\, 3d^9)
+\mathrm{Cu}^+: [\mathrm{Ar}]\, 3d^{10} \quad (\mathrm{not } 4s^1\, 3d^9)
 $$
 
 ### Common Pitfalls
@@ -214,15 +214,15 @@ $$
 The total number of nodes for an orbital with quantum numbers $n$ and $l$ is:
 
 $$
-\mathrm&lbrace;total nodes&rbrace; = n - 1
+\mathrm{total nodes} = n - 1
 $$
 
 $$
-\mathrm&lbrace;angular nodes&rbrace; = l
+\mathrm{angular nodes} = l
 $$
 
 $$
-\mathrm&lbrace;radial nodes&rbrace; = n - l - 1
+\mathrm{radial nodes} = n - l - 1
 $$
 
 :::info[Example]
@@ -247,7 +247,7 @@ the energy of $4s$ above $3d$.
 ### Effective Nuclear Charge
 
 $$
-Z_&lbrace;\mathrm&lbrace;eff&rbrace;&rbrace; = Z - S
+Z_{\mathrm{eff}} = Z - S
 $$
 
 where $S$ is the shielding constant estimated by Slater's rules.
@@ -278,7 +278,7 @@ S = 0 + 6.80 + 10.00 = 16.80
 $$
 
 $$
-Z_&lbrace;\mathrm&lbrace;eff&rbrace;&rbrace; = 19 - 16.80 = 2.20
+Z_{\mathrm{eff}} = 19 - 16.80 = 2.20
 $$
 
 :::
@@ -293,7 +293,7 @@ The $n$-th **ionization energy** ($IE_n$) is the minimum energy required to remo
 electron from one mole of gaseous atoms or ions:
 
 $$
-\mathrm&lbrace;X&rbrace;^&lbrace;(n-1)+&rbrace;(g) \to \mathrm&lbrace;X&rbrace;^&lbrace;n+&rbrace;(g) + e^- \qquad \Delta H = IE_n
+\mathrm{X}^{(n-1)+}(g) \to \mathrm{X}^{n+}(g) + e^- \qquad \Delta H = IE_n
 $$
 
 ### Periodic Trends
@@ -315,7 +315,7 @@ $$
 A large jump between successive ionization energies indicates removal from a new inner shell:
 
 $$
-IE_1 \lt IE_2 \lt IE_3 \ll IE_4 \quad \mathrm&lbrace;(large jump at &rbrace; IE_4 \mathrm&lbrace; for Al)&rbrace;
+IE_1 \lt IE_2 \lt IE_3 \ll IE_4 \quad \mathrm{(large jump at } IE_4 \mathrm{ for Al)}
 $$
 
 This reveals the number of valence electrons.
@@ -398,7 +398,7 @@ S = 1.75 + 8.00 + 10.00 = 19.75
 $$
 
 $$
-Z_&lbrace;\mathrm&lbrace;eff&rbrace;&rbrace;(3d) = 26 - 19.75 = 6.25
+Z_{\mathrm{eff}}(3d) = 26 - 19.75 = 6.25
 $$
 
 For a $4s$ electron:
@@ -412,7 +412,7 @@ S = 0.35 + 11.90 + 10.00 = 22.25
 $$
 
 $$
-Z_&lbrace;\mathrm&lbrace;eff&rbrace;&rbrace;(4s) = 26 - 22.25 = 3.75
+Z_{\mathrm{eff}}(4s) = 26 - 22.25 = 3.75
 $$
 
 Wait — this gives $Z_{\mathrm{eff}}(3d) \gt Z_{\mathrm{eff}}(4s)$, which suggests $4s$ is higher in

@@ -20,9 +20,9 @@ event can occur in $n_1$ distinct ways and the second event in $n_2$ distinct wa
 of occurrences ($N$) for either event is $n_1 + n_2$. This extends to $k$ mutually exclusive events:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  N = \sum_&lbrace;i=1&rbrace;^k n_i
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  N = \sum_{i=1}^k n_i
+\end{aligned}
 $$
 
 <details>
@@ -37,9 +37,9 @@ event has $n_1$ outcomes and the second has $n_2$ outcomes, the total number of 
 ($N$) is $n_1 \times n_2$. This extends to $k$ independent sequential choices:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  N = \prod_&lbrace;i=1&rbrace;^k n_i
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  N = \prod_{i=1}^k n_i
+\end{aligned}
 $$
 
 <details>
@@ -58,9 +58,9 @@ repeated, the number of choice decrease by one every time a object is chosen in 
 therefore the total permutation of $n$ distinct objects is given by the factorial function:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  n(n-1)(n-2) \ldots 2 \times 1 = \prod_&lbrace;k=1&rbrace;^n k = n!
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  n(n-1)(n-2) \ldots 2 \times 1 = \prod_{k=1}^n k = n!
+\end{aligned}
 $$
 
 When selecting $r$ number of objects from $n$ distinct objects, the number of choice for each
@@ -68,9 +68,9 @@ selection therefore decreases by one similarly, but only down to the last positi
 the permutation $n \mathbf{P} r$ is:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  n \mathbf&lbrace;P&rbrace; r = P(n, r) = n(n-1)(n-2) \ldots (n-r+2)(n-r+1) = \frac&lbrace;n!&rbrace;&lbrace;(n-r)!&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  n \mathbf{P} r = P(n, r) = n(n-1)(n-2) \ldots (n-r+2)(n-r+1) = \frac{n!}{(n-r)!}
+\end{aligned}
 $$
 
 <details>
@@ -87,10 +87,10 @@ Since the number of ways to permute the given selection is ($r!$), the combinati
 ($n \mathbf{C} r$) can multiply $r!$ to obtain the permutation ($n \mathbf{P} r$):
 
 $$
-\begin&lbrace;aligned&rbrace;
-  k!(n \mathbf&lbrace;C&rbrace; r) = n\mathbf&lbrace;P&rbrace;r = \frac&lbrace;n!&rbrace;&lbrace;(n-r)!&rbrace;\\
-  n \mathbf&lbrace;C&rbrace; r = \binom&lbrace;n&rbrace;&lbrace;r&rbrace; = \frac&lbrace;n!&rbrace;&lbrace;(n-r)!r!&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  k!(n \mathbf{C} r) = n\mathbf{P}r = \frac{n!}{(n-r)!}\\
+  n \mathbf{C} r = \binom{n}{r} = \frac{n!}{(n-r)!r!}
+\end{aligned}
 $$
 
 <details>
@@ -108,9 +108,9 @@ arrangements that leaves the arrangement of the whole trial unchanged, the disti
 ($N$) are given by the multinomial coefficient.
 
 $$
-\begin&lbrace;aligned&rbrace;
-  N = \binom&lbrace;n&rbrace;&lbrace;k_1,k_2,\ldots,k_m&rbrace; = \frac&lbrace;n!&rbrace;&lbrace;k_1! \times k_2! \times \ldots \times k_m!&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  N = \binom{n}{k_1,k_2,\ldots,k_m} = \frac{n!}{k_1! \times k_2! \times \ldots \times k_m!}
+\end{aligned}
 $$
 
 <details>
@@ -129,9 +129,9 @@ the three bars are allowed in is therefore $k+m-1$, therefore the possible numbe
 be the combination of the bars, hence:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  N = \binom&lbrace;k+m-1&rbrace;&lbrace;m-1&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  N = \binom{k+m-1}{m-1}
+\end{aligned}
 $$
 
 <details>
@@ -149,9 +149,9 @@ $$
 For finite sets $A$ and $B$:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |A \cup B| = |A| + |B| - |A \cap B|
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 <details>
@@ -161,9 +161,9 @@ Every element of $A \cup B$ is either in exactly one of $A, B$ or in both. Summi
 counts elements in $A \cap B$ twice, so subtract one copy:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |A \cup B| = |A| + |B| - |A \cap B|
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 </details>
@@ -171,9 +171,9 @@ $$
 ### Three Sets
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 <details>
@@ -182,12 +182,12 @@ $$
 Apply the two-set formula iteratively:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |A \cup B \cup C| &= |A| + |B \cup C| - |A \cap (B \cup C)| \\
   &= |A| + \left[|B| + |C| - |B \cap C|\right] - |(A \cap B) \cup (A \cap C)| \\
   &= |A| + |B| + |C| - |B \cap C| - \left[|A \cap B| + |A \cap C| - |A \cap B \cap C|\right] \\
   &= |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 </details>
@@ -197,9 +197,9 @@ $$
 For $n$ finite sets $A_1, A_2, \ldots, A_n$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \left|\bigcup_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; A_i\right| = \sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; (-1)^&lbrace;k+1&rbrace; \sum_&lbrace;1 \leq i_1 \lt&lbrace;&rbrace; \ldots \lt&lbrace;&rbrace; i_k \leq n&rbrace; |A_&lbrace;i_1&rbrace; \cap \cdots \cap A_&lbrace;i_k&rbrace;|
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \left|\bigcup_{i=1}^{n} A_i\right| = \sum_{k=1}^{n} (-1)^{k+1} \sum_{1 \leq i_1 \lt{} \ldots \lt{} i_k \leq n} |A_{i_1} \cap \cdots \cap A_{i_k}|
+\end{aligned}
 $$
 
 The sign alternates: add singleton sizes, subtract pairwise intersections, add triple intersections,
@@ -210,9 +210,9 @@ probability via the [addition rule](./probability.md). If $A, B$ are events in a
 then:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   P(A \cup B) = P(A) + P(B) - P(A \cap B)
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 This is just inclusion-exclusion divided by $|S|$.
@@ -225,9 +225,9 @@ This is just inclusion-exclusion divided by $|S|$.
 How many study at least one of the two subjects?
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |P \cup C| = 25 + 20 - 12 = 33
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 **Example 2.** A survey of 100 households: 60 have broadband, 50 have cable TV, 30 have streaming,
@@ -235,10 +235,10 @@ $$
 have all three. How many have at least one service?
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |B \cup C \cup S| &= 60 + 50 + 30 - 20 - 15 - 10 + 5 \\
   &= 140 - 45 + 5 = 100
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 All 100 households have at least one service.
@@ -248,17 +248,17 @@ All 100 households have at least one service.
 Let $A_2, A_3, A_5$ be the sets of integers divisible by 2, 3, 5 respectively:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |A_2| &= \lfloor 100/2 \rfloor = 50, \quad |A_3| = \lfloor 100/3 \rfloor = 33, \quad |A_5| = \lfloor 100/5 \rfloor = 20 \\
   |A_2 \cap A_3| &= \lfloor 100/6 \rfloor = 16, \quad |A_2 \cap A_5| = \lfloor 100/10 \rfloor = 10, \quad |A_3 \cap A_5| = \lfloor 100/15 \rfloor = 6 \\
   |A_2 \cap A_3 \cap A_5| &= \lfloor 100/30 \rfloor = 3
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   |A_2 \cup A_3 \cup A_5| = 50 + 33 + 20 - 16 - 10 - 6 + 3 = 74
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 </details>
@@ -277,9 +277,9 @@ arrangement does not produce a new configuration. There are $n$ distinct rotatio
 arrangement (rotate by $0, 1, \ldots, n-1$ positions), so:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \mathrm&lbrace;circular permutations&rbrace; = \frac&lbrace;n!&rbrace;&lbrace;n&rbrace; = (n-1)!
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \mathrm{circular permutations} = \frac{n!}{n} = (n-1)!
+\end{aligned}
 $$
 
 Equivalently: fix one object in a reference position to break rotational symmetry, then arrange the
@@ -293,9 +293,9 @@ If clockwise and anticlockwise arrangements are considered the same (e.g. neckla
 each arrangement is counted twice in $(n-1)!$ (once for each direction). The corrected count is:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \frac&lbrace;(n-1)!&rbrace;&lbrace;2&rbrace;, \quad n \geq 3
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \frac{(n-1)!}{2}, \quad n \geq 3
+\end{aligned}
 $$
 
 :::warning Only apply the division by 2 when the problem explicitly states that reflections are
@@ -315,9 +315,9 @@ Fix one person, arrange the remaining 5: $(6-1)! = 120$.
 equivalent)?
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \frac&lbrace;(5-1)!&rbrace;&lbrace;2&rbrace; = \frac&lbrace;24&rbrace;&lbrace;2&rbrace; = 12
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \frac{(5-1)!}{2} = \frac{24}{2} = 12
+\end{aligned}
 $$
 
 **Example 3.** 4 couples (8 people) sit at a round table. How many arrangements if each couple sits
@@ -327,9 +327,9 @@ Treat each couple as a block: 4 blocks in a circle gives $(4-1)! = 3! = 6$ arran
 has $2!$ internal arrangements. Total:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   3! \times 2^4 = 6 \times 16 = 96
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 </details>
@@ -348,10 +348,10 @@ Let $A_i$ be the set of permutations where element $i$ is in its original positi
 $|S \setminus \bigcup_{i=1}^n A_i|$ where $S$ is the set of all $n!$ permutations:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  !n &= n! - \binom&lbrace;n&rbrace;&lbrace;1&rbrace;(n-1)! + \binom&lbrace;n&rbrace;&lbrace;2&rbrace;(n-2)! - \cdots + (-1)^n \binom&lbrace;n&rbrace;&lbrace;n&rbrace; 0! \\
-  &= n! \sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; \frac&lbrace;(-1)^k&rbrace;&lbrace;k!&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  !n &= n! - \binom{n}{1}(n-1)! + \binom{n}{2}(n-2)! - \cdots + (-1)^n \binom{n}{n} 0! \\
+  &= n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}
+\end{aligned}
 $$
 
 <details>
@@ -361,11 +361,11 @@ There are $\binom{n}{k}$ ways to choose $k$ specific elements to be fixed, and $
 permute the remaining elements. Inclusion-exclusion gives:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  !n &= \sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; (-1)^k \binom&lbrace;n&rbrace;&lbrace;k&rbrace; (n-k)! \\
-  &= \sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; (-1)^k \frac&lbrace;n!&rbrace;&lbrace;k!(n-k)!&rbrace; (n-k)! \\
-  &= n! \sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; \frac&lbrace;(-1)^k&rbrace;&lbrace;k!&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  !n &= \sum_{k=0}^{n} (-1)^k \binom{n}{k} (n-k)! \\
+  &= \sum_{k=0}^{n} (-1)^k \frac{n!}{k!(n-k)!} (n-k)! \\
+  &= n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}
+\end{aligned}
 $$
 
 </details>
@@ -373,9 +373,9 @@ $$
 ### Recursive Formula
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   !n = (n-1)\bigl(!(n-1) + !(n-2)\bigr), \quad n \geq 3
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 with $!0 = 1$ and $!1 = 0$.
@@ -395,9 +395,9 @@ $n-1$ choices for $j$). Now consider element $j$:
 Since $j$ can be any of $n-1$ elements:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   !n = (n-1)\bigl(!(n-1) + !(n-2)\bigr)
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 </details>
@@ -417,9 +417,9 @@ What is the probability that nobody gets their own hat?
 Total permutations: $5! = 120$. Derangements: $!5 = 44$.
 
 $$
-\begin&lbrace;aligned&rbrace;
-  P(\mathrm&lbrace;no fixed point&rbrace;) = \frac&lbrace;44&rbrace;&lbrace;120&rbrace; = \frac&lbrace;11&rbrace;&lbrace;30&rbrace; \approx 0.367
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  P(\mathrm{no fixed point}) = \frac{44}{120} = \frac{11}{30} \approx 0.367
+\end{aligned}
 $$
 
 **Example 2 (Letter-Stuffing Problem).** A secretary types 4 letters and 4 addressed envelopes, then
@@ -429,9 +429,9 @@ First, choose which letter is correct: $\binom{4}{1} = 4$ ways. The remaining 3 
 in wrong envelopes: $!3 = 2$ ways. Total:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  P(\mathrm&lbrace;exactly 1 correct&rbrace;) = \frac&lbrace;4 \times 2&rbrace;&lbrace;4!&rbrace; = \frac&lbrace;8&rbrace;&lbrace;24&rbrace; = \frac&lbrace;1&rbrace;&lbrace;3&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  P(\mathrm{exactly 1 correct}) = \frac{4 \times 2}{4!} = \frac{8}{24} = \frac{1}{3}
+\end{aligned}
 $$
 
 </details>
@@ -444,9 +444,9 @@ When a problem asks for "at least" or "at most" conditions, it is often easier t
 complement and subtract from the total.
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \mathrm&lbrace;Count&rbrace;(\mathrm&lbrace;at least &rbrace; k) = \mathrm&lbrace;Total&rbrace; - \mathrm&lbrace;Count&rbrace;(\mathrm&lbrace;at most &rbrace; k-1)
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \mathrm{Count}(\mathrm{at least } k) = \mathrm{Total} - \mathrm{Count}(\mathrm{at most } k-1)
+\end{aligned}
 $$
 
 ### Inclusion/Exclusion of Items
@@ -460,9 +460,9 @@ When dividing $n$ distinct objects into $k$ unlabeled groups of sizes $s_1, s_2,
 $\sum s_i = n$):
 
 $$
-\begin&lbrace;aligned&rbrace;
-  N = \binom&lbrace;n&rbrace;&lbrace;s_1, s_2, \ldots, s_k&rbrace; = \frac&lbrace;n!&rbrace;&lbrace;s_1! \, s_2! \, \cdots \, s_k!&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  N = \binom{n}{s_1, s_2, \ldots, s_k} = \frac{n!}{s_1! \, s_2! \, \cdots \, s_k!}
+\end{aligned}
 $$
 
 If some groups have equal size and are unlabeled, divide by the factorial of the number of identical
@@ -474,9 +474,9 @@ groups to avoid overcounting.
 **Example 1.** From 12 people, choose a committee of at least 3 and at most 5.
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \binom&lbrace;12&rbrace;&lbrace;3&rbrace; + \binom&lbrace;12&rbrace;&lbrace;4&rbrace; + \binom&lbrace;12&rbrace;&lbrace;5&rbrace; = 220 + 495 + 792 = 1,507
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \binom{12}{3} + \binom{12}{4} + \binom{12}{5} = 220 + 495 + 792 = 1,507
+\end{aligned}
 $$
 
 **Example 2.** A committee of 5 is chosen from 8 men and 6 women. It must include at least 2 women.
@@ -484,17 +484,17 @@ $$
 Total: $\binom{14}{5}$. Subtract committees with 0 or 1 woman:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \binom&lbrace;14&rbrace;&lbrace;5&rbrace; - \binom&lbrace;8&rbrace;&lbrace;5&rbrace; - \binom&lbrace;8&rbrace;&lbrace;4&rbrace;\binom&lbrace;6&rbrace;&lbrace;1&rbrace; = 2,002 - 56 - 420 = 1,526
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \binom{14}{5} - \binom{8}{5} - \binom{8}{4}\binom{6}{1} = 2,002 - 56 - 420 = 1,526
+\end{aligned}
 $$
 
 **Example 3.** Divide 10 distinct students into two unlabeled groups of 5.
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \frac&lbrace;\binom&lbrace;10&rbrace;&lbrace;5&rbrace;&rbrace;&lbrace;2!&rbrace; = \frac&lbrace;252&rbrace;&lbrace;2&rbrace; = 126
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \frac{\binom{10}{5}}{2!} = \frac{252}{2} = 126
+\end{aligned}
 $$
 
 The division by $2!$ is necessary because the two groups are indistinguishable -- choosing
@@ -574,9 +574,9 @@ are distinct.
 - Total permutations of 8 distinct characters from 72 options (26 uppercase, 26 lowercase, 10 digits, 10 symbols): $P(72,8)$.  
 - Subtract invalid cases using inclusion-exclusion (approximate):  
   $$
-  \begin&lbrace;aligned&rbrace;
-        P(72,8) - \binom&lbrace;4&rbrace;&lbrace;1&rbrace;P(46,8) + \binom&lbrace;4&rbrace;&lbrace;2&rbrace;P(20,8) - \binom&lbrace;4&rbrace;&lbrace;3&rbrace;P(10,8) + 0
-  \end&lbrace;aligned&rbrace;
+  \begin{aligned}
+        P(72,8) - \binom{4}{1}P(46,8) + \binom{4}{2}P(20,8) - \binom{4}{3}P(10,8) + 0
+  \end{aligned}
   $$
   Note: since the character types have different sizes (26, 26, 10, 10), the inclusion-exclusion terms subtract cases missing one type, add back cases missing two types, etc., using the size of the remaining pool after removing each type.
 </details>
@@ -616,7 +616,7 @@ questions if you must pick $\lq 1$ from each section?
 
 - Use inclusion-exclusion:
   $$
-  \binom&lbrace;15&rbrace;&lbrace;6&rbrace; - \binom&lbrace;3&rbrace;&lbrace;1&rbrace;\binom&lbrace;10&rbrace;&lbrace;6&rbrace; + \binom&lbrace;3&rbrace;&lbrace;2&rbrace;\binom&lbrace;5&rbrace;&lbrace;6&rbrace; - \binom&lbrace;3&rbrace;&lbrace;3&rbrace;\binom&lbrace;0&rbrace;&lbrace;6&rbrace;
+  \binom{15}{6} - \binom{3}{1}\binom{10}{6} + \binom{3}{2}\binom{5}{6} - \binom{3}{3}\binom{0}{6}
   $$
   (Note: $\binom{5}{6} = 0$, $\binom{0}{6} = 0$).
 
@@ -726,7 +726,7 @@ sit together, and children must be separated by at least one adult. How many arr
 - Total assignments: $3^{10}$.
 - Subtract cases where a child gets $<2$ gifts (inclusion-exclusion):
   $$
-  3^&lbrace;10&rbrace; - \binom&lbrace;3&rbrace;&lbrace;1&rbrace;\left[\binom&lbrace;10&rbrace;&lbrace;0&rbrace;2^&lbrace;10&rbrace; + \binom&lbrace;10&rbrace;&lbrace;1&rbrace;2^9\right] + \binom&lbrace;3&rbrace;&lbrace;2&rbrace;\left[1 + 2\binom&lbrace;10&rbrace;&lbrace;1&rbrace; + \binom&lbrace;10&rbrace;&lbrace;2&rbrace;2!\right] = 59,049 - 18,099 = 40,950.
+  3^{10} - \binom{3}{1}\left[\binom{10}{0}2^{10} + \binom{10}{1}2^9\right] + \binom{3}{2}\left[1 + 2\binom{10}{1} + \binom{10}{2}2!\right] = 59,049 - 18,099 = 40,950.
   $$
 
 </details>
@@ -740,7 +740,7 @@ particular woman (X). How many valid pairings?
 - Subtract pairings where A or B is paired with X: $5! - 2 \cdot 4! = 120 - 48 = 72$.
 </details>
 
-18. **Question:** How many distinct 4-digit numbers can be formed from &lbrace;1,2,3,4,5,6&rbrace; with each digit
+18. **Question:** How many distinct 4-digit numbers can be formed from {1,2,3,4,5,6} with each digit
 used $\lq2$ times?
 <details>
 <summary>Answer</summary>

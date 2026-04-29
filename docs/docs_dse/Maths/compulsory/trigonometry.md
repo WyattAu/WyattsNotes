@@ -22,18 +22,18 @@ Angles can be measured in degrees or radians. A full revolution is $360^\circ$ o
 giving the fundamental conversion:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  180^\circ = \pi \mathrm&lbrace; rad&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  180^\circ = \pi \mathrm{ rad}
+\end{aligned}
 $$
 
 To convert between the two units:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \theta_&lbrace;\mathrm&lbrace;rad&rbrace;&rbrace; &= \theta_&lbrace;\mathrm&lbrace;deg&rbrace;&rbrace; \times \frac&lbrace;\pi&rbrace;&lbrace;180&rbrace; \\[4pt]
-  \theta_&lbrace;\mathrm&lbrace;deg&rbrace;&rbrace; &= \theta_&lbrace;\mathrm&lbrace;rad&rbrace;&rbrace; \times \frac&lbrace;180&rbrace;&lbrace;\pi&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \theta_{\mathrm{rad}} &= \theta_{\mathrm{deg}} \times \frac{\pi}{180} \\[4pt]
+  \theta_{\mathrm{deg}} &= \theta_{\mathrm{rad}} \times \frac{180}{\pi}
+\end{aligned}
 $$
 
 The radian measure of a positive angle is the ratio of the arc length to the radius. Radians are a
@@ -57,9 +57,9 @@ Common angle equivalences:
 For an arc subtending an angle $\theta$ (in radians) at the centre of a circle of radius $r$:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   l = r\theta
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 This formula only applies when $\theta$ is in radians. If the angle is given in degrees, convert to
@@ -71,17 +71,17 @@ radians first. This formula is also covered in the context of
 For a sector of a circle of radius $r$ with central angle $\theta$ (in radians):
 
 $$
-\begin&lbrace;aligned&rbrace;
-  A = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;r^2\theta
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  A = \frac{1}{2}r^2\theta
+\end{aligned}
 $$
 
 The area of a segment (the region between a chord and its arc) is:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \mathrm&lbrace;Area of segment&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;r^2(\theta - \sin\theta)
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \mathrm{Area of segment} = \frac{1}{2}r^2(\theta - \sin\theta)
+\end{aligned}
 $$
 
 <details>
@@ -104,11 +104,11 @@ For a right-angled triangle with an acute angle $\theta$, label the sides relati
 The three primary trigonometric ratios are:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \sin\theta &= \frac&lbrace;\mathrm&lbrace;Opposite&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Hypotenuse&rbrace;&rbrace; = \frac&lbrace;O&rbrace;&lbrace;H&rbrace; \\[4pt]
-  \cos\theta &= \frac&lbrace;\mathrm&lbrace;Adjacent&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Hypotenuse&rbrace;&rbrace; = \frac&lbrace;A&rbrace;&lbrace;H&rbrace; \\[4pt]
-  \tan\theta &= \frac&lbrace;\mathrm&lbrace;Opposite&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Adjacent&rbrace;&rbrace; = \frac&lbrace;O&rbrace;&lbrace;A&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \sin\theta &= \frac{\mathrm{Opposite}}{\mathrm{Hypotenuse}} = \frac{O}{H} \\[4pt]
+  \cos\theta &= \frac{\mathrm{Adjacent}}{\mathrm{Hypotenuse}} = \frac{A}{H} \\[4pt]
+  \tan\theta &= \frac{\mathrm{Opposite}}{\mathrm{Adjacent}} = \frac{O}{A}
+\end{aligned}
 $$
 
 The mnemonic **SOH CAH TOA** helps recall these definitions.
@@ -118,11 +118,11 @@ The mnemonic **SOH CAH TOA** helps recall these definitions.
 The three reciprocal trigonometric ratios are:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \csc\theta &= \frac&lbrace;1&rbrace;&lbrace;\sin\theta&rbrace; = \frac&lbrace;H&rbrace;&lbrace;O&rbrace; \\[4pt]
-  \sec\theta &= \frac&lbrace;1&rbrace;&lbrace;\cos\theta&rbrace; = \frac&lbrace;H&rbrace;&lbrace;A&rbrace; \\[4pt]
-  \cot\theta &= \frac&lbrace;1&rbrace;&lbrace;\tan\theta&rbrace; = \frac&lbrace;A&rbrace;&lbrace;O&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \csc\theta &= \frac{1}{\sin\theta} = \frac{H}{O} \\[4pt]
+  \sec\theta &= \frac{1}{\cos\theta} = \frac{H}{A} \\[4pt]
+  \cot\theta &= \frac{1}{\tan\theta} = \frac{A}{O}
+\end{aligned}
 $$
 
 <details>
@@ -139,9 +139,9 @@ $$
 For any angle $\theta$:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   \sin^2\theta + \cos^2\theta = 1
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 This follows directly from the [Pythagorean identity](#pythagorean-identity) applied to a
@@ -149,18 +149,18 @@ right-angled triangle with hypotenuse $1$. Two useful corollaries are obtained b
 by $\cos^2\theta$ or $\sin^2\theta$:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   1 + \tan^2\theta &= \sec^2\theta \\[4pt]
   1 + \cot^2\theta &= \csc^2\theta
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 ### Quotient Identity
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \tan\theta = \frac&lbrace;\sin\theta&rbrace;&lbrace;\cos\theta&rbrace;, \qquad \cot\theta = \frac&lbrace;\cos\theta&rbrace;&lbrace;\sin\theta&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \tan\theta = \frac{\sin\theta}{\cos\theta}, \qquad \cot\theta = \frac{\cos\theta}{\sin\theta}
+\end{aligned}
 $$
 
 These hold whenever the denominators are non-zero.
@@ -172,19 +172,19 @@ Additional identities useful for simplification and solving equations:
 **Double angle formulas** (extension for stronger students):
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   \sin 2\theta &= 2\sin\theta\cos\theta \\[4pt]
   \cos 2\theta &= \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 **Angle sum and difference** (extension):
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   \sin(\alpha \pm \beta) &= \sin\alpha\cos\beta \pm \cos\alpha\sin\beta \\[4pt]
   \cos(\alpha \pm \beta) &= \cos\alpha\cos\beta \mp \sin\alpha\sin\beta
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 <details>
@@ -217,7 +217,7 @@ isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 
 ## Graphs of Trigonometric Functions
 
-<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions=&lbrace;["A\sin(Bx+C)+D", "cos(x)", "tan(x)"]&rbrace; width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
+<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "cos(x)", "tan(x)"]} width={800} height={500} />
 
 Use the sliders to adjust amplitude, period, and phase shift, and observe how each parameter affects
 the graph.
@@ -269,10 +269,10 @@ where $\cos x = 0$.
 For transformed trigonometric functions of the form:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   y &= a\sin(bx + c) + d \\
   y &= a\cos(bx + c) + d
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 | Parameter            | Effect                                  |
@@ -301,27 +301,27 @@ periodically. The general solutions (in degrees) are:
 in $[-90^\circ, 90^\circ]$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \theta = 360^\circ n + \alpha \quad \mathrm&lbrace;or&rbrace; \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb&lbrace;Z&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{Z}
+\end{aligned}
 $$
 
 **For $\cos\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arccos k$ be the principal value
 in $[0^\circ, 180^\circ]$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb&lbrace;Z&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb{Z}
+\end{aligned}
 $$
 
 **For $\tan\theta = k$** (for all real $k$), let $\alpha = \arctan k$ be the principal value in
 $(-90^\circ, 90^\circ)$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \theta = 180^\circ n + \alpha, \quad n \in \mathbb&lbrace;Z&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \theta = 180^\circ n + \alpha, \quad n \in \mathbb{Z}
+\end{aligned}
 $$
 
 In radians, replace $360^\circ$ with $2\pi$ and $180^\circ$ with $\pi$.
@@ -361,9 +361,9 @@ Many trigonometric equations require algebraic manipulation before they can be s
 For any triangle $ABC$ with sides $a$, $b$, $c$ opposite the respective angles:
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \frac&lbrace;a&rbrace;&lbrace;\sin A&rbrace; = \frac&lbrace;b&rbrace;&lbrace;\sin B&rbrace; = \frac&lbrace;c&rbrace;&lbrace;\sin C&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
+\end{aligned}
 $$
 
 The sine rule is most useful when one side-side-angle (SSA) or angle-angle-side (AAS) configuration
@@ -375,10 +375,10 @@ is known. In the ambiguous SSA case, two distinct triangles may satisfy the give
 For any triangle $ABC$ with sides $a$, $b$, $c$ opposite the respective angles:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
   a^2 &= b^2 + c^2 - 2bc\cos A \\[4pt]
-  \cos A &= \frac&lbrace;b^2 + c^2 - a^2&rbrace;&lbrace;2bc&rbrace;
-\end&lbrace;aligned&rbrace;
+  \cos A &= \frac{b^2 + c^2 - a^2}{2bc}
+\end{aligned}
 $$
 
 The cosine rule generalises the Pythagorean theorem and is most useful for side-side-side (SSS) or
@@ -387,9 +387,9 @@ side-angle-side (SAS) configurations.
 ### Area of a Triangle Using Trigonometry
 
 $$
-\begin&lbrace;aligned&rbrace;
-  \mathrm&lbrace;Area&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;ab\sin C = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;bc\sin A = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;ca\sin B
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+  \mathrm{Area} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
+\end{aligned}
 $$
 
 This is derived from the standard formula

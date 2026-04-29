@@ -42,13 +42,13 @@ with friction, applied forces, and different masses to see how they affect motio
 The net force acting on an object equals the rate of change of momentum:
 
 $$
-\vec&lbrace;F&rbrace;_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = \frac&lbrace;d\vec&lbrace;p&rbrace;&rbrace;&lbrace;dt&rbrace;
+\vec{F}_{\mathrm{net}} = \frac{d\vec{p}}{dt}
 $$
 
 For constant mass:
 
 $$
-\vec&lbrace;F&rbrace;_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = m\vec&lbrace;a&rbrace;
+\vec{F}_{\mathrm{net}} = m\vec{a}
 $$
 
 ### Key Points
@@ -94,7 +94,7 @@ N + 30\sin 30\degree = mg
 $$
 
 $$
-N = 5(9.81) - 30(0.5) = 49.05 - 15 = 34.05\mathrm&lbrace; N&rbrace;
+N = 5(9.81) - 30(0.5) = 49.05 - 15 = 34.05\mathrm{ N}
 $$
 
 **Friction**: $f_k = \mu_k N = 0.3(34.05) = 10.22\mathrm{ N}$.
@@ -110,7 +110,7 @@ $$
 $$
 
 $$
-a = \frac&lbrace;15.76&rbrace;&lbrace;5&rbrace; = 3.15\mathrm&lbrace; m/s&rbrace;^2
+a = \frac{15.76}{5} = 3.15\mathrm{ m/s}^2
 $$
 
 :::
@@ -136,11 +136,11 @@ For $m_2$ (on table): $T - \mu_k m_2 g = m_2 a$.
 Adding: $m_1 g - \mu_k m_2 g = (m_1 + m_2)a$.
 
 $$
-a = \frac&lbrace;m_1 g - \mu_k m_2 g&rbrace;&lbrace;m_1 + m_2&rbrace; = \frac&lbrace;3(9.81) - 0.4(5)(9.81)&rbrace;&lbrace;8&rbrace; = \frac&lbrace;29.43 - 19.62&rbrace;&lbrace;8&rbrace; = \frac&lbrace;9.81&rbrace;&lbrace;8&rbrace; = 1.23\mathrm&lbrace; m/s&rbrace;^2
+a = \frac{m_1 g - \mu_k m_2 g}{m_1 + m_2} = \frac{3(9.81) - 0.4(5)(9.81)}{8} = \frac{29.43 - 19.62}{8} = \frac{9.81}{8} = 1.23\mathrm{ m/s}^2
 $$
 
 $$
-T = m_1(g - a) = 3(9.81 - 1.23) = 25.74\mathrm&lbrace; N&rbrace;
+T = m_1(g - a) = 3(9.81 - 1.23) = 25.74\mathrm{ N}
 $$
 
 :::
@@ -172,7 +172,7 @@ The apparent weight is $N = m(g - a)$, which is less than the true weight.
 For every action, there is an equal and opposite reaction:
 
 $$
-\vec&lbrace;F&rbrace;_&lbrace;A \mathrm&lbrace; on &rbrace; B&rbrace; = -\vec&lbrace;F&rbrace;_&lbrace;B \mathrm&lbrace; on &rbrace; A&rbrace;
+\vec{F}_{A \mathrm{ on } B} = -\vec{F}_{B \mathrm{ on } A}
 $$
 
 ### Key Points
@@ -271,7 +271,7 @@ The block slides down if $mg\sin\theta \gt \mu_s mg\cos\theta$, i.e., $\tan\thet
 ### Linear Momentum
 
 $$
-\vec&lbrace;p&rbrace; = m\vec&lbrace;v&rbrace;
+\vec{p} = m\vec{v}
 $$
 
 Momentum is a vector quantity with SI unit $\mathrm{kg} \cdot \mathrm{m/s}$.
@@ -279,7 +279,7 @@ Momentum is a vector quantity with SI unit $\mathrm{kg} \cdot \mathrm{m/s}$.
 ### Newton's Second Law (Momentum Form)
 
 $$
-\vec&lbrace;F&rbrace;_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = \frac&lbrace;d\vec&lbrace;p&rbrace;&rbrace;&lbrace;dt&rbrace;
+\vec{F}_{\mathrm{net}} = \frac{d\vec{p}}{dt}
 $$
 
 ### Impulse
@@ -287,7 +287,7 @@ $$
 Impulse equals the change in momentum:
 
 $$
-\vec&lbrace;J&rbrace; = \vec&lbrace;F&rbrace;_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; \cdot \Delta t = \Delta\vec&lbrace;p&rbrace; = m\vec&lbrace;v&rbrace; - m\vec&lbrace;u&rbrace;
+\vec{J} = \vec{F}_{\mathrm{net}} \cdot \Delta t = \Delta\vec{p} = m\vec{v} - m\vec{u}
 $$
 
 For a constant force: $J = F \Delta t$.
@@ -304,11 +304,11 @@ A $0.15\mathrm{ kg}$ cricket ball moving at $30\mathrm{ m/s}$ is hit back at $20
 the opposite direction in $0.01\mathrm{ s}$. Find the average force.
 
 $$
-J = \Delta p = 0.15(20 - (-30)) = 0.15 \times 50 = 7.5\mathrm&lbrace; N&rbrace;\cdot\mathrm&lbrace;s&rbrace;
+J = \Delta p = 0.15(20 - (-30)) = 0.15 \times 50 = 7.5\mathrm{ N}\cdot\mathrm{s}
 $$
 
 $$
-F = \frac&lbrace;J&rbrace;&lbrace;\Delta t&rbrace; = \frac&lbrace;7.5&rbrace;&lbrace;0.01&rbrace; = 750\mathrm&lbrace; N&rbrace;
+F = \frac{J}{\Delta t} = \frac{7.5}{0.01} = 750\mathrm{ N}
 $$
 
 :::
@@ -318,7 +318,7 @@ $$
 In a closed system (no external forces), the total momentum is conserved:
 
 $$
-m_1\vec&lbrace;u&rbrace;_1 + m_2\vec&lbrace;u&rbrace;_2 = m_1\vec&lbrace;v&rbrace;_1 + m_2\vec&lbrace;v&rbrace;_2
+m_1\vec{u}_1 + m_2\vec{u}_2 = m_1\vec{v}_1 + m_2\vec{v}_2
 $$
 
 ### Elastic and Inelastic Collisions
@@ -343,7 +343,7 @@ $$
 $$
 
 $$
-v = 2\mathrm&lbrace; m/s&rbrace;
+v = 2\mathrm{ m/s}
 $$
 
 **KE before**: $\dfrac{1}{2}(2)(25) = 25\mathrm{ J}$.
@@ -376,7 +376,7 @@ where $\theta$ is the angle between the force and the displacement.
 ### Work-Energy Theorem
 
 $$
-W_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = \Delta E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2 - \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mu^2
+W_{\mathrm{net}} = \Delta E_k = \frac{1}{2}mv^2 - \frac{1}{2}mu^2
 $$
 
 The net work done on an object equals its change in kinetic energy.
@@ -384,13 +384,13 @@ The net work done on an object equals its change in kinetic energy.
 ### Kinetic Energy
 
 $$
-E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2
+E_k = \frac{1}{2}mv^2
 $$
 
 ### Power
 
 $$
-P = \frac&lbrace;W&rbrace;&lbrace;t&rbrace; = \vec&lbrace;F&rbrace; \cdot \vec&lbrace;v&rbrace;
+P = \frac{W}{t} = \vec{F} \cdot \vec{v}
 $$
 
 SI unit: watt ($\mathrm{W}$), where $1\mathrm{ W} = 1\mathrm{ J/s}$.
@@ -398,13 +398,13 @@ SI unit: watt ($\mathrm{W}$), where $1\mathrm{ W} = 1\mathrm{ J/s}$.
 ### Efficiency
 
 $$
-\mathrm&lbrace;Efficiency&rbrace; = \frac&lbrace;\mathrm&lbrace;useful energy output&rbrace;&rbrace;&lbrace;\mathrm&lbrace;total energy input&rbrace;&rbrace; \times 100\%
+\mathrm{Efficiency} = \frac{\mathrm{useful energy output}}{\mathrm{total energy input}} \times 100\%
 $$
 
 Alternatively:
 
 $$
-\mathrm&lbrace;Efficiency&rbrace; = \frac&lbrace;\mathrm&lbrace;useful power output&rbrace;&rbrace;&lbrace;\mathrm&lbrace;total power input&rbrace;&rbrace; \times 100\%
+\mathrm{Efficiency} = \frac{\mathrm{useful power output}}{\mathrm{total power input}} \times 100\%
 $$
 
 :::info[Example]
@@ -414,25 +414,25 @@ $6\mathrm{ s}$. The engine provides a constant driving force of $3000\mathrm{ N}
 friction force.
 
 $$
-\Delta E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(1200)(625 - 225) = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(1200)(400) = 240000\mathrm&lbrace; J&rbrace;
+\Delta E_k = \frac{1}{2}(1200)(625 - 225) = \frac{1}{2}(1200)(400) = 240000\mathrm{ J}
 $$
 
 $$
-W_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = W_&lbrace;\mathrm&lbrace;engine&rbrace;&rbrace; + W_&lbrace;\mathrm&lbrace;friction&rbrace;&rbrace; = 3000(6 \times 20) + W_f
+W_{\mathrm{net}} = W_{\mathrm{engine}} + W_{\mathrm{friction}} = 3000(6 \times 20) + W_f
 $$
 
 Wait, let me recalculate properly:
 
 $$
-W_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = (F_&lbrace;\mathrm&lbrace;engine&rbrace;&rbrace; - f) \times d
+W_{\mathrm{net}} = (F_{\mathrm{engine}} - f) \times d
 $$
 
 $$
-a = \frac&lbrace;25-15&rbrace;&lbrace;6&rbrace; = \frac&lbrace;5&rbrace;&lbrace;3&rbrace;\mathrm&lbrace; m/s&rbrace;^2
+a = \frac{25-15}{6} = \frac{5}{3}\mathrm{ m/s}^2
 $$
 
 $$
-d = 15(6) + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\left(\frac&lbrace;5&rbrace;&lbrace;3&rbrace;\right)(36) = 90 + 30 = 120\mathrm&lbrace; m&rbrace;
+d = 15(6) + \frac{1}{2}\left(\frac{5}{3}\right)(36) = 90 + 30 = 120\mathrm{ m}
 $$
 
 $$
@@ -440,7 +440,7 @@ $$
 $$
 
 $$
-3000 - f = 2000 \implies f = 1000\mathrm&lbrace; N&rbrace;
+3000 - f = 2000 \implies f = 1000\mathrm{ N}
 $$
 
 :::
@@ -455,7 +455,7 @@ A $10\mathrm{ kg}$ box sits on a rough surface. A horizontal force of $60\mathrm
 The box accelerates at $4\mathrm{ m/s}^2$. Find the coefficient of kinetic friction.
 
 $$
-F_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = F - f_k = ma
+F_{\mathrm{net}} = F - f_k = ma
 $$
 
 $$
@@ -467,7 +467,7 @@ $$
 $$
 
 $$
-\mu_k = \frac&lbrace;20&rbrace;&lbrace;98.1&rbrace; \approx 0.204
+\mu_k = \frac{20}{98.1} \approx 0.204
 $$
 
 ### Question 2 (Paper 2 style)
@@ -482,7 +482,7 @@ $$
 $$
 
 $$
-180 = 140v \implies v = 1.29\mathrm&lbrace; m/s&rbrace;
+180 = 140v \implies v = 1.29\mathrm{ m/s}
 $$
 
 **(b)** Calculate the kinetic energy lost.
@@ -503,11 +503,11 @@ $0.3$.
 **(a)** Determine whether the block slides.
 
 $$
-mg\sin 30\degree = 4(9.81)(0.5) = 19.62\mathrm&lbrace; N&rbrace;
+mg\sin 30\degree = 4(9.81)(0.5) = 19.62\mathrm{ N}
 $$
 
 $$
-\mu_s mg\cos 30\degree = 0.5(4)(9.81)(0.866) = 17.0\mathrm&lbrace; N&rbrace;
+\mu_s mg\cos 30\degree = 0.5(4)(9.81)(0.866) = 17.0\mathrm{ N}
 $$
 
 Since $19.62 \gt 17.0$, the block slides.
@@ -515,7 +515,7 @@ Since $19.62 \gt 17.0$, the block slides.
 **(b)** Find the acceleration down the plane.
 
 $$
-a = g(\sin\theta - \mu_k\cos\theta) = 9.81(0.5 - 0.3 \times 0.866) = 9.81(0.240) = 2.36\mathrm&lbrace; m/s&rbrace;^2
+a = g(\sin\theta - \mu_k\cos\theta) = 9.81(0.5 - 0.3 \times 0.866) = 9.81(0.240) = 2.36\mathrm{ m/s}^2
 $$
 
 ### Question 4 (Paper 1 style)
@@ -524,7 +524,7 @@ A motor lifts a $500\mathrm{ kg}$ elevator through a height of $20\mathrm{ m}$ i
 Find the power output of the motor.
 
 $$
-P = \frac&lbrace;mgh&rbrace;&lbrace;t&rbrace; = \frac&lbrace;500 \times 9.81 \times 20&rbrace;&lbrace;10&rbrace; = 9810\mathrm&lbrace; W&rbrace; = 9.81\mathrm&lbrace; kW&rbrace;
+P = \frac{mgh}{t} = \frac{500 \times 9.81 \times 20}{10} = 9810\mathrm{ W} = 9.81\mathrm{ kW}
 $$
 
 ---
@@ -572,7 +572,7 @@ A person of mass $70\mathrm{ kg}$ stands on a scale in a lift. Find the scale re
 accelerates upward at $2\mathrm{ m/s}^2$.
 
 $$
-N = m(g + a) = 70(9.81 + 2) = 70 \times 11.81 = 826.7\mathrm&lbrace; N&rbrace;
+N = m(g + a) = 70(9.81 + 2) = 70 \times 11.81 = 826.7\mathrm{ N}
 $$
 
 The scale reads $826.7\mathrm{ N}$ (equivalent to $84.3\mathrm{ kg}$).
@@ -596,11 +596,11 @@ For $m_2$: $T - m_2 g\sin\theta - \mu_k m_2 g\cos\theta = m_2 a$
 Adding: $m_1 g - m_2 g\sin\theta - \mu_k m_2 g\cos\theta = (m_1 + m_2)a$
 
 $$
-a = \frac&lbrace;5(9.81) - 8(9.81)(0.5) - 0.2(8)(9.81)(0.866)&rbrace;&lbrace;13&rbrace;
+a = \frac{5(9.81) - 8(9.81)(0.5) - 0.2(8)(9.81)(0.866)}{13}
 $$
 
 $$
-= \frac&lbrace;49.05 - 39.24 - 13.60&rbrace;&lbrace;13&rbrace; = \frac&lbrace;-3.79&rbrace;&lbrace;13&rbrace;
+= \frac{49.05 - 39.24 - 13.60}{13} = \frac{-3.79}{13}
 $$
 
 The negative value means the system accelerates in the opposite direction to what was assumed (i.e.,
@@ -636,7 +636,7 @@ At high speeds: $F_d \propto v^2$ (turbulent drag, e.g., air resistance on a car
 Terminal velocity is reached when drag equals the driving force (e.g., weight for a falling object):
 
 $$
-mg = kv_&lbrace;\mathrm&lbrace;terminal&rbrace;&rbrace;^2 \implies v_&lbrace;\mathrm&lbrace;terminal&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;mg&rbrace;&lbrace;k&rbrace;&rbrace;
+mg = kv_{\mathrm{terminal}}^2 \implies v_{\mathrm{terminal}} = \sqrt{\frac{mg}{k}}
 $$
 
 ---
@@ -648,7 +648,7 @@ $$
 A rocket expels mass (exhaust gases) at high velocity. By conservation of momentum:
 
 $$
-\mathrm&lbrace;Thrust&rbrace; = v_e \frac&lbrace;\Delta m&rbrace;&lbrace;\Delta t&rbrace;
+\mathrm{Thrust} = v_e \frac{\Delta m}{\Delta t}
 $$
 
 where $v_e$ is the exhaust velocity and $\dfrac{\Delta m}{\Delta t}$ is the mass flow rate.
@@ -656,7 +656,7 @@ where $v_e$ is the exhaust velocity and $\dfrac{\Delta m}{\Delta t}$ is the mass
 ### Rocket Equation (Tsiolkovsky)
 
 $$
-\Delta v = v_e \ln\!\left(\frac&lbrace;m_i&rbrace;&lbrace;m_f&rbrace;\right)
+\Delta v = v_e \ln\!\left(\frac{m_i}{m_f}\right)
 $$
 
 where $m_i$ is the initial mass and $m_f$ is the final mass.
@@ -666,7 +666,7 @@ where $m_i$ is the initial mass and $m_f$ is the final mass.
 Momentum is conserved separately in each direction:
 
 $$
-\sum m\vec&lbrace;v&rbrace;_&lbrace;\mathrm&lbrace;initial&rbrace;&rbrace; = \sum m\vec&lbrace;v&rbrace;_&lbrace;\mathrm&lbrace;final&rbrace;&rbrace;
+\sum m\vec{v}_{\mathrm{initial}} = \sum m\vec{v}_{\mathrm{final}}
 $$
 
 Resolve into $x$ and $y$ components and apply conservation in each direction independently.
@@ -680,17 +680,17 @@ above the original direction. Find the velocity of the $2\mathrm{ kg}$ object.
 **x-direction**: $3(4) = 3(2)\cos 30\degree + 2v_x$
 
 $$
-12 = 5.196 + 2v_x \implies v_x = 3.402\mathrm&lbrace; m/s&rbrace;
+12 = 5.196 + 2v_x \implies v_x = 3.402\mathrm{ m/s}
 $$
 
 **y-direction**: $0 = 3(2)\sin 30\degree + 2v_y$
 
 $$
-0 = 3 + 2v_y \implies v_y = -1.5\mathrm&lbrace; m/s&rbrace;
+0 = 3 + 2v_y \implies v_y = -1.5\mathrm{ m/s}
 $$
 
 $$
-v = \sqrt&lbrace;3.402^2 + (-1.5)^2&rbrace; = \sqrt&lbrace;11.57 + 2.25&rbrace; = \sqrt&lbrace;13.82&rbrace; = 3.72\mathrm&lbrace; m/s&rbrace;
+v = \sqrt{3.402^2 + (-1.5)^2} = \sqrt{11.57 + 2.25} = \sqrt{13.82} = 3.72\mathrm{ m/s}
 $$
 
 Direction: $\theta = \arctan\!\left(\dfrac{-1.5}{3.402}\right) = -23.8\degree$ (below the original
@@ -710,7 +710,7 @@ long. The coefficient of kinetic friction is $0.1$.
 **(a)** Find the acceleration down the slope.
 
 $$
-a = g(\sin\theta - \mu_k\cos\theta) = 9.81(\sin 30\degree - 0.1\cos 30\degree) = 9.81(0.5 - 0.0866) = 9.81(0.4134) = 4.06\mathrm&lbrace; m/s&rbrace;^2
+a = g(\sin\theta - \mu_k\cos\theta) = 9.81(\sin 30\degree - 0.1\cos 30\degree) = 9.81(0.5 - 0.0866) = 9.81(0.4134) = 4.06\mathrm{ m/s}^2
 $$
 
 **(b)** Find the speed at the bottom of the slope.
@@ -720,18 +720,18 @@ v^2 = u^2 + 2as = 0 + 2(4.06)(100) = 812
 $$
 
 $$
-v = 28.5\mathrm&lbrace; m/s&rbrace;
+v = 28.5\mathrm{ m/s}
 $$
 
 **(c)** The skier then travels across level ground with the same coefficient of friction. How far do
 they slide before stopping?
 
 $$
-\mu_k mg \cdot d = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2
+\mu_k mg \cdot d = \frac{1}{2}mv^2
 $$
 
 $$
-d = \frac&lbrace;v^2&rbrace;&lbrace;2\mu_k g&rbrace; = \frac&lbrace;812&rbrace;&lbrace;2(0.1)(9.81)&rbrace; = \frac&lbrace;812&rbrace;&lbrace;1.962&rbrace; = 414\mathrm&lbrace; m&rbrace;
+d = \frac{v^2}{2\mu_k g} = \frac{812}{2(0.1)(9.81)} = \frac{812}{1.962} = 414\mathrm{ m}
 $$
 
 ### Question 6 (Paper 2 style)
@@ -754,7 +754,7 @@ $$
 $$
 
 $$
-0 = -2 + 3v \implies v = \frac&lbrace;2&rbrace;&lbrace;3&rbrace;\mathrm&lbrace; m/s&rbrace; \mathrm&lbrace; (in the positive direction)&rbrace;
+0 = -2 + 3v \implies v = \frac{2}{3}\mathrm{ m/s} \mathrm{ (in the positive direction)}
 $$
 
 **(b)** Is the collision elastic?
@@ -772,11 +772,11 @@ A force of $F = 3t^2\mathrm{ N}$ acts on a $2\mathrm{ kg}$ object initially at r
 velocity after $4\mathrm{ s}$.
 
 $$
-F = ma \implies a = \frac&lbrace;3t^2&rbrace;&lbrace;2&rbrace; = 1.5t^2
+F = ma \implies a = \frac{3t^2}{2} = 1.5t^2
 $$
 
 $$
-v = \int_0^4 1.5t^2\,dt = \left[0.5t^3\right]_0^4 = 0.5(64) = 32\mathrm&lbrace; m/s&rbrace;
+v = \int_0^4 1.5t^2\,dt = \left[0.5t^3\right]_0^4 = 0.5(64) = 32\mathrm{ m/s}
 $$
 
 ---
@@ -794,7 +794,7 @@ For an object moving along a curved path (not necessarily circular), the normal 
 centripetal component of acceleration:
 
 $$
-N - mg\cos\theta = \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace;
+N - mg\cos\theta = \frac{mv^2}{r}
 $$
 
 where $\theta$ is the angle of the surface with the horizontal.
@@ -821,7 +821,7 @@ force of $15\mathrm{ N}$ is applied at $25\degree$ above the horizontal.
 Vertical: $N + 15\sin 25\degree = 3(9.81)$.
 
 $$
-N = 29.43 - 6.34 = 23.09\mathrm&lbrace; N&rbrace;
+N = 29.43 - 6.34 = 23.09\mathrm{ N}
 $$
 
 Maximum static friction: $f_{s,\max} = 0.4 \times 23.09 = 9.24\mathrm{ N}$.
@@ -833,13 +833,13 @@ Since $13.59 \gt 9.24$, the block moves.
 **(b)** Find the acceleration.
 
 $$
-a = \frac&lbrace;15\cos 25\degree - 0.3(23.09)&rbrace;&lbrace;3&rbrace; = \frac&lbrace;13.59 - 6.93&rbrace;&lbrace;3&rbrace; = \frac&lbrace;6.66&rbrace;&lbrace;3&rbrace; = 2.22\mathrm&lbrace; m/s&rbrace;^2
+a = \frac{15\cos 25\degree - 0.3(23.09)}{3} = \frac{13.59 - 6.93}{3} = \frac{6.66}{3} = 2.22\mathrm{ m/s}^2
 $$
 
 **(c)** If the applied force is removed, how far does the block slide before stopping?
 
 $$
-\mu_k mg \cdot d = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2
+\mu_k mg \cdot d = \frac{1}{2}mv^2
 $$
 
 Need to find $v$ at the moment force is removed. Assuming the force was applied from rest:
@@ -848,7 +848,7 @@ This depends on how long the force was applied. If the question implies the bloc
 $v_0$ when the force is removed:
 
 $$
-d = \frac&lbrace;v_0^2&rbrace;&lbrace;2\mu_k g&rbrace; = \frac&lbrace;v_0^2&rbrace;&lbrace;5.886&rbrace;
+d = \frac{v_0^2}{2\mu_k g} = \frac{v_0^2}{5.886}
 $$
 
 ### Question 9 (Paper 1 style)
@@ -858,7 +858,7 @@ $0 \le t \le 5\mathrm{ s}$. If the object starts from rest, what is its momentum
 $t = 5\mathrm{ s}$?
 
 $$
-\Delta p = \int_0^5 F\,dt = \int_0^5 (6t - 2)\,dt = [3t^2 - 2t]_0^5 = 75 - 10 = 65\mathrm&lbrace; kg&rbrace;\cdot\mathrm&lbrace;m/s&rbrace;
+\Delta p = \int_0^5 F\,dt = \int_0^5 (6t - 2)\,dt = [3t^2 - 2t]_0^5 = 75 - 10 = 65\mathrm{ kg}\cdot\mathrm{m/s}
 $$
 
 Since $p_0 = 0$: $p = 65\mathrm{ kg}\cdot\mathrm{m/s}$.
@@ -876,17 +876,17 @@ $$
 $$
 
 $$
-0 = 2(-4) + 3v_B \implies v_B = \frac&lbrace;8&rbrace;&lbrace;3&rbrace; = 2.67\mathrm&lbrace; m/s&rbrace; \mathrm&lbrace; (to the right)&rbrace;
+0 = 2(-4) + 3v_B \implies v_B = \frac{8}{3} = 2.67\mathrm{ m/s} \mathrm{ (to the right)}
 $$
 
 **(b)** Calculate the elastic potential energy stored in the spring.
 
 $$
-E_e = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m_A v_A^2 + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m_B v_B^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(2)(16) + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(3)\!\left(\frac&lbrace;64&rbrace;&lbrace;9&rbrace;\right) = 16 + 10.67 = 26.67\mathrm&lbrace; J&rbrace;
+E_e = \frac{1}{2}m_A v_A^2 + \frac{1}{2}m_B v_B^2 = \frac{1}{2}(2)(16) + \frac{1}{2}(3)\!\left(\frac{64}{9}\right) = 16 + 10.67 = 26.67\mathrm{ J}
 $$
 
 **(c)** If the spring has spring constant $k = 2000\mathrm{ N/m}$, find the initial compression.
 
 $$
-E_e = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kx^2 \implies 26.67 = 1000x^2 \implies x = 0.163\mathrm&lbrace; m&rbrace;
+E_e = \frac{1}{2}kx^2 \implies 26.67 = 1000x^2 \implies x = 0.163\mathrm{ m}
 $$

@@ -36,7 +36,7 @@ infinity**.
 ### Sigma Notation
 
 $$
-\sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; a_k = a_1 + a_2 + \cdots + a_n
+\sum_{k=1}^{n} a_k = a_1 + a_2 + \cdots + a_n
 $$
 
 The variable $k$ is the **index of summation** (a dummy variable -- its name does not matter). The
@@ -46,8 +46,8 @@ value below is the **lower limit**; the value above is the **upper limit**.
 
 ## Arithmetic Sequences
 
-<DesmosGraph title="Geometric Series: Partial Sums" expressions=&lbrace;["\sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; ar^k"]&rbrace;
-width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
+<DesmosGraph title="Geometric Series: Partial Sums" expressions={["\sum_{k=0}^{n} ar^k"]}
+width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
@@ -57,7 +57,7 @@ An **arithmetic sequence** (or arithmetic progression, AP) is a sequence where t
 between consecutive terms is constant. This constant difference is denoted $d$:
 
 $$
-a_&lbrace;n+1&rbrace; - a_n = d \quad \mathrm&lbrace;for all &rbrace; n
+a_{n+1} - a_n = d \quad \mathrm{for all } n
 $$
 
 The first term is $a_1$. The sequence is: $a_1, \; a_1 + d, \; a_1 + 2d, \; \ldots$
@@ -76,7 +76,7 @@ $$
 - **Inductive step:** Assume $a_k = a_1 + (k-1)d$ for some $k \geq 1$. Then
 
 $$
-a_&lbrace;k+1&rbrace; = a_k + d = a_1 + (k-1)d + d = a_1 + kd
+a_{k+1} = a_k + d = a_1 + (k-1)d + d = a_1 + kd
 $$
 
 which matches the formula for $n = k+1$. $\blacksquare$
@@ -104,13 +104,13 @@ Subtracting: $7d = 21 \implies d = 3$. Then $a_1 = 17 - 12 = 5$.
 **Theorem.** In an arithmetic sequence, terms equidistant from the ends sum to the same constant:
 
 $$
-a_k + a_&lbrace;n-k+1&rbrace; = a_1 + a_n \quad \mathrm&lbrace;for all &rbrace; k = 1, 2, \ldots, n
+a_k + a_{n-k+1} = a_1 + a_n \quad \mathrm{for all } k = 1, 2, \ldots, n
 $$
 
 **Proof.**
 
 $$
-a_k + a_&lbrace;n-k+1&rbrace; = [a_1 + (k-1)d] + [a_1 + (n-k)d] = 2a_1 + (n-1)d = a_1 + a_n
+a_k + a_{n-k+1} = [a_1 + (k-1)d] + [a_1 + (n-k)d] = 2a_1 + (n-1)d = a_1 + a_n
 $$
 
 $\blacksquare$
@@ -126,7 +126,7 @@ This is the structural reason why the arithmetic series sum formula works (pairi
 **Theorem.** For an arithmetic sequence,
 
 $$
-S_n = \frac&lbrace;n&rbrace;&lbrace;2&rbrace;(a_1 + a_n) = \frac&lbrace;n&rbrace;&lbrace;2&rbrace;[2a_1 + (n-1)d]
+S_n = \frac{n}{2}(a_1 + a_n) = \frac{n}{2}[2a_1 + (n-1)d]
 $$
 
 **Proof (pairing equidistant terms).**
@@ -134,17 +134,17 @@ $$
 Write the sum forwards and backwards:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 S_n &= a_1 + a_2 + \cdots + a_n \\
-S_n &= a_n + a_&lbrace;n-1&rbrace; + \cdots + a_1
-\end&lbrace;aligned&rbrace;
+S_n &= a_n + a_{n-1} + \cdots + a_1
+\end{aligned}
 $$
 
 Adding term by term, each pair sums to $a_1 + a_n$ by the equidistant-terms property. There are $n$
 such pairs:
 
 $$
-2S_n = n(a_1 + a_n) \implies S_n = \frac&lbrace;n&rbrace;&lbrace;2&rbrace;(a_1 + a_n)
+2S_n = n(a_1 + a_n) \implies S_n = \frac{n}{2}(a_1 + a_n)
 $$
 
 Substituting $a_n = a_1 + (n-1)d$ gives the second form. $\blacksquare$
@@ -154,7 +154,7 @@ Substituting $a_n = a_1 + (n-1)d$ gives the second form. $\blacksquare$
 Setting $a_1 = 1$, $d = 1$, $a_n = n$:
 
 $$
-\sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; k = \frac&lbrace;n(n+1)&rbrace;&lbrace;2&rbrace;
+\sum_{k=1}^{n} k = \frac{n(n+1)}{2}
 $$
 
 <details>
@@ -185,7 +185,7 @@ A **geometric sequence** (or geometric progression, GP) is a sequence where the 
 terms is constant. This constant ratio is denoted $r$:
 
 $$
-\frac&lbrace;a_&lbrace;n+1&rbrace;&rbrace;&lbrace;a_n&rbrace; = r \quad \mathrm&lbrace;for all &rbrace; n, \quad r \neq 0
+\frac{a_{n+1}}{a_n} = r \quad \mathrm{for all } n, \quad r \neq 0
 $$
 
 The sequence is: $a_1, \; a_1 r, \; a_1 r^2, \; \ldots$
@@ -195,7 +195,7 @@ The sequence is: $a_1, \; a_1 r, \; a_1 r^2, \; \ldots$
 **Theorem.** For a geometric sequence with first term $a_1$ and common ratio $r$:
 
 $$
-a_n = a_1 r^&lbrace;n-1&rbrace;
+a_n = a_1 r^{n-1}
 $$
 
 **Proof (by induction).**
@@ -204,7 +204,7 @@ $$
 - **Inductive step:** Assume $a_k = a_1 r^{k-1}$. Then
 
 $$
-a_&lbrace;k+1&rbrace; = a_k \cdot r = a_1 r^&lbrace;k-1&rbrace; \cdot r = a_1 r^k
+a_{k+1} = a_k \cdot r = a_1 r^{k-1} \cdot r = a_1 r^k
 $$
 
 $\blacksquare$
@@ -237,22 +237,22 @@ $r \gt 0$): $r = 2$. Then $a_1 = \frac{12}{4} = 3$.
 **Theorem.** For a geometric sequence with $r \neq 1$:
 
 $$
-S_n = \frac&lbrace;a_1(1 - r^n)&rbrace;&lbrace;1 - r&rbrace;
+S_n = \frac{a_1(1 - r^n)}{1 - r}
 $$
 
 **Proof.** Write out the sum and multiply by $r$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-S_n &= a_1 + a_1 r + a_1 r^2 + \cdots + a_1 r^&lbrace;n-1&rbrace; \\
-r S_n &= \phantom&lbrace;a_1 + &rbrace;\, a_1 r + a_1 r^2 + \cdots + a_1 r^&lbrace;n-1&rbrace; + a_1 r^n
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+S_n &= a_1 + a_1 r + a_1 r^2 + \cdots + a_1 r^{n-1} \\
+r S_n &= \phantom{a_1 + }\, a_1 r + a_1 r^2 + \cdots + a_1 r^{n-1} + a_1 r^n
+\end{aligned}
 $$
 
 Subtracting: $(1-r)S_n = a_1 - a_1 r^n = a_1(1 - r^n)$.
 
 $$
-S_n = \frac&lbrace;a_1(1 - r^n)&rbrace;&lbrace;1 - r&rbrace;
+S_n = \frac{a_1(1 - r^n)}{1 - r}
 $$
 
 $\blacksquare$
@@ -264,14 +264,14 @@ For $r = 1$, the sequence is constant and $S_n = n a_1$.
 **Theorem.** If $|r| \lt 1$, then:
 
 $$
-S_\infty = \sum_&lbrace;n=1&rbrace;^&lbrace;\infty&rbrace; a_1 r^&lbrace;n-1&rbrace; = \frac&lbrace;a_1&rbrace;&lbrace;1 - r&rbrace;
+S_\infty = \sum_{n=1}^{\infty} a_1 r^{n-1} = \frac{a_1}{1 - r}
 $$
 
 **Proof.** Since $|r| \lt 1$, we have $\lim_{n \to \infty} r^n = 0$. Applying this to the finite sum
 formula:
 
 $$
-S_\infty = \lim_&lbrace;n \to \infty&rbrace; \frac&lbrace;a_1(1 - r^n)&rbrace;&lbrace;1 - r&rbrace; = \frac&lbrace;a_1(1 - 0)&rbrace;&lbrace;1 - r&rbrace; = \frac&lbrace;a_1&rbrace;&lbrace;1 - r&rbrace;
+S_\infty = \lim_{n \to \infty} \frac{a_1(1 - r^n)}{1 - r} = \frac{a_1(1 - 0)}{1 - r} = \frac{a_1}{1 - r}
 $$
 
 $\blacksquare$
@@ -323,11 +323,11 @@ m.
 Sigma notation is linear:
 
 $$
-\sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; (a_k + b_k) = \sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; a_k + \sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; b_k
+\sum_{k=1}^{n} (a_k + b_k) = \sum_{k=1}^{n} a_k + \sum_{k=1}^{n} b_k
 $$
 
 $$
-\sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; c \cdot a_k = c \sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; a_k
+\sum_{k=1}^{n} c \cdot a_k = c \sum_{k=1}^{n} a_k
 $$
 
 where $c$ is a constant (does not depend on $k$).
@@ -337,7 +337,7 @@ where $c$ is a constant (does not depend on $k$).
 The index variable is a dummy. We can shift it:
 
 $$
-\sum_&lbrace;k=m&rbrace;^&lbrace;n&rbrace; a_k = \sum_&lbrace;k=m+1&rbrace;^&lbrace;n+1&rbrace; a_&lbrace;k-1&rbrace; = \sum_&lbrace;j=0&rbrace;^&lbrace;n-m&rbrace; a_&lbrace;j+m&rbrace;
+\sum_{k=m}^{n} a_k = \sum_{k=m+1}^{n+1} a_{k-1} = \sum_{j=0}^{n-m} a_{j+m}
 $$
 
 This is essential for re-indexing series to match known formulas.
@@ -345,7 +345,7 @@ This is essential for re-indexing series to match known formulas.
 ### Standard Sums
 
 $$
-\sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; 1 = n, \qquad \sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; k = \frac&lbrace;n(n+1)&rbrace;&lbrace;2&rbrace;, \qquad \sum_&lbrace;k=1&rbrace;^&lbrace;n&rbrace; k^2 = \frac&lbrace;n(n+1)(2n+1)&rbrace;&lbrace;6&rbrace;
+\sum_{k=1}^{n} 1 = n, \qquad \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \qquad \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}
 $$
 
 <details>
@@ -386,7 +386,7 @@ A **recurrence relation** defines each term of a sequence in terms of preceding 
 form is a **first-order recurrence**:
 
 $$
-a_&lbrace;n+1&rbrace; = f(a_n), \quad a_1 \mathrm&lbrace; given&rbrace;
+a_{n+1} = f(a_n), \quad a_1 \mathrm{ given}
 $$
 
 Arithmetic and geometric sequences are special cases:

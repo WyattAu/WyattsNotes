@@ -49,7 +49,7 @@ If $F$ is an antiderivative of $f$, then so is $F + C$ for any constant $C \in \
 For $n \neq -1$:
 
 $$
-\int x^n\,dx = \frac&lbrace;x^&lbrace;n+1&rbrace;&rbrace;&lbrace;n+1&rbrace; + C
+\int x^n\,dx = \frac{x^{n+1}}{n+1} + C
 $$
 
 #### Constant Multiple Rule
@@ -69,7 +69,7 @@ $$
 #### Reciprocal Rule (Logarithmic)
 
 $$
-\int \frac&lbrace;1&rbrace;&lbrace;x&rbrace;\,dx = \ln|x| + C
+\int \frac{1}{x}\,dx = \ln|x| + C
 $$
 
 ### Common Antiderivatives
@@ -99,18 +99,18 @@ $$
     **Find $\int (3x^4 - 5x^2 + 7)\,dx$**
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int (3x^4 - 5x^2 + 7)\,dx &= 3 \cdot \frac&lbrace;x^5&rbrace;&lbrace;5&rbrace; - 5 \cdot \frac&lbrace;x^3&rbrace;&lbrace;3&rbrace; + 7x + C \\[6pt]
-&= \frac&lbrace;3x^5&rbrace;&lbrace;5&rbrace; - \frac&lbrace;5x^3&rbrace;&lbrace;3&rbrace; + 7x + C
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int (3x^4 - 5x^2 + 7)\,dx &= 3 \cdot \frac{x^5}{5} - 5 \cdot \frac{x^3}{3} + 7x + C \\[6pt]
+&= \frac{3x^5}{5} - \frac{5x^3}{3} + 7x + C
+\end{aligned}
 $$
 
 **Find $\int \left(\frac{2}{x} + 3e^x - \frac{1}{\cos^2 x}\right)\,dx$**
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int \left(\frac&lbrace;2&rbrace;&lbrace;x&rbrace; + 3e^x - \sec^2 x\right)\,dx &= 2\ln|x| + 3e^x - \tan x + C
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int \left(\frac{2}{x} + 3e^x - \sec^2 x\right)\,dx &= 2\ln|x| + 3e^x - \tan x + C
+\end{aligned}
 $$
 
 </details>
@@ -125,7 +125,7 @@ $$
 For a function $f$ continuous on $[a, b]$, the definite integral is defined as:
 
 $$
-\int_a^b f(x)\,dx = \lim_&lbrace;n \to \infty&rbrace; \sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; f(x_i^*) \Delta x
+\int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x
 $$
 
 where $\Delta x = \dfrac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$-th subinterval.
@@ -169,10 +169,10 @@ If $f(x)$ changes sign on $[a, b]$, the integral gives the **net** (signed) area
 computed by splitting at the zeros of $f$ and taking absolute values:
 
 $$
-\mathrm&lbrace;Total area&rbrace; = \int_a^b |f(x)|\,dx
+\mathrm{Total area} = \int_a^b |f(x)|\,dx
 $$
 
-<DesmosGraph title="Integration as Area Under a Curve" expressions=&lbrace;["\int_&lbrace;a&rbrace;^&lbrace;b&rbrace; f(x) \, dx"]&rbrace; width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
+<DesmosGraph title="Integration as Area Under a Curve" expressions={["\int_{a}^{b} f(x) \, dx"]} width={800} height={500} />
 
 Adjust the sliders to change the function and limits, and observe how the shaded area approximates
 the definite integral.
@@ -184,11 +184,11 @@ the definite integral.
     **Evaluate $\int_1^3 (x^2 + 1)\,dx$**
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int_1^3 (x^2 + 1)\,dx &= \left[\frac&lbrace;x^3&rbrace;&lbrace;3&rbrace; + x\right]_1^3 \\[6pt]
-&= \left(\frac&lbrace;27&rbrace;&lbrace;3&rbrace; + 3\right) - \left(\frac&lbrace;1&rbrace;&lbrace;3&rbrace; + 1\right) \\[6pt]
-&= 12 - \frac&lbrace;4&rbrace;&lbrace;3&rbrace; = \frac&lbrace;32&rbrace;&lbrace;3&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int_1^3 (x^2 + 1)\,dx &= \left[\frac{x^3}{3} + x\right]_1^3 \\[6pt]
+&= \left(\frac{27}{3} + 3\right) - \left(\frac{1}{3} + 1\right) \\[6pt]
+&= 12 - \frac{4}{3} = \frac{32}{3}
+\end{aligned}
 $$
 
 **Find the area enclosed by $y = x^2 - 4$ and the $x$-axis.**
@@ -196,11 +196,11 @@ $$
 The curve crosses the $x$-axis at $x = -2$ and $x = 2$.
 
 $$
-\begin&lbrace;aligned&rbrace;
-\mathrm&lbrace;Area&rbrace; &= \int_&lbrace;-2&rbrace;^2 |x^2 - 4|\,dx = \int_&lbrace;-2&rbrace;^2 (4 - x^2)\,dx \\[6pt]
-&= \left[4x - \frac&lbrace;x^3&rbrace;&lbrace;3&rbrace;\right]_&lbrace;-2&rbrace;^2 \\[6pt]
-&= \left(8 - \frac&lbrace;8&rbrace;&lbrace;3&rbrace;\right) - \left(-8 + \frac&lbrace;8&rbrace;&lbrace;3&rbrace;\right) = \frac&lbrace;32&rbrace;&lbrace;3&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\mathrm{Area} &= \int_{-2}^2 |x^2 - 4|\,dx = \int_{-2}^2 (4 - x^2)\,dx \\[6pt]
+&= \left[4x - \frac{x^3}{3}\right]_{-2}^2 \\[6pt]
+&= \left(8 - \frac{8}{3}\right) - \left(-8 + \frac{8}{3}\right) = \frac{32}{3}
+\end{aligned}
 $$
 
 </details>
@@ -227,7 +227,7 @@ form.
 **Changing limits for definite integrals:**
 
 $$
-\int_a^b f(g(x))\,g'(x)\,dx = \int_&lbrace;g(a)&rbrace;^&lbrace;g(b)&rbrace; f(u)\,du
+\int_a^b f(g(x))\,g'(x)\,dx = \int_{g(a)}^{g(b)} f(u)\,du
 $$
 
 :::info[Examples]
@@ -239,7 +239,7 @@ $$
 Let $u = x^2 + 1$, then $du = 2x\,dx$.
 
 $$
-\int 2x\sqrt&lbrace;x^2 + 1&rbrace;\,dx = \int \sqrt&lbrace;u&rbrace;\,du = \frac&lbrace;2&rbrace;&lbrace;3&rbrace;u^&lbrace;3/2&rbrace; + C = \frac&lbrace;2&rbrace;&lbrace;3&rbrace;(x^2 + 1)^&lbrace;3/2&rbrace; + C
+\int 2x\sqrt{x^2 + 1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2 + 1)^{3/2} + C
 $$
 
 **Evaluate $\int_0^2 \frac{x}{x^2 + 1}\,dx$**
@@ -247,7 +247,7 @@ $$
 Let $u = x^2 + 1$, $du = 2x\,dx$. When $x = 0$, $u = 1$; when $x = 2$, $u = 5$.
 
 $$
-\int_0^2 \frac&lbrace;x&rbrace;&lbrace;x^2 + 1&rbrace;\,dx = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\int_1^5 \frac&lbrace;1&rbrace;&lbrace;u&rbrace;\,du = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\Big[\ln|u|\Big]_1^5 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\ln 5
+\int_0^2 \frac{x}{x^2 + 1}\,dx = \frac{1}{2}\int_1^5 \frac{1}{u}\,du = \frac{1}{2}\Big[\ln|u|\Big]_1^5 = \frac{1}{2}\ln 5
 $$
 
 </details>
@@ -297,10 +297,10 @@ $$
 Second: $u = x$, $dv = \cos x\,dx$, so $du = dx$, $v = \sin x$.
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \int x^2 \sin x\,dx &= -x^2 \cos x + 2\left(x\sin x - \int \sin x\,dx\right) \\[6pt]
 &= -x^2 \cos x + 2x\sin x + 2\cos x + C
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 </details>
@@ -337,7 +337,7 @@ Setting $x = -1$: $-5 + 1 = A(-3) \implies A = \frac{4}{3}$
 Setting $x = 2$: $10 + 1 = B(3) \implies B = \frac{11}{3}$
 
 $$
-\int \frac&lbrace;5x + 1&rbrace;&lbrace;(x+1)(x-2)&rbrace;\,dx = \frac&lbrace;4&rbrace;&lbrace;3&rbrace;\ln|x+1| + \frac&lbrace;11&rbrace;&lbrace;3&rbrace;\ln|x-2| + C
+\int \frac{5x + 1}{(x+1)(x-2)}\,dx = \frac{4}{3}\ln|x+1| + \frac{11}{3}\ln|x-2| + C
 $$
 
 </details>
@@ -350,7 +350,7 @@ Several standard techniques apply to integrals involving trigonometric functions
 **Pythagorean identities for conversion:**
 
 $$
-\sin^2 x = \frac&lbrace;1 - \cos 2x&rbrace;&lbrace;2&rbrace;, \qquad \cos^2 x = \frac&lbrace;1 + \cos 2x&rbrace;&lbrace;2&rbrace;
+\sin^2 x = \frac{1 - \cos 2x}{2}, \qquad \cos^2 x = \frac{1 + \cos 2x}{2}
 $$
 
 These are used to reduce the power of trigonometric functions in integrands.
@@ -358,15 +358,15 @@ These are used to reduce the power of trigonometric functions in integrands.
 **Products to sums:**
 
 $$
-\sin A \cos B = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;[\sin(A+B) + \sin(A-B)]
+\sin A \cos B = \frac{1}{2}[\sin(A+B) + \sin(A-B)]
 $$
 
 $$
-\cos A \cos B = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;[\cos(A-B) + \cos(A+B)]
+\cos A \cos B = \frac{1}{2}[\cos(A-B) + \cos(A+B)]
 $$
 
 $$
-\sin A \sin B = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;[\cos(A-B) - \cos(A+B)]
+\sin A \sin B = \frac{1}{2}[\cos(A-B) - \cos(A+B)]
 $$
 
 **Using substitution with trigonometric derivatives:** Recall that $\dfrac{d}{dx}(\sin x) = \cos x$
@@ -383,17 +383,17 @@ $\dfrac{d}{dx}(\tan x) = \sec^2 x$.
     **Find $\int \sin^2 x\,dx$**
 
 $$
-\int \sin^2 x\,dx = \int \frac&lbrace;1 - \cos 2x&rbrace;&lbrace;2&rbrace;\,dx = \frac&lbrace;x&rbrace;&lbrace;2&rbrace; - \frac&lbrace;\sin 2x&rbrace;&lbrace;4&rbrace; + C
+\int \sin^2 x\,dx = \int \frac{1 - \cos 2x}{2}\,dx = \frac{x}{2} - \frac{\sin 2x}{4} + C
 $$
 
 **Find $\int \sin^3 x\,dx$**
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \int \sin^3 x\,dx &= \int \sin x (1 - \cos^2 x)\,dx \\[6pt]
 &= \int \sin x\,dx - \int \sin x \cos^2 x\,dx \\[6pt]
-&= -\cos x + \frac&lbrace;\cos^3 x&rbrace;&lbrace;3&rbrace; + C
-\end&lbrace;aligned&rbrace;
+&= -\cos x + \frac{\cos^3 x}{3} + C
+\end{aligned}
 $$
 
 (using $u = \cos x$, $du = -\sin x\,dx$ for the second integral)
@@ -434,7 +434,7 @@ where the curves are expressed as $x = f(y)$ and $x = g(y)$.
 Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$, $2x \geq x^2$.
 
 $$
-A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac&lbrace;x^3&rbrace;&lbrace;3&rbrace;\right]_0^2 = 4 - \frac&lbrace;8&rbrace;&lbrace;3&rbrace; = \frac&lbrace;4&rbrace;&lbrace;3&rbrace;
+A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
 $$
 
 </details>
@@ -479,10 +479,10 @@ where $f(x) \geq g(x) \geq 0$ on $[a, b]$.
 $x = 4$.**
 
 $$
-\begin&lbrace;aligned&rbrace;
-V &= \pi \int_0^4 (\sqrt&lbrace;x&rbrace;)^2\,dx = \pi \int_0^4 x\,dx \\[6pt]
-&= \pi \left[\frac&lbrace;x^2&rbrace;&lbrace;2&rbrace;\right]_0^4 = 8\pi
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+V &= \pi \int_0^4 (\sqrt{x})^2\,dx = \pi \int_0^4 x\,dx \\[6pt]
+&= \pi \left[\frac{x^2}{2}\right]_0^4 = 8\pi
+\end{aligned}
 $$
 
 </details>
@@ -521,18 +521,18 @@ total distance in the first 3 seconds.**
 Displacement:
 
 $$
-\int_0^3 (6t^2 - 4t)\,dt = \left[2t^3 - 2t^2\right]_0^3 = 54 - 18 = 36 \mathrm&lbrace; m&rbrace;
+\int_0^3 (6t^2 - 4t)\,dt = \left[2t^3 - 2t^2\right]_0^3 = 54 - 18 = 36 \mathrm{ m}
 $$
 
 Total distance: find when $v(t) = 0$: $6t^2 - 4t = 0 \implies t = 0$ or $t = \frac{2}{3}$.
 
 $$
-\begin&lbrace;aligned&rbrace;
-\mathrm&lbrace;Distance&rbrace; &= \int_0^&lbrace;2/3&rbrace; |6t^2 - 4t|\,dt + \int_&lbrace;2/3&rbrace;^3 |6t^2 - 4t|\,dt \\[6pt]
-&= \int_0^&lbrace;2/3&rbrace; (4t - 6t^2)\,dt + \int_&lbrace;2/3&rbrace;^3 (6t^2 - 4t)\,dt \\[6pt]
-&= \left[2t^2 - 2t^3\right]_0^&lbrace;2/3&rbrace; + \left[2t^3 - 2t^2\right]_&lbrace;2/3&rbrace;^3 \\[6pt]
-&= \frac&lbrace;8&rbrace;&lbrace;27&rbrace; + \left(36 - \left(-\frac&lbrace;8&rbrace;&lbrace;27&rbrace;\right)\right) = \frac&lbrace;8&rbrace;&lbrace;27&rbrace; + 36 + \frac&lbrace;8&rbrace;&lbrace;27&rbrace; = \frac&lbrace;988&rbrace;&lbrace;27&rbrace; \approx 36.6 \mathrm&lbrace; m&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\mathrm{Distance} &= \int_0^{2/3} |6t^2 - 4t|\,dt + \int_{2/3}^3 |6t^2 - 4t|\,dt \\[6pt]
+&= \int_0^{2/3} (4t - 6t^2)\,dt + \int_{2/3}^3 (6t^2 - 4t)\,dt \\[6pt]
+&= \left[2t^2 - 2t^3\right]_0^{2/3} + \left[2t^3 - 2t^2\right]_{2/3}^3 \\[6pt]
+&= \frac{8}{27} + \left(36 - \left(-\frac{8}{27}\right)\right) = \frac{8}{27} + 36 + \frac{8}{27} = \frac{988}{27} \approx 36.6 \mathrm{ m}
+\end{aligned}
 $$
 
 </details>
@@ -595,10 +595,10 @@ $$
     **Given $\int_1^3 f(x)\,dx = 5$ and $\int_1^3 g(x)\,dx = -2$, find $\int_3^1 [3f(x) - 2g(x)]\,dx$.**
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \int_3^1 [3f(x) - 2g(x)]\,dx &= -\int_1^3 [3f(x) - 2g(x)]\,dx \\[6pt]
 &= -\left(3 \cdot 5 - 2 \cdot (-2)\right) = -(15 + 4) = -19
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 </details>
@@ -615,15 +615,15 @@ interval of integration.
 ### Type 1: Infinite Limits of Integration
 
 $$
-\int_a^&lbrace;\infty&rbrace; f(x)\,dx = \lim_&lbrace;t \to \infty&rbrace; \int_a^t f(x)\,dx
+\int_a^{\infty} f(x)\,dx = \lim_{t \to \infty} \int_a^t f(x)\,dx
 $$
 
 $$
-\int_&lbrace;-\infty&rbrace;^b f(x)\,dx = \lim_&lbrace;t \to -\infty&rbrace; \int_t^b f(x)\,dx
+\int_{-\infty}^b f(x)\,dx = \lim_{t \to -\infty} \int_t^b f(x)\,dx
 $$
 
 $$
-\int_&lbrace;-\infty&rbrace;^&lbrace;\infty&rbrace; f(x)\,dx = \int_&lbrace;-\infty&rbrace;^c f(x)\,dx + \int_c^&lbrace;\infty&rbrace; f(x)\,dx
+\int_{-\infty}^{\infty} f(x)\,dx = \int_{-\infty}^c f(x)\,dx + \int_c^{\infty} f(x)\,dx
 $$
 
 Both limits must converge independently for the integral to converge.
@@ -633,19 +633,19 @@ Both limits must converge independently for the integral to converge.
 If $f$ has a vertical asymptote at $x = a$:
 
 $$
-\int_a^b f(x)\,dx = \lim_&lbrace;t \to a^+&rbrace; \int_t^b f(x)\,dx
+\int_a^b f(x)\,dx = \lim_{t \to a^+} \int_t^b f(x)\,dx
 $$
 
 If $f$ has a vertical asymptote at $x = b$:
 
 $$
-\int_a^b f(x)\,dx = \lim_&lbrace;t \to b^-&rbrace; \int_a^t f(x)\,dx
+\int_a^b f(x)\,dx = \lim_{t \to b^-} \int_a^t f(x)\,dx
 $$
 
 If $f$ has a vertical asymptote at an interior point $x = c \in (a, b)$:
 
 $$
-\int_a^b f(x)\,dx = \lim_&lbrace;t \to c^-&rbrace; \int_a^t f(x)\,dx + \lim_&lbrace;t \to c^+&rbrace; \int_t^b f(x)\,dx
+\int_a^b f(x)\,dx = \lim_{t \to c^-} \int_a^t f(x)\,dx + \lim_{t \to c^+} \int_t^b f(x)\,dx
 $$
 
 ### Convergence and Divergence
@@ -657,7 +657,7 @@ otherwise.
 converges if and only if $p > 1$, in which case:
 
 $$
-\int_1^&lbrace;\infty&rbrace; \frac&lbrace;1&rbrace;&lbrace;x^p&rbrace;\,dx = \frac&lbrace;1&rbrace;&lbrace;p - 1&rbrace;
+\int_1^{\infty} \frac{1}{x^p}\,dx = \frac{1}{p - 1}
 $$
 
 Similarly, $\displaystyle\int_0^1 \frac{1}{x^p}\,dx$ converges if and only if $p < 1$.
@@ -673,10 +673,10 @@ diverges, then $\int_a^{\infty} g(x)\,dx$ also diverges.
     **Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^2}\,dx$ converges.**
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int_1^&lbrace;\infty&rbrace; \frac&lbrace;1&rbrace;&lbrace;x^2&rbrace;\,dx &= \lim_&lbrace;t \to \infty&rbrace; \int_1^t x^&lbrace;-2&rbrace;\,dx = \lim_&lbrace;t \to \infty&rbrace; \left[-\frac&lbrace;1&rbrace;&lbrace;x&rbrace;\right]_1^t \\[6pt]
-&= \lim_&lbrace;t \to \infty&rbrace; \left(-\frac&lbrace;1&rbrace;&lbrace;t&rbrace; + 1\right) = 1
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int_1^{\infty} \frac{1}{x^2}\,dx &= \lim_{t \to \infty} \int_1^t x^{-2}\,dx = \lim_{t \to \infty} \left[-\frac{1}{x}\right]_1^t \\[6pt]
+&= \lim_{t \to \infty} \left(-\frac{1}{t} + 1\right) = 1
+\end{aligned}
 $$
 
 The integral converges to $1$. (Consistent with the $p$-test: $p = 2 > 1$.)
@@ -684,10 +684,10 @@ The integral converges to $1$. (Consistent with the $p$-test: $p = 2 > 1$.)
 **Determine whether $\displaystyle\int_0^1 \frac{1}{\sqrt{x}}\,dx$ converges.**
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int_0^1 \frac&lbrace;1&rbrace;&lbrace;\sqrt&lbrace;x&rbrace;&rbrace;\,dx &= \lim_&lbrace;t \to 0^+&rbrace; \int_t^1 x^&lbrace;-1/2&rbrace;\,dx = \lim_&lbrace;t \to 0^+&rbrace; \Big[2\sqrt&lbrace;x&rbrace;\Big]_t^1 \\[6pt]
-&= \lim_&lbrace;t \to 0^+&rbrace; (2 - 2\sqrt&lbrace;t&rbrace;) = 2
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int_0^1 \frac{1}{\sqrt{x}}\,dx &= \lim_{t \to 0^+} \int_t^1 x^{-1/2}\,dx = \lim_{t \to 0^+} \Big[2\sqrt{x}\Big]_t^1 \\[6pt]
+&= \lim_{t \to 0^+} (2 - 2\sqrt{t}) = 2
+\end{aligned}
 $$
 
 The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} < 1$.)
@@ -710,14 +710,14 @@ Alternatively, split:
 $\dfrac{x^3 + 2x}{\sqrt{x^2 + 1}} = \dfrac{x(x^2 + 1)}{\sqrt{x^2 + 1}} + \dfrac{x}{\sqrt{x^2 + 1}} = x\sqrt{x^2 + 1} + \dfrac{x}{\sqrt{x^2 + 1}}$.
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int x\sqrt&lbrace;x^2 + 1&rbrace;\,dx &= \frac&lbrace;1&rbrace;&lbrace;3&rbrace;(x^2 + 1)^&lbrace;3/2&rbrace; + C_1 \\[6pt]
-\int \frac&lbrace;x&rbrace;&lbrace;\sqrt&lbrace;x^2 + 1&rbrace;&rbrace;\,dx &= \sqrt&lbrace;x^2 + 1&rbrace; + C_2
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int x\sqrt{x^2 + 1}\,dx &= \frac{1}{3}(x^2 + 1)^{3/2} + C_1 \\[6pt]
+\int \frac{x}{\sqrt{x^2 + 1}}\,dx &= \sqrt{x^2 + 1} + C_2
+\end{aligned}
 $$
 
 $$
-\int \frac&lbrace;x^3 + 2x&rbrace;&lbrace;\sqrt&lbrace;x^2 + 1&rbrace;&rbrace;\,dx = \frac&lbrace;1&rbrace;&lbrace;3&rbrace;(x^2 + 1)^&lbrace;3/2&rbrace; + \sqrt&lbrace;x^2 + 1&rbrace; + C
+\int \frac{x^3 + 2x}{\sqrt{x^2 + 1}}\,dx = \frac{1}{3}(x^2 + 1)^{3/2} + \sqrt{x^2 + 1} + C
 $$
 
 </details>
@@ -730,10 +730,10 @@ $$
     Integration by parts: $u = x$, $dv = \sin x\,dx$, so $du = dx$, $v = -\cos x$.
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int_0^&lbrace;\pi/2&rbrace; x\sin x\,dx &= \Big[-x\cos x\Big]_0^&lbrace;\pi/2&rbrace; + \int_0^&lbrace;\pi/2&rbrace; \cos x\,dx \\[6pt]
-&= (0 - 0) + \Big[\sin x\Big]_0^&lbrace;\pi/2&rbrace; = 1
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int_0^{\pi/2} x\sin x\,dx &= \Big[-x\cos x\Big]_0^{\pi/2} + \int_0^{\pi/2} \cos x\,dx \\[6pt]
+&= (0 - 0) + \Big[\sin x\Big]_0^{\pi/2} = 1
+\end{aligned}
 $$
 
 </details>
@@ -748,11 +748,11 @@ $$
 On $[-1, 0]$: $x^3 \geq x$. On $[0, 1]$: $x \geq x^3$.
 
 $$
-\begin&lbrace;aligned&rbrace;
-A &= \int_&lbrace;-1&rbrace;^0 (x^3 - x)\,dx + \int_0^1 (x - x^3)\,dx \\[6pt]
-&= \left[\frac&lbrace;x^4&rbrace;&lbrace;4&rbrace; - \frac&lbrace;x^2&rbrace;&lbrace;2&rbrace;\right]_&lbrace;-1&rbrace;^0 + \left[\frac&lbrace;x^2&rbrace;&lbrace;2&rbrace; - \frac&lbrace;x^4&rbrace;&lbrace;4&rbrace;\right]_0^1 \\[6pt]
-&= \left(0 - \frac&lbrace;1&rbrace;&lbrace;4&rbrace; + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right) + \left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace; - \frac&lbrace;1&rbrace;&lbrace;4&rbrace;\right) = \frac&lbrace;1&rbrace;&lbrace;4&rbrace; + \frac&lbrace;1&rbrace;&lbrace;4&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+A &= \int_{-1}^0 (x^3 - x)\,dx + \int_0^1 (x - x^3)\,dx \\[6pt]
+&= \left[\frac{x^4}{4} - \frac{x^2}{2}\right]_{-1}^0 + \left[\frac{x^2}{2} - \frac{x^4}{4}\right]_0^1 \\[6pt]
+&= \left(0 - \frac{1}{4} + \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{4}\right) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
+\end{aligned}
 $$
 
 </details>
@@ -765,34 +765,34 @@ $$
     The curve $y = \ln x$ meets the $x$-axis at $x = 1$.
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 V &= \pi \int_1^e (\ln x)^2\,dx
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 Integration by parts with $u = (\ln x)^2$, $dv = dx$: $du = \dfrac{2\ln x}{x}\,dx$, $v = x$.
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \int (\ln x)^2\,dx &= x(\ln x)^2 - 2\int \ln x\,dx
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 Apply parts again for $\int \ln x\,dx$: $u = \ln x$, $dv = dx$, so $\int \ln x\,dx = x\ln x - x$.
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \int (\ln x)^2\,dx &= x(\ln x)^2 - 2(x\ln x - x) + C \\[6pt]
 &= x(\ln x)^2 - 2x\ln x + 2x + C
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 Evaluating from $1$ to $e$:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \Big[x(\ln x)^2 - 2x\ln x + 2x\Big]_1^e &= (e - 2e + 2e) - (0 - 0 + 2) = e - 2
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 $$
@@ -807,7 +807,7 @@ $$
 <details>
     <summary>Use partial fractions to find $\int \frac{3x + 7}{(x + 2)(x - 1)}\,dx$.</summary>
     $$
-\frac&lbrace;3x + 7&rbrace;&lbrace;(x+2)(x-1)&rbrace; = \frac&lbrace;A&rbrace;&lbrace;x+2&rbrace; + \frac&lbrace;B&rbrace;&lbrace;x-1&rbrace;
+\frac{3x + 7}{(x+2)(x-1)} = \frac{A}{x+2} + \frac{B}{x-1}
 $$
 
 $$
@@ -819,7 +819,7 @@ $x = 1$: $10 = 3B \implies B = \dfrac{10}{3}$
 $x = -2$: $1 = -3A \implies A = -\dfrac{1}{3}$
 
 $$
-\int \frac&lbrace;3x + 7&rbrace;&lbrace;(x+2)(x-1)&rbrace;\,dx = -\frac&lbrace;1&rbrace;&lbrace;3&rbrace;\ln|x+2| + \frac&lbrace;10&rbrace;&lbrace;3&rbrace;\ln|x-1| + C
+\int \frac{3x + 7}{(x+2)(x-1)}\,dx = -\frac{1}{3}\ln|x+2| + \frac{10}{3}\ln|x-1| + C
 $$
 
 </details>
@@ -840,7 +840,7 @@ $$
 Displacement at $t = 3$:
 
 $$
-s(3) = 27 - 9 + 12 = 30 \mathrm&lbrace; m&rbrace;
+s(3) = 27 - 9 + 12 = 30 \mathrm{ m}
 $$
 
 </details>
@@ -854,10 +854,10 @@ $$
 $u \to \infty$.
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int_2^&lbrace;\infty&rbrace; \frac&lbrace;1&rbrace;&lbrace;x(\ln x)^2&rbrace;\,dx &= \int_&lbrace;\ln 2&rbrace;^&lbrace;\infty&rbrace; \frac&lbrace;1&rbrace;&lbrace;u^2&rbrace;\,du = \lim_&lbrace;t \to \infty&rbrace; \int_&lbrace;\ln 2&rbrace;^t u^&lbrace;-2&rbrace;\,du \\[6pt]
-&= \lim_&lbrace;t \to \infty&rbrace; \left[-\frac&lbrace;1&rbrace;&lbrace;u&rbrace;\right]_&lbrace;\ln 2&rbrace;^t = \lim_&lbrace;t \to \infty&rbrace; \left(-\frac&lbrace;1&rbrace;&lbrace;t&rbrace; + \frac&lbrace;1&rbrace;&lbrace;\ln 2&rbrace;\right) = \frac&lbrace;1&rbrace;&lbrace;\ln 2&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int_2^{\infty} \frac{1}{x(\ln x)^2}\,dx &= \int_{\ln 2}^{\infty} \frac{1}{u^2}\,du = \lim_{t \to \infty} \int_{\ln 2}^t u^{-2}\,du \\[6pt]
+&= \lim_{t \to \infty} \left[-\frac{1}{u}\right]_{\ln 2}^t = \lim_{t \to \infty} \left(-\frac{1}{t} + \frac{1}{\ln 2}\right) = \frac{1}{\ln 2}
+\end{aligned}
 $$
 
 The integral converges to $\dfrac{1}{\ln 2}$.
@@ -872,7 +872,7 @@ The integral converges to $\dfrac{1}{\ln 2}$.
     Since $\deg(\mathrm{numerator}) = \deg(\mathrm{denominator})$, perform long division first:
 
 $$
-\frac&lbrace;x^2&rbrace;&lbrace;x^2 - 1&rbrace; = 1 + \frac&lbrace;1&rbrace;&lbrace;x^2 - 1&rbrace; = 1 + \frac&lbrace;1&rbrace;&lbrace;(x-1)(x+1)&rbrace;
+\frac{x^2}{x^2 - 1} = 1 + \frac{1}{x^2 - 1} = 1 + \frac{1}{(x-1)(x+1)}
 $$
 
 Partial fractions: $\dfrac{1}{(x-1)(x+1)} = \dfrac{A}{x-1} + \dfrac{B}{x+1}$
@@ -882,10 +882,10 @@ $1 = A(x+1) + B(x-1)$
 $x = 1$: $A = \dfrac{1}{2}$, $x = -1$: $B = -\dfrac{1}{2}$
 
 $$
-\begin&lbrace;aligned&rbrace;
-\int \frac&lbrace;x^2&rbrace;&lbrace;x^2 - 1&rbrace;\,dx &= \int \left(1 + \frac&lbrace;1&rbrace;&lbrace;2(x-1)&rbrace; - \frac&lbrace;1&rbrace;&lbrace;2(x+1)&rbrace;\right)\,dx \\[6pt]
-&= x + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\ln|x-1| - \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\ln|x+1| + C
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\int \frac{x^2}{x^2 - 1}\,dx &= \int \left(1 + \frac{1}{2(x-1)} - \frac{1}{2(x+1)}\right)\,dx \\[6pt]
+&= x + \frac{1}{2}\ln|x-1| - \frac{1}{2}\ln|x+1| + C
+\end{aligned}
 $$
 
 </details>
@@ -898,7 +898,7 @@ $$
     Let $u = 1 + e^x$, $du = e^x\,dx$. When $x = 0$, $u = 2$; when $x = 1$, $u = 1 + e$.
 
 $$
-\int_0^1 \frac&lbrace;e^x&rbrace;&lbrace;1 + e^x&rbrace;\,dx = \int_2^&lbrace;1+e&rbrace; \frac&lbrace;1&rbrace;&lbrace;u&rbrace;\,du = \Big[\ln u\Big]_2^&lbrace;1+e&rbrace; = \ln(1 + e) - \ln 2
+\int_0^1 \frac{e^x}{1 + e^x}\,dx = \int_2^{1+e} \frac{1}{u}\,du = \Big[\ln u\Big]_2^{1+e} = \ln(1 + e) - \ln 2
 $$
 
 </details>
@@ -930,7 +930,7 @@ I = e^x \sin x - (-e^x \cos x + I) = e^x \sin x + e^x \cos x - I
 $$
 
 $$
-2I = e^x (\sin x + \cos x) \implies I = \frac&lbrace;e^x (\sin x + \cos x)&rbrace;&lbrace;2&rbrace; + C
+2I = e^x (\sin x + \cos x) \implies I = \frac{e^x (\sin x + \cos x)}{2} + C
 $$
 
 </details>

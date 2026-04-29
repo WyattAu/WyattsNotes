@@ -193,7 +193,7 @@ standard defines single precision (32-bit) and double precision (64-bit).
 **Value calculation:**
 
 $$
-\mathrm&lbrace;Value&rbrace; = (-1)^S \times 2^&lbrace;E - 127&rbrace; \times (1 + M)
+\mathrm{Value} = (-1)^S \times 2^{E - 127} \times (1 + M)
 $$
 
 Where `S` is the sign bit, `E` is the exponent (stored as unsigned with bias 127), and `M` is the
@@ -396,7 +396,7 @@ K = 1 - \max(R', G', B')
 $$
 
 $$
-C = \frac&lbrace;1 - R' - K&rbrace;&lbrace;1 - K&rbrace;
+C = \frac{1 - R' - K}{1 - K}
 $$
 
 Where $R' = R / 255$, etc.
@@ -769,11 +769,11 @@ text and better on data with repeated patterns.
 ### Compression Ratio Calculations
 
 $$
-\mathrm&lbrace;Compression Ratio&rbrace; = \frac&lbrace;\mathrm&lbrace;Original Size&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Compressed Size&rbrace;&rbrace;
+\mathrm{Compression Ratio} = \frac{\mathrm{Original Size}}{\mathrm{Compressed Size}}
 $$
 
 $$
-\mathrm&lbrace;Space Savings (\%)&rbrace; = \left(1 - \frac&lbrace;\mathrm&lbrace;Compressed Size&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Original Size&rbrace;&rbrace;\right) \times 100\%
+\mathrm{Space Savings (\%)} = \left(1 - \frac{\mathrm{Compressed Size}}{\mathrm{Original Size}}\right) \times 100\%
 $$
 
 <details>
@@ -1294,49 +1294,49 @@ Answer:
 (a)
 
 $$
-\mathrm&lbrace;Size (bits)&rbrace; = 3840 \times 2160 \times 24 = 198180480 \mathrm&lbrace; bits&rbrace;
+\mathrm{Size (bits)} = 3840 \times 2160 \times 24 = 198180480 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Size (bytes)&rbrace; = \frac&lbrace;198180480&rbrace;&lbrace;8&rbrace; = 24772560 \mathrm&lbrace; bytes&rbrace;
+\mathrm{Size (bytes)} = \frac{198180480}{8} = 24772560 \mathrm{ bytes}
 $$
 
 $$
-\mathrm&lbrace;Size (MB)&rbrace; = \frac&lbrace;24772560&rbrace;&lbrace;1024 \times 1024&rbrace; \approx 23.63 \mathrm&lbrace; MB&rbrace;
+\mathrm{Size (MB)} = \frac{24772560}{1024 \times 1024} \approx 23.63 \mathrm{ MB}
 $$
 
 (b)
 
 $$
-\mathrm&lbrace;Duration&rbrace; = 5 \times 60 = 300 \mathrm&lbrace; s&rbrace;
+\mathrm{Duration} = 5 \times 60 = 300 \mathrm{ s}
 $$
 
 $$
-\mathrm&lbrace;Size (bits)&rbrace; = 48000 \times 24 \times 300 \times 2 = 691200000 \mathrm&lbrace; bits&rbrace;
+\mathrm{Size (bits)} = 48000 \times 24 \times 300 \times 2 = 691200000 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Size (bytes)&rbrace; = \frac&lbrace;691200000&rbrace;&lbrace;8&rbrace; = 86400000 \mathrm&lbrace; bytes&rbrace;
+\mathrm{Size (bytes)} = \frac{691200000}{8} = 86400000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm&lbrace;Size (MB)&rbrace; = \frac&lbrace;86400000&rbrace;&lbrace;1024 \times 1024&rbrace; \approx 82.40 \mathrm&lbrace; MB&rbrace;
+\mathrm{Size (MB)} = \frac{86400000}{1024 \times 1024} \approx 82.40 \mathrm{ MB}
 $$
 
 (c)
 
 $$
-\mathrm&lbrace;Size (bits)&rbrace; = 320000 \times 300 = 96000000 \mathrm&lbrace; bits&rbrace;
+\mathrm{Size (bits)} = 320000 \times 300 = 96000000 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Size (MB)&rbrace; = \frac&lbrace;96000000&rbrace;&lbrace;8 \times 1024 \times 1024&rbrace; \approx 11.44 \mathrm&lbrace; MB&rbrace;
+\mathrm{Size (MB)} = \frac{96000000}{8 \times 1024 \times 1024} \approx 11.44 \mathrm{ MB}
 $$
 
 (d)
 
 $$
-\mathrm&lbrace;Compression ratio&rbrace; = \frac&lbrace;82.40&rbrace;&lbrace;11.44&rbrace; \approx 7.2 : 1
+\mathrm{Compression ratio} = \frac{82.40}{11.44} \approx 7.2 : 1
 $$
 
 </details>

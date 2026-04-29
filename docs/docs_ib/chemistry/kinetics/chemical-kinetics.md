@@ -13,13 +13,13 @@ slug: chemical-kinetics
 The rate of a reaction is the change in concentration of a reactant or product per unit time.
 
 $$
-\mathrm&lbrace;Rate&rbrace; = \frac&lbrace;\Delta[\mathrm&lbrace;product&rbrace;]&rbrace;&lbrace;\Delta t&rbrace; = -\frac&lbrace;\Delta[\mathrm&lbrace;reactant&rbrace;]&rbrace;&lbrace;\Delta t&rbrace;
+\mathrm{Rate} = \frac{\Delta[\mathrm{product}]}{\Delta t} = -\frac{\Delta[\mathrm{reactant}]}{\Delta t}
 $$
 
 ### Average Rate
 
 $$
-\mathrm&lbrace;Average rate&rbrace; = \frac&lbrace;[\mathrm&lbrace;A&rbrace;]_2 - [\mathrm&lbrace;A&rbrace;]_1&rbrace;&lbrace;t_2 - t_1&rbrace;
+\mathrm{Average rate} = \frac{[\mathrm{A}]_2 - [\mathrm{A}]_1}{t_2 - t_1}
 $$
 
 ### Instantaneous Rate
@@ -32,7 +32,7 @@ tangent to the curve).
 For the reaction $a\mathrm{A} + b\mathrm{B} \to c\mathrm{C} + d\mathrm{D}$:
 
 $$
-\mathrm&lbrace;Rate&rbrace; = -\frac&lbrace;1&rbrace;&lbrace;a&rbrace;\frac&lbrace;d[\mathrm&lbrace;A&rbrace;]&rbrace;&lbrace;dt&rbrace; = -\frac&lbrace;1&rbrace;&lbrace;b&rbrace;\frac&lbrace;d[\mathrm&lbrace;B&rbrace;]&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;1&rbrace;&lbrace;c&rbrace;\frac&lbrace;d[\mathrm&lbrace;C&rbrace;]&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;1&rbrace;&lbrace;d&rbrace;\frac&lbrace;d[\mathrm&lbrace;D&rbrace;]&rbrace;&lbrace;dt&rbrace;
+\mathrm{Rate} = -\frac{1}{a}\frac{d[\mathrm{A}]}{dt} = -\frac{1}{b}\frac{d[\mathrm{B}]}{dt} = \frac{1}{c}\frac{d[\mathrm{C}]}{dt} = \frac{1}{d}\frac{d[\mathrm{D}]}{dt}
 $$
 
 ### Experimental Determination
@@ -118,7 +118,7 @@ A catalyst:
 For a reaction between A and B:
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k[\mathrm&lbrace;A&rbrace;]^m[\mathrm&lbrace;B&rbrace;]^n
+\mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n
 $$
 
 where:
@@ -141,7 +141,7 @@ where:
 For a rate equation $\mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$:
 
 $$
-\mathrm&lbrace;Units of &rbrace; k = \frac&lbrace;\mathrm&lbrace;mol/(L&rbrace;\cdot\mathrm&lbrace;s)&rbrace;&rbrace;&lbrace;(\mathrm&lbrace;mol/L&rbrace;)^&lbrace;m+n&rbrace;&rbrace; = (\mathrm&lbrace;mol/L&rbrace;)^&lbrace;1-(m+n)&rbrace;\cdot\mathrm&lbrace;s&rbrace;^&lbrace;-1&rbrace;
+\mathrm{Units of } k = \frac{\mathrm{mol/(L}\cdot\mathrm{s)}}{(\mathrm{mol/L})^{m+n}} = (\mathrm{mol/L})^{1-(m+n)}\cdot\mathrm{s}^{-1}
 $$
 
 | Overall Order | Units of $k$            |
@@ -154,11 +154,11 @@ $$
 ### Zero-Order Reactions
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k \quad (\mathrm&lbrace;constant&rbrace;)
+\mathrm{Rate} = k \quad (\mathrm{constant})
 $$
 
 $$
-[\mathrm&lbrace;A&rbrace;] = [\mathrm&lbrace;A&rbrace;]_0 - kt
+[\mathrm{A}] = [\mathrm{A}]_0 - kt
 $$
 
 The concentration decreases linearly with time.
@@ -166,15 +166,15 @@ The concentration decreases linearly with time.
 ### First-Order Reactions
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k[\mathrm&lbrace;A&rbrace;]
+\mathrm{Rate} = k[\mathrm{A}]
 $$
 
 $$
-[\mathrm&lbrace;A&rbrace;] = [\mathrm&lbrace;A&rbrace;]_0 e^&lbrace;-kt&rbrace;
+[\mathrm{A}] = [\mathrm{A}]_0 e^{-kt}
 $$
 
 $$
-\ln[\mathrm&lbrace;A&rbrace;] = \ln[\mathrm&lbrace;A&rbrace;]_0 - kt
+\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt
 $$
 
 A plot of $\ln[\mathrm{A}]$ vs $t$ gives a straight line with gradient $= -k$.
@@ -184,17 +184,17 @@ A plot of $\ln[\mathrm{A}]$ vs $t$ gives a straight line with gradient $= -k$.
 The half-life $t_{1/2}$ is independent of initial concentration:
 
 $$
-t_&lbrace;1/2&rbrace; = \frac&lbrace;\ln 2&rbrace;&lbrace;k&rbrace; = \frac&lbrace;0.693&rbrace;&lbrace;k&rbrace;
+t_{1/2} = \frac{\ln 2}{k} = \frac{0.693}{k}
 $$
 
 ### Second-Order Reactions
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k[\mathrm&lbrace;A&rbrace;]^2
+\mathrm{Rate} = k[\mathrm{A}]^2
 $$
 
 $$
-\frac&lbrace;1&rbrace;&lbrace;[\mathrm&lbrace;A&rbrace;]&rbrace; = \frac&lbrace;1&rbrace;&lbrace;[\mathrm&lbrace;A&rbrace;]_0&rbrace; + kt
+\frac{1}{[\mathrm{A}]} = \frac{1}{[\mathrm{A}]_0} + kt
 $$
 
 A plot of $\dfrac{1}{[\mathrm{A}]}$ vs $t$ gives a straight line with gradient $= k$.
@@ -230,7 +230,7 @@ Overall order $= 3$.
 **Rate constant**: From experiment 1: $0.020 = k(0.10)(0.10)^2 = k(0.001)$.
 
 $$
-k = 20\mathrm&lbrace; L&rbrace;^2/(\mathrm&lbrace;mol&rbrace;^2\cdot\mathrm&lbrace;s&rbrace;)
+k = 20\mathrm{ L}^2/(\mathrm{mol}^2\cdot\mathrm{s})
 $$
 
 :::
@@ -255,7 +255,7 @@ time. The shape of the curve indicates the order.
 ### Equation
 
 $$
-k = A e^&lbrace;-E_a/RT&rbrace;
+k = A e^{-E_a/RT}
 $$
 
 where:
@@ -269,7 +269,7 @@ where:
 ### Logarithmic Form
 
 $$
-\ln k = \ln A - \frac&lbrace;E_a&rbrace;&lbrace;RT&rbrace;
+\ln k = \ln A - \frac{E_a}{RT}
 $$
 
 ### Graphical Determination of $E_a$
@@ -282,7 +282,7 @@ A plot of $\ln k$ vs $\dfrac{1}{T}$ gives a straight line:
 ### Two-Point Form
 
 $$
-\ln\!\left(\frac&lbrace;k_2&rbrace;&lbrace;k_1&rbrace;\right) = -\frac&lbrace;E_a&rbrace;&lbrace;R&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;T_2&rbrace; - \frac&lbrace;1&rbrace;&lbrace;T_1&rbrace;\right) = \frac&lbrace;E_a&rbrace;&lbrace;R&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;T_1&rbrace; - \frac&lbrace;1&rbrace;&lbrace;T_2&rbrace;\right)
+\ln\!\left(\frac{k_2}{k_1}\right) = -\frac{E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right) = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)
 $$
 
 :::info[Example]
@@ -291,19 +291,19 @@ The rate constant for a reaction is $3.2 \times 10^{-3}\mathrm{ s}^{-1}$ at $300
 $1.5 \times 10^{-2}\mathrm{ s}^{-1}$ at $350\mathrm{ K}$. Find the activation energy.
 
 $$
-\ln\!\left(\frac&lbrace;1.5 \times 10^&lbrace;-2&rbrace;&rbrace;&lbrace;3.2 \times 10^&lbrace;-3&rbrace;&rbrace;\right) = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;300&rbrace; - \frac&lbrace;1&rbrace;&lbrace;350&rbrace;\right)
+\ln\!\left(\frac{1.5 \times 10^{-2}}{3.2 \times 10^{-3}}\right) = \frac{E_a}{8.314}\left(\frac{1}{300} - \frac{1}{350}\right)
 $$
 
 $$
-\ln(4.688) = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;(0.000476)
+\ln(4.688) = \frac{E_a}{8.314}(0.000476)
 $$
 
 $$
-1.545 = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;(0.000476)
+1.545 = \frac{E_a}{8.314}(0.000476)
 $$
 
 $$
-E_a = \frac&lbrace;1.545 \times 8.314&rbrace;&lbrace;0.000476&rbrace; = 26965\mathrm&lbrace; J/mol&rbrace; = 27.0\mathrm&lbrace; kJ/mol&rbrace;
+E_a = \frac{1.545 \times 8.314}{0.000476} = 26965\mathrm{ J/mol} = 27.0\mathrm{ kJ/mol}
 $$
 
 :::
@@ -353,7 +353,7 @@ Proposed mechanism:
 The rate-determining step is step 1 (bimolecular):
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k[\mathrm&lbrace;NO&rbrace;_2][\mathrm&lbrace;F&rbrace;_2]
+\mathrm{Rate} = k[\mathrm{NO}_2][\mathrm{F}_2]
 $$
 
 The overall order is 2 (first order in NO$_2$, first order in F$_2$).
@@ -406,7 +406,7 @@ For the rate equation $\mathrm{Rate} = k[\mathrm{A}]^2[\mathrm{B}]$, what are th
 concentrations are in mol/L and time in seconds?
 
 $$
-\mathrm&lbrace;Units of &rbrace; k = \frac&lbrace;\mathrm&lbrace;mol/(L&rbrace;\cdot\mathrm&lbrace;s)&rbrace;&rbrace;&lbrace;(\mathrm&lbrace;mol/L&rbrace;)^2 \times (\mathrm&lbrace;mol/L&rbrace;)&rbrace; = \frac&lbrace;\mathrm&lbrace;mol/(L&rbrace;\cdot\mathrm&lbrace;s)&rbrace;&rbrace;&lbrace;\mathrm&lbrace;mol&rbrace;^3/\mathrm&lbrace;L&rbrace;^3&rbrace; = \mathrm&lbrace;L&rbrace;^2/(\mathrm&lbrace;mol&rbrace;^2\cdot\mathrm&lbrace;s&rbrace;)
+\mathrm{Units of } k = \frac{\mathrm{mol/(L}\cdot\mathrm{s)}}{(\mathrm{mol/L})^2 \times (\mathrm{mol/L})} = \frac{\mathrm{mol/(L}\cdot\mathrm{s)}}{\mathrm{mol}^3/\mathrm{L}^3} = \mathrm{L}^2/(\mathrm{mol}^2\cdot\mathrm{s})
 $$
 
 ### Question 2 (Paper 2 style)
@@ -428,13 +428,13 @@ Order in B: doubling [B] has no effect on rate $\implies$ zero order.
 **(b)** Write the rate equation.
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k[\mathrm&lbrace;A&rbrace;]
+\mathrm{Rate} = k[\mathrm{A}]
 $$
 
 **(c)** Calculate the rate constant.
 
 $$
-k = \frac&lbrace;4.0 \times 10^&lbrace;-3&rbrace;&rbrace;&lbrace;0.20&rbrace; = 0.020\mathrm&lbrace; s&rbrace;^&lbrace;-1&rbrace;
+k = \frac{4.0 \times 10^{-3}}{0.20} = 0.020\mathrm{ s}^{-1}
 $$
 
 **(d)** Explain why changing [B] does not affect the rate.
@@ -450,25 +450,25 @@ $350\mathrm{ K}$ is $4.0 \times 10^{-3}\mathrm{ s}^{-1}$.
 **(a)** Calculate the activation energy.
 
 $$
-\ln\!\left(\frac&lbrace;4.0 \times 10^&lbrace;-3&rbrace;&rbrace;&lbrace;5.0 \times 10^&lbrace;-4&rbrace;&rbrace;\right) = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;300&rbrace; - \frac&lbrace;1&rbrace;&lbrace;350&rbrace;\right)
+\ln\!\left(\frac{4.0 \times 10^{-3}}{5.0 \times 10^{-4}}\right) = \frac{E_a}{8.314}\left(\frac{1}{300} - \frac{1}{350}\right)
 $$
 
 $$
-\ln(8) = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;(0.000476)
+\ln(8) = \frac{E_a}{8.314}(0.000476)
 $$
 
 $$
-2.079 = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;(0.000476)
+2.079 = \frac{E_a}{8.314}(0.000476)
 $$
 
 $$
-E_a = \frac&lbrace;2.079 \times 8.314&rbrace;&lbrace;0.000476&rbrace; = 36300\mathrm&lbrace; J/mol&rbrace; = 36.3\mathrm&lbrace; kJ/mol&rbrace;
+E_a = \frac{2.079 \times 8.314}{0.000476} = 36300\mathrm{ J/mol} = 36.3\mathrm{ kJ/mol}
 $$
 
 **(b)** Calculate the rate constant at $400\mathrm{ K}$.
 
 $$
-\ln\!\left(\frac&lbrace;k_&lbrace;400&rbrace;&rbrace;&lbrace;5.0 \times 10^&lbrace;-4&rbrace;&rbrace;\right) = \frac&lbrace;36300&rbrace;&lbrace;8.314&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;300&rbrace; - \frac&lbrace;1&rbrace;&lbrace;400&rbrace;\right)
+\ln\!\left(\frac{k_{400}}{5.0 \times 10^{-4}}\right) = \frac{36300}{8.314}\left(\frac{1}{300} - \frac{1}{400}\right)
 $$
 
 $$
@@ -476,11 +476,11 @@ $$
 $$
 
 $$
-\frac&lbrace;k_&lbrace;400&rbrace;&rbrace;&lbrace;5.0 \times 10^&lbrace;-4&rbrace;&rbrace; = e^&lbrace;3.638&rbrace; = 38.0
+\frac{k_{400}}{5.0 \times 10^{-4}} = e^{3.638} = 38.0
 $$
 
 $$
-k_&lbrace;400&rbrace; = 1.90 \times 10^&lbrace;-2&rbrace;\mathrm&lbrace; s&rbrace;^&lbrace;-1&rbrace;
+k_{400} = 1.90 \times 10^{-2}\mathrm{ s}^{-1}
 $$
 
 ### Question 4 (Paper 1 style)
@@ -542,11 +542,11 @@ $[\mathrm{A}]_0 = 0.50\mathrm{ M}$:
 (a) Find the concentration after $30\mathrm{ minutes}$.
 
 $$
-\ln[\mathrm&lbrace;A&rbrace;] = \ln(0.50) - 0.025(30) = -0.693 - 0.750 = -1.443
+\ln[\mathrm{A}] = \ln(0.50) - 0.025(30) = -0.693 - 0.750 = -1.443
 $$
 
 $$
-[\mathrm&lbrace;A&rbrace;] = e^&lbrace;-1.443&rbrace; = 0.236\mathrm&lbrace; M&rbrace;
+[\mathrm{A}] = e^{-1.443} = 0.236\mathrm{ M}
 $$
 
 (b) Find the time for the concentration to reach $0.10\mathrm{ M}$.
@@ -560,13 +560,13 @@ $$
 $$
 
 $$
-0.025t = 1.610 \implies t = 64.4\mathrm&lbrace; min&rbrace;
+0.025t = 1.610 \implies t = 64.4\mathrm{ min}
 $$
 
 (c) Find the half-life.
 
 $$
-t_&lbrace;1/2&rbrace; = \frac&lbrace;0.693&rbrace;&lbrace;0.025&rbrace; = 27.7\mathrm&lbrace; min&rbrace;
+t_{1/2} = \frac{0.693}{0.025} = 27.7\mathrm{ min}
 $$
 
 :::
@@ -588,13 +588,13 @@ $$
 The iodine clock is a classic kinetics experiment:
 
 $$
-\mathrm&lbrace;S&rbrace;_2\mathrm&lbrace;O&rbrace;_8^&lbrace;2-&rbrace; + 2\mathrm&lbrace;I&rbrace;^- \to 2\mathrm&lbrace;SO&rbrace;_4^&lbrace;2-&rbrace; + \mathrm&lbrace;I&rbrace;_2
+\mathrm{S}_2\mathrm{O}_8^{2-} + 2\mathrm{I}^- \to 2\mathrm{SO}_4^{2-} + \mathrm{I}_2
 $$
 
 A fixed amount of thiosulfate (S$_2$O$_3^{2-}$) is added. It reacts with the I$_2$ produced:
 
 $$
-2\mathrm&lbrace;S&rbrace;_2\mathrm&lbrace;O&rbrace;_3^&lbrace;2-&rbrace; + \mathrm&lbrace;I&rbrace;_2 \to \mathrm&lbrace;S&rbrace;_4\mathrm&lbrace;O&rbrace;_6^&lbrace;2-&rbrace; + 2\mathrm&lbrace;I&rbrace;^-
+2\mathrm{S}_2\mathrm{O}_3^{2-} + \mathrm{I}_2 \to \mathrm{S}_4\mathrm{O}_6^{2-} + 2\mathrm{I}^-
 $$
 
 When all the thiosulfate is consumed, I$_2$ accumulates and reacts with starch to give a blue-black
@@ -605,7 +605,7 @@ colour. The time for the colour change is measured.
 For a reaction on a solid surface, the rate is proportional to the surface area:
 
 $$
-\mathrm&lbrace;Rate&rbrace; \propto \mathrm&lbrace;surface area&rbrace;
+\mathrm{Rate} \propto \mathrm{surface area}
 $$
 
 Cutting a cube into 8 smaller cubes doubles the surface area, doubling the rate.
@@ -619,7 +619,7 @@ Cutting a cube into 8 smaller cubes doubles the surface area, doubling the rate.
 For enzyme-catalysed reactions:
 
 $$
-v = \frac&lbrace;V_&lbrace;\max&rbrace;[S]&rbrace;&lbrace;K_M + [S]&rbrace;
+v = \frac{V_{\max}[S]}{K_M + [S]}
 $$
 
 where:
@@ -654,7 +654,7 @@ where:
 The decomposition of hydrogen peroxide is first order with respect to H$_2$O$_2$:
 
 $$
-2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;_2 \to 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + \mathrm&lbrace;O&rbrace;_2
+2\mathrm{H}_2\mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O} + \mathrm{O}_2
 $$
 
 The rate constant is $3.0 \times 10^{-3}\mathrm{ min}^{-1}$ at $25\degree\mathrm{C}$.
@@ -663,7 +663,7 @@ The rate constant is $3.0 \times 10^{-3}\mathrm{ min}^{-1}$ at $25\degree\mathrm
 concentration to drop to $0.10\mathrm{ M}$?
 
 $$
-\ln(0.10) = \ln(0.50) - 3.0 \times 10^&lbrace;-3&rbrace; \times t
+\ln(0.10) = \ln(0.50) - 3.0 \times 10^{-3} \times t
 $$
 
 $$
@@ -671,23 +671,23 @@ $$
 $$
 
 $$
-0.003t = 1.610 \implies t = 537\mathrm&lbrace; min&rbrace;
+0.003t = 1.610 \implies t = 537\mathrm{ min}
 $$
 
 **(b)** What is the half-life?
 
 $$
-t_&lbrace;1/2&rbrace; = \frac&lbrace;0.693&rbrace;&lbrace;3.0 \times 10^&lbrace;-3&rbrace;&rbrace; = 231\mathrm&lbrace; min&rbrace;
+t_{1/2} = \frac{0.693}{3.0 \times 10^{-3}} = 231\mathrm{ min}
 $$
 
 **(c)** After how many half-lives will the concentration be $0.10\mathrm{ M}$?
 
 $$
-0.10 = 0.50 \times \left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^n \implies \left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^n = 0.2
+0.10 = 0.50 \times \left(\frac{1}{2}\right)^n \implies \left(\frac{1}{2}\right)^n = 0.2
 $$
 
 $$
-n = \frac&lbrace;\ln 0.2&rbrace;&lbrace;\ln 0.5&rbrace; = \frac&lbrace;-1.609&rbrace;&lbrace;-0.693&rbrace; = 2.32 \mathrm&lbrace; half-lives&rbrace;
+n = \frac{\ln 0.2}{\ln 0.5} = \frac{-1.609}{-0.693} = 2.32 \mathrm{ half-lives}
 $$
 
 ### Question 6 (Paper 1 style)
@@ -721,13 +721,13 @@ Comparing 1 and 3: doubling [B] (no change in rate) $\implies$ order in B $= 0$.
 **(b)** Write the rate equation.
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k[\mathrm&lbrace;A&rbrace;]^2
+\mathrm{Rate} = k[\mathrm{A}]^2
 $$
 
 **(c)** Calculate the rate constant $k$.
 
 $$
-k = \frac&lbrace;2.0 \times 10^&lbrace;-4&rbrace;&rbrace;&lbrace;(0.10)^2&rbrace; = \frac&lbrace;2.0 \times 10^&lbrace;-4&rbrace;&rbrace;&lbrace;0.01&rbrace; = 0.020\mathrm&lbrace; L/(mol&rbrace;\cdot\mathrm&lbrace;s)&rbrace;
+k = \frac{2.0 \times 10^{-4}}{(0.10)^2} = \frac{2.0 \times 10^{-4}}{0.01} = 0.020\mathrm{ L/(mol}\cdot\mathrm{s)}
 $$
 
 **(d)** Propose a two-step mechanism consistent with this rate equation.
@@ -771,7 +771,7 @@ with $k = 0.0693\mathrm{ min}^{-1}$.
 Alternatively, note that $[\mathrm{A}]$ halves every 10 minutes: $t_{1/2} = 10\mathrm{ min}$.
 
 $$
-k = \frac&lbrace;0.693&rbrace;&lbrace;10&rbrace; = 0.0693\mathrm&lbrace; min&rbrace;^&lbrace;-1&rbrace;
+k = \frac{0.693}{10} = 0.0693\mathrm{ min}^{-1}
 $$
 
 :::
@@ -787,7 +787,7 @@ The temperature coefficient $Q_{10}$ is the factor by which the rate increases f
 $10\degree\mathrm{C}$ temperature rise:
 
 $$
-Q_&lbrace;10&rbrace; = \frac&lbrace;k_&lbrace;T+10&rbrace;&rbrace;&lbrace;k_T&rbrace;
+Q_{10} = \frac{k_{T+10}}{k_T}
 $$
 
 For many reactions, $Q_{10} \approx 2$--$3$.
@@ -831,7 +831,7 @@ A catalyst provides an alternative pathway with a lower $E_a$:
 The rate constant for the decomposition of hydrogen iodide:
 
 $$
-2\mathrm&lbrace;HI&rbrace; \to \mathrm&lbrace;H&rbrace;_2 + \mathrm&lbrace;I&rbrace;_2
+2\mathrm{HI} \to \mathrm{H}_2 + \mathrm{I}_2
 $$
 
 is $2.4 \times 10^{-21}\mathrm{ L/(mol}\cdot\mathrm{s)}$ at $300\mathrm{ K}$ and
@@ -840,25 +840,25 @@ $1.2 \times 10^{-16}\mathrm{ L/(mol}\cdot\mathrm{s)}$ at $500\mathrm{ K}$.
 **(a)** Calculate the activation energy.
 
 $$
-\ln\!\left(\frac&lbrace;1.2 \times 10^&lbrace;-16&rbrace;&rbrace;&lbrace;2.4 \times 10^&lbrace;-21&rbrace;&rbrace;\right) = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;300&rbrace; - \frac&lbrace;1&rbrace;&lbrace;500&rbrace;\right)
+\ln\!\left(\frac{1.2 \times 10^{-16}}{2.4 \times 10^{-21}}\right) = \frac{E_a}{8.314}\left(\frac{1}{300} - \frac{1}{500}\right)
 $$
 
 $$
-\ln(5.0 \times 10^4) = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;(0.001333)
+\ln(5.0 \times 10^4) = \frac{E_a}{8.314}(0.001333)
 $$
 
 $$
-10.82 = \frac&lbrace;E_a&rbrace;&lbrace;8.314&rbrace;(0.001333)
+10.82 = \frac{E_a}{8.314}(0.001333)
 $$
 
 $$
-E_a = \frac&lbrace;10.82 \times 8.314&rbrace;&lbrace;0.001333&rbrace; = 67500\mathrm&lbrace; J/mol&rbrace; = 67.5\mathrm&lbrace; kJ/mol&rbrace;
+E_a = \frac{10.82 \times 8.314}{0.001333} = 67500\mathrm{ J/mol} = 67.5\mathrm{ kJ/mol}
 $$
 
 **(b)** Calculate the rate constant at $400\mathrm{ K}$.
 
 $$
-\ln\!\left(\frac&lbrace;k_&lbrace;400&rbrace;&rbrace;&lbrace;2.4 \times 10^&lbrace;-21&rbrace;&rbrace;\right) = \frac&lbrace;67500&rbrace;&lbrace;8.314&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;300&rbrace; - \frac&lbrace;1&rbrace;&lbrace;400&rbrace;\right)
+\ln\!\left(\frac{k_{400}}{2.4 \times 10^{-21}}\right) = \frac{67500}{8.314}\left(\frac{1}{300} - \frac{1}{400}\right)
 $$
 
 $$
@@ -866,11 +866,11 @@ $$
 $$
 
 $$
-\frac&lbrace;k_&lbrace;400&rbrace;&rbrace;&lbrace;2.4 \times 10^&lbrace;-21&rbrace;&rbrace; = e^&lbrace;6.763&rbrace; = 864
+\frac{k_{400}}{2.4 \times 10^{-21}} = e^{6.763} = 864
 $$
 
 $$
-k_&lbrace;400&rbrace; = 864 \times 2.4 \times 10^&lbrace;-21&rbrace; = 2.07 \times 10^&lbrace;-18&rbrace;\mathrm&lbrace; L/(mol&rbrace;\cdot\mathrm&lbrace;s)&rbrace;
+k_{400} = 864 \times 2.4 \times 10^{-21} = 2.07 \times 10^{-18}\mathrm{ L/(mol}\cdot\mathrm{s)}
 $$
 
 ### Question 9 (Paper 1 style)
@@ -901,13 +901,13 @@ Doubling [I$^-$] doubles rate: first order in I$^-$.
 Doubling [S$_2$O$_8^{2-}$] doubles rate: first order in S$_2$O$_8^{2-}$.
 
 $$
-\mathrm&lbrace;Rate&rbrace; = k[\mathrm&lbrace;I&rbrace;^-][\mathrm&lbrace;S&rbrace;_2\mathrm&lbrace;O&rbrace;_8^&lbrace;2-&rbrace;]
+\mathrm{Rate} = k[\mathrm{I}^-][\mathrm{S}_2\mathrm{O}_8^{2-}]
 $$
 
 **(b)** Calculate $k$.
 
 $$
-k = \frac&lbrace;1.0 \times 10^&lbrace;-5&rbrace;&rbrace;&lbrace;0.10 \times 0.10&rbrace; = 1.0 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; L/(mol&rbrace;\cdot\mathrm&lbrace;s)&rbrace;
+k = \frac{1.0 \times 10^{-5}}{0.10 \times 0.10} = 1.0 \times 10^{-3}\mathrm{ L/(mol}\cdot\mathrm{s)}
 $$
 
 **(c)** Propose a mechanism.

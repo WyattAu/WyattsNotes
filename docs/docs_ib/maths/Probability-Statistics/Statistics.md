@@ -13,13 +13,13 @@ slug: statistics
 The **arithmetic mean** of a data set $x_1, x_2, \ldots, x_n$:
 
 $$
-\bar&lbrace;x&rbrace; = \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; x_i = \frac&lbrace;\sum x_i&rbrace;&lbrace;n&rbrace;
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i = \frac{\sum x_i}{n}
 $$
 
 For grouped data with frequencies $f_i$:
 
 $$
-\bar&lbrace;x&rbrace; = \frac&lbrace;\sum f_i x_i&rbrace;&lbrace;\sum f_i&rbrace;
+\bar{x} = \frac{\sum f_i x_i}{\sum f_i}
 $$
 
 ### Median
@@ -65,13 +65,13 @@ The mean (12.1) is significantly higher than the median (8) due to the outlier $
 ### Range
 
 $$
-\mathrm&lbrace;Range&rbrace; = x_&lbrace;\max&rbrace; - x_&lbrace;\min&rbrace;
+\mathrm{Range} = x_{\max} - x_{\min}
 $$
 
 ### Interquartile Range (IQR)
 
 $$
-\mathrm&lbrace;IQR&rbrace; = Q_3 - Q_1
+\mathrm{IQR} = Q_3 - Q_1
 $$
 
 where $Q_1$ is the first quartile (25th percentile) and $Q_3$ is the third quartile (75th
@@ -84,25 +84,25 @@ The **variance** measures the average squared deviation from the mean.
 **Population variance**:
 
 $$
-\sigma^2 = \frac&lbrace;1&rbrace;&lbrace;N&rbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;N&rbrace;(x_i - \mu)^2
+\sigma^2 = \frac{1}{N}\sum_{i=1}^{N}(x_i - \mu)^2
 $$
 
 **Sample variance** (unbiased estimator):
 
 $$
-s^2 = \frac&lbrace;1&rbrace;&lbrace;n-1&rbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace;(x_i - \bar&lbrace;x&rbrace;)^2
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
 $$
 
 ### Standard Deviation
 
 $$
-\sigma = \sqrt&lbrace;\sigma^2&rbrace; \quad \mathrm&lbrace;or&rbrace; \quad s = \sqrt&lbrace;s^2&rbrace;
+\sigma = \sqrt{\sigma^2} \quad \mathrm{or} \quad s = \sqrt{s^2}
 $$
 
 ### Computational Formula
 
 $$
-s^2 = \frac&lbrace;\sum x_i^2 - n\bar&lbrace;x&rbrace;^2&rbrace;&lbrace;n - 1&rbrace; = \frac&lbrace;n\sum x_i^2 - (\sum x_i)^2&rbrace;&lbrace;n(n-1)&rbrace;
+s^2 = \frac{\sum x_i^2 - n\bar{x}^2}{n - 1} = \frac{n\sum x_i^2 - (\sum x_i)^2}{n(n-1)}
 $$
 
 :::info[Example]
@@ -110,7 +110,7 @@ $$
 Calculate the standard deviation of: $4, 8, 6, 5, 3, 8, 9, 2, 7$.
 
 $$
-n = 9, \quad \bar&lbrace;x&rbrace; = \frac&lbrace;52&rbrace;&lbrace;9&rbrace; \approx 5.778
+n = 9, \quad \bar{x} = \frac{52}{9} \approx 5.778
 $$
 
 $$
@@ -118,7 +118,7 @@ $$
 $$
 
 $$
-s^2 = \frac&lbrace;348 - 9 \times (52/9)^2&rbrace;&lbrace;9 - 1&rbrace; = \frac&lbrace;348 - 300.44&rbrace;&lbrace;8&rbrace; = \frac&lbrace;47.56&rbrace;&lbrace;8&rbrace; = 5.944
+s^2 = \frac{348 - 9 \times (52/9)^2}{9 - 1} = \frac{348 - 300.44}{8} = \frac{47.56}{8} = 5.944
 $$
 
 $$
@@ -144,7 +144,7 @@ formula by default.
 Use the **midpoint** of each class interval:
 
 $$
-\bar&lbrace;x&rbrace; \approx \frac&lbrace;\sum f_i m_i&rbrace;&lbrace;\sum f_i&rbrace;
+\bar{x} \approx \frac{\sum f_i m_i}{\sum f_i}
 $$
 
 where $m_i$ is the midpoint of class $i$.
@@ -154,7 +154,7 @@ where $m_i$ is the midpoint of class $i$.
 Use linear interpolation within the median class:
 
 $$
-\mathrm&lbrace;Median&rbrace; \approx L + \left(\frac&lbrace;\frac&lbrace;n&rbrace;&lbrace;2&rbrace; - F&rbrace;&lbrace;f&rbrace;\right) \times w
+\mathrm{Median} \approx L + \left(\frac{\frac{n}{2} - F}{f}\right) \times w
 $$
 
 where:
@@ -182,7 +182,7 @@ Cumulative frequencies: $5, 17, 35, 45, 50$.
 Median is in the $40 \le m \lt 60$ class ($F = 17$, $f = 18$).
 
 $$
-\mathrm&lbrace;Median&rbrace; \approx 40 + \left(\frac&lbrace;25 - 17&rbrace;&lbrace;18&rbrace;\right) \times 20 = 40 + \frac&lbrace;8&rbrace;&lbrace;18&rbrace; \times 20 = 40 + 8.89 = 48.89 \mathrm&lbrace; g&rbrace;
+\mathrm{Median} \approx 40 + \left(\frac{25 - 17}{18}\right) \times 20 = 40 + \frac{8}{18} \times 20 = 40 + 8.89 = 48.89 \mathrm{ g}
 $$
 
 :::
@@ -206,7 +206,7 @@ A box-and-whisker plot displays the **five-number summary**:
 A value is a potential outlier if it falls outside:
 
 $$
-Q_1 - 1.5 \times \mathrm&lbrace;IQR&rbrace; \quad \mathrm&lbrace;or&rbrace; \quad Q_3 + 1.5 \times \mathrm&lbrace;IQR&rbrace;
+Q_1 - 1.5 \times \mathrm{IQR} \quad \mathrm{or} \quad Q_3 + 1.5 \times \mathrm{IQR}
 $$
 
 ### Interpreting Box Plots
@@ -244,7 +244,7 @@ Using the grouped data from the previous example:
 To find $Q_1$ (at $12.5$): interpolate between $(20, 5)$ and $(40, 17)$.
 
 $$
-Q_1 \approx 20 + \frac&lbrace;12.5 - 5&rbrace;&lbrace;17 - 5&rbrace; \times 20 = 20 + 12.5 = 32.5 \mathrm&lbrace; g&rbrace;
+Q_1 \approx 20 + \frac{12.5 - 5}{17 - 5} \times 20 = 20 + 12.5 = 32.5 \mathrm{ g}
 $$
 
 :::
@@ -262,7 +262,7 @@ A scatter diagram plots two variables to visually assess the relationship betwee
 Measures the strength and direction of the linear relationship between two variables.
 
 $$
-r = \frac&lbrace;\sum(x_i - \bar&lbrace;x&rbrace;)(y_i - \bar&lbrace;y&rbrace;)&rbrace;&lbrace;\sqrt&lbrace;\sum(x_i - \bar&lbrace;x&rbrace;)^2 \sum(y_i - \bar&lbrace;y&rbrace;)^2&rbrace;&rbrace;
+r = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2 \sum(y_i - \bar{y})^2}}
 $$
 
 ### Properties of $r$
@@ -286,7 +286,7 @@ $$
 ### Computational Formula
 
 $$
-r = \frac&lbrace;n\sum x_iy_i - \sum x_i \sum y_i&rbrace;&lbrace;\sqrt&lbrace;[n\sum x_i^2 - (\sum x_i)^2][n\sum y_i^2 - (\sum y_i)^2]&rbrace;&rbrace;
+r = \frac{n\sum x_iy_i - \sum x_i \sum y_i}{\sqrt{[n\sum x_i^2 - (\sum x_i)^2][n\sum y_i^2 - (\sum y_i)^2]}}
 $$
 
 :::warning[Exam Tip]
@@ -311,11 +311,11 @@ $$
 where:
 
 $$
-b = \frac&lbrace;\sum(x_i - \bar&lbrace;x&rbrace;)(y_i - \bar&lbrace;y&rbrace;)&rbrace;&lbrace;\sum(x_i - \bar&lbrace;x&rbrace;)^2&rbrace; = \frac&lbrace;n\sum x_iy_i - \sum x_i \sum y_i&rbrace;&lbrace;n\sum x_i^2 - (\sum x_i)^2&rbrace;
+b = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2} = \frac{n\sum x_iy_i - \sum x_i \sum y_i}{n\sum x_i^2 - (\sum x_i)^2}
 $$
 
 $$
-a = \bar&lbrace;y&rbrace; - b\bar&lbrace;x&rbrace;
+a = \bar{y} - b\bar{x}
 $$
 
 ### Regression Line of $x$ on $y$
@@ -327,13 +327,13 @@ x = a' + b'y
 $$
 
 $$
-b' = \frac&lbrace;n\sum x_iy_i - \sum x_i \sum y_i&rbrace;&lbrace;n\sum y_i^2 - (\sum y_i)^2&rbrace;
+b' = \frac{n\sum x_iy_i - \sum x_i \sum y_i}{n\sum y_i^2 - (\sum y_i)^2}
 $$
 
 ### Coefficient of Determination ($r^2$)
 
 $$
-r^2 = \frac&lbrace;\mathrm&lbrace;explained variation&rbrace;&rbrace;&lbrace;\mathrm&lbrace;total variation&rbrace;&rbrace;
+r^2 = \frac{\mathrm{explained variation}}{\mathrm{total variation}}
 $$
 
 $r^2$ represents the proportion of variance in $y$ explained by the linear relationship with $x$.
@@ -360,11 +360,11 @@ $$
 $$
 
 $$
-b = \frac&lbrace;5(110.2) - 15(30.1)&rbrace;&lbrace;5(55) - 225&rbrace; = \frac&lbrace;551 - 451.5&rbrace;&lbrace;275 - 225&rbrace; = \frac&lbrace;99.5&rbrace;&lbrace;50&rbrace; = 1.99
+b = \frac{5(110.2) - 15(30.1)}{5(55) - 225} = \frac{551 - 451.5}{275 - 225} = \frac{99.5}{50} = 1.99
 $$
 
 $$
-\bar&lbrace;y&rbrace; = 6.02, \quad \bar&lbrace;x&rbrace; = 3
+\bar{y} = 6.02, \quad \bar{x} = 3
 $$
 
 $$
@@ -433,7 +433,7 @@ To test whether the population correlation coefficient $\rho$ is zero:
 The test statistic for large samples ($n \gt 30$):
 
 $$
-t = r\sqrt&lbrace;\frac&lbrace;n-2&rbrace;&lbrace;1-r^2&rbrace;&rbrace;
+t = r\sqrt{\frac{n-2}{1-r^2}}
 $$
 
 which follows a $t$-distribution with $n - 2$ degrees of freedom.
@@ -461,7 +461,7 @@ Used to determine whether two categorical variables are independent.
 **Test statistic**:
 
 $$
-\chi^2 = \sum \frac&lbrace;(O_i - E_i)^2&rbrace;&lbrace;E_i&rbrace;
+\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}
 $$
 
 where $O_i$ are observed frequencies and $E_i$ are expected frequencies.
@@ -469,7 +469,7 @@ where $O_i$ are observed frequencies and $E_i$ are expected frequencies.
 **Expected frequency**:
 
 $$
-E_&lbrace;ij&rbrace; = \frac&lbrace;(\mathrm&lbrace;row &rbrace; i \mathrm&lbrace; total&rbrace;) \times (\mathrm&lbrace;column &rbrace; j \mathrm&lbrace; total&rbrace;)&rbrace;&lbrace;\mathrm&lbrace;grand total&rbrace;&rbrace;
+E_{ij} = \frac{(\mathrm{row } i \mathrm{ total}) \times (\mathrm{column } j \mathrm{ total})}{\mathrm{grand total}}
 $$
 
 **Degrees of freedom**: $\nu = (r-1)(c-1)$ where $r$ is the number of rows and $c$ is the number of
@@ -500,7 +500,7 @@ $E(\mathrm{Female, Science}) = \dfrac{80 \times 45}{150} = 24.00$
 $E(\mathrm{Female, English}) = \dfrac{80 \times 55}{150} = 29.33$
 
 $$
-\chi^2 = \frac&lbrace;(30-23.33)^2&rbrace;&lbrace;23.33&rbrace; + \frac&lbrace;(25-21)^2&rbrace;&lbrace;21&rbrace; + \frac&lbrace;(15-25.67)^2&rbrace;&lbrace;25.67&rbrace; + \frac&lbrace;(20-26.67)^2&rbrace;&lbrace;26.67&rbrace; + \frac&lbrace;(20-24)^2&rbrace;&lbrace;24&rbrace; + \frac&lbrace;(40-29.33)^2&rbrace;&lbrace;29.33&rbrace;
+\chi^2 = \frac{(30-23.33)^2}{23.33} + \frac{(25-21)^2}{21} + \frac{(15-25.67)^2}{25.67} + \frac{(20-26.67)^2}{26.67} + \frac{(20-24)^2}{24} + \frac{(40-29.33)^2}{29.33}
 $$
 
 $$
@@ -592,7 +592,7 @@ level.
 $H_0: \mu = 170$ vs $H_1: \mu \neq 170$.
 
 $$
-t = \frac&lbrace;\bar&lbrace;x&rbrace; - \mu_0&rbrace;&lbrace;s/\sqrt&lbrace;n&rbrace;&rbrace; = \frac&lbrace;173 - 170&rbrace;&lbrace;8/\sqrt&lbrace;25&rbrace;&rbrace; = \frac&lbrace;3&rbrace;&lbrace;1.6&rbrace; = 1.875
+t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}} = \frac{173 - 170}{8/\sqrt{25}} = \frac{3}{1.6} = 1.875
 $$
 
 Degrees of freedom $= 24$.
@@ -647,7 +647,7 @@ If every data value is transformed by $y_i = ax_i + b$:
 The z-score measures how many standard deviations a value is from the mean:
 
 $$
-z = \frac&lbrace;x - \bar&lbrace;x&rbrace;&rbrace;&lbrace;s&rbrace;
+z = \frac{x - \bar{x}}{s}
 $$
 
 :::info[Example]
@@ -655,7 +655,7 @@ $$
 In a test with mean 65 and standard deviation 8, a student scores 81. Find the z-score.
 
 $$
-z = \frac&lbrace;81 - 65&rbrace;&lbrace;8&rbrace; = 2.0
+z = \frac{81 - 65}{8} = 2.0
 $$
 
 The student scored 2 standard deviations above the mean.
@@ -697,11 +697,11 @@ Data suggests $y$ is related to $x$ by $y = ax^b$. A plot of $\log y$ vs $\log x
 and $y$-intercept $0.7$. Find the relationship.
 
 $$
-b = 1.5, \quad \log a = 0.7 \implies a = 10^&lbrace;0.7&rbrace; \approx 5.01
+b = 1.5, \quad \log a = 0.7 \implies a = 10^{0.7} \approx 5.01
 $$
 
 $$
-y \approx 5.01x^&lbrace;1.5&rbrace;
+y \approx 5.01x^{1.5}
 $$
 
 :::
@@ -721,7 +721,7 @@ Group B: $n = 25$, $\bar{x} = 68$, $s = 10$
 **(a)** Find the overall mean.
 
 $$
-\bar&lbrace;x&rbrace;_&lbrace;\mathrm&lbrace;overall&rbrace;&rbrace; = \frac&lbrace;30 \times 72 + 25 \times 68&rbrace;&lbrace;55&rbrace; = \frac&lbrace;2160 + 1700&rbrace;&lbrace;55&rbrace; = \frac&lbrace;3860&rbrace;&lbrace;55&rbrace; = 70.2
+\bar{x}_{\mathrm{overall}} = \frac{30 \times 72 + 25 \times 68}{55} = \frac{2160 + 1700}{55} = \frac{3860}{55} = 70.2
 $$
 
 **(b)** Comment on the spread of the two groups.
@@ -794,7 +794,7 @@ Skewness measures the asymmetry of the distribution.
 The **Pearson coefficient of skewness**:
 
 $$
-\mathrm&lbrace;Skewness&rbrace; = \frac&lbrace;3(\bar&lbrace;x&rbrace; - Q_2)&rbrace;&lbrace;s&rbrace;
+\mathrm{Skewness} = \frac{3(\bar{x} - Q_2)}{s}
 $$
 
 ### Kurtosis
@@ -835,11 +835,11 @@ Scores on a test are normally distributed with $\mu = 72$ and $\sigma = 8$. Find
 percentile.
 
 $$
-z_&lbrace;0.90&rbrace; = 1.282
+z_{0.90} = 1.282
 $$
 
 $$
-x_&lbrace;90&rbrace; = 72 + 1.282 \times 8 = 72 + 10.26 = 82.26
+x_{90} = 72 + 1.282 \times 8 = 72 + 10.26 = 82.26
 $$
 
 A score of 82.26 is at the 90th percentile.

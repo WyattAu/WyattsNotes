@@ -452,13 +452,13 @@ A bitmap image is a grid of **pixels** (picture elements). Each pixel is assigne
 **Image file size (uncompressed):**
 
 $$
-\mathrm&lbrace;File Size (bits)&rbrace; = \mathrm&lbrace;Width&rbrace; \times \mathrm&lbrace;Height&rbrace; \times \mathrm&lbrace;Colour Depth&rbrace;
+\mathrm{File Size (bits)} = \mathrm{Width} \times \mathrm{Height} \times \mathrm{Colour Depth}
 $$
 
 **In bytes:**
 
 $$
-\mathrm&lbrace;File Size (bytes)&rbrace; = \frac&lbrace;\mathrm&lbrace;Width&rbrace; \times \mathrm&lbrace;Height&rbrace; \times \mathrm&lbrace;Colour Depth&rbrace;&rbrace;&lbrace;8&rbrace;
+\mathrm{File Size (bytes)} = \frac{\mathrm{Width} \times \mathrm{Height} \times \mathrm{Colour Depth}}{8}
 $$
 
 <details>
@@ -467,19 +467,19 @@ $$
 A $1024 \times 768$ image with 24-bit colour depth.
 
 $$
-\mathrm&lbrace;Size (bits)&rbrace; = 1024 \times 768 \times 24 = 18874368 \mathrm&lbrace; bits&rbrace;
+\mathrm{Size (bits)} = 1024 \times 768 \times 24 = 18874368 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Size (bytes)&rbrace; = \frac&lbrace;18874368&rbrace;&lbrace;8&rbrace; = 2359296 \mathrm&lbrace; bytes&rbrace;
+\mathrm{Size (bytes)} = \frac{18874368}{8} = 2359296 \mathrm{ bytes}
 $$
 
 $$
-\mathrm&lbrace;Size (KB)&rbrace; = \frac&lbrace;2359296&rbrace;&lbrace;1024&rbrace; = 2304 \mathrm&lbrace; KB&rbrace;
+\mathrm{Size (KB)} = \frac{2359296}{1024} = 2304 \mathrm{ KB}
 $$
 
 $$
-\mathrm&lbrace;Size (MB)&rbrace; = \frac&lbrace;2304&rbrace;&lbrace;1024&rbrace; = 2.25 \mathrm&lbrace; MB&rbrace;
+\mathrm{Size (MB)} = \frac{2304}{1024} = 2.25 \mathrm{ MB}
 $$
 
 </details>
@@ -532,7 +532,7 @@ $22\,050\mathrm{ Hz}$).
 **File size calculation:**
 
 $$
-\mathrm&lbrace;File Size (bits)&rbrace; = \mathrm&lbrace;Sampling Rate&rbrace; \times \mathrm&lbrace;Bit Depth&rbrace; \times \mathrm&lbrace;Duration (s)&rbrace; \times \mathrm&lbrace;Channels&rbrace;
+\mathrm{File Size (bits)} = \mathrm{Sampling Rate} \times \mathrm{Bit Depth} \times \mathrm{Duration (s)} \times \mathrm{Channels}
 $$
 
 - Mono: 1 channel. Stereo: 2 channels.
@@ -543,19 +543,19 @@ $$
 A 3-minute stereo recording at CD quality (44 100 Hz, 16-bit).
 
 $$
-\mathrm&lbrace;Duration&rbrace; = 3 \times 60 = 180 \mathrm&lbrace; seconds&rbrace;
+\mathrm{Duration} = 3 \times 60 = 180 \mathrm{ seconds}
 $$
 
 $$
-\mathrm&lbrace;Size (bits)&rbrace; = 44100 \times 16 \times 180 \times 2 = 254016000 \mathrm&lbrace; bits&rbrace;
+\mathrm{Size (bits)} = 44100 \times 16 \times 180 \times 2 = 254016000 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Size (bytes)&rbrace; = \frac&lbrace;254016000&rbrace;&lbrace;8&rbrace; = 31752000 \mathrm&lbrace; bytes&rbrace;
+\mathrm{Size (bytes)} = \frac{254016000}{8} = 31752000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm&lbrace;Size (MB)&rbrace; = \frac&lbrace;31752000&rbrace;&lbrace;1024 \times 1024&rbrace; \approx 30.28 \mathrm&lbrace; MB&rbrace;
+\mathrm{Size (MB)} = \frac{31752000}{1024 \times 1024} \approx 30.28 \mathrm{ MB}
 $$
 
 </details>
@@ -698,25 +698,25 @@ Answer:
 (a)
 
 $$
-\mathrm&lbrace;Size (bits)&rbrace; = 4000 \times 3000 \times 32 = 384000000 \mathrm&lbrace; bits&rbrace;
+\mathrm{Size (bits)} = 4000 \times 3000 \times 32 = 384000000 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Size (bytes)&rbrace; = \frac&lbrace;384000000&rbrace;&lbrace;8&rbrace; = 48000000 \mathrm&lbrace; bytes&rbrace;
+\mathrm{Size (bytes)} = \frac{384000000}{8} = 48000000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm&lbrace;Size (MB)&rbrace; = \frac&lbrace;48000000&rbrace;&lbrace;1024 \times 1024&rbrace; \approx 45.77 \mathrm&lbrace; MB&rbrace;
+\mathrm{Size (MB)} = \frac{48000000}{1024 \times 1024} \approx 45.77 \mathrm{ MB}
 $$
 
 (b)
 
 $$
-16 \mathrm&lbrace; GB&rbrace; = 16 \times 1024 \mathrm&lbrace; MB&rbrace; = 16384 \mathrm&lbrace; MB&rbrace;
+16 \mathrm{ GB} = 16 \times 1024 \mathrm{ MB} = 16384 \mathrm{ MB}
 $$
 
 $$
-\mathrm&lbrace;Number of images&rbrace; = \left\lfloor \frac&lbrace;16384&rbrace;&lbrace;45.77&rbrace; \right\rfloor = 358 \mathrm&lbrace; images&rbrace;
+\mathrm{Number of images} = \left\lfloor \frac{16384}{45.77} \right\rfloor = 358 \mathrm{ images}
 $$
 
 </details>
@@ -735,19 +735,19 @@ Answer:
 (a)
 
 $$
-\mathrm&lbrace;Duration&rbrace; = 2 \times 60 = 120 \mathrm&lbrace; seconds&rbrace;
+\mathrm{Duration} = 2 \times 60 = 120 \mathrm{ seconds}
 $$
 
 $$
-\mathrm&lbrace;Size (bits)&rbrace; = 22050 \times 8 \times 120 \times 1 = 21168000 \mathrm&lbrace; bits&rbrace;
+\mathrm{Size (bits)} = 22050 \times 8 \times 120 \times 1 = 21168000 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Size (bytes)&rbrace; = \frac&lbrace;21168000&rbrace;&lbrace;8&rbrace; = 2646000 \mathrm&lbrace; bytes&rbrace;
+\mathrm{Size (bytes)} = \frac{21168000}{8} = 2646000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm&lbrace;Size (MB)&rbrace; = \frac&lbrace;2646000&rbrace;&lbrace;1024 \times 1024&rbrace; \approx 2.52 \mathrm&lbrace; MB&rbrace;
+\mathrm{Size (MB)} = \frac{2646000}{1024 \times 1024} \approx 2.52 \mathrm{ MB}
 $$
 
 (b) Doubling the sampling rate doubles the file size to approximately 5.05 MB. Sound quality
@@ -847,19 +847,19 @@ Answer:
 (c)
 
 $$
-\mathrm&lbrace;Uncompressed (bits)&rbrace; = 800 \times 600 \times 16 = 7680000 \mathrm&lbrace; bits&rbrace;
+\mathrm{Uncompressed (bits)} = 800 \times 600 \times 16 = 7680000 \mathrm{ bits}
 $$
 
 $$
-\mathrm&lbrace;Uncompressed (bytes)&rbrace; = \frac&lbrace;7680000&rbrace;&lbrace;8&rbrace; = 960000 \mathrm&lbrace; bytes&rbrace;
+\mathrm{Uncompressed (bytes)} = \frac{7680000}{8} = 960000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm&lbrace;Uncompressed (KB)&rbrace; = \frac&lbrace;960000&rbrace;&lbrace;1024&rbrace; = 937.5 \mathrm&lbrace; KB&rbrace;
+\mathrm{Uncompressed (KB)} = \frac{960000}{1024} = 937.5 \mathrm{ KB}
 $$
 
 $$
-\mathrm&lbrace;Compressed (KB)&rbrace; = \frac&lbrace;937.5&rbrace;&lbrace;3&rbrace; \times 2 = 625 \mathrm&lbrace; KB&rbrace;
+\mathrm{Compressed (KB)} = \frac{937.5}{3} \times 2 = 625 \mathrm{ KB}
 $$
 
 </details>

@@ -22,7 +22,7 @@ When an acid donates a proton, the remaining species is its **conjugate base**. 
 a proton, the resulting species is its **conjugate acid**.
 
 $$
-\mathrm&lbrace;HA&rbrace; + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;_3\mathrm&lbrace;O&rbrace;^+ + \mathrm&lbrace;A&rbrace;^-
+\mathrm{HA} + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{H}_3\mathrm{O}^+ + \mathrm{A}^-
 $$
 
 | Left side     | Right side                  |
@@ -57,11 +57,11 @@ $K_a \approx 1.0 \times 10^{-2}$.
 ### Definitions
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log[\mathrm&lbrace;H&rbrace;^+]
+\mathrm{pH} = -\log[\mathrm{H}^+]
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = -\log[\mathrm&lbrace;OH&rbrace;^-]
+\mathrm{pOH} = -\log[\mathrm{OH}^-]
 $$
 
 ### Relationship
@@ -69,11 +69,11 @@ $$
 At $25\degree\mathrm{C}$:
 
 $$
-\mathrm&lbrace;pH&rbrace; + \mathrm&lbrace;pOH&rbrace; = 14
+\mathrm{pH} + \mathrm{pOH} = 14
 $$
 
 $$
-[\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;OH&rbrace;^-] = K_w = 1.0 \times 10^&lbrace;-14&rbrace;
+[\mathrm{H}^+][\mathrm{OH}^-] = K_w = 1.0 \times 10^{-14}
 $$
 
 ### pH Scale
@@ -95,11 +95,11 @@ Calculate the pH of $0.050\mathrm{ mol/L}$ HCl.
 HCl is a strong acid and dissociates completely:
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] = 0.050\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{H}^+] = 0.050\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(0.050) = -\log(5.0 \times 10^&lbrace;-2&rbrace;) = 2 - \log 5.0 = 2 - 0.699 = 1.30
+\mathrm{pH} = -\log(0.050) = -\log(5.0 \times 10^{-2}) = 2 - \log 5.0 = 2 - 0.699 = 1.30
 $$
 
 </details>
@@ -112,15 +112,15 @@ Calculate the pH of $0.020\mathrm{ mol/L}$ NaOH at $25\degree\mathrm{C}$.
 NaOH is a strong base:
 
 $$
-[\mathrm&lbrace;OH&rbrace;^-] = 0.020\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{OH}^-] = 0.020\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = -\log(0.020) = -\log(2.0 \times 10^&lbrace;-2&rbrace;) = 2 - \log 2.0 = 2 - 0.301 = 1.70
+\mathrm{pOH} = -\log(0.020) = -\log(2.0 \times 10^{-2}) = 2 - \log 2.0 = 2 - 0.301 = 1.70
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 14 - 1.70 = 12.30
+\mathrm{pH} = 14 - 1.70 = 12.30
 $$
 
 </details>
@@ -133,7 +133,7 @@ Calculate the pH of $0.010\mathrm{ mol/L}$ H$_2$SO$_4$.
 Since the first dissociation of H$_2$SO$_4$ is complete:
 
 $$
-\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;SO&rbrace;_4 \to \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;HSO&rbrace;_4^-
+\mathrm{H}_2\mathrm{SO}_4 \to \mathrm{H}^+ + \mathrm{HSO}_4^-
 $$
 
 Each mole of H$_2$SO$_4$ gives 1 mole of H$^+$ from the first dissociation. At this concentration,
@@ -141,11 +141,11 @@ the second dissociation contributes additional H$^+$, but for most IB exam quest
 acceptable to consider only the first dissociation unless told otherwise:
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] \approx 0.010\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{H}^+] \approx 0.010\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(0.010) = 2.00
+\mathrm{pH} = -\log(0.010) = 2.00
 $$
 
 If the second dissociation is considered (with $K_{a2} = 1.0 \times 10^{-2}$):
@@ -153,7 +153,7 @@ If the second dissociation is considered (with $K_{a2} = 1.0 \times 10^{-2}$):
 Let $x$ be the additional [$\mathrm{H}^+$] from the second dissociation:
 
 $$
-K_&lbrace;a2&rbrace; = \frac&lbrace;[\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;SO&rbrace;_4^&lbrace;2-&rbrace;]&rbrace;&lbrace;[\mathrm&lbrace;HSO&rbrace;_4^-]&rbrace; = \frac&lbrace;(0.010 + x)(x)&rbrace;&lbrace;0.010 - x&rbrace; = 1.0 \times 10^&lbrace;-2&rbrace;
+K_{a2} = \frac{[\mathrm{H}^+][\mathrm{SO}_4^{2-}]}{[\mathrm{HSO}_4^-]} = \frac{(0.010 + x)(x)}{0.010 - x} = 1.0 \times 10^{-2}
 $$
 
 This gives $x \approx 0.0045$, so $[\mathrm{H}^+] \approx 0.0145$ and $\mathrm{pH} \approx 1.84$.
@@ -169,11 +169,11 @@ This gives $x \approx 0.0045$, so $[\mathrm{H}^+] \approx 0.0145$ and $\mathrm{p
 For a weak acid $\mathrm{HA}$:
 
 $$
-\mathrm&lbrace;HA&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;A&rbrace;^-
+\mathrm{HA} \rightleftharpoons \mathrm{H}^+ + \mathrm{A}^-
 $$
 
 $$
-K_a = \frac&lbrace;[\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;A&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;HA&rbrace;]&rbrace;
+K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 ### Base Dissociation Constant
@@ -181,11 +181,11 @@ $$
 For a weak base $\mathrm{B}$:
 
 $$
-\mathrm&lbrace;B&rbrace; + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;BH&rbrace;^+ + \mathrm&lbrace;OH&rbrace;^-
+\mathrm{B} + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{BH}^+ + \mathrm{OH}^-
 $$
 
 $$
-K_b = \frac&lbrace;[\mathrm&lbrace;BH&rbrace;^+][\mathrm&lbrace;OH&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;B&rbrace;]&rbrace;
+K_b = \frac{[\mathrm{BH}^+][\mathrm{OH}^-]}{[\mathrm{B}]}
 $$
 
 ### Relationship Between Ka and Kb
@@ -193,11 +193,11 @@ $$
 For a conjugate acid-base pair:
 
 $$
-K_a \times K_b = K_w = 1.0 \times 10^&lbrace;-14&rbrace;
+K_a \times K_b = K_w = 1.0 \times 10^{-14}
 $$
 
 $$
-\mathrm&lbrace;p&rbrace;K_a + \mathrm&lbrace;p&rbrace;K_b = 14
+\mathrm{p}K_a + \mathrm{p}K_b = 14
 $$
 
 where $\mathrm{p}K_a = -\log K_a$.
@@ -219,7 +219,7 @@ where $\mathrm{p}K_a = -\log K_a$.
 Calculate the pH of $0.100\mathrm{ mol/L}$ CH$_3$COOH ($K_a = 1.8 \times 10^{-5}$).
 
 $$
-\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COOH&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-
+\mathrm{CH}_3\mathrm{COOH} \rightleftharpoons \mathrm{H}^+ + \mathrm{CH}_3\mathrm{COO}^-
 $$
 
 ICE table (initial, change, equilibrium):
@@ -231,7 +231,7 @@ ICE table (initial, change, equilibrium):
 | CH$_3$COO$^-$ | 0         | $+x$   | $x$           |
 
 $$
-K_a = \frac&lbrace;x^2&rbrace;&lbrace;0.100 - x&rbrace; = 1.8 \times 10^&lbrace;-5&rbrace;
+K_a = \frac{x^2}{0.100 - x} = 1.8 \times 10^{-5}
 $$
 
 Check the $5\%$ rule:
@@ -239,15 +239,15 @@ $\frac{K_a}{c} = \frac{1.8 \times 10^{-5}}{0.100} = 1.8 \times 10^{-4} \lt 0.05$
 $0.100 - x \approx 0.100$ is valid.
 
 $$
-x^2 = 1.8 \times 10^&lbrace;-6&rbrace;
+x^2 = 1.8 \times 10^{-6}
 $$
 
 $$
-x = \sqrt&lbrace;1.8 \times 10^&lbrace;-6&rbrace;&rbrace; = 1.34 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; mol/L&rbrace;
+x = \sqrt{1.8 \times 10^{-6}} = 1.34 \times 10^{-3}\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(1.34 \times 10^&lbrace;-3&rbrace;) = 2.87
+\mathrm{pH} = -\log(1.34 \times 10^{-3}) = 2.87
 $$
 
 </details>
@@ -259,7 +259,7 @@ Calculate the pH of $0.150\mathrm{ mol/L}$ NH$_3$ ($K_b = 1.8 \times 10^{-5}$) a
 $25\degree\mathrm{C}$.
 
 $$
-\mathrm&lbrace;NH&rbrace;_3 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;NH&rbrace;_4^+ + \mathrm&lbrace;OH&rbrace;^-
+\mathrm{NH}_3 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{NH}_4^+ + \mathrm{OH}^-
 $$
 
 | Species  | [Initial] | Change | [Equilibrium] |
@@ -269,25 +269,25 @@ $$
 | OH$^-$   | 0         | $+x$   | $x$           |
 
 $$
-K_b = \frac&lbrace;x^2&rbrace;&lbrace;0.150 - x&rbrace; = 1.8 \times 10^&lbrace;-5&rbrace;
+K_b = \frac{x^2}{0.150 - x} = 1.8 \times 10^{-5}
 $$
 
 Approximation valid: $\frac{K_b}{c} = 1.2 \times 10^{-4} \lt 0.05$.
 
 $$
-x^2 = 0.150 \times 1.8 \times 10^&lbrace;-5&rbrace; = 2.7 \times 10^&lbrace;-6&rbrace;
+x^2 = 0.150 \times 1.8 \times 10^{-5} = 2.7 \times 10^{-6}
 $$
 
 $$
-x = \sqrt&lbrace;2.7 \times 10^&lbrace;-6&rbrace;&rbrace; = 1.64 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; mol/L&rbrace; = [\mathrm&lbrace;OH&rbrace;^-]
+x = \sqrt{2.7 \times 10^{-6}} = 1.64 \times 10^{-3}\mathrm{ mol/L} = [\mathrm{OH}^-]
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = -\log(1.64 \times 10^&lbrace;-3&rbrace;) = 2.78
+\mathrm{pOH} = -\log(1.64 \times 10^{-3}) = 2.78
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 14 - 2.78 = 11.22
+\mathrm{pH} = 14 - 2.78 = 11.22
 $$
 
 </details>
@@ -299,11 +299,11 @@ $$
 Water undergoes autoionisation:
 
 $$
-\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \rightleftharpoons \mathrm&lbrace;H&rbrace;^+(aq) + \mathrm&lbrace;OH&rbrace;^-(aq)
+\mathrm{H}_2\mathrm{O}(l) \rightleftharpoons \mathrm{H}^+(aq) + \mathrm{OH}^-(aq)
 $$
 
 $$
-K_w = [\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;OH&rbrace;^-]
+K_w = [\mathrm{H}^+][\mathrm{OH}^-]
 $$
 
 At $25\degree\mathrm{C}$: $K_w = 1.0 \times 10^{-14}$ (mol$^2$/L$^2$).
@@ -332,25 +332,25 @@ A polyprotic acid can donate more than one proton. Each dissociation has its own
 **Carbonic acid (H$_2$CO$_3$):**
 
 $$
-\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;CO&rbrace;_3 \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;HCO&rbrace;_3^- \quad K_&lbrace;a1&rbrace; = 4.3 \times 10^&lbrace;-7&rbrace;
+\mathrm{H}_2\mathrm{CO}_3 \rightleftharpoons \mathrm{H}^+ + \mathrm{HCO}_3^- \quad K_{a1} = 4.3 \times 10^{-7}
 $$
 
 $$
-\mathrm&lbrace;HCO&rbrace;_3^- \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;CO&rbrace;_3^&lbrace;2-&rbrace; \quad K_&lbrace;a2&rbrace; = 4.8 \times 10^&lbrace;-11&rbrace;
+\mathrm{HCO}_3^- \rightleftharpoons \mathrm{H}^+ + \mathrm{CO}_3^{2-} \quad K_{a2} = 4.8 \times 10^{-11}
 $$
 
 **Phosphoric acid (H$_3$PO$_4$):**
 
 $$
-\mathrm&lbrace;H&rbrace;_3\mathrm&lbrace;PO&rbrace;_4 \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;PO&rbrace;_4^- \quad K_&lbrace;a1&rbrace; = 7.5 \times 10^&lbrace;-3&rbrace;
+\mathrm{H}_3\mathrm{PO}_4 \rightleftharpoons \mathrm{H}^+ + \mathrm{H}_2\mathrm{PO}_4^- \quad K_{a1} = 7.5 \times 10^{-3}
 $$
 
 $$
-\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;PO&rbrace;_4^- \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;HPO&rbrace;_4^&lbrace;2-&rbrace; \quad K_&lbrace;a2&rbrace; = 6.2 \times 10^&lbrace;-8&rbrace;
+\mathrm{H}_2\mathrm{PO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{HPO}_4^{2-} \quad K_{a2} = 6.2 \times 10^{-8}
 $$
 
 $$
-\mathrm&lbrace;HPO&rbrace;_4^&lbrace;2-&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;PO&rbrace;_4^&lbrace;3-&rbrace; \quad K_&lbrace;a3&rbrace; = 4.2 \times 10^&lbrace;-13&rbrace;
+\mathrm{HPO}_4^{2-} \rightleftharpoons \mathrm{H}^+ + \mathrm{PO}_4^{3-} \quad K_{a3} = 4.2 \times 10^{-13}
 $$
 
 **General rule:** $K_{a1} \gg K_{a2} \gg K_{a3}$. Each successive proton is harder to remove because
@@ -375,7 +375,7 @@ Indicators are weak organic acids (HIn) where the acid form and conjugate base f
 colours:
 
 $$
-\mathrm&lbrace;HIn&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;In&rbrace;^-
+\mathrm{HIn} \rightleftharpoons \mathrm{H}^+ + \mathrm{In}^-
 $$
 
 The colour observed depends on the ratio $[\mathrm{HIn}]/[\mathrm{In}^-]$, which depends on [H$^+$]
@@ -452,13 +452,13 @@ consists of:
 **Adding acid (H$^+$):** The conjugate base (A$^-$) reacts with the added H$^+$:
 
 $$
-\mathrm&lbrace;A&rbrace;^- + \mathrm&lbrace;H&rbrace;^+ \to \mathrm&lbrace;HA&rbrace;
+\mathrm{A}^- + \mathrm{H}^+ \to \mathrm{HA}
 $$
 
 **Adding base (OH$^-$):** The weak acid (HA) reacts with the added OH$^-$:
 
 $$
-\mathrm&lbrace;HA&rbrace; + \mathrm&lbrace;OH&rbrace;^- \to \mathrm&lbrace;A&rbrace;^- + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{HA} + \mathrm{OH}^- \to \mathrm{A}^- + \mathrm{H}_2\mathrm{O}
 $$
 
 In both cases, the ratio $[\mathrm{HA}]/[\mathrm{A}^-]$ changes only slightly, so pH remains nearly
@@ -467,13 +467,13 @@ constant.
 ### Henderson-Hasselbalch Equation
 
 $$
-\mathrm&lbrace;pH&rbrace; = \mathrm&lbrace;p&rbrace;K_a + \log\frac&lbrace;[\mathrm&lbrace;A&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;HA&rbrace;]&rbrace;
+\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 or equivalently:
 
 $$
-\mathrm&lbrace;pH&rbrace; = \mathrm&lbrace;p&rbrace;K_a + \log\frac&lbrace;[\mathrm&lbrace;base&rbrace;]&rbrace;&lbrace;[\mathrm&lbrace;acid&rbrace;]&rbrace;
+\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{base}]}{[\mathrm{acid}]}
 $$
 
 ### Buffer Capacity
@@ -496,15 +496,15 @@ $0.150\mathrm{ mol/L}$ CH$_3$COONa. ($K_a = 1.8 \times 10^{-5}$, p$K_a = 4.74$)
 Using the Henderson-Hasselbalch equation:
 
 $$
-\mathrm&lbrace;pH&rbrace; = 4.74 + \log\frac&lbrace;0.150&rbrace;&lbrace;0.200&rbrace;
+\mathrm{pH} = 4.74 + \log\frac{0.150}{0.200}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 4.74 + \log(0.750)
+\mathrm{pH} = 4.74 + \log(0.750)
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 4.74 + (-0.125) = 4.62
+\mathrm{pH} = 4.74 + (-0.125) = 4.62
 $$
 
 </details>
@@ -528,11 +528,11 @@ Adding $0.010\mathrm{ mol}$ HCl:
 - $n(\mathrm{CH}_3\mathrm{COOH}) = 0.100 + 0.010 = 0.110\mathrm{ mol}$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 4.74 + \log\frac&lbrace;0.065&rbrace;&lbrace;0.110&rbrace;
+\mathrm{pH} = 4.74 + \log\frac{0.065}{0.110}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 4.74 + \log(0.591) = 4.74 + (-0.228) = 4.51
+\mathrm{pH} = 4.74 + \log(0.591) = 4.74 + (-0.228) = 4.51
 $$
 
 The pH changed from 4.62 to 4.51, a change of only 0.11 units, demonstrating the buffer's
@@ -550,29 +550,29 @@ $1.00\mathrm{ L}$ of $0.100\mathrm{ mol/L}$ CH$_3$COOH to produce a buffer with 
 Using the Henderson-Hasselbalch equation:
 
 $$
-5.00 = 4.74 + \log\frac&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-]&rbrace;&lbrace;0.100&rbrace;
+5.00 = 4.74 + \log\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{0.100}
 $$
 
 $$
-\log\frac&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-]&rbrace;&lbrace;0.100&rbrace; = 0.26
+\log\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{0.100} = 0.26
 $$
 
 $$
-\frac&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-]&rbrace;&lbrace;0.100&rbrace; = 10^&lbrace;0.26&rbrace; = 1.82
+\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{0.100} = 10^{0.26} = 1.82
 $$
 
 $$
-[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-] = 0.182\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{CH}_3\mathrm{COO}^-] = 0.182\mathrm{ mol/L}
 $$
 
 In $1.00\mathrm{ L}$:
 
 $$
-n(\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COONa&rbrace;) = 0.182\mathrm&lbrace; mol&rbrace;
+n(\mathrm{CH}_3\mathrm{COONa}) = 0.182\mathrm{ mol}
 $$
 
 $$
-m = n \times M_r = 0.182 \times 82.0 = 14.9\mathrm&lbrace; g&rbrace;
+m = n \times M_r = 0.182 \times 82.0 = 14.9\mathrm{ g}
 $$
 
 </details>
@@ -588,7 +588,7 @@ At the equivalence point, moles of acid = moles of base.
 **Strong acid -- strong base:**
 
 $$
-\mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;OH&rbrace;^- \to \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{H}^+ + \mathrm{OH}^- \to \mathrm{H}_2\mathrm{O}
 $$
 
 pH at equivalence point = 7 (neutral salt).
@@ -596,13 +596,13 @@ pH at equivalence point = 7 (neutral salt).
 **Weak acid -- strong base:**
 
 $$
-\mathrm&lbrace;HA&rbrace; + \mathrm&lbrace;OH&rbrace;^- \to \mathrm&lbrace;A&rbrace;^- + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{HA} + \mathrm{OH}^- \to \mathrm{A}^- + \mathrm{H}_2\mathrm{O}
 $$
 
 The conjugate base A$^-$ hydrolyses:
 
 $$
-\mathrm&lbrace;A&rbrace;^- + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;HA&rbrace; + \mathrm&lbrace;OH&rbrace;^-
+\mathrm{A}^- + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{HA} + \mathrm{OH}^-
 $$
 
 pH at equivalence point \gt 7.
@@ -610,13 +610,13 @@ pH at equivalence point \gt 7.
 **Strong acid -- weak base:**
 
 $$
-\mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;B&rbrace; \to \mathrm&lbrace;BH&rbrace;^+
+\mathrm{H}^+ + \mathrm{B} \to \mathrm{BH}^+
 $$
 
 The conjugate acid BH$^+$ hydrolyses:
 
 $$
-\mathrm&lbrace;BH&rbrace;^+ + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;B&rbrace; + \mathrm&lbrace;H&rbrace;_3\mathrm&lbrace;O&rbrace;^+
+\mathrm{BH}^+ + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{B} + \mathrm{H}_3\mathrm{O}^+
 $$
 
 pH at equivalence point \lt 7.
@@ -630,13 +630,13 @@ with $0.100\mathrm{ mol/L}$ NaOH. Calculate the pH at the equivalence point.
 At the equivalence point, moles of NaOH = moles of CH$_3$COOH:
 
 $$
-n = 0.100 \times 0.0250 = 0.00250\mathrm&lbrace; mol&rbrace;
+n = 0.100 \times 0.0250 = 0.00250\mathrm{ mol}
 $$
 
 Volume of NaOH required:
 
 $$
-V = \frac&lbrace;0.00250&rbrace;&lbrace;0.100&rbrace; = 0.0250\mathrm&lbrace; L&rbrace; = 25.0\mathrm&lbrace; mL&rbrace;
+V = \frac{0.00250}{0.100} = 0.0250\mathrm{ L} = 25.0\mathrm{ mL}
 $$
 
 Total volume at equivalence point: $25.0 + 25.0 = 50.0\mathrm{ mL} = 0.0500\mathrm{ L}$.
@@ -644,29 +644,29 @@ Total volume at equivalence point: $25.0 + 25.0 = 50.0\mathrm{ mL} = 0.0500\math
 All CH$_3$COOH has been converted to CH$_3$COO$^-$:
 
 $$
-[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-] = \frac&lbrace;0.00250&rbrace;&lbrace;0.0500&rbrace; = 0.0500\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{CH}_3\mathrm{COO}^-] = \frac{0.00250}{0.0500} = 0.0500\mathrm{ mol/L}
 $$
 
 The acetate ion hydrolyses:
 
 $$
-K_b = \frac&lbrace;K_w&rbrace;&lbrace;K_a&rbrace; = \frac&lbrace;1.0 \times 10^&lbrace;-14&rbrace;&rbrace;&lbrace;1.8 \times 10^&lbrace;-5&rbrace;&rbrace; = 5.56 \times 10^&lbrace;-10&rbrace;
+K_b = \frac{K_w}{K_a} = \frac{1.0 \times 10^{-14}}{1.8 \times 10^{-5}} = 5.56 \times 10^{-10}
 $$
 
 $$
-[\mathrm&lbrace;OH&rbrace;^-] = \sqrt&lbrace;K_b \times [\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-]&rbrace; = \sqrt&lbrace;5.56 \times 10^&lbrace;-10&rbrace; \times 0.0500&rbrace;
+[\mathrm{OH}^-] = \sqrt{K_b \times [\mathrm{CH}_3\mathrm{COO}^-]} = \sqrt{5.56 \times 10^{-10} \times 0.0500}
 $$
 
 $$
-[\mathrm&lbrace;OH&rbrace;^-] = \sqrt&lbrace;2.78 \times 10^&lbrace;-11&rbrace;&rbrace; = 5.27 \times 10^&lbrace;-6&rbrace;\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{OH}^-] = \sqrt{2.78 \times 10^{-11}} = 5.27 \times 10^{-6}\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = -\log(5.27 \times 10^&lbrace;-6&rbrace;) = 5.28
+\mathrm{pOH} = -\log(5.27 \times 10^{-6}) = 5.28
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 14 - 5.28 = 8.72
+\mathrm{pH} = 14 - 5.28 = 8.72
 $$
 
 </details>
@@ -680,7 +680,7 @@ added (half-equivalence point).
 At half-equivalence point, half the acid has been neutralised:
 
 $$
-n(\mathrm&lbrace;NaOH&rbrace;) = 0.100 \times 0.0125 = 0.00125\mathrm&lbrace; mol&rbrace;
+n(\mathrm{NaOH}) = 0.100 \times 0.0125 = 0.00125\mathrm{ mol}
 $$
 
 Moles of CH$_3$COOH remaining: $0.00250 - 0.00125 = 0.00125\mathrm{ mol}$
@@ -690,7 +690,7 @@ Moles of CH$_3$COO$^-$ formed: $0.00125\mathrm{ mol}$
 Since $[\mathrm{HA}] = [\mathrm{A}^-]$:
 
 $$
-\mathrm&lbrace;pH&rbrace; = \mathrm&lbrace;p&rbrace;K_a = -\log(1.8 \times 10^&lbrace;-5&rbrace;) = 4.74
+\mathrm{pH} = \mathrm{p}K_a = -\log(1.8 \times 10^{-5}) = 4.74
 $$
 
 This is a general result: at the half-equivalence point, $\mathrm{pH} = \mathrm{p}K_a$.
@@ -753,31 +753,31 @@ Answer:
 (a) HNO$_3$ is a strong monoprotic acid:
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] = 0.0030\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{H}^+] = 0.0030\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(3.0 \times 10^&lbrace;-3&rbrace;) = 3 - \log 3.0 = 3 - 0.477 = 2.52
+\mathrm{pH} = -\log(3.0 \times 10^{-3}) = 3 - \log 3.0 = 3 - 0.477 = 2.52
 $$
 
 (b) Ca(OH)$_2$ is a strong base giving 2 OH$^-$ per formula unit:
 
 $$
-[\mathrm&lbrace;OH&rbrace;^-] = 2 \times 0.0025 = 0.0050\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{OH}^-] = 2 \times 0.0025 = 0.0050\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = -\log(5.0 \times 10^&lbrace;-3&rbrace;) = 3 - \log 5.0 = 3 - 0.699 = 2.30
+\mathrm{pOH} = -\log(5.0 \times 10^{-3}) = 3 - \log 5.0 = 3 - 0.699 = 2.30
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 14 - 2.30 = 11.70
+\mathrm{pH} = 14 - 2.30 = 11.70
 $$
 
 (c)
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] = 10^&lbrace;-\mathrm&lbrace;pH&rbrace;&rbrace; = 10^&lbrace;-3.40&rbrace; = 3.98 \times 10^&lbrace;-4&rbrace;\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{H}^+] = 10^{-\mathrm{pH}} = 10^{-3.40} = 3.98 \times 10^{-4}\mathrm{ mol/L}
 $$
 
 </details>
@@ -796,29 +796,29 @@ Answer:
 (a)
 
 $$
-\mathrm&lbrace;HOCl&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;OCl&rbrace;^-
+\mathrm{HOCl} \rightleftharpoons \mathrm{H}^+ + \mathrm{OCl}^-
 $$
 
 $$
-K_a = \frac&lbrace;x^2&rbrace;&lbrace;0.050&rbrace; = 3.5 \times 10^&lbrace;-8&rbrace;
+K_a = \frac{x^2}{0.050} = 3.5 \times 10^{-8}
 $$
 
 $$
-x^2 = 1.75 \times 10^&lbrace;-9&rbrace;
+x^2 = 1.75 \times 10^{-9}
 $$
 
 $$
-x = 4.18 \times 10^&lbrace;-5&rbrace;\mathrm&lbrace; mol/L&rbrace;
+x = 4.18 \times 10^{-5}\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(4.18 \times 10^&lbrace;-5&rbrace;) = 4.38
+\mathrm{pH} = -\log(4.18 \times 10^{-5}) = 4.38
 $$
 
 (b)
 
 $$
-\mathrm&lbrace;Percentage dissociation&rbrace; = \frac&lbrace;4.18 \times 10^&lbrace;-5&rbrace;&rbrace;&lbrace;0.050&rbrace; \times 100\% = 0.084\%
+\mathrm{Percentage dissociation} = \frac{4.18 \times 10^{-5}}{0.050} \times 100\% = 0.084\%
 $$
 
 </details>
@@ -835,7 +835,7 @@ Answer:
 (a)
 
 $$
-K_a(\mathrm&lbrace;NH&rbrace;_4^+) = \frac&lbrace;K_w&rbrace;&lbrace;K_b(\mathrm&lbrace;NH&rbrace;_3)&rbrace; = \frac&lbrace;1.0 \times 10^&lbrace;-14&rbrace;&rbrace;&lbrace;1.8 \times 10^&lbrace;-5&rbrace;&rbrace; = 5.56 \times 10^&lbrace;-10&rbrace;
+K_a(\mathrm{NH}_4^+) = \frac{K_w}{K_b(\mathrm{NH}_3)} = \frac{1.0 \times 10^{-14}}{1.8 \times 10^{-5}} = 5.56 \times 10^{-10}
 $$
 
 (b) NH$_4^+$ is the conjugate acid of the weak base NH$_3$. Since NH$_3$ is a weak base, its
@@ -863,7 +863,7 @@ Answer:
 $0.0500\mathrm{ mol/L}$ respectively:
 
 $$
-\mathrm&lbrace;pH&rbrace; = 3.74 + \log\frac&lbrace;0.0500&rbrace;&lbrace;0.0750&rbrace; = 3.74 + \log(0.667) = 3.74 + (-0.176) = 3.56
+\mathrm{pH} = 3.74 + \log\frac{0.0500}{0.0750} = 3.74 + \log(0.667) = 3.74 + (-0.176) = 3.56
 $$
 
 (b) Moles in $100\mathrm{ mL}$ of buffer:
@@ -879,7 +879,7 @@ After reaction:
 - $n(\mathrm{HCOO}^-) = 0.00500 + 0.000500 = 0.00550\mathrm{ mol}$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 3.74 + \log\frac&lbrace;0.00550&rbrace;&lbrace;0.00700&rbrace; = 3.74 + \log(0.786) = 3.74 + (-0.105) = 3.64
+\mathrm{pH} = 3.74 + \log\frac{0.00550}{0.00700} = 3.74 + \log(0.786) = 3.74 + (-0.105) = 3.64
 $$
 
 </details>
@@ -901,7 +901,7 @@ Answer:
 (a) At equivalence point, moles of HCl = moles of NH$_3$:
 
 $$
-n = 0.100 \times 0.0200 = 0.00200\mathrm&lbrace; mol&rbrace;
+n = 0.100 \times 0.0200 = 0.00200\mathrm{ mol}
 $$
 
 Volume of HCl: $V = 0.00200 / 0.100 = 0.0200\mathrm{ L} = 20.0\mathrm{ mL}$.
@@ -911,23 +911,23 @@ Total volume: $20.0 + 20.0 = 40.0\mathrm{ mL} = 0.0400\mathrm{ L}$.
 All NH$_3$ is converted to NH$_4^+$:
 
 $$
-[\mathrm&lbrace;NH&rbrace;_4^+] = \frac&lbrace;0.00200&rbrace;&lbrace;0.0400&rbrace; = 0.0500\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{NH}_4^+] = \frac{0.00200}{0.0400} = 0.0500\mathrm{ mol/L}
 $$
 
 $$
-K_a(\mathrm&lbrace;NH&rbrace;_4^+) = \frac&lbrace;K_w&rbrace;&lbrace;K_b&rbrace; = \frac&lbrace;1.0 \times 10^&lbrace;-14&rbrace;&rbrace;&lbrace;1.8 \times 10^&lbrace;-5&rbrace;&rbrace; = 5.56 \times 10^&lbrace;-10&rbrace;
+K_a(\mathrm{NH}_4^+) = \frac{K_w}{K_b} = \frac{1.0 \times 10^{-14}}{1.8 \times 10^{-5}} = 5.56 \times 10^{-10}
 $$
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] = \sqrt&lbrace;K_a \times [\mathrm&lbrace;NH&rbrace;_4^+]&rbrace; = \sqrt&lbrace;5.56 \times 10^&lbrace;-10&rbrace; \times 0.0500&rbrace;
+[\mathrm{H}^+] = \sqrt{K_a \times [\mathrm{NH}_4^+]} = \sqrt{5.56 \times 10^{-10} \times 0.0500}
 $$
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] = \sqrt&lbrace;2.78 \times 10^&lbrace;-11&rbrace;&rbrace; = 5.27 \times 10^&lbrace;-6&rbrace;\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{H}^+] = \sqrt{2.78 \times 10^{-11}} = 5.27 \times 10^{-6}\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(5.27 \times 10^&lbrace;-6&rbrace;) = 5.28
+\mathrm{pH} = -\log(5.27 \times 10^{-6}) = 5.28
 $$
 
 (b) The equivalence point pH is 5.28, which falls within the transition range of **methyl orange**
@@ -939,11 +939,11 @@ base titration.
 (c) At the half-equivalence point, $[\mathrm{NH}_3] = [\mathrm{NH}_4^+]$, so:
 
 $$
-\mathrm&lbrace;pH&rbrace; = \mathrm&lbrace;p&rbrace;K_a(\mathrm&lbrace;NH&rbrace;_4^+) = 14 - \mathrm&lbrace;p&rbrace;K_b = 14 - (-\log(1.8 \times 10^&lbrace;-5&rbrace;))
+\mathrm{pH} = \mathrm{p}K_a(\mathrm{NH}_4^+) = 14 - \mathrm{p}K_b = 14 - (-\log(1.8 \times 10^{-5}))
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 14 - 4.74 = 9.26
+\mathrm{pH} = 14 - 4.74 = 9.26
 $$
 
 </details>
@@ -959,7 +959,7 @@ Answer:
 For the first dissociation:
 
 $$
-\mathrm&lbrace;H&rbrace;_3\mathrm&lbrace;PO&rbrace;_4 \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;PO&rbrace;_4^-
+\mathrm{H}_3\mathrm{PO}_4 \rightleftharpoons \mathrm{H}^+ + \mathrm{H}_2\mathrm{PO}_4^-
 $$
 
 Since $K_{a1}$ is not very small compared to $c$, the approximation $c - x \approx c$ may not be
@@ -968,31 +968,31 @@ valid. Check: $K_{a1}/c = 7.5 \times 10^{-3}/0.100 = 0.075 \gt 0.05$. The $5\%$ 
 Solve the quadratic: $x^2 + K_a x - K_a \cdot c = 0$
 
 $$
-x^2 + 7.5 \times 10^&lbrace;-3&rbrace;x - 7.5 \times 10^&lbrace;-4&rbrace; = 0
+x^2 + 7.5 \times 10^{-3}x - 7.5 \times 10^{-4} = 0
 $$
 
 $$
-x = \frac&lbrace;-7.5 \times 10^&lbrace;-3&rbrace; + \sqrt&lbrace;(7.5 \times 10^&lbrace;-3&rbrace;)^2 + 4 \times 7.5 \times 10^&lbrace;-4&rbrace;&rbrace;&rbrace;&lbrace;2&rbrace;
+x = \frac{-7.5 \times 10^{-3} + \sqrt{(7.5 \times 10^{-3})^2 + 4 \times 7.5 \times 10^{-4}}}{2}
 $$
 
 $$
-x = \frac&lbrace;-7.5 \times 10^&lbrace;-3&rbrace; + \sqrt&lbrace;5.625 \times 10^&lbrace;-5&rbrace; + 3.0 \times 10^&lbrace;-3&rbrace;&rbrace;&rbrace;&lbrace;2&rbrace;
+x = \frac{-7.5 \times 10^{-3} + \sqrt{5.625 \times 10^{-5} + 3.0 \times 10^{-3}}}{2}
 $$
 
 $$
-x = \frac&lbrace;-7.5 \times 10^&lbrace;-3&rbrace; + \sqrt&lbrace;3.056 \times 10^&lbrace;-3&rbrace;&rbrace;&rbrace;&lbrace;2&rbrace;
+x = \frac{-7.5 \times 10^{-3} + \sqrt{3.056 \times 10^{-3}}}{2}
 $$
 
 $$
-x = \frac&lbrace;-7.5 \times 10^&lbrace;-3&rbrace; + 5.528 \times 10^&lbrace;-2&rbrace;&rbrace;&lbrace;2&rbrace; = \frac&lbrace;4.778 \times 10^&lbrace;-2&rbrace;&rbrace;&lbrace;2&rbrace; = 2.389 \times 10^&lbrace;-2&rbrace;
+x = \frac{-7.5 \times 10^{-3} + 5.528 \times 10^{-2}}{2} = \frac{4.778 \times 10^{-2}}{2} = 2.389 \times 10^{-2}
 $$
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] \approx 0.0239\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{H}^+] \approx 0.0239\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(0.0239) = 1.62
+\mathrm{pH} = -\log(0.0239) = 1.62
 $$
 
 Note: The second and third dissociations contribute negligible H$^+$ since $K_{a2} \ll K_{a1}$.

@@ -86,7 +86,7 @@ Formed from one **glycerol** molecule (3-carbon alcohol) and three **fatty acid*
 by ester bonds via condensation reactions.
 
 $$
-\mathrm&lbrace;Glycerol&rbrace; + 3\;\mathrm&lbrace;Fatty Acids&rbrace; \xrightarrow&lbrace;\mathrm&lbrace;condensation&rbrace;&rbrace; \mathrm&lbrace;Triglyceride&rbrace; + 3\;\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{Glycerol} + 3\;\mathrm{Fatty Acids} \xrightarrow{\mathrm{condensation}} \mathrm{Triglyceride} + 3\;\mathrm{H}_2\mathrm{O}
 $$
 
 - **Saturated fatty acids**: no C=C double bonds; straight chains; solid at room temperature (e.g.,
@@ -387,7 +387,7 @@ reaction rate when the substrate concentration is $15\;\mathrm{mM}$.
 Using the Michaelis-Menten equation:
 
 $$
-v = \frac&lbrace;V_&lbrace;\max&rbrace; \cdot [S]&rbrace;&lbrace;K_m + [S]&rbrace; = \frac&lbrace;40 \times 15&rbrace;&lbrace;5 + 15&rbrace; = \frac&lbrace;600&rbrace;&lbrace;20&rbrace; = 30\;\mathrm&lbrace;\mu mol\;min^&lbrace;-1&rbrace;&rbrace;
+v = \frac{V_{\max} \cdot [S]}{K_m + [S]} = \frac{40 \times 15}{5 + 15} = \frac{600}{20} = 30\;\mathrm{\mu mol\;min^{-1}}
 $$
 
 </details>

@@ -28,7 +28,7 @@ energy.
 The cell is written with the anode on the left and cathode on the right:
 
 $$
-\mathrm&lbrace;Zn&rbrace;(s) \mid \mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace;(aq) \parallel \mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace;(aq) \mid \mathrm&lbrace;Cu&rbrace;(s)
+\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Cu}^{2+}(aq) \mid \mathrm{Cu}(s)
 $$
 
 - Single vertical line ($\mid$): phase boundary
@@ -41,7 +41,7 @@ Each half-reaction has a standard electrode potential measured relative to the *
 electrode** (SHE), assigned $E^\circ = 0.00\mathrm{ V}$.
 
 $$
-2\mathrm&lbrace;H&rbrace;^+(aq, 1\mathrm&lbrace; M&rbrace;) + 2e^- \rightleftharpoons \mathrm&lbrace;H&rbrace;_2(g, 100\mathrm&lbrace; kPa&rbrace;) \qquad E^\circ = 0.00\mathrm&lbrace; V&rbrace;
+2\mathrm{H}^+(aq, 1\mathrm{ M}) + 2e^- \rightleftharpoons \mathrm{H}_2(g, 100\mathrm{ kPa}) \qquad E^\circ = 0.00\mathrm{ V}
 $$
 
 Standard conditions: $298\mathrm{ K}$, $1\mathrm{ M}$ solutions, $100\mathrm{ kPa}$ gas pressure.
@@ -63,13 +63,13 @@ Standard conditions: $298\mathrm{ K}$, $1\mathrm{ M}$ solutions, $100\mathrm{ kP
 ### Calculating Standard Cell Potential
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ = E_&lbrace;\mathrm&lbrace;cathode&rbrace;&rbrace;^\circ - E_&lbrace;\mathrm&lbrace;anode&rbrace;&rbrace;^\circ
+E_{\mathrm{cell}}^\circ = E_{\mathrm{cathode}}^\circ - E_{\mathrm{anode}}^\circ
 $$
 
 :::info[Example — Daniell Cell]
 
 $$
-\mathrm&lbrace;Zn&rbrace; \mid \mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace; \parallel \mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace; \mid \mathrm&lbrace;Cu&rbrace;
+\mathrm{Zn} \mid \mathrm{Zn}^{2+} \parallel \mathrm{Cu}^{2+} \mid \mathrm{Cu}
 $$
 
 Anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^- \qquad E^\circ = -0.76\mathrm{ V}$
@@ -77,7 +77,7 @@ Anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^- \qquad E^\circ = -0.
 Cathode (reduction): $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu} \qquad E^\circ = +0.34\mathrm{ V}$
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ = 0.34 - (-0.76) = +1.10\mathrm&lbrace; V&rbrace;
+E_{\mathrm{cell}}^\circ = 0.34 - (-0.76) = +1.10\mathrm{ V}
 $$
 
 :::
@@ -107,13 +107,13 @@ value, the stronger the reducing agent.
 For non-standard conditions, the cell potential is given by the Nernst equation:
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ - \frac&lbrace;RT&rbrace;&lbrace;nF&rbrace;\ln Q
+E_{\mathrm{cell}} = E_{\mathrm{cell}}^\circ - \frac{RT}{nF}\ln Q
 $$
 
 At $298\mathrm{ K}$, this simplifies to:
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ - \frac&lbrace;0.0592&rbrace;&lbrace;n&rbrace;\log Q
+E_{\mathrm{cell}} = E_{\mathrm{cell}}^\circ - \frac{0.0592}{n}\log Q
 $$
 
 where:
@@ -125,17 +125,17 @@ where:
 ### Relationship to Gibbs Free Energy
 
 $$
-\Delta G^\circ = -nFE_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ
+\Delta G^\circ = -nFE_{\mathrm{cell}}^\circ
 $$
 
 $$
-\Delta G = -nFE_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;
+\Delta G = -nFE_{\mathrm{cell}}
 $$
 
 At equilibrium, $E_{\mathrm{cell}} = 0$ and $\Delta G = 0$, so:
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ = \frac&lbrace;RT&rbrace;&lbrace;nF&rbrace;\ln K = \frac&lbrace;0.0592&rbrace;&lbrace;n&rbrace;\log K
+E_{\mathrm{cell}}^\circ = \frac{RT}{nF}\ln K = \frac{0.0592}{n}\log K
 $$
 
 :::info[Example]
@@ -143,11 +143,11 @@ $$
 For the Daniell cell: $E_{\mathrm{cell}}^\circ = 1.10\mathrm{ V}$, $n = 2$.
 
 $$
-\log K = \frac&lbrace;nE^\circ&rbrace;&lbrace;0.0592&rbrace; = \frac&lbrace;2 \times 1.10&rbrace;&lbrace;0.0592&rbrace; = 37.2
+\log K = \frac{nE^\circ}{0.0592} = \frac{2 \times 1.10}{0.0592} = 37.2
 $$
 
 $$
-K = 10^&lbrace;37.2&rbrace; = 1.6 \times 10^&lbrace;37&rbrace;
+K = 10^{37.2} = 1.6 \times 10^{37}
 $$
 
 The extremely large $K$ confirms that the reaction proceeds essentially to completion.
@@ -173,7 +173,7 @@ cell has:
 passed.
 
 $$
-m = \frac&lbrace;Q \cdot M&rbrace;&lbrace;n \cdot F&rbrace; = \frac&lbrace;It \cdot M&rbrace;&lbrace;n \cdot F&rbrace;
+m = \frac{Q \cdot M}{n \cdot F} = \frac{It \cdot M}{n \cdot F}
 $$
 
 where:
@@ -192,11 +192,11 @@ Calculate the mass of copper deposited when a current of $2.00\mathrm{ A}$ is pa
 $\mathrm{CuSO}_4$ solution for $30.0$ minutes.
 
 $$
-Q = It = 2.00 \times 30.0 \times 60 = 3600\mathrm&lbrace; C&rbrace;
+Q = It = 2.00 \times 30.0 \times 60 = 3600\mathrm{ C}
 $$
 
 $$
-m = \frac&lbrace;3600 \times 63.55&rbrace;&lbrace;2 \times 96485&rbrace; = \frac&lbrace;228780&rbrace;&lbrace;192970&rbrace; = 1.19\mathrm&lbrace; g&rbrace;
+m = \frac{3600 \times 63.55}{2 \times 96485} = \frac{228780}{192970} = 1.19\mathrm{ g}
 $$
 
 :::
@@ -206,11 +206,11 @@ $$
 When electrolysing aqueous solutions, water can also be oxidized or reduced:
 
 $$
-\mathrm&lbrace;At cathode (reduction): &rbrace; 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 2e^- \to \mathrm&lbrace;H&rbrace;_2 + 2\mathrm&lbrace;OH&rbrace;^- \qquad E^\circ = -0.83\mathrm&lbrace; V&rbrace;
+\mathrm{At cathode (reduction): } 2\mathrm{H}_2\mathrm{O} + 2e^- \to \mathrm{H}_2 + 2\mathrm{OH}^- \qquad E^\circ = -0.83\mathrm{ V}
 $$
 
 $$
-\mathrm&lbrace;At anode (oxidation): &rbrace; 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to \mathrm&lbrace;O&rbrace;_2 + 4\mathrm&lbrace;H&rbrace;^+ + 4e^- \qquad E^\circ = -1.23\mathrm&lbrace; V&rbrace;
+\mathrm{At anode (oxidation): } 2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^- \qquad E^\circ = -1.23\mathrm{ V}
 $$
 
 ### Discharge Rules (in Aqueous Solution)
@@ -272,7 +272,7 @@ A fuel cell converts chemical energy from a fuel (usually $\mathrm{H}_2$) direct
 The overall reaction:
 
 $$
-2\mathrm&lbrace;H&rbrace;_2 + \mathrm&lbrace;O&rbrace;_2 \to 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+2\mathrm{H}_2 + \mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O}
 $$
 
 **Advantages over combustion engines:**
@@ -323,7 +323,7 @@ $\mathrm{Fe}^{2+} + 2e^- \to \mathrm{Fe}$: $E^\circ = -0.44\mathrm{ V}$ (anode, 
 $\mathrm{Ag}^+ + e^- \to \mathrm{Ag}$: $E^\circ = +0.80\mathrm{ V}$ (cathode, reduction)
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ = 0.80 - (-0.44) = +1.24\mathrm&lbrace; V&rbrace;
+E_{\mathrm{cell}}^\circ = 0.80 - (-0.44) = +1.24\mathrm{ V}
 $$
 
 Overall: $\mathrm{Fe}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Fe}^{2+}(aq) + 2\mathrm{Ag}(s)$
@@ -339,19 +339,19 @@ $\mathrm{Al}_2\mathrm{O}_3$ in $2.00$ hours?
 **Solution:**
 
 $$
-\mathrm&lbrace;Al&rbrace;^&lbrace;3+&rbrace; + 3e^- \to \mathrm&lbrace;Al&rbrace;, \quad n = 3, \quad M = 27.0\mathrm&lbrace; g/mol&rbrace;
+\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}, \quad n = 3, \quad M = 27.0\mathrm{ g/mol}
 $$
 
 $$
-n(\mathrm&lbrace;Al&rbrace;) = \frac&lbrace;5.00&rbrace;&lbrace;27.0&rbrace; = 0.185\mathrm&lbrace; mol&rbrace;
+n(\mathrm{Al}) = \frac{5.00}{27.0} = 0.185\mathrm{ mol}
 $$
 
 $$
-Q = n(\mathrm&lbrace;Al&rbrace;) \times 3 \times F = 0.185 \times 3 \times 96485 = 53600\mathrm&lbrace; C&rbrace;
+Q = n(\mathrm{Al}) \times 3 \times F = 0.185 \times 3 \times 96485 = 53600\mathrm{ C}
 $$
 
 $$
-I = \frac&lbrace;Q&rbrace;&lbrace;t&rbrace; = \frac&lbrace;53600&rbrace;&lbrace;2.00 \times 3600&rbrace; = \frac&lbrace;53600&rbrace;&lbrace;7200&rbrace; = 7.44\mathrm&lbrace; A&rbrace;
+I = \frac{Q}{t} = \frac{53600}{2.00 \times 3600} = \frac{53600}{7200} = 7.44\mathrm{ A}
 $$
 
 </details>
@@ -366,15 +366,15 @@ at $298\mathrm{ K}$.
 **Solution:**
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;^\circ = 0.34 - (-0.76) = 1.10\mathrm&lbrace; V&rbrace;
+E_{\mathrm{cell}}^\circ = 0.34 - (-0.76) = 1.10\mathrm{ V}
 $$
 
 $$
-Q = \frac&lbrace;[\mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace;]&rbrace;&lbrace;[\mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace;]&rbrace; = \frac&lbrace;0.010&rbrace;&lbrace;1.0&rbrace; = 0.010
+Q = \frac{[\mathrm{Zn}^{2+}]}{[\mathrm{Cu}^{2+}]} = \frac{0.010}{1.0} = 0.010
 $$
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = 1.10 - \frac&lbrace;0.0592&rbrace;&lbrace;2&rbrace;\log(0.010) = 1.10 - \frac&lbrace;0.0592&rbrace;&lbrace;2&rbrace; \times (-2) = 1.10 + 0.059 = 1.16\mathrm&lbrace; V&rbrace;
+E_{\mathrm{cell}} = 1.10 - \frac{0.0592}{2}\log(0.010) = 1.10 - \frac{0.0592}{2} \times (-2) = 1.10 + 0.059 = 1.16\mathrm{ V}
 $$
 
 The lower concentration of $\mathrm{Zn}^{2+}$ drives the reaction further (Le Chatelier), increasing
@@ -394,7 +394,7 @@ Zinc has a more negative standard reduction potential ($E^\circ = -0.76\mathrm{ 
 zinc acts as the **anode** and is preferentially oxidised:
 
 $$
-\mathrm&lbrace;Zn&rbrace; \to \mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace; + 2e^-
+\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-
 $$
 
 The electrons flow to the iron, which becomes the cathode where oxygen reduction occurs. Since the

@@ -113,7 +113,7 @@ hormones) diffuse directly through the bilayer.
 **Fick's Law:**
 
 $$
-\mathrm&lbrace;Rate of diffusion&rbrace; \propto \frac&lbrace;(\mathrm&lbrace;surface area&rbrace;) \times (\mathrm&lbrace;concentration difference&rbrace;)&rbrace;&lbrace;\mathrm&lbrace;thickness of membrane&rbrace;&rbrace;
+\mathrm{Rate of diffusion} \propto \frac{(\mathrm{surface area}) \times (\mathrm{concentration difference})}{\mathrm{thickness of membrane}}
 $$
 
 #### Facilitated Diffusion

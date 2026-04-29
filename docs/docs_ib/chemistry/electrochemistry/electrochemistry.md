@@ -63,25 +63,25 @@ in acidic solution.
 Reduction half-reaction:
 
 $$
-\mathrm&lbrace;MnO&rbrace;_4^- + 8\mathrm&lbrace;H&rbrace;^+ + 5e^- \to \mathrm&lbrace;Mn&rbrace;^&lbrace;2+&rbrace; + 4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}
 $$
 
 Oxidation half-reaction:
 
 $$
-\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace; \to \mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace; + e^-
+\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-
 $$
 
 Multiply the oxidation half-reaction by 5 to balance electrons:
 
 $$
-5\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace; \to 5\mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace; + 5e^-
+5\mathrm{Fe}^{2+} \to 5\mathrm{Fe}^{3+} + 5e^-
 $$
 
 Add both half-reactions:
 
 $$
-\mathrm&lbrace;MnO&rbrace;_4^- + 5\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace; + 8\mathrm&lbrace;H&rbrace;^+ \to \mathrm&lbrace;Mn&rbrace;^&lbrace;2+&rbrace; + 5\mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace; + 4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{MnO}_4^- + 5\mathrm{Fe}^{2+} + 8\mathrm{H}^+ \to \mathrm{Mn}^{2+} + 5\mathrm{Fe}^{3+} + 4\mathrm{H}_2\mathrm{O}
 $$
 
 ### Balancing Redox in Basic Conditions
@@ -101,33 +101,33 @@ solution.
 Step 1 -- Balance in acidic conditions:
 
 $$
-\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 4\mathrm&lbrace;H&rbrace;^+ + 3e^- \to \mathrm&lbrace;Cr(OH)&rbrace;_3 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{CrO}_4^{2-} + 4\mathrm{H}^+ + 3e^- \to \mathrm{Cr(OH)}_3 + \mathrm{H}_2\mathrm{O}
 $$
 
 $$
-\mathrm&lbrace;SO&rbrace;_3^&lbrace;2-&rbrace; + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to \mathrm&lbrace;SO&rbrace;_4^&lbrace;2-&rbrace; + 2\mathrm&lbrace;H&rbrace;^+ + 2e^-
+\mathrm{SO}_3^{2-} + \mathrm{H}_2\mathrm{O} \to \mathrm{SO}_4^{2-} + 2\mathrm{H}^+ + 2e^-
 $$
 
 Step 2 -- Multiply to balance electrons (LCM of 3 and 2 is 6):
 
 $$
-2\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 8\mathrm&lbrace;H&rbrace;^+ + 6e^- \to 2\mathrm&lbrace;Cr(OH)&rbrace;_3 + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+2\mathrm{CrO}_4^{2-} + 8\mathrm{H}^+ + 6e^- \to 2\mathrm{Cr(OH)}_3 + 2\mathrm{H}_2\mathrm{O}
 $$
 
 $$
-3\mathrm&lbrace;SO&rbrace;_3^&lbrace;2-&rbrace; + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to 3\mathrm&lbrace;SO&rbrace;_4^&lbrace;2-&rbrace; + 6\mathrm&lbrace;H&rbrace;^+ + 6e^-
+3\mathrm{SO}_3^{2-} + 3\mathrm{H}_2\mathrm{O} \to 3\mathrm{SO}_4^{2-} + 6\mathrm{H}^+ + 6e^-
 $$
 
 Step 3 -- Add:
 
 $$
-2\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 3\mathrm&lbrace;SO&rbrace;_3^&lbrace;2-&rbrace; + 5\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to 2\mathrm&lbrace;Cr(OH)&rbrace;_3 + 3\mathrm&lbrace;SO&rbrace;_4^&lbrace;2-&rbrace; + 4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+2\mathrm{CrO}_4^{2-} + 3\mathrm{SO}_3^{2-} + 5\mathrm{H}_2\mathrm{O} \to 2\mathrm{Cr(OH)}_3 + 3\mathrm{SO}_4^{2-} + 4\mathrm{H}_2\mathrm{O}
 $$
 
 Simplify:
 
 $$
-2\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 3\mathrm&lbrace;SO&rbrace;_3^&lbrace;2-&rbrace; + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to 2\mathrm&lbrace;Cr(OH)&rbrace;_3 + 3\mathrm&lbrace;SO&rbrace;_4^&lbrace;2-&rbrace;
+2\mathrm{CrO}_4^{2-} + 3\mathrm{SO}_3^{2-} + \mathrm{H}_2\mathrm{O} \to 2\mathrm{Cr(OH)}_3 + 3\mathrm{SO}_4^{2-}
 $$
 
 :::info[IB Exam Tip]
@@ -154,7 +154,7 @@ other electrode potentials are measured. It consists of:
 The half-reaction is:
 
 $$
-2\mathrm&lbrace;H&rbrace;^+(aq, 1\mathrm&lbrace; M&rbrace;) + 2e^- \rightleftharpoons \mathrm&lbrace;H&rbrace;_2(g, 100\mathrm&lbrace; kPa&rbrace;) \quad E^\circ = 0.00\mathrm&lbrace; V&rbrace;
+2\mathrm{H}^+(aq, 1\mathrm{ M}) + 2e^- \rightleftharpoons \mathrm{H}_2(g, 100\mathrm{ kPa}) \quad E^\circ = 0.00\mathrm{ V}
 $$
 
 ### Standard Conditions
@@ -202,7 +202,7 @@ cell potential using a high-resistance voltmeter (so negligible current flows).
 For a redox reaction to be spontaneous under standard conditions:
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; \gt 0
+E^\circ_{\mathrm{cell}} \gt 0
 $$
 
 This means the reduction half-reaction (cathode) must have a more positive $E^\circ$ than the
@@ -258,7 +258,7 @@ for most systems.
 The IUPAC convention for representing galvanic cells:
 
 $$
-\mathrm&lbrace;Anode&rbrace; \mid \mathrm&lbrace;oxidized species&rbrace; \mid \mathrm&lbrace;reduced species&rbrace; \parallel \mathrm&lbrace;oxidized species&rbrace; \mid \mathrm&lbrace;reduced species&rbrace; \mid \mathrm&lbrace;Cathode&rbrace;
+\mathrm{Anode} \mid \mathrm{oxidized species} \mid \mathrm{reduced species} \parallel \mathrm{oxidized species} \mid \mathrm{reduced species} \mid \mathrm{Cathode}
 $$
 
 Conventions:
@@ -274,13 +274,13 @@ Conventions:
 **Example:** $\mathrm{Zn}\mathrm{-Cu}$ Daniell cell:
 
 $$
-\mathrm&lbrace;Zn&rbrace;(s) \mid \mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace;(aq) \parallel \mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace;(aq) \mid \mathrm&lbrace;Cu&rbrace;(s)
+\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Cu}^{2+}(aq) \mid \mathrm{Cu}(s)
 $$
 
 **Example:** $\mathrm{Fe}^{2+}$/$\mathrm{Fe}^{3+}$ with $\mathrm{MnO}_4^-$/ $\mathrm{Mn}^{2+}$:
 
 $$
-\mathrm&lbrace;Pt&rbrace;(s) \mid \mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace;(aq),\mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace;(aq) \parallel \mathrm&lbrace;MnO&rbrace;_4^-(aq),\mathrm&lbrace;H&rbrace;^+(aq),\mathrm&lbrace;Mn&rbrace;^&lbrace;2+&rbrace;(aq) \mid \mathrm&lbrace;Pt&rbrace;(s)
+\mathrm{Pt}(s) \mid \mathrm{Fe}^{2+}(aq),\mathrm{Fe}^{3+}(aq) \parallel \mathrm{MnO}_4^-(aq),\mathrm{H}^+(aq),\mathrm{Mn}^{2+}(aq) \mid \mathrm{Pt}(s)
 $$
 
 ### Calculating EMF (SL)
@@ -288,13 +288,13 @@ $$
 The standard cell potential (electromotive force) is:
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E^\circ_&lbrace;\mathrm&lbrace;cathode&rbrace;&rbrace; - E^\circ_&lbrace;\mathrm&lbrace;anode&rbrace;&rbrace;
+E^\circ_{\mathrm{cell}} = E^\circ_{\mathrm{cathode}} - E^\circ_{\mathrm{anode}}
 $$
 
 Or equivalently:
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E^\circ_&lbrace;\mathrm&lbrace;reduction&rbrace;&rbrace; - E^\circ_&lbrace;\mathrm&lbrace;oxidation&rbrace;&rbrace;
+E^\circ_{\mathrm{cell}} = E^\circ_{\mathrm{reduction}} - E^\circ_{\mathrm{oxidation}}
 $$
 
 **Example:** Calculate $E^\circ_{\mathrm{cell}}$ for
@@ -304,7 +304,7 @@ $\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Cu}^{2+}(aq) \mid \m
 - Anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-$, $E^\circ = -0.76\mathrm{ V}$
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = 0.34 - (-0.76) = +1.10\mathrm&lbrace; V&rbrace;
+E^\circ_{\mathrm{cell}} = 0.34 - (-0.76) = +1.10\mathrm{ V}
 $$
 
 Since $E^\circ_{\mathrm{cell}} \gt 0$, the reaction is spontaneous.
@@ -393,7 +393,7 @@ depends on the **relative ease of discharge** (electrode potential and overpoten
 The reduction of water at the cathode:
 
 $$
-2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) + 2e^- \to \mathrm&lbrace;H&rbrace;_2(g) + 2\mathrm&lbrace;OH&rbrace;^-(aq)
+2\mathrm{H}_2\mathrm{O}(l) + 2e^- \to \mathrm{H}_2(g) + 2\mathrm{OH}^-(aq)
 $$
 
 #### Discharge at the Anode (Oxidation)
@@ -406,7 +406,7 @@ $$
 The oxidation of water at the anode:
 
 $$
-4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to \mathrm&lbrace;O&rbrace;_2(g) + 4\mathrm&lbrace;H&rbrace;^+(aq) + 4e^-
+4\mathrm{H}_2\mathrm{O}(l) \to \mathrm{O}_2(g) + 4\mathrm{H}^+(aq) + 4e^-
 $$
 
 **Note on $\mathrm{Cl}^-$ discharge:** In dilute $\mathrm{NaCl}$ solution, water is oxidized
@@ -536,7 +536,7 @@ each electrode and the purpose of the membrane.
 The standard Gibbs free energy change relates to the cell potential by:
 
 $$
-\Delta G = -nFE_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;
+\Delta G = -nFE_{\mathrm{cell}}
 $$
 
 Under non-standard conditions, the Gibbs free energy is given by:
@@ -548,20 +548,20 @@ $$
 Substituting $\Delta G = -nFE_{\mathrm{cell}}$ and $\Delta G^\circ = -nFE^\circ_{\mathrm{cell}}$:
 
 $$
--nFE_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = -nFE^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; + RT\ln Q
+-nFE_{\mathrm{cell}} = -nFE^\circ_{\mathrm{cell}} + RT\ln Q
 $$
 
 Dividing both sides by $-nF$:
 
 $$
-\boxed&lbrace;E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; - \frac&lbrace;RT&rbrace;&lbrace;nF&rbrace;\ln Q&rbrace;
+\boxed{E_{\mathrm{cell}} = E^\circ_{\mathrm{cell}} - \frac{RT}{nF}\ln Q}
 $$
 
 This is the **Nernst equation**. At $298\mathrm{ K}$, substituting $R = 8.314\mathrm{ J/(mol K)}$,
 $F = 96485\mathrm{ C/mol}$, and converting to $\log_{10}$:
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; - \frac&lbrace;0.0592&rbrace;&lbrace;n&rbrace;\log_&lbrace;10&rbrace; Q
+E_{\mathrm{cell}} = E^\circ_{\mathrm{cell}} - \frac{0.0592}{n}\log_{10} Q
 $$
 
 where:
@@ -579,11 +579,11 @@ where:
 For the general reaction:
 
 $$
-a\mathrm&lbrace;A&rbrace; + b\mathrm&lbrace;B&rbrace; \rightleftharpoons c\mathrm&lbrace;C&rbrace; + d\mathrm&lbrace;D&rbrace;
+a\mathrm{A} + b\mathrm{B} \rightleftharpoons c\mathrm{C} + d\mathrm{D}
 $$
 
 $$
-Q = \frac&lbrace;[\mathrm&lbrace;C&rbrace;]^c[\mathrm&lbrace;D&rbrace;]^d&rbrace;&lbrace;[\mathrm&lbrace;A&rbrace;]^a[\mathrm&lbrace;B&rbrace;]^b&rbrace;
+Q = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}
 $$
 
 Solids and pure liquids are omitted from $Q$.
@@ -598,7 +598,7 @@ decreases $E_{\mathrm{cell}}$.
 $\mathrm{Zn} \mid \mathrm{Zn}^{2+} \parallel \mathrm{Cu}^{2+} \mid \mathrm{Cu}$:
 
 $$
-Q = \frac&lbrace;[\mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace;]&rbrace;&lbrace;[\mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace;]&rbrace;
+Q = \frac{[\mathrm{Zn}^{2+}]}{[\mathrm{Cu}^{2+}]}
 $$
 
 If $[\mathrm{Cu}^{2+}]$ increases, $Q$ decreases, and $E_{\mathrm{cell}}$ increases (the reaction is
@@ -610,11 +610,11 @@ At equilibrium, $\Delta G = 0$, so $E_{\mathrm{cell}} = 0$ and $Q = K$ (the equi
 Substituting into the Nernst equation:
 
 $$
-0 = E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; - \frac&lbrace;RT&rbrace;&lbrace;nF&rbrace;\ln K
+0 = E^\circ_{\mathrm{cell}} - \frac{RT}{nF}\ln K
 $$
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = \frac&lbrace;RT&rbrace;&lbrace;nF&rbrace;\ln K = \frac&lbrace;0.0592&rbrace;&lbrace;n&rbrace;\log_&lbrace;10&rbrace; K \quad \mathrm&lbrace;at &rbrace; 298\mathrm&lbrace; K&rbrace;
+E^\circ_{\mathrm{cell}} = \frac{RT}{nF}\ln K = \frac{0.0592}{n}\log_{10} K \quad \mathrm{at } 298\mathrm{ K}
 $$
 
 **Definition.** At equilibrium, the cell potential is zero. The standard cell potential directly
@@ -634,13 +634,13 @@ considered to go essentially to completion.
 The Nernst equation can be applied to individual half-cells:
 
 $$
-E = E^\circ - \frac&lbrace;0.0592&rbrace;&lbrace;n&rbrace;\log_&lbrace;10&rbrace;\frac&lbrace;[\mathrm&lbrace;reduced form&rbrace;]&rbrace;&lbrace;[\mathrm&lbrace;oxidized form&rbrace;]&rbrace;
+E = E^\circ - \frac{0.0592}{n}\log_{10}\frac{[\mathrm{reduced form}]}{[\mathrm{oxidized form}]}
 $$
 
 **Example:** For $\mathrm{Fe}^{3+} + e^- \rightleftharpoons \mathrm{Fe}^{2+}$:
 
 $$
-E = E^\circ - \frac&lbrace;0.0592&rbrace;&lbrace;1&rbrace;\log_&lbrace;10&rbrace;\frac&lbrace;[\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace;]&rbrace;&lbrace;[\mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace;]&rbrace;
+E = E^\circ - \frac{0.0592}{1}\log_{10}\frac{[\mathrm{Fe}^{2+}]}{[\mathrm{Fe}^{3+}]}
 $$
 
 If $[\mathrm{Fe}^{2+}] \gt [\mathrm{Fe}^{3+}]$, then $E \lt E^\circ$ (less tendency to be reduced).
@@ -662,7 +662,7 @@ the oxidized form is in the denominator. Reversing this will give the wrong answ
 cell potential by:
 
 $$
-\Delta G^\circ = -nFE^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;
+\Delta G^\circ = -nFE^\circ_{\mathrm{cell}}
 $$
 
 where:
@@ -676,14 +676,14 @@ where:
 $E^\circ_{\mathrm{cell}}$ has units of $\mathrm{J/C}$ (since $\mathrm{V} = \mathrm{J/C}$). So:
 
 $$
-\Delta G^\circ = (\mathrm&lbrace;mol&rbrace;)(\mathrm&lbrace;C/mol&rbrace;)(\mathrm&lbrace;J/C&rbrace;) = \mathrm&lbrace;J&rbrace;
+\Delta G^\circ = (\mathrm{mol})(\mathrm{C/mol})(\mathrm{J/C}) = \mathrm{J}
 $$
 
 **Example:** For $\mathrm{Zn} \mid \mathrm{Zn}^{2+} \parallel \mathrm{Cu}^{2+} \mid \mathrm{Cu}$
 where $n = 2$ and $E^\circ_{\mathrm{cell}} = 1.10\mathrm{ V}$:
 
 $$
-\Delta G^\circ = -2 \times 96485 \times 1.10 = -212\,267\mathrm&lbrace; J&rbrace; = -212\mathrm&lbrace; kJ/mol&rbrace;
+\Delta G^\circ = -2 \times 96485 \times 1.10 = -212\,267\mathrm{ J} = -212\mathrm{ kJ/mol}
 $$
 
 The negative value confirms the reaction is spontaneous.
@@ -693,34 +693,34 @@ The negative value confirms the reaction is spontaneous.
 Combining $\Delta G^\circ = -RT\ln K$ with $\Delta G^\circ = -nFE^\circ_{\mathrm{cell}}$:
 
 $$
--nFE^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = -RT\ln K
+-nFE^\circ_{\mathrm{cell}} = -RT\ln K
 $$
 
 $$
-\boxed&lbrace;E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = \frac&lbrace;RT&rbrace;&lbrace;nF&rbrace;\ln K&rbrace;
+\boxed{E^\circ_{\mathrm{cell}} = \frac{RT}{nF}\ln K}
 $$
 
 At $298\mathrm{ K}$:
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = \frac&lbrace;0.0592&rbrace;&lbrace;n&rbrace;\log_&lbrace;10&rbrace; K
+E^\circ_{\mathrm{cell}} = \frac{0.0592}{n}\log_{10} K
 $$
 
 Rearranging:
 
 $$
-\log_&lbrace;10&rbrace; K = \frac&lbrace;nE^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace;&rbrace;&lbrace;0.0592&rbrace;
+\log_{10} K = \frac{nE^\circ_{\mathrm{cell}}}{0.0592}
 $$
 
 **Example:** For the reaction
 $\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)$:
 
 $$
-\log_&lbrace;10&rbrace; K = \frac&lbrace;2 \times 1.10&rbrace;&lbrace;0.0592&rbrace; = 37.2
+\log_{10} K = \frac{2 \times 1.10}{0.0592} = 37.2
 $$
 
 $$
-K = 10^&lbrace;37.2&rbrace; = 1.6 \times 10^&lbrace;37&rbrace;
+K = 10^{37.2} = 1.6 \times 10^{37}
 $$
 
 This extremely large $K$ confirms the reaction goes essentially to completion.
@@ -752,13 +752,13 @@ $2\mathrm{Ag}^+ + \mathrm{Cu} \to 2\mathrm{Ag} + \mathrm{Cu}^{2+}$, then $n = 2$
 electrolysis is directly proportional to the quantity of electricity passed.
 
 $$
-m = \frac&lbrace;Q \cdot M&rbrace;&lbrace;n \cdot F&rbrace;
+m = \frac{Q \cdot M}{n \cdot F}
 $$
 
 or equivalently:
 
 $$
-m = \frac&lbrace;It \cdot M&rbrace;&lbrace;n \cdot F&rbrace;
+m = \frac{It \cdot M}{n \cdot F}
 $$
 
 where:
@@ -778,7 +778,7 @@ electrolytes, the masses of substances deposited are proportional to their equiv
 ### Key Constants
 
 $$
-F = 96485\mathrm&lbrace; C/mol&rbrace; \approx 96500\mathrm&lbrace; C/mol&rbrace;
+F = 96485\mathrm{ C/mol} \approx 96500\mathrm{ C/mol}
 $$
 
 One mole of electrons carries a charge of one Faraday.
@@ -789,63 +789,63 @@ One mole of electrons carries a charge of one Faraday.
 through $\mathrm{CuSO}_4$(aq) for $45.0$ minutes.
 
 $$
-Q = It = 2.50 \times 45.0 \times 60 = 6750\mathrm&lbrace; C&rbrace;
+Q = It = 2.50 \times 45.0 \times 60 = 6750\mathrm{ C}
 $$
 
 $$
-n_e = \frac&lbrace;Q&rbrace;&lbrace;F&rbrace; = \frac&lbrace;6750&rbrace;&lbrace;96500&rbrace; = 0.06995\mathrm&lbrace; mol of &rbrace; e^-
+n_e = \frac{Q}{F} = \frac{6750}{96500} = 0.06995\mathrm{ mol of } e^-
 $$
 
 For $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$, $n = 2$:
 
 $$
-n(\mathrm&lbrace;Cu&rbrace;) = \frac&lbrace;n_e&rbrace;&lbrace;2&rbrace; = \frac&lbrace;0.06995&rbrace;&lbrace;2&rbrace; = 0.03498\mathrm&lbrace; mol&rbrace;
+n(\mathrm{Cu}) = \frac{n_e}{2} = \frac{0.06995}{2} = 0.03498\mathrm{ mol}
 $$
 
 $$
-m(\mathrm&lbrace;Cu&rbrace;) = 0.03498 \times 63.55 = 2.22\mathrm&lbrace; g&rbrace;
+m(\mathrm{Cu}) = 0.03498 \times 63.55 = 2.22\mathrm{ g}
 $$
 
 **Example 2:** What current is needed to deposit $5.00\mathrm{ g}$ of aluminum from
 $\mathrm{Al}_2\mathrm{O}_3$ in $2.00$ hours?
 
 $$
-n(\mathrm&lbrace;Al&rbrace;) = \frac&lbrace;5.00&rbrace;&lbrace;26.98&rbrace; = 0.1853\mathrm&lbrace; mol&rbrace;
+n(\mathrm{Al}) = \frac{5.00}{26.98} = 0.1853\mathrm{ mol}
 $$
 
 For $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$, $n = 3$:
 
 $$
-n_e = 3 \times 0.1853 = 0.5559\mathrm&lbrace; mol of &rbrace; e^-
+n_e = 3 \times 0.1853 = 0.5559\mathrm{ mol of } e^-
 $$
 
 $$
-Q = n_e \times F = 0.5559 \times 96500 = 53\,644\mathrm&lbrace; C&rbrace;
+Q = n_e \times F = 0.5559 \times 96500 = 53\,644\mathrm{ C}
 $$
 
 $$
-I = \frac&lbrace;Q&rbrace;&lbrace;t&rbrace; = \frac&lbrace;53\,644&rbrace;&lbrace;2.00 \times 3600&rbrace; = 7.45\mathrm&lbrace; A&rbrace;
+I = \frac{Q}{t} = \frac{53\,644}{2.00 \times 3600} = 7.45\mathrm{ A}
 $$
 
 **Example 3:** What volume of $\mathrm{Cl}_2$ gas (at STP) is produced when a current of
 $5.00\mathrm{ A}$ is passed through concentrated $\mathrm{NaCl}$ solution for $30.0$ minutes?
 
 $$
-Q = It = 5.00 \times 30.0 \times 60 = 9000\mathrm&lbrace; C&rbrace;
+Q = It = 5.00 \times 30.0 \times 60 = 9000\mathrm{ C}
 $$
 
 $$
-n_e = \frac&lbrace;9000&rbrace;&lbrace;96500&rbrace; = 0.09326\mathrm&lbrace; mol of &rbrace; e^-
+n_e = \frac{9000}{96500} = 0.09326\mathrm{ mol of } e^-
 $$
 
 For $2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$, $n = 2$:
 
 $$
-n(\mathrm&lbrace;Cl&rbrace;_2) = \frac&lbrace;0.09326&rbrace;&lbrace;2&rbrace; = 0.04663\mathrm&lbrace; mol&rbrace;
+n(\mathrm{Cl}_2) = \frac{0.09326}{2} = 0.04663\mathrm{ mol}
 $$
 
 $$
-V(\mathrm&lbrace;Cl&rbrace;_2) = nRT/P = 0.04663 \times 22.7\mathrm&lbrace; dm&rbrace;^3 = 1.06\mathrm&lbrace; dm&rbrace;^3 \mathrm&lbrace; at STP&rbrace;
+V(\mathrm{Cl}_2) = nRT/P = 0.04663 \times 22.7\mathrm{ dm}^3 = 1.06\mathrm{ dm}^3 \mathrm{ at STP}
 $$
 
 :::info[IB Exam Tip]
@@ -863,7 +863,7 @@ In practice, not all the current is used for the desired reaction. **Current eff
 as:
 
 $$
-\mathrm&lbrace;Current efficiency&rbrace; = \frac&lbrace;\mathrm&lbrace;actual mass deposited&rbrace;&rbrace;&lbrace;\mathrm&lbrace;theoretical mass deposited&rbrace;&rbrace; \times 100\%
+\mathrm{Current efficiency} = \frac{\mathrm{actual mass deposited}}{\mathrm{theoretical mass deposited}} \times 100\%
 $$
 
 Side reactions (e.g., water electrolysis) and impurities reduce current efficiency.
@@ -914,17 +914,17 @@ The PEM allows only $\mathrm{H}^+$ ions to pass. Both electrodes contain a plati
 The theoretical maximum efficiency of a fuel cell is:
 
 $$
-\mathrm&lbrace;Efficiency&rbrace; = \frac&lbrace;\Delta G^\circ&rbrace;&lbrace;\Delta H^\circ&rbrace; \times 100\%
+\mathrm{Efficiency} = \frac{\Delta G^\circ}{\Delta H^\circ} \times 100\%
 $$
 
 For the hydrogen fuel cell:
 
 $$
-\Delta G^\circ = -237\mathrm&lbrace; kJ/mol&rbrace;, \quad \Delta H^\circ = -286\mathrm&lbrace; kJ/mol&rbrace;
+\Delta G^\circ = -237\mathrm{ kJ/mol}, \quad \Delta H^\circ = -286\mathrm{ kJ/mol}
 $$
 
 $$
-\mathrm&lbrace;Maximum efficiency&rbrace; = \frac&lbrace;237&rbrace;&lbrace;286&rbrace; \times 100\% = 83\%
+\mathrm{Maximum efficiency} = \frac{237}{286} \times 100\% = 83\%
 $$
 
 Actual operating efficiencies are lower due to activation overpotential, ohmic losses, and mass
@@ -969,19 +969,19 @@ Rusting is an electrochemical process involving two half-reactions:
 **Anode region** (oxidation of iron):
 
 $$
-\mathrm&lbrace;Fe&rbrace;(s) \to \mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace;(aq) + 2e^-
+\mathrm{Fe}(s) \to \mathrm{Fe}^{2+}(aq) + 2e^-
 $$
 
 **Cathode region** (reduction of oxygen):
 
 $$
-\mathrm&lbrace;O&rbrace;_2(g) + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) + 4e^- \to 4\mathrm&lbrace;OH&rbrace;^-(aq)
+\mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^- \to 4\mathrm{OH}^-(aq)
 $$
 
 The $\mathrm{Fe}^{2+}$ ions then react with $\mathrm{OH}^-$ and oxygen to form rust:
 
 $$
-4\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace;(aq) + \mathrm&lbrace;O&rbrace;_2(g) + 4\mathrm&lbrace;OH&rbrace;^-(aq) + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to 4\mathrm&lbrace;Fe(OH)&rbrace;_3(s)
+4\mathrm{Fe}^{2+}(aq) + \mathrm{O}_2(g) + 4\mathrm{OH}^-(aq) + 2\mathrm{H}_2\mathrm{O}(l) \to 4\mathrm{Fe(OH)}_3(s)
 $$
 
 $\mathrm{Fe(OH)}_3$ dehydrates to form $\mathrm{Fe}_2\mathrm{O}_3 \cdot n\mathrm{H}_2\mathrm{O}$
@@ -1018,7 +1018,7 @@ serves two purposes:
    oxidized, protecting the iron.
 
 $$
-\mathrm&lbrace;Zn&rbrace;(s) \to \mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace;(aq) + 2e^- \quad (\mathrm&lbrace;zinc oxidized, iron protected&rbrace;)
+\mathrm{Zn}(s) \to \mathrm{Zn}^{2+}(aq) + 2e^- \quad (\mathrm{zinc oxidized, iron protected})
 $$
 
 #### 3. Sacrificial Anodes (Cathodic Protection)
@@ -1075,11 +1075,11 @@ Since $E^\circ_{\mathrm{cell}} = 0$ (same half-reaction), the potential comes fr
 equation:
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; - \frac&lbrace;0.0592&rbrace;&lbrace;n&rbrace;\log_&lbrace;10&rbrace;\frac&lbrace;[\mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace;]_&lbrace;\mathrm&lbrace;anode&rbrace;&rbrace;&rbrace;&lbrace;[\mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace;]_&lbrace;\mathrm&lbrace;cathode&rbrace;&rbrace;&rbrace;
+E_{\mathrm{cell}} = E^\circ_{\mathrm{cell}} - \frac{0.0592}{n}\log_{10}\frac{[\mathrm{Cu}^{2+}]_{\mathrm{anode}}}{[\mathrm{Cu}^{2+}]_{\mathrm{cathode}}}
 $$
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = 0 - \frac&lbrace;0.0592&rbrace;&lbrace;2&rbrace;\log_&lbrace;10&rbrace;\frac&lbrace;0.10&rbrace;&lbrace;1.0&rbrace; = -\frac&lbrace;0.0592&rbrace;&lbrace;2&rbrace; \times (-1) = +0.0296\mathrm&lbrace; V&rbrace;
+E_{\mathrm{cell}} = 0 - \frac{0.0592}{2}\log_{10}\frac{0.10}{1.0} = -\frac{0.0592}{2} \times (-1) = +0.0296\mathrm{ V}
 $$
 
 The half-cell with the lower concentration undergoes oxidation (anode), and the half-cell with the
@@ -1103,7 +1103,7 @@ sulfuric acid ($\mathrm{H}_2\mathrm{SO}_4$) as the electrolyte.
 **Charging (reverse reaction):**
 
 $$
-2\mathrm&lbrace;PbSO&rbrace;_4(s) + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to \mathrm&lbrace;Pb&rbrace;(s) + \mathrm&lbrace;PbO&rbrace;_2(s) + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;SO&rbrace;_4(aq)
+2\mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l) \to \mathrm{Pb}(s) + \mathrm{PbO}_2(s) + 2\mathrm{H}_2\mathrm{SO}_4(aq)
 $$
 
 The state of charge can be determined by measuring the density of the electrolyte. As the battery
@@ -1235,7 +1235,7 @@ $V(\mathrm{O}_2) = 0.00233 \times 24.0 = 0.0560\mathrm{ dm}^3$
 A galvanic cell is constructed as follows:
 
 $$
-\mathrm&lbrace;Ni&rbrace;(s) \mid \mathrm&lbrace;Ni&rbrace;^&lbrace;2+&rbrace;(0.010\mathrm&lbrace; M&rbrace;) \parallel \mathrm&lbrace;Ag&rbrace;^+(1.0\mathrm&lbrace; M&rbrace;) \mid \mathrm&lbrace;Ag&rbrace;(s)
+\mathrm{Ni}(s) \mid \mathrm{Ni}^{2+}(0.010\mathrm{ M}) \parallel \mathrm{Ag}^+(1.0\mathrm{ M}) \mid \mathrm{Ag}(s)
 $$
 
 Given: $E^\circ(\mathrm{Ni}^{2+}/\mathrm{Ni}) = -0.25\mathrm{ V}$,
@@ -1256,11 +1256,11 @@ marks)
 $\mathrm{Ni}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Ni}^{2+}(aq) + 2\mathrm{Ag}(s)$, $n = 2$
 
 $$
-Q = \frac&lbrace;[\mathrm&lbrace;Ni&rbrace;^&lbrace;2+&rbrace;]&rbrace;&lbrace;[\mathrm&lbrace;Ag&rbrace;^+]^2&rbrace; = \frac&lbrace;0.010&rbrace;&lbrace;(1.0)^2&rbrace; = 0.010
+Q = \frac{[\mathrm{Ni}^{2+}]}{[\mathrm{Ag}^+]^2} = \frac{0.010}{(1.0)^2} = 0.010
 $$
 
 $$
-E_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = 1.05 - \frac&lbrace;0.0592&rbrace;&lbrace;2&rbrace;\log_&lbrace;10&rbrace;(0.010) = 1.05 - \frac&lbrace;0.0592&rbrace;&lbrace;2&rbrace; \times (-2) = 1.05 + 0.0592 = 1.109\mathrm&lbrace; V&rbrace;
+E_{\mathrm{cell}} = 1.05 - \frac{0.0592}{2}\log_{10}(0.010) = 1.05 - \frac{0.0592}{2} \times (-2) = 1.05 + 0.0592 = 1.109\mathrm{ V}
 $$
 
 **(c)**
@@ -1273,7 +1273,7 @@ $\Delta G^\circ = -nFE^\circ_{\mathrm{cell}} = -2 \times 96500 \times 1.05 = -20
 **Balance the following redox equation in acidic solution:**
 
 $$
-\mathrm&lbrace;Cr&rbrace;_2\mathrm&lbrace;O&rbrace;_7^&lbrace;2-&rbrace; + \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;I&rbrace;^- \to \mathrm&lbrace;Cr&rbrace;^&lbrace;3+&rbrace; + \mathrm&lbrace;I&rbrace;_2 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{Cr}_2\mathrm{O}_7^{2-} + \mathrm{H}^+ + \mathrm{I}^- \to \mathrm{Cr}^{3+} + \mathrm{I}_2 + \mathrm{H}_2\mathrm{O}
 $$
 
 #### Markscheme
@@ -1281,25 +1281,25 @@ $$
 Reduction half-reaction:
 
 $$
-\mathrm&lbrace;Cr&rbrace;_2\mathrm&lbrace;O&rbrace;_7^&lbrace;2-&rbrace; + 14\mathrm&lbrace;H&rbrace;^+ + 6e^- \to 2\mathrm&lbrace;Cr&rbrace;^&lbrace;3+&rbrace; + 7\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{Cr}_2\mathrm{O}_7^{2-} + 14\mathrm{H}^+ + 6e^- \to 2\mathrm{Cr}^{3+} + 7\mathrm{H}_2\mathrm{O}
 $$
 
 Oxidation half-reaction:
 
 $$
-2\mathrm&lbrace;I&rbrace;^- \to \mathrm&lbrace;I&rbrace;_2 + 2e^-
+2\mathrm{I}^- \to \mathrm{I}_2 + 2e^-
 $$
 
 Multiply oxidation by 3:
 
 $$
-6\mathrm&lbrace;I&rbrace;^- \to 3\mathrm&lbrace;I&rbrace;_2 + 6e^-
+6\mathrm{I}^- \to 3\mathrm{I}_2 + 6e^-
 $$
 
 Add both half-reactions:
 
 $$
-\mathrm&lbrace;Cr&rbrace;_2\mathrm&lbrace;O&rbrace;_7^&lbrace;2-&rbrace; + 14\mathrm&lbrace;H&rbrace;^+ + 6\mathrm&lbrace;I&rbrace;^- \to 2\mathrm&lbrace;Cr&rbrace;^&lbrace;3+&rbrace; + 3\mathrm&lbrace;I&rbrace;_2 + 7\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{Cr}_2\mathrm{O}_7^{2-} + 14\mathrm{H}^+ + 6\mathrm{I}^- \to 2\mathrm{Cr}^{3+} + 3\mathrm{I}_2 + 7\mathrm{H}_2\mathrm{O}
 $$
 
 ---
@@ -1309,7 +1309,7 @@ $$
 A hydrogen-oxygen fuel cell operates at $298\mathrm{ K}$. The overall reaction is:
 
 $$
-\mathrm&lbrace;H&rbrace;_2(g) + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\mathrm&lbrace;O&rbrace;_2(g) \to \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l)
+\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)
 $$
 
 $\Delta H^\circ = -286\mathrm{ kJ/mol}$, $\Delta G^\circ = -237\mathrm{ kJ/mol}$

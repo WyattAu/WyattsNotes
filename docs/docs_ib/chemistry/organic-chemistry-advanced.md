@@ -17,13 +17,13 @@ concentration of the substrate.
 intermediate.
 
 $$
-\mathrm&lbrace;(CH_3)_3C\mathrm&lbrace;-&rbrace;Br&rbrace; \to \mathrm&lbrace;(CH_3)_3C^+&rbrace; + \mathrm&lbrace;Br&rbrace;^-
+\mathrm{(CH_3)_3C\mathrm{-}Br} \to \mathrm{(CH_3)_3C^+} + \mathrm{Br}^-
 $$
 
 **Step 2** (fast): Nucleophilic attack on the planar carbocation.
 
 $$
-\mathrm&lbrace;(CH_3)_3C^+&rbrace; + \mathrm&lbrace;OH&rbrace;^- \to \mathrm&lbrace;(CH_3)_3COH&rbrace;
+\mathrm{(CH_3)_3C^+} + \mathrm{OH}^- \to \mathrm{(CH_3)_3COH}
 $$
 
 **Rate law**: $\mathrm{rate} = k[\mathrm{substrate}]$ (first order)
@@ -46,7 +46,7 @@ $$
 side as the leaving group departs.
 
 $$
-\mathrm&lbrace;OH&rbrace;^- + \mathrm&lbrace;CH_3\mathrm&lbrace;-&rbrace;Br&rbrace; \to \mathrm&lbrace;TS&rbrace; \to \mathrm&lbrace;CH_3OH&rbrace; + \mathrm&lbrace;Br&rbrace;^-
+\mathrm{OH}^- + \mathrm{CH_3\mathrm{-}Br} \to \mathrm{TS} \to \mathrm{CH_3OH} + \mathrm{Br}^-
 $$
 
 **Rate law**: $\mathrm{rate} = k[\mathrm{substrate}][\mathrm{nucleophile}]$ (second order)
@@ -72,7 +72,7 @@ Two-step mechanism via a carbocation intermediate (same intermediate as SN1):
 **Step 2**: Base removes a proton from an adjacent carbon, forming a double bond.
 
 $$
-\mathrm&lbrace;rate&rbrace; = k[\mathrm&lbrace;substrate&rbrace;]
+\mathrm{rate} = k[\mathrm{substrate}]
 $$
 
 ### E2 Mechanism (Bimolecular Elimination)
@@ -81,7 +81,7 @@ Concerted mechanism: the base removes a proton while the leaving group departs, 
 bond in a single step.
 
 $$
-\mathrm&lbrace;rate&rbrace; = k[\mathrm&lbrace;substrate&rbrace;][\mathrm&lbrace;base&rbrace;]
+\mathrm{rate} = k[\mathrm{substrate}][\mathrm{base}]
 $$
 
 ### Comparing SN1, SN2, E1, E2
@@ -100,11 +100,11 @@ $$
 When multiple alkenes can form, the **more substituted** (more stable) alkene is the major product:
 
 $$
-\mathrm&lbrace;CH_3CH_2CH(CH_3)CH_2Br&rbrace; \xrightarrow&lbrace;\mathrm&lbrace;E2&rbrace;&rbrace; \mathrm&lbrace;CH_3CH_2C(CH_3)=CH_2&rbrace; \mathrm&lbrace; (minor, Hofmann)&rbrace;
+\mathrm{CH_3CH_2CH(CH_3)CH_2Br} \xrightarrow{\mathrm{E2}} \mathrm{CH_3CH_2C(CH_3)=CH_2} \mathrm{ (minor, Hofmann)}
 $$
 
 $$
-\mathrm&lbrace;CH_3CH_2CH(CH_3)CH_2Br&rbrace; \xrightarrow&lbrace;\mathrm&lbrace;E2&rbrace;&rbrace; \mathrm&lbrace;CH_3CH=C(CH_3)CH_3&rbrace; \mathrm&lbrace; (major, Zaitsev)&rbrace;
+\mathrm{CH_3CH_2CH(CH_3)CH_2Br} \xrightarrow{\mathrm{E2}} \mathrm{CH_3CH=C(CH_3)CH_3} \mathrm{ (major, Zaitsev)}
 $$
 
 ### Common Pitfalls
@@ -191,13 +191,13 @@ monomers link together in a chain.
 **Initiation**: A peroxide or other radical initiator generates free radicals.
 
 $$
-\mathrm&lbrace;ROOR&rbrace; \to 2\mathrm&lbrace;RO&rbrace;^&lbrace;\bullet&rbrace;
+\mathrm{ROOR} \to 2\mathrm{RO}^{\bullet}
 $$
 
 **Propagation**: The radical adds to a monomer, and the new radical adds to another monomer.
 
 $$
-\mathrm&lbrace;RO&rbrace;^&lbrace;\bullet&rbrace; + \mathrm&lbrace;CH_2=CHR&rbrace; \to \mathrm&lbrace;ROCH_2CHR&rbrace;^&lbrace;\bullet&rbrace; \to \mathrm&lbrace;ROCH_2CHRCH_2CHR&rbrace;^&lbrace;\bullet&rbrace; \to \cdots
+\mathrm{RO}^{\bullet} + \mathrm{CH_2=CHR} \to \mathrm{ROCH_2CHR}^{\bullet} \to \mathrm{ROCH_2CHRCH_2CHR}^{\bullet} \to \cdots
 $$
 
 **Termination**: Two radicals combine, ending chain growth.
@@ -238,7 +238,7 @@ $\mathrm{H}_2\mathrm{O}$ or $\mathrm{HCl}$). Two types:
 Formed from a diol and a dicarboxylic acid:
 
 $$
-\mathrm&lbrace;diol&rbrace; + \mathrm&lbrace;dicarboxylic acid&rbrace; \to \mathrm&lbrace;polyester&rbrace; + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{diol} + \mathrm{dicarboxylic acid} \to \mathrm{polyester} + \mathrm{H}_2\mathrm{O}
 $$
 
 :::info[Example — PET (polyethylene terephthalate)]
@@ -246,7 +246,7 @@ $$
 Monomers: ethane-1,2-diol and benzene-1,4-dicarboxylic acid.
 
 $$
-n\mathrm&lbrace;HOCH_2CH_2OH&rbrace; + n\mathrm&lbrace;HOOC\mathrm&lbrace;-&rbrace;C_6H_4\mathrm&lbrace;-&rbrace;COOH&rbrace; \to \mathrm&lbrace;PET&rbrace; + 2n\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+n\mathrm{HOCH_2CH_2OH} + n\mathrm{HOOC\mathrm{-}C_6H_4\mathrm{-}COOH} \to \mathrm{PET} + 2n\mathrm{H}_2\mathrm{O}
 $$
 
 Uses: fibres (clothing), bottles, food containers.
@@ -258,7 +258,7 @@ Uses: fibres (clothing), bottles, food containers.
 Formed from a diamine and a dicarboxylic acid:
 
 $$
-\mathrm&lbrace;diamine&rbrace; + \mathrm&lbrace;dicarboxylic acid&rbrace; \to \mathrm&lbrace;polyamide&rbrace; + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{diamine} + \mathrm{dicarboxylic acid} \to \mathrm{polyamide} + \mathrm{H}_2\mathrm{O}
 $$
 
 :::info[Example — Nylon-6,6]
@@ -266,7 +266,7 @@ $$
 Monomers: hexane-1,6-diamine and hexanedioic acid.
 
 $$
-n\mathrm&lbrace;H_2N(CH_2)_6NH_2&rbrace; + n\mathrm&lbrace;HOOC(CH_2)_4COOH&rbrace; \to \mathrm&lbrace;Nylon-6,6&rbrace; + 2n\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+n\mathrm{H_2N(CH_2)_6NH_2} + n\mathrm{HOOC(CH_2)_4COOH} \to \mathrm{Nylon-6,6} + 2n\mathrm{H}_2\mathrm{O}
 $$
 
 Uses: textiles, ropes, parachutes, engineering plastics.
@@ -278,7 +278,7 @@ Uses: textiles, ropes, parachutes, engineering plastics.
 An aromatic polyamide (aramid) with exceptional strength:
 
 $$
-\mathrm&lbrace;benzene-1,4-diamine&rbrace; + \mathrm&lbrace;benzene-1,4-dicarboxylic acid&rbrace; \to \mathrm&lbrace;Kevlar&rbrace;
+\mathrm{benzene-1,4-diamine} + \mathrm{benzene-1,4-dicarboxylic acid} \to \mathrm{Kevlar}
 $$
 
 The rigid aromatic rings and strong hydrogen bonding between chains give Kevlar its high tensile
@@ -303,7 +303,7 @@ strength. Used in body armour, tyres, and aerospace.
 1. **Calculate the degree of unsaturation** (double bond equivalents, DBE):
 
 $$
-\mathrm&lbrace;DBE&rbrace; = C + 1 - \frac&lbrace;H&rbrace;&lbrace;2&rbrace; + \frac&lbrace;N&rbrace;&lbrace;2&rbrace;
+\mathrm{DBE} = C + 1 - \frac{H}{2} + \frac{N}{2}
 $$
 
 (For each halogen, add 1 to H. For each oxygen, ignore.)
@@ -416,7 +416,7 @@ the equation for its formation.
 **Solution:**
 
 $$
-n\mathrm&lbrace;HOCH_2CH_2CH_2OH&rbrace; + n\mathrm&lbrace;HOOCCH_2CH_2COOH&rbrace; \to \left[-\mathrm&lbrace;OCH_2CH_2CH_2OOCCH_2CH_2CO&rbrace;-\right]_n + 2n\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+n\mathrm{HOCH_2CH_2CH_2OH} + n\mathrm{HOOCCH_2CH_2COOH} \to \left[-\mathrm{OCH_2CH_2CH_2OOCCH_2CH_2CO}-\right]_n + 2n\mathrm{H}_2\mathrm{O}
 $$
 
 Repeating unit: $-\mathrm{OCH_2CH_2CH_2OOCCH_2CH_2CO}-$

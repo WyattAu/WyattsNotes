@@ -41,7 +41,7 @@ A wave is a disturbance that transfers energy through a medium or space without 
 ### Relationships
 
 $$
-f = \frac&lbrace;1&rbrace;&lbrace;T&rbrace;
+f = \frac{1}{T}
 $$
 
 $$
@@ -53,7 +53,7 @@ $$
 A sound wave has frequency $440\mathrm{ Hz}$ and travels at $343\mathrm{ m/s}$. Find its wavelength.
 
 $$
-\lambda = \frac&lbrace;v&rbrace;&lbrace;f&rbrace; = \frac&lbrace;343&rbrace;&lbrace;440&rbrace; = 0.780\mathrm&lbrace; m&rbrace;
+\lambda = \frac{v}{f} = \frac{343}{440} = 0.780\mathrm{ m}
 $$
 
 :::
@@ -79,7 +79,7 @@ where:
 ### Key Relations
 
 $$
-v = \frac&lbrace;\omega&rbrace;&lbrace;k&rbrace; = f\lambda
+v = \frac{\omega}{k} = f\lambda
 $$
 
 ### Intensity
@@ -87,13 +87,13 @@ $$
 The intensity of a wave is the power per unit area:
 
 $$
-I = \frac&lbrace;P&rbrace;&lbrace;A&rbrace;
+I = \frac{P}{A}
 $$
 
 For a point source radiating equally in all directions:
 
 $$
-I = \frac&lbrace;P&rbrace;&lbrace;4\pi r^2&rbrace;
+I = \frac{P}{4\pi r^2}
 $$
 
 Intensity is proportional to amplitude squared:
@@ -123,7 +123,7 @@ pressure) and rarefactions (low pressure).
 The speed of sound in air depends on temperature:
 
 $$
-v \approx 331 + 0.6T_C \mathrm&lbrace; m/s&rbrace;
+v \approx 331 + 0.6T_C \mathrm{ m/s}
 $$
 
 ### Inverse Square Law
@@ -131,7 +131,7 @@ $$
 For a point source of sound:
 
 $$
-I \propto \frac&lbrace;1&rbrace;&lbrace;r^2&rbrace;
+I \propto \frac{1}{r^2}
 $$
 
 Doubling the distance from a source reduces the intensity to one quarter.
@@ -141,7 +141,7 @@ Doubling the distance from a source reduces the intensity to one quarter.
 Measured in decibels (dB):
 
 $$
-\beta = 10\log_&lbrace;10&rbrace;\!\left(\frac&lbrace;I&rbrace;&lbrace;I_0&rbrace;\right)
+\beta = 10\log_{10}\!\left(\frac{I}{I_0}\right)
 $$
 
 where $I_0 = 10^{-12}\mathrm{ W/m}^2$ is the threshold of hearing.
@@ -193,7 +193,7 @@ When two or more waves overlap, the resultant displacement at any point is the a
 individual displacements:
 
 $$
-y_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = y_1 + y_2 + y_3 + \cdots
+y_{\mathrm{total}} = y_1 + y_2 + y_3 + \cdots
 $$
 
 ### Constructive Interference
@@ -201,7 +201,7 @@ $$
 Waves arrive **in phase** (path difference $= n\lambda$, where $n$ is an integer):
 
 $$
-\mathrm&lbrace;Path difference&rbrace; = n\lambda
+\mathrm{Path difference} = n\lambda
 $$
 
 The resultant amplitude is $A_1 + A_2$ (maximum).
@@ -211,7 +211,7 @@ The resultant amplitude is $A_1 + A_2$ (maximum).
 Waves arrive **out of phase** (path difference $= (n + \frac{1}{2})\lambda$):
 
 $$
-\mathrm&lbrace;Path difference&rbrace; = \left(n + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)\lambda
+\mathrm{Path difference} = \left(n + \frac{1}{2}\right)\lambda
 $$
 
 The resultant amplitude is $|A_1 - A_2|$ (minimum).
@@ -224,23 +224,23 @@ of bright and dark fringes (for light) or loud and quiet regions (for sound).
 For double-slit interference with slit separation $d$ and distance to screen $D$:
 
 $$
-d\sin\theta = n\lambda \quad (\mathrm&lbrace;bright fringes&rbrace;)
+d\sin\theta = n\lambda \quad (\mathrm{bright fringes})
 $$
 
 $$
-d\sin\theta = \left(n + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)\lambda \quad (\mathrm&lbrace;dark fringes&rbrace;)
+d\sin\theta = \left(n + \frac{1}{2}\right)\lambda \quad (\mathrm{dark fringes})
 $$
 
 For small angles ($\sin\theta \approx \tan\theta \approx \dfrac{x}{D}$):
 
 $$
-x_n = \frac&lbrace;n\lambda D&rbrace;&lbrace;d&rbrace;
+x_n = \frac{n\lambda D}{d}
 $$
 
 Fringe spacing:
 
 $$
-\Delta x = \frac&lbrace;\lambda D&rbrace;&lbrace;d&rbrace;
+\Delta x = \frac{\lambda D}{d}
 $$
 
 :::info[Example]
@@ -249,7 +249,7 @@ Light of wavelength $600\mathrm{ nm}$ passes through a double slit with separati
 $0.2\mathrm{ mm}$. The screen is $1.5\mathrm{ m}$ away. Find the fringe spacing.
 
 $$
-\Delta x = \frac&lbrace;\lambda D&rbrace;&lbrace;d&rbrace; = \frac&lbrace;600 \times 10^&lbrace;-9&rbrace; \times 1.5&rbrace;&lbrace;0.2 \times 10^&lbrace;-3&rbrace;&rbrace; = \frac&lbrace;9 \times 10^&lbrace;-7&rbrace;&rbrace;&lbrace;2 \times 10^&lbrace;-4&rbrace;&rbrace; = 4.5 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; m&rbrace; = 4.5\mathrm&lbrace; mm&rbrace;
+\Delta x = \frac{\lambda D}{d} = \frac{600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{9 \times 10^{-7}}{2 \times 10^{-4}} = 4.5 \times 10^{-3}\mathrm{ m} = 4.5\mathrm{ mm}
 $$
 
 :::
@@ -284,7 +284,7 @@ For a string of length $L$ fixed at both ends:
 The wave speed on a string under tension $T$ with mass per unit length $\mu$:
 
 $$
-v = \sqrt&lbrace;\frac&lbrace;T&rbrace;&lbrace;\mu&rbrace;&rbrace;
+v = \sqrt{\frac{T}{\mu}}
 $$
 
 ### Standing Waves in Pipes
@@ -292,7 +292,7 @@ $$
 **Open pipe** (open at both ends):
 
 $$
-f_n = \frac&lbrace;nv&rbrace;&lbrace;2L&rbrace;, \quad n = 1, 2, 3, \ldots
+f_n = \frac{nv}{2L}, \quad n = 1, 2, 3, \ldots
 $$
 
 Both ends are antinodes.
@@ -300,7 +300,7 @@ Both ends are antinodes.
 **Closed pipe** (closed at one end):
 
 $$
-f_n = \frac&lbrace;nv&rbrace;&lbrace;4L&rbrace;, \quad n = 1, 3, 5, \ldots \mathrm&lbrace; (odd harmonics only)&rbrace;
+f_n = \frac{nv}{4L}, \quad n = 1, 3, 5, \ldots \mathrm{ (odd harmonics only)}
 $$
 
 The closed end is a node, the open end is an antinode.
@@ -311,7 +311,7 @@ A string of length $0.75\mathrm{ m}$ has a fundamental frequency of $220\mathrm{
 speed of waves on the string.
 
 $$
-f_1 = \frac&lbrace;v&rbrace;&lbrace;2L&rbrace; \implies v = 2Lf_1 = 2(0.75)(220) = 330\mathrm&lbrace; m/s&rbrace;
+f_1 = \frac{v}{2L} \implies v = 2Lf_1 = 2(0.75)(220) = 330\mathrm{ m/s}
 $$
 
 :::
@@ -322,7 +322,7 @@ An open pipe has a fundamental frequency of $440\mathrm{ Hz}$. Find the frequenc
 harmonic.
 
 $$
-f_3 = 3f_1 = 3(440) = 1320\mathrm&lbrace; Hz&rbrace;
+f_3 = 3f_1 = 3(440) = 1320\mathrm{ Hz}
 $$
 
 :::
@@ -339,7 +339,7 @@ between the source and the observer.
 ### Moving Source, Stationary Observer
 
 $$
-f' = \frac&lbrace;f&rbrace;&lbrace;1 \pm \frac&lbrace;v_s&rbrace;&lbrace;v_w&rbrace;&rbrace;
+f' = \frac{f}{1 \pm \frac{v_s}{v_w}}
 $$
 
 where $v_s$ is the speed of the source and $v_w$ is the wave speed.
@@ -350,7 +350,7 @@ where $v_s$ is the speed of the source and $v_w$ is the wave speed.
 ### Moving Observer, Stationary Source
 
 $$
-f' = f\!\left(1 \pm \frac&lbrace;v_o&rbrace;&lbrace;v_w&rbrace;\right)
+f' = f\!\left(1 \pm \frac{v_o}{v_w}\right)
 $$
 
 - Observer approaching: $f' = f(1 + v_o/v_w)$ (frequency increases)
@@ -359,7 +359,7 @@ $$
 ### General Doppler Formula
 
 $$
-f' = f\!\left(\frac&lbrace;v_w \pm v_o&rbrace;&lbrace;v_w \mp v_s&rbrace;\right)
+f' = f\!\left(\frac{v_w \pm v_o}{v_w \mp v_s}\right)
 $$
 
 Upper signs when approaching, lower signs when receding.
@@ -369,13 +369,13 @@ Upper signs when approaching, lower signs when receding.
 For light:
 
 $$
-f' = f\sqrt&lbrace;\frac&lbrace;1 + \beta&rbrace;&lbrace;1 - \beta&rbrace;&rbrace;
+f' = f\sqrt{\frac{1 + \beta}{1 - \beta}}
 $$
 
 where $\beta = \dfrac{v}{c}$. For $v \ll c$:
 
 $$
-\frac&lbrace;\Delta f&rbrace;&lbrace;f&rbrace; \approx \frac&lbrace;v&rbrace;&lbrace;c&rbrace;
+\frac{\Delta f}{f} \approx \frac{v}{c}
 $$
 
 - **Redshift**: source receding, observed wavelength increases
@@ -396,7 +396,7 @@ A fire engine with siren at $700\mathrm{ Hz}$ approaches at $30\mathrm{ m/s}$. W
 stationary observer hear? ($v_{\mathrm{sound}} = 343\mathrm{ m/s}$)
 
 $$
-f' = \frac&lbrace;f&rbrace;&lbrace;1 - v_s/v_w&rbrace; = \frac&lbrace;700&rbrace;&lbrace;1 - 30/343&rbrace; = \frac&lbrace;700&rbrace;&lbrace;0.9125&rbrace; = 767\mathrm&lbrace; Hz&rbrace;
+f' = \frac{f}{1 - v_s/v_w} = \frac{700}{1 - 30/343} = \frac{700}{0.9125} = 767\mathrm{ Hz}
 $$
 
 :::
@@ -434,7 +434,7 @@ Two sources are just resolvable when the central maximum of one diffraction patt
 the first minimum of the other:
 
 $$
-\theta_&lbrace;\min&rbrace; = 1.22\frac&lbrace;\lambda&rbrace;&lbrace;D&rbrace;
+\theta_{\min} = 1.22\frac{\lambda}{D}
 $$
 
 where $D$ is the diameter of the circular aperture.
@@ -455,7 +455,7 @@ A telescope with a mirror of diameter $0.1\mathrm{ m}$ observes light of wavelen
 $550\mathrm{ nm}$. Find the minimum angular separation it can resolve.
 
 $$
-\theta_&lbrace;\min&rbrace; = 1.22 \times \frac&lbrace;550 \times 10^&lbrace;-9&rbrace;&rbrace;&lbrace;0.1&rbrace; = 6.71 \times 10^&lbrace;-6&rbrace;\mathrm&lbrace; rad&rbrace;
+\theta_{\min} = 1.22 \times \frac{550 \times 10^{-9}}{0.1} = 6.71 \times 10^{-6}\mathrm{ rad}
 $$
 
 This is approximately $1.38$ arcseconds.
@@ -493,7 +493,7 @@ $$
 When light hits a surface at Brewster's angle, the reflected light is completely polarised:
 
 $$
-\tan\theta_B = \frac&lbrace;n_2&rbrace;&lbrace;n_1&rbrace;
+\tan\theta_B = \frac{n_2}{n_1}
 $$
 
 ---
@@ -507,7 +507,7 @@ $0.5\mathrm{ mm}$. The screen is $2\mathrm{ m}$ away. Find the distance from the
 the third bright fringe.
 
 $$
-x_3 = \frac&lbrace;3\lambda D&rbrace;&lbrace;d&rbrace; = \frac&lbrace;3 \times 590 \times 10^&lbrace;-9&rbrace; \times 2&rbrace;&lbrace;0.5 \times 10^&lbrace;-3&rbrace;&rbrace; = \frac&lbrace;3.54 \times 10^&lbrace;-6&rbrace;&rbrace;&lbrace;5 \times 10^&lbrace;-4&rbrace;&rbrace; = 7.08 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; m&rbrace; = 7.08\mathrm&lbrace; mm&rbrace;
+x_3 = \frac{3\lambda D}{d} = \frac{3 \times 590 \times 10^{-9} \times 2}{0.5 \times 10^{-3}} = \frac{3.54 \times 10^{-6}}{5 \times 10^{-4}} = 7.08 \times 10^{-3}\mathrm{ m} = 7.08\mathrm{ mm}
 $$
 
 ### Question 2 (Paper 2 style)
@@ -517,21 +517,21 @@ A string of length $0.8\mathrm{ m}$ and mass $4\mathrm{ g}$ is under tension $50
 **(a)** Find the speed of waves on the string.
 
 $$
-\mu = \frac&lbrace;0.004&rbrace;&lbrace;0.8&rbrace; = 0.005\mathrm&lbrace; kg/m&rbrace;
+\mu = \frac{0.004}{0.8} = 0.005\mathrm{ kg/m}
 $$
 
 $$
-v = \sqrt&lbrace;\frac&lbrace;T&rbrace;&lbrace;\mu&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;50&rbrace;&lbrace;0.005&rbrace;&rbrace; = \sqrt&lbrace;10000&rbrace; = 100\mathrm&lbrace; m/s&rbrace;
+v = \sqrt{\frac{T}{\mu}} = \sqrt{\frac{50}{0.005}} = \sqrt{10000} = 100\mathrm{ m/s}
 $$
 
 **(b)** Find the fundamental frequency and the first three harmonic frequencies.
 
 $$
-f_1 = \frac&lbrace;v&rbrace;&lbrace;2L&rbrace; = \frac&lbrace;100&rbrace;&lbrace;1.6&rbrace; = 62.5\mathrm&lbrace; Hz&rbrace;
+f_1 = \frac{v}{2L} = \frac{100}{1.6} = 62.5\mathrm{ Hz}
 $$
 
 $$
-f_2 = 125\mathrm&lbrace; Hz&rbrace;, \quad f_3 = 187.5\mathrm&lbrace; Hz&rbrace;
+f_2 = 125\mathrm{ Hz}, \quad f_3 = 187.5\mathrm{ Hz}
 $$
 
 **(c)** Draw the standing wave pattern for the second harmonic.
@@ -545,7 +545,7 @@ An ambulance with siren at $800\mathrm{ Hz}$ moves away from a stationary observ
 $20\mathrm{ m/s}$. What frequency does the observer hear? ($v_{\mathrm{sound}} = 340\mathrm{ m/s}$)
 
 $$
-f' = \frac&lbrace;f&rbrace;&lbrace;1 + v_s/v_w&rbrace; = \frac&lbrace;800&rbrace;&lbrace;1 + 20/340&rbrace; = \frac&lbrace;800&rbrace;&lbrace;1.0588&rbrace; = 756\mathrm&lbrace; Hz&rbrace;
+f' = \frac{f}{1 + v_s/v_w} = \frac{800}{1 + 20/340} = \frac{800}{1.0588} = 756\mathrm{ Hz}
 $$
 
 ### Question 4 (Paper 2 style)
@@ -556,13 +556,13 @@ filter is at $60\degree$ to the first.
 **(a)** Find the intensity after the first filter.
 
 $$
-I_1 = \frac&lbrace;I_0&rbrace;&lbrace;2&rbrace;
+I_1 = \frac{I_0}{2}
 $$
 
 **(b)** Find the intensity after the second filter.
 
 $$
-I_2 = I_1\cos^2 60\degree = \frac&lbrace;I_0&rbrace;&lbrace;2&rbrace; \times \frac&lbrace;1&rbrace;&lbrace;4&rbrace; = \frac&lbrace;I_0&rbrace;&lbrace;8&rbrace;
+I_2 = I_1\cos^2 60\degree = \frac{I_0}{2} \times \frac{1}{4} = \frac{I_0}{8}
 $$
 
 ### Question 5 (Paper 2 style)
@@ -573,19 +573,19 @@ $25\mathrm{ m/s}$, then passes and moves away at the same speed.
 **(a)** Find the frequency heard by the observer as the car approaches.
 
 $$
-f' = \frac&lbrace;400&rbrace;&lbrace;1 - 25/343&rbrace; = \frac&lbrace;400&rbrace;&lbrace;0.927&rbrace; = 431\mathrm&lbrace; Hz&rbrace;
+f' = \frac{400}{1 - 25/343} = \frac{400}{0.927} = 431\mathrm{ Hz}
 $$
 
 **(b)** Find the frequency heard as the car moves away.
 
 $$
-f' = \frac&lbrace;400&rbrace;&lbrace;1 + 25/343&rbrace; = \frac&lbrace;400&rbrace;&lbrace;1.073&rbrace; = 373\mathrm&lbrace; Hz&rbrace;
+f' = \frac{400}{1 + 25/343} = \frac{400}{1.073} = 373\mathrm{ Hz}
 $$
 
 **(c)** Calculate the change in frequency.
 
 $$
-\Delta f = 431 - 373 = 58\mathrm&lbrace; Hz&rbrace;
+\Delta f = 431 - 373 = 58\mathrm{ Hz}
 $$
 
 ---
@@ -630,7 +630,7 @@ If the amplitude doubles, the intensity quadruples.
 ### Intensity at a Distance from a Point Source
 
 $$
-I = \frac&lbrace;P&rbrace;&lbrace;4\pi r^2&rbrace;
+I = \frac{P}{4\pi r^2}
 $$
 
 This means:
@@ -645,7 +645,7 @@ At $10\mathrm{ m}$ from a source, the intensity is $0.5\mathrm{ W/m}^2$. Find th
 $25\mathrm{ m}$.
 
 $$
-I_2 = I_1 \times \frac&lbrace;r_1^2&rbrace;&lbrace;r_2^2&rbrace; = 0.5 \times \frac&lbrace;100&rbrace;&lbrace;625&rbrace; = 0.08\mathrm&lbrace; W/m&rbrace;^2
+I_2 = I_1 \times \frac{r_1^2}{r_2^2} = 0.5 \times \frac{100}{625} = 0.08\mathrm{ W/m}^2
 $$
 
 :::
@@ -659,7 +659,7 @@ $$
 Phase difference $\Delta\phi$ between two waves at a point:
 
 $$
-\Delta\phi = \frac&lbrace;2\pi \Delta x&rbrace;&lbrace;\lambda&rbrace;
+\Delta\phi = \frac{2\pi \Delta x}{\lambda}
 $$
 
 where $\Delta x$ is the path difference.
@@ -694,7 +694,7 @@ $$
 The maximum number of orders visible:
 
 $$
-n_&lbrace;\max&rbrace; = \frac&lbrace;d&rbrace;&lbrace;\lambda&rbrace;
+n_{\max} = \frac{d}{\lambda}
 $$
 
 (rounded down to the nearest integer).
@@ -711,15 +711,15 @@ A diffraction grating has $500\mathrm{ lines/mm}$. Light of wavelength $600\math
 normally. Find the angles of the first and second-order maxima.
 
 $$
-d = \frac&lbrace;1&rbrace;&lbrace;500000&rbrace; = 2 \times 10^&lbrace;-6&rbrace;\mathrm&lbrace; m&rbrace;
+d = \frac{1}{500000} = 2 \times 10^{-6}\mathrm{ m}
 $$
 
 $$
-\sin\theta_1 = \frac&lbrace;\lambda&rbrace;&lbrace;d&rbrace; = \frac&lbrace;600 \times 10^&lbrace;-9&rbrace;&rbrace;&lbrace;2 \times 10^&lbrace;-6&rbrace;&rbrace; = 0.3 \implies \theta_1 = 17.5\degree
+\sin\theta_1 = \frac{\lambda}{d} = \frac{600 \times 10^{-9}}{2 \times 10^{-6}} = 0.3 \implies \theta_1 = 17.5\degree
 $$
 
 $$
-\sin\theta_2 = \frac&lbrace;2\lambda&rbrace;&lbrace;d&rbrace; = 0.6 \implies \theta_2 = 36.9\degree
+\sin\theta_2 = \frac{2\lambda}{d} = 0.6 \implies \theta_2 = 36.9\degree
 $$
 
 Maximum order: $n_{\max} = \dfrac{2 \times 10^{-6}}{600 \times 10^{-9}} = 3.33$, so 3 orders are
@@ -739,7 +739,7 @@ $240\mathrm{ m/s}$.
 **(a)** Calculate the fundamental frequency.
 
 $$
-f_1 = \frac&lbrace;v&rbrace;&lbrace;2L&rbrace; = \frac&lbrace;240&rbrace;&lbrace;1.2&rbrace; = 200\mathrm&lbrace; Hz&rbrace;
+f_1 = \frac{v}{2L} = \frac{240}{1.2} = 200\mathrm{ Hz}
 $$
 
 **(b)** Draw the standing wave pattern for the third harmonic and state its frequency.
@@ -747,17 +747,17 @@ $$
 The third harmonic has 3 half-wavelengths fitting on the string, with 4 nodes and 3 antinodes.
 
 $$
-f_3 = 3f_1 = 600\mathrm&lbrace; Hz&rbrace;
+f_3 = 3f_1 = 600\mathrm{ Hz}
 $$
 
 **(c)** The tension in the string is doubled. Find the new fundamental frequency.
 
 $$
-v = \sqrt&lbrace;\frac&lbrace;T&rbrace;&lbrace;\mu&rbrace;&rbrace; \implies v' = \sqrt&lbrace;2&rbrace;v
+v = \sqrt{\frac{T}{\mu}} \implies v' = \sqrt{2}v
 $$
 
 $$
-f_1' = \sqrt&lbrace;2&rbrace; \times 200 = 283\mathrm&lbrace; Hz&rbrace;
+f_1' = \sqrt{2} \times 200 = 283\mathrm{ Hz}
 $$
 
 ### Question 7 (Paper 2 style)
@@ -768,7 +768,7 @@ The speed of sound is $343\mathrm{ m/s}$.
 **(a)** Calculate the wavelength.
 
 $$
-\lambda = \frac&lbrace;v&rbrace;&lbrace;f&rbrace; = \frac&lbrace;343&rbrace;&lbrace;686&rbrace; = 0.5\mathrm&lbrace; m&rbrace;
+\lambda = \frac{v}{f} = \frac{343}{686} = 0.5\mathrm{ m}
 $$
 
 **(b)** A listener walks along a line parallel to the speakers, $4\mathrm{ m}$ away. Find the

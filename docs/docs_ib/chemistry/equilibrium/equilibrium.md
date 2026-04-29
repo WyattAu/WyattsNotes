@@ -14,7 +14,7 @@ Many reactions are reversible: reactants form products, and products can re-form
 represented with a double arrow:
 
 $$
-\mathrm&lbrace;A&rbrace; + \mathrm&lbrace;B&rbrace; \rightleftharpoons \mathrm&lbrace;C&rbrace; + \mathrm&lbrace;D&rbrace;
+\mathrm{A} + \mathrm{B} \rightleftharpoons \mathrm{C} + \mathrm{D}
 $$
 
 ### Closed Systems
@@ -49,7 +49,7 @@ At equilibrium:
 For the reaction $a\mathrm{A} + b\mathrm{B} \rightleftharpoons c\mathrm{C} + d\mathrm{D}$:
 
 $$
-K_c = \frac&lbrace;[\mathrm&lbrace;C&rbrace;]^c[\mathrm&lbrace;D&rbrace;]^d&rbrace;&lbrace;[\mathrm&lbrace;A&rbrace;]^a[\mathrm&lbrace;B&rbrace;]^b&rbrace;
+K_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}
 $$
 
 - Only gases and aqueous species are included.
@@ -62,7 +62,7 @@ $$
 For gaseous reactions:
 
 $$
-K_p = \frac&lbrace;(p_C)^c(p_D)^d&rbrace;&lbrace;(p_A)^a(p_B)^b&rbrace;
+K_p = \frac{(p_C)^c(p_D)^d}{(p_A)^a(p_B)^b}
 $$
 
 where $p_X$ is the partial pressure of gas $X$ at equilibrium.
@@ -70,7 +70,7 @@ where $p_X$ is the partial pressure of gas $X$ at equilibrium.
 ### Relationship Between $K_c$ and $K_p$
 
 $$
-K_p = K_c(RT)^&lbrace;\Delta n&rbrace;
+K_p = K_c(RT)^{\Delta n}
 $$
 
 where $\Delta n = (\mathrm{moles of gaseous products}) - (\mathrm{moles of gaseous reactants})$.
@@ -80,7 +80,7 @@ where $\Delta n = (\mathrm{moles of gaseous products}) - (\mathrm{moles of gaseo
 For N$_2$(g) + 3H$_2$(g) $\rightleftharpoons$ 2NH$_3$(g), $\Delta n = 2 - 4 = -2$.
 
 $$
-K_p = K_c(RT)^&lbrace;-2&rbrace; = \frac&lbrace;K_c&rbrace;&lbrace;(RT)^2&rbrace;
+K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2}
 $$
 
 :::
@@ -91,7 +91,7 @@ The reaction quotient has the same form as $K_c$ but uses **current** (non-equil
 concentrations:
 
 $$
-Q_c = \frac&lbrace;[\mathrm&lbrace;C&rbrace;]^c[\mathrm&lbrace;D&rbrace;]^d&rbrace;&lbrace;[\mathrm&lbrace;A&rbrace;]^a[\mathrm&lbrace;B&rbrace;]^b&rbrace;
+Q_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}
 $$
 
 | Comparison | Meaning                                       |
@@ -173,11 +173,11 @@ flask:
 | Equilibrium | $1.0-x$ | $1.0-x$ | $2x$  |
 
 $$
-K_c = \frac&lbrace;(2x)^2&rbrace;&lbrace;(1.0-x)(1.0-x)&rbrace; = \frac&lbrace;4x^2&rbrace;&lbrace;(1.0-x)^2&rbrace; = 50.5
+K_c = \frac{(2x)^2}{(1.0-x)(1.0-x)} = \frac{4x^2}{(1.0-x)^2} = 50.5
 $$
 
 $$
-\frac&lbrace;2x&rbrace;&lbrace;1.0-x&rbrace; = \sqrt&lbrace;50.5&rbrace; = 7.11
+\frac{2x}{1.0-x} = \sqrt{50.5} = 7.11
 $$
 
 $$
@@ -206,7 +206,7 @@ $1.562\mathrm{ mol/L}$.
 ### The Haber Process
 
 $$
-\mathrm&lbrace;N&rbrace;_2(\mathrm&lbrace;g&rbrace;) + 3\mathrm&lbrace;H&rbrace;_2(\mathrm&lbrace;g&rbrace;) \rightleftharpoons 2\mathrm&lbrace;NH&rbrace;_3(\mathrm&lbrace;g&rbrace;) \quad \Delta H = -92\mathrm&lbrace; kJ/mol&rbrace;
+\mathrm{N}_2(\mathrm{g}) + 3\mathrm{H}_2(\mathrm{g}) \rightleftharpoons 2\mathrm{NH}_3(\mathrm{g}) \quad \Delta H = -92\mathrm{ kJ/mol}
 $$
 
 | Condition   | Le Chatelier Prediction                     | Industrial Choice                                                  |
@@ -218,7 +218,7 @@ $$
 ### The Contact Process
 
 $$
-2\mathrm&lbrace;SO&rbrace;_2(\mathrm&lbrace;g&rbrace;) + \mathrm&lbrace;O&rbrace;_2(\mathrm&lbrace;g&rbrace;) \rightleftharpoons 2\mathrm&lbrace;SO&rbrace;_3(\mathrm&lbrace;g&rbrace;) \quad \Delta H = -197\mathrm&lbrace; kJ/mol&rbrace;
+2\mathrm{SO}_2(\mathrm{g}) + \mathrm{O}_2(\mathrm{g}) \rightleftharpoons 2\mathrm{SO}_3(\mathrm{g}) \quad \Delta H = -197\mathrm{ kJ/mol}
 $$
 
 | Condition   | Le Chatelier Prediction   | Industrial Choice                             |
@@ -234,7 +234,7 @@ $$
 ### The pH Scale
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log[\mathrm&lbrace;H&rbrace;^+]
+\mathrm{pH} = -\log[\mathrm{H}^+]
 $$
 
 | pH      | Description                        |
@@ -258,11 +258,11 @@ $$
 For a weak acid HA:
 
 $$
-\mathrm&lbrace;HA&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;A&rbrace;^-
+\mathrm{HA} \rightleftharpoons \mathrm{H}^+ + \mathrm{A}^-
 $$
 
 $$
-K_a = \frac&lbrace;[\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;A&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;HA&rbrace;]&rbrace;
+K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 ### Base Dissociation Constant ($K_b$)
@@ -270,31 +270,31 @@ $$
 For a weak base B:
 
 $$
-\mathrm&lbrace;B&rbrace; + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;BH&rbrace;^+ + \mathrm&lbrace;OH&rbrace;^-
+\mathrm{B} + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{BH}^+ + \mathrm{OH}^-
 $$
 
 $$
-K_b = \frac&lbrace;[\mathrm&lbrace;BH&rbrace;^+][\mathrm&lbrace;OH&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;B&rbrace;]&rbrace;
+K_b = \frac{[\mathrm{BH}^+][\mathrm{OH}^-]}{[\mathrm{B}]}
 $$
 
 ### Ionic Product of Water ($K_w$)
 
 $$
-\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;OH&rbrace;^-
+\mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{H}^+ + \mathrm{OH}^-
 $$
 
 $$
-K_w = [\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;OH&rbrace;^-] = 1.0 \times 10^&lbrace;-14&rbrace;\mathrm&lbrace; (at &rbrace;25\degree\mathrm&lbrace;C)&rbrace;
+K_w = [\mathrm{H}^+][\mathrm{OH}^-] = 1.0 \times 10^{-14}\mathrm{ (at }25\degree\mathrm{C)}
 $$
 
 ### p$K_a$ and p$K_b$
 
 $$
-\mathrm&lbrace;p&rbrace;K_a = -\log K_a
+\mathrm{p}K_a = -\log K_a
 $$
 
 $$
-\mathrm&lbrace;p&rbrace;K_b = -\log K_b
+\mathrm{p}K_b = -\log K_b
 $$
 
 ### Relationship Between $K_a$ and $K_b$
@@ -302,11 +302,11 @@ $$
 For a conjugate acid-base pair:
 
 $$
-K_a \times K_b = K_w = 1.0 \times 10^&lbrace;-14&rbrace;
+K_a \times K_b = K_w = 1.0 \times 10^{-14}
 $$
 
 $$
-\mathrm&lbrace;p&rbrace;K_a + \mathrm&lbrace;p&rbrace;K_b = 14
+\mathrm{p}K_a + \mathrm{p}K_b = 14
 $$
 
 ### pH of Weak Acids
@@ -314,11 +314,11 @@ $$
 For a weak acid HA of concentration $c$:
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] = \sqrt&lbrace;K_a \times c&rbrace;
+[\mathrm{H}^+] = \sqrt{K_a \times c}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(\mathrm&lbrace;p&rbrace;K_a - \log c)
+\mathrm{pH} = \frac{1}{2}(\mathrm{p}K_a - \log c)
 $$
 
 (approximation valid when $K_a$ is small: $[\mathrm{HA}]_{\mathrm{eq}} \approx c$)
@@ -328,11 +328,11 @@ $$
 Calculate the pH of $0.10\mathrm{ M}$ ethanoic acid ($K_a = 1.8 \times 10^{-5}$).
 
 $$
-[\mathrm&lbrace;H&rbrace;^+] = \sqrt&lbrace;1.8 \times 10^&lbrace;-5&rbrace; \times 0.10&rbrace; = \sqrt&lbrace;1.8 \times 10^&lbrace;-6&rbrace;&rbrace; = 1.34 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; mol/L&rbrace;
+[\mathrm{H}^+] = \sqrt{1.8 \times 10^{-5} \times 0.10} = \sqrt{1.8 \times 10^{-6}} = 1.34 \times 10^{-3}\mathrm{ mol/L}
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = -\log(1.34 \times 10^&lbrace;-3&rbrace;) = 2.87
+\mathrm{pH} = -\log(1.34 \times 10^{-3}) = 2.87
 $$
 
 :::
@@ -352,7 +352,7 @@ consists of:
 ### Henderson-Hasselbalch Equation
 
 $$
-\mathrm&lbrace;pH&rbrace; = \mathrm&lbrace;p&rbrace;K_a + \log\frac&lbrace;[\mathrm&lbrace;A&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;HA&rbrace;]&rbrace;
+\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 ### Buffer Capacity
@@ -360,7 +360,7 @@ $$
 The buffer is most effective when:
 
 $$
-[\mathrm&lbrace;HA&rbrace;] = [\mathrm&lbrace;A&rbrace;^-] \implies \mathrm&lbrace;pH&rbrace; = \mathrm&lbrace;p&rbrace;K_a
+[\mathrm{HA}] = [\mathrm{A}^-] \implies \mathrm{pH} = \mathrm{p}K_a
 $$
 
 A buffer works best within $\pm 1$ pH unit of its $\mathrm{p}K_a$.
@@ -378,7 +378,7 @@ A buffer contains $0.20\mathrm{ M}$ CH$_3$COOH ($\mathrm{p}K_a = 4.76$) and $0.3
 CH$_3$COONa. Calculate the pH.
 
 $$
-\mathrm&lbrace;pH&rbrace; = 4.76 + \log\!\left(\frac&lbrace;0.30&rbrace;&lbrace;0.20&rbrace;\right) = 4.76 + \log(1.5) = 4.76 + 0.18 = 4.94
+\mathrm{pH} = 4.76 + \log\!\left(\frac{0.30}{0.20}\right) = 4.76 + \log(1.5) = 4.76 + 0.18 = 4.94
 $$
 
 :::
@@ -390,19 +390,19 @@ $$
 ### Strong Acid + Strong Base
 
 $$
-\mathrm&lbrace;pH&rbrace; = 7 \mathrm&lbrace; at equivalence point&rbrace;
+\mathrm{pH} = 7 \mathrm{ at equivalence point}
 $$
 
 ### Weak Acid + Strong Base
 
 $$
-\mathrm&lbrace;pH&rbrace; \gt 7 \mathrm&lbrace; at equivalence point&rbrace;
+\mathrm{pH} \gt 7 \mathrm{ at equivalence point}
 $$
 
 ### Strong Acid + Weak Base
 
 $$
-\mathrm&lbrace;pH&rbrace; \lt 7 \mathrm&lbrace; at equivalence point&rbrace;
+\mathrm{pH} \lt 7 \mathrm{ at equivalence point}
 $$
 
 ### Indicators
@@ -425,11 +425,11 @@ forms.
 For a sparingly soluble salt $\mathrm{M}_a\mathrm{X}_b$:
 
 $$
-\mathrm&lbrace;M&rbrace;_a\mathrm&lbrace;X&rbrace;_b(s) \rightleftharpoons a\mathrm&lbrace;M&rbrace;^&lbrace;b+&rbrace;(aq) + b\mathrm&lbrace;X&rbrace;^&lbrace;a-&rbrace;(aq)
+\mathrm{M}_a\mathrm{X}_b(s) \rightleftharpoons a\mathrm{M}^{b+}(aq) + b\mathrm{X}^{a-}(aq)
 $$
 
 $$
-K_&lbrace;sp&rbrace; = [\mathrm&lbrace;M&rbrace;^&lbrace;b+&rbrace;]^a[\mathrm&lbrace;X&rbrace;^&lbrace;a-&rbrace;]^b
+K_{sp} = [\mathrm{M}^{b+}]^a[\mathrm{X}^{a-}]^b
 $$
 
 ### Common $K_{sp}$ Values
@@ -464,17 +464,17 @@ The $K_{sp}$ of AgCl is $1.8 \times 10^{-10}$. Calculate the solubility of AgCl 
 **(a)** Pure water:
 
 $$
-s^2 = 1.8 \times 10^&lbrace;-10&rbrace; \implies s = 1.34 \times 10^&lbrace;-5&rbrace;\mathrm&lbrace; mol/L&rbrace;
+s^2 = 1.8 \times 10^{-10} \implies s = 1.34 \times 10^{-5}\mathrm{ mol/L}
 $$
 
 **(b)** $0.10\mathrm{ M}$ NaCl:
 
 $$
-[\mathrm&lbrace;Ag&rbrace;^+][\mathrm&lbrace;Cl&rbrace;^-] = s \times 0.10 = 1.8 \times 10^&lbrace;-10&rbrace;
+[\mathrm{Ag}^+][\mathrm{Cl}^-] = s \times 0.10 = 1.8 \times 10^{-10}
 $$
 
 $$
-s = \frac&lbrace;1.8 \times 10^&lbrace;-10&rbrace;&rbrace;&lbrace;0.10&rbrace; = 1.8 \times 10^&lbrace;-9&rbrace;\mathrm&lbrace; mol/L&rbrace;
+s = \frac{1.8 \times 10^{-10}}{0.10} = 1.8 \times 10^{-9}\mathrm{ mol/L}
 $$
 
 The solubility is much lower due to the common ion effect.
@@ -511,13 +511,13 @@ equilibrium, $0.40\mathrm{ mol}$ of Cl$_2$ is present.
 | Equilibrium | 0.30    | 0.20    | 0.20    |
 
 $$
-K_c = \frac&lbrace;[\mathrm&lbrace;PCl&rbrace;_3][\mathrm&lbrace;Cl&rbrace;_2]&rbrace;&lbrace;[\mathrm&lbrace;PCl&rbrace;_5]&rbrace; = \frac&lbrace;(0.20)(0.20)&rbrace;&lbrace;0.30&rbrace; = \frac&lbrace;0.04&rbrace;&lbrace;0.30&rbrace; = 0.133
+K_c = \frac{[\mathrm{PCl}_3][\mathrm{Cl}_2]}{[\mathrm{PCl}_5]} = \frac{(0.20)(0.20)}{0.30} = \frac{0.04}{0.30} = 0.133
 $$
 
 **(b)** Calculate the percentage dissociation of PCl$_5$.
 
 $$
-\%\mathrm&lbrace; dissociation&rbrace; = \frac&lbrace;0.20&rbrace;&lbrace;0.50&rbrace; \times 100\% = 40\%
+\%\mathrm{ dissociation} = \frac{0.20}{0.50} \times 100\% = 40\%
 $$
 
 ### Question 3 (Paper 2 style)
@@ -525,15 +525,15 @@ $$
 Calculate the pH of $0.050\mathrm{ M}$ NH$_3$ ($K_b = 1.8 \times 10^{-5}$).
 
 $$
-[\mathrm&lbrace;OH&rbrace;^-] = \sqrt&lbrace;K_b \times c&rbrace; = \sqrt&lbrace;1.8 \times 10^&lbrace;-5&rbrace; \times 0.050&rbrace; = \sqrt&lbrace;9.0 \times 10^&lbrace;-7&rbrace;&rbrace; = 9.49 \times 10^&lbrace;-4&rbrace;
+[\mathrm{OH}^-] = \sqrt{K_b \times c} = \sqrt{1.8 \times 10^{-5} \times 0.050} = \sqrt{9.0 \times 10^{-7}} = 9.49 \times 10^{-4}
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = -\log(9.49 \times 10^&lbrace;-4&rbrace;) = 3.02
+\mathrm{pOH} = -\log(9.49 \times 10^{-4}) = 3.02
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 14 - 3.02 = 10.98
+\mathrm{pH} = 14 - 3.02 = 10.98
 $$
 
 ### Question 4 (Paper 1 style)
@@ -578,7 +578,7 @@ stoichiometry carefully.
 The effect of temperature on the equilibrium constant:
 
 $$
-\ln\!\left(\frac&lbrace;K_2&rbrace;&lbrace;K_1&rbrace;\right) = -\frac&lbrace;\Delta H^\circ&rbrace;&lbrace;R&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;T_2&rbrace; - \frac&lbrace;1&rbrace;&lbrace;T_1&rbrace;\right)
+\ln\!\left(\frac{K_2}{K_1}\right) = -\frac{\Delta H^\circ}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)
 $$
 
 This is analogous to the Arrhenius equation.
@@ -590,7 +590,7 @@ $\Delta H^\circ = +57\mathrm{ kJ/mol}$ and $K = 0.115$ at $298\mathrm{ K}$. Find
 $350\mathrm{ K}$.
 
 $$
-\ln\!\left(\frac&lbrace;K_2&rbrace;&lbrace;0.115&rbrace;\right) = -\frac&lbrace;57000&rbrace;&lbrace;8.314&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;350&rbrace; - \frac&lbrace;1&rbrace;&lbrace;298&rbrace;\right)
+\ln\!\left(\frac{K_2}{0.115}\right) = -\frac{57000}{8.314}\left(\frac{1}{350} - \frac{1}{298}\right)
 $$
 
 $$
@@ -598,7 +598,7 @@ $$
 $$
 
 $$
-\frac&lbrace;K_2&rbrace;&lbrace;0.115&rbrace; = e^&lbrace;3.428&rbrace; = 30.8
+\frac{K_2}{0.115} = e^{3.428} = 30.8
 $$
 
 $$
@@ -627,7 +627,7 @@ If $0.100\mathrm{ mol}$ of Cl$_2$ is added, find the new equilibrium concentrati
 After adding Cl$_2$: [PCl$_5$] $= 0.200$, [PCl$_3$] $= 0.0650$, [Cl$_2$] $= 0.165$.
 
 $$
-Q_c = \frac&lbrace;(0.0650)(0.165)&rbrace;&lbrace;0.200&rbrace; = 0.0536 \gt K_c = 0.0211
+Q_c = \frac{(0.0650)(0.165)}{0.200} = 0.0536 \gt K_c = 0.0211
 $$
 
 The reaction shifts left. Let $x$ be the moles of Cl$_2$ that react:
@@ -639,7 +639,7 @@ The reaction shifts left. Let $x$ be the moles of Cl$_2$ that react:
 | Equilibrium | $0.200+x$ | $0.0650-x$ | $0.165-x$ |
 
 $$
-\frac&lbrace;(0.0650-x)(0.165-x)&rbrace;&lbrace;0.200+x&rbrace; = 0.0211
+\frac{(0.0650-x)(0.165-x)}{0.200+x} = 0.0211
 $$
 
 $$
@@ -655,7 +655,7 @@ x^2 - 0.2511x + 0.00651 = 0
 $$
 
 $$
-x = \frac&lbrace;0.2511 \pm \sqrt&lbrace;0.06305 - 0.02604&rbrace;&rbrace;&lbrace;2&rbrace; = \frac&lbrace;0.2511 \pm 0.1923&rbrace;&lbrace;2&rbrace;
+x = \frac{0.2511 \pm \sqrt{0.06305 - 0.02604}}{2} = \frac{0.2511 \pm 0.1923}{2}
 $$
 
 $x = 0.2217$ or $x = 0.0294$.
@@ -674,11 +674,11 @@ Polyprotic acids can donate more than one proton.
 **Carbonic acid** (H$_2$CO$_3$):
 
 $$
-\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;CO&rbrace;_3 \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;HCO&rbrace;_3^- \quad K_&lbrace;a1&rbrace; = 4.3 \times 10^&lbrace;-7&rbrace;
+\mathrm{H}_2\mathrm{CO}_3 \rightleftharpoons \mathrm{H}^+ + \mathrm{HCO}_3^- \quad K_{a1} = 4.3 \times 10^{-7}
 $$
 
 $$
-\mathrm&lbrace;HCO&rbrace;_3^- \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;CO&rbrace;_3^&lbrace;2-&rbrace; \quad K_&lbrace;a2&rbrace; = 4.8 \times 10^&lbrace;-11&rbrace;
+\mathrm{HCO}_3^- \rightleftharpoons \mathrm{H}^+ + \mathrm{CO}_3^{2-} \quad K_{a2} = 4.8 \times 10^{-11}
 $$
 
 Note: $K_{a1} \gg K_{a2}$, so the first dissociation dominates.
@@ -696,15 +696,15 @@ Calculate the pH of $0.10\mathrm{ M}$ sodium ethanoate (CH$_3$COONa). $K_a$(CH$_
 $= 1.8 \times 10^{-5}$.
 
 $$
-K_b = \frac&lbrace;K_w&rbrace;&lbrace;K_a&rbrace; = \frac&lbrace;1.0 \times 10^&lbrace;-14&rbrace;&rbrace;&lbrace;1.8 \times 10^&lbrace;-5&rbrace;&rbrace; = 5.56 \times 10^&lbrace;-10&rbrace;
+K_b = \frac{K_w}{K_a} = \frac{1.0 \times 10^{-14}}{1.8 \times 10^{-5}} = 5.56 \times 10^{-10}
 $$
 
 $$
-[\mathrm&lbrace;OH&rbrace;^-] = \sqrt&lbrace;K_b \times c&rbrace; = \sqrt&lbrace;5.56 \times 10^&lbrace;-10&rbrace; \times 0.10&rbrace; = 7.46 \times 10^&lbrace;-6&rbrace;
+[\mathrm{OH}^-] = \sqrt{K_b \times c} = \sqrt{5.56 \times 10^{-10} \times 0.10} = 7.46 \times 10^{-6}
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = 5.13, \quad \mathrm&lbrace;pH&rbrace; = 14 - 5.13 = 8.87
+\mathrm{pOH} = 5.13, \quad \mathrm{pH} = 14 - 5.13 = 8.87
 $$
 
 The solution is basic, as expected for the salt of a weak acid and strong base.
@@ -745,15 +745,15 @@ What is the pH of a $0.010\mathrm{ M}$ solution of Ba(OH)$_2$?
 Ba(OH)$_2$ is a strong base that dissociates completely: Ba(OH)$_2$ $\to$ Ba$^{2+}$ + 2OH$^-$.
 
 $$
-[\mathrm&lbrace;OH&rbrace;^-] = 2 \times 0.010 = 0.020\mathrm&lbrace; M&rbrace;
+[\mathrm{OH}^-] = 2 \times 0.010 = 0.020\mathrm{ M}
 $$
 
 $$
-\mathrm&lbrace;pOH&rbrace; = -\log(0.020) = 1.70
+\mathrm{pOH} = -\log(0.020) = 1.70
 $$
 
 $$
-\mathrm&lbrace;pH&rbrace; = 14 - 1.70 = 12.30
+\mathrm{pH} = 14 - 1.70 = 12.30
 $$
 
 ### Question 7 (Paper 2 style)
@@ -763,19 +763,19 @@ The solubility of PbI$_2$ at $25\degree\mathrm{C}$ is $1.4 \times 10^{-3}\mathrm
 **(a)** Calculate $K_{sp}$ for PbI$_2$.
 
 $$
-\mathrm&lbrace;PbI&rbrace;_2(s) \rightleftharpoons \mathrm&lbrace;Pb&rbrace;^&lbrace;2+&rbrace;(aq) + 2\mathrm&lbrace;I&rbrace;^-(aq)
+\mathrm{PbI}_2(s) \rightleftharpoons \mathrm{Pb}^{2+}(aq) + 2\mathrm{I}^-(aq)
 $$
 
 $$
-[\mathrm&lbrace;Pb&rbrace;^&lbrace;2+&rbrace;] = 1.4 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; M&rbrace;, \quad [\mathrm&lbrace;I&rbrace;^-] = 2(1.4 \times 10^&lbrace;-3&rbrace;) = 2.8 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; M&rbrace;
+[\mathrm{Pb}^{2+}] = 1.4 \times 10^{-3}\mathrm{ M}, \quad [\mathrm{I}^-] = 2(1.4 \times 10^{-3}) = 2.8 \times 10^{-3}\mathrm{ M}
 $$
 
 $$
-K_&lbrace;sp&rbrace; = [\mathrm&lbrace;Pb&rbrace;^&lbrace;2+&rbrace;][\mathrm&lbrace;I&rbrace;^-]^2 = (1.4 \times 10^&lbrace;-3&rbrace;)(2.8 \times 10^&lbrace;-3&rbrace;)^2 = (1.4 \times 10^&lbrace;-3&rbrace;)(7.84 \times 10^&lbrace;-6&rbrace;)
+K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = (1.4 \times 10^{-3})(2.8 \times 10^{-3})^2 = (1.4 \times 10^{-3})(7.84 \times 10^{-6})
 $$
 
 $$
-= 1.1 \times 10^&lbrace;-8&rbrace;
+= 1.1 \times 10^{-8}
 $$
 
 **(b)** Will a precipitate form when $50\mathrm{ mL}$ of $0.010\mathrm{ M}$ Pb(NO$_3$)$_2$ is mixed
@@ -784,11 +784,11 @@ with $50\mathrm{ mL}$ of $0.020\mathrm{ M}$ KI?
 After mixing (volumes double, concentrations halve):
 
 $$
-[\mathrm&lbrace;Pb&rbrace;^&lbrace;2+&rbrace;] = 0.005\mathrm&lbrace; M&rbrace;, \quad [\mathrm&lbrace;I&rbrace;^-] = 0.010\mathrm&lbrace; M&rbrace;
+[\mathrm{Pb}^{2+}] = 0.005\mathrm{ M}, \quad [\mathrm{I}^-] = 0.010\mathrm{ M}
 $$
 
 $$
-Q = [\mathrm&lbrace;Pb&rbrace;^&lbrace;2+&rbrace;][\mathrm&lbrace;I&rbrace;^-]^2 = (0.005)(0.010)^2 = 5.0 \times 10^&lbrace;-7&rbrace;
+Q = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = (0.005)(0.010)^2 = 5.0 \times 10^{-7}
 $$
 
 Since $Q = 5.0 \times 10^{-7} \gt K_{sp} = 1.1 \times 10^{-8}$, a precipitate of PbI$_2$ will form.

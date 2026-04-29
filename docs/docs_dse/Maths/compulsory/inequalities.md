@@ -46,7 +46,7 @@ number **reverses** the inequality sign.
 ### Transitivity
 
 $$
-a > b \mathrm&lbrace; and &rbrace; b > c \implies a > c
+a > b \mathrm{ and } b > c \implies a > c
 $$
 
 ### Other Properties
@@ -169,14 +169,14 @@ Roots are $x = 2$ and $x = 3$. Since $a = 1 > 0$, the parabola opens upward.
 Sign diagram:
 
 $$
-\begin&lbrace;array&rbrace;&lbrace;c|ccc&rbrace;
+\begin{array}{c|ccc}
 x & (-\infty, 2) & (2, 3) & (3, \infty) \\
 \hline
 (x-2) & - & + & + \\
 (x-3) & - & - & + \\
 \hline
 (x-2)(x-3) & + & - & +
-\end&lbrace;array&rbrace;
+\end{array}
 $$
 
 Solution: $x < 2$ or $x > 3$, i.e., $(-\infty, 2) \cup (3, \infty)$.
@@ -208,14 +208,14 @@ Roots: $x = -\dfrac{1}{2}$ and $x = 2$.
 Sign diagram:
 
 $$
-\begin&lbrace;array&rbrace;&lbrace;c|ccc&rbrace;
-x & \left(-\infty, -\tfrac&lbrace;1&rbrace;&lbrace;2&rbrace;\right) & \left(-\tfrac&lbrace;1&rbrace;&lbrace;2&rbrace;, 2\right) & (2, \infty) \\
+\begin{array}{c|ccc}
+x & \left(-\infty, -\tfrac{1}{2}\right) & \left(-\tfrac{1}{2}, 2\right) & (2, \infty) \\
 \hline
 (2x+1) & - & + & + \\
 (x-2) & - & - & + \\
 \hline
 (2x+1)(x-2) & + & - & +
-\end&lbrace;array&rbrace;
+\end{array}
 $$
 
 Solution: $x < -\dfrac{1}{2}$ or $x > 2$, i.e.,
@@ -243,7 +243,7 @@ $$
 Geometrically, $x$ is more than distance $a$ from zero.
 
 $$
-|x| > a \iff x < -a \;\mathrm&lbrace; or &rbrace;\; x > a
+|x| > a \iff x < -a \;\mathrm{ or }\; x > a
 $$
 
 ### General Forms
@@ -259,7 +259,7 @@ This is equivalent to a system of two linear inequalities, which can be solved s
 **$|ax + b| > c$** (where $c > 0$):
 
 $$
-|ax + b| > c \iff ax + b < -c \;\mathrm&lbrace; or &rbrace;\; ax + b > c
+|ax + b| > c \iff ax + b < -c \;\mathrm{ or }\; ax + b > c
 $$
 
 This gives two separate linear inequalities, each solved independently.
@@ -283,15 +283,15 @@ Solution: $(-2, 8)$.
 - Solve $|2x + 1| \geq 7$:
 
 $$
-2x + 1 \leq -7 \;\mathrm&lbrace; or &rbrace;\; 2x + 1 \geq 7
+2x + 1 \leq -7 \;\mathrm{ or }\; 2x + 1 \geq 7
 $$
 
 $$
-2x \leq -8 \;\mathrm&lbrace; or &rbrace;\; 2x \geq 6
+2x \leq -8 \;\mathrm{ or }\; 2x \geq 6
 $$
 
 $$
-x \leq -4 \;\mathrm&lbrace; or &rbrace;\; x \geq 3
+x \leq -4 \;\mathrm{ or }\; x \geq 3
 $$
 
 Solution: $(-\infty, -4] \cup [3, \infty)$.
@@ -398,7 +398,7 @@ $$
 $$
 
 $$
-5x \leq 22 \implies x \leq \frac&lbrace;22&rbrace;&lbrace;5&rbrace;
+5x \leq 22 \implies x \leq \frac{22}{5}
 $$
 
 Solution: $\left(-\infty, \dfrac{22}{5}\right]$.
@@ -440,7 +440,7 @@ $$
 $$
 
 $$
--\frac&lbrace;2&rbrace;&lbrace;3&rbrace; < x < 4
+-\frac{2}{3} < x < 4
 $$
 
 Solution: $\left(-\dfrac{2}{3}, 4\right)$.
@@ -564,15 +564,15 @@ Critical points: $x = -2$, $x = 1$, $x = 2$.
 Sign diagram:
 
 $$
-\begin&lbrace;array&rbrace;&lbrace;c|cccc&rbrace;
+\begin{array}{c|cccc}
 x & (-\infty, -2) & (-2, 1) & (1, 2) & (2, \infty) \\
 \hline
 (x-2) & - & - & - & + \\
 (x+2) & - & + & + & + \\
 (x-1) & - & - & + & + \\
 \hline
-\dfrac&lbrace;(x-2)(x+2)&rbrace;&lbrace;x-1&rbrace; & - & + & - & +
-\end&lbrace;array&rbrace;
+\dfrac{(x-2)(x+2)}{x-1} & - & + & - & +
+\end{array}
 $$
 
 The expression is $\geq 0$ when $-2 \leq x < 1$ or $x \geq 2$.
@@ -604,7 +604,7 @@ Roots: $x = \dfrac{3 \pm \sqrt{9 + 8}}{2} = \dfrac{3 \pm \sqrt{17}}{2}$.
 Since $a = 1 > 0$, the expression is negative between the roots:
 
 $$
-\frac&lbrace;3 - \sqrt&lbrace;17&rbrace;&rbrace;&lbrace;2&rbrace; < x < \frac&lbrace;3 + \sqrt&lbrace;17&rbrace;&rbrace;&lbrace;2&rbrace;
+\frac{3 - \sqrt{17}}{2} < x < \frac{3 + \sqrt{17}}{2}
 $$
 
 Since the left inequality imposes no restriction, the solution is:

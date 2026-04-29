@@ -129,13 +129,13 @@ Pascal's triangle is a triangular array where each entry is the sum of the two e
 above it:
 
 $$
-\begin&lbrace;array&rbrace;&lbrace;cccccccc&rbrace;
+\begin{array}{cccccccc}
 & & & 1 & & & \\
 & & 1 & & 1 & & \\
 & 1 & & 2 & & 1 & \\
 1 & & 3 & & 3 & & 1 \\
 & 1 & & 4 & & 6 & & 4 & & 1
-\end&lbrace;array&rbrace;
+\end{array}
 $$
 
 ### Connection to Combinations

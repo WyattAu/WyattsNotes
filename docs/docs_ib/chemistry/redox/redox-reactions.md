@@ -86,7 +86,7 @@ Balance: $\mathrm{MnO}_4^- + \mathrm{Fe}^{2+} \to \mathrm{Mn}^{2+} + \mathrm{Fe}
 **Reduction half-equation** (Mn: +7 to +2):
 
 $$
-\mathrm&lbrace;MnO&rbrace;_4^- \to \mathrm&lbrace;Mn&rbrace;^&lbrace;2+&rbrace;
+\mathrm{MnO}_4^- \to \mathrm{Mn}^{2+}
 $$
 
 Balance O: $\mathrm{MnO}_4^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$
@@ -96,25 +96,25 @@ Balance H: $\mathrm{MnO}_4^- + 8\mathrm{H}^+ \to \mathrm{Mn}^{2+} + 4\mathrm{H}_
 Balance charge: Left = $-1 + 8 = +7$. Right = $+2$. Add 5 $e^-$ to left:
 
 $$
-\mathrm&lbrace;MnO&rbrace;_4^- + 8\mathrm&lbrace;H&rbrace;^+ + 5e^- \to \mathrm&lbrace;Mn&rbrace;^&lbrace;2+&rbrace; + 4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}
 $$
 
 **Oxidation half-equation** (Fe: +2 to +3):
 
 $$
-\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace; \to \mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace; + e^-
+\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-
 $$
 
 Multiply by 5 to balance electrons:
 
 $$
-5\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace; \to 5\mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace; + 5e^-
+5\mathrm{Fe}^{2+} \to 5\mathrm{Fe}^{3+} + 5e^-
 $$
 
 **Combined:**
 
 $$
-\mathrm&lbrace;MnO&rbrace;_4^- + 8\mathrm&lbrace;H&rbrace;^+ + 5\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace; \to \mathrm&lbrace;Mn&rbrace;^&lbrace;2+&rbrace; + 5\mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace; + 4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5\mathrm{Fe}^{2+} \to \mathrm{Mn}^{2+} + 5\mathrm{Fe}^{3+} + 4\mathrm{H}_2\mathrm{O}
 $$
 
 </details>
@@ -127,7 +127,7 @@ Balance: $\mathrm{CrO}_4^{2-} + \mathrm{Br}^- \to \mathrm{Cr(OH)}_3 + \mathrm{Br
 **Reduction half-equation** (Cr: +6 to +3):
 
 $$
-\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; \to \mathrm&lbrace;Cr(OH)&rbrace;_3
+\mathrm{CrO}_4^{2-} \to \mathrm{Cr(OH)}_3
 $$
 
 Balance O (acidic):
@@ -138,49 +138,49 @@ Balance H: already balanced (4 H on each side).
 Balance charge: Left = $-2 + 4 = +2$. Right = $0$. Add 3 $e^-$ to left:
 
 $$
-\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 4\mathrm&lbrace;H&rbrace;^+ + 3e^- \to \mathrm&lbrace;Cr(OH)&rbrace;_3 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{CrO}_4^{2-} + 4\mathrm{H}^+ + 3e^- \to \mathrm{Cr(OH)}_3 + \mathrm{H}_2\mathrm{O}
 $$
 
 Now convert to basic: add 4 OH$^-$ to both sides:
 
 $$
-\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 3e^- \to \mathrm&lbrace;Cr(OH)&rbrace;_3 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 4\mathrm&lbrace;OH&rbrace;^-
+\mathrm{CrO}_4^{2-} + 4\mathrm{H}_2\mathrm{O} + 3e^- \to \mathrm{Cr(OH)}_3 + \mathrm{H}_2\mathrm{O} + 4\mathrm{OH}^-
 $$
 
 Cancel H$_2$O:
 
 $$
-\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 3e^- \to \mathrm&lbrace;Cr(OH)&rbrace;_3 + 4\mathrm&lbrace;OH&rbrace;^-
+\mathrm{CrO}_4^{2-} + 3\mathrm{H}_2\mathrm{O} + 3e^- \to \mathrm{Cr(OH)}_3 + 4\mathrm{OH}^-
 $$
 
 **Oxidation half-equation** (Br: -1 to +5):
 
 $$
-\mathrm&lbrace;Br&rbrace;^- + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to \mathrm&lbrace;BrO&rbrace;_3^- + 6\mathrm&lbrace;H&rbrace;^+ + 6e^-
+\mathrm{Br}^- + 3\mathrm{H}_2\mathrm{O} \to \mathrm{BrO}_3^- + 6\mathrm{H}^+ + 6e^-
 $$
 
 Convert to basic: add 6 OH$^-$ to both sides:
 
 $$
-\mathrm&lbrace;Br&rbrace;^- + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 6\mathrm&lbrace;OH&rbrace;^- \to \mathrm&lbrace;BrO&rbrace;_3^- + 6\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 6e^-
+\mathrm{Br}^- + 3\mathrm{H}_2\mathrm{O} + 6\mathrm{OH}^- \to \mathrm{BrO}_3^- + 6\mathrm{H}_2\mathrm{O} + 6e^-
 $$
 
 Cancel H$_2$O:
 
 $$
-\mathrm&lbrace;Br&rbrace;^- + 6\mathrm&lbrace;OH&rbrace;^- \to \mathrm&lbrace;BrO&rbrace;_3^- + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 6e^-
+\mathrm{Br}^- + 6\mathrm{OH}^- \to \mathrm{BrO}_3^- + 3\mathrm{H}_2\mathrm{O} + 6e^-
 $$
 
 Multiply reduction by 2, add:
 
 $$
-2\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 6\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + \mathrm&lbrace;Br&rbrace;^- + 6\mathrm&lbrace;OH&rbrace;^- + 6e^- \to 2\mathrm&lbrace;Cr(OH)&rbrace;_3 + 8\mathrm&lbrace;OH&rbrace;^- + \mathrm&lbrace;BrO&rbrace;_3^- + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + 6e^-
+2\mathrm{CrO}_4^{2-} + 6\mathrm{H}_2\mathrm{O} + \mathrm{Br}^- + 6\mathrm{OH}^- + 6e^- \to 2\mathrm{Cr(OH)}_3 + 8\mathrm{OH}^- + \mathrm{BrO}_3^- + 3\mathrm{H}_2\mathrm{O} + 6e^-
 $$
 
 Simplify (cancel 6 $e^-$, subtract common terms):
 
 $$
-2\mathrm&lbrace;CrO&rbrace;_4^&lbrace;2-&rbrace; + 3\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; + \mathrm&lbrace;Br&rbrace;^- \to 2\mathrm&lbrace;Cr(OH)&rbrace;_3 + 2\mathrm&lbrace;OH&rbrace;^- + \mathrm&lbrace;BrO&rbrace;_3^-
+2\mathrm{CrO}_4^{2-} + 3\mathrm{H}_2\mathrm{O} + \mathrm{Br}^- \to 2\mathrm{Cr(OH)}_3 + 2\mathrm{OH}^- + \mathrm{BrO}_3^-
 $$
 
 </details>
@@ -194,7 +194,7 @@ $$
 Metals are ranked by their tendency to lose electrons (be oxidised):
 
 $$
-\mathrm&lbrace;K&rbrace; \gt \mathrm&lbrace;Na&rbrace; \gt \mathrm&lbrace;Ca&rbrace; \gt \mathrm&lbrace;Mg&rbrace; \gt \mathrm&lbrace;Al&rbrace; \gt \mathrm&lbrace;Zn&rbrace; \gt \mathrm&lbrace;Fe&rbrace; \gt \mathrm&lbrace;Ni&rbrace; \gt \mathrm&lbrace;Sn&rbrace; \gt \mathrm&lbrace;Pb&rbrace; \gt \mathrm&lbrace;H&rbrace; \gt \mathrm&lbrace;Cu&rbrace; \gt \mathrm&lbrace;Ag&rbrace; \gt \mathrm&lbrace;Au&rbrace;
+\mathrm{K} \gt \mathrm{Na} \gt \mathrm{Ca} \gt \mathrm{Mg} \gt \mathrm{Al} \gt \mathrm{Zn} \gt \mathrm{Fe} \gt \mathrm{Ni} \gt \mathrm{Sn} \gt \mathrm{Pb} \gt \mathrm{H} \gt \mathrm{Cu} \gt \mathrm{Ag} \gt \mathrm{Au}
 $$
 
 **Key predictions:**
@@ -261,7 +261,7 @@ reaction.
 ### Cell Notation (Convention)
 
 $$
-\mathrm&lbrace;Anode&rbrace; \mid \mathrm&lbrace;Anode electrolyte&rbrace; \parallel \mathrm&lbrace;Cathode electrolyte&rbrace; \mid \mathrm&lbrace;Cathode&rbrace;
+\mathrm{Anode} \mid \mathrm{Anode electrolyte} \parallel \mathrm{Cathode electrolyte} \mid \mathrm{Cathode}
 $$
 
 The **single vertical line** represents a phase boundary. The **double vertical line** represents
@@ -271,7 +271,7 @@ the salt bridge. The anode is written on the left (oxidation), and the cathode o
 **Example:** Zn-Cu Daniel cell:
 
 $$
-\mathrm&lbrace;Zn&rbrace;(s) \mid \mathrm&lbrace;Zn&rbrace;^&lbrace;2+&rbrace;(aq) \parallel \mathrm&lbrace;Cu&rbrace;^&lbrace;2+&rbrace;(aq) \mid \mathrm&lbrace;Cu&rbrace;(s)
+\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Cu}^{2+}(aq) \mid \mathrm{Cu}(s)
 $$
 
 - Left (anode): $\mathrm{Zn}(s) \to \mathrm{Zn}^{2+}(aq) + 2e^-$ (oxidation)
@@ -280,7 +280,7 @@ $$
 **Example with inert electrodes:**
 
 $$
-\mathrm&lbrace;Pt&rbrace;(s) \mid \mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace;(aq), \mathrm&lbrace;Fe&rbrace;^&lbrace;3+&rbrace;(aq) \parallel \mathrm&lbrace;MnO&rbrace;_4^-(aq), \mathrm&lbrace;H&rbrace;^+(aq), \mathrm&lbrace;Mn&rbrace;^&lbrace;2+&rbrace;(aq) \mid \mathrm&lbrace;Pt&rbrace;(s)
+\mathrm{Pt}(s) \mid \mathrm{Fe}^{2+}(aq), \mathrm{Fe}^{3+}(aq) \parallel \mathrm{MnO}_4^-(aq), \mathrm{H}^+(aq), \mathrm{Mn}^{2+}(aq) \mid \mathrm{Pt}(s)
 $$
 
 ---
@@ -299,7 +299,7 @@ $$
 The SHE is the reference electrode with $E^\circ = 0.00\mathrm{ V}$ by definition:
 
 $$
-2\mathrm&lbrace;H&rbrace;^+(aq, 1\mathrm&lbrace; mol/L&rbrace;) + 2e^- \rightleftharpoons \mathrm&lbrace;H&rbrace;_2(g, 100\mathrm&lbrace; kPa&rbrace;) \quad E^\circ = 0.00\mathrm&lbrace; V&rbrace;
+2\mathrm{H}^+(aq, 1\mathrm{ mol/L}) + 2e^- \rightleftharpoons \mathrm{H}_2(g, 100\mathrm{ kPa}) \quad E^\circ = 0.00\mathrm{ V}
 $$
 
 It consists of a platinum electrode in contact with $1\mathrm{ mol/L}$ H$^+$ and bubbled with H$_2$
@@ -332,7 +332,7 @@ The standard cell potential ($E^\circ_{\mathrm{cell}}$) is the difference betwee
 anode reduction potentials:
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E^\circ_&lbrace;\mathrm&lbrace;cathode&rbrace;&rbrace; - E^\circ_&lbrace;\mathrm&lbrace;anode&rbrace;&rbrace;
+E^\circ_{\mathrm{cell}} = E^\circ_{\mathrm{cathode}} - E^\circ_{\mathrm{anode}}
 $$
 
 **Key rules:**
@@ -360,7 +360,7 @@ $\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)
 **Anode (oxidation):** $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-$, $E^\circ = -0.76\mathrm{ V}$
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = E^\circ_&lbrace;\mathrm&lbrace;cathode&rbrace;&rbrace; - E^\circ_&lbrace;\mathrm&lbrace;anode&rbrace;&rbrace; = 0.34 - (-0.76) = +1.10\mathrm&lbrace; V&rbrace;
+E^\circ_{\mathrm{cell}} = E^\circ_{\mathrm{cathode}} - E^\circ_{\mathrm{anode}} = 0.34 - (-0.76) = +1.10\mathrm{ V}
 $$
 
 Since $E^\circ_{\mathrm{cell}} \gt 0$, the reaction is spontaneous.
@@ -384,7 +384,7 @@ $E^\circ = +0.77\mathrm{ V}$
 $E^\circ = +0.54\mathrm{ V}$ (reduction potential of I$_2$)
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = 0.77 - 0.54 = +0.23\mathrm&lbrace; V&rbrace;
+E^\circ_{\mathrm{cell}} = 0.77 - 0.54 = +0.23\mathrm{ V}
 $$
 
 Since $E^\circ_{\mathrm{cell}} \gt 0$, the reaction is spontaneous.
@@ -459,7 +459,7 @@ the rules as stated.
 to the quantity of charge passed.
 
 $$
-m = \frac&lbrace;Q \cdot M&rbrace;&lbrace;n \cdot F&rbrace;
+m = \frac{Q \cdot M}{n \cdot F}
 $$
 
 **Faraday's Second Law:** When the same quantity of charge is passed through different electrolytes,
@@ -485,11 +485,11 @@ the mass of aluminium produced. ($M_r(\mathrm{Al}) = 27.0\mathrm{ g/mol}$)
 Cathode half-reaction: $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$, so $n = 3$.
 
 $$
-Q = I \times t = 2.50 \times 30.0 \times 60 = 4500\mathrm&lbrace; C&rbrace;
+Q = I \times t = 2.50 \times 30.0 \times 60 = 4500\mathrm{ C}
 $$
 
 $$
-m = \frac&lbrace;Q \times M&rbrace;&lbrace;n \times F&rbrace; = \frac&lbrace;4500 \times 27.0&rbrace;&lbrace;3 \times 96500&rbrace; = \frac&lbrace;121500&rbrace;&lbrace;289500&rbrace; = 0.420\mathrm&lbrace; g&rbrace;
+m = \frac{Q \times M}{n \times F} = \frac{4500 \times 27.0}{3 \times 96500} = \frac{121500}{289500} = 0.420\mathrm{ g}
 $$
 
 </details>
@@ -518,25 +518,25 @@ Answer:
 (b)
 
 $$
-Q = 0.500 \times 2.00 \times 3600 = 3600\mathrm&lbrace; C&rbrace;
+Q = 0.500 \times 2.00 \times 3600 = 3600\mathrm{ C}
 $$
 
 For Cu: $n = 2$, $M = 63.5\mathrm{ g/mol}$.
 
 $$
-m = \frac&lbrace;3600 \times 63.5&rbrace;&lbrace;2 \times 96500&rbrace; = \frac&lbrace;228600&rbrace;&lbrace;193000&rbrace; = 1.18\mathrm&lbrace; g&rbrace;
+m = \frac{3600 \times 63.5}{2 \times 96500} = \frac{228600}{193000} = 1.18\mathrm{ g}
 $$
 
 (c) For O$_2$: $n = 4$ electrons per mole of O$_2$.
 
 $$
-n(\mathrm&lbrace;O&rbrace;_2) = \frac&lbrace;Q&rbrace;&lbrace;n \times F&rbrace; = \frac&lbrace;3600&rbrace;&lbrace;4 \times 96500&rbrace; = 0.00933\mathrm&lbrace; mol&rbrace;
+n(\mathrm{O}_2) = \frac{Q}{n \times F} = \frac{3600}{4 \times 96500} = 0.00933\mathrm{ mol}
 $$
 
 At STP ($22.4\mathrm{ L/mol}$):
 
 $$
-V = 0.00933 \times 22.4 = 0.209\mathrm&lbrace; L&rbrace; = 209\mathrm&lbrace; mL&rbrace;
+V = 0.00933 \times 22.4 = 0.209\mathrm{ L} = 209\mathrm{ mL}
 $$
 
 </details>
@@ -559,15 +559,15 @@ Equivalent mass of Al = $27.0/3 = 9.0\mathrm{ g/equiv}$.
 By Faraday's Second Law:
 
 $$
-\frac&lbrace;m(\mathrm&lbrace;Na&rbrace;)&rbrace;&lbrace;m(\mathrm&lbrace;Al&rbrace;)&rbrace; = \frac&lbrace;\mathrm&lbrace;Equiv. mass of Na&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Equiv. mass of Al&rbrace;&rbrace;
+\frac{m(\mathrm{Na})}{m(\mathrm{Al})} = \frac{\mathrm{Equiv. mass of Na}}{\mathrm{Equiv. mass of Al}}
 $$
 
 $$
-\frac&lbrace;2.30&rbrace;&lbrace;m(\mathrm&lbrace;Al&rbrace;)&rbrace; = \frac&lbrace;23.0&rbrace;&lbrace;9.0&rbrace;
+\frac{2.30}{m(\mathrm{Al})} = \frac{23.0}{9.0}
 $$
 
 $$
-m(\mathrm&lbrace;Al&rbrace;) = \frac&lbrace;2.30 \times 9.0&rbrace;&lbrace;23.0&rbrace; = 0.900\mathrm&lbrace; g&rbrace;
+m(\mathrm{Al}) = \frac{2.30 \times 9.0}{23.0} = 0.900\mathrm{ g}
 $$
 
 </details>
@@ -588,7 +588,7 @@ $\mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^- \to 4\mathrm{OH}^-(aq)$
 The Fe$^{2+}$ ions further react:
 
 $$
-4\mathrm&lbrace;Fe&rbrace;^&lbrace;2+&rbrace;(aq) + \mathrm&lbrace;O&rbrace;_2(g) + 6\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to 4\mathrm&lbrace;Fe(OH)&rbrace;_3(s)
+4\mathrm{Fe}^{2+}(aq) + \mathrm{O}_2(g) + 6\mathrm{H}_2\mathrm{O}(l) \to 4\mathrm{Fe(OH)}_3(s)
 $$
 
 $\mathrm{Fe(OH)}_3$ dehydrates to form rust:
@@ -745,7 +745,7 @@ $\mathrm{Cr}_2\mathrm{O}_7^{2-} + 14\mathrm{H}^+ + 3\mathrm{SO}_3^{2-} + 3\mathr
 Simplify (cancel 6 H$^+$ and 3 H$_2$O):
 
 $$
-\mathrm&lbrace;Cr&rbrace;_2\mathrm&lbrace;O&rbrace;_7^&lbrace;2-&rbrace; + 8\mathrm&lbrace;H&rbrace;^+ + 3\mathrm&lbrace;SO&rbrace;_3^&lbrace;2-&rbrace; \to 2\mathrm&lbrace;Cr&rbrace;^&lbrace;3+&rbrace; + 3\mathrm&lbrace;SO&rbrace;_4^&lbrace;2-&rbrace; + 4\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;
+\mathrm{Cr}_2\mathrm{O}_7^{2-} + 8\mathrm{H}^+ + 3\mathrm{SO}_3^{2-} \to 2\mathrm{Cr}^{3+} + 3\mathrm{SO}_4^{2-} + 4\mathrm{H}_2\mathrm{O}
 $$
 
 </details>
@@ -775,7 +775,7 @@ Answer:
 $E^\circ = -0.76\mathrm{ V}$.
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = 0.80 - (-0.76) = +1.56\mathrm&lbrace; V&rbrace;
+E^\circ_{\mathrm{cell}} = 0.80 - (-0.76) = +1.56\mathrm{ V}
 $$
 
 (b) $\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Ag}^+(aq) \mid \mathrm{Ag}(s)$
@@ -786,7 +786,7 @@ Cathode: Fe$^{3+}$/Fe$^{2+}$, $E^\circ = +0.77\mathrm{ V}$. Anode: Ni$^{2+}$/Ni,
 $E^\circ = -0.25\mathrm{ V}$.
 
 $$
-E^\circ_&lbrace;\mathrm&lbrace;cell&rbrace;&rbrace; = 0.77 - (-0.25) = +1.02\mathrm&lbrace; V&rbrace;
+E^\circ_{\mathrm{cell}} = 0.77 - (-0.25) = +1.02\mathrm{ V}
 $$
 
 Since $E^\circ_{\mathrm{cell}} = +1.02\mathrm{ V} \gt 0$, Ni will spontaneously reduce Fe$^{3+}$.
@@ -811,11 +811,11 @@ Answer:
 (a)
 
 $$
-Q = 3.00 \times 1.50 \times 3600 = 16200\mathrm&lbrace; C&rbrace;
+Q = 3.00 \times 1.50 \times 3600 = 16200\mathrm{ C}
 $$
 
 $$
-m(\mathrm&lbrace;Cu&rbrace;) = \frac&lbrace;Q \times M&rbrace;&lbrace;n \times F&rbrace; = \frac&lbrace;16200 \times 63.5&rbrace;&lbrace;2 \times 96500&rbrace; = \frac&lbrace;1028700&rbrace;&lbrace;193000&rbrace; = 5.33\mathrm&lbrace; g&rbrace;
+m(\mathrm{Cu}) = \frac{Q \times M}{n \times F} = \frac{16200 \times 63.5}{2 \times 96500} = \frac{1028700}{193000} = 5.33\mathrm{ g}
 $$
 
 (b) In electrolysis of CuSO$_4$ with copper electrodes (electrorefining), the anode is made of
@@ -833,13 +833,13 @@ no O$_2$ is produced. If the electrodes were inert (graphite), then:
 At the anode: $2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^-$
 
 $$
-n(\mathrm&lbrace;O&rbrace;_2) = \frac&lbrace;Q&rbrace;&lbrace;4 \times F&rbrace; = \frac&lbrace;16200&rbrace;&lbrace;4 \times 96500&rbrace; = 0.04197\mathrm&lbrace; mol&rbrace;
+n(\mathrm{O}_2) = \frac{Q}{4 \times F} = \frac{16200}{4 \times 96500} = 0.04197\mathrm{ mol}
 $$
 
 Using ideal gas law at $T = 298\mathrm{ K}$ and $P = 100\mathrm{ kPa}$:
 
 $$
-V = \frac&lbrace;nRT&rbrace;&lbrace;P&rbrace; = \frac&lbrace;0.04197 \times 8.314 \times 298&rbrace;&lbrace;100&rbrace; = \frac&lbrace;103.9&rbrace;&lbrace;100&rbrace; = 1.04\mathrm&lbrace; L&rbrace;
+V = \frac{nRT}{P} = \frac{0.04197 \times 8.314 \times 298}{100} = \frac{103.9}{100} = 1.04\mathrm{ L}
 $$
 
 </details>
@@ -867,25 +867,25 @@ $2\mathrm{H}_2 + 4\mathrm{OH}^- \to 4\mathrm{H}_2\mathrm{O} + 4e^-$
 H$_2$.
 
 $$
-Q = 10.0 \times 3600 = 36000\mathrm&lbrace; C&rbrace;
+Q = 10.0 \times 3600 = 36000\mathrm{ C}
 $$
 
 $$
-n(\mathrm&lbrace;H&rbrace;_2) = \frac&lbrace;Q&rbrace;&lbrace;2 \times F&rbrace; = \frac&lbrace;36000&rbrace;&lbrace;2 \times 96500&rbrace; = 0.1865\mathrm&lbrace; mol&rbrace;
+n(\mathrm{H}_2) = \frac{Q}{2 \times F} = \frac{36000}{2 \times 96500} = 0.1865\mathrm{ mol}
 $$
 
 $$
-m(\mathrm&lbrace;H&rbrace;_2) = 0.1865 \times 2.016 = 0.376\mathrm&lbrace; g&rbrace;
+m(\mathrm{H}_2) = 0.1865 \times 2.016 = 0.376\mathrm{ g}
 $$
 
 (c) Energy released by the reaction per hour:
 
 $$
-\mathrm&lbrace;Energy&rbrace;_&lbrace;\mathrm&lbrace;chemical&rbrace;&rbrace; = n \times |\Delta H| = 0.1865 \times 286 = 53.3\mathrm&lbrace; kJ&rbrace;
+\mathrm{Energy}_{\mathrm{chemical}} = n \times |\Delta H| = 0.1865 \times 286 = 53.3\mathrm{ kJ}
 $$
 
 $$
-\mathrm&lbrace;Energy&rbrace;_&lbrace;\mathrm&lbrace;electrical&rbrace;&rbrace; = 0.65 \times 53.3 = 34.7\mathrm&lbrace; kJ&rbrace;
+\mathrm{Energy}_{\mathrm{electrical}} = 0.65 \times 53.3 = 34.7\mathrm{ kJ}
 $$
 
 </details>

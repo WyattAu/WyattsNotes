@@ -94,7 +94,7 @@ equivalent hybrid orbitals that explain observed geometries.
 Count the regions of electron density (steric number) around the central atom:
 
 $$
-\mathrm&lbrace;Steric number&rbrace; = \mathrm&lbrace;bonded atoms&rbrace; + \mathrm&lbrace;lone pairs&rbrace;
+\mathrm{Steric number} = \mathrm{bonded atoms} + \mathrm{lone pairs}
 $$
 
 | Steric number | Hybridization |
@@ -129,7 +129,7 @@ A double bond consists of one $\sigma$ and one $\pi$ bond. A triple bond consist
 and two $\pi$ bonds.
 
 $$
-\mathrm&lbrace;C=C&rbrace;: 1\sigma + 1\pi, \qquad \mathrm&lbrace;C\equiv C&rbrace;: 1\sigma + 2\pi
+\mathrm{C=C}: 1\sigma + 1\pi, \qquad \mathrm{C\equiv C}: 1\sigma + 2\pi
 $$
 
 ### Common Pitfalls
@@ -161,20 +161,20 @@ molecular orbitals that are delocalised over the entire molecule.
 For homonuclear diatomics ($\mathrm{O}_2$, $\mathrm{F}_2$, and beyond):
 
 $$
-\sigma_&lbrace;1s&rbrace; \lt \sigma_&lbrace;1s&rbrace;^* \lt \sigma_&lbrace;2s&rbrace; \lt \sigma_&lbrace;2s&rbrace;^* \lt \sigma_&lbrace;2p_z&rbrace; \lt \pi_&lbrace;2p_x&rbrace; = \pi_&lbrace;2p_y&rbrace; \lt \pi_&lbrace;2p_x&rbrace;^* = \pi_&lbrace;2p_y&rbrace;^* \lt \sigma_&lbrace;2p_z&rbrace;^*
+\sigma_{1s} \lt \sigma_{1s}^* \lt \sigma_{2s} \lt \sigma_{2s}^* \lt \sigma_{2p_z} \lt \pi_{2p_x} = \pi_{2p_y} \lt \pi_{2p_x}^* = \pi_{2p_y}^* \lt \sigma_{2p_z}^*
 $$
 
 For $\mathrm{B}_2$, $\mathrm{C}_2$, $\mathrm{N}_2$ (and $\mathrm{Li}_2$, $\mathrm{Be}_2$), the
 $\sigma_{2p_z}$ and $\pi_{2p}$ levels are reversed:
 
 $$
-\cdots \lt \pi_&lbrace;2p_x&rbrace; = \pi_&lbrace;2p_y&rbrace; \lt \sigma_&lbrace;2p_z&rbrace; \lt \pi_&lbrace;2p_x&rbrace;^* = \pi_&lbrace;2p_y&rbrace;^* \lt \sigma_&lbrace;2p_z&rbrace;^*
+\cdots \lt \pi_{2p_x} = \pi_{2p_y} \lt \sigma_{2p_z} \lt \pi_{2p_x}^* = \pi_{2p_y}^* \lt \sigma_{2p_z}^*
 $$
 
 ### Bond Order
 
 $$
-\mathrm&lbrace;Bond order&rbrace; = \frac&lbrace;N_&lbrace;\mathrm&lbrace;bonding&rbrace;&rbrace; - N_&lbrace;\mathrm&lbrace;antibonding&rbrace;&rbrace;&rbrace;&lbrace;2&rbrace;
+\mathrm{Bond order} = \frac{N_{\mathrm{bonding}} - N_{\mathrm{antibonding}}}{2}
 $$
 
 | Molecule        | Bond order | Bond type      | Magnetic         |
@@ -268,7 +268,7 @@ empty. As temperature increases:
 3. The holes left in the valence band also contribute to conduction.
 
 $$
-n_i \propto \exp\!\left(-\frac&lbrace;E_g&rbrace;&lbrace;2k_BT&rbrace;\right)
+n_i \propto \exp\!\left(-\frac{E_g}{2k_BT}\right)
 $$
 
 ### Doping
@@ -319,7 +319,7 @@ Construct the MO diagram for $\mathrm{O}_2$ and use it to explain the paramagnet
 Electron configuration of $\mathrm{O}_2$ ($12$ valence electrons):
 
 $$
-\sigma_&lbrace;2s&rbrace;^2\, (\sigma_&lbrace;2s&rbrace;^*)^2\, \sigma_&lbrace;2p_z&rbrace;^2\, \pi_&lbrace;2p_x&rbrace;^2\, \pi_&lbrace;2p_y&rbrace;^2\, (\pi_&lbrace;2p_x&rbrace;^*)^1\, (\pi_&lbrace;2p_y&rbrace;^*)^1
+\sigma_{2s}^2\, (\sigma_{2s}^*)^2\, \sigma_{2p_z}^2\, \pi_{2p_x}^2\, \pi_{2p_y}^2\, (\pi_{2p_x}^*)^1\, (\pi_{2p_y}^*)^1
 $$
 
 Bond order $= \frac{10 - 6}{2} = 2$
@@ -355,11 +355,11 @@ excite an electron from the valence band to the conduction band.
 **Solution:**
 
 $$
-E = \frac&lbrace;hc&rbrace;&lbrace;\lambda&rbrace; \implies \lambda = \frac&lbrace;hc&rbrace;&lbrace;E&rbrace;
+E = \frac{hc}{\lambda} \implies \lambda = \frac{hc}{E}
 $$
 
 $$
-\lambda = \frac&lbrace;(6.626 \times 10^&lbrace;-34&rbrace;)(3.00 \times 10^8)&rbrace;&lbrace;1.1 \times 1.602 \times 10^&lbrace;-19&rbrace;&rbrace; = \frac&lbrace;1.988 \times 10^&lbrace;-25&rbrace;&rbrace;&lbrace;1.762 \times 10^&lbrace;-19&rbrace;&rbrace; = 1.13 \times 10^&lbrace;-6&rbrace;\mathrm&lbrace; m&rbrace; = 1130\mathrm&lbrace; nm&rbrace;
+\lambda = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{1.1 \times 1.602 \times 10^{-19}} = \frac{1.988 \times 10^{-25}}{1.762 \times 10^{-19}} = 1.13 \times 10^{-6}\mathrm{ m} = 1130\mathrm{ nm}
 $$
 
 This is in the infrared region.

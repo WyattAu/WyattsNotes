@@ -81,7 +81,7 @@ For $(f \circ g)(x)$ to be defined at a particular value of $x$, two conditions 
 The domain of $f \circ g$ is therefore:
 
 $$
-\mathrm&lbrace;dom&rbrace;(f \circ g) = \&lbrace;x \in \mathrm&lbrace;dom&rbrace;(g) : g(x) \in \mathrm&lbrace;dom&rbrace;(f)\&rbrace;
+\mathrm{dom}(f \circ g) = \{x \in \mathrm{dom}(g) : g(x) \in \mathrm{dom}(f)\}
 $$
 
 ### Order of Composition
@@ -94,11 +94,11 @@ is evaluated first.
 If $f$ is a bijection, then the **inverse function** $f^{-1}$ exists and satisfies:
 
 $$
-f^&lbrace;-1&rbrace;(f(x)) = x \quad \mathrm&lbrace;for all &rbrace; x \in \mathrm&lbrace;dom&rbrace;(f)
+f^{-1}(f(x)) = x \quad \mathrm{for all } x \in \mathrm{dom}(f)
 $$
 
 $$
-f(f^&lbrace;-1&rbrace;(y)) = y \quad \mathrm&lbrace;for all &rbrace; y \in \mathrm&lbrace;dom&rbrace;(f^&lbrace;-1&rbrace;) = \mathrm&lbrace;range&rbrace;(f)
+f(f^{-1}(y)) = y \quad \mathrm{for all } y \in \mathrm{dom}(f^{-1}) = \mathrm{range}(f)
 $$
 
 The graphs of $y = f(x)$ and $y = f^{-1}(x)$ are reflections of each other in the line $y = x$.
@@ -147,7 +147,7 @@ where $a$, $b$, and $c$ are real constants.
 By completing the square, the quadratic can be rewritten in **vertex form**:
 
 $$
-f(x) = a\left(x + \frac&lbrace;b&rbrace;&lbrace;2a&rbrace;\right)^2 + \frac&lbrace;4ac - b^2&rbrace;&lbrace;4a&rbrace;
+f(x) = a\left(x + \frac{b}{2a}\right)^2 + \frac{4ac - b^2}{4a}
 $$
 
 - The **vertex** is at $\left(-\dfrac{b}{2a},\; \dfrac{4ac - b^2}{4a}\right)$.
@@ -174,7 +174,7 @@ The discriminant determines the nature of the roots of the equation $f(x) = 0$:
 The roots are given by the quadratic formula:
 
 $$
-x = \frac&lbrace;-b \pm \sqrt&lbrace;b^2 - 4ac&rbrace;&rbrace;&lbrace;2a&rbrace;
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
 See also [polynomials](./polynomials.md) for connections between quadratic functions and polynomial
@@ -226,13 +226,13 @@ where $a$ is called the **base**.
 For $a, b > 0$ and $m, n \in \mathbb{R}$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-a^m \times a^n &= a^&lbrace;m + n&rbrace; \\
-\frac&lbrace;a^m&rbrace;&lbrace;a^n&rbrace; &= a^&lbrace;m - n&rbrace; \\
-(a^m)^n &= a^&lbrace;mn&rbrace; \\
+\begin{aligned}
+a^m \times a^n &= a^{m + n} \\
+\frac{a^m}{a^n} &= a^{m - n} \\
+(a^m)^n &= a^{mn} \\
 a^0 &= 1 \\
-a^&lbrace;-n&rbrace; &= \frac&lbrace;1&rbrace;&lbrace;a^n&rbrace;
-\end&lbrace;aligned&rbrace;
+a^{-n} &= \frac{1}{a^n}
+\end{aligned}
 $$
 
 ### Graphs
@@ -291,13 +291,13 @@ The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{R}$. 
 For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{R}$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-\log_a (MN) &= \log_a M + \log_a N &\mathrm&lbrace;(Product Law)&rbrace; \\
-\log_a \left(\frac&lbrace;M&rbrace;&lbrace;N&rbrace;\right) &= \log_a M - \log_a N &\mathrm&lbrace;(Quotient Law)&rbrace; \\
-\log_a M^p &= p \log_a M &\mathrm&lbrace;(Power Law)&rbrace; \\
+\begin{aligned}
+\log_a (MN) &= \log_a M + \log_a N &\mathrm{(Product Law)} \\
+\log_a \left(\frac{M}{N}\right) &= \log_a M - \log_a N &\mathrm{(Quotient Law)} \\
+\log_a M^p &= p \log_a M &\mathrm{(Power Law)} \\
 \log_a 1 &= 0 \\
 \log_a a &= 1
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 ### Change of Base Formula
@@ -305,7 +305,7 @@ $$
 To evaluate a logarithm with any base:
 
 $$
-\log_a b = \frac&lbrace;\log_c b&rbrace;&lbrace;\log_c a&rbrace; = \frac&lbrace;\ln b&rbrace;&lbrace;\ln a&rbrace;
+\log_a b = \frac{\log_c b}{\log_c a} = \frac{\ln b}{\ln a}
 $$
 
 for any positive base $c \neq 1$.
@@ -354,7 +354,7 @@ $$
 y = a \cdot f\left(x - (-b)\right) + c
 $$
 
-<DesmosGraph title="Graph Transformations" expressions=&lbrace;["a\cdot f(x+b)+c", "f(x)=x^2"]&rbrace; width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
+<DesmosGraph title="Graph Transformations" expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]} width={800} height={500} />
 
 Use the sliders to explore how the parameters $a$, $b$, and $c$ transform the parent function, and
 observe the order in which each transformation is applied.
@@ -420,7 +420,7 @@ shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
 The **modulus** (or absolute value) function is defined piecewise:
 
 $$
-f(x) = |x| = \begin&lbrace;cases&rbrace; x & \mathrm&lbrace;if &rbrace; x \geq 0 \\ -x & \mathrm&lbrace;if &rbrace; x \lt 0 \end&lbrace;cases&rbrace;
+f(x) = |x| = \begin{cases} x & \mathrm{if } x \geq 0 \\ -x & \mathrm{if } x \lt 0 \end{cases}
 $$
 
 The graph of $y = |x|$ is V-shaped, with its vertex at the origin. It is symmetric about the
@@ -571,7 +571,7 @@ multiplying through, use a sign chart.
 A **rational function** is any function of the form:
 
 $$
-f(x) = \frac&lbrace;P(x)&rbrace;&lbrace;Q(x)&rbrace;
+f(x) = \frac{P(x)}{Q(x)}
 $$
 
 where $P(x)$ and $Q(x)$ are polynomials and $Q(x) \neq 0$. The domain is
@@ -596,7 +596,7 @@ degrees of $P$ and $Q$:
 $Q(x) = b_n x^n + \cdots$. Then:
 
 $$
-\lim_&lbrace;x \to \pm\infty&rbrace; \frac&lbrace;P(x)&rbrace;&lbrace;Q(x)&rbrace; = \lim_&lbrace;x \to \pm\infty&rbrace; \frac&lbrace;a_n x^n \left(1 + \frac&lbrace;c_1&rbrace;&lbrace;x&rbrace; + \cdots\right)&rbrace;&lbrace;b_n x^n \left(1 + \frac&lbrace;d_1&rbrace;&lbrace;x&rbrace; + \cdots\right)&rbrace; = \frac&lbrace;a_n&rbrace;&lbrace;b_n&rbrace; \qed
+\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = \lim_{x \to \pm\infty} \frac{a_n x^n \left(1 + \frac{c_1}{x} + \cdots\right)}{b_n x^n \left(1 + \frac{d_1}{x} + \cdots\right)} = \frac{a_n}{b_n} \qed
 $$
 
 ### Behaviour Near Vertical Asymptotes

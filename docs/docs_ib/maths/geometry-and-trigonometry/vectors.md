@@ -16,9 +16,9 @@ the line. The line ($\bm{r}(\gamma)$) is a sum of a point on a line ($\bm{a}$ or
 direction vector ($\bm{b}$) scaled by the parameter $\gamma$:
 
 $$
-\begin&lbrace;aligned&rbrace;
-    \bm&lbrace;r&rbrace;(\gamma) = \bm&lbrace;r_0&rbrace; + \gamma\bm&lbrace;b&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+    \bm{r}(\gamma) = \bm{r_0} + \gamma\bm{b}
+\end{aligned}
 $$
 
 ### Cartesian Form
@@ -26,31 +26,31 @@ $$
 Vectors in cartesian form define a vector by the definition of each coordinate of the unit vector:
 
 $$
-\begin&lbrace;aligned&rbrace;
-    \frac&lbrace;x-x_0&rbrace;&lbrace;l&rbrace; = \frac&lbrace;y-y_0&rbrace;&lbrace;m&rbrace; = \frac&lbrace;z-z_0&rbrace;&lbrace;n&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+    \frac{x-x_0}{l} = \frac{y-y_0}{m} = \frac{z-z_0}{n}
+\end{aligned}
 $$
 
 ### Conversion Between Parametric Form and Cartesian Form
 
 $$
-\begin&lbrace;aligned&rbrace;
-    \bm&lbrace;r&rbrace;(\gamma) = \bm&lbrace;r_0&rbrace; + \gamma\bm&lbrace;b&rbrace;\\
-    \begin&lbrace;pmatrix&rbrace;
+\begin{aligned}
+    \bm{r}(\gamma) = \bm{r_0} + \gamma\bm{b}\\
+    \begin{pmatrix}
         x \\ y \\ z
-    \end&lbrace;pmatrix&rbrace;
+    \end{pmatrix}
     =
-    \begin&lbrace;pmatrix&rbrace;
+    \begin{pmatrix}
         x_0 \\ y_0 \\ z_0
-    \end&lbrace;pmatrix&rbrace;
+    \end{pmatrix}
     +
     \gamma
-    \begin&lbrace;pmatrix&rbrace;
+    \begin{pmatrix}
        l \\ m \\ n
-    \end&lbrace;pmatrix&rbrace;\\
+    \end{pmatrix}\\
     x = x_0 + \gamma l, \quad y = y_0 + \gamma m, \quad z = z_0 + \gamma n\\
-    \gamma = \frac&lbrace;x-x_0&rbrace;&lbrace;l&rbrace; = \frac&lbrace;y-y_0&rbrace;&lbrace;m&rbrace; = \frac&lbrace;z-z_0&rbrace;&lbrace;n&rbrace;
-\end&lbrace;aligned&rbrace;
+    \gamma = \frac{x-x_0}{l} = \frac{y-y_0}{m} = \frac{z-z_0}{n}
+\end{aligned}
 $$
 
 ## Vector Plane
@@ -62,9 +62,9 @@ $\bm{r_0}$) on the plane and two direction vector ($\bm{b}$ and $\bm{c}$) scaled
 ($\gamma$ and $\mu$):
 
 $$
-\begin&lbrace;aligned&rbrace;
-    \bm&lbrace;r&rbrace;(\gamma, \mu) = \bm&lbrace;r_0&rbrace; + \gamma \bm&lbrace;b&rbrace; + \mu \bm&lbrace;c&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+    \bm{r}(\gamma, \mu) = \bm{r_0} + \gamma \bm{b} + \mu \bm{c}
+\end{aligned}
 $$
 
 ### Point-normal Form
@@ -73,10 +73,10 @@ A vector plane ($\bm{r}$) defined in point-normal form is defined by the dot pro
 normal ($\hat{n}$) and the direction vectors ($\bm{r}-\bm{r_0}$ or $\gamma \bm{b} + \mu \bm{c}$):
 
 $$
-\begin&lbrace;aligned&rbrace;
-    \left(\bm&lbrace;r&rbrace;-\bm&lbrace;r_0&rbrace;\right) \cdot \hat&lbrace;n&rbrace; = |\bm&lbrace;r&rbrace;-\bm&lbrace;r_0&rbrace;||\hat&lbrace;n&rbrace;|\sin \frac&lbrace;\pi&rbrace;&lbrace;2&rbrace; = 0\\
-    \bm&lbrace;r&rbrace; \cdot \hat&lbrace;n&rbrace; = \bm&lbrace;r_0&rbrace; \cdot \hat&lbrace;n&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+    \left(\bm{r}-\bm{r_0}\right) \cdot \hat{n} = |\bm{r}-\bm{r_0}||\hat{n}|\sin \frac{\pi}{2} = 0\\
+    \bm{r} \cdot \hat{n} = \bm{r_0} \cdot \hat{n}
+\end{aligned}
 $$
 
 ### Cartesian Form
@@ -85,31 +85,31 @@ A vector plane ($\bm{r}$) defined in cartesian form is extended from the point-n
 expressing normal vector as its individual axis ($x,y,z$):
 
 $$
-\begin&lbrace;aligned&rbrace;
-    \hat&lbrace;n&rbrace; =
-    \begin&lbrace;pmatrix&rbrace;
+\begin{aligned}
+    \hat{n} =
+    \begin{pmatrix}
         a \\ b \\ c
-    \end&lbrace;pmatrix&rbrace;, \quad
-    \bm&lbrace;r&rbrace; =
-    \begin&lbrace;pmatrix&rbrace;
+    \end{pmatrix}, \quad
+    \bm{r} =
+    \begin{pmatrix}
         x \\ y \\ z
-    \end&lbrace;pmatrix&rbrace;, \quad
-    \bm&lbrace;r_0&rbrace; =
-    \begin&lbrace;pmatrix&rbrace;
+    \end{pmatrix}, \quad
+    \bm{r_0} =
+    \begin{pmatrix}
         x_0 \\ y_0 \\ z_0
-    \end&lbrace;pmatrix&rbrace;\\
+    \end{pmatrix}\\
     a(x-x_0) + b(y-y_0) + c(z-z_0) = 0\\
     ax + by + cz = ax_0 + by_0 + cz_0
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 Since $ax_0 + by_0 + cz_0$ produce a constant, the formula booklet uses a single constant $d$ to
 represent it:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
     ax + by + cz = d
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 ## Vector Fundamentals
@@ -119,10 +119,10 @@ $$
 A vector $\bm{v}$ in 3D space is represented as a column vector:
 
 $$
-\bm&lbrace;v&rbrace; =
-\begin&lbrace;pmatrix&rbrace;
+\bm{v} =
+\begin{pmatrix}
     v_x \\ v_y \\ v_z
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 $$
 
 where $v_x$, $v_y$, $v_z$ are the components along the $x$, $y$, and $z$ axes respectively.
@@ -132,7 +132,7 @@ where $v_x$, $v_y$, $v_z$ are the components along the $x$, $y$, and $z$ axes re
 The magnitude of a vector is its length:
 
 $$
-|\bm&lbrace;v&rbrace;| = \sqrt&lbrace;v_x^2 + v_y^2 + v_z^2&rbrace;
+|\bm{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}
 $$
 
 ### Unit Vector
@@ -140,7 +140,7 @@ $$
 A unit vector has magnitude $1$. The unit vector in the direction of $\bm{v}$ is:
 
 $$
-\hat&lbrace;v&rbrace; = \frac&lbrace;\bm&lbrace;v&rbrace;&rbrace;&lbrace;|\bm&lbrace;v&rbrace;|&rbrace;
+\hat{v} = \frac{\bm{v}}{|\bm{v}|}
 $$
 
 ### Position Vector
@@ -148,32 +148,32 @@ $$
 A position vector describes the position of a point relative to the origin $O$:
 
 $$
-\overrightarrow&lbrace;OP&rbrace; =
-\begin&lbrace;pmatrix&rbrace;
+\overrightarrow{OP} =
+\begin{pmatrix}
     x \\ y \\ z
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 $$
 
 ### Vector Addition and Subtraction
 
 $$
-\bm&lbrace;a&rbrace; + \bm&lbrace;b&rbrace; =
-\begin&lbrace;pmatrix&rbrace;
+\bm{a} + \bm{b} =
+\begin{pmatrix}
     a_x + b_x \\ a_y + b_y \\ a_z + b_z
-\end&lbrace;pmatrix&rbrace;, \quad
-\bm&lbrace;a&rbrace; - \bm&lbrace;b&rbrace; =
-\begin&lbrace;pmatrix&rbrace;
+\end{pmatrix}, \quad
+\bm{a} - \bm{b} =
+\begin{pmatrix}
     a_x - b_x \\ a_y - b_y \\ a_z - b_z
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 $$
 
 ### Scalar Multiplication
 
 $$
-k\bm&lbrace;v&rbrace; =
-\begin&lbrace;pmatrix&rbrace;
+k\bm{v} =
+\begin{pmatrix}
     kv_x \\ kv_y \\ kv_z
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 $$
 
 ## Dot Product (Scalar Product)
@@ -183,7 +183,7 @@ $$
 The dot product of two vectors produces a scalar:
 
 $$
-\bm&lbrace;a&rbrace; \cdot \bm&lbrace;b&rbrace; = |\bm&lbrace;a&rbrace;||\bm&lbrace;b&rbrace;|\cos\theta
+\bm{a} \cdot \bm{b} = |\bm{a}||\bm{b}|\cos\theta
 $$
 
 where $\theta$ is the angle between the vectors ($0 \le \theta \le \pi$).
@@ -191,13 +191,13 @@ where $\theta$ is the angle between the vectors ($0 \le \theta \le \pi$).
 ### Component Form
 
 $$
-\bm&lbrace;a&rbrace; \cdot \bm&lbrace;b&rbrace; = a_x b_x + a_y b_y + a_z b_z
+\bm{a} \cdot \bm{b} = a_x b_x + a_y b_y + a_z b_z
 $$
 
 ### Finding the Angle Between Vectors
 
 $$
-\cos\theta = \frac&lbrace;\bm&lbrace;a&rbrace; \cdot \bm&lbrace;b&rbrace;&rbrace;&lbrace;|\bm&lbrace;a&rbrace;||\bm&lbrace;b&rbrace;|&rbrace;
+\cos\theta = \frac{\bm{a} \cdot \bm{b}}{|\bm{a}||\bm{b}|}
 $$
 
 ### Properties of the Dot Product
@@ -215,15 +215,15 @@ $\bm{b} = \begin{pmatrix} 3 \\ 0 \\ 4 \end{pmatrix}$.
 **Solution:**
 
 $$
-\bm&lbrace;a&rbrace; \cdot \bm&lbrace;b&rbrace; = (2)(3) + (1)(0) + (-1)(4) = 6 + 0 - 4 = 2
+\bm{a} \cdot \bm{b} = (2)(3) + (1)(0) + (-1)(4) = 6 + 0 - 4 = 2
 $$
 
 $$
-|\bm&lbrace;a&rbrace;| = \sqrt&lbrace;4 + 1 + 1&rbrace; = \sqrt&lbrace;6&rbrace;, \quad |\bm&lbrace;b&rbrace;| = \sqrt&lbrace;9 + 0 + 16&rbrace; = 5
+|\bm{a}| = \sqrt{4 + 1 + 1} = \sqrt{6}, \quad |\bm{b}| = \sqrt{9 + 0 + 16} = 5
 $$
 
 $$
-\cos\theta = \frac&lbrace;2&rbrace;&lbrace;5\sqrt&lbrace;6&rbrace;&rbrace; = \frac&lbrace;2&rbrace;&lbrace;5\sqrt&lbrace;6&rbrace;&rbrace;, \quad \theta = \arccos\left(\frac&lbrace;2&rbrace;&lbrace;5\sqrt&lbrace;6&rbrace;&rbrace;\right) \approx 80.7°
+\cos\theta = \frac{2}{5\sqrt{6}} = \frac{2}{5\sqrt{6}}, \quad \theta = \arccos\left(\frac{2}{5\sqrt{6}}\right) \approx 80.7°
 $$
 
 ## Cross Product (Vector Product)
@@ -233,7 +233,7 @@ $$
 The cross product of two vectors produces a vector perpendicular to both:
 
 $$
-|\bm&lbrace;a&rbrace; \times \bm&lbrace;b&rbrace;| = |\bm&lbrace;a&rbrace;||\bm&lbrace;b&rbrace;|\sin\theta
+|\bm{a} \times \bm{b}| = |\bm{a}||\bm{b}|\sin\theta
 $$
 
 The direction is given by the right-hand rule.
@@ -241,21 +241,21 @@ The direction is given by the right-hand rule.
 ### Component Form
 
 $$
-\bm&lbrace;a&rbrace; \times \bm&lbrace;b&rbrace; =
-\begin&lbrace;pmatrix&rbrace;
+\bm{a} \times \bm{b} =
+\begin{pmatrix}
     a_y b_z - a_z b_y \\ a_z b_x - a_x b_z \\ a_x b_y - a_y b_x
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 $$
 
 This can be written as a determinant:
 
 $$
-\bm&lbrace;a&rbrace; \times \bm&lbrace;b&rbrace; =
-\begin&lbrace;vmatrix&rbrace;
-    \hat&lbrace;i&rbrace; & \hat&lbrace;j&rbrace; & \hat&lbrace;k&rbrace;\\
+\bm{a} \times \bm{b} =
+\begin{vmatrix}
+    \hat{i} & \hat{j} & \hat{k}\\
     a_x & a_y & a_z\\
     b_x & b_y & b_z
-\end&lbrace;vmatrix&rbrace;
+\end{vmatrix}
 $$
 
 ### Properties of the Cross Product
@@ -280,18 +280,18 @@ and $\bm{b} = \begin{pmatrix} 4 \\ 5 \\ 6 \end{pmatrix}$.
 **Solution:**
 
 $$
-\bm&lbrace;a&rbrace; \times \bm&lbrace;b&rbrace; =
-\begin&lbrace;pmatrix&rbrace;
+\bm{a} \times \bm{b} =
+\begin{pmatrix}
     (2)(6) - (3)(5) \\ (3)(4) - (1)(6) \\ (1)(5) - (2)(4)
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 =
-\begin&lbrace;pmatrix&rbrace;
+\begin{pmatrix}
     12 - 15 \\ 12 - 6 \\ 5 - 8
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 =
-\begin&lbrace;pmatrix&rbrace;
+\begin{pmatrix}
     -3 \\ 6 \\ -3
-\end&lbrace;pmatrix&rbrace;
+\end{pmatrix}
 $$
 
 ## Intersections
@@ -312,11 +312,11 @@ To find where line $\bm{r} = \bm{a} + t\bm{b}$ intersects plane $\bm{r} \cdot \h
 
 1. Substitute $\bm{r} = \bm{a} + t\bm{b}$ into the plane equation:
    $$
-   (\bm&lbrace;a&rbrace; + t\bm&lbrace;b&rbrace;) \cdot \hat&lbrace;n&rbrace; = d
+   (\bm{a} + t\bm{b}) \cdot \hat{n} = d
    $$
 2. Solve for $t$:
    $$
-   t = \frac&lbrace;d - \bm&lbrace;a&rbrace; \cdot \hat&lbrace;n&rbrace;&rbrace;&lbrace;\bm&lbrace;b&rbrace; \cdot \hat&lbrace;n&rbrace;&rbrace;
+   t = \frac{d - \bm{a} \cdot \hat{n}}{\bm{b} \cdot \hat{n}}
    $$
 3. If $\bm{b} \cdot \hat{n} = 0$, the line is parallel to the plane (no intersection or lies in the
    plane)
@@ -335,19 +335,19 @@ Point on line: $\bm{a} = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix}$, direction:
 $\bm{b} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$.
 
 $$
-\bm&lbrace;a&rbrace; \cdot \hat&lbrace;n&rbrace; = (1)(2) + (0)(-1) + (2)(1) = 4
+\bm{a} \cdot \hat{n} = (1)(2) + (0)(-1) + (2)(1) = 4
 $$
 
 $$
-\bm&lbrace;b&rbrace; \cdot \hat&lbrace;n&rbrace; = (2)(2) + (1)(-1) + (-1)(1) = 2
+\bm{b} \cdot \hat{n} = (2)(2) + (1)(-1) + (-1)(1) = 2
 $$
 
 $$
-t = \frac&lbrace;5 - 4&rbrace;&lbrace;2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;
+t = \frac{5 - 4}{2} = \frac{1}{2}
 $$
 
 $$
-\bm&lbrace;r&rbrace; = \begin&lbrace;pmatrix&rbrace; 1 \\ 0 \\ 2 \end&lbrace;pmatrix&rbrace; + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\begin&lbrace;pmatrix&rbrace; 2 \\ 1 \\ -1 \end&lbrace;pmatrix&rbrace; = \begin&lbrace;pmatrix&rbrace; 2 \\ 0.5 \\ 1.5 \end&lbrace;pmatrix&rbrace;
+\bm{r} = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} + \frac{1}{2}\begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix} = \begin{pmatrix} 2 \\ 0.5 \\ 1.5 \end{pmatrix}
 $$
 
 Intersection point: $(2, 0.5, 1.5)$.
@@ -357,7 +357,7 @@ Intersection point: $(2, 0.5, 1.5)$.
 The angle $\alpha$ between a line with direction $\bm{b}$ and a plane with normal $\hat{n}$:
 
 $$
-\sin\alpha = \frac&lbrace;|\bm&lbrace;b&rbrace; \cdot \hat&lbrace;n&rbrace;|&rbrace;&lbrace;|\bm&lbrace;b&rbrace;||\hat&lbrace;n&rbrace;|&rbrace;
+\sin\alpha = \frac{|\bm{b} \cdot \hat{n}|}{|\bm{b}||\hat{n}|}
 $$
 
 ### Angle Between Two Planes
@@ -365,7 +365,7 @@ $$
 The angle $\theta$ between two planes with normals $\hat{n}_1$ and $\hat{n}_2$:
 
 $$
-\cos\theta = \frac&lbrace;|\hat&lbrace;n&rbrace;_1 \cdot \hat&lbrace;n&rbrace;_2|&rbrace;&lbrace;|\hat&lbrace;n&rbrace;_1||\hat&lbrace;n&rbrace;_2|&rbrace;
+\cos\theta = \frac{|\hat{n}_1 \cdot \hat{n}_2|}{|\hat{n}_1||\hat{n}_2|}
 $$
 
 ### Distance from Point to Plane
@@ -374,13 +374,13 @@ The perpendicular distance from point $P$ with position vector $\bm{p}$ to plane
 $\bm{r} \cdot \hat{n} = d$:
 
 $$
-D = \frac&lbrace;|\bm&lbrace;p&rbrace; \cdot \hat&lbrace;n&rbrace; - d|&rbrace;&lbrace;|\hat&lbrace;n&rbrace;|&rbrace;
+D = \frac{|\bm{p} \cdot \hat{n} - d|}{|\hat{n}|}
 $$
 
 If $\hat{n}$ is already a unit vector:
 
 $$
-D = |\bm&lbrace;p&rbrace; \cdot \hat&lbrace;n&rbrace; - d|
+D = |\bm{p} \cdot \hat{n} - d|
 $$
 
 ### Distance Between Two Skew Lines
@@ -389,7 +389,7 @@ The shortest distance between two skew lines $\bm{r}_1 = \bm{a}_1 + t\bm{b}_1$ a
 $\bm{r}_2 = \bm{a}_2 + s\bm{b}_2$:
 
 $$
-D = \frac&lbrace;|(\bm&lbrace;a&rbrace;_2 - \bm&lbrace;a&rbrace;_1) \cdot (\bm&lbrace;b&rbrace;_1 \times \bm&lbrace;b&rbrace;_2)|&rbrace;&lbrace;|\bm&lbrace;b&rbrace;_1 \times \bm&lbrace;b&rbrace;_2|&rbrace;
+D = \frac{|(\bm{a}_2 - \bm{a}_1) \cdot (\bm{b}_1 \times \bm{b}_2)|}{|\bm{b}_1 \times \bm{b}_2|}
 $$
 
 ### Worked Example 4: Distance from Point to Plane
@@ -402,11 +402,11 @@ Normal vector $\hat{n} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$,
 $|\hat{n}| = \sqrt{4 + 1 + 4} = 3$.
 
 $$
-\bm&lbrace;p&rbrace; \cdot \hat&lbrace;n&rbrace; = (1)(2) + (2)(-1) + (3)(2) = 2 - 2 + 6 = 6
+\bm{p} \cdot \hat{n} = (1)(2) + (2)(-1) + (3)(2) = 2 - 2 + 6 = 6
 $$
 
 $$
-D = \frac&lbrace;|6 - 4|&rbrace;&lbrace;3&rbrace; = \frac&lbrace;2&rbrace;&lbrace;3&rbrace;
+D = \frac{|6 - 4|}{3} = \frac{2}{3}
 $$
 
 ## Applications to Geometry
@@ -423,13 +423,13 @@ To find the foot of the perpendicular from point $P$ to line $\bm{r} = \bm{a} + 
 The foot $F$ satisfies:
 
 $$
-\overrightarrow&lbrace;PF&rbrace; \cdot \bm&lbrace;b&rbrace; = 0
+\overrightarrow{PF} \cdot \bm{b} = 0
 $$
 
 Substitute $\bm{F} = \bm{a} + t\bm{b}$ and solve for $t$:
 
 $$
-(\bm&lbrace;a&rbrace; + t\bm&lbrace;b&rbrace; - \bm&lbrace;p&rbrace;) \cdot \bm&lbrace;b&rbrace; = 0 \implies t = \frac&lbrace;(\bm&lbrace;p&rbrace; - \bm&lbrace;a&rbrace;) \cdot \bm&lbrace;b&rbrace;&rbrace;&lbrace;|\bm&lbrace;b&rbrace;|^2&rbrace;
+(\bm{a} + t\bm{b} - \bm{p}) \cdot \bm{b} = 0 \implies t = \frac{(\bm{p} - \bm{a}) \cdot \bm{b}}{|\bm{b}|^2}
 $$
 
 :::tip Exam Tip For vector problems, always draw a diagram first. When finding intersections, check
@@ -449,13 +449,13 @@ $B(3, 0, 1)$, and $C(0, 1, 3)$.
 Find two direction vectors in the plane:
 
 $$
-\overrightarrow&lbrace;AB&rbrace; = \begin&lbrace;pmatrix&rbrace; 2 \\ -2 \\ 2 \end&lbrace;pmatrix&rbrace;, \quad \overrightarrow&lbrace;AC&rbrace; = \begin&lbrace;pmatrix&rbrace; -1 \\ -1 \\ 4 \end&lbrace;pmatrix&rbrace;
+\overrightarrow{AB} = \begin{pmatrix} 2 \\ -2 \\ 2 \end{pmatrix}, \quad \overrightarrow{AC} = \begin{pmatrix} -1 \\ -1 \\ 4 \end{pmatrix}
 $$
 
 Find the normal vector using the cross product:
 
 $$
-\hat&lbrace;n&rbrace; = \overrightarrow&lbrace;AB&rbrace; \times \overrightarrow&lbrace;AC&rbrace; = \begin&lbrace;pmatrix&rbrace; (-2)(4) - (2)(-1) \\ (2)(-1) - (2)(4) \\ (2)(-1) - (-2)(-1) \end&lbrace;pmatrix&rbrace; = \begin&lbrace;pmatrix&rbrace; -8 + 2 \\ -2 - 8 \\ -2 - 2 \end&lbrace;pmatrix&rbrace; = \begin&lbrace;pmatrix&rbrace; -6 \\ -10 \\ -4 \end&lbrace;pmatrix&rbrace;
+\hat{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} (-2)(4) - (2)(-1) \\ (2)(-1) - (2)(4) \\ (2)(-1) - (-2)(-1) \end{pmatrix} = \begin{pmatrix} -8 + 2 \\ -2 - 8 \\ -2 - 2 \end{pmatrix} = \begin{pmatrix} -6 \\ -10 \\ -4 \end{pmatrix}
 $$
 
 Simplify by dividing by $-2$: $\hat{n} = \begin{pmatrix} 3 \\ 5 \\ 2 \end{pmatrix}$.
@@ -483,19 +483,19 @@ $\Pi_2: x + 4y - z = 3$.
 Extract the normal vectors:
 
 $$
-\hat&lbrace;n&rbrace;_1 = \begin&lbrace;pmatrix&rbrace; 2 \\ -1 \\ 3 \end&lbrace;pmatrix&rbrace;, \quad \hat&lbrace;n&rbrace;_2 = \begin&lbrace;pmatrix&rbrace; 1 \\ 4 \\ -1 \end&lbrace;pmatrix&rbrace;
+\hat{n}_1 = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}, \quad \hat{n}_2 = \begin{pmatrix} 1 \\ 4 \\ -1 \end{pmatrix}
 $$
 
 $$
-\hat&lbrace;n&rbrace;_1 \cdot \hat&lbrace;n&rbrace;_2 = (2)(1) + (-1)(4) + (3)(-1) = 2 - 4 - 3 = -5
+\hat{n}_1 \cdot \hat{n}_2 = (2)(1) + (-1)(4) + (3)(-1) = 2 - 4 - 3 = -5
 $$
 
 $$
-|\hat&lbrace;n&rbrace;_1| = \sqrt&lbrace;4 + 1 + 9&rbrace; = \sqrt&lbrace;14&rbrace;, \quad |\hat&lbrace;n&rbrace;_2| = \sqrt&lbrace;1 + 16 + 1&rbrace; = \sqrt&lbrace;18&rbrace; = 3\sqrt&lbrace;2&rbrace;
+|\hat{n}_1| = \sqrt{4 + 1 + 9} = \sqrt{14}, \quad |\hat{n}_2| = \sqrt{1 + 16 + 1} = \sqrt{18} = 3\sqrt{2}
 $$
 
 $$
-\cos\theta = \frac&lbrace;|\hat&lbrace;n&rbrace;_1 \cdot \hat&lbrace;n&rbrace;_2|&rbrace;&lbrace;|\hat&lbrace;n&rbrace;_1||\hat&lbrace;n&rbrace;_2|&rbrace; = \frac&lbrace;5&rbrace;&lbrace;\sqrt&lbrace;14&rbrace; \cdot 3\sqrt&lbrace;2&rbrace;&rbrace; = \frac&lbrace;5&rbrace;&lbrace;3\sqrt&lbrace;28&rbrace;&rbrace; = \frac&lbrace;5&rbrace;&lbrace;3 \times 5.292&rbrace; = 0.315
+\cos\theta = \frac{|\hat{n}_1 \cdot \hat{n}_2|}{|\hat{n}_1||\hat{n}_2|} = \frac{5}{\sqrt{14} \cdot 3\sqrt{2}} = \frac{5}{3\sqrt{28}} = \frac{5}{3 \times 5.292} = 0.315
 $$
 
 $$
@@ -514,11 +514,11 @@ Normal vector $\hat{n} = \begin{pmatrix} 1 \\ -2 \\ 2 \end{pmatrix}$,
 $|\hat{n}| = \sqrt{1 + 4 + 4} = 3$.
 
 $$
-\bm&lbrace;p&rbrace; \cdot \hat&lbrace;n&rbrace; = (3)(1) + (-1)(-2) + (2)(2) = 3 + 2 + 4 = 9
+\bm{p} \cdot \hat{n} = (3)(1) + (-1)(-2) + (2)(2) = 3 + 2 + 4 = 9
 $$
 
 $$
-D = \frac&lbrace;|\bm&lbrace;p&rbrace; \cdot \hat&lbrace;n&rbrace; - d|&rbrace;&lbrace;|\hat&lbrace;n&rbrace;|&rbrace; = \frac&lbrace;|9 - 5|&rbrace;&lbrace;3&rbrace; = \frac&lbrace;4&rbrace;&lbrace;3&rbrace;
+D = \frac{|\bm{p} \cdot \hat{n} - d|}{|\hat{n}|} = \frac{|9 - 5|}{3} = \frac{4}{3}
 $$
 
 ---
@@ -533,7 +533,7 @@ $\Pi_1: x + y - z = 4$ and $\Pi_2: 2x - y + z = 1$.
 The direction vector of the line is perpendicular to both normals:
 
 $$
-\bm&lbrace;d&rbrace; = \hat&lbrace;n&rbrace;_1 \times \hat&lbrace;n&rbrace;_2 = \begin&lbrace;pmatrix&rbrace; 1 \\ 1 \\ -1 \end&lbrace;pmatrix&rbrace; \times \begin&lbrace;pmatrix&rbrace; 2 \\ -1 \\ 1 \end&lbrace;pmatrix&rbrace; = \begin&lbrace;pmatrix&rbrace; (1)(1) - (-1)(-1) \\ (-1)(2) - (1)(1) \\ (1)(-1) - (1)(2) \end&lbrace;pmatrix&rbrace; = \begin&lbrace;pmatrix&rbrace; 0 \\ -3 \\ -3 \end&lbrace;pmatrix&rbrace;
+\bm{d} = \hat{n}_1 \times \hat{n}_2 = \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \times \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix} = \begin{pmatrix} (1)(1) - (-1)(-1) \\ (-1)(2) - (1)(1) \\ (1)(-1) - (1)(2) \end{pmatrix} = \begin{pmatrix} 0 \\ -3 \\ -3 \end{pmatrix}
 $$
 
 Simplify: $\bm{d} = \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}$.
@@ -548,7 +548,7 @@ A point on the line is $\left(\frac{5}{3}, \frac{7}{3}, 0\right)$.
 The line of intersection is:
 
 $$
-\bm&lbrace;r&rbrace; = \begin&lbrace;pmatrix&rbrace; 5/3 \\ 7/3 \\ 0 \end&lbrace;pmatrix&rbrace; + t\begin&lbrace;pmatrix&rbrace; 0 \\ 1 \\ 1 \end&lbrace;pmatrix&rbrace;
+\bm{r} = \begin{pmatrix} 5/3 \\ 7/3 \\ 0 \end{pmatrix} + t\begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
 $$
 
 ---

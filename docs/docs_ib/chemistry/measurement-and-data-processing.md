@@ -35,7 +35,7 @@ instrument, it equals the smallest division.
 of the measured value:
 
 $$
-\%u = \frac&lbrace;\Delta x&rbrace;&lbrace;x&rbrace; \times 100\%
+\%u = \frac{\Delta x}{x} \times 100\%
 $$
 
 :::info[Example]
@@ -43,7 +43,7 @@ $$
 A burette reading of $24.50\mathrm{ cm}^3$ with smallest division $0.1\mathrm{ cm}^3$:
 
 $$
-\Delta V = 0.05\mathrm&lbrace; cm&rbrace;^3, \quad \%u = \frac&lbrace;0.05&rbrace;&lbrace;24.50&rbrace; \times 100\% = 0.20\%
+\Delta V = 0.05\mathrm{ cm}^3, \quad \%u = \frac{0.05}{24.50} \times 100\% = 0.20\%
 $$
 
 :::
@@ -61,7 +61,7 @@ $$
 For quantities multiplied or divided, add percentage uncertainties:
 
 $$
-\%\mathrm&lbrace;u&rbrace;(a \times b) = \%\mathrm&lbrace;u&rbrace;(a) + \%\mathrm&lbrace;u&rbrace;(b)
+\%\mathrm{u}(a \times b) = \%\mathrm{u}(a) + \%\mathrm{u}(b)
 $$
 
 ### Uncertainty in Powers
@@ -69,7 +69,7 @@ $$
 For a quantity raised to a power, multiply the percentage uncertainty by the power:
 
 $$
-\%\mathrm&lbrace;u&rbrace;(a^n) = n \times \%\mathrm&lbrace;u&rbrace;(a)
+\%\mathrm{u}(a^n) = n \times \%\mathrm{u}(a)
 $$
 
 :::info[Example]
@@ -79,15 +79,15 @@ The density of a sphere: $\rho = \dfrac{m}{\frac{4}{3}\pi r^3}$
 Given $m = 5.00 \pm 0.01\mathrm{ g}$ and $r = 1.00 \pm 0.01\mathrm{ cm}$:
 
 $$
-\%\mathrm&lbrace;u&rbrace;(m) = \frac&lbrace;0.01&rbrace;&lbrace;5.00&rbrace; \times 100\% = 0.20\%
+\%\mathrm{u}(m) = \frac{0.01}{5.00} \times 100\% = 0.20\%
 $$
 
 $$
-\%\mathrm&lbrace;u&rbrace;(r) = \frac&lbrace;0.01&rbrace;&lbrace;1.00&rbrace; \times 100\% = 1.00\%
+\%\mathrm{u}(r) = \frac{0.01}{1.00} \times 100\% = 1.00\%
 $$
 
 $$
-\%\mathrm&lbrace;u&rbrace;(\rho) = \%\mathrm&lbrace;u&rbrace;(m) + 3 \times \%\mathrm&lbrace;u&rbrace;(r) = 0.20\% + 3.00\% = 3.20\%
+\%\mathrm{u}(\rho) = \%\mathrm{u}(m) + 3 \times \%\mathrm{u}(r) = 0.20\% + 3.00\% = 3.20\%
 $$
 
 :::
@@ -132,15 +132,15 @@ $$
 :::info[Example]
 
 $$
-12.11 + 0.3 = 12.4 \quad \mathrm&lbrace;(one decimal place)&rbrace;
+12.11 + 0.3 = 12.4 \quad \mathrm{(one decimal place)}
 $$
 
 $$
-3.24 \times 1.5 = 4.9 \quad \mathrm&lbrace;(two sig figs)&rbrace;
+3.24 \times 1.5 = 4.9 \quad \mathrm{(two sig figs)}
 $$
 
 $$
-\log(2.0 \times 10^3) = 3.30 \quad \mathrm&lbrace;(two decimal places)&rbrace;
+\log(2.0 \times 10^3) = 3.30 \quad \mathrm{(two decimal places)}
 $$
 
 :::
@@ -162,7 +162,7 @@ $$
 points. **Minimum gradient line** does the same for the opposite extremes.
 
 $$
-\Delta(\mathrm&lbrace;gradient&rbrace;) = \frac&lbrace;g_&lbrace;\max&rbrace; - g_&lbrace;\min&rbrace;&rbrace;&lbrace;2&rbrace;
+\Delta(\mathrm{gradient}) = \frac{g_{\max} - g_{\min}}{2}
 $$
 
 The y-intercept uncertainty follows the same procedure using the maximum and minimum gradient lines
@@ -196,7 +196,7 @@ IR spectroscopy measures the absorption of infrared radiation by molecular bonds
 when the photon energy matches the energy difference between vibrational states:
 
 $$
-\Delta E = h\nu = \frac&lbrace;hc&rbrace;&lbrace;\lambda&rbrace;
+\Delta E = h\nu = \frac{hc}{\lambda}
 $$
 
 Only bonds with a change in dipole moment during vibration are IR-active.
@@ -206,7 +206,7 @@ Only bonds with a change in dipole moment during vibration are IR-active.
 IR spectra are plotted as transmittance (%) versus wavenumber ($\bar{\nu}$) in $\mathrm{cm}^{-1}$:
 
 $$
-\bar&lbrace;\nu&rbrace; = \frac&lbrace;1&rbrace;&lbrace;\lambda&rbrace;
+\bar{\nu} = \frac{1}{\lambda}
 $$
 
 The useful range for organic analysis is approximately $400$--$4000\mathrm{ cm}^{-1}$.
@@ -305,7 +305,7 @@ resonance frequency depends on the electronic environment.
 The chemical shift $\delta$ is defined relative to a reference standard (tetramethylsilane, TMS):
 
 $$
-\delta = \frac&lbrace;\nu_&lbrace;\mathrm&lbrace;sample&rbrace;&rbrace; - \nu_&lbrace;\mathrm&lbrace;reference&rbrace;&rbrace;&rbrace;&lbrace;\nu_&lbrace;\mathrm&lbrace;reference&rbrace;&rbrace;&rbrace; \times 10^6\mathrm&lbrace; ppm&rbrace;
+\delta = \frac{\nu_{\mathrm{sample}} - \nu_{\mathrm{reference}}}{\nu_{\mathrm{reference}}} \times 10^6\mathrm{ ppm}
 $$
 
 TMS is assigned $\delta = 0\mathrm{ ppm}$.
@@ -435,27 +435,27 @@ Calculate the density and its percentage uncertainty.
 **Solution:**
 
 $$
-\rho = \frac&lbrace;m&rbrace;&lbrace;V&rbrace; = \frac&lbrace;6.82&rbrace;&lbrace;8.50&rbrace; = 0.802\mathrm&lbrace; g/cm&rbrace;^3
+\rho = \frac{m}{V} = \frac{6.82}{8.50} = 0.802\mathrm{ g/cm}^3
 $$
 
 $$
-\%\mathrm&lbrace;u&rbrace;(m) = \frac&lbrace;0.01&rbrace;&lbrace;6.82&rbrace; \times 100\% = 0.147\%
+\%\mathrm{u}(m) = \frac{0.01}{6.82} \times 100\% = 0.147\%
 $$
 
 $$
-\%\mathrm&lbrace;u&rbrace;(V) = \frac&lbrace;0.05&rbrace;&lbrace;8.50&rbrace; \times 100\% = 0.588\%
+\%\mathrm{u}(V) = \frac{0.05}{8.50} \times 100\% = 0.588\%
 $$
 
 $$
-\%\mathrm&lbrace;u&rbrace;(\rho) = 0.147\% + 0.588\% = 0.735\% \approx 0.7\%
+\%\mathrm{u}(\rho) = 0.147\% + 0.588\% = 0.735\% \approx 0.7\%
 $$
 
 $$
-\Delta\rho = 0.802 \times 0.007 = 0.006\mathrm&lbrace; g/cm&rbrace;^3
+\Delta\rho = 0.802 \times 0.007 = 0.006\mathrm{ g/cm}^3
 $$
 
 $$
-\rho = 0.802 \pm 0.006\mathrm&lbrace; g/cm&rbrace;^3
+\rho = 0.802 \pm 0.006\mathrm{ g/cm}^3
 $$
 
 </details>
@@ -525,11 +525,11 @@ $5.56 \times 10^{14}\mathrm{ Hz}$. Calculate the first ionization energy in $\ma
 **Solution:**
 
 $$
-E = h\nu = (6.626 \times 10^&lbrace;-34&rbrace;)(5.56 \times 10^&lbrace;14&rbrace;) = 3.68 \times 10^&lbrace;-19&rbrace;\mathrm&lbrace; J/atom&rbrace;
+E = h\nu = (6.626 \times 10^{-34})(5.56 \times 10^{14}) = 3.68 \times 10^{-19}\mathrm{ J/atom}
 $$
 
 $$
-E_&lbrace;\mathrm&lbrace;mol&rbrace;&rbrace; = 3.68 \times 10^&lbrace;-19&rbrace; \times 6.022 \times 10^&lbrace;23&rbrace; = 222000\mathrm&lbrace; J/mol&rbrace; = 222\mathrm&lbrace; kJ/mol&rbrace;
+E_{\mathrm{mol}} = 3.68 \times 10^{-19} \times 6.022 \times 10^{23} = 222000\mathrm{ J/mol} = 222\mathrm{ kJ/mol}
 $$
 
 </details>

@@ -1230,14 +1230,14 @@ Use a stack to determine whether `"{[()()]}"` is balanced. Show the stack after 
 
 | Step | Character | Action           | Stack (top on right) |
 | ---- | --------- | ---------------- | -------------------- |
-| 1    | &lbrace;         | Push &lbrace;           | &lbrace;                    |
-| 2    | [         | Push [           | &lbrace;, [                 |
-| 3    | (         | Push (           | &lbrace;, [, (              |
-| 4    | )         | Pop (, matches ) | &lbrace;, [                 |
-| 5    | (         | Push (           | &lbrace;, [, (              |
-| 6    | )         | Pop (, matches ) | &lbrace;, [                 |
-| 7    | ]         | Pop [, matches ] | &lbrace;                    |
-| 8    | &rbrace;         | Pop &lbrace;, matches &rbrace; | (empty)              |
+| 1    | {         | Push {           | {                    |
+| 2    | [         | Push [           | {, [                 |
+| 3    | (         | Push (           | {, [, (              |
+| 4    | )         | Pop (, matches ) | {, [                 |
+| 5    | (         | Push (           | {, [, (              |
+| 6    | )         | Pop (, matches ) | {, [                 |
+| 7    | ]         | Pop [, matches ] | {                    |
+| 8    | }         | Pop {, matches } | (empty)              |
 
 The stack is empty at the end, so the expression is balanced.
 

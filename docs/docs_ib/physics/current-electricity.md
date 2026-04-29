@@ -17,13 +17,13 @@ magnitude of the force is directly proportional to the product of the charge mag
 inversely proportional to the square of the separation distance:
 
 $$
-F = k\frac&lbrace;|q_1||q_2|&rbrace;&lbrace;r^2&rbrace;
+F = k\frac{|q_1||q_2|}{r^2}
 $$
 
 where $k$ is Coulomb's constant, defined as:
 
 $$
-k = \frac&lbrace;1&rbrace;&lbrace;4\pi\varepsilon_0&rbrace; = 8.99 \times 10^9 \mathrm&lbrace; N m&rbrace;^2 \mathrm&lbrace; C&rbrace;^&lbrace;-2&rbrace;
+k = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9 \mathrm{ N m}^2 \mathrm{ C}^{-2}
 $$
 
 The permittivity of free space is
@@ -32,7 +32,7 @@ $\varepsilon_0 = 8.85 \times 10^{-12} \mathrm{ C}^2 \mathrm{ N}^{-1} \mathrm{ m}
 In vector form, the force exerted on $q_2$ by $q_1$ is:
 
 $$
-\vec&lbrace;F&rbrace;_&lbrace;12&rbrace; = k\frac&lbrace;q_1 q_2&rbrace;&lbrace;r^2&rbrace;\hat&lbrace;r&rbrace;_&lbrace;12&rbrace;
+\vec{F}_{12} = k\frac{q_1 q_2}{r^2}\hat{r}_{12}
 $$
 
 where $\hat{r}_{12}$ is the unit vector pointing from $q_1$ to $q_2$. Like charges produce a
@@ -42,11 +42,11 @@ repulsive force (positive $F$ along $\hat{r}_{12}$), and unlike charges produce 
 :::info[Data Booklet Reference] Both forms appear in the IB data booklet:
 
 $$
-F = \frac&lbrace;q_1 q_2&rbrace;&lbrace;4\pi\varepsilon_0 r^2&rbrace;
+F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
 $$
 
 $$
-E = \frac&lbrace;q&rbrace;&lbrace;4\pi\varepsilon_0 r^2&rbrace;
+E = \frac{q}{4\pi\varepsilon_0 r^2}
 $$
 
 :::
@@ -57,14 +57,14 @@ The electric field $\vec{E}$ at a point in space is defined as the electrostatic
 positive test charge placed at that point:
 
 $$
-\vec&lbrace;E&rbrace; = \frac&lbrace;\vec&lbrace;F&rbrace;&rbrace;&lbrace;q&rbrace;
+\vec{E} = \frac{\vec{F}}{q}
 $$
 
 The SI unit is $\mathrm{V m}^{-1}$ (equivalent to $\mathrm{N C}^{-1}$). For a point charge $Q$, the
 field at distance $r$ is:
 
 $$
-E = \frac&lbrace;Q&rbrace;&lbrace;4\pi\varepsilon_0 r^2&rbrace;
+E = \frac{Q}{4\pi\varepsilon_0 r^2}
 $$
 
 This is an inverse-square radial field. Field lines point radially outward for positive source
@@ -76,7 +76,7 @@ When two parallel conducting plates are separated by a distance $d$ and maintain
 difference $V$, the electric field between them is uniform:
 
 $$
-E = \frac&lbrace;V&rbrace;&lbrace;d&rbrace;
+E = \frac{V}{d}
 $$
 
 This is exact for infinite plates and an excellent approximation when the plate separation is much
@@ -123,7 +123,7 @@ perpendicular to its initial velocity $v$. This is the electric-field analogue o
 The particle experiences a constant force perpendicular to its motion:
 
 $$
-F = qE \implies a = \frac&lbrace;qE&rbrace;&lbrace;m&rbrace;
+F = qE \implies a = \frac{qE}{m}
 $$
 
 Since the acceleration is perpendicular to the initial velocity, the motion decomposes into:
@@ -137,19 +137,19 @@ $$
 **Perpendicular to plates** (constant acceleration):
 
 $$
-y = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\left(\frac&lbrace;qE&rbrace;&lbrace;m&rbrace;\right)t^2
+y = \frac{1}{2}\left(\frac{qE}{m}\right)t^2
 $$
 
 Eliminating $t$ yields the parabolic trajectory:
 
 $$
-y = \frac&lbrace;qE&rbrace;&lbrace;2mv^2&rbrace;\,x^2
+y = \frac{qE}{2mv^2}\,x^2
 $$
 
 The deflection angle upon exiting the field region is:
 
 $$
-\tan\theta = \frac&lbrace;v_y&rbrace;&lbrace;v_x&rbrace; = \frac&lbrace;qEL&rbrace;&lbrace;mv^2&rbrace;
+\tan\theta = \frac{v_y}{v_x} = \frac{qEL}{mv^2}
 $$
 
 where $L$ is the length of the plates.
@@ -171,26 +171,26 @@ $2.0\mathrm{ cm}$ apart, with a potential difference of $400\mathrm{ V}$ across 
 The uniform electric field is:
 
 $$
-E = \frac&lbrace;V&rbrace;&lbrace;d&rbrace; = \frac&lbrace;400&rbrace;&lbrace;0.020&rbrace; = 2.0 \times 10^4 \mathrm&lbrace; V/m&rbrace;
+E = \frac{V}{d} = \frac{400}{0.020} = 2.0 \times 10^4 \mathrm{ V/m}
 $$
 
 Time between the plates:
 
 $$
-t = \frac&lbrace;L&rbrace;&lbrace;v&rbrace; = \frac&lbrace;0.050&rbrace;&lbrace;3.0 \times 10^7&rbrace; = 1.67 \times 10^&lbrace;-9&rbrace;\mathrm&lbrace; s&rbrace;
+t = \frac{L}{v} = \frac{0.050}{3.0 \times 10^7} = 1.67 \times 10^{-9}\mathrm{ s}
 $$
 
 Vertical acceleration (note: the electron has charge $q = -1.6 \times 10^{-19}\mathrm{ C}$; it is
 deflected toward the positive plate):
 
 $$
-a = \frac&lbrace;eE&rbrace;&lbrace;m_e&rbrace; = \frac&lbrace;(1.6 \times 10^&lbrace;-19&rbrace;)(2.0 \times 10^4)&rbrace;&lbrace;9.11 \times 10^&lbrace;-31&rbrace;&rbrace; = 3.51 \times 10^&lbrace;15&rbrace;\mathrm&lbrace; m/s&rbrace;^2
+a = \frac{eE}{m_e} = \frac{(1.6 \times 10^{-19})(2.0 \times 10^4)}{9.11 \times 10^{-31}} = 3.51 \times 10^{15}\mathrm{ m/s}^2
 $$
 
 Vertical deflection:
 
 $$
-y = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;at^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(3.51 \times 10^&lbrace;15&rbrace;)(1.67 \times 10^&lbrace;-9&rbrace;)^2 = 4.9 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; m&rbrace; = 4.9\mathrm&lbrace; mm&rbrace;
+y = \frac{1}{2}at^2 = \frac{1}{2}(3.51 \times 10^{15})(1.67 \times 10^{-9})^2 = 4.9 \times 10^{-3}\mathrm{ m} = 4.9\mathrm{ mm}
 $$
 
 The electron deflects $4.9\mathrm{ mm}$ toward the positive plate. Since $y = 4.9\mathrm{ mm}$ is
@@ -208,7 +208,7 @@ them.
 Electric current is the rate of flow of charge through a cross-section of a conductor:
 
 $$
-I = \frac&lbrace;\Delta Q&rbrace;&lbrace;\Delta t&rbrace;
+I = \frac{\Delta Q}{\Delta t}
 $$
 
 The SI unit is the ampere ($\mathrm{A}$), where $1\mathrm{ A} = 1\mathrm{ C s}^{-1}$. Conventional
@@ -226,7 +226,7 @@ $e = 1.60 \times 10^{-19}\mathrm{ C}$ and drifts with velocity $v_d$.
 In time $\Delta t$, the volume swept by electrons crossing a given cross-section is:
 
 $$
-\mathrm&lbrace;Volume&rbrace; = A \cdot v_d \cdot \Delta t
+\mathrm{Volume} = A \cdot v_d \cdot \Delta t
 $$
 
 The number of free electrons in this volume:
@@ -244,14 +244,14 @@ $$
 Therefore:
 
 $$
-I = \frac&lbrace;\Delta Q&rbrace;&lbrace;\Delta t&rbrace; = nAev_d
+I = \frac{\Delta Q}{\Delta t} = nAev_d
 $$
 
 :::info[Typical Values] For copper, $n \approx 8.5 \times 10^{28}\mathrm{ m}^{-3}$. For a
 $1\mathrm{ mm}^2$ copper wire carrying $1\mathrm{ A}$, the drift velocity is:
 
 $$
-v_d = \frac&lbrace;I&rbrace;&lbrace;nAe&rbrace; = \frac&lbrace;1.0&rbrace;&lbrace;(8.5 \times 10^&lbrace;28&rbrace;)(10^&lbrace;-6&rbrace;)(1.6 \times 10^&lbrace;-19&rbrace;)&rbrace; \approx 7.4 \times 10^&lbrace;-5&rbrace;\mathrm&lbrace; m/s&rbrace;
+v_d = \frac{I}{nAe} = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^{-19})} \approx 7.4 \times 10^{-5}\mathrm{ m/s}
 $$
 
 This is extraordinarily slow. The signal (the electric field) propagates at a significant fraction
@@ -267,13 +267,13 @@ aluminium, the free electron density is $n = 6.0 \times 10^{28}\mathrm{ m}^{-3}$
 Cross-sectional area:
 
 $$
-A = \pi r^2 = \pi(0.25 \times 10^&lbrace;-3&rbrace;)^2 = 1.96 \times 10^&lbrace;-7&rbrace;\mathrm&lbrace; m&rbrace;^2
+A = \pi r^2 = \pi(0.25 \times 10^{-3})^2 = 1.96 \times 10^{-7}\mathrm{ m}^2
 $$
 
 Drift velocity:
 
 $$
-v_d = \frac&lbrace;I&rbrace;&lbrace;nAe&rbrace; = \frac&lbrace;2.0&rbrace;&lbrace;(6.0 \times 10^&lbrace;28&rbrace;)(1.96 \times 10^&lbrace;-7&rbrace;)(1.6 \times 10^&lbrace;-19&rbrace;)&rbrace; = 1.06 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; m/s&rbrace;
+v_d = \frac{I}{nAe} = \frac{2.0}{(6.0 \times 10^{28})(1.96 \times 10^{-7})(1.6 \times 10^{-19})} = 1.06 \times 10^{-3}\mathrm{ m/s}
 $$
 
 The drift velocity is approximately $1.1\mathrm{ mm/s}$.
@@ -303,7 +303,7 @@ $$n_e = \frac{Q}{e} = \frac{60}{1.6 \times 10^{-19}} = 3.75 \times 10^{20}$$
 in a circuit:
 
 $$
-V = \frac&lbrace;W&rbrace;&lbrace;Q&rbrace;
+V = \frac{W}{Q}
 $$
 
 SI unit: volt ($\mathrm{V}$), where $1\mathrm{ V} = 1\mathrm{ J C}^{-1}$.
@@ -312,7 +312,7 @@ SI unit: volt ($\mathrm{V}$), where $1\mathrm{ V} = 1\mathrm{ J C}^{-1}$.
 electrical energy per unit charge by a source:
 
 $$
-\varepsilon = \frac&lbrace;W&rbrace;&lbrace;Q&rbrace;
+\varepsilon = \frac{W}{Q}
 $$
 
 Although emf has the same unit as potential difference, they are physically distinct. Emf describes
@@ -343,7 +343,7 @@ The resistance of a uniform conductor depends on its geometry and the intrinsic 
 material called resistivity ($\rho$):
 
 $$
-R = \rho\frac&lbrace;L&rbrace;&lbrace;A&rbrace;
+R = \rho\frac{L}{A}
 $$
 
 where $L$ is the length and $A$ is the cross-sectional area. The SI unit of resistivity is
@@ -460,19 +460,19 @@ For components connected in series, the same current flows through each componen
 resistance is the sum of individual resistances:
 
 $$
-R_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = R_1 + R_2 + R_3 + \cdots
+R_{\mathrm{total}} = R_1 + R_2 + R_3 + \cdots
 $$
 
 The total p.d. is distributed among components in proportion to their resistances:
 
 $$
-V_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = V_1 + V_2 + V_3 + \cdots
+V_{\mathrm{total}} = V_1 + V_2 + V_3 + \cdots
 $$
 
 For two resistors in series, the voltage divider relationship gives:
 
 $$
-V_1 = V_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; \cdot \frac&lbrace;R_1&rbrace;&lbrace;R_1 + R_2&rbrace;
+V_1 = V_{\mathrm{total}} \cdot \frac{R_1}{R_1 + R_2}
 $$
 
 ### 4.2 Parallel Circuits
@@ -481,19 +481,19 @@ For components connected in parallel, the p.d. across each branch is the same. T
 total resistance equals the sum of reciprocals:
 
 $$
-\frac&lbrace;1&rbrace;&lbrace;R_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace;&rbrace; = \frac&lbrace;1&rbrace;&lbrace;R_1&rbrace; + \frac&lbrace;1&rbrace;&lbrace;R_2&rbrace; + \frac&lbrace;1&rbrace;&lbrace;R_3&rbrace; + \cdots
+\frac{1}{R_{\mathrm{total}}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots
 $$
 
 For two resistors in parallel:
 
 $$
-R_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;R_1 R_2&rbrace;&lbrace;R_1 + R_2&rbrace;
+R_{\mathrm{total}} = \frac{R_1 R_2}{R_1 + R_2}
 $$
 
 The total current splits between branches in inverse proportion to their resistances:
 
 $$
-\frac&lbrace;I_1&rbrace;&lbrace;I_2&rbrace; = \frac&lbrace;R_2&rbrace;&lbrace;R_1&rbrace;
+\frac{I_1}{I_2} = \frac{R_2}{R_1}
 $$
 
 <details>
@@ -540,7 +540,7 @@ Kirchhoff's two laws are conservation statements that allow systematic analysis 
 equals the sum of currents leaving it. This is conservation of charge:
 
 $$
-\sum I_&lbrace;\mathrm&lbrace;in&rbrace;&rbrace; = \sum I_&lbrace;\mathrm&lbrace;out&rbrace;&rbrace;
+\sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}
 $$
 
 **Kirchhoff's Voltage Law (KVL) — the Loop Rule.** The sum of all potential differences around any
@@ -577,7 +577,7 @@ $$
 $$
 
 $$
-I = 0.50\mathrm&lbrace; A&rbrace;
+I = 0.50\mathrm{ A}
 $$
 
 The p.d. across each resistor: $V_1 = 2.0\mathrm{ V}$, $V_2 = 3.0\mathrm{ V}$,
@@ -594,7 +594,7 @@ supply. The output voltage is tapped from the junction between resistors.
 For two resistors $R_1$ (upper) and $R_2$ (lower) across supply $V_{\mathrm{in}}$:
 
 $$
-V_&lbrace;\mathrm&lbrace;out&rbrace;&rbrace; = V_&lbrace;\mathrm&lbrace;in&rbrace;&rbrace; \cdot \frac&lbrace;R_2&rbrace;&lbrace;R_1 + R_2&rbrace;
+V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac{R_2}{R_1 + R_2}
 $$
 
 If $R_2$ is replaced by a variable component (thermistor, LDR), the output voltage becomes a
@@ -637,7 +637,7 @@ The p.d. across the fixed resistor increases from $6.0\,\mathrm{V}$ to $8.18\,\m
 The Wheatstone bridge is a null-detection arrangement of four resistors:
 
 $$
-\frac&lbrace;R_1&rbrace;&lbrace;R_2&rbrace; = \frac&lbrace;R_3&rbrace;&lbrace;R_4&rbrace;
+\frac{R_1}{R_2} = \frac{R_3}{R_4}
 $$
 
 When this ratio is satisfied, no current flows through the galvanometer connected between the
@@ -646,7 +646,7 @@ junctions. This condition is used for precise resistance measurement.
 If three resistors are known and one is unknown, balance the bridge and solve:
 
 $$
-R_x = R_2 \cdot \frac&lbrace;R_3&rbrace;&lbrace;R_1&rbrace;
+R_x = R_2 \cdot \frac{R_3}{R_1}
 $$
 
 The sensitivity of the bridge is greatest when all four arms have similar resistances.
@@ -660,15 +660,15 @@ unknown resistor $R_x$ is in the fourth arm. The galvanometer reads zero.
 At balance:
 
 $$
-\frac&lbrace;R_1&rbrace;&lbrace;R_2&rbrace; = \frac&lbrace;R_3&rbrace;&lbrace;R_x&rbrace;
+\frac{R_1}{R_2} = \frac{R_3}{R_x}
 $$
 
 $$
-\frac&lbrace;100&rbrace;&lbrace;200&rbrace; = \frac&lbrace;150&rbrace;&lbrace;R_x&rbrace;
+\frac{100}{200} = \frac{150}{R_x}
 $$
 
 $$
-R_x = \frac&lbrace;200 \times 150&rbrace;&lbrace;100&rbrace; = 300\,\Omega
+R_x = \frac{200 \times 150}{100} = 300\,\Omega
 $$
 
 </details>
@@ -750,11 +750,11 @@ $$
 $$
 
 $$
-r = \frac&lbrace;0.05&rbrace;&lbrace;0.55&rbrace; = 0.091\,\Omega
+r = \frac{0.05}{0.55} = 0.091\,\Omega
 $$
 
 $$
-\varepsilon = 5.8 + 1.2(0.091) = 5.91\mathrm&lbrace; V&rbrace;
+\varepsilon = 5.8 + 1.2(0.091) = 5.91\mathrm{ V}
 $$
 
 </details>
@@ -764,13 +764,13 @@ $$
 The power delivered to the external load $R_L$ is:
 
 $$
-P = I^2 R_L = \left(\frac&lbrace;\varepsilon&rbrace;&lbrace;R_L + r&rbrace;\right)^2 R_L = \frac&lbrace;\varepsilon^2 R_L&rbrace;&lbrace;(R_L + r)^2&rbrace;
+P = I^2 R_L = \left(\frac{\varepsilon}{R_L + r}\right)^2 R_L = \frac{\varepsilon^2 R_L}{(R_L + r)^2}
 $$
 
 To find the maximum, differentiate with respect to $R_L$ and set to zero:
 
 $$
-\frac&lbrace;dP&rbrace;&lbrace;dR_L&rbrace; = \varepsilon^2 \frac&lbrace;(R_L + r)^2 - 2R_L(R_L + r)&rbrace;&lbrace;(R_L + r)^4&rbrace; = 0
+\frac{dP}{dR_L} = \varepsilon^2 \frac{(R_L + r)^2 - 2R_L(R_L + r)}{(R_L + r)^4} = 0
 $$
 
 The numerator simplifies to $(R_L + r)(r - R_L)$, giving $R_L = r$.
@@ -779,7 +779,7 @@ Maximum power is delivered to the load when the load resistance equals the inter
 this condition:
 
 $$
-P_&lbrace;\max&rbrace; = \frac&lbrace;\varepsilon^2&rbrace;&lbrace;4r&rbrace;
+P_{\max} = \frac{\varepsilon^2}{4r}
 $$
 
 :::warning[Efficiency at Maximum Power] At $R_L = r$, the efficiency is only 50% (half the power is
@@ -792,7 +792,7 @@ higher efficiency, even though less total power is delivered.
 **Series.** Identical cells in series: total emf adds, total internal resistance adds.
 
 $$
-\varepsilon_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = n\varepsilon, \quad r_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = nr
+\varepsilon_{\mathrm{total}} = n\varepsilon, \quad r_{\mathrm{total}} = nr
 $$
 
 where $n$ is the number of cells.
@@ -801,7 +801,7 @@ where $n$ is the number of cells.
 resistance decreases.
 
 $$
-\varepsilon_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \varepsilon, \quad r_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;r&rbrace;&lbrace;n&rbrace;
+\varepsilon_{\mathrm{total}} = \varepsilon, \quad r_{\mathrm{total}} = \frac{r}{n}
 $$
 
 Parallel configuration provides the same voltage but can deliver $n$ times the current of a single
@@ -810,7 +810,7 @@ cell.
 **Mixed (series-parallel) banks.** For $n$ rows of $m$ cells each (all identical):
 
 $$
-\varepsilon_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = m\varepsilon, \quad r_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;mr&rbrace;&lbrace;n&rbrace;
+\varepsilon_{\mathrm{total}} = m\varepsilon, \quad r_{\mathrm{total}} = \frac{mr}{n}
 $$
 
 The configuration is chosen based on whether the load requires higher voltage (more cells in series)
@@ -860,7 +860,7 @@ P = I^2 R
 $$
 
 $$
-P = \frac&lbrace;V^2&rbrace;&lbrace;R&rbrace;
+P = \frac{V^2}{R}
 $$
 
 These are all algebraically equivalent for ohmic conductors. The form to use depends on what is held
@@ -872,7 +872,7 @@ constant (parallel circuit), use $P = V^2/R$.
 The energy dissipated by a resistor over time $t$ is:
 
 $$
-E = Pt = IVt = I^2 Rt = \frac&lbrace;V^2&rbrace;&lbrace;R&rbrace;t
+E = Pt = IVt = I^2 Rt = \frac{V^2}{R}t
 $$
 
 This energy appears as thermal energy in the resistor (Joule heating).
@@ -882,19 +882,19 @@ This energy appears as thermal energy in the resistor (Joule heating).
 The total power output of a cell is:
 
 $$
-P_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \varepsilon I
+P_{\mathrm{total}} = \varepsilon I
 $$
 
 The power delivered to the external circuit:
 
 $$
-P_&lbrace;\mathrm&lbrace;ext&rbrace;&rbrace; = VI = I^2 R_L
+P_{\mathrm{ext}} = VI = I^2 R_L
 $$
 
 The power wasted in the internal resistance:
 
 $$
-P_&lbrace;\mathrm&lbrace;int&rbrace;&rbrace; = I^2 r
+P_{\mathrm{int}} = I^2 r
 $$
 
 Conservation of energy requires $P_{\mathrm{total}} = P_{\mathrm{ext}} + P_{\mathrm{int}}$.
@@ -902,7 +902,7 @@ Conservation of energy requires $P_{\mathrm{total}} = P_{\mathrm{ext}} + P_{\mat
 The efficiency of the cell:
 
 $$
-\eta = \frac&lbrace;P_&lbrace;\mathrm&lbrace;ext&rbrace;&rbrace;&rbrace;&lbrace;P_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace;&rbrace; = \frac&lbrace;R_L&rbrace;&lbrace;R_L + r&rbrace;
+\eta = \frac{P_{\mathrm{ext}}}{P_{\mathrm{total}}} = \frac{R_L}{R_L + r}
 $$
 
 <details>
@@ -914,19 +914,19 @@ resistor of $4.0\,\Omega$.
 Current:
 
 $$
-I = \frac&lbrace;\varepsilon&rbrace;&lbrace;R_L + r&rbrace; = \frac&lbrace;12&rbrace;&lbrace;4.0 + 2.0&rbrace; = 2.0\mathrm&lbrace; A&rbrace;
+I = \frac{\varepsilon}{R_L + r} = \frac{12}{4.0 + 2.0} = 2.0\mathrm{ A}
 $$
 
 Power to external resistor:
 
 $$
-P_&lbrace;\mathrm&lbrace;ext&rbrace;&rbrace; = I^2 R_L = (2.0)^2(4.0) = 16\mathrm&lbrace; W&rbrace;
+P_{\mathrm{ext}} = I^2 R_L = (2.0)^2(4.0) = 16\mathrm{ W}
 $$
 
 Power wasted internally:
 
 $$
-P_&lbrace;\mathrm&lbrace;int&rbrace;&rbrace; = I^2 r = (2.0)^2(2.0) = 8\mathrm&lbrace; W&rbrace;
+P_{\mathrm{int}} = I^2 r = (2.0)^2(2.0) = 8\mathrm{ W}
 $$
 
 Total power: $P_{\mathrm{total}} = 16 + 8 = 24\mathrm{ W}$.
@@ -968,7 +968,7 @@ A non-ideal ammeter in series adds its resistance to the circuit, reducing the c
 true value. The measured current is:
 
 $$
-I_&lbrace;\mathrm&lbrace;measured&rbrace;&rbrace; = \frac&lbrace;\varepsilon&rbrace;&lbrace;R + R_A + r&rbrace;
+I_{\mathrm{measured}} = \frac{\varepsilon}{R + R_A + r}
 $$
 
 which is less than the true current $I_{\mathrm{true}} = \varepsilon/(R + r)$.
@@ -978,7 +978,7 @@ resistance of the component being measured. The equivalent resistance of the par
 is:
 
 $$
-R_&lbrace;\mathrm&lbrace;eq&rbrace;&rbrace; = \frac&lbrace;R \cdot R_V&rbrace;&lbrace;R + R_V&rbrace;
+R_{\mathrm{eq}} = \frac{R \cdot R_V}{R + R_V}
 $$
 
 which is always less than $R$. The measured p.d. is lower than the true p.d.
@@ -997,7 +997,7 @@ full-scale deflection current $I_g = 100\,\mu\mathrm{A}$ and internal resistance
 **Converting to ammeter.** A shunt resistor $R_s$ is connected in parallel to bypass excess current:
 
 $$
-R_s = \frac&lbrace;I_g R_g&rbrace;&lbrace;I - I_g&rbrace;
+R_s = \frac{I_g R_g}{I - I_g}
 $$
 
 For a galvanometer to measure up to $I = 1\mathrm{ A}$:
@@ -1006,7 +1006,7 @@ $R_s = (100 \times 10^{-6} \times 50)/(1 - 100 \times 10^{-6}) \approx 5.0 \time
 **Converting to voltmeter.** A multiplier resistor $R_m$ is connected in series to limit current:
 
 $$
-R_m = \frac&lbrace;V&rbrace;&lbrace;I_g&rbrace; - R_g
+R_m = \frac{V}{I_g} - R_g
 $$
 
 For a galvanometer to measure up to $V = 10\mathrm{ V}$:
@@ -1038,7 +1038,7 @@ that must carry large currents while bypassing the sensitive galvanometer.
 The emf of a cell is the total energy converted per unit charge:
 
 $$
-\varepsilon = \frac&lbrace;E_&lbrace;\mathrm&lbrace;chemical&rbrace;&rbrace;&rbrace;&lbrace;Q&rbrace;
+\varepsilon = \frac{E_{\mathrm{chemical}}}{Q}
 $$
 
 For a cell that converts $E_{\mathrm{chemical}}$ joules of chemical energy when $Q$ coulombs of
@@ -1110,7 +1110,7 @@ $$
 $$
 
 $$
-I_L = 2.0\mathrm&lbrace; A&rbrace;
+I_L = 2.0\mathrm{ A}
 $$
 
 Then $I_1 = 12 - 5(2.0) = 2.0\mathrm{ A}$ and $I_2 = 5 - 2.5(2.0) = 0\mathrm{ A}$.

@@ -29,7 +29,7 @@ slug: states-of-matter
 At a given temperature, molecular speeds follow a distribution:
 
 $$
-f(v) = 4\pi \left(\frac&lbrace;m&rbrace;&lbrace;2\pi k_BT&rbrace;\right)^&lbrace;3/2&rbrace; v^2 \exp\!\left(-\frac&lbrace;mv^2&rbrace;&lbrace;2k_BT&rbrace;\right)
+f(v) = 4\pi \left(\frac{m}{2\pi k_BT}\right)^{3/2} v^2 \exp\!\left(-\frac{mv^2}{2k_BT}\right)
 $$
 
 Key features:
@@ -84,13 +84,13 @@ At RTP ($25\degree\mathrm{C}$, $100\mathrm{ kPa}$): $V_m = 24.8\mathrm{ L/mol}$
 ### Dalton's Law of Partial Pressures
 
 $$
-P_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = P_1 + P_2 + P_3 + \cdots
+P_{\mathrm{total}} = P_1 + P_2 + P_3 + \cdots
 $$
 
 The partial pressure of component $i$:
 
 $$
-P_i = x_i \cdot P_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace;
+P_i = x_i \cdot P_{\mathrm{total}}
 $$
 
 where $x_i = \dfrac{n_i}{n_{\mathrm{total}}}$ is the mole fraction.
@@ -98,7 +98,7 @@ where $x_i = \dfrac{n_i}{n_{\mathrm{total}}}$ is the mole fraction.
 ### Graham's Law of Effusion
 
 $$
-\frac&lbrace;r_1&rbrace;&lbrace;r_2&rbrace; = \sqrt&lbrace;\frac&lbrace;M_2&rbrace;&lbrace;M_1&rbrace;&rbrace;
+\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}
 $$
 
 Lighter gases effuse faster. This is the basis for gas separation by diffusion and for detecting
@@ -125,7 +125,7 @@ Real gases deviate from ideal behaviour when:
 ### Van der Waals Equation
 
 $$
-\left(P + \frac&lbrace;an^2&rbrace;&lbrace;V^2&rbrace;\right)(V - nb) = nRT
+\left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT
 $$
 
 | Parameter | Meaning                                     |
@@ -151,7 +151,7 @@ molecules) deviate more from ideal behaviour.
 ### Compressibility Factor
 
 $$
-Z = \frac&lbrace;PV&rbrace;&lbrace;nRT&rbrace;
+Z = \frac{PV}{nRT}
 $$
 
 - $Z = 1$: ideal gas
@@ -195,7 +195,7 @@ Polar molecules have permanent dipoles. The positive end of one molecule attract
 of another:
 
 $$
-\mathrm&lbrace;HCl&rbrace;\cdots\mathrm&lbrace;HCl&rbrace;
+\mathrm{HCl}\cdots\mathrm{HCl}
 $$
 
 ### Hydrogen Bonding
@@ -316,11 +316,11 @@ at $5.00\mathrm{ atm}$ and $400\mathrm{ K}$.
 Using the combined gas law:
 
 $$
-\frac&lbrace;P_1 V_1&rbrace;&lbrace;T_1&rbrace; = \frac&lbrace;P_2 V_2&rbrace;&lbrace;T_2&rbrace;
+\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
 $$
 
 $$
-V_2 = \frac&lbrace;P_1 V_1 T_2&rbrace;&lbrace;P_2 T_1&rbrace; = \frac&lbrace;2.00 \times 5.00 \times 400&rbrace;&lbrace;5.00 \times 300&rbrace; = \frac&lbrace;4000&rbrace;&lbrace;1500&rbrace; = 2.67\mathrm&lbrace; L&rbrace;
+V_2 = \frac{P_1 V_1 T_2}{P_2 T_1} = \frac{2.00 \times 5.00 \times 400}{5.00 \times 300} = \frac{4000}{1500} = 2.67\mathrm{ L}
 $$
 
 </details>
@@ -358,17 +358,17 @@ $b = 0.043\mathrm{ L/mol}$.
 Ideal gas law:
 
 $$
-P_&lbrace;\mathrm&lbrace;ideal&rbrace;&rbrace; = \frac&lbrace;nRT&rbrace;&lbrace;V&rbrace; = \frac&lbrace;1.00 \times 0.0821 \times 300&rbrace;&lbrace;5.00&rbrace; = \frac&lbrace;24.63&rbrace;&lbrace;5.00&rbrace; = 4.93\mathrm&lbrace; atm&rbrace;
+P_{\mathrm{ideal}} = \frac{nRT}{V} = \frac{1.00 \times 0.0821 \times 300}{5.00} = \frac{24.63}{5.00} = 4.93\mathrm{ atm}
 $$
 
 Van der Waals:
 
 $$
-\left(P + \frac&lbrace;an^2&rbrace;&lbrace;V^2&rbrace;\right)(V - nb) = nRT
+\left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT
 $$
 
 $$
-\left(P + \frac&lbrace;3.59 \times 1&rbrace;&lbrace;25.0&rbrace;\right)(5.00 - 0.043) = 24.63
+\left(P + \frac{3.59 \times 1}{25.0}\right)(5.00 - 0.043) = 24.63
 $$
 
 $$
@@ -376,11 +376,11 @@ $$
 $$
 
 $$
-P + 0.1436 = \frac&lbrace;24.63&rbrace;&lbrace;4.957&rbrace; = 4.970
+P + 0.1436 = \frac{24.63}{4.957} = 4.970
 $$
 
 $$
-P = 4.970 - 0.1436 = 4.83\mathrm&lbrace; atm&rbrace;
+P = 4.970 - 0.1436 = 4.83\mathrm{ atm}
 $$
 
 The van der Waals pressure ($4.83\mathrm{ atm}$) is lower than the ideal gas pressure

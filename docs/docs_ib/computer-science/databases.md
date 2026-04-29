@@ -251,8 +251,8 @@ is also a superkey.
 - **Using natural keys as primary keys:** An email address might seem like a good primary key, but if
   a user changes their email, every foreign key reference must be updated. Surrogate keys (auto-
   incremented integers) avoid this problem.
-- **Forgetting that composite keys require all attributes:** A composite primary key `&lbrace;studentID,
-  courseID&rbrace;` means that BOTH attributes together are needed to uniquely identify a row. Neither
+- **Forgetting that composite keys require all attributes:** A composite primary key `{studentID,
+  courseID}` means that BOTH attributes together are needed to uniquely identify a row. Neither
   alone is sufficient.
 
 ## Normalization
@@ -1331,8 +1331,8 @@ relationships with cardinalities, and where foreign keys should be placed.
 
 ### Problem 2: Partial vs Transitive Dependencies
 
-Given a table with columns `&lbrace;orderID, productID, productName, customerID, customerName, quantity,
-unitPrice&rbrace;`, and the primary key is `&lbrace;orderID, productID&rbrace;`:
+Given a table with columns `{orderID, productID, productName, customerID, customerName, quantity,
+unitPrice}`, and the primary key is `{orderID, productID}`:
 - Is `productName` a partial dependency? If so, on what?
 - Is `customerName` a partial dependency? If so, on what?
 

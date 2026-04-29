@@ -636,6 +636,6 @@ requires significant energy to overcome.
 Propane molecules are non-polar and can only form weak van der Waals forces between molecules.
 These are much weaker than hydrogen bonds, so propane has a much lower boiling point despite
 having a similar molar mass ($\mathrm{C_3H_8} = 44 \mathrm{ g/mol}$ vs $\mathrm{C_3H_8O} = 60
-\mathrm&lbrace; g/mol&rbrace;$).
+\mathrm{ g/mol}$).
 
 </details>

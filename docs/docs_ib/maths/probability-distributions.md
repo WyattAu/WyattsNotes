@@ -28,7 +28,7 @@ possible value. It must satisfy:
 ### Cumulative Distribution Function (CDF)
 
 $$
-F(x) = P(X \le x) = \sum_&lbrace;t \le x&rbrace; p(t)
+F(x) = P(X \le x) = \sum_{t \le x} p(t)
 $$
 
 The CDF is non-decreasing and right-continuous, with $F(-\infty) = 0$ and $F(\infty) = 1$. For a
@@ -40,14 +40,14 @@ each jump at $x = a$ equals $P(X = a)$.
 The **expected value** (mean) of $X$ is the probability-weighted average of all possible values:
 
 $$
-E(X) = \mu = \sum_&lbrace;\mathrm&lbrace;all &rbrace; x&rbrace; x \cdot p(x)
+E(X) = \mu = \sum_{\mathrm{all } x} x \cdot p(x)
 $$
 
 This represents the long-run average if the experiment is repeated many times. For a function
 $g(X)$:
 
 $$
-E(g(X)) = \sum_&lbrace;\mathrm&lbrace;all &rbrace; x&rbrace; g(x) \cdot p(x)
+E(g(X)) = \sum_{\mathrm{all } x} g(x) \cdot p(x)
 $$
 
 A critical special case is $E(X^2) = \sum x^2 p(x)$.
@@ -55,13 +55,13 @@ A critical special case is $E(X^2) = \sum x^2 p(x)$.
 ### Variance and Standard Deviation
 
 $$
-\mathrm&lbrace;Var&rbrace;(X) = \sigma^2 = E\!\left[(X - \mu)^2\right] = \sum_&lbrace;\mathrm&lbrace;all &rbrace; x&rbrace; (x - \mu)^2 \cdot p(x)
+\mathrm{Var}(X) = \sigma^2 = E\!\left[(X - \mu)^2\right] = \sum_{\mathrm{all } x} (x - \mu)^2 \cdot p(x)
 $$
 
 The **computational formula** is almost always more convenient:
 
 $$
-\mathrm&lbrace;Var&rbrace;(X) = E(X^2) - [E(X)]^2
+\mathrm{Var}(X) = E(X^2) - [E(X)]^2
 $$
 
 The **standard deviation** is $\sigma = \sqrt{\mathrm{Var}(X)}$. It has the same units as $X$ and
@@ -76,7 +76,7 @@ E(a) = a, \quad E(aX) = aE(X), \quad E(X + a) = E(X) + a
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(a) = 0, \quad \mathrm&lbrace;Var&rbrace;(aX) = a^2 \mathrm&lbrace;Var&rbrace;(X), \quad \mathrm&lbrace;Var&rbrace;(X + a) = \mathrm&lbrace;Var&rbrace;(X)
+\mathrm{Var}(a) = 0, \quad \mathrm{Var}(aX) = a^2 \mathrm{Var}(X), \quad \mathrm{Var}(X + a) = \mathrm{Var}(X)
 $$
 
 Adding a constant shifts the distribution but does not change its spread. Multiplying by $a$ scales
@@ -99,7 +99,7 @@ E(X^2) = 0(0.1) + 1(0.4) + 4(0.3) + 9(0.2) = 3.4
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84, \quad \sigma = \sqrt&lbrace;0.84&rbrace; \approx 0.917
+\mathrm{Var}(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84, \quad \sigma = \sqrt{0.84} \approx 0.917
 $$
 
 :::
@@ -152,7 +152,7 @@ $X$ counts the number of successes in $n$ trials.
 ### Probability Mass Function
 
 $$
-P(X = x) = \binom&lbrace;n&rbrace;&lbrace;x&rbrace; p^x (1-p)^&lbrace;n-x&rbrace;, \quad x = 0, 1, 2, \ldots, n
+P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}, \quad x = 0, 1, 2, \ldots, n
 $$
 
 where $\dbinom{n}{x} = \dfrac{n!}{x!(n-x)!}$ counts the arrangements of $x$ successes among $n$
@@ -161,7 +161,7 @@ trials.
 ### Mean and Variance
 
 $$
-E(X) = np, \quad \mathrm&lbrace;Var&rbrace;(X) = np(1-p), \quad \sigma = \sqrt&lbrace;np(1-p)&rbrace;
+E(X) = np, \quad \mathrm{Var}(X) = np(1-p), \quad \sigma = \sqrt{np(1-p)}
 $$
 
 <details>
@@ -206,11 +206,11 @@ $$
 A **continuity correction** is required. For example:
 
 $$
-P(X \le k) \approx P\!\left(Z \le \frac&lbrace;k + 0.5 - np&rbrace;&lbrace;\sqrt&lbrace;np(1-p)&rbrace;&rbrace;\right)
+P(X \le k) \approx P\!\left(Z \le \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)
 $$
 
 $$
-P(X = k) \approx P\!\left(\frac&lbrace;k - 0.5 - np&rbrace;&lbrace;\sqrt&lbrace;np(1-p)&rbrace;&rbrace; \lt Z \lt \frac&lbrace;k + 0.5 - np&rbrace;&lbrace;\sqrt&lbrace;np(1-p)&rbrace;&rbrace;\right)
+P(X = k) \approx P\!\left(\frac{k - 0.5 - np}{\sqrt{np(1-p)}} \lt Z \lt \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)
 $$
 
 :::info[Example]
@@ -282,7 +282,7 @@ $X \sim \mathrm{Po}(\lambda)$ models the number of events in a fixed interval of
 ### Probability Mass Function
 
 $$
-P(X = x) = \frac&lbrace;e^&lbrace;-\lambda&rbrace; \lambda^x&rbrace;&lbrace;x!&rbrace;, \quad x = 0, 1, 2, \ldots
+P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}, \quad x = 0, 1, 2, \ldots
 $$
 
 where $\lambda \gt 0$ is the mean number of events, and $e \approx 2.71828$.
@@ -290,7 +290,7 @@ where $\lambda \gt 0$ is the mean number of events, and $e \approx 2.71828$.
 ### Mean and Variance
 
 $$
-E(X) = \lambda, \quad \mathrm&lbrace;Var&rbrace;(X) = \lambda
+E(X) = \lambda, \quad \mathrm{Var}(X) = \lambda
 $$
 
 That $E(X) = \mathrm{Var}(X)$ is a distinguishing feature. If observed data has mean approximately
@@ -320,7 +320,7 @@ small, and $np$ is moderate (typically $n \ge 50$, $p \le 0.1$).
 If $X \sim \mathrm{Po}(\lambda_1)$ and $Y \sim \mathrm{Po}(\lambda_2)$ are independent, then:
 
 $$
-X + Y \sim \mathrm&lbrace;Po&rbrace;(\lambda_1 + \lambda_2)
+X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)
 $$
 
 If the rate is $\lambda$ per unit interval, then over $t$ intervals the count is
@@ -394,7 +394,7 @@ $$P(Y \gt 30) \approx P\!\left(Z \gt \frac{30.5 - 25.2}{5.020}\right) = P(Z \gt 
 $X \sim N(\mu, \sigma^2)$ has probability density function:
 
 $$
-f(x) = \frac&lbrace;1&rbrace;&lbrace;\sigma\sqrt&lbrace;2\pi&rbrace;&rbrace; \, e^&lbrace;-\frac&lbrace;(x-\mu)^2&rbrace;&lbrace;2\sigma^2&rbrace;&rbrace;, \quad -\infty \lt x \lt \infty
+f(x) = \frac{1}{\sigma\sqrt{2\pi}} \, e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \quad -\infty \lt x \lt \infty
 $$
 
 Key properties: bell-shaped, symmetric about $x = \mu$, asymptotic to the $x$-axis, total area = 1,
@@ -423,7 +423,7 @@ $$
 The **standard normal** is $Z \sim N(0, 1)$. Any normal variable standardises via:
 
 $$
-Z = \frac&lbrace;X - \mu&rbrace;&lbrace;\sigma&rbrace;
+Z = \frac{X - \mu}{\sigma}
 $$
 
 The CDF is $\Phi(z) = P(Z \le z)$. Key properties:
@@ -437,7 +437,7 @@ $$
 For $X \sim N(\mu, \sigma^2)$, to find $P(a \lt X \lt b)$, convert to $z$-scores:
 
 $$
-P(a \lt X \lt b) = \Phi\!\left(\frac&lbrace;b - \mu&rbrace;&lbrace;\sigma&rbrace;\right) - \Phi\!\left(\frac&lbrace;a - \mu&rbrace;&lbrace;\sigma&rbrace;\right)
+P(a \lt X \lt b) = \Phi\!\left(\frac{b - \mu}{\sigma}\right) - \Phi\!\left(\frac{a - \mu}{\sigma}\right)
 $$
 
 On the GDC these are computed directly without manual standardisation.
@@ -519,7 +519,7 @@ So $\mu \approx 169\,\mathrm{cm}$ and $\sigma \approx 10\,\mathrm{cm}$.
 $X \sim U(a, b)$ has PDF:
 
 $$
-f(x) = \frac&lbrace;1&rbrace;&lbrace;b - a&rbrace;, \quad a \le x \le b
+f(x) = \frac{1}{b - a}, \quad a \le x \le b
 $$
 
 and $f(x) = 0$ otherwise. The PDF is constant over $[a, b]$, meaning all values in the interval are
@@ -528,7 +528,7 @@ equally likely.
 ### Mean and Variance
 
 $$
-E(X) = \frac&lbrace;a + b&rbrace;&lbrace;2&rbrace;, \quad \mathrm&lbrace;Var&rbrace;(X) = \frac&lbrace;(b - a)^2&rbrace;&lbrace;12&rbrace;, \quad \sigma = \frac&lbrace;b - a&rbrace;&lbrace;2\sqrt&lbrace;3&rbrace;&rbrace;
+E(X) = \frac{a + b}{2}, \quad \mathrm{Var}(X) = \frac{(b - a)^2}{12}, \quad \sigma = \frac{b - a}{2\sqrt{3}}
 $$
 
 <details>
@@ -545,7 +545,7 @@ $\mathrm{Var}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4(a^2+ab+
 ### CDF
 
 $$
-F(x) = \begin&lbrace;cases&rbrace; 0 & x \lt a \\ \dfrac&lbrace;x - a&rbrace;&lbrace;b - a&rbrace; & a \le x \le b \\ 1 & x \gt b \end&lbrace;cases&rbrace;
+F(x) = \begin{cases} 0 & x \lt a \\ \dfrac{x - a}{b - a} & a \le x \le b \\ 1 & x \gt b \end{cases}
 $$
 
 For any $[c, d] \subseteq [a, b]$: $P(c \le X \le d) = \dfrac{d - c}{b - a}$.
@@ -575,7 +575,7 @@ Bernoulli trials with success probability $p$.
 ### Probability Mass Function
 
 $$
-P(X = x) = (1-p)^&lbrace;x-1&rbrace; p, \quad x = 1, 2, 3, \ldots
+P(X = x) = (1-p)^{x-1} p, \quad x = 1, 2, 3, \ldots
 $$
 
 The first $x-1$ trials must be failures, and trial $x$ must succeed. This is the probability of
@@ -584,7 +584,7 @@ exactly $x-1$ consecutive failures followed by one success.
 ### Mean and Variance
 
 $$
-E(X) = \frac&lbrace;1&rbrace;&lbrace;p&rbrace;, \quad \mathrm&lbrace;Var&rbrace;(X) = \frac&lbrace;1-p&rbrace;&lbrace;p^2&rbrace;
+E(X) = \frac{1}{p}, \quad \mathrm{Var}(X) = \frac{1-p}{p^2}
 $$
 
 <details>
@@ -658,7 +658,7 @@ geometric distribution is the special case $\mathrm{NB}(1, p)$.
 ### Probability Mass Function
 
 $$
-P(X = x) = \binom&lbrace;x-1&rbrace;&lbrace;r-1&rbrace; p^r (1-p)^&lbrace;x-r&rbrace;, \quad x = r, r+1, r+2, \ldots
+P(X = x) = \binom{x-1}{r-1} p^r (1-p)^{x-r}, \quad x = r, r+1, r+2, \ldots
 $$
 
 In the first $x-1$ trials there are $r-1$ successes (in $\dbinom{x-1}{r-1}$ ways), and trial $x$ is
@@ -667,7 +667,7 @@ the $r$-th success.
 ### Mean and Variance
 
 $$
-E(X) = \frac&lbrace;r&rbrace;&lbrace;p&rbrace;, \quad \mathrm&lbrace;Var&rbrace;(X) = \frac&lbrace;r(1-p)&rbrace;&lbrace;p^2&rbrace;
+E(X) = \frac{r}{p}, \quad \mathrm{Var}(X) = \frac{r(1-p)}{p^2}
 $$
 
 Note the parallel with geometric: multiplying $r$ by a factor scales both $E(X)$ and
@@ -694,7 +694,7 @@ If $X_1, X_2, \ldots, X_n$ are independent and identically distributed with mean
 $\sigma^2$, then for large $n$:
 
 $$
-\bar&lbrace;X&rbrace;_n \sim N\!\left(\mu, \frac&lbrace;\sigma^2&rbrace;&lbrace;n&rbrace;\right)
+\bar{X}_n \sim N\!\left(\mu, \frac{\sigma^2}{n}\right)
 $$
 
 This holds regardless of the shape of the original distribution. The rule of thumb is $n \ge 30$.
@@ -706,7 +706,7 @@ The sum $S_n = X_1 + \cdots + X_n$ is approximately $S_n \sim N(n\mu, n\sigma^2)
 ### Standard Error
 
 $$
-\mathrm&lbrace;SE&rbrace;(\bar&lbrace;X&rbrace;) = \frac&lbrace;\sigma&rbrace;&lbrace;\sqrt&lbrace;n&rbrace;&rbrace;
+\mathrm{SE}(\bar{X}) = \frac{\sigma}{\sqrt{n}}
 $$
 
 As $n$ increases, the standard error decreases: larger samples give more precise estimates of the
@@ -744,7 +744,7 @@ parameter lies in any particular interval.
 ### Confidence Interval for the Mean ($\sigma$ known)
 
 $$
-\bar&lbrace;x&rbrace; \pm z_&lbrace;\alpha/2&rbrace; \cdot \frac&lbrace;\sigma&rbrace;&lbrace;\sqrt&lbrace;n&rbrace;&rbrace;
+\bar{x} \pm z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}
 $$
 
 where $z_{\alpha/2}$ satisfies $P(Z \gt z_{\alpha/2}) = \alpha/2$ and $\alpha = 1 - C/100$.
@@ -794,11 +794,11 @@ This is the **linearity of expectation** and holds always, even without independ
 For **independent** $X$ and $Y$:
 
 $$
-\mathrm&lbrace;Var&rbrace;(aX + bY) = a^2\mathrm&lbrace;Var&rbrace;(X) + b^2\mathrm&lbrace;Var&rbrace;(Y)
+\mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)
 $$
 
 $$
-\mathrm&lbrace;Var&rbrace;(X + Y) = \mathrm&lbrace;Var&rbrace;(X) + \mathrm&lbrace;Var&rbrace;(Y), \quad \mathrm&lbrace;Var&rbrace;(X - Y) = \mathrm&lbrace;Var&rbrace;(X) + \mathrm&lbrace;Var&rbrace;(Y)
+\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y), \quad \mathrm{Var}(X - Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)
 $$
 
 Note the plus sign even for differences: subtracting a variable still adds variability.
@@ -806,7 +806,7 @@ Note the plus sign even for differences: subtracting a variable still adds varia
 The general formula (not necessarily independent):
 
 $$
-\mathrm&lbrace;Var&rbrace;(X + Y) = \mathrm&lbrace;Var&rbrace;(X) + \mathrm&lbrace;Var&rbrace;(Y) + 2\mathrm&lbrace;Cov&rbrace;(X, Y)
+\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y) + 2\mathrm{Cov}(X, Y)
 $$
 
 where $\mathrm{Cov}(X, Y) = E(XY) - E(X)E(Y) = 0$ when $X$ and $Y$ are independent.
@@ -823,11 +823,11 @@ $\mathrm{Var}(X+Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$ requires independence.
 If $X_1, \ldots, X_n$ are iid with mean $\mu$ and variance $\sigma^2$:
 
 $$
-E(X_1 + \cdots + X_n) = n\mu, \quad \mathrm&lbrace;Var&rbrace;(X_1 + \cdots + X_n) = n\sigma^2
+E(X_1 + \cdots + X_n) = n\mu, \quad \mathrm{Var}(X_1 + \cdots + X_n) = n\sigma^2
 $$
 
 $$
-E(\bar&lbrace;X&rbrace;) = \mu, \quad \mathrm&lbrace;Var&rbrace;(\bar&lbrace;X&rbrace;) = \frac&lbrace;\sigma^2&rbrace;&lbrace;n&rbrace;
+E(\bar{X}) = \mu, \quad \mathrm{Var}(\bar{X}) = \frac{\sigma^2}{n}
 $$
 
 ### Combining Normal Variables

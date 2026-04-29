@@ -15,7 +15,7 @@ The radian is the standard unit of angular measure. An angle $\theta$ in radians
 ratio of the arc length $s$ subtended by the angle to the radius $r$:
 
 $$
-\theta = \frac&lbrace;s&rbrace;&lbrace;r&rbrace;
+\theta = \frac{s}{r}
 $$
 
 One radian is the angle subtended at the centre of a circle by an arc equal in length to the radius.
@@ -24,19 +24,19 @@ Since the circumference of a circle is $2\pi r$, a full revolution is $2\pi$ rad
 ### Conversion Between Degrees and Radians
 
 $$
-\pi \mathrm&lbrace; rad&rbrace; = 180°
+\pi \mathrm{ rad} = 180°
 $$
 
 To convert from degrees to radians:
 
 $$
-\theta_&lbrace;\mathrm&lbrace;rad&rbrace;&rbrace; = \theta_&lbrace;\mathrm&lbrace;deg&rbrace;&rbrace; \times \frac&lbrace;\pi&rbrace;&lbrace;180&rbrace;
+\theta_{\mathrm{rad}} = \theta_{\mathrm{deg}} \times \frac{\pi}{180}
 $$
 
 To convert from radians to degrees:
 
 $$
-\theta_&lbrace;\mathrm&lbrace;deg&rbrace;&rbrace; = \theta_&lbrace;\mathrm&lbrace;rad&rbrace;&rbrace; \times \frac&lbrace;180&rbrace;&lbrace;\pi&rbrace;
+\theta_{\mathrm{deg}} = \theta_{\mathrm{rad}} \times \frac{180}{\pi}
 $$
 
 ### Arc Length
@@ -52,7 +52,7 @@ $$
 The area of a sector with central angle $\theta$ (in radians) and radius $r$:
 
 $$
-A = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;r^2\theta
+A = \frac{1}{2}r^2\theta
 $$
 
 ### Worked Example: Arc Length and Sector Area
@@ -65,13 +65,13 @@ length and the area of the sector.
 Arc length:
 
 $$
-s = r\theta = 5 \times \frac&lbrace;3\pi&rbrace;&lbrace;4&rbrace; = \frac&lbrace;15\pi&rbrace;&lbrace;4&rbrace; \approx 11.78 \mathrm&lbrace; cm&rbrace;
+s = r\theta = 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78 \mathrm{ cm}
 $$
 
 Sector area:
 
 $$
-A = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;r^2\theta = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(25)\left(\frac&lbrace;3\pi&rbrace;&lbrace;4&rbrace;\right) = \frac&lbrace;75\pi&rbrace;&lbrace;8&rbrace; \approx 29.45 \mathrm&lbrace; cm&rbrace;^2
+A = \frac{1}{2}r^2\theta = \frac{1}{2}(25)\left(\frac{3\pi}{4}\right) = \frac{75\pi}{8} \approx 29.45 \mathrm{ cm}^2
 $$
 
 ## Trigonometric Functions
@@ -79,15 +79,15 @@ $$
 ### Right-Angle Definitions
 
 $$
-\sin \theta = \frac&lbrace;\mathrm&lbrace;opposite&rbrace;&rbrace;&lbrace;\mathrm&lbrace;hypotenuse&rbrace;&rbrace;, \quad
-\cos \theta = \frac&lbrace;\mathrm&lbrace;adjacent&rbrace;&rbrace;&lbrace;\mathrm&lbrace;hypotenuse&rbrace;&rbrace;, \quad
-\tan \theta = \frac&lbrace;\mathrm&lbrace;opposite&rbrace;&rbrace;&lbrace;\mathrm&lbrace;adjacent&rbrace;&rbrace; = \frac&lbrace;\sin \theta&rbrace;&lbrace;\cos \theta&rbrace;
+\sin \theta = \frac{\mathrm{opposite}}{\mathrm{hypotenuse}}, \quad
+\cos \theta = \frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}, \quad
+\tan \theta = \frac{\mathrm{opposite}}{\mathrm{adjacent}} = \frac{\sin \theta}{\cos \theta}
 $$
 
 ### Reciprocal Trigonometric Functions
 
 $$
-\csc\theta = \frac&lbrace;1&rbrace;&lbrace;\sin\theta&rbrace;, \quad \sec\theta = \frac&lbrace;1&rbrace;&lbrace;\cos\theta&rbrace;, \quad \cot\theta = \frac&lbrace;1&rbrace;&lbrace;\tan\theta&rbrace; = \frac&lbrace;\cos\theta&rbrace;&lbrace;\sin\theta&rbrace;
+\csc\theta = \frac{1}{\sin\theta}, \quad \sec\theta = \frac{1}{\cos\theta}, \quad \cot\theta = \frac{1}{\tan\theta} = \frac{\cos\theta}{\sin\theta}
 $$
 
 These are defined wherever the denominator is non-zero.
@@ -163,7 +163,7 @@ For $y = a\sin(bx + c) + d$:
 and show at least one full period clearly.
 :::
 
-<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions=&lbrace;["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]&rbrace; width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
+<DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
 
 Use the sliders to see how changing $a$, $b$, $c$, and $d$ in $y = a\sin(bx + c) + d$ affects the
 graph.
@@ -173,11 +173,11 @@ graph.
 ### Pythagorean Identities
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \sin^2\theta + \cos^2\theta &= 1\\
 1 + \tan^2\theta &= \sec^2\theta\\
 1 + \cot^2\theta &= \csc^2\theta
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 ### Proof of $\sin^2\theta + \cos^2\theta = 1$
@@ -197,7 +197,7 @@ This completes the proof.
 Starting from $\sin^2\theta + \cos^2\theta = 1$, divide both sides by $\cos^2\theta$:
 
 $$
-\frac&lbrace;\sin^2\theta&rbrace;&lbrace;\cos^2\theta&rbrace; + \frac&lbrace;\cos^2\theta&rbrace;&lbrace;\cos^2\theta&rbrace; = \frac&lbrace;1&rbrace;&lbrace;\cos^2\theta&rbrace;
+\frac{\sin^2\theta}{\cos^2\theta} + \frac{\cos^2\theta}{\cos^2\theta} = \frac{1}{\cos^2\theta}
 $$
 
 $$
@@ -209,7 +209,7 @@ $$
 Starting from $\sin^2\theta + \cos^2\theta = 1$, divide both sides by $\sin^2\theta$:
 
 $$
-\frac&lbrace;\sin^2\theta&rbrace;&lbrace;\sin^2\theta&rbrace; + \frac&lbrace;\cos^2\theta&rbrace;&lbrace;\sin^2\theta&rbrace; = \frac&lbrace;1&rbrace;&lbrace;\sin^2\theta&rbrace;
+\frac{\sin^2\theta}{\sin^2\theta} + \frac{\cos^2\theta}{\sin^2\theta} = \frac{1}{\sin^2\theta}
 $$
 
 $$
@@ -219,11 +219,11 @@ $$
 ### Compound Angle Identities
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \sin(A \pm B) &= \sin A \cos B \pm \cos A \sin B\\
 \cos(A \pm B) &= \cos A \cos B \mp \sin A \sin B\\
-\tan(A \pm B) &= \frac&lbrace;\tan A \pm \tan B&rbrace;&lbrace;1 \mp \tan A \tan B&rbrace;
-\end&lbrace;aligned&rbrace;
+\tan(A \pm B) &= \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}
+\end{aligned}
 $$
 
 ### Proof of Compound Angle Formulas (Rotation Matrix)
@@ -234,21 +234,21 @@ $(\cos(A + B), \sin(A + B))$.
 Equivalently, we can first rotate by $B$, then by $A$. The rotation matrix for angle $\alpha$ is:
 
 $$
-R(\alpha) = \begin&lbrace;pmatrix&rbrace; \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end&lbrace;pmatrix&rbrace;
+R(\alpha) = \begin{pmatrix} \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end{pmatrix}
 $$
 
 The composite rotation $R(A)R(B)$ applied to $(1, 0)$:
 
 $$
-\begin&lbrace;pmatrix&rbrace; \cos A & -\sin A \\ \sin A & \cos A \end&lbrace;pmatrix&rbrace;
-\begin&lbrace;pmatrix&rbrace; \cos B & -\sin B \\ \sin B & \cos B \end&lbrace;pmatrix&rbrace;
-\begin&lbrace;pmatrix&rbrace; 1 \\ 0 \end&lbrace;pmatrix&rbrace;
+\begin{pmatrix} \cos A & -\sin A \\ \sin A & \cos A \end{pmatrix}
+\begin{pmatrix} \cos B & -\sin B \\ \sin B & \cos B \end{pmatrix}
+\begin{pmatrix} 1 \\ 0 \end{pmatrix}
 $$
 
 First multiply the matrices:
 
 $$
-R(A)R(B) = \begin&lbrace;pmatrix&rbrace; \cos A \cos B - \sin A \sin B & -\cos A \sin B - \sin A \cos B \\ \sin A \cos B + \cos A \sin B & -\sin A \sin B + \cos A \cos B \end&lbrace;pmatrix&rbrace;
+R(A)R(B) = \begin{pmatrix} \cos A \cos B - \sin A \sin B & -\cos A \sin B - \sin A \cos B \\ \sin A \cos B + \cos A \sin B & -\sin A \sin B + \cos A \cos B \end{pmatrix}
 $$
 
 Applying to $(1, 0)$ gives the top-left and bottom-left entries:
@@ -265,11 +265,11 @@ $\cos(-B) = \cos B$.
 Setting $A = B = \theta$ in the compound angle formulas:
 
 $$
-\begin&lbrace;aligned&rbrace;
+\begin{aligned}
 \sin 2\theta &= 2\sin\theta \cos\theta\\[4pt]
 \cos 2\theta &= \cos^2\theta - \sin^2\theta\\
-\tan 2\theta &= \frac&lbrace;2\tan\theta&rbrace;&lbrace;1 - \tan^2\theta&rbrace;
-\end&lbrace;aligned&rbrace;
+\tan 2\theta &= \frac{2\tan\theta}{1 - \tan^2\theta}
+\end{aligned}
 $$
 
 ### Three Forms of $\cos 2\theta$
@@ -311,21 +311,21 @@ $$
 For $x$ in the appropriate domain:
 
 $$
-\begin&lbrace;aligned&rbrace;
-\sin(\arcsin x) &= x, \quad \mathrm&lbrace;for &rbrace; -1 \le x \le 1\\
-\cos(\arccos x) &= x, \quad \mathrm&lbrace;for &rbrace; -1 \le x \le 1\\
-\tan(\arctan x) &= x, \quad \mathrm&lbrace;for all real &rbrace; x
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\sin(\arcsin x) &= x, \quad \mathrm{for } -1 \le x \le 1\\
+\cos(\arccos x) &= x, \quad \mathrm{for } -1 \le x \le 1\\
+\tan(\arctan x) &= x, \quad \mathrm{for all real } x
+\end{aligned}
 $$
 
 The reverse compositions are only true on restricted domains:
 
 $$
-\begin&lbrace;aligned&rbrace;
-\arcsin(\sin x) &= x, \quad \mathrm&lbrace;for &rbrace; -\frac&lbrace;\pi&rbrace;&lbrace;2&rbrace; \le x \le \frac&lbrace;\pi&rbrace;&lbrace;2&rbrace;\\
-\arccos(\cos x) &= x, \quad \mathrm&lbrace;for &rbrace; 0 \le x \le \pi\\
-\arctan(\tan x) &= x, \quad \mathrm&lbrace;for &rbrace; -\frac&lbrace;\pi&rbrace;&lbrace;2&rbrace; \lt x \lt \frac&lbrace;\pi&rbrace;&lbrace;2&rbrace;
-\end&lbrace;aligned&rbrace;
+\begin{aligned}
+\arcsin(\sin x) &= x, \quad \mathrm{for } -\frac{\pi}{2} \le x \le \frac{\pi}{2}\\
+\arccos(\cos x) &= x, \quad \mathrm{for } 0 \le x \le \pi\\
+\arctan(\tan x) &= x, \quad \mathrm{for } -\frac{\pi}{2} \lt x \lt \frac{\pi}{2}
+\end{aligned}
 $$
 
 ### Worked Example: Inverse Trig Evaluation
@@ -338,7 +338,7 @@ Let $\theta = \arccos\frac{1}{3}$, so $\cos\theta = \frac{1}{3}$ with $\theta \i
 $\cos\theta \gt 0$, we have $\theta$ in the first quadrant, so $\sin\theta \ge 0$:
 
 $$
-\sin\theta = \sqrt&lbrace;1 - \frac&lbrace;1&rbrace;&lbrace;9&rbrace;&rbrace; = \frac&lbrace;2\sqrt&lbrace;2&rbrace;&rbrace;&lbrace;3&rbrace;
+\sin\theta = \sqrt{1 - \frac{1}{9}} = \frac{2\sqrt{2}}{3}
 $$
 
 :::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
@@ -351,7 +351,7 @@ rule.
 ### Sine Rule
 
 $$
-\frac&lbrace;a&rbrace;&lbrace;\sin A&rbrace; = \frac&lbrace;b&rbrace;&lbrace;\sin B&rbrace; = \frac&lbrace;c&rbrace;&lbrace;\sin C&rbrace;
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
 $$
 
 Used when you know:
@@ -368,7 +368,7 @@ $$
 Or equivalently:
 
 $$
-\cos C = \frac&lbrace;a^2 + b^2 - c^2&rbrace;&lbrace;2ab&rbrace;
+\cos C = \frac{a^2 + b^2 - c^2}{2ab}
 $$
 
 Used when you know:
@@ -379,7 +379,7 @@ Used when you know:
 ### Area of a Triangle
 
 $$
-\mathrm&lbrace;Area&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;ab\sin C
+\mathrm{Area} = \frac{1}{2}ab\sin C
 $$
 
 ### Worked Example: Sine Rule
@@ -389,7 +389,7 @@ $$
 **Solution:**
 
 $$
-b = \frac&lbrace;8\sin 30°&rbrace;&lbrace;\sin 45°&rbrace; = \frac&lbrace;4&rbrace;&lbrace;\frac&lbrace;\sqrt&lbrace;2&rbrace;&rbrace;&lbrace;2&rbrace;&rbrace; = 4\sqrt&lbrace;2&rbrace; \approx 5.66 \mathrm&lbrace; cm&rbrace;
+b = \frac{8\sin 30°}{\sin 45°} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
 $$
 
 ### Worked Example: Cosine Rule
@@ -399,11 +399,11 @@ $$
 **Solution:**
 
 $$
-\cos C = \frac&lbrace;5^2 + 7^2 - 8^2&rbrace;&lbrace;2 \times 5 \times 7&rbrace; = \frac&lbrace;25 + 49 - 64&rbrace;&lbrace;70&rbrace; = \frac&lbrace;10&rbrace;&lbrace;70&rbrace; = \frac&lbrace;1&rbrace;&lbrace;7&rbrace;
+\cos C = \frac{5^2 + 7^2 - 8^2}{2 \times 5 \times 7} = \frac{25 + 49 - 64}{70} = \frac{10}{70} = \frac{1}{7}
 $$
 
 $$
-C = \arccos\left(\frac&lbrace;1&rbrace;&lbrace;7&rbrace;\right) \approx 81.8°
+C = \arccos\left(\frac{1}{7}\right) \approx 81.8°
 $$
 
 ## Ambiguous Case of the Sine Rule
@@ -425,7 +425,7 @@ Given sides $a$ and $b$ and angle $A$ (where $a$ is opposite $A$):
 When $\sin B = k$ where $0 \lt k \lt 1$, there are two possible values for $B$:
 
 $$
-B_1 = \arcsin(k) \quad \mathrm&lbrace;and&rbrace; \quad B_2 = 180° - \arcsin(k)
+B_1 = \arcsin(k) \quad \mathrm{and} \quad B_2 = 180° - \arcsin(k)
 $$
 
 Both may be valid since $B_1 + B_2 = 180^\circ$ (so if $A + B_1 \lt 180^\circ$, check whether
@@ -440,7 +440,7 @@ $A + B_2 \lt 180^\circ$ as well).
 Using the sine rule:
 
 $$
-\frac&lbrace;\sin B&rbrace;&lbrace;10&rbrace; = \frac&lbrace;\sin 40°&rbrace;&lbrace;7&rbrace; \implies \sin B = \frac&lbrace;10\sin 40°&rbrace;&lbrace;7&rbrace; \approx 0.919
+\frac{\sin B}{10} = \frac{\sin 40°}{7} \implies \sin B = \frac{10\sin 40°}{7} \approx 0.919
 $$
 
 Since $0 \lt 0.919 \lt 1$, there are two possible values for $B$:
@@ -476,13 +476,13 @@ $c_2 = \frac{7\sin 26.8°}{\sin 40°} \approx 4.89$
 Find angle $B$ using the sine rule:
 
 $$
-\frac&lbrace;\sin B&rbrace;&lbrace;8&rbrace; = \frac&lbrace;\sin 65°&rbrace;&lbrace;12&rbrace; \implies \sin B = \frac&lbrace;2\sin 65°&rbrace;&lbrace;3&rbrace; \approx 0.604
+\frac{\sin B}{8} = \frac{\sin 65°}{12} \implies \sin B = \frac{2\sin 65°}{3} \approx 0.604
 $$
 
 Since $b \lt a$, there is only one solution: $B \approx 37.2^\circ$, so $C = 77.8^\circ$.
 
 $$
-\mathrm&lbrace;Area&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(12)(8)\sin 77.8° \approx 47.0 \mathrm&lbrace; square units&rbrace;
+\mathrm{Area} = \frac{1}{2}(12)(8)\sin 77.8° \approx 47.0 \mathrm{ square units}
 $$
 
 ### Worked Example: Bearing Problem
@@ -499,13 +499,13 @@ $180° - 60° = 120^\circ$.
 Using the cosine rule:
 
 $$
-AC = \sqrt&lbrace;15^2 + 20^2 - 2(15)(20)\cos 120°&rbrace; = \sqrt&lbrace;225 + 400 + 300&rbrace; = \sqrt&lbrace;925&rbrace; = 5\sqrt&lbrace;37&rbrace; \approx 30.4 \mathrm&lbrace; km&rbrace;
+AC = \sqrt{15^2 + 20^2 - 2(15)(20)\cos 120°} = \sqrt{225 + 400 + 300} = \sqrt{925} = 5\sqrt{37} \approx 30.4 \mathrm{ km}
 $$
 
 To find the bearing, find angle $C$:
 
 $$
-\frac&lbrace;\sin C&rbrace;&lbrace;15&rbrace; = \frac&lbrace;\sin 120°&rbrace;&lbrace;5\sqrt&lbrace;37&rbrace;&rbrace; \implies C \approx 25.3°
+\frac{\sin C}{15} = \frac{\sin 120°}{5\sqrt{37}} \implies C \approx 25.3°
 $$
 
 The bearing from $C$ to $A$ is $360° - 110° - 25.3° \approx 225^\circ$.
@@ -515,11 +515,11 @@ The bearing from $C$ to $A$ is $360° - 110° - 25.3° \approx 225^\circ$.
 ### General Solutions
 
 $$
-\begin&lbrace;aligned&rbrace;
-\sin\theta &= k \implies \theta = \arcsin(k) + 2n\pi \mathrm&lbrace; or &rbrace; \theta = \pi - \arcsin(k) + 2n\pi\\
-\cos\theta &= k \implies \theta = \arccos(k) + 2n\pi \mathrm&lbrace; or &rbrace; \theta = -\arccos(k) + 2n\pi\\
+\begin{aligned}
+\sin\theta &= k \implies \theta = \arcsin(k) + 2n\pi \mathrm{ or } \theta = \pi - \arcsin(k) + 2n\pi\\
+\cos\theta &= k \implies \theta = \arccos(k) + 2n\pi \mathrm{ or } \theta = -\arccos(k) + 2n\pi\\
 \tan\theta &= k \implies \theta = \arctan(k) + n\pi
-\end&lbrace;aligned&rbrace;
+\end{aligned}
 $$
 
 where $n \in \mathbb{Z}$.
@@ -533,15 +533,15 @@ where $n \in \mathbb{Z}$.
 Let $u = 2x$, so $u \in [0, 4\pi]$.
 
 $$
-\sin u = \frac&lbrace;1&rbrace;&lbrace;2&rbrace; \implies u = \frac&lbrace;\pi&rbrace;&lbrace;6&rbrace;, \frac&lbrace;5\pi&rbrace;&lbrace;6&rbrace;, 2\pi + \frac&lbrace;\pi&rbrace;&lbrace;6&rbrace;, 2\pi + \frac&lbrace;5\pi&rbrace;&lbrace;6&rbrace;
+\sin u = \frac{1}{2} \implies u = \frac{\pi}{6}, \frac{5\pi}{6}, 2\pi + \frac{\pi}{6}, 2\pi + \frac{5\pi}{6}
 $$
 
 $$
-u = \frac&lbrace;\pi&rbrace;&lbrace;6&rbrace;, \frac&lbrace;5\pi&rbrace;&lbrace;6&rbrace;, \frac&lbrace;13\pi&rbrace;&lbrace;6&rbrace;, \frac&lbrace;17\pi&rbrace;&lbrace;6&rbrace;
+u = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{13\pi}{6}, \frac{17\pi}{6}
 $$
 
 $$
-x = \frac&lbrace;u&rbrace;&lbrace;2&rbrace; = \frac&lbrace;\pi&rbrace;&lbrace;12&rbrace;, \frac&lbrace;5\pi&rbrace;&lbrace;12&rbrace;, \frac&lbrace;13\pi&rbrace;&lbrace;12&rbrace;, \frac&lbrace;17\pi&rbrace;&lbrace;12&rbrace;
+x = \frac{u}{2} = \frac{\pi}{12}, \frac{5\pi}{12}, \frac{13\pi}{12}, \frac{17\pi}{12}
 $$
 
 ### Worked Example: Factoring
@@ -557,7 +557,7 @@ $$
 $$
 
 $$
-u = -\frac&lbrace;1&rbrace;&lbrace;2&rbrace; \mathrm&lbrace; or &rbrace; u = 1
+u = -\frac{1}{2} \mathrm{ or } u = 1
 $$
 
 - $\cos x = -\frac{1}{2} \implies x = \frac{2\pi}{3}, \frac{4\pi}{3}$
@@ -578,13 +578,13 @@ $$
 $$
 
 $$
-\sin^2 x = \frac&lbrace;3&rbrace;&lbrace;4&rbrace; \implies \sin x = \pm\frac&lbrace;\sqrt&lbrace;3&rbrace;&rbrace;&lbrace;2&rbrace;
+\sin^2 x = \frac{3}{4} \implies \sin x = \pm\frac{\sqrt{3}}{2}
 $$
 
 Since $\sin x \gt 0$ in quadrants I and II, and $\sin x \lt 0$ in quadrants III and IV:
 
 $$
-x = \frac&lbrace;\pi&rbrace;&lbrace;3&rbrace;, \frac&lbrace;2\pi&rbrace;&lbrace;3&rbrace;, \frac&lbrace;4\pi&rbrace;&lbrace;3&rbrace;, \frac&lbrace;5\pi&rbrace;&lbrace;3&rbrace;
+x = \frac{\pi}{3}, \frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}
 $$
 
 ### Worked Example: Equations Involving $\tan$
@@ -597,7 +597,7 @@ Since $\tan$ has period $\pi$, $\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ f
 $n \in \mathbb{Z}$.
 
 $$
-x = \frac&lbrace;\pi&rbrace;&lbrace;8&rbrace; + \frac&lbrace;n\pi&rbrace;&lbrace;2&rbrace;
+x = \frac{\pi}{8} + \frac{n\pi}{2}
 $$
 
 For $x \in [0, \pi]$:
@@ -628,11 +628,11 @@ $3\sin x + 4\cos x = 5$ for $x \in [0, 2\pi]$.
 **Solution:**
 
 $$
-R = \sqrt&lbrace;3^2 + 4^2&rbrace; = 5
+R = \sqrt{3^2 + 4^2} = 5
 $$
 
 $$
-\tan\alpha = \frac&lbrace;4&rbrace;&lbrace;3&rbrace; \implies \alpha = \arctan\frac&lbrace;4&rbrace;&lbrace;3&rbrace; \approx 0.927 \mathrm&lbrace; rad&rbrace;
+\tan\alpha = \frac{4}{3} \implies \alpha = \arctan\frac{4}{3} \approx 0.927 \mathrm{ rad}
 $$
 
 So $3\sin x + 4\cos x = 5\sin(x + 0.927)$.
@@ -640,11 +640,11 @@ So $3\sin x + 4\cos x = 5\sin(x + 0.927)$.
 Solving $5\sin(x + 0.927) = 5$:
 
 $$
-\sin(x + 0.927) = 1 \implies x + 0.927 = \frac&lbrace;\pi&rbrace;&lbrace;2&rbrace; + 2n\pi
+\sin(x + 0.927) = 1 \implies x + 0.927 = \frac{\pi}{2} + 2n\pi
 $$
 
 $$
-x = \frac&lbrace;\pi&rbrace;&lbrace;2&rbrace; - 0.927 + 2n\pi \approx 0.644 + 2n\pi
+x = \frac{\pi}{2} - 0.927 + 2n\pi \approx 0.644 + 2n\pi
 $$
 
 For $x \in [0, 2\pi]$: $x \approx 0.644$ rad (the next value $0.644 + 2\pi$ exceeds $2\pi$).
@@ -671,7 +671,7 @@ between a sloping edge and the base.
 The distance from the centre of the base to a vertex is $\frac{6\sqrt{2}}{2} = 3\sqrt{2}$ cm.
 
 $$
-\theta = \arctan\left(\frac&lbrace;4&rbrace;&lbrace;3\sqrt&lbrace;2&rbrace;&rbrace;\right) = \arctan\left(\frac&lbrace;2\sqrt&lbrace;2&rbrace;&rbrace;&lbrace;3&rbrace;\right) \approx 43.3°
+\theta = \arctan\left(\frac{4}{3\sqrt{2}}\right) = \arctan\left(\frac{2\sqrt{2}}{3}\right) \approx 43.3°
 $$
 
 ## Trigonometric Proof Strategies
@@ -704,7 +704,7 @@ standard approach is:
 Multiply numerator and denominator by $1 - \cos x$:
 
 $$
-\frac&lbrace;\sin x(1 - \cos x)&rbrace;&lbrace;(1 + \cos x)(1 - \cos x)&rbrace; = \frac&lbrace;\sin x(1 - \cos x)&rbrace;&lbrace;1 - \cos^2 x&rbrace; = \frac&lbrace;\sin x(1 - \cos x)&rbrace;&lbrace;\sin^2 x&rbrace; = \frac&lbrace;1 - \cos x&rbrace;&lbrace;\sin x&rbrace; = \mathrm&lbrace;RHS&rbrace;
+\frac{\sin x(1 - \cos x)}{(1 + \cos x)(1 - \cos x)} = \frac{\sin x(1 - \cos x)}{1 - \cos^2 x} = \frac{\sin x(1 - \cos x)}{\sin^2 x} = \frac{1 - \cos x}{\sin x} = \mathrm{RHS}
 $$
 
 ### Worked Example: Proof Using Identities
@@ -716,7 +716,7 @@ $$
 Using $\cos 2x = 1 - 2\sin^2 x$ and $\sin 2x = 2\sin x\cos x$:
 
 $$
-\frac&lbrace;1 - (1 - 2\sin^2 x)&rbrace;&lbrace;2\sin x\cos x&rbrace; = \frac&lbrace;2\sin^2 x&rbrace;&lbrace;2\sin x\cos x&rbrace; = \frac&lbrace;\sin x&rbrace;&lbrace;\cos x&rbrace; = \tan x = \mathrm&lbrace;RHS&rbrace;
+\frac{1 - (1 - 2\sin^2 x)}{2\sin x\cos x} = \frac{2\sin^2 x}{2\sin x\cos x} = \frac{\sin x}{\cos x} = \tan x = \mathrm{RHS}
 $$
 
 ### Worked Example: Proof with Compound Angles
@@ -728,7 +728,7 @@ $$
 Expand $\sin(A + B)$ and split the fraction:
 
 $$
-\frac&lbrace;\sin A \cos B + \cos A \sin B&rbrace;&lbrace;\cos A \cos B&rbrace; = \frac&lbrace;\sin A&rbrace;&lbrace;\cos A&rbrace; + \frac&lbrace;\sin B&rbrace;&lbrace;\cos B&rbrace; = \tan A + \tan B = \mathrm&lbrace;RHS&rbrace;
+\frac{\sin A \cos B + \cos A \sin B}{\cos A \cos B} = \frac{\sin A}{\cos A} + \frac{\sin B}{\cos B} = \tan A + \tan B = \mathrm{RHS}
 $$
 
 ## Common Pitfalls
@@ -779,7 +779,7 @@ exact arc length of the sector.
 Using the sector area formula $A = \frac{1}{2}r^2\theta$:
 
 $$
-48 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(64)\theta \implies 48 = 32\theta \implies \theta = \frac&lbrace;3&rbrace;&lbrace;2&rbrace; \mathrm&lbrace; rad&rbrace;
+48 = \frac{1}{2}(64)\theta \implies 48 = 32\theta \implies \theta = \frac{3}{2} \mathrm{ rad}
 $$
 
 Arc length $s = r\theta = 8 \times \frac{3}{2} = 12$ cm.
@@ -798,7 +798,7 @@ Since $\alpha$ is acute: $\cos\alpha = \sqrt{1 - \frac{9}{25}} = \frac{4}{5}$. S
 acute: $\sin\beta = \sqrt{1 - \frac{144}{169}} = \frac{5}{13}$.
 
 $$
-\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta = \frac&lbrace;3&rbrace;&lbrace;5&rbrace; \cdot \frac&lbrace;12&rbrace;&lbrace;13&rbrace; + \frac&lbrace;4&rbrace;&lbrace;5&rbrace; \cdot \frac&lbrace;5&rbrace;&lbrace;13&rbrace; = \frac&lbrace;36&rbrace;&lbrace;65&rbrace; + \frac&lbrace;20&rbrace;&lbrace;65&rbrace; = \frac&lbrace;56&rbrace;&lbrace;65&rbrace;
+\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta = \frac{3}{5} \cdot \frac{12}{13} + \frac{4}{5} \cdot \frac{5}{13} = \frac{36}{65} + \frac{20}{65} = \frac{56}{65}
 $$
 
 </details>
@@ -851,11 +851,11 @@ The largest angle is opposite the longest side, so it is angle $R$ (opposite $r 
 Using the cosine rule:
 
 $$
-\cos R = \frac&lbrace;13^2 + 14^2 - 15^2&rbrace;&lbrace;2 \times 13 \times 14&rbrace; = \frac&lbrace;169 + 196 - 225&rbrace;&lbrace;364&rbrace; = \frac&lbrace;140&rbrace;&lbrace;364&rbrace; = \frac&lbrace;5&rbrace;&lbrace;13&rbrace;
+\cos R = \frac{13^2 + 14^2 - 15^2}{2 \times 13 \times 14} = \frac{169 + 196 - 225}{364} = \frac{140}{364} = \frac{5}{13}
 $$
 
 $$
-R = \arccos\frac&lbrace;5&rbrace;&lbrace;13&rbrace; \approx 67.4°
+R = \arccos\frac{5}{13} \approx 67.4°
 $$
 
 </details>
@@ -870,7 +870,7 @@ $$
 Starting from the LHS:
 
 $$
-\tan^2 x - \sin^2 x = \frac&lbrace;\sin^2 x&rbrace;&lbrace;\cos^2 x&rbrace; - \sin^2 x = \sin^2 x\left(\frac&lbrace;1&rbrace;&lbrace;\cos^2 x&rbrace; - 1\right) = \sin^2 x \cdot \frac&lbrace;1 - \cos^2 x&rbrace;&lbrace;\cos^2 x&rbrace; = \sin^2 x \cdot \frac&lbrace;\sin^2 x&rbrace;&lbrace;\cos^2 x&rbrace; = \tan^2 x \sin^2 x = \mathrm&lbrace;RHS&rbrace;
+\tan^2 x - \sin^2 x = \frac{\sin^2 x}{\cos^2 x} - \sin^2 x = \sin^2 x\left(\frac{1}{\cos^2 x} - 1\right) = \sin^2 x \cdot \frac{1 - \cos^2 x}{\cos^2 x} = \sin^2 x \cdot \frac{\sin^2 x}{\cos^2 x} = \tan^2 x \sin^2 x = \mathrm{RHS}
 $$
 
 </details>
@@ -884,11 +884,11 @@ value.
 **Solution:**
 
 $$
-R = \sqrt&lbrace;1^2 + (\sqrt&lbrace;3&rbrace;)^2&rbrace; = \sqrt&lbrace;1 + 3&rbrace; = 2
+R = \sqrt{1^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2
 $$
 
 $$
-\tan\alpha = \frac&lbrace;\sqrt&lbrace;3&rbrace;&rbrace;&lbrace;1&rbrace; = \sqrt&lbrace;3&rbrace; \implies \alpha = \frac&lbrace;\pi&rbrace;&lbrace;3&rbrace;
+\tan\alpha = \frac{\sqrt{3}}{1} = \sqrt{3} \implies \alpha = \frac{\pi}{3}
 $$
 
 So $\sin x + \sqrt{3}\cos x = 2\sin\left(x + \frac{\pi}{3}\right)$.
@@ -914,17 +914,17 @@ The angle $\theta$ between the space diagonal and its projection onto the base i
 base:
 
 $$
-\sin\theta = \frac&lbrace;3&rbrace;&lbrace;5\sqrt&lbrace;2&rbrace;&rbrace; = \frac&lbrace;3\sqrt&lbrace;2&rbrace;&rbrace;&lbrace;10&rbrace;
+\sin\theta = \frac{3}{5\sqrt{2}} = \frac{3\sqrt{2}}{10}
 $$
 
 $$
-\theta = \arcsin\frac&lbrace;3\sqrt&lbrace;2&rbrace;&rbrace;&lbrace;10&rbrace; \approx 25.1°
+\theta = \arcsin\frac{3\sqrt{2}}{10} \approx 25.1°
 $$
 
 Alternatively, using the tangent:
 
 $$
-\tan\theta = \frac&lbrace;3&rbrace;&lbrace;\sqrt&lbrace;41&rbrace;&rbrace; \implies \theta = \arctan\frac&lbrace;3&rbrace;&lbrace;\sqrt&lbrace;41&rbrace;&rbrace; \approx 25.1°
+\tan\theta = \frac{3}{\sqrt{41}} \implies \theta = \arctan\frac{3}{\sqrt{41}} \approx 25.1°
 $$
 
 </details>
