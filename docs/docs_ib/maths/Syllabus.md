@@ -261,9 +261,7 @@ Solve $\cos 2x = \cos x$ for $0 \le x \le \pi$.
 
 ### Worked Example: Vector Line Intersection (Topic 3, HL)
 
-Find the point of intersection of the lines $\mathbf{r}_1 = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} +
-\lambda\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$ and $\mathbf{r}_2 = \begin{pmatrix} 3 \\ 0 \\ 1
-\end{pmatrix} + \mu\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$.
+Find the point of intersection of the lines $\mathbf{r}_1 = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} + \lambda\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$ and $\mathbf{r}_2 = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} + \mu\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$.
 
 <details>
 <summary>Solution</summary>

@@ -372,8 +372,7 @@ $\theta \approx 122^\circ$
 
 **Problem 3:** Direction vectors: $\overrightarrow{AB} = (2, -1, -1)$ and
 $\overrightarrow{AC} = (1, 1, -3)$. Normal:
-$\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC}
-= (3 - (-1),\; (-1)(-3) - (-1)(1),\; 2 - (-1)) = (4, 4, 3)$.
+$\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC} = (3 - (-1),\; (-1)(-3) - (-1)(1),\; 2 - (-1)) = (4, 4, 3)$.
 Plane: $4(x - 1) + 4(y - 0) + 3(z - 2) = 0$, i.e. $4x + 4y + 3z = 10$.
 
 **Problem 4:**

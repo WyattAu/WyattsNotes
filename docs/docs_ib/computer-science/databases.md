@@ -576,8 +576,10 @@ VALUES (2, 'Bob', 'Jones');
 ```sql
 UPDATE Student SET gpa = 3.8 WHERE studentID = 1;
 
+```sql
 UPDATE Student SET email = 'newemail@school.edu'
 WHERE lastName = 'Jones' AND firstName = 'Bob';
+```
 ```
 
 **DELETE:**
