@@ -670,8 +670,7 @@ $200$ Bq.
 
 ### Worked Example: Nuclear Fission Energy (E.4, HL)
 
-The nuclear reaction $\;^{235}_{92}\mathrm{U} + {}^{1}_{0}\mathrm{n} \rightarrow
-{}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3\,{}^{1}_{0}\mathrm{n}$ is a fission
+The nuclear reaction $\;^{235}_{92}\mathrm{U} + {}^{1}_{0}\mathrm{n} \rightarrow {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3\,{}^{1}_{0}\mathrm{n}$ is a fission
 event. Calculate the energy released.
 (Mass of $\;{}^{235}\mathrm{U} = 235.044$ u,
 mass of $\;{}^{141}\mathrm{Ba} = 140.914$ u,
@@ -1257,8 +1256,7 @@ If you get this wrong, revise: First law of thermodynamics and thermodynamic pro
   towards the centre is the centripetal force -- it is not a separate force but the result of other
   forces (tension, gravity, friction, etc.).
 - **Energy conservation with friction:** When friction is present, mechanical energy is not
-  conserved. Always account for the work done by friction separately: $E_{k,i} + E_{p,i} = E_{k,f}
-  + E_{p,f} + W_{\mathrm{friction}}$.
+  conserved. Always account for the work done by friction separately: $E_{k,i} + E_{p,i} = E_{k,f} + E_{p,f} + W_{\mathrm{friction}}$.
 - **Power and efficiency:** Power is the rate of energy transfer ($P = W/t = Fv$). Efficiency is
   $\eta = \mathrm{useful\;output}/\mathrm{total\;input}$. Do not confuse power with energy or
   forget that efficiency is always less than 1 (or 100%).
@@ -1288,8 +1286,7 @@ If you get this wrong, revise: First law of thermodynamics and thermodynamic pro
   open end there is always a displacement antinode.
 - **Snell's law and TIR:** Total internal reflection can only occur when light travels from a
   higher-index medium to a lower-index medium. Always check this condition first.
-- **Diffraction grating maximum order:** The maximum number of orders is limited by $\sin \theta
-  \leq 1$, giving $n_{\max} = d/\lambda$. If this is not an integer, round down.
+- **Diffraction grating maximum order:** The maximum number of orders is limited by $\sin \theta \leq 1$, giving $n_{\max} = d/\lambda$. If this is not an integer, round down.
 - **Single-slit vs double-slit:** Single-slit diffraction produces a broad central maximum with
   subsidiary maxima; double-slit interference produces equally spaced fringes modulated by the
   single-slit envelope. Do not confuse the two patterns.

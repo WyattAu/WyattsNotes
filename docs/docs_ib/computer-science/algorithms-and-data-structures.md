@@ -916,7 +916,7 @@ Final step: swap arr[i+1] and arr[high], i.e. swap arr[3] and arr[7]:
 
 Result: `[2, 1, 3, 4, 8, 5, 7, 6]`, pivot index = 3.
 
-Left sub-array: `[2, 1, 3]` (all <= 4). Right sub-array: `[8, 5, 7, 6]` (all > 4).
+Left sub-array: `[2, 1, 3]` (all $\le$ 4). Right sub-array: `[8, 5, 7, 6]` (all $\ge$ 4).
 
 </details>
 

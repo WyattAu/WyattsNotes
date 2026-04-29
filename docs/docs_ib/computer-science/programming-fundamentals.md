@@ -402,8 +402,6 @@ REPEAT
     THEN total ← total + value
   END IF
 UNTIL value = -1
-```
-
 **Flag pattern:** Use a boolean to signal loop termination.
 
 ```
