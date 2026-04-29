@@ -130,7 +130,7 @@ of $f$.
 Given $f(x) = \sqrt{x}$ and $g(x) = x - 5$, find the domain of $f \circ g$.
 
 $$
-(f \circ g)(x) = f(x - 5) = \sqrt{x - 5}
+(f \circ g)(x) = f(x - 5) = \sqrt&lbrace;x - 5&rbrace;
 $$
 
 We need $x - 5 \ge 0$, so $x \ge 5$.
@@ -148,7 +148,7 @@ Domain of $f \circ g$: $[5, \infty)$.
 The **inverse function** $f^{-1}$ of $f$ satisfies:
 
 $$
-f^{-1}(f(x)) = x \quad \mathrm{and} \quad f(f^{-1}(x)) = x
+f^&lbrace;-1&rbrace;(f(x)) = x \quad \mathrm&lbrace;and&rbrace; \quad f(f^&lbrace;-1&rbrace;(x)) = x
 $$
 
 ### Existence of Inverses
@@ -169,13 +169,13 @@ intersects the graph more than once.
 Find the inverse of $f(x) = \dfrac{2x + 3}{x - 1}$.
 
 $$
-y = \frac{2x + 3}{x - 1}
+y = \frac&lbrace;2x + 3&rbrace;&lbrace;x - 1&rbrace;
 $$
 
 Swap $x$ and $y$:
 
 $$
-x = \frac{2y + 3}{y - 1}
+x = \frac&lbrace;2y + 3&rbrace;&lbrace;y - 1&rbrace;
 $$
 
 $$
@@ -195,7 +195,7 @@ y(x - 2) = x + 3
 $$
 
 $$
-f^{-1}(x) = \frac{x + 3}{x - 2}
+f^&lbrace;-1&rbrace;(x) = \frac&lbrace;x + 3&rbrace;&lbrace;x - 2&rbrace;
 $$
 
 :::
@@ -315,7 +315,7 @@ Find the asymptotes of $\displaystyle f(x) = \frac{2x + 1}{x - 3}$.
 
 :::
 
-<DesmosGraph title="Function Graphing: Domain, Range, Asymptotes" expressions={["\frac{1}{x}", "x^2", "2^x", "\ln(x)"]} width={800} height={500} />
+<DesmosGraph title="Function Graphing: Domain, Range, Asymptotes" expressions=&lbrace;["\frac&lbrace;1&rbrace;&lbrace;x&rbrace;", "x^2", "2^x", "\ln(x)"]&rbrace; width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
 
 Use the sliders to adjust parameters and observe how the domain, range, and asymptotic behaviour
 change.
@@ -402,13 +402,13 @@ For $ax^n + bx^{n-1} + \cdots = 0$ with roots $\alpha, \beta, \gamma, \ldots$:
 **Quadratic** ($ax^2 + bx + c = 0$):
 
 $$
-\alpha + \beta = -\frac{b}{a}, \quad \alpha\beta = \frac{c}{a}
+\alpha + \beta = -\frac&lbrace;b&rbrace;&lbrace;a&rbrace;, \quad \alpha\beta = \frac&lbrace;c&rbrace;&lbrace;a&rbrace;
 $$
 
 **Cubic** ($ax^3 + bx^2 + cx + d = 0$):
 
 $$
-\alpha + \beta + \gamma = -\frac{b}{a}, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}, \quad \alpha\beta\gamma = -\frac{d}{a}
+\alpha + \beta + \gamma = -\frac&lbrace;b&rbrace;&lbrace;a&rbrace;, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac&lbrace;c&rbrace;&lbrace;a&rbrace;, \quad \alpha\beta\gamma = -\frac&lbrace;d&rbrace;&lbrace;a&rbrace;
 $$
 
 ---
@@ -418,7 +418,7 @@ $$
 ### Linear Inequalities
 
 $$
-ax + b \gt 0 \implies x \gt -\frac{b}{a} \quad (\mathrm{if } a \gt 0)
+ax + b \gt 0 \implies x \gt -\frac&lbrace;b&rbrace;&lbrace;a&rbrace; \quad (\mathrm&lbrace;if &rbrace; a \gt 0)
 $$
 
 :::warning[Exam Tip]
@@ -452,7 +452,7 @@ $$
 $$
 
 $$
-|ax + b| \ge c \iff ax + b \le -c \quad \mathrm{or} \quad ax + b \ge c
+|ax + b| \ge c \iff ax + b \le -c \quad \mathrm&lbrace;or&rbrace; \quad ax + b \ge c
 $$
 
 :::info[Example]
@@ -507,7 +507,7 @@ x^2 - 6x + 6 = 0
 $$
 
 $$
-x = \frac{6 \pm \sqrt{36 - 24}}{2} = \frac{6 \pm 2\sqrt{3}}{2} = 3 \pm \sqrt{3}
+x = \frac&lbrace;6 \pm \sqrt&lbrace;36 - 24&rbrace;&rbrace;&lbrace;2&rbrace; = \frac&lbrace;6 \pm 2\sqrt&lbrace;3&rbrace;&rbrace;&lbrace;2&rbrace; = 3 \pm \sqrt&lbrace;3&rbrace;
 $$
 
 When $x = 3 + \sqrt{3}$: $y = 2(3 + \sqrt{3}) - 3 = 3 + 2\sqrt{3}$.
@@ -523,7 +523,7 @@ When $x = 3 - \sqrt{3}$: $y = 2(3 - \sqrt{3}) - 3 = 3 - 2\sqrt{3}$.
 ### Definition
 
 $$
-|x| = \begin{cases} x & x \ge 0 \\ -x & x \lt 0 \end{cases}
+|x| = \begin&lbrace;cases&rbrace; x & x \ge 0 \\ -x & x \lt 0 \end&lbrace;cases&rbrace;
 $$
 
 ### Graph
@@ -563,7 +563,7 @@ Given $f(x) = \dfrac{x}{x + 2}$ and $g(x) = 2x - 1$:
 **(a)** Find $(f \circ g)(x)$ and state its domain.
 
 $$
-(f \circ g)(x) = f(2x - 1) = \frac{2x - 1}{2x - 1 + 2} = \frac{2x - 1}{2x + 1}
+(f \circ g)(x) = f(2x - 1) = \frac&lbrace;2x - 1&rbrace;&lbrace;2x - 1 + 2&rbrace; = \frac&lbrace;2x - 1&rbrace;&lbrace;2x + 1&rbrace;
 $$
 
 Domain: $2x + 1 \neq 0 \implies x \neq -\dfrac{1}{2}$.
@@ -571,17 +571,17 @@ Domain: $2x + 1 \neq 0 \implies x \neq -\dfrac{1}{2}$.
 **(b)** Find $f^{-1}(x)$.
 
 $$
-y = \frac{x}{x+2} \implies y(x+2) = x \implies xy + 2y = x \implies x(1-y) = 2y
+y = \frac&lbrace;x&rbrace;&lbrace;x+2&rbrace; \implies y(x+2) = x \implies xy + 2y = x \implies x(1-y) = 2y
 $$
 
 $$
-f^{-1}(x) = \frac{2x}{1 - x}, \quad x \neq 1
+f^&lbrace;-1&rbrace;(x) = \frac&lbrace;2x&rbrace;&lbrace;1 - x&rbrace;, \quad x \neq 1
 $$
 
 **(c)** Verify that $f^{-1} \circ f$ is the identity function.
 
 $$
-(f^{-1} \circ f)(x) = f^{-1}\!\left(\frac{x}{x+2}\right) = \frac{2 \cdot \frac{x}{x+2}}{1 - \frac{x}{x+2}} = \frac{\frac{2x}{x+2}}{\frac{2}{x+2}} = x
+(f^&lbrace;-1&rbrace; \circ f)(x) = f^&lbrace;-1&rbrace;\!\left(\frac&lbrace;x&rbrace;&lbrace;x+2&rbrace;\right) = \frac&lbrace;2 \cdot \frac&lbrace;x&rbrace;&lbrace;x+2&rbrace;&rbrace;&lbrace;1 - \frac&lbrace;x&rbrace;&lbrace;x+2&rbrace;&rbrace; = \frac&lbrace;\frac&lbrace;2x&rbrace;&lbrace;x+2&rbrace;&rbrace;&lbrace;\frac&lbrace;2&rbrace;&lbrace;x+2&rbrace;&rbrace; = x
 $$
 
 ### Question 2 (Paper 2 style)
@@ -603,17 +603,17 @@ Range: $[-5, \infty)$.
 **(c)** Find $f^{-1}(x)$ and state its domain.
 
 $$
-y = 2(x-3)^2 - 5 \implies y + 5 = 2(x-3)^2 \implies (x-3)^2 = \frac{y+5}{2}
+y = 2(x-3)^2 - 5 \implies y + 5 = 2(x-3)^2 \implies (x-3)^2 = \frac&lbrace;y+5&rbrace;&lbrace;2&rbrace;
 $$
 
 Since $x \ge 3$, $x - 3 \ge 0$:
 
 $$
-x = 3 + \sqrt{\frac{y+5}{2}}
+x = 3 + \sqrt&lbrace;\frac&lbrace;y+5&rbrace;&lbrace;2&rbrace;&rbrace;
 $$
 
 $$
-f^{-1}(x) = 3 + \sqrt{\frac{x+5}{2}}
+f^&lbrace;-1&rbrace;(x) = 3 + \sqrt&lbrace;\frac&lbrace;x+5&rbrace;&lbrace;2&rbrace;&rbrace;
 $$
 
 Domain of $f^{-1}$ = range of $f$: $[-5, \infty)$.
@@ -639,7 +639,7 @@ The function $f$ is defined as $f(x) = \dfrac{x^2 - 9}{x - 3}$ for $x \neq 3$.
 **(a)** Simplify $f(x)$.
 
 $$
-f(x) = \frac{(x-3)(x+3)}{x-3} = x + 3 \quad \mathrm{for } x \neq 3
+f(x) = \frac&lbrace;(x-3)(x+3)&rbrace;&lbrace;x-3&rbrace; = x + 3 \quad \mathrm&lbrace;for &rbrace; x \neq 3
 $$
 
 **(b)** Find the equations of any asymptotes of $f$.
@@ -660,13 +660,13 @@ when divided by $(x - 1)$. Find $a$ and $b$.
 Since $(x + 3)$ is a factor: $P(-3) = 0$.
 
 $$
--27 + 9a - 3b - 12 = 0 \implies 9a - 3b = 39 \implies 3a - b = 13 \quad \mathrm{(1)}
+-27 + 9a - 3b - 12 = 0 \implies 9a - 3b = 39 \implies 3a - b = 13 \quad \mathrm&lbrace;(1)&rbrace;
 $$
 
 Since $P(1) = -20$:
 
 $$
-1 + a + b - 12 = -20 \implies a + b = -9 \quad \mathrm{(2)}
+1 + a + b - 12 = -20 \implies a + b = -9 \quad \mathrm&lbrace;(2)&rbrace;
 $$
 
 Adding (1) and (2): $4a = 4 \implies a = 1$.
@@ -719,7 +719,7 @@ Key features of the graph of $y = \dfrac{1}{f(x)}$:
 ### Reciprocal of $f(x) = ax + b$
 
 $$
-y = \frac{1}{ax + b}
+y = \frac&lbrace;1&rbrace;&lbrace;ax + b&rbrace;
 $$
 
 This is a rectangular hyperbola with vertical asymptote at $x = -\dfrac{b}{a}$ and horizontal
@@ -754,7 +754,7 @@ Local minimum at $x = 0$: $y = -\dfrac{1}{4}$.
 A rational function is a ratio of two polynomials:
 
 $$
-f(x) = \frac{P(x)}{Q(x)}
+f(x) = \frac&lbrace;P(x)&rbrace;&lbrace;Q(x)&rbrace;
 $$
 
 ### Features to Identify
@@ -778,7 +778,7 @@ Vertical asymptote: $x = 1$.
 Since $\deg P = 2$ and $\deg Q = 1$, there is an oblique asymptote.
 
 $$
-\frac{x^2 + 1}{x - 1} = x + 1 + \frac{2}{x - 1}
+\frac&lbrace;x^2 + 1&rbrace;&lbrace;x - 1&rbrace; = x + 1 + \frac&lbrace;2&rbrace;&lbrace;x - 1&rbrace;
 $$
 
 Oblique asymptote: $y = x + 1$.
@@ -802,7 +802,7 @@ Check that the function value equals the left-hand and right-hand limits at the 
 Is the following function continuous at $x = 2$?
 
 $$
-f(x) = \begin{cases} x^2 & x \le 2 \\ 3x - 2 & x \gt 2 \end{cases}
+f(x) = \begin&lbrace;cases&rbrace; x^2 & x \le 2 \\ 3x - 2 & x \gt 2 \end&lbrace;cases&rbrace;
 $$
 
 $f(2) = 4$.
@@ -827,15 +827,15 @@ The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for $x \in \mathbb
 **(a)** Find the inverse function $f^{-1}$.
 
 $$
-y = \frac{2x + 3}{x - 1} \implies y(x-1) = 2x + 3 \implies yx - y = 2x + 3
+y = \frac&lbrace;2x + 3&rbrace;&lbrace;x - 1&rbrace; \implies y(x-1) = 2x + 3 \implies yx - y = 2x + 3
 $$
 
 $$
-x(y - 2) = y + 3 \implies x = \frac{y + 3}{y - 2}
+x(y - 2) = y + 3 \implies x = \frac&lbrace;y + 3&rbrace;&lbrace;y - 2&rbrace;
 $$
 
 $$
-f^{-1}(x) = \frac{x + 3}{x - 2}, \quad x \neq 2
+f^&lbrace;-1&rbrace;(x) = \frac&lbrace;x + 3&rbrace;&lbrace;x - 2&rbrace;, \quad x \neq 2
 $$
 
 **(b)** State the domain and range of $f^{-1}$.
@@ -847,7 +847,7 @@ Range of $f^{-1}$: $y \neq 1$ (which equals the domain of $f$).
 **(c)** Find the value of $x$ such that $f(x) = f^{-1}(x)$.
 
 $$
-\frac{2x+3}{x-1} = \frac{x+3}{x-2}
+\frac&lbrace;2x+3&rbrace;&lbrace;x-1&rbrace; = \frac&lbrace;x+3&rbrace;&lbrace;x-2&rbrace;
 $$
 
 $$
@@ -863,7 +863,7 @@ x^2 - 3x - 3 = 0
 $$
 
 $$
-x = \frac{3 \pm \sqrt{9+12}}{2} = \frac{3 \pm \sqrt{21}}{2}
+x = \frac&lbrace;3 \pm \sqrt&lbrace;9+12&rbrace;&rbrace;&lbrace;2&rbrace; = \frac&lbrace;3 \pm \sqrt&lbrace;21&rbrace;&rbrace;&lbrace;2&rbrace;
 $$
 
 ### Question 7 (Paper 2 style)

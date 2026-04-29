@@ -18,19 +18,19 @@ charges ($q$) and inversely proportional to the square of the magnitude of the s
 displacement ($\bm{r}$):
 
 $$
-\begin{aligned}
-    |\bm{F}| \propto |q_1||q_2|, \quad |\bm{F}| \propto |\bm{r}|^2\\
-    |\bm{F}| = k \frac{|q_1||q_2|}{|\bm{r}|^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    |\bm&lbrace;F&rbrace;| \propto |q_1||q_2|, \quad |\bm&lbrace;F&rbrace;| \propto |\bm&lbrace;r&rbrace;|^2\\
+    |\bm&lbrace;F&rbrace;| = k \frac&lbrace;|q_1||q_2|&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 :::info Coulomb's Law can also be expressed in vector form, where the force exerted by $q_1$ on
 $q_2$ is:
 
 $$
-\begin{aligned}
-    \bm{F_{12}} = k \frac{q_1 q_2}{|r|^2} \hat{r_{12}} = -\bm{F_{21}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F_&lbrace;12&rbrace;&rbrace; = k \frac&lbrace;q_1 q_2&rbrace;&lbrace;|r|^2&rbrace; \hat&lbrace;r_&lbrace;12&rbrace;&rbrace; = -\bm&lbrace;F_&lbrace;21&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ![Coulombs_law](/img/physics/CoulombsLaw.png)
@@ -39,9 +39,9 @@ $$
 Where the constant $k$ is named Coulomb's constant and is equal to:
 
 $$
-\begin{aligned}
-    k = \frac{1}{4\pi \epsilon_0}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    k = \frac&lbrace;1&rbrace;&lbrace;4\pi \epsilon_0&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 :::info The derivation of Coulomb's constant can be possible with Maxwell's equations. Gauss's Law
@@ -49,28 +49,28 @@ states that the electric flux ($\Phi$) through any closed surface is equal to ne
 enclosed within the surface multiply by the inverse of permittivity of free space ($\epsilon_0$):
 
 $$
-\begin{aligned}
-    \Phi = \oiint\limits_{S} E \cdot dA = \frac{Q}{\epsilon_0}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \Phi = \oiint\limits_&lbrace;S&rbrace; E \cdot dA = \frac&lbrace;Q&rbrace;&lbrace;\epsilon_0&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 For a point charge, symmetry implies a radial electric field, and hence a sphere enclosed surface
 ($4\pi r^2$), therefore, simplifying $\phi$ to:
 
 $$
-\begin{aligned}
-    \Phi = 4\pi r^2 = \frac{Q}{\epsilon_0}\\
-    E = \left(\frac{1}{4\pi\epsilon_0}\right)\left(\frac{Q}{r^2}\right)\\
-    F = q_2 E = \frac{1}{4\pi \epsilon_0} \frac{|q_1||q_2|}{r^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \Phi = 4\pi r^2 = \frac&lbrace;Q&rbrace;&lbrace;\epsilon_0&rbrace;\\
+    E = \left(\frac&lbrace;1&rbrace;&lbrace;4\pi\epsilon_0&rbrace;\right)\left(\frac&lbrace;Q&rbrace;&lbrace;r^2&rbrace;\right)\\
+    F = q_2 E = \frac&lbrace;1&rbrace;&lbrace;4\pi \epsilon_0&rbrace; \frac&lbrace;|q_1||q_2|&rbrace;&lbrace;r^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Coulomb's constant can now be identify as:
 
 $$
-\begin{aligned}
-    k = \frac{1}{4\pi \epsilon_0}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    k = \frac&lbrace;1&rbrace;&lbrace;4\pi \epsilon_0&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 :::
@@ -86,9 +86,9 @@ The electric field $\bm{E}$ with vector quantity of electrostatic force $\bm{F}$
 magnitude of charge, evaluated as:
 
 $$
-\begin{aligned}
-    \bm{E} = \lim_{q \rightarrow 0} \frac{F}{q}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;E&rbrace; = \lim_&lbrace;q \rightarrow 0&rbrace; \frac&lbrace;F&rbrace;&lbrace;q&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Electric Potential Energy
@@ -100,30 +100,30 @@ $\bm{F_{ext}} = \bm{F_e}$ from infinity $(\infty)$ to the potion $\bm{r}$ gives 
 translate the charges:
 
 $$
-\begin{aligned}
-    U &= E_p = W = \int_\infty^{\bm{r}} F_{ext} \cdot d\bm{r} = -\int_\infty^{\bm{r}} F_e \cdot \bm{dr}\\
-    U &= -\int_\infty^{\bm{r}} \left(k\frac{q_1 q_2}{|\bm{r}|^2}\bm{\hat{r}}\right) \cdot \bm{dr}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    U &= E_p = W = \int_\infty^&lbrace;\bm&lbrace;r&rbrace;&rbrace; F_&lbrace;ext&rbrace; \cdot d\bm&lbrace;r&rbrace; = -\int_\infty^&lbrace;\bm&lbrace;r&rbrace;&rbrace; F_e \cdot \bm&lbrace;dr&rbrace;\\
+    U &= -\int_\infty^&lbrace;\bm&lbrace;r&rbrace;&rbrace; \left(k\frac&lbrace;q_1 q_2&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace;\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;\right) \cdot \bm&lbrace;dr&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Separating the magnitude and direction of $\bm{dr}$ gives $d|\bm{r}|\bm{\hat{r}}$, and hence
 changing the bounds ($\bm{r} \rightarrow |\bm{r}|$):
 
 $$
-\begin{aligned}
-    U &= -\int_\infty^{|\bm{r}|} \left(k\frac{q_1 q_2}{|\bm{r}|^2}\bm{\hat{r}}\right) \cdot d|\bm{r}|\bm{\hat{r}}\\
-    U &= -\frac{q_1 q_2}{4\pi\epsilon_0} \int_\infty^{|\bm{r}|} \frac{1}{|\bm{r}|^2} d|\bm{r}|\\
-    U &= -\frac{q_1 q_2}{4\pi\epsilon_0} \left[-\frac{1}{|\bm{r}|}\right]_\infty^{|\bm{r}|}\\
-    U &= \frac{1}{4\pi \epsilon_0}\frac{q_1 q_2}{|\bm{r}|}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    U &= -\int_\infty^&lbrace;|\bm&lbrace;r&rbrace;|&rbrace; \left(k\frac&lbrace;q_1 q_2&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace;\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;\right) \cdot d|\bm&lbrace;r&rbrace;|\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;\\
+    U &= -\frac&lbrace;q_1 q_2&rbrace;&lbrace;4\pi\epsilon_0&rbrace; \int_\infty^&lbrace;|\bm&lbrace;r&rbrace;|&rbrace; \frac&lbrace;1&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace; d|\bm&lbrace;r&rbrace;|\\
+    U &= -\frac&lbrace;q_1 q_2&rbrace;&lbrace;4\pi\epsilon_0&rbrace; \left[-\frac&lbrace;1&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|&rbrace;\right]_\infty^&lbrace;|\bm&lbrace;r&rbrace;|&rbrace;\\
+    U &= \frac&lbrace;1&rbrace;&lbrace;4\pi \epsilon_0&rbrace;\frac&lbrace;q_1 q_2&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 This is written in the formula booklet with $r = |\bm{r}|$ and Coulomb's constant $k$:
 
 $$
-\begin{aligned}
-    U = k\frac{q_1 q_2}{r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    U = k\frac&lbrace;q_1 q_2&rbrace;&lbrace;r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 This implies the electric potential energy is a scalar quantity approaching $0$ at infinite
@@ -135,10 +135,10 @@ The electric potential ($V_e$) is the electric potential energy of a point charg
 displacement $\bm{r}$ per unit charge:
 
 $$
-\begin{aligned}
-    V_e &= \frac{U}{q_2} = \frac{1}{4\pi \epsilon_0}\frac{q_1 q_2}{|\bm{r}|q_2} = \frac{1}{4\pi \epsilon_0}\frac{Q}{|\bm{r}|}\\
-    V_e &= \frac{kQ}{r}, \quad r = |\bm{r}|
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    V_e &= \frac&lbrace;U&rbrace;&lbrace;q_2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;4\pi \epsilon_0&rbrace;\frac&lbrace;q_1 q_2&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|q_2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;4\pi \epsilon_0&rbrace;\frac&lbrace;Q&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|&rbrace;\\
+    V_e &= \frac&lbrace;kQ&rbrace;&lbrace;r&rbrace;, \quad r = |\bm&lbrace;r&rbrace;|
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Electric Field Strength
@@ -147,43 +147,43 @@ The electric field strength ($\bm{E}$) is the force ($\bm{F_{12}}$) per unit cha
 point charge ($q_2$) at a displacement ($\bm{r_{12}}$):
 
 $$
-\begin{aligned}
-  \bm{E} = \frac{\bm{F_{12}}}{q_2} = \frac{1}{4\pi \epsilon_0} \frac{q_1 q_2}{|\bm{r}|^2}\bm{\hat{r_{12}}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \bm&lbrace;E&rbrace; = \frac&lbrace;\bm&lbrace;F_&lbrace;12&rbrace;&rbrace;&rbrace;&lbrace;q_2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;4\pi \epsilon_0&rbrace; \frac&lbrace;q_1 q_2&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace;\bm&lbrace;\hat&lbrace;r_&lbrace;12&rbrace;&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 This is written in the formula booklet with $d = |\bm{r}|$:
 
 $$
-\begin{aligned}
-    E = \frac{F}{q} = k\frac{Q}{d^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E = \frac&lbrace;F&rbrace;&lbrace;q&rbrace; = k\frac&lbrace;Q&rbrace;&lbrace;d^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The electric field strength is also the negative gradient of the electric potential ($V_e$):
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     E = -\nabla V_e
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Since spherical symmetry implies the gradient of electric potential are equal for equal magnitude of
 displacement $\bm{r}$:
 
 $$
-    \nabla V_e = \frac{dV_e}{d|\bm{r}|}\bm{\hat{r}}\\
-    \frac{dV_e}{d|\bm{r}|} = \frac{d}{d|\bm{r}|}\left(\frac{kQ}{|\bm{r}|}\right) = -k\frac{Q}{|\bm{r}|^2}\\
-    E = k \frac{Q}{|\bm{r}|^2}\bm{\hat{r}}
+    \nabla V_e = \frac&lbrace;dV_e&rbrace;&lbrace;d|\bm&lbrace;r&rbrace;|&rbrace;\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;\\
+    \frac&lbrace;dV_e&rbrace;&lbrace;d|\bm&lbrace;r&rbrace;|&rbrace; = \frac&lbrace;d&rbrace;&lbrace;d|\bm&lbrace;r&rbrace;|&rbrace;\left(\frac&lbrace;kQ&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|&rbrace;\right) = -k\frac&lbrace;Q&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace;\\
+    E = k \frac&lbrace;Q&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace;\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;
 $$
 
 When expressing the electric field strength with the average electric potential change, and
 expressing $r = |\bm{r}|$, the magnitude of $E$ is:
 
 $$
-\begin{aligned}
-    E = -\frac{\Delta V_e}{\Delta r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E = -\frac&lbrace;\Delta V_e&rbrace;&lbrace;\Delta r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Graphical Presentation of Electric Field
@@ -205,13 +205,13 @@ calculation for elementary charge by ignoring buoyance force, where the electros
 ($\bm{F_e}$) equal to the opposite of gravitational force ($\bm{F_g}$):
 
 $$
-\begin{aligned}
-    \bm{F_g} &= -\bm{F_e}\\
-    \bm{F_g} &= m\bm{g}\\
-    -\bm{F_e} &= -qE = -q\left(-\frac{V_e}{\bm{d}}\right)\\
-    m\bm{g} &= q\frac{V_e}{\bm{d}}\\
-    q &= \frac{m\bm{g}\bm{d}}{V_e}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F_g&rbrace; &= -\bm&lbrace;F_e&rbrace;\\
+    \bm&lbrace;F_g&rbrace; &= m\bm&lbrace;g&rbrace;\\
+    -\bm&lbrace;F_e&rbrace; &= -qE = -q\left(-\frac&lbrace;V_e&rbrace;&lbrace;\bm&lbrace;d&rbrace;&rbrace;\right)\\
+    m\bm&lbrace;g&rbrace; &= q\frac&lbrace;V_e&rbrace;&lbrace;\bm&lbrace;d&rbrace;&rbrace;\\
+    q &= \frac&lbrace;m\bm&lbrace;g&rbrace;\bm&lbrace;d&rbrace;&rbrace;&lbrace;V_e&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ---
@@ -222,7 +222,7 @@ When two parallel conducting plates are separated by a distance $d$ and a potent
 is applied across them, a uniform electric field is created between the plates:
 
 $$
-E = \frac{V}{d}
+E = \frac&lbrace;V&rbrace;&lbrace;d&rbrace;
 $$
 
 Key properties:
@@ -241,15 +241,15 @@ acceleration?
 **Solution:**
 
 $$
-E = \frac{V}{d} = \frac{500}{0.020} = 2.5 \times 10^4 \mathrm{ V/m}
+E = \frac&lbrace;V&rbrace;&lbrace;d&rbrace; = \frac&lbrace;500&rbrace;&lbrace;0.020&rbrace; = 2.5 \times 10^4 \mathrm&lbrace; V/m&rbrace;
 $$
 
 $$
-F = eE = (1.60 \times 10^{-19})(2.5 \times 10^4) = 4.0 \times 10^{-15} \mathrm{ N}
+F = eE = (1.60 \times 10^&lbrace;-19&rbrace;)(2.5 \times 10^4) = 4.0 \times 10^&lbrace;-15&rbrace; \mathrm&lbrace; N&rbrace;
 $$
 
 $$
-a = \frac{F}{m_e} = \frac{4.0 \times 10^{-15}}{9.11 \times 10^{-31}} = 4.39 \times 10^{15} \mathrm{ m/s}^2
+a = \frac&lbrace;F&rbrace;&lbrace;m_e&rbrace; = \frac&lbrace;4.0 \times 10^&lbrace;-15&rbrace;&rbrace;&lbrace;9.11 \times 10^&lbrace;-31&rbrace;&rbrace; = 4.39 \times 10^&lbrace;15&rbrace; \mathrm&lbrace; m/s&rbrace;^2
 $$
 
 **Exam tip:** Remember that the force on an electron is directed from the negative plate toward the
@@ -262,7 +262,7 @@ positive plate (opposite to the field direction, since the electron has negative
 The electric field strength at a distance $r$ from a point charge $Q$ is:
 
 $$
-E = \frac{kQ}{r^2} = \frac{Q}{4\pi\epsilon_0 r^2}
+E = \frac&lbrace;kQ&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;Q&rbrace;&lbrace;4\pi\epsilon_0 r^2&rbrace;
 $$
 
 Direction: Radially outward from a positive charge, radially inward toward a negative charge.
@@ -273,7 +273,7 @@ When multiple charges are present, the total electric field at any point is the 
 the individual fields:
 
 $$
-\bm{E}_{\mathrm{total}} = \bm{E}_1 + \bm{E}_2 + \bm{E}_3 + \cdots
+\bm&lbrace;E&rbrace;_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \bm&lbrace;E&rbrace;_1 + \bm&lbrace;E&rbrace;_2 + \bm&lbrace;E&rbrace;_3 + \cdots
 $$
 
 ### Worked Example: Superposition
@@ -286,17 +286,17 @@ placed 20 cm apart. Find the electric field strength at the midpoint between the
 Distance from each charge to midpoint: $r = 0.10$ m.
 
 $$
-E_1 = \frac{kq_1}{r^2} = \frac{(8.99 \times 10^9)(3.0 \times 10^{-6})}{(0.10)^2} = 2.70 \times 10^6 \mathrm{ V/m} \quad \mathrm{(away from } q_1)
+E_1 = \frac&lbrace;kq_1&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;(8.99 \times 10^9)(3.0 \times 10^&lbrace;-6&rbrace;)&rbrace;&lbrace;(0.10)^2&rbrace; = 2.70 \times 10^6 \mathrm&lbrace; V/m&rbrace; \quad \mathrm&lbrace;(away from &rbrace; q_1)
 $$
 
 $$
-E_2 = \frac{k|q_2|}{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-6})}{(0.10)^2} = 4.50 \times 10^6 \mathrm{ V/m} \quad \mathrm{(toward } q_2)
+E_2 = \frac&lbrace;k|q_2|&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;(8.99 \times 10^9)(5.0 \times 10^&lbrace;-6&rbrace;)&rbrace;&lbrace;(0.10)^2&rbrace; = 4.50 \times 10^6 \mathrm&lbrace; V/m&rbrace; \quad \mathrm&lbrace;(toward &rbrace; q_2)
 $$
 
 Since both fields point in the **same direction** at the midpoint (from $q_1$ toward $q_2$):
 
 $$
-E_{\mathrm{total}} = E_1 + E_2 = 2.70 \times 10^6 + 4.50 \times 10^6 = 7.20 \times 10^6 \mathrm{ V/m}
+E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = E_1 + E_2 = 2.70 \times 10^6 + 4.50 \times 10^6 = 7.20 \times 10^6 \mathrm&lbrace; V/m&rbrace;
 $$
 
 ---
@@ -309,7 +309,7 @@ point. It is a **scalar** quantity.
 For a point charge $Q$:
 
 $$
-V_e = \frac{kQ}{r}
+V_e = \frac&lbrace;kQ&rbrace;&lbrace;r&rbrace;
 $$
 
 Key properties:
@@ -340,7 +340,7 @@ parallel conducting plates separated by an insulator (dielectric).
 Capacitance ($C$) is defined as the charge stored per unit potential difference:
 
 $$
-C = \frac{Q}{V}
+C = \frac&lbrace;Q&rbrace;&lbrace;V&rbrace;
 $$
 
 The unit of capacitance is the farad (F). Typical capacitor values range from picofarads (pF) to
@@ -349,7 +349,7 @@ millifarads (mF).
 ### Capacitance of a Parallel Plate Capacitor
 
 $$
-C = \frac{\epsilon_0 A}{d}
+C = \frac&lbrace;\epsilon_0 A&rbrace;&lbrace;d&rbrace;
 $$
 
 where:
@@ -361,7 +361,7 @@ where:
 ### Energy Stored in a Capacitor
 
 $$
-W = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}
+W = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;QV = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;CV^2 = \frac&lbrace;Q^2&rbrace;&lbrace;2C&rbrace;
 $$
 
 These three expressions are equivalent (using $Q = CV$). Use whichever is most convenient given the
@@ -375,7 +375,7 @@ does it store?
 **Solution:**
 
 $$
-W = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-6})(200)^2 = \frac{1}{2}(100 \times 10^{-6})(40000) = 2.0 \mathrm{ J}
+W = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;CV^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(100 \times 10^&lbrace;-6&rbrace;)(200)^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(100 \times 10^&lbrace;-6&rbrace;)(40000) = 2.0 \mathrm&lbrace; J&rbrace;
 $$
 
 ---
@@ -403,7 +403,7 @@ Magnetic field lines represent the direction of the magnetic field:
 The magnetic field at a distance $r$ from a long straight wire carrying current $I$ is:
 
 $$
-B = \frac{\mu_0 I}{2\pi r}
+B = \frac&lbrace;\mu_0 I&rbrace;&lbrace;2\pi r&rbrace;
 $$
 
 where $\mu_0 = 4\pi \times 10^{-7}$ Tm/A is the permeability of free space.
@@ -479,7 +479,7 @@ magnitude of the force on the wire.
 **Solution:**
 
 $$
-F = BIL\sin\theta = (0.40)(3.0)(0.50)\sin 60° = (0.60)(0.866) = 0.520 \mathrm{ N}
+F = BIL\sin\theta = (0.40)(3.0)(0.50)\sin 60° = (0.60)(0.866) = 0.520 \mathrm&lbrace; N&rbrace;
 $$
 
 The direction is given by Fleming's Left-Hand Rule: first finger along $\bm{B}$, second finger along
@@ -498,19 +498,19 @@ to 200 V, how much charge is stored? c) What is the energy stored?
 **a) Plate separation:**
 
 $$
-C = \frac{\epsilon_0 A}{d} \implies d = \frac{\epsilon_0 A}{C} = \frac{(8.85 \times 10^{-12})(0.010)}{100 \times 10^{-12}} = \frac{8.85 \times 10^{-14}}{10^{-10}} = 8.85 \times 10^{-4} \mathrm{ m} = 0.885 \mathrm{ mm}
+C = \frac&lbrace;\epsilon_0 A&rbrace;&lbrace;d&rbrace; \implies d = \frac&lbrace;\epsilon_0 A&rbrace;&lbrace;C&rbrace; = \frac&lbrace;(8.85 \times 10^&lbrace;-12&rbrace;)(0.010)&rbrace;&lbrace;100 \times 10^&lbrace;-12&rbrace;&rbrace; = \frac&lbrace;8.85 \times 10^&lbrace;-14&rbrace;&rbrace;&lbrace;10^&lbrace;-10&rbrace;&rbrace; = 8.85 \times 10^&lbrace;-4&rbrace; \mathrm&lbrace; m&rbrace; = 0.885 \mathrm&lbrace; mm&rbrace;
 $$
 
 **b) Charge stored:**
 
 $$
-Q = CV = (100 \times 10^{-12})(200) = 2.0 \times 10^{-8} \mathrm{ C} = 20 \mathrm{ nC}
+Q = CV = (100 \times 10^&lbrace;-12&rbrace;)(200) = 2.0 \times 10^&lbrace;-8&rbrace; \mathrm&lbrace; C&rbrace; = 20 \mathrm&lbrace; nC&rbrace;
 $$
 
 **c) Energy stored:**
 
 $$
-W = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-12})(200)^2 = \frac{1}{2}(100 \times 10^{-12})(40000) = 2.0 \times 10^{-6} \mathrm{ J} = 2.0 \mathrm{ \mu J}
+W = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;CV^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(100 \times 10^&lbrace;-12&rbrace;)(200)^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(100 \times 10^&lbrace;-12&rbrace;)(40000) = 2.0 \times 10^&lbrace;-6&rbrace; \mathrm&lbrace; J&rbrace; = 2.0 \mathrm&lbrace; \mu J&rbrace;
 $$
 
 ---
@@ -527,7 +527,7 @@ the electric potential energy of the system?
 **a) Electric field strength:**
 
 $$
-E = \frac{kQ}{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{(0.10)^2} = \frac{44.95}{0.01} = 4.50 \times 10^3 \mathrm{ V/m}
+E = \frac&lbrace;kQ&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;(8.99 \times 10^9)(5.0 \times 10^&lbrace;-9&rbrace;)&rbrace;&lbrace;(0.10)^2&rbrace; = \frac&lbrace;44.95&rbrace;&lbrace;0.01&rbrace; = 4.50 \times 10^3 \mathrm&lbrace; V/m&rbrace;
 $$
 
 Direction: radially outward from $Q$ (away from the positive charge).
@@ -535,13 +535,13 @@ Direction: radially outward from $Q$ (away from the positive charge).
 **b) Electric potential:**
 
 $$
-V_e = \frac{kQ}{r} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{0.10} = \frac{44.95}{0.10} = 450 \mathrm{ V}
+V_e = \frac&lbrace;kQ&rbrace;&lbrace;r&rbrace; = \frac&lbrace;(8.99 \times 10^9)(5.0 \times 10^&lbrace;-9&rbrace;)&rbrace;&lbrace;0.10&rbrace; = \frac&lbrace;44.95&rbrace;&lbrace;0.10&rbrace; = 450 \mathrm&lbrace; V&rbrace;
 $$
 
 **c) Electric potential energy:**
 
 $$
-U = qV_e = (-2.0 \times 10^{-9})(450) = -9.0 \times 10^{-7} \mathrm{ J} = -900 \mathrm{ nJ}
+U = qV_e = (-2.0 \times 10^&lbrace;-9&rbrace;)(450) = -9.0 \times 10^&lbrace;-7&rbrace; \mathrm&lbrace; J&rbrace; = -900 \mathrm&lbrace; nJ&rbrace;
 $$
 
 The negative sign indicates the system is bound (attractive), which is expected for opposite
@@ -555,7 +555,7 @@ Gauss's Law provides a powerful way to calculate electric fields for symmetric c
 It states:
 
 $$
-\Phi_E = \oiint_S \bm{E} \cdot d\bm{A} = \frac{Q_{\mathrm{enclosed}}}{\epsilon_0}
+\Phi_E = \oiint_S \bm&lbrace;E&rbrace; \cdot d\bm&lbrace;A&rbrace; = \frac&lbrace;Q_&lbrace;\mathrm&lbrace;enclosed&rbrace;&rbrace;&rbrace;&lbrace;\epsilon_0&rbrace;
 $$
 
 where $\Phi_E$ is the electric flux through a closed surface $S$, and $Q_{\mathrm{enclosed}}$ is the

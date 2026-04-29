@@ -577,7 +577,7 @@ $$\%\mathrm{O} = \frac{3 \times 16}{100} \times 100 = \frac{48}{100} \times 100 
 </details>
 
 **Problem 8:** A compound has the empirical formula $\mathrm{CH_2O}$ and a molar mass of $150
-\mathrm{ g/mol}$. Determine the molecular formula.
+\mathrm&lbrace; g/mol&rbrace;$. Determine the molecular formula.
 
 *If you get this wrong, revise: Empirical and Molecular Formulae*
 

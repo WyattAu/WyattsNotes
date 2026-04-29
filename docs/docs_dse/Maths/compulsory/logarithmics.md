@@ -48,25 +48,25 @@ $a \gt{} 0$, so the logarithm is only defined for positive arguments.
 Several special values follow immediately from the definition:
 
 $$
-\log_a 1 = 0 \quad \mathrm{since } a^0 = 1
+\log_a 1 = 0 \quad \mathrm&lbrace;since &rbrace; a^0 = 1
 $$
 
 $$
-\log_a a = 1 \quad \mathrm{since } a^1 = a
+\log_a a = 1 \quad \mathrm&lbrace;since &rbrace; a^1 = a
 $$
 
 $$
-\log_a a^k = k \quad \mathrm{since } a^k = a^k
+\log_a a^k = k \quad \mathrm&lbrace;since &rbrace; a^k = a^k
 $$
 
 Additionally, for any base $a \gt{} 0$ with $a \neq 1$:
 
 $$
-a^{\log_a x} = x \quad (x \gt{} 0)
+a^&lbrace;\log_a x&rbrace; = x \quad (x \gt&lbrace;&rbrace; 0)
 $$
 
 $$
-\log_a(a^y) = y \quad (y \in \mathbb{R})
+\log_a(a^y) = y \quad (y \in \mathbb&lbrace;R&rbrace;)
 $$
 
 These two identities express the fact that the logarithmic and exponential functions are
@@ -99,7 +99,7 @@ $$
 **Derivation.** Let $m = \log_a x$ and $n = \log_a y$, so that $a^m = x$ and $a^n = y$. Then:
 
 $$
-xy = a^m \cdot a^n = a^{m+n}
+xy = a^m \cdot a^n = a^&lbrace;m+n&rbrace;
 $$
 
 By the definition of logarithms, $\log_a(xy) = m + n = \log_a x + \log_a y$.
@@ -107,13 +107,13 @@ By the definition of logarithms, $\log_a(xy) = m + n = \log_a x + \log_a y$.
 ### Quotient Rule
 
 $$
-\log_a \frac{x}{y} = \log_a x - \log_a y
+\log_a \frac&lbrace;x&rbrace;&lbrace;y&rbrace; = \log_a x - \log_a y
 $$
 
 **Derivation.** Similarly, let $m = \log_a x$ and $n = \log_a y$:
 
 $$
-\frac{x}{y} = \frac{a^m}{a^n} = a^{m-n}
+\frac&lbrace;x&rbrace;&lbrace;y&rbrace; = \frac&lbrace;a^m&rbrace;&lbrace;a^n&rbrace; = a^&lbrace;m-n&rbrace;
 $$
 
 Therefore $\log_a \dfrac{x}{y} = m - n = \log_a x - \log_a y$.
@@ -127,7 +127,7 @@ $$
 **Derivation.** Let $m = \log_a x$, so that $a^m = x$. Then:
 
 $$
-x^n = (a^m)^n = a^{mn}
+x^n = (a^m)^n = a^&lbrace;mn&rbrace;
 $$
 
 Therefore $\log_a(x^n) = mn = n \log_a x$.
@@ -137,7 +137,7 @@ Therefore $\log_a(x^n) = mn = n \log_a x$.
 For any positive $c \neq 1$:
 
 $$
-\log_a b = \frac{\log_c b}{\log_c a}
+\log_a b = \frac&lbrace;\log_c b&rbrace;&lbrace;\log_c a&rbrace;
 $$
 
 **Derivation.** Let $y = \log_a b$, so that $a^y = b$. Taking logarithms base $c$ of both sides:
@@ -149,13 +149,13 @@ $$
 By the power rule, $y \log_c a = \log_c b$, hence:
 
 $$
-y = \frac{\log_c b}{\log_c a}
+y = \frac&lbrace;\log_c b&rbrace;&lbrace;\log_c a&rbrace;
 $$
 
 A commonly used special case is the change to base 10:
 
 $$
-\log_a b = \frac{\log_{10} b}{\log_{10} a}
+\log_a b = \frac&lbrace;\log_&lbrace;10&rbrace; b&rbrace;&lbrace;\log_&lbrace;10&rbrace; a&rbrace;
 $$
 
 <details>
@@ -198,7 +198,7 @@ The **natural logarithm** of $x$, written $\ln x = \log_e x$, uses the base $e \
 number $e$ is defined as:
 
 $$
-e = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n
+e = \lim_&lbrace;n \to \infty&rbrace; \left(1 + \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\right)^n
 $$
 
 The natural logarithm arises naturally in calculus and in continuous growth models. Its importance
@@ -337,7 +337,7 @@ change of base formula to bring all logarithms to a common base.
 The pH of a solution is defined as:
 
 $$
-\mathrm{pH} = -\log_{10}[\mathrm{H}^+]
+\mathrm&lbrace;pH&rbrace; = -\log_&lbrace;10&rbrace;[\mathrm&lbrace;H&rbrace;^+]
 $$
 
 where $[\mathrm{H}^+]$ is the concentration of hydrogen ions (in mol/L). A lower pH means a higher
@@ -354,7 +354,7 @@ concentration of hydrogen ions and therefore a more acidic solution.
 A solution has $[\mathrm{H}^+] = 2.5 \times 10^{-4}$ mol/L. Find its pH.
 
 $$
-\mathrm{pH} = -\log(2.5 \times 10^{-4}) = -\left(\log 2.5 + \log 10^{-4}\right) = -(\log 2.5 - 4) = 4 - \log 2.5 \approx 3.60
+\mathrm&lbrace;pH&rbrace; = -\log(2.5 \times 10^&lbrace;-4&rbrace;) = -\left(\log 2.5 + \log 10^&lbrace;-4&rbrace;\right) = -(\log 2.5 - 4) = 4 - \log 2.5 \approx 3.60
 $$
 
 </details>
@@ -364,7 +364,7 @@ $$
 The Richter magnitude $M$ of an earthquake is defined as:
 
 $$
-M = \log_{10} \frac{I}{I_0}
+M = \log_&lbrace;10&rbrace; \frac&lbrace;I&rbrace;&lbrace;I_0&rbrace;
 $$
 
 where $I$ is the amplitude of seismic waves and $I_0$ is a reference amplitude (the amplitude of a
@@ -379,7 +379,7 @@ than one of magnitude 5, and one hundred times more powerful than one of magnitu
 An earthquake has amplitude $5000$ times the reference. Its magnitude is:
 
 $$
-M = \log_{10} 5000 = \log_{10}(5 \times 10^3) = 3 + \log_{10} 5 \approx 3.70
+M = \log_&lbrace;10&rbrace; 5000 = \log_&lbrace;10&rbrace;(5 \times 10^3) = 3 + \log_&lbrace;10&rbrace; 5 \approx 3.70
 $$
 
 </details>
@@ -391,17 +391,17 @@ The compound interest formula is closely related to logarithms and
 $r\%$ compounded $n$ times per year for $t$ years, the accumulated amount $A$ is:
 
 $$
-A = P\left(1 + \frac{r}{100n}\right)^{nt}
+A = P\left(1 + \frac&lbrace;r&rbrace;&lbrace;100n&rbrace;\right)^&lbrace;nt&rbrace;
 $$
 
 To find the time $t$ required to reach a target amount $A$, take logarithms of both sides:
 
 $$
-\begin{aligned}
-A &= P\left(1 + \frac{r}{100n}\right)^{nt} \\
-\log A &= \log P + nt \cdot \log\left(1 + \frac{r}{100n}\right) \\
-t &= \frac{\log A - \log P}{n \cdot \log\left(1 + \frac{r}{100n}\right)}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+A &= P\left(1 + \frac&lbrace;r&rbrace;&lbrace;100n&rbrace;\right)^&lbrace;nt&rbrace; \\
+\log A &= \log P + nt \cdot \log\left(1 + \frac&lbrace;r&rbrace;&lbrace;100n&rbrace;\right) \\
+t &= \frac&lbrace;\log A - \log P&rbrace;&lbrace;n \cdot \log\left(1 + \frac&lbrace;r&rbrace;&lbrace;100n&rbrace;\right)&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -428,13 +428,13 @@ The **half-life** $T$ of a decaying quantity is the time for the quantity to red
 initial value. For $N(t) = N_0 \cdot a^t$:
 
 $$
-\frac{1}{2} = a^T \implies T = \frac{\log(1/2)}{\log a} = -\frac{\log 2}{\log a}
+\frac&lbrace;1&rbrace;&lbrace;2&rbrace; = a^T \implies T = \frac&lbrace;\log(1/2)&rbrace;&lbrace;\log a&rbrace; = -\frac&lbrace;\log 2&rbrace;&lbrace;\log a&rbrace;
 $$
 
 For continuous decay with rate $k$: $N(t) = N_0 e^{-kt}$, and the half-life is:
 
 $$
-T = \frac{\ln 2}{k}
+T = \frac&lbrace;\ln 2&rbrace;&lbrace;k&rbrace;
 $$
 
 <details>
@@ -460,7 +460,7 @@ function, which depends on whether the base is greater than or less than 1.
 When $a > 1$, $\log_a x$ is strictly increasing, so the inequality sign is **preserved**:
 
 $$
-\log_a x \gt{} \log_a y \iff x \gt{} y
+\log_a x \gt&lbrace;&rbrace; \log_a y \iff x \gt&lbrace;&rbrace; y
 $$
 
 ### Case 2: Base $0 \lt{} a \lt{} 1$
@@ -468,7 +468,7 @@ $$
 When $0 < a < 1$, $\log_a x$ is strictly decreasing, so the inequality sign is **reversed**:
 
 $$
-\log_a x \gt{} \log_a y \iff x \lt{} y
+\log_a x \gt&lbrace;&rbrace; \log_a y \iff x \lt&lbrace;&rbrace; y
 $$
 
 <details>
@@ -503,7 +503,7 @@ The graph of $y = \log_a x$ has the following characteristics:
 - When $0 < a < 1$, the function is strictly decreasing and concave up.
 - The function is defined only for $x > 0$.
 
-<DesmosGraph title="Logarithmic Functions" expressions={["\log_{a}(x)", "rac{\ln(x)}{\ln(a)}"]} width={800} height={500} />
+<DesmosGraph title="Logarithmic Functions" expressions=&lbrace;["\log_&lbrace;a&rbrace;(x)", "rac&lbrace;\ln(x)&rbrace;&lbrace;\ln(a)&rbrace;"]&rbrace; width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
 
 Adjust the base $a$ to see how the shape of the logarithmic curve changes between $a > 1$ and
 $0 < a < 1$.

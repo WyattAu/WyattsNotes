@@ -29,9 +29,9 @@ orbit govern the separation distance ($r$) between the center of the Sun and the
 Expressing the $r$ mathematically as a function of angle ($\theta$) measured from the Sun:
 
 $$
-\begin{aligned}
-    r(\theta) = \frac{a(1-e^2)}{1+e \cos \theta}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    r(\theta) = \frac&lbrace;a(1-e^2)&rbrace;&lbrace;1+e \cos \theta&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 where:
@@ -47,9 +47,9 @@ Equal areas are constructed by the sweeping of line segments at equal time inter
 the change of area ($A$) by time ($t$) is constant, expressing this relationship mathematically:
 
 $$
-\begin{aligned}
-    \frac{dA}{dt} = \frac{1}{2} r^2 d\theta \quad \because A = \frac{1}{2} r^2 \theta
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \frac&lbrace;dA&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace; r^2 d\theta \quad \because A = \frac&lbrace;1&rbrace;&lbrace;2&rbrace; r^2 \theta
+\end&lbrace;aligned&rbrace;
 $$
 
 As orbital bodies can be approximated by point masses, the
@@ -57,9 +57,9 @@ As orbital bodies can be approximated by point masses, the
 the orbital body can be approximated by:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     I = mr^2
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Hence the
@@ -67,19 +67,19 @@ Hence the
 orbital body would be:
 
 $$
-\begin{aligned}
-    L = mr^2\omega = mr^2 \frac{d\theta}{dt}\\
-    \frac{d\theta}{dt} = \frac{L}{mr^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    L = mr^2\omega = mr^2 \frac&lbrace;d\theta&rbrace;&lbrace;dt&rbrace;\\
+    \frac&lbrace;d\theta&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;L&rbrace;&lbrace;mr^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Substituting $\frac{d\theta}{dt}$:
 
 $$
-\begin{aligned}
-    \frac{dA}{dt} = \frac{1}{2}r^2 \left(\frac{L}{mr^2} \right)\\
-    \frac{dA}{dt} = \frac{L}{2m}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \frac&lbrace;dA&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;r^2 \left(\frac&lbrace;L&rbrace;&lbrace;mr^2&rbrace; \right)\\
+    \frac&lbrace;dA&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;L&rbrace;&lbrace;2m&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Since angular momentum is conserved under centripetal force, Kepler's second law holds.
@@ -90,9 +90,9 @@ The orbital period of a planet, squared is directly proportional to the semi maj
 relationship can be presented as:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     T^2 \propto a^3
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 ## Newton's Law of Universal Gravitation
@@ -101,9 +101,9 @@ Newton's Universal Law of Gravitation states that every point mass attracts ever
 by a gravitational force attracting both points. This force is given by:
 
 $$
-\begin{aligned}
-    F=G\frac{m_1 m_2}{r^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    F=G\frac&lbrace;m_1 m_2&rbrace;&lbrace;r^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 where:
@@ -122,9 +122,9 @@ $\bm{F}$ on $m_2$ with the direction, with $\bm{r}$ being the separation displac
 ($r= r_2 - r_1$) from $m_1$ to $m_2$:
 
 $$
-\begin{aligned}
-    \bm{F} = -G\frac{m_1 m_2}{|\bm{r}|^2}\bm{\hat{r}}, \qquad \left(\bm{\hat{r}} = \frac{\bm{r}}{|\bm{r}|}\right)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F&rbrace; = -G\frac&lbrace;m_1 m_2&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|^2&rbrace;\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;, \qquad \left(\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace; = \frac&lbrace;\bm&lbrace;r&rbrace;&rbrace;&lbrace;|\bm&lbrace;r&rbrace;|&rbrace;\right)
+\end&lbrace;aligned&rbrace;
 $$
 
 This describes the force in the inverse direction as the displacement vector from $m_1$
@@ -154,28 +154,28 @@ current position ($\bm{r}$). To determine the gravitational potential energy of 
 displacement ($R$) from the [point mass](#point-mass), the work done is therefore:
 
 $$
-\begin{aligned}
-    U = E_p = \int_{\infty}^{R} F_{ext}(\bm{r}) \cdot d\bm{r} = -\int_{\infty}^{R} F_g(\bm{r}) \cdot d\bm{r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    U = E_p = \int_&lbrace;\infty&rbrace;^&lbrace;R&rbrace; F_&lbrace;ext&rbrace;(\bm&lbrace;r&rbrace;) \cdot d\bm&lbrace;r&rbrace; = -\int_&lbrace;\infty&rbrace;^&lbrace;R&rbrace; F_g(\bm&lbrace;r&rbrace;) \cdot d\bm&lbrace;r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 since $d\bm{r}$ act inwards, and $F(\bm{r})$ acts opposite to $\bm{\hat{r}}$, the dot product
 between two vectors simplify to a scalar calculation:
 
 $$
-\begin{aligned}
-    F_g(r) \cdot dr = \left(-\frac{G m_1 m_2}{|r|^2}\right)(-|dr|)= \frac{Gm_1 m_2}{|r|^2} |dr|\\
-    U = -\int_{\infty}^{R} \frac{Gm_1 m_2}{|r|^2} |dr| = -Gm_1 m_2 \left[-\frac{1}{|r|}\right]_R^\infty\\
-    U = E_p = -G\frac{m_1 m_2}{|R|}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    F_g(r) \cdot dr = \left(-\frac&lbrace;G m_1 m_2&rbrace;&lbrace;|r|^2&rbrace;\right)(-|dr|)= \frac&lbrace;Gm_1 m_2&rbrace;&lbrace;|r|^2&rbrace; |dr|\\
+    U = -\int_&lbrace;\infty&rbrace;^&lbrace;R&rbrace; \frac&lbrace;Gm_1 m_2&rbrace;&lbrace;|r|^2&rbrace; |dr| = -Gm_1 m_2 \left[-\frac&lbrace;1&rbrace;&lbrace;|r|&rbrace;\right]_R^\infty\\
+    U = E_p = -G\frac&lbrace;m_1 m_2&rbrace;&lbrace;|R|&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The IB formula booklet label this equation with $r$ as $|R|$:
 
 $$
-\begin{aligned}
-    E_p = -G \frac{m_1 m_2}{r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E_p = -G \frac&lbrace;m_1 m_2&rbrace;&lbrace;r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Gravitation Potential
@@ -187,17 +187,17 @@ a body with mass $m_2$ interacting with the magnetic field of a body with mass $
 gravitational potential is:
 
 $$
-\begin{aligned}
-    V_g = \frac{E_p}{m_2} = -G \frac{m_1 m_2}{m_2 r} = -G\frac{m_1}{r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    V_g = \frac&lbrace;E_p&rbrace;&lbrace;m_2&rbrace; = -G \frac&lbrace;m_1 m_2&rbrace;&lbrace;m_2 r&rbrace; = -G\frac&lbrace;m_1&rbrace;&lbrace;r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The IB formula booklet label this equation with $M$ as $m_1$:
 
 $$
-\begin{aligned}
-    V_g = -G \frac{M}{r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    V_g = -G \frac&lbrace;M&rbrace;&lbrace;r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 #### Change of Gravitational Potential
@@ -207,9 +207,9 @@ mass ($M$) corresponds to the change in gravitational potential energy ($\Delta 
 position with different gravitational potential:
 
 $$
-\begin{aligned}
-    W = \Delta E_p = G\frac{Mm}{r_2} - G\frac{Mm}{r_1} = m \Delta V_g
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    W = \Delta E_p = G\frac&lbrace;Mm&rbrace;&lbrace;r_2&rbrace; - G\frac&lbrace;Mm&rbrace;&lbrace;r_1&rbrace; = m \Delta V_g
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Gravitational Field Strength
@@ -220,9 +220,9 @@ experience by bodies of mass ($m$) interacting with the [gravitational field](#g
 therefore, calculated as:
 
 $$
-\begin{aligned}
-    g = \frac{F}{m}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    g = \frac&lbrace;F&rbrace;&lbrace;m&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Since the [gravitational potential energy](#gravitational-potential-energy) is the minimum work
@@ -230,45 +230,45 @@ required to translate a body from a infinite displacement to displacement at $r$
 gravity is inherently in the opposite direction:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     W_g = -E_p = -U
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Therefore, the gravitational field strength can also be determined by the negative gradient of the
 gravitational potential $V_g$:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     g = -\nabla V_g\\
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Since the gravitational field is radial, $\nabla V_g$ can be determined in spherical axis:
 
 $$
-\begin{aligned}
-    \nabla V_g = \frac{dV_g}{dr}\hat{r}\\
-    \frac{dV_g}{dr} = \frac{d}{dr}\left(-\frac{GM}{r}\right) = G\frac{M}{r^2}\\
-    g = -G\frac{M}{r^2} \hat{r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \nabla V_g = \frac&lbrace;dV_g&rbrace;&lbrace;dr&rbrace;\hat&lbrace;r&rbrace;\\
+    \frac&lbrace;dV_g&rbrace;&lbrace;dr&rbrace; = \frac&lbrace;d&rbrace;&lbrace;dr&rbrace;\left(-\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;\right) = G\frac&lbrace;M&rbrace;&lbrace;r^2&rbrace;\\
+    g = -G\frac&lbrace;M&rbrace;&lbrace;r^2&rbrace; \hat&lbrace;r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The IB formula booklet only considers magnitude, hence expressing only the magnitude of g:
 
 $$
-\begin{aligned}
-    g = G\frac{M}{r^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    g = G\frac&lbrace;M&rbrace;&lbrace;r^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 When expressing this with the average change of
 [gravitational potential $V_g = -G\frac{M}{r}$](#gravitation-potential), the magnitude of g is:
 
 $$
-\begin{aligned}
-    g = -\frac{\Delta V_g}{\Delta r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    g = -\frac&lbrace;\Delta V_g&rbrace;&lbrace;\Delta r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Graphical Presentation of Gravitational Field
@@ -302,12 +302,12 @@ gravitational field strength decelerating along the whole trajectory. This means
 $E_f = E_i = E_k + E_p = 0+0 = 0$, using their definitions:
 
 $$
-\begin{aligned}
-    E_i = \frac{1}{2}mv_e^2 - \frac{GMm}{r} = 0\\
-    \frac{1}{2}mv_e^2 = \frac{GMm}{r}\\
-    v_e^2 = \frac{2GM}{r}\\
-    v_e = \sqrt{\frac{2GM}{r}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E_i = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_e^2 - \frac&lbrace;GMm&rbrace;&lbrace;r&rbrace; = 0\\
+    \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_e^2 = \frac&lbrace;GMm&rbrace;&lbrace;r&rbrace;\\
+    v_e^2 = \frac&lbrace;2GM&rbrace;&lbrace;r&rbrace;\\
+    v_e = \sqrt&lbrace;\frac&lbrace;2GM&rbrace;&lbrace;r&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Orbital speed
@@ -325,13 +325,13 @@ In a stable circular orbit, equivalent force in the opposite direction is requir
 [gravitational force](#newtons-law-of-universal-gravitation) $F_g$:
 
 $$
-\begin{aligned}
-    F_{total} = F_g + (-F_c) = 0 \\
-    -\frac{GMm}{r^2}\bm{\hat{r}} + -(-\frac{mv^2}{r}\bm{\hat{r}}) = 0\\
-    \left(-\frac{GMm}{r^2} + \frac{mv^2}{r}\right)\bm{\hat{r}} = 0\\
-    \frac{mv^2}{r} = \frac{GMm}{r^2}\\
-    v = \sqrt{\frac{GM}{r}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    F_&lbrace;total&rbrace; = F_g + (-F_c) = 0 \\
+    -\frac&lbrace;GMm&rbrace;&lbrace;r^2&rbrace;\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace; + -(-\frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace;\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;) = 0\\
+    \left(-\frac&lbrace;GMm&rbrace;&lbrace;r^2&rbrace; + \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace;\right)\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace; = 0\\
+    \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace; = \frac&lbrace;GMm&rbrace;&lbrace;r^2&rbrace;\\
+    v = \sqrt&lbrace;\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 :::info IB does only consider the magnitude of orbital velocity, therefore, the equation above is
@@ -339,18 +339,18 @@ the one written in the formula booklet. The angle of orbital velocity is depende
 position $\theta$ of the orbital body:
 
 $$
-\begin{aligned}
-    \bm{\hat{r}} = \cos \theta \hat{i} + \sin \theta \hat{j}
-    \frac{d\bm{\hat{r}}}{d\theta} = - \sin \theta \hat{i} + \cos \theta \hat{j}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;\hat&lbrace;r&rbrace;&rbrace; = \cos \theta \hat&lbrace;i&rbrace; + \sin \theta \hat&lbrace;j&rbrace;
+    \frac&lbrace;d\bm&lbrace;\hat&lbrace;r&rbrace;&rbrace;&rbrace;&lbrace;d\theta&rbrace; = - \sin \theta \hat&lbrace;i&rbrace; + \cos \theta \hat&lbrace;j&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 As the derivative is a unit vector:
 
 $$
-\begin{aligned}
-    \bm{\hat{\theta}} = - \sin \theta \hat{i} + \cos \theta \hat{j}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;\hat&lbrace;\theta&rbrace;&rbrace; = - \sin \theta \hat&lbrace;i&rbrace; + \cos \theta \hat&lbrace;j&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 :::
@@ -361,13 +361,13 @@ The viscous drag ($F_{drag}$) on an orbiting body is influenced by the altitude 
 density decreases with height) and orbital velocity by the formula:
 
 $$
-\begin{aligned}
-    F_{drag} = \frac{1}{2}C_dA\rho v^2\\
-    \rho(h) = \rho_0 e^{-\frac{h}{H}}, \quad H \approx 8 \mathrm{ km}\\
-    v = \sqrt{\frac{GM}{r}}\\
-    F_{drag} = \frac{1}{2}C_d A \rho_0 e^{-\frac{h}{H}} \left(\frac{GM}{r}\right)\\
-    \therefore F \propto \frac{e^{-\frac{h}{H}}}{r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    F_&lbrace;drag&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;C_dA\rho v^2\\
+    \rho(h) = \rho_0 e^&lbrace;-\frac&lbrace;h&rbrace;&lbrace;H&rbrace;&rbrace;, \quad H \approx 8 \mathrm&lbrace; km&rbrace;\\
+    v = \sqrt&lbrace;\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;&rbrace;\\
+    F_&lbrace;drag&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;C_d A \rho_0 e^&lbrace;-\frac&lbrace;h&rbrace;&lbrace;H&rbrace;&rbrace; \left(\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;\right)\\
+    \therefore F \propto \frac&lbrace;e^&lbrace;-\frac&lbrace;h&rbrace;&lbrace;H&rbrace;&rbrace;&rbrace;&lbrace;r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 where:
@@ -390,9 +390,9 @@ Kepler's third law follows from
 substituting $v = 2\pi r / T$:
 
 $$
-\begin{aligned}
-    \frac{GMm}{r^2} = \frac{mv^2}{r} \implies v^2 = \frac{GM}{r} \implies \left(\frac{2\pi r}{T}\right)^2 = \frac{GM}{r} \implies T^2 = \frac{4\pi^2}{GM} r^3
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \frac&lbrace;GMm&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace; \implies v^2 = \frac&lbrace;GM&rbrace;&lbrace;r&rbrace; \implies \left(\frac&lbrace;2\pi r&rbrace;&lbrace;T&rbrace;\right)^2 = \frac&lbrace;GM&rbrace;&lbrace;r&rbrace; \implies T^2 = \frac&lbrace;4\pi^2&rbrace;&lbrace;GM&rbrace; r^3
+\end&lbrace;aligned&rbrace;
 $$
 
 :::info Since $\frac{4\pi^2}{GM}$ is constant for a given central body, this reduces to
@@ -424,30 +424,30 @@ distance $r \lt{} R$ from the center. Only the enclosed mass contributes (the sh
 the outer shell contribute zero):
 
 $$
-\begin{aligned}
-    M_{\mathrm{enc}} = M\left(\frac{r}{R}\right)^3
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    M_&lbrace;\mathrm&lbrace;enc&rbrace;&rbrace; = M\left(\frac&lbrace;r&rbrace;&lbrace;R&rbrace;\right)^3
+\end&lbrace;aligned&rbrace;
 $$
 
 The field strength at $r$ is then:
 
 $$
-\begin{aligned}
-    g = \frac{GM_{\mathrm{enc}}}{r^2} = \frac{G M (r/R)^3}{r^2} = \frac{GM}{R^3} r \quad \implies \quad g \propto r
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    g = \frac&lbrace;GM_&lbrace;\mathrm&lbrace;enc&rbrace;&rbrace;&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;G M (r/R)^3&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;GM&rbrace;&lbrace;R^3&rbrace; r \quad \implies \quad g \propto r
+\end&lbrace;aligned&rbrace;
 $$
 
 Inside a uniform solid sphere, the gravitational field increases linearly from the center. Combining
 interior and exterior:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     g(r) =
-    \begin{cases}
-        \dfrac{GM}{R^3}\, r & \mathrm{for } r \lt{} R \\[8pt]
-        \dfrac{GM}{r^2} & \mathrm{for } r \geq R
-    \end{cases}
-\end{aligned}
+    \begin&lbrace;cases&rbrace;
+        \dfrac&lbrace;GM&rbrace;&lbrace;R^3&rbrace;\, r & \mathrm&lbrace;for &rbrace; r \lt&lbrace;&rbrace; R \\[8pt]
+        \dfrac&lbrace;GM&rbrace;&lbrace;r^2&rbrace; & \mathrm&lbrace;for &rbrace; r \geq R
+    \end&lbrace;cases&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The field is zero at $r = 0$, increases linearly to $g_{\mathrm{surface}} = GM/R^2$ at $r = R$, then
@@ -497,18 +497,18 @@ A geostationary orbit must satisfy three conditions:
 The required orbital radius is found from Kepler's third law:
 
 $$
-\begin{aligned}
-    r = \sqrt[3]{\frac{GM T^2}{4\pi^2}} = \sqrt[3]{\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(86400)^2}{4\pi^2}} \approx 4.22 \times 10^7 \mathrm{ m}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    r = \sqrt[3]&lbrace;\frac&lbrace;GM T^2&rbrace;&lbrace;4\pi^2&rbrace;&rbrace; = \sqrt[3]&lbrace;\frac&lbrace;(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)(86400)^2&rbrace;&lbrace;4\pi^2&rbrace;&rbrace; \approx 4.22 \times 10^7 \mathrm&lbrace; m&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The altitude above Earth's surface and orbital speed are:
 
 $$
-\begin{aligned}
-    h &= r - R_E \approx 4.22 \times 10^7 - 6.371 \times 10^6 \approx 3.58 \times 10^7 \mathrm{ m} \approx 35800 \mathrm{ km}\\[4pt]
-    v &= \sqrt{\frac{GM}{r}} \approx 3070 \mathrm{ m/s} \approx 3.07 \mathrm{ km/s}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    h &= r - R_E \approx 4.22 \times 10^7 - 6.371 \times 10^6 \approx 3.58 \times 10^7 \mathrm&lbrace; m&rbrace; \approx 35800 \mathrm&lbrace; km&rbrace;\\[4pt]
+    v &= \sqrt&lbrace;\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;&rbrace; \approx 3070 \mathrm&lbrace; m/s&rbrace; \approx 3.07 \mathrm&lbrace; km/s&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Low Earth Orbit vs Geostationary Orbit
@@ -526,11 +526,11 @@ $$
 For a satellite of mass $m$ in circular orbit of radius $r$ around mass $M$:
 
 $$
-\begin{aligned}
-    E_k &= \frac{1}{2}mv^2 = \frac{1}{2}m\left(\frac{GM}{r}\right) = \frac{GMm}{2r}\\[4pt]
-    E_p &= -\frac{GMm}{r}\\[4pt]
-    E_{\mathrm{total}} &= E_k + E_p = \frac{GMm}{2r} - \frac{GMm}{r} = -\frac{GMm}{2r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E_k &= \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\left(\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;\right) = \frac&lbrace;GMm&rbrace;&lbrace;2r&rbrace;\\[4pt]
+    E_p &= -\frac&lbrace;GMm&rbrace;&lbrace;r&rbrace;\\[4pt]
+    E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; &= E_k + E_p = \frac&lbrace;GMm&rbrace;&lbrace;2r&rbrace; - \frac&lbrace;GMm&rbrace;&lbrace;r&rbrace; = -\frac&lbrace;GMm&rbrace;&lbrace;2r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The total energy is always negative (gravitationally bound), and
@@ -558,16 +558,16 @@ orbit.
 Calculate the gravitational force between Earth and the Moon.
 
 $$
-\begin{aligned}
-    M_{\mathrm{Earth}} = 5.97 \times 10^{24} \mathrm{ kg}, \quad M_{\mathrm{Moon}} = 7.35 \times 10^{22} \mathrm{ kg}, \quad r = 3.84 \times 10^8 \mathrm{ m}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    M_&lbrace;\mathrm&lbrace;Earth&rbrace;&rbrace; = 5.97 \times 10^&lbrace;24&rbrace; \mathrm&lbrace; kg&rbrace;, \quad M_&lbrace;\mathrm&lbrace;Moon&rbrace;&rbrace; = 7.35 \times 10^&lbrace;22&rbrace; \mathrm&lbrace; kg&rbrace;, \quad r = 3.84 \times 10^8 \mathrm&lbrace; m&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 $$
-\begin{aligned}
-    F &= G\frac{M_{\mathrm{Earth}} M_{\mathrm{Moon}}}{r^2} = (6.67 \times 10^{-11}) \frac{(5.97 \times 10^{24})(7.35 \times 10^{22})}{(3.84 \times 10^8)^2}\\
-    F &= (6.67 \times 10^{-11}) \frac{4.388 \times 10^{47}}{1.475 \times 10^{17}} = (6.67 \times 10^{-11})(2.975 \times 10^{30}) \approx 1.98 \times 10^{20} \mathrm{ N}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    F &= G\frac&lbrace;M_&lbrace;\mathrm&lbrace;Earth&rbrace;&rbrace; M_&lbrace;\mathrm&lbrace;Moon&rbrace;&rbrace;&rbrace;&lbrace;r^2&rbrace; = (6.67 \times 10^&lbrace;-11&rbrace;) \frac&lbrace;(5.97 \times 10^&lbrace;24&rbrace;)(7.35 \times 10^&lbrace;22&rbrace;)&rbrace;&lbrace;(3.84 \times 10^8)^2&rbrace;\\
+    F &= (6.67 \times 10^&lbrace;-11&rbrace;) \frac&lbrace;4.388 \times 10^&lbrace;47&rbrace;&rbrace;&lbrace;1.475 \times 10^&lbrace;17&rbrace;&rbrace; = (6.67 \times 10^&lbrace;-11&rbrace;)(2.975 \times 10^&lbrace;30&rbrace;) \approx 1.98 \times 10^&lbrace;20&rbrace; \mathrm&lbrace; N&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Example 2: Gravitational Field Strength at Altitude
@@ -575,11 +575,11 @@ $$
 Calculate the gravitational field strength at 300 km altitude and compare with $g_0 = 9.81$ m/s$^2$.
 
 $$
-\begin{aligned}
-    r &= R_{\mathrm{Earth}} + h = 6.371 \times 10^6 + 3.00 \times 10^5 = 6.671 \times 10^6 \mathrm{ m}\\[4pt]
-    g &= \frac{GM}{r^2} = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.671 \times 10^6)^2} = \frac{3.983 \times 10^{14}}{4.450 \times 10^{13}} \approx 8.95 \mathrm{ m/s}^2\\[4pt]
-    \frac{g_0 - g}{g_0} &= \frac{9.81 - 8.95}{9.81} \approx 8.8\%
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    r &= R_&lbrace;\mathrm&lbrace;Earth&rbrace;&rbrace; + h = 6.371 \times 10^6 + 3.00 \times 10^5 = 6.671 \times 10^6 \mathrm&lbrace; m&rbrace;\\[4pt]
+    g &= \frac&lbrace;GM&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)&rbrace;&lbrace;(6.671 \times 10^6)^2&rbrace; = \frac&lbrace;3.983 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;4.450 \times 10^&lbrace;13&rbrace;&rbrace; \approx 8.95 \mathrm&lbrace; m/s&rbrace;^2\\[4pt]
+    \frac&lbrace;g_0 - g&rbrace;&lbrace;g_0&rbrace; &= \frac&lbrace;9.81 - 8.95&rbrace;&lbrace;9.81&rbrace; \approx 8.8\%
+\end&lbrace;aligned&rbrace;
 $$
 
 At 300 km (ISS altitude), $g$ is still about 91% of its surface value.
@@ -590,12 +590,12 @@ A 1000 kg satellite moves from 300 km altitude to geostationary orbit at 35,800 
 $\Delta E_p$.
 
 $$
-\begin{aligned}
-    \Delta E_p &= GMm\left(\frac{1}{r_1} - \frac{1}{r_2}\right)\\[4pt]
-    &= (6.67 \times 10^{-11})(5.97 \times 10^{24})(1000)\left(\frac{1}{6.671 \times 10^6} - \frac{1}{4.22 \times 10^7}\right)\\[4pt]
-    &= (3.983 \times 10^{14})(1.499 \times 10^{-7} - 2.370 \times 10^{-8})\\[4pt]
-    &= (3.983 \times 10^{14})(1.262 \times 10^{-7}) \approx 5.03 \times 10^7 \mathrm{ J} \approx 50.3 \mathrm{ MJ}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \Delta E_p &= GMm\left(\frac&lbrace;1&rbrace;&lbrace;r_1&rbrace; - \frac&lbrace;1&rbrace;&lbrace;r_2&rbrace;\right)\\[4pt]
+    &= (6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)(1000)\left(\frac&lbrace;1&rbrace;&lbrace;6.671 \times 10^6&rbrace; - \frac&lbrace;1&rbrace;&lbrace;4.22 \times 10^7&rbrace;\right)\\[4pt]
+    &= (3.983 \times 10^&lbrace;14&rbrace;)(1.499 \times 10^&lbrace;-7&rbrace; - 2.370 \times 10^&lbrace;-8&rbrace;)\\[4pt]
+    &= (3.983 \times 10^&lbrace;14&rbrace;)(1.262 \times 10^&lbrace;-7&rbrace;) \approx 5.03 \times 10^7 \mathrm&lbrace; J&rbrace; \approx 50.3 \mathrm&lbrace; MJ&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The potential energy increases (becomes less negative) since work is done against gravity.
@@ -603,9 +603,9 @@ The potential energy increases (becomes less negative) since work is done agains
 ### Example 4: Escape Velocity of Earth
 
 $$
-\begin{aligned}
-    v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2(6.67 \times 10^{-11})(5.97 \times 10^{24})}{6.371 \times 10^6}} = \sqrt{1.250 \times 10^8} \approx 11.2 \mathrm{ km/s}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    v_e = \sqrt&lbrace;\frac&lbrace;2GM&rbrace;&lbrace;R&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;2(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)&rbrace;&lbrace;6.371 \times 10^6&rbrace;&rbrace; = \sqrt&lbrace;1.250 \times 10^8&rbrace; \approx 11.2 \mathrm&lbrace; km/s&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The mass $m$ of the escaping object cancels, confirming escape velocity is independent of the
@@ -616,11 +616,11 @@ object's mass.
 Find the period of a satellite at 500 km altitude using $T = 2\pi\sqrt{r^3/(GM)}$.
 
 $$
-\begin{aligned}
-    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \mathrm{ m}\\[4pt]
-    T &= 2\pi\sqrt{\frac{(6.871 \times 10^6)^3}{(6.67 \times 10^{-11})(5.97 \times 10^{24})}} = 2\pi\sqrt{\frac{3.245 \times 10^{20}}{3.983 \times 10^{14}}}\\[4pt]
-    &= 2\pi\sqrt{8.148 \times 10^5} = 2\pi(902.7) \approx 5672 \mathrm{ s} \approx 94.5 \mathrm{ min}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \mathrm&lbrace; m&rbrace;\\[4pt]
+    T &= 2\pi\sqrt&lbrace;\frac&lbrace;(6.871 \times 10^6)^3&rbrace;&lbrace;(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)&rbrace;&rbrace; = 2\pi\sqrt&lbrace;\frac&lbrace;3.245 \times 10^&lbrace;20&rbrace;&rbrace;&lbrace;3.983 \times 10^&lbrace;14&rbrace;&rbrace;&rbrace;\\[4pt]
+    &= 2\pi\sqrt&lbrace;8.148 \times 10^5&rbrace; = 2\pi(902.7) \approx 5672 \mathrm&lbrace; s&rbrace; \approx 94.5 \mathrm&lbrace; min&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Consistent with the typical LEO period of approximately 90 minutes.
@@ -630,15 +630,15 @@ Consistent with the typical LEO period of approximately 90 minutes.
 At what altitude is $g$ equal to one-quarter of the surface value?
 
 $$
-\begin{aligned}
-    \frac{GM}{r^2} = \frac{1}{4} \cdot \frac{GM}{R^2} \implies r^2 = 4R^2 \implies r = 2R
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \frac&lbrace;GM&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;4&rbrace; \cdot \frac&lbrace;GM&rbrace;&lbrace;R^2&rbrace; \implies r^2 = 4R^2 \implies r = 2R
+\end&lbrace;aligned&rbrace;
 $$
 
 $$
-\begin{aligned}
-    h = r - R = R = 6.371 \times 10^6 \mathrm{ m} \approx 6371 \mathrm{ km}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    h = r - R = R = 6.371 \times 10^6 \mathrm&lbrace; m&rbrace; \approx 6371 \mathrm&lbrace; km&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Doubling the distance from the center reduces the field by a factor of $2^2 = 4$.
@@ -656,9 +656,9 @@ substituting the orbital radius when asked for surface gravity, or vice versa.
 By convention $E_p = 0$ at infinite separation, so $E_p$ is **always negative** for finite $r$:
 
 $$
-\begin{aligned}
-    E_p = -\frac{GMm}{r} \lt{} 0 \quad \mathrm{for all finite } r
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E_p = -\frac&lbrace;GMm&rbrace;&lbrace;r&rbrace; \lt&lbrace;&rbrace; 0 \quad \mathrm&lbrace;for all finite &rbrace; r
+\end&lbrace;aligned&rbrace;
 $$
 
 Moving outward ($r_2 \gt{} r_1$) gives positive $\Delta E_p$ since work is done against gravity. Do
@@ -669,9 +669,9 @@ not confuse this with the $mgh$ approximation (valid only for $h \ll R_{\mathrm{
 From the [escape velocity](#escape-velocity) derivation, $m$ cancels:
 
 $$
-\begin{aligned}
-    \frac{1}{2}mv_e^2 = \frac{GMm}{r} \implies v_e = \sqrt{\frac{2GM}{r}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_e^2 = \frac&lbrace;GMm&rbrace;&lbrace;r&rbrace; \implies v_e = \sqrt&lbrace;\frac&lbrace;2GM&rbrace;&lbrace;r&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 A 1 kg object and a 10,000 kg spacecraft need the same escape velocity. The kinetic energy
@@ -684,9 +684,9 @@ $\frac{4\pi^2}{GM}$ depends on the central body's mass. When comparing orbits ar
 planets, use the full equation:
 
 $$
-\begin{aligned}
-    T^2 = \frac{4\pi^2}{GM} r^3
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    T^2 = \frac&lbrace;4\pi^2&rbrace;&lbrace;GM&rbrace; r^3
+\end&lbrace;aligned&rbrace;
 $$
 
 ## Problem Set
@@ -700,10 +700,10 @@ Two spheres of mass $m_1 = 8.00 \times 10^{6}$ kg and $m_2 = 3.50 \times 10^{4}$
 <summary>Solution</summary>
 
 $$
-\begin{aligned}
-    F &= G\frac{m_1 m_2}{r^2} = (6.67 \times 10^{-11})\frac{(8.00 \times 10^6)(3.50 \times 10^4)}{(50.0)^2}\\
-    &= (6.67 \times 10^{-11})\frac{2.80 \times 10^{11}}{2500} = (6.67 \times 10^{-11})(1.12 \times 10^8) \approx 7.47 \times 10^{-3} \mathrm{ N}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    F &= G\frac&lbrace;m_1 m_2&rbrace;&lbrace;r^2&rbrace; = (6.67 \times 10^&lbrace;-11&rbrace;)\frac&lbrace;(8.00 \times 10^6)(3.50 \times 10^4)&rbrace;&lbrace;(50.0)^2&rbrace;\\
+    &= (6.67 \times 10^&lbrace;-11&rbrace;)\frac&lbrace;2.80 \times 10^&lbrace;11&rbrace;&rbrace;&lbrace;2500&rbrace; = (6.67 \times 10^&lbrace;-11&rbrace;)(1.12 \times 10^8) \approx 7.47 \times 10^&lbrace;-3&rbrace; \mathrm&lbrace; N&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -716,10 +716,10 @@ Calculate $g$ at 500 km altitude. How much weaker is this than 9.81 m/s$^2$?
 <summary>Solution</summary>
 
 $$
-\begin{aligned}
-    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \mathrm{ m}\\[4pt]
-    g &= \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.871 \times 10^6)^2} = \frac{3.983 \times 10^{14}}{4.721 \times 10^{13}} \approx 8.44 \mathrm{ m/s}^2
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    r &= 6.371 \times 10^6 + 5.00 \times 10^5 = 6.871 \times 10^6 \mathrm&lbrace; m&rbrace;\\[4pt]
+    g &= \frac&lbrace;(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)&rbrace;&lbrace;(6.871 \times 10^6)^2&rbrace; = \frac&lbrace;3.983 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;4.721 \times 10^&lbrace;13&rbrace;&rbrace; \approx 8.44 \mathrm&lbrace; m/s&rbrace;^2
+\end&lbrace;aligned&rbrace;
 $$
 
 Fractional decrease: $(9.81 - 8.44)/9.81 \approx 14.0\%$.
@@ -735,9 +735,9 @@ $R_{\mathrm{Mars}} = 3.390 \times 10^{6}$ m.
 <summary>Solution</summary>
 
 $$
-\begin{aligned}
-    v_e &= \sqrt{\frac{2(6.67 \times 10^{-11})(6.42 \times 10^{23})}{3.390 \times 10^6}} = \sqrt{\frac{8.564 \times 10^{13}}{3.390 \times 10^6}} = \sqrt{2.526 \times 10^7} \approx 5.03 \mathrm{ km/s}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    v_e &= \sqrt&lbrace;\frac&lbrace;2(6.67 \times 10^&lbrace;-11&rbrace;)(6.42 \times 10^&lbrace;23&rbrace;)&rbrace;&lbrace;3.390 \times 10^6&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;8.564 \times 10^&lbrace;13&rbrace;&rbrace;&lbrace;3.390 \times 10^6&rbrace;&rbrace; = \sqrt&lbrace;2.526 \times 10^7&rbrace; \approx 5.03 \mathrm&lbrace; km/s&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Compared to 11.2 km/s for Earth.
@@ -753,33 +753,33 @@ speed, (c) total mechanical energy.
 <summary>Solution</summary>
 
 $$
-\begin{aligned}
-    r &= 6.671 \times 10^6 \mathrm{ m}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    r &= 6.671 \times 10^6 \mathrm&lbrace; m&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 **(a)**
 
 $$
-\begin{aligned}
-    T = 2\pi\sqrt{\frac{r^3}{GM}} = 2\pi\sqrt{\frac{(6.671 \times 10^6)^3}{(6.67 \times 10^{-11})(5.97 \times 10^{24})}} = 2\pi(863.3) \approx 5425 \mathrm{ s} \approx 90.4 \mathrm{ min}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    T = 2\pi\sqrt&lbrace;\frac&lbrace;r^3&rbrace;&lbrace;GM&rbrace;&rbrace; = 2\pi\sqrt&lbrace;\frac&lbrace;(6.671 \times 10^6)^3&rbrace;&lbrace;(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)&rbrace;&rbrace; = 2\pi(863.3) \approx 5425 \mathrm&lbrace; s&rbrace; \approx 90.4 \mathrm&lbrace; min&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 **(b)**
 
 $$
-\begin{aligned}
-    v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{3.983 \times 10^{14}}{6.671 \times 10^6}} \approx 7728 \mathrm{ m/s} \approx 7.73 \mathrm{ km/s}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    v = \sqrt&lbrace;\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;3.983 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;6.671 \times 10^6&rbrace;&rbrace; \approx 7728 \mathrm&lbrace; m/s&rbrace; \approx 7.73 \mathrm&lbrace; km/s&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 **(c)**
 
 $$
-\begin{aligned}
-    E_{\mathrm{total}} = -\frac{GMm}{2r} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(500)}{2(6.671 \times 10^6)} = -\frac{1.992 \times 10^{14}}{1.334 \times 10^7} \approx -14.9 \mathrm{ MJ}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = -\frac&lbrace;GMm&rbrace;&lbrace;2r&rbrace; = -\frac&lbrace;(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)(500)&rbrace;&lbrace;2(6.671 \times 10^6)&rbrace; = -\frac&lbrace;1.992 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;1.334 \times 10^7&rbrace; \approx -14.9 \mathrm&lbrace; MJ&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -793,11 +793,11 @@ $r_2 = 4.22 \times 10^7$ m.
 <summary>Solution</summary>
 
 $$
-\begin{aligned}
-    W &= GMm\left(\frac{1}{r_1} - \frac{1}{r_2}\right)\\[4pt]
-    &= (6.67 \times 10^{-11})(5.97 \times 10^{24})(1000)\left(\frac{1}{6.671 \times 10^6} - \frac{1}{4.22 \times 10^7}\right)\\[4pt]
-    &= (3.983 \times 10^{14})(1.262 \times 10^{-7}) \approx 5.03 \times 10^7 \mathrm{ J} = 50.3 \mathrm{ MJ}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    W &= GMm\left(\frac&lbrace;1&rbrace;&lbrace;r_1&rbrace; - \frac&lbrace;1&rbrace;&lbrace;r_2&rbrace;\right)\\[4pt]
+    &= (6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)(1000)\left(\frac&lbrace;1&rbrace;&lbrace;6.671 \times 10^6&rbrace; - \frac&lbrace;1&rbrace;&lbrace;4.22 \times 10^7&rbrace;\right)\\[4pt]
+    &= (3.983 \times 10^&lbrace;14&rbrace;)(1.262 \times 10^&lbrace;-7&rbrace;) \approx 5.03 \times 10^7 \mathrm&lbrace; J&rbrace; = 50.3 \mathrm&lbrace; MJ&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 This is only the potential energy change; additional kinetic energy changes are required at each
@@ -814,9 +814,9 @@ $g = g_0/9$?
 <summary>Solution</summary>
 
 $$
-\begin{aligned}
-    \frac{GM}{r^2} = \frac{1}{9} \cdot \frac{GM}{R^2} \implies r^2 = 9R^2 \implies r = 3R
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \frac&lbrace;GM&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;9&rbrace; \cdot \frac&lbrace;GM&rbrace;&lbrace;R^2&rbrace; \implies r^2 = 9R^2 \implies r = 3R
+\end&lbrace;aligned&rbrace;
 $$
 
 At distance $3R$ from the center (altitude $2R$ above the surface). Tripling the distance reduces
@@ -833,17 +833,17 @@ minimum energy is needed for escape? (c) Verify $E_k = \frac{1}{2}|E_p|$.
 <summary>Solution</summary>
 
 $$
-\begin{aligned}
-    r = 6.371 \times 10^6 + 2.00 \times 10^7 = 2.637 \times 10^7 \mathrm{ m}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    r = 6.371 \times 10^6 + 2.00 \times 10^7 = 2.637 \times 10^7 \mathrm&lbrace; m&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 **(a)**
 
 $$
-\begin{aligned}
-    E_{\mathrm{total}} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(2000)}{2(2.637 \times 10^7)} = -\frac{7.966 \times 10^{14}}{5.274 \times 10^7} \approx -15.1 \mathrm{ MJ}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = -\frac&lbrace;(6.67 \times 10^&lbrace;-11&rbrace;)(5.97 \times 10^&lbrace;24&rbrace;)(2000)&rbrace;&lbrace;2(2.637 \times 10^7)&rbrace; = -\frac&lbrace;7.966 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;5.274 \times 10^7&rbrace; \approx -15.1 \mathrm&lbrace; MJ&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 **(b)** For escape, $E_{\mathrm{total}}$ must reach zero:
@@ -852,11 +852,11 @@ $\Delta E = 0 - (-15.1 \times 10^6) = 15.1$ MJ.
 **(c)**
 
 $$
-\begin{aligned}
-    E_k &= \frac{GMm}{2r} = \frac{7.966 \times 10^{14}}{2(2.637 \times 10^7)} \approx 15.1 \times 10^6 \mathrm{ J}\\[4pt]
-    |E_p| &= \frac{GMm}{r} = \frac{7.966 \times 10^{14}}{2.637 \times 10^7} \approx 30.2 \times 10^6 \mathrm{ J}\\[4pt]
-    E_k &= \frac{1}{2}|E_p| \quad \checkmark
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    E_k &= \frac&lbrace;GMm&rbrace;&lbrace;2r&rbrace; = \frac&lbrace;7.966 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;2(2.637 \times 10^7)&rbrace; \approx 15.1 \times 10^6 \mathrm&lbrace; J&rbrace;\\[4pt]
+    |E_p| &= \frac&lbrace;GMm&rbrace;&lbrace;r&rbrace; = \frac&lbrace;7.966 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;2.637 \times 10^7&rbrace; \approx 30.2 \times 10^6 \mathrm&lbrace; J&rbrace;\\[4pt]
+    E_k &= \frac&lbrace;1&rbrace;&lbrace;2&rbrace;|E_p| \quad \checkmark
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>

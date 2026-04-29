@@ -64,7 +64,7 @@ element relative to $1/12$ the mass of a carbon-12 atom, taking into account the
 of all isotopes.
 
 $$
-A_r = \sum_{i} (\mathrm{isotope mass})_i \times (\mathrm{fractional abundance})_i
+A_r = \sum_&lbrace;i&rbrace; (\mathrm&lbrace;isotope mass&rbrace;)_i \times (\mathrm&lbrace;fractional abundance&rbrace;)_i
 $$
 
 :::info[Example — Chlorine]
@@ -175,14 +175,14 @@ $$
 **Full notation** — write every subshell explicitly:
 
 $$
-\mathrm{Fe}: 1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6
+\mathrm&lbrace;Fe&rbrace;: 1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6
 $$
 
 **Noble gas core notation** — replace the inner-shell electrons with the preceding noble gas symbol
 in brackets:
 
 $$
-\mathrm{Fe}: [\mathrm{Ar}]\, 4s^2\, 3d^6
+\mathrm&lbrace;Fe&rbrace;: [\mathrm&lbrace;Ar&rbrace;]\, 4s^2\, 3d^6
 $$
 
 :::warning
@@ -214,11 +214,11 @@ represent $m_s = +\frac{1}{2}$ and $m_s = -\frac{1}{2}$.
 For nitrogen ($1s^2\, 2s^2\, 2p^3$):
 
 $$
-\begin{array}{c}
-1s\quad \boxed{\uparrow\downarrow} \\
-2s\quad \boxed{\uparrow\downarrow} \\
-2p\quad \boxed{\uparrow}\quad\boxed{\uparrow}\quad\boxed{\uparrow}
-\end{array}
+\begin&lbrace;array&rbrace;&lbrace;c&rbrace;
+1s\quad \boxed&lbrace;\uparrow\downarrow&rbrace; \\
+2s\quad \boxed&lbrace;\uparrow\downarrow&rbrace; \\
+2p\quad \boxed&lbrace;\uparrow&rbrace;\quad\boxed&lbrace;\uparrow&rbrace;\quad\boxed&lbrace;\uparrow&rbrace;
+\end&lbrace;array&rbrace;
 $$
 
 All three $2p$ electrons are unpaired with parallel spins, following Hund's rule.
@@ -272,7 +272,7 @@ The IB uses IUPAC group numbers $1$--$18$:
 experienced by an electron, after accounting for shielding by other electrons:
 
 $$
-Z_{\mathrm{eff}} = Z - S
+Z_&lbrace;\mathrm&lbrace;eff&rbrace;&rbrace; = Z - S
 $$
 
 where $Z$ is the actual nuclear charge and $S$ is the shielding constant.
@@ -318,7 +318,7 @@ from $Z = 8$ to $Z = 13$, so the radius decreases.
 one mole of electrons from one mole of gaseous atoms:
 
 $$
-\mathrm{X}(g) \to \mathrm{X}^+(g) + e^- \qquad \Delta H = IE_1
+\mathrm&lbrace;X&rbrace;(g) \to \mathrm&lbrace;X&rbrace;^+(g) + e^- \qquad \Delta H = IE_1
 $$
 
 | Trend                     | Explanation                                               |
@@ -364,7 +364,7 @@ The jump from $IE_3$ to $IE_4$ confirms that aluminium has three valence electro
 added to one mole of gaseous atoms:
 
 $$
-\mathrm{X}(g) + e^- \to \mathrm{X}^-(g) \qquad \Delta H = EA
+\mathrm&lbrace;X&rbrace;(g) + e^- \to \mathrm&lbrace;X&rbrace;^-(g) \qquad \Delta H = EA
 $$
 
 A more negative $EA$ indicates a greater tendency to accept an electron.
@@ -436,7 +436,7 @@ easily lost, forming $\mathrm{M}^+$ ions.
 #### Reaction with Water
 
 $$
-2\mathrm{M}(s) + 2\mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{MOH}(aq) + \mathrm{H}_2(g)
+2\mathrm&lbrace;M&rbrace;(s) + 2\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;(l) \to 2\mathrm&lbrace;MOH&rbrace;(aq) + \mathrm&lbrace;H&rbrace;_2(g)
 $$
 
 Reactivity increases down the group:
@@ -467,7 +467,7 @@ Alkali metals burn in oxygen to form oxides:
 All Group 1 hydroxides ($\mathrm{MOH}$) are strong bases and highly soluble in water:
 
 $$
-\mathrm{MOH}(s) \to \mathrm{M}^+(aq) + \mathrm{OH}^-(aq)
+\mathrm&lbrace;MOH&rbrace;(s) \to \mathrm&lbrace;M&rbrace;^+(aq) + \mathrm&lbrace;OH&rbrace;^-(aq)
 $$
 
 Basicity increases down the group (solubility increases, so $[\mathrm{OH}^-]$ is higher).
@@ -521,7 +521,7 @@ Reactivity **decreases** down the group. This is because atomic radius increases
 $Z_{\mathrm{eff}}$ on the incoming electron decreases, so electron affinity becomes less favourable.
 
 $$
-\mathrm{F}_2 \gt \mathrm{Cl}_2 \gt \mathrm{Br}_2 \gt \mathrm{I}_2
+\mathrm&lbrace;F&rbrace;_2 \gt \mathrm&lbrace;Cl&rbrace;_2 \gt \mathrm&lbrace;Br&rbrace;_2 \gt \mathrm&lbrace;I&rbrace;_2
 $$
 
 #### Displacement Reactions
@@ -529,15 +529,15 @@ $$
 A more reactive halogen displaces a less reactive halogen from its halide solution:
 
 $$
-\mathrm{Cl}_2(aq) + 2\mathrm{KBr}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{Br}_2(aq)
+\mathrm&lbrace;Cl&rbrace;_2(aq) + 2\mathrm&lbrace;KBr&rbrace;(aq) \to 2\mathrm&lbrace;KCl&rbrace;(aq) + \mathrm&lbrace;Br&rbrace;_2(aq)
 $$
 
 $$
-\mathrm{Br}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KBr}(aq) + \mathrm{I}_2(aq)
+\mathrm&lbrace;Br&rbrace;_2(aq) + 2\mathrm&lbrace;KI&rbrace;(aq) \to 2\mathrm&lbrace;KBr&rbrace;(aq) + \mathrm&lbrace;I&rbrace;_2(aq)
 $$
 
 $$
-\mathrm{Cl}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{I}_2(aq)
+\mathrm&lbrace;Cl&rbrace;_2(aq) + 2\mathrm&lbrace;KI&rbrace;(aq) \to 2\mathrm&lbrace;KCl&rbrace;(aq) + \mathrm&lbrace;I&rbrace;_2(aq)
 $$
 
 But: $\mathrm{Br}_2$ cannot displace $\mathrm{Cl}^-$ and $\mathrm{I}_2$ cannot displace
@@ -546,7 +546,7 @@ $\mathrm{Br}^-$ or $\mathrm{Cl}^-$.
 #### Reaction with Alkali Metals
 
 $$
-2\mathrm{M}(s) + \mathrm{X}_2(g) \to 2\mathrm{MX}(s)
+2\mathrm&lbrace;M&rbrace;(s) + \mathrm&lbrace;X&rbrace;_2(g) \to 2\mathrm&lbrace;MX&rbrace;(s)
 $$
 
 These are vigorous, exothermic reactions forming ionic halides.
@@ -681,7 +681,7 @@ decreases. Higher oxidation states become more stable with oxygen (oxoanions) th
 via coordinate (dative covalent) bonds.
 
 $$
-[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}, \quad [\mathrm{Ag}(\mathrm{NH}_3)_2]^+, \quad [\mathrm{Fe}(\mathrm{CN})_6]^{4-}
+[\mathrm&lbrace;Cu&rbrace;(\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;)_6]^&lbrace;2+&rbrace;, \quad [\mathrm&lbrace;Ag&rbrace;(\mathrm&lbrace;NH&rbrace;_3)_2]^+, \quad [\mathrm&lbrace;Fe&rbrace;(\mathrm&lbrace;CN&rbrace;)_6]^&lbrace;4-&rbrace;
 $$
 
 ### Ligands
@@ -718,13 +718,13 @@ Transition metal complexes are coloured because of $d$-$d$ electron transitions:
 4. The remaining light is transmitted, giving the complex its complementary colour.
 
 $$
-\Delta E = hf = \frac{hc}{\lambda}
+\Delta E = hf = \frac&lbrace;hc&rbrace;&lbrace;\lambda&rbrace;
 $$
 
 **Spectrochemical series** (increasing $\Delta$):
 
 $$
-\mathrm{I}^- \lt \mathrm{Br}^- \lt \mathrm{Cl}^- \lt \mathrm{F}^- \lt \mathrm{H}_2\mathrm{O} \lt \mathrm{NH}_3 \lt \mathrm{en} \lt \mathrm{CN}^- \lt \mathrm{CO}
+\mathrm&lbrace;I&rbrace;^- \lt \mathrm&lbrace;Br&rbrace;^- \lt \mathrm&lbrace;Cl&rbrace;^- \lt \mathrm&lbrace;F&rbrace;^- \lt \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \lt \mathrm&lbrace;NH&rbrace;_3 \lt \mathrm&lbrace;en&rbrace; \lt \mathrm&lbrace;CN&rbrace;^- \lt \mathrm&lbrace;CO&rbrace;
 $$
 
 Ligands that produce larger splitting are called **strong-field ligands**; those producing smaller
@@ -781,7 +781,7 @@ The number of unpaired electrons determines the magnetic moment (measured in Boh
 $\mu_B$):
 
 $$
-\mu \approx \sqrt{n(n + 2)}\ \mu_B
+\mu \approx \sqrt&lbrace;n(n + 2)&rbrace;\ \mu_B
 $$
 
 where $n$ is the number of unpaired electrons.
@@ -797,7 +797,7 @@ levels. When they fall back to lower levels, they emit photons with energies cor
 energy differences:
 
 $$
-\Delta E = E_{\mathrm{higher}} - E_{\mathrm{lower}} = h\nu = \frac{hc}{\lambda}
+\Delta E = E_&lbrace;\mathrm&lbrace;higher&rbrace;&rbrace; - E_&lbrace;\mathrm&lbrace;lower&rbrace;&rbrace; = h\nu = \frac&lbrace;hc&rbrace;&lbrace;\lambda&rbrace;
 $$
 
 where:
@@ -831,7 +831,7 @@ lower energy level:
 The energy levels of hydrogen are given by:
 
 $$
-E_n = -\frac{13.6\mathrm{ eV}}{n^2} = -\frac{2.18 \times 10^{-18}\mathrm{ J}}{n^2}
+E_n = -\frac&lbrace;13.6\mathrm&lbrace; eV&rbrace;&rbrace;&lbrace;n^2&rbrace; = -\frac&lbrace;2.18 \times 10^&lbrace;-18&rbrace;\mathrm&lbrace; J&rbrace;&rbrace;&lbrace;n^2&rbrace;
 $$
 
 For the Balmer series (transitions to $n = 2$), the first four lines correspond to:
@@ -849,7 +849,7 @@ Lines in each series converge at the series limit (the ionization energy). As $n
 energy levels get closer together and transitions approach a continuum:
 
 $$
-E_{\infty} = 0\mathrm{ J} \quad (\mathrm{ionization threshold})
+E_&lbrace;\infty&rbrace; = 0\mathrm&lbrace; J&rbrace; \quad (\mathrm&lbrace;ionization threshold&rbrace;)
 $$
 
 ### Significance
@@ -906,7 +906,7 @@ The **molecular ion peak** ($\mathrm{M}^+$) corresponds to the intact molecule w
 removed. Its $m/z$ value gives the molecular mass.
 
 $$
-\mathrm{CH}_4 + e^- \to \mathrm{CH}_4^{+\bullet} + 2e^-
+\mathrm&lbrace;CH&rbrace;_4 + e^- \to \mathrm&lbrace;CH&rbrace;_4^&lbrace;+\bullet&rbrace; + 2e^-
 $$
 
 The molecular ion peak for $\mathrm{CH}_4$ appears at $m/z = 16$.
@@ -1027,7 +1027,7 @@ electrons from inner shells.
 For aluminium ($Z = 13$):
 
 $$
-\underbrace{IE_1, IE_2, IE_3}_{\mathrm{valence } 3s^2\, 3p^1} \ll IE_4, IE_5, \ldots, IE_{11} \ll IE_{12}, IE_{13}
+\underbrace&lbrace;IE_1, IE_2, IE_3&rbrace;_&lbrace;\mathrm&lbrace;valence &rbrace; 3s^2\, 3p^1&rbrace; \ll IE_4, IE_5, \ldots, IE_&lbrace;11&rbrace; \ll IE_&lbrace;12&rbrace;, IE_&lbrace;13&rbrace;
 $$
 
 | Ionization number | Electron removed | Approximate IE (kJ/mol) | Shell           |
@@ -1054,7 +1054,7 @@ The jumps reveal:
 The Rydberg equation for hydrogen gives the wavelength of any spectral line:
 
 $$
-\frac{1}{\lambda} = R_H \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)
+\frac&lbrace;1&rbrace;&lbrace;\lambda&rbrace; = R_H \left(\frac&lbrace;1&rbrace;&lbrace;n_f^2&rbrace; - \frac&lbrace;1&rbrace;&lbrace;n_i^2&rbrace;\right)
 $$
 
 where $R_H = 1.097 \times 10^7\mathrm{ m}^{-1}$ is the Rydberg constant, $n_i$ is the initial energy
@@ -1065,11 +1065,11 @@ level, and $n_f$ is the final energy level ($n_i \gt n_f$ for emission).
 For the transition $n = 3 \to n = 2$:
 
 $$
-\frac{1}{\lambda} = 1.097 \times 10^7 \left(\frac{1}{4} - \frac{1}{9}\right) = 1.097 \times 10^7 \times 0.1389 = 1.524 \times 10^6\mathrm{ m}^{-1}
+\frac&lbrace;1&rbrace;&lbrace;\lambda&rbrace; = 1.097 \times 10^7 \left(\frac&lbrace;1&rbrace;&lbrace;4&rbrace; - \frac&lbrace;1&rbrace;&lbrace;9&rbrace;\right) = 1.097 \times 10^7 \times 0.1389 = 1.524 \times 10^6\mathrm&lbrace; m&rbrace;^&lbrace;-1&rbrace;
 $$
 
 $$
-\lambda = \frac{1}{1.524 \times 10^6} = 6.56 \times 10^{-7}\mathrm{ m} = 656\mathrm{ nm}
+\lambda = \frac&lbrace;1&rbrace;&lbrace;1.524 \times 10^6&rbrace; = 6.56 \times 10^&lbrace;-7&rbrace;\mathrm&lbrace; m&rbrace; = 656\mathrm&lbrace; nm&rbrace;
 $$
 
 This corresponds to the red line in the Balmer series (H$\alpha$).
@@ -1079,19 +1079,19 @@ This corresponds to the red line in the Balmer series (H$\alpha$).
 #### Energy of a Photon
 
 $$
-E = h\nu = \frac{hc}{\lambda}
+E = h\nu = \frac&lbrace;hc&rbrace;&lbrace;\lambda&rbrace;
 $$
 
 For the $n = 3 \to n = 2$ transition:
 
 $$
-E = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{6.56 \times 10^{-7}} = 3.03 \times 10^{-19}\mathrm{ J}
+E = \frac&lbrace;(6.626 \times 10^&lbrace;-34&rbrace;)(3.00 \times 10^8)&rbrace;&lbrace;6.56 \times 10^&lbrace;-7&rbrace;&rbrace; = 3.03 \times 10^&lbrace;-19&rbrace;\mathrm&lbrace; J&rbrace;
 $$
 
 Converting to electron-volts:
 
 $$
-E = \frac{3.03 \times 10^{-19}}{1.602 \times 10^{-19}} = 1.89\mathrm{ eV}
+E = \frac&lbrace;3.03 \times 10^&lbrace;-19&rbrace;&rbrace;&lbrace;1.602 \times 10^&lbrace;-19&rbrace;&rbrace; = 1.89\mathrm&lbrace; eV&rbrace;
 $$
 
 #### Number of Spectral Lines
@@ -1099,7 +1099,7 @@ $$
 The number of possible spectral lines from energy level $n$ down to the ground state is:
 
 $$
-N = \frac{n(n - 1)}{2}
+N = \frac&lbrace;n(n - 1)&rbrace;&lbrace;2&rbrace;
 $$
 
 For $n = 4$: $N = 6$ spectral lines.
@@ -1291,15 +1291,15 @@ $n = 5$ to $n = 2$. Identify the spectral series and the region of the electroma
 **Markscheme:**
 
 $$
-\frac{1}{\lambda} = R_H \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) = 1.097 \times 10^7 \left(\frac{1}{4} - \frac{1}{25}\right)
+\frac&lbrace;1&rbrace;&lbrace;\lambda&rbrace; = R_H \left(\frac&lbrace;1&rbrace;&lbrace;n_f^2&rbrace; - \frac&lbrace;1&rbrace;&lbrace;n_i^2&rbrace;\right) = 1.097 \times 10^7 \left(\frac&lbrace;1&rbrace;&lbrace;4&rbrace; - \frac&lbrace;1&rbrace;&lbrace;25&rbrace;\right)
 $$
 
 $$
-= 1.097 \times 10^7 \times \frac{21}{100} = 2.304 \times 10^6\mathrm{ m}^{-1}
+= 1.097 \times 10^7 \times \frac&lbrace;21&rbrace;&lbrace;100&rbrace; = 2.304 \times 10^6\mathrm&lbrace; m&rbrace;^&lbrace;-1&rbrace;
 $$
 
 $$
-\lambda = \frac{1}{2.304 \times 10^6} = 4.34 \times 10^{-7}\mathrm{ m} = 434\mathrm{ nm}
+\lambda = \frac&lbrace;1&rbrace;&lbrace;2.304 \times 10^6&rbrace; = 4.34 \times 10^&lbrace;-7&rbrace;\mathrm&lbrace; m&rbrace; = 434\mathrm&lbrace; nm&rbrace;
 $$
 
 (2 marks for correct substitution and calculation)

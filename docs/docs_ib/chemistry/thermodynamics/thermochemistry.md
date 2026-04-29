@@ -84,7 +84,7 @@ where:
 For a reaction in solution:
 
 $$
-\Delta H = -\frac{mc\Delta T}{n}
+\Delta H = -\frac&lbrace;mc\Delta T&rbrace;&lbrace;n&rbrace;
 $$
 
 The negative sign accounts for the convention: heat lost by the reaction is gained by the solution.
@@ -102,19 +102,19 @@ in a calorimeter. The temperature rises from $21.0\degree\mathrm{C}$ to $27.5\de
 Calculate the enthalpy of neutralisation.
 
 $$
-m = 100.0\mathrm{ g} \mathrm{ (assuming density of water)}
+m = 100.0\mathrm&lbrace; g&rbrace; \mathrm&lbrace; (assuming density of water)&rbrace;
 $$
 
 $$
-q = mc\Delta T = 100.0 \times 4.18 \times 6.5 = 2717\mathrm{ J} = 2.717\mathrm{ kJ}
+q = mc\Delta T = 100.0 \times 4.18 \times 6.5 = 2717\mathrm&lbrace; J&rbrace; = 2.717\mathrm&lbrace; kJ&rbrace;
 $$
 
 $$
-n(\mathrm{H}_2\mathrm{O}) = 0.050\mathrm{ mol} \mathrm{ (limited by the reagent volumes)}
+n(\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;) = 0.050\mathrm&lbrace; mol&rbrace; \mathrm&lbrace; (limited by the reagent volumes)&rbrace;
 $$
 
 $$
-\Delta H = -\frac{2.717}{0.050} = -54.3\mathrm{ kJ/mol}
+\Delta H = -\frac&lbrace;2.717&rbrace;&lbrace;0.050&rbrace; = -54.3\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 :::
@@ -125,7 +125,7 @@ Used for combustion reactions. The calorimeter constant $C$ accounts for the hea
 calorimeter:
 
 $$
-q_{\mathrm{reaction}} = -(mc\Delta T + C\Delta T)
+q_&lbrace;\mathrm&lbrace;reaction&rbrace;&rbrace; = -(mc\Delta T + C\Delta T)
 $$
 
 ---
@@ -138,7 +138,7 @@ The total enthalpy change for a reaction is independent of the route taken. It d
 initial and final states.
 
 $$
-\Delta H_{\mathrm{total}} = \Delta H_1 + \Delta H_2 + \cdots
+\Delta H_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \Delta H_1 + \Delta H_2 + \cdots
 $$
 
 ### Using Enthalpy Cycles
@@ -149,7 +149,7 @@ law.
 ### Using Standard Enthalpies of Formation
 
 $$
-\Delta H_r^\circ = \sum \Delta H_f^\circ(\mathrm{products}) - \sum \Delta H_f^\circ(\mathrm{reactants})
+\Delta H_r^\circ = \sum \Delta H_f^\circ(\mathrm&lbrace;products&rbrace;) - \sum \Delta H_f^\circ(\mathrm&lbrace;reactants&rbrace;)
 $$
 
 :::info[Example]
@@ -167,7 +167,7 @@ $$
 $$
 
 $$
-= (-393.5 - 571.6) - (-74.8) = -965.1 + 74.8 = -890.3\mathrm{ kJ/mol}
+= (-393.5 - 571.6) - (-74.8) = -965.1 + 74.8 = -890.3\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 :::
@@ -175,7 +175,7 @@ $$
 ### Using Standard Enthalpies of Combustion
 
 $$
-\Delta H_r^\circ = \sum \Delta H_c^\circ(\mathrm{reactants}) - \sum \Delta H_c^\circ(\mathrm{products})
+\Delta H_r^\circ = \sum \Delta H_c^\circ(\mathrm&lbrace;reactants&rbrace;) - \sum \Delta H_c^\circ(\mathrm&lbrace;products&rbrace;)
 $$
 
 Note the reversed order compared to formation enthalpies.
@@ -211,7 +211,7 @@ values.
 ### Calculating Enthalpy Change from Bond Enthalpies
 
 $$
-\Delta H = \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})
+\Delta H = \sum (\mathrm&lbrace;bonds broken&rbrace;) - \sum (\mathrm&lbrace;bonds formed&rbrace;)
 $$
 
 Bonds broken (positive — energy absorbed) and bonds formed (negative — energy released).
@@ -225,7 +225,7 @@ Calculate the enthalpy change for: CH$_4$(g) + 2O$_2$(g) $\to$ CO$_2$(g) + 2H$_2
 **Bonds formed**: 2(C=O) + 4(O--H) $= 2(743) + 4(463) = 1486 + 1852 = 3338\mathrm{ kJ/mol}$
 
 $$
-\Delta H = 2642 - 3338 = -696\mathrm{ kJ/mol}
+\Delta H = 2642 - 3338 = -696\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 :::
@@ -265,7 +265,7 @@ For an ionic compound MX:
 ### Applying Hess's Law
 
 $$
-\Delta H_f^\circ = \Delta H_{\mathrm{at}}(M) + \frac{1}{2}\Delta H_{\mathrm{at}}(X_2) + \mathrm{IE} + \mathrm{EA} + \Delta H_{\mathrm{latt}}
+\Delta H_f^\circ = \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;(M) + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;(X_2) + \mathrm&lbrace;IE&rbrace; + \mathrm&lbrace;EA&rbrace; + \Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace;
 $$
 
 :::info[Example]
@@ -281,11 +281,11 @@ Given:
 - EA$_1$(Cl) = $-349\mathrm{ kJ/mol}$
 
 $$
-\Delta H_{\mathrm{latt}} = \Delta H_f^\circ - \Delta H_{\mathrm{at}}(\mathrm{Na}) - \frac{1}{2}\Delta H_{\mathrm{at}}(\mathrm{Cl}_2) - \mathrm{IE}_1 - \mathrm{EA}_1
+\Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace; = \Delta H_f^\circ - \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;(\mathrm&lbrace;Na&rbrace;) - \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;(\mathrm&lbrace;Cl&rbrace;_2) - \mathrm&lbrace;IE&rbrace;_1 - \mathrm&lbrace;EA&rbrace;_1
 $$
 
 $$
-= -411 - 108 - 122 - 496 - (-349) = -411 - 108 - 122 - 496 + 349 = -788\mathrm{ kJ/mol}
+= -411 - 108 - 122 - 496 - (-349) = -411 - 108 - 122 - 496 + 349 = -788\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 :::
@@ -318,7 +318,7 @@ $$
 ### Standard Entropy Change
 
 $$
-\Delta S^\circ = \sum S^\circ(\mathrm{products}) - \sum S^\circ(\mathrm{reactants})
+\Delta S^\circ = \sum S^\circ(\mathrm&lbrace;products&rbrace;) - \sum S^\circ(\mathrm&lbrace;reactants&rbrace;)
 $$
 
 :::info[Example]
@@ -329,7 +329,7 @@ Given: $S^\circ$(CaCO$_3$) = $92.9\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(C
 $39.7\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(CO$_2$) = $213.7\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 $$
-\Delta S^\circ = (39.7 + 213.7) - 92.9 = 253.4 - 92.9 = 160.5\mathrm{ J/(mol}\cdot\mathrm{K)}
+\Delta S^\circ = (39.7 + 213.7) - 92.9 = 253.4 - 92.9 = 160.5\mathrm&lbrace; J/(mol&rbrace;\cdot\mathrm&lbrace;K)&rbrace;
 $$
 
 The positive $\Delta S$ is expected because a gas is produced from a solid.
@@ -361,7 +361,7 @@ where $T$ is the temperature in Kelvin.
 ### Standard Gibbs Free Energy Change
 
 $$
-\Delta G^\circ = \sum \Delta G_f^\circ(\mathrm{products}) - \sum \Delta G_f^\circ(\mathrm{reactants})
+\Delta G^\circ = \sum \Delta G_f^\circ(\mathrm&lbrace;products&rbrace;) - \sum \Delta G_f^\circ(\mathrm&lbrace;reactants&rbrace;)
 $$
 
 ### Relationship to Equilibrium Constant
@@ -393,7 +393,7 @@ $\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +160.5\mathrm{ J/(mol}\cdot\mathr
 Find the temperature at which the reaction becomes spontaneous.
 
 $$
-\Delta G = 0 \mathrm{ when } T = \frac{\Delta H}{\Delta S} = \frac{178000}{160.5} = 1109\mathrm{ K}
+\Delta G = 0 \mathrm&lbrace; when &rbrace; T = \frac&lbrace;\Delta H&rbrace;&lbrace;\Delta S&rbrace; = \frac&lbrace;178000&rbrace;&lbrace;160.5&rbrace; = 1109\mathrm&lbrace; K&rbrace;
 $$
 
 The reaction is spontaneous above $1109\mathrm{ K}$.
@@ -413,7 +413,7 @@ Bonds broken: H--H ($436$) + Cl--Cl ($242$) $= 678\mathrm{ kJ/mol}$
 Bonds formed: $2 \times$ H--Cl ($431$) $= 862\mathrm{ kJ/mol}$
 
 $$
-\Delta H = 678 - 862 = -184\mathrm{ kJ/mol}
+\Delta H = 678 - 862 = -184\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 ### Question 2 (Paper 2 style)
@@ -425,15 +425,15 @@ $26.5\degree\mathrm{C}$.
 **(a)** Calculate the enthalpy change of neutralisation per mole of water formed.
 
 $$
-q = 50.0 \times 4.18 \times 6.5 = 1359\mathrm{ J}
+q = 50.0 \times 4.18 \times 6.5 = 1359\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-n = 0.025 \times 1.0 = 0.025\mathrm{ mol}
+n = 0.025 \times 1.0 = 0.025\mathrm&lbrace; mol&rbrace;
 $$
 
 $$
-\Delta H = -\frac{1.359}{0.025} = -54.4\mathrm{ kJ/mol}
+\Delta H = -\frac&lbrace;1.359&rbrace;&lbrace;0.025&rbrace; = -54.4\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 **(b)** Explain why the experimental value differs from the theoretical value of
@@ -453,7 +453,7 @@ Given the following data, calculate the lattice energy of MgO:
 - EA$_1$(O) + EA$_2$(O) = $+603\mathrm{ kJ/mol}$
 
 $$
-\Delta H_{\mathrm{latt}} = -602 - 148 - 249 - 2188 - 603 = -3790\mathrm{ kJ/mol}
+\Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace; = -602 - 148 - 249 - 2188 - 603 = -3790\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 ### Question 4 (Paper 1 style)
@@ -496,7 +496,7 @@ The enthalpy change when one mole of solute dissolves in a solvent to form an in
 solution:
 
 $$
-\Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{lattice}} + \Delta H_{\mathrm{hydration}}
+\Delta H_&lbrace;\mathrm&lbrace;sol&rbrace;&rbrace; = \Delta H_&lbrace;\mathrm&lbrace;lattice&rbrace;&rbrace; + \Delta H_&lbrace;\mathrm&lbrace;hydration&rbrace;&rbrace;
 $$
 
 - If $\Delta H_{\mathrm{sol}} \gt 0$: endothermic (solution cools, e.g., NH$_4$NO$_3$).
@@ -507,7 +507,7 @@ $$
 The enthalpy change when gaseous ions are surrounded by water molecules:
 
 $$
-\Delta H_{\mathrm{hyd}} = \Delta H_{\mathrm{at}} + \Delta H_{\mathrm{EA}} + \mathrm{other terms}
+\Delta H_&lbrace;\mathrm&lbrace;hyd&rbrace;&rbrace; = \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace; + \Delta H_&lbrace;\mathrm&lbrace;EA&rbrace;&rbrace; + \mathrm&lbrace;other terms&rbrace;
 $$
 
 ### Trends in Lattice Energy
@@ -563,7 +563,7 @@ $S^\circ$(H$_2$) $= 131\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(O$_2$)
 $= 205\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(H$_2$O) $= 70\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 $$
-\Delta S^\circ = 2(70) - [2(131) + 205] = 140 - 467 = -327\mathrm{ J/(mol}\cdot\mathrm{K)}
+\Delta S^\circ = 2(70) - [2(131) + 205] = 140 - 467 = -327\mathrm&lbrace; J/(mol&rbrace;\cdot\mathrm&lbrace;K)&rbrace;
 $$
 
 The large negative $\Delta S$ is expected: 3 moles of gas produce 2 moles of liquid.
@@ -577,7 +577,7 @@ The large negative $\Delta S$ is expected: 3 moles of gas produce 2 moles of liq
 ### Calculating $\Delta G$ from $\Delta G_f^\circ$ Values
 
 $$
-\Delta G_r^\circ = \sum \Delta G_f^\circ(\mathrm{products}) - \sum \Delta G_f^\circ(\mathrm{reactants})
+\Delta G_r^\circ = \sum \Delta G_f^\circ(\mathrm&lbrace;products&rbrace;) - \sum \Delta G_f^\circ(\mathrm&lbrace;reactants&rbrace;)
 $$
 
 :::info[Example]
@@ -588,7 +588,7 @@ Given: $\Delta G_f^\circ$(CO$_2$) $= -394\mathrm{ kJ/mol}$, $\Delta G_f^\circ$(C
 $= -137\mathrm{ kJ/mol}$.
 
 $$
-\Delta G^\circ = 2(-137) - (-394) = -274 + 394 = +120\mathrm{ kJ/mol}
+\Delta G^\circ = 2(-137) - (-394) = -274 + 394 = +120\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 The reaction is not spontaneous at $298\mathrm{ K}$ (but is at higher temperatures since
@@ -599,7 +599,7 @@ $\Delta S \gt 0$ for this reaction).
 ### Using $\Delta G$ to Predict the Equilibrium Constant
 
 $$
-K = e^{-\Delta G^\circ/RT}
+K = e^&lbrace;-\Delta G^\circ/RT&rbrace;
 $$
 
 :::info[Example]
@@ -607,7 +607,7 @@ $$
 For a reaction with $\Delta G^\circ = -5.4\mathrm{ kJ/mol}$ at $298\mathrm{ K}$:
 
 $$
-K = e^{-(-5400)/(8.314 \times 298)} = e^{2.18} = 8.85
+K = e^&lbrace;-(-5400)/(8.314 \times 298)&rbrace; = e^&lbrace;2.18&rbrace; = 8.85
 $$
 
 Since $K \gt 1$, products are favoured at equilibrium.
@@ -627,21 +627,21 @@ $65.0\degree\mathrm{C}$. The mass of methanol burned is $1.50\mathrm{ g}$.
 **(a)** Calculate the experimental enthalpy of combustion.
 
 $$
-q = 200 \times 4.18 \times 45 = 37620\mathrm{ J} = 37.62\mathrm{ kJ}
+q = 200 \times 4.18 \times 45 = 37620\mathrm&lbrace; J&rbrace; = 37.62\mathrm&lbrace; kJ&rbrace;
 $$
 
 $$
-n(\mathrm{CH}_3\mathrm{OH}) = \frac{1.50}{32.04} = 0.0468\mathrm{ mol}
+n(\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;OH&rbrace;) = \frac&lbrace;1.50&rbrace;&lbrace;32.04&rbrace; = 0.0468\mathrm&lbrace; mol&rbrace;
 $$
 
 $$
-\Delta H_c = -\frac{37.62}{0.0468} = -804\mathrm{ kJ/mol}
+\Delta H_c = -\frac&lbrace;37.62&rbrace;&lbrace;0.0468&rbrace; = -804\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 **(b)** Calculate the percentage error compared to the literature value.
 
 $$
-\mathrm{Percentage error} = \frac{|-804 - (-726)|}{726} \times 100\% = \frac{78}{726} \times 100\% = 10.7\%
+\mathrm&lbrace;Percentage error&rbrace; = \frac&lbrace;|-804 - (-726)|&rbrace;&lbrace;726&rbrace; \times 100\% = \frac&lbrace;78&rbrace;&lbrace;726&rbrace; \times 100\% = 10.7\%
 $$
 
 **(c)** Explain two sources of error.
@@ -657,7 +657,7 @@ and $\Delta S = +176\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 At what temperature does the reaction become spontaneous?
 
 $$
-\Delta G = 0 \mathrm{ when } T = \frac{\Delta H}{\Delta S} = \frac{57000}{176} = 324\mathrm{ K}
+\Delta G = 0 \mathrm&lbrace; when &rbrace; T = \frac&lbrace;\Delta H&rbrace;&lbrace;\Delta S&rbrace; = \frac&lbrace;57000&rbrace;&lbrace;176&rbrace; = 324\mathrm&lbrace; K&rbrace;
 $$
 
 The reaction is spontaneous above $324\mathrm{ K}$ ($51\degree\mathrm{C}$).
@@ -673,23 +673,23 @@ Using the data below, calculate the lattice energy of CaF$_2$:
 - EA$_1$(F) $= -328\mathrm{ kJ/mol}$ (per mole of F atoms)
 
 $$
-\Delta H_f^\circ = \Delta H_{\mathrm{at}}(\mathrm{Ca}) + 2\left[\frac{1}{2}\Delta H_{\mathrm{at}}(\mathrm{F}_2) + \mathrm{EA}(\mathrm{F})\right] + \mathrm{IE}_1 + \mathrm{IE}_2 + \Delta H_{\mathrm{latt}}
+\Delta H_f^\circ = \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;(\mathrm&lbrace;Ca&rbrace;) + 2\left[\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;(\mathrm&lbrace;F&rbrace;_2) + \mathrm&lbrace;EA&rbrace;(\mathrm&lbrace;F&rbrace;)\right] + \mathrm&lbrace;IE&rbrace;_1 + \mathrm&lbrace;IE&rbrace;_2 + \Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace;
 $$
 
 $$
--1220 = 178 + 2(79 - 328) + 1735 + \Delta H_{\mathrm{latt}}
+-1220 = 178 + 2(79 - 328) + 1735 + \Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace;
 $$
 
 $$
--1220 = 178 + 2(-249) + 1735 + \Delta H_{\mathrm{latt}}
+-1220 = 178 + 2(-249) + 1735 + \Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace;
 $$
 
 $$
--1220 = 178 - 498 + 1735 + \Delta H_{\mathrm{latt}} = 1415 + \Delta H_{\mathrm{latt}}
+-1220 = 178 - 498 + 1735 + \Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace; = 1415 + \Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace;
 $$
 
 $$
-\Delta H_{\mathrm{latt}} = -1220 - 1415 = -2635\mathrm{ kJ/mol}
+\Delta H_&lbrace;\mathrm&lbrace;latt&rbrace;&rbrace; = -1220 - 1415 = -2635\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 ---
@@ -749,7 +749,7 @@ new (inner) shell. This confirms Al has 3 valence electrons.
 When using a calorimeter, account for the heat absorbed by the calorimeter itself:
 
 $$
-q_{\mathrm{reaction}} = -(m_{\mathrm{solution}} c_{\mathrm{solution}} \Delta T + C_{\mathrm{calorimeter}} \Delta T)
+q_&lbrace;\mathrm&lbrace;reaction&rbrace;&rbrace; = -(m_&lbrace;\mathrm&lbrace;solution&rbrace;&rbrace; c_&lbrace;\mathrm&lbrace;solution&rbrace;&rbrace; \Delta T + C_&lbrace;\mathrm&lbrace;calorimeter&rbrace;&rbrace; \Delta T)
 $$
 
 :::info[Example]
@@ -759,15 +759,15 @@ in a calorimeter with heat capacity $15\mathrm{ J/K}$. The temperature rises fro
 $20.0\degree\mathrm{C}$ to $26.8\degree\mathrm{C}$.
 
 $$
-q_{\mathrm{total}} = (100)(4.18)(6.8) + 15(6.8) = 2842.4 + 102 = 2944.4\mathrm{ J}
+q_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = (100)(4.18)(6.8) + 15(6.8) = 2842.4 + 102 = 2944.4\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-n(\mathrm{H}_2\mathrm{O}) = 0.050\mathrm{ mol}
+n(\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;) = 0.050\mathrm&lbrace; mol&rbrace;
 $$
 
 $$
-\Delta H = -\frac{2944.4}{0.050} = -58888\mathrm{ J/mol} = -58.9\mathrm{ kJ/mol}
+\Delta H = -\frac&lbrace;2944.4&rbrace;&lbrace;0.050&rbrace; = -58888\mathrm&lbrace; J/mol&rbrace; = -58.9\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 :::
@@ -802,7 +802,7 @@ $4(\mathrm{C--H}) + 2(\mathrm{O=O}) = 4(413) + 2(495) = 1652 + 990 = 2642\mathrm
 $2(\mathrm{C=O}) + 4(\mathrm{O--H}) = 2(743) + 4(463) = 1486 + 1852 = 3338\mathrm{ kJ/mol}$
 
 $$
-\Delta H = 2642 - 3338 = -696\mathrm{ kJ/mol}
+\Delta H = 2642 - 3338 = -696\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 ### Question 10 (Paper 2 style)
@@ -814,7 +814,7 @@ $\Delta H = -163\mathrm{ kJ/mol}$ and $\Delta S = +149\mathrm{ J/(mol}\cdot\math
 spontaneous.
 
 $$
-\Delta G^\circ = -163000 - 298 \times 149 = -163000 - 44402 = -207402\mathrm{ J/mol} = -207.4\mathrm{ kJ/mol}
+\Delta G^\circ = -163000 - 298 \times 149 = -163000 - 44402 = -207402\mathrm&lbrace; J/mol&rbrace; = -207.4\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 Since $\Delta G^\circ \lt 0$, the reaction is spontaneous at $298\mathrm{ K}$.
@@ -822,7 +822,7 @@ Since $\Delta G^\circ \lt 0$, the reaction is spontaneous at $298\mathrm{ K}$.
 **(b)** At what temperature does $\Delta G^\circ$ become positive?
 
 $$
-\Delta G^\circ = 0 \mathrm{ when } T = \frac{\Delta H}{\Delta S} = \frac{-163000}{149} = -1094\mathrm{ K}
+\Delta G^\circ = 0 \mathrm&lbrace; when &rbrace; T = \frac&lbrace;\Delta H&rbrace;&lbrace;\Delta S&rbrace; = \frac&lbrace;-163000&rbrace;&lbrace;149&rbrace; = -1094\mathrm&lbrace; K&rbrace;
 $$
 
 Since both $\Delta H$ and $\Delta S$ are negative, the reaction is spontaneous at low temperatures.

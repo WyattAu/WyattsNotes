@@ -26,7 +26,7 @@ specifying a property that its members satisfy.
 A set can be defined by a property:
 
 $$
-\{x \in \mathbb{R} \mid x^2 - 4 = 0\} = \{-2, 2\}
+\&lbrace;x \in \mathbb&lbrace;R&rbrace; \mid x^2 - 4 = 0\&rbrace; = \&lbrace;-2, 2\&rbrace;
 $$
 
 The vertical bar is read "such that."

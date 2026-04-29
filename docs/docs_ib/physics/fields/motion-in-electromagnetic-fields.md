@@ -23,27 +23,27 @@ magnetic force is also induced by moving charge. The combined force ($\bm{F}$) o
 ($q$) can be governed by Lorentz force law:
 
 $$
-\begin{aligned}
-    \bm{F} = q(\bm{E}+\bm{v} \times \bm{B})
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F&rbrace; = q(\bm&lbrace;E&rbrace;+\bm&lbrace;v&rbrace; \times \bm&lbrace;B&rbrace;)
+\end&lbrace;aligned&rbrace;
 $$
 
 When only considering the magnitude of the force:
 
 $$
-\begin{aligned}
-    \bm{F} = q(|\bm{E}| + |\bm{v} \times \bm{B}|) = q(|\bm{E}|+|\bm{v}||\bm{B}|sin\theta)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F&rbrace; = q(|\bm&lbrace;E&rbrace;| + |\bm&lbrace;v&rbrace; \times \bm&lbrace;B&rbrace;|) = q(|\bm&lbrace;E&rbrace;|+|\bm&lbrace;v&rbrace;||\bm&lbrace;B&rbrace;|sin\theta)
+\end&lbrace;aligned&rbrace;
 $$
 
 The magnitude form is written in the IB formula booklet separately for magnetic and electric force:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     F &= qvB \sin \theta\\
     F &= qE\\
-    E &= \frac{F}{q}
-\end{aligned}
+    E &= \frac&lbrace;F&rbrace;&lbrace;q&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Motion of Current in Electromagnetic Field
@@ -56,37 +56,37 @@ since the electric field have a negligible effect, only the force applied by mag
 ($\bm{B}$ is accounted):
 
 $$
-\begin{aligned}
-    \bm{F_m} &= nV(q(v\times \bm{B})) = V(\bm{J}\times\bm{B})\\
-    \bm{F_m} &= \int_C \bm{J}\times\bm{B} dV
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F_m&rbrace; &= nV(q(v\times \bm&lbrace;B&rbrace;)) = V(\bm&lbrace;J&rbrace;\times\bm&lbrace;B&rbrace;)\\
+    \bm&lbrace;F_m&rbrace; &= \int_C \bm&lbrace;J&rbrace;\times\bm&lbrace;B&rbrace; dV
+\end&lbrace;aligned&rbrace;
 $$
 
 For current of a conductor with constant cross-sectional area ($A$) and length displacement of
 ($\bm{L}$), the volume can be evaluated as ($V = AL$), leading to a force of:
 
 $$
-\begin{aligned}
-    \bm{F_m} = \int I(d\bm{L})\times B = I \int \bm{B}\times d\bm{L}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F_m&rbrace; = \int I(d\bm&lbrace;L&rbrace;)\times B = I \int \bm&lbrace;B&rbrace;\times d\bm&lbrace;L&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Since IB only considers interactions of current with uniform electric fields, magnetic field
 $\bm{B}$ is constant, evaluating the force to:
 
 $$
-\begin{aligned}
-    \bm{F_m} = I(\bm{L}\times\bm{B})
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F_m&rbrace; = I(\bm&lbrace;L&rbrace;\times\bm&lbrace;B&rbrace;)
+\end&lbrace;aligned&rbrace;
 $$
 
 Since IB considers the direction separately by the use of right hand rule (Motor effect), the
 magnitude of the force is expressed as:
 
 $$
-\begin{aligned}
-    |\bm{F_m}| = F = I|\bm{L}\times\bm{B}| = I|\bm{L}||\bm{B}|\sin\theta = BIL\sin\theta
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    |\bm&lbrace;F_m&rbrace;| = F = I|\bm&lbrace;L&rbrace;\times\bm&lbrace;B&rbrace;| = I|\bm&lbrace;L&rbrace;||\bm&lbrace;B&rbrace;|\sin\theta = BIL\sin\theta
+\end&lbrace;aligned&rbrace;
 $$
 
 This is expressed in the formula booklet $D.3$.
@@ -98,9 +98,9 @@ rotational symmetry around the direction of current, the magnetic field can be e
 cylindrical coordinates ($\hat{\phi}$) shows:
 
 $$
-\begin{aligned}
-    \bm{B_1} = \frac{\mu_0 I_1}{2\pi r}\hat{\bm{\phi}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;B_1&rbrace; = \frac&lbrace;\mu_0 I_1&rbrace;&lbrace;2\pi r&rbrace;\hat&lbrace;\bm&lbrace;\phi&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 For a $\hat{\phi} = \hat{y}$ where $\hat{y}$ is a unit vector perpendicular to other current
@@ -108,20 +108,20 @@ For a $\hat{\phi} = \hat{y}$ where $\hat{y}$ is a unit vector perpendicular to o
 is:
 
 $$
-\begin{aligned}
-    \bm{F_{12}} &= I_2(\bm{L}\times\bm{B_1})\\
-    \bm{F_{12}} &= I_2L(\hat{z}\times{B_1}), \quad \hat{z} = \hat{\bm{L}}\\
-    \bm{F_{12}} &= I_2L\left(\hat{z}\times\frac{\mu_0 I_1}{2\pi r}\hat{y}\right)\\
-    \bm{F_{12}} &= -\frac{\mu_0 I_1 I_2 L}{2\pi r}\hat{x}, \quad \hat{y} \times \hat{z} = -\hat{x}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;F_&lbrace;12&rbrace;&rbrace; &= I_2(\bm&lbrace;L&rbrace;\times\bm&lbrace;B_1&rbrace;)\\
+    \bm&lbrace;F_&lbrace;12&rbrace;&rbrace; &= I_2L(\hat&lbrace;z&rbrace;\times&lbrace;B_1&rbrace;), \quad \hat&lbrace;z&rbrace; = \hat&lbrace;\bm&lbrace;L&rbrace;&rbrace;\\
+    \bm&lbrace;F_&lbrace;12&rbrace;&rbrace; &= I_2L\left(\hat&lbrace;z&rbrace;\times\frac&lbrace;\mu_0 I_1&rbrace;&lbrace;2\pi r&rbrace;\hat&lbrace;y&rbrace;\right)\\
+    \bm&lbrace;F_&lbrace;12&rbrace;&rbrace; &= -\frac&lbrace;\mu_0 I_1 I_2 L&rbrace;&lbrace;2\pi r&rbrace;\hat&lbrace;x&rbrace;, \quad \hat&lbrace;y&rbrace; \times \hat&lbrace;z&rbrace; = -\hat&lbrace;x&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Similar to before the IB expresses the magnitude form of this equation in the formula booklet:
 
 $$
-\begin{aligned}
-    |\bm{F_{12}}| = F = -\frac{\mu_0 I_1 I_2 L}{2\pi r}\hat{x} = \mu_0 \frac{I_1 I_2 L}{2\pi r}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    |\bm&lbrace;F_&lbrace;12&rbrace;&rbrace;| = F = -\frac&lbrace;\mu_0 I_1 I_2 L&rbrace;&lbrace;2\pi r&rbrace;\hat&lbrace;x&rbrace; = \mu_0 \frac&lbrace;I_1 I_2 L&rbrace;&lbrace;2\pi r&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Where the direction of motion on current can be determined by right hand rule (motor effect).
@@ -133,7 +133,7 @@ Where the direction of motion on current can be determined by right hand rule (m
 When a charge $q$ is placed in an electric field $\bm{E}$, it experiences a force:
 
 $$
-\bm{F_E} = q\bm{E}
+\bm&lbrace;F_E&rbrace; = q\bm&lbrace;E&rbrace;
 $$
 
 Key points:
@@ -149,7 +149,7 @@ When a charge $q$ moves with velocity $\bm{v}$ through a magnetic field $\bm{B}$
 magnetic component of the Lorentz force:
 
 $$
-\bm{F_B} = q(\bm{v} \times \bm{B})
+\bm&lbrace;F_B&rbrace; = q(\bm&lbrace;v&rbrace; \times \bm&lbrace;B&rbrace;)
 $$
 
 Key points:
@@ -183,13 +183,13 @@ F_B = F_c
 $$
 
 $$
-qvB = \frac{mv^2}{r}
+qvB = \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace;
 $$
 
 Solving for the radius $r$:
 
 $$
-r = \frac{mv}{qB}
+r = \frac&lbrace;mv&rbrace;&lbrace;qB&rbrace;
 $$
 
 This is one of the most important results in this topic. Key observations:
@@ -203,13 +203,13 @@ This is one of the most important results in this topic. Key observations:
 The time for one complete revolution (the period $T$) is:
 
 $$
-T = \frac{2\pi r}{v} = \frac{2\pi m}{qB}
+T = \frac&lbrace;2\pi r&rbrace;&lbrace;v&rbrace; = \frac&lbrace;2\pi m&rbrace;&lbrace;qB&rbrace;
 $$
 
 The cyclotron frequency $f$ is:
 
 $$
-f = \frac{1}{T} = \frac{qB}{2\pi m}
+f = \frac&lbrace;1&rbrace;&lbrace;T&rbrace; = \frac&lbrace;qB&rbrace;&lbrace;2\pi m&rbrace;
 $$
 
 **Important:** The period and frequency are **independent of the speed** and radius. This means all
@@ -225,11 +225,11 @@ the field. Find the radius and period of the circular path.
 **Solution:**
 
 $$
-r = \frac{m_e v}{|q| B} = \frac{(9.11 \times 10^{-31})(3.0 \times 10^6)}{(1.60 \times 10^{-19})(0.50)} = 3.42 \times 10^{-5} \mathrm{ m} = 34.2 \mathrm{ \mu m}
+r = \frac&lbrace;m_e v&rbrace;&lbrace;|q| B&rbrace; = \frac&lbrace;(9.11 \times 10^&lbrace;-31&rbrace;)(3.0 \times 10^6)&rbrace;&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.50)&rbrace; = 3.42 \times 10^&lbrace;-5&rbrace; \mathrm&lbrace; m&rbrace; = 34.2 \mathrm&lbrace; \mu m&rbrace;
 $$
 
 $$
-T = \frac{2\pi m_e}{|q| B} = \frac{2\pi (9.11 \times 10^{-31})}{(1.60 \times 10^{-19})(0.50)} = 7.16 \times 10^{-11} \mathrm{ s}
+T = \frac&lbrace;2\pi m_e&rbrace;&lbrace;|q| B&rbrace; = \frac&lbrace;2\pi (9.11 \times 10^&lbrace;-31&rbrace;)&rbrace;&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.50)&rbrace; = 7.16 \times 10^&lbrace;-11&rbrace; \mathrm&lbrace; s&rbrace;
 $$
 
 **Exam tip:** When dealing with electrons, remember that the charge is negative. Use the magnitude
@@ -277,7 +277,7 @@ qE = qvB
 $$
 
 $$
-v = \frac{E}{B}
+v = \frac&lbrace;E&rbrace;&lbrace;B&rbrace;
 $$
 
 Only particles with this exact velocity pass through. Particles with $v \gt E/B$ are deflected one
@@ -291,7 +291,7 @@ selected?
 **Solution:**
 
 $$
-v = \frac{E}{B} = \frac{1.5 \times 10^5}{0.050} = 3.0 \times 10^6 \mathrm{ m/s}
+v = \frac&lbrace;E&rbrace;&lbrace;B&rbrace; = \frac&lbrace;1.5 \times 10^5&rbrace;&lbrace;0.050&rbrace; = 3.0 \times 10^6 \mathrm&lbrace; m/s&rbrace;
 $$
 
 **Exam tip:** The velocity selector does not depend on the charge or mass of the particle — only on
@@ -311,7 +311,7 @@ chemistry, forensics, environmental science, and many other fields.
    gained equals the electrical potential energy lost:
 
 $$
-qV = \frac{1}{2}mv^2
+qV = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2
 $$
 
 3. **Velocity selection:** Ions pass through a velocity selector, so all entering the deflection
@@ -320,7 +320,7 @@ $$
    their velocity) and follow a semicircular path. The radius of the path depends on the mass:
 
 $$
-r = \frac{mv}{qB}
+r = \frac&lbrace;mv&rbrace;&lbrace;qB&rbrace;
 $$
 
 5. **Detection:** Ions of different masses hit the detector at different positions. Since $v$ is the
@@ -337,13 +337,13 @@ From the acceleration stage: $v = \sqrt{\frac{2qV}{m}}$
 Substituting into the radius equation:
 
 $$
-r = \frac{m}{qB} \sqrt{\frac{2qV}{m}} = \frac{1}{B} \sqrt{\frac{2mV}{q}}
+r = \frac&lbrace;m&rbrace;&lbrace;qB&rbrace; \sqrt&lbrace;\frac&lbrace;2qV&rbrace;&lbrace;m&rbrace;&rbrace; = \frac&lbrace;1&rbrace;&lbrace;B&rbrace; \sqrt&lbrace;\frac&lbrace;2mV&rbrace;&lbrace;q&rbrace;&rbrace;
 $$
 
 This gives the mass-to-charge ratio:
 
 $$
-\frac{m}{q} = \frac{B^2 r^2}{2V}
+\frac&lbrace;m&rbrace;&lbrace;q&rbrace; = \frac&lbrace;B^2 r^2&rbrace;&lbrace;2V&rbrace;
 $$
 
 ### Worked Example: Mass Spectrometer
@@ -360,11 +360,11 @@ Using $\frac{m}{q} = \frac{B^2 r^2}{2V}$:
 **Isotope 1:**
 
 $$
-m_1 = \frac{q B^2 r_1^2}{2V} = \frac{(1.60 \times 10^{-19})(0.20)^2(0.102)^2}{2(5000)} = \frac{(1.60 \times 10^{-19})(0.04)(0.0104)}{10000} = 6.67 \times 10^{-26} \mathrm{ kg}
+m_1 = \frac&lbrace;q B^2 r_1^2&rbrace;&lbrace;2V&rbrace; = \frac&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.20)^2(0.102)^2&rbrace;&lbrace;2(5000)&rbrace; = \frac&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.04)(0.0104)&rbrace;&lbrace;10000&rbrace; = 6.67 \times 10^&lbrace;-26&rbrace; \mathrm&lbrace; kg&rbrace;
 $$
 
 $$
-m_1 = \frac{6.67 \times 10^{-26}}{1.66 \times 10^{-27}} = 40.2 \mathrm{ u}
+m_1 = \frac&lbrace;6.67 \times 10^&lbrace;-26&rbrace;&rbrace;&lbrace;1.66 \times 10^&lbrace;-27&rbrace;&rbrace; = 40.2 \mathrm&lbrace; u&rbrace;
 $$
 
 This is consistent with calcium-40.
@@ -372,11 +372,11 @@ This is consistent with calcium-40.
 **Isotope 2:**
 
 $$
-m_2 = \frac{(1.60 \times 10^{-19})(0.04)(0.108)^2}{10000} = \frac{(1.60 \times 10^{-19})(0.04)(0.01166)}{10000} = 7.47 \times 10^{-26} \mathrm{ kg}
+m_2 = \frac&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.04)(0.108)^2&rbrace;&lbrace;10000&rbrace; = \frac&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.04)(0.01166)&rbrace;&lbrace;10000&rbrace; = 7.47 \times 10^&lbrace;-26&rbrace; \mathrm&lbrace; kg&rbrace;
 $$
 
 $$
-m_2 = \frac{7.47 \times 10^{-26}}{1.66 \times 10^{-27}} = 45.0 \mathrm{ u}
+m_2 = \frac&lbrace;7.47 \times 10^&lbrace;-26&rbrace;&rbrace;&lbrace;1.66 \times 10^&lbrace;-27&rbrace;&rbrace; = 45.0 \mathrm&lbrace; u&rbrace;
 $$
 
 This is consistent with scandium-45.
@@ -484,25 +484,25 @@ cyclotron frequency? c) What is the maximum kinetic energy of the protons in ele
 **a) Maximum radius:**
 
 $$
-r_{\max} = \frac{m_p v_{\max}}{qB} = \frac{(1.67 \times 10^{-27})(2.0 \times 10^7)}{(1.60 \times 10^{-19})(1.2)} = \frac{3.34 \times 10^{-20}}{1.92 \times 10^{-19}} = 0.174 \mathrm{ m} = 17.4 \mathrm{ cm}
+r_&lbrace;\max&rbrace; = \frac&lbrace;m_p v_&lbrace;\max&rbrace;&rbrace;&lbrace;qB&rbrace; = \frac&lbrace;(1.67 \times 10^&lbrace;-27&rbrace;)(2.0 \times 10^7)&rbrace;&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(1.2)&rbrace; = \frac&lbrace;3.34 \times 10^&lbrace;-20&rbrace;&rbrace;&lbrace;1.92 \times 10^&lbrace;-19&rbrace;&rbrace; = 0.174 \mathrm&lbrace; m&rbrace; = 17.4 \mathrm&lbrace; cm&rbrace;
 $$
 
 **b) Cyclotron frequency:**
 
 $$
-f = \frac{qB}{2\pi m_p} = \frac{(1.60 \times 10^{-19})(1.2)}{2\pi(1.67 \times 10^{-27})} = \frac{1.92 \times 10^{-19}}{1.05 \times 10^{-26}} = 1.83 \times 10^7 \mathrm{ Hz} = 18.3 \mathrm{ MHz}
+f = \frac&lbrace;qB&rbrace;&lbrace;2\pi m_p&rbrace; = \frac&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(1.2)&rbrace;&lbrace;2\pi(1.67 \times 10^&lbrace;-27&rbrace;)&rbrace; = \frac&lbrace;1.92 \times 10^&lbrace;-19&rbrace;&rbrace;&lbrace;1.05 \times 10^&lbrace;-26&rbrace;&rbrace; = 1.83 \times 10^7 \mathrm&lbrace; Hz&rbrace; = 18.3 \mathrm&lbrace; MHz&rbrace;
 $$
 
 **c) Maximum kinetic energy:**
 
 $$
-E_k = \frac{1}{2}m_p v_{\max}^2 = \frac{1}{2}(1.67 \times 10^{-27})(2.0 \times 10^7)^2 = 3.34 \times 10^{-13} \mathrm{ J}
+E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m_p v_&lbrace;\max&rbrace;^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(1.67 \times 10^&lbrace;-27&rbrace;)(2.0 \times 10^7)^2 = 3.34 \times 10^&lbrace;-13&rbrace; \mathrm&lbrace; J&rbrace;
 $$
 
 Converting to electron-volts:
 
 $$
-E_k = \frac{3.34 \times 10^{-13}}{1.60 \times 10^{-19}} = 2.09 \times 10^6 \mathrm{ eV} = 2.09 \mathrm{ MeV}
+E_k = \frac&lbrace;3.34 \times 10^&lbrace;-13&rbrace;&rbrace;&lbrace;1.60 \times 10^&lbrace;-19&rbrace;&rbrace; = 2.09 \times 10^6 \mathrm&lbrace; eV&rbrace; = 2.09 \mathrm&lbrace; MeV&rbrace;
 $$
 
 **Key insight:** The cyclotron frequency is independent of the proton's speed and radius. The
@@ -523,7 +523,7 @@ $r_2 = 12.5$ cm. Calculate the mass of each isotope in atomic mass units.
 **Step 1:** Find the selected velocity:
 
 $$
-v = \frac{E}{B_1} = \frac{6.0 \times 10^4}{0.20} = 3.0 \times 10^5 \mathrm{ m/s}
+v = \frac&lbrace;E&rbrace;&lbrace;B_1&rbrace; = \frac&lbrace;6.0 \times 10^4&rbrace;&lbrace;0.20&rbrace; = 3.0 \times 10^5 \mathrm&lbrace; m/s&rbrace;
 $$
 
 **Step 2:** Use $r = \frac{mv}{qB_2}$ to find each mass:
@@ -531,21 +531,21 @@ $$
 **Isotope 1:**
 
 $$
-m_1 = \frac{qB_2 r_1}{v} = \frac{(1.60 \times 10^{-19})(0.50)(0.116)}{3.0 \times 10^5} = 3.09 \times 10^{-26} \mathrm{ kg}
+m_1 = \frac&lbrace;qB_2 r_1&rbrace;&lbrace;v&rbrace; = \frac&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.50)(0.116)&rbrace;&lbrace;3.0 \times 10^5&rbrace; = 3.09 \times 10^&lbrace;-26&rbrace; \mathrm&lbrace; kg&rbrace;
 $$
 
 $$
-m_1 = \frac{3.09 \times 10^{-26}}{1.66 \times 10^{-27}} = 18.6 \mathrm{ u}
+m_1 = \frac&lbrace;3.09 \times 10^&lbrace;-26&rbrace;&rbrace;&lbrace;1.66 \times 10^&lbrace;-27&rbrace;&rbrace; = 18.6 \mathrm&lbrace; u&rbrace;
 $$
 
 **Isotope 2:**
 
 $$
-m_2 = \frac{(1.60 \times 10^{-19})(0.50)(0.125)}{3.0 \times 10^5} = 3.33 \times 10^{-26} \mathrm{ kg}
+m_2 = \frac&lbrace;(1.60 \times 10^&lbrace;-19&rbrace;)(0.50)(0.125)&rbrace;&lbrace;3.0 \times 10^5&rbrace; = 3.33 \times 10^&lbrace;-26&rbrace; \mathrm&lbrace; kg&rbrace;
 $$
 
 $$
-m_2 = \frac{3.33 \times 10^{-26}}{1.66 \times 10^{-27}} = 20.1 \mathrm{ u}
+m_2 = \frac&lbrace;3.33 \times 10^&lbrace;-26&rbrace;&rbrace;&lbrace;1.66 \times 10^&lbrace;-27&rbrace;&rbrace; = 20.1 \mathrm&lbrace; u&rbrace;
 $$
 
 These correspond to neon-20 (20.2 u) and neon-22 (21.9 u) — the slight discrepancy is due to

@@ -22,7 +22,7 @@ algebraic identities to combinatorial coefficient extraction.
 A polynomial $f(x)$ of degree $n$ is written in **standard form** (descending powers of $x$):
 
 $$
-f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0, \quad a_n \neq 0
+f(x) = a_n x^n + a_&lbrace;n-1&rbrace; x^&lbrace;n-1&rbrace; + \cdots + a_1 x + a_0, \quad a_n \neq 0
 $$
 
 - $a_n$ is the **leading coefficient**.
@@ -77,13 +77,13 @@ Therefore $x^2 + 4x + 6 \equiv (x-1)^2 + 6(x-1) + 11$.
 For any positive integer $n$,
 
 $$
-(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k
+(a + b)^n = \sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; \binom&lbrace;n&rbrace;&lbrace;k&rbrace; a^&lbrace;n-k&rbrace; b^k
 $$
 
 where the **binomial coefficient** is
 
 $$
-\binom{n}{k} = {}_n C_k = \frac{n!}{k!(n-k)!}
+\binom&lbrace;n&rbrace;&lbrace;k&rbrace; = &lbrace;&rbrace;_n C_k = \frac&lbrace;n!&rbrace;&lbrace;k!(n-k)!&rbrace;
 $$
 
 This is known as the **Binomial Theorem**. See also
@@ -94,13 +94,13 @@ This is known as the **Binomial Theorem**. See also
 The binomial coefficients $\binom{n}{k}$ for successive values of $n$ form Pascal's triangle:
 
 $$
-\begin{array}{c@{\hspace{12pt}}c@{\hspace{12pt}}c@{\hspace{12pt}}c@{\hspace{12pt}}c@{\hspace{12pt}}c}
+\begin&lbrace;array&rbrace;&lbrace;c@&lbrace;\hspace&lbrace;12pt&rbrace;&rbrace;c@&lbrace;\hspace&lbrace;12pt&rbrace;&rbrace;c@&lbrace;\hspace&lbrace;12pt&rbrace;&rbrace;c@&lbrace;\hspace&lbrace;12pt&rbrace;&rbrace;c@&lbrace;\hspace&lbrace;12pt&rbrace;&rbrace;c&rbrace;
  &  &  &  & 1 &  \\
  &  &  & 1 &  & 1 \\
  &  & 1 &  & 2 &  & 1 \\
  & 1 &  & 3 &  & 3 &  & 1 \\
 1 &  & 4 &  & 6 &  & 4 &  & 1
-\end{array}
+\end&lbrace;array&rbrace;
 $$
 
 Each entry is the sum of the two entries directly above it, reflecting the recurrence relation
@@ -116,13 +116,13 @@ $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$.
 3. **Sum of coefficients**: Setting $a = b = 1$ in the binomial theorem,
 
 $$
-\sum_{k=0}^{n} \binom{n}{k} = 2^n
+\sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; \binom&lbrace;n&rbrace;&lbrace;k&rbrace; = 2^n
 $$
 
 4. **Alternating sum**: Setting $a = 1, b = -1$,
 
 $$
-\sum_{k=0}^{n} (-1)^k \binom{n}{k} = 0
+\sum_&lbrace;k=0&rbrace;^&lbrace;n&rbrace; (-1)^k \binom&lbrace;n&rbrace;&lbrace;k&rbrace; = 0
 $$
 
 ### Expanding $(1+x)^n$
@@ -130,13 +130,13 @@ $$
 The expansion of $(1+x)^n$ is a frequently tested form:
 
 $$
-(1 + x)^n = \binom{n}{0} + \binom{n}{1}x + \binom{n}{2}x^2 + \cdots + \binom{n}{n}x^n
+(1 + x)^n = \binom&lbrace;n&rbrace;&lbrace;0&rbrace; + \binom&lbrace;n&rbrace;&lbrace;1&rbrace;x + \binom&lbrace;n&rbrace;&lbrace;2&rbrace;x^2 + \cdots + \binom&lbrace;n&rbrace;&lbrace;n&rbrace;x^n
 $$
 
 The **general term** (the $(r+1)$-th term) is:
 
 $$
-T_{r+1} = \binom{n}{r} x^r, \quad r = 0, 1, 2, \ldots, n
+T_&lbrace;r+1&rbrace; = \binom&lbrace;n&rbrace;&lbrace;r&rbrace; x^r, \quad r = 0, 1, 2, \ldots, n
 $$
 
 ### Expanding $(a + bx)^n$
@@ -144,13 +144,13 @@ $$
 For $(a + bx)^n$, the general term is:
 
 $$
-T_{r+1} = \binom{n}{r} a^{n-r} (bx)^r = \binom{n}{r} a^{n-r} b^r x^r
+T_&lbrace;r+1&rbrace; = \binom&lbrace;n&rbrace;&lbrace;r&rbrace; a^&lbrace;n-r&rbrace; (bx)^r = \binom&lbrace;n&rbrace;&lbrace;r&rbrace; a^&lbrace;n-r&rbrace; b^r x^r
 $$
 
 To find the coefficient of $x^k$, set $r = k$ and evaluate:
 
 $$
-[\mathrm{coefficient of } x^k] = \binom{n}{k} a^{n-k} b^k
+[\mathrm&lbrace;coefficient of &rbrace; x^k] = \binom&lbrace;n&rbrace;&lbrace;k&rbrace; a^&lbrace;n-k&rbrace; b^k
 $$
 
 <details>
@@ -162,7 +162,7 @@ The general term is $T_{r+1} = \binom{7}{r} 2^{7-r}(-3x)^r$.
 For the $x^3$ term, set $r = 3$:
 
 $$
-\binom{7}{3} \cdot 2^4 \cdot (-3)^3 = 35 \cdot 16 \cdot (-27) = -15\,120
+\binom&lbrace;7&rbrace;&lbrace;3&rbrace; \cdot 2^4 \cdot (-3)^3 = 35 \cdot 16 \cdot (-27) = -15\,120
 $$
 
 The coefficient of $x^3$ is $-15\,120$.
@@ -179,7 +179,7 @@ $T_{r+1} = \binom{6}{r} x^{6-r} \left(\dfrac{2}{x}\right)^r = \binom{6}{r} \cdot
 For the constant term, $6 - 2r = 0 \implies r = 3$:
 
 $$
-\binom{6}{3} \cdot 2^3 = 20 \cdot 8 = 160
+\binom&lbrace;6&rbrace;&lbrace;3&rbrace; \cdot 2^3 = 20 \cdot 8 = 160
 $$
 
 The constant term is $160$.
@@ -193,7 +193,7 @@ Find the middle term in the expansion of $\left(1 + \dfrac{x}{2}\right)^{10}$.
 Since $n = 10$ (even), there is one middle term at position $\dfrac{n}{2} + 1 = 6$, i.e. $r = 5$:
 
 $$
-T_6 = \binom{10}{5} \left(\frac{x}{2}\right)^5 = 252 \cdot \frac{x^5}{32} = \frac{63}{8} x^5
+T_6 = \binom&lbrace;10&rbrace;&lbrace;5&rbrace; \left(\frac&lbrace;x&rbrace;&lbrace;2&rbrace;\right)^5 = 252 \cdot \frac&lbrace;x^5&rbrace;&lbrace;32&rbrace; = \frac&lbrace;63&rbrace;&lbrace;8&rbrace; x^5
 $$
 
 </details>
@@ -218,17 +218,17 @@ where $\deg r(x) < \deg g(x)$ or $r(x) = 0$.
 Divide $f(x) = 2x^3 + 3x^2 - 5x + 7$ by $g(x) = x^2 - x + 2$.
 
 $$
-\begin{array}{r|l}
+\begin&lbrace;array&rbrace;&lbrace;r|l&rbrace;
 x^2 - x + 2 & 2x^3 + 3x^2 - 5x + 7 \\
 \hline
             & 2x \\
             & 2x^3 - 2x^2 + 4x \\
-            \cline{2-2}
-            & \phantom{2x^3{}} 5x^2 - 9x + 7 \\
-            & \phantom{2x^3{}} 5x^2 - 5x + 10 \\
-            & \cline{2-2}
-            & \phantom{2x^3{}} \phantom{5x^2{}} -4x - 3
-\end{array}
+            \cline&lbrace;2-2&rbrace;
+            & \phantom&lbrace;2x^3&lbrace;&rbrace;&rbrace; 5x^2 - 9x + 7 \\
+            & \phantom&lbrace;2x^3&lbrace;&rbrace;&rbrace; 5x^2 - 5x + 10 \\
+            & \cline&lbrace;2-2&rbrace;
+            & \phantom&lbrace;2x^3&lbrace;&rbrace;&rbrace; \phantom&lbrace;5x^2&lbrace;&rbrace;&rbrace; -4x - 3
+\end&lbrace;array&rbrace;
 $$
 
 Quotient: $q(x) = 2x + 5$, Remainder: $r(x) = -4x - 3$.
@@ -266,7 +266,7 @@ Find the remainder when $f(x) = 2x^3 - 5x + 3$ is divided by $(2x + 1)$.
 Set $2x + 1 = 0 \implies x = -\dfrac{1}{2}$. The remainder is:
 
 $$
-f\!\left(-\frac{1}{2}\right) = 2\left(-\frac{1}{2}\right)^3 - 5\left(-\frac{1}{2}\right) + 3 = -\frac{1}{4} + \frac{5}{2} + 3 = \frac{21}{4}
+f\!\left(-\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right) = 2\left(-\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^3 - 5\left(-\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right) + 3 = -\frac&lbrace;1&rbrace;&lbrace;4&rbrace; + \frac&lbrace;5&rbrace;&lbrace;2&rbrace; + 3 = \frac&lbrace;21&rbrace;&lbrace;4&rbrace;
 $$
 
 </details>
@@ -420,7 +420,7 @@ Solutions: $x = 2, -2, 3$.
 For a quadratic equation $ax^2 + bx + c = 0$ with roots $\alpha$ and $\beta$:
 
 $$
-\alpha + \beta = -\frac{b}{a}, \qquad \alpha\beta = \frac{c}{a}
+\alpha + \beta = -\frac&lbrace;b&rbrace;&lbrace;a&rbrace;, \qquad \alpha\beta = \frac&lbrace;c&rbrace;&lbrace;a&rbrace;
 $$
 
 These relationships between roots and coefficients are essential for DSE problems involving root
@@ -435,13 +435,13 @@ From Vieta: $\alpha + \beta = \dfrac{5}{2}$, $\alpha\beta = \dfrac{1}{2}$.
 Sum of new roots:
 
 $$
-\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \frac{25}{4} - 1 = \frac{21}{4}
+\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \frac&lbrace;25&rbrace;&lbrace;4&rbrace; - 1 = \frac&lbrace;21&rbrace;&lbrace;4&rbrace;
 $$
 
 Product of new roots:
 
 $$
-\alpha^2 \beta^2 = (\alpha\beta)^2 = \frac{1}{4}
+\alpha^2 \beta^2 = (\alpha\beta)^2 = \frac&lbrace;1&rbrace;&lbrace;4&rbrace;
 $$
 
 The required equation is $x^2 - \dfrac{21}{4}x + \dfrac{1}{4} = 0$, or equivalently
@@ -454,7 +454,7 @@ $4x^2 - 21x + 1 = 0$.
 If $\alpha$ and $\beta$ are roots of $x^2 - 6x + 4 = 0$, find the value of $\dfrac{1}{\alpha} + \dfrac{1}{\beta}$.
 
 $$
-\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{6}{4} = \frac{3}{2}
+\frac&lbrace;1&rbrace;&lbrace;\alpha&rbrace; + \frac&lbrace;1&rbrace;&lbrace;\beta&rbrace; = \frac&lbrace;\alpha + \beta&rbrace;&lbrace;\alpha\beta&rbrace; = \frac&lbrace;6&rbrace;&lbrace;4&rbrace; = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;
 $$
 
 </details>
@@ -464,7 +464,7 @@ $$
 For $ax^3 + bx^2 + cx + d = 0$ with roots $\alpha, \beta, \gamma$:
 
 $$
-\alpha + \beta + \gamma = -\frac{b}{a}, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}, \quad \alpha\beta\gamma = -\frac{d}{a}
+\alpha + \beta + \gamma = -\frac&lbrace;b&rbrace;&lbrace;a&rbrace;, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac&lbrace;c&rbrace;&lbrace;a&rbrace;, \quad \alpha\beta\gamma = -\frac&lbrace;d&rbrace;&lbrace;a&rbrace;
 $$
 
 </details>
@@ -479,13 +479,13 @@ $$
 Using the binomial theorem:
 
 $$
-(1 + 2x)^6 = \sum_{k=0}^{6} \binom{6}{k}(2x)^k
+(1 + 2x)^6 = \sum_&lbrace;k=0&rbrace;^&lbrace;6&rbrace; \binom&lbrace;6&rbrace;&lbrace;k&rbrace;(2x)^k
 $$
 
 The coefficient of $x^4$ corresponds to $k = 4$:
 
 $$
-\binom{6}{4} \cdot 2^4 = 15 \cdot 16 = 240
+\binom&lbrace;6&rbrace;&lbrace;4&rbrace; \cdot 2^4 = 15 \cdot 16 = 240
 $$
 
 The full expansion is $1 + 12x + 60x^2 + 160x^3 + 240x^4 + 192x^5 + 64x^6$.
@@ -500,7 +500,7 @@ The general term is $T_{r+1} = \binom{9}{r} (x^2)^{9-r} \cdot \left(\dfrac{1}{x}
 For the constant term: $18 - 3r = 0 \implies r = 6$.
 
 $$
-\binom{9}{6} = \binom{9}{3} = 84
+\binom&lbrace;9&rbrace;&lbrace;6&rbrace; = \binom&lbrace;9&rbrace;&lbrace;3&rbrace; = 84
 $$
 
 The constant term is $84$.
@@ -608,11 +608,11 @@ $\alpha^3 + \beta^3$ without solving the equation.
 From Vieta: $\alpha + \beta = \dfrac{8}{3}$, $\alpha\beta = \dfrac{2}{3}$.
 
 $$
-\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = \left(\frac{8}{3}\right)^3 - 3 \cdot \frac{2}{3} \cdot \frac{8}{3}
+\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = \left(\frac&lbrace;8&rbrace;&lbrace;3&rbrace;\right)^3 - 3 \cdot \frac&lbrace;2&rbrace;&lbrace;3&rbrace; \cdot \frac&lbrace;8&rbrace;&lbrace;3&rbrace;
 $$
 
 $$
-= \frac{512}{27} - \frac{48}{9} = \frac{512}{27} - \frac{144}{27} = \frac{368}{27}
+= \frac&lbrace;512&rbrace;&lbrace;27&rbrace; - \frac&lbrace;48&rbrace;&lbrace;9&rbrace; = \frac&lbrace;512&rbrace;&lbrace;27&rbrace; - \frac&lbrace;144&rbrace;&lbrace;27&rbrace; = \frac&lbrace;368&rbrace;&lbrace;27&rbrace;
 $$
 
 </details>
@@ -622,7 +622,7 @@ $x^3$. Use the expansion to find an approximate value of $(0.97)^5$.
 <details>
 <summary>Answer</summary>
 $$
-(1-3x)^5 = \binom{5}{0} + \binom{5}{1}(-3x) + \binom{5}{2}(-3x)^2 + \binom{5}{3}(-3x)^3 + \cdots
+(1-3x)^5 = \binom&lbrace;5&rbrace;&lbrace;0&rbrace; + \binom&lbrace;5&rbrace;&lbrace;1&rbrace;(-3x) + \binom&lbrace;5&rbrace;&lbrace;2&rbrace;(-3x)^2 + \binom&lbrace;5&rbrace;&lbrace;3&rbrace;(-3x)^3 + \cdots
 $$
 
 $$
@@ -656,7 +656,7 @@ coefficients.
 <details>
 <summary>Answer</summary>
 $$
-\binom{n}{n-r} = \frac{n!}{(n-r)!\,[n-(n-r)]!} = \frac{n!}{(n-r)!\,r!} = \binom{n}{r}
+\binom&lbrace;n&rbrace;&lbrace;n-r&rbrace; = \frac&lbrace;n!&rbrace;&lbrace;(n-r)!\,[n-(n-r)]!&rbrace; = \frac&lbrace;n!&rbrace;&lbrace;(n-r)!\,r!&rbrace; = \binom&lbrace;n&rbrace;&lbrace;r&rbrace;
 $$
 </details>
 
@@ -671,7 +671,7 @@ $(-x)^{5-k}$.
 The coefficient of $x^5$ is:
 
 $$
-\sum_{k=0}^{5} \binom{8}{k}(-1)^{5-k}\binom{6}{5-k}
+\sum_&lbrace;k=0&rbrace;^&lbrace;5&rbrace; \binom&lbrace;8&rbrace;&lbrace;k&rbrace;(-1)^&lbrace;5-k&rbrace;\binom&lbrace;6&rbrace;&lbrace;5-k&rbrace;
 $$
 
 Evaluating each term:

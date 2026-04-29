@@ -14,7 +14,7 @@ For strong monoprotic acids, $[\mathrm{H}^+]$ equals the acid concentration. For
 acids:
 
 $$
-[\mathrm{H}^+] = 2 \times [\mathrm{acid}]
+[\mathrm&lbrace;H&rbrace;^+] = 2 \times [\mathrm&lbrace;acid&rbrace;]
 $$
 
 :::info[Example]
@@ -23,11 +23,11 @@ $0.050\mathrm{ M}$ $\mathrm{H}_2\mathrm{SO}_4$ (assuming complete first dissocia
 second dissociation):
 
 $$
-[\mathrm{H}^+] \approx 2 \times 0.050 = 0.100\mathrm{ M}
+[\mathrm&lbrace;H&rbrace;^+] \approx 2 \times 0.050 = 0.100\mathrm&lbrace; M&rbrace;
 $$
 
 $$
-\mathrm{pH} = -\log(0.100) = 1.00
+\mathrm&lbrace;pH&rbrace; = -\log(0.100) = 1.00
 $$
 
 :::
@@ -37,21 +37,21 @@ $$
 For a weak acid $\mathrm{HA}$ with acid dissociation constant $K_a$:
 
 $$
-\mathrm{HA} \rightleftharpoons \mathrm{H}^+ + \mathrm{A}^-
+\mathrm&lbrace;HA&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;A&rbrace;^-
 $$
 
 $$
-K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}
+K_a = \frac&lbrace;[\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;A&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;HA&rbrace;]&rbrace;
 $$
 
 Assuming $[\mathrm{H}^+] = [\mathrm{A}^-] = x$ and $[\mathrm{HA}] \approx c_0$ (the 5% rule):
 
 $$
-x = \sqrt{K_a \cdot c_0}
+x = \sqrt&lbrace;K_a \cdot c_0&rbrace;
 $$
 
 $$
-\mathrm{pH} = -\log x
+\mathrm&lbrace;pH&rbrace; = -\log x
 $$
 
 ### Very Dilute Weak Acids
@@ -60,7 +60,7 @@ When the acid is very dilute ($c_0$ is small) or $K_a$ is large, the approximati
 $[\mathrm{HA}] \approx c_0$ breaks down. Solve the full quadratic:
 
 $$
-K_a = \frac{x^2}{c_0 - x}
+K_a = \frac&lbrace;x^2&rbrace;&lbrace;c_0 - x&rbrace;
 $$
 
 $$
@@ -74,14 +74,14 @@ Calculate the $\mathrm{pH}$ of $0.010\mathrm{ M}$ ethanoic acid ($K_a = 1.8 \tim
 Using the approximation:
 
 $$
-x = \sqrt{1.8 \times 10^{-5} \times 0.010} = \sqrt{1.8 \times 10^{-7}} = 4.24 \times 10^{-4}
+x = \sqrt&lbrace;1.8 \times 10^&lbrace;-5&rbrace; \times 0.010&rbrace; = \sqrt&lbrace;1.8 \times 10^&lbrace;-7&rbrace;&rbrace; = 4.24 \times 10^&lbrace;-4&rbrace;
 $$
 
 Check: $\dfrac{4.24 \times 10^{-4}}{0.010} \times 100\% = 4.24\% \lt 5\%$. The approximation is
 valid.
 
 $$
-\mathrm{pH} = -\log(4.24 \times 10^{-4}) = 3.37
+\mathrm&lbrace;pH&rbrace; = -\log(4.24 \times 10^&lbrace;-4&rbrace;) = 3.37
 $$
 
 :::
@@ -91,7 +91,7 @@ $$
 For diprotic acids ($\mathrm{H}_2\mathrm{A}$), the first dissociation dominates:
 
 $$
-K_{a1} \gg K_{a2}
+K_&lbrace;a1&rbrace; \gg K_&lbrace;a2&rbrace;
 $$
 
 The $\mathrm{pH}$ is determined primarily by $K_{a1}$. The second dissociation contributes
@@ -119,7 +119,7 @@ It consists of a weak acid and its conjugate base (or a weak base and its conjug
 ### The Henderson-Hasselbalch Equation
 
 $$
-\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}
+\mathrm&lbrace;pH&rbrace; = \mathrm&lbrace;p&rbrace;K_a + \log\frac&lbrace;[\mathrm&lbrace;A&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;HA&rbrace;]&rbrace;
 $$
 
 where $\mathrm{p}K_a = -\log K_a$.
@@ -137,15 +137,15 @@ Prepare an ethanoic acid/sodium ethanoate buffer with $\mathrm{pH} = 5.00$. Give
 $\mathrm{p}K_a = 4.76$.
 
 $$
-5.00 = 4.76 + \log\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{[\mathrm{CH}_3\mathrm{COOH}]}
+5.00 = 4.76 + \log\frac&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COOH&rbrace;]&rbrace;
 $$
 
 $$
-\log\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{[\mathrm{CH}_3\mathrm{COOH}]} = 0.24
+\log\frac&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COOH&rbrace;]&rbrace; = 0.24
 $$
 
 $$
-\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{[\mathrm{CH}_3\mathrm{COOH}]} = 10^{0.24} = 1.74
+\frac&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COOH&rbrace;]&rbrace; = 10^&lbrace;0.24&rbrace; = 1.74
 $$
 
 Mix ethanoic acid and sodium ethanoate in a molar ratio of $1 : 1.74$ (or approximately $1 : 1.7$).
@@ -157,21 +157,21 @@ Mix ethanoic acid and sodium ethanoate in a molar ratio of $1 : 1.74$ (or approx
 When acid is added:
 
 $$
-[\mathrm{HA}]_{\mathrm{new}} = [\mathrm{HA}]_{\mathrm{old}} + [\mathrm{H}^+]_{\mathrm{added}}
+[\mathrm&lbrace;HA&rbrace;]_&lbrace;\mathrm&lbrace;new&rbrace;&rbrace; = [\mathrm&lbrace;HA&rbrace;]_&lbrace;\mathrm&lbrace;old&rbrace;&rbrace; + [\mathrm&lbrace;H&rbrace;^+]_&lbrace;\mathrm&lbrace;added&rbrace;&rbrace;
 $$
 
 $$
-[\mathrm{A}^-]_{\mathrm{new}} = [\mathrm{A}^-]_{\mathrm{old}} - [\mathrm{H}^+]_{\mathrm{added}}
+[\mathrm&lbrace;A&rbrace;^-]_&lbrace;\mathrm&lbrace;new&rbrace;&rbrace; = [\mathrm&lbrace;A&rbrace;^-]_&lbrace;\mathrm&lbrace;old&rbrace;&rbrace; - [\mathrm&lbrace;H&rbrace;^+]_&lbrace;\mathrm&lbrace;added&rbrace;&rbrace;
 $$
 
 When base is added:
 
 $$
-[\mathrm{HA}]_{\mathrm{new}} = [\mathrm{HA}]_{\mathrm{old}} - [\mathrm{OH}^-]_{\mathrm{added}}
+[\mathrm&lbrace;HA&rbrace;]_&lbrace;\mathrm&lbrace;new&rbrace;&rbrace; = [\mathrm&lbrace;HA&rbrace;]_&lbrace;\mathrm&lbrace;old&rbrace;&rbrace; - [\mathrm&lbrace;OH&rbrace;^-]_&lbrace;\mathrm&lbrace;added&rbrace;&rbrace;
 $$
 
 $$
-[\mathrm{A}^-]_{\mathrm{new}} = [\mathrm{A}^-]_{\mathrm{old}} + [\mathrm{OH}^-]_{\mathrm{added}}
+[\mathrm&lbrace;A&rbrace;^-]_&lbrace;\mathrm&lbrace;new&rbrace;&rbrace; = [\mathrm&lbrace;A&rbrace;^-]_&lbrace;\mathrm&lbrace;old&rbrace;&rbrace; + [\mathrm&lbrace;OH&rbrace;^-]_&lbrace;\mathrm&lbrace;added&rbrace;&rbrace;
 $$
 
 :::info[Example]
@@ -181,15 +181,15 @@ $\mathrm{CH}_3\mathrm{COO}^-$ ($\mathrm{pH} = 4.76$). Add $0.01\mathrm{ mol}$ of
 $1.0\mathrm{ L}$ of buffer.
 
 $$
-[\mathrm{CH}_3\mathrm{COOH}] = 0.10 + 0.01 = 0.11\mathrm{ M}
+[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COOH&rbrace;] = 0.10 + 0.01 = 0.11\mathrm&lbrace; M&rbrace;
 $$
 
 $$
-[\mathrm{CH}_3\mathrm{COO}^-] = 0.10 - 0.01 = 0.09\mathrm{ M}
+[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-] = 0.10 - 0.01 = 0.09\mathrm&lbrace; M&rbrace;
 $$
 
 $$
-\mathrm{pH} = 4.76 + \log\frac{0.09}{0.11} = 4.76 + \log(0.818) = 4.76 - 0.09 = 4.67
+\mathrm&lbrace;pH&rbrace; = 4.76 + \log\frac&lbrace;0.09&rbrace;&lbrace;0.11&rbrace; = 4.76 + \log(0.818) = 4.76 - 0.09 = 4.67
 $$
 
 The $\mathrm{pH}$ changed by only $0.09$ units. Without the buffer, $0.01\mathrm{ M}$ $\mathrm{HCl}$
@@ -216,7 +216,7 @@ Acid-base indicators are weak acids ($\mathrm{HIn}$) where the acid and conjugat
 different colours:
 
 $$
-\mathrm{HIn} \rightleftharpoons \mathrm{H}^+ + \mathrm{In}^- \qquad K_{\mathrm{In}} = \frac{[\mathrm{H}^+][\mathrm{In}^-]}{[\mathrm{HIn}]}
+\mathrm&lbrace;HIn&rbrace; \rightleftharpoons \mathrm&lbrace;H&rbrace;^+ + \mathrm&lbrace;In&rbrace;^- \qquad K_&lbrace;\mathrm&lbrace;In&rbrace;&rbrace; = \frac&lbrace;[\mathrm&lbrace;H&rbrace;^+][\mathrm&lbrace;In&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;HIn&rbrace;]&rbrace;
 $$
 
 The observed colour depends on the ratio $[\mathrm{In}^-]/[\mathrm{HIn}]$:
@@ -232,7 +232,7 @@ The observed colour depends on the ratio $[\mathrm{In}^-]/[\mathrm{HIn}]$:
 An indicator changes colour over approximately $\pm 1$ unit around its $\mathrm{p}K_{\mathrm{In}}$:
 
 $$
-\mathrm{pH\ range} = \mathrm{p}K_{\mathrm{In}} \pm 1
+\mathrm&lbrace;pH\ range&rbrace; = \mathrm&lbrace;p&rbrace;K_&lbrace;\mathrm&lbrace;In&rbrace;&rbrace; \pm 1
 $$
 
 ### Choosing the Right Indicator
@@ -263,29 +263,29 @@ The indicator's transition range should overlap with the equivalence point of th
 1. Sulfur dioxide from combustion of fossil fuels is oxidised:
 
 $$
-\mathrm{SO}_2 + \mathrm{H}_2\mathrm{O} \to \mathrm{H}_2\mathrm{SO}_3
+\mathrm&lbrace;SO&rbrace;_2 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;SO&rbrace;_3
 $$
 
 $$
-2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3 \quad \mathrm{(catalysed by } \mathrm{V}_2\mathrm{O}_5)
+2\mathrm&lbrace;SO&rbrace;_2 + \mathrm&lbrace;O&rbrace;_2 \to 2\mathrm&lbrace;SO&rbrace;_3 \quad \mathrm&lbrace;(catalysed by &rbrace; \mathrm&lbrace;V&rbrace;_2\mathrm&lbrace;O&rbrace;_5)
 $$
 
 $$
-\mathrm{SO}_3 + \mathrm{H}_2\mathrm{O} \to \mathrm{H}_2\mathrm{SO}_4
+\mathrm&lbrace;SO&rbrace;_3 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;SO&rbrace;_4
 $$
 
 2. Nitrogen oxides from high-temperature combustion:
 
 $$
-\mathrm{N}_2 + \mathrm{O}_2 \to 2\mathrm{NO}
+\mathrm&lbrace;N&rbrace;_2 + \mathrm&lbrace;O&rbrace;_2 \to 2\mathrm&lbrace;NO&rbrace;
 $$
 
 $$
-2\mathrm{NO} + \mathrm{O}_2 \to 2\mathrm{NO}_2
+2\mathrm&lbrace;NO&rbrace; + \mathrm&lbrace;O&rbrace;_2 \to 2\mathrm&lbrace;NO&rbrace;_2
 $$
 
 $$
-3\mathrm{NO}_2 + \mathrm{H}_2\mathrm{O} \to 2\mathrm{HNO}_3 + \mathrm{NO}
+3\mathrm&lbrace;NO&rbrace;_2 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \to 2\mathrm&lbrace;HNO&rbrace;_3 + \mathrm&lbrace;NO&rbrace;
 $$
 
 ### Environmental Effects
@@ -314,11 +314,11 @@ $$
 For a sparingly soluble salt $\mathrm{M}_x\mathrm{A}_y$:
 
 $$
-\mathrm{M}_x\mathrm{A}_y(s) \rightleftharpoons x\mathrm{M}^{y+}(aq) + y\mathrm{A}^{x-}(aq)
+\mathrm&lbrace;M&rbrace;_x\mathrm&lbrace;A&rbrace;_y(s) \rightleftharpoons x\mathrm&lbrace;M&rbrace;^&lbrace;y+&rbrace;(aq) + y\mathrm&lbrace;A&rbrace;^&lbrace;x-&rbrace;(aq)
 $$
 
 $$
-K_{sp} = [\mathrm{M}^{y+}]^x[\mathrm{A}^{x-}]^y
+K_&lbrace;sp&rbrace; = [\mathrm&lbrace;M&rbrace;^&lbrace;y+&rbrace;]^x[\mathrm&lbrace;A&rbrace;^&lbrace;x-&rbrace;]^y
 $$
 
 $K_{sp}$ is the equilibrium constant for the dissolution of a solid. It is temperature-dependent.
@@ -342,19 +342,19 @@ $K_{sp}$ is the equilibrium constant for the dissolution of a solid. It is tempe
 Calculate the solubility of $\mathrm{AgCl}$ in $\mathrm{g/L}$.
 
 $$
-\mathrm{AgCl}(s) \rightleftharpoons \mathrm{Ag}^+(aq) + \mathrm{Cl}^-(aq)
+\mathrm&lbrace;AgCl&rbrace;(s) \rightleftharpoons \mathrm&lbrace;Ag&rbrace;^+(aq) + \mathrm&lbrace;Cl&rbrace;^-(aq)
 $$
 
 $$
-K_{sp} = [\mathrm{Ag}^+][\mathrm{Cl}^-] = s^2
+K_&lbrace;sp&rbrace; = [\mathrm&lbrace;Ag&rbrace;^+][\mathrm&lbrace;Cl&rbrace;^-] = s^2
 $$
 
 $$
-s = \sqrt{1.8 \times 10^{-10}} = 1.3 \times 10^{-5}\mathrm{ mol/L}
+s = \sqrt&lbrace;1.8 \times 10^&lbrace;-10&rbrace;&rbrace; = 1.3 \times 10^&lbrace;-5&rbrace;\mathrm&lbrace; mol/L&rbrace;
 $$
 
 $$
-\mathrm{Solubility} = 1.3 \times 10^{-5} \times 143.32 = 1.9 \times 10^{-3}\mathrm{ g/L}
+\mathrm&lbrace;Solubility&rbrace; = 1.3 \times 10^&lbrace;-5&rbrace; \times 143.32 = 1.9 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; g/L&rbrace;
 $$
 
 :::
@@ -368,11 +368,11 @@ Adding a common ion **decreases** the solubility of a sparingly soluble salt.
 Calculate the solubility of $\mathrm{AgCl}$ in $0.10\mathrm{ M}$ $\mathrm{NaCl}$.
 
 $$
-K_{sp} = [\mathrm{Ag}^+][\mathrm{Cl}^-] = s \times 0.10
+K_&lbrace;sp&rbrace; = [\mathrm&lbrace;Ag&rbrace;^+][\mathrm&lbrace;Cl&rbrace;^-] = s \times 0.10
 $$
 
 $$
-s = \frac{1.8 \times 10^{-10}}{0.10} = 1.8 \times 10^{-9}\mathrm{ mol/L}
+s = \frac&lbrace;1.8 \times 10^&lbrace;-10&rbrace;&rbrace;&lbrace;0.10&rbrace; = 1.8 \times 10^&lbrace;-9&rbrace;\mathrm&lbrace; mol/L&rbrace;
 $$
 
 Compared to pure water ($1.3 \times 10^{-5}\mathrm{ mol/L}$), the solubility decreased by a factor
@@ -385,7 +385,7 @@ of about $7000$.
 A precipitate forms when the ion product exceeds $K_{sp}$:
 
 $$
-Q = [\mathrm{M}^{y+}]^x[\mathrm{A}^{x-}]^y
+Q = [\mathrm&lbrace;M&rbrace;^&lbrace;y+&rbrace;]^x[\mathrm&lbrace;A&rbrace;^&lbrace;x-&rbrace;]^y
 $$
 
 | Condition      | Result                       |
@@ -420,25 +420,25 @@ Moles of $\mathrm{NaOH} = 0.050 \times 0.20 = 0.010\mathrm{ mol}$
 $\mathrm{NaOH}$ neutralises half the acid:
 
 $$
-n(\mathrm{CH}_3\mathrm{COOH})_{\mathrm{remaining}} = 0.020 - 0.010 = 0.010\mathrm{ mol}
+n(\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COOH&rbrace;)_&lbrace;\mathrm&lbrace;remaining&rbrace;&rbrace; = 0.020 - 0.010 = 0.010\mathrm&lbrace; mol&rbrace;
 $$
 
 $$
-n(\mathrm{CH}_3\mathrm{COO}^-)_{\mathrm{formed}} = 0.010\mathrm{ mol}
+n(\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-)_&lbrace;\mathrm&lbrace;formed&rbrace;&rbrace; = 0.010\mathrm&lbrace; mol&rbrace;
 $$
 
 Total volume $= 150\mathrm{ mL} = 0.150\mathrm{ L}$:
 
 $$
-[\mathrm{CH}_3\mathrm{COOH}] = \frac{0.010}{0.150} = 0.0667\mathrm{ M}
+[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COOH&rbrace;] = \frac&lbrace;0.010&rbrace;&lbrace;0.150&rbrace; = 0.0667\mathrm&lbrace; M&rbrace;
 $$
 
 $$
-[\mathrm{CH}_3\mathrm{COO}^-] = \frac{0.010}{0.150} = 0.0667\mathrm{ M}
+[\mathrm&lbrace;CH&rbrace;_3\mathrm&lbrace;COO&rbrace;^-] = \frac&lbrace;0.010&rbrace;&lbrace;0.150&rbrace; = 0.0667\mathrm&lbrace; M&rbrace;
 $$
 
 $$
-\mathrm{pH} = 4.76 + \log\frac{0.0667}{0.0667} = 4.76 + 0 = 4.76
+\mathrm&lbrace;pH&rbrace; = 4.76 + \log\frac&lbrace;0.0667&rbrace;&lbrace;0.0667&rbrace; = 4.76 + 0 = 4.76
 $$
 
 </details>
@@ -455,15 +455,15 @@ is mixed with $50.0\mathrm{ mL}$ of $1.0 \times 10^{-4}\mathrm{ M}$ $\mathrm{NaC
 Total volume $= 100\mathrm{ mL}$. Diluted concentrations:
 
 $$
-[\mathrm{Ag}^+] = \frac{0.050 \times 1.0 \times 10^{-4}}{0.100} = 5.0 \times 10^{-5}\mathrm{ M}
+[\mathrm&lbrace;Ag&rbrace;^+] = \frac&lbrace;0.050 \times 1.0 \times 10^&lbrace;-4&rbrace;&rbrace;&lbrace;0.100&rbrace; = 5.0 \times 10^&lbrace;-5&rbrace;\mathrm&lbrace; M&rbrace;
 $$
 
 $$
-[\mathrm{Cl}^-] = \frac{0.050 \times 1.0 \times 10^{-4}}{0.100} = 5.0 \times 10^{-5}\mathrm{ M}
+[\mathrm&lbrace;Cl&rbrace;^-] = \frac&lbrace;0.050 \times 1.0 \times 10^&lbrace;-4&rbrace;&rbrace;&lbrace;0.100&rbrace; = 5.0 \times 10^&lbrace;-5&rbrace;\mathrm&lbrace; M&rbrace;
 $$
 
 $$
-Q = (5.0 \times 10^{-5})^2 = 2.5 \times 10^{-9}
+Q = (5.0 \times 10^&lbrace;-5&rbrace;)^2 = 2.5 \times 10^&lbrace;-9&rbrace;
 $$
 
 Since $Q = 2.5 \times 10^{-9} \gt K_{sp} = 1.8 \times 10^{-10}$, a precipitate of $\mathrm{AgCl}$
@@ -479,11 +479,11 @@ Calculate the $\mathrm{pH}$ of $0.050\mathrm{ M}$ $\mathrm{NH}_3$ ($K_b = 1.8 \t
 **Solution:**
 
 $$
-\mathrm{NH}_3 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{NH}_4^+ + \mathrm{OH}^-
+\mathrm&lbrace;NH&rbrace;_3 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;NH&rbrace;_4^+ + \mathrm&lbrace;OH&rbrace;^-
 $$
 
 $$
-K_b = \frac{[\mathrm{NH}_4^+][\mathrm{OH}^-]}{[\mathrm{NH}_3]} = \frac{x^2}{0.050 - x}
+K_b = \frac&lbrace;[\mathrm&lbrace;NH&rbrace;_4^+][\mathrm&lbrace;OH&rbrace;^-]&rbrace;&lbrace;[\mathrm&lbrace;NH&rbrace;_3]&rbrace; = \frac&lbrace;x^2&rbrace;&lbrace;0.050 - x&rbrace;
 $$
 
 Approximation:
@@ -492,11 +492,11 @@ $x = \sqrt{1.8 \times 10^{-5} \times 0.050} = \sqrt{9.0 \times 10^{-7}} = 9.5 \t
 Check: $9.5 \times 10^{-4} / 0.050 = 1.9\% \lt 5\%$. Valid.
 
 $$
-\mathrm{pOH} = -\log(9.5 \times 10^{-4}) = 3.02
+\mathrm&lbrace;pOH&rbrace; = -\log(9.5 \times 10^&lbrace;-4&rbrace;) = 3.02
 $$
 
 $$
-\mathrm{pH} = 14.00 - 3.02 = 10.98
+\mathrm&lbrace;pH&rbrace; = 14.00 - 3.02 = 10.98
 $$
 
 </details>
@@ -513,7 +513,7 @@ $\mathrm{NH}_4\mathrm{Cl}$ dissociates completely to give $\mathrm{NH}_4^+$, the
 $\mathrm{NH}_3$. This is the **common ion effect**:
 
 $$
-\mathrm{NH}_3 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{NH}_4^+ + \mathrm{OH}^-
+\mathrm&lbrace;NH&rbrace;_3 + \mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace; \rightleftharpoons \mathrm&lbrace;NH&rbrace;_4^+ + \mathrm&lbrace;OH&rbrace;^-
 $$
 
 Adding $\mathrm{NH}_4^+$ shifts the equilibrium to the left (Le Chatelier's principle), decreasing

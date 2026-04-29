@@ -38,7 +38,7 @@ availability).
 A **food chain** represents the linear transfer of energy from producers through consumers.
 
 $$
-\mathrm{Producer} \to \mathrm{Primary Consumer} \to \mathrm{Secondary Consumer} \to \mathrm{Tertiary Consumer}
+\mathrm&lbrace;Producer&rbrace; \to \mathrm&lbrace;Primary Consumer&rbrace; \to \mathrm&lbrace;Secondary Consumer&rbrace; \to \mathrm&lbrace;Tertiary Consumer&rbrace;
 $$
 
 A **food web** is a network of interconnected food chains, representing the complex feeding
@@ -77,7 +77,7 @@ photosynthesis per unit area per unit time.
 energy used in plant respiration:
 
 $$
-\mathrm{NPP} = \mathrm{GPP} - R
+\mathrm&lbrace;NPP&rbrace; = \mathrm&lbrace;GPP&rbrace; - R
 $$
 
 where $R$ is the energy lost through respiration by the producers. NPP represents the energy
@@ -100,7 +100,7 @@ insects).
 ### Calculating Energy Transfer
 
 $$
-\mathrm{Ecological efficiency} = \frac{\mathrm{energy at higher trophic level}}{\mathrm{energy at lower trophic level}} \times 100\%
+\mathrm&lbrace;Ecological efficiency&rbrace; = \frac&lbrace;\mathrm&lbrace;energy at higher trophic level&rbrace;&rbrace;&lbrace;\mathrm&lbrace;energy at lower trophic level&rbrace;&rbrace; \times 100\%
 $$
 
 ---
@@ -270,7 +270,7 @@ on the population.
 The hierarchical system of classification (Linnaean system):
 
 $$
-\mathrm{Domain} \to \mathrm{Kingdom} \to \mathrm{Phylum} \to \mathrm{Class} \to \mathrm{Order} \to \mathrm{Family} \to \mathrm{Genus} \to \mathrm{Species}
+\mathrm&lbrace;Domain&rbrace; \to \mathrm&lbrace;Kingdom&rbrace; \to \mathrm&lbrace;Phylum&rbrace; \to \mathrm&lbrace;Class&rbrace; \to \mathrm&lbrace;Order&rbrace; \to \mathrm&lbrace;Family&rbrace; \to \mathrm&lbrace;Genus&rbrace; \to \mathrm&lbrace;Species&rbrace;
 $$
 
 **Binomial nomenclature**: each species is given a two-part Latin name: _Genus species_ (e.g., _Homo

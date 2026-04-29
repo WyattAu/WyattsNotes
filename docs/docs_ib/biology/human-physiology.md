@@ -103,7 +103,7 @@ circulation); the left side pumps oxygenated blood to the body (systemic circula
 **Cardiac output**:
 
 $$
-\mathrm{Cardiac output} = \mathrm{stroke volume} \times \mathrm{heart rate}
+\mathrm&lbrace;Cardiac output&rbrace; = \mathrm&lbrace;stroke volume&rbrace; \times \mathrm&lbrace;heart rate&rbrace;
 $$
 
 Typical resting cardiac output: $\approx 5\;\mathrm{L/min}$.

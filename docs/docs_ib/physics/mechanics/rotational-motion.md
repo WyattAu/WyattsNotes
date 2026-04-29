@@ -19,7 +19,7 @@ slug: rotational-motion
 ### Angular Velocity
 
 $$
-\omega = \frac{\Delta\theta}{\Delta t}
+\omega = \frac&lbrace;\Delta\theta&rbrace;&lbrace;\Delta t&rbrace;
 $$
 
 For uniform circular motion, $\omega$ is constant.
@@ -27,7 +27,7 @@ For uniform circular motion, $\omega$ is constant.
 ### Period and Frequency
 
 $$
-T = \frac{2\pi}{\omega}, \quad f = \frac{1}{T} = \frac{\omega}{2\pi}
+T = \frac&lbrace;2\pi&rbrace;&lbrace;\omega&rbrace;, \quad f = \frac&lbrace;1&rbrace;&lbrace;T&rbrace; = \frac&lbrace;\omega&rbrace;&lbrace;2\pi&rbrace;
 $$
 
 where $T$ is the period (time for one revolution) and $f$ is the frequency (revolutions per second).
@@ -35,7 +35,7 @@ where $T$ is the period (time for one revolution) and $f$ is the frequency (revo
 ### Relation to Linear Speed
 
 $$
-v = r\omega = \frac{2\pi r}{T} = 2\pi rf
+v = r\omega = \frac&lbrace;2\pi r&rbrace;&lbrace;T&rbrace; = 2\pi rf
 $$
 
 :::info[Example]
@@ -44,11 +44,11 @@ A CD rotates at $200\mathrm{ rpm}$. Find the angular velocity in rad/s and the l
 point $5\mathrm{ cm}$ from the centre.
 
 $$
-\omega = 200 \times \frac{2\pi}{60} = \frac{400\pi}{60} = 20.9\mathrm{ rad/s}
+\omega = 200 \times \frac&lbrace;2\pi&rbrace;&lbrace;60&rbrace; = \frac&lbrace;400\pi&rbrace;&lbrace;60&rbrace; = 20.9\mathrm&lbrace; rad/s&rbrace;
 $$
 
 $$
-v = r\omega = 0.05 \times 20.9 = 1.05\mathrm{ m/s}
+v = r\omega = 0.05 \times 20.9 = 1.05\mathrm&lbrace; m/s&rbrace;
 $$
 
 :::
@@ -63,7 +63,7 @@ is always accelerating toward the centre of the circle.
 ### Magnitude
 
 $$
-a_c = \frac{v^2}{r} = \omega^2 r = \frac{4\pi^2 r}{T^2}
+a_c = \frac&lbrace;v^2&rbrace;&lbrace;r&rbrace; = \omega^2 r = \frac&lbrace;4\pi^2 r&rbrace;&lbrace;T^2&rbrace;
 $$
 
 ### Direction
@@ -92,7 +92,7 @@ separate force on a free-body diagram.
 ### Magnitude
 
 $$
-F_c = ma_c = \frac{mv^2}{r} = m\omega^2 r
+F_c = ma_c = \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace; = m\omega^2 r
 $$
 
 ### Direction
@@ -119,7 +119,7 @@ Always directed toward the centre of the circle.
 For an object of mass $m$ on a string of length $r$ moving in a horizontal circle at speed $v$:
 
 $$
-T = \frac{mv^2}{r}
+T = \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace;
 $$
 
 where $T$ is the tension in the string (horizontal).
@@ -145,17 +145,17 @@ A $0.5\mathrm{ kg}$ mass on a string of length $1\mathrm{ m}$ moves in a horizon
 $3\mathrm{ m/s}$. Find the angle the string makes with the vertical and the tension.
 
 $$
-\tan\theta = \frac{v^2}{rg} = \frac{9}{r \times 9.81}
+\tan\theta = \frac&lbrace;v^2&rbrace;&lbrace;rg&rbrace; = \frac&lbrace;9&rbrace;&lbrace;r \times 9.81&rbrace;
 $$
 
 Also $r = L\sin\theta = \sin\theta$, so:
 
 $$
-\tan\theta = \frac{9}{9.81\sin\theta}
+\tan\theta = \frac&lbrace;9&rbrace;&lbrace;9.81\sin\theta&rbrace;
 $$
 
 $$
-\frac{\sin\theta}{\cos\theta} = \frac{0.917}{\sin\theta}
+\frac&lbrace;\sin\theta&rbrace;&lbrace;\cos\theta&rbrace; = \frac&lbrace;0.917&rbrace;&lbrace;\sin\theta&rbrace;
 $$
 
 $$
@@ -169,13 +169,13 @@ $$
 Let $u = \cos\theta$: $u^2 + 0.917u - 1 = 0$.
 
 $$
-u = \frac{-0.917 + \sqrt{0.841 + 4}}{2} = \frac{-0.917 + 2.200}{2} = 0.642
+u = \frac&lbrace;-0.917 + \sqrt&lbrace;0.841 + 4&rbrace;&rbrace;&lbrace;2&rbrace; = \frac&lbrace;-0.917 + 2.200&rbrace;&lbrace;2&rbrace; = 0.642
 $$
 
 $\theta = \arccos(0.642) = 50.1\degree$.
 
 $$
-T = \frac{mg}{\cos\theta} = \frac{0.5 \times 9.81}{0.642} = 7.64\mathrm{ N}
+T = \frac&lbrace;mg&rbrace;&lbrace;\cos\theta&rbrace; = \frac&lbrace;0.5 \times 9.81&rbrace;&lbrace;0.642&rbrace; = 7.64\mathrm&lbrace; N&rbrace;
 $$
 
 :::
@@ -190,13 +190,13 @@ the top) because gravity does work.
 ### At the Bottom of the Circle
 
 $$
-T - mg = \frac{mv_{\mathrm{bottom}}^2}{r} \implies T = mg + \frac{mv_{\mathrm{bottom}}^2}{r}
+T - mg = \frac&lbrace;mv_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace;^2&rbrace;&lbrace;r&rbrace; \implies T = mg + \frac&lbrace;mv_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace;^2&rbrace;&lbrace;r&rbrace;
 $$
 
 ### At the Top of the Circle
 
 $$
-T + mg = \frac{mv_{\mathrm{top}}^2}{r} \implies T = \frac{mv_{\mathrm{top}}^2}{r} - mg
+T + mg = \frac&lbrace;mv_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2&rbrace;&lbrace;r&rbrace; \implies T = \frac&lbrace;mv_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2&rbrace;&lbrace;r&rbrace; - mg
 $$
 
 ### Minimum Speed at the Top
@@ -204,23 +204,23 @@ $$
 For the object to complete the full circle, $T \ge 0$ at the top:
 
 $$
-\frac{mv_{\mathrm{top}}^2}{r} \ge mg \implies v_{\mathrm{top}} \ge \sqrt{gr}
+\frac&lbrace;mv_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2&rbrace;&lbrace;r&rbrace; \ge mg \implies v_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace; \ge \sqrt&lbrace;gr&rbrace;
 $$
 
 ### Energy Conservation in Vertical Circles
 
 $$
-\frac{1}{2}mv_{\mathrm{bottom}}^2 = \frac{1}{2}mv_{\mathrm{top}}^2 + mg(2r)
+\frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace;^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2 + mg(2r)
 $$
 
 $$
-v_{\mathrm{bottom}}^2 = v_{\mathrm{top}}^2 + 4gr
+v_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace;^2 = v_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2 + 4gr
 $$
 
 For minimum speed at the top ($v_{\mathrm{top}} = \sqrt{gr}$):
 
 $$
-v_{\mathrm{bottom}} = \sqrt{5gr}
+v_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace; = \sqrt&lbrace;5gr&rbrace;
 $$
 
 :::info[Example]
@@ -229,7 +229,7 @@ A $0.3\mathrm{ kg}$ ball on a string of length $0.8\mathrm{ m}$ is swung in a ve
 the minimum speed at the bottom for the ball to complete the circle.
 
 $$
-v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5(9.81)(0.8)} = \sqrt{39.24} = 6.26\mathrm{ m/s}
+v_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace; = \sqrt&lbrace;5gr&rbrace; = \sqrt&lbrace;5(9.81)(0.8)&rbrace; = \sqrt&lbrace;39.24&rbrace; = 6.26\mathrm&lbrace; m/s&rbrace;
 $$
 
 :::
@@ -251,7 +251,7 @@ Dividing: $\tan\theta = \dfrac{v^2}{rg}$
 The ideal (no friction needed) speed:
 
 $$
-v = \sqrt{rg\tan\theta}
+v = \sqrt&lbrace;rg\tan\theta&rbrace;
 $$
 
 ### With Friction
@@ -288,7 +288,7 @@ The unit of torque is $\mathrm{N}\cdot\mathrm{m}$ (newton-metre).
 Newton's second law for rotation:
 
 $$
-\tau_{\mathrm{net}} = I\alpha
+\tau_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = I\alpha
 $$
 
 where $I$ is the moment of inertia and $\alpha$ is the angular acceleration.
@@ -310,25 +310,25 @@ $20\mathrm{ kg}$ mass hangs $1\mathrm{ m}$ from the left end. Find the support f
 Taking moments about the left end (clockwise positive):
 
 $$
-R_{\mathrm{right}} \times 4 - 10g \times 2 - 20g \times 1 = 0
+R_&lbrace;\mathrm&lbrace;right&rbrace;&rbrace; \times 4 - 10g \times 2 - 20g \times 1 = 0
 $$
 
 $$
-4R_{\mathrm{right}} = 196.2 + 196.2 = 392.4
+4R_&lbrace;\mathrm&lbrace;right&rbrace;&rbrace; = 196.2 + 196.2 = 392.4
 $$
 
 $$
-R_{\mathrm{right}} = 98.1\mathrm{ N}
+R_&lbrace;\mathrm&lbrace;right&rbrace;&rbrace; = 98.1\mathrm&lbrace; N&rbrace;
 $$
 
 By vertical equilibrium:
 
 $$
-R_{\mathrm{left}} + R_{\mathrm{right}} = 10g + 20g = 294.3\mathrm{ N}
+R_&lbrace;\mathrm&lbrace;left&rbrace;&rbrace; + R_&lbrace;\mathrm&lbrace;right&rbrace;&rbrace; = 10g + 20g = 294.3\mathrm&lbrace; N&rbrace;
 $$
 
 $$
-R_{\mathrm{left}} = 294.3 - 98.1 = 196.2\mathrm{ N}
+R_&lbrace;\mathrm&lbrace;left&rbrace;&rbrace; = 294.3 - 98.1 = 196.2\mathrm&lbrace; N&rbrace;
 $$
 
 :::
@@ -369,7 +369,7 @@ For a body of mass $M$ with moment of inertia $I_{\mathrm{cm}}$ about an axis th
 mass:
 
 $$
-I = I_{\mathrm{cm}} + Md^2
+I = I_&lbrace;\mathrm&lbrace;cm&rbrace;&rbrace; + Md^2
 $$
 
 where $d$ is the distance between the original axis and the parallel axis through the centre of
@@ -382,7 +382,7 @@ mass.
 ### Definition
 
 $$
-\vec{L} = I\vec{\omega}
+\vec&lbrace;L&rbrace; = I\vec&lbrace;\omega&rbrace;
 $$
 
 For a point mass: $L = mvr = mr^2\omega$.
@@ -420,7 +420,7 @@ $$
 $$
 
 $$
-\omega_2 = 6\mathrm{ rad/s}
+\omega_2 = 6\mathrm&lbrace; rad/s&rbrace;
 $$
 
 Her angular velocity triples.
@@ -442,7 +442,7 @@ This is analogous to linear impulse: $\Delta p = F \cdot \Delta t$.
 ### Formula
 
 $$
-E_{k,\mathrm{rot}} = \frac{1}{2}I\omega^2
+E_&lbrace;k,\mathrm&lbrace;rot&rbrace;&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;I\omega^2
 $$
 
 ### Total Kinetic Energy of a Rolling Object
@@ -450,13 +450,13 @@ $$
 For an object that rolls without slipping:
 
 $$
-E_k = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2
+E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2 + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;I\omega^2
 $$
 
 Since $v = r\omega$ for rolling without slipping:
 
 $$
-E_k = \frac{1}{2}mv^2 + \frac{1}{2}I\frac{v^2}{r^2} = \frac{1}{2}\left(m + \frac{I}{r^2}\right)v^2
+E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2 + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;I\frac&lbrace;v^2&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\left(m + \frac&lbrace;I&rbrace;&lbrace;r^2&rbrace;\right)v^2
 $$
 
 ### Rolling Down an Incline
@@ -464,11 +464,11 @@ $$
 For an object rolling down a frictionless-free incline (rolling without slipping):
 
 $$
-mgh = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2
+mgh = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2 + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;I\omega^2
 $$
 
 $$
-v = \sqrt{\frac{2gh}{1 + \frac{I}{Mr^2}}}
+v = \sqrt&lbrace;\frac&lbrace;2gh&rbrace;&lbrace;1 + \frac&lbrace;I&rbrace;&lbrace;Mr^2&rbrace;&rbrace;&rbrace;
 $$
 
 :::info[Example]
@@ -512,11 +512,11 @@ A car of mass $1200\mathrm{ kg}$ travels around a circular bend of radius $50\ma
 $15\mathrm{ m/s}$. Find the minimum coefficient of static friction required.
 
 $$
-\frac{mv^2}{r} \le \mu_s mg
+\frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace; \le \mu_s mg
 $$
 
 $$
-\mu_s \ge \frac{v^2}{rg} = \frac{225}{50 \times 9.81} = \frac{225}{490.5} = 0.459
+\mu_s \ge \frac&lbrace;v^2&rbrace;&lbrace;rg&rbrace; = \frac&lbrace;225&rbrace;&lbrace;50 \times 9.81&rbrace; = \frac&lbrace;225&rbrace;&lbrace;490.5&rbrace; = 0.459
 $$
 
 ### Question 2 (Paper 2 style)
@@ -528,21 +528,21 @@ A satellite orbits Earth at an altitude of $400\mathrm{ km}$ in a circular orbit
 ($M_E = 5.97 \times 10^{24}\mathrm{ kg}$, $R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 $$
-r = 6.77 \times 10^6\mathrm{ m}
+r = 6.77 \times 10^6\mathrm&lbrace; m&rbrace;
 $$
 
 $$
-\frac{GMm}{r^2} = \frac{mv^2}{r} \implies v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{3.98 \times 10^{14}}{6.77 \times 10^6}} = 7669\mathrm{ m/s}
+\frac&lbrace;GMm&rbrace;&lbrace;r^2&rbrace; = \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace; \implies v = \sqrt&lbrace;\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;3.98 \times 10^&lbrace;14&rbrace;&rbrace;&lbrace;6.77 \times 10^6&rbrace;&rbrace; = 7669\mathrm&lbrace; m/s&rbrace;
 $$
 
 $$
-T = \frac{2\pi r}{v} = \frac{2\pi \times 6.77 \times 10^6}{7669} = 5544\mathrm{ s} \approx 92.4\mathrm{ min}
+T = \frac&lbrace;2\pi r&rbrace;&lbrace;v&rbrace; = \frac&lbrace;2\pi \times 6.77 \times 10^6&rbrace;&lbrace;7669&rbrace; = 5544\mathrm&lbrace; s&rbrace; \approx 92.4\mathrm&lbrace; min&rbrace;
 $$
 
 **(b)** Calculate the centripetal acceleration.
 
 $$
-a_c = \frac{v^2}{r} = \frac{5.88 \times 10^7}{6.77 \times 10^6} = 8.68\mathrm{ m/s}^2
+a_c = \frac&lbrace;v^2&rbrace;&lbrace;r&rbrace; = \frac&lbrace;5.88 \times 10^7&rbrace;&lbrace;6.77 \times 10^6&rbrace; = 8.68\mathrm&lbrace; m/s&rbrace;^2
 $$
 
 ### Question 3 (Paper 2 style)
@@ -553,14 +553,14 @@ vertical circle.
 **(a)** Find the minimum speed at the top of the circle for the ball to maintain contact.
 
 $$
-v_{\mathrm{min}} = \sqrt{gr} = \sqrt{9.81 \times 0.8} = \sqrt{7.85} = 2.80\mathrm{ m/s}
+v_&lbrace;\mathrm&lbrace;min&rbrace;&rbrace; = \sqrt&lbrace;gr&rbrace; = \sqrt&lbrace;9.81 \times 0.8&rbrace; = \sqrt&lbrace;7.85&rbrace; = 2.80\mathrm&lbrace; m/s&rbrace;
 $$
 
 **(b)** If the speed at the bottom is $8\mathrm{ m/s}$, find the tension in the string at the
 bottom.
 
 $$
-T_{\mathrm{bottom}} = mg + \frac{mv^2}{r} = 0.2(9.81) + \frac{0.2(64)}{0.8} = 1.962 + 16 = 17.96\mathrm{ N}
+T_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace; = mg + \frac&lbrace;mv^2&rbrace;&lbrace;r&rbrace; = 0.2(9.81) + \frac&lbrace;0.2(64)&rbrace;&lbrace;0.8&rbrace; = 1.962 + 16 = 17.96\mathrm&lbrace; N&rbrace;
 $$
 
 **(c)** Find the tension at the top.
@@ -568,19 +568,19 @@ $$
 First find $v_{\mathrm{top}}$ using energy conservation:
 
 $$
-\frac{1}{2}mv_{\mathrm{bottom}}^2 = \frac{1}{2}mv_{\mathrm{top}}^2 + mg(2r)
+\frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_&lbrace;\mathrm&lbrace;bottom&rbrace;&rbrace;^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2 + mg(2r)
 $$
 
 $$
-64 = v_{\mathrm{top}}^2 + 9.81(1.6) = v_{\mathrm{top}}^2 + 15.70
+64 = v_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2 + 9.81(1.6) = v_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2 + 15.70
 $$
 
 $$
-v_{\mathrm{top}}^2 = 48.30 \implies v_{\mathrm{top}} = 6.95\mathrm{ m/s}
+v_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2 = 48.30 \implies v_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace; = 6.95\mathrm&lbrace; m/s&rbrace;
 $$
 
 $$
-T_{\mathrm{top}} = \frac{mv_{\mathrm{top}}^2}{r} - mg = \frac{0.2(48.30)}{0.8} - 1.962 = 12.075 - 1.962 = 10.11\mathrm{ N}
+T_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace; = \frac&lbrace;mv_&lbrace;\mathrm&lbrace;top&rbrace;&rbrace;^2&rbrace;&lbrace;r&rbrace; - mg = \frac&lbrace;0.2(48.30)&rbrace;&lbrace;0.8&rbrace; - 1.962 = 12.075 - 1.962 = 10.11\mathrm&lbrace; N&rbrace;
 $$
 
 ### Question 4 (Paper 1 style)
@@ -589,11 +589,11 @@ A disc of mass $2\mathrm{ kg}$ and radius $0.3\mathrm{ m}$ rotates at $10\mathrm
 rotational kinetic energy.
 
 $$
-I = \frac{1}{2}MR^2 = \frac{1}{2}(2)(0.09) = 0.09\mathrm{ kg}\cdot\mathrm{m}^2
+I = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;MR^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(2)(0.09) = 0.09\mathrm&lbrace; kg&rbrace;\cdot\mathrm&lbrace;m&rbrace;^2
 $$
 
 $$
-E_k = \frac{1}{2}I\omega^2 = \frac{1}{2}(0.09)(100) = 4.5\mathrm{ J}
+E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;I\omega^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(0.09)(100) = 4.5\mathrm&lbrace; J&rbrace;
 $$
 
 ### Question 5 (Paper 2 style)
@@ -609,13 +609,13 @@ I_1\omega_1 = I_2\omega_2
 $$
 
 $$
-15 \times 2 = 4 \times \omega_2 \implies \omega_2 = 7.5\mathrm{ rad/s}
+15 \times 2 = 4 \times \omega_2 \implies \omega_2 = 7.5\mathrm&lbrace; rad/s&rbrace;
 $$
 
 **(b)** How many complete somersaults can she perform in $1.2\mathrm{ s}$ while tucked?
 
 $$
-\theta = \omega_2 \times t = 7.5 \times 1.2 = 9\mathrm{ rad}
+\theta = \omega_2 \times t = 7.5 \times 1.2 = 9\mathrm&lbrace; rad&rbrace;
 $$
 
 Number of somersaults $= \dfrac{9}{2\pi} = 1.43$
@@ -658,7 +658,7 @@ $$
 $$
 
 $$
-\theta = \omega_0 t + \frac{1}{2}\alpha t^2
+\theta = \omega_0 t + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\alpha t^2
 $$
 
 $$
@@ -666,7 +666,7 @@ $$
 $$
 
 $$
-\theta = \frac{1}{2}(\omega_0 + \omega)t
+\theta = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(\omega_0 + \omega)t
 $$
 
 :::info[Example]
@@ -676,23 +676,23 @@ A flywheel starts from rest and accelerates uniformly at $2\mathrm{ rad/s}^2$ fo
 **(a)** Find the angular velocity after $5\mathrm{ s}$.
 
 $$
-\omega = 0 + 2 \times 5 = 10\mathrm{ rad/s}
+\omega = 0 + 2 \times 5 = 10\mathrm&lbrace; rad/s&rbrace;
 $$
 
 **(b)** Find the number of revolutions made.
 
 $$
-\theta = 0 + \frac{1}{2}(2)(25) = 25\mathrm{ rad}
+\theta = 0 + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(2)(25) = 25\mathrm&lbrace; rad&rbrace;
 $$
 
 $$
-\mathrm{Revolutions} = \frac{25}{2\pi} = 3.98
+\mathrm&lbrace;Revolutions&rbrace; = \frac&lbrace;25&rbrace;&lbrace;2\pi&rbrace; = 3.98
 $$
 
 **(c)** Find the linear speed of a point $0.3\mathrm{ m}$ from the axis.
 
 $$
-v = r\omega = 0.3 \times 10 = 3.0\mathrm{ m/s}
+v = r\omega = 0.3 \times 10 = 3.0\mathrm&lbrace; m/s&rbrace;
 $$
 
 :::
@@ -706,27 +706,27 @@ $$
 For a satellite of mass $m$ in circular orbit of radius $r$ around a planet of mass $M$:
 
 $$
-E_{\mathrm{total}} = -\frac{GMm}{2r}
+E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = -\frac&lbrace;GMm&rbrace;&lbrace;2r&rbrace;
 $$
 
 $$
-E_k = \frac{GMm}{2r}
+E_k = \frac&lbrace;GMm&rbrace;&lbrace;2r&rbrace;
 $$
 
 $$
-E_p = -\frac{GMm}{r}
+E_p = -\frac&lbrace;GMm&rbrace;&lbrace;r&rbrace;
 $$
 
 ### Orbital Speed
 
 $$
-v = \sqrt{\frac{GM}{r}}
+v = \sqrt&lbrace;\frac&lbrace;GM&rbrace;&lbrace;r&rbrace;&rbrace;
 $$
 
 ### Orbital Period (Kepler's Third Law)
 
 $$
-T^2 = \frac{4\pi^2}{GM}r^3
+T^2 = \frac&lbrace;4\pi^2&rbrace;&lbrace;GM&rbrace;r^3
 $$
 
 $T^2$ is proportional to $r^3$ for all satellites orbiting the same body.
@@ -760,7 +760,7 @@ perpendicular to the applied torque. This is called precession.
 The precession angular velocity:
 
 $$
-\omega_p = \frac{\tau}{L}
+\omega_p = \frac&lbrace;\tau&rbrace;&lbrace;L&rbrace;
 $$
 
 ---
@@ -776,25 +776,25 @@ rest.
 **(a)** Find the angular acceleration.
 
 $$
-\alpha = \frac{\tau}{I} = \frac{0.5}{\frac{1}{2}(5)(0.04)} = \frac{0.5}{0.1} = 5\mathrm{ rad/s}^2
+\alpha = \frac&lbrace;\tau&rbrace;&lbrace;I&rbrace; = \frac&lbrace;0.5&rbrace;&lbrace;\frac&lbrace;1&rbrace;&lbrace;2&rbrace;(5)(0.04)&rbrace; = \frac&lbrace;0.5&rbrace;&lbrace;0.1&rbrace; = 5\mathrm&lbrace; rad/s&rbrace;^2
 $$
 
 **(b)** Find the angular velocity after $4\mathrm{ s}$.
 
 $$
-\omega = 0 + 5 \times 4 = 20\mathrm{ rad/s}
+\omega = 0 + 5 \times 4 = 20\mathrm&lbrace; rad/s&rbrace;
 $$
 
 **(c)** Find the rotational kinetic energy after $4\mathrm{ s}$.
 
 $$
-E_k = \frac{1}{2}I\omega^2 = \frac{1}{2}(0.1)(400) = 20\mathrm{ J}
+E_k = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;I\omega^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(0.1)(400) = 20\mathrm&lbrace; J&rbrace;
 $$
 
 **(d)** Find the work done by the torque.
 
 $$
-W = \tau\theta = \tau \cdot \frac{1}{2}\alpha t^2 = 0.5 \times \frac{1}{2}(5)(16) = 20\mathrm{ J}
+W = \tau\theta = \tau \cdot \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\alpha t^2 = 0.5 \times \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(5)(16) = 20\mathrm&lbrace; J&rbrace;
 $$
 
 This equals the change in rotational kinetic energy, confirming the work-energy theorem.
@@ -807,7 +807,7 @@ horizontally. It is released from rest.
 **(a)** Find the moment of inertia about the pivot.
 
 $$
-I = \frac{1}{3}ML^2 = \frac{1}{3}(2)(1) = 0.667\mathrm{ kg}\cdot\mathrm{m}^2
+I = \frac&lbrace;1&rbrace;&lbrace;3&rbrace;ML^2 = \frac&lbrace;1&rbrace;&lbrace;3&rbrace;(2)(1) = 0.667\mathrm&lbrace; kg&rbrace;\cdot\mathrm&lbrace;m&rbrace;^2
 $$
 
 **(b)** Find the initial angular acceleration.
@@ -816,7 +816,7 @@ The torque about the pivot:
 $\tau = mg \times \dfrac{L}{2} = 2(9.81)(0.5) = 9.81\mathrm{ N}\cdot\mathrm{m}$.
 
 $$
-\alpha = \frac{\tau}{I} = \frac{9.81}{0.667} = 14.7\mathrm{ rad/s}^2
+\alpha = \frac&lbrace;\tau&rbrace;&lbrace;I&rbrace; = \frac&lbrace;9.81&rbrace;&lbrace;0.667&rbrace; = 14.7\mathrm&lbrace; rad/s&rbrace;^2
 $$
 
 **(c)** Find the angular velocity as the rod passes through the vertical.
@@ -826,15 +826,15 @@ Using conservation of energy (taking the pivot as reference):
 Loss of $E_p$: the centre of mass falls by $\dfrac{L}{2} = 0.5\mathrm{ m}$.
 
 $$
-Mg\frac{L}{2} = \frac{1}{2}I\omega^2
+Mg\frac&lbrace;L&rbrace;&lbrace;2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;I\omega^2
 $$
 
 $$
-2(9.81)(0.5) = \frac{1}{2}(0.667)\omega^2
+2(9.81)(0.5) = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(0.667)\omega^2
 $$
 
 $$
-9.81 = 0.333\omega^2 \implies \omega = \sqrt{29.4} = 5.42\mathrm{ rad/s}
+9.81 = 0.333\omega^2 \implies \omega = \sqrt&lbrace;29.4&rbrace; = 5.42\mathrm&lbrace; rad/s&rbrace;
 $$
 
 ### Question 8 (Paper 1 style)
@@ -844,7 +844,7 @@ the turntable at a distance $0.3\mathrm{ m}$ from the centre. If the coefficient
 is $0.4$, does the coin slip?
 
 $$
-a_c = \omega^2 r = 9 \times 0.3 = 2.7\mathrm{ m/s}^2
+a_c = \omega^2 r = 9 \times 0.3 = 2.7\mathrm&lbrace; m/s&rbrace;^2
 $$
 
 Required friction: $f = ma_c = m \times 2.7$.

@@ -29,7 +29,7 @@ description: Comprehensive guide to simple harmonic motion for the International
 - That problems can be solved using the equations for SHM:
 
 $$
-x = x_0 \sin(\omega t + \Phi),\quad v = \omega x_0 \cos(\omega t + \Phi),\quad v = \pm\omega\sqrt{x_0^2 - x^2},\quad E_T = \tfrac{1}{2}m\omega^2 x_0^2,\quad E_P = \tfrac{1}{2}m\omega^2 x^2
+x = x_0 \sin(\omega t + \Phi),\quad v = \omega x_0 \cos(\omega t + \Phi),\quad v = \pm\omega\sqrt&lbrace;x_0^2 - x^2&rbrace;,\quad E_T = \tfrac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 x_0^2,\quad E_P = \tfrac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 x^2
 $$
 
 :::
@@ -44,17 +44,17 @@ characterized by a restoring force $F$ directly proportional to the displacement
 equilibrium and directed oppositely to the displacement. This yields Newton's second law:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   F \propto -x \\
-  F_{\mathrm{net}} = -kx = m \frac{d^2x}{dt^2},
-\end{aligned}
+  F_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = -kx = m \frac&lbrace;d^2x&rbrace;&lbrace;dt^2&rbrace;,
+\end&lbrace;aligned&rbrace;
 $$
 
 where $k > 0$ is the stiffness constant (e.g., spring constant). Rearranged as the equation of
 motion:
 
 $$
-\frac{d^2x}{dt^2} + \omega^2 x = 0, \quad \omega = \sqrt{\frac{k}{m}}. \tag{1}
+\frac&lbrace;d^2x&rbrace;&lbrace;dt^2&rbrace; + \omega^2 x = 0, \quad \omega = \sqrt&lbrace;\frac&lbrace;k&rbrace;&lbrace;m&rbrace;&rbrace;. \tag&lbrace;1&rbrace;
 $$
 
 Here, $\omega$ is the angular frequency (rad s$^{-1}$), governing the system's temporal evolution.
@@ -76,18 +76,18 @@ Conditions for Ideal SHM:
 The general solution to Equation (1) is:
 
 $$
-x(t) = A \cos(\omega t + \phi_0), \tag{2}
+x(t) = A \cos(\omega t + \phi_0), \tag&lbrace;2&rbrace;
 $$
 
 where $\phi_0$ is the initial phase angle. Velocity $v$ and acceleration $a$ follow by
 differentiation:
 
 $$
-v(t) = \frac{dx}{dt} = -\omega A \sin(\omega t + \phi_0), \tag{3}
+v(t) = \frac&lbrace;dx&rbrace;&lbrace;dt&rbrace; = -\omega A \sin(\omega t + \phi_0), \tag&lbrace;3&rbrace;
 $$
 
 $$
-a(t) = \frac{d^2x}{dt^2} = -\omega^2 A \cos(\omega t + \phi_0) = -\omega^2 x. \tag{4}
+a(t) = \frac&lbrace;d^2x&rbrace;&lbrace;dt^2&rbrace; = -\omega^2 A \cos(\omega t + \phi_0) = -\omega^2 x. \tag&lbrace;4&rbrace;
 $$
 
 Phase Relationships:
@@ -108,25 +108,25 @@ Graphical Interpretation:
 Total mechanical energy $E_{\mathrm{total}}$ is conserved:
 
 $$
-E_{\mathrm{total}} = K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2. \tag{5}
+E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = K + U = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv^2 + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kx^2. \tag&lbrace;5&rbrace;
 $$
 
 Substituting Equations (2)--(4) yields: Kinetic Energy ($K$):
 
 $$
-K = \frac{1}{2}m \omega^2 A^2 \sin^2(\omega t + \phi_0) = \frac{1}{2}m\omega^2 (A^2 - x^2). \tag{6}
+K = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m \omega^2 A^2 \sin^2(\omega t + \phi_0) = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 (A^2 - x^2). \tag&lbrace;6&rbrace;
 $$
 
 Potential Energy ($U$):
 
 $$
-U = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2 x^2. \tag{7}
+U = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kx^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 x^2. \tag&lbrace;7&rbrace;
 $$
 
 Total Energy:
 
 $$
-E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2 A^2. \tag{8}
+E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kA^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 A^2. \tag&lbrace;8&rbrace;
 $$
 
 Energy Oscillations:
@@ -142,13 +142,13 @@ Description: Point mass $m$ suspended on a massless string of length $L$ in grav
 Equation of Motion: For small $\theta$ ($\sin\theta \approx \theta$):
 
 $$
-\frac{d^2\theta}{dt^2} + \frac{g}{L}\theta = 0. \tag{9}
+\frac&lbrace;d^2\theta&rbrace;&lbrace;dt^2&rbrace; + \frac&lbrace;g&rbrace;&lbrace;L&rbrace;\theta = 0. \tag&lbrace;9&rbrace;
 $$
 
 This matches Equation (1) with $\omega = \sqrt{g/L}$. Period:
 
 $$
-T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{L}{g}}. \tag{10}
+T = \frac&lbrace;2\pi&rbrace;&lbrace;\omega&rbrace; = 2\pi \sqrt&lbrace;\frac&lbrace;L&rbrace;&lbrace;g&rbrace;&rbrace;. \tag&lbrace;10&rbrace;
 $$
 
 Properties:
@@ -165,13 +165,13 @@ springs and observe how the period and amplitude change in real time.
 Description: Mass $m$ attached to a spring of stiffness $k$. Equation of Motion: From Hooke's law:
 
 $$
-m\frac{d^2x}{dt^2} = -kx \implies \frac{d^2x}{dt^2} + \frac{k}{m}x = 0. \tag{11}
+m\frac&lbrace;d^2x&rbrace;&lbrace;dt^2&rbrace; = -kx \implies \frac&lbrace;d^2x&rbrace;&lbrace;dt^2&rbrace; + \frac&lbrace;k&rbrace;&lbrace;m&rbrace;x = 0. \tag&lbrace;11&rbrace;
 $$
 
 Period:
 
 $$
-T = 2\pi \sqrt{\frac{m}{k}}. \tag{12}
+T = 2\pi \sqrt&lbrace;\frac&lbrace;m&rbrace;&lbrace;k&rbrace;&rbrace;. \tag&lbrace;12&rbrace;
 $$
 
 Properties:
@@ -183,7 +183,7 @@ Properties:
 Angular Frequency ($\omega$):
 
 $$
-\omega = 2\pi f = \frac{2\pi}{T}, \tag{13}
+\omega = 2\pi f = \frac&lbrace;2\pi&rbrace;&lbrace;T&rbrace;, \tag&lbrace;13&rbrace;
 $$
 
 where $f$ is linear frequency (Hz). Converts temporal periodicity to angular speed.
@@ -196,7 +196,7 @@ $$
 
 - Phase Difference ($\Delta\phi$): Temporal shift between two SHMs:
   $$
-  \Delta\phi = \omega \Delta t = \frac{2\pi \Delta t}{T}. \tag{14}
+  \Delta\phi = \omega \Delta t = \frac&lbrace;2\pi \Delta t&rbrace;&lbrace;T&rbrace;. \tag&lbrace;14&rbrace;
   $$
 - Measured in radians (1 rad $\approx$ 57.3°).
 
@@ -223,19 +223,19 @@ constants $A$, $\omega$, and $\phi_0$.
 **Proof.** First derivative:
 
 $$
-\frac{dx}{dt} = -\omega A \sin(\omega t + \phi_0)
+\frac&lbrace;dx&rbrace;&lbrace;dt&rbrace; = -\omega A \sin(\omega t + \phi_0)
 $$
 
 Second derivative:
 
 $$
-\frac{d^2x}{dt^2} = -\omega^2 A \cos(\omega t + \phi_0) = -\omega^2 x
+\frac&lbrace;d^2x&rbrace;&lbrace;dt^2&rbrace; = -\omega^2 A \cos(\omega t + \phi_0) = -\omega^2 x
 $$
 
 Substituting into the equation of motion:
 
 $$
-\frac{d^2x}{dt^2} + \omega^2 x = -\omega^2 x + \omega^2 x = 0 \quad \blacksquare
+\frac&lbrace;d^2x&rbrace;&lbrace;dt^2&rbrace; + \omega^2 x = -\omega^2 x + \omega^2 x = 0 \quad \blacksquare
 $$
 
 ### Sine Form Equivalence
@@ -245,7 +245,7 @@ $$
 Using the identity $\sin\theta = \cos\!\left(\theta - \frac{\pi}{2}\right)$:
 
 $$
-A\sin(\omega t + \phi_0) = A\cos\!\left(\omega t + \phi_0 - \frac{\pi}{2}\right)
+A\sin(\omega t + \phi_0) = A\cos\!\left(\omega t + \phi_0 - \frac&lbrace;\pi&rbrace;&lbrace;2&rbrace;\right)
 $$
 
 This is the cosine form with a shifted phase. Since $\phi_0$ is already an arbitrary constant,
@@ -255,7 +255,7 @@ two-parameter solution space $(A, \phi_0)$.
 Direct substitution confirms:
 
 $$
-\frac{d^2}{dt^2}\!\left[A\sin(\omega t + \phi_0)\right] = -\omega^2 A\sin(\omega t + \phi_0) = -\omega^2 x \quad \blacksquare
+\frac&lbrace;d^2&rbrace;&lbrace;dt^2&rbrace;\!\left[A\sin(\omega t + \phi_0)\right] = -\omega^2 A\sin(\omega t + \phi_0) = -\omega^2 x \quad \blacksquare
 $$
 
 ### Choosing Sine vs Cosine
@@ -283,11 +283,11 @@ A spring of stiffness $k = 200\mathrm{ N/m}$ has a $0.50\mathrm{ kg}$ mass attac
 $T$ and frequency $f$.
 
 $$
-T = 2\pi \sqrt{\frac{m}{k}} = 2\pi \sqrt{\frac{0.50}{200}} = 2\pi(0.0500) = 0.314\mathrm{ s}
+T = 2\pi \sqrt&lbrace;\frac&lbrace;m&rbrace;&lbrace;k&rbrace;&rbrace; = 2\pi \sqrt&lbrace;\frac&lbrace;0.50&rbrace;&lbrace;200&rbrace;&rbrace; = 2\pi(0.0500) = 0.314\mathrm&lbrace; s&rbrace;
 $$
 
 $$
-f = \frac{1}{T} = \frac{1}{0.314} = 3.18\mathrm{ Hz}
+f = \frac&lbrace;1&rbrace;&lbrace;T&rbrace; = \frac&lbrace;1&rbrace;&lbrace;0.314&rbrace; = 3.18\mathrm&lbrace; Hz&rbrace;
 $$
 
 ### Example 2: Displacement and Velocity at a Given Time
@@ -298,17 +298,17 @@ is released from maximum displacement at $t = 0$. Find $x$ and $v$ at $t = 0.125
 Angular frequency:
 
 $$
-\omega = \frac{2\pi}{T} = \frac{2\pi}{0.50} = 4\pi\mathrm{ rad/s}
+\omega = \frac&lbrace;2\pi&rbrace;&lbrace;T&rbrace; = \frac&lbrace;2\pi&rbrace;&lbrace;0.50&rbrace; = 4\pi\mathrm&lbrace; rad/s&rbrace;
 $$
 
 With $x(0) = A$, use the cosine form: $x = A\cos(\omega t)$.
 
 $$
-x(0.125) = 0.10\cos(4\pi \times 0.125) = 0.10\cos\!\left(\frac{\pi}{2}\right) = 0\mathrm{ m}
+x(0.125) = 0.10\cos(4\pi \times 0.125) = 0.10\cos\!\left(\frac&lbrace;\pi&rbrace;&lbrace;2&rbrace;\right) = 0\mathrm&lbrace; m&rbrace;
 $$
 
 $$
-v(0.125) = -\omega A \sin(\omega t) = -4\pi(0.10)\sin\!\left(\frac{\pi}{2}\right) = -1.26\mathrm{ m/s}
+v(0.125) = -\omega A \sin(\omega t) = -4\pi(0.10)\sin\!\left(\frac&lbrace;\pi&rbrace;&lbrace;2&rbrace;\right) = -1.26\mathrm&lbrace; m/s&rbrace;
 $$
 
 The mass passes through equilibrium at $t = T/4 = 0.125\mathrm{ s}$, moving in the negative
@@ -322,13 +322,13 @@ speed is $1.6\mathrm{ m/s}$. Determine the amplitude.
 At $x = 0$, all energy is kinetic:
 
 $$
-E_{\mathrm{total}} = \frac{1}{2}mv_{\max}^2 = \frac{1}{2}(0.30)(1.6)^2 = 0.384\mathrm{ J}
+E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;mv_&lbrace;\max&rbrace;^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(0.30)(1.6)^2 = 0.384\mathrm&lbrace; J&rbrace;
 $$
 
 At $x = A$, all energy is potential:
 
 $$
-E_{\mathrm{total}} = \frac{1}{2}kA^2 \implies A = \sqrt{\frac{2E_{\mathrm{total}}}{k}} = \sqrt{\frac{2(0.384)}{120}} = \sqrt{0.00640} = 0.0800\mathrm{ m}
+E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kA^2 \implies A = \sqrt&lbrace;\frac&lbrace;2E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace;&rbrace;&lbrace;k&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;2(0.384)&rbrace;&lbrace;120&rbrace;&rbrace; = \sqrt&lbrace;0.00640&rbrace; = 0.0800\mathrm&lbrace; m&rbrace;
 $$
 
 ### Example 4: Simple Pendulum Period
@@ -337,7 +337,7 @@ A simple pendulum on Earth has a period of $2.00\mathrm{ s}$. Determine its leng
 $g = 9.81\mathrm{ m/s}^2$.
 
 $$
-L = \frac{gT^2}{4\pi^2} = \frac{(9.81)(2.00)^2}{4\pi^2} = \frac{39.2}{39.5} = 0.993\mathrm{ m}
+L = \frac&lbrace;gT^2&rbrace;&lbrace;4\pi^2&rbrace; = \frac&lbrace;(9.81)(2.00)^2&rbrace;&lbrace;4\pi^2&rbrace; = \frac&lbrace;39.2&rbrace;&lbrace;39.5&rbrace; = 0.993\mathrm&lbrace; m&rbrace;
 $$
 
 This is close to $1.00\mathrm{ m}$, which is why a "seconds pendulum" ($T = 2\mathrm{ s}$) is
@@ -357,7 +357,7 @@ $x_B = A\sin(\omega t) = A\cos\!\left(\omega t - \frac{\pi}{2}\right)$
 Comparing phases: $\phi_A = 0$, $\phi_B = -\pi/2$.
 
 $$
-|\Delta\phi| = \left|0 - \left(-\frac{\pi}{2}\right)\right| = \frac{\pi}{2}\mathrm{ rad} = 90°
+|\Delta\phi| = \left|0 - \left(-\frac&lbrace;\pi&rbrace;&lbrace;2&rbrace;\right)\right| = \frac&lbrace;\pi&rbrace;&lbrace;2&rbrace;\mathrm&lbrace; rad&rbrace; = 90°
 $$
 
 System A leads System B by $90^\circ$.
@@ -368,19 +368,19 @@ A mass-spring system has $A = 0.15\mathrm{ m}$, $k = 80.0\mathrm{ N/m}$, and $m 
 Find the kinetic energy, potential energy, and speed at $x = 0.090\mathrm{ m}$.
 
 $$
-E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(80.0)(0.15)^2 = 0.900\mathrm{ J}
+E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kA^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(80.0)(0.15)^2 = 0.900\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-U = \frac{1}{2}kx^2 = \frac{1}{2}(80.0)(0.090)^2 = 0.324\mathrm{ J}
+U = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kx^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(80.0)(0.090)^2 = 0.324\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-K = E_{\mathrm{total}} - U = 0.900 - 0.324 = 0.576\mathrm{ J}
+K = E_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; - U = 0.900 - 0.324 = 0.576\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.576)}{0.20}} = \sqrt{5.76} = 2.40\mathrm{ m/s}
+v = \sqrt&lbrace;\frac&lbrace;2K&rbrace;&lbrace;m&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;2(0.576)&rbrace;&lbrace;0.20&rbrace;&rbrace; = \sqrt&lbrace;5.76&rbrace; = 2.40\mathrm&lbrace; m/s&rbrace;
 $$
 
 ---
@@ -395,27 +395,27 @@ amplitude $A$ and the phase angle $\phi_0$.
 Using the cosine form $x = A\cos(\omega t + \phi_0)$:
 
 $$
-x(0) = A\cos\phi_0 = x_0 \tag{i}
+x(0) = A\cos\phi_0 = x_0 \tag&lbrace;i&rbrace;
 $$
 
 $$
-v(0) = -\omega A\sin\phi_0 = v_0 \tag{ii}
+v(0) = -\omega A\sin\phi_0 = v_0 \tag&lbrace;ii&rbrace;
 $$
 
 Squaring and adding (i) and (ii):
 
 $$
-A^2\cos^2\phi_0 + A^2\sin^2\phi_0 = x_0^2 + \frac{v_0^2}{\omega^2}
+A^2\cos^2\phi_0 + A^2\sin^2\phi_0 = x_0^2 + \frac&lbrace;v_0^2&rbrace;&lbrace;\omega^2&rbrace;
 $$
 
 $$
-A = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}} \tag{15}
+A = \sqrt&lbrace;x_0^2 + \frac&lbrace;v_0^2&rbrace;&lbrace;\omega^2&rbrace;&rbrace; \tag&lbrace;15&rbrace;
 $$
 
 Dividing (ii) by (i):
 
 $$
-\tan\phi_0 = -\frac{v_0}{\omega x_0} \tag{16}
+\tan\phi_0 = -\frac&lbrace;v_0&rbrace;&lbrace;\omega x_0&rbrace; \tag&lbrace;16&rbrace;
 $$
 
 :::warning
@@ -433,15 +433,15 @@ $x(0) = 0.060\mathrm{ m}$ and $v(0) = 1.20\mathrm{ m/s}$ (positive). Find the am
 angle.
 
 $$
-\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0.40}} = 20.0\mathrm{ rad/s}
+\omega = \sqrt&lbrace;\frac&lbrace;k&rbrace;&lbrace;m&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;160&rbrace;&lbrace;0.40&rbrace;&rbrace; = 20.0\mathrm&lbrace; rad/s&rbrace;
 $$
 
 $$
-A = \sqrt{(0.060)^2 + \frac{(1.20)^2}{(20.0)^2}} = \sqrt{0.00360 + 0.00360} = \sqrt{0.00720} = 0.0849\mathrm{ m}
+A = \sqrt&lbrace;(0.060)^2 + \frac&lbrace;(1.20)^2&rbrace;&lbrace;(20.0)^2&rbrace;&rbrace; = \sqrt&lbrace;0.00360 + 0.00360&rbrace; = \sqrt&lbrace;0.00720&rbrace; = 0.0849\mathrm&lbrace; m&rbrace;
 $$
 
 $$
-\tan\phi_0 = -\frac{v_0}{\omega x_0} = -\frac{1.20}{(20.0)(0.060)} = -1.00
+\tan\phi_0 = -\frac&lbrace;v_0&rbrace;&lbrace;\omega x_0&rbrace; = -\frac&lbrace;1.20&rbrace;&lbrace;(20.0)(0.060)&rbrace; = -1.00
 $$
 
 So $\phi_0 = -\pi/4$ or $\phi_0 = 3\pi/4$. Check quadrant: $\cos\phi_0 = x_0/A = 0.707 > 0$ (first
@@ -454,7 +454,7 @@ A pendulum oscillates with amplitude $A = 0.120\mathrm{ m}$ and angular frequenc
 $\omega = 3.50\mathrm{ rad/s}$. Find the speed at $x = 0.050\mathrm{ m}$.
 
 $$
-v = \pm\omega\sqrt{A^2 - x^2} = \pm 3.50\sqrt{(0.120)^2 - (0.050)^2} = \pm 3.50\sqrt{0.0119} = \pm 0.382\mathrm{ m/s}
+v = \pm\omega\sqrt&lbrace;A^2 - x^2&rbrace; = \pm 3.50\sqrt&lbrace;(0.120)^2 - (0.050)^2&rbrace; = \pm 3.50\sqrt&lbrace;0.0119&rbrace; = \pm 0.382\mathrm&lbrace; m/s&rbrace;
 $$
 
 The $\pm$ reflects that the mass passes through $x = 0.050\mathrm{ m}$ twice per cycle: once toward
@@ -466,19 +466,19 @@ A $0.50\mathrm{ kg}$ mass on a spring ($k = 200\mathrm{ N/m}$) oscillates with a
 $0.10\mathrm{ m}$. Find the kinetic energy, potential energy, and speed at $x = 0.060\mathrm{ m}$.
 
 $$
-E_T = \frac{1}{2}m\omega^2 A^2 = \frac{1}{2}(200)(0.10)^2 = 1.00\mathrm{ J}
+E_T = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 A^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(200)(0.10)^2 = 1.00\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-E_P = \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}(200)(0.060)^2 = 0.360\mathrm{ J}
+E_P = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 x^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(200)(0.060)^2 = 0.360\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-K = E_T - E_P = 1.00 - 0.360 = 0.640\mathrm{ J}
+K = E_T - E_P = 1.00 - 0.360 = 0.640\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{2(0.640)}{0.50}} = 1.60\mathrm{ m/s}
+v = \sqrt&lbrace;\frac&lbrace;2K&rbrace;&lbrace;m&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;2(0.640)&rbrace;&lbrace;0.50&rbrace;&rbrace; = 1.60\mathrm&lbrace; m/s&rbrace;
 $$
 
 Verification: $\omega = \sqrt{k/m} = 20.0\mathrm{ rad/s}$,
@@ -490,15 +490,15 @@ A $0.50\mathrm{ kg}$ object undergoes SHM with total energy $2.0\mathrm{ J}$ and
 $0.20\mathrm{ m}$. Determine $\omega$, $k$, and the speed at $x = 0.10\mathrm{ m}$.
 
 $$
-E_T = \frac{1}{2}m\omega^2 A^2 \implies \omega^2 = \frac{2E_T}{mA^2} = \frac{2(2.0)}{(0.50)(0.20)^2} = 200
+E_T = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\omega^2 A^2 \implies \omega^2 = \frac&lbrace;2E_T&rbrace;&lbrace;mA^2&rbrace; = \frac&lbrace;2(2.0)&rbrace;&lbrace;(0.50)(0.20)^2&rbrace; = 200
 $$
 
 $$
-\omega = \sqrt{200} = 14.1\mathrm{ rad/s}, \quad k = m\omega^2 = (0.50)(200) = 100\mathrm{ N/m}
+\omega = \sqrt&lbrace;200&rbrace; = 14.1\mathrm&lbrace; rad/s&rbrace;, \quad k = m\omega^2 = (0.50)(200) = 100\mathrm&lbrace; N/m&rbrace;
 $$
 
 $$
-v = \omega\sqrt{A^2 - x^2} = 14.1\sqrt{(0.20)^2 - (0.10)^2} = 14.1(0.173) = 2.44\mathrm{ m/s}
+v = \omega\sqrt&lbrace;A^2 - x^2&rbrace; = 14.1\sqrt&lbrace;(0.20)^2 - (0.10)^2&rbrace; = 14.1(0.173) = 2.44\mathrm&lbrace; m/s&rbrace;
 $$
 
 ---
@@ -611,19 +611,19 @@ period of oscillation, (b) the frequency, (c) the angular frequency.
 (a)
 
 $$
-T = 2\pi\sqrt{\frac{m}{k}} = 2\pi\sqrt{\frac{0.25}{400}} = 2\pi(0.0250) = 0.157\mathrm{ s}
+T = 2\pi\sqrt&lbrace;\frac&lbrace;m&rbrace;&lbrace;k&rbrace;&rbrace; = 2\pi\sqrt&lbrace;\frac&lbrace;0.25&rbrace;&lbrace;400&rbrace;&rbrace; = 2\pi(0.0250) = 0.157\mathrm&lbrace; s&rbrace;
 $$
 
 (b)
 
 $$
-T_{\mathrm{Earth}} = 2\pi\sqrt{\frac{1.50}{9.81}} = 2.46\mathrm{ s}
+T_&lbrace;\mathrm&lbrace;Earth&rbrace;&rbrace; = 2\pi\sqrt&lbrace;\frac&lbrace;1.50&rbrace;&lbrace;9.81&rbrace;&rbrace; = 2.46\mathrm&lbrace; s&rbrace;
 $$
 
 On Mars:
 
 $$
-T_{\mathrm{Mars}} = 2\pi\sqrt{\frac{1.50}{3.71}} = 4.00\mathrm{ s}
+T_&lbrace;\mathrm&lbrace;Mars&rbrace;&rbrace; = 2\pi\sqrt&lbrace;\frac&lbrace;1.50&rbrace;&lbrace;3.71&rbrace;&rbrace; = 4.00\mathrm&lbrace; s&rbrace;
 $$
 
 The period is longer on Mars due to the weaker gravitational field.
@@ -640,15 +640,15 @@ $0.040\mathrm{ m}$.
 <summary>Solution</summary>
 
 $$
-E_T = \frac{1}{2}kA^2 = \frac{1}{2}(500)(0.080)^2 = 1.60\mathrm{ J}
+E_T = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kA^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(500)(0.080)^2 = 1.60\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-U = \frac{1}{2}kx^2 = \frac{1}{2}(500)(0.040)^2 = 0.400\mathrm{ J}
+U = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kx^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(500)(0.040)^2 = 0.400\mathrm&lbrace; J&rbrace;
 $$
 
 $$
-K = E_T - U = 1.60 - 0.400 = 1.20\mathrm{ J}
+K = E_T - U = 1.60 - 0.400 = 1.20\mathrm&lbrace; J&rbrace;
 $$
 
 At half the amplitude, the split is 75% kinetic, 25% potential (energy scales as $x^2$).
@@ -667,7 +667,7 @@ Compare their periods.
 For ideal SHM, the period is independent of amplitude:
 
 $$
-T = 2\pi\sqrt{\frac{L}{g}}
+T = 2\pi\sqrt&lbrace;\frac&lbrace;L&rbrace;&lbrace;g&rbrace;&rbrace;
 $$
 
 Both pendulums have the same length and gravitational field, so $T_P = T_Q$. This is the property of
@@ -688,17 +688,17 @@ constant.
 From $v^2 = \omega^2(A^2 - x^2) = \frac{k}{m}(A^2 - x^2)$:
 
 $$
-(2.0)^2 = \frac{k}{2.0}\!\left((0.30)^2 - (0.20)^2\right) = \frac{k}{2.0}(0.050)
+(2.0)^2 = \frac&lbrace;k&rbrace;&lbrace;2.0&rbrace;\!\left((0.30)^2 - (0.20)^2\right) = \frac&lbrace;k&rbrace;&lbrace;2.0&rbrace;(0.050)
 $$
 
 $$
-4.0 = 0.025k \implies k = 160\mathrm{ N/m}
+4.0 = 0.025k \implies k = 160\mathrm&lbrace; N/m&rbrace;
 $$
 
 Total energy:
 
 $$
-E_T = \frac{1}{2}kA^2 = \frac{1}{2}(160)(0.30)^2 = 7.2\mathrm{ J}
+E_T = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kA^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(160)(0.30)^2 = 7.2\mathrm&lbrace; J&rbrace;
 $$
 
 </details>
@@ -715,13 +715,13 @@ displacement at $t = 0.50\mathrm{ s}$.
 Amplitude:
 
 $$
-A = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}} = \sqrt{(0.030)^2 + \frac{(0.20)^2}{(8.0)^2}} = \sqrt{0.000900 + 0.000625} = \sqrt{0.001525} = 0.0391\mathrm{ m}
+A = \sqrt&lbrace;x_0^2 + \frac&lbrace;v_0^2&rbrace;&lbrace;\omega^2&rbrace;&rbrace; = \sqrt&lbrace;(0.030)^2 + \frac&lbrace;(0.20)^2&rbrace;&lbrace;(8.0)^2&rbrace;&rbrace; = \sqrt&lbrace;0.000900 + 0.000625&rbrace; = \sqrt&lbrace;0.001525&rbrace; = 0.0391\mathrm&lbrace; m&rbrace;
 $$
 
 Phase angle:
 
 $$
-\tan\phi_0 = -\frac{v_0}{\omega x_0} = -\frac{-0.20}{(8.0)(0.030)} = 0.833
+\tan\phi_0 = -\frac&lbrace;v_0&rbrace;&lbrace;\omega x_0&rbrace; = -\frac&lbrace;-0.20&rbrace;&lbrace;(8.0)(0.030)&rbrace; = 0.833
 $$
 
 $\phi_0 = \arctan(0.833) = 0.694\mathrm{ rad}$. Quadrant check: $\cos\phi_0 = x_0/A = 0.767 > 0$ and
@@ -730,7 +730,7 @@ $\sin\phi_0 = -v_0/(\omega A) = 0.639 > 0$. Both positive, first quadrant confir
 Displacement at $t = 0.50\mathrm{ s}$:
 
 $$
-x = 0.0391\cos(8.0 \times 0.50 + 0.694) = 0.0391\cos(4.694) = 0.0391(-0.0296) = -0.00116\mathrm{ m}
+x = 0.0391\cos(8.0 \times 0.50 + 0.694) = 0.0391\cos(4.694) = 0.0391(-0.0296) = -0.00116\mathrm&lbrace; m&rbrace;
 $$
 
 </details>
@@ -747,25 +747,25 @@ when $x = 0.020\mathrm{ m}$. (d) At what displacement is $K = U$?
 (a)
 
 $$
-k = \frac{2E_T}{A^2} = \frac{2(0.48)}{(0.040)^2} = 600\mathrm{ N/m}
+k = \frac&lbrace;2E_T&rbrace;&lbrace;A^2&rbrace; = \frac&lbrace;2(0.48)&rbrace;&lbrace;(0.040)^2&rbrace; = 600\mathrm&lbrace; N/m&rbrace;
 $$
 
 (b)
 
 $$
-v_{\max} = \omega A = A\sqrt{\frac{k}{m}} = 0.040\sqrt{\frac{600}{0.60}} = 0.040(31.6) = 1.26\mathrm{ m/s}
+v_&lbrace;\max&rbrace; = \omega A = A\sqrt&lbrace;\frac&lbrace;k&rbrace;&lbrace;m&rbrace;&rbrace; = 0.040\sqrt&lbrace;\frac&lbrace;600&rbrace;&lbrace;0.60&rbrace;&rbrace; = 0.040(31.6) = 1.26\mathrm&lbrace; m/s&rbrace;
 $$
 
 (c)
 
 $$
-v = \omega\sqrt{A^2 - x^2} = 31.6\sqrt{(0.040)^2 - (0.020)^2} = 31.6\sqrt{0.00120} = 1.10\mathrm{ m/s}
+v = \omega\sqrt&lbrace;A^2 - x^2&rbrace; = 31.6\sqrt&lbrace;(0.040)^2 - (0.020)^2&rbrace; = 31.6\sqrt&lbrace;0.00120&rbrace; = 1.10\mathrm&lbrace; m/s&rbrace;
 $$
 
 (d) $K = U \implies E_T = 2U$:
 
 $$
-\frac{1}{2}kA^2 = 2 \times \frac{1}{2}kx^2 \implies x = \frac{A}{\sqrt{2}} = \frac{0.040}{\sqrt{2}} = 0.0283\mathrm{ m}
+\frac&lbrace;1&rbrace;&lbrace;2&rbrace;kA^2 = 2 \times \frac&lbrace;1&rbrace;&lbrace;2&rbrace;kx^2 \implies x = \frac&lbrace;A&rbrace;&lbrace;\sqrt&lbrace;2&rbrace;&rbrace; = \frac&lbrace;0.040&rbrace;&lbrace;\sqrt&lbrace;2&rbrace;&rbrace; = 0.0283\mathrm&lbrace; m&rbrace;
 $$
 
 This holds for any SHM regardless of system parameters.
@@ -782,7 +782,7 @@ maximum acceleration, (c) the speed when the bob is $0.50\mathrm{ m}$ below the 
 <summary>Solution</summary>
 
 $$
-A = \frac{v_{\max}}{\omega} = \frac{3.13}{2.21} = 1.42\mathrm{ m}
+A = \frac&lbrace;v_&lbrace;\max&rbrace;&rbrace;&lbrace;\omega&rbrace; = \frac&lbrace;3.13&rbrace;&lbrace;2.21&rbrace; = 1.42\mathrm&lbrace; m&rbrace;
 $$
 
 This corresponds to an angular amplitude of $0.71\mathrm{ rad} \approx 41^\circ$, exceeding the
@@ -791,14 +791,14 @@ small-angle regime. The SHM model is approximate here.
 (b)
 
 $$
-a_{\max} = \omega^2 A = (4.905)(1.42) = 6.97\mathrm{ m/s}^2
+a_&lbrace;\max&rbrace; = \omega^2 A = (4.905)(1.42) = 6.97\mathrm&lbrace; m/s&rbrace;^2
 $$
 
 (c) The release point is at $x = A = 1.42\mathrm{ m}$. A point $0.50\mathrm{ m}$ below corresponds
 to $x = A - 0.50 = 0.92\mathrm{ m}$.
 
 $$
-v = \omega\sqrt{A^2 - x^2} = 2.21\sqrt{(1.42)^2 - (0.92)^2} = 2.21\sqrt{1.170} = 2.21(1.082) = 2.39\mathrm{ m/s}
+v = \omega\sqrt&lbrace;A^2 - x^2&rbrace; = 2.21\sqrt&lbrace;(1.42)^2 - (0.92)^2&rbrace; = 2.21\sqrt&lbrace;1.170&rbrace; = 2.21(1.082) = 2.39\mathrm&lbrace; m/s&rbrace;
 $$
 
 </details>

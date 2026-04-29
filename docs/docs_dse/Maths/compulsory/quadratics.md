@@ -96,8 +96,8 @@ The graph of $f(x) = ax^2 + bx + c$ is a parabola.
 
 <!-- TODO: replace with a verified Desmos graph URL showing a quadratic with sliders for a, b, c -->
 
-<DesmosGraph title="Quadratic Function Explorer" expressions={["ax^2+bx+c", "-b/(2a)"]} width={800}
-height={500} />
+<DesmosGraph title="Quadratic Function Explorer" expressions=&lbrace;["ax^2+bx+c", "-b/(2a)"]&rbrace; width=&lbrace;800&rbrace;
+height=&lbrace;500&rbrace; />
 
 Adjust the sliders to see how $a$, $b$, and $c$ affect the shape, vertex, and roots of the parabola.
 

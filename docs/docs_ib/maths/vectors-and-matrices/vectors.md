@@ -400,6 +400,6 @@ $$P' = 2F - P = \left(\dfrac{8}{3} - 1,\, \dfrac{11}{3} - 2,\, \dfrac{19}{3} - 3
 
 The cross product is defined only in $\mathbb{R}^3$ (and $\mathbb{R}^7$). Do not attempt to compute
 cross products in $\mathbb{R}^2$ directly. Also, $\mathbf{a} \times \mathbf{b} \ne \mathbf{b} \times
-\mathbf{a}$: the cross product is anti-commutative.
+\mathbf&lbrace;a&rbrace;$: the cross product is anti-commutative.
 
 :::

@@ -491,31 +491,31 @@ time for all 10,000 accesses if there were no cache.
 **a) Hit rate:**
 
 $$
-\mathrm{Hit rate} = \frac{\mathrm{Cache hits}}{\mathrm{Total accesses}} = \frac{8500}{10000} = 0.85 = 85\%
+\mathrm&lbrace;Hit rate&rbrace; = \frac&lbrace;\mathrm&lbrace;Cache hits&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Total accesses&rbrace;&rbrace; = \frac&lbrace;8500&rbrace;&lbrace;10000&rbrace; = 0.85 = 85\%
 $$
 
 **b) Average Memory Access Time (AMAT):**
 
 $$
-\mathrm{AMAT} = (\mathrm{Hit rate} \times \mathrm{Hit time}) + (\mathrm{Miss rate} \times \mathrm{Miss penalty})
+\mathrm&lbrace;AMAT&rbrace; = (\mathrm&lbrace;Hit rate&rbrace; \times \mathrm&lbrace;Hit time&rbrace;) + (\mathrm&lbrace;Miss rate&rbrace; \times \mathrm&lbrace;Miss penalty&rbrace;)
 $$
 
 The miss penalty is the time to fetch from main memory: 50 ns.
 
 $$
-\mathrm{AMAT} = (0.85 \times 2) + (0.15 \times 50) = 1.7 + 7.5 = 9.2 \mathrm{ ns}
+\mathrm&lbrace;AMAT&rbrace; = (0.85 \times 2) + (0.15 \times 50) = 1.7 + 7.5 = 9.2 \mathrm&lbrace; ns&rbrace;
 $$
 
 **c) Without cache (all accesses from main memory):**
 
 $$
-\mathrm{Total time} = 10000 \times 50 = 500,000 \mathrm{ ns}
+\mathrm&lbrace;Total time&rbrace; = 10000 \times 50 = 500,000 \mathrm&lbrace; ns&rbrace;
 $$
 
 **With cache:**
 
 $$
-\mathrm{Total time} = 8500 \times 2 + 1500 \times 50 = 17000 + 75000 = 92,000 \mathrm{ ns}
+\mathrm&lbrace;Total time&rbrace; = 8500 \times 2 + 1500 \times 50 = 17000 + 75000 = 92,000 \mathrm&lbrace; ns&rbrace;
 $$
 
 The cache reduces total access time by approximately 82%.

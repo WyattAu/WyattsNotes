@@ -24,9 +24,9 @@ A measure of central tendency identifies a single value that is representative o
 The **mean** (arithmetic average) of a dataset $\{x_1, x_2, \ldots, x_n\}$ is defined as:
 
 $$
-\begin{aligned}
-  \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \bar&lbrace;x&rbrace; = \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; x_i
+\end&lbrace;aligned&rbrace;
 $$
 
 The mean uses every data value, making it sensitive to outliers. It is the only measure of central
@@ -87,9 +87,9 @@ datasets can share the same mean yet have very different spreads.
 ### Range
 
 $$
-\begin{aligned}
-  \mathrm{Range} = \mathrm{Maximum value} - \mathrm{Minimum value}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Range&rbrace; = \mathrm&lbrace;Maximum value&rbrace; - \mathrm&lbrace;Minimum value&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The range is simple to compute but uses only two data points, making it highly sensitive to
@@ -110,9 +110,9 @@ The **quartiles** divide an ordered dataset into four equal parts:
 - $Q_3$ (upper quartile): the median of the upper half.
 
 $$
-\begin{aligned}
-  \mathrm{IQR} = Q_3 - Q_1
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;IQR&rbrace; = Q_3 - Q_1
+\end&lbrace;aligned&rbrace;
 $$
 
 The IQR is resistant to outliers since it ignores the most extreme $50\%$ of data.
@@ -135,25 +135,25 @@ population.
 **Population variance** (divides by $n$):
 
 $$
-\begin{aligned}
-  \sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sigma^2 = \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace;(x_i - \bar&lbrace;x&rbrace;)^2
+\end&lbrace;aligned&rbrace;
 $$
 
 **Sample variance** (divides by $n-1$):
 
 $$
-\begin{aligned}
-  s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  s^2 = \frac&lbrace;1&rbrace;&lbrace;n-1&rbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace;(x_i - \bar&lbrace;x&rbrace;)^2
+\end&lbrace;aligned&rbrace;
 $$
 
 An equivalent computational formula is:
 
 $$
-\begin{aligned}
-  \sigma^2 = \frac{1}{n}\left[\sum_{i=1}^{n}x_i^2 - \frac{1}{n}\left(\sum_{i=1}^{n}x_i\right)^2\right]
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sigma^2 = \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\left[\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace;x_i^2 - \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\left(\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace;x_i\right)^2\right]
+\end&lbrace;aligned&rbrace;
 $$
 
 **Why $n$ vs $n-1$?** Dividing by $n-1$ (Bessel's correction) provides an _unbiased_ estimator of
@@ -178,9 +178,9 @@ The **standard deviation** is the positive square root of the variance, restorin
 the original data:
 
 $$
-\begin{aligned}
-  \sigma = \sqrt{\sigma^2}, \qquad s = \sqrt{s^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sigma = \sqrt&lbrace;\sigma^2&rbrace;, \qquad s = \sqrt&lbrace;s^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Since the standard deviation is in the same units as the data, it is more interpretable than the
@@ -209,9 +209,9 @@ We work with class intervals instead.
 ### Mean of Grouped Data
 
 $$
-\begin{aligned}
-  \bar{x} = \frac{\sum_{i=1}^{k} f_i x_i}{\sum_{i=1}^{k} f_i}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \bar&lbrace;x&rbrace; = \frac&lbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;k&rbrace; f_i x_i&rbrace;&lbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;k&rbrace; f_i&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 where $k$ is the number of classes, $f_i$ is the frequency of class $i$, and $x_i$ is the class
@@ -223,9 +223,9 @@ When class marks are equally spaced, let $h$ be the common class width and $A$ b
 a convenient class (the assumed mean). Define $d_i = \dfrac{x_i - A}{h}$. Then:
 
 $$
-\begin{aligned}
-  \bar{x} = A + \frac{\sum_{i=1}^{k} f_i d_i}{\sum_{i=1}^{k} f_i} \times h
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \bar&lbrace;x&rbrace; = A + \frac&lbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;k&rbrace; f_i d_i&rbrace;&lbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;k&rbrace; f_i&rbrace; \times h
+\end&lbrace;aligned&rbrace;
 $$
 
 This method simplifies calculation by working with small integer values of $d_i$.
@@ -245,11 +245,11 @@ This method simplifies calculation by working with small integer values of $d_i$
 Here $A = 54.5$, $h = 10$.
 
 $$
-\begin{aligned}
-  \bar{x} &= 54.5 + \frac{-8-8+0+10+8}{40} \times 10 \\
-          &= 54.5 + \frac{2}{40} \times 10 \\
+\begin&lbrace;aligned&rbrace;
+  \bar&lbrace;x&rbrace; &= 54.5 + \frac&lbrace;-8-8+0+10+8&rbrace;&lbrace;40&rbrace; \times 10 \\
+          &= 54.5 + \frac&lbrace;2&rbrace;&lbrace;40&rbrace; \times 10 \\
           &= 54.5 + 0.5 = 55
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -259,17 +259,17 @@ $$
 For grouped data, the population variance is:
 
 $$
-\begin{aligned}
-  \sigma^2 = \frac{\sum_{i=1}^{k} f_i(x_i - \bar{x})^2}{\sum_{i=1}^{k} f_i}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sigma^2 = \frac&lbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;k&rbrace; f_i(x_i - \bar&lbrace;x&rbrace;)^2&rbrace;&lbrace;\sum_&lbrace;i=1&rbrace;^&lbrace;k&rbrace; f_i&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Or equivalently:
 
 $$
-\begin{aligned}
-  \sigma^2 = \frac{1}{n}\left[\sum f_i x_i^2 - \frac{1}{n}\left(\sum f_i x_i\right)^2\right], \quad n = \sum f_i
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sigma^2 = \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\left[\sum f_i x_i^2 - \frac&lbrace;1&rbrace;&lbrace;n&rbrace;\left(\sum f_i x_i\right)^2\right], \quad n = \sum f_i
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Histogram Estimation
@@ -278,9 +278,9 @@ In a histogram, the area of each bar represents the frequency of the correspondi
 widths are unequal, the height of each bar is the **frequency density**:
 
 $$
-\begin{aligned}
-  \mathrm{Frequency density} = \frac{\mathrm{Frequency}}{\mathrm{Class width}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Frequency density&rbrace; = \frac&lbrace;\mathrm&lbrace;Frequency&rbrace;&rbrace;&lbrace;\mathrm&lbrace;Class width&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The median, quartiles, and other percentiles can be estimated from a cumulative frequency curve
@@ -293,9 +293,9 @@ The median, quartiles, and other percentiles can be estimated from a cumulative 
 For a dataset $X$ and constants $a, b$:
 
 $$
-\begin{aligned}
-  \mathrm{Var}(aX + b) = a^2 \mathrm{Var}(X)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Var&rbrace;(aX + b) = a^2 \mathrm&lbrace;Var&rbrace;(X)
+\end&lbrace;aligned&rbrace;
 $$
 
 Adding a constant $b$ shifts all values equally and does not affect spread. Multiplying by $a$
@@ -315,17 +315,17 @@ Given two datasets $X$ and $Y$ with sizes $n_1$ and $n_2$, means $\bar{x}_1$ and
 variances $\sigma_1^2$ and $\sigma_2^2$, the **combined variance** of the pooled dataset is:
 
 $$
-\begin{aligned}
-  \sigma_c^2 = \frac{n_1 \sigma_1^2 + n_2 \sigma_2^2 + n_1(\bar{x}_1 - \bar{x}_c)^2 + n_2(\bar{x}_2 - \bar{x}_c)^2}{n_1 + n_2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sigma_c^2 = \frac&lbrace;n_1 \sigma_1^2 + n_2 \sigma_2^2 + n_1(\bar&lbrace;x&rbrace;_1 - \bar&lbrace;x&rbrace;_c)^2 + n_2(\bar&lbrace;x&rbrace;_2 - \bar&lbrace;x&rbrace;_c)^2&rbrace;&lbrace;n_1 + n_2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 where the combined mean is:
 
 $$
-\begin{aligned}
-  \bar{x}_c = \frac{n_1 \bar{x}_1 + n_2 \bar{x}_2}{n_1 + n_2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \bar&lbrace;x&rbrace;_c = \frac&lbrace;n_1 \bar&lbrace;x&rbrace;_1 + n_2 \bar&lbrace;x&rbrace;_2&rbrace;&lbrace;n_1 + n_2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The additional terms $n_1(\bar{x}_1 - \bar{x}_c)^2$ and $n_2(\bar{x}_2 - \bar{x}_c)^2$ account for
@@ -339,10 +339,10 @@ the between-group variation caused by the difference in means.
 Combined mean: $\bar{x}_c = \frac{6(10)+4(20)}{10} = 14$.
 
 $$
-\begin{aligned}
-  \sigma_c^2 &= \frac{6(4) + 4(9) + 6(10-14)^2 + 4(20-14)^2}{10} \\
-             &= \frac{24 + 36 + 96 + 144}{10} = \frac{300}{10} = 30
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sigma_c^2 &= \frac&lbrace;6(4) + 4(9) + 6(10-14)^2 + 4(20-14)^2&rbrace;&lbrace;10&rbrace; \\
+             &= \frac&lbrace;24 + 36 + 96 + 144&rbrace;&lbrace;10&rbrace; = \frac&lbrace;300&rbrace;&lbrace;10&rbrace; = 30
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -355,9 +355,9 @@ The **coefficient of variation (CV)** allows comparison of variability between d
 different units or with vastly different means:
 
 $$
-\begin{aligned}
-  \mathrm{CV} = \frac{\sigma}{\bar{x}} \times 100\%
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;CV&rbrace; = \frac&lbrace;\sigma&rbrace;&lbrace;\bar&lbrace;x&rbrace;&rbrace; \times 100\%
+\end&lbrace;aligned&rbrace;
 $$
 
 A larger CV indicates greater relative dispersion.
@@ -443,7 +443,7 @@ transformed dataset $Y = \dfrac{X - 20}{6}$.
 - $\sum f_i = 50$, $\sum f_i d_i = 5(-2) + 12(-1) + 18(0) + 10(1) + 5(2) = -10 + (-12) + 0 + 10 + 10 = -2$.
 - $\bar{x} = 34.5 + \frac{-2}{50} \times 10 = 34.5 - 0.4 = 34.1$.
 - $\sum f_i d_i^2 = 5(4) + 12(1) + 18(0) + 10(1) + 5(4) = 20 + 12 + 0 + 10 + 20 = 62$.
-- $\sigma_d^2 = rac{62}{50} - \left(rac{-2}{50}
+- $\sigma_d^2 = rac&lbrace;62&rbrace;&lbrace;50&rbrace; - \left(rac&lbrace;-2&rbrace;&lbrace;50&rbrace;
 ight)^2 = 1.24 - 0.0016 = 1.2384$.
 - $\sigma^2 = 1.2384 	imes 10^2 = 123.84$, so $\sigma = \sqrt{123.84} pprox 11.13$.
 </details>
@@ -458,12 +458,12 @@ combined standard deviation.
   $\bar{x}_c = \frac{30(72)+20(80)}{50} = \frac{2160+1600}{50} = \frac{3760}{50} = 75.2$.
 - Combined variance:
   $$
-  \begin{aligned}
-    \sigma_c^2 &= \frac{30(64) + 20(36) + 30(72-75.2)^2 + 20(80-75.2)^2}{50} \\
-               &= \frac{1920 + 720 + 30(10.24) + 20(23.04)}{50} \\
-               &= \frac{1920 + 720 + 307.2 + 460.8}{50} \\
-               &= \frac{3408}{50} = 68.16
-  \end{aligned}
+  \begin&lbrace;aligned&rbrace;
+    \sigma_c^2 &= \frac&lbrace;30(64) + 20(36) + 30(72-75.2)^2 + 20(80-75.2)^2&rbrace;&lbrace;50&rbrace; \\
+               &= \frac&lbrace;1920 + 720 + 30(10.24) + 20(23.04)&rbrace;&lbrace;50&rbrace; \\
+               &= \frac&lbrace;1920 + 720 + 307.2 + 460.8&rbrace;&lbrace;50&rbrace; \\
+               &= \frac&lbrace;3408&rbrace;&lbrace;50&rbrace; = 68.16
+  \end&lbrace;aligned&rbrace;
   $$
 - Combined standard deviation: $\sigma_c = \sqrt{68.16} \approx 8.26$.
 </details>
@@ -536,11 +536,11 @@ Estimate the median weight from the cumulative frequency distribution.
   $20$ to $40$).
 - Using linear interpolation within the class:
   $$
-  \begin{aligned}
-    \mathrm{Median} &= 139.5 + \frac{25-20}{40-20} \times (159.5 - 139.5) \\
-                  &= 139.5 + \frac{5}{20} \times 20 \\
-                  &= 139.5 + 5 = 144.5 \mathrm{ g}
-  \end{aligned}
+  \begin&lbrace;aligned&rbrace;
+    \mathrm&lbrace;Median&rbrace; &= 139.5 + \frac&lbrace;25-20&rbrace;&lbrace;40-20&rbrace; \times (159.5 - 139.5) \\
+                  &= 139.5 + \frac&lbrace;5&rbrace;&lbrace;20&rbrace; \times 20 \\
+                  &= 139.5 + 5 = 144.5 \mathrm&lbrace; g&rbrace;
+  \end&lbrace;aligned&rbrace;
   $$
 
 </details>
@@ -556,17 +556,17 @@ the computational formula.
 - $\bar{x} = \frac{52}{10} = 5.2$.
 - **Definition formula:**
   $$
-  \begin{aligned}
-    \sigma^2 &= \frac{(3-5.2)^2 + (7-5.2)^2 + (7-5.2)^2 + (2-5.2)^2 + (9-5.2)^2 + (5-5.2)^2 + (1-5.2)^2 + (8-5.2)^2 + (6-5.2)^2 + (4-5.2)^2}{10} \\
-             &= \frac{4.84+3.24+3.24+10.24+14.44+0.04+17.64+7.84+0.64+1.44}{10} \\
-             &= \frac{63.6}{10} = 6.36
-  \end{aligned}
+  \begin&lbrace;aligned&rbrace;
+    \sigma^2 &= \frac&lbrace;(3-5.2)^2 + (7-5.2)^2 + (7-5.2)^2 + (2-5.2)^2 + (9-5.2)^2 + (5-5.2)^2 + (1-5.2)^2 + (8-5.2)^2 + (6-5.2)^2 + (4-5.2)^2&rbrace;&lbrace;10&rbrace; \\
+             &= \frac&lbrace;4.84+3.24+3.24+10.24+14.44+0.04+17.64+7.84+0.64+1.44&rbrace;&lbrace;10&rbrace; \\
+             &= \frac&lbrace;63.6&rbrace;&lbrace;10&rbrace; = 6.36
+  \end&lbrace;aligned&rbrace;
   $$
 - **Computational formula:**
   $$
-  \begin{aligned}
-    \sigma^2 &= \frac{334}{10} - \left(\frac{52}{10}\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
-  \end{aligned}
+  \begin&lbrace;aligned&rbrace;
+    \sigma^2 &= \frac&lbrace;334&rbrace;&lbrace;10&rbrace; - \left(\frac&lbrace;52&rbrace;&lbrace;10&rbrace;\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
+  \end&lbrace;aligned&rbrace;
   $$
 
 </details>

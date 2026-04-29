@@ -417,8 +417,8 @@ second is at $30\,{}^{\circ}$ to the vertical. What fraction of the original int
 
 After the first filter: $I_1 = \dfrac{I_0}{2}$ (half transmitted for unpolarised light).
 
-After the second filter (Malus's law): $I_2 = I_1\cos^2 30\,{}^{\circ} = \dfrac{I_0}{2} \cdot \dfrac{3}{4}
-= \dfrac{3}{8}I_0$.
+After the second filter (Malus's law): $I_2 = I_1\cos^2 30\,&lbrace;&rbrace;^&lbrace;\circ&rbrace; = \dfrac&lbrace;I_0&rbrace;&lbrace;2&rbrace; \cdot \dfrac&lbrace;3&rbrace;&lbrace;4&rbrace;
+= \dfrac&lbrace;3&rbrace;&lbrace;8&rbrace;I_0$.
 
 ### Brewster's Angle
 

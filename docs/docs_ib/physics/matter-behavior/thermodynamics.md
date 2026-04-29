@@ -17,9 +17,9 @@ Pump in particles and observe how they behave under different conditions.
 The ideal gas law states the relationship of ideal gas qualities:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     PV = nRT = n N_A k_B T = N k_B T
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 where: $P$: Pressure $V$: Volume $T$: Temperature $n$: Number of moles $N$: Number of particles $R$:
@@ -30,12 +30,12 @@ Gas constant, where $R = N_A \cdot k_B$ $N_A$: Avogadro constant $k_B$: Boltzman
 Kinetic theory states the average pressure ($P$) of an ideal gas is:
 
 $$
-\begin{aligned}
-    P = \frac{N}{3V} m\bar{v}^2\\
-    P\frac{3V}{2N} = \frac{1}{2}m\bar{v}^2\\
-    \left(\frac{N k_B T}{V}\right)\frac{3V}{2N} = \frac{1}{2}m\bar{v}^2\\
-    \bar{E_k} = \frac{3}{2}k_B T
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    P = \frac&lbrace;N&rbrace;&lbrace;3V&rbrace; m\bar&lbrace;v&rbrace;^2\\
+    P\frac&lbrace;3V&rbrace;&lbrace;2N&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\bar&lbrace;v&rbrace;^2\\
+    \left(\frac&lbrace;N k_B T&rbrace;&lbrace;V&rbrace;\right)\frac&lbrace;3V&rbrace;&lbrace;2N&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;m\bar&lbrace;v&rbrace;^2\\
+    \bar&lbrace;E_k&rbrace; = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;k_B T
+\end&lbrace;aligned&rbrace;
 $$
 
 ## First Law of Thermodynamics
@@ -45,9 +45,9 @@ internal energy ($\Delta U$) is the heat transfer ($Q$) to the system subtract t
 from the process:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     \Delta U = Q - W
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 ## Second Law of Thermodynamics
@@ -62,9 +62,9 @@ change of internal energy is directly effected by the change of average translat
 ($\bar{E_k}$) by the change of temperature ($\Delta T$):
 
 $$
-\begin{aligned}
-    \Delta U = N \Delta \bar{E_k} = \frac{3}{2}Nk_B\Delta T = \frac{3}{2} nR\Delta T
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \Delta U = N \Delta \bar&lbrace;E_k&rbrace; = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;Nk_B\Delta T = \frac&lbrace;3&rbrace;&lbrace;2&rbrace; nR\Delta T
+\end&lbrace;aligned&rbrace;
 $$
 
 ## Thermodynamic Processes
@@ -75,17 +75,17 @@ Adiabatic process is a thermodynamic process where there is no heat transfer ($Q
 system and surroundings:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     \Delta U = -W
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Where for monatomic ideal gas, adiabatic process satisfy the condition:
 
 $$
-\begin{aligned}
-    PV^{\frac{5}{3}} = \mathrm{constant}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    PV^&lbrace;\frac&lbrace;5&rbrace;&lbrace;3&rbrace;&rbrace; = \mathrm&lbrace;constant&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Isothermal Process
@@ -95,9 +95,9 @@ normally occurs when heat transfer cause a change in volume that the average kin
 particles does not increase:
 
 $$
-\begin{aligned}
-    \Delta \left(\frac{PV}{nR}\right) = 0
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \Delta \left(\frac&lbrace;PV&rbrace;&lbrace;nR&rbrace;\right) = 0
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Isovolumetric Process
@@ -107,10 +107,10 @@ since work done rely on the change of volume ($ W = P \Delta V$ = 0), heat trans
 result in the change of internal energy:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     \Delta U = Q - W = Q \\
-    \Delta \left(\frac{P}{nRT}\right) = 0
-\end{aligned}
+    \Delta \left(\frac&lbrace;P&rbrace;&lbrace;nRT&rbrace;\right) = 0
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Isobaric Process
@@ -118,9 +118,9 @@ $$
 Isobaric Process is a thermodynamic process that occurs at constant pressure ($\Delta P = 0$):
 
 $$
-\begin{aligned}
-    \Delta \left(\frac{V}{nRT}\right) = 0
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \Delta \left(\frac&lbrace;V&rbrace;&lbrace;nRT&rbrace;\right) = 0
+\end&lbrace;aligned&rbrace;
 $$
 
 ---
@@ -137,7 +137,7 @@ At constant temperature, the pressure of a fixed mass of gas is inversely propor
 volume:
 
 $$
-PV = \mathrm{constant} \quad \mathrm{or} \quad P_1 V_1 = P_2 V_2
+PV = \mathrm&lbrace;constant&rbrace; \quad \mathrm&lbrace;or&rbrace; \quad P_1 V_1 = P_2 V_2
 $$
 
 **Microscopic explanation:** At constant temperature, the average kinetic energy of molecules is
@@ -150,7 +150,7 @@ At constant pressure, the volume of a fixed mass of gas is directly proportional
 temperature:
 
 $$
-V \propto T \quad \mathrm{or} \quad \frac{V_1}{T_1} = \frac{V_2}{T_2}
+V \propto T \quad \mathrm&lbrace;or&rbrace; \quad \frac&lbrace;V_1&rbrace;&lbrace;T_1&rbrace; = \frac&lbrace;V_2&rbrace;&lbrace;T_2&rbrace;
 $$
 
 **Microscopic explanation:** Increasing temperature increases the average speed of molecules. To
@@ -163,7 +163,7 @@ At constant volume, the pressure of a fixed mass of gas is directly proportional
 temperature:
 
 $$
-P \propto T \quad \mathrm{or} \quad \frac{P_1}{T_1} = \frac{P_2}{T_2}
+P \propto T \quad \mathrm&lbrace;or&rbrace; \quad \frac&lbrace;P_1&rbrace;&lbrace;T_1&rbrace; = \frac&lbrace;P_2&rbrace;&lbrace;T_2&rbrace;
 $$
 
 **Microscopic explanation:** At constant volume, increasing temperature increases molecular speed.
@@ -174,7 +174,7 @@ Molecules collide with the walls more frequently and with greater force, increas
 When none of the variables are held constant:
 
 $$
-\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
+\frac&lbrace;P_1 V_1&rbrace;&lbrace;T_1&rbrace; = \frac&lbrace;P_2 V_2&rbrace;&lbrace;T_2&rbrace;
 $$
 
 This follows directly from the ideal gas law since $\frac{PV}{T} = nR = \mathrm{constant}$ for a
@@ -205,13 +205,13 @@ The time between collisions with the same wall is $\Delta t = 2L / v_x$.
 The average force exerted by one molecule on one wall:
 
 $$
-F = \frac{\Delta p}{\Delta t} = \frac{2mv_x}{2L/v_x} = \frac{mv_x^2}{L}
+F = \frac&lbrace;\Delta p&rbrace;&lbrace;\Delta t&rbrace; = \frac&lbrace;2mv_x&rbrace;&lbrace;2L/v_x&rbrace; = \frac&lbrace;mv_x^2&rbrace;&lbrace;L&rbrace;
 $$
 
 Summing over all $N$ molecules:
 
 $$
-F_{\mathrm{total}} = \frac{m}{L} \sum_{i=1}^{N} v_{x,i}^2 = \frac{m N \langle v_x^2 \rangle}{L}
+F_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = \frac&lbrace;m&rbrace;&lbrace;L&rbrace; \sum_&lbrace;i=1&rbrace;^&lbrace;N&rbrace; v_&lbrace;x,i&rbrace;^2 = \frac&lbrace;m N \langle v_x^2 \rangle&rbrace;&lbrace;L&rbrace;
 $$
 
 Since the motion is random,
@@ -220,11 +220,11 @@ $\langle v_x^2 \rangle = \langle v_y^2 \rangle = \langle v_z^2 \rangle = \frac{1
 The pressure on one wall:
 
 $$
-P = \frac{F}{A} = \frac{m N \langle v_x^2 \rangle}{L \cdot L^2} = \frac{m N \cdot \frac{1}{3}\langle v^2 \rangle}{V}
+P = \frac&lbrace;F&rbrace;&lbrace;A&rbrace; = \frac&lbrace;m N \langle v_x^2 \rangle&rbrace;&lbrace;L \cdot L^2&rbrace; = \frac&lbrace;m N \cdot \frac&lbrace;1&rbrace;&lbrace;3&rbrace;\langle v^2 \rangle&rbrace;&lbrace;V&rbrace;
 $$
 
 $$
-P = \frac{1}{3} \frac{N m \langle v^2 \rangle}{V} = \frac{1}{3} \rho \langle v^2 \rangle
+P = \frac&lbrace;1&rbrace;&lbrace;3&rbrace; \frac&lbrace;N m \langle v^2 \rangle&rbrace;&lbrace;V&rbrace; = \frac&lbrace;1&rbrace;&lbrace;3&rbrace; \rho \langle v^2 \rangle
 $$
 
 where $\rho = Nm/V$ is the density.
@@ -234,7 +234,7 @@ where $\rho = Nm/V$ is the density.
 The root-mean-square (rms) speed is defined as:
 
 $$
-v_{\mathrm{rms}} = \sqrt{\langle v^2 \rangle} = \sqrt{\frac{3k_B T}{m}} = \sqrt{\frac{3RT}{M}}
+v_&lbrace;\mathrm&lbrace;rms&rbrace;&rbrace; = \sqrt&lbrace;\langle v^2 \rangle&rbrace; = \sqrt&lbrace;\frac&lbrace;3k_B T&rbrace;&lbrace;m&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;3RT&rbrace;&lbrace;M&rbrace;&rbrace;
 $$
 
 where $M$ is the molar mass. Note that $v_{\mathrm{rms}}$ is **not** the average speed, but it is a
@@ -279,7 +279,7 @@ $80^\circ\mathrm{C}$. How much energy is required? ($c_{\mathrm{water}} = 4186$ 
 **Solution:**
 
 $$
-Q = mc\Delta T = (0.200)(4186)(80 - 20) = (0.200)(4186)(60) = 50232 \mathrm{ J} \approx 50.2 \mathrm{ kJ}
+Q = mc\Delta T = (0.200)(4186)(80 - 20) = (0.200)(4186)(60) = 50232 \mathrm&lbrace; J&rbrace; \approx 50.2 \mathrm&lbrace; kJ&rbrace;
 $$
 
 ---
@@ -328,34 +328,34 @@ $L_f = 3.34 \times 10^5$ J kg⁻¹, $L_v = 2.26 \times 10^6$ J kg⁻¹.
 1. Heat ice from $-20^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:
 
    $$
-   Q_1 = mc\Delta T = (0.500)(2090)(20) = 20900 \mathrm{ J}
+   Q_1 = mc\Delta T = (0.500)(2090)(20) = 20900 \mathrm&lbrace; J&rbrace;
    $$
 
 2. Melt ice at $0^\circ\mathrm{C}$:
 
    $$
-   Q_2 = mL_f = (0.500)(3.34 \times 10^5) = 167000 \mathrm{ J}
+   Q_2 = mL_f = (0.500)(3.34 \times 10^5) = 167000 \mathrm&lbrace; J&rbrace;
    $$
 
 3. Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
    $$
-   Q_3 = mc\Delta T = (0.500)(4186)(100) = 209300 \mathrm{ J}
+   Q_3 = mc\Delta T = (0.500)(4186)(100) = 209300 \mathrm&lbrace; J&rbrace;
    $$
 
 4. Vaporise water at $100^\circ\mathrm{C}$:
 
    $$
-   Q_4 = mL_v = (0.500)(2.26 \times 10^6) = 1130000 \mathrm{ J}
+   Q_4 = mL_v = (0.500)(2.26 \times 10^6) = 1130000 \mathrm&lbrace; J&rbrace;
    $$
 
 5. Heat steam from $100^\circ\mathrm{C}$ to $120^\circ\mathrm{C}$:
    $$
-   Q_5 = mc\Delta T = (0.500)(2010)(20) = 20100 \mathrm{ J}
+   Q_5 = mc\Delta T = (0.500)(2010)(20) = 20100 \mathrm&lbrace; J&rbrace;
    $$
 
 $$
-Q_{\mathrm{total}} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5 = 20900 + 167000 + 209300 + 1130000 + 20100 = 1547300 \mathrm{ J} \approx 1.55 \mathrm{ MJ}
+Q_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = Q_1 + Q_2 + Q_3 + Q_4 + Q_5 = 20900 + 167000 + 209300 + 1130000 + 20100 = 1547300 \mathrm&lbrace; J&rbrace; \approx 1.55 \mathrm&lbrace; MJ&rbrace;
 $$
 
 ---
@@ -368,7 +368,7 @@ system.
 ### Macroscopic Definition
 
 $$
-\Delta S = \frac{Q}{T}
+\Delta S = \frac&lbrace;Q&rbrace;&lbrace;T&rbrace;
 $$
 
 where $Q$ is the heat transferred reversibly and $T$ is the absolute temperature (K).
@@ -396,7 +396,7 @@ microstate is a specific arrangement of particles; a macrostate is defined by ma
 The total entropy of an isolated system never decreases:
 
 $$
-\Delta S_{\mathrm{total}} \geq 0
+\Delta S_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; \geq 0
 $$
 
 This means:
@@ -411,13 +411,13 @@ This means:
 For a heat engine operating between a hot reservoir at $T_h$ and a cold reservoir at $T_c$:
 
 $$
-\Delta S_{\mathrm{total}} = -\frac{Q_h}{T_h} + \frac{Q_c}{T_c} \geq 0
+\Delta S_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = -\frac&lbrace;Q_h&rbrace;&lbrace;T_h&rbrace; + \frac&lbrace;Q_c&rbrace;&lbrace;T_c&rbrace; \geq 0
 $$
 
 This leads to the Carnot efficiency limit:
 
 $$
-\eta_{\mathrm{Carnot}} = 1 - \frac{T_c}{T_h}
+\eta_&lbrace;\mathrm&lbrace;Carnot&rbrace;&rbrace; = 1 - \frac&lbrace;T_c&rbrace;&lbrace;T_h&rbrace;
 $$
 
 No real engine can exceed this efficiency.
@@ -453,13 +453,13 @@ J of heat is added to the gas. Find the change in internal energy.
 Work done by the gas:
 
 $$
-W = P\Delta V = (2.0 \times 10^5)(5.0 \times 10^{-3} - 2.0 \times 10^{-3}) = (2.0 \times 10^5)(3.0 \times 10^{-3}) = 600 \mathrm{ J}
+W = P\Delta V = (2.0 \times 10^5)(5.0 \times 10^&lbrace;-3&rbrace; - 2.0 \times 10^&lbrace;-3&rbrace;) = (2.0 \times 10^5)(3.0 \times 10^&lbrace;-3&rbrace;) = 600 \mathrm&lbrace; J&rbrace;
 $$
 
 Using the first law:
 
 $$
-\Delta U = Q - W = 1500 - 600 = 900 \mathrm{ J}
+\Delta U = Q - W = 1500 - 600 = 900 \mathrm&lbrace; J&rbrace;
 $$
 
 The internal energy increased by 900 J.
@@ -493,13 +493,13 @@ isovolumetrically to 400 K. What is the new pressure?
 **a) Volume:**
 
 $$
-V = \frac{nRT}{P} = \frac{(0.200)(8.31)(300)}{1.50 \times 10^5} = \frac{498.6}{1.50 \times 10^5} = 3.32 \times 10^{-3} \mathrm{ m}^3 = 3.32 \mathrm{ L}
+V = \frac&lbrace;nRT&rbrace;&lbrace;P&rbrace; = \frac&lbrace;(0.200)(8.31)(300)&rbrace;&lbrace;1.50 \times 10^5&rbrace; = \frac&lbrace;498.6&rbrace;&lbrace;1.50 \times 10^5&rbrace; = 3.32 \times 10^&lbrace;-3&rbrace; \mathrm&lbrace; m&rbrace;^3 = 3.32 \mathrm&lbrace; L&rbrace;
 $$
 
 **b) Isothermal compression to half volume:**
 
 $$
-P_1 V_1 = P_2 V_2 \implies P_2 = \frac{P_1 V_1}{V_2} = \frac{(1.50 \times 10^5)(3.32 \times 10^{-3})}{1.66 \times 10^{-3}} = 3.00 \times 10^5 \mathrm{ Pa}
+P_1 V_1 = P_2 V_2 \implies P_2 = \frac&lbrace;P_1 V_1&rbrace;&lbrace;V_2&rbrace; = \frac&lbrace;(1.50 \times 10^5)(3.32 \times 10^&lbrace;-3&rbrace;)&rbrace;&lbrace;1.66 \times 10^&lbrace;-3&rbrace;&rbrace; = 3.00 \times 10^5 \mathrm&lbrace; Pa&rbrace;
 $$
 
 The pressure doubles (Boyle's Law: halving the volume at constant temperature doubles the pressure).
@@ -507,7 +507,7 @@ The pressure doubles (Boyle's Law: halving the volume at constant temperature do
 **c) Isovolumetric heating to 400 K:**
 
 $$
-\frac{P_2}{T_2} = \frac{P_3}{T_3} \implies P_3 = \frac{P_2 T_3}{T_2} = \frac{(3.00 \times 10^5)(400)}{300} = 4.00 \times 10^5 \mathrm{ Pa}
+\frac&lbrace;P_2&rbrace;&lbrace;T_2&rbrace; = \frac&lbrace;P_3&rbrace;&lbrace;T_3&rbrace; \implies P_3 = \frac&lbrace;P_2 T_3&rbrace;&lbrace;T_2&rbrace; = \frac&lbrace;(3.00 \times 10^5)(400)&rbrace;&lbrace;300&rbrace; = 4.00 \times 10^5 \mathrm&lbrace; Pa&rbrace;
 $$
 
 ---
@@ -534,7 +534,7 @@ $$
 Work done by an ideal gas during isothermal expansion:
 
 $$
-W = nRT \ln\left(\frac{V_2}{V_1}\right) = (2.0)(8.31)(723)\ln\left(\frac{8.0 \times 10^{-3}}{4.0 \times 10^{-3}}\right) = 12016 \ln(2) = 12016 \times 0.693 = 8327 \mathrm{ J}
+W = nRT \ln\left(\frac&lbrace;V_2&rbrace;&lbrace;V_1&rbrace;\right) = (2.0)(8.31)(723)\ln\left(\frac&lbrace;8.0 \times 10^&lbrace;-3&rbrace;&rbrace;&lbrace;4.0 \times 10^&lbrace;-3&rbrace;&rbrace;\right) = 12016 \ln(2) = 12016 \times 0.693 = 8327 \mathrm&lbrace; J&rbrace;
 $$
 
 So $W = 8330$ J and $Q = 8330$ J (heat flows into the gas to maintain constant temperature during
@@ -545,27 +545,27 @@ expansion).
 For a monatomic ideal gas, $PV^{5/3} = \mathrm{constant}$.
 
 $$
-P_1 V_1^{5/3} = P_2 V_2^{5/3}
+P_1 V_1^&lbrace;5/3&rbrace; = P_2 V_2^&lbrace;5/3&rbrace;
 $$
 
 $$
-P_2 = P_1 \left(\frac{V_1}{V_2}\right)^{5/3} = (3.0 \times 10^5)\left(\frac{1}{2}\right)^{5/3} = (3.0 \times 10^5)(0.315) = 9.44 \times 10^4 \mathrm{ Pa}
+P_2 = P_1 \left(\frac&lbrace;V_1&rbrace;&lbrace;V_2&rbrace;\right)^&lbrace;5/3&rbrace; = (3.0 \times 10^5)\left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^&lbrace;5/3&rbrace; = (3.0 \times 10^5)(0.315) = 9.44 \times 10^4 \mathrm&lbrace; Pa&rbrace;
 $$
 
 Using the ideal gas law to find $T_2$:
 
 $$
-T_2 = \frac{P_2 V_2}{nR} = \frac{(9.44 \times 10^4)(8.0 \times 10^{-3})}{(2.0)(8.31)} = \frac{755}{16.62} = 45.4 \mathrm{ K}
+T_2 = \frac&lbrace;P_2 V_2&rbrace;&lbrace;nR&rbrace; = \frac&lbrace;(9.44 \times 10^4)(8.0 \times 10^&lbrace;-3&rbrace;)&rbrace;&lbrace;(2.0)(8.31)&rbrace; = \frac&lbrace;755&rbrace;&lbrace;16.62&rbrace; = 45.4 \mathrm&lbrace; K&rbrace;
 $$
 
 For an adiabatic process, $Q = 0$, so $W = -\Delta U$:
 
 $$
-\Delta U = \frac{3}{2}nR\Delta T = \frac{3}{2}(2.0)(8.31)(45.4 - 723) = (24.93)(-677.6) = -16890 \mathrm{ J}
+\Delta U = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;nR\Delta T = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;(2.0)(8.31)(45.4 - 723) = (24.93)(-677.6) = -16890 \mathrm&lbrace; J&rbrace;
 $$
 
 $$
-W = -\Delta U = 16890 \mathrm{ J}
+W = -\Delta U = 16890 \mathrm&lbrace; J&rbrace;
 $$
 
 **Comparison:** The adiabatic expansion does more work ($16890$ J vs $8330$ J) because the gas cools
@@ -583,7 +583,7 @@ The kinetic theory of gases provides the microscopic foundation for the macrosco
 The average translational kinetic energy of a molecule is:
 
 $$
-\bar{E_k} = \frac{3}{2}k_B T
+\bar&lbrace;E_k&rbrace; = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;k_B T
 $$
 
 This means temperature is a direct measure of the average kinetic energy of molecules. At absolute
@@ -595,14 +595,14 @@ For a monatomic ideal gas (e.g., helium, neon), molecules have only 3 translatio
 freedom. The internal energy is:
 
 $$
-U = \frac{3}{2}nRT
+U = \frac&lbrace;3&rbrace;&lbrace;2&rbrace;nRT
 $$
 
 For a diatomic ideal gas (e.g., $N_2$, $O_2$), molecules have 5 degrees of freedom at moderate
 temperatures (3 translational + 2 rotational). The internal energy is:
 
 $$
-U = \frac{5}{2}nRT
+U = \frac&lbrace;5&rbrace;&lbrace;2&rbrace;nRT
 $$
 
 This affects the molar specific heat capacity: $C_V = \frac{f}{2}R$ where $f$ is the number of
@@ -614,7 +614,7 @@ The Maxwell-Boltzmann distribution describes the distribution of molecular speed
 temperature $T$. The rms speed is:
 
 $$
-v_{\mathrm{rms}} = \sqrt{\frac{3k_B T}{m}} = \sqrt{\frac{3RT}{M}}
+v_&lbrace;\mathrm&lbrace;rms&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;3k_B T&rbrace;&lbrace;m&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;3RT&rbrace;&lbrace;M&rbrace;&rbrace;
 $$
 
 Lighter molecules move faster at the same temperature. For example, at 300 K:
@@ -634,20 +634,20 @@ gases (like hydrogen) escape from planetary atmospheres more easily than heavier
 **Heating at constant volume:**
 
 $$
-\Delta S = \int \frac{dQ}{T} = \int_{T_1}^{T_2} \frac{mc \, dT}{T} = mc\ln\left(\frac{T_2}{T_1}\right)
+\Delta S = \int \frac&lbrace;dQ&rbrace;&lbrace;T&rbrace; = \int_&lbrace;T_1&rbrace;^&lbrace;T_2&rbrace; \frac&lbrace;mc \, dT&rbrace;&lbrace;T&rbrace; = mc\ln\left(\frac&lbrace;T_2&rbrace;&lbrace;T_1&rbrace;\right)
 $$
 
 **Phase change at constant temperature:**
 
 $$
-\Delta S = \frac{Q}{T} = \frac{mL_f}{T_f} \quad \mathrm{(melting)} \quad \mathrm{or} \quad \Delta S = \frac{mL_v}{T_b} \quad \mathrm{(boiling)}
+\Delta S = \frac&lbrace;Q&rbrace;&lbrace;T&rbrace; = \frac&lbrace;mL_f&rbrace;&lbrace;T_f&rbrace; \quad \mathrm&lbrace;(melting)&rbrace; \quad \mathrm&lbrace;or&rbrace; \quad \Delta S = \frac&lbrace;mL_v&rbrace;&lbrace;T_b&rbrace; \quad \mathrm&lbrace;(boiling)&rbrace;
 $$
 
 **Free expansion of a gas:** When an ideal gas expands into a vacuum (no work done, no heat
 transferred), the entropy increases because the number of accessible microstates increases:
 
 $$
-\Delta S = nR\ln\left(\frac{V_2}{V_1}\right)
+\Delta S = nR\ln\left(\frac&lbrace;V_2&rbrace;&lbrace;V_1&rbrace;\right)
 $$
 
 ### Why Some Processes Are Irreversible

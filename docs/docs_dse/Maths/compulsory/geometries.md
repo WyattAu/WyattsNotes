@@ -27,9 +27,9 @@ The distance between two points $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$ is derived f
 by the horizontal and vertical differences:
 
 $$
-\begin{aligned}
-  d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  d = \sqrt&lbrace;(x_2 - x_1)^2 + (y_2 - y_1)^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -44,9 +44,9 @@ $$
 The midpoint $M$ of the line segment joining $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$ is:
 
 $$
-\begin{aligned}
-  M = \left( \frac{x_1 + x_2}{2},\; \frac{y_1 + y_2}{2} \right)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  M = \left( \frac&lbrace;x_1 + x_2&rbrace;&lbrace;2&rbrace;,\; \frac&lbrace;y_1 + y_2&rbrace;&lbrace;2&rbrace; \right)
+\end&lbrace;aligned&rbrace;
 $$
 
 The midpoint is the average of the respective coordinates of the two endpoints.
@@ -63,9 +63,9 @@ The gradient $m$ of the line passing through $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$
 $x_1 \neq x_2$, measures the rate of change of $y$ with respect to $x$:
 
 $$
-\begin{aligned}
-  m = \frac{y_2 - y_1}{x_2 - x_1} = \tan\theta
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  m = \frac&lbrace;y_2 - y_1&rbrace;&lbrace;x_2 - x_1&rbrace; = \tan\theta
+\end&lbrace;aligned&rbrace;
 $$
 
 where $\theta$ is the angle the line makes with the positive $x$-axis. A vertical line (where
@@ -90,9 +90,9 @@ If point $P(x, y)$ divides the line segment joining $A(x_1, y_1)$ and $B(x_2, y_
 $m : n$ (internally), then:
 
 $$
-\begin{aligned}
-  x = \frac{mx_2 + nx_1}{m + n}, \qquad y = \frac{my_2 + ny_1}{m + n}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  x = \frac&lbrace;mx_2 + nx_1&rbrace;&lbrace;m + n&rbrace;, \qquad y = \frac&lbrace;my_2 + ny_1&rbrace;&lbrace;m + n&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The midpoint formula is the special case where $m = n = 1$.
@@ -104,9 +104,9 @@ A straight line in the Cartesian plane can be expressed in several equivalent fo
 ### Slope-Intercept Form
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   y = mx + c
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 where $m$ is the gradient and $c$ is the $y$-intercept. This form is most useful when the gradient
@@ -117,9 +117,9 @@ and $y$-intercept are known or can be easily determined.
 Given a point $(x_1, y_1)$ on the line and the gradient $m$:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   y - y_1 = m(x - x_1)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 This is the most versatile form for deriving the equation of a line from partial information.
@@ -129,9 +129,9 @@ This is the most versatile form for deriving the equation of a line from partial
 Given two distinct points $(x_1, y_1)$ and $(x_2, y_2)$ on the line:
 
 $$
-\begin{aligned}
-  \frac{y - y_1}{x - x_1} = \frac{y_2 - y_1}{x_2 - x_1}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \frac&lbrace;y - y_1&rbrace;&lbrace;x - x_1&rbrace; = \frac&lbrace;y_2 - y_1&rbrace;&lbrace;x_2 - x_1&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Intercept Form
@@ -139,9 +139,9 @@ $$
 If the line has $x$-intercept $a$ and $y$-intercept $b$ (both non-zero):
 
 $$
-\begin{aligned}
-  \frac{x}{a} + \frac{y}{b} = 1
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \frac&lbrace;x&rbrace;&lbrace;a&rbrace; + \frac&lbrace;y&rbrace;&lbrace;b&rbrace; = 1
+\end&lbrace;aligned&rbrace;
 $$
 
 ### General Form
@@ -149,9 +149,9 @@ $$
 Every straight line can be written in the general form:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   Ax + By + C = 0
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 where $A$, $B$, $C$ are constants and $A$ and $B$ are not both zero. The gradient is
@@ -172,18 +172,18 @@ Two non-vertical lines with gradients $m_1$ and $m_2$ are parallel if and only i
 are equal:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   m_1 = m_2
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 In the general form $Ax + By + C = 0$, two lines $A_1x + B_1y + C_1 = 0$ and $A_2x + B_2y + C_2 = 0$
 are parallel if and only if:
 
 $$
-\begin{aligned}
-  \frac{A_1}{A_2} = \frac{B_1}{B_2} \neq \frac{C_1}{C_2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \frac&lbrace;A_1&rbrace;&lbrace;A_2&rbrace; = \frac&lbrace;B_1&rbrace;&lbrace;B_2&rbrace; \neq \frac&lbrace;C_1&rbrace;&lbrace;C_2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 If all three ratios are equal, the lines are coincident (the same line).
@@ -194,17 +194,17 @@ Two non-vertical lines with gradients $m_1$ and $m_2$ are perpendicular if and o
 of their gradients equals $-1$:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   m_1 \cdot m_2 = -1
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 In the general form, two lines are perpendicular if and only if:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   A_1 A_2 + B_1 B_2 = 0
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -232,33 +232,33 @@ the intersection satisfy both equations.
 A circle with centre $C(a, b)$ and radius $r$ has equation:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   (x - a)^2 + (y - b)^2 = r^2
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Expanding this yields the general form:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   x^2 + y^2 - 2ax - 2by + (a^2 + b^2 - r^2) = 0
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 ### General Form of the Equation of a Circle
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   x^2 + y^2 + Dx + Ey + F = 0
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 where the centre is $\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and the radius is:
 
 $$
-\begin{aligned}
-  r = \sqrt{\left(\frac{D}{2}\right)^2 + \left(\frac{E}{2}\right)^2 - F}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  r = \sqrt&lbrace;\left(\frac&lbrace;D&rbrace;&lbrace;2&rbrace;\right)^2 + \left(\frac&lbrace;E&rbrace;&lbrace;2&rbrace;\right)^2 - F&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 For a real circle to exist, we require
@@ -299,34 +299,34 @@ A tangent to a circle at a point $P(x_1, y_1)$ on the circle $(x-a)^2 + (y-b)^2 
 perpendicular to the radius at $P$. The gradient of the radius $CP$ (where $C$ is the centre) is:
 
 $$
-\begin{aligned}
-  m_{\mathrm{radius}} = \frac{y_1 - b}{x_1 - a}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  m_&lbrace;\mathrm&lbrace;radius&rbrace;&rbrace; = \frac&lbrace;y_1 - b&rbrace;&lbrace;x_1 - a&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Therefore the gradient of the tangent is:
 
 $$
-\begin{aligned}
-  m_{\mathrm{tangent}} = -\frac{x_1 - a}{y_1 - b} \quad (y_1 \neq b)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  m_&lbrace;\mathrm&lbrace;tangent&rbrace;&rbrace; = -\frac&lbrace;x_1 - a&rbrace;&lbrace;y_1 - b&rbrace; \quad (y_1 \neq b)
+\end&lbrace;aligned&rbrace;
 $$
 
 The equation of the tangent at $P(x_1, y_1)$ on the circle $x^2 + y^2 + Dx + Ey + F = 0$ can be
 obtained by replacing:
 
 $$
-\begin{aligned}
-  x^2 \to xx_1, \quad y^2 \to yy_1, \quad x \to \frac{x + x_1}{2}, \quad y \to \frac{y + y_1}{2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  x^2 \to xx_1, \quad y^2 \to yy_1, \quad x \to \frac&lbrace;x + x_1&rbrace;&lbrace;2&rbrace;, \quad y \to \frac&lbrace;y + y_1&rbrace;&lbrace;2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 This gives:
 
 $$
-\begin{aligned}
-  xx_1 + yy_1 + \frac{D(x + x_1)}{2} + \frac{E(y + y_1)}{2} + F = 0
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  xx_1 + yy_1 + \frac&lbrace;D(x + x_1)&rbrace;&lbrace;2&rbrace; + \frac&lbrace;E(y + y_1)&rbrace;&lbrace;2&rbrace; + F = 0
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -342,26 +342,26 @@ $$
 For a triangle with base $b$ and height $h$:
 
 $$
-\begin{aligned}
-  \mathrm{Area} &= \frac{1}{2}bh
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Area&rbrace; &= \frac&lbrace;1&rbrace;&lbrace;2&rbrace;bh
+\end&lbrace;aligned&rbrace;
 $$
 
 Using the [Heron's formula](./trigonometry.md) for a triangle with side lengths $a$, $b$, $c$ and
 semi-perimeter $s = \frac{a+b+c}{2}$:
 
 $$
-\begin{aligned}
-  \mathrm{Area} = \sqrt{s(s-a)(s-b)(s-c)}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Area&rbrace; = \sqrt&lbrace;s(s-a)(s-b)(s-c)&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The area of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$ is given by:
 
 $$
-\begin{aligned}
-  \mathrm{Area} = \frac{1}{2}\left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Area&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Quadrilaterals
@@ -377,10 +377,10 @@ $$
 ### Circles
 
 $$
-\begin{aligned}
-  \mathrm{Circumference} &= 2\pi r = \pi d \\
-  \mathrm{Area} &= \pi r^2
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Circumference&rbrace; &= 2\pi r = \pi d \\
+  \mathrm&lbrace;Area&rbrace; &= \pi r^2
+\end&lbrace;aligned&rbrace;
 $$
 
 where $r$ is the radius and $d = 2r$ is the diameter.
@@ -390,10 +390,10 @@ where $r$ is the radius and $d = 2r$ is the diameter.
 For an arc subtending an angle $\theta$ (in radians) at the centre of a circle of radius $r$:
 
 $$
-\begin{aligned}
-  \mathrm{Arc length} &= l = r\theta \\
-  \mathrm{Area of sector} &= A = \frac{1}{2}r^2\theta
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Arc length&rbrace; &= l = r\theta \\
+  \mathrm&lbrace;Area of sector&rbrace; &= A = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;r^2\theta
+\end&lbrace;aligned&rbrace;
 $$
 
 When the angle is given in degrees ($\theta^\circ$), first convert to radians:
@@ -402,9 +402,9 @@ $\theta = \theta^\circ \times \frac{\pi}{180}$.
 The area of a segment (the region between a chord and the corresponding arc) is:
 
 $$
-\begin{aligned}
-  \mathrm{Area of segment} = \frac{1}{2}r^2(\theta - \sin\theta)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \mathrm&lbrace;Area of segment&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;r^2(\theta - \sin\theta)
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -427,17 +427,17 @@ into eight octants.
 The distance between two points $P_1(x_1, y_1, z_1)$ and $P_2(x_2, y_2, z_2)$ in 3D space is:
 
 $$
-\begin{aligned}
-  d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  d = \sqrt&lbrace;(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The midpoint of the segment $P_1P_2$ is:
 
 $$
-\begin{aligned}
-  M = \left( \frac{x_1 + x_2}{2},\; \frac{y_1 + y_2}{2},\; \frac{z_1 + z_2}{2} \right)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  M = \left( \frac&lbrace;x_1 + x_2&rbrace;&lbrace;2&rbrace;,\; \frac&lbrace;y_1 + y_2&rbrace;&lbrace;2&rbrace;,\; \frac&lbrace;z_1 + z_2&rbrace;&lbrace;2&rbrace; \right)
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -451,9 +451,9 @@ $$
 The general equation of a plane in 3D is:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   Ax + By + Cz + D = 0
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 where the vector $\mathbf{n} = (A, B, C)$ is a normal vector to the plane. The plane can also be
@@ -463,18 +463,18 @@ described in several forms:
   $\mathbf{n} = (A, B, C)$:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   A(x - x_0) + B(y - y_0) + C(z - z_0) = 0
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 - **Intercept form**: If the plane has $x$-intercept $a$, $y$-intercept $b$, and $z$-intercept $c$
   (all non-zero):
 
 $$
-\begin{aligned}
-  \frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \frac&lbrace;x&rbrace;&lbrace;a&rbrace; + \frac&lbrace;y&rbrace;&lbrace;b&rbrace; + \frac&lbrace;z&rbrace;&lbrace;c&rbrace; = 1
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Angles Between Lines and Planes
@@ -486,9 +486,9 @@ normal $\mathbf{n} = (A, B, C)$ is defined as the complement of the angle betwee
 $\mathbf{n}$:
 
 $$
-\begin{aligned}
-  \sin\phi = \frac{|Al + Bm + Cn|}{\sqrt{A^2 + B^2 + C^2}\sqrt{l^2 + m^2 + n^2}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \sin\phi = \frac&lbrace;|Al + Bm + Cn|&rbrace;&lbrace;\sqrt&lbrace;A^2 + B^2 + C^2&rbrace;\sqrt&lbrace;l^2 + m^2 + n^2&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 #### Angle Between Two Planes
@@ -497,9 +497,9 @@ The angle $\theta$ between two planes with normals $\mathbf{n_1} = (A_1, B_1, C_
 $\mathbf{n_2} = (A_2, B_2, C_2)$ is:
 
 $$
-\begin{aligned}
-  \cos\theta = \frac{|A_1 A_2 + B_1 B_2 + C_1 C_2|}{\sqrt{A_1^2 + B_1^2 + C_1^2}\sqrt{A_2^2 + B_2^2 + C_2^2}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \cos\theta = \frac&lbrace;|A_1 A_2 + B_1 B_2 + C_1 C_2|&rbrace;&lbrace;\sqrt&lbrace;A_1^2 + B_1^2 + C_1^2&rbrace;\sqrt&lbrace;A_2^2 + B_2^2 + C_2^2&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 #### Angle Between Two Lines in 3D
@@ -508,9 +508,9 @@ For two lines with direction vectors $\mathbf{d_1} = (l_1, m_1, n_1)$ and
 $\mathbf{d_2} = (l_2, m_2, n_2)$:
 
 $$
-\begin{aligned}
-  \cos\theta = \frac{|l_1 l_2 + m_1 m_2 + n_1 n_2|}{\sqrt{l_1^2 + m_1^2 + n_1^2}\sqrt{l_2^2 + m_2^2 + n_2^2}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \cos\theta = \frac&lbrace;|l_1 l_2 + m_1 m_2 + n_1 n_2|&rbrace;&lbrace;\sqrt&lbrace;l_1^2 + m_1^2 + n_1^2&rbrace;\sqrt&lbrace;l_2^2 + m_2^2 + n_2^2&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 #### Distance from a Point to a Plane
@@ -518,9 +518,9 @@ $$
 The perpendicular distance from point $P(x_0, y_0, z_0)$ to the plane $Ax + By + Cz + D = 0$ is:
 
 $$
-\begin{aligned}
-  d = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  d = \frac&lbrace;|Ax_0 + By_0 + Cz_0 + D|&rbrace;&lbrace;\sqrt&lbrace;A^2 + B^2 + C^2&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>

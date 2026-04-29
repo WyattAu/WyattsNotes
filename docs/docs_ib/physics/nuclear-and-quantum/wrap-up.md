@@ -174,25 +174,25 @@ conditions.
 **Alpha decay:** The nucleus emits a helium-4 nucleus (2 protons + 2 neutrons).
 
 $$
-{}^{A}_{Z}\mathrm{X} \rightarrow {}^{A-4}_{Z-2}\mathrm{Y} + {}^4_2\mathrm{He}
+&lbrace;&rbrace;^&lbrace;A&rbrace;_&lbrace;Z&rbrace;\mathrm&lbrace;X&rbrace; \rightarrow &lbrace;&rbrace;^&lbrace;A-4&rbrace;_&lbrace;Z-2&rbrace;\mathrm&lbrace;Y&rbrace; + &lbrace;&rbrace;^4_2\mathrm&lbrace;He&rbrace;
 $$
 
 **Beta-minus decay:** A neutron converts to a proton, emitting an electron and an antineutrino.
 
 $$
-{}^{A}_{Z}\mathrm{X} \rightarrow {}^{A}_{Z+1}\mathrm{Y} + {}^0_{-1}\mathrm{e} + \bar{\nu}_e
+&lbrace;&rbrace;^&lbrace;A&rbrace;_&lbrace;Z&rbrace;\mathrm&lbrace;X&rbrace; \rightarrow &lbrace;&rbrace;^&lbrace;A&rbrace;_&lbrace;Z+1&rbrace;\mathrm&lbrace;Y&rbrace; + &lbrace;&rbrace;^0_&lbrace;-1&rbrace;\mathrm&lbrace;e&rbrace; + \bar&lbrace;\nu&rbrace;_e
 $$
 
 **Beta-plus decay:** A proton converts to a neutron, emitting a positron and a neutrino.
 
 $$
-{}^{A}_{Z}\mathrm{X} \rightarrow {}^{A}_{Z-1}\mathrm{Y} + {}^0_{+1}\mathrm{e} + \nu_e
+&lbrace;&rbrace;^&lbrace;A&rbrace;_&lbrace;Z&rbrace;\mathrm&lbrace;X&rbrace; \rightarrow &lbrace;&rbrace;^&lbrace;A&rbrace;_&lbrace;Z-1&rbrace;\mathrm&lbrace;Y&rbrace; + &lbrace;&rbrace;^0_&lbrace;+1&rbrace;\mathrm&lbrace;e&rbrace; + \nu_e
 $$
 
 **Gamma emission:** An excited nucleus releases energy as a photon. No change in A or Z.
 
 $$
-{}^{A}_{Z}\mathrm{X}^* \rightarrow {}^{A}_{Z}\mathrm{X} + \gamma
+&lbrace;&rbrace;^&lbrace;A&rbrace;_&lbrace;Z&rbrace;\mathrm&lbrace;X&rbrace;^* \rightarrow &lbrace;&rbrace;^&lbrace;A&rbrace;_&lbrace;Z&rbrace;\mathrm&lbrace;X&rbrace; + \gamma
 $$
 
 ---
@@ -207,7 +207,7 @@ constant for a particular isotope and is independent of the initial quantity.
 After $n$ half-lives, the fraction remaining is:
 
 $$
-\frac{N}{N_0} = \left(\frac{1}{2}\right)^n
+\frac&lbrace;N&rbrace;&lbrace;N_0&rbrace; = \left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^n
 $$
 
 | Half-lives elapsed | Fraction remaining | Percentage remaining |
@@ -234,17 +234,17 @@ where $\lambda$ is the decay constant and $N$ is the number of undecayed nuclei.
 The number of undecayed nuclei decreases exponentially:
 
 $$
-N = N_0 e^{-\lambda t}
+N = N_0 e^&lbrace;-\lambda t&rbrace;
 $$
 
 $$
-A = A_0 e^{-\lambda t}
+A = A_0 e^&lbrace;-\lambda t&rbrace;
 $$
 
 The relationship between half-life and decay constant:
 
 $$
-T_{1/2} = \frac{\ln 2}{\lambda}
+T_&lbrace;1/2&rbrace; = \frac&lbrace;\ln 2&rbrace;&lbrace;\lambda&rbrace;
 $$
 
 ### Worked Example: Radioactive Decay
@@ -257,21 +257,21 @@ What is its activity after 30 days?
 Method 1 (using the decay law):
 
 $$
-\lambda = \frac{\ln 2}{T_{1/2}} = \frac{0.693}{8.04} = 0.0862 \mathrm{ days}^{-1}
+\lambda = \frac&lbrace;\ln 2&rbrace;&lbrace;T_&lbrace;1/2&rbrace;&rbrace; = \frac&lbrace;0.693&rbrace;&lbrace;8.04&rbrace; = 0.0862 \mathrm&lbrace; days&rbrace;^&lbrace;-1&rbrace;
 $$
 
 $$
-A = A_0 e^{-\lambda t} = 400 \times e^{-(0.0862)(30)} = 400 \times e^{-2.586} = 400 \times 0.0752 = 30.1 \mathrm{ Bq}
+A = A_0 e^&lbrace;-\lambda t&rbrace; = 400 \times e^&lbrace;-(0.0862)(30)&rbrace; = 400 \times e^&lbrace;-2.586&rbrace; = 400 \times 0.0752 = 30.1 \mathrm&lbrace; Bq&rbrace;
 $$
 
 Method 2 (using half-lives):
 
 $$
-n = \frac{30}{8.04} = 3.73 \mathrm{ half-lives}
+n = \frac&lbrace;30&rbrace;&lbrace;8.04&rbrace; = 3.73 \mathrm&lbrace; half-lives&rbrace;
 $$
 
 $$
-A = 400 \times \left(\frac{1}{2}\right)^{3.73} = 400 \times 0.0752 = 30.1 \mathrm{ Bq}
+A = 400 \times \left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^&lbrace;3.73&rbrace; = 400 \times 0.0752 = 30.1 \mathrm&lbrace; Bq&rbrace;
 $$
 
 ---
@@ -284,7 +284,7 @@ The mass defect ($\Delta m$) is the difference between the mass of a nucleus and
 masses of its constituent nucleons (protons and neutrons):
 
 $$
-\Delta m = Zm_p + (A-Z)m_n - m_{\mathrm{nucleus}}
+\Delta m = Zm_p + (A-Z)m_n - m_&lbrace;\mathrm&lbrace;nucleus&rbrace;&rbrace;
 $$
 
 The mass defect arises because energy is released when nucleons bind together. By $E = mc^2$, this
@@ -302,7 +302,7 @@ $$
 **Binding energy per nucleon** is a more useful measure for comparing nuclei:
 
 $$
-\frac{E_b}{A} = \frac{\Delta m \cdot c^2}{A}
+\frac&lbrace;E_b&rbrace;&lbrace;A&rbrace; = \frac&lbrace;\Delta m \cdot c^2&rbrace;&lbrace;A&rbrace;
 $$
 
 - Iron-56 (${}^{56}_{26}\mathrm{Fe}$) has the highest binding energy per nucleon (~8.8 MeV/nucleon),
@@ -318,15 +318,15 @@ $m_n = 1.00867$ u, $m_{\mathrm{He-4}} = 4.00150$ u, $1 \mathrm{ u} = 931.5$ MeV/
 **Solution:**
 
 $$
-\Delta m = 2m_p + 2m_n - m_{\mathrm{He-4}} = 2(1.00728) + 2(1.00867) - 4.00150 = 2.01456 + 2.01734 - 4.00150 = 0.03040 \mathrm{ u}
+\Delta m = 2m_p + 2m_n - m_&lbrace;\mathrm&lbrace;He-4&rbrace;&rbrace; = 2(1.00728) + 2(1.00867) - 4.00150 = 2.01456 + 2.01734 - 4.00150 = 0.03040 \mathrm&lbrace; u&rbrace;
 $$
 
 $$
-E_b = \Delta m \cdot c^2 = 0.03040 \times 931.5 = 28.3 \mathrm{ MeV}
+E_b = \Delta m \cdot c^2 = 0.03040 \times 931.5 = 28.3 \mathrm&lbrace; MeV&rbrace;
 $$
 
 $$
-\frac{E_b}{A} = \frac{28.3}{4} = 7.08 \mathrm{ MeV/nucleon}
+\frac&lbrace;E_b&rbrace;&lbrace;A&rbrace; = \frac&lbrace;28.3&rbrace;&lbrace;4&rbrace; = 7.08 \mathrm&lbrace; MeV/nucleon&rbrace;
 $$
 
 ### Fission vs Fusion
@@ -361,7 +361,7 @@ frequency is incident upon it. It provided key evidence for the particle nature 
 ### Einstein's Photoelectric Equation
 
 $$
-E_{k,\mathrm{max}} = hf - \Phi
+E_&lbrace;k,\mathrm&lbrace;max&rbrace;&rbrace; = hf - \Phi
 $$
 
 where:
@@ -405,7 +405,7 @@ Niels Bohr proposed that electrons in hydrogen atoms occupy discrete energy leve
 quantised energies:
 
 $$
-E_n = -\frac{13.6}{n^2} \mathrm{ eV}
+E_n = -\frac&lbrace;13.6&rbrace;&lbrace;n^2&rbrace; \mathrm&lbrace; eV&rbrace;
 $$
 
 where $n = 1, 2, 3, ...$ is the principal quantum number.
@@ -419,7 +419,7 @@ where $n = 1, 2, 3, ...$ is the principal quantum number.
 When an electron transitions between energy levels, a photon is emitted or absorbed:
 
 $$
-\Delta E = E_{\mathrm{higher}} - E_{\mathrm{lower}} = hf = \frac{hc}{\lambda}
+\Delta E = E_&lbrace;\mathrm&lbrace;higher&rbrace;&rbrace; - E_&lbrace;\mathrm&lbrace;lower&rbrace;&rbrace; = hf = \frac&lbrace;hc&rbrace;&lbrace;\lambda&rbrace;
 $$
 
 - **Emission:** Electron drops from a higher level to a lower level; a photon is released.
@@ -444,13 +444,13 @@ wavelength of the emitted photon?
 **Solution:**
 
 $$
-\Delta E = E_4 - E_2 = \left(-\frac{13.6}{16}\right) - \left(-\frac{13.6}{4}\right) = -0.85 - (-3.40) = 2.55 \mathrm{ eV}
+\Delta E = E_4 - E_2 = \left(-\frac&lbrace;13.6&rbrace;&lbrace;16&rbrace;\right) - \left(-\frac&lbrace;13.6&rbrace;&lbrace;4&rbrace;\right) = -0.85 - (-3.40) = 2.55 \mathrm&lbrace; eV&rbrace;
 $$
 
 Convert to joules: $\Delta E = 2.55 \times 1.60 \times 10^{-19} = 4.08 \times 10^{-19}$ J.
 
 $$
-\lambda = \frac{hc}{\Delta E} = \frac{(6.63 \times 10^{-34})(3.0 \times 10^8)}{4.08 \times 10^{-19}} = 4.87 \times 10^{-7} \mathrm{ m} = 487 \mathrm{ nm}
+\lambda = \frac&lbrace;hc&rbrace;&lbrace;\Delta E&rbrace; = \frac&lbrace;(6.63 \times 10^&lbrace;-34&rbrace;)(3.0 \times 10^8)&rbrace;&lbrace;4.08 \times 10^&lbrace;-19&rbrace;&rbrace; = 4.87 \times 10^&lbrace;-7&rbrace; \mathrm&lbrace; m&rbrace; = 487 \mathrm&lbrace; nm&rbrace;
 $$
 
 This is in the visible (blue-green) region — it is the $H_\beta$ line of the Balmer series.
@@ -465,7 +465,7 @@ Louis de Broglie proposed that all matter exhibits wave-like properties. The de 
 is:
 
 $$
-\lambda = \frac{h}{p} = \frac{h}{mv}
+\lambda = \frac&lbrace;h&rbrace;&lbrace;p&rbrace; = \frac&lbrace;h&rbrace;&lbrace;mv&rbrace;
 $$
 
 where $p$ is the momentum of the particle.
@@ -475,7 +475,7 @@ an electron orbit is stable only when a whole number of wavelengths fits around 
 wave condition):
 
 $$
-n\lambda = 2\pi r \quad \Rightarrow \quad n\frac{h}{mv} = 2\pi r \quad \Rightarrow \quad mvr = \frac{nh}{2\pi}
+n\lambda = 2\pi r \quad \Rightarrow \quad n\frac&lbrace;h&rbrace;&lbrace;mv&rbrace; = 2\pi r \quad \Rightarrow \quad mvr = \frac&lbrace;nh&rbrace;&lbrace;2\pi&rbrace;
 $$
 
 This is precisely Bohr's quantisation condition for angular momentum.
@@ -490,11 +490,11 @@ difference of 50 V?
 The kinetic energy gained: $eV = \frac{1}{2}mv^2$.
 
 $$
-v = \sqrt{\frac{2eV}{m_e}} = \sqrt{\frac{2(1.60 \times 10^{-19})(50)}{9.11 \times 10^{-31}}} = \sqrt{1.76 \times 10^{13}} = 4.19 \times 10^6 \mathrm{ m/s}
+v = \sqrt&lbrace;\frac&lbrace;2eV&rbrace;&lbrace;m_e&rbrace;&rbrace; = \sqrt&lbrace;\frac&lbrace;2(1.60 \times 10^&lbrace;-19&rbrace;)(50)&rbrace;&lbrace;9.11 \times 10^&lbrace;-31&rbrace;&rbrace;&rbrace; = \sqrt&lbrace;1.76 \times 10^&lbrace;13&rbrace;&rbrace; = 4.19 \times 10^6 \mathrm&lbrace; m/s&rbrace;
 $$
 
 $$
-\lambda = \frac{h}{m_e v} = \frac{6.63 \times 10^{-34}}{(9.11 \times 10^{-31})(4.19 \times 10^6)} = 1.74 \times 10^{-10} \mathrm{ m} = 0.174 \mathrm{ nm}
+\lambda = \frac&lbrace;h&rbrace;&lbrace;m_e v&rbrace; = \frac&lbrace;6.63 \times 10^&lbrace;-34&rbrace;&rbrace;&lbrace;(9.11 \times 10^&lbrace;-31&rbrace;)(4.19 \times 10^6)&rbrace; = 1.74 \times 10^&lbrace;-10&rbrace; \mathrm&lbrace; m&rbrace; = 0.174 \mathrm&lbrace; nm&rbrace;
 $$
 
 This is comparable to the spacing between atoms in a crystal lattice, which is why electron

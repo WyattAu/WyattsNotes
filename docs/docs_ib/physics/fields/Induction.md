@@ -13,9 +13,9 @@ Magnetic flux ($\Phi_B$) is quantity of magnetic field ($\bm{B}$) passing throug
 perpendicular to the local area ($d\bm{A}$) of the surface:
 
 $$
-\begin{aligned}
-    \bm{\Phi_B} = \int_S \bm{B} \cdot d\bm{A}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \bm&lbrace;\Phi_B&rbrace; = \int_S \bm&lbrace;B&rbrace; \cdot d\bm&lbrace;A&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Magnetic Flux in Uniform Magnetic Field
@@ -25,10 +25,10 @@ field ($\bm{B}$) is a space invariant, where if the surface also have no curvatu
 plane), then the magnetic flux can be expressed with the area ($\bm{A}$) of the plane:
 
 $$
-\begin{aligned}
-    {\Phi_B} &= \bm{B} \cdot \bm{A} = |\bm{B}||\bm{A}|\cos\theta\\
+\begin&lbrace;aligned&rbrace;
+    &lbrace;\Phi_B&rbrace; &= \bm&lbrace;B&rbrace; \cdot \bm&lbrace;A&rbrace; = |\bm&lbrace;B&rbrace;||\bm&lbrace;A&rbrace;|\cos\theta\\
     \Phi_B &= BA \cos \theta
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 where $\theta$ is the angular displacement between the normal vector of the plane and the direction
@@ -50,10 +50,10 @@ Faraday's law of induction states that the electromotive force ($\epsilon$) is e
 (according to Lenz's Law) rate of change of magnetic flux with time:
 
 $$
-\begin{aligned}
-    \epsilon = -\frac{d\Phi_B}{dt}
-    \epsilon = -\frac{\Delta \Phi_B}{\Delta t}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \epsilon = -\frac&lbrace;d\Phi_B&rbrace;&lbrace;dt&rbrace;
+    \epsilon = -\frac&lbrace;\Delta \Phi_B&rbrace;&lbrace;\Delta t&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Electromotive force (EMF) had been given a misleading name, where EMF refers to the energy transfer
@@ -61,7 +61,7 @@ to an electric circuit per unit charge, and is not a force. EMF of a coil can be
 number of turns:
 
 $$
-    \epsilon = -N\frac{\Delta \Phi_B}{\Delta t}
+    \epsilon = -N\frac&lbrace;\Delta \Phi_B&rbrace;&lbrace;\Delta t&rbrace;
 $$
 
 :::info One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
@@ -104,9 +104,9 @@ Consider a conducting rod of length $l$ moving at velocity $v$ perpendicular to 
 - By Faraday's law:
 
 $$
-\begin{aligned}
-    \epsilon = -\frac{\Delta \Phi_B}{\Delta t} = -\frac{Blv\Delta t}{\Delta t} = -Blv
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+    \epsilon = -\frac&lbrace;\Delta \Phi_B&rbrace;&lbrace;\Delta t&rbrace; = -\frac&lbrace;Blv\Delta t&rbrace;&lbrace;\Delta t&rbrace; = -Blv
+\end&lbrace;aligned&rbrace;
 $$
 
 Taking the magnitude:
@@ -129,7 +129,7 @@ magnetic field of $0.2\mathrm{ T}$. Calculate the induced EMF.
 **Solution:**
 
 $$
-\epsilon = Blv = (0.2)(0.5)(3.0) = 0.3\mathrm{ V}
+\epsilon = Blv = (0.2)(0.5)(3.0) = 0.3\mathrm&lbrace; V&rbrace;
 $$
 
 ### Worked Example 2: EMF in a Rotating Coil
@@ -140,11 +140,11 @@ $50\mathrm{ Hz}$ in a magnetic field of $0.5\mathrm{ T}$. Calculate the peak EMF
 **Solution:**
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
     \epsilon_0 &= NAB\omega = NAB \cdot 2\pi f\\
     \epsilon_0 &= (200)(0.01)(0.5)(2\pi \times 50)\\
-    \epsilon_0 &= 314\mathrm{ V}
-\end{aligned}
+    \epsilon_0 &= 314\mathrm&lbrace; V&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ## AC Generation
@@ -163,10 +163,10 @@ where $\omega$ is the angular velocity of rotation.
 ### Induced EMF
 
 $$
-\begin{aligned}
-    \epsilon &= -N\frac{d\Phi_B}{dt} = -N\frac{d}{dt}\left[BA\cos(\omega t)\right]\\
+\begin&lbrace;aligned&rbrace;
+    \epsilon &= -N\frac&lbrace;d\Phi_B&rbrace;&lbrace;dt&rbrace; = -N\frac&lbrace;d&rbrace;&lbrace;dt&rbrace;\left[BA\cos(\omega t)\right]\\
     \epsilon &= NBA\omega \sin(\omega t)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 The peak EMF is:
@@ -197,7 +197,7 @@ secondary coil wound around a common iron core.
 For an ideal transformer (no energy losses):
 
 $$
-\frac{V_s}{V_p} = \frac{N_s}{N_p}
+\frac&lbrace;V_s&rbrace;&lbrace;V_p&rbrace; = \frac&lbrace;N_s&rbrace;&lbrace;N_p&rbrace;
 $$
 
 where $V_p$ and $V_s$ are the primary and secondary voltages, and $N_p$ and $N_s$ are the number of
@@ -217,7 +217,7 @@ $$
 Therefore:
 
 $$
-\frac{I_s}{I_p} = \frac{N_p}{N_s}
+\frac&lbrace;I_s&rbrace;&lbrace;I_p&rbrace; = \frac&lbrace;N_p&rbrace;&lbrace;N_s&rbrace;
 $$
 
 A step-up transformer increases voltage but decreases current, and vice versa.
@@ -239,7 +239,7 @@ Real transformers have losses due to:
 Efficiency:
 
 $$
-\eta = \frac{V_s I_s}{V_p I_p} \times 100\%
+\eta = \frac&lbrace;V_s I_s&rbrace;&lbrace;V_p I_p&rbrace; \times 100\%
 $$
 
 ### Worked Example 3: Transformer
@@ -251,11 +251,11 @@ Calculate the secondary voltage and current (assuming ideal).
 **Solution:**
 
 $$
-\frac{V_s}{V_p} = \frac{N_s}{N_p} \implies V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12\mathrm{ V}
+\frac&lbrace;V_s&rbrace;&lbrace;V_p&rbrace; = \frac&lbrace;N_s&rbrace;&lbrace;N_p&rbrace; \implies V_s = V_p \times \frac&lbrace;N_s&rbrace;&lbrace;N_p&rbrace; = 240 \times \frac&lbrace;100&rbrace;&lbrace;2000&rbrace; = 12\mathrm&lbrace; V&rbrace;
 $$
 
 $$
-I_s = I_p \times \frac{N_p}{N_s} = 2 \times \frac{2000}{100} = 40\mathrm{ A}
+I_s = I_p \times \frac&lbrace;N_p&rbrace;&lbrace;N_s&rbrace; = 2 \times \frac&lbrace;2000&rbrace;&lbrace;100&rbrace; = 40\mathrm&lbrace; A&rbrace;
 $$
 
 ## Energy Stored in an Inductor
@@ -264,7 +264,7 @@ An inductor stores energy in its magnetic field. For an inductor with inductance
 current $I$:
 
 $$
-E = \frac{1}{2}LI^2
+E = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;LI^2
 $$
 
 ## Self-Inductance
@@ -272,7 +272,7 @@ $$
 Self-inductance ($L$) is defined as:
 
 $$
-\epsilon = -L\frac{\Delta I}{\Delta t}
+\epsilon = -L\frac&lbrace;\Delta I&rbrace;&lbrace;\Delta t&rbrace;
 $$
 
 where $L$ is measured in henrys (H). Self-inductance is the property of a coil that opposes changes
@@ -281,7 +281,7 @@ in current through itself.
 For a solenoid:
 
 $$
-L = \frac{\mu_0 N^2 A}{l}
+L = \frac&lbrace;\mu_0 N^2 A&rbrace;&lbrace;l&rbrace;
 $$
 
 where $N$ is the number of turns, $A$ is the cross-sectional area, and $l$ is the length of the
@@ -332,11 +332,11 @@ induced EMF.
 **Solution:**
 
 $$
-\Delta\Phi_B = B\,\Delta A = (0.40)(0.010 - 0) = 4.0 \times 10^{-3}\mathrm{ Wb}
+\Delta\Phi_B = B\,\Delta A = (0.40)(0.010 - 0) = 4.0 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; Wb&rbrace;
 $$
 
 $$
-\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 50 \times \frac{4.0 \times 10^{-3}}{0.20} = 1.0\mathrm{ V}
+\epsilon = N\frac&lbrace;\Delta\Phi_B&rbrace;&lbrace;\Delta t&rbrace; = 50 \times \frac&lbrace;4.0 \times 10^&lbrace;-3&rbrace;&rbrace;&lbrace;0.20&rbrace; = 1.0\mathrm&lbrace; V&rbrace;
 $$
 
 Note that here $B$ is constant and the flux changes because the **area** changes — Faraday's law
@@ -351,15 +351,15 @@ the field region in $0.050\mathrm{ s}$. Calculate the magnitude of the average E
 **Solution:**
 
 $$
-A = \pi r^2 = \pi(0.050)^2 = 7.85 \times 10^{-3}\mathrm{ m}^2
+A = \pi r^2 = \pi(0.050)^2 = 7.85 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; m&rbrace;^2
 $$
 
 $$
-\Delta\Phi_B = BA = (0.60)(7.85 \times 10^{-3}) = 4.71 \times 10^{-3}\mathrm{ Wb}
+\Delta\Phi_B = BA = (0.60)(7.85 \times 10^&lbrace;-3&rbrace;) = 4.71 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; Wb&rbrace;
 $$
 
 $$
-\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 120 \times \frac{4.71 \times 10^{-3}}{0.050} = 11.3\mathrm{ V}
+\epsilon = N\frac&lbrace;\Delta\Phi_B&rbrace;&lbrace;\Delta t&rbrace; = 120 \times \frac&lbrace;4.71 \times 10^&lbrace;-3&rbrace;&rbrace;&lbrace;0.050&rbrace; = 11.3\mathrm&lbrace; V&rbrace;
 $$
 
 ### Worked Example 7: Transformer Efficiency with Losses
@@ -392,11 +392,11 @@ loss now.
 (a) Direct transmission:
 
 $$
-I = \frac{P}{V} = \frac{500\,000}{5000} = 100\mathrm{ A}
+I = \frac&lbrace;P&rbrace;&lbrace;V&rbrace; = \frac&lbrace;500\,000&rbrace;&lbrace;5000&rbrace; = 100\mathrm&lbrace; A&rbrace;
 $$
 
 $$
-P_{\mathrm{loss}} = I^2 R = (100)^2(10) = 100\,000\mathrm{ W} = 100\mathrm{ kW}
+P_&lbrace;\mathrm&lbrace;loss&rbrace;&rbrace; = I^2 R = (100)^2(10) = 100\,000\mathrm&lbrace; W&rbrace; = 100\mathrm&lbrace; kW&rbrace;
 $$
 
 This is $20\%$ of the generated power wasted as heat.
@@ -404,7 +404,7 @@ This is $20\%$ of the generated power wasted as heat.
 (b) With step-up to $50\,000\mathrm{ V}$:
 
 $$
-I' = \frac{P}{V'} = \frac{500\,000}{50\,000} = 10\mathrm{ A}, \quad P'_{\mathrm{loss}} = (10)^2(10) = 1000\mathrm{ W} = 1.0\mathrm{ kW}
+I' = \frac&lbrace;P&rbrace;&lbrace;V'&rbrace; = \frac&lbrace;500\,000&rbrace;&lbrace;50\,000&rbrace; = 10\mathrm&lbrace; A&rbrace;, \quad P'_&lbrace;\mathrm&lbrace;loss&rbrace;&rbrace; = (10)^2(10) = 1000\mathrm&lbrace; W&rbrace; = 1.0\mathrm&lbrace; kW&rbrace;
 $$
 
 The loss drops from $100\mathrm{ kW}$ to $1.0\mathrm{ kW}$ — a factor of 100, since
@@ -463,19 +463,19 @@ $d\epsilon = 2\pi B\omega r^2$, and its resistance is $dR = \rho \cdot 2\pi r / 
 in the ring is:
 
 $$
-dP = \frac{(d\epsilon)^2}{dR} = \frac{2\pi B^2\omega^2 r^3\,t\,dr}{\rho}
+dP = \frac&lbrace;(d\epsilon)^2&rbrace;&lbrace;dR&rbrace; = \frac&lbrace;2\pi B^2\omega^2 r^3\,t\,dr&rbrace;&lbrace;\rho&rbrace;
 $$
 
 Integrating from $r = 0$ to $R$:
 
 $$
-P = \int_0^R \frac{2\pi B^2\omega^2 r^3\,t}{\rho}\,dr = \frac{\pi B^2\omega^2 t R^4}{2\rho}
+P = \int_0^R \frac&lbrace;2\pi B^2\omega^2 r^3\,t&rbrace;&lbrace;\rho&rbrace;\,dr = \frac&lbrace;\pi B^2\omega^2 t R^4&rbrace;&lbrace;2\rho&rbrace;
 $$
 
 Substituting:
 
 $$
-P = \frac{\pi(0.80)^2(300)^2(5.0 \times 10^{-3})(0.15)^4}{2(1.7 \times 10^{-8})} \approx 1.4 \times 10^{7}\mathrm{ W}
+P = \frac&lbrace;\pi(0.80)^2(300)^2(5.0 \times 10^&lbrace;-3&rbrace;)(0.15)^4&rbrace;&lbrace;2(1.7 \times 10^&lbrace;-8&rbrace;)&rbrace; \approx 1.4 \times 10^&lbrace;7&rbrace;\mathrm&lbrace; W&rbrace;
 $$
 
 :::warning This model assumes the entire disc is immersed in the field. In practice only a localized
@@ -496,13 +496,13 @@ voltage. This is called the **back EMF** ($\epsilon_{\mathrm{back}}$).
 The net voltage driving current through the motor coil is:
 
 $$
-V_{\mathrm{net}} = V_{\mathrm{supply}} - \epsilon_{\mathrm{back}}
+V_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = V_&lbrace;\mathrm&lbrace;supply&rbrace;&rbrace; - \epsilon_&lbrace;\mathrm&lbrace;back&rbrace;&rbrace;
 $$
 
 and the current in the motor is:
 
 $$
-I = \frac{V_{\mathrm{supply}} - \epsilon_{\mathrm{back}}}{R}
+I = \frac&lbrace;V_&lbrace;\mathrm&lbrace;supply&rbrace;&rbrace; - \epsilon_&lbrace;\mathrm&lbrace;back&rbrace;&rbrace;&rbrace;&lbrace;R&rbrace;
 $$
 
 where $R$ is the total resistance of the motor windings.
@@ -522,7 +522,7 @@ where $R$ is the total resistance of the motor windings.
 The mechanical power output of the motor is:
 
 $$
-P_{\mathrm{mech}} = \epsilon_{\mathrm{back}} \cdot I
+P_&lbrace;\mathrm&lbrace;mech&rbrace;&rbrace; = \epsilon_&lbrace;\mathrm&lbrace;back&rbrace;&rbrace; \cdot I
 $$
 
 By energy conservation, $V_{\mathrm{supply}} \cdot I = \epsilon_{\mathrm{back}} \cdot I + I^2 R$.
@@ -587,11 +587,11 @@ uniformly in $0.040\mathrm{ s}$. Calculate the average EMF induced in the coil.
 <summary>Solution</summary>
 
 $$
-\Delta\Phi_B = B\,\Delta A\cos\theta = (0.30)(0.10 \times 0.05)(1) - 0 = 1.5 \times 10^{-3}\mathrm{ Wb}
+\Delta\Phi_B = B\,\Delta A\cos\theta = (0.30)(0.10 \times 0.05)(1) - 0 = 1.5 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; Wb&rbrace;
 $$
 
 $$
-\epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 100 \times \frac{1.5 \times 10^{-3}}{0.040} = 3.75\mathrm{ V}
+\epsilon = N\frac&lbrace;\Delta\Phi_B&rbrace;&lbrace;\Delta t&rbrace; = 100 \times \frac&lbrace;1.5 \times 10^&lbrace;-3&rbrace;&rbrace;&lbrace;0.040&rbrace; = 3.75\mathrm&lbrace; V&rbrace;
 $$
 
 </details>
@@ -605,7 +605,7 @@ $30^\circ$ to a magnetic field of $0.25\mathrm{ T}$. Calculate the induced EMF.
 <summary>Solution</summary>
 
 $$
-\epsilon = Blv\sin\theta = (0.25)(0.60)(8.0)\sin 30° = (0.25)(0.60)(8.0)(0.500) = 0.60\mathrm{ V}
+\epsilon = Blv\sin\theta = (0.25)(0.60)(8.0)\sin 30° = (0.25)(0.60)(8.0)(0.500) = 0.60\mathrm&lbrace; V&rbrace;
 $$
 
 </details>
@@ -622,19 +622,19 @@ turns, (b) the secondary current, (c) the primary current (ideal).
 (a)
 
 $$
-N_s = N_p \times \frac{V_s}{V_p} = 200 \times \frac{2400}{120} = 4000
+N_s = N_p \times \frac&lbrace;V_s&rbrace;&lbrace;V_p&rbrace; = 200 \times \frac&lbrace;2400&rbrace;&lbrace;120&rbrace; = 4000
 $$
 
 (b)
 
 $$
-I_s = \frac{V_s}{R_L} = \frac{2400}{100} = 24\mathrm{ A}
+I_s = \frac&lbrace;V_s&rbrace;&lbrace;R_L&rbrace; = \frac&lbrace;2400&rbrace;&lbrace;100&rbrace; = 24\mathrm&lbrace; A&rbrace;
 $$
 
 (c)
 
 $$
-I_p = I_s \times \frac{N_s}{N_p} = 24 \times \frac{4000}{200} = 480\mathrm{ A}
+I_p = I_s \times \frac&lbrace;N_s&rbrace;&lbrace;N_p&rbrace; = 24 \times \frac&lbrace;4000&rbrace;&lbrace;200&rbrace; = 480\mathrm&lbrace; A&rbrace;
 $$
 
 Check: $V_p I_p = 120 \times 480 = 57\,600\mathrm{ W}$,
@@ -671,18 +671,18 @@ Calculate: (a) the self-inductance of the solenoid, (b) the EMF induced in the s
 (a)
 
 $$
-L = \frac{\mu_0 N^2 A}{l} = \frac{(4\pi \times 10^{-7})(500)^2(4.0 \times 10^{-3})}{0.50} = 2.51 \times 10^{-3}\mathrm{ H} = 2.51\mathrm{ mH}
+L = \frac&lbrace;\mu_0 N^2 A&rbrace;&lbrace;l&rbrace; = \frac&lbrace;(4\pi \times 10^&lbrace;-7&rbrace;)(500)^2(4.0 \times 10^&lbrace;-3&rbrace;)&rbrace;&lbrace;0.50&rbrace; = 2.51 \times 10^&lbrace;-3&rbrace;\mathrm&lbrace; H&rbrace; = 2.51\mathrm&lbrace; mH&rbrace;
 $$
 
 (b) The field inside the solenoid is $B = \mu_0(N/l)I$, so the flux through one secondary turn is
 $\Phi_B = \mu_0(N/l)IA$. The rate of change:
 
 $$
-\frac{\Delta\Phi_B}{\Delta t} = \mu_0 \frac{N}{l}A \frac{\Delta I}{\Delta t} = (4\pi \times 10^{-7}) \cdot 1000 \cdot (4.0 \times 10^{-3}) \cdot 30 = 1.508 \times 10^{-4}\mathrm{ Wb s}^{-1}
+\frac&lbrace;\Delta\Phi_B&rbrace;&lbrace;\Delta t&rbrace; = \mu_0 \frac&lbrace;N&rbrace;&lbrace;l&rbrace;A \frac&lbrace;\Delta I&rbrace;&lbrace;\Delta t&rbrace; = (4\pi \times 10^&lbrace;-7&rbrace;) \cdot 1000 \cdot (4.0 \times 10^&lbrace;-3&rbrace;) \cdot 30 = 1.508 \times 10^&lbrace;-4&rbrace;\mathrm&lbrace; Wb s&rbrace;^&lbrace;-1&rbrace;
 $$
 
 $$
-\epsilon_{\mathrm{secondary}} = N_s \frac{\Delta\Phi_B}{\Delta t} = 50 \times 1.508 \times 10^{-4} = 7.54\mathrm{ mV}
+\epsilon_&lbrace;\mathrm&lbrace;secondary&rbrace;&rbrace; = N_s \frac&lbrace;\Delta\Phi_B&rbrace;&lbrace;\Delta t&rbrace; = 50 \times 1.508 \times 10^&lbrace;-4&rbrace; = 7.54\mathrm&lbrace; mV&rbrace;
 $$
 
 </details>
@@ -700,13 +700,13 @@ field (moving at $2.0\mathrm{ m s}^{-1}$), calculate: (a) the induced EMF, (b) t
 (a) As the ring enters, the flux increases at rate $\Delta\Phi_B/\Delta t = B \cdot 2r \cdot v$:
 
 $$
-\epsilon = B \cdot 2r \cdot v = (0.80)(0.080)(2.0) = 0.128\mathrm{ V}
+\epsilon = B \cdot 2r \cdot v = (0.80)(0.080)(2.0) = 0.128\mathrm&lbrace; V&rbrace;
 $$
 
 (b)
 
 $$
-I = \frac{\epsilon}{R} = \frac{0.128}{0.50} = 0.256\mathrm{ A}
+I = \frac&lbrace;\epsilon&rbrace;&lbrace;R&rbrace; = \frac&lbrace;0.128&rbrace;&lbrace;0.50&rbrace; = 0.256\mathrm&lbrace; A&rbrace;
 $$
 
 (c) By Lenz's law, the induced current creates a field opposing the increasing downward flux, so the
@@ -769,13 +769,13 @@ during the decay.
 (a)
 
 $$
-E = \frac{1}{2}LI^2 = \frac{1}{2}(0.50)(4.0)^2 = 4.0\mathrm{ J}
+E = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;LI^2 = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(0.50)(4.0)^2 = 4.0\mathrm&lbrace; J&rbrace;
 $$
 
 (b)
 
 $$
-\epsilon = L\frac{\Delta I}{\Delta t} = (0.50)\frac{4.0 - 0}{0.020} = 100\mathrm{ V}
+\epsilon = L\frac&lbrace;\Delta I&rbrace;&lbrace;\Delta t&rbrace; = (0.50)\frac&lbrace;4.0 - 0&rbrace;&lbrace;0.020&rbrace; = 100\mathrm&lbrace; V&rbrace;
 $$
 
 The negative sign (from Lenz's law) indicates the EMF opposes the decrease in current, but the
@@ -796,23 +796,23 @@ RMS EMF.
 (a)
 
 $$
-\Phi_B(t) = NAB(t) = (150)(2.0 \times 10^{-3})(0.50\sin 120\pi t) = 0.150\sin(120\pi t)\mathrm{ Wb}
+\Phi_B(t) = NAB(t) = (150)(2.0 \times 10^&lbrace;-3&rbrace;)(0.50\sin 120\pi t) = 0.150\sin(120\pi t)\mathrm&lbrace; Wb&rbrace;
 $$
 
 (b)
 
 $$
-\epsilon(t) = -\frac{d\Phi_B}{dt} = -(0.150)(120\pi)\cos(120\pi t) = -56.5\cos(120\pi t)\mathrm{ V}
+\epsilon(t) = -\frac&lbrace;d\Phi_B&rbrace;&lbrace;dt&rbrace; = -(0.150)(120\pi)\cos(120\pi t) = -56.5\cos(120\pi t)\mathrm&lbrace; V&rbrace;
 $$
 
 $$
-\epsilon_0 = 56.5\mathrm{ V}
+\epsilon_0 = 56.5\mathrm&lbrace; V&rbrace;
 $$
 
 (c)
 
 $$
-\epsilon_{\mathrm{rms}} = \frac{\epsilon_0}{\sqrt{2}} = \frac{56.5}{\sqrt{2}} = 40.0\mathrm{ V}
+\epsilon_&lbrace;\mathrm&lbrace;rms&rbrace;&rbrace; = \frac&lbrace;\epsilon_0&rbrace;&lbrace;\sqrt&lbrace;2&rbrace;&rbrace; = \frac&lbrace;56.5&rbrace;&lbrace;\sqrt&lbrace;2&rbrace;&rbrace; = 40.0\mathrm&lbrace; V&rbrace;
 $$
 
 </details>

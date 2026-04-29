@@ -36,7 +36,7 @@ slug: kinematics
 Average acceleration:
 
 $$
-\bar{a} = \frac{v - u}{t}
+\bar&lbrace;a&rbrace; = \frac&lbrace;v - u&rbrace;&lbrace;t&rbrace;
 $$
 
 Instantaneous acceleration is the derivative of velocity with respect to time.
@@ -76,7 +76,7 @@ A car accelerates from rest at $2\mathrm{ m/s}^2$ for $6$ seconds. Find the dist
 $u = 0$, $a = 2$, $t = 6$.
 
 $$
-s = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\mathrm{ m}
+s = ut + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;at^2 = 0 + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(2)(36) = 36\mathrm&lbrace; m&rbrace;
 $$
 
 :::
@@ -89,11 +89,11 @@ time to reach it.
 At maximum height, $v = 0$.
 
 $$
-v^2 = u^2 + 2as \implies 0 = 225 + 2(-9.81)s \implies s = \frac{225}{19.62} \approx 11.47\mathrm{ m}
+v^2 = u^2 + 2as \implies 0 = 225 + 2(-9.81)s \implies s = \frac&lbrace;225&rbrace;&lbrace;19.62&rbrace; \approx 11.47\mathrm&lbrace; m&rbrace;
 $$
 
 $$
-v = u + at \implies 0 = 15 - 9.81t \implies t = \frac{15}{9.81} \approx 1.53\mathrm{ s}
+v = u + at \implies 0 = 15 - 9.81t \implies t = \frac&lbrace;15&rbrace;&lbrace;9.81&rbrace; \approx 1.53\mathrm&lbrace; s&rbrace;
 $$
 
 :::
@@ -174,7 +174,7 @@ Total $= 140\mathrm{ m}$.
 Near the Earth's surface, all objects in free fall accelerate at approximately:
 
 $$
-g \approx 9.81\mathrm{ m/s}^2
+g \approx 9.81\mathrm&lbrace; m/s&rbrace;^2
 $$
 
 This value varies slightly with location and altitude.
@@ -191,13 +191,13 @@ This value varies slightly with location and altitude.
 **Method 1 — Free fall**: Drop an object from a known height and time the fall.
 
 $$
-g = \frac{2h}{t^2}
+g = \frac&lbrace;2h&rbrace;&lbrace;t^2&rbrace;
 $$
 
 **Method 2 — Pendulum**: Use a simple pendulum of length $L$ and period $T$.
 
 $$
-T = 2\pi\sqrt{\frac{L}{g}} \implies g = \frac{4\pi^2 L}{T^2}
+T = 2\pi\sqrt&lbrace;\frac&lbrace;L&rbrace;&lbrace;g&rbrace;&rbrace; \implies g = \frac&lbrace;4\pi^2 L&rbrace;&lbrace;T^2&rbrace;
 $$
 
 :::info[Example]
@@ -210,7 +210,7 @@ v^2 = u^2 + 2as = 0 + 2(9.81)(45) = 882.9
 $$
 
 $$
-v = \sqrt{882.9} \approx 29.7\mathrm{ m/s}
+v = \sqrt&lbrace;882.9&rbrace; \approx 29.7\mathrm&lbrace; m/s&rbrace;
 $$
 
 :::
@@ -244,13 +244,13 @@ x = u\cos\theta \cdot t
 $$
 
 $$
-v_x = u\cos\theta \quad (\mathrm{constant})
+v_x = u\cos\theta \quad (\mathrm&lbrace;constant&rbrace;)
 $$
 
 **Vertical** (uniform acceleration):
 
 $$
-y = u\sin\theta \cdot t - \frac{1}{2}gt^2
+y = u\sin\theta \cdot t - \frac&lbrace;1&rbrace;&lbrace;2&rbrace;gt^2
 $$
 
 $$
@@ -266,11 +266,11 @@ $$
 At landing, $y = 0$ (assuming same level):
 
 $$
-0 = u\sin\theta \cdot t - \frac{1}{2}gt^2
+0 = u\sin\theta \cdot t - \frac&lbrace;1&rbrace;&lbrace;2&rbrace;gt^2
 $$
 
 $$
-t = \frac{2u\sin\theta}{g}
+t = \frac&lbrace;2u\sin\theta&rbrace;&lbrace;g&rbrace;
 $$
 
 ### Maximum Height
@@ -278,13 +278,13 @@ $$
 At maximum height, $v_y = 0$:
 
 $$
-H = \frac{(u\sin\theta)^2}{2g}
+H = \frac&lbrace;(u\sin\theta)^2&rbrace;&lbrace;2g&rbrace;
 $$
 
 ### Range
 
 $$
-R = u\cos\theta \cdot t = u\cos\theta \cdot \frac{2u\sin\theta}{g} = \frac{u^2 \sin 2\theta}{g}
+R = u\cos\theta \cdot t = u\cos\theta \cdot \frac&lbrace;2u\sin\theta&rbrace;&lbrace;g&rbrace; = \frac&lbrace;u^2 \sin 2\theta&rbrace;&lbrace;g&rbrace;
 $$
 
 ### Maximum Range
@@ -292,7 +292,7 @@ $$
 The range is maximised when $\sin 2\theta = 1$, i.e., $\theta = 45\degree$:
 
 $$
-R_{\max} = \frac{u^2}{g}
+R_&lbrace;\max&rbrace; = \frac&lbrace;u^2&rbrace;&lbrace;g&rbrace;
 $$
 
 ### Complementary Angles
@@ -307,19 +307,19 @@ A ball is thrown at $20\mathrm{ m/s}$ at $30\degree$ above the horizontal from g
 **Time of flight**:
 
 $$
-t = \frac{2(20)\sin 30\degree}{9.81} = \frac{2(20)(0.5)}{9.81} = \frac{20}{9.81} \approx 2.04\mathrm{ s}
+t = \frac&lbrace;2(20)\sin 30\degree&rbrace;&lbrace;9.81&rbrace; = \frac&lbrace;2(20)(0.5)&rbrace;&lbrace;9.81&rbrace; = \frac&lbrace;20&rbrace;&lbrace;9.81&rbrace; \approx 2.04\mathrm&lbrace; s&rbrace;
 $$
 
 **Maximum height**:
 
 $$
-H = \frac{(20\sin 30\degree)^2}{2(9.81)} = \frac{100}{19.62} \approx 5.10\mathrm{ m}
+H = \frac&lbrace;(20\sin 30\degree)^2&rbrace;&lbrace;2(9.81)&rbrace; = \frac&lbrace;100&rbrace;&lbrace;19.62&rbrace; \approx 5.10\mathrm&lbrace; m&rbrace;
 $$
 
 **Range**:
 
 $$
-R = \frac{(20)^2 \sin 60\degree}{9.81} = \frac{400 \times 0.866}{9.81} \approx 35.3\mathrm{ m}
+R = \frac&lbrace;(20)^2 \sin 60\degree&rbrace;&lbrace;9.81&rbrace; = \frac&lbrace;400 \times 0.866&rbrace;&lbrace;9.81&rbrace; \approx 35.3\mathrm&lbrace; m&rbrace;
 $$
 
 **Speed at maximum height**:
@@ -333,7 +333,7 @@ At maximum height, $v_y = 0$, so speed $= v_x = 20\cos 30\degree \approx 17.3\ma
 Eliminating $t$ from the horizontal and vertical equations:
 
 $$
-y = x\tan\theta - \frac{gx^2}{2u^2\cos^2\theta}
+y = x\tan\theta - \frac&lbrace;gx^2&rbrace;&lbrace;2u^2\cos^2\theta&rbrace;
 $$
 
 This is a parabola, confirming that the trajectory of a projectile (without air resistance) is
@@ -415,7 +415,7 @@ $h = \dfrac{1}{2}gt^2 \implies 80 = \dfrac{1}{2}(9.81)t^2 \implies t = \sqrt{\df
 **(b)** Find the horizontal distance from the base of the cliff.
 
 $$
-x = 15 \times 4.04 = 60.6\mathrm{ m}
+x = 15 \times 4.04 = 60.6\mathrm&lbrace; m&rbrace;
 $$
 
 **(c)** Find the velocity (magnitude and direction) just before impact.
@@ -425,11 +425,11 @@ Horizontal: $v_x = 15\mathrm{ m/s}$ (constant).
 Vertical: $v_y = gt = 9.81 \times 4.04 = 39.6\mathrm{ m/s}$.
 
 $$
-v = \sqrt{15^2 + 39.6^2} = \sqrt{225 + 1568.2} = \sqrt{1793.2} \approx 42.4\mathrm{ m/s}
+v = \sqrt&lbrace;15^2 + 39.6^2&rbrace; = \sqrt&lbrace;225 + 1568.2&rbrace; = \sqrt&lbrace;1793.2&rbrace; \approx 42.4\mathrm&lbrace; m/s&rbrace;
 $$
 
 $$
-\theta = \arctan\!\left(\frac{39.6}{15}\right) = \arctan(2.64) \approx 69.3\degree \mathrm{ below horizontal}
+\theta = \arctan\!\left(\frac&lbrace;39.6&rbrace;&lbrace;15&rbrace;\right) = \arctan(2.64) \approx 69.3\degree \mathrm&lbrace; below horizontal&rbrace;
 $$
 
 ### Question 3 (Paper 1 style)
@@ -440,13 +440,13 @@ above the horizontal.
 **(a)** Calculate the maximum height.
 
 $$
-H = \frac{(25\sin 50\degree)^2}{2(9.81)} = \frac{(19.15)^2}{19.62} = \frac{366.7}{19.62} \approx 18.7\mathrm{ m}
+H = \frac&lbrace;(25\sin 50\degree)^2&rbrace;&lbrace;2(9.81)&rbrace; = \frac&lbrace;(19.15)^2&rbrace;&lbrace;19.62&rbrace; = \frac&lbrace;366.7&rbrace;&lbrace;19.62&rbrace; \approx 18.7\mathrm&lbrace; m&rbrace;
 $$
 
 **(b)** Calculate the range.
 
 $$
-R = \frac{25^2 \sin 100\degree}{9.81} = \frac{625 \times 0.9848}{9.81} \approx 62.7\mathrm{ m}
+R = \frac&lbrace;25^2 \sin 100\degree&rbrace;&lbrace;9.81&rbrace; = \frac&lbrace;625 \times 0.9848&rbrace;&lbrace;9.81&rbrace; \approx 62.7\mathrm&lbrace; m&rbrace;
 $$
 
 ### Question 4 (Paper 2 style)
@@ -473,7 +473,7 @@ $$
 $$
 
 $$
-1.428v = 20 \implies v = 14.0\mathrm{ m/s}
+1.428v = 20 \implies v = 14.0\mathrm&lbrace; m/s&rbrace;
 $$
 
 ---
@@ -512,7 +512,7 @@ diagram showing the velocity components.
 The velocity of object `A` relative to object `B`:
 
 $$
-\vec{v}_{AB} = \vec{v}_A - \vec{v}_B
+\vec&lbrace;v&rbrace;_&lbrace;AB&rbrace; = \vec&lbrace;v&rbrace;_A - \vec&lbrace;v&rbrace;_B
 $$
 
 ### Applications
@@ -554,17 +554,17 @@ Time to cross: $t = \dfrac{100}{2.65} = 37.7\mathrm{ s}$.
 When acceleration is not constant, use calculus:
 
 $$
-a = \frac{dv}{dt} \implies v = \int a\,dt
+a = \frac&lbrace;dv&rbrace;&lbrace;dt&rbrace; \implies v = \int a\,dt
 $$
 
 $$
-v = \frac{ds}{dt} \implies s = \int v\,dt
+v = \frac&lbrace;ds&rbrace;&lbrace;dt&rbrace; \implies s = \int v\,dt
 $$
 
 And conversely:
 
 $$
-v = \frac{ds}{dt}, \quad a = \frac{dv}{dt} = \frac{d^2s}{dt^2}
+v = \frac&lbrace;ds&rbrace;&lbrace;dt&rbrace;, \quad a = \frac&lbrace;dv&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;d^2s&rbrace;&lbrace;dt^2&rbrace;
 $$
 
 :::info[Example]
@@ -624,15 +624,15 @@ A car travels at $30\mathrm{ m/s}$ ($108\mathrm{ km/h}$). The driver's reaction 
 $0.7\mathrm{ s}$ and the maximum deceleration is $8\mathrm{ m/s}^2$.
 
 $$
-d_{\mathrm{think}} = 30 \times 0.7 = 21\mathrm{ m}
+d_&lbrace;\mathrm&lbrace;think&rbrace;&rbrace; = 30 \times 0.7 = 21\mathrm&lbrace; m&rbrace;
 $$
 
 $$
-d_{\mathrm{brake}} = \frac{30^2}{2 \times 8} = \frac{900}{16} = 56.25\mathrm{ m}
+d_&lbrace;\mathrm&lbrace;brake&rbrace;&rbrace; = \frac&lbrace;30^2&rbrace;&lbrace;2 \times 8&rbrace; = \frac&lbrace;900&rbrace;&lbrace;16&rbrace; = 56.25\mathrm&lbrace; m&rbrace;
 $$
 
 $$
-d_{\mathrm{total}} = 21 + 56.25 = 77.25\mathrm{ m}
+d_&lbrace;\mathrm&lbrace;total&rbrace;&rbrace; = 21 + 56.25 = 77.25\mathrm&lbrace; m&rbrace;
 $$
 
 :::
@@ -663,17 +663,17 @@ $$
 $$
 
 $$
-t = \frac{7.5 \pm \sqrt{56.25 + 784.8}}{9.81} = \frac{7.5 \pm 28.97}{9.81}
+t = \frac&lbrace;7.5 \pm \sqrt&lbrace;56.25 + 784.8&rbrace;&rbrace;&lbrace;9.81&rbrace; = \frac&lbrace;7.5 \pm 28.97&rbrace;&lbrace;9.81&rbrace;
 $$
 
 $$
-t = \frac{36.47}{9.81} = 3.72\mathrm{ s}
+t = \frac&lbrace;36.47&rbrace;&lbrace;9.81&rbrace; = 3.72\mathrm&lbrace; s&rbrace;
 $$
 
 **(b)** Find the horizontal range.
 
 $$
-x = 15\cos 30\degree \times 3.72 = 12.99 \times 3.72 = 48.3\mathrm{ m}
+x = 15\cos 30\degree \times 3.72 = 12.99 \times 3.72 = 48.3\mathrm&lbrace; m&rbrace;
 $$
 
 **(c)** Find the velocity (magnitude and direction) when the ball hits the ground.
@@ -683,11 +683,11 @@ Horizontal: $v_x = 15\cos 30\degree = 12.99\mathrm{ m/s}$.
 Vertical: $v_y = 7.5 - 9.81(3.72) = 7.5 - 36.49 = -28.99\mathrm{ m/s}$.
 
 $$
-v = \sqrt{12.99^2 + 28.99^2} = \sqrt{168.7 + 840.4} = \sqrt{1009.1} = 31.8\mathrm{ m/s}
+v = \sqrt&lbrace;12.99^2 + 28.99^2&rbrace; = \sqrt&lbrace;168.7 + 840.4&rbrace; = \sqrt&lbrace;1009.1&rbrace; = 31.8\mathrm&lbrace; m/s&rbrace;
 $$
 
 $$
-\theta = \arctan\!\left(\frac{28.99}{12.99}\right) = 65.9\degree \mathrm{ below horizontal}
+\theta = \arctan\!\left(\frac&lbrace;28.99&rbrace;&lbrace;12.99&rbrace;\right) = 65.9\degree \mathrm&lbrace; below horizontal&rbrace;
 $$
 
 ### Question 6 (Paper 1 style)
@@ -718,7 +718,7 @@ Position of Car `B`: $s_B = \dfrac{1}{2}(2)t^2 = t^2$
 When $s_A = s_B$: $t^2 = 20t + 50 \implies t^2 - 20t - 50 = 0$.
 
 $$
-t = \frac{20 \pm \sqrt{400 + 200}}{2} = \frac{20 \pm 24.49}{2}
+t = \frac&lbrace;20 \pm \sqrt&lbrace;400 + 200&rbrace;&rbrace;&lbrace;2&rbrace; = \frac&lbrace;20 \pm 24.49&rbrace;&lbrace;2&rbrace;
 $$
 
 $t = 22.25\mathrm{ s}$.
@@ -726,7 +726,7 @@ $t = 22.25\mathrm{ s}$.
 **(b)** What is the speed of Car `B` at this moment?
 
 $$
-v_B = 2 \times 22.25 = 44.5\mathrm{ m/s}
+v_B = 2 \times 22.25 = 44.5\mathrm&lbrace; m/s&rbrace;
 $$
 
 ---
@@ -746,7 +746,7 @@ Acceleration: $\vec{a}(t) = \dfrac{d\vec{v}}{dt} = \ddot{x}(t)\hat{i} + \ddot{y}
 Speed is the magnitude of velocity:
 
 $$
-|\vec{v}| = \sqrt{v_x^2 + v_y^2}
+|\vec&lbrace;v&rbrace;| = \sqrt&lbrace;v_x^2 + v_y^2&rbrace;
 $$
 
 ### Displacement as a Vector
@@ -754,7 +754,7 @@ $$
 The displacement from $t_1$ to $t_2$ is:
 
 $$
-\Delta\vec{r} = \vec{r}(t_2) - \vec{r}(t_1)
+\Delta\vec&lbrace;r&rbrace; = \vec&lbrace;r&rbrace;(t_2) - \vec&lbrace;r&rbrace;(t_1)
 $$
 
 :::info[Example]
@@ -764,7 +764,7 @@ A particle moves with position vector $\vec{r}(t) = (2t^2 - 3t)\hat{i} + (t^3 - 
 **(a)** Find the velocity at $t = 2\mathrm{ s}$.
 
 $$
-\vec{v} = (4t - 3)\hat{i} + 3t^2\hat{j}
+\vec&lbrace;v&rbrace; = (4t - 3)\hat&lbrace;i&rbrace; + 3t^2\hat&lbrace;j&rbrace;
 $$
 
 At $t = 2$: $\vec{v} = 5\hat{i} + 12\hat{j}\mathrm{ m/s}$.
@@ -774,7 +774,7 @@ Speed $= \sqrt{25 + 144} = \sqrt{169} = 13\mathrm{ m/s}$.
 **(b)** Find the acceleration.
 
 $$
-\vec{a} = 4\hat{i} + 6t\hat{j}
+\vec&lbrace;a&rbrace; = 4\hat&lbrace;i&rbrace; + 6t\hat&lbrace;j&rbrace;
 $$
 
 The acceleration is not constant (depends on $t$).
@@ -797,7 +797,7 @@ v_x = u_x + a_x t, \quad v_y = u_y + a_y t
 $$
 
 $$
-x = u_x t + \frac{1}{2}a_x t^2, \quad y = u_y t + \frac{1}{2}a_y t^2
+x = u_x t + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;a_x t^2, \quad y = u_y t + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;a_y t^2
 $$
 
 ### Projectile Motion Revisited (Vector Form)
@@ -812,7 +812,7 @@ x(t) = u\cos\theta \cdot t
 $$
 
 $$
-y(t) = u\sin\theta \cdot t - \frac{1}{2}gt^2
+y(t) = u\sin\theta \cdot t - \frac&lbrace;1&rbrace;&lbrace;2&rbrace;gt^2
 $$
 
 $$
@@ -842,7 +842,7 @@ When $v = 0$: $t(4 - t) = 0 \implies t = 0$ or $t = 4\mathrm{ s}$.
 **(b)** Find the displacement at $t = 4\mathrm{ s}$.
 
 $$
-s = \int_0^4 (4t - t^2)\,dt = \left[2t^2 - \frac{t^3}{3}\right]_0^4 = 32 - \frac{64}{3} = \frac{32}{3}\mathrm{ m}
+s = \int_0^4 (4t - t^2)\,dt = \left[2t^2 - \frac&lbrace;t^3&rbrace;&lbrace;3&rbrace;\right]_0^4 = 32 - \frac&lbrace;64&rbrace;&lbrace;3&rbrace; = \frac&lbrace;32&rbrace;&lbrace;3&rbrace;\mathrm&lbrace; m&rbrace;
 $$
 
 **(c)** Find the distance travelled between $t = 0$ and $t = 4\mathrm{ s}$.
@@ -872,7 +872,7 @@ v_y^2 = u_y^2 - 2g \cdot \Delta s \implies 0 = 25 - 2(9.81)\Delta s
 $$
 
 $$
-\Delta s = \frac{25}{19.62} = 1.27\mathrm{ m}
+\Delta s = \frac&lbrace;25&rbrace;&lbrace;19.62&rbrace; = 1.27\mathrm&lbrace; m&rbrace;
 $$
 
 Maximum height $= 120 + 1.27 = 121.3\mathrm{ m}$.
@@ -886,13 +886,13 @@ $$
 At ground: $4.905t^2 - 5t - 120 = 0$.
 
 $$
-t = \frac{5 + \sqrt{25 + 2354}}{9.81} = \frac{5 + 48.72}{9.81} = 5.48\mathrm{ s}
+t = \frac&lbrace;5 + \sqrt&lbrace;25 + 2354&rbrace;&rbrace;&lbrace;9.81&rbrace; = \frac&lbrace;5 + 48.72&rbrace;&lbrace;9.81&rbrace; = 5.48\mathrm&lbrace; s&rbrace;
 $$
 
 **(c)** Find the velocity just before impact.
 
 $$
-v_y = 5 - 9.81(5.48) = 5 - 53.76 = -48.76\mathrm{ m/s}
+v_y = 5 - 9.81(5.48) = 5 - 53.76 = -48.76\mathrm&lbrace; m/s&rbrace;
 $$
 
 Speed $= 48.8\mathrm{ m/s}$ (downward).

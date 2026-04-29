@@ -48,9 +48,9 @@ and exhaustive. Each outcome in $S$ belongs to exactly one event in the partitio
 If all elementary outcomes in a finite sample space $S$ are equally likely, then for any event $A$:
 
 $$
-\begin{aligned}
-  P(A) = \frac{|A|}{|S|} = \frac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A) = \frac&lbrace;|A|&rbrace;&lbrace;|S|&rbrace; = \frac&lbrace;\mathrm&lbrace;number of favourable outcomes&rbrace;&rbrace;&lbrace;\mathrm&lbrace;total number of outcomes&rbrace;&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 This definition reduces probability to a counting problem and directly connects to the techniques in
@@ -73,9 +73,9 @@ If an experiment is repeated $n$ times under identical conditions and event $A$ 
 then:
 
 $$
-\begin{aligned}
-  P(A) = \lim_{n \to \infty} \frac{n_A}{n}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A) = \lim_&lbrace;n \to \infty&rbrace; \frac&lbrace;n_A&rbrace;&lbrace;n&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 In practice, $\frac{n_A}{n}$ is used as an estimate of $P(A)$ for large $n$. The frequentist
@@ -92,9 +92,9 @@ Any probability measure $P$ defined on a sample space $S$ must satisfy three axi
    $A_1, A_2, \ldots$:
 
 $$
-\begin{aligned}
-  P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P\left(\bigcup_&lbrace;i=1&rbrace;^&lbrace;\infty&rbrace; A_i\right) = \sum_&lbrace;i=1&rbrace;^&lbrace;\infty&rbrace; P(A_i)
+\end&lbrace;aligned&rbrace;
 $$
 
 These three axioms are the foundation of all probability theory. Every theorem and formula on this
@@ -107,9 +107,9 @@ page derives from them.
 _Proof._ $S$ and $\emptyset$ are mutually exclusive and $S \cup \emptyset = S$. By Axiom 3:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(S) = P(S \cup \emptyset) = P(S) + P(\emptyset)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 By Axiom 2, $P(S) = 1$, so $1 = 1 + P(\emptyset)$, hence $P(\emptyset) = 0$. $\square$
@@ -119,9 +119,9 @@ By Axiom 2, $P(S) = 1$, so $1 = 1 + P(\emptyset)$, hence $P(\emptyset) = 0$. $\s
 _Proof._ $A$ and $A'$ are mutually exclusive and $A \cup A' = S$. By Axioms 2 and 3:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   1 = P(S) = P(A \cup A') = P(A) + P(A')
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Therefore $P(A') = 1 - P(A)$. $\square$
@@ -132,9 +132,9 @@ _Proof._ Decompose $B = A \cup (B \cap A')$. Since $A$ and $B \cap A'$ are mutua
 Axiom 3:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(B) = P(A) + P(B \cap A')
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 By Axiom 1, $P(B \cap A') \geq 0$, so $P(B) \geq P(A)$. $\square$
@@ -163,27 +163,27 @@ $B = \\{1, 2, 3, 4\\}$.
 **Theorem.** For any two events $A$ and $B$:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cup B) = P(A) + P(B) - P(A \cap B)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 _Proof._ Decompose $B = (A \cap B) \cup (B \cap A')$. These are mutually exclusive, so:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(B) &= P(A \cap B) + P(B \cap A') \\
   \implies P(B \cap A') &= P(B) - P(A \cap B)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Now $A \cup B = A \cup (B \cap A')$, and $A$ and $B \cap A'$ are mutually exclusive:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cup B) &= P(A) + P(B \cap A') \\
              &= P(A) + P(B) - P(A \cap B) \quad \square
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 The subtraction of $P(A \cap B)$ corrects for double-counting: outcomes in both $A$ and $B$ are
@@ -197,9 +197,9 @@ cannot occur simultaneously.
 When $A \cap B = \emptyset$, the general addition rule reduces to:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cup B) = P(A) + P(B)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 This follows directly because $P(A \cap B) = P(\emptyset) = 0$ by Theorem 1.
@@ -218,28 +218,28 @@ A card is drawn from a standard 52-card deck.
 ### Extension to Three Events
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cup B \cup C) &= P(A) + P(B) + P(C) \\
                      &\quad - P(A \cap B) - P(A \cap C) - P(B \cap C) \\
                      &\quad + P(A \cap B \cap C)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 _Proof sketch._ Apply the two-event rule to $P((A \cup B) \cup C)$:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P((A \cup B) \cup C) &= P(A \cup B) + P(C) - P((A \cup B) \cap C) \\
                        &= [P(A) + P(B) - P(A \cap B)] + P(C) - P((A \cap C) \cup (B \cap C))
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Applying the two-event rule to the last term:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P((A \cap C) \cup (B \cap C)) = P(A \cap C) + P(B \cap C) - P(A \cap B \cap C)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Substituting back and rearranging yields the stated result. $\square$
@@ -252,9 +252,9 @@ intersection size. This is the probability analogue of the inclusion-exclusion p
 The addition rule is the probability counterpart of the inclusion-exclusion principle for counting:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   |A \cup B| = |A| + |B| - |A \cap B|
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 When outcomes are equally likely, dividing both sides by $|S|$ yields the general addition rule. The
@@ -270,18 +270,18 @@ chosen at random. Find the probability that the student studies at least one of 
 Let $P$ = studies Physics, $C$ = studies Chemistry.
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(P \cup C) &= P(P) + P(C) - P(P \cap C) \\
-              &= \frac{25}{40} + \frac{20}{40} - \frac{8}{40} = \frac{37}{40}
-\end{aligned}
+              &= \frac&lbrace;25&rbrace;&lbrace;40&rbrace; + \frac&lbrace;20&rbrace;&lbrace;40&rbrace; - \frac&lbrace;8&rbrace;&lbrace;40&rbrace; = \frac&lbrace;37&rbrace;&lbrace;40&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The probability that the student studies neither subject:
 
 $$
-\begin{aligned}
-  P((P \cup C)') = 1 - \frac{37}{40} = \frac{3}{40}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P((P \cup C)') = 1 - \frac&lbrace;37&rbrace;&lbrace;40&rbrace; = \frac&lbrace;3&rbrace;&lbrace;40&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -298,9 +298,9 @@ intersections, and so on, alternating signs.
 The **conditional probability** of $A$ given $B$ is:
 
 $$
-\begin{aligned}
-  P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) \gt{} 0
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A \mid B) = \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(B)&rbrace;, \quad P(B) \gt&lbrace;&rbrace; 0
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Intuition: Shrinking the Sample Space
@@ -310,9 +310,9 @@ sample space effectively shrinks from $S$ to $B$. Within this restricted space, 
 $A$ is the proportion of $B$ that also belongs to $A$:
 
 $$
-\begin{aligned}
-  P(A \mid B) = \frac{|A \cap B|}{|B|}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A \mid B) = \frac&lbrace;|A \cap B|&rbrace;&lbrace;|B|&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 This is equivalent to $\frac{P(A \cap B)}{P(B)}$ when all outcomes are equally likely.
@@ -340,11 +340,11 @@ _Proof._ Since $A \cap B$ and $A' \cap B$ partition $B$ (they are mutually exclu
 is $B$):
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(B) &= P(A \cap B) + P(A' \cap B) \\
-  1 &= \frac{P(A \cap B)}{P(B)} + \frac{P(A' \cap B)}{P(B)} \\
+  1 &= \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(B)&rbrace; + \frac&lbrace;P(A' \cap B)&rbrace;&lbrace;P(B)&rbrace; \\
   1 &= P(A \mid B) + P(A' \mid B)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Therefore $P(A \mid B) = 1 - P(A' \mid B)$. $\square$
@@ -359,33 +359,33 @@ complement must sum to 1 within the conditioned space.
 _Proof._ From the definition of conditional probability:
 
 $$
-\begin{aligned}
-  P(A \mid B) = \frac{P(A \cap B)}{P(B)} \implies P(A \cap B) = P(B) \cdot P(A \mid B)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A \mid B) = \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(B)&rbrace; \implies P(A \cap B) = P(B) \cdot P(A \mid B)
+\end&lbrace;aligned&rbrace;
 $$
 
 By symmetry, swapping $A$ and $B$:
 
 $$
-\begin{aligned}
-  P(B \mid A) = \frac{P(A \cap B)}{P(A)} \implies P(A \cap B) = P(A) \cdot P(B \mid A) \quad \square
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(B \mid A) = \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(A)&rbrace; \implies P(A \cap B) = P(A) \cdot P(B \mid A) \quad \square
+\end&lbrace;aligned&rbrace;
 $$
 
 For three events, the multiplication rule extends naturally:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cap B \cap C) = P(A) \cdot P(B \mid A) \cdot P(C \mid A \cap B)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 This follows by two applications of the two-event rule:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cap B \cap C) = P(A \cap B) \cdot P(C \mid A \cap B) = P(A) \cdot P(B \mid A) \cdot P(C \mid A \cap B)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -411,9 +411,9 @@ With replacement, the second draw is unaffected:
 Two events $A$ and $B$ are **independent** if and only if:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cap B) = P(A) \cdot P(B)
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Equivalent Characterisation
@@ -426,17 +426,17 @@ _Proof._
 ($\Rightarrow$) If independent, $P(A \cap B) = P(A) \cdot P(B)$, so:
 
 $$
-\begin{aligned}
-  P(A \mid B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A) \cdot P(B)}{P(B)} = P(A)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A \mid B) = \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(B)&rbrace; = \frac&lbrace;P(A) \cdot P(B)&rbrace;&lbrace;P(B)&rbrace; = P(A)
+\end&lbrace;aligned&rbrace;
 $$
 
 ($\Leftarrow$) If $P(A \mid B) = P(A)$, then:
 
 $$
-\begin{aligned}
-  \frac{P(A \cap B)}{P(B)} = P(A) \implies P(A \cap B) = P(A) \cdot P(B) \quad \square
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(B)&rbrace; = P(A) \implies P(A \cap B) = P(A) \cdot P(B) \quad \square
+\end&lbrace;aligned&rbrace;
 $$
 
 Independence means that knowing $B$ occurred provides zero information about $A$. The conditional
@@ -450,12 +450,12 @@ $A$ and $B'$, $A'$ and $B$, $A'$ and $B'$.
 _Proof._ We show $A$ and $B'$ are independent. The others follow by identical reasoning.
 
 $$
-\begin{aligned}
-  P(A \cap B') &= P(A) - P(A \cap B) &\quad&\mathrm{(since } A = (A \cap B) \cup (A \cap B') \mathrm{)} \\
-               &= P(A) - P(A) \cdot P(B) &\quad&\mathrm{(by independence)} \\
+\begin&lbrace;aligned&rbrace;
+  P(A \cap B') &= P(A) - P(A \cap B) &\quad&\mathrm&lbrace;(since &rbrace; A = (A \cap B) \cup (A \cap B') \mathrm&lbrace;)&rbrace; \\
+               &= P(A) - P(A) \cdot P(B) &\quad&\mathrm&lbrace;(by independence)&rbrace; \\
                &= P(A)(1 - P(B)) \\
                &= P(A) \cdot P(B') \quad \square
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 <details>
@@ -521,9 +521,9 @@ verified or explicitly stated.
 For two events $A$ and $B$ with $P(A) \gt{} 0$ and $P(B) \gt{} 0$:
 
 $$
-\begin{aligned}
-  P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A \mid B) = \frac&lbrace;P(B \mid A) \cdot P(A)&rbrace;&lbrace;P(B)&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Proof
@@ -531,10 +531,10 @@ $$
 Starting from the definition of conditional probability and the multiplication rule:
 
 $$
-\begin{aligned}
-  P(A \mid B) &= \frac{P(A \cap B)}{P(B)} \\
-              &= \frac{P(B \mid A) \cdot P(A)}{P(B)} \quad \square
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A \mid B) &= \frac&lbrace;P(A \cap B)&rbrace;&lbrace;P(B)&rbrace; \\
+              &= \frac&lbrace;P(B \mid A) \cdot P(A)&rbrace;&lbrace;P(B)&rbrace; \quad \square
+\end&lbrace;aligned&rbrace;
 $$
 
 Bayes' theorem "reverses" the conditioning: it expresses $P(A \mid B)$ in terms of $P(B \mid A)$.
@@ -546,18 +546,18 @@ If $B_1, B_2, \ldots, B_n$ form a **partition** of $S$ (pairwise mutually exclus
 $P(B_i) \gt{} 0$ for all $i$), then for any event $A$:
 
 $$
-\begin{aligned}
-  P(A) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i)
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A) = \sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; P(A \mid B_i) \cdot P(B_i)
+\end&lbrace;aligned&rbrace;
 $$
 
 _Proof._ Since the $B_i$ partition $S$, the events $A \cap B_1, A \cap B_2, \ldots, A \cap B_n$ are
 pairwise mutually exclusive and their union equals $A$. By Axiom 3:
 
 $$
-\begin{aligned}
-  P(A) &= \sum_{i=1}^{n} P(A \cap B_i) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i) \quad \square
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A) &= \sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; P(A \cap B_i) = \sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; P(A \mid B_i) \cdot P(B_i) \quad \square
+\end&lbrace;aligned&rbrace;
 $$
 
 ### Extended Bayes' Theorem
@@ -567,9 +567,9 @@ $B_1, \ldots, B_n$ partition $S$ and $A$ is one of them (say $A = B_j$), then fo
 $P(E) \gt{} 0$:
 
 $$
-\begin{aligned}
-  P(B_j \mid E) = \frac{P(E \mid B_j) \cdot P(B_j)}{\displaystyle\sum_{i=1}^{n} P(E \mid B_i) \cdot P(B_i)}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(B_j \mid E) = \frac&lbrace;P(E \mid B_j) \cdot P(B_j)&rbrace;&lbrace;\displaystyle\sum_&lbrace;i=1&rbrace;^&lbrace;n&rbrace; P(E \mid B_i) \cdot P(B_i)&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 The denominator is $P(E)$ computed via the law of total probability.
@@ -589,12 +589,12 @@ Let $D$ = has disease, $D'$ = no disease, $+$ = tests positive. The partition is
 By Bayes' theorem:
 
 $$
-\begin{aligned}
-  P(D \mid +) &= \frac{P(+ \mid D) \cdot P(D)}{P(+ \mid D) \cdot P(D) + P(+ \mid D') \cdot P(D')} \\
-              &= \frac{0.95 \times 0.01}{0.95 \times 0.01 + 0.02 \times 0.99} \\
-              &= \frac{0.0095}{0.0095 + 0.0198} \\
-              &= \frac{0.0095}{0.0293} \approx 0.324
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(D \mid +) &= \frac&lbrace;P(+ \mid D) \cdot P(D)&rbrace;&lbrace;P(+ \mid D) \cdot P(D) + P(+ \mid D') \cdot P(D')&rbrace; \\
+              &= \frac&lbrace;0.95 \times 0.01&rbrace;&lbrace;0.95 \times 0.01 + 0.02 \times 0.99&rbrace; \\
+              &= \frac&lbrace;0.0095&rbrace;&lbrace;0.0095 + 0.0198&rbrace; \\
+              &= \frac&lbrace;0.0095&rbrace;&lbrace;0.0293&rbrace; \approx 0.324
+\end&lbrace;aligned&rbrace;
 $$
 
 Despite a 95% accurate test, a positive result only means about 32.4% chance of disease. This
@@ -613,12 +613,12 @@ is randomly selected and found to be defective. What is the probability it came 
 Let $D$ = defective. The partition is $\{M_1, M_2, M_3\}$.
 
 $$
-\begin{aligned}
-  P(M_3 \mid D) &= \frac{P(D \mid M_3) \cdot P(M_3)}{P(D \mid M_1) \cdot P(M_1) + P(D \mid M_2) \cdot P(M_2) + P(D \mid M_3) \cdot P(M_3)} \\
-                &= \frac{0.05 \times 0.20}{0.02 \times 0.50 + 0.03 \times 0.30 + 0.05 \times 0.20} \\
-                &= \frac{0.01}{0.01 + 0.009 + 0.01} \\
-                &= \frac{0.01}{0.029} \approx 0.345
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(M_3 \mid D) &= \frac&lbrace;P(D \mid M_3) \cdot P(M_3)&rbrace;&lbrace;P(D \mid M_1) \cdot P(M_1) + P(D \mid M_2) \cdot P(M_2) + P(D \mid M_3) \cdot P(M_3)&rbrace; \\
+                &= \frac&lbrace;0.05 \times 0.20&rbrace;&lbrace;0.02 \times 0.50 + 0.03 \times 0.30 + 0.05 \times 0.20&rbrace; \\
+                &= \frac&lbrace;0.01&rbrace;&lbrace;0.01 + 0.009 + 0.01&rbrace; \\
+                &= \frac&lbrace;0.01&rbrace;&lbrace;0.029&rbrace; \approx 0.345
+\end&lbrace;aligned&rbrace;
 $$
 
 Despite $M_3$ having the highest defect rate, it only accounts for about 34.5% of defective items
@@ -698,25 +698,25 @@ and the third is defective.
 Case 1: Good, then Defective, then Defective:
 
 $$
-\begin{aligned}
-  P = \frac{7}{10} \times \frac{3}{9} \times \frac{2}{8} = \frac{42}{720} = \frac{7}{120}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P = \frac&lbrace;7&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;3&rbrace;&lbrace;9&rbrace; \times \frac&lbrace;2&rbrace;&lbrace;8&rbrace; = \frac&lbrace;42&rbrace;&lbrace;720&rbrace; = \frac&lbrace;7&rbrace;&lbrace;120&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Case 2: Defective, then Good, then Defective:
 
 $$
-\begin{aligned}
-  P = \frac{3}{10} \times \frac{7}{9} \times \frac{2}{8} = \frac{42}{720} = \frac{7}{120}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P = \frac&lbrace;3&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;7&rbrace;&lbrace;9&rbrace; \times \frac&lbrace;2&rbrace;&lbrace;8&rbrace; = \frac&lbrace;42&rbrace;&lbrace;720&rbrace; = \frac&lbrace;7&rbrace;&lbrace;120&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Total probability (addition rule for mutually exclusive cases):
 
 $$
-\begin{aligned}
-  P = \frac{7}{120} + \frac{7}{120} = \frac{14}{120} = \frac{7}{60}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P = \frac&lbrace;7&rbrace;&lbrace;120&rbrace; + \frac&lbrace;7&rbrace;&lbrace;120&rbrace; = \frac&lbrace;14&rbrace;&lbrace;120&rbrace; = \frac&lbrace;7&rbrace;&lbrace;60&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -738,17 +738,17 @@ At least two heads means 2 or 3 heads:
 - 3 heads: $\\{HHH\\}$, 1 outcome.
 
 $$
-\begin{aligned}
-  P(\mathrm{at least 2 heads}) = \frac{4}{8} = \frac{1}{2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(\mathrm&lbrace;at least 2 heads&rbrace;) = \frac&lbrace;4&rbrace;&lbrace;8&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Alternatively, using the binomial formula:
 
 $$
-\begin{aligned}
-  P(\mathrm{at least 2 heads}) = \binom{3}{2}\left(\frac{1}{2}\right)^3 + \binom{3}{3}\left(\frac{1}{2}\right)^3 = \frac{3}{8} + \frac{1}{8} = \frac{1}{2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(\mathrm&lbrace;at least 2 heads&rbrace;) = \binom&lbrace;3&rbrace;&lbrace;2&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^3 + \binom&lbrace;3&rbrace;&lbrace;3&rbrace;\left(\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\right)^3 = \frac&lbrace;3&rbrace;&lbrace;8&rbrace; + \frac&lbrace;1&rbrace;&lbrace;8&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -766,10 +766,10 @@ Let $B$ = plays basketball, $F$ = plays football.
 By the addition rule:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(B \cap F) &= P(B) + P(F) - P(B \cup F) \\
-              &= \frac{3}{5} + \frac{1}{2} - \frac{4}{5} = \frac{6}{10} + \frac{5}{10} - \frac{8}{10} = \frac{3}{10}
-\end{aligned}
+              &= \frac&lbrace;3&rbrace;&lbrace;5&rbrace; + \frac&lbrace;1&rbrace;&lbrace;2&rbrace; - \frac&lbrace;4&rbrace;&lbrace;5&rbrace; = \frac&lbrace;6&rbrace;&lbrace;10&rbrace; + \frac&lbrace;5&rbrace;&lbrace;10&rbrace; - \frac&lbrace;8&rbrace;&lbrace;10&rbrace; = \frac&lbrace;3&rbrace;&lbrace;10&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -782,22 +782,22 @@ replacement. Find the probability that they are of different colours.
 Method 1 (direct): white then black, or black then white.
 
 $$
-\begin{aligned}
-  P &= \frac{4}{10} \times \frac{6}{9} + \frac{6}{10} \times \frac{4}{9} \\
-    &= \frac{24}{90} + \frac{24}{90} = \frac{48}{90} = \frac{8}{15}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P &= \frac&lbrace;4&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;6&rbrace;&lbrace;9&rbrace; + \frac&lbrace;6&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;4&rbrace;&lbrace;9&rbrace; \\
+    &= \frac&lbrace;24&rbrace;&lbrace;90&rbrace; + \frac&lbrace;24&rbrace;&lbrace;90&rbrace; = \frac&lbrace;48&rbrace;&lbrace;90&rbrace; = \frac&lbrace;8&rbrace;&lbrace;15&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Method 2 (complement):
 
 $$
-\begin{aligned}
-  P(\mathrm{different}) &= 1 - P(\mathrm{same}) \\
-                     &= 1 - P(\mathrm{both white}) - P(\mathrm{both black}) \\
-  P(\mathrm{both white}) &= \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} \\
-  P(\mathrm{both black}) &= \frac{6}{10} \times \frac{5}{9} = \frac{30}{90} \\
-  P(\mathrm{different}) &= 1 - \frac{12}{90} - \frac{30}{90} = \frac{48}{90} = \frac{8}{15} \quad \checkmark
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(\mathrm&lbrace;different&rbrace;) &= 1 - P(\mathrm&lbrace;same&rbrace;) \\
+                     &= 1 - P(\mathrm&lbrace;both white&rbrace;) - P(\mathrm&lbrace;both black&rbrace;) \\
+  P(\mathrm&lbrace;both white&rbrace;) &= \frac&lbrace;4&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;3&rbrace;&lbrace;9&rbrace; = \frac&lbrace;12&rbrace;&lbrace;90&rbrace; \\
+  P(\mathrm&lbrace;both black&rbrace;) &= \frac&lbrace;6&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;5&rbrace;&lbrace;9&rbrace; = \frac&lbrace;30&rbrace;&lbrace;90&rbrace; \\
+  P(\mathrm&lbrace;different&rbrace;) &= 1 - \frac&lbrace;12&rbrace;&lbrace;90&rbrace; - \frac&lbrace;30&rbrace;&lbrace;90&rbrace; = \frac&lbrace;48&rbrace;&lbrace;90&rbrace; = \frac&lbrace;8&rbrace;&lbrace;15&rbrace; \quad \checkmark
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -810,17 +810,17 @@ $P(A \mid B) = 0.4$. Find $P(A \cup B)$.
 From $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cap B) = P(A \mid B) \cdot P(B) = 0.4 \times 0.5 = 0.2
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 By the addition rule:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.6 + 0.5 - 0.2 = 0.9
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -834,18 +834,18 @@ By the complement independence theorem, since $A$ and $B$ are independent, $A'$ 
 independent:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A' \cap B') = P(A') \cdot P(B') = (1 - 0.3)(1 - 0.5) = 0.7 \times 0.5 = 0.35
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 Verification via complement: $P(A' \cap B') = P((A \cup B)') = 1 - P(A \cup B)$.
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cup B) &= P(A) + P(B) - P(A \cap B) = 0.3 + 0.5 - 0.15 = 0.65 \\
   P(A' \cap B') &= 1 - 0.65 = 0.35 \quad \checkmark
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -858,10 +858,10 @@ $P(A \cup B) = \frac{5}{12}$. Determine whether $A$ and $B$ are independent.
 By the addition rule:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cap B) &= P(A) + P(B) - P(A \cup B) \\
-              &= \frac{1}{3} + \frac{1}{4} - \frac{5}{12} = \frac{4}{12} + \frac{3}{12} - \frac{5}{12} = \frac{2}{12} = \frac{1}{6}
-\end{aligned}
+              &= \frac&lbrace;1&rbrace;&lbrace;3&rbrace; + \frac&lbrace;1&rbrace;&lbrace;4&rbrace; - \frac&lbrace;5&rbrace;&lbrace;12&rbrace; = \frac&lbrace;4&rbrace;&lbrace;12&rbrace; + \frac&lbrace;3&rbrace;&lbrace;12&rbrace; - \frac&lbrace;5&rbrace;&lbrace;12&rbrace; = \frac&lbrace;2&rbrace;&lbrace;12&rbrace; = \frac&lbrace;1&rbrace;&lbrace;6&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 Check independence:
@@ -879,17 +879,17 @@ replacement. Find the probability that all three are the same colour.
 The three colours are mutually exclusive cases, so by the addition rule:
 
 $$
-\begin{aligned}
-  P(\mathrm{all red}) &= \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} = \frac{60}{720} = \frac{1}{12} \\
-  P(\mathrm{all green}) &= \frac{3}{10} \times \frac{2}{9} \times \frac{1}{8} = \frac{6}{720} = \frac{1}{120} \\
-  P(\mathrm{all blue}) &= \frac{2}{10} \times \frac{1}{9} \times \frac{0}{8} = 0
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(\mathrm&lbrace;all red&rbrace;) &= \frac&lbrace;5&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;4&rbrace;&lbrace;9&rbrace; \times \frac&lbrace;3&rbrace;&lbrace;8&rbrace; = \frac&lbrace;60&rbrace;&lbrace;720&rbrace; = \frac&lbrace;1&rbrace;&lbrace;12&rbrace; \\
+  P(\mathrm&lbrace;all green&rbrace;) &= \frac&lbrace;3&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;2&rbrace;&lbrace;9&rbrace; \times \frac&lbrace;1&rbrace;&lbrace;8&rbrace; = \frac&lbrace;6&rbrace;&lbrace;720&rbrace; = \frac&lbrace;1&rbrace;&lbrace;120&rbrace; \\
+  P(\mathrm&lbrace;all blue&rbrace;) &= \frac&lbrace;2&rbrace;&lbrace;10&rbrace; \times \frac&lbrace;1&rbrace;&lbrace;9&rbrace; \times \frac&lbrace;0&rbrace;&lbrace;8&rbrace; = 0
+\end&lbrace;aligned&rbrace;
 $$
 
 $$
-\begin{aligned}
-  P(\mathrm{all same colour}) = \frac{1}{12} + \frac{1}{120} + 0 = \frac{10}{120} + \frac{1}{120} = \frac{11}{120}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(\mathrm&lbrace;all same colour&rbrace;) = \frac&lbrace;1&rbrace;&lbrace;12&rbrace; + \frac&lbrace;1&rbrace;&lbrace;120&rbrace; + 0 = \frac&lbrace;10&rbrace;&lbrace;120&rbrace; + \frac&lbrace;1&rbrace;&lbrace;120&rbrace; = \frac&lbrace;11&rbrace;&lbrace;120&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -901,9 +901,9 @@ probability that they also take Physics?
 <summary>Answer</summary>
 
 $$
-\begin{aligned}
-  P(\mathrm{Physics} \mid \mathrm{Maths}) = \frac{P(\mathrm{Physics} \cap \mathrm{Maths})}{P(\mathrm{Maths})} = \frac{0.30}{0.60} = 0.5
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(\mathrm&lbrace;Physics&rbrace; \mid \mathrm&lbrace;Maths&rbrace;) = \frac&lbrace;P(\mathrm&lbrace;Physics&rbrace; \cap \mathrm&lbrace;Maths&rbrace;)&rbrace;&lbrace;P(\mathrm&lbrace;Maths&rbrace;)&rbrace; = \frac&lbrace;0.30&rbrace;&lbrace;0.60&rbrace; = 0.5
+\end&lbrace;aligned&rbrace;
 $$
 
 Half of Mathematics students also take Physics.
@@ -919,11 +919,11 @@ Bayes' theorem to find the probability it was produced by Machine $X$.
 Let $D$ = defective. The partition is $\{X, Y\}$.
 
 $$
-\begin{aligned}
-  P(X \mid D) &= \frac{P(D \mid X) \cdot P(X)}{P(D \mid X) \cdot P(X) + P(D \mid Y) \cdot P(Y)} \\
-              &= \frac{0.03 \times 0.60}{0.03 \times 0.60 + 0.07 \times 0.40} \\
-              &= \frac{0.018}{0.018 + 0.028} = \frac{0.018}{0.046} \approx 0.391
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(X \mid D) &= \frac&lbrace;P(D \mid X) \cdot P(X)&rbrace;&lbrace;P(D \mid X) \cdot P(X) + P(D \mid Y) \cdot P(Y)&rbrace; \\
+              &= \frac&lbrace;0.03 \times 0.60&rbrace;&lbrace;0.03 \times 0.60 + 0.07 \times 0.40&rbrace; \\
+              &= \frac&lbrace;0.018&rbrace;&lbrace;0.018 + 0.028&rbrace; = \frac&lbrace;0.018&rbrace;&lbrace;0.046&rbrace; \approx 0.391
+\end&lbrace;aligned&rbrace;
 $$
 
 Despite producing 60% of items, Machine $X$ accounts for only about 39.1% of defective items because
@@ -946,9 +946,9 @@ $A \cap B$ = outcomes with first $\geq$ 3 and sum 8: $\\{(3,5), (4,4), (5,3), (6
 $|A \cap B| = 4$.
 
 $$
-\begin{aligned}
-  P(A \mid B) = \frac{|A \cap B|}{|B|} = \frac{4}{24} = \frac{1}{6}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(A \mid B) = \frac&lbrace;|A \cap B|&rbrace;&lbrace;|B|&rbrace; = \frac&lbrace;4&rbrace;&lbrace;24&rbrace; = \frac&lbrace;1&rbrace;&lbrace;6&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 For comparison, the unconditional probability: $P(A) = \frac{5}{36}$ (pairs
@@ -966,12 +966,12 @@ Find $P(A \cup B \cup C)$.
 Using the three-event addition rule:
 
 $$
-\begin{aligned}
+\begin&lbrace;aligned&rbrace;
   P(A \cup B \cup C) &= P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C) \\
-                     &= \frac{1}{3} + \frac{1}{3} + \frac{1}{3} - \frac{1}{6} - \frac{1}{6} - \frac{1}{6} + \frac{1}{12} \\
-                     &= 1 - \frac{1}{2} + \frac{1}{12} \\
-                     &= \frac{12}{12} - \frac{6}{12} + \frac{1}{12} = \frac{7}{12}
-\end{aligned}
+                     &= \frac&lbrace;1&rbrace;&lbrace;3&rbrace; + \frac&lbrace;1&rbrace;&lbrace;3&rbrace; + \frac&lbrace;1&rbrace;&lbrace;3&rbrace; - \frac&lbrace;1&rbrace;&lbrace;6&rbrace; - \frac&lbrace;1&rbrace;&lbrace;6&rbrace; - \frac&lbrace;1&rbrace;&lbrace;6&rbrace; + \frac&lbrace;1&rbrace;&lbrace;12&rbrace; \\
+                     &= 1 - \frac&lbrace;1&rbrace;&lbrace;2&rbrace; + \frac&lbrace;1&rbrace;&lbrace;12&rbrace; \\
+                     &= \frac&lbrace;12&rbrace;&lbrace;12&rbrace; - \frac&lbrace;6&rbrace;&lbrace;12&rbrace; + \frac&lbrace;1&rbrace;&lbrace;12&rbrace; = \frac&lbrace;7&rbrace;&lbrace;12&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 </details>
@@ -989,12 +989,12 @@ $P(\mathrm{condition} \mid \mathrm{positive})$.
 By Bayes' theorem:
 
 $$
-\begin{aligned}
-  P(C \mid +) &= \frac{P(+ \mid C) \cdot P(C)}{P(+ \mid C) \cdot P(C) + P(+ \mid C') \cdot P(C')} \\
-              &= \frac{0.90 \times 0.01}{0.90 \times 0.01 + 0.05 \times 0.99} \\
-              &= \frac{0.009}{0.009 + 0.0495} \\
-              &= \frac{0.009}{0.0585} \approx 0.154
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+  P(C \mid +) &= \frac&lbrace;P(+ \mid C) \cdot P(C)&rbrace;&lbrace;P(+ \mid C) \cdot P(C) + P(+ \mid C') \cdot P(C')&rbrace; \\
+              &= \frac&lbrace;0.90 \times 0.01&rbrace;&lbrace;0.90 \times 0.01 + 0.05 \times 0.99&rbrace; \\
+              &= \frac&lbrace;0.009&rbrace;&lbrace;0.009 + 0.0495&rbrace; \\
+              &= \frac&lbrace;0.009&rbrace;&lbrace;0.0585&rbrace; \approx 0.154
+\end&lbrace;aligned&rbrace;
 $$
 
 A positive result means only about 15.4% chance of actually having the condition. This is the base

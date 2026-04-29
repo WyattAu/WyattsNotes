@@ -44,19 +44,19 @@ complete electron transfer from a metal atom to a non-metal atom.
 The driving force is the attainment of noble gas electron configurations:
 
 $$
-\mathrm{Na}(s) \to \mathrm{Na}^+(g) + e^- \quad \Delta H_{\mathrm{at}}^\circ = +108\mathrm{ kJ/mol}
+\mathrm&lbrace;Na&rbrace;(s) \to \mathrm&lbrace;Na&rbrace;^+(g) + e^- \quad \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ = +108\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 $$
-\frac{1}{2}\mathrm{Cl}_2(g) \to \mathrm{Cl}(g) \quad \Delta H_{\mathrm{at}}^\circ = +122\mathrm{ kJ/mol}
+\frac&lbrace;1&rbrace;&lbrace;2&rbrace;\mathrm&lbrace;Cl&rbrace;_2(g) \to \mathrm&lbrace;Cl&rbrace;(g) \quad \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ = +122\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 $$
-\mathrm{Cl}(g) + e^- \to \mathrm{Cl}^-(g) \quad \Delta H_{\mathrm{EA}} = -349\mathrm{ kJ/mol}
+\mathrm&lbrace;Cl&rbrace;(g) + e^- \to \mathrm&lbrace;Cl&rbrace;^-(g) \quad \Delta H_&lbrace;\mathrm&lbrace;EA&rbrace;&rbrace; = -349\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 $$
-\mathrm{Na}^+(g) + \mathrm{Cl}^-(g) \to \mathrm{NaCl}(s) \quad \Delta H_{\mathrm{LE}} = -787\mathrm{ kJ/mol}
+\mathrm&lbrace;Na&rbrace;^+(g) + \mathrm&lbrace;Cl&rbrace;^-(g) \to \mathrm&lbrace;NaCl&rbrace;(s) \quad \Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace; = -787\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 **Definition.** **Lattice energy** ($\Delta H_{\mathrm{LE}}$) is the enthalpy change when one mole
@@ -68,7 +68,7 @@ energy indicates a stronger ionic bond.
 The Born-Lande equation captures the key variables:
 
 $$
-\Delta H_{\mathrm{LE}} \propto -\frac{|z^+| \cdot |z^-|}{r_+ + r_-}
+\Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace; \propto -\frac&lbrace;|z^+| \cdot |z^-|&rbrace;&lbrace;r_+ + r_-&rbrace;
 $$
 
 | Factor            | Effect on Lattice Energy | Example                          |
@@ -95,19 +95,19 @@ measurable quantities.
 For NaCl:
 
 $$
-\Delta H_f^\circ = \Delta H_{\mathrm{at}}^\circ(\mathrm{Na}) + \frac{1}{2}\Delta H_{\mathrm{at}}^\circ(\mathrm{Cl}_2) + \mathrm{IE}_1(\mathrm{Na}) + \mathrm{EA}_1(\mathrm{Cl}) + \Delta H_{\mathrm{LE}}
+\Delta H_f^\circ = \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ(\mathrm&lbrace;Na&rbrace;) + \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ(\mathrm&lbrace;Cl&rbrace;_2) + \mathrm&lbrace;IE&rbrace;_1(\mathrm&lbrace;Na&rbrace;) + \mathrm&lbrace;EA&rbrace;_1(\mathrm&lbrace;Cl&rbrace;) + \Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace;
 $$
 
 Rearranging for lattice energy:
 
 $$
-\Delta H_{\mathrm{LE}} = \Delta H_f^\circ - \Delta H_{\mathrm{at}}^\circ(\mathrm{Na}) - \frac{1}{2}\Delta H_{\mathrm{at}}^\circ(\mathrm{Cl}_2) - \mathrm{IE}_1(\mathrm{Na}) - \mathrm{EA}_1(\mathrm{Cl})
+\Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace; = \Delta H_f^\circ - \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ(\mathrm&lbrace;Na&rbrace;) - \frac&lbrace;1&rbrace;&lbrace;2&rbrace;\Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ(\mathrm&lbrace;Cl&rbrace;_2) - \mathrm&lbrace;IE&rbrace;_1(\mathrm&lbrace;Na&rbrace;) - \mathrm&lbrace;EA&rbrace;_1(\mathrm&lbrace;Cl&rbrace;)
 $$
 
 Substituting values:
 
 $$
-\Delta H_{\mathrm{LE}} = -411 - 108 - 122 - 496 - (-349) = -788\mathrm{ kJ/mol}
+\Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace; = -411 - 108 - 122 - 496 - (-349) = -788\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 :::info[IB Exam Tip]
@@ -245,7 +245,7 @@ The **molecular dipole moment** ($\mu$) is the vector sum of all individual bond
 can have polar bonds but be non-polar overall if the bond dipoles cancel by symmetry.
 
 $$
-\vec{\mu}_{\mathrm{net}} = \sum \vec{\mu}_i
+\vec&lbrace;\mu&rbrace;_&lbrace;\mathrm&lbrace;net&rbrace;&rbrace; = \sum \vec&lbrace;\mu&rbrace;_i
 $$
 
 | Molecule | Bond Dipoles | Molecular Dipole | Reason                               |
@@ -378,7 +378,7 @@ When an ionic compound dissolves in a polar solvent like water, the ions interac
 dipoles. This is the force responsible for the solvation of ions.
 
 $$
-\mathrm{Na}^+ \cdots \delta^-\mathrm{O}(\mathrm{H}_2\mathrm{O}) \qquad \mathrm{Cl}^- \cdots \delta^+\mathrm{H}(\mathrm{H}_2\mathrm{O})
+\mathrm&lbrace;Na&rbrace;^+ \cdots \delta^-\mathrm&lbrace;O&rbrace;(\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;) \qquad \mathrm&lbrace;Cl&rbrace;^- \cdots \delta^+\mathrm&lbrace;H&rbrace;(\mathrm&lbrace;H&rbrace;_2\mathrm&lbrace;O&rbrace;)
 $$
 
 ### Trends in Boiling Points
@@ -415,7 +415,7 @@ adopting geometries that maximise the angles between them.
 The repulsion order is:
 
 $$
-\mathrm{lone pair--lone pair} \gt \mathrm{lone pair--bond pair} \gt \mathrm{bond pair--bond pair}
+\mathrm&lbrace;lone pair--lone pair&rbrace; \gt \mathrm&lbrace;lone pair--bond pair&rbrace; \gt \mathrm&lbrace;bond pair--bond pair&rbrace;
 $$
 
 This is because lone pairs are held by only one nucleus and occupy more space, while bonding pairs
@@ -596,7 +596,7 @@ energy (lower energy, more stable).
 Ozone has two equivalent resonance structures:
 
 $$
-\chemfig{O=O^{-}-O^{+}} \longleftrightarrow \chemfig{^{-}O-O^{+}=O}
+\chemfig&lbrace;O=O^&lbrace;-&rbrace;-O^&lbrace;+&rbrace;&rbrace; \longleftrightarrow \chemfig&lbrace;^&lbrace;-&rbrace;O-O^&lbrace;+&rbrace;=O&rbrace;
 $$
 
 The actual O-O bond order is 1.5, and the bond length is intermediate between a single and double
@@ -608,7 +608,7 @@ Three equivalent resonance structures, each with one C=O double bond and two C-O
 actual bond order is 1.33 for each C-O bond.
 
 $$
-\mathrm{Bond length measured: } 136\mathrm{ pm (between } 123\mathrm{ pm for C=O and } 143\mathrm{ pm for C-O)}
+\mathrm&lbrace;Bond length measured: &rbrace; 136\mathrm&lbrace; pm (between &rbrace; 123\mathrm&lbrace; pm for C=O and &rbrace; 143\mathrm&lbrace; pm for C-O)&rbrace;
 $$
 
 ### Benzene (C$_6$H$_6$)
@@ -641,7 +641,7 @@ by comparing the number of valence electrons in the free atom with the number as
 structure.
 
 $$
-\mathrm{Formal charge} = V - N_B - \frac{N_L}{2}
+\mathrm&lbrace;Formal charge&rbrace; = V - N_B - \frac&lbrace;N_L&rbrace;&lbrace;2&rbrace;
 $$
 
 where:
@@ -653,7 +653,7 @@ where:
 Equivalently:
 
 $$
-\mathrm{Formal charge} = V - (\mathrm{number of bonds}) - (\mathrm{number of lone pair electrons})
+\mathrm&lbrace;Formal charge&rbrace; = V - (\mathrm&lbrace;number of bonds&rbrace;) - (\mathrm&lbrace;number of lone pair electrons&rbrace;)
 $$
 
 **Rules for choosing the best Lewis structure:**
@@ -668,7 +668,7 @@ $$
 Sulfur has 6 valence electrons. With four single bonds to oxygen and no lone pairs:
 
 $$
-\mathrm{FC}(\mathrm{S}) = 6 - 4 - 0 = +2
+\mathrm&lbrace;FC&rbrace;(\mathrm&lbrace;S&rbrace;) = 6 - 4 - 0 = +2
 $$
 
 Each singly-bonded oxygen: $\mathrm{FC} = 6 - 1 - 6 = -1$
@@ -679,7 +679,7 @@ reduces the formal charges.
 With two S=O double bonds:
 
 $$
-\mathrm{FC}(\mathrm{S}) = 6 - 6 - 0 = 0
+\mathrm&lbrace;FC&rbrace;(\mathrm&lbrace;S&rbrace;) = 6 - 6 - 0 = 0
 $$
 
 The two double-bonded oxygens: $\mathrm{FC} = 6 - 2 - 4 = 0$
@@ -735,7 +735,7 @@ O$_2$ and F$_2$, the energy gap is large enough that s-p mixing is negligible.
 #### Bond Order from MO Theory
 
 $$
-\mathrm{Bond order} = \frac{1}{2}(N_{\mathrm{bonding}} - N_{\mathrm{antibonding}})
+\mathrm&lbrace;Bond order&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;(N_&lbrace;\mathrm&lbrace;bonding&rbrace;&rbrace; - N_&lbrace;\mathrm&lbrace;antibonding&rbrace;&rbrace;)
 $$
 
 | Molecule | Bonding Electrons | Antibonding Electrons | Bond Order | Stability   |
@@ -903,20 +903,20 @@ Calculate the lattice energy of calcium fluoride, CaF$_2$, using the following d
 **Markscheme:**
 
 $$
-\Delta H_f^\circ = \Delta H_{\mathrm{at}}^\circ(\mathrm{Ca}) + \Delta H_{\mathrm{at}}^\circ(\mathrm{F}_2) + \mathrm{IE}_1 + \mathrm{IE}_2 + 2 \times \mathrm{EA}_1(\mathrm{F}) + \Delta H_{\mathrm{LE}}
+\Delta H_f^\circ = \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ(\mathrm&lbrace;Ca&rbrace;) + \Delta H_&lbrace;\mathrm&lbrace;at&rbrace;&rbrace;^\circ(\mathrm&lbrace;F&rbrace;_2) + \mathrm&lbrace;IE&rbrace;_1 + \mathrm&lbrace;IE&rbrace;_2 + 2 \times \mathrm&lbrace;EA&rbrace;_1(\mathrm&lbrace;F&rbrace;) + \Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace;
 $$
 
 $$
--1220 = 178 + 159 + 590 + 1145 + 2(-328) + \Delta H_{\mathrm{LE}}
+-1220 = 178 + 159 + 590 + 1145 + 2(-328) + \Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace;
 $$
 
 $$
 
--1220 = 1416 + \Delta H_{\mathrm{LE}}
+-1220 = 1416 + \Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace;
 $$
 
 $$
-\Delta H_{\mathrm{LE}} = -1220 - 1416 = -2636\mathrm{ kJ/mol}
+\Delta H_&lbrace;\mathrm&lbrace;LE&rbrace;&rbrace; = -1220 - 1416 = -2636\mathrm&lbrace; kJ/mol&rbrace;
 $$
 
 (6 marks for correct cycle setup, correct substitution of all values, and correct arithmetic.)
@@ -933,7 +933,7 @@ and label all orbitals. (3 marks)
 Using the O$_2$/F$_2$ ordering (no s-p mixing):
 
 $$
-\sigma_{2s}^2\; \sigma^{*2}_{2s}\; \sigma^2_{2p_z}\; \pi^2_{2p_x} = \pi^2_{2p_y}\; \pi^{*1}_{2p_x} = \pi^{*1}_{2p_y}
+\sigma_&lbrace;2s&rbrace;^2\; \sigma^&lbrace;*2&rbrace;_&lbrace;2s&rbrace;\; \sigma^2_&lbrace;2p_z&rbrace;\; \pi^2_&lbrace;2p_x&rbrace; = \pi^2_&lbrace;2p_y&rbrace;\; \pi^&lbrace;*1&rbrace;_&lbrace;2p_x&rbrace; = \pi^&lbrace;*1&rbrace;_&lbrace;2p_y&rbrace;
 $$
 
 - Correct orbital energy ordering (1 mark).
@@ -1031,7 +1031,7 @@ expected trend. (3 marks)
 ### IMF Strength Ranking
 
 $$
-\mathrm{Ion-dipole} \gt \mathrm{Hydrogen bonding} \gt \mathrm{Dipole-dipole} \gt \mathrm{London dispersion}
+\mathrm&lbrace;Ion-dipole&rbrace; \gt \mathrm&lbrace;Hydrogen bonding&rbrace; \gt \mathrm&lbrace;Dipole-dipole&rbrace; \gt \mathrm&lbrace;London dispersion&rbrace;
 $$
 
 ### VSEPR Quick Reference

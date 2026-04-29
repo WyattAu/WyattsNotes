@@ -14,7 +14,7 @@ The limit of a function $f(x)$ as $x$ approaches $a$ is the value that $f(x)$ ap
 of whether $f(a)$ is defined:
 
 $$
-\lim_{x \to a} f(x) = L
+\lim_&lbrace;x \to a&rbrace; f(x) = L
 $$
 
 This means that as $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily close to $L$.
@@ -24,7 +24,7 @@ This means that as $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily cl
 A two-sided limit exists if and only if both one-sided limits exist and are equal:
 
 $$
-\lim_{x \to a} f(x) = L \iff \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L
+\lim_&lbrace;x \to a&rbrace; f(x) = L \iff \lim_&lbrace;x \to a^-&rbrace; f(x) = \lim_&lbrace;x \to a^+&rbrace; f(x) = L
 $$
 
 :::info[Example]
@@ -32,11 +32,11 @@ $$
 Find $\displaystyle\lim_{x \to 0} \frac{|x|}{x}$.
 
 $$
-\lim_{x \to 0^-} \frac{|x|}{x} = \lim_{x \to 0^-} \frac{-x}{x} = -1
+\lim_&lbrace;x \to 0^-&rbrace; \frac&lbrace;|x|&rbrace;&lbrace;x&rbrace; = \lim_&lbrace;x \to 0^-&rbrace; \frac&lbrace;-x&rbrace;&lbrace;x&rbrace; = -1
 $$
 
 $$
-\lim_{x \to 0^+} \frac{|x|}{x} = \lim_{x \to 0^+} \frac{x}{x} = 1
+\lim_&lbrace;x \to 0^+&rbrace; \frac&lbrace;|x|&rbrace;&lbrace;x&rbrace; = \lim_&lbrace;x \to 0^+&rbrace; \frac&lbrace;x&rbrace;&lbrace;x&rbrace; = 1
 $$
 
 Since the one-sided limits are not equal, the limit does not exist.
@@ -59,7 +59,7 @@ Since the one-sided limits are not equal, the limit does not exist.
 If $g(x) \le f(x) \le h(x)$ for all $x$ near $a$ (except possibly at $a$), and:
 
 $$
-\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L
+\lim_&lbrace;x \to a&rbrace; g(x) = \lim_&lbrace;x \to a&rbrace; h(x) = L
 $$
 
 then $\displaystyle\lim_{x \to a} f(x) = L$.
@@ -101,7 +101,7 @@ left-hand limit, right-hand limit, and function value all agree.
 The derivative of $f$ at $x = a$ is defined as:
 
 $$
-f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+f'(a) = \lim_&lbrace;h \to 0&rbrace; \frac&lbrace;f(a+h) - f(a)&rbrace;&lbrace;h&rbrace;
 $$
 
 This limit, when it exists, gives the instantaneous rate of change of $f$ at $x = a$, and equals the
@@ -110,7 +110,7 @@ gradient of the tangent line to the curve $y = f(x)$ at that point.
 ### Alternative Form
 
 $$
-f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
+f'(x) = \lim_&lbrace;\Delta x \to 0&rbrace; \frac&lbrace;f(x + \Delta x) - f(x)&rbrace;&lbrace;\Delta x&rbrace;
 $$
 
 ### Differentiability Implies Continuity
@@ -123,13 +123,13 @@ function can be continuous but not differentiable (e.g., $f(x) = |x|$ at $x = 0$
 Differentiate $f(x) = x^2$ from first principles.
 
 $$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} \\[6pt]
-&= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\[6pt]
-&= \lim_{h \to 0} \frac{2xh + h^2}{h} \\[6pt]
-&= \lim_{h \to 0}(2x + h) \\[6pt]
+\begin&lbrace;aligned&rbrace;
+f'(x) &= \lim_&lbrace;h \to 0&rbrace; \frac&lbrace;(x+h)^2 - x^2&rbrace;&lbrace;h&rbrace; \\[6pt]
+&= \lim_&lbrace;h \to 0&rbrace; \frac&lbrace;x^2 + 2xh + h^2 - x^2&rbrace;&lbrace;h&rbrace; \\[6pt]
+&= \lim_&lbrace;h \to 0&rbrace; \frac&lbrace;2xh + h^2&rbrace;&lbrace;h&rbrace; \\[6pt]
+&= \lim_&lbrace;h \to 0&rbrace;(2x + h) \\[6pt]
 &= 2x
-\end{aligned}
+\end&lbrace;aligned&rbrace;
 $$
 
 :::
@@ -152,19 +152,19 @@ Several notations are equivalent:
 For $n \in \mathbb{R}$:
 
 $$
-\frac{d}{dx}[x^n] = nx^{n-1}
+\frac&lbrace;d&rbrace;&lbrace;dx&rbrace;[x^n] = nx^&lbrace;n-1&rbrace;
 $$
 
 ### Constant Multiple Rule
 
 $$
-\frac{d}{dx}[cf(x)] = c \cdot f'(x)
+\frac&lbrace;d&rbrace;&lbrace;dx&rbrace;[cf(x)] = c \cdot f'(x)
 $$
 
 ### Sum and Difference Rule
 
 $$
-\frac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x)
+\frac&lbrace;d&rbrace;&lbrace;dx&rbrace;[f(x) \pm g(x)] = f'(x) \pm g'(x)
 $$
 
 ### The Product Rule
@@ -172,7 +172,7 @@ $$
 If $u = f(x)$ and $v = g(x)$, then:
 
 $$
-\frac{d}{dx}[uv] = u\frac{dv}{dx} + v\frac{du}{dx}
+\frac&lbrace;d&rbrace;&lbrace;dx&rbrace;[uv] = u\frac&lbrace;dv&rbrace;&lbrace;dx&rbrace; + v\frac&lbrace;du&rbrace;&lbrace;dx&rbrace;
 $$
 
 :::info[Example]
@@ -188,7 +188,7 @@ $$
 ### The Quotient Rule
 
 $$
-\frac{d}{dx}\left[\frac{u}{v}\right] = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}
+\frac&lbrace;d&rbrace;&lbrace;dx&rbrace;\left[\frac&lbrace;u&rbrace;&lbrace;v&rbrace;\right] = \frac&lbrace;v\frac&lbrace;du&rbrace;&lbrace;dx&rbrace; - u\frac&lbrace;dv&rbrace;&lbrace;dx&rbrace;&rbrace;&lbrace;v^2&rbrace;
 $$
 
 :::warning[Exam Tip]
@@ -205,11 +205,11 @@ Differentiate $\displaystyle f(x) = \frac{x^2 + 1}{x - 3}$.
 Let $u = x^2 + 1$ and $v = x - 3$. Then $u' = 2x$ and $v' = 1$.
 
 $$
-\begin{aligned}
-f'(x) &= \frac{(x-3)(2x) - (x^2+1)(1)}{(x-3)^2} \\[6pt]
-&= \frac{2x^2 - 6x - x^2 - 1}{(x-3)^2} \\[6pt]
-&= \frac{x^2 - 6x - 1}{(x-3)^2}
-\end{aligned}
+\begin&lbrace;aligned&rbrace;
+f'(x) &= \frac&lbrace;(x-3)(2x) - (x^2+1)(1)&rbrace;&lbrace;(x-3)^2&rbrace; \\[6pt]
+&= \frac&lbrace;2x^2 - 6x - x^2 - 1&rbrace;&lbrace;(x-3)^2&rbrace; \\[6pt]
+&= \frac&lbrace;x^2 - 6x - 1&rbrace;&lbrace;(x-3)^2&rbrace;
+\end&lbrace;aligned&rbrace;
 $$
 
 :::
@@ -219,13 +219,13 @@ $$
 If $y = f(g(x))$, then:
 
 $$
-\frac{dy}{dx} = f'(g(x)) \cdot g'(x)
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = f'(g(x)) \cdot g'(x)
 $$
 
 Or in Leibniz notation, if $y = f(u)$ and $u = g(x)$:
 
 $$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = \frac&lbrace;dy&rbrace;&lbrace;du&rbrace; \cdot \frac&lbrace;du&rbrace;&lbrace;dx&rbrace;
 $$
 
 :::info[Example]
@@ -235,7 +235,7 @@ Differentiate $f(x) = (3x^2 + 1)^5$.
 Let $u = 3x^2 + 1$, so $y = u^5$.
 
 $$
-\frac{dy}{dx} = 5u^4 \cdot 6x = 30x(3x^2+1)^4
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = 5u^4 \cdot 6x = 30x(3x^2+1)^4
 $$
 
 :::
@@ -247,7 +247,7 @@ Differentiate $\displaystyle f(x) = \sin(2x^2 + 1)$.
 Let $u = 2x^2 + 1$, so $y = \sin u$.
 
 $$
-\frac{dy}{dx} = \cos u \cdot 4x = 4x\cos(2x^2+1)
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = \cos u \cdot 4x = 4x\cos(2x^2+1)
 $$
 
 :::
@@ -293,7 +293,7 @@ differentiate both sides with respect to $x$ and solve for $\dfrac{dy}{dx}$.
 When differentiating a term involving $y$ with respect to $x$, use the chain rule:
 
 $$
-\frac{d}{dx}[y^n] = ny^{n-1}\frac{dy}{dx}
+\frac&lbrace;d&rbrace;&lbrace;dx&rbrace;[y^n] = ny^&lbrace;n-1&rbrace;\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace;
 $$
 
 :::info[Example]
@@ -303,11 +303,11 @@ Find $\dfrac{dy}{dx}$ for $x^2 + y^2 = 25$.
 Differentiate both sides with respect to $x$:
 
 $$
-2x + 2y\frac{dy}{dx} = 0
+2x + 2y\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = 0
 $$
 
 $$
-\frac{dy}{dx} = -\frac{x}{y}
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = -\frac&lbrace;x&rbrace;&lbrace;y&rbrace;
 $$
 
 At the point $(3, 4)$: $\dfrac{dy}{dx} = -\dfrac{3}{4}$.
@@ -319,19 +319,19 @@ At the point $(3, 4)$: $\dfrac{dy}{dx} = -\dfrac{3}{4}$.
 Find $\dfrac{dy}{dx}$ for $x^3 + y^3 = 6xy$.
 
 $$
-3x^2 + 3y^2\frac{dy}{dx} = 6y + 6x\frac{dy}{dx}
+3x^2 + 3y^2\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = 6y + 6x\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace;
 $$
 
 $$
-3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2
+3y^2\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; - 6x\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = 6y - 3x^2
 $$
 
 $$
-\frac{dy}{dx}(3y^2 - 6x) = 6y - 3x^2
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace;(3y^2 - 6x) = 6y - 3x^2
 $$
 
 $$
-\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = \frac&lbrace;6y - 3x^2&rbrace;&lbrace;3y^2 - 6x&rbrace; = \frac&lbrace;2y - x^2&rbrace;&lbrace;y^2 - 2x&rbrace;
 $$
 
 :::
@@ -350,13 +350,13 @@ We have $\dfrac{dy}{dx} = -\dfrac{x}{y}$.
 Differentiate with respect to $x$:
 
 $$
-\frac{d^2y}{dx^2} = -\frac{y \cdot 1 - x \cdot \frac{dy}{dx}}{y^2}
+\frac&lbrace;d^2y&rbrace;&lbrace;dx^2&rbrace; = -\frac&lbrace;y \cdot 1 - x \cdot \frac&lbrace;dy&rbrace;&lbrace;dx&rbrace;&rbrace;&lbrace;y^2&rbrace;
 $$
 
 Substitute $\dfrac{dy}{dx} = -\dfrac{x}{y}$:
 
 $$
-\frac{d^2y}{dx^2} = -\frac{y - x\left(-\frac{x}{y}\right)}{y^2} = -\frac{y + \frac{x^2}{y}}{y^2} = -\frac{y^2 + x^2}{y^3} = -\frac{25}{y^3}
+\frac&lbrace;d^2y&rbrace;&lbrace;dx^2&rbrace; = -\frac&lbrace;y - x\left(-\frac&lbrace;x&rbrace;&lbrace;y&rbrace;\right)&rbrace;&lbrace;y^2&rbrace; = -\frac&lbrace;y + \frac&lbrace;x^2&rbrace;&lbrace;y&rbrace;&rbrace;&lbrace;y^2&rbrace; = -\frac&lbrace;y^2 + x^2&rbrace;&lbrace;y^3&rbrace; = -\frac&lbrace;25&rbrace;&lbrace;y^3&rbrace;
 $$
 
 :::
@@ -384,17 +384,17 @@ Volume of a sphere: $V = \dfrac{4}{3}\pi r^3$.
 Differentiate with respect to $t$:
 
 $$
-\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}
+\frac&lbrace;dV&rbrace;&lbrace;dt&rbrace; = 4\pi r^2 \frac&lbrace;dr&rbrace;&lbrace;dt&rbrace;
 $$
 
 Substitute $\dfrac{dV}{dt} = 10$ and $r = 5$:
 
 $$
-10 = 4\pi(25)\frac{dr}{dt}
+10 = 4\pi(25)\frac&lbrace;dr&rbrace;&lbrace;dt&rbrace;
 $$
 
 $$
-\frac{dr}{dt} = \frac{10}{100\pi} = \frac{1}{10\pi} \approx 0.0318 \mathrm{ cm/s}
+\frac&lbrace;dr&rbrace;&lbrace;dt&rbrace; = \frac&lbrace;10&rbrace;&lbrace;100\pi&rbrace; = \frac&lbrace;1&rbrace;&lbrace;10\pi&rbrace; \approx 0.0318 \mathrm&lbrace; cm/s&rbrace;
 $$
 
 :::
@@ -411,11 +411,11 @@ Differentiate: $2x\dfrac{dx}{dt} + 2y\dfrac{dy}{dt} = 0$.
 When $x = 6$: $y = \sqrt{100-36} = 8$.
 
 $$
-2(6)(1) + 2(8)\frac{dy}{dt} = 0
+2(6)(1) + 2(8)\frac&lbrace;dy&rbrace;&lbrace;dt&rbrace; = 0
 $$
 
 $$
-\frac{dy}{dt} = -\frac{12}{16} = -0.75 \mathrm{ m/s}
+\frac&lbrace;dy&rbrace;&lbrace;dt&rbrace; = -\frac&lbrace;12&rbrace;&lbrace;16&rbrace; = -0.75 \mathrm&lbrace; m/s&rbrace;
 $$
 
 The negative sign means the top is sliding down.
@@ -429,11 +429,11 @@ The negative sign means the top is sliding down.
 ### Notation
 
 $$
-f''(x) = \frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right)
+f''(x) = \frac&lbrace;d^2y&rbrace;&lbrace;dx^2&rbrace; = \frac&lbrace;d&rbrace;&lbrace;dx&rbrace;\left(\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace;\right)
 $$
 
 $$
-f'''(x) = \frac{d^3y}{dx^3} = \frac{d}{dx}\left(\frac{d^2y}{dx^2}\right)
+f'''(x) = \frac&lbrace;d^3y&rbrace;&lbrace;dx^3&rbrace; = \frac&lbrace;d&rbrace;&lbrace;dx&rbrace;\left(\frac&lbrace;d^2y&rbrace;&lbrace;dx^2&rbrace;\right)
 $$
 
 :::info[Example]
@@ -470,7 +470,7 @@ The **normal** is perpendicular to the tangent, so its gradient is $-\dfrac{1}{f
 $f'(a) \neq 0$):
 
 $$
-y - f(a) = -\frac{1}{f'(a)}(x - a)
+y - f(a) = -\frac&lbrace;1&rbrace;&lbrace;f'(a)&rbrace;(x - a)
 $$
 
 :::info[Example]
@@ -532,8 +532,8 @@ At $x = 3$: $f''(3) = 6 \gt 0$, so local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 <!-- TODO: replace with a verified Desmos graph URL showing f(x), f'(x), f''(x) with interactive sliders -->
 
-<DesmosGraph title="Stationary Points and Concavity" expressions={["f(x)=x^3-3x+1",
-"\frac{d}{dx}f(x)"]} width={800} height={500} />
+<DesmosGraph title="Stationary Points and Concavity" expressions=&lbrace;["f(x)=x^3-3x+1",
+"\frac&lbrace;d&rbrace;&lbrace;dx&rbrace;f(x)"]&rbrace; width=&lbrace;800&rbrace; height=&lbrace;500&rbrace; />
 
 Use the sliders to adjust coefficients of a polynomial and observe how $f'(x)$ and $f''(x)$
 determine stationary points and concavity.
@@ -600,11 +600,11 @@ Let the dimensions be $x$ and $y$. Then $2x + 2y = 100$, so $y = 50 - x$.
 Area: $A = xy = x(50 - x) = 50x - x^2$.
 
 $$
-\frac{dA}{dx} = 50 - 2x = 0 \implies x = 25
+\frac&lbrace;dA&rbrace;&lbrace;dx&rbrace; = 50 - 2x = 0 \implies x = 25
 $$
 
 $$
-\frac{d^2A}{dx^2} = -2 \lt 0 \implies \mathrm{maximum}
+\frac&lbrace;d^2A&rbrace;&lbrace;dx^2&rbrace; = -2 \lt 0 \implies \mathrm&lbrace;maximum&rbrace;
 $$
 
 So $x = 25\mathrm{ cm}$, $y = 25\mathrm{ cm}$. The rectangle is a square with area
@@ -622,19 +622,19 @@ Volume: $V = \pi r^2 h = 500$, so $h = \dfrac{500}{\pi r^2}$.
 Surface area (no top): $A = \pi r^2 + 2\pi r h = \pi r^2 + \dfrac{1000}{r}$.
 
 $$
-\frac{dA}{dr} = 2\pi r - \frac{1000}{r^2} = 0
+\frac&lbrace;dA&rbrace;&lbrace;dr&rbrace; = 2\pi r - \frac&lbrace;1000&rbrace;&lbrace;r^2&rbrace; = 0
 $$
 
 $$
-2\pi r = \frac{1000}{r^2} \implies 2\pi r^3 = 1000 \implies r^3 = \frac{500}{\pi}
+2\pi r = \frac&lbrace;1000&rbrace;&lbrace;r^2&rbrace; \implies 2\pi r^3 = 1000 \implies r^3 = \frac&lbrace;500&rbrace;&lbrace;\pi&rbrace;
 $$
 
 $$
-r = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
+r = \left(\frac&lbrace;500&rbrace;&lbrace;\pi&rbrace;\right)^&lbrace;1/3&rbrace; \approx 5.42 \mathrm&lbrace; cm&rbrace;
 $$
 
 $$
-h = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
+h = \frac&lbrace;500&rbrace;&lbrace;\pi \cdot \left(\frac&lbrace;500&rbrace;&lbrace;\pi&rbrace;\right)^&lbrace;2/3&rbrace;&rbrace; = \left(\frac&lbrace;500&rbrace;&lbrace;\pi&rbrace;\right)^&lbrace;1/3&rbrace; \approx 5.42 \mathrm&lbrace; cm&rbrace;
 $$
 
 The optimal open-top can has $h = r$, i.e., height equals radius.
@@ -649,7 +649,7 @@ If $\displaystyle\lim_{x \to a}\frac{f(x)}{g(x)}$ gives an indeterminate form $\
 $\dfrac{\pm\infty}{\pm\infty}$, then:
 
 $$
-\lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}
+\lim_&lbrace;x \to a&rbrace;\frac&lbrace;f(x)&rbrace;&lbrace;g(x)&rbrace; = \lim_&lbrace;x \to a&rbrace;\frac&lbrace;f'(x)&rbrace;&lbrace;g'(x)&rbrace;
 $$
 
 provided the limit on the right exists.
@@ -661,13 +661,13 @@ Evaluate $\displaystyle\lim_{x \to 0}\frac{e^x - 1 - x}{x^2}$.
 Direct substitution gives $\dfrac{0}{0}$, so apply L'Hopital's rule:
 
 $$
-\lim_{x \to 0}\frac{e^x - 1}{2x}
+\lim_&lbrace;x \to 0&rbrace;\frac&lbrace;e^x - 1&rbrace;&lbrace;2x&rbrace;
 $$
 
 Still $\dfrac{0}{0}$, apply again:
 
 $$
-\lim_{x \to 0}\frac{e^x}{2} = \frac{1}{2}
+\lim_&lbrace;x \to 0&rbrace;\frac&lbrace;e^x&rbrace;&lbrace;2&rbrace; = \frac&lbrace;1&rbrace;&lbrace;2&rbrace;
 $$
 
 :::
@@ -721,24 +721,24 @@ available.
 **(a)** If the side parallel to the house has length $x\mathrm{ m}$, show that the area is:
 
 $$
-A = x\left(30 - \frac{x}{2}\right) = 30x - \frac{x^2}{2}
+A = x\left(30 - \frac&lbrace;x&rbrace;&lbrace;2&rbrace;\right) = 30x - \frac&lbrace;x^2&rbrace;&lbrace;2&rbrace;
 $$
 
 The two perpendicular sides have total length $60 - x$, so each is
 $\dfrac{60-x}{2} = 30 - \dfrac{x}{2}$.
 
 $$
-A = x\left(30 - \frac{x}{2}\right)
+A = x\left(30 - \frac&lbrace;x&rbrace;&lbrace;2&rbrace;\right)
 $$
 
 **(b)** Find the value of $x$ that maximises the area.
 
 $$
-\frac{dA}{dx} = 30 - x = 0 \implies x = 30
+\frac&lbrace;dA&rbrace;&lbrace;dx&rbrace; = 30 - x = 0 \implies x = 30
 $$
 
 $$
-\frac{d^2A}{dx^2} = -1 \lt 0 \implies \mathrm{maximum}
+\frac&lbrace;d^2A&rbrace;&lbrace;dx^2&rbrace; = -1 \lt 0 \implies \mathrm&lbrace;maximum&rbrace;
 $$
 
 Maximum area $= 30 \times 15 = 450\mathrm{ m}^2$.
@@ -750,15 +750,15 @@ Given $x^2 + xy + y^2 = 7$:
 **(a)** Find $\dfrac{dy}{dx}$ in terms of $x$ and $y$.
 
 $$
-2x + y + x\frac{dy}{dx} + 2y\frac{dy}{dx} = 0
+2x + y + x\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; + 2y\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = 0
 $$
 
 $$
-(x + 2y)\frac{dy}{dx} = -(2x + y)
+(x + 2y)\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = -(2x + y)
 $$
 
 $$
-\frac{dy}{dx} = -\frac{2x+y}{x+2y}
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = -\frac&lbrace;2x+y&rbrace;&lbrace;x+2y&rbrace;
 $$
 
 **(b)** Verify that the point $(1, 2)$ lies on the curve and find the gradient at that point.
@@ -766,7 +766,7 @@ $$
 $1 + 2 + 4 = 7$. Yes.
 
 $$
-\frac{dy}{dx}\bigg|_{(1,2)} = -\frac{2+2}{1+4} = -\frac{4}{5}
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace;\bigg|_&lbrace;(1,2)&rbrace; = -\frac&lbrace;2+2&rbrace;&lbrace;1+4&rbrace; = -\frac&lbrace;4&rbrace;&lbrace;5&rbrace;
 $$
 
 ### Question 4 (Paper 2 style)
@@ -778,7 +778,7 @@ The curve $C$ has equation $y = x e^{-x}$.
 Using the product rule with $u = x$ and $v = e^{-x}$:
 
 $$
-\frac{dy}{dx} = 1 \cdot e^{-x} + x \cdot (-e^{-x}) = e^{-x}(1 - x)
+\frac&lbrace;dy&rbrace;&lbrace;dx&rbrace; = 1 \cdot e^&lbrace;-x&rbrace; + x \cdot (-e^&lbrace;-x&rbrace;) = e^&lbrace;-x&rbrace;(1 - x)
 $$
 
 **(b)** Find the coordinates of the stationary point and determine its nature.
@@ -819,7 +819,7 @@ A = \pi r^2
 $$
 
 $$
-\frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi(4)(0.5) = 4\pi \mathrm{ cm}^2\mathrm{/s}
+\frac&lbrace;dA&rbrace;&lbrace;dt&rbrace; = 2\pi r \frac&lbrace;dr&rbrace;&lbrace;dt&rbrace; = 2\pi(4)(0.5) = 4\pi \mathrm&lbrace; cm&rbrace;^2\mathrm&lbrace;/s&rbrace;
 $$
 
 ### Question 6 (Paper 2 style)
@@ -831,7 +831,7 @@ Let $f(x) = \dfrac{x}{x^2 + 1}$.
 Using the quotient rule with $u = x$, $v = x^2 + 1$:
 
 $$
-f'(x) = \frac{(x^2+1)(1) - x(2x)}{(x^2+1)^2} = \frac{1 - x^2}{(x^2+1)^2}
+f'(x) = \frac&lbrace;(x^2+1)(1) - x(2x)&rbrace;&lbrace;(x^2+1)^2&rbrace; = \frac&lbrace;1 - x^2&rbrace;&lbrace;(x^2+1)^2&rbrace;
 $$
 
 **(b)** Find the range of values of $x$ for which $f$ is increasing.
