@@ -611,7 +611,7 @@ FROM Student
 WHERE gpa >= 3.5 AND enrollmentYear = 2023;
 ```
 
-**Comparison operators in WHERE:** `=`, `<>`, `<`, `>`, `<=`, `>=`, `BETWEEN`, `LIKE`, `IN`,
+**Comparison operators in WHERE:** `=`, `<>`, `<`, `>`, `$\le$`, `$\ge$`, `BETWEEN`, `LIKE`, `IN`,
 `IS NULL`, `IS NOT NULL`.
 
 **ORDER BY:**

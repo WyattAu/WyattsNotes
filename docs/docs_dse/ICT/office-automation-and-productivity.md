@@ -75,7 +75,7 @@ vertically.
 | **Multiplication / Division** | `*`, `/`                                     |                          |
 | **Addition / Subtraction**    | `+`, `-`                                     |                          |
 | **Concatenation**             | `&`                                          |                          |
-| **Comparison**                | `=`, `<>`, `<`, `>`, `<=`, `>=`              | Lowest                   |
+| **Comparison**                | `=`, `<>`, `<`, `>`, `$\le$`, `$\ge$`              | Lowest                   |
 
 ### Common Spreadsheet Functions
 

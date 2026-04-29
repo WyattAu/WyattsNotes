@@ -42,8 +42,8 @@ students to present OOP concepts
   - `!=`
   - `>`
   - `<`
-  - `>=`
-  - `<=`
+  - `$\ge$`
+  - `$\le$`
 - Boolean
   - `!`
   - `&&`

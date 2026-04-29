@@ -74,8 +74,8 @@ x += 5     # shorthand, x is now 20
 | `!=`     | Not equal to             |
 | `>`      | Greater than             |
 | `<`      | Less than                |
-| `>=`     | Greater than or equal to |
-| `<=`     | Less than or equal to    |
+| `$\ge$`  | Greater than or equal to |
+| `$\le$`  | Less than or equal to    |
 
 **Logical operators:**
 
@@ -436,7 +436,7 @@ ENDWHILE
 OUTPUT sum
 ```
 
-| Iteration | `count` | `sum`       | `count <= n` |
+| Iteration | `count` | `sum`       | `count $\le$` n |
 | --------- | ------- | ----------- | ------------ |
 | 1         | 1       | 0 + 1 = 1   | True         |
 | 2         | 2       | 1 + 2 = 3   | True         |
@@ -715,8 +715,8 @@ WHERE Class = '5A' AND Score >= 70;
 | `<>` or `!=` | Not equal to                |
 | `>`          | Greater than                |
 | `<`          | Less than                   |
-| `>=`         | Greater than or equal to    |
-| `<=`         | Less than or equal to       |
+| `$\ge$`      | Greater than or equal to    |
+| `$\le$`      | Less than or equal to       |
 | `BETWEEN`    | Range                       |
 | `LIKE`       | Pattern matching            |
 | `IN`         | Matches any value in a list |

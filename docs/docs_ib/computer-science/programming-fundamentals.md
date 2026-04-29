@@ -139,8 +139,8 @@ This pattern generalizes: to extract digit at position $p$ (0-indexed from the r
 | `<>`     | Not equal to             | `5 <> 3` | TRUE   |
 | `<`      | Less than                | `3 < 5`  | TRUE   |
 | `>`      | Greater than             | `5 > 3`  | TRUE   |
-| `<=`     | Less than or equal to    | `5 <= 5` | TRUE   |
-| `>=`     | Greater than or equal to | `5 >= 3` | TRUE   |
+| `$\le$`  | Less than or equal to    | `5 $\le$` 5 | TRUE   |
+| `$\ge$`  | Greater than or equal to | `5 $\ge$` 3 | TRUE   |
 
 Relational operators always produce a BOOLEAN result. They can be applied to numeric types
 (comparing magnitude) and string types (comparing lexicographically based on character codes).
@@ -285,9 +285,9 @@ OUTPUT grade
 
 | Step | Condition Tested       | Result | Action              |
 | ---- | ---------------------- | ------ | ------------------- |
-| 1    | `75 >= 90`             | FALSE  | Skip to ELSE        |
-| 2    | `75 >= 80`             | FALSE  | Skip to ELSE        |
-| 3    | `75 >= 70`             | TRUE   | `grade ← "C"`       |
+| 1    | `75 $\ge$` 90`             | FALSE  | Skip to ELSE        |
+| 2    | `75 $\ge$` 80`             | FALSE  | Skip to ELSE        |
+| 3    | `75 $\ge$` 70`             | TRUE   | `grade ← "C"`       |
 | 4    | (inner ELSE skipped)   | --     | --                  |
 | 5    | Output `grade`         | --     | Outputs "C"         |
 
@@ -295,7 +295,7 @@ Output: **C**
 
 Key insight: Nested IF-ELSE IF evaluates conditions top-down. Once a TRUE condition is found, the
 corresponding branch executes and all remaining branches are skipped. The order of conditions matters:
-if they were reversed (checking `>= 60` first), every score of 60 or above would get "D".
+if they were reversed (checking `$\ge$` 60 first), every score of 60 or above would get "D".
 
 </details>
 
@@ -1003,7 +1003,7 @@ END FUNCTION
 
 Trace with `n = 3`:
 
-| Step | i   | n   | result | i `<=` n | result + i \* i |
+| Step | i   | n   | result | i `$\le$` n | result + i \* i |
 | ---- | --- | --- | ------ | -------- | --------------- |
 | 1    | 1   | 3   | 0      | True     | 0 + 1 = 1       |
 | 2    | 2   | 3   | 1      | True     | 1 + 4 = 5       |
@@ -1208,7 +1208,7 @@ END LOOP
 
 **Iteration:**
 
-- Off-by-one errors: using `<=` instead of `<` (or vice versa) in loop conditions. Always verify
+- Off-by-one errors: using `$\le$` instead of `<` (or vice versa) in loop conditions. Always verify
   with boundary values.
 - Infinite loops: forgetting to update the loop variable in a WHILE loop, or setting a condition
   that can never become false.
@@ -1364,10 +1364,10 @@ OUTPUT grade
 
 | Step | Condition    | Result | Action          |
 | ---- | ------------ | ------ | --------------- |
-| 1    | `55 >= 90`   | FALSE  | Check next      |
-| 2    | `55 >= 80`   | FALSE  | Check next      |
-| 3    | `55 >= 70`   | FALSE  | Check next      |
-| 4    | `55 >= 60`   | FALSE  | Check next      |
+| 1    | `55 $\ge$` 90`   | FALSE  | Check next      |
+| 2    | `55 $\ge$` 80`   | FALSE  | Check next      |
+| 3    | `55 $\ge$` 70`   | FALSE  | Check next      |
+| 4    | `55 $\ge$` 60`   | FALSE  | Check next      |
 | 5    | (else branch)| --     | `grade ← "F"`   |
 | 6    | --           | --     | OUTPUT "F"      |
 
@@ -1591,7 +1591,7 @@ END FUNCTION
 
 - Check divisibility by 2 separately, then only test odd divisors (step by 2).
 - Only test up to $\sqrt{n}$ (since if $n = a \times b$ and $a \leq b$, then $a \leq \sqrt{n}$). In
-  pseudocode, `i * i <= n` avoids needing a square root function.
+  pseudocode, `i * i $\le$` n avoids needing a square root function.
 - Time complexity: $O(\sqrt{n})$, which is efficient for the values typically tested in IB exams.
 
 **Revision:** Functions, Iteration, WHILE Loop, Operators (MOD)

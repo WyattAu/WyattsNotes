@@ -175,7 +175,7 @@ END FUNCTION
 
 With input `n = 4`, the trace table is:
 
-| Step | i   | n   | total | i `<=` n |
+| Step | i   | n   | total | i `$\le$` n |
 | ---- | --- | --- | ----- | -------- |
 | 1    | 1   | 4   | 0     | True     |
 | 2    | 1   | 4   | 1     | True     |
@@ -875,7 +875,7 @@ or reverse-sorted worst-case inputs.
 
 **Trace with `arr = [10, 80, 30, 90, 40, 50, 70]`, pivot = 70 (last element):**
 
-Partition step: elements `<=` 70 are [10, 30, 40, 50], elements `>` 70 are [80, 90].
+Partition step: elements `$\le$` 70 are [10, 30, 40, 50], elements `>` 70 are [80, 90].
 
 After partition: [10, 30, 40, 50, 70, 90, 80], pivot index = 4.
 
@@ -902,7 +902,7 @@ Apply the Lomuto partition scheme to `arr = [7, 2, 1, 6, 8, 5, 3, 4]` with pivot
 
 Initial: pivot = 4, i = -1
 
-| j | arr[j] | arr[j] `<=` 4? | Action                     | i  | Array State               |
+| j | arr[j] | arr[j] `$\le$` 4? | Action                     | i  | Array State               |
 | - | ------ | ------------ | -------------------------- | -- | ------------------------- |
 | 0 | 7      | No           | Skip                       | -1 | [7, 2, 1, 6, 8, 5, 3, 4] |
 | 1 | 2      | Yes          | i=0, swap arr[0] and arr[1]| 0  | [2, 7, 1, 6, 8, 5, 3, 4] |
@@ -927,7 +927,7 @@ Explain what happens when quick sort (with last-element pivot) is applied to `[1
 <details>
 <summary>Solution</summary>
 
-Partition `[1, 2, 3, 4, 5]` with pivot = 5: no element except 5 is <= 5 at index 4, so the pivot stays at position 4. Left = `[1, 2, 3, 4]`, right = `[]`.
+Partition `[1, 2, 3, 4, 5]` with pivot = 5: no element except 5 is $\le$ 5 at index 4, so the pivot stays at position 4. Left = `[1, 2, 3, 4]`, right = `[]`.
 
 Partition `[1, 2, 3, 4]` with pivot = 4: similarly, left = `[1, 2, 3]`, right = `[]`.
 
@@ -1791,7 +1791,7 @@ END WHILE
 <details>
 <summary>Solution</summary>
 
-The variable `i` starts at 1 and doubles each iteration: 1, 2, 4, 8, 16, ..., until `i >= n`.
+The variable `i` starts at 1 and doubles each iteration: 1, 2, 4, 8, 16, ..., until `i $\ge$ n`.
 
 After $k$ iterations, $i = 2^k$. The loop terminates when $2^k \geq n$, i.e., $k \geq \log_2 n$.
 
