@@ -740,7 +740,7 @@ particular woman (X). How many valid pairings?
 - Subtract pairings where A or B is paired with X: $5! - 2 \cdot 4! = 120 - 48 = 72$.
 </details>
 
-18. **Question:** How many distinct 4-digit numbers can be formed from {1,2,3,4,5,6} with each digit
+18. **Question:** How many distinct 4-digit numbers can be formed from `{1,2,3,4,5,6}` with each digit
 used $\lq2$ times?
 <details>
 <summary>Answer</summary>

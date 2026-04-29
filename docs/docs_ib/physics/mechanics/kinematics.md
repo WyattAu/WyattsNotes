@@ -746,7 +746,7 @@ Acceleration: $\vec{a}(t) = \dfrac{d\vec{v}}{dt} = \ddot{x}(t)\hat{i} + \ddot{y}
 Speed is the magnitude of velocity:
 
 $$
-|\vec{v}| = \sqrt{v_x^2 + v_y^2}
+|`\vec{v}`| = \sqrt{v_x^2 + v_y^2}
 $$
 
 ### Displacement as a Vector

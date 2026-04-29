@@ -357,7 +357,7 @@ $x_B = A\sin(\omega t) = A\cos\!\left(\omega t - \frac{\pi}{2}\right)$
 Comparing phases: $\phi_A = 0$, $\phi_B = -\pi/2$.
 
 $$
-|\Delta\phi| = \left|0 - \left(-\frac{\pi}{2}\right)\right| = \frac{\pi}{2}\mathrm{ rad} = 90°
+|\Delta\phi| = \left|`0 - \left(-\frac{\pi}{2}\right)\right`| = \frac{\pi}{2}\mathrm{ rad} = 90°
 $$
 
 System A leads System B by $90^\circ$.

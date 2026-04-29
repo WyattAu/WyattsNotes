@@ -1332,7 +1332,7 @@ relationships with cardinalities, and where foreign keys should be placed.
 ### Problem 2: Partial vs Transitive Dependencies
 
 Given a table with columns `{orderID, productID, productName, customerID, customerName, quantity,
-unitPrice}`, and the primary key is `{orderID, productID}`:
+unitPrice}`, and the primary key is ```{orderID, productID}```:
 - Is `productName` a partial dependency? If so, on what?
 - Is `customerName` a partial dependency? If so, on what?
 

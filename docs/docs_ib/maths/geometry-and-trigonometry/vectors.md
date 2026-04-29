@@ -132,7 +132,7 @@ where $v_x$, $v_y$, $v_z$ are the components along the $x$, $y$, and $z$ axes re
 The magnitude of a vector is its length:
 
 $$
-|\bm{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}
+|`\bm{v}`| = \sqrt{v_x^2 + v_y^2 + v_z^2}
 $$
 
 ### Unit Vector
@@ -219,7 +219,7 @@ $$
 $$
 
 $$
-|\bm{a}| = \sqrt{4 + 1 + 1} = \sqrt{6}, \quad |\bm{b}| = \sqrt{9 + 0 + 16} = 5
+|`\bm{a}`| `= \sqrt{4 + 1 + 1} = \sqrt{6}, \quad` |`\bm{b}`| = \sqrt{9 + 0 + 16} = 5
 $$
 
 $$
@@ -233,7 +233,7 @@ $$
 The cross product of two vectors produces a vector perpendicular to both:
 
 $$
-|\bm{a} \times \bm{b}| = |\bm{a}||\bm{b}|\sin\theta
+|`\bm{a} \times \bm{b}`| = |`\bm{a}`||`\bm{b}`|\sin\theta
 $$
 
 The direction is given by the right-hand rule.
@@ -491,7 +491,7 @@ $$
 $$
 
 $$
-|\hat{n}_1| = \sqrt{4 + 1 + 9} = \sqrt{14}, \quad |\hat{n}_2| = \sqrt{1 + 16 + 1} = \sqrt{18} = 3\sqrt{2}
+|`\hat{n}_1`| `= \sqrt{4 + 1 + 9} = \sqrt{14}, \quad` |`\hat{n}_2`| = \sqrt{1 + 16 + 1} = \sqrt{18} = 3\sqrt{2}
 $$
 
 $$
