@@ -955,3 +955,10 @@ $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ because there is no hydrogen atom on the
 $-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Organic Chemistry:** [Organic Chemistry](https://alevel.wyattau.com/docs/chemistry/organic-chemistry)
+- **DSE Carbon Chemistry:** [Carbon Chemistry](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-carbon-chemistry)

@@ -1845,3 +1845,11 @@ instead, the clubs themselves would have been deleted.
 </details>
 
 *If you get this wrong, revise: [Cascading Operations](#cascading-operations), [Joins](#joins), and [Aggregate Functions](#aggregate-functions-and-group-by)*
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Databases:** [Computer Science](https://alevel.wyattau.com/docs/computer-science/computer-science)
+- **DSE Programming and Databases:** [Programming and Databases](https://academics.wyattau.com/docs/dse/ICT/ict-programming-and-databases)
+- **University Databases:** [Database Systems](https://university.wyattau.com/docs/computing/databases)

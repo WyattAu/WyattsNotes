@@ -482,3 +482,11 @@ The overall intensity pattern is the product of the double-slit interference pat
 single-slit diffraction envelope.
 
 :::
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Waves:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
+- **DSE Waves and Sound:** [Waves and Sound](https://academics.wyattau.com/docs/dse/Physics/waves-and-sound)
+- **University Wave Physics:** [Optics and Wave Physics](https://university.wyattau.com/docs/physics/optics-and-wave-physics)

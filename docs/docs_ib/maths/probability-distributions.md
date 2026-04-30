@@ -1314,3 +1314,11 @@ approximation is quite close despite $p \gt 0.1$ because $\lambda = 10$ is moder
 **If you get this wrong, revise:** Poisson as a Limit of the Binomial section.
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Probability:** [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
+- **DSE Probability:** [Probability](https://academics.wyattau.com/docs/dse/Maths/compulsory/probability)
+- **University Probability and Statistics:** [Probability and Statistics](https://university.wyattau.com/docs/mathematics/probability-and-statistics)

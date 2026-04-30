@@ -947,3 +947,9 @@ $$[\mathrm{H}^+] = \sqrt{K_a \times c} = \sqrt{6.8 \times 10^{-4} \times 0.050} 
 $$\mathrm{pH} = -\log(5.83 \times 10^{-3}) = 2.23$$
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Equilibria:** [Chemical Equilibrium](https://alevel.wyattau.com/docs/chemistry/chemical-equilibrium)

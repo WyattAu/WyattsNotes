@@ -1529,3 +1529,10 @@ current when first switched on (cold) than during normal operation.
 **If you get this wrong, revise:** Section 3.3.
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Electricity:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
+- **DSE Electrical Circuits:** [Electrical Circuits](https://academics.wyattau.com/docs/dse/Physics/electrical-circuits)

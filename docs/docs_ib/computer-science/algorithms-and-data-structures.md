@@ -2618,3 +2618,10 @@ C --2-- E --1-- F
 </details>
 
 *If you get this wrong, revise: [Queues](#queues) and [Computational Complexity (HL)](#computational-complexity-hl)*
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Algorithms:** [Computer Science](https://alevel.wyattau.com/docs/computer-science/computer-science)
+- **University Algorithms:** [Algorithms and Data Structures](https://university.wyattau.com/docs/computing/algorithms-and-data-structures)

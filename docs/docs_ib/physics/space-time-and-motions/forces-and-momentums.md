@@ -729,3 +729,10 @@ Substitute into Eq. 1: $Mg\sin\theta - \frac{2}{5}Ma = Ma$. $Mg\sin\theta = \fra
 $a = \frac{5}{7}g\sin\theta$.
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Mechanics:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
+- **DSE Forces and Motion:** [Forces and Motion](https://academics.wyattau.com/docs/dse/Physics/forces-and-motion)

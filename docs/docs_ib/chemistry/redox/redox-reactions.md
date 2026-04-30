@@ -991,3 +991,10 @@ the solution becomes more acidic because Cl$_2$ dissolves and hydrolyses to form
 the OH$^-$ at the cathode is consumed by this acid.
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Redox and Electrochemistry:** [Electrochemistry](https://alevel.wyattau.com/docs/chemistry/electrochemistry)
+- **DSE Redox and Electrochemistry:** [Redox and Electrochemistry](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-redox-and-electrochemistry)

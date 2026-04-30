@@ -1063,3 +1063,10 @@ $$\frac{k_{320}}{2.0 \times 10^{-3}} = e^{1.251} = 3.494$$
 $$k_{320} = 3.494 \times 2.0 \times 10^{-3} = 6.99 \times 10^{-3}\mathrm{ s}^{-1}$$
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Kinetics:** [Chemical Kinetics](https://alevel.wyattau.com/docs/chemistry/chemical-kinetics)
+- **DSE Rate of Reaction:** [Rate of Reaction and Energetics](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-rate-of-reaction-and-energetics)

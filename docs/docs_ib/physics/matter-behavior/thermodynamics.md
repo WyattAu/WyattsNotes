@@ -869,3 +869,10 @@ efficiency (40%). The second law of thermodynamics states that no real engine ca
 efficiency, and this engine does not.
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Thermal Physics:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
+- **DSE Heat and Gases:** [Heat and Gases](https://academics.wyattau.com/docs/dse/Physics/heat-and-gases)

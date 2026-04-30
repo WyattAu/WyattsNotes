@@ -744,3 +744,9 @@ redistributing charge until the field becomes zero. This is the condition of ele
 equilibrium.
 
 </details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Fields:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
