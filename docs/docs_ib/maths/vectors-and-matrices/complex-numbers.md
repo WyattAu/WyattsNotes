@@ -651,8 +651,7 @@ within the other. The region is a disk with a smaller circular cut-out near $(-1
 
 ## Cross-References
 
-- **Trigonometric identities** derived via De Moivre: see [Trigonometry](/docs/docs_ib/maths/algebra/trigonometry)
-- **Differential equations** with complex characteristic roots: see [Differential Equations](/docs/docs_ib/maths/calculus/differential-equations)
-- **Sequences and series** including power series for Euler's formula proof: see [Sequences and Series](/docs/docs_ib/maths/calculus/sequences-and-series)
-- **Integration techniques** for trigonometric powers: see [Integration](/docs/docs_ib/maths/calculus/integration)
-- **Polynomials** and the fundamental theorem of algebra: see [Polynomials](/docs/docs_ib/maths/algebra/polynomials)
+- **Trigonometric identities** derived via De Moivre: see [Trigonometry](../geometry-and-trigonometry/trigonometry)
+- **Differential equations** with complex characteristic roots: see [Differential Equations](../calculus/differential-equations)
+- **Sequences and series** including power series for Euler's formula proof: see [Sequences and Series](../calculus/sequences-and-series)
+- **Integration techniques** for trigonometric powers: see [Integration](../calculus/integration-techniques)

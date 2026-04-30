@@ -834,4 +834,4 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
 - **Atomic theory and electron configurations** → Review [./atomic-theory](./atomic-theory)
 - **Organic chemistry spectroscopic identification** → Review [./organic-chemistry-advanced](./organic-chemistry-advanced)
 - **Acid-base calculations and pH** → Review [./acids-bases-advanced](./acids-bases-advanced)
-- **Equilibrium constant expressions** → Review [./equilibrium/](./equilibrium/)
+- **Equilibrium constant expressions** → Review [./equilibrium/equilibrium](./equilibrium/equilibrium)

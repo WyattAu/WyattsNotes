@@ -581,6 +581,6 @@ Since boiling requires overcoming intermolecular forces, stronger LDFs mean a hi
 
 - **Atomic structure and electron configuration** → Review [./atomic-theory](./atomic-theory)
 - **Bonding and intermolecular forces in depth** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
-- **Thermodynamics (energy changes in state transitions)** → Review [./thermodynamics](./thermodynamics)
-- **Stoichiometry and the mole concept** → Review [./stoichiometry](./stoichiometry)
+- **Thermodynamics (energy changes in state transitions)** → Review [./thermodynamics/thermochemistry](./thermodynamics/thermochemistry)
+- **Stoichiometry and the mole concept** → Review [./stoichiometry/stoichiometry](./stoichiometry/stoichiometry)
 - **Periodic trends affecting physical properties** → Review [./periodicity](./periodicity)

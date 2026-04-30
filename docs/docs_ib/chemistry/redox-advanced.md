@@ -605,8 +605,8 @@ The cell potential is slightly lower than standard because the higher concentrat
 
 ## If You Get These Wrong, Revise:
 
-- **Oxidation numbers and balancing redox equations** → Review [./redox](./redox)
-- **Equilibrium and the equilibrium constant** → Review [./equilibrium](./equilibrium)
-- **Thermodynamics and Gibbs free energy** → Review [./thermodynamics](./thermodynamics)
+- **Oxidation numbers and balancing redox equations** → Review [./redox/redox-reactions](./redox/redox-reactions)
+- **Equilibrium and the equilibrium constant** → Review [./equilibrium/equilibrium](./equilibrium/equilibrium)
+- **Thermodynamics and Gibbs free energy** → Review [./thermodynamics/thermochemistry](./thermodynamics/thermochemistry)
 - **Atomic structure and electron configurations** → Review [./atomic-theory](./atomic-theory)
 - **Acids, bases, and pH** → Review [./acids-bases-advanced](./acids-bases-advanced)

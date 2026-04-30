@@ -764,4 +764,4 @@ Product: propan-2-ol ($\mathrm{CH_3CH(OH)CH_3}$). Minor elimination product: pro
 - **VSEPR geometry and molecular shapes** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
 - **IR, MS, and NMR spectroscopy** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Electron configurations and orbital theory** → Review [./atomic-theory](./atomic-theory)
-- **Stoichiometry of polymer reactions** → Review [./organic-chemistry/](./organic-chemistry/)
+- **Stoichiometry of polymer reactions** → Review [./organic-chemistry/organic-chemistry](./organic-chemistry/organic-chemistry)

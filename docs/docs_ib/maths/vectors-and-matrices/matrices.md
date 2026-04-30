@@ -594,8 +594,8 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
 
 ## Cross-References
 
-- **Vectors in three dimensions** for geometric interpretation of transformations: see [Vectors](/docs/docs_ib/maths/vectors-and-matrices/vectors)
-- **Complex numbers** for eigenvalues with complex roots: see [Complex Numbers](/docs/docs_ib/maths/vectors-and-matrices/complex-numbers)
-- **Differential equations** and systems solved via matrix methods: see [Differential Equations](/docs/docs_ib/maths/calculus/differential-equations)
-- **Algebra of functions** for linear transformations: see [Functions](/docs/docs_ib/maths/algebra/functions)
-- **Proof and reasoning** for properties of determinants: see [Proof](/docs/docs_ib/maths/proof-and-reasoning)
+- **Vectors in three dimensions** for geometric interpretation of transformations: see [Vectors](./vectors-in-three-dimensions)
+- **Complex numbers** for eigenvalues with complex roots: see [Complex Numbers](./complex-numbers-advanced)
+- **Differential equations** and systems solved via matrix methods: see [Differential Equations](../calculus/differential-equations)
+- **Algebra of functions** for linear transformations: see [Functions](../Functions-and-Equations/functions)
+- **Proof and reasoning** for properties of determinants: see [Proof](../proof)

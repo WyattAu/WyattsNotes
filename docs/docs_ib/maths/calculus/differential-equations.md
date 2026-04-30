@@ -594,8 +594,7 @@ Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
 
 ## Cross-References
 
-- **Integration techniques** used in solving DEs: see [Integration](/docs/docs_ib/maths/calculus/integration)
-- **Exponential and logarithmic functions** underpin growth/decay models: see [Exponentials and Logarithms](/docs/docs_ib/maths/algebra/exponentials-and-logarithms)
-- **Complex numbers** and Euler's formula connect to second order ODE solutions: see [Complex Numbers](/docs/docs_ib/maths/vectors-and-matrices/complex-numbers)
-- **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](/docs/docs_ib/maths/calculus/sequences-and-series)
-- **Vectors and mechanics** applications of DEs: see [Vectors in Three Dimensions](/docs/docs_ib/maths/vectors-and-matrices/vectors)
+- **Integration techniques** used in solving DEs: see [Integration Techniques](./integration-techniques)
+- **Complex numbers** and Euler's formula connect to second order ODE solutions: see [Complex Numbers](../vectors-and-matrices/complex-numbers-advanced)
+- **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](./sequences-and-series)
+- **Vectors and mechanics** applications of DEs: see [Vectors in Three Dimensions](../vectors-and-matrices/vectors-in-three-dimensions)

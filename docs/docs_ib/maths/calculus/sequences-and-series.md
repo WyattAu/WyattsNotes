@@ -559,8 +559,8 @@ Actual error: $|0.1823 - 0.18| = 0.0023$, which is within the bound.
 
 ## Cross-References
 
-- **Differentiation** is needed to derive Maclaurin and Taylor series: see [Differentiation](/docs/docs_ib/maths/calculus/differentiation)
-- **Integration** connects to term-by-term integration of power series: see [Integration](/docs/docs_ib/maths/calculus/integration)
-- **Differential equations** use series expansions as solution methods: see [Differential Equations](/docs/docs_ib/maths/calculus/differential-equations)
-- **Complex numbers** and Euler's formula underpin many series derivations: see [Complex Numbers](/docs/docs_ib/maths/vectors-and-matrices/complex-numbers)
-- **Proof and reasoning** techniques including induction: see [Proof](/docs/docs_ib/maths/proof-and-reasoning)
+- **Differentiation** is needed to derive Maclaurin and Taylor series: see [Differentiation](./differentiation-depth)
+- **Integration** connects to term-by-term integration of power series: see [Integration](./integration-techniques)
+- **Differential equations** use series expansions as solution methods: see [Differential Equations](./differential-equations)
+- **Complex numbers** and Euler's formula underpin many series derivations: see [Complex Numbers](../vectors-and-matrices/complex-numbers-advanced)
+- **Proof and reasoning** techniques including induction: see [Proof](../proof)
