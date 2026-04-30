@@ -598,8 +598,6 @@ $$x + y + 3z - 12 = 0$$
 
 ## Cross-References
 
-- **Matrices** for representing linear transformations and systems: see [Matrices and Linear Transformations](./matrices-and-linear-transformations)
-- **Complex numbers** for representing vectors in polar form: see [Complex Numbers](./complex-numbers-advanced)
 - **Trigonometry** for angle calculations: see [Trigonometry](../geometry-and-trigonometry/trigonometry)
 - **Calculus** for vector-valued functions and differentiation: see [Differentiation](../calculus/differentiation-depth)
 - **Integration** for arc length and surface area of curves: see [Integration](../calculus/integration-techniques)

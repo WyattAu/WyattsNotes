@@ -21,7 +21,7 @@ const prjMetadataConfig = {
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
   url: 'https://wyattsnotes.wyattau.com',
   baseUrl: '/',
-  organizationName: 'Wyatt',
+  organizationName: 'WyattAu',
   projectName: 'WyattsNotes',
   trailingSlash: false,
 };
@@ -145,7 +145,7 @@ const config: Config = {
         path: 'docs/docs_infrastructure',
         routeBasePath: '/docs/infrastructure',
         sidebarPath: require.resolve('./sidebars/sidebar_infrastructure.ts'),
-        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/{ref}/{dir}',
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -156,7 +156,7 @@ const config: Config = {
         path: 'docs/docs_tools',
         routeBasePath: '/docs/tools',
         sidebarPath: require.resolve('./sidebars/sidebar_tools.ts'),
-        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/{ref}/{dir}',
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -298,19 +298,19 @@ const config: Config = {
           items: [
             {
               label: 'Linear Algebra',
-              href: 'https://university.wyattau.com/docs/university/mathematics/linear-algebra',
+              href: 'https://university.wyattau.com/docs/mathematics/linear-algebra',
             },
             {
               label: 'Real Analysis',
-              href: 'https://university.wyattau.com/docs/university/mathematics/real-analysis',
+              href: 'https://university.wyattau.com/docs/mathematics/real-analysis',
             },
             {
               label: 'Quantum Mechanics',
-              href: 'https://university.wyattau.com/docs/university/physics/quantum-mechanics',
+              href: 'https://university.wyattau.com/docs/physics/quantum-mechanics',
             },
             {
               label: 'Algorithms',
-              href: 'https://university.wyattau.com/docs/university/computing/algorithms-and-data-structures',
+              href: 'https://university.wyattau.com/docs/computing/algorithms-and-data-structures',
             },
           ],
         },

@@ -562,5 +562,4 @@ Actual error: $|0.1823 - 0.18| = 0.0023$, which is within the bound.
 - **Differentiation** is needed to derive Maclaurin and Taylor series: see [Differentiation](./differentiation-depth)
 - **Integration** connects to term-by-term integration of power series: see [Integration](./integration-techniques)
 - **Differential equations** use series expansions as solution methods: see [Differential Equations](./differential-equations)
-- **Complex numbers** and Euler's formula underpin many series derivations: see [Complex Numbers](../vectors-and-matrices/complex-numbers-advanced)
 - **Proof and reasoning** techniques including induction: see [Proof](../proof)

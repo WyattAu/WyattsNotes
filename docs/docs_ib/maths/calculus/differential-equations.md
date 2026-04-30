@@ -595,6 +595,4 @@ Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
 ## Cross-References
 
 - **Integration techniques** used in solving DEs: see [Integration Techniques](./integration-techniques)
-- **Complex numbers** and Euler's formula connect to second order ODE solutions: see [Complex Numbers](../vectors-and-matrices/complex-numbers-advanced)
 - **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](./sequences-and-series)
-- **Vectors and mechanics** applications of DEs: see [Vectors in Three Dimensions](../vectors-and-matrices/vectors-in-three-dimensions)
