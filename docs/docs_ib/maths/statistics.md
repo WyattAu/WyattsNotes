@@ -354,3 +354,247 @@ frequencies: $5, 17, 35, \ldots$. Median class is $20$--$30$. Median
 $\approx 20 + \dfrac{25 - 17}{18} \times 10 = 20 + \dfrac{80}{18} \approx 24.4$.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Full Regression Analysis with Prediction**
+
+A study records the temperature ($x$, in $\mathrm{{}^\circ C}$) and ice cream sales ($y$, in USD) for
+7 days: $(18, 220)$, $(22, 310)$, $(25, 380)$, $(28, 440)$, $(31, 510)$, $(34, 580)$, $(20, 270)$.
+Find the regression line of $y$ on $x$, the correlation coefficient, and predict sales at $30\mathrm{{}^\circ C}$.
+
+<details>
+<summary>Solution</summary>
+
+Computing: $n = 7$, $\sum x = 178$, $\sum y = 2710$, $\sum x^2 = 4734$, $\sum y^2 = 1163900$,
+$\sum xy = 73420$.
+
+$\bar{x} = 178/7 \approx 25.43$, $\bar{y} = 2710/7 \approx 387.14$.
+
+$S_{xx} = 4734 - 7(25.43)^2 = 4734 - 4529.0 = 205.0$
+
+$S_{yy} = 1163900 - 7(387.14)^2 = 1163900 - 1049190.0 = 114710.0$
+
+$S_{xy} = 73420 - 7(25.43)(387.14) = 73420 - 68903.0 = 4517.0$
+
+$$b = \frac{S_{xy}}{S_{xx}} = \frac{4517.0}{205.0} \approx 22.04$$
+
+$$a = \bar{y} - b\bar{x} = 387.14 - 22.04 \times 25.43 \approx 387.14 - 560.5 \approx -173.4$$
+
+Regression line: $y = -173.4 + 22.0x$.
+
+$$r = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}} = \frac{4517.0}{\sqrt{205.0 \times 114710.0}} = \frac{4517.0}{\sqrt{23515550}} \approx \frac{4517.0}{4849.3} \approx 0.931$$
+
+There is a strong positive linear correlation.
+
+Prediction at $x = 30$: $\hat{y} = -173.4 + 22.0(30) = -173.4 + 660 = 486.6$ USD.
+
+Since $30\mathrm{{}^\circ C}$ lies within the data range ($18$ to $34$), this is interpolation and
+reliable.
+
+</details>
+
+**Worked Example: Bayes' Theorem with Multiple Categories**
+
+A factory has three machines producing bolts. Machine A produces 50% of output with 2% defect rate.
+Machine B produces 30% with 3% defect rate. Machine C produces 20% with 5% defect rate. A bolt is
+selected at random and found to be defective. What is the probability it came from Machine C?
+
+<details>
+<summary>Solution</summary>
+
+Let $D$ be the event "bolt is defective" and $A, B, C$ be the events "bolt from Machine A, B, C"
+respectively.
+
+Prior probabilities: $P(A) = 0.50$, $P(B) = 0.30$, $P(C) = 0.20$.
+
+Likelihoods: $P(D \mid A) = 0.02$, $P(D \mid B) = 0.03$, $P(D \mid C) = 0.05$.
+
+Total probability of defect:
+
+$$P(D) = 0.02(0.50) + 0.03(0.30) + 0.05(0.20) = 0.010 + 0.009 + 0.010 = 0.029$$
+
+By Bayes' theorem:
+
+$$P(C \mid D) = \frac{P(D \mid C) \cdot P(C)}{P(D)} = \frac{0.05 \times 0.20}{0.029} = \frac{0.010}{0.029} \approx 0.345$$
+
+Despite producing only 20% of output, Machine C is responsible for about 34.5% of defects due to its
+higher defect rate.
+
+</details>
+
+**Worked Example: Combinatorial Counting with Restrictions**
+
+A panel of 4 people is to be selected from 6 men and 5 women. How many panels contain at least one man
+and at least one woman?
+
+<details>
+<summary>Solution</summary>
+
+Total ways to choose 4 from 11: ${11 \choose 4} = 330$.
+
+Subtract the all-men panels: ${6 \choose 4} = 15$.
+
+Subtract the all-women panels: ${5 \choose 4} = 5$.
+
+Panels with at least one of each: $330 - 15 - 5 = 310$.
+
+Alternatively, count directly: ${6 \choose 1}{5 \choose 3} + {6 \choose 2}{5 \choose 2} + {6 \choose 3}{5 \choose 1} = 60 + 150 + 100 = 310$.
+
+</details>
+
+**Worked Example: Spearman's Rank Correlation**
+
+Eight students are ranked by two judges. The rank pairs are: $(1, 2)$, $(2, 1)$, $(3, 4)$, $(4, 3)$,
+$(5, 6)$, $(6, 5)$, $(7, 8)$, $(8, 7)$. Calculate Spearman's rank correlation coefficient.
+
+<details>
+<summary>Solution</summary>
+
+Differences: $d_i = 1, -1, -1, 1, -1, 1, -1, 1$.
+
+$d_i^2 = 1, 1, 1, 1, 1, 1, 1, 1$.
+
+$\sum d_i^2 = 8$. $n = 8$.
+
+$$r_s = 1 - \frac{6 \times 8}{8(64 - 1)} = 1 - \frac{48}{504} = 1 - \frac{1}{10.5} = 1 - 0.0952 = 0.905$$
+
+There is a strong positive monotonic relationship between the two judges' rankings.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Sample vs. population variance.** On the GDC, the sample standard deviation function (usually
+  denoted $s_x$ or $\sigma_{n-1}$) divides by $n - 1$. The population standard deviation ($\sigma_x$
+  or $\sigma_n$) divides by $n$. Using the wrong one changes the answer significantly for small samples.
+
+- **Spearman's formula requires distinct ranks.** The formula $r_s = 1 - \dfrac{6\sum d_i^2}{n(n^2-1)}$
+  assumes no tied ranks. When ties exist, use the full Pearson formula on the ranks instead.
+
+- **Confusing independent with mutually exclusive.** Independent events can occur simultaneously
+  ($P(A \cap B) = P(A)P(B) \ne 0$ in general). Mutually exclusive events cannot
+  ($P(A \cap B) = 0$). Independent events with nonzero probability are never mutually exclusive.
+
+- **Misidentifying favourable outcomes.** When computing probabilities, carefully define what
+  constitutes a "favourable outcome" and ensure the counting is complete. Overcounting or
+  undercounting is a frequent source of error.
+
+- **Regression interpretation beyond the data.** The regression line of $y$ on $x$ gives $\hat{y}$
+  for a given $x$, but not $\hat{x}$ for a given $y$. Using $y = a + bx$ to predict $x$ from $y$
+  requires solving for $x$, which gives a different line than the regression of $x$ on $y$.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 9</summary>
+
+The lengths of 10 rods (in cm) are: $12.3, 12.7, 11.9, 12.5, 13.1, 12.0, 12.8, 11.8, 12.4, 12.6$.
+Calculate the mean, standard deviation, and the percentage of data within one standard deviation of
+the mean.
+
+</details>
+
+<details>
+<summary>Problem 10</summary>
+
+In a bag there are 4 red, 5 blue, and 6 green marbles. Three marbles are drawn without replacement.
+Find the probability that: (a) all three are the same colour; (b) exactly two are blue.
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+
+Two events $A$ and $B$ satisfy $P(A) = 0.4$, $P(B) = 0.7$, and $P(A \cap B) = 0.25$. Find:
+(a) $P(A \mid B)$; (b) $P(A \cup B)$; (c) whether $A$ and $B$ are independent.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+
+A fair coin is tossed 5 times. Find the probability of getting exactly 3 heads.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+
+The bivariate data has $\sum x = 60$, $\sum y = 84$, $\sum x^2 = 440$, $\sum y^2 = 860$,
+$\sum xy = 580$, and $n = 10$. Find the equation of the regression line of $y$ on $x$ and the
+coefficient of determination.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+
+How many 4-digit even numbers can be formed from the digits $0, 1, 2, 3, 4, 5$ if no digit may be
+repeated?
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+
+A doctor gives a patient a test for a condition. The test has sensitivity 0.92 and specificity 0.95.
+If the condition prevalence in the patient's demographic is 0.08, find the probability that the patient
+actually has the condition given a positive test result.
+
+</details>
+
+<details>
+<summary>Answers to Additional Problems</summary>
+
+**Problem 9:** Ordered data: $11.8, 11.9, 12.0, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8, 13.1$.
+Mean: $\bar{x} = 124.1/10 = 12.41$.
+$s^2 = \dfrac{\sum x_i^2 - 10(12.41)^2}{9}$.
+$\sum x_i^2 = 139.09 + 141.61 + 144.00 + 151.29 + 153.76 + 156.25 + 158.76 + 161.29 + 163.84 + 171.61 = 1541.50$.
+$s^2 = (1541.50 - 1540.08)/9 = 1.42/9 = 0.158$. $s = \sqrt{0.158} \approx 0.397$.
+Range within one standard deviation: $12.41 \pm 0.40 = (12.01, 12.81)$.
+Values in range: $12.0, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8$ = 7 out of 10 = 70%.
+
+**Problem 10:** Total marbles: 15. Total ways to draw 3: ${15 \choose 3} = 455$.
+(a) Same colour: ${4 \choose 3} + {5 \choose 3} + {6 \choose 3} = 4 + 10 + 20 = 34$. $P = 34/455 \approx 0.0747$.
+(b) Exactly two blue: ${5 \choose 2}{10 \choose 1} = 10 \times 10 = 100$. $P = 100/455 \approx 0.2198$.
+
+**Problem 11:** (a) $P(A \mid B) = P(A \cap B)/P(B) = 0.25/0.70 = 5/14 \approx 0.357$.
+(b) $P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.4 + 0.7 - 0.25 = 0.85$.
+(c) Independent iff $P(A \cap B) = P(A)P(B)$. $P(A)P(B) = 0.28 \ne 0.25 = P(A \cap B)$. Not independent.
+
+**Problem 12:** ${5 \choose 3}(0.5)^3(0.5)^2 = 10 \times \dfrac{1}{32} = \dfrac{5}{16}$.
+
+**Problem 13:** $S_{xx} = 440 - 10(6)^2 = 440 - 360 = 80$.
+$S_{xy} = 580 - 10(6)(8.4) = 580 - 504 = 76$.
+$b = 76/80 = 0.95$. $a = 8.4 - 0.95(6) = 8.4 - 5.7 = 2.7$.
+Line: $y = 2.7 + 0.95x$.
+$S_{yy} = 860 - 10(8.4)^2 = 860 - 705.6 = 154.4$.
+$r = 76/\sqrt{80 \times 154.4} = 76/\sqrt{12352} = 76/111.1 \approx 0.684$.
+$R^2 = r^2 \approx 0.468$, meaning about 46.8% of the variation in $y$ is explained by the linear model.
+
+**Problem 14:** For a 4-digit number, the first digit cannot be 0. The last digit must be even (0, 2, 4).
+Case 1: Last digit is 0. First digit: 5 choices (1--5), middle two: ${}^4P_2 = 12$. Total: $5 \times 12 = 60$.
+Case 2: Last digit is 2 or 4 (2 choices). First digit: 4 choices (1--5, excluding the one used for the last digit). Middle two: ${}^4P_2 = 12$. Total: $2 \times 4 \times 12 = 96$.
+Total: $60 + 96 = 156$.
+
+**Problem 15:** $P(D \mid +) = \dfrac{0.92 \times 0.08}{0.92 \times 0.08 + 0.05 \times 0.92} = \dfrac{0.0736}{0.0736 + 0.046} = \dfrac{0.0736}{0.1196} \approx 0.615$.
+Despite a positive test, there is only about a 61.5% chance the patient has the condition.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Probability fundamentals** → Review conditional probability and the laws of probability
+- **Algebraic manipulation for summation formulas** → Review [./calculus](./calculus) (sections on summation and sigma notation)
+- **Quadratic equations and simultaneous equations** → Review algebra fundamentals
+- **Logarithms for regression transformation** → Review exponential and logarithmic functions
+- **Set theory and Venn diagrams** → Review logic and set theory fundamentals

@@ -514,3 +514,269 @@ patient would also experience fat-soluble vitamin (A, D, E, K) deficiencies due 
 since these vitamins require dietary fat for absorption.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Cardiac Output and Oxygen Delivery**
+
+A $70\;\mathrm{kg}$ athlete at rest has a heart rate of $60\;\mathrm{bpm}$ and a stroke volume of
+$70\;\mathrm{mL}$. During maximal exercise, her heart rate increases to $190\;\mathrm{bpm}$ and her
+stroke volume increases to $120\;\mathrm{mL}$. Her arterial $\mathrm{O}_2$ content is
+$200\;\mathrm{mL\;O_2/L}$ blood and her venous $\mathrm{O}_2$ content is $150\;\mathrm{mL\;O_2/L}$
+at rest, decreasing to $50\;\mathrm{mL\;O_2/L}$ during exercise. Calculate the cardiac output and
+oxygen consumption at rest and during maximal exercise.
+
+<details>
+<summary>Solution</summary>
+
+**At rest**:
+$\mathrm{Cardiac\;output} = \mathrm{stroke\;volume} \times \mathrm{heart\;rate} = 70\;\mathrm{mL} \times 60\;\mathrm{bpm} = 4200\;\mathrm{mL/min} = 4.2\;\mathrm{L/min}$
+
+$\mathrm{O_2\;consumption} = \mathrm{cardiac\;output} \times (\mathrm{arterial\;O_2} - \mathrm{venous\;O_2})$
+$= 4.2\;\mathrm{L/min} \times (200 - 150)\;\mathrm{mL\;O_2/L} = 4.2 \times 50 = 210\;\mathrm{mL\;O_2/min}$
+
+**During maximal exercise**:
+$\mathrm{Cardiac\;output} = 120\;\mathrm{mL} \times 190\;\mathrm{bpm} = 22800\;\mathrm{mL/min} = 22.8\;\mathrm{L/min}$
+
+$\mathrm{O_2\;consumption} = 22.8\;\mathrm{L/min} \times (200 - 50)\;\mathrm{mL\;O_2/L} = 22.8 \times 150 = 3420\;\mathrm{mL\;O_2/min}$
+
+The athlete's cardiac output increases $5.4$-fold and oxygen consumption increases $16.3$-fold from
+rest to maximal exercise. The larger increase in $\mathrm{O}_2$ consumption relative to cardiac output
+is explained by the increased oxygen extraction (a-v difference doubles from $50$ to
+$150\;\mathrm{mL\;O_2/L}$), demonstrating that both increased blood flow and increased tissue oxygen
+extraction contribute to meeting exercise demands.
+
+</details>
+
+**Worked Example: Blood Glucose Homeostasis Calculation**
+
+A patient's fasting blood glucose is measured at $12\;\mathrm{mmol/L}$ (normal: approximately
+$5\;\mathrm{mmol/L}$). The total blood volume is $5\;\mathrm{L}$. The molar mass of glucose is
+$180\;\mathrm{g/mol}$. Calculate the mass of excess glucose in the patient's blood. Assuming the
+renal threshold for glucose is approximately $10\;\mathrm{mmol/L}$, explain why glucose would appear
+in the urine (glycosuria).
+
+<details>
+<summary>Solution</summary>
+
+**Excess glucose concentration**: $12 - 5 = 7\;\mathrm{mmol/L}$ above normal.
+
+**Excess glucose in blood**: $7\;\mathrm{mmol/L} \times 5\;\mathrm{L} = 35\;\mathrm{mmol}$
+
+**Mass of excess glucose**: $35 \times 10^{-3}\;\mathrm{mol} \times 180\;\mathrm{g/mol} = 6.3\;\mathrm{g}$
+
+**Total glucose in blood**: $12\;\mathrm{mmol/L} \times 5\;\mathrm{L} = 60\;\mathrm{mmol} = 10.8\;\mathrm{g}$
+
+The blood glucose exceeds the renal threshold of $10\;\mathrm{mmol/L}$, meaning the proximal
+convoluted tubule's $\mathrm{Na}^+$-glucose co-transporters (SGLT2) are saturated. The excess
+glucose ($12 - 10 = 2\;\mathrm{mmol/L}$, or $10\;\mathrm{mmol}$ total, equivalent to $1.8\;\mathrm{g}$)
+cannot be reabsorbed and remains in the filtrate, appearing in the urine. This is a hallmark of
+diabetes mellitus. The osmotic effect of unreabsorbed glucose in the renal tubule also draws water
+into the urine, causing polyuria (excessive urination).
+
+</details>
+
+**Worked Example: Neurone Conduction Velocity**
+
+A myelinated motor neurone has nodes of Ranvier spaced $1.5\;\mathrm{mm}$ apart. The time for an
+action potential to travel between two adjacent nodes is $0.02\;\mathrm{ms}$. Calculate the
+conduction velocity between nodes. If the axon length is $0.6\;\mathrm{m}$, calculate the total
+transmission time and compare this with an unmyelinated axon of the same diameter with a conduction
+velocity of $2\;\mathrm{m/s}$.
+
+<details>
+<summary>Solution</summary>
+
+**Conduction velocity between nodes** (saltatory conduction):
+$v = \frac{d}{t} = \frac{1.5\;\mathrm{mm}}{0.02\;\mathrm{ms}} = \frac{1.5 \times 10^{-3}\;\mathrm{m}}{0.02 \times 10^{-3}\;\mathrm{s}} = 75\;\mathrm{m/s}$
+
+**Total transmission time for myelinated axon** ($0.6\;\mathrm{m}$):
+$t = \frac{0.6}{75} = 0.008\;\mathrm{s} = 8\;\mathrm{ms}$
+
+**Total transmission time for unmyelinated axon** ($v = 2\;\mathrm{m/s}$):
+$t = \frac{0.6}{2} = 0.3\;\mathrm{s} = 300\;\mathrm{ms}$
+
+The myelinated axon transmits the signal $37.5$ times faster than the unmyelinated axon ($300/8$).
+This demonstrates why myelination is critical for rapid reflexes and coordination in vertebrate
+nervous systems. Multiple sclerosis, which involves autoimmune destruction of the myelin sheath,
+dramatically slows conduction velocity, producing the characteristic motor and sensory deficits.
+
+</details>
+
+**Worked Example: Immune Response Kinetics**
+
+A person receives their first dose of a vaccine on Day 0 and a booster dose on Day 28. The primary
+response produces a peak antibody titre of $100\;\mathrm{AU/mL}$ on Day $14$. The secondary response
+produces a peak titre of $2000\;\mathrm{AU/mL}$ on Day $7$ after the booster. Calculate the fold
+increase in peak titre and the time to peak, and explain the cellular basis for these differences.
+
+<details>
+<summary>Solution</summary>
+
+**Fold increase in peak titre**: $\frac{2000}{100} = 20$-fold increase.
+
+**Time to peak**: decreased from $14$ days (primary) to $7$ days (secondary).
+
+**Cellular basis**:
+- **Primary response**: naive B cells must be activated by helper T cells, clonally expand (taking
+  $3$--$5$ days), differentiate into plasma cells (taking additional days), and then secrete IgM
+  followed by IgG. Memory cells are generated during this process.
+- **Secondary response**: memory B cells are already present in much higher numbers than the original
+  naive B cell clone. Upon re-exposure, memory B cells rapidly differentiate into plasma cells
+  (within $1$--$3$ days), producing predominantly high-affinity IgG. This is the basis for
+  vaccination: the booster dose "reminds" the immune system, generating a faster, stronger, and more
+  sustained antibody response that provides long-lasting protection.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Confusing insulin and glucagon**: insulin lowers blood glucose (stimulates uptake, glycogenesis);
+  glucagon raises blood glucose (stimulates glycogenolysis, gluconeogenesis). Both are produced by
+  the pancreas but by different cell types (beta vs alpha cells).
+- **Stating that veins carry "deoxygenated blood"**: the pulmonary vein carries oxygenated blood from
+  the lungs to the heart. The rule is: arteries carry blood away from the heart; veins carry blood
+  toward the heart.
+- **Confusing antigens and antibodies**: antigens are molecules that trigger an immune response
+  (found on pathogen surfaces); antibodies are Y-shaped proteins produced by plasma cells in
+  response to antigens.
+- **Misunderstanding the refractory period**: after an action potential, the neurone cannot be
+  immediately restimulated during the absolute refractory period (voltage-gated $\mathrm{Na}^+$
+  channels are inactivated). This ensures unidirectional propagation and limits firing frequency.
+- **Confusing oogenesis and spermatogenesis**: oogenesis produces one ovum and polar bodies
+  (asymmetric division, arrested at prophase I until puberty); spermatogenesis produces four
+  functional sperm cells (symmetric division, continuous from puberty).
+- **Describing the Bohr effect incorrectly**: increased $\mathrm{CO}_2$ decreases pH, which shifts
+  the oxygen dissociation curve to the **right**, causing haemoglobin to release $\mathrm{O}_2$ more
+  readily. The Bohr effect does not reduce the total oxygen-carrying capacity of blood.
+- **Confusing ventilation and gas exchange**: ventilation is the mechanical movement of air in and
+  out of the lungs; gas exchange is the diffusion of $\mathrm{O}_2$ and $\mathrm{CO}_2$ across the
+  alveolar-capillary membrane.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 1: Data Analysis -- Oxygen Dissociation Curves</summary>
+
+The following data show the percentage saturation of haemoglobin at different partial pressures of
+oxygen:
+
+| $\mathrm{pO}_2$ (kPa) | Normal Hb (%) | Fetal Hb (%) |
+| ---------------------- | ------------- | ------------ |
+| 1.0                    | 10            | 30           |
+| 2.0                    | 25            | 55           |
+| 4.0                    | 55            | 80           |
+| 6.0                    | 75            | 90           |
+| 8.0                    | 85            | 95           |
+| 10.0                   | 92            | 97           |
+| 13.3                   | 98            | 98           |
+
+(a) Plot both curves on the same axes. (b) Explain the physiological advantage of fetal haemoglobin
+having a higher affinity for oxygen at any given $\mathrm{pO}_2$. (c) Calculate the difference in
+$\mathrm{O}_2$ saturation between normal and fetal Hb at $\mathrm{pO}_2 = 4\;\mathrm{kPa}$, and
+explain the significance of this difference at the placental interface.
+
+</details>
+
+<details>
+<summary>Problem 2: Extended Response -- Digestive Enzyme Regulation</summary>
+
+Pepsin is secreted as inactive pepsinogen by chief cells in the stomach lining and is activated by
+$\mathrm{HCl}$. (a) Explain why pepsin is secreted in an inactive form, relating this to the
+structure of the stomach wall. (b) Describe the role of enterokinase (enteropeptidase) in activating
+pancreatic enzymes in the small intestine. (c) Compare and contrast the activation mechanisms of
+pepsinogen and trypsinogen, explaining how these prevent autodigestion of the digestive tract.
+
+</details>
+
+<details>
+<summary>Problem 3: Quantitative -- Respiratory Volumes and Alveolar Ventilation</summary>
+
+A patient has the following lung volumes: tidal volume $= 500\;\mathrm{mL}$, vital capacity
+$= 4500\;\mathrm{mL}$, residual volume $= 1500\;\mathrm{mL}$, respiratory rate
+$= 15\;\mathrm{breaths/min}$. The dead space volume is $150\;\mathrm{mL}$. Calculate: (a) the
+minute ventilation, (b) the alveolar ventilation rate, and (c) explain why alveolar ventilation is
+more physiologically relevant than minute ventilation.
+
+</details>
+
+<details>
+<summary>Problem 4: Extended Response -- Synaptic Transmission and Neuropharmacology</summary>
+
+Organophosphate pesticides inhibit acetylcholinesterase. (a) Describe the normal role of
+acetylcholinesterase at a cholinergic synapse. (b) Explain the effect of organophosphate poisoning
+on synaptic transmission, including the effect on postsynaptic membrane potential. (c) Describe two
+symptoms that would be expected and explain the physiological basis for each. (d) Explain how
+atropine (a muscarinic acetylcholine receptor antagonist) can be used as an antidote.
+
+</details>
+
+<details>
+<summary>Problem 5: Data Analysis -- Menstrual Cycle Hormone Profiles</summary>
+
+The following data show hormone concentrations across a $28$-day menstrual cycle:
+
+| Day | Oestrogen (pg/mL) | Progesterone (ng/mL) | LH (mIU/mL) | FSH (mIU/mL) |
+| --- | ----------------- | -------------------- | ----------- | ----------- |
+| 1   | 40                | 0.5                  | 5           | 8           |
+| 7   | 80                | 0.5                  | 6           | 10          |
+| 12  | 250               | 1.0                  | 15          | 12          |
+| 14  | 350               | 1.5                  | 45          | 15          |
+| 16  | 200               | 5.0                  | 10          | 5           |
+| 21  | 150               | 15.0                 | 5           | 3           |
+| 25  | 80                | 8.0                  | 4           | 5           |
+| 28  | 40                | 1.0                  | 5           | 8           |
+
+(a) Identify the day of ovulation and justify with reference to the data. (b) Describe the feedback
+mechanism responsible for the LH surge. (c) Explain why progesterone peaks after oestrogen, and what
+would happen to the cycle if progesterone secretion were artificially maintained at high levels.
+
+</details>
+
+<details>
+<summary>Problem 6: Extended Response -- Type 1 and Type 2 Diabetes</summary>
+
+Compare and contrast the aetiology (cause), pathophysiology, and treatment of Type 1 and Type 2
+diabetes mellitus. In your response, include the role of beta cells, insulin receptors, and the
+concept of insulin resistance. Explain why a patient with Type 2 diabetes may not require insulin
+therapy initially, while a Type 1 patient always requires exogenous insulin.
+
+</details>
+
+<details>
+<summary>Problem 7: Extended Response -- Ventilation Mechanics</summary>
+
+A patient with emphysema has lost alveolar elasticity, reducing the elastic recoil of the lungs.
+(a) Explain how this affects the pressure gradients driving expiration. (b) Describe the consequence
+for residual volume and vital capacity. (c) Explain why this patient would have an elevated
+respiratory rate at rest compared with a healthy individual, relating your answer to alveolar
+ventilation and gas exchange efficiency.
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- Kidney Function and Osmoregulation</summary>
+
+The loop of Henle creates a concentration gradient in the medulla of the kidney. Describe how the
+countercurrent multiplier mechanism in the descending and ascending limbs of the loop of Henle
+establishes this gradient. Explain the role of antidiuretic hormone (ADH) in regulating water
+reabsorption in the collecting duct, and predict the appearance of urine (volume and concentration)
+in a person who has been drinking large volumes of water versus a person who is dehydrated.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Cell membrane and transport mechanisms** --> Review [./cell-biology](./cell-biology)
+- **DNA and gene expression** --> Review [./molecular-biology](./molecular-biology)
+- **Enzymes and metabolism** --> Review [./molecular-biology](./molecular-biology)
+- **Genetics and inheritance** --> Review [./genetics](./genetics)
+- **Plant hormones and transport** --> Review [./plant-biology](./plant-biology)

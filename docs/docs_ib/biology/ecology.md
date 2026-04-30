@@ -436,3 +436,268 @@ that some classification systems place algae within Plantae, but under the tradi
 convention, unicellular photosynthetic eukaryotes are classified as protists.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Hardy-Weinberg Equilibrium with Selection**
+
+In a population of $5000$ peppered moths, the allele for dark colouration ($D$) is dominant over the
+light allele ($d$). The current genotype frequencies are: $DD = 0.36$, $Dd = 0.48$, $dd = 0.16$.
+Industrial pollution darkens tree bark, giving dark moths a survival advantage. The relative fitness
+values are: $w_{DD} = 1.0$, $w_{Dd} = 1.0$, $w_{dd} = 0.5$. Calculate the allele frequencies after
+one generation of selection.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Initial allele frequencies**.
+$p = 0.36 + \frac{1}{2}(0.48) = 0.36 + 0.24 = 0.60$
+$q = 0.16 + \frac{1}{2}(0.48) = 0.16 + 0.24 = 0.40$
+
+**Step 2: Mean fitness of the population**.
+$\bar{w} = p^2 w_{DD} + 2pq \cdot w_{Dd} + q^2 w_{dd} = (0.36)(1.0) + (0.48)(1.0) + (0.16)(0.5) = 0.36 + 0.48 + 0.08 = 0.92$
+
+**Step 3: New genotype frequencies after selection**.
+$f(DD) = \frac{p^2 w_{DD}}{\bar{w}} = \frac{0.36}{0.92} \approx 0.391$
+$f(Dd) = \frac{2pq \cdot w_{Dd}}{\bar{w}} = \frac{0.48}{0.92} \approx 0.522$
+$f(dd) = \frac{q^2 w_{dd}}{\bar{w}} = \frac{0.08}{0.92} \approx 0.087$
+
+**Step 4: New allele frequencies**.
+$p' = 0.391 + \frac{1}{2}(0.522) = 0.391 + 0.261 = 0.652$
+$q' = 0.087 + \frac{1}{2}(0.522) = 0.087 + 0.261 = 0.348$
+
+The frequency of the dark allele ($D$) increased from $0.60$ to $0.652$ in one generation due to
+directional selection favouring the dark phenotype. The light allele ($d$) is declining but has not
+been eliminated because heterozygotes also carry and protect it.
+
+</details>
+
+**Worked Example: Chi-Squared Test for Genetic Equilibrium**
+
+A population of $1000$ flowering plants is sampled for flower colour. The observed numbers are:
+$710$ red, $260$ pink, $30$ white. Under incomplete dominance, the expected Mendelian ratio from a
+cross of two heterozygotes ($Rr \times Rr$) is $1:2:1$. Use the chi-squared test at $p = 0.05$
+(critical value $= 5.99$ for $2$ degrees of freedom) to determine whether the population is in
+Hardy-Weinberg equilibrium.
+
+<details>
+<summary>Solution</summary>
+
+**Expected values** (total $= 1000$; ratio $1:2:1$):
+Red ($RR$): $250$, Pink ($Rr$): $500$, White ($rr$): $250$
+
+**Chi-squared calculation**:
+$\chi^2 = \frac{(710 - 250)^2}{250} + \frac{(260 - 500)^2}{500} + \frac{(30 - 250)^2}{250}$
+$= \frac{460^2}{250} + \frac{(-240)^2}{500} + \frac{(-220)^2}{250}$
+$= \frac{211600}{250} + \frac{57600}{500} + \frac{48400}{250}$
+$= 846.4 + 115.2 + 193.6 = 1155.2$
+
+**Conclusion**: $\chi^2 = 1155.2$ far exceeds the critical value of $5.99$. We reject the null
+hypothesis. The population is **not** in Hardy-Weinberg equilibrium. The large excess of red
+flowers and deficiency of white flowers suggest strong selection against the white phenotype (e.g.,
+herbivores preferentially consuming white flowers, or pollinator preference for red).
+
+</details>
+
+**Worked Example: Calculating Ecological Footprint from NPP Data**
+
+A $10\;\mathrm{km}^2$ nature reserve has an average NPP of $1500\;\mathrm{g\;C/m^2/year}$. The
+reserve supports a population of $200$ deer, each consuming an average of $3.5\;\mathrm{kg}$ of plant
+biomass per day (dry weight, assume $50\%$ carbon by mass). Calculate the fraction of annual NPP
+consumed by the deer population.
+
+<details>
+<summary>Solution</summary>
+
+**Total annual NPP**: $1500\;\mathrm{g\;C/m^2/year} \times 10^7\;\mathrm{m^2} = 1.5 \times 10^{10}\;\mathrm{g\;C/year} = 15000\;\mathrm{t\;C/year}$
+
+**Total annual deer consumption** (in carbon): $200 \times 3.5\;\mathrm{kg/day} \times 365\;\mathrm{days/year} \times 0.50\;\mathrm{(C fraction)}$
+$= 200 \times 3.5 \times 365 \times 0.5 = 127750\;\mathrm{kg\;C/year} = 127.75\;\mathrm{t\;C/year}$
+
+**Fraction of NPP consumed**: $\frac{127.75}{15000} \approx 0.0085$ or $0.85\%$
+
+The deer population consumes less than $1\%$ of annual NPP, suggesting the ecosystem can support
+considerably more herbivory before NPP becomes limiting. However, this calculation does not account
+for other herbivores, decomposition losses, or the fact that only a portion of NPP is palatable.
+
+</details>
+
+**Worked Example: Interpreting a Predator-Prey Graph**
+
+The following data show the population sizes of a predator (lynx) and its prey (hare) over a $10$-year
+period in a $500\;\mathrm{km}^2$ boreal forest:
+
+| Year | Hare population (thousands) | Lynx population |
+| ---- | --------------------------- | --------------- |
+| 1    | 40                          | 25              |
+| 2    | 62                          | 35              |
+| 3    | 85                          | 55              |
+| 4    | 60                          | 65              |
+| 5    | 30                          | 45              |
+| 6    | 18                          | 20              |
+| 7    | 22                          | 12              |
+| 8    | 45                          | 15              |
+| 9    | 78                          | 40              |
+| 10   | 90                          | 60              |
+
+Describe the relationship between the two populations and explain the likely mechanism causing the
+oscillations.
+
+<details>
+<summary>Solution</summary>
+
+The populations show **cyclic oscillations** with the predator population peaking slightly after the
+prey population. This lag is the signature feature of a Lotka-Volterra predator-prey dynamic.
+
+**Mechanism**:
+1. When hare numbers are high (Year 1--3), food is abundant for lynx, which reproduce successfully.
+   Lynx numbers increase.
+2. Increased lynx predation drives the hare population down (Year 3--6).
+3. With fewer hares, lynx face food scarcity; starvation and reduced reproduction cause lynx numbers
+   to decline (Year 4--7).
+4. Reduced predation pressure allows the hare population to recover (Year 6--8), and the cycle
+   repeats.
+
+The period of oscillation is approximately $8$--$9$ years, consistent with the classic
+Hudson's Bay Company fur trapping records for Canadian lynx and snowshoe hares. Additional factors
+such as hare density-dependent food limitation (they eat themselves out of food) also contribute to
+the hare cycles independently of predation.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Confusing niche and habitat**: habitat is the physical place where an organism lives; niche is
+  the organism's role within that place (how it obtains resources, interacts with other species,
+  and contributes to energy flow).
+- **Stating that energy is "recycled" in ecosystems**: energy flows through and is ultimately lost as
+  heat at every trophic transfer; only nutrients (carbon, nitrogen, phosphorus) are recycled via
+  biogeochemical cycles.
+- **Assuming the greenhouse effect is entirely negative**: the natural greenhouse effect keeps Earth
+  approximately $33^\circ\mathrm{C}$ warmer than it would otherwise be, making it habitable. The
+  concern is the enhanced greenhouse effect from anthropogenic emissions.
+- **Equating evolution with "progress"**: evolution is a change in allele frequency with no
+  direction or goal. A trait is "better" only in the context of the current environment.
+- **Misapplying Hardy-Weinberg**: the equilibrium only holds under ideal conditions (no mutation, no
+  migration, random mating, infinite population, no selection). It serves as a null model to detect
+  evolutionary forces, not as a description of real populations.
+- **Confusing GPP and NPP**: GPP is total photosynthetic output; NPP is what remains after plant
+  respiration. NPP is the energy available to consumers.
+- **Assuming all nitrogen is available to plants**: atmospheric $\mathrm{N}_2$ is inert and
+  unavailable. Plants can only use fixed forms: $\mathrm{NH}_4^+$, $\mathrm{NO}_2^-$, and
+  $\mathrm{NO}_3^-$.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 1: Data Analysis -- Carbon Cycle and Deforestation</summary>
+
+A tropical rainforest has an average above-ground biomass of $200\;\mathrm{t\;C/ha}$ and an NPP of
+$1800\;\mathrm{g\;C/m^2/year}$. A logging company clears $500\;\mathrm{ha}$ of forest. Assume
+$60\%$ of the above-ground carbon is released as $\mathrm{CO}_2$ immediately (through burning and
+decomposition), and the remaining $40\%$ is stored in timber products. (a) Calculate the immediate
+$\mathrm{CO}_2$ release in tonnes. (b) Calculate the annual loss of $\mathrm{CO}_2$ uptake capacity.
+(c) Discuss two long-term consequences for the local carbon cycle.
+
+</details>
+
+<details>
+<summary>Problem 2: Extended Response -- Speciation Mechanisms</summary>
+
+A river changes course over geological time, splitting a population of $50000$ beetles into two
+isolated populations. The western population lives in a dry grassland; the eastern population
+inhabits a moist forest. Over $50000$ generations, the populations diverge. Describe the likely
+mechanisms (natural selection, genetic drift, mutation) driving divergence in each habitat.
+Explain what additional evidence would be needed to confirm that the two populations are now separate
+species.
+
+</details>
+
+<details>
+<summary>Problem 3: Quantitative -- Population Growth</summary>
+
+A population of bacteria follows exponential growth with a per capita growth rate of $r = 0.8$
+per hour. Starting from an initial population of $500$ cells: (a) Calculate the population size
+after $6$ hours. (b) Calculate the doubling time. (c) Explain why exponential growth cannot continue
+indefinitely and describe the shape of the resulting logistic growth curve.
+
+</details>
+
+<details>
+<summary>Problem 4: Data Analysis -- Nitrogen Cycle and Eutrophication</summary>
+
+A lake receives agricultural runoff containing $50\;\mathrm{tonnes/year}$ of nitrogen (as nitrate).
+The lake has a surface area of $10\;\mathrm{km}^2$ and an average depth of $5\;\mathrm{m}$. The
+natural nitrogen input from rainfall is $0.5\;\mathrm{tonnes/year}$. (a) Calculate the nitrogen
+loading per unit area with and without agricultural runoff. (b) Explain the sequence of ecological
+events (algal bloom, oxygen depletion, fish kill) that would likely follow. (c) Describe two
+management strategies to reduce nitrogen loading.
+
+</details>
+
+<details>
+<summary>Problem 5: Extended Response -- Evidence for Evolution</summary>
+
+Using specific named examples, evaluate the relative strength of evidence from the fossil record,
+comparative anatomy, molecular biology, and biogeography in supporting the theory of evolution by
+natural selection. Discuss limitations of each evidence type and explain how multiple lines of
+evidence provide a more robust argument than any single type alone.
+
+</details>
+
+<details>
+<summary>Problem 6: Quantitative -- Hardy-Weinberg and Genetic Drift</summary>
+
+A small island population of $50$ lizards has allele frequencies for a colour gene: $p = 0.80$
+(allele $G$, green) and $q = 0.20$ (allele $g$, grey). A storm kills $40$ lizards randomly,
+leaving $10$ survivors. If all survivors are green, what are the new allele frequencies? Explain why
+genetic drift has a stronger effect in small populations, and calculate the probability that the $g$
+allele is completely lost in this bottleneck event (assuming the $40$ deaths were truly random with
+respect to genotype).
+
+</details>
+
+<details>
+<summary>Problem 7: Extended Response -- Climate Change Impacts</summary>
+
+Describe the mechanism by which increasing atmospheric $\mathrm{CO}_2$ causes ocean acidification.
+Explain the impact of decreasing ocean pH on marine organisms that build calcium carbonate shells
+(e.g., corals, pteropods, bivalves), including the relevant chemical equilibrium. Discuss one
+cascading ecological consequence for the broader marine food web.
+
+</details>
+
+<details>
+<summary>Problem 8: Data Analysis -- Ecological Efficiency and Biomass</summary>
+
+A grassland ecosystem has the following biomass data at each trophic level:
+
+| Trophic level            | Biomass ($\mathrm{kJ/m^2}$) |
+| ------------------------ | --------------------------- |
+| Producers (grass)        | 24000                      |
+| Primary consumers (insects) | 2400                    |
+| Secondary consumers (frogs) | 240                     |
+| Tertiary consumers (snakes) | 24                      |
+
+(a) Calculate the ecological efficiency between each pair of adjacent trophic levels. (b) Explain
+why the biomass pyramid is upright in this ecosystem but can be inverted in aquatic systems. (c)
+If the producer biomass decreases by $50\%$ due to drought, predict the impact on the snake
+population and explain your reasoning.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Cell biology and microscopy** --> Review [./cell-biology](./cell-biology)
+- **DNA replication and mutation** --> Review [./genetics](./genetics)
+- **Biochemistry and enzymes** --> Review [./molecular-biology](./molecular-biology)
+- **Photosynthesis and plant transport** --> Review [./plant-biology](./plant-biology)
+- **Physiology and homeostasis** --> Review [./human-physiology](./human-physiology)

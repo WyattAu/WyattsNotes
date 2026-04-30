@@ -381,3 +381,221 @@ large. Always check whether the approximation is reasonable by comparing with qu
 of the DE (equilibrium, asymptotes, periodicity).
 
 :::
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Separable Equation with Partial Fractions**
+
+Solve $\dfrac{dy}{dx} = \dfrac{y^2 - 1}{x}$ with $y(1) = 2$, $x \gt 0$.
+
+<details>
+<summary>Solution</summary>
+
+Separate variables:
+
+$$\frac{dy}{y^2 - 1} = \frac{dx}{x}$$
+
+Apply partial fractions to the left side: $\dfrac{1}{y^2 - 1} = \dfrac{1}{2(y-1)} - \dfrac{1}{2(y+1)}$.
+
+$$\int \frac{1}{2(y-1)} - \frac{1}{2(y+1)}\,dy = \int \frac{dx}{x}$$
+
+$$\frac{1}{2}\ln|y-1| - \frac{1}{2}\ln|y+1| = \ln x + C$$
+
+$$\ln\left|\frac{y-1}{y+1}\right| = 2\ln x + 2C = \ln(x^2) + 2C$$
+
+$$\left|\frac{y-1}{y+1}\right| = e^{2C} x^2 = Ax^2$$
+
+where $A = e^{2C} \gt 0$.
+
+Apply $y(1) = 2$: $\dfrac{1}{3} = A \cdot 1 \implies A = \dfrac{1}{3}$.
+
+Since $y(1) = 2 \gt 1$, the numerator $y - 1$ is positive initially. For $x \gt 0$ near $1$:
+
+$$\frac{y-1}{y+1} = \frac{x^2}{3}$$
+
+$$3(y - 1) = x^2(y + 1) \implies 3y - 3 = x^2 y + x^2 \implies y(3 - x^2) = 3 + x^2$$
+
+$$y = \frac{3 + x^2}{3 - x^2}$$
+
+This is valid for $0 \lt x \lt \sqrt{3}$.
+
+</details>
+
+**Worked Example: Integrating Factor with Trigonometric Coefficients**
+
+Solve $\dfrac{dy}{dx} + y\tan x = \cos x$ for $-\dfrac{\pi}{2} \lt x \lt \dfrac{\pi}{2}$.
+
+<details>
+<summary>Solution</summary>
+
+Here $P(x) = \tan x$, so:
+
+$$\mu(x) = \exp\!\left(\int \tan x\,dx\right) = \exp(-\ln|\cos x|) = \frac{1}{\cos x} = \sec x$$
+
+Multiply through: $\sec x \dfrac{dy}{dx} + y\sec x \tan x = \sec x \cos x = 1$.
+
+The left side is $\dfrac{d}{dx}(y \sec x)$, so:
+
+$$\frac{d}{dx}(y \sec x) = 1 \implies y \sec x = x + C$$
+
+$$y = (x + C)\cos x$$
+
+</details>
+
+**Worked Example: Second Order with Complex Roots and Initial Conditions**
+
+Solve $y'' - 4y' + 13y = 0$ with $y(0) = 1$ and $y'(0) = 6$.
+
+<details>
+<summary>Solution</summary>
+
+Characteristic equation: $\lambda^2 - 4\lambda + 13 = 0$.
+
+$$\lambda = \frac{4 \pm \sqrt{16 - 52}}{2} = \frac{4 \pm \sqrt{-36}}{2} = 2 \pm 3i$$
+
+General solution: $y = e^{2x}(A\cos 3x + B\sin 3x)$.
+
+Compute $y'$:
+
+$$y' = 2e^{2x}(A\cos 3x + B\sin 3x) + e^{2x}(-3A\sin 3x + 3B\cos 3x)$$
+
+$$y' = e^{2x}\bigl[(2A + 3B)\cos 3x + (2B - 3A)\sin 3x\bigr]$$
+
+Apply $y(0) = 1$: $A = 1$.
+
+Apply $y'(0) = 6$: $2(1) + 3B = 6 \implies 3B = 4 \implies B = \dfrac{4}{3}$.
+
+$$y = e^{2x}\!\left(\cos 3x + \frac{4}{3}\sin 3x\right)$$
+
+</details>
+
+**Worked Example: Newton's Law of Cooling with Two Data Points**
+
+A cup of coffee at $85\,{}^{\circ}\mathrm{C}$ is placed in a room at $22\,{}^{\circ}\mathrm{C}$. After
+$5$ minutes the temperature is $70\,{}^{\circ}\mathrm{C}$, and after $10$ minutes it is
+$60\,{}^{\circ}\mathrm{C}$. Find the temperature after $20$ minutes.
+
+<details>
+<summary>Solution</summary>
+
+The model is $T(t) = 22 + (85 - 22)e^{-kt} = 22 + 63e^{-kt}$.
+
+From the first data point: $70 = 22 + 63e^{-5k} \implies e^{-5k} = \dfrac{48}{63} = \dfrac{16}{21}$.
+
+From the second data point: $60 = 22 + 63e^{-10k} \implies e^{-10k} = \dfrac{38}{63}$.
+
+Check consistency: $\left(\dfrac{16}{21}\right)^2 = \dfrac{256}{441} \approx 0.5805$, and
+$\dfrac{38}{63} \approx 0.6032$. These are close but not exactly equal, indicating measurement
+imprecision. Using the $10$-minute data point:
+
+$$e^{-10k} = \frac{38}{63} \implies -10k = \ln\!\left(\frac{38}{63}\right) \implies k = \frac{1}{10}\ln\!\left(\frac{63}{38}\right) \approx 0.0506$$
+
+$$T(20) = 22 + 63\left(\frac{38}{63}\right)^2 = 22 + \frac{1444}{63} \approx 22 + 22.92 = 44.9\,{}^{\circ}\mathrm{C}$$
+
+</details>
+
+**Worked Example: Euler's Method with Small Step Size**
+
+Use Euler's method with $h = 0.05$ to approximate $y(0.3)$ for $\dfrac{dy}{dx} = x - y$,
+$y(0) = 2$.
+
+<details>
+<summary>Solution</summary>
+
+| $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = x_n - y_n$ |
+| :-- | :---- | :---- | :------------------------- |
+| 0 | 0.00 | 2.0000 | $-2.0000$ |
+| 1 | 0.05 | 1.9000 | $-1.8500$ |
+| 2 | 0.10 | 1.8075 | $-1.7075$ |
+| 3 | 0.15 | 1.7221 | $-1.5721$ |
+| 4 | 0.20 | 1.6435 | $-1.4435$ |
+| 5 | 0.25 | 1.5713 | $-1.3213$ |
+| 6 | 0.30 | 1.5053 | — |
+
+Euler approximation: $y(0.3) \approx 1.505$.
+
+The exact solution (integrating factor): $y' + y = x$, $\mu = e^x$.
+
+$$\frac{d}{dx}(ye^x) = xe^x \implies ye^x = (x - 1)e^x + C$$
+
+With $y(0) = 2$: $C = 3$. So $y = x - 1 + 3e^{-x}$.
+
+At $x = 0.3$: $y = -0.7 + 3e^{-0.3} \approx -0.7 + 3(0.7408) = -0.7 + 2.2225 = 1.522$.
+
+Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
+
+</details>
+
+---
+
+## Common Pitfalls
+
+1. **Forgetting the constant of integration.** When solving a separable equation, each side of the
+   separated equation produces its own constant. These combine into a single constant $C$, but omitting
+   it entirely loses the generality of the solution.
+
+2. **Losing solutions during separation.** Dividing by $g(y)$ implicitly assumes $g(y) \ne 0$. The
+   equilibrium solution $g(y) = 0$ must be checked separately. For example, in $\dfrac{dy}{dx} = y^2$,
+   dividing by $y^2$ loses the solution $y = 0$.
+
+3. **Incorrect sign in the integrating factor.** The standard form is
+   $\dfrac{dy}{dx} + P(x)y = Q(x)$. If the equation is $\dfrac{dy}{dx} = P(x)y + Q(x)$, you must
+   rewrite it as $\dfrac{dy}{dx} - P(x)y = Q(x)$ before computing $\mu = e^{\int -P(x)\,dx}$.
+
+4. **Misidentifying the discriminant for second order equations.** For
+   $a\lambda^2 + b\lambda + c = 0$, the discriminant is $\Delta = b^2 - 4ac$. If $\Delta = 0$, the
+   repeated root gives $(A + Bx)e^{\lambda x}$, **not** $Ae^{\lambda x}$.
+
+5. **Confusing the damping cases.** In the damped oscillation equation
+   $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$, it is $\gamma^2$ that is compared with $\omega_0^2$.
+   A common error is to compare $\gamma$ with $\omega_0$ directly.
+
+6. **Euler's method sign errors.** The update formula is $y_{n+1} = y_n + h \cdot f(x_n, y_n)$.
+   A negative sign in $f$ does **not** change the formula; it only affects the value of the slope
+   $f(x_n, y_n)$ at each step.
+
+7. **Applying initial conditions prematurely.** Apply the initial condition only after finding the
+   general solution with the constant $C$. Applying it during the separation or integration step leads
+   to incorrect particular solutions.
+
+8. **Ignoring the domain of the solution.** Solutions to DEs may only be valid on specific intervals.
+   For example, $y = \dfrac{3 + x^2}{3 - x^2}$ blows up at $x = \sqrt{3}$. Always state the domain
+   on which the solution is defined.
+
+---
+
+## Exam-Style Problems
+
+1. Solve $\dfrac{dy}{dx} = \dfrac{e^{x+y}}{e^x + 1}$ given $y(0) = \ln 3$.
+
+2. Solve $\dfrac{dy}{dx} + \dfrac{2y}{x} = x^3$ for $x \gt 0$, given $y(1) = 0$.
+
+3. Find the general solution of $y'' + 6y' + 9y = 0$ and identify the type of damping.
+
+4. A radioactive isotope has a half-life of $8$ days. A sample initially contains $200\,\mathrm{g}$.
+   How long until only $12.5\,\mathrm{g}$ remain? Give your answer to the nearest day.
+
+5. Use Euler's method with $h = 0.25$ to estimate $y(1)$ for $\dfrac{dy}{dx} = 2x - y$,
+   $y(0) = 0$. Find the exact solution and compute the percentage error.
+
+6. A particle of mass $2\,\mathrm{kg}$ falls from rest under gravity with air resistance equal to
+   $0.5v$ (where $v$ is the velocity in $\mathrm{m/s}$). Find the terminal velocity and the time
+   taken to reach $90\%$ of terminal velocity. Take $g = 9.8\,\mathrm{m/s}^2$.
+
+7. Solve $\dfrac{dy}{dx} = \dfrac{x^2 + 1}{2y}$ with $y(0) = 2$. Find the value of $y$ when $x = 2$.
+
+8. The temperature of an object follows Newton's law of cooling. It cools from $95\,{}^{\circ}\mathrm{C}$
+   to $75\,{}^{\circ}\mathrm{C}$ in $15$ minutes in a room at $20\,{}^{\circ}\mathrm{C}$. How long
+   does it take to cool from $95\,{}^{\circ}\mathrm{C}$ to $30\,{}^{\circ}\mathrm{C}$?
+
+---
+
+## Cross-References
+
+- **Integration techniques** used in solving DEs: see [Integration](/docs/docs_ib/maths/calculus/integration)
+- **Exponential and logarithmic functions** underpin growth/decay models: see [Exponentials and Logarithms](/docs/docs_ib/maths/algebra/exponentials-and-logarithms)
+- **Complex numbers** and Euler's formula connect to second order ODE solutions: see [Complex Numbers](/docs/docs_ib/maths/vectors-and-matrices/complex-numbers)
+- **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](/docs/docs_ib/maths/calculus/sequences-and-series)
+- **Vectors and mechanics** applications of DEs: see [Vectors in Three Dimensions](/docs/docs_ib/maths/vectors-and-matrices/vectors)

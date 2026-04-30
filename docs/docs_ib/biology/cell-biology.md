@@ -432,3 +432,252 @@ DNA** supports the endosymbiotic theory and allows the mitochondrion to produce 
 proteins independently of nuclear genes.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Surface Area-to-Volume Ratio and Cell Size Limit**
+
+A cuboidal epithelial cell has a side length of $10\;\mathrm{\mu m}$. It doubles in each linear
+dimension to become $20\;\mathrm{\mu m}$ per side. Calculate the surface-area-to-volume ratio before
+and after the enlargement, and determine the factor by which the ratio decreases.
+
+<details>
+<summary>Solution</summary>
+
+For a cube: $A = 6s^2$ and $V = s^3$.
+
+**Before enlargement** ($s = 10\;\mathrm{\mu m}$):
+$A = 6 \times 10^2 = 600\;\mathrm{\mu m}^2$
+$V = 10^3 = 1000\;\mathrm{\mu m}^3$
+$\frac{A}{V} = \frac{600}{1000} = 0.60\;\mathrm{\mu m}^{-1}$
+
+**After enlargement** ($s = 20\;\mathrm{\mu m}$):
+$A = 6 \times 20^2 = 2400\;\mathrm{\mu m}^2$
+$V = 20^3 = 8000\;\mathrm{\mu m}^3$
+$\frac{A}{V} = \frac{2400}{8000} = 0.30\;\mathrm{\mu m}^{-1}$
+
+The surface-area-to-volume ratio is halved. This demonstrates why larger cells face a fundamental
+constraint: the metabolic demand (proportional to volume) grows faster than the capacity for nutrient
+and waste exchange (proportional to surface area). Multicellular organisms compensate by folding
+membranes (microvilli, cristae) to increase effective surface area without increasing cell volume.
+
+</details>
+
+**Worked Example: Magnification Calculation from a Micrograph**
+
+An electron micrograph of a chloroplast shows a granum that measures $4.2\;\mathrm{cm}$ across the
+image. The scale bar indicates that $1\;\mathrm{cm}$ on the image represents $0.5\;\mathrm{\mu m}$ in
+reality. Calculate the actual width of the granum and the magnification of the micrograph.
+
+<details>
+<summary>Solution</summary>
+
+**Actual width**: $4.2\;\mathrm{cm} \times 0.5\;\mathrm{\mu m/cm} = 2.1\;\mathrm{\mu m}$
+
+**Magnification**:
+$\mathrm{Magnification} = \frac{\mathrm{image size}}{\mathrm{actual size}} = \frac{4.2\;\mathrm{cm}}{2.1\;\mathrm{\mu m}}$
+
+Convert to consistent units: $4.2\;\mathrm{cm} = 42000\;\mathrm{\mu m}$
+
+$\mathrm{Magnification} = \frac{42000}{2.1} = 20000\times$
+
+The granum is $2.1\;\mathrm{\mu m}$ wide and the micrograph is magnified $20000$ times. A typical
+granum stack contains $5$--$30$ thylakoid discs, each approximately $0.3\;\mathrm{\mu m}$ in diameter,
+consistent with this measurement.
+
+</details>
+
+**Worked Example: Interpreting the Na+/K+ Pump Stoichiometry**
+
+The $\mathrm{Na}^+/\mathrm{K}^+$ ATPase pumps $3\;\mathrm{Na}^+$ ions out and $2\;\mathrm{K}^+$ ions in
+per ATP hydrolysed. A neurone at rest has an intracellular $\mathrm{Na}^+$ concentration of
+$15\;\mathrm{mmol/L}$ and an extracellular concentration of $145\;\mathrm{mmol/L}$. Calculate the
+ratio of the concentration gradients and explain why the pump is described as electrogenic.
+
+<details>
+<summary>Solution</summary>
+
+**$\mathrm{Na}^+$ concentration gradient**: $\frac{[\mathrm{Na}^+]_{\mathrm{out}}}{[\mathrm{Na}^+]_{\mathrm{in}}} = \frac{145}{15} \approx 9.7$
+
+**$\mathrm{K}^+$ concentration gradient** (typical values: $150\;\mathrm{mmol/L}$ in,
+$5\;\mathrm{mmol/L}$ out): $\frac{[\mathrm{K}^+]_{\mathrm{in}}}{[\mathrm{K}^+]_{\mathrm{out}}} = \frac{150}{5} = 30$
+
+The pump is **electrogenic** because it moves $3$ positive charges out but only $2$ positive charges
+in per cycle, resulting in a net export of one positive charge per ATP hydrolysed. This net outward
+current contributes directly to the negative resting membrane potential (approximately
+$-70\;\mathrm{mV}$), alongside the $\mathrm{K}^+$ diffusion potential established by leak channels.
+If the pump moved equal numbers of cations in each direction, it would not directly contribute to
+the membrane potential.
+
+</details>
+
+**Worked Example: Counting Cells from a Haemocytometer**
+
+A student loads a haemocytometer with a yeast cell suspension. The central large square ($1\;\mathrm{mm}
+\times 1\;\mathrm{mm}$, depth $0.1\;\mathrm{mm}$) is divided into $25$ smaller squares. The student
+counts an average of $42$ yeast cells per small square across $5$ squares. Calculate the cell
+concentration in cells per $\mathrm{mL}$.
+
+<details>
+<summary>Solution</summary>
+
+Volume of the central large square: $1\;\mathrm{mm} \times 1\;\mathrm{mm} \times 0.1\;\mathrm{mm}
+= 0.1\;\mathrm{mm}^3 = 10^{-4}\;\mathrm{mL}$
+
+Total cells in the central square: $42 \times 25 = 1050$ cells
+
+Cell concentration: $\frac{1050\;\mathrm{cells}}{10^{-4}\;\mathrm{mL}} = 1.05 \times 10^7\;\mathrm{cells/mL}$
+
+This technique is essential in microbiology for determining cell density in culture, monitoring
+growth curves, and standardising inocula for experiments. A dilution factor must be applied if the
+suspension was diluted before loading.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Confusing chromosomes and chromatids**: a replicated chromosome consists of two sister chromatids
+  joined at a centromere. After anaphase, each chromatid is an individual chromosome. Count
+  chromosomes by counting centromeres, not arms.
+- **Equating osmosis with diffusion**: osmosis refers specifically to water movement across a
+  selectively permeable membrane. Diffusion is the general movement of particles from high to low
+  concentration.
+- **Stating that prokaryotes "have no DNA"**: they possess a circular chromosome and plasmids, but
+  lack a membrane-bound nucleus. The nucleoid region contains the DNA.
+- **Describing the cell membrane as a "solid" structure**: it is fluid, with phospholipids and
+  proteins able to move laterally (demonstrated by the Frye-Edidin fusion experiment, 1970).
+- **Confusing primary and secondary active transport**: primary active transport directly hydrolyses
+  ATP (e.g., the $\mathrm{Na}^+/\mathrm{K}^+$ pump). Secondary active transport uses the gradient
+  established by primary transport as an energy source (e.g., $\mathrm{Na}^+$-glucose co-transport).
+- **Writing that mitosis produces "identical" cells without qualification**: while genetically
+  identical (barring mutation), the two daughter cells receive slightly different cytoplasmic
+  contents, which can influence cell fate in early development.
+- **Assuming all eukaryotic cells have mitochondria**: some anaerobic eukaryotes (e.g., certain
+  parasitic protists) lack mitochondria entirely or possess reduced versions called mitosomes or
+  hydrogenosomes.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 1: Data Analysis -- Osmosis Experiment</summary>
+
+A student places potato cylinders of identical dimensions ($5\;\mathrm{cm} \times 0.5\;\mathrm{cm}$
+diameter) into a series of sucrose solutions ranging from $0.0$ to $0.6\;\mathrm{mol/L}$ at
+$0.1\;\mathrm{mol/L}$ intervals. After $24$ hours at $20^\circ\mathrm{C}$, the student measures the
+mass change of each cylinder. The results are:
+
+| Sucrose concentration (mol/L) | Mass change (%) |
+| ----------------------------- | --------------- |
+| 0.0                          | +12.4           |
+| 0.1                          | +7.8            |
+| 0.2                          | +3.1            |
+| 0.3                          | -1.2            |
+| 0.4                          | -8.5            |
+| 0.5                          | -14.3           |
+| 0.6                          | -21.0           |
+
+(a) Plot these data and estimate the water potential of the potato tissue.
+(b) Explain the biological basis for the trend observed.
+(c) Predict the result if the experiment were repeated at $35^\circ\mathrm{C}$.
+
+</details>
+
+<details>
+<summary>Problem 2: Extended Response -- Endosymbiotic Theory</summary>
+
+Mitochondria possess their own circular DNA, $70\mathrm{S}$ ribosomes, a double membrane, and the
+ability to replicate independently by binary fission. Evaluate the extent to which these features
+support the endosymbiotic theory. In your response, address at least two alternative explanations
+and discuss additional evidence (e.g., molecular phylogenetics) that strengthens the argument.
+
+</details>
+
+<details>
+<summary>Problem 3: Quantitative -- Chi-Squared Test on Cell Cycle Data</summary>
+
+A researcher observes $200$ cells under a microscope and records their mitotic phases:
+
+| Phase         | Observed | Expected |
+| ------------- | -------- | -------- |
+| Interphase    | 158      | 160      |
+| Prophase      | 22       | 16       |
+| Metaphase     | 10       | 8        |
+| Anaphase      | 6        | 8        |
+| Telophase     | 4        | 8        |
+
+The expected values assume each mitotic phase occupies equal time. Use the chi-squared test
+($\chi^2 = \sum \frac{(O - E)^2}{E}$) at the $p = 0.05$ significance level (critical value $= 9.49$
+for $4$ degrees of freedom) to determine whether the observed distribution differs significantly
+from the expected. State your null hypothesis.
+
+</details>
+
+<details>
+<summary>Problem 4: Diagram Analysis -- Comparing Prokaryotic and Eukaryotic Cells</summary>
+
+An electron micrograph shows a cell approximately $2\;\mathrm{\mu m}$ in diameter with no internal
+membrane-bound organelles. Visible structures include a dense nucleoid region, free ribosomes, a
+capsule, and several pili. (a) Identify this cell as prokaryotic or eukaryotic and justify with
+three structural observations. (b) The cell is found in an environment with high antibiotic
+concentration. Explain why penicillin would be ineffective against this organism if it is an
+archaeon rather than a bacterium.
+
+</details>
+
+<details>
+<summary>Problem 5: Extended Response -- Membrane Fluidity</summary>
+
+Cholesterol modulates cell membrane fluidity. Describe and explain the dual role of cholesterol in
+membrane fluidity at both low and high temperatures. Discuss how this relates to the observation
+that cold-water fish species have a higher proportion of unsaturated fatty acids in their membrane
+phospholipids compared with warm-water species.
+
+</details>
+
+<details>
+<summary>Problem 6: Quantitative -- Cell Division and Tumour Growth</summary>
+
+A tumour starts from a single cell and undergoes mitosis every $24$ hours. Assuming $100\%$ cell
+survival and no apoptosis, calculate the number of cells after $14$ days. If the average cell
+diameter is $10\;\mathrm{\mu m}$ and the tumour grows as a sphere, estimate the tumour diameter after
+$14$ days. Explain why actual tumour growth is slower than this theoretical maximum.
+
+</details>
+
+<details>
+<summary>Problem 7: Data Analysis -- Fick's Law Application</summary>
+
+Gas exchange in the alveoli depends on the rate of diffusion described by Fick's Law. Alveolar
+surface area is approximately $70\;\mathrm{m}^2$ and the diffusion distance (alveolar wall +
+capillary wall) is approximately $1.5\;\mathrm{\mu m}$. The $\mathrm{O}_2$ partial pressure
+difference is approximately $8\;\mathrm{kPa}$. (a) Calculate the relative rate of $\mathrm{O}_2$
+diffusion under these conditions. (b) Explain how emphysema, which destroys alveolar walls and
+reduces total surface area to $35\;\mathrm{m}^2$, would affect this rate.
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- Specialised Cells and SA:V Ratio</summary>
+
+Choose three specialised cells from different organ systems (e.g., small intestine epithelium,
+alveolar epithelium, proximal convoluted tubule). For each cell, describe one structural adaptation
+that increases surface area, and explain how this adaptation relates to the cell's physiological
+function. Use the concept of surface-area-to-volume ratio in your explanation.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Mitosis and meiosis phases** --> Review [./genetics](./genetics)
+- **DNA replication and chromosome structure** --> Review [./molecular-biology](./molecular-biology)
+- **Membrane transport and ATP use** --> Review [./human-physiology](./human-physiology)
+- **Osmosis and water potential** --> Review [./plant-biology](./plant-biology)
+- **Evolution and natural selection** --> Review [./ecology](./ecology)

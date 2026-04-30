@@ -387,3 +387,200 @@ The van der Waals pressure ($4.83\mathrm{ atm}$) is lower than the ideal gas pre
 ($4.93\mathrm{ atm}$) because intermolecular attractions reduce the effective pressure.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Ideal Gas Law with Unit Consistency**
+
+A sample of nitrogen gas occupies $250.0\mathrm{ mL}$ at $25\degree\mathrm{C}$ and $98.5\mathrm{ kPa}$. Calculate the number of moles of nitrogen.
+
+<details>
+<summary>Solution</summary>
+
+Convert all quantities to SI units:
+
+- $V = 250.0\mathrm{ mL} = 0.2500\mathrm{ L} = 2.500 \times 10^{-4}\mathrm{ m}^3$
+- $T = 25\degree\mathrm{C} = 298\mathrm{ K}$
+- $P = 98.5\mathrm{ kPa} = 98\,500\mathrm{ Pa}$
+
+Using $R = 8.314\mathrm{ J/(mol \cdot K)}$ (SI units):
+
+$$
+n = \frac{PV}{RT} = \frac{98\,500 \times 2.500 \times 10^{-4}}{8.314 \times 298} = \frac{24.63}{2477.6} = 0.00994\mathrm{ mol}
+$$
+
+Alternatively, using $R = 8.314 \times 10^{-2}\mathrm{ L \cdot kPa/(mol \cdot K)}$ and keeping $V$ in litres and $P$ in kPa:
+
+$$
+n = \frac{98.5 \times 0.2500}{8.314 \times 10^{-2} \times 298} = \frac{24.63}{247.8} = 0.00994\mathrm{ mol}
+$$
+
+Both approaches give $n = 0.00994\mathrm{ mol}$ (approximately $0.01\mathrm{ mol}$).
+
+</details>
+
+**Worked Example: Graham's Law of Effusion**
+
+A sample of an unknown gas effuses through a small opening at a rate that is $0.387$ times the rate of effusion of $\mathrm{O}_2$ under identical conditions. Determine the molar mass of the unknown gas and identify it.
+
+<details>
+<summary>Solution</summary>
+
+Graham's law:
+
+$$
+\frac{r_{\mathrm{unknown}}}{r_{\mathrm{O}_2}} = \sqrt{\frac{M_{\mathrm{O}_2}}{M_{\mathrm{unknown}}}}
+$$
+
+Given $r_{\mathrm{unknown}}/r_{\mathrm{O}_2} = 0.387$ and $M_{\mathrm{O}_2} = 32.0\mathrm{ g/mol}$:
+
+$$
+0.387 = \sqrt{\frac{32.0}{M_{\mathrm{unknown}}}}
+$$
+
+$$
+0.387^2 = \frac{32.0}{M_{\mathrm{unknown}}}
+$$
+
+$$
+0.1498 = \frac{32.0}{M_{\mathrm{unknown}}}
+$$
+
+$$
+M_{\mathrm{unknown}} = \frac{32.0}{0.1498} = 213.5\mathrm{ g/mol}
+$$
+
+The molar mass is approximately $214\mathrm{ g/mol}$. This is close to that of mercury vapour ($\mathrm{Hg}$, $A_r = 200.6$) or radon ($\mathrm{Rn}$, $A_r = 222$). Given typical IB problem contexts, this is most consistent with radon gas.
+
+</details>
+
+**Worked Example: Dalton's Law of Partial Pressures**
+
+A mixture of $2.00\mathrm{ g}$ of $\mathrm{H}_2$ and $14.0\mathrm{ g}$ of $\mathrm{N}_2$ is confined in a $10.0\mathrm{ L}$ vessel at $27\degree\mathrm{C}$. Calculate the partial pressure of each gas and the total pressure.
+
+<details>
+<summary>Solution</summary>
+
+$$
+n(\mathrm{H}_2) = \frac{2.00}{2.02} = 0.990\mathrm{ mol}
+$$
+
+$$
+n(\mathrm{N}_2) = \frac{14.0}{28.0} = 0.500\mathrm{ mol}
+$$
+
+$$
+n_{\mathrm{total}} = 0.990 + 0.500 = 1.490\mathrm{ mol}
+$$
+
+$$
+T = 27\degree\mathrm{C} = 300\mathrm{ K}
+$$
+
+Using the ideal gas law for the total mixture ($R = 8.314 \times 10^{-2}\mathrm{ L \cdot kPa/(mol \cdot K)}$):
+
+$$
+P_{\mathrm{total}} = \frac{n_{\mathrm{total}}RT}{V} = \frac{1.490 \times 8.314 \times 10^{-2} \times 300}{10.0} = \frac{371.6}{10.0} = 371.6\mathrm{ kPa}
+$$
+
+Mole fractions:
+
+$$
+x_{\mathrm{H}_2} = \frac{0.990}{1.490} = 0.664
+$$
+
+$$
+x_{\mathrm{N}_2} = \frac{0.500}{1.490} = 0.336
+$$
+
+Partial pressures:
+
+$$
+P_{\mathrm{H}_2} = 0.664 \times 371.6 = 247\mathrm{ kPa}
+$$
+
+$$
+P_{\mathrm{N}_2} = 0.336 \times 371.6 = 125\mathrm{ kPa}
+$$
+
+Check: $247 + 125 = 372\mathrm{ kPa}$ (rounding difference from $371.6\mathrm{ kPa}$).
+
+</details>
+
+**Worked Example: Interpreting a Phase Diagram**
+
+On the phase diagram of water, describe what happens when solid ice at $-10\degree\mathrm{C}$ is subjected to increasing pressure at constant temperature. Explain why this behaviour differs from that of most substances.
+
+<details>
+<summary>Solution</summary>
+
+On the phase diagram of water, starting at $-10\degree\mathrm{C}$ (solid phase) and increasing pressure at constant temperature, you move horizontally to the right. You cross the **solid--liquid boundary**, meaning the ice **melts** into liquid water.
+
+This is unusual because the solid--liquid boundary on water's phase diagram has a **negative slope**. For nearly all other substances, increasing pressure at constant temperature in the solid region does not cross the melting curve — instead, the solid remains solid or the melting point increases.
+
+The negative slope for water arises because ice is **less dense** than liquid water. Increasing pressure favours the phase with the smaller volume (higher density), which is liquid water. Le Chatelier's principle predicts that the system shifts toward the denser phase when pressure increases.
+
+</details>
+
+**Worked Example: Boiling Point Comparison Using IMF Analysis**
+
+Explain the boiling point trend: $\mathrm{CH}_4$ ($-162\degree\mathrm{C}$) $\lt$ $\mathrm{SiH}_4$ ($-112\degree\mathrm{C}$) $\lt$ $\mathrm{GeH}_4$ ($-88\degree\mathrm{C}$).
+
+<details>
+<summary>Solution</summary>
+
+All three molecules are tetrahedral and non-polar, so the only intermolecular forces present are London dispersion forces (LDFs). LDF strength depends on the number of electrons and the polarizability of the electron cloud.
+
+Going down Group 14: $\mathrm{C}$ (6 electrons) $\to$ $\mathrm{Si}$ (14 electrons) $\to$ $\mathrm{Ge}$ (32 electrons). The increasing number of electrons produces larger, more polarizable electron clouds, which generate stronger instantaneous dipoles and thus stronger LDFs.
+
+Since boiling requires overcoming intermolecular forces, stronger LDFs mean a higher boiling point. The trend is entirely consistent with increasing LDF strength down the group.
+
+</details>
+
+---
+
+## Common Pitfalls
+
+- **Using Celsius instead of Kelvin in gas calculations:** The ideal gas law requires absolute temperature. A gas at $27\degree\mathrm{C}$ has $T = 300\mathrm{ K}$, not $27$. Forgetting this conversion typically produces answers that are off by a factor of $\approx 10$.
+
+- **Choosing the wrong value of $R$:** $R = 8.314\mathrm{ J/(mol \cdot K)}$ requires SI units ($\mathrm{Pa}$, $\mathrm{m}^3$). $R = 0.0821\mathrm{ L \cdot atm/(mol \cdot K)}$ requires pressure in atm and volume in litres. Mixing unit systems (e.g., kPa with $0.0821$) yields incorrect results.
+
+- **Confusing STP definitions:** The IB uses STP as $0\degree\mathrm{C}$ and $100\mathrm{ kPa}$, giving $V_m = 22.7\mathrm{ L/mol}$. Many textbooks use the older IUPAC definition ($1\mathrm{ atm} = 101.3\mathrm{ kPa}$, $V_m = 22.4\mathrm{ L/mol}$). Using the wrong molar volume introduces a $\approx 1.3\%$ error.
+
+- **Claiming hydrogen bonding without checking all criteria:** A molecule must have H bonded directly to N, O, or F. $\mathrm{CH}_4$, $\mathrm{HCl}$, and $\mathrm{PH}_3$ do **not** exhibit hydrogen bonding. $\mathrm{H}$ bonded to C is never sufficient, regardless of molecular polarity.
+
+- **Misapplying Graham's law to mixtures:** Graham's law compares rates of effusion for two pure gases. It does not directly give the composition of a gas mixture after partial effusion (the lighter component enriches preferentially, changing the composition over time).
+
+- **Ignoring molecular shape when comparing LDFs:** $n$-pentane and neopentane (2,2-dimethylpropane) have the same molar mass and number of electrons, but $n$-pentane (linear) has a higher boiling point ($36\degree\mathrm{C}$) than neopentane (spherical, $9.5\degree\mathrm{C}$) because the linear shape allows greater surface-area contact and stronger LDFs.
+
+---
+
+## Exam-Style Problems
+
+1. **[Medium]** A sealed container holds $0.200\mathrm{ mol}$ of $\mathrm{CO}_2$ at $50.0\degree\mathrm{C}$ and a pressure of $250\mathrm{ kPa}$. Calculate the volume of the container in litres.
+
+2. **[Medium]** Explain why $\mathrm{HF}$ has a lower boiling point ($19.5\degree\mathrm{C}$) than $\mathrm{H}_2\mathrm{O}$ ($100\degree\mathrm{C}$), even though fluorine is more electronegative than oxygen.
+
+3. **[Hard]** Using the van der Waals equation, calculate the pressure of $2.00\mathrm{ mol}$ of $\mathrm{NH}_3$ in a $5.00\mathrm{ L}$ container at $400\mathrm{ K}$. Given $a = 4.17\mathrm{ L}^2 \cdot \mathrm{atm/mol}^2$ and $b = 0.037\mathrm{ L/mol}$. Compare with the ideal gas prediction and explain the direction of the deviation.
+
+4. **[Hard]** A gas mixture contains $\mathrm{He}$, $\mathrm{Ne}$, and $\mathrm{Ar}$ with mole fractions $0.40$, $0.35$, and $0.25$ respectively. The total pressure is $120\mathrm{ kPa}$. Calculate the partial pressure of each component and the total mass of gas in a $10.0\mathrm{ L}$ container at $300\mathrm{ K}$.
+
+5. **[Medium]** On a phase diagram, label the triple point, critical point, and all phase boundaries. Explain why the critical point represents the temperature above which a gas cannot be liquefied by pressure alone.
+
+6. **[Hard]** Explain why $\mathrm{CCl}_4$ (molar mass $154\mathrm{ g/mol}$) is a liquid at room temperature (bp $76.7\degree\mathrm{C}$) while $\mathrm{Ar}$ (molar mass $40\mathrm{ g/mol}$) is a gas (bp $-186\degree\mathrm{C}$), even though both are non-polar and only experience London dispersion forces.
+
+7. **[Medium]** A sample of gas effuses through an apparatus in $42\mathrm{ s}$. An equal number of moles of an unknown gas effuses through the same apparatus in $78\mathrm{ s}$. If the first gas is $\mathrm{CO}_2$, calculate the molar mass of the unknown gas.
+
+8. **[Hard]** At high pressures, real gases can have $Z \gt 1$. Explain the molecular-level origin of this deviation. Under what conditions of temperature and molecular identity would you expect this deviation to be most significant?
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Atomic structure and electron configuration** → Review [./atomic-theory](./atomic-theory)
+- **Bonding and intermolecular forces in depth** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
+- **Thermodynamics (energy changes in state transitions)** → Review [./thermodynamics](./thermodynamics)
+- **Stoichiometry and the mole concept** → Review [./stoichiometry](./stoichiometry)
+- **Periodic trends affecting physical properties** → Review [./periodicity](./periodicity)

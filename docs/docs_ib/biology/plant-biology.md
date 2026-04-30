@@ -458,3 +458,262 @@ This demonstrates that the **last light exposure** determines the phytochrome st
 germination response --- a property known as phytochrome reversibility.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Transpiration Rate Calculation Using a Potometer**
+
+A potometer containing a leafy shoot records water uptake of $2.4\;\mathrm{mL}$ over $30$ minutes.
+The total leaf area of the shoot is $80\;\mathrm{cm}^2$. Calculate the transpiration rate in
+$\mathrm{mL/cm^2/hour}$ and convert to $\mathrm{mmol\;H_2O/m^2/s}$.
+
+<details>
+<summary>Solution</summary>
+
+**Transpiration rate**: $\frac{2.4\;\mathrm{mL}}{80\;\mathrm{cm}^2 \times 0.5\;\mathrm{hours}} = \frac{2.4}{40} = 0.060\;\mathrm{mL/(cm^2 \cdot h)}$
+
+**Convert to $\mathrm{mmol\;H_2O/m^2/s}$**:
+$0.060\;\mathrm{mL/(cm^2 \cdot h)} = 0.060 \times 10^{-2}\;\mathrm{L/(cm^2 \cdot h)} = 0.060 \times 10^{-2} \times 10^4\;\mathrm{L/(m^2 \cdot h)} = 0.60\;\mathrm{L/(m^2 \cdot h)}$
+
+Molar mass of water $= 18\;\mathrm{g/mol}$, density $= 1\;\mathrm{g/mL}$.
+Moles per hour: $\frac{600\;\mathrm{mL/h}}{18\;\mathrm{g/mol}} = 33.3\;\mathrm{mol/h}$
+
+Convert to $\mathrm{mmol/s}$: $\frac{33.3 \times 10^3\;\mathrm{mmol}}{3600\;\mathrm{s}} = 9.3\;\mathrm{mmol/(m^2 \cdot s)}$
+
+A typical transpiration rate for a mesophytic plant in daylight is $1$--$10\;\mathrm{mmol/(m^2 \cdot s)}$,
+so this value is within the expected physiological range. The potometer measures water uptake as a
+proxy for transpiration, assuming that water uptake approximates water loss (valid under steady-state
+conditions when the plant is not accumulating or depleting internal water reserves).
+
+</details>
+
+**Worked Example: Xylem Water Transport and Cohesion-Tension Theory**
+
+A $10\;\mathrm{m}$ tall tree has a xylem vessel radius of $50\;\mathrm{\mu m}$. The surface tension
+of water at $20^\circ\mathrm{C}$ is $0.073\;\mathrm{N/m}$ and the contact angle between water and
+the xylem wall is approximately $0^\circ$. Using the capillary rise equation
+$h = \frac{2\gamma \cos\theta}{\rho g r}$, calculate whether capillary action alone can account
+for water reaching the top of the tree.
+
+<details>
+<summary>Solution</summary>
+
+$h = \frac{2 \times 0.073 \times \cos(0^\circ)}{1000 \times 9.81 \times 50 \times 10^{-6}}$
+$= \frac{0.146}{0.4905} = 0.298\;\mathrm{m}$
+
+Capillary rise is approximately $0.30\;\mathrm{m}$, which is far less than the $10\;\mathrm{m}$
+height of the tree. This demonstrates that **capillary action alone is insufficient** to explain
+water transport in tall plants. The primary mechanism is the **cohesion-tension theory**:
+transpiration at the leaves creates a negative pressure (tension) of approximately $-1$ to
+$-3\;\mathrm{MPa}$ in the xylem, and the cohesive forces between water molecules (hydrogen bonds)
+allow this tension to pull a continuous water column upward from the roots to the crown. Root
+pressure (typically $0.1$--$0.5\;\mathrm{MPa}$) provides a minor additional contribution.
+
+</details>
+
+**Worked Example: Phloem Translocation Rate**
+
+Using an aphid stylet technique, researchers collect phloem sap from a sieve tube at a rate of
+$0.5\;\mathrm{\mu L/h}$. The sucrose concentration in the sap is $250\;\mathrm{mmol/L}$. Calculate
+the mass transfer rate of sucrose in $\mathrm{mg/h}$.
+
+<details>
+<summary>Solution</summary>
+
+**Sucrose molar mass**: $\mathrm{C}_{12}\mathrm{H}_{22}\mathrm{O}_{11} = 342\;\mathrm{g/mol}$
+
+**Moles of sucrose per hour**: $250 \times 10^{-3}\;\mathrm{mol/L} \times 0.5 \times 10^{-6}\;\mathrm{L/h} = 1.25 \times 10^{-7}\;\mathrm{mol/h}$
+
+**Mass transfer rate**: $1.25 \times 10^{-7}\;\mathrm{mol/h} \times 342\;\mathrm{g/mol} = 4.28 \times 10^{-5}\;\mathrm{g/h} = 0.0428\;\mathrm{mg/h}$
+
+Per single sieve tube, this is a modest amount, but a tree trunk may contain thousands of sieve
+tubes operating simultaneously. For a mature tree with $10000$ active sieve tubes, the total sucrose
+transport would be approximately $428\;\mathrm{mg/h}$ or $10.3\;\mathrm{g/day}$. This is consistent
+with the observation that photosynthesising leaves can export $50$--$80\%$ of their daily carbon
+gain as sucrose via phloem translocation.
+
+</details>
+
+**Worked Example: Seed Germination and Enzyme Activity**
+
+Seeds of barley ($2n = 14$) are germinated in the presence and absence of gibberellin. The amount of
+maltose released from the endosperm is measured over time:
+
+| Time (hours) | Maltose without gibberellin (mg) | Maltose with gibberellin (mg) |
+| ------------ | -------------------------------- | ------------------------------ |
+| 0            | 0                                | 0                              |
+| 6            | 2                                | 15                             |
+| 12           | 5                                | 42                             |
+| 18           | 8                                | 78                             |
+| 24           | 10                               | 105                            |
+
+Explain the difference between the two conditions and identify the biochemical pathway involved.
+
+<details>
+<summary>Solution</summary>
+
+The seeds treated with gibberellin release significantly more maltose ($105\;\mathrm{mg}$ vs
+$10\;\mathrm{mg}$ at $24$ hours) -- approximately a $10$-fold increase. This demonstrates the
+essential role of gibberellin in stimulating seed germination.
+
+**Biochemical pathway**:
+1. The embryo synthesises and releases **gibberellin** upon imbibition (water uptake).
+2. Gibberellin diffuses to the **aleurone layer** (a protein-rich tissue surrounding the endosperm in
+   cereal seeds).
+3. Gibberellin binds to its receptor in aleurone cells, triggering a signal transduction cascade
+   that activates gene expression.
+4. The aleurone cells synthesise and secrete **alpha-amylase** (and other hydrolytic enzymes).
+5. Alpha-amylase hydrolyses starch in the endosperm into **maltose**, which is then converted to
+   glucose for the growing embryo.
+
+The control (no added gibberellin) shows a small amount of maltose release ($10\;\mathrm{mg}$),
+likely from endogenous gibberellin produced by the embryo or from low basal amylase activity. The
+much larger response with added gibberellin confirms that the aleurone's amylase production is
+gibberellin-dependent.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Confusing xylem and phloem**: xylem transports water and minerals upward (dead cells,
+  unidirectional); phloem transports organic compounds (mainly sucrose) bidirectionally (living cells).
+- **Stating that "plants breathe in CO2 at night"**: plants respire $24$ hours a day. At night, net
+  $\mathrm{CO}_2$ release occurs because photosynthesis has ceased but respiration continues.
+- **Confusing pollination and fertilisation**: pollination is the transfer of pollen to a stigma;
+  fertilisation is the fusion of gametes inside the ovule. A significant time delay (hours to months)
+  can separate these events.
+- **Misunderstanding double fertilisation**: angiosperms are unique in having two fertilisation events
+  -- one produces the diploid zygote, the other produces the triploid endosperm. Only one male gamete
+  is involved in producing the embryo.
+- **Confusing the effects of auxin in roots and shoots**: auxin promotes cell elongation in shoots but
+  **inhibits** cell elongation in roots. This is a common source of error in phototropism and
+  gravitropism questions.
+- **Describing transpiration as "water loss" without context**: transpiration is an inevitable
+  consequence of gas exchange (stomata must be open for $\mathrm{CO}_2$ uptake), not merely wasteful
+  water loss. The cooling effect of transpiration is also physiologically important.
+- **Confusing apical dominance with apical dominance removal**: removing the shoot tip (apical bud)
+  removes the auxin source, relieving lateral bud inhibition. This is the principle behind pruning
+  in horticulture.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 1: Data Analysis -- Potometer Experiment</summary>
+
+A student uses a potometer to investigate the effect of wind speed on transpiration rate. The
+following data are collected at constant temperature ($25^\circ\mathrm{C}$) and humidity ($50\%$):
+
+| Wind speed (m/s) | Water uptake (mL/10 min) |
+| ----------------- | ----------------------- |
+| 0 (still air)     | 0.8                     |
+| 1.0               | 1.6                     |
+| 2.0               | 2.4                     |
+| 3.0               | 2.9                     |
+| 4.0               | 3.1                     |
+| 5.0               | 3.2                     |
+
+(a) Plot the data and describe the relationship between wind speed and transpiration rate. (b) Explain
+the biological mechanism responsible for this relationship. (c) Explain why the relationship is not
+linear at higher wind speeds (plateau effect).
+
+</details>
+
+<details>
+<summary>Problem 2: Extended Response -- Adaptations of Xerophytes and Hydrophytes</summary>
+
+Compare and contrast the anatomical and physiological adaptations of xerophytes (e.g., cacti) and
+hydrophytes (e.g., water lilies) to their respective environments. In your response, address:
+(a) leaf morphology and surface area, (b) stomatal distribution and regulation, (c) vascular tissue
+modifications, and (d) support structures. Explain how each adaptation relates to the availability
+of water in the environment.
+
+</details>
+
+<details>
+<summary>Problem 3: Quantitative -- Seed Germination and Chi-Squared Test</summary>
+
+A researcher tests the effect of different pre-treatments on seed germination. $100$ seeds are
+divided into four groups of $25$: Group A (control, water only), Group B (scarified), Group C
+(stratified at $4^\circ\mathrm{C}$ for $2$ weeks), Group D (gibberellin solution). After $7$ days,
+the number of germinated seeds in each group is: A = 8, B = 18, C = 20, D = 23. (a) Calculate the
+germination percentage for each group. (b) If the expected germination under the null hypothesis is
+$50\%$ for all groups, perform a chi-squared test to determine whether the treatments significantly
+affect germination ($p = 0.05$, critical value $= 7.82$ for $3$ degrees of freedom).
+
+</details>
+
+<details>
+<summary>Problem 4: Extended Response -- Auxin and Tropisms</summary>
+
+A researcher places a plant shoot horizontally in darkness. After $2$ hours, the shoot bends upward.
+When the same experiment is repeated with an agar block containing auxin applied asymmetrically to
+one side of a de-tipped shoot, the shoot bends away from the auxin source. (a) Explain the
+gravitropic response in terms of auxin redistribution and differential cell elongation. (b) Explain
+why auxin inhibits root elongation but promotes shoot elongation. (c) Describe the statolith
+hypothesis and explain how amyloplasts function as gravity sensors.
+
+</details>
+
+<details>
+<summary>Problem 5: Data Analysis -- Ringing Experiment</summary>
+
+A ringing experiment is performed on a tree by removing a $1\;\mathrm{cm}$ wide ring of bark (including
+phloem) from the trunk at a height of $1\;\mathrm{m}$. After $4$ weeks, the following observations
+are made: (i) a swelling appears immediately above the ring, (ii) the bark below the ring becomes
+dry and cracked, (iii) roots below the ring show reduced growth. (a) Explain each observation in
+terms of phloem translocation. (b) Why does removing xylem (a separate experiment) produce a
+different result (wilting above the ring)? (c) Explain why the xylem continues to function despite
+the bark removal.
+
+</details>
+
+<details>
+<summary>Problem 6: Extended Response -- Phytochrome and Flowering</summary>
+
+A long-day plant (e.g., spinach) and a short-day plant (e.g., chrysanthemum) are grown under
+identical conditions with a $16$-hour photoperiod. (a) Predict which plant will flower and explain
+why, referring to the role of phytochrome and critical night length. (b) If a flash of red light
+($660\;\mathrm{nm}$) is given in the middle of the dark period, predict the effect on each species
+and explain the mechanism. (c) If the red light flash is immediately followed by a far-red flash
+($730\;\mathrm{nm}$), predict the outcome and explain.
+
+</details>
+
+<details>
+<summary>Problem 7: Extended Response -- Abscisic Acid and Stomatal Regulation</summary>
+
+During a period of drought, a plant closes its stomata to reduce water loss. (a) Describe the
+biochemical pathway by which abscisic acid (ABA) causes stomatal closure, including the role of guard
+cell ion channels, water potential, and turgor pressure. (b) Explain the trade-off between reducing
+transpiration and maintaining $\mathrm{CO}_2$ uptake for photosynthesis. (c) Discuss why this
+trade-off may limit plant growth more in hot, arid environments than in cool, humid environments.
+
+</details>
+
+<details>
+<summary>Problem 8: Quantitative -- Fertilisation and Chromosome Numbers</summary>
+
+A flowering plant species has $2n = 16$. (a) State the chromosome number in the following cells:
+microspore mother cell, microspore, generative cell, sperm cell, megaspore mother cell, megaspore,
+egg cell, polar nucleus, zygote, and endosperm. (b) Explain why the endosperm is triploid and describe
+its function in seed development. (c) If a mutation causes meiosis to fail in the megaspore mother
+cell, producing a diploid egg cell instead of a haploid one, predict the chromosome number of the
+resulting zygote and endosperm after fertilisation.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Cell structure and membrane transport** --> Review [./cell-biology](./cell-biology)
+- **Photosynthesis and biochemistry** --> Review [./molecular-biology](./molecular-biology)
+- **Genetics and meiosis** --> Review [./genetics](./genetics)
+- **Human physiology -- gas exchange** --> Review [./human-physiology](./human-physiology)
+- **Ecosystems and energy flow** --> Review [./ecology](./ecology)

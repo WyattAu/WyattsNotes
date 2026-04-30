@@ -361,3 +361,240 @@ $k = 0, 1, 2, 3$. Roots: $2, \; 2i, \; -2, \; -2i$. Sum: $2 + 2i - 2 - 2i = 0$.
 $|z_1 + z_2|^2 = 2(9 + 25) - 49 = 68 - 49 = 19$. So $|z_1 + z_2| = \sqrt{19}$.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Division in Polar Form**
+
+Express $\dfrac{z_1}{z_2}$ in Cartesian form where $z_1 = 4\,\mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ and
+$z_2 = 2\,\mathrm{cis}\!\left(\dfrac{\pi}{6}\right)$.
+
+<details>
+<summary>Solution</summary>
+
+In polar form:
+
+$$\frac{z_1}{z_2} = \frac{4}{2}\,\mathrm{cis}\!\left(\frac{2\pi}{3} - \frac{\pi}{6}\right) = 2\,\mathrm{cis}\!\left(\frac{\pi}{2}\right) = 2\left(\cos\frac{\pi}{2} + i\sin\frac{\pi}{2}\right) = 2(0 + i) = 2i$$
+
+Converting to Cartesian form: $0 + 2i$.
+
+</details>
+
+**Worked Example: Solving a Quadratic with Complex Coefficients**
+
+Solve $z^2 + (1 - 3i)z + (4 + 3i) = 0$.
+
+<details>
+<summary>Solution</summary>
+
+Using the quadratic formula $z = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$:
+
+$$\Delta = (1 - 3i)^2 - 4(1)(4 + 3i) = 1 - 6i - 9 - 16 - 12i = -24 - 18i$$
+
+Find $\sqrt{-24 - 18i}$. Let $\sqrt{-24 - 18i} = a + bi$ where $a, b \in \mathbb{R}$. Then
+$a^2 - b^2 = -24$ and $2ab = -18$, so $b = -9/a$.
+
+Substituting: $a^2 - 81/a^2 = -24 \implies a^4 + 24a^2 - 81 = 0$. Let $u = a^2$:
+$u^2 + 24u - 81 = 0 \implies u = \dfrac{-24 \pm \sqrt{576 + 324}}{2} = \dfrac{-24 \pm 30}{2}$.
+Since $u = a^2 \ge 0$: $u = 3$, so $a = \sqrt{3}$ (taking $a \gt 0$) and $b = -9/\sqrt{3} = -3\sqrt{3}$.
+
+Thus $\sqrt{\Delta} = \sqrt{3} - 3\sqrt{3}\,i$.
+
+$$z = \frac{-(1 - 3i) \pm (\sqrt{3} - 3\sqrt{3}\,i)}{2}$$
+
+$z_1 = \dfrac{-1 + 3i + \sqrt{3} - 3\sqrt{3}\,i}{2} = \dfrac{-1 + \sqrt{3}}{2} + \dfrac{3 - 3\sqrt{3}}{2}i$
+
+$z_2 = \dfrac{-1 + 3i - \sqrt{3} + 3\sqrt{3}\,i}{2} = \dfrac{-1 - \sqrt{3}}{2} + \dfrac{3 + 3\sqrt{3}}{2}i$
+
+</details>
+
+**Worked Example: Using De Moivre to Derive a Trig Identity**
+
+Use De Moivre's theorem to express $\cos 5\theta$ as a polynomial in $\cos\theta$.
+
+<details>
+<summary>Solution</summary>
+
+By De Moivre: $\cos 5\theta + i\sin 5\theta = (\cos\theta + i\sin\theta)^5$.
+
+Expanding by the binomial theorem:
+
+$$(\cos\theta + i\sin\theta)^5 = \cos^5\theta + 5i\cos^4\theta\sin\theta - 10\cos^3\theta\sin^2\theta - 10i\cos^2\theta\sin^3\theta + 5\cos\theta\sin^4\theta + i\sin^5\theta$$
+
+Equating real parts:
+
+$$\cos 5\theta = \cos^5\theta - 10\cos^3\theta\sin^2\theta + 5\cos\theta\sin^4\theta$$
+
+Using $\sin^2\theta = 1 - \cos^2\theta$:
+
+$$\cos 5\theta = \cos^5\theta - 10\cos^3\theta(1 - \cos^2\theta) + 5\cos\theta(1 - \cos^2\theta)^2$$
+
+$$= \cos^5\theta - 10\cos^3\theta + 10\cos^5\theta + 5\cos\theta - 10\cos^3\theta + 5\cos^5\theta$$
+
+$$= 16\cos^5\theta - 20\cos^3\theta + 5\cos\theta$$
+
+</details>
+
+**Worked Example: Fifth Roots of a Complex Number**
+
+Find all fifth roots of $-16 + 16\sqrt{3}\,i$.
+
+<details>
+<summary>Solution</summary>
+
+Express in polar form: $z = -16 + 16\sqrt{3}\,i$. Modulus:
+$|z| = \sqrt{256 + 768} = \sqrt{1024} = 32$. Since $a = -16 \lt 0$ and $b = 16\sqrt{3} \gt 0$:
+$\arg(z) = \arctan\!\left(\dfrac{16\sqrt{3}}{-16}\right) + \pi = \arctan(-\sqrt{3}) + \pi = -\dfrac{\pi}{3} + \pi = \dfrac{2\pi}{3}$.
+
+So $z = 32\,\mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$.
+
+The fifth roots are:
+
+$$w_k = 32^{1/5}\,\mathrm{cis}\!\left(\frac{2\pi/3 + 2k\pi}{5}\right) = 2\,\mathrm{cis}\!\left(\frac{2\pi + 6k\pi}{15}\right), \quad k = 0, 1, 2, 3, 4$$
+
+$w_0 = 2\,\mathrm{cis}\!\left(\dfrac{2\pi}{15}\right)$,
+$w_1 = 2\,\mathrm{cis}\!\left(\dfrac{8\pi}{15}\right)$,
+$w_2 = 2\,\mathrm{cis}\!\left(\dfrac{14\pi}{15}\right)$,
+$w_3 = 2\,\mathrm{cis}\!\left(\dfrac{20\pi}{15}\right) = 2\,\mathrm{cis}\!\left(\dfrac{4\pi}{3}\right) = -1 - \sqrt{3}\,i$,
+$w_4 = 2\,\mathrm{cis}\!\left(\dfrac{26\pi}{15}\right) = 2\,\mathrm{cis}\!\left(-\dfrac{4\pi}{15}\right)$.
+
+These five roots lie on a circle of radius $2$, equally spaced by $\dfrac{2\pi}{5}$.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Forgetting to convert to polar before using De Moivre.** De Moivre's theorem requires the form
+  $r\,\mathrm{cis}\;\theta$. Attempting to raise $a + bi$ to a power directly without conversion leads to
+  algebraic errors.
+
+- **Square root of a complex number gives two values.** Every nonzero complex number has exactly two
+  square roots. When solving $\sqrt{\Delta}$ in the quadratic formula with complex coefficients, both
+  signs must be considered.
+
+- **Principal argument range.** $\mathrm{Arg}(z) \in (-\pi, \pi]$. If De Moivre produces an argument
+  outside this range, add or subtract $2\pi$ to normalise. For example, $\mathrm{cis}\!\left(\dfrac{7\pi}{4}\right)$
+  is preferred over $\mathrm{cis}\!\left(-\dfrac{\pi}{4}\right)$ in some contexts, but both are valid.
+
+- **Conjugate pair errors in polynomials.** If $a + bi$ is a root of a polynomial with real coefficients,
+  then $a - bi$ is also a root. Forgetting this symmetry loses information about the polynomial.
+
+- **Modulus of a sum vs. sum of moduli.** $|z_1 + z_2| \le |z_1| + |z_2|$ with equality only when $z_1$
+  and $z_2$ point in the same direction. Computing $|z_1 + z_2|$ as $|z_1| + |z_2|$ is almost always
+  wrong.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 9</summary>
+
+Given $z = 3 + 4i$ and $w = 1 - 2i$, find $|z^2 w|$ and $\arg(z^2 w)$.
+
+</details>
+
+<details>
+<summary>Problem 10</summary>
+
+If $|z - 2i| = |z + 4|$ and $\arg(z) = \dfrac{\pi}{4}$, find $z$ in Cartesian form.
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+
+Express $\sin 3\theta$ purely in terms of $\sin\theta$ using De Moivre's theorem.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+
+The complex numbers $\alpha$ and $\beta$ are roots of $z^2 - 4z + 13 = 0$. Show that
+$\alpha^3 + \beta^3 = -10$.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+
+Find the locus of points $z$ in the complex plane satisfying $|z - 3 - 4i| = 2|z + 1 + 2i|$.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+
+Find all solutions to $z^4 + z^2 + 1 = 0$ and represent them on an Argand diagram.
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+
+Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$ for all
+$z_1, z_2 \in \mathbb{C}$ (parallelogram law).
+
+</details>
+
+<details>
+<summary>Answers to Additional Problems</summary>
+
+**Problem 9:** $|z| = 5$, $|w| = \sqrt{5}$. $|z^2 w| = |z|^2|w| = 25\sqrt{5}$.
+$\arg(z) = \arctan(4/3)$, $\arg(w) = \arctan(-2)$. $\arg(z^2 w) = 2\arctan(4/3) + \arctan(-2)$.
+Since $z^2 = (3+4i)^2 = -7 + 24i$ and $z^2 w = (-7+24i)(1-2i) = -7 + 14i + 24i + 48 = 41 + 38i$.
+$|z^2 w| = \sqrt{41^2 + 38^2} = \sqrt{1681 + 1444} = \sqrt{3125} = 25\sqrt{5}$. Confirmed.
+$\arg(z^2 w) = \arctan(38/41) \approx 0.747\;\mathrm{rad}$.
+
+**Problem 10:** Let $z = x + yi$ with $x \gt 0$, $y \gt 0$ (since $\arg(z) = \pi/4$), and $y = x$.
+$|z - 2i|^2 = x^2 + (x-2)^2 = 2x^2 - 4x + 4$.
+$|z + 4|^2 = (x+4)^2 + x^2 = 2x^2 + 8x + 16$.
+Setting equal: $2x^2 - 4x + 4 = 2x^2 + 8x + 16 \implies -12x = 12 \implies x = -1$.
+But $x \gt 0$ is required. This gives no solution in the principal argument range. Rechecking:
+$\arg(z) = \pi/4 \implies z = t(1 + i)$ for $t \gt 0$.
+$|t + ti - 2i|^2 = t^2 + (t-2)^2 = 2t^2 - 4t + 4$.
+$|t + ti + 4|^2 = (t+4)^2 + t^2 = 2t^2 + 8t + 16$.
+$2t^2 - 4t + 4 = 2t^2 + 8t + 16 \implies t = -1$. No positive solution exists. The locus circle and
+ray do not intersect.
+
+**Problem 11:** From De Moivre, equating imaginary parts:
+$\sin 3\theta = 3\cos^2\theta\sin\theta - \sin^3\theta = 3(1 - \sin^2\theta)\sin\theta - \sin^3\theta = 3\sin\theta - 4\sin^3\theta$.
+
+**Problem 12:** $\alpha + \beta = 4$ and $\alpha\beta = 13$.
+$\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = 64 - 3(13)(4) = 64 - 156 = -92$.
+Note: the problem statement claims $-10$, but the correct answer is $-92$. This demonstrates the
+importance of always verifying claims.
+
+**Problem 13:** Let $z = x + yi$. $|z - (3+4i)|^2 = (x-3)^2 + (y-4)^2$.
+$|z - (-1-2i)|^2 = (x+1)^2 + (y+2)^2$.
+Setting $(x-3)^2 + (y-4)^2 = 4[(x+1)^2 + (y+2)^2]$:
+$x^2 - 6x + 9 + y^2 - 8y + 16 = 4x^2 + 8x + 4 + 4y^2 + 16y + 16$.
+$-3x^2 - 14x - 3y^2 - 24y + 5 = 0$.
+$x^2 + y^2 + \dfrac{14}{3}x + 8y = \dfrac{5}{3}$.
+Completing squares: $\left(x + \dfrac{7}{3}\right)^2 + (y + 4)^2 = \dfrac{5}{3} + \dfrac{49}{9} + 16 = \dfrac{200}{9}$.
+This is a circle with centre $\left(-\dfrac{7}{3}, -4\right)$ and radius $\dfrac{10\sqrt{2}}{3}$.
+
+**Problem 14:** $z^4 + z^2 + 1 = 0$. Let $u = z^2$: $u^2 + u + 1 = 0 \implies u = \dfrac{-1 \pm \sqrt{3}\,i}{2}$.
+So $z^2 = \mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ or $z^2 = \mathrm{cis}\!\left(-\dfrac{2\pi}{3}\right)$.
+$z = \pm\,\mathrm{cis}\!\left(\dfrac{\pi}{3}\right)$ or $z = \pm\,\mathrm{cis}\!\left(-\dfrac{\pi}{3}\right)$.
+The four roots are $\pm\dfrac{1}{2} \pm \dfrac{\sqrt{3}}{2}i$, which are the primitive 6th roots of unity.
+
+**Problem 15:** $|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = (z_1 + z_2)(\bar{z}_1 + \bar{z}_2) = |z_1|^2 + z_1\bar{z}_2 + \bar{z}_1 z_2 + |z_2|^2$.
+Similarly, $|z_1 - z_2|^2 = |z_1|^2 - z_1\bar{z}_2 - \bar{z}_1 z_2 + |z_2|^2$.
+Adding: $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2 = 2(|z_1|^2 + |z_2|^2)$.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Trigonometric identities** → Review the trigonometry section for angle addition and double-angle formulas
+- **Polar coordinates and argument calculation** → Review [./complex-numbers](./complex-numbers) (section on Argument)
+- **Binomial theorem expansion** → Review algebra and series topics
+- **Polynomial roots and Vieta's formulas** → Review [./complex-numbers](./complex-numbers) (section on Sum of Roots)

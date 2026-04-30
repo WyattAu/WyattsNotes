@@ -365,3 +365,269 @@ $$
 This is in the infrared region.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: VSEPR prediction for an oxoanion**
+
+Predict the molecular geometry, bond angles, hybridization, and polarity of the
+$\mathrm{SO}_4^{2-}$ ion.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Draw the Lewis structure.**
+
+Sulfur has 6 valence electrons. Each oxygen contributes 6. The $-2$ charge adds 2 electrons.
+Total: $6 + 4(6) + 2 = 32$ valence electrons.
+
+Sulfur forms double bonds with all four oxygens (expanding the octet since S is in Period 3):
+no lone pairs on sulfur. Each oxygen has 2 lone pairs.
+
+$$\mathrm{O}_2\mathrm{S}(=\mathrm{O})_2^{2-}$$
+
+**Step 2: Determine the steric number.**
+
+Bonding pairs on S: 4. Lone pairs on S: 0. Steric number = 4.
+
+**Step 3: Predict geometry and hybridization.**
+
+Electron pair geometry: tetrahedral. Molecular shape: tetrahedral. Hybridization: $sp^3$.
+
+**Step 4: Bond angles.**
+
+All $\mathrm{O\!-\!S\!-\!O}$ bond angles are approximately $109.5\degree$ (ideal tetrahedral). The
+double bonds repel slightly more than single bonds, so angles may deviate by a few degrees, but the
+overall geometry remains tetrahedral.
+
+**Step 5: Polarity.**
+
+The $\mathrm{S\!-\!O}$ bond dipoles are symmetrically arranged and cancel. $\mathrm{SO}_4^{2-}$ is
+**nonpolar** despite having polar bonds.
+
+</details>
+
+**Worked Example: MO theory for a heteronuclear diatomic**
+
+Use MO theory to determine the bond order and magnetic properties of NO. Compare the bond order and
+bond length of NO with those of $\mathrm{NO}^+$.
+
+<details>
+<summary>Solution</summary>
+
+NO has 11 valence electrons (5 from N, 6 from O). Since oxygen is to the right of nitrogen in the
+periodic table, the $\mathrm{O}_2$/$\mathrm{F}_2$ energy ordering applies:
+
+$$\sigma_{2s}^2\, (\sigma_{2s}^*)^2\, \sigma_{2p_z}^2\, \pi_{2p_x}^2\, \pi_{2p_y}^2\, (\pi_{2p_x}^*)^1$$
+
+Bonding electrons: $2 + 2 + 2 + 2 + 2 = 10$. Antibonding electrons: $2 + 1 = 3$.
+
+$$\mathrm{Bond\ order} = \frac{10 - 3}{2} = 3.5$$
+
+One unpaired electron in $\pi_{2p_x}^*$: NO is **paramagnetic**.
+
+**For $\mathrm{NO}^+$:** 10 valence electrons (one fewer than NO).
+
+$$\sigma_{2s}^2\, (\sigma_{2s}^*)^2\, \sigma_{2p_z}^2\, \pi_{2p_x}^2\, \pi_{2p_y}^2$$
+
+$$\mathrm{Bond\ order} = \frac{10 - 2}{2} = 4.0$$
+
+$\mathrm{NO}^+$ has no unpaired electrons: **diamagnetic**.
+
+**Comparison:** $\mathrm{NO}^+$ has a higher bond order (4.0 vs 3.5), so it has a shorter bond length
+and higher bond dissociation energy than NO. Removing an electron from an antibonding orbital
+strengthens the bond.
+
+</details>
+
+**Worked Example: Sigma and pi bond counting**
+
+How many sigma ($\sigma$) and pi ($\pi$) bonds are in a molecule of
+$\mathrm{CH}_3\mathrm{CH}=\mathrm{CHC}\equiv\mathrm{N}$? Identify the hybridization of each carbon
+atom.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Draw the structure.**
+
+$$\mathrm{CH_3 - CH = CH - C \equiv N}$$
+
+**Step 2: Count bonds by type.**
+
+| Bond | Type | $\sigma$ | $\pi$ |
+| ---- | ---- | -------- | ----- |
+| $\mathrm{C_1\!-\!C_2}$ | Single | 1 | 0 |
+| $\mathrm{C_2=C_3}$ | Double | 1 | 1 |
+| $\mathrm{C_3\!-\!C_4}$ | Single | 1 | 0 |
+| $\mathrm{C_4\equiv N}$ | Triple | 1 | 2 |
+| $\mathrm{C_1\!-\!H}$ (x3) | Single | 3 | 0 |
+| $\mathrm{C_3\!-\!H}$ | Single | 1 | 0 |
+
+Total: $8\sigma$ bonds, $3\pi$ bonds.
+
+**Step 3: Hybridization of each carbon.**
+
+| Carbon | Regions of e$^-$ density | Hybridization |
+| ------ | ----------------------- | ------------- |
+| $\mathrm{C_1}$ ($\mathrm{CH_3\!-\!}$) | 4 (3 C--H + 1 C--C) | $sp^3$ |
+| $\mathrm{C_2}$ ($\mathrm{=\!CH\!-\!}$) | 3 (1 C--C + 1 C=C + 1 C--H) | $sp^2$ |
+| $\mathrm{C_3}$ ($\mathrm{-\!CH\!=\!}$) | 3 (1 C=C + 1 C--C + 1 C--H) | $sp^2$ |
+| $\mathrm{C_4}$ ($\mathrm{-\!C\!\equiv}$) | 2 (1 C--C + 1 C$\equiv$N) | $sp$ |
+
+</details>
+
+**Worked Example: Band gap and semiconductor classification**
+
+Diamond has a band gap of $5.5\mathrm{ eV}$ and silicon has a band gap of $1.1\mathrm{ eV}$. (a)
+Calculate the minimum wavelength of light required to excite an electron across the band gap in each
+material. (b) Classify each material. (c) Explain why diamond is transparent to visible light but
+silicon is not.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Calculate the threshold wavelengths.**
+
+$$\lambda = \frac{hc}{E}$$
+
+For diamond ($E = 5.5\mathrm{ eV} = 5.5 \times 1.602 \times 10^{-19}\mathrm{ J}$):
+
+$$\lambda = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{5.5 \times 1.602 \times 10^{-19}} = \frac{1.988 \times 10^{-25}}{8.81 \times 10^{-19}} = 2.26 \times 10^{-7}\mathrm{ m} = 226\mathrm{ nm}$$
+
+For silicon ($E = 1.1\mathrm{ eV}$):
+
+$$\lambda = \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)}{1.1 \times 1.602 \times 10^{-19}} = \frac{1.988 \times 10^{-25}}{1.76 \times 10^{-19}} = 1.13 \times 10^{-6}\mathrm{ m} = 1130\mathrm{ nm}$$
+
+**Step 2: Classification.**
+
+Diamond ($5.5\mathrm{ eV}$): **insulator** (band gap far exceeds thermal energy at room temperature).
+Silicon ($1.1\mathrm{ eV}$): **semiconductor** (band gap comparable to visible photon energies).
+
+**Step 3: Transparency explanation.**
+
+Visible light has wavelengths $400$--$700\mathrm{ nm}$. Diamond's threshold ($226\mathrm{ nm}$) is in
+the ultraviolet, so all visible photons have insufficient energy to excite electrons across the band
+gap. Visible light passes through unabsorbed: diamond is transparent.
+
+Silicon's threshold ($1130\mathrm{ nm}$) is in the infrared. All visible photons have more than enough
+energy to promote electrons to the conduction band, so visible light is absorbed. Silicon appears
+metallic-grey and opaque.
+
+</details>
+
+**Worked Example: Metallic bonding and melting point comparison**
+
+Explain why tungsten ($\mathrm{W}$) has a melting point of $3422\degree\mathrm{C}$ while sodium
+($\mathrm{Na}$) melts at $98\degree\mathrm{C}$, despite both being metals.
+
+<details>
+<summary>Solution</summary>
+
+The strength of metallic bonding depends on three factors:
+
+1. **Number of delocalized electrons per atom:**
+   - $\mathrm{W}$: electron configuration $[\mathrm{Xe}]\, 4f^{14}\, 5d^4\, 6s^2$, contributing up to
+     6 valence electrons to the delocalized sea.
+   - $\mathrm{Na}$: configuration $[\mathrm{Ne}]\, 3s^1$, contributing only 1 valence electron.
+
+2. **Ionic radius (charge density):**
+   - $\mathrm{W}^{6+}$ has a much smaller ionic radius than $\mathrm{Na}^+$ because tungsten is in
+     Period 6 but has a much higher nuclear charge pulling electrons inward.
+   - Smaller ionic radius means the cations are closer to the electron sea, increasing electrostatic
+     attraction.
+
+3. **Ionic charge:**
+   - $\mathrm{W}$ can achieve high oxidation states ($+6$), creating cations with much greater charge
+     density than $\mathrm{Na}^+$.
+
+The combined effect of more delocalized electrons, smaller ionic radius, and higher ionic charge
+produces a much stronger metallic bond in tungsten. This is reflected in its extremely high melting
+point, hardness, and tensile strength compared to sodium.
+
+</details>
+
+---
+
+## Common Pitfalls
+
+- **Counting lone pairs incorrectly for VSEPR**: The steric number includes both bonding pairs and
+  lone pairs. $\mathrm{NH}_3$ has 3 bonds + 1 lone pair = 4 regions, giving tetrahedral electron pair
+  geometry and trigonal pyramidal molecular shape.
+
+- **Misidentifying the central atom**: In molecules like $\mathrm{OF}_2$, oxygen is the central atom
+  (less electronegative than fluorine). In $\mathrm{SCl}_4$, sulfur is central. Always place the least
+  electronegative atom (excluding hydrogen) at the centre.
+
+- **Assigning hybridization based on bonded atoms only**: Hybridization depends on the total steric
+  number (bonded atoms + lone pairs). $\mathrm{NH}_3$ has steric number 4, so its hybridization is
+  $sp^3$, not $sp^2$.
+
+- **Reversing the MO energy ordering between $\mathrm{N}_2$ and $\mathrm{O}_2$**: For
+  $\mathrm{B}_2$, $\mathrm{C}_2$, $\mathrm{N}_2$ (and lighter), $\pi_{2p}$ is lower than
+  $\sigma_{2p_z}$. For $\mathrm{O}_2$, $\mathrm{F}_2$, $\mathrm{Ne}_2$, the ordering reverses. The
+  boundary is between $\mathrm{N}_2$ and $\mathrm{O}_2$.
+
+- **Treating antibonding electrons as equivalent to bonding electrons**: Each antibonding electron
+  weakens the bond by the same amount a bonding electron strengthens it. An electron in a $\pi^*$
+  orbital reduces the bond order by 0.5.
+
+- **Assuming metals always have high melting points**: Mercury ($\mathrm{Hg}$, $Z = 80$) is a liquid
+  at room temperature (m.p. $-39\degree\mathrm{C}$) because it has a large ionic radius and only 2
+  valence electrons, producing weak metallic bonding despite being in Period 6.
+
+- **Placing lone pairs in axial positions of trigonal bipyramidal**: Lone pairs always occupy
+  equatorial positions to minimise $90\degree$ repulsions. Axial lone pairs would experience three
+  $90\degree$ interactions; equatorial lone pairs experience only two.
+
+- **Confusing $p$-type and $n$-type doping**: $n$-type means extra negative charge carriers (electrons
+  from Group 15 dopant). $p$-type means positive charge carriers (holes from Group 13 dopant). The
+  dopant itself does not conduct; it provides carriers.
+
+---
+
+## Exam-Style Problems
+
+1. Predict the molecular geometry and bond angles of $\mathrm{BrF}_5$. Draw the structure, clearly
+   indicating the position of the lone pair. State the hybridization of bromine and explain why the
+   lone pair occupies an axial position. **[Medium]**
+
+2. Construct the MO diagram for $\mathrm{C}_2$ and determine: (a) the bond order, (b) whether it is
+   paramagnetic or diamagnetic, (c) the number of unpaired electrons. Explain why $\mathrm{C}_2$ has
+   a higher bond order than $\mathrm{B}_2$. **[Hard]**
+
+3. For the molecule $\mathrm{SF}_4$: (a) Predict its molecular geometry. (b) Would you expect the
+   axial or equatorial S--F bonds to be longer? Justify using VSEPR theory. (c) Is the molecule
+   polar? Explain. **[Medium]**
+
+4. Gallium arsenide (GaAs) is doped with zinc (Zn, Group 12). (a) Explain whether this produces
+   $n$-type or $p$-type semiconductors. (b) Describe the mechanism of charge conduction at room
+   temperature. (c) How does increasing temperature affect the conductivity? **[Medium]**
+
+5. Explain why the bond angle in $\mathrm{H}_2\mathrm{O}$ ($104.5\degree$) is smaller than in
+   $\mathrm{NH}_3$ ($107\degree$), which is smaller than the tetrahedral angle ($109.5\degree$).
+   Reference specific VSEPR repulsion orders ($\mathrm{LP\!-\!LP} \gt \mathrm{LP\!-\!BP} \gt
+   \mathrm{BP\!-\!BP}$) in your explanation. **[Medium]**
+
+6. For the molecule HCN: (a) Draw the Lewis structure. (b) Determine the hybridization of each atom.
+   (c) State the number of sigma and pi bonds. (d) Predict the H--C--N bond angle. (e) Is the
+   molecule polar? **[Easy]**
+
+7. Use MO theory to explain why $\mathrm{He}_2$ does not exist as a stable molecule, while
+   $\mathrm{He}_2^+$ has been detected experimentally. Include bond order calculations for both
+   species and a sketch of the MO energy level diagram. **[Hard]**
+
+8. Explain why the melting point of magnesium ($650\degree\mathrm{C}$) is higher than that of sodium
+   ($98\degree\mathrm{C}$) but lower than that of aluminium ($660\degree\mathrm{C}$). Reference the
+   number of delocalized electrons, ionic charge, and ionic radius in your answer. **[Medium]**
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Atomic structure and electron configurations** → Review [./atomic-theory](./atomic-theory)
+- **States of matter and physical properties** → Review [./states-of-matter](./states-of-matter)
+- **Periodic trends in electronegativity** → Review [./periodicity](./periodicity)
+- **Organic molecular geometry** → Review [./organic-chemistry-advanced](./organic-chemistry-advanced)

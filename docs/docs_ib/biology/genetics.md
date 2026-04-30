@@ -468,3 +468,280 @@ was unaffected). This illustrates the severe impact of frameshift mutations on p
 function.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Pedigree Analysis of an Autosomal Recessive Trait**
+
+Cystic fibrosis is an autosomal recessive disorder caused by mutations in the CFTR gene. A pedigree
+shows the following: unaffected parents (I-1 and I-2) have two children -- one affected son (II-1) and
+one unaffected daughter (II-2). The unaffected daughter marries an unaffected man with no family
+history of cystic fibrosis. Calculate the probability that their first child will have cystic
+fibrosis.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Determine parental genotypes**. Since the parents (I-1 and I-2) are unaffected but have an
+affected child, both must be carriers: $Cc \times Cc$ (where $C$ = normal, $c$ = cystic fibrosis).
+
+**Step 2: Determine the daughter's genotype**. The cross $Cc \times Cc$ produces offspring in the
+ratio $1\;CC : 2\;Cc : 1\;cc$. The daughter (II-2) is unaffected, so she is either $CC$ or $Cc$.
+The probability she is $Cc$ is $\frac{2}{3}$.
+
+**Step 3: Determine the husband's carrier probability**. With no family history in a population where
+the carrier frequency is approximately $1$ in $25$, the probability he is a carrier is $\frac{1}{25}$.
+
+**Step 4: Combined probability**.
+$P(\mathrm{child\;affected}) = P(\mathrm{daughter\;is\;Cc}) \times P(\mathrm{husband\;is\;Cc}) \times P(\mathrm{child\;is\;cc} \mid Cc \times Cc)$
+$= \frac{2}{3} \times \frac{1}{25} \times \frac{1}{4} = \frac{2}{300} = \frac{1}{150} \approx 0.67\%$
+
+The probability is approximately $1$ in $150$, which is higher than the general population risk
+(approximately $1$ in $2500$) because the mother has a known family history.
+
+</details>
+
+**Worked Example: Genetic Mapping Using Recombination Frequencies**
+
+In _Drosophila_, three recessive mutations are studied: $a$ (apterous, wingless), $b$ (black body),
+and $c$ (cinnabar eyes). A three-point cross is performed between a triple heterozygous female
+($a^+ b^+ c^+ / a\; b\; c$) and a triple recessive male ($a\; b\; c / a\; b\; c$). The following
+offspring phenotypes are observed from $2000$ total progeny:
+
+| Phenotype          | Number |
+| ------------------ | ------ |
+| Wild type          | 720    |
+| apterous, black, cinnabar | 730    |
+| apterous           | 60     |
+| black, cinnabar    | 55     |
+| black              | 140    |
+| apterous, cinnabar | 145    |
+| cinnabar           | 70     |
+| apterous, black    | 80     |
+
+Determine the gene order and map distances between the three genes.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Identify parental and recombinant classes**.
+Parental (most frequent): wild type ($730$) and triple mutant ($720$) -- total $1450$.
+Double recombinants (least frequent): apterous ($60$) and black+cinnabar ($55$) -- total $115$.
+
+**Step 2: Determine gene order**. In the double recombinants, the allele that "flips" relative to
+the parental arrangement is the middle gene. Comparing parentals and double recombinants:
+- Parental: $a^+ b^+ c^+$ / $a\; b\; c$
+- Double crossover progeny: $a\; b^+ c^+$ / $a^+ b\; c$
+
+The $a$ allele has flipped relative to the others, so **$a$ is the middle gene**. The correct gene
+order is $b$ -- $a$ -- $c$.
+
+**Step 3: Calculate map distances**.
+Recombination frequency between $b$ and $a$: (single CO in $b$-$a$ region + double COs) / total
+$= (140 + 145 + 60 + 55) / 2000 = 400 / 2000 = 0.20 = 20\;\mathrm{cM}$
+
+Recombination frequency between $a$ and $c$: (single CO in $a$-$c$ region + double COs) / total
+$= (70 + 80 + 60 + 55) / 2000 = 265 / 2000 = 0.1325 = 13.25\;\mathrm{cM}$
+
+Recombination frequency between $b$ and $c$: (all recombinants) / total
+$= (140 + 145 + 70 + 80 + 60 + 55) / 2000 = 550 / 2000 = 0.275 = 27.5\;\mathrm{cM}$
+
+**Map**: $b$ --- $20\;\mathrm{cM}$ --- $a$ --- $13.25\;\mathrm{cM}$ --- $c$ (total $33.25\;\mathrm{cM}$,
+which is less than $27.5\;\mathrm{cM}$ because double crossovers were counted separately for each
+interval but only once in the $b$-$c$ total, illustrating why three-point crosses give more accurate
+maps than two-point crosses).
+
+</details>
+
+**Worked Example: Codominant Inheritance -- MN Blood Group**
+
+The MN blood group in humans exhibits codominance: genotype $MM$ produces M antigen, $NN$ produces N
+antigen, and $MN$ produces both. In a population of $1000$ individuals, blood typing reveals: $210$
+type M, $480$ type MN, $310$ type N. Calculate the allele frequencies and test whether the population
+is in Hardy-Weinberg equilibrium.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Calculate allele frequencies**.
+Total alleles $= 2000$.
+Frequency of $M$: $p = \frac{2(210) + 480}{2000} = \frac{900}{2000} = 0.45$
+Frequency of $N$: $q = \frac{2(310) + 480}{2000} = \frac{1100}{2000} = 0.55$
+
+**Step 2: Calculate expected genotype frequencies**.
+$P(MM) = p^2 = 0.45^2 = 0.2025 \rightarrow$ expected $= 202.5$
+$P(MN) = 2pq = 2(0.45)(0.55) = 0.495 \rightarrow$ expected $= 495.0$
+$P(NN) = q^2 = 0.55^2 = 0.3025 \rightarrow$ expected $= 302.5$
+
+**Step 3: Chi-squared test**.
+$\chi^2 = \frac{(210 - 202.5)^2}{202.5} + \frac{(480 - 495)^2}{495} + \frac{(310 - 302.5)^2}{302.5}$
+$= \frac{56.25}{202.5} + \frac{225}{495} + \frac{56.25}{302.5}$
+$= 0.278 + 0.455 + 0.186 = 0.919$
+
+Critical value at $p = 0.05$ with $1$ degree of freedom $= 3.84$.
+
+Since $0.919 \lt 3.84$, we fail to reject the null hypothesis. The population **is** in
+Hardy-Weinberg equilibrium for the MN blood group. This is consistent with random mating and the
+absence of strong selection acting on MN antigens.
+
+</details>
+
+**Worked Example: Operon Regulation Prediction**
+
+An _E. coli_ culture is grown in a medium containing both glucose and lactose. Predict the state of
+the lac operon (on or off) and explain the molecular mechanism, including the roles of cAMP and the
+CAP protein.
+
+<details>
+<summary>Solution</summary>
+
+The lac operon is **off** (or expressed at very low basal levels).
+
+**Mechanism**:
+1. When glucose is present, intracellular cAMP levels are **low** (glucose uptake inhibits adenylate
+   cyclase, which synthesises cAMP from ATP).
+2. The catabolite activator protein (CAP) requires cAMP binding to be active. With low cAMP, CAP
+   remains inactive and cannot bind to the CAP binding site upstream of the lac promoter.
+3. Without CAP bound, RNA polymerase has low affinity for the promoter, so transcription is minimal
+   even though lactose (allolactose) is available to inactivate the repressor.
+4. This phenomenon is called **catabolite repression** (or glucose effect): _E. coli_ preferentially
+   metabolises glucose because it yields ATP more efficiently than lactose.
+5. Only when glucose is depleted will cAMP levels rise, CAP becomes active, and the lac operon will
+   be fully induced to metabolise lactose.
+
+This dual regulatory mechanism ensures that _E. coli_ does not waste energy transcribing the lac
+operon genes when a more efficient carbon source (glucose) is available.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Confusing dominance with "more common"**: a dominant allele is expressed when present, but may be
+  rare in the population (e.g., achondroplasia, polydactyly). Dominance refers to phenotypic
+  expression, not frequency.
+- **Assuming a 3:1 ratio always applies**: this ratio requires both parents to be heterozygous
+  ($Aa \times Aa$) with complete dominance and equal viability of all genotypes.
+- **Confusing linkage with sex-linkage**: linked genes are on the same chromosome (any chromosome);
+  sex-linked genes are specifically on the X or Y chromosome. These are independent concepts.
+- **Misidentifying the template strand**: the template strand is the one RNA polymerase reads
+  ($3' \to 5'$); the mRNA has the same sequence as the coding strand (with U replacing T).
+- **Stating that PCR creates "new" DNA**: PCR synthesises copies of existing DNA sequences; it does
+  not create novel sequences or introduce mutations (beyond the rare errors of Taq polymerase).
+- **Confusing carrier frequency with disease incidence**: for autosomal recessive conditions, if
+  the disease incidence ($q^2$) is $1$ in $10000$, the carrier frequency ($2pq$) is approximately
+  $2q = 2 \times \frac{1}{100} = \frac{1}{50}$, not $1$ in $10000$.
+- **Ignoring interference in genetic mapping**: in real organisms, one crossover can suppress nearby
+  crossovers (positive interference), meaning observed double crossover frequencies may be lower
+  than expected from single crossover frequencies.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 1: Extended Response -- Non-Mendelian Inheritance</summary>
+
+A plant species exhibits incomplete dominance for flower colour: $RR$ = red, $Rr$ = pink, $rr$ =
+white. A second gene, on a different chromosome, controls petal shape: $S$ = smooth (dominant),
+$s$ = ruffled (recessive). A red, smooth plant ($RRSs$) is crossed with a white, ruffled plant
+($rrss$). (a) Write the genotypes and phenotypes of the F1 generation. (b) Show the F2 phenotypic
+ratio resulting from an F1 $\times$ F1 cross. (c) Explain how this ratio differs from a standard
+dihybrid cross with complete dominance.
+
+</details>
+
+<details>
+<summary>Problem 2: Data Analysis -- Gel Electrophoresis and PCR</summary>
+
+A PCR reaction amplifies a $1500\;\mathrm{bp}$ region of the human amelogenin gene, which has
+different length alleles on the X and Y chromosomes ($1064\;\mathrm{bp}$ on X, $789\;\mathrm{bp}$
+on Y). Three DNA samples are analysed by gel electrophoresis alongside a DNA ladder. (a) Describe
+the expected banding pattern for a male, a female, and a male with Klinefelter syndrome (XXY). (b)
+Explain how this test could be used in forensic sex determination. (c) Why would a DNA ladder with
+bands at known sizes be essential for this analysis?
+
+</details>
+
+<details>
+<summary>Problem 3: Extended Response -- Epistasis and Biochemical Pathways</summary>
+
+In Labrador retrievers, coat colour is determined by two genes. Gene $E$ determines whether pigment
+is deposited in the fur ($E$ = pigment deposited, $e$ = no pigment, yellow coat). Gene $B$ determines
+the pigment colour when $E$ is present ($B$ = black, $b$ = brown). A black Labrador ($BbEe$) is
+crossed with a brown Labrador ($bbEe$). (a) Determine the expected phenotypic ratio. (b) Explain
+why two yellow Labradors can never produce black or brown puppies. (c) Relate this to the concept
+of metabolic pathways and how mutations in different enzymes can produce the same phenotype.
+
+</details>
+
+<details>
+<summary>Problem 4: Quantitative -- PCR and DNA Quantification</summary>
+
+A researcher extracts DNA from a crime scene sample and uses quantitative PCR (qPCR) to determine
+the copy number of a specific STR locus. After $25$ cycles of qPCR, the fluorescence threshold is
+reached at cycle $18$ for the standard ($1000$ copies) and at cycle $21$ for the crime scene sample.
+Given that DNA quantity doubles each cycle, calculate the approximate number of copies in the crime
+scene sample.
+
+</details>
+
+<details>
+<summary>Problem 5: Extended Response -- Gene Therapy Ethics</summary>
+
+Severe combined immunodeficiency (SCID) is caused by mutations in the $IL2RG$ gene on the X
+chromosome. Somatic gene therapy trials using retroviral vectors have successfully restored immune
+function in some patients, but $5$ of $20$ treated patients developed leukaemia due to insertional
+mutagenesis (the retrovirus inserted near an oncogene). (a) Explain the mechanism of retroviral
+gene therapy. (b) Discuss why insertional mutagenesis occurs. (c) Evaluate the ethical
+considerations of continuing gene therapy trials for SCID given the risk of leukaemia.
+
+</details>
+
+<details>
+<summary>Problem 6: Data Analysis -- Karyotype and Chromosomal Abnormalities</summary>
+
+A karyotype analysis reveals that a patient has $47$ chromosomes, with an extra copy of chromosome
+21 (trisomy 21, Down syndrome). (a) Explain the chromosomal nondisjunction event that produced this
+karyotype, identifying the specific meiotic stage where it could have occurred. (b) The patient's
+mother is $38$ years old. Explain the statistical relationship between maternal age and the risk of
+trisomy 21. (c) Describe how non-invasive prenatal testing (NIPT) using cell-free fetal DNA in
+maternal blood can detect this condition.
+
+</details>
+
+<details>
+<summary>Problem 7: Extended Response -- Genetic Modification and Biodiversity</summary>
+
+_Bt_ cotton has been genetically modified to express the _Bacillus thuringiensis_ toxin gene, which
+produces a protein toxic to lepidopteran pests (cotton bollworm). (a) Describe the steps used to
+create _Bt_ cotton using recombinant DNA technology. (b) Explain the concern that widespread
+planting of _Bt_ cotton could accelerate the evolution of pesticide-resistant insects, and propose
+a strategy to delay this. (c) Evaluate one ecological benefit and one ecological risk of _Bt_ cotton
+compared with conventional pesticide application.
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- Chi-Squared Test Design</summary>
+
+A student claims that a new variety of pea plant shows a 9:3:3:1 ratio for seed colour and shape.
+They count $1600$ seeds and observe: $920$ round yellow, $290$ round green, $310$ wrinkled yellow,
+$80$ wrinkled green. (a) Perform a chi-squared test to evaluate this claim. (b) Identify the most
+deviant phenotype class and propose a biological explanation for the deviation. (c) Explain how the
+student could modify the experiment to increase confidence in their conclusion.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **DNA structure and replication** --> Review [./molecular-biology](./molecular-biology)
+- **Meiosis and chromosome behaviour** --> Review [./cell-biology](./cell-biology)
+- **Evolution and natural selection** --> Review [./ecology](./ecology)
+- **Protein synthesis and gene expression** --> Review [./molecular-biology](./molecular-biology)
+- **Enzymes and metabolic pathways** --> Review [./human-physiology](./human-physiology)

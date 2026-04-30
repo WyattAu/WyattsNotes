@@ -372,3 +372,230 @@ $\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ has eigenvalue $1$ with algebraic
 geometric multiplicity $1$; it is not diagonalisable.
 
 :::
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: $3 \times 3$ System with No Unique Solution**
+
+Determine the nature of solutions for the system:
+
+$$x + 2y + 3z = 4$$
+$$2x + 4y + 6z = 8$$
+$$x - y + z = 1$$
+
+<details>
+<summary>Solution</summary>
+
+Augmented matrix:
+
+$$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 2 & 4 & 6 & 8 \\ 1 & -1 & 1 & 1 \end{array}\right]$$
+
+$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - R_1$:
+
+$$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & -3 & -2 & -3 \end{array}\right]$$
+
+Swap $R_2$ and $R_3$:
+
+$$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 0 & -3 & -2 & -3 \\ 0 & 0 & 0 & 0 \end{array}\right]$$
+
+Row 2 gives $-3y - 2z = -3$, so $y = \dfrac{3 - 2z}{3} = 1 - \dfrac{2z}{3}$.
+
+Row 1 gives $x + 2\!\left(1 - \dfrac{2z}{3}\right) + 3z = 4$, so $x + 2 - \dfrac{4z}{3} + 3z = 4$,
+hence $x = 2 - \dfrac{5z}{3}$.
+
+Let $z = 3t$ (to avoid fractions): $x = 2 - 5t$, $y = 1 - 2t$, $z = 3t$.
+
+The system has infinitely many solutions parametrised by $t \in \mathbb{R}$.
+
+</details>
+
+**Worked Example: Composition of Transformations**
+
+Find the matrix representing an enlargement by scale factor $2$ about the origin, followed by a
+reflection in the line $y = x$. Determine the image of the point $(3, 1)$.
+
+<details>
+<summary>Solution</summary>
+
+Enlargement by $2$: $E = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}$.
+
+Reflection in $y = x$: $R = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
+
+Combined transformation (enlargement first, then reflection): $T = RE$.
+
+$$T = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} = \begin{pmatrix} 0 & 2 \\ 2 & 0 \end{pmatrix}$$
+
+Image of $(3, 1)$:
+
+$$\begin{pmatrix} 0 & 2 \\ 2 & 0 \end{pmatrix}\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} 2 \\ 6 \end{pmatrix}$$
+
+The image is $(2, 6)$.
+
+</details>
+
+**Worked Example: $3 \times 3$ Eigenvalues with Complex Roots**
+
+Find the eigenvalues of $A = \begin{pmatrix} 1 & 0 & -1 \\ 0 & 2 & 0 \\ 1 & 0 & 1 \end{pmatrix}$.
+
+<details>
+<summary>Solution</summary>
+
+Characteristic equation:
+
+$$\det\begin{pmatrix} 1 - \lambda & 0 & -1 \\ 0 & 2 - \lambda & 0 \\ 1 & 0 & 1 - \lambda \end{pmatrix} = 0$$
+
+Expand along the second row:
+
+$$(2 - \lambda)\begin{vmatrix} 1 - \lambda & -1 \\ 1 & 1 - \lambda \end{vmatrix} = 0$$
+
+$$(2 - \lambda)\bigl[(1 - \lambda)^2 + 1\bigr] = 0$$
+
+$$(2 - \lambda)(\lambda^2 - 2\lambda + 2) = 0$$
+
+From $2 - \lambda = 0$: $\lambda_1 = 2$.
+
+From $\lambda^2 - 2\lambda + 2 = 0$: $\lambda = \dfrac{2 \pm \sqrt{4 - 8}}{2} = 1 \pm i$.
+
+The three eigenvalues are $\lambda = 2$, $\lambda = 1 + i$, $\lambda = 1 - i$.
+
+Since complex eigenvalues of a real matrix come in conjugate pairs, this is consistent. The matrix
+is not diagonalisable over $\mathbb{R}$ but is diagonalisable over $\mathbb{C}$.
+
+</details>
+
+**Worked Example: Adjugate Method for $3 \times 3$ Inverse**
+
+Find the inverse of $A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 & 1 \\ 0 & 1 & 2 \end{pmatrix}$ using the
+adjugate method.
+
+<details>
+<summary>Solution</summary>
+
+First, compute $\det(A)$ by expanding along the first row:
+
+$$\det(A) = 2\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} - 1\begin{vmatrix} 1 & 1 \\ 0 & 2 \end{vmatrix} + 0 = 2(6 - 1) - 1(2 - 0) = 10 - 2 = 8$$
+
+Now compute the cofactor matrix $C$:
+
+$C_{11} = +\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} = 5$, $C_{12} = -\begin{vmatrix} 1 & 1 \\ 0 & 2 \end{vmatrix} = -2$, $C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
+
+$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$, $C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$, $C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
+
+$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & 1 \end{vmatrix} = 1$, $C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & 1 \end{vmatrix} = -2$, $C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
+
+$$C = \begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
+
+$$\mathrm{adj}(A) = C^T = \begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
+
+(Since this matrix is symmetric, $C^T = C$.)
+
+$$A^{-1} = \frac{1}{8}\begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
+
+</details>
+
+**Worked Example: Matrix Power via Diagonalisation**
+
+Compute $A^5$ where $A = \begin{pmatrix} 3 & -1 \\ 2 & 0 \end{pmatrix}$.
+
+<details>
+<summary>Solution</summary>
+
+Characteristic equation: $\lambda(\lambda - 3) + 2 = \lambda^2 - 3\lambda + 2 = 0$, so
+$(\lambda - 1)(\lambda - 2) = 0$, giving $\lambda_1 = 1$, $\lambda_2 = 2$.
+
+For $\lambda_1 = 1$: $\begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 2x = y$.
+Eigenvector: $\mathbf{v}_1 = \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
+
+For $\lambda_2 = 2$: $\begin{pmatrix} 1 & -1 \\ 2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies x = y$.
+Eigenvector: $\mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+
+$$P = \begin{pmatrix} 1 & 1 \\ 2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}$$
+
+$$P^{-1} = \frac{1}{1 - 2}\begin{pmatrix} 1 & -1 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} -1 & 1 \\ 2 & -1 \end{pmatrix}$$
+
+$$A^5 = PD^5P^{-1} = \begin{pmatrix} 1 & 1 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 0 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & -1 \end{pmatrix}$$
+
+$$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & -1 \end{pmatrix} = \begin{pmatrix} -1 + 64 & 1 - 32 \\ -2 + 64 & 2 - 32 \end{pmatrix} = \begin{pmatrix} 63 & -31 \\ 62 & -30 \end{pmatrix}$$
+
+</details>
+
+---
+
+## Common Pitfalls
+
+1. **Matrix multiplication is not commutative.** $AB \ne BA$ in general. When composing
+   transformations, the order matters: the matrix for "transform $A$ then transform $B$" is $BA$, not
+   $AB$.
+
+2. **Forgetting the factor of $\lambda^n$ in $\det(\lambda A)$.** Scaling a matrix by $\lambda$
+   multiplies the determinant by $\lambda^n$, where $n$ is the dimension. A common mistake is to
+   write $\det(\lambda A) = \lambda\det(A)$ instead of $\lambda^n\det(A)$.
+
+3. **Wrong sign in the $2 \times 2$ inverse.** The inverse of $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$
+   is $\dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. The $-b$ and $-c$ are easily
+   misplaced.
+
+4. **Confusing algebraic and geometric multiplicity.** The algebraic multiplicity of an eigenvalue is
+   its multiplicity as a root of the characteristic equation. The geometric multiplicity is the
+   dimension of the corresponding eigenspace. The geometric multiplicity is always less than or equal
+   to the algebraic multiplicity.
+
+5. **Assuming every matrix is diagonalisable.** Only matrices with a full set of linearly independent
+   eigenvectors can be diagonalised. Matrices with defective eigenvalues (geometric multiplicity less
+   than algebraic multiplicity) require the Jordan normal form instead.
+
+6. **Row operation errors in Gauss-Jordan elimination.** When finding the inverse via augmented
+   matrices, remember that row operations must be applied to **both** sides simultaneously. A single
+   arithmetic mistake propagates through all remaining steps.
+
+7. **Incorrect cofactor signs.** The sign of the cofactor $C_{ij}$ is $(-1)^{i+j}$. This follows a
+   checkerboard pattern starting with $+$ in the top-left corner. A common error is to use all
+   positive signs.
+
+8. **Misidentifying invariant lines.** An invariant line is mapped to itself, but points on the line
+   may move. To find invariant lines, solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$ where $\lambda$
+   is an eigenvalue. Every eigenvector lies on an invariant line through the origin.
+
+---
+
+## Exam-Style Problems
+
+1. Compute $AB - BA$ where $A = \begin{pmatrix} 1 & 2 \\ 0 & 3 \end{pmatrix}$ and
+   $B = \begin{pmatrix} 4 & -1 \\ 1 & 2 \end{pmatrix}$.
+
+2. Find the inverse of $\begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 1 \\ 2 & 1 & 0 \end{pmatrix}$ using
+   row reduction, and verify your answer by multiplication.
+
+3. Find the eigenvalues and eigenvectors of
+   $A = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$. Use diagonalisation to find $A^6$.
+
+4. A triangle has vertices at $(0, 0)$, $(2, 0)$, and $(1, 3)$. Find the matrix of the transformation
+   that reflects the triangle in the $y$-axis and then enlarges it by a factor of $2$ about the
+   origin. Determine the area of the image.
+
+5. Determine the values of $k$ for which the system
+   $\begin{cases} x + ky + z = 1 \\ x + y + kz = k \\ kx + y + z = 1 \end{cases}$
+   has (a) a unique solution, (b) no solution, (c) infinitely many solutions.
+
+6. Find the characteristic equation of
+   $A = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 2 \end{pmatrix}$ and explain why $A$ is
+   not diagonalisable.
+
+7. The matrix $T = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$
+   represents a rotation. Find the eigenvalues when $\theta = \dfrac{\pi}{2}$ and interpret them
+   geometrically.
+
+8. Use Cramer's rule to solve
+   $\begin{cases} 3x + 2y - z = 4 \\ x - y + 2z = -1 \\ 2x + 3y + z = 7 \end{cases}$.
+
+---
+
+## Cross-References
+
+- **Vectors in three dimensions** for geometric interpretation of transformations: see [Vectors](/docs/docs_ib/maths/vectors-and-matrices/vectors)
+- **Complex numbers** for eigenvalues with complex roots: see [Complex Numbers](/docs/docs_ib/maths/vectors-and-matrices/complex-numbers)
+- **Differential equations** and systems solved via matrix methods: see [Differential Equations](/docs/docs_ib/maths/calculus/differential-equations)
+- **Algebra of functions** for linear transformations: see [Functions](/docs/docs_ib/maths/algebra/functions)
+- **Proof and reasoning** for properties of determinants: see [Proof](/docs/docs_ib/maths/proof-and-reasoning)

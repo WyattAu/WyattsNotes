@@ -294,3 +294,269 @@ These give $(\alpha, \beta) = (2,5)$, $(3,3)$, $(5,2)$, $(0,-3)$, $(-1,-1)$, $(-
 Corresponding $k$ values: $7, 6, 7, -3, -2, -3$. Integer values of $k$: $\{-3, -2, 6, 7\}$.
 
 </details>
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 8: Parameter condition for real roots (non-standard quadratic)**
+
+Find the range of $k$ for which $(k-1)x^2 + 2kx + k + 3 = 0$ has real roots.
+
+<details>
+<summary>Solution</summary>
+
+**Case 1: $k = 1$.** The equation becomes $2x + 4 = 0 \implies x = -2$. One real root, so $k = 1$ is included.
+
+**Case 2: $k \neq 1$.** This is a genuine quadratic. Require $\Delta \geq 0$:
+
+$$\Delta = (2k)^2 - 4(k-1)(k+3) = 4k^2 - 4(k^2 + 2k - 3) = 4k^2 - 4k^2 - 8k + 12 = -8k + 12$$
+
+$$-8k + 12 \geq 0 \implies k \leq \frac{3}{2}$$
+
+Combined with Case 1: the answer is $k \leq \dfrac{3}{2}$.
+
+</details>
+
+**Worked Example 9: Forming a quadratic with transformed roots**
+
+If $\alpha$ and $\beta$ are roots of $2x^2 - 7x + 3 = 0$, form a quadratic equation with roots $\alpha^2$ and $\beta^2$.
+
+<details>
+<summary>Solution</summary>
+
+$$\alpha + \beta = \frac{7}{2}, \quad \alpha\beta = \frac{3}{2}$$
+
+New sum: $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \dfrac{49}{4} - 3 = \dfrac{37}{4}$.
+
+New product: $\alpha^2 \beta^2 = (\alpha\beta)^2 = \dfrac{9}{4}$.
+
+Equation: $x^2 - \dfrac{37}{4}x + \dfrac{9}{4} = 0$, i.e. $4x^2 - 37x + 9 = 0$.
+
+</details>
+
+**Worked Example 10: Quadratic with absolute value**
+
+Solve $x^2 + 2|x| - 8 = 0$.
+
+<details>
+<summary>Solution</summary>
+
+Let $t = |x| \geq 0$. The equation becomes $t^2 + 2t - 8 = 0$.
+
+$$(t + 4)(t - 2) = 0 \implies t = 2$$
+
+(Reject $t = -4$ since $t \geq 0$.)
+
+$$|x| = 2 \implies x = 2 \;\mathrm{or}\; x = -2$$
+
+</details>
+
+**Worked Example 11: Positive definite quadratic**
+
+Find the range of $k$ such that $kx^2 - 2kx + 3 \gt 0$ for all real $x$.
+
+<details>
+<summary>Solution</summary>
+
+For $ax^2 + bx + c \gt 0$ for all real $x$, we need $a \gt 0$ and $\Delta \lt 0$.
+
+**Condition 1:** $k \gt 0$.
+
+**Condition 2:**
+
+$$\Delta = (-2k)^2 - 4(k)(3) = 4k^2 - 12k = 4k(k - 3) \lt 0$$
+
+This gives $0 \lt k \lt 3$.
+
+Combined with Condition 1: $0 \lt k \lt 3$.
+
+</details>
+
+**Worked Example 12: Minimum value using AM-GM**
+
+Find the minimum value of $f(x) = x + \dfrac{9}{x}$ for $x \gt 0$.
+
+<details>
+<summary>Solution</summary>
+
+By the AM-GM inequality (for $x \gt 0$):
+
+$$x + \frac{9}{x} \geq 2\sqrt{x \cdot \frac{9}{x}} = 2\sqrt{9} = 6$$
+
+Equality holds when $x = \dfrac{9}{x} \implies x^2 = 9 \implies x = 3$ (positive since $x \gt 0$).
+
+Minimum value: $6$, attained at $x = 3$.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+1. **Forgetting the $a \neq 0$ condition.** When a parameter makes $a = 0$, the equation becomes linear, not quadratic. Always check the degenerate case separately, as in Worked Example 8.
+
+2. **Wrong sign in Vieta's formulas.** The sum of roots is $\alpha + \beta = -b/a$, not $b/a$. The negative sign is the single most common error in root-coefficient problems.
+
+3. **Reversing inequality when multiplying by a negative.** When solving $ax^2 + bx + c \lt 0$ with $a \lt 0$, multiplying through by $-1$ reverses the sign. A safer approach is to sketch the parabola and read off the solution intervals.
+
+4. **Completing the square incorrectly.** After factoring out $a$ from $ax^2 + bx + c$, the term to add and subtract inside the brackets is $\left(\dfrac{b}{2a}\right)^2$, not $\left(\dfrac{b}{2}\right)^2$. Forgetting to divide by $a$ inside is a frequent mistake.
+
+5. **Assuming discriminant alone determines root rationality.** For $\Delta \gt 0$, the roots are rational if and only if $\Delta$ is a perfect square (and $2a$ divides $-b \pm \sqrt{\Delta}$). A positive, non-square discriminant gives irrational roots.
+
+6. **Confusing vertex $x$-coordinate sign.** The vertex $x$-coordinate is $-b/(2a)$, not $b/(2a)$. The negative sign is essential.
+
+7. **Dropping the leading coefficient in root-coefficient problems.** For $ax^2 + bx + c = 0$, the sum is $-b/a$ and the product is $c/a$. Omitting the denominator $a$ (e.g., writing $\alpha + \beta = -b$) is only valid when $a = 1$.
+
+8. **Incorrect transformation of roots.** When forming a new equation with roots $2\alpha$ and $2\beta$, the new sum is $2(\alpha + \beta)$ and the new product is $4\alpha\beta$. A common mistake is to only double the sum but forget to square the factor for the product.
+
+---
+
+## Exam-Style Problems
+
+**Problem 1.** Solve $3x^2 + 2x - 5 \leq 0$.
+
+<details>
+<summary>Solution</summary>
+
+Factor: $3x^2 + 2x - 5 = (3x + 5)(x - 1)$.
+
+Roots: $x = -\dfrac{5}{3}$ and $x = 1$. The parabola opens upward ($a = 3 \gt 0$).
+
+The expression is non-positive between the roots:
+
+$$-\frac{5}{3} \leq x \leq 1$$
+
+</details>
+
+**Problem 2.** If $\alpha$ and $\beta$ are roots of $x^2 - 5x + 2 = 0$, find $\alpha^3 + \beta^3$.
+
+<details>
+<summary>Solution</summary>
+
+$$\alpha + \beta = 5, \quad \alpha\beta = 2$$
+
+$$\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = 125 - 3(2)(5) = 125 - 30 = 95$$
+
+</details>
+
+**Problem 3.** Find the range of $p$ for which $px^2 + 2px + 1 \gt 0$ for all real $x$.
+
+<details>
+<summary>Solution</summary>
+
+Require $p \gt 0$ and $\Delta \lt 0$:
+
+$$\Delta = 4p^2 - 4p = 4p(p - 1) \lt 0 \implies 0 \lt p \lt 1$$
+
+</details>
+
+**Problem 4.** The expression $x^2 + px + q$ is a perfect square. Given $p + q = 9$, find $p$ and $q$.
+
+<details>
+<summary>Solution</summary>
+
+A perfect square means $\Delta = 0$: $p^2 - 4q = 0 \implies q = \dfrac{p^2}{4}$.
+
+Substituting into $p + q = 9$: $p + \dfrac{p^2}{4} = 9 \implies p^2 + 4p - 36 = 0$.
+
+$$p = \frac{-4 \pm \sqrt{16 + 144}}{2} = -2 \pm 2\sqrt{10}$$
+
+$$q = 9 - p = 9 + 2 \mp 2\sqrt{10} = 11 \mp 2\sqrt{10}$$
+
+Answer: $\left(p,\; q\right) = \left(-2 + 2\sqrt{10},\; 11 - 2\sqrt{10}\right)$ or $\left(-2 - 2\sqrt{10},\; 11 + 2\sqrt{10}\right)$.
+
+</details>
+
+**Problem 5.** A rectangular field has perimeter $120\mathrm{ m}$ and area $A\mathrm{ m}^2$. Show that $A \leq 900$ and find the dimensions when $A = 900$.
+
+<details>
+<summary>Solution</summary>
+
+Let the dimensions be $x$ and $y$ metres. Then $2(x+y) = 120 \implies x + y = 60$, so $y = 60 - x$.
+
+$$A = xy = x(60 - x) = -x^2 + 60x = -(x - 30)^2 + 900$$
+
+Since $-(x-30)^2 \leq 0$ for all real $x$, we have $A \leq 900$.
+
+Maximum $A = 900\mathrm{ m}^2$ when $x = 30$, giving $y = 30$.
+
+The field is a $30\mathrm{ m} \times 30\mathrm{ m}$ square.
+
+</details>
+
+**Problem 6.** Given that $x^2 + 2ax + 4 = 0$ has two real roots $\alpha$ and $\beta$ ($\alpha \lt \beta$), find the range of $a$ for which $\beta - \alpha \gt 3$.
+
+<details>
+<summary>Solution</summary>
+
+For real roots: $\Delta = 4a^2 - 16 \geq 0 \implies a^2 \geq 4 \implies a \leq -2$ or $a \geq 2$.
+
+$$\alpha + \beta = -2a, \quad \alpha\beta = 4$$
+
+$$(\beta - \alpha)^2 = (\alpha + \beta)^2 - 4\alpha\beta = 4a^2 - 16$$
+
+$$\beta - \alpha = 2\sqrt{a^2 - 4}$$
+
+(positive since $\beta \gt \alpha$)
+
+$$2\sqrt{a^2 - 4} \gt 3 \implies a^2 - 4 \gt \frac{9}{4} \implies a^2 \gt \frac{25}{4} \implies |a| \gt \frac{5}{2}$$
+
+Combined with $|a| \geq 2$: $a \lt -\dfrac{5}{2}$ or $a \gt \dfrac{5}{2}$.
+
+</details>
+
+**Problem 7.** Find the range of the function $f(x) = \dfrac{x^2 - x + 1}{x^2 + x + 1}$.
+
+<details>
+<summary>Solution</summary>
+
+Let $y = \dfrac{x^2 - x + 1}{x^2 + x + 1}$. Since $x^2 + x + 1 = \left(x + \dfrac{1}{2}\right)^2 + \dfrac{3}{4} \gt 0$ for all real $x$, the denominator never vanishes.
+
+$$y(x^2 + x + 1) = x^2 - x + 1 \implies yx^2 + yx + y = x^2 - x + 1$$
+
+$$(y - 1)x^2 + (y + 1)x + (y - 1) = 0$$
+
+For real $x$, $\Delta \geq 0$:
+
+$$(y+1)^2 - 4(y-1)^2 \geq 0$$
+
+$$(y + 1 - 2y + 2)(y + 1 + 2y - 2) \geq 0$$
+
+$$(-y + 3)(3y - 1) \geq 0 \implies (y - 3)(3y - 1) \leq 0$$
+
+$$\frac{1}{3} \leq y \leq 3$$
+
+Range: $\left[\dfrac{1}{3},\; 3\right]$.
+
+</details>
+
+**Problem 8.** The roots of $x^2 + px + q = 0$ are $\alpha$ and $\beta$. If $\alpha^2 + \beta^2 = 10$ and $\alpha^4 + \beta^4 = 82$, find $p$ and $q$.
+
+<details>
+<summary>Solution</summary>
+
+Note that $\alpha^4 + \beta^4 = (\alpha^2 + \beta^2)^2 - 2(\alpha\beta)^2 = 100 - 2(\alpha\beta)^2$.
+
+$$100 - 2(\alpha\beta)^2 = 82 \implies 2(\alpha\beta)^2 = 18 \implies (\alpha\beta)^2 = 9 \implies \alpha\beta = 3 \;\mathrm{or}\; \alpha\beta = -3$$
+
+**Case $\alpha\beta = 3$:** $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 10 \implies (\alpha + \beta)^2 - 6 = 10 \implies (\alpha + \beta)^2 = 16 \implies \alpha + \beta = \pm 4$.
+
+So $p = -(\alpha + \beta) = \pm 4$, $q = \alpha\beta = 3$. Two quadratics: $x^2 + 4x + 3 = 0$ and $x^2 - 4x + 3 = 0$.
+
+**Case $\alpha\beta = -3$:** $(\alpha + \beta)^2 - 2(-3) = 10 \implies (\alpha + \beta)^2 = 4 \implies \alpha + \beta = \pm 2$.
+
+So $p = \mp 2$, $q = -3$. Two quadratics: $x^2 + 2x - 3 = 0$ and $x^2 - 2x - 3 = 0$.
+
+All four pairs are valid solutions.
+
+</details>
+
+---
+
+## Cross-References
+
+- **Functions:** Quadratic functions are a special case of polynomial functions. See [functions.md](./functions.md) and [functions-advanced.md](./functions-advanced.md).
+- **Coordinate Geometry:** Parabolas as conic sections. See [coordinate-geometry.md](./coordinate-geometry.md).
+- **Inequalities:** Quadratic inequalities are solved using discriminant and graph analysis. See the inequalities notes.
+- **Permutations and Combinations:** Factorials appear in the quadratic formula derivation via completing the square. See [permutations-and-combinations.md](./permutations-and-combinations.md).

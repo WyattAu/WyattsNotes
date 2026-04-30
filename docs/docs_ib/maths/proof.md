@@ -372,3 +372,248 @@ and $b \ne 0$). But $\sqrt{2}$ is irrational (established earlier). Contradictio
 $b = 0$, and from $a + 0 = 0$ we get $a = 0$.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Direct Proof Involving Divisibility**
+
+Prove that the square of any odd integer leaves remainder $1$ when divided by $8$.
+
+<details>
+<summary>Solution</summary>
+
+Let $n$ be an odd integer. Then $n = 2k + 1$ for some $k \in \mathbb{Z}$.
+
+$$n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 4k(k + 1) + 1$$
+
+Since $k$ and $k + 1$ are consecutive integers, one of them is even. Therefore $k(k + 1)$ is even,
+so $k(k + 1) = 2m$ for some $m \in \mathbb{Z}$.
+
+$$n^2 = 4(2m) + 1 = 8m + 1$$
+
+Hence $n^2$ leaves remainder $1$ upon division by $8$.
+
+</details>
+
+**Worked Example: Proof by Contradiction Involving Rationals**
+
+Prove that $\sqrt{6}$ is irrational.
+
+<details>
+<summary>Solution</summary>
+
+Suppose, for contradiction, that $\sqrt{6} = \dfrac{a}{b}$ where $a, b \in \mathbb{Z}^+$ and
+$\gcd(a, b) = 1$.
+
+Squaring: $a^2 = 6b^2$, so $a^2$ is even (divisible by $2$), and hence $a$ is even. Write $a = 2m$.
+
+Substituting: $4m^2 = 6b^2 \implies 2m^2 = 3b^2$.
+
+This means $3b^2$ is even, so $b^2$ is even (since $3$ is odd), and hence $b$ is even.
+
+Both $a$ and $b$ are even, contradicting $\gcd(a, b) = 1$.
+
+Therefore $\sqrt{6}$ is irrational.
+
+</details>
+
+**Worked Example: Strong Induction**
+
+Prove that every integer $n \ge 2$ can be expressed as a product of prime numbers.
+
+<details>
+<summary>Solution</summary>
+
+We use strong induction on $n$.
+
+**Base case** ($n = 2$): $2$ is itself prime, hence a product of primes (with one factor).
+
+**Inductive hypothesis:** Assume that every integer $k$ with $2 \le k \le m$ can be written as a product
+of primes.
+
+**Inductive step:** Consider $n = m + 1$.
+
+- If $m + 1$ is prime, it is trivially a product of primes.
+- If $m + 1$ is composite, then $m + 1 = ab$ where $2 \le a \le b \le m$. By the inductive hypothesis,
+  both $a$ and $b$ are products of primes. Therefore $m + 1 = ab$ is also a product of primes.
+
+**Conclusion:** By strong induction, every integer $n \ge 2$ is a product of primes.
+
+</details>
+
+**Worked Example: Proof by Contrapositive**
+
+Prove that if $n^2$ is not divisible by $4$, then $n$ is odd.
+
+<details>
+<summary>Solution</summary>
+
+We prove the contrapositive: if $n$ is even, then $n^2$ is divisible by $4$.
+
+If $n$ is even, then $n = 2k$ for some $k \in \mathbb{Z}$.
+
+$$n^2 = (2k)^2 = 4k^2$$
+
+Since $k^2 \in \mathbb{Z}$, $n^2 = 4k^2$ is divisible by $4$.
+
+Therefore, if $n^2$ is not divisible by $4$, then $n$ must be odd.
+
+</details>
+
+**Worked Example: Proof by Exhaustion**
+
+Prove that for all integers $n$ with $0 \le n \le 4$, the value $n^3 - n$ is even.
+
+<details>
+<summary>Solution</summary>
+
+We verify each case:
+
+- $n = 0$: $0^3 - 0 = 0$ (even)
+- $n = 1$: $1^3 - 1 = 0$ (even)
+- $n = 2$: $8 - 2 = 6$ (even)
+- $n = 3$: $27 - 3 = 24$ (even)
+- $n = 4$: $64 - 4 = 60$ (even)
+
+All cases confirmed. The statement holds for $0 \le n \le 4$.
+
+Note: this can also be proved generally. $n^3 - n = n(n-1)(n+1)$ is the product of three consecutive
+integers, which always includes at least one even factor.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Assuming the converse.** $P \implies Q$ does not imply $Q \implies P$. For example, "if $n$ is even
+  then $n^2$ is even" is true, but "if $n^2$ is even then $n$ is even" requires a separate proof (by
+  contrapositive).
+
+- **Induction with incorrect base case.** If the claim starts at $n = 0$, verifying $n = 1$ as the base
+  case is insufficient. The base case must match the starting value in the claim.
+
+- **Weak vs. strong induction confusion.** Standard induction assumes $P(k)$ to prove $P(k+1)$.
+  Strong induction assumes $P(2), P(3), \ldots, P(k)$ to prove $P(k+1)$. Use strong induction when
+  $P(k+1)$ depends on more than just $P(k)$.
+
+- **Contradiction: negating the statement incorrectly.** The negation of "for all $x$, $P(x)$" is
+  "there exists $x$ such that $\neg P(x)$". The negation of "there exists $x$ such that $P(x)$" is
+  "for all $x$, $\neg P(x)$". Quantifier negation must swap "for all" with "there exists."
+
+- **Incomplete exhaustion.** Proof by exhaustion requires checking every single case. Missing even one
+  case invalidates the proof. This technique should only be used when the number of cases is genuinely
+  small and enumerable.
+
+- **Using specific numbers in a general proof.** A proof that relies on a specific value (e.g., "let
+  $n = 5$") only proves the statement for that value, not for all $n$. General proofs must use
+  arbitrary or general variables.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 11</summary>
+
+Prove by contradiction that $\sqrt{2} + \sqrt{3}$ is irrational.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+
+Prove by induction that $\displaystyle\sum_{i=1}^{n} \frac{1}{i(i+1)} = \frac{n}{n+1}$ for all
+$n \in \mathbb{Z}^+$.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+
+Prove by direct proof: if $a$ and $b$ are integers and $a \mid b$ and $b \mid a$, then $a = b$ or
+$a = -b$.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+
+Prove that there are infinitely many positive integers $n$ such that $n^2 + n + 41$ is composite.
+(Hint: consider specific values of $n$ that make the expression factorable.)
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+
+Prove by induction that $\displaystyle\sum_{i=1}^{n} 2^{i-1} = 2^n - 1$ for all $n \in \mathbb{Z}^+$.
+
+</details>
+
+<details>
+<summary>Problem 16</summary>
+
+Prove by contrapositive: for integers $a, b, c$, if $a$ does not divide $bc$, then $a$ does not divide $b$.
+
+</details>
+
+<details>
+<summary>Problem 17</summary>
+
+Give a counterexample to disprove: "For all real numbers $x$ and $y$, $\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor$."
+
+</details>
+
+<details>
+<summary>Problem 18</summary>
+
+Prove that $\log_2{5}$ is irrational.
+
+</details>
+
+<details>
+<summary>Answers to Additional Problems</summary>
+
+**Problem 11:** Suppose $\sqrt{2} + \sqrt{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{Z}^+$ in lowest
+terms. Squaring: $5 + 2\sqrt{6} = a^2/b^2$, so $\sqrt{6} = (a^2 - 5b^2)/(2b^2)$, which is rational.
+But $\sqrt{6}$ is irrational (proved earlier). Contradiction.
+
+**Problem 12:** Base case ($n = 1$): $\dfrac{1}{1 \cdot 2} = \dfrac{1}{2} = \dfrac{1}{1+1}$. True.
+Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1}$.
+Inductive step: $\displaystyle\sum_{i=1}^{k+1} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1} + \dfrac{1}{(k+1)(k+2)} = \dfrac{k(k+2) + 1}{(k+1)(k+2)} = \dfrac{k^2 + 2k + 1}{(k+1)(k+2)} = \dfrac{(k+1)^2}{(k+1)(k+2)} = \dfrac{k+1}{k+2}$. This is the formula with $n = k + 1$.
+
+**Problem 13:** $a \mid b \implies b = ma$ and $b \mid a \implies a = nb$ for some $m, n \in \mathbb{Z}$.
+Substituting: $a = n(ma) = (nm)a$, so $nm = 1$. Since $m, n$ are integers, either $m = n = 1$ (giving
+$a = b$) or $m = n = -1$ (giving $a = -b$).
+
+**Problem 14:** Take $n = 41$: $41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 \times 43$, which is composite.
+Take $n = 42$: $42^2 + 42 + 41 = 1764 + 42 + 41 = 1847$. Check: $1847 = 43 \times 42.95 \ldots$.
+Actually $1847/43 = 42.95$, so check: $1847 = 43 \times 43 = 1849 \ne 1847$. Try $n = 40$: $1600 + 40 + 41 = 1681 = 41^2$, composite.
+Take $n = 41k - 1$ for any $k$: $(41k - 1)^2 + (41k - 1) + 41 = 1681k^2 - 82k + 1 + 41k - 1 + 41 = 1681k^2 - 41k + 41 = 41(41k^2 - k + 1)$, which is composite for all $k \ge 1$. Since there are infinitely many such $k$, there are infinitely many composite values.
+
+**Problem 15:** Base case ($n = 1$): $2^0 = 1 = 2^1 - 1$. True.
+Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} 2^{i-1} = 2^k - 1$.
+Inductive step: $\displaystyle\sum_{i=1}^{k+1} 2^{i-1} = (2^k - 1) + 2^k = 2^{k+1} - 1$. This is the formula with $n = k + 1$.
+
+**Problem 16:** Contrapositive: if $a \mid b$, then $a \mid bc$. If $a \mid b$, then $b = ma$ for some $m \in \mathbb{Z}$, so $bc = mac$, hence $a \mid bc$. This proves the contrapositive, hence the original statement.
+
+**Problem 17:** Take $x = 0.5$ and $y = 0.5$. $\lfloor 0.5 + 0.5 \rfloor = \lfloor 1 \rfloor = 1$, but $\lfloor 0.5 \rfloor + \lfloor 0.5 \rfloor = 0 + 0 = 0 \ne 1$.
+
+**Problem 18:** Suppose $\log_2{5} = a/b$ with $a, b \in \mathbb{Z}^+$. Then $2^{a/b} = 5$, so $2^a = 5^b$.
+The left side is a power of $2$ (even for $a \ge 1$), the right side is a power of $5$ (odd). For
+$a = 0$: $1 = 5^b$ is impossible. For $a \ge 1$: even = odd. Contradiction.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Logic and set theory** → Review the logic and proof fundamentals
+- **Divisibility and prime factorisation** → Review number theory and algebra topics
+- **Summation notation and series** → Review [./calculus](./calculus) (section on integration and series)
+- **Quadratics and factorisation** → Review algebra fundamentals
+- **Function notation and domain** → Review functions topics

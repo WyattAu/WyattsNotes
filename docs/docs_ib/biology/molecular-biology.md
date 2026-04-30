@@ -460,3 +460,269 @@ re-esterified into triglycerides, and packaged into chylomicrons for transport i
 system (not directly into blood).
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Calculating DNA Quantities from Absorbance**
+
+A student measures the absorbance of a DNA solution at $260\;\mathrm{nm}$ using a spectrophotometer
+and obtains a reading of $0.40$. Using the relationship that an absorbance of $1.0$ corresponds to
+$50\;\mathrm{\mu g/mL}$ of double-stranded DNA, calculate the DNA concentration and the total mass
+of DNA in a $500\;\mathrm{\mu L}$ sample. Also, the absorbance at $280\;\mathrm{nm}$ is $0.22$.
+Calculate the $A_{260}/A_{280}$ ratio and assess the purity.
+
+<details>
+<summary>Solution</summary>
+
+**DNA concentration**: $[\mathrm{DNA}] = 0.40 \times 50\;\mathrm{\mu g/mL} = 20\;\mathrm{\mu g/mL}$
+
+**Total DNA in $500\;\mathrm{\mu L}$**:
+$\mathrm{mass} = 20\;\mathrm{\mu g/mL} \times 0.500\;\mathrm{mL} = 10\;\mathrm{\mu g}$
+
+**Purity ratio**: $\frac{A_{260}}{A_{280}} = \frac{0.40}{0.22} = 1.82$
+
+A ratio of $1.8$--$2.0$ indicates relatively pure DNA. A ratio below $1.8$ suggests protein
+contamination (proteins absorb strongly at $280\;\mathrm{nm}$ due to aromatic amino acids, tryptophan
+and tyrosine). A ratio above $2.0$ suggests RNA contamination (RNA absorbs at $260\;\mathrm{nm}$).
+This sample is within the acceptable range.
+
+</details>
+
+**Worked Example: Michaelis-Menten Kinetics and Competitive Inhibition**
+
+An enzyme has $V_{\max} = 50\;\mathrm{\mu mol/min}$ and $K_m = 10\;\mathrm{mM}$ in the absence of
+inhibitor. A competitive inhibitor is added at a concentration that doubles the apparent $K_m$.
+Calculate the reaction velocity at $[S] = 10\;\mathrm{mM}$ with and without the inhibitor. At what
+substrate concentration does the inhibited reaction reach $90\%$ of $V_{\max}$?
+
+<details>
+<summary>Solution</summary>
+
+**Without inhibitor** at $[S] = 10\;\mathrm{mM}$:
+$v = \frac{V_{\max} \cdot [S]}{K_m + [S]} = \frac{50 \times 10}{10 + 10} = \frac{500}{20} = 25\;\mathrm{\mu mol/min}$
+
+**With competitive inhibitor** ($K_m^{\mathrm{app}} = 2 \times 10 = 20\;\mathrm{mM}$; $V_{\max}$ unchanged):
+$v = \frac{50 \times 10}{20 + 10} = \frac{500}{30} = 16.7\;\mathrm{\mu mol/min}$
+
+The inhibitor reduces the rate by approximately $33\%$ at this substrate concentration.
+
+**Substrate concentration for $90\%$ of $V_{\max}$ with inhibitor**:
+$0.9 \times V_{\max} = \frac{V_{\max} \cdot [S]}{K_m^{\mathrm{app}} + [S]}$
+$0.9(K_m^{\mathrm{app}} + [S]) = [S]$
+$0.9 K_m^{\mathrm{app}} + 0.9[S] = [S]$
+$0.1[S] = 0.9 K_m^{\mathrm{app}}$
+$[S] = 9 K_m^{\mathrm{app}} = 9 \times 20 = 180\;\mathrm{mM}$
+
+At very high substrate concentrations ($[S] \gg K_m^{\mathrm{app}}$), the competitive inhibitor is
+outcompeted and the enzyme reaches the same $V_{\max}$ as the uninhibited reaction. This is the
+defining characteristic of competitive inhibition.
+
+</details>
+
+**Worked Example: Protein Structure and Amino Acid Properties**
+
+A peptide has the sequence: Val -- Glu -- Lys -- Ala -- Cys -- Pro -- Phe. For each amino acid,
+state whether the side chain is polar, non-polar, acidic, or basic. Identify which amino acid(s)
+could form: (a) a disulfide bridge, (b) an ionic bond, (c) a hydrogen bond with water.
+
+<details>
+<summary>Solution</summary>
+
+| Amino Acid | Side Chain Property            |
+| ---------- | ------------------------------ |
+| Val        | Non-polar (hydrophobic)        |
+| Glu        | Acidic (negatively charged at pH 7) |
+| Lys        | Basic (positively charged at pH 7)  |
+| Ala        | Non-polar (hydrophobic)        |
+| Cys        | Polar (contains thiol group)   |
+| Pro        | Non-polar (imino acid)         |
+| Phe        | Non-polar (aromatic)           |
+
+(a) **Disulfide bridge**: Cys (cysteine). Two cysteine residues can form a covalent disulfide bond
+($-\mathrm{S}-\mathrm{S}-$) through oxidation of their thiol groups, stabilising tertiary and
+quaternary structure.
+
+(b) **Ionic bond**: Glu and Lys. The carboxylate group of Glu ($-\mathrm{COO}^-$) and the amino
+group of Lys ($-\mathrm{NH}_3^+$) can form an electrostatic (ionic) interaction at physiological pH.
+
+(c) **Hydrogen bonds with water**: Glu, Lys, and Cys. These amino acids have polar or charged side
+chains that can form hydrogen bonds with water, contributing to protein solubility. The non-polar
+residues (Val, Ala, Pro, Phe) tend to be buried in the protein interior, away from water.
+
+</details>
+
+**Worked Example: Transcription and Translation -- Determining Gene Length**
+
+A protein consists of $400$ amino acids. The coding region of the gene includes $5$ exons and $4$
+introns. The average intron length is $800\;\mathrm{bp}$ and the average exon length is
+$300\;\mathrm{bp}$. Calculate the length of the mature mRNA (excluding $5'$ cap and $3'$ poly-A tail)
+and the total length of the pre-mRNA.
+
+<details>
+<summary>Solution</summary>
+
+**Mature mRNA length** (exons only): $5 \times 300 = 1500\;\mathrm{bp}$
+
+Verification: a protein of $400$ amino acids requires $400 \times 3 = 1200\;\mathrm{bp}$ of coding
+sequence. The additional $300\;\mathrm{bp}$ in the exons are the $5'$ and $3'$ untranslated regions
+(UTRs) that are transcribed but not translated.
+
+**Pre-mRNA length** (exons + introns):
+$1500 + (4 \times 800) = 1500 + 3200 = 4700\;\mathrm{bp}$
+
+The introns constitute $\frac{3200}{4700} \approx 68\%$ of the pre-mRNA. This is typical of
+eukaryotic genes, which often have more intronic DNA than coding DNA. In humans, the average gene
+spans approximately $27000\;\mathrm{bp}$ but the average coding sequence is only about $1400\;\mathrm{bp}$.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Confusing the sense and template strands**: the template strand is the one used for transcription
+  ($3' \to 5'$); the sense (coding) strand has the same sequence as the mRNA (with T instead of U).
+- **Writing DNA replication in the 3' to 5' direction**: DNA polymerase synthesises exclusively in
+  the $5' \to 3'$ direction. The template is read $3' \to 5'$, but the new strand is built $5' \to 3'$.
+- **Stating that "enzymes are used up in reactions"**: enzymes are catalysts that lower activation
+  energy and are regenerated at the end of each catalytic cycle.
+- **Confusing alpha and beta glucose**: the position of the OH group on C1 distinguishes them.
+  Alpha-glucose polymers (starch, glycogen) are coiled and digestible; beta-glucose polymers
+  (cellulose) are straight, form microfibrils, and are indigestible by most animals.
+- **Equating introns with "junk DNA"**: introns can contain regulatory sequences (enhancers,
+  silencers), and are involved in alternative splicing, which allows one gene to produce multiple
+  protein isoforms.
+- **Confusing saturated and unsaturated fatty acids**: saturated fatty acids have no C=C double bonds
+  and are straight (solid at room temperature); unsaturated fatty acids have C=C bonds creating
+  kinks (liquid at room temperature).
+- **Stating that the genetic code is "universal without exception"**: the code is nearly universal but
+  there are minor variations in mitochondrial DNA, some protozoa, and mycoplasma (e.g., UGA codes
+  for tryptophan in mitochondria instead of being a stop codon).
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 1: Data Analysis -- Enzyme Activity and Temperature</summary>
+
+The following data show the rate of catalase activity (measured as $\mathrm{O}_2$ produced in
+$\mathrm{\mu mol/min}$) at different temperatures:
+
+| Temperature ($^\circ\mathrm{C}$) | Rate ($\mathrm{\mu mol/min}$) |
+| -------------------------------- | ----------------------------- |
+| 10                               | 8                             |
+| 20                               | 18                            |
+| 30                               | 32                            |
+| 37                               | 40                            |
+| 45                               | 25                            |
+| 55                               | 5                             |
+| 65                               | 0                             |
+
+(a) Plot the data and identify the optimum temperature. (b) Explain the molecular basis for the
+increase in rate from $10$ to $37^\circ\mathrm{C}$ and the decrease from $37$ to $65^\circ\mathrm{C}$.
+(c) A student claims that catalase from a thermophilic bacterium would show the same optimum
+temperature. Evaluate this claim.
+
+</details>
+
+<details>
+<summary>Problem 2: Extended Response -- DNA Replication Fidelity</summary>
+
+DNA polymerase has a proofreading ($3' \to 5'$ exonuclease) activity that reduces the error rate to
+approximately $10^{-9}$ per base pair per replication. (a) Explain how proofreading works at the
+molecular level. (b) Calculate the expected number of errors per replication of the human genome
+($3.2 \times 10^9\;\mathrm{bp}$) with and without proofreading (error rate without proofreading
+$\approx 10^{-5}$). (c) Describe the role of mismatch repair enzymes in correcting errors that
+escape proofreading.
+
+</details>
+
+<details>
+<summary>Problem 3: Quantitative -- Carbohydrate Identification Tests</summary>
+
+A student performs biochemical tests on four unknown solutions (W, X, Y, Z) and records the
+following results: (i) Benedict's test: W = brick-red, X = blue, Y = blue (after acid hydrolysis:
+brick-red), Z = blue; (ii) Iodine test: W = blue-black, X = yellow-brown, Y = orange-brown, Z =
+blue-black; (iii) Biuret test: all negative. Identify the most likely carbohydrate in each solution
+and explain your reasoning.
+
+</details>
+
+<details>
+<summary>Problem 4: Extended Response -- Protein Denaturation</summary>
+
+A biochemist studies the effect of pH on the enzyme pepsin (stomach protease, optimum pH
+$\approx 2.0$) and salivary amylase (optimum pH $\approx 6.8$). (a) Explain why each enzyme has a
+different optimum pH, referring to the role of amino acid R groups in the active site. (b) Predict
+the effect of moving pepsin from pH $2.0$ to pH $7.0$ on its tertiary structure and activity. (c)
+Explain why denaturation by pH change is often reversible, whereas denaturation by high temperature
+is often irreversible.
+
+</details>
+
+<details>
+<summary>Problem 5: Extended Response -- Central Dogma and One Gene-One Polypeptide</summary>
+
+The central dogma of molecular biology states: DNA $\to$ RNA $\to$ Protein. (a) Describe the
+processes of transcription and translation, indicating where each occurs in a eukaryotic cell. (b)
+Evaluate the "one gene -- one polypeptide" hypothesis in light of alternative splicing and
+post-translational modifications. Provide a specific example of how one gene can produce multiple
+protein products. (c) Identify two exceptions to the central dogma (e.g., reverse transcription) and
+name the enzymes involved.
+
+</details>
+
+<details>
+<summary>Problem 6: Data Analysis -- Chargaff's Rules and DNA Composition</summary>
+
+Four DNA samples from different species are analysed for base composition:
+
+| Species | A (%) | T (%) | G (%) | C (%) |
+| ------- | ----- | ----- | ----- | ----- |
+| Human   | 30.4  | 30.1  | 19.6  | 19.9  |
+| E. coli | 24.7  | 23.6  | 26.0  | 25.7  |
+| Wheat   | 27.3  | 27.1  | 22.7  | 22.8  |
+| Sample X| 33.2  | 19.8  | 17.2  | 29.8  |
+
+(a) Verify Chargaff's rules for the first three species. (b) Identify the anomaly in Sample X and
+explain what this suggests about the DNA in this sample. (c) Explain why the GC content varies
+between species and discuss its relevance to DNA melting temperature.
+
+</details>
+
+<details>
+<summary>Problem 7: Extended Response -- Enzyme Inhibition and Drug Design</summary>
+
+Statins are drugs that competitively inhibit HMG-CoA reductase, the rate-limiting enzyme in
+cholesterol biosynthesis. (a) Explain the mechanism of competitive inhibition and predict the effect
+of increasing dietary cholesterol on the efficacy of statins. (b) Describe how structural
+similarities between the statin molecule and the enzyme's natural substrate enable competitive
+inhibition. (c) Explain why statins are typically taken at night, relating this to the diurnal
+rhythm of cholesterol synthesis.
+
+</details>
+
+<details>
+<summary>Problem 8: Quantitative -- Water Properties Calculation</summary>
+
+The specific heat capacity of water is $4.18\;\mathrm{J/(g \cdot ^\circ C)}$. A $75\;\mathrm{kg}$
+runner produces heat at a rate of $1200\;\mathrm{W}$ during exercise. Assuming $80\%$ of this heat
+is removed by sweating (latent heat of vaporisation of water $= 2260\;\mathrm{J/g}$) and the
+remaining $20\%$ is absorbed by body tissues (specific heat capacity of body tissue $\approx$
+$3.5\;\mathrm{J/(g \cdot ^\circ C)}$), calculate: (a) the mass of water evaporated per minute, and
+(b) the rate of body temperature increase if sweating were completely prevented.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Cell division and chromosome structure** --> Review [./cell-biology](./cell-biology)
+- **Enzymes in physiological contexts** --> Review [./human-physiology](./human-physiology)
+- **Genetic inheritance and gene expression** --> Review [./genetics](./genetics)
+- **Plant biochemistry and photosynthesis** --> Review [./plant-biology](./plant-biology)
+- **Evolution and molecular evidence** --> Review [./ecology](./ecology)

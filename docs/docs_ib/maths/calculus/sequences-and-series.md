@@ -377,3 +377,190 @@ The inductive step must genuinely use the inductive hypothesis. Simply proving $
 of $P(k)$ is not a valid induction argument. Always make it explicit where the hypothesis is used.
 
 :::
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Convergence of a Series by Ratio Test**
+
+Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{n!}{10^n}$ converges or diverges.
+
+<details>
+<summary>Solution</summary>
+
+Apply the ratio test:
+
+$$L = \lim_{n \to \infty} \frac{(n+1)! / 10^{n+1}}{n! / 10^n} = \lim_{n \to \infty} \frac{(n+1)! \cdot 10^n}{n! \cdot 10^{n+1}} = \lim_{n \to \infty} \frac{n+1}{10} = \infty$$
+
+Since $L \gt 1$, the series diverges by the ratio test.
+
+</details>
+
+**Worked Example: Maclaurin Series of a Composite Function**
+
+Find the Maclaurin series of $f(x) = e^{-x^2}$ up to the term in $x^6$, and use it to approximate
+$\displaystyle\int_0^{0.5} e^{-x^2}\,dx$.
+
+<details>
+<summary>Solution</summary>
+
+Substitute $-x^2$ into the Maclaurin series for $e^u$:
+
+$$e^{-x^2} = 1 + (-x^2) + \frac{(-x^2)^2}{2!} + \frac{(-x^2)^3}{3!} + \cdots = 1 - x^2 + \frac{x^4}{2} - \frac{x^6}{6} + \cdots$$
+
+Integrate term by term from $0$ to $0.5$:
+
+$$\int_0^{0.5} e^{-x^2}\,dx \approx \int_0^{0.5} \left(1 - x^2 + \frac{x^4}{2} - \frac{x^6}{6}\right)dx$$
+
+$$= \left[x - \frac{x^3}{3} + \frac{x^5}{10} - \frac{x^7}{42}\right]_0^{0.5}$$
+
+$$= 0.5 - \frac{0.125}{3} + \frac{0.03125}{10} - \frac{0.0078125}{42}$$
+
+$$= 0.5 - 0.041667 + 0.003125 - 0.000186 \approx 0.4613$$
+
+The actual value of the error function at $0.5$ gives approximately $0.4613$, confirming the accuracy
+of this approximation.
+
+</details>
+
+**Worked Example: General Binomial Expansion to Find a Coefficient**
+
+Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^{-3}$.
+
+<details>
+<summary>Solution</summary>
+
+$$(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \frac{n(n-1)(n-2)(n-3)}{4!}x^4 + \cdots$$
+
+Here $n = -3$ and we substitute $x \to -2x$:
+
+$$(1 - 2x)^{-3} = 1 + (-3)(-2x) + \frac{(-3)(-4)}{2!}(-2x)^2 + \frac{(-3)(-4)(-5)}{3!}(-2x)^3 + \frac{(-3)(-4)(-5)(-6)}{4!}(-2x)^4 + \cdots$$
+
+The $x^4$ coefficient:
+
+$$\frac{(-3)(-4)(-5)(-6)}{24} \cdot (-2)^4 = \frac{360}{24} \cdot 16 = 15 \cdot 16 = 240$$
+
+So the coefficient of $x^4$ is $240$.
+
+</details>
+
+**Worked Example: Induction Proof Involving Summation**
+
+Prove by induction that $\displaystyle\sum_{k=1}^{n} k \cdot 2^{k-1} = (n - 1) \cdot 2^n + 1$ for all
+$n \in \mathbb{Z}^+$.
+
+<details>
+<summary>Solution</summary>
+
+**Base case** ($n = 1$): LHS $= 1 \cdot 2^0 = 1$. RHS $= (1 - 1) \cdot 2^1 + 1 = 1$. True.
+
+**Inductive hypothesis:** Assume $\displaystyle\sum_{k=1}^{j} k \cdot 2^{k-1} = (j - 1) \cdot 2^j + 1$ for some
+$j \ge 1$.
+
+**Inductive step:**
+
+$$\sum_{k=1}^{j+1} k \cdot 2^{k-1} = \sum_{k=1}^{j} k \cdot 2^{k-1} + (j+1) \cdot 2^j$$
+
+$$= (j - 1) \cdot 2^j + 1 + (j+1) \cdot 2^j \quad \mathrm{(by\ hypothesis)}$$
+
+$$= \bigl[(j-1) + (j+1)\bigr] 2^j + 1 = 2j \cdot 2^j + 1 = j \cdot 2^{j+1} + 1$$
+
+$$= (j + 1 - 1) \cdot 2^{j+1} + 1$$
+
+This is the formula with $n = j + 1$. By induction, the result holds for all $n \in \mathbb{Z}^+$.
+
+</details>
+
+**Worked Example: Taylor Series Error Bound**
+
+Use a second degree Taylor polynomial of $\ln(1 + x)$ about $x = 0$ to approximate $\ln(1.2)$. Bound
+the error.
+
+<details>
+<summary>Solution</summary>
+
+$$f(x) = \ln(1 + x), \quad f'(x) = \frac{1}{1+x}, \quad f''(x) = \frac{-1}{(1+x)^2}, \quad f'''(x) = \frac{2}{(1+x)^3}$$
+
+$$T_2(x) = f(0) + f'(0)x + \frac{f''(0)}{2}x^2 = 0 + x - \frac{x^2}{2}$$
+
+$$T_2(0.2) = 0.2 - \frac{0.04}{2} = 0.2 - 0.02 = 0.18$$
+
+True value: $\ln(1.2) \approx 0.1823$.
+
+For the error bound on $[0, 0.2]$: $|f'''(t)| = \dfrac{2}{(1+t)^3} \le 2$ for $0 \le t \le 0.2$.
+
+$$|R_2(0.2)| \le \frac{2 \cdot (0.2)^3}{6} = \frac{2 \cdot 0.008}{6} \approx 0.00267$$
+
+Actual error: $|0.1823 - 0.18| = 0.0023$, which is within the bound.
+
+</details>
+
+---
+
+## Common Pitfalls
+
+1. **Misidentifying the first term in sigma notation.** $\sum_{k=0}^{n}$ has $n + 1$ terms, while
+   $\sum_{k=1}^{n}$ has $n$ terms. Confusing the starting index leads to off-by-one errors in sums.
+
+2. **Applying the infinite sum formula when $|r| \ge 1$.** The formula $S_{\infty} = \dfrac{a_1}{1 - r}$
+   is valid **only** when $|r| \lt 1$. For $|r| \ge 1$ the series diverges and the formula is
+   meaningless.
+
+3. **Computing the wrong term number.** The $n$-th term of a geometric sequence is
+   $a_1 r^{n-1}$, not $a_1 r^n$. Similarly, the $n$-th term of an arithmetic sequence is
+   $a_1 + (n-1)d$, not $a_1 + nd$.
+
+4. **Using the ratio test when $L = 1$.** The ratio test is inconclusive when $L = 1$. The series
+   $\sum \dfrac{1}{n}$ diverges and $\sum \dfrac{1}{n^2}$ converges, yet both give $L = 1$.
+
+5. **Weak base case in induction.** The base case must match the claim. If the statement starts at
+   $n = 1$, proving it for $n = 0$ is not sufficient unless the domain is specified to include $0$.
+
+6. **Neglecting the alternating sign in the general binomial expansion.** When $n$ is not a positive
+   integer, the series is infinite and the sign of each coefficient depends on the value of $n$.
+   Substituting $x \to ax$ also changes the sign of odd powers when $a \lt 0$.
+
+7. **Confusing the Lagrange remainder with the actual error.** The remainder bound $|R_n(x)| \le
+   \dfrac{M|x-a|^{n+1}}{(n+1)!}$ gives an **upper bound**, not the exact error. The actual error may
+   be much smaller.
+
+8. **Forgetting convergence conditions for Maclaurin series.** Each standard Maclaurin series has a
+   specific radius of convergence. The series for $\ln(1+x)$ only converges for $-1 \lt x \le 1$;
+   using it outside this interval gives incorrect results.
+
+---
+
+## Exam-Style Problems
+
+1. Find the sum of the infinite geometric series $8 - 4 + 2 - 1 + \cdots$ and express the repeating
+   decimal $0.\overline{27}$ as a fraction in lowest terms.
+
+2. Use the ratio test to determine the convergence of $\displaystyle\sum_{n=1}^{\infty} \frac{3^n}{n!}$.
+
+3. Find the coefficient of $x^5$ in the expansion of $(1 + 3x)^{-2}$.
+
+4. Prove by induction that $\displaystyle\sum_{k=1}^{n} \frac{1}{k(k+1)} = \frac{n}{n+1}$ for all
+   $n \in \mathbb{Z}^+$.
+
+5. Find the Maclaurin series of $\dfrac{x}{1 + x^2}$ up to $x^7$ and state the radius of convergence.
+
+6. Use a third degree Maclaurin polynomial of $\cos x$ to approximate $\cos(0.3)$. Bound the error
+   using the Lagrange remainder.
+
+7. An arithmetic sequence has first term $5$ and common difference $3$. A geometric sequence has
+   first term $2$ and common ratio $2$. Find the smallest $n$ for which the $n$-th term of the
+   geometric sequence exceeds the $n$-th term of the arithmetic sequence.
+
+8. Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{\sqrt{n}}$ converges absolutely,
+   converges conditionally, or diverges.
+
+---
+
+## Cross-References
+
+- **Differentiation** is needed to derive Maclaurin and Taylor series: see [Differentiation](/docs/docs_ib/maths/calculus/differentiation)
+- **Integration** connects to term-by-term integration of power series: see [Integration](/docs/docs_ib/maths/calculus/integration)
+- **Differential equations** use series expansions as solution methods: see [Differential Equations](/docs/docs_ib/maths/calculus/differential-equations)
+- **Complex numbers** and Euler's formula underpin many series derivations: see [Complex Numbers](/docs/docs_ib/maths/vectors-and-matrices/complex-numbers)
+- **Proof and reasoning** techniques including induction: see [Proof](/docs/docs_ib/maths/proof-and-reasoning)

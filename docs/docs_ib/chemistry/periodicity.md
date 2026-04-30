@@ -410,3 +410,146 @@ resulting in a very high melting point. The high charges on both ions ($+4$ and 
 particularly large lattice energy.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Determining if an Element is a Transition Metal**
+
+Is scandium a transition metal? Justify using the IB definition.
+
+<details>
+<summary>Solution</summary>
+
+The IB defines a transition metal as an element with a partially filled $d$-subshell in the atom or any common oxidation state. Scandium has the electron configuration $[\mathrm{Ar}]\,3d^1\,4s^2$, so its atom has a partially filled $d$-subshell. However, its only common oxidation state is $\mathrm{Sc}^{3+}$ with configuration $[\mathrm{Ar}]\,3d^0$ — an empty $d$-subshell. Since no common ion of scandium has a partially filled $d$-subshell, scandium is **not** classified as a transition metal under the IB definition.
+
+</details>
+
+**Worked Example: Halogen Displacement Prediction**
+
+Aqueous chlorine is added to a solution containing both potassium bromide and potassium iodide. Deduce what happens, and write the overall ionic equations.
+
+<details>
+<summary>Solution</summary>
+
+Chlorine is more reactive than both bromine and iodine (higher position in Group 17), so it displaces both halide ions:
+
+$$
+\mathrm{Cl}_2(aq) + 2\mathrm{KBr}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{Br}_2(aq)
+$$
+
+$$
+\mathrm{Cl}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{I}_2(aq)
+$$
+
+In ionic form:
+
+$$
+\mathrm{Cl}_2(aq) + 2\mathrm{Br}^-(aq) \to 2\mathrm{Cl}^-(aq) + \mathrm{Br}_2(aq)
+$$
+
+$$
+\mathrm{Cl}_2(aq) + 2\mathrm{I}^-(aq) \to 2\mathrm{Cl}^-(aq) + \mathrm{I}_2(aq)
+$$
+
+Observations: the solution turns orange-brown due to dissolved $\mathrm{Br}_2$ and violet due to $\mathrm{I}_2$. If cyclohexane is added and shaken, $\mathrm{Br}_2$ appears orange in the organic layer and $\mathrm{I}_2$ appears violet.
+
+</details>
+
+**Worked Example: Period 3 Oxide pH Prediction**
+
+Predict the approximate pH of a solution of $\mathrm{Na}_2\mathrm{O}$ dissolved in water, and write the equation for the reaction. Compare this with $\mathrm{P}_4\mathrm{O}_{10}$ dissolved in water.
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{Na}_2\mathrm{O}$ is an ionic, basic oxide. It reacts with water to form sodium hydroxide:
+
+$$
+\mathrm{Na}_2\mathrm{O}(s) + \mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{NaOH}(aq)
+$$
+
+Since $\mathrm{NaOH}$ is a strong base, the solution pH is well above 7 (typically 12--14 depending on concentration).
+
+$\mathrm{P}_4\mathrm{O}_{10}$ is a covalent, acidic oxide. It reacts with water to form phosphoric acid:
+
+$$
+\mathrm{P}_4\mathrm{O}_{10}(s) + 6\mathrm{H}_2\mathrm{O}(l) \to 4\mathrm{H}_3\mathrm{PO}_4(aq)
+$$
+
+Phosphoric acid is a weak acid, giving a pH in the range 1--2 for a moderately concentrated solution. The trend from strongly basic ($\mathrm{Na}_2\mathrm{O}$) to acidic ($\mathrm{P}_4\mathrm{O}_{10}$) across Period 3 reflects the increasing electronegativity and decreasing ionic character of the oxides.
+
+</details>
+
+**Worked Example: Thermal Decomposition Ranking**
+
+Arrange the following in order of increasing thermal decomposition temperature, and explain: $\mathrm{Na}_2\mathrm{CO}_3$, $\mathrm{MgCO}_3$, $\mathrm{CaCO}_3$.
+
+<details>
+<summary>Solution</summary>
+
+Order: $\mathrm{Na}_2\mathrm{CO}_3$ $\lt$ $\mathrm{MgCO}_3$ $\lt$ $\mathrm{CaCO}_3$
+
+The thermal stability of carbonates depends on the polarising power of the cation. $\mathrm{Na}^+$ is a large, singly charged ion with very low charge density — it barely distorts the $\mathrm{CO}_3^{2-}$ ion, so $\mathrm{Na}_2\mathrm{CO}_3$ does not decompose on heating (it melts at $851\degree\mathrm{C}$ without decomposition). $\mathrm{Mg}^{2+}$ has the highest charge density among these three (small radius, $+2$ charge), so it most effectively polarises the carbonate ion and destabilises it, giving the lowest decomposition temperature ($\approx 540\degree\mathrm{C}$). $\mathrm{Ca}^{2+}$ is larger than $\mathrm{Mg}^{2+}$, so it has lower polarising power, making $\mathrm{CaCO}_3$ more thermally stable ($\approx 840\degree\mathrm{C}$).
+
+</details>
+
+**Worked Example: Complex Ion Formation and Colour**
+
+Explain why $\mathrm{CuSO}_4 \cdot 5\mathrm{H}_2\mathrm{O}$ is blue, but anhydrous $\mathrm{CuSO}_4$ is white.
+
+<details>
+<summary>Solution</summary>
+
+The blue colour of hydrated copper(II) sulfate arises from the $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ complex ion. In the octahedral crystal field created by the six water ligands, the $d$-orbitals of the $\mathrm{Cu}^{2+}$ ion ($d^9$ configuration) split into two energy levels. When white light passes through the solution, photons of a specific wavelength (red-orange, $\approx 600$--$700\mathrm{ nm}$) are absorbed to promote electrons from the lower to the upper $d$-orbital set. The transmitted or reflected light is the complementary colour — blue.
+
+In anhydrous $\mathrm{CuSO}_4$, no water ligands are present, so no crystal field splitting occurs and no visible light is absorbed by $d$-$d$ transitions. The compound appears white.
+
+</details>
+
+---
+
+## Common Pitfalls
+
+- **Confusing van der Waals radius with covalent radius:** Noble gas radii are van der Waals radii and are much larger than the covalent radii of halogens in the same period. Do not compare them directly on the same scale.
+
+- **Misidentifying transition metals:** $\mathrm{Sc}$ and $\mathrm{Zn}$ are not transition metals under the IB definition. The criterion is a partially filled $d$-subshell in a common oxidation state, not merely being in the $d$-block.
+
+- **Assuming all Group 2 carbonates decompose easily:** $\mathrm{Na}_2\mathrm{CO}_3$ and $\mathrm{K}_2\mathrm{CO}_3$ are Group 1 carbonates and are thermally stable — they do not decompose on heating. Group 2 carbonates do decompose, with decreasing ease down the group.
+
+- **Forgetting the oxide/peroxide/superoxide trend:** Students often assume all Group 1 metals form normal oxides ($\mathrm{M}_2\mathrm{O}$). In reality, heavier alkali metals form peroxides ($\mathrm{M}_2\mathrm{O}_2$) and superoxides ($\mathrm{MO}_2$) in excess oxygen due to the decreasing charge density of the $\mathrm{M}^+$ ion.
+
+- **Reversing the spectrochemical series:** The spectrochemical series ranks ligands by the magnitude of crystal field splitting ($\Delta$). $\mathrm{CN}^-$ produces a larger $\Delta$ than $\mathrm{H}_2\mathrm{O}$, not the other way around. A larger $\Delta$ means shorter-wavelength (higher-energy) light is absorbed.
+
+- **Saying transition metals are coloured:** The metals themselves are not coloured; it is their **complex ions** that are coloured due to $d$-$d$ transitions. A $d^0$ or $d^{10}$ complex is colourless because there are no partially filled $d$-orbitals to allow such transitions.
+
+---
+
+## Exam-Style Problems
+
+1. **[Medium]** Explain why the first ionization energy of aluminium ($577\mathrm{ kJ/mol}$) is lower than that of magnesium ($738\mathrm{ kJ/mol}$), even though aluminium has a greater nuclear charge.
+
+2. **[Medium]** A student adds aqueous silver nitrate to three separate test tubes containing $\mathrm{NaCl}(aq)$, $\mathrm{NaBr}(aq)$, and $\mathrm{NaI}(aq)$. Describe the observations at each step, including what happens when dilute and concentrated ammonia are subsequently added.
+
+3. **[Hard]** Write balanced equations for the reactions of sulfur dioxide with: (a) water, (b) sodium hydroxide solution (limited and excess), (c) oxygen in the presence of $\mathrm{V}_2\mathrm{O}_5$. State the role of $\mathrm{V}_2\mathrm{O}_5$ in reaction (c).
+
+4. **[Hard]** The chloride of an unknown Period 3 element produces a white smoke when exposed to moist air and dissolves in water to give an acidic solution. Identify the element and justify your answer with reference to Period 3 trends in chlorides.
+
+5. **[Medium]** Explain why the melting point of argon ($84\mathrm{ K}$) is significantly lower than that of chlorine ($172\mathrm{ K}$), despite both being simple molecular substances at low temperatures.
+
+6. **[Hard]** A solution containing $\mathrm{Fe}^{3+}$ ions is pale yellow. When excess $\mathrm{KCN}$ is added, the solution becomes colourless. Account for both observations in terms of crystal field theory and the spectrochemical series.
+
+7. **[Medium]** State and explain the trend in reactivity of Group 17 elements with hydrogen. Include balanced equations for the reactions of fluorine, chlorine, and bromine with hydrogen, noting any conditions required.
+
+8. **[Hard]** EDTA ($\mathrm{C}_{10}\mathrm{H}_{16}\mathrm{N}_2\mathrm{O}_8$) forms a 1:1 complex with $\mathrm{Ca}^{2+}$. Calculate the mass of EDTA required to complex exactly $50.0\mathrm{ mg}$ of $\mathrm{Ca}^{2+}$ ions. ($M_r$ of EDTA $= 292\mathrm{ g/mol}$, $A_r$ of $\mathrm{Ca} = 40.1$)
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Electron configurations and ionization energy** → Review [./atomic-theory](./atomic-theory)
+- **Intermolecular forces and boiling point trends** → Review [./states-of-matter](./states-of-matter)
+- **Acid-base character of oxides** → Review [./acids-bases-advanced](./acids-bases-advanced)
+- **Oxidation states and redox reactions** → Review [./redox-advanced](./redox-advanced)
+- **Bonding and structure (ionic vs covalent)** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)

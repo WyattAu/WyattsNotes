@@ -402,3 +402,211 @@ iron is not oxidised, it does not corrode. The zinc is the "sacrificial anode" a
 replaced.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Determining the Anode and Cathode from Potentials**
+
+Given the following half-reactions and their standard reduction potentials, construct the spontaneous galvanic cell. Write the cell notation, overall equation, and calculate $E_{\mathrm{cell}}^\circ$.
+
+$$
+\mathrm{Sn}^{2+} + 2e^- \to \mathrm{Sn} \qquad E^\circ = -0.14\mathrm{ V}
+$$
+
+$$
+\mathrm{Pb}^{2+} + 2e^- \to \mathrm{Pb} \qquad E^\circ = -0.13\mathrm{ V}
+$$
+
+<details>
+<summary>Solution</summary>
+
+The more positive $E^\circ$ value corresponds to the stronger oxidizing agent (cathode). The more negative $E^\circ$ corresponds to the stronger reducing agent (anode).
+
+- Anode (oxidation): $\mathrm{Sn} \to \mathrm{Sn}^{2+} + 2e^-$ ($E^\circ = -0.14\mathrm{ V}$)
+- Cathode (reduction): $\mathrm{Pb}^{2+} + 2e^- \to \mathrm{Pb}$ ($E^\circ = -0.13\mathrm{ V}$)
+
+Cell notation:
+
+$$
+\mathrm{Sn}(s) \mid \mathrm{Sn}^{2+}(aq) \parallel \mathrm{Pb}^{2+}(aq) \mid \mathrm{Pb}(s)
+$$
+
+Overall equation: $\mathrm{Sn}(s) + \mathrm{Pb}^{2+}(aq) \to \mathrm{Sn}^{2+}(aq) + \mathrm{Pb}(s)$
+
+$$
+E_{\mathrm{cell}}^\circ = E_{\mathrm{cathode}}^\circ - E_{\mathrm{anode}}^\circ = (-0.13) - (-0.14) = +0.01\mathrm{ V}
+$$
+
+The small positive value means the reaction is spontaneous but only marginally so. The equilibrium lies close to the centre.
+
+</details>
+
+**Worked Example: Electrolysis Product Prediction**
+
+Predict the products at each electrode when aqueous $\mathrm{NaBr}$ is electrolysed using inert platinum electrodes. Write half-equations and the overall equation.
+
+<details>
+<summary>Solution</summary>
+
+**Cathode (reduction):** The cations present are $\mathrm{Na}^+$ and $\mathrm{H}^+$ (from water). Since sodium is more reactive than hydrogen ($E^\circ(\mathrm{Na}^+/\mathrm{Na}) = -2.71\mathrm{ V}$, $E^\circ(\mathrm{H}^+/\mathrm{H}_2) = 0.00\mathrm{ V}$), hydrogen is discharged preferentially:
+
+$$
+2\mathrm{H}_2\mathrm{O}(l) + 2e^- \to \mathrm{H}_2(g) + 2\mathrm{OH}^-(aq)
+$$
+
+**Anode (oxidation):** The anions present are $\mathrm{Br}^-$ and $\mathrm{OH}^-$ (from water). Since bromide is a halide (other than fluoride), it is preferentially discharged over hydroxide:
+
+$$
+2\mathrm{Br}^-(aq) \to \mathrm{Br}_2(aq) + 2e^-
+$$
+
+**Overall equation** (combining and balancing):
+
+$$
+2\mathrm{H}_2\mathrm{O}(l) + 2\mathrm{NaBr}(aq) \to \mathrm{H}_2(g) + 2\mathrm{NaOH}(aq) + \mathrm{Br}_2(aq)
+$$
+
+Observation: colourless gas at the cathode ($\mathrm{H}_2$) and an orange-brown solution at the anode ($\mathrm{Br}_2$). The solution near the cathode becomes alkaline due to $\mathrm{OH}^-$ production.
+
+</details>
+
+**Worked Example: Faraday's Law — Time to Deposit a Metal**
+
+How long must a current of $3.50\mathrm{ A}$ be passed through $\mathrm{AgNO}_3$ solution to deposit $0.500\mathrm{ g}$ of silver on the cathode?
+
+<details>
+<summary>Solution</summary>
+
+Reduction half-reaction: $\mathrm{Ag}^+ + e^- \to \mathrm{Ag}$, so $n = 1$.
+
+Molar mass of silver: $M = 107.87\mathrm{ g/mol}$.
+
+$$
+n(\mathrm{Ag}) = \frac{m}{M} = \frac{0.500}{107.87} = 0.00464\mathrm{ mol}
+$$
+
+$$
+Q = n \times n_e \times F = 0.00464 \times 1 \times 96485 = 448\mathrm{ C}
+$$
+
+$$
+t = \frac{Q}{I} = \frac{448}{3.50} = 128\mathrm{ s} \approx 2.13\mathrm{ minutes}
+$$
+
+</details>
+
+**Worked Example: Equilibrium Constant from Cell Potential**
+
+Calculate the equilibrium constant at $298\mathrm{ K}$ for the reaction:
+
+$$
+\mathrm{MnO}_4^-(aq) + 8\mathrm{H}^+(aq) + 5\mathrm{Fe}^{2+}(aq) \to \mathrm{Mn}^{2+}(aq) + 4\mathrm{H}_2\mathrm{O}(l) + 5\mathrm{Fe}^{3+}(aq)
+$$
+
+Given: $E^\circ(\mathrm{MnO}_4^-/\mathrm{Mn}^{2+}) = +1.51\mathrm{ V}$, $E^\circ(\mathrm{Fe}^{3+}/\mathrm{Fe}^{2+}) = +0.77\mathrm{ V}$.
+
+<details>
+<summary>Solution</summary>
+
+Cathode (reduction): $\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$, $E^\circ = +1.51\mathrm{ V}$
+
+Anode (oxidation): $\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$, $E^\circ = +0.77\mathrm{ V}$
+
+$$
+E_{\mathrm{cell}}^\circ = 1.51 - 0.77 = +0.74\mathrm{ V}
+$$
+
+Number of electrons transferred: $n = 5$.
+
+$$
+\log K = \frac{nE^\circ}{0.0592} = \frac{5 \times 0.74}{0.0592} = \frac{3.70}{0.0592} = 62.5
+$$
+
+$$
+K = 10^{62.5}
+$$
+
+This astronomically large $K$ means the reaction proceeds essentially to completion under standard conditions.
+
+</details>
+
+**Worked Example: Non-Standard Conditions with the Nernst Equation**
+
+A voltaic cell consists of a $\mathrm{Zn}$ electrode in $0.50\mathrm{ M}$ $\mathrm{ZnSO}_4$ and a $\mathrm{Cu}$ electrode in $0.10\mathrm{ M}$ $\mathrm{CuSO}_4$ at $298\mathrm{ K}$. Calculate the cell potential.
+
+<details>
+<summary>Solution</summary>
+
+$$
+E_{\mathrm{cell}}^\circ = E_{\mathrm{Cu}^{2+}/\mathrm{Cu}}^\circ - E_{\mathrm{Zn}^{2+}/\mathrm{Zn}}^\circ = 0.34 - (-0.76) = +1.10\mathrm{ V}
+$$
+
+Overall reaction: $\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)$
+
+$$
+Q = \frac{[\mathrm{Zn}^{2+}]}{[\mathrm{Cu}^{2+}]} = \frac{0.50}{0.10} = 5.0
+$$
+
+$$
+E_{\mathrm{cell}} = E_{\mathrm{cell}}^\circ - \frac{0.0592}{n}\log Q = 1.10 - \frac{0.0592}{2}\log(5.0)
+$$
+
+$$
+\log(5.0) = 0.699
+$$
+
+$$
+E_{\mathrm{cell}} = 1.10 - \frac{0.0592}{2} \times 0.699 = 1.10 - 0.0207 = 1.08\mathrm{ V}
+$$
+
+The cell potential is slightly lower than standard because the higher concentration of product ($\mathrm{Zn}^{2+}$) relative to reactant ($\mathrm{Cu}^{2+}$) pushes the reaction slightly back toward equilibrium.
+
+</details>
+
+---
+
+## Common Pitfalls
+
+- **Reversing $E^\circ$ values incorrectly:** When identifying the anode, the half-reaction is written as oxidation, but the $E^\circ$ value used in the $E_{\mathrm{cell}}^\circ$ calculation is always the reduction potential. Never flip the sign of a reduction potential — just subtract $E_{\mathrm{anode}}^\circ$ from $E_{\mathrm{cathode}}^\circ$.
+
+- **Multiplying $E^\circ$ by stoichiometric coefficients:** $E^\circ$ is an intensive property. Doubling the half-reaction $\mathrm{Ag}^+ + e^- \to \mathrm{Ag}$ does not double $E^\circ$ to $+1.60\mathrm{ V}$; it remains $+0.80\mathrm{ V}$. Only $\Delta G^\circ$ scales with stoichiometry.
+
+- **Confusing galvanic and electrolytic cell polarity:** In a galvanic cell the anode is negative; in an electrolytic cell the anode is positive. The mnemonic "anox red cat" (anode = oxidation, cathode = reduction) applies to both, but the polarity flips.
+
+- **Using Faraday constant with wrong units:** $F = 96485\mathrm{ C/mol}$. If current is in milliamperes, convert to amperes first. If time is in minutes, convert to seconds. If mass is in milligrams, convert to grams.
+
+- **Forgetting water as a competitor in aqueous electrolysis:** When electrolysing $\mathrm{NaCl}(aq)$, $\mathrm{H}_2$ is produced at the cathode (not $\mathrm{Na}$), because $\mathrm{Na}^+$ is too reactive. Similarly, when electrolysing $\mathrm{Na}_2\mathrm{SO}_4(aq)$, $\mathrm{O}_2$ is produced at the anode (not from sulfate oxidation).
+
+- **Nernst equation sign errors:** The Nernst equation is $E = E^\circ - (0.0592/n)\log Q$. If you use $\ln$ instead of $\log$, the factor is $RT/nF = 0.0257/n$, not $0.0592/n$. Mixing these up yields a wrong answer.
+
+---
+
+## Exam-Style Problems
+
+1. **[Medium]** Write the cell notation for a galvanic cell in which $\mathrm{Ni}(s)$ is oxidised to $\mathrm{Ni}^{2+}(aq)$ and $\mathrm{Ag}^+(aq)$ is reduced to $\mathrm{Ag}(s)$. Calculate $E_{\mathrm{cell}}^\circ$. ($E^\circ(\mathrm{Ni}^{2+}/\mathrm{Ni}) = -0.25\mathrm{ V}$, $E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\mathrm{ V}$)
+
+2. **[Hard]** A current of $4.00\mathrm{ A}$ is passed through molten $\mathrm{Al}_2\mathrm{O}_3$ for $45.0$ minutes. Calculate: (a) the mass of aluminium produced, (b) the volume of oxygen gas produced at STP ($22.7\mathrm{ L/mol}$). ($M_r(\mathrm{Al}) = 27.0$)
+
+3. **[Medium]** In an $\mathrm{H}_2/\mathrm{O}_2$ fuel cell, the standard cell potential is $+1.23\mathrm{ V}$. Calculate $\Delta G^\circ$ for the overall reaction $2\mathrm{H}_2 + \mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O}(l)$ and comment on the efficiency relative to combusting hydrogen ($\Delta H = -572\mathrm{ kJ/mol}$ for $\mathrm{H}_2$).
+
+4. **[Hard]** A cell is constructed with standard hydrogen electrode and a half-cell containing $\mathrm{Fe}^{3+}$ and $\mathrm{Fe}^{2+}$ at equal concentrations. The measured cell potential is $+0.77\mathrm{ V}$. Write the spontaneous cell reaction and calculate the equilibrium constant.
+
+5. **[Medium]** Explain why, during the electrolysis of concentrated $\mathrm{NaCl}(aq)$, the product at the anode is $\mathrm{Cl}_2$ rather than $\mathrm{O}_2$, even though the standard reduction potential for $\mathrm{O}_2/\mathrm{H}_2\mathrm{O}$ ($+1.23\mathrm{ V}$) is less positive than that of $\mathrm{Cl}_2/\mathrm{Cl}^-$ ($+1.36\mathrm{ V}$).
+
+6. **[Hard]** Using the Nernst equation, calculate the potential of a half-cell consisting of a silver electrode in a solution where $[\mathrm{Ag}^+] = 0.0010\mathrm{ M}$ at $298\mathrm{ K}$. ($E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\mathrm{ V}$)
+
+7. **[Medium]** A student sets up an electrolytic cell to copper-plate a spoon. The spoon is placed at the cathode. Describe the process, including the half-equations, and calculate the time required to deposit a $0.020\mathrm{ mm}$ thick layer of copper over a surface area of $50.0\mathrm{ cm}^2$ using a current of $0.500\mathrm{ A}$. (Density of copper $= 8.96\mathrm{ g/cm}^3$, $M_r(\mathrm{Cu}) = 63.55$)
+
+8. **[Hard]** For the cell $\mathrm{Zn} \mid \mathrm{Zn}^{2+}(1.0\mathrm{ M}) \parallel \mathrm{Fe}^{2+}(0.010\mathrm{ M}) \mid \mathrm{Fe}$, determine: (a) $E_{\mathrm{cell}}^\circ$, (b) $E_{\mathrm{cell}}$ at the given concentrations, (c) $\Delta G$ for the reaction under these non-standard conditions. ($E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\mathrm{ V}$, $E^\circ(\mathrm{Fe}^{2+}/\mathrm{Fe}) = -0.44\mathrm{ V}$)
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Oxidation numbers and balancing redox equations** → Review [./redox](./redox)
+- **Equilibrium and the equilibrium constant** → Review [./equilibrium](./equilibrium)
+- **Thermodynamics and Gibbs free energy** → Review [./thermodynamics](./thermodynamics)
+- **Atomic structure and electron configurations** → Review [./atomic-theory](./atomic-theory)
+- **Acids, bases, and pH** → Review [./acids-bases-advanced](./acids-bases-advanced)

@@ -369,3 +369,263 @@ $(A - 5I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} -1 & 1 \\ 2 & -2 \end{
 **Problem 6:** Area $= |\det(T)| = |6 - 0| = 6$.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Finding the Inverse of a $3 \times 3$ Matrix**
+
+Find the inverse of $A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 & -1 \\ 0 & 1 & 2 \end{pmatrix}$.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Compute $\det(A)$.** Expanding along row 1:
+
+$$\det(A) = 2\begin{vmatrix} 3 & -1 \\ 1 & 2 \end{vmatrix} - 1\begin{vmatrix} 1 & -1 \\ 0 & 2 \end{vmatrix} + 0 = 2(7) - 1(2) = 14 - 2 = 12$$
+
+**Step 2: Compute the cofactor matrix.**
+
+$C_{11} = +\begin{vmatrix} 3 & -1 \\ 1 & 2 \end{vmatrix} = 7$, $C_{12} = -\begin{vmatrix} 1 & -1 \\ 0 & 2 \end{vmatrix} = -2$, $C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
+
+$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$, $C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$, $C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
+
+$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & -1 \end{vmatrix} = -1$, $C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & -1 \end{vmatrix} = 2$, $C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
+
+Cofactor matrix: $\begin{pmatrix} 7 & -2 & 1 \\ -2 & 4 & -2 \\ -1 & 2 & 5 \end{pmatrix}$.
+
+**Step 3: Transpose to get the adjugate.**
+
+$$\mathrm{adj}(A) = \begin{pmatrix} 7 & -2 & -1 \\ -2 & 4 & 2 \\ 1 & -2 & 5 \end{pmatrix}$$
+
+**Step 4: Divide by the determinant.**
+
+$$A^{-1} = \frac{1}{12}\begin{pmatrix} 7 & -2 & -1 \\ -2 & 4 & 2 \\ 1 & -2 & 5 \end{pmatrix}$$
+
+</details>
+
+**Worked Example: Composition of Transformations**
+
+Find the matrix for the transformation that first reflects in the line $y = x$, then rotates $90^\circ$
+anticlockwise about the origin. Verify the result by applying the combined transformation to the point
+$(3, 1)$.
+
+<details>
+<summary>Solution</summary>
+
+Reflection in $y = x$: $R_f = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
+
+Rotation $90^\circ$ anticlockwise: $R_\theta = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.
+
+The combined transformation (reflect first, then rotate) is:
+
+$$T = R_\theta \cdot R_f = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$$
+
+This is a reflection in the $y$-axis.
+
+Verification: $(3, 1)$ reflected in $y = x$ gives $(1, 3)$. Rotating $(1, 3)$ by $90^\circ$
+anticlockwise: $R_\theta\begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} -3 \\ 1 \end{pmatrix}$.
+
+Direct application: $T\begin{pmatrix} 3 \\ 1 \end{pmatrix} = \begin{pmatrix} -3 \\ 1 \end{pmatrix}$. Confirmed.
+
+</details>
+
+**Worked Example: Solving a System Using Gaussian Elimination**
+
+Solve the system using Gaussian elimination:
+
+$$2x + y - z = 3$$
+$$x - y + 2z = 6$$
+$$3x + 2y + z = 1$$
+
+<details>
+<summary>Solution</summary>
+
+Augmented matrix:
+
+$$\begin{pmatrix} 2 & 1 & -1 & | & 3 \\ 1 & -1 & 2 & | & 6 \\ 3 & 2 & 1 & | & 1 \end{pmatrix}$$
+
+$R_1 \leftrightarrow R_2$:
+
+$$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 2 & 1 & -1 & | & 3 \\ 3 & 2 & 1 & | & 1 \end{pmatrix}$$
+
+$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$:
+
+$$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 0 & 3 & -5 & | & -9 \\ 0 & 5 & -5 & | & -17 \end{pmatrix}$$
+
+$R_2 \to R_2/3$:
+
+$$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 0 & 1 & -5/3 & | & -3 \\ 0 & 5 & -5 & | & -17 \end{pmatrix}$$
+
+$R_3 \to R_3 - 5R_2$:
+
+$$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 0 & 1 & -5/3 & | & -3 \\ 0 & 0 & 20/3 & | & -2 \end{pmatrix}$$
+
+Back-substitution: $R_3 \implies z = -2 \cdot \dfrac{3}{20} = -\dfrac{3}{10}$.
+
+$R_2$: $y - \dfrac{5}{3}\!\left(-\dfrac{3}{10}\right) = -3 \implies y + \dfrac{1}{2} = -3 \implies y = -\dfrac{7}{2}$.
+
+$R_1$: $x - \left(-\dfrac{7}{2}\right) + 2\!\left(-\dfrac{3}{10}\right) = 6 \implies x + \dfrac{7}{2} - \dfrac{3}{5} = 6 \implies x = 6 - \dfrac{29}{10} = \dfrac{31}{10}$.
+
+Solution: $x = \dfrac{31}{10}$, $y = -\dfrac{7}{2}$, $z = -\dfrac{3}{10}$.
+
+</details>
+
+**Worked Example: Diagonalisation and Large Powers**
+
+For $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$, find $A^5$ using diagonalisation.
+
+<details>
+<summary>Solution</summary>
+
+The matrix is already upper triangular, so eigenvalues are $\lambda_1 = 3$ and $\lambda_2 = 2$.
+
+For $\lambda_1 = 3$: $(A - 3I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 0 & 1 \\ 0 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+
+For $\lambda_2 = 2$: $(A - 2I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+
+$P = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$, $D = \begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$.
+
+$P^{-1} = \dfrac{1}{-1}\begin{pmatrix} -1 & -1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$.
+
+$A^5 = PD^5P^{-1} = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}\begin{pmatrix} 243 & 0 \\ 0 & 32 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$
+
+$= \begin{pmatrix} 243 & 32 \\ 0 & -32 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix} = \begin{pmatrix} 243 & 211 \\ 0 & 32 \end{pmatrix}$.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Inverse of a product order.** $(AB)^{-1} = B^{-1}A^{-1}$, not $A^{-1}B^{-1}$. The order reverses,
+  just as with the transpose.
+
+- **Gaussian elimination arithmetic errors.** A single arithmetic mistake in row operations propagates
+  through all subsequent steps. Always verify the solution by substituting back into the original
+  equations.
+
+- **Misidentifying eigenvectors.** For each eigenvalue, solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$.
+  Substituting the eigenvalue into the original matrix $A$ instead of $A - \lambda I$ is a common error.
+
+- **Transformation composition order.** The matrix $BA$ represents "apply $A$ first, then $B$." Writing
+  $AB$ when $B$ should be applied first is the single most common transformation error.
+
+- **Determinant and area relationship for reflections.** A reflection matrix has $\det(T) = -1$. The
+  area scale factor is $|\det(T)| = 1$, but the negative sign indicates orientation reversal. The area
+  is always positive; the sign encodes geometric information.
+
+---
+
+## Exam-Style Problems
+
+<details>
+<summary>Problem 9</summary>
+
+Given $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and $B = \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix}$,
+verify that $(AB)^{-1} = B^{-1}A^{-1}$.
+
+</details>
+
+<details>
+<summary>Problem 10</summary>
+
+Find the invariant points and invariant lines of the transformation represented by
+$T = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$.
+
+</details>
+
+<details>
+<summary>Problem 11</summary>
+
+The matrix $A = \begin{pmatrix} 1 & 0 & 2 \\ 0 & 1 & -1 \\ 0 & 0 & 1 \end{pmatrix}$ represents a
+transformation in 3D. Describe the geometric effect of $A$ and find $A^n$ for any positive integer $n$.
+
+</details>
+
+<details>
+<summary>Problem 12</summary>
+
+Use Cramer's rule to solve: $3x + 2y - z = 4$, $x - y + 3z = 5$, $2x + y + z = 3$.
+
+</details>
+
+<details>
+<summary>Problem 13</summary>
+
+The transformation $T$ consists of an enlargement by factor $2$ followed by a rotation of $45^\circ$
+anticlockwise. Find the matrix $T$ and the area scale factor.
+
+</details>
+
+<details>
+<summary>Problem 14</summary>
+
+For $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$, find the eigenvalues and eigenvectors. Verify
+that the eigenvectors are orthogonal and diagonalise $A$.
+
+</details>
+
+<details>
+<summary>Problem 15</summary>
+
+Determine all values of $k$ for which the system has (a) a unique solution, (b) no solution,
+(c) infinitely many solutions:
+
+$$x + 2y + kz = 1$$
+$$2x + ky + 2z = 2$$
+$$kx + 2y + z = 3$$
+
+</details>
+
+<details>
+<summary>Answers to Additional Problems</summary>
+
+**Problem 9:** $AB = \begin{pmatrix} 2 & 3 \\ 4 & 5 \end{pmatrix}$, $\det(AB) = 10 - 12 = -2$.
+$(AB)^{-1} = \dfrac{1}{-2}\begin{pmatrix} 5 & -3 \\ -4 & 2 \end{pmatrix} = \begin{pmatrix} -5/2 & 3/2 \\ 2 & -1 \end{pmatrix}$.
+$A^{-1} = \dfrac{1}{-2}\begin{pmatrix} 4 & -2 \\ -3 & 1 \end{pmatrix} = \begin{pmatrix} -2 & 1 \\ 3/2 & -1/2 \end{pmatrix}$.
+$B^{-1} = \dfrac{1}{1}\begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix}$.
+$B^{-1}A^{-1} = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix}\begin{pmatrix} -2 & 1 \\ 3/2 & -1/2 \end{pmatrix} = \begin{pmatrix} -5/2 & 3/2 \\ 2 & -1 \end{pmatrix}$.
+Verified: $(AB)^{-1} = B^{-1}A^{-1}$.
+
+**Problem 10:** Invariant points: $(T - I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 2x + y = 0$ and $y = 0$, so $x = 0$, $y = 0$. Only the origin is invariant. For invariant lines $y = mx + c$: $T\begin{pmatrix} x \\ mx + c \end{pmatrix}$ must lie on $y = mx + c$. This gives conditions leading to the invariant line $y = 0$ (the $x$-axis is mapped to itself).
+
+**Problem 11:** $A$ is an upper triangular matrix with $1$s on the diagonal. This represents a shear
+transformation. For any $n$, $A^n = \begin{pmatrix} 1 & 0 & 2n \\ 0 & 1 & -n \\ 0 & 0 & 1 \end{pmatrix}$, which
+can be verified by induction.
+
+**Problem 12:** $\det(A) = 3(-1 - 3) - 2(1 - 6) + (-1)(1 - (-2k)) = -12 + 10 - 1 + 2k = 2k - 3$.
+$A_x = \begin{pmatrix} 4 & 2 & -1 \\ 5 & -1 & 3 \\ 3 & 1 & 1 \end{pmatrix}$, $\det(A_x) = 4(-1-3) - 2(5-9) + (-1)(5+3) = -16 + 8 - 8 = -16$.
+$A_y = \begin{pmatrix} 3 & 4 & -1 \\ 1 & 5 & 3 \\ 2 & 3 & 1 \end{pmatrix}$, $\det(A_y) = 3(5-9) - 4(1-6) + (-1)(3-10) = -12 + 20 + 7 = 15$.
+$A_z = \begin{pmatrix} 3 & 2 & 4 \\ 1 & -1 & 5 \\ 2 & 1 & 3 \end{pmatrix}$, $\det(A_z) = 3(-3-5) - 2(3-10) + 4(1+2) = -24 + 14 + 12 = 2$.
+$x = -16/(2k-3)$, $y = 15/(2k-3)$, $z = 2/(2k-3)$.
+
+**Problem 13:** Enlargement by $2$: $E = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}$.
+Rotation by $45^\circ$: $R = \begin{pmatrix} \cos 45^\circ & -\sin 45^\circ \\ \sin 45^\circ & \cos 45^\circ \end{pmatrix} = \dfrac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$.
+$T = R \cdot E = \dfrac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} = \dfrac{2}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix} = \sqrt{2}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$.
+Area scale factor $= |\det(T)| = |2 - (-2)| = 4$.
+
+**Problem 14:** Characteristic equation: $\lambda^2 - 4\lambda + 3 = 0 \implies \lambda = 1$ or $\lambda = 3$.
+For $\lambda = 1$: $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+For $\lambda = 3$: $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+Orthogonality check: $\mathbf{v}_1 \cdot \mathbf{v}_2 = 1 - 1 = 0$. Confirmed.
+$A = PDP^{-1}$ where $P = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$, $D = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
+
+**Problem 15:** $\det(A) = 1(k - 4) - 2(2 - 2k) + k(4 - k^2) = k - 4 - 4 + 4k + 4k - k^3 = -k^3 + 9k - 8$.
+Factor: $-k^3 + 9k - 8 = -(k-1)(k^2 + k - 8)$. The discriminant of $k^2 + k - 8$ is $1 + 32 = 33$.
+(a) Unique solution when $\det(A) \ne 0$: $k \ne 1$ and $k \ne \dfrac{-1 \pm \sqrt{33}}{2}$.
+(b) No solution when $\det(A) = 0$ and the system is inconsistent.
+(c) Infinitely many solutions when $\det(A) = 0$ and the system is consistent.
+
+</details>
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Solving simultaneous equations** → Review [./matrices](./matrices) (sections on Solving Systems and Cramer's Rule)
+- **Trigonometry for rotation matrices** → Review geometry and trigonometry topics
+- **Algebraic manipulation and factorisation** → Review algebra fundamentals
+- **Vectors and linear independence** → Review [./vectors](./vectors) for related concepts
+- **Determinants and their geometric meaning** → Review [./matrices](./matrices) (section on Determinants and Area)

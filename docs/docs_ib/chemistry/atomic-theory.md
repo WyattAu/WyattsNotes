@@ -472,3 +472,252 @@ $Z = 25$). The ion $\mathrm{Mn}^{2+}$ has five unpaired $d$-electrons (all in se
 following Hund's rule), so it is strongly paramagnetic.
 
 </details>
+
+---
+
+## Worked Examples
+
+**Worked Example: Full electron configuration and quantum numbers**
+
+Write the full electron configuration of vanadium ($\mathrm{V}$, $Z = 23$). State the four quantum
+numbers for each of the five valence electrons.
+
+<details>
+<summary>Solution</summary>
+
+Full configuration: $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^3$
+
+Noble gas notation: $[\mathrm{Ar}]\, 4s^2\, 3d^3$
+
+Valence electrons: $4s^2\, 3d^3$ (5 valence electrons in total).
+
+Quantum numbers:
+
+$4s$ electrons (same orbital, opposite spins):
+- $(n=4,\ l=0,\ m_l=0,\ m_s=+\tfrac{1}{2})$
+- $(n=4,\ l=0,\ m_l=0,\ m_s=-\tfrac{1}{2})$
+
+$3d$ electrons (by Hund's rule, each occupies a separate orbital with parallel spin):
+- $(n=3,\ l=2,\ m_l=-2,\ m_s=+\tfrac{1}{2})$
+- $(n=3,\ l=2,\ m_l=-1,\ m_s=+\tfrac{1}{2})$
+- $(n=3,\ l=2,\ m_l=0,\ m_s=+\tfrac{1}{2})$
+
+All five electrons have different sets of quantum numbers, consistent with the Pauli exclusion
+principle. The three $3d$ electrons have parallel spins, maximising exchange energy (Hund's rule).
+
+</details>
+
+**Worked Example: Identifying an element from successive ionization energies**
+
+The first five ionization energies of an element are (in $\mathrm{kJ/mol}$): $578$, $1817$, $2745$,
+$11577$, $14842$. Identify the element and justify your reasoning.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Locate the large jump.**
+
+The jump between $IE_3$ ($2745\mathrm{ kJ/mol}$) and $IE_4$ ($11577\mathrm{ kJ/mol}$) is
+approximately a factor of 4. This is the largest discontinuity in the series.
+
+**Step 2: Interpret the jump.**
+
+A large jump indicates that the $n$-th electron is being removed from a new, inner shell. The jump
+from $IE_3$ to $IE_4$ means the first three electrons are valence electrons and the fourth is from
+an inner shell. This corresponds to a Group 13 element.
+
+**Step 3: Identify the element.**
+
+$IE_1 = 578\mathrm{ kJ/mol}$ matches aluminium ($\mathrm{Al}$, $Z = 13$, configuration
+$[\mathrm{Ne}]\, 3s^2\, 3p^1$).
+
+**Step 4: Verify.**
+
+$IE_1$ removes a $3p$ electron. $IE_2$ removes a $3s$ electron. $IE_3$ removes the second $3s$
+electron. $IE_4$ would remove a $2p$ electron from the $n = 2$ shell, which is much closer to the
+nucleus with far greater $Z_{\mathrm{eff}}$.
+
+</details>
+
+**Worked Example: Slater's rules and the nitrogen--oxygen anomaly**
+
+Calculate $Z_{\mathrm{eff}}$ for a $2p$ electron in nitrogen ($Z = 7$) and oxygen ($Z = 8$). Use
+the results to explain why $IE_1(\mathrm{N}) = 1402\mathrm{ kJ/mol}$ is higher than
+$IE_1(\mathrm{O}) = 1314\mathrm{ kJ/mol}$ despite oxygen having a greater nuclear charge.
+
+<details>
+<summary>Solution</summary>
+
+**Nitrogen:** configuration $(1s)^2(2s, 2p)^5$
+
+For a $2p$ electron:
+- Same group: $4$ other electrons $\times 0.35 = 1.40$
+- $n - 1$ shell: $(1s)^2 \times 1.00 = 2.00$
+- $S = 1.40 + 2.00 = 3.40$
+- $Z_{\mathrm{eff}} = 7 - 3.40 = 3.60$
+
+**Oxygen:** configuration $(1s)^2(2s, 2p)^6$
+
+For a $2p$ electron:
+- Same group: $5$ other electrons $\times 0.35 = 1.75$
+- $n - 1$ shell: $(1s)^2 \times 1.00 = 2.00$
+- $S = 1.75 + 2.00 = 3.75$
+- $Z_{\mathrm{eff}} = 8 - 3.75 = 4.25$
+
+**Analysis:** Slater's rules predict $Z_{\mathrm{eff}}(\mathrm{O}) > Z_{\mathrm{eff}}(\mathrm{N})$,
+which alone would suggest higher $IE$ for oxygen. The observed anomaly arises from two factors
+Slater's rules do not fully capture:
+
+1. Nitrogen has a half-filled $2p^3$ subshell with maximum exchange energy (three parallel spins),
+   giving extra stability.
+2. In oxygen ($2p^4$), the first electron removed comes from a paired orbital, where
+   electron-electron repulsion partially offsets the greater $Z_{\mathrm{eff}}$.
+
+This is a classic example where a simple electrostatic model (Slater's rules) does not fully
+reproduce the observed trend, and quantum mechanical exchange effects must be invoked.
+
+</details>
+
+**Worked Example: Photon energy from electron transitions in hydrogen**
+
+An electron in a hydrogen atom transitions from $n = 4$ to $n = 2$. Calculate the energy,
+frequency, and wavelength of the emitted photon, and identify the spectral series.
+
+<details>
+<summary>Solution</summary>
+
+$$E_n = -\frac{2.18 \times 10^{-18}\mathrm{ J}}{n^2}$$
+
+$$E_4 = -\frac{2.18 \times 10^{-18}}{16} = -1.3625 \times 10^{-19}\mathrm{ J}$$
+
+$$E_2 = -\frac{2.18 \times 10^{-18}}{4} = -5.45 \times 10^{-19}\mathrm{ J}$$
+
+$$\Delta E = E_4 - E_2 = (-1.3625 \times 10^{-19}) - (-5.45 \times 10^{-19}) = 4.0875 \times 10^{-19}\mathrm{ J}$$
+
+The negative sign of $\Delta E$ confirms energy is released (photon emitted).
+
+$$\nu = \frac{\Delta E}{h} = \frac{4.0875 \times 10^{-19}}{6.626 \times 10^{-34}} = 6.17 \times 10^{14}\mathrm{ Hz}$$
+
+$$\lambda = \frac{c}{\nu} = \frac{3.00 \times 10^8}{6.17 \times 10^{14}} = 4.86 \times 10^{-7}\mathrm{ m} = 486\mathrm{ nm}$$
+
+This wavelength (486 nm) is in the visible region (blue-green). The transition terminates at $n = 2$,
+placing it in the **Balmer series**.
+
+</details>
+
+**Worked Example: Transition metal ion configuration and magnetism**
+
+Write the electron configuration of $\mathrm{Co}^{2+}$ ($Z = 27$). Determine the number of unpaired
+electrons and state whether the ion is paramagnetic or diamagnetic.
+
+<details>
+<summary>Solution</summary>
+
+**Neutral cobalt:** $[\mathrm{Ar}]\, 4s^2\, 3d^7$
+
+**Forming $\mathrm{Co}^{2+}$:** Remove the $4s$ electrons first (they are at higher energy once the
+$3d$ subshell is occupied).
+
+$$\mathrm{Co}^{2+}: [\mathrm{Ar}]\, 3d^7$$
+
+**Orbital diagram for $3d^7$:**
+
+The seven $3d$ electrons fill as follows (by Hund's rule):
+- Three electrons in three separate orbitals (all spin-up): $\uparrow\ \uparrow\ \uparrow$
+- Two electrons pair in the remaining two orbitals: $\uparrow\downarrow\ \uparrow\downarrow$
+- One more electron in the last orbital: $\uparrow$
+
+Arrangement: $(\uparrow\downarrow)(\uparrow\downarrow)(\uparrow)(\uparrow)(\uparrow)$
+
+Number of unpaired electrons: 3
+
+$\mathrm{Co}^{2+}$ is **paramagnetic** with three unpaired electrons.
+
+</details>
+
+---
+
+## Common Pitfalls
+
+- **Writing electron configurations in the wrong order**: The filling order (Aufbau) differs from the
+  writing order for transition metals. $4s$ fills before $3d$, but in the written configuration
+  $3d$ is listed before $4s$ for neutral atoms: $[\mathrm{Ar}]\, 3d^x\, 4s^y$.
+
+- **Removing the wrong electrons when forming cations**: Transition metal ions lose $4s$ electrons
+  before $3d$ electrons, despite $4s$ filling first. $\mathrm{Fe}$ is $[\mathrm{Ar}]\, 4s^2\, 3d^6$,
+  but $\mathrm{Fe}^{2+}$ is $[\mathrm{Ar}]\, 3d^6$, not $[\mathrm{Ar}]\, 4s^2\, 3d^4$.
+
+- **Confusing penetration with shielding**: Penetration describes how close an electron can approach
+  the nucleus ($s \gt p \gt d \gt f$). Shielding describes how other electrons reduce the effective
+  nuclear charge felt by a given electron. They are related but distinct concepts.
+
+- **Misapplying the Aufbau principle to ions**: The filling order applies to neutral atoms. For ions,
+  write the neutral atom configuration first, then remove or add electrons. Do not attempt to
+  re-apply the $n + l$ rule to the ion directly.
+
+- **Assuming all electrons in a subshell are equivalent for ionization**: Within a $p$-subshell, the
+  first electron removed comes from a paired orbital (if one exists), which requires less energy than
+  removing from a half-filled subshell. This explains the Group 15--16 dip in ionization energy.
+
+- **Over-interpreting Slater's rules**: Slater's rules are a simplified approximation. They do not
+  account for exchange energy, orbital shape effects, or the differences between $s$ and $p$ electrons
+  in the same shell. Use them for qualitative trends, not precise predictions.
+
+- **Forgetting that $d$-block elements have variable valence**: Transition metals can lose different
+  numbers of $d$-electrons depending on the compound. $\mathrm{Mn}$ can form $\mathrm{Mn}^{2+}$
+  ($3d^5$) or $\mathrm{Mn}^{4+}$ ($3d^3$), among others.
+
+- **Misidentifying the last electron added**: The last electron added to $\mathrm{Cr}$ goes into the
+  $3d$ subshell (giving $3d^5$), not the $4s$. The last electron added to $\mathrm{Cu}$ goes into
+  the $3d$ subshell (giving $3d^{10}$). The exceptions exist to achieve half-filled or fully-filled
+  $d$-subshells.
+
+---
+
+## Exam-Style Problems
+
+1. Write the electron configuration of $\mathrm{Fe}^{3+}$ ($Z = 26$). Determine the number of unpaired
+   electrons and state whether the ion is paramagnetic or diamagnetic. Explain why $\mathrm{Fe}^{3+}$ is
+   more stable than $\mathrm{Fe}^{2+}$ in many compounds. **[Medium]**
+
+2. The first five ionization energies of an element are: $IE_1 = 1090$, $IE_2 = 2353$,
+   $IE_3 = 4621$, $IE_4 = 6223$, $IE_5 = 37831\mathrm{ kJ/mol}$. (a) Identify the element. (b) Write
+   the equation for the process corresponding to $IE_5$. (c) Explain the large jump between $IE_4$
+   and $IE_5$. **[Medium]**
+
+3. Use Slater's rules to calculate $Z_{\mathrm{eff}}$ for a $3p$ electron in sulfur ($Z = 16$) and a
+   $3p$ electron in phosphorus ($Z = 15$). Use the results to explain the increase in first ionization
+   energy from phosphorus to sulfur across Period 3. **[Hard]**
+
+4. An electron in a $\mathrm{He}^+$ ion ($Z = 2$) transitions from $n = 3$ to $n = 1$. (a) Calculate
+   the energy, frequency, and wavelength of the emitted photon. (b) Compare the energy with the same
+   transition in hydrogen. (c) In what region of the electromagnetic spectrum does this photon lie?
+   **[Medium]**
+
+5. Explain why chromium has the electron configuration $[\mathrm{Ar}]\, 3d^5\, 4s^1$ rather than the
+   expected $[\mathrm{Ar}]\, 4s^2\, 3d^4$. Reference exchange energy and subshell stability in your
+   explanation. Why does this exception not extend to elements beyond copper? **[Medium]**
+
+6. The first four ionization energies of an element are: $738$, $1451$, $7733$, $10541\mathrm{ kJ/mol}$.
+   (a) Identify the element. (b) Write the equation for the process corresponding to $IE_3$. (c)
+   Explain why $IE_3$ is so much larger than $IE_2$. (d) Would you expect this element to form a $+2$
+   or $+3$ ion more readily? Justify. **[Easy]**
+
+7. Calculate the de Broglie wavelength of an electron traveling at $2.0 \times 10^6\mathrm{ m/s}$.
+   ($h = 6.626 \times 10^{-34}\mathrm{ J \cdot s}$, $m_e = 9.109 \times 10^{-31}\mathrm{ kg}$). Is
+   this wavelength consistent with wave-like behavior on the atomic scale (comparable to bond lengths
+   of $\sim 100\mathrm{ pm}$)? **[Medium]**
+
+8. State whether each of the following sets of quantum numbers is permitted or not permitted. If not
+   permitted, explain why. (a) $n=2$, $l=2$, $m_l=0$, $m_s=+\tfrac{1}{2}$ (b) $n=3$, $l=1$,
+   $m_l=-1$, $m_s=0$ (c) $n=4$, $l=3$, $m_l=-3$, $m_s=-\tfrac{1}{2}$ (d) $n=1$, $l=0$, $m_l=1$,
+   $m_s=+\tfrac{1}{2}$ **[Easy]**
+
+---
+
+## If You Get These Wrong, Revise:
+
+- **Chemical bonding and VSEPR geometry** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
+- **Periodic trends (IE, EN, atomic radius)** → Review [./periodicity](./periodicity)
+- **Spectroscopy and energy level calculations** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
+- **Redox half-equations and oxidation states** → Review [./redox-advanced](./redox-advanced)

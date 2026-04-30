@@ -328,3 +328,235 @@ $(3\mathrm{M}, 3\mathrm{W})$: $\binom{7}{3}\binom{5}{3} = 35 \times 10 = 350$.
 Total: $350 + 350 = 700$.
 
 </details>
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 10: Arrangements with repeated letters**
+
+How many distinct arrangements of the letters in "MATHEMATICS"?
+
+<details>
+<summary>Solution</summary>
+
+Total letters: $11$. Counts: M($2$), A($2$), T($2$), H($1$), E($1$), I($1$), C($1$), S($1$).
+
+$$\frac{11!}{2! \cdot 2! \cdot 2!} = \frac{39916800}{8} = 4989600$$
+
+</details>
+
+**Worked Example 11: Couple seating arrangements**
+
+In how many ways can 4 married couples sit in a row of 8 seats if each couple must sit together?
+
+<details>
+<summary>Solution</summary>
+
+Treat each couple as a single unit. We have 4 units to arrange: $4! = 24$ ways.
+
+Each couple can swap seats internally: $2^4 = 16$ ways.
+
+$$24 \times 16 = 384$$
+
+</details>
+
+**Worked Example 12: Distributing identical objects (stars and bars)**
+
+In how many ways can 12 identical balls be distributed into 5 distinct boxes (boxes may be empty)?
+
+<details>
+<summary>Solution</summary>
+
+This is a stars-and-bars problem: we need the number of non-negative integer solutions to $x_1 + x_2 + x_3 + x_4 + x_5 = 12$.
+
+$$\binom{12 + 5 - 1}{5 - 1} = \binom{16}{4} = \frac{16 \times 15 \times 14 \times 13}{4 \times 3 \times 2 \times 1} = 1820$$
+
+</details>
+
+**Worked Example 13: Password with digit constraint**
+
+A password consists of 4 distinct characters chosen from $\{A, B, C, D, E, 1, 2, 3\}$. How many passwords contain at least one digit?
+
+<details>
+<summary>Solution</summary>
+
+Total passwords (no repetition): $P_4^8 = \dfrac{8!}{4!} = 1680$.
+
+Passwords with no digits (all letters from 5 letters): $P_4^5 = \dfrac{5!}{1!} = 120$.
+
+$$1680 - 120 = 1560$$
+
+**Direct counting verification:**
+
+| Digits | Letters | Ways |
+|---|---|---|
+| 1 | 3 | $\binom{3}{1}\binom{5}{3} \cdot 4! = 3 \times 10 \times 24 = 720$ |
+| 2 | 2 | $\binom{3}{2}\binom{5}{2} \cdot 4! = 3 \times 10 \times 24 = 720$ |
+| 3 | 1 | $\binom{3}{3}\binom{5}{1} \cdot 4! = 1 \times 5 \times 24 = 120$ |
+
+Total: $720 + 720 + 120 = 1560$. Correct.
+
+</details>
+
+**Worked Example 14: Constant term in a binomial expansion**
+
+Find the constant term in the expansion of $\left(x^2 + \dfrac{2}{x}\right)^6$.
+
+<details>
+<summary>Solution</summary>
+
+General term: $\binom{6}{k}(x^2)^{6-k}\!\left(\dfrac{2}{x}\right)^k = \binom{6}{k} \cdot 2^k \cdot x^{12-2k-k} = \binom{6}{k} \cdot 2^k \cdot x^{12-3k}$.
+
+For the constant term: $12 - 3k = 0 \implies k = 4$.
+
+$$\binom{6}{4} \cdot 2^4 = 15 \times 16 = 240$$
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+1. **Order matters vs. does not matter.** "Arranging" implies permutations (order matters). "Selecting" or "choosing" implies combinations (order does not matter). When in doubt, ask whether swapping two elements produces a different outcome.
+
+2. **Overcounting in selection problems.** When forming teams from distinct groups, multiply the number of ways from each group. Do not simply use $\binom{n}{r}$ on the combined pool, which ignores group structure.
+
+3. **Circular permutation exceptions.** If a circle has a fixed reference point (e.g., a specific seat for a host), the arrangement count changes. With $n$ people and one fixed seat, the remaining $n-1$ people are arranged linearly in $(n-1)!$ ways.
+
+4. **Stars and bars conditions.** $\binom{n+k-1}{k-1}$ counts non-negative integer solutions. For strictly positive solutions (at least one per box), substitute $y_i = x_i - 1$ to get $\binom{n-1}{k-1}$.
+
+5. **Binomial theorem sign errors.** In $(a - b)^n$, the general term is $(-1)^k \binom{n}{k} a^{n-k} b^k$. The alternating sign $(-1)^k$ is frequently forgotten.
+
+6. **Division into equal indistinguishable groups.** When dividing $2n$ people into two teams of $n$, the answer is $\dfrac{1}{2}\binom{2n}{n}$, not $\binom{2n}{n}$, since the two teams are not labelled.
+
+7. **Double-counting in circular arrangements with identical objects.** In circular permutations with repeated items, apply both the circular correction ($(n-1)!$) and the identical-objects correction (dividing by factorials of counts).
+
+8. **Confusing $P_r^n$ notation with $C_r^n$.** Always verify whether the problem requires ordered or unordered selection before choosing the formula. A safe check: if the problem asks "how many ways to arrange" use $P$; if it asks "how many ways to choose" use $C$.
+
+---
+
+## Exam-Style Problems
+
+**Problem 1.** A debating team of 4 is to be selected from 6 boys and 5 girls. The team must include at least 1 boy and at least 1 girl. In how many ways can this be done?
+
+<details>
+<summary>Solution</summary>
+
+Total teams of 4 from 11 people: $\binom{11}{4} = 330$.
+
+All-boy teams: $\binom{6}{4} = 15$. All-girl teams: $\binom{5}{4} = 5$.
+
+$$330 - 15 - 5 = 310$$
+
+</details>
+
+**Problem 2.** How many 5-digit numbers greater than $40000$ can be formed from $\{1, 2, 3, 4, 5, 6, 7\}$ if no digit is repeated?
+
+<details>
+<summary>Solution</summary>
+
+The first digit must be $4$, $5$, $6$, or $7$: $4$ choices.
+
+The remaining 4 positions are filled from the remaining $6$ digits without repetition: $P_4^6 = \dfrac{6!}{2!} = 360$.
+
+$$4 \times 360 = 1440$$
+
+</details>
+
+**Problem 3.** Find the coefficient of $x^5$ in the expansion of $(1 - 2x)^8$.
+
+<details>
+<summary>Solution</summary>
+
+General term: $\binom{8}{k}(-2x)^k = (-1)^k \cdot 2^k \cdot \binom{8}{k} \cdot x^k$.
+
+For $x^5$: $k = 5$.
+
+$$(-1)^5 \cdot 2^5 \cdot \binom{8}{5} = -32 \times 56 = -1792$$
+
+</details>
+
+**Problem 4.** In how many ways can 3 boys and 3 girls sit around a circular table if no two boys sit next to each other?
+
+<details>
+<summary>Solution</summary>
+
+First, seat the 3 girls around the circular table: $(3-1)! = 2! = 2$ ways.
+
+This creates $3$ gaps between the girls. Place the $3$ boys into these $3$ gaps: $3! = 6$ ways.
+
+$$2 \times 6 = 12$$
+
+</details>
+
+**Problem 5.** A shelf holds 6 different maths books and 4 different physics books. In how many ways can the books be arranged if all books of the same subject must stay together?
+
+<details>
+<summary>Solution</summary>
+
+Treat each subject group as a block: $2$ blocks, arranged in $2! = 2$ ways.
+
+Within the maths block: $6! = 720$ ways.
+
+Within the physics block: $4! = 24$ ways.
+
+$$2 \times 720 \times 24 = 34560$$
+
+</details>
+
+**Problem 6.** Find the number of ways to place 8 distinguishable balls into 3 distinguishable boxes such that no box is empty.
+
+<details>
+<summary>Solution</summary>
+
+Use inclusion-exclusion.
+
+Total placements: $3^8 = 6561$.
+
+Placements with at least one box empty:
+
+- Exactly 1 specific box empty: $2^8 = 256$. For $3$ boxes: $3 \times 256 = 768$.
+- Exactly 2 specific boxes empty: $1^8 = 1$. For $\binom{3}{2} = 3$ pairs: $3 \times 1 = 3$.
+
+$$6561 - 768 + 3 = 5796$$
+
+</details>
+
+**Problem 7.** How many ways can 6 people be divided into 3 groups of 2?
+
+<details>
+<summary>Solution</summary>
+
+Choose 2 from 6: $\binom{6}{2} = 15$. Choose 2 from remaining 4: $\binom{4}{2} = 6$. The last 2 are fixed: $\binom{2}{2} = 1$.
+
+Since the 3 groups are indistinguishable (no labelling), divide by $3!$:
+
+$$\frac{15 \times 6 \times 1}{6} = 15$$
+
+Alternatively: $\dfrac{6!}{2^3 \cdot 3!} = \dfrac{720}{48} = 15$. Correct.
+
+</details>
+
+**Problem 8.** How many distinct arrangements of the letters in "SUCCESS" have the two C's separated?
+
+<details>
+<summary>Solution</summary>
+
+Total arrangements of "SUCCESS": $\dfrac{7!}{3! \cdot 2!} = \dfrac{5040}{12} = 420$.
+
+Arrangements with the two C's adjacent: treat "CC" as one unit. We have 6 units: S($3$), "CC"($1$), U($1$), E($1$).
+
+$$\frac{6!}{3!} = \frac{720}{6} = 120$$
+
+$$420 - 120 = 300$$
+
+</details>
+
+---
+
+## Cross-References
+
+- **Probability:** Counting techniques form the foundation of probability calculations. See the probability notes.
+- **Binomial Theorem:** The connection between Pascal's triangle and binomial coefficients extends to the binomial expansion and the binomial distribution.
+- **Quadratics:** Factorials and combinatorial expressions sometimes simplify to quadratic forms. See [quadratics.md](./quadratics.md).

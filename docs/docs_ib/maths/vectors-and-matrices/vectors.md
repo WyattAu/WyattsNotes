@@ -403,3 +403,203 @@ cross products in $\mathbb{R}^2$ directly. Also, $\mathbf{a} \times \mathbf{b} \
 \mathbf{a}$: the cross product is anti-commutative.
 
 :::
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Intersection of Two Lines in 3D**
+
+Determine whether the lines $\mathbf{r}_1 = (1, 2, 0) + t(2, -1, 1)$ and
+$\mathbf{r}_2 = (3, 0, -1) + s(1, 1, 2)$ intersect. If so, find the intersection point.
+
+<details>
+<summary>Solution</summary>
+
+For intersection, we need $t$ and $s$ such that:
+
+$$1 + 2t = 3 + s, \qquad 2 - t = s, \qquad t = -1 + 2s$$
+
+From the second equation: $s = 2 - t$.
+
+Substitute into the first: $1 + 2t = 3 + 2 - t \implies 3t = 4 \implies t = \dfrac{4}{3}$.
+
+Then $s = 2 - \dfrac{4}{3} = \dfrac{2}{3}$.
+
+Check with the third equation: $t = -1 + 2s \implies \dfrac{4}{3} = -1 + \dfrac{4}{3} = \dfrac{1}{3}$.
+
+Since $\dfrac{4}{3} \ne \dfrac{1}{3}$, the system is inconsistent. The lines do not intersect; they
+are skew.
+
+</details>
+
+**Worked Example: Angle Between a Line and a Plane**
+
+Find the acute angle between the line $\mathbf{r} = (1, -1, 2) + t(3, 1, -2)$ and the plane
+$2x - y + 2z = 6$.
+
+<details>
+<summary>Solution</summary>
+
+The direction of the line is $\mathbf{d} = (3, 1, -2)$.
+
+The normal of the plane is $\mathbf{n} = (2, -1, 2)$.
+
+The angle $\alpha$ between the line and the normal satisfies:
+
+$$\cos\alpha = \frac{|\mathbf{d} \cdot \mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}$$
+
+$$\mathbf{d} \cdot \mathbf{n} = 6 - 1 - 4 = 1$$
+
+$$|\mathbf{d}| = \sqrt{9 + 1 + 4} = \sqrt{14}, \qquad |\mathbf{n}| = \sqrt{4 + 1 + 4} = 3$$
+
+$$\cos\alpha = \frac{1}{3\sqrt{14}} = \frac{\sqrt{14}}{42} \implies \alpha \approx 85.0\,{}^{\circ}$$
+
+The angle between the line and the plane is $\phi = 90\,{}^{\circ} - \alpha \approx 5.0\,{}^{\circ}$.
+
+</details>
+
+**Worked Example: Shortest Distance Between Parallel Planes**
+
+Find the shortest distance between the planes $3x + 2y - z = 4$ and $3x + 2y - z = -8$.
+
+<details>
+<summary>Solution</summary>
+
+Both planes have the same normal vector $\mathbf{n} = (3, 2, -1)$, so they are parallel.
+
+The distance between parallel planes $ax + by + cz = d_1$ and $ax + by + cz = d_2$ is:
+
+$$D = \frac{|d_1 - d_2|}{\sqrt{a^2 + b^2 + c^2}} = \frac{|4 - (-8)|}{\sqrt{9 + 4 + 1}} = \frac{12}{\sqrt{14}} = \frac{12\sqrt{14}}{14} = \frac{6\sqrt{14}}{7}$$
+
+$$D \approx 3.22$$
+
+</details>
+
+**Worked Example: Volume of a Parallelepiped**
+
+Find the volume of the parallelepiped with adjacent edges represented by $\mathbf{a} = (1, 0, 2)$,
+$\mathbf{b} = (3, 1, -1)$, and $\mathbf{c} = (2, -1, 1)$.
+
+<details>
+<summary>Solution</summary>
+
+The volume is $|\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})|$.
+
+First compute $\mathbf{b} \times \mathbf{c}$:
+
+$$\mathbf{b} \times \mathbf{c} = \begin{pmatrix} (1)(1) - (-1)(-1) \\ (-1)(2) - (3)(1) \\ (3)(-1) - (1)(2) \end{pmatrix} = \begin{pmatrix} 0 \\ -5 \\ -5 \end{pmatrix}$$
+
+Then $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (1)(0) + (0)(-5) + (2)(-5) = -10$.
+
+Volume $= |-10| = 10$.
+
+Alternatively, compute the determinant directly:
+
+$$\begin{vmatrix} 1 & 0 & 2 \\ 3 & 1 & -1 \\ 2 & -1 & 1 \end{vmatrix} = 1(1 - 1) - 0 + 2(-3 - 2) = -10$$
+
+Volume $= |-10| = 10$.
+
+</details>
+
+**Worked Example: Plane Through a Line Perpendicular to Another Plane**
+
+Find the equation of the plane that contains the line $\mathbf{r} = (1, 2, 3) + t(1, -1, 0)$ and is
+perpendicular to the plane $x + 2y - z = 7$.
+
+<details>
+<summary>Solution</summary>
+
+The plane must contain the direction vector $\mathbf{d} = (1, -1, 0)$ of the given line.
+
+The plane is perpendicular to $x + 2y - z = 7$, whose normal is $\mathbf{n}_1 = (1, 2, -1)$. Since the
+planes are perpendicular, $\mathbf{n}_1$ lies in the desired plane.
+
+The desired plane has normal $\mathbf{n} = \mathbf{d} \times \mathbf{n}_1$:
+
+$$\mathbf{n} = \begin{pmatrix} (-1)(-1) - (0)(2) \\ (0)(1) - (1)(-1) \\ (1)(2) - (-1)(1) \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \\ 3 \end{pmatrix}$$
+
+The plane passes through $(1, 2, 3)$ (a point on the line):
+
+$$1(x - 1) + 1(y - 2) + 3(z - 3) = 0$$
+
+$$x + y + 3z - 12 = 0$$
+
+</details>
+
+---
+
+## Common Pitfalls
+
+1. **Confusing the angle between a line and a plane.** The formula
+   $\cos\theta = \dfrac{|\mathbf{d} \cdot \mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}$ gives the angle
+   between the line direction and the **normal** to the plane. The angle between the line and the
+   plane itself is $90\,{}^{\circ} - \theta$.
+
+2. **Cross product direction errors.** The cross product $\mathbf{a} \times \mathbf{b}$ follows the
+   right-hand rule. Reversing the order gives $\mathbf{b} \times \mathbf{a} = -(\mathbf{a} \times
+   \mathbf{b})$. Always check the sign when computing normals to planes.
+
+3. **Incorrect distance formula.** The distance from point $(x_1, y_1, z_1)$ to the plane
+   $ax + by + cz = d$ is $\dfrac{|ax_1 + by_1 + cz_1 - d|}{\sqrt{a^2 + b^2 + c^2}}$. Note the $-d$
+   in the numerator: this depends on whether the plane equation is written as $ax + by + cz = d$ or
+   $ax + by + cz + d = 0$.
+
+4. **Assuming two lines in 3D always intersect.** Unlike in 2D, two lines in 3D may be skew (neither
+   parallel nor intersecting). Always check consistency of all three equations when solving for
+   intersection parameters.
+
+5. **Parametric line-plane intersection gives $t = 0$.** If substituting the parametric line into the
+   plane equation yields $t = 0$, the intersection point is the point on the line at $t = 0$, i.e.
+   the initial point of the line. This is a valid answer, not an error.
+
+6. **Mixing up scalar and vector projections.** The scalar projection gives a number (the length of
+   the shadow), while the vector projection gives a vector. The scalar projection can be negative if
+   the angle exceeds $90\,{}^{\circ}$.
+
+7. **Scalar triple product coplanarity test.** Three vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$
+   are coplanar if $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$. A zero result means the
+   volume of the parallelepiped is zero, confirming coplanarity.
+
+8. **Normal vector to a plane from two direction vectors.** If a plane contains direction vectors
+   $\mathbf{d}_1$ and $\mathbf{d}_2$, the normal is $\mathbf{d}_1 \times \mathbf{d}_2$. A common
+   mistake is to use the dot product or to use $\mathbf{d}_2 \times \mathbf{d}_1$ without
+   recognising this gives the opposite normal direction (which is still valid for the plane equation).
+
+---
+
+## Exam-Style Problems
+
+1. Find the vector equation of the line through $A(2, -1, 3)$ and $B(5, 1, -2)$. Determine whether
+   the point $C(4, 0, 1)$ lies on this line.
+
+2. Find the equation of the plane through $(1, 0, -1)$, $(2, 3, 1)$, and $(0, 1, 2)$. Find the
+   distance from the origin to this plane.
+
+3. Two lines are given by $\mathbf{r}_1 = (0, 1, 2) + t(1, -1, 1)$ and
+   $\mathbf{r}_2 = (1, 0, -1) + s(2, 1, 0)$. Show that the lines are skew and find the shortest
+   distance between them.
+
+4. Find the angle between the planes $x + y + z = 1$ and $2x - y + z = 3$.
+
+5. The points $A(1, 0, 0)$, $B(0, 2, 0)$, $C(0, 0, 3)$, and $D(1, 1, 1)$ form a tetrahedron. Find
+   its volume using the scalar triple product.
+
+6. Find the reflection of the point $(3, -1, 2)$ in the plane $x - 2y + z = 4$.
+
+7. A line passes through $(1, 2, 3)$ and is perpendicular to both vectors $(1, 0, -1)$ and
+   $(0, 1, 2)$. Find the vector equation of this line and its intersection with the plane
+   $2x + y - z = 1$.
+
+8. Find the projection of $\mathbf{a} = (4, -1, 3)$ onto $\mathbf{b} = (2, 1, -2)$. Hence find the
+   component of $\mathbf{a}$ perpendicular to $\mathbf{b}$.
+
+---
+
+## Cross-References
+
+- **Matrices** for representing linear transformations and systems: see [Matrices and Linear Transformations](/docs/docs_ib/maths/vectors-and-matrices/matrices)
+- **Complex numbers** for representing vectors in polar form: see [Complex Numbers](/docs/docs_ib/maths/vectors-and-matrices/complex-numbers)
+- **Trigonometry** for angle calculations: see [Trigonometry](/docs/docs_ib/maths/algebra/trigonometry)
+- **Calculus** for vector-valued functions and differentiation: see [Differentiation](/docs/docs_ib/maths/calculus/differentiation)
+- **Integration** for arc length and surface area of curves: see [Integration](/docs/docs_ib/maths/calculus/integration)
