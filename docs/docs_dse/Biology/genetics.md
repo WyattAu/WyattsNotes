@@ -1,5 +1,6 @@
 ---
 title: Genetics
+description: "DSE Biology genetics notes covering Mendelian inheritance, monohybrid and dihybrid crosses, sex-linked inheritance, genetic crosses, and molecular genetics."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1072,3 +1073,4 @@ A **point mutation** (substitution) replaces a single nucleotide with another. A
 A **frameshift mutation** is an insertion or deletion of nucleotides that is NOT a multiple of three. This shifts the reading frame of all codons downstream, typically changing every subsequent amino acid and often creating a premature stop codon. The resulting protein is usually completely non-functional (e.g., a 1-bp insertion in the CFTR gene causes cystic fibrosis).
 
 </details>
+

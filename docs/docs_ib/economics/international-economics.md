@@ -1,8 +1,6 @@
 ---
 title: International Economics
-description:
-  IB Economics — trade theory, balance of payments, exchange rates, trade protection, and economic
-  integration.
+description: "IB Economics — trade theory, balance of payments, exchange rates, trade protection, and economic integration."
 slug: international-economics
 ---
 
@@ -380,3 +378,4 @@ consumer benefit), the world as a whole becomes less efficient because resources
 the higher-cost producer.
 
 </details>
+

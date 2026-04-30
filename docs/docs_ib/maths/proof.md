@@ -1,7 +1,6 @@
 ---
 title: Proof
-description:
-  IB Mathematics — direct proof, contradiction, induction, counterexamples, and proof by exhaustion.
+description: "IB Mathematics — direct proof, contradiction, induction, counterexamples, and proof by exhaustion."
 slug: proof
 ---
 
@@ -617,3 +616,4 @@ $a = 0$: $1 = 5^b$ is impossible. For $a \ge 1$: even = odd. Contradiction.
 - **Summation notation and series** → Review [./calculus](./calculus) (section on integration and series)
 - **Quadratics and factorisation** → Review algebra fundamentals
 - **Function notation and domain** → Review functions topics
+

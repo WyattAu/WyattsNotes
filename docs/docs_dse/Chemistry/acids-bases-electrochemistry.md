@@ -1,9 +1,7 @@
 ---
 id: dse-chemistry-acids-bases-electrochemistry
 title: Chemistry - Acids, Bases, and Electrochemistry
-description:
-  DSE Chemistry notes covering acid-base theories, pH calculations, salt preparation, redox
-  reactions, electrolysis, and electrochemical cells.
+description: "DSE Chemistry notes covering acid-base theories, pH calculations, salt preparation, redox reactions, electrolysis, and electrochemical cells."
 slug: chemistry-acids-bases-electrochemistry
 ---
 
@@ -1213,3 +1211,4 @@ This converts some $\mathrm{CH_3COOH}$ to $\mathrm{CH_3COO^-}$. The ratio $[\mat
 </details>
 
 </details>
+

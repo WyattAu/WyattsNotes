@@ -1,5 +1,6 @@
 ---
 title: Optics
+description: "DSE Physics optics notes covering reflection, refraction, total internal reflection, lenses, optical instruments, and the electromagnetic spectrum."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -792,3 +793,4 @@ refractive index varies with wavelength.*
 
 </details>
 </details>
+

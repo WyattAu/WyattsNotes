@@ -1,5 +1,6 @@
 ---
 title: International Trade and Finance
+description: "DSE Economics notes on international trade and finance covering comparative advantage, trade policies, balance of payments, exchange rates, and trading blocs."
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]
@@ -1275,3 +1276,4 @@ rights to the most efficient importers.
 If you get this wrong, revise: [Trade Barriers](#trade-barriers)
 
 </details>
+

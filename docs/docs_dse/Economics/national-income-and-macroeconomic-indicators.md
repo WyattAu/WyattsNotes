@@ -1,5 +1,6 @@
 ---
 title: National Income and Macroeconomic Indicators
+description: "DSE Economics notes on national income and macroeconomic indicators covering GDP measurement, inflation, unemployment, economic growth, and living standards."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1199,3 +1200,4 @@ overheating.
 If you get this wrong, revise: [Automatic Stabilisers](#automatic-stabilisers)
 
 </details>
+

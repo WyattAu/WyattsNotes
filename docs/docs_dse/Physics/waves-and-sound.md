@@ -1,5 +1,6 @@
 ---
 title: Waves and Sound
+description: "DSE Physics waves and sound notes covering wave properties, transverse and longitudinal waves, sound waves, the Doppler effect, and standing waves."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -553,3 +554,4 @@ the observer.
 </details>
 
 If you get this wrong, revise: Sound Waves
+

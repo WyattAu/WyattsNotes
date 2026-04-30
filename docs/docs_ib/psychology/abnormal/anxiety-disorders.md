@@ -1,8 +1,6 @@
 ---
 title: Anxiety Disorders
-description:
-  'Comprehensive coverage of phobias, OCD, biological, behavioural, and cognitive explanations,
-  treatments, and key research for IB Psychology.'
+description: "Comprehensive coverage of phobias, OCD, biological, behavioural, and cognitive explanations, treatments, and key research for IB Psychology."
 slug: anxiety-disorders
 ---
 
@@ -250,3 +248,4 @@ while the gains from exposure therapy were more durable.
 </details>
 
 For an overview of abnormal psychology topics, see [Abnormal Psychology](../abnormal-psychology).
+

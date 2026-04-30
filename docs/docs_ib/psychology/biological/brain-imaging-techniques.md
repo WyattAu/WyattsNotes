@@ -1,8 +1,6 @@
 ---
 title: Brain Imaging Techniques
-description:
-  'Comprehensive coverage of fMRI, PET, EEG, TMS, lesion studies, their strengths, limitations, and
-  ethical considerations for IB Psychology.'
+description: "Comprehensive coverage of fMRI, PET, EEG, TMS, lesion studies, their strengths, limitations, and ethical considerations for IB Psychology."
 slug: brain-imaging-techniques
 ---
 
@@ -314,3 +312,4 @@ The use of brain imaging in research raises several ethical issues:
 
 For an overview of biological topics, see
 [Biological Level of Analysis](../biological-level-of-analysis).
+

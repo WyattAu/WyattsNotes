@@ -1,5 +1,6 @@
 ---
 title: Chemistry - Acids, Bases, and Salts
+description: "DSE Chemistry notes on acids, bases, and salts covering properties, pH scale, neutralisation reactions, salt preparation methods, and titration."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -617,3 +618,4 @@ Reaction with Mg: $\mathrm{Mg} + 2\mathrm{H^+} \to \mathrm{Mg^{2+}} + \mathrm{H_
 Limewater: $\mathrm{CO_2} + \mathrm{Ca(OH)_2} \to \mathrm{CaCO_3}(s) + \mathrm{H_2O}$
 
 </details>
+

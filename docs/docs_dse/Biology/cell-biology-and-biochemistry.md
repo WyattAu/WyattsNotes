@@ -1,9 +1,7 @@
 ---
 id: dse-biology-cell-biology-and-biochemistry
 title: Biology - Cell Biology and Biochemistry
-description:
-  DSE Biology notes covering cell structure, organelles, biological molecules, enzymes, membrane
-  transport, and cellular processes.
+description: "DSE Biology notes covering cell structure, organelles, biological molecules, enzymes, membrane transport, and cellular processes."
 slug: biology-cell-biology-and-biochemistry
 ---
 
@@ -1161,3 +1159,4 @@ If you get this wrong, revise: Cell Organelles -- Mitochondria; Cellular Respira
 The mitochondrion has a double membrane. The inner membrane is folded into cristae, providing a large surface area for the electron transport chain and ATP synthase. The intermembrane space between the two membranes allows protons to accumulate, creating the electrochemical gradient needed for chemiosmosis. The matrix contains enzymes for the Krebs cycle, mitochondrial DNA (allowing the mitochondrion to produce some of its own proteins), and ribosomes. The small volume of the matrix ensures high concentrations of substrates and enzymes, maximising the rate of the Krebs cycle. These features collectively maximise the rate of ATP production through oxidative phosphorylation.
 
 </details>
+

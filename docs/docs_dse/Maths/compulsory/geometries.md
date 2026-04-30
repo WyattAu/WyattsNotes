@@ -1,5 +1,6 @@
 ---
 title: Geometries
+description: "DSE Mathematics geometry notes covering 2D and 3D geometry, circle theorems, trigonometric identities, vector geometry, and coordinate proofs."
 date: 2025-06-03T16:20:00.000Z
 tags:
   - Maths
@@ -720,3 +721,4 @@ vertices of a rectangle. Find the equation of the circle passing through all fou
 - Equation: $(x-2)^2 + (y-1)^2 = 17$, i.e., $x^2 + y^2 - 4x - 2y - 12 = 0$.
 </details>
 </details>
+

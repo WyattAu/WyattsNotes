@@ -1,5 +1,6 @@
 ---
 title: Probability
+description: "DSE Mathematics probability notes covering sample spaces, events, conditional probability, addition and multiplication rules, and probability distributions."
 date: 2025-06-03T12:07:31.077Z
 tags:
   - Maths
@@ -1002,3 +1003,4 @@ rate fallacy in action: low prevalence swamps even a good test's signal.
 
 </details>
 </details>
+

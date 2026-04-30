@@ -1,9 +1,7 @@
 ---
 id: dse-physics-waves-and-optics
 title: Physics - Waves and Optics
-description:
-  DSE Physics notes on wave properties, sound, light, electromagnetic spectrum, reflection,
-  refraction, and interference.
+description: "DSE Physics notes on wave properties, sound, light, electromagnetic spectrum, reflection, refraction, and interference."
 slug: physics-waves-and-optics
 ---
 
@@ -1170,3 +1168,4 @@ states of matter.*
 
 </details>
 </details>
+

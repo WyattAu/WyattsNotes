@@ -1,5 +1,6 @@
 ---
 title: Chemistry - Rate of Reaction and Energetics
+description: "DSE Chemistry notes on rate of reaction and energetics covering collision theory, factors affecting rate, enthalpy changes, Hess's law, and calorimetry."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -652,3 +653,4 @@ $$\Delta H = 655 - 760 = -105 \mathrm{ kJ/mol}$$
 The reaction is exothermic.
 
 </details>
+

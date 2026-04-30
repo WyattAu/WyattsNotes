@@ -1,5 +1,6 @@
 ---
 title: Trigonometry
+description: "DSE Mathematics trigonometry notes covering trigonometric ratios, sine and cosine rules, trigonometric identities, solving equations, and 3D problems."
 date: 2025-06-03T16:22:00.000Z
 tags:
   - Maths
@@ -628,3 +629,4 @@ distinct triangles exist, and find all possible values of $B$.
 - There is only one triangle, with $B \approx 64.2^\circ$, $C \approx 75.8^\circ$, $c \approx 7.54$.
 </details>
 </details>
+

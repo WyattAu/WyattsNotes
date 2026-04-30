@@ -1,5 +1,6 @@
 ---
 title: Data Representation
+description: "DSE ICT notes on data representation covering binary, hexadecimal, character encoding, image and audio representation, compression, and error detection."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1340,3 +1341,4 @@ $$
 $$
 
 </details>
+

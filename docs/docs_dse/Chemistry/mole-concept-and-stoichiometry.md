@@ -1,10 +1,7 @@
 ---
 id: dse-chemistry-mole-concept-stoichiometry
 title: Chemistry - Mole Concept and Stoichiometry
-description:
-  DSE Chemistry notes covering relative atomic/molecular masses, the mole, Avogadro's number, molar
-  volume, empirical and molecular formulae, percentage composition, concentration, dilution,
-  limiting reagent, percentage yield, and volumetric analysis.
+description: "DSE Chemistry notes covering relative atomic/molecular masses, the mole, Avogadro's number, molar volume, empirical and molecular formulae, percentage composition, concentration, dilution, limiting reagent, percentage yield, and volumetric analysis."
 slug: mole-concept-and-stoichiometry
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -870,3 +867,4 @@ fractions. The correct simplest integer ratio is indeed 8:16:3, giving
 $\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$.
 
 </details>
+

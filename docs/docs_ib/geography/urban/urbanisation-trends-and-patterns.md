@@ -1,8 +1,6 @@
 ---
 title: Urbanisation Trends and Patterns
-description:
-  'Global urbanisation trends, megacities, world cities, primate cities, urban-rural migration, and
-  push-pull factors for IB Geography.'
+description: "Global urbanisation trends, megacities, world cities, primate cities, urban-rural migration, and push-pull factors for IB Geography."
 slug: urbanisation-trends-and-patterns
 ---
 
@@ -249,3 +247,4 @@ settlement communities.
 For related topics, see [./urban-environmental-quality](./urban-environmental-quality) and
 [./urban-planning-and-sustainability](./urban-planning-and-sustainability). The parent topic page is
 at [../urban-environments](../urban-environments).
+

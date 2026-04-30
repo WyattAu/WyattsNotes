@@ -1,5 +1,6 @@
 ---
 title: Chemistry - Carbon Chemistry
+description: "DSE Chemistry carbon chemistry notes covering hydrocarbons, alkanes, alkenes, alcohols, carboxylic acids, polymers, and macromolecules."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -639,3 +640,4 @@ having a similar molar mass ($\mathrm{C_3H_8} = 44 \mathrm{ g/mol}$ vs $\mathrm{
 \mathrm{ g/mol}$).
 
 </details>
+

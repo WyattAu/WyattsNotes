@@ -1,9 +1,7 @@
 ---
 id: dse-chemistry-atomic-structure-and-bonding
 title: Chemistry - Atomic Structure and Bonding
-description:
-  DSE Chemistry notes on atomic structure, electron configurations, periodic trends, ionic bonding,
-  covalent bonding, and intermolecular forces.
+description: "DSE Chemistry notes on atomic structure, electron configurations, periodic trends, ionic bonding, covalent bonding, and intermolecular forces."
 slug: chemistry-atomic-structure-and-bonding
 ---
 
@@ -1216,3 +1214,4 @@ $$\Delta H = \Delta H_f^\circ(\mathrm{NH_4Cl}) - \Delta H_f^\circ(\mathrm{NH_3})
 Helium has the electron configuration $1s^2$. Its outer electrons are in the first shell ($n = 1$), which is closest to the nucleus. There is minimal shielding (no inner shell electrons). The small atomic radius and high effective nuclear charge mean the electrons are very tightly held. Additionally, the $1s$ subshell is fully occupied, giving helium extra stability as a noble gas. These factors combine to give helium the highest first ionisation energy of all elements ($2372 \mathrm{ kJ/mol}$).
 
 </details>
+

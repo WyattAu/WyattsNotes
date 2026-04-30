@@ -1,8 +1,6 @@
 ---
 title: Water Scarcity and Management
-description:
-  'Physical and economic water scarcity, water stress indices, supply-side and demand-side
-  management strategies, and case studies for IB Geography.'
+description: "Physical and economic water scarcity, water stress indices, supply-side and demand-side management strategies, and case studies for IB Geography."
 slug: water-scarcity-and-management
 ---
 
@@ -223,3 +221,4 @@ estuary), and the perpetuation of unsustainable water consumption patterns in no
 For related topics, see [./drainage-basins-and-hydrology](./drainage-basins-and-hydrology) and
 [./flood-management](./flood-management). The parent topic page is at
 [../freshwater-issues](../freshwater-issues).
+

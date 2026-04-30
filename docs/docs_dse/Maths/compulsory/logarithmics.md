@@ -1,5 +1,6 @@
 ---
 title: Logarithms
+description: "DSE Mathematics logarithm notes covering logarithmic laws, solving exponential and logarithmic equations, change of base formula, and real-world applications."
 date: 2025-06-03T16:19:00.000Z
 tags:
   - Maths
@@ -658,3 +659,4 @@ quarterly. How long (to the nearest quarter) does it take for the balance to rea
 - $t = \dfrac{\log 2}{4\log 1.01} \approx \dfrac{0.3010}{4 \times 0.00432} \approx 17.42$ years.
 - To the nearest quarter: approximately 17 years and 2 quarters (17.5 years).
 </details>
+

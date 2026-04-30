@@ -1,9 +1,7 @@
 ---
 id: dse-economics-demand-supply-markets
 title: Economics - Demand, Supply, and Markets
-description:
-  DSE Economics notes covering demand and supply analysis, market equilibrium, elasticity,
-  government intervention, and market failure.
+description: "DSE Economics notes covering demand and supply analysis, market equilibrium, elasticity, government intervention, and market failure."
 slug: economics-demand-supply-markets
 ---
 
@@ -1080,3 +1078,4 @@ Producers receive `39 - 8 = 31`.
 If you get this wrong, revise: [Market Failure](#market-failure)
 
 </details>
+

@@ -1,5 +1,6 @@
 ---
 title: Magnetism and Electromagnetism
+description: "DSE Physics magnetism and electromagnetism notes covering magnetic fields, electromagnetic induction, transformers, motors, generators, and magnetic materials."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -541,3 +542,4 @@ factor of 100.
 </details>
 
 If you get this wrong, revise: Transformers / Efficiency
+

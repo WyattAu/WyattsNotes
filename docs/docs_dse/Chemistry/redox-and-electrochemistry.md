@@ -1,5 +1,6 @@
 ---
 title: Chemistry - Redox and Electrochemistry
+description: "DSE Chemistry redox and electrochemistry notes covering oxidation-reduction reactions, electrolysis, electrochemical cells, and industrial applications."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -661,3 +662,4 @@ $$V = 9.33 \times 10^{-3} \times 24.0 = 0.224 \mathrm{ dm^3} = 224 \mathrm{ cm^3
 Iron is more reactive than copper. When in electrical contact in the presence of water and oxygen, iron acts as the anode and copper as the cathode. Electrons flow from iron to copper. At the anode: $\mathrm{Fe} \to \mathrm{Fe^{2+}} + 2e^-$ (iron corrodes faster). At the cathode: $\mathrm{O_2} + 2\mathrm{H_2O} + 4e^- \to 4\mathrm{OH^-}$. This sets up an electrochemical cell that accelerates corrosion of the iron.
 
 </details>
+

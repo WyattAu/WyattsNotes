@@ -1,5 +1,6 @@
 ---
 title: Dispersion
+description: "DSE Mathematics statistics notes on measures of dispersion covering range, interquartile range, variance, standard deviation, and box-and-whisker plots."
 date: 2025-06-03T16:18:22.480Z
 tags:
   - Maths
@@ -602,3 +603,4 @@ variance.
 - New variance: $\sigma'^2 = \frac{50}{5} - (-2)^2 = 10 - 4 = 6$.
 </details>
 </details>
+

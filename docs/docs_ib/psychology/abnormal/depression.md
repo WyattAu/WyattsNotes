@@ -1,8 +1,6 @@
 ---
 title: Depression
-description:
-  'Comprehensive coverage of biological, cognitive, and sociocultural explanations of depression,
-  treatments including SSRIs and CBT, and key research for IB Psychology.'
+description: "Comprehensive coverage of biological, cognitive, and sociocultural explanations of depression, treatments including SSRIs and CBT, and key research for IB Psychology."
 slug: depression
 ---
 
@@ -251,3 +249,4 @@ combination approaches showed the greatest improvement.
 </details>
 
 For an overview of abnormal psychology topics, see [Abnormal Psychology](../abnormal-psychology).
+

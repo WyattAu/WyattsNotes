@@ -1,8 +1,6 @@
 ---
 title: Memory Models
-description:
-  'Detailed coverage of the multi-store model, working memory model, levels of processing,
-  reconstructive memory, schema theory, and eyewitness testimony for IB Psychology.'
+description: "Detailed coverage of the multi-store model, working memory model, levels of processing, reconstructive memory, schema theory, and eyewitness testimony for IB Psychology."
 slug: memory-models
 ---
 
@@ -302,3 +300,4 @@ misleading information is introduced after a delay (when the original memory has
 
 For an overview of cognitive topics, see
 [Cognitive Level of Analysis](../cognitive-level-of-analysis).
+

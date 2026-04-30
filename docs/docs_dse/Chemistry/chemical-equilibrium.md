@@ -1,10 +1,7 @@
 ---
 id: dse-chemistry-chemical-equilibrium
 title: Chemistry - Chemical Equilibrium
-description:
-  DSE Chemistry notes covering dynamic equilibrium, Le Chatelier's principle, equilibrium constant
-  Kc, effect of changes on equilibrium, Haber process, Contact process, and equilibrium
-  calculations.
+description: "DSE Chemistry notes covering dynamic equilibrium, Le Chatelier's principle, equilibrium constant Kc, effect of changes on equilibrium, Haber process, Contact process, and equilibrium calculations."
 slug: chemical-equilibrium
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -915,3 +912,4 @@ $$K = e^{2.179} = 8.84$$
 | $K_p = K_c(RT)^{\Delta n}$                                          | Convert $K_c$ to $K_p$      |
 | $\Delta G^\circ = -RT \ln K$                                        | Free energy and equilibrium |
 | $\Delta G = \Delta G^\circ + RT \ln Q$                              | Non-equilibrium free energy |
+

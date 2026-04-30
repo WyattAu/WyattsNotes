@@ -1,8 +1,6 @@
 ---
 title: Demographic Transition Model
-description:
-  'The DTM stages, critique and limitations, population pyramids, dependency ratios, demographic
-  dividend, and case studies for IB Geography.'
+description: "The DTM stages, critique and limitations, population pyramids, dependency ratios, demographic dividend, and case studies for IB Geography."
 slug: demographic-transition-model
 ---
 
@@ -238,3 +236,4 @@ illustrates that the demographic dividend is a time-limited window, not a perman
 For related topics, see [./migration-theories-and-patterns](./migration-theories-and-patterns) and
 [./population-policies](./population-policies). The parent topic page is at
 [../population-distribution](../population-distribution).
+

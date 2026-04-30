@@ -1,8 +1,6 @@
 ---
 title: Redox Reactions (Advanced)
-description:
-  IB Chemistry — electrochemical cells, standard electrode potentials, electrolysis, and
-  quantitative electrochemistry.
+description: "IB Chemistry — electrochemical cells, standard electrode potentials, electrolysis, and quantitative electrochemistry."
 slug: redox-advanced
 ---
 
@@ -610,3 +608,4 @@ The cell potential is slightly lower than standard because the higher concentrat
 - **Thermodynamics and Gibbs free energy** → Review [./thermodynamics/thermochemistry](./thermodynamics/thermochemistry)
 - **Atomic structure and electron configurations** → Review [./atomic-theory](./atomic-theory)
 - **Acids, bases, and pH** → Review [./acids-bases-advanced](./acids-bases-advanced)
+

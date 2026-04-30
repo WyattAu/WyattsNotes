@@ -1,8 +1,6 @@
 ---
 title: States of Matter
-description:
-  IB Chemistry — kinetic molecular theory, ideal gas law, real gases, intermolecular forces, and
-  phase diagrams.
+description: "IB Chemistry — kinetic molecular theory, ideal gas law, real gases, intermolecular forces, and phase diagrams."
 slug: states-of-matter
 ---
 
@@ -584,3 +582,4 @@ Since boiling requires overcoming intermolecular forces, stronger LDFs mean a hi
 - **Thermodynamics (energy changes in state transitions)** → Review [./thermodynamics/thermochemistry](./thermodynamics/thermochemistry)
 - **Stoichiometry and the mole concept** → Review [./stoichiometry/stoichiometry](./stoichiometry/stoichiometry)
 - **Periodic trends affecting physical properties** → Review [./periodicity](./periodicity)
+

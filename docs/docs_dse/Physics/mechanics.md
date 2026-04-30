@@ -1,9 +1,7 @@
 ---
 id: dse-physics-mechanics
 title: Physics - Mechanics
-description:
-  DSE Physics mechanics notes covering kinematics, dynamics, work and energy, momentum, and circular
-  motion.
+description: "DSE Physics mechanics notes covering kinematics, dynamics, work and energy, momentum, and circular motion."
 slug: physics-mechanics
 ---
 
@@ -1446,3 +1444,4 @@ functions of displacement.*
 
 </details>
 </details>
+

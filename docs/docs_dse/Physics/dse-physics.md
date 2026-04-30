@@ -1,5 +1,6 @@
 ---
 title: DSE Physics
+description: "DSE Physics overview covering the full syllabus including mechanics, waves, electricity and magnetism, heat, nuclear physics, and astronomical physics."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics
@@ -390,3 +391,4 @@ $$\beta_2 = 70 - 10 \times 1.204 = 70 - 12.0 = 58.0 \mathrm{ dB}$$
 </details>
 
 If you get this wrong, revise: Waves / Sound Intensity
+

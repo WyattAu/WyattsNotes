@@ -1,5 +1,6 @@
 ---
 title: Evolution and Ecology
+description: "DSE Biology evolution and ecology notes covering natural selection, evidence for evolution, population ecology, nutrient cycles, and human impact on ecosystems."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -1354,3 +1355,4 @@ However, additional information would strengthen the conclusion:
 Without this context, it is possible that Pond A has high diversity but is polluted with tolerant species, or that Pond B naturally has low diversity due to its size or location.
 
 </details>
+

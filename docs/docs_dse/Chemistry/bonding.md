@@ -1,5 +1,6 @@
 ---
 title: Bonding
+description: "DSE Chemistry bonding notes covering ionic bonding, covalent bonding, metallic bonding, intermolecular forces, and physical property predictions."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -424,3 +425,4 @@ hydrogen bonding in ethanol requires significantly more energy to overcome, resu
 higher boiling point.
 
 </details>
+

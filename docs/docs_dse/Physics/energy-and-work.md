@@ -1,5 +1,6 @@
 ---
 title: Energy and Work
+description: "DSE Physics energy and work notes covering work done, kinetic energy, potential energy, conservation of energy, power, and efficiency calculations."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -566,3 +567,4 @@ $$P = \frac{mgh}{t} = \frac{60 \times 9.81 \times 6}{5} = \frac{3531.6}{5} = 706
 </details>
 
 If you get this wrong, revise: Power
+

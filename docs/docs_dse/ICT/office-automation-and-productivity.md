@@ -1,5 +1,6 @@
 ---
 title: Office Automation and Productivity
+description: "DSE ICT notes on office automation covering spreadsheet applications, database usage, word processing, presentation software, and data analysis techniques."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -838,3 +839,4 @@ highlighted in red. Note: the formula in `G` must calculate a percentage (not ju
 to work correctly.
 
 </details>
+

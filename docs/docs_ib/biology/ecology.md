@@ -1,8 +1,6 @@
 ---
 title: Ecology
-description:
-  IB Biology — species, communities, ecosystems, energy flow, nutrient cycles, climate change,
-  evolution, natural selection, and classification.
+description: "IB Biology — species, communities, ecosystems, energy flow, nutrient cycles, climate change, evolution, natural selection, and classification."
 slug: ecology
 ---
 
@@ -701,3 +699,4 @@ population and explain your reasoning.
 - **Biochemistry and enzymes** --> Review [./molecular-biology](./molecular-biology)
 - **Photosynthesis and plant transport** --> Review [./plant-biology](./plant-biology)
 - **Physiology and homeostasis** --> Review [./human-physiology](./human-physiology)
+

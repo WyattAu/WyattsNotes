@@ -1,5 +1,6 @@
 ---
 title: Electricity and Magnetism
+description: "DSE Physics electricity and magnetism notes covering electric fields, potential, capacitance, magnetic fields, electromagnetic induction, and AC circuits."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -1483,3 +1484,4 @@ insulator, so no eddy currents are induced, and the magnet falls freely under gr
 
 </details>
 </details>
+

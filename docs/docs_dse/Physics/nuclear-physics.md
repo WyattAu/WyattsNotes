@@ -1,5 +1,6 @@
 ---
 title: Nuclear Physics
+description: "DSE Physics nuclear physics notes covering radioactivity, alpha beta gamma radiation, half-life, nuclear reactions, fission, fusion, and binding energy."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -1740,3 +1741,4 @@ not $-t_{1/2}$.*
 
 </details>
 </details>
+

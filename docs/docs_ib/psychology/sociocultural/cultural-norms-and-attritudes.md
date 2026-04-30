@@ -1,8 +1,6 @@
 ---
 title: Cultural Norms and Attitudes
-description:
-  "Comprehensive coverage of Hofstede's cultural dimensions, individualism versus collectivism,
-  conformity across cultures, acculturation, and key research for IB Psychology."
+description: "Comprehensive coverage of Hofstede's cultural dimensions, individualism versus collectivism, conformity across cultures, acculturation, and key research for IB Psychology."
 slug: cultural-norms-and-attitudes
 ---
 
@@ -241,3 +239,4 @@ self-criticism serves as a mechanism for identifying areas where self-improvemen
 
 For an overview of sociocultural topics, see
 [Sociocultural Level of Analysis](../sociocultural-level-of-analysis).
+

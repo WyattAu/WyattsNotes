@@ -1,10 +1,7 @@
 ---
 id: dse-chemistry-chemical-kinetics
 title: Chemistry - Chemical Kinetics
-description:
-  DSE Chemistry notes covering rate of reaction, measuring rates, factors affecting rate, collision
-  theory, activation energy, Maxwell-Boltzmann distribution, catalytic converters, enzyme catalysis,
-  rate equations, order of reaction, and the Arrhenius equation.
+description: "DSE Chemistry notes covering rate of reaction, measuring rates, factors affecting rate, collision theory, activation energy, Maxwell-Boltzmann distribution, catalytic converters, enzyme catalysis, rate equations, order of reaction, and the Arrhenius equation."
 slug: chemical-kinetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -935,3 +932,4 @@ Powdering the solid increases surface area, further increasing the rate.
 | $t_{1/2} = 0.693/k$                             | First-order half-life            |
 | $\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$      | First-order integrated rate law  |
 | $\mathrm{Rate} \propto 1/t$                     | Clock reaction initial rate      |
+

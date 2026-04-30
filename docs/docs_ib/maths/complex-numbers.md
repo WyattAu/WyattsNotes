@@ -1,7 +1,6 @@
 ---
 title: Complex Numbers
-description:
-  IB Mathematics — complex arithmetic, polar form, De Moivre's theorem, and roots of unity.
+description: "IB Mathematics — complex arithmetic, polar form, De Moivre's theorem, and roots of unity."
 slug: complex-numbers
 ---
 
@@ -598,3 +597,4 @@ Adding: $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2 = 2(|z_1|^2 + |z_2|
 - **Polar coordinates and argument calculation** → Review [./complex-numbers](./complex-numbers) (section on Argument)
 - **Binomial theorem expansion** → Review algebra and series topics
 - **Polynomial roots and Vieta's formulas** → Review [./complex-numbers](./complex-numbers) (section on Sum of Roots)
+

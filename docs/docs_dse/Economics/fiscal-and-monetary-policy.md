@@ -1,5 +1,6 @@
 ---
 title: Fiscal and Monetary Policy
+description: "DSE Economics notes on fiscal and monetary policy covering government spending, taxation, money supply, interest rates, inflation, and unemployment."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1052,3 +1053,4 @@ policy should be expansionary. Mixed signals create uncertainty and undermine bo
 If you get this wrong, revise: [Fiscal Policy vs Monetary Policy](#fiscal-policy-vs-monetary-policy)
 
 </details>
+

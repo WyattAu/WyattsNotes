@@ -1,5 +1,6 @@
 ---
 title: DSE Chemistry
+description: "DSE Chemistry overview notes covering the full syllabus including atomic structure, bonding, stoichiometry, energetics, kinetics, equilibrium, and organic chemistry."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -423,3 +424,4 @@ Ethanoic acid is a **weak acid** — it only partially dissociates in aqueous so
 lower concentration of $\mathrm{H^+}$ ions than a strong acid of the same concentration would.
 
 </details>
+

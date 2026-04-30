@@ -1,8 +1,6 @@
 ---
 title: Trade and Aid
-description:
-  'Trade patterns, globalisation, fair trade, aid types, aid effectiveness, debt relief, WTO,
-  trading blocs, and case studies for IB Geography.'
+description: "Trade patterns, globalisation, fair trade, aid types, aid effectiveness, debt relief, WTO, trading blocs, and case studies for IB Geography."
 slug: trade-and-aid
 ---
 
@@ -202,3 +200,4 @@ studies with evidence, and avoid blanket generalisations.
 For related topics, see [./measuring-development](./measuring-development) and
 [./sustainable-development-goals](./sustainable-development-goals). The parent topic page is at
 [../economic-development](../economic-development).
+

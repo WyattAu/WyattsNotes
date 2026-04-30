@@ -1,8 +1,6 @@
 ---
 title: Atmospheric Systems
-description:
-  'Global atmospheric circulation, ITCZ, Rossby waves, jet streams, ocean currents, and ENSO for IB
-  Geography.'
+description: "Global atmospheric circulation, ITCZ, Rossby waves, jet streams, ocean currents, and ENSO for IB Geography."
 slug: atmospheric-systems
 ---
 
@@ -250,3 +248,4 @@ and provide specific case studies with data.
 For related topics, see [./carbon-cycle-and-sequestration](./carbon-cycle-and-sequestration) and
 [./climate-adaptation-and-mitigation](./climate-adaptation-and-mitigation). The parent topic page is
 at [../climate-change](../climate-change).
+

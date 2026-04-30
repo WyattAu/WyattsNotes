@@ -1,5 +1,6 @@
 ---
 title: Chemistry - Stoichiometry and Mole Concept
+description: "DSE Chemistry stoichiometry and mole concept notes covering relative atomic mass, molar calculations, empirical formulae, concentration, and limiting reagents."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -637,3 +638,4 @@ $$x = \frac{0.467}{0.0650} = 7.18 \approx 7$$
 The formula is $\mathrm{MgSO_4 \cdot 7H_2O}$ (Epsom salt).
 
 </details>
+

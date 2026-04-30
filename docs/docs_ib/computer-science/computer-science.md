@@ -1,6 +1,6 @@
 ---
 title: Computer Science
-description: intro
+description: "IB Computer Science notes covering computational thinking, system design, data structures, algorithms, networking, databases, and ethical considerations."
 slug: computer-science
 ---
 
@@ -927,3 +927,4 @@ triangular number series. This is a common pattern in IB exam questions.
 </details>
 
 If you get this wrong, revise: [Efficiency](#efficiency) and [Nested Loops](#algorithms)
+

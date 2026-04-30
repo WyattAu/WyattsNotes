@@ -1,5 +1,6 @@
 ---
 title: Functions (Advanced)
+description: "DSE Mathematics advanced functions notes covering composite functions, inverse functions, exponential functions, logarithmic functions, and function transformations."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -589,3 +590,4 @@ Verification: $(f \circ h)(x) = 2\!\left(x + \dfrac{3}{2}\right) - 1 = 2x + 2$. 
 - **Quadratics:** Quadratic functions feature heavily in inverse function problems. See [quadratics.md](./quadratics.md).
 - **Inequalities:** Domain restrictions often involve solving inequalities. See the inequalities notes.
 - **Coordinate Geometry:** Graphical interpretations of functions and transformations. See [coordinate-geometry.md](./coordinate-geometry.md).
+

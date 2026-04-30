@@ -1,5 +1,6 @@
 ---
 title: Atomic Structure
+description: "DSE Chemistry atomic structure notes covering subatomic particles, atomic models, electron configuration, isotopes, and mass spectrometry."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -426,3 +427,4 @@ Sodium (EN $= 0.9$, lowest) to chlorine (EN $= 3.0$, highest in Period 3). Argon
 gas, does not typically form covalent bonds and is not assigned an electronegativity value.
 
 </details>
+

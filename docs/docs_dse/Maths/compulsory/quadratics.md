@@ -1,5 +1,6 @@
 ---
 title: Quadratics
+description: "DSE Mathematics quadratic equations notes covering factorisation, completing the square, quadratic formula, discriminant, and graphs of quadratic functions."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -560,3 +561,4 @@ All four pairs are valid solutions.
 - **Coordinate Geometry:** Parabolas as conic sections. See [coordinate-geometry.md](./coordinate-geometry.md).
 - **Inequalities:** Quadratic inequalities are solved using discriminant and graph analysis. See the inequalities notes.
 - **Permutations and Combinations:** Factorials appear in the quadratic formula derivation via completing the square. See [permutations-and-combinations.md](./permutations-and-combinations.md).
+

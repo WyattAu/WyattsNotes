@@ -1,8 +1,6 @@
 ---
 title: Organic Chemistry (Advanced)
-description:
-  IB Chemistry — reaction mechanisms, stereochemistry, addition and condensation polymers, and
-  spectroscopic identification.
+description: "IB Chemistry — reaction mechanisms, stereochemistry, addition and condensation polymers, and spectroscopic identification."
 slug: organic-chemistry-advanced
 ---
 
@@ -765,3 +763,4 @@ Product: propan-2-ol ($\mathrm{CH_3CH(OH)CH_3}$). Minor elimination product: pro
 - **IR, MS, and NMR spectroscopy** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Electron configurations and orbital theory** → Review [./atomic-theory](./atomic-theory)
 - **Stoichiometry of polymer reactions** → Review [./organic-chemistry/organic-chemistry](./organic-chemistry/organic-chemistry)
+

@@ -1,8 +1,6 @@
 ---
 title: Treatment Evaluation
-description:
-  'Comprehensive coverage of evaluating psychological treatments including ethics, effectiveness,
-  cultural considerations, drug therapy versus psychotherapy, and key research for IB Psychology.'
+description: "Comprehensive coverage of evaluating psychological treatments including ethics, effectiveness, cultural considerations, drug therapy versus psychotherapy, and key research for IB Psychology."
 slug: treatment-evaluation
 ---
 
@@ -254,3 +252,4 @@ reliability and validity of psychiatric diagnoses have been questioned:
 </details>
 
 For an overview of abnormal psychology topics, see [Abnormal Psychology](../abnormal-psychology).
+

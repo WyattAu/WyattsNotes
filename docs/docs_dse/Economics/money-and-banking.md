@@ -1,5 +1,6 @@
 ---
 title: Money and Banking
+description: "DSE Economics notes on money and banking covering functions of money, banking system, money creation, central bank roles, and monetary policy transmission."
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]
@@ -1180,3 +1181,4 @@ less demand-pull pressure, inflation gradually falls toward the target.
 If you get this wrong, revise: [Transmission Mechanism of Monetary Policy](#transmission-mechanism-of-monetary-policy)
 
 </details>
+

@@ -1,8 +1,6 @@
 ---
 title: Human Physiology
-description:
-  IB Biology — digestion, cardiovascular system, immune system, gas exchange, neurones, synapses,
-  hormones, homeostasis, and reproduction.
+description: "IB Biology — digestion, cardiovascular system, immune system, gas exchange, neurones, synapses, hormones, homeostasis, and reproduction."
 slug: human-physiology
 ---
 
@@ -780,3 +778,4 @@ in a person who has been drinking large volumes of water versus a person who is 
 - **Enzymes and metabolism** --> Review [./molecular-biology](./molecular-biology)
 - **Genetics and inheritance** --> Review [./genetics](./genetics)
 - **Plant hormones and transport** --> Review [./plant-biology](./plant-biology)
+

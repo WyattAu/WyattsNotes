@@ -1,8 +1,6 @@
 ---
 title: Language and Thought
-description:
-  'Detailed coverage of the Sapir-Whorf hypothesis, linguistic relativity, bilingualism, language
-  acquisition theories, and key research for IB Psychology.'
+description: "Detailed coverage of the Sapir-Whorf hypothesis, linguistic relativity, bilingualism, language acquisition theories, and key research for IB Psychology."
 slug: language-and-thought
 ---
 
@@ -263,3 +261,4 @@ structured context for communication.
 
 For an overview of cognitive topics, see
 [Cognitive Level of Analysis](../cognitive-level-of-analysis).
+

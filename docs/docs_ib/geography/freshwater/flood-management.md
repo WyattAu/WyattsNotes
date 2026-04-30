@@ -1,8 +1,6 @@
 ---
 title: Flood Management
-description:
-  'Flood causes, hard and soft engineering approaches, integrated flood management, and case studies
-  for IB Geography.'
+description: "Flood causes, hard and soft engineering approaches, integrated flood management, and case studies for IB Geography."
 slug: flood-management
 ---
 
@@ -276,3 +274,4 @@ local context.
 For related topics, see [./drainage-basins-and-hydrology](./drainage-basins-and-hydrology) and
 [./water-scarcity-and-management](./water-scarcity-and-management). The parent topic page is at
 [../freshwater-issues](../freshwater-issues).
+

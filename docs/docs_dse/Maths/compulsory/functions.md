@@ -1,5 +1,6 @@
 ---
 title: Functions
+description: "DSE Mathematics functions notes covering domain and range, function notation, linear functions, quadratic functions, and graph sketching techniques."
 date: 2025-06-03T16:18:52.976Z
 tags:
   - Maths
@@ -853,3 +854,4 @@ $f^{-1}(3) + f(3)$.
 - $f^{-1}(3) + f(3) = 3 + 3 = 6$.
 </details>
 </details>
+

@@ -1,5 +1,6 @@
 ---
 title: Chemistry - Atomic Structure and Periodic Table
+description: "DSE Chemistry notes on atomic structure and the periodic table covering subatomic particles, electron configuration, periodic trends, and group properties."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -518,3 +519,4 @@ The shared electron pair is displaced towards the more electronegative chlorine 
 dipole with a partial negative charge on Cl and a partial positive charge on H.
 
 </details>
+

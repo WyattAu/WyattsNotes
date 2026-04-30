@@ -1,5 +1,6 @@
 ---
 title: Plant Biology
+description: "DSE Biology plant biology notes covering photosynthesis, leaf structure, transpiration, transport in plants, plant hormones, and reproduction."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -962,3 +963,4 @@ If light were switched off:
 7. Existing TP and RuBP would be used up quickly, and the Calvin cycle would cease.
 
 </details>
+

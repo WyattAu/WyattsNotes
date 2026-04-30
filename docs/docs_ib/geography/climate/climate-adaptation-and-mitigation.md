@@ -1,8 +1,6 @@
 ---
 title: Climate Adaptation and Mitigation
-description:
-  'Adaptation strategies, mitigation strategies, Paris Agreement, COP summits, NDCs, and case
-  studies for IB Geography.'
+description: "Adaptation strategies, mitigation strategies, Paris Agreement, COP summits, NDCs, and case studies for IB Geography."
 slug: climate-adaptation-and-mitigation
 ---
 
@@ -246,3 +244,4 @@ dimensions and identify co-benefits and trade-offs.
 For related topics, see [./atmospheric-systems](./atmospheric-systems) and
 [./carbon-cycle-and-sequestration](./carbon-cycle-and-sequestration). The parent topic page is at
 [../climate-change](../climate-change).
+

@@ -1,8 +1,6 @@
 ---
 title: Game Theory and Behavioural Economics
-description:
-  IB Economics — game theory fundamentals and behavioural economics concepts including heuristics,
-  biases, and nudge theory.
+description: "IB Economics — game theory fundamentals and behavioural economics concepts including heuristics, biases, and nudge theory."
 slug: game-theory-and-behavioural-economics
 ---
 
@@ -441,3 +439,4 @@ than actively changing it.
 - _Manipulation vs. guidance_: the line between a helpful nudge and manipulation depends on whether
 the default serves the individual's likely preferences.
 </details>
+

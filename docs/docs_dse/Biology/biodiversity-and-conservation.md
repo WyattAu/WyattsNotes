@@ -1,5 +1,6 @@
 ---
 title: Biodiversity and Conservation
+description: "DSE Biology biodiversity and conservation notes covering classification systems, five-kingdom system, binomial nomenclature, species richness, and conservation strategies."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -925,3 +926,4 @@ If you get this wrong, revise: Human Impact -- Climate Change; Conservation Stra
 2. **Ocean acidification:** Dissolved CO$_2$ forms carbonic acid, lowering ocean pH. This impairs the ability of corals, molluscs, and other calcifying organisms to build calcium carbonate shells and skeletons, threatening coral reef ecosystems. **Mitigation:** Reduce CO$_2$ emissions (transition to renewable energy); establish marine protected areas to reduce additional stress on coral reefs.
 
 </details>
+

@@ -1,8 +1,6 @@
 ---
 title: Molecular Biology
-description:
-  IB Biology — water, carbohydrates, lipids, proteins, enzymes, DNA structure, replication,
-  transcription, and translation.
+description: "IB Biology — water, carbohydrates, lipids, proteins, enzymes, DNA structure, replication, transcription, and translation."
 slug: molecular-biology
 ---
 
@@ -726,3 +724,4 @@ $3.5\;\mathrm{J/(g \cdot ^\circ C)}$), calculate: (a) the mass of water evaporat
 - **Genetic inheritance and gene expression** --> Review [./genetics](./genetics)
 - **Plant biochemistry and photosynthesis** --> Review [./plant-biology](./plant-biology)
 - **Evolution and molecular evidence** --> Review [./ecology](./ecology)
+

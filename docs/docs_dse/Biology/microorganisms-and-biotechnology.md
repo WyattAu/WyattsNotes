@@ -1,5 +1,6 @@
 ---
 title: Microorganisms and Biotechnology
+description: "DSE Biology microorganisms and biotechnology notes covering bacteria, fungi, viruses, culturing techniques, biotechnology applications, and genetic engineering."
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Biology]
 categories: [DSE, Biology]
@@ -886,3 +887,4 @@ Yoghurt is produced using _Lactobacillus bulgaricus_ and _Streptococcus thermoph
 6. Yoghurt is refrigerated to slow further fermentation.
 
 </details>
+

@@ -1,10 +1,7 @@
 ---
 id: dse-chemistry-energetics
 title: Chemistry - Energetics / Thermochemistry
-description:
-  DSE Chemistry notes covering enthalpy changes, standard enthalpy of
-  formation/combustion/neutralisation, Hess's Law and energy cycles, bond enthalpies, calorimetry,
-  Born-Haber cycles, entropy, and Gibbs free energy.
+description: "DSE Chemistry notes covering enthalpy changes, standard enthalpy of formation/combustion/neutralisation, Hess's Law and energy cycles, bond enthalpies, calorimetry, Born-Haber cycles, entropy, and Gibbs free energy."
 slug: energetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -884,3 +881,4 @@ $\Delta H = -5.936 / 0.100 = -59.4 \mathrm{ kJ/mol}$
 | $\Delta G = \Delta H - T\Delta S$                                                                 | Gibbs free energy                  |
 | $T = \Delta H / \Delta S$ (when $\Delta G = 0$)                                                   | Feasibility temperature            |
 | $\Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{latt}} + \Delta H_{\mathrm{hyd}}$                    | Solution enthalpy                  |
+

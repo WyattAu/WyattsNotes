@@ -1,8 +1,6 @@
 ---
 title: Neuroplasticity and Neurotransmission
-description:
-  'Detailed coverage of synaptic transmission, neurotransmitters, agonists and antagonists,
-  neuroplasticity mechanisms, and key research studies for IB Psychology.'
+description: "Detailed coverage of synaptic transmission, neurotransmitters, agonists and antagonists, neuroplasticity mechanisms, and key research studies for IB Psychology."
 slug: neuroplasticity-and-neurotransmission
 ---
 
@@ -342,3 +340,4 @@ other levels:
 
 For an overview of these topics at the biological level of analysis, see
 [Biological Level of Analysis](../biological-level-of-analysis).
+

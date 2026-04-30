@@ -1,5 +1,6 @@
 ---
 title: Organic Chemistry
+description: "DSE Chemistry organic chemistry notes covering hydrocarbons, functional groups, reaction mechanisms, polymers, and organic synthesis with worked examples."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -1836,3 +1837,4 @@ $$\mathrm{Theoretical\ mass} = 0.0676 \times 102 = 6.90 \mathrm{ g}$$
 $$\mathrm{Percentage\ yield} = \frac{4.8}{6.90} \times 100\% = 69.6\%$$
 
 </details>
+

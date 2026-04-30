@@ -1,5 +1,6 @@
 ---
 title: Electrical Circuits
+description: "DSE Physics electrical circuits notes covering Ohm's law, series and parallel circuits, resistance, Kirchhoff's laws, and electrical energy and power."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -618,3 +619,4 @@ $$V = \varepsilon - Ir = 12 - 1.60 \times 0.5 = 12 - 0.80 = 11.2 \mathrm{ V}$$
 </details>
 
 If you get this wrong, revise: Series and Parallel Circuits / Internal Resistance
+

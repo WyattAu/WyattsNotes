@@ -1,5 +1,6 @@
 ---
 title: Human Physiology
+description: "DSE Biology human physiology notes covering nutrition, digestive system, circulatory system, respiratory system, excretory system, and nervous system."
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Biology]
 categories: [DSE, Biology]
@@ -1288,3 +1289,4 @@ If you get this wrong, revise: Nervous Coordination -- Synapses
 **Unidirectional transmission** occurs because only the pre-synaptic terminal contains synaptic vesicles, only the post-synaptic membrane has the specific receptor proteins, and Ca$^{2+}$ channels (which trigger release) are only present on the pre-synaptic side.
 
 </details>
+

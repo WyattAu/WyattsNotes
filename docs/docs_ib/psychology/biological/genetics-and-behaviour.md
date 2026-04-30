@@ -1,8 +1,6 @@
 ---
 title: Genetics and Behaviour
-description:
-  'Comprehensive coverage of twin studies, adoption studies, heritability, gene-environment
-  interaction, epigenetics, and key research for IB Psychology.'
+description: "Comprehensive coverage of twin studies, adoption studies, heritability, gene-environment interaction, epigenetics, and key research for IB Psychology."
 slug: genetics-and-behaviour
 ---
 
@@ -272,3 +270,4 @@ medical assessments.
 
 For an overview of biological topics, see
 [Biological Level of Analysis](../biological-level-of-analysis).
+

@@ -1,8 +1,6 @@
 ---
 title: Thinking and Decision Making
-description:
-  'Detailed coverage of heuristics, cognitive biases, dual-process theories, prospect theory, and
-  key research by Tversky, Kahneman, and Ariely for IB Psychology.'
+description: "Detailed coverage of heuristics, cognitive biases, dual-process theories, prospect theory, and key research by Tversky, Kahneman, and Ariely for IB Psychology."
 slug: thinking-and-decision-making
 ---
 
@@ -275,3 +273,4 @@ irrationalities in everyday decision making. Key findings include:
 
 For an overview of cognitive topics, see
 [Cognitive Level of Analysis](../cognitive-level-of-analysis).
+

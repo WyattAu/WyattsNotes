@@ -1,8 +1,6 @@
 ---
 title: Measurement and Data Processing
-description:
-  IB Chemistry — uncertainty, significant figures, error propagation, graphical analysis, and
-  spectroscopy.
+description: "IB Chemistry — uncertainty, significant figures, error propagation, graphical analysis, and spectroscopy."
 slug: measurement-and-data-processing
 ---
 
@@ -835,3 +833,4 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
 - **Organic chemistry spectroscopic identification** → Review [./organic-chemistry-advanced](./organic-chemistry-advanced)
 - **Acid-base calculations and pH** → Review [./acids-bases-advanced](./acids-bases-advanced)
 - **Equilibrium constant expressions** → Review [./equilibrium/equilibrium](./equilibrium/equilibrium)
+

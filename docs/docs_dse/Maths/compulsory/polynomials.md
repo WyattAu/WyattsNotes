@@ -1,5 +1,6 @@
 ---
 title: Polynomials
+description: "DSE Mathematics polynomial notes covering polynomial division, factor theorem, remainder theorem, roots of equations, and polynomial graphs."
 date: 2025-06-03T13:29:40.310Z
 tags:
   - Maths
@@ -715,3 +716,4 @@ Dividing: $f(x) = (x+1)(x^2 - 4x + 4) = (x+1)(x-2)^2$.
 
 </details>
 </details>
+

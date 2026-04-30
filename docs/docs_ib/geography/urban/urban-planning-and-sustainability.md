@@ -1,8 +1,6 @@
 ---
 title: Urban Planning and Sustainability
-description:
-  'Sustainable urban development, smart cities, transit-oriented development, green infrastructure,
-  mixed-use development, and case studies for IB Geography.'
+description: "Sustainable urban development, smart cities, transit-oriented development, green infrastructure, mixed-use development, and case studies for IB Geography."
 slug: urban-planning-and-sustainability
 ---
 
@@ -247,3 +245,4 @@ consider the specific context of the case study and assess the transferability o
 For related topics, see [./urbanisation-trends-and-patterns](./urbanisation-trends-and-patterns) and
 [./urban-environmental-quality](./urban-environmental-quality). The parent topic page is at
 [../urban-environments](../urban-environments).
+

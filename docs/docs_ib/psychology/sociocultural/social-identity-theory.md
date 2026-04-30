@@ -1,8 +1,6 @@
 ---
 title: Social Identity Theory
-description:
-  "Comprehensive coverage of Tajfel and Turner's social identity theory, in-group and out-group
-  dynamics, realistic conflict theory, and key research for IB Psychology."
+description: "Comprehensive coverage of Tajfel and Turner's social identity theory, in-group and out-group dynamics, realistic conflict theory, and key research for IB Psychology."
 slug: social-identity-theory
 ---
 
@@ -225,3 +223,4 @@ Social identity theory has important practical applications in several domains:
 
 For an overview of sociocultural topics, see
 [Sociocultural Level of Analysis](../sociocultural-level-of-analysis).
+

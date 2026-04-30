@@ -1,5 +1,6 @@
 ---
 title: Inequalities
+description: "DSE Mathematics inequalities notes covering linear inequalities, quadratic inequalities, absolute value inequalities, systems of inequalities, and optimization problems."
 date: 2025-06-03T16:21:00.000Z
 tags:
   - Maths
@@ -613,3 +614,4 @@ Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
 
 </details>
 </details>
+

@@ -1,8 +1,6 @@
 ---
 title: Carbon Cycle and Sequestration
-description:
-  'Carbon cycle sources, sinks, fluxes, carbon sequestration methods, REDD+, carbon trading, and
-  case studies for IB Geography.'
+description: "Carbon cycle sources, sinks, fluxes, carbon sequestration methods, REDD+, carbon trading, and case studies for IB Geography."
 slug: carbon-cycle-and-sequestration
 ---
 
@@ -233,3 +231,4 @@ as a complement to, not a substitute for, emission reduction.
 For related topics, see [./atmospheric-systems](./atmospheric-systems) and
 [./climate-adaptation-and-mitigation](./climate-adaptation-and-mitigation). The parent topic page is
 at [../climate-change](../climate-change).
+

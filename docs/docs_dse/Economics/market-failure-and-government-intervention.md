@@ -1,5 +1,6 @@
 ---
 title: Market Failure and Government Intervention
+description: "DSE Economics notes on market failure and government intervention covering externalities, public goods, information asymmetry, taxation, and regulation."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1134,3 +1135,4 @@ and who loses) are not captured.
 If you get this wrong, revise: [Cost-Benefit Analysis of Government Intervention](#cost-benefit-analysis-of-government-intervention)
 
 </details>
+

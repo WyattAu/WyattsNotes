@@ -1,5 +1,6 @@
 ---
 title: Chemistry - Chemical Bonding
+description: "DSE Chemistry chemical bonding notes covering ionic bonding, covalent bonding, giant covalent structures, metallic bonding, and intermolecular forces."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -500,3 +501,4 @@ the same charge come adjacent to each other. The resulting electrostatic repulsi
 like charges causes the crystal to crack or shatter.
 
 </details>
+

@@ -1,5 +1,6 @@
 ---
 title: Sequences and Series
+description: "DSE Mathematics sequences and series notes covering arithmetic sequences, geometric sequences, series summation, sigma notation, and convergence tests."
 date: 2025-08-16T17:59:54.768Z
 tags:
   - maths
@@ -974,3 +975,4 @@ defined sequence.
 </details>
 
 </details>
+

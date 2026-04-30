@@ -1,8 +1,6 @@
 ---
 title: Macroeconomics
-description:
-  IB Economics — GDP, inflation, unemployment, aggregate demand and supply, fiscal and monetary
-  policy.
+description: "IB Economics — GDP, inflation, unemployment, aggregate demand and supply, fiscal and monetary policy."
 slug: macroeconomics
 ---
 
@@ -403,3 +401,4 @@ firms to cut employment.
 creating an excess supply of labour.
 
 </details>
+

@@ -1,7 +1,6 @@
 ---
 title: Matrices
-description:
-  IB Mathematics — matrix operations, determinants, inverses, transformations, and eigenvalues.
+description: "IB Mathematics — matrix operations, determinants, inverses, transformations, and eigenvalues."
 slug: matrices
 ---
 
@@ -629,3 +628,4 @@ Factor: $-k^3 + 9k - 8 = -(k-1)(k^2 + k - 8)$. The discriminant of $k^2 + k - 8$
 - **Algebraic manipulation and factorisation** → Review algebra fundamentals
 - **Vectors and linear independence** → Review [./vectors](./vectors) for related concepts
 - **Determinants and their geometric meaning** → Review [./matrices](./matrices) (section on Determinants and Area)
+

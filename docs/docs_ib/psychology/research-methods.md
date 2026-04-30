@@ -1,8 +1,6 @@
 ---
 title: Research Methods in Psychology
-description:
-  Comprehensive coverage of research methods for IB Psychology, including research designs,
-  variables, sampling, reliability, validity, ethics, and data analysis.
+description: "Comprehensive coverage of research methods for IB Psychology, including research designs, variables, sampling, reliability, validity, ethics, and data analysis."
 slug: research-methods
 ---
 
@@ -411,3 +409,4 @@ Association (APA). Key conventions include:
 - **Qualitative research:** The qualitative methods covered in
   [Qualitative Research (HL)](./qualitative-research) complement the quantitative methods discussed
   here.
+

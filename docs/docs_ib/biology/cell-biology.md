@@ -1,8 +1,6 @@
 ---
 title: Cell Biology
-description:
-  IB Biology — cell theory, prokaryotic and eukaryotic cells, membrane structure, organelles, and
-  cell division.
+description: "IB Biology — cell theory, prokaryotic and eukaryotic cells, membrane structure, organelles, and cell division."
 slug: cell-biology
 ---
 
@@ -681,3 +679,4 @@ function. Use the concept of surface-area-to-volume ratio in your explanation.
 - **Membrane transport and ATP use** --> Review [./human-physiology](./human-physiology)
 - **Osmosis and water potential** --> Review [./plant-biology](./plant-biology)
 - **Evolution and natural selection** --> Review [./ecology](./ecology)
+

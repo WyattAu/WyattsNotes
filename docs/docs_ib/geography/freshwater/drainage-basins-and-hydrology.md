@@ -1,8 +1,6 @@
 ---
 title: Drainage Basins and Hydrology
-description:
-  'Drainage basin systems, the hydrological cycle, storm hydrograph interpretation, and factors
-  affecting discharge for IB Geography.'
+description: "Drainage basin systems, the hydrological cycle, storm hydrograph interpretation, and factors affecting discharge for IB Geography."
 slug: drainage-basins-and-hydrology
 ---
 
@@ -243,3 +241,4 @@ For an overview of freshwater issues and management, see
 [./water-scarcity-and-management](./water-scarcity-and-management) and
 [./flood-management](./flood-management). The parent topic page is at
 [../freshwater-issues](../freshwater-issues).
+

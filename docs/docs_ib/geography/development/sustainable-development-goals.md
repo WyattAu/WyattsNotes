@@ -1,8 +1,6 @@
 ---
 title: Sustainable Development Goals
-description:
-  'The SDG framework, geography-relevant SDGs, progress tracking, implementation challenges, SDG
-  conflicts, and case studies for IB Geography.'
+description: "The SDG framework, geography-relevant SDGs, progress tracking, implementation challenges, SDG conflicts, and case studies for IB Geography."
 slug: sustainable-development-goals
 ---
 
@@ -273,3 +271,4 @@ might be managed.
 For related topics, see [./measuring-development](./measuring-development) and
 [./trade-and-aid](./trade-and-aid). The parent topic page is at
 [../economic-development](../economic-development).
+

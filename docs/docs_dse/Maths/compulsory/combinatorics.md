@@ -1,5 +1,6 @@
 ---
 title: Combinatorics
+description: "DSE Mathematics combinatorics notes covering permutations, combinations, counting principles, binomial theorem, and probability applications."
 date: 2025-06-03T11:59:39.630Z
 tags:
   - Maths
@@ -768,3 +769,4 @@ $\lq 1$ of each type?
 $\binom{4+8-1}{4} = \binom{11}{4} = 330$.
 </details>
 </details>
+

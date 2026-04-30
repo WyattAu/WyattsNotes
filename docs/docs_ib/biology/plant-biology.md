@@ -1,8 +1,6 @@
 ---
 title: Plant Biology
-description:
-  IB Biology — plant structure, transport in plants, reproduction, growth, phototropism, and
-  phytochromes.
+description: "IB Biology — plant structure, transport in plants, reproduction, growth, phototropism, and phytochromes."
 slug: plant-biology
 ---
 
@@ -717,3 +715,4 @@ resulting zygote and endosperm after fertilisation.
 - **Genetics and meiosis** --> Review [./genetics](./genetics)
 - **Human physiology -- gas exchange** --> Review [./human-physiology](./human-physiology)
 - **Ecosystems and energy flow** --> Review [./ecology](./ecology)
+

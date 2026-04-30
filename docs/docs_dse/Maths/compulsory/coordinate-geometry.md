@@ -1,5 +1,6 @@
 ---
 title: Coordinate Geometry
+description: "DSE Mathematics coordinate geometry notes covering straight lines, circles, equations of curves, distance formula, midpoint formula, and locus problems."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -623,3 +624,4 @@ The equation of the common chord is $6x - 8y + 23 = 0$.
 - **Quadratics:** The discriminant is used to determine the nature of circle-line intersections. See [quadratics.md](./quadratics.md).
 - **Functions:** Transformations of graphs apply equally to circles and lines. See [functions-advanced.md](./functions-advanced.md).
 - **Trigonometry:** The angle between two lines uses the tangent formula, which connects to trigonometric identities.
+

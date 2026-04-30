@@ -1,5 +1,6 @@
 ---
 title: Market Structure and Theory of the Firm
+description: "DSE Economics notes on market structure and the theory of the firm covering perfect competition, monopoly, oligopoly, monopolistic competition, and profit maximisation."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1540,3 +1541,4 @@ halves the price, approaching the competitive outcome despite there being only o
 If you get this wrong, revise: [Contestable Markets Theory](#contestable-markets-theory)
 
 </details>
+

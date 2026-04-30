@@ -1,8 +1,6 @@
 ---
 title: Genetics
-description:
-  IB Biology — meiosis, Mendelian genetics, inheritance patterns, gene expression, mutations,
-  biotechnology, PCR, and genetic modification.
+description: "IB Biology — meiosis, Mendelian genetics, inheritance patterns, gene expression, mutations, biotechnology, PCR, and genetic modification."
 slug: genetics
 ---
 
@@ -745,3 +743,4 @@ student could modify the experiment to increase confidence in their conclusion.
 - **Evolution and natural selection** --> Review [./ecology](./ecology)
 - **Protein synthesis and gene expression** --> Review [./molecular-biology](./molecular-biology)
 - **Enzymes and metabolic pathways** --> Review [./human-physiology](./human-physiology)
+

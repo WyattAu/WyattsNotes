@@ -1,8 +1,6 @@
 ---
 title: Development Economics
-description:
-  IB Economics — development indicators, poverty, inequality, aid, FDI, debt, and sustainable
-  development.
+description: "IB Economics — development indicators, poverty, inequality, aid, FDI, debt, and sustainable development."
 slug: development-economics
 ---
 
@@ -385,3 +383,4 @@ Implications for policy:
 - Country X demonstrates that effective social policy can achieve high human development even at
 moderate income levels.
 </details>
+

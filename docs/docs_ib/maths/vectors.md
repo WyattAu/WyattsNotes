@@ -1,7 +1,6 @@
 ---
 title: Vectors
-description:
-  IB Mathematics — vector algebra, dot and cross products, lines and planes in three dimensions.
+description: "IB Mathematics — vector algebra, dot and cross products, lines and planes in three dimensions."
 slug: vectors
 ---
 
@@ -648,3 +647,4 @@ centre of the square base.
 - **Algebraic solving of simultaneous equations** → Review [./matrices](./matrices) (section on Solving Systems)
 - **Scalar and vector product properties** → Review [./vectors](./vectors) (sections on Dot Product and Cross Product)
 - **Magnitude and unit vectors** → Review [./vectors](./vectors) (section on Magnitude and Unit Vectors)
+

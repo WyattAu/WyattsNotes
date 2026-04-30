@@ -1,8 +1,6 @@
 ---
 title: Atomic Theory
-description:
-  IB Chemistry — atomic models from Dalton to quantum mechanics, electron configuration, orbital
-  theory, and periodic properties.
+description: "IB Chemistry — atomic models from Dalton to quantum mechanics, electron configuration, orbital theory, and periodic properties."
 slug: atomic-theory
 ---
 
@@ -721,3 +719,4 @@ $\mathrm{Co}^{2+}$ is **paramagnetic** with three unpaired electrons.
 - **Periodic trends (IE, EN, atomic radius)** → Review [./periodicity](./periodicity)
 - **Spectroscopy and energy level calculations** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Redox half-equations and oxidation states** → Review [./redox-advanced](./redox-advanced)
+

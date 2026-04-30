@@ -1,8 +1,6 @@
 ---
 title: Acids and Bases (Advanced)
-description:
-  IB Chemistry — advanced pH calculations, buffer solutions, indicator theory, acid deposition, and
-  solubility products.
+description: "IB Chemistry — advanced pH calculations, buffer solutions, indicator theory, acid deposition, and solubility products."
 slug: acids-bases-advanced
 ---
 
@@ -812,3 +810,4 @@ A suitable indicator: phenolphthalein (8.3--10.0).
 - **Stoichiometry and mole calculations** → Review [./stoichiometry/stoichiometry](./stoichiometry/stoichiometry)
 - **Uncertainty propagation in titrations** → Review [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Electron configurations and ion formation** → Review [./atomic-theory](./atomic-theory)
+

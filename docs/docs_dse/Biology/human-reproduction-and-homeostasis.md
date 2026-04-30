@@ -1,5 +1,6 @@
 ---
 title: Human Reproduction and Homeostasis
+description: "DSE Biology human reproduction and homeostasis notes covering male and female reproductive systems, menstrual cycle, homeostatic mechanisms, and feedback loops."
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1185,3 +1186,4 @@ $$2\mathrm{NH}_3 + \mathrm{CO}_2 \to \mathrm{CO(NH}_2)_2 + \mathrm{H}_2\mathrm{O
 - Why deamination is necessary and why ammonia must be converted to urea
 
 </details>
+

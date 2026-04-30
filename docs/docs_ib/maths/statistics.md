@@ -1,8 +1,6 @@
 ---
 title: Statistics
-description:
-  IB Mathematics — descriptive statistics, correlation, regression, conditional probability, and
-  combinatorics.
+description: "IB Mathematics — descriptive statistics, correlation, regression, conditional probability, and combinatorics."
 slug: statistics
 ---
 
@@ -606,3 +604,4 @@ Despite a positive test, there is only about a 61.5% chance the patient has the 
 - **A-Level Statistics:** [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
 - **DSE Dispersion:** [Dispersion](https://academics.wyattau.com/docs/dse/Maths/compulsory/dispersion)
 - **University Statistics:** [Probability and Statistics](https://university.wyattau.com/docs/mathematics/probability-and-statistics)
+

@@ -1,8 +1,6 @@
 ---
 title: Periodicity
-description:
-  IB Chemistry — periodic trends, group properties, period 3 elements, and transition metal
-  chemistry.
+description: "IB Chemistry — periodic trends, group properties, period 3 elements, and transition metal chemistry."
 slug: periodicity
 ---
 
@@ -553,3 +551,4 @@ In anhydrous $\mathrm{CuSO}_4$, no water ligands are present, so no crystal fiel
 - **Acid-base character of oxides** → Review [./acids-bases-advanced](./acids-bases-advanced)
 - **Oxidation states and redox reactions** → Review [./redox-advanced](./redox-advanced)
 - **Bonding and structure (ionic vs covalent)** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
+

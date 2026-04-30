@@ -1,5 +1,6 @@
 ---
 title: Permutations and Combinations
+description: "DSE Mathematics notes on permutations and combinations covering factorial notation, arrangement problems, selection problems, and the binomial expansion."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -560,3 +561,4 @@ $$420 - 120 = 300$$
 - **Probability:** Counting techniques form the foundation of probability calculations. See the probability notes.
 - **Binomial Theorem:** The connection between Pascal's triangle and binomial coefficients extends to the binomial expansion and the binomial distribution.
 - **Quadratics:** Factorials and combinatorial expressions sometimes simplify to quadratic forms. See [quadratics.md](./quadratics.md).
+

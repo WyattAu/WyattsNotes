@@ -1,8 +1,6 @@
 ---
 title: Chemical Bonding (Advanced)
-description:
-  IB Chemistry — VSEPR theory, hybridization, molecular orbital theory, metallic bonding, and band
-  theory.
+description: "IB Chemistry — VSEPR theory, hybridization, molecular orbital theory, metallic bonding, and band theory."
 slug: chemical-bonding-advanced
 ---
 
@@ -631,3 +629,4 @@ point, hardness, and tensile strength compared to sodium.
 - **States of matter and physical properties** → Review [./states-of-matter](./states-of-matter)
 - **Periodic trends in electronegativity** → Review [./periodicity](./periodicity)
 - **Organic molecular geometry** → Review [./organic-chemistry-advanced](./organic-chemistry-advanced)
+
