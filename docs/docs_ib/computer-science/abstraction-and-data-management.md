@@ -978,8 +978,8 @@ while allowing each subclass to provide its own behavior.
 <summary>Worked Example: Designing an Inheritance Hierarchy</summary>
 
 **Scenario:** A transport company manages vehicles. All vehicles have a registration number, make, and
-year. Cars have a number of seats and calculate daily rental as $\$50 + (\mathrm{seats} - 4) \times 10$.
-Trucks have a payload in tonnes and calculate daily rental as $\$80 + \mathrm{payload} \times 25$.
+year. Cars have a number of seats and calculate daily rental as `USD 50 + (seats - 4) * 10`.
+Trucks have a payload in tonnes and calculate daily rental as `USD 80 + payload * 25`.
 Design an abstract superclass and two subclasses.
 
 **Solution:**
