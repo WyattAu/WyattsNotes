@@ -7,7 +7,7 @@ tags:
 categories:
   - DSE
   - Physics
-slug: dse-physics-magnetism-and-electromagnetism
+slug: magnetism-and-electromagnetism
 ---
 
 ## Magnetic Fields

@@ -7,7 +7,7 @@ tags:
 categories:
   - DSE
   - Physics
-slug: dse-physics-forces-and-motion
+slug: forces-and-motion
 ---
 
 ## Newton's Laws of Motion

@@ -7,7 +7,7 @@ tags:
 categories:
   - DSE
   - Physics
-slug: dse-physics-waves-and-sound
+slug: waves-and-sound
 ---
 
 ## Wave Properties

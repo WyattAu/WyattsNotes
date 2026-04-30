@@ -7,7 +7,7 @@ tags:
 categories:
   - DSE
   - Physics
-slug: dse-physics-electrical-circuits
+slug: electrical-circuits
 ---
 
 ## Electric Current
