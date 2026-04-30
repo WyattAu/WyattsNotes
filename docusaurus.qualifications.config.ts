@@ -122,6 +122,7 @@ const config: Config = {
         path: 'docs/docs_qualifications',
         routeBasePath: '/docs/qualifications',
         sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_qualifications/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -141,7 +142,6 @@ const config: Config = {
   themes: [
     '@docusaurus/theme-live-codeblock',
     '@docusaurus/theme-mermaid',
-    'docusaurus-theme-redoc',
   ],
 
   themeConfig: {

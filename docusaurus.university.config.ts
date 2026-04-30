@@ -122,6 +122,7 @@ const config: Config = {
         path: 'docs/docs_university',
         routeBasePath: '/docs',
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -141,7 +142,6 @@ const config: Config = {
   themes: [
     '@docusaurus/theme-live-codeblock',
     '@docusaurus/theme-mermaid',
-    'docusaurus-theme-redoc',
   ],
 
   themeConfig: {
@@ -168,7 +168,7 @@ const config: Config = {
       items: [
         { to: '/docs/intro', label: 'University', position: 'left' },
         {
-          href: 'https://academics.wyattsnotes.wyattau.com',
+          href: 'https://academics.wyattau.com',
           label: 'Academics',
           position: 'right',
         },
@@ -220,7 +220,7 @@ const config: Config = {
           items: [
             {
               label: 'Academics',
-              href: 'https://academics.wyattsnotes.wyattau.com',
+              href: 'https://academics.wyattau.com',
             },
             {
               label: 'A-Levels',

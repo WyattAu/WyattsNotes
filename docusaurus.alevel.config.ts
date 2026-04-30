@@ -122,6 +122,7 @@ const config: Config = {
         path: 'docs/docs_alevel',
         routeBasePath: '/docs/alevel',
         sidebarPath: require.resolve('./sidebars/sidebar_alevel.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_alevel/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -141,7 +142,6 @@ const config: Config = {
   themes: [
     '@docusaurus/theme-live-codeblock',
     '@docusaurus/theme-mermaid',
-    'docusaurus-theme-redoc',
   ],
 
   themeConfig: {

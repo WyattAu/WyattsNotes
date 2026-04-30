@@ -122,6 +122,7 @@ const config: Config = {
         path: 'docs/docs_ib',
         routeBasePath: '/docs/ib',
         sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_ib/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -132,6 +133,7 @@ const config: Config = {
         path: 'docs/docs_dse',
         routeBasePath: '/docs/dse',
         sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_dse/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -151,7 +153,6 @@ const config: Config = {
   themes: [
     '@docusaurus/theme-live-codeblock',
     '@docusaurus/theme-mermaid',
-    'docusaurus-theme-redoc',
   ],
 
   themeConfig: {

@@ -122,6 +122,7 @@ const config: Config = {
         path: 'docs/docs_cpp',
         routeBasePath: '/docs/cpp',
         sidebarPath: require.resolve('./sidebars/sidebar_cpp.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_programming/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -132,6 +133,7 @@ const config: Config = {
         path: 'docs/docs_languages',
         routeBasePath: '/docs/languages',
         sidebarPath: require.resolve('./sidebars/sidebar_languages.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_programming/{dir}',
         ...commonDocsPluginConfig,
       },
     ],
@@ -151,7 +153,6 @@ const config: Config = {
   themes: [
     '@docusaurus/theme-live-codeblock',
     '@docusaurus/theme-mermaid',
-    'docusaurus-theme-redoc',
   ],
 
   themeConfig: {
@@ -184,7 +185,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://academics.wyattsnotes.wyattau.com',
+          href: 'https://academics.wyattau.com',
           label: 'Academics',
           position: 'right',
         },
@@ -222,7 +223,7 @@ const config: Config = {
             },
             {
               label: 'Academics',
-              href: 'https://academics.wyattsnotes.wyattau.com',
+              href: 'https://academics.wyattau.com',
             },
             {
               label: 'GitHub',
