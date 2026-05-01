@@ -14,7 +14,7 @@ Complete revision notes for IB Mathematics, covering the full syllabus with work
 
 - **[Number and Algebra](./Number-and-algebra/Number-and-algebra)** — Sequences, series, binomial theorem, and proof by induction
 - **[Complex Numbers](./Number-and-algebra/Complex)** — Complex arithmetic, polar form, and De Moivre's theorem
-- **[Complex Numbers (Overview)](./complex-numbers)** — Complex arithmetic, polar form, De Moivre's theorem, and roots of unity
+- **[Complex Numbers (Overview)](complex-numbers)** — Complex arithmetic, polar form, De Moivre's theorem, and roots of unity
 
 ### Functions and Equations
 
@@ -28,7 +28,7 @@ Complete revision notes for IB Mathematics, covering the full syllabus with work
 
 ### Calculus
 
-- **[Calculus](./calculus)** — Limits, differentiation, integration, and their applications
+- **[Calculus](calculus)** — Limits, differentiation, integration, and their applications
 - **[Differentiation](./calculus/differentiation-depth)** — Differentiation rules, techniques, and applications
 - **[Integration Techniques](./calculus/integration-techniques)** — Integration techniques, definite integrals, area and volume, and applications
 - **[Integration](./calculus/integration-depth)** — Further integration methods and applications
@@ -39,7 +39,7 @@ Complete revision notes for IB Mathematics, covering the full syllabus with work
 
 - **[Probability](./Probability-Statistics/Probability)** — Probability theory, conditional probability, Bayes' theorem, and distributions
 - **[Statistics](./Probability-Statistics/Statistics)** — Descriptive statistics, correlation, regression, and hypothesis testing
-- **[Statistics (Overview)](./statistics)** — Descriptive statistics, correlation, regression, conditional probability, and combinatorics
+- **[Statistics (Overview)](statistics)** — Descriptive statistics, correlation, regression, conditional probability, and combinatorics
 
 ### Vectors and Matrices
 
@@ -49,13 +49,13 @@ Complete revision notes for IB Mathematics, covering the full syllabus with work
 
 ### Proof and Logic
 
-- **[Proof](./proof)** — Direct proof, contradiction, induction, counterexamples, and proof by exhaustion
-- **[Proof and Logic](./proof-and-logic)** — Logical reasoning and proof techniques
+- **[Proof](proof)** — Direct proof, contradiction, induction, counterexamples, and proof by exhaustion
+- **[Proof and Logic](proof-and-logic)** — Logical reasoning and proof techniques
 - **[Logic](./Discrete-maths/logic)** — Propositional and predicate logic
 
 ## Exam Resources
 
-- **[Syllabus](./Syllabus)** — Full IB Mathematics syllabus with topic coverage checklist
+- **[Syllabus](Syllabus)** — Full IB Mathematics syllabus with topic coverage checklist
 
 ## Related Content
 

@@ -683,11 +683,11 @@ $\displaystyle\int_0^1 \frac{x\,dx}{x^2 + 4} = \frac{1}{2}\int_4^5 \frac{du}{u} 
 
 ## If You Get These Wrong, Revise:
 
-- **Differentiation rules and chain rule** → Review [./calculus](./calculus) (sections on Differentiation Rules and Implicit Differentiation)
-- **Integration techniques** → Review [./calculus](./calculus) (sections on Substitution and Integration by Parts)
+- **Differentiation rules and chain rule** → Review [./calculus](calculus) (sections on Differentiation Rules and Implicit Differentiation)
+- **Integration techniques** → Review [./calculus](calculus) (sections on Substitution and Integration by Parts)
 - **Trigonometric identities** → Review the geometry and trigonometry topics in this subject
 - **Exponential and logarithmic functions** → Review algebra and functions material
-- **Curve sketching fundamentals** → Review [./calculus](./calculus) (section on Curve Sketching)
+- **Curve sketching fundamentals** → Review [./calculus](calculus) (section on Curve Sketching)
 
 ---
 

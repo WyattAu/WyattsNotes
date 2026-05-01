@@ -592,7 +592,7 @@ Despite a positive test, there is only about a 61.5% chance the patient has the 
 ## If You Get These Wrong, Revise:
 
 - **Probability fundamentals** → Review conditional probability and the laws of probability
-- **Algebraic manipulation for summation formulas** → Review [./calculus](./calculus) (sections on summation and sigma notation)
+- **Algebraic manipulation for summation formulas** → Review [./calculus](calculus) (sections on summation and sigma notation)
 - **Quadratic equations and simultaneous equations** → Review algebra fundamentals
 - **Logarithms for regression transformation** → Review exponential and logarithmic functions
 - **Set theory and Venn diagrams** → Review logic and set theory fundamentals

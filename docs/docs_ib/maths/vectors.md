@@ -642,9 +642,9 @@ centre of the square base.
 
 ## If You Get These Wrong, Revise:
 
-- **Three-dimensional coordinate geometry** → Review [./vectors](./vectors) (sections on Lines and Planes)
+- **Three-dimensional coordinate geometry** → Review [./vectors](vectors) (sections on Lines and Planes)
 - **Trigonometric ratios and inverse trig functions** → Review geometry and trigonometry topics
-- **Algebraic solving of simultaneous equations** → Review [./matrices](./matrices) (section on Solving Systems)
-- **Scalar and vector product properties** → Review [./vectors](./vectors) (sections on Dot Product and Cross Product)
-- **Magnitude and unit vectors** → Review [./vectors](./vectors) (section on Magnitude and Unit Vectors)
+- **Algebraic solving of simultaneous equations** → Review [./matrices](matrices) (section on Solving Systems)
+- **Scalar and vector product properties** → Review [./vectors](vectors) (sections on Dot Product and Cross Product)
+- **Magnitude and unit vectors** → Review [./vectors](vectors) (section on Magnitude and Unit Vectors)
 

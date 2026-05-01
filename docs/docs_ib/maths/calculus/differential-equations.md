@@ -594,5 +594,5 @@ Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
 
 ## Cross-References
 
-- **Integration techniques** used in solving DEs: see [Integration Techniques](./integration-techniques)
-- **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](./sequences-and-series)
+- **Integration techniques** used in solving DEs: see [Integration Techniques](integration-techniques)
+- **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](sequences-and-series)

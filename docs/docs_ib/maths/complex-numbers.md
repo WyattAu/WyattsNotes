@@ -594,7 +594,7 @@ Adding: $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2 = 2(|z_1|^2 + |z_2|
 ## If You Get These Wrong, Revise:
 
 - **Trigonometric identities** → Review the trigonometry section for angle addition and double-angle formulas
-- **Polar coordinates and argument calculation** → Review [./complex-numbers](./complex-numbers) (section on Argument)
+- **Polar coordinates and argument calculation** → Review [./complex-numbers](complex-numbers) (section on Argument)
 - **Binomial theorem expansion** → Review algebra and series topics
-- **Polynomial roots and Vieta's formulas** → Review [./complex-numbers](./complex-numbers) (section on Sum of Roots)
+- **Polynomial roots and Vieta's formulas** → Review [./complex-numbers](complex-numbers) (section on Sum of Roots)
 

@@ -623,9 +623,9 @@ Factor: $-k^3 + 9k - 8 = -(k-1)(k^2 + k - 8)$. The discriminant of $k^2 + k - 8$
 
 ## If You Get These Wrong, Revise:
 
-- **Solving simultaneous equations** → Review [./matrices](./matrices) (sections on Solving Systems and Cramer's Rule)
+- **Solving simultaneous equations** → Review [./matrices](matrices) (sections on Solving Systems and Cramer's Rule)
 - **Trigonometry for rotation matrices** → Review geometry and trigonometry topics
 - **Algebraic manipulation and factorisation** → Review algebra fundamentals
-- **Vectors and linear independence** → Review [./vectors](./vectors) for related concepts
-- **Determinants and their geometric meaning** → Review [./matrices](./matrices) (section on Determinants and Area)
+- **Vectors and linear independence** → Review [./vectors](vectors) for related concepts
+- **Determinants and their geometric meaning** → Review [./matrices](matrices) (section on Determinants and Area)
 
