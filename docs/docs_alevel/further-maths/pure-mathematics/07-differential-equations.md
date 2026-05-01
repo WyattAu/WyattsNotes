@@ -1,6 +1,5 @@
 ---
 title: Differential Equations
-description:
 description: >-
   A-Level Further Maths notes on Differential Equations: Board Coverage; 1. First-Order ODEs: Separable Equations; 1.1 Definition; 1.2 Method.
 date: 2026-04-02T00:00:00.000Z

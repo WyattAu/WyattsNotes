@@ -1,6 +1,5 @@
 ---
 title: GCSE English Literature
-description:
 description: >-
   GCSE English Literature — Board Coverage; Assessment Objectives; Paper 1: Shakespeare and the 19th-Century Novel; Paper 2: Modern Texts and Poetry.
 date: 2026-04-22

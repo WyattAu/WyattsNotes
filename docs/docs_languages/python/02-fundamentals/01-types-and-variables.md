@@ -1,6 +1,5 @@
 ---
 title: Types and Variables
-description:
 description: >-
   Types and Variables — Python's Type System; Dynamic: the name 'x' is rebound to different types; Strong: these raise TypeError, not silent coercion.
 date: 2025-06-04T10:00:00.000Z

@@ -1,6 +1,5 @@
 ---
 title: Constraint Subsumption and Overload Resolution
-description:
 description: >-
   C++: Constraint Subsumption and Overload Resolution — Partial Ordering of Constraints; Proof: Partially-Ordered Overloads Are Preferred.
 date: 2026-04-03T00:00:00.000Z

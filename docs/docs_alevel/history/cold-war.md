@@ -1,6 +1,5 @@
 ---
 title: The Cold War
-description:
 description: >-
   A-Level History notes on The Cold War: Ideological Differences; The Conferences: Yalta and Potsdam; The Truman Doctrine and the Marshall Plan.
 date: 2026-04-21T00:00:00.000Z

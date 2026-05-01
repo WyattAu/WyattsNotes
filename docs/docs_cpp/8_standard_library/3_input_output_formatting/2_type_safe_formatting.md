@@ -1,6 +1,5 @@
 ---
 title: Type-Safe Formatting (std::format, std::print)
-description:
 description: >-
   C++: Type-Safe Formatting (std::format, std::print) — `std::format`---
   Overview; Format Specification Syntax; ::= "#" (alternate form); Argument ID.

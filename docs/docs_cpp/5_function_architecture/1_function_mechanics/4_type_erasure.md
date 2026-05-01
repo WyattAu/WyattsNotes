@@ -1,6 +1,5 @@
 ---
 title: Type Erasure — Function Pointers, std::function, std::move_only_function
-description:
 description: >-
   C++: Type Erasure — Function Pointers, std::function, std::move_only_function — Type Erasure: Function Pointers, std::function, std::move_only_function.
 date: 2026-04-03T00:00:00.000Z
