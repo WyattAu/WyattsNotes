@@ -1,8 +1,8 @@
 ---
 title: Access Control and Friendship
 description:
-  C++: Access Control and Friendship — 2.1 Access Specifiers [N4950 S14.2];
-  Proof: Access Control is Compile-Time Only; 2.2 Class vs Struct.
+description: >-
+  C++: Access Control and Friendship — 2.1 Access Specifiers [N4950 S14.2]; Proof: Access Control is Compile-Time Only; 2.2 Class vs Struct.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

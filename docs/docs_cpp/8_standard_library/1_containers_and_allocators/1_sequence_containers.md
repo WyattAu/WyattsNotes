@@ -1,8 +1,8 @@
 ---
 title: Sequence Containers (Vector, Deque, List)
 description:
-  C++: Sequence Containers (Vector, Deque, List) — Sequence Containers Memory
-  Models; `std::vector`: Contiguous Memory, Capacity, and Reallocation.
+description: >-
+  C++: Sequence Containers (Vector, Deque, List) — Sequence Containers Memory Models; `std::vector`: Contiguous Memory, Capacity, and Reallocation.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

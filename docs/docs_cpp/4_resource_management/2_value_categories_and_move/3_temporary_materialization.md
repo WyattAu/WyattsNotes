@@ -1,8 +1,8 @@
 ---
 title: Temporary Materialization
 description:
-  C++: Temporary Materialization — 5.1 From prvalue to xvalue; Formal Definition
-  from the Standard; The Two-Phase Model: prvalue as Initializer.
+description: >-
+  C++: Temporary Materialization — 5.1 From prvalue to xvalue; Formal Definition from the Standard; The Two-Phase Model: prvalue as Initializer.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

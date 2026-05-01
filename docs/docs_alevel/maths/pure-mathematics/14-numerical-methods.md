@@ -1,8 +1,8 @@
 ---
 title: Numerical Methods
 description:
-  A-Level Mathematics notes on Numerical Methods: Board Coverage; 1. Locating
-  Roots: Sign Change; 1.1 Sign change theorem; 1.2 Limitations.
+description: >-
+  A-Level Mathematics notes on Numerical Methods: Board Coverage; 1. Locating Roots: Sign Change; 1.1 Sign change theorem; 1.2 Limitations.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

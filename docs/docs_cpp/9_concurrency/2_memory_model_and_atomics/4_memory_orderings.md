@@ -1,8 +1,8 @@
 ---
 title: Memory Orderings
 description:
-  C++: Memory Orderings — `memory_order` Enum; The Memory Model Hierarchy;
-  Relaxed Ordering; When Relaxed Is Insufficient: The Message Passing Idiom.
+description: >-
+  C++: Memory Orderings — `memory_order` Enum; The Memory Model Hierarchy; Relaxed Ordering; When Relaxed Is Insufficient: The Message Passing Idiom.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

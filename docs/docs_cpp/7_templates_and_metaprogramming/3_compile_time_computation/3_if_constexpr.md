@@ -1,7 +1,8 @@
 ---
 title: Compile-Time Branching and Constexpr Functions
 description:
-  C++: Compile-Time Branching and Constexpr Functions — `if constexpr` --- The
+description: >-
+  C++: Compile-Time Branching and Constexpr Functions — `if constexpr`--- The
   Compile-Time Conditional; Discarded Statements.
 date: 2026-04-03T00:00:00.000Z
 tags:
