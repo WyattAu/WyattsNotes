@@ -14,7 +14,7 @@ Statistics is the branch of mathematics concerned with the collection, organisat
 interpretation of data. In the DSE compulsory syllabus, we focus on **descriptive statistics** --
 summarising a dataset through measures of central tendency and measures of dispersion. This page
 also covers grouped data techniques and graphical representations such as box-and-whisker plots.
-These tools are frequently combined with [probability](./probability)) concepts in exam questions.
+These tools are frequently combined with [probability](probability)) concepts in exam questions.
 
 ## Measures of Central Tendency
 

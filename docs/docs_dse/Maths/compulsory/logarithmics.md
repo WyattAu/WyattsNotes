@@ -13,8 +13,8 @@ slug: logarithms
 Logarithms are the inverse operation of exponentiation and play a central role in the DSE
 Mathematics compulsory syllabus. They arise naturally when solving exponential equations, modelling
 growth and decay, and simplifying multiplicative structures into additive ones. This topic builds
-directly on the properties of [exponential functions](./functions#exponential-functions) and
-connects to [geometric sequences and series](./sequences-series)) in applications involving
+directly on the properties of [exponential functions](functions#exponential-functions) and
+connects to [geometric sequences and series](sequences-series)) in applications involving
 compound growth.
 
 ## Definition of Logarithms
@@ -71,7 +71,7 @@ $$
 $$
 
 These two identities express the fact that the logarithmic and exponential functions are
-[inverses](./functions#inverse-functions) of each other.
+[inverses](functions#inverse-functions) of each other.
 
 <details>
 <summary>Examples</summary>
@@ -208,7 +208,7 @@ with this property.
 
 ### Relationship to Exponential Functions
 
-The exponential and logarithmic functions are [inverse functions](./functions#inverse-functions)
+The exponential and logarithmic functions are [inverse functions](functions#inverse-functions)
 of each other. This means their graphs are reflections of each other across the line $y = x$.
 
 | Property      | $y = a^x$ (exponential)              | $y = \log_a x$ (logarithmic)         |
@@ -388,7 +388,7 @@ $$
 ### Compound Interest
 
 The compound interest formula is closely related to logarithms and
-[geometric sequences](./sequences-series)). If a principal $P$ is invested at an annual rate
+[geometric sequences](sequences-series)). If a principal $P$ is invested at an annual rate
 $r\%$ compounded $n$ times per year for $t$ years, the accumulated amount $A$ is:
 
 $$
@@ -512,7 +512,7 @@ $0 < a < 1$.
 ### Transformations
 
 The standard transformations apply, following the same principles as for other
-[functions](./functions)):
+[functions](functions)):
 
 | Transformation      | Effect                                              |
 | ------------------- | --------------------------------------------------- |

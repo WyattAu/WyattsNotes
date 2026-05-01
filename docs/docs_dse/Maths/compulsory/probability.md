@@ -12,8 +12,8 @@ slug: probability
 
 Probability theory provides a rigorous mathematical framework for quantifying uncertainty. In the
 DSE compulsory syllabus, we focus on discrete probability spaces, combinatorial counting,
-conditional probability, and independence. This page connects to [combinatorics](./combinatorics))
-for counting techniques and [dispersion](./dispersion)) for the statistical interpretation of
+conditional probability, and independence. This page connects to [combinatorics](combinatorics))
+for counting techniques and [dispersion](dispersion)) for the statistical interpretation of
 probability distributions.
 
 ## Notations
@@ -55,7 +55,7 @@ $$
 $$
 
 This definition reduces probability to a counting problem and directly connects to the techniques in
-[combinatorics](./combinatorics)).
+[combinatorics](combinatorics)).
 
 <details>
 <summary>Example</summary>
@@ -260,7 +260,7 @@ $$
 
 When outcomes are equally likely, dividing both sides by $|S|$ yields the general addition rule. The
 full inclusion-exclusion principle extends to $n$ sets and is covered in
-[combinatorics](./combinatorics)).
+[combinatorics](combinatorics)).
 
 <details>
 <summary>DSE-style Example</summary>

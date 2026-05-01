@@ -12,7 +12,7 @@ slug: trigonometry
 
 Trigonometry is the study of relationships involving lengths and angles of triangles. It is a
 central topic in the DSE Mathematics compulsory syllabus, connecting
-[coordinate geometry](./geometries)) with algebraic techniques and serving as a foundation for
+[coordinate geometry](geometries)) with algebraic techniques and serving as a foundation for
 many applied problems in two and three dimensions.
 
 ## Angles and Arcs
@@ -65,7 +65,7 @@ $$
 
 This formula only applies when $\theta$ is in radians. If the angle is given in degrees, convert to
 radians first. This formula is also covered in the context of
-[circles and sectors](./geometries#arcs-and-sectors).
+[circles and sectors](geometries#arcs-and-sectors).
 
 ### Area of a Sector
 
@@ -425,7 +425,7 @@ The standard approach:
    $\phi$ between the line and the plane satisfies $\phi = 90^\circ - \alpha$.
 
 This connects to the vector formulation described in the
-[3D geometry](./geometries#angles-between-lines-and-planes) section.
+[3D geometry](geometries#angles-between-lines-and-planes) section.
 
 <details>
 <summary>Examples</summary>

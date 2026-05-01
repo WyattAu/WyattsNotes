@@ -8,7 +8,7 @@ tags:
 categories:
   - DSE
   - Maths
-slug: dse-maths-compulsory-coordinate-geometry
+slug: coordinate-geometry
 ---
 
 ## Distance and Midpoint
@@ -621,7 +621,7 @@ The equation of the common chord is $6x - 8y + 23 = 0$.
 
 ## Cross-References
 
-- **Quadratics:** The discriminant is used to determine the nature of circle-line intersections. See [quadratics.md](./dse-maths-compulsory-quadratics)).
-- **Functions:** Transformations of graphs apply equally to circles and lines. See [functions-advanced.md](./dse-maths-compulsory-functions-advanced)).
+- **Quadratics:** The discriminant is used to determine the nature of circle-line intersections. See [quadratics.md](quadratics)).
+- **Functions:** Transformations of graphs apply equally to circles and lines. See [functions-advanced.md](functions-advanced)).
 - **Trigonometry:** The angle between two lines uses the tangent formula, which connects to trigonometric identities.
 

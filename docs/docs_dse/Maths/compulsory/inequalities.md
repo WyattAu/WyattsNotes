@@ -11,9 +11,9 @@ slug: inequalities
 ---
 
 An inequality states that one expression is greater than or less than another. Inequalities arise
-naturally when finding the [domain](./functions#definition-of-a-function) and
-[range](./functions#definition-of-a-function) of functions, and are closely related to
-[quadratic functions](./functions#quadratic-functions) through their graphical interpretation.
+naturally when finding the [domain](functions#definition-of-a-function) and
+[range](functions#definition-of-a-function) of functions, and are closely related to
+[quadratic functions](functions#quadratic-functions) through their graphical interpretation.
 
 ## Inequality Rules
 
@@ -127,7 +127,7 @@ The solution set is $[7, \infty)$.
 
 A quadratic inequality has the form $ax^2 + bx + c > 0$, $ax^2 + bx + c < 0$, or their non-strict
 variants, where $a \neq 0$. Solving quadratic inequalities relies on understanding the graph of the
-corresponding [quadratic function](./functions#quadratic-functions) $f(x) = ax^2 + bx + c$.
+corresponding [quadratic function](functions#quadratic-functions) $f(x) = ax^2 + bx + c$.
 
 ### Graphical Interpretation
 
@@ -135,7 +135,7 @@ The graph of $f(x) = ax^2 + bx + c$ is a parabola. The solution of $f(x) > 0$ co
 $x$-values where the parabola lies **above** the $x$-axis, and $f(x) < 0$ corresponds to where the
 parabola lies **below** the $x$-axis.
 
-The [discriminant](./functions#discriminant) $\Delta = b^2 - 4ac$ determines the number of
+The [discriminant](functions#discriminant) $\Delta = b^2 - 4ac$ determines the number of
 intersections with the $x$-axis:
 
 | Condition    | Parabola and $x$-axis                             | $ax^2 + bx + c > 0$ (for $a > 0$)              |
@@ -486,7 +486,7 @@ Solution: $[1 - \sqrt{2},\; 1 + \sqrt{2}]$.
 distinct real roots?
 <details>
 <summary>Answer</summary>
-For two distinct real roots, the [discriminant](./functions#discriminant) must satisfy $\Delta > 0$:
+For two distinct real roots, the [discriminant](functions#discriminant) must satisfy $\Delta > 0$:
 
 $$
 \Delta = (2k)^2 - 4(1)(k + 6) = 4k^2 - 4k - 24 > 0

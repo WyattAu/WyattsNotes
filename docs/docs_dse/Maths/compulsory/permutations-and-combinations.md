@@ -8,7 +8,7 @@ tags:
 categories:
   - DSE
   - Maths
-slug: dse-maths-compulsory-permutations-combinations
+slug: permutations-and-combinations
 ---
 
 ## Factorial Notation
@@ -560,5 +560,5 @@ $$420 - 120 = 300$$
 
 - **Probability:** Counting techniques form the foundation of probability calculations. See the probability notes.
 - **Binomial Theorem:** The connection between Pascal's triangle and binomial coefficients extends to the binomial expansion and the binomial distribution.
-- **Quadratics:** Factorials and combinatorial expressions sometimes simplify to quadratic forms. See [quadratics.md](./dse-maths-compulsory-quadratics)).
+- **Quadratics:** Factorials and combinatorial expressions sometimes simplify to quadratic forms. See [quadratics.md](quadratics)).
 

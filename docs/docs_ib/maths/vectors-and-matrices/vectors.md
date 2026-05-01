@@ -598,6 +598,6 @@ $$x + y + 3z - 12 = 0$$
 
 ## Cross-References
 
-- **Trigonometry** for angle calculations: see [Trigonometry](../trigonometry)
-- **Calculus** for vector-valued functions and differentiation: see [Differentiation](../differentiation-depth)
-- **Integration** for arc length and surface area of curves: see [Integration](../integration-techniques)
+- **Trigonometry** for angle calculations: see [Trigonometry](../geometry-and-trigonometry/trigonometry)
+- **Calculus** for vector-valued functions and differentiation: see [Differentiation](../calculus/differentiation-depth)
+- **Integration** for arc length and surface area of curves: see [Integration](../calculus/integration-techniques)

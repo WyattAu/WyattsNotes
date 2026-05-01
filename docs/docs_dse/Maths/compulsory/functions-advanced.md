@@ -8,10 +8,10 @@ tags:
 categories:
   - DSE
   - Maths
-slug: dse-maths-compulsory-functions-advanced
+slug: functions-advanced
 ---
 
-This note extends the treatment of functions covered in [functions.md](./functions)), focusing on
+This note extends the treatment of functions covered in [functions.md](functions)), focusing on
 domain restrictions, composite and inverse functions with non-trivial domains, and graphical
 transformations.
 
@@ -586,8 +586,8 @@ Verification: $(f \circ h)(x) = 2\!\left(x + \dfrac{3}{2}\right) - 1 = 2x + 2$. 
 
 ## Cross-References
 
-- **Basic Functions:** Foundational definitions and notation are in [functions.md](./functions)).
-- **Quadratics:** Quadratic functions feature heavily in inverse function problems. See [quadratics.md](./dse-maths-compulsory-quadratics)).
+- **Basic Functions:** Foundational definitions and notation are in [functions.md](functions)).
+- **Quadratics:** Quadratic functions feature heavily in inverse function problems. See [quadratics.md](quadratics)).
 - **Inequalities:** Domain restrictions often involve solving inequalities. See the inequalities notes.
-- **Coordinate Geometry:** Graphical interpretations of functions and transformations. See [coordinate-geometry.md](./dse-maths-compulsory-coordinate-geometry)).
+- **Coordinate Geometry:** Graphical interpretations of functions and transformations. See [coordinate-geometry.md](coordinate-geometry)).
 
