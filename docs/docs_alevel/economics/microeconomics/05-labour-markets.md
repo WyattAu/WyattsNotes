@@ -1,8 +1,7 @@
 ---
 title: Labour Markets
 description:
-  A-Level Economics notes on Labour Markets: 1. Demand for Labour; 1.1
-  Derivation from Profit Maximisation; 1.2 Shifts in the Demand for Labour.
+  "A-Level Economics notes on Labour Markets: 1. Demand for Labour; 1.1 Derivation from Profit Maximisation; 1.2 Shifts in the Demand for Labour."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

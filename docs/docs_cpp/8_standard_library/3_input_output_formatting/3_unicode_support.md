@@ -1,8 +1,7 @@
 ---
 title: Unicode Support
 description:
-  C++: Unicode Support — Character Types for Unicode; UTF-8 Encoding; UTF-8
-  String Literals and `char8_t`; Unicode Text Processing Challenges.
+  "C++: Unicode Support — Character Types for Unicode; UTF-8 Encoding; UTF-8 String Literals and `char8_t`; Unicode Text Processing Challenges."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

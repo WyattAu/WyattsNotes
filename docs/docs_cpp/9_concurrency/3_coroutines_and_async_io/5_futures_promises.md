@@ -1,8 +1,7 @@
 ---
 title: Futures, Promises, and Async Flows
 description:
-  C++: Futures, Promises, and Async Flows — `std::future<T>` [N4950 §33.6.4];
-  `std::promise<T>` [N4950 §33.6.5] for thorough revision and examination prepa.
+  "C++: Futures, Promises, and Async Flows — `std::future<T>` [N4950 §33.6.4]; `std::promise<T>` [N4950 §33.6.5] for thorough revision and examination prepa."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

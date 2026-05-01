@@ -2,8 +2,7 @@
 id: cooling
 title: Cooling Systems
 description:
-  Hardware tuning: Cooling Systems — Heat Transfer Fundamentals; Three
-  Mechanisms of Heat Transfer; Thermal Resistance; Thermal Paste.
+  "Hardware tuning: Cooling Systems — Heat Transfer Fundamentals; Three Mechanisms of Heat Transfer; Thermal Resistance; Thermal Paste."
 slug: cooling
 ---
 

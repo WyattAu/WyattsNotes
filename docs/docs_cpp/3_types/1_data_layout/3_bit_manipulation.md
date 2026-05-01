@@ -1,8 +1,7 @@
 ---
 title: Bit Manipulation
 description:
-  C++: Bit Manipulation — 1. Safe Type Punning (`std::bit_cast`); The Strict
-  Aliasing Rule (TBAA); Legacy Approaches (Broken).
+  "C++: Bit Manipulation — 1. Safe Type Punning (`std::bit_cast`); The Strict Aliasing Rule (TBAA); Legacy Approaches (Broken)."
 date: 2025-12-12T22:12:51.318Z
 tags:
   - cpp

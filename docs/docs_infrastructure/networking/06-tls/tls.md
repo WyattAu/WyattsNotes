@@ -2,9 +2,7 @@
 id: tls
 title: TLS
 description:
-  Networking: TLS — TLS History and Versions; TLS 1.2 Handshake; TLS 1.2
-  Handshake Steps; Key Derivation, covering core concepts and practical
-  techniques.
+  "Networking: TLS — TLS History and Versions; TLS 1.2 Handshake; TLS 1.2 Handshake Steps; Key Derivation, covering core concepts and practical techniques."
 slug: tls
 sidebar_position: 7
 tags:

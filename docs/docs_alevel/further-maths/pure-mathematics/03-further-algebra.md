@@ -1,8 +1,7 @@
 ---
 title: Further Algebra
 description:
-  A-Level Further Maths notes on Further Algebra: Board Coverage; 1. Polynomial
-  Division and the Remainder Theorem; 1.1 Polynomial long division.
+  "A-Level Further Maths notes on Further Algebra: Board Coverage; 1. Polynomial Division and the Remainder Theorem; 1.1 Polynomial long division."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

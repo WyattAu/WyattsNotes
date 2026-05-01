@@ -1,8 +1,7 @@
 ---
 title: Multivariable Calculus
 description:
-  University-level notes on Multivariable Calculus: 1. Partial Derivatives; 1.1
-  Definition; 1.2 Clairaut's Theorem; 1.3 Differentiability.
+  "University-level notes on Multivariable Calculus: 1. Partial Derivatives; 1.1 Definition; 1.2 Clairaut's Theorem; 1.3 Differentiability."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics

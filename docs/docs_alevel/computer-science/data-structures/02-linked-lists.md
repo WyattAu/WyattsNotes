@@ -1,9 +1,7 @@
 ---
 title: Linked Lists
 description:
-  A-Level Computer Science notes on Linked Lists: 1. Introduction; Definition;
-  Node Structure; 2. Singly Linked List with worked examples and exam-style
-  questi.
+  "A-Level Computer Science notes on Linked Lists: 1. Introduction; Definition; Node Structure; 2. Singly Linked List with worked examples and exam-style questi."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

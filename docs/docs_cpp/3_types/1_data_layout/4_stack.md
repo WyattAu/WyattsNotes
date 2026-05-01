@@ -1,8 +1,7 @@
 ---
 title: Stack
 description:
-  C++: Stack — 1. The Hardware Mechanism (x86_64); The Registers; Allocation and
-  Deallocation; The Sequence of a Function Call.
+  "C++: Stack — 1. The Hardware Mechanism (x86_64); The Registers; Allocation and Deallocation; The Sequence of a Function Call."
 date: 2025-12-13T04:07:38.177Z
 tags:
   - cpp

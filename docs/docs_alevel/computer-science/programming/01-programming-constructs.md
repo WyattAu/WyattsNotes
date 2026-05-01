@@ -1,8 +1,7 @@
 ---
 title: Programming Constructs
 description:
-  A-Level Computer Science notes on Programming Constructs: 1. Variables and
-  Data Types; Variables; Primitive Data Types; Constants.
+  "A-Level Computer Science notes on Programming Constructs: 1. Variables and Data Types; Variables; Primitive Data Types; Constants."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

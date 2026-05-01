@@ -1,8 +1,7 @@
 ---
 title: DC Circuits
 description:
-  A-Level Physics notes on DC Circuits: 1. Kirchhoff's Laws; Kirchhoff's First
-  Law (Current Law); Kirchhoff's Second Law (Voltage Law).
+  "A-Level Physics notes on DC Circuits: 1. Kirchhoff's Laws; Kirchhoff's First Law (Current Law); Kirchhoff's Second Law (Voltage Law)."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

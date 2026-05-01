@@ -2,8 +2,7 @@
 id: dicts-sets-counter
 title: Dicts, Sets, and Collections Deep Dive
 description:
-  Dicts, Sets, and Collections Deep Dive — Dict Internals; Hash Table Structure;
-  Hash Computation; Collision Resolution: Open Addressing.
+  "Dicts, Sets, and Collections Deep Dive — Dict Internals; Hash Table Structure; Hash Computation; Collision Resolution: Open Addressing."
 slug: dicts-sets-counter
 ---
 

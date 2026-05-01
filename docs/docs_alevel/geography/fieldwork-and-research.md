@@ -1,8 +1,7 @@
 ---
 title: Fieldwork and Research
 description:
-  A-Level Geography notes on Fieldwork and Research: Research Methods in
-  Geography; Primary and Secondary Data; Quantitative and Qualitative Methods.
+  "A-Level Geography notes on Fieldwork and Research: Research Methods in Geography; Primary and Secondary Data; Quantitative and Qualitative Methods."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Geography

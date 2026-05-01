@@ -1,8 +1,7 @@
 ---
 title: Dependent Names and Two-Phase Lookup
 description:
-  C++: Dependent Names and Two-Phase Lookup — Dependent vs Non-Dependent Names;
-  When Is a Name Dependent?; Non-Dependent Qualified Names Are a Trap.
+  "C++: Dependent Names and Two-Phase Lookup — Dependent vs Non-Dependent Names; When Is a Name Dependent?; Non-Dependent Qualified Names Are a Trap."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

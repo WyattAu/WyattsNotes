@@ -1,9 +1,7 @@
 ---
 title: Iterator-Sentinel Model
 description:
-  C++: Iterator-Sentinel Model — Iterators and Sentinels in C++20;
-  `std::ranges::begin` and `std::ranges::end` for thorough revision and
-  examination prepar.
+  "C++: Iterator-Sentinel Model — Iterators and Sentinels in C++20; `std::ranges::begin` and `std::ranges::end` for thorough revision and examination prepar."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

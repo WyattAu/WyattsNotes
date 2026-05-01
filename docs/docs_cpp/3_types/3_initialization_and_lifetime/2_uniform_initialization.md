@@ -1,8 +1,7 @@
 ---
 title: Uniform Initialization
 description:
-  C++: Uniform Initialization — Initialization Syntaxes; Direct Initialization;
-  Copy Initialization; List Initialization. and examination.
+  "C++: Uniform Initialization — Initialization Syntaxes; Direct Initialization; Copy Initialization; List Initialization. and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

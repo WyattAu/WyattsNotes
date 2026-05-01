@@ -1,8 +1,7 @@
 ---
 title: Memory
 description:
-  A-Level Psychology notes on Memory: Atkinson and Shiffrin (1968); Processes;
-  Evaluation of the MSM; Baddeley and Hitch (1974).
+  "A-Level Psychology notes on Memory: Atkinson and Shiffrin (1968); Processes; Evaluation of the MSM; Baddeley and Hitch (1974)."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Psychology

@@ -1,8 +1,7 @@
 ---
 title: Theory of Computation
 description:
-  University-level notes on Theory of Computation: 1. Introduction; 1.1 Why
-  Theory Matters; 1.2 Alphabets, Strings, and Languages.
+  "University-level notes on Theory of Computation: 1. Introduction; 1.1 Why Theory Matters; 1.2 Alphabets, Strings, and Languages."
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing

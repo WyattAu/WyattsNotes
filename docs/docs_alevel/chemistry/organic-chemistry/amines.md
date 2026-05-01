@@ -1,8 +1,7 @@
 ---
 title: Amines
 description:
-  A-Level Chemistry notes on Amines: Classification and Nomenclature; Reduction
-  of Nitriles; Reduction of Amides; Preparation of Phenylamine (Aniline).
+  "A-Level Chemistry notes on Amines: Classification and Nomenclature; Reduction of Nitriles; Reduction of Amides; Preparation of Phenylamine (Aniline)."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

@@ -1,8 +1,7 @@
 ---
 title: Data Races and Critical Sections
 description:
-  C++: Data Races and Critical Sections — Data Race Definition; Undefined
-  Behavior of Data Races; Critical Section; Race Condition vs Data Race.
+  "C++: Data Races and Critical Sections — Data Race Definition; Undefined Behavior of Data Races; Critical Section; Race Condition vs Data Race."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

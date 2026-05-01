@@ -1,8 +1,7 @@
 ---
 title: Arenes
 description:
-  A-Level Chemistry notes on Arenes: Benzene Structure; Molecular Formula and
-  Degree of Unsaturation; The Kekule Structure; Evidence for Delocalisation.
+  "A-Level Chemistry notes on Arenes: Benzene Structure; Molecular Formula and Degree of Unsaturation; The Kekule Structure; Evidence for Delocalisation."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

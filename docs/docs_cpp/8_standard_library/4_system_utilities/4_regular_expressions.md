@@ -1,9 +1,7 @@
 ---
 title: Regular Expressions
 description:
-  C++: Regular Expressions — `std::regex_match` and `std::regex_search`;
-  `std::smatch` and Capture Groups; `std::regex_replace`; Email Validation with
-  Regex.
+  "C++: Regular Expressions — `std::regex_match` and `std::regex_search`; `std::smatch` and Capture Groups; `std::regex_replace`; Email Validation with Regex."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

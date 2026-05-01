@@ -1,8 +1,7 @@
 ---
 title: The Spaceship Operator
 description:
-  C++: The Spaceship Operator — 5.1 Three-Way Comparison [N4950 §11.4.5.4]; 5.2
-  Default Comparisons with `= default`; 5.3 Comparison Categories in Detail.
+  "C++: The Spaceship Operator — 5.1 Three-Way Comparison [N4950 §11.4.5.4]; 5.2 Default Comparisons with `= default`; 5.3 Comparison Categories in Detail."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

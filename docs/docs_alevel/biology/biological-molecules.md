@@ -1,8 +1,7 @@
 ---
 title: Biological Molecules
 description:
-  A-Level Biology notes on Biological Molecules: 1. Water; 1.1 Structure and
-  Properties; 1.2 Hydrogen Bonding in Water; 2. Carbohydrates.
+  "A-Level Biology notes on Biological Molecules: 1. Water; 1.1 Structure and Properties; 1.2 Hydrogen Bonding in Water; 2. Carbohydrates."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

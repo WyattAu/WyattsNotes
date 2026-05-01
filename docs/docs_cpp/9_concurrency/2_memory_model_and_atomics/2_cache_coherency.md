@@ -1,8 +1,7 @@
 ---
 title: Cache Coherency (MESI) and False Sharing
 description:
-  C++: Cache Coherency (MESI) and False Sharing — MESI Protocol Overview; MESI
-  State Transitions; Formal State Transition Table; Cache Line Structure.
+  "C++: Cache Coherency (MESI) and False Sharing — MESI Protocol Overview; MESI State Transitions; Formal State Transition Table; Cache Line Structure."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

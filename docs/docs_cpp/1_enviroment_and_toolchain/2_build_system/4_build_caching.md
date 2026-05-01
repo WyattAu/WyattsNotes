@@ -1,8 +1,7 @@
 ---
 title: Build Caching
 description:
-  C++: Build Caching — 1. The Caching Landscape; 1.1 CCache (Compiler Cache);
-  1.2 Sccache (Shared Compiler Cache); 1.3 BuildCache.
+  "C++: Build Caching — 1. The Caching Landscape; 1.1 CCache (Compiler Cache); 1.2 Sccache (Shared Compiler Cache); 1.3 BuildCache."
 date: 2025-12-10T06:21:00.670Z
 tags:
   - cpp

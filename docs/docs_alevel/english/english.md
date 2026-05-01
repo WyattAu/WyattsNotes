@@ -1,8 +1,7 @@
 ---
 title: A-Level English Literature
 description:
-  A-Level English notes on A-Level English Literature: Board Coverage for
-  comprehensive revision and examination preparation.
+  "A-Level English notes on A-Level English Literature: Board Coverage for comprehensive revision and examination preparation."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - English

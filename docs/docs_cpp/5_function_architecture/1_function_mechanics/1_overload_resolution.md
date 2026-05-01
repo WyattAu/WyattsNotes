@@ -1,8 +1,7 @@
 ---
 title: Overload Resolution
 description:
-  C++: Overload Resolution — 1.1 Name Lookup [N4950 §6.5.4]; 1.2 ADL in Detail
-  [N4950 §6.5.4.2]; ADL and Template Argument Deduction.
+  "C++: Overload Resolution — 1.1 Name Lookup [N4950 §6.5.4]; 1.2 ADL in Detail [N4950 §6.5.4.2]; ADL and Template Argument Deduction."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

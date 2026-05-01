@@ -1,8 +1,7 @@
 ---
 title: Nuclear Physics
 description:
-  A-Level Physics notes on Nuclear Physics: 1. Rutherford Scattering; The
-  Experiment; Interpretation; Closest Approach Distance.
+  "A-Level Physics notes on Nuclear Physics: 1. Rutherford Scattering; The Experiment; Interpretation; Closest Approach Distance."
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]

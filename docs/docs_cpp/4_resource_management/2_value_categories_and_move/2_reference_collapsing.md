@@ -1,8 +1,7 @@
 ---
 title: Reference Collapsing and Forwarding References
 description:
-  C++: Reference Collapsing and Forwarding References — 3.1 The Rules; 3.2 Where
-  Collapsing Occurs; 3.3 Code Example for thorough revision and examination.
+  "C++: Reference Collapsing and Forwarding References — 3.1 The Rules; 3.2 Where Collapsing Occurs; 3.3 Code Example for thorough revision and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

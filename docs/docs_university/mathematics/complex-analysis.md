@@ -1,9 +1,7 @@
 ---
 title: Complex Analysis
 description:
-  University-level notes on Complex Analysis: 1. Complex Numbers Review; 1.1
-  Definition and Arithmetic; 1.2 The Complex Conjugate and Modulus; 1.3 Polar
-  Form.
+  "University-level notes on Complex Analysis: 1. Complex Numbers Review; 1.1 Definition and Arithmetic; 1.2 The Complex Conjugate and Modulus; 1.3 Polar Form."
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics

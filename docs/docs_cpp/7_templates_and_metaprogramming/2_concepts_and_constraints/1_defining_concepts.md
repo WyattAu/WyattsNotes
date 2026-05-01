@@ -1,8 +1,7 @@
 ---
 title: Defining Concepts and Requires Clauses
 description:
-  C++: Defining Concepts and Requires Clauses — The `concept` Keyword; Formal
-  Semantics of the `concept` Keyword for thorough revision and examination prep.
+  "C++: Defining Concepts and Requires Clauses — The `concept` Keyword; Formal Semantics of the `concept` Keyword for thorough revision and examination prep."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

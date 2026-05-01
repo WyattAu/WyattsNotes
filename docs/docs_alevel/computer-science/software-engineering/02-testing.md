@@ -1,9 +1,7 @@
 ---
 title: Testing
 description:
-  A-Level Computer Science notes on Testing: Definition; Why Test?; Verification
-  vs Validation; Equivalence Partitioning with worked examples and exam-style
-  qu.
+  "A-Level Computer Science notes on Testing: Definition; Why Test?; Verification vs Validation; Equivalence Partitioning with worked examples and exam-style qu."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

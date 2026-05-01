@@ -1,9 +1,7 @@
 ---
 title: Calling Conventions and Stack Management
 description:
-  C++: Calling Conventions and Stack Management — 2.1 System V AMD64 ABI:
-  Argument Passing; Argument Classification Algorithm; Register and Stack
-  Interleaving.
+  "C++: Calling Conventions and Stack Management — 2.1 System V AMD64 ABI: Argument Passing; Argument Classification Algorithm; Register and Stack Interleaving."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

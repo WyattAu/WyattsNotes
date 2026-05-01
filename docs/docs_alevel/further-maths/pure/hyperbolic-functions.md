@@ -1,9 +1,7 @@
 ---
 title: Hyperbolic Functions (Extended)
 description:
-  A-Level Further Maths notes on Hyperbolic Functions (Extended): Hyperbolic
-  Functions (Extended Treatment); 1. Definitions for thorough revision and
-  examinati.
+  "A-Level Further Maths notes on Hyperbolic Functions (Extended): Hyperbolic Functions (Extended Treatment); 1. Definitions for thorough revision and examinati."
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

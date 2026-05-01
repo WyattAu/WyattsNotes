@@ -1,8 +1,7 @@
 ---
 title: Vectors in 3D
 description:
-  A-Level Further Maths notes on Vectors in 3D: Board Coverage; 1. Review of A
-  Level Vectors; 2.1 Notation; 2.2 Position vectors and displacement.
+  "A-Level Further Maths notes on Vectors in 3D: Board Coverage; 1. Review of A Level Vectors; 2.1 Notation; 2.2 Position vectors and displacement."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

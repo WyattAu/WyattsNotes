@@ -1,8 +1,7 @@
 ---
 title: SFINAE vs Concepts
 description:
-  C++: SFINAE vs Concepts — How SFINAE Works; Immediate Context: The Hard Error
-  Boundary; Drawbacks of SFINAE; How Concepts Solve SFINAE Problems.
+  "C++: SFINAE vs Concepts — How SFINAE Works; Immediate Context: The Hard Error Boundary; Drawbacks of SFINAE; How Concepts Solve SFINAE Problems."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -1,8 +1,7 @@
 ---
 title: Approaches in Psychology
 description:
-  A-Level Psychology notes on Approaches in Psychology: The Biological Approach;
-  Assumptions; Key Concepts; Strengths and Limitations.
+  "A-Level Psychology notes on Approaches in Psychology: The Biological Approach; Assumptions; Key Concepts; Strengths and Limitations."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Psychology

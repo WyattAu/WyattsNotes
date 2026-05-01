@@ -1,8 +1,7 @@
 ---
 title: Global Systems and Governance
 description:
-  A-Level Geography notes on Global Systems and Governance: Globalisation;
-  Definition and Dimensions; Drivers of Globalisation; Impacts of Globalisation.
+  "A-Level Geography notes on Global Systems and Governance: Globalisation; Definition and Dimensions; Drivers of Globalisation; Impacts of Globalisation."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Geography

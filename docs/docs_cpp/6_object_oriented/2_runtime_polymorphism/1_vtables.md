@@ -1,8 +1,7 @@
 ---
 title: Virtual Functions and vtables
 description:
-  C++: Virtual Functions and vtables — Virtual Functions and Dispatch Tables
-  (vtables); 1.1 The `virtual` Keyword; Formal Semantics [N4950 S13.3.2].
+  "C++: Virtual Functions and vtables — Virtual Functions and Dispatch Tables (vtables); 1.1 The `virtual` Keyword; Formal Semantics [N4950 S13.3.2]."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

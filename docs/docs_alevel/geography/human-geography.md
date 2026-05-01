@@ -1,8 +1,7 @@
 ---
 title: Human Geography
 description:
-  A-Level Geography notes on Human Geography: Population Change; Demographic
-  Transition Model (DTM); Population Pyramids; Demographic Dividend.
+  "A-Level Geography notes on Human Geography: Population Change; Demographic Transition Model (DTM); Population Pyramids; Demographic Dividend."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Geography

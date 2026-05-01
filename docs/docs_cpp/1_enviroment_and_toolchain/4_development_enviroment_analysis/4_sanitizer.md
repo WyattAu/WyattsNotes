@@ -1,8 +1,7 @@
 ---
 title: Sanitizer
 description:
-  C++: Sanitizer — CMake Integration Strategy; Implementation Module; Usage in
-  Root CMakeLists.txt; Platform Support Matrix.
+  "C++: Sanitizer — CMake Integration Strategy; Implementation Module; Usage in Root CMakeLists.txt; Platform Support Matrix."
 date: 2025-12-11T18:46:23.535Z
 tags:
   - cpp

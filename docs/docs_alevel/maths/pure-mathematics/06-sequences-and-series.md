@@ -1,8 +1,7 @@
 ---
 title: Sequences and Series
 description:
-  A-Level Mathematics notes on Sequences and Series: Board Coverage; 2.
-  Arithmetic Sequences; 2.1 The $n$th Term; 2.2 Sum of an Arithmetic Series.
+  "A-Level Mathematics notes on Sequences and Series: Board Coverage; 2. Arithmetic Sequences; 2.1 The $n$th Term; 2.2 Sum of an Arithmetic Series."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

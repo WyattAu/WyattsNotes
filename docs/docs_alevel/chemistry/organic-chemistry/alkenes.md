@@ -1,8 +1,7 @@
 ---
 title: Alkenes
 description:
-  A-Level Chemistry notes on Alkenes: Structure and Properties; Physical
-  Properties; Electrophilic Addition; General Mechanism.
+  "A-Level Chemistry notes on Alkenes: Structure and Properties; Physical Properties; Electrophilic Addition; General Mechanism."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

@@ -1,8 +1,7 @@
 ---
 title: Organic Chemistry
 description:
-  A-Level Chemistry notes on Organic Chemistry: Nomenclature (IUPAC); Steps for
-  Naming; Homologous Series; Structural Isomerism.
+  "A-Level Chemistry notes on Organic Chemistry: Nomenclature (IUPAC); Steps for Naming; Homologous Series; Structural Isomerism."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

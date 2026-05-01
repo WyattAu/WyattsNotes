@@ -1,8 +1,7 @@
 ---
 title: Type Punning and the Strict Aliasing Rule
 description:
-  C++: Type Punning and the Strict Aliasing Rule — 1. What Is Type Punning?; 2.
-  The Strict Aliasing Rule for thorough revision and examination preparation.
+  "C++: Type Punning and the Strict Aliasing Rule — 1. What Is Type Punning?; 2. The Strict Aliasing Rule for thorough revision and examination preparation."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

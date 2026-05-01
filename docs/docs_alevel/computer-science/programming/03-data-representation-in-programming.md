@@ -1,9 +1,7 @@
 ---
 title: Data Representation in Programming
 description:
-  A-Level Computer Science notes on Data Representation in Programming: 1.
-  Primitive Types and Their Representation; Integer Representation;
-  Floating-Point Rep.
+  "A-Level Computer Science notes on Data Representation in Programming: 1. Primitive Types and Their Representation; Integer Representation; Floating-Point Rep."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

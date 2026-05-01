@@ -1,8 +1,7 @@
 ---
 title: Binary Formats
 description:
-  C++: Binary Formats — The Three Major Formats; 1. ELF (Executable and Linkable
-  Format); 2. PE/COFF (Portable Executable); 3. Mach-O (Mach Object).
+  "C++: Binary Formats — The Three Major Formats; 1. ELF (Executable and Linkable Format); 2. PE/COFF (Portable Executable); 3. Mach-O (Mach Object)."
 date: 2025-12-12T01:09:24.824Z
 tags:
   - cpp

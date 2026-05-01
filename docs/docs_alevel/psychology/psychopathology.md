@@ -1,9 +1,7 @@
 ---
 title: Psychopathology
 description:
-  A-Level Psychology notes on Psychopathology: Definitions of Abnormality;
-  Statistical Infrequency; Deviation from Social Norms; Failure to Function
-  Adequately.
+  "A-Level Psychology notes on Psychopathology: Definitions of Abnormality; Statistical Infrequency; Deviation from Social Norms; Failure to Function Adequately."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Psychology

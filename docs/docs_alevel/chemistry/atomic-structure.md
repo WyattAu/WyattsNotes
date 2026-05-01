@@ -1,9 +1,7 @@
 ---
 title: Atomic Structure & Periodicity
 description:
-  A-Level Chemistry notes on Atomic Structure & Periodicity: Subatomic
-  Particles; Isotopes; Relative Atomic Mass ($A_r$); Relative Molecular Mass
-  ($M_r$).
+  "A-Level Chemistry notes on Atomic Structure & Periodicity: Subatomic Particles; Isotopes; Relative Atomic Mass ($A_r$); Relative Molecular Mass ($M_r$)."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

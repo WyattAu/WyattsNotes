@@ -1,8 +1,7 @@
 ---
 title: Sequences and Series
 description:
-  Sequences and Series — Sequences (CED BC Unit 10); Bounded and Monotone
-  Sequences; Common Sequences; Proof: $\frac{n!}{n^n} \to 0$.
+  "Sequences and Series — Sequences (CED BC Unit 10); Bounded and Monotone Sequences; Common Sequences; Proof: $\frac{n!}{n^n} \to 0$."
 date: 2026-04-14
 tags:
   - Mathematics

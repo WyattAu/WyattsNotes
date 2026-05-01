@@ -1,8 +1,7 @@
 ---
 title: Unseen Texts
 description:
-  A-Level English notes on Unseen Texts: Approaching Unseen Poetry; Step-by-Step
-  Methodology; Unseen Poetry Framework; Approaching Unseen Prose.
+  "A-Level English notes on Unseen Texts: Approaching Unseen Poetry; Step-by-Step Methodology; Unseen Poetry Framework; Approaching Unseen Prose."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - English

@@ -1,9 +1,7 @@
 ---
 title: Programming
 description:
-  Programming — 1.1 Variables and Constants; Variables; Constants (convention:
-  UPPER_CASE); 1.2 Input and Output with worked examples and exam-style
-  questions.
+  "Programming — 1.1 Variables and Constants; Variables; Constants (convention: UPPER_CASE); 1.2 Input and Output with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Computer Science

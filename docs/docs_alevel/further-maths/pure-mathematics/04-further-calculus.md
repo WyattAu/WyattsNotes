@@ -1,9 +1,7 @@
 ---
 title: Further Calculus
 description:
-  A-Level Further Maths notes on Further Calculus: Board Coverage; 1.
-  Integration by Parts (Advanced); 1.1 The formula — proof from the product
-  rule.
+  "A-Level Further Maths notes on Further Calculus: Board Coverage; 1. Integration by Parts (Advanced); 1.1 The formula — proof from the product rule."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

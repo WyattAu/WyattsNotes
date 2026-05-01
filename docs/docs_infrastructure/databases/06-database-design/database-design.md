@@ -2,8 +2,7 @@
 id: database-design
 title: Database Design
 description:
-  Database Design — The Design Process; Phase 1: Requirements Analysis; Phase 2:
-  Conceptual Design; Phase 3: Logical Design.
+  "Database Design — The Design Process; Phase 1: Requirements Analysis; Phase 2: Conceptual Design; Phase 3: Logical Design."
 slug: database-design
 sidebar_position: 1
 tags:

@@ -1,8 +1,7 @@
 ---
 title: Language Standard Flags and ABI Compatibility
 description:
-  C++: Language Standard Flags and ABI Compatibility — Compiler Invocation
-  Standards; ISO Standard Flags; Extension Flags vs. Strict ISO.
+  "C++: Language Standard Flags and ABI Compatibility — Compiler Invocation Standards; ISO Standard Flags; Extension Flags vs. Strict ISO."
 date: 2025-12-10T04:34:01.071Z
 tags:
   - cpp

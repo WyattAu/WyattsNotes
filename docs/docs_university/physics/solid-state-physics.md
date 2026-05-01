@@ -1,8 +1,7 @@
 ---
 title: Solid State Physics
 description:
-  University-level notes on Solid State Physics: 1. Crystal Structures; 1.1
-  Lattices and Basis; 1.2 Bravais Lattices; 1.3 Common Crystal Structures.
+  "University-level notes on Solid State Physics: 1. Crystal Structures; 1.1 Lattices and Basis; 1.2 Bravais Lattices; 1.3 Common Crystal Structures."
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

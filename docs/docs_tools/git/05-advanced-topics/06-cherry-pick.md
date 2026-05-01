@@ -1,9 +1,7 @@
 ---
 title: Cherry-Pick
 description:
-  Git cherry-pick: applying specific commits from one branch to another,
-  including usage, conflict resolution, and best practices for maintaining clean
-  history.
+  "Git cherry-pick: applying specific commits from one branch to another, including usage, conflict resolution, and best practices for maintaining clean history."
 slug: cherry-pick
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: Interpretations and Debate
 description:
-  A-Level History notes on Interpretations and Debate: Approaching
-  Interpretation Questions; Structured Methodology; Common Mistakes in
-  Interpretation Questions.
+  "A-Level History notes on Interpretations and Debate: Approaching Interpretation Questions; Structured Methodology; Common Mistakes in Interpretation Questions."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - History

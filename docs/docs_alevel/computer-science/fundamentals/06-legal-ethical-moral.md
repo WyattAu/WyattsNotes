@@ -1,8 +1,7 @@
 ---
 title: Legal, Ethical, and Moral Issues
 description:
-  A-Level Computer Science notes on Legal, Ethical, and Moral Issues: 1. Legal,
-  Ethical, and Moral Frameworks; Definition; Key Distinctions.
+  "A-Level Computer Science notes on Legal, Ethical, and Moral Issues: 1. Legal, Ethical, and Moral Frameworks; Definition; Key Distinctions."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - ComputerScience

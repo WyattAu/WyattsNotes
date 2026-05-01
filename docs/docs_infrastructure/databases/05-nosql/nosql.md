@@ -2,9 +2,7 @@
 id: nosql
 title: NoSQL Databases
 description:
-  NoSQL Databases — The CAP Theorem; Why P Is Non-Negotiable; The PACELC
-  Theorem; Consistency Models: A Spectrum with worked examples and exam-style
-  questions.
+  "NoSQL Databases — The CAP Theorem; Why P Is Non-Negotiable; The PACELC Theorem; Consistency Models: A Spectrum with worked examples and exam-style questions."
 slug: nosql
 sidebar_position: 1
 tags:

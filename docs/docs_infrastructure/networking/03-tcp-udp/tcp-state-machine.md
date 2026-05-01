@@ -2,8 +2,7 @@
 id: tcp-state-machine
 title: TCP State Machine
 description:
-  Networking: TCP State Machine — The 11 TCP States; State Diagram; Normal Open:
-  The Three-Way Handshake; State Trace: Client Side.
+  "Networking: TCP State Machine — The 11 TCP States; State Diagram; Normal Open: The Three-Way Handshake; State Trace: Client Side."
 slug: tcp-state-machine
 tags:
   - Networking

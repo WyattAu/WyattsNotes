@@ -1,8 +1,7 @@
 ---
 title: Shared Ownership (std::shared_ptr) and Control Block
 description:
-  C++: Shared Ownership (std::shared_ptr) and Control Block — 3.1 Definition;
-  3.2 Control Block Layout; When the Control Block Is Created.
+  "C++: Shared Ownership (std::shared_ptr) and Control Block — 3.1 Definition; 3.2 Control Block Layout; When the Control Block Is Created."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

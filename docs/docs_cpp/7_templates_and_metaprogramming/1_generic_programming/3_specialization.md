@@ -1,9 +1,7 @@
 ---
 title: Explicit and Partial Specialization
 description:
-  C++: Explicit and Partial Specialization — Full Specialization; Full
-  Specialization of Function Templates; Partial Specialization; Partial Ordering
-  Rules.
+  "C++: Explicit and Partial Specialization — Full Specialization; Full Specialization of Function Templates; Partial Specialization; Partial Ordering Rules."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

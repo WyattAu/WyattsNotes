@@ -1,8 +1,7 @@
 ---
 title: Shakespeare
 description:
-  A-Level English notes on Shakespeare: Elizabethan and Jacobean Theatre; The
-  Renaissance Context; Iambic Pentameter and Blank Verse.
+  "A-Level English notes on Shakespeare: Elizabethan and Jacobean Theatre; The Renaissance Context; Iambic Pentameter and Blank Verse."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - English

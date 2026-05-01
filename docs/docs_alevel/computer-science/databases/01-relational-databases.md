@@ -1,9 +1,7 @@
 ---
 title: Relational Databases
 description:
-  A-Level Computer Science notes on Relational Databases: 1. The Relational
-  Model; Definition; Terminology; Keys with worked examples and exam-style
-  questions.
+  "A-Level Computer Science notes on Relational Databases: 1. The Relational Model; Definition; Terminology; Keys with worked examples and exam-style questions."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

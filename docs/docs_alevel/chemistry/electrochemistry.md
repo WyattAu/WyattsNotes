@@ -1,9 +1,7 @@
 ---
 title: Electrochemistry
 description:
-  A-Level Chemistry notes on Electrochemistry: Redox Reactions; Oxidation States
-  (Oxidation Numbers); Half-Equations for thorough revision and examination
-  prep.
+  "A-Level Chemistry notes on Electrochemistry: Redox Reactions; Oxidation States (Oxidation Numbers); Half-Equations for thorough revision and examination prep."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

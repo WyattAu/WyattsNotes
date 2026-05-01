@@ -1,8 +1,7 @@
 ---
 title: Thermodynamics
 description:
-  Thermodynamics — Sign Convention (Chemistry); Pressure-Volume Work; Work at
-  Constant Pressure: Enthalpy; Derivation: Why $\Delta H = q_P$.
+  'Thermodynamics — Sign Convention (Chemistry); Pressure-Volume Work; Work at Constant Pressure: Enthalpy; Derivation: Why $\Delta H = q_P$.'
 date: 2026-04-14
 tags:
   - Chemistry

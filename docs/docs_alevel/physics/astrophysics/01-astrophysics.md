@@ -1,8 +1,7 @@
 ---
 title: Astrophysics
 description:
-  A-Level Physics notes on Astrophysics: 1. Astronomical Distances and
-  Measurements; Astronomical Units of Distance; Stellar Parallax.
+  "A-Level Physics notes on Astrophysics: 1. Astronomical Distances and Measurements; Astronomical Units of Distance; Stellar Parallax."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Physics

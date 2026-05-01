@@ -1,8 +1,7 @@
 ---
 title: Argument Deduction (Class and Function)
 description:
-  C++: Argument Deduction (Class and Function) — Function Template Argument
-  Deduction; Deduction Rules in Detail; Formal Deduction Algorithm.
+  "C++: Argument Deduction (Class and Function) — Function Template Argument Deduction; Deduction Rules in Detail; Formal Deduction Algorithm."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

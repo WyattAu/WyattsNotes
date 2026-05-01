@@ -1,8 +1,7 @@
 ---
 title: The Itanium Exception ABI
 description:
-  C++: The Itanium Exception ABI — 1.1 Table-Based Unwinding Model; Alternative
-  Exception Models; 1.2 Searching for Matching Catch Clauses.
+  "C++: The Itanium Exception ABI — 1.1 Table-Based Unwinding Model; Alternative Exception Models; 1.2 Searching for Matching Catch Clauses."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -1,8 +1,7 @@
 ---
 title: Number Systems
 description:
-  A-Level Computer Science notes on Number Systems: Definition; Conversion
-  Between Bases; Base $b$ to Denary; Denary to Base $b$ (Repeated Division).
+  "A-Level Computer Science notes on Number Systems: Definition; Conversion Between Bases; Base $b$ to Denary; Denary to Base $b$ (Repeated Division)."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

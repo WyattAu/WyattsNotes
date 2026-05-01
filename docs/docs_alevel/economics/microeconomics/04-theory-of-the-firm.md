@@ -1,9 +1,7 @@
 ---
 title: Theory of the Firm
 description:
-  A-Level Economics notes on Theory of the Firm: 1. Costs of Production; 1.1
-  Definitions; 1.2 Deriving Costs from the Production Function; 1.3 Economies of
-  Scale.
+  "A-Level Economics notes on Theory of the Firm: 1. Costs of Production; 1.1 Definitions; 1.2 Deriving Costs from the Production Function; 1.3 Economies of Scale."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

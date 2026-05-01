@@ -1,8 +1,7 @@
 ---
 title: Rebasing
 description:
-  Rebasing — Merge vs Rebase: Visual Comparison; How Rebase Works Internally;
-  Basic Rebase; Rebase the current branch onto main.
+  "Rebasing — Merge vs Rebase: Visual Comparison; How Rebase Works Internally; Basic Rebase; Rebase the current branch onto main."
 date: 2025-06-03T04:00:00.000Z
 tags:
   - git

@@ -1,9 +1,7 @@
 ---
 title: Organic Chemistry Introduction
 description:
-  A-Level Chemistry notes on Organic Chemistry Introduction: IUPAC Nomenclature;
-  Naming Algorithm; Multiplying Prefixes and Complex Substituents; Homologous
-  Se.
+  "A-Level Chemistry notes on Organic Chemistry Introduction: IUPAC Nomenclature; Naming Algorithm; Multiplying Prefixes and Complex Substituents; Homologous Se."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

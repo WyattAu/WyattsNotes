@@ -1,9 +1,7 @@
 ---
 title: Computer Science
 description:
-  A-Level Computer Science notes on Computer Science: Board Coverage; Course
-  Structure; Assessment; How to Use These Notes with worked examples and
-  exam-style.
+  "A-Level Computer Science notes on Computer Science: Board Coverage; Course Structure; Assessment; How to Use These Notes with worked examples and exam-style."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

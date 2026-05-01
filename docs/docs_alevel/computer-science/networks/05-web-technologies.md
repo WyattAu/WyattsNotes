@@ -1,9 +1,7 @@
 ---
 title: Web Technologies
 description:
-  A-Level Computer Science notes on Web Technologies: 1. The Internet and the
-  World Wide Web; The Internet vs the Web; Historical Development; Key Internet
-  Pro.
+  "A-Level Computer Science notes on Web Technologies: 1. The Internet and the World Wide Web; The Internet vs the Web; Historical Development; Key Internet Pro."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - ComputerScience

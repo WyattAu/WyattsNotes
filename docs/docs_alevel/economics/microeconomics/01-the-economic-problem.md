@@ -1,8 +1,7 @@
 ---
 title: The Economic Problem
 description:
-  A-Level Economics notes on The Economic Problem: 1. Fundamental Concepts for
-  comprehensive revision and examination preparation.
+  "A-Level Economics notes on The Economic Problem: 1. Fundamental Concepts for comprehensive revision and examination preparation."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

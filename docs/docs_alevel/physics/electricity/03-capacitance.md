@@ -1,8 +1,7 @@
 ---
 title: Capacitance
 description:
-  A-Level Physics notes on Capacitance: 2. Parallel Plate Capacitor; Derivation
-  of $C = \varepsilon_0 A/d$; 3. Energy Stored in a Capacitor.
+  "A-Level Physics notes on Capacitance: 2. Parallel Plate Capacitor; Derivation of $C = \varepsilon_0 A/d$; 3. Energy Stored in a Capacitor."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

@@ -1,8 +1,7 @@
 ---
 title: Proof
 description:
-  A-Level Mathematics notes on Proof: Board Coverage; 1.1 Method; 1.2 Example:
-  the sum of an arithmetic series; 1.3 Example: the difference of squares.
+  "A-Level Mathematics notes on Proof: Board Coverage; 1.1 Method; 1.2 Example: the sum of an arithmetic series; 1.3 Example: the difference of squares."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

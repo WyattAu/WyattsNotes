@@ -1,8 +1,7 @@
 ---
 title: Functions, Closures, and Decorators
 description:
-  Functions, Closures, and Decorators — Functions as First-Class Objects;
-  Functions Are Objects; {'name': <class 'str'>, 'return': <class 'str'>}.
+  "Functions, Closures, and Decorators — Functions as First-Class Objects; Functions Are Objects; {'name': <class 'str'>, 'return': <class 'str'>}."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

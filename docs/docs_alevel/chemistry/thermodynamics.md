@@ -1,8 +1,7 @@
 ---
 title: Thermodynamics & Energetics
 description:
-  A-Level Chemistry notes on Thermodynamics & Energetics: Fundamental Concepts;
-  System, Surroundings, and the Universe; Enthalpy ($H$); Internal Energy ($U$).
+  "A-Level Chemistry notes on Thermodynamics & Energetics: Fundamental Concepts; System, Surroundings, and the Universe; Enthalpy ($H$); Internal Energy ($U$)."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

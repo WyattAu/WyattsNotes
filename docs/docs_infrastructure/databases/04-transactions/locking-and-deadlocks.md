@@ -2,8 +2,7 @@
 id: locking-and-deadlocks
 title: Locking and Deadlocks
 description:
-  Databases: Locking and Deadlocks — Lock Types Overview; Lock Granularity; Lock
-  Modes (Table-Level); Lock Compatibility Matrix.
+  "Databases: Locking and Deadlocks — Lock Types Overview; Lock Granularity; Lock Modes (Table-Level); Lock Compatibility Matrix."
 slug: locking-and-deadlocks
 ---
 

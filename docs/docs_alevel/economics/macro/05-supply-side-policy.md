@@ -1,8 +1,7 @@
 ---
 title: Supply-Side Policy
 description:
-  A-Level Economics notes on Supply-Side Policy: 1. Introduction; 1.1
-  Definition; 2. Market-Oriented Supply-Side Policies; 2.1 Tax Reform.
+  "A-Level Economics notes on Supply-Side Policy: 1. Introduction; 1.1 Definition; 2. Market-Oriented Supply-Side Policies; 2.1 Tax Reform."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

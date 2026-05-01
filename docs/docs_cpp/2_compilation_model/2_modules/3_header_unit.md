@@ -1,8 +1,7 @@
 ---
 title: Header Units
 description:
-  C++: Header Units — Formal Basis; 2. The Global Module Fragment (GMF);
-  Architecture; Isolation Rules with worked examples and exam-style questions.
+  "C++: Header Units — Formal Basis; 2. The Global Module Fragment (GMF); Architecture; Isolation Rules with worked examples and exam-style questions."
 date: 2025-12-12T04:19:09.448Z
 tags:
   - cpp

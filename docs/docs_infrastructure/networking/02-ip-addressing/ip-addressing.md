@@ -2,8 +2,7 @@
 id: ip-addressing
 title: IP Addressing
 description:
-  Networking: IP Addressing — IPv4 Address Structure; Binary Representation;
-  Special IPv4 Addresses; Address Classes (Historical).
+  "Networking: IP Addressing — IPv4 Address Structure; Binary Representation; Special IPv4 Addresses; Address Classes (Historical)."
 slug: ip-addressing
 sidebar_position: 3
 tags:

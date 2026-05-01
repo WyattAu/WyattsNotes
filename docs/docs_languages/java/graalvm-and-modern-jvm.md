@@ -1,8 +1,7 @@
 ---
 title: GraalVM and Modern JVM
 description:
-  Java: GraalVM and Modern JVM — What GraalVM Provides; The Graal Compiler;
-  Graal JIT vs C2 JIT; Compilation Tiers with Graal.
+  "Java: GraalVM and Modern JVM — What GraalVM Provides; The Graal Compiler; Graal JIT vs C2 JIT; Compilation Tiers with Graal."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Java

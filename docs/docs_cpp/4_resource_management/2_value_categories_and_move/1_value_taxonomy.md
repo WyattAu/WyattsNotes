@@ -1,8 +1,7 @@
 ---
 title: Value Taxonomy
 description:
-  C++: Value Taxonomy — 1.1 The Three-Valued System (C++17); 1.2 Value Category
-  Diagram; 1.3 Historical Evolution; 2.1 lvalue.
+  "C++: Value Taxonomy — 1.1 The Three-Valued System (C++17); 1.2 Value Category Diagram; 1.3 Historical Evolution; 2.1 lvalue."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

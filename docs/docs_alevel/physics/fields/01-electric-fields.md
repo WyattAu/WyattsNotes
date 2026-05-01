@@ -1,8 +1,7 @@
 ---
 title: Electric Fields
 description:
-  A-Level Physics notes on Electric Fields: 1. Coulomb's Law; Comparison with
-  Gravity; Inverse Square Law Parallels; 2. Electric Field Strength.
+  "A-Level Physics notes on Electric Fields: 1. Coulomb's Law; Comparison with Gravity; Inverse Square Law Parallels; 2. Electric Field Strength."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

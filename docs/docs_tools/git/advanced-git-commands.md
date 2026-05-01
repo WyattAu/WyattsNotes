@@ -1,9 +1,7 @@
 ---
 title: Advanced Git Commands
 description:
-  Git version control: Advanced Git Commands — git replace; Basic Syntax;
-  Replace one object with another; Replace using an edited version of the
-  original.
+  "Git version control: Advanced Git Commands — git replace; Basic Syntax; Replace one object with another; Replace using an edited version of the original."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Git

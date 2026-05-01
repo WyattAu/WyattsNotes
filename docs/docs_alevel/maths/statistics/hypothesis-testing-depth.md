@@ -1,8 +1,7 @@
 ---
 title: Hypothesis Testing (Extended)
 description:
-  A-Level Mathematics notes on Hypothesis Testing (Extended): Hypothesis Testing
-  (Extended Treatment); 1. The Hypothesis Testing Framework.
+  "A-Level Mathematics notes on Hypothesis Testing (Extended): Hypothesis Testing (Extended Treatment); 1. The Hypothesis Testing Framework."
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

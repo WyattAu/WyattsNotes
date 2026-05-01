@@ -1,8 +1,7 @@
 ---
 title: Ecosystems
 description:
-  A-Level Geography notes on Ecosystems: Ecosystem Components; Definitions;
-  Trophic Levels and Food Chains; Ecological Niches.
+  "A-Level Geography notes on Ecosystems: Ecosystem Components; Definitions; Trophic Levels and Food Chains; Ecological Niches."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Geography
