@@ -12,14 +12,14 @@ Complete revision notes for IB Mathematics, covering the full syllabus with work
 
 ### Number and Algebra
 
-- **[Number and Algebra](./Number-and-algebra/Number-and-algebra)** — Sequences, series, binomial theorem, and proof by induction
-- **[Complex Numbers](./Number-and-algebra/Complex)** — Complex arithmetic, polar form, and De Moivre's theorem
+- **[Number and Algebra](./Number-and-algebra/number-algebra)** — Sequences, series, binomial theorem, and proof by induction
+- **[Complex Numbers](./Number-and-algebra/complex-numbers)** — Complex arithmetic, polar form, and De Moivre's theorem
 - **[Complex Numbers (Overview)](complex-numbers)** — Complex arithmetic, polar form, De Moivre's theorem, and roots of unity
 
 ### Functions and Equations
 
-- **[Functions and Equations](./Functions-and-Equations/Functions)** — Functions, composite functions, inverse functions, transformations, and equations
-- **[Sequences and Series](./Functions-and-Equations/Sequences-Series)** — Arithmetic and geometric sequences and series, sigma notation, and binomial theorem
+- **[Functions and Equations](./Functions-and-Equations/functions)** — Functions, composite functions, inverse functions, transformations, and equations
+- **[Sequences and Series](./Functions-and-Equations/sequences-series)** — Arithmetic and geometric sequences and series, sigma notation, and binomial theorem
 
 ### Geometry and Trigonometry
 
@@ -37,15 +37,15 @@ Complete revision notes for IB Mathematics, covering the full syllabus with work
 
 ### Probability and Statistics
 
-- **[Probability](./Probability-Statistics/Probability)** — Probability theory, conditional probability, Bayes' theorem, and distributions
-- **[Statistics](./Probability-Statistics/Statistics)** — Descriptive statistics, correlation, regression, and hypothesis testing
+- **[Probability](./Probability-Statistics/probability)** — Probability theory, conditional probability, Bayes' theorem, and distributions
+- **[Statistics](./Probability-Statistics/statistics)** — Descriptive statistics, correlation, regression, and hypothesis testing
 - **[Statistics (Overview)](statistics)** — Descriptive statistics, correlation, regression, conditional probability, and combinatorics
 
 ### Vectors and Matrices
 
-- **[Vectors in Three Dimensions](./vectors-and-matrices/vectors)** — Vector operations, dot and cross products, equations of lines and planes, and shortest distances
-- **[Matrices and Linear Transformations](./vectors-and-matrices/matrices)** — Matrix operations, determinants, inverses, solving systems, and eigenvalues
-- **[Complex Numbers (Advanced)](./vectors-and-matrices/complex-numbers)** — Cartesian and polar form, De Moivre's theorem, roots of unity, and Euler's formula
+- **[Vectors in Three Dimensions](./vectors-and-matrices/vectors-in-three-dimensions)** — Vector operations, dot and cross products, equations of lines and planes, and shortest distances
+- **[Matrices and Linear Transformations](./vectors-and-matrices/matrices-and-linear-transformations)** — Matrix operations, determinants, inverses, solving systems, and eigenvalues
+- **[Complex Numbers (Advanced)](./vectors-and-matrices/complex-numbers-advanced)** — Cartesian and polar form, De Moivre's theorem, roots of unity, and Euler's formula
 
 ### Proof and Logic
 
