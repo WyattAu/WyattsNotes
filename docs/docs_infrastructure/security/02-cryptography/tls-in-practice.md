@@ -2,8 +2,9 @@
 id: tls-in-practice
 title: TLS in Practice
 description:
-  TLS deployment — certificate management, ACME/Let's Encrypt, certificate lifecycle, and common
-  misconfigurations.
+  TLS in Practice — Getting a Certificate; Certificate Authority (CA) Options;
+  Self-Signed Certificates; Generate a self-signed certificate (development
+  only).
 slug: tls-in-practice
 ---
 

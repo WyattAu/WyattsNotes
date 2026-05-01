@@ -1,5 +1,8 @@
 ---
 title: Electricity
+description:
+  Electricity — Electric Charge and Current; Drift Velocity; Potential
+  Difference, EMF, and Resistance; Why Ohm's Law Is Not a Universal Law.
 date: 2026-04-14
 tags:
   - Physics

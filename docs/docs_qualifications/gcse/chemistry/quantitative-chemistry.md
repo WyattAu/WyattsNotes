@@ -1,5 +1,8 @@
 ---
 title: Quantitative Chemistry
+description:
+  Quantitative Chemistry — 1. Relative Formula Mass; 1.1 Calculating Relative
+  Formula Mass; 1.2 Conservation of Mass and Balancing Equations.
 date: 2026-04-14
 tags:
   - Chemistry

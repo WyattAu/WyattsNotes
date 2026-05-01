@@ -1,5 +1,8 @@
 ---
 title: Multicellular Organisms
+description:
+  Multicellular Organisms — Stem Cells and Differentiation for comprehensive
+  revision and examination preparation. and examination prepar.
 date: 2026-04-14
 tags:
   - Biology

@@ -1,5 +1,8 @@
 ---
 title: Essential Modules
+description:
+  Essential Modules — `os` and `pathlib`: File System Operations; The Case for
+  `pathlib` Over `os.path`; When `os` Is Still Needed.
 date: 2025-06-04T14:00:00.000Z
 tags:
   - Python

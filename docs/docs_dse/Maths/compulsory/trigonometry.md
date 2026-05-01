@@ -630,3 +630,5 @@ distinct triangles exist, and find all possible values of $B$.
 </details>
 </details>
 
+For the A-Level treatment of this topic, see [Trigonometry](https://alevel.wyattau.com/docs/maths/pure-mathematics/trigonometry).
+

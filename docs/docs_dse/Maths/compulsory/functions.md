@@ -855,3 +855,5 @@ $f^{-1}(3) + f(3)$.
 </details>
 </details>
 
+For the A-Level treatment of this topic, see [Functions](https://alevel.wyattau.com/docs/maths/pure-mathematics/functions).
+

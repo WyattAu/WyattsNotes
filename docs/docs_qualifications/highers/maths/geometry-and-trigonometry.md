@@ -1,5 +1,9 @@
 ---
 title: Geometry and Trigonometry
+description:
+  Geometry and Trigonometry — Higher Trigonometry; Trigonometric Functions;
+  Radians; Trigonometric Identities with worked examples and exam-style
+  questions.
 date: 2026-04-14
 tags:
   - Mathematics

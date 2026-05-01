@@ -1,5 +1,8 @@
 ---
 title: Atomic Structure
+description:
+  Atomic Structure — 1. The Atom; 1.1 Subatomic Particles; 1.2 History of the
+  Atom; 1.3 The Rutherford Scattering Experiment.
 date: 2026-04-14
 tags:
   - Chemistry

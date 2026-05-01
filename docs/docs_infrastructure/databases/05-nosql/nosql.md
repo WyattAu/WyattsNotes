@@ -2,8 +2,9 @@
 id: nosql
 title: NoSQL Databases
 description:
-  NoSQL paradigms — document stores, key-value stores, column families, graph databases, and the CAP
-  theorem.
+  NoSQL Databases — The CAP Theorem; Why P Is Non-Negotiable; The PACELC
+  Theorem; Consistency Models: A Spectrum with worked examples and exam-style
+  questions.
 slug: nosql
 sidebar_position: 1
 tags:

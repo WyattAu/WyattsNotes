@@ -596,3 +596,5 @@ Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
 
 - **Integration techniques** used in solving DEs: see [Integration Techniques](integration-techniques)
 - **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](sequences-and-series)
+
+For the A-Level Further Maths treatment of this topic, see [Differential Equations](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/differential-equations).

@@ -1,6 +1,8 @@
 ---
 title: Testing
-description: JUnit 5, MockK, test fixtures, parameterized tests, and property-based testing.
+description:
+  Testing — Dependencies; JUnit 5 Basics; Test Annotations; Assertion Libraries
+  with worked examples and exam-style questions.
 slug: testing
 date: 2026-04-18
 tags:

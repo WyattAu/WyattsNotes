@@ -1,5 +1,8 @@
 ---
 title: Bisect
+description:
+  Bisect — Binary Search for Bugs; Why Manual Debugging Fails; Basic Usage; Mark
+  the current commit as bad (bug is present).
 date: 2025-06-03T10:00:00.000Z
 tags:
   - git

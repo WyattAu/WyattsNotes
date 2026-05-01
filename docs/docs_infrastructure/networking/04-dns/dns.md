@@ -2,8 +2,8 @@
 id: dns
 title: DNS
 description:
-  Domain Name System — hierarchy, record types, resolution process, caching, DNSSEC, and DNS over
-  HTTPS/TLS.
+  DNS — Domain Levels; FQDN (Fully Qualified Domain Name); Root Name Servers;
+  TLD Name Servers with worked examples and exam-style questions.
 slug: dns
 sidebar_position: 5
 tags:

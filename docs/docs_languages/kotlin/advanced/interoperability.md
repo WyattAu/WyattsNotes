@@ -1,7 +1,8 @@
 ---
 title: Java Interoperability
 description:
-  Calling Java from Kotlin, calling Kotlin from Java, SAM conversions, and platform types.
+  Java Interoperability — Calling Java from Kotlin; Getters and Setters;
+  Nullability and Platform Types; Handling Platform Types.
 slug: interoperability
 date: 2026-04-18
 tags:

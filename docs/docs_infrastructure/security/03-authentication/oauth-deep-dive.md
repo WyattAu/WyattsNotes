@@ -2,7 +2,8 @@
 id: oauth-deep-dive
 title: OAuth 2.0 Deep Dive
 description:
-  OAuth 2.0 and OpenID Connect — grants, tokens, PKCE, token lifecycle, and security considerations.
+  OAuth 2.0 Deep Dive — OAuth 2.0 Overview; Roles; Grant Types; Authorization
+  Code Grant (with PKCE) with worked examples and exam-style questions.
 slug: oauth-deep-dive
 ---
 

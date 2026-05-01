@@ -1,6 +1,8 @@
 ---
 title: Types and Variables
-description: val/var, basic types, type inference, and null safety.
+description:
+  Types and Variables — val and var; Basic Types; Implicit Conversions; Type
+  Inference with worked examples and exam-style questions.
 slug: types-and-variables
 date: 2026-04-18
 tags:

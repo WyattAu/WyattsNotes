@@ -1,5 +1,8 @@
 ---
 title: Physical Geography
+description:
+  A-Level Geography notes on Physical Geography: Plate Tectonics; The Structure
+  of the Earth; Plate Boundaries; Evidence for Plate Tectonics.
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Geography

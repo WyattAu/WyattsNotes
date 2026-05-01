@@ -1,5 +1,8 @@
 ---
 title: Particle Physics and Cosmology
+description:
+  University-level notes on Particle Physics and Cosmology: 1. The Standard
+  Model; 1.1 Overview; 1.2 Gauge Symmetry; 1.3 Electroweak Unification.
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

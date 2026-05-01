@@ -2,8 +2,8 @@
 id: complexity-analysis
 title: Complexity Analysis
 description:
-  Algorithm complexity — Big-O, Big-Omega, Big-Theta, amortized analysis, space complexity, and
-  NP-completeness.
+  Algorithm design: Complexity Analysis — Why Complexity Analysis Matters;
+  Asymptotic Notation; Big-O: Upper Bound; Example: nested loop is O(n^2).
 slug: complexity-analysis
 ---
 

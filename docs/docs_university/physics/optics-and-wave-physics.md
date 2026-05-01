@@ -1,5 +1,8 @@
 ---
 title: Optics and Wave Physics
+description:
+  University-level notes on Optics and Wave Physics: 1. The Wave Equation; 1.1
+  Derivation from Maxwell's Equations; 1.2 General Solutions.
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

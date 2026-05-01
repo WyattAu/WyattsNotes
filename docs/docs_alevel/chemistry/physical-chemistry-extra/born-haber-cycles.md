@@ -1,5 +1,8 @@
 ---
 title: Born-Haber Cycles
+description:
+  A-Level Chemistry notes on Born-Haber Cycles: Lattice Enthalpy; Definitions;
+  Terminology Convention; Born-Haber Cycle Construction.
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

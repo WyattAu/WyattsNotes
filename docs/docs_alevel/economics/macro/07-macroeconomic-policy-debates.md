@@ -1,5 +1,9 @@
 ---
 title: Macroeconomic Policy Debates
+description:
+  A-Level Economics notes on Macroeconomic Policy Debates: 1. Monetarism vs
+  Keynesianism; 1.1 The Keynesian Revolution; 1.2 The Monetarist
+  Counter-Revolution.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

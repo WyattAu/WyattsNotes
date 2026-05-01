@@ -1,5 +1,8 @@
 ---
 title: Installation
+description:
+  Installation — IDE choice; Standalone Dart SDK; macOS; Linux (Debian/Ubuntu)
+  with worked examples and exam-style questions.
 date: 2025-07-12T15:51:40.399Z
 tags:
   - Dart

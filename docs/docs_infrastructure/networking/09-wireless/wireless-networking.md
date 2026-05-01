@@ -2,8 +2,8 @@
 id: wireless-networking
 title: Wireless Networking
 description:
-  802.11 Wi-Fi fundamentals -- RF basics, standards evolution, architecture, frame types, security,
-  channel allocation, troubleshooting, and mesh networking.
+  Wireless Networking — RF Fundamentals; Electromagnetic Waves; Decibel Scale;
+  SNR and SINR with worked examples and exam-style questions.
 slug: wireless-networking
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z

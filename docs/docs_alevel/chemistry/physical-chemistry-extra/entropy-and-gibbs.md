@@ -1,5 +1,8 @@
 ---
 title: Entropy and Gibbs Free Energy
+description:
+  A-Level Chemistry notes on Entropy and Gibbs Free Energy: Entropy ($S$);
+  Statistical Definition; Thermodynamic Definition; Factors Affecting Entropy.
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

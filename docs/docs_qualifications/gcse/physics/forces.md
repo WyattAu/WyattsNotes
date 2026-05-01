@@ -1,5 +1,8 @@
 ---
 title: Forces
+description:
+  Forces — 1. Force Diagrams and Vector Quantities; 1.1 Scalars and Vectors; 1.2
+  Why the Distinction Matters; 1.3 Force Diagrams.
 date: 2026-04-14
 tags:
   - Physics

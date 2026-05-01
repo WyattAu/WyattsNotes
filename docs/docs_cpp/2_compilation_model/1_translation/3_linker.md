@@ -1,5 +1,8 @@
 ---
 title: Linker
+description:
+  C++: Linker — 1. Symbol Resolution; The Resolution State Machine; Weak vs.
+  Strong vs. Common Symbols; Symbol Visibility.
 date: 2025-12-11T23:31:53.376Z
 tags:
   - cpp

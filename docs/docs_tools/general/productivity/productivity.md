@@ -2,8 +2,8 @@
 id: productivity
 title: Developer Productivity
 description:
-  Productivity for developers — time management, note-taking, learning strategies, and knowledge
-  management.
+  Developer Productivity — Time Management; The Pomodoro Technique; Time
+  Blocking; Deep Work with worked examples and exam-style questions.
 slug: productivity
 ---
 

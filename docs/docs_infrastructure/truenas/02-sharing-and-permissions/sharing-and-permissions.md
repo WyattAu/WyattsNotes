@@ -1,7 +1,10 @@
 ---
 id: sharing-and-permissions
 title: Sharing and Permissions
-description: File sharing protocols — SMB, NFS, iSCSI, and permission management on TrueNAS.
+description:
+  Sharing and Permissions — SMB/CIFS; SMB Protocol Overview; SMB Dialect
+  Negotiation; SMB3 Features in Detail with worked examples and exam-style
+  questions.
 slug: sharing-and-permissions
 ---
 

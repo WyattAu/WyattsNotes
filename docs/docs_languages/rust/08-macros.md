@@ -1,5 +1,8 @@
 ---
 title: Macros
+description:
+  Macros — Basic Syntax; Metavariables; Fragment Specifiers; Repetition
+  including key definitions, derivations, and problem-solving techniques.
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Rust

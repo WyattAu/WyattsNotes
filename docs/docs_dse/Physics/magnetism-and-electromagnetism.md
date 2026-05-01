@@ -543,3 +543,5 @@ factor of 100.
 
 If you get this wrong, revise: Transformers / Efficiency
 
+For the A-Level treatment of this topic, see [Magnetic Fields](https://alevel.wyattau.com/docs/physics/fields/magnetic-fields).
+

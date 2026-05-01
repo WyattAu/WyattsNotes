@@ -1,5 +1,8 @@
 ---
 title: File I/O
+description:
+  File I/O — The `open()` Built-in; Modes; The `encoding` Parameter; The
+  `errors` Parameter with worked examples and exam-style questions.
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

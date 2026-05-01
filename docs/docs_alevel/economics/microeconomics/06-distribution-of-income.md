@@ -1,5 +1,8 @@
 ---
 title: Distribution of Income
+description:
+  A-Level Economics notes on Distribution of Income: 1. Measuring Inequality;
+  1.1 The Lorenz Curve; 1.2 The Gini Coefficient.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

@@ -1,5 +1,8 @@
 ---
 title: Software Licensing
+description:
+  Software licensing: copyleft and permissive licences, GPL family, Apache, MIT,
+  licence compatibility, and guidance on choosing open-source licences.
 date: 2025-07-07T23:37:45.807Z
 tags:
   - CS

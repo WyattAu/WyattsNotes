@@ -51,7 +51,7 @@ Complete revision notes for IB Chemistry, covering the full syllabus with worked
 
 ## Exam Resources
 
-- **[Syllabus](./Syllabus)** — Full IB Chemistry syllabus with topic coverage checklist
+- **Syllabus** — Full IB Chemistry syllabus with topic coverage checklist
 
 ## Related Content
 

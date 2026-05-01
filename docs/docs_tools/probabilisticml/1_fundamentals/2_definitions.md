@@ -1,5 +1,8 @@
 ---
 title: Definitions
+description:
+  Definitions — Sets and Relations; Power Set; Disjoint Sets; Equivalence
+  Relation with worked examples and exam-style questions.
 date: 2026-01-15T09:31:35.184Z
 tags:
   - ML

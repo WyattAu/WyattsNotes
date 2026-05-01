@@ -1,5 +1,8 @@
 ---
 title: Class Modifiers
+description:
+  Class Modifiers — The Modifier Matrix; Why They Exist; `sealed`; Brief Recap
+  with worked examples and exam-style questions.
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

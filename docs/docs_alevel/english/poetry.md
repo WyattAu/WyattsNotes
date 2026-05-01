@@ -1,5 +1,8 @@
 ---
 title: Poetry
+description:
+  A-Level English notes on Poetry: Poetic Terminology; Metre; Rhyme Schemes;
+  Enjambment and Caesura with worked examples and exam-style questions.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - English

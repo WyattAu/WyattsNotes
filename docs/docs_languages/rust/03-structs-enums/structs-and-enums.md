@@ -2,8 +2,8 @@
 id: structs-and-enums
 title: Structs and Enums
 description:
-  Rust data structures — structs, enums, pattern matching, methods, associated functions, and
-  visibility.
+  Structs and Enums — Structs; Unit Structs; Tuple Structs; Named-Field Structs
+  with worked examples and exam-style questions.
 slug: structs-and-enums
 ---
 

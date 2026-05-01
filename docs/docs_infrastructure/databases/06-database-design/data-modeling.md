@@ -2,8 +2,8 @@
 id: data-modeling
 title: Data Modeling Patterns
 description:
-  Data modeling — normalization vs denormalization, temporal patterns, hierarchical data, and
-  polymorphic associations.
+  Databases: Data Modeling Patterns — Normalization Review; When to Stop
+  Normalizing; 3NF vs Denormalization; When to Denormalize.
 slug: data-modeling
 ---
 

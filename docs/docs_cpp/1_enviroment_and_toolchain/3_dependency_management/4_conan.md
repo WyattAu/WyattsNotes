@@ -1,5 +1,8 @@
 ---
 title: Conan
+description:
+  C++: Conan — The Binary Compatibility Graph; Resolution Logic; Package ID
+  Calculation: Formal Treatment; Profile Configuration.
 date: 2025-12-11T05:01:52.356Z
 tags:
   - cpp

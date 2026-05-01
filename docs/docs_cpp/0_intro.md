@@ -2,8 +2,8 @@
 id: intro
 title: C++ Systems Programming
 description:
-  Comprehensive C++ notes covering the language standard, ABI, compilation model, templates,
-  concurrency, and the standard library — written for systems engineers.
+  C++: C++ Systems Programming — Interactive Examples; How to Use These Notes;
+  Part 1 — Environment and Toolchain (Modules 1–4).
 slug: /intro
 sidebar_position: 1
 ---

@@ -2,8 +2,8 @@
 id: migrations
 title: Schema Migrations
 description:
-  Database migrations — migration tools, versioning strategies, rollback patterns, and zero-downtime
-  deployments.
+  Databases: Schema Migrations — Why Migrations Matter; Migration Tools; Flyway;
+  Naming convention: V{version}__{description}.sql.
 slug: migrations
 ---
 

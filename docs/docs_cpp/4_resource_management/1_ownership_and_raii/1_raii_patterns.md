@@ -1,5 +1,8 @@
 ---
 title: RAII Patterns
+description:
+  C++: RAII Patterns — 1.1 Formal Definition; 1.2 Stack Unwinding Guarantee; 1.3
+  MutexLock Example; 1.4 Standard Library RAII Wrappers.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

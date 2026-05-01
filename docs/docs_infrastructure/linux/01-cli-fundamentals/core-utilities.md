@@ -2,8 +2,8 @@
 id: core-utilities
 title: Core Utilities
 description:
-  Essential Linux CLI utilities — text processing (grep, sed, awk, sort, uniq, wc, cut, tr), file
-  operations (find, xargs, ln, stat), and archiving.
+  Core Utilities — GNU Coreutils Overview; Text Processing Pipeline Patterns;
+  `grep` — Pattern Matching; Basic pattern matching.
 slug: core-utilities
 sidebar_position: 2
 ---

@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Dart & Flutter
-description: Dart and Flutter best practices, UI patterns, and cross-platform development reference.
+description:
+  Introduction to Dart & Flutter — Abstract; Dart Introduction; Flutter
+  Introduction; Where Dart Runs with worked examples and exam-style questions.
 slug: intro
 sidebar_position: 1
 ---

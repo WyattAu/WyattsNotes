@@ -2,8 +2,8 @@
 id: advanced-data-structures
 title: Advanced Data Structures
 description:
-  Advanced data structures — segment trees, Fenwick trees, disjoint set union, sparse tables, and
-  LCA.
+  Advanced Data Structures — Segment Tree; Range Sum Query; Range Min/Max Query;
+  Lazy Propagation with worked examples and exam-style questions.
 slug: advanced-data-structures
 ---
 

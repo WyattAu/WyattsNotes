@@ -1,5 +1,8 @@
 ---
 title: Energy
+description:
+  Energy — 1.4 Why "Stores and Transfers" Matters; 2.2 Why the Factor of
+  One-Half; 2.5 Proof That the Final Speed Is Independent of Mass.
 date: 2026-04-14
 tags:
   - Physics

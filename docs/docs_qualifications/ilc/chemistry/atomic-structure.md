@@ -1,5 +1,8 @@
 ---
 title: Atomic Structure
+description:
+  Atomic Structure — Subatomic Particles (OL/HL); Atomic Number and Mass Number;
+  Isotopes (OL/HL); Relative Atomic Mass (OL/HL).
 date: 2026-04-14
 tags:
   - Chemistry

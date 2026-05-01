@@ -801,4 +801,6 @@ $$
 v = \omega\sqrt{A^2 - x^2} = 2.21\sqrt{(1.42)^2 - (0.92)^2} = 2.21\sqrt{1.170} = 2.21(1.082) = 2.39\mathrm{ m/s}
 $$
 
+For the A-Level treatment of this topic, see [Oscillations](https://alevel.wyattau.com/docs/physics/mechanics/oscillations).
+
 </details>

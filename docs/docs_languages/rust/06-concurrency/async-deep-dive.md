@@ -2,8 +2,8 @@
 id: async-deep-dive
 title: Async Deep Dive
 description:
-  Async/await internals — futures, Waker, Pin, executors, async I/O, cancellation, and async
-  patterns.
+  Async Deep Dive — The Future Trait; `Context` and `Waker`; Polling Model; How
+  `async fn` Desugars with worked examples and exam-style questions.
 slug: async-deep-dive
 ---
 

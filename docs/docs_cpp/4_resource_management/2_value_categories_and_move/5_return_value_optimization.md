@@ -1,5 +1,8 @@
 ---
 title: Return Value Optimization (RVO) and NRVO
+description:
+  C++: Return Value Optimization (RVO) and NRVO — 8.1 Guaranteed Copy Elision
+  (C++17 RVO); Proof of Zero-Copy Guarantee for URVO in C++17.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

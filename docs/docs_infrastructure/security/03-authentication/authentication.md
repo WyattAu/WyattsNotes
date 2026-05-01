@@ -2,8 +2,8 @@
 id: authentication
 title: Authentication and Authorization
 description:
-  Identity management — password hashing, MFA, OAuth 2.0, OpenID Connect, SAML, JWT, RBAC, ABAC, and
-  session management.
+  Authentication and Authorization — Authentication vs Authorization; Password
+  Storage; How Not to Store Passwords; How to Store Passwords.
 slug: authentication
 sidebar_position: 4
 ---

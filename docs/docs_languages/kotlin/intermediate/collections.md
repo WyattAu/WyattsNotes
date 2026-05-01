@@ -1,6 +1,8 @@
 ---
 title: Collections
-description: List, Set, Map, Sequence, and collection operations.
+description:
+  Collections — Collection Hierarchy; List; List Operations; Set Operations with
+  worked examples and exam-style questions.
 slug: collections
 date: 2026-04-18
 tags:

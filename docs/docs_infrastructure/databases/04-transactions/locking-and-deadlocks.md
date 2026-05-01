@@ -2,7 +2,8 @@
 id: locking-and-deadlocks
 title: Locking and Deadlocks
 description:
-  Database locking — row-level locks, table locks, advisory locks, deadlocks, and lock monitoring.
+  Databases: Locking and Deadlocks — Lock Types Overview; Lock Granularity; Lock
+  Modes (Table-Level); Lock Compatibility Matrix.
 slug: locking-and-deadlocks
 ---
 

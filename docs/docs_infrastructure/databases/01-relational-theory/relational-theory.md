@@ -2,8 +2,9 @@
 id: relational-theory
 title: Relational Theory
 description:
-  Formal relational database theory — relations, tuples, keys, normalization, functional
-  dependencies, and the relational algebra.
+  Relational Theory — The Relational Model; Codd's 12 Rules (and Rule 0);
+  Relations, Tuples, Attributes, and Domains; Key Distinction: Relations Are
+  Sets.
 slug: relational-theory
 sidebar_position: 1
 tags:

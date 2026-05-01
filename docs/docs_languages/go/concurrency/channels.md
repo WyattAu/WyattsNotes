@@ -1,6 +1,8 @@
 ---
 title: Channels and Concurrency Patterns
-description: Buffered/unbuffered channels, select, channel patterns, and the context package.
+description:
+  Channels and Concurrency Patterns — Channel Review; Select; Select with
+  Default; Select Timeout with worked examples and exam-style questions.
 slug: channels
 date: 2026-04-18
 tags:

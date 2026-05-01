@@ -1,5 +1,8 @@
 ---
 title: Computing Systems
+description:
+  Computing Systems — Hardware Components; The Fetch-Decode-Execute Cycle;
+  Binary and Data Representation; Two's Complement.
 date: 2026-04-14
 tags:
   - Computer Science

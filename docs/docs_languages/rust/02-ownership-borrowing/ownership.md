@@ -2,8 +2,8 @@
 id: ownership
 title: Ownership and Borrowing
 description:
-  Rust ownership model — move semantics, borrows, lifetimes, interior mutability, and the borrow
-  checker.
+  Ownership and Borrowing — The Ownership Rules; Move Semantics; What Moves and
+  What Copies; The `Copy` Trait with worked examples and exam-style questions.
 slug: ownership
 ---
 

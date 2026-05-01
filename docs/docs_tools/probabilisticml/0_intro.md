@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Probabilistic ML
-description: Graduate-level probabilistic machine learning — mathematical foundations and theory.
+description:
+  Probabilistic machine learning: Introduction to Probabilistic ML — Abstract;
+  Notes Format, covering core concepts and practical techniques.
 slug: intro
 sidebar_position: 1
 date: 2026-01-07T07:50:21.312Z

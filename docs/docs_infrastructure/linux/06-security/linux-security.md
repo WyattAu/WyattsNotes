@@ -2,8 +2,8 @@
 id: linux-security
 title: Linux Security
 description:
-  Linux security fundamentals — users and groups, PAM, SELinux/AppArmor, capabilities, seccomp,
-  audit, and hardening.
+  Linux Security — User and Group Model; User and Group Files; View user
+  information; Create user with worked examples and exam-style questions.
 slug: linux-security
 sidebar_position: 1
 ---

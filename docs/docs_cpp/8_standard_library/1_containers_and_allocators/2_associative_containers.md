@@ -1,5 +1,8 @@
 ---
 title: Associative and Unordered Containers
+description:
+  C++: Associative and Unordered Containers — `std::map` and `std::set`:
+  Red-Black Tree, O(log n) Operations; Proof of O(log n) Height Bound.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

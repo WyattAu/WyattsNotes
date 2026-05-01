@@ -1,5 +1,8 @@
 ---
 title: Collections Framework
+description:
+  Collections Framework — Architecture Overview; The Iterable Interface; List
+  Implementations; ArrayList with worked examples and exam-style questions.
 date: 2025-06-05T13:00:00.000Z
 tags: ['java']
 categories: ['java']

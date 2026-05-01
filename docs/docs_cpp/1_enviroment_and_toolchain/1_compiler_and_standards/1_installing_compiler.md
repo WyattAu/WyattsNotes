@@ -1,5 +1,8 @@
 ---
 title: Installing Compiler
+description:
+  C++: Installing Compiler — Technical Glossary; Installation Guide; Windows:
+  MSYS2 UCRT64 Environment; Step 1: Install MSYS2.
 date: 2025-12-10T03:49:29.438Z
 tags:
   - cpp

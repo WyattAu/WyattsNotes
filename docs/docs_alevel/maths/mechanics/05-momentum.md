@@ -1,5 +1,9 @@
 ---
 title: Momentum
+description:
+  A-Level Mathematics notes on Momentum: linear momentum, conservation of
+  momentum, impulse, and collisions with worked examples and exam-style
+  questions.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

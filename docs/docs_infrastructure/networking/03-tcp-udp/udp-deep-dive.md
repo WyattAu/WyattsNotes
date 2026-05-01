@@ -2,8 +2,8 @@
 id: udp-deep-dive
 title: UDP Deep Dive
 description:
-  UDP internals — datagram structure, checksum, broadcast, multicast, QUIC, and when UDP is the
-  right choice.
+  UDP Deep Dive — UDP Header Structure; Source Port Considerations; Maximum
+  Datagram Size; View current UDP buffer sizes. and examination.
 slug: udp-deep-dive
 tags:
   - Networking

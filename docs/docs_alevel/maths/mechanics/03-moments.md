@@ -1,5 +1,8 @@
 ---
 title: Moments
+description:
+  A-Level Mathematics notes on Moments: Board Coverage; 1. Definition of a
+  Moment; 1.1 Real-world examples; 1.2 Sign convention.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

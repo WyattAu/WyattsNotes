@@ -2,8 +2,8 @@
 id: file-permissions
 title: File Permissions and ACLs
 description:
-  Linux file permissions — Unix permissions, setuid/setgid/sticky bit, ACLs, capabilities, and
-  attribute flags.
+  File Permissions and ACLs — Unix Permission Model; Permission Bits; Octal
+  Notation; Viewing Permissions with worked examples and exam-style questions.
 slug: file-permissions
 sidebar_position: 2
 ---

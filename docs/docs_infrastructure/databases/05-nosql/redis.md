@@ -2,7 +2,8 @@
 id: redis
 title: Redis Deep Dive
 description:
-  Redis — data structures, persistence, clustering, pub/sub, streams, and common patterns.
+  Redis Deep Dive — Architecture Overview; Single-Threaded Event Loop;
+  redis.conf; Memory Model with worked examples and exam-style questions.
 slug: redis
 ---
 

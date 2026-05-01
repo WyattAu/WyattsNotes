@@ -1,5 +1,9 @@
 ---
 title: Vectors
+description:
+  A-Level Mathematics notes on Vectors: Board Coverage; 1.1 Definition; 2.1
+  Magnitude; 2.3 Direction cosines with worked examples and exam-style
+  questions.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

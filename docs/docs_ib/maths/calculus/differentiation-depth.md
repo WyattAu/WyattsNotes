@@ -43,8 +43,6 @@ Since the one-sided limits are not equal, the limit does not exist.
 
 :::
 
-### Common Limits
-
 | Limit                                                             | Value |
 | ----------------------------------------------------------------- | ----- |
 | $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$                    | $1$   |
@@ -881,3 +879,5 @@ using (product, quotient, chain) and lay out the substitution. Examiners award m
 correct application of rules even if arithmetic errors occur later.
 
 :::
+
+For the A-Level treatment of this topic, see [Differentiation](https://alevel.wyattau.com/docs/maths/pure-mathematics/differentiation).

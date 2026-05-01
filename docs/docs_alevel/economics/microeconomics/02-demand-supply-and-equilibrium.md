@@ -1,5 +1,9 @@
 ---
 title: Demand, Supply and Equilibrium
+description:
+  A-Level Economics notes on Demand, Supply and Equilibrium: 1. Demand; 1.1
+  Definition; 1.2 Deriving Individual Demand from Utility Maximisation; 1.3
+  Market De.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

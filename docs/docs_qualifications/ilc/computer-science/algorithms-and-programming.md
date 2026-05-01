@@ -1,5 +1,8 @@
 ---
 title: Algorithms and Programming
+description:
+  Algorithms and Programming — What is an Algorithm? (OL/HL); Representing
+  Algorithms; Programming Constructs (OL/HL); Sequence.
 date: 2026-04-14
 tags:
   - Computer Science

@@ -1,5 +1,8 @@
 ---
 title: Computer Networks
+description:
+  University-level notes on Computer Networks: 1. Network Models; 1.1 The OSI
+  Reference Model; 1.2 The TCP/IP Model; 1.3 Comparison.
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing

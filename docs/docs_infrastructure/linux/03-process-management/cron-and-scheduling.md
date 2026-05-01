@@ -1,7 +1,9 @@
 ---
 id: cron-and-scheduling
 title: Cron and Task Scheduling
-description: Task scheduling — cron, crontab, anacron, systemd timers, at, and batch job management.
+description:
+  Cron and Task Scheduling — cron Daemon; Check if cron is running; Start/enable
+  cron; Crontab Format with worked examples and exam-style questions.
 slug: cron-and-scheduling
 sidebar_position: 2
 ---

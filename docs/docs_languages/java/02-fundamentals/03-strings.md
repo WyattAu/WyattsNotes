@@ -2,7 +2,8 @@
 id: strings
 title: Strings and Text Processing
 description:
-  Java strings — String, StringBuilder, StringBuffer, text blocks, regex, and character encoding.
+  Strings and Text Processing — The `String` Class; Immutability; String Pool
+  (Intern Pool); `intern()` with worked examples and exam-style questions.
 slug: strings
 ---
 

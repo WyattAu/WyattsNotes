@@ -1,8 +1,8 @@
 ---
 title: Interfaces
 description:
-  Interface definitions, implicit implementation, empty interface, type assertions, and type
-  switches.
+  Interfaces — Interface Basics; Interface Composition; The Empty Interface;
+  When to Use `any` with worked examples and exam-style questions.
 slug: interfaces
 date: 2026-04-18
 tags:

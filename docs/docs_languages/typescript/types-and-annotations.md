@@ -1,6 +1,8 @@
 ---
 title: Types and Annotations
-description: "A rigorous treatment of the TypeScript type system: primitive types, object types, union and intersection types, type narrowing, literal types, assertions, and inference rules."
+description:
+  Types and Annotations — Primitive Types; The `any`, `unknown`, `never`, and
+  `void` Types; `any`; `unknown` with worked examples and exam-style questions.
 slug: typescript-types-and-annotations
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

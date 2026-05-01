@@ -1,5 +1,8 @@
 ---
 title: Inheritance, Variation, and Evolution
+description:
+  Inheritance, Variation, and Evolution — 1. DNA and Genetics; 1.1 DNA
+  Structure; 1.2 Genes and Chromosomes; 1.3 Protein Synthesis.
 date: 2026-04-14
 tags:
   - Biology

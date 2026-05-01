@@ -1,5 +1,9 @@
 ---
 title: LVM and Disk Partitioning
+description:
+  LVM and Disk Partitioning — Disk Fundamentals; Block Devices; Partition
+  Tables; MBR (Master Boot Record) with worked examples and exam-style
+  questions.
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Linux

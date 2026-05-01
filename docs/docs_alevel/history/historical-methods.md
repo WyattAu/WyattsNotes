@@ -1,5 +1,9 @@
 ---
 title: Historical Methods
+description:
+  A-Level History notes on Historical Methods: The Nature of History; What
+  Distinguishes History from the Past?; The Purpose of Historical Study;
+  Evidence.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - History

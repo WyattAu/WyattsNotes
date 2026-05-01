@@ -1,5 +1,8 @@
 ---
 title: Electricity
+description:
+  Electricity — Electric Charge and Current; Electric Charge (OL/HL); Electric
+  Current (OL/HL); Current in Terms of Electron Flow (HL).
 date: 2026-04-14
 tags:
   - Physics

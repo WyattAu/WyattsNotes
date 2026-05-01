@@ -2,8 +2,8 @@
 id: dp-patterns
 title: Dynamic Programming Patterns
 description:
-  Common DP patterns — knapsack variants, interval DP, tree DP, bitmask DP, digit DP, and problem
-  classification.
+  Dynamic Programming Patterns — Pattern Classification; Decision Tree; Knapsack
+  Family; 0/1 Knapsack with worked examples and exam-style questions.
 slug: dp-patterns
 ---
 

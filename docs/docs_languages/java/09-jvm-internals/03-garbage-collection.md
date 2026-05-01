@@ -1,7 +1,9 @@
 ---
 id: garbage-collection
 title: Garbage Collection
-description: JVM garbage collection — generational GC, GC algorithms, memory pools, and tuning.
+description:
+  Garbage Collection — GC Fundamentals; What Is Garbage?; GC Roots; Reachability
+  Phases with worked examples and exam-style questions.
 slug: garbage-collection
 ---
 

@@ -2,8 +2,8 @@
 id: tcp-and-udp
 title: TCP and UDP
 description:
-  Transport layer protocols — TCP (three-way handshake, congestion control, flow control) and UDP
-  (datagrams, use cases).
+  TCP and UDP — The Transport Layer in Context; UDP (User Datagram Protocol);
+  UDP Header; UDP Characteristics with worked examples and exam-style questions.
 slug: tcp-and-udp
 sidebar_position: 4
 tags:

@@ -1,5 +1,8 @@
 ---
 title: Energy and Matter
+description:
+  Energy and Matter — Higher Energetics; Enthalpy Changes; Types of Enthalpy
+  Change; Hess's Law with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Chemistry

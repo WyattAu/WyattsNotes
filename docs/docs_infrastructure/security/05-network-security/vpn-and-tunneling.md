@@ -2,7 +2,9 @@
 id: vpn-and-tunneling
 title: VPN and Tunneling
 description:
-  VPN technologies — WireGuard, IPsec, OpenVPN, SSH tunneling, and site-to-site connectivity.
+  VPN and Tunneling — VPN Fundamentals; Tunneling, Encryption, and
+  Authentication; VPN Types; WireGuard with worked examples and exam-style
+  questions.
 slug: vpn-and-tunneling
 ---
 

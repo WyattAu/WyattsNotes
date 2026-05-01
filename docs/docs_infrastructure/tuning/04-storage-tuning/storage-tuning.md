@@ -2,8 +2,9 @@
 id: storage-tuning
 title: Storage Tuning
 description:
-  Storage optimization — NVMe vs SATA, SSD tuning, TRIM, over-provisioning, RAID, and I/O scheduler
-  configuration.
+  Storage Tuning — Storage Hierarchy; Storage Technologies Compared; Choosing
+  the Right Storage; NVMe Protocol with worked examples and exam-style
+  questions.
 slug: storage-tuning
 ---
 

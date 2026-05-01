@@ -2,8 +2,8 @@
 id: trees-and-graphs
 title: Trees and Graphs
 description:
-  Tree and graph fundamentals — binary trees, BST, heaps, tries, graph representations, and
-  traversal algorithms.
+  Trees and Graphs — Tree Terminology; Binary Trees; Classifications; Node
+  Definition with worked examples and exam-style questions.
 slug: trees-and-graphs
 ---
 

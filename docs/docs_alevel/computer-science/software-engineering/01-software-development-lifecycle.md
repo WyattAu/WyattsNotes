@@ -1,5 +1,8 @@
 ---
 title: Software Development Lifecycle
+description:
+  A-Level Computer Science notes on Software Development Lifecycle: Definition
+  for comprehensive revision and examination preparation.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

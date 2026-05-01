@@ -1739,6 +1739,8 @@ $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{0.05} = 13.86 \mathrm{ min}$$
 *If you get this wrong, revise: Log-linear plots of radioactive decay — the gradient equals $-\lambda$,
 not $-t_{1/2}$.*
 
+For the A-Level treatment of this topic, see [Radioactivity](https://alevel.wyattau.com/docs/physics/nuclear-physics/radioactivity).
+
 </details>
 </details>
 

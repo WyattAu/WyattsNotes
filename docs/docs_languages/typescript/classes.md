@@ -1,6 +1,8 @@
 ---
 title: Classes
-description: "Object-oriented programming with TypeScript: class declarations, access modifiers, abstract classes, interfaces, static members, decorators, and structural typing."
+description:
+  Classes — Class Declarations; Fields, Constructors, Methods; Access Modifiers;
+  `readonly` Modifier with worked examples and exam-style questions.
 slug: typescript-classes
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

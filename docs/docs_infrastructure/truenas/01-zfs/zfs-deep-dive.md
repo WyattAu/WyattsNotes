@@ -2,8 +2,8 @@
 id: zfs-deep-dive
 title: ZFS Deep Dive
 description:
-  ZFS architecture — storage pools, datasets, RAIDZ, checksums, copy-on-write, and advanced ZFS
-  features.
+  TrueNAS: ZFS Deep Dive — ZFS Architecture; The Three Layers; Copy-on-Write
+  Transaction Model; Merkle Tree and Checksumming.
 slug: zfs-deep-dive
 ---
 

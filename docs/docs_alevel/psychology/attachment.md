@@ -1,5 +1,8 @@
 ---
 title: Attachment
+description:
+  A-Level Psychology notes on Attachment: Caregiver-Infant Interactions;
+  Reciprocity and Interactional Synchrony; Key Propositions; Evaluation.
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Psychology

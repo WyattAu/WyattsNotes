@@ -1,5 +1,8 @@
 ---
 title: Object-Oriented Programming
+description:
+  A-Level Computer Science notes on Object-Oriented Programming: 1. Classes and
+  Objects; Definition; Python Implementation; Class vs Instance.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

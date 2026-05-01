@@ -1,6 +1,8 @@
 ---
 title: Generics
-description: Type parameters, constraints, generic functions, and generic types in Go.
+description:
+  Generics — Type Parameters; Constraints; Built-in Constraints; Custom
+  Constraints with worked examples and exam-style questions.
 slug: generics
 date: 2026-04-18
 tags:

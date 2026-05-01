@@ -1,5 +1,8 @@
 ---
 title: Kinematics
+description:
+  A-Level Physics notes on Kinematics: 1. Fundamental Definitions; 2. Derivation
+  of the SUVAT Equations; Equation 1: $v = u + at$.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

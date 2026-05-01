@@ -1,5 +1,8 @@
 ---
 title: Bioenergetics
+description:
+  Bioenergetics — 1. Photosynthesis; 1.1 The Equation; 1.2 Where Photosynthesis
+  Occurs; 1.3 Factors Affecting the Rate of Photosynthesis.
 date: 2026-04-14
 tags:
   - Biology

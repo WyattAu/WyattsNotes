@@ -1,5 +1,8 @@
 ---
 title: Network Fundamentals
+description:
+  A-Level Computer Science notes on Network Fundamentals: 1. Types of Networks;
+  LAN (Local Area Network); WAN (Wide Area Network); WLAN (Wireless LAN).
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

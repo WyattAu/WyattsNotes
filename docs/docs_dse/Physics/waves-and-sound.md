@@ -555,3 +555,5 @@ the observer.
 
 If you get this wrong, revise: Sound Waves
 
+For the A-Level treatment of this topic, see [Wave Properties](https://alevel.wyattau.com/docs/physics/waves/wave-properties).
+

@@ -1,5 +1,8 @@
 ---
 title: Conflict Resolution
+description:
+  Conflict Resolution — Understanding Conflicts; When Conflicts Occur; Conflict
+  Markers; Multi-Base Conflicts with worked examples and exam-style questions.
 date: 2025-06-03T05:00:00.000Z
 tags:
   - git

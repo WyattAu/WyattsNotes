@@ -2,7 +2,8 @@
 id: trie-and-pattern-matching
 title: Tries and String Algorithms
 description:
-  Trie data structure, suffix arrays, suffix trees, KMP, Rabin-Karp, and string matching algorithms.
+  Tries and String Algorithms — Trie (Prefix Tree); Node Definition; Operations;
+  Complexity Analysis with worked examples and exam-style questions.
 slug: trie-and-pattern-matching
 ---
 

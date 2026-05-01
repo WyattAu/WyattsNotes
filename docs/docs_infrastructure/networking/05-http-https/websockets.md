@@ -2,8 +2,8 @@
 id: websockets
 title: WebSockets
 description:
-  WebSocket protocol — handshake, framing, masking, subprotocols, and real-time communication
-  patterns.
+  WebSockets — HTTP Upgrade Handshake; Client Request; Server Response;
+  Handshake Validation with worked examples and exam-style questions.
 slug: websockets
 tags:
   - Networking

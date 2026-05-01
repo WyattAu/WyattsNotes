@@ -568,3 +568,5 @@ $$P = \frac{mgh}{t} = \frac{60 \times 9.81 \times 6}{5} = \frac{3531.6}{5} = 706
 
 If you get this wrong, revise: Power
 
+For the A-Level treatment of this topic, see [Work, Energy and Power](https://alevel.wyattau.com/docs/physics/mechanics/work-energy-power).
+

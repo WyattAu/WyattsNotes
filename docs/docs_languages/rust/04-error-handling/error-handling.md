@@ -2,8 +2,8 @@
 id: error-handling
 title: Error Handling
 description:
-  Rust error handling — Result, Option, the ? operator, custom error types, thiserror, anyhow, and
-  error handling patterns.
+  Error Handling — Panic vs Result; Panics; Stack Unwinding vs Abort;
+  `std::panic::catch_unwind` with worked examples and exam-style questions.
 slug: error-handling
 ---
 

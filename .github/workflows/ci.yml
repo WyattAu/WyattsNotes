@@ -72,6 +72,19 @@ jobs:
           echo "These require upstream fixes (Docusaurus, theme plugins). Review:" 
           echo "https://github.com/WyattAu/WyattsNotes/security"
 
+  content-validation:
+    name: Content Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Validate MDX
+        run: python3 scripts/validate-mdx.py
+
+      - name: Check Links
+        run: python3 scripts/check-links.py
+
   links:
     name: Check Links
     runs-on: ubuntu-latest

@@ -1,5 +1,8 @@
 ---
 title: Geometry and Trigonometry
+description:
+  Geometry and Trigonometry — Coordinate Geometry; Distance Formula (OL/HL);
+  Midpoint Formula (OL/HL); Slope (Gradient) (OL/HL).
 date: 2026-04-14
 tags:
   - Mathematics

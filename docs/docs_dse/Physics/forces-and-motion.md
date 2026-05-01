@@ -669,3 +669,5 @@ $$\mathrm{Distance\ after\ 5\ s} = 1.167 \times 5 = 5.83 \mathrm{ m}$$
 
 If you get this wrong, revise: Momentum and Impulse / Conservation of Momentum
 
+For the A-Level treatment of this topic, see [Dynamics](https://alevel.wyattau.com/docs/physics/mechanics/dynamics).
+

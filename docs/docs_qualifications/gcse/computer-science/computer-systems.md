@@ -1,5 +1,8 @@
 ---
 title: Computer Systems
+description:
+  GCSE Computer Science: Computer Systems — 1. CPU Architecture; 1.1 Components
+  of the CPU; 1.2 Registers; 1.3 The Fetch-Decode-Execute Cycle.
 date: 2026-04-14
 tags:
   - Computer Science

@@ -2,8 +2,8 @@
 id: tls-internals
 title: TLS Internals
 description:
-  TLS protocol internals — record layer, handshake messages, cipher suites, key exchange mechanisms,
-  and implementation details.
+  TLS Internals — TLS Architecture; Record Layer; Handshake Protocol; Alert
+  Protocol with worked examples and exam-style questions.
 slug: tls-internals
 tags:
   - Networking

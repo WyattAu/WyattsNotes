@@ -2,8 +2,8 @@
 id: types-and-variables
 title: Types and Variables
 description:
-  Rust type system — integers, floats, booleans, chars, tuples, arrays, vectors, strings, type
-  inference, and mutability.
+  Types and Variables — Integer Types; Integer Literals; Integer Overflow;
+  Sizing and Alignment with worked examples and exam-style questions.
 slug: types-and-variables
 ---
 

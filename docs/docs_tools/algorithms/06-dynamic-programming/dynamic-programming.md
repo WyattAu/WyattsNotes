@@ -2,8 +2,9 @@
 id: dynamic-programming
 title: Dynamic Programming
 description:
-  Dynamic programming — memoization, tabulation, optimal substructure, overlapping subproblems, and
-  classic DP problems.
+  Dynamic Programming — DP Fundamentals; Top-Down (Memoisation) vs Bottom-Up
+  (Tabulation); 1D DP; Climbing Stairs with worked examples and exam-style
+  questions.
 slug: dynamic-programming
 ---
 

@@ -648,3 +648,5 @@ centre of the square base.
 - **Scalar and vector product properties** → Review [./vectors](vectors) (sections on Dot Product and Cross Product)
 - **Magnitude and unit vectors** → Review [./vectors](vectors) (section on Magnitude and Unit Vectors)
 
+For the A-Level treatment of this topic, see [Vectors](https://alevel.wyattau.com/docs/maths/pure-mathematics/vectors).
+

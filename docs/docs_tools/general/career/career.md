@@ -2,8 +2,8 @@
 id: career
 title: Systems Engineering Career
 description:
-  Career guidance for systems engineers — interview preparation, resume writing, career paths, and
-  continuous learning.
+  Systems Engineering Career — Systems Engineering Career Paths; SRE (Site
+  Reliability Engineering); Platform Engineering; Infrastructure Engineering.
 slug: career
 ---
 

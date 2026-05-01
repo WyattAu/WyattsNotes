@@ -1,7 +1,9 @@
 ---
 id: channels-and-message-passing
 title: Channels and Message Passing
-description: Channel patterns — mpsc, oneshot, broadcast, watch, and actor model patterns in Rust.
+description:
+  Channels and Message Passing — Channel Fundamentals; Channel Categories;
+  `std::sync::mpsc`; Basic Usage with worked examples and exam-style questions.
 slug: channels-and-message-passing
 ---
 

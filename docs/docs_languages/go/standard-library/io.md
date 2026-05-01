@@ -1,6 +1,8 @@
 ---
 title: Standard Library I/O
-description: io, bufio, os, fmt, file operations, and encoding/json.
+description:
+  Standard Library I/O — The io Package; io.Reader Contract; io.Copy;
+  io.TeeReader with worked examples and exam-style questions.
 slug: io
 date: 2026-04-18
 tags:

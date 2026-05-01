@@ -1,5 +1,8 @@
 ---
 title: Statistics and Probability
+description:
+  Statistics and Probability — Higher Statistics; Measures of Central Tendency
+  and Spread; Interquartile Range and Box Plots; Probability.
 date: 2026-04-14
 tags:
   - Mathematics

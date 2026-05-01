@@ -1,5 +1,8 @@
 ---
 title: Supervised Learning
+description:
+  Supervised Learning — Classification; Design Matrix; Pair Plot; Decision Tree
+  including key definitions, derivations, and problem-solving techniques.
 date: 2026-01-07T08:38:26.907Z
 tags:
   - ML

@@ -1,5 +1,8 @@
 ---
 title: Parallel Algorithms
+description:
+  C++: Parallel Algorithms — Execution Policies; Formal Semantics of Execution
+  Policies for thorough revision and examination preparation.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

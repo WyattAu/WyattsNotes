@@ -1,7 +1,9 @@
 ---
 id: serialization
 title: Serialization and Data Formats
-description: Python serialization — JSON, pickle, YAML, TOML, CSV, and data interchange patterns.
+description:
+  Serialization and Data Formats — JSON; Encoding and Decoding; Serialize to
+  string; Deserialize from string with worked examples and exam-style questions.
 slug: serialization
 ---
 

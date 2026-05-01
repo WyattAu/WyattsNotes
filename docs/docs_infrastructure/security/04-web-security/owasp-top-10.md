@@ -1,7 +1,9 @@
 ---
 id: owasp-top-10
 title: OWASP Top 10 (2021) Detailed
-description: OWASP Top 10 — per-vulnerability deep-dive with examples, detection, and remediation.
+description:
+  OWASP Top 10 (2021) Detailed — A01: Broken Access Control; IDOR (Insecure
+  Direct Object Reference) for thorough revision and examination preparation.
 slug: owasp-top-10
 ---
 

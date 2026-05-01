@@ -1,5 +1,9 @@
 ---
 title: Probability (Extended)
+description:
+  A-Level Mathematics notes on Probability (Extended): Probability (Extended
+  Treatment); 1. Conditional Probability; 1.1 Definition; 1.2 Multiplication
+  rule.
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

@@ -1,5 +1,8 @@
 ---
 title: Special Member Function Generation Rules
+description:
+  C++: Special Member Function Generation Rules — 3.1 The Rule of Five; 3.2
+  Default Generation Rules; 3.3 `= default` and `= delete`.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

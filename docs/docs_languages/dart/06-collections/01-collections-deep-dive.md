@@ -1,5 +1,8 @@
 ---
 title: Collections Deep Dive
+description:
+  Collections Deep Dive — Iterable Interface; Core Transformation Methods;
+  map(); where() with worked examples and exam-style questions.
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

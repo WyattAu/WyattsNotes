@@ -1,5 +1,9 @@
 ---
 title: Forces and Newton's Laws
+description:
+  A-Level Mathematics notes on Forces and Newton's Laws: Board Coverage; 1.
+  Newton's Laws of Motion; 1.1 Newton's First Law (Law of Inertia); 1.2 Newton's
+  Seco.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

@@ -2,7 +2,9 @@
 id: api-security
 title: API Security
 description:
-  API security — REST security, rate limiting, input validation, CORS, and API gateway patterns.
+  API Security — Stateless Authentication Per Request; Authentication Methods;
+  API Keys; Simple API key in header with worked examples and exam-style
+  questions.
 slug: api-security
 ---
 

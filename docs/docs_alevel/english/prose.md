@@ -1,5 +1,8 @@
 ---
 title: Prose
+description:
+  A-Level English notes on Prose: Narrative Voice and Point of View; Unreliable
+  Narration; Narrative Structure; Linear Narrative.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - English

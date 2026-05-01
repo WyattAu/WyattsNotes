@@ -1,7 +1,9 @@
 ---
 id: firewalls
 title: Linux Firewalls
-description: Linux firewalling — iptables, nftables, firewalld, ufw, and network security rules.
+description:
+  Linux Firewalls — Netfilter Framework; Hooks; Tables; Chains including key
+  definitions, derivations, and problem-solving techniques.
 slug: firewalls
 sidebar_position: 2
 ---

@@ -1,5 +1,8 @@
 ---
 title: Ninja Build System and Parrallelism
+description:
+  C++: Ninja Build System and Parrallelism — Architectural Advantages over Make;
+  Installation; Windows (MSYS2 UCRT64); Linux.
 date: 2025-12-10T06:02:22.685Z
 tags:
   - cpp

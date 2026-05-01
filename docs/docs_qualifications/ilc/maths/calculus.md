@@ -1,5 +1,8 @@
 ---
 title: Calculus
+description:
+  Calculus — Differentiation; The Derivative; Differentiation from First
+  Principles (HL); Proof of the Product Rule (HL). and examination.
 date: 2026-04-14
 tags:
   - Mathematics

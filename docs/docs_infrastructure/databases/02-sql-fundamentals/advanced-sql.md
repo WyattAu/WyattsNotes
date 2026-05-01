@@ -2,8 +2,9 @@
 id: advanced-sql
 title: Advanced SQL
 description:
-  Advanced SQL — window functions deep-dive, recursive queries, CTEs, materialized views, and query
-  optimization.
+  Advanced SQL — Window Functions Deep Dive; Window Function Anatomy; Framing
+  Clauses; ROWS vs RANGE vs GROUPS with worked examples and exam-style
+  questions.
 slug: advanced-sql
 ---
 

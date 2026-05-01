@@ -2,8 +2,8 @@
 id: osi-and-tcp-ip
 title: OSI and TCP/IP Models
 description:
-  Network reference models — OSI 7-layer model, TCP/IP 4-layer model, encapsulation, and data flow
-  through protocol stacks.
+  OSI and TCP/IP Models — Why Reference Models Matter for Systems Engineers; The
+  End-to-End Principle; The OSI 7-Layer Model; Layer 1: Physical.
 slug: osi-and-tcp-ip
 sidebar_position: 2
 tags:

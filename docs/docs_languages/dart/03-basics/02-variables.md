@@ -1,5 +1,8 @@
 ---
 title: Variables
+description:
+  Variables — Specifiers; Types; Mutation Specifier; `final` specifier including
+  key definitions, derivations, and problem-solving techniques.
 date: 2025-07-13T20:44:32.129Z
 tags:
   - dart

@@ -1,5 +1,8 @@
 ---
 title: PSU Selection and BIOS Configuration
+description:
+  PSU Selection and BIOS Configuration — 1. PSU Fundamentals; AC/DC Conversion;
+  Rectification; Ripple and Noise with worked examples and exam-style questions.
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Tuning

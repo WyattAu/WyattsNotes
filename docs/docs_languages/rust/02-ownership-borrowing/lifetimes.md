@@ -2,8 +2,9 @@
 id: lifetimes
 title: Lifetimes
 description:
-  Rust lifetime annotations — explicit lifetimes, elision rules, lifetime bounds, variance, and
-  common lifetime patterns.
+  Lifetimes — Lifetime Annotation Syntax; Multiple Lifetime Parameters; Input
+  Lifetime Binding; Static Lifetime with worked examples and exam-style
+  questions.
 slug: lifetimes
 ---
 

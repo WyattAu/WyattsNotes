@@ -1,7 +1,9 @@
 ---
 id: ip-addressing
 title: IP Addressing
-description: IP addressing — IPv4, IPv6, subnetting, CIDR, NAT, DHCP, ARP, and address allocation.
+description:
+  Networking: IP Addressing — IPv4 Address Structure; Binary Representation;
+  Special IPv4 Addresses; Address Classes (Historical).
 slug: ip-addressing
 sidebar_position: 3
 tags:

@@ -1,5 +1,9 @@
 ---
 title: Life on Earth
+description:
+  Life on Earth — Higher Biodiversity and Evolution; Classification;
+  Biodiversity; Sampling Techniques with worked examples and exam-style
+  questions.
 date: 2026-04-14
 tags:
   - Biology

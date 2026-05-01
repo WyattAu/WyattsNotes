@@ -1,5 +1,8 @@
 ---
 title: Git Directory Structure
+description:
+  Git Directory Structure — The `.git` Directory; Key Files; HEAD; config
+  including key definitions, derivations, and problem-solving techniques.
 date: 2025-06-03T12:00:00.000Z
 tags:
   - git

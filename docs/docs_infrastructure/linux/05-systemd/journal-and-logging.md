@@ -2,8 +2,9 @@
 id: journal-and-logging
 title: Journal and Logging
 description:
-  Systemd journal — journald configuration, journalctl, log rotation, rsyslog, and structured
-  logging.
+  Journal and Logging — systemd-journald Architecture; Log Sources; Storage
+  Modes; Check current storage mode with worked examples and exam-style
+  questions.
 slug: journal-and-logging
 sidebar_position: 2
 ---

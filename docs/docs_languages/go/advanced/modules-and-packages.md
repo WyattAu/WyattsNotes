@@ -1,6 +1,8 @@
 ---
 title: Modules and Packages
-description: go.mod, go.sum, semantic versioning, workspace mode, and dependency management.
+description:
+  Modules and Packages — Packages; Package Naming Conventions; Import Paths;
+  Internal Package with worked examples and exam-style questions.
 slug: modules-and-packages
 date: 2026-04-18
 tags:

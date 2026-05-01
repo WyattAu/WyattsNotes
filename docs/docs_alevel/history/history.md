@@ -1,5 +1,8 @@
 ---
 title: A-Level History
+description:
+  A-Level History notes on A-Level History: Course Overview; Board Coverage;
+  Core Skills; Source Analysis with worked examples and exam-style questions.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - History

@@ -1439,6 +1439,8 @@ $$x = \pm\frac{A}{\sqrt{2}} = \pm 0.707A$$
 
 The KE equals half the total energy at $x = \pm 0.707A$ from equilibrium.
 
+For the A-Level treatment of this topic, see [Kinematics](https://alevel.wyattau.com/docs/physics/mechanics/kinematics).
+
 *If you get this wrong, revise: Energy exchange in SHM and the expressions for $E_k$ and $E_p$ as
 functions of displacement.*
 

@@ -1,5 +1,8 @@
 ---
 title: Development Economics
+description:
+  A-Level Economics notes on Development Economics: 1. What is Development?; 2.
+  Indicators of Development; 2.1 Economic Indicators.
 date: 2026-04-02T00:00:00.000Z
 tags:
   - Economics

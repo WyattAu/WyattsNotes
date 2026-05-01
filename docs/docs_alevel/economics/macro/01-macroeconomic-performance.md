@@ -1,5 +1,8 @@
 ---
 title: Macroeconomic Performance
+description:
+  A-Level Economics notes on Macroeconomic Performance: 1. Gross Domestic
+  Product (GDP); 1.1 Definition; 1.2 Three Approaches to Measuring GDP.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

@@ -2,8 +2,8 @@
 id: text-processing
 title: Text Processing
 description:
-  Advanced text processing — sed, awk, regular expressions, jq, columnar data, CSV/JSON/YAML
-  processing.
+  Text Processing — Regular Expressions; BRE vs ERE vs PCRE; Character Classes
+  and Anchors; Quantifiers with worked examples and exam-style questions.
 slug: text-processing
 sidebar_position: 3
 ---

@@ -2,7 +2,8 @@
 id: sql
 title: SQL Fundamentals
 description:
-  Structured Query Language — DDL, DML, queries, joins, subqueries, window functions, and CTEs.
+  SQL Fundamentals — SQL Standards and Dialects; Data Definition Language (DDL);
+  CREATE TABLE; Column Data Types with worked examples and exam-style questions.
 slug: sql
 sidebar_position: 1
 tags:

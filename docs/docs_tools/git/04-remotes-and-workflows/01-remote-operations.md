@@ -1,5 +1,8 @@
 ---
 title: Remote Operations
+description:
+  Remote Operations — Distributed Architecture; Bare vs Non-Bare Repositories;
+  Create a bare repository; Clone from a bare repository.
 date: 2025-06-03T06:00:00.000Z
 tags:
   - git

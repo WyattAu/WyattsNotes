@@ -2,7 +2,8 @@
 id: unsafe-rust
 title: Unsafe Rust
 description:
-  Unsafe Rust — raw pointers, unsafe functions, unsafe traits, FFI, and safety invariants.
+  Unsafe Rust — What `unsafe` Enables; Raw Pointers; `*const T` and `*mut T`;
+  Creating Raw Pointers with worked examples and exam-style questions.
 slug: unsafe-rust
 ---
 

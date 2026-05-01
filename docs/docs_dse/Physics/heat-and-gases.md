@@ -1556,6 +1556,8 @@ $$Q_{\mathrm{total}} = 10500 + 167000 + 209300 + 1130000 = 1516800 \mathrm{ J}$$
 
 $$t = \frac{Q_{\mathrm{total}}}{P} = \frac{1516800}{500} = 3033.6 \mathrm{ s} = 50.6 \mathrm{ minutes}$$
 
+For the A-Level treatment of this topic, see [Thermal Properties](https://alevel.wyattau.com/docs/physics/thermal-physics/thermal-properties).
+
 </details>
 </details>
 

@@ -2,8 +2,9 @@
 id: stress-testing
 title: Stress Testing and Validation
 description:
-  Stress testing methodology — CPU, GPU, memory, and storage stress tests, stability validation, and
-  monitoring.
+  Stress Testing and Validation — Why Stress Test; The Cost of Insufficient
+  Testing; CPU Stress Tests; Prime95 with worked examples and exam-style
+  questions.
 slug: stress-testing
 ---
 

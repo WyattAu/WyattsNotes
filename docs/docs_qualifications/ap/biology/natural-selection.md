@@ -1,5 +1,8 @@
 ---
 title: Natural Selection
+description:
+  Natural Selection — Evidence for Evolution; Hardy-Weinberg Equilibrium (CED
+  Unit 7); Equations; Conditions for Hardy-Weinberg Equilibrium.
 date: 2026-04-14
 tags:
   - Biology

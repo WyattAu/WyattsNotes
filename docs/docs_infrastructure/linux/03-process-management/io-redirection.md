@@ -2,7 +2,8 @@
 id: io-redirection
 title: I/O Redirection and Pipes
 description:
-  Linux I/O — file descriptors, redirection, pipes, named pipes, process substitution, and tee.
+  I/O Redirection and Pipes — File Descriptors; Standard File Descriptors; View
+  file descriptors for a process; 0 -> /dev/pts/0.
 slug: io-redirection
 sidebar_position: 2
 ---

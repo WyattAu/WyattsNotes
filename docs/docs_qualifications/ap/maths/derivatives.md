@@ -1,5 +1,8 @@
 ---
 title: Derivatives
+description:
+  Derivatives — The Derivative as a Limit (CED Unit 2); Interpretations of the
+  Derivative; Differentiability and Continuity; Where Differentiability Fails.
 date: 2026-04-14
 tags:
   - Mathematics

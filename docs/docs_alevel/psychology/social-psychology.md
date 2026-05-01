@@ -1,5 +1,8 @@
 ---
 title: Social Psychology
+description:
+  A-Level Psychology notes on Social Psychology: Conformity; Definitions; Asch's
+  Line Judgment Experiment (1951, 1955); Explanations for Conformity.
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Psychology

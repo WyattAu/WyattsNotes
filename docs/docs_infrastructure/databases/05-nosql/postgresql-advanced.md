@@ -2,8 +2,8 @@
 id: postgresql-advanced
 title: PostgreSQL Advanced
 description:
-  PostgreSQL advanced features — extensions, logical replication, foreign data wrappers, and
-  operational patterns.
+  PostgreSQL Advanced — Extensions Ecosystem; Installing Extensions; PostGIS;
+  pg_trgm with worked examples and exam-style questions.
 slug: postgresql-advanced
 ---
 

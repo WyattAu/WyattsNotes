@@ -2,8 +2,8 @@
 id: ssh
 title: SSH
 description:
-  Secure Shell — client configuration, server configuration, key management, tunneling, and agent
-  forwarding.
+  SSH — Transport Layer; Authentication Layer; Connection Layer; Client
+  Configuration with worked examples and exam-style questions.
 slug: ssh
 sidebar_position: 2
 ---

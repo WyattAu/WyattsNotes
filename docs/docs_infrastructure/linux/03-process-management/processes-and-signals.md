@@ -2,8 +2,8 @@
 id: processes-and-signals
 title: Processes and Signals
 description:
-  Linux process model — fork/exec, signals, process states, scheduling, priorities, cgroups, and
-  resource limits.
+  Processes and Signals — Process Lifecycle; Creating Processes: `fork`, `exec`,
+  `wait`; `fork(2)`; `execve(2)` with worked examples and exam-style questions.
 slug: processes-and-signals
 sidebar_position: 1
 ---

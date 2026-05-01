@@ -1,5 +1,8 @@
 ---
 title: Computer Architecture
+description:
+  A-Level Computer Science notes on Computer Architecture: 1. Von Neumann
+  Architecture; Definition; Components; Key Property: Stored Program Concept.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

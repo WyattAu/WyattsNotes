@@ -2,8 +2,8 @@
 id: cloud-security
 title: Cloud Security
 description:
-  Securing cloud infrastructure -- shared responsibility model, IAM, provider-specific controls,
-  cloud threats, container and serverless security, CSPM, and compliance.
+  Cloud Security — Shared Responsibility Model; IaaS (Infrastructure as a
+  Service); PaaS (Platform as a Service); SaaS (Software as a Service).
 slug: cloud-security
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z

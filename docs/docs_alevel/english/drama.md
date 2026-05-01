@@ -1,5 +1,9 @@
 ---
 title: Drama
+description:
+  A-Level English notes on Drama: Core Concepts; Aristotelian Tragic Concepts;
+  Greek Tragedy; Aristotelian Unities with worked examples and exam-style
+  questions.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - English

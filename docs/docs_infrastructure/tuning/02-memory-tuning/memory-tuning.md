@@ -2,8 +2,9 @@
 id: memory-tuning
 title: Memory Tuning
 description:
-  RAM tuning — memory timings, XMP/EXPO, dual channel, memory overclocking, and memory bandwidth
-  optimization.
+  Memory Tuning — DDR Memory Generations; DDR4 vs DDR5; Key Architectural
+  Differences; Latency in Real Terms with worked examples and exam-style
+  questions.
 slug: memory-tuning
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Probability and Statistics
+description:
+  Probability and Statistics — Counting Principles; Fundamental Counting
+  Principle (OL/HL); Permutations (OL/HL); Combinations (OL/HL).
 date: 2026-04-14
 tags:
   - Mathematics

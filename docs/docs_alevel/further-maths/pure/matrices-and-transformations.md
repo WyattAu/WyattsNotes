@@ -1,5 +1,9 @@
 ---
 title: Matrices and Transformations (Extended)
+description:
+  A-Level Further Maths notes on Matrices and Transformations (Extended):
+  Matrices and Transformations (Extended Treatment); 1. Matrix Operations; 1.1
+  Definiti.
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

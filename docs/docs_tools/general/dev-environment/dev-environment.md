@@ -2,8 +2,8 @@
 id: dev-environment
 title: Development Environment Setup
 description:
-  Setting up a productive development environment — terminal, shell, editor, dotfiles, and
-  cross-platform configuration.
+  Development environment setup: terminal emulators, shell configuration, font
+  selection, GPU acceleration, and productivity tools for an efficient workflow.
 slug: dev-environment
 ---
 

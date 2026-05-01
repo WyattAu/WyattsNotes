@@ -2,8 +2,8 @@
 id: indexing
 title: Indexing and Optimization
 description:
-  Database indexing — B-trees, hash indexes, covering indexes, query plans, and performance
-  optimization.
+  Indexing and Optimization — Why Indexes Matter; B-Tree Structure; Node
+  Anatomy; B-Tree vs B+ Tree with worked examples and exam-style questions.
 slug: indexing
 sidebar_position: 1
 tags:

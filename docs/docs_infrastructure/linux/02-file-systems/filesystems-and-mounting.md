@@ -2,8 +2,8 @@
 id: filesystems-and-mounting
 title: File Systems and Mounting
 description:
-  Linux file system architecture — ext4, XFS, Btrfs, FUSE, VFS layer, mount points, fstab, and
-  inodes.
+  File Systems and Mounting — Virtual File System (VFS) Layer for comprehensive
+  revision and examination preparation. and examination pre.
 slug: filesystems-and-mounting
 sidebar_position: 1
 ---

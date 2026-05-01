@@ -1,5 +1,8 @@
 ---
 title: Britain in the 20th Century
+description:
+  A-Level History notes on Britain in the 20th Century: Part I: Britain
+  1900-1951; Political Change, 1900-1914; The Liberal Reforms, 1906-1914.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - History

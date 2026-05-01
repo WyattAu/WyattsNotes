@@ -2,8 +2,8 @@
 id: dicts-sets-counter
 title: Dicts, Sets, and Collections Deep Dive
 description:
-  Python collections — dict internals, OrderedDict, defaultdict, Counter, ChainMap, and set
-  operations.
+  Dicts, Sets, and Collections Deep Dive — Dict Internals; Hash Table Structure;
+  Hash Computation; Collision Resolution: Open Addressing.
 slug: dicts-sets-counter
 ---
 

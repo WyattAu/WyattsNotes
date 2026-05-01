@@ -2,8 +2,8 @@
 id: truenas-performance
 title: TrueNAS Performance Tuning
 description:
-  Performance optimization — ARC tuning, recordsize, SMB tuning, network configuration, and hardware
-  considerations.
+  TrueNAS Performance Tuning — ARC Sizing and Tuning; How the ARC Works; Default
+  ARC Sizing; Tuning ARC Size with worked examples and exam-style questions.
 slug: truenas-performance
 ---
 

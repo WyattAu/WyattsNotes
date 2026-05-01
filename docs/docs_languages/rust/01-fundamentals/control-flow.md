@@ -2,8 +2,8 @@
 id: control-flow
 title: Control Flow and Pattern Matching
 description:
-  Rust control flow — if/else, match expressions, loops (loop, while, for), break/continue, labels,
-  and if-let/while-let.
+  Control Flow and Pattern Matching — `if` / `else`; `else if` Chains;
+  Conditional Assignment Patterns; Blocks as Expressions.
 slug: control-flow
 ---
 

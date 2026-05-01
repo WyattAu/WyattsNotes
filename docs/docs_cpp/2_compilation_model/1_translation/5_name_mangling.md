@@ -1,5 +1,8 @@
 ---
 title: Name Mangling
+description:
+  C++: Name Mangling — Proof: Overloading Requires Encoding Beyond the Name;
+  What Gets Mangled; 2. The Itanium C++ ABI (GCC / Clang); Structure.
 date: 2025-12-12T02:56:28.878Z
 tags:
   - cpp

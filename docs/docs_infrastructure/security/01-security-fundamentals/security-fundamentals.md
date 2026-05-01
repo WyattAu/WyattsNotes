@@ -2,8 +2,8 @@
 id: security-fundamentals
 title: Security Fundamentals
 description:
-  Core security concepts — CIA triad, threat modeling (STRIDE), attack surfaces, risk assessment,
-  and the principle of least privilege.
+  Security Fundamentals — The CIA Triad; Confidentiality; Integrity;
+  Availability with worked examples and exam-style questions.
 slug: security-fundamentals
 sidebar_position: 2
 ---

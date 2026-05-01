@@ -2,8 +2,8 @@
 id: package-management
 title: Package Management
 description:
-  Linux package management — dpkg/APT, RPM/DNF, Arch pacman, Nix, containers, and dependency
-  resolution.
+  Package Management — Package Formats; Package Anatomy; Inspect a DEB package
+  without installing; Inspect an RPM package without installing.
 slug: package-management
 sidebar_position: 1
 ---

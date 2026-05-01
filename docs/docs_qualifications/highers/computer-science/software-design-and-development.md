@@ -1,5 +1,8 @@
 ---
 title: Software Design and Development
+description:
+  Software Design and Development — Higher Software Design; Software Development
+  Process; Analysis and Design; Data Modelling.
 date: 2026-04-14
 tags:
   - Computer Science

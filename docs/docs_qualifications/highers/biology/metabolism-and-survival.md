@@ -1,5 +1,8 @@
 ---
 title: Metabolism and Survival
+description:
+  Metabolism and Survival — Metabolism; Enzymes; Michaelis-Menten Kinetics;
+  Cellular Respiration with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Biology

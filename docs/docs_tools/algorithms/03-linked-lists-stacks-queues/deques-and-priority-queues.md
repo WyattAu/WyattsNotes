@@ -2,8 +2,9 @@
 id: deques-and-priority-queues
 title: Deques and Priority Queues
 description:
-  Deque implementations, priority queues, binary heaps, binomial heaps, Fibonacci heaps, and
-  applications.
+  Deque and priority queue data structures: circular buffer implementations,
+  binary heaps, binomial heaps, Fibonacci heaps, and their associated
+  operations.
 slug: deques-and-priority-queues
 ---
 

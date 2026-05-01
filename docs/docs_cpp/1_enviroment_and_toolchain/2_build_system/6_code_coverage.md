@@ -1,5 +1,8 @@
 ---
 title: Code Coverage
+description:
+  C++ environment and toolchain: Code Coverage — Instrumentation Mechanics; The
+  Two Ecosystems; 1. GCC Workflow: gcov & lcov; Prerequisites.
 date: 2025-12-11T01:23:02.734Z
 tags:
   - cpp

@@ -2,8 +2,9 @@
 id: arrays-and-strings
 title: Arrays and Strings
 description:
-  Array and string algorithms — two pointers, sliding window, prefix sums, hashing, and common
-  patterns.
+  Arrays and Strings — Array Fundamentals; Memory Layout and Cache Behaviour;
+  Dynamic Arrays; String Representation with worked examples and exam-style
+  questions.
 slug: arrays-and-strings
 ---
 

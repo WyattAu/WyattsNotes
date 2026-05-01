@@ -2,8 +2,8 @@
 id: concurrency
 title: Concurrency
 description:
-  Rust concurrency — threads, message passing, shared state, async/await, futures, and common
-  concurrency patterns.
+  Concurrency — OS Threads; Spawning Threads; Moving Data into Threads; Thread
+  Return Values with worked examples and exam-style questions.
 slug: concurrency
 ---
 

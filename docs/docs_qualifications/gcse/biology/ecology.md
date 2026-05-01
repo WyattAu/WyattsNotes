@@ -1,5 +1,8 @@
 ---
 title: Ecology
+description:
+  Ecology — 1. Ecosystems and Levels of Organisation; 1.1 Levels of Organisation
+  in an Ecosystem; 1.2 Biotic and Abiotic Factors; 1.3 Adaptations.
 date: 2026-04-14
 tags:
   - Biology

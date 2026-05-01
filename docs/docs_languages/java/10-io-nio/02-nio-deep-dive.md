@@ -1,7 +1,9 @@
 ---
 id: nio-deep-dive
 title: NIO Deep Dive
-description: Java NIO — channels, buffers, selectors, AsynchronousFileChannel, and non-blocking I/O.
+description:
+  NIO Deep Dive — NIO Overview; Buffer vs Stream; Buffers; `ByteBuffer`
+  including key definitions, derivations, and problem-solving techniques.
 slug: nio-deep-dive
 ---
 

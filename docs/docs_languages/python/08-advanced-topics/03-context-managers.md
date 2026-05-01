@@ -2,8 +2,8 @@
 id: context-managers
 title: Context Managers and the with Statement
 description:
-  Python context managers — contextlib, __enter__/__exit__, async context managers, and practical
-  patterns.
+  Context Managers and the with Statement — The with Statement for comprehensive
+  revision and examination preparation. and examination pr.
 slug: context-managers
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Momentum
+description:
+  A-Level Physics notes on Momentum: Proof from Newton's Laws for comprehensive
+  revision and examination preparation. and examination pre.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

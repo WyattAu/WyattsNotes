@@ -1,8 +1,8 @@
 ---
 title: Enums and Modules
 description:
-  Enums (numeric, string, const, union patterns), ES modules, declaration merging, namespaces,
-  module resolution, and ambient declarations.
+  Enums and Modules — Numeric Enums; Explicit Values; Computed Values; String
+  Enums with worked examples and exam-style questions.
 slug: typescript-enums-and-modules
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

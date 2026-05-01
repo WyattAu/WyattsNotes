@@ -1,5 +1,8 @@
 ---
 title: Essay Writing for GCSE English Literature
+description:
+  Essay Writing for GCSE English Literature — 1. Essay Structure; 1.1 The
+  Introduction; 1.2 Body Paragraphs; 1.3 The Conclusion.
 date: 2026-04-22
 tags:
   - English

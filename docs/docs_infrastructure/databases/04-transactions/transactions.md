@@ -2,8 +2,8 @@
 id: transactions
 title: Transactions and Concurrency
 description:
-  ACID transactions, isolation levels, locking, MVCC, deadlocks, and concurrency control in
-  relational databases.
+  Transactions and Concurrency — ACID Properties; Atomicity; Consistency;
+  Isolation with worked examples and exam-style questions.
 slug: transactions
 sidebar_position: 1
 tags:

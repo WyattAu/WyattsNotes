@@ -1,5 +1,8 @@
 ---
 title: Water and Carbon Cycles
+description:
+  A-Level Geography notes on Water and Carbon Cycles: The Hydrological (Water)
+  Cycle; Key Processes; The Water Balance; Drainage Basins.
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Geography

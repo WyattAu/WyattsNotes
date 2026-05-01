@@ -2,8 +2,8 @@
 id: error-handling-patterns
 title: Error Handling Patterns
 description:
-  Error handling in practice — error kinds, error chains, retry logic, graceful degradation, and
-  library vs application error strategies.
+  Error Handling Patterns — Error Design Philosophy; Errors as Values vs
+  Exceptions; Defining Error Types; Enum-Based Error Types.
 slug: error-handling-patterns
 ---
 

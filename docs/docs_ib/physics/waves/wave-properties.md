@@ -812,3 +812,5 @@ After filter 2: $I_2 = 100\cos^2 30\degree = 100 \times 0.75 = 75\mathrm{ W/m}^2
 
 After filter 3:
 $I_3 = 75\cos^2(60\degree - 30\degree) = 75\cos^2 30\degree = 75 \times 0.75 = 56.25\mathrm{ W/m}^2$.
+
+For the A-Level treatment of this topic, see [Wave Properties](https://alevel.wyattau.com/docs/physics/waves/wave-properties).

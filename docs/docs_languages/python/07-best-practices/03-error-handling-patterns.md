@@ -2,8 +2,8 @@
 id: error-handling-patterns
 title: Error Handling Patterns
 description:
-  Python error handling — exception hierarchies, custom exceptions, EAFP vs LBYL, and defensive
-  programming.
+  Python: Error Handling Patterns — Exception Hierarchy; Catching by Hierarchy;
+  Defining Custom Exceptions; Base Exception Class.
 slug: error-handling-patterns
 ---
 

@@ -562,3 +562,5 @@ All four pairs are valid solutions.
 - **Inequalities:** Quadratic inequalities are solved using discriminant and graph analysis. See the inequalities notes.
 - **Permutations and Combinations:** Factorials appear in the quadratic formula derivation via completing the square. See [permutations-and-combinations.md](permutations-and-combinations)).
 
+For the A-Level treatment of this topic, see [Quadratics](https://alevel.wyattau.com/docs/maths/pure-mathematics/quadratics).
+

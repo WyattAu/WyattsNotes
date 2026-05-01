@@ -1,8 +1,9 @@
 ---
 title: TypeScript with React
 description:
-  Typing React components, hooks, context, refs, and event handlers with TypeScript for fully
-  type-safe React applications.
+  TypeScript with React — Typing React Components; Function Components; `FC`
+  Type; Component Typing Comparison with worked examples and exam-style
+  questions.
 slug: typescript-with-react
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

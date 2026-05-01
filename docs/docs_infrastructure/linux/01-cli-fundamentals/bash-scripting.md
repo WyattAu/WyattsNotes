@@ -2,8 +2,9 @@
 id: bash-scripting
 title: Bash Scripting
 description:
-  Bash scripting — control flow, functions, arrays, string manipulation, debugging, and best
-  practices.
+  Bash Scripting — Conditional Expressions; if / elif / else / fi; test / [ /
+  [[; POSIX test — requires quoting with worked examples and exam-style
+  questions.
 slug: bash-scripting
 sidebar_position: 4
 ---

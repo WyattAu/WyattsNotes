@@ -1,5 +1,8 @@
 ---
 title: Undervolting and Overclocking
+description:
+  Undervolting and Overclocking — Undervolting; Purpose; Implementation; Voltage
+  Basics with worked examples and exam-style questions.
 date: 2025-06-12T16:37:43.317Z
 categories:
   - general

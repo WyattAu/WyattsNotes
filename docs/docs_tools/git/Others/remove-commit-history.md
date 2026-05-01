@@ -1,7 +1,9 @@
 ---
 title: Remove Commit History
 date: 2025-06-02T21:52:46.700Z
-description: The method for removing commit history
+description:
+  Git version control: Remove Commit History — Proposed Solution... Covering
+  essential concepts and techniques for practic.
 tags:
   - git
 categories:

@@ -1,5 +1,8 @@
 ---
 title: Source Analysis
+description:
+  A-Level History notes on Source Analysis: Types of Sources; Written Sources;
+  Visual Sources; Oral Sources with worked examples and exam-style questions.
 date: 2026-04:21T00:00:00.000Z
 tags:
   - History

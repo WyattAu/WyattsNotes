@@ -1,5 +1,8 @@
 ---
 title: Modern Physics
+description:
+  Modern Physics — The Photoelectric Effect (HL); Phenomenon; Key Observations;
+  Why Classical Wave Theory Fails with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Physics

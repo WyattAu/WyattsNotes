@@ -19,7 +19,10 @@
     "prepare": "husky",
     "spellcheck": "cspell \"docs/**/*.md\" \"docs/**/*.mdx\" \"src/**/*.md\" \"src/**/*.mdx\"",
     "mdlint": "markdownlint \"docs/**/*.md\" \"docs/**/*.mdx\"",
-    "content-check": "npm run mdlint && npm run spellcheck"
+    "content-check": "npm run mdlint && npm run spellcheck",
+    "validate:mdx": "python3 scripts/validate-mdx.py",
+    "validate:links": "python3 scripts/check-links.py",
+    "validate:content": "python3 scripts/validate-mdx.py && python3 scripts/check-links.py"
   },
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.20",

@@ -2,7 +2,8 @@
 id: packaging-distribution
 title: Packaging and Distribution
 description:
-  Python packaging — pyproject.toml, setuptools, pip, virtual environments, and publishing.
+  Packaging and Distribution — pyproject.toml; Minimal pyproject.toml; PEP 621
+  Metadata Fields; Tool Sections with worked examples and exam-style questions.
 slug: packaging-distribution
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Quantitative Chemistry (Stoichiometry)
+description:
+  A-Level Chemistry notes on Quantitative Chemistry (Stoichiometry): The Mole
+  Concept; Avogadro's Constant; Molar Mass; Molar Volume of Gases.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

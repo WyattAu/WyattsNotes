@@ -908,3 +908,5 @@ $h(2.5) = 3.5$.
 Case 3 ($x \gt 2.5$): $h(x) = (2x-5) + (x+1) = 3x - 4$. Minimum at $x = 2.5$: $h(2.5) = 3.5$.
 
 Minimum value is $3.5$ at $x = 2.5$.
+
+For the A-Level treatment of this topic, see [Functions](https://alevel.wyattau.com/docs/maths/pure-mathematics/functions).

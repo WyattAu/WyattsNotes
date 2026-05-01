@@ -1,6 +1,8 @@
 ---
 title: Pointers and Memory
-description: Pointer basics, escape analysis, stack vs heap allocation, and the unsafe package.
+description:
+  Pointers and Memory — Pointer Basics; Zero Value; Pointer Semantics; Returning
+  Pointers to Local Variables with worked examples and exam-style questions.
 slug: pointers-and-memory
 date: 2026-04-18
 tags:

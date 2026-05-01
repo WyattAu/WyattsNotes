@@ -2,8 +2,8 @@
 id: forensics
 title: Digital Forensics Basics
 description:
-  Digital forensics — evidence collection, disk forensics, memory forensics, log analysis, and
-  investigation methodology.
+  Digital Forensics Basics — Forensic Fundamentals; Chain of Custody; Integrity
+  Hashes; Generate SHA-256 hashes of evidence files.
 slug: forensics
 ---
 

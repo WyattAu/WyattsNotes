@@ -1,5 +1,8 @@
 ---
 title: Ecology
+description:
+  Ecology — Ecosystems; Definitions (OL/HL); Biotic and Abiotic Factors (OL/HL);
+  Feeding Relationships with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Biology

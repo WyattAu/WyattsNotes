@@ -826,3 +826,5 @@ $$
 $$
 h = \frac{kx^2}{2mg} = \frac{500(0.0064)}{2(0.1)(9.81)} = \frac{3.2}{1.962} = 1.63\mathrm{ m}
 $$
+
+For the A-Level treatment of this topic, see [Work, Energy and Power](https://alevel.wyattau.com/docs/physics/mechanics/work-energy-power).

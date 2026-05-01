@@ -1,5 +1,8 @@
 ---
 title: Circular Motion
+description:
+  A-Level Physics notes on Circular Motion: 1. Angular Quantities; 2.
+  Centripetal Acceleration — Derivation; Method 1: Calculus; Method 2: Geometry.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

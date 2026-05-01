@@ -2,8 +2,8 @@
 id: gpu-tuning
 title: GPU Tuning
 description:
-  GPU tuning — undervolting, overclocking, memory clock tuning, power limits, and thermal management
-  for NVIDIA and AMD.
+  Hardware tuning: GPU Tuning — GPU Architecture Overview; CUDA Cores and
+  Streaming Multiprocessors; Memory Bandwidth; ROPs and TMUs.
 slug: gpu-tuning
 ---
 

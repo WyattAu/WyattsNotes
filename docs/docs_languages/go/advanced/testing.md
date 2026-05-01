@@ -1,6 +1,8 @@
 ---
 title: Testing
-description: go test, table-driven tests, benchmarks, fuzzing, and test coverage.
+description:
+  Testing — go test Basics; Test Helpers; Table-Driven Tests; Test Main
+  including key definitions, derivations, and problem-solving techniques.
 slug: testing
 date: 2026-04-18
 tags:

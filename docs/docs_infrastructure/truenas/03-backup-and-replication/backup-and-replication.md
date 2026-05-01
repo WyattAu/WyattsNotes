@@ -2,8 +2,8 @@
 id: backup-and-replication
 title: Backup and Replication
 description:
-  Data protection — ZFS send/receive, cloud sync, snapshot management, backup strategies, and
-  disaster recovery.
+  Backup and Replication — The 3-2-1 Backup Rule; ZFS Snapshots; Snapshot
+  Lifecycle; Snapshot Types with worked examples and exam-style questions.
 slug: backup-and-replication
 ---
 

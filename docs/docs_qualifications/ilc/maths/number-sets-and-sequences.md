@@ -1,5 +1,8 @@
 ---
 title: Number Sets and Sequences
+description:
+  Number Sets and Sequences — Number Systems; Classification (OL/HL); Properties
+  of Real Numbers (OL/HL); Irrational Numbers (HL).
 date: 2026-04-14
 tags:
   - Mathematics

@@ -1,5 +1,9 @@
 ---
 title: Contiguous Memory Views (std::span)
+description:
+  C++: Contiguous Memory Views (std::span) — Contiguous Memory Views
+  (`std::span`); 1. Definition and Layout; 2. Relationship to
+  `std::string_view`.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

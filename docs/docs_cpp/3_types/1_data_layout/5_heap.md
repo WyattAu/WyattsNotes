@@ -1,5 +1,8 @@
 ---
 title: Heap
+description:
+  C++ type system: Heap — 1. Virtual Memory Architecture; Pages; State of a
+  Page; 2. The Linux/Unix Mechanisms (`brk` & `mmap`).
 date: 2025-12-13T05:06:47.303Z
 tags:
   - cpp

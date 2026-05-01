@@ -2,8 +2,8 @@
 id: database-design
 title: Database Design
 description:
-  Database design methodology — requirements analysis, conceptual design, logical design, physical
-  design, and migration strategies.
+  Database Design — The Design Process; Phase 1: Requirements Analysis; Phase 2:
+  Conceptual Design; Phase 3: Logical Design.
 slug: database-design
 sidebar_position: 1
 tags:

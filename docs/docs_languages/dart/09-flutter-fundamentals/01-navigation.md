@@ -1,5 +1,8 @@
 ---
 title: Navigation
+description:
+  Navigation — Navigator 1.0; Basic Push and Pop; Passing Data to a Route;
+  Returning Data from a Route with worked examples and exam-style questions.
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

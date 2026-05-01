@@ -2,8 +2,8 @@
 id: http
 title: HTTP
 description:
-  Hypertext Transfer Protocol — HTTP/1.1, HTTP/2, HTTP/3, methods, status codes, headers, caching,
-  and REST.
+  HTTP — Methods; Status Codes; Connection Management; Chunked Transfer Encoding
+  with worked examples and exam-style questions.
 slug: http
 sidebar_position: 6
 tags:

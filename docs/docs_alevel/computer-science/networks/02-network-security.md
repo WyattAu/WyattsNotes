@@ -1,5 +1,8 @@
 ---
 title: Network Security
+description:
+  A-Level Computer Science notes on Network Security: 1. Threats and
+  Vulnerabilities; Types of Threats; The CIA Triad; 2. Symmetric Encryption.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

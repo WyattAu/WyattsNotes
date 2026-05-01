@@ -2,7 +2,8 @@
 id: monitoring-and-alerting
 title: Monitoring and Alerting
 description:
-  TrueNAS monitoring — system health, SMART tests, ZFS scrub, email alerts, and Grafana dashboards.
+  Monitoring and Alerting — TrueNAS Built-in Monitoring; Dashboard; System
+  Information; SMART Tests with worked examples and exam-style questions.
 slug: monitoring-and-alerting
 ---
 

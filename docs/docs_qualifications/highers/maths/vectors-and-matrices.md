@@ -1,5 +1,8 @@
 ---
 title: Vectors and Matrices
+description:
+  SQA Higher Mathematics: Vectors and Matrices — Higher Vectors; Vector
+  Fundamentals; Vector Arithmetic; magnitude; direction; Magnitude (Modulus):.
 date: 2026-04-14
 tags:
   - Mathematics

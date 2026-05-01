@@ -1,5 +1,8 @@
 ---
 title: Algebraic Error Handling — std::optional and std::variant
+description:
+  C++: Algebraic Error Handling — std::optional and std::variant — Algebraic
+  Error Handling; 4.1 `std::optional<T>`; 4.2 `std::variant<T, U, V>`.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

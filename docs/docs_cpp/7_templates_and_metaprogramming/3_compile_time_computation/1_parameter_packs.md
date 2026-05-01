@@ -1,5 +1,8 @@
 ---
 title: Parameter Packs and Variadic Templates
+description:
+  C++: Parameter Packs and Variadic Templates — Variadic Function Templates and
+  Parameter Packs; Pack Expansion Syntax. and examination p.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

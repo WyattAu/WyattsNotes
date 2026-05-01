@@ -2,8 +2,8 @@
 id: open-source
 title: Open Source Contribution Guide
 description:
-  Contributing to open source — finding projects, understanding codebases, making PRs, and community
-  participation.
+  Open Source Contribution Guide — Why Contribute to Open Source; Finding the
+  Right Project. with additional techniques and methods.
 slug: open-source
 ---
 

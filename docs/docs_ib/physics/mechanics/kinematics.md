@@ -896,3 +896,5 @@ v_y = 5 - 9.81(5.48) = 5 - 53.76 = -48.76\mathrm{ m/s}
 $$
 
 Speed $= 48.8\mathrm{ m/s}$ (downward).
+
+For the A-Level treatment of this topic, see [Kinematics](https://alevel.wyattau.com/docs/physics/mechanics/kinematics).

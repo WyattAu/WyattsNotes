@@ -1,6 +1,8 @@
 ---
 title: Tooling and Configuration
-description: "TypeScript toolchain configuration: tsconfig.json options, module resolution, @types packages, type checking, ESLint integration, project references, and recent language features."
+description:
+  Tooling and Configuration — tsconfig.json: Core Configuration; Compiler
+  Options Reference; Language and Environment; Module Resolution.
 slug: typescript-tooling-and-configuration
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

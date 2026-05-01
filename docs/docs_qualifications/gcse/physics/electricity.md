@@ -1,5 +1,8 @@
 ---
 title: Electricity
+description:
+  Electricity — 1. Electrical Circuits; 1.1 Circuit Symbols; 1.2 Current,
+  Potential Difference, and Resistance; 1.3 What Current Actually Is.
 date: 2026-04-14
 tags:
   - Physics

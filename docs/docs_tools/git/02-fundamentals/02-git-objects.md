@@ -1,5 +1,8 @@
 ---
 title: Git Objects
+description:
+  Git Objects — The Content-Addressable Filesystem; Object Lifecycle; Blobs;
+  Creating a Blob with worked examples and exam-style questions.
 date: 2025-06-03T00:00:00.000Z
 tags:
   - git

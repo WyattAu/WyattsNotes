@@ -1,5 +1,8 @@
 ---
 title: The C Runtime (CRT)
+description:
+  C++: The C Runtime (CRT) — What the CRT Provides Beyond Language Features; The
+  Physical Entry Point; ELF Entry Point Details; Entry point address: 0x401020.
 date: 2025-12-12T04:23:24.345Z
 tags:
   - cpp

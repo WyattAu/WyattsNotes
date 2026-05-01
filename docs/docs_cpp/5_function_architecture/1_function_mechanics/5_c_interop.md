@@ -1,5 +1,8 @@
 ---
 title: C-Interop and FFI
+description:
+  C++: C-Interop and FFI — 5.1 `extern "C"` Linkage [N4950 §9.9]; Formal
+  Semantics of `extern "C"`; `extern "C"` and Function Overloading.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

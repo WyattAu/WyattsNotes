@@ -1,5 +1,8 @@
 ---
 title: Critical Theory
+description:
+  A-Level English notes on Critical Theory: Overview of Critical Approaches;
+  Formalism and New Criticism; Principles; Key Concepts.
 date: 2026-04-21T00:00:00.000Z
 tags:
   - English

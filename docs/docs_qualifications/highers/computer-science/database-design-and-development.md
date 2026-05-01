@@ -1,5 +1,9 @@
 ---
 title: Database Design and Development
+description:
+  Database Design and Development — Higher Database Design; Flat Files vs.
+  Relational Databases; Relational Database Concepts; Entity-Relationship
+  Modelling.
 date: 2026-04-14
 tags:
   - Computer Science

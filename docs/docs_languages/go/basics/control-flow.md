@@ -1,6 +1,8 @@
 ---
 title: Control Flow
-description: if/else, switch, for loops, range, break, continue, and goto in Go.
+description:
+  Control Flow — If / Else; Initialization Statement; Idiomatic Error Check;
+  Switch with worked examples and exam-style questions.
 slug: control-flow
 date: 2026-04-18
 tags:

@@ -1,5 +1,8 @@
 ---
 title: Modules and Packages
+description:
+  Modules and Packages — The Import System; The `import` Statement; What Happens
+  When Python Imports; sys.modules is a dict of all loaded modules.
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

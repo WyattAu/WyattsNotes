@@ -1,5 +1,8 @@
 ---
 title: References
+description:
+  References — Reference Types; Branches; Create a branch; Equivalent to: echo
+  $(git rev-parse HEAD) >.git/refs/heads/feature-login.
 date: 2025-06-03T01:00:00.000Z
 tags:
   - git

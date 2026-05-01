@@ -1,8 +1,8 @@
 ---
 title: Functions
 description:
-  Function declarations, multiple return values, named returns, variadic functions, closures, and
-  defer.
+  Functions — Function Declaration; Named Return Values; Passing a Slice to a
+  Variadic Function; Variadic with Other Parameters.
 slug: functions
 date: 2026-04-18
 tags:

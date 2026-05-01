@@ -1,5 +1,8 @@
 ---
 title: Plant Biology
+description:
+  Plant Biology — Plant Structure; Plant Tissues (OL/HL); Leaf Structure
+  (OL/HL); Root Structure (OL/HL) with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Biology

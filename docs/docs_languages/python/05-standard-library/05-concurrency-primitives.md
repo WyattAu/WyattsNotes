@@ -2,7 +2,8 @@
 id: concurrency-primitives
 title: Concurrency Primitives
 description:
-  Python concurrency — threading, multiprocessing, queues, synchronization, and concurrent.futures.
+  Concurrency Primitives — threading Module; Creating Threads; Thread
+  Subclassing; Daemon Threads with worked examples and exam-style questions.
 slug: concurrency-primitives
 ---
 

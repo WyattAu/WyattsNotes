@@ -852,3 +852,5 @@ Required friction: $f = ma_c = m \times 2.7$.
 Maximum available friction: $f_{\max} = \mu_s mg = 0.4m(9.81) = 3.924m$.
 
 Since $2.7m \lt 3.924m$, the coin does not slip.
+
+For the A-Level treatment of this topic, see [Circular Motion](https://alevel.wyattau.com/docs/physics/mechanics/circular-motion).

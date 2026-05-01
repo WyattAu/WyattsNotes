@@ -2,8 +2,8 @@
 id: advanced-graph-algorithms
 title: Advanced Graph Algorithms
 description:
-  Advanced graph algorithms — strongly connected components, bridges, articulation points, network
-  flow, and matching.
+  Advanced Graph Algorithms — Strongly Connected Components; Kosaraju's
+  Algorithm. with additional techniques and methods.
 slug: advanced-graph-algorithms
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Functions
 description:
-  Function declarations, default parameters, named arguments, extension functions, infix functions,
-  lambdas, and higher-order functions.
+  Functions — Function Declarations; Default Parameters; Mixing Positional and
+  Named Arguments; Named Arguments with worked examples and exam-style
+  questions.
 slug: functions
 date: 2026-04-18
 tags:

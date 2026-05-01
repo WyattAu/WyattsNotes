@@ -2,8 +2,8 @@
 id: linux-networking
 title: Linux Networking
 description:
-  Linux networking stack — netfilter/iptables/nftables, network namespaces, interfaces, routing,
-  socket API, and troubleshooting.
+  Linux Networking — Network Interface Management (iproute2); Interface
+  Configuration; List all network interfaces; Bring interface up/down.
 slug: linux-networking
 sidebar_position: 1
 ---

@@ -1,5 +1,8 @@
 ---
 title: Markdown & MDX Constructs
+description:
+  Markdown & MDX Constructs — Standard Markdown; Headings; Level 2; Level 3
+  including key definitions, derivations, and problem-solving techniques.
 date: 2025-05-15T22:45:51.828Z
 tags:
   - general

@@ -2,8 +2,8 @@
 id: maps-and-sets
 title: Maps and Sets
 description:
-  Java collections — Map implementations, Set implementations, comparison, and collection design
-  patterns.
+  Maps and Sets — The `Map` Interface; Map Implementations; `HashMap`;
+  `LinkedHashMap` with worked examples and exam-style questions.
 slug: maps-and-sets
 ---
 

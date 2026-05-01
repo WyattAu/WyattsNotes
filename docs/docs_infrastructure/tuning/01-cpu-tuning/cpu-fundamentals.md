@@ -2,8 +2,8 @@
 id: cpu-fundamentals
 title: CPU Architecture and Tuning
 description:
-  CPU architecture fundamentals — pipelines, caches, clock speeds, turbo boost, power states, and
-  CPU-specific tuning.
+  CPU Architecture and Tuning — Microarchitecture Overview; Instruction
+  Pipeline; Fetch and Decode; Out-of-Order Execution.
 slug: cpu-fundamentals
 ---
 

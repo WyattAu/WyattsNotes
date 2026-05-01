@@ -1,5 +1,8 @@
 ---
 title: Setting Up Home Server
+description:
+  Setting Up Home Server — Hardware Selection; Storage Drives; Motherboard and
+  Chassis; Software and Images with worked examples and exam-style questions.
 date: 2025-07-11T17:57:30.362Z
 tags:
   - OS

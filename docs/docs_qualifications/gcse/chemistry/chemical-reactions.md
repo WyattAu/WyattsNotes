@@ -1,5 +1,8 @@
 ---
 title: Chemical Reactions
+description:
+  GCSE Chemistry: Chemical Reactions — 1. Writing Chemical Equations; 1.1 Word
+  Equations; 1.2 Symbol Equations; 1.3 State Symbols.
 date: 2026-04-14
 tags:
   - Chemistry

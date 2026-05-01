@@ -1,5 +1,9 @@
 ---
 title: Differentiation
+description:
+  A-Level Mathematics notes on Differentiation: Board Coverage; 1. The
+  Derivative from First Principles; 1.1 Definition; 2. Derivative of $x^n$ from
+  First Prin.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

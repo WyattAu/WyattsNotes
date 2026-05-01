@@ -2,8 +2,9 @@
 id: tls
 title: TLS
 description:
-  Transport Layer Security — handshake, cipher suites, certificates, certificate authorities, and
-  TLS 1.3.
+  Networking: TLS — TLS History and Versions; TLS 1.2 Handshake; TLS 1.2
+  Handshake Steps; Key Derivation, covering core concepts and practical
+  techniques.
 slug: tls
 sidebar_position: 7
 tags:

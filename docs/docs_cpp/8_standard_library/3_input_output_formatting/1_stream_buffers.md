@@ -1,5 +1,8 @@
 ---
 title: Stream Buffers and Locale Facets
+description:
+  C++: Stream Buffers and Locale Facets — The Stream Buffer Abstraction;
+  Standard Stream Buffer Specializations; Locale Facets; Custom Stream Buffer.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

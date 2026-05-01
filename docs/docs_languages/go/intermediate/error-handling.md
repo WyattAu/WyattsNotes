@@ -1,6 +1,8 @@
 ---
 title: Error Handling
-description: Error interface, custom errors, error wrapping, and panic/recover.
+description:
+  Error Handling — The Error Interface; Idiomatic Error Pattern; Sentinel
+  Errors; Custom Error Types with worked examples and exam-style questions.
 slug: error-handling
 date: 2026-04-18
 tags:

@@ -1,5 +1,8 @@
 ---
 title: Filter-Repo (History Rewriting)
+description:
+  Filter-Repo (History Rewriting) — What filter-repo Is; Why filter-branch Was
+  Problematic. with additional techniques and methods.
 slug: filter-repo
 ---
 

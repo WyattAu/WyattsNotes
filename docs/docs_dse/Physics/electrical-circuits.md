@@ -620,3 +620,5 @@ $$V = \varepsilon - Ir = 12 - 1.60 \times 0.5 = 12 - 0.80 = 11.2 \mathrm{ V}$$
 
 If you get this wrong, revise: Series and Parallel Circuits / Internal Resistance
 
+For the A-Level treatment of this topic, see [DC Circuits](https://alevel.wyattau.com/docs/physics/electricity/dc-circuits).
+

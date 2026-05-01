@@ -1,5 +1,8 @@
 ---
 title: Git Subtrees
+description:
+  Git Subtrees — What Subtrees Are; How Subtrees Store Data; Adding a Subtree;
+  Basic Syntax with worked examples and exam-style questions.
 slug: git-subtrees
 ---
 

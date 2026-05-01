@@ -1,5 +1,8 @@
 ---
 title: Genetics and Evolution
+description:
+  Genetics and Evolution — DNA Structure (OL/HL); The Double Helix (OL/HL); DNA
+  Replication (HL); Protein Synthesis (HL). and examination.
 date: 2026-04-14
 tags:
   - Biology

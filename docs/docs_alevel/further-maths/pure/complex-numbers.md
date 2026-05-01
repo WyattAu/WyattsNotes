@@ -1,5 +1,8 @@
 ---
 title: Complex Numbers (Extended)
+description:
+  A-Level Further Maths notes on Complex Numbers (Extended): Complex Numbers
+  (Extended Treatment); 1. Modulus-Argument Form; 1.1 Polar representation.
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

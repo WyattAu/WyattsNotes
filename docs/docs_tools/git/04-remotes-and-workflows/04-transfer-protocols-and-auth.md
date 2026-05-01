@@ -1,5 +1,8 @@
 ---
 title: Transfer Protocols and Authentication
+description:
+  Git version control: Transfer Protocols and Authentication — Protocol
+  Overview; A repository can have remotes using different protocols; SSH Setup.
 slug: transfer-protocols-and-auth
 ---
 

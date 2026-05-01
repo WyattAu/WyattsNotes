@@ -963,3 +963,5 @@ $$
 $$
 = \pi(e - 0) - 2\pi[x\ln x - x]_1^e = \pi e - 2\pi(e - e + 1) = \pi e - 2\pi = \pi(e - 2)
 $$
+
+For the A-Level treatment of this topic, see [Integration](https://alevel.wyattau.com/docs/maths/pure-mathematics/integration).

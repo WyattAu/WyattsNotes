@@ -1,5 +1,8 @@
 ---
 title: Chrono Library
+description:
+  C++: Chrono Library — Clocks; Durations; Measuring Elapsed Time; Calendar and
+  Timezone Support (C++20) with worked examples and exam-style questions.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -1,6 +1,8 @@
 ---
 title: Metaprogramming
-description: Reflection, annotations, sealed interfaces, value classes, and operator overloading.
+description:
+  Metaprogramming — Reflection; Class References; Property References; Function
+  References with worked examples and exam-style questions.
 slug: metaprogramming
 date: 2026-04-18
 tags:

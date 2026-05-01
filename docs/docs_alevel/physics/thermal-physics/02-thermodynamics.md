@@ -1,5 +1,9 @@
 ---
 title: Thermodynamics
+description:
+  A-Level Physics notes on Thermodynamics: 2. Work Done by a Gas; Derivation of
+  Work Done by Gas at Constant Pressure for thorough revision and examination
+  pre.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

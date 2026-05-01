@@ -1,7 +1,10 @@
 ---
 id: protocols-dunder-methods
 title: Protocols and Dunder Methods
-description: Python protocols — data model, comparison, iteration, arithmetic, and magic methods.
+description:
+  Protocols and Dunder Methods — Data Model Protocols; \_\_init\_\_ and
+  \_\_new\_\_; \_\_repr\_\_ and \_\_str\_\_ for thorough revision and
+  examination prepar.
 slug: protocols-dunder-methods
 ---
 

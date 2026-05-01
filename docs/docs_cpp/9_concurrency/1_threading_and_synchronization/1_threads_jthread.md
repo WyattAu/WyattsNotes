@@ -1,5 +1,8 @@
 ---
 title: Thread Execution (std::jthread) and Hardware Mapping
+description:
+  C++: Thread Execution (std::jthread) and Hardware Mapping — Thread Execution
+  (`std::jthread`) and Hardware Mapping; `std::thread` and `std::jthread`.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

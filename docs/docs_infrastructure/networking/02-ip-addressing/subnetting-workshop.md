@@ -2,8 +2,8 @@
 id: subnetting-workshop
 title: Subnetting Workshop
 description:
-  Subnetting practice — binary method, variable-length subnet masks, route summarization, and worked
-  examples.
+  Subnetting Workshop — Binary Method: Step by Step; The Subnet Mask in Binary;
+  Step-by-Step Method; Verifying with a Shortcut.
 slug: subnetting-workshop
 tags:
   - Networking

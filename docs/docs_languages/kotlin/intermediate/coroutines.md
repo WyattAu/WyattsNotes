@@ -1,7 +1,8 @@
 ---
 title: Coroutines
 description:
-  Coroutine basics, suspend functions, launch/async, structured concurrency, Flow, and channels.
+  Coroutines — Core Concepts; Setup; Suspend Functions; Coroutine Builders with
+  worked examples and exam-style questions, ensuring thorough understanding.
 slug: coroutines
 date: 2026-04-18
 tags:

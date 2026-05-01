@@ -1,5 +1,8 @@
 ---
 title: Hosting With Gitea On TrueNAS
+description:
+  Git version control: Hosting With Gitea On TrueNAS — Procedure; Setup
+  Networking, covering core concepts and practical techniques.
 date: 2025-06-13T18:10:33.853Z
 tags:
   - git

@@ -1,5 +1,8 @@
 ---
 title: The 19th-Century Novel
+description:
+  The 19th-Century Novel — 1.1 Realism and Its Discontents; 1.2 Romanticism vs
+  Realism; 2. Social Context; 2.1 The Industrial Revolution.
 date: 2026-04-22
 tags:
   - English

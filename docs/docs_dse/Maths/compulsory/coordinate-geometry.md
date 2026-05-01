@@ -625,3 +625,5 @@ The equation of the common chord is $6x - 8y + 23 = 0$.
 - **Functions:** Transformations of graphs apply equally to circles and lines. See [functions-advanced.md](functions-advanced)).
 - **Trigonometry:** The angle between two lines uses the tangent formula, which connects to trigonometric identities.
 
+For the A-Level treatment of this topic, see [Coordinates and Geometry](https://alevel.wyattau.com/docs/maths/pure-mathematics/coordinates-and-geometry).
+

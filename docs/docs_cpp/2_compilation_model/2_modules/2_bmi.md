@@ -1,5 +1,8 @@
 ---
 title: Binary Module Interfaces
+description:
+  C++: Binary Module Interfaces — What BMIs Are and Why They Matter; Formal
+  Basis; Compiler-Specific Formats; BMI Generation with GCC and Clang.
 date: 2025-12-12T03:59:23.474Z
 tags:
   - cpp

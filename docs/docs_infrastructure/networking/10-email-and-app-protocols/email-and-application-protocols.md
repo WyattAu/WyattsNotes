@@ -1,5 +1,8 @@
 ---
 title: Email and Application Protocols
+description:
+  Email and Application Protocols — Email Architecture; Core Components; Email
+  Message Format; MIME — Multipurpose Internet Mail Extensions.
 date: 2026-04-09T00:00:00.000Z
 tags:
   - Networking

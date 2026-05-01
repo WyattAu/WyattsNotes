@@ -2,8 +2,9 @@
 id: descriptors
 title: Descriptors and Properties
 description:
-  Python descriptors — descriptor protocol, property, classmethod, staticmethod, __slots__, and
-  __getattr__.
+  Descriptors and Properties — Descriptor Protocol; Data vs Non-Data
+  Descriptors; Instance attribute overrides non-data descriptor; Data descriptor
+  always wins.
 slug: descriptors
 ---
 

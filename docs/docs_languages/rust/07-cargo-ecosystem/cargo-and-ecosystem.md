@@ -2,8 +2,9 @@
 id: cargo-and-ecosystem
 title: Cargo and Ecosystem
 description:
-  Rust build system — Cargo, crates.io, workspace management, testing, documentation, profiling, and
-  key crates.
+  Cargo and Ecosystem — Cargo.toml Structure; Package Metadata Fields; Workspace
+  Management; Workspace Cargo.toml with worked examples and exam-style
+  questions.
 slug: cargo-and-ecosystem
 ---
 

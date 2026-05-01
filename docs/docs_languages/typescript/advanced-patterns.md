@@ -1,6 +1,8 @@
 ---
 title: Advanced Patterns
-description: "Advanced TypeScript type-level programming: recursive types, branded types, builder patterns, variadic tuples, mapped type manipulation, and type-level arithmetic."
+description:
+  Advanced Patterns — Conditional Types: Deep Dive; Distributive Conditional
+  Types; Preventing Distribution; Distribution Rules Summary.
 slug: typescript-advanced-patterns
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

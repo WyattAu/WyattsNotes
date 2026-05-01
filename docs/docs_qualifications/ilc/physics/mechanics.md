@@ -1,5 +1,8 @@
 ---
 title: Mechanics
+description:
+  International LC Physics: Mechanics — Physical Quantities and Units; SI Base
+  Units (OL/HL); Derived Units (OL/HL); Scalars and Vectors (OL/HL).
 date: 2026-04-14
 tags:
   - Physics

@@ -1,5 +1,8 @@
 ---
 title: Refraction and Total Internal Reflection
+description:
+  A-Level Physics notes on Refraction and Total Internal Reflection: 1.
+  Refractive Index; Dispersion and the Refractive Index; 2. Snell's Law.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

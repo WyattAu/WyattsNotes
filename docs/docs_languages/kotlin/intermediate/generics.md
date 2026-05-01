@@ -1,7 +1,8 @@
 ---
 title: Generics
 description:
-  Generic classes and functions, variance, type constraints, star projection, and reified types.
+  Generics — Generic Classes and Functions; Variance; Invariance; Covariance
+  (`out`) with worked examples and exam-style questions.
 slug: generics
 date: 2026-04-18
 tags:

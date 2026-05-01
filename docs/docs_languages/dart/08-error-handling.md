@@ -1,5 +1,8 @@
 ---
 title: Error Handling
+description:
+  Error Handling — Exception vs Error Hierarchy; The Full Hierarchy; The
+  Semantic Distinction; When to Catch vs Let Propagate.
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

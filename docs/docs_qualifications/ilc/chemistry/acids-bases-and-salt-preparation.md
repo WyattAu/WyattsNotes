@@ -1,5 +1,8 @@
 ---
 title: Acids, Bases and Salt Preparation
+description:
+  Acids, Bases and Salt Preparation — Definitions of Acids and Bases (OL/HL);
+  Arrhenius Definition; Bronsted-Lowry Definition (HL).
 date: 2026-04-14
 tags:
   - Chemistry

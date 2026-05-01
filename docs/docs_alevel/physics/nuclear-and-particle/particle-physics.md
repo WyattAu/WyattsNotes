@@ -1,5 +1,8 @@
 ---
 title: Particle Physics
+description:
+  A-Level Physics notes on Particle Physics: 1. The Standard Model; The Four
+  Fundamental Interactions; 2. Quarks; The Six Flavours.
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]

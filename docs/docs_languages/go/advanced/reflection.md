@@ -1,6 +1,8 @@
 ---
 title: Reflection
-description: The reflect package, type inspection, and dynamic dispatch in Go.
+description:
+  Reflection — reflect.Type and reflect.Value; Kind vs Type; Modifying Values;
+  Inspecting Fields with worked examples and exam-style questions.
 slug: reflection
 date: 2026-04-18
 tags:

@@ -1101,4 +1101,6 @@ Note that this equals the Compton wavelength of the electron, $\frac{h}{m_e c}$.
 
 **If you get this wrong, revise:** Section 1.6.
 
+For the A-Level treatment of this topic, see [Radioactivity](https://alevel.wyattau.com/docs/physics/nuclear-physics/radioactivity).
+
 </details>

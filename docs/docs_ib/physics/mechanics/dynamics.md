@@ -890,3 +890,5 @@ $$
 $$
 E_e = \frac{1}{2}kx^2 \implies 26.67 = 1000x^2 \implies x = 0.163\mathrm{ m}
 $$
+
+For the A-Level treatment of this topic, see [Dynamics](https://alevel.wyattau.com/docs/physics/mechanics/dynamics).

@@ -2,8 +2,8 @@
 id: systemd
 title: Systemd
 description:
-  Systemd service management — unit files, targets, journal, timers, socket activation, and service
-  hardening.
+  Systemd — Design Principles; Unit Types; Finding Unit Files; Show the search
+  path with worked examples and exam-style questions.
 slug: systemd
 sidebar_position: 1
 ---

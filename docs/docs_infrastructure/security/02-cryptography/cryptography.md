@@ -2,8 +2,8 @@
 id: cryptography
 title: Cryptography
 description:
-  Applied cryptography — symmetric encryption, asymmetric encryption, hashing, digital signatures,
-  key exchange, and PKI.
+  Cryptography — Foundations; Cryptographic Primitives; Kerckhoffs's Principle;
+  Symmetric Encryption with worked examples and exam-style questions.
 slug: cryptography
 sidebar_position: 3
 ---

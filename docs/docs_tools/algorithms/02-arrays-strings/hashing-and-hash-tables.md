@@ -2,8 +2,8 @@
 id: hashing-and-hash-tables
 title: Hashing and Hash Tables
 description:
-  Hash functions, hash tables, collision resolution, consistent hashing, bloom filters, and
-  applications.
+  Hashing and Hash Tables — Hash Function Fundamentals; Desirable Properties;
+  Avalanche Criterion; Uniformity with worked examples and exam-style questions.
 slug: hashing-and-hash-tables
 ---
 

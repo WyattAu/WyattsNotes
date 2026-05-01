@@ -1,5 +1,9 @@
 ---
 title: Sparse Checkout and Partial Clone
+description:
+  Git sparse checkout and partial clone: restricting working directory contents
+  and downloading only needed objects to optimise repository size and clone
+  time.
 slug: sparse-checkout-and-partial-clone
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: GitHub Actions CI/CD Patterns
+description:
+  GitHub Actions CI/CD Patterns — What is GitHub Actions; Core Concepts; Runner
+  Taxonomy; Actions Marketplace with worked examples and exam-style questions.
 slug: github-actions-patterns
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Operating Systems
+description:
+  University-level notes on Operating Systems: 1.1 Role of the Operating System;
+  1.2 Kernel Architectures; 1.3 System Calls; 2. Process Management.
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing

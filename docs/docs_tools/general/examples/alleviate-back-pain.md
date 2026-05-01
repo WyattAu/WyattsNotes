@@ -1,5 +1,8 @@
 ---
 title: Alleviating Back Pain
+description:
+  Alleviating Back Pain — Objective; The Complete Structure; Procedure; Phase 1:
+  Activation & Stability with worked examples and exam-style questions.
 date: 2025-09-08T09:17:16.135Z
 slug: alleviating-pain
 ---

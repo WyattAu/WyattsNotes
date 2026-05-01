@@ -2,8 +2,8 @@
 id: incident-response
 title: Incident Response
 description:
-  Security incident response — preparation, detection, containment, eradication, recovery, and
-  post-incident analysis.
+  Incident Response — Preparation; Playbooks; Tools and Infrastructure; Tabletop
+  Exercises with worked examples and exam-style questions.
 slug: incident-response
 sidebar_position: 7
 ---

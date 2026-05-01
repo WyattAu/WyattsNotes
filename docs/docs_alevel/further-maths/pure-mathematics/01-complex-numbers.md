@@ -1,5 +1,8 @@
 ---
 title: Complex Numbers
+description:
+  A-Level Further Maths notes on Complex Numbers: Board Coverage; 1.1 The Argand
+  Diagram; 1.2 Modulus and Argument; 2. De Moivre's Theorem.
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

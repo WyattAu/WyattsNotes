@@ -2,8 +2,8 @@
 id: network-tools
 title: Network Tools
 description:
-  Practical network troubleshooting — ping, traceroute, tcpdump, Wireshark, netcat, curl, dig, ss,
-  and diagnostic methodology.
+  Networking: Network Tools — Diagnostic Methodology; The OSI-Layer Approach;
+  Check interface status; Check link speed and duplex.
 slug: network-tools
 sidebar_position: 8
 tags:

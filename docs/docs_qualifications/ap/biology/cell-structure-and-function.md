@@ -1,5 +1,8 @@
 ---
 title: Cell Structure and Function
+description:
+  Cell Structure and Function — Cell Theory (CED Unit 2); Prokaryotic vs
+  Eukaryotic Cells; The Cell Membrane (CED Unit 2); Fluid Mosaic Model.
 date: 2026-04-14
 tags:
   - Biology

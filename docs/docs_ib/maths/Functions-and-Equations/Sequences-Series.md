@@ -860,3 +860,5 @@ a = 32\left(1 - \frac{1}{2}\right) = 16
 $$
 
 Verify: $16 + 8 + 4 = 28$. And $S_\infty = 16/(1 - 1/2) = 32$. Correct.
+
+For the A-Level treatment of this topic, see [Sequences and Series](https://alevel.wyattau.com/docs/maths/pure-mathematics/sequences-and-series).

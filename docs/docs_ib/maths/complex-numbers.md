@@ -598,3 +598,5 @@ Adding: $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2 = 2(|z_1|^2 + |z_2|
 - **Binomial theorem expansion** → Review algebra and series topics
 - **Polynomial roots and Vieta's formulas** → Review [./complex-numbers](complex-numbers) (section on Sum of Roots)
 
+For the A-Level Further Maths treatment of this topic, see [Complex Numbers](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/further-complex-numbers).
+

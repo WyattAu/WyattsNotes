@@ -1,5 +1,8 @@
 ---
 title: Commit Signing
+description:
+  Commit Signing — Why Sign Commits; The Threat Model; Anyone can claim to be
+  anyone; Identity Verification with worked examples and exam-style questions.
 slug: commit-signing
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: The Three Trees
+description:
+  The Three Trees — The Working Directory; Key Properties; Untracked vs Tracked
+  Files; The Index with worked examples and exam-style questions.
 date: 2025-06-02T22:00:00.000Z
 tags:
   - git

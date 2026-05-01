@@ -1,5 +1,8 @@
 ---
 title: Statistics
+description:
+  Statistics — 1. Data Collection; 1.1 Types of Data; 1.2 Sampling Methods; 1.3
+  Bias in Data Collection with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Maths

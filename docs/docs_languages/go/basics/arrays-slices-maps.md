@@ -1,6 +1,8 @@
 ---
 title: Arrays, Slices, and Maps
-description: Arrays, slices, maps, and struct types in Go.
+description:
+  Arrays, Slices, and Maps — Arrays; Array Length; Slices; Creating Slices with
+  worked examples and exam-style questions, ensuring thorough understanding.
 slug: arrays-slices-maps
 date: 2026-04-18
 tags:

@@ -2,7 +2,8 @@
 id: inheritance-polymorphism
 title: Inheritance and Polymorphism
 description:
-  Java OOP — inheritance, polymorphism, abstract classes, interfaces, and design principles.
+  Inheritance and Polymorphism — Inheritance; The `extends` Keyword; Method
+  Overriding with `@Override`; The `super` Keyword.
 slug: inheritance-polymorphism
 ---
 

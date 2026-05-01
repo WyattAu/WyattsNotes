@@ -1,5 +1,8 @@
 ---
 title: Linker Configuration
+description:
+  C++: Linker Configuration — The Landscape of Linkers; 1. GNU ld.bfd; 2. GNU
+  gold; 3. LLVM LLD with worked examples and exam-style questions.
 date: 2025-12-10T05:29:40.734Z
 tags:
   - cpp

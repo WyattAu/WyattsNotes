@@ -1,5 +1,8 @@
 ---
 title: Branching Strategies
+description:
+  Branching Strategies — Choosing a Branching Strategy; Trunk-Based Development;
+  Concept; Rules with worked examples and exam-style questions.
 date: 2025-06-03T07:00:00.000Z
 tags:
   - git

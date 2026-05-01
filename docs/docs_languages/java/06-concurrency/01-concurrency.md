@@ -1,5 +1,9 @@
 ---
 title: Concurrency
+description:
+  Concurrency — The Java Memory Model; Why the Memory Model Matters;
+  Happens-Before Rules; Safe Publication with worked examples and exam-style
+  questions.
 date: 2025-06-05T15:00:00.000Z
 tags: ["java"]
 categories: ["java"]

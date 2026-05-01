@@ -1,5 +1,8 @@
 ---
 title: Differential Equations
+description:
+  Differential Equations — First-Order Separable Equations; Separability Test;
+  Worked Example: Separation with Partial Fractions.
 date: 2026-04-14
 tags:
   - Mathematics

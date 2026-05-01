@@ -1,5 +1,9 @@
 ---
 title: Branching
+description:
+  Branching — Branch Internals; Equivalent to: echo $(git rev-parse HEAD)
+  >.git/refs/heads/feature-auth; Creating and Managing Branches; Creating
+  Branches.
 date: 2025-06-03T02:00:00.000Z
 tags:
   - git

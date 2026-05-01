@@ -1,5 +1,8 @@
 ---
 title: Integrals
+description:
+  Integrals — Basic Integration Rules; The Power Rule for Integration; Riemann
+  Sums and the Definite Integral (CED Unit 6); Riemann Sums.
 date: 2026-04-14
 tags:
   - Mathematics

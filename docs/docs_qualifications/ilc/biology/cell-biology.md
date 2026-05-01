@@ -1,5 +1,9 @@
 ---
 title: Cell Biology
+description:
+  Cell Biology — Cell Theory (OL/HL); Prokaryotic and Eukaryotic Cells (OL/HL);
+  Prokaryotic Cells (Bacteria) for thorough revision and examination
+  preparation.
 date: 2026-04-14
 tags:
   - Biology

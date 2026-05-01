@@ -1,5 +1,8 @@
 ---
 title: Research Methods
+description:
+  A-Level Psychology notes on Research Methods: The Experimental Method; What Is
+  an Experiment?; Types of Experiments; Variables.
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Psychology

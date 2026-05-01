@@ -1,5 +1,8 @@
 ---
 title: Style and Idioms
+description:
+  Style and Idioms — Why Style Matters in Python; PEP 8 Essentials; Naming
+  Conventions for thorough revision and examination preparation.
 date: 2025-06-04T16:00:00.000Z
 tags:
   - Python

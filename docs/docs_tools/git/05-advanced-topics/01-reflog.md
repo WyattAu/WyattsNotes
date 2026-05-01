@@ -1,5 +1,8 @@
 ---
 title: Reflog
+description:
+  Reflog — Show with dates (more readable); Show with relative dates; HEAD@{N} —
+  the Nth previous position of HEAD for thorough revision and examination prepa.
 date: 2025-06-03T08:00:00.000Z
 tags:
   - git

@@ -1,5 +1,8 @@
 ---
 title: Classes and Inheritance
+description:
+  Classes and Inheritance — Class Declaration; Constructors; No-Arg Constructor;
+  Parameterized Constructor with worked examples and exam-style questions.
 date: 2025-06-05T12:00:00.000Z
 tags: ['java']
 categories: ['java']

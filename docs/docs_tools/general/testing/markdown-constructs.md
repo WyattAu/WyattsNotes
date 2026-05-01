@@ -1,5 +1,8 @@
 ---
 title: Markdown Constructs
+description:
+  Markdown Constructs — Remark Common Plugins; Remark Grid Table; Code Snippets;
+  Math including key definitions, derivations, and problem-solving techniques.
 date: 2025-05-29T19:20:34.906Z
 tags:
   - CS

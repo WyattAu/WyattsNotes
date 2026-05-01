@@ -1,8 +1,8 @@
 ---
 title: Classes and Objects
 description:
-  Classes, constructors, properties, data classes, sealed classes, enums, object declarations, and
-  companion objects.
+  Classes and Objects — Classes; Primary Constructor; Secondary Constructors;
+  Visibility Modifiers with worked examples and exam-style questions.
 slug: classes-and-objects
 date: 2026-04-18
 tags:

@@ -2,7 +2,8 @@
 id: advanced-patterns
 title: Advanced Struct and Enum Patterns
 description:
-  Advanced patterns — newtype, builder, proxy, typestate, enum dispatch, and zero-sized types.
+  Advanced Struct and Enum Patterns — Newtype Pattern; Type Safety Through
+  Wrapping; Memory Layout; `impl Deref` for Transparent Access.
 slug: advanced-patterns
 ---
 

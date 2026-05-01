@@ -1,5 +1,8 @@
 ---
 title: A Level Mathematics Diagnostic Test
+description:
+  A-Level General diagnostic test: Instructions; Pure Mathematics; Algebra and
+  Functions; Sequences, Series, and Binomial Expansion for targeted revision.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

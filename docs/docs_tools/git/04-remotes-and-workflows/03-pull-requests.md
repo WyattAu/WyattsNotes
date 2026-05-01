@@ -1,5 +1,8 @@
 ---
 title: Pull Requests
+description:
+  Pull Requests — What is a Pull Request; Anatomy of a Good Pull Request; Title;
+  Description with worked examples and exam-style questions.
 date: 2025-06-03T15:00:00.000Z
 tags:
   - git

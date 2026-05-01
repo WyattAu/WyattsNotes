@@ -2,8 +2,9 @@
 id: linked-lists-stacks-queues
 title: Linked Lists, Stacks, and Queues
 description:
-  Linear data structures — singly/doubly linked lists, stacks, queues, deques, and their
-  applications.
+  Linked list, stack, and queue fundamentals: singly and doubly linked lists,
+  array-based queues, insertion, deletion, reversal, and cycle detection
+  algorithms.
 slug: linked-lists-stacks-queues
 ---
 

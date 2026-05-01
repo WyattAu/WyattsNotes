@@ -1,5 +1,9 @@
 ---
 title: Statistical Distributions (Extended)
+description:
+  A-Level Mathematics notes on Statistical Distributions (Extended): Statistical
+  Distributions (Extended Treatment); 1. The Binomial Distribution; 1.1
+  Definition.
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

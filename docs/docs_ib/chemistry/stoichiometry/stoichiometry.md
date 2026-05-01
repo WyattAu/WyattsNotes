@@ -1036,4 +1036,6 @@ $$x = \frac{0.183}{0.0261} = 7.01 \approx 7$$
 
 Formula: $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$ (Epsom salt)
 
+For the A-Level treatment of this topic, see [Quantitative Chemistry](https://alevel.wyattau.com/docs/chemistry/quantitative-chemistry).
+
 </details>

@@ -2,7 +2,8 @@
 id: testing
 title: Testing in Java
 description:
-  Java testing — JUnit 5, Mockito, integration testing, test design patterns, and test coverage.
+  Testing in Java — JUnit 5; Core Annotations; Assertions; Test Lifecycle
+  including key definitions, derivations, and problem-solving techniques.
 slug: testing
 ---
 

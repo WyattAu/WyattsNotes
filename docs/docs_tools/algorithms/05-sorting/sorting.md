@@ -2,8 +2,8 @@
 id: sorting
 title: Sorting Algorithms
 description:
-  Sorting — comparison-based (merge, quick, heap) and non-comparison-based (counting, radix, bucket)
-  sorting algorithms.
+  Sorting Algorithms — Sorting Fundamentals; Properties; Comparison Model;
+  Comparison-Based Sorting with worked examples and exam-style questions.
 slug: sorting
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Organic Chemistry
+description:
+  Organic Chemistry — Hydrocarbons; Comparison of Hydrocarbons; IUPAC
+  Nomenclature; Isomerism with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Chemistry

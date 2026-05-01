@@ -1,5 +1,8 @@
 ---
 title: Range Adaptors, Views, and Composition
+description:
+  C++: Range Adaptors, Views, and Composition — Range Adaptors Overview; Lazy
+  Evaluation: Views Are Composable Without Materialization.
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -1,5 +1,8 @@
 ---
 title: Setup Traefik
+description:
+  Setup Traefik — Why Traefik; Prerequisites; Traefik Concepts; Docker Compose
+  Deployment with worked examples and exam-style questions.
 date: 2025-07-21T18:30:46.381Z
 tags:
   - truenas

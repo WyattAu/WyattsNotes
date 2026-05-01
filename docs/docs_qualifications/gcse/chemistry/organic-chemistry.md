@@ -1,5 +1,8 @@
 ---
 title: Organic Chemistry
+description:
+  Organic Chemistry — 1.2 Hydrocarbons; 1.3 Homologous Series; 1.4 Naming
+  Organic Compounds; 2. Alkanes with worked examples and exam-style questions.
 date: 2026-04-14
 tags:
   - Chemistry

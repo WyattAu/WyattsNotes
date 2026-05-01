@@ -2,8 +2,8 @@
 id: http-2-and-3
 title: HTTP/2 and HTTP/3
 description:
-  HTTP/2 and HTTP/3 — multiplexing, header compression, server push, QUIC transport, and migration
-  considerations.
+  HTTP/2 and HTTP/3 — HTTP/2; Binary Framing Layer; Streams and Multiplexing;
+  Flow Control with worked examples and exam-style questions.
 slug: http-2-and-3
 tags:
   - Networking

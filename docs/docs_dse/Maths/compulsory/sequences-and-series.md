@@ -976,3 +976,5 @@ defined sequence.
 
 </details>
 
+For the A-Level treatment of this topic, see [Sequences and Series](https://alevel.wyattau.com/docs/maths/pure-mathematics/sequences-and-series).
+

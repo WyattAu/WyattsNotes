@@ -958,4 +958,6 @@ gaseous particles and thus disorder.
 (c) **Positive** $\Delta S$: An ordered solid lattice breaks apart into freely moving hydrated ions
 in solution, increasing disorder.
 
+For the A-Level treatment of this topic, see [Thermodynamics & Energetics](https://alevel.wyattau.com/docs/chemistry/thermodynamics).
+
 </details>

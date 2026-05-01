@@ -2,8 +2,8 @@
 id: interior-mutability
 title: Interior Mutability
 description:
-  Interior mutability in Rust — Cell, RefCell, UnsafeCell, Mutex, RwLock, and when to break the
-  shared-reference-immutable contract.
+  Interior Mutability — The Shared Reference Contract; `UnsafeCell<T>` — The
+  Primitive; Why `UnsafeCell` Exists; `UnsafeCell` and `Sync`.
 slug: interior-mutability
 ---
 

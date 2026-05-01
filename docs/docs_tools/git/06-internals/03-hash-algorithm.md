@@ -1,5 +1,8 @@
 ---
 title: Hash Algorithm
+description:
+  Hash Algorithm — SHA-1: The Original Hash; SHA-1 Properties; The SHA-1
+  Collision Problem; Git's Defenses Against Collision Attacks.
 date: 2025-06-03T14:00:00.000Z
 tags:
   - git

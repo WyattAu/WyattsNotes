@@ -2,8 +2,9 @@
 id: greedy-algorithms
 title: Greedy Algorithms
 description:
-  Greedy strategies — exchange argument, matroids, scheduling, graph algorithms, and when greedy
-  works vs fails.
+  Greedy algorithm design: the exchange argument, matroid theory, scheduling
+  problems, graph algorithms, and conditions under which greedy strategies are
+  optimal.
 slug: greedy-algorithms
 ---
 

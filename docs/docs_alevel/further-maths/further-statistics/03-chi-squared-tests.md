@@ -1,5 +1,8 @@
 ---
 title: Chi-Squared Tests
+description:
+  A-Level Further Maths notes on Chi-Squared Tests: Board Coverage; 1. The
+  Chi-Squared Distribution; 1.1 Definition; 1.2 Properties.
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

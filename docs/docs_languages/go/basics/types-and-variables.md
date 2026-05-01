@@ -1,6 +1,8 @@
 ---
 title: Types and Variables
-description: Basic types, variables, constants, type conversions, and zero values in Go.
+description:
+  Types and Variables — Integer Types; Integer Overflow; Floating-Point Types;
+  Boolean Type with worked examples and exam-style questions.
 slug: types-and-variables
 date: 2026-04-18
 tags:

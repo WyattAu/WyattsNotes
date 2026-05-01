@@ -1,5 +1,8 @@
 ---
 title: Stash
+description:
+  Stash — Basic Commands; Apply and remove from the stack (LIFO); Drop and
+  Clear;. do other work. with worked examples and exam-style questions.
 date: 2025-06-03T09:00:00.000Z
 tags:
   - git

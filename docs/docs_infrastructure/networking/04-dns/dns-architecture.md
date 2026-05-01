@@ -2,7 +2,8 @@
 id: dns-architecture
 title: DNS Architecture and Operations
 description:
-  DNS infrastructure — zone management, delegation, DNSSEC, anycast, and enterprise DNS design.
+  DNS Architecture and Operations — DNS Infrastructure Components; Registrars;
+  Registries; TLD Operators with worked examples and exam-style questions.
 slug: dns-architecture
 tags:
   - Networking

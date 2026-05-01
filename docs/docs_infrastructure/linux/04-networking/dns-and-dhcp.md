@@ -2,8 +2,9 @@
 id: dns-and-dhcp
 title: DNS and DHCP on Linux
 description:
-  Linux DNS and DHCP — resolv.conf, systemd-resolved, dnsmasq, BIND, DHCP client/server
-  configuration.
+  DNS and DHCP on Linux — DNS Resolution on Linux; /etc/resolv.conf; Search
+  domains appended to unqualified names; Sortlist for address ordering (rarely
+  used).
 slug: dns-and-dhcp
 sidebar_position: 2
 ---

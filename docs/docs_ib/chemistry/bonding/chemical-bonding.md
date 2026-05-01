@@ -1186,4 +1186,6 @@ bond. The remaining unhybridized $p$ orbital on each carbon overlaps side-to-sid
 $120^\circ$, and the entire molecule is planar. The C=C double bond consists of one sigma bond and
 one pi bond. The pi bond restricts rotation about the C=C bond.
 
+For the A-Level treatment of this topic, see [Bonding & Structure](https://alevel.wyattau.com/docs/chemistry/bonding-and-structure).
+
 </details>

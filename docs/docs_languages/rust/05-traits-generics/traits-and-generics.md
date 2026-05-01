@@ -2,8 +2,9 @@
 id: traits-and-generics
 title: Traits and Generics
 description:
-  Rust trait system — trait definitions, implementations, trait objects, generics, bounds, and
-  advanced trait patterns.
+  Traits and Generics — Trait Definition and Implementation; Defining a Trait;
+  Implementing a Trait; Orphan Rule with worked examples and exam-style
+  questions.
 slug: traits-and-generics
 ---
 

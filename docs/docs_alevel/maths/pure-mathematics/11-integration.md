@@ -1,5 +1,8 @@
 ---
 title: Integration
+description:
+  A-Level Mathematics notes on Integration: Board Coverage; 1.1 Definition; 2.
+  The Fundamental Theorem of Calculus; 2.1 Sketch proof of Part 2.
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

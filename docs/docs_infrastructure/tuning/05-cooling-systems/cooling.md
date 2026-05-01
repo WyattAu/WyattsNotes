@@ -2,8 +2,8 @@
 id: cooling
 title: Cooling Systems
 description:
-  Cooling solutions — air cooling, AIO liquid cooling, custom loops, thermal paste, case airflow,
-  and thermal management.
+  Hardware tuning: Cooling Systems — Heat Transfer Fundamentals; Three
+  Mechanisms of Heat Transfer; Thermal Resistance; Thermal Paste.
 slug: cooling
 ---
 

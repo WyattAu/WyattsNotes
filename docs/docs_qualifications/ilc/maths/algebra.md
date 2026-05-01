@@ -1,5 +1,8 @@
 ---
 title: Algebra
+description:
+  Algebra — Expanding and Factorising; Difference of Two Squares (HL); Perfect
+  Square Trinomials (HL); Solving Equations. and examination.
 date: 2026-04-14
 tags:
   - Mathematics

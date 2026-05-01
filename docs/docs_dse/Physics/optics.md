@@ -791,6 +791,8 @@ bends more away from the normal, resulting in greater total deviation.
 *If you get this wrong, revise: Dispersion, Snell's law applied at each prism surface, and how
 refractive index varies with wavelength.*
 
+For the A-Level treatment of this topic, see [Refraction and Total Internal Reflection](https://alevel.wyattau.com/docs/physics/waves/refraction-and-total-internal-reflection).
+
 </details>
 </details>
 

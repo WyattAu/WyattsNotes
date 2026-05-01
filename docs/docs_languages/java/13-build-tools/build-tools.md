@@ -1,7 +1,9 @@
 ---
 id: build-tools
 title: Build Tools and Dependency Management
-description: Java build tools — Maven, Gradle, dependency management, and project structure.
+description:
+  Build Tools and Dependency Management — Project Structure Conventions; Maven;
+  POM Structure; Lifecycle Phases with worked examples and exam-style questions.
 slug: build-tools
 ---
 

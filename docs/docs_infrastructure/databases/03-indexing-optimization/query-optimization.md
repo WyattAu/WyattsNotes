@@ -2,8 +2,8 @@
 id: query-optimization
 title: Query Optimization
 description:
-  Query optimization — execution plans, statistics, join strategies, partitioning, and performance
-  tuning.
+  Query Optimization — Query Optimizer Architecture; Rule-Based vs Cost-Based
+  Optimization; Statistics; Column Statistics.
 slug: query-optimization
 ---
 

@@ -1442,4 +1442,6 @@ $$\lambda = \frac{1}{2.057 \times 10^6} = 4.86 \times 10^{-7}\mathrm{ m} = 486\m
 
 This corresponds to the cyan line in the Balmer series (visible region).
 
+For the A-Level treatment of this topic, see [Atomic Structure & Periodicity](https://alevel.wyattau.com/docs/chemistry/atomic-structure).
+
 </details>

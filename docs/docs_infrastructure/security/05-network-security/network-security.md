@@ -2,8 +2,9 @@
 id: network-security
 title: Network Security
 description:
-  Network security — firewalls, VPNs, network segmentation, intrusion detection, and zero trust
-  networking.
+  Network Security — Firewalls; Firewall Types; Stateful Inspection; nftables
+  example: stateful firewall rules with worked examples and exam-style
+  questions.
 slug: network-security
 sidebar_position: 6
 ---

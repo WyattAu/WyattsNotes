@@ -604,3 +604,5 @@ variance.
 </details>
 </details>
 
+For the A-Level treatment of this topic, see [Data Representation](https://alevel.wyattau.com/docs/maths/statistics/data-representation).
+

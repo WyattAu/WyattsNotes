@@ -1,5 +1,8 @@
 ---
 title: Inheritance, Object Slicing, and Virtual Destructors
+description:
+  C++: Inheritance, Object Slicing, and Virtual Destructors — 2.1 Single and
+  Multiple Inheritance; 2.2 Object Slicing; Formal Definition [N4950 S11.4.5.3].
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

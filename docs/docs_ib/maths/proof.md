@@ -617,3 +617,5 @@ $a = 0$: $1 = 5^b$ is impossible. For $a \ge 1$: even = odd. Contradiction.
 - **Quadratics and factorisation** → Review algebra fundamentals
 - **Function notation and domain** → Review functions topics
 
+For the A-Level treatment of this topic, see [Proof](https://alevel.wyattau.com/docs/maths/pure-mathematics/proof).
+

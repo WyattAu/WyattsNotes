@@ -2,7 +2,8 @@
 id: web-security
 title: Web Security
 description:
-  Web application security — XSS, CSRF, SQL injection, CORS, CSP, and OWASP Top 10 mitigation.
+  Web Security — OWASP Top 10 (2021); Cross-Site Scripting (XSS); Types of XSS;
+  Reflected XSS with worked examples and exam-style questions.
 slug: web-security
 sidebar_position: 5
 ---

@@ -1,5 +1,8 @@
 ---
 title: Cellular Energetics
+description:
+  Cellular Energetics — Cellular Respiration (CED Unit 3) for comprehensive
+  revision and examination preparation. and examination prepara.
 date: 2026-04-14
 tags:
   - Biology

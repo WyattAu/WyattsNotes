@@ -2,8 +2,8 @@
 id: traffic-analysis
 title: Traffic Analysis
 description:
-  Network traffic analysis — tcpdump filters, Wireshark advanced features, NetFlow, and performance
-  monitoring.
+  Traffic Analysis — Packet Capture Methodology; Where to Capture; Cisco IOS
+  SPAN configuration; Capture Point Selection Guide.
 slug: traffic-analysis
 tags:
   - Networking

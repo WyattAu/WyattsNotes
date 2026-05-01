@@ -1,5 +1,8 @@
 ---
 title: State Management
+description:
+  State Management — Why setState Alone Does Not Scale; setState and
+  InheritedWidget; How setState Works; Scope Limitations.
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

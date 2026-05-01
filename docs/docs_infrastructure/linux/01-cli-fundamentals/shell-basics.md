@@ -2,8 +2,8 @@
 id: shell-basics
 title: Shell Basics
 description:
-  POSIX shell fundamentals — command structure, redirection, pipes, globbing, job control, and shell
-  scripting.
+  Shell Basics — Shell Invocation; Interactive vs Non-Interactive; POSIX Shell
+  vs Bash; Command Structure with worked examples and exam-style questions.
 slug: shell-basics
 sidebar_position: 1
 ---
