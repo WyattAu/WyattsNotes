@@ -333,7 +333,7 @@ Net exports $= X - M = 800 - 950 = -\$150$ billion (a trade deficit).
 <details>
 <summary>Problem 2: Inflation Rate Calculation</summary>
 
-The CPI basket costs $\$240$ in year 1 and $\$252$ in year 2. Calculate the inflation rate between
+The CPI basket costs `USD 240` in year 1 and `USD 252` in year 2. Calculate the inflation rate between
 year 1 and year 2.
 
 $$\mathrm{Inflation rate} = \frac{252 - 240}{240} \times 100 = \frac{12}{240} \times 100 = 5\%$$
@@ -345,14 +345,14 @@ The inflation rate is $5\%$.
 <details>
 <summary>Problem 3: Fiscal Multiplier</summary>
 
-The government increases spending by $\$50$ billion. The marginal propensity to consume is $0.8$.
+The government increases spending by `USD 50` billion. The marginal propensity to consume is $0.8$.
 Calculate the total change in national income.
 
 $$k = \frac{1}{1 - \mathrm{MPC}} = \frac{1}{1 - 0.8} = \frac{1}{0.2} = 5$$
 
 $$\Delta Y = k \times \Delta G = 5 \times 50 = \$250 \mathrm{ billion}$$
 
-The total increase in national income is $\$250$ billion.
+The total increase in national income is `USD 250` billion.
 
 </details>
 

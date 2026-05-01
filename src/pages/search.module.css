@@ -1,0 +1,137 @@
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.heading {
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--ifm-color-secondary);
+  margin-bottom: 2rem;
+}
+
+.inputWrapper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ifm-color-secondary);
+  pointer-events: none;
+}
+
+.loadingIndicator {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ifm-color-secondary);
+  font-size: 0.85rem;
+}
+
+.errorBox {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-danger);
+  color: var(--ifm-color-danger);
+  background: var(--ifm-color-danger-contrast-background);
+}
+
+.noResults {
+  color: var(--ifm-color-secondary);
+  text-align: center;
+  padding: 2rem;
+}
+
+.resultsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.resultCard {
+  display: block;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.cardLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  color: var(--ifm-color-secondary);
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.cardSnippet {
+  font-size: 0.85rem;
+  color: var(--ifm-color-secondary);
+  line-height: 1.5;
+}
+
+.indexGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.indexCard {
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.indexCardTitle {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.indexCardSubtitle {
+  font-size: 0.85rem;
+  color: var(--ifm-color-secondary);
+}

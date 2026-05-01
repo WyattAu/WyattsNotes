@@ -125,7 +125,7 @@ The Von Neumann architecture defines a computer system with:
 2. **CPU** consisting of ALU, CU, and registers.
 3. **System bus** connecting CPU, memory, and I/O devices.
 
-```
+```python
           +---------+
           |   CPU   |
           | +-----+ |

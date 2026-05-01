@@ -327,8 +327,8 @@ relatively worse off in its trade relationships.
 <details>
 <summary>Problem 3: Balance of Payments Identity</summary>
 
-A country has a current account deficit of $\$40$ billion, a capital account surplus of $\$2$
-billion, and net errors and omissions of $\$1$ billion. Calculate the financial account balance.
+A country has a current account deficit of `USD 40` billion, a capital account surplus of `USD 2`
+billion, and net errors and omissions of `USD 1` billion. Calculate the financial account balance.
 
 $$\mathrm{Current Account} + \mathrm{Capital Account} + \mathrm{Financial Account} + \mathrm{Errors} = 0$$
 
@@ -336,7 +336,7 @@ $$-40 + 2 + \mathrm{Financial Account} + 1 = 0$$
 
 $$\mathrm{Financial Account} = 40 - 2 - 1 = \$37 \mathrm{ billion surplus}$$
 
-The financial account surplus of $\$37$ billion represents net capital inflows that finance the
+The financial account surplus of `USD 37` billion represents net capital inflows that finance the
 current account deficit.
 
 </details>
@@ -344,16 +344,16 @@ current account deficit.
 <details>
 <summary>Problem 4: Exchange Rate Effect</summary>
 
-The exchange rate between the euro and the US dollar changes from $\$1.10$ per euro to $\$1.20$ per
+The exchange rate between the euro and the US dollar changes from `USD 1.10` per euro to `USD 1.20` per
 euro. Explain the impact on European exporters and American tourists visiting Europe.
 
-The euro has **appreciated** against the dollar (from $\$1.10$ to $\$1.20$).
+The euro has **appreciated** against the dollar (from `USD 1.10` to `USD 1.20`).
 
 For European exporters selling to the US: their goods become more expensive for American buyers (a
-product priced at $100$ euros now costs $\$120$ instead of $\$110$). Export volumes are likely to
+product priced at $100$ euros now costs `USD 120` instead of `USD 110`). Export volumes are likely to
 fall, reducing European export revenue.
 
-For American tourists: their dollars buy fewer euros ($\$1$ now buys approximately $0.833$ euros
+For American tourists: their dollars buy fewer euros (`USD 1` now buys approximately $0.833$ euros
 instead of $0.909$ euros). The cost of European goods, accommodation, and services increases for
 American tourists, potentially reducing tourism demand.
 
@@ -363,17 +363,17 @@ American tourists, potentially reducing tourism demand.
 <summary>Problem 5: Trade Creation vs. Trade Diversion</summary>
 
 Country A forms a customs union with Country B. Before the union, Country A imported a good at
-$\$10$ from Country C (the most efficient global producer), with a $\$3$ tariff. Country B produces
-the good at $\$11$. After the union, the tariff is removed on imports from B but retained on imports
+`USD 10` from Country C (the most efficient global producer), with a `USD 3` tariff. Country B produces
+the good at `USD 11`. After the union, the tariff is removed on imports from B but retained on imports
 from C. Analyse the welfare effects.
 
 Before the union: the domestic price in A is $\$10 + \$3 = \$13$. Imports come from C.
 
-After the union: imports from B cost $\$11$ (no tariff); imports from C still cost $\$13$ (with
-$\$3$ tariff). Country A now imports from B at $\$11$ instead of C at $\$13$.
+After the union: imports from B cost `USD 11` (no tariff); imports from C still cost `USD 13` (with
+`USD 3` tariff). Country A now imports from B at `USD 11` instead of C at `USD 13`.
 
-This is **trade diversion**: production shifts from the more efficient producer (C at $\$10$) to the
-less efficient producer (B at $\$11$). Although the domestic price falls from $\$13$ to $\$11$ (a
+This is **trade diversion**: production shifts from the more efficient producer (C at `USD 10`) to the
+less efficient producer (B at `USD 11`). Although the domestic price falls from `USD 13` to `USD 11` (a
 consumer benefit), the world as a whole becomes less efficient because resources are allocated to
 the higher-cost producer.
 

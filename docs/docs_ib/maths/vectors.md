@@ -404,9 +404,9 @@ $\mathbf{r}_2 = (4, 0, 3) + t(1, 1, -2)$, or show that they are skew.
 
 Equating components:
 
-$$1 + 3s = 4 + t \quad \text{(1)}$$
-$$2 - 2s = 0 + t \quad \text{(2)}$$
-$$-1 + s = 3 - 2t \quad \text{(3)}$$
+$$1 + 3s = 4 + t \quad \mathrm{(1)}$$
+$$2 - 2s = 0 + t \quad \mathrm{(2)}$$
+$$-1 + s = 3 - 2t \quad \mathrm{(3)}$$
 
 From (2): $t = 2 - 2s$.
 

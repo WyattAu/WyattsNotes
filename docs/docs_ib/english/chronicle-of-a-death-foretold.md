@@ -575,7 +575,7 @@ thematics of purity, honour, and death into a single visual motif.
 A strong Paper 2 thesis for Chronicle should identify a technique, its effect, and its thematic
 significance. Use the following formula as a starting point:
 
-```
+```text
 Garcia Marquez uses [technique] to [effect] in order to [comment on theme].
 ```
 
@@ -636,7 +636,7 @@ collective mechanisms of honour, religion, and institutional authority in Santia
 | 4         | The narrator's unreliability as mirror of collective guilt | The narrator's friendship with Santiago biases his account                 |
 
 For further guidance on Paper 2 structure and assessment criteria, see
-[ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques.md).
+[ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques).
 
 ---
 
@@ -777,6 +777,6 @@ expectations."**
 
 :::tip When practising these questions, write under timed conditions. For SL, aim for a complete
 essay in 55 minutes. For HL, aim for 100 minutes to allow for integration of a third text. See
-[ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques.md) for detailed time
+[ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques) for detailed time
 management strategies.
 :::

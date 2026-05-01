@@ -795,7 +795,7 @@ the resulting tree and state the in-order traversal.
 <details>
 <summary>Solution</summary>
 
-```
+```python
         8
        / \
       3   10

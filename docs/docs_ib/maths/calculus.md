@@ -249,14 +249,14 @@ $$A = \int_a^b \bigl[f(x) - g(x)\bigr]\,dx$$
 
 | $f(x)$                      | $\displaystyle\int f(x)\,dx$            |
 | :-------------------------- | :-------------------------------------- | --- | ---- |
-| $x^n$                       | $\dfrac{x^{n+1}}{n+1} + C, \; n \ne -1$ |
+| $x^n$                       | $\dfrac{x^{n+1}}{n+1} + C, \; n \ne -1$ | | |
 | $\dfrac{1}{x}$              | $\ln                                    | x   | + C$ |
-| $e^x$                       | $e^x + C$                               |
-| $\sin x$                    | $-\cos x + C$                           |
-| $\cos x$                    | $\sin x + C$                            |
-| $\sec^2 x$                  | $\tan x + C$                            |
-| $\dfrac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$                         |
-| $\dfrac{1}{1 + x^2}$        | $\arctan x + C$                         |
+| $e^x$                       | $e^x + C$                               | | |
+| $\sin x$                    | $-\cos x + C$                           | | |
+| $\cos x$                    | $\sin x + C$                            | | |
+| $\sec^2 x$                  | $\tan x + C$                            | | |
+| $\dfrac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$                         | | |
+| $\dfrac{1}{1 + x^2}$        | $\arctan x + C$                         | | |
 
 ---
 

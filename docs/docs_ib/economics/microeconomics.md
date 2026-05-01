@@ -279,9 +279,9 @@ than improving it. Causes include:
 <details>
 <summary>Problem 1: PED and Total Revenue</summary>
 
-A cinema currently charges $\$12$ per ticket and sells $500$ tickets per day. The price elasticity
+A cinema currently charges `USD 12` per ticket and sells $500$ tickets per day. The price elasticity
 of demand for cinema tickets is estimated at $-1.5$. If the cinema reduces the ticket price to
-$\$10$, calculate the change in total revenue.
+`USD 10`, calculate the change in total revenue.
 
 Since $\|\mathrm{PED}\| = 1.5 > 1$, demand is elastic, so a price decrease should increase total
 revenue.
@@ -302,20 +302,20 @@ Old total revenue $= 12 \times 500 = \$6000$
 
 New total revenue $= 10 \times 625 = \$6250$
 
-The change in total revenue is an increase of $\$250$.
+The change in total revenue is an increase of `USD 250`.
 
 </details>
 
 <details>
 <summary>Problem 2: Negative Externality Diagram Analysis</summary>
 
-A chemical factory produces pollution with a marginal external cost of $\$8$ per unit at the current
-output level of $1000$ units. The market price is $\$20$ per unit, and the marginal private cost at
-this output is also $\$20$. Calculate the marginal social cost and explain the market failure.
+A chemical factory produces pollution with a marginal external cost of `USD 8` per unit at the current
+output level of $1000$ units. The market price is `USD 20` per unit, and the marginal private cost at
+this output is also `USD 20`. Calculate the marginal social cost and explain the market failure.
 
 $\mathrm{MSC} = \mathrm{MPC} + \mathrm{MEC} = 20 + 8 = \$28$
 
-Since MSC ($\$28$) exceeds the market price ($\$20$), the factory is overproducing. Each unit beyond
+Since MSC (`USD 28`) exceeds the market price (`USD 20`), the factory is overproducing. Each unit beyond
 the socially optimal output level creates a net social loss equal to MSC minus the price. The
 deadweight loss is the area of the triangle between the MSC and MSB curves from the socially optimal
 quantity to the actual quantity.
@@ -329,7 +329,7 @@ is where MSC $= \$20$, which is below the current $1000$ units.
 <summary>Problem 3: Tax Incidence</summary>
 
 The demand for cigarettes has a PED of $-0.4$, and the supply has a PES of $1.2$. The government
-imposes a specific tax of $\$2$ per pack. Explain how the tax burden is distributed between
+imposes a specific tax of `USD 2` per pack. Explain how the tax burden is distributed between
 consumers and producers.
 
 The relative tax burden depends on the relative elasticities:
@@ -338,9 +338,9 @@ $$\frac{\mathrm{Consumer burden}}{\mathrm{Producer burden}} = \frac{\mathrm{PES}
 
 Consumers bear three times as much of the tax burden as producers. Since demand is inelastic
 ($|\mathrm{PED}| = 0.4$) and supply is elastic ($\mathrm{PES} = 1.2$), consumers bear a larger
-proportion of the tax. Specifically, consumers bear $75\%$ and producers bear $25\%$ of the $\$2$
-tax, meaning the price paid by consumers rises by $\$1.50$ and the price received by producers falls
-by $\$0.50$.
+proportion of the tax. Specifically, consumers bear $75\%$ and producers bear $25\%$ of the `USD 2`
+tax, meaning the price paid by consumers rises by `USD 1.50` and the price received by producers falls
+by `USD 0.50`.
 
 </details>
 
@@ -369,8 +369,8 @@ during extreme events.
 <details>
 <summary>Problem 5: Subsidy Welfare Analysis</summary>
 
-The government provides a $\$5$ per unit subsidy on solar panels. Before the subsidy, the
-equilibrium price was $\$100$ and the equilibrium quantity was $10000$ units. After the subsidy, the
+The government provides a `USD 5` per unit subsidy on solar panels. Before the subsidy, the
+equilibrium price was `USD 100` and the equilibrium quantity was $10000$ units. After the subsidy, the
 quantity increases to $14000$ units. Calculate the total cost of the subsidy to the government and
 discuss potential government failures.
 

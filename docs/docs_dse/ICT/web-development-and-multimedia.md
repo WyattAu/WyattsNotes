@@ -240,7 +240,7 @@ CSS selectors determine which HTML elements are targeted by style rules.
 
 The CSS box model describes how every HTML element is rendered as a rectangular box.
 
-```
+```python
 +--------------------------------------------------+
 |                   margin                          |
 |  +--------------------------------------------+  |

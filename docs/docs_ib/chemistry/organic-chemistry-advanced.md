@@ -559,7 +559,7 @@ $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$
 Wait --- let me recount. Each repeat consumes one diol ($\mathrm{C}_3\mathrm{H}_8\mathrm{O}_2$)
 and one diacid ($\mathrm{C}_4\mathrm{H}_6\mathrm{O}_4$):
 
-$$\mathrm{C}_3\mathrm{H}_8\mathrm{O}_2 + \mathrm{C}_4\mathrm{H}_6\mathrm{O}_4 \to \mathrm{C}_7\mathrm{H}_{12}\mathrm{O}_4 \text{(repeating unit)} + 2\mathrm{H_2O}$$
+$$\mathrm{C}_3\mathrm{H}_8\mathrm{O}_2 + \mathrm{C}_4\mathrm{H}_6\mathrm{O}_4 \to \mathrm{C}_7\mathrm{H}_{12}\mathrm{O}_4 \mathrm{(repeating unit)} + 2\mathrm{H_2O}$$
 
 Check atoms: LHS = $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}_6$. RHS = $\mathrm{C}_7\mathrm{H}_{12}\mathrm{O}_4 + \mathrm{H_4}\mathrm{O}_2 = \mathrm{C}_7\mathrm{H}_{16}\mathrm{O}_6$.
 

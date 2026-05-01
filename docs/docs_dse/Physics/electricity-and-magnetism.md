@@ -566,7 +566,7 @@ $$\mathrm{Efficiency} = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}} \times 100\% = 
 ### Worked Example 6
 
 A $2 \mathrm{ kW}$ electric heater is used for $3$ hours per day. If the electricity rate is
-$\$0.90$ per kWh, find the daily cost and the total energy consumed in one month (30 days).
+`USD 0.90` per kWh, find the daily cost and the total energy consumed in one month (30 days).
 
 <details>
 <summary>Solution</summary>
@@ -941,7 +941,7 @@ The force is repulsive since both charges are positive.
 
 **Question 2:** A $2000 \mathrm{ W}$ heater, a $100 \mathrm{ W}$ lamp, and a $500 \mathrm{ W}$ fan
 are connected in parallel across a $220 \mathrm{ V}$ mains supply. Find the total current drawn and
-the total cost of running them for 5 hours at $\$0.90$ per kWh.
+the total cost of running them for 5 hours at `USD 0.90` per kWh.
 
 <details>
 <summary>Solution</summary>

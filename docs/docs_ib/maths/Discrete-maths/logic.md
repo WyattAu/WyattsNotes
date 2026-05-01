@@ -541,10 +541,10 @@ non-negative reals.
 
 | Case | $x$  | $y$  | $xy$  | $    | xy               | $   | $   | x   | \,  | y   | $   |
 | ---- | ---- | ---- | ----- | ---- | ---------------- | --- | --- | --- | --- | --- | --- |
-| 1    | $a$  | $b$  | $ab$  | $ab$ | $a \cdot b = ab$ |
-| 2    | $a$  | $-b$ | $-ab$ | $ab$ | $a \cdot b = ab$ |
-| 3    | $-a$ | $b$  | $-ab$ | $ab$ | $a \cdot b = ab$ |
-| 4    | $-a$ | $-b$ | $ab$  | $ab$ | $a \cdot b = ab$ |
+| 1    | $a$  | $b$  | $ab$  | $ab$ | $a \cdot b = ab$ | | | | | | |
+| 2    | $a$  | $-b$ | $-ab$ | $ab$ | $a \cdot b = ab$ | | | | | | |
+| 3    | $-a$ | $b$  | $-ab$ | $ab$ | $a \cdot b = ab$ | | | | | | |
+| 4    | $-a$ | $-b$ | $ab$  | $ab$ | $a \cdot b = ab$ | | | | | | |
 
 In all four cases $|xy| = |x|\,|y|$. $\square$
 
@@ -579,9 +579,9 @@ then $b = c$.
 
 **Error 2:** "If $\sin A = \sin B$, then $A = B$."
 
-Counterexample: $\sin 30° = \sin 150° = 0.5$, but $30° \neq 150^\circ$. The correct statement is: if
-$\sin A = \sin B$ and $A, B \in [-90°, 90°]$, then $A = B$. In general, $\sin A = \sin B$ implies
-$A = B + 360°k$ or $A = 180° - B + 360°k$ for some integer $k$.
+Counterexample: $\sin 30^{\circ} = \sin 150^{\circ} = 0.5$, but $30^{\circ} \neq 150^\circ$. The correct statement is: if
+$\sin A = \sin B$ and $A, B \in [-90^{\circ}, 90^{\circ}]$, then $A = B$. In general, $\sin A = \sin B$ implies
+$A = B + 360^{\circ}k$ or $A = 180^{\circ} - B + 360^{\circ}k$ for some integer $k$.
 
 **Other common errors:**
 

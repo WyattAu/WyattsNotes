@@ -133,7 +133,7 @@ All data in a computer is represented using binary digits (bits) — 0s and 1s.
 
 **Addition**:
 
-```
+```python
   00101011  (43)
 + 00011101  (29)
 -----------
@@ -142,7 +142,7 @@ All data in a computer is represented using binary digits (bits) — 0s and 1s.
 
 **Addition with overflow** (carry beyond available bits):
 
-```
+```python
   11010110  (-42 in two's complement)
 + 11100111  (-25 in two's complement)
 -----------
@@ -239,7 +239,7 @@ Hexadecimal (base 16) is used as a shorthand for binary. Each hex digit represen
 
 A half adder adds two single bits and produces a sum and a carry:
 
-```
+```python
 Sum = A XOR B
 Carry = A AND B
 ```
@@ -253,7 +253,7 @@ Carry = A AND B
 
 A **full adder** extends this by including a carry-in from the previous stage:
 
-```
+```python
 Sum = A XOR B XOR CarryIn
 CarryOut = (A AND B) OR (CarryIn AND (A XOR B))
 ```
@@ -540,7 +540,7 @@ starting the next, each stage processes a different instruction simultaneously.
 
 Without pipelining, executing 3 instructions takes 9 clock cycles (3 cycles each):
 
-```
+```python
 Clock:   1   2   3   4   5   6   7   8   9
 Inst 1:  F   D   E
 Inst 2:              F   D   E
@@ -549,7 +549,7 @@ Inst 3:                          F   D   E
 
 With pipelining, 3 instructions take only 5 clock cycles:
 
-```
+```python
 Clock:   1   2   3   4   5
 Inst 1:  F   D   E
 Inst 2:      F   D   E

@@ -189,7 +189,7 @@ shape remains the same at the same temperature.
 
 ### Exothermic Reaction (Uncatalysed)
 
-```
+```text
 Energy
   |          /\
   |         /  \  Transition state
@@ -206,7 +206,7 @@ Energy
 
 ### Endothermic Reaction (Uncatalysed)
 
-```
+```text
 Energy
   |         /\
   |        /  \  Transition state

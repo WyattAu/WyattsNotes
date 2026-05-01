@@ -11,7 +11,7 @@ categories:
 slug: dse-maths-compulsory-functions-advanced
 ---
 
-This note extends the treatment of functions covered in [functions.md](./functions.md), focusing on
+This note extends the treatment of functions covered in [functions.md](./functions), focusing on
 domain restrictions, composite and inverse functions with non-trivial domains, and graphical
 transformations.
 
@@ -123,8 +123,8 @@ Given $y = f(x)$:
 
 | Transformation | Effect on Graph                                               |
 | -------------- | ------------------------------------------------------------- | --- | ----------------------------------- |
-| $y = f(x) + c$ | Vertical shift up by $c$ ($c \gt 0$) or down ($c \lt 0$)      |
-| $y = f(x - h)$ | Horizontal shift right by $h$ ($h \gt 0$) or left ($h \lt 0$) |
+| $y = f(x) + c$ | Vertical shift up by $c$ ($c \gt 0$) or down ($c \lt 0$)      | | |
+| $y = f(x - h)$ | Horizontal shift right by $h$ ($h \gt 0$) or left ($h \lt 0$) | | |
 | $y = af(x)$    | Vertical stretch by factor $                                  | a   | $; reflect in $x$-axis if $a \lt 0$ |
 | $y = f(kx)$    | Horizontal stretch by factor $1/                              | k   | $; reflect in $y$-axis if $k \lt 0$ |
 
@@ -586,8 +586,8 @@ Verification: $(f \circ h)(x) = 2\!\left(x + \dfrac{3}{2}\right) - 1 = 2x + 2$. 
 
 ## Cross-References
 
-- **Basic Functions:** Foundational definitions and notation are in [functions.md](./functions.md).
-- **Quadratics:** Quadratic functions feature heavily in inverse function problems. See [quadratics.md](./quadratics.md).
+- **Basic Functions:** Foundational definitions and notation are in [functions.md](./functions).
+- **Quadratics:** Quadratic functions feature heavily in inverse function problems. See [quadratics.md](./quadratics).
 - **Inequalities:** Domain restrictions often involve solving inequalities. See the inequalities notes.
-- **Coordinate Geometry:** Graphical interpretations of functions and transformations. See [coordinate-geometry.md](./coordinate-geometry.md).
+- **Coordinate Geometry:** Graphical interpretations of functions and transformations. See [coordinate-geometry.md](./coordinate-geometry).
 

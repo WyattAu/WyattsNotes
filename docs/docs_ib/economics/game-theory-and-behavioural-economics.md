@@ -208,7 +208,7 @@ potential losses and gains:
 1. **Reference dependence**: people evaluate outcomes relative to a reference point (usually the
    status quo), not in absolute terms
 2. **Loss aversion**: losses loom larger than equivalent gains. The psychological pain of losing
-   $\$100$ is approximately twice the pleasure of gaining $\$100$
+   `USD 100` is approximately twice the pleasure of gaining `USD 100`
 3. **Diminishing sensitivity**: the marginal impact of gains and losses decreases with distance from
    the reference point
 4. **Probability weighting**: people overweight small probabilities and underweight
@@ -394,17 +394,17 @@ Loss aversion also plays a role: the word "losing" activates a stronger emotiona
 <details>
 <summary>Problem 4: Present Bias and Saving</summary>
 
-A person is offered a choice: $\$100$ today or $\$120$ in one month. Most people choose $\$100$
-today. However, when offered $\$100$ in 12 months or $\$120$ in 13 months, most people choose
-$\$120$ in 13 months. Explain this inconsistency using behavioural economics.
+A person is offered a choice: `USD 100` today or `USD 120` in one month. Most people choose `USD 100`
+today. However, when offered `USD 100` in 12 months or `USD 120` in 13 months, most people choose
+`USD 120` in 13 months. Explain this inconsistency using behavioural economics.
 
 This pattern is explained by **present bias** (or hyperbolic discounting). When the reward is
-immediate, the person heavily discounts the future one-month delay, preferring $\$100$ now. But when
+immediate, the person heavily discounts the future one-month delay, preferring `USD 100` now. But when
 both options are in the future, the one-month difference feels much less significant, and the person
 is more patient.
 
 With exponential discounting at a constant rate, the preference should be consistent: if you prefer
-$\$100$ today over $\$120$ in a month, you should also prefer $\$100$ in 12 months over $\$120$ in
+`USD 100` today over `USD 120` in a month, you should also prefer `USD 100` in 12 months over `USD 120` in
 13 months (since the trade-off is identical). The inconsistency reveals that the discount rate is
 not constant — it is much higher for immediate trade-offs than for future ones.
 

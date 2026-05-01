@@ -24,7 +24,7 @@ Since the circumference of a circle is $2\pi r$, a full revolution is $2\pi$ rad
 ### Conversion Between Degrees and Radians
 
 $$
-\pi \mathrm{ rad} = 180°
+\pi \mathrm{ rad} = 180^{\circ}
 $$
 
 To convert from degrees to radians:
@@ -389,7 +389,7 @@ $$
 **Solution:**
 
 $$
-b = \frac{8\sin 30°}{\sin 45°} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
+b = \frac{8\sin 30^{\circ}}{\sin 45^{\circ}} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
 $$
 
 ### Worked Example: Cosine Rule
@@ -403,7 +403,7 @@ $$
 $$
 
 $$
-C = \arccos\left(\frac{1}{7}\right) \approx 81.8°
+C = \arccos\left(\frac{1}{7}\right) \approx 81.8^{\circ}
 $$
 
 ## Ambiguous Case of the Sine Rule
@@ -425,7 +425,7 @@ Given sides $a$ and $b$ and angle $A$ (where $a$ is opposite $A$):
 When $\sin B = k$ where $0 \lt k \lt 1$, there are two possible values for $B$:
 
 $$
-B_1 = \arcsin(k) \quad \mathrm{and} \quad B_2 = 180° - \arcsin(k)
+B_1 = \arcsin(k) \quad \mathrm{and} \quad B_2 = 180^{\circ} - \arcsin(k)
 $$
 
 Both may be valid since $B_1 + B_2 = 180^\circ$ (so if $A + B_1 \lt 180^\circ$, check whether
@@ -440,22 +440,22 @@ $A + B_2 \lt 180^\circ$ as well).
 Using the sine rule:
 
 $$
-\frac{\sin B}{10} = \frac{\sin 40°}{7} \implies \sin B = \frac{10\sin 40°}{7} \approx 0.919
+\frac{\sin B}{10} = \frac{\sin 40^{\circ}}{7} \implies \sin B = \frac{10\sin 40^{\circ}}{7} \approx 0.919
 $$
 
 Since $0 \lt 0.919 \lt 1$, there are two possible values for $B$:
 
 $$
-B_1 = \arcsin(0.919) \approx 66.8°, \quad B_2 = 180° - 66.8° = 113.2°
+B_1 = \arcsin(0.919) \approx 66.8^{\circ}, \quad B_2 = 180^{\circ} - 66.8^{\circ} = 113.2^{\circ}
 $$
 
-Check both: $A + B_1 = 106.8° \lt 180^\circ$ and $A + B_2 = 153.2° \lt 180^\circ$. Both are valid.
+Check both: $A + B_1 = 106.8^{\circ} \lt 180^\circ$ and $A + B_2 = 153.2^{\circ} \lt 180^\circ$. Both are valid.
 
 **Triangle 1:** $B = 66.8^\circ$, $C = 73.2^\circ$,
-$c_1 = \frac{7\sin 73.2°}{\sin 40°} \approx 10.4$
+$c_1 = \frac{7\sin 73.2^{\circ}}{\sin 40^{\circ}} \approx 10.4$
 
 **Triangle 2:** $B = 113.2^\circ$, $C = 26.8^\circ$,
-$c_2 = \frac{7\sin 26.8°}{\sin 40°} \approx 4.89$
+$c_2 = \frac{7\sin 26.8^{\circ}}{\sin 40^{\circ}} \approx 4.89$
 
 ## Non-Right-Angled Triangle Problems
 
@@ -476,13 +476,13 @@ $c_2 = \frac{7\sin 26.8°}{\sin 40°} \approx 4.89$
 Find angle $B$ using the sine rule:
 
 $$
-\frac{\sin B}{8} = \frac{\sin 65°}{12} \implies \sin B = \frac{2\sin 65°}{3} \approx 0.604
+\frac{\sin B}{8} = \frac{\sin 65^{\circ}}{12} \implies \sin B = \frac{2\sin 65^{\circ}}{3} \approx 0.604
 $$
 
 Since $b \lt a$, there is only one solution: $B \approx 37.2^\circ$, so $C = 77.8^\circ$.
 
 $$
-\mathrm{Area} = \frac{1}{2}(12)(8)\sin 77.8° \approx 47.0 \mathrm{ square units}
+\mathrm{Area} = \frac{1}{2}(12)(8)\sin 77.8^{\circ} \approx 47.0 \mathrm{ square units}
 $$
 
 ### Worked Example: Bearing Problem
@@ -493,22 +493,22 @@ $A$.
 
 **Solution:**
 
-The angle at $B$ is the change in bearing: $110° - 050° = 60^\circ$. The interior angle at $B$ is
-$180° - 60° = 120^\circ$.
+The angle at $B$ is the change in bearing: $110^{\circ} - 050^{\circ} = 60^\circ$. The interior angle at $B$ is
+$180^{\circ} - 60^{\circ} = 120^\circ$.
 
 Using the cosine rule:
 
 $$
-AC = \sqrt{15^2 + 20^2 - 2(15)(20)\cos 120°} = \sqrt{225 + 400 + 300} = \sqrt{925} = 5\sqrt{37} \approx 30.4 \mathrm{ km}
+AC = \sqrt{15^2 + 20^2 - 2(15)(20)\cos 120^{\circ}} = \sqrt{225 + 400 + 300} = \sqrt{925} = 5\sqrt{37} \approx 30.4 \mathrm{ km}
 $$
 
 To find the bearing, find angle $C$:
 
 $$
-\frac{\sin C}{15} = \frac{\sin 120°}{5\sqrt{37}} \implies C \approx 25.3°
+\frac{\sin C}{15} = \frac{\sin 120^{\circ}}{5\sqrt{37}} \implies C \approx 25.3^{\circ}
 $$
 
-The bearing from $C$ to $A$ is $360° - 110° - 25.3° \approx 225^\circ$.
+The bearing from $C$ to $A$ is $360^{\circ} - 110^{\circ} - 25.3^{\circ} \approx 225^\circ$.
 
 ## Solving Trigonometric Equations
 
@@ -671,7 +671,7 @@ between a sloping edge and the base.
 The distance from the centre of the base to a vertex is $\frac{6\sqrt{2}}{2} = 3\sqrt{2}$ cm.
 
 $$
-\theta = \arctan\left(\frac{4}{3\sqrt{2}}\right) = \arctan\left(\frac{2\sqrt{2}}{3}\right) \approx 43.3°
+\theta = \arctan\left(\frac{4}{3\sqrt{2}}\right) = \arctan\left(\frac{2\sqrt{2}}{3}\right) \approx 43.3^{\circ}
 $$
 
 ## Trigonometric Proof Strategies
@@ -758,7 +758,7 @@ incorrectly write a minus sign here.
 ### Ambiguous Case of the Sine Rule
 
 When using the sine rule with SSA data, always check whether two triangles are possible. If
-$\sin B = k$ with $0 \lt k \lt 1$ and $B$ is acute, then $180° - B$ may also be valid.
+$\sin B = k$ with $0 \lt k \lt 1$ and $B$ is acute, then $180^{\circ} - B$ may also be valid.
 
 ### Domain of Inverse Functions
 
@@ -855,7 +855,7 @@ $$
 $$
 
 $$
-R = \arccos\frac{5}{13} \approx 67.4°
+R = \arccos\frac{5}{13} \approx 67.4^{\circ}
 $$
 
 </details>
@@ -918,13 +918,13 @@ $$
 $$
 
 $$
-\theta = \arcsin\frac{3\sqrt{2}}{10} \approx 25.1°
+\theta = \arcsin\frac{3\sqrt{2}}{10} \approx 25.1^{\circ}
 $$
 
 Alternatively, using the tangent:
 
 $$
-\tan\theta = \frac{3}{\sqrt{41}} \implies \theta = \arctan\frac{3}{\sqrt{41}} \approx 25.1°
+\tan\theta = \frac{3}{\sqrt{41}} \implies \theta = \arctan\frac{3}{\sqrt{41}} \approx 25.1^{\circ}
 $$
 
 </details>

@@ -508,7 +508,7 @@ $f^{-1}(x)$.
 
 This paper tests your algebraic fluency and conceptual understanding. Key strategies:
 
-- **Memorise exact values:** $\sin 30° = 1/2$, $\cos 60° = 1/2$, $\tan 45° = 1$, $\sin 0 = 0$,
+- **Memorise exact values:** $\sin 30^{\circ} = 1/2$, $\cos 60^{\circ} = 1/2$, $\tan 45^{\circ} = 1$, $\sin 0 = 0$,
   $\cos 0 = 1$, etc.
 - **Practise algebraic manipulation:** Partial fractions, simplifying expressions, solving equations
   without a calculator.

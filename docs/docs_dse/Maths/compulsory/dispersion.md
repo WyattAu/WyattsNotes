@@ -14,7 +14,7 @@ Statistics is the branch of mathematics concerned with the collection, organisat
 interpretation of data. In the DSE compulsory syllabus, we focus on **descriptive statistics** --
 summarising a dataset through measures of central tendency and measures of dispersion. This page
 also covers grouped data techniques and graphical representations such as box-and-whisker plots.
-These tools are frequently combined with [probability](./probability.md) concepts in exam questions.
+These tools are frequently combined with [probability](./probability) concepts in exam questions.
 
 ## Measures of Central Tendency
 
@@ -574,7 +574,7 @@ the computational formula.
 
 11. **Question:** The weekly wages (in dollars) of $8$ workers in a small factory are
 $3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000$. The factory owner claims the average wage is
-$\$5150$. Is this claim misleading? Explain using an appropriate measure of central tendency and
+`USD 5150`. Is this claim misleading? Explain using an appropriate measure of central tendency and
 dispersion.
 <details>
 <summary>Answer</summary>
@@ -583,7 +583,7 @@ dispersion.
 - Sorted: $\{3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000\}$.
 - Median: $\frac{4200+4500}{2} = 4350$.
 - The median ($4350$) is a far more representative measure here. The single extreme value of
-  $\$12000$ (likely the owner's own salary or a manager's) inflates the mean by $\$800$. The median
+  `USD 12000` (likely the owner's own salary or a manager's) inflates the mean by `USD 800`. The median
   is resistant to outliers and better reflects what a typical worker earns.
 - The range ($12000 - 3200 = 8800$) and the large gap between the mean and median both indicate
 significant skewness, confirming the mean is a poor choice of summary statistic.

@@ -76,21 +76,21 @@ $$
 
 | $f(x)$                     | $\int f(x)\,dx$                              |
 | -------------------------- | -------------------------------------------- | ------ | ---- |
-| $k$                        | $kx + C$                                     |
-| $x^n$                      | $\dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)$ |
+| $k$                        | $kx + C$                                     | | |
+| $x^n$                      | $\dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)$ | | |
 | $\dfrac{1}{x}$             | $\ln                                         | x      | + C$ |
-| $e^x$                      | $e^x + C$                                    |
-| $a^x$                      | $\dfrac{a^x}{\ln a} + C$                     |
-| $\sin x$                   | $-\cos x + C$                                |
-| $\cos x$                   | $\sin x + C$                                 |
-| $\sec^2 x$                 | $\tan x + C$                                 |
-| $\csc^2 x$                 | $-\cot x + C$                                |
-| $\sec x \tan x$            | $\sec x + C$                                 |
-| $\csc x \cot x$            | $-\csc x + C$                                |
+| $e^x$                      | $e^x + C$                                    | | |
+| $a^x$                      | $\dfrac{a^x}{\ln a} + C$                     | | |
+| $\sin x$                   | $-\cos x + C$                                | | |
+| $\cos x$                   | $\sin x + C$                                 | | |
+| $\sec^2 x$                 | $\tan x + C$                                 | | |
+| $\csc^2 x$                 | $-\cot x + C$                                | | |
+| $\sec x \tan x$            | $\sec x + C$                                 | | |
+| $\csc x \cot x$            | $-\csc x + C$                                | | |
 | $\tan x$                   | $\ln                                         | \sec x | + C$ |
 | $\cot x$                   | $\ln                                         | \sin x | + C$ |
-| $\frac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$                              |
-| $\frac{1}{1 + x^2}$        | $\arctan x + C$                              |
+| $\frac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$                              | | |
+| $\frac{1}{1 + x^2}$        | $\arctan x + C$                              | | |
 
 :::info[Examples]
 
@@ -941,12 +941,12 @@ $$
 ## Cross-References
 
 - **Differentiation** -- Integration is the inverse operation of differentiation. See the
-  [Number and Algebra](../Number-and-algebra/Number-and-algebra.md) notes for function fundamentals
+  [Number and Algebra](../Number-and-algebra/Number-and-algebra) notes for function fundamentals
   including derivative rules that motivate integration techniques.
 - **Functions** -- Domain and range considerations determine when antiderivatives are valid. See
-  [Number and Algebra](../Number-and-algebra/Number-and-algebra.md) for function fundamentals.
+  [Number and Algebra](../Number-and-algebra/Number-and-algebra) for function fundamentals.
 - **Complex Numbers** -- The exponential form $e^{i\theta} = \cos\theta + i\sin\theta$ provides an
   elegant derivation of trigonometric integral results. See
-  [Complex Numbers](../Number-and-algebra/Complex.md).
+  [Complex Numbers](../Number-and-algebra/Complex).
 - **Logic** -- Proof techniques (direct proof, contradiction) are used to justify properties of
-  integrals. See [Logic](../Discrete-maths/logic.md).
+  integrals. See [Logic](../Discrete-maths/logic).

@@ -53,7 +53,7 @@ $$
 $$
 
 As orbital bodies can be approximated by point masses, the
-[moment of inertia ($I$)](../space-time-and-motions/forces-and-momentums.md#moment-of-inertia) of
+[moment of inertia ($I$)](../space-time-and-motions/forces-and-momentums#moment-of-inertia) of
 the orbital body can be approximated by:
 
 $$
@@ -63,7 +63,7 @@ $$
 $$
 
 Hence the
-[angular momentum ($L$)](../space-time-and-motions/forces-and-momentums.md#angular-momentum) of the
+[angular momentum ($L$)](../space-time-and-motions/forces-and-momentums#angular-momentum) of the
 orbital body would be:
 
 $$
@@ -142,7 +142,7 @@ Simulate gravitational interactions between a star, planet, and moon. Adjust the
 how orbital speed, period, and gravitational force change.
 
 A gravitational field ($g$) is a vector field with dimension of
-[acceleration](../space-time-and-motions/forces-and-momentums.md#acceleration), where the
+[acceleration](../space-time-and-motions/forces-and-momentums#acceleration), where the
 acceleration of each point determine the motion of bodies in the field.
 
 ### Gravitational Potential Energy
@@ -182,7 +182,7 @@ $$
 
 The gravitational potential ($V_g$) is the
 [gravitational potential energy](#gravitational-potential-energy) per unit mass of a body with a
-[displacement](../space-time-and-motions/forces-and-momentums.md#displacement) magnitude of $r$. For
+[displacement](../space-time-and-motions/forces-and-momentums#displacement) magnitude of $r$. For
 a body with mass $m_2$ interacting with the magnetic field of a body with mass $m_1$, the
 gravitational potential is:
 
@@ -215,7 +215,7 @@ $$
 ### Gravitational Field Strength
 
 The gravitational field strength ($\bm{g}$) is the
-[acceleration](../space-time-and-motions/forces-and-momentums.md#acceleration) (force per unit mass)
+[acceleration](../space-time-and-motions/forces-and-momentums#acceleration) (force per unit mass)
 experience by bodies of mass ($m$) interacting with the [gravitational field](#gravitational-field),
 therefore, calculated as:
 
@@ -321,7 +321,7 @@ also assume all orbits to be circular instead of elliptic as stated by
 :::
 
 In a stable circular orbit, equivalent force in the opposite direction is required to balance the
-[centripetal force](../space-time-and-motions/forces-and-momentums.md#centripetal-force) $F_c$ of
+[centripetal force](../space-time-and-motions/forces-and-momentums#centripetal-force) $F_c$ of
 [gravitational force](#newtons-law-of-universal-gravitation) $F_g$:
 
 $$
@@ -386,7 +386,7 @@ therefore viscous drag decrease rapidly at increasing altitudes.
 Kepler's third law follows from
 [Newton's Law of Universal Gravitation](#newtons-law-of-universal-gravitation) and
 [circular orbital motion](#orbital-speed). Equating gravitational and
-[centripetal force](../space-time-and-motions/forces-and-momentums.md#centripetal-force), then
+[centripetal force](../space-time-and-motions/forces-and-momentums#centripetal-force), then
 substituting $v = 2\pi r / T$:
 
 $$

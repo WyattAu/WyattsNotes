@@ -449,7 +449,7 @@ number of bright fringes visible on each side of the central maximum.
 - **Slit spacing:** $d = \dfrac{1}{4.0 \times 10^5} = 2.5 \times 10^{-6}$ m
 - **Second-order maximum** ($n = 2$): $d \sin \theta = n \lambda$
   - $\sin \theta_2 = \dfrac{2(620 \times 10^{-9})}{2.5 \times 10^{-6}} = 0.496$
-  - $\theta_2 = \arcsin(0.496) = 29.7°$
+  - $\theta_2 = \arcsin(0.496) = 29.7^{\circ}$
 - **Maximum order** (when $\sin \theta = 1$):
   - $n_{\max} = \dfrac{d}{\lambda} = \dfrac{2.5 \times 10^{-6}}{620 \times 10^{-9}} = 4.03$
 - Since $n$ must be an integer, the maximum order is $n = 4$. Including the central maximum,

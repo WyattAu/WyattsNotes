@@ -557,8 +557,8 @@ All four pairs are valid solutions.
 
 ## Cross-References
 
-- **Functions:** Quadratic functions are a special case of polynomial functions. See [functions.md](./functions.md) and [functions-advanced.md](./functions-advanced.md).
-- **Coordinate Geometry:** Parabolas as conic sections. See [coordinate-geometry.md](./coordinate-geometry.md).
+- **Functions:** Quadratic functions are a special case of polynomial functions. See [functions.md](./functions) and [functions-advanced.md](./functions-advanced).
+- **Coordinate Geometry:** Parabolas as conic sections. See [coordinate-geometry.md](./coordinate-geometry).
 - **Inequalities:** Quadratic inequalities are solved using discriminant and graph analysis. See the inequalities notes.
-- **Permutations and Combinations:** Factorials appear in the quadratic formula derivation via completing the square. See [permutations-and-combinations.md](./permutations-and-combinations.md).
+- **Permutations and Combinations:** Factorials appear in the quadratic formula derivation via completing the square. See [permutations-and-combinations.md](./permutations-and-combinations).
 

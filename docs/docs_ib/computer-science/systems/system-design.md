@@ -94,7 +94,7 @@ types:
 
 **Use Case Diagrams**: Show the interactions between actors (users) and the system.
 
-```
+```python
 [Member] --(Search Book)--&gt; [Library System]
 [Member] --(Borrow Book)--&gt; [Library System]
 [Librarian] --(Add Book)--&gt; [Library System]
@@ -104,7 +104,7 @@ types:
 **Class Diagrams**: Show the structure of a system by modeling classes, their attributes, methods,
 and relationships.
 
-```
+```python
 +-------------------+
 |      Book         |
 +-------------------+
@@ -134,7 +134,7 @@ and relationships.
 
 **Sequence Diagrams**: Show the order of interactions between objects over time.
 
-```
+```python
 Member      System      Database
   |            |            |
   |--Search--&gt;|            |
@@ -654,7 +654,7 @@ Patient Records Database.
 
 <details>
 
-```
+```python
 Patient --(appointment request)--&gt; [Book Appointment] --(appointment details)--&gt; [Patient Records DB]
 Doctor --(view request)--&gt; [Update Patient Record] &lt;--(patient data)-- [Patient Records DB]
 Doctor --(updated data)--&gt; [Update Patient Record] --(save updates)--&gt; [Patient Records DB]

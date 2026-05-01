@@ -24,7 +24,7 @@ categories: [DSE, ICT]
 
 All devices connect to a central hub or switch.
 
-```
+```python
          [Device]
              |
 [Device] -- [Hub/Switch] -- [Device]
@@ -42,7 +42,7 @@ All devices connect to a central hub or switch.
 
 All devices share a single backbone cable.
 
-```
+```python
 [Device] ---[Device] ---[Device] ---[Device] ---[Terminator]
 ```
 
@@ -56,7 +56,7 @@ All devices share a single backbone cable.
 
 Each device connects to exactly two others, forming a closed loop.
 
-```
+```python
          +---> [Device] --+
          |                |
 [Device] |                | [Device]
@@ -74,7 +74,7 @@ Each device connects to exactly two others, forming a closed loop.
 
 Every device is connected to every other device (full mesh) or to multiple devices (partial mesh).
 
-```
+```python
   [Device] --- [Device]
      |    \      |
      |     \     |
@@ -982,7 +982,7 @@ Answer:
 room. Each room has a local switch connecting its computers in a star pattern. The room switches
 connect to the central router/switch, which also connects to the internet via a modem.
 
-```
+```python
 Internet -- Modem -- Router -- Central Switch
                             |
                     +-------+-------+

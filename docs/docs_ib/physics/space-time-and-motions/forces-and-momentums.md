@@ -497,19 +497,19 @@ incline, find the acceleration.
 **Solution:**
 
 **a) Check if block slides:** Component of gravity along the incline:
-$mg\sin 30° = (4.0)(9.8)(0.5) = 19.6$ N. Maximum static friction:
-$f_{s,\max} = \mu_s mg\cos 30° = (0.40)(4.0)(9.8)(0.866) = 13.6$ N. Since $mg\sin 30° = 19.6$ N
+$mg\sin 30^{\circ} = (4.0)(9.8)(0.5) = 19.6$ N. Maximum static friction:
+$f_{s,\max} = \mu_s mg\cos 30^{\circ} = (0.40)(4.0)(9.8)(0.866) = 13.6$ N. Since $mg\sin 30^{\circ} = 19.6$ N
 $\gt{} f_{s,\max} = 13.6$ N, the block **will slide**.
 
 **b) With applied horizontal force of 20 N up the incline:** Resolve the horizontal force into
-components parallel and perpendicular to the incline: $F_{\parallel} = 20\cos 30° = 17.3$ N (up the
-incline). $F_{\perp} = 20\sin 30° = 10.0$ N (into the incline).
+components parallel and perpendicular to the incline: $F_{\parallel} = 20\cos 30^{\circ} = 17.3$ N (up the
+incline). $F_{\perp} = 20\sin 30^{\circ} = 10.0$ N (into the incline).
 
-Normal force: $N = mg\cos 30° + F_{\perp} = (4.0)(9.8)(0.866) + 10.0 = 33.9 + 10.0 = 43.9$ N.
+Normal force: $N = mg\cos 30^{\circ} + F_{\perp} = (4.0)(9.8)(0.866) + 10.0 = 33.9 + 10.0 = 43.9$ N.
 Kinetic friction: $f_k = \mu_k N = (0.30)(43.9) = 13.2$ N (down the incline).
 
 Net force along the incline:
-$F_{\mathrm{net}} = F_{\parallel} - mg\sin 30° - f_k = 17.3 - 19.6 - 13.2 = -15.5$ N.
+$F_{\mathrm{net}} = F_{\parallel} - mg\sin 30^{\circ} - f_k = 17.3 - 19.6 - 13.2 = -15.5$ N.
 
 The net force is negative (down the incline), meaning the block slides **down** despite the applied
 force. The acceleration is: $a = \frac{|F_{\mathrm{net}}|}{m} = \frac{15.5}{4.0} = 3.88$ m/s$^2$

@@ -479,7 +479,7 @@ magnitude of the force on the wire.
 **Solution:**
 
 $$
-F = BIL\sin\theta = (0.40)(3.0)(0.50)\sin 60° = (0.60)(0.866) = 0.520 \mathrm{ N}
+F = BIL\sin\theta = (0.40)(3.0)(0.50)\sin 60^{\circ} = (0.60)(0.866) = 0.520 \mathrm{ N}
 $$
 
 The direction is given by Fleming's Left-Hand Rule: first finger along $\bm{B}$, second finger along
@@ -685,7 +685,7 @@ could support against gravity ($g = 9.8$ m/s$^2$).
 <details>
 <summary>Answer 4</summary>
 
-a) $F = BIL\sin 90° = (0.60)(5.0)(0.30)(1) = 0.90$ N.
+a) $F = BIL\sin 90^{\circ} = (0.60)(5.0)(0.30)(1) = 0.90$ N.
 
 b) For the force to support a mass against gravity:
 $F = mg \implies m = \frac{F}{g} = \frac{0.90}{9.8} = 0.0918$ kg $= 91.8$ g.

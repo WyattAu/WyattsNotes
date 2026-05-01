@@ -1747,7 +1747,7 @@ Type: **condensation polymerisation** (water is eliminated).
 
 Repeating unit:
 
-$$\left[\mathrm{--OC\text{-}C_6H_4\text{-}COOCH_2CH_2O--}\right]_n$$
+$$\left[\mathrm{--OC\mathrm{-}C_6H_4\mathrm{-}COOCH_2CH_2O--}\right]_n$$
 
 The benzene-1,4-dicarboxylic acid provides the $-\mathrm{COO-}$ linkage and the ethane-1,2-diol provides the $-\mathrm{OCH_2CH_2O-}$ linkage.
 

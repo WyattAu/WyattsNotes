@@ -50,21 +50,21 @@ conventions are as follows.
 
 **Variable assignment** uses the left arrow:
 
-```
+```python
 count ← 0
 total ← total + 1
 ```
 
 **Input and output** use the keywords `INPUT` and `OUTPUT`:
 
-```
+```python
 INPUT name
 OUTPUT "Hello, ", name
 ```
 
 **Selection** uses `IF ... THEN ... ELSE ... END IF`:
 
-```
+```python
 IF mark >= 50
   THEN OUTPUT "Pass"
   ELSE OUTPUT "Fail"
@@ -74,7 +74,7 @@ END IF
 **Looping** includes counted loops (`FOR ... END FOR`) and conditional loops (`WHILE ... END WHILE`,
 `REPEAT ... UNTIL`):
 
-```
+```python
 FOR i ← 1 TO 10
   OUTPUT i
 END FOR
@@ -90,7 +90,7 @@ UNTIL x = 0
 
 **Case selection** uses `CASE OF ... OTHERWISE ... ENDCASE`:
 
-```
+```python
 CASE OF grade
   'A' : OUTPUT "Excellent"
   'B' : OUTPUT "Good"
@@ -101,7 +101,7 @@ ENDCASE
 **Modular programming** uses `FUNCTION` and `PROCEDURE`. Functions return a value; procedures do
 not:
 
-```
+```python
 FUNCTION calculateArea(length, width) RETURNS REAL
   RETURN length * width
 END FUNCTION
@@ -114,14 +114,14 @@ END PROCEDURE
 **Array access** uses zero-indexed square brackets. Multi-dimensional arrays use comma-separated
 indices:
 
-```
+```python
 arr[0] ← 5
 matrix[i, j] ← i + j
 ```
 
 **String operations** use functions like `LENGTH()`, `SUBSTRING()`, and concatenation with `+`:
 
-```
+```python
 len ← LENGTH(name)
 first ← SUBSTRING(name, 0, 1)
 full ← first + " " + last
@@ -161,7 +161,7 @@ step of execution.
 
 Consider the following algorithm to find the sum of integers from 1 to `n`:
 
-```
+```python
 FUNCTION sumToN(n) RETURNS INTEGER
   total ← 0
   i ← 1
@@ -194,7 +194,7 @@ helps identify off-by-one errors and infinite loops.
 
 Consider the algorithm to find the maximum value in an array:
 
-```
+```python
 FUNCTION findMax(arr) RETURNS INTEGER
   max ← arr[0]
   FOR i ← 1 TO LENGTH(arr) - 1
@@ -254,7 +254,7 @@ sequentially until the target is found or the end of the collection is reached.
 
 **IB Pseudocode:**
 
-```
+```python
 FUNCTION linearSearch(arr, target) RETURNS INTEGER
   FOR i ← 0 TO LENGTH(arr) - 1
     IF arr[i] = target
@@ -293,7 +293,7 @@ Modify linear search to count how many times a target value appears in an array.
 <details>
 <summary>Solution</summary>
 
-```
+```python
 FUNCTION countOccurrences(arr, target) RETURNS INTEGER
   count ← 0
   FOR i ← 0 TO LENGTH(arr) - 1
@@ -331,7 +331,7 @@ divides the search interval in half by comparing the target to the middle elemen
 
 **IB Pseudocode:**
 
-```
+```python
 FUNCTION binarySearch(arr, target) RETURNS INTEGER
   low ← 0
   high ← LENGTH(arr) - 1
@@ -473,7 +473,7 @@ sorted. The algorithm is named because smaller elements "bubble" to the top of t
 
 **IB Pseudocode:**
 
-```
+```python
 PROCEDURE bubbleSort(arr)
   n ← LENGTH(arr)
   swapped ← TRUE
@@ -604,7 +604,7 @@ of the unsorted portion, thereby extending the sorted portion by one.
 
 **IB Pseudocode:**
 
-```
+```python
 PROCEDURE selectionSort(arr)
   n ← LENGTH(arr)
   FOR i ← 0 TO n - 2
@@ -668,7 +668,7 @@ elements to the right.
 
 **IB Pseudocode:**
 
-```
+```python
 PROCEDURE insertionSort(arr)
   n ← LENGTH(arr)
   FOR i ← 1 TO n - 1
@@ -739,7 +739,7 @@ step: it compares the front elements of each half and places the smaller one int
 
 **IB Pseudocode:**
 
-```
+```python
 PROCEDURE mergeSort(arr)
   IF LENGTH(arr) > 1
     THEN
@@ -782,7 +782,7 @@ END PROCEDURE
 
 **Trace with `arr = [38, 27, 43, 3, 9, 82, 10]`:**
 
-```
+```python
                     [38, 27, 43, 3, 9, 82, 10]
                               |
               [38, 27, 43, 3]         [9, 82, 10]
@@ -839,7 +839,7 @@ it, and then recursively sorts the sub-arrays on either side of the pivot.
 
 **IB Pseudocode (Lomuto partition scheme):**
 
-```
+```python
 PROCEDURE quickSort(arr, low, high)
   IF low < high
     THEN
@@ -973,7 +973,7 @@ type, accessed by their index. Arrays are the most fundamental data structure in
 **Static arrays** have a fixed size determined at the time of creation. The size cannot be changed
 during program execution. In languages like C, static arrays are allocated on the stack:
 
-```
+```python
 INT arr[10]
 ```
 
@@ -1050,7 +1050,7 @@ node. This allows traversal in both directions.
 
 **Node structure (singly linked):**
 
-```
+```python
 CLASS Node
   data  // the value stored
   next  // reference to the next node
@@ -1059,7 +1059,7 @@ END CLASS
 
 **Insertion at the head of a singly linked list:**
 
-```
+```python
 PROCEDURE insertHead(list, value)
   newNode ← new Node
   newNode.data ← value
@@ -1070,7 +1070,7 @@ END PROCEDURE
 
 **Deletion of the head node:**
 
-```
+```python
 PROCEDURE deleteHead(list)
   IF list.head ≠ NIL
     THEN
@@ -1112,7 +1112,7 @@ To insert after a given node, we need a reference to that node (node with value 
 2. Set `newNode.next` to point to the node after 20 (which is the node with value 30).
 3. Set the `next` pointer of the node with value 20 to point to the new node.
 
-```
+```python
 newNode ← new Node
 newNode.data ← 25
 newNode.next ← current.next    // newNode.next now points to 30
@@ -1137,7 +1137,7 @@ To delete a node from a singly linked list, we need a reference to the node **be
 1. Start at the head. `prev = Head` (value 5), `current = Head.next` (value 15).
 2. `current.data = 15` is the target. Set `prev.next = current.next`.
 
-```
+```python
 prev.next ← current.next    // 5's next now points to 25
 ```
 
@@ -1167,7 +1167,7 @@ add or remove the top plate.
 
 **IB Pseudocode implementation using an array:**
 
-```
+```python
 CLASS Stack
   PRIVATE items : ARRAY[0 : 99] OF STRING
   PRIVATE top : INTEGER
@@ -1288,7 +1288,7 @@ first person in line is the first person served.
 
 **IB Pseudocode implementation using a circular array:**
 
-```
+```python
 CLASS Queue
   PRIVATE items : ARRAY[0 : 99] OF STRING
   PRIVATE front : INTEGER
@@ -1399,7 +1399,7 @@ children are leaves.
 
 **Node structure:**
 
-```
+```python
 CLASS TreeNode
   data    // the value stored
   left    // reference to the left child
@@ -1412,7 +1412,7 @@ END CLASS
 **In-order traversal** (Left, Root, Right): Visit the left subtree, then the root, then the right
 subtree.
 
-```
+```python
 PROCEDURE inorder(node)
   IF node ≠ NIL
     THEN
@@ -1426,7 +1426,7 @@ END PROCEDURE
 **Pre-order traversal** (Root, Left, Right): Visit the root, then the left subtree, then the right
 subtree.
 
-```
+```python
 PROCEDURE preorder(node)
   IF node ≠ NIL
     THEN
@@ -1440,7 +1440,7 @@ END PROCEDURE
 **Post-order traversal** (Left, Right, Root): Visit the left subtree, then the right subtree, then
 the root.
 
-```
+```python
 PROCEDURE postorder(node)
   IF node ≠ NIL
     THEN
@@ -1453,7 +1453,7 @@ END PROCEDURE
 
 **Example tree:**
 
-```
+```python
         8
        / \
       3   10
@@ -1475,7 +1475,7 @@ greater. This property enables efficient search, insertion, and deletion.
 
 **BST search:**
 
-```
+```python
 FUNCTION bstSearch(root, target) RETURNS TreeNode
   IF root = NIL
     THEN RETURN NIL
@@ -1492,7 +1492,7 @@ END FUNCTION
 
 **BST insertion:**
 
-```
+```python
 PROCEDURE bstInsert(root, value)
   IF root = NIL
     THEN
@@ -1527,7 +1527,7 @@ Insert the values 50, 30, 70, 20, 40, 60, 80 into an initially empty BST (in tha
 <details>
 <summary>Solution</summary>
 
-```
+```python
         50
        /  \
      30    70
@@ -1561,7 +1561,7 @@ Pre-order for left: `2, 4, 5`. Root = 2. In-order `4, 2, 5` means 4 is left of 2
 
 Pre-order for right: `3, 6, 7`. Root = 3. In-order `6, 3, 7` means 6 is left of 3, 7 is right of 3.
 
-```
+```python
         1
        / \
       2   3
@@ -1599,7 +1599,7 @@ helps distribute keys more uniformly.
 
 For string keys: accumulate character codes and take the modulus.
 
-```
+```python
 FUNCTION hashString(s, m) RETURNS INTEGER
   hash ← 0
   FOR i ← 0 TO LENGTH(s) - 1
@@ -1752,7 +1752,7 @@ $O(n)$ inside $O(n)$ gives $O(n^2)$.
 
 Determine the time complexity of the following algorithm:
 
-```
+```python
 FOR i ← 0 TO n - 1
   FOR j ← 0 TO n - 1
     OUTPUT i, j
@@ -1780,7 +1780,7 @@ The overall time complexity is $O(n^2)$. The linear loop is dominated by the qua
 
 Determine the time complexity of the following algorithm:
 
-```
+```python
 i ← 1
 WHILE i < n
   OUTPUT i
@@ -1947,7 +1947,7 @@ complement each other.
 
 Determine the time complexity of the following algorithm:
 
-```
+```python
 FOR i ← 0 TO n - 1
   FOR j ← 0 TO n - 1
     OUTPUT i * j
@@ -1975,7 +1975,7 @@ Overall time complexity: $O(n^2)$.
 
 Determine the time complexity of:
 
-```
+```python
 i ← 1
 WHILE i < n
   OUTPUT i
@@ -2139,7 +2139,7 @@ Implement the Stack ADT using a singly linked list instead of an array. Write IB
 <details>
 <summary>Solution</summary>
 
-```
+```python
 CLASS Stack
   PRIVATE head : Node
   PRIVATE stackSize : INTEGER
@@ -2314,7 +2314,7 @@ Draw the recursive call tree for merge sort on `[6, 2, 8, 3, 1, 7, 4, 5]`.
 <details>
 <summary>Solution</summary>
 
-```
+```python
                 [6, 2, 8, 3, 1, 7, 4, 5]
                /                        \
        [6, 2, 8, 3]              [1, 7, 4, 5]
@@ -2357,7 +2357,7 @@ Quick sort with last-element pivot sorts `[1, 2, 3, 4, 5, 6, 7, 8]`. (a) Why is 
 
 Determine the time complexity of:
 
-```
+```python
 FOR i ← 1 TO n
   j ← 1
   WHILE j < n
@@ -2457,7 +2457,7 @@ FIFO maintained: elements removed in arrival order.
 
 For the tree below, give in-order, pre-order, and post-order traversals:
 
-```
+```python
         5
        / \
       3   7
@@ -2499,7 +2499,7 @@ Search for 22: $h(22) = 2$. Slot 2: 12 != 22. Slot 3: 7 != 22. Slot 4: 22 = 22. 
 
 ### Problem 15: Recursion Trace
 
-```
+```python
 FUNCTION mystery(n) RETURNS INTEGER
   IF n <= 1
     THEN RETURN 1
@@ -2553,7 +2553,7 @@ Design an algorithm to find the top 3 scores from a list of $n$ student scores. 
 <details>
 <summary>Solution</summary>
 
-```
+```python
 PROCEDURE topThree(arr)
   first ← -1
   second ← -1
@@ -2586,7 +2586,7 @@ Time complexity: $O(n)$ -- single pass. Space: $O(1)$. This uses **abstraction**
 
 Use Dijkstra's algorithm to find shortest paths from A in this weighted graph:
 
-```
+```python
 A --3-- B --2-- D
 |      |       |
 5      1       4

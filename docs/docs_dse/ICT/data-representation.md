@@ -83,7 +83,7 @@ sum of a column exceeds 1.
 <details>
 <summary>Worked Example: Add 0110 1011 and 0101 1101</summary>
 
-```
+```python
   0110 1011
 + 0101 1101
   ---------
@@ -163,7 +163,7 @@ Two's complement of 45: invert $\to 11010010$, add $1 \to 11010011$
 
 Now add:
 
-```
+```python
   01000011
 + 11010011
   ---------
@@ -712,7 +712,7 @@ Now: DB(9), EAC(11)
 
 Combine DB(9) + EAC(11) = root(20)
 
-```
+```python
           root(20)
          /        \
       DB(9)      EAC(11)
@@ -876,7 +876,7 @@ Data: `1011`, `0110`, `1100`, `0011`
 
 Arrange in grid with row and column parity:
 
-```
+```python
         C1  C2  C3  C4  |  RP
         --- --- --- --- | ---
   R1:    1   0   1   1  |  1
@@ -1096,7 +1096,7 @@ Binary: $3 = 011$, $4 = 100$, $5 = 101$. So $345_8 = 011100101_2 = 11100101_2$
 
 (b) Two's complement of $01101011$: invert $\to 10010100$, add $1 \to 10010101$
 
-```
+```python
   11010110
 + 10010101
   ---------
@@ -1216,7 +1216,7 @@ Now: X(7), WYZ(9)
 
 Combine X(7) + WYZ(9) = root(16)
 
-```
+```python
          root(16)
         /        \
      X(7)      WYZ(9)

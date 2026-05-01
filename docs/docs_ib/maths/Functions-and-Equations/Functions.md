@@ -382,7 +382,7 @@ Roots: $x = 3$, $x = -\dfrac{1}{2}$, $x = -2$.
 
 Divide $x^3 + 2x^2 - 5x - 6$ by $(x + 1)$ using synthetic division.
 
-```
+```text
 -1 | 1   2   -5   -6
    |     -1   -1    6
    |----------------

@@ -214,11 +214,11 @@ $$\mathrm{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2
 
 | Topic                   | Key Formula                                                   |
 | ----------------------- | ------------------------------------------------------------- | ------------------------------------------------ | -------------------- |
-| Distance                | $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$                    |
-| Midpoint                | $M = \left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}\right)$ |
+| Distance                | $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$                    | | |
+| Midpoint                | $M = \left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}\right)$ | | |
 | Point to line           | $d = \dfrac{                                                  | Ax_0 + By_0 + C                                  | }{\sqrt{A^2 + B^2}}$ |
-| Circle (standard)       | $(x - a)^2 + (y - b)^2 = r^2$                                 |
-| Tangent at $(x_1, y_1)$ | $x_1 x + y_1 y = r^2$ (for circle at origin)                  |
+| Circle (standard)       | $(x - a)^2 + (y - b)^2 = r^2$                                 | | |
+| Tangent at $(x_1, y_1)$ | $x_1 x + y_1 y = r^2$ (for circle at origin)                  | | |
 | Triangle area           | $\dfrac{1}{2}                                                 | x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) | $                    |
 
 ---
@@ -621,7 +621,7 @@ The equation of the common chord is $6x - 8y + 23 = 0$.
 
 ## Cross-References
 
-- **Quadratics:** The discriminant is used to determine the nature of circle-line intersections. See [quadratics.md](./quadratics.md).
-- **Functions:** Transformations of graphs apply equally to circles and lines. See [functions-advanced.md](./functions-advanced.md).
+- **Quadratics:** The discriminant is used to determine the nature of circle-line intersections. See [quadratics.md](./quadratics).
+- **Functions:** Transformations of graphs apply equally to circles and lines. See [functions-advanced.md](./functions-advanced).
 - **Trigonometry:** The angle between two lines uses the tangent formula, which connects to trigonometric identities.
 

@@ -116,13 +116,13 @@ Given a score in cell `A1`, assign a grade:
 
 Using nested `IF`:
 
-```
+```python
 =IF(A1>=90, "A", IF(A1>=80, "B", IF(A1>=70, "C", IF(A1>=60, "D", "F"))))
 ```
 
 Using `IFS` (cleaner):
 
-```
+```python
 =IFS(A1>=90, "A", A1>=80, "B", A1>=70, "C", A1>=60, "D", TRUE, "F")
 ```
 
@@ -157,7 +157,7 @@ In cell `A1`, a user enters a product code (e.g., `P003`).
 
 To find the price:
 
-```
+```python
 =VLOOKUP(A1, $E$1:$F$5, 2, FALSE)
 ```
 
@@ -483,7 +483,7 @@ Data source (Excel):
 
 Main document (template):
 
-```
+```python
 Certificate of Achievement
 
 This is to certify that <<Name>> of class <<Class>>

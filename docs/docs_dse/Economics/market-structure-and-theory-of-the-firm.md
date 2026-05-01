@@ -226,7 +226,7 @@ At long-run equilibrium:
 
 ### Diagram Description: Long-Run Equilibrium in Perfect Competition
 
-```
+```text
   Price
     |
     |----P = MR = AR = MC = ATC_min
@@ -300,7 +300,7 @@ output level that satisfies total market demand.
 
 **Diagram description:**
 
-```
+```text
   Price
     |
     |              ATC
@@ -391,7 +391,7 @@ It is a pure loss to society.
 
 ### Diagram Description: Monopoly vs Perfect Competition
 
-```
+```text
   Price
     |
   Pm|----*        MC
@@ -554,7 +554,7 @@ $$\mathrm{Excess capacity} = Q_{\mathrm{ATC}_{\min}} - Q^*$$
 
 ### Diagram Description: Long-Run Monopolistic Competition
 
-```
+```text
   Price
     |
     |    P=ATC
@@ -715,7 +715,7 @@ rigidity: firms in an oligopoly may not change their prices even when costs chan
 
 **Diagram description:**
 
-```
+```text
   Price
     |
     |     *  D (elastic portion, above kink)
@@ -770,7 +770,7 @@ Productive efficiency requires production at the minimum point of `ATC`, where `
 | Perfect competition (LR) | Yes                                          | `P = ATC_min`; free entry drives price to minimum `ATC`    |
 | Monopolistic competition | No                                           | Excess capacity; `P = ATC` but `ATC \gt ATC_min`           |
 | Oligopoly                | Generally no                                 | Firms restrict output; may or may not produce at `ATC_min` |
-| Monopoly                 | No `ATC` is declining at the output produced |
+| Monopoly                 | No `ATC` is declining at the output produced | |
 
 ### Allocative Efficiency
 

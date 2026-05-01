@@ -88,7 +88,7 @@ $$
 $$
 
 This is known as the **Binomial Theorem**. See also
-[combinatorial notation](./combinatorics.md#combinations).
+[combinatorial notation](./combinatorics#combinations).
 
 ### Pascal's Triangle
 

@@ -321,7 +321,7 @@ programs. IB exams frequently include UML diagrams and ask you to interpret or c
 
 ### Example UML Diagram (Text Representation)
 
-```
+```python
 +------------------+
 |     Animal       |
 +------------------+

@@ -1443,8 +1443,8 @@ Calculate the Q-value of the fission reaction:
 
 $\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{144}{}{56}\mathrm{Ba} + \prescript{89}{}{36}\mathrm{Kr} + 3\prescript{1}{}{0}\mathrm{n}$
 
-Given: $m(\mathrm{n}) = 1.008665$ u, $m(\mathrm{U\text{-}235}) = 235.043930$ u,
-$m(\mathrm{Ba\text{-}144}) = 143.922953$ u, $m(\mathrm{Kr\text{-}89}) = 88.917630$ u.
+Given: $m(\mathrm{n}) = 1.008665$ u, $m(\mathrm{U\mathrm{-}235}) = 235.043930$ u,
+$m(\mathrm{Ba\mathrm{-}144}) = 143.922953$ u, $m(\mathrm{Kr\mathrm{-}89}) = 88.917630$ u.
 
 <details>
 <summary>Solution</summary>
@@ -1506,7 +1506,7 @@ $$\frac{I}{I_0} = 0.03$$
 
 $$0.03 = \left(\frac{1}{2}\right)^n$$
 
-$$n = \frac{\ln(1/0.03)}{\ln 2} = \frac{3.507}{0.693} = 5.06 \text{ half-value thicknesses}$$
+$$n = \frac{\ln(1/0.03)}{\ln 2} = \frac{3.507}{0.693} = 5.06 \mathrm{ half-value thicknesses}$$
 
 $$\mathrm{Thickness} = 5.06 \times 1.5 = 7.59 \mathrm{ cm} \approx 7.6 \mathrm{ cm}$$
 

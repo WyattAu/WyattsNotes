@@ -27,7 +27,7 @@ A constant is a named storage location whose value cannot change after initializ
 make programs more readable and maintainable by replacing magic numbers with meaningful names. In IB
 pseudocode, constants are declared with the `CONSTANTS` keyword.
 
-```
+```python
 CONSTANTS
   MAX_STUDENTS ← 30
   TAX_RATE ← 0.15
@@ -115,7 +115,7 @@ Extract the hundreds, tens, and units digits of the number `n = 472`.
 <details>
 <summary>Solution</summary>
 
-```
+```python
 n ← 472
 hundreds ← n DIV 100       // 472 DIV 100 = 4
 remainder ← n MOD 100      // 472 MOD 100 = 72
@@ -156,7 +156,7 @@ Relational operators always produce a BOOLEAN result. They can be applied to num
 
 **Operator precedence** (highest to lowest): NOT, AND, OR. This matters in expressions like:
 
-```
+```python
 NOT a AND b OR c
 ```
 
@@ -213,7 +213,7 @@ Selection allows the program to choose between different paths of execution base
 
 **IF...THEN...ELSE:**
 
-```
+```python
 IF grade >= 50
   THEN
     OUTPUT "Pass"
@@ -226,7 +226,7 @@ END IF
 
 **Nested IF:**
 
-```
+```python
 IF score >= 90
   THEN OUTPUT "Grade: A"
   ELSE IF score >= 80
@@ -245,7 +245,7 @@ END IF
 **CASE (switch):** The CASE structure is cleaner when there are multiple discrete values to compare
 against:
 
-```
+```python
 CASE OF month
   1 : OUTPUT "January"
   2 : OUTPUT "February"
@@ -263,7 +263,7 @@ values. Nested IF is appropriate when conditions involve different variables or 
 
 Trace the following pseudocode with `score = 75`:
 
-```
+```python
 IF score >= 90
   THEN grade ← "A"
   ELSE IF score >= 80
@@ -303,7 +303,7 @@ if they were reversed (checking `$\ge$` 60 first), every score of 60 or above wo
 
 **FOR loop (counted loop):** Executes a fixed number of times.
 
-```
+```python
 FOR i ← 1 TO 10
   OUTPUT i
 END FOR
@@ -312,7 +312,7 @@ END FOR
 The loop variable `i` is automatically initialized to 1, incremented by 1 after each iteration, and
 the loop terminates when `i` exceeds 10. IB pseudocode also supports stepping:
 
-```
+```python
 FOR i ← 10 DOWNTO 1
   OUTPUT i
 END FOR
@@ -321,7 +321,7 @@ END FOR
 **WHILE loop (pre-test conditional loop):** Tests the condition before each iteration. The loop body
 may execute zero times.
 
-```
+```python
 WHILE count < target
   count ← count + 1
 END WHILE
@@ -332,7 +332,7 @@ Use WHILE when the number of iterations is not known in advance and the loop may
 **REPEAT...UNTIL loop (post-test conditional loop):** Tests the condition after each iteration. The
 loop body always executes at least once.
 
-```
+```python
 REPEAT
   INPUT password
 UNTIL password = correctPassword
@@ -358,7 +358,7 @@ the outer loop.
 
 **Worked example:** Print a multiplication table for 1 to 5.
 
-```
+```python
 FOR i ← 1 TO 5
   FOR j ← 1 TO 5
     OUTPUT i * j, " "
@@ -375,7 +375,7 @@ are $m \times n$.
 
 **Accumulator pattern:** Maintain a running total.
 
-```
+```python
 total ← 0
 FOR i ← 1 TO n
   total ← total + arr[i]
@@ -384,7 +384,7 @@ END FOR
 
 **Counter pattern:** Count occurrences of a condition.
 
-```
+```python
 count ← 0
 FOR i ← 0 TO LENGTH(arr) - 1
   IF arr[i] > threshold
@@ -395,7 +395,7 @@ END FOR
 
 **Sentinel pattern:** Loop until a special value is encountered.
 
-```
+```python
 REPEAT
   INPUT value
   IF value <> -1
@@ -437,7 +437,7 @@ A procedure is a named block of code that performs a specific task. It does not 
 is called for its side effects (e.g., printing output, modifying global state, updating data
 structures).
 
-```
+```python
 PROCEDURE printStars(n)
   FOR i ← 1 TO n
     OUTPUT "*"
@@ -450,7 +450,7 @@ END PROCEDURE
 A function is a named block of code that performs a computation and returns a value. Functions
 should not have side effects -- they should be pure: the same inputs always produce the same output.
 
-```
+```python
 FUNCTION factorial(n) RETURNS INTEGER
   IF n <= 1
     THEN RETURN 1
@@ -464,7 +464,7 @@ END FUNCTION
 **Parameters** are variables listed in the procedure or function definition that receive values from
 the caller. **Arguments** are the actual values passed when the procedure or function is called.
 
-```
+```python
 FUNCTION rectangleArea(length, width) RETURNS REAL
   RETURN length * width
 END FUNCTION
@@ -494,7 +494,7 @@ Fahrenheit. Use it to convert 100 degrees and display the result.
 <details>
 <summary>Solution</summary>
 
-```
+```python
 FUNCTION celsiusToFahrenheit(c) RETURNS REAL
   RETURN c * 9 / 5 + 32
 END FUNCTION
@@ -529,7 +529,7 @@ To convert in the opposite direction, use $C = (F - 32) \times \frac{5}{9}$.
 A copy of the argument's value is passed to the parameter. Modifications to the parameter inside the
 function do not affect the original argument.
 
-```
+```python
 PROCEDURE increment(x)
   x ← x + 1
   OUTPUT x
@@ -547,7 +547,7 @@ The parameter `x` is a local copy. Changing it has no effect on `num`.
 The memory address of the argument is passed to the parameter. Modifications to the parameter inside
 the function directly affect the original argument.
 
-```
+```python
 PROCEDURE increment(REF x)
   x ← x + 1
   OUTPUT x
@@ -576,7 +576,7 @@ The `REF` keyword in IB pseudocode indicates pass by reference. The parameter `x
 
 Trace the following pseudocode and predict all outputs:
 
-```
+```python
 PROCEDURE swapByValue(a, b)
   temp ← a
   a ← b
@@ -647,7 +647,7 @@ that moves closer to the base case.
 
 ### Worked Example: Factorial
 
-```
+```python
 FUNCTION factorial(n) RETURNS INTEGER
   IF n <= 1
     THEN RETURN 1         // Base case
@@ -667,7 +667,7 @@ END FUNCTION
 
 ### Worked Example: Fibonacci
 
-```
+```python
 FUNCTION fibonacci(n) RETURNS INTEGER
   IF n <= 1
     THEN RETURN n
@@ -683,7 +683,7 @@ iterative approach is required for practical Fibonacci computation.
 
 ### Worked Example: Sum of Array
 
-```
+```python
 FUNCTION arraySum(arr, index) RETURNS INTEGER
   IF index >= LENGTH(arr)
     THEN RETURN 0
@@ -709,7 +709,7 @@ recursion into iteration to avoid stack growth.
 
 Trace `mystery(4)` where:
 
-```
+```python
 FUNCTION mystery(n) RETURNS INTEGER
   IF n = 1
     THEN RETURN 1
@@ -821,7 +821,7 @@ Identify the programming paradigm demonstrated by each code snippet.
 
 **Snippet 1:**
 
-```
+```python
 total ← 0
 FOR i ← 0 TO LENGTH(scores) - 1
   total ← total + scores[i]
@@ -836,7 +836,7 @@ composition.
 
 **Snippet 2:**
 
-```
+```python
 CLASS Student
   PRIVATE name : STRING
   PRIVATE grade : INTEGER
@@ -860,7 +860,7 @@ in a class. Access is controlled with PRIVATE/PUBLIC modifiers. An object is cre
 
 **Snippet 3:**
 
-```
+```python
 FUNCTION applyDiscount(price, discount) RETURNS REAL
   RETURN price - price * discount
 END FUNCTION
@@ -934,7 +934,7 @@ the average is greater than 60, otherwise output "At or below average."
 <details>
 <summary>Solution</summary>
 
-```
+```python
 CONSTANTS
   NUM_SCORES ← 10
   PASS_THRESHOLD ← 60
@@ -989,7 +989,7 @@ pointer dereference, insufficient memory.
 **Trace tables:** Systematically record the value of each variable at each step of execution. This
 is the primary debugging technique in IB examinations.
 
-```
+```python
 FUNCTION mystery(n) RETURNS INTEGER
   result ← 0
   i ← 1
@@ -1078,7 +1078,7 @@ specific paths, branches, and conditions in the code.
 
 Trace the following function with `arr = [5, 3, 8, 1, 8, 3]` and `target = 8`:
 
-```
+```python
 FUNCTION countAndFind(arr, target) RETURNS INTEGER
   count ← 0
   firstIndex ← -1
@@ -1141,7 +1141,7 @@ corrective action.
 
 ### Try-Catch-Finally Pattern
 
-```
+```python
 TRY
   result ← numerator / denominator
   OUTPUT result
@@ -1164,7 +1164,7 @@ where the second number is zero.
 <details>
 <summary>Solution</summary>
 
-```
+```python
 LOOP
   TRY
     INPUT numerator
@@ -1271,7 +1271,7 @@ END LOOP
 **Q2.** Evaluate the following IB pseudocode expression step by step, showing the result after each
 operator:
 
-```
+```python
 result ← (17 DIV 4) + (17 MOD 4) * 2 ^ 3 - 1
 ```
 
@@ -1342,7 +1342,7 @@ alphabetically. To perform case-insensitive comparison, convert both strings to 
 
 **Q5.** Trace the following pseudocode with `score ← 55` and state the output:
 
-```
+```python
 IF score >= 90
   THEN grade ← "A"
   ELSE IF score >= 80
@@ -1379,7 +1379,7 @@ Output: **F**
 
 **Q6.** Rewrite the following nested IF statement as a CASE statement:
 
-```
+```python
 IF day = 1
   THEN OUTPUT "Monday"
   ELSE IF day = 2
@@ -1404,7 +1404,7 @@ END IF
 <details>
 <summary>Solution</summary>
 
-```
+```python
 CASE OF day
   1 : OUTPUT "Monday"
   2 : OUTPUT "Tuesday"
@@ -1428,7 +1428,7 @@ single condition.
 
 **Q7.** What is the output of the following pseudocode?
 
-```
+```python
 FOR i ← 1 TO 4
   output ← ""
   FOR j ← 1 TO i
@@ -1449,7 +1449,7 @@ END FOR
 | 4         | 1 to 4          | `****`         | `****` |
 
 Output:
-```
+```python
 *
 **
 ***
@@ -1469,7 +1469,7 @@ program should then output the sum, count, and average of all numbers entered (e
 <details>
 <summary>Solution</summary>
 
-```
+```python
 sum ← 0
 count ← 0
 REPEAT
@@ -1531,7 +1531,7 @@ an empty array). Pre-test is correct.
 
 **Q10.** How many times does the statement `OUTPUT i, j` execute in total?
 
-```
+```python
 FOR i ← 0 TO 4
   FOR j ← i TO 4
     OUTPUT i, j
@@ -1565,7 +1565,7 @@ FALSE otherwise.
 <details>
 <summary>Solution</summary>
 
-```
+```python
 FUNCTION isPrime(n) RETURNS BOOLEAN
   IF n < 2
     THEN RETURN FALSE
@@ -1600,7 +1600,7 @@ END FUNCTION
 
 **Q12.** Trace the following pseudocode and state the final values of `a`, `b`, and `c`:
 
-```
+```python
 PROCEDURE modify(REF x, y, REF z)
   x ← x + y
   y ← y * 2
@@ -1641,7 +1641,7 @@ created, and what is the final return value?
 <details>
 <summary>Solution</summary>
 
-```
+```python
 FUNCTION factorial(n) RETURNS INTEGER
   IF n <= 1
     THEN RETURN 1
@@ -1673,7 +1673,7 @@ returning $5 \times 24 = 120$.
 **Q14.** The following function is intended to return the sum of all elements in an array. It contains
 a logic error. Identify the error, explain why it is wrong, and provide the corrected version.
 
-```
+```python
 FUNCTION arrayTotal(arr) RETURNS INTEGER
   total ← 0
   FOR i ← 1 TO LENGTH(arr)
@@ -1694,7 +1694,7 @@ zero-indexed, the loop accesses `arr[1]` through `arr[LENGTH(arr)]`. This means:
 
 **Corrected version:**
 
-```
+```python
 FUNCTION arrayTotal(arr) RETURNS INTEGER
   total ← 0
   FOR i ← 0 TO LENGTH(arr) - 1
@@ -1721,7 +1721,7 @@ The corrected loop runs from index 0 to `LENGTH(arr) - 1`, covering every valid 
 <details>
 <summary>Solution</summary>
 
-```
+```python
 CONSTANTS
   MIN_SCORE ← 0
   MAX_SCORE ← 100

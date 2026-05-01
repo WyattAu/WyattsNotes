@@ -279,9 +279,9 @@ $$
 
 | $            | r        | $   | Strength |
 | ------------ | -------- | --- | -------- |
-| $0.0$--$0.3$ | Weak     |
-| $0.3$--$0.7$ | Moderate |
-| $0.7$--$1.0$ | Strong   |
+| $0.0$--$0.3$ | Weak     | | |
+| $0.3$--$0.7$ | Moderate | | |
+| $0.7$--$1.0$ | Strong   | | |
 
 ### Computational Formula
 
@@ -635,12 +635,12 @@ If every data value is transformed by $y_i = ax_i + b$:
 
 | Statistic               | Original    | Transformed                                        |
 | ----------------------- | ----------- | -------------------------------------------------- | --- | ------------ |
-| Mean                    | $\bar{x}$   | $a\bar{x} + b$                                     |
+| Mean                    | $\bar{x}$   | $a\bar{x} + b$                                     | | |
 | Standard deviation      | $s_x$       | $                                                  | a   | s_x$         |
-| Variance                | $s_x^2$     | $a^2 s_x^2$                                        |
-| Median                  | $Q_2$       | $aQ_2 + b$                                         |
+| Variance                | $s_x^2$     | $a^2 s_x^2$                                        | | |
+| Median                  | $Q_2$       | $aQ_2 + b$                                         | | |
 | IQR                     | $Q_3 - Q_1$ | $                                                  | a   | (Q_3 - Q_1)$ |
-| Correlation coefficient | $r$         | $r$ (unchanged if $a \gt 0$, negated if $a \lt 0$) |
+| Correlation coefficient | $r$         | $r$ (unchanged if $a \gt 0$, negated if $a \lt 0$) | | |
 
 ### Standardised Scores (z-scores)
 

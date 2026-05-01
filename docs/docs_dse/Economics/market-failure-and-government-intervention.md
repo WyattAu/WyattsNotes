@@ -66,7 +66,7 @@ socially optimal output. The market **over-produces** the good.
 
 ### Diagram Description: Negative Externality of Production
 
-```
+```text
   Price
     |
     |       MSC

@@ -24,7 +24,7 @@ divide the plane into four quadrants, numbered counterclockwise from the positiv
 ### Distance Formula
 
 The distance between two points $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$ is derived from the
-[Pythagorean identity](./trigonometry.md#pythagorean-identity) applied to the right triangle formed
+[Pythagorean identity](./trigonometry#pythagorean-identity) applied to the right triangle formed
 by the horizontal and vertical differences:
 
 $$
@@ -348,7 +348,7 @@ $$
 \end{aligned}
 $$
 
-Using the [Heron's formula](./trigonometry.md) for a triangle with side lengths $a$, $b$, $c$ and
+Using the [Heron's formula](./trigonometry) for a triangle with side lengths $a$, $b$, $c$ and
 semi-perimeter $s = \frac{a+b+c}{2}$:
 
 $$

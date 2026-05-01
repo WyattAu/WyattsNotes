@@ -148,7 +148,7 @@ $$\Delta H = H_{\mathrm{products}} - H_{\mathrm{reactants}}$$
 
 ### Exothermic Reaction
 
-```
+```text
 Energy
   |
   |   Reactants
@@ -162,7 +162,7 @@ Energy
 
 ### Endothermic Reaction
 
-```
+```text
 Energy
   |               -------
   |              /  Products

@@ -630,8 +630,8 @@ For two masses $M$ and $m$ separated by distance $r$, the total energy determine
 | Total Energy $E$ | Orbit Type                    |
 | ---------------- | ----------------------------- | --- | --- | --- | ------------------ |
 | $E \lt 0$ (and $ | E                             | \lt | E_p | $)  | Bound (elliptical) |
-| $E = 0$          | Parabolic (escape trajectory) |
-| $E \gt 0$        | Hyperbolic (unbound)          |
+| $E = 0$          | Parabolic (escape trajectory) | | | | |
+| $E \gt 0$        | Hyperbolic (unbound)          | | | | |
 
 For a circular orbit:
 

@@ -223,7 +223,7 @@ $$
 $$
 
 $$
-\cos\theta = \frac{2}{5\sqrt{6}} = \frac{2}{5\sqrt{6}}, \quad \theta = \arccos\left(\frac{2}{5\sqrt{6}}\right) \approx 80.7°
+\cos\theta = \frac{2}{5\sqrt{6}} = \frac{2}{5\sqrt{6}}, \quad \theta = \arccos\left(\frac{2}{5\sqrt{6}}\right) \approx 80.7^{\circ}
 $$
 
 ## Cross Product (Vector Product)
@@ -499,7 +499,7 @@ $$
 $$
 
 $$
-\theta = \arccos(0.315) \approx 71.6°
+\theta = \arccos(0.315) \approx 71.6^{\circ}
 $$
 
 ---

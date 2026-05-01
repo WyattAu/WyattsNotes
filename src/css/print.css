@@ -9,9 +9,15 @@
   .table-of-contents,
   .pagination-nav,
   .breadcrumb,
+  .breadcrumbs,
   button[aria-label='Scroll to top'],
   .clean-btn,
-  nav[class*='navbar'] {
+  nav[class*='navbar'],
+  .theme-doc-footer,
+  .navbar-sidebar,
+  button,
+  .theme-back-to-top-button,
+  .search-page {
     display: none !important;
   }
 
@@ -31,6 +37,12 @@
     max-width: 100% !important;
   }
 
+  .theme-doc-main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   /* Ensure text is readable */
   body {
     font-size: 11pt;
@@ -40,7 +52,7 @@
   }
 
   /* Show link URLs in parentheses after the text */
-  a[href]::after {
+  a[href^='http']::after {
     content: ' (' attr(href) ')';
     font-size: 0.85em;
     color: #555;
@@ -67,7 +79,8 @@
   blockquote,
   table,
   figure,
-  .math {
+  .math,
+  img {
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -112,6 +125,19 @@
 
   details > summary {
     font-weight: bold;
+  }
+
+  /* Dark mode: force light colors for print */
+  html[data-theme='dark'] {
+    --ifm-color-emphasis-300: #333;
+    --ifm-background-color: #fff;
+    --ifm-font-color-base: #000;
+  }
+
+  html[data-theme='dark'] * {
+    color: #000 !important;
+    border-color: #ccc !important;
+    background: #fff !important;
   }
 
   /* Add page margins */

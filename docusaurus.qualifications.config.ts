@@ -78,6 +78,7 @@ const config: Config = {
       tagName: 'script',
       attributes: {
         src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
+        integrity: 'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
         crossorigin: 'anonymous',
         defer: 'defer',
       },

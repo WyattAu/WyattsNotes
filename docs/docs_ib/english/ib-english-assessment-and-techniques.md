@@ -203,7 +203,7 @@ There are two effective structures for comparative body paragraphs:
 **Structure A: Integrated (preferred).** Each paragraph addresses a single thematic or formal point
 across both texts. The paragraph moves from Text 1 to Text 2 within the same analytical frame.
 
-```
+```text
 Point (shared concern)
   -> Evidence from Text 1
     -> Analysis of Text 1

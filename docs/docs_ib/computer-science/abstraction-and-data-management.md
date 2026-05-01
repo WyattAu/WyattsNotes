@@ -159,7 +159,7 @@ procedures.
 
 **Worked example:** A program to calculate and display student grades.
 
-```
+```python
 PROCEDURE main()
   students ← loadStudentData()
   grades ← calculateGrades(students)
@@ -171,7 +171,7 @@ The `main` procedure does not contain any of the actual logic. It delegates to t
 `loadStudentData` handles file I/O, `calculateGrades` handles the computation, and `displayReport`
 handles the output. Each sub-procedure can be developed, tested, and modified independently.
 
-```
+```python
 FUNCTION calculateGrades(students) RETURNS ARRAY
   FOR i ← 0 TO LENGTH(students) - 1
     total ← 0
@@ -208,7 +208,7 @@ generate a daily summary report. Apply procedural decomposition to design this s
 
 **Level 1 -- Main procedure:**
 
-```
+```python
 PROCEDURE taskManager()
   tasks ← loadTasks()
   PROCESS user input
@@ -221,7 +221,7 @@ END PROCEDURE
 
 **Level 2 -- Refine user input processing:**
 
-```
+```python
 PROCEDURE processInput(tasks)
   choice ← getMenuChoice()
   IF choice = 1
@@ -238,7 +238,7 @@ END PROCEDURE
 
 **Level 3 -- Refine addTask:**
 
-```
+```python
 PROCEDURE addTask(tasks)
   OUTPUT "Enter task description: "
   desc ← INPUT
@@ -283,7 +283,7 @@ specification.
 
 **Implementation (array-based):**
 
-```
+```python
 CLASS Stack
   PRIVATE items : ARRAY[0 : MAX_SIZE - 1] OF INTEGER
   PRIVATE top : INTEGER
@@ -331,7 +331,7 @@ END CLASS
 
 **Implementation (linked-list-based):**
 
-```
+```python
 CLASS Node
   PUBLIC data : INTEGER
   PUBLIC next : Node
@@ -459,7 +459,7 @@ need to coordinate on the interface, not on the implementation details.
 Design a `StudentRecord` class with proper encapsulation. The system must enforce that a student's GPA
 is always between 0.0 and 4.0, and that the student ID cannot be changed after construction.
 
-```
+```python
 CLASS StudentRecord
   PRIVATE studentID : STRING
   PRIVATE name : STRING
@@ -539,7 +539,7 @@ behaviors).
 
 ### Worked Example: BankAccount Class
 
-```
+```python
 CLASS BankAccount
   PRIVATE accountNumber : STRING
   PRIVATE balance : FLOAT
@@ -587,7 +587,7 @@ initial balance cannot be negative.
 
 Trace the following code and determine the final balance:
 
-```
+```python
 acc ← new BankAccount("ACC001", "Alice", 100)
 acc.deposit(50)
 acc.withdraw(200)
@@ -623,7 +623,7 @@ An interface defines a contract that a class must fulfill. It specifies method s
 parameters, return types) without providing implementations. A class that implements an interface
 must provide concrete implementations for all methods defined in the interface.
 
-```
+```python
 INTERFACE Sortable
   FUNCTION compare(item) RETURNS INTEGER
 END INTERFACE
@@ -686,7 +686,7 @@ sufficient for direct implementation.
 
 **Level 1 (highest abstraction):**
 
-```
+```python
 PROCEDURE processResults()
   load data
   calculate statistics
@@ -696,7 +696,7 @@ END PROCEDURE
 
 **Level 2 (refine each sub-procedure):**
 
-```
+```python
 PROCEDURE processResults()
   students ← loadStudentData("results.csv")
   stats ← calculateStatistics(students)
@@ -706,7 +706,7 @@ END PROCEDURE
 
 **Level 3 (refine calculateStatistics):**
 
-```
+```python
 FUNCTION calculateStatistics(students) RETURNS RECORD
   total ← 0
   highest ← -1
@@ -752,7 +752,7 @@ A class is represented as a rectangle divided into three compartments:
 
 Visibility prefixes: `+` (public), `-` (private), `#` (protected)
 
-```
+```python
 +-----------------------+
 |        Student         |
 +-----------------------+
@@ -778,7 +778,7 @@ Visibility prefixes: `+` (public), `-` (private), `#` (protected)
 
 ### Worked Example: School System
 
-```
+```python
 +------------------+       +------------------+
 |     Teacher      |       |     Student      |
 +------------------+       +------------------+
@@ -819,7 +819,7 @@ overriding existing methods.
 Instead of duplicating code across multiple classes, the shared code is defined once in the
 superclass and inherited by all subclasses.
 
-```
+```python
 CLASS Shape
   PRIVATE color : STRING
 
@@ -875,7 +875,7 @@ depends on the type of the object at runtime.
 through a single interface without knowing the specific class of each object. The caller calls
 `shape.area()` without knowing or caring whether the shape is a Rectangle or a Circle.
 
-```
+```python
 shapes ← ARRAY[0..2] OF Shape
 shapes[0] ← new Rectangle(5, 3, "red")
 shapes[1] ← new Circle(2, "blue")
@@ -888,7 +888,7 @@ END FOR
 
 Output:
 
-```
+```python
 Area: 15
 Area: 12.56636
 Area: 100
@@ -902,7 +902,7 @@ runtime. This is **runtime polymorphism** (also called dynamic dispatch or late 
 
 Given the Shape hierarchy above, trace this code:
 
-```
+```python
 shapes ← ARRAY[0..1] OF Shape
 shapes[0] ← new Rectangle(4, 6, "blue")
 shapes[1] ← new Circle(5, "red")
@@ -930,7 +930,7 @@ the same method call `shapes[i].area()` executes different code depending on the
 
 Without polymorphism, you would need a CASE statement or type checking:
 
-```
+```python
 IF shapes[i] is Rectangle
   THEN totalArea ← totalArea + shapes[i].width * shapes[i].height
   ELSE IF shapes[i] is Circle
@@ -948,7 +948,7 @@ class requires no changes to the loop.
 An abstract class is a class that cannot be instantiated directly. It may contain abstract methods
 (methods without implementations) that must be implemented by concrete subclasses.
 
-```
+```python
 ABSTRACT CLASS Animal
   ABSTRACT FUNCTION speak() RETURNS STRING
 
@@ -984,7 +984,7 @@ Design an abstract superclass and two subclasses.
 
 **Solution:**
 
-```
+```python
 ABSTRACT CLASS Vehicle
   PRIVATE registration : STRING
   PRIVATE make : STRING
@@ -1144,7 +1144,7 @@ a polymorphic `calculateBonus()` method.
 
 **Solution:**
 
-```
+```python
 ABSTRACT CLASS Worker
   PROTECTED empID : STRING
   PROTECTED name : STRING
@@ -1309,7 +1309,7 @@ and duration in minutes. Include an abstract method `getDetails()` that returns 
 <details>
 <summary>Solution</summary>
 
-```
+```python
 ABSTRACT CLASS LibraryItem
   PROTECTED itemID : STRING
   PROTECTED title : STRING
@@ -1465,7 +1465,7 @@ hierarchy of procedures at two levels of refinement.
 <details>
 <summary>Solution</summary>
 
-```
+```python
 PROCEDURE atm()
   IF NOT authenticateUser()
     THEN OUTPUT "Invalid PIN. Exiting."
@@ -1533,7 +1533,7 @@ this conditional in every place payments are processed.
 
 With polymorphism, a common interface `PaymentMethod` with a `process(amount)` method is defined:
 
-```
+```python
 INTERFACE PaymentMethod
   FUNCTION process(amount) RETURNS BOOLEAN
 END INTERFACE

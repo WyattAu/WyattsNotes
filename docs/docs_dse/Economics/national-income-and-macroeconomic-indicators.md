@@ -493,7 +493,7 @@ moves up along the long-run vertical Phillips curve.
 
 ### Diagram Description: Short-Run and Long-Run Phillips Curves
 
-```
+```text
   Inflation
     |
     |    SRPC_2
@@ -590,7 +590,7 @@ reliable leading indicators of a recession, historically preceding most US reces
 
 ### Diagram Description: The Business Cycle
 
-```
+```text
   Real GDP
     |
     |              Peak

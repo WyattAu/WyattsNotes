@@ -54,7 +54,7 @@ the Lorenz curve.
 ### Absolute vs. Relative Poverty
 
 **Absolute poverty** refers to a condition where individuals cannot afford basic necessities (food,
-shelter, clean water). The World Bank's international poverty line was $\$2.15$ per day (2017 PPP)
+shelter, clean water). The World Bank's international poverty line was `USD 2.15` per day (2017 PPP)
 for extreme poverty.
 
 **Relative poverty** defines poverty in relation to the economic status of other members of society.
@@ -310,8 +310,8 @@ education, and living standards that income-based measures would not capture.
 <details>
 <summary>Problem 3: Debt Sustainability</summary>
 
-A country has external debt of $\$50$ billion, GDP of $\$100$ billion, annual debt service payments
-of $\$4$ billion, and export earnings of $\$15$ billion. Assess the country's debt situation.
+A country has external debt of `USD 50` billion, GDP of `USD 100` billion, annual debt service payments
+of `USD 4` billion, and export earnings of `USD 15` billion. Assess the country's debt situation.
 
 Debt-to-GDP ratio $= 50 / 100 = 50\%$ (moderate, but context-dependent)
 
@@ -361,8 +361,8 @@ Overall evaluation depends on the quality of domestic regulation, the nature of 
 <details>
 <summary>Problem 5: Comparative Development Analysis</summary>
 
-Country X has GDP per capita (PPP) of $\$12000$ and HDI of 0.780. Country Y has GDP per capita (PPP)
-of $\$15000$ and HDI of 0.720. Explain how this is possible and what it implies for development
+Country X has GDP per capita (PPP) of `USD 12000` and HDI of 0.780. Country Y has GDP per capita (PPP)
+of `USD 15000` and HDI of 0.720. Explain how this is possible and what it implies for development
 policy.
 
 Country Y has higher income per capita but lower human development. This divergence can occur

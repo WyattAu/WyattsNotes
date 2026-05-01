@@ -18,7 +18,7 @@ except for the charge.
 
 ## Lorentz Force Law
 
-[Coulomb's Law](./electric-and-magnetic-fields.md#coulombs-law) is only valid for electrostatics, as
+[Coulomb's Law](./electric-and-magnetic-fields#coulombs-law) is only valid for electrostatics, as
 magnetic force is also induced by moving charge. The combined force ($\bm{F}$) on the test charge
 ($q$) can be governed by Lorentz force law:
 
@@ -642,13 +642,13 @@ helical path. b) The pitch of the helix (distance along the field per revolution
 <summary>Answer 3</summary>
 
 a) The perpendicular component of velocity:
-$v_\perp = v\sin 60° = (6.0 \times 10^6)(0.866) = 5.20 \times 10^6$ m/s.
+$v_\perp = v\sin 60^{\circ} = (6.0 \times 10^6)(0.866) = 5.20 \times 10^6$ m/s.
 $r = \frac{m_e v_\perp}{|q|B} = \frac{(9.11 \times 10^{-31})(5.20 \times 10^6)}{(1.60 \times 10^{-19})(0.40)} = \frac{4.74 \times 10^{-24}}{6.40 \times 10^{-20}} = 7.41 \times 10^{-5}$
 m $= 74.1$ \mu m.
 
 b) Period:
 $T = \frac{2\pi m_e}{|q|B} = \frac{2\pi(9.11 \times 10^{-31})}{(1.60 \times 10^{-19})(0.40)} = 8.95 \times 10^{-11}$
-s. Parallel component: $v_\parallel = v\cos 60° = (6.0 \times 10^6)(0.500) = 3.0 \times 10^6$ m/s.
+s. Parallel component: $v_\parallel = v\cos 60^{\circ} = (6.0 \times 10^6)(0.500) = 3.0 \times 10^6$ m/s.
 Pitch: $p = v_\parallel T = (3.0 \times 10^6)(8.95 \times 10^{-11}) = 2.69 \times 10^{-4}$ m
 $= 0.269$ mm.
 

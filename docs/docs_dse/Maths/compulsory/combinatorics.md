@@ -16,7 +16,7 @@ Combinatorics is the study of enumeration and arrangement.
 
 ### Sum Rule
 
-Given two [mutually exclusive](./probability.md#mutually-exclusive-events) events, where the first
+Given two [mutually exclusive](./probability#mutually-exclusive-events) events, where the first
 event can occur in $n_1$ distinct ways and the second event in $n_2$ distinct ways, the total number
 of occurrences ($N$) for either event is $n_1 + n_2$. This extends to $k$ mutually exclusive events:
 
@@ -207,7 +207,7 @@ The sign alternates: add singleton sizes, subtract pairwise intersections, add t
 and so on.
 
 :::info Connection to Probability The inclusion-exclusion principle has a direct analogue in
-probability via the [addition rule](./probability.md). If $A, B$ are events in a sample space $S$,
+probability via the [addition rule](./probability). If $A, B$ are events in a sample space $S$,
 then:
 
 $$

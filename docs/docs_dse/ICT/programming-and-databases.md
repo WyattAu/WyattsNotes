@@ -406,7 +406,7 @@ Flowcharts use standard symbols to represent algorithms visually:
 Pseudocode is a structured English-like description of an algorithm. It is not executable but
 clearly expresses the logic.
 
-```
+```python
 BEGIN
     INPUT score
     IF score >= 50 THEN
@@ -424,7 +424,7 @@ debugging.
 
 **Example:** Trace the following algorithm with `n = 5`:
 
-```
+```python
 sum = 0
 count = 1
 WHILE count <= n
@@ -449,7 +449,7 @@ Output: `sum = 15`
 
 Write pseudocode to find the average of an array of numbers.
 
-```
+```python
 BEGIN
     INPUT size
     SET numbers = array of size
@@ -884,7 +884,7 @@ Verification ensures that data entered matches the original source.
 
 **Question 1:** Write pseudocode to input 10 numbers and output the smallest.
 
-```
+```python
 BEGIN
     SET smallest = 999999
     FOR i = 1 TO 10

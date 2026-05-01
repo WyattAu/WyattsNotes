@@ -1,5 +1,6 @@
 import Layout from '@theme/Layout';
 import React, { useEffect, useRef, useState } from 'react';
+import styles from './search.module.css';
 
 const ALGOLIA_APP_ID = 'SJ0ASLWZCS';
 const ALGOLIA_SEARCH_KEY = 'a540fa6255600d7ed9eaf06406c2a272';
@@ -33,12 +34,12 @@ const INDICES: IndexConfig[] = [
   { name: 'Programming', indexName: 'wyattsnotes_programming', color: '#CE93D8' },
 ];
 
-function getIndexColor(indexName: string): string {
-  return INDICES.find((i) => i.indexName === indexName)?.color ?? '#999';
-}
+const INDEX_COLOR_MAP = Object.fromEntries(INDICES.map((i) => [i.indexName, i.color]));
 
-function getIndexLabel(indexName: string): string {
-  return INDICES.find((i) => i.indexName === indexName)?.name ?? indexName;
+const INDEX_LABEL_MAP = Object.fromEntries(INDICES.map((i) => [i.indexName, i.name]));
+
+function getIndexColor(indexName: string): string {
+  return INDEX_COLOR_MAP[indexName] ?? '#999';
 }
 
 function getBreadcrumb(hit: AlgoliaHit): string {
@@ -74,13 +75,121 @@ function getSnippet(hit: AlgoliaHit): string {
   return '';
 }
 
+function SearchInput({ query, setQuery, isLoading }: { query: string; setQuery: (q: string) => void; isLoading: boolean }) {
+  return (
+    <div className={styles.inputWrapper}>
+      <input
+        type="text"
+        placeholder="Search notes..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        autoFocus
+        className={styles.searchInput}
+      />
+      <svg
+        className={styles.searchIcon}
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <circle cx="11" cy="11" r="8" />
+        <path d="m21 21-4.35-4.35" />
+      </svg>
+      {isLoading && (
+        <div className={styles.loadingIndicator}>
+          Searching...
+        </div>
+      )}
+    </div>
+  );
+}
+
+const SearchResultCard = React.memo(function SearchResultCard({ hit }: { hit: AlgoliaHit & { _indexName: string } }) {
+  const indexName = hit._indexName;
+  const color = getIndexColor(indexName);
+  const label = INDEX_LABEL_MAP[indexName] ?? indexName;
+  const breadcrumb = getBreadcrumb(hit);
+  const snippet = getSnippet(hit);
+
+  return (
+    <a
+      key={hit.objectID}
+      href={hit.url}
+      className={styles.resultCard}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = color;
+        e.currentTarget.style.boxShadow = `0 2px 12px ${color}22`;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = 'var(--ifm-color-emphasis-200)';
+        e.currentTarget.style.boxShadow = 'none';
+      }}
+    >
+      <div className={styles.cardHeader}>
+        <span
+          className={styles.cardLabel}
+          style={{ background: `${color}22`, color }}
+        >
+          {label}
+        </span>
+        {breadcrumb && (
+          <span className={styles.breadcrumb}>
+            {breadcrumb}
+          </span>
+        )}
+      </div>
+      <div className={styles.cardTitle}>
+        {hit.title}
+      </div>
+      {snippet && (
+        <div
+          className={styles.cardSnippet}
+          dangerouslySetInnerHTML={{ __html: snippet }}
+        />
+      )}
+    </a>
+  );
+});
+
+function IndexGrid() {
+  return (
+    <div className={styles.indexGrid}>
+      {INDICES.map((index) => (
+        <div key={index.indexName} className={styles.indexCard}>
+          <div className={styles.indexCardTitle}>
+            {index.name}
+          </div>
+          <div className={styles.indexCardSubtitle}>
+            Type to search across this section
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function SearchEmptyState({ query, isLoading }: { query: string; isLoading: boolean }) {
+  if (isLoading || !query.trim()) {
+    return null;
+  }
+  return (
+    <p className={styles.noResults}>
+      No results found for &quot;{query}&quot;
+    </p>
+  );
+}
+
 export default function SearchPage(): React.ReactElement {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<AlgoliaHit[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
   const searchTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -181,194 +290,26 @@ export default function SearchPage(): React.ReactElement {
       title="Search - Wyatt's Notes"
       description="Search across all Wyatt's Notes subjects and notes"
     >
-      <main ref={containerRef} style={{ maxWidth: 800, margin: '0 auto', padding: '2rem 1rem' }}>
-        <h1 style={{ marginBottom: '0.5rem' }}>Search</h1>
-        <p style={{ color: 'var(--ifm-color-secondary)', marginBottom: '2rem' }}>
+      <main className={styles.main}>
+        <h1 className={styles.heading}>Search</h1>
+        <p className={styles.subtitle}>
           Search across all notes — IB, A-Level, DSE, GCSE, AP, C++, and more.
         </p>
-        <div style={{ position: 'relative', marginBottom: '2rem' }}>
-          <input
-            type="text"
-            placeholder="Search notes..."
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            autoFocus
-            style={{
-              width: '100%',
-              padding: '0.75rem 1rem',
-              paddingLeft: '2.5rem',
-              fontSize: '1rem',
-              borderRadius: 8,
-              border: '1px solid var(--ifm-color-emphasis-300)',
-              background: 'var(--ifm-background-color)',
-              color: 'var(--ifm-font-color-base)',
-              outline: 'none',
-              boxSizing: 'border-box',
-            }}
-          />
-          <svg
-            style={{
-              position: 'absolute',
-              left: '0.75rem',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              color: 'var(--ifm-color-secondary)',
-              pointerEvents: 'none',
-            }}
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.35-4.35" />
-          </svg>
-          {loading && (
-            <div
-              style={{
-                position: 'absolute',
-                right: '0.75rem',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                color: 'var(--ifm-color-secondary)',
-                fontSize: '0.85rem',
-              }}
-            >
-              Searching...
-            </div>
-          )}
-        </div>
-
+        <SearchInput query={query} setQuery={setQuery} isLoading={loading} />
         {error && (
-          <div
-            style={{
-              padding: '1rem',
-              marginBottom: '1rem',
-              borderRadius: 8,
-              border: '1px solid var(--ifm-color-danger)',
-              color: 'var(--ifm-color-danger)',
-              background: 'var(--ifm-color-danger-contrast-background)',
-            }}
-          >
+          <div className={styles.errorBox}>
             {error}
           </div>
         )}
-
-        {query.trim() && !loading && results.length === 0 && !error && (
-          <p style={{ color: 'var(--ifm-color-secondary)', textAlign: 'center', padding: '2rem' }}>
-            No results found for &quot;{query}&quot;
-          </p>
-        )}
-
+        <SearchEmptyState query={query} isLoading={loading} />
         {results.length > 0 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            {results.map((hit) => {
-              const indexName = (hit as Record<string, unknown>)._indexName as string;
-              const color = getIndexColor(indexName);
-              const label = getIndexLabel(indexName);
-              const breadcrumb = getBreadcrumb(hit);
-              const snippet = getSnippet(hit);
-
-              return (
-                <a
-                  key={hit.objectID}
-                  href={hit.url}
-                  style={{
-                    display: 'block',
-                    padding: '1rem 1.25rem',
-                    borderRadius: 8,
-                    border: '1px solid var(--ifm-color-emphasis-200)',
-                    textDecoration: 'none',
-                    color: 'inherit',
-                    transition: 'border-color 0.2s, box-shadow 0.2s',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = color;
-                    e.currentTarget.style.boxShadow = `0 2px 12px ${color}22`;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = 'var(--ifm-color-emphasis-200)';
-                    e.currentTarget.style.boxShadow = 'none';
-                  }}
-                >
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.5rem',
-                      marginBottom: '0.25rem',
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontSize: '0.7rem',
-                        fontWeight: 600,
-                        padding: '0.1rem 0.4rem',
-                        borderRadius: 4,
-                        background: `${color}22`,
-                        color: color,
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em',
-                      }}
-                    >
-                      {label}
-                    </span>
-                    {breadcrumb && (
-                      <span style={{ fontSize: '0.8rem', color: 'var(--ifm-color-secondary)' }}>
-                        {breadcrumb}
-                      </span>
-                    )}
-                  </div>
-                  <div style={{ fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.25rem' }}>
-                    {hit.title}
-                  </div>
-                  {snippet && (
-                    <div
-                      style={{
-                        fontSize: '0.85rem',
-                        color: 'var(--ifm-color-secondary)',
-                        lineHeight: 1.5,
-                      }}
-                      dangerouslySetInnerHTML={{ __html: snippet }}
-                    />
-                  )}
-                </a>
-              );
-            })}
-          </div>
-        )}
-
-        {!query.trim() && (
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-              gap: '1rem',
-            }}
-          >
-            {INDICES.map((index) => (
-              <div
-                key={index.indexName}
-                style={{
-                  padding: '1.25rem',
-                  borderRadius: 8,
-                  border: '1px solid var(--ifm-color-emphasis-200)',
-                }}
-              >
-                <div style={{ fontWeight: 600, fontSize: '1rem', marginBottom: '0.25rem' }}>
-                  {index.name}
-                </div>
-                <div style={{ fontSize: '0.85rem', color: 'var(--ifm-color-secondary)' }}>
-                  Type to search across this section
-                </div>
-              </div>
+          <div className={styles.resultsContainer}>
+            {results.map((hit) => (
+              <SearchResultCard key={hit.objectID} hit={hit as AlgoliaHit & { _indexName: string }} />
             ))}
           </div>
         )}
+        {!query.trim() && <IndexGrid />}
       </main>
     </Layout>
   );

@@ -20,7 +20,7 @@ $$
 
 ### Magnetic Flux in Uniform Magnetic Field
 
-In a [uniform](./motion-in-electromagnetic-fields.md#uniform-fields) magnetic field, the magnetic
+In a [uniform](./motion-in-electromagnetic-fields#uniform-fields) magnetic field, the magnetic
 field ($\bm{B}$) is a space invariant, where if the surface also have no curvature (such as a
 plane), then the magnetic flux can be expressed with the area ($\bm{A}$) of the plane:
 
@@ -605,7 +605,7 @@ $30^\circ$ to a magnetic field of $0.25\mathrm{ T}$. Calculate the induced EMF.
 <summary>Solution</summary>
 
 $$
-\epsilon = Blv\sin\theta = (0.25)(0.60)(8.0)\sin 30° = (0.25)(0.60)(8.0)(0.500) = 0.60\mathrm{ V}
+\epsilon = Blv\sin\theta = (0.25)(0.60)(8.0)\sin 30^{\circ} = (0.25)(0.60)(8.0)(0.500) = 0.60\mathrm{ V}
 $$
 
 </details>

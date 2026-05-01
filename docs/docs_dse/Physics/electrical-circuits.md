@@ -354,7 +354,7 @@ The SI unit is the watt (W), where $1 \mathrm{ W} = 1 \mathrm{ J/s}$.
 ### Worked Example 8
 
 A $220 \mathrm{ V}$ electric heater has a power rating of $2000 \mathrm{ W}$. Find the current it
-draws, its resistance, and the cost of running it for 5 hours at $\$0.90$ per kWh.
+draws, its resistance, and the cost of running it for 5 hours at `USD 0.90` per kWh.
 
 <details>
 <summary>Solution</summary>
