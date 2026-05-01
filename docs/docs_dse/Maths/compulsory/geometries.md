@@ -348,7 +348,7 @@ $$
 \end{aligned}
 $$
 
-Using the [Heron's formula](./trigonometry) for a triangle with side lengths $a$, $b$, $c$ and
+Using the [Heron's formula](./trigonometry)) for a triangle with side lengths $a$, $b$, $c$ and
 semi-perimeter $s = \frac{a+b+c}{2}$:
 
 $$

@@ -12,7 +12,7 @@ slug: trigonometry
 
 Trigonometry is the study of relationships involving lengths and angles of triangles. It is a
 central topic in the DSE Mathematics compulsory syllabus, connecting
-[coordinate geometry](./geometries) with algebraic techniques and serving as a foundation for
+[coordinate geometry](./geometries)) with algebraic techniques and serving as a foundation for
 many applied problems in two and three dimensions.
 
 ## Angles and Arcs

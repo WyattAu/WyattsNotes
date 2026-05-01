@@ -594,5 +594,5 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
 
 ## Cross-References
 
-- **Differential equations** and systems solved via matrix methods: see [Differential Equations](../calculus/differential-equations)
+- **Differential equations** and systems solved via matrix methods: see [Differential Equations](../differential-equations)
 - **Proof and reasoning** for properties of determinants: see [Proof](../proof)

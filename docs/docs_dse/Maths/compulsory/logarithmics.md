@@ -14,7 +14,7 @@ Logarithms are the inverse operation of exponentiation and play a central role i
 Mathematics compulsory syllabus. They arise naturally when solving exponential equations, modelling
 growth and decay, and simplifying multiplicative structures into additive ones. This topic builds
 directly on the properties of [exponential functions](./functions#exponential-functions) and
-connects to [geometric sequences and series](./sequences-and-series) in applications involving
+connects to [geometric sequences and series](./sequences-series)) in applications involving
 compound growth.
 
 ## Definition of Logarithms
@@ -388,7 +388,7 @@ $$
 ### Compound Interest
 
 The compound interest formula is closely related to logarithms and
-[geometric sequences](./sequences-and-series). If a principal $P$ is invested at an annual rate
+[geometric sequences](./sequences-series)). If a principal $P$ is invested at an annual rate
 $r\%$ compounded $n$ times per year for $t$ years, the accumulated amount $A$ is:
 
 $$
@@ -512,7 +512,7 @@ $0 < a < 1$.
 ### Transformations
 
 The standard transformations apply, following the same principles as for other
-[functions](./functions):
+[functions](./functions)):
 
 | Transformation      | Effect                                              |
 | ------------------- | --------------------------------------------------- |

@@ -12,8 +12,8 @@ slug: functions
 
 A **function** is a rule that assigns to each element in one set exactly one element in another set.
 Functions are central to the DSE Mathematics compulsory syllabus and underpin topics including
-[polynomials](./polynomials), [logarithms](./logarithmics),
-[sequences](./sequences-and-series), and [inequalities](./inequalities).
+[polynomials](./polynomials)), [logarithms](./logarithmics),
+[sequences](./sequences-series)), and [inequalities](./inequalities)).
 
 ## Functions and Relations
 
@@ -178,7 +178,7 @@ $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
-See also [polynomials](./polynomials) for connections between quadratic functions and polynomial
+See also [polynomials](./polynomials)) for connections between quadratic functions and polynomial
 equations.
 
 ### Completing the Square
@@ -190,7 +190,7 @@ To complete the square for $ax^2 + bx + c$:
    $a\left[\left(x + \dfrac{b}{2a}\right)^2 - \left(\dfrac{b}{2a}\right)^2\right] + c$.
 3. Simplify to obtain the vertex form.
 
-This technique is also essential in solving [inequalities](./inequalities) involving quadratic
+This technique is also essential in solving [inequalities](./inequalities)) involving quadratic
 expressions.
 
 <details>
@@ -521,7 +521,7 @@ parabola:
 | $\Delta = 0$   | One repeated | All $x \neq x_1$           | No solution             |
 | $\Delta \lt 0$ | None         | All $x \in \mathbb{R}$     | No solution             |
 
-See [inequalities.md](./inequalities) for the general theory.
+See [inequalities.md](./inequalities)) for the general theory.
 
 ### Rational Inequalities
 

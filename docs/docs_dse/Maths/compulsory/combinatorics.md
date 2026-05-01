@@ -207,7 +207,7 @@ The sign alternates: add singleton sizes, subtract pairwise intersections, add t
 and so on.
 
 :::info Connection to Probability The inclusion-exclusion principle has a direct analogue in
-probability via the [addition rule](./probability). If $A, B$ are events in a sample space $S$,
+probability via the [addition rule](./probability)). If $A, B$ are events in a sample space $S$,
 then:
 
 $$
