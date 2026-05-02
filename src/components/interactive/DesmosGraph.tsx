@@ -196,6 +196,8 @@ export const DesmosGraph: React.FC<DesmosGraphProps> = ({
       <div
         ref={containerRef}
         className={styles.embedResponsive}
+        role="img"
+        aria-label={title}
         style={{
           paddingBottom: `${aspectPadding}%`,
           position: 'relative',

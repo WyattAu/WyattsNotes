@@ -73,9 +73,9 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 0.65rem 1.5rem;
-  background-color: var(--ifm-color-primary);
-  color: #000;
-  border: 2px solid var(--ifm-color-primary);
+  background-color: #b33a19;
+  color: #fff;
+  border: 2px solid #b33a19;
   text-decoration: none;
   transition:
     background-color 0.15s ease,
@@ -205,12 +205,12 @@
 }
 
 .card:hover {
-  background-color: var(--ifm-color-primary);
-  color: #000;
+  background-color: #b33a19;
+  color: #fff;
 }
 
 [data-theme='dark'] .card:hover {
-  color: #000;
+  color: #fff;
 }
 
 .card:hover .cardTag {

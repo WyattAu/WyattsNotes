@@ -1,41 +1,140 @@
 name: Lighthouse CI
 
 on:
-  pull_request:
-    branches: [main, staging]
-  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Deploy Main Site to Cloudflare Pages
+      - Deploy Academics to Cloudflare Pages
+      - Deploy A-Levels to Cloudflare Pages
+      - Deploy Qualifications to Cloudflare Pages
+      - Deploy Programming to Cloudflare Pages
+      - Deploy University to Cloudflare Pages
+    types: [completed]
+    branches: [main]
 
 jobs:
-  lighthouse:
-    name: Lighthouse Audit
+  lighthouse-main:
+    name: Lighthouse - Main
+    if: github.event.workflow == 'Deploy Main Site to Cloudflare Pages' && github.event.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
         with:
           version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build website
-        run: pnpm run build
-        env:
-          NODE_OPTIONS: --max-old-space-size=12288
-
-      - name: Run Lighthouse CI
-        uses: treosh/lighthouse-ci-action@v12
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lighthouse -- --collect.url=https://wyattsnotes.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          configPath: ./lighthouserc.js
-          uploadArtifacts: true
-          budgetPath: ./lighthouserc.js
-          runs: 1
+          name: lighthouse-main-results
+          path: .lighthouseci
+
+  lighthouse-academics:
+    name: Lighthouse - Academics
+    if: github.event.workflow == 'Deploy Academics to Cloudflare Pages' && github.event.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lighthouse -- --collect.url=https://academics.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-academics-results
+          path: .lighthouseci
+
+  lighthouse-alevel:
+    name: Lighthouse - A-Levels
+    if: github.event.workflow == 'Deploy A-Levels to Cloudflare Pages' && github.event.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lighthouse -- --collect.url=https://alevel.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-alevel-results
+          path: .lighthouseci
+
+  lighthouse-qualifications:
+    name: Lighthouse - Qualifications
+    if: github.event.workflow == 'Deploy Qualifications to Cloudflare Pages' && github.event.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lighthouse -- --collect.url=https://qualifications.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-qualifications-results
+          path: .lighthouseci
+
+  lighthouse-programming:
+    name: Lighthouse - Programming
+    if: github.event.workflow == 'Deploy Programming to Cloudflare Pages' && github.event.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lighthouse -- --collect.url=https://programming.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-programming-results
+          path: .lighthouseci
+
+  lighthouse-university:
+    name: Lighthouse - University
+    if: github.event.workflow == 'Deploy University to Cloudflare Pages' && github.event.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lighthouse -- --collect.url=https://university.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-university-results
+          path: .lighthouseci

@@ -123,12 +123,12 @@
 }
 
 .card:hover {
-  background-color: var(--ifm-color-primary);
-  color: #000;
+  background-color: #b33a19;
+  color: #fff;
 }
 
 [data-theme='dark'] .card:hover {
-  color: #000;
+  color: #fff;
 }
 
 .card:hover .cardTag {

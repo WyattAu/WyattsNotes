@@ -22,7 +22,8 @@
     "content-check": "npm run mdlint && npm run spellcheck",
     "validate:mdx": "python3 scripts/validate-mdx.py",
     "validate:links": "python3 scripts/check-links.py",
-    "validate:content": "python3 scripts/validate-mdx.py && python3 scripts/check-links.py"
+    "validate:content": "python3 scripts/validate-mdx.py && python3 scripts/check-links.py",
+    "lighthouse": "lhci autorun"
   },
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.20",

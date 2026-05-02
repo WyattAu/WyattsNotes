@@ -81,6 +81,7 @@ function SearchInput({ query, setQuery, isLoading }: { query: string; setQuery: 
       <input
         type="text"
         placeholder="Search notes..."
+        aria-label="Search notes"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         autoFocus
