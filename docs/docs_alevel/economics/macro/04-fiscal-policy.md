@@ -583,3 +583,15 @@ Partially false. Crowding out was limited during 2008–09 because: (1) The econ
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Including transfer payments as part of G in the AD equation:** Transfer payments (benefits, pensions) are NOT part of government spending G in AD = C + I + G + (X-M). They affect AD indirectly through their effect on disposable income and therefore consumption C. Including them as G leads to double counting.
+
+- **Confusing deficit and debt:** A budget deficit is how much the government overspends in a single year (a flow). National debt is the accumulated total of all past deficits (a stock). A country can reduce its deficit while its debt continues to grow. Only a surplus actually reduces the debt.
+
+- **Assuming crowding out is always full:** Crowding out depends on the state of the economy. In a deep recession with idle resources and interest rates at the zero lower bound, crowding out is minimal. At full employment, crowding out is much more severe. Always state the economic context when discussing crowding out.
+
+- **Misapplying the balanced budget multiplier:** The balanced budget multiplier of 1 holds only for lump-sum taxes. If taxes are proportional (MPT > 0), the balanced budget multiplier is less than 1 because some of the tax increase reduces autonomous consumption. Always check the type of tax in the question.
+
+:::

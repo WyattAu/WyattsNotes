@@ -1334,6 +1334,18 @@ than $\mathrm{F}$.
 
 :::
 
+
+:::danger Common Pitfalls
+
+- **Confusing first ionisation energy with electronegativity:** First ionisation energy is the energy required to REMOVE the outermost electron from a gaseous atom. Electronegativity is the ability of an atom to ATTRACT electrons in a covalent bond. Both generally increase across a period, but they measure fundamentally different properties and have different periodic trends down a group.
+
+- **Misunderstanding why ionisation energy decreases down a group:** Ionisation energy decreases down a group because the outermost electron is in a higher energy shell, FURTHER from the nucleus and more shielded by inner electrons. The increased distance and shielding outweigh the increased nuclear charge. Students often mention only one factor when both are needed.
+
+- **Confusing periodic trends across a period:** Across a period, atomic radius DECREASES (increasing nuclear charge pulls electrons closer), first ionisation energy generally INCREASES, electronegativity INCREASES, and metallic character DECREASES. Students frequently get one or more of these trends backwards.
+
+- **Misidentifying exceptions in ionisation energy trends:** The general increase in first ionisation energy across a period has dips at Group 13 (e.g., boron) and Group 16 (e.g., oxygen). Group 13 dips because the p1 electron is in a higher energy p-subshell. Group 16 dips because the p4 electron is paired with another electron in the same orbital, creating repulsion. These exceptions are frequently tested in IB exams.
+
+:::
 ## Practice Problems
 
 <details>

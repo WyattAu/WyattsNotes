@@ -622,3 +622,15 @@ Ready to test your understanding of **Wave Properties**? The [diagnostic test](/
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing wave speed with particle speed:** In a transverse wave, the wave propagates horizontally but the particles oscillate vertically. The wave speed v = f * lambda is the speed of the wave pattern, not the speed of the individual particles. Particles in the medium do NOT travel with the wave.
+
+- **Confusing frequency with period:** Frequency f is the number of oscillations per second (Hz). Period T is the time for one complete oscillation (s). They are related by f = 1/T. A common error is to confuse which is the reciprocal of the other or to add them instead of converting.
+
+- **Not distinguishing between transverse and longitudinal waves:** In transverse waves, oscillations are PERPENDICULAR to the direction of energy transfer (light, water surface waves, S-waves). In longitudinal waves, oscillations are PARALLEL to the direction of energy transfer (sound, P-waves). Only longitudinal waves have compressions and rarefactions.
+
+- **Misidentifying points on a wave that are in phase:** Two points are in phase if the distance between them is a whole number of wavelengths (n * lambda). They are in antiphase if the distance is an odd multiple of half-wavelengths ((n + 0.5) * lambda). The phase difference between adjacent points is 2 * pi * (path difference) / lambda.
+
+:::

@@ -672,3 +672,15 @@ Ready to test your understanding of **Momentum**? The [diagnostic test](/physics
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing momentum and kinetic energy in collisions:** Momentum is always conserved in a collision (if no external forces). Kinetic energy is only conserved in PERFECTLY ELASTIC collisions. In inelastic collisions, kinetic energy is lost (converted to heat, sound, deformation) but momentum is still conserved. Never assume a collision is elastic unless told so.
+
+- **Forgetting that momentum is a vector:** When solving 2D collision problems, momentum must be conserved separately in each direction (x and y). A common error is to add momentum magnitudes without considering direction. Two objects of equal mass moving at equal speeds in opposite directions have a total momentum of ZERO.
+
+- **Assuming impulse only changes the faster object's momentum:** In a collision, both objects experience equal and opposite impulses (Newton's third law). The change in momentum of object A is equal in magnitude and opposite in direction to the change in momentum of object B, regardless of their relative masses or speeds.
+
+- **Misapplying the coefficient of restitution:** The coefficient of restitution e relates the RELATIVE speed of separation to the RELATIVE speed of approach: e = (v2 - v1) / (u1 - u2). Note the order of subtraction -- the sign matters. For a perfectly elastic collision e = 1, for perfectly inelastic e = 0.
+
+:::

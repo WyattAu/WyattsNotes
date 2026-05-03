@@ -567,3 +567,15 @@ Ready to test your understanding of **Refraction and TIR**? The [diagnostic test
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing the critical angle with the angle of incidence:** The critical angle c is the MINIMUM angle of incidence (measured from the normal) at which total internal reflection occurs. TIR happens when the angle of incidence EXCEEDS the critical angle, not when it equals it. Light going from glass to air at an angle less than c is refracted, not totally reflected.
+
+- **Forgetting that TIR only occurs when going from denser to less dense medium:** Total internal reflection can ONLY happen when light travels from a medium with HIGHER refractive index to one with LOWER refractive index (e.g., glass to air, not air to glass). The boundary must also exist -- TIR cannot occur if the second medium has the same or higher refractive index.
+
+- **Misapplying Snell's law at the critical angle:** At the critical angle, the angle of refraction is exactly 90 degrees. So sin(c) = n2/n1. Many students try to substitute 90 degrees into Snell's law incorrectly or forget that the refractive index ratio is n_rarer / n_denser.
+
+- **Confusing refractive index with angle of refraction:** Refractive index n = sin(i) / sin(r) relates the angles, but n is a PROPERTY of the material, not the angle. The refractive index is defined as the ratio of the speed of light in vacuum to the speed in the medium (n = c/v), and it is always greater than or equal to 1 for real materials.
+
+:::

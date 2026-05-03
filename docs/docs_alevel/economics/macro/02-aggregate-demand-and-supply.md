@@ -668,3 +668,15 @@ demands, creating a wage-price spiral.
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing shifts with movements along AD/SRAS:** An increase in the price level does NOT shift the AD curve -- it causes a movement along it. Only changes in the components of AD (C, I, G, X-M) at a given price level shift the curve. This is the single most common exam error.
+
+- **Assuming the multiplier always works:** The multiplier effect assumes spare capacity in the economy. If the economy is at or near full employment, an increase in government spending will mainly raise prices (inflation) rather than output, making the real multiplier close to zero.
+
+- **Ignoring the role of expectations in SRAS:** The SRAS curve shifts when expected prices change. If firms and workers expect higher inflation, they adjust wages and prices in advance, shifting SRAS left. This self-fulfilling mechanism is why central banks anchor inflation expectations.
+
+- **Drawing the LRAS in the wrong position:** Some students draw LRAS through the current equilibrium point. The LRAS is fixed at potential output Y* regardless of where short-run equilibrium happens to be. If SR equilibrium is to the left of LRAS, there is a recessionary gap.
+
+:::

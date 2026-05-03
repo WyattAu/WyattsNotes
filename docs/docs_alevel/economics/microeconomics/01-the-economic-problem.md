@@ -659,3 +659,15 @@ This question requires evaluating the assumptions of rational choice theory agai
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Defining opportunity cost as "everything you give up":** Opportunity cost is the value of the NEXT-BEST alternative only, not the sum of all alternatives. If you spend £10 on a book when your next-best option is a £10 film ticket, the opportunity cost is the film ticket alone -- not the film ticket plus a coffee.
+
+- **Confusing positive and normative statements:** A positive statement is testable ("inflation is 3.2%") while a normative statement involves value judgements ("inflation is too high"). Look for trigger words like "should," "ought," "fair," and "too much" to identify normative statements. The fact that a policy works (positive) does not mean it should be adopted (normative).
+
+- **Drawing the PPF as convex (bowed inward):** The PPF is typically CONCAVE (bowed outward from the origin) because resources are not perfectly adaptable between uses, causing increasing opportunity costs. A linear PPF implies constant opportunity costs, which is a special case, not the norm.
+
+- **Assuming all points inside the PPF represent unemployment:** A point inside the PPF can also represent productive inefficiency (resources are employed but misallocated -- e.g., highly skilled workers doing unskilled tasks). Not all inefficiency is due to unemployment.
+
+:::

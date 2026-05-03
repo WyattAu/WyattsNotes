@@ -852,6 +852,18 @@ $$\mathrm{Bond order} = \frac{1}{2}(\mathrm{bonding electrons} - \mathrm{antibon
 in antibonding orbitals), which cannot be explained by simple Lewis structures.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Confusing atomic number with mass number:** Atomic number (proton number) defines the element and equals the number of protons. Mass number equals protons PLUS neutrons. Isotopes of the same element have the same atomic number but different mass numbers. Students frequently mix these up when writing nuclear notation.
+
+- **Drawing ionic bonds with shared electrons:** Ionic bonding involves the TRANSFER of electrons from metal to non-metal, forming positive and negative ions held by electrostatic attraction. There are NO shared electron pairs in ionic bonds. Shared electrons indicate covalent bonding, which occurs between non-metals.
+
+- **Forgetting that metallic bonding is different from both ionic and covalent:** Metallic bonding involves a lattice of positive metal ions surrounded by a "sea" of delocalised electrons. It is NOT ionic (no oppositely charged ions) and NOT covalent (no shared electron pairs). This delocalised electron model explains why metals conduct electricity and are malleable.
+
+- **Misidentifying bond polarity:** A covalent bond is polar if the two atoms have DIFFERENT electronegativities, causing unequal electron sharing. But a polar MOLECULE requires polar bonds AND an asymmetrical shape. CO2 has polar bonds but is a non-polar molecule (linear, symmetrical). H2O is polar (bent shape, dipole moments do not cancel).
+
+:::
 ### Intermolecular Forces in Detail
 
 The strength of intermolecular forces directly affects physical properties:

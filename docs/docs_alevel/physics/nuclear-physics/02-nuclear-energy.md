@@ -939,3 +939,15 @@ Ready to test your understanding of **Nuclear Energy**? The [diagnostic test](/p
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing nuclear fission with nuclear fusion:** Fission splits a HEAVY nucleus into lighter fragments (uranium-235 split by a neutron). Fusion joins LIGHT nuclei into a heavier one (hydrogen isotopes fusing into helium). Both release energy because the binding energy per nucleon curve peaks around iron-56. Fission and fusion move towards this peak from opposite sides.
+
+- **Misunderstanding mass defect and binding energy:** Mass defect is the difference between the mass of a nucleus and the sum of its constituent nucleon masses. Binding energy is the energy EQUIVALENT of this mass defect (E = delta_m * c squared). A larger binding energy per nucleon means a MORE stable nucleus, not that it has more energy available.
+
+- **Forgetting the role of the moderator and control rods:** In a nuclear reactor, the moderator (e.g., graphite, water) SLOWS DOWN fast neutrons so they can be captured by uranium-235 (which preferentially absorbs slow neutrons). Control rods (e.g., boron, cadmium) ABSORB neutrons to control the rate of reaction. These serve different purposes and students frequently confuse them.
+
+- **Assuming all uranium isotopes are fissile:** Only uranium-235 (about 0.7% of natural uranium) is readily fissile by slow neutrons. Uranium-238 (99.3%) can capture fast neutrons but generally does not undergo fission -- instead it becomes plutonium-239 after beta decays. Enrichment increases the proportion of U-235.
+
+:::

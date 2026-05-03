@@ -563,3 +563,15 @@ Comparative advantage: leaving the EU's single market means the UK faces tariffs
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing absolute and comparative advantage:** A country with absolute advantage in BOTH goods still benefits from trade based on comparative advantage (lower opportunity cost). Students often incorrectly conclude that a country with absolute disadvantage in everything should not trade.
+
+- **Assuming a depreciation always improves the current account:** The Marshall-Lerner condition must hold (|PED exports| + |PED imports| > 1) for depreciation to improve the current account. In the short run, the J-curve effect means the current account may WORSEN after depreciation before it improves.
+
+- **Confusing terms of trade improvement with economic welfare:** A terms of trade improvement (export prices rising relative to import prices) is not always beneficial. If it is caused by falling export volumes due to declining competitiveness, it may reflect economic weakness. Context matters.
+
+- **Miscalculating opportunity costs in comparative advantage questions:** Always calculate the opportunity cost in terms of the OTHER good. If Country A can produce 10 cars or 5 trucks, the opportunity cost of 1 car is 0.5 trucks, NOT 2 trucks. Many students invert the ratio.
+
+:::

@@ -970,3 +970,15 @@ Ready to test your understanding of **Current and Resistance**? The [diagnostic 
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing conventional current with electron flow:** Conventional current flows from positive to negative (historical convention). Electrons actually flow from negative to positive. In circuit diagrams and exam questions, always assume conventional current direction unless specifically asked about electron flow.
+
+- **Forgetting to convert units in I = nAev_d calculations:** The drift velocity v_d is typically very small (around 0.1 mm/s), but students often forget to convert to metres per second before substituting. Similarly, cross-sectional area A must be in m squared, not cm squared or mm squared.
+
+- **Misunderstanding what resistance depends on:** Resistance depends on the material (resistivity), length, and cross-sectional area (R = rho * L / A), but NOT on the current or voltage applied. Resistance is a property of the component itself, not the circuit it is connected to.
+
+- **Confusing resistivity with resistance:** Resistivity (rho) is an intrinsic property of the material that does not depend on the dimensions of the wire. Resistance depends on both the material AND the dimensions. A thicker wire of the same material has lower resistance but the same resistivity.
+
+:::

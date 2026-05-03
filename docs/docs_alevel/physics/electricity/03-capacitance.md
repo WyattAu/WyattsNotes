@@ -935,3 +935,15 @@ Ready to test your understanding of **Capacitance**? The [diagnostic test](/phys
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Assuming charge is shared equally between capacitors in series:** In series, all capacitors store the SAME charge, not equal charge. The total charge stored is NOT Q1 + Q2 -- it is the common charge Q that flows through all of them. This is because the same current flows through each capacitor in series.
+
+- **Forgetting that energy is lost when capacitors are reconnected:** When a charged capacitor is disconnected from a source and connected to another (uncharged) capacitor, charge is conserved but energy is NOT conserved. Some energy is always lost as heat in the connecting wires, even though this is not obvious from the equations.
+
+- **Confusing capacitance formulas for series and parallel:** Capacitors in PARALLEL add directly (C_total = C1 + C2), just like resistors in series. Capacitors in SERIES use the reciprocal formula (1/C_total = 1/C1 + 1/C2), just like resistors in parallel. Students frequently mix these up.
+
+- **Misidentifying the area in C = epsilon_0 * A / d:** The area A is the area of ONE plate (the overlapping area), not the total area of both plates. If plates have different areas, use the smaller area. Also, d is the separation between plates, not the thickness of a plate.
+
+:::

@@ -593,3 +593,15 @@ Ready to test your understanding of **Thermodynamics**? The [diagnostic test](/p
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing the first and second laws of thermodynamics:** The first law (conservation of energy: delta_U = Q + W) says energy cannot be created or destroyed. The second law says entropy of an isolated system always increases and heat cannot flow spontaneously from cold to hot. They are different laws addressing different concepts -- do not conflate them.
+
+- **Getting the sign convention wrong in the first law:** The convention is delta_U = Q + W, where Q is positive when energy is transferred TO the system (heating) and W is positive when work is done ON the system (compression). Some textbooks use delta_U = Q - W where W is work done BY the system. Always check which convention the question or your course uses.
+
+- **Assuming all processes are reversible:** A process is only reversible if it can be returned to its initial state with no net change in the system or surroundings. In practice, all real processes are irreversible due to friction, unrestrained expansion, and heat flow across finite temperature differences. Reversibility is an idealisation.
+
+- **Misunderstanding entropy:** Entropy is a measure of disorder or the number of microstates available to a system. The second law says total entropy of an isolated system always increases -- but the entropy of a PART of the system can decrease if the entropy of the surroundings increases by more. A refrigerator decreases entropy inside but increases it outside by a greater amount.
+
+:::

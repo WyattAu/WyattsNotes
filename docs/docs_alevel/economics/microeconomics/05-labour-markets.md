@@ -800,3 +800,15 @@ approach.
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Assuming minimum wages always cause unemployment:** This is only true in perfectly competitive labour markets. Under monopsony (a single dominant employer), a minimum wage set between the monopsony wage and the competitive wage can INCREASE employment. Always state the market structure before analysing minimum wage effects.
+
+- **Confusing MRP with VMP:** Marginal Revenue Product (MRP = MP x MR) applies to all firms. Value of the Marginal Product (VMP = MP x P) is a special case that only applies to perfectly competitive firms where MR = P. Using VMP for an imperfectly competitive firm overstates the firm's demand for labour.
+
+- **Forgetting that MCL exceeds the wage under monopsony:** The key insight of monopsony is that to hire an additional worker, the monopsonist must raise the wage for ALL workers, not just the new one. This makes the Marginal Cost of Labour (MCL) greater than the wage (ACL), leading to lower employment than under competition.
+
+- **Confusing transfer earnings with economic rent:** Transfer earnings are the minimum payment needed to keep a factor in its current use (the opportunity cost). Economic rent is any payment ABOVE transfer earnings. All workers earn at least their transfer earnings; the area above the supply curve and below the wage is economic rent.
+
+:::

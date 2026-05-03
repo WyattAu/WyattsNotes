@@ -579,3 +579,15 @@ Ready to test your understanding of **Properties of Materials**? The [diagnostic
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing stress, strain, and Young's modulus:** Stress is force per unit AREA (Pa = N/m squared), not force per unit length. Strain is the ratio of extension to ORIGINAL length (dimensionless), not extension alone. Young's modulus is stress divided by strain (Pa), and describes stiffness, not strength.
+
+- **Using the wrong area in stress calculations:** Stress = F/A where A is the cross-sectional area perpendicular to the force. For a wire under tension, use the cross-sectional area of the wire (pi * r squared), NOT the surface area. For a cube under compression, use the area of the face the force acts on.
+
+- **Assuming the elastic limit equals the yield point:** The elastic limit is the point beyond which the material will not return to its original shape when the force is removed. The yield point is where it begins to deform plastically. For many materials, these are approximately the same, but for some (like mild steel), there is a small difference.
+
+- **Confusing ultimate tensile strength with breaking stress:** Ultimate tensile strength is the MAXIMUM stress the material can withstand (the peak of the stress-strain curve). Breaking stress is where the material actually fractures (which may be lower if the material necks). They are not always the same.
+
+:::

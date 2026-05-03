@@ -1366,3 +1366,15 @@ Ready to test your understanding of **Evolution and Ecology**? The [diagnostic t
 See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Confusing Lamarckism with Darwinian evolution:** Lamarck proposed that acquired characteristics are inherited (e.g., a giraffe stretches its neck and passes the longer neck to offspring). Darwin proposed natural selection of random mutations. DSE exams frequently test this distinction. Only Darwinian evolution is accepted by modern biology.
+
+- **Misunderstanding what "fitness" means in evolution:** Evolutionary fitness refers to an organism's ability to SURVIVE and REPRODUCE in its environment, not physical strength or intelligence. A trait that improves reproductive success (even if it seems disadvantageous in isolation) increases fitness. A peacock's tail reduces survival but increases mating success.
+
+- **Confusing ecological niches with habitats:** A habitat is where an organism lives (a physical place). A niche is the ROLE an organism plays in its ecosystem -- how it obtains food, interacts with other species, and reproduces. Two species can share a habitat but cannot occupy the exact same niche (competitive exclusion principle).
+
+- **Assuming natural selection always leads to "better" organisms:** Natural selection produces organisms that are BETTER ADAPTED to their CURRENT environment, not objectively "better" or "more advanced." If the environment changes, previously advantageous traits can become disadvantageous. Evolution has no direction or goal.
+
+:::

@@ -1064,6 +1064,18 @@ support or challenge specific points. The best essays will demonstrate that you 
 what each school argues but why it argues it -- and what evidence supports or undermines its claims.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Presenting the Cold War as a simple US vs USSR binary:** The Cold War involved multiple actors -- China, Cuba, European allies, the Non-Aligned Movement, and proxy states in the Third World. IB essays that treat every conflict as purely US-USSR miss the agency of other actors and the complexity of alliances (e.g., the Sino-Soviet split).
+
+- **Over-generalising causation without evidence:** Claims like "the arms race caused the Cold War" or "Gorbachev ended the Cold War" are insufficient without specific evidence. IB mark schemes require precise dating, named leaders, specific events, and historiographical debate. Use phrases like "a significant factor" rather than "the cause."
+
+- **Confusing long-term and short-term causes:** The origins of the Cold War have deep roots (ideological differences, WW2 alliances) and immediate triggers (Yalta/Potsdam disagreements, the atomic bomb). A strong essay distinguishes between underlying conditions and precipitating events, showing how both contributed to the breakdown of cooperation.
+
+- **Presenting historiography as a list of quotes:** Simply quoting different historians without engaging with their ARGUMENTS and METHODOLOGY does not score well. Explain WHY a historian reached their conclusion -- what evidence did they prioritise? What evidence did they dismiss? How does their perspective challenge or complement other interpretations?
+
+:::
 ---
 
 ## Exam Preparation: Key Essay Questions

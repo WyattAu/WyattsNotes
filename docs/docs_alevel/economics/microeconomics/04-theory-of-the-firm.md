@@ -782,3 +782,15 @@ Limit pricing is rational when: (a) the long-run gain from maintaining monopoly 
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing MR with AR (price):** For a firm facing a downward-sloping demand curve, MR is always LESS than price (AR). The MR curve has twice the slope of the demand curve. The only exception is perfect competition, where MR = AR = P because the firm is a price taker.
+
+- **Stating that monopolies always earn supernormal profit:** A monopoly can make losses if demand is insufficient. The monopoly profit-maximising condition (MR = MC) determines output and price, but whether profit is positive depends on whether price exceeds average total cost at that output.
+
+- **Confusing economies of scale with the law of diminishing returns:** Economies of scale are a LONG-RUN concept (all factors variable, LRAC falls). Diminishing returns are a SHORT-RUN concept (at least one factor fixed, MC eventually rises). They operate over different time horizons and are not opposites.
+
+- **Misidentifying the shutdown condition in the short run:** A firm should shut down if price falls below AVERAGE VARIABLE COST (AVC), not below average total cost (ATC). If P > AVC but P < ATC, the firm makes a loss but should continue producing because it covers variable costs and contributes to fixed costs.
+
+:::

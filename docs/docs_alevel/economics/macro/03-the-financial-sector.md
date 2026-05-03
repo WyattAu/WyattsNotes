@@ -673,3 +673,15 @@ The effective multiplier accounts for excess reserves and cash leakages. Let $rr
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing bond prices and bond yields:** Bond prices and interest rates (yields) move in OPPOSITE directions. When interest rates rise, existing bonds with lower coupon rates become less attractive, so their price falls. Many students get this relationship backwards.
+
+- **Assuming the money multiplier works in reverse:** In reality, banks create loans first (creating deposits) and then obtain reserves later -- the endogenous money view. The textbook money multiplier (reserves create deposits) is a simplification. Exam answers should acknowledge this limitation for evaluation marks.
+
+- **Confusing nominal and real interest rates:** A nominal interest rate of 5% with inflation at 7% gives a NEGATIVE real interest rate of -2%. Savers are losing purchasing power. Always apply the Fisher equation: real rate is approximately nominal rate minus inflation rate.
+
+- **Treating QE as equivalent to printing money:** QE involves the central bank buying assets (mostly government bonds), not directly financing government spending. The newly created reserves largely remain in the banking system. This distinction matters for understanding why QE did not cause hyperinflation after 2008.
+
+:::

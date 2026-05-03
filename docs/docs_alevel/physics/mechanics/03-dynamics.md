@@ -768,3 +768,15 @@ Ready to test your understanding of **Dynamics**? The [diagnostic test](/physics
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing mass and weight:** Mass (kg) is a scalar that measures the amount of matter and is constant everywhere. Weight (N) is a VECTOR force equal to mg and varies with gravitational field strength. On the Moon, mass is the same but weight is about 1/6 of Earth weight. Never use "kg" as a unit of force or "N" as a unit of mass.
+
+- **Applying Newton's third law incorrectly:** The action-reaction pair acts on DIFFERENT bodies, not the same body. The normal reaction force from a table on a book is NOT the reaction pair to the book's weight. The reaction pair to weight (Earth pulling book down) is the book pulling Earth up (equal and opposite, on Earth).
+
+- **Including internal forces in free-body diagrams:** When applying F = ma to a system, only include EXTERNAL forces. Tension in a rope connecting two parts of the same system is an internal force and cancels out. Draw separate free-body diagrams for each object if internal forces matter.
+
+- **Forgetting that F = ma applies to the NET force:** F in Newton's second law is the resultant (net) force after combining all forces vectorially. If a block is pushed with 10N to the right and friction is 4N to the left, the net force is 6N, not 10N. Always resolve forces before substituting into F = ma.
+
+:::

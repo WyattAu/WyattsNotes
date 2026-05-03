@@ -833,3 +833,15 @@ Ready to test your understanding of **Magnetic Fields**? The [diagnostic test](/
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Using the wrong hand rule:** Fleming's LEFT-hand rule gives the direction of force on a CONVENTIONAL current (positive to negative). Fleming's RIGHT-hand rule gives the direction of induced current. Using the left hand for electromagnetic induction or the right hand for the motor effect will give the wrong answer.
+
+- **Forgetting that magnetic force does no work:** The magnetic force on a charged particle (F = qvB sin(theta)) is always perpendicular to the velocity. Since force is perpendicular to displacement, the work done is zero and the kinetic energy of the particle does not change. The magnetic force changes direction but not speed.
+
+- **Confusing the angle in F = BIl sin(theta):** The angle theta is the angle between the CURRENT DIRECTION and the FIELD DIRECTION, not the angle between the wire and some other reference. If the wire is perpendicular to the field, theta = 90 degrees and sin(theta) = 1 (maximum force). If parallel, theta = 0 and the force is zero.
+
+- **Not understanding why charged particles move in circles:** A charged particle entering a uniform magnetic field perpendicular to its velocity experiences a force perpendicular to both v and B. This centripetal force causes circular motion with radius r = mv/(qB). The particle does NOT slow down -- the magnetic force only changes direction.
+
+:::

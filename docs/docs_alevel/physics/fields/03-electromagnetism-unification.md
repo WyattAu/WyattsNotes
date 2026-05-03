@@ -711,3 +711,15 @@ Ready to test your understanding of **Electromagnetism**? The [diagnostic test](
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Forgetting Lenz's law when determining induced current direction:** Lenz's law states that the induced e.m.f. opposes the CHANGE in flux, not the flux itself. If flux is increasing, the induced current creates a field opposing the increase. If flux is decreasing, the induced current tries to maintain it. Students often oppose the flux itself rather than the change.
+
+- **Confusing Faraday's and Lenz's laws:** Faraday's law gives the MAGNITUDE of the induced e.m.f. (epsilon = -d(Phi)/dt). Lenz's law gives the DIRECTION (the minus sign). Together they tell you both how large the e.m.f. is and which way the current flows. You need both for a complete answer.
+
+- **Misapplying the transformer equation:** V_s/V_p = N_s/N_p only holds for an IDEAL transformer with 100% efficiency. In reality, there are energy losses due to resistance in the coils, eddy currents in the core, and magnetic flux leakage. If a question gives efficiency, account for it: P_out = efficiency * P_in.
+
+- **Not recognising when flux linkage is changing:** An e.m.f. is only induced when there is a RATE OF CHANGE of flux or flux linkage. A coil in a constant magnetic field produces no e.m.f. even if the flux through it is large. The change can come from moving the coil, changing the field, changing the area, or rotating the coil.
+
+:::

@@ -600,3 +600,15 @@ Ready to test your understanding of **Work, Energy and Power**? The [diagnostic 
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing work done on an object with work done by gravity:** Work done by gravity when an object falls is POSITIVE (force and displacement are in the same direction). Work done AGAINST gravity when lifting is NEGATIVE. When using energy conservation, gravitational PE LOSS equals kinetic energy GAIN -- be careful with signs.
+
+- **Applying conservation of energy when non-conservative forces act:** The work-energy principle (W_net = delta(E_k)) always applies, but conservation of mechanical energy (E_k + E_p = constant) only holds when no non-conservative forces (friction, air resistance) do work. If friction is present, mechanical energy is lost to heat.
+
+- **Forgetting the angle in W = Fd cos(theta):** Work is maximum when the force is parallel to displacement (theta = 0, cos = 1) and zero when perpendicular (theta = 90, cos = 0). A force applied at right angles to motion (e.g., centripetal force in circular motion) does NO work and does not change kinetic energy.
+
+- **Confusing power and energy:** Power is the RATE of doing work (P = W/t = Fv), measured in watts. Energy is the total work done or transferred, measured in joules. A machine that is twice as powerful delivers the same energy in half the time, not twice the energy.
+
+:::

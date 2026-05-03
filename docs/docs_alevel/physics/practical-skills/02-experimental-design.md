@@ -469,6 +469,18 @@ Instead of "use a more accurate instrument", say "use a micrometer instead of a 
 wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm."
 :::
 
+
+:::danger Common Pitfalls
+
+- **Stating "repeat and average" without explaining why:** Simply saying you will repeat readings is insufficient. You must explain that repeating and averaging REDUCES THE EFFECT OF RANDOM ERRORS. It does NOT reduce systematic errors (which affect all readings equally). Distinguish between these two types of error in your answer.
+
+- **Confusing precision with accuracy:** Precision refers to the consistency of repeated measurements (small spread). Accuracy refers to how close the mean value is to the true value. You can have high precision but low accuracy (consistent but wrong readings due to a systematic error like a zero offset).
+
+- **Forgetting to discuss control variables:** When designing an experiment, you must identify and explain how you will keep all variables constant EXCEPT the independent variable. Simply listing them is not enough -- explain HOW you control each one (e.g., "use the same wire throughout to keep material constant").
+
+- **Writing an insufficient evaluation:** A good evaluation does not just list errors -- it identifies SPECIFIC sources of error in the particular experiment, estimates their MAGNITUDE and DIRECTION (does each error make the result too high or too low?), and suggests specific IMPROVEMENTS. Vague statements like "human error" score few marks.
+
+:::
 ## Problem Set
 
 <details>

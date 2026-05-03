@@ -631,3 +631,15 @@ Ready to test your understanding of **Gravitational Fields**? The [diagnostic te
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing gravitational field strength g with gravitational force:** g = GM/r squared is the field strength (force per unit mass, N/kg). The gravitational force on an object is F = mg = GMm/r squared. Field strength does not depend on the test mass; force does. This distinction matters in exam questions about orbits and satellites.
+
+- **Forgetting that gravitational potential is always negative:** By convention, gravitational potential is defined as zero at infinity. Since work must be done to move a mass from infinity to any finite distance, potential is negative at all finite distances. The potential is most negative at the surface of a planet and approaches zero far away.
+
+- **Confusing geostationary orbit conditions:** A geostationary satellite must orbit in the equatorial plane (not any inclination), in the same direction as Earth's rotation, and with a period of exactly 24 hours. A polar orbit satellite with period 24 hours is NOT geostationary because it does not remain above the same point on the equator.
+
+- **Assuming gravitational force shields or cancels inside a shell:** Inside a uniform spherical shell, the gravitational field strength is ZERO at every point (not just the centre). This is a consequence of the shell theorem. Between two concentric shells, only the mass of the inner shell contributes to the field at that point.
+
+:::

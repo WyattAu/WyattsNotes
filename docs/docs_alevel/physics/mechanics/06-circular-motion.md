@@ -727,3 +727,15 @@ Ready to test your understanding of **Circular Motion**? The [diagnostic test](/
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing centripetal force with centrifugal force:** Centripetal force is the REAL force acting towards the centre (gravity, tension, friction, normal reaction). Centrifugal force is a FICTITIOUS force that only appears in a rotating frame of reference. In an inertial frame (which exam questions use), there is no centrifugal force -- only centripetal force.
+
+- **Adding centripetal force to the force diagram:** Centripetal force is not a separate force -- it is the RESULTANT of the existing forces. In a conical pendulum, the centripetal force is the horizontal component of tension, not tension plus a separate "centripetal force." Never draw centripetal force as an extra arrow on a free-body diagram.
+
+- **Forgetting that speed is constant but velocity is not:** In uniform circular motion, the speed (magnitude of velocity) is constant, but the direction of velocity continuously changes. This means there IS acceleration (centripetal acceleration a = v squared / r), even though the speed does not change.
+
+- **Using the wrong formula for centripetal acceleration:** Centripetal acceleration can be written as a = v squared / r OR a = omega squared * r OR a = 4 * pi squared * r / T squared. Use whichever form matches the variables given in the question. Converting between them incorrectly is a major source of errors.
+
+:::

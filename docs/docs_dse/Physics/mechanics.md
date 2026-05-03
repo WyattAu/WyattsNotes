@@ -1457,3 +1457,15 @@ Ready to test your understanding of **Mechanics**? The [diagnostic test](/Physic
 See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Forgetting to resolve forces into components:** When an object is on an inclined plane, the weight (mg) must be resolved into components parallel to and perpendicular to the surface. The component parallel to the slope is mg sin(theta) and perpendicular is mg cos(theta). Students often use the wrong trigonometric function or forget to resolve at all.
+
+- **Confusing speed and velocity in projectile motion:** In projectile motion, the horizontal VELOCITY is constant (no horizontal acceleration), but the vertical velocity changes due to gravity. The speed (magnitude of velocity) changes throughout the flight because the vertical component changes. At the maximum height, the vertical velocity is zero but the horizontal velocity is unchanged.
+
+- **Applying conservation of energy when friction is present:** Mechanical energy (KE + PE) is only conserved when no non-conservative forces act. If friction is mentioned, work done against friction must be subtracted: KE_initial + PE_initial = KE_final + PE_final + energy lost to friction. Ignoring friction leads to an overestimate of the final speed.
+
+- **Misidentifying the direction of the normal reaction force:** The normal reaction force is always PERPENDICULAR to the surface of contact, not necessarily vertical. On an inclined plane, the normal reaction is perpendicular to the slope, not straight up. Including a vertical normal force on a slope is a common error that leads to incorrect force resolution.
+
+:::

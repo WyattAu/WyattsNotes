@@ -1046,6 +1046,18 @@ $\lambda_2^k \to 0$ and the system converges to the eigenvector for $\lambda_1 =
 </details>
 :::
 
+
+:::danger Common Pitfalls
+
+- **Confusing matrix multiplication order:** Matrix multiplication is NOT commutative: AB is generally not equal to BA. When applying a transformation matrix to a point, the ORDER matters. For combined transformations, the matrix closest to the point is applied FIRST: if transformation B follows transformation A, the combined matrix is BA (not AB).
+
+- **Forgetting that the determinant of a singular matrix is zero:** A singular matrix has determinant zero and NO inverse. If asked to find the inverse of a 2x2 matrix, always check that the determinant is non-zero first. A zero determinant means the transformation collapses space (maps the plane onto a line), which is why no inverse exists.
+
+- **Misidentifying the type of transformation from its matrix:** A reflection in the y-axis has matrix [[-1, 0], [0, 1]] (negative in top-left). A reflection in the x-axis has matrix [[1, 0], [0, -1]] (negative in bottom-right). Students frequently confuse these two. Also, a rotation of 90 degrees anticlockwise gives [[0, -1], [1, 0]], which students often mix up with the clockwise rotation.
+
+- **Arithmetic errors when calculating determinants and inverses:** For a 2x2 matrix [[a, b], [c, d]], the determinant is ad - bc (not ad + bc). The inverse is (1/det) * [[d, -b], [-c, a]] (note the swap of a and d and the negative signs). A single sign error invalidates the entire calculation. Always double-check by multiplying the matrix by its inverse to get the identity.
+
+:::
 ### Orthogonal Matrices
 
 A square matrix $Q$ is **orthogonal** if $Q^T Q = Q Q^T = I$, which means $Q^{-1} = Q^T$.

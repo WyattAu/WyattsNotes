@@ -889,6 +889,18 @@ passages. Avoid plot summary; instead, analyse specific textual details and expl
 contribute to the novel's overall meaning.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Treating the narrative structure as straightforward chronology:** The novel opens with the announcement of Santiago Nasar's death and then works backward and forward in time. Students often write essays that describe events in chronological order, missing Marquez's deliberate non-linear structure. The fragmented timeline is essential to the novel's themes of collective guilt and unreliable memory.
+
+- **Presenting the town's complicity as simple neglect:** The townspeople's failure to warn Santiago is not mere negligence -- it involves a complex web of cultural honour codes (Angela's brothers seeking revenge), practical obstacles (the bishop's boat), and wilful self-deception (people assuming someone else would act). A superficial reading misses this layered culpability.
+
+- **Overlooking the role of fate and determinism:** The numerous omens and forewarnings (dreams, the weather, the note under the door) create a sense of inevitability. However, Marquez also shows that the tragedy was ENTIRELY preventable -- the fatalism coexists with human free will. A good essay addresses this paradox rather than choosing one interpretation.
+
+- **Ignoring the novel's journalistic style:** Marquez blends journalism with magical realism. The precise, factual tone of the narrator (who claims to have reconstructed events from testimony) contrasts with the implausible coincidences and gaps in collective memory. Students who do not discuss this narrative voice miss a key literary technique.
+
+:::
 ## Sample Essay Questions
 
 The following questions are modelled on the types of prompts that appear in IB English A Paper 2 and

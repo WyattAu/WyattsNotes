@@ -683,6 +683,18 @@ where MR = MC. Setting the highest price would reduce quantity sold too much and
 revenue.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Confusing a change in demand with a change in quantity demanded:** A change in quantity demanded is caused by a price change and is a MOVEMENT ALONG the demand curve. A change in demand is caused by non-price factors (income, tastes, prices of related goods) and is a SHIFT of the entire demand curve. This distinction is fundamental and frequently tested.
+
+- **Confusing a movement along the supply curve with a shift of supply:** An increase in price causes a movement ALONG the supply curve (quantity supplied increases). A change in production costs, technology, or number of firms causes the SUPPLY CURVE to SHIFT. Just like demand, movement along vs shift is a critical distinction.
+
+- **Assuming equilibrium price is always "fair":** Market equilibrium is where quantity demanded equals quantity supplied. This is a positive (descriptive) outcome, not a normative (ethical) one. The equilibrium price may be too high for poor consumers to afford essential goods, which is why governments may intervene with price controls or subsidies.
+
+- **Misidentifying the effects of taxes and subsidies on equilibrium:** A tax on producers shifts the supply curve LEFT (upward), increasing equilibrium price and decreasing quantity. A subsidy shifts supply RIGHT (downward), decreasing price and increasing quantity. The burden of a tax is shared between consumers and producers depending on the price elasticity of demand and supply.
+
+:::
 ---
 
 ## National Income Accounting

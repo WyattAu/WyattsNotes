@@ -1495,3 +1495,15 @@ Ready to test your understanding of **Electricity and Magnetism**? The [diagnost
 See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Confusing series and parallel circuit rules:** In series, current is the SAME through all components but voltage is shared. In parallel, voltage is the SAME across all branches but current is shared. Students frequently apply the wrong rule -- remember: series = shared voltage, parallel = shared current.
+
+- **Using the wrong formula for transformer efficiency:** The ideal transformer equation (Vp/Vs = Np/Ns) assumes 100% efficiency. Real transformers have energy losses, so the power output is less than the power input. If efficiency is given, use: efficiency = (Vs * Is) / (Vp * Ip), and account for the losses.
+
+- **Forgetting that magnetic field lines form closed loops:** Electric field lines start on positive charges and end on negative charges, but magnetic field lines always form CLOSED LOOPS with no beginning or end. There are no magnetic monopoles. This is why cutting a bar magnet in half produces two smaller magnets, not isolated north and south poles.
+
+- **Misidentifying the direction of induced current:** When applying Lenz's law, first determine whether the flux through the coil is increasing or decreasing. If increasing, the induced current creates a magnetic field that OPPOSES the increase. If decreasing, the induced current creates a field that TRIES TO MAINTAIN the flux. Then use the right-hand grip rule to find the current direction.
+
+:::

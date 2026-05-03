@@ -715,3 +715,15 @@ suggests that fiscal devolution may be necessary but not sufficient.
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Assuming supply-side policies work quickly:** Most supply-side policies have very long implementation lags. Education reforms take 10-20 years to affect productivity. Infrastructure projects take 5-10 years. Supply-side policy cannot address a short-run recession -- demand-side policy is needed for that.
+
+- **Treating all supply-side policies as the same:** Market-oriented policies (tax cuts, deregulation) and interventionist policies (education spending, infrastructure) have very different effects on inequality, government budgets, and effectiveness. Evaluation answers must distinguish between them.
+
+- **Overstating the Laffer curve as justification for tax cuts:** Most empirical evidence (IFS, OBR) suggests the UK is to the LEFT of the revenue-maximising tax rate for income tax. Cutting income tax rates would REDUCE revenue, not increase it. The Laffer curve argument is more relevant for capital taxes where mobility is higher.
+
+- **Ignoring the fiscal trade-off of tax cuts:** Tax cuts reduce government revenue, which may require spending cuts elsewhere. Cutting education spending to fund tax cuts undermines human capital -- a key supply-side input. Always consider the opportunity cost of supply-side policies.
+
+:::

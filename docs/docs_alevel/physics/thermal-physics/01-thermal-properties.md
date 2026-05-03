@@ -684,3 +684,15 @@ Ready to test your understanding of **Thermal Properties**? The [diagnostic test
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing heat capacity with specific heat capacity:** Heat capacity C is the energy needed to raise the temperature of an ENTIRE OBJECT by 1 K (J/K). Specific heat capacity c is the energy per unit MASS (J/(kg K)). For a 2 kg block, C = 2c. Always check whether the question gives or asks for heat capacity or specific heat capacity.
+
+- **Forgetting that temperature remains constant during a phase change:** When a substance is melting or boiling, energy input goes into breaking intermolecular bonds (increasing potential energy), NOT increasing kinetic energy. The temperature stays constant until the phase change is complete. This is why the heating curve has flat sections at melting and boiling points.
+
+- **Confusing latent heat of fusion with latent heat of vaporisation:** Latent heat of fusion is the energy per unit mass to change from SOLID to LIQUID at constant temperature. Latent heat of vaporisation is the energy to change from LIQUID to GAS. Vaporisation typically requires much more energy because all bonds must be broken, not just reorganised.
+
+- **Misidentifying the direction of heat flow in specific latent heat calculations:** When steam at 100 degrees condenses into water at 100 degrees, it RELEASES energy (the latent heat of vaporisation is given out, not absorbed). When ice melts, it ABSORBS energy. Always consider whether the phase change is absorbing or releasing energy.
+
+:::

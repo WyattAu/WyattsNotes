@@ -685,3 +685,15 @@ Ready to test your understanding of **Oscillations**? The [diagnostic test](/phy
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing angular frequency omega with frequency f:** Angular frequency omega = 2 * pi * f = 2 * pi / T. They are different quantities with different units (rad/s vs Hz). Substituting f where omega is needed (or vice versa) in equations like x = A cos(omega * t) will give completely wrong answers.
+
+- **Assuming all oscillations are simple harmonic:** Simple harmonic motion requires the restoring force to be proportional to displacement (F = -kx). A pendulum only approximates SHM for small angles (less than about 10 degrees). A bouncing ball or a swing with large amplitude is NOT SHM.
+
+- **Forgetting that the maximum velocity occurs at equilibrium:** In SHM, the velocity is maximum at the equilibrium position (x = 0) and zero at the maximum displacement (x = A). The acceleration is the opposite: zero at equilibrium and maximum at the extremes. Students often confuse these two.
+
+- **Misidentifying nodes and antinodes in stationary waves:** Nodes are points of ZERO amplitude (always at rest). Antinodes are points of MAXIMUM amplitude. The distance between adjacent nodes is always half the wavelength (lambda/2). The distance between a node and the nearest antinode is lambda/4.
+
+:::

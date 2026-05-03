@@ -1183,6 +1183,8 @@ _Streetcar_ is a domestic tragedy that resolves through the failure of action.
 
 ## 11. Essay Questions for Practice
 
+
+
 1. "In _A Streetcar Named Desire_, Williams suggests that illusion is not merely a form of escapism
    but a necessary condition of human survival." To what extent do you agree?
 
@@ -1212,3 +1214,15 @@ _Streetcar_ is a domestic tragedy that resolves through the failure of action.
 
 10. "The ending of _A Streetcar Named Desire_ is deliberately ambiguous, refusing to offer moral
     certainty." Discuss with reference to the final scene.
+
+:::danger Common Pitfalls
+
+- **Treating Blanche as purely a tragic victim or purely a villain:** Williams deliberately makes Blanche morally ambiguous. She is simultaneously a sympathetic figure (traumatised by the loss of her husband, the decline of Belle Reve, her alcoholism) and a manipulative character (she lies, is snobbish, and interferes in Stella's marriage). Essays that take a one-sided view miss Williams' complex characterisation.
+
+- **Confusing the play's themes rather than analysing their interaction:** Desire, death, madness, and reality vs illusion are all present, but IB essays should explore how they INTERCONNECT. Blanche's desire leads to her downfall; the "streetcar named Desire" literally and metaphorically drives the action. The theme of reality vs illusion is embodied in the conflict between Stanley and Blanche.
+
+- **Ignoring the significance of stage directions and symbolism:** Williams' detailed stage directions (colours, music, lighting, props) are integral to meaning, not decorative. The paper lantern, the Varsouviana polka, the Mexican woman selling flowers for the dead -- these symbols carry thematic weight and should be analysed, not mentioned in passing.
+
+- **Presenting Stanley as simply a brutish antagonist:** Stanley represents the New South -- vitality, sexual energy, the post-war American Dream. While he is violent and bullying, he also has legitimate grievances against Blanche (she insults his home, lies about his wife, and threatens their marriage). Reducing him to a villain oversimplifies the play's exploration of class and cultural conflict.
+
+:::

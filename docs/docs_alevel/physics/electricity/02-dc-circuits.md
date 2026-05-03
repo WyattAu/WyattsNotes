@@ -754,3 +754,15 @@ Ready to test your understanding of **DC Circuits**? The [diagnostic test](/phys
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Applying Kirchhoff's second law incorrectly to parallel circuits:** The sum of p.d.s around ANY closed loop equals the sum of e.m.f.s. In a parallel circuit, each branch is a separate loop. The p.d. across each parallel branch equals the e.m.f. of the supply, not a fraction of it.
+
+- **Confusing series and parallel resistance formulas:** For resistors in SERIES, resistances add (R_total = R1 + R2 + ...). For resistors in PARALLEL, the reciprocal formula applies (1/R_total = 1/R1 + 1/R2 + ...). Students frequently invert these. A useful check: the total parallel resistance is always LESS than the smallest individual resistor.
+
+- **Forgetting internal resistance in calculations:** When a battery has internal resistance r, the terminal p.d. (V = E - Ir) is LESS than the e.m.f. E. If a question gives both the e.m.f. and the terminal p.d., the difference is the p.d. across the internal resistance (lost volts = Ir).
+
+- **Misapplying the potential divider formula:** V_out = V_in * R2 / (R1 + R2) only works for two resistors in series with no load connected. If a load resistance is connected across R2, the effective resistance of the parallel combination must be used instead.
+
+:::

@@ -638,3 +638,15 @@ Ready to test your understanding of **Radioactivity**? The [diagnostic test](/ph
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing alpha, beta, and gamma radiation properties:** Alpha particles are helium nuclei (2 protons, 2 neutrons) -- they are heavy, positively charged, and stopped by paper. Beta particles are fast electrons -- they are light, negatively charged, and stopped by aluminium. Gamma rays are electromagnetic waves -- they have no charge or mass and require thick lead or concrete to stop.
+
+- **Not balancing nuclear equations correctly:** In a nuclear equation, both atomic number (proton number) AND mass number must be conserved on both sides. When writing beta decay, remember: a neutron becomes a proton PLUS an electron (and an antineutrino). The mass number stays the same but the atomic number increases by 1.
+
+- **Assuming half-life means half the substance is gone:** After one half-life, half of the ORIGINAL atoms have decayed and half remain. After two half-lives, one QUARTER of the original remains (not zero). The substance never fully decays -- it approaches zero asymptotically. The activity also halves with each half-life.
+
+- **Confusing activity with count rate:** Activity is the total number of decays per second in the sample (Bq). Count rate is what a detector actually measures, which is always LESS than activity because the detector only captures a fraction of the emissions and background radiation adds to the reading.
+
+:::

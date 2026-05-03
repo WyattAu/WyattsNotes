@@ -814,3 +814,15 @@ The Bank of England feared that if inflation remained high for an extended perio
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing real and nominal GDP:** Students often forget to adjust for inflation when comparing GDP across years. Always check whether a question asks for real or nominal figures. A rise in nominal GDP may simply reflect price increases, not actual growth.
+
+- **Misidentifying types of unemployment:** The most common error is classifying all unemployment as cyclical. Structural unemployment (skills mismatch) and frictional unemployment (job search time) always exist even at full employment. The natural rate of unemployment is never zero.
+
+- **Confusing deficit with debt:** A budget deficit is a flow (annual shortfall), while national debt is a stock (accumulated total). Reducing the deficit does not reduce the debt -- it merely slows its rate of growth. Only a budget surplus reduces the debt.
+
+- **Misinterpreting the Phillips curve as a stable trade-off:** The short-run Phillips curve shifts when inflation expectations change. A government cannot permanently exploit the inflation-unemployment trade-off -- attempting to do so only produces accelerating inflation in the long run.
+
+:::

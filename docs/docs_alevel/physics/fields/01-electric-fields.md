@@ -720,3 +720,15 @@ Ready to test your understanding of **Electric Fields**? The [diagnostic test](/
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Confusing electric field strength E with electric potential V:** Electric field strength E is the FORCE per unit charge (a vector, measured in V/m or N/C). Electric potential V is the ENERGY per unit charge (a scalar, measured in volts). They are related by E = -dV/dr, but they are fundamentally different quantities.
+
+- **Forgetting that electric field lines point from positive to negative:** Field lines show the direction of force on a POSITIVE test charge. If you place a negative charge in the field, the force acts in the OPPOSITE direction to the field lines. Students often draw force arrows in the wrong direction for negative charges.
+
+- **Not distinguishing between uniform and radial fields:** For a parallel plate capacitor, E is uniform (constant everywhere between the plates) and V varies linearly with distance. For a point charge, E follows an inverse square law and V follows an inverse relationship (V proportional to 1/r). Using the wrong field model leads to incorrect answers.
+
+- **Assuming work done is always positive when moving a charge:** Work done by the electric field is positive when a positive charge moves in the direction of the field (from high to low potential). Moving a charge AGAINST the field requires external work and the work done by the field is negative. Always consider the sign of the charge and the direction of movement.
+
+:::

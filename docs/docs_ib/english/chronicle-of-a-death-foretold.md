@@ -780,3 +780,15 @@ essay in 55 minutes. For HL, aim for 100 minutes to allow for integration of a t
 [ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques) for detailed time
 management strategies.
 :::
+
+:::danger Common Pitfalls
+
+- **Reducing characters to stereotypes:** Santiago Nasar is not simply an innocent victim, and the Vicario brothers are not simply brutal murderers. Each character has motivations that reflect broader social values -- honour, machismo, religious duty, class, and gender roles. Essays that present characters as one-dimensional score poorly in IB assessment.
+
+- **Confusing the narrator with the author:** The unnamed narrator is a character in the story who returns to the town 27 years later to investigate. His account is based on testimony and is explicitly unreliable -- memories conflict, witnesses are dead, and his own biases shape the narrative. Do not treat the narrator's account as objective truth.
+
+- **Focusing only on plot summary:** IB essays require ARGUMENT, not retelling. A strong essay on honour culture, for example, would analyse HOW Marquez uses specific scenes and techniques to critique honour-based violence, not simply describe what happens. Use the Point-Quote-Comment structure for every paragraph.
+
+- **Missing the role of Angela Vicario:** Students often focus on the Vicario brothers and neglect Angela, whose accusation is the catalyst for the entire tragedy. Her motivations (protecting her honour after being returned on her wedding night by Bayardo San Roman), her silence, and her later letters to Bayardo are crucial to understanding the novel's themes.
+
+:::

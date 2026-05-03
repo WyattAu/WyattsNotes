@@ -1179,3 +1179,15 @@ Ready to test your understanding of **Waves and Optics**? The [diagnostic test](
 See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 
+
+:::danger Common Pitfalls
+
+- **Confusing the law of reflection with the law of refraction:** The law of reflection states that the angle of incidence equals the angle of reflection (both measured from the normal). Refraction follows Snell's law: n1 sin(i) = n2 sin(r), where the angles are measured from the normal. Students often measure angles from the surface instead of the normal in both cases.
+
+- **Drawing ray diagrams incorrectly:** In ray diagrams for lenses, the three principal rays are: (1) parallel to the principal axis, then through the focal point, (2) through the centre of the lens (undeviated), (3) through the focal point, then parallel to the principal axis. Missing any of these or drawing them incorrectly leads to wrong image positions.
+
+- **Forgetting that real images are inverted and virtual images are upright:** For a convex (converging) lens, a real image is formed when the object is beyond the focal length -- it is inverted and can be projected. A virtual image (object inside focal length) is upright and magnified but cannot be projected. The sign convention in the lens equation matters.
+
+- **Confusing diffraction with interference:** Diffraction is the spreading of waves around obstacles or through gaps. Interference is the superposition of waves from two coherent sources to produce a pattern of maxima and minima. They are different phenomena, though both demonstrate the wave nature of light. A diffraction grating produces an interference pattern.
+
+:::

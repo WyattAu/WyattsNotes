@@ -723,3 +723,15 @@ Ready to test your understanding of **Kinematics**? The [diagnostic test](/physi
 
 See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
+
+:::danger Common Pitfalls
+
+- **Applying SUVAT equations to non-uniform acceleration:** The five SUVAT equations ONLY apply when acceleration is CONSTANT. If a question involves a changing force (e.g., a spring, air resistance), acceleration is not constant and SUVAT cannot be used. Use calculus (integration) or energy methods instead.
+
+- **Confusing displacement with distance:** Displacement is a VECTOR (includes direction) and can be negative. Distance is a SCALAR and is always positive. In vertical motion, upward displacement is positive and downward is negative. A ball thrown up and caught at the same point has zero total displacement but non-zero distance travelled.
+
+- **Taking g as positive in both directions:** When using SUVAT with vertical motion, be consistent with sign convention. If upward is positive, then g = -9.81 m/s squared (acceleration is downward). Substituting g = +9.81 with upward-positive convention will give the wrong answer for velocity and time.
+
+- **Forgetting that air resistance changes the motion:** In many projectile questions, air resistance is neglected. But if a question mentions air resistance, remember: the horizontal component of velocity DECREASES (it is no longer constant), the time of flight DECREASES (the object reaches a lower maximum height), and the trajectory is no longer a perfect parabola.
+
+:::

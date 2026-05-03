@@ -718,3 +718,15 @@ complete regime change.
 :::
 
 :::
+
+:::danger Common Pitfalls
+
+- **Treating Keynesianism and monetarism as mutually exclusive:** Modern macroeconomic policy is a synthesis of both views. Keynesian demand management is appropriate during recessions (especially at the zero lower bound), while monetarist concerns about inflation dominate near full employment. The "correct" view depends on the economic context.
+
+- **Misunderstanding the time-inconsistency problem:** The problem is not that policymakers are dishonest, but that rational agents anticipate the incentive to renege on announced policies and adjust their behaviour accordingly. This is why independent central banks with clear inflation targets outperform discretionary policy.
+
+- **Confusing the Taylor Rule with a law:** The Taylor Rule is a PRESCRIPTIVE guideline, not a description of what central banks actually do. Its coefficients (0.5 for both inflation gap and output gap) are suggested values, not fixed parameters. Central banks exercise discretion in practice.
+
+- **Oversimplifying the Lucas critique:** The Lucas critique does not say all models are useless. It says that models estimated under one policy regime cannot reliably predict the effects of a NEW policy regime, because behaviour changes when policy changes. Micro-founded models that use deep structural parameters are more robust.
+
+:::

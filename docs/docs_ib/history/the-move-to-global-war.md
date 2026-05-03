@@ -1110,6 +1110,8 @@ Court), are the direct institutional descendants of Nuremberg.
 
 ## Key Dates
 
+
+
 | Date                  | Event                                                  |
 | --------------------- | ------------------------------------------------------ |
 | 28 June 1919          | Treaty of Versailles signed                            |
@@ -1138,3 +1140,15 @@ Court), are the direct institutional descendants of Nuremberg.
 | 6 August 1945         | Atomic bomb dropped on Hiroshima                       |
 | 9 August 1945         | Atomic bomb dropped on Nagasaki                        |
 | 2 September 1945      | Japan surrenders formally (V-J Day)                    |
+
+:::danger Common Pitfalls
+
+- **Presenting appeasement as solely Chamberlain's policy:** Appeasement was broadly supported in Britain in the late 1930s by politicians across parties, the public, and the media. Characterising it as Chamberlain's personal failing ignores the context of British economic weakness, the trauma of WW1, and genuine pacifist sentiment. IB essays require a more nuanced assessment.
+
+- **Confusing the causes of Japanese expansion:** Japan's invasion of Manchuria (1931) was driven by multiple factors: the need for raw materials, the impact of the Great Depression, domestic political instability, and a belief in regional hegemony. Reducing it to "Japanese aggression" without examining these motivations misses key analytical depth.
+
+- **Overlooking the League of Nations' structural weaknesses:** The League failed not because of bad intentions but because it lacked enforcement power (no army), key nations were absent (USA never joined, Germany/USSR left), and decisions required unanimity. These structural flaws meant it could not prevent aggression by major powers.
+
+- **Assuming the Treaty of Versailles solely caused WW2:** While the Treaty contributed to German resentment, it was one factor among many. The Great Depression, the failure of the League of Nations, appeasement, and Hitler's expansionist ideology were all necessary conditions. A strong IB essay weighs multiple causes rather than assigning blame to a single factor.
+
+:::
