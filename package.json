@@ -58,7 +58,7 @@
     "@docusaurus/theme-live-codeblock": "^3.10.0",
     "@docusaurus/theme-mermaid": "^3.10.0",
     "@docusaurus/tsconfig": "^3.10.0",
-    "@docusaurus/types": "^3.10.0",
+    "@docusaurus/types": "^3.10.1",
     "@tailwindcss/typography": "^0.5.16",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
