@@ -1,3 +1,10 @@
+---
+title: DSE Biology Diagnostic Tests -- Guide
+description: Guide to the hardest diagnostic questions within the DSE specification, each with a full worked solution.
+slug: diag-guide
+hide_table_of_contents: true
+---
+
 # DSE Biology Diagnostic Tests -- Guide
 
 ## Purpose

@@ -1,3 +1,10 @@
+---
+title: Chemical Equilibrium -- Diagnostic Tests
+description: Hardest diagnostic questions on chemical equilibrium within the DSE specification, each with a full worked solution.
+slug: diag-chemical-equilibrium
+hide_table_of_contents: true
+---
+
 # DSE Chemistry Diagnostic: Chemical Equilibrium
 
 ## Unit Test 1: Kc Calculation

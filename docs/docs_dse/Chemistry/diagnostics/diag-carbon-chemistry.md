@@ -1,3 +1,10 @@
+---
+title: Carbon Chemistry -- Diagnostic Tests
+description: Hardest diagnostic questions on carbon chemistry within the DSE specification, each with a full worked solution.
+slug: diag-carbon-chemistry
+hide_table_of_contents: true
+---
+
 # DSE Chemistry Diagnostic: Carbon Chemistry
 
 ## Unit Test 1: Alkanes vs Alkenes Reactivity

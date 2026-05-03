@@ -1,3 +1,10 @@
+---
+title: Acids, Bases and Salts -- Diagnostic Tests
+description: Hardest diagnostic questions on acids, bases and salts within the DSE specification, each with a full worked solution.
+slug: diag-acids-bases-and-salts
+hide_table_of_contents: true
+---
+
 # DSE Chemistry Diagnostic: Acids, Bases and Salts
 
 ## Unit Test 1: Weak Acid pH Calculation

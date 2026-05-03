@@ -1,3 +1,10 @@
+---
+title: Microorganisms and Biotechnology -- Diagnostic Tests
+description: Hardest diagnostic questions on microorganisms and biotechnology within the DSE specification, each with a full worked solution.
+slug: diag-microorganisms-biotechnology
+hide_table_of_contents: true
+---
+
 # DSE Biology Diagnostic: Microorganisms and Biotechnology
 
 ## Unit Test 1: Bacterial and Viral Structure

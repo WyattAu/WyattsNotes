@@ -1,3 +1,10 @@
+---
+title: Plant Biology -- Diagnostic Tests
+description: Hardest diagnostic questions on plant biology within the DSE specification, each with a full worked solution.
+slug: diag-plant-biology
+hide_table_of_contents: true
+---
+
 # DSE Biology Diagnostic: Plant Biology
 
 ## Unit Test 1: Light-Dependent vs Light-Independent Reactions

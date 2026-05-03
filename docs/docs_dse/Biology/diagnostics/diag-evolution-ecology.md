@@ -1,3 +1,10 @@
+---
+title: Evolution and Ecology -- Diagnostic Tests
+description: Hardest diagnostic questions on evolution and ecology within the DSE specification, each with a full worked solution.
+slug: diag-evolution-ecology
+hide_table_of_contents: true
+---
+
 # DSE Biology Diagnostic: Evolution and Ecology
 
 ## Unit Test 1: Natural Selection and Evidence for Evolution

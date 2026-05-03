@@ -1,3 +1,10 @@
+---
+title: Human Reproduction and Homeostasis -- Diagnostic Tests
+description: Hardest diagnostic questions on human reproduction and homeostasis within the DSE specification, each with a full worked solution.
+slug: diag-human-reproduction-homeostasis
+hide_table_of_contents: true
+---
+
 # DSE Biology Diagnostic: Human Reproduction and Homeostasis
 
 ## Unit Test 1: Hormonal Control of the Menstrual Cycle

@@ -1,3 +1,10 @@
+---
+title: Biodiversity and Conservation -- Diagnostic Tests
+description: Hardest diagnostic questions on biodiversity and conservation within the DSE specification, each with a full worked solution.
+slug: diag-biodiversity-conservation
+hide_table_of_contents: true
+---
+
 # DSE Biology Diagnostic: Biodiversity and Conservation
 
 ## Unit Test 1: Species Richness, Species Evenness, and Simpson's Diversity Index

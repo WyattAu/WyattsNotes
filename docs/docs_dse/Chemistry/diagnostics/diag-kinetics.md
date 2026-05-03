@@ -1,3 +1,10 @@
+---
+title: Chemical Kinetics -- Diagnostic Tests
+description: Hardest diagnostic questions on chemical kinetics within the DSE specification, each with a full worked solution.
+slug: diag-chemical-kinetics
+hide_table_of_contents: true
+---
+
 # DSE Chemistry Diagnostic: Chemical Kinetics
 
 ## Unit Test 1: Rate Equation Determination

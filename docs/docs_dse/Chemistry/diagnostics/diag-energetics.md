@@ -1,3 +1,10 @@
+---
+title: Energetics / Thermochemistry -- Diagnostic Tests
+description: Hardest diagnostic questions on energetics / thermochemistry within the DSE specification, each with a full worked solution.
+slug: diag-energetics-thermochemistry
+hide_table_of_contents: true
+---
+
 # DSE Chemistry Diagnostic: Energetics / Thermochemistry
 
 ## Unit Test 1: Hess's Law Cycle Construction
