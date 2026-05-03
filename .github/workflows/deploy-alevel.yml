@@ -26,7 +26,7 @@ jobs:
         run: |
           sudo swapoff -a 2>/dev/null || true
           sudo rm -f /swapfile
-          sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+          sudo dd if=/dev/zero of=/swapfile bs=1M count=16384
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
@@ -46,7 +46,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --config docusaurus.alevel.config.ts
         env:
-          NODE_OPTIONS: --max-old-space-size=10240
+          NODE_OPTIONS: --max-old-space-size=14336
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
