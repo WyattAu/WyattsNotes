@@ -1,5 +1,5 @@
 ---
-title: Redox Reactions -- Diagnostic Tests
+title: "Redox Reactions -- Diagnostic Tests"
 description: "Diagnostic tests for IB Chemistry redox reactions: oxidation numbers, balancing equations, electrochemical cells, and standard electrode potentials."
 slug: diag-redox
 hide_table_of_contents: true

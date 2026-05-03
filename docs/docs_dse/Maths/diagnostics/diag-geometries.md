@@ -1,5 +1,5 @@
 ---
-title: Geometries -- Diagnostic Tests
+title: "Geometries -- Diagnostic Tests"
 description: "Diagnostic tests for DSE Geometries: circle theorems, coordinate geometry proofs, vector geometry, and geometric reasoning."
 slug: diag-geometries
 hide_table_of_contents: true

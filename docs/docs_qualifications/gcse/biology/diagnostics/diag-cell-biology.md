@@ -1,5 +1,5 @@
 ---
-title: Cell Biology -- Diagnostic Tests
+title: "Cell Biology -- Diagnostic Tests"
 description: "GCSE Biology diagnostic tests for cell biology: cell structure, specialised cells, microscopy, cell division, osmosis, diffusion."
 slug: diag-cell-biology
 hide_table_of_contents: true

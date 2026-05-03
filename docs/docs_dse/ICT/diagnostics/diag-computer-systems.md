@@ -1,5 +1,5 @@
 ---
-title: Computer Systems -- Diagnostic Tests
+title: "Computer Systems -- Diagnostic Tests"
 description: "DSE ICT diagnostic tests for computer systems: CPU architecture, Von Neumann model, fetch-decode-execute cycle, memory hierarchy, I/O devices."
 slug: diag-computer-systems
 hide_table_of_contents: true

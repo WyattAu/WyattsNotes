@@ -1,5 +1,5 @@
 ---
-title: Differential Equations -- Diagnostic Tests
+title: "Differential Equations -- Diagnostic Tests"
 description: Diagnostic tests targeting the hardest AP Calculus differential equation questions including separable equations, Euler's method, slope fields, logistic growth, and qualitative analysis.
 slug: diag-differential-equations
 hide_table_of_contents: true

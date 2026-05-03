@@ -1,5 +1,5 @@
 ---
-title: Bonding -- Diagnostic Tests
+title: "Bonding -- Diagnostic Tests"
 description: Hardest diagnostic questions on bonding within the DSE specification, each with a full worked solution.
 slug: diag-bonding
 hide_table_of_contents: true

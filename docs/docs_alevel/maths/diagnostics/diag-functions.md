@@ -1,5 +1,5 @@
 ---
-title: Functions -- Diagnostic Tests
+title: "Functions -- Diagnostic Tests"
 description: Hard diagnostic tests for functions covering domain restrictions, inverse functions, composite functions, even/odd properties, and graphical transformations.
 slug: diag-functions
 hide_table_of_contents: true

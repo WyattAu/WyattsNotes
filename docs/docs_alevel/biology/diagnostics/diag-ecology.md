@@ -1,5 +1,5 @@
 ---
-title: Ecology -- Diagnostic Tests
+title: "Ecology -- Diagnostic Tests"
 description: Hardest diagnostic questions on ecosystems, populations, succession, nutrient cycles, human impact, and conservation strategies.
 slug: diag-ecology
 hide_table_of_contents: true

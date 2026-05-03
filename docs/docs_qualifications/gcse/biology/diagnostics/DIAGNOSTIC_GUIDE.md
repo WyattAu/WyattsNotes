@@ -1,5 +1,5 @@
 ---
-title: GCSE Biology -- Diagnostic Guide
+title: "GCSE Biology -- Diagnostic Guide"
 description: "Comprehensive guide to GCSE Biology diagnostic tests with coverage map, grading rubric, prerequisite chains, and timing recommendations."
 slug: diag-guide-gcse-biology
 hide_table_of_contents: true

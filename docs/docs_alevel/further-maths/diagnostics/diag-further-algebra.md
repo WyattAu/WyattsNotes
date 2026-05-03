@@ -1,5 +1,5 @@
 ---
-title: Further Algebra -- Diagnostic Tests
+title: "Further Algebra -- Diagnostic Tests"
 description: "A-Level Further Maths diagnostic tests for further algebra: roots of polynomials, partial fractions, series summation, mathematical induction."
 slug: diag-further-algebra
 hide_table_of_contents: true

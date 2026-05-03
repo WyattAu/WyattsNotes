@@ -1,5 +1,5 @@
 ---
-title: Dispersion -- Diagnostic Tests
+title: "Dispersion -- Diagnostic Tests"
 description: "Diagnostic tests for DSE Dispersion: mean, variance, standard deviation, grouped data, box plots, and coding effects on statistics."
 slug: diag-dispersion
 hide_table_of_contents: true

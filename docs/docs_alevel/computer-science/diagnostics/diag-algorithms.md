@@ -1,5 +1,5 @@
 ---
-title: Algorithms -- Diagnostic Tests
+title: "Algorithms -- Diagnostic Tests"
 description: "Diagnostic tests for A-Level CS algorithms: Big O notation, sorting comparisons, searching algorithms, and algorithm trace tables."
 slug: diag-algorithms
 hide_table_of_contents: true

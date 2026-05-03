@@ -1,5 +1,5 @@
 ---
-title: Binomial Expansion -- Diagnostic Tests
+title: "Binomial Expansion -- Diagnostic Tests"
 description: Hard diagnostic tests for binomial expansion covering non-integer exponents, coefficient extraction, estimation, and convergence at A-Level standard.
 slug: diag-binomial-expansion
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Carbonyl Compounds, Arenes, Amines -- Diagnostic Tests
+title: "Carbonyl Compounds, Arenes, Amines -- Diagnostic Tests"
 description: Diagnostic tests for nucleophilic addition, electrophilic substitution, and amine chemistry at the hardest A-Level Chemistry standard.
 slug: diag-carbonyl-arenes-amines
 hide_table_of_contents: true

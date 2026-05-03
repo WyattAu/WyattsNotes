@@ -1,5 +1,5 @@
 ---
-title: Algebraic Expressions -- Diagnostic Tests
+title: "Algebraic Expressions -- Diagnostic Tests"
 description: Hard diagnostic tests for algebraic expressions covering fraction manipulation, surds, nested simplification, and negative indices at A-Level standard.
 slug: diag-algebraic-expressions
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Data Structures -- Diagnostic Tests
+title: "Data Structures -- Diagnostic Tests"
 description: "Diagnostic tests for A-Level CS data structures: arrays vs linked lists, stacks/queues, hash tables, and binary trees."
 slug: diag-data-structures
 hide_table_of_contents: true

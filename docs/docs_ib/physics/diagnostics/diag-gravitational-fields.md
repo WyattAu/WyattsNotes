@@ -1,5 +1,5 @@
 ---
-title: Gravitational Fields -- Diagnostic Tests
+title: "Gravitational Fields -- Diagnostic Tests"
 description: Hardest IB Physics gravitational fields diagnostic tests covering field inside a uniform sphere, negative gravitational potential, escape velocity derivation, and geostationary orbit conditions.
 slug: diag-gravitational-fields
 hide_table_of_contents: true

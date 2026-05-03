@@ -1,5 +1,5 @@
 ---
-title: Trigonometry -- Diagnostic Tests
+title: "Trigonometry -- Diagnostic Tests"
 description: Hardest IB Mathematics diagnostic tests for trigonometry covering periodicity, identity proofs, double angle traps, and harmonic form.
 slug: diag-trigonometry
 hide_table_of_contents: true

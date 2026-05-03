@@ -1,5 +1,5 @@
 ---
-title: Statistics -- Diagnostic Tests
+title: "Statistics -- Diagnostic Tests"
 description: "GCSE Maths diagnostic tests for statistics: averages from grouped data, histograms, cumulative frequency, box plots, scatter graphs."
 slug: diag-statistics
 hide_table_of_contents: true

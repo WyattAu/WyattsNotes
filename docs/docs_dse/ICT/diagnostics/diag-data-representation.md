@@ -1,5 +1,5 @@
 ---
-title: Data Representation -- Diagnostic Tests
+title: "Data Representation -- Diagnostic Tests"
 description: "DSE ICT diagnostic tests for data representation: binary, hexadecimal, character encoding, data compression, image and audio representation."
 slug: diag-data-representation
 hide_table_of_contents: true

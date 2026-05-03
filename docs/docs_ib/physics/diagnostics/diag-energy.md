@@ -1,5 +1,5 @@
 ---
-title: Energy and Conservation -- Diagnostic Tests
+title: "Energy and Conservation -- Diagnostic Tests"
 description: Hardest IB Physics energy diagnostic tests covering path-dependent friction work, elastic collisions with energy conservation, power with variable forces, and gravitational potential energy in orbits.
 slug: diag-energy
 hide_table_of_contents: true

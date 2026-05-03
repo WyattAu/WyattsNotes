@@ -1,5 +1,5 @@
 ---
-title: Differential Equations -- Diagnostic Tests
+title: "Differential Equations -- Diagnostic Tests"
 description: "A-Level Further Maths diagnostic tests for differential equations: first order, second order, particular solutions, forming DEs."
 slug: diag-further-differential-equations
 hide_table_of_contents: true

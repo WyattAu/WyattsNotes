@@ -1,5 +1,5 @@
 ---
-title: Human Reproduction and Homeostasis -- Diagnostic Tests
+title: "Human Reproduction and Homeostasis -- Diagnostic Tests"
 description: Hardest diagnostic questions on human reproduction and homeostasis within the DSE specification, each with a full worked solution.
 slug: diag-human-reproduction-homeostasis
 hide_table_of_contents: true

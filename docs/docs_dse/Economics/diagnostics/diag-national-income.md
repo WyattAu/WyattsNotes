@@ -1,5 +1,5 @@
 ---
-title: National Income and Macroeconomic Indicators -- Diagnostic Tests
+title: "National Income and Macroeconomic Indicators -- Diagnostic Tests"
 description: "DSE Economics diagnostic tests for national income: GDP/GNP calculation, real vs nominal, per capita measures, inflation, unemployment indicators."
 slug: diag-national-income
 hide_table_of_contents: true

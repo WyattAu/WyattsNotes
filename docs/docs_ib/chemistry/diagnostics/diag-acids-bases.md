@@ -1,5 +1,5 @@
 ---
-title: Acids and Bases -- Diagnostic Tests
+title: "Acids and Bases -- Diagnostic Tests"
 description: "Diagnostic tests for IB Chemistry acids and bases: pH calculations, buffer mechanisms, Ka/Kb, weak acid equilibrium, and titration curves."
 slug: diag-acids-bases
 hide_table_of_contents: true

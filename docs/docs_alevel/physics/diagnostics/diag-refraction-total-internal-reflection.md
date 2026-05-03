@@ -1,5 +1,5 @@
 ---
-title: Refraction and Total Internal Reflection -- Diagnostic Tests
+title: "Refraction and Total Internal Reflection -- Diagnostic Tests"
 description: Diagnostic tests for Snell's law, critical angle derivation, optical fibres, and refractive index measurements at maximum A-Level Physics difficulty.
 slug: diag-refraction-total-internal-reflection
 hide_table_of_contents: true

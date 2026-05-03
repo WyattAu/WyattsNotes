@@ -1,5 +1,5 @@
 ---
-title: Microorganisms and Biotechnology -- Diagnostic Tests
+title: "Microorganisms and Biotechnology -- Diagnostic Tests"
 description: Hardest diagnostic questions on microorganisms and biotechnology within the DSE specification, each with a full worked solution.
 slug: diag-microorganisms-biotechnology
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Vectors in 3D -- Diagnostic Tests
+title: "Vectors in 3D -- Diagnostic Tests"
 description: "A-Level Further Maths diagnostic tests for 3D vectors: scalar and vector products, equations of lines and planes, volumes of parallelepipeds, distances."
 slug: diag-vectors-3d
 hide_table_of_contents: true

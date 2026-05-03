@@ -1,5 +1,5 @@
 ---
-title: Human Physiology -- Diagnostic Tests
+title: "Human Physiology -- Diagnostic Tests"
 description: "Diagnostic tests for IB Biology human physiology: neurone function, synaptic transmission, hormone action, and the immune system."
 slug: diag-human-physiology
 hide_table_of_contents: true

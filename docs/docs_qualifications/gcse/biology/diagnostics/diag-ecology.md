@@ -1,5 +1,5 @@
 ---
-title: Ecology -- Diagnostic Tests
+title: "Ecology -- Diagnostic Tests"
 description: "GCSE Biology diagnostic tests for ecology: ecosystems, food chains, nutrient cycles, biodiversity, human impacts on the environment."
 slug: diag-ecology
 hide_table_of_contents: true

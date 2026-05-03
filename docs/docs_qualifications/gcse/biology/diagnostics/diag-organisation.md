@@ -1,5 +1,5 @@
 ---
-title: Organisation -- Diagnostic Tests
+title: "Organisation -- Diagnostic Tests"
 description: "GCSE Biology diagnostic tests for organisation: digestive system, enzymes, circulatory system, respiratory system, nervous system."
 slug: diag-organisation
 hide_table_of_contents: true

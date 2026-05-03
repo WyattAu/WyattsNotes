@@ -1,5 +1,5 @@
 ---
-title: Bonding and Structure -- Diagnostic Tests
+title: "Bonding and Structure -- Diagnostic Tests"
 description: Diagnostic tests for ionic, covalent, metallic bonding, VSEPR theory, and intermolecular forces at the hardest A-Level Chemistry standard.
 slug: diag-bonding-structure
 hide_table_of_contents: true

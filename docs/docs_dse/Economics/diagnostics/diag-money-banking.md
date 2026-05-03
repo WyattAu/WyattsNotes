@@ -1,5 +1,5 @@
 ---
-title: Money and Banking -- Diagnostic Tests
+title: "Money and Banking -- Diagnostic Tests"
 description: "DSE Economics diagnostic tests for money and banking: money supply, money creation, interest rates, banking system, monetary policy tools."
 slug: diag-money-banking
 hide_table_of_contents: true

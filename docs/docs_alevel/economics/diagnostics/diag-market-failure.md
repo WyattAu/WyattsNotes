@@ -1,5 +1,5 @@
 ---
-title: Market Failure -- Diagnostic Tests
+title: "Market Failure -- Diagnostic Tests"
 description: "Diagnostic tests for A-Level Economics market failure: externalities, public goods, government intervention, and welfare analysis."
 slug: diag-market-failure
 hide_table_of_contents: true

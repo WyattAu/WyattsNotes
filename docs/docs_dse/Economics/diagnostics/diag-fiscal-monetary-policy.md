@@ -1,5 +1,5 @@
 ---
-title: Fiscal and Monetary Policy -- Diagnostic Tests
+title: "Fiscal and Monetary Policy -- Diagnostic Tests"
 description: "DSE Economics diagnostic tests for fiscal and monetary policy: government spending, taxation, interest rates, money supply, policy effectiveness."
 slug: diag-fiscal-monetary-policy
 hide_table_of_contents: true

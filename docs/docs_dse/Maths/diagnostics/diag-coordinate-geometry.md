@@ -1,5 +1,5 @@
 ---
-title: Coordinate Geometry -- Diagnostic Tests
+title: "Coordinate Geometry -- Diagnostic Tests"
 description: "Diagnostic tests for DSE Coordinate Geometry: distance formula, straight lines, circle equations, locus, and completing the square."
 slug: diag-coordinate-geometry
 hide_table_of_contents: true

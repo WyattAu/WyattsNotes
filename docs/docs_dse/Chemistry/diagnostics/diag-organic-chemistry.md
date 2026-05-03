@@ -1,5 +1,5 @@
 ---
-title: Organic Chemistry -- Diagnostic Tests
+title: "Organic Chemistry -- Diagnostic Tests"
 description: Hardest diagnostic questions on organic chemistry within the DSE specification, each with a full worked solution.
 slug: diag-organic-chemistry
 hide_table_of_contents: true

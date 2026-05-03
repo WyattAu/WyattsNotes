@@ -1,5 +1,5 @@
 ---
-title: Demand, Supply, and Equilibrium -- Diagnostic Tests
+title: "Demand, Supply, and Equilibrium -- Diagnostic Tests"
 description: "Diagnostic tests for A-Level Economics demand and supply: PED, PES, equilibrium analysis, consumer and producer surplus calculations."
 slug: diag-demand-supply
 hide_table_of_contents: true

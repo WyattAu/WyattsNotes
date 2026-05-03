@@ -1,5 +1,5 @@
 ---
-title: Dynamics -- Diagnostic Tests
+title: "Dynamics -- Diagnostic Tests"
 description: Diagnostic tests for Newton's laws, friction, connected particles, inclined planes, and resolving forces at the hardest A-Level Physics standard.
 slug: diag-dynamics
 hide_table_of_contents: true

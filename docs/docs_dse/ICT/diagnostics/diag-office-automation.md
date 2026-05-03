@@ -1,5 +1,5 @@
 ---
-title: Office Automation and Productivity -- Diagnostic Tests
+title: "Office Automation and Productivity -- Diagnostic Tests"
 description: "DSE ICT diagnostic tests for office automation: spreadsheet formulas, database queries, word processing, presentation design, collaborative tools."
 slug: diag-office-automation
 hide_table_of_contents: true

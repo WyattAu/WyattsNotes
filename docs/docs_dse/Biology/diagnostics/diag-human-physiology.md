@@ -1,5 +1,5 @@
 ---
-title: Human Physiology -- Diagnostic Tests
+title: "Human Physiology -- Diagnostic Tests"
 description: Hardest diagnostic questions on human physiology within the DSE specification, each with a full worked solution.
 slug: diag-human-physiology
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Waves -- Diagnostic Tests
+title: "Waves -- Diagnostic Tests"
 description: "GCSE Physics diagnostic tests for waves: wave properties, electromagnetic spectrum, reflection, refraction, sound waves."
 slug: diag-waves
 hide_table_of_contents: true

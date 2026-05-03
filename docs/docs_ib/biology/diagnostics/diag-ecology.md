@@ -1,5 +1,5 @@
 ---
-title: Ecology -- Diagnostic Tests
+title: "Ecology -- Diagnostic Tests"
 description: "Diagnostic tests for IB Biology ecology: ecosystem structure, productivity pyramids, nutrient cycles, and population ecology."
 slug: diag-ecology
 hide_table_of_contents: true

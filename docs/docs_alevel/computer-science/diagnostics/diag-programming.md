@@ -1,5 +1,5 @@
 ---
-title: Programming and OOP -- Diagnostic Tests
+title: "Programming and OOP -- Diagnostic Tests"
 description: "Diagnostic tests for A-Level CS programming: OOP principles, polymorphism, encapsulation, and SQL queries."
 slug: diag-programming
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Hypothesis Testing -- Diagnostic Tests
+title: "Hypothesis Testing -- Diagnostic Tests"
 description: Hard diagnostic tests for hypothesis testing covering one-tailed and two-tailed tests, Type I and II errors, critical regions, p-values, and test power at A-Level.
 slug: diag-hypothesis-testing
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Oscillations -- Diagnostic Tests
+title: "Oscillations -- Diagnostic Tests"
 description: Diagnostic tests for simple harmonic motion, energy in oscillations, resonance, damping, and phase relationships at maximum A-Level Physics difficulty.
 slug: diag-oscillations
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: IB Chemistry -- Diagnostic Guide
+title: "IB Chemistry -- Diagnostic Guide"
 description: "Comprehensive guide to IB Chemistry diagnostic tests with coverage map, grading rubric, prerequisite chains, and timing recommendations."
 slug: diag-guide-chemistry
 hide_table_of_contents: true

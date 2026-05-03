@@ -1,5 +1,5 @@
 ---
-title: Atomic Structure and Periodicity -- Diagnostic Tests
+title: "Atomic Structure and Periodicity -- Diagnostic Tests"
 description: Diagnostic tests for electron configuration, ionisation energy, and periodic trends at the hardest A-Level Chemistry standard.
 slug: diag-atomic-structure
 hide_table_of_contents: true

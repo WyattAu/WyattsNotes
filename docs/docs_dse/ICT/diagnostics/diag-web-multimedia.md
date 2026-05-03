@@ -1,5 +1,5 @@
 ---
-title: Web Development and Multimedia -- Diagnostic Tests
+title: "Web Development and Multimedia -- Diagnostic Tests"
 description: "DSE ICT diagnostic tests for web development and multimedia: HTML/CSS, JavaScript, web design principles, image/audio/video formats."
 slug: diag-web-multimedia
 hide_table_of_contents: true

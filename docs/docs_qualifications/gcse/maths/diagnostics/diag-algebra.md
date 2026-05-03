@@ -1,5 +1,5 @@
 ---
-title: Algebra -- Diagnostic Tests
+title: "Algebra -- Diagnostic Tests"
 description: "GCSE Maths diagnostic tests for algebra: solving equations, rearranging formulas, simultaneous equations, quadratic equations, inequalities."
 slug: diag-algebra
 hide_table_of_contents: true

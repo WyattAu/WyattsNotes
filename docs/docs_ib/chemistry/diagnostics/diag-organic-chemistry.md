@@ -1,5 +1,5 @@
 ---
-title: Organic Chemistry -- Diagnostic Tests
+title: "Organic Chemistry -- Diagnostic Tests"
 description: "Diagnostic tests for IB Chemistry organic chemistry: nucleophilic substitution, elimination, reaction mechanisms, stereochemistry, and functional groups."
 slug: diag-organic-chemistry
 hide_table_of_contents: true

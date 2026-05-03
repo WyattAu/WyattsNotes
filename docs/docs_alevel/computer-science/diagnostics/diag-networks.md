@@ -1,5 +1,5 @@
 ---
-title: Computer Networks -- Diagnostic Tests
+title: "Computer Networks -- Diagnostic Tests"
 description: "Diagnostic tests for A-Level CS networks: TCP/IP vs OSI, network security, IP addressing, and web technologies."
 slug: diag-networks
 hide_table_of_contents: true

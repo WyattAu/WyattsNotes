@@ -1,5 +1,5 @@
 ---
-title: Periodicity -- Diagnostic Tests
+title: "Periodicity -- Diagnostic Tests"
 description: "Diagnostic tests for IB Chemistry periodicity: trends in ionisation energy, atomic radius, electronegativity, and metallic character across periods and groups."
 slug: diag-periodicity
 hide_table_of_contents: true

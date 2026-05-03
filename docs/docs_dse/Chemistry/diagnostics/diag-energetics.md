@@ -1,5 +1,5 @@
 ---
-title: Energetics / Thermochemistry -- Diagnostic Tests
+title: "Energetics / Thermochemistry -- Diagnostic Tests"
 description: Hardest diagnostic questions on energetics / thermochemistry within the DSE specification, each with a full worked solution.
 slug: diag-energetics-thermochemistry
 hide_table_of_contents: true

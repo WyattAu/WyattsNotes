@@ -1,5 +1,5 @@
 ---
-title: Molecular Biology -- Diagnostic Tests
+title: "Molecular Biology -- Diagnostic Tests"
 description: "Diagnostic tests for IB Biology molecular biology: DNA replication, transcription, translation, PCR, and enzyme function."
 slug: diag-molecular-biology
 hide_table_of_contents: true

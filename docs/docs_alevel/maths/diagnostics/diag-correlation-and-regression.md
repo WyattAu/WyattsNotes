@@ -1,5 +1,5 @@
 ---
-title: Correlation and Regression -- Diagnostic Tests
+title: "Correlation and Regression -- Diagnostic Tests"
 description: Hard diagnostic tests for correlation and regression covering PMCC, Spearman's rank, coding effects, residual analysis, and hypothesis testing for correlation.
 slug: diag-correlation-and-regression
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Probability -- Diagnostic Tests
+title: "Probability -- Diagnostic Tests"
 description: "Diagnostic tests for DSE Probability: conditional probability, independence, tree diagrams, and common fallacies in probability reasoning."
 slug: diag-probability
 hide_table_of_contents: true

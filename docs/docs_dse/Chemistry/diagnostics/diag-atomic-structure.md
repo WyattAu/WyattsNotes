@@ -1,5 +1,5 @@
 ---
-title: Atomic Structure -- Diagnostic Tests
+title: "Atomic Structure -- Diagnostic Tests"
 description: Hardest diagnostic questions on atomic structure within the DSE specification, each with a full worked solution.
 slug: diag-atomic-structure
 hide_table_of_contents: true

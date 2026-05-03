@@ -1,5 +1,5 @@
 ---
-title: States of Matter -- Diagnostic Tests
+title: "States of Matter -- Diagnostic Tests"
 description: "Diagnostic tests for IB Chemistry states of matter: kinetic theory, gas laws, ideal gas equation deviations, and phase diagrams."
 slug: diag-states-of-matter
 hide_table_of_contents: true

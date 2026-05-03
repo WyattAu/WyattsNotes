@@ -1,6 +1,6 @@
 ---
-title: Biological Molecules -- Diagnostic Tests
-description: Hardest diagnostic questions on biological molecules: carbohydrate structure, protein folding, enzyme kinetics, nucleic acid comparison, and water properties.
+title: "Biological Molecules -- Diagnostic Tests"
+description: "Hardest diagnostic questions on biological molecules: carbohydrate structure, protein folding, enzyme kinetics, nucleic acid comparison, and water properties."
 slug: diag-biological-molecules
 hide_table_of_contents: true
 ---

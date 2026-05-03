@@ -1,5 +1,5 @@
 ---
-title: Combinatorics -- Diagnostic Tests
+title: "Combinatorics -- Diagnostic Tests"
 description: "Diagnostic tests for DSE Combinatorics: permutations, combinations, binomial theorem, restrictions, and common order-versus-selection errors."
 slug: diag-combinatorics
 hide_table_of_contents: true

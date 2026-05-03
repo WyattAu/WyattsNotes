@@ -1,5 +1,5 @@
 ---
-title: Genetics -- Diagnostic Tests
+title: "Genetics -- Diagnostic Tests"
 description: "Diagnostic tests for IB Biology genetics: monohybrid and dihybrid crosses, chi-squared tests, sex linkage, and Hardy-Weinberg equilibrium."
 slug: diag-genetics
 hide_table_of_contents: true

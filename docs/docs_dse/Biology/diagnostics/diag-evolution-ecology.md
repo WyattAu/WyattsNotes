@@ -1,5 +1,5 @@
 ---
-title: Evolution and Ecology -- Diagnostic Tests
+title: "Evolution and Ecology -- Diagnostic Tests"
 description: Hardest diagnostic questions on evolution and ecology within the DSE specification, each with a full worked solution.
 slug: diag-evolution-ecology
 hide_table_of_contents: true

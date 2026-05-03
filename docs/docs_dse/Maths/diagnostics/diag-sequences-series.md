@@ -1,5 +1,5 @@
 ---
-title: Sequences and Series -- Diagnostic Tests
+title: "Sequences and Series -- Diagnostic Tests"
 description: "Diagnostic tests for DSE Sequences and Series: arithmetic and geometric progressions, sigma notation, convergence, and recurrence relations."
 slug: diag-sequences-series
 hide_table_of_contents: true

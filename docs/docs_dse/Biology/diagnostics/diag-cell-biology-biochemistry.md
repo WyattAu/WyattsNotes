@@ -1,5 +1,5 @@
 ---
-title: Cell Biology and Biochemistry -- Diagnostic Tests
+title: "Cell Biology and Biochemistry -- Diagnostic Tests"
 description: Hardest diagnostic questions on cell biology and biochemistry within the DSE specification, each with a full worked solution.
 slug: diag-cell-biology-biochemistry
 hide_table_of_contents: true

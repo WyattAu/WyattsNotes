@@ -1,5 +1,5 @@
 ---
-title: Genetics -- Diagnostic Tests
+title: "Genetics -- Diagnostic Tests"
 description: Hardest diagnostic questions on genetics within the DSE specification, each with a full worked solution.
 slug: diag-genetics
 hide_table_of_contents: true

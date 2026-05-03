@@ -1,5 +1,5 @@
 ---
-title: Programming and Databases -- Diagnostic Tests
+title: "Programming and Databases -- Diagnostic Tests"
 description: "DSE ICT diagnostic tests for programming and databases: algorithm design, pseudocode, SQL queries, normalisation, software development lifecycle."
 slug: diag-programming-databases
 hide_table_of_contents: true

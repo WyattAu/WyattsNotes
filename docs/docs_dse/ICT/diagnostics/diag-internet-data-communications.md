@@ -1,5 +1,5 @@
 ---
-title: Internet and Data Communications -- Diagnostic Tests
+title: "Internet and Data Communications -- Diagnostic Tests"
 description: "DSE ICT diagnostic tests for internet and data communications: network topologies, OSI model, TCP/IP, protocols, bandwidth, and error detection."
 slug: diag-internet-data-communications
 hide_table_of_contents: true

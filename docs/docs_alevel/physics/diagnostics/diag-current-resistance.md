@@ -1,5 +1,5 @@
 ---
-title: Current and Resistance -- Diagnostic Tests
+title: "Current and Resistance -- Diagnostic Tests"
 description: Diagnostic tests for Ohm's law, I-V characteristics of non-ohmic components, resistivity, and superconductivity at maximum A-Level Physics difficulty.
 slug: diag-current-resistance
 hide_table_of_contents: true

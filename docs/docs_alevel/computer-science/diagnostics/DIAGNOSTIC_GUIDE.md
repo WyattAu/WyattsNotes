@@ -1,5 +1,5 @@
 ---
-title: A-Level Computer Science -- Diagnostic Guide
+title: "A-Level Computer Science -- Diagnostic Guide"
 description: "Comprehensive guide to A-Level CS diagnostic tests with coverage map, grading rubric, prerequisite chains, and timing recommendations."
 slug: diag-guide-cs
 hide_table_of_contents: true

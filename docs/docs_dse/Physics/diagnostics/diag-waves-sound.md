@@ -1,5 +1,5 @@
 ---
-title: Waves and Sound -- Diagnostic Tests
+title: "Waves and Sound -- Diagnostic Tests"
 description: "Hardest DSE waves questions: standing wave formation, wave speed calculations, longitudinal wave properties, and harmonics identification."
 slug: diag-waves-sound
 hide_table_of_contents: true

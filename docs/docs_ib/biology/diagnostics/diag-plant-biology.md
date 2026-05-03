@@ -1,5 +1,5 @@
 ---
-title: Plant Biology -- Diagnostic Tests
+title: "Plant Biology -- Diagnostic Tests"
 description: "Diagnostic tests for IB Biology plant biology: photosynthesis, transpiration, mineral transport, reproduction, and growth regulators."
 slug: diag-plant-biology
 hide_table_of_contents: true

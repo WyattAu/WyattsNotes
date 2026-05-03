@@ -1,5 +1,5 @@
 ---
-title: Radioactivity -- Diagnostic Tests
+title: "Radioactivity -- Diagnostic Tests"
 description: Diagnostic tests for half-life, decay equations, activity, alpha-beta-gamma radiation, and nuclear decay chains at maximum A-Level Physics difficulty.
 slug: diag-radioactivity
 hide_table_of_contents: true

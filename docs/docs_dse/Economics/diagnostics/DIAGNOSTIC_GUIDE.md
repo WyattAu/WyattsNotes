@@ -1,5 +1,5 @@
 ---
-title: DSE Economics -- Diagnostic Guide
+title: "DSE Economics -- Diagnostic Guide"
 description: "Comprehensive guide to DSE Economics diagnostic tests with coverage map, grading rubric, prerequisite chains, and timing recommendations."
 slug: diag-guide-dse-economics
 hide_table_of_contents: true

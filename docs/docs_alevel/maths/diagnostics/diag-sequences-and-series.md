@@ -1,5 +1,5 @@
 ---
-title: Sequences and Series -- Diagnostic Tests
+title: "Sequences and Series -- Diagnostic Tests"
 description: Hard diagnostic tests for sequences and series covering convergence, sigma notation, recurrence relations, telescoping sums, and tolerance bounds.
 slug: diag-sequences-and-series
 hide_table_of_contents: true
