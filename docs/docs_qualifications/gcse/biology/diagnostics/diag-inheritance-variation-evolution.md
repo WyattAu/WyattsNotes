@@ -16,7 +16,7 @@ hide_table_of_contents: true
 
 (a) DNA (deoxyribonucleic acid) is a double helix structure made of two complementary strands. Each strand is a polymer of nucleotides, where each nucleotide consists of: a deoxyribose sugar, a phosphate group, and one of four bases: adenine (A), thymine (T), cytosine (C), or guanine (G). The two strands are held together by hydrogen bonds between complementary base pairs: A--T (two bonds) and C--G (three bonds). The sugar-phosphate backbone forms the outside of the helix.
 
-(b) A **chromosome** is a long coiled molecule of DNA found in the nucleus. A **gene** is a short section of DNA on a chromosome that codes for a specific protein (and therefore a specific characteristic). Each gene exists in different forms called **alleles**, which produce variations of the same characteristic. Humans have 23 pairs of chromosomes (46 total), containing approximately 20{,}000 genes.
+(b) A **chromosome** is a long coiled molecule of DNA found in the nucleus. A **gene** is a short section of DNA on a chromosome that codes for a specific protein (and therefore a specific characteristic). Each gene exists in different forms called **alleles**, which produce variations of the same characteristic. Humans have 23 pairs of chromosomes (46 total), containing approximately 20,000 genes.
 
 (c) Man: Ff (heterozygous). Woman: ff (attached earlobes, must be homozygous recessive).
 
@@ -82,7 +82,7 @@ Probability that one child has CF $= 1/4$. Probability that both children have C
 (d) Carriers are heterozygous (Ff). They have one normal allele (F) that produces enough functional CFTR protein for normal cell function. The recessive allele (f) produces a non-functional protein, but the one dominant normal allele compensates. The carrier is phenotypically normal because one functional copy of the gene is sufficient.
 
 ### IT-2: Evolution and Speciation (with Ecology)
-**Question:** Two populations of a beetle species become separated by a mountain range. Population A lives in a tropical forest, and population B lives in a temperate grassland. (a) Explain how the two populations might evolve into different species over time (speciation). (b) If the allele for heat tolerance (H, dominant) has a frequency of 0.3 in population A and 0.7 in population B, calculate the frequency of the recessive allele (h) in each population. (c) Explain the role of genetic drift in small, isolated populations. (d) After 10{,}000 years, the mountain range erodes and the populations meet again. Explain why they may not be able to interbreed.
+**Question:** Two populations of a beetle species become separated by a mountain range. Population A lives in a tropical forest, and population B lives in a temperate grassland. (a) Explain how the two populations might evolve into different species over time (speciation). (b) If the allele for heat tolerance (H, dominant) has a frequency of 0.3 in population A and 0.7 in population B, calculate the frequency of the recessive allele (h) in each population. (c) Explain the role of genetic drift in small, isolated populations. (d) After 10,000 years, the mountain range erodes and the populations meet again. Explain why they may not be able to interbreed.
 
 **Solution:**
 

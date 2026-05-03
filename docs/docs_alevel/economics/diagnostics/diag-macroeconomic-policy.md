@@ -10,21 +10,21 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: The Multiplier Effect
-**Question:** In a closed economy with no government, the marginal propensity to consume is $\text{MPC} = 0.75$. An increase in investment of $\pounds 200\text{m}$ occurs. Calculate: (a) the multiplier, (b) the total change in national income, (c) the change in consumption. If the government introduces a proportional income tax of $t = 0.2$ and $\text{MPM} = 0.1$, recalculate the multiplier.
+**Question:** In a closed economy with no government, the marginal propensity to consume is $\text{MPC} = 0.75$. An increase in investment of $\pounds 200$~m occurs. Calculate: (a) the multiplier, (b) the total change in national income, (c) the change in consumption. If the government introduces a proportional income tax of $t = 0.2$ and $\text{MPM} = 0.1$, recalculate the multiplier.
 
 **Solution:**
 
 (a) Simple multiplier: $k = \frac{1}{1 - \text{MPC}} = \frac{1}{1 - 0.75} = \frac{1}{0.25} = 4$.
 
-(b) Change in income: $\Delta Y = k \times \Delta I = 4 \times 200 = \pounds 800\text{m}$.
+(b) Change in income: $\Delta Y = k \times \Delta I = 4 \times 200 = \pounds 800$~m.
 
-(c) Change in consumption: $\Delta C = \text{MPC} \times \Delta Y = 0.75 \times 800 = \pounds 600\text{m}$.
+(c) Change in consumption: $\Delta C = \text{MPC} \times \Delta Y = 0.75 \times 800 = \pounds 600$~m.
 
 With tax and imports, the complex multiplier: $k = \frac{1}{1 - \text{MPC}(1-t) + \text{MPM}}$.
 
 $k = \frac{1}{1 - 0.75(1 - 0.2) + 0.1} = \frac{1}{1 - 0.75(0.8) + 0.1} = \frac{1}{1 - 0.60 + 0.1} = \frac{1}{0.50} = 2$.
 
-The tax and imports act as automatic withdrawals, reducing the multiplier from 4 to 2. This means the same $\pounds 200\text{m}$ investment increase would now raise income by only $\pounds 400\text{m}$ instead of $\pounds 800\text{m}$.
+The tax and imports act as automatic withdrawals, reducing the multiplier from 4 to 2. This means the same $\pounds 200$~m investment increase would now raise income by only $\pounds 400$~m instead of $\pounds 800$~m.
 
 ---
 ### UT-2: Phillips Curve Analysis
@@ -48,7 +48,7 @@ The natural rate is 5%.
 
 ---
 ### UT-3: Fiscal Policy Analysis
-**Question:** The government increases spending by $\pounds 50\text{bn}$, financed entirely by borrowing. The marginal propensity to consume is 0.8, the marginal tax rate is 0.25, and the marginal propensity to import is 0.15. Calculate: (a) the government spending multiplier, (b) the change in the budget deficit (initial and after multiplier effects), (c) the extent of crowding out if the interest sensitivity of investment is such that a 1 percentage point increase in interest rates reduces investment by $\pounds 10\text{bn}$, and the increased borrowing raises interest rates by 0.5 percentage points.
+**Question:** The government increases spending by $\pounds 50$~bn, financed entirely by borrowing. The marginal propensity to consume is 0.8, the marginal tax rate is 0.25, and the marginal propensity to import is 0.15. Calculate: (a) the government spending multiplier, (b) the change in the budget deficit (initial and after multiplier effects), (c) the extent of crowding out if the interest sensitivity of investment is such that a 1 percentage point increase in interest rates reduces investment by $\pounds 10$~bn, and the increased borrowing raises interest rates by 0.5 percentage points.
 
 **Solution:**
 
@@ -56,28 +56,28 @@ The natural rate is 5%.
 
 $k = \frac{1}{1 - 0.8(0.75) + 0.15} = \frac{1}{1 - 0.60 + 0.15} = \frac{1}{0.55} = 1.82$
 
-$\Delta Y = 1.82 \times 50 = \pounds 91\text{bn}$.
+$\Delta Y = 1.82 \times 50 = \pounds 91$~bn.
 
-(b) Initial increase in deficit: $\pounds 50\text{bn}$ (the additional spending).
+(b) Initial increase in deficit: $\pounds 50$~bn (the additional spending).
 
-After multiplier effects: tax revenue increases by $t \times \Delta Y = 0.25 \times 91 = \pounds 22.75\text{bn}$.
+After multiplier effects: tax revenue increases by $t \times \Delta Y = 0.25 \times 91 = \pounds 22.75$~bn.
 
-New deficit increase $= 50 - 22.75 = \pounds 27.25\text{bn}$ (the automatic stabiliser partially offsets the initial deficit increase).
+New deficit increase $= 50 - 22.75 = \pounds 27.25$~bn (the automatic stabiliser partially offsets the initial deficit increase).
 
-(c) Crowding out: the $\pounds 50\text{bn}$ borrowing raises interest rates by 0.5 percentage points.
+(c) Crowding out: the $\pounds 50$~bn borrowing raises interest rates by 0.5 percentage points.
 
-Investment reduction: $0.5 \times 10 = \pounds 5\text{bn}$.
+Investment reduction: $0.5 \times 10 = \pounds 5$~bn.
 
 The crowding out effect reduces the net fiscal expansion. The effective change in aggregate demand is not just the multiplier effect on government spending, but also accounts for the fall in investment:
 
-$\Delta \text{AD} = k_G \times 50 + k_I \times (-5) = 91 + 1.82 \times (-5) = 91 - 9.1 = \pounds 81.9\text{bn}$.
+$\Delta \text{AD} = k_G \times 50 + k_I \times (-5) = 91 + 1.82 \times (-5) = 91 - 9.1 = \pounds 81.9$~bn.
 
 The crowding out reduces the expansionary effect by about 10%. In practice, the extent of crowding out depends on the state of the economy (it is larger when the economy is near full employment and smaller in a recession with a liquidity trap).
 
 ## Integration Tests
 
 ### IT-1: Monetary Policy Transmission Mechanism (with The Financial Sector)
-**Question:** The Bank of England raises the base rate from 2% to 3%. Trace the full monetary policy transmission mechanism, explaining each step. Given that the money multiplier is 5 and the banking system holds no excess reserves, calculate: (a) the maximum change in the money supply if the central bank sells $\pounds 2\text{bn}$ of government bonds through open market operations simultaneously, (b) the impact on the velocity of money if $\text{MV} = PY$ and $Y$ rises by 2% while $P$ is unchanged.
+**Question:** The Bank of England raises the base rate from 2% to 3%. Trace the full monetary policy transmission mechanism, explaining each step. Given that the money multiplier is 5 and the banking system holds no excess reserves, calculate: (a) the maximum change in the money supply if the central bank sells $\pounds 2$~bn of government bonds through open market operations simultaneously, (b) the impact on the velocity of money if $\text{MV} = PY$ and $Y$ rises by 2% while $P$ is unchanged.
 
 **Solution:**
 
@@ -89,9 +89,9 @@ The crowding out reduces the expansionary effect by about 10%. In practice, the 
 5. Higher UK interest rates attract foreign capital inflows $\to$ demand for sterling rises $\to$ the exchange rate appreciates $\to$ exports become more expensive and imports cheaper $\to$ net exports fall.
 6. Combined effect: AD shifts left, reducing inflationary pressure but also reducing real GDP and increasing unemployment.
 
-(a) Selling $\pounds 2\text{bn}$ of bonds removes $\pounds 2\text{bn}$ of reserves from the banking system. With a money multiplier of 5:
+(a) Selling $\pounds 2$~bn of bonds removes $\pounds 2$~bn of reserves from the banking system. With a money multiplier of 5:
 
-Maximum change in money supply $= 5 \times (-2) = -\pounds 10\text{bn}$.
+Maximum change in money supply $= 5 \times (-2) = -\pounds 10$~bn.
 
 (b) $\text{MV} = PY$. If $Y$ rises by 2% and $P$ is unchanged, then $\text{MV}$ must rise by 2%.
 
@@ -105,7 +105,7 @@ This scenario is contradictory: the interest rate rise and bond sale both reduce
 
 ---
 ### IT-2: AD/AS and Supply-Side Policy (with Supply-Side Policy)
-**Question:** An economy is experiencing stagflation: inflation at 8% and unemployment at 8%, with the natural rate at 5%. Using the AD/AS model, explain why demand-side policies alone cannot solve stagflation. A supply-side policy reduces the natural rate of unemployment to 4% and increases potential output by 5%. Assuming initial output is $\pounds 2000\text{bn}$, calculate: (a) the new potential output, (b) the change in the price level if AD is unchanged (assuming unitary elasticity of demand at potential output).
+**Question:** An economy is experiencing stagflation: inflation at 8% and unemployment at 8%, with the natural rate at 5%. Using the AD/AS model, explain why demand-side policies alone cannot solve stagflation. A supply-side policy reduces the natural rate of unemployment to 4% and increases potential output by 5%. Assuming initial output is $\pounds 2000$~bn, calculate: (a) the new potential output, (b) the change in the price level if AD is unchanged (assuming unitary elasticity of demand at potential output).
 
 **Solution:**
 
@@ -113,7 +113,7 @@ This scenario is contradictory: the interest rate rise and bond sale both reduce
 
 **Supply-side solution:** Supply-side policies shift the LRAS (and SRAS) to the right, increasing potential output and reducing the natural rate. This allows lower inflation AND lower unemployment simultaneously.
 
-(a) New potential output $= 2000 \times 1.05 = \pounds 2100\text{bn}$.
+(a) New potential output $= 2000 \times 1.05 = \pounds 2100$~bn.
 
 (b) With AD unchanged and unitary elasticity (PQ approximately constant at potential):
 
@@ -124,13 +124,13 @@ $P_1 \times 2100 = P_0 \times 2000$, so $P_1 = P_0 \times \frac{2000}{2100} = P_
 The price level falls by approximately 4.76%. The supply-side improvement simultaneously:
 - Reduces inflation (price level falls)
 - Reduces unemployment (natural rate falls from 5% to 4%)
-- Increases economic growth (output rises from $\pounds 2000\text{bn}$ to $\pounds 2100\text{bn}$)
+- Increases economic growth (output rises from $\pounds 2000$~bn to $\pounds 2100$~bn)
 
 This is the key advantage of supply-side policies over demand-side policies in addressing stagflation.
 
 ---
 ### IT-3: Exchange Rates and Balance of Payments (with The International Economy)
-**Question:** The UK current account is in deficit by $\pounds 50\text{bn}$. The exchange rate is $E = \$1.25/\pounds$. The Marshall-Lerner condition holds (sum of PEDs for exports and imports $= 1.8$). If the pound depreciates by 20% to $\$1.00/\pounds$: (a) Calculate the J-curve effect in the first 6 months, assuming short-run PEDs sum to 0.6, (b) Calculate the long-run improvement in the current account if import spending was initially $\pounds 500\text{bn}$ and export revenue was $\pounds 400\text{bn}$.
+**Question:** The UK current account is in deficit by $\pounds 50$~bn. The exchange rate is $E = \$1.25/\pounds$. The Marshall-Lerner condition holds (sum of PEDs for exports and imports $= 1.8$). If the pound depreciates by 20% to $\$1.00/\pounds$: (a) Calculate the J-curve effect in the first 6 months, assuming short-run PEDs sum to 0.6, (b) Calculate the long-run improvement in the current account if import spending was initially $\pounds 500$~bn and export revenue was $\pounds 400$~bn.
 
 **Solution:**
 
@@ -138,26 +138,26 @@ This is the key advantage of supply-side policies over demand-side policies in a
 
 The depreciation makes imports more expensive (more pounds needed per dollar of imports) and exports cheaper (fewer dollars needed per pound of exports). With inelastic demand in the short run, the value effect (higher import prices) dominates the volume effect (quantity changes).
 
-Initial: exports $\pounds 400\text{bn}$, imports $\pounds 500\text{bn}$, deficit $= \pounds 100\text{bn}$ (note: deficit is $\pounds 100\text{bn}$ by these figures, not $\pounds 50\text{bn}$ -- let me use $\pounds 450\text{bn}$ imports for a $\pounds 50\text{bn}$ deficit).
+Initial: exports $\pounds 400$~bn, imports $\pounds 500$~bn, deficit $= \pounds 100$~bn (note: deficit is $\pounds 100$~bn by these figures, not $\pounds 50$~bn -- let me use $\pounds 450$~bn imports for a $\pounds 50$~bn deficit).
 
-Let me use: exports $= \pounds 400\text{bn}$, imports $= \pounds 450\text{bn}$, deficit $= \pounds 50\text{bn}$.
+Let me use: exports $= \pounds 400$~bn, imports $= \pounds 450$~bn, deficit $= \pounds 50$~bn.
 
 With 20% depreciation, import prices rise by approximately 20% (in pound terms) and export prices fall by approximately 20% (in foreign currency terms).
 
-Short-run: $\% \Delta \text{exports} = 0.3 \times 20 = 6\%$ (assuming export PED $= 0.3$). New exports $= 400 \times 1.06 = \pounds 424\text{bn}$.
+Short-run: $\% \Delta \text{exports} = 0.3 \times 20 = 6\%$ (assuming export PED $= 0.3$). New exports $= 400 \times 1.06 = \pounds 424$~bn.
 
-$\% \Delta \text{imports} = -0.3 \times 20 = -6\%$ (import PED $= 0.3$). New import volume $= 450 \times 0.94 = \pounds 423\text{bn}$ at old prices, but at 20% higher prices $= 423 \times 1.20 = \pounds 507.6\text{bn}$.
+$\% \Delta \text{imports} = -0.3 \times 20 = -6\%$ (import PED $= 0.3$). New import volume $= 450 \times 0.94 = \pounds 423$~bn at old prices, but at 20% higher prices $= 423 \times 1.20 = \pounds 507.6$~bn.
 
-New deficit $= 507.6 - 424 = \pounds 83.6\text{bn}$. The deficit **worsens** by $\pounds 33.6\text{bn}$ in the short run -- the J-curve effect.
+New deficit $= 507.6 - 424 = \pounds 83.6$~bn. The deficit **worsens** by $\pounds 33.6$~bn in the short run -- the J-curve effect.
 
 (b) **Long-run improvement:** PEDs sum to 1.8 (Marshall-Lerner satisfied).
 
-$\% \Delta \text{exports} = 0.9 \times 20 = 18\%$. New exports $= 400 \times 1.18 = \pounds 472\text{bn}$.
+$\% \Delta \text{exports} = 0.9 \times 20 = 18\%$. New exports $= 400 \times 1.18 = \pounds 472$~bn.
 
-$\% \Delta \text{imports} = -0.9 \times 20 = -18\%$. New import volume $= 450 \times 0.82 = 369$ at old prices, but at 20% higher prices $= 369 \times 1.20 = \pounds 442.8\text{bn}$.
+$\% \Delta \text{imports} = -0.9 \times 20 = -18\%$. New import volume $= 450 \times 0.82 = 369$ at old prices, but at 20% higher prices $= 369 \times 1.20 = \pounds 442.8$~bn.
 
-New deficit $= 442.8 - 472 = -\pounds 29.2\text{bn}$ (surplus of $\pounds 29.2\text{bn}$).
+New deficit $= 442.8 - 472 = -\pounds 29.2$~bn (surplus of $\pounds 29.2$~bn).
 
-Improvement $= 50 + 29.2 = \pounds 79.2\text{bn}$ (from $\pounds 50\text{bn}$ deficit to $\pounds 29.2\text{bn}$ surplus).
+Improvement $= 50 + 29.2 = \pounds 79.2$~bn (from $\pounds 50$~bn deficit to $\pounds 29.2$~bn surplus).
 
 The J-curve illustrates that exchange rate depreciation initially worsens the trade balance before improving it -- the full benefits may take 1--2 years to materialise.

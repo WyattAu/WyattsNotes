@@ -39,7 +39,7 @@ Verification: $214 - 107 = 107$. Correct.
 
 (a) **ASCII:** Uses 7 bits (extended to 8 bits) per character, encoding 128 (or 256) characters -- sufficient for English and basic symbols. Cannot represent Chinese, Japanese, Korean, Arabic, or emoji.
 
-**Unicode:** A universal character set that assigns a unique code point to every character in every language (over 149{,}000 characters). Unicode is the standard; UTF-8, UTF-16, and UTF-32 are encoding schemes that implement Unicode.
+**Unicode:** A universal character set that assigns a unique code point to every character in every language (over 149,000 characters). Unicode is the standard; UTF-8, UTF-16, and UTF-32 are encoding schemes that implement Unicode.
 
 (b) "Hi!":
 - H: code point 72 (U+0048), fits in 1 byte UTF-8: 01001000.

@@ -134,11 +134,11 @@ A **B-tree** (used in databases) would also be excellent for range queries, as i
 Edges sorted: B-C(1), C-D(1), A-B(2), E-F(2), C-E(3), B-D(4), A-C(5), D-E(6), D-F(7).
 
 Process:
-1. B-C(1): add. Forest: {B-C}, {A}, {D}, {E}, {F}.
-2. C-D(1): add (C connects to D). Forest: {B-C-D}, {A}, {E}, {F}.
-3. A-B(2): add (A connects to B). Forest: {A-B-C-D}, {E}, {F}.
-4. E-F(2): add. Forest: {A-B-C-D}, {E-F}.
-5. C-E(3): add (C connects to E). Forest: {A-B-C-D-E-F}. Done (5 edges for 6 vertices).
+1. B-C(1): add. Forest: \{B-C\}, \{A\}, \{D\}, \{E\}, \{F\}.
+2. C-D(1): add (C connects to D). Forest: \{B-C-D\}, \{A\}, \{E\}, \{F\}.
+3. A-B(2): add (A connects to B). Forest: \{A-B-C-D\}, \{E\}, \{F\}.
+4. E-F(2): add. Forest: \{A-B-C-D\}, \{E-F\}.
+5. C-E(3): add (C connects to E). Forest: \{A-B-C-D-E-F\}. Done (5 edges for 6 vertices).
 
 MST edges: A-B(2), B-C(1), C-D(1), C-E(3), E-F(2).
 
@@ -148,19 +148,19 @@ MST edges: A-B(2), B-C(1), C-D(1), C-E(3), E-F(2).
 
 Remaining edges to consider: B-D(4), A-C(5), D-E(6), D-F(7).
 
-5. C-E(3): add. Forest: {A-B-C}, {D}, {E-F}.
-6. B-D(4): add (B connects to D). Forest: {A-B-C-D}, {E-F}.
+5. C-E(3): add. Forest: \{A-B-C\}, \{D\}, \{E-F\}.
+6. B-D(4): add (B connects to D). Forest: \{A-B-C-D\}, \{E-F\}.
 7. C-E(3) was already considered. Wait, C-E(3) comes before B-D(4).
 
 Let me redo without C-D(1):
 
 Edges: B-C(1), A-B(2), E-F(2), C-E(3), B-D(4), A-C(5), D-E(6), D-F(7).
 
-1. B-C(1): add. {B-C}, {A}, {D}, {E}, {F}.
-2. A-B(2): add. {A-B-C}, {D}, {E}, {F}.
-3. E-F(2): add. {A-B-C}, {D}, {E-F}.
-4. C-E(3): add. {A-B-C-E-F}, {D}.
-5. B-D(4): add. {A-B-C-D-E-F}. Done.
+1. B-C(1): add. \{B-C\}, \{A\}, \{D\}, \{E\}, \{F\}.
+2. A-B(2): add. \{A-B-C\}, \{D\}, \{E\}, \{F\}.
+3. E-F(2): add. \{A-B-C\}, \{D\}, \{E-F\}.
+4. C-E(3): add. \{A-B-C-E-F\}, \{D\}.
+5. B-D(4): add. \{A-B-C-D-E-F\}. Done.
 
 New MST: A-B(2), B-C(1), C-E(3), E-F(2), B-D(4).
 

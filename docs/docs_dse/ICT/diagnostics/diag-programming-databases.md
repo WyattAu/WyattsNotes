@@ -128,7 +128,7 @@ In the Students table: StudentID $\to$ Class. If Class $\to$ ClassTeacher, Class
 ## Integration Tests
 
 ### IT-1: Database Design and Query Optimisation (with Computer Systems)
-**Question:** A library system has 10{,}000 books and 5000 members. The loans table records every transaction. (a) Design a normalised schema (at least 3 tables) with appropriate keys and relationships. (b) Write SQL to find the most popular book genre in the past year. (c) The loans table has 100{,}000 rows. Explain why adding an index on (member_id, loan_date) would improve query performance. (d) Explain how the database uses the buffer cache in RAM and how insufficient RAM affects performance.
+**Question:** A library system has 10,000 books and 5000 members. The loans table records every transaction. (a) Design a normalised schema (at least 3 tables) with appropriate keys and relationships. (b) Write SQL to find the most popular book genre in the past year. (c) The loans table has 100,000 rows. Explain why adding an index on (member_id, loan_date) would improve query performance. (d) Explain how the database uses the buffer cache in RAM and how insufficient RAM affects performance.
 
 **Solution:**
 
@@ -148,7 +148,7 @@ ORDER BY loan_count DESC
 LIMIT 1;
 ```
 
-(c) Without an index, finding all loans for a specific member in a date range requires a full table scan (100{,}000 rows). With a composite index on (member_id, loan_date), the database uses a B-tree to locate the member's records in $O(\log n)$ time and then scans only the relevant date range. For a query like "show all loans for member 42 in 2025", the index reduces the search from examining 100{,}000 rows to perhaps 10--20 rows.
+(c) Without an index, finding all loans for a specific member in a date range requires a full table scan (100,000 rows). With a composite index on (member_id, loan_date), the database uses a B-tree to locate the member's records in $O(\log n)$ time and then scans only the relevant date range. For a query like "show all loans for member 42 in 2025", the index reduces the search from examining 100,000 rows to perhaps 10--20 rows.
 
 (d) The database buffer cache stores frequently accessed data pages (index pages, table data) in RAM. When a query needs data, the DBMS checks the buffer cache first. A cache hit (data in RAM) takes microseconds; a cache miss (disk read) takes milliseconds -- roughly 1000x slower.
 
@@ -180,7 +180,7 @@ END FUNCTION
 
 (b) String manipulation requires multiple conditionals and loops. A regular expression encodes the entire validation rule in a single pattern: `^[5679]\d{7}$`. This is: (1) More concise and readable. (2) Easier to modify (change the pattern without changing program logic). (3) Well-tested and optimised by regex engines. (4) Declarative (describes what to match) rather than imperative (how to check).
 
-(c) Two problems: (1) **Leading zeros:** If a phone number starts with 0 (in some formats), storing as an integer would lose the leading zero. HK numbers don't start with 0, but this is a general problem with numeric storage of identifiers. (2) **Overflow:** An 8-digit phone number exceeds the range of a 32-bit signed integer (max 2{,}147{,}483{,}647). Some HK numbers starting with 9 (e.g., 98765432) are within range, but this is fragile. Phone numbers are identifiers, not quantities -- they should be stored as strings.
+(c) Two problems: (1) **Leading zeros:** If a phone number starts with 0 (in some formats), storing as an integer would lose the leading zero. HK numbers don't start with 0, but this is a general problem with numeric storage of identifiers. (2) **Overflow:** An 8-digit phone number exceeds the range of a 32-bit signed integer (max 2,147,483,647). Some HK numbers starting with 9 (e.g., 98765432) are within range, but this is fragile. Phone numbers are identifiers, not quantities -- they should be stored as strings.
 
 (d) ```sql
 SELECT * FROM Members

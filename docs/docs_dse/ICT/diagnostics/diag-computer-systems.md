@@ -87,7 +87,7 @@ Stored as: 1 10000001 10101000000000000000000.
 (c) Floating-point has limited precision (23 bits of mantissa in single precision $=$ about 7 significant decimal digits). Values like $0.1$ cannot be represented exactly in binary (it is a recurring fraction: $0.000110011...$). This causes small rounding errors that accumulate through repeated operations. The CPU hardware is designed with a fixed number of bits for the mantissa, so it cannot store infinite precision -- a fundamental hardware limitation of the ALU's arithmetic circuits.
 
 ### IT-2: System Architecture (with Programming and Databases)
-**Question:** A school's student management system stores data in a relational database on a server. (a) Explain the roles of the CPU, RAM, and hard disk when a teacher searches for a student by ID number. (b) If the database has 50{,}000 records and a sequential search takes 0.001 ms per record, calculate the worst-case search time. How does indexing reduce this? (c) Explain why the database uses RAM (buffer cache) to improve performance, relating to the memory hierarchy.
+**Question:** A school's student management system stores data in a relational database on a server. (a) Explain the roles of the CPU, RAM, and hard disk when a teacher searches for a student by ID number. (b) If the database has 50,000 records and a sequential search takes 0.001 ms per record, calculate the worst-case search time. How does indexing reduce this? (c) Explain why the database uses RAM (buffer cache) to improve performance, relating to the memory hierarchy.
 
 **Solution:**
 
@@ -103,7 +103,7 @@ Stored as: 1 10000001 10101000000000000000000.
 
 With a B-tree index: search depth $\approx \log_2(50{,}000) \approx 16$ levels. With 3--4 disk accesses (each $\approx 5$ ms), total $\approx 15$--$20$ ms. With the index cached in RAM, the search reduces to a fraction of a millisecond.
 
-(c) The database buffer cache keeps frequently accessed data and index pages in RAM. Since RAM access time ($\approx 100$ ns) is roughly 100{,}000 times faster than disk access ($\approx 10$ ms), caching dramatically reduces query latency. The memory hierarchy principle applies: the most frequently accessed database pages are kept in the fastest available storage. The database engine uses LRU (Least Recently Used) or similar algorithms to manage the buffer cache, evicting least-used pages when RAM is full.
+(c) The database buffer cache keeps frequently accessed data and index pages in RAM. Since RAM access time ($\approx 100$ ns) is roughly 100,000 times faster than disk access ($\approx 10$ ms), caching dramatically reduces query latency. The memory hierarchy principle applies: the most frequently accessed database pages are kept in the fastest available storage. The database engine uses LRU (Least Recently Used) or similar algorithms to manage the buffer cache, evicting least-used pages when RAM is full.
 
 ### IT-3: Hardware Selection (with Network Security)
 **Question:** A small business needs to set up a file server for 20 employees. (a) Recommend minimum specifications for: CPU cores, RAM, and storage type, justifying each choice. (b) Explain why ECC (Error-Correcting Code) RAM is important for a server but not typically needed for a desktop. (c) The server will store sensitive client data. Explain how hardware-level security features (TPM, secure boot) complement software-level encryption.

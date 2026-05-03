@@ -10,13 +10,13 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Food Chains and Webs
-**Question:** A food chain in a woodland ecosystem is: oak tree $\to$ caterpillar $\to$ blue tit $\to$ sparrowhawk. (a) Identify the producer, primary consumer, secondary consumer, and tertiary consumer. (b) If the oak trees store 50{,}000 kJ of energy, calculate the energy available to the sparrowhawk (assuming 10% transfer efficiency at each level). (c) Explain what would happen to the blue tit population if the caterpillar population decreased by 50%. (d) Draw a pyramid of biomass for this food chain.
+**Question:** A food chain in a woodland ecosystem is: oak tree $\to$ caterpillar $\to$ blue tit $\to$ sparrowhawk. (a) Identify the producer, primary consumer, secondary consumer, and tertiary consumer. (b) If the oak trees store 50,000 kJ of energy, calculate the energy available to the sparrowhawk (assuming 10% transfer efficiency at each level). (c) Explain what would happen to the blue tit population if the caterpillar population decreased by 50%. (d) Draw a pyramid of biomass for this food chain.
 
 **Solution:**
 
 (a) **Producer:** Oak tree (converts light energy to chemical energy via photosynthesis). **Primary consumer:** Caterpillar (herbivore). **Secondary consumer:** Blue tit (carnivore that eats caterpillars). **Tertiary consumer:** Sparrowhawk (top predator).
 
-(b) Oak tree: 50{,}000 kJ. Caterpillar: $50{,}000 \times 0.1 = 5000$ kJ. Blue tit: $5000 \times 0.1 = 500$ kJ. Sparrowhawk: $500 \times 0.1 = 50$ kJ.
+(b) Oak tree: 50,000 kJ. Caterpillar: $50{,}000 \times 0.1 = 5000$ kJ. Blue tit: $5000 \times 0.1 = 500$ kJ. Sparrowhawk: $500 \times 0.1 = 50$ kJ.
 
 (c) The blue tit population would decrease because caterpillars are their primary food source. With 50% fewer caterpillars, there is less food available, leading to increased competition for the remaining caterpillars. Some blue tits may starve or fail to breed, reducing the population. In the longer term, the blue tit population would stabilise at a lower level. The sparrowhawk population would also eventually decrease due to less prey (blue tits).
 

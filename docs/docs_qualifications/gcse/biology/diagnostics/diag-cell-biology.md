@@ -100,7 +100,7 @@ hide_table_of_contents: true
 (d) Mitosis is important for: (1) **Growth:** A multicellular organism grows by producing more cells through mitosis, increasing the number of cells while maintaining the same chromosome number and genetic information. (2) **Repair:** Damaged or worn-out cells are replaced by new cells produced by mitosis (e.g., skin cells, blood cells, stomach lining cells). (3) **Asexual reproduction:** Some organisms reproduce by mitosis, producing offspring genetically identical to the parent.
 
 ### IT-3: Microscopy and Cell Size (with Bioenergetics)
-**Question:** (a) The diameter of a typical animal cell is 20 $\mu$m. Calculate how many cells would fit along a line 1 mm long. (b) An electron micrograph shows a mitochondrion with a length of 5 mm on the image. The actual length is 1.5 $\mu$m. Calculate the magnification. (c) A chloroplast is observed to be 3.8 mm long at a magnification of 15{,}000x. Calculate the actual length in $\mu$m. (d) Explain why most cells are small (typically 10--100 $\mu$m) rather than large, relating your answer to the surface area to volume ratio.
+**Question:** (a) The diameter of a typical animal cell is 20 $\mu$m. Calculate how many cells would fit along a line 1 mm long. (b) An electron micrograph shows a mitochondrion with a length of 5 mm on the image. The actual length is 1.5 $\mu$m. Calculate the magnification. (c) A chloroplast is observed to be 3.8 mm long at a magnification of 15,000x. Calculate the actual length in $\mu$m. (d) Explain why most cells are small (typically 10--100 $\mu$m) rather than large, relating your answer to the surface area to volume ratio.
 
 **Solution:**
 
