@@ -812,5 +812,5 @@ Ready to test your understanding of **Simple Harmonic Motion**? The [diagnostic 
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Simple Harmonic Motion with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

@@ -278,5 +278,5 @@ Ready to test your understanding of **Alkenes**? The [diagnostic test](/docs/ale
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Alkenes with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

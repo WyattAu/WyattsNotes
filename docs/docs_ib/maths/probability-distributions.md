@@ -1330,5 +1330,5 @@ Ready to test your understanding of **Probability Distributions**? The [diagnost
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability Distributions with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

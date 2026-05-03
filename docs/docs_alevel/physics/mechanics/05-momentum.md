@@ -670,7 +670,7 @@ Ready to test your understanding of **Momentum**? The [diagnostic test](/docs/al
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
 :::danger Common Pitfalls

@@ -493,5 +493,5 @@ Ready to test your understanding of **Biological Molecules**? The [diagnostic te
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Biological Molecules with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

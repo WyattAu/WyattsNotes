@@ -483,5 +483,5 @@ Ready to test your understanding of **Cells**? The [diagnostic test](/docs/aleve
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Cells with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

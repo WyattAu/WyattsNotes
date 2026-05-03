@@ -1568,6 +1568,6 @@ Ready to test your understanding of **Heat and Gases**? The [diagnostic test](/d
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Heat and Gases with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 

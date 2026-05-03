@@ -320,5 +320,5 @@ Ready to test your understanding of **Transition Metals**? The [diagnostic test]
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Transition Metals with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

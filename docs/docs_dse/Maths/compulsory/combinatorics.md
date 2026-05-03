@@ -777,5 +777,5 @@ Ready to test your understanding of **Combinatorics**? The [diagnostic test](/do
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Combinatorics with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

@@ -931,5 +931,5 @@ Ready to test your understanding of **Coordinates and Geometry**? The [diagnosti
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinates and Geometry with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

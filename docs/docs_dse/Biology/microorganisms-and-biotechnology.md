@@ -895,6 +895,6 @@ Ready to test your understanding of **Microorganisms and Biotechnology**? The [d
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Microorganisms and Biotechnology with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 

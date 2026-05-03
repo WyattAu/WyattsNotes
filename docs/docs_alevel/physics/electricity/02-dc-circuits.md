@@ -752,7 +752,7 @@ Ready to test your understanding of **DC Circuits**? The [diagnostic test](/docs
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine DC Circuits with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
 :::danger Common Pitfalls

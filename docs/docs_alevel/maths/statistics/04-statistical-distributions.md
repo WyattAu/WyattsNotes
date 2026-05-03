@@ -685,5 +685,5 @@ Ready to test your understanding of **Statistical Distributions**? The [diagnost
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistical Distributions with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

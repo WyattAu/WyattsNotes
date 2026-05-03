@@ -362,5 +362,5 @@ Ready to test your understanding of **Atomic Structure and Periodicity**? The [d
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Atomic Structure and Periodicity with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::

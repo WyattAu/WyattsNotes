@@ -1492,7 +1492,7 @@ Ready to test your understanding of **Electricity and Magnetism**? The [diagnost
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electricity and Magnetism with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
 

@@ -828,5 +828,5 @@ Ready to test your understanding of **Sequences and Series**? The [diagnostic te
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
