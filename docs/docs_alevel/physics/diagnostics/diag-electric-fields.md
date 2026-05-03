@@ -1,5 +1,5 @@
 ---
-title: Electric Fields — Diagnostic Tests
+title: Electric Fields -- Diagnostic Tests
 description: Diagnostic tests for Coulomb's law, electric field strength, electric potential, and equipotentials at maximum A-Level Physics difficulty.
 slug: diag-electric-fields
 hide_table_of_contents: true

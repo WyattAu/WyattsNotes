@@ -1,5 +1,5 @@
 ---
-title: Atomic and Nuclear Physics — Diagnostic Tests
+title: Atomic and Nuclear Physics -- Diagnostic Tests
 description: Hardest IB Physics atomic and nuclear diagnostic tests covering Bohr model limitations, binding energy per nucleon, radioactive decay statistics, and alpha-beta-gamma properties.
 slug: diag-atomic-nuclear
 hide_table_of_contents: true

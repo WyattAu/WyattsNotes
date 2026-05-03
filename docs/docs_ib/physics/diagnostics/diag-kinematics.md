@@ -1,5 +1,5 @@
 ---
-title: Kinematics — Diagnostic Tests
+title: Kinematics -- Diagnostic Tests
 description: Hardest IB Physics kinematics diagnostic tests covering projectile sign conventions, non-standard v-t graphs, two-stage motion, inclined plane projectiles, and connected-particle kinematics.
 slug: diag-kinematics
 hide_table_of_contents: true

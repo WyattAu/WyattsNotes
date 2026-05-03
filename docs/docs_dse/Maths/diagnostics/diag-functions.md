@@ -1,5 +1,5 @@
 ---
-title: Functions — Diagnostic Tests
+title: Functions -- Diagnostic Tests
 description: "Diagnostic tests for DSE Functions: domain restrictions, composite functions, inverse functions, and graph transformations with common misconceptions."
 slug: diag-functions
 hide_table_of_contents: true

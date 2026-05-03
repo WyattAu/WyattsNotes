@@ -1,5 +1,5 @@
 ---
-title: "Paper 2 — Statistics — Full Diagnostic Exam"
+title: "Paper 2 -- Statistics -- Full Diagnostic Exam"
 description: "Comprehensive statistics diagnostic paper covering all 5 A-Level topics with worked solutions. Timed at 75 minutes."
 slug: diag-paper-2-statistics
 hide_table_of_contents: true

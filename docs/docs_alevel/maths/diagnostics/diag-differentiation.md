@@ -1,5 +1,5 @@
 ---
-title: Differentiation — Diagnostic Tests
+title: Differentiation -- Diagnostic Tests
 description: Hard diagnostic tests for differentiation covering chain rule depth, implicit differentiation pitfalls, second derivative notation, and parametric methods at A-Level standard.
 slug: diag-differentiation
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Gravitational Fields — Diagnostic Tests
+title: Gravitational Fields -- Diagnostic Tests
 description: Diagnostic tests for gravitational field strength, potential, orbits, Kepler's laws, and satellite motion at maximum A-Level Physics difficulty.
 slug: diag-gravitational-fields
 hide_table_of_contents: true

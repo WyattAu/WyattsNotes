@@ -1,5 +1,5 @@
 ---
-title: Properties of Materials — Diagnostic Tests
+title: Properties of Materials -- Diagnostic Tests
 description: Diagnostic tests for stress-strain analysis, Young's modulus, elastic potential energy, and material behaviour at maximum A-Level Physics difficulty.
 slug: diag-properties-of-materials
 hide_table_of_contents: true

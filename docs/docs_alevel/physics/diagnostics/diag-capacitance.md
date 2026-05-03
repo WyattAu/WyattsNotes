@@ -1,5 +1,5 @@
 ---
-title: Capacitance — Diagnostic Tests
+title: Capacitance -- Diagnostic Tests
 description: Diagnostic tests for parallel plate capacitors, energy storage, RC circuit charging and discharging, and time constants at maximum A-Level Physics difficulty.
 slug: diag-capacitance
 hide_table_of_contents: true

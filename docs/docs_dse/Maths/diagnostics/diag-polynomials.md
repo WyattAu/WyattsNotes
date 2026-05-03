@@ -1,5 +1,5 @@
 ---
-title: Polynomials — Diagnostic Tests
+title: Polynomials -- Diagnostic Tests
 description: "Diagnostic tests for DSE Polynomials: factor theorem, remainder theorem, polynomial division, and Vieta's formulas for higher degrees."
 slug: diag-polynomials
 hide_table_of_contents: true

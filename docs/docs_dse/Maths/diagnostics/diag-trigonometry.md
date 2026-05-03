@@ -1,5 +1,5 @@
 ---
-title: Trigonometry — Diagnostic Tests
+title: Trigonometry -- Diagnostic Tests
 description: "Diagnostic tests for DSE Trigonometry: sine and cosine rules, trigonometric identities, equations, and 3D problems with common pitfalls."
 slug: diag-trigonometry
 hide_table_of_contents: true

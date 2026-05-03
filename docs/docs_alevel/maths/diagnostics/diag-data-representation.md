@@ -1,5 +1,5 @@
 ---
-title: Data Representation — Diagnostic Tests
+title: Data Representation -- Diagnostic Tests
 description: Rigorous diagnostic tests for data representation covering outlier effects, misleading histograms, box plot skewness, data coding, and cumulative frequency.
 slug: diag-data-representation
 hide_table_of_contents: true

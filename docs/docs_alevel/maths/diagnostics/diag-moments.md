@@ -1,5 +1,5 @@
 ---
-title: Moments — Diagnostic Tests
+title: Moments -- Diagnostic Tests
 description: Hard diagnostic tests for moments covering perpendicular distance errors, pivot selection, uniform beam pitfalls, tilting conditions, non-uniform bodies, and ladder problems at A-Level standard.
 slug: diag-moments
 hide_table_of_contents: true

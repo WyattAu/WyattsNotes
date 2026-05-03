@@ -1,5 +1,5 @@
 ---
-title: Coordinates and Geometry — Diagnostic Tests
+title: Coordinates and Geometry -- Diagnostic Tests
 description: Hard diagnostic tests for coordinate geometry covering circle-line intersection, three-point circles, vector equations, and transformation matrices.
 slug: diag-coordinates-and-geometry
 hide_table_of_contents: true

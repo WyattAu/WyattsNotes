@@ -1,5 +1,5 @@
 ---
-title: "Paper 1 — Pure Mathematics — Full Diagnostic Exam"
+title: "Paper 1 -- Pure Mathematics -- Full Diagnostic Exam"
 description: "Comprehensive pure mathematics diagnostic paper covering all 14 A-Level topics with worked solutions. Timed at 120 minutes."
 slug: diag-paper-1-pure
 hide_table_of_contents: true

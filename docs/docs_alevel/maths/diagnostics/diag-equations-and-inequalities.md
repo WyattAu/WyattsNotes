@@ -1,5 +1,5 @@
 ---
-title: Equations and Inequalities — Diagnostic Tests
+title: Equations and Inequalities -- Diagnostic Tests
 description: Hard diagnostic tests for equations and inequalities covering modulus functions, rational inequalities, simultaneous systems, and hidden constraints at A-Level.
 slug: diag-equations-and-inequalities
 hide_table_of_contents: true

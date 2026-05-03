@@ -1,5 +1,5 @@
 ---
-title: Current Electricity — Diagnostic Tests
+title: Current Electricity -- Diagnostic Tests
 description: Hardest IB Physics current electricity diagnostic tests covering non-ohmic I-V characteristics, internal resistance effects, potential divider sensitivity, and Kirchhoff's laws with multiple loops.
 slug: diag-current-electricity
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Logarithms — Diagnostic Tests
+title: Logarithms -- Diagnostic Tests
 description: "Diagnostic tests for DSE Logarithms: log laws, equations, change of base, domain restrictions, and common fallacies like log distribution."
 slug: diag-logarithms
 hide_table_of_contents: true

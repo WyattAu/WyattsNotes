@@ -1,5 +1,5 @@
 ---
-title: Wave Properties — Diagnostic Tests
+title: Wave Properties -- Diagnostic Tests
 description: Diagnostic tests for transverse and longitudinal waves, EM spectrum, intensity, polarisation, and wave equation at maximum A-Level Physics difficulty.
 slug: diag-wave-properties
 hide_table_of_contents: true

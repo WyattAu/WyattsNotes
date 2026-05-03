@@ -1,5 +1,5 @@
 ---
-title: Sequences and Series — Diagnostic Tests
+title: Sequences and Series -- Diagnostic Tests
 description: Hardest IB Mathematics diagnostic tests for sequences and series covering Maclaurin convergence, telescoping, method of differences, and sigma notation.
 slug: diag-sequences-series
 hide_table_of_contents: true

@@ -1,5 +1,5 @@
 ---
-title: Functions and Equations — Diagnostic Tests
+title: Functions and Equations -- Diagnostic Tests
 description: Hardest IB Mathematics diagnostic tests for functions and equations covering composite domain, inverse notation, transformation order, and absolute value.
 slug: diag-functions-equations
 hide_table_of_contents: true

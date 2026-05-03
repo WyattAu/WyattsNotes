@@ -1,5 +1,5 @@
 ---
-title: Electricity and Magnetism — Diagnostic Tests
+title: Electricity and Magnetism -- Diagnostic Tests
 description: "Hardest DSE electromagnetism questions: Faraday and Lenz laws, motor effect forces, transformer efficiency, electromagnetic induction, and back EMF."
 slug: diag-electricity-magnetism
 hide_table_of_contents: true

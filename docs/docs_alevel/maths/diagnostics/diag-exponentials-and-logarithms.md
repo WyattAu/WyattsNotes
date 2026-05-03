@@ -1,5 +1,5 @@
 ---
-title: Exponentials and Logarithms — Diagnostic Tests
+title: Exponentials and Logarithms -- Diagnostic Tests
 description: Hard diagnostic tests for exponentials and logarithms covering power-law conflation, hidden quadratics, domain traps, and change-of-base errors at A-Level standard.
 slug: diag-exponentials-and-logarithms
 hide_table_of_contents: true

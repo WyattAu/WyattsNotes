@@ -1,5 +1,5 @@
 ---
-title: Integration — Diagnostic Tests
+title: Integration -- Diagnostic Tests
 description: Hardest IB Mathematics diagnostic tests for integration covering integration by parts with cyclic integrals, partial fractions with irreducible quadratics, improper integrals, and area between curves.
 slug: diag-integration
 hide_table_of_contents: true

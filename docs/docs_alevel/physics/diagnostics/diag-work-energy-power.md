@@ -1,5 +1,5 @@
 ---
-title: Work, Energy and Power — Diagnostic Tests
+title: Work, Energy and Power -- Diagnostic Tests
 description: Diagnostic tests for conservation of energy, work done by variable forces, efficiency, and power at maximum A-Level Physics difficulty.
 slug: diag-work-energy-power
 hide_table_of_contents: true

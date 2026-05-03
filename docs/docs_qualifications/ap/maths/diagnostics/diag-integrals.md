@@ -1,5 +1,5 @@
 ---
-title: Integrals — Diagnostic Tests
+title: Integrals -- Diagnostic Tests
 description: Diagnostic tests targeting the hardest AP Calculus integral questions including Riemann sums, FTC subtleties, integration techniques, area and volume computations, and improper integrals.
 slug: diag-integrals
 hide_table_of_contents: true

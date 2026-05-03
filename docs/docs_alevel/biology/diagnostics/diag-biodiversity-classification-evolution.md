@@ -1,5 +1,5 @@
 ---
-title: Biodiversity, Classification and Evolution — Diagnostic Tests
+title: Biodiversity, Classification and Evolution -- Diagnostic Tests
 description: Hardest diagnostic questions on taxonomy, Hardy-Weinberg equilibrium, natural selection vs genetic drift, speciation mechanisms, and molecular classification.
 slug: diag-biodiversity-classification-evolution
 hide_table_of_contents: true

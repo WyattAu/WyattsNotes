@@ -1,5 +1,5 @@
 ---
-title: Numerical Methods — Diagnostic Tests
+title: Numerical Methods -- Diagnostic Tests
 description: Hard diagnostic tests for numerical methods covering Newton-Raphson divergence, fixed-point iteration convergence, bisection method, trapezium rule accuracy, and error bounds at A-Level standard.
 slug: diag-numerical-methods
 hide_table_of_contents: true

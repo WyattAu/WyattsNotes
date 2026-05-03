@@ -1,5 +1,5 @@
 ---
-title: Inequalities — Diagnostic Tests
+title: Inequalities -- Diagnostic Tests
 description: "Diagnostic tests for DSE Inequalities: linear, quadratic, absolute value inequalities, systems of inequalities, and common sign-flip errors."
 slug: diag-inequalities
 hide_table_of_contents: true

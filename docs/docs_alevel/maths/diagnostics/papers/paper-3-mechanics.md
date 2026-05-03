@@ -1,5 +1,5 @@
 ---
-title: "Paper 3 — Mechanics — Full Diagnostic Exam"
+title: "Paper 3 -- Mechanics -- Full Diagnostic Exam"
 description: "Comprehensive mechanics diagnostic paper covering all 5 A-Level topics with worked solutions. Timed at 75 minutes."
 slug: diag-paper-3-mechanics
 hide_table_of_contents: true

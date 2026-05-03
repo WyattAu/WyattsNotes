@@ -1,5 +1,5 @@
 ---
-title: Statistical Distributions — Diagnostic Tests
+title: Statistical Distributions -- Diagnostic Tests
 description: Hard diagnostic tests for statistical distributions covering binomial, normal, Poisson, continuity correction, and combining independent normal variables at A-Level.
 slug: diag-statistical-distributions
 hide_table_of_contents: true
