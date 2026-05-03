@@ -891,10 +891,10 @@ Yoghurt is produced using _Lactobacillus bulgaricus_ and _Streptococcus thermoph
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Microorganisms and Biotechnology**? The [diagnostic test](/Biology/diagnostics/diag-microorganisms-biotechnology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Microorganisms and Biotechnology**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-microorganisms-biotechnology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Microorganisms and Biotechnology with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/dse/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 

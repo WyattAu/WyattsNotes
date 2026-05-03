@@ -848,9 +848,9 @@ Desks should accommodate heights from about $152\mathrm{ cm}$ to $178\mathrm{ cm
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Probability**? The [diagnostic test](/maths/diagnostics/diag-probability) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Probability**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-probability) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::

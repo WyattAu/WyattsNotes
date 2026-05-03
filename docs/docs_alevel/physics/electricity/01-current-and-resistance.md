@@ -964,11 +964,11 @@ heating is a serious engineering concern.
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Current and Resistance**? The [diagnostic test](/physics/diagnostics/diag-current-resistance) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Current and Resistance**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-current-resistance) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current and Resistance with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 
 :::danger Common Pitfalls

@@ -1132,10 +1132,10 @@ The claim is **incorrect**. Excretion and egestion are fundamentally different p
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Human Reproduction and Homeostasis**? The [diagnostic test](/Biology/diagnostics/diag-human-reproduction-homeostasis) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Human Reproduction and Homeostasis**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-human-reproduction-homeostasis) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human Reproduction and Homeostasis with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/dse/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 

@@ -762,11 +762,11 @@ m s$^{-1}$.
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Dynamics**? The [diagnostic test](/physics/diagnostics/diag-dynamics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Dynamics**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-dynamics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 
 :::danger Common Pitfalls

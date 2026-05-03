@@ -808,9 +808,9 @@ For the A-Level treatment of this topic, see [Oscillations](https://alevel.wyatt
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Simple Harmonic Motion**? The [diagnostic test](/physics/diagnostics/diag-shm) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Simple Harmonic Motion**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-shm) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Simple Harmonic Motion with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::

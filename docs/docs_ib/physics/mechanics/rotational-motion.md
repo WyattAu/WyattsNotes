@@ -858,9 +858,9 @@ For the A-Level treatment of this topic, see [Circular Motion](https://alevel.wy
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Rotational Motion**? The [diagnostic test](/physics/diagnostics/diag-rotational-motion) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Rotational Motion**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-rotational-motion) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Rotational Motion with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::

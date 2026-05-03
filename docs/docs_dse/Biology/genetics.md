@@ -1077,10 +1077,10 @@ A **frameshift mutation** is an insertion or deletion of nucleotides that is NOT
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Genetics**? The [diagnostic test](/Biology/diagnostics/diag-genetics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Genetics**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-genetics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Genetics with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/dse/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
 

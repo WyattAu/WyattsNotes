@@ -577,9 +577,9 @@ $\blacksquare$
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Integration**? The [diagnostic test](/maths/diagnostics/diag-integration) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Integration**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-integration) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integration with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::

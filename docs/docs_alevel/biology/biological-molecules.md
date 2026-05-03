@@ -489,9 +489,9 @@ entropy of the phospholipids themselves.
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Biological Molecules**? The [diagnostic test](/biology/diagnostics/diag-biological-molecules) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Biological Molecules**? The [diagnostic test](/docs/alevel/biology/diagnostics/diag-biological-molecules) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Biological Molecules with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/alevel/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::

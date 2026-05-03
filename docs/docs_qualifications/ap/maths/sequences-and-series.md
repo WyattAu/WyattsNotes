@@ -841,9 +841,9 @@ $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = \lim_{N \to \infty} \left(1
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/qualifications/ap/maths/diagnostics/diag-sequences-series) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-sequences-series) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other AP Calculus topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/qualifications/ap/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::

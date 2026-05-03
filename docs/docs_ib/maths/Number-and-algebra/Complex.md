@@ -1067,9 +1067,9 @@ The solution set is $\{z = x + i(x - 1) : x \in \mathbb{R},\; z \neq 1,\; z \neq
 ---
 
 :::tip Diagnostic Test
-Ready to test your understanding of **Complex Numbers**? The [diagnostic test](/maths/diagnostics/diag-complex-numbers) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+Ready to test your understanding of **Complex Numbers**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-complex-numbers) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Complex Numbers with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
 :::
